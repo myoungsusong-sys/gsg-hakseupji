@@ -14,14 +14,13 @@ export default function VideoModal({ src, subtitle, title, onClose }: {
     const video = ref.current
     if (!video) return
     let hls: Hls | null = null
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = src                       // Safari 네이티브 HLS
-    } else if (Hls.isSupported()) {
+    // hls.js 우선 — 일부 Chrome이 canPlayType에 'maybe'를 반환해 네이티브 분기로 빠지면 재생 실패
+    if (Hls.isSupported()) {
       hls = new Hls()
       hls.loadSource(src)
       hls.attachMedia(video)
     } else {
-      video.src = src                       // 폴백
+      video.src = src                       // Safari 네이티브 HLS 등
     }
     return () => { if (hls) hls.destroy() }
   }, [src])
