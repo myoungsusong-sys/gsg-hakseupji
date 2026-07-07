@@ -30,6 +30,8 @@ body {
   .no-print { display: none !important; }
   .print-root { box-shadow: none !important; margin: 0 !important; width: auto !important; padding: 0 !important; border: none !important; }
   .sheet-page { break-after: page; }
+  .sheet-page:last-child { break-after: auto; }   /* 마지막 부 뒤 빈 페이지 방지 */
+  img { break-inside: avoid; }
 }
 
 .sheet-cols {
