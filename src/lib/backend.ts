@@ -35,11 +35,19 @@ export function noteId(n: DailyNote): string {
   return `${n.studentId}_${n.date}`
 }
 
+// Supabase REST는 한 번에 최대 1000행만 반환 → range로 전량 페이지네이션
 async function rows(table: string): Promise<any[]> {
   if (!supabase) return []
-  const { data, error } = await supabase.from(table).select('data')
-  if (error) { console.warn('load', table, error.message); return [] }
-  return (data ?? []).map((r: { data: unknown }) => r.data)
+  const PAGE = 1000
+  const out: unknown[] = []
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await supabase.from(table).select('data').range(from, from + PAGE - 1)
+    if (error) { console.warn('load', table, error.message); break }
+    const batch = data ?? []
+    out.push(...batch.map((r: { data: unknown }) => r.data))
+    if (batch.length < PAGE) break
+  }
+  return out
 }
 
 export async function loadAll(): Promise<CloudData | null> {
