@@ -236,23 +236,36 @@ export default function GradePanel({ student }: { student: Student }) {
     setSelected(new Set())
   }
 
-  // 페이지별 오답학습지 — 체크한 페이지들의 이 학생 오답·모름 문항으로 생성
+  // 페이지별 오답학습지 — 체크한 페이지(없으면 현재 쪽 범위)의 오답·모름 문항으로 생성
+  // 저장 기록 + 지금 화면에서 찍은 ✕/? 를 합쳐서 본다 (체크·저장 없이도 바로 동작)
   function pageDrill() {
-    if (!wb || pageChecked.size === 0) return
-    // gradings는 최신순 → 문항별 가장 최근 채점 결과만 사용
+    if (!wb || items.length === 0) return
+    const targetPages = pageChecked.size > 0
+      ? pageChecked
+      : new Set(inRange.map(i => i.page))
+    if (targetPages.size === 0) { alert('좌측 페이지 목록에서 페이지를 선택하거나 쪽 범위를 지정하세요.'); return }
+    // gradings는 최신순 → 문항별 가장 최근 채점 결과
     const latest = new Map<string, GradeResult>()
     for (const g of gradings) {
       if (g.studentId !== student.id || g.workbookId !== wbId) continue
       for (const r of g.results) if (r.itemId && !latest.has(r.itemId)) latest.set(r.itemId, r)
     }
+    // 지금 화면에서 찍은 표시가 최우선 (자동 저장 디바운스 중이어도 반영)
+    for (const i of inRange) {
+      const m = marks[i.id]
+      if (m) latest.set(i.id, { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined })
+    }
     const wrongs: DrillWrong[] = []
     for (const i of items) {
-      if (!pageChecked.has(i.page)) continue
+      if (!targetPages.has(i.page)) continue
       const r = latest.get(i.id)
       if (r && (!r.correct || r.unknown)) wrongs.push({ typeId: i.typeId, diff: i.diff })
     }
-    if (wrongs.length === 0) { alert('선택한 페이지에 이 학생의 오답·모름 기록이 없습니다. 먼저 채점하세요.'); return }
-    const ps = [...pageChecked].sort((a, b) => a - b).join(', ')
+    if (wrongs.length === 0) {
+      alert('선택한 페이지에 오답·모름이 없습니다.\n문항 카드를 클릭해 ✕(오답)/?(모름)를 표시한 뒤 다시 누르세요.')
+      return
+    }
+    const ps = [...targetPages].sort((a, b) => a - b).join(', ')
     setDrill({ title: `[오답] ${wb.name} p${ps}`, wrongs })
   }
 
@@ -323,9 +336,10 @@ export default function GradePanel({ student }: { student: Student }) {
           className="rounded-lg px-3 py-2 text-xs font-bold text-pine hover:bg-pine-soft disabled:opacity-40">
           ＋ 문제별 오답학습지
         </button>
-        <button onClick={pageDrill} disabled={pageChecked.size === 0}
+        <button onClick={pageDrill} disabled={selecting || items.length === 0}
+          title="좌측에서 페이지를 체크하면 그 페이지들, 체크가 없으면 현재 쪽 범위의 오답·모름으로 만듭니다"
           className="rounded-lg bg-pine px-3 py-2 text-xs font-bold text-paper hover:brightness-105 disabled:opacity-40">
-          ＋ 페이지별 오답학습지
+          ＋ 페이지별 오답학습지{pageChecked.size > 0 ? ` (${pageChecked.size})` : ''}
         </button>
         {live.wrongs.length > 0 && !selecting && (
           <button onClick={() => setDrill({ title: `[오답] ${wb.name} ${from}~${to}p`, wrongs: live.wrongs })}
