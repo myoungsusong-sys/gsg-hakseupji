@@ -100,7 +100,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const stateRef = useRef(state)
   stateRef.current = state
 
-  useEffect(() => { localStorage.setItem(LS_KEY, JSON.stringify(state)) }, [state])
+  // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
+  // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
+  useEffect(() => {
+    try {
+      const snapshot = cloud.on ? { ...state, customProblems: [] } : state
+      localStorage.setItem(LS_KEY, JSON.stringify(snapshot))
+    } catch { /* 쿼터 초과 등은 무시 — 클라우드가 원본 */ }
+  }, [state])
 
   // 클라우드 동기화: 최초 로드 + 실시간 구독
   useEffect(() => {
