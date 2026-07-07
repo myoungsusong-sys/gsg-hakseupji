@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { CURRICULA, curriculumFor, typeName, typeSubUnitId } from '../data/curriculum'
+import { CURRICULA, curriculumFor, typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
 import { useStore, uid } from '../lib/store'
 import MathText from '../components/MathText'
 import ProblemContent from '../components/ProblemContent'
+import { ProblemBlock, SheetHeader } from './WorksheetView'
 import type { Diff, DiffMatrix, Kind, LayoutMode, Problem, SheetOptions, ThemeKey } from '../types'
 import {
   DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DIFFS, DIFF_COLOR, DIFF_LABEL,
@@ -297,6 +298,28 @@ export default function MakeWizard() {
     () => problems.filter(p => favorites.includes(p.id)),
     [problems, favorites],
   )
+
+  // STEP3 실물 미리보기 파생값 (WorksheetView 지면 규칙과 동일하게 계산)
+  const previewSpacingMm = [0, 3, 5, 7, 9, 12][opts.spacing]
+  const previewDateText = opts.showDate
+    ? (opts.customDate
+        ? opts.customDate.replaceAll('-', '. ') + '.'
+        : new Date().toLocaleDateString('ko-KR'))
+    : null
+  const previewSubtitle = items.length ? typeUnitName(items[0].typeId) : ''
+  const previewCaption = (p: Problem) => {
+    const parts: string[] = []
+    if (opts.showTypeName) parts.push(typeName(p.typeId))
+    if (opts.showDiff) parts.push(DIFF_LABEL[p.diff])
+    if (opts.showCorrectRate && p.correctRate != null) parts.push(`정답률 ${p.correctRate}%`)
+    if (opts.showNew && p.isNew) parts.push('신경향')
+    return parts.join(' · ')
+  }
+  // 첫 페이지 분량만 (기본 5 · 오답노트 3 · 2분할 2 · 4분할 4 · 6분할 6)
+  const previewItems = items.slice(0,
+    opts.layout === 'basic' ? (opts.wrongNoteArea ? 3 : 5)
+    : opts.layout === 'split2' ? 2
+    : opts.layout === 'split4' ? 4 : 6)
 
   return (
     <div className="pb-24">
@@ -874,29 +897,57 @@ export default function MakeWizard() {
 
           </div>
 
-          {/* 간이 미리보기 */}
+          {/* 실물 미리보기 (매쓰플랫 방식: A4 1페이지 축소 렌더) */}
           <div className="h-fit rounded-2xl border border-line bg-white p-6">
-            <div className="mb-3 text-sm font-bold text-ink2">미리보기</div>
-            <div className="rounded-xl border border-line p-5" style={{ background: THEMES[theme].soft }}>
-              <div className="mb-1 flex items-center gap-2">
-                <span className="rounded px-2 py-0.5 text-xs font-black text-white" style={{ background: THEMES[theme].main }}>
-                  {gradeValue}
-                </span>
-                <span className="font-black" style={{ color: THEMES[theme].main }}>{title || '학습지 제목'}</span>
-              </div>
-              <div className="text-xs text-ink2">
-                {opts.showDate && <>{(opts.customDate ?? new Date().toISOString().slice(0, 10)).replaceAll('-', '. ')} | </>}
-                {items.length}문제 | {author} | 이름 ______
-              </div>
-              <div className={`mt-3 grid gap-2 ${opts.layout === 'basic' ? 'grid-cols-2' : opts.layout === 'split2' ? 'grid-cols-1' : opts.layout === 'split4' ? 'grid-cols-2' : 'grid-cols-2'}`}>
-                {items.slice(0, opts.layout === 'split2' ? 2 : 4).map((p, i) => (
-                  <div key={p.id} className="rounded bg-white/80 p-2 text-[10px] leading-snug text-ink2">
-                    <b>{String(i + 1).padStart(2, '0')}</b>{' '}
-                    {opts.showTypeName && <span className="text-pine-dark">[{typeName(p.typeId)}]</span>}{' '}
-                    <MathText text={p.body.length > 34 ? p.body.slice(0, 34) + '…' : p.body} />
+            <div className="mb-3 text-sm">
+              <span className="font-bold text-ink">학습지 미리보기</span>
+              <span className="text-ink2"> — 미리보기 화면은 실제 학습지와 약간의 차이가 있습니다.</span>
+            </div>
+            <div className="relative aspect-[210/297] overflow-hidden rounded-md border border-line bg-white shadow-md">
+              <div className="w-[182%] origin-top-left scale-[0.55] px-[11mm] py-[12mm]">
+                <SheetHeader
+                  ws={{ grade: gradeValue, title: title.trim() || '학습지 제목', author: author.trim() || '출제자' }}
+                  subtitle={previewSubtitle} dateText={previewDateText}
+                  count={items.length} theme={THEMES[theme].main} />
+                {opts.layout === 'basic' ? (
+                  opts.wrongNoteArea ? (
+                    /* 기본 + 오답 노트: 좌 문제 · 우 '풀이' 공간(괘선) */
+                    <div className="mt-6">
+                      {previewItems.map((p, i) => (
+                        <div key={p.id} className="grid grid-cols-[1fr_42%] gap-x-6"
+                          style={{ marginBottom: `${previewSpacingMm + 8}mm` }}>
+                          <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
+                          <div className="min-h-[52mm]">
+                            <div className="border-t border-ink/40 pt-1 text-[10px] text-ink2">풀이</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    /* 기본: 2단 흐름 배치 */
+                    <div className="sheet-cols mt-6">
+                      {previewItems.map((p, i) => (
+                        <div key={p.id} className="sheet-problem" style={{ marginBottom: `${previewSpacingMm}mm` }}>
+                          <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
+                        </div>
+                      ))}
+                    </div>
+                  )
+                ) : (
+                  /* 2·4·6분할: 문제마다 고정 칸 (6분할은 폰트 축소) */
+                  <div className={`mt-6 gap-x-8 ${opts.layout === 'split2' ? 'grid grid-cols-1' : 'grid grid-cols-2'} ${opts.layout === 'split6' ? 'text-[85%]' : ''}`}
+                    style={{ rowGap: `${previewSpacingMm}mm` }}>
+                    {previewItems.map((p, i) => (
+                      <div key={p.id}
+                        className={`border-b border-dotted border-line pb-3 ${
+                          opts.layout === 'split2' ? 'min-h-[120mm]' : opts.layout === 'split4' ? 'min-h-[105mm]' : 'min-h-[72mm]'}`}>
+                        <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
               </div>
+              <div className="absolute inset-x-0 bottom-2 text-center text-[10px] font-semibold text-ink2">01</div>
             </div>
           </div>
         </div>

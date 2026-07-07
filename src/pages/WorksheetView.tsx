@@ -61,7 +61,7 @@ export default function WorksheetView() {
           {([
             ['문제지', showSheet, setShowSheet],
             ['빠른정답', showQuick, setShowQuick],
-            ['해설지', showSol, setShowSol],
+            ['정답해설', showSol, setShowSol],
           ] as const).map(([label, on, set]) => (
             <button key={label} onClick={() => set(!on)}
               className={`rounded-md px-3 py-1.5 font-semibold ${on ? 'bg-pine text-paper' : 'text-ink2 hover:bg-paper2'}`}>
@@ -101,34 +101,37 @@ export default function WorksheetView() {
             )}
 
             {opts.layout === 'basic' ? (
-              /* 기본: 매쓰플랫 원본 지면 — 좌 문제 · 우 풀이 공간 */
-              <div className="mt-6">
-                {items.map((p, i) => (
-                  <div key={p.id} className="sheet-problem grid grid-cols-[1fr_42%] gap-x-6"
-                    style={{ marginBottom: `${spacingMm + 8}mm` }}>
-                    <div>
+              opts.wrongNoteArea ? (
+                /* 기본 + 오답 노트 영역: 매쓰플랫 실물 — 좌 문제 · 우 '풀이' 공간(괘선) */
+                <div className="mt-6">
+                  {items.map((p, i) => (
+                    <div key={p.id} className="sheet-problem grid grid-cols-[1fr_42%] gap-x-6"
+                      style={{ marginBottom: `${spacingMm + 8}mm` }}>
                       <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} />
-                      {opts.wrongNoteArea && (
-                        <div className="mt-2 rounded border border-dashed border-line p-1 text-[9px] text-ink2">
-                          오답 노트
-                          <div className="h-14" />
-                        </div>
-                      )}
+                      <div className="min-h-[52mm]">
+                        <div className="border-t border-ink/40 pt-1 text-[10px] text-ink2">풀이</div>
+                      </div>
                     </div>
-                    <div className="min-h-[52mm]">
-                      <div className="border-t border-ink/40 pt-1 text-[10px] text-ink2">풀이</div>
+                  ))}
+                </div>
+              ) : (
+                /* 기본: 매쓰플랫 실물 — 2단 흐름 배치 */
+                <div className="sheet-cols mt-6">
+                  {items.map((p, i) => (
+                    <div key={p.id} className="sheet-problem" style={{ marginBottom: `${spacingMm}mm` }}>
+                      <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} />
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )
             ) : (
-              /* 2·4·6분할: 문제마다 고정 칸 */
-              <div className={`mt-6 gap-x-8 ${opts.layout === 'split2' ? 'grid grid-cols-1' : 'grid grid-cols-2'}`}
+              /* 2·4·6분할: 문제마다 고정 칸 (6분할은 폰트 축소 — 매쓰플랫 동일) */
+              <div className={`mt-6 gap-x-8 ${opts.layout === 'split2' ? 'grid grid-cols-1' : 'grid grid-cols-2'} ${opts.layout === 'split6' ? 'text-[92%]' : ''}`}
                 style={{ rowGap: `${spacingMm}mm` }}>
                 {items.map((p, i) => (
                   <div key={p.id}
                     className={`sheet-problem border-b border-dotted border-line pb-3 ${
-                      opts.layout === 'split2' ? 'min-h-[120mm]' : opts.layout === 'split4' ? 'min-h-[110mm]' : 'min-h-[72mm]'}`}>
+                      opts.layout === 'split2' ? 'min-h-[120mm]' : opts.layout === 'split4' ? 'min-h-[105mm]' : 'min-h-[72mm]'}`}>
                     <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} />
                   </div>
                 ))}
@@ -206,7 +209,7 @@ export default function WorksheetView() {
 }
 
 // 지면 머리글 (매쓰플랫 원본: 학년 뱃지 + 제목 / 소단원 부제 / 날짜|문제수|출제자 + 이름)
-function SheetHeader({ ws, subtitle, dateText, count, theme }: {
+export function SheetHeader({ ws, subtitle, dateText, count, theme }: {
   ws: { grade: string; title: string; author: string }
   subtitle: string; dateText: string | null; count: number; theme: string
 }) {
@@ -230,7 +233,7 @@ function SheetHeader({ ws, subtitle, dateText, count, theme }: {
   )
 }
 
-function ProblemBlock({ p, idx, caption, themeMain }: {
+export function ProblemBlock({ p, idx, caption, themeMain }: {
   p: Problem; idx: number; caption: string; themeMain: string
 }) {
   return (
