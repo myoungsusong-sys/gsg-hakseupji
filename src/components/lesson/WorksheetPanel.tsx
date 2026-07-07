@@ -285,6 +285,8 @@ function MenuItem({ children, onClick, danger }: { children: React.ReactNode; on
 }
 
 // ── 자동채점 화면 — 문제 렌더 + 답 입력 → 채점 저장 ──────────────────────────────
+const isImgAnswer = (a: string) => /^https?:\/\/\S+\.(png|jpe?g|gif|webp)/i.test(a)
+
 function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
   const { problems, saveGrading } = useStore()
   const list = useMemo(() => {
@@ -315,7 +317,10 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
     const marks: Record<string, boolean> = {}
     for (const p of list) {
       const studentAnswer = answers[p.id] ?? ''
-      const correct = normAnswer(studentAnswer) !== '' && normAnswer(studentAnswer) === normAnswer(p.answer)
+      // 답이 이미지(서술형 등)인 문항은 텍스트 대조 불가 → 선생님 ○/✕ 수동 마크
+      const correct = isImgAnswer(p.answer)
+        ? studentAnswer === '○'
+        : normAnswer(studentAnswer) !== '' && normAnswer(studentAnswer) === normAnswer(p.answer)
       results.push({ typeId: p.typeId, studentAnswer, correct })
       marks[p.id] = correct
       if (!correct) wrongs.push({ typeId: p.typeId, diff: p.diff, problemId: p.id })
@@ -386,12 +391,25 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
                       </button>
                     ))}
                   </div>
+                ) : isImgAnswer(p.answer) ? (
+                  <div className="flex flex-wrap items-center gap-3">
+                    <div className="rounded-lg border border-line bg-paper2/60 p-2">
+                      <div className="mb-1 text-[10px] text-ink2">정답 (이미지) — 학생 답과 대조 후 표시</div>
+                      <img src={p.answer} alt="정답" className="max-h-16 w-auto" />
+                    </div>
+                    {(['○', '✕'] as const).map(m2 => (
+                      <button key={m2} type="button" onClick={() => setAnswer(p.id, answers[p.id] === m2 ? '' : m2)}
+                        className={`h-9 w-9 rounded-full border text-base font-black ${answers[p.id] === m2 ? (m2 === '○' ? 'border-pine bg-pine text-paper' : 'border-clay bg-clay text-white') : 'border-line bg-white text-ink hover:bg-paper2'}`}>
+                        {m2}
+                      </button>
+                    ))}
+                  </div>
                 ) : (
                   <input value={answers[p.id] ?? ''} onChange={e => setAnswer(p.id, e.target.value)}
                     placeholder="답 입력"
                     className="w-56 rounded-lg border border-line px-3 py-2 text-sm" />
                 )}
-                {result && !mark && (
+                {result && !mark && !isImgAnswer(p.answer) && (
                   <span className="text-xs text-ink2">정답 <b className="text-pine-dark">{p.answer}</b></span>
                 )}
               </div>

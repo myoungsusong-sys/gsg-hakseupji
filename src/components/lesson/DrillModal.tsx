@@ -4,6 +4,7 @@ import type { Diff, Student } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { pickDrillProblems } from '../../lib/drill'
+import { courseTagOfType } from '../../data/curriculum'
 
 // 오답 참조 — problemId는 틀린 원문제(학습지 오답만)
 export interface DrillWrong { typeId: string; diff?: Diff; problemId?: string }
@@ -73,7 +74,8 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
       id,
       title,
       author: '깊은생각수학',
-      grade: student.grade,
+      // 학년 뱃지 = 문항 과정 기준 (미적분Ⅰ 오답 학습지가 학생 학년(중1-1)으로 찍히던 문제 수정)
+      grade: (wrongs[0] && courseTagOfType(wrongs[0].typeId)) || student.grade,
       tags: defaultTags ?? ['오답'],
       theme: 'amber',
       problemIds,

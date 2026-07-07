@@ -22,13 +22,16 @@ function choiceAnswer(a: string): string {
 function toProblem(id: string, r: Raw): Problem {
   const [pid, hash, cid, level, isC, ans] = r
   const base = `https://freewheelin-contents.mathflat.com/problem/${pid}/${hash}`
+  // 답이 이미지로만 제공되는 문항(수집값 '.'·빈값·'풀이참조') → answer.png (같은 해시)
+  const broken = !ans || ['.', '-', '풀이참조'].includes(ans.trim())
+  const answer = broken ? `${base}/answer.png` : (isC ? choiceAnswer(ans) : ans)
   return {
     id,
     typeId: String(cid),
     kind: isC ? '객관식' : '주관식',
     diff: (level >= 1 && level <= 5 ? level : 3) as Problem['diff'],
     body: '',
-    answer: isC ? choiceAnswer(ans) : ans,
+    answer,
     solution: `${base}/solution.png`,
     source: '매쓰플랫',
     isNew: !!r[6],

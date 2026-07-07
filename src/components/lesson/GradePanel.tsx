@@ -14,6 +14,9 @@ const CIRCLED = ['①', '②', '③', '④', '⑤']
 function AnswerLabel({ item }: { item: WBItem }) {
   const a = item.answer
   if (!a) return null
+  if (['.', '-'].includes(a.trim())) {
+    return <div className="text-[11px] text-ink2">정답 <span className="text-ink2/70">풀이참조</span></div>
+  }
   if (item.kind === '객관식') {
     const t = a.split(',').map(s => {
       const n = Number(s.trim())

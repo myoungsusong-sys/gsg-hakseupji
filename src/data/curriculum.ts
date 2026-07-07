@@ -850,6 +850,14 @@ export function typeUnitName(typeId: string): string {
   return x ? `${x.u.name} · ${x.m.name}` : ''
 }
 
+// 유형이 속한 과정의 학년 표기 — 중·초는 '중2-1'식, 고등은 과목명('미적분Ⅰ' 등)
+export function courseTagOfType(typeId: string): string {
+  const x = eachType().find(y => y.t.id === typeId)
+  if (!x) return ''
+  const c = x.c
+  return c.grade.startsWith('고') ? c.label.replace(' (22개정)', '') : c.grade
+}
+
 // 유형이 속한 소단원 id (개념 매칭용)
 export function typeSubUnitId(typeId: string): string {
   return eachType().find(x => x.t.id === typeId)?.s.id ?? ''

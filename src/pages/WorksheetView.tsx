@@ -27,10 +27,10 @@ export default function WorksheetView() {
   const theme = THEMES[ws.theme]
   const opts = ws.options ?? DEFAULT_SHEET_OPTIONS
 
+  const fmtDate = (d: Date) =>
+    `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`
   const dateText = opts.showDate
-    ? (opts.customDate
-        ? opts.customDate.replaceAll('-', '. ') + '.'
-        : new Date(ws.createdAt).toLocaleDateString('ko-KR'))
+    ? (opts.customDate ? opts.customDate.replaceAll('-', '.') : fmtDate(new Date(ws.createdAt)))
     : null
 
   // 부제: 범위 요약 (첫 문항 유형의 대단원 · 중단원)
@@ -147,13 +147,13 @@ export default function WorksheetView() {
             <SheetHeader ws={{ grade: ws.grade, title: ws.title, author: ws.author }} subtitle={subtitle}
               dateText={dateText} count={items.length} theme={theme.main} />
             <div className="mx-auto mt-8 w-fit border-t border-line px-6 pt-1.5 text-center text-sm font-black">빠른정답</div>
-            <div className="mt-3 border-t-2 border-ink">
+            <div className="mx-auto mt-3 max-w-xl border-t-2 border-ink">
               <div className="grid grid-cols-3">
                 {items.map((p, i) => (
                   <div key={p.id}
-                    className={`flex items-baseline gap-2 border-b border-line px-3 py-2 text-[13px] ${i % 3 !== 2 ? 'border-r' : ''}`}>
+                    className={`flex items-center gap-2 border-b border-line px-3 py-1.5 text-[13px] ${i % 3 !== 2 ? 'border-r' : ''}`}>
                     <b style={{ color: theme.main }}>{String(i + 1).padStart(2, '0')}</b>
-                    <span className="min-w-0"><MathText text={p.answer} /></span>
+                    <span className="min-w-0"><MathText text={p.answer} className="max-h-8 w-auto" /></span>
                   </div>
                 ))}
                 {/* 마지막 줄 빈 칸 채움 */}
@@ -177,7 +177,7 @@ export default function WorksheetView() {
                   <div className="flex items-baseline gap-3">
                     <span className="text-lg font-black" style={{ color: theme.main }}>{String(i + 1).padStart(2, '0')}</span>
                     <span className="text-[12px] font-black">정답</span>
-                    <span className="text-[13px] font-bold"><MathText text={p.answer} /></span>
+                    <span className="min-w-0 text-[13px] font-bold"><MathText text={p.answer} className="max-h-9 w-auto" /></span>
                   </div>
                   <div className="mb-1.5 mt-1 border-t border-line" />
                   {opts.solutionWithBody && (
