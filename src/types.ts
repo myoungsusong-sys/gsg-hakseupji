@@ -117,12 +117,19 @@ export interface WBItem {
 export interface Student {
   id: string
   name: string
-  grade: string
+  grade: string          // '중2' 또는 '중1-1' 과정형 (둘 다 허용)
   klass?: string
   active: boolean
   parentPhone?: string   // 학부모 연락처
   school?: string        // 학교
-  memo?: string          // 메모
+  memo?: string          // 비고 및 학생 특이사항
+  attendNo?: string      // 출결 번호 (4자리)
+  studentPhone?: string  // 학생 연락처
+  startDate?: string     // 수업 시작일 YYYY.MM.DD
+  birth?: string         // 생년월일 YYYY.MM.DD
+  email?: string         // 학생 이메일
+  address?: string       // 집 주소
+  homePhone?: string     // 집 전화
 }
 
 export interface GradeResult {

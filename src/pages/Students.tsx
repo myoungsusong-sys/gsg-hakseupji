@@ -1,15 +1,31 @@
-import { useMemo, useState } from 'react'
-import { CURRICULA } from '../data/curriculum'
+import { useMemo, useRef, useState } from 'react'
+import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
 import type { Student } from '../types'
 
-const GRADES = [...new Set(CURRICULA.map(c => c.grade))]
+const TABS = ['학생 관리', '반 관리', '선생님 관리', '추가 관리'] as const
+type Tab = typeof TABS[number]
 
 const SCHOOL_FILTERS = ['전체', '초', '중', '고'] as const
 type SchoolFilter = typeof SCHOOL_FILTERS[number]
 
-const TABS = ['학생 관리', '반 관리', '기타'] as const
-type Tab = typeof TABS[number]
+type School = '초' | '중' | '고'
+const SCHOOLS: School[] = ['초', '중', '고']
+const GRADE_NUMS: Record<School, number[]> = {
+  초: [1, 2, 3, 4, 5, 6], 중: [1, 2, 3], 고: [1, 2, 3],
+}
+
+// '중1-1' 과정형 → '중1' 짧은 표기
+function shortenGrade(g: string): string {
+  const m = g.match(/^(초|중|고)(\d)/)
+  return m ? `${m[1]}${m[2]}` : g
+}
+
+function parseGrade(g: string): { sk: School; gn: number } {
+  const m = g.match(/^(초|중|고)(\d)/)
+  if (m) return { sk: m[1] as School, gn: Number(m[2]) }
+  return { sk: '중', gn: 1 }
+}
 
 export default function Students() {
   const [tab, setTab] = useState<Tab>('학생 관리')
@@ -31,30 +47,43 @@ export default function Students() {
 
       {tab === '학생 관리' && <StudentsTab />}
       {tab === '반 관리' && <KlassTab />}
-      {tab === '기타' && <EtcTab />}
+      {tab === '선생님 관리' && <TeachersTab />}
+      {tab === '추가 관리' && <ExtraTab />}
     </div>
   )
 }
 
 // ── 학생 관리 ─────────────────────────────────────
 
+type Sort = 'latest' | 'name'
+
 function StudentsTab() {
   const { students } = useStore()
+  const [sort, setSort] = useState<Sort>('latest')
   const [filter, setFilter] = useState<SchoolFilter>('전체')
-  const [query, setQuery] = useState('')
   const [showInactive, setShowInactive] = useState(false)
   const [showForm, setShowForm] = useState(false)
   const [showBulk, setShowBulk] = useState(false)
+  const [detail, setDetail] = useState<Student | null>(null)
 
   const activeCount = students.filter(s => s.active).length
-  const list = students
-    .filter(s => (showInactive ? true : s.active))
-    .filter(s => filter === '전체' || s.grade.startsWith(filter))
-    .filter(s => !query.trim() || s.name.includes(query.trim()))
+  const list = useMemo(() => {
+    const filtered = students
+      .filter(s => (showInactive ? true : s.active))
+      .filter(s => filter === '전체' || s.grade.startsWith(filter))
+    return sort === 'name'
+      ? [...filtered].sort((a, b) => a.name.localeCompare(b.name, 'ko'))
+      : [...filtered].reverse()
+  }, [students, showInactive, filter, sort])
 
   return (
     <div>
       <div className="mb-4 flex flex-wrap items-center gap-3">
+        <select value={sort} onChange={e => setSort(e.target.value as Sort)}
+          className="rounded-lg border border-line bg-white px-2 py-1.5 text-sm font-bold text-ink">
+          <option value="latest">최신 등록순</option>
+          <option value="name">이름순</option>
+        </select>
         <div className="flex gap-1">
           {SCHOOL_FILTERS.map(f => (
             <button key={f} onClick={() => setFilter(f)}
@@ -65,22 +94,21 @@ function StudentsTab() {
             </button>
           ))}
         </div>
-        <input value={query} onChange={e => setQuery(e.target.value)} placeholder="이름 검색"
-          className="w-40 rounded-lg border border-line bg-white px-3 py-1.5 text-sm" />
         <span className="text-sm font-bold text-ink2">재원생 <b className="text-pine">{activeCount}</b>명</span>
         <label className="flex items-center gap-1.5 text-sm text-ink2">
           <input type="checkbox" checked={showInactive} onChange={e => setShowInactive(e.target.checked)} />
           퇴원생 보기
         </label>
         <div className="grow" />
-        <button onClick={() => setShowForm(v => !v)}
-          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">+ 학생 개별 등록</button>
         <button onClick={() => setShowBulk(true)}
           className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-bold text-ink2 hover:text-ink">학생 일괄 등록</button>
+        <button onClick={() => setShowForm(true)}
+          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">학생 개별 등록</button>
       </div>
 
-      {showForm && <RegisterForm />}
+      {showForm && <RegisterModal onClose={() => setShowForm(false)} />}
       {showBulk && <BulkModal onClose={() => setShowBulk(false)} />}
+      {detail && <DetailModal key={detail.id} s={detail} onClose={() => setDetail(null)} />}
 
       {list.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-ink2">
@@ -91,17 +119,34 @@ function StudentsTab() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
-                <th className="px-4 py-2.5 font-bold">이름</th>
-                <th className="px-3 py-2.5 font-bold">학년</th>
-                <th className="px-3 py-2.5 font-bold">반</th>
-                <th className="px-3 py-2.5 font-bold">학교</th>
+                <th className="px-4 py-2.5 font-bold">학년</th>
+                <th className="px-3 py-2.5 font-bold">상태</th>
+                <th className="px-3 py-2.5 font-bold">학생 이름</th>
                 <th className="px-3 py-2.5 font-bold">학부모 연락처</th>
-                <th className="px-3 py-2.5 font-bold">메모</th>
-                <th className="px-3 py-2.5" />
+                <th className="px-3 py-2.5 font-bold">반</th>
+                <th className="px-3 py-2.5 font-bold">상세</th>
               </tr>
             </thead>
             <tbody>
-              {list.map(s => <StudentRow key={s.id} s={s} />)}
+              {list.map(s => (
+                <tr key={s.id} className={`border-b border-line last:border-0 ${s.active ? '' : 'bg-paper2'}`}>
+                  <td className="px-4 py-2.5">
+                    <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{shortenGrade(s.grade)}</span>
+                  </td>
+                  <td className="px-3 py-2.5">
+                    {s.active
+                      ? <span className="font-bold text-pine">재원</span>
+                      : <span className="text-ink2">퇴원</span>}
+                  </td>
+                  <td className="px-3 py-2.5 font-bold">{s.name}</td>
+                  <td className="px-3 py-2.5">{s.parentPhone ?? <span className="text-ink2">—</span>}</td>
+                  <td className="px-3 py-2.5">{s.klass ?? <span className="text-ink2">—</span>}</td>
+                  <td className="px-3 py-2.5">
+                    <button onClick={() => setDetail(s)}
+                      className="text-xs font-bold text-pine hover:underline">상세보기</button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -110,221 +155,390 @@ function StudentsTab() {
   )
 }
 
-function RegisterForm() {
+// ── 학생 폼 공통 (개별 등록 · 상세 정보) ─────────────
+
+interface FormState {
+  name: string
+  sk: School
+  gn: number
+  attendNo: string
+  studentPhone: string
+  parentPhone: string
+  school: string
+  startDate: string
+  birth: string
+  email: string
+  address: string
+  homePhone: string
+  memo: string
+  klass: string
+}
+
+function emptyForm(): FormState {
+  return {
+    name: '', sk: '중', gn: 1, attendNo: '',
+    studentPhone: '', parentPhone: '', school: '', startDate: '', birth: '',
+    email: '', address: '', homePhone: '', memo: '', klass: '',
+  }
+}
+
+function formFromStudent(s: Student): FormState {
+  const { sk, gn } = parseGrade(s.grade)
+  return {
+    name: s.name, sk, gn, attendNo: s.attendNo ?? '',
+    studentPhone: s.studentPhone ?? '', parentPhone: s.parentPhone ?? '',
+    school: s.school ?? '', startDate: s.startDate ?? '', birth: s.birth ?? '',
+    email: s.email ?? '', address: s.address ?? '', homePhone: s.homePhone ?? '',
+    memo: s.memo ?? '', klass: s.klass ?? '',
+  }
+}
+
+function validateForm(f: FormState, requireAttendNo: boolean): string | null {
+  if (!f.name.trim()) return '이름을 입력하세요'
+  const no = f.attendNo.trim()
+  if (requireAttendNo && !/^\d{4}$/.test(no)) return '출결 번호는 4자리 숫자로 입력하세요'
+  if (!requireAttendNo && no && !/^\d{4}$/.test(no)) return '출결 번호는 4자리 숫자로 입력하세요'
+  return null
+}
+
+function formPayload(f: FormState): Omit<Student, 'id' | 'active'> {
+  const t = (v: string) => v.trim() || undefined
+  return {
+    name: f.name.trim(),
+    grade: `${f.sk}${f.gn}`,
+    attendNo: t(f.attendNo),
+    klass: t(f.klass),
+    parentPhone: t(f.parentPhone),
+    school: t(f.school),
+    memo: t(f.memo),
+    studentPhone: t(f.studentPhone),
+    startDate: t(f.startDate),
+    birth: t(f.birth),
+    email: t(f.email),
+    address: t(f.address),
+    homePhone: t(f.homePhone),
+  }
+}
+
+const INPUT = 'w-full rounded-lg border border-line px-3 py-2 text-sm'
+
+function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: ReactNode }) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div className="max-h-[85vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-black">{title}</h2>
+          <button onClick={onClose} aria-label="닫기"
+            className="text-xl leading-none text-ink2 hover:text-ink">✕</button>
+        </div>
+        {children}
+      </div>
+    </div>
+  )
+}
+
+function Field({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="grid grid-cols-[8.5rem_1fr] items-center gap-2 text-sm">
+      <span className="font-bold">{label}</span>
+      {children}
+    </div>
+  )
+}
+
+function StudentFields({ f, set }: { f: FormState; set: (p: Partial<FormState>) => void }) {
+  return (
+    <div className="grid gap-2.5">
+      <p className="border-b border-line pb-1.5 text-sm font-black">필수 입력 사항</p>
+      <Field label="학생 이름 (필수)">
+        <input value={f.name} onChange={e => set({ name: e.target.value })} autoFocus
+          placeholder="이름을 입력해주세요." className={INPUT} />
+      </Field>
+      <Field label="학년 (필수)">
+        <div className="flex flex-wrap items-center gap-3">
+          {SCHOOLS.map(k => (
+            <label key={k} className="flex items-center gap-1">
+              <input type="radio" name="school-kind" checked={f.sk === k}
+                onChange={() => set({ sk: k, gn: Math.min(f.gn, GRADE_NUMS[k].length) })} />
+              {k}
+            </label>
+          ))}
+          <select value={f.gn} onChange={e => set({ gn: Number(e.target.value) })}
+            className="rounded-lg border border-line bg-white px-2 py-1.5 text-sm">
+            {GRADE_NUMS[f.sk].map(n => <option key={n} value={n}>{n}학년</option>)}
+          </select>
+        </div>
+      </Field>
+      <Field label="출결 번호 (필수)">
+        <input value={f.attendNo} onChange={e => set({ attendNo: e.target.value })}
+          placeholder="4자리 숫자만 입력해주세요." maxLength={4} className={INPUT} />
+      </Field>
+
+      <p className="mt-2 border-b border-line pb-1.5 text-sm font-black">선택 입력 사항</p>
+      <Field label="학생 연락처">
+        <input value={f.studentPhone} onChange={e => set({ studentPhone: e.target.value })}
+          placeholder="숫자만 입력해주세요." className={INPUT} />
+      </Field>
+      <Field label="학부모 연락처">
+        <input value={f.parentPhone} onChange={e => set({ parentPhone: e.target.value })}
+          placeholder="숫자만 입력해주세요." className={INPUT} />
+      </Field>
+      <Field label="학교">
+        <input value={f.school} onChange={e => set({ school: e.target.value })}
+          placeholder="학교명을 입력해주세요." className={INPUT} />
+      </Field>
+      <Field label="수업 시작일">
+        <input value={f.startDate} onChange={e => set({ startDate: e.target.value })}
+          placeholder="YYYY.MM.DD" className={INPUT} />
+      </Field>
+      <Field label="학생 생년월일">
+        <input value={f.birth} onChange={e => set({ birth: e.target.value })}
+          placeholder="YYYY.MM.DD" className={INPUT} />
+      </Field>
+      <Field label="학생 이메일">
+        <input value={f.email} onChange={e => set({ email: e.target.value })}
+          placeholder="예시 : student@math.com" className={INPUT} />
+      </Field>
+      <Field label="집 주소">
+        <input value={f.address} onChange={e => set({ address: e.target.value })}
+          placeholder="주소를 입력해주세요." className={INPUT} />
+      </Field>
+      <Field label="집 전화">
+        <input value={f.homePhone} onChange={e => set({ homePhone: e.target.value })}
+          placeholder="숫자만 입력해주세요." className={INPUT} />
+      </Field>
+      <label className="grid grid-cols-[8.5rem_1fr] items-start gap-2 text-sm">
+        <span className="pt-2 font-bold">비고 및 학생 특이사항</span>
+        <textarea value={f.memo} onChange={e => set({ memo: e.target.value })} rows={3}
+          placeholder={'내용을 입력해주세요.\n예시) 문제를 빨리 풀어서 실수가 잦음, 분수 계산이 약함, 중간고사-70점 / 기말고사-94점 등'}
+          className={INPUT} />
+      </label>
+      <Field label="반">
+        <input value={f.klass} onChange={e => set({ klass: e.target.value })}
+          placeholder="반 이름을 입력해주세요." className={INPUT} />
+      </Field>
+    </div>
+  )
+}
+
+// ── 학생 개별 등록 모달 ────────────────────────────
+
+function RegisterModal({ onClose }: { onClose: () => void }) {
   const { addStudent } = useStore()
-  const [name, setName] = useState('')
-  const [grade, setGrade] = useState('중1-1')
-  const [klass, setKlass] = useState('')
-  const [parentPhone, setParentPhone] = useState('')
-  const [school, setSchool] = useState('')
+  const [f, setF] = useState<FormState>(emptyForm)
+  const [keepOpen, setKeepOpen] = useState(false)
+  const set = (p: Partial<FormState>) => setF(prev => ({ ...prev, ...p }))
 
   const submit = () => {
-    if (!name.trim()) { alert('이름을 입력하세요'); return }
-    addStudent({
-      name: name.trim(),
-      grade,
-      klass: klass.trim() || undefined,
-      parentPhone: parentPhone.trim() || undefined,
-      school: school.trim() || undefined,
-    })
-    setName(''); setKlass(''); setParentPhone(''); setSchool('')
+    const err = validateForm(f, true)
+    if (err) { alert(err); return }
+    addStudent(formPayload(f))
+    if (keepOpen) setF(emptyForm())
+    else onClose()
   }
 
   return (
-    <form onSubmit={e => { e.preventDefault(); submit() }}
-      className="mb-4 flex flex-wrap items-end gap-3 rounded-2xl border border-line bg-white p-5">
-      <label className="grid gap-1 text-sm font-bold">이름
-        <input value={name} onChange={e => setName(e.target.value)} autoFocus
-          className="w-32 rounded-lg border border-line px-3 py-2 font-normal" /></label>
-      <label className="grid gap-1 text-sm font-bold">학년
-        <select value={grade} onChange={e => setGrade(e.target.value)}
-          className="rounded-lg border border-line bg-white px-2 py-2 font-normal">
-          {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
-        </select></label>
-      <label className="grid gap-1 text-sm font-bold">반
-        <input value={klass} onChange={e => setKlass(e.target.value)} placeholder="중1 A반"
-          className="w-32 rounded-lg border border-line px-3 py-2 font-normal" /></label>
-      <label className="grid gap-1 text-sm font-bold">학부모 연락처
-        <input value={parentPhone} onChange={e => setParentPhone(e.target.value)} placeholder="010-0000-0000"
-          className="w-40 rounded-lg border border-line px-3 py-2 font-normal" /></label>
-      <label className="grid gap-1 text-sm font-bold">학교
-        <input value={school} onChange={e => setSchool(e.target.value)}
-          className="w-32 rounded-lg border border-line px-3 py-2 font-normal" /></label>
-      <button type="submit" className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper">등록</button>
-    </form>
+    <Modal title="학생 개별 등록" onClose={onClose}>
+      <form onSubmit={e => { e.preventDefault(); submit() }}>
+        <StudentFields f={f} set={set} />
+        <div className="mt-5 flex items-center justify-between gap-3">
+          <label className="flex items-center gap-1.5 text-sm text-ink2">
+            <input type="checkbox" checked={keepOpen} onChange={e => setKeepOpen(e.target.checked)} />
+            계속 학생 등록하기
+          </label>
+          <button type="submit" className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper">등록하기</button>
+        </div>
+      </form>
+    </Modal>
   )
 }
 
-function StudentRow({ s }: { s: Student }) {
+// ── 학생 상세 정보 모달 ────────────────────────────
+
+function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
   const { updateStudent, setStudentActive } = useStore()
-  const [editing, setEditing] = useState(false)
-  const [d, setD] = useState({ name: '', grade: '', klass: '', school: '', parentPhone: '', memo: '' })
+  const [f, setF] = useState<FormState>(() => formFromStudent(s))
+  const [active, setActive] = useState(s.active)
+  const set = (p: Partial<FormState>) => setF(prev => ({ ...prev, ...p }))
 
-  const startEdit = () => {
-    setD({
-      name: s.name, grade: s.grade, klass: s.klass ?? '',
-      school: s.school ?? '', parentPhone: s.parentPhone ?? '', memo: s.memo ?? '',
-    })
-    setEditing(true)
-  }
   const save = () => {
-    if (!d.name.trim()) { alert('이름을 입력하세요'); return }
-    updateStudent(s.id, {
-      name: d.name.trim(),
-      grade: d.grade,
-      klass: d.klass.trim() || undefined,
-      school: d.school.trim() || undefined,
-      parentPhone: d.parentPhone.trim() || undefined,
-      memo: d.memo.trim() || undefined,
-    })
-    setEditing(false)
+    const err = validateForm(f, false)
+    if (err) { alert(err); return }
+    const patch = formPayload(f)
+    // 학교급·학년을 바꾸지 않았으면 원본 grade('중1-1' 과정형 포함)를 보존
+    if (patch.grade === shortenGrade(s.grade)) patch.grade = s.grade
+    updateStudent(s.id, patch)
+    if (active !== s.active) setStudentActive(s.id, active)
+    onClose()
   }
-
-  const cell = 'w-full rounded border border-line px-2 py-1'
-
-  if (editing) return (
-    <tr className="border-b border-line bg-pine-soft/40 last:border-0">
-      <td className="px-4 py-2"><input value={d.name} onChange={e => setD({ ...d, name: e.target.value })} className={`${cell} min-w-20`} /></td>
-      <td className="px-3 py-2">
-        <select value={d.grade} onChange={e => setD({ ...d, grade: e.target.value })}
-          className="rounded border border-line bg-white px-1 py-1">
-          {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
-        </select>
-      </td>
-      <td className="px-3 py-2"><input value={d.klass} onChange={e => setD({ ...d, klass: e.target.value })} className={`${cell} min-w-20`} /></td>
-      <td className="px-3 py-2"><input value={d.school} onChange={e => setD({ ...d, school: e.target.value })} className={`${cell} min-w-20`} /></td>
-      <td className="px-3 py-2"><input value={d.parentPhone} onChange={e => setD({ ...d, parentPhone: e.target.value })} className={`${cell} min-w-28`} /></td>
-      <td className="px-3 py-2"><input value={d.memo} onChange={e => setD({ ...d, memo: e.target.value })} className={`${cell} min-w-24`} /></td>
-      <td className="whitespace-nowrap px-3 py-2 text-right">
-        <button onClick={save} className="mr-1 rounded bg-pine px-3 py-1 text-xs font-bold text-paper">저장</button>
-        <button onClick={() => setEditing(false)} className="rounded border border-line px-3 py-1 text-xs text-ink2">취소</button>
-      </td>
-    </tr>
-  )
 
   return (
-    <tr className={`border-b border-line last:border-0 ${s.active ? '' : 'bg-paper2 text-ink2'}`}>
-      <td className="px-4 py-2.5 font-bold">
-        {s.name}
-        {!s.active && <span className="ml-1.5 rounded bg-white px-1.5 py-0.5 text-[11px] font-bold text-clay">퇴원</span>}
-      </td>
-      <td className="px-3 py-2.5">
-        <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{s.grade}</span>
-      </td>
-      <td className="px-3 py-2.5">{s.klass ?? <span className="text-ink2">—</span>}</td>
-      <td className="px-3 py-2.5">{s.school ?? <span className="text-ink2">—</span>}</td>
-      <td className="px-3 py-2.5">{s.parentPhone ?? <span className="text-ink2">—</span>}</td>
-      <td className="max-w-40 truncate px-3 py-2.5 text-ink2">{s.memo ?? ''}</td>
-      <td className="whitespace-nowrap px-3 py-2.5 text-right">
-        {s.active ? (
-          <>
-            <button onClick={startEdit}
-              className="mr-1 rounded border border-line px-3 py-1 text-xs text-ink2 hover:border-pine hover:text-pine">수정</button>
-            <button onClick={() => { if (confirm(`${s.name} 학생을 퇴원 처리할까요?`)) setStudentActive(s.id, false) }}
-              className="rounded border border-line px-3 py-1 text-xs text-ink2 hover:border-clay hover:text-clay">퇴원</button>
-          </>
-        ) : (
-          <button onClick={() => setStudentActive(s.id, true)}
-            className="rounded border border-line bg-white px-3 py-1 text-xs font-bold text-pine hover:bg-pine-soft">복원</button>
-        )}
-      </td>
-    </tr>
+    <Modal title="학생 상세 정보" onClose={onClose}>
+      <form onSubmit={e => { e.preventDefault(); save() }}>
+        <div className="mb-2.5">
+          <Field label="상태">
+            <div className="flex items-center gap-4">
+              <label className="flex items-center gap-1">
+                <input type="radio" name="student-active" checked={active} onChange={() => setActive(true)} />
+                재원
+              </label>
+              <label className="flex items-center gap-1">
+                <input type="radio" name="student-active" checked={!active} onChange={() => setActive(false)} />
+                퇴원
+              </label>
+            </div>
+          </Field>
+        </div>
+        <StudentFields f={f} set={set} />
+        <div className="mt-5 flex justify-end gap-2">
+          <button type="button" onClick={onClose}
+            className="rounded-lg border border-line px-5 py-2.5 text-sm text-ink2">닫기</button>
+          <button type="submit" className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper">저장</button>
+        </div>
+      </form>
+    </Modal>
   )
 }
 
-// ── 학생 일괄 등록 ─────────────────────────────────
+// ── 학생 일괄 등록 모달 (STEP 구조) ─────────────────
 
 interface BulkRow {
   line: string
   name?: string
   grade?: string
+  attendNo?: string
   klass?: string
   parentPhone?: string
+  school?: string
   error?: string
 }
 
+const BULK_GRADE_RE = /^(초[1-6]|중[1-3]|고[1-3])$/
+
 function parseBulk(text: string): BulkRow[] {
-  return text.split('\n').map(l => l.trim()).filter(Boolean).map(line => {
-    const parts = line.split(/\s+/)
-    if (parts.length < 2) return { line, error: '이름과 학년을 공백으로 구분해 입력하세요' }
-    const [name, grade, ...rest] = parts
-    if (!GRADES.includes(grade)) return { line, error: `학년 '${grade}' 인식 불가 (예: 중1-1)` }
-    let klass: string | undefined
-    let parentPhone: string | undefined
-    for (const p of rest) {
-      if (/^[\d-]+$/.test(p)) parentPhone = p
-      else klass = p
-    }
-    return { line, name, grade, klass, parentPhone }
-  })
+  return text.split('\n').map(l => l.trim()).filter(Boolean)
+    .filter((l, i) => !(i === 0 && l.startsWith('이름')))   // 양식 헤더 줄 무시
+    .map(line => {
+      const [name, grade, attendNo, klass, parentPhone, school] = line.split(/[,\t]/).map(c => c.trim())
+      if (!name || !grade) return { line, error: '이름과 학년은 필수입니다' }
+      if (!BULK_GRADE_RE.test(grade)) return { line, error: `학년 '${grade}' 형식 오류 (예: 중2, 초5, 고1)` }
+      if (attendNo && !/^\d{4}$/.test(attendNo)) return { line, error: '출결번호는 4자리 숫자여야 합니다' }
+      return {
+        line, name, grade,
+        attendNo: attendNo || undefined,
+        klass: klass || undefined,
+        parentPhone: parentPhone || undefined,
+        school: school || undefined,
+      }
+    })
+}
+
+function downloadTemplate() {
+  const csv = '\uFEFF이름,학년,출결번호,반,학부모연락처,학교\n홍길동,중2,0001,A반,01012345678,대치중\n'
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' })
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(blob)
+  a.download = '학생일괄등록_양식.csv'
+  a.click()
+  URL.revokeObjectURL(a.href)
 }
 
 function BulkModal({ onClose }: { onClose: () => void }) {
   const { addStudent } = useStore()
   const [text, setText] = useState('')
+  const fileRef = useRef<HTMLInputElement>(null)
 
   const rows = useMemo(() => parseBulk(text), [text])
   const valid = rows.filter(r => !r.error)
 
+  const onFile = (file: File | undefined) => {
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = () => setText(String(reader.result ?? ''))
+    reader.readAsText(file)
+  }
+
   const submit = () => {
     for (const r of valid) {
-      addStudent({ name: r.name!, grade: r.grade!, klass: r.klass, parentPhone: r.parentPhone })
+      addStudent({
+        name: r.name!, grade: r.grade!,
+        attendNo: r.attendNo, klass: r.klass, parentPhone: r.parentPhone, school: r.school,
+      })
     }
     onClose()
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
-      <div className="max-h-[85vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
-        <h2 className="mb-1 text-lg font-black">학생 일괄 등록</h2>
-        <p className="mb-3 text-sm text-ink2">
-          한 줄에 한 명씩 <b>이름 학년 [반] [연락처]</b> 순서로 공백 구분해 입력하세요.
-          (예: <span className="rounded bg-paper2 px-1">김철수 중1-1 A반 010-1234-5678</span>)
+    <Modal title="학생 일괄 등록" onClose={onClose}>
+      <div className="mb-4 rounded-xl border border-line bg-paper2 p-4">
+        <p className="mb-2 text-sm">
+          <b className="mr-2 text-pine">STEP 01</b>
+          양식 파일을 다운로드하여 학생 정보를 입력해주세요. (내용 형식을 수정하면 등록이 불가능합니다.)
         </p>
-        <textarea value={text} onChange={e => setText(e.target.value)} rows={6} autoFocus
-          placeholder={'김철수 중1-1 A반 010-1234-5678\n이영희 초6-2'}
-          className="mb-3 w-full rounded-lg border border-line px-3 py-2 text-sm" />
-
-        {rows.length > 0 && (
-          <div className="mb-4 overflow-x-auto rounded-xl border border-line">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
-                  <th className="px-3 py-2 font-bold">이름</th>
-                  <th className="px-3 py-2 font-bold">학년</th>
-                  <th className="px-3 py-2 font-bold">반</th>
-                  <th className="px-3 py-2 font-bold">연락처</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((r, i) => r.error ? (
-                  <tr key={i} className="border-b border-line bg-amber-soft last:border-0">
-                    <td colSpan={4} className="px-3 py-2 text-clay">
-                      <b>{r.line}</b> — {r.error}
-                    </td>
-                  </tr>
-                ) : (
-                  <tr key={i} className="border-b border-line last:border-0">
-                    <td className="px-3 py-2 font-bold">{r.name}</td>
-                    <td className="px-3 py-2">{r.grade}</td>
-                    <td className="px-3 py-2">{r.klass ?? '—'}</td>
-                    <td className="px-3 py-2">{r.parentPhone ?? '—'}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-
-        <div className="flex justify-end gap-2">
-          <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm text-ink2">취소</button>
-          <button onClick={submit} disabled={valid.length === 0}
-            className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">
-            {valid.length}명 등록
-          </button>
-        </div>
+        <button onClick={downloadTemplate}
+          className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-bold text-ink2 hover:text-ink">파일 다운로드</button>
       </div>
-    </div>
+
+      <div className="mb-4 rounded-xl border border-line bg-paper2 p-4">
+        <p className="mb-2 text-sm">
+          <b className="mr-2 text-pine">STEP 02</b>
+          내용 입력된 파일을 첨부해 주세요.
+        </p>
+        <input ref={fileRef} type="file" accept=".csv,.txt" className="hidden"
+          onChange={e => { onFile(e.target.files?.[0]); e.target.value = '' }} />
+        <button onClick={() => fileRef.current?.click()}
+          className="mb-3 rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">파일첨부</button>
+        <p className="mb-1 text-xs text-ink2">또는 아래에 붙여넣기</p>
+        <textarea value={text} onChange={e => setText(e.target.value)} rows={5}
+          placeholder={'이름,학년,출결번호,반,학부모연락처,학교\n홍길동,중2,0001,A반,01012345678,대치중'}
+          className="w-full rounded-lg border border-line px-3 py-2 text-sm" />
+      </div>
+
+      {rows.length > 0 && (
+        <div className="mb-4 overflow-x-auto rounded-xl border border-line">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
+                <th className="px-3 py-2 font-bold">이름</th>
+                <th className="px-3 py-2 font-bold">학년</th>
+                <th className="px-3 py-2 font-bold">출결번호</th>
+                <th className="px-3 py-2 font-bold">반</th>
+                <th className="px-3 py-2 font-bold">연락처</th>
+                <th className="px-3 py-2 font-bold">학교</th>
+                <th className="px-3 py-2 font-bold">오류</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, i) => r.error ? (
+                <tr key={i} className="border-b border-line bg-amber-soft last:border-0">
+                  <td colSpan={7} className="px-3 py-2 text-clay">
+                    <b>{r.line}</b> — {r.error}
+                  </td>
+                </tr>
+              ) : (
+                <tr key={i} className="border-b border-line last:border-0">
+                  <td className="px-3 py-2 font-bold">{r.name}</td>
+                  <td className="px-3 py-2">{r.grade}</td>
+                  <td className="px-3 py-2">{r.attendNo ?? '—'}</td>
+                  <td className="px-3 py-2">{r.klass ?? '—'}</td>
+                  <td className="px-3 py-2">{r.parentPhone ?? '—'}</td>
+                  <td className="px-3 py-2">{r.school ?? '—'}</td>
+                  <td className="px-3 py-2 text-ink2">—</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      <div className="flex justify-end gap-2">
+        <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm text-ink2">취소</button>
+        <button onClick={submit} disabled={valid.length === 0}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">
+          등록하기{valid.length > 0 ? ` (${valid.length}명)` : ''}
+        </button>
+      </div>
+    </Modal>
   )
 }
 
@@ -363,13 +577,13 @@ function KlassTab() {
 
       {showHint && (
         <div className="mb-4 rounded-xl border border-line bg-pine-soft px-4 py-3 text-sm text-pine-dark">
-          학생 등록/수정에서 반 이름을 입력하면 자동 생성됩니다.
+          학생 등록/상세에서 반 이름을 입력하면 자동 생성됩니다.
         </div>
       )}
 
       {groups.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-ink2">
-          아직 반이 없습니다. 학생 등록/수정에서 반 이름을 입력하면 자동 생성됩니다.
+          아직 반이 없습니다. 학생 등록/상세에서 반 이름을 입력하면 자동 생성됩니다.
         </div>
       ) : (
         <div className="overflow-x-auto rounded-2xl border border-line bg-white">
@@ -419,26 +633,47 @@ function KlassTab() {
   )
 }
 
-// ── 기타 ─────────────────────────────────────────
+// ── 선생님 관리 ────────────────────────────────────
 
-const ETC_CARDS = [
-  { title: '문자 발송', desc: '학부모·학생 대상 안내 문자' },
-  { title: '출결 관리', desc: '등원·하원 출결 기록' },
-  { title: '교육비 관리', desc: '수강료 청구·수납 내역' },
+function TeachersTab() {
+  return (
+    <div className="rounded-2xl border border-line bg-white p-6">
+      <h3 className="mb-1 font-black">선생님 관리</h3>
+      <p className="text-sm text-ink2">단일 강사 운영 중 — 강사가 늘어나면 활성화합니다.</p>
+    </div>
+  )
+}
+
+// ── 추가 관리 ─────────────────────────────────────
+
+const EXTRA_CARDS: { title: string; sparta: boolean }[] = [
+  { title: '문자', sparta: true },
+  { title: '출결', sparta: true },
+  { title: '교육비', sparta: true },
+  { title: '학부모앱 공지 설정', sparta: false },
+  { title: '학생앱 설정', sparta: false },
+  { title: '실험실', sparta: false },
 ]
 
-function EtcTab() {
+function ExtraTab() {
   return (
     <div className="grid gap-4 sm:grid-cols-3">
-      {ETC_CARDS.map(c => (
+      {EXTRA_CARDS.map(c => (
         <div key={c.title} className="rounded-2xl border border-line bg-white p-5">
-          <h3 className="mb-1 font-black">{c.title}</h3>
-          <p className="mb-3 text-sm text-ink2">{c.desc}</p>
-          <p className="mb-3 rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
-            학원관리앱(대치스파르타)에서 담당합니다.
-          </p>
-          <a href="https://daechisparta.vercel.app" target="_blank" rel="noreferrer"
-            className="text-sm font-bold text-pine hover:underline">대치스파르타 열기 →</a>
+          <h3 className="mb-2 font-black">{c.title}</h3>
+          {c.sparta ? (
+            <>
+              <p className="mb-3 rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
+                학원관리앱(대치스파르타)에서 담당합니다.
+              </p>
+              <a href="https://daechisparta.vercel.app" target="_blank" rel="noreferrer"
+                className="text-sm font-bold text-pine hover:underline">대치스파르타 열기 →</a>
+            </>
+          ) : (
+            <p className="rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
+              학생앱 없음 — 해당 없음
+            </p>
+          )}
         </div>
       ))}
     </div>

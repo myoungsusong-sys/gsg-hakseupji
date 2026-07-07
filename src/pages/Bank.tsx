@@ -113,7 +113,7 @@ export default function Bank() {
   )
 }
 
-function AddProblemModal({ onClose, onAdd }: { onClose: () => void; onAdd: (p: Problem) => void }) {
+export function AddProblemModal({ onClose, onAdd }: { onClose: () => void; onAdd: (p: Problem) => void }) {
   const [typeId, setTypeId] = useState(CURRICULA[0].units[0].mids[0].subs[0].types[0].id)
   const [kind, setKind] = useState<Kind>('주관식')
   const [diff, setDiff] = useState<Diff>(3)
@@ -302,7 +302,7 @@ function parseBulk(text: string, courseId: string): BulkBlock[] {
   })
 }
 
-function BulkAddModal({ courseId, onClose, onAdd }: {
+export function BulkAddModal({ courseId, onClose, onAdd }: {
   courseId: string
   onClose: () => void
   onAdd: (ps: Problem[]) => void

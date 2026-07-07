@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import WorksheetList from './WorksheetList'
-import Bank from './Bank'
+import MyDb from './MyDb'
 
 type Tab = 'mine' | 'db' | 'favorites' | 'trash'
 
@@ -20,7 +20,7 @@ export default function WorksheetPage() {
         ))}
       </div>
       {tab === 'mine' && <WorksheetList view="active" />}
-      {tab === 'db' && <Bank />}
+      {tab === 'db' && <MyDb />}
       {tab === 'favorites' && <WorksheetList view="favorites" />}
       {tab === 'trash' && <WorksheetList view="trash" />}
     </div>

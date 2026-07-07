@@ -342,11 +342,18 @@ export function curriculumFor(id: string): Curriculum {
   return CURRICULA.find(c => c.id === id) ?? CURRICULUM
 }
 
-// 기출 회차 학년(고1/고2/고3) → 기본 과정 id (태깅 시 초기 선택)
+// 학년 문자열 → 기본 과정 id. '고1'·'중2'(매쓰플랫식)와 '중1-1'(과정형) 둘 다 처리
 export function defaultCurriculumForGrade(grade: string): string {
   if (grade === '고1') return 'h-cm1'
   if (grade === '고2') return 'h-alg'
   if (grade === '고3') return 'h-calc2'
+  const exact = CURRICULA.find(c => c.grade === grade)   // '중1-1'·'초3-2' 과정형
+  if (exact) return exact.id
+  const m = grade.match(/^(초|중)(\d)$/)                  // '중2'·'초5' → 그 학년 1학기
+  if (m) {
+    const first = CURRICULA.find(c => c.grade === `${m[1]}${m[2]}-1`)
+    if (first) return first.id
+  }
   return 'm1-1'
 }
 
