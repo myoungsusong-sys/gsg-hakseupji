@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #faf6ee;
+  --color-paper2: #f2ecdd;
+  --color-line: #e3dbc6;
+  --color-ink: #22301f;
+  --color-ink2: #55624f;
+  --color-pine: #2e6b4f;
+  --color-pine-dark: #1f4d38;
+  --color-pine-soft: #e2ede6;
+  --color-amber: #c9862b;
+  --color-amber-soft: #f6e8d2;
+  --color-clay: #b65c3a;
+}
+
+html { background: var(--color-paper); }
+body {
+  font-family: "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+  color: var(--color-ink);
+}
+
+/* ── 인쇄 ─────────────────────────────── */
+@page { size: A4; margin: 12mm 11mm; }
+
+@media print {
+  body { background: white; }
+  .no-print { display: none !important; }
+  .print-root { box-shadow: none !important; margin: 0 !important; width: auto !important; padding: 0 !important; border: none !important; }
+  .sheet-page { break-after: page; }
+}
+
+.sheet-cols {
+  column-count: 2;
+  column-gap: 9mm;
+  column-rule: 1px solid var(--color-line);
+}
+.sheet-problem { break-inside: avoid; }
