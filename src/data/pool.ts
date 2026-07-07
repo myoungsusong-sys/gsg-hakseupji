@@ -9,7 +9,8 @@ export const POOL_COURSES = [
   'h-cm1', 'h-cm2', 'h-alg', 'h-calc1', 'h-stat', 'h-calc2', 'h-geo',
 ] as const
 
-type Raw = [number, string, string | number, number, number, string, number]
+// [pid, hash, conceptId, level, isChoice, answer, trendy, videoHash?] — videoHash 있으면 풀이영상(HLS) 연결
+type Raw = [number, string, string | number, number, number, string, number, (string | 0)?]
 
 const CIRCLED = ['①', '②', '③', '④', '⑤']
 function choiceAnswer(a: string): string {
@@ -36,6 +37,10 @@ function toProblem(id: string, r: Raw): Problem {
     source: '매쓰플랫',
     isNew: !!r[6],
     imageUrl: `${base}/problem.png`,
+    ...(typeof r[7] === 'string' && r[7] ? {
+      videoUrl: `https://video.mathflat.com/problem/${pid}/${r[7]}/video.m3u8`,
+      subtitleUrl: `https://video.mathflat.com/problem/${pid}/${r[7]}/subtitle.vtt`,
+    } : {}),
   }
 }
 

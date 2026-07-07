@@ -41,6 +41,8 @@ export interface Problem {
   isNew?: boolean        // 신경향
   correctRate?: number   // 정답률(%) — 출제 데이터가 쌓이면 채워짐
   imageUrl?: string      // 이미지 기반 문제(기출 크롭). 있으면 body/choices 대신 이미지 렌더
+  videoUrl?: string      // 문항별 풀이영상 (HLS m3u8)
+  subtitleUrl?: string   // 풀이영상 자막 (vtt)
   custom?: boolean
 }
 

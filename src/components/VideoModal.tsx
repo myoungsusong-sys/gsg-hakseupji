@@ -1,0 +1,45 @@
+import { useEffect, useRef } from 'react'
+import Hls from 'hls.js'
+
+// 문항별 풀이영상 재생 모달 — HLS(m3u8). Safari는 네이티브, 그 외는 hls.js
+export default function VideoModal({ src, subtitle, title, onClose }: {
+  src: string
+  subtitle?: string
+  title: string
+  onClose: () => void
+}) {
+  const ref = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const video = ref.current
+    if (!video) return
+    let hls: Hls | null = null
+    if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = src                       // Safari 네이티브 HLS
+    } else if (Hls.isSupported()) {
+      hls = new Hls()
+      hls.loadSource(src)
+      hls.attachMedia(video)
+    } else {
+      video.src = src                       // 폴백
+    }
+    return () => { if (hls) hls.destroy() }
+  }, [src])
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/70 p-6" onClick={onClose}>
+      <div className="w-full max-w-3xl rounded-2xl bg-white p-4 shadow-xl" onClick={e => e.stopPropagation()}>
+        <div className="mb-2 flex items-center gap-3">
+          <span className="rounded bg-pine-soft px-2 py-0.5 text-xs font-bold text-pine-dark">풀이영상</span>
+          <b className="min-w-0 truncate text-sm">{title}</b>
+          <div className="grow" />
+          <button onClick={onClose} className="rounded-lg px-2 py-1 text-ink2 hover:bg-paper2">✕</button>
+        </div>
+        <video ref={ref} controls autoPlay playsInline crossOrigin="anonymous"
+          className="aspect-video w-full rounded-lg bg-black">
+          {subtitle && <track kind="subtitles" srcLang="ko" label="자막" src={subtitle} default />}
+        </video>
+      </div>
+    </div>
+  )
+}

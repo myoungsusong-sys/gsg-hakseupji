@@ -26,3 +26,4 @@ dist-ssr
 # 데이터 이관 임시(배포 제외)
 _매쓰플랫이관/
 *.bak
+package-lock.json

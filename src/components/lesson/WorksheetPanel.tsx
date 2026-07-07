@@ -7,6 +7,7 @@ import { dateKey } from '../../lib/dates'
 import { normAnswer } from '../../lib/answers'
 import { typeName } from '../../data/curriculum'
 import ProblemContent from '../ProblemContent'
+import VideoModal from '../VideoModal'
 import DrillModal, { type DrillWrong } from './DrillModal'
 import PeriodWrongModal from './PeriodWrongModal'
 
@@ -302,6 +303,7 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
     marks: Record<string, boolean>
   } | null>(null)
   const [drillOpen, setDrillOpen] = useState(false)
+  const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
 
   function setAnswer(pid: string, v: string) {
     setAnswers(prev => ({ ...prev, [pid]: v }))
@@ -373,6 +375,12 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
               <div className="mb-2 flex items-center gap-2 text-xs text-ink2">
                 <b className="text-sm text-ink">{i + 1}.</b>
                 <span>{typeName(p.typeId)}</span>
+                {p.videoUrl && (
+                  <button onClick={() => setVideo({ src: p.videoUrl!, subtitle: p.subtitleUrl, title: `${i + 1}번 풀이영상` })}
+                    className="rounded-full border border-pine px-2 py-0.5 text-[11px] font-bold text-pine hover:bg-pine-soft">
+                    ▶ 풀이영상
+                  </button>
+                )}
                 {result && (
                   <span className={`ml-auto text-lg font-black ${mark ? 'text-pine' : 'text-clay'}`}>
                     {mark ? '○' : '✕'}
@@ -426,6 +434,7 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
       {drillOpen && result && (
         <DrillModal student={student} title={`[오답] ${ws.title}`} wrongs={result.wrongs} onClose={() => setDrillOpen(false)} />
       )}
+      {video && <VideoModal src={video.src} subtitle={video.subtitle} title={video.title} onClose={() => setVideo(null)} />}
     </div>
   )
 }

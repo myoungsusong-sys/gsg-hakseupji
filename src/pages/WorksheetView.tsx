@@ -4,6 +4,7 @@ import { useStore } from '../lib/store'
 import { typeName, typeUnitName } from '../data/curriculum'
 import { CONCEPTS } from '../data/concepts'
 import MathText from '../components/MathText'
+import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES } from '../types'
 
@@ -16,6 +17,7 @@ export default function WorksheetView() {
   const [showSheet, setShowSheet] = useState(true)
   const [showQuick, setShowQuick] = useState(true)
   const [showSol, setShowSol] = useState(true)
+  const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
 
   const ws = worksheets.find(w => w.id === id)
   const items = useMemo(
@@ -107,7 +109,7 @@ export default function WorksheetView() {
                   {items.map((p, i) => (
                     <div key={p.id} className="sheet-problem grid grid-cols-[1fr_42%] gap-x-6"
                       style={{ marginBottom: `${spacingMm + 8}mm` }}>
-                      <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} />
+                      <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} onVideo={(pp, ii) => setVideo({ src: pp.videoUrl!, subtitle: pp.subtitleUrl, title: `${ii + 1}번 풀이영상` })} />
                       <div className="min-h-[52mm]">
                         <div className="border-t border-ink/40 pt-1 text-[10px] text-ink2">풀이</div>
                       </div>
@@ -119,7 +121,7 @@ export default function WorksheetView() {
                 <div className="sheet-cols mt-6">
                   {items.map((p, i) => (
                     <div key={p.id} className="sheet-problem" style={{ marginBottom: `${spacingMm}mm` }}>
-                      <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} />
+                      <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} onVideo={(pp, ii) => setVideo({ src: pp.videoUrl!, subtitle: pp.subtitleUrl, title: `${ii + 1}번 풀이영상` })} />
                     </div>
                   ))}
                 </div>
@@ -132,7 +134,7 @@ export default function WorksheetView() {
                   <div key={p.id}
                     className={`sheet-problem border-b border-dotted border-line pb-3 ${
                       opts.layout === 'split2' ? 'min-h-[120mm]' : opts.layout === 'split4' ? 'min-h-[105mm]' : 'min-h-[72mm]'}`}>
-                    <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} />
+                    <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} onVideo={(pp, ii) => setVideo({ src: pp.videoUrl!, subtitle: pp.subtitleUrl, title: `${ii + 1}번 풀이영상` })} />
                   </div>
                 ))}
               </div>
@@ -204,6 +206,7 @@ export default function WorksheetView() {
           </div>
         )}
       </div>
+      {video && <VideoModal src={video.src} subtitle={video.subtitle} title={video.title} onClose={() => setVideo(null)} />}
     </div>
   )
 }
@@ -233,8 +236,8 @@ export function SheetHeader({ ws, subtitle, dateText, count, theme }: {
   )
 }
 
-export function ProblemBlock({ p, idx, caption, themeMain }: {
-  p: Problem; idx: number; caption: string; themeMain: string
+export function ProblemBlock({ p, idx, caption, themeMain, onVideo }: {
+  p: Problem; idx: number; caption: string; themeMain: string; onVideo?: (p: Problem, idx: number) => void
 }) {
   return (
     <div>
@@ -243,6 +246,10 @@ export function ProblemBlock({ p, idx, caption, themeMain }: {
           {String(idx + 1).padStart(2, '0')}
         </span>
         {caption && <span className="text-[10px] text-ink2">{caption}</span>}
+        {onVideo && p.videoUrl && (
+          <button onClick={() => onVideo(p, idx)}
+            className="no-print rounded-full border border-pine px-1.5 py-0 text-[10px] font-bold text-pine hover:bg-pine-soft">▶</button>
+        )}
       </div>
       {p.imageUrl
         ? <img src={p.imageUrl} alt={p.body} className="w-full" />
