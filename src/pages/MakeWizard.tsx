@@ -74,6 +74,8 @@ export default function MakeWizard() {
   const [excludeRecent, setExcludeRecent] = useState(false)  // 최근 30일 출제 문제 제외
   const [evenTypes, setEvenTypes] = useState(false)          // 유형별 균등 배분
   const [mockFilter, setMockFilter] = useState<MockFilter>('include')  // 모의고사 포함 여부
+  const [expanded, setExpanded] = useState<Set<string>>(new Set())     // 좌측 트리에서 펼친 대단원 (기본 전부 접힘)
+  const [treeTarget, setTreeTarget] = useState<string | null>(null)    // 우측 유형 패널 대상 노드(대·중·소단원 id)
 
   // STEP 2
   const [items, setItems] = useState<Problem[]>([])
@@ -119,7 +121,13 @@ export default function MakeWizard() {
     if (types) {
       const valid = new Set(c.units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))))
       const ids = types.split(',').map(t => t.trim()).filter(t => valid.has(t))
-      if (ids.length > 0) setSelected(new Set(ids))
+      if (ids.length > 0) {
+        setSelected(new Set(ids))
+        // 선택된 유형이 속한 첫 대단원을 펼치고 우측 패널 대상으로
+        const idSet = new Set(ids)
+        const firstUnit = c.units.find(u => u.mids.some(m => m.subs.some(s => s.types.some(t => idSet.has(t.id)))))
+        if (firstUnit) { setExpanded(new Set([firstUnit.id])); setTreeTarget(firstUnit.id) }
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -163,6 +171,22 @@ export default function MakeWizard() {
   function toggleMany(ids: string[], on: boolean) {
     setSelected(prev => { const n = new Set(prev); for (const id of ids) { if (on) n.add(id); else n.delete(id) } return n })
   }
+  function toggleExpand(id: string) {
+    setExpanded(prev => { const n = new Set(prev); if (n.has(id)) n.delete(id); else n.add(id); return n })
+  }
+
+  // 우측 유형 패널 대상: treeTarget(대·중·소단원 id) → 표시할 이름·소단원 목록
+  const targetInfo = useMemo(() => {
+    if (!treeTarget) return null
+    for (const u of cur.units) {
+      if (u.id === treeTarget) return { name: u.name, subs: u.mids.flatMap(m => m.subs) }
+      for (const m of u.mids) {
+        if (m.id === treeTarget) return { name: m.name, subs: m.subs }
+        for (const s of m.subs) if (s.id === treeTarget) return { name: s.name, subs: [s] }
+      }
+    }
+    return null
+  }, [cur, treeTarget])
 
   function goStep2() {
     let picked = pickProblems(effectivePool, count, diffFocus, kind, selectedOrder, diffMatrix)
@@ -380,7 +404,7 @@ export default function MakeWizard() {
                       onClick={() => {
                         if (gradeId.startsWith(lv.prefix)) return
                         const first = CURRICULA.find(c => c.id.startsWith(lv.prefix))
-                        if (first) { setGradeId(first.id); setSelected(new Set()) }
+                        if (first) { setGradeId(first.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) }
                       }}
                       className={`rounded-md px-4 py-1.5 text-sm font-bold transition ${
                         gradeId.startsWith(lv.prefix) ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'
@@ -398,7 +422,7 @@ export default function MakeWizard() {
               <div className="flex gap-2 overflow-x-auto border-b border-line pb-3">
                 {CURRICULA.filter(c => c.id.startsWith(gradeId[0])).map(c => (
                   <button key={c.id}
-                    onClick={() => { if (c.id !== gradeId) { setGradeId(c.id); setSelected(new Set()) } }}
+                    onClick={() => { if (c.id !== gradeId) { setGradeId(c.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) } }}
                     className={`shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm transition ${
                       c.id === gradeId ? 'border-pine bg-pine-soft font-bold text-pine-dark' : 'border-line text-ink2 hover:text-ink'
                     }`}>
@@ -407,75 +431,105 @@ export default function MakeWizard() {
                 ))}
               </div>
             </div>
-            {cur.units.map(u => {
-              const unitTypeIds = u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))
-              const allOn = unitTypeIds.every(t => selected.has(t))
-              return (
-                <div key={u.id} className="mb-4">
-                  {/* 대단원 */}
-                  <label className="flex cursor-pointer items-center gap-2 rounded-lg bg-paper2 px-3 py-2 font-bold">
-                    <input type="checkbox" checked={allOn}
-                      onChange={e => toggleMany(unitTypeIds, e.target.checked)}
-                      className="h-4 w-4 accent-pine" />
-                    {u.name}
-                  </label>
-                  <div className="ml-4 mt-2 grid gap-2">
-                    {u.mids.map(m => {
-                      const midTypeIds = m.subs.flatMap(s => s.types.map(t => t.id))
-                      const midOn = midTypeIds.every(t => selected.has(t))
-                      const midRedundant = m.name === u.name // 초등: 단원명 반복 → 접기
-                      return (
-                        <div key={m.id}>
-                          {/* 중단원 (대단원과 이름이 같으면 생략) */}
-                          {!midRedundant && (
-                            <label className="flex cursor-pointer items-center gap-2 text-sm font-bold text-ink">
-                              <input type="checkbox" checked={midOn}
-                                onChange={e => toggleMany(midTypeIds, e.target.checked)}
-                                className="h-3.5 w-3.5 accent-pine" />
-                              {m.name}
-                            </label>
-                          )}
-                          <div className={midRedundant ? 'grid gap-1' : 'ml-5 mt-1 grid gap-1'}>
+            {/* 매쓰플랫식 2패널: 좌 단원 트리(아코디언) · 우 유형 목록 */}
+            <div className="grid grid-cols-[300px_1fr] overflow-hidden rounded-xl border border-line">
+              {/* 좌: 단원 트리 */}
+              <div className="max-h-[560px] overflow-auto border-r border-line py-2">
+                <div className="flex items-center gap-2 px-3 py-2">
+                  <TriCheck state={checkStateOf(typeOrder, selected)}
+                    onChange={on => toggleMany(typeOrder, on)} />
+                  <span className="truncate text-sm font-black">{semesterChipLabel(cur.grade, cur.label)}</span>
+                </div>
+                {cur.units.map(u => {
+                  const unitTypeIds = u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))
+                  const open = expanded.has(u.id)
+                  return (
+                    <div key={u.id}>
+                      {/* 대단원 행: 화살표=펼침 · 체크=전체 토글 · 이름=우측 대상 */}
+                      <div className={`flex items-center gap-1.5 py-1.5 pl-2 pr-2 ${treeTarget === u.id ? 'bg-pine-soft' : 'hover:bg-paper2'}`}>
+                        <button onClick={() => toggleExpand(u.id)} title={open ? '접기' : '펼치기'}
+                          className="w-5 shrink-0 text-center text-xs text-ink2">{open ? '▾' : '▸'}</button>
+                        <TriCheck state={checkStateOf(unitTypeIds, selected)}
+                          onChange={on => toggleMany(unitTypeIds, on)} />
+                        <button onClick={() => setTreeTarget(u.id)}
+                          className="grow truncate text-left text-sm font-bold">{u.name}</button>
+                      </div>
+                      {open && u.mids.map(m => {
+                        const midTypeIds = m.subs.flatMap(s => s.types.map(t => t.id))
+                        const midRedundant = m.name === u.name // 초등: 단원명 반복 → 행 생략
+                        return (
+                          <div key={m.id}>
+                            {!midRedundant && (
+                              <div className={`flex items-center gap-1.5 py-1 pl-9 pr-2 ${treeTarget === m.id ? 'bg-pine-soft' : 'hover:bg-paper2'}`}>
+                                <TriCheck state={checkStateOf(midTypeIds, selected)} size="h-3.5 w-3.5"
+                                  onChange={on => toggleMany(midTypeIds, on)} />
+                                <button onClick={() => setTreeTarget(m.id)}
+                                  className="grow truncate text-left text-sm font-semibold">{m.name}</button>
+                              </div>
+                            )}
                             {m.subs.map(s => {
+                              if (!midRedundant && s.name === m.name) return null // 중단원명 반복 소단원 생략(중단원 행이 대신함)
                               const subTypeIds = s.types.map(t => t.id)
-                              const subOn = subTypeIds.every(t => selected.has(t))
-                              const subRedundant = s.name === m.name
                               return (
-                                <div key={s.id}>
-                                  {/* 소단원 (중단원과 이름이 같으면 생략) */}
-                                  {!subRedundant && (
-                                    <label className="flex cursor-pointer items-center gap-1.5 text-sm font-semibold text-ink2">
-                                      <input type="checkbox" checked={subOn}
-                                        onChange={e => toggleMany(subTypeIds, e.target.checked)}
-                                        className="h-3 w-3 accent-pine" />
-                                      {s.name}
-                                    </label>
-                                  )}
-                                  {/* 유형 */}
-                                  <div className={`flex flex-wrap gap-x-5 gap-y-1 py-0.5 ${subRedundant ? 'ml-1' : 'ml-5'}`}>
-                                    {s.types.map(t => {
-                                      const n = problems.filter(p => p.typeId === t.id).length
-                                      return (
-                                        <label key={t.id} className="flex cursor-pointer items-center gap-1.5 text-sm">
-                                          <input type="checkbox" checked={selected.has(t.id)}
-                                            onChange={() => toggleType(t.id)} className="h-3.5 w-3.5 accent-pine" />
-                                          {t.name}
-                                          <span className="text-xs text-ink2">({n})</span>
-                                        </label>
-                                      )
-                                    })}
-                                  </div>
+                                <div key={s.id}
+                                  className={`flex items-center gap-1.5 py-1 pr-2 ${midRedundant ? 'pl-9' : 'pl-14'} ${treeTarget === s.id ? 'bg-pine-soft' : 'hover:bg-paper2'}`}>
+                                  <TriCheck state={checkStateOf(subTypeIds, selected)} size="h-3 w-3"
+                                    onChange={on => toggleMany(subTypeIds, on)} />
+                                  <button onClick={() => setTreeTarget(s.id)}
+                                    className="grow truncate text-left text-sm text-ink2">{s.name}</button>
                                 </div>
                               )
                             })}
                           </div>
-                        </div>
-                      )
-                    })}
+                        )
+                      })}
+                    </div>
+                  )
+                })}
+              </div>
+              {/* 우: 유형 목록 */}
+              <div className="max-h-[560px] overflow-auto p-4">
+                {!targetInfo ? (
+                  <div className="flex h-full min-h-[300px] items-center justify-center text-sm text-ink2">
+                    단원과 유형을 선택해주세요.
                   </div>
-                </div>
-              )
-            })}
+                ) : (() => {
+                  const targetTypeIds = targetInfo.subs.flatMap(s => s.types.map(t => t.id))
+                  const selCount = targetTypeIds.filter(id => selected.has(id)).length
+                  return (
+                    <div>
+                      <div className="mb-3 flex flex-wrap items-center gap-2 border-b border-line pb-3">
+                        <span className="text-sm font-bold">{targetInfo.name}</span>
+                        <span className="text-xs text-ink2">— 유형 {targetTypeIds.length}개 · 선택 {selCount}개</span>
+                        <div className="grow" />
+                        <button onClick={() => toggleMany(targetTypeIds, true)}
+                          className="rounded border border-line px-2 py-1 text-xs font-semibold hover:bg-paper2">이 범위 전체 선택</button>
+                        <button onClick={() => toggleMany(targetTypeIds, false)}
+                          className="rounded border border-line px-2 py-1 text-xs font-semibold hover:bg-paper2">해제</button>
+                      </div>
+                      {targetInfo.subs.map(s => (
+                        <div key={s.id} className="mb-4">
+                          <div className="mb-1.5 rounded bg-paper2 px-2.5 py-1.5 text-xs font-bold text-ink2">{s.name}</div>
+                          <div className="grid gap-0.5">
+                            {s.types.map(t => {
+                              const n = problems.filter(p => p.typeId === t.id).length
+                              return (
+                                <label key={t.id} className="flex cursor-pointer items-center gap-2 rounded px-2 py-1 text-sm hover:bg-paper2">
+                                  <input type="checkbox" checked={selected.has(t.id)}
+                                    onChange={() => toggleType(t.id)} className="h-3.5 w-3.5 shrink-0 accent-pine" />
+                                  {t.name}
+                                  <span className="text-xs text-ink2">({n})</span>
+                                </label>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )
+                })()}
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col gap-5 rounded-2xl border border-line bg-white p-6">
@@ -750,7 +804,7 @@ export default function MakeWizard() {
                       </>
                     )}
                   </div>
-                  <ProblemContent p={p} imgClass="w-full max-h-64 object-contain" />
+                  <ProblemContent p={p} imgClass="w-full max-w-[465px]" />
                 </div>
               ))}
             </div>
@@ -1025,13 +1079,33 @@ function CandidateCard({ p, onAdd, onSwap, added, fav, onFav }: {
         <button onClick={onAdd} disabled={added}
           className="rounded bg-pine px-2 py-0.5 font-bold text-paper disabled:opacity-40">{added ? '담김' : '+ 추가'}</button>
       </div>
-      <ProblemContent p={p} textClass="text-[13px] leading-relaxed" imgClass="w-full max-h-48 object-contain" />
+      <ProblemContent p={p} textClass="text-[13px] leading-relaxed" imgClass="w-full max-w-[400px]" />
     </div>
   )
 }
 
 function Empty({ text }: { text: string }) {
   return <div className="rounded-xl border border-dashed border-line p-8 text-center text-sm text-ink2">{text}</div>
+}
+
+// tri-state 체크 상태: 전체/일부/없음
+type CheckState = 'all' | 'some' | 'none'
+function checkStateOf(ids: string[], selected: Set<string>): CheckState {
+  let n = 0
+  for (const id of ids) if (selected.has(id)) n++
+  return n === 0 ? 'none' : n === ids.length ? 'all' : 'some'
+}
+
+// tri-state 체크박스 (일부 선택 시 indeterminate 표시)
+function TriCheck({ state, onChange, size }: {
+  state: CheckState; onChange: (on: boolean) => void; size?: string
+}) {
+  return (
+    <input type="checkbox" checked={state === 'all'}
+      ref={el => { if (el) el.indeterminate = state === 'some' }}
+      onChange={e => onChange(e.target.checked)}
+      className={`${size ?? 'h-4 w-4'} shrink-0 accent-pine`} />
+  )
 }
 
 function MatrixModal({ matrix, onClose, onSave }: {

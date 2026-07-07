@@ -6,7 +6,9 @@ export default function ProblemContent({ p, textClass, imgClass }: {
   p: Problem; textClass?: string; imgClass?: string
 }) {
   if (p.imageUrl) {
-    return <img src={p.imageUrl} alt={p.body || '기출 문항'} className={imgClass ?? 'w-full'} />
+    // 매쓰플랫 문제 이미지는 폭 930px(@2x) 규격 — 원본의 50%(465px)로 캡해야
+    // 모든 문항의 글자 크기가 균일하고 원본 비율이 된다 (좁은 컨테이너에선 100%)
+    return <img src={p.imageUrl} alt={p.body || '기출 문항'} className={imgClass ?? 'w-full max-w-[465px]'} />
   }
   return (
     <>
