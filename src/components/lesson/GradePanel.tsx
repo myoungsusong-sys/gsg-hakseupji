@@ -1,11 +1,30 @@
 import { useEffect, useMemo, useState } from 'react'
 import { typeName, typeUnitName } from '../../data/curriculum'
 import { useStore } from '../../lib/store'
-import type { GradeResult, Student } from '../../types'
+import type { GradeResult, Student, WBItem } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 import BulkImportModal from '../BulkImportModal'
+import MathText from '../MathText'
 import DrillModal, { type DrillWrong } from './DrillModal'
 import StudentBookDialog from './StudentBookDialog'
+
+// 정답 표시 (매쓰플랫 채점판 동일): 객관식 숫자→①~⑤, 수식(LaTeX)→KaTeX 렌더, 그 외 원문
+const CIRCLED = ['①', '②', '③', '④', '⑤']
+function AnswerLabel({ item }: { item: WBItem }) {
+  const a = item.answer
+  if (!a) return null
+  if (item.kind === '객관식') {
+    const t = a.split(',').map(s => {
+      const n = Number(s.trim())
+      return n >= 1 && n <= 5 ? CIRCLED[n - 1] : s.trim()
+    }).join(',')
+    return <div className="text-[11px] text-ink2">정답 {t}</div>
+  }
+  if (/[\\{}^_]/.test(a)) {
+    return <div className="text-[11px] text-ink2">정답 <MathText text={`$${a}$`} /></div>
+  }
+  return <div className="text-[11px] text-ink2">정답 {a}</div>
+}
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
 // 클릭 순환: ○(정답) → ✕(오답) → ?(모름) → ○ · 기본 전부 정답
@@ -364,7 +383,7 @@ export default function GradePanel({ student }: { student: Student }) {
                           : <span className={`text-lg font-black ${MARK_CLASS[m]}`}>{MARK_ICON[m]}</span>}
                       </div>
                       <div className="mt-1 text-[11px] text-ink2">{typeName(i.typeId)}</div>
-                      {i.answer && <div className="text-[11px] text-ink2">정답 {i.answer}</div>}
+                      <AnswerLabel item={i} />
                     </button>
                   )
                 })}
