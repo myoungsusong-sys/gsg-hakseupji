@@ -182,7 +182,7 @@ export interface DailyNote {
   nextPlan: string      // 다음 학습 계획
 }
 
-export type ThemeKey = 'pine' | 'amber' | 'navy' | 'plum' | 'slate'
+export type ThemeKey = 'pine' | 'amber' | 'navy' | 'plum' | 'slate' | 'blue' | 'teal' | 'coral'
 
 export const THEMES: Record<ThemeKey, { name: string; main: string; soft: string }> = {
   pine:  { name: '딥그린', main: '#2e6b4f', soft: '#e2ede6' },
@@ -190,6 +190,9 @@ export const THEMES: Record<ThemeKey, { name: string; main: string; soft: string
   navy:  { name: '네이비', main: '#2f4a6b', soft: '#e2e8f0' },
   plum:  { name: '플럼',   main: '#6b2f4f', soft: '#f0e2ea' },
   slate: { name: '차콜',   main: '#44493f', soft: '#e8e8e4' },
+  blue:  { name: '블루',   main: '#2b7de9', soft: '#e9f2fe' },
+  teal:  { name: '틸',     main: '#0f766e', soft: '#dcf2f0' },
+  coral: { name: '코랄',   main: '#e0563f', soft: '#fbe7e2' },
 }
 
 export const TAG_PRESETS = [

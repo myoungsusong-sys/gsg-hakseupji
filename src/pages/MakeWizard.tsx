@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { curriculumFor, typeName, typeSubUnitId } from '../data/curriculum'
-import GradeSelect from '../components/GradeSelect'
+import { CURRICULA, curriculumFor, typeName, typeSubUnitId } from '../data/curriculum'
 import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
 import { useStore, uid } from '../lib/store'
@@ -15,8 +14,30 @@ import {
 
 type KindFilter = 'all' | Kind
 type LeftTab = 'summary' | 'add' | 'twin' | 'mine' | 'concept'
-type SortMode = 'curriculum' | 'diff' | 'shuffle'
+type SortMode = 'curriculum' | 'diffAsc' | 'diffDesc' | 'shuffle'
 type SrcTab = 'chapter' | 'workbook' | 'csat' | 'signature' | 'school' | 'upload'
+type MockFilter = 'include' | 'exclude' | 'only'
+
+const MOCK_FILTERS: { key: MockFilter; label: string }[] = [
+  { key: 'include', label: '모의고사 포함' },
+  { key: 'exclude', label: '모의고사 제외' },
+  { key: 'only', label: '모의고사만' },
+]
+// 모의고사 문제 판별: 출처에 모의고사·수능·학평 포함
+const isMockProblem = (p: Problem) => /모의고사|수능|학평/.test(p.source)
+
+// 학교급 칩 (초·중·고) — CURRICULA id 접두사로 매핑
+const SCHOOL_LEVELS: { label: string; prefix: string }[] = [
+  { label: '초', prefix: 'e' }, { label: '중', prefix: 'm' }, { label: '고', prefix: 'h' },
+]
+// 학기 칩 라벨: 초중 「1 - 1(22개정)」 · 고 「공통수학1(22개정)」
+function semesterChipLabel(grade: string, label: string): string {
+  const m = grade.match(/^[초중](\d)-(\d)$/)
+  return m ? `${m[1]} - ${m[2]}(22개정)` : label.replace(' (22개정)', '(22개정)')
+}
+
+// 매쓰플랫 추가 태그 4종 (기존 22종 뒤)
+const EXTRA_TAGS = ['기타자료 유사', '그룹취약유형', '교재 오답', '모의고사쌍둥이']
 
 const SRC_TABS: { key: SrcTab; label: string; note?: string }[] = [
   { key: 'chapter', label: '단원·유형별' },
@@ -50,6 +71,7 @@ export default function MakeWizard() {
   const [matrixOpen, setMatrixOpen] = useState(false)
   const [excludeRecent, setExcludeRecent] = useState(false)  // 최근 30일 출제 문제 제외
   const [evenTypes, setEvenTypes] = useState(false)          // 유형별 균등 배분
+  const [mockFilter, setMockFilter] = useState<MockFilter>('include')  // 모의고사 포함 여부
 
   // STEP 2
   const [items, setItems] = useState<Problem[]>([])
@@ -58,9 +80,11 @@ export default function MakeWizard() {
   const [twinTarget, setTwinTarget] = useState<Problem | null>(null)
   const [sortMode, setSortMode] = useState<SortMode>('curriculum')
   const [dragIdx, setDragIdx] = useState<number | null>(null)
+  const [problemOnly, setProblemOnly] = useState(false)      // 문제만 보기 (유형명·버튼 숨김)
 
   // STEP 3
   const [title, setTitle] = useState('')
+  const [wsGrade, setWsGrade] = useState('')                 // 학년 선택 (빈값 = 현재 과정)
   const [author, setAuthor] = useState('깊은생각수학')
   const [tags, setTags] = useState<Set<string>>(new Set(['기본']))
   const [theme, setTheme] = useState<ThemeKey>('pine')
@@ -122,10 +146,12 @@ export default function MakeWizard() {
     for (const w of worksheets) if (wsIds.has(w.id)) for (const pid of w.problemIds) s.add(pid)
     return s
   }, [assignments, worksheets])
-  const effectivePool = useMemo(
-    () => excludeRecent ? pool.filter(p => !recentProblemIds.has(p.id)) : pool,
-    [pool, excludeRecent, recentProblemIds],
-  )
+  const effectivePool = useMemo(() => {
+    let arr = excludeRecent ? pool.filter(p => !recentProblemIds.has(p.id)) : pool
+    if (mockFilter === 'exclude') arr = arr.filter(p => !isMockProblem(p))
+    else if (mockFilter === 'only') arr = arr.filter(isMockProblem)
+    return arr
+  }, [pool, excludeRecent, recentProblemIds, mockFilter])
   const availableCount = effectivePool.filter(p => kind === 'all' || p.kind === kind).length
   const usedIds = useMemo(() => new Set(items.map(p => p.id)), [items])
 
@@ -153,6 +179,24 @@ export default function MakeWizard() {
     setStep(2)
   }
 
+  // STEP3 진입: 학습지명이 비어 있으면 선택 범위의 대단원명으로 자동 채움
+  function goStep3() {
+    if (!title.trim()) {
+      const unitNames = cur.units
+        .filter(u => u.mids.some(m => m.subs.some(s => s.types.some(t => selected.has(t.id)))))
+        .map(u => u.name)
+      if (unitNames.length > 0)
+        setTitle(unitNames.length > 1 ? `${unitNames[0]} ~ ${unitNames[unitNames.length - 1]}` : unitNames[0])
+    }
+    setStep(3)
+  }
+
+  // ✕ 닫기: 확인 후 학습지 목록으로 이동 (beforeunload 가드와 별개)
+  function closeWizard() {
+    if (confirm('주의 — 화면을 이동하면 수정된 내용이 저장되지 않습니다. 다른 화면으로 이동하시겠습니까?'))
+      nav('/prep/worksheet')
+  }
+
   function applySort(mode: SortMode) {
     setSortMode(mode)
     setItems(prev => {
@@ -161,7 +205,8 @@ export default function MakeWizard() {
         const ta = typeOrder.indexOf(a.typeId), tb = typeOrder.indexOf(b.typeId)
         return ta !== tb ? ta - tb : a.diff - b.diff
       })
-      else if (mode === 'diff') next.sort((a, b) => a.diff - b.diff)
+      else if (mode === 'diffAsc') next.sort((a, b) => a.diff - b.diff)
+      else if (mode === 'diffDesc') next.sort((a, b) => b.diff - a.diff)
       else for (let i = next.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1)); [next[i], next[j]] = [next[j], next[i]]
       }
@@ -204,12 +249,15 @@ export default function MakeWizard() {
     setConceptIds(prev => { const n = new Set(prev); if (n.has(id)) n.delete(id); else n.add(id); return n })
   }
 
+  // 학년 선택값 (기본 = 현재 과정 / 수정 모드는 기존 학년)
+  const gradeValue = wsGrade || (editing ? editing.grade : cur.grade)
+
   function save() {
     if (!title.trim()) { alert('학습지명을 입력해주세요.'); return }
     const payload = {
       title: title.trim(),
       author: author.trim() || '출제자',
-      grade: editing ? editing.grade : cur.grade,
+      grade: gradeValue,
       tags: [...tags],
       theme,
       problemIds: items.map(p => p.id),
@@ -251,7 +299,7 @@ export default function MakeWizard() {
   )
 
   return (
-    <div>
+    <div className="pb-24">
       {/* 단계 표시 */}
       <div className="mb-8 flex items-center gap-3 text-sm">
         {([[1, '범위 선택'], [2, '상세 편집'], [3, '구성 설정']] as const).map(([n, label]) => (
@@ -262,6 +310,11 @@ export default function MakeWizard() {
           </div>
         ))}
         {editing && <span className="rounded-full bg-amber-soft px-3 py-1 text-xs font-bold text-amber">수정 모드: {editing.title}</span>}
+        <div className="grow" />
+        <button onClick={closeWizard}
+          className="rounded-lg border border-line px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-paper2 hover:text-ink">
+          ✕ 닫기
+        </button>
       </div>
 
       {step === 1 && (
@@ -294,11 +347,40 @@ export default function MakeWizard() {
       {step === 1 && srcTab === 'chapter' && (
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
           <div className="rounded-2xl border border-line bg-white p-6">
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-              <GradeSelect value={gradeId} onChange={id => { setGradeId(id); setSelected(new Set()) }} />
-              <div className="flex gap-2 text-xs">
-                <button onClick={() => toggleMany(typeOrder, true)} className="rounded border border-line px-2 py-1 hover:bg-paper2">전체 선택</button>
-                <button onClick={() => toggleMany(typeOrder, false)} className="rounded border border-line px-2 py-1 hover:bg-paper2">전체 해제</button>
+            <div className="mb-4">
+              {/* 학교급 칩 + 전체 선택/해제 */}
+              <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                <div className="flex gap-1 rounded-lg bg-paper2 p-1">
+                  {SCHOOL_LEVELS.map(lv => (
+                    <button key={lv.prefix}
+                      onClick={() => {
+                        if (gradeId.startsWith(lv.prefix)) return
+                        const first = CURRICULA.find(c => c.id.startsWith(lv.prefix))
+                        if (first) { setGradeId(first.id); setSelected(new Set()) }
+                      }}
+                      className={`rounded-md px-4 py-1.5 text-sm font-bold transition ${
+                        gradeId.startsWith(lv.prefix) ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'
+                      }`}>
+                      {lv.label}
+                    </button>
+                  ))}
+                </div>
+                <div className="flex gap-2 text-xs">
+                  <button onClick={() => toggleMany(typeOrder, true)} className="rounded border border-line px-2 py-1 hover:bg-paper2">전체 선택</button>
+                  <button onClick={() => toggleMany(typeOrder, false)} className="rounded border border-line px-2 py-1 hover:bg-paper2">전체 해제</button>
+                </div>
+              </div>
+              {/* 학기·과목 칩 (가로 스크롤) */}
+              <div className="flex gap-2 overflow-x-auto border-b border-line pb-3">
+                {CURRICULA.filter(c => c.id.startsWith(gradeId[0])).map(c => (
+                  <button key={c.id}
+                    onClick={() => { if (c.id !== gradeId) { setGradeId(c.id); setSelected(new Set()) } }}
+                    className={`shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm transition ${
+                      c.id === gradeId ? 'border-pine bg-pine-soft font-bold text-pine-dark' : 'border-line text-ink2 hover:text-ink'
+                    }`}>
+                    {semesterChipLabel(c.grade, c.label)}
+                  </button>
+                ))}
               </div>
             </div>
             {cur.units.map(u => {
@@ -412,7 +494,7 @@ export default function MakeWizard() {
             </div>
             <div>
               <div className="mb-2 flex items-center justify-between text-sm font-bold">
-                문제 형태
+                문제 타입
                 <button onClick={() => setOpts(o => ({ ...o, autoGrade: !(o.autoGrade ?? true) }))}
                   className="flex items-center gap-1.5 text-xs font-semibold text-ink2" title="자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)">
                   자동채점
@@ -430,6 +512,17 @@ export default function MakeWizard() {
                 ))}
               </div>
             </div>
+            <div>
+              <div className="mb-2 text-sm font-bold">모의고사 포함 여부</div>
+              <div className="flex flex-wrap gap-2">
+                {MOCK_FILTERS.map(f => (
+                  <button key={f.key} onClick={() => setMockFilter(f.key)}
+                    className={`rounded-lg border px-3 py-1.5 text-sm font-semibold ${mockFilter === f.key ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2'}`}>
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+            </div>
             <div className="grid gap-2 text-sm">
               <div className="font-bold">출제 옵션</div>
               <label className="flex cursor-pointer items-center gap-2">
@@ -443,16 +536,6 @@ export default function MakeWizard() {
                 유형별 균등 배분
               </label>
             </div>
-            <div className="mt-auto rounded-xl bg-paper2 p-4 text-sm">
-              학습지 문제 수 <b className="text-pine-dark">{Math.min(count, availableCount)}</b>개 | 유형 <b>{selected.size}</b>개
-              {availableCount < count && selected.size > 0 && (
-                <div className="mt-1 text-xs text-clay">범위 내 문제가 {availableCount}개뿐이라 그만큼만 담깁니다.</div>
-              )}
-            </div>
-            <button disabled={selected.size === 0} onClick={goStep2}
-              className="rounded-xl bg-pine py-3 font-bold text-paper transition enabled:hover:bg-pine-dark disabled:opacity-40">
-              다음 단계 →
-            </button>
           </div>
         </div>
       )}
@@ -472,21 +555,6 @@ export default function MakeWizard() {
                 </div>
               ))}
             </div>
-            <select value={sortMode} onChange={e => applySort(e.target.value as SortMode)}
-              className="rounded-lg border border-line px-2 py-1.5 text-sm">
-              <option value="curriculum">교육과정순</option>
-              <option value="diff">난이도순</option>
-              <option value="shuffle">무작위 섞기</option>
-            </select>
-            <div className="grow" />
-            {!editing && (
-              <button onClick={() => {
-                if (items.length > 0 && !confirm('편집 내용이 초기화됩니다. 범위 선택으로 돌아갈까요?')) return
-                setStep(1)
-              }} className="rounded-lg border border-line px-4 py-2 text-sm">← 범위 다시 선택</button>
-            )}
-            <button disabled={items.length === 0} onClick={() => setStep(3)}
-              className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">다음 단계 →</button>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
@@ -610,6 +678,23 @@ export default function MakeWizard() {
 
             {/* 우측: 선택한 문제 목록 (드래그로 순서 변경) */}
             <div className="grid h-fit gap-3">
+              <div className="flex items-center gap-3">
+                <select value={sortMode} onChange={e => applySort(e.target.value as SortMode)}
+                  className="rounded-lg border border-line bg-white px-2 py-1.5 text-sm">
+                  <option value="curriculum">문제 유형 오름차순</option>
+                  <option value="diffAsc">난이도 낮은순</option>
+                  <option value="diffDesc">난이도 높은순</option>
+                  <option value="shuffle">무작위 섞기</option>
+                </select>
+                <div className="grow" />
+                <button onClick={() => setProblemOnly(v => !v)}
+                  className="flex items-center gap-1.5 text-xs font-semibold text-ink2" title="유형명·버튼을 숨기고 문제 본문만 봅니다">
+                  문제만 보기
+                  <span className={`flex h-5 w-9 items-center rounded-full p-0.5 transition ${problemOnly ? 'justify-end bg-pine' : 'justify-start bg-line'}`}>
+                    <span className="h-4 w-4 rounded-full bg-white" />
+                  </span>
+                </button>
+              </div>
               {items.map((p, i) => (
                 <div key={p.id}
                   draggable
@@ -623,19 +708,23 @@ export default function MakeWizard() {
                   <div className="mb-2 flex items-center gap-2 text-xs">
                     <span className="cursor-grab select-none text-line" title="드래그해서 순서 변경">⠿</span>
                     <span className="text-base font-black text-pine-dark">{String(i + 1).padStart(2, '0')}</span>
-                    <span className={`rounded px-1.5 py-0.5 font-bold ${DIFF_COLOR[p.diff]}`}>{DIFF_LABEL[p.diff]}</span>
-                    <span className="rounded bg-paper2 px-1.5 py-0.5 text-ink2">{p.kind}</span>
-                    <span className="text-ink2">{typeName(p.typeId)}</span>
-                    {p.isNew && <span className="rounded bg-clay/10 px-1.5 py-0.5 font-bold text-clay">신경향</span>}
-                    {p.correctRate != null && <span className="text-ink2">정답률 {p.correctRate}%</span>}
-                    <button onClick={() => toggleFavorite(p.id)} title="즐겨찾기"
-                      className={`text-base leading-none ${favorites.includes(p.id) ? 'text-amber' : 'text-line hover:text-amber'}`}>★</button>
-                    <div className="grow" />
-                    <button onClick={() => moveItem(i, -1)} className="rounded border border-line px-2 py-1 hover:bg-paper2">↑</button>
-                    <button onClick={() => moveItem(i, 1)} className="rounded border border-line px-2 py-1 hover:bg-paper2">↓</button>
-                    <button onClick={() => { setTwinTarget(p); setLeftTab('twin') }}
-                      className="rounded border border-pine px-2 py-1 font-semibold text-pine hover:bg-pine-soft">쌍둥이·유사</button>
-                    <button onClick={() => removeItem(p.id)} className="rounded border border-line px-2 py-1 text-ink2 hover:border-clay hover:text-clay">삭제</button>
+                    {!problemOnly && (
+                      <>
+                        <span className={`rounded px-1.5 py-0.5 font-bold ${DIFF_COLOR[p.diff]}`}>{DIFF_LABEL[p.diff]}</span>
+                        <span className="rounded bg-paper2 px-1.5 py-0.5 text-ink2">{p.kind}</span>
+                        <span className="text-ink2">{typeName(p.typeId)}</span>
+                        {p.isNew && <span className="rounded bg-clay/10 px-1.5 py-0.5 font-bold text-clay">신경향</span>}
+                        {p.correctRate != null && <span className="text-ink2">정답률 {p.correctRate}%</span>}
+                        <button onClick={() => toggleFavorite(p.id)} title="즐겨찾기"
+                          className={`text-base leading-none ${favorites.includes(p.id) ? 'text-amber' : 'text-line hover:text-amber'}`}>★</button>
+                        <div className="grow" />
+                        <button onClick={() => moveItem(i, -1)} className="rounded border border-line px-2 py-1 hover:bg-paper2">↑</button>
+                        <button onClick={() => moveItem(i, 1)} className="rounded border border-line px-2 py-1 hover:bg-paper2">↓</button>
+                        <button onClick={() => { setTwinTarget(p); setLeftTab('twin') }}
+                          className="rounded border border-pine px-2 py-1 font-semibold text-pine hover:bg-pine-soft">쌍둥이·유사</button>
+                        <button onClick={() => removeItem(p.id)} className="rounded border border-line px-2 py-1 text-ink2 hover:border-clay hover:text-clay">삭제</button>
+                      </>
+                    )}
                   </div>
                   <ProblemContent p={p} imgClass="w-full max-h-64 object-contain" />
                 </div>
@@ -660,12 +749,21 @@ export default function MakeWizard() {
                 <input value={author} onChange={e => setAuthor(e.target.value)}
                   className="rounded-lg border border-line px-3 py-2.5 font-normal outline-none focus:border-pine" />
               </label>
+              <label className="grid gap-1.5 text-sm font-bold">
+                학년 선택
+                <select value={gradeValue} onChange={e => setWsGrade(e.target.value)}
+                  className="rounded-lg border border-line bg-white px-3 py-2.5 font-normal outline-none focus:border-pine">
+                  {[...new Set([...CURRICULA.map(c => c.grade), gradeValue])].map(g => (
+                    <option key={g} value={g}>{g}</option>
+                  ))}
+                </select>
+              </label>
             </div>
 
             <div className="grid gap-1.5 text-sm font-bold">
               태그
               <div className="flex flex-wrap gap-2 font-normal">
-                {TAG_PRESETS.map(t => (
+                {[...TAG_PRESETS, ...EXTRA_TAGS].map(t => (
                   <button key={t}
                     onClick={() => setTags(prev => { const n = new Set(prev); if (n.has(t)) n.delete(t); else n.add(t); return n })}
                     className={`rounded-full border px-3 py-1 text-sm ${tags.has(t) ? 'border-pine bg-pine-soft font-semibold text-pine-dark' : 'border-line text-ink2'}`}>
@@ -774,12 +872,6 @@ export default function MakeWizard() {
               </label>
             </div>
 
-            <div className="mt-auto flex gap-3">
-              <button onClick={() => setStep(2)} className="rounded-xl border border-line px-5 py-3 text-sm font-semibold">← 이전</button>
-              <button onClick={save} className="grow rounded-xl bg-amber py-3 font-bold text-white hover:brightness-105">
-                {editing ? '수정 저장하기' : '학습지 저장하기'}
-              </button>
-            </div>
           </div>
 
           {/* 간이 미리보기 */}
@@ -788,7 +880,7 @@ export default function MakeWizard() {
             <div className="rounded-xl border border-line p-5" style={{ background: THEMES[theme].soft }}>
               <div className="mb-1 flex items-center gap-2">
                 <span className="rounded px-2 py-0.5 text-xs font-black text-white" style={{ background: THEMES[theme].main }}>
-                  {editing ? editing.grade : cur.grade}
+                  {gradeValue}
                 </span>
                 <span className="font-black" style={{ color: THEMES[theme].main }}>{title || '학습지 제목'}</span>
               </div>
@@ -806,6 +898,50 @@ export default function MakeWizard() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* 하단 고정 바: 문제 수·유형 수 + 단계 이동 (매쓰플랫 방식) */}
+      {(step > 1 || srcTab === 'chapter') && (
+        <div className="no-print fixed inset-x-0 bottom-0 z-30 border-t border-line bg-white/95 backdrop-blur">
+          <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-1 px-6 py-3">
+            <div className="text-sm">
+              학습지 문제 수 <b className="text-pine-dark">{step === 1 ? Math.min(count, availableCount) : items.length}</b> 개
+              {' | '}유형 <b>{step === 1 ? selected.size : new Set(items.map(p => p.typeId)).size}</b>개
+            </div>
+            {step === 1 && availableCount < count && selected.size > 0 && (
+              <span className="text-xs text-clay">범위 내 문제가 {availableCount}개뿐이라 그만큼만 담깁니다.</span>
+            )}
+            <div className="grow" />
+            {step === 2 && !editing && (
+              <button onClick={() => {
+                if (items.length > 0 && !confirm('편집 내용이 초기화됩니다. 범위 선택으로 돌아갈까요?')) return
+                setStep(1)
+              }} className="rounded-lg border border-line px-5 py-2.5 text-sm font-semibold hover:bg-paper2">← 이전</button>
+            )}
+            {step === 3 && (
+              <button onClick={() => setStep(2)}
+                className="rounded-lg border border-line px-5 py-2.5 text-sm font-semibold hover:bg-paper2">← 이전</button>
+            )}
+            {step === 1 && (
+              <button disabled={selected.size === 0} onClick={goStep2}
+                className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper transition enabled:hover:bg-pine-dark disabled:opacity-40">
+                다음 단계 →
+              </button>
+            )}
+            {step === 2 && (
+              <button disabled={items.length === 0} onClick={goStep3}
+                className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper transition enabled:hover:bg-pine-dark disabled:opacity-40">
+                다음 단계 →
+              </button>
+            )}
+            {step === 3 && (
+              <button onClick={save}
+                className="rounded-lg bg-amber px-6 py-2.5 text-sm font-bold text-white hover:brightness-105">
+                {editing ? '수정 저장하기' : '학습지 만들기'}
+              </button>
+            )}
           </div>
         </div>
       )}
