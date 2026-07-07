@@ -1,7 +1,31 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
 import { SUPABASE_ON } from '../lib/supabase'
+
+// 새 배포 감지 — 탭을 오래 열어두면 옛 번들이 계속 도는 문제 방지
+function useUpdateCheck(): boolean {
+  const [stale, setStale] = useState(false)
+  useEffect(() => {
+    const current = [...document.querySelectorAll('script[src]')]
+      .map(s => (s as HTMLScriptElement).src)
+      .find(s => s.includes('/assets/index-'))
+    if (!current) return
+    let alive = true
+    async function check() {
+      try {
+        const r = await fetch('/?u=' + Date.now(), { cache: 'no-store' })
+        const html = await r.text()
+        const served = html.match(/\/assets\/index-[\w-]+\.js/)?.[0]
+        if (alive && served && !current!.endsWith(served)) setStale(true)
+      } catch { /* 오프라인 등은 무시 */ }
+    }
+    const t = setInterval(check, 3 * 60 * 1000)
+    check()
+    return () => { alive = false; clearInterval(t) }
+  }, [])
+  return stale
+}
 
 const topTab = ({ isActive }: { isActive: boolean }) =>
   `px-4 py-2 rounded-full text-[15px] font-bold transition ${
@@ -14,8 +38,16 @@ export default function Layout() {
   const { email, signOut } = useAuth()
   const [bell, setBell] = useState(false)
   const [acct, setAcct] = useState(false)
+  const stale = useUpdateCheck()
   return (
     <div className="min-h-screen">
+      {stale && (
+        <div className="no-print sticky top-0 z-40 flex items-center justify-center gap-3 bg-amber px-4 py-2 text-sm font-bold text-white">
+          새 버전이 배포되었습니다 — 새로고침하면 최신 기능이 적용됩니다.
+          <button onClick={() => location.reload()}
+            className="rounded-lg bg-white/20 px-3 py-1 hover:bg-white/30">지금 새로고침</button>
+        </div>
+      )}
       <header className="no-print sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-6 py-3">
           <button onClick={() => nav('/')} className="flex items-baseline gap-2">
