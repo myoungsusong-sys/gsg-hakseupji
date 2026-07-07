@@ -97,16 +97,18 @@ export interface Workbook {
   name: string          // 예: 쎈 중등수학 1(상)
   publisher: string     // 예: 좋은책신사고
   grade: string
+  matchKey?: string     // 시중교재 매칭표 키 → 문항·유형이 자동 파생됨 (문항은 저장하지 않음)
 }
 
 export interface WBItem {
   id: string
   workbookId: string
   page: number
-  no: number            // 문항 번호
-  typeId: string        // 우리 유형 트리에 매핑
+  no: number            // 문항 순번 (정렬용)
+  label?: string        // 표시용 원문항번호 (예: "1.(1)") — 없으면 no 사용
+  typeId: string        // 우리 유형 트리에 매핑 (= 매쓰플랫 conceptId)
   kind: Kind
-  answer: string        // 채점 기준 (예: ③ 또는 12)
+  answer: string        // 채점 기준 (예: ③ 또는 12) — 매칭 교재는 빈값(OX채점)
   diff?: Diff
 }
 

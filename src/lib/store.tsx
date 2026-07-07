@@ -1,10 +1,11 @@
-import { createContext, useContext, useEffect, useRef, useState } from 'react'
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
   DailyNote, DiffMatrix, Grading, MyList, Problem, Student, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
+import { loadWbMatch, deriveWBItems } from '../data/wbMatch'
 import { cloud, loadAll, noteId, type CloudData } from './backend'
 
 const LS_KEY = 'gsg-hakseupji-v1'
@@ -100,6 +101,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const stateRef = useRef(state)
   stateRef.current = state
 
+  // 시중교재 매칭: matchKey가 붙은 교재의 문항(conceptId 포함)을 런타임 파생 (Supabase엔 저장 안 함)
+  const [matchData, setMatchData] = useState<Record<string, [string, number, string, number][]> | null>(null)
+  const needMatch = state.workbooks.some(w => w.matchKey)
+  useEffect(() => {
+    if (needMatch && !matchData) loadWbMatch().then(setMatchData).catch(e => console.warn('wb-match', e.message))
+  }, [needMatch, matchData])
+  const derivedWbItems = useMemo(() => {
+    if (!matchData) return []
+    return state.workbooks.filter(w => w.matchKey).flatMap(w => deriveWBItems(w.id, w.matchKey!, matchData))
+  }, [state.workbooks, matchData])
+
   // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
   // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
   useEffect(() => {
@@ -135,6 +147,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const store: Store = {
     ...state,
     synced,
+    wbItems: [...state.wbItems, ...derivedWbItems],   // 수동 등록분 + 매칭 교재 파생분
     problems: [...SEED_PROBLEMS, ...state.customProblems],
 
     addProblem: p => { set(s => ({ ...s, customProblems: [...s.customProblems, p] })); cloud.upsert(cloud.T.problems, p.id, p) },

@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { CURRICULA } from '../data/curriculum'
+import { WB_MATCH_BOOKS } from '../data/wbMatch'
 import { useStore, uid } from '../lib/store'
+import { typeName } from '../data/curriculum'
 import type { Diff, Kind, WBItem } from '../types'
 import { DIFF_LABEL, DIFFS } from '../types'
 
@@ -44,10 +46,12 @@ export default function Workbooks() {
           ))}
         </div>
 
-        {/* 정답표 편집 */}
+        {/* 정답표 편집 / 매칭 요약 */}
         <div className="rounded-2xl border border-line bg-white p-6">
           {!current ? (
             <p className="text-sm text-ink2">왼쪽에서 교재를 선택하거나 새로 추가하세요.</p>
+          ) : current.matchKey ? (
+            <MatchSummary name={current.name} items={items} />
           ) : (
             <ItemEditor key={current.id} workbookId={current.id} name={current.name}
               items={items} onSave={next => setWBItems(current.id, next)} />
@@ -56,6 +60,7 @@ export default function Workbooks() {
       </div>
 
       {adding && <AddWorkbookModal onClose={() => setAdding(false)}
+        existingKeys={new Set(workbooks.map(w => w.matchKey).filter((k): k is string => !!k))}
         onAdd={w => { const id = addWorkbook(w); setSel(id); setAdding(false) }} />}
     </div>
   )
@@ -148,30 +153,118 @@ function ItemEditor({ workbookId, name, items, onSave }: {
   )
 }
 
-function AddWorkbookModal({ onClose, onAdd }: { onClose: () => void; onAdd: (w: { name: string; publisher: string; grade: string }) => void }) {
+// 매칭 교재 요약 (읽기 전용) — 문항·유형이 시중교재 매칭표에서 자동으로 붙는다
+function MatchSummary({ name, items }: { name: string; items: WBItem[] }) {
+  const pages = items.map(i => i.page).filter(p => p > 0)
+  const typeCount = new Set(items.map(i => i.typeId)).size
+  const byType = useMemo(() => {
+    const m = new Map<string, number>()
+    for (const i of items) m.set(i.typeId, (m.get(i.typeId) ?? 0) + 1)
+    return [...m.entries()].sort((a, b) => b[1] - a[1])
+  }, [items])
+  return (
+    <div>
+      <div className="mb-3 flex flex-wrap items-center gap-3">
+        <h2 className="font-bold">{name}</h2>
+        <span className="rounded-full bg-pine-soft px-3 py-1 text-xs font-bold text-pine-dark">시중교재 자동 매칭</span>
+      </div>
+      {items.length === 0 ? (
+        <p className="text-sm text-ink2">매칭 데이터를 불러오는 중…</p>
+      ) : (
+        <>
+          <p className="mb-4 text-sm text-ink2">
+            <b className="text-ink">{items.length}문항</b> · <b className="text-ink">{typeCount}개 유형</b>
+            {pages.length ? <> · {Math.min(...pages)}~{Math.max(...pages)}쪽</> : null}
+            <br />각 문항이 유형(conceptId)에 자동 연결돼 있어, <b>수업 → 교재</b>에서 OX채점만 하면 틀린 유형의 쌍둥이·유사 문제로 오답 드릴이 만들어집니다. (문제 원문·정답은 저장하지 않음)
+          </p>
+          <div className="max-h-[52vh] overflow-y-auto rounded-xl border border-line">
+            <table className="w-full text-sm">
+              <thead className="sticky top-0 bg-paper2">
+                <tr className="text-left text-xs text-ink2"><th className="px-3 py-2">유형</th><th className="py-2 pr-3 text-right">문항 수</th></tr>
+              </thead>
+              <tbody>
+                {byType.map(([tid, n]) => (
+                  <tr key={tid} className="border-t border-line/50">
+                    <td className="px-3 py-1.5">{typeName(tid)}</td>
+                    <td className="py-1.5 pr-3 text-right font-semibold">{n}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+type AddPayload = { name: string; publisher: string; grade: string; matchKey?: string }
+function AddWorkbookModal({ onClose, onAdd, existingKeys }: { onClose: () => void; onAdd: (w: AddPayload) => void; existingKeys: Set<string> }) {
+  const [mode, setMode] = useState<'pick' | 'manual'>('pick')
+  const [q, setQ] = useState('')
   const [name, setName] = useState('')
   const [publisher, setPublisher] = useState('')
   const [grade, setGrade] = useState('중1-1')
+
+  const filtered = useMemo(() => {
+    const kw = q.trim().toLowerCase()
+    return WB_MATCH_BOOKS.filter(b => !kw || b.name.toLowerCase().includes(kw) || b.publisher.toLowerCase().includes(kw))
+  }, [q])
+
   return (
     <div className="fixed inset-0 z-30 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
-      <div className="w-full max-w-md rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
-        <h3 className="mb-4 text-lg font-bold">교재 추가</h3>
-        <div className="grid gap-3 text-sm">
-          <label className="grid gap-1 font-bold">교재명
-            <input value={name} onChange={e => setName(e.target.value)} placeholder="쎈 중등수학 1(상)"
-              className="rounded-lg border border-line px-3 py-2 font-normal" /></label>
-          <label className="grid gap-1 font-bold">출판사
-            <input value={publisher} onChange={e => setPublisher(e.target.value)} placeholder="좋은책신사고"
-              className="rounded-lg border border-line px-3 py-2 font-normal" /></label>
-          <label className="grid gap-1 font-bold">학년·학기
-            <input value={grade} onChange={e => setGrade(e.target.value)}
-              className="rounded-lg border border-line px-3 py-2 font-normal" /></label>
-          <div className="mt-2 flex justify-end gap-2">
-            <button onClick={onClose} className="rounded-lg border border-line px-4 py-2">취소</button>
-            <button onClick={() => name.trim() ? onAdd({ name: name.trim(), publisher: publisher.trim(), grade }) : alert('교재명을 입력하세요.')}
-              className="rounded-lg bg-pine px-5 py-2 font-bold text-paper">추가</button>
+      <div className="flex max-h-[85vh] w-full max-w-lg flex-col rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
+        <div className="mb-3 flex items-center gap-3">
+          <h3 className="text-lg font-bold">교재 추가</h3>
+          <div className="grow" />
+          <div className="flex rounded-lg border border-line p-0.5 text-xs font-semibold">
+            <button onClick={() => setMode('pick')} className={`rounded-md px-3 py-1 ${mode === 'pick' ? 'bg-pine text-paper' : 'text-ink2'}`}>시중교재</button>
+            <button onClick={() => setMode('manual')} className={`rounded-md px-3 py-1 ${mode === 'manual' ? 'bg-pine text-paper' : 'text-ink2'}`}>직접 입력</button>
           </div>
         </div>
+
+        {mode === 'pick' ? (
+          <>
+            <p className="mb-2 text-xs text-ink2">중1-1 시중교재 {WB_MATCH_BOOKS.length}종 — 문항별 유형이 자동 매칭됩니다.</p>
+            <input value={q} onChange={e => setQ(e.target.value)} placeholder="교재명·출판사 검색 (쎈, RPM, 개념원리…)"
+              className="mb-3 rounded-lg border border-line px-3 py-2 text-sm" autoFocus />
+            <div className="min-h-0 grow overflow-y-auto rounded-xl border border-line">
+              {filtered.map(b => {
+                const has = existingKeys.has(b.key)
+                return (
+                  <button key={b.key} disabled={has}
+                    onClick={() => onAdd({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key })}
+                    className={`flex w-full items-center gap-2 border-b border-line/50 px-3 py-2.5 text-left last:border-0 ${has ? 'cursor-default opacity-40' : 'hover:bg-pine-soft'}`}>
+                    <div className="min-w-0 grow">
+                      <div className="truncate text-sm font-bold">{b.name}</div>
+                      <div className="text-xs text-ink2">{b.publisher} · {b.count}문항</div>
+                    </div>
+                    {has ? <span className="text-xs text-ink2">등록됨</span>
+                      : <span className="rounded-full bg-pine-soft px-2 py-0.5 text-xs font-bold text-pine-dark">추가</span>}
+                  </button>
+                )
+              })}
+              {filtered.length === 0 && <p className="p-6 text-center text-sm text-ink2">검색 결과가 없습니다. 「직접 입력」으로 추가하세요.</p>}
+            </div>
+          </>
+        ) : (
+          <div className="grid gap-3 text-sm">
+            <label className="grid gap-1 font-bold">교재명
+              <input value={name} onChange={e => setName(e.target.value)} placeholder="쎈 중등수학 1(상)"
+                className="rounded-lg border border-line px-3 py-2 font-normal" /></label>
+            <label className="grid gap-1 font-bold">출판사
+              <input value={publisher} onChange={e => setPublisher(e.target.value)} placeholder="좋은책신사고"
+                className="rounded-lg border border-line px-3 py-2 font-normal" /></label>
+            <label className="grid gap-1 font-bold">학년·학기
+              <input value={grade} onChange={e => setGrade(e.target.value)}
+                className="rounded-lg border border-line px-3 py-2 font-normal" /></label>
+            <div className="mt-2 flex justify-end gap-2">
+              <button onClick={onClose} className="rounded-lg border border-line px-4 py-2">취소</button>
+              <button onClick={() => name.trim() ? onAdd({ name: name.trim(), publisher: publisher.trim(), grade }) : alert('교재명을 입력하세요.')}
+                className="rounded-lg bg-pine px-5 py-2 font-bold text-paper">추가</button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -88,10 +88,13 @@ export default function Lesson() {
   // ── 교재 채점 ──────────────────────────────
   function GradePanel({ studentId }: { studentId: string }) {
     const [wbId, setWbId] = useState(workbooks[0].id)
-    const wbAll = useMemo(() => wbItems.filter(i => i.workbookId === wbId).sort((a, b) => a.page - b.page || a.no - b.no), [wbId])
+    const wbAll = useMemo(() => wbItems.filter(i => i.workbookId === wbId).sort((a, b) => a.page - b.page || a.no - b.no), [wbId, wbItems])
     const pages = [...new Set(wbAll.map(i => i.page))].sort((a, b) => a - b)
     const [from, setFrom] = useState(pages[0] ?? 1)
     const [to, setTo] = useState(pages.at(-1) ?? 1)
+    // 교재 전환·매칭 문항 로드 시 쪽 범위를 교재 전체로 초기화
+    useEffect(() => { if (pages.length) { setFrom(pages[0]); setTo(pages[pages.length - 1]) } // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [wbId, wbAll.length])
     const inRange = wbAll.filter(i => i.page >= from && i.page <= to)
     // 기본 전부 정답, 틀린 것만 체크
     const [wrong, setWrong] = useState<Set<string>>(new Set())
@@ -143,7 +146,7 @@ export default function Lesson() {
               <button key={i.id} onClick={() => toggle(i.id)}
                 className={`rounded-xl border p-3 text-left transition ${isWrong ? 'border-clay bg-red-50' : 'border-line bg-white hover:border-pine'}`}>
                 <div className="flex items-center justify-between">
-                  <b className="text-sm">p.{i.page} {i.no}번</b>
+                  <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
                   <span className={`text-lg font-black ${isWrong ? 'text-clay' : 'text-pine'}`}>{isWrong ? '✕' : '○'}</span>
                 </div>
                 <div className="mt-1 text-[11px] text-ink2">{typeName(i.typeId)}</div>
