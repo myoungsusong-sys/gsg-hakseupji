@@ -815,6 +815,9 @@ export function defaultCurriculumForGrade(grade: string): string {
   if (grade === '고3') return 'h-calc2'
   const exact = CURRICULA.find(c => c.grade === grade)   // '중1-1'·'초3-2' 과정형
   if (exact) return exact.id
+  // 고등 과목명 ('공통수학1'·'대수'·'미적분Ⅰ'·'확률과 통계'·'미적분Ⅱ'·'기하' — 시중교재 grade 형식)
+  const byLabel = CURRICULA.find(c => c.label.startsWith(grade))
+  if (byLabel) return byLabel.id
   const m = grade.match(/^(초|중)(\d)$/)                  // '중2'·'초5' → 그 학년 1학기
   if (m) {
     const first = CURRICULA.find(c => c.grade === `${m[1]}${m[2]}-1`)
