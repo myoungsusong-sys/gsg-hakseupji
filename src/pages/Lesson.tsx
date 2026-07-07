@@ -58,6 +58,7 @@ export default function Lesson() {
   return (
     <div className="grid gap-6 lg:grid-cols-[230px_1fr]">
       <aside className="no-print h-fit rounded-2xl border border-line bg-white p-3">
+        <div className="mb-2 px-1 text-sm font-black">👤 {student ? `${student.name} 학생 수업` : '수업'}</div>
         <div className="mb-2 flex rounded-lg border border-line p-0.5 text-xs font-semibold">
           {(['학년', '반'] as const).map(g => (
             <button key={g} onClick={() => setGroupBy(g)}
@@ -66,7 +67,11 @@ export default function Lesson() {
         </div>
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="학생 이름 검색"
           className="mb-2 w-full rounded-lg border border-line px-2.5 py-1.5 text-sm" />
-        <div className="mb-1 px-1 text-xs font-bold text-ink2">학생 {active.length}명</div>
+        <div className="mb-1 flex items-center px-1">
+          <span className="text-xs font-bold text-ink2">학생 {active.length}명</span>
+          <div className="grow" />
+          <button onClick={() => setClosed(new Set())} className="text-xs text-pine hover:underline">전체 열기</button>
+        </div>
         {groups.map(([name, list]) => (
           <div key={name} className="mb-1">
             <button onClick={() => toggleGroup(name)}

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import type { Assignment, GradeResult, Grading, Problem, Student, Worksheet } from '../../types'
+import type { Assignment, Diff, GradeResult, Grading, Problem, Student, Worksheet } from '../../types'
+import { DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
 import { dateKey } from '../../lib/dates'
 import { normAnswer } from '../../lib/answers'
@@ -11,12 +12,18 @@ import PeriodWrongModal from './PeriodWrongModal'
 
 const CIRCLED = ['①', '②', '③', '④', '⑤']
 
+// 태그 필터 고정 목록 (매쓰플랫 동일 — 존재 태그가 아니라 이 고정 세트)
+const TAG_OPTIONS = [
+  '태그 전체', '기본', '연산문제', '숙제', '복습', '연산',
+  '입학TEST', '일일TEST', '주간TEST', '단원TEST', '총괄TEST', '내신대비', '서술형',
+]
+
 // 수업 > 학습지 탭 (매쓰플랫 동일) — 이 학생에게 출제한 학습지 목록·자동채점·오답 재출제
 export default function WorksheetPanel({ student }: { student: Student }) {
-  const { worksheets, assignments, gradings, problems, addAssignment, removeAssignment } = useStore()
+  const { worksheets, assignments, gradings, problems, addAssignment, removeAssignment, duplicateWorksheet } = useStore()
   const nav = useNavigate()
 
-  const [tag, setTag] = useState('전체')
+  const [tag, setTag] = useState('태그 전체')
   const [q, setQ] = useState('')
   const [sort, setSort] = useState<'assigned' | 'graded'>('assigned')
   const [menuFor, setMenuFor] = useState<string | null>(null)
@@ -45,11 +52,9 @@ export default function WorksheetPanel({ student }: { student: Student }) {
     return m
   }, [gradings, student.id])
 
-  const tags = useMemo(() => [...new Set(rows.flatMap(r => r.ws.tags))], [rows])
-
   const shown = useMemo(() => {
     let list = rows
-    if (tag !== '전체') list = list.filter(r => r.ws.tags.includes(tag))
+    if (tag !== '태그 전체') list = list.filter(r => r.ws.tags.includes(tag))
     const needle = q.trim().toLowerCase()
     if (needle) list = list.filter(r => r.ws.title.toLowerCase().includes(needle))
     return [...list].sort((x, y) => {
@@ -62,15 +67,34 @@ export default function WorksheetPanel({ student }: { student: Student }) {
     })
   }, [rows, tag, q, sort, latestBy])
 
-  function scoreOf(wsId: string): string {
-    const g = latestBy.get(wsId)
-    if (!g || g.results.length === 0) return '미채점'
+  function scoreOf(g: Grading): number {
     const correct = g.results.filter(r => r.correct).length
-    return `${Math.round(correct / g.results.length * 100)}점`
+    return Math.round(correct / g.results.length * 100)
   }
 
   const hasHomework = (wsId: string) =>
     assignments.some(a => a.worksheetId === wsId && a.studentId === student.id && a.kind === '숙제')
+
+  // 학습지명 밑 파란 부제: "n문제 | 난이도(최빈) | 첫유형 ~ 끝유형"
+  function sheetMeta(ws: Worksheet): string {
+    const list = ws.problemIds.map(id => problemMap.get(id)).filter((p): p is Problem => !!p)
+    if (list.length === 0) return `${ws.problemIds.length}문제`
+    const count = new Map<Diff, number>()
+    for (const p of list) count.set(p.diff, (count.get(p.diff) ?? 0) + 1)
+    let best: Diff = list[0].diff
+    let bestN = 0
+    for (const [d, n] of count) if (n > bestN) { best = d; bestN = n }
+    const first = typeName(list[0].typeId)
+    const last = typeName(list[list.length - 1].typeId)
+    const range = first === last ? first : `${first} ~ ${last}`
+    return `${ws.problemIds.length}문제 | ${DIFF_LABEL[best]} | ${range}`
+  }
+
+  // 수정 후 재출제 — 복제본을 만들어 편집 화면으로 (원본·채점 기록은 보존)
+  function editReassign(ws: Worksheet) {
+    const nid = duplicateWorksheet(ws.id)
+    if (nid) nav(`/make?edit=${nid}`)
+  }
 
   // 최신 채점의 오답 → 오답 재출제 (틀린 원문제 id 포함)
   function redrill(ws: Worksheet) {
@@ -104,30 +128,36 @@ export default function WorksheetPanel({ student }: { student: Student }) {
 
   return (
     <div>
-      {/* 상단 필터 바 */}
-      <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+      {/* 상단 필터 바 (매쓰플랫 동일) */}
+      <div className="mb-3 flex flex-wrap items-center gap-3 text-sm">
         <select value={tag} onChange={e => setTag(e.target.value)}
           className="rounded-lg border border-line px-3 py-2 font-semibold">
-          <option value="전체">전체 태그</option>
-          {tags.map(t => <option key={t} value={t}>{t}</option>)}
+          {TAG_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
         </select>
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="학습지명 검색"
           className="w-48 rounded-lg border border-line px-3 py-2" />
-        <div className="flex overflow-hidden rounded-lg border border-line">
-          <button onClick={() => setSort('assigned')}
-            className={`px-3 py-2 font-semibold ${sort === 'assigned' ? 'bg-pine text-paper' : 'bg-white text-ink2 hover:bg-paper2'}`}>
-            출제일순
-          </button>
-          <button onClick={() => setSort('graded')}
-            className={`px-3 py-2 font-semibold ${sort === 'graded' ? 'bg-pine text-paper' : 'bg-white text-ink2 hover:bg-paper2'}`}>
-            채점일순
-          </button>
-        </div>
         <div className="grow" />
         <button onClick={() => setPeriodOpen(true)}
-          className="rounded-lg bg-amber px-5 py-2 font-bold text-white hover:brightness-105">
-          기간별 오답 학습지
+          className="rounded-lg border border-pine px-4 py-2 font-bold text-pine hover:bg-pine-soft">
+          단원·기간별 취약 유형 관리
         </button>
+      </div>
+
+      {/* 안내문 + 정렬 토글 */}
+      <div className="mb-3 flex flex-wrap items-center gap-3 text-sm text-ink2">
+        <span>학습지를 선택해서 숙제를 낼 수 있습니다.</span>
+        <div className="grow" />
+        <div className="flex items-center gap-1.5 font-semibold">
+          <button onClick={() => setSort('assigned')}
+            className={sort === 'assigned' ? 'text-pine' : 'text-ink2 hover:text-ink'}>
+            {sort === 'assigned' && '✓ '}출제일
+          </button>
+          <span>·</span>
+          <button onClick={() => setSort('graded')}
+            className={sort === 'graded' ? 'text-pine' : 'text-ink2 hover:text-ink'}>
+            {sort === 'graded' && '✓ '}채점일
+          </button>
+        </div>
       </div>
 
       {/* 목록 */}
@@ -142,12 +172,14 @@ export default function WorksheetPanel({ student }: { student: Student }) {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-line text-left text-xs text-ink2">
-                <th className="px-4 py-2.5">출제일</th>
-                <th className="py-2.5">구분</th>
+                <th className="px-4 py-2.5">학년</th>
+                <th className="py-2.5">태그</th>
                 <th className="py-2.5">학습지명</th>
-                <th className="py-2.5">문항</th>
-                <th className="py-2.5">점수</th>
-                <th className="py-2.5 text-right pr-4">관리</th>
+                <th className="py-2.5">출제일</th>
+                <th className="py-2.5">숙제내기</th>
+                <th className="py-2.5">미리보기</th>
+                <th className="py-2.5">채점</th>
+                <th className="py-2.5 pr-4 text-right">더보기</th>
               </tr>
             </thead>
             <tbody>
@@ -155,46 +187,61 @@ export default function WorksheetPanel({ student }: { student: Student }) {
                 const g = latestBy.get(ws.id)
                 return (
                   <tr key={a.id} className="border-b border-line/50 last:border-0">
-                    <td className="px-4 py-2.5 whitespace-nowrap text-ink2">{dateKey(a.date)}</td>
-                    <td className="py-2.5">
-                      <span className={`rounded px-2 py-0.5 text-xs font-bold ${a.kind === '수업' ? 'bg-pine-soft text-pine-dark' : 'bg-amber-soft text-amber'}`}>
-                        {a.kind}
-                      </span>
+                    <td className="px-4 py-2.5 whitespace-nowrap">
+                      <div className="font-semibold">{ws.grade.split('-')[0]}</div>
+                      <div className="text-[11px] text-ink2">(22개정)</div>
                     </td>
                     <td className="py-2.5">
-                      <div className="flex flex-wrap items-center gap-1.5">
-                        <b>{ws.title}</b>
+                      <div className="flex flex-wrap gap-1">
                         {ws.tags.map(t => (
                           <span key={t} className="rounded bg-paper2 px-1.5 py-0.5 text-[11px] text-ink2">{t}</span>
                         ))}
-                        {ws.options.autoGrade && (
-                          <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark">자동채점</span>
-                        )}
                       </div>
                     </td>
-                    <td className="py-2.5 whitespace-nowrap text-ink2">{ws.problemIds.length}문제</td>
-                    <td className={`py-2.5 whitespace-nowrap ${g ? 'font-bold text-pine-dark' : 'text-ink2'}`}>
-                      {scoreOf(ws.id)}
+                    <td className="py-2.5 pr-3">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <b>{ws.title}</b>
+                        {ws.options.autoGrade && (
+                          <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark">자동 채점</span>
+                        )}
+                      </div>
+                      <div className="mt-0.5 text-xs text-pine">{sheetMeta(ws)}</div>
+                    </td>
+                    <td className="py-2.5 whitespace-nowrap text-ink2">{dateKey(a.date).slice(2).replace(/-/g, '.')}</td>
+                    <td className="py-2.5 whitespace-nowrap">
+                      {a.kind === '수업' ? (
+                        <button onClick={() => addAssignment(ws.id, [student.id], '숙제')}
+                          disabled={hasHomework(ws.id)}
+                          className="rounded-lg border border-amber px-2.5 py-1 text-xs font-bold text-amber hover:bg-amber-soft disabled:opacity-40 disabled:hover:bg-transparent">
+                          숙제내기
+                        </button>
+                      ) : (
+                        <span className="rounded bg-amber-soft px-2 py-0.5 text-xs font-bold text-amber">숙제</span>
+                      )}
+                    </td>
+                    <td className="py-2.5 whitespace-nowrap">
+                      <Link to={`/worksheet/${ws.id}`}
+                        className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold hover:bg-paper2">
+                        미리보기
+                      </Link>
+                    </td>
+                    <td className="py-2.5 whitespace-nowrap">
+                      {!ws.options.autoGrade ? (
+                        <span className="text-ink2">-</span>
+                      ) : g && g.results.length > 0 ? (
+                        <button onClick={() => setGradeWs(ws)}
+                          className="rounded-lg border border-pine px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft">
+                          {scoreOf(g)}점
+                        </button>
+                      ) : (
+                        <button onClick={() => setGradeWs(ws)}
+                          className="rounded-lg bg-pine px-2.5 py-1 text-xs font-bold text-paper hover:brightness-110">
+                          이어 채점
+                        </button>
+                      )}
                     </td>
                     <td className="py-2.5 pr-4">
-                      <div className="relative flex items-center justify-end gap-1.5 whitespace-nowrap">
-                        <Link to={`/worksheet/${ws.id}`}
-                          className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold hover:bg-paper2">
-                          미리보기
-                        </Link>
-                        {ws.options.autoGrade && (
-                          <button onClick={() => setGradeWs(ws)}
-                            className="rounded-lg bg-pine px-2.5 py-1 text-xs font-bold text-paper hover:brightness-110">
-                            채점
-                          </button>
-                        )}
-                        {a.kind === '수업' && (
-                          <button onClick={() => addAssignment(ws.id, [student.id], '숙제')}
-                            disabled={hasHomework(ws.id)}
-                            className="rounded-lg border border-amber px-2.5 py-1 text-xs font-bold text-amber hover:bg-amber-soft disabled:opacity-40 disabled:hover:bg-transparent">
-                            숙제내기
-                          </button>
-                        )}
+                      <div className="relative flex items-center justify-end whitespace-nowrap">
                         <button onClick={() => setMenuFor(menuFor === a.id ? null : a.id)}
                           className="rounded-lg border border-line px-2 py-1 text-xs font-bold hover:bg-paper2">
                           ⋮
@@ -202,8 +249,9 @@ export default function WorksheetPanel({ student }: { student: Student }) {
                         {menuFor === a.id && (
                           <>
                             <div className="fixed inset-0 z-10" onClick={() => setMenuFor(null)} />
-                            <div className="absolute right-0 top-8 z-20 w-36 rounded-xl border border-line bg-white py-1 text-left shadow-lg">
+                            <div className="absolute right-0 top-8 z-20 w-40 rounded-xl border border-line bg-white py-1 text-left shadow-lg">
                               <MenuItem onClick={() => { setMenuFor(null); nav(`/make?edit=${ws.id}`) }}>수정</MenuItem>
+                              <MenuItem onClick={() => { setMenuFor(null); editReassign(ws) }}>수정 후 재출제</MenuItem>
                               <MenuItem onClick={() => { setMenuFor(null); redrill(ws) }}>오답 재출제</MenuItem>
                               <MenuItem danger onClick={() => { setMenuFor(null); cancelAssign(ws) }}>출제 취소</MenuItem>
                             </div>

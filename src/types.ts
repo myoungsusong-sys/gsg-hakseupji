@@ -161,7 +161,10 @@ export interface DailyConfig {
   count: number          // 문제 수
   diff: Diff             // 난이도 중심
   kind: 'all' | Kind     // 문제 형태
-  review: boolean        // 최근 7일 오답 쌍둥이·유사 자동 복습 믹스
+  review: boolean        // 오답 복습 토글 (최근 7일 틀린 문제)
+  reviewDays?: number[]           // 복습 요일 (0=일 ~ 6=토, 매쓰플랫 요일 선택)
+  reviewMode?: 'same' | 'twin' | 'both'  // 출제 방식: 틀린 문제 그대로/쌍둥이·유사/둘 다
+  reviewCap?: number              // 복습 문제 수 제한 (기본 50)
 }
 
 // 일일 보고지 메모 (학생×날짜)

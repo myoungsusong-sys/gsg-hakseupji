@@ -9,6 +9,15 @@ const COURSES = [
   '공통수학1', '공통수학2', '대수', '미적분Ⅰ', '확률과 통계', '미적분Ⅱ', '기하',
 ]
 
+const LEVELS = ['전체', '초', '중', '고'] as const
+const TABS = ['내 교재', '시그니처 교재', '시중교재', '교과서'] as const
+type Tab = typeof TABS[number]
+
+// 학년 표기: "중1-1" → "중 1-1" (두 번째 줄에 개정 표기)
+function gradeLabel(grade: string): string {
+  return grade.startsWith('중') ? `중 ${grade.slice(1)}` : `고 ${grade}`
+}
+
 export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string }
 
 export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose, onAdd }: {
@@ -17,8 +26,8 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
   onClose: () => void
   onAdd: (books: CatalogBook[]) => void
 }) {
-  const [level, setLevel] = useState<'전체' | '중' | '고'>('전체')
-  const [course, setCourse] = useState('전체')
+  const [level, setLevel] = useState<typeof LEVELS[number]>('전체')
+  const [tab, setTab] = useState<Tab>('시중교재')
   const [q, setQ] = useState('')
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [manual, setManual] = useState(false)
@@ -27,18 +36,19 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
   const [mGrade, setMGrade] = useState(defaultGrade && COURSES.includes(defaultGrade) ? defaultGrade : '중1-1')
 
   const filtered = useMemo(() => {
+    if (tab !== '시중교재') return []   // 나머지 탭은 데이터 없음
     const kw = q.trim().toLowerCase()
     const list = WB_MATCH_BOOKS.filter(b => {
+      if (level === '초') return false   // 초등 데이터 없음
       if (level === '중' && !b.grade.startsWith('중')) return false
       if (level === '고' && b.grade.startsWith('중')) return false
-      if (course !== '전체' && b.grade !== course) return false
-      if (kw && !b.name.toLowerCase().includes(kw) && !b.publisher.toLowerCase().includes(kw)) return false
+      if (kw && !b.name.toLowerCase().includes(kw)) return false
       return true
     })
     // 학생 학년과 같은 과정 우선 (stable sort)
     if (defaultGrade) return [...list].sort((a, b) => (a.grade === defaultGrade ? 0 : 1) - (b.grade === defaultGrade ? 0 : 1))
     return list
-  }, [level, course, q, defaultGrade])
+  }, [tab, level, q, defaultGrade])
 
   function toggle(key: string) {
     setChecked(prev => {
@@ -52,7 +62,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
     const books: CatalogBook[] = WB_MATCH_BOOKS
       .filter(b => checked.has(b.key))
       .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key }))
-    if (books.length === 0) { alert('등록할 교재를 선택하세요.'); return }
+    if (books.length === 0) { alert('출제할 교재를 선택하세요.'); return }
     onAdd(books)
   }
 
@@ -66,28 +76,31 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
       <div className="flex max-h-[80vh] w-full max-w-2xl flex-col rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
         <div className="mb-3 flex items-center gap-3">
           <h3 className="text-lg font-bold">전체 교재 목록</h3>
-          <span className="rounded-full bg-pine-soft px-2.5 py-0.5 text-xs font-bold text-pine-dark">{WB_MATCH_BOOKS.length}종 · 문항별 유형 자동 매칭</span>
           <div className="grow" />
           <button onClick={onClose} className="text-ink2 hover:text-ink">✕</button>
         </div>
 
-        {/* 필터: 학교급 칩 + 과정 셀렉트 + 검색 */}
+        {/* 필터: 학교급 칩 + 검색 */}
         <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
-          {(['전체', '중', '고'] as const).map(l => (
-            <button key={l} onClick={() => { setLevel(l); setCourse('전체') }}
+          {LEVELS.map(l => (
+            <button key={l} onClick={() => setLevel(l)}
               className={`rounded-full px-3 py-1 text-xs font-bold ${level === l ? 'bg-pine text-paper' : 'border border-line text-ink2 hover:bg-paper2'}`}>
               {l}
             </button>
           ))}
-          <select value={course} onChange={e => setCourse(e.target.value)}
-            className="rounded-lg border border-line px-2 py-1.5 text-sm">
-            <option value="전체">전체 과정</option>
-            {COURSES
-              .filter(c => level === '전체' || (level === '중' ? c.startsWith('중') : !c.startsWith('중')))
-              .map(c => <option key={c} value={c}>{c}</option>)}
-          </select>
-          <input value={q} onChange={e => setQ(e.target.value)} placeholder="교재명·출판사 검색 (쎈, RPM…)"
-            className="min-w-0 grow rounded-lg border border-line px-3 py-1.5 text-sm" autoFocus />
+          <div className="grow" />
+          <input value={q} onChange={e => setQ(e.target.value)} placeholder="교재명 검색"
+            className="w-56 rounded-lg border border-line px-3 py-1.5 text-sm" autoFocus />
+        </div>
+
+        {/* 탭: 내 교재 | 시그니처 교재 | 시중교재 | 교과서 (기본: 시중교재) */}
+        <div className="mb-3 flex gap-1 border-b border-line text-sm">
+          {TABS.map(t => (
+            <button key={t} onClick={() => setTab(t)}
+              className={`-mb-px px-3 py-2 font-semibold ${tab === t ? 'border-b-2 border-ink font-bold text-ink' : 'text-ink2 hover:text-ink'}`}>
+              {t}
+            </button>
+          ))}
         </div>
 
         {/* 교재 표 */}
@@ -95,8 +108,8 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
           <table className="w-full text-sm">
             <thead className="sticky top-0 bg-paper2">
               <tr className="text-left text-xs text-ink2">
-                <th className="w-8 px-3 py-2"></th><th className="py-2">학년</th><th>교재명</th><th>출판사</th>
-                <th className="text-right">문항 수</th><th className="px-3 text-right">상태</th>
+                <th className="w-10 px-3 py-2">선택</th><th className="py-2">학년</th><th>교재명</th>
+                <th>정답</th><th>출판사</th><th>최근진도</th><th className="px-3">출제여부</th>
               </tr>
             </thead>
             <tbody>
@@ -105,39 +118,54 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
                 const on = checked.has(b.key)
                 return (
                   <tr key={b.key} onClick={() => { if (!has) toggle(b.key) }}
-                    className={`border-t border-line/50 ${has ? 'opacity-40' : `cursor-pointer ${on ? 'bg-pine-soft/50' : 'hover:bg-paper2'}`}`}>
+                    className={`border-t border-line/50 ${has ? '' : `cursor-pointer ${on ? 'bg-pine-soft/50' : 'hover:bg-paper2'}`}`}>
                     <td className="px-3 py-1.5">
-                      <input type="checkbox" checked={on} disabled={has} readOnly className="pointer-events-none accent-[var(--color-pine,#2e6b4f)]" />
+                      <input type="checkbox" checked={on || has} disabled={has} readOnly
+                        className="pointer-events-none accent-[var(--color-pine,#2e6b4f)] disabled:opacity-40" />
                     </td>
-                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.grade}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
+                      <div>{gradeLabel(b.grade)}</div>
+                      <div className="text-[10px]">(22개정)</div>
+                    </td>
                     <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">지원</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
-                    <td className="whitespace-nowrap py-1.5 text-right text-xs text-ink2">{b.count}</td>
-                    <td className="whitespace-nowrap px-3 py-1.5 text-right text-xs text-ink2">{has ? '이미 등록됨' : ''}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
+                    <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">
+                      {has ? <><span className="text-green-500">●</span> 이미 배정됨</> : '-'}
+                    </td>
                   </tr>
                 )
               })}
             </tbody>
           </table>
-          {filtered.length === 0 && <p className="p-8 text-center text-sm text-ink2">검색 결과가 없습니다. 「직접 입력」으로 추가하세요.</p>}
+          {filtered.length === 0 && (
+            <p className="whitespace-pre-line p-8 text-center text-sm text-ink2">{'검색 결과가 없습니다.\n다시 입력해주세요.'}</p>
+          )}
         </div>
 
-        {/* 하단: 선택 요약 + 등록 + 직접 입력 */}
+        {/* 하단 바: 이전 | 선택한 교재 수 | 출제하기 */}
         <div className="mt-3 flex items-center gap-3 text-sm">
-          <span className="text-ink2">선택한 교재 <b className="text-ink">{checked.size}</b>권</span>
-          <div className="grow" />
-          <button onClick={() => setManual(v => !v)}
-            className={`rounded-lg border px-3 py-2 text-xs font-semibold ${manual ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:bg-paper2'}`}>
-            직접 입력
+          <button onClick={onClose}
+            className="rounded-lg border border-line px-4 py-2 font-semibold text-ink2 hover:bg-paper2">
+            이전
           </button>
+          <div className="grow" />
+          <span className="text-ink2">선택한 교재 수 <b className="text-pine">{checked.size}</b>권</span>
           <button onClick={submit} disabled={checked.size === 0}
             className="rounded-lg bg-pine px-5 py-2 font-bold text-paper disabled:opacity-40">
-            {checked.size}권 등록하기
+            출제하기
           </button>
+        </div>
+
+        {/* 직접 입력 폴백 (작은 링크) */}
+        <div className="mt-2 text-right">
+          <button onClick={() => setManual(v => !v)}
+            className="text-xs text-ink2 underline hover:text-ink">직접 입력</button>
         </div>
 
         {manual && (
-          <div className="mt-3 flex flex-wrap items-end gap-2 rounded-xl border border-line bg-paper2 p-3 text-sm">
+          <div className="mt-2 flex flex-wrap items-end gap-2 rounded-xl border border-line bg-paper2 p-3 text-sm">
             <label className="grid gap-1 text-xs font-bold">교재명
               <input value={mName} onChange={e => setMName(e.target.value)} placeholder="쎈 중등수학 1(상)"
                 className="rounded-lg border border-line bg-white px-3 py-1.5 text-sm font-normal" />

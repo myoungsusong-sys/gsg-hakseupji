@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { Fragment, useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { DIFFS, DIFF_LABEL } from '../../types'
@@ -22,23 +22,29 @@ const BADGE_STYLE: Record<Row['badge'], string> = {
   숙제: 'bg-stone-200 text-stone-700',
 }
 
+const mmdd = (d: string) => d.slice(5).replace('-', '.')
+
 // 매쓰플랫 수업>학습내역 동일 구조: 날짜 내비 + 진도 카드 + 학습 목록 + 출제 내역 + 숙제 패널 + 난이도 통계
 export default function HistoryPanel({ student }: { student: Student }) {
   const { gradings, assignments, worksheets, workbooks, wbItems, problems, removeAssignment } = useStore()
   const [date, setDate] = useState(todayKey())
   const [filter, setFilter] = useState<Group | 'all'>('all')
   const [deleteMode, setDeleteMode] = useState(false)
+  const [openId, setOpenId] = useState<string | null>(null)
 
   const myGradings = useMemo(() => gradings.filter(g => g.studentId === student.id), [gradings, student.id])
   const myAssignments = useMemo(() => assignments.filter(a => a.studentId === student.id), [assignments, student.id])
 
-  // 기록 있는 날짜 칩 (최신 7개)
-  const dateChips = useMemo(() => {
+  // 기록 있는 날짜 (오름차순 전체)
+  const recordedDates = useMemo(() => {
     const set = new Set<string>()
     for (const g of myGradings) set.add(dateKey(g.date))
     for (const a of myAssignments) set.add(dateKey(a.date))
-    return [...set].sort((a, b) => b.localeCompare(a)).slice(0, 7)
+    return [...set].sort()
   }, [myGradings, myAssignments])
+  // 지난 수업: 현재 날짜보다 앞선 가장 가까운 기록일 / 최근 학습일: 기록 있는 가장 최근 날짜
+  const prevDate = useMemo(() => [...recordedDates].reverse().find(d => d < date), [recordedDates, date])
+  const latestDate = recordedDates.length ? recordedDates[recordedDates.length - 1] : undefined
 
   const wsMap = useMemo(() => new Map(worksheets.map(w => [w.id, w])), [worksheets])
   const wbMap = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
@@ -108,6 +114,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
   function pickDate(d: string) {
     setDate(d)
     setFilter('all')
+    setOpenId(null)
   }
 
   function cancelHomework(worksheetId: string) {
@@ -123,20 +130,31 @@ export default function HistoryPanel({ student }: { student: Student }) {
   return (
     <div className="grid gap-6 xl:grid-cols-[1fr_300px]">
       <div>
-        {/* 날짜 내비 */}
+        {/* 날짜 내비 (매쓰플랫식: 지난 수업 | 현재 날짜 | 최근 학습일) */}
         <div className="mb-5 flex flex-wrap items-center gap-2">
-          {dateChips.map(d => (
-            <button key={d} onClick={() => pickDate(d)}
-              className={`rounded-full border px-3 py-1.5 text-xs font-bold ${date === d ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line bg-white text-ink2 hover:border-pine'}`}>
-              {d === todayKey() ? '오늘' : d.slice(5).replace('-', '.')}
+          {prevDate && (
+            <button onClick={() => pickDate(prevDate)}
+              className="rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-ink">
+              &lt; 지난 수업 {mmdd(prevDate)}
             </button>
-          ))}
-          <div className="grow" />
+          )}
+          <span className="text-sm font-black">{date === todayKey() ? `오늘 ${mmdd(date)}` : mmdd(date)}</span>
           <input type="date" value={date} onChange={e => pickDate(e.target.value)}
             className="rounded-lg border border-line px-3 py-1.5 text-sm" />
+          <div className="grow" />
+          {latestDate && (
+            <button onClick={() => pickDate(latestDate)}
+              className="rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-bold text-pine-dark hover:border-pine">
+              최근 학습일
+            </button>
+          )}
         </div>
 
         {/* 진도 카드 3종 */}
+        <div className="mb-2 flex flex-wrap items-baseline gap-2">
+          <span className="text-sm font-black">진도</span>
+          <span className="text-xs text-ink2">각 카드를 선택해 필요한 학습내용만 확인할 수 있어요.</span>
+        </div>
         <div className="mb-5 grid grid-cols-3 gap-3">
           {cards.map(c => {
             const s = cardOf(c.group)
@@ -168,20 +186,34 @@ export default function HistoryPanel({ student }: { student: Student }) {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-line text-left text-xs text-ink2">
-                  <th className="py-1.5">구분</th><th>내용</th><th>채점</th><th>정답률</th><th>비고</th>
+                  <th className="py-1.5">진도</th><th>채점</th><th>정답률</th><th>상세보기</th>
                 </tr>
               </thead>
               <tbody>
                 {visibleRows.map(r => (
-                  <tr key={r.id} className="border-b border-line/50">
-                    <td className="py-2">
-                      <span className={`rounded px-2 py-0.5 text-xs font-bold ${BADGE_STYLE[r.badge]}`}>{r.badge}</span>
-                    </td>
-                    <td className="py-2 pr-2 font-semibold">{r.label}</td>
-                    <td className="py-2">{r.correct}/{r.total}</td>
-                    <td className="py-2 font-bold text-pine-dark">{r.total ? Math.round((r.correct / r.total) * 100) : 0}%</td>
-                    <td className="py-2 text-xs text-ink2">{r.unknown > 0 ? `모름 ${r.unknown}` : '—'}</td>
-                  </tr>
+                  <Fragment key={r.id}>
+                    <tr className="border-b border-line/50">
+                      <td className="py-2 pr-2">
+                        <span className={`mr-2 rounded px-2 py-0.5 text-xs font-bold ${BADGE_STYLE[r.badge]}`}>{r.badge}</span>
+                        <span className="font-semibold">{r.label}</span>
+                      </td>
+                      <td className="py-2">{r.correct}/{r.total}</td>
+                      <td className="py-2 font-bold text-pine-dark">{r.total ? Math.round((r.correct / r.total) * 100) : 0}%</td>
+                      <td className="py-2">
+                        <button onClick={() => setOpenId(openId === r.id ? null : r.id)}
+                          className="text-xs font-semibold text-pine-dark hover:underline">
+                          {openId === r.id ? '접기 ∧' : '상세보기 ∨'}
+                        </button>
+                      </td>
+                    </tr>
+                    {openId === r.id && (
+                      <tr className="border-b border-line/50 bg-paper2/60">
+                        <td colSpan={4} className="px-2 py-2 text-xs text-ink2">
+                          정답 {r.correct}문항 · 오답 {r.total - r.correct}문항{r.unknown > 0 ? ` (모름 ${r.unknown})` : ''} · 총 {r.total}문항
+                        </td>
+                      </tr>
+                    )}
+                  </Fragment>
                 ))}
               </tbody>
             </table>
@@ -219,9 +251,12 @@ export default function HistoryPanel({ student }: { student: Student }) {
 
         {/* 난이도별 통계 */}
         <div className="rounded-2xl border border-line bg-white p-5">
-          <div className="mb-3 text-sm font-black">난이도별 통계 <span className="font-normal text-ink2">— 이날 채점 {dayTotal}문항</span></div>
+          <div className="mb-3 flex flex-wrap items-baseline gap-2 text-sm font-black">
+            난이도별 통계 <span className="font-normal text-ink2">— 이날 채점 {dayTotal}문항</span>
+            <span className="ml-auto text-[11px] font-normal text-ink2"><span className="text-pine">▪</span>문제수 <span className="text-amber">●</span>정답률</span>
+          </div>
           {dayTotal === 0 ? (
-            <p className="py-4 text-center text-sm text-ink2">채점 기록이 쌓이면 난이도 분포가 표시됩니다.</p>
+            <p className="py-4 text-center text-sm text-ink2">통계 내역이 없습니다.</p>
           ) : (
             <div className="grid gap-2">
               {DIFFS.map(d => {
@@ -234,7 +269,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
                       <div className="h-full rounded bg-pine/80" style={{ width: `${(s.count / maxDiffCount) * 100}%` }} />
                     </div>
                     <span className="w-28 shrink-0 text-right text-xs text-ink2">
-                      {s.count}문항{rate !== null ? ` · 정답률 ${rate}%` : ''}
+                      {s.count}문항{rate !== null && <> · <span className="text-amber">●</span> {rate}%</>}
                     </span>
                   </div>
                 )
@@ -256,7 +291,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
           )}
         </div>
         {pendingHomework.length === 0 ? (
-          <p className="py-6 text-center text-xs text-ink2">확인할 숙제가 없습니다.</p>
+          <p className="py-6 text-center text-xs text-ink2">숙제 내역이 없습니다.</p>
         ) : (
           <div className="grid gap-2">
             {pendingHomework.map(a => {
