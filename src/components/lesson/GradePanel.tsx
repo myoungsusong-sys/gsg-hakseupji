@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { typeName, typeUnitName } from '../../data/curriculum'
-import { useStore } from '../../lib/store'
-import type { GradeResult, Student, WBItem } from '../../types'
+import { useStore, uid } from '../../lib/store'
+import { dateKey, todayKey } from '../../lib/dates'
+import type { GradeResult, Grading, Student, WBItem } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 import BulkImportModal from '../BulkImportModal'
 import MathText from '../MathText'
@@ -40,7 +41,7 @@ const CARD_CLASS: Record<Mark, string> = {
 }
 
 export default function GradePanel({ student }: { student: Student }) {
-  const { workbooks, wbItems, gradings, saveGrading, addWorkbook, setWBItems } = useStore()
+  const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems } = useStore()
   const [wbId, setWbId] = useState<string | null>(workbooks[0]?.id ?? null)
   const [bookDlg, setBookDlg] = useState(false)
   const [catalog, setCatalog] = useState(false)
@@ -66,20 +67,86 @@ export default function GradePanel({ student }: { student: Student }) {
   const [from, setFrom] = useState(1)
   const [to, setTo] = useState(1)
   const [marks, setMarks] = useState<Record<string, Mark>>({})   // 없으면 '정답'
-  const [saved, setSaved] = useState<{ total: number; correct: number; unknown: number; wrongs: DrillWrong[] } | null>(null)
   const [selecting, setSelecting] = useState(false)
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [pageChecked, setPageChecked] = useState<Set<number>>(new Set())   // 페이지별 오답학습지용
   const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[] } | null>(null)
+  // 실시간 자동 저장 상태
+  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
+  const [savedAt, setSavedAt] = useState('')
 
   // 교재 전환·매칭 문항 로드 시 쪽 범위를 교재 전체로 초기화
   useEffect(() => {
     if (pages.length) { setFrom(pages[0][0]); setTo(pages[pages.length - 1][0]) }
-    setMarks({}); setSaved(null); setSelecting(false); setSelected(new Set()); setPageChecked(new Set())
+    setSelecting(false); setSelected(new Set()); setPageChecked(new Set())
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wbId, items.length])
 
   const inRange = useMemo(() => items.filter(i => i.page >= from && i.page <= to), [items, from, to])
+
+  // ── 실시간 자동 저장 (매쓰플랫 방식) ────────────────────────
+  // 문항 클릭마다 디바운스 저장. 같은 날·같은 범위 채점은 한 기록에 덮어쓰기(upsert).
+  const pendingRef = useRef<Grading | null>(null)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const gidRef = useRef<string | null>(null)
+  const gradingsRef = useRef(gradings)
+  gradingsRef.current = gradings
+
+  function flushSave() {
+    if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null }
+    const g = pendingRef.current
+    if (!g) return
+    pendingRef.current = null
+    upsertGrading(g)
+    setSaveState('saved')
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+  const flushRef = useRef(flushSave)
+  flushRef.current = flushSave
+
+  function queueSave(next: Record<string, Mark>) {
+    if (!wb || inRange.length === 0) return
+    const results: GradeResult[] = inRange.map(i => {
+      const m = next[i.id] ?? '정답'
+      return { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined }
+    })
+    const today = todayKey()
+    const exist = gradingsRef.current.find(g =>
+      g.studentId === student.id && g.workbookId === wb.id &&
+      g.pageFrom === from && g.pageTo === to && dateKey(g.date) === today)
+    const id = exist?.id ?? gidRef.current ?? uid('gr')
+    gidRef.current = id
+    pendingRef.current = {
+      id, studentId: student.id, source: '교재', workbookId: wb.id,
+      date: new Date().toISOString(), pageFrom: from, pageTo: to, results,
+    }
+    setSaveState('saving')
+    if (timerRef.current) clearTimeout(timerRef.current)
+    timerRef.current = setTimeout(() => flushRef.current(), 900)
+  }
+
+  // 범위·교재·학생이 바뀌면: 대기분 즉시 저장 → 그 범위의 오늘 채점 기록을 불러와 이어서 채점
+  useEffect(() => {
+    flushRef.current()
+    gidRef.current = null
+    const today = todayKey()
+    const exist = gradingsRef.current.find(g =>
+      g.studentId === student.id && g.workbookId === wbId &&
+      g.pageFrom === from && g.pageTo === to && dateKey(g.date) === today)
+    const seeded: Record<string, Mark> = {}
+    if (exist) {
+      for (const r of exist.results) {
+        if (!r.itemId) continue
+        if (r.unknown) seeded[r.itemId] = '모름'
+        else if (!r.correct) seeded[r.itemId] = '오답'
+      }
+    }
+    setMarks(seeded)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wbId, from, to, student.id])
+
+  // 탭 이동·언마운트 시 대기분 저장
+  useEffect(() => () => flushRef.current(), [])
 
   // 이 학생이 이 교재에서 이미 채점한 문항 id (좌측 진도 뱃지용)
   const gradedIds = useMemo(() => {
@@ -115,21 +182,18 @@ export default function GradePanel({ student }: { student: Student }) {
 
   function markOf(id: string): Mark { return marks[id] ?? '정답' }
   function cycle(id: string) {
-    setMarks(prev => ({ ...prev, [id]: NEXT[prev[id] ?? '정답'] }))
+    const next = { ...marks, [id]: NEXT[marks[id] ?? '정답'] }
+    setMarks(next); queueSave(next)
   }
   function setAll(m: Mark) {
-    setMarks(prev => {
-      const n = { ...prev }
-      for (const i of inRange) n[i.id] = m
-      return n
-    })
+    const next = { ...marks }
+    for (const i of inRange) next[i.id] = m
+    setMarks(next); queueSave(next)
   }
   function clearAll() {   // 전체 취소 — 범위 전체를 ○(기본)으로 초기화
-    setMarks(prev => {
-      const n = { ...prev }
-      for (const i of inRange) delete n[i.id]
-      return n
-    })
+    const next = { ...marks }
+    for (const i of inRange) delete next[i.id]
+    setMarks(next); queueSave(next)
   }
   function toggleSelect(id: string) {
     setSelected(prev => {
@@ -146,25 +210,21 @@ export default function GradePanel({ student }: { student: Student }) {
     })
   }
 
-  function save() {
-    if (!wb) return
-    if (inRange.length === 0) { alert('범위에 문항이 없습니다.'); return }
-    const results: GradeResult[] = inRange.map(i => {
-      const m = markOf(i.id)
-      return { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined }
-    })
-    saveGrading({
-      studentId: student.id, source: '교재', workbookId: wb.id,
-      date: new Date().toISOString(), pageFrom: from, pageTo: to, results,
-    })
-    const correct = results.filter(r => r.correct).length
-    const unknown = results.filter(r => r.unknown).length
-    const wrongs: DrillWrong[] = inRange
-      .filter(i => markOf(i.id) !== '정답')
-      .map(i => ({ typeId: i.typeId, diff: i.diff }))
-    setSaved({ total: results.length, correct, unknown, wrongs })
-    setMarks({})
-  }
+  // 현재 범위 실시간 요약 (자동 저장이므로 항상 최신)
+  const live = useMemo(() => {
+    const total = inRange.length
+    let correct = 0, unknown = 0
+    const wrongs: DrillWrong[] = []
+    for (const i of inRange) {
+      const m = marks[i.id] ?? '정답'
+      if (m === '정답') correct++
+      else {
+        if (m === '모름') unknown++
+        wrongs.push({ typeId: i.typeId, diff: i.diff })
+      }
+    }
+    return { total, correct, unknown, wrongs }
+  }, [inRange, marks])
 
   function finishSelect() {
     if (!wb || selected.size === 0) return
@@ -191,7 +251,7 @@ export default function GradePanel({ student }: { student: Student }) {
       const r = latest.get(i.id)
       if (r && (!r.correct || r.unknown)) wrongs.push({ typeId: i.typeId, diff: i.diff })
     }
-    if (wrongs.length === 0) { alert('선택한 페이지에 이 학생의 오답·모름 기록이 없습니다. 먼저 채점을 저장하세요.'); return }
+    if (wrongs.length === 0) { alert('선택한 페이지에 이 학생의 오답·모름 기록이 없습니다. 먼저 채점하세요.'); return }
     const ps = [...pageChecked].sort((a, b) => a - b).join(', ')
     setDrill({ title: `[오답] ${wb.name} p${ps}`, wrongs })
   }
@@ -259,7 +319,7 @@ export default function GradePanel({ student }: { student: Student }) {
         </label>
         <span className="text-ink2">범위 {inRange.length}문항</span>
         <div className="grow" />
-        <button onClick={() => { setSelecting(true); setSelected(new Set()); setSaved(null) }} disabled={selecting || inRange.length === 0}
+        <button onClick={() => { setSelecting(true); setSelected(new Set()) }} disabled={selecting || inRange.length === 0}
           className="rounded-lg px-3 py-2 text-xs font-bold text-pine hover:bg-pine-soft disabled:opacity-40">
           ＋ 문제별 오답학습지
         </button>
@@ -267,13 +327,26 @@ export default function GradePanel({ student }: { student: Student }) {
           className="rounded-lg bg-pine px-3 py-2 text-xs font-bold text-paper hover:brightness-105 disabled:opacity-40">
           ＋ 페이지별 오답학습지
         </button>
-        <button onClick={save} disabled={selecting || inRange.length === 0}
-          className="rounded-lg bg-pine px-5 py-2 font-bold text-paper disabled:opacity-40">채점 저장</button>
+        {live.wrongs.length > 0 && !selecting && (
+          <button onClick={() => setDrill({ title: `[오답] ${wb.name} ${from}~${to}p`, wrongs: live.wrongs })}
+            className="rounded-lg bg-amber px-4 py-2 text-xs font-bold text-white hover:brightness-105">
+            오답·모름 {live.wrongs.length}문제로 오답 학습지
+          </button>
+        )}
       </div>
 
-      {/* 안내 문구 + 일괄 채점 */}
+      {/* 안내 문구(실시간 자동 저장) + 현재 요약 + 일괄 채점 */}
       <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
-        <span className="text-xs text-ink2">채점은 [채점 저장]을 눌러 저장됩니다.</span>
+        <span className="text-xs text-ink2">
+          채점 기록은 실시간으로 자동 저장됩니다.
+          {saveState === 'saving' && <span className="ml-2 text-amber">저장 중…</span>}
+          {saveState === 'saved' && <span className="ml-2 text-pine">✓ 저장됨 {savedAt}</span>}
+        </span>
+        {inRange.length > 0 && (
+          <span className="text-xs font-semibold">
+            {live.total}문항 중 <b className="text-pine">{live.correct}개 정답</b> ({Math.round(live.correct / live.total * 100)}점) · 모름 {live.unknown}개
+          </span>
+        )}
         <div className="grow" />
         <button onClick={clearAll} disabled={selecting}
           className="rounded-lg border border-line px-3 py-2 text-xs font-semibold text-ink2 hover:bg-paper2 disabled:opacity-40">
@@ -297,23 +370,6 @@ export default function GradePanel({ student }: { student: Student }) {
             className="rounded-lg border border-line bg-white px-4 py-1.5 text-xs font-semibold">취소</button>
           <button onClick={finishSelect} disabled={selected.size === 0}
             className="rounded-lg bg-amber px-4 py-1.5 text-xs font-bold text-white disabled:opacity-40">문제 선택 완료</button>
-        </div>
-      )}
-
-      {/* 저장 배너 */}
-      {saved && !selecting && (
-        <div className="mb-4 flex flex-wrap items-center gap-3 rounded-xl bg-pine-soft/50 p-4 text-sm">
-          <span>
-            ✅ <b>{saved.total}문항 중 {saved.correct}개 정답</b> ({Math.round(saved.correct / saved.total * 100)}점)
-            {' '}· 모름 {saved.unknown}개
-          </span>
-          <div className="grow" />
-          {saved.wrongs.length > 0 && (
-            <button onClick={() => setDrill({ title: `[오답] ${wb.name} ${from}~${to}p`, wrongs: saved.wrongs })}
-              className="rounded-lg bg-amber px-4 py-2 text-xs font-bold text-white hover:brightness-105">
-              오답·모름 {saved.wrongs.length}문제로 오답 학습지 만들기
-            </button>
-          )}
         </div>
       )}
 

@@ -56,6 +56,7 @@ interface Store extends Persisted {
   setStudentActive: (id: string, active: boolean) => void
   updateStudent: (id: string, patch: Partial<Student>) => void
   saveGrading: (g: Omit<Grading, 'id'>) => void
+  upsertGrading: (g: Grading) => void   // 같은 id면 교체 — 실시간 자동 저장용
   saveDailyNote: (n: DailyNote) => void
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
@@ -298,6 +299,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     saveGrading: g => {
       const rec = { ...g, id: uid('gr') }
       set(s => ({ ...s, gradings: [rec, ...s.gradings] })); cloud.upsert(cloud.T.gradings, rec.id, rec)
+    },
+    upsertGrading: g => {
+      const exists = stateRef.current.gradings.some(x => x.id === g.id)
+      set(s => ({ ...s, gradings: exists ? s.gradings.map(x => x.id === g.id ? g : x) : [g, ...s.gradings] }))
+      cloud.upsert(cloud.T.gradings, g.id, g)
     },
     saveDailyNote: n => {
       set(s => ({ ...s, dailyNotes: [...s.dailyNotes.filter(x => !(x.studentId === n.studentId && x.date === n.date)), n] }))
