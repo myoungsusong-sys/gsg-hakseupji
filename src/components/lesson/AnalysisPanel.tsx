@@ -55,6 +55,8 @@ export default function AnalysisPanel({ student }: { student: Student }) {
   const nav = useNavigate()
 
   const [courseId, setCourseId] = useState(() => defaultCourseId(student.grade))
+  const { ensureCourse } = useStore()
+  useEffect(() => { ensureCourse(courseId) }, [courseId, ensureCourse])
   const [recOnly, setRecOnly] = useState(false)
   const [showAll, setShowAll] = useState(false)
   const [checked, setChecked] = useState<Set<string>>(new Set())

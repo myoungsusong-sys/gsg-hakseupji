@@ -6,6 +6,8 @@ import type {
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
+import { loadPool } from '../data/pool'
+import { defaultCurriculumForGrade } from '../data/curriculum'
 import { cloud, loadAll, noteId, type CloudData } from './backend'
 
 const LS_KEY = 'gsg-hakseupji-v1'
@@ -35,6 +37,7 @@ const EMPTY: Persisted = {
 interface Store extends Persisted {
   problems: Problem[]
   synced: boolean
+  ensureCourse: (courseId: string) => void   // 매쓰플랫 문제 풀 과정별 지연 로드
   addProblem: (p: Problem) => void
   removeProblem: (id: string) => void
   saveWorksheet: (w: Worksheet) => void
@@ -139,6 +142,27 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     })
   }, [state.workbooks, matchDataByCourse])
 
+  // ── 매쓰플랫 문제 풀: 과정별 정적 파일 지연 로드 ────────────────────
+  const [pools, setPools] = useState<Record<string, Problem[]>>({})
+  const poolReqRef = useRef<Set<string>>(new Set())
+  function ensureCourse(courseId: string) {
+    if (!courseId || poolReqRef.current.has(courseId)) return
+    poolReqRef.current.add(courseId)
+    loadPool(courseId).then(arr => {
+      if (arr.length) setPools(prev => prev[courseId] ? prev : { ...prev, [courseId]: arr })
+    })
+  }
+  // 사용 흔적이 있는 과정 자동 로드 (학생 학년·학습지·교재)
+  useEffect(() => {
+    const wanted = new Set<string>()
+    for (const s of state.students) if (s.active) wanted.add(defaultCurriculumForGrade(s.grade))
+    for (const w of state.worksheets) if (!w.deletedAt) wanted.add(defaultCurriculumForGrade(w.grade))
+    for (const w of state.workbooks) wanted.add(defaultCurriculumForGrade(w.grade))
+    wanted.forEach(c => ensureCourse(c))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.students, state.worksheets, state.workbooks])
+  const poolProblems = useMemo(() => Object.values(pools).flat(), [pools])
+
   // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
   // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
   useEffect(() => {
@@ -174,8 +198,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const store: Store = {
     ...state,
     synced,
+    ensureCourse,
     wbItems: [...state.wbItems, ...derivedWbItems],   // 수동 등록분 + 매칭 교재 파생분
-    problems: [...SEED_PROBLEMS, ...state.customProblems],
+    // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀
+    problems: [...SEED_PROBLEMS, ...state.customProblems.filter(p => !p.id.startsWith('mf')), ...poolProblems],
 
     addProblem: p => { set(s => ({ ...s, customProblems: [...s.customProblems, p] })); cloud.upsert(cloud.T.problems, p.id, p) },
     removeProblem: id => { set(s => ({ ...s, customProblems: s.customProblems.filter(p => p.id !== id) })); cloud.del(cloud.T.problems, id) },

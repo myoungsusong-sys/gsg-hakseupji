@@ -65,6 +65,7 @@ export default function MakeWizard() {
   const [srcTab, setSrcTab] = useState<SrcTab>('chapter')
   const [gradeId, setGradeId] = useState('m1-1')
   const cur = curriculumFor(gradeId)
+  useEffect(() => { store.ensureCourse(gradeId) }, [gradeId])   // 과정 문제 풀 지연 로드
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [count, setCount] = useState(50)
   const [diffFocus, setDiffFocus] = useState<Diff>(3)
