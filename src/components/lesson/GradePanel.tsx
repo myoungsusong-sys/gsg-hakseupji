@@ -9,6 +9,20 @@ import MathText from '../MathText'
 import DrillModal, { type DrillWrong } from './DrillModal'
 import StudentBookDialog from './StudentBookDialog'
 
+// 페이지 목록을 연속 구간으로 축약: [7,8,9,12] → "7~9, 12"
+function pageRange(pages: number[]): string {
+  const s = [...pages].sort((a, b) => a - b)
+  const out: string[] = []
+  let i = 0
+  while (i < s.length) {
+    let j = i
+    while (j + 1 < s.length && s[j + 1] === s[j] + 1) j++
+    out.push(i === j ? `${s[i]}` : `${s[i]}~${s[j]}`)
+    i = j + 1
+  }
+  return out.join(', ')
+}
+
 // 정답 표시 (매쓰플랫 채점판 동일): 객관식 숫자→①~⑤, 수식(LaTeX)→KaTeX 렌더, 그 외 원문
 const CIRCLED = ['①', '②', '③', '④', '⑤']
 function AnswerLabel({ item }: { item: WBItem }) {
@@ -268,7 +282,7 @@ export default function GradePanel({ student }: { student: Student }) {
       alert('선택한 페이지에 오답·모름이 없습니다.\n문항 카드를 클릭해 ✕(오답)/?(모름)를 표시한 뒤 다시 누르세요.')
       return
     }
-    const ps = [...targetPages].sort((a, b) => a - b).join(', ')
+    const ps = pageRange([...targetPages])
     setDrill({ title: `[오답] ${wb.name} p${ps}`, wrongs })
   }
 

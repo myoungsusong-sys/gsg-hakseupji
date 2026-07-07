@@ -222,7 +222,7 @@ export function SheetHeader({ ws, subtitle, dateText, count, theme }: {
         <span className="rounded-md px-2.5 py-1 text-sm font-black text-white" style={{ background: theme }}>
           {ws.grade}
         </span>
-        <h1 className="text-2xl font-black tracking-tight">{ws.title}</h1>
+        <h1 className="line-clamp-2 text-2xl font-black tracking-tight">{ws.title}</h1>
       </div>
       {subtitle && <div className="mt-1.5 text-[13px] text-ink2">{subtitle}</div>}
       <div className="mt-4 flex items-center justify-between border-b border-line pb-3 text-xs text-ink2">
