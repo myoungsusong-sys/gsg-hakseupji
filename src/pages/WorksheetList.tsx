@@ -3,10 +3,18 @@ import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName } from '../data/curriculum'
 import MathText from '../components/MathText'
-import type { Worksheet } from '../types'
+import type { Assignment, Student, Worksheet } from '../types'
 import { DIFF_COLOR, DIFF_LABEL, TAG_PRESETS, THEMES } from '../types'
 
 export type View = 'active' | 'favorites' | 'trash'
+
+type GradeGroup = '초' | '중' | '고'
+
+// 학년 그룹 판별: 첫 글자 초/중/고. '공통수학'·'대수' 등 고등 과목명도 고로 분류
+function gradeGroup(grade: string): GradeGroup {
+  const c = grade.charAt(0)
+  return c === '초' ? '초' : c === '중' ? '중' : '고'
+}
 
 export default function WorksheetList({ view }: { view: View }) {
   const store = useStore()
@@ -14,15 +22,20 @@ export default function WorksheetList({ view }: { view: View }) {
     worksheets, problems, favorites, myLists, toggleFavorite,
     trashWorksheet, restoreWorksheet, purgeWorksheet, duplicateWorksheet,
     addList, renameList, removeList, setWorksheetLists,
+    students, assignments, addAssignment,
   } = store
   const [q, setQ] = useState('')
   const [tagFilter, setTagFilter] = useState<string>('all')
+  const [gradeFilter, setGradeFilter] = useState<'all' | GradeGroup>('all')
+  const [sortMode, setSortMode] = useState<'created' | 'name'>('created')
   const [listFilter, setListFilter] = useState<string>('all')
   const [filterOpen, setFilterOpen] = useState(false)
   const [dateFrom, setDateFrom] = useState('')
   const [dateTo, setDateTo] = useState('')
   const [listModal, setListModal] = useState<Worksheet | null>(null)
   const [menuFor, setMenuFor] = useState<string | null>(null)
+  const [checked, setChecked] = useState<Set<string>>(new Set())
+  const [assignTarget, setAssignTarget] = useState<string[] | null>(null)
   const nav = useNavigate()
 
   const usedTags = useMemo(() => {
@@ -33,6 +46,7 @@ export default function WorksheetList({ view }: { view: View }) {
 
   const list = useMemo(() => {
     let base = worksheets.filter(w => (view === 'trash') === !!w.deletedAt)
+    if (gradeFilter !== 'all') base = base.filter(w => gradeGroup(w.grade) === gradeFilter)
     if (tagFilter !== 'all') base = base.filter(w => w.tags.includes(tagFilter))
     if (listFilter !== 'all') base = base.filter(w => w.listIds.includes(listFilter))
     if (dateFrom) base = base.filter(w => w.createdAt.slice(0, 10) >= dateFrom)
@@ -42,8 +56,32 @@ export default function WorksheetList({ view }: { view: View }) {
       base = base.filter(w =>
         w.title.includes(k) || w.author.includes(k) || w.tags.some(t => t.includes(k)))
     }
-    return base
-  }, [worksheets, view, q, tagFilter, listFilter, dateFrom, dateTo])
+    return [...base].sort((a, b) => sortMode === 'name'
+      ? a.title.localeCompare(b.title, 'ko')
+      : b.createdAt.localeCompare(a.createdAt))
+  }, [worksheets, view, q, gradeFilter, sortMode, tagFilter, listFilter, dateFrom, dateTo])
+
+  // 학습지별 출제된 학생 수 (수업·숙제 무관, 학생 중복 제거)
+  const assignedByWs = useMemo(() => {
+    const m = new Map<string, Set<string>>()
+    for (const a of assignments) {
+      const s = m.get(a.worksheetId) ?? new Set<string>()
+      s.add(a.studentId)
+      m.set(a.worksheetId, s)
+    }
+    return m
+  }, [assignments])
+
+  function toggleChecked(id: string) {
+    setChecked(prev => { const n = new Set(prev); if (n.has(id)) n.delete(id); else n.add(id); return n })
+  }
+  function emptyTrash() {
+    const trashed = worksheets.filter(w => w.deletedAt)
+    if (trashed.length === 0) return
+    if (!confirm(`휴지통의 학습지 ${trashed.length}개를 모두 완전히 삭제할까요? 되돌릴 수 없습니다.`)) return
+    trashed.forEach(w => purgeWorksheet(w.id))
+    setChecked(new Set())
+  }
 
   const favProblems = useMemo(
     () => problems.filter(p => favorites.includes(p.id)),
@@ -67,6 +105,14 @@ export default function WorksheetList({ view }: { view: View }) {
       <div className="mb-6 flex flex-wrap items-center gap-3">
         {view !== 'favorites' && (
           <>
+            <div className="flex gap-1 rounded-full border border-line bg-white p-1">
+              {(['all', '초', '중', '고'] as const).map(g => (
+                <button key={g} onClick={() => setGradeFilter(g)}
+                  className={`rounded-full px-3 py-1 text-sm ${gradeFilter === g ? 'bg-pine font-semibold text-paper' : 'text-ink2 hover:text-ink'}`}>
+                  {g === 'all' ? '전체' : g}
+                </button>
+              ))}
+            </div>
             <select value={tagFilter} onChange={e => setTagFilter(e.target.value)}
               className="rounded-full border border-line bg-white px-3 py-2 text-sm">
               <option value="all">태그 전체</option>
@@ -95,6 +141,14 @@ export default function WorksheetList({ view }: { view: View }) {
                   </div>
                 </div>
               )}
+            </div>
+            <div className="flex gap-1 rounded-full border border-line bg-white p-1 text-sm">
+              {([['created', '생성순'], ['name', '이름순']] as const).map(([k, label]) => (
+                <button key={k} onClick={() => setSortMode(k)}
+                  className={`rounded-full px-3 py-1 ${sortMode === k ? 'bg-paper2 font-semibold text-ink' : 'text-ink2 hover:text-ink'}`}>
+                  {label}
+                </button>
+              ))}
             </div>
             <input
               value={q} onChange={e => setQ(e.target.value)}
@@ -168,6 +222,58 @@ export default function WorksheetList({ view }: { view: View }) {
       {/* 학습지 목록 */}
       {view !== 'favorites' && (
         <>
+          {/* 일괄 선택 액션바 */}
+          {list.length > 0 && (
+            <div className="mb-4 flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-white px-5 py-2.5 text-sm">
+              <label className="flex cursor-pointer items-center gap-2 font-semibold">
+                <input type="checkbox" className="h-4 w-4 accent-pine"
+                  checked={list.every(w => checked.has(w.id))}
+                  onChange={e => setChecked(e.target.checked ? new Set(list.map(w => w.id)) : new Set())} />
+                전체 선택
+              </label>
+              <span className="text-ink2">{checked.size}개 선택</span>
+              {view === 'active' ? (
+                <>
+                  <button disabled={checked.size === 0}
+                    onClick={() => setAssignTarget([...checked])}
+                    className="rounded-lg bg-pine px-4 py-1.5 font-semibold text-paper disabled:opacity-40">
+                    일괄 출제
+                  </button>
+                  <button disabled={checked.size === 0}
+                    onClick={() => {
+                      if (!confirm(`선택한 학습지 ${checked.size}개를 휴지통으로 이동할까요?`)) return
+                      ;[...checked].forEach(trashWorksheet)
+                      setChecked(new Set())
+                    }}
+                    className="rounded-lg border border-line px-4 py-1.5 text-ink2 hover:border-clay hover:text-clay disabled:opacity-40">
+                    일괄 삭제
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button disabled={checked.size === 0}
+                    onClick={() => { [...checked].forEach(restoreWorksheet); setChecked(new Set()) }}
+                    className="rounded-lg border border-pine px-4 py-1.5 font-semibold text-pine hover:bg-pine-soft disabled:opacity-40">
+                    일괄 복구
+                  </button>
+                  <button disabled={checked.size === 0}
+                    onClick={() => {
+                      if (!confirm(`선택한 학습지 ${checked.size}개를 완전히 삭제할까요? 되돌릴 수 없습니다.`)) return
+                      ;[...checked].forEach(purgeWorksheet)
+                      setChecked(new Set())
+                    }}
+                    className="rounded-lg border border-line px-4 py-1.5 text-ink2 hover:border-clay hover:text-clay disabled:opacity-40">
+                    일괄 완전 삭제
+                  </button>
+                  <div className="grow" />
+                  <button onClick={emptyTrash}
+                    className="rounded-lg border border-clay px-4 py-1.5 font-semibold text-clay hover:bg-clay/10">
+                    휴지통 비우기
+                  </button>
+                </>
+              )}
+            </div>
+          )}
           {list.length === 0 && (
             <div className="rounded-2xl border border-dashed border-line bg-white/60 p-16 text-center text-ink2">
               {view === 'active'
@@ -178,8 +284,12 @@ export default function WorksheetList({ view }: { view: View }) {
           <div className="grid gap-4">
             {list.map(w => {
               const theme = THEMES[w.theme]
+              const isNew = Date.now() - new Date(w.createdAt).getTime() < 7 * 24 * 3600 * 1000
+              const assignedN = assignedByWs.get(w.id)?.size ?? 0
               return (
                 <div key={w.id} className="relative flex items-center gap-5 rounded-2xl border border-line bg-white p-5 shadow-sm">
+                  <input type="checkbox" checked={checked.has(w.id)} onChange={() => toggleChecked(w.id)}
+                    className="h-4 w-4 shrink-0 accent-pine" />
                   <div className="h-12 w-2 shrink-0 rounded-full" style={{ background: theme.main }} />
                   <div className="min-w-0 grow">
                     <div className="flex items-center gap-2">
@@ -188,6 +298,7 @@ export default function WorksheetList({ view }: { view: View }) {
                         <span key={t} className="rounded bg-pine-soft px-2 py-0.5 text-xs font-semibold text-pine-dark">{t}</span>
                       ))}
                       <h3 className="truncate text-lg font-bold">{w.title}</h3>
+                      {isNew && <span className="rounded bg-clay/10 px-1.5 py-0.5 text-[10px] font-black text-clay">NEW</span>}
                       <span className="rounded bg-amber-soft px-1.5 py-0.5 text-[10px] font-bold text-amber">검산완료</span>
                     </div>
                     <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-ink2">
@@ -196,6 +307,9 @@ export default function WorksheetList({ view }: { view: View }) {
                       <span>{new Date(w.createdAt).toLocaleDateString('ko-KR')}</span>
                       <span>·</span>
                       <span>{w.author}</span>
+                      {assignedN > 0 && (
+                        <span className="rounded-full bg-pine-soft px-2 py-0.5 font-semibold text-pine-dark">출제됨 {assignedN}명</span>
+                      )}
                       {w.listIds.map(lid => {
                         const l = myLists.find(x => x.id === lid)
                         return l ? <span key={lid} className="rounded-full border border-line px-2 py-0.5">📁 {l.name}</span> : null
@@ -204,6 +318,10 @@ export default function WorksheetList({ view }: { view: View }) {
                   </div>
                   {view === 'active' ? (
                     <div className="flex shrink-0 items-center gap-2">
+                      <button onClick={() => setAssignTarget([w.id])}
+                        className="rounded-lg bg-pine px-4 py-2 text-sm font-semibold text-paper hover:bg-pine-dark">
+                        출제하기
+                      </button>
                       <button onClick={() => nav(`/worksheet/${w.id}`)}
                         className="rounded-lg border border-pine px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">
                         보기·인쇄
@@ -240,6 +358,22 @@ export default function WorksheetList({ view }: { view: View }) {
             })}
           </div>
         </>
+      )}
+
+      {/* 출제하기 모달 */}
+      {assignTarget && (
+        <AssignModal
+          title={assignTarget.length === 1
+            ? `「${worksheets.find(w => w.id === assignTarget[0])?.title ?? ''}」`
+            : `학습지 ${assignTarget.length}개`}
+          students={students.filter(s => s.active)}
+          onClose={() => setAssignTarget(null)}
+          onSubmit={(ids, kind) => {
+            assignTarget.forEach(wsId => addAssignment(wsId, ids, kind))
+            setAssignTarget(null)
+            setChecked(new Set())
+          }}
+        />
       )}
 
       {/* 마이 리스트에 담기 모달 */}
@@ -285,6 +419,69 @@ export default function WorksheetList({ view }: { view: View }) {
           </div>
         </div>
       )}
+    </div>
+  )
+}
+
+function AssignModal({ title, students, onClose, onSubmit }: {
+  title: string
+  students: Student[]
+  onClose: () => void
+  onSubmit: (studentIds: string[], kind: Assignment['kind']) => void
+}) {
+  const [kind, setKind] = useState<Assignment['kind']>('수업')
+  const [sel, setSel] = useState<Set<string>>(new Set())
+  const allOn = students.length > 0 && students.every(s => sel.has(s.id))
+
+  return (
+    <div className="fixed inset-0 z-30 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
+      <div className="w-full max-w-md rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
+        <h3 className="mb-1 font-bold">출제하기</h3>
+        <p className="mb-4 text-sm text-ink2">{title}를 출제할 학생을 선택하세요.</p>
+        <div className="mb-4 flex gap-2">
+          {([['수업', '수업으로 출제'], ['숙제', '숙제로 출제']] as const).map(([k, label]) => (
+            <button key={k} onClick={() => setKind(k)}
+              className={`grow rounded-lg border px-4 py-2 text-sm font-semibold ${kind === k ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2'}`}>
+              {label}
+            </button>
+          ))}
+        </div>
+        {students.length === 0 ? (
+          <div className="mb-3 rounded-xl border border-dashed border-line p-6 text-center text-sm text-ink2">
+            활성 학생이 없습니다. 학생 관리에서 학생을 먼저 등록하세요.
+          </div>
+        ) : (
+          <>
+            <label className="mb-2 flex cursor-pointer items-center gap-2 text-sm font-semibold">
+              <input type="checkbox" checked={allOn} className="h-4 w-4 accent-pine"
+                onChange={e => setSel(e.target.checked ? new Set(students.map(s => s.id)) : new Set())} />
+              전체 선택 ({students.length}명)
+            </label>
+            <div className="grid max-h-64 gap-2 overflow-auto">
+              {students.map(s => {
+                const on = sel.has(s.id)
+                return (
+                  <label key={s.id} className={`flex cursor-pointer items-center gap-2 rounded-xl border p-3 text-sm ${on ? 'border-pine bg-pine-soft/40' : 'border-line'}`}>
+                    <input type="checkbox" checked={on} className="h-4 w-4 accent-pine"
+                      onChange={() => setSel(prev => {
+                        const n = new Set(prev); if (n.has(s.id)) n.delete(s.id); else n.add(s.id); return n
+                      })} />
+                    <b>{s.name}</b>
+                    <span className="text-xs text-ink2">{s.grade}{s.klass ? ` · ${s.klass}` : ''}</span>
+                  </label>
+                )
+              })}
+            </div>
+          </>
+        )}
+        <div className="mt-4 flex justify-end gap-2">
+          <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
+          <button disabled={sel.size === 0} onClick={() => onSubmit([...sel], kind)}
+            className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">
+            출제하기 ({sel.size}명)
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

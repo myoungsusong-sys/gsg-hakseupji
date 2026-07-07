@@ -13,6 +13,7 @@ export default function Bank() {
   const cur = curriculumFor(gradeId)
   const [typeFilter, setTypeFilter] = useState<string>('all')
   const [adding, setAdding] = useState(false)
+  const [bulk, setBulk] = useState(false)
 
   const list = useMemo(
     () => problems.filter(p => typeFilter === 'all' || p.typeId === typeFilter),
@@ -62,6 +63,10 @@ export default function Bank() {
             <span className="ml-2 text-sm font-normal text-ink2">{list.length}개</span>
           </h2>
           <div className="grow" />
+          <button onClick={() => setBulk(true)}
+            className="rounded-lg border border-pine px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">
+            📥 문제 일괄 등록
+          </button>
           <button onClick={() => setAdding(true)}
             className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:bg-pine-dark">
             + 문제 직접 추가
@@ -102,6 +107,8 @@ export default function Bank() {
       </div>
 
       {adding && <AddProblemModal onClose={() => setAdding(false)} onAdd={p => { addProblem(p); setAdding(false) }} />}
+      {bulk && <BulkAddModal courseId={gradeId} onClose={() => setBulk(false)}
+        onAdd={ps => { ps.forEach(addProblem); setBulk(false); alert(`${ps.length}문제를 등록했습니다.`) }} />}
     </div>
   )
 }
@@ -199,6 +206,205 @@ function AddProblemModal({ onClose, onAdd }: { onClose: () => void; onAdd: (p: P
             <button onClick={onClose} className="rounded-lg border border-line px-5 py-2.5">취소</button>
             <button onClick={submit} className="rounded-lg bg-pine px-6 py-2.5 font-bold text-paper">추가</button>
           </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ── 일괄 등록 ─────────────────────────────────────────────
+interface BulkBlock {
+  typeQuery: string
+  typeId: string | null
+  kind: Kind
+  diff: Diff
+  body: string
+  choices?: string[]
+  answer: string
+  solution: string
+  source: string
+  twin: string
+  errors: string[]
+  warns: string[]
+}
+
+const DIFF_FROM_TEXT: Record<string, Diff> = { 하: 1, 중하: 2, 중: 3, 상: 4, 최상: 5 }
+const BULK_FIELD_RE = /^(유형|형태|난이도|출처|쌍둥이|문제|보기|답|해설)\s*[:：]\s*(.*)$/
+
+// 유형 퍼지 매핑: 선택 과정 우선 → 전 과정. 유형명 먼저, 그다음 소단원명(첫 유형으로 귀속)
+function findTypeIdFuzzy(query: string, courseId: string): string | null {
+  const q = query.replace(/\s+/g, '')
+  if (!q) return null
+  const ordered = [curriculumFor(courseId), ...CURRICULA.filter(c => c.id !== courseId)]
+  for (const c of ordered) {
+    for (const u of c.units) for (const m of u.mids) for (const s of m.subs)
+      for (const t of s.types) {
+        const n = t.name.replace(/\s+/g, '')
+        if (n.includes(q) || q.includes(n)) return t.id
+      }
+    for (const u of c.units) for (const m of u.mids) for (const s of m.subs) {
+      const n = s.name.replace(/\s+/g, '')
+      if (s.types.length > 0 && (n.includes(q) || q.includes(n))) return s.types[0].id
+    }
+  }
+  return null
+}
+
+function parseBulk(text: string, courseId: string): BulkBlock[] {
+  const rawBlocks = text.split(/^\s*-{3,}\s*$/m).map(b => b.trim()).filter(Boolean)
+  return rawBlocks.map(raw => {
+    const f: Record<string, string> = {}
+    let cur: string | null = null
+    for (const line of raw.split('\n')) {
+      const m = line.match(BULK_FIELD_RE)
+      if (m) { cur = m[1]; f[cur] = f[cur] ? `${f[cur]}\n${m[2]}` : m[2] }
+      else if (cur) f[cur] = `${f[cur]}\n${line}`
+    }
+    const g = (k: string) => (f[k] ?? '').trim()
+
+    const errors: string[] = []
+    const warns: string[] = []
+
+    const typeQuery = g('유형')
+    const typeId = findTypeIdFuzzy(typeQuery, courseId)
+    if (!typeQuery) errors.push('유형 없음')
+    else if (!typeId) errors.push(`유형 매칭 실패: "${typeQuery}"`)
+
+    const kind: Kind = g('형태').includes('객') ? '객관식' : '주관식'
+
+    const dv = g('난이도')
+    const diff: Diff = DIFF_FROM_TEXT[dv] ?? 3
+    if (dv && !DIFF_FROM_TEXT[dv]) warns.push(`난이도 "${dv}" 인식 불가 → 중`)
+
+    const body = g('문제')
+    if (!body) errors.push('문제 없음')
+    const answer = g('답')
+    if (!answer) errors.push('답 없음')
+
+    let choices: string[] | undefined
+    if (kind === '객관식') {
+      const rawC = g('보기')
+      choices = rawC.split(/(?=[①②③④⑤])/)
+        .map(s => s.replace(/^[①②③④⑤]\s*/, '').trim())
+        .filter(Boolean)
+      if (choices.length < 2) choices = rawC.split('\n').map(s => s.trim()).filter(Boolean)
+      if (choices.length < 2) errors.push('객관식인데 보기 부족')
+      else if (choices.length !== 5) warns.push(`보기 ${choices.length}개 (5개 아님)`)
+    }
+
+    const solution = g('해설')
+    if (!solution) warns.push('해설 없음')
+
+    return {
+      typeQuery, typeId, kind, diff, body, choices, answer, solution,
+      source: g('출처'), twin: g('쌍둥이'), errors, warns,
+    }
+  })
+}
+
+function BulkAddModal({ courseId, onClose, onAdd }: {
+  courseId: string
+  onClose: () => void
+  onAdd: (ps: Problem[]) => void
+}) {
+  const [text, setText] = useState('')
+  const parsed = useMemo(() => parseBulk(text, courseId), [text, courseId])
+  const valid = parsed.filter(b => b.errors.length === 0)
+
+  function register() {
+    if (valid.length === 0) return
+    onAdd(valid.map(b => ({
+      id: uid('p'),
+      typeId: b.typeId!,
+      kind: b.kind,
+      diff: b.diff,
+      body: b.body,
+      choices: b.kind === '객관식' ? b.choices : undefined,
+      answer: b.answer,
+      solution: b.solution || '(해설 없음)',
+      source: b.source || '직접 입력',
+      twinGroup: b.twin || undefined,
+      custom: true,
+    })))
+  }
+
+  const placeholder = [
+    '유형: 소인수분해 하기',
+    '형태: 주관식',
+    '난이도: 중',
+    '출처: 자체 제작',
+    '쌍둥이: pf-01',
+    '문제: $60$을 소인수분해하시오.',
+    '답: $2^2\\times3\\times5$',
+    '해설: $60=2\\times30=2\\times2\\times15=2^2\\times3\\times5$',
+    '---',
+    '유형: 정수의 덧셈',
+    '형태: 객관식',
+    '문제: $(-3)+(+5)$의 값은?',
+    '보기: ① $-2$ ② $-1$ ③ $0$ ④ $1$ ⑤ $2$',
+    '답: ⑤',
+  ].join('\n')
+
+  return (
+    <div className="fixed inset-0 z-30 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
+      <div className="max-h-[90vh] w-full max-w-4xl overflow-auto rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
+        <h3 className="mb-1 text-lg font-bold">📥 문제 일괄 등록</h3>
+        <p className="mb-3 text-sm text-ink2">
+          문제 사이를 <b>---</b> 줄로 구분해 붙여넣으세요. 필드: 유형 / 형태 / 난이도(하·중하·중·상·최상) / 출처 / 쌍둥이 / 문제 / 보기 / 답 / 해설.
+          유형은 현재 선택된 과정을 우선으로 전 과정 유형명·소단원명에서 검색해 매핑합니다.
+        </p>
+        <div className="mb-3 rounded-lg bg-amber-soft px-3 py-2 text-sm font-semibold text-clay">
+          ⚠️ 유료 서비스(매쓰플랫 등)의 문제를 옮겨 넣는 것은 저작권 위반입니다. 직접 만든 문제·보유 자료만 등록하세요.
+        </div>
+        <textarea value={text} onChange={e => setText(e.target.value)} rows={12} placeholder={placeholder}
+          className="w-full rounded-lg border border-line px-3 py-2 font-mono text-sm" />
+
+        {parsed.length > 0 && (
+          <div className="mt-4">
+            <h4 className="mb-2 text-sm font-bold">미리보기 <span className="font-normal text-ink2">{parsed.length}블록 · 등록 가능 {valid.length}개</span></h4>
+            <div className="overflow-x-auto rounded-xl border border-line">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-paper2 text-xs text-ink2">
+                  <tr>
+                    <th className="px-3 py-2">#</th>
+                    <th className="px-3 py-2">유형</th>
+                    <th className="px-3 py-2">형태</th>
+                    <th className="px-3 py-2">난이도</th>
+                    <th className="px-3 py-2">답</th>
+                    <th className="px-3 py-2">경고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {parsed.map((b, i) => (
+                    <tr key={i} className="border-t border-line">
+                      <td className="px-3 py-2 text-ink2">{i + 1}</td>
+                      <td className="px-3 py-2">
+                        {b.typeId
+                          ? <span className="font-semibold text-pine-dark">{typeName(b.typeId)}</span>
+                          : <span className="font-semibold text-clay">매칭 실패</span>}
+                      </td>
+                      <td className="px-3 py-2">{b.kind}</td>
+                      <td className="px-3 py-2">{DIFF_LABEL[b.diff]}</td>
+                      <td className="max-w-40 truncate px-3 py-2"><MathText text={b.answer || '—'} /></td>
+                      <td className="px-3 py-2 text-xs">
+                        {b.errors.length > 0 && <span className="font-semibold text-clay">{b.errors.join(' · ')}</span>}
+                        {b.errors.length === 0 && b.warns.length > 0 && <span className="text-amber">{b.warns.join(' · ')}</span>}
+                        {b.errors.length === 0 && b.warns.length === 0 && <span className="text-ink2">—</span>}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        <div className="mt-4 flex justify-end gap-3">
+          <button onClick={onClose} className="rounded-lg border border-line px-5 py-2.5 text-sm">취소</button>
+          <button onClick={register} disabled={valid.length === 0}
+            className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-50">
+            {valid.length}문제 등록
+          </button>
         </div>
       </div>
     </div>

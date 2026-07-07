@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  DailyNote, DiffMatrix, Grading, MyList, Problem, Student, Workbook, WBItem, Worksheet,
+  Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -29,6 +29,8 @@ export interface CloudData {
   dailyNotes: DailyNote[]
   favorites: string[]
   diffMatrix: DiffMatrix | null
+  assignments: Assignment[]                    // 학습지 출제 (settings 'assignments')
+  dailyConfigs: Record<string, DailyConfig>    // 오늘의 학습 설정 (settings 'dailyConfigs', 키=studentId)
 }
 
 export function noteId(n: DailyNote): string {
@@ -67,6 +69,8 @@ export async function loadAll(): Promise<CloudData | null> {
     dailyNotes: dailyNotes as DailyNote[],
     favorites: (settingsMap.get('favorites') as string[]) ?? [],
     diffMatrix: (settingsMap.get('diffMatrix') as DiffMatrix) ?? null,
+    assignments: (settingsMap.get('assignments') as Assignment[]) ?? [],
+    dailyConfigs: (settingsMap.get('dailyConfigs') as Record<string, DailyConfig>) ?? {},
   }
 }
 
@@ -104,6 +108,8 @@ export const cloud = {
       put(T.dailyNotes, local.dailyNotes as any[], (n: DailyNote) => noteId(n)),
       this.setSetting('favorites', local.favorites),
       local.diffMatrix ? this.setSetting('diffMatrix', local.diffMatrix) : Promise.resolve(),
+      local.assignments.length ? this.setSetting('assignments', local.assignments) : Promise.resolve(),
+      Object.keys(local.dailyConfigs).length ? this.setSetting('dailyConfigs', local.dailyConfigs) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

@@ -27,11 +27,11 @@ const SRC_TABS: { key: SrcTab; label: string; note?: string }[] = [
   { key: 'upload', label: '기출 업로드', note: 'PDF/이미지 업로드 → Claude가 문제·정답·해설 추출·유형 매칭(디지털 문제 변환) — 2차 개발' },
 ]
 
-const COUNT_PRESETS = [10, 20, 30, 50]
+const COUNT_PRESETS = [25, 50, 75, 100]
 
 export default function MakeWizard() {
   const store = useStore()
-  const { problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix } = store
+  const { problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments } = store
   const nav = useNavigate()
   const [params] = useSearchParams()
   const editId = params.get('edit')
@@ -44,10 +44,12 @@ export default function MakeWizard() {
   const [gradeId, setGradeId] = useState('m1-1')
   const cur = curriculumFor(gradeId)
   const [selected, setSelected] = useState<Set<string>>(new Set())
-  const [count, setCount] = useState(20)
+  const [count, setCount] = useState(50)
   const [diffFocus, setDiffFocus] = useState<Diff>(3)
   const [kind, setKind] = useState<KindFilter>('all')
   const [matrixOpen, setMatrixOpen] = useState(false)
+  const [excludeRecent, setExcludeRecent] = useState(false)  // 최근 30일 출제 문제 제외
+  const [evenTypes, setEvenTypes] = useState(false)          // 유형별 균등 배분
 
   // STEP 2
   const [items, setItems] = useState<Problem[]>([])
@@ -80,13 +82,51 @@ export default function MakeWizard() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editId])
 
+  // URL 프리셋: ?types=id1,id2&course=courseId → 해당 과정·유형이 선택된 상태로 STEP1 시작
+  useEffect(() => {
+    if (editing) return
+    const course = params.get('course')
+    const types = params.get('types')
+    if (!course && !types) return
+    const c = course && curriculumFor(course).id === course ? curriculumFor(course) : cur
+    if (course && c.id === course) setGradeId(course)
+    if (types) {
+      const valid = new Set(c.units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))))
+      const ids = types.split(',').map(t => t.trim()).filter(t => valid.has(t))
+      if (ids.length > 0) setSelected(new Set(ids))
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // 이탈 가드: 편집 중(STEP2·3 또는 STEP1에서 유형 선택 있음) 새로고침·창 닫기 경고
+  const dirty = step > 1 || selected.size > 0
+  useEffect(() => {
+    if (!dirty) return
+    const h = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = '' }
+    window.addEventListener('beforeunload', h)
+    return () => window.removeEventListener('beforeunload', h)
+  }, [dirty])
+
   const typeOrder = useMemo(
     () => cur.units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))),
     [cur],
   )
   const selectedOrder = typeOrder.filter(t => selected.has(t))
   const pool = useMemo(() => problems.filter(p => selected.has(p.typeId)), [problems, selected])
-  const availableCount = pool.filter(p => kind === 'all' || p.kind === kind).length
+
+  // 최근 30일 출제(수업·숙제, 전체 학생)된 학습지의 문제 id
+  const recentProblemIds = useMemo(() => {
+    const cutoff = Date.now() - 30 * 24 * 3600 * 1000
+    const wsIds = new Set(assignments.filter(a => new Date(a.date).getTime() >= cutoff).map(a => a.worksheetId))
+    const s = new Set<string>()
+    for (const w of worksheets) if (wsIds.has(w.id)) for (const pid of w.problemIds) s.add(pid)
+    return s
+  }, [assignments, worksheets])
+  const effectivePool = useMemo(
+    () => excludeRecent ? pool.filter(p => !recentProblemIds.has(p.id)) : pool,
+    [pool, excludeRecent, recentProblemIds],
+  )
+  const availableCount = effectivePool.filter(p => kind === 'all' || p.kind === kind).length
   const usedIds = useMemo(() => new Set(items.map(p => p.id)), [items])
 
   function toggleType(id: string) {
@@ -97,7 +137,19 @@ export default function MakeWizard() {
   }
 
   function goStep2() {
-    setItems(pickProblems(pool, count, diffFocus, kind, selectedOrder, diffMatrix))
+    let picked = pickProblems(effectivePool, count, diffFocus, kind, selectedOrder, diffMatrix)
+    if (evenTypes && selectedOrder.length > 0) {
+      // 유형별 균등 배분: 유형별 최대 = ceil(문제 수 / 선택 유형 수) 상한 적용
+      const cap = Math.ceil(count / selectedOrder.length)
+      const per = new Map<string, number>()
+      picked = picked.filter(p => {
+        const n = per.get(p.typeId) ?? 0
+        if (n >= cap) return false
+        per.set(p.typeId, n + 1)
+        return true
+      })
+    }
+    setItems(picked)
     setStep(2)
   }
 
@@ -359,7 +411,16 @@ export default function MakeWizard() {
               </div>
             </div>
             <div>
-              <div className="mb-2 text-sm font-bold">문제 형태</div>
+              <div className="mb-2 flex items-center justify-between text-sm font-bold">
+                문제 형태
+                <button onClick={() => setOpts(o => ({ ...o, autoGrade: !(o.autoGrade ?? true) }))}
+                  className="flex items-center gap-1.5 text-xs font-semibold text-ink2" title="자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)">
+                  자동채점
+                  <span className={`flex h-5 w-9 items-center rounded-full p-0.5 transition ${(opts.autoGrade ?? true) ? 'justify-end bg-pine' : 'justify-start bg-line'}`}>
+                    <span className="h-4 w-4 rounded-full bg-white" />
+                  </span>
+                </button>
+              </div>
               <div className="flex gap-2">
                 {(['all', '객관식', '주관식'] as KindFilter[]).map(k => (
                   <button key={k} onClick={() => setKind(k)}
@@ -368,6 +429,19 @@ export default function MakeWizard() {
                   </button>
                 ))}
               </div>
+            </div>
+            <div className="grid gap-2 text-sm">
+              <div className="font-bold">출제 옵션</div>
+              <label className="flex cursor-pointer items-center gap-2">
+                <input type="checkbox" checked={excludeRecent}
+                  onChange={e => setExcludeRecent(e.target.checked)} className="h-4 w-4 accent-pine" />
+                최근 30일 출제 문제 제외
+              </label>
+              <label className="flex cursor-pointer items-center gap-2">
+                <input type="checkbox" checked={evenTypes}
+                  onChange={e => setEvenTypes(e.target.checked)} className="h-4 w-4 accent-pine" />
+                유형별 균등 배분
+              </label>
             </div>
             <div className="mt-auto rounded-xl bg-paper2 p-4 text-sm">
               학습지 문제 수 <b className="text-pine-dark">{Math.min(count, availableCount)}</b>개 | 유형 <b>{selected.size}</b>개
@@ -405,7 +479,12 @@ export default function MakeWizard() {
               <option value="shuffle">무작위 섞기</option>
             </select>
             <div className="grow" />
-            {!editing && <button onClick={() => setStep(1)} className="rounded-lg border border-line px-4 py-2 text-sm">← 범위 다시 선택</button>}
+            {!editing && (
+              <button onClick={() => {
+                if (items.length > 0 && !confirm('편집 내용이 초기화됩니다. 범위 선택으로 돌아갈까요?')) return
+                setStep(1)
+              }} className="rounded-lg border border-line px-4 py-2 text-sm">← 범위 다시 선택</button>
+            )}
             <button disabled={items.length === 0} onClick={() => setStep(3)}
               className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">다음 단계 →</button>
           </div>

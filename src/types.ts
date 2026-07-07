@@ -61,12 +61,14 @@ export interface SheetOptions {
   solutionWithBody: boolean          // 해설지에 문제 포함
   showDate: boolean
   customDate: string | null          // null이면 생성일
+  autoGrade?: boolean                // 자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)
 }
 
 export const DEFAULT_SHEET_OPTIONS: SheetOptions = {
   layout: 'basic', spacing: 3, showTypeName: true, showDiff: true,
   showCorrectRate: false, showNew: true,
   wrongNoteArea: false, solutionWithBody: false, showDate: true, customDate: null,
+  autoGrade: true,
 }
 
 export interface Worksheet {
@@ -118,22 +120,48 @@ export interface Student {
   grade: string
   klass?: string
   active: boolean
+  parentPhone?: string   // 학부모 연락처
+  school?: string        // 학교
+  memo?: string          // 메모
 }
 
 export interface GradeResult {
-  itemId: string
-  studentAnswer: string
+  itemId?: string        // 교재 채점: WBItem id
+  typeId?: string        // 학습지 채점: 유형 직접 기록 (itemId 없을 때)
+  studentAnswer?: string
   correct: boolean
+  unknown?: boolean      // '모름' — 집계는 오답과 동일, 표시만 구분
 }
 
 export interface Grading {
   id: string
   studentId: string
-  workbookId: string
+  source?: '교재' | '학습지'   // 없으면 교재(구버전 데이터 호환)
+  workbookId?: string
+  worksheetId?: string
   date: string
-  pageFrom: number
-  pageTo: number
+  pageFrom?: number
+  pageTo?: number
   results: GradeResult[]
+}
+
+// 학습지 출제 (수업/숙제) — hj_settings 'assignments' 키에 배열로 저장
+export interface Assignment {
+  id: string
+  worksheetId: string
+  studentId: string
+  date: string           // ISO
+  kind: '수업' | '숙제'
+}
+
+// 오늘의 학습 — 학생별 자동 출제 설정 (hj_settings 'dailyConfigs')
+export interface DailyConfig {
+  courseId: string       // 과정 (CURRICULA id)
+  unitIds: string[]      // 출제 범위 대단원 (빈 배열 = 전체)
+  count: number          // 문제 수
+  diff: Diff             // 난이도 중심
+  kind: 'all' | Kind     // 문제 형태
+  review: boolean        // 최근 7일 오답 쌍둥이·유사 자동 복습 믹스
 }
 
 // 일일 보고지 메모 (학생×날짜)

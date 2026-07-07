@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
+/* 클린 블루 테마 (매쓰플랫 계열이되 고유 색 — 로고·브랜드컬러 픽셀 복제는 안 함)
+   토큰 이름은 유지하고 값만 교체: pine=메인 블루, amber=보조 오렌지 */
 @theme {
-  --color-paper: #faf6ee;
-  --color-paper2: #f2ecdd;
-  --color-line: #e3dbc6;
-  --color-ink: #22301f;
-  --color-ink2: #55624f;
-  --color-pine: #2e6b4f;
-  --color-pine-dark: #1f4d38;
-  --color-pine-soft: #e2ede6;
-  --color-amber: #c9862b;
-  --color-amber-soft: #f6e8d2;
-  --color-clay: #b65c3a;
+  --color-paper: #ffffff;
+  --color-paper2: #f4f6fa;
+  --color-line: #e3e8ef;
+  --color-ink: #1d2530;
+  --color-ink2: #66707f;
+  --color-pine: #2b7de9;
+  --color-pine-dark: #1c5fc0;
+  --color-pine-soft: #e9f2fe;
+  --color-amber: #f08c00;
+  --color-amber-soft: #fdf1df;
+  --color-clay: #e5484d;
 }
 
-html { background: var(--color-paper); }
+html { background: var(--color-paper2); }
 body {
   font-family: "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
   color: var(--color-ink);

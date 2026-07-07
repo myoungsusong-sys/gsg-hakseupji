@@ -1,11 +1,11 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  DailyNote, DiffMatrix, Grading, MyList, Problem, Student, Workbook, WBItem, Worksheet,
+  Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
-import { loadWbMatch, deriveWBItems } from '../data/wbMatch'
+import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { cloud, loadAll, noteId, type CloudData } from './backend'
 
 const LS_KEY = 'gsg-hakseupji-v1'
@@ -21,12 +21,15 @@ interface Persisted {
   students: Student[]
   gradings: Grading[]
   dailyNotes: DailyNote[]
+  assignments: Assignment[]
+  dailyConfigs: Record<string, DailyConfig>
 }
 
 const EMPTY: Persisted = {
   customProblems: [], worksheets: [], favorites: [], myLists: [],
   diffMatrix: DEFAULT_DIFF_MATRIX,
   workbooks: [], wbItems: [], students: [], gradings: [], dailyNotes: [],
+  assignments: [], dailyConfigs: {},
 }
 
 interface Store extends Persisted {
@@ -51,8 +54,12 @@ interface Store extends Persisted {
   setWBItems: (workbookId: string, items: WBItem[]) => void
   addStudent: (s: Omit<Student, 'id' | 'active'>) => string
   setStudentActive: (id: string, active: boolean) => void
+  updateStudent: (id: string, patch: Partial<Student>) => void
   saveGrading: (g: Omit<Grading, 'id'>) => void
   saveDailyNote: (n: DailyNote) => void
+  addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
+  removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
+  setDailyConfig: (studentId: string, cfg: DailyConfig) => void
 }
 
 const Ctx = createContext<Store | null>(null)
@@ -85,6 +92,8 @@ function fromCloud(r: CloudData): Persisted {
     students: r.students,
     gradings: r.gradings.sort((a, b) => b.date.localeCompare(a.date)),
     dailyNotes: r.dailyNotes,
+    assignments: r.assignments ?? [],
+    dailyConfigs: r.dailyConfigs ?? {},
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -92,6 +101,7 @@ function toCloud(s: Persisted): CloudData {
     customProblems: s.customProblems, worksheets: s.worksheets, myLists: s.myLists,
     workbooks: s.workbooks, wbItems: s.wbItems, students: s.students, gradings: s.gradings,
     dailyNotes: s.dailyNotes, favorites: s.favorites, diffMatrix: s.diffMatrix,
+    assignments: s.assignments, dailyConfigs: s.dailyConfigs,
   }
 }
 
@@ -101,16 +111,32 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const stateRef = useRef(state)
   stateRef.current = state
 
-  // 시중교재 매칭: matchKey가 붙은 교재의 문항(conceptId 포함)을 런타임 파생 (Supabase엔 저장 안 함)
-  const [matchData, setMatchData] = useState<Record<string, [string, number, string, number][]> | null>(null)
-  const needMatch = state.workbooks.some(w => w.matchKey)
+  // 시중교재 매칭: matchKey가 붙은 교재의 문항(conceptId 포함)을 과정 파일에서 런타임 파생 (Supabase엔 저장 안 함)
+  const [matchDataByCourse, setMatchDataByCourse] = useState<Record<string, MatchData>>({})
+  const neededCourses = useMemo(() => {
+    const set = new Set<string>()
+    for (const w of state.workbooks) {
+      if (!w.matchKey) continue
+      const c = courseOfGrade(w.grade)
+      if (c) set.add(c)
+    }
+    return [...set]
+  }, [state.workbooks])
   useEffect(() => {
-    if (needMatch && !matchData) loadWbMatch().then(setMatchData).catch(e => console.warn('wb-match', e.message))
-  }, [needMatch, matchData])
+    for (const c of neededCourses) {
+      if (matchDataByCourse[c]) continue
+      loadWbMatch(c)
+        .then(d => setMatchDataByCourse(prev => prev[c] ? prev : { ...prev, [c]: d }))
+        .catch(e => console.warn('wb-match', c, e.message))
+    }
+  }, [neededCourses, matchDataByCourse])
   const derivedWbItems = useMemo(() => {
-    if (!matchData) return []
-    return state.workbooks.filter(w => w.matchKey).flatMap(w => deriveWBItems(w.id, w.matchKey!, matchData))
-  }, [state.workbooks, matchData])
+    return state.workbooks.filter(w => w.matchKey).flatMap(w => {
+      const c = courseOfGrade(w.grade)
+      const data = c ? matchDataByCourse[c] : undefined
+      return data ? deriveWBItems(w.id, w.matchKey!, data) : []
+    })
+  }, [state.workbooks, matchDataByCourse])
 
   // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
   // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
@@ -244,6 +270,30 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const cur = stateRef.current.students.find(x => x.id === id); if (!cur) return
       const next = { ...cur, active }
       set(s => ({ ...s, students: s.students.map(x => x.id === id ? next : x) })); cloud.upsert(cloud.T.students, id, next)
+    },
+    updateStudent: (id, patch) => {
+      const cur = stateRef.current.students.find(x => x.id === id); if (!cur) return
+      const next = { ...cur, ...patch }
+      set(s => ({ ...s, students: s.students.map(x => x.id === id ? next : x) })); cloud.upsert(cloud.T.students, id, next)
+    },
+    addAssignment: (worksheetId, studentIds, kind = '수업') => {
+      const now = new Date().toISOString()
+      const fresh: Assignment[] = studentIds
+        .filter(sid => !stateRef.current.assignments.some(a => a.worksheetId === worksheetId && a.studentId === sid && a.kind === kind))
+        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind }))
+      if (fresh.length === 0) return
+      const next = [...stateRef.current.assignments, ...fresh]
+      set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+    },
+    removeAssignment: (worksheetId, studentId, kind) => {
+      // kind 지정 시 그 종류만 제거 (숙제 취소가 수업 출제까지 지우던 버그 방지)
+      const next = stateRef.current.assignments.filter(a =>
+        !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true)))
+      set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+    },
+    setDailyConfig: (studentId, cfg) => {
+      const next = { ...stateRef.current.dailyConfigs, [studentId]: cfg }
+      set(s => ({ ...s, dailyConfigs: next })); cloud.setSetting('dailyConfigs', next)
     },
     saveGrading: g => {
       const rec = { ...g, id: uid('gr') }

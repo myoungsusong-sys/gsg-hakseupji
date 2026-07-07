@@ -17,6 +17,7 @@ import Students from './pages/Students'
 import CsatLibrary from './pages/CsatLibrary'
 import GichulView from './pages/GichulView'
 import GichulTag from './pages/GichulTag'
+import ArithmeticGen from './pages/ArithmeticGen'
 
 function Page({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto max-w-7xl px-6 py-8">{children}</div>
@@ -63,11 +64,7 @@ function Gate() {
                   original={['KMM 수학경시대회 기출·모의 문항 회차별 제공']}
                   plan="KMM 문항 데이터를 확보하면 회차/유형별로 탑재. (별도 라이선스·데이터 필요)" />
               } />
-              <Route path="/prep/arithmetic" element={
-                <Placeholder title="연산"
-                  original={['연산 교재 라이브러리: 강 단위 학습지 + 실물 미리보기 + 추가 학습지']}
-                  plan="연산 문제 자동 생성기(숫자 랜덤 템플릿)로 구현 — 저작권 부담 없는 영역이라 우선순위 높음." />
-              } />
+              <Route path="/prep/arithmetic" element={<ArithmeticGen />} />
               <Route path="/prep/essay" element={
                 <Placeholder title="서술형"
                   original={['단원별 서술형 세트(기본/일반/심화, 10문제 단위)']}
