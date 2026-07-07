@@ -364,7 +364,7 @@ export default function GradePanel({ student }: { student: Student }) {
                           : <span className={`text-lg font-black ${MARK_CLASS[m]}`}>{MARK_ICON[m]}</span>}
                       </div>
                       <div className="mt-1 text-[11px] text-ink2">{typeName(i.typeId)}</div>
-                      {!wb.matchKey && i.answer && <div className="text-[11px] text-ink2">정답 {i.answer}</div>}
+                      {i.answer && <div className="text-[11px] text-ink2">정답 {i.answer}</div>}
                     </button>
                   )
                 })}

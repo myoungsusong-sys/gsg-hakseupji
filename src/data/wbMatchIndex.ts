@@ -1,4 +1,4 @@
-// 자동 생성 — 22개정 시중교재 인덱스 (중 6학기+고 7과목). 문항 매칭은 /wb-match-<course>.json
+// 자동 생성 — 22개정 시중교재 인덱스 (중 6학기+고 7과목, 문항별 번호·유형·정답 포함). 매칭은 /wb-match-<course>.json
 export interface WbMatchBook { key: string; name: string; publisher: string; grade: string; course: string; count: number }
 export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "디딤돌수학 개념기본 공통수학1|디딤돌", name: "디딤돌수학 개념기본 공통수학1", publisher: "디딤돌", grade: "공통수학1", course: "h-cm1", count: 3131 },
@@ -18,7 +18,6 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "Hi Math 공통수학1|아름다운샘", name: "Hi Math 공통수학1", publisher: "아름다운샘", grade: "공통수학1", course: "h-cm1", count: 1490 },
   { key: "유형 해결의 법칙 공통수학1|천재교육", name: "유형 해결의 법칙 공통수학1", publisher: "천재교육", grade: "공통수학1", course: "h-cm1", count: 1468 },
   { key: "라이트쎈 공통수학1|좋은책신사고", name: "라이트쎈 공통수학1", publisher: "좋은책신사고", grade: "공통수학1", course: "h-cm1", count: 1442 },
-  { key: "풍산자반복수학 공통수학1|지학사", name: "풍산자반복수학 공통수학1", publisher: "지학사", grade: "공통수학1", course: "h-cm1", count: 1388 },
   { key: "마플교과서 공통수학1|희망에듀", name: "마플교과서 공통수학1", publisher: "희망에듀", grade: "공통수학1", course: "h-cm1", count: 1373 },
   { key: "쎈 공통수학1|좋은책신사고", name: "쎈 공통수학1", publisher: "좋은책신사고", grade: "공통수학1", course: "h-cm1", count: 1371 },
   { key: "유형만렙 공통수학1|비상교육", name: "유형만렙 공통수학1", publisher: "비상교육", grade: "공통수학1", course: "h-cm1", count: 1279 },
@@ -62,7 +61,6 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "블랙라벨 공통수학1|진학사", name: "블랙라벨 공통수학1", publisher: "진학사", grade: "공통수학1", course: "h-cm1", count: 562 },
   { key: "개념쎈 공통수학1|좋은책신사고", name: "개념쎈 공통수학1", publisher: "좋은책신사고", grade: "공통수학1", course: "h-cm1", count: 560 },
   { key: "짱 중요한 내신 공통수학1|아름다운샘", name: "짱 중요한 내신 공통수학1", publisher: "아름다운샘", grade: "공통수학1", course: "h-cm1", count: 547 },
-  { key: "플래티넘 공통수학1|꿈을담는틀", name: "플래티넘 공통수학1", publisher: "꿈을담는틀", grade: "공통수학1", course: "h-cm1", count: 512 },
   { key: "우공비Q+Q 표준+발전편_워크북 공통수학1|좋은책신사고", name: "우공비Q+Q 표준+발전편_워크북 공통수학1", publisher: "좋은책신사고", grade: "공통수학1", course: "h-cm1", count: 505 },
   { key: "EBS 고등예비과정 공통수학1|EBS한국교육방송공사", name: "EBS 고등예비과정 공통수학1", publisher: "EBS한국교육방송공사", grade: "공통수학1", course: "h-cm1", count: 491 },
   { key: "시험직전R 공통수학1|CSM17", name: "시험직전R 공통수학1", publisher: "CSM17", grade: "공통수학1", course: "h-cm1", count: 481 },
@@ -87,7 +85,6 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "유형반복R 공통수학2|CSM17", name: "유형반복R 공통수학2", publisher: "CSM17", grade: "공통수학2", course: "h-cm2", count: 1449 },
   { key: "풍산자반복수학 공통수학2|지학사", name: "풍산자반복수학 공통수학2", publisher: "지학사", grade: "공통수학2", course: "h-cm2", count: 1431 },
   { key: "라이트쎈 공통수학2|좋은책신사고", name: "라이트쎈 공통수학2", publisher: "좋은책신사고", grade: "공통수학2", course: "h-cm2", count: 1410 },
-  { key: "Hi Math 공통수학2|아름다운샘", name: "Hi Math 공통수학2", publisher: "아름다운샘", grade: "공통수학2", course: "h-cm2", count: 1379 },
   { key: "쎈 공통수학2|좋은책신사고", name: "쎈 공통수학2", publisher: "좋은책신사고", grade: "공통수학2", course: "h-cm2", count: 1345 },
   { key: "마플교과서 공통수학2|희망에듀", name: "마플교과서 공통수학2", publisher: "희망에듀", grade: "공통수학2", course: "h-cm2", count: 1330 },
   { key: "개념 해결의 법칙 공통수학2|천재교육", name: "개념 해결의 법칙 공통수학2", publisher: "천재교육", grade: "공통수학2", course: "h-cm2", count: 1307 },
@@ -102,7 +99,6 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "개념루트 공통수학2|비상교육", name: "개념루트 공통수학2", publisher: "비상교육", grade: "공통수학2", course: "h-cm2", count: 992 },
   { key: "수매씽 개념 기본서 공통수학2|동아출판", name: "수매씽 개념 기본서 공통수학2", publisher: "동아출판", grade: "공통수학2", course: "h-cm2", count: 978 },
   { key: "우공비Q+Q 기본+표준편 공통수학2|좋은책신사고", name: "우공비Q+Q 기본+표준편 공통수학2", publisher: "좋은책신사고", grade: "공통수학2", course: "h-cm2", count: 942 },
-  { key: "EBS 올림포스 유형편 공통수학2|EBS한국교육방송공사", name: "EBS 올림포스 유형편 공통수학2", publisher: "EBS한국교육방송공사", grade: "공통수학2", course: "h-cm2", count: 933 },
   { key: "개념+유형 개념편 공통수학2|비상교육", name: "개념+유형 개념편 공통수학2", publisher: "비상교육", grade: "공통수학2", course: "h-cm2", count: 896 },
   { key: "쎈B 공통수학2|좋은책신사고", name: "쎈B 공통수학2", publisher: "좋은책신사고", grade: "공통수학2", course: "h-cm2", count: 880 },
   { key: "개념원리 공통수학2|개념원리", name: "개념원리 공통수학2", publisher: "개념원리", grade: "공통수학2", course: "h-cm2", count: 868 },
@@ -117,7 +113,6 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "100발 100중 기출문제집 2학기 중간 공통수학2|에듀원", name: "100발 100중 기출문제집 2학기 중간 공통수학2", publisher: "에듀원", grade: "공통수학2", course: "h-cm2", count: 684 },
   { key: "100발 100중 기출문제집 2학기 기말 공통수학2|에듀원", name: "100발 100중 기출문제집 2학기 기말 공통수학2", publisher: "에듀원", grade: "공통수학2", course: "h-cm2", count: 679 },
   { key: "개념.Zip 공통수학2|천재교육", name: "개념.Zip 공통수학2", publisher: "천재교육", grade: "공통수학2", course: "h-cm2", count: 656 },
-  { key: "1등급 만들기 공통수학2|미래엔", name: "1등급 만들기 공통수학2", publisher: "미래엔", grade: "공통수학2", course: "h-cm2", count: 622 },
   { key: "개념.Zip_개념 확인&내신 대비 공통수학2|천재교육", name: "개념.Zip_개념 확인&내신 대비 공통수학2", publisher: "천재교육", grade: "공통수학2", course: "h-cm2", count: 609 },
   { key: "수학의정석 실력 공통수학2|성지출판", name: "수학의정석 실력 공통수학2", publisher: "성지출판", grade: "공통수학2", course: "h-cm2", count: 596 },
   { key: "Hi High 공통수학2|아름다운샘", name: "Hi High 공통수학2", publisher: "아름다운샘", grade: "공통수학2", course: "h-cm2", count: 572 },
@@ -136,7 +131,6 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "메가스터디 N제 공통수학2|메가스터디북스", name: "메가스터디 N제 공통수학2", publisher: "메가스터디북스", grade: "공통수학2", course: "h-cm2", count: 402 },
   { key: "유형만렙_기출BOOK 공통수학2|비상교육", name: "유형만렙_기출BOOK 공통수학2", publisher: "비상교육", grade: "공통수학2", course: "h-cm2", count: 400 },
   { key: "올림포스 고난도 공통수학2|EBS한국교육방송공사", name: "올림포스 고난도 공통수학2", publisher: "EBS한국교육방송공사", grade: "공통수학2", course: "h-cm2", count: 383 },
-  { key: "EBS 올림포스 공통수학2|EBS한국교육방송공사", name: "EBS 올림포스 공통수학2", publisher: "EBS한국교육방송공사", grade: "공통수학2", course: "h-cm2", count: 320 },
   { key: "수매씽 문제 기본서 대수|동아출판", name: "수매씽 문제 기본서 대수", publisher: "동아출판", grade: "대수", course: "h-dae", count: 2480 },
   { key: "마플시너지 대수|희망에듀", name: "마플시너지 대수", publisher: "희망에듀", grade: "대수", course: "h-dae", count: 2444 },
   { key: "디딤돌수학 개념기본 대수|디딤돌", name: "디딤돌수학 개념기본 대수", publisher: "디딤돌", grade: "대수", course: "h-dae", count: 2347 },
@@ -481,6 +475,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "급속충전 에이급 수학 중등수학1(하)|에이급출판사", name: "급속충전 에이급 수학 중등수학1(하)", publisher: "에이급출판사", grade: "중1-2", course: "m1-2", count: 491 },
   { key: "풍산자 개념완성_워크북 중등수학1(하)|지학사", name: "풍산자 개념완성_워크북 중등수학1(하)", publisher: "지학사", grade: "중1-2", course: "m1-2", count: 469 },
   { key: "우공비Q+Q 발전심화_워크북 중등수학1(하)|좋은책신사고", name: "우공비Q+Q 발전심화_워크북 중등수학1(하)", publisher: "좋은책신사고", grade: "중1-2", course: "m1-2", count: 459 },
+  { key: "교과서 개념잡기_익힘북 중등수학1(하)|비상", name: "교과서 개념잡기_익힘북 중등수학1(하)", publisher: "비상", grade: "중1-2", course: "m1-2", count: 417 },
   { key: "풍산자 필수유형_실전북 중등수학1(하)|지학사", name: "풍산자 필수유형_실전북 중등수학1(하)", publisher: "지학사", grade: "중1-2", course: "m1-2", count: 224 },
   { key: "유형만렙_기출북 중등수학1(하)|비상", name: "유형만렙_기출북 중등수학1(하)", publisher: "비상", grade: "중1-2", course: "m1-2", count: 202 },
   { key: "절대강자 개념_대단원 평가 중등수학1(하)|에듀왕", name: "절대강자 개념_대단원 평가 중등수학1(하)", publisher: "에듀왕", grade: "중1-2", course: "m1-2", count: 192 },

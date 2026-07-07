@@ -3,8 +3,8 @@ export { WB_MATCH_BOOKS } from './wbMatchIndex'
 export type { WbMatchBook } from './wbMatchIndex'
 import { WB_MATCH_BOOKS } from './wbMatchIndex'
 
-// 시중교재 문항 매칭: [원문항번호, 쪽, conceptId(유형), 난이도(1~5)]
-type RawItem = [string, number, string, number]
+// 시중교재 문항 매칭: [원문항번호, 쪽, conceptId(유형), 난이도(1~5), 정답, 형태('C'=객관식/'S'=주관식)]
+type RawItem = [string, number, string, number, string?, string?]
 export type MatchData = Record<string, RawItem[]>
 
 // 과정 라벨('중1-1'·'공통수학1'…) → 파일키('m1-1'·'h-cm1'…)
@@ -32,18 +32,19 @@ export function loadWbMatch(course: string): Promise<MatchData> {
 }
 
 // 매칭 교재 → 문항(WBItem) 파생. id는 workbookId 기준 결정적 → 채점 결과가 재로드/기기 전환에도 유지됨.
+// 정답·형태는 매쓰플랫 교재 API에서 수집(2026-07-07, 667,610문항 100%) — 채점판에 번호+정답 자동 표시용.
 export function deriveWBItems(workbookId: string, matchKey: string, data: MatchData): WBItem[] {
   const raw = data[matchKey]
   if (!raw) return []
-  return raw.map(([label, page, cid, lv], i) => ({
+  return raw.map(([label, page, cid, lv, ans, kd], i) => ({
     id: `${workbookId}#${i}`,
     workbookId,
     page,
     no: i + 1,
     label,
     typeId: cid,
-    kind: '주관식',
-    answer: '',
+    kind: kd === 'C' ? '객관식' : '주관식',
+    answer: ans ?? '',
     diff: (lv >= 1 && lv <= 5 ? lv : 3) as WBItem['diff'],
   }))
 }
