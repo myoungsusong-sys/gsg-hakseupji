@@ -13,9 +13,13 @@ const LEVELS = ['전체', '초', '중', '고'] as const
 const TABS = ['내 교재', '시그니처 교재', '시중교재', '교과서'] as const
 type Tab = typeof TABS[number]
 
-// 학년 표기: "중1-1" → "중 1-1" (두 번째 줄에 개정 표기)
+// 2차 필터 (매쓰플랫 동일): 중=학년·학기 드롭다운, 고=과목 드롭다운
+const MID_TERMS = ['중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2']
+const HIGH_SUBJECTS = ['공통수학1', '공통수학2', '대수', '미적분Ⅰ', '확률과 통계', '미적분Ⅱ', '기하']
+
+// 학년 표기 (매쓰플랫 동일): 중등 "중 1-1", 고등은 과목명 그대로
 function gradeLabel(grade: string): string {
-  return grade.startsWith('중') ? `중 ${grade.slice(1)}` : `고 ${grade}`
+  return grade.startsWith('중') ? `중 ${grade.slice(1)}` : grade
 }
 
 export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string }
@@ -27,6 +31,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
   onAdd: (books: CatalogBook[]) => void
 }) {
   const [level, setLevel] = useState<typeof LEVELS[number]>('전체')
+  const [sub, setSub] = useState('전체')   // 2차 필터: 학년·학기(중) / 과목(고)
   const [tab, setTab] = useState<Tab>('시중교재')
   const [q, setQ] = useState('')
   const [checked, setChecked] = useState<Set<string>>(new Set())
@@ -42,13 +47,20 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
       if (level === '초') return false   // 초등 데이터 없음
       if (level === '중' && !b.grade.startsWith('중')) return false
       if (level === '고' && b.grade.startsWith('중')) return false
+      if (sub !== '전체' && b.grade !== sub) return false   // 2차 필터(학년·학기/과목)
       if (kw && !b.name.toLowerCase().includes(kw)) return false
       return true
     })
-    // 학생 학년과 같은 과정 우선 (stable sort)
-    if (defaultGrade) return [...list].sort((a, b) => (a.grade === defaultGrade ? 0 : 1) - (b.grade === defaultGrade ? 0 : 1))
-    return list
-  }, [tab, level, q, defaultGrade])
+    // 매쓰플랫 동일 정렬: ① 이미 배정된 교재 최상단 고정 ② 과정 오름차순(중1-1→…→기하) ③ 교재명순
+    return [...list].sort((a, b) => {
+      const aHas = existingKeys.has(a.key) ? 0 : 1
+      const bHas = existingKeys.has(b.key) ? 0 : 1
+      if (aHas !== bHas) return aHas - bHas
+      const ac = COURSES.indexOf(a.grade), bc = COURSES.indexOf(b.grade)
+      if (ac !== bc) return ac - bc
+      return a.name.localeCompare(b.name, 'ko')
+    })
+  }, [tab, level, sub, q, existingKeys])
 
   function toggle(key: string) {
     setChecked(prev => {
@@ -83,11 +95,21 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
         {/* 필터: 학교급 칩 + 검색 */}
         <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
           {LEVELS.map(l => (
-            <button key={l} onClick={() => setLevel(l)}
+            <button key={l} onClick={() => { setLevel(l); setSub('전체') }}
               className={`rounded-full px-3 py-1 text-xs font-bold ${level === l ? 'bg-pine text-paper' : 'border border-line text-ink2 hover:bg-paper2'}`}>
               {l}
             </button>
           ))}
+          {/* 2차 드롭다운 (매쓰플랫 동일): 중=학년·학기, 고=과목 전체 */}
+          {(level === '중' || level === '고') && (
+            <select value={sub} onChange={e => setSub(e.target.value)}
+              className="rounded-lg border border-line px-2 py-1.5 text-xs font-semibold text-ink">
+              <option value="전체">{level === '중' ? '학년·학기' : '과목 전체'}</option>
+              {(level === '중' ? MID_TERMS : HIGH_SUBJECTS).map(s => (
+                <option key={s} value={s}>{s}(22개정)</option>
+              ))}
+            </select>
+          )}
           <div className="grow" />
           <input value={q} onChange={e => setQ(e.target.value)} placeholder="교재명 검색"
             className="w-56 rounded-lg border border-line px-3 py-1.5 text-sm" autoFocus />
