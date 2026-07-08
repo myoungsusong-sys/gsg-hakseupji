@@ -143,8 +143,9 @@ export interface Student {
 }
 
 export interface GradeResult {
-  itemId?: string        // 교재 채점: WBItem id
-  typeId?: string        // 학습지 채점: 유형 직접 기록 (itemId 없을 때)
+  itemId?: string        // 문항 식별자 — 교재 채점: WBItem id · 학습지 채점: Problem id
+                         //   (구버전 학습지 기록은 없음 → results 순서 = ws.problemIds 순서로 해석)
+  typeId?: string        // 학습지 채점: 유형 직접 기록
   studentAnswer?: string
   correct: boolean
   unknown?: boolean      // '모름' — 집계는 오답과 동일, 표시만 구분

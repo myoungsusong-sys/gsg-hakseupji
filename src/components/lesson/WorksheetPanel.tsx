@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Assignment, Diff, GradeResult, Grading, Problem, Student, Worksheet } from '../../types'
 import { DIFF_LABEL } from '../../types'
-import { useStore } from '../../lib/store'
-import { dateKey } from '../../lib/dates'
-import { normAnswer } from '../../lib/answers'
+import { useStore, uid } from '../../lib/store'
+import { dateKey, todayKey } from '../../lib/dates'
 import { typeName } from '../../data/curriculum'
+import MathText from '../MathText'
 import ProblemContent from '../ProblemContent'
 import VideoModal from '../VideoModal'
 import WorksheetOutputDialog from '../WorksheetOutputDialog'
@@ -111,7 +111,8 @@ export default function WorksheetPanel({ student }: { student: Student }) {
     const wrongs: DrillWrong[] = []
     g.results.forEach((r, i) => {
       if (r.correct) return
-      const pid = ws.problemIds[i]
+      // 신규 기록은 itemId=문제 id (마킹된 문항만 기록) · 구버전 기록은 순서=problemIds 순서
+      const pid = r.itemId ?? ws.problemIds[i]
       const p = pid ? problemMap.get(pid) : undefined
       const typeId = r.typeId ?? p?.typeId
       if (typeId) wrongs.push({ typeId, diff: p?.diff, problemId: pid })
@@ -360,154 +361,302 @@ function MenuItem({ children, onClick, danger }: { children: React.ReactNode; on
   )
 }
 
-// ── 자동채점 화면 — 문제 렌더 + 답 입력 → 채점 저장 ──────────────────────────────
+// ── 학습지 채점 화면 — 매쓰플랫 group-scoring 동일: 선생님이 정답을 보며 문항별 ○/✕/? 마킹 ──
+// (구버전의 "학생이 답을 입력하는" UI는 학생앱용으로 src/components/student/AnswerInput.tsx에 보존)
+// 채점 상호작용·실시간 자동 저장은 교재 채점(GradePanel)과 통일:
+//  · 셀 클릭 순환: 미채점 → ✕(오답) → ?(모름) → ○(정답) → 미채점
+//  · 저장은 "마킹된 문항만" 기록 (itemId=문제 id) — 미채점 = 기록 없음
+//  · 같은 학습지·같은 날 기록은 한 건에 덮어쓰기(upsert), 재방문 시 최신 기록 프리필
+type SheetMark = '정답' | '오답' | '모름'
+const SHEET_NEXT: Record<SheetMark, SheetMark | null> = { 오답: '모름', 모름: '정답', 정답: null }
+const SHEET_ICON: Record<SheetMark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
+const SHEET_MARK_CLASS: Record<SheetMark, string> = { 정답: 'text-pine', 오답: 'text-clay', 모름: 'text-amber' }
+// 행 배경: 정답=연파랑(pine-soft) · 오답=연분홍 · 모름=연노랑 · 미채점=흰색 (GradePanel과 동일 팔레트)
+const SHEET_ROW_CLASS: Record<SheetMark, string> = {
+  정답: 'bg-pine-soft/40',
+  오답: 'bg-red-50',
+  모름: 'bg-amber-soft/50',
+}
+
 const isImgAnswer = (a: string) => /^https?:\/\/\S+\.(png|jpe?g|gif|webp)/i.test(a)
 
+// 좌열 정답 표시 — 객관식 숫자→①~⑤, 이미지 정답→이미지, 수식(LaTeX)→KaTeX, 그 외 원문
+function SheetAnswer({ p }: { p: Problem }) {
+  const a = p.answer?.trim() ?? ''
+  if (!a || ['.', '-'].includes(a)) return <span className="text-ink2/70">풀이참조</span>
+  if (isImgAnswer(a)) return <img src={a} alt="정답" className="max-h-14 w-auto" />
+  if (p.kind === '객관식') {
+    const t = a.split(',').map(s => {
+      const raw = s.trim()
+      const idx = CIRCLED.indexOf(raw)
+      const n = idx >= 0 ? idx + 1 : Number(raw)
+      return n >= 1 && n <= 5 ? CIRCLED[n - 1] : raw
+    }).join(', ')
+    return <b>{t}</b>
+  }
+  if (a.includes('$')) return <MathText text={a} />
+  if (/[\\{}^_]/.test(a)) return <MathText text={`$${a}$`} />
+  return <b>{a}</b>
+}
+
 function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
-  const { problems, saveGrading } = useStore()
+  const { problems, gradings, upsertGrading } = useStore()
   const list = useMemo(() => {
     const m = new Map(problems.map(p => [p.id, p]))
     return ws.problemIds.map(id => m.get(id)).filter((p): p is Problem => !!p)
   }, [problems, ws.problemIds])
 
-  const [answers, setAnswers] = useState<Record<string, string>>({})
-  const [result, setResult] = useState<{
-    correct: number
-    total: number
-    wrongs: DrillWrong[]
-    marks: Record<string, boolean>
-  } | null>(null)
+  const [marks, setMarks] = useState<Record<string, SheetMark>>({})
+  // 연타 유실 방지: 같은 틱에 여러 셀을 클릭해도 항상 최신 marks 위에서 갱신 (GradePanel 동일)
+  const marksRef = useRef(marks)
+  const [hideAnswers, setHideAnswers] = useState(false)
+  const [openBody, setOpenBody] = useState<Set<string>>(new Set())   // 「문제 보기」 펼친 문항
   const [drillOpen, setDrillOpen] = useState(false)
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
+  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
+  const [savedAt, setSavedAt] = useState('')
 
-  function setAnswer(pid: string, v: string) {
-    setAnswers(prev => ({ ...prev, [pid]: v }))
+  // ── 실시간 자동 저장 (교재 채점과 동일 패턴: 0.9초 디바운스 upsert) ──
+  const pendingRef = useRef<Grading | null>(null)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const gidRef = useRef<string | null>(null)
+  const gradingsRef = useRef(gradings)
+  gradingsRef.current = gradings
+
+  function flushSave() {
+    if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null }
+    const g = pendingRef.current
+    if (!g) return
+    pendingRef.current = null
+    upsertGrading(g)
+    setSaveState('saved')
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+  const flushRef = useRef(flushSave)
+  flushRef.current = flushSave
+
+  function queueSave(next: Record<string, SheetMark>) {
+    if (list.length === 0) return
+    // ★ 마킹된 문항만 기록 — itemId=문제 id (미채점 문항은 결과에 넣지 않는다)
+    const results: GradeResult[] = list
+      .filter(p => next[p.id] != null)
+      .map(p => {
+        const m = next[p.id]!
+        return { itemId: p.id, typeId: p.typeId, correct: m === '정답', unknown: m === '모름' || undefined }
+      })
+    const today = todayKey()
+    const exist = gradingsRef.current.find(g =>
+      g.studentId === student.id && g.source === '학습지' && g.worksheetId === ws.id && dateKey(g.date) === today)
+    // 아무것도 마킹돼 있지 않고 기존 기록도 없으면 빈 기록을 만들지 않는다
+    if (results.length === 0 && !exist && !gidRef.current) return
+    const id = exist?.id ?? gidRef.current ?? uid('gr')
+    gidRef.current = id
+    pendingRef.current = {
+      id, studentId: student.id, source: '학습지', worksheetId: ws.id,
+      date: new Date().toISOString(), results,
+    }
+    setSaveState('saving')
+    if (timerRef.current) clearTimeout(timerRef.current)
+    timerRef.current = setTimeout(() => flushRef.current(), 900)
   }
 
-  function grade() {
-    if (list.length === 0) {
-      alert('채점할 문제가 없습니다.')
-      return
+  // 진입 시 최신 채점 기록 프리필 — 신규 기록은 itemId 기준, 구버전(전문항 저장)은 순서 기준
+  useEffect(() => {
+    gidRef.current = null
+    let latest: Grading | undefined
+    for (const g of gradingsRef.current) {
+      if (g.studentId !== student.id || g.source !== '학습지' || g.worksheetId !== ws.id) continue
+      if (!latest || g.date > latest.date) latest = g
     }
-    const results: GradeResult[] = []
-    const wrongs: DrillWrong[] = []
-    const marks: Record<string, boolean> = {}
-    for (const p of list) {
-      const studentAnswer = answers[p.id] ?? ''
-      // 답이 이미지(서술형 등)인 문항은 텍스트 대조 불가 → 선생님 ○/✕ 수동 마크
-      const correct = isImgAnswer(p.answer)
-        ? studentAnswer === '○'
-        : normAnswer(studentAnswer) !== '' && normAnswer(studentAnswer) === normAnswer(p.answer)
-      results.push({ typeId: p.typeId, studentAnswer, correct })
-      marks[p.id] = correct
-      if (!correct) wrongs.push({ typeId: p.typeId, diff: p.diff, problemId: p.id })
-    }
-    saveGrading({
-      studentId: student.id,
-      source: '학습지',
-      worksheetId: ws.id,
-      date: new Date().toISOString(),
-      results,
+    const seeded: Record<string, SheetMark> = {}
+    latest?.results.forEach((r, i) => {
+      const pid = r.itemId ?? ws.problemIds[i]
+      if (!pid) return
+      seeded[pid] = r.unknown ? '모름' : r.correct ? '정답' : '오답'
     })
-    setResult({ correct: results.filter(r => r.correct).length, total: results.length, wrongs, marks })
+    marksRef.current = seeded
+    setMarks(seeded)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws.id, student.id])
+
+  // 목록 복귀·언마운트 시 대기분 저장
+  useEffect(() => () => flushRef.current(), [])
+
+  // marks 갱신은 반드시 이 함수를 통해서 — ref 동기 갱신으로 연타 유실 없음
+  function applyMarks(mutate: (prev: Record<string, SheetMark>) => Record<string, SheetMark>) {
+    const next = mutate(marksRef.current)
+    marksRef.current = next
+    setMarks(next)
+    queueSave(next)
   }
+  function cycle(pid: string) {
+    applyMarks(prev => {
+      const cur = prev[pid]
+      const next = { ...prev }
+      if (!cur) next[pid] = '오답'                       // 미채점 → 첫 클릭은 오답 (오답 위주 채점)
+      else if (SHEET_NEXT[cur]) next[pid] = SHEET_NEXT[cur]!
+      else delete next[pid]                              // 정답 → 미채점 (마킹 해제)
+      return next
+    })
+  }
+  function setAll(m: SheetMark) {
+    applyMarks(prev => {
+      const next = { ...prev }
+      for (const p of list) next[p.id] = m
+      return next
+    })
+  }
+  function clearAll() {   // 전체 취소 — 전 문항 미채점 (기록에서도 제거)
+    applyMarks(prev => {
+      const next = { ...prev }
+      for (const p of list) delete next[p.id]
+      return next
+    })
+  }
+  function toggleBody(pid: string) {
+    setOpenBody(prev => { const n = new Set(prev); if (n.has(pid)) n.delete(pid); else n.add(pid); return n })
+  }
+
+  // 실시간 요약 — 마킹된 문항 기준 (점수 = 정답/마킹수)
+  const live = useMemo(() => {
+    let marked = 0, correct = 0, wrong = 0, unknown = 0
+    const wrongs: DrillWrong[] = []
+    for (const p of list) {
+      const m = marks[p.id]
+      if (!m) continue
+      marked++
+      if (m === '정답') correct++
+      else {
+        if (m === '모름') unknown++
+        else wrong++
+        wrongs.push({ typeId: p.typeId, diff: p.diff, problemId: p.id })   // 원문제 id 보존 → 드릴 "원문제 포함"
+      }
+    }
+    return { marked, correct, wrong, unknown, wrongs }
+  }, [list, marks])
+  const score = live.marked > 0 ? Math.round(live.correct / live.marked * 100) : null
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap items-center gap-3">
+      {/* 헤더: ← 학습지명 (매쓰플랫 group-scoring 헤더) */}
+      <div className="mb-3 flex flex-wrap items-center gap-3">
         <button onClick={onBack} className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">← 목록</button>
         <div>
           <div className="font-black">{ws.title}</div>
-          <div className="text-xs text-ink2">{student.name} · {list.length}문제 자동채점</div>
+          <div className="text-xs text-ink2">{list.length}문제 · 선생님 채점 (셀 클릭: ✕ → ? → ○ → 해제)</div>
         </div>
         <div className="grow" />
-        <button onClick={grade} className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper hover:brightness-110">
-          자동 채점 저장
+        {/* 학생 이름 + 점수 (실시간, 마킹 기준) */}
+        <div className="rounded-xl border border-line bg-white px-4 py-2 text-right">
+          <div className="text-xs font-semibold text-ink2">{student.name}</div>
+          <div className={`text-lg font-black ${score != null ? 'text-pine-dark' : 'text-ink2/50'}`}>
+            {score != null ? `${score}점` : '미채점'}
+          </div>
+        </div>
+      </div>
+
+      {/* 자동 저장 안내 + 요약 + 일괄 채점 버튼 (교재 채점과 동일) */}
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+        <span className="text-xs text-ink2">
+          채점 기록은 실시간으로 자동 저장됩니다.
+          {saveState === 'saving' && <span className="ml-2 text-amber">저장 중…</span>}
+          {saveState === 'saved' && <span className="ml-2 text-pine">✓ 저장됨 {savedAt}</span>}
+        </span>
+        {list.length > 0 && (
+          <span className="text-xs font-semibold">
+            채점 {live.marked}/{list.length}문항 · <b className="text-pine">정답 {live.correct}</b> · <b className="text-clay">오답 {live.wrong}</b> · <b className="text-amber">모름 {live.unknown}</b>
+          </span>
+        )}
+        <div className="grow" />
+        {(['정답', '오답', '모름'] as const).map(m => (
+          <button key={m} onClick={() => setAll(m)} disabled={list.length === 0}
+            className="rounded-lg border border-line px-3 py-2 text-xs font-semibold text-ink2 hover:bg-paper2 disabled:opacity-40">
+            전체 {m}
+          </button>
+        ))}
+        <button onClick={clearAll} disabled={list.length === 0}
+          className="rounded-lg border border-line px-3 py-2 text-xs font-semibold text-ink2 hover:bg-paper2 disabled:opacity-40">
+          전체 취소
         </button>
       </div>
 
-      {result && (
-        <div className="mb-4 flex flex-wrap items-center gap-3 rounded-xl bg-pine-soft/50 p-4 text-sm">
-          <span>
-            ✅ 채점 저장됨 — <b>{result.total}문제 중 {result.correct}개 정답</b>
-            (<b className="text-pine-dark">{Math.round(result.correct / result.total * 100)}점</b>)
-          </span>
-          <div className="grow" />
-          {result.wrongs.length > 0 && (
-            <button onClick={() => setDrillOpen(true)}
-              className="rounded-lg bg-amber px-4 py-2 font-bold text-white hover:brightness-105">
-              오답 {result.wrongs.length}문제로 오답 학습지 만들기
+      {/* 채점판: 좌 정답 패널 + 우 ○/✕ 셀 (매쓰플랫 2열을 한 행에 통합 — 학생 1명) */}
+      {list.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+          이 학습지의 문제를 문제은행에서 찾을 수 없습니다.
+        </div>
+      ) : (
+        <div className="overflow-hidden rounded-2xl border border-line bg-white">
+          <div className="flex items-center gap-3 border-b border-line bg-paper2/60 px-4 py-2 text-[11px] font-bold text-ink2">
+            <span className="w-11 shrink-0">번호</span>
+            <span className="grow">정답</span>
+            <button onClick={() => setHideAnswers(v => !v)}
+              className="rounded border border-line bg-white px-2 py-0.5 font-semibold hover:bg-paper2">
+              {hideAnswers ? '정답 보이기' : '정답 숨기기'}
             </button>
-          )}
+            <span className="w-20 shrink-0 text-center">채점</span>
+          </div>
+          {list.map((p, i) => {
+            const m = marks[p.id]
+            const open = openBody.has(p.id)
+            return (
+              <div key={p.id} className={`border-b border-line/50 transition-colors last:border-0 ${m ? SHEET_ROW_CLASS[m] : 'bg-white'}`}>
+                <div className="flex items-center gap-3 px-4 py-1.5">
+                  <b className="w-11 shrink-0 text-sm">{i + 1}번</b>
+                  <div className="min-w-0 grow py-1 text-sm">
+                    {hideAnswers ? <span className="tracking-widest text-ink2/40">•••</span> : <SheetAnswer p={p} />}
+                    <div className="text-[10px] text-ink2/80">{typeName(p.typeId)}</div>
+                  </div>
+                  {p.videoUrl && (
+                    <button onClick={() => setVideo({ src: p.videoUrl!, subtitle: p.subtitleUrl, title: `${i + 1}번 풀이영상` })}
+                      title="풀이영상"
+                      className="shrink-0 rounded-full border border-pine px-2 py-0.5 text-[11px] font-bold text-pine hover:bg-pine-soft">
+                      ▶
+                    </button>
+                  )}
+                  <button onClick={() => toggleBody(p.id)}
+                    className="shrink-0 rounded border border-line bg-white/70 px-2 py-0.5 text-[11px] font-semibold text-ink2 hover:bg-paper2">
+                    {open ? '문제 접기' : '문제 보기'}
+                  </button>
+                  {/* ○/✕ 토글 셀 */}
+                  <button onClick={() => cycle(p.id)} aria-label={`${i + 1}번 채점`}
+                    className="flex h-9 w-20 shrink-0 items-center justify-center rounded-lg border border-line/70 bg-white/60 hover:border-pine">
+                    <span className={`text-xl font-black leading-none ${m ? SHEET_MARK_CLASS[m] : 'text-ink2/25'}`}>
+                      {m ? SHEET_ICON[m] : '○'}
+                    </span>
+                  </button>
+                </div>
+                {/* 문제 원문 (기본 접힘 — 채점 속도 우선) */}
+                {open && (
+                  <div className="border-t border-line/40 bg-white px-4 py-3 pl-[3.75rem]">
+                    <ProblemContent p={p} />
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </div>
       )}
 
-      <div className="grid gap-3">
-        {list.map((p, i) => {
-          const mark = result?.marks[p.id]
-          return (
-            <div key={p.id} className={`rounded-2xl border bg-white p-5 ${result ? (mark ? 'border-pine' : 'border-clay') : 'border-line'}`}>
-              <div className="mb-2 flex items-center gap-2 text-xs text-ink2">
-                <b className="text-sm text-ink">{i + 1}.</b>
-                <span>{typeName(p.typeId)}</span>
-                {p.videoUrl && (
-                  <button onClick={() => setVideo({ src: p.videoUrl!, subtitle: p.subtitleUrl, title: `${i + 1}번 풀이영상` })}
-                    className="rounded-full border border-pine px-2 py-0.5 text-[11px] font-bold text-pine hover:bg-pine-soft">
-                    ▶ 풀이영상
-                  </button>
-                )}
-                {result && (
-                  <span className={`ml-auto text-lg font-black ${mark ? 'text-pine' : 'text-clay'}`}>
-                    {mark ? '○' : '✕'}
-                  </span>
-                )}
-              </div>
-              <ProblemContent p={p} />
-              <div className="mt-3 flex items-center gap-2">
-                {p.kind === '객관식' ? (
-                  <div className="flex gap-1.5">
-                    {CIRCLED.map(c => (
-                      <button key={c} type="button"
-                        onClick={() => setAnswer(p.id, answers[p.id] === c ? '' : c)}
-                        className={`h-9 w-9 rounded-full border text-base font-bold ${answers[p.id] === c ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
-                        {c}
-                      </button>
-                    ))}
-                  </div>
-                ) : isImgAnswer(p.answer) ? (
-                  <div className="flex flex-wrap items-center gap-3">
-                    <div className="rounded-lg border border-line bg-paper2/60 p-2">
-                      <div className="mb-1 text-[10px] text-ink2">정답 (이미지) — 학생 답과 대조 후 표시</div>
-                      <img src={p.answer} alt="정답" className="max-h-16 w-auto" />
-                    </div>
-                    {(['○', '✕'] as const).map(m2 => (
-                      <button key={m2} type="button" onClick={() => setAnswer(p.id, answers[p.id] === m2 ? '' : m2)}
-                        className={`h-9 w-9 rounded-full border text-base font-black ${answers[p.id] === m2 ? (m2 === '○' ? 'border-pine bg-pine text-paper' : 'border-clay bg-clay text-white') : 'border-line bg-white text-ink hover:bg-paper2'}`}>
-                        {m2}
-                      </button>
-                    ))}
-                  </div>
-                ) : (
-                  <input value={answers[p.id] ?? ''} onChange={e => setAnswer(p.id, e.target.value)}
-                    placeholder="답 입력"
-                    className="w-56 rounded-lg border border-line px-3 py-2 text-sm" />
-                )}
-                {result && !mark && !isImgAnswer(p.answer) && (
-                  <span className="text-xs text-ink2">정답 <b className="text-pine-dark">{p.answer}</b></span>
-                )}
-              </div>
-            </div>
-          )
-        })}
-        {list.length === 0 && (
-          <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
-            이 학습지의 문제를 문제은행에서 찾을 수 없습니다.
-          </div>
-        )}
+      {/* 하단 고정: [오답학습지 만들기] (매쓰플랫 동일 — 오답·모름 ≥1이면 활성) */}
+      <div className="h-20" />
+      <div className="fixed inset-x-0 bottom-0 z-30">
+        <div className="mx-auto flex max-w-4xl items-center gap-3 rounded-t-2xl border border-b-0 border-line bg-white px-6 py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
+          <span className="text-xs text-ink2">
+            {live.wrongs.length > 0
+              ? <>오답·모름 <b className="text-clay">{live.wrongs.length}문제</b></>
+              : '오답·모름으로 마킹된 문항이 없습니다'}
+          </span>
+          <div className="grow" />
+          <button onClick={() => setDrillOpen(true)} disabled={live.wrongs.length === 0}
+            className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-40">
+            오답학습지 만들기
+          </button>
+        </div>
       </div>
 
-      {drillOpen && result && (
-        <DrillModal student={student} title={`[오답] ${ws.title}`} wrongs={result.wrongs} onClose={() => setDrillOpen(false)} />
+      {drillOpen && live.wrongs.length > 0 && (
+        <DrillModal student={student} title={`[오답] ${ws.title}`} wrongs={live.wrongs} onClose={() => setDrillOpen(false)} />
       )}
       {video && <VideoModal src={video.src} subtitle={video.subtitle} title={video.title} onClose={() => setVideo(null)} />}
     </div>

@@ -50,7 +50,8 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
       g.results.forEach((r, i) => {
         if (r.correct) return
         if (isSheet) {
-          const pid = ws?.problemIds[i]
+          // 신규 기록은 itemId=문제 id (마킹된 문항만 기록) · 구버전 기록은 순서=problemIds 순서
+          const pid = r.itemId ?? ws?.problemIds[i]
           const p = pid ? problemMap.get(pid) : undefined
           const typeId = r.typeId ?? p?.typeId
           if (typeId) sheet.push({ typeId, diff: p?.diff, problemId: pid })
@@ -80,7 +81,7 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
       const wrongs: DrillWrong[] = []
       g.results.forEach((r, i) => {
         if (r.correct) return
-        const pid = ws.problemIds[i]
+        const pid = r.itemId ?? ws.problemIds[i]   // 신규=itemId(문제 id), 구버전=순서
         const p = pid ? problemMap.get(pid) : undefined
         const typeId = r.typeId ?? p?.typeId
         if (typeId) wrongs.push({ typeId, diff: p?.diff, problemId: pid })

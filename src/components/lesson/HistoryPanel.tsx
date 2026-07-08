@@ -114,8 +114,9 @@ export default function HistoryPanel({ student }: { student: Student }) {
       const ws = g.worksheetId ? wsMap.get(g.worksheetId) : undefined
       g.results.forEach((r, i) => {
         let d: Diff = 3
-        if (r.itemId) d = itemMap.get(r.itemId)?.diff ?? 3
-        else if (ws) d = pMap.get(ws.problemIds[i] ?? '')?.diff ?? 3
+        // 학습지 채점의 itemId는 문제 id (신규 기록) — 교재(WBItem)보다 먼저 학습지로 분기
+        if (ws) d = pMap.get(r.itemId ?? ws.problemIds[i] ?? '')?.diff ?? 3
+        else if (r.itemId) d = itemMap.get(r.itemId)?.diff ?? 3
         acc[d].count++
         if (r.correct) acc[d].correct++
       })

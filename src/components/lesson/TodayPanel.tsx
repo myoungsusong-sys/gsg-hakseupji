@@ -116,7 +116,7 @@ export default function TodayPanel({ student }: { student: Student }) {
       const used = new Set(picked.map(p => p.id))
       const reviewPicked: Problem[] = []
       if (mode === 'same' || mode === 'both') {
-        // 최근 7일 학습지 채점에서 틀린 원문제 그대로 (results 순서 = problemIds 순서)
+        // 최근 7일 학습지 채점에서 틀린 원문제 그대로 (신규 기록=itemId(문제 id), 구버전=results 순서=problemIds 순서)
         const pMap = new Map(problems.map(p => [p.id, p]))
         for (const g of recent) {
           if (g.studentId !== student.id || !g.worksheetId) continue
@@ -124,7 +124,7 @@ export default function TodayPanel({ student }: { student: Student }) {
           if (!ws) continue
           g.results.forEach((r, i) => {
             if (r.correct) return
-            const p = pMap.get(ws.problemIds[i] ?? '')
+            const p = pMap.get(r.itemId ?? ws.problemIds[i] ?? '')
             if (p && !used.has(p.id)) { used.add(p.id); reviewPicked.push(p) }
           })
         }
