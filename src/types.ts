@@ -102,6 +102,7 @@ export interface Workbook {
   publisher: string     // 예: 좋은책신사고
   grade: string
   matchKey?: string     // 시중교재 매칭표 키 → 문항·유형이 자동 파생됨 (문항은 저장하지 않음)
+  studentId?: string    // 배정된 학생 (없으면 공용 라이브러리 — 채점판엔 학생 배정분만 표시)
 }
 
 export interface WBItem {

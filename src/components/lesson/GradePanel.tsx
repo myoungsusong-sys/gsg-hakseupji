@@ -59,17 +59,19 @@ const CARD_CLASS: Record<Mark, string> = {
 
 export default function GradePanel({ student }: { student: Student }) {
   const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems } = useStore()
-  const [wbId, setWbId] = useState<string | null>(workbooks[0]?.id ?? null)
+  // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 = 배정분)
+  const myBooks = useMemo(() => workbooks.filter(w => w.studentId === student.id), [workbooks, student.id])
+  const [wbId, setWbId] = useState<string | null>(myBooks[0]?.id ?? null)
   const [bookDlg, setBookDlg] = useState(false)
   const [catalog, setCatalog] = useState(false)
   const [bulk, setBulk] = useState(false)
   const [menu, setMenu] = useState(false)
 
-  // 교재가 삭제되거나 처음 등록되면 선택 보정
+  // 학생 전환·교재 추가/삭제 시 선택 보정 (다른 학생 교재가 선택돼 있지 않도록)
   useEffect(() => {
-    if (!workbooks.some(w => w.id === wbId)) setWbId(workbooks[0]?.id ?? null)
-  }, [workbooks, wbId])
-  const wb = workbooks.find(w => w.id === wbId) ?? null
+    if (!myBooks.some(w => w.id === wbId)) setWbId(myBooks[0]?.id ?? null)
+  }, [myBooks, wbId])
+  const wb = myBooks.find(w => w.id === wbId) ?? null
 
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === wbId).sort((a, b) => a.page - b.page || a.no - b.no),
@@ -293,16 +295,17 @@ export default function GradePanel({ student }: { student: Student }) {
     if (pages.length) { setFrom(pages[0][0]); setTo(pages[0][0]) }
   }
 
+  // 이 학생에게 이미 배정된 교재의 matchKey (중복 등록 방지)
   const existingKeys = useMemo(
-    () => new Set(workbooks.map(w => w.matchKey).filter((k): k is string => !!k)),
-    [workbooks],
+    () => new Set(myBooks.map(w => w.matchKey).filter((k): k is string => !!k)),
+    [myBooks],
   )
 
-  // ── 등록된 교재가 없을 때 ──
-  if (workbooks.length === 0 || !wb) {
+  // ── 이 학생에게 배정된 교재가 없을 때 ──
+  if (myBooks.length === 0 || !wb) {
     return (
       <div className="rounded-2xl border border-dashed border-line bg-white/60 p-16 text-center">
-        <p className="mb-4 text-sm text-ink2">아직 등록된 교재가 없습니다. 시중교재를 등록하면 문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.</p>
+        <p className="mb-4 text-sm text-ink2"><b>{student.name}</b> 학생에게 배정된 교재가 없습니다. 시중교재를 등록하면 문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.</p>
         <button onClick={() => setCatalog(true)}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper">＋ 교재 등록</button>
         {catalog && (
@@ -310,7 +313,7 @@ export default function GradePanel({ student }: { student: Student }) {
             onClose={() => setCatalog(false)}
             onAdd={books => {
               let last: string | null = null
-              for (const b of books) last = addWorkbook(b)
+              for (const b of books) last = addWorkbook({ ...b, studentId: student.id })
               if (last) setWbId(last)
               setCatalog(false)
             }} />
@@ -506,7 +509,7 @@ export default function GradePanel({ student }: { student: Student }) {
           onClose={() => setCatalog(false)}
           onAdd={books => {
             let last: string | null = null
-            for (const b of books) last = addWorkbook(b)
+            for (const b of books) last = addWorkbook({ ...b, studentId: student.id })
             if (last) setWbId(last)
             setCatalog(false)
           }} />

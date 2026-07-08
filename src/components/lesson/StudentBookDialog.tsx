@@ -18,8 +18,10 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
   const [tab, setTab] = useState<Tab>('전체')
   const [catalog, setCatalog] = useState(false)
 
+  // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 다이얼로그)
+  const myBooks = useMemo(() => workbooks.filter(w => w.studentId === student.id), [workbooks, student.id])
   const rows = useMemo(() => {
-    return [...workbooks]
+    return [...myBooks]
       // 학생 학년과 같은 과정 우선 (stable sort)
       .sort((a, b) => (a.grade === student.grade ? 0 : 1) - (b.grade === student.grade ? 0 : 1))
       .map(w => {
@@ -27,7 +29,7 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
         const last = gradings.find(g => g.studentId === student.id && g.workbookId === w.id && g.pageTo != null)
         return { w, progress: last?.pageTo != null ? `${last.pageTo}p` : '-' }
       })
-  }, [workbooks, gradings, student.id, student.grade])
+  }, [myBooks, gradings, student.id, student.grade])
 
   // 시중교재 = 쌍둥이 매칭키 보유 · 내 교재 = 직접 입력 (시그니처·교과서는 데이터 없음)
   const visible = useMemo(() => {
@@ -40,8 +42,8 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
   const isMarket = tab === '시중교재'
 
   const existingKeys = useMemo(
-    () => new Set(workbooks.map(w => w.matchKey).filter((k): k is string => !!k)),
-    [workbooks],
+    () => new Set(myBooks.map(w => w.matchKey).filter((k): k is string => !!k)),
+    [myBooks],
   )
 
   function cancelIssue() {
@@ -128,7 +130,7 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
             onClose={() => setCatalog(false)}
             onAdd={books => {
               let last: string | null = null
-              for (const b of books) last = addWorkbook(b)
+              for (const b of books) last = addWorkbook({ ...b, studentId: student.id })
               if (last) setSelId(last)   // 마지막 교재 자동 선택
               setCatalog(false)
             }} />

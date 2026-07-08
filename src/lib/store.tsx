@@ -163,6 +163,29 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [state.students, state.worksheets, state.workbooks])
   const poolProblems = useMemo(() => Object.values(pools).flat(), [pools])
 
+  // 1회 마이그레이션: studentId 없는 옛 교재를 채점 기록으로 학생에게 귀속
+  // (교재가 학생별로 안 나뉘어 채점판에 모든 학생 교재가 섞여 나오던 문제 해결)
+  const migratedRef = useRef(false)
+  useEffect(() => {
+    if (!synced || migratedRef.current) return
+    const orphans = state.workbooks.filter(w => !w.studentId)
+    if (orphans.length === 0) { migratedRef.current = true; return }
+    const updates: Workbook[] = []
+    for (const wb of orphans) {
+      const counts = new Map<string, number>()
+      for (const g of state.gradings) if (g.workbookId === wb.id) counts.set(g.studentId, (counts.get(g.studentId) ?? 0) + 1)
+      if (counts.size === 0) continue   // 미채점 교재 → 귀속 불가, 그대로 둠(채점판엔 안 보임)
+      const owner = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0]
+      updates.push({ ...wb, studentId: owner })
+    }
+    migratedRef.current = true
+    if (updates.length) {
+      setState(s => ({ ...s, workbooks: s.workbooks.map(w => updates.find(u => u.id === w.id) ?? w) }))
+      for (const u of updates) cloud.upsert(cloud.T.workbooks, u.id, u)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [synced, state.workbooks, state.gradings])
+
   // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
   // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
   useEffect(() => {
