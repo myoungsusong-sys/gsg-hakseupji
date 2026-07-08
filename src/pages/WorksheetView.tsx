@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, typeUnitName } from '../data/curriculum'
@@ -14,9 +14,9 @@ export default function WorksheetView() {
   const { id } = useParams()
   const nav = useNavigate()
   const { worksheets, problems } = useStore()
-  const [showSheet, setShowSheet] = useState(true)
-  const [showQuick, setShowQuick] = useState(true)
-  const [showSol, setShowSol] = useState(true)
+  // 인쇄 작업(job): 지정 부분만 렌더 → 매쓰플랫처럼 문제/정답/해설 따로 PDF 저장.
+  // job 없을 땐 화면 미리보기용으로 3부 모두 표시.
+  const [job, setJob] = useState<{ label: string; s: boolean; q: boolean; so: boolean } | null>(null)
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
 
   const ws = worksheets.find(w => w.id === id)
@@ -25,7 +25,26 @@ export default function WorksheetView() {
     [ws, problems],
   )
 
+  // job이 걸리면: 해당 부분만 렌더된 뒤 파일명(제목_문제 등) 세팅 → 인쇄 → 원복
+  useEffect(() => {
+    if (!job || !ws) return
+    const prevTitle = document.title
+    document.title = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
+    const raf = requestAnimationFrame(() => {
+      window.print()
+      document.title = prevTitle
+      setJob(null)
+    })
+    return () => cancelAnimationFrame(raf)
+  }, [job, ws])
+
   if (!ws) return <div className="text-ink2">학습지를 찾을 수 없습니다.</div>
+
+  const printPart = (label: string, s: boolean, q: boolean, so: boolean) => setJob({ label, s, q, so })
+  // 렌더 표시: 인쇄 중이면 job 지정대로, 평소엔 미리보기로 3부 모두
+  const rS = job ? job.s : true
+  const rQ = job ? job.q : true
+  const rSo = job ? job.so : true
   const theme = THEMES[ws.theme]
   const opts = ws.options ?? DEFAULT_SHEET_OPTIONS
 
@@ -55,36 +74,30 @@ export default function WorksheetView() {
 
   return (
     <div>
-      <div className="no-print mb-6 flex flex-wrap items-center gap-3">
+      <div className="no-print mb-2 flex flex-wrap items-center gap-3">
         <button onClick={() => nav('/')} className="rounded-lg border border-line px-4 py-2 text-sm">← 목록</button>
         <button onClick={() => nav(`/make?edit=${ws.id}`)} className="rounded-lg border border-line px-4 py-2 text-sm hover:border-pine hover:text-pine">✏ 수정</button>
-        {/* 인쇄 구성 선택 (매쓰플랫 원본 PDF의 3부 구성) */}
-        <div className="flex items-center gap-1 rounded-lg border border-line p-1 text-sm">
-          {([
-            ['문제지', showSheet, setShowSheet],
-            ['빠른정답', showQuick, setShowQuick],
-            ['정답해설', showSol, setShowSol],
-          ] as const).map(([label, on, set]) => (
-            <button key={label} onClick={() => set(!on)}
-              className={`rounded-md px-3 py-1.5 font-semibold ${on ? 'bg-pine text-paper' : 'text-ink2 hover:bg-paper2'}`}>
-              {on ? '✓ ' : ''}{label}
-            </button>
-          ))}
-        </div>
         <div className="grow" />
-        <div className="flex flex-col items-end gap-1">
-          <button onClick={() => window.print()}
-            disabled={!showSheet && !showQuick && !showSol}
-            className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">
-            🖨 인쇄 / PDF 저장
-          </button>
-          <span className="text-[11px] text-ink2">인쇄창에서 <b>‘머리말 및 꼬리말’</b>을 끄면 매쓰플랫처럼 깔끔해요</span>
+        {/* 매쓰플랫처럼 문제·정답·해설을 따로 PDF 저장 */}
+        <span className="text-sm font-bold text-ink2">따로 다운로드</span>
+        <div className="flex items-center gap-1 rounded-lg border border-line p-1">
+          <button onClick={() => printPart('문제', true, false, false)}
+            className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark">📄 문제</button>
+          <button onClick={() => printPart('빠른정답', false, true, false)}
+            className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark">🔑 정답</button>
+          <button onClick={() => printPart('해설', false, false, true)}
+            className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark">📝 해설</button>
         </div>
+        <button onClick={() => printPart('전체', true, true, true)}
+          className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark">🖨 전체 인쇄 / PDF</button>
       </div>
+      <p className="no-print mb-6 text-[11px] text-ink2">
+        각 버튼은 해당 부분만 PDF로 저장돼요(파일명 자동). 인쇄창에서 <b>‘머리말 및 꼬리말’</b>을 끄면 매쓰플랫처럼 깔끔합니다.
+      </p>
 
       <div className="print-root mx-auto max-w-4xl rounded-xl border border-line bg-white p-10 shadow-md">
         {/* ══ 1부. 문제지 ══ */}
-        {showSheet && (
+        {rS && (
           <div className="sheet-page">
             <SheetHeader ws={{ grade: ws.grade, title: ws.title, author: ws.author }} subtitle={subtitle}
               dateText={dateText} count={items.length} theme={theme.main} />
@@ -146,9 +159,9 @@ export default function WorksheetView() {
         )}
 
         {/* ══ 2부. 빠른정답 (별지, 매쓰플랫 3열 표) ══ */}
-        {showQuick && (
+        {rQ && (
           <div className="sheet-page">
-            {showSheet && <div className="h-6" />}
+            {rS && <div className="h-6" />}
             <SheetHeader ws={{ grade: ws.grade, title: ws.title, author: ws.author }} subtitle={subtitle}
               dateText={dateText} count={items.length} theme={theme.main} />
             <div className="mx-auto mt-8 w-fit border-t border-line px-6 pt-1.5 text-center text-sm font-black">빠른정답</div>
@@ -171,9 +184,9 @@ export default function WorksheetView() {
         )}
 
         {/* ══ 3부. 해설지 (별지, 매쓰플랫 2단·문항 블록) ══ */}
-        {showSol && (
+        {rSo && (
           <div className="sheet-page">
-            {(showSheet || showQuick) && <div className="h-6" />}
+            {(rS || rQ) && <div className="h-6" />}
             <SheetHeader ws={{ grade: ws.grade, title: ws.title, author: ws.author }} subtitle={subtitle}
               dateText={dateText} count={items.length} theme={theme.main} />
             <div className="sheet-cols mt-6">
