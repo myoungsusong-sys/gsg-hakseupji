@@ -46,7 +46,7 @@ export default function TodayPanel({ student }: { student: Student }) {
 
   // 최근 14일 중 기록 있는 날 (최신순)
   const historyRows = useMemo(() => {
-    const rows: { day: string; titles: string[]; issued: number; solved: number; score: number | null }[] = []
+    const rows: { day: string; titles: string[]; issued: number; solved: number; score: number | null; right: number; wrong: number }[] = []
     for (let i = 0; i < 14; i++) {
       const d = new Date()
       d.setDate(d.getDate() - i)
@@ -54,22 +54,22 @@ export default function TodayPanel({ student }: { student: Student }) {
       const dayAs = assignments.filter(a => a.studentId === student.id && dateKey(a.date) === day)
       if (dayAs.length === 0) continue
       const titles: string[] = []
-      let solved = 0
-      let scoreSum = 0
-      let scoreN = 0
+      let solved = 0, scoreSum = 0, scoreN = 0, right = 0, wrong = 0
       for (const a of dayAs) {
         const w = worksheets.find(x => x.id === a.worksheetId)
         titles.push(w?.title ?? '삭제된 학습지')
         const g = gradings.find(x => x.studentId === student.id && x.worksheetId === a.worksheetId)
         if (g) {
           solved++
+          right += g.results.filter(r => r.correct).length
+          wrong += g.results.filter(r => !r.correct).length
           if (g.results.length) {
             scoreSum += (g.results.filter(r => r.correct).length / g.results.length) * 100
             scoreN++
           }
         }
       }
-      rows.push({ day, titles, issued: dayAs.length, solved, score: scoreN ? Math.round(scoreSum / scoreN) : null })
+      rows.push({ day, titles, issued: dayAs.length, solved, score: scoreN ? Math.round(scoreSum / scoreN) : null, right, wrong })
     }
     // 증감: 직전(더 오래된) 기록 대비
     return rows.map((r, i) => {
@@ -78,6 +78,9 @@ export default function TodayPanel({ student }: { student: Student }) {
       return { ...r, delta }
     })
   }, [assignments, worksheets, gradings, student.id])
+
+  // 점수 추이 그래프용 (오래된→최신, 점수 있는 날만)
+  const chart = useMemo(() => historyRows.filter(r => r.score !== null).reverse(), [historyRows])
 
   // 설정 요약
   const summary = useMemo(() => {
@@ -168,6 +171,8 @@ export default function TodayPanel({ student }: { student: Student }) {
         </div>
       )}
 
+      <div className="mb-4 text-sm font-black">{student.name} 학생 오늘의 학습 결과를 확인하세요.</div>
+
       {!cfg ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center">
           <div className="mb-2 text-3xl">📤</div>
@@ -204,35 +209,50 @@ export default function TodayPanel({ student }: { student: Student }) {
         </div>
       )}
 
+      {/* 점수 추이 그래프 (매쓰플랫: 점수 라인) */}
+      {chart.length > 0 && (
+        <div className="mb-5 rounded-2xl border border-line bg-white p-5">
+          <div className="mb-3 flex items-center gap-3 text-sm font-black">
+            점수 추이
+            <span className="ml-auto text-[11px] font-normal text-ink2"><span className="text-pine">●</span> 점수</span>
+          </div>
+          <ScoreChart data={chart.map(r => ({ label: r.day.slice(5).replace('-', '.'), score: r.score! }))} />
+        </div>
+      )}
+
       {/* 날짜별 기록 (최근 14일) */}
       <div className="rounded-2xl border border-line bg-white p-5">
         <div className="mb-3 text-sm font-black">날짜별 기록 <span className="font-normal text-ink2">— 최근 14일</span></div>
         {historyRows.length === 0 ? (
           <p className="py-6 text-center text-sm text-ink2">최근 14일 안에 출제 기록이 없습니다. 자동 출제하면 여기 쌓입니다.</p>
         ) : (
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-line text-left text-xs text-ink2">
-                <th className="py-1.5">날짜</th><th>출제 학습지</th><th>푼/출제</th><th>점수</th><th>증감</th>
-              </tr>
-            </thead>
-            <tbody>
-              {historyRows.map(r => (
-                <tr key={r.day} className="border-b border-line/50">
-                  <td className="py-2 font-semibold">{r.day === todayKey() ? '오늘' : r.day.slice(5).replace('-', '.')}</td>
-                  <td className="py-2 pr-2">{r.titles.join(', ')}</td>
-                  <td className="py-2">{r.solved}/{r.issued}</td>
-                  <td className="py-2 font-bold text-pine-dark">{r.score !== null ? `${r.score}점` : '—'}</td>
-                  <td className="py-2 text-xs font-bold">
-                    {r.delta === null ? <span className="text-ink2">—</span>
-                      : r.delta > 0 ? <span className="text-pine">▲ {r.delta}</span>
-                      : r.delta < 0 ? <span className="text-clay">▼ {Math.abs(r.delta)}</span>
-                      : <span className="text-ink2">—</span>}
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-line text-left text-xs text-ink2">
+                  <th className="py-1.5">날짜</th><th>푼/출제</th><th>점수</th><th>증감</th><th>맞은</th><th>틀린</th><th>출제 학습지</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {historyRows.map(r => (
+                  <tr key={r.day} className="border-b border-line/50">
+                    <td className="whitespace-nowrap py-2 font-semibold">{r.day === todayKey() ? '오늘' : r.day.slice(5).replace('-', '.')}</td>
+                    <td className="py-2">{r.solved}/{r.issued}</td>
+                    <td className="py-2 font-bold text-pine-dark">{r.score !== null ? `${r.score}점` : '—'}</td>
+                    <td className="py-2 text-xs font-bold">
+                      {r.delta === null ? <span className="text-ink2">—</span>
+                        : r.delta > 0 ? <span className="text-pine">▲ {r.delta}</span>
+                        : r.delta < 0 ? <span className="text-clay">▼ {Math.abs(r.delta)}</span>
+                        : <span className="text-ink2">—</span>}
+                    </td>
+                    <td className="py-2 text-pine">{r.solved ? r.right : '—'}</td>
+                    <td className="py-2 text-clay">{r.solved ? r.wrong : '—'}</td>
+                    <td className="max-w-[180px] truncate py-2 pr-2 text-ink2">{r.titles.join(', ')}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </div>
 
@@ -244,6 +264,36 @@ export default function TodayPanel({ student }: { student: Student }) {
           onClose={() => setEditing(false)}
         />
       )}
+    </div>
+  )
+}
+
+// 점수 추이 SVG 라인 그래프 (0~100점)
+function ScoreChart({ data }: { data: { label: string; score: number }[] }) {
+  const W = 640, H = 160, padL = 28, padB = 22, padT = 10, padR = 10
+  const iw = W - padL - padR, ih = H - padT - padB
+  const n = data.length
+  const x = (i: number) => padL + (n <= 1 ? iw / 2 : (i / (n - 1)) * iw)
+  const y = (s: number) => padT + (1 - s / 100) * ih
+  const pts = data.map((d, i) => `${x(i)},${y(d.score)}`).join(' ')
+  return (
+    <div className="overflow-x-auto">
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full min-w-[420px]" style={{ height: H }}>
+        {[0, 50, 100].map(g => (
+          <g key={g}>
+            <line x1={padL} x2={W - padR} y1={y(g)} y2={y(g)} stroke="var(--color-line)" strokeWidth={1} />
+            <text x={padL - 6} y={y(g) + 3} textAnchor="end" fontSize={9} fill="var(--color-ink2)">{g}</text>
+          </g>
+        ))}
+        {n > 1 && <polyline points={pts} fill="none" stroke="var(--color-pine)" strokeWidth={2} />}
+        {data.map((d, i) => (
+          <g key={i}>
+            <circle cx={x(i)} cy={y(d.score)} r={3.5} fill="var(--color-pine)" />
+            <text x={x(i)} y={y(d.score) - 7} textAnchor="middle" fontSize={9} fontWeight={700} fill="var(--color-pine-dark)">{d.score}</text>
+            <text x={x(i)} y={H - 6} textAnchor="middle" fontSize={9} fill="var(--color-ink2)">{d.label}</text>
+          </g>
+        ))}
+      </svg>
     </div>
   )
 }
