@@ -81,6 +81,16 @@ export const cloud = {
     const { error } = await supabase.from(table).upsert({ id, data, updated_at: new Date().toISOString() })
     if (error) console.warn('upsert', table, error.message)
   },
+  async upsertMany(table: string, items: { id: string; data: unknown }[]) {
+    if (!supabase || items.length === 0) return
+    const now = new Date().toISOString()
+    const CHUNK = 500
+    for (let i = 0; i < items.length; i += CHUNK) {
+      const batch = items.slice(i, i + CHUNK).map(x => ({ id: x.id, data: x.data, updated_at: now }))
+      const { error } = await supabase.from(table).upsert(batch)
+      if (error) console.warn('upsertMany', table, error.message)
+    }
+  },
   async del(table: string, id: string) {
     if (!supabase) return
     const { error } = await supabase.from(table).delete().eq('id', id)

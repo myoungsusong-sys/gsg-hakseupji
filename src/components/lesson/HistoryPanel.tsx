@@ -65,6 +65,12 @@ export default function HistoryPanel({ student }: { student: Student }) {
     const total = g.results.length
     const correct = g.results.filter(r => r.correct).length
     const unknown = g.results.filter(r => r.unknown).length
+    if (g.imported) {
+      // 매쓰플랫 이관 이력 — 원본 참조 없이 저장된 제목·분류로 직접 렌더
+      const group: Row['group'] = g.category === '오답' ? '오답' : g.category === '교재' ? '교재' : '학습지'
+      const badge: Row['badge'] = g.category === '교재' ? '교재' : '학습지'
+      return { id: g.id, badge, group, label: g.title ?? '학습지', total, correct, unknown }
+    }
     if (g.workbookId) {
       const name = wbMap.get(g.workbookId)?.name ?? '교재'
       const range = g.pageFrom != null ? ` p.${g.pageFrom}~${g.pageTo ?? g.pageFrom}` : ''

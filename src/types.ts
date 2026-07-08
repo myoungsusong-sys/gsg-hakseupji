@@ -153,6 +153,11 @@ export interface Grading {
   pageFrom?: number
   pageTo?: number
   results: GradeResult[]
+  // ── 외부 이관 이력(매쓰플랫 등) — 원본 학습지/문제를 참조하지 않는 '표시 전용' 기록.
+  //    재풀이·재채점은 불가하고, 학습내역·오늘의학습·보고서 집계에만 반영된다.
+  imported?: boolean
+  title?: string                                // 원본 학습지/교재명 (표시용 라벨)
+  category?: '학습지' | '교재' | '오답' | '챌린지'   // 학습내역 진도 카드 분류
 }
 
 // 학습지 출제 (수업/숙제) — hj_settings 'assignments' 키에 배열로 저장

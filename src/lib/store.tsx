@@ -58,6 +58,7 @@ interface Store extends Persisted {
   addStudent: (s: Omit<Student, 'id' | 'active'>) => string
   setStudentActive: (id: string, active: boolean) => void
   updateStudent: (id: string, patch: Partial<Student>) => void
+  importBulk: (students: Student[], gradings: Grading[]) => void   // 매쓰플랫 이관 (id 지정 upsert)
   saveGrading: (g: Omit<Grading, 'id'>) => void
   upsertGrading: (g: Grading) => void   // 같은 id면 교체 — 실시간 자동 저장용
   saveDailyNote: (n: DailyNote) => void
@@ -325,6 +326,21 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const cur = stateRef.current.students.find(x => x.id === id); if (!cur) return
       const next = { ...cur, ...patch }
       set(s => ({ ...s, students: s.students.map(x => x.id === id ? next : x) })); cloud.upsert(cloud.T.students, id, next)
+    },
+    importBulk: (students, gradings) => {
+      // 매쓰플랫 이관: 학생은 id로 병합(기존 상세필드 보존), 채점기록은 id로 교체(재실행 중복 방지)
+      const cur = stateRef.current
+      const smap = new Map(cur.students.map(x => [x.id, x]))
+      const mergedStudents = students.map(st => ({ ...smap.get(st.id), ...st }))
+      set(s => {
+        const sm = new Map(s.students.map(x => [x.id, x]))
+        for (const st of mergedStudents) sm.set(st.id, st)
+        const gm = new Map(s.gradings.map(x => [x.id, x]))
+        for (const g of gradings) gm.set(g.id, g)
+        return { ...s, students: [...sm.values()], gradings: [...gm.values()] }
+      })
+      cloud.upsertMany(cloud.T.students, mergedStudents.map(st => ({ id: st.id, data: st })))
+      cloud.upsertMany(cloud.T.gradings, gradings.map(g => ({ id: g.id, data: g })))
     },
     addAssignment: (worksheetId, studentIds, kind = '수업') => {
       const now = new Date().toISOString()

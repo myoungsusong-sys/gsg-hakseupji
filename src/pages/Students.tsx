@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
-import type { Student } from '../types'
+import type { Grading, GradeResult, Student } from '../types'
 
 const TABS = ['학생 관리', '반 관리', '선생님 관리', '추가 관리'] as const
 type Tab = typeof TABS[number]
@@ -64,6 +64,7 @@ function StudentsTab() {
   const [showInactive, setShowInactive] = useState(false)
   const [showForm, setShowForm] = useState(false)
   const [showBulk, setShowBulk] = useState(false)
+  const [showImport, setShowImport] = useState(false)
   const [detail, setDetail] = useState<Student | null>(null)
 
   const activeCount = students.filter(s => s.active).length
@@ -100,6 +101,8 @@ function StudentsTab() {
           퇴원생 보기
         </label>
         <div className="grow" />
+        <button onClick={() => setShowImport(true)}
+          className="rounded-lg border border-pine bg-white px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">매쓰플랫 가져오기</button>
         <button onClick={() => setShowBulk(true)}
           className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-bold text-ink2 hover:text-ink">학생 일괄 등록</button>
         <button onClick={() => setShowForm(true)}
@@ -108,6 +111,7 @@ function StudentsTab() {
 
       {showForm && <RegisterModal onClose={() => setShowForm(false)} />}
       {showBulk && <BulkModal onClose={() => setShowBulk(false)} />}
+      {showImport && <MathflatImportModal onClose={() => setShowImport(false)} />}
       {detail && <DetailModal key={detail.id} s={detail} onClose={() => setDetail(null)} />}
 
       {list.length === 0 ? (
@@ -538,6 +542,137 @@ function BulkModal({ onClose }: { onClose: () => void }) {
           등록하기{valid.length > 0 ? ` (${valid.length}명)` : ''}
         </button>
       </div>
+    </Modal>
+  )
+}
+
+// ── 매쓰플랫 가져오기 (내보낸 JSON 파일 → 학생 + 학습이력) ─────────
+
+interface ImportedFile {
+  source?: string
+  students?: { mfId: string; name: string; grade: string; studentPhone?: string; parentPhone?: string; attendNo?: string; memo?: string }[]
+  history?: { mfId: string; records?: { id: number | string; date: string; title?: string; correct?: number; wrong?: number; category?: string }[] }[]
+}
+
+const IMPORT_CATS = new Set(['학습지', '교재', '오답', '챌린지'])
+
+function buildImport(json: ImportedFile): { students: Student[]; gradings: Grading[]; recordCount: number } {
+  const t = (v: unknown) => (v != null && String(v).trim()) || undefined
+  const students: Student[] = (json.students ?? []).map(st => ({
+    id: 'st-mf-' + st.mfId,
+    name: st.name,
+    grade: st.grade,
+    active: true,
+    studentPhone: t(st.studentPhone),
+    parentPhone: t(st.parentPhone),
+    attendNo: t(st.attendNo),
+    memo: t(st.memo),
+  }))
+  const gradings: Grading[] = []
+  for (const h of json.history ?? []) {
+    const sid = 'st-mf-' + h.mfId
+    for (const rec of h.records ?? []) {
+      const correct = Math.max(0, Math.floor(rec.correct ?? 0))
+      const wrong = Math.max(0, Math.floor(rec.wrong ?? 0))
+      const results: GradeResult[] = [
+        ...Array.from({ length: correct }, () => ({ correct: true } as GradeResult)),
+        ...Array.from({ length: wrong }, () => ({ correct: false } as GradeResult)),
+      ]
+      const category = (rec.category && IMPORT_CATS.has(rec.category) ? rec.category : '학습지') as Grading['category']
+      gradings.push({
+        id: 'gr-mf-' + rec.id,
+        studentId: sid,
+        source: '학습지',
+        date: rec.date,
+        results,
+        imported: true,
+        title: rec.title,
+        category,
+      })
+    }
+  }
+  return { students, gradings, recordCount: gradings.length }
+}
+
+function MathflatImportModal({ onClose }: { onClose: () => void }) {
+  const { importBulk } = useStore()
+  const fileRef = useRef<HTMLInputElement>(null)
+  const [parsed, setParsed] = useState<{ students: Student[]; gradings: Grading[]; recordCount: number } | null>(null)
+  const [error, setError] = useState<string | null>(null)
+  const [done, setDone] = useState(0)
+
+  const onFile = (file: File | undefined) => {
+    setError(null); setParsed(null)
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = () => {
+      try {
+        const json = JSON.parse(String(reader.result ?? '')) as ImportedFile
+        if (!Array.isArray(json.students) || json.students.length === 0) {
+          setError('학생 정보가 없는 파일입니다. 매쓰플랫에서 내보낸 파일이 맞는지 확인해주세요.'); return
+        }
+        setParsed(buildImport(json))
+      } catch {
+        setError('파일을 읽지 못했습니다. 매쓰플랫에서 내보낸 JSON 파일을 첨부해주세요.')
+      }
+    }
+    reader.readAsText(file)
+  }
+
+  const run = () => {
+    if (!parsed) return
+    importBulk(parsed.students, parsed.gradings)
+    setDone(parsed.students.length)
+  }
+
+  const dates = parsed?.gradings.map(g => g.date.slice(0, 10)).filter(Boolean).sort() ?? []
+  const dateRange = dates.length ? `${dates[0]} ~ ${dates[dates.length - 1]}` : '—'
+
+  return (
+    <Modal title="매쓰플랫 가져오기" onClose={onClose}>
+      {done > 0 ? (
+        <div className="grid gap-4 py-2 text-center">
+          <div className="text-4xl">✅</div>
+          <p className="text-sm">
+            학생 <b className="text-pine">{done}</b>명과 학습이력 <b className="text-pine">{parsed?.recordCount ?? 0}</b>건을 가져왔습니다.<br />
+            수업 &gt; 학습내역에서 각 학생의 기록을 확인할 수 있어요.
+          </p>
+          <button onClick={onClose} className="mx-auto rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper">확인</button>
+        </div>
+      ) : (
+        <div className="grid gap-4">
+          <div className="rounded-xl border border-line bg-paper2 p-4 text-sm leading-relaxed text-ink2">
+            <p className="mb-1"><b className="text-pine">매쓰플랫 재원생 명단 + 학습이력</b>을 한 번에 가져옵니다.</p>
+            <p>매쓰플랫에서 내보낸 <b>JSON 파일</b>을 첨부하면, 학생과 각자의 학습 기록(학습지·오답, 정답/오답·점수)이 앱에 등록됩니다. 같은 학생·기록은 여러 번 가져와도 중복되지 않습니다.</p>
+          </div>
+
+          <input ref={fileRef} type="file" accept=".json,application/json" className="hidden"
+            onChange={e => { onFile(e.target.files?.[0]); e.target.value = '' }} />
+          <button onClick={() => fileRef.current?.click()}
+            className="rounded-lg bg-pine px-4 py-2.5 text-sm font-bold text-paper">파일 첨부</button>
+
+          {error && <p className="rounded-lg bg-amber-soft px-3 py-2 text-sm text-clay">{error}</p>}
+
+          {parsed && (
+            <div className="rounded-xl border border-line p-4 text-sm">
+              <div className="mb-2 font-black">미리보기</div>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="rounded-lg bg-paper2 px-3 py-2">학생 <b className="text-pine">{parsed.students.length}</b>명</div>
+                <div className="rounded-lg bg-paper2 px-3 py-2">학습이력 <b className="text-pine">{parsed.recordCount}</b>건</div>
+              </div>
+              <div className="mt-2 text-xs text-ink2">기록 기간: {dateRange}</div>
+            </div>
+          )}
+
+          <div className="flex justify-end gap-2">
+            <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm text-ink2">취소</button>
+            <button onClick={run} disabled={!parsed}
+              className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">
+              가져오기{parsed ? ` (학생 ${parsed.students.length}명)` : ''}
+            </button>
+          </div>
+        </div>
+      )}
     </Modal>
   )
 }
