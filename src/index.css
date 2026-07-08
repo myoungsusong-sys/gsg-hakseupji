@@ -26,11 +26,17 @@ body {
 @page { size: A4; margin: 12mm 11mm; }
 
 @media print {
-  body { background: white; }
+  html, body { background: white; height: auto !important; min-height: 0 !important; }
+  /* 앱 셸의 min-h-screen(100vh)이 인쇄 시 한 페이지를 강제로 채워 빈 페이지가
+     생기던 문제 방지 — 인쇄에선 내용 높이만큼만 */
+  .min-h-screen { min-height: 0 !important; height: auto !important; }
   .no-print { display: none !important; }
-  .print-root { box-shadow: none !important; margin: 0 !important; width: auto !important; padding: 0 !important; border: none !important; }
-  .sheet-page { break-after: page; }
-  .sheet-page:last-child { break-after: auto; }   /* 마지막 부 뒤 빈 페이지 방지 */
+  /* 페이지 래퍼(py-8 등) 여백 제거 → @page 여백만 남겨 지면을 꽉 채움(매쓰플랫 실물처럼) */
+  .print-page-reset { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .print-root { box-shadow: none !important; margin: 0 !important; width: auto !important; max-width: none !important; padding: 0 !important; border: none !important; }
+  /* 부(문제지·빠른정답·해설지)는 사이에서만 페이지 나눔 → 마지막 뒤 빈 페이지 없음 */
+  .sheet-page { break-inside: auto; }
+  .sheet-page + .sheet-page { break-before: page; }
   img { break-inside: avoid; }
 }
 

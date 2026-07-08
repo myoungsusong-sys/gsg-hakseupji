@@ -72,11 +72,14 @@ export default function WorksheetView() {
           ))}
         </div>
         <div className="grow" />
-        <button onClick={() => window.print()}
-          disabled={!showSheet && !showQuick && !showSol}
-          className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">
-          🖨 인쇄 / PDF 저장
-        </button>
+        <div className="flex flex-col items-end gap-1">
+          <button onClick={() => window.print()}
+            disabled={!showSheet && !showQuick && !showSol}
+            className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">
+            🖨 인쇄 / PDF 저장
+          </button>
+          <span className="text-[11px] text-ink2">인쇄창에서 <b>‘머리말 및 꼬리말’</b>을 끄면 매쓰플랫처럼 깔끔해요</span>
+        </div>
       </div>
 
       <div className="print-root mx-auto max-w-4xl rounded-xl border border-line bg-white p-10 shadow-md">

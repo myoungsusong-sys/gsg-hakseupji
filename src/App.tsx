@@ -20,7 +20,7 @@ import GichulTag from './pages/GichulTag'
 import ArithmeticGen from './pages/ArithmeticGen'
 
 function Page({ children }: { children: React.ReactNode }) {
-  return <div className="mx-auto max-w-7xl px-6 py-8">{children}</div>
+  return <div className="print-page-reset mx-auto max-w-7xl px-6 py-8">{children}</div>
 }
 
 export default function App() {
