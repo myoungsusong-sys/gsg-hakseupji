@@ -6,8 +6,8 @@ import { useStore, uid } from '../../lib/store'
 import { pickDrillProblems } from '../../lib/drill'
 import { courseTagOfType } from '../../data/curriculum'
 
-// 오답 참조 — problemId는 틀린 원문제(학습지 오답만)
-export interface DrillWrong { typeId: string; diff?: Diff; problemId?: string }
+// 오답 참조 — problemId는 틀린 원문제(학습지 오답만) · page는 교재 쪽 번호(교재 오답만, 제목 범위용)
+export interface DrillWrong { typeId: string; diff?: Diff; problemId?: string; page?: number }
 
 // 페이지별 오답학습지: 다이얼로그 안에서 페이지 범위·틀린 문제만 여부를 고른다 (매쓰플랫 동일)
 export interface PagePicker {
@@ -61,11 +61,22 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
     [pagePicker, selectedPages, onlyWrong, wrongs],
   )
 
+  // 제목: 실제 오답 문항들의 쪽 범위(min~max)를 붙인다 — 매쓰플랫 「[오답] <교재명> <시작p>~<끝p>p」
+  // (교재 오답만 page가 있음. 학습지 오답 등 page 없는 경우는 base 제목 그대로)
+  const finalTitle = useMemo(() => {
+    const ps = effWrongs.map(w => w.page).filter((p): p is number => p != null)
+    if (ps.length === 0) return title
+    const lo = Math.min(...ps), hi = Math.max(...ps)
+    return `${title} ${lo === hi ? `${lo}p` : `${lo}~${hi}p`}`
+  }, [title, effWrongs])
+
   const [twinPer, setTwinPer] = useState(1)
   const [similarPer, setSimilarPer] = useState(1)
   const [diffShift, setDiffShift] = useState<-1 | 0 | 1>(0)
   // 매쓰플랫은 자동 채점 기본 해제지만, 우리 앱은 웹 자동채점이 핵심이라 기본 체크 유지 (의도적 차이)
   const [autoGrade, setAutoGrade] = useState(true)
+  // 풀이 공간(오답노트 영역) — 매쓰플랫 [오답] 학습지 기본 양식 = 좌 문제·우 풀이칸 → 기본 체크
+  const [wrongNoteArea, setWrongNoteArea] = useState(true)
   const [excludePrev, setExcludePrev] = useState(false)   // 기존 출제 문제 제외 — 기본 해제 (매쓰플랫 동일)
   const [capOn, setCapOn] = useState(true)                // 유형별 최대 문제 수 제한 — 기본 체크·값 3
   const [capValue, setCapValue] = useState(3)
@@ -113,7 +124,7 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
     const id = uid('ws')
     saveWorksheet({
       id,
-      title,
+      title: finalTitle,
       author: '깊은생각수학',
       // 학년 뱃지 = 문항 과정 기준 (미적분Ⅰ 오답 학습지가 학생 학년(중1-1)으로 찍히던 문제 수정)
       grade: (effWrongs[0] && courseTagOfType(effWrongs[0].typeId)) || student.grade,
@@ -121,7 +132,7 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
       theme: 'amber',
       problemIds,
       conceptIds: [],
-      options: { ...DEFAULT_SHEET_OPTIONS, autoGrade },
+      options: { ...DEFAULT_SHEET_OPTIONS, autoGrade, wrongNoteArea },
       listIds: [],
       createdAt: new Date().toISOString(),
       deletedAt: null,
@@ -140,7 +151,7 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
           <button onClick={onClose} aria-label="닫기"
             className="rounded-lg px-2 py-0.5 text-lg leading-none text-ink2 hover:bg-paper2">✕</button>
         </div>
-        <div className="mb-4 text-sm text-ink2">{student.name} · {title}</div>
+        <div className="mb-4 text-sm text-ink2">{student.name} · {finalTitle}</div>
 
         <div className="grid gap-4 text-sm">
           {/* 페이지 선택 블록 (페이지별 오답학습지에서만 · 매쓰플랫 동일) */}
@@ -205,6 +216,12 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
           <label className="flex items-center gap-2 font-semibold">
             <input type="checkbox" checked={autoGrade} onChange={e => setAutoGrade(e.target.checked)} />
             자동 채점 학습지 만들기
+          </label>
+
+          {/* 3-1) 풀이 공간(오답노트 영역) — 매쓰플랫 [오답] 기본 양식이라 기본 체크 */}
+          <label className="flex items-center gap-2 font-semibold">
+            <input type="checkbox" checked={wrongNoteArea} onChange={e => setWrongNoteArea(e.target.checked)} />
+            풀이 공간(오답노트 영역) <span className="font-normal text-ink2">— 좌 문제 · 우 풀이칸</span>
           </label>
 
           {/* 4) 기존 출제 문제 제외 — 기본 해제 (매쓰플랫 동일) */}

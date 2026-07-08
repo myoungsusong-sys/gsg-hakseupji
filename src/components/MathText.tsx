@@ -21,7 +21,7 @@ export function mathToHtml(text: string): string {
 }
 
 // 이미지 URL(매쓰플랫 문제/해설 png)이면 이미지로 렌더 — LaTeX 텍스트는 https로 시작하지 않으므로 안전
-function isImageUrl(s: string): boolean {
+export function isImageUrl(s: string): boolean {
   return typeof s === 'string' && /^https?:\/\/\S+\.(png|jpe?g|gif|webp)(\?|$)/i.test(s)
 }
 

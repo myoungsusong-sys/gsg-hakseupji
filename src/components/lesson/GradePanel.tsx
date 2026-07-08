@@ -31,17 +31,20 @@ function AnswerLabel({ item }: { item: WBItem }) {
 }
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
-// 클릭 순환: ○(정답) → ✕(오답) → ?(모름) → ○ · 기본 전부 정답
+// 클릭 순환: 미채점 → ✕(오답) → ?(모름) → ○(정답) → 미채점
+// ⚠️ 저장은 "마킹된 문항만" 기록한다 — 미채점 문항을 정답으로 간주해 통째로 저장하면
+//    진도·통계가 오염된다(2026-07-08 실사 P0). 미채점 = 기록 없음.
 type Mark = '정답' | '오답' | '모름'
-const NEXT: Record<Mark, Mark> = { 정답: '오답', 오답: '모름', 모름: '정답' }
+const NEXT: Record<Mark, Mark | null> = { 오답: '모름', 모름: '정답', 정답: null }
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
 const MARK_CLASS: Record<Mark, string> = { 정답: 'text-pine', 오답: 'text-clay', 모름: 'text-amber' }
-// 행 배경: 정답=연파랑 · 오답=연분홍 · 모름=연노랑
+// 행 배경: 정답=연파랑 · 오답=연분홍 · 모름=연노랑 · 미채점=흰색 (매쓰플랫 동일)
 const CARD_CLASS: Record<Mark, string> = {
   정답: 'border-line bg-pine-soft/40 hover:border-pine',
   오답: 'border-clay bg-red-50',
   모름: 'border-amber bg-amber-soft/50',
 }
+const CARD_UNMARKED = 'border-line bg-white hover:border-pine'
 
 export default function GradePanel({ student }: { student: Student }) {
   const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems } = useStore()
@@ -71,7 +74,9 @@ export default function GradePanel({ student }: { student: Student }) {
 
   const [from, setFrom] = useState(1)
   const [to, setTo] = useState(1)
-  const [marks, setMarks] = useState<Record<string, Mark>>({})   // 없으면 '정답'
+  const [marks, setMarks] = useState<Record<string, Mark>>({})   // 없으면 미채점(기록 안 함)
+  // 연타 유실 방지: 같은 틱에 여러 카드를 클릭해도 항상 최신 marks 위에서 갱신되도록 ref 동기 유지
+  const marksRef = useRef(marks)
   const [selecting, setSelecting] = useState(false)
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [pageChecked, setPageChecked] = useState<Set<number>>(new Set())   // 페이지별 오답학습지용
@@ -111,14 +116,19 @@ export default function GradePanel({ student }: { student: Student }) {
 
   function queueSave(next: Record<string, Mark>) {
     if (!wb || inRange.length === 0) return
-    const results: GradeResult[] = inRange.map(i => {
-      const m = next[i.id] ?? '정답'
-      return { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined }
-    })
+    // ★ 마킹된 문항만 기록 — 미채점 문항은 결과에 넣지 않는다 (진도·통계 오염 방지)
+    const results: GradeResult[] = inRange
+      .filter(i => next[i.id] != null)
+      .map(i => {
+        const m = next[i.id]!
+        return { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined }
+      })
     const today = todayKey()
     const exist = gradingsRef.current.find(g =>
       g.studentId === student.id && g.workbookId === wb.id &&
       g.pageFrom === from && g.pageTo === to && dateKey(g.date) === today)
+    // 아무것도 마킹돼 있지 않고 기존 기록도 없으면 빈 기록을 만들지 않는다
+    if (results.length === 0 && !exist && !gidRef.current) return
     const id = exist?.id ?? gidRef.current ?? uid('gr')
     gidRef.current = id
     pendingRef.current = {
@@ -142,10 +152,11 @@ export default function GradePanel({ student }: { student: Student }) {
     if (exist) {
       for (const r of exist.results) {
         if (!r.itemId) continue
-        if (r.unknown) seeded[r.itemId] = '모름'
-        else if (!r.correct) seeded[r.itemId] = '오답'
+        // 기록에 있는 문항만 복원 — 정답 마킹도 복원 (기록 없는 문항은 미채점 유지)
+        seeded[r.itemId] = r.unknown ? '모름' : r.correct ? '정답' : '오답'
       }
     }
+    marksRef.current = seeded
     setMarks(seeded)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wbId, from, to, student.id])
@@ -185,20 +196,37 @@ export default function GradePanel({ student }: { student: Student }) {
     return after ? after[0] : null
   }, [pages, to])
 
-  function markOf(id: string): Mark { return marks[id] ?? '정답' }
+  function markOf(id: string): Mark | undefined { return marks[id] }
+  // marks 갱신은 반드시 이 함수를 통해서 — ref를 동기 갱신해 같은 틱 연타에도 유실 없음
+  function applyMarks(mutate: (prev: Record<string, Mark>) => Record<string, Mark>) {
+    const next = mutate(marksRef.current)
+    marksRef.current = next
+    setMarks(next)
+    queueSave(next)
+  }
   function cycle(id: string) {
-    const next = { ...marks, [id]: NEXT[marks[id] ?? '정답'] }
-    setMarks(next); queueSave(next)
+    applyMarks(prev => {
+      const cur = prev[id]
+      const next = { ...prev }
+      if (!cur) next[id] = '오답'                    // 미채점 → 첫 클릭은 오답 (오답 위주 채점)
+      else if (NEXT[cur]) next[id] = NEXT[cur]!
+      else delete next[id]                           // 정답 → 미채점 (마킹 해제)
+      return next
+    })
   }
   function setAll(m: Mark) {
-    const next = { ...marks }
-    for (const i of inRange) next[i.id] = m
-    setMarks(next); queueSave(next)
+    applyMarks(prev => {
+      const next = { ...prev }
+      for (const i of inRange) next[i.id] = m
+      return next
+    })
   }
-  function clearAll() {   // 전체 취소 — 범위 전체를 ○(기본)으로 초기화
-    const next = { ...marks }
-    for (const i of inRange) delete next[i.id]
-    setMarks(next); queueSave(next)
+  function clearAll() {   // 전체 취소 — 범위 전체를 미채점으로 (기록에서도 제거)
+    applyMarks(prev => {
+      const next = { ...prev }
+      for (const i of inRange) delete next[i.id]
+      return next
+    })
   }
   function toggleSelect(id: string) {
     setSelected(prev => {
@@ -215,28 +243,30 @@ export default function GradePanel({ student }: { student: Student }) {
     })
   }
 
-  // 현재 범위 실시간 요약 (자동 저장이므로 항상 최신)
+  // 현재 범위 실시간 요약 — 마킹된 문항 기준 (미채점은 집계에서 제외)
   const live = useMemo(() => {
-    const total = inRange.length
-    let correct = 0, unknown = 0
+    let marked = 0, correct = 0, wrong = 0, unknown = 0
     const wrongs: DrillWrong[] = []
     for (const i of inRange) {
-      const m = marks[i.id] ?? '정답'
+      const m = marks[i.id]
+      if (!m) continue
+      marked++
       if (m === '정답') correct++
       else {
         if (m === '모름') unknown++
-        wrongs.push({ typeId: i.typeId, diff: i.diff })
+        else wrong++
+        wrongs.push({ typeId: i.typeId, diff: i.diff, page: i.page })
       }
     }
-    return { total, correct, unknown, wrongs }
+    return { marked, correct, wrong, unknown, wrongs }
   }, [inRange, marks])
 
   function finishSelect() {
     if (!wb || selected.size === 0) return
     const wrongs: DrillWrong[] = inRange
       .filter(i => selected.has(i.id))
-      .map(i => ({ typeId: i.typeId, diff: i.diff }))
-    setDrill({ title: `[오답] ${wb.name} 선택 ${wrongs.length}문항`, wrongs })
+      .map(i => ({ typeId: i.typeId, diff: i.diff, page: i.page }))
+    setDrill({ title: `[오답] ${wb.name}`, wrongs })
     setSelecting(false)
     setSelected(new Set())
   }
@@ -265,8 +295,8 @@ export default function GradePanel({ student }: { student: Student }) {
       const out: DrillWrong[] = []
       for (const i of items) {
         if (!selSet.has(i.page)) continue
-        if (onlyWrong) { const r = latest.get(i.id); if (r && (!r.correct || r.unknown)) out.push({ typeId: i.typeId, diff: i.diff }) }
-        else out.push({ typeId: i.typeId, diff: i.diff })
+        if (onlyWrong) { const r = latest.get(i.id); if (r && (!r.correct || r.unknown)) out.push({ typeId: i.typeId, diff: i.diff, page: i.page }) }
+        else out.push({ typeId: i.typeId, diff: i.diff, page: i.page })
       }
       return out
     }
@@ -347,7 +377,7 @@ export default function GradePanel({ student }: { student: Student }) {
           ＋ 페이지별 오답학습지{pageChecked.size > 0 ? ` (${pageChecked.size})` : ''}
         </button>
         {live.wrongs.length > 0 && !selecting && (
-          <button onClick={() => setDrill({ title: `[오답] ${wb.name} ${from}~${to}p`, wrongs: live.wrongs })}
+          <button onClick={() => setDrill({ title: `[오답] ${wb.name}`, wrongs: live.wrongs })}
             className="rounded-lg bg-amber px-4 py-2 text-xs font-bold text-white hover:brightness-105">
             오답·모름 {live.wrongs.length}문제로 오답 학습지
           </button>
@@ -363,7 +393,8 @@ export default function GradePanel({ student }: { student: Student }) {
         </span>
         {inRange.length > 0 && (
           <span className="text-xs font-semibold">
-            {live.total}문항 중 <b className="text-pine">{live.correct}개 정답</b> ({Math.round(live.correct / live.total * 100)}점) · 모름 {live.unknown}개
+            채점 {live.marked}문항 · <b className="text-pine">정답 {live.correct}</b> · <b className="text-clay">오답 {live.wrong}</b> · <b className="text-amber">모름 {live.unknown}</b>
+            {live.marked > 0 && <> ({Math.round(live.correct / live.marked * 100)}점)</>}
           </span>
         )}
         <div className="grow" />
@@ -446,8 +477,8 @@ export default function GradePanel({ student }: { student: Student }) {
                   const m = markOf(i.id)
                   const sel = selected.has(i.id)
                   const cardCls = selecting
-                    ? (m !== '정답' ? 'border-clay bg-red-50' : sel ? 'border-pine bg-pine-soft/40' : 'border-line bg-white hover:border-pine')
-                    : CARD_CLASS[m]
+                    ? (m && m !== '정답' ? 'border-clay bg-red-50' : sel ? 'border-pine bg-pine-soft/40' : 'border-line bg-white hover:border-pine')
+                    : (m ? CARD_CLASS[m] : CARD_UNMARKED)
                   return (
                     <button key={i.id} onClick={() => selecting ? toggleSelect(i.id) : cycle(i.id)}
                       className={`rounded-xl border p-3 text-left transition ${cardCls}`}>
@@ -455,7 +486,7 @@ export default function GradePanel({ student }: { student: Student }) {
                         <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
                         {selecting
                           ? <input type="checkbox" checked={sel} readOnly className="pointer-events-none accent-[var(--color-pine,#2e6b4f)]" />
-                          : <span className={`text-lg font-black ${MARK_CLASS[m]}`}>{MARK_ICON[m]}</span>}
+                          : <span className={`text-lg font-black ${m ? MARK_CLASS[m] : 'text-ink2/25'}`}>{m ? MARK_ICON[m] : '○'}</span>}
                       </div>
                       <div className="mt-1 text-[11px] text-ink2">{typeName(i.typeId)}</div>
                       <AnswerLabel item={i} />

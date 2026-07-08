@@ -10,7 +10,7 @@ import { ProblemBlock, SheetHeader } from './WorksheetView'
 import type { Diff, DiffMatrix, Kind, LayoutMode, Problem, SheetOptions, ThemeKey } from '../types'
 import {
   DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DIFFS, DIFF_COLOR, DIFF_LABEL,
-  LAYOUT_LABEL, TAG_PRESETS, THEMES,
+  LAYOUT_LABEL, TAG_PRESETS, THEMES, spacingMmOf,
 } from '../types'
 
 type KindFilter = 'all' | Kind
@@ -339,8 +339,8 @@ export default function MakeWizard() {
     [problems, favorites],
   )
 
-  // STEP3 실물 미리보기 파생값 (WorksheetView 지면 규칙과 동일하게 계산)
-  const previewSpacingMm = [0, 3, 5, 7, 9, 12][opts.spacing]
+  // STEP3 실물 미리보기 파생값 (WorksheetView 지면 규칙과 동일하게 계산 — 매쓰플랫 실측 간격)
+  const previewSpacingMm = spacingMmOf(opts.spacing)
   const previewDateText = opts.showDate
     ? (opts.customDate
         ? opts.customDate.replaceAll('-', '. ') + '.'
@@ -1003,11 +1003,11 @@ export default function MakeWizard() {
                     /* 기본 + 오답 노트: 좌 문제 · 우 '풀이' 공간(괘선) */
                     <div className="mt-6">
                       {previewItems.map((p, i) => (
-                        <div key={p.id} className="grid grid-cols-[1fr_42%] gap-x-6"
-                          style={{ marginBottom: `${previewSpacingMm + 8}mm` }}>
+                        <div key={p.id} className="grid grid-cols-[1fr_46%] gap-x-6"
+                          style={{ marginBottom: `${previewSpacingMm}mm` }}>
                           <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
-                          <div className="min-h-[52mm]">
-                            <div className="border-t border-ink/40 pt-1 text-[10px] text-ink2">풀이</div>
+                          <div className="min-h-[40mm]">
+                            <div className="border-t border-ink pt-1 text-[9pt] font-bold text-[#777777]">풀이</div>
                           </div>
                         </div>
                       ))}
@@ -1024,7 +1024,7 @@ export default function MakeWizard() {
                   )
                 ) : (
                   /* 2·4·6분할: 문제마다 고정 칸 (6분할은 폰트 축소) */
-                  <div className={`mt-6 gap-x-8 ${opts.layout === 'split2' ? 'grid grid-cols-1' : 'grid grid-cols-2'} ${opts.layout === 'split6' ? 'text-[85%]' : ''}`}
+                  <div className={`mt-6 gap-x-8 ${opts.layout === 'split2' ? 'grid grid-cols-1' : 'grid grid-cols-2'} ${opts.layout === 'split6' ? 'text-[92%]' : ''}`}
                     style={{ rowGap: `${previewSpacingMm}mm` }}>
                     {previewItems.map((p, i) => (
                       <div key={p.id}

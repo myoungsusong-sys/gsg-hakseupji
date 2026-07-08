@@ -52,6 +52,13 @@ export const LAYOUT_LABEL: Record<LayoutMode, string> = {
   basic: '기본', split2: '2분할', split4: '4분할', split6: '6분할',
 }
 
+// 문항 간 세로 간격(mm) — spacing 1~5 → 인덱스 spacing-1.
+// 기본(3) = 23.4mm: 매쓰플랫 실물 PDF 실측치(문항 이미지 bottom → 다음 번호 top 66.4pt).
+export const SPACING_MM = [14, 18, 23.4, 28, 34, 40] as const
+export function spacingMmOf(spacing: number): number {
+  return SPACING_MM[spacing - 1] ?? 23.4
+}
+
 export interface SheetOptions {
   layout: LayoutMode
   spacing: 1 | 2 | 3 | 4 | 5        // 문제 간격 (좁게~넓게)

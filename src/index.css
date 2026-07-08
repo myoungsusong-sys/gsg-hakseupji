@@ -40,10 +40,43 @@ body {
   img { break-inside: avoid; }
 }
 
+/* ── 매쓰플랫형 실물 A4 페이지 (WorksheetView 전용) ──
+   각 페이지 = 210×297mm 고정. 화면에선 흰 카드(그림자+간격), 인쇄에선 페이지당 1장.
+   @page 여백 0은 WorksheetView가 자체 <style>로 오버라이드(그 화면에서만) —
+   여백 0이면 크롬이 머리말·꼬리말(URL·날짜)을 찍지 않는다. */
+.mf-page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+@media screen {
+  .mf-page {
+    margin: 0 auto 8mm;
+    box-shadow: 0 2px 14px rgba(29, 37, 48, 0.14);
+    border: 1px solid var(--color-line);
+  }
+}
+@media print {
+  .mf-page {
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    break-after: page;
+    page-break-after: always;
+  }
+  .mf-page.mf-last {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}
+
+/* MakeWizard STEP3 축소 미리보기 등에서 사용 (WorksheetView 실지면은 JS 페이지네이션으로 대체) */
 .sheet-cols {
   column-count: 2;
-  column-gap: 9mm;
-  column-rule: 1px solid var(--color-line);
+  column-gap: 11.3mm;
+  column-rule: 1px solid #e7e7e7;
 }
 
 /* ── 조판 견고화 — 수식·이미지·긴 토큰이 단(段)을 넘쳐 겹치거나 잘리지 않게 ── */
