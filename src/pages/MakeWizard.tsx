@@ -51,6 +51,21 @@ const SRC_TABS: { key: SrcTab; label: string; note?: string }[] = [
 
 const COUNT_PRESETS = [25, 50, 75, 100]
 
+// STEP3 '기본 폼' — 매쓰플랫 템플릿처럼 배치·간격·표기를 한 번에 세팅하는 프리셋
+const SHEET_TEMPLATES: { key: string; name: string; desc: string; icon: string; patch: Partial<SheetOptions> }[] = [
+  { key: 'basic',   name: '기본형',      desc: '2단 흘림 · 유형·난이도', icon: '▤', patch: { layout: 'basic',  wrongNoteArea: false, spacing: 3, showTypeName: true,  showDiff: true } },
+  { key: 'solve',   name: '풀이 공간형', desc: '문제 옆 풀이칸',        icon: '✎', patch: { layout: 'basic',  wrongNoteArea: true,  spacing: 3, showTypeName: true,  showDiff: true } },
+  { key: 'test',    name: '시험형',      desc: '2분할 · 넉넉한 간격',    icon: '❑', patch: { layout: 'split2', wrongNoteArea: false, spacing: 4, showTypeName: false, showDiff: false } },
+  { key: 'quad',    name: '4분할',       desc: '한 면에 4문제',         icon: '⊞', patch: { layout: 'split4', wrongNoteArea: false, spacing: 3 } },
+  { key: 'compact', name: '압축형',      desc: '6분할 · 좁게',          icon: '▦', patch: { layout: 'split6', wrongNoteArea: false, spacing: 2 } },
+]
+// 현재 옵션과 일치하는 템플릿 (배치+오답노트로 판정 — 서로 겹치지 않음)
+function activeTemplateKey(o: SheetOptions): string | null {
+  const t = SHEET_TEMPLATES.find(t =>
+    t.patch.layout === o.layout && (t.patch.wrongNoteArea ?? false) === (o.wrongNoteArea ?? false))
+  return t?.key ?? null
+}
+
 export default function MakeWizard() {
   const store = useStore()
   const { problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments } = store
@@ -836,6 +851,25 @@ export default function MakeWizard() {
                   ))}
                 </select>
               </label>
+            </div>
+
+            <div className="grid gap-1.5 text-sm font-bold">
+              기본 폼 <span className="font-normal text-ink2">— 자주 쓰는 배치를 한 번에</span>
+              <div className="flex flex-wrap gap-2 font-normal">
+                {SHEET_TEMPLATES.map(t => {
+                  const on = activeTemplateKey(opts) === t.key
+                  return (
+                    <button key={t.key} onClick={() => setOpts(o => ({ ...o, ...t.patch }))}
+                      className={`flex w-[140px] items-start gap-2 rounded-xl border px-3 py-2.5 text-left transition ${on ? 'border-pine bg-pine-soft' : 'border-line hover:border-pine/50 hover:bg-paper2'}`}>
+                      <span className={`text-lg leading-none ${on ? 'text-pine' : 'text-ink2'}`}>{t.icon}</span>
+                      <span className="min-w-0">
+                        <span className={`block text-sm font-bold ${on ? 'text-pine-dark' : 'text-ink'}`}>{t.name}</span>
+                        <span className="block text-[11px] leading-tight text-ink2">{t.desc}</span>
+                      </span>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
 
             <div className="grid gap-1.5 text-sm font-bold">

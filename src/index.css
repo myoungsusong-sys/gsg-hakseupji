@@ -39,4 +39,21 @@ body {
   column-gap: 9mm;
   column-rule: 1px solid var(--color-line);
 }
-.sheet-problem { break-inside: avoid; }
+
+/* ── 조판 견고화 — 수식·이미지·긴 토큰이 단(段)을 넘쳐 겹치거나 잘리지 않게 ── */
+.sheet-problem {
+  break-inside: avoid;          /* 한 문제가 단/페이지 경계에서 쪼개지지 않음 */
+  overflow-wrap: anywhere;      /* 긴 문자열·URL이 단 폭을 넘겨 밀어내지 않음 */
+}
+.sheet-problem img { max-width: 100%; height: auto; }
+/* KaTeX 수식은 단 폭을 넘지 않게 캡. 화면에선 넘칠 때만 가로 스크롤(단 겹침 방지),
+   인쇄 시엔 스크롤이 없으므로 최소한 옆 단을 침범하지 않도록 클립 */
+.sheet-problem .katex,
+.sheet-problem .katex-display { max-width: 100%; }
+.sheet-problem .katex-display { overflow-x: auto; overflow-y: hidden; }
+@media screen {
+  .sheet-problem .katex { display: inline-block; max-width: 100%; overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
+}
+@media print {
+  .sheet-problem .katex { overflow: hidden; }
+}
