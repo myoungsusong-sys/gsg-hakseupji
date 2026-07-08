@@ -37,10 +37,12 @@ function toProblem(id: string, r: Raw): Problem {
     source: '매쓰플랫',
     isNew: !!r[6],
     imageUrl: `${base}/problem.png`,
-    ...(typeof r[7] === 'string' && r[7] ? {
-      videoUrl: `https://video.mathflat.com/problem/${pid}/${r[7]}/video.m3u8`,
-      subtitleUrl: `https://video.mathflat.com/problem/${pid}/${r[7]}/subtitle.vtt`,
-    } : {}),
+    ...(typeof r[7] === 'string' && r[7] ? (() => {
+      // v[7] = "hash"(구: 영상pid=문제pid) 또는 "영상pid/hash"(신: 별도 영상 번호)
+      const [vpid, vhash] = r[7].includes('/') ? r[7].split('/') : [String(pid), r[7]]
+      const vbase = `https://video.mathflat.com/problem/${vpid}/${vhash}`
+      return { videoUrl: `${vbase}/video.m3u8`, subtitleUrl: `${vbase}/subtitle.vtt` }
+    })() : {}),
   }
 }
 
