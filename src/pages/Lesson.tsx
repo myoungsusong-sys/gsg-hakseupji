@@ -19,6 +19,19 @@ const TABS: { key: Tab; label: string }[] = [
   { key: 'report', label: '보고서' },
 ]
 
+const LEVEL_ORDER: Record<string, number> = { 초: 0, 중: 1, 고: 2 }
+// '중1-1' 과정형 → '중1' 짧은 표기 (학년 그룹 라벨)
+function shortGrade(g: string): string {
+  const m = g.match(/^(초|중|고)\s*(\d)/)
+  return m ? `${m[1]}${m[2]}` : g
+}
+// 초1→고3 정렬키 (초·중·고 우선, 그 안에서 학년 오름차순)
+function gradeSortKey(g: string): number {
+  const m = g.match(/^(초|중|고)\s*(\d)/)
+  if (!m) return 9999
+  return LEVEL_ORDER[m[1]] * 10 + Number(m[2])
+}
+
 export default function Lesson() {
   const { students } = useStore()
   const active = students.filter(s => s.active)
@@ -36,16 +49,27 @@ export default function Lesson() {
     const filtered = active.filter(s => !kw || s.name.includes(kw))
     const m = new Map<string, Student[]>()
     for (const s of filtered) {
-      const key = groupBy === '학년' ? s.grade : (s.klass?.trim() || '미배정')
+      const key = groupBy === '학년' ? shortGrade(s.grade) : (s.klass?.trim() || '미배정')
       if (!m.has(key)) m.set(key, [])
       m.get(key)!.push(s)
     }
-    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ko'))
+    for (const arr of m.values()) arr.sort((x, y) => x.name.localeCompare(y.name, 'ko'))  // 그룹 내 이름순
+    return [...m.entries()].sort((a, b) => {
+      if (groupBy === '학년') {                     // 초1→고3 (초·중·고 순 + 학년 오름차순)
+        const d = gradeSortKey(a[0]) - gradeSortKey(b[0])
+        if (d !== 0) return d
+      }
+      if (a[0] === '미배정') return 1               // 반: 미배정은 맨 아래
+      if (b[0] === '미배정') return -1
+      return a[0].localeCompare(b[0], 'ko')
+    })
   }, [active, groupBy, q])
 
   function toggleGroup(name: string) {
     setClosed(prev => { const n = new Set(prev); if (n.has(name)) n.delete(name); else n.add(name); return n })
   }
+
+  const allOpen = groups.every(([name]) => !closed.has(name))
 
   if (active.length === 0) {
     return (
@@ -57,36 +81,60 @@ export default function Lesson() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[230px_1fr]">
-      <aside className="no-print h-fit rounded-2xl border border-line bg-white p-3">
-        <div className="mb-2 px-1 text-sm font-black">👤 {student ? `${student.name} 학생 수업` : '수업'}</div>
-        <div className="mb-2 flex rounded-lg border border-line p-0.5 text-xs font-semibold">
-          {(['학년', '반'] as const).map(g => (
-            <button key={g} onClick={() => setGroupBy(g)}
-              className={`grow rounded-md px-2 py-1 ${groupBy === g ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>{g}</button>
-          ))}
-        </div>
-        <input value={q} onChange={e => setQ(e.target.value)} placeholder="학생 이름 검색"
-          className="mb-2 w-full rounded-lg border border-line px-2.5 py-1.5 text-sm" />
-        <div className="mb-1 flex items-center px-1">
-          <span className="text-xs font-bold text-ink2">학생 {active.length}명</span>
-          <div className="grow" />
-          <button onClick={() => setClosed(new Set())} className="text-xs text-pine hover:underline">전체 열기</button>
-        </div>
-        {groups.map(([name, list]) => (
-          <div key={name} className="mb-1">
-            <button onClick={() => toggleGroup(name)}
-              className="flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2">
-              <span>{name} ({list.length})</span><span>{closed.has(name) ? '▸' : '▾'}</span>
-            </button>
-            {!closed.has(name) && list.map(s => (
-              <button key={s.id} onClick={() => setStudentId(s.id)}
-                className={`mb-0.5 block w-full rounded-lg px-3 py-2 text-left text-sm ${studentId === s.id ? 'bg-pine-soft font-bold text-pine-dark' : 'hover:bg-paper2'}`}>
-                {s.name} {s.klass && <span className="text-xs text-ink2">· {s.klass}</span>}
-              </button>
+      <aside className="no-print h-fit overflow-hidden rounded-2xl border border-line bg-white">
+        <div className="border-b border-line px-4 py-3">
+          <div className="mb-2.5 flex items-center gap-2 text-sm font-black text-ink">
+            <span className="grid h-6 w-6 place-items-center rounded-full bg-pine-soft text-pine-dark">👤</span>
+            {student ? `${student.name} 학생 수업` : '수업'}
+          </div>
+          <div className="flex rounded-lg bg-paper2 p-0.5 text-xs font-bold">
+            {(['학년', '반'] as const).map(g => (
+              <button key={g} onClick={() => setGroupBy(g)}
+                className={`grow rounded-md px-2 py-1.5 transition ${groupBy === g ? 'bg-white text-pine shadow-sm' : 'text-ink2 hover:text-ink'}`}>{g}</button>
             ))}
           </div>
-        ))}
-        {groups.length === 0 && <p className="px-2 py-3 text-center text-xs text-ink2">검색 결과 없음</p>}
+          <div className="relative mt-2">
+            <span className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink2">🔍</span>
+            <input value={q} onChange={e => setQ(e.target.value)} placeholder="학생 이름 검색"
+              className="w-full rounded-lg border border-line py-1.5 pl-8 pr-2.5 text-sm" />
+          </div>
+        </div>
+
+        <div className="flex items-center px-4 py-2">
+          <span className="text-xs font-bold text-ink2">학생 <b className="text-ink">{active.length}</b>명</span>
+          <div className="grow" />
+          <button onClick={() => setClosed(allOpen ? new Set(groups.map(g => g[0])) : new Set())}
+            className="text-xs font-semibold text-pine hover:underline">{allOpen ? '전체 닫기' : '전체 열기'}</button>
+        </div>
+
+        <div className="max-h-[70vh] overflow-y-auto px-2 pb-2">
+          {groups.map(([name, list]) => {
+            const open = !closed.has(name)
+            return (
+              <div key={name} className="mb-0.5">
+                <button onClick={() => toggleGroup(name)}
+                  className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 hover:bg-paper2">
+                  <span className="text-[10px] text-ink2">{open ? '▾' : '▸'}</span>
+                  <span className="text-sm font-black text-ink">{name}</span>
+                  <span className="rounded-full bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">{list.length}</span>
+                </button>
+                {open && (
+                  <div className="ml-3 border-l border-line/70 pl-1.5">
+                    {list.map(s => (
+                      <button key={s.id} onClick={() => setStudentId(s.id)}
+                        className={`block w-full rounded-lg px-3 py-1.5 text-left text-sm transition ${studentId === s.id
+                          ? 'bg-pine-soft font-bold text-pine-dark'
+                          : 'text-ink hover:bg-paper2'}`}>
+                        {s.name}{s.klass && groupBy === '학년' && <span className="ml-1 text-xs font-normal text-ink2">· {s.klass}</span>}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
+          {groups.length === 0 && <p className="px-2 py-6 text-center text-xs text-ink2">검색 결과 없음</p>}
+        </div>
       </aside>
 
       <main>
