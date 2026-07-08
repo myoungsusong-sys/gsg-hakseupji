@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName } from '../data/curriculum'
 import MathText from '../components/MathText'
+import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
 import type { Assignment, Student, Worksheet } from '../types'
 import { DIFF_COLOR, DIFF_LABEL, TAG_PRESETS } from '../types'
 
@@ -67,7 +68,17 @@ export default function WorksheetList({ view }: { view: View }) {
   const [listMenu, setListMenu] = useState<{ id: string; x: number; y: number } | null>(null)
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [assignTarget, setAssignTarget] = useState<string[] | null>(null)
+  const [outDialog, setOutDialog] = useState<'download' | 'print' | null>(null)
   const nav = useNavigate()
+
+  // 인쇄/다운로드 다이얼로그 — v1은 한 번에 1개 학습지만
+  function openOut(mode: 'download' | 'print') {
+    if (checked.size !== 1) {
+      alert('인쇄·다운로드는 한 번에 1개 학습지만 지원합니다')
+      return
+    }
+    setOutDialog(mode)
+  }
 
   const usedTags = useMemo(() => {
     const s = new Set<string>()
@@ -342,6 +353,14 @@ export default function WorksheetList({ view }: { view: View }) {
                     className="rounded-lg bg-pine px-4 py-1.5 font-semibold text-paper">
                     일괄 출제
                   </button>
+                  <button onClick={() => openOut('print')}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-blue-500 hover:text-blue-600">
+                    인쇄하기
+                  </button>
+                  <button onClick={() => openOut('download')}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-blue-500 hover:text-blue-600">
+                    다운로드
+                  </button>
                   <button onClick={() => {
                     if (!confirm(`선택한 학습지 ${checked.size}개를 휴지통으로 이동할까요?`)) return
                     ;[...checked].forEach(trashWorksheet)
@@ -516,6 +535,19 @@ export default function WorksheetList({ view }: { view: View }) {
               setListMenu(null)
             }} />
           </div>
+        )
+      })()}
+
+      {/* 학습지 다운로드/인쇄 다이얼로그 (1개 선택 시) — 학생 이름 옵션은 이 학습지가 출제된 학생 목록 */}
+      {outDialog && (() => {
+        const target = worksheets.find(w => w.id === [...checked][0])
+        if (!target) return null
+        const names = [...(assignedByWs.get(target.id) ?? [])]
+          .map(sid => students.find(s => s.id === sid)?.name)
+          .filter((n): n is string => !!n)
+        return (
+          <WorksheetOutputDialog mode={outDialog} ws={target} studentNames={names}
+            onClose={() => setOutDialog(null)} />
         )
       })()}
 

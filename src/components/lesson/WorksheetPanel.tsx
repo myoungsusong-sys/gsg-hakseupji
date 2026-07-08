@@ -8,6 +8,7 @@ import { normAnswer } from '../../lib/answers'
 import { typeName } from '../../data/curriculum'
 import ProblemContent from '../ProblemContent'
 import VideoModal from '../VideoModal'
+import WorksheetOutputDialog from '../WorksheetOutputDialog'
 import DrillModal, { type DrillWrong } from './DrillModal'
 import PeriodWrongModal from './PeriodWrongModal'
 
@@ -31,6 +32,9 @@ export default function WorksheetPanel({ student }: { student: Student }) {
   const [gradeWs, setGradeWs] = useState<Worksheet | null>(null)
   const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[] } | null>(null)
   const [periodOpen, setPeriodOpen] = useState(false)
+  // 행 체크 선택(학습지 id) → 하단 고정 다크 액션바 (매쓰플랫 동일)
+  const [checked, setChecked] = useState<Set<string>>(new Set())
+  const [outDialog, setOutDialog] = useState<'download' | 'print' | null>(null)
 
   const problemMap = useMemo(() => new Map(problems.map(p => [p.id, p])), [problems])
 
@@ -123,6 +127,29 @@ export default function WorksheetPanel({ student }: { student: Student }) {
     if (confirm('채점 기록은 유지됩니다. 출제를 취소할까요?')) removeAssignment(ws.id, student.id)
   }
 
+  /* ── 하단 액션바 동작 (선택 학습지 일괄) ── */
+  function toggleChecked(wsId: string) {
+    setChecked(prev => { const n = new Set(prev); if (n.has(wsId)) n.delete(wsId); else n.add(wsId); return n })
+  }
+  // 숙제 내기 — 이미 숙제면 addAssignment가 무시
+  function homeworkChecked() {
+    ;[...checked].forEach(wsId => addAssignment(wsId, [student.id], '숙제'))
+    setChecked(new Set())
+  }
+  // 인쇄/다운로드 — v1은 한 번에 1개 학습지만
+  function openOut(mode: 'download' | 'print') {
+    if (checked.size !== 1) {
+      alert('인쇄·다운로드는 한 번에 1개 학습지만 지원합니다')
+      return
+    }
+    setOutDialog(mode)
+  }
+  function cancelChecked() {
+    if (!confirm(`선택한 학습지 ${checked.size}개의 출제를 취소할까요? (채점 기록은 유지됩니다)`)) return
+    ;[...checked].forEach(wsId => removeAssignment(wsId, student.id))
+    setChecked(new Set())
+  }
+
   if (gradeWs) {
     return <WorksheetGrade student={student} ws={gradeWs} onBack={() => setGradeWs(null)} />
   }
@@ -173,7 +200,12 @@ export default function WorksheetPanel({ student }: { student: Student }) {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-line text-left text-xs text-ink2">
-                <th className="px-4 py-2.5">학년</th>
+                <th className="w-10 px-3 py-2.5 text-center">
+                  <input type="checkbox" className="h-4 w-4 accent-pine"
+                    checked={shown.length > 0 && shown.every(r => checked.has(r.ws.id))}
+                    onChange={e => setChecked(e.target.checked ? new Set(shown.map(r => r.ws.id)) : new Set())} />
+                </th>
+                <th className="px-2 py-2.5">학년</th>
                 <th className="py-2.5">태그</th>
                 <th className="py-2.5">학습지명</th>
                 <th className="py-2.5">출제일</th>
@@ -188,7 +220,11 @@ export default function WorksheetPanel({ student }: { student: Student }) {
                 const g = latestBy.get(ws.id)
                 return (
                   <tr key={a.id} className="border-b border-line/50 last:border-0">
-                    <td className="px-4 py-2.5 whitespace-nowrap">
+                    <td className="px-3 py-2.5 text-center">
+                      <input type="checkbox" checked={checked.has(ws.id)} onChange={() => toggleChecked(ws.id)}
+                        className="h-4 w-4 accent-pine" />
+                    </td>
+                    <td className="px-2 py-2.5 whitespace-nowrap">
                       <div className="font-semibold">{ws.grade.split('-')[0]}</div>
                       <div className="text-[11px] text-ink2">(22개정)</div>
                     </td>
@@ -268,11 +304,50 @@ export default function WorksheetPanel({ student }: { student: Student }) {
         </div>
       )}
 
+      {/* 하단 고정 다크 액션바 (매쓰플랫 동일): "학습지 N개 선택됨" + 숙제 내기·인쇄·다운로드·출제 취소 + ✕ */}
+      {checked.size > 0 && (
+        <>
+          <div className="h-20" />{/* 액션바가 마지막 행을 가리지 않게 여백 */}
+          <div className="fixed inset-x-0 bottom-0 z-30">
+            <div className="mx-auto flex max-w-4xl items-center gap-1 rounded-t-2xl bg-[#3d4350] px-6 py-2.5 text-white shadow-[0_-4px_16px_rgba(0,0,0,0.25)]">
+              <span className="text-sm font-semibold">학습지 {checked.size}개 선택됨</span>
+              <div className="grow" />
+              <BarBtn icon="📖" label="숙제 내기" onClick={homeworkChecked} />
+              <BarBtn icon="🖨" label="인쇄" onClick={() => openOut('print')} />
+              <BarBtn icon="⬇" label="다운로드" onClick={() => openOut('download')} />
+              <BarBtn icon="⊖" label="출제 취소" onClick={cancelChecked} />
+              <button onClick={() => setChecked(new Set())} title="선택 해제"
+                className="ml-3 self-start text-base leading-none text-white/60 hover:text-white">✕</button>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* 학습지 다운로드/인쇄 다이얼로그 (1개 선택 시) */}
+      {outDialog && (() => {
+        const target = worksheets.find(w => w.id === [...checked][0])
+        return target ? (
+          <WorksheetOutputDialog mode={outDialog} ws={target} studentNames={[student.name]}
+            onClose={() => setOutDialog(null)} />
+        ) : null
+      })()}
+
       {drill && (
         <DrillModal student={student} title={drill.title} wrongs={drill.wrongs} onClose={() => setDrill(null)} />
       )}
       {periodOpen && <PeriodWrongModal student={student} onClose={() => setPeriodOpen(false)} />}
     </div>
+  )
+}
+
+/* 액션바 아이콘 버튼 (아이콘 위 · 라벨 아래) */
+function BarBtn({ icon, label, onClick }: { icon: string; label: string; onClick: () => void }) {
+  return (
+    <button onClick={onClick}
+      className="flex min-w-16 flex-col items-center gap-0.5 rounded-lg px-3 py-1 text-xs text-white/90 hover:bg-white/10">
+      <span className="text-base leading-none">{icon}</span>
+      {label}
+    </button>
   )
 }
 

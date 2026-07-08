@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, typeUnitName } from '../data/curriculum'
 import { CONCEPTS } from '../data/concepts'
@@ -31,6 +31,13 @@ const G = {
   qaLabelH: 19.2,                  // 「빠른정답」 라벨 영역 (표 시작 y=224.5pt − 헤더 170pt)
   soGap: 8.6,                      // 해설 블록 간 24.4pt
   minSolveH: 40,                   // 풀이칸 행 최소 높이
+  // OMR 별지 (§7-bis) — 표 2단, 페이지 절대좌표(mm)
+  omrColXL: 12.9,                  // 좌단 표 시작 x 36.5pt
+  omrColXR: 109,                   // 우단 표 시작 x 309pt
+  omrColW: 88,                     // 단 폭 249.5pt
+  omrNoW: 14.1,                    // 번호칸 40pt
+  omrRowH: 13.6,                   // 행 높이 38.5pt
+  omrRows1: 15,                    // 1페이지 좌단 15행 → 우단 이어짐
 }
 const CONTENT_W = G.pageW - G.mx * 2               // 181.8
 const BODY1_H = G.bodyBottom - G.body1Top          // 222.6
@@ -66,6 +73,16 @@ type PageDef =
   | { part: 's'; first: boolean; kind: 'split'; slots: number[]; conceptsFirst: boolean }
   | { part: 'q'; first: boolean; kind: 'qa'; left: number[]; right: number[] }
   | { part: 'so'; first: boolean; kind: 'socols'; cols: [number[], number[]] }
+  | { part: 'o'; first: boolean; kind: 'omr'; left: number[]; right: number[] }
+
+/* 인쇄 작업 단위 — 렌더할 부(문제지 s / 빠른정답 q / 정답해설 so / OMR o)와 파일명 라벨 */
+type PrintJob = { label: string; s: boolean; q: boolean; so: boolean; o: boolean }
+const PART_FLAG: Record<string, keyof Omit<PrintJob, 'label'>> = {
+  '문제지': 's', '빠른정답': 'q', '정답해설': 'so', 'OMR': 'o',
+}
+const jobOf = (label: string, sel: string[]): PrintJob => ({
+  label, s: sel.includes('문제지'), q: sel.includes('빠른정답'), so: sel.includes('정답해설'), o: sel.includes('OMR'),
+})
 
 // 블록을 페이지×열에 순서대로 분배. 열에 안 들어가면 다음 열/페이지로. (단독 초과 블록은 그냥 배치)
 function fillColumns(heights: number[], gap: number, ncols: number, availFor: (page: number, col: number) => number): number[][][] {
@@ -93,10 +110,15 @@ function fillColumns(heights: number[], gap: number, ncols: number, availFor: (p
 export default function WorksheetView() {
   const { id } = useParams()
   const nav = useNavigate()
+  const [searchParams, setSearchParams] = useSearchParams()
   const { worksheets, problems } = useStore()
-  // 인쇄 작업(job): 지정 부분만 렌더 → 매쓰플랫처럼 문제지/빠른정답/정답해설 따로 PDF 저장.
-  const [job, setJob] = useState<{ label: string; s: boolean; q: boolean; so: boolean } | null>(null)
+  // 인쇄 작업(job): 지정 부분만 렌더 → 매쓰플랫처럼 문제지/빠른정답/정답해설/OMR 따로 PDF 저장.
+  const [job, setJob] = useState<PrintJob | null>(null)
+  // 개별 PDF(each) 모드: 남은 부들의 순차 인쇄 큐 — 이전 print() 리턴 후 다음 실행
+  const jobQueueRef = useRef<PrintJob[]>([])
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
+  // 다이얼로그에서 넘어온 학생 이름 표시 옵션 (?name=)
+  const studentName = searchParams.get('name')
 
   const ws = worksheets.find(w => w.id === id)
   const items = useMemo(
@@ -196,11 +218,25 @@ export default function WorksheetView() {
     fillColumns(soH, G.soGap, 2, p => p === 0 ? BODY1_H : BODYN_H)
       .forEach((cols, pi) => defs.push({ part: 'so', first: pi === 0, kind: 'socols', cols: [cols[0], cols[1]] }))
 
+    // 4부. OMR (§7-bis) — 행 13.6mm 고정 2단 표, 좌단 15행 → 우단 이어짐, 넘치면 다음 페이지
+    {
+      let oi = 0, opi = 0
+      while (oi < items.length) {
+        const perCol = opi === 0 ? G.omrRows1 : Math.floor(BODYN_H / G.omrRowH)
+        const left: number[] = [], right: number[] = []
+        for (let k = 0; k < perCol && oi < items.length; k++) left.push(oi++)
+        for (let k = 0; k < perCol && oi < items.length; k++) right.push(oi++)
+        defs.push({ part: 'o', first: opi === 0, kind: 'omr', left, right })
+        opi++
+      }
+    }
+
     return defs
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [measured, layoutKey, items, qaRows, concepts.length])
 
-  // job이 걸리면: 해당 부분만 렌더된 뒤 파일명(제목_문제지 등) 세팅 → 인쇄 → 원복
+  // job이 걸리면: 해당 부분만 렌더된 뒤 파일명(제목_문제지 등) 세팅 → 인쇄 → 원복.
+  // window.print()는 인쇄창이 닫힌 뒤 리턴 → 큐(each 모드)의 다음 부를 이어서 인쇄.
   useEffect(() => {
     if (!job || !ws) return
     const prevTitle = document.title
@@ -208,16 +244,43 @@ export default function WorksheetView() {
     const raf = requestAnimationFrame(() => {
       window.print()
       document.title = prevTitle
+      const next = jobQueueRef.current.shift()
+      if (next) { setJob(next); return }
       setJob(null)
+      // 자동 인쇄(다이얼로그 경유)였다면 쿼리 제거 → 이후엔 일반 미리보기 화면
+      if (new URLSearchParams(window.location.hash.split('?')[1] ?? '').has('out')) {
+        setSearchParams({}, { replace: true })
+      }
     })
     return () => cancelAnimationFrame(raf)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [job, ws])
+
+  // 다운로드/인쇄 다이얼로그 쿼리(?out=문제지,정답해설&mode=one|each&name=…) — 조판 완료 후 자동 인쇄
+  const autoRan = useRef(false)
+  const ready0 = pagesAll != null
+  useEffect(() => {
+    if (!ready0 || autoRan.current) return
+    const out = searchParams.get('out')
+    if (!out) return
+    autoRan.current = true
+    const sel = out.split(',').filter(p => p in PART_FLAG)
+    if (sel.length === 0) { setSearchParams({}, { replace: true }); return }
+    if (searchParams.get('mode') === 'each' && sel.length > 1) {
+      const jobs = sel.map(p => jobOf(p, [p]))
+      jobQueueRef.current = jobs.slice(1)
+      setJob(jobs[0])
+    } else {
+      setJob(jobOf(sel.length === 4 ? '전체' : sel.join('_'), sel))
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready0, searchParams])
 
   if (!ws) return <div className="text-ink2">학습지를 찾을 수 없습니다.</div>
 
-  const printPart = (label: string, s: boolean, q: boolean, so: boolean) => setJob({ label, s, q, so })
-  const show: Record<'s' | 'q' | 'so', boolean> = {
-    s: job ? job.s : true, q: job ? job.q : true, so: job ? job.so : true,
+  const printPart = (label: string, ...sel: string[]) => setJob(jobOf(label, sel))
+  const show: Record<'s' | 'q' | 'so' | 'o', boolean> = {
+    s: job ? job.s : true, q: job ? job.q : true, so: job ? job.so : true, o: job ? job.o : true,
   }
 
   const fmtDate = (d: Date) =>
@@ -316,7 +379,7 @@ export default function WorksheetView() {
 
   const header1 = (
     <PageHeader1 theme={theme.main} grade={ws.grade} title={ws.title} subtitle={subtitle}
-      dateText={dateText} count={items.length} author={ws.author} />
+      dateText={dateText} count={items.length} author={ws.author} studentName={studentName} />
   )
   const headerN = <PageHeaderN title={ws.title} subtitle={subtitle} />
 
@@ -368,6 +431,44 @@ export default function WorksheetView() {
         </div>
       )
     }
+    // OMR (§7-bis): 2단 표(전체 셀 테두리 0.5pt #cccccc), 행 13.6mm = 번호칸 14.1mm + 답칸,
+    // 번호 13pt bold 테마색, 객관식 = ①~⑤ 세로 알약형 빈 버블(윤곽선만), 주관식 = 빈칸
+    if (pg.kind === 'omr') {
+      const omrCol = (rows: number[], xMm: number) => rows.length === 0 ? null : (
+        <div style={{ position: 'absolute', left: `${xMm - G.mx}mm`, top: 0, width: `${G.omrColW}mm` }}>
+          {rows.map((i, k) => (
+            <div key={i} className="omr-row" style={{
+              display: 'flex', height: `${G.omrRowH}mm`, boxSizing: 'border-box',
+              border: '0.5pt solid #cccccc', borderTop: k === 0 ? '0.5pt solid #cccccc' : 'none',
+            }}>
+              <div style={{
+                width: `${G.omrNoW}mm`, flex: 'none', borderRight: '0.5pt solid #cccccc',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: '13pt', fontWeight: 800, color: theme.main,
+              }}>
+                {i + 1}
+              </div>
+              <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5.5mm' }}>
+                {items[i].kind === '객관식' && [1, 2, 3, 4, 5].map(n => (
+                  <span key={n} className="omr-bubble" style={{
+                    width: '4.2mm', height: '8.6mm', boxSizing: 'border-box',
+                    border: '0.5pt solid #b5b5b5', borderRadius: '2.1mm',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '6.5pt', lineHeight: 1, color: '#b5b5b5',
+                  }}>{n}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )
+      return (
+        <div style={{ position: 'relative', height: '100%' }}>
+          {omrCol(pg.left, G.omrColXL)}
+          {omrCol(pg.right, G.omrColXR)}
+        </div>
+      )
+    }
     // 빠른정답
     return (
       <div style={{ position: 'relative', height: '100%' }}>
@@ -403,17 +504,19 @@ export default function WorksheetView() {
         <button onClick={() => nav('/')} className="rounded-lg border border-line px-4 py-2 text-sm">← 목록</button>
         <button onClick={() => nav(`/make?edit=${ws.id}`)} className="rounded-lg border border-line px-4 py-2 text-sm hover:border-pine hover:text-pine">✏ 수정</button>
         <div className="grow" />
-        {/* 매쓰플랫 분류 용어: 문제지 / 빠른정답 / 정답해설 */}
+        {/* 매쓰플랫 분류 용어: 문제지 / 빠른정답 / 정답해설 / OMR */}
         <span className="text-sm font-bold text-ink2">따로 다운로드</span>
         <div className="flex items-center gap-1 rounded-lg border border-line p-1">
-          <button onClick={() => printPart('문제지', true, false, false)} disabled={!ready}
+          <button onClick={() => printPart('문제지', '문제지')} disabled={!ready}
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">📄 문제지</button>
-          <button onClick={() => printPart('빠른정답', false, true, false)} disabled={!ready}
+          <button onClick={() => printPart('빠른정답', '빠른정답')} disabled={!ready}
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🔑 빠른정답</button>
-          <button onClick={() => printPart('정답해설', false, false, true)} disabled={!ready}
+          <button onClick={() => printPart('정답해설', '정답해설')} disabled={!ready}
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">📝 정답해설</button>
+          <button onClick={() => printPart('OMR', 'OMR')} disabled={!ready}
+            className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🅾 OMR</button>
         </div>
-        <button onClick={() => printPart('전체', true, true, true)} disabled={!ready}
+        <button onClick={() => printPart('전체', '문제지', '빠른정답', '정답해설', 'OMR')} disabled={!ready}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄 / PDF</button>
       </div>
       <p className="no-print mb-6 text-[11px] text-ink2">
@@ -474,9 +577,9 @@ export default function WorksheetView() {
 }
 
 /* ── 1p 헤더 (매쓰플랫 §5-2): 학년 태그+제목 16pt 인라인 / 부제 13pt / 메타 11pt+이름 / 우상단 학원명 ── */
-function PageHeader1({ theme, grade, title, subtitle, dateText, count, author }: {
+function PageHeader1({ theme, grade, title, subtitle, dateText, count, author, studentName }: {
   theme: string; grade: string; title: string; subtitle: string
-  dateText: string | null; count: number; author: string
+  dateText: string | null; count: number; author: string; studentName?: string | null
 }) {
   return (
     <>
@@ -496,7 +599,9 @@ function PageHeader1({ theme, grade, title, subtitle, dateText, count, author }:
         )}
         <div style={{ position: 'absolute', left: 0, top: '45.2mm', fontSize: '11pt', color: '#333333' }}>
           {dateText && <>{dateText} | </>}{count}문제{author && <> | <span style={{ color: '#707070' }}>{author}</span></>}
-          <span style={{ marginLeft: '6mm', color: '#000000' }}>이름 ________________</span>
+          <span style={{ marginLeft: '6mm', color: '#000000' }}>
+            이름 {studentName ? <b>{studentName}</b> : '________________'}
+          </span>
         </div>
       </div>
       {/* 헤더 구분선 y=60mm, 전폭 1pt #f4f4f4 */}
