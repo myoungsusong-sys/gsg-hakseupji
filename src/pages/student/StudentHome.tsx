@@ -2,8 +2,10 @@ import { useMemo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
+import { typeName } from '../../data/curriculum'
+import { weakTypes, wrongByType } from '../../lib/drill'
 import { useStudentSelf } from './StudentShell'
-import { latestGradingFor, myWorksheetRows, readDraft, statusOf, STATUS_CLASS } from './common'
+import { latestGradingFor, myWorksheetRows, readDraft, statusOf, usePreview, PREVIEW_LOCK_TITLE, STATUS_CLASS } from './common'
 
 const DAY_LABEL = ['일', '월', '화', '수', '목', '금', '토']
 
@@ -13,8 +15,9 @@ const DAY_LABEL = ['일', '월', '화', '수', '목', '금', '토']
 // ③ 진행중/최근 — 배정 학습지 중 미완료 최신
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings } = useStore()
+  const { assignments, worksheets, gradings, wbItems } = useStore()
   const nav = useNavigate()
+  const pv = usePreview()
 
   const myGradings = useMemo(() => gradings.filter(g => g.studentId === me.id), [gradings, me.id])
 
@@ -54,6 +57,12 @@ export default function StudentHome() {
       .filter(r => statusOf(r.ws.id, r.g) !== '학습완료')
       .slice(0, 3)
   }, [assignments, worksheets, gradings, me.id])
+
+  // 스마일 챌린지 — 취약 유형 TOP2 칩 (오답이 있는 유형)
+  const weak = useMemo(
+    () => weakTypes(wrongByType(me.id, gradings, wbItems)).slice(0, 2),
+    [me.id, gradings, wbItems],
+  )
 
   const fmt = (d: Date) => `${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`
 
@@ -108,12 +117,42 @@ export default function StudentHome() {
         </div>
       </section>
 
-      {/* ③ 진행중/최근 학습지 */}
+      {/* ③ 스마일 챌린지 — 취약 유형 칩 + 챌린지 유도 (매쓰플랫 스마일 챌린지 자리) */}
+      <section className="rounded-2xl border border-line bg-white p-6">
+        <div className="mb-3 flex items-baseline">
+          <h2 className="font-black">스마일 챌린지 😊</h2>
+          <div className="grow" />
+          {pv.on ? (
+            <button onClick={() => pv.go('challenge')} className="text-sm font-semibold text-pine hover:underline">챌린지 메뉴로 이동하기 →</button>
+          ) : (
+            <Link to="/student/challenge" className="text-sm font-semibold text-pine hover:underline">챌린지 메뉴로 이동하기 →</Link>
+          )}
+        </div>
+        {weak.length === 0 ? (
+          <p className="text-sm text-ink2">아직 추천 유형이 없어요. 챌린지 메뉴에서 학습을 진행해주세요.</p>
+        ) : (
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-sm text-ink2">이 유형이 약해요 — 챌린지로 탈출해봐요!</span>
+            {weak.map(w => (
+              <span key={w.typeId}
+                className="rounded-full border border-clay/50 bg-red-50/60 px-3 py-1.5 text-xs font-bold text-clay">
+                {typeName(w.typeId)} <span className="font-semibold opacity-70">오답 {w.wrong}/{w.total}</span>
+              </span>
+            ))}
+          </div>
+        )}
+      </section>
+
+      {/* ④ 진행중/최근 학습지 */}
       <section className="rounded-2xl border border-line bg-white p-6">
         <div className="mb-4 flex items-baseline">
           <h2 className="font-black">진행중인 학습지</h2>
           <div className="grow" />
-          <Link to="/student/worksheets" className="text-sm font-semibold text-pine hover:underline">학습지 전체 보기 →</Link>
+          {pv.on ? (
+            <button onClick={() => pv.go('worksheets')} className="text-sm font-semibold text-pine hover:underline">학습지 전체 보기 →</button>
+          ) : (
+            <Link to="/student/worksheets" className="text-sm font-semibold text-pine hover:underline">학습지 전체 보기 →</Link>
+          )}
         </div>
         {pending.length === 0 ? (
           <div className="rounded-xl border border-dashed border-line py-10 text-center text-sm text-ink2">
@@ -131,8 +170,9 @@ export default function StudentHome() {
                     <div className="text-xs text-ink2">{ws.problemIds.length}문제 · 출제일 {dateKey(date).slice(2).replace(/-/g, '.')}</div>
                   </div>
                   <div className="grow" />
-                  <button onClick={() => nav(`/student/solve/${ws.id}`)}
-                    className="shrink-0 rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
+                  <button onClick={() => nav(`/student/solve/${ws.id}`)} disabled={pv.on}
+                    title={pv.on ? PREVIEW_LOCK_TITLE : undefined}
+                    className="shrink-0 rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-40">
                     {readDraft(ws.id) ? '이어서 풀기' : '풀기'}
                   </button>
                 </div>

@@ -1,22 +1,16 @@
-import { createContext, useContext } from 'react'
 import { Navigate, NavLink, Outlet, useNavigate } from 'react-router-dom'
 import type { Student } from '../../types'
 import { useAuth } from '../../lib/auth'
 import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail } from '../../lib/role'
+import { StudentSelfCtx } from './common'
 
 // ── 학생 셸 — #/student/* 공통 프레임 + 본인(Student) 컨텍스트 ──
 // 매쓰플랫 학생앱 헤더 구조: 로고 | 학습 홈 · 챌린지 · 교재 · 학습지 · 강의 | 우측 학생명
-// 1단계는 학습 홈·학습지만 활성, 챌린지·교재·강의는 자리만(준비 중 뱃지).
+// 컨텍스트는 common.tsx의 StudentSelfCtx — 선생님 미리보기(StudentAppPreview)와 공유.
 
-const Ctx = createContext<Student | null>(null)
-
-export function useStudentSelf(): Student {
-  const s = useContext(Ctx)
-  if (!s) throw new Error('StudentShell missing')
-  return s
-}
+export { useStudentSelf } from './common'
 
 const tab = ({ isActive }: { isActive: boolean }) =>
   `px-3.5 py-2 rounded-full text-[15px] font-bold transition ${
@@ -58,7 +52,7 @@ export default function StudentShell() {
   }
 
   return (
-    <Ctx.Provider value={me}>
+    <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
         <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-5 px-6 py-3">
@@ -68,14 +62,10 @@ export default function StudentShell() {
             </div>
             <nav className="flex items-center gap-1">
               <NavLink to="/student" end className={tab}>학습 홈</NavLink>
+              <NavLink to="/student/challenge" className={tab}>챌린지</NavLink>
+              <NavLink to="/student/workbooks" className={tab}>교재</NavLink>
               <NavLink to="/student/worksheets" className={tab}>학습지</NavLink>
-              {['챌린지', '교재', '강의'].map(m => (
-                <span key={m} title="2단계에서 열릴 예정이에요"
-                  className="flex cursor-default items-center gap-1 px-3.5 py-2 text-[15px] font-bold text-ink2/40">
-                  {m}
-                  <span className="rounded bg-paper2 px-1 py-0.5 text-[9px] font-bold text-ink2/60">준비 중</span>
-                </span>
-              ))}
+              <NavLink to="/student/lectures" className={tab}>강의</NavLink>
             </nav>
             <div className="grow" />
             <span className="text-sm font-bold">{me.name}<span className="ml-1 font-normal text-ink2">학생</span></span>
@@ -89,6 +79,6 @@ export default function StudentShell() {
           <Outlet />
         </main>
       </div>
-    </Ctx.Provider>
+    </StudentSelfCtx.Provider>
   )
 }

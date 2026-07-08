@@ -10,6 +10,9 @@ import StudentHome from './pages/student/StudentHome'
 import StudentWorksheets from './pages/student/StudentWorksheets'
 import StudentSolve from './pages/student/StudentSolve'
 import StudentResult from './pages/student/StudentResult'
+import StudentWorkbooks from './pages/student/StudentWorkbooks'
+import StudentChallenge from './pages/student/StudentChallenge'
+import StudentLectures from './pages/student/StudentLectures'
 import Layout from './components/Layout'
 import PrepLayout from './components/PrepLayout'
 import Placeholder from './components/Placeholder'
@@ -53,6 +56,9 @@ function Gate() {
             <Route path="worksheets" element={<StudentWorksheets />} />
             <Route path="solve/:wsId" element={<StudentSolve />} />
             <Route path="result/:wsId" element={<StudentResult />} />
+            <Route path="workbooks" element={<StudentWorkbooks />} />
+            <Route path="challenge" element={<StudentChallenge />} />
+            <Route path="lectures" element={<StudentLectures />} />
             <Route path="*" element={<Navigate to="/student" replace />} />
           </Route>
 

@@ -5,7 +5,8 @@ import { dateKey } from '../../lib/dates'
 import { useStudentSelf } from './StudentShell'
 import { useSupplement } from './supplement'
 import {
-  latestGradingFor, myWorksheetRows, statusOf, summaryOf, STATUS_CLASS, type StudentWsStatus,
+  latestGradingFor, myWorksheetRows, statusOf, summaryOf, usePreview, PREVIEW_LOCK_TITLE,
+  STATUS_CLASS, type StudentWsStatus,
 } from './common'
 
 const TABS = ['전체', '학습가능', '풀이중', '학습완료'] as const
@@ -17,6 +18,7 @@ export default function StudentWorksheets() {
   const { assignments, worksheets, gradings } = useStore()
   const nav = useNavigate()
   const createSupplement = useSupplement(me)
+  const pv = usePreview()
   const [tab, setTab] = useState<typeof TABS[number]>('전체')
 
   const rows = useMemo(() => {
@@ -78,7 +80,8 @@ export default function StudentWorksheets() {
                     </td>
                     <td className="py-3 pr-3">
                       <button onClick={() => nav(done ? `/student/result/${ws.id}` : `/student/solve/${ws.id}`)}
-                        className="text-left font-bold hover:text-pine hover:underline">
+                        disabled={pv.on} title={pv.on ? PREVIEW_LOCK_TITLE : undefined}
+                        className="text-left font-bold hover:text-pine hover:underline disabled:cursor-default disabled:hover:text-ink disabled:hover:no-underline">
                         {ws.title}
                       </button>
                       <div className="mt-0.5 text-xs text-pine">{ws.problemIds.length}문제</div>
@@ -86,12 +89,14 @@ export default function StudentWorksheets() {
                     <td className="py-3 whitespace-nowrap">
                       {done && sum ? (
                         <button onClick={() => nav(`/student/result/${ws.id}`)}
-                          className="rounded-lg border border-pine px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft">
+                          disabled={pv.on} title={pv.on ? PREVIEW_LOCK_TITLE : undefined}
+                          className="rounded-lg border border-pine px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft disabled:cursor-default disabled:hover:bg-transparent">
                           {sum.score}점 <span className="ml-1 font-semibold text-clay">✕ {sum.wrong}</span> <span className="font-semibold text-pine-dark">○ {sum.correct}</span>
                         </button>
                       ) : (
                         <button onClick={() => nav(`/student/solve/${ws.id}`)}
-                          className="rounded-lg bg-pine px-3 py-1 text-xs font-bold text-paper hover:brightness-110">
+                          disabled={pv.on} title={pv.on ? PREVIEW_LOCK_TITLE : undefined}
+                          className="rounded-lg bg-pine px-3 py-1 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-40">
                           {st === '풀이중' ? '이어서 풀기' : '풀기'}
                         </button>
                       )}
@@ -100,14 +105,15 @@ export default function StudentWorksheets() {
                       {done && g ? (
                         <div className="flex gap-1.5">
                           <button onClick={() => createSupplement('오답학습', ws, g)}
-                            disabled={wrongCount === 0}
-                            title={wrongCount === 0 ? '오답이 없어요' : '틀린 유형의 쌍둥이·유사 문제로 다시 연습해요'}
+                            disabled={wrongCount === 0 || pv.on}
+                            title={pv.on ? PREVIEW_LOCK_TITLE : wrongCount === 0 ? '오답이 없어요' : '틀린 유형의 쌍둥이·유사 문제로 다시 연습해요'}
                             className="rounded-lg border border-clay/60 px-2.5 py-1 text-xs font-bold text-clay hover:bg-red-50 disabled:opacity-30 disabled:hover:bg-transparent">
                             ⊕ 오답학습
                           </button>
                           <button onClick={() => createSupplement('심화학습', ws, g)}
-                            title="같은 유형을 한 단계 어렵게 연습해요"
-                            className="rounded-lg border border-pine/60 px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft">
+                            disabled={pv.on}
+                            title={pv.on ? PREVIEW_LOCK_TITLE : '같은 유형을 한 단계 어렵게 연습해요'}
+                            className="rounded-lg border border-pine/60 px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft disabled:opacity-30 disabled:hover:bg-transparent">
                             📊 심화학습
                           </button>
                         </div>

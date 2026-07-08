@@ -1,9 +1,11 @@
 import { useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
-import type { Grading, GradeResult, Student } from '../types'
+import type { Grading, GradeResult, Student, StudentAppConfig } from '../types'
+import { studentEmailOf } from '../lib/role'
+import StudentAppPreview from './student/StudentAppPreview'
 
-const TABS = ['학생 관리', '반 관리', '선생님 관리', '추가 관리'] as const
+const TABS = ['학생 관리', '반 관리', '선생님 관리', '학생앱', '추가 관리'] as const
 type Tab = typeof TABS[number]
 
 const SCHOOL_FILTERS = ['전체', '초', '중', '고'] as const
@@ -48,6 +50,7 @@ export default function Students() {
       {tab === '학생 관리' && <StudentsTab />}
       {tab === '반 관리' && <KlassTab />}
       {tab === '선생님 관리' && <TeachersTab />}
+      {tab === '학생앱' && <StudentAppTab />}
       {tab === '추가 관리' && <ExtraTab />}
     </div>
   )
@@ -66,6 +69,7 @@ function StudentsTab() {
   const [showBulk, setShowBulk] = useState(false)
   const [showImport, setShowImport] = useState(false)
   const [detail, setDetail] = useState<Student | null>(null)
+  const [appPreview, setAppPreview] = useState<Student | null>(null)
 
   const activeCount = students.filter(s => s.active).length
   const list = useMemo(() => {
@@ -113,6 +117,7 @@ function StudentsTab() {
       {showBulk && <BulkModal onClose={() => setShowBulk(false)} />}
       {showImport && <MathflatImportModal onClose={() => setShowImport(false)} />}
       {detail && <DetailModal key={detail.id} s={detail} onClose={() => setDetail(null)} />}
+      {appPreview && <StudentAppPreview key={appPreview.id} s={appPreview} onClose={() => setAppPreview(null)} />}
 
       {list.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-ink2">
@@ -128,6 +133,7 @@ function StudentsTab() {
                 <th className="px-3 py-2.5 font-bold">학생 이름</th>
                 <th className="px-3 py-2.5 font-bold">학부모 연락처</th>
                 <th className="px-3 py-2.5 font-bold">반</th>
+                <th className="px-3 py-2.5 font-bold">학생앱</th>
                 <th className="px-3 py-2.5 font-bold">상세</th>
               </tr>
             </thead>
@@ -145,6 +151,13 @@ function StudentsTab() {
                   <td className="px-3 py-2.5 font-bold">{s.name}</td>
                   <td className="px-3 py-2.5">{s.parentPhone ?? <span className="text-ink2">—</span>}</td>
                   <td className="px-3 py-2.5">{s.klass ?? <span className="text-ink2">—</span>}</td>
+                  <td className="px-3 py-2.5">
+                    <button onClick={() => setAppPreview(s)}
+                      title="이 학생 시점의 학생앱을 미리보기로 열어요 (보기 전용)"
+                      className="rounded-lg border border-line px-2.5 py-1 text-xs font-bold text-ink2 hover:border-pine hover:text-pine">
+                      학생앱으로 이동
+                    </button>
+                  </td>
                   <td className="px-3 py-2.5">
                     <button onClick={() => setDetail(s)}
                       className="text-xs font-bold text-pine hover:underline">상세보기</button>
@@ -779,6 +792,107 @@ function TeachersTab() {
   )
 }
 
+// ── 학생앱 (매쓰플랫 관리 > 학생앱 설정 등가) ────────────────────
+// 공개 설정 3토글(정답/해설/풀이영상 — 학생 결과 화면 노출 제어) + 학생 계정 안내
+
+const APP_TOGGLES: { key: keyof StudentAppConfig; label: string; desc: string }[] = [
+  { key: 'showAnswer', label: '정답 공개', desc: '학생이 채점 후 결과 화면에서 각 문제의 정답을 볼 수 있어요.' },
+  { key: 'showSolution', label: '해설 공개', desc: '결과 화면에서 문제별 해설을 펼쳐볼 수 있어요.' },
+  { key: 'showVideo', label: '풀이영상 공개', desc: '풀이영상이 있는 문제는 결과 화면에서 영상을 볼 수 있어요.' },
+]
+
+function StudentAppTab() {
+  const { studentAppConfig, setStudentAppConfig, students } = useStore()
+  const [cfg, setCfg] = useState<StudentAppConfig>(studentAppConfig)
+  const [savedAt, setSavedAt] = useState<string | null>(null)
+  const dirty = APP_TOGGLES.some(t => cfg[t.key] !== studentAppConfig[t.key])
+
+  const save = () => {
+    setStudentAppConfig(cfg)
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+
+  const withAccount = students.filter(s => s.active && (s.loginId ?? s.attendNo)).length
+  const sample = students.find(s => s.active && (s.loginId ?? s.attendNo))
+  const sampleId = sample ? (sample.loginId ?? sample.attendNo)! : '0412'
+
+  return (
+    <div className="grid gap-5 lg:grid-cols-2">
+      {/* 공개 설정 */}
+      <section className="rounded-2xl border border-line bg-white p-6">
+        <h3 className="mb-1 font-black">학생앱 공개 설정</h3>
+        <p className="mb-4 text-sm text-ink2">
+          학생이 학습지를 제출한 뒤 결과 화면에서 무엇을 볼 수 있는지 정해요. 끄면 해당 항목이
+          🔒 비공개로 표시됩니다. (전체 학생 공통)
+        </p>
+        <div className="grid gap-2.5">
+          {APP_TOGGLES.map(t => (
+            <label key={t.key}
+              className="flex cursor-pointer items-center gap-3 rounded-xl border border-line/70 px-4 py-3 hover:bg-paper2/40">
+              <input type="checkbox" checked={cfg[t.key]}
+                onChange={e => setCfg(prev => ({ ...prev, [t.key]: e.target.checked }))}
+                className="h-4.5 w-4.5 accent-pine" />
+              <div>
+                <div className="text-sm font-bold">{t.label}
+                  <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${cfg[t.key] ? 'bg-pine-soft text-pine-dark' : 'bg-paper2 text-ink2'}`}>
+                    {cfg[t.key] ? '공개' : '비공개'}
+                  </span>
+                </div>
+                <div className="text-xs text-ink2">{t.desc}</div>
+              </div>
+            </label>
+          ))}
+        </div>
+        <div className="mt-4 flex items-center gap-3">
+          <button onClick={save} disabled={!dirty}
+            className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper disabled:opacity-40">저장</button>
+          {savedAt && !dirty && <span className="text-xs text-pine-dark">✓ 저장됨 {savedAt}</span>}
+          {dirty && <span className="text-xs text-clay">저장하지 않은 변경이 있어요</span>}
+        </div>
+      </section>
+
+      {/* 학생 계정 안내 */}
+      <section className="rounded-2xl border border-line bg-white p-6">
+        <h3 className="mb-1 font-black">학생 계정 안내</h3>
+        <p className="mb-4 text-sm text-ink2">
+          학생은 로그인 화면의 <b>[학생]</b> 탭에서 아이디·비밀번호로 들어와요.
+          재원생 중 아이디(출결번호) 보유 <b className="text-pine">{withAccount}</b>명.
+        </p>
+        <div className="grid gap-2 text-sm">
+          <div className="rounded-xl bg-paper2/70 px-4 py-3">
+            <div className="text-xs font-bold text-ink2">아이디</div>
+            <div>학생의 <b>출결번호</b> (또는 별도 지정한 loginId)</div>
+          </div>
+          <div className="rounded-xl bg-paper2/70 px-4 py-3">
+            <div className="text-xs font-bold text-ink2">기본 비밀번호</div>
+            <div><b>gsg&lt;출결번호&gt;</b> <span className="text-xs text-ink2">(예: 출결번호 {sampleId} → gsg{sampleId})</span></div>
+          </div>
+          <div className="rounded-xl bg-paper2/70 px-4 py-3">
+            <div className="text-xs font-bold text-ink2">계정 이메일 규약 (내부)</div>
+            <div className="break-all font-mono text-xs">{studentEmailOf(sampleId)}</div>
+            <div className="mt-0.5 text-xs text-ink2">아이디가 자동으로 이 규약의 Supabase 계정으로 변환돼요.</div>
+          </div>
+          <div className="rounded-xl bg-paper2/70 px-4 py-3">
+            <div className="text-xs font-bold text-ink2">계정 일괄 생성</div>
+            <div className="font-mono text-xs">node scripts/create-student-accounts.mjs</div>
+            <div className="mt-0.5 text-xs text-ink2">
+              앱 저장소의 스크립트로 재원생 전원의 계정을 만들어요 (Supabase service key 필요).
+              새 학생이 들어오면 다시 실행 — 기존 계정은 건너뛰어요.
+            </div>
+          </div>
+          <div className="rounded-xl bg-paper2/70 px-4 py-3">
+            <div className="text-xs font-bold text-ink2">학생 시점 확인</div>
+            <div className="text-xs text-ink2">
+              학생 관리 표의 <b className="text-ink">[학생앱으로 이동]</b> 버튼으로 그 학생 시점의
+              학생앱을 보기 전용으로 미리볼 수 있어요.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
 // ── 추가 관리 ─────────────────────────────────────
 
 const EXTRA_CARDS: { title: string; sparta: boolean }[] = [
@@ -786,7 +900,6 @@ const EXTRA_CARDS: { title: string; sparta: boolean }[] = [
   { title: '출결', sparta: true },
   { title: '교육비', sparta: true },
   { title: '학부모앱 공지 설정', sparta: false },
-  { title: '학생앱 설정', sparta: false },
   { title: '실험실', sparta: false },
 ]
 

@@ -1,7 +1,26 @@
-import type { Assignment, Grading, Problem, Worksheet } from '../../types'
+import { createContext, useContext } from 'react'
+import type { Assignment, Grading, Problem, Student, Worksheet } from '../../types'
 import MathText from '../../components/MathText'
 
 // ── 학생앱 공용 헬퍼 ────────────────────────────────────────────
+
+// 본인(Student) 컨텍스트 — StudentShell(실사용)과 StudentAppPreview(선생님 미리보기)가 공급
+export const StudentSelfCtx = createContext<Student | null>(null)
+
+export function useStudentSelf(): Student {
+  const s = useContext(StudentSelfCtx)
+  if (!s) throw new Error('StudentShell missing')
+  return s
+}
+
+// 선생님 미리보기 컨텍스트 — on=true면 보기 전용(제출·생성 버튼 비활성), go()로 미리보기 탭 전환
+export type StudentMenu = 'home' | 'challenge' | 'workbooks' | 'worksheets' | 'lectures'
+export interface PreviewNav { on: boolean; go: (menu: StudentMenu) => void }
+export const PreviewCtx = createContext<PreviewNav>({ on: false, go: () => {} })
+export function usePreview(): PreviewNav { return useContext(PreviewCtx) }
+
+// 미리보기에서 액션 버튼에 붙일 공통 안내
+export const PREVIEW_LOCK_TITLE = '미리보기는 보기 전용이에요 (실제 학생 데이터 보호)'
 
 // 임시저장 (localStorage) — 문항 답이 바뀔 때마다 저장, 제출 시 삭제
 export function draftKey(wsId: string): string {
