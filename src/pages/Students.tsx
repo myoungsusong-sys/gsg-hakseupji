@@ -646,7 +646,7 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
             <p>매쓰플랫에서 내보낸 <b>JSON 파일</b>을 첨부하면, 학생과 각자의 학습 기록(학습지·오답, 정답/오답·점수)이 앱에 등록됩니다. 같은 학생·기록은 여러 번 가져와도 중복되지 않습니다.</p>
           </div>
 
-          <input ref={fileRef} type="file" accept=".json,application/json" className="hidden"
+          <input ref={fileRef} type="file" className="hidden"
             onChange={e => { onFile(e.target.files?.[0]); e.target.value = '' }} />
           <button onClick={() => fileRef.current?.click()}
             className="rounded-lg bg-pine px-4 py-2.5 text-sm font-bold text-paper">파일 첨부</button>
