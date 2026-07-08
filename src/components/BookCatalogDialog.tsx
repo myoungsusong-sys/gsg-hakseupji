@@ -1,8 +1,10 @@
 import { useMemo, useState } from 'react'
 import { WB_MATCH_BOOKS } from '../data/wbMatch'
+import { TEXTBOOK_BOOKS } from '../data/textbooks'
 
-// 매쓰플랫 「전체 교재 목록」과 동일한 시중교재 카탈로그 다이얼로그
-// 719종(중1-1~중3-2 · 공통수학1 · 공통수학2 · 대수 · 미적분Ⅰ · 확률과 통계 · 미적분Ⅱ · 기하)
+// 매쓰플랫 「전체 교재 목록」과 동일한 카탈로그 다이얼로그
+// 시중교재 719종(중1-1~중3-2 · 공통수학1 · 공통수학2 · 대수 · 미적분Ⅰ · 확률과 통계 · 미적분Ⅱ · 기하)
+// 교과서 405종(초 268 · 중 48 · 고 89, 15/22개정) — 매쓰플랫 type=SCHOOL 전량
 
 const COURSES = [
   '중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2',
@@ -22,6 +24,14 @@ function gradeLabel(grade: string): string {
   return grade.startsWith('중') ? `중 ${grade.slice(1)}` : grade
 }
 
+// 교과서 학년 표기: 초 3-1 / 중 1 / 공통수학1 …
+function tbGradeLabel(schoolType: 'E' | 'M' | 'H', grade: string, semester?: number): string {
+  if (schoolType === 'E') return `초 ${grade}${semester ? `-${semester}` : ''}`
+  if (schoolType === 'M') return `중 ${grade}`
+  return grade
+}
+const LEVEL_OF_ST = { E: '초', M: '중', H: '고' } as const
+
 export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string }
 
 export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose, onAdd }: {
@@ -40,11 +50,29 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
   const [mPub, setMPub] = useState('')
   const [mGrade, setMGrade] = useState(defaultGrade && COURSES.includes(defaultGrade) ? defaultGrade : '중1-1')
 
-  const filtered = useMemo(() => {
-    if (tab !== '시중교재') return []   // 나머지 탭은 데이터 없음
+  const isTextbook = tab === '교과서'
+
+  // 교과서 2차 드롭다운 옵션 (선택한 학교급의 실제 학년·과목에서 동적 생성)
+  const tbSubOptions = useMemo(() => {
+    if (!isTextbook || (level !== '중' && level !== '고' && level !== '초')) return []
+    const st = level === '초' ? 'E' : level === '중' ? 'M' : 'H'
+    const seen = new Set<string>()
+    const opts: string[] = []
+    for (const b of TEXTBOOK_BOOKS) {
+      if (b.schoolType !== st) continue
+      const key = tbGradeLabel(b.schoolType, b.grade, b.semester)
+      if (!seen.has(key)) { seen.add(key); opts.push(key) }
+    }
+    return opts
+  }, [isTextbook, level])
+
+  // 시중교재 필터 (기존 로직)
+  const filteredMatch = useMemo(() => {
+    if (isTextbook) return []
+    if (tab !== '시중교재') return []
     const kw = q.trim().toLowerCase()
     const list = WB_MATCH_BOOKS.filter(b => {
-      if (level === '초') return false   // 초등 데이터 없음
+      if (level === '초') return false   // 초등 시중교재 데이터 없음
       if (level === '중' && !b.grade.startsWith('중')) return false
       if (level === '고' && b.grade.startsWith('중')) return false
       if (sub !== '전체' && b.grade !== sub) return false   // 2차 필터(학년·학기/과목)
@@ -60,7 +88,20 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
       if (ac !== bc) return ac - bc
       return a.name.localeCompare(b.name, 'ko')
     })
-  }, [tab, level, sub, q, existingKeys])
+  }, [isTextbook, tab, level, sub, q, existingKeys])
+
+  // 교과서 필터
+  const filteredTb = useMemo(() => {
+    if (!isTextbook) return []
+    const kw = q.trim().toLowerCase()
+    return TEXTBOOK_BOOKS.filter(b => {
+      if (level !== '전체' && LEVEL_OF_ST[b.schoolType] !== level) return false
+      if (sub !== '전체' && tbGradeLabel(b.schoolType, b.grade, b.semester) !== sub) return false
+      if (kw && !b.name.toLowerCase().includes(kw) && !b.publisher.toLowerCase().includes(kw)) return false
+      return true
+    })
+    // TEXTBOOK_BOOKS는 이미 학교급→개정→학년→출판사 순으로 정렬돼 있음
+  }, [isTextbook, level, sub, q])
 
   function toggle(key: string) {
     setChecked(prev => {
@@ -71,9 +112,18 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
   }
 
   function submit() {
-    const books: CatalogBook[] = WB_MATCH_BOOKS
-      .filter(b => checked.has(b.key))
-      .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key }))
+    let books: CatalogBook[]
+    if (isTextbook) {
+      // 교과서는 문항별 정답/유형 데이터(wb-match)가 없어 matchKey 없이 등록(수동교재와 동일).
+      // → 목록·배정은 되지만 자동 채점판 문항은 정답표를 일괄 등록해야 함.
+      books = TEXTBOOK_BOOKS
+        .filter(b => checked.has(b.key))
+        .map(b => ({ name: b.name, publisher: b.publisher, grade: tbGradeLabel(b.schoolType, b.grade, b.semester) }))
+    } else {
+      books = WB_MATCH_BOOKS
+        .filter(b => checked.has(b.key))
+        .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key }))
+    }
     if (books.length === 0) { alert('출제할 교재를 선택하세요.'); return }
     onAdd(books)
   }
@@ -82,6 +132,8 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
     if (!mName.trim()) { alert('교재명을 입력하세요.'); return }
     onAdd([{ name: mName.trim(), publisher: mPub.trim(), grade: mGrade }])
   }
+
+  const showEmpty = isTextbook ? filteredTb.length === 0 : (tab === '시중교재' && filteredMatch.length === 0)
 
   return (
     <div className="fixed inset-0 z-40 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
@@ -101,13 +153,20 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             </button>
           ))}
           {/* 2차 드롭다운 (매쓰플랫 동일): 중=학년·학기, 고=과목 전체 */}
-          {(level === '중' || level === '고') && (
+          {!isTextbook && (level === '중' || level === '고') && (
             <select value={sub} onChange={e => setSub(e.target.value)}
               className="rounded-lg border border-line px-2 py-1.5 text-xs font-semibold text-ink">
               <option value="전체">{level === '중' ? '학년·학기' : '과목 전체'}</option>
               {(level === '중' ? MID_TERMS : HIGH_SUBJECTS).map(s => (
                 <option key={s} value={s}>{s}(22개정)</option>
               ))}
+            </select>
+          )}
+          {isTextbook && level !== '전체' && (
+            <select value={sub} onChange={e => setSub(e.target.value)}
+              className="rounded-lg border border-line px-2 py-1.5 text-xs font-semibold text-ink">
+              <option value="전체">{level === '고' ? '과목 전체' : '학년 전체'}</option>
+              {tbSubOptions.map(s => <option key={s} value={s}>{s}</option>)}
             </select>
           )}
           <div className="grow" />
@@ -118,7 +177,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
         {/* 탭: 내 교재 | 시그니처 교재 | 시중교재 | 교과서 (기본: 시중교재) */}
         <div className="mb-3 flex gap-1 border-b border-line text-sm">
           {TABS.map(t => (
-            <button key={t} onClick={() => setTab(t)}
+            <button key={t} onClick={() => { setTab(t); setSub('전체') }}
               className={`-mb-px px-3 py-2 font-semibold ${tab === t ? 'border-b-2 border-ink font-bold text-ink' : 'text-ink2 hover:text-ink'}`}>
               {t}
             </button>
@@ -131,11 +190,13 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             <thead className="sticky top-0 bg-paper2">
               <tr className="text-left text-xs text-ink2">
                 <th className="w-10 px-3 py-2">선택</th><th className="py-2">학년</th><th>교재명</th>
-                <th>정답</th><th>출판사</th><th>최근진도</th><th className="px-3">출제여부</th>
+                {!isTextbook && <th>정답</th>}
+                <th>출판사</th><th>최근진도</th><th className="px-3">출제여부</th>
               </tr>
             </thead>
             <tbody>
-              {filtered.map(b => {
+              {/* 시중교재 */}
+              {!isTextbook && filteredMatch.map(b => {
                 const has = existingKeys.has(b.key)
                 const on = checked.has(b.key)
                 return (
@@ -159,10 +220,35 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
                   </tr>
                 )
               })}
+              {/* 교과서 */}
+              {isTextbook && filteredTb.map(b => {
+                const on = checked.has(b.key)
+                return (
+                  <tr key={b.key} onClick={() => toggle(b.key)}
+                    className={`cursor-pointer border-t border-line/50 ${on ? 'bg-pine-soft/50' : 'hover:bg-paper2'}`}>
+                    <td className="px-3 py-1.5">
+                      <input type="checkbox" checked={on} readOnly
+                        className="pointer-events-none accent-[var(--color-pine,#2e6b4f)]" />
+                    </td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
+                      <div>{tbGradeLabel(b.schoolType, b.grade, b.semester)}</div>
+                      <div className="text-[10px]">({b.rev}개정)</div>
+                    </td>
+                    <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
+                    <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">-</td>
+                  </tr>
+                )
+              })}
+              {/* 내 교재 · 시그니처 교재: 데이터 없음 */}
             </tbody>
           </table>
-          {filtered.length === 0 && (
+          {showEmpty && (
             <p className="whitespace-pre-line p-8 text-center text-sm text-ink2">{'검색 결과가 없습니다.\n다시 입력해주세요.'}</p>
+          )}
+          {(tab === '내 교재' || tab === '시그니처 교재') && (
+            <p className="whitespace-pre-line p-8 text-center text-sm text-ink2">{'표시할 교재가 없습니다.'}</p>
           )}
         </div>
 
@@ -172,6 +258,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             className="rounded-lg border border-line px-4 py-2 font-semibold text-ink2 hover:bg-paper2">
             이전
           </button>
+          {isTextbook && <span className="text-[11px] text-ink2">교과서는 목록·배정만 되며 채점은 정답표 일괄 등록 후 가능합니다.</span>}
           <div className="grow" />
           <span className="text-ink2">선택한 교재 수 <b className="text-pine">{checked.size}</b>권</span>
           <button onClick={submit} disabled={checked.size === 0}
