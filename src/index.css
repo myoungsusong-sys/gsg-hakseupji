@@ -60,6 +60,11 @@ body {
 }
 @media print {
   .mf-page {
+    /* 297mm 정확 높이는 A4(841.89pt)보다 0.1pt 크고(297mm=841.995pt) 렌더링 오프셋(~0.9pt)까지
+       더해져 매 장마다 살짝 넘침 → 콘텐츠 페이지마다 뒤에 빈 페이지가 끼는 사고
+       (7/8 실인쇄 PDF에서 확인: 빈 페이지에 1.26pt짜리 흰 배경 조각 잔존)
+       → 인쇄에선 1mm 짧게 (푸터·페이지번호가 290mm 안이라 지면엔 영향 없음) */
+    height: 296mm;
     margin: 0 !important;
     box-shadow: none !important;
     border: none !important;
