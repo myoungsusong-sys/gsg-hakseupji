@@ -6,22 +6,8 @@ import type { GradeResult, Grading, Student, WBItem } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 import BulkImportModal from '../BulkImportModal'
 import MathText from '../MathText'
-import DrillModal, { type DrillWrong } from './DrillModal'
+import DrillModal, { type DrillWrong, type PagePicker } from './DrillModal'
 import StudentBookDialog from './StudentBookDialog'
-
-// 페이지 목록을 연속 구간으로 축약: [7,8,9,12] → "7~9, 12"
-function pageRange(pages: number[]): string {
-  const s = [...pages].sort((a, b) => a - b)
-  const out: string[] = []
-  let i = 0
-  while (i < s.length) {
-    let j = i
-    while (j + 1 < s.length && s[j + 1] === s[j] + 1) j++
-    out.push(i === j ? `${s[i]}` : `${s[i]}~${s[j]}`)
-    i = j + 1
-  }
-  return out.join(', ')
-}
 
 // 정답 표시 (매쓰플랫 채점판 동일): 객관식 숫자→①~⑤, 수식(LaTeX)→KaTeX 렌더, 그 외 원문
 const CIRCLED = ['①', '②', '③', '④', '⑤']
@@ -89,7 +75,7 @@ export default function GradePanel({ student }: { student: Student }) {
   const [selecting, setSelecting] = useState(false)
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [pageChecked, setPageChecked] = useState<Set<number>>(new Set())   // 페이지별 오답학습지용
-  const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[] } | null>(null)
+  const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[]; pagePicker?: PagePicker } | null>(null)
   // 실시간 자동 저장 상태
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
   const [savedAt, setSavedAt] = useState('')
@@ -257,35 +243,34 @@ export default function GradePanel({ student }: { student: Student }) {
 
   // 페이지별 오답학습지 — 체크한 페이지(없으면 현재 쪽 범위)의 오답·모름 문항으로 생성
   // 저장 기록 + 지금 화면에서 찍은 ✕/? 를 합쳐서 본다 (체크·저장 없이도 바로 동작)
+  // 페이지별 오답학습지 — 다이얼로그 안에서 페이지 범위·틀린 문제만 여부를 고른다 (매쓰플랫 동일)
   function pageDrill() {
     if (!wb || items.length === 0) return
-    const targetPages = pageChecked.size > 0
-      ? pageChecked
-      : new Set(inRange.map(i => i.page))
-    if (targetPages.size === 0) { alert('좌측 페이지 목록에서 페이지를 선택하거나 쪽 범위를 지정하세요.'); return }
-    // gradings는 최신순 → 문항별 가장 최근 채점 결과
-    const latest = new Map<string, GradeResult>()
-    for (const g of gradings) {
-      if (g.studentId !== student.id || g.workbookId !== wbId) continue
-      for (const r of g.results) if (r.itemId && !latest.has(r.itemId)) latest.set(r.itemId, r)
+    const allPages = pages.map(([p]) => p)
+    const initialPages = pageChecked.size > 0
+      ? [...pageChecked].sort((a, b) => a - b)
+      : [...new Set(inRange.map(i => i.page))].sort((a, b) => a - b)
+    // 선택 페이지·틀린문제 여부로 오답 계산 (저장 기록 + 화면 표시 병합)
+    const wrongsForPages = (sel: number[], onlyWrong: boolean): DrillWrong[] => {
+      const latest = new Map<string, GradeResult>()
+      for (const g of gradings) {
+        if (g.studentId !== student.id || g.workbookId !== wbId) continue
+        for (const r of g.results) if (r.itemId && !latest.has(r.itemId)) latest.set(r.itemId, r)
+      }
+      for (const i of inRange) {
+        const m = marks[i.id]
+        if (m) latest.set(i.id, { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined })
+      }
+      const selSet = new Set(sel)
+      const out: DrillWrong[] = []
+      for (const i of items) {
+        if (!selSet.has(i.page)) continue
+        if (onlyWrong) { const r = latest.get(i.id); if (r && (!r.correct || r.unknown)) out.push({ typeId: i.typeId, diff: i.diff }) }
+        else out.push({ typeId: i.typeId, diff: i.diff })
+      }
+      return out
     }
-    // 지금 화면에서 찍은 표시가 최우선 (자동 저장 디바운스 중이어도 반영)
-    for (const i of inRange) {
-      const m = marks[i.id]
-      if (m) latest.set(i.id, { itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined })
-    }
-    const wrongs: DrillWrong[] = []
-    for (const i of items) {
-      if (!targetPages.has(i.page)) continue
-      const r = latest.get(i.id)
-      if (r && (!r.correct || r.unknown)) wrongs.push({ typeId: i.typeId, diff: i.diff })
-    }
-    if (wrongs.length === 0) {
-      alert('선택한 페이지에 오답·모름이 없습니다.\n문항 카드를 클릭해 ✕(오답)/?(모름)를 표시한 뒤 다시 누르세요.')
-      return
-    }
-    const ps = pageRange([...targetPages])
-    setDrill({ title: `[오답] ${wb.name} p${ps}`, wrongs })
+    setDrill({ title: `[오답] ${wb.name}`, wrongs: [], pagePicker: { allPages, initialPages, wrongsForPages } })
   }
 
   // ⋮ 메뉴 > 재출제 — 채점 초기화 없이 첫 페이지부터 다시 진행
@@ -520,7 +505,7 @@ export default function GradePanel({ student }: { student: Student }) {
           onClose={() => setBulk(false)} />
       )}
       {drill && (
-        <DrillModal student={student} title={drill.title} wrongs={drill.wrongs}
+        <DrillModal student={student} title={drill.title} wrongs={drill.wrongs} pagePicker={drill.pagePicker}
           onClose={() => setDrill(null)} />
       )}
     </div>

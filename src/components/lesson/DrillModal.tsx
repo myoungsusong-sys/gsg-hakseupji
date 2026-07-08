@@ -9,16 +9,57 @@ import { courseTagOfType } from '../../data/curriculum'
 // 오답 참조 — problemId는 틀린 원문제(학습지 오답만)
 export interface DrillWrong { typeId: string; diff?: Diff; problemId?: string }
 
-// 매쓰플랫 「문제별 오답학습지 만들기」 다이얼로그와 동일 (재실사 기록: 항목 순서·기본값·문구)
-export default function DrillModal({ student, title, wrongs, defaultTags, onClose }: {
+// 페이지별 오답학습지: 다이얼로그 안에서 페이지 범위·틀린 문제만 여부를 고른다 (매쓰플랫 동일)
+export interface PagePicker {
+  allPages: number[]                                            // 교재 전체 쪽 목록
+  initialPages: number[]                                        // 초기 선택 페이지(좌측 체크 or 현재 범위)
+  wrongsForPages: (pages: number[], onlyWrong: boolean) => DrillWrong[]
+}
+
+// 연속 페이지 범위 파서: "47", "47-50, 52" → [47,48,49,50,52]
+function parsePages(str: string, valid: Set<number>): number[] {
+  const out = new Set<number>()
+  for (const part of str.split(',')) {
+    const m = part.trim().match(/^(\d+)\s*-\s*(\d+)$/)
+    if (m) { for (let i = +m[1]; i <= +m[2]; i++) if (valid.has(i)) out.add(i) }
+    else { const n = Number(part.trim()); if (valid.has(n)) out.add(n) }
+  }
+  return [...out].sort((a, b) => a - b)
+}
+
+// 매쓰플랫 「문제별/페이지별 오답학습지 만들기」 다이얼로그와 동일 (재실사 기록: 항목 순서·기본값·문구)
+export default function DrillModal({ student, title, wrongs, defaultTags, onClose, pagePicker }: {
   student: Student
   title: string
   wrongs: DrillWrong[]
   defaultTags?: string[]
   onClose: () => void
+  pagePicker?: PagePicker
 }) {
   const { problems, worksheets, assignments, saveWorksheet, addAssignment } = useStore()
   const nav = useNavigate()
+
+  // 페이지 선택기 (페이지별 오답학습지에서만)
+  const [rangeMode, setRangeMode] = useState<'range' | 'direct'>('range')
+  const [pFrom, setPFrom] = useState(() => pagePicker?.initialPages[0] ?? pagePicker?.allPages[0] ?? 1)
+  const [pTo, setPTo] = useState(() => {
+    const ip = pagePicker?.initialPages ?? []
+    return ip.length ? ip[ip.length - 1] : (pagePicker?.allPages[pagePicker.allPages.length - 1] ?? 1)
+  })
+  const [directStr, setDirectStr] = useState(() => (pagePicker?.initialPages ?? []).join(', '))
+  const [onlyWrong, setOnlyWrong] = useState(true)
+
+  const selectedPages = useMemo(() => {
+    if (!pagePicker) return []
+    if (rangeMode === 'direct') return parsePages(directStr, new Set(pagePicker.allPages))
+    return pagePicker.allPages.filter(p => p >= Math.min(pFrom, pTo) && p <= Math.max(pFrom, pTo))
+  }, [pagePicker, rangeMode, directStr, pFrom, pTo])
+
+  // 페이지 선택기가 있으면 wrongs를 페이지·틀린문제 여부로 동적 계산, 없으면 props 사용
+  const effWrongs = useMemo(
+    () => pagePicker ? pagePicker.wrongsForPages(selectedPages, onlyWrong) : wrongs,
+    [pagePicker, selectedPages, onlyWrong, wrongs],
+  )
 
   const [twinPer, setTwinPer] = useState(1)
   const [similarPer, setSimilarPer] = useState(1)
@@ -38,11 +79,11 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
   // 틀린 원문제 (문제은행에 실존하는 것만)
   const originalIds = useMemo(() => {
     const ids: string[] = []
-    for (const w of wrongs) {
+    for (const w of effWrongs) {
       if (w.problemId && problemMap.has(w.problemId) && !ids.includes(w.problemId)) ids.push(w.problemId)
     }
     return ids
-  }, [wrongs, problemMap])
+  }, [effWrongs, problemMap])
 
   // 이 학생에게 출제된 학습지들의 문제 id (기존 출제 문제 제외용)
   const prevIds = useMemo(() => {
@@ -60,9 +101,9 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
     const excludeIds = new Set<string>(excludePrev ? prevIds : [])
     const front = includeOriginal ? originalIds : []
     for (const id of front) excludeIds.add(id)   // 원문제 중복 선발 방지
-    const picked = pickDrillProblems(wrongs, problems, { twinPer, similarPer, diffShift, typeCap, excludeIds })
+    const picked = pickDrillProblems(effWrongs, problems, { twinPer, similarPer, diffShift, typeCap, excludeIds })
     return [...front, ...picked.map(p => p.id)]
-  }, [wrongs, problems, twinPer, similarPer, diffShift, typeCap, excludePrev, prevIds, includeOriginal, originalIds])
+  }, [effWrongs, problems, twinPer, similarPer, diffShift, typeCap, excludePrev, prevIds, includeOriginal, originalIds])
 
   function create(mode: 'view' | 'edit') {
     if (problemIds.length === 0) {
@@ -75,7 +116,7 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
       title,
       author: '깊은생각수학',
       // 학년 뱃지 = 문항 과정 기준 (미적분Ⅰ 오답 학습지가 학생 학년(중1-1)으로 찍히던 문제 수정)
-      grade: (wrongs[0] && courseTagOfType(wrongs[0].typeId)) || student.grade,
+      grade: (effWrongs[0] && courseTagOfType(effWrongs[0].typeId)) || student.grade,
       tags: defaultTags ?? ['오답'],
       theme: 'amber',
       problemIds,
@@ -95,18 +136,56 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
       <div className="max-h-[90vh] w-full max-w-md overflow-y-auto rounded-2xl bg-white p-6 shadow-xl" onClick={e => e.stopPropagation()}>
         {/* 취소는 우상단 X (매쓰플랫 동일) */}
         <div className="mb-1 flex items-start justify-between gap-3">
-          <div className="text-lg font-black">문제별 오답학습지 만들기</div>
+          <div className="text-lg font-black">{pagePicker ? '페이지별' : '문제별'} 오답학습지 만들기</div>
           <button onClick={onClose} aria-label="닫기"
             className="rounded-lg px-2 py-0.5 text-lg leading-none text-ink2 hover:bg-paper2">✕</button>
         </div>
         <div className="mb-4 text-sm text-ink2">{student.name} · {title}</div>
 
         <div className="grid gap-4 text-sm">
-          {/* 1) 대상 문제 수 */}
-          <div className="flex items-center justify-between">
-            <span className="font-semibold">문제 수</span>
-            <b>{wrongs.length}개</b>
-          </div>
+          {/* 페이지 선택 블록 (페이지별 오답학습지에서만 · 매쓰플랫 동일) */}
+          {pagePicker && (
+            <div className="rounded-xl border border-line p-4">
+              <div className="mb-3 flex flex-wrap items-center gap-3">
+                <label className="flex items-center gap-1.5 font-semibold">
+                  <input type="radio" name="drill-range" checked={rangeMode === 'range'} onChange={() => setRangeMode('range')} /> 범위 선택
+                </label>
+                <label className="flex items-center gap-1.5 font-semibold">
+                  <input type="radio" name="drill-range" checked={rangeMode === 'direct'} onChange={() => setRangeMode('direct')} /> 직접 입력
+                </label>
+                <div className="grow" />
+                {rangeMode === 'range' ? (
+                  <div className="flex items-center gap-1">
+                    <select value={pFrom} onChange={e => setPFrom(Number(e.target.value))} className="rounded-lg border border-line px-2 py-1 font-bold">
+                      {pagePicker.allPages.map(p => <option key={p} value={p}>{p}</option>)}
+                    </select>
+                    <span className="text-ink2">-</span>
+                    <select value={pTo} onChange={e => setPTo(Number(e.target.value))} className="rounded-lg border border-line px-2 py-1 font-bold">
+                      {pagePicker.allPages.map(p => <option key={p} value={p}>{p}</option>)}
+                    </select>
+                  </div>
+                ) : (
+                  <input value={directStr} onChange={e => setDirectStr(e.target.value)} placeholder="예: 47, 49-51"
+                    className="w-40 rounded-lg border border-line px-2 py-1" />
+                )}
+              </div>
+              <label className="flex items-center justify-between gap-2 border-t border-line pt-3 font-semibold">
+                <span className="flex items-center gap-2">
+                  <input type="checkbox" checked={onlyWrong} onChange={e => setOnlyWrong(e.target.checked)} />
+                  틀린 문제만으로 추출
+                </span>
+                <span className="font-normal text-ink2">문제 수 <b className="text-ink">{effWrongs.length}</b>개</span>
+              </label>
+            </div>
+          )}
+
+          {/* 1) 대상 문제 수 (문제별에서만 — 페이지별은 위 블록에 표시) */}
+          {!pagePicker && (
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">문제 수</span>
+              <b>{effWrongs.length}개</b>
+            </div>
+          )}
 
           {/* 2) 문장형 옵션 (매쓰플랫 동일 문구) */}
           <div className="rounded-xl bg-paper2 px-4 py-3 leading-9">
