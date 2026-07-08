@@ -140,6 +140,8 @@ export interface Student {
   email?: string         // 학생 이메일
   address?: string       // 집 주소
   homePhone?: string     // 집 전화
+  loginId?: string       // 학생앱 로그인 아이디 (없으면 attendNo 사용)
+  authEmail?: string     // 학생앱 Supabase 계정 이메일 (계정 생성 스크립트가 기록)
 }
 
 export interface GradeResult {
@@ -166,6 +168,7 @@ export interface Grading {
   imported?: boolean
   title?: string                                // 원본 학습지/교재명 (표시용 라벨)
   category?: '학습지' | '교재' | '오답' | '챌린지'   // 학습내역 진도 카드 분류
+  by?: 'student'                                // 학생앱 자기 채점(제출) 기록 — 없으면 선생님 채점
 }
 
 // 학습지 출제 (수업/숙제) — hj_settings 'assignments' 키에 배열로 저장
@@ -188,6 +191,17 @@ export interface DailyConfig {
   reviewDays?: number[]           // 복습 요일 (0=일 ~ 6=토, 매쓰플랫 요일 선택)
   reviewMode?: 'same' | 'twin' | 'both'  // 출제 방식: 틀린 문제 그대로/쌍둥이·유사/둘 다
   reviewCap?: number              // 복습 문제 수 제한 (기본 50)
+}
+
+// 학생앱 공개 설정 (hj_settings 'studentAppConfig') — 결과 화면의 정답·해설·풀이영상 노출 제어
+export interface StudentAppConfig {
+  showAnswer: boolean
+  showSolution: boolean
+  showVideo: boolean
+}
+
+export const DEFAULT_STUDENT_APP_CONFIG: StudentAppConfig = {
+  showAnswer: true, showSolution: true, showVideo: true,
 }
 
 // 일일 보고지 메모 (학생×날짜)

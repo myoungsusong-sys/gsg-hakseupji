@@ -1,8 +1,15 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
 import { StoreProvider } from './lib/store'
 import { SUPABASE_ON } from './lib/supabase'
 import { AuthProvider, useAuth } from './lib/auth'
+import { getLocalStudentId, isStudentEmail } from './lib/role'
 import Login from './pages/Login'
+import StudentShell from './pages/student/StudentShell'
+import StudentLocalLogin from './pages/student/StudentLocalLogin'
+import StudentHome from './pages/student/StudentHome'
+import StudentWorksheets from './pages/student/StudentWorksheets'
+import StudentSolve from './pages/student/StudentSolve'
+import StudentResult from './pages/student/StudentResult'
 import Layout from './components/Layout'
 import PrepLayout from './components/PrepLayout'
 import Placeholder from './components/Placeholder'
@@ -39,6 +46,18 @@ function Gate() {
     <StoreProvider>
       <HashRouter>
         <Routes>
+          {/* ── 학생앱 (#/student/*) — 선생님 메뉴 없는 학생 전용 셸 ── */}
+          <Route path="/student-login" element={<StudentLocalLogin />} />
+          <Route path="/student" element={<StudentShell />}>
+            <Route index element={<StudentHome />} />
+            <Route path="worksheets" element={<StudentWorksheets />} />
+            <Route path="solve/:wsId" element={<StudentSolve />} />
+            <Route path="result/:wsId" element={<StudentResult />} />
+            <Route path="*" element={<Navigate to="/student" replace />} />
+          </Route>
+
+          {/* ── 선생님 라우트 — 학생 모드는 진입 불가(학생앱으로 리다이렉트) ── */}
+          <Route element={<TeacherGate />}>
           <Route element={<Layout />}>
             <Route path="/" element={<Navigate to="/prep/worksheet" replace />} />
 
@@ -89,8 +108,17 @@ function Gate() {
             <Route path="/make" element={<Page><MakeWizard /></Page>} />
             <Route path="/worksheet/:id" element={<Page><WorksheetView /></Page>} />
           </Route>
+          </Route>
         </Routes>
       </HashRouter>
     </StoreProvider>
   )
+}
+
+// 학생 모드(학생 계정 세션 또는 로컬 학생 세션)는 선생님 라우트에 못 들어간다
+function TeacherGate() {
+  const { email } = useAuth()
+  const studentMode = SUPABASE_ON ? isStudentEmail(email) : !!getLocalStudentId()
+  if (studentMode) return <Navigate to="/student" replace />
+  return <Outlet />
 }

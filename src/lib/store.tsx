@@ -1,9 +1,9 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, Workbook, WBItem, Worksheet,
+  Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
 } from '../types'
-import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS } from '../types'
+import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { loadPool } from '../data/pool'
@@ -25,6 +25,7 @@ interface Persisted {
   dailyNotes: DailyNote[]
   assignments: Assignment[]
   dailyConfigs: Record<string, DailyConfig>
+  studentAppConfig: StudentAppConfig
 }
 
 const EMPTY: Persisted = {
@@ -32,6 +33,7 @@ const EMPTY: Persisted = {
   diffMatrix: DEFAULT_DIFF_MATRIX,
   workbooks: [], wbItems: [], students: [], gradings: [], dailyNotes: [],
   assignments: [], dailyConfigs: {},
+  studentAppConfig: DEFAULT_STUDENT_APP_CONFIG,
 }
 
 interface Store extends Persisted {
@@ -65,6 +67,7 @@ interface Store extends Persisted {
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
+  setStudentAppConfig: (cfg: StudentAppConfig) => void   // 학생앱 공개 설정 (선생님용 UI는 2단계)
 }
 
 const Ctx = createContext<Store | null>(null)
@@ -99,6 +102,7 @@ function fromCloud(r: CloudData): Persisted {
     dailyNotes: r.dailyNotes,
     assignments: r.assignments ?? [],
     dailyConfigs: r.dailyConfigs ?? {},
+    studentAppConfig: { ...DEFAULT_STUDENT_APP_CONFIG, ...(r.studentAppConfig ?? {}) },
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -107,6 +111,7 @@ function toCloud(s: Persisted): CloudData {
     workbooks: s.workbooks, wbItems: s.wbItems, students: s.students, gradings: s.gradings,
     dailyNotes: s.dailyNotes, favorites: s.favorites, diffMatrix: s.diffMatrix,
     assignments: s.assignments, dailyConfigs: s.dailyConfigs,
+    studentAppConfig: s.studentAppConfig,
   }
 }
 
@@ -360,6 +365,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setDailyConfig: (studentId, cfg) => {
       const next = { ...stateRef.current.dailyConfigs, [studentId]: cfg }
       set(s => ({ ...s, dailyConfigs: next })); cloud.setSetting('dailyConfigs', next)
+    },
+    setStudentAppConfig: cfg => {
+      set(s => ({ ...s, studentAppConfig: cfg })); cloud.setSetting('studentAppConfig', cfg)
     },
     saveGrading: g => {
       const rec = { ...g, id: uid('gr') }
