@@ -4,16 +4,24 @@ import { dateKey, todayKey } from '../../lib/dates'
 import { DIFFS, DIFF_LABEL } from '../../types'
 import type { Diff, Student } from '../../types'
 
-type Group = '학습지' | '교재' | '오답'
+type Group = '학습지' | '교재' | '오답' | '챌린지'
 
 interface Row {
   id: string
   badge: '교재' | '학습지' | '숙제'
-  group: Group
+  group: '학습지' | '교재' | '오답'
   label: string
   total: number
   correct: number
   unknown: number
+}
+
+// 매쓰플랫 진도 카드 색상 (학습지=파랑 · 교재=연두 · 오답심화·챌린지=보라)
+const CARD_COLOR: Record<Group, { on: string; off: string; text: string }> = {
+  학습지: { on: 'border-pine bg-pine-soft/60', off: 'border-pine/40 bg-white hover:bg-pine-soft/30', text: 'text-pine-dark' },
+  교재: { on: 'border-lime-500 bg-lime-50', off: 'border-lime-300 bg-white hover:bg-lime-50/60', text: 'text-lime-700' },
+  오답: { on: 'border-purple-500 bg-purple-50', off: 'border-purple-300 bg-white hover:bg-purple-50/60', text: 'text-purple-700' },
+  챌린지: { on: 'border-purple-500 bg-purple-50', off: 'border-purple-300 bg-white hover:bg-purple-50/60', text: 'text-purple-700' },
 }
 
 const BADGE_STYLE: Record<Row['badge'], string> = {
@@ -68,7 +76,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
     return {
       id: g.id,
       badge: (isHomework ? '숙제' : '학습지') as Row['badge'],
-      group: (isWrong ? '오답' : '학습지') as Group,
+      group: (isWrong ? '오답' : '학습지') as Row['group'],
       label: ws?.title ?? '학습지',
       total, correct, unknown,
     }
@@ -77,10 +85,10 @@ export default function HistoryPanel({ student }: { student: Student }) {
   const visibleRows = filter === 'all' ? rows : rows.filter(r => r.group === filter)
 
   function cardOf(group: Group) {
-    const rs = rows.filter(r => r.group === group)
+    const rs = rows.filter(r => r.group === group)   // 챌린지는 우리 데이터에 없어 항상 0
     const total = rs.reduce((a, r) => a + r.total, 0)
     const correct = rs.reduce((a, r) => a + r.correct, 0)
-    return { n: rs.length, rate: total ? Math.round((correct / total) * 100) : null }
+    return { total, rate: total ? Math.round((correct / total) * 100) : 0 }
   }
 
   // 미채점 숙제 (전체 기간)
@@ -121,10 +129,12 @@ export default function HistoryPanel({ student }: { student: Student }) {
     if (confirm('숙제를 취소할까요? (수업 출제는 유지)')) removeAssignment(worksheetId, student.id, '숙제')
   }
 
+  // 매쓰플랫 진도 카드 4종 (2×2): 학습지·교재·오답심화·챌린지
   const cards: { group: Group; title: string; icon: string }[] = [
     { group: '학습지', title: '학습지', icon: '📄' },
     { group: '교재', title: '교재', icon: '📖' },
     { group: '오답', title: '오답·심화', icon: '🔁' },
+    { group: '챌린지', title: '챌린지', icon: '🏆' },
   ]
 
   return (
@@ -155,16 +165,17 @@ export default function HistoryPanel({ student }: { student: Student }) {
           <span className="text-sm font-black">진도</span>
           <span className="text-xs text-ink2">각 카드를 선택해 필요한 학습내용만 확인할 수 있어요.</span>
         </div>
-        <div className="mb-5 grid grid-cols-3 gap-3">
+        <div className="mb-5 grid grid-cols-2 gap-3">
           {cards.map(c => {
             const s = cardOf(c.group)
             const on = filter === c.group
+            const col = CARD_COLOR[c.group]
             return (
               <button key={c.group} onClick={() => setFilter(on ? 'all' : c.group)}
-                className={`rounded-2xl border p-4 text-left transition ${on ? 'border-pine bg-pine-soft/60' : 'border-line bg-white hover:border-pine'}`}>
-                <div className="text-xs font-bold text-ink2">{c.icon} {c.title}</div>
-                <div className="mt-1 text-xl font-black text-ink">{s.n}<span className="text-sm font-bold">건</span></div>
-                <div className="mt-0.5 text-xs text-ink2">{s.rate === null ? '기록 없음' : `정답률 ${s.rate}%`}</div>
+                className={`rounded-2xl border p-4 text-left transition ${on ? col.on : col.off}`}>
+                <div className={`text-xs font-bold ${col.text}`}>{c.icon} {c.title}</div>
+                <div className="mt-1.5 text-sm text-ink2">총 문제 수 <b className="text-lg text-ink">{s.total}</b>개</div>
+                <div className="mt-0.5 text-xs text-ink2">정답률 {s.rate}%</div>
               </button>
             )
           })}
