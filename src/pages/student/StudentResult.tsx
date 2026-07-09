@@ -9,7 +9,7 @@ import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
 import { latestGradingFor, summaryOf, AnswerText, isImgAnswer } from './common'
-import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG } from './supplement'
+import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, ONE_CLICK_OFF_MSG } from './supplement'
 
 // ── 학습지 결과 화면 (매쓰플랫 학생앱 학습완료 상세 구조) ────────
 // 요약 카드 + 문항 카드 그리드(정답 연파랑/오답 연분홍) + [한문제씩] 모드(1문항 페이지 넘김
@@ -296,22 +296,26 @@ export default function StudentResult() {
       <div className="fixed inset-x-0 bottom-0 z-30">
         <div className="mx-auto flex max-w-4xl flex-wrap items-center gap-2 rounded-t-2xl border border-b-0 border-line bg-white px-6 py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
           <span className="text-xs text-ink2">
-            {suppKind === '오답학습' && wrongCount === 0
+            {!supplement.allowed
+              ? <>🔒 {ONE_CLICK_OFF_MSG}</>
+              : suppKind === '오답학습' && wrongCount === 0
               ? <>🎉 오답학습 완료! <b className="text-pine-dark">{WRONG_DONE_MSG}</b></>
               : wrongCount > 0 ? <>오답·모름 <b className="text-clay">{wrongCount}문제</b></> : '오답이 없어요'}
           </span>
           <div className="grow" />
           <button onClick={() => supplement.create('오답학습', ws, g)}
-            disabled={wrongCount === 0 || !!wrongBlocked}
-            title={wrongBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingWrong!.title})`
+            disabled={wrongCount === 0 || !!wrongBlocked || !supplement.allowed}
+            title={!supplement.allowed ? ONE_CLICK_OFF_MSG
+              : wrongBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingWrong!.title})`
               : wrongCount === 0 ? WRONG_DONE_MSG
               : '틀린 유형을 틀리지 않을 때까지 반복해서 공부해요'}
             className="rounded-lg border border-clay px-4 py-2 text-sm font-bold text-clay hover:bg-red-50 disabled:opacity-30 disabled:hover:bg-transparent">
             ◎ 오답학습
           </button>
           <button onClick={() => supplement.create('심화학습', ws, g)}
-            disabled={!!deepBlocked || sum.correct === 0}
-            title={deepBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingDeep!.title})`
+            disabled={!!deepBlocked || sum.correct === 0 || !supplement.allowed}
+            title={!supplement.allowed ? ONE_CLICK_OFF_MSG
+              : deepBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingDeep!.title})`
               : sum.correct === 0 ? '심화학습은 맞힌 문제의 유형으로 만들어져요'
               : '맞힌 문제의 유형을 한 단계 높은 난이도로 연습해요'}
             className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-40">

@@ -7,6 +7,7 @@ import HistoryPanel from '../components/lesson/HistoryPanel'
 import TodayPanel from '../components/lesson/TodayPanel'
 import AnalysisPanel from '../components/lesson/AnalysisPanel'
 import ReportPanel from '../components/lesson/ReportPanel'
+import GroupPanel from '../components/lesson/GroupPanel'
 
 // 매쓰플랫과 동일한 6탭. 각 탭 구현은 components/lesson/* 모듈 (리마운트로 state 유실 방지)
 type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'material' | 'report'
@@ -36,12 +37,14 @@ export default function Lesson() {
   const { students } = useStore()
   const active = students.filter(s => s.active)
   const [studentId, setStudentId] = useState<string | null>(active[0]?.id ?? null)
+  // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
+  const [groupName, setGroupName] = useState<string | null>(null)
   const [tab, setTab] = useState<Tab>('history')
   const [groupBy, setGroupBy] = useState<'학년' | '반'>('학년')
   const [q, setQ] = useState('')
   const [closed, setClosed] = useState<Set<string>>(new Set())
 
-  const student = active.find(s => s.id === studentId) ?? null
+  const student = groupName ? null : active.find(s => s.id === studentId) ?? null
 
   // 좌측 학생 패널: 학년/반 그룹 아코디언 + 이름 검색 (매쓰플랫 동일)
   const groups = useMemo(() => {
@@ -65,6 +68,12 @@ export default function Lesson() {
     })
   }, [active, groupBy, q])
 
+  // 선택된 그룹의 학생들 (검색 필터와 무관하게 전체)
+  const groupStudents = useMemo(() => {
+    if (!groupName) return []
+    return active.filter(s => (groupBy === '학년' ? shortGrade(s.grade) : (s.klass?.trim() || '미배정')) === groupName)
+  }, [active, groupBy, groupName])
+
   function toggleGroup(name: string) {
     setClosed(prev => { const n = new Set(prev); if (n.has(name)) n.delete(name); else n.add(name); return n })
   }
@@ -83,13 +92,18 @@ export default function Lesson() {
     <div className="grid gap-6 lg:grid-cols-[230px_1fr]">
       <aside className="no-print h-fit overflow-hidden rounded-2xl border border-line bg-white">
         <div className="border-b border-line px-4 py-3">
-          <div className="mb-2.5 flex items-center gap-2 text-sm font-black text-ink">
-            <span className="grid h-6 w-6 place-items-center rounded-full bg-pine-soft text-pine-dark">👤</span>
-            {student ? `${student.name} 학생 수업` : '수업'}
+          <div className="mb-2 flex items-center gap-2 text-sm font-black text-ink">
+            <span className="grid h-6 w-6 place-items-center rounded-full bg-pine-soft text-pine-dark">{groupName ? '👥' : '👤'}</span>
+            {groupName ? `${groupName} 수업` : student ? `${student.name} 학생 수업` : '수업'}
           </div>
+          {/* [학생앱으로 이동하기] (매쓰플랫 패널 헤더 버튼 — 새 탭으로 학생앱 열기) */}
+          <button onClick={() => window.open('/student', '_blank')}
+            className="mb-2.5 w-full rounded-lg border border-line py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-pine-dark">
+            학생앱으로 이동하기 ↗
+          </button>
           <div className="flex rounded-lg bg-paper2 p-0.5 text-xs font-bold">
             {(['학년', '반'] as const).map(g => (
-              <button key={g} onClick={() => setGroupBy(g)}
+              <button key={g} onClick={() => { setGroupBy(g); setGroupName(null) }}
                 className={`grow rounded-md px-2 py-1.5 transition ${groupBy === g ? 'bg-white text-pine shadow-sm' : 'text-ink2 hover:text-ink'}`}>{g}</button>
             ))}
           </div>
@@ -112,17 +126,23 @@ export default function Lesson() {
             const open = !closed.has(name)
             return (
               <div key={name} className="mb-0.5">
-                <button onClick={() => toggleGroup(name)}
-                  className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 hover:bg-paper2">
-                  <span className="text-[10px] text-ink2">{open ? '▾' : '▸'}</span>
-                  <span className="text-sm font-black text-ink">{name}</span>
-                  <span className="rounded-full bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">{list.length}</span>
-                </button>
+                <div className={`flex w-full items-center gap-2 rounded-lg px-2.5 py-1 ${groupName === name ? 'bg-pine-soft' : 'hover:bg-paper2'}`}>
+                  <button onClick={() => toggleGroup(name)} className="flex grow items-center gap-2 py-1 text-left">
+                    <span className="text-[10px] text-ink2">{open ? '▾' : '▸'}</span>
+                    <span className={`text-sm font-black ${groupName === name ? 'text-pine-dark' : 'text-ink'}`}>{name}</span>
+                    <span className="rounded-full bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">{list.length}</span>
+                  </button>
+                  {/* [전체] — 학년/반 그룹 단위 화면으로 (매쓰플랫 그룹 행 [전체] 버튼) */}
+                  <button onClick={() => { setGroupName(name); }}
+                    className={`shrink-0 rounded-md border px-1.5 py-0.5 text-[10px] font-bold ${groupName === name ? 'border-pine bg-pine text-paper' : 'border-line text-ink2 hover:border-pine hover:text-pine-dark'}`}>
+                    전체
+                  </button>
+                </div>
                 {open && (
                   <div className="ml-3 border-l border-line/70 pl-1.5">
                     {list.map(s => (
-                      <button key={s.id} onClick={() => setStudentId(s.id)}
-                        className={`block w-full rounded-lg px-3 py-1.5 text-left text-sm transition ${studentId === s.id
+                      <button key={s.id} onClick={() => { setStudentId(s.id); setGroupName(null) }}
+                        className={`block w-full rounded-lg px-3 py-1.5 text-left text-sm transition ${studentId === s.id && !groupName
                           ? 'bg-pine-soft font-bold text-pine-dark'
                           : 'text-ink hover:bg-paper2'}`}>
                         {s.name}{s.klass && groupBy === '학년' && <span className="ml-1 text-xs font-normal text-ink2">· {s.klass}</span>}
@@ -138,6 +158,11 @@ export default function Lesson() {
       </aside>
 
       <main>
+        {groupName && (
+          groupStudents.length > 0
+            ? <GroupPanel key={`${groupBy}-${groupName}`} label={groupName} students={groupStudents} />
+            : <p className="p-10 text-center text-sm text-ink2">이 그룹에 학생이 없습니다.</p>
+        )}
         {student && (
           <>
             <div className="no-print mb-5 flex flex-wrap items-center gap-x-5 gap-y-1 border-b border-line px-1">
@@ -157,7 +182,7 @@ export default function Lesson() {
             {tab === 'report' && <ReportPanel key={student.id} student={student} />}
           </>
         )}
-        {!student && <p className="p-10 text-center text-sm text-ink2">왼쪽에서 학생을 선택하세요.</p>}
+        {!student && !groupName && <p className="p-10 text-center text-sm text-ink2">왼쪽에서 학생을 선택하세요.</p>}
       </main>
     </div>
   )

@@ -6,6 +6,12 @@ import { pickDrillProblems, weakTypes, wrongByType } from '../../lib/drill'
 import { CURRICULA, curriculumFor } from '../../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS, DIFFS, DIFF_LABEL } from '../../types'
 import type { DailyConfig, Diff, Problem, Student } from '../../types'
+import { fmtHM, readStudySeconds } from '../../pages/student/common'
+
+// 모의고사 문항 판별 — 문제 출처 표기 기준 (풀 문항은 출처가 '매쓰플랫'이라 대부분 비모의고사)
+const isMock = (p: Problem) => /모의고사|학력평가|학평|모평|수능/.test(p.source ?? '')
+// 교육 과정 외 문항 판별 — 경시·올림피아드류 출처
+const isOutOfCurriculum = (p: Problem) => /경시|올림피아드|KMO/.test(p.source ?? '')
 
 const COUNT_PRESETS = [10, 50, 75, 100]
 const KIND_OPTIONS: { value: DailyConfig['kind']; label: string }[] = [
@@ -32,6 +38,7 @@ export default function TodayPanel({ student }: { student: Student }) {
   useEffect(() => { ensureCourse(cfg?.courseId || '') }, [cfg?.courseId])   // 설정 과정 풀 로드
   const [editing, setEditing] = useState(false)
   const [banner, setBanner] = useState<string | null>(null)
+  const [chartMode, setChartMode] = useState<'score' | 'time'>('score')
 
   // 오늘 이미 '오늘의 학습' 학습지가 출제됐는지
   const todayIssued = useMemo(() => {
@@ -96,10 +103,50 @@ export default function TodayPanel({ student }: { student: Student }) {
     if (!cfg) return
     const cur = curriculumFor(cfg.courseId)
     const units = cfg.unitIds.length ? cur.units.filter(u => cfg.unitIds.includes(u.id)) : cur.units
-    const typeOrder = units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id))))
+    // 중단원 이하 범위: midIds가 있으면 그 중단원만 (없으면 대단원 전체)
+    const midSel = new Set(cfg.midIds ?? [])
+    const mids = units.flatMap(u => u.mids).filter(m => midSel.size === 0 || midSel.has(m.id))
+    const typeOrder = mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))
     const typeSet = new Set(typeOrder)
-    const pool = problems.filter(p => typeSet.has(p.typeId))
-    let picked = pickProblems(pool, cfg.count, cfg.diff, cfg.kind, typeOrder, diffMatrix)
+    // 이 학생에게 이미 출제된 문제 (추가 옵션: 기존 출제 문제 제외)
+    const prevIds = new Set<string>()
+    if (cfg.excludePrev) {
+      for (const a of assignments) {
+        if (a.studentId !== student.id) continue
+        const w = worksheets.find(x => x.id === a.worksheetId)
+        if (w) for (const pid of w.problemIds) prevIds.add(pid)
+      }
+    }
+    const pool = problems.filter(p => {
+      if (!typeSet.has(p.typeId)) return false
+      if (cfg.mock === 'exclude' && isMock(p)) return false
+      if (cfg.mock === 'only' && !isMock(p)) return false
+      if (cfg.outOfCurriculumOff && isOutOfCurriculum(p)) return false
+      if (cfg.excludePrev && prevIds.has(p.id)) return false
+      return true
+    })
+    let picked: Problem[]
+    if (cfg.evenBy) {
+      // 문제수 균등 배분 — 선택 단위(대/중/소단원·유형)별로 문제 수를 고르게 나눠 선발
+      const groups: string[][] = cfg.evenBy === 'unit'
+        ? units.map(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))).filter(g => g.length)
+        : cfg.evenBy === 'mid'
+          ? mids.map(m => m.subs.flatMap(s => s.types.map(t => t.id))).filter(g => g.length)
+          : cfg.evenBy === 'sub'
+            ? mids.flatMap(m => m.subs.map(s => s.types.map(t => t.id))).filter(g => g.length)
+            : typeOrder.map(t => [t])
+      const per = Math.max(1, Math.ceil(cfg.count / Math.max(1, groups.length)))
+      const acc: Problem[] = []
+      const used = new Set<string>()
+      for (const g of groups) {
+        const gset = new Set(g)
+        const sub = pickProblems(pool.filter(p => gset.has(p.typeId) && !used.has(p.id)), per, cfg.diff, cfg.kind, g, diffMatrix)
+        for (const p of sub) { used.add(p.id); acc.push(p) }
+      }
+      picked = acc.slice(0, cfg.count)
+    } else {
+      picked = pickProblems(pool, cfg.count, cfg.diff, cfg.kind, typeOrder, diffMatrix)
+    }
     if (picked.length === 0) {
       alert('선택한 범위·조건에 맞는 문제가 문제은행에 없습니다. 범위나 문제 형태를 조정해 주세요.')
       return
@@ -209,14 +256,31 @@ export default function TodayPanel({ student }: { student: Student }) {
         </div>
       )}
 
-      {/* 점수 추이 그래프 (매쓰플랫: 점수 라인) */}
+      {/* 점수/순공 시간 추이 그래프 (매쓰플랫: 차트 토글) */}
       {chart.length > 0 && (
         <div className="mb-5 rounded-2xl border border-line bg-white p-5">
           <div className="mb-3 flex items-center gap-3 text-sm font-black">
-            점수 추이
-            <span className="ml-auto text-[11px] font-normal text-ink2"><span className="text-pine">●</span> 점수</span>
+            <div className="flex rounded-lg bg-paper2 p-0.5 text-xs font-bold">
+              {(['score', 'time'] as const).map(m => (
+                <button key={m} onClick={() => setChartMode(m)}
+                  className={`rounded-md px-3 py-1 transition ${chartMode === m ? 'bg-white text-pine shadow-sm' : 'text-ink2 hover:text-ink'}`}>
+                  {m === 'score' ? '점수' : '순공 시간'}
+                </button>
+              ))}
+            </div>
+            <span className="ml-auto text-[11px] font-normal text-ink2">
+              <span className="text-pine">●</span> {chartMode === 'score' ? '점수' : '순공 시간(분)'}
+            </span>
           </div>
-          <ScoreChart data={chart.map(r => ({ label: r.day.slice(5).replace('-', '.'), score: r.score! }))} />
+          {chartMode === 'score' ? (
+            <ScoreChart data={chart.map(r => ({ label: r.day.slice(5).replace('-', '.'), score: r.score! }))} />
+          ) : (
+            <ScoreChart max={Math.max(60, ...chart.map(r => Math.round(readStudySeconds(student.id, r.day) / 60)))}
+              data={chart.map(r => ({ label: r.day.slice(5).replace('-', '.'), score: Math.round(readStudySeconds(student.id, r.day) / 60) }))} />
+          )}
+          {chartMode === 'time' && (
+            <p className="mt-1 text-[11px] text-ink2">순공 시간은 학생앱 접속 중 누적 학습시간(이 기기 기준)입니다.</p>
+          )}
         </div>
       )}
 
@@ -230,15 +294,17 @@ export default function TodayPanel({ student }: { student: Student }) {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-line text-left text-xs text-ink2">
-                  <th className="py-1.5">날짜</th><th>푼/출제</th><th>점수</th><th>증감</th><th>맞은</th><th>틀린</th><th>출제 학습지</th>
+                  <th className="py-1.5">날짜</th><th>푼/출제</th><th>점수</th><th>증감</th><th>맞은</th><th>틀린</th><th>순공시간</th><th>학생앱화면</th><th>출제 학습지</th>
                 </tr>
               </thead>
               <tbody>
-                {historyRows.map(r => (
+                {historyRows.map(r => {
+                  const sec = readStudySeconds(student.id, r.day)
+                  return (
                   <tr key={r.day} className="border-b border-line/50">
                     <td className="whitespace-nowrap py-2 font-semibold">{r.day === todayKey() ? '오늘' : r.day.slice(5).replace('-', '.')}</td>
-                    <td className="py-2">{r.solved}/{r.issued}</td>
-                    <td className="py-2 font-bold text-pine-dark">{r.score !== null ? `${r.score}점` : '—'}</td>
+                    <td className="py-2">{r.solved === 0 ? <span className="text-ink2">시작 전</span> : `${r.solved}/${r.issued}`}</td>
+                    <td className="py-2 font-bold text-pine-dark">{r.score !== null ? `${r.score}점` : <span className="font-semibold text-ink2">시작 전</span>}</td>
                     <td className="py-2 text-xs font-bold">
                       {r.delta === null ? <span className="text-ink2">—</span>
                         : r.delta > 0 ? <span className="text-pine">▲ {r.delta}</span>
@@ -247,9 +313,14 @@ export default function TodayPanel({ student }: { student: Student }) {
                     </td>
                     <td className="py-2 text-pine">{r.solved ? r.right : '—'}</td>
                     <td className="py-2 text-clay">{r.solved ? r.wrong : '—'}</td>
+                    <td className="py-2 text-ink2">{sec > 0 ? fmtHM(sec) : '—'}</td>
+                    <td className="py-2">
+                      <button onClick={() => window.open('/student', '_blank')} title="학생앱 화면 열기"
+                        className="rounded-lg border border-line px-2 py-0.5 text-[11px] font-semibold text-ink2 hover:bg-paper2">보기</button>
+                    </td>
                     <td className="max-w-[180px] truncate py-2 pr-2 text-ink2">{r.titles.join(', ')}</td>
                   </tr>
-                ))}
+                )})}
               </tbody>
             </table>
           </div>
@@ -268,18 +339,18 @@ export default function TodayPanel({ student }: { student: Student }) {
   )
 }
 
-// 점수 추이 SVG 라인 그래프 (0~100점)
-function ScoreChart({ data }: { data: { label: string; score: number }[] }) {
+// 점수(0~100)·순공시간(분) 추이 SVG 라인 그래프 — max 지정 시 그 값이 상한
+function ScoreChart({ data, max = 100 }: { data: { label: string; score: number }[]; max?: number }) {
   const W = 640, H = 160, padL = 28, padB = 22, padT = 10, padR = 10
   const iw = W - padL - padR, ih = H - padT - padB
   const n = data.length
   const x = (i: number) => padL + (n <= 1 ? iw / 2 : (i / (n - 1)) * iw)
-  const y = (s: number) => padT + (1 - s / 100) * ih
+  const y = (s: number) => padT + (1 - s / max) * ih
   const pts = data.map((d, i) => `${x(i)},${y(d.score)}`).join(' ')
   return (
     <div className="overflow-x-auto">
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full min-w-[420px]" style={{ height: H }}>
-        {[0, 50, 100].map(g => (
+        {[0, Math.round(max / 2), max].map(g => (
           <g key={g}>
             <line x1={padL} x2={W - padR} y1={y(g)} y2={y(g)} stroke="var(--color-line)" strokeWidth={1} />
             <text x={padL - 6} y={y(g) + 3} textAnchor="end" fontSize={9} fill="var(--color-ink2)">{g}</text>
@@ -299,7 +370,8 @@ function ScoreChart({ data }: { data: { label: string; score: number }[] }) {
 }
 
 // ── 설정 모달 (매쓰플랫 오늘의 학습 설정 다이얼로그: 3탭 구조) ──────────────────────────────
-function ConfigModal({ student, initial, onSave, onClose }: {
+// 학년(그룹) 단위 [전체학생 학습 설정하기]에서도 재사용 (GroupPanel) — export
+export function ConfigModal({ student, initial, onSave, onClose }: {
   student: Student
   initial?: DailyConfig
   onSave: (cfg: DailyConfig) => void
@@ -309,9 +381,15 @@ function ConfigModal({ student, initial, onSave, onClose }: {
   const [tab, setTab] = useState(0)
   const [courseId, setCourseId] = useState(initial?.courseId ?? defaultCourse)
   const [unitIds, setUnitIds] = useState<string[]>(initial?.unitIds ?? [])
+  const [midIds, setMidIds] = useState<string[]>(initial?.midIds ?? [])
+  const [openUnits, setOpenUnits] = useState<Set<string>>(new Set())   // 중단원 펼침
   const [count, setCount] = useState(initial?.count ?? 10)
   const [diff, setDiff] = useState<Diff>(initial?.diff ?? 2)
   const [kind, setKind] = useState<DailyConfig['kind']>(initial?.kind ?? 'all')
+  const [mock, setMock] = useState<NonNullable<DailyConfig['mock']>>(initial?.mock ?? 'include')
+  const [excludePrev, setExcludePrev] = useState(initial?.excludePrev ?? false)
+  const [outOff, setOutOff] = useState(initial?.outOfCurriculumOff ?? false)
+  const [evenBy, setEvenBy] = useState<DailyConfig['evenBy']>(initial?.evenBy ?? null)
   const [review, setReview] = useState(initial?.review ?? false)
   const [reviewDays, setReviewDays] = useState<number[]>(initial?.reviewDays ?? [])
   const [reviewMode, setReviewMode] = useState<NonNullable<DailyConfig['reviewMode']>>(initial?.reviewMode ?? 'same')
@@ -324,17 +402,28 @@ function ConfigModal({ student, initial, onSave, onClose }: {
     const cap = capStr.trim() === '' ? undefined : Number(capStr)
     return courseId !== initial.courseId
       || JSON.stringify([...unitIds].sort()) !== JSON.stringify([...initial.unitIds].sort())
+      || JSON.stringify([...midIds].sort()) !== JSON.stringify([...(initial.midIds ?? [])].sort())
       || count !== initial.count
       || diff !== initial.diff
       || kind !== initial.kind
+      || mock !== (initial.mock ?? 'include')
+      || excludePrev !== (initial.excludePrev ?? false)
+      || outOff !== (initial.outOfCurriculumOff ?? false)
+      || (evenBy ?? null) !== (initial.evenBy ?? null)
       || review !== initial.review
       || JSON.stringify([...reviewDays].sort()) !== JSON.stringify([...(initial.reviewDays ?? [])].sort())
       || reviewMode !== (initial.reviewMode ?? 'same')
       || cap !== initial.reviewCap
-  }, [initial, courseId, unitIds, count, diff, kind, review, reviewDays, reviewMode, capStr])
+  }, [initial, courseId, unitIds, midIds, count, diff, kind, mock, excludePrev, outOff, evenBy, review, reviewDays, reviewMode, capStr])
 
   function toggleUnit(id: string) {
     setUnitIds(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id])
+    // 대단원 해제 시 그 아래 중단원 선택도 해제
+    const u = cur.units.find(x => x.id === id)
+    if (u && unitIds.includes(id)) setMidIds(prev => prev.filter(m => !u.mids.some(x => x.id === m)))
+  }
+  function toggleMid(id: string) {
+    setMidIds(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id])
   }
   function toggleDay(day: number) {
     setReviewDays(prev => prev.includes(day) ? prev.filter(x => x !== day) : [...prev, day])
@@ -347,7 +436,7 @@ function ConfigModal({ student, initial, onSave, onClose }: {
       if (!Number.isFinite(n) || n < 1 || n > 100) { alert('복습 최대 문제 수는 1 ~ 100 사이여야 합니다.'); return }
       reviewCap = Math.floor(n)
     }
-    onSave({ courseId, unitIds, count, diff, kind, review, reviewDays, reviewMode, reviewCap })
+    onSave({ courseId, unitIds, midIds, count, diff, kind, mock, excludePrev, outOfCurriculumOff: outOff, evenBy, review, reviewDays, reviewMode, reviewCap })
   }
 
   return (
@@ -374,19 +463,39 @@ function ConfigModal({ student, initial, onSave, onClose }: {
         {/* 탭1: 문제 범위 설정 */}
         {tab === 0 && (
           <div>
-            <select value={courseId} onChange={e => { setCourseId(e.target.value); setUnitIds([]) }}
+            <p className="mb-3 text-xs text-ink2">오늘의 학습으로 출제할 문제 범위를 설정해주세요.</p>
+            <select value={courseId} onChange={e => { setCourseId(e.target.value); setUnitIds([]); setMidIds([]); setOpenUnits(new Set()) }}
               className="mb-3 w-full rounded-lg border border-line px-3 py-2 text-sm font-semibold">
               {CURRICULA.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
             </select>
-            <div className="mb-1 text-xs text-ink2">대단원 (선택 없음 = 전체)</div>
-            <div className="grid gap-1.5 sm:grid-cols-2">
-              {cur.units.map(u => (
-                <label key={u.id}
-                  className={`flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold ${unitIds.includes(u.id) ? 'border-pine bg-pine-soft/60 text-pine-dark' : 'border-line bg-white text-ink2 hover:border-pine'}`}>
-                  <input type="checkbox" checked={unitIds.includes(u.id)} onChange={() => toggleUnit(u.id)} className="h-4 w-4 accent-[#2e6b4f]" />
-                  {u.name}
-                </label>
-              ))}
+            <div className="mb-1 text-xs text-ink2">대단원 (선택 없음 = 전체 · ▾를 누르면 중단원까지 고를 수 있어요)</div>
+            <div className="grid gap-1.5">
+              {cur.units.map(u => {
+                const open = openUnits.has(u.id)
+                const midOn = u.mids.filter(m => midIds.includes(m.id)).length
+                return (
+                  <div key={u.id} className={`rounded-lg border ${unitIds.includes(u.id) || midOn ? 'border-pine bg-pine-soft/40' : 'border-line bg-white'}`}>
+                    <div className="flex items-center gap-2 px-3 py-2 text-sm font-semibold">
+                      <input type="checkbox" checked={unitIds.includes(u.id)} onChange={() => toggleUnit(u.id)} className="h-4 w-4 accent-[#2e6b4f]" />
+                      <span className={unitIds.includes(u.id) || midOn ? 'text-pine-dark' : 'text-ink2'}>{u.name}</span>
+                      {midOn > 0 && <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[10px] font-bold text-pine-dark">중단원 {midOn}</span>}
+                      <div className="grow" />
+                      <button onClick={() => setOpenUnits(prev => { const n = new Set(prev); if (n.has(u.id)) n.delete(u.id); else n.add(u.id); return n })}
+                        className="px-1 text-xs text-ink2 hover:text-ink">{open ? '▾' : '▸'}</button>
+                    </div>
+                    {open && (
+                      <div className="grid gap-1 border-t border-line/50 px-3 py-2 sm:grid-cols-2">
+                        {u.mids.map(m => (
+                          <label key={m.id} className="flex cursor-pointer items-center gap-2 rounded px-1 py-0.5 text-xs font-semibold hover:bg-white">
+                            <input type="checkbox" checked={midIds.includes(m.id)} onChange={() => toggleMid(m.id)} className="accent-[#2e6b4f]" />
+                            {m.name}
+                          </label>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
             </div>
           </div>
         )}
@@ -394,6 +503,7 @@ function ConfigModal({ student, initial, onSave, onClose }: {
         {/* 탭2: 문제 조건 설정 */}
         {tab === 1 && (
           <div>
+            <p className="mb-3 text-xs text-ink2">오늘의 학습으로 출제할 난이도, 문제타입 등 설정해주세요.</p>
             <div className="mb-5">
               <div className="text-sm font-black">문제 수</div>
               <div className="mb-2 text-xs text-ink2">최소 10 ~ 최대 100 문제</div>
@@ -419,7 +529,7 @@ function ConfigModal({ student, initial, onSave, onClose }: {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="mb-5">
               <div className="mb-2 text-sm font-black">문제 타입</div>
               <div className="flex flex-wrap items-center gap-1.5">
                 {KIND_OPTIONS.map(o => (
@@ -428,6 +538,42 @@ function ConfigModal({ student, initial, onSave, onClose }: {
                     {o.label}
                   </label>
                 ))}
+              </div>
+            </div>
+            <div className="mb-5">
+              <div className="mb-2 text-sm font-black">모의고사 포함 여부</div>
+              <div className="flex flex-wrap items-center gap-1.5">
+                {([['include', '모의고사 포함'], ['exclude', '모의고사 제외'], ['only', '모의고사만']] as const).map(([v, label]) => (
+                  <label key={v} className={`cursor-pointer rounded-lg border px-3 py-1.5 text-xs font-bold ${mock === v ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:border-pine'}`}>
+                    <input type="radio" name="today-mock" className="sr-only" checked={mock === v} onChange={() => setMock(v)} />
+                    {label}
+                  </label>
+                ))}
+              </div>
+              <p className="mt-1 text-[11px] text-ink2">문제 출처가 모의고사·학력평가·수능 기출인 문항 기준입니다.</p>
+            </div>
+            <div>
+              <div className="mb-2 text-sm font-black">추가 옵션</div>
+              <div className="grid gap-2 text-sm">
+                <label className="flex cursor-pointer items-center gap-2 font-semibold">
+                  <input type="checkbox" checked={excludePrev} onChange={e => setExcludePrev(e.target.checked)} className="h-4 w-4 accent-[#2e6b4f]" />
+                  기존 출제 문제 제외
+                </label>
+                <label className="flex cursor-pointer items-center gap-2 font-semibold">
+                  <input type="checkbox" checked={outOff} onChange={e => setOutOff(e.target.checked)} className="h-4 w-4 accent-[#2e6b4f]" />
+                  교육 과정 외 문제 제외 <span className="font-normal text-ink2">(경시·올림피아드류 출처)</span>
+                </label>
+                <div className="flex items-center gap-2 font-semibold">
+                  <input type="checkbox" checked={!!evenBy} onChange={e => setEvenBy(e.target.checked ? 'mid' : null)} className="h-4 w-4 accent-[#2e6b4f]" />
+                  문제수 균등 배분
+                  <select value={evenBy ?? 'mid'} disabled={!evenBy} onChange={e => setEvenBy(e.target.value as DailyConfig['evenBy'])}
+                    className="rounded-lg border border-line px-2 py-1 text-xs font-bold disabled:opacity-40">
+                    <option value="unit">대단원</option>
+                    <option value="mid">중단원</option>
+                    <option value="sub">소단원</option>
+                    <option value="type">유형별</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -484,7 +630,7 @@ function ConfigModal({ student, initial, onSave, onClose }: {
           <span className="text-sm">오늘의 학습 문제 수 <b className="text-pine-dark">{count}</b> 개</span>
           <div className="grow" />
           {tab === 0 && (
-            <button onClick={() => setUnitIds([])}
+            <button onClick={() => { setUnitIds([]); setMidIds([]) }}
               className="rounded-lg border border-line px-3 py-2 text-xs font-semibold text-ink2 hover:text-ink">
               🔄 모든 단원 선택 해제
             </button>

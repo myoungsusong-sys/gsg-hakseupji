@@ -11,6 +11,7 @@ interface Row {
   badge: '교재' | '학습지' | '숙제'
   group: '학습지' | '교재' | '오답'
   label: string
+  round?: number      // [N회차] — 같은 대상 몇 번째 채점인지
   total: number
   correct: number
   unknown: number
@@ -36,6 +37,8 @@ const mmdd = (d: string) => d.slice(5).replace('-', '.')
 export default function HistoryPanel({ student }: { student: Student }) {
   const { gradings, assignments, worksheets, workbooks, wbItems, problems, removeAssignment } = useStore()
   const [date, setDate] = useState(todayKey())
+  const [rangeTo, setRangeTo] = useState<string | null>(null)   // 기간 조회 모드: date ~ rangeTo
+  const [calOpen, setCalOpen] = useState(false)                 // 커스텀 달력 피커
   const [filter, setFilter] = useState<Group | 'all'>('all')
   const [deleteMode, setDeleteMode] = useState(false)
   const [openId, setOpenId] = useState<string | null>(null)
@@ -57,8 +60,25 @@ export default function HistoryPanel({ student }: { student: Student }) {
   const wsMap = useMemo(() => new Map(worksheets.map(w => [w.id, w])), [worksheets])
   const wbMap = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
 
-  const dayGradings = useMemo(() => myGradings.filter(g => dateKey(g.date) === date), [myGradings, date])
-  const dayAssignments = useMemo(() => myAssignments.filter(a => dateKey(a.date) === date), [myAssignments, date])
+  // 단일 날짜 또는 기간(date ~ rangeTo) 조회
+  const inView = (d: string) => rangeTo ? d >= date && d <= rangeTo : d === date
+  const dayGradings = useMemo(() => myGradings.filter(g => inView(dateKey(g.date))), [myGradings, date, rangeTo])   // eslint-disable-line react-hooks/exhaustive-deps
+  const dayAssignments = useMemo(() => myAssignments.filter(a => inView(dateKey(a.date))), [myAssignments, date, rangeTo])   // eslint-disable-line react-hooks/exhaustive-deps
+
+  // [N회차] — 같은 대상(학습지/교재)을 몇 번째 채점한 기록인지 (전체 이력 기준)
+  const roundOf = useMemo(() => {
+    const m = new Map<string, number>()
+    const sorted = [...myGradings].sort((a, b) => a.date.localeCompare(b.date))
+    const cnt = new Map<string, number>()
+    for (const g of sorted) {
+      const target = g.worksheetId ?? g.workbookId
+      if (!target) continue
+      const n = (cnt.get(target) ?? 0) + 1
+      cnt.set(target, n)
+      m.set(g.id, n)
+    }
+    return m
+  }, [myGradings])
 
   // 그날 채점 → 학습 목록 행
   const rows = useMemo<Row[]>(() => dayGradings.map(g => {
@@ -74,7 +94,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
     if (g.workbookId) {
       const name = wbMap.get(g.workbookId)?.name ?? '교재'
       const range = g.pageFrom != null ? ` p.${g.pageFrom}~${g.pageTo ?? g.pageFrom}` : ''
-      return { id: g.id, badge: '교재' as const, group: '교재' as const, label: `${name}${range}`, total, correct, unknown }
+      return { id: g.id, badge: '교재' as const, group: '교재' as const, label: `${name}${range}`, round: roundOf.get(g.id), total, correct, unknown }
     }
     const ws = g.worksheetId ? wsMap.get(g.worksheetId) : undefined
     const isWrong = ws?.tags.includes('오답') ?? false
@@ -84,9 +104,10 @@ export default function HistoryPanel({ student }: { student: Student }) {
       badge: (isHomework ? '숙제' : '학습지') as Row['badge'],
       group: (isWrong ? '오답' : '학습지') as Row['group'],
       label: ws?.title ?? '학습지',
+      round: roundOf.get(g.id),
       total, correct, unknown,
     }
-  }), [dayGradings, wsMap, wbMap, myAssignments])
+  }), [dayGradings, wsMap, wbMap, myAssignments, roundOf])
 
   const visibleRows = filter === 'all' ? rows : rows.filter(r => r.group === filter)
 
@@ -128,6 +149,13 @@ export default function HistoryPanel({ student }: { student: Student }) {
 
   function pickDate(d: string) {
     setDate(d)
+    setRangeTo(null)
+    setFilter('all')
+    setOpenId(null)
+  }
+  function pickRange(from: string, to: string) {
+    setDate(from)
+    setRangeTo(to)
     setFilter('all')
     setOpenId(null)
   }
@@ -147,17 +175,33 @@ export default function HistoryPanel({ student }: { student: Student }) {
   return (
     <div className="grid gap-6 xl:grid-cols-[1fr_300px]">
       <div>
-        {/* 날짜 내비 (매쓰플랫식: 지난 수업 | 현재 날짜 | 최근 학습일) */}
+        {/* 날짜 내비 (매쓰플랫식: 지난 수업 | 현재 날짜 + 📅달력(기간 선택 지원) | 최근 학습일) */}
         <div className="mb-5 flex flex-wrap items-center gap-2">
-          {prevDate && (
+          {prevDate && !rangeTo && (
             <button onClick={() => pickDate(prevDate)}
               className="rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-ink">
               &lt; 지난 수업 {mmdd(prevDate)}
             </button>
           )}
-          <span className="text-sm font-black">{date === todayKey() ? `오늘 ${mmdd(date)}` : mmdd(date)}</span>
-          <input type="date" value={date} onChange={e => pickDate(e.target.value)}
-            className="rounded-lg border border-line px-3 py-1.5 text-sm" />
+          {rangeTo ? (
+            <span className="text-sm font-black">
+              {date.replaceAll('-', '.')} ~ {rangeTo.replaceAll('-', '.')}
+              <button onClick={() => pickDate(todayKey())} className="ml-2 rounded-full bg-paper2 px-2 py-0.5 text-xs font-semibold text-ink2 hover:text-ink">기간 해제 ✕</button>
+            </span>
+          ) : (
+            <span className="text-sm font-black">{date === todayKey() ? `오늘 ${mmdd(date)}` : mmdd(date)}</span>
+          )}
+          <div className="relative">
+            <button onClick={() => setCalOpen(v => !v)} title="달력 (기간 선택 가능)"
+              className="rounded-lg border border-line bg-white px-3 py-1.5 text-sm hover:border-pine">📅</button>
+            {calOpen && (
+              <CalendarPicker
+                recorded={new Set(recordedDates)}
+                onPickDay={d => { pickDate(d); setCalOpen(false) }}
+                onPickRange={(f, t) => { pickRange(f, t); setCalOpen(false) }}
+                onClose={() => setCalOpen(false)} />
+            )}
+          </div>
           <div className="grow" />
           {latestDate && (
             <button onClick={() => pickDate(latestDate)}
@@ -213,7 +257,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
                     <tr className="border-b border-line/50">
                       <td className="py-2 pr-2">
                         <span className={`mr-2 rounded px-2 py-0.5 text-xs font-bold ${BADGE_STYLE[r.badge]}`}>{r.badge}</span>
-                        <span className="font-semibold">{r.label}</span>
+                        <span className="font-semibold">{r.round != null && <span className="text-pine-dark">[{r.round}회차] </span>}{r.label}</span>
                       </td>
                       <td className="py-2">{r.correct}/{r.total}</td>
                       <td className="py-2 font-bold text-pine-dark">{r.total ? Math.round((r.correct / r.total) * 100) : 0}%</td>
@@ -308,6 +352,11 @@ export default function HistoryPanel({ student }: { student: Student }) {
             </button>
           )}
         </div>
+        <button
+          onClick={() => alert('숙제 내기 방법\n\n1) 수업 > 학습지 탭에서 학습지를 체크하고 하단 바의 [숙제 내기]를 누르거나, 행의 [숙제내기] 버튼을 누르세요.\n2) 학생은 학생앱 > 학습지에서 "숙제" 뱃지가 붙은 학습지를 풀어 제출합니다.\n3) 제출되면 이 패널의 미채점 건수가 줄고, 학습내역에 채점 기록이 쌓입니다.')}
+          className="mb-2 text-xs font-semibold text-pine hover:underline">
+          숙제는 어떻게 내주나요?
+        </button>
         {pendingHomework.length === 0 ? (
           <p className="py-6 text-center text-xs text-ink2">숙제 내역이 없습니다.</p>
         ) : (
@@ -335,5 +384,108 @@ export default function HistoryPanel({ student }: { student: Student }) {
         )}
       </aside>
     </div>
+  )
+}
+
+// ── 커스텀 달력 피커 (매쓰플랫 동일 구성): 월 네비 + 학습일 점 표시 + 기간 선택 모드
+//    + [오늘 기준 지난 7일]/[오늘 기준 지난 한 달] 프리셋 + "1년까지 조회" 안내 ──
+function CalendarPicker({ recorded, onPickDay, onPickRange, onClose }: {
+  recorded: Set<string>
+  onPickDay: (d: string) => void
+  onPickRange: (from: string, to: string) => void
+  onClose: () => void
+}) {
+  const now = new Date()
+  const [ym, setYm] = useState({ y: now.getFullYear(), m: now.getMonth() + 1 })
+  const [rangeMode, setRangeMode] = useState(false)
+  const [rFrom, setRFrom] = useState('')
+  const [rTo, setRTo] = useState('')
+
+  const key = (d: number) => `${ym.y}-${String(ym.m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
+  const daysInMonth = new Date(ym.y, ym.m, 0).getDate()
+  const firstDay = new Date(ym.y, ym.m - 1, 1).getDay()   // 0=일
+  const cells: (number | null)[] = [...Array(firstDay).fill(null), ...Array.from({ length: daysInMonth }, (_, i) => i + 1)]
+  const maxTo = (from: string) => {   // 시작일 기준 1년까지 조회 가능
+    const d = new Date(from); d.setFullYear(d.getFullYear() + 1)
+    return dateKey(d)
+  }
+
+  function clickDay(d: number) {
+    const k = key(d)
+    if (!rangeMode) { onPickDay(k); return }
+    if (!rFrom || (rFrom && rTo)) { setRFrom(k); setRTo('') }
+    else if (k < rFrom) { setRFrom(k) }
+    else if (k > maxTo(rFrom)) { alert('기간의 시작일을 기준으로 1년까지 조회할 수 있습니다.') }
+    else setRTo(k)
+  }
+  function preset(days: number) {
+    const to = todayKey()
+    const d = new Date(); d.setDate(d.getDate() - days)
+    onPickRange(dateKey(d), to)
+  }
+
+  const prevM = () => setYm(({ y, m }) => m === 1 ? { y: y - 1, m: 12 } : { y, m: m - 1 })
+  const nextM = () => setYm(({ y, m }) => m === 12 ? { y: y + 1, m: 1 } : { y, m: m + 1 })
+
+  return (
+    <>
+      <div className="fixed inset-0 z-10" onClick={onClose} />
+      <div className="absolute left-0 top-full z-20 mt-1 w-80 rounded-xl border border-line bg-white p-4 shadow-xl">
+        {/* 기간 선택 모드 헤더 */}
+        <div className="mb-3 flex items-center justify-between text-xs font-bold">
+          <label className="flex cursor-pointer items-center gap-1.5">
+            <input type="checkbox" checked={rangeMode} onChange={e => { setRangeMode(e.target.checked); setRFrom(''); setRTo('') }} />
+            기간 선택
+          </label>
+          {rangeMode && (
+            <span className="text-ink2">
+              [{rFrom ? rFrom.replaceAll('-', '.') : '시작일'}] ~ [{rTo ? rTo.replaceAll('-', '.') : '종료일'}]
+            </span>
+          )}
+        </div>
+        {rangeMode && !rFrom && <p className="mb-2 text-center text-xs text-ink2">기간을 선택해주세요.</p>}
+
+        {/* 월 네비 */}
+        <div className="mb-2 flex items-center justify-between text-sm font-bold">
+          <button onClick={prevM} className="rounded px-2 py-1 hover:bg-paper2">← {ym.m === 1 ? 12 : ym.m - 1}월</button>
+          <span>{ym.y}년 {ym.m}월</span>
+          <button onClick={nextM} className="rounded px-2 py-1 hover:bg-paper2">{ym.m === 12 ? 1 : ym.m + 1}월 →</button>
+        </div>
+
+        {/* 요일 + 날짜 (학습일 점 표시) */}
+        <div className="grid grid-cols-7 text-center text-[11px] font-bold text-ink2">
+          {['일', '월', '화', '수', '목', '금', '토'].map(d => <span key={d} className="py-1">{d}</span>)}
+        </div>
+        <div className="mb-2 grid grid-cols-7 text-center">
+          {cells.map((d, i) => {
+            if (d === null) return <span key={i} />
+            const k = key(d)
+            const inRange = rangeMode && rFrom && ((rTo && k >= rFrom && k <= rTo) || k === rFrom)
+            return (
+              <button key={i} onClick={() => clickDay(d)}
+                className={`relative mx-auto flex h-8 w-8 items-center justify-center rounded-full text-xs font-semibold hover:bg-paper2 ${
+                  inRange ? 'bg-pine text-paper hover:bg-pine' : k === todayKey() ? 'border border-pine text-pine-dark' : ''}`}>
+                {d}
+                {recorded.has(k) && <span className={`absolute bottom-0.5 h-1 w-1 rounded-full ${inRange ? 'bg-paper' : 'bg-pine'}`} />}
+              </button>
+            )
+          })}
+        </div>
+
+        {/* 프리셋 + 적용 */}
+        <div className="mb-2 flex flex-wrap gap-1.5">
+          <button onClick={() => preset(6)} className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold hover:border-pine">오늘 기준 지난 7일</button>
+          <button onClick={() => preset(29)} className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold hover:border-pine">오늘 기준 지난 한 달</button>
+        </div>
+        {rangeMode && (
+          <div className="mb-2 flex justify-end gap-2">
+            <button onClick={onClose} className="rounded-lg border border-line px-3 py-1.5 text-xs font-semibold text-ink2 hover:bg-paper2">취소</button>
+            <button disabled={!rFrom || !rTo} onClick={() => onPickRange(rFrom, rTo)}
+              className="rounded-lg bg-pine px-4 py-1.5 text-xs font-bold text-paper hover:brightness-105 disabled:opacity-40">적용하기</button>
+          </div>
+        )}
+        <p className="text-[11px] text-ink2">기간의 시작일을 기준으로 1년까지 조회할 수 있습니다.</p>
+      </div>
+    </>
   )
 }

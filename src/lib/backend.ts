@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, SavedReport, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -34,6 +34,7 @@ export interface CloudData {
   studentAppConfig: StudentAppConfig | null    // 학생앱 공개 설정 (settings 'studentAppConfig')
   klassOrder: string[]                         // 반 표시 순서 (settings 'klassOrder')
   academyProfile: AcademyProfile | null        // 마이페이지 내 정보 (settings 'academyProfile')
+  savedReports: SavedReport[]                  // 저장된 보고서 목록 (settings 'savedReports')
 }
 
 export function noteId(n: DailyNote): string {
@@ -77,6 +78,7 @@ export async function loadAll(): Promise<CloudData | null> {
     studentAppConfig: (settingsMap.get('studentAppConfig') as StudentAppConfig) ?? null,
     klassOrder: (settingsMap.get('klassOrder') as string[]) ?? [],
     academyProfile: (settingsMap.get('academyProfile') as AcademyProfile) ?? null,
+    savedReports: (settingsMap.get('savedReports') as SavedReport[]) ?? [],
   }
 }
 
@@ -129,6 +131,7 @@ export const cloud = {
       local.studentAppConfig ? this.setSetting('studentAppConfig', local.studentAppConfig) : Promise.resolve(),
       local.klassOrder.length ? this.setSetting('klassOrder', local.klassOrder) : Promise.resolve(),
       local.academyProfile ? this.setSetting('academyProfile', local.academyProfile) : Promise.resolve(),
+      local.savedReports.length ? this.setSetting('savedReports', local.savedReports) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

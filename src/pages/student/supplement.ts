@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import type { Grading, Problem, Student, Worksheet } from '../../types'
+import type { Grading, Problem, Student, StudentAppConfig, Worksheet } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { pickDrillProblems, type WrongRef } from '../../lib/drill'
@@ -21,6 +21,18 @@ export type SupplementKind = '오답학습' | '심화학습'
 // 원본 ⓘ 모달 안내문 (매쓰플랫 문구 그대로)
 export const SUPPLEMENT_RULE_MSG = '오답학습과 심화학습은 동시에 진행할 수 있지만, 하나의 학습은 끝나기 전까지 새로운 학습을 생성할 수 없어요!'
 export const WRONG_DONE_MSG = '틀린 유형의 문제를 모두 맞으면 추가학습을 생성할 수 없습니다.'
+export const ONE_CLICK_OFF_MSG = '선생님이 이 학년의 원클릭 복습(보충학습)을 꺼두었어요.'
+
+// 관리 > 실험실 「원클릭 복습 학습지」 설정 소비 — 학년 OFF면 보충학습(오답·심화) 버튼 비활성
+// (grade '중1-1' 과정형도 '중1' 학년 그룹 기준으로 판정)
+export function oneClickAllowed(cfg: StudentAppConfig, me: Student): boolean {
+  const lab = cfg.lab
+  if (!lab) return true
+  if (lab.oneClickOn === false) return false
+  const m = me.grade.match(/^(초|중|고)\s*(\d)/)
+  const short = m ? `${m[1]}${m[2]}` : me.grade
+  return !(lab.oneClickGradesOff ?? []).includes(short)
+}
 
 // 최근 채점의 오답·모름 참조 (신규 기록 itemId 기준 · 구버전은 순서 기준)
 export function wrongRefsOf(ws: Worksheet, g: Grading, problemMap: Map<string, Problem>): WrongRef[] {
@@ -62,8 +74,9 @@ function baseTitleOf(ws: Worksheet): string {
 }
 
 export function useSupplement(me: Student) {
-  const { problems, worksheets, assignments, gradings, saveWorksheet, addAssignment } = useStore()
+  const { problems, worksheets, assignments, gradings, saveWorksheet, addAssignment, studentAppConfig } = useStore()
   const nav = useNavigate()
+  const allowed = oneClickAllowed(studentAppConfig, me)
 
   // 진행 중(미완료) 보충학습 — 같은 종류가 끝나기 전엔 새로 생성할 수 없다 (원본 규칙 ③)
   function pendingOf(kind: SupplementKind): Worksheet | undefined {
@@ -76,6 +89,8 @@ export function useSupplement(me: Student) {
   }
 
   function create(kind: SupplementKind, ws: Worksheet, g: Grading): void {
+    // 가드0: 선생님이 원클릭 복습을 꺼둔 학년이면 생성 불가 (관리 > 실험실)
+    if (!allowed) { alert(ONE_CLICK_OFF_MSG); return }
     // 가드: 같은 종류의 진행 중 보충학습이 있으면 생성 불가
     const pending = pendingOf(kind)
     if (pending) {
@@ -142,5 +157,5 @@ export function useSupplement(me: Student) {
     nav(`/student/solve/${id}`)
   }
 
-  return { create, pendingOf }
+  return { create, pendingOf, allowed }
 }

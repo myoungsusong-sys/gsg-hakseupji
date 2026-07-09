@@ -5,6 +5,7 @@ import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { typeName } from '../../data/curriculum'
 import { resultTypeId, weakTypes, wrongByType } from '../../lib/drill'
+import { achievementIndex } from '../../lib/achievement'
 import { useStudentSelf } from './StudentShell'
 import {
   fmtHM, fmtHMS, latestGradingFor, myWorksheetRows, readDraft, readStudySeconds, statusOf,
@@ -15,23 +16,18 @@ const DAY_LABEL = ['일', '월', '화', '수', '목', '금', '토']
 const PANEL_TABS = ['전체', '숙제', '학습지', '교재'] as const
 type PanelTab = typeof PANEL_TABS[number]
 
-// 유형 등급 (임시 4구간 — 미학습0/취약1/보통2/양호3/우수4)
-// TODO(Wave 2): 매쓰플랫 성취도 7단계 컬러 체계(화이트~스마일)가 lib에 생기면 그 등급 산정으로 교체
-function levelOf(stat: { wrong: number; total: number } | undefined): number {
-  if (!stat || stat.total === 0) return 0
-  const rate = 1 - stat.wrong / stat.total
-  if (rate >= 0.9) return 4
-  if (rate >= 0.7) return 3
-  if (rate >= 0.4) return 2
-  return 1
-}
+// 유형 등급 — 매쓰플랫 성취도 7단계 컬러 체계(lib/achievement.ts)의 등급 인덱스 (0=화이트 … 6=스마일)
+const levelOf = achievementIndex
+const TOP_LEVEL = 6   // 스마일
 
 // ── 학습 홈 (매쓰플랫 학생앱 학습 홈 구조) ──────────────────────
 // 좌: ①오늘의 학습(요일 스트립+⏱타이머) ②이번주 학습정보 4칸 ③스마일 챌린지 ④최근 학습한 챌린지
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig } = useStore()
+  // 관리 > 학생앱 설정 「오늘의 학습」 소비 — 마스터 OFF 또는 이 학생 OFF면 섹션 숨김
+  const dailyOn = studentAppConfig.dailyMasterOn !== false && !(studentAppConfig.dailyOffIds ?? []).includes(me.id)
   const nav = useNavigate()
   const pv = usePreview()
   const [panelTab, setPanelTab] = useState<PanelTab>('전체')
@@ -91,7 +87,7 @@ export default function StudentHome() {
     for (const [t, stat] of now) {
       const lv = levelOf(stat), prev = levelOf(before.get(t))
       if (lv > prev) up++
-      if (lv === 4 && prev < 4) top++
+      if (lv === TOP_LEVEL && prev < TOP_LEVEL) top++
     }
     const timeSec = keys.reduce((acc, k) => acc + readStudySeconds(me.id, k), 0)
     return { solved, up, top, timeSec }
@@ -167,7 +163,8 @@ export default function StudentHome() {
       <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
         {/* ── 좌측 본문 ── */}
         <div className="grid min-w-0 gap-5">
-          {/* ① 오늘의 학습 */}
+          {/* ① 오늘의 학습 — 선생님 설정(dailyMasterOn·dailyOffIds)이 OFF면 숨김 */}
+          {dailyOn && (
           <section className="rounded-2xl border border-line bg-white p-6">
             <div className="mb-4 flex flex-wrap items-baseline gap-3">
               <h2 className="font-black">오늘의 학습</h2>
@@ -202,6 +199,7 @@ export default function StudentHome() {
               })}
             </div>
           </section>
+          )}
 
           {/* ② 이번주 학습정보 — 4칸 (매쓰플랫 동일 구성) */}
           <section className="rounded-2xl border border-line bg-white p-6">

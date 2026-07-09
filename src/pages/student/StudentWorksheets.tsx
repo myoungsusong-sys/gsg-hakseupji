@@ -4,7 +4,7 @@ import { useStore } from '../../lib/store'
 import { dateKey } from '../../lib/dates'
 import SupplementInfoModal from '../../components/student/SupplementInfoModal'
 import { useStudentSelf } from './StudentShell'
-import { useSupplement, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG } from './supplement'
+import { useSupplement, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, ONE_CLICK_OFF_MSG } from './supplement'
 import {
   latestGradingFor, myWorksheetRows, statusOf, summaryOf, usePreview, PREVIEW_LOCK_TITLE,
   STATUS_CLASS, type StudentWsStatus,
@@ -152,8 +152,9 @@ export default function StudentWorksheets() {
                       {done && g ? (
                         <div className="flex gap-1.5">
                           <button onClick={() => supplement.create('오답학습', ws, g)}
-                            disabled={wrongCount === 0 || pv.on || !!wrongBlocked}
+                            disabled={wrongCount === 0 || pv.on || !!wrongBlocked || !supplement.allowed}
                             title={pv.on ? PREVIEW_LOCK_TITLE
+                              : !supplement.allowed ? ONE_CLICK_OFF_MSG
                               : wrongBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingWrong!.title})`
                               : wrongCount === 0 ? WRONG_DONE_MSG
                               : '틀린 유형을 틀리지 않을 때까지 반복해서 공부해요'}
@@ -161,8 +162,9 @@ export default function StudentWorksheets() {
                             ◎ 오답학습
                           </button>
                           <button onClick={() => supplement.create('심화학습', ws, g)}
-                            disabled={pv.on || !!deepBlocked}
+                            disabled={pv.on || !!deepBlocked || !supplement.allowed}
                             title={pv.on ? PREVIEW_LOCK_TITLE
+                              : !supplement.allowed ? ONE_CLICK_OFF_MSG
                               : deepBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingDeep!.title})`
                               : '맞힌 문제의 유형을 한 단계 높은 난이도로 연습해요'}
                             className="rounded-lg border border-pine/60 px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft disabled:opacity-30 disabled:hover:bg-transparent">

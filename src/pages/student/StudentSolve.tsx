@@ -5,8 +5,10 @@ import { useStore } from '../../lib/store'
 import { defaultCurriculumForGrade, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import ProblemContent from '../../components/ProblemContent'
+import VideoModal from '../../components/VideoModal'
+import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
-import { clearDraft, readDraft, writeDraft } from './common'
+import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer } from './common'
 
 // ── 학습지 풀기 — 문항별 답 입력 + 임시저장 + 제출(자동채점) ────
 // · 답이 바뀔 때마다 localStorage 임시저장 (stu-draft-<wsId>) → 새로고침해도 유지
@@ -14,8 +16,11 @@ import { clearDraft, readDraft, writeDraft } from './common'
 export default function StudentSolve() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, assignments, problems, ensureCourse, saveGrading } = useStore()
+  const { worksheets, assignments, problems, ensureCourse, saveGrading, studentAppConfig: cfg } = useStore()
   const nav = useNavigate()
+  // 관리 > 학생앱 설정 「채점 전 공개」 소비 — 풀이 중에도 정답·해설·풀이영상 노출 (기본 비공개)
+  const [openSolution, setOpenSolution] = useState<Set<string>>(new Set())
+  const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
 
   const ws = worksheets.find(w => w.id === wsId && !w.deletedAt)
   const mine = !!ws && assignments.some(a => a.worksheetId === ws.id && a.studentId === me.id)
@@ -108,6 +113,38 @@ export default function StudentSolve() {
               <div className="border-t border-line/60 pt-3">
                 <AnswerInput p={p} value={answers[p.id] ?? ''} onChange={v => setAnswer(p.id, v)} />
               </div>
+              {/* 채점 전 공개 (선생님 설정) — 정답/해설/풀이영상 */}
+              {(cfg.showAnswerBefore || cfg.showSolutionBefore || (cfg.showVideoBefore && p.videoUrl)) && (
+                <div className="mt-3 grid gap-2 border-t border-line/60 pt-3 text-sm">
+                  {cfg.showAnswerBefore && (
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-semibold text-ink2">답 :</span>
+                      <AnswerText p={p} />
+                    </div>
+                  )}
+                  <div className="flex flex-wrap items-center gap-2">
+                    {cfg.showSolutionBefore && p.solution && (
+                      <button onClick={() => setOpenSolution(prev => { const n = new Set(prev); if (n.has(p.id)) n.delete(p.id); else n.add(p.id); return n })}
+                        className="rounded-lg border border-line px-2.5 py-1 text-xs font-bold text-ink2 hover:bg-paper2">
+                        {openSolution.has(p.id) ? '해설 접기' : '해설'}
+                      </button>
+                    )}
+                    {cfg.showVideoBefore && p.videoUrl && (
+                      <button onClick={() => setVideo({ src: p.videoUrl!, subtitle: p.subtitleUrl, title: `${i + 1}번 풀이영상` })}
+                        className="rounded-lg border border-pine px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft">
+                        ▶ 풀이영상
+                      </button>
+                    )}
+                  </div>
+                  {cfg.showSolutionBefore && openSolution.has(p.id) && (
+                    <div className="rounded-xl bg-paper2/50 p-3">
+                      {isImgAnswer(p.solution) || /^https?:/.test(p.solution)
+                        ? <img src={p.solution} alt="해설" className="w-full max-w-[465px]" />
+                        : <MathText text={p.solution} className="text-[13px] leading-relaxed" />}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -132,6 +169,8 @@ export default function StudentSolve() {
           </button>
         </div>
       </div>
+
+      {video && <VideoModal src={video.src} subtitle={video.subtitle} title={video.title} onClose={() => setVideo(null)} />}
     </div>
   )
 }

@@ -187,13 +187,29 @@ export interface Assignment {
 export interface DailyConfig {
   courseId: string       // 과정 (CURRICULA id)
   unitIds: string[]      // 출제 범위 대단원 (빈 배열 = 전체)
+  midIds?: string[]      // 출제 범위 중단원 (대단원 아래 세부 선택 — 빈/없음 = 대단원 전체)
   count: number          // 문제 수
   diff: Diff             // 난이도 중심
   kind: 'all' | Kind     // 문제 형태
+  mock?: 'include' | 'exclude' | 'only'   // 모의고사 포함 여부 (기본 include)
+  excludePrev?: boolean           // 추가 옵션: 기존 출제 문제 제외
+  outOfCurriculumOff?: boolean    // 추가 옵션: 교육 과정 외 문제 제외 (경시·올림피아드 등 출처 기준)
+  evenBy?: 'unit' | 'mid' | 'sub' | 'type' | null  // 추가 옵션: 문제수 균등 배분 단위
   review: boolean        // 오답 복습 토글 (최근 7일 틀린 문제)
   reviewDays?: number[]           // 복습 요일 (0=일 ~ 6=토, 매쓰플랫 요일 선택)
   reviewMode?: 'same' | 'twin' | 'both'  // 출제 방식: 틀린 문제 그대로/쌍둥이·유사/둘 다
   reviewCap?: number              // 복습 문제 수 제한 (기본 50)
+}
+
+// 저장된 보고서 목록 (hj_settings 'savedReports') — 즉석 생성 보고서 위 "저장 레이어".
+// 실제 내용은 항상 채점 기록에서 실시간 재생성 — 여기엔 이름·기간·종류만 저장.
+export interface SavedReport {
+  id: string
+  kind: 'daily' | 'monthly' | 'analysis'   // 일일 보고지 / 월간 보고서 / 유형분석 보고서
+  studentId: string
+  name: string          // 보고서명 (예: "2026년 07월 보고서")
+  period: string        // 'YYYY-MM-DD' | 'YYYY-MM' | 과정 라벨(유형분석)
+  createdAt: string     // ISO
 }
 
 // 학생앱 공개 설정 (hj_settings 'studentAppConfig') — 결과 화면의 정답·해설·풀이영상 노출 제어

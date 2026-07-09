@@ -125,6 +125,14 @@ export default function Layout() {
 
   const academyName = academyProfile.academyName?.trim() || '깊은생각수학'
 
+  // [맨 위로] 플로팅 버튼 — 스크롤이 내려가면 표시 (매쓰플랫 동일)
+  const [showTop, setShowTop] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 400)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <div className="min-h-screen">
       {stale && (
@@ -197,6 +205,14 @@ export default function Layout() {
         <button onClick={() => { setToast(0); setBell(true); markRead() }}
           className="no-print fixed bottom-6 right-6 z-40 rounded-xl border border-line bg-white px-4 py-3 text-sm font-bold shadow-lg hover:border-pine">
           🔔 새로운 알림 {toast}건이 있어요
+        </button>
+      )}
+
+      {/* [맨 위로] 플로팅 버튼 (우하단) */}
+      {showTop && (
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} title="맨 위로"
+          className={`no-print fixed right-6 z-40 h-11 w-11 rounded-full border border-line bg-white text-lg shadow-lg hover:border-pine ${toast > 0 ? 'bottom-24' : 'bottom-6'}`}>
+          ↑
         </button>
       )}
 

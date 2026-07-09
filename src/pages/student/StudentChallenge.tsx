@@ -7,6 +7,7 @@ import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, typeSubU
 import { POOL_COURSES } from '../../data/pool'
 import { CONCEPTS } from '../../data/concepts'
 import { wrongByType } from '../../lib/drill'
+import { ACHIEVEMENT_GRADES, achievementOf } from '../../lib/achievement'
 import MathText from '../../components/MathText'
 import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
 
@@ -16,9 +17,8 @@ import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
 //   (슬롯 = 그 유형·밴드 문제 풀, 최대 10칸 표시. 내가 푼 문항은 채움 — 정답 파랑/오답 빨강)
 // [학습하기] → 그 유형·밴드에서 아직 안 푼 문항 최대 5개로 즉석 학습지 생성(태그 '챌린지') → 바로 풀기
 // 우측 추천: 취약 유형 탈출(오답률 TOP3) · 최고 등급 도전(정답률 80%+)
-// TODO(Wave 2): 슬롯 채움을 정오 2색 대신 매쓰플랫 성취도 7단계 컬러 체계(화이트·그레이·새드·
-//   레드·옐로우·그린·스마일 — 유형 단위 등급 산정)로 확장. 공통 체계가 lib에 생기면 여기에 적용
-//   (성취도 필터 모달·설명 모달도 그때 함께).
+// 유형 카드에는 매쓰플랫 성취도 7단계 컬러(lib/achievement.ts — 화이트~스마일) 등급 칩 표시.
+// 슬롯 타일은 문항 단위 정오(파랑/빨강)를 유지 — 유형 단위 등급은 칩이 담당.
 
 const BANDS = [
   { key: '개념', desc: '하·중하', diffs: [1, 2] as number[] },
@@ -99,6 +99,8 @@ export default function StudentChallenge() {
     () => wrongByType(me.id, gradings, wbItems).filter(s => courseTypeIds.has(s.typeId)),
     [me.id, gradings, wbItems, courseTypeIds],
   )
+  const statMap = useMemo(() => new Map(stats.map(s => [s.typeId, s])), [stats])
+  const [gradeInfo, setGradeInfo] = useState(false)   // 성취도 컬러 설명 모달
   const weak = useMemo(() =>
     stats.filter(s => s.wrong > 0)
       .sort((a, b) => (b.wrong / b.total) - (a.wrong / a.total) || b.wrong - a.wrong)
@@ -264,6 +266,12 @@ export default function StudentChallenge() {
                         className={`rounded-xl border p-4 transition ${highlight === t.id ? 'border-pine ring-2 ring-pine/30' : 'border-line/70'}`}>
                         <div className="mb-3 flex flex-wrap items-center gap-2">
                           <b className="text-[15px]">{t.name}</b>
+                          {(() => { const g = achievementOf(statMap.get(t.id)); return (
+                            <button onClick={() => setGradeInfo(true)} title={`성취도 ${g.name} — ${g.desc}`}
+                              className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${g.cls}`}>
+                              {g.emoji} {g.name}
+                            </button>
+                          )})()}
                           {weak.some(w => w.typeId === t.id) && (
                             <span className="rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-clay">취약 유형</span>
                           )}
@@ -339,6 +347,27 @@ export default function StudentChallenge() {
 
       {/* [개념 익히기] 모달 — 유형이 속한 소단원의 개념 정리 */}
       {concept && <ConceptModal typeId={concept} onClose={() => setConcept(null)} />}
+
+      {/* 성취도 컬러 설명 모달 (매쓰플랫 챌린지 성취도 컬러 7종) */}
+      {gradeInfo && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-4" onClick={() => setGradeInfo(false)}>
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl" onClick={e => e.stopPropagation()}>
+            <div className="mb-1 flex items-start justify-between gap-3">
+              <h2 className="text-base font-black">성취도 컬러란?</h2>
+              <button onClick={() => setGradeInfo(false)} className="text-lg text-ink2 hover:text-ink">✕</button>
+            </div>
+            <p className="mb-4 text-xs text-ink2">내가 푼 모든 문제의 채점 결과에 따라 유형별 성취도를 컬러로 보여줘요.</p>
+            <div className="grid gap-2">
+              {ACHIEVEMENT_GRADES.map(g => (
+                <div key={g.key} className="flex items-center gap-3 rounded-xl border border-line/70 px-3 py-2 text-sm">
+                  <span className={`flex h-8 w-16 shrink-0 items-center justify-center rounded-lg text-xs font-bold ${g.cls}`}>{g.emoji} {g.name}</span>
+                  <span>{g.desc}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -367,6 +367,15 @@ export default function GradePanel({ student }: { student: Student }) {
         </label>
         <span className="text-ink2">범위 {inRange.length}문항</span>
         <div className="grow" />
+        <button
+          onClick={() => {
+            const body = `교재: ${wb.name}%0A쪽 범위: ${from}~${to}p%0A오류 문항·내용: `
+            location.href = `mailto:songmyoungsu79@gmail.com?subject=${encodeURIComponent(`[문제 오류 신고] ${wb.name} ${from}~${to}p`)}&body=${body}`
+          }}
+          title="정답표·유형 매칭 오류를 신고합니다"
+          className="rounded-lg border border-line px-3 py-2 text-xs font-semibold text-ink2 hover:bg-paper2">
+          🔔 문제 오류 신고
+        </button>
         <button onClick={() => { setSelecting(true); setSelected(new Set()) }} disabled={selecting || inRange.length === 0}
           className="rounded-lg px-3 py-2 text-xs font-bold text-pine hover:bg-pine-soft disabled:opacity-40">
           ＋ 문제별 오답학습지

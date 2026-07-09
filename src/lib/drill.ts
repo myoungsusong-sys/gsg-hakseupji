@@ -1,4 +1,5 @@
 import type { Diff, Grading, Problem, WBItem } from '../types'
+import { achievementOf } from './achievement'
 
 export interface TypeStat { typeId: string; wrong: number; total: number }
 
@@ -34,14 +35,10 @@ export function weakTypes(stats: TypeStat[]): TypeStat[] {
   return stats.filter(s => s.wrong > 0).sort((a, b) => b.wrong - a.wrong)
 }
 
-// 성취도 컬러 (매쓰플랫 성취도 매트릭스 방식): 정답률 → 색
+// 성취도 컬러 — 매쓰플랫 7단계 공통 체계(lib/achievement.ts)로 위임.
+// (구 5구간 자체 기준을 대체 — 하위호환: 반환은 여전히 칩 클래스 문자열)
 export function achievementColor(stat: TypeStat | undefined): string {
-  if (!stat || stat.total === 0) return 'bg-stone-100 text-stone-400'   // 미학습
-  const rate = 1 - stat.wrong / stat.total
-  if (rate >= 0.9) return 'bg-pine text-white'          // 우수
-  if (rate >= 0.7) return 'bg-pine-soft text-pine-dark' // 양호
-  if (rate >= 0.4) return 'bg-amber-soft text-amber'    // 보통
-  return 'bg-red-100 text-red-800'                       // 취약
+  return achievementOf(stat).cls
 }
 
 // ── 오답 학습지 선발 (매쓰플랫 오답학습지 옵션 다이얼로그와 동일 파라미터) ──────────

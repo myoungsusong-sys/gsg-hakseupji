@@ -14,10 +14,13 @@ import PeriodWrongModal from './PeriodWrongModal'
 
 const CIRCLED = ['①', '②', '③', '④', '⑤']
 
-// 태그 필터 고정 목록 (매쓰플랫 동일 — 존재 태그가 아니라 이 고정 세트)
+// 태그 필터 고정 목록 (매쓰플랫 동일 27종 — 존재 태그가 아니라 이 고정 세트)
 const TAG_OPTIONS = [
-  '태그 전체', '기본', '연산문제', '숙제', '복습', '연산',
+  '태그 전체', '기본', '연습문제', '숙제', '복습', '연산',
   '입학TEST', '일일TEST', '주간TEST', '단원TEST', '총괄TEST', '내신대비', '서술형',
+  '모의고사', '모의고사 쌍둥이', '수능대비', '원본', '기출 유사', '기타자료 유사',
+  '유형별 학습', '유형별 오답', '취약유형', '그룹취약유형', '단원별 취약',
+  '기간별 오답', '학습지 오답', '교재 오답', '기타',
 ]
 
 // 수업 > 학습지 탭 (매쓰플랫 동일) — 이 학생에게 출제한 학습지 목록·자동채점·오답 재출제
@@ -415,6 +418,11 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
   const [savedAt, setSavedAt] = useState('')
+  // 열람 시각 (매쓰플랫: "YYYY.MM.DD HH:MM 열람")
+  const [openedAt] = useState(() => {
+    const d = new Date()
+    return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+  })
 
   // ── 실시간 자동 저장 (교재 채점과 동일 패턴: 0.9초 디바운스 upsert) ──
   const pendingRef = useRef<Grading | null>(null)
@@ -536,16 +544,45 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
   }, [list, marks])
   const score = live.marked > 0 ? Math.round(live.correct / live.marked * 100) : null
 
+  // [원클릭 보고서] — 이 학습지 채점 결과를 단톡방용 텍스트로 즉시 복사
+  async function oneClickReport() {
+    const lines = [
+      `[깊은생각수학] ${student.name} 학습 결과`,
+      `📄 ${ws.title}`,
+      score != null
+        ? `채점 ${live.marked}/${list.length}문항 — 정답 ${live.correct} · 오답 ${live.wrong} · 모름 ${live.unknown} (${score}점)`
+        : '아직 채점 전입니다.',
+      '',
+      '오늘도 열심히 했습니다. 감사합니다 😊',
+    ]
+    try {
+      await navigator.clipboard.writeText(lines.join('\n'))
+      alert('원클릭 보고서를 복사했습니다. 단톡방에 붙여넣으세요.')
+    } catch { alert('복사에 실패했습니다. 보고서 탭에서 복사해 주세요.') }
+  }
+
+  // [🔔 문제 오류 신고] — 문항 정보를 담은 메일 작성 (오류 신고 채널)
+  function reportProblem(no: number, p: Problem) {
+    const body = `학습지: ${ws.title}%0A문항: ${no}번 (id ${p.id})%0A유형: ${typeName(p.typeId)}%0A오류 내용: `
+    location.href = `mailto:songmyoungsu79@gmail.com?subject=${encodeURIComponent(`[문제 오류 신고] ${ws.title} ${no}번`)}&body=${body}`
+  }
+
   return (
     <div>
-      {/* 헤더: ← 학습지명 (매쓰플랫 group-scoring 헤더) */}
+      {/* 헤더: ← 학습지명 + 열람 시각 + [원클릭 보고서] (매쓰플랫 group-scoring 헤더) */}
       <div className="mb-3 flex flex-wrap items-center gap-3">
         <button onClick={onBack} className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">← 목록</button>
         <div>
           <div className="font-black">{ws.title}</div>
-          <div className="text-xs text-ink2">{list.length}문제 · 선생님 채점 (셀 클릭: ✕ → ? → ○ → 해제)</div>
+          <div className="text-xs text-ink2">
+            {openedAt} 열람 · {list.length}문제 · 선생님 채점 (셀 클릭: ✕ → ? → ○ → 해제)
+          </div>
         </div>
         <div className="grow" />
+        <button onClick={oneClickReport}
+          className="rounded-lg border border-amber px-3 py-2 text-xs font-bold text-amber hover:bg-amber-soft">
+          원클릭 보고서
+        </button>
         {/* 학생 이름 + 점수 (실시간, 마킹 기준) */}
         <div className="rounded-xl border border-line bg-white px-4 py-2 text-right">
           <div className="text-xs font-semibold text-ink2">{student.name}</div>
@@ -626,10 +663,26 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
                     </span>
                   </button>
                 </div>
-                {/* 문제 원문 (기본 접힘 — 채점 속도 우선) */}
+                {/* 문제 원문 + 해설 전문 (기본 접힘 — 채점 속도 우선) */}
                 {open && (
                   <div className="border-t border-line/40 bg-white px-4 py-3 pl-[3.75rem]">
+                    <div className="mb-1 flex items-center gap-2">
+                      <span className="text-xs font-black text-ink2">{i + 1}번 문제</span>
+                      <div className="grow" />
+                      <button onClick={() => reportProblem(i + 1, p)} title="문제 오류 신고"
+                        className="rounded border border-line px-2 py-0.5 text-[11px] font-semibold text-ink2 hover:bg-paper2">
+                        🔔 문제 오류 신고
+                      </button>
+                    </div>
                     <ProblemContent p={p} />
+                    {p.solution && (
+                      <div className="mt-3 border-t border-line/40 pt-2">
+                        <div className="mb-1 text-xs font-black text-ink2">{i + 1}번 해설</div>
+                        {/^https?:/.test(p.solution)
+                          ? <img src={p.solution} alt="해설" loading="lazy" className="w-full max-w-[465px]" />
+                          : <MathText text={p.solution} className="text-[13px] leading-relaxed" />}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

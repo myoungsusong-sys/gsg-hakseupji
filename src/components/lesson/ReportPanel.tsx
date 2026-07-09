@@ -5,26 +5,93 @@ import { dateKey, monthKey, todayKey } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { typeName } from '../../data/curriculum'
 
-// ── 수업 > 보고서: 일일 보고지 + 월간 보고서 ──────────────────────────────
+// ── 수업 > 보고서: 일일 보고지 + 월간 보고서 (즉석 실시간 생성 + 저장 목록 레이어) ──────────
 
 type Mode = 'daily' | 'monthly'
 
+const KIND_LABEL = { daily: '일일 보고지', monthly: '월간 보고서', analysis: '유형분석 보고서' } as const
+
 export default function ReportPanel({ student }: { student: Student }) {
+  const { savedReports, removeSavedReport } = useStore()
   const [mode, setMode] = useState<Mode>('daily')
+  const [q, setQ] = useState('')                               // 보고서명 검색
+  const [listOpen, setListOpen] = useState(false)              // 저장 목록 섹션
+  const [load, setLoad] = useState<{ mode: Mode; period: string; n: number } | null>(null)  // 저장 보고서 열기
+
+  const myReports = useMemo(
+    () => savedReports.filter(r => r.studentId === student.id)
+      .filter(r => !q.trim() || r.name.includes(q.trim())),
+    [savedReports, student.id, q],
+  )
+
+  function openSaved(kind: string, period: string) {
+    if (kind === 'analysis') { alert('유형분석 보고서는 수업 > 유형분석 탭의 [보고서 내역]에서 확인하세요.'); return }
+    setMode(kind as Mode)
+    setLoad(prev => ({ mode: kind as Mode, period, n: (prev?.n ?? 0) + 1 }))
+  }
 
   return (
     <div>
-      <div className="no-print mb-5 flex w-fit rounded-xl border border-line bg-white p-1 text-sm font-bold">
-        {([['daily', '일일 보고지'], ['monthly', '월간 보고서']] as [Mode, string][]).map(([m, label]) => (
-          <button key={m} onClick={() => setMode(m)}
-            className={`rounded-lg px-4 py-1.5 ${mode === m ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>
-            {label}
-          </button>
-        ))}
+      <div className="no-print mb-5 flex flex-wrap items-center gap-3">
+        <div className="flex w-fit rounded-xl border border-line bg-white p-1 text-sm font-bold">
+          {([['daily', '일일 보고지'], ['monthly', '월간 보고서']] as [Mode, string][]).map(([m, label]) => (
+            <button key={m} onClick={() => setMode(m)}
+              className={`rounded-lg px-4 py-1.5 ${mode === m ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>
+              {label}
+            </button>
+          ))}
+        </div>
+        <div className="grow" />
+        <input value={q} onChange={e => { setQ(e.target.value); if (e.target.value) setListOpen(true) }}
+          placeholder="보고서명 검색" className="w-44 rounded-lg border border-line px-3 py-2 text-sm" />
+        <button onClick={() => setListOpen(v => !v)}
+          className={`rounded-lg border px-3 py-2 text-sm font-semibold ${listOpen ? 'border-pine bg-pine-soft/60 text-pine-dark' : 'border-line text-ink2 hover:text-ink'}`}>
+          🗂 저장 목록 ({savedReports.filter(r => r.studentId === student.id).length})
+        </button>
       </div>
+
+      {/* 저장된 보고서 목록 (이름·기간·종류·삭제 + 검색) */}
+      {listOpen && (
+        <div className="no-print mb-5 rounded-2xl border border-line bg-white p-4">
+          {myReports.length === 0 ? (
+            <p className="py-6 text-center text-sm text-ink2">
+              {q ? '검색 결과가 없습니다.' : <>아직 만들어진 보고서가 없습니다. 새로운 보고서를 만들어보세요. — 아래 [보고서 저장]을 누르면 이 목록에 쌓입니다.</>}
+            </p>
+          ) : (
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-line text-left text-xs text-ink2">
+                  <th className="py-1.5">보고서명</th><th>종류</th><th>기간</th><th>생성일</th><th className="text-right">관리</th>
+                </tr>
+              </thead>
+              <tbody>
+                {myReports.map(r => (
+                  <tr key={r.id} className="border-b border-line/50 last:border-0">
+                    <td className="py-2 pr-2">
+                      <button onClick={() => openSaved(r.kind, r.period)} className="text-left font-bold hover:text-pine hover:underline">
+                        {r.name}
+                      </button>
+                    </td>
+                    <td className="py-2 text-xs text-ink2">{KIND_LABEL[r.kind]}</td>
+                    <td className="py-2 text-xs text-ink2">{r.period}</td>
+                    <td className="py-2 text-xs text-ink2">{dateKey(r.createdAt).slice(2).replace(/-/g, '.')} 생성</td>
+                    <td className="py-2 text-right">
+                      <button onClick={() => { if (confirm(`'${r.name}' 보고서를 삭제할까요?`)) removeSavedReport(r.id) }}
+                        className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold text-clay hover:bg-red-50">삭제</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      )}
+
       {mode === 'daily'
-        ? <DailyReport key={student.id} student={student} />
-        : <MonthlyReport key={student.id} student={student} />}
+        ? <DailyReport key={`${student.id}-${load?.n ?? 0}`} student={student}
+            initialDate={load?.mode === 'daily' ? load.period : undefined} />
+        : <MonthlyReport key={`${student.id}-${load?.n ?? 0}`} student={student}
+            initialMonth={load?.mode === 'monthly' ? load.period : undefined} />}
     </div>
   )
 }
@@ -57,9 +124,9 @@ async function copyText(text: string, done: () => void) {
 
 // ── 일일 보고지 (하원 시 학부모 단톡방 피드백) ──────────────────────────────
 
-function DailyReport({ student }: { student: Student }) {
-  const { gradings, workbooks, worksheets, wbItems, dailyNotes, saveDailyNote } = useStore()
-  const [date, setDate] = useState(todayKey())
+function DailyReport({ student, initialDate }: { student: Student; initialDate?: string }) {
+  const { gradings, workbooks, worksheets, wbItems, dailyNotes, saveDailyNote, addSavedReport } = useStore()
+  const [date, setDate] = useState(initialDate ?? todayKey())
   const initial = dailyNotes.find(n => n.studentId === student.id && n.date === date)
   const [comment, setComment] = useState(initial?.comment ?? '')
   const [nextPlan, setNextPlan] = useState(initial?.nextPlan ?? '')
@@ -151,6 +218,12 @@ function DailyReport({ student }: { student: Student }) {
           <input type="date" value={date} onChange={e => setDate(e.target.value)} className="rounded-lg border border-line px-3 py-2" />
         </label>
         <div className="grow" />
+        <button
+          onClick={() => {
+            const name = prompt('저장할 보고서 이름', `${student.name} ${date.slice(5).replace('-', '.')} 일일 보고지`)
+            if (name?.trim()) addSavedReport({ kind: 'daily', studentId: student.id, name: name.trim(), period: date })
+          }}
+          className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">💾 보고서 저장</button>
         <button onClick={() => copyText(kakaoText, () => { setCopied(true); setTimeout(() => setCopied(false), 1800) })}
           className="rounded-lg bg-amber px-5 py-2 text-sm font-bold text-white hover:brightness-105">
           {copied ? '✓ 복사됨' : '💬 단톡방 텍스트 복사'}
@@ -267,9 +340,9 @@ const MONTH_TOGGLES = [
 ] as const
 type MonthToggle = typeof MONTH_TOGGLES[number]['key']
 
-function MonthlyReport({ student }: { student: Student }) {
-  const { gradings, workbooks, worksheets, wbItems } = useStore()
-  const [month, setMonth] = useState(monthKey(new Date()))
+function MonthlyReport({ student, initialMonth }: { student: Student; initialMonth?: string }) {
+  const { gradings, workbooks, worksheets, wbItems, addSavedReport } = useStore()
+  const [month, setMonth] = useState(initialMonth ?? monthKey(new Date()))
   const [opinion, setOpinion] = useState('')
   const [inc, setInc] = useState<Record<MonthToggle, boolean>>({ history: true, weekly: true, weak: true })
   const [copied, setCopied] = useState(false)
@@ -374,6 +447,12 @@ function MonthlyReport({ student }: { student: Student }) {
           ))}
         </div>
         <div className="grow" />
+        <button
+          onClick={() => {
+            const name = prompt('저장할 보고서 이름', `${y}년 ${m}월 보고서`)
+            if (name?.trim()) addSavedReport({ kind: 'monthly', studentId: student.id, name: name.trim(), period: month })
+          }}
+          className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">💾 보고서 저장</button>
         <button onClick={() => copyText(kakaoText, () => { setCopied(true); setTimeout(() => setCopied(false), 1800) })}
           className="rounded-lg bg-amber px-5 py-2 text-sm font-bold text-white hover:brightness-105">
           {copied ? '✓ 복사됨' : '💬 단톡방 텍스트 복사'}
