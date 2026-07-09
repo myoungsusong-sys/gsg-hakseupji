@@ -9,6 +9,21 @@ export const POOL_COURSES = [
   'h-cm1', 'h-cm2', 'h-alg', 'h-calc1', 'h-stat', 'h-calc2', 'h-geo',
 ] as const
 
+// 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
+export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int1', 'h-int2'] as const
+// [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer] — 완자 교재 크롭 문항
+type WanjaRaw = [string, string, number, number, string]
+
+function toWanjaProblem(id: string, r: WanjaRaw): Problem {
+  const [img, tid, diff, isC, ans] = r
+  return {
+    id, typeId: tid, kind: isC ? '객관식' : '주관식',
+    diff: (diff >= 1 && diff <= 5 ? diff : 3) as Problem['diff'],
+    body: '', answer: ans || '', solution: '', source: '완자',
+    imageUrl: `${import.meta.env.BASE_URL}${img}`,
+  }
+}
+
 // [pid, hash, conceptId, level, isChoice, answer, trendy, videoHash?] — videoHash 있으면 풀이영상(HLS) 연결
 type Raw = [number, string, string | number, number, number, string, number, (string | 0)?]
 
@@ -50,16 +65,20 @@ const cache = new Map<string, Problem[]>()
 const inflight = new Map<string, Promise<Problem[]>>()
 
 export function loadPool(course: string): Promise<Problem[]> {
-  if (!POOL_COURSES.includes(course as typeof POOL_COURSES[number])) return Promise.resolve([])
+  const isMath = POOL_COURSES.includes(course as typeof POOL_COURSES[number])
+  const isWanja = WANJA_COURSES.includes(course as typeof WANJA_COURSES[number])
+  if (!isMath && !isWanja) return Promise.resolve([])
   const hit = cache.get(course)
   if (hit) return Promise.resolve(hit)
   let p = inflight.get(course)
   if (!p) {
     p = fetch(`${import.meta.env.BASE_URL}pool-${course}.json`)
       .then(r => { if (!r.ok) throw new Error('pool ' + course + ' ' + r.status); return r.json() })
-      .then((d: Record<string, Raw>) => {
-        // 키 정규화: 'mf' 접두 통일 (기존 학습지 problemIds가 mf<pid> 형식)
-        const arr = Object.entries(d).map(([k, r]) => toProblem(k.startsWith('mf') ? k : 'mf' + k, r))
+      .then((d: Record<string, Raw | WanjaRaw>) => {
+        const arr = isWanja
+          ? Object.entries(d).map(([k, r]) => toWanjaProblem(k, r as WanjaRaw))
+          // 키 정규화: 'mf' 접두 통일 (기존 학습지 problemIds가 mf<pid> 형식)
+          : Object.entries(d).map(([k, r]) => toProblem(k.startsWith('mf') ? k : 'mf' + k, r as Raw))
         cache.set(course, arr)
         return arr
       })
