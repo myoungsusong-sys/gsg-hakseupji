@@ -82,7 +82,7 @@ export function myWorksheetRows(assignments: Assignment[], worksheets: Worksheet
   const rows: StudentWsRow[] = []
   for (const [wsId, v] of byWs) {
     const ws = worksheets.find(w => w.id === wsId)
-    if (ws && !ws.deletedAt) rows.push({ ws, date: v.date, kinds: [...v.kinds] })
+    if (ws && !ws.deletedAt && !ws.studentHidden) rows.push({ ws, date: v.date, kinds: [...v.kinds] })   // 학생앱 비공개 학습지 제외
   }
   return rows.sort((a, b) => b.date.localeCompare(a.date))
 }

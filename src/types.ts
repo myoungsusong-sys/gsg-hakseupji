@@ -71,6 +71,8 @@ export interface SheetOptions {
   showDate: boolean
   customDate: string | null          // null이면 생성일
   autoGrade?: boolean                // 자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)
+  showRelated?: boolean              // 연관 문항 정보 (같은 쌍둥이 그룹 문항 번호 캡션)
+  conceptPlacement?: 'front' | 'unit'  // 개념 정리 배치: 맨 앞(기본) / 각 단원 앞
 }
 
 export const DEFAULT_SHEET_OPTIONS: SheetOptions = {
@@ -95,11 +97,43 @@ export interface Worksheet {
   deletedAt: string | null
   // 보충학습 회차 체인 (학생앱 오답학습·심화학습 — 없으면 일반 학습지)
   supplement?: { kind: '오답학습' | '심화학습'; sourceWsId: string; round: number }
+  studentHidden?: boolean            // 학생앱 비공개 (일괄 액션바 토글)
 }
 
 export interface MyList {
   id: string
   name: string
+  createdAt: string
+}
+
+// 내 교재 — 학습지들을 교재 단위로 묶은 것 (교재 > 내 교재 / ⋮ 동일 옵션으로 교재 만들기)
+export interface MyBook {
+  id: string
+  title: string
+  grade: string
+  worksheetIds: string[]
+  createdAt: string
+}
+
+// 파일 업로드 대기 목록 (나의 DB 업로더·학습지 업로드 화면) —
+// 파일 원본은 브라우저에 저장하지 않고 메타만 기록. 변환(전사)은 Claude 수동 파이프라인.
+export interface UploadRec {
+  id: string
+  name: string           // 파일명
+  size: number           // bytes
+  fileKind: 'pdf' | 'image'
+  purpose: '문제' | '학습지'
+  uploadedAt: string     // ISO
+  status: '변환 대기' | '등록 완료'
+  grade?: string
+}
+
+// 사용자 저장 학습지 디자인 템플릿 (STEP3 [+ 템플릿 추가])
+export interface SheetTemplate {
+  id: string
+  name: string
+  opts: SheetOptions
+  theme: ThemeKey
   createdAt: string
 }
 
@@ -272,4 +306,15 @@ export const TAG_PRESETS = [
   '내신대비', '모의고사', '수능대비', '기출 유사',
   '유형별 학습', '유형별 오답', '취약유형', '단원별 취약',
   '기간별 오답', '학습지 오답', '원본', '직접 입력',
+]
+
+// 태그 필터 셀렉트 옵션 — 매쓰플랫 원본 27종 상시 노출 (내 학습지·휴지통)
+// TEST 표기는 STEP3 태그 칩(TAG_PRESETS)과 동일하게 띄어쓰기 유지 → 저장된 태그와 필터가 일치.
+export const TAG_FILTER_OPTIONS = [
+  '기본', '연습문제', '숙제', '복습', '연산',
+  '입학 TEST', '일일 TEST', '주간 TEST', '단원 TEST', '총괄 TEST',
+  '내신대비', '서술형', '모의고사', '모의고사 쌍둥이', '수능대비',
+  '원본', '기출 유사', '기타자료 유사',
+  '유형별 학습', '유형별 오답', '취약유형', '그룹취약유형', '단원별 취약',
+  '기간별 오답', '학습지 오답', '교재 오답', '기타',
 ]

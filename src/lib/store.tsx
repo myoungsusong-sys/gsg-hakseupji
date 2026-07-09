@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, SavedReport, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -29,6 +29,9 @@ interface Persisted {
   klassOrder: string[]
   academyProfile: AcademyProfile
   savedReports: SavedReport[]
+  myBooks: MyBook[]
+  uploads: UploadRec[]
+  sheetTemplates: SheetTemplate[]
 }
 
 const EMPTY: Persisted = {
@@ -40,6 +43,9 @@ const EMPTY: Persisted = {
   klassOrder: [],
   academyProfile: {},
   savedReports: [],
+  myBooks: [],
+  uploads: [],
+  sheetTemplates: [],
 }
 
 interface Store extends Persisted {
@@ -78,6 +84,13 @@ interface Store extends Persisted {
   setAcademyProfile: (p: AcademyProfile) => void         // 마이페이지 내 정보
   addSavedReport: (r: Omit<SavedReport, 'id' | 'createdAt'>) => void   // 보고서 저장 목록
   removeSavedReport: (id: string) => void
+  addMyBook: (b: Omit<MyBook, 'id' | 'createdAt'>) => string           // 내 교재
+  removeMyBook: (id: string) => void
+  addUpload: (u: Omit<UploadRec, 'id' | 'uploadedAt' | 'status'>) => string  // 파일 업로드 대기
+  setUploadStatus: (id: string, status: UploadRec['status']) => void
+  removeUpload: (id: string) => void
+  addSheetTemplate: (t: Omit<SheetTemplate, 'id' | 'createdAt'>) => void     // STEP3 디자인 템플릿
+  removeSheetTemplate: (id: string) => void
 }
 
 const Ctx = createContext<Store | null>(null)
@@ -116,6 +129,9 @@ function fromCloud(r: CloudData): Persisted {
     klassOrder: r.klassOrder ?? [],
     academyProfile: r.academyProfile ?? {},
     savedReports: r.savedReports ?? [],
+    myBooks: r.myBooks ?? [],
+    uploads: r.uploads ?? [],
+    sheetTemplates: r.sheetTemplates ?? [],
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -127,6 +143,7 @@ function toCloud(s: Persisted): CloudData {
     studentAppConfig: s.studentAppConfig,
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
+    myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
   }
 }
 
@@ -398,6 +415,39 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     removeSavedReport: id => {
       const next = stateRef.current.savedReports.filter(x => x.id !== id)
       set(s => ({ ...s, savedReports: next })); cloud.setSetting('savedReports', next)
+    },
+    addMyBook: b => {
+      const rec: MyBook = { ...b, id: uid('bk'), createdAt: new Date().toISOString() }
+      const next = [rec, ...stateRef.current.myBooks]
+      set(s => ({ ...s, myBooks: next })); cloud.setSetting('myBooks', next)
+      return rec.id
+    },
+    removeMyBook: id => {
+      const next = stateRef.current.myBooks.filter(x => x.id !== id)
+      set(s => ({ ...s, myBooks: next })); cloud.setSetting('myBooks', next)
+    },
+    addUpload: u => {
+      const rec: UploadRec = { ...u, id: uid('up'), uploadedAt: new Date().toISOString(), status: '변환 대기' }
+      const next = [rec, ...stateRef.current.uploads]
+      set(s => ({ ...s, uploads: next })); cloud.setSetting('uploads', next)
+      return rec.id
+    },
+    setUploadStatus: (id, status) => {
+      const next = stateRef.current.uploads.map(x => x.id === id ? { ...x, status } : x)
+      set(s => ({ ...s, uploads: next })); cloud.setSetting('uploads', next)
+    },
+    removeUpload: id => {
+      const next = stateRef.current.uploads.filter(x => x.id !== id)
+      set(s => ({ ...s, uploads: next })); cloud.setSetting('uploads', next)
+    },
+    addSheetTemplate: t => {
+      const rec: SheetTemplate = { ...t, id: uid('tpl'), createdAt: new Date().toISOString() }
+      const next = [...stateRef.current.sheetTemplates, rec]
+      set(s => ({ ...s, sheetTemplates: next })); cloud.setSetting('sheetTemplates', next)
+    },
+    removeSheetTemplate: id => {
+      const next = stateRef.current.sheetTemplates.filter(x => x.id !== id)
+      set(s => ({ ...s, sheetTemplates: next })); cloud.setSetting('sheetTemplates', next)
     },
     saveGrading: g => {
       const rec = { ...g, id: uid('gr') }

@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
-import { typeName, typeUnitName } from '../data/curriculum'
-import { CONCEPTS } from '../data/concepts'
+import { typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
+import { CONCEPTS, type Concept } from '../data/concepts'
 import MathText, { isImageUrl } from '../components/MathText'
 import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
@@ -175,6 +175,27 @@ export default function WorksheetView() {
     .map(cid => CONCEPTS.find(c => c.id === cid))
     .filter(c => c != null)
 
+  // 개념 배치: 맨 앞(기본) / 각 단원 앞 — 'unit'이면 단원 첫 문항 블록 위에 개념 박스를 붙인다
+  const conceptPlacement = concepts.length > 0 ? (opts.conceptPlacement ?? 'front') : 'front'
+  const unitKeyOfSub = (subId: string) => subId.replace(/m\d+s\d+$/, '')
+  const conceptBefore = useMemo(() => {
+    const m = new Map<number, Concept[]>()
+    if (conceptPlacement !== 'unit' || concepts.length === 0) return m
+    const firstIdxOfUnit = new Map<string, number>()
+    items.forEach((p, i) => {
+      const k = unitKeyOfSub(typeSubUnitId(p.typeId))
+      if (!firstIdxOfUnit.has(k)) firstIdxOfUnit.set(k, i)
+    })
+    for (const c of concepts) {
+      const idx = firstIdxOfUnit.get(unitKeyOfSub(c.subId)) ?? 0   // 매칭 단원 없으면 1번 앞
+      const arr = m.get(idx) ?? []
+      arr.push(c)
+      m.set(idx, arr)
+    }
+    return m
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [conceptPlacement, items, ws?.conceptIds])
+
   const qaRows = useMemo(() => {
     const rows: number[][] = []
     for (let i = 0; i < items.length; i += 3) rows.push([i, i + 1, i + 2].filter(k => k < items.length))
@@ -186,7 +207,8 @@ export default function WorksheetView() {
     if (!measured || !ws || items.length === 0) return null
     const S = spacingMmOf(opts.spacing)
     const defs: PageDef[] = []
-    const conceptsH = concepts.length ? (measured['concepts'] ?? 0) + 5 : 0
+    const frontConcepts = conceptPlacement === 'front' && concepts.length > 0
+    const conceptsH = frontConcepts ? (measured['concepts'] ?? 0) + 5 : 0
     const avail1 = BODY1_H - conceptsH
 
     // 1부. 문제지
@@ -194,17 +216,17 @@ export default function WorksheetView() {
       // 풀이칸: 문항당 1행(전폭), 행 높이 = max(문제, 40mm)
       const rowH = items.map((_, i) => Math.max(measured[`p${i}`] ?? 0, G.minSolveH))
       fillColumns(rowH, S, 1, p => p === 0 ? avail1 : BODYN_H)
-        .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'rows', rows: cols[0], conceptsFirst: pi === 0 && concepts.length > 0 }))
+        .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'rows', rows: cols[0], conceptsFirst: pi === 0 && frontConcepts }))
     } else if (opts.layout === 'basic') {
       const hs = items.map((_, i) => measured[`p${i}`] ?? 0)
       fillColumns(hs, S, 2, p => p === 0 ? avail1 : BODYN_H)
-        .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'cols', cols: [cols[0], cols[1]], conceptsFirst: pi === 0 && concepts.length > 0 }))
+        .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'cols', cols: [cols[0], cols[1]], conceptsFirst: pi === 0 && frontConcepts }))
     } else {
       const per = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 4 : 6
       for (let i = 0; i < items.length; i += per) {
         const slots: number[] = []
         for (let k = i; k < Math.min(i + per, items.length); k++) slots.push(k)
-        defs.push({ part: 's', first: i === 0, kind: 'split', slots, conceptsFirst: i === 0 && concepts.length > 0 })
+        defs.push({ part: 's', first: i === 0, kind: 'split', slots, conceptsFirst: i === 0 && frontConcepts })
       }
     }
 
@@ -303,6 +325,11 @@ export default function WorksheetView() {
     if (opts.showDiff) parts.push(DIFF_LABEL[p.diff])
     if (opts.showCorrectRate && p.correctRate != null) parts.push(`정답률 ${p.correctRate}%`)
     if (opts.showNew && p.isNew) parts.push('신경향')
+    // 연관 문항 정보: 같은 쌍둥이 그룹 문항 번호
+    if (opts.showRelated && p.twinGroup) {
+      const rel = items.map((x, xi) => x.id !== p.id && x.twinGroup === p.twinGroup ? xi + 1 : 0).filter(Boolean)
+      if (rel.length) parts.push(`연관 ${rel.join(',')}번`)
+    }
     return parts.join(' · ')
   }
   const onVideo = (pp: Problem, ii: number) =>
@@ -328,8 +355,25 @@ export default function WorksheetView() {
   const S = spacingMmOf(opts.spacing)
 
   /* ── 렌더 조각들 ── */
+  // 단원 앞 개념 박스 (배치 'unit' — 단원 첫 문항 블록 위에 붙어 함께 실측·조판된다)
+  const conceptGroupEl = (list: Concept[]) => (
+    <div style={{ border: `0.5pt solid ${theme.main}`, borderRadius: '1.5mm', padding: '3mm', marginBottom: '3mm' }}>
+      <div style={{ fontSize: '9pt', fontWeight: 800, color: theme.main, marginBottom: '1.5mm' }}>■ 개념 정리</div>
+      {list.map(c => (
+        <div key={c.id} style={{ marginBottom: '1.5mm' }}>
+          <b style={{ fontSize: '9pt' }}>{c.title}</b>
+          {c.lines.map((l, li) => (
+            <div key={li} style={{ fontSize: '8.5pt', lineHeight: 1.55, color: '#5c5c5c' }}>· <MathText text={l} /></div>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
   const problemAt = (i: number) => (
-    <ProblemBlock p={items[i]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} />
+    <>
+      {conceptBefore.get(i) && conceptGroupEl(conceptBefore.get(i)!)}
+      <ProblemBlock p={items[i]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} />
+    </>
   )
   const solveRowAt = (i: number, rowH: number) => (
     <div key={items[i].id} style={{ display: 'flex', justifyContent: 'space-between', minHeight: `${rowH}mm`, marginBottom: `${S}mm` }}>
@@ -536,9 +580,9 @@ export default function WorksheetView() {
         <div ref={measRef} aria-hidden
           style={{ position: 'fixed', left: '-9999px', top: 0, visibility: 'hidden', pointerEvents: 'none' }}>
           {conceptsEl && <div data-mk="concepts" style={{ width: `${CONTENT_W}mm` }}>{conceptsEl}</div>}
-          {items.map((p, i) => (
+          {items.map((_, i) => (
             <div key={`p${i}`} data-mk={`p${i}`} style={{ width: `${G.colW}mm` }}>
-              <ProblemBlock p={p} idx={i} caption={caption(p)} themeMain={theme.main} dims={dims} onVideo={onVideo} />
+              {problemAt(i)}
             </div>
           ))}
           {items.map((p, i) => (

@@ -29,6 +29,7 @@ import CsatLibrary from './pages/CsatLibrary'
 import GichulView from './pages/GichulView'
 import GichulTag from './pages/GichulTag'
 import ArithmeticGen from './pages/ArithmeticGen'
+import WorksheetUpload from './pages/WorksheetUpload'
 
 function Page({ children }: { children: React.ReactNode }) {
   return <div className="print-page-reset mx-auto max-w-7xl px-6 py-8">{children}</div>
@@ -71,6 +72,7 @@ function Gate() {
             {/* 수업 준비 (매쓰플랫 사이드바 구조 동일) */}
             <Route element={<PrepLayout />}>
               <Route path="/prep/worksheet" element={<WorksheetPage />} />
+              <Route path="/prep/worksheet-upload" element={<WorksheetUpload />} />
               <Route path="/prep/workbook" element={<Materials />} />
               <Route path="/prep/school-test" element={
                 <Placeholder title="학교별 기출"

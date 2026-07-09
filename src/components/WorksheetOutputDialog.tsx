@@ -12,9 +12,10 @@ import type { Worksheet } from '../types'
 export const OUTPUT_PARTS = ['문제지', '빠른정답', '정답해설', 'OMR'] as const
 export type OutputPart = (typeof OUTPUT_PARTS)[number]
 
-export default function WorksheetOutputDialog({ mode, ws, studentNames, onClose }: {
+export default function WorksheetOutputDialog({ mode, ws, extraWs, studentNames, onClose }: {
   mode: 'download' | 'print'
   ws: Worksheet
+  extraWs?: Worksheet[]         // 다중 선택 시 나머지 학습지 — 같은 옵션으로 새 탭에서 자동 인쇄
   studentNames: string[]        // 이 학습지가 출제된 학생명 (이름 표시 옵션용)
   onClose: () => void
 }) {
@@ -42,6 +43,8 @@ export default function WorksheetOutputDialog({ mode, ws, studentNames, onClose 
     sp.set('mode', mode === 'download' ? pdfMode : 'one')
     if (showName && name) sp.set('name', name)
     onClose()
+    // 다중 선택: 나머지 학습지는 같은 옵션으로 새 탭에서 자동 인쇄 (팝업 차단 시 허용 필요)
+    for (const w of extraWs ?? []) window.open(`#/worksheet/${w.id}?${sp.toString()}`, '_blank')
     nav(`/worksheet/${ws.id}?${sp.toString()}`)
   }
 
@@ -52,7 +55,9 @@ export default function WorksheetOutputDialog({ mode, ws, studentNames, onClose 
         <div className="mb-5 flex items-start gap-3">
           <h3 className="text-base font-bold">
             학습지 {mode === 'download' ? '다운로드' : '인쇄'}
-            <span className="ml-2 align-middle text-sm font-semibold text-ink2">{ws.title}</span>
+            <span className="ml-2 align-middle text-sm font-semibold text-ink2">
+              {ws.title}{extraWs && extraWs.length > 0 && ` 외 ${extraWs.length}개`}
+            </span>
           </h3>
           <button onClick={onClose} className="ml-auto text-lg leading-none text-ink2 hover:text-ink">✕</button>
         </div>

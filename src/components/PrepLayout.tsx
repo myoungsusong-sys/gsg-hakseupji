@@ -9,6 +9,7 @@ const item = ({ isActive }: { isActive: boolean }) =>
 // 매쓰플랫 수업 준비 사이드바와 동일 골격 (시험 대비 그룹 접기 포함)
 export default function PrepLayout() {
   const [examOpen, setExamOpen] = useState(true)
+  const [areaOpen, setAreaOpen] = useState(true)
   return (
     <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
       <aside className="no-print w-44 shrink-0">
@@ -28,12 +29,19 @@ export default function PrepLayout() {
               <NavLink to="/prep/kmm" className={item}>KMM수학경시대회</NavLink>
             </>
           )}
-          <div className="mb-1 mt-4 px-3 text-xs font-bold text-amber">영역별 학습</div>
-          <NavLink to="/prep/arithmetic" className={item}>연산</NavLink>
-          <NavLink to="/prep/essay" className={item}>
-            서술형 <span className="ml-1 rounded bg-clay px-1 text-[10px] font-bold text-white">N</span>
-          </NavLink>
-          <NavLink to="/prep/lecture" className={item}>강의</NavLink>
+          <button onClick={() => setAreaOpen(v => !v)}
+            className="mb-1 mt-4 flex w-full items-center px-3 text-xs font-bold text-amber">
+            영역별 학습 <span className="grow" /> {areaOpen ? '∧' : '∨'}
+          </button>
+          {areaOpen && (
+            <>
+              <NavLink to="/prep/arithmetic" className={item}>연산</NavLink>
+              <NavLink to="/prep/essay" className={item}>
+                서술형 <span className="ml-1 rounded bg-clay px-1 text-[10px] font-bold text-white">N</span>
+              </NavLink>
+              <NavLink to="/prep/lecture" className={item}>강의</NavLink>
+            </>
+          )}
           <div className="my-2 border-t border-line" />
           <NavLink to="/prep/share" className={item}>다른 기관 학습지</NavLink>
         </nav>

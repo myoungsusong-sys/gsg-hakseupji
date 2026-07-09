@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { CURRICULA } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
 import ProblemContent from '../components/ProblemContent'
+import FileUploader from '../components/FileUploader'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem } from '../types'
 import { AddProblemModal, BulkAddModal } from './Bank'
@@ -39,15 +40,29 @@ export default function MyDb() {
   const { customProblems, addProblem, removeProblem, saveWorksheet } = useStore()
   const nav = useNavigate()
 
+  const [viewMode, setViewMode] = useState<'자료' | '유형'>('자료')   // 보기 전환 탭 (매쓰플랫 동일)
   const [category, setCategory] = useState<SetCategory>('전체')
-  const [publisher, setPublisher] = useState('전체')
+  const [pubOpen, setPubOpen] = useState(false)                 // 게시자 멀티체크 팝오버
+  const [pubChecked, setPubChecked] = useState<Set<string>>(new Set([PUBLISHER]))  // 체크된 게시자
+  const [publisher, setPublisher] = useState('전체')            // 적용된 게시자 필터
+  const [q, setQ] = useState('')                                // 자료명 검색
+  const [refreshTick, setRefreshTick] = useState(0)             // ↻ 새로고침 (필터·선택 초기화)
   const [selected, setSelected] = useState<string[]>([])       // 선택한 자료(source) 목록
   const [expanded, setExpanded] = useState<string | null>(null) // 문제 미리보기 펼친 자료
   const [showAll, setShowAll] = useState(false)                 // 펼친 자료의 6번째 이후 문제
   const [menuFor, setMenuFor] = useState<string | null>(null)   // ⋮ 메뉴 열린 자료
   const [choosing, setChoosing] = useState(false)               // 업로드 방식 선택 모달
+  const [uploaderOpen, setUploaderOpen] = useState(false)       // 파일 첨부 전체화면 업로더
   const [adding, setAdding] = useState(false)
   const [bulk, setBulk] = useState(false)
+
+  void refreshTick
+
+  function refresh() {
+    setCategory('전체'); setPublisher('전체'); setPubChecked(new Set([PUBLISHER]))
+    setQ(''); setSelected([]); setExpanded(null); setMenuFor(null)
+    setRefreshTick(t => t + 1)
+  }
 
   const sets = useMemo<DbSet[]>(() => {
     const bySource = new Map<string, Problem[]>()
@@ -62,7 +77,8 @@ export default function MyDb() {
 
   const visible = sets.filter(g =>
     (category === '전체' || categoryOf(g.source) === category) &&
-    (publisher === '전체' || publisher === PUBLISHER))
+    (publisher === '전체' || publisher === PUBLISHER) &&
+    (!q.trim() || g.source.includes(q.trim())))
 
   const visibleSelected = selected.filter(s => visible.some(g => g.source === s))
   const allChecked = visible.length > 0 && visible.every(g => selected.includes(g.source))
@@ -125,17 +141,51 @@ export default function MyDb() {
 
   return (
     <div>
+      {/* 보기 전환 탭 (자료 / 유형) */}
+      <div className="mb-4 flex gap-1 rounded-full border border-line bg-white p-1 w-fit">
+        {(['자료', '유형'] as const).map(v => (
+          <button key={v} onClick={() => setViewMode(v)}
+            className={`rounded-full px-4 py-1.5 text-sm font-bold ${viewMode === v ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>
+            {v}
+          </button>
+        ))}
+      </div>
+
+      {viewMode === '유형' && <TypeView problems={customProblems} />}
+
+      {viewMode === '자료' && (<>
       {/* 필터 줄 */}
-      <div className="mb-4 flex items-center gap-3">
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <input value={q} onChange={e => setQ(e.target.value)} placeholder="자료명 검색"
+          className="w-52 rounded-lg border border-line bg-white px-3 py-2 text-sm outline-none focus:border-pine" />
         <select value={category} onChange={e => setCategory(e.target.value as SetCategory)}
           className="rounded-lg border border-line bg-white px-3 py-2 text-sm font-semibold">
           {SET_CATEGORIES.map(c => <option key={c} value={c}>{c === '전체' ? '자료 유형 · 전체' : c}</option>)}
         </select>
-        <select value={publisher} onChange={e => setPublisher(e.target.value)}
-          className="rounded-lg border border-line bg-white px-3 py-2 text-sm font-semibold">
-          <option value="전체">게시자 · 전체</option>
-          {sets.length > 0 && <option value={PUBLISHER}>{PUBLISHER}</option>}
-        </select>
+        {/* 게시자 멀티체크 팝오버 (단일 교사라 목록은 학원계정 1개) */}
+        <div className="relative">
+          <button onClick={() => setPubOpen(v => !v)}
+            className={`rounded-lg border px-3 py-2 text-sm font-semibold ${publisher !== '전체' ? 'border-pine text-pine-dark' : 'border-line bg-white text-ink'}`}>
+            게시자 {publisher === '전체' ? '· 전체' : `· ${publisher}`} ▾
+          </button>
+          {pubOpen && (
+            <div className="absolute left-0 top-11 z-20 w-56 rounded-2xl border border-line bg-white p-4 shadow-lg">
+              <button onClick={() => setPubChecked(new Set())} className="mb-2 text-xs text-ink2 hover:text-ink">전체 해제</button>
+              <label className="flex cursor-pointer items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-paper2">
+                <input type="checkbox" className="h-4 w-4 accent-pine"
+                  checked={pubChecked.has(PUBLISHER)}
+                  onChange={e => setPubChecked(e.target.checked ? new Set([PUBLISHER]) : new Set())} />
+                {PUBLISHER} <span className="text-xs text-ink2">(학원계정)</span>
+              </label>
+              <div className="mt-3 flex justify-end">
+                <button onClick={() => { setPublisher(pubChecked.size === 0 ? '전체' : PUBLISHER); setPubOpen(false) }}
+                  className="rounded-lg bg-pine px-4 py-1.5 text-sm font-bold text-paper">적용하기</button>
+              </div>
+            </div>
+          )}
+        </div>
+        <button onClick={refresh} title="새로고침"
+          className="rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink2 hover:text-ink">↻</button>
         {visibleSelected.length > 0 && (
           <button onClick={removeSelected}
             className="rounded-lg border border-line px-4 py-2 text-sm font-bold text-clay hover:border-clay">
@@ -195,6 +245,7 @@ export default function MyDb() {
 
       {/* ⋮ 메뉴 바깥 클릭 닫기 */}
       {menuFor && <div className="fixed inset-0 z-10" onClick={() => setMenuFor(null)} />}
+      </>)}
 
       {/* 업로드 방식 선택 */}
       {choosing && (
@@ -212,11 +263,14 @@ export default function MyDb() {
                     className="rounded-lg border border-pine px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">일괄 등록</button>
                 </div>
               </div>
-              <div className="rounded-2xl border border-line bg-paper2 p-5">
-                <div className="mb-2 text-base font-bold">📄 기출 PDF 업로드</div>
-                <p className="text-sm text-ink2">
-                  수능·모의고사 탭의 회차별 [문항 태깅]에서 편입하거나, 보유 PDF를 Claude에게 주면 텍스트로 변환해 일괄 등록합니다.
+              <div className="rounded-2xl border border-line p-5">
+                <div className="mb-2 text-base font-bold">📄 파일 업로드 (PDF·이미지)</div>
+                <p className="mb-4 text-sm text-ink2">
+                  보유 PDF/이미지를 변환 대기 목록에 담고, Claude 전사 → 일괄 등록으로 디지털 문제화합니다.
+                  수능·모의고사 탭의 [문항 태깅]에서 편입할 수도 있습니다.
                 </p>
+                <button onClick={() => { setChoosing(false); setUploaderOpen(true) }}
+                  className="rounded-lg border border-pine px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">파일 첨부하기</button>
               </div>
             </div>
             <div className="mt-4 flex justify-end">
@@ -226,9 +280,83 @@ export default function MyDb() {
         </div>
       )}
 
+      {uploaderOpen && (
+        <FileUploader purpose="문제" onClose={() => setUploaderOpen(false)}
+          onBulkAdd={() => { setUploaderOpen(false); setBulk(true) }} />
+      )}
       {adding && <AddProblemModal onClose={() => setAdding(false)} onAdd={p => { addProblem(p); setAdding(false) }} />}
       {bulk && <BulkAddModal courseId="m1-1" onClose={() => setBulk(false)}
         onAdd={ps => { ps.forEach(addProblem); setBulk(false); alert(`${ps.length}문제를 등록했습니다.`) }} />}
+    </div>
+  )
+}
+
+// 유형 보기 — 학년 필터(전체·중·고) + 과정 아코디언 → 대단원별 N문제 (매쓰플랫 나의 DB·유형 탭)
+function TypeView({ problems }: { problems: Problem[] }) {
+  const [level, setLevel] = useState<'전체' | '중' | '고'>('전체')
+  const [open, setOpen] = useState<Set<string>>(new Set())
+
+  // 과정 → 대단원 → 문제 수 집계
+  const grouped = useMemo(() => {
+    const byType = new Map<string, number>()
+    for (const p of problems) byType.set(p.typeId, (byType.get(p.typeId) ?? 0) + 1)
+    return CURRICULA.map(c => {
+      const units = c.units.map(u => {
+        const n = u.mids.flatMap(m => m.subs.flatMap(s => s.types)).reduce((acc, t) => acc + (byType.get(t.id) ?? 0), 0)
+        return { id: u.id, name: u.name, n }
+      }).filter(u => u.n > 0)
+      const total = units.reduce((a, u) => a + u.n, 0)
+      return { id: c.id, grade: c.grade, label: c.label, units, total }
+    }).filter(c => c.total > 0)
+  }, [problems])
+
+  const visible = grouped.filter(c =>
+    level === '전체' || (level === '중' ? c.id.startsWith('m') : c.id.startsWith('h')))
+
+  return (
+    <div>
+      <div className="mb-4 flex gap-1">
+        {(['전체', '중', '고'] as const).map(l => (
+          <button key={l} onClick={() => setLevel(l)}
+            className={`rounded-full px-3 py-1.5 text-sm font-semibold ${level === l ? 'bg-pine text-paper' : 'border border-line text-ink2 hover:bg-paper2'}`}>
+            {l}
+          </button>
+        ))}
+      </div>
+      {visible.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+          업로드한 문제가 없습니다. [자료] 탭의 문제 업로드하기로 시작하세요.
+        </div>
+      ) : (
+        <div className="grid gap-2">
+          {visible.map(c => {
+            const on = open.has(c.id)
+            return (
+              <div key={c.id} className="rounded-2xl border border-line bg-white">
+                <button onClick={() => setOpen(prev => { const n = new Set(prev); if (n.has(c.id)) n.delete(c.id); else n.add(c.id); return n })}
+                  className="flex w-full items-center gap-3 px-5 py-3.5 text-left">
+                  <span className="text-xs text-ink2">{on ? '▾' : '▸'}</span>
+                  <b>{c.label}</b>
+                  <span className="text-xs text-ink2">{c.grade}</span>
+                  <div className="grow" />
+                  <span className="text-sm font-bold text-pine-dark">{c.total}문제</span>
+                </button>
+                {on && (
+                  <div className="border-t border-line px-5 py-3">
+                    {c.units.map(u => (
+                      <div key={u.id} className="flex items-center gap-2 py-1.5 text-sm">
+                        <span className="text-ink">{u.name}</span>
+                        <div className="grow border-b border-dotted border-line" />
+                        <span className="font-semibold text-ink2">{u.n}문제</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }

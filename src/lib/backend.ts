@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, SavedReport, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -35,6 +35,9 @@ export interface CloudData {
   klassOrder: string[]                         // 반 표시 순서 (settings 'klassOrder')
   academyProfile: AcademyProfile | null        // 마이페이지 내 정보 (settings 'academyProfile')
   savedReports: SavedReport[]                  // 저장된 보고서 목록 (settings 'savedReports')
+  myBooks: MyBook[]                            // 내 교재 (settings 'myBooks')
+  uploads: UploadRec[]                         // 파일 업로드 대기 목록 (settings 'uploads')
+  sheetTemplates: SheetTemplate[]              // 사용자 디자인 템플릿 (settings 'sheetTemplates')
 }
 
 export function noteId(n: DailyNote): string {
@@ -79,6 +82,9 @@ export async function loadAll(): Promise<CloudData | null> {
     klassOrder: (settingsMap.get('klassOrder') as string[]) ?? [],
     academyProfile: (settingsMap.get('academyProfile') as AcademyProfile) ?? null,
     savedReports: (settingsMap.get('savedReports') as SavedReport[]) ?? [],
+    myBooks: (settingsMap.get('myBooks') as MyBook[]) ?? [],
+    uploads: (settingsMap.get('uploads') as UploadRec[]) ?? [],
+    sheetTemplates: (settingsMap.get('sheetTemplates') as SheetTemplate[]) ?? [],
   }
 }
 
@@ -132,6 +138,9 @@ export const cloud = {
       local.klassOrder.length ? this.setSetting('klassOrder', local.klassOrder) : Promise.resolve(),
       local.academyProfile ? this.setSetting('academyProfile', local.academyProfile) : Promise.resolve(),
       local.savedReports.length ? this.setSetting('savedReports', local.savedReports) : Promise.resolve(),
+      local.myBooks.length ? this.setSetting('myBooks', local.myBooks) : Promise.resolve(),
+      local.uploads.length ? this.setSetting('uploads', local.uploads) : Promise.resolve(),
+      local.sheetTemplates.length ? this.setSetting('sheetTemplates', local.sheetTemplates) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

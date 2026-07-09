@@ -5,7 +5,7 @@ import { typeName } from '../data/curriculum'
 import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
 import type { Assignment, Student, Worksheet } from '../types'
-import { DIFF_COLOR, DIFF_LABEL, TAG_PRESETS } from '../types'
+import { DIFF_COLOR, DIFF_LABEL, TAG_FILTER_OPTIONS } from '../types'
 
 export type View = 'active' | 'favorites' | 'trash'
 
@@ -49,6 +49,7 @@ export default function WorksheetList({ view }: { view: View }) {
     trashWorksheet, restoreWorksheet, purgeWorksheet, duplicateWorksheet,
     addList, renameList, removeList, setWorksheetLists,
     students, assignments, addAssignment,
+    saveWorksheet, updateWorksheet, addMyBook,
   } = store
   const [q, setQ] = useState('')
   const [tagFilter, setTagFilter] = useState<string>('all')
@@ -69,21 +70,20 @@ export default function WorksheetList({ view }: { view: View }) {
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [assignTarget, setAssignTarget] = useState<string[] | null>(null)
   const [outDialog, setOutDialog] = useState<'download' | 'print' | null>(null)
+  const [bulkListOpen, setBulkListOpen] = useState(false)   // 일괄 「리스트에 담기」
   const nav = useNavigate()
 
-  // 인쇄/다운로드 다이얼로그 — v1은 한 번에 1개 학습지만
+  // 인쇄/다운로드 다이얼로그 — 다중 선택 지원 (첫 학습지 현재 탭 + 나머지 새 탭 자동 인쇄)
   function openOut(mode: 'download' | 'print') {
-    if (checked.size !== 1) {
-      alert('인쇄·다운로드는 한 번에 1개 학습지만 지원합니다')
-      return
-    }
+    if (checked.size === 0) return
     setOutDialog(mode)
   }
 
-  const usedTags = useMemo(() => {
-    const s = new Set<string>()
-    worksheets.forEach(w => w.tags.forEach(t => s.add(t)))
-    return TAG_PRESETS.filter(t => s.has(t))
+  // 태그 필터: 매쓰플랫과 동일하게 프리셋 27종 상시 노출 + 프리셋 외 사용 중 태그 추가
+  const tagOptions = useMemo(() => {
+    const extra = new Set<string>()
+    worksheets.forEach(w => w.tags.forEach(t => { if (!TAG_FILTER_OPTIONS.includes(t)) extra.add(t) }))
+    return [...TAG_FILTER_OPTIONS, ...extra]
   }, [worksheets])
 
   const list = useMemo(() => {
@@ -160,6 +160,68 @@ export default function WorksheetList({ view }: { view: View }) {
     [problems, favorites],
   )
 
+  // ── 일괄 액션 (매쓰플랫 액션바) ──────────────────────────────
+  const checkedWs = () => worksheets.filter(w => checked.has(w.id))
+
+  // 학습지 병합: 선택한 학습지들의 문제를 합쳐 새 학습지 1개 생성 (중복 문제 제거)
+  function mergeChecked() {
+    const targets = checkedWs()
+    if (targets.length < 2) { alert('학습지 병합은 2개 이상 선택 시 가능합니다.'); return }
+    if (!confirm(`선택한 학습지 ${targets.length}개를 병합해 새 학습지를 만들까요? (원본은 유지됩니다)`)) return
+    const pids: string[] = []
+    const seen = new Set<string>()
+    for (const w of targets) for (const pid of w.problemIds) if (!seen.has(pid)) { seen.add(pid); pids.push(pid) }
+    const base = targets[0]
+    const id = `ws-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`
+    saveWorksheet({
+      ...base, id,
+      title: `병합 학습지 — ${base.title} 외 ${targets.length - 1}개`,
+      tags: [...new Set(targets.flatMap(w => w.tags))],
+      problemIds: pids,
+      conceptIds: [...new Set(targets.flatMap(w => w.conceptIds))],
+      listIds: [], createdAt: new Date().toISOString(), deletedAt: null,
+      supplement: undefined, studentHidden: undefined,
+    })
+    setChecked(new Set())
+    nav(`/worksheet/${id}`)
+  }
+
+  // 교재 만들기: 선택한 학습지들을 내 교재로 묶기 (교재 > 내 교재)
+  function makeBookFrom(wsIds: string[]) {
+    const targets = worksheets.filter(w => wsIds.includes(w.id))
+    if (targets.length === 0) return
+    const name = prompt('새 교재 이름', targets.length === 1 ? `${targets[0].title} 교재` : `${targets[0].title} 외 ${targets.length - 1}개 교재`)
+    if (!name?.trim()) return
+    addMyBook({ title: name.trim(), grade: targets[0].grade, worksheetIds: wsIds })
+    setChecked(new Set())
+    alert('내 교재로 저장했습니다. (교재 > 내 교재 탭에서 확인)')
+  }
+
+  // 학생앱 비공개 토글: 하나라도 공개면 전체 비공개로, 전부 비공개면 공개로
+  function toggleHidden() {
+    const targets = checkedWs()
+    const hide = targets.some(w => !w.studentHidden)
+    targets.forEach(w => updateWorksheet(w.id, { studentHidden: hide }))
+    alert(hide ? `${targets.length}개 학습지를 학생앱에서 비공개했습니다.` : `${targets.length}개 학습지를 다시 공개했습니다.`)
+  }
+
+  // 메일 전송: mailto 링크 등가 (첨부는 다운로드 후 수동 — 브라우저 mailto는 첨부 불가)
+  function mailChecked() {
+    const targets = checkedWs()
+    const body = [
+      '학습지를 전달합니다.', '',
+      ...targets.map(w => `- ${w.title} (${w.grade}, ${w.problemIds.length}문제)`),
+      '', '※ PDF는 다운로드 후 첨부해 주세요.',
+    ].join('\n')
+    location.href = `mailto:?subject=${encodeURIComponent(`[깊은생각수학] 학습지 ${targets.length}개`)}&body=${encodeURIComponent(body)}`
+  }
+
+  // 일괄 「리스트에 담기」: 선택한 리스트를 선택 학습지 전체에 추가
+  function addAllToList(listId: string) {
+    for (const w of checkedWs())
+      if (!w.listIds.includes(listId)) setWorksheetLists(w.id, [...w.listIds, listId])
+  }
+
   const filterActive = !!(dateFrom || dateTo || excludeReview || mineOnly || wsTypes.size > 0)
 
   // 행 부제: 유형 트리에 실제로 있는 유형명만 사용(옛 시드의 내부 id 노출 방지),
@@ -192,7 +254,7 @@ export default function WorksheetList({ view }: { view: View }) {
           <select value={tagFilter} onChange={e => setTagFilter(e.target.value)}
             className="rounded-full border border-line bg-white px-3 py-2 text-sm">
             <option value="all">태그 전체</option>
-            {usedTags.map(t => <option key={t} value={t}>{t}</option>)}
+            {tagOptions.map(t => <option key={t} value={t}>{t}</option>)}
           </select>
           <div className="relative">
             <button onClick={e => { e.stopPropagation(); setFilterOpen(v => !v) }}
@@ -244,10 +306,8 @@ export default function WorksheetList({ view }: { view: View }) {
           />
           {view === 'active' ? (
             <>
-              <button onClick={() => {
-                alert('기출 업로드는 학습지 만들기 > 기출 업로드 탭에서 진행합니다.')
-                nav('/make')
-              }} className="rounded-full border border-blue-500 bg-white px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50">
+              <button onClick={() => nav('/prep/worksheet-upload')}
+                className="rounded-full border border-blue-500 bg-white px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50">
                 ↥ 학습지 업로드하기
               </button>
               <button onClick={() => nav('/make')}
@@ -346,12 +406,32 @@ export default function WorksheetList({ view }: { view: View }) {
           {/* 일괄 선택 액션바 — 선택 시에만 표시 */}
           {checked.size > 0 && (
             <div className="mb-4 flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-white px-5 py-2.5 text-sm">
-              <span className="font-semibold">{checked.size}개 선택</span>
+              <span className="font-semibold">학습지 {checked.size}개 선택됨</span>
               {view === 'active' ? (
                 <>
+                  <button onClick={mergeChecked}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-pine hover:text-pine-dark">
+                    학습지 병합
+                  </button>
+                  <button onClick={() => setBulkListOpen(true)}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-pine hover:text-pine-dark">
+                    리스트에 담기
+                  </button>
+                  <button onClick={() => makeBookFrom([...checked])}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-pine hover:text-pine-dark">
+                    교재 만들기
+                  </button>
+                  <button onClick={toggleHidden}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-pine hover:text-pine-dark">
+                    학생앱 비공개
+                  </button>
                   <button onClick={() => setAssignTarget([...checked])}
                     className="rounded-lg bg-pine px-4 py-1.5 font-semibold text-paper">
                     일괄 출제
+                  </button>
+                  <button onClick={mailChecked}
+                    className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-blue-500 hover:text-blue-600">
+                    메일전송
                   </button>
                   <button onClick={() => openOut('print')}
                     className="rounded-lg border border-line px-4 py-1.5 font-semibold hover:border-blue-500 hover:text-blue-600">
@@ -366,7 +446,7 @@ export default function WorksheetList({ view }: { view: View }) {
                     ;[...checked].forEach(trashWorksheet)
                     setChecked(new Set())
                   }} className="rounded-lg border border-line px-4 py-1.5 text-ink2 hover:border-clay hover:text-clay">
-                    일괄 삭제
+                    선택 삭제
                   </button>
                 </>
               ) : (
@@ -447,6 +527,7 @@ export default function WorksheetList({ view }: { view: View }) {
                               <span className="shrink-0 rounded border border-blue-200 bg-blue-50 px-1.5 py-0.5 text-[10px] font-bold text-blue-600">자동 채점</span>
                             )}
                             {isNew && <span className="shrink-0 rounded bg-clay/10 px-1.5 py-0.5 text-[10px] font-black text-clay">NEW</span>}
+                            {w.studentHidden && <span title="학생앱 비공개" className="shrink-0 rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">비공개</span>}
                           </div>
                           <div className="mt-0.5 text-xs font-semibold text-blue-500">{sub}</div>
                         </td>
@@ -500,6 +581,7 @@ export default function WorksheetList({ view }: { view: View }) {
                   const nid = duplicateWorksheet(w.id)
                   if (nid) nav(`/make?edit=${nid}`)
                 }} />
+                <MenuItem label="동일 옵션으로 교재 만들기" onClick={() => { setMenuFor(null); makeBookFrom([w.id]) }} />
                 <MenuItem label="삭제" danger onClick={() => { trashWorksheet(w.id); setMenuFor(null) }} />
               </>
             ) : (
@@ -538,18 +620,54 @@ export default function WorksheetList({ view }: { view: View }) {
         )
       })()}
 
-      {/* 학습지 다운로드/인쇄 다이얼로그 (1개 선택 시) — 학생 이름 옵션은 이 학습지가 출제된 학생 목록 */}
+      {/* 학습지 다운로드/인쇄 다이얼로그 — 다중 선택 시 첫 학습지 현재 탭 + 나머지 새 탭 자동 인쇄 */}
       {outDialog && (() => {
-        const target = worksheets.find(w => w.id === [...checked][0])
+        const targets = list.filter(w => checked.has(w.id))
+        const target = targets[0]
         if (!target) return null
         const names = [...(assignedByWs.get(target.id) ?? [])]
           .map(sid => students.find(s => s.id === sid)?.name)
           .filter((n): n is string => !!n)
         return (
-          <WorksheetOutputDialog mode={outDialog} ws={target} studentNames={names}
+          <WorksheetOutputDialog mode={outDialog} ws={target} extraWs={targets.slice(1)} studentNames={names}
             onClose={() => setOutDialog(null)} />
         )
       })()}
+
+      {/* 일괄 「리스트에 담기」 모달 */}
+      {bulkListOpen && (
+        <div className="fixed inset-0 z-30 flex items-center justify-center bg-ink/40 p-6" onClick={() => setBulkListOpen(false)}>
+          <div className="w-full max-w-md rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
+            <h3 className="mb-1 font-bold">리스트에 담기</h3>
+            <p className="mb-4 text-sm text-ink2">선택한 학습지 {checked.size}개를 담을 리스트를 선택하세요.</p>
+            {myLists.length === 0 && (
+              <div className="mb-3 rounded-xl border border-dashed border-line p-6 text-center text-sm text-ink2">
+                아직 리스트가 없습니다. 아래에서 새로 만들어 보세요.
+              </div>
+            )}
+            <div className="grid gap-2">
+              {myLists.map(l => (
+                <button key={l.id} onClick={() => { addAllToList(l.id); setBulkListOpen(false); setChecked(new Set()) }}
+                  className="flex items-center gap-2 rounded-xl border border-line p-3 text-left text-sm hover:border-pine hover:bg-pine-soft/40">
+                  <span className="rounded bg-amber-soft px-1 text-[10px] font-black text-amber">MY</span>
+                  {l.name}
+                </button>
+              ))}
+            </div>
+            <div className="mt-4 flex justify-between">
+              <button onClick={() => {
+                const name = prompt('새 마이 리스트 이름')
+                if (name?.trim()) {
+                  const id = addList(name.trim())
+                  addAllToList(id)
+                  setBulkListOpen(false); setChecked(new Set())
+                }
+              }} className="rounded-lg border border-line px-4 py-2 text-sm">+ 새 마이 리스트</button>
+              <button onClick={() => setBulkListOpen(false)} className="rounded-lg border border-line px-5 py-2 text-sm">닫기</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 출제하기 모달 */}
       {assignTarget && (

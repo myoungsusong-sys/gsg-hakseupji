@@ -72,8 +72,10 @@ function ExamList() {
   const [grade, setGrade] = useState('전체')
   const [year, setYear] = useState('전체')
   const [month, setMonth] = useState('전체')  // 전체/학평/수능
+  const [outMonth, setOutMonth] = useState('전체')  // 출제 월 (매쓰플랫 필터)
   const [subject, setSubject] = useState('전체')
   const [q, setQ] = useState('')
+  const [asTable, setAsTable] = useState(false)   // 원본식 학습지 표 보기 ↔ 회차 카드
   const nav = useNavigate()
 
   useEffect(() => {
@@ -82,14 +84,20 @@ function ExamList() {
 
   const years = useMemo(() => papers ? [...new Set(papers.map(p => p.year))].sort().reverse() : [], [papers])
   const subjects = useMemo(() => papers ? [...new Set(papers.map(p => p.subject).filter(Boolean))] as string[] : [], [papers])
+  const outMonths = useMemo(() => {
+    if (!papers) return []
+    const ms = [...new Set(papers.map(p => p.month).filter(m => m !== '수능' && m !== '예비'))]
+    return ms.sort((a, b) => Number(a) - Number(b)).map(m => `${m}월`)
+  }, [papers])
 
   const list = useMemo(() => (papers ?? []).filter(p =>
     (grade === '전체' || p.grade === grade) &&
     (year === '전체' || p.year === year) &&
     (month === '전체' || (month === '수능' ? (p.month === '수능' || p.month === '예비') : p.month !== '수능' && p.month !== '예비')) &&
+    (outMonth === '전체' || `${p.month}월` === outMonth) &&
     (subject === '전체' || p.subject === subject) &&
     (!q.trim() || examTitle(p).includes(q.trim()) || p.region.includes(q.trim()))),
-    [papers, grade, year, month, subject, q])
+    [papers, grade, year, month, outMonth, subject, q])
 
   if (papers === null) return <div className="text-ink2">기출 목록을 불러오는 중…</div>
 
@@ -104,17 +112,32 @@ function ExamList() {
   return (
     <div>
       <p className="mb-4 text-sm text-ink2">
-        2006년부터의 학력평가·수능 수학 기출 <b>{papers.length}회차</b>. 원본 이미지 그대로 열람·인쇄하고, 문항을 태깅해 문제은행에 넣습니다. (EBSi · 출처 표기)
+        <b className="text-ink">수능/모의고사란?</b> — 2006년부터 출제된 학력평가·수능 수학 기출 문제와 해설을 정리한 학습지입니다 (<b>{papers.length}회차</b>).
+        원본 이미지 그대로 열람·인쇄하고, 문항을 태깅해 문제은행에 넣습니다. (EBSi · 출처 표기)
       </p>
 
       <div className="mb-5 flex flex-wrap items-center gap-2">
         <Seg label="학년" value={grade} setValue={setGrade} options={['전체', '고1', '고2', '고3']} />
         <Seg label="구분" value={month} setValue={setMonth} options={['전체', '학평', '수능']} />
         <Seg label="연도" value={year} setValue={setYear} options={['전체', ...years]} />
+        {/* 출제 월 필터 (매쓰플랫 동일) */}
+        <select value={outMonth} onChange={e => setOutMonth(e.target.value)}
+          className="rounded-full border border-line bg-white px-3 py-2 text-sm">
+          <option value="전체">출제 월 전체</option>
+          {outMonths.map(m => <option key={m} value={m}>{m}</option>)}
+        </select>
         {subjects.length > 0 && <Seg label="과목" value={subject} setValue={setSubject} options={['전체', ...subjects]} />}
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="회차·지역 검색"
           className="rounded-full border border-line bg-white px-4 py-2 text-sm outline-none focus:border-pine" />
         <span className="self-center text-sm text-ink2">{list.length}회차</span>
+        <div className="grow" />
+        {/* 보기 전환: 회차 카드 ↔ 원본식 학습지 표 */}
+        <div className="flex gap-1 rounded-full border border-line bg-white p-1 text-xs font-bold">
+          <button onClick={() => setAsTable(false)}
+            className={`rounded-full px-3 py-1 ${!asTable ? 'bg-pine text-paper' : 'text-ink2'}`}>카드</button>
+          <button onClick={() => setAsTable(true)}
+            className={`rounded-full px-3 py-1 ${asTable ? 'bg-pine text-paper' : 'text-ink2'}`}>표</button>
+        </div>
       </div>
 
       {list.length === 0 && (
@@ -123,11 +146,11 @@ function ExamList() {
         </div>
       )}
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {list.map(p => {
-          const cropped = false // 크롭 여부는 태깅 화면에서 확인
-          void cropped
-          return (
+      {asTable ? (
+        <ExamTable list={list} />
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {list.map(p => (
             <div key={p.id} className="rounded-2xl border border-line bg-white p-5">
               <div className="mb-1 flex items-center gap-2">
                 <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{p.grade}</span>
@@ -142,9 +165,92 @@ function ExamList() {
                   className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:border-amber hover:text-amber">문항 태깅</button>
               </div>
             </div>
-          )
-        })}
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/* 원본식 「출제 가능한 학습지 표」 — 선택·학년·학습지명·출제기관·출제일·문제(페이지)수·미리보기·수정·출제 */
+function ExamTable({ list }: { list: ExamPaper[] }) {
+  const nav = useNavigate()
+  const [checked, setChecked] = useState<Set<string>>(new Set())
+  const allOn = list.length > 0 && list.every(p => checked.has(p.id))
+
+  return (
+    <div>
+      {checked.size > 0 && (
+        <div className="mb-3 flex items-center gap-3 rounded-2xl border border-line bg-white px-5 py-2.5 text-sm">
+          <span className="font-semibold">{checked.size}개 선택</span>
+          <button onClick={() => {
+            [...checked].forEach((id, i) => { if (i > 0) window.open(`#/gichul/${id}`, '_blank') })
+            const first = [...checked][0]
+            if (first) nav(`/gichul/${first}`)
+          }} className="rounded-lg border border-pine px-4 py-1.5 font-semibold text-pine hover:bg-pine-soft">
+            선택 회차 열람·인쇄
+          </button>
+          <button onClick={() => setChecked(new Set())} className="text-ink2 hover:text-ink">선택 해제</button>
+        </div>
+      )}
+      <div className="overflow-x-auto rounded-2xl border border-line bg-white">
+        <table className="w-full text-sm">
+          <thead className="border-b border-line bg-paper2/60 text-xs text-ink2">
+            <tr>
+              <th className="w-10 px-3 py-3">
+                <input type="checkbox" className="h-4 w-4 accent-pine" checked={allOn}
+                  onChange={e => setChecked(e.target.checked ? new Set(list.map(p => p.id)) : new Set())} />
+              </th>
+              <th className="px-3 py-3">학년</th>
+              <th className="px-3 py-3 text-left">학습지명</th>
+              <th className="px-3 py-3">출제기관</th>
+              <th className="px-3 py-3">출제일</th>
+              <th className="px-3 py-3">문제수</th>
+              <th className="px-3 py-3">미리보기</th>
+              <th className="px-3 py-3">수정</th>
+              <th className="px-3 py-3">출제</th>
+            </tr>
+          </thead>
+          <tbody>
+            {list.map(p => (
+              <tr key={p.id} className="border-b border-line last:border-b-0 hover:bg-paper2/40">
+                <td className="px-3 py-2.5 text-center">
+                  <input type="checkbox" className="h-4 w-4 accent-pine" checked={checked.has(p.id)}
+                    onChange={() => setChecked(prev => { const n = new Set(prev); if (n.has(p.id)) n.delete(p.id); else n.add(p.id); return n })} />
+                </td>
+                <td className="whitespace-nowrap px-3 py-2.5 text-center font-semibold">{p.grade}</td>
+                <td className="px-3 py-2.5">
+                  <span className="mr-1.5 rounded bg-pine-soft px-1.5 py-0.5 text-xs font-semibold text-pine-dark">모의고사</span>
+                  <b>{examTitle(p)}</b>
+                </td>
+                <td className="whitespace-nowrap px-3 py-2.5 text-center text-ink2">
+                  {p.month === '수능' || p.month === '예비' ? '평가원' : `${p.region}교육청`}
+                </td>
+                <td className="whitespace-nowrap px-3 py-2.5 text-center text-ink2">
+                  {p.year}.{p.month === '수능' ? '11' : p.month === '예비' ? '-' : String(p.month).padStart(2, '0')}
+                </td>
+                <td className="whitespace-nowrap px-3 py-2.5 text-center text-ink2">문제 {p.qPages}p</td>
+                <td className="px-3 py-2.5 text-center">
+                  <button onClick={() => nav(`/gichul/${p.id}`)} title="열람·인쇄"
+                    className="rounded-lg border border-line px-2.5 py-1.5 hover:bg-paper2">🔍</button>
+                </td>
+                <td className="px-3 py-2.5 text-center">
+                  <button onClick={() => nav(`/gichul-tag/${p.id}`)}
+                    className="rounded-lg border border-line px-2.5 py-1.5 text-xs font-semibold text-ink2 hover:border-amber hover:text-amber">태깅</button>
+                </td>
+                <td className="px-3 py-2.5 text-center">
+                  <button onClick={() => nav(`/gichul/${p.id}`)}
+                    className="rounded-lg bg-pine px-3 py-1.5 text-xs font-semibold text-paper hover:bg-pine-dark">열람·인쇄</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+      <p className="mt-2 text-xs text-ink2">
+        ※ 원본은 [출제하기]로 학생에게 디지털 출제합니다 — 우리 앱은 기출 원본 이미지라 열람·인쇄로 출제하고,
+        문항 태깅으로 문제은행에 편입하면 학습지 만들기에서 디지털 출제가 가능합니다.
+      </p>
     </div>
   )
 }
