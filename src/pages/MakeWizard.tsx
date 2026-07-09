@@ -53,10 +53,16 @@ const isMockProblem = (p: Problem) => /모의고사|수능|학평/.test(p.source
 const SCHOOL_LEVELS: { label: string; prefix: string }[] = [
   { label: '초', prefix: 'e' }, { label: '중', prefix: 'm' }, { label: '고', prefix: 'h' },
 ]
-// 학기 칩 라벨: 초중 「1 - 1(22개정)」 · 고 「공통수학1(22개정)」
+// 과목 토글 (수학/과학) — Curriculum.subject로 구분 (기본 수학)
+const SUBJECTS: ('수학' | '과학')[] = ['수학', '과학']
+// 학기 칩 라벨: 초중 「1 - 1(22개정)」 · 고 「공통수학1(22개정)」 · 중등과학 「과학 1(22개정)」
 function semesterChipLabel(grade: string, label: string): string {
   const m = grade.match(/^[초중](\d)-(\d)$/)
-  return m ? `${m[1]} - ${m[2]}(22개정)` : label.replace(' (22개정)', '(22개정)')
+  if (m) return `${m[1]} - ${m[2]}(22개정)`
+  const sci = grade.match(/^중(\d)$/)                       // 중등 과학 과정 (grade '중1'~'중3')
+  const rev = label.match(/\((\d+개정)\)/)?.[1] ?? '22개정'
+  if (sci) return `과학 ${sci[1]}(${rev})`
+  return label.replace(/ \((\d+개정)\)/, '($1)')
 }
 
 // 매쓰플랫 추가 태그 4종 (기존 22종 뒤)
@@ -527,31 +533,54 @@ export default function MakeWizard() {
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
           <div className="rounded-2xl border border-line bg-white p-6">
             <div className="mb-4">
-              {/* 학교급 칩 + 전체 선택/해제 */}
+              {/* 과목 + 학교급 칩 + 전체 선택/해제 */}
               <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                <div className="flex gap-1 rounded-lg bg-paper2 p-1">
-                  {SCHOOL_LEVELS.map(lv => (
-                    <button key={lv.prefix}
-                      onClick={() => {
-                        if (gradeId.startsWith(lv.prefix)) return
-                        const first = CURRICULA.find(c => c.id.startsWith(lv.prefix))
-                        if (first) { setGradeId(first.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) }
-                      }}
-                      className={`rounded-md px-4 py-1.5 text-sm font-bold transition ${
-                        gradeId.startsWith(lv.prefix) ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'
-                      }`}>
-                      {lv.label}
-                    </button>
-                  ))}
+                <div className="flex items-center gap-2">
+                  {/* 과목 토글 (수학/과학) */}
+                  <div className="flex gap-1 rounded-lg bg-paper2 p-1">
+                    {SUBJECTS.map(sub => (
+                      <button key={sub}
+                        onClick={() => {
+                          if ((cur.subject ?? '수학') === sub) return
+                          const first = CURRICULA.find(c => c.id.startsWith(gradeId[0]) && (c.subject ?? '수학') === sub)
+                            ?? CURRICULA.find(c => (c.subject ?? '수학') === sub)
+                          if (first) { setGradeId(first.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) }
+                        }}
+                        className={`rounded-md px-4 py-1.5 text-sm font-bold transition ${
+                          (cur.subject ?? '수학') === sub ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'
+                        }`}>
+                        {sub}
+                      </button>
+                    ))}
+                  </div>
+                  {/* 학교급 칩 */}
+                  <div className="flex gap-1 rounded-lg bg-paper2 p-1">
+                    {SCHOOL_LEVELS.map(lv => {
+                      const has = CURRICULA.some(c => c.id.startsWith(lv.prefix) && (c.subject ?? '수학') === (cur.subject ?? '수학'))
+                      return (
+                        <button key={lv.prefix} disabled={!has}
+                          onClick={() => {
+                            if (gradeId.startsWith(lv.prefix)) return
+                            const first = CURRICULA.find(c => c.id.startsWith(lv.prefix) && (c.subject ?? '수학') === (cur.subject ?? '수학'))
+                            if (first) { setGradeId(first.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) }
+                          }}
+                          className={`rounded-md px-4 py-1.5 text-sm font-bold transition ${
+                            gradeId.startsWith(lv.prefix) ? 'bg-pine text-paper' : has ? 'text-ink2 hover:text-ink' : 'text-ink2/30 cursor-not-allowed'
+                          }`}>
+                          {lv.label}
+                        </button>
+                      )
+                    })}
+                  </div>
                 </div>
                 <div className="flex gap-2 text-xs">
                   <button onClick={() => toggleMany(typeOrder, true)} className="rounded border border-line px-2 py-1 hover:bg-paper2">전체 선택</button>
                   <button onClick={() => toggleMany(typeOrder, false)} className="rounded border border-line px-2 py-1 hover:bg-paper2">전체 해제</button>
                 </div>
               </div>
-              {/* 학기·과목 칩 (가로 스크롤) */}
+              {/* 학기 칩 (가로 스크롤, 현재 과목·학교급) */}
               <div className="flex gap-2 overflow-x-auto border-b border-line pb-3">
-                {CURRICULA.filter(c => c.id.startsWith(gradeId[0])).map(c => (
+                {CURRICULA.filter(c => c.id.startsWith(gradeId[0]) && (c.subject ?? '수학') === (cur.subject ?? '수학')).map(c => (
                   <button key={c.id}
                     onClick={() => { if (c.id !== gradeId) { setGradeId(c.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) } }}
                     className={`shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm transition ${
