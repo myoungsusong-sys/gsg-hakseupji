@@ -1,11 +1,12 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
 import type { Grading, GradeResult, Student, StudentAppConfig } from '../types'
 import { studentEmailOf } from '../lib/role'
+import { SUPABASE_ON } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
 
-const TABS = ['학생 관리', '반 관리', '선생님 관리', '학생앱', '추가 관리'] as const
+const TABS = ['학생 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
 type Tab = typeof TABS[number]
 
 const SCHOOL_FILTERS = ['전체', '초', '중', '고'] as const
@@ -27,6 +28,25 @@ function parseGrade(g: string): { sk: School; gn: number } {
   const m = g.match(/^(초|중|고)(\d)/)
   if (m) return { sk: m[1] as School, gn: Number(m[2]) }
   return { sk: '중', gn: 1 }
+}
+
+// 학년 정렬용 순위: 초1(1) … 초6(6) < 중1(11) … < 고3(23)
+function gradeRank(g: string): number {
+  const { sk, gn } = parseGrade(g)
+  return ({ 초: 0, 중: 1, 고: 2 }[sk]) * 10 + gn
+}
+
+// 미사용 4자리 출결 번호 자동 생성 (기존 출결번호·loginId와 중복 회피)
+function genAttendNo(used: Set<string>): string {
+  for (let i = 0; i < 300; i++) {
+    const n = String(Math.floor(1000 + Math.random() * 9000))
+    if (!used.has(n)) return n
+  }
+  for (let n = 0; n < 10000; n++) {
+    const s = String(n).padStart(4, '0')
+    if (!used.has(s)) return s
+  }
+  return ''
 }
 
 export default function Students() {
@@ -51,35 +71,120 @@ export default function Students() {
       {tab === '반 관리' && <KlassTab />}
       {tab === '선생님 관리' && <TeachersTab />}
       {tab === '학생앱' && <StudentAppTab />}
-      {tab === '추가 관리' && <ExtraTab />}
+      {tab === '실험실' && <LabTab />}
+      {tab === '추가 관리' && <ExtraTab onGoLab={() => setTab('실험실')} />}
+    </div>
+  )
+}
+
+// ── 공용 소품 ─────────────────────────────────────
+
+function Switch({ on, onChange, disabled }: { on: boolean; onChange: (v: boolean) => void; disabled?: boolean }) {
+  return (
+    <button type="button" onClick={() => !disabled && onChange(!on)} aria-pressed={on}
+      className={`relative h-5 w-9 shrink-0 rounded-full transition ${on ? 'bg-pine' : 'bg-line'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}>
+      <span className={`absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-all ${on ? 'left-[18px]' : 'left-0.5'}`} />
+    </button>
+  )
+}
+
+function ScrollTopButton() {
+  const [show, setShow] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setShow(window.scrollY > 240)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    onScroll()
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+  if (!show) return null
+  return (
+    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} title="맨 위로"
+      className="no-print fixed bottom-6 right-6 z-30 rounded-full border border-line bg-white px-4 py-3 text-sm font-bold text-ink2 shadow-lg hover:border-pine hover:text-pine">
+      ↑ 맨 위로
+    </button>
+  )
+}
+
+function Pagination({ page, count, onPage }: { page: number; count: number; onPage: (n: number) => void }) {
+  if (count <= 1) return null
+  const start = Math.max(1, Math.min(page - 2, count - 4))
+  const nums = []
+  for (let n = start; n <= Math.min(count, start + 4); n++) nums.push(n)
+  const btn = 'min-w-8 rounded-lg border px-2 py-1 text-sm font-bold'
+  return (
+    <div className="mt-4 flex items-center justify-center gap-1">
+      <button disabled={page <= 1} onClick={() => onPage(page - 1)}
+        className={`${btn} border-line text-ink2 disabled:opacity-30`}>‹</button>
+      {nums.map(n => (
+        <button key={n} onClick={() => onPage(n)}
+          className={`${btn} ${n === page ? 'border-pine bg-pine text-paper' : 'border-line text-ink2 hover:text-ink'}`}>
+          {n}
+        </button>
+      ))}
+      <button disabled={page >= count} onClick={() => onPage(page + 1)}
+        className={`${btn} border-line text-ink2 disabled:opacity-30`}>›</button>
     </div>
   )
 }
 
 // ── 학생 관리 ─────────────────────────────────────
 
-type Sort = 'latest' | 'name'
+type Sort = 'latest' | 'nameAsc' | 'nameDesc' | 'gradeAsc' | 'gradeDesc'
+const PAGE_SIZE = 20
 
 function StudentsTab() {
-  const { students } = useStore()
+  const { students, setStudentActive } = useStore()
   const [sort, setSort] = useState<Sort>('latest')
   const [filter, setFilter] = useState<SchoolFilter>('전체')
+  const [query, setQuery] = useState('')
   const [showInactive, setShowInactive] = useState(false)
   const [showForm, setShowForm] = useState(false)
   const [showBulk, setShowBulk] = useState(false)
   const [showImport, setShowImport] = useState(false)
   const [detail, setDetail] = useState<Student | null>(null)
   const [appPreview, setAppPreview] = useState<Student | null>(null)
+  const [sel, setSel] = useState<Set<string>>(new Set())
+  const [page, setPage] = useState(1)
 
   const activeCount = students.filter(s => s.active).length
   const list = useMemo(() => {
+    const q = query.trim()
     const filtered = students
       .filter(s => (showInactive ? true : s.active))
       .filter(s => filter === '전체' || s.grade.startsWith(filter))
-    return sort === 'name'
-      ? [...filtered].sort((a, b) => a.name.localeCompare(b.name, 'ko'))
-      : [...filtered].reverse()
-  }, [students, showInactive, filter, sort])
+      .filter(s => !q || s.name.includes(q))
+    switch (sort) {
+      case 'nameAsc': return [...filtered].sort((a, b) => a.name.localeCompare(b.name, 'ko'))
+      case 'nameDesc': return [...filtered].sort((a, b) => b.name.localeCompare(a.name, 'ko'))
+      case 'gradeAsc': return [...filtered].sort((a, b) => gradeRank(a.grade) - gradeRank(b.grade) || a.name.localeCompare(b.name, 'ko'))
+      case 'gradeDesc': return [...filtered].sort((a, b) => gradeRank(b.grade) - gradeRank(a.grade) || a.name.localeCompare(b.name, 'ko'))
+      default: return [...filtered].reverse()
+    }
+  }, [students, showInactive, filter, sort, query])
+
+  const pageCount = Math.max(1, Math.ceil(list.length / PAGE_SIZE))
+  const cur = Math.min(page, pageCount)
+  const paged = list.slice((cur - 1) * PAGE_SIZE, cur * PAGE_SIZE)
+  useEffect(() => { setPage(1) }, [filter, query, showInactive, sort])
+
+  const pageAllChecked = paged.length > 0 && paged.every(s => sel.has(s.id))
+  const togglePageAll = () => setSel(prev => {
+    const next = new Set(prev)
+    if (pageAllChecked) paged.forEach(s => next.delete(s.id))
+    else paged.forEach(s => next.add(s.id))
+    return next
+  })
+  const toggleOne = (id: string) => setSel(prev => {
+    const next = new Set(prev)
+    if (next.has(id)) next.delete(id); else next.add(id)
+    return next
+  })
+  const bulkActive = (active: boolean) => {
+    if (sel.size === 0) return
+    if (!confirm(`선택한 학생 ${sel.size}명을 ${active ? '재원' : '퇴원'} 처리할까요?`)) return
+    for (const id of sel) setStudentActive(id, active)
+    setSel(new Set())
+  }
 
   return (
     <div>
@@ -87,7 +192,10 @@ function StudentsTab() {
         <select value={sort} onChange={e => setSort(e.target.value as Sort)}
           className="rounded-lg border border-line bg-white px-2 py-1.5 text-sm font-bold text-ink">
           <option value="latest">최신 등록순</option>
-          <option value="name">이름순</option>
+          <option value="nameAsc">이름 오름차순</option>
+          <option value="nameDesc">이름 내림차순</option>
+          <option value="gradeAsc">학년 오름차순</option>
+          <option value="gradeDesc">학년 내림차순</option>
         </select>
         <div className="flex gap-1">
           {SCHOOL_FILTERS.map(f => (
@@ -98,6 +206,13 @@ function StudentsTab() {
               {f}
             </button>
           ))}
+        </div>
+        <div className="flex items-center gap-0">
+          <input value={query} onChange={e => setQuery(e.target.value)}
+            placeholder="학생 이름 검색"
+            className="w-40 rounded-l-lg border border-line bg-white px-3 py-1.5 text-sm" />
+          <button title="검색" aria-label="검색"
+            className="rounded-r-lg border border-l-0 border-line bg-white px-2.5 py-1.5 text-sm text-ink2">🔍</button>
         </div>
         <span className="text-sm font-bold text-ink2">재원생 <b className="text-pine">{activeCount}</b>명</span>
         <label className="flex items-center gap-1.5 text-sm text-ink2">
@@ -112,6 +227,18 @@ function StudentsTab() {
         <button onClick={() => setShowForm(true)}
           className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">학생 개별 등록</button>
       </div>
+
+      {sel.size > 0 && (
+        <div className="mb-3 flex items-center gap-3 rounded-xl border border-pine/40 bg-pine-soft px-4 py-2 text-sm">
+          <b className="text-pine-dark">{sel.size}명 선택됨</b>
+          <button onClick={() => bulkActive(true)}
+            className="rounded-lg border border-line bg-white px-3 py-1 font-bold text-ink2 hover:text-pine">재원 처리</button>
+          <button onClick={() => bulkActive(false)}
+            className="rounded-lg border border-line bg-white px-3 py-1 font-bold text-ink2 hover:text-clay">퇴원 처리</button>
+          <div className="grow" />
+          <button onClick={() => setSel(new Set())} className="text-ink2 hover:text-ink">선택 해제 ✕</button>
+        </div>
+      )}
 
       {showForm && <RegisterModal onClose={() => setShowForm(false)} />}
       {showBulk && <BulkModal onClose={() => setShowBulk(false)} />}
@@ -128,46 +255,73 @@ function StudentsTab() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
-                <th className="px-4 py-2.5 font-bold">학년</th>
+                <th className="w-8 px-3 py-2.5">
+                  <input type="checkbox" checked={pageAllChecked} onChange={togglePageAll} title="이 페이지 전체 선택" />
+                </th>
+                <th className="px-2 py-2.5 font-bold">학년</th>
                 <th className="px-3 py-2.5 font-bold">상태</th>
                 <th className="px-3 py-2.5 font-bold">학생 이름</th>
                 <th className="px-3 py-2.5 font-bold">학부모 연락처</th>
                 <th className="px-3 py-2.5 font-bold">반</th>
+                <th className="px-3 py-2.5 font-bold">학생 계정</th>
                 <th className="px-3 py-2.5 font-bold">학생앱</th>
                 <th className="px-3 py-2.5 font-bold">상세</th>
               </tr>
             </thead>
             <tbody>
-              {list.map(s => (
-                <tr key={s.id} className={`border-b border-line last:border-0 ${s.active ? '' : 'bg-paper2'}`}>
-                  <td className="px-4 py-2.5">
-                    <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{shortenGrade(s.grade)}</span>
-                  </td>
-                  <td className="px-3 py-2.5">
-                    {s.active
-                      ? <span className="font-bold text-pine">재원</span>
-                      : <span className="text-ink2">퇴원</span>}
-                  </td>
-                  <td className="px-3 py-2.5 font-bold">{s.name}</td>
-                  <td className="px-3 py-2.5">{s.parentPhone ?? <span className="text-ink2">—</span>}</td>
-                  <td className="px-3 py-2.5">{s.klass ?? <span className="text-ink2">—</span>}</td>
-                  <td className="px-3 py-2.5">
-                    <button onClick={() => setAppPreview(s)}
-                      title="이 학생 시점의 학생앱을 미리보기로 열어요 (보기 전용)"
-                      className="rounded-lg border border-line px-2.5 py-1 text-xs font-bold text-ink2 hover:border-pine hover:text-pine">
-                      학생앱으로 이동
-                    </button>
-                  </td>
-                  <td className="px-3 py-2.5">
-                    <button onClick={() => setDetail(s)}
-                      className="text-xs font-bold text-pine hover:underline">상세보기</button>
-                  </td>
-                </tr>
-              ))}
+              {paged.map(s => {
+                const acctId = s.loginId ?? s.attendNo
+                return (
+                  <tr key={s.id} className={`border-b border-line last:border-0 ${s.active ? '' : 'bg-paper2'}`}>
+                    <td className="px-3 py-2.5">
+                      <input type="checkbox" checked={sel.has(s.id)} onChange={() => toggleOne(s.id)} />
+                    </td>
+                    <td className="px-2 py-2.5">
+                      <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{shortenGrade(s.grade)}</span>
+                    </td>
+                    <td className="px-3 py-2.5">
+                      {s.active
+                        ? <span className="font-bold text-pine">재원</span>
+                        : <span className="text-ink2">퇴원</span>}
+                    </td>
+                    <td className="px-3 py-2.5 font-bold">{s.name}</td>
+                    <td className="px-3 py-2.5">{s.parentPhone ?? <span className="text-ink2">—</span>}</td>
+                    <td className="px-3 py-2.5">{s.klass ?? <span className="text-ink2">—</span>}</td>
+                    <td className="px-3 py-2.5">
+                      {acctId ? (
+                        <span className="inline-flex items-center gap-1.5">
+                          <span className="font-mono text-xs">{acctId}</span>
+                          {SUPABASE_ON ? (
+                            s.authEmail
+                              ? <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[10px] font-bold text-pine-dark">계정 생성됨</span>
+                              : <span className="rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">미생성</span>
+                          ) : (
+                            <span className="rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">로컬 입장</span>
+                          )}
+                        </span>
+                      ) : <span className="text-ink2">—</span>}
+                    </td>
+                    <td className="px-3 py-2.5">
+                      <button onClick={() => setAppPreview(s)}
+                        title="이 학생 시점의 학생앱을 미리보기로 열어요 (보기 전용)"
+                        className="rounded-lg border border-line px-2.5 py-1 text-xs font-bold text-ink2 hover:border-pine hover:text-pine">
+                        학생앱으로 이동
+                      </button>
+                    </td>
+                    <td className="px-3 py-2.5">
+                      <button onClick={() => setDetail(s)}
+                        className="text-xs font-bold text-pine hover:underline">상세보기</button>
+                    </td>
+                  </tr>
+                )
+              })}
             </tbody>
           </table>
         </div>
       )}
+
+      <Pagination page={cur} count={pageCount} onPage={setPage} />
+      <ScrollTopButton />
     </div>
   )
 }
@@ -263,7 +417,9 @@ function Field({ label, children }: { label: string; children: ReactNode }) {
   )
 }
 
-function StudentFields({ f, set }: { f: FormState; set: (p: Partial<FormState>) => void }) {
+function StudentFields({ f, set, onRegenAttendNo }: {
+  f: FormState; set: (p: Partial<FormState>) => void; onRegenAttendNo?: () => void
+}) {
   return (
     <div className="grid gap-2.5">
       <p className="border-b border-line pb-1.5 text-sm font-black">필수 입력 사항</p>
@@ -287,8 +443,14 @@ function StudentFields({ f, set }: { f: FormState; set: (p: Partial<FormState>) 
         </div>
       </Field>
       <Field label="출결 번호 (필수)">
-        <input value={f.attendNo} onChange={e => set({ attendNo: e.target.value })}
-          placeholder="4자리 숫자만 입력해주세요." maxLength={4} className={INPUT} />
+        <div className="flex items-center gap-1.5">
+          <input value={f.attendNo} onChange={e => set({ attendNo: e.target.value })}
+            placeholder="4자리 숫자만 입력해주세요." maxLength={4} className={INPUT} />
+          {onRegenAttendNo && (
+            <button type="button" onClick={onRegenAttendNo} title="재생성 — 미사용 4자리 번호 자동 채움"
+              className="shrink-0 rounded-lg border border-line px-2.5 py-2 text-sm hover:border-pine">🔄</button>
+          )}
+        </div>
       </Field>
 
       <p className="mt-2 border-b border-line pb-1.5 text-sm font-black">선택 입력 사항</p>
@@ -341,23 +503,29 @@ function StudentFields({ f, set }: { f: FormState; set: (p: Partial<FormState>) 
 // ── 학생 개별 등록 모달 ────────────────────────────
 
 function RegisterModal({ onClose }: { onClose: () => void }) {
-  const { addStudent } = useStore()
-  const [f, setF] = useState<FormState>(emptyForm)
+  const { students, addStudent } = useStore()
+  const usedNos = useMemo(
+    () => new Set(students.flatMap(s => [s.attendNo, s.loginId].filter(Boolean) as string[])),
+    [students])
+  const [f, setF] = useState<FormState>(() => ({ ...emptyForm(), attendNo: genAttendNo(usedNos) }))
   const [keepOpen, setKeepOpen] = useState(false)
   const set = (p: Partial<FormState>) => setF(prev => ({ ...prev, ...p }))
 
   const submit = () => {
     const err = validateForm(f, true)
     if (err) { alert(err); return }
+    const no = f.attendNo.trim()
+    if (usedNos.has(no)) { alert(`출결 번호 ${no}는 이미 사용 중입니다. 🔄 버튼으로 다시 생성하세요.`); return }
     addStudent(formPayload(f))
-    if (keepOpen) setF(emptyForm())
+    if (keepOpen) setF({ ...emptyForm(), attendNo: genAttendNo(new Set([...usedNos, no])) })
     else onClose()
   }
 
   return (
     <Modal title="학생 개별 등록" onClose={onClose}>
       <form onSubmit={e => { e.preventDefault(); submit() }}>
-        <StudentFields f={f} set={set} />
+        <StudentFields f={f} set={set}
+          onRegenAttendNo={() => set({ attendNo: genAttendNo(usedNos) })} />
         <div className="mt-5 flex items-center justify-between gap-3">
           <label className="flex items-center gap-1.5 text-sm text-ink2">
             <input type="checkbox" checked={keepOpen} onChange={e => setKeepOpen(e.target.checked)} />
@@ -373,10 +541,20 @@ function RegisterModal({ onClose }: { onClose: () => void }) {
 // ── 학생 상세 정보 모달 ────────────────────────────
 
 function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
-  const { updateStudent, setStudentActive } = useStore()
+  const { students, updateStudent, setStudentActive } = useStore()
   const [f, setF] = useState<FormState>(() => formFromStudent(s))
   const [active, setActive] = useState(s.active)
+  const [showReset, setShowReset] = useState(false)
+  const [showSibling, setShowSibling] = useState(false)
+  const [copied, setCopied] = useState(false)
   const set = (p: Partial<FormState>) => setF(prev => ({ ...prev, ...p }))
+
+  // 형제 연결 등 스토어 변경분 반영 (모달 열려 있는 동안)
+  const live = students.find(x => x.id === s.id) ?? s
+  const acctId = (live.loginId ?? f.attendNo.trim()) || undefined
+  const siblings = (live.siblingIds ?? [])
+    .map(id => students.find(x => x.id === id))
+    .filter((x): x is Student => !!x)
 
   const save = () => {
     const err = validateForm(f, false)
@@ -387,6 +565,18 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
     updateStudent(s.id, patch)
     if (active !== s.active) setStudentActive(s.id, active)
     onClose()
+  }
+
+  const disconnect = (other: Student) => {
+    updateStudent(live.id, { siblingIds: (live.siblingIds ?? []).filter(id => id !== other.id) })
+    updateStudent(other.id, { siblingIds: (other.siblingIds ?? []).filter(id => id !== live.id) })
+  }
+
+  const resetCmd = `node scripts/create-student-accounts.mjs --reset ${acctId ?? ''}`
+  const copyCmd = () => {
+    navigator.clipboard?.writeText(resetCmd).then(() => {
+      setCopied(true); setTimeout(() => setCopied(false), 2000)
+    })
   }
 
   return (
@@ -407,13 +597,143 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
           </Field>
         </div>
         <StudentFields f={f} set={set} />
-        <div className="mt-5 flex justify-end gap-2">
+
+        {/* 학생앱 계정 (원본 '학생/학부모앱ID' 등가 — 학부모 계정은 미보유, 문자 전송은 학원관리앱 담당) */}
+        <div className="mt-4 rounded-xl bg-paper2/70 px-4 py-3 text-sm">
+          <div className="mb-0.5 text-xs font-bold text-ink2">학생앱 계정</div>
+          {acctId ? (
+            <div>
+              아이디 <b className="font-mono">{acctId}</b> ㅣ 기본 비밀번호 <b className="font-mono">gsg{acctId}</b>
+              {SUPABASE_ON
+                ? (live.authEmail
+                  ? <span className="ml-2 rounded bg-pine-soft px-1.5 py-0.5 text-[10px] font-bold text-pine-dark">계정 생성됨</span>
+                  : <span className="ml-2 rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">미생성 — 계정 일괄 생성 스크립트로 생성</span>)
+                : <span className="ml-2 rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">로컬 모드 — 이름+출결번호로 입장</span>}
+            </div>
+          ) : (
+            <div className="text-ink2">출결 번호가 없어 학생앱 계정을 만들 수 없어요. 출결 번호를 입력해주세요.</div>
+          )}
+          {siblings.length > 0 && (
+            <div className="mt-2 border-t border-line pt-2">
+              <div className="mb-1 text-xs font-bold text-ink2">연결된 형제 (학부모 연락처 공유)</div>
+              <div className="flex flex-wrap gap-1.5">
+                {siblings.map(sib => (
+                  <span key={sib.id} className="inline-flex items-center gap-1 rounded-lg border border-line bg-white px-2 py-0.5 text-xs">
+                    <b>{sib.name}</b> <span className="text-ink2">{shortenGrade(sib.grade)}</span>
+                    <button type="button" onClick={() => disconnect(sib)} title="형제 연결 해제"
+                      className="ml-0.5 text-ink2 hover:text-clay">✕</button>
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {showReset && (
+          <div className="mt-3 rounded-xl border border-amber/40 bg-amber-soft px-4 py-3 text-sm">
+            {!acctId ? (
+              <p>출결 번호(아이디)가 없어 초기화할 계정이 없습니다.</p>
+            ) : !SUPABASE_ON ? (
+              <p>로컬 모드에서는 학생앱이 이름+출결번호로 입장하므로 비밀번호가 없습니다. (Supabase 모드에서 사용하는 기능이에요.)</p>
+            ) : (
+              <div>
+                <p className="mb-1.5">
+                  비밀번호를 기본값 <b className="font-mono">gsg{acctId}</b>로 초기화하려면 아래 명령을 실행하세요.
+                  (보안상 브라우저에서는 다른 계정의 비밀번호를 바꿀 수 없어요 — service key 스크립트로 처리합니다.)
+                </p>
+                <div className="flex items-center gap-2">
+                  <code className="grow rounded-lg bg-white px-2 py-1.5 font-mono text-xs">{resetCmd}</code>
+                  <button type="button" onClick={copyCmd}
+                    className="shrink-0 rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-bold text-ink2 hover:text-pine">
+                    {copied ? '✓ 복사됨' : '복사'}
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="mt-5 flex flex-wrap items-center gap-2">
+          <button type="button" onClick={() => setShowReset(v => !v)}
+            className="rounded-lg border border-line px-3.5 py-2.5 text-sm font-bold text-ink2 hover:border-pine hover:text-pine">
+            학생 비밀번호 초기화
+          </button>
+          <button type="button" onClick={() => setShowSibling(true)}
+            title="형제 학생과 연결하면 학부모 연락처를 공유해요"
+            className="rounded-lg border border-line px-3.5 py-2.5 text-sm font-bold text-ink2 hover:border-pine hover:text-pine">
+            형제 연결
+          </button>
+          <div className="grow" />
           <button type="button" onClick={onClose}
             className="rounded-lg border border-line px-5 py-2.5 text-sm text-ink2">닫기</button>
           <button type="submit" className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper">저장</button>
         </div>
       </form>
+      {showSibling && (
+        <SiblingModal s={live} formPhone={f.parentPhone}
+          onShared={phone => { if (!f.parentPhone.trim() && phone) set({ parentPhone: phone }) }}
+          onClose={() => setShowSibling(false)} />
+      )}
     </Modal>
+  )
+}
+
+// ── 형제 연결 모달 — 형제 학생 선택 → 상호 기록 + 학부모 연락처 공유 ─────
+
+function SiblingModal({ s, formPhone, onShared, onClose }: {
+  s: Student; formPhone: string; onShared: (phone: string | undefined) => void; onClose: () => void
+}) {
+  const { students, updateStudent } = useStore()
+  const [query, setQuery] = useState('')
+
+  const linked = new Set(s.siblingIds ?? [])
+  const candidates = students.filter(x =>
+    x.id !== s.id && x.active && !linked.has(x.id) &&
+    (!query.trim() || x.name.includes(query.trim())))
+
+  const connect = (other: Student) => {
+    const myPhone = formPhone.trim() || s.parentPhone
+    const sharedPhone = myPhone || other.parentPhone
+    updateStudent(s.id, {
+      siblingIds: [...new Set([...(s.siblingIds ?? []), other.id])],
+      ...(!s.parentPhone && sharedPhone ? { parentPhone: sharedPhone } : {}),
+    })
+    updateStudent(other.id, {
+      siblingIds: [...new Set([...(other.siblingIds ?? []), s.id])],
+      ...(!other.parentPhone && sharedPhone ? { parentPhone: sharedPhone } : {}),
+    })
+    onShared(sharedPhone)
+    onClose()
+  }
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div className="max-h-[70vh] w-full max-w-sm overflow-y-auto rounded-2xl bg-white p-5" onClick={e => e.stopPropagation()}>
+        <div className="mb-3 flex items-center justify-between">
+          <h3 className="font-black">형제 연결 — {s.name}</h3>
+          <button onClick={onClose} aria-label="닫기" className="text-xl leading-none text-ink2 hover:text-ink">✕</button>
+        </div>
+        <p className="mb-3 rounded-lg bg-paper2 px-3 py-2 text-xs text-ink2">
+          형제로 연결하면 두 학생이 <b>학부모 연락처를 공유</b>해요. (비어 있는 쪽에 자동으로 채워집니다)
+        </p>
+        <input value={query} onChange={e => setQuery(e.target.value)} autoFocus
+          placeholder="학생 이름 검색" className={`${INPUT} mb-2`} />
+        {candidates.length === 0 ? (
+          <div className="py-8 text-center text-sm text-ink2">연결할 수 있는 학생이 없습니다.</div>
+        ) : (
+          <div className="grid gap-1">
+            {candidates.map(x => (
+              <button key={x.id} onClick={() => connect(x)}
+                className="flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-left text-sm hover:border-pine hover:bg-pine-soft/40">
+                <span className="rounded bg-paper2 px-1.5 py-0.5 text-xs font-bold text-ink2">{shortenGrade(x.grade)}</span>
+                <b>{x.name}</b>
+                <span className="ml-auto text-xs text-ink2">{x.parentPhone ?? '연락처 없음'}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
   )
 }
 
@@ -691,92 +1011,316 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
 }
 
 // ── 반 관리 ───────────────────────────────────────
+// 원본(매쓰플랫) 구조: 반 만들기/상세는 전체 화면 + 학생 듀얼 리스트.
+// 학생 폼의 "반" 문자열 방식과 양방향 호환 — 저장 시 Student.klass를 갱신한다.
 
 function KlassTab() {
-  const { students, updateStudent } = useStore()
-  const [editing, setEditing] = useState<string | null>(null)
-  const [newName, setNewName] = useState('')
-  const [showHint, setShowHint] = useState(false)
+  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile } = useStore()
+  const [query, setQuery] = useState('')
+  const [editor, setEditor] = useState<{ name?: string } | null>(null)
+  const [sel, setSel] = useState<Set<string>>(new Set())
 
+  const teacherName = academyProfile.teacherName?.trim() || '명수쌤'
   const active = students.filter(s => s.active)
   const groups = useMemo(() => {
-    const m = new Map<string, number>()
-    for (const s of active) if (s.klass) m.set(s.klass, (m.get(s.klass) ?? 0) + 1)
-    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ko'))
-  }, [students])
+    const m = new Map<string, Student[]>()
+    for (const s of active) if (s.klass) {
+      if (!m.has(s.klass)) m.set(s.klass, [])
+      m.get(s.klass)!.push(s)
+    }
+    // 표시 순서: klassOrder 우선, 나머지는 가나다
+    const names = [...m.keys()]
+    const inOrder = klassOrder.filter(k => m.has(k))
+    const rest = names.filter(k => !inOrder.includes(k)).sort((a, b) => a.localeCompare(b, 'ko'))
+    return [...inOrder, ...rest].map(name => ({ name, members: m.get(name)! }))
+  }, [students, klassOrder])
   const unassigned = active.filter(s => !s.klass).length
 
-  const rename = (old: string) => {
-    const nn = newName.trim()
-    if (nn && nn !== old) {
-      for (const s of students) if (s.klass === old) updateStudent(s.id, { klass: nn })
-    }
-    setEditing(null)
+  const shown = groups.filter(g => !query.trim() || g.name.includes(query.trim()))
+
+  const move = (name: string, dir: -1 | 1) => {
+    const names = groups.map(g => g.name)
+    const i = names.indexOf(name)
+    const j = i + dir
+    if (i < 0 || j < 0 || j >= names.length) return
+    const next = [...names]
+    ;[next[i], next[j]] = [next[j], next[i]]
+    setKlassOrder(next)
   }
+
+  const removeSelected = () => {
+    if (sel.size === 0) return
+    if (!confirm(`선택한 반 ${sel.size}개를 삭제할까요? 반 학생은 미배정으로 이동합니다.`)) return
+    for (const name of sel) {
+      for (const s of students) if (s.klass === name) updateStudent(s.id, { klass: undefined })
+    }
+    setKlassOrder(klassOrder.filter(k => !sel.has(k)))
+    setSel(new Set())
+  }
+
+  if (editor) return <KlassEditor name={editor.name} onClose={() => setEditor(null)} />
 
   return (
     <div>
-      <div className="mb-4 flex items-center gap-3">
-        <span className="text-sm font-bold text-ink2">반 <b className="text-pine">{groups.length}</b>개 · 미배정 <b className="text-clay">{unassigned}</b>명</span>
-        <div className="grow" />
-        <button onClick={() => setShowHint(v => !v)}
-          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">+ 반 만들기</button>
-      </div>
-
-      {showHint && (
-        <div className="mb-4 rounded-xl border border-line bg-pine-soft px-4 py-3 text-sm text-pine-dark">
-          학생 등록/상세에서 반 이름을 입력하면 자동 생성됩니다.
+      <div className="mb-2 text-xs text-ink2">반 정렬 순서(이동 ↑↓)는 이 목록의 표시 순서에 반영됩니다.</div>
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <div className="flex items-center gap-0">
+          <input value={query} onChange={e => setQuery(e.target.value)}
+            placeholder="반 이름 검색"
+            className="w-40 rounded-l-lg border border-line bg-white px-3 py-1.5 text-sm" />
+          <button title="검색" aria-label="검색"
+            className="rounded-r-lg border border-l-0 border-line bg-white px-2.5 py-1.5 text-sm text-ink2">🔍</button>
         </div>
-      )}
+        <span className="text-sm font-bold text-ink2">반 <b className="text-pine">{groups.length}</b>개 · 미배정 <b className="text-clay">{unassigned}</b>명</span>
+        {sel.size > 0 && (
+          <button onClick={removeSelected}
+            className="rounded-lg border border-line bg-white px-3 py-1.5 text-sm font-bold text-clay hover:border-clay">
+            선택 반 삭제 ({sel.size})
+          </button>
+        )}
+        <div className="grow" />
+        <button onClick={() => setEditor({})}
+          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">⊕ 반 만들기</button>
+      </div>
 
       {groups.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-ink2">
-          아직 반이 없습니다. 학생 등록/상세에서 반 이름을 입력하면 자동 생성됩니다.
+          아직 반이 없습니다. [⊕ 반 만들기]로 반을 만들거나, 학생 등록/상세에서 반 이름을 입력하면 자동 생성됩니다.
         </div>
       ) : (
         <div className="overflow-x-auto rounded-2xl border border-line bg-white">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
-                <th className="px-4 py-2.5 font-bold">반 이름</th>
-                <th className="px-3 py-2.5 font-bold">학생 수</th>
-                <th className="px-3 py-2.5" />
+                <th className="w-8 px-3 py-2.5" />
+                <th className="px-2 py-2.5 font-bold">순서</th>
+                <th className="px-3 py-2.5 font-bold">반 이름</th>
+                <th className="px-3 py-2.5 font-bold">반 학생</th>
+                <th className="px-3 py-2.5 font-bold">담당 선생님</th>
+                <th className="px-3 py-2.5 font-bold">상세</th>
+                <th className="px-3 py-2.5 font-bold">이동</th>
               </tr>
             </thead>
             <tbody>
-              {groups.map(([name, count]) => (
-                <tr key={name} className="border-b border-line last:border-0">
-                  <td className="px-4 py-2.5 font-bold">
-                    {editing === name ? (
-                      <form className="inline" onSubmit={e => { e.preventDefault(); rename(name) }}>
-                        <input value={newName} onChange={e => setNewName(e.target.value)} autoFocus
-                          className="w-40 rounded border border-line px-2 py-1 font-normal" />
-                        <button type="submit" className="ml-1 rounded bg-pine px-3 py-1 text-xs font-bold text-paper">저장</button>
-                        <button type="button" onClick={() => setEditing(null)}
-                          className="ml-1 rounded border border-line px-3 py-1 text-xs font-normal text-ink2">취소</button>
-                      </form>
-                    ) : name}
-                  </td>
-                  <td className="px-3 py-2.5">{count}명</td>
-                  <td className="px-3 py-2.5 text-right">
-                    {editing !== name && (
-                      <button onClick={() => { setEditing(name); setNewName(name) }}
-                        className="rounded border border-line px-3 py-1 text-xs text-ink2 hover:border-pine hover:text-pine">이름 변경</button>
-                    )}
-                  </td>
-                </tr>
-              ))}
+              {shown.map(({ name, members }) => {
+                const order = groups.findIndex(g => g.name === name) + 1
+                return (
+                  <tr key={name} className="border-b border-line last:border-0">
+                    <td className="px-3 py-2.5">
+                      <input type="checkbox" checked={sel.has(name)}
+                        onChange={() => setSel(prev => {
+                          const next = new Set(prev)
+                          if (next.has(name)) next.delete(name); else next.add(name)
+                          return next
+                        })} />
+                    </td>
+                    <td className="px-2 py-2.5 text-ink2">{order}</td>
+                    <td className="px-3 py-2.5 font-bold">{name}</td>
+                    <td className="px-3 py-2.5">
+                      {members.length === 0 ? '0명'
+                        : members.length === 1 ? members[0].name
+                        : `${members[0].name} 외 ${members.length - 1}명`}
+                      <span className="ml-1 text-xs text-ink2">({members.length}명)</span>
+                    </td>
+                    <td className="px-3 py-2.5">{teacherName}</td>
+                    <td className="px-3 py-2.5">
+                      <button onClick={() => setEditor({ name })}
+                        className="rounded border border-line px-3 py-1 text-xs text-ink2 hover:border-pine hover:text-pine">상세</button>
+                    </td>
+                    <td className="px-3 py-2.5">
+                      <button onClick={() => move(name, -1)} disabled={order === 1} title="위로"
+                        className="rounded border border-line px-2 py-1 text-xs text-ink2 hover:border-pine hover:text-pine disabled:opacity-30">↑</button>
+                      <button onClick={() => move(name, 1)} disabled={order === groups.length} title="아래로"
+                        className="ml-1 rounded border border-line px-2 py-1 text-xs text-ink2 hover:border-pine hover:text-pine disabled:opacity-30">↓</button>
+                    </td>
+                  </tr>
+                )
+              })}
               {unassigned > 0 && (
                 <tr className="bg-paper2 text-ink2">
-                  <td className="px-4 py-2.5">미배정</td>
-                  <td className="px-3 py-2.5">{unassigned}명</td>
                   <td />
+                  <td />
+                  <td className="px-3 py-2.5">미배정</td>
+                  <td className="px-3 py-2.5">{unassigned}명</td>
+                  <td colSpan={3} />
                 </tr>
               )}
             </tbody>
           </table>
         </div>
       )}
+    </div>
+  )
+}
+
+// ── 반 만들기 / 반 상세 (전체 화면 + 학생 듀얼 리스트) ─────────────
+
+function KlassEditor({ name, onClose }: { name?: string; onClose: () => void }) {
+  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile } = useStore()
+  const isEdit = !!name
+  const teacherName = academyProfile.teacherName?.trim() || '명수쌤'
+  const [klassName, setKlassName] = useState(name ?? '')
+  const [selected, setSelected] = useState<Set<string>>(
+    () => new Set(name ? students.filter(s => s.active && s.klass === name).map(s => s.id) : []))
+  const [query, setQuery] = useState('')
+  const [open, setOpen] = useState<Set<string>>(new Set())
+
+  const active = students.filter(s => s.active)
+  const byId = new Map(active.map(s => [s.id, s]))
+
+  // 좌측(선택 안 된 학생) — 학년 그룹, 검색 필터
+  const leftGroups = useMemo(() => {
+    const q = query.trim()
+    const rest = active.filter(s => !selected.has(s.id) && (!q || s.name.includes(q)))
+    const m = new Map<string, Student[]>()
+    for (const s of rest) {
+      const g = shortenGrade(s.grade)
+      if (!m.has(g)) m.set(g, [])
+      m.get(g)!.push(s)
+    }
+    return [...m.entries()].sort((a, b) => gradeRank(a[0]) - gradeRank(b[0]))
+  }, [students, selected, query])
+
+  // 우측(선택된 학생) — 학년 그룹
+  const rightGroups = useMemo(() => {
+    const m = new Map<string, Student[]>()
+    for (const id of selected) {
+      const s = byId.get(id)
+      if (!s) continue
+      const g = shortenGrade(s.grade)
+      if (!m.has(g)) m.set(g, [])
+      m.get(g)!.push(s)
+    }
+    return [...m.entries()].sort((a, b) => gradeRank(a[0]) - gradeRank(b[0]))
+  }, [students, selected])
+
+  const add = (ids: string[]) => setSelected(prev => new Set([...prev, ...ids]))
+  const remove = (id: string) => setSelected(prev => {
+    const next = new Set(prev); next.delete(id); return next
+  })
+  const toggleOpen = (g: string) => setOpen(prev => {
+    const next = new Set(prev)
+    if (next.has(g)) next.delete(g); else next.add(g)
+    return next
+  })
+
+  const save = () => {
+    const nn = klassName.trim()
+    if (!nn) { alert('반 이름을 입력해주세요.'); return }
+    const existing = new Set(active.filter(s => s.klass).map(s => s.klass!))
+    if (nn !== name && existing.has(nn)) { alert(`'${nn}' 반이 이미 있습니다. 다른 이름을 입력해주세요.`); return }
+
+    // 선택 학생 → 이 반으로
+    for (const id of selected) {
+      const st = byId.get(id)
+      if (st && st.klass !== nn) updateStudent(id, { klass: nn })
+    }
+    if (isEdit) {
+      // 빠진 학생 → 미배정
+      for (const st of active) {
+        if (st.klass === name && !selected.has(st.id)) updateStudent(st.id, { klass: undefined })
+      }
+      // 이름 변경 시: 퇴원생 등 남은 소속도 새 이름으로, 순서 목록 갱신
+      if (nn !== name) {
+        for (const st of students) {
+          if (!st.active && st.klass === name) updateStudent(st.id, { klass: nn })
+        }
+        setKlassOrder(klassOrder.map(k => (k === name ? nn : k)))
+      }
+    } else if (!klassOrder.includes(nn)) {
+      setKlassOrder([...klassOrder, nn])
+    }
+    onClose()
+  }
+
+  const gradeRow = (g: string, list: Student[], side: 'left' | 'right') => (
+    <div key={g} className="border-b border-line/60 last:border-0">
+      <div className="flex items-center gap-2 px-3 py-2">
+        <button type="button" onClick={() => toggleOpen(side + g)}
+          className="text-xs text-ink2 hover:text-ink">{open.has(side + g) ? '▼' : '▶'}</button>
+        <span className="text-sm font-bold">{g} <span className="font-normal text-ink2">{list.length}명</span></span>
+        <div className="grow" />
+        {side === 'left' && (
+          <button type="button" onClick={() => add(list.map(s => s.id))} title={`${g} 전체 추가`}
+            className="rounded border border-line px-2 py-0.5 text-sm text-pine hover:border-pine">⊕</button>
+        )}
+      </div>
+      {open.has(side + g) && list.map(s => (
+        <div key={s.id} className="flex items-center gap-2 px-3 py-1.5 pl-9 text-sm hover:bg-paper2/50">
+          <span>{s.name}</span>
+          {side === 'left' && s.klass && s.klass !== name && (
+            <span className="rounded bg-paper2 px-1.5 py-0.5 text-[10px] text-ink2" title="저장 시 이 반으로 이동합니다">{s.klass}</span>
+          )}
+          <div className="grow" />
+          {side === 'left'
+            ? <button type="button" onClick={() => add([s.id])} className="rounded border border-line px-2 py-0.5 text-sm text-pine hover:border-pine">⊕</button>
+            : <button type="button" onClick={() => remove(s.id)} className="rounded border border-line px-2 py-0.5 text-sm text-clay hover:border-clay">⊖</button>}
+        </div>
+      ))}
+    </div>
+  )
+
+  return (
+    <div>
+      <div className="mb-5 flex items-center justify-between">
+        <h2 className="text-lg font-black">{isEdit ? '반 상세 정보' : '반 만들기'}</h2>
+        <button onClick={onClose} aria-label="닫기" className="text-xl leading-none text-ink2 hover:text-ink">✕</button>
+      </div>
+
+      <div className="mb-4 grid max-w-xl gap-2.5">
+        <Field label="반 이름">
+          <input value={klassName} onChange={e => setKlassName(e.target.value)} autoFocus
+            placeholder="반 이름을 입력해주세요." className={INPUT} />
+        </Field>
+        <Field label="반 선생님">
+          <div className="flex items-center gap-2">
+            <span className="rounded-lg bg-pine-soft px-3 py-1.5 text-sm font-bold text-pine-dark">{teacherName}</span>
+            <span className="text-xs text-ink2">단일 강사 운영 — 자동 지정</span>
+          </div>
+        </Field>
+      </div>
+
+      <p className="mb-2 text-sm font-black">반 학생</p>
+      <div className="grid gap-4 lg:grid-cols-2">
+        {/* 좌: 전체 학생 */}
+        <div className="rounded-2xl border border-line bg-white">
+          <div className="flex items-center gap-2 border-b border-line p-3">
+            <input value={query} onChange={e => setQuery(e.target.value)}
+              placeholder="학생 이름 검색" className={INPUT} />
+            {query && (
+              <button type="button" onClick={() => setQuery('')} aria-label="검색어 지우기"
+                className="shrink-0 text-ink2 hover:text-ink">✕</button>
+            )}
+          </div>
+          <div className="max-h-96 overflow-y-auto">
+            <div className="px-3 py-2 text-xs font-bold text-ink2">
+              전체 {active.filter(s => !selected.has(s.id)).length}명
+            </div>
+            {leftGroups.length === 0
+              ? <div className="px-3 py-8 text-center text-sm text-ink2">학생이 없습니다.</div>
+              : leftGroups.map(([g, list]) => gradeRow(g, list, 'left'))}
+          </div>
+        </div>
+
+        {/* 우: 선택된 학생 */}
+        <div className="rounded-2xl border border-line bg-white">
+          <div className="border-b border-line p-3 text-sm font-bold">선택된 학생 {selected.size}명</div>
+          <div className="max-h-96 overflow-y-auto">
+            {selected.size === 0 ? (
+              <div className="px-3 py-12 text-center text-sm text-ink2">
+                <div className="mb-1 font-bold">선택된 학생 없음</div>
+                왼쪽의 ⊕ 를 눌러 학생을 선택해 주세요.
+              </div>
+            ) : rightGroups.map(([g, list]) => gradeRow(g, list, 'right'))}
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-5 flex justify-end">
+        <button onClick={save} className="rounded-lg bg-pine px-8 py-2.5 text-sm font-bold text-paper">
+          {isEdit ? '저장하기' : '등록하기'}
+        </button>
+      </div>
     </div>
   )
 }
@@ -792,135 +1336,462 @@ function TeachersTab() {
   )
 }
 
-// ── 학생앱 (매쓰플랫 관리 > 학생앱 설정 등가) ────────────────────
-// 공개 설정 3토글(정답/해설/풀이영상 — 학생 결과 화면 노출 제어) + 학생 계정 안내
+// ── 학생앱 (매쓰플랫 관리 > 학생앱 설정 등가: 3탭 + 학생 계정 안내) ────
 
-const APP_TOGGLES: { key: keyof StudentAppConfig; label: string; desc: string }[] = [
-  { key: 'showAnswer', label: '정답 공개', desc: '학생이 채점 후 결과 화면에서 각 문제의 정답을 볼 수 있어요.' },
-  { key: 'showSolution', label: '해설 공개', desc: '결과 화면에서 문제별 해설을 펼쳐볼 수 있어요.' },
-  { key: 'showVideo', label: '풀이영상 공개', desc: '풀이영상이 있는 문제는 결과 화면에서 영상을 볼 수 있어요.' },
-]
+const APP_SUBTABS = ['오늘의 학습 설정', '정답 · 해설 공개', '풀이 영상 공개', '학생 계정 안내'] as const
+type AppSubTab = typeof APP_SUBTABS[number]
 
 function StudentAppTab() {
-  const { studentAppConfig, setStudentAppConfig, students } = useStore()
-  const [cfg, setCfg] = useState<StudentAppConfig>(studentAppConfig)
+  const [sub, setSub] = useState<AppSubTab>('오늘의 학습 설정')
+  return (
+    <div>
+      <div className="mb-5 flex flex-wrap gap-1.5">
+        {APP_SUBTABS.map(t => (
+          <button key={t} onClick={() => setSub(t)}
+            className={`rounded-full px-3.5 py-1.5 text-sm font-bold ${sub === t
+              ? 'bg-pine text-paper'
+              : 'border border-line bg-white text-ink2 hover:text-ink'}`}>
+            {t}
+          </button>
+        ))}
+      </div>
+      {sub === '오늘의 학습 설정' && <DailyLearningSettings />}
+      {sub === '정답 · 해설 공개' && <AnswerRevealSettings />}
+      {sub === '풀이 영상 공개' && <VideoRevealSettings />}
+      {sub === '학생 계정 안내' && <StudentAccountGuide />}
+    </div>
+  )
+}
+
+// 오늘의 학습 설정 — 마스터 토글 + 학년 그룹 ▶펼침 + 학생별 토글
+function DailyLearningSettings() {
+  const { students, studentAppConfig, setStudentAppConfig } = useStore()
+  const [masterOn, setMasterOn] = useState(studentAppConfig.dailyMasterOn ?? true)
+  const [offIds, setOffIds] = useState<Set<string>>(new Set(studentAppConfig.dailyOffIds ?? []))
+  const [open, setOpen] = useState<Set<string>>(new Set())
   const [savedAt, setSavedAt] = useState<string | null>(null)
-  const dirty = APP_TOGGLES.some(t => cfg[t.key] !== studentAppConfig[t.key])
+
+  const active = students.filter(s => s.active)
+  const groups = useMemo(() => {
+    const m = new Map<string, Student[]>()
+    for (const s of active) {
+      const g = shortenGrade(s.grade)
+      if (!m.has(g)) m.set(g, [])
+      m.get(g)!.push(s)
+    }
+    return [...m.entries()].sort((a, b) => gradeRank(a[0]) - gradeRank(b[0]))
+  }, [students])
+
+  const savedMaster = studentAppConfig.dailyMasterOn ?? true
+  const savedOff = new Set(studentAppConfig.dailyOffIds ?? [])
+  const dirty = masterOn !== savedMaster
+    || offIds.size !== savedOff.size
+    || [...offIds].some(id => !savedOff.has(id))
 
   const save = () => {
-    setStudentAppConfig(cfg)
+    setStudentAppConfig({ ...studentAppConfig, dailyMasterOn: masterOn, dailyOffIds: [...offIds] })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
   }
 
+  const setStudent = (id: string, on: boolean) => setOffIds(prev => {
+    const next = new Set(prev)
+    if (on) next.delete(id); else next.add(id)
+    return next
+  })
+  const setGroup = (list: Student[], on: boolean) => setOffIds(prev => {
+    const next = new Set(prev)
+    for (const s of list) { if (on) next.delete(s.id); else next.add(s.id) }
+    return next
+  })
+
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <div className="mb-1 flex items-center gap-3">
+        <h3 className="font-black">오늘의 학습 설정</h3>
+        <div className="grow" />
+        <button onClick={save} disabled={!dirty}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">저장하기</button>
+      </div>
+      <p className="mb-1 text-sm text-ink2">
+        학생별로 '오늘의 학습' 사용 여부를 설정할 수 있어요. (off로 설정한 학생은 오늘의 학습 문제를 풀 수 없어요)
+      </p>
+      {savedAt && !dirty && <p className="mb-2 text-xs text-pine-dark">✓ 저장됨 {savedAt}</p>}
+      {dirty && <p className="mb-2 text-xs text-clay">저장하지 않은 변경이 있어요</p>}
+
+      <label className="mb-4 flex items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
+        <Switch on={masterOn} onChange={setMasterOn} />
+        <span className="text-sm font-bold">전체 학생 공개 여부</span>
+        {!masterOn && <span className="text-xs text-clay">전체 OFF — 학생별 설정과 무관하게 오늘의 학습이 숨겨져요.</span>}
+      </label>
+
+      {active.length === 0 ? (
+        <div className="rounded-xl border border-dashed border-line p-8 text-center text-sm text-ink2">재원생이 없습니다.</div>
+      ) : (
+        <div className="rounded-xl border border-line">
+          <div className="flex items-center border-b border-line bg-paper2 px-4 py-2 text-xs font-bold text-ink2">
+            <span>학생앱에서 공개</span>
+          </div>
+          {groups.map(([g, list]) => {
+            const onCount = list.filter(s => !offIds.has(s.id)).length
+            return (
+              <div key={g} className="border-b border-line/60 last:border-0">
+                <div className="flex items-center gap-2 px-4 py-2.5">
+                  <button type="button" onClick={() => setOpen(prev => {
+                    const next = new Set(prev)
+                    if (next.has(g)) next.delete(g); else next.add(g)
+                    return next
+                  })} className="text-xs text-ink2 hover:text-ink">{open.has(g) ? '▼' : '▶'}</button>
+                  <span className="text-sm font-bold">{g} <span className="font-normal text-ink2">{list.length}명</span></span>
+                  <span className="text-xs text-ink2">(ON {onCount})</span>
+                  <div className="grow" />
+                  <Switch on={onCount === list.length} disabled={!masterOn}
+                    onChange={v => setGroup(list, v)} />
+                </div>
+                {open.has(g) && list.map(s => (
+                  <div key={s.id} className="flex items-center gap-2 px-4 py-2 pl-10 text-sm">
+                    <span>{s.name}</span>
+                    <div className="grow" />
+                    <Switch on={!offIds.has(s.id)} disabled={!masterOn}
+                      onChange={v => setStudent(s.id, v)} />
+                  </div>
+                ))}
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </section>
+  )
+}
+
+// 채점 전/후 체크 행 (정답·해설·풀이영상 공용)
+function RevealRow({ label, desc, before, after, onBefore, onAfter }: {
+  label: string; desc: string
+  before: boolean; after: boolean
+  onBefore: (v: boolean) => void; onAfter: (v: boolean) => void
+}) {
+  return (
+    <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
+      <div className="min-w-40">
+        <div className="text-sm font-bold">{label}
+          <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(before || after) ? 'bg-pine-soft text-pine-dark' : 'bg-paper2 text-ink2'}`}>
+            {(before || after) ? '공개' : '비공개'}
+          </span>
+        </div>
+        <div className="text-xs text-ink2">{desc}</div>
+      </div>
+      <div className="grow" />
+      <label className="flex items-center gap-1.5 text-sm" title="학생이 풀이 중에도 볼 수 있어요">
+        <input type="checkbox" checked={before} onChange={e => onBefore(e.target.checked)} className="accent-pine" />
+        채점 전
+      </label>
+      <label className="flex items-center gap-1.5 text-sm" title="제출(채점) 후 결과 화면에서 볼 수 있어요">
+        <input type="checkbox" checked={after} onChange={e => onAfter(e.target.checked)} className="accent-pine" />
+        채점 후
+      </label>
+    </div>
+  )
+}
+
+function useRevealConfig() {
+  const { studentAppConfig, setStudentAppConfig } = useStore()
+  const [cfg, setCfg] = useState<StudentAppConfig>(studentAppConfig)
+  const [savedAt, setSavedAt] = useState<string | null>(null)
+  const KEYS: (keyof StudentAppConfig)[] = [
+    'showAnswer', 'showSolution', 'showVideo', 'showAnswerBefore', 'showSolutionBefore', 'showVideoBefore',
+  ]
+  const dirty = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
+  const save = () => {
+    setStudentAppConfig({ ...studentAppConfig, ...cfg })
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+  return { cfg, setCfg, dirty, save, savedAt }
+}
+
+function SaveState({ dirty, savedAt }: { dirty: boolean; savedAt: string | null }) {
+  if (dirty) return <p className="mb-3 text-xs text-clay">저장하지 않은 변경이 있어요</p>
+  if (savedAt) return <p className="mb-3 text-xs text-pine-dark">✓ 저장됨 {savedAt}</p>
+  return <div className="mb-3" />
+}
+
+// 정답 및 해설 공개 설정 — 채점 전/후 구분 (기존 boolean = 채점 후, 하위호환)
+function AnswerRevealSettings() {
+  const { cfg, setCfg, dirty, save, savedAt } = useRevealConfig()
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <div className="mb-1 flex items-center gap-3">
+        <h3 className="font-black">정답 및 해설 공개 설정</h3>
+        <div className="grow" />
+        <button onClick={save} disabled={!dirty}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">저장하기</button>
+      </div>
+      <p className="mb-1 text-sm text-ink2">
+        정답 확인은 선생님 설정에 따라 제공되며 정답이 등록된 문제·교재에서만 사용할 수 있어요.
+      </p>
+      <SaveState dirty={dirty} savedAt={savedAt} />
+      <div className="grid gap-2.5">
+        <RevealRow label="정답 공개" desc="각 문제의 정답을 볼 수 있어요."
+          before={cfg.showAnswerBefore ?? false} after={cfg.showAnswer}
+          onBefore={v => setCfg(p => ({ ...p, showAnswerBefore: v }))}
+          onAfter={v => setCfg(p => ({ ...p, showAnswer: v }))} />
+        <RevealRow label="해설 공개" desc="문제별 해설을 펼쳐볼 수 있어요."
+          before={cfg.showSolutionBefore ?? false} after={cfg.showSolution}
+          onBefore={v => setCfg(p => ({ ...p, showSolutionBefore: v }))}
+          onAfter={v => setCfg(p => ({ ...p, showSolution: v }))} />
+      </div>
+      <p className="mt-3 text-xs text-ink2">
+        현재 전체 학생 공통 적용 — 학년·학생별 세분화는 준비 중이에요. '채점 후'를 끄면 결과 화면에 🔒 비공개로 표시됩니다.
+      </p>
+    </section>
+  )
+}
+
+// 풀이 영상 공개 설정
+function VideoRevealSettings() {
+  const { cfg, setCfg, dirty, save, savedAt } = useRevealConfig()
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <div className="mb-1 flex items-center gap-3">
+        <h3 className="font-black">풀이 영상 공개 설정</h3>
+        <div className="grow" />
+        <button onClick={save} disabled={!dirty}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">저장하기</button>
+      </div>
+      <p className="mb-1 text-sm text-ink2">
+        선생님이 설정한 풀이 영상 공개 여부에 따라 학생들이 풀이 영상을 확인할 수 있습니다.
+      </p>
+      <SaveState dirty={dirty} savedAt={savedAt} />
+      <div className="grid gap-2.5">
+        <RevealRow label="풀이영상 공개" desc="풀이영상이 있는 문제에서 영상을 볼 수 있어요."
+          before={cfg.showVideoBefore ?? false} after={cfg.showVideo}
+          onBefore={v => setCfg(p => ({ ...p, showVideoBefore: v }))}
+          onAfter={v => setCfg(p => ({ ...p, showVideo: v }))} />
+      </div>
+      <p className="mt-3 text-xs text-ink2">현재 전체 학생 공통 적용 — 학년별 세분화는 준비 중이에요.</p>
+    </section>
+  )
+}
+
+// 학생 계정 안내 (우리 규약)
+function StudentAccountGuide() {
+  const { students } = useStore()
   const withAccount = students.filter(s => s.active && (s.loginId ?? s.attendNo)).length
   const sample = students.find(s => s.active && (s.loginId ?? s.attendNo))
   const sampleId = sample ? (sample.loginId ?? sample.attendNo)! : '0412'
 
   return (
-    <div className="grid gap-5 lg:grid-cols-2">
-      {/* 공개 설정 */}
-      <section className="rounded-2xl border border-line bg-white p-6">
-        <h3 className="mb-1 font-black">학생앱 공개 설정</h3>
-        <p className="mb-4 text-sm text-ink2">
-          학생이 학습지를 제출한 뒤 결과 화면에서 무엇을 볼 수 있는지 정해요. 끄면 해당 항목이
-          🔒 비공개로 표시됩니다. (전체 학생 공통)
-        </p>
-        <div className="grid gap-2.5">
-          {APP_TOGGLES.map(t => (
-            <label key={t.key}
-              className="flex cursor-pointer items-center gap-3 rounded-xl border border-line/70 px-4 py-3 hover:bg-paper2/40">
-              <input type="checkbox" checked={cfg[t.key]}
-                onChange={e => setCfg(prev => ({ ...prev, [t.key]: e.target.checked }))}
-                className="h-4.5 w-4.5 accent-pine" />
-              <div>
-                <div className="text-sm font-bold">{t.label}
-                  <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${cfg[t.key] ? 'bg-pine-soft text-pine-dark' : 'bg-paper2 text-ink2'}`}>
-                    {cfg[t.key] ? '공개' : '비공개'}
-                  </span>
-                </div>
-                <div className="text-xs text-ink2">{t.desc}</div>
-              </div>
-            </label>
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <h3 className="mb-1 font-black">학생 계정 안내</h3>
+      <p className="mb-4 text-sm text-ink2">
+        학생은 로그인 화면의 <b>[학생]</b> 탭에서 아이디·비밀번호로 들어와요.
+        재원생 중 아이디(출결번호) 보유 <b className="text-pine">{withAccount}</b>명.
+      </p>
+      <div className="grid gap-2 text-sm">
+        <div className="rounded-xl bg-paper2/70 px-4 py-3">
+          <div className="text-xs font-bold text-ink2">아이디</div>
+          <div>학생의 <b>출결번호</b> (또는 별도 지정한 loginId)</div>
+        </div>
+        <div className="rounded-xl bg-paper2/70 px-4 py-3">
+          <div className="text-xs font-bold text-ink2">기본 비밀번호</div>
+          <div><b>gsg&lt;출결번호&gt;</b> <span className="text-xs text-ink2">(예: 출결번호 {sampleId} → gsg{sampleId})</span></div>
+        </div>
+        <div className="rounded-xl bg-paper2/70 px-4 py-3">
+          <div className="text-xs font-bold text-ink2">계정 이메일 규약 (내부)</div>
+          <div className="break-all font-mono text-xs">{studentEmailOf(sampleId)}</div>
+          <div className="mt-0.5 text-xs text-ink2">아이디가 자동으로 이 규약의 Supabase 계정으로 변환돼요.</div>
+        </div>
+        <div className="rounded-xl bg-paper2/70 px-4 py-3">
+          <div className="text-xs font-bold text-ink2">계정 일괄 생성 · 비밀번호 초기화</div>
+          <div className="font-mono text-xs">node scripts/create-student-accounts.mjs</div>
+          <div className="mt-0.5 text-xs text-ink2">
+            앱 저장소의 스크립트로 재원생 전원의 계정을 만들어요 (Supabase service key 필요).
+            새 학생이 들어오면 다시 실행 — 기존 계정은 건너뛰어요.
+            비밀번호 초기화는 <span className="font-mono">--reset &lt;아이디&gt;</span> (학생 상세보기의 [학생 비밀번호 초기화]에서 명령 복사).
+          </div>
+        </div>
+        <div className="rounded-xl bg-paper2/70 px-4 py-3">
+          <div className="text-xs font-bold text-ink2">학생 시점 확인</div>
+          <div className="text-xs text-ink2">
+            학생 관리 표의 <b className="text-ink">[학생앱으로 이동]</b> 버튼으로 그 학생 시점의
+            학생앱을 보기 전용으로 미리볼 수 있어요.
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── 실험실 (매쓰플랫 관리 > 실험실 등가 — 우리 실정에 맞는 항목만 활성) ──
+
+const LAB_TABS = ['AI 튜터', '원클릭 복습 학습지', 'KMM수학경시대회'] as const
+type LabSubTab = typeof LAB_TABS[number]
+
+function LabTab() {
+  const [sub, setSub] = useState<LabSubTab>('원클릭 복습 학습지')
+  return (
+    <div>
+      <div className="mb-4 rounded-2xl border border-pine/30 bg-pine-soft px-5 py-4 text-sm text-pine-dark">
+        <b>깊은생각 실험실에 오신 것을 환영합니다.</b> 실험실을 통해 출시 준비 중인 새로운 기능을 먼저 이용하실 수 있습니다! 😎
+      </div>
+      <div className="mb-5 flex flex-wrap gap-1.5">
+        {LAB_TABS.map(t => (
+          <button key={t} onClick={() => setSub(t)}
+            className={`rounded-full px-3.5 py-1.5 text-sm font-bold ${sub === t
+              ? 'bg-pine text-paper'
+              : 'border border-line bg-white text-ink2 hover:text-ink'}`}>
+            {t}
+          </button>
+        ))}
+      </div>
+      {sub === 'AI 튜터' && <LabAiTutor />}
+      {sub === '원클릭 복습 학습지' && <LabOneClick />}
+      {sub === 'KMM수학경시대회' && <LabKmm />}
+    </div>
+  )
+}
+
+function LabAiTutor() {
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <h3 className="mb-1 font-black">🤖 AI 튜터</h3>
+      <p className="mb-4 text-sm text-ink2">
+        AI 튜터가 학생의 풀이를 분석해 피드백을 주거나, 개념에 대한 힌트를 제공합니다.
+      </p>
+      <div className="rounded-xl border border-dashed border-line bg-paper2/50 p-6 text-sm text-ink2">
+        <b className="text-ink">준비 중</b> — Claude 연동으로 <b>개념 힌트 · 풀이 분석 · 풀이 확인</b>을
+        학년별로 켜고 끄는 구조로 제공할 예정이에요. 문제 데이터와 학생 풀이 입력이 쌓이면 활성화합니다.
+      </div>
+    </section>
+  )
+}
+
+// 원클릭 복습 학습지 — 오늘의 학습 '오답 복습'을 학년별 ON/OFF로 노출 (등가 구현)
+function LabOneClick() {
+  const { students, studentAppConfig, setStudentAppConfig } = useStore()
+  const lab = studentAppConfig.lab ?? {}
+  const [on, setOn] = useState(lab.oneClickOn ?? true)
+  const [offGrades, setOffGrades] = useState<Set<string>>(new Set(lab.oneClickGradesOff ?? []))
+  const [savedAt, setSavedAt] = useState<string | null>(null)
+
+  const grades = useMemo(() => {
+    const set = new Set(students.filter(s => s.active).map(s => shortenGrade(s.grade)))
+    return [...set].sort((a, b) => gradeRank(a) - gradeRank(b))
+  }, [students])
+
+  const savedOn = lab.oneClickOn ?? true
+  const savedOffG = new Set(lab.oneClickGradesOff ?? [])
+  const dirty = on !== savedOn
+    || offGrades.size !== savedOffG.size
+    || [...offGrades].some(g => !savedOffG.has(g))
+
+  const save = () => {
+    setStudentAppConfig({
+      ...studentAppConfig,
+      lab: { ...lab, oneClickOn: on, oneClickGradesOff: [...offGrades] },
+    })
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <div className="mb-1 flex items-center gap-3">
+        <h3 className="font-black">🪄 원클릭 복습 학습지</h3>
+        <div className="grow" />
+        <button onClick={save} disabled={!dirty}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">저장하기</button>
+      </div>
+      <p className="mb-1 text-sm text-ink2">
+        오늘의 학습 <b>오답 복습</b>(최근 틀린 문제 자동 재출제)을 학년별로 켜고 끕니다.
+        수업 시작 전 5분 복습 학습지를 따로 만들 필요 없이, 학생이 오늘의 학습에서 자동으로 다시 풀어요.
+      </p>
+      {savedAt && !dirty && <p className="mb-3 text-xs text-pine-dark">✓ 저장됨 {savedAt}</p>}
+      {dirty && <p className="mb-3 text-xs text-clay">저장하지 않은 변경이 있어요</p>}
+
+      <label className="mb-4 flex items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
+        <Switch on={on} onChange={setOn} />
+        <span className="text-sm font-bold">✨ 원클릭 복습 학습지 기능을 사용하고 싶다면?</span>
+      </label>
+
+      {grades.length === 0 ? (
+        <div className="rounded-xl border border-dashed border-line p-8 text-center text-sm text-ink2">재원생이 없습니다.</div>
+      ) : (
+        <div className="rounded-xl border border-line">
+          <div className="border-b border-line bg-paper2 px-4 py-2 text-xs font-bold text-ink2">학년별 사용</div>
+          {grades.map(g => (
+            <div key={g} className="flex items-center gap-2 border-b border-line/60 px-4 py-2.5 last:border-0">
+              <span className="text-sm font-bold">{g}</span>
+              <div className="grow" />
+              <Switch on={!offGrades.has(g)} disabled={!on}
+                onChange={v => setOffGrades(prev => {
+                  const next = new Set(prev)
+                  if (v) next.delete(g); else next.add(g)
+                  return next
+                })} />
+            </div>
           ))}
         </div>
-        <div className="mt-4 flex items-center gap-3">
-          <button onClick={save} disabled={!dirty}
-            className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper disabled:opacity-40">저장</button>
-          {savedAt && !dirty && <span className="text-xs text-pine-dark">✓ 저장됨 {savedAt}</span>}
-          {dirty && <span className="text-xs text-clay">저장하지 않은 변경이 있어요</span>}
-        </div>
-      </section>
+      )}
+      <p className="mt-3 text-xs text-ink2">
+        복습 출제 방식(그대로/유사)·문항 수 등 세부 옵션은 수업 &gt; 오늘의 학습 &gt; 학생별 설정에서 조정해요.
+      </p>
+    </section>
+  )
+}
 
-      {/* 학생 계정 안내 */}
-      <section className="rounded-2xl border border-line bg-white p-6">
-        <h3 className="mb-1 font-black">학생 계정 안내</h3>
-        <p className="mb-4 text-sm text-ink2">
-          학생은 로그인 화면의 <b>[학생]</b> 탭에서 아이디·비밀번호로 들어와요.
-          재원생 중 아이디(출결번호) 보유 <b className="text-pine">{withAccount}</b>명.
-        </p>
-        <div className="grid gap-2 text-sm">
-          <div className="rounded-xl bg-paper2/70 px-4 py-3">
-            <div className="text-xs font-bold text-ink2">아이디</div>
-            <div>학생의 <b>출결번호</b> (또는 별도 지정한 loginId)</div>
-          </div>
-          <div className="rounded-xl bg-paper2/70 px-4 py-3">
-            <div className="text-xs font-bold text-ink2">기본 비밀번호</div>
-            <div><b>gsg&lt;출결번호&gt;</b> <span className="text-xs text-ink2">(예: 출결번호 {sampleId} → gsg{sampleId})</span></div>
-          </div>
-          <div className="rounded-xl bg-paper2/70 px-4 py-3">
-            <div className="text-xs font-bold text-ink2">계정 이메일 규약 (내부)</div>
-            <div className="break-all font-mono text-xs">{studentEmailOf(sampleId)}</div>
-            <div className="mt-0.5 text-xs text-ink2">아이디가 자동으로 이 규약의 Supabase 계정으로 변환돼요.</div>
-          </div>
-          <div className="rounded-xl bg-paper2/70 px-4 py-3">
-            <div className="text-xs font-bold text-ink2">계정 일괄 생성</div>
-            <div className="font-mono text-xs">node scripts/create-student-accounts.mjs</div>
-            <div className="mt-0.5 text-xs text-ink2">
-              앱 저장소의 스크립트로 재원생 전원의 계정을 만들어요 (Supabase service key 필요).
-              새 학생이 들어오면 다시 실행 — 기존 계정은 건너뛰어요.
-            </div>
-          </div>
-          <div className="rounded-xl bg-paper2/70 px-4 py-3">
-            <div className="text-xs font-bold text-ink2">학생 시점 확인</div>
-            <div className="text-xs text-ink2">
-              학생 관리 표의 <b className="text-ink">[학생앱으로 이동]</b> 버튼으로 그 학생 시점의
-              학생앱을 보기 전용으로 미리볼 수 있어요.
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+function LabKmm() {
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <h3 className="mb-1 font-black">KMM수학경시대회</h3>
+      <p className="mb-4 text-sm text-ink2">
+        매월 1회, 자동 출제되는 수학경시 시험을 활성화하거나 비활성화할 수 있는 옵션을 제공합니다.
+      </p>
+      <div className="rounded-xl border border-dashed border-line bg-paper2/50 p-6 text-sm text-ink2">
+        <b className="text-ink">콘텐츠 대기</b> — KMM은 매쓰플랫 주관 대회라 자체 등가 콘텐츠(월간 경시 모의)를
+        확보한 뒤 <b>매월 자동출제 토글 × 학년별 설정</b> 구조로 활성화할 예정이에요.
+      </div>
+    </section>
   )
 }
 
 // ── 추가 관리 ─────────────────────────────────────
 
-const EXTRA_CARDS: { title: string; sparta: boolean }[] = [
-  { title: '문자', sparta: true },
-  { title: '출결', sparta: true },
-  { title: '교육비', sparta: true },
-  { title: '학부모앱 공지 설정', sparta: false },
-  { title: '실험실', sparta: false },
+interface ExtraCard {
+  title: string
+  kind: 'sparta' | 'sparta-parents' | 'lab'
+}
+
+const EXTRA_CARDS: ExtraCard[] = [
+  { title: '문자', kind: 'sparta' },
+  { title: '출결', kind: 'sparta' },
+  { title: '교육비', kind: 'sparta' },
+  { title: '학부모앱 공지 설정', kind: 'sparta-parents' },
+  { title: '실험실', kind: 'lab' },
 ]
 
-function ExtraTab() {
+function ExtraTab({ onGoLab }: { onGoLab: () => void }) {
   return (
     <div className="grid gap-4 sm:grid-cols-3">
       {EXTRA_CARDS.map(c => (
         <div key={c.title} className="rounded-2xl border border-line bg-white p-5">
           <h3 className="mb-2 font-black">{c.title}</h3>
-          {c.sparta ? (
+          {c.kind === 'lab' ? (
             <>
               <p className="mb-3 rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
-                학원관리앱(대치스파르타)에서 담당합니다.
+                관리 &gt; 실험실 탭으로 이동했어요. 출시 준비 기능을 먼저 사용해보세요.
+              </p>
+              <button onClick={onGoLab}
+                className="text-sm font-bold text-pine hover:underline">실험실 탭 열기 →</button>
+            </>
+          ) : (
+            <>
+              <p className="mb-3 rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
+                {c.kind === 'sparta-parents'
+                  ? '학부모앱 미보유 — 학부모 공지·소통은 학원관리앱(대치스파르타)에서 담당합니다.'
+                  : '학원관리앱(대치스파르타)에서 담당합니다.'}
               </p>
               <a href="https://daechisparta.vercel.app" target="_blank" rel="noreferrer"
                 className="text-sm font-bold text-pine hover:underline">대치스파르타 열기 →</a>
             </>
-          ) : (
-            <p className="rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
-              학생앱 없음 — 해당 없음
-            </p>
           )}
         </div>
       ))}

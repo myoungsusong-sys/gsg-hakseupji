@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -32,6 +32,8 @@ export interface CloudData {
   assignments: Assignment[]                    // 학습지 출제 (settings 'assignments')
   dailyConfigs: Record<string, DailyConfig>    // 오늘의 학습 설정 (settings 'dailyConfigs', 키=studentId)
   studentAppConfig: StudentAppConfig | null    // 학생앱 공개 설정 (settings 'studentAppConfig')
+  klassOrder: string[]                         // 반 표시 순서 (settings 'klassOrder')
+  academyProfile: AcademyProfile | null        // 마이페이지 내 정보 (settings 'academyProfile')
 }
 
 export function noteId(n: DailyNote): string {
@@ -73,6 +75,8 @@ export async function loadAll(): Promise<CloudData | null> {
     assignments: (settingsMap.get('assignments') as Assignment[]) ?? [],
     dailyConfigs: (settingsMap.get('dailyConfigs') as Record<string, DailyConfig>) ?? {},
     studentAppConfig: (settingsMap.get('studentAppConfig') as StudentAppConfig) ?? null,
+    klassOrder: (settingsMap.get('klassOrder') as string[]) ?? [],
+    academyProfile: (settingsMap.get('academyProfile') as AcademyProfile) ?? null,
   }
 }
 
@@ -123,6 +127,8 @@ export const cloud = {
       local.assignments.length ? this.setSetting('assignments', local.assignments) : Promise.resolve(),
       Object.keys(local.dailyConfigs).length ? this.setSetting('dailyConfigs', local.dailyConfigs) : Promise.resolve(),
       local.studentAppConfig ? this.setSetting('studentAppConfig', local.studentAppConfig) : Promise.resolve(),
+      local.klassOrder.length ? this.setSetting('klassOrder', local.klassOrder) : Promise.resolve(),
+      local.academyProfile ? this.setSetting('academyProfile', local.academyProfile) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

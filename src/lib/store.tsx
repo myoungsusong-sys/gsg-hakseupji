@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyList, Problem, Student, StudentAppConfig, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -26,6 +26,8 @@ interface Persisted {
   assignments: Assignment[]
   dailyConfigs: Record<string, DailyConfig>
   studentAppConfig: StudentAppConfig
+  klassOrder: string[]
+  academyProfile: AcademyProfile
 }
 
 const EMPTY: Persisted = {
@@ -34,6 +36,8 @@ const EMPTY: Persisted = {
   workbooks: [], wbItems: [], students: [], gradings: [], dailyNotes: [],
   assignments: [], dailyConfigs: {},
   studentAppConfig: DEFAULT_STUDENT_APP_CONFIG,
+  klassOrder: [],
+  academyProfile: {},
 }
 
 interface Store extends Persisted {
@@ -68,6 +72,8 @@ interface Store extends Persisted {
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
   setStudentAppConfig: (cfg: StudentAppConfig) => void   // 학생앱 공개 설정 (선생님용 UI는 2단계)
+  setKlassOrder: (order: string[]) => void               // 반 표시 순서
+  setAcademyProfile: (p: AcademyProfile) => void         // 마이페이지 내 정보
 }
 
 const Ctx = createContext<Store | null>(null)
@@ -103,6 +109,8 @@ function fromCloud(r: CloudData): Persisted {
     assignments: r.assignments ?? [],
     dailyConfigs: r.dailyConfigs ?? {},
     studentAppConfig: { ...DEFAULT_STUDENT_APP_CONFIG, ...(r.studentAppConfig ?? {}) },
+    klassOrder: r.klassOrder ?? [],
+    academyProfile: r.academyProfile ?? {},
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -112,6 +120,7 @@ function toCloud(s: Persisted): CloudData {
     dailyNotes: s.dailyNotes, favorites: s.favorites, diffMatrix: s.diffMatrix,
     assignments: s.assignments, dailyConfigs: s.dailyConfigs,
     studentAppConfig: s.studentAppConfig,
+    klassOrder: s.klassOrder, academyProfile: s.academyProfile,
   }
 }
 
@@ -368,6 +377,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     },
     setStudentAppConfig: cfg => {
       set(s => ({ ...s, studentAppConfig: cfg })); cloud.setSetting('studentAppConfig', cfg)
+    },
+    setKlassOrder: order => {
+      set(s => ({ ...s, klassOrder: order })); cloud.setSetting('klassOrder', order)
+    },
+    setAcademyProfile: p => {
+      set(s => ({ ...s, academyProfile: p })); cloud.setSetting('academyProfile', p)
     },
     saveGrading: g => {
       const rec = { ...g, id: uid('gr') }

@@ -1,10 +1,13 @@
+import { useEffect } from 'react'
 import { Navigate, NavLink, Outlet, useNavigate } from 'react-router-dom'
 import type { Student } from '../../types'
 import { useAuth } from '../../lib/auth'
 import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail } from '../../lib/role'
-import { StudentSelfCtx } from './common'
+import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
+import { StudentSelfCtx, tickStudySecond } from './common'
+import { todayKey } from '../../lib/dates'
 
 // ── 학생 셸 — #/student/* 공통 프레임 + 본인(Student) 컨텍스트 ──
 // 매쓰플랫 학생앱 헤더 구조: 로고 | 학습 홈 · 챌린지 · 교재 · 학습지 · 강의 | 우측 학생명
@@ -25,8 +28,24 @@ export default function StudentShell() {
   // 본인 판별: supabase 모드 = 세션 이메일 → 학생 레코드 / 로컬 모드 = 로컬 학생 세션
   let me: Student | undefined
   if (SUPABASE_ON) {
+    me = email && isStudentEmail(email) ? matchStudentByEmail(students, email) : undefined
+  } else {
+    const sid = getLocalStudentId()
+    me = sid ? students.find(s => s.id === sid) : undefined
+  }
+
+  // 학습 타이머 — 접속(화면 표시) 중 1초 단위 누적 (매쓰플랫 ⏱ 순공시간)
+  const meId = me?.id
+  useEffect(() => {
+    if (!meId) return
+    const t = setInterval(() => {
+      if (document.visibilityState === 'visible') tickStudySecond(meId, todayKey())
+    }, 1000)
+    return () => clearInterval(t)
+  }, [meId])
+
+  if (SUPABASE_ON) {
     if (!isStudentEmail(email)) return <Navigate to="/" replace />   // 선생님 계정 → 선생님 화면
-    me = email ? matchStudentByEmail(students, email) : undefined
     if (!me) {
       if (!synced) return <div className="flex min-h-screen items-center justify-center text-ink2">불러오는 중…</div>
       return (
@@ -41,8 +60,6 @@ export default function StudentShell() {
       )
     }
   } else {
-    const sid = getLocalStudentId()
-    me = sid ? students.find(s => s.id === sid) : undefined
     if (!me) return <Navigate to="/student-login" replace />
   }
 
@@ -68,11 +85,7 @@ export default function StudentShell() {
               <NavLink to="/student/lectures" className={tab}>강의</NavLink>
             </nav>
             <div className="grow" />
-            <span className="text-sm font-bold">{me.name}<span className="ml-1 font-normal text-ink2">학생</span></span>
-            <button onClick={logout}
-              className="rounded-lg border border-line px-3 py-1.5 text-sm font-semibold text-ink2 hover:border-clay hover:text-clay">
-              로그아웃
-            </button>
+            <StudentHeaderExtras me={me} onLogout={logout} />
           </div>
         </header>
         <main className="mx-auto max-w-6xl px-6 py-8">

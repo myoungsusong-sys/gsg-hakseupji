@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { Student } from '../../types'
+import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
 import { StudentSelfCtx, PreviewCtx, type StudentMenu } from './common'
 import StudentHome from './StudentHome'
 import StudentWorksheets from './StudentWorksheets'
@@ -57,7 +58,7 @@ export default function StudentAppPreview({ s, onClose }: { s: Student; onClose:
               ))}
             </nav>
             <div className="grow" />
-            <span className="text-sm font-bold">{s.name}<span className="ml-1 font-normal text-ink2">학생</span></span>
+            <StudentHeaderExtras me={s} preview />
           </div>
         </header>
         <main className="mx-auto max-w-6xl px-6 py-8">

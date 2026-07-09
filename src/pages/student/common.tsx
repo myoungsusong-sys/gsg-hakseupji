@@ -69,21 +69,43 @@ export const STATUS_CLASS: Record<StudentWsStatus, string> = {
   학습완료: 'bg-paper2 text-ink2',
 }
 
-// 배정 학습지 행 — 같은 학습지에 수업+숙제가 둘 다 있으면 1행으로 (첫 출제일 기준)
-export interface StudentWsRow { ws: Worksheet; date: string }
+// 배정 학습지 행 — 같은 학습지에 수업+숙제가 둘 다 있으면 1행으로 (첫 출제일 기준, kinds에 종류 집합)
+export interface StudentWsRow { ws: Worksheet; date: string; kinds: Assignment['kind'][] }
 export function myWorksheetRows(assignments: Assignment[], worksheets: Worksheet[], studentId: string): StudentWsRow[] {
-  const byWs = new Map<string, string>()   // wsId → 첫 출제일
+  const byWs = new Map<string, { date: string; kinds: Set<Assignment['kind']> }>()   // wsId → 첫 출제일 + 종류
   for (const a of assignments) {
     if (a.studentId !== studentId) continue
     const cur = byWs.get(a.worksheetId)
-    if (!cur || a.date < cur) byWs.set(a.worksheetId, a.date)
+    if (!cur) byWs.set(a.worksheetId, { date: a.date, kinds: new Set([a.kind]) })
+    else { if (a.date < cur.date) cur.date = a.date; cur.kinds.add(a.kind) }
   }
   const rows: StudentWsRow[] = []
-  for (const [wsId, date] of byWs) {
+  for (const [wsId, v] of byWs) {
     const ws = worksheets.find(w => w.id === wsId)
-    if (ws && !ws.deletedAt) rows.push({ ws, date })
+    if (ws && !ws.deletedAt) rows.push({ ws, date: v.date, kinds: [...v.kinds] })
   }
   return rows.sort((a, b) => b.date.localeCompare(a.date))
+}
+
+// ── 학습 타이머 (매쓰플랫 "⏱ 접속 중 누적 학습시간" — 순공시간) ────────
+// StudentShell이 접속(화면 표시) 중 1초 단위로 localStorage에 누적한다. 기기별 로컬 측정.
+export function studyTimeKey(studentId: string, day: string): string {
+  return `stu-time-${studentId}-${day}`
+}
+export function readStudySeconds(studentId: string, day: string): number {
+  const n = Number(localStorage.getItem(studyTimeKey(studentId, day)))
+  return Number.isFinite(n) && n > 0 ? n : 0
+}
+export function tickStudySecond(studentId: string, day: string): void {
+  try { localStorage.setItem(studyTimeKey(studentId, day), String(readStudySeconds(studentId, day) + 1)) } catch { /* 쿼터 초과 무시 */ }
+}
+export function fmtHMS(sec: number): string {
+  const h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60
+  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+}
+export function fmtHM(sec: number): string {
+  const h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60)
+  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`
 }
 
 // 채점 결과 요약 — 총점은 학습지 전체 문항 기준 (미응답 = 오답 취급)

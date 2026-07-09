@@ -93,6 +93,8 @@ export interface Worksheet {
   listIds: string[]                  // 마이 리스트 소속
   createdAt: string
   deletedAt: string | null
+  // 보충학습 회차 체인 (학생앱 오답학습·심화학습 — 없으면 일반 학습지)
+  supplement?: { kind: '오답학습' | '심화학습'; sourceWsId: string; round: number }
 }
 
 export interface MyList {
@@ -142,6 +144,7 @@ export interface Student {
   homePhone?: string     // 집 전화
   loginId?: string       // 학생앱 로그인 아이디 (없으면 attendNo 사용)
   authEmail?: string     // 학생앱 Supabase 계정 이메일 (계정 생성 스크립트가 기록)
+  siblingIds?: string[]  // 형제 연결 — 학부모 연락처를 공유하는 형제 학생 id (상호 기록)
 }
 
 export interface GradeResult {
@@ -194,14 +197,36 @@ export interface DailyConfig {
 }
 
 // 학생앱 공개 설정 (hj_settings 'studentAppConfig') — 결과 화면의 정답·해설·풀이영상 노출 제어
+// showAnswer/showSolution/showVideo = "채점 후" 공개 (기존 값 하위호환).
+// *_Before = "채점 전"(풀이 중) 공개 — 기본 false. dailyMasterOn/dailyOffIds = 오늘의 학습 학생별 사용 설정.
 export interface StudentAppConfig {
   showAnswer: boolean
   showSolution: boolean
   showVideo: boolean
+  showAnswerBefore?: boolean     // 채점 전 정답 공개
+  showSolutionBefore?: boolean   // 채점 전 해설 공개
+  showVideoBefore?: boolean      // 채점 전 풀이영상 공개
+  dailyMasterOn?: boolean        // 오늘의 학습 — 전체 학생 공개 여부 (기본 true)
+  dailyOffIds?: string[]         // 오늘의 학습 OFF 학생 id 목록
+  lab?: LabConfig                // 실험실 설정
+}
+
+// 실험실 (관리 > 실험실) — 출시 준비 기능 설정
+export interface LabConfig {
+  oneClickOn?: boolean           // 원클릭 복습 학습지(오늘의 학습 오답 복습) 사용
+  oneClickGradesOff?: string[]   // 원클릭 복습 OFF 학년 (예: '중1')
 }
 
 export const DEFAULT_STUDENT_APP_CONFIG: StudentAppConfig = {
   showAnswer: true, showSolution: true, showVideo: true,
+}
+
+// 학원(계정) 프로필 — 마이페이지 > 내 정보 (hj_settings 'academyProfile')
+export interface AcademyProfile {
+  academyName?: string    // 교육기관 명 (헤더·학생앱 표시)
+  teacherName?: string    // 선생님 이름 (학습지·반 담당 표시)
+  phone?: string          // 연락처
+  contactEmail?: string   // 대표 이메일
 }
 
 // 일일 보고지 메모 (학생×날짜)

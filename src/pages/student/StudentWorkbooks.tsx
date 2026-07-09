@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Grading, WBItem, Workbook } from '../../types'
 import { useStore } from '../../lib/store'
 import { dateKey } from '../../lib/dates'
-import { typeName } from '../../data/curriculum'
+import { typeName, typeUnitName } from '../../data/curriculum'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './common'
 
@@ -142,6 +142,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const me = useStudentSelf()
   const { wbItems, gradings, studentAppConfig: cfg } = useStore()
   const [onlyWrong, setOnlyWrong] = useState(false)
+  const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
 
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === wb.id).sort((a, b) => a.page - b.page || a.no - b.no),
@@ -198,6 +199,10 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           </select>
           <button onClick={() => setPage(pages[pageIdx + 1] ?? page)} disabled={pageIdx >= pages.length - 1}
             className="h-9 w-9 rounded-lg border border-line font-bold text-ink2 hover:bg-paper2 disabled:opacity-30">→</button>
+          <button onClick={() => setPageList(true)}
+            className="h-9 rounded-lg border border-line px-2.5 text-sm font-semibold text-ink2 hover:bg-paper2">
+            ≡ 페이지 리스트
+          </button>
         </div>
         <span className="text-xs text-ink2">
           이 쪽 {pageItems.length}문항 · 채점 {gradedOnPage} · 오답·모름 <b className="text-clay">{wrongOnPage}</b>
@@ -244,6 +249,72 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           })}
         </div>
       )}
+
+      {/* 페이지 리스트 모달 — 단원명 섹션별 페이지 행 (채점 완료 페이지 ✓) */}
+      {pageList && (
+        <PageListModal items={items} marks={marks} current={page}
+          onPick={p => { setPage(p); setPageList(false) }} onClose={() => setPageList(false)} />
+      )}
+    </div>
+  )
+}
+
+// ── 페이지 리스트 모달 (매쓰플랫 "페이지 리스트" — 단원명 섹션 + 페이지 행 ✓) ──
+function PageListModal({ items, marks, current, onPick, onClose }: {
+  items: WBItem[]
+  marks: Map<string, { mark: Mark; date: string }>
+  current: number
+  onPick: (page: number) => void
+  onClose: () => void
+}) {
+  // 페이지 → 단원명(그 쪽 첫 문항의 대단원·중단원) 섹션으로 묶기
+  const sections = useMemo(() => {
+    const byPage = new Map<number, WBItem[]>()
+    for (const i of items) {
+      const arr = byPage.get(i.page)
+      if (arr) arr.push(i); else byPage.set(i.page, [i])
+    }
+    const out: { unit: string; pages: { page: number; done: boolean }[] }[] = []
+    for (const [page, arr] of [...byPage.entries()].sort((a, b) => a[0] - b[0])) {
+      const unit = typeUnitName(arr[0].typeId) || '기타'
+      const done = arr.length > 0 && arr.every(i => marks.has(i.id))
+      const last = out[out.length - 1]
+      if (last && last.unit === unit) last.pages.push({ page, done })
+      else out.push({ unit, pages: [{ page, done }] })
+    }
+    return out
+  }, [items, marks])
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-4" onClick={onClose}>
+      <div className="max-h-[80vh] w-full max-w-sm overflow-y-auto rounded-2xl bg-white p-6 shadow-xl"
+        onClick={e => e.stopPropagation()}>
+        <div className="mb-4 flex items-start gap-3">
+          <h2 className="text-lg font-black">페이지 리스트</h2>
+          <div className="grow" />
+          <button onClick={onClose} className="rounded-lg px-2 py-0.5 text-lg text-ink2 hover:bg-paper2">✕</button>
+        </div>
+        <div className="grid gap-3">
+          {sections.map((s, si) => (
+            <section key={si}>
+              <div className="mb-1.5 text-xs font-black text-ink2">{s.unit}</div>
+              <div className="grid gap-1">
+                {s.pages.map(({ page, done }) => (
+                  <button key={page} onClick={() => onPick(page)}
+                    className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-left text-sm font-semibold hover:bg-paper2 ${
+                      page === current ? 'border-pine bg-pine-soft/50 text-pine-dark' : 'border-line/70'}`}>
+                    <span className="text-ink2">≡</span>
+                    {done && <span className="font-black text-pine">✓</span>}
+                    <span>{page}P</span>
+                    <div className="grow" />
+                    <span className="text-ink2">›</span>
+                  </button>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

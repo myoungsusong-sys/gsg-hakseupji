@@ -24,6 +24,7 @@ import NaesinPrep from './pages/NaesinPrep'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
 import Students from './pages/Students'
+import MyPage from './pages/MyPage'
 import CsatLibrary from './pages/CsatLibrary'
 import GichulView from './pages/GichulView'
 import GichulTag from './pages/GichulTag'
@@ -110,6 +111,7 @@ function Gate() {
             {/* 수업: 채점 → 오답 → 드릴 루프 */}
             <Route path="/lesson" element={<Page><Lesson /></Page>} />
             <Route path="/manage" element={<Page><Students /></Page>} />
+            <Route path="/mypage" element={<Page><MyPage /></Page>} />
 
             <Route path="/make" element={<Page><MakeWizard /></Page>} />
             <Route path="/worksheet/:id" element={<Page><WorksheetView /></Page>} />

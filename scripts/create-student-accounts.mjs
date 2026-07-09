@@ -22,6 +22,7 @@
 //   node scripts/create-student-accounts.mjs             # 전체 생성 (이미 있으면 건너뜀)
 //   node scripts/create-student-accounts.mjs --dry-run   # 생성 없이 대상 목록만 출력
 //   node scripts/create-student-accounts.mjs --pw 1234가나  # 공통 비밀번호 직접 지정
+//   node scripts/create-student-accounts.mjs --reset 0412   # 해당 학생 비밀번호를 기본값으로 초기화 (service key 필수)
 //
 // 비밀번호 기본값: gsg<loginId> (Supabase 최소 6자 충족. 예: 출결번호 0412 → gsg0412)
 //   → 생성 후 학생별 안내: "아이디 = 출결번호, 비밀번호 = gsg+출결번호"
@@ -34,6 +35,8 @@ const ANON = process.env.SUPABASE_ANON_KEY
 const DRY = process.argv.includes('--dry-run')
 const pwArg = process.argv.indexOf('--pw')
 const FIXED_PW = pwArg >= 0 ? process.argv[pwArg + 1] : null
+const resetArg = process.argv.indexOf('--reset')
+const RESET_ID = resetArg >= 0 ? process.argv[resetArg + 1] : null   // 비밀번호 초기화 대상 loginId
 
 if (!URL || (!SERVICE && !ANON)) {
   console.error('환경변수 필요: SUPABASE_URL + (SUPABASE_SERVICE_KEY 또는 SUPABASE_ANON_KEY)')
@@ -48,6 +51,32 @@ const pwOf = id => FIXED_PW ?? `gsg${String(id).trim()}`
 const db = createClient(URL, SERVICE ?? ANON)
 // 계정 생성 클라이언트: A방식이면 service(admin), B방식이면 anon(signUp)
 const auth = createClient(URL, SERVICE ?? ANON, { auth: { persistSession: false } })
+
+// ── --reset <loginId>: 학생 비밀번호를 기본값(gsg<loginId>)으로 초기화 ──
+//    선생님웹 학생 상세 [학생 비밀번호 초기화] 버튼이 이 명령을 안내한다. service key 필수.
+if (RESET_ID) {
+  if (!SERVICE) {
+    console.error('--reset 은 SUPABASE_SERVICE_KEY(service_role)가 필요합니다.')
+    process.exit(1)
+  }
+  const email = emailOf(RESET_ID)
+  const newPw = pwOf(RESET_ID)
+  let user = null
+  for (let page = 1; page <= 50 && !user; page++) {
+    const { data, error } = await auth.auth.admin.listUsers({ page, perPage: 200 })
+    if (error) { console.error('사용자 조회 실패: ' + error.message); process.exit(1) }
+    user = (data?.users ?? []).find(u => (u.email ?? '').toLowerCase() === email)
+    if ((data?.users ?? []).length < 200) break
+  }
+  if (!user) {
+    console.error(`계정 없음: ${email} — 먼저 스크립트를 --reset 없이 실행해 계정을 생성하세요.`)
+    process.exit(1)
+  }
+  const { error } = await auth.auth.admin.updateUserById(user.id, { password: newPw })
+  if (error) { console.error('초기화 실패: ' + error.message); process.exit(1) }
+  console.log(`✓ ${email} 비밀번호를 기본값(${newPw})으로 초기화했습니다.`)
+  process.exit(0)
+}
 
 async function loadStudents() {
   const out = []
