@@ -160,6 +160,7 @@ type MarketRow = {
   key: string; name: string; publisher: string; grade: string
   kind: '시중교재' | '교과서'; count: number; answer: boolean
   matchBook?: WbMatchBook
+  tbMatchKey?: string; tbCourse?: string   // 교과서 정답표(wb-match) 매칭 — 등록 시 자동 채점
 }
 
 function MarketCatalog() {
@@ -183,7 +184,8 @@ function MarketCatalog() {
       name: `${b.name}${b.rev === '15' ? ' (15개정)' : ''}`,
       publisher: b.publisher,
       grade: b.schoolType === 'E' ? `초${b.grade}${b.semester ? `-${b.semester}` : ''}` : b.schoolType === 'M' ? `중${b.grade}` : b.grade,
-      kind: '교과서', count: b.count, answer: false,
+      kind: '교과서', count: b.count, answer: !!b.hasAnswers,
+      ...(b.hasAnswers ? { tbMatchKey: b.matchKey, tbCourse: b.course } : {}),
     }))
     return [...market, ...tb]
   }, [])
@@ -240,7 +242,7 @@ function MarketCatalog() {
             </thead>
             <tbody>
               {list.map(r => {
-                const has = r.matchBook ? registered.has(r.matchBook.key) : false
+                const has = r.matchBook ? registered.has(r.matchBook.key) : (r.tbMatchKey ? registered.has(r.tbMatchKey) : false)
                 return (
                   <tr key={r.key} className="border-t border-line/60">
                     <td className="px-4 py-2 text-ink2">{r.grade}<br /><span className="text-[10px]">{r.name.includes('(15개정)') ? '(15개정)' : '(22개정)'}</span></td>
@@ -261,10 +263,15 @@ function MarketCatalog() {
                           <button onClick={() => addWorkbook({ name: r.name, publisher: r.publisher, grade: r.grade, matchKey: r.matchBook!.key })}
                             className="rounded-lg border border-pine px-3 py-1 text-xs font-bold text-pine hover:bg-pine-soft">출제하기</button>
                         )
-                      ) : (
+                      ) : has ? <span className="text-xs text-ink2">등록됨</span> : (
                         <button onClick={() => {
-                          addWorkbook({ name: r.name.replace(' (15개정)', ''), publisher: r.publisher, grade: r.grade })
-                          alert('교과서를 등록했습니다. 정답표(채점용) 탭에서 문항·정답을 입력하면 채점·드릴에 연동됩니다.')
+                          if (r.tbMatchKey) {
+                            addWorkbook({ name: r.name.replace(' (15개정)', ''), publisher: r.publisher, grade: r.grade, matchKey: r.tbMatchKey, course: r.tbCourse })
+                            alert('교과서를 등록했습니다. 정답표가 자동 연동되어 채점판에 번호·정답이 표시됩니다.' + (r.tbCourse?.startsWith('e') ? ' (초등은 채점 전용 — 오답 드릴 없음)' : ''))
+                          } else {
+                            addWorkbook({ name: r.name.replace(' (15개정)', ''), publisher: r.publisher, grade: r.grade })
+                            alert('교과서를 등록했습니다. 정답표(채점용) 탭에서 문항·정답을 입력하면 채점·드릴에 연동됩니다.')
+                          }
                         }} className="rounded-lg border border-line px-3 py-1 text-xs font-bold text-ink2 hover:border-pine hover:text-pine">출제하기</button>
                       )}
                     </td>

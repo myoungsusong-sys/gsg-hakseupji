@@ -144,7 +144,8 @@ export interface Workbook {
   name: string          // 예: 쎈 중등수학 1(상)
   publisher: string     // 예: 좋은책신사고
   grade: string
-  matchKey?: string     // 시중교재 매칭표 키 → 문항·유형이 자동 파생됨 (문항은 저장하지 않음)
+  matchKey?: string     // 시중교재·교과서 매칭표 키 → 문항·유형이 자동 파생됨 (문항은 저장하지 않음)
+  course?: string       // 교과서 등 grade→과정 매핑이 애매한 교재의 명시적 wb-match/풀 과정키
   studentId?: string    // 배정된 학생 (없으면 공용 라이브러리 — 채점판엔 학생 배정분만 표시)
 }
 

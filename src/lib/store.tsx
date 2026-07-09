@@ -95,6 +95,18 @@ interface Store extends Persisted {
 
 const Ctx = createContext<Store | null>(null)
 
+// 교과서 wb-match 과정키 → 문제 풀 과정키(pool-*.json). 22개정 고등은 풀 명칭이 다름(대수=h-alg 등).
+// 매핑 없음(초등 e*·15개정 h-hs1/h-s1/h-s2/h-calc15) → 풀 없음(채점만, 드릴 불가 — 정상).
+const POOL_OF_WBCOURSE: Record<string, string> = {
+  'h-dae': 'h-alg', 'h-mi1': 'h-calc1', 'h-prob': 'h-stat', 'h-mi2': 'h-calc2',
+}
+function poolCourseOfWb(c?: string): string | undefined {
+  if (!c) return undefined
+  if (c.startsWith('m')) return c                       // 중등: 풀 과정키 동일
+  if (c === 'h-cm1' || c === 'h-cm2' || c === 'h-geo') return c
+  return POOL_OF_WBCOURSE[c]                             // 나머지 고등은 매핑, 없으면 undefined
+}
+
 function normWorksheet(w: Worksheet): Worksheet {
   return { ...w, options: { ...DEFAULT_SHEET_OPTIONS, ...w.options }, listIds: w.listIds ?? [], conceptIds: w.conceptIds ?? [] }
 }
@@ -159,7 +171,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const set = new Set<string>()
     for (const w of state.workbooks) {
       if (!w.matchKey) continue
-      const c = courseOfGrade(w.grade)
+      const c = w.course ?? courseOfGrade(w.grade)   // 교과서는 명시적 course, 시중교재는 grade→과정
       if (c) set.add(c)
     }
     return [...set]
@@ -174,7 +186,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [neededCourses, matchDataByCourse])
   const derivedWbItems = useMemo(() => {
     return state.workbooks.filter(w => w.matchKey).flatMap(w => {
-      const c = courseOfGrade(w.grade)
+      const c = w.course ?? courseOfGrade(w.grade)
       const data = c ? matchDataByCourse[c] : undefined
       return data ? deriveWBItems(w.id, w.matchKey!, data) : []
     })
@@ -195,7 +207,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const wanted = new Set<string>()
     for (const s of state.students) if (s.active) wanted.add(defaultCurriculumForGrade(s.grade))
     for (const w of state.worksheets) if (!w.deletedAt) wanted.add(defaultCurriculumForGrade(w.grade))
-    for (const w of state.workbooks) wanted.add(defaultCurriculumForGrade(w.grade))
+    for (const w of state.workbooks) wanted.add(poolCourseOfWb(w.course) ?? defaultCurriculumForGrade(w.grade))
     wanted.forEach(c => ensureCourse(c))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.students, state.worksheets, state.workbooks])

@@ -32,7 +32,7 @@ function tbGradeLabel(schoolType: 'E' | 'M' | 'H', grade: string, semester?: num
 }
 const LEVEL_OF_ST = { E: '초', M: '중', H: '고' } as const
 
-export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string }
+export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string; course?: string }
 
 export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose, onAdd }: {
   defaultGrade?: string
@@ -114,11 +114,14 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
   function submit() {
     let books: CatalogBook[]
     if (isTextbook) {
-      // 교과서는 문항별 정답/유형 데이터(wb-match)가 없어 matchKey 없이 등록(수동교재와 동일).
-      // → 목록·배정은 되지만 자동 채점판 문항은 정답표를 일괄 등록해야 함.
+      // 정답표(wb-match) 보유 교과서(393권)는 matchKey·course를 실어 등록 → 시중교재와 동일하게
+      // 채점판 번호·정답이 자동 파생. 미보유(정답 미지원)는 matchKey 없이 등록(정답표 수동 등록 필요).
       books = TEXTBOOK_BOOKS
         .filter(b => checked.has(b.key))
-        .map(b => ({ name: b.name, publisher: b.publisher, grade: tbGradeLabel(b.schoolType, b.grade, b.semester) }))
+        .map(b => ({
+          name: b.name, publisher: b.publisher, grade: tbGradeLabel(b.schoolType, b.grade, b.semester),
+          ...(b.hasAnswers ? { matchKey: b.matchKey, course: b.course } : {}),
+        }))
     } else {
       books = WB_MATCH_BOOKS
         .filter(b => checked.has(b.key))
@@ -190,7 +193,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             <thead className="sticky top-0 bg-paper2">
               <tr className="text-left text-xs text-ink2">
                 <th className="w-10 px-3 py-2">선택</th><th className="py-2">학년</th><th>교재명</th>
-                {!isTextbook && <th>정답</th>}
+                <th>정답</th>
                 <th>출판사</th><th>최근진도</th><th className="px-3">출제여부</th>
               </tr>
             </thead>
@@ -235,6 +238,9 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
                       <div className="text-[10px]">({b.rev}개정)</div>
                     </td>
                     <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs">
+                      {b.hasAnswers ? <span className="font-semibold text-green-600">정답 지원</span> : <span className="text-ink2">-</span>}
+                    </td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
                     <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">-</td>
@@ -258,7 +264,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             className="rounded-lg border border-line px-4 py-2 font-semibold text-ink2 hover:bg-paper2">
             이전
           </button>
-          {isTextbook && <span className="text-[11px] text-ink2">교과서는 목록·배정만 되며 채점은 정답표 일괄 등록 후 가능합니다.</span>}
+          {isTextbook && <span className="text-[11px] text-ink2">'정답 지원' 교과서는 등록 즉시 자동 채점(초등은 채점만·오답드릴 없음). 그 외는 정답표 일괄 등록 후 채점됩니다.</span>}
           <div className="grow" />
           <span className="text-ink2">선택한 교재 수 <b className="text-pine">{checked.size}</b>권</span>
           <button onClick={submit} disabled={checked.size === 0}

@@ -42,7 +42,7 @@ export function deriveWBItems(workbookId: string, matchKey: string, data: MatchD
     page,
     no: i + 1,
     label,
-    typeId: cid,
+    typeId: String(cid),   // 풀 typeId가 문자열이라 conceptId도 문자열로 통일(교과서 원본은 정수일 수 있음)
     kind: kd === 'C' ? '객관식' : '주관식',
     answer: ans ?? '',
     diff: (lv >= 1 && lv <= 5 ? lv : 3) as WBItem['diff'],
