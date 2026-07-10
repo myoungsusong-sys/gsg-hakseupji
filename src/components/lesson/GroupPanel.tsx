@@ -6,7 +6,7 @@ import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { ACHIEVEMENT_GRADES, achievementOf } from '../../lib/achievement'
-import { CURRICULA, curriculumFor } from '../../data/curriculum'
+import { CURRICULA, curriculumFor, typeName } from '../../data/curriculum'
 import { ConfigModal } from './TodayPanel'
 
 // ── 학년(그룹) 단위 수업 화면 (매쓰플랫 /lesson/*/grade/<학년> 변형) ─────────────
@@ -14,12 +14,13 @@ import { ConfigModal } from './TodayPanel'
 // 탭: 학습내역(진도/숙제/학습통계/강의) · 오늘의 학습(전체학생) · 유형분석 · 학습지(목록/현황보드) · 보고서(저장 목록)
 // 실시간 모니터링([모니터링] 컬럼)은 별도 인프라 과제로 보류.
 
-type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'report'
+type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'solvefb' | 'report'
 const TABS: { key: Tab; label: string }[] = [
   { key: 'history', label: '학습내역' },
   { key: 'today', label: '오늘의 학습' },
   { key: 'analysis', label: '유형분석' },
   { key: 'worksheet', label: '학습지' },
+  { key: 'solvefb', label: '풀이피드백' },
   { key: 'report', label: '보고서' },
 ]
 
@@ -71,6 +72,7 @@ export default function GroupPanel({ label, students }: { label: string; student
       {tab === 'today' && <GroupToday label={label} students={students} />}
       {tab === 'analysis' && <GroupAnalysis students={students} />}
       {tab === 'worksheet' && <GroupWorksheets label={label} students={students} />}
+      {tab === 'solvefb' && <GroupSolveFeedback students={students} />}
       {tab === 'report' && <GroupReports students={students} />}
     </div>
   )
@@ -681,6 +683,98 @@ function GroupReports({ students }: { students: Student[] }) {
             </tbody>
           </table>
         </div>
+      )}
+    </div>
+  )
+}
+
+/* ═══════════ 풀이피드백 (반 전체 베끼기 의심 한눈에 보기) ═══════════ */
+
+function fmtTime2(iso: string): string {
+  try { return new Date(iso).toLocaleString('ko-KR', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }) }
+  catch { return '' }
+}
+
+function GroupSolveFeedback({ students }: { students: Student[] }) {
+  const { solveFeedbacks, worksheets, problems } = useStore()
+  const ids = useMemo(() => new Set(students.map(s => s.id)), [students])
+  const nameOf = useMemo(() => new Map(students.map(s => [s.id, s.name])), [students])
+  const groupFb = useMemo(() => solveFeedbacks.filter(f => ids.has(f.studentId)), [solveFeedbacks, ids])
+
+  const perStudent = useMemo(() => students.map(s => {
+    const fs = groupFb.filter(f => f.studentId === s.id)
+    return { s, total: fs.length, suspect: fs.filter(f => !f.hasWork).length, last: fs.length ? [...fs].sort((a, b) => b.at.localeCompare(a.at))[0].at : '' }
+  }).filter(x => x.total > 0).sort((a, b) => b.suspect - a.suspect || b.total - a.total), [students, groupFb])
+
+  const suspectItems = useMemo(() => groupFb.filter(f => !f.hasWork).sort((a, b) => b.at.localeCompare(a.at)), [groupFb])
+  const studentsWithSuspect = new Set(suspectItems.map(f => f.studentId)).size
+
+  const wsName = (id: string) => worksheets.find(w => w.id === id)?.title ?? '학습지'
+  const probNo = (wsId: string, pid: string) => { const w = worksheets.find(x => x.id === wsId); const i = w ? w.problemIds.indexOf(pid) : -1; return i >= 0 ? i + 1 : null }
+  const probType = (pid: string) => { const p = problems.find(x => x.id === pid); return p ? typeName(p.typeId) : '' }
+
+  if (groupFb.length === 0) {
+    return (
+      <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+        아직 이 반의 풀이 피드백이 없습니다. 학생들이 학생앱에서 <b>‘✏️ 풀이 쓰고 AI 피드백 받기’</b>로 풀이를 올리면 반 전체가 한눈에 모입니다.
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+        <span className="font-bold">반 전체 풀이 피드백 <b className="text-pine">{groupFb.length}</b>건</span>
+        <span className={`rounded-md px-2.5 py-1 text-xs font-bold ${suspectItems.length ? 'bg-amber-soft text-amber' : 'bg-pine-soft text-pine-dark'}`}>
+          {suspectItems.length ? `⚠️ 베끼기 의심 ${suspectItems.length}건 · ${studentsWithSuspect}명` : '✅ 베끼기 의심 없음'}
+        </span>
+      </div>
+
+      {/* 학생별 요약 (베끼기 의심 많은 순) */}
+      <div className="mb-5 overflow-hidden rounded-2xl border border-line">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
+              <th className="px-3 py-2">학생</th><th>풀이 피드백</th><th>베끼기 의심</th><th>최근</th>
+            </tr>
+          </thead>
+          <tbody>
+            {perStudent.map(x => (
+              <tr key={x.s.id} className={`border-b border-line/50 ${x.suspect > 0 ? 'bg-amber-soft/30' : ''}`}>
+                <td className="px-3 py-2 font-bold">{x.s.name}</td>
+                <td>{x.total}건</td>
+                <td className={x.suspect > 0 ? 'font-bold text-amber' : 'text-ink2'}>{x.suspect > 0 ? `⚠️ ${x.suspect}건` : '—'}</td>
+                <td className="text-xs text-ink2">{fmtTime2(x.last)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* 베끼기 의심 목록 */}
+      {suspectItems.length > 0 && (
+        <>
+          <div className="mb-2 text-sm font-bold text-amber">⚠️ 베끼기 의심 — 과정 없이 답만 제출</div>
+          <div className="grid gap-2">
+            {suspectItems.map(f => {
+              const no = probNo(f.worksheetId, f.problemId)
+              return (
+                <div key={f.id} className="rounded-xl border border-amber bg-amber-soft/40 p-3">
+                  <div className="mb-1 flex flex-wrap items-center gap-2 text-sm">
+                    <b>{nameOf.get(f.studentId) ?? '학생'}</b>
+                    <span className="text-ink2">·</span>
+                    <span>{wsName(f.worksheetId)}</span>
+                    {no != null && <span className="rounded bg-white px-1.5 py-0.5 text-xs font-bold text-ink2">{no}번</span>}
+                    <span className="text-xs text-ink2">{probType(f.problemId)}</span>
+                    <div className="grow" />
+                    <span className="text-xs text-ink2">{fmtTime2(f.at)}</span>
+                  </div>
+                  <p className="text-xs leading-relaxed text-ink2">{f.feedback}</p>
+                </div>
+              )
+            })}
+          </div>
+        </>
       )}
     </div>
   )
