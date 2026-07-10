@@ -46,11 +46,33 @@ const CARD_CLASS: Record<Mark, string> = {
 }
 const CARD_UNMARKED = 'border-line bg-white hover:border-pine'
 
+// ── 채점 화면 "마지막 상태" 기억 ────────────────────────────────
+// 학생을 바꾸면 GradePanel이 리마운트(key=student.id)되어 로컬 state가 사라진다.
+// 다른 학생 갔다 돌아와도 마지막으로 보던 교재·쪽 범위가 그대로 복원되도록
+// 학생별·교재별로 저장한다(세션 넘어 새로고침에도 유지되게 localStorage).
+const LV_KEY = 'gsg-grade-lastview-v1'
+type LVEntry = { wb?: string | null; pages?: Record<string, [number, number]> }
+let LV_CACHE: Record<string, LVEntry> | null = null
+function lvAll(): Record<string, LVEntry> {
+  if (!LV_CACHE) { try { LV_CACHE = JSON.parse(localStorage.getItem(LV_KEY) || '{}') } catch { LV_CACHE = {} } }
+  return LV_CACHE!
+}
+function lvSaveAll() { try { localStorage.setItem(LV_KEY, JSON.stringify(lvAll())) } catch { /* 저장 실패 무시 */ } }
+function lvGet(sid: string): LVEntry { return lvAll()[sid] ?? {} }
+function lvSetWb(sid: string, wb: string | null) { const a = lvAll(); a[sid] = { ...a[sid], wb }; lvSaveAll() }
+function lvSetPages(sid: string, wb: string, from: number, to: number) {
+  const a = lvAll(); const e = a[sid] ?? {}
+  a[sid] = { ...e, pages: { ...(e.pages ?? {}), [wb]: [from, to] } }; lvSaveAll()
+}
+
 export default function GradePanel({ student }: { student: Student }) {
   const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems } = useStore()
   // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 = 배정분)
   const myBooks = useMemo(() => workbooks.filter(w => w.studentId === student.id), [workbooks, student.id])
-  const [wbId, setWbId] = useState<string | null>(myBooks[0]?.id ?? null)
+  const [wbId, setWbId] = useState<string | null>(() => {
+    const saved = lvGet(student.id).wb        // 마지막으로 보던 교재 복원 (아직 배정돼 있을 때만)
+    return saved && myBooks.some(b => b.id === saved) ? saved : (myBooks[0]?.id ?? null)
+  })
   const [bookDlg, setBookDlg] = useState(false)
   const [catalog, setCatalog] = useState(false)
   const [bulk, setBulk] = useState(false)
@@ -60,6 +82,8 @@ export default function GradePanel({ student }: { student: Student }) {
   useEffect(() => {
     if (!myBooks.some(w => w.id === wbId)) setWbId(myBooks[0]?.id ?? null)
   }, [myBooks, wbId])
+  // 선택 교재를 학생별로 기억 (다른 학생 갔다 와도 마지막 교재 유지)
+  useEffect(() => { lvSetWb(student.id, wbId) }, [wbId, student.id])
   const wb = myBooks.find(w => w.id === wbId) ?? null
 
   const items = useMemo(
@@ -85,12 +109,23 @@ export default function GradePanel({ student }: { student: Student }) {
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
   const [savedAt, setSavedAt] = useState('')
 
-  // 교재 전환·매칭 문항 로드 시 쪽 범위를 교재 전체로 초기화
+  // 교재 전환·매칭 문항 로드 시: 마지막으로 보던 쪽 범위를 복원(없거나 무효면 교재 전체)
   useEffect(() => {
-    if (pages.length) { setFrom(pages[0][0]); setTo(pages[pages.length - 1][0]) }
+    if (pages.length) {
+      const saved = wbId ? lvGet(student.id).pages?.[wbId] : undefined
+      const ok = saved && pages.some(([p]) => p === saved[0]) && pages.some(([p]) => p === saved[1]) && saved[0] <= saved[1]
+      if (ok) { setFrom(saved![0]); setTo(saved![1]) }
+      else { setFrom(pages[0][0]); setTo(pages[pages.length - 1][0]) }
+    }
     setSelecting(false); setSelected(new Set()); setPageChecked(new Set())
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wbId, items.length])
+
+  // 쪽 범위가 바뀔 때마다 학생·교재별로 기억 (유효 페이지일 때만)
+  useEffect(() => {
+    if (wbId && pages.some(([p]) => p === from)) lvSetPages(student.id, wbId, from, to)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [from, to, wbId])
 
   const inRange = useMemo(() => items.filter(i => i.page >= from && i.page <= to), [items, from, to])
 
@@ -385,25 +420,30 @@ export default function GradePanel({ student }: { student: Student }) {
           className="rounded-lg bg-pine px-3 py-2 text-xs font-bold text-paper hover:brightness-105 disabled:opacity-40">
           ＋ 페이지별 오답학습지{pageChecked.size > 0 ? ` (${pageChecked.size})` : ''}
         </button>
-        {live.wrongs.length > 0 && !selecting && (
-          <button onClick={() => setDrill({ title: `[오답] ${wb.name}`, wrongs: live.wrongs })}
-            className="rounded-lg bg-amber px-4 py-2 text-xs font-bold text-white hover:brightness-105">
-            오답·모름 {live.wrongs.length}문제로 오답 학습지
-          </button>
-        )}
+        {/* 흔들림 방지: 오답이 생겨 이 버튼이 나타났다 사라질 때 툴바가 줄바꿈되며 그리드가 튀지 않도록,
+            항상 자리를 차지하고 오답이 없을 땐 보이지 않게만 처리(invisible=공간 유지) */}
+        <button onClick={() => setDrill({ title: `[오답] ${wb.name}`, wrongs: live.wrongs })}
+          disabled={live.wrongs.length === 0 || selecting}
+          className={`rounded-lg bg-amber px-4 py-2 text-xs font-bold text-white hover:brightness-105 ${live.wrongs.length > 0 && !selecting ? '' : 'invisible pointer-events-none'}`}>
+          오답·모름 {live.wrongs.length}문제로 오답 학습지
+        </button>
       </div>
 
       {/* 안내 문구(실시간 자동 저장) + 현재 요약 + 일괄 채점 */}
       <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
         <span className="text-xs text-ink2">
           채점 기록은 실시간으로 자동 저장됩니다.
-          {saveState === 'saving' && <span className="ml-2 text-amber">저장 중…</span>}
-          {saveState === 'saved' && <span className="ml-2 text-pine">✓ 저장됨 {savedAt}</span>}
+          {/* 흔들림 방지: 저장 상태 글자는 항상 같은 폭을 차지(자리 예약)해 줄바꿈이 흔들리지 않게 */}
+          <span className="ml-2 inline-block w-24 align-baseline">
+            {saveState === 'saving' && <span className="text-amber">저장 중…</span>}
+            {saveState === 'saved' && <span className="text-pine">✓ 저장됨 {savedAt}</span>}
+          </span>
         </span>
         {inRange.length > 0 && (
-          <span className="text-xs font-semibold">
+          <span className="text-xs font-semibold tabular-nums">
             채점 {live.marked}문항 · <b className="text-pine">정답 {live.correct}</b> · <b className="text-clay">오답 {live.wrong}</b> · <b className="text-amber">모름 {live.unknown}</b>
-            {live.marked > 0 && <> ({Math.round(live.correct / live.marked * 100)}점)</>}
+            {/* 흔들림 방지: 점수는 항상 자리를 예약(채점 시작해도 폭이 변하지 않게) */}
+            <span className="ml-1 inline-block w-12">{live.marked > 0 ? `(${Math.round(live.correct / live.marked * 100)}점)` : ''}</span>
           </span>
         )}
         <div className="grow" />
