@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { toBlob } from 'html-to-image'
 import type { GradeResult, Grading, Student } from '../../types'
 import { useStore } from '../../lib/store'
 import { dateKey, monthKey, todayKey } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
-import { typeName } from '../../data/curriculum'
+import { typeName, typeUnitName } from '../../data/curriculum'
 
 // ── 수업 > 보고서: 일일 보고지 + 월간 보고서 (즉석 실시간 생성 + 저장 목록 레이어) ──────────
 
@@ -113,6 +114,13 @@ function isBook(g: Grading): boolean {
   return (g.source ?? '교재') === '교재'   // source 없으면 교재 (구버전 데이터 호환)
 }
 
+function downloadBlob(blob: Blob, filename: string) {
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url; a.download = filename; a.click()
+  setTimeout(() => URL.revokeObjectURL(url), 4000)
+}
+
 async function copyText(text: string, done: () => void) {
   try {
     await navigator.clipboard.writeText(text)
@@ -165,6 +173,29 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
   const totalUnknown = dayGradings.reduce((a, g) => a + g.results.filter(r => r.unknown).length, 0)
   const overall = pct(totalCorrect, totalSolved)
 
+  // 내용 업그레이드: 지난 7일 평균 대비 + 연속 학습일
+  const { weekAvg, weekDelta, streak } = useMemo(() => {
+    const my = gradings.filter(g => g.studentId === student.id)
+    const d0 = new Date(date + 'T00:00:00')
+    // 지난 7일(오늘 제외) 평균 정답률
+    let c = 0, t = 0
+    for (const g of my) {
+      const gd = new Date(dateKey(g.date) + 'T00:00:00')
+      const diff = (d0.getTime() - gd.getTime()) / 86400000
+      if (diff >= 1 && diff <= 7) { t += g.results.length; c += g.results.filter(r => r.correct).length }
+    }
+    const avg = t ? pct(c, t) : null
+    // 연속 학습일 (오늘 포함해 과거로)
+    const days = new Set(my.map(g => dateKey(g.date)))
+    let s = 0
+    for (let i = 0; i < 60; i++) {
+      const k = dateKey(new Date(d0.getTime() - i * 86400000).toISOString())
+      if (days.has(k)) s++
+      else break
+    }
+    return { weekAvg: avg, weekDelta: avg == null || !totalSolved ? null : overall - avg, streak: s }
+  }, [gradings, student.id, date, overall, totalSolved])
+
   // 오늘 약했던 유형 (교재 itemId·학습지 typeId 모두 집계)
   const wrongTypes = useMemo(() => {
     const cnt = new Map<string, number>()
@@ -177,11 +208,49 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     return [...cnt.entries()].sort((a, b) => b[1] - a[1]).map(([t, n]) => ({ name: typeName(t), n }))
   }, [dayGradings, itemMap])
 
+  // 오늘 수업 내용: 채점된 문항의 유형 → 단원(대·중단원) 단위로 집계
+  const coveredUnits = useMemo(() => {
+    const units = new Map<string, number>()   // "대단원 · 중단원" → 문항수
+    const types = new Set<string>()
+    for (const g of dayGradings)
+      for (const r of g.results) {
+        const t = resultTypeId(r, itemMap)
+        if (!t) continue
+        types.add(t)
+        const raw = typeUnitName(t)
+        if (raw) {
+          const [big, mid] = raw.split(' · ')
+          const label = !mid || big === mid ? big : raw   // 대단원=중단원이면 한 번만
+          units.set(label, (units.get(label) ?? 0) + 1)
+        }
+      }
+    return { units: [...units.entries()].sort((a, b) => b[1] - a[1]).map(([name, n]) => ({ name, n })), typeCount: types.size }
+  }, [dayGradings, itemMap])
+
   // 오늘 만든 오답 드릴
   const drills = worksheets.filter(w =>
     !w.deletedAt && dateKey(w.createdAt) === date && w.title.startsWith(student.name) && w.tags.includes('오답'))
 
   const dateKr = date.replaceAll('-', '. ') + '.'
+
+  // 선생님 한마디 자동 작성 — 오늘 데이터(단원·점수·증감·연속·취약유형) 기반 초안 생성 (편집 가능)
+  function draftComment() {
+    const parts: string[] = []
+    const unitNames = coveredUnits.units.slice(0, 2).map(u => u.name.split(' · ').pop()).filter(Boolean)
+    if (unitNames.length) parts.push(`오늘은 ${unitNames.join(', ')} 단원을 학습했습니다.`)
+    if (totalSolved) {
+      if (overall >= 90) parts.push(`${totalSolved}문항 중 ${totalCorrect}문항을 맞혀 ${overall}점, 아주 훌륭했습니다.`)
+      else if (overall >= 70) parts.push(`${totalSolved}문항 기준 ${overall}점으로 안정적으로 잘 해냈습니다.`)
+      else parts.push(`오늘은 ${overall}점으로 조금 아쉬웠지만 끝까지 성실하게 풀었습니다.`)
+    }
+    if (weekDelta != null && weekDelta >= 5) parts.push(`지난 7일 평균보다 ${weekDelta}점 올라 상승세가 뚜렷합니다.`)
+    else if (weekDelta != null && weekDelta <= -5) parts.push(`지난 7일 평균보다 ${Math.abs(weekDelta)}점 내려가 다음 시간에 집중 보완하겠습니다.`)
+    if (wrongTypes.length) parts.push(`「${wrongTypes[0].name}」 유형은 ${drills.length ? '오답 드릴 학습지로 한 번 더 다지겠습니다.' : '다음 시간에 복습하겠습니다.'}`)
+    if (streak >= 3) parts.push(`${streak}일 연속 학습 중입니다. 꾸준함이 큰 힘이 됩니다!`)
+    if (!parts.length) parts.push('오늘 채점 기록이 없어 수업 내용을 직접 적어주세요.')
+    const text = parts.join(' ')
+    setComment(text); persist(text, nextPlan)
+  }
 
   // 단톡방 복사용 텍스트 (교재/학습지 섹션 분리, 모름 표기)
   const kakaoText = useMemo(() => {
@@ -189,6 +258,9 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       `[깊은생각수학] ${student.name}${student.klass ? ` (${student.klass})` : ''} 오늘 학습`,
       `📅 ${dateKr}`,
       '',
+      coveredUnits.units.length ? '📚 오늘 수업 내용' : null,
+      ...coveredUnits.units.slice(0, 4).map(u => `· ${u.name} (${u.n}문항)`),
+      coveredUnits.units.length ? '' : null,
       bookRows.length ? '📖 오늘 푼 교재' : null,
       ...bookRows.map(r => `· ${r.name} ${r.range} — ${r.total}문항 중 ${r.correct}개 정답 (${r.score}점)${r.unknown ? ` · 모름 ${r.unknown}개` : ''}`),
       sheetRows.length ? '🧾 오늘 푼 학습지' : null,
@@ -196,6 +268,8 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       totalSolved
         ? `= 오늘 총 ${totalSolved}문항 중 ${totalCorrect}개 정답 (${overall}점)${totalUnknown ? ` · 모름 ${totalUnknown}개` : ''}`
         : '오늘 채점 기록이 없습니다.',
+      weekDelta != null ? `📈 지난 7일 평균(${weekAvg}점) 대비 ${weekDelta >= 0 ? '+' : ''}${weekDelta}점` : null,
+      streak >= 2 ? `🔥 연속 학습 ${streak}일째!` : null,
       wrongTypes.length ? '' : null,
       wrongTypes.length ? '🔁 오늘 약했던 유형' : null,
       wrongTypes.length ? `· ${wrongTypes.map(t => t.name).join(', ')}` : null,
@@ -209,7 +283,43 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       '오늘도 열심히 했습니다. 감사합니다 😊',
     ]
     return lines.filter((l): l is string => l !== null).join('\n')
-  }, [student.name, student.klass, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, wrongTypes, drills.length, comment, nextPlan])
+  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, nextPlan])
+
+  // 이미지 카드 복사/저장
+  const cardRef = useRef<HTMLDivElement>(null)
+  const [imgState, setImgState] = useState<'idle' | 'busy' | 'copied' | 'saved'>('idle')
+  async function cardToBlob(): Promise<Blob | null> {
+    if (!cardRef.current) return null
+    return toBlob(cardRef.current, { pixelRatio: 2, backgroundColor: '#ffffff', cacheBust: true })
+  }
+  async function copyCardImage() {
+    setImgState('busy')
+    try {
+      const blob = await cardToBlob()
+      if (!blob) throw new Error('render fail')
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
+      setImgState('copied')
+    } catch {
+      // 클립보드 이미지가 안 되는 환경(사파리 등) → 파일 저장 폴백
+      try {
+        const blob = await cardToBlob()
+        if (!blob) throw new Error('render fail')
+        downloadBlob(blob, `${student.name}_일일리포트_${date}.png`)
+        setImgState('saved')
+      } catch { setImgState('idle'); alert('이미지 생성에 실패했습니다.') }
+    }
+    setTimeout(() => setImgState('idle'), 2200)
+  }
+  async function saveCardImage() {
+    setImgState('busy')
+    try {
+      const blob = await cardToBlob()
+      if (!blob) throw new Error('render fail')
+      downloadBlob(blob, `${student.name}_일일리포트_${date}.png`)
+      setImgState('saved')
+    } catch { alert('이미지 생성에 실패했습니다.') }
+    setTimeout(() => setImgState('idle'), 2200)
+  }
 
   return (
     <div>
@@ -225,25 +335,52 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
           }}
           className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">💾 보고서 저장</button>
         <button onClick={() => copyText(kakaoText, () => { setCopied(true); setTimeout(() => setCopied(false), 1800) })}
-          className="rounded-lg bg-amber px-5 py-2 text-sm font-bold text-white hover:brightness-105">
-          {copied ? '✓ 복사됨' : '💬 단톡방 텍스트 복사'}
+          className="rounded-lg border border-amber px-4 py-2 text-sm font-semibold text-amber hover:bg-amber/10">
+          {copied ? '✓ 복사됨' : '💬 텍스트 복사'}
         </button>
+        <button onClick={copyCardImage} disabled={imgState === 'busy'}
+          className="rounded-lg bg-amber px-5 py-2 text-sm font-bold text-white hover:brightness-105 disabled:opacity-60">
+          {imgState === 'busy' ? '만드는 중…' : imgState === 'copied' ? '✓ 복사됨 — 카톡에 붙여넣기' : imgState === 'saved' ? '✓ 파일로 저장됨' : '🖼 이미지 카드 복사'}
+        </button>
+        <button onClick={saveCardImage} disabled={imgState === 'busy'}
+          className="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink2 hover:bg-paper2" title="PNG 파일로 저장">⬇</button>
         <button onClick={() => window.print()} className="rounded-lg border border-pine px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">🖨 보고지 인쇄</button>
       </div>
 
       <div className="no-print mb-5 grid gap-3 sm:grid-cols-2">
-        <label className="grid gap-1 text-sm font-bold">선생님 한마디 <span className="font-normal text-ink2">(자동 저장)</span>
+        <div className="grid gap-1 text-sm font-bold">
+          <div className="flex items-center justify-between">
+            <span>선생님 한마디 <span className="font-normal text-ink2">(자동 저장)</span></span>
+            <button type="button" onClick={draftComment}
+              className="rounded-md border border-amber/60 px-2.5 py-1 text-xs font-bold text-amber hover:bg-amber/10"
+              title="오늘 데이터(단원·점수·증감·연속학습·취약유형)로 초안을 만들어 줍니다. 생성 후 자유롭게 수정하세요.">
+              ✨ 자동 작성
+            </button>
+          </div>
           <textarea value={comment}
             onChange={e => { setComment(e.target.value); persist(e.target.value, nextPlan) }} rows={3}
-            placeholder="오늘 수업 태도·잘한 점·보완할 점을 적으면 보고지·단톡방 텍스트에 들어갑니다."
+            placeholder="직접 입력하거나 [✨ 자동 작성]으로 초안을 만들어 수정하세요. 보고지·단톡방 텍스트에 들어갑니다."
             className="rounded-lg border border-line px-3 py-2 font-normal" />
-        </label>
+        </div>
         <label className="grid gap-1 text-sm font-bold">다음 학습 계획 <span className="font-normal text-ink2">(자동 저장)</span>
           <textarea value={nextPlan}
             onChange={e => { setNextPlan(e.target.value); persist(comment, e.target.value) }} rows={3}
             placeholder="예: 최소공배수 오답 드릴 + 쎈 91~94p"
             className="rounded-lg border border-line px-3 py-2 font-normal" />
         </label>
+      </div>
+
+      {/* 단톡방 이미지 카드 (미리보기가 곧 캡처 원본) */}
+      <div className="no-print mb-6">
+        <div className="mb-2 text-center text-xs text-ink2">👇 아래 카드가 그대로 이미지가 됩니다 — [🖼 이미지 카드 복사] 후 카톡에 붙여넣기</div>
+        <div className="flex justify-center">
+          <div ref={cardRef}>
+            <ReportCard student={student} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
+              totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
+              weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
+              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={comment} nextPlan={nextPlan} />
+          </div>
+        </div>
       </div>
 
       {/* 인쇄용 일일 보고지 */}
@@ -608,6 +745,147 @@ function KakaoPreview({ text }: { text: string }) {
     <div className="no-print mx-auto mt-5 max-w-3xl rounded-2xl border border-line bg-paper2 p-5">
       <div className="mb-2 text-xs font-bold text-ink2">단톡방 전송 미리보기 (복사 버튼으로 그대로 붙여넣기)</div>
       <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink">{text}</pre>
+    </div>
+  )
+}
+
+// ── 단톡방용 이미지 리포트 카드 (인라인 스타일 — html-to-image 캡처 원본) ──────────
+const C = { blue: '#2b7de9', blueDark: '#1b5fc2', blueSoft: '#eef5fe', ink: '#1f2937', ink2: '#6b7280',
+  line: '#e5e7eb', amberSoft: '#fff7e6', amber: '#b45309', red: '#dc2626', redSoft: '#fdecec', green: '#15803d' }
+
+function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
+  weekAvg, weekDelta, streak, wrongTypes, covered, hasDrill, comment, nextPlan }: {
+  student: Student; dateKr: string
+  bookRows: { name: string; range: string; total: number; correct: number; unknown: number; score: number }[]
+  sheetRows: { name: string; total: number; correct: number; unknown: number; score: number }[]
+  totalSolved: number; totalCorrect: number; totalUnknown: number; overall: number
+  weekAvg: number | null; weekDelta: number | null; streak: number
+  wrongTypes: { name: string; n: number }[]; covered: { name: string; n: number }[]
+  hasDrill: boolean; comment: string; nextPlan: string
+}) {
+  const rows = [
+    ...bookRows.map(r => ({ ...r, icon: '📖', sub: r.range })),
+    ...sheetRows.map(r => ({ ...r, icon: '🧾', sub: '' })),
+  ]
+  const boxStyle = { borderRadius: 12, padding: '10px 14px', fontSize: 13, lineHeight: 1.6 } as const
+  return (
+    <div style={{ width: 440, background: '#ffffff', borderRadius: 20, overflow: 'hidden',
+      border: `1px solid ${C.line}`, color: C.ink, fontFamily: 'inherit', boxShadow: '0 2px 10px rgba(0,0,0,.07)' }}>
+      {/* 헤더 */}
+      <div style={{ background: `linear-gradient(135deg, ${C.blue}, ${C.blueDark})`, color: '#fff', padding: '16px 20px 14px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+          <span style={{ fontWeight: 900, fontSize: 15 }}>깊은생각수학</span>
+          <span style={{ fontSize: 12, opacity: .85 }}>{dateKr}</span>
+        </div>
+        <div style={{ marginTop: 6, fontSize: 20, fontWeight: 900 }}>
+          {student.name} <span style={{ fontWeight: 400, fontSize: 14, opacity: .9 }}>{student.klass ? `· ${student.klass}` : ''} 일일 학습 리포트</span>
+        </div>
+      </div>
+
+      <div style={{ padding: '14px 18px 16px' }}>
+        {totalSolved === 0 ? (
+          <div style={{ ...boxStyle, background: C.blueSoft, textAlign: 'center', color: C.ink2 }}>오늘 채점 기록이 없습니다.</div>
+        ) : (
+          <>
+            {/* 스탯 타일 */}
+            <div style={{ display: 'flex', gap: 8 }}>
+              {[
+                { label: '푼 문제', value: `${totalSolved}문항` },
+                { label: '오늘 점수', value: `${overall}점` },
+                streak >= 2 ? { label: '연속 학습', value: `🔥 ${streak}일째` } : { label: '정답', value: `${totalCorrect}개` },
+              ].map((s, i) => (
+                <div key={i} style={{ flex: 1, background: C.blueSoft, borderRadius: 12, padding: '10px 8px', textAlign: 'center' }}>
+                  <div style={{ fontSize: 11, color: C.ink2, fontWeight: 700 }}>{s.label}</div>
+                  <div style={{ fontSize: 17, fontWeight: 900, color: C.blueDark, marginTop: 2 }}>{s.value}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* 정답률 바 + 주간 비교 */}
+            <div style={{ marginTop: 12 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, fontWeight: 700, marginBottom: 4 }}>
+                <span>정답률 {overall}%{totalUnknown > 0 && <span style={{ color: C.red, fontWeight: 600 }}> · 모름 {totalUnknown}개</span>}</span>
+                {weekDelta != null && (
+                  <span style={{ color: weekDelta >= 0 ? C.green : C.red }}>
+                    {weekDelta >= 0 ? '▲' : '▼'} 지난 7일 평균({weekAvg}점) 대비 {weekDelta >= 0 ? '+' : ''}{weekDelta}점
+                  </span>
+                )}
+              </div>
+              <div style={{ height: 10, borderRadius: 6, background: '#eceff3', overflow: 'hidden' }}>
+                <div style={{ width: `${overall}%`, height: '100%', borderRadius: 6,
+                  background: `linear-gradient(90deg, ${C.blue}, ${C.blueDark})` }} />
+              </div>
+            </div>
+
+            {/* 오늘 수업 내용 */}
+            {covered.length > 0 && (
+              <div style={{ marginTop: 12 }}>
+                <div style={{ fontSize: 12, fontWeight: 800, marginBottom: 6 }}>📚 오늘 수업 내용</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                  {covered.slice(0, 4).map((u, i) => (
+                    <span key={i} style={{ background: C.blueSoft, color: C.blueDark, borderRadius: 999,
+                      padding: '3px 10px', fontSize: 11.5, fontWeight: 700 }}>{u.name} · {u.n}문항</span>
+                  ))}
+                  {covered.length > 4 && <span style={{ fontSize: 11.5, color: C.ink2, alignSelf: 'center' }}>외 {covered.length - 4}개 단원</span>}
+                </div>
+              </div>
+            )}
+
+            {/* 학습 내역 */}
+            <div style={{ marginTop: 12, border: `1px solid ${C.line}`, borderRadius: 12, overflow: 'hidden' }}>
+              {rows.map((r, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 12px',
+                  borderTop: i ? `1px solid ${C.line}` : 'none', fontSize: 13 }}>
+                  <span>{r.icon}</span>
+                  <span style={{ flex: 1, fontWeight: 700, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {r.name}{r.sub && <span style={{ fontWeight: 400, color: C.ink2 }}> {r.sub}</span>}
+                  </span>
+                  <span style={{ color: C.ink2, fontSize: 12 }}>{r.correct}/{r.total}</span>
+                  <span style={{ fontWeight: 900, color: C.blueDark, minWidth: 38, textAlign: 'right' }}>{r.score}점</span>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* 취약 유형 */}
+        {wrongTypes.length > 0 && (
+          <div style={{ marginTop: 12 }}>
+            <div style={{ fontSize: 12, fontWeight: 800, marginBottom: 6 }}>🔁 오늘 보완할 유형</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {wrongTypes.slice(0, 4).map((t, i) => (
+                <span key={i} style={{ background: C.redSoft, color: C.red, borderRadius: 999, padding: '3px 10px',
+                  fontSize: 11.5, fontWeight: 700 }}>{t.name}{t.n > 1 ? ` ×${t.n}` : ''}</span>
+              ))}
+              {wrongTypes.length > 4 && <span style={{ fontSize: 11.5, color: C.ink2, alignSelf: 'center' }}>외 {wrongTypes.length - 4}개</span>}
+            </div>
+            <div style={{ fontSize: 11.5, color: C.ink2, marginTop: 5 }}>
+              {hasDrill ? '→ 오답 드릴 학습지로 복습 예정입니다.' : '→ 다음 시간에 복습할 예정입니다.'}
+            </div>
+          </div>
+        )}
+
+        {/* 선생님 한마디 / 다음 학습 */}
+        {comment && (
+          <div style={{ ...boxStyle, background: C.amberSoft, marginTop: 12 }}>
+            <span style={{ fontWeight: 800, color: C.amber }}>📝 선생님 한마디 </span>
+            <span style={{ whiteSpace: 'pre-wrap' }}>{comment}</span>
+          </div>
+        )}
+        {nextPlan && (
+          <div style={{ ...boxStyle, background: C.blueSoft, marginTop: comment ? 8 : 12 }}>
+            <span style={{ fontWeight: 800, color: C.blueDark }}>📌 다음 학습 </span>
+            <span style={{ whiteSpace: 'pre-wrap' }}>{nextPlan}</span>
+          </div>
+        )}
+
+        {/* 푸터 */}
+        <div style={{ marginTop: 14, paddingTop: 10, borderTop: `1px solid ${C.line}`,
+          display: 'flex', justifyContent: 'space-between', fontSize: 10.5, color: C.ink2 }}>
+          <span>깊은생각수학 학습관리 시스템 · 자동 생성</span>
+          <span>오늘도 열심히 했습니다 😊</span>
+        </div>
+      </div>
     </div>
   )
 }
