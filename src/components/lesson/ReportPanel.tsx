@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { toBlob } from 'html-to-image'
-import type { GradeResult, Grading, Student } from '../../types'
+import type { Grading, Student } from '../../types'
 import { useStore } from '../../lib/store'
 import { dateKey, monthKey, todayKey } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
@@ -99,12 +99,6 @@ export default function ReportPanel({ student }: { student: Student }) {
 
 // ── 공용 집계 ──────────────────────────────
 
-function summarize(results: GradeResult[]) {
-  const total = results.length
-  const correct = results.filter(r => r.correct).length
-  const unknown = results.filter(r => r.unknown).length
-  return { total, correct, unknown, score: pct(correct, total) }
-}
 
 function pct(correct: number, total: number): number {
   return total ? Math.round(correct / total * 100) : 0
@@ -158,16 +152,35 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     [gradings, student.id, date],
   )
 
-  // 교재/학습지 분리 집계
-  const bookRows = dayGradings.filter(isBook).map(g => ({
-    name: workbooks.find(w => w.id === g.workbookId)?.name ?? '교재',
-    range: g.pageFrom != null ? `${g.pageFrom}~${g.pageTo ?? g.pageFrom}p` : '—',
-    ...summarize(g.results),
-  }))
-  const sheetRows = dayGradings.filter(g => !isBook(g)).map(g => ({
-    name: worksheets.find(w => w.id === g.worksheetId)?.title ?? '학습지',
-    ...summarize(g.results),
-  }))
+  // 교재/학습지 분리 집계 — 같은 교재·학습지의 여러 채점(낱장)은 한 줄로 묶어 쪽 범위·점수 합산
+  const bookRows = useMemo(() => {
+    const m = new Map<string, { name: string; minP: number; maxP: number; total: number; correct: number; unknown: number }>()
+    for (const g of dayGradings.filter(isBook)) {
+      const name = workbooks.find(w => w.id === g.workbookId)?.name ?? '교재'
+      const e = m.get(name) ?? { name, minP: Infinity, maxP: -Infinity, total: 0, correct: 0, unknown: 0 }
+      if (g.pageFrom != null) { e.minP = Math.min(e.minP, g.pageFrom); e.maxP = Math.max(e.maxP, g.pageTo ?? g.pageFrom) }
+      e.total += g.results.length
+      e.correct += g.results.filter(r => r.correct).length
+      e.unknown += g.results.filter(r => r.unknown).length
+      m.set(name, e)
+    }
+    return [...m.values()].map(e => ({
+      name: e.name, range: e.minP <= e.maxP ? `${e.minP}~${e.maxP}p` : '—',
+      total: e.total, correct: e.correct, unknown: e.unknown, score: pct(e.correct, e.total),
+    }))
+  }, [dayGradings, workbooks])
+  const sheetRows = useMemo(() => {
+    const m = new Map<string, { name: string; total: number; correct: number; unknown: number }>()
+    for (const g of dayGradings.filter(g => !isBook(g))) {
+      const name = worksheets.find(w => w.id === g.worksheetId)?.title ?? '학습지'
+      const e = m.get(name) ?? { name, total: 0, correct: 0, unknown: 0 }
+      e.total += g.results.length
+      e.correct += g.results.filter(r => r.correct).length
+      e.unknown += g.results.filter(r => r.unknown).length
+      m.set(name, e)
+    }
+    return [...m.values()].map(e => ({ name: e.name, range: '', total: e.total, correct: e.correct, unknown: e.unknown, score: pct(e.correct, e.total) }))
+  }, [dayGradings, worksheets])
   const totalSolved = dayGradings.reduce((a, g) => a + g.results.length, 0)
   const totalCorrect = dayGradings.reduce((a, g) => a + g.results.filter(r => r.correct).length, 0)
   const totalUnknown = dayGradings.reduce((a, g) => a + g.results.filter(r => r.unknown).length, 0)
@@ -233,8 +246,22 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
 
   const dateKr = date.replaceAll('-', '. ') + '.'
 
-  // 선생님 한마디 자동 작성 — 오늘 데이터(단원·점수·증감·연속·취약유형) 기반 초안 생성 (편집 가능)
-  function draftComment() {
+  // 오늘 데이터를 AI에 넘길 컨텍스트 문자열
+  const aiContext = useMemo(() => {
+    const L: string[] = [`학생: ${student.name}${student.klass ? ` (${student.klass})` : ''} · ${dateKr}`]
+    if (coveredUnits.units.length) L.push('오늘 수업 단원: ' + coveredUnits.units.slice(0, 5).map(u => `${u.name}(${u.n}문항)`).join(', '))
+    for (const r of bookRows) L.push(`교재 ${r.name} ${r.range}: ${r.total}문항 중 ${r.correct}정답 (${r.score}점)${r.unknown ? ` 모름 ${r.unknown}` : ''}`)
+    for (const r of sheetRows) L.push(`학습지 ${r.name}: ${r.total}문항 중 ${r.correct}정답 (${r.score}점)`)
+    if (totalSolved) L.push(`오늘 합계: ${totalSolved}문항 중 ${totalCorrect}정답 (${overall}점)${totalUnknown ? ` 모름 ${totalUnknown}` : ''}`)
+    if (weekAvg != null && weekDelta != null) L.push(`지난 7일 평균 ${weekAvg}점 대비 ${weekDelta >= 0 ? '+' : ''}${weekDelta}점`)
+    if (streak >= 2) L.push(`연속 학습 ${streak}일째`)
+    if (wrongTypes.length) L.push('오늘 취약 유형: ' + wrongTypes.slice(0, 3).map(t => t.name).join(', ') + (drills.length ? ' (오답 드릴 학습지 생성함)' : ''))
+    if (nextPlan) L.push('다음 학습 계획: ' + nextPlan)
+    return L.join('\n')
+  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan])
+
+  // 오프라인/무키 폴백용 템플릿 초안 (API 미설정 시 사용)
+  const templateComment = useMemo(() => {
     const parts: string[] = []
     const unitNames = coveredUnits.units.slice(0, 2).map(u => u.name.split(' · ').pop()).filter(Boolean)
     if (unitNames.length) parts.push(`오늘은 ${unitNames.join(', ')} 단원을 학습했습니다.`)
@@ -247,9 +274,34 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     else if (weekDelta != null && weekDelta <= -5) parts.push(`지난 7일 평균보다 ${Math.abs(weekDelta)}점 내려가 다음 시간에 집중 보완하겠습니다.`)
     if (wrongTypes.length) parts.push(`「${wrongTypes[0].name}」 유형은 ${drills.length ? '오답 드릴 학습지로 한 번 더 다지겠습니다.' : '다음 시간에 복습하겠습니다.'}`)
     if (streak >= 3) parts.push(`${streak}일 연속 학습 중입니다. 꾸준함이 큰 힘이 됩니다!`)
-    if (!parts.length) parts.push('오늘 채점 기록이 없어 수업 내용을 직접 적어주세요.')
-    const text = parts.join(' ')
-    setComment(text); persist(text, nextPlan)
+    return parts.join(' ')
+  }, [coveredUnits, totalSolved, totalCorrect, overall, weekDelta, wrongTypes, drills.length, streak])
+
+  // 선생님 한마디 AI — 작성(generate)/다듬기(polish). 서버리스(/api/comment) 호출, 실패 시 템플릿 폴백.
+  const [aiBusy, setAiBusy] = useState<'' | 'generate' | 'polish'>('')
+  const [aiNote, setAiNote] = useState('')
+  async function aiComment(mode: 'generate' | 'polish') {
+    if (mode === 'polish' && !comment.trim()) { setAiNote('다듬을 내용을 먼저 입력하세요.'); return }
+    setAiBusy(mode); setAiNote('')
+    try {
+      const r = await fetch('/api/comment', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mode, context: aiContext, draft: comment }),
+      })
+      if (!r.ok) {
+        const e = await r.json().catch(() => ({} as { error?: string }))
+        if (r.status === 503) {   // 키 미설정 → 템플릿 폴백(generate) / 안내(polish)
+          if (mode === 'generate' && templateComment) { setComment(templateComment); persist(templateComment, nextPlan); setAiNote('AI 미설정 — 기본 문구로 작성(설정하면 더 자연스러워집니다).') }
+          else setAiNote('AI 다듬기는 서버 설정(ANTHROPIC_API_KEY) 후 사용할 수 있습니다.')
+        } else setAiNote('AI 오류: ' + (e.error ?? r.status))
+        return
+      }
+      const { text } = await r.json() as { text: string }
+      setComment(text); persist(text, nextPlan)
+    } catch {
+      if (mode === 'generate' && templateComment) { setComment(templateComment); persist(templateComment, nextPlan); setAiNote('네트워크 오류 — 기본 문구로 작성.') }
+      else setAiNote('네트워크 오류로 AI 호출에 실패했습니다.')
+    } finally { setAiBusy('') }
   }
 
   // 단톡방 복사용 텍스트 (교재/학습지 섹션 분리, 모름 표기)
@@ -274,16 +326,16 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       wrongTypes.length ? '🔁 오늘 약했던 유형' : null,
       wrongTypes.length ? `· ${wrongTypes.map(t => t.name).join(', ')}` : null,
       wrongTypes.length ? (drills.length ? '→ 오답 드릴 학습지로 복습 예정' : '→ 다음 시간 복습 예정') : null,
-      comment ? '' : null,
-      comment ? '📝 선생님 한마디' : null,
-      comment || null,
+      (comment.trim() || templateComment) ? '' : null,
+      (comment.trim() || templateComment) ? '📝 선생님 한마디' : null,
+      (comment.trim() || templateComment) || null,
       nextPlan ? '' : null,
       nextPlan ? `📌 다음 학습: ${nextPlan}` : null,
       '',
       '오늘도 열심히 했습니다. 감사합니다 😊',
     ]
     return lines.filter((l): l is string => l !== null).join('\n')
-  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, nextPlan])
+  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan])
 
   // 이미지 카드 복사/저장
   const cardRef = useRef<HTMLDivElement>(null)
@@ -349,18 +401,26 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
 
       <div className="no-print mb-5 grid gap-3 sm:grid-cols-2">
         <div className="grid gap-1 text-sm font-bold">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-1">
             <span>선생님 한마디 <span className="font-normal text-ink2">(자동 저장)</span></span>
-            <button type="button" onClick={draftComment}
-              className="rounded-md border border-amber/60 px-2.5 py-1 text-xs font-bold text-amber hover:bg-amber/10"
-              title="오늘 데이터(단원·점수·증감·연속학습·취약유형)로 초안을 만들어 줍니다. 생성 후 자유롭게 수정하세요.">
-              ✨ 자동 작성
-            </button>
+            <div className="flex gap-1">
+              <button type="button" onClick={() => aiComment('generate')} disabled={!!aiBusy}
+                className="rounded-md border border-amber/60 px-2.5 py-1 text-xs font-bold text-amber hover:bg-amber/10 disabled:opacity-50"
+                title="오늘 데이터로 선생님 한마디를 AI가 작성합니다.">
+                {aiBusy === 'generate' ? '작성 중…' : '✨ AI 작성'}
+              </button>
+              <button type="button" onClick={() => aiComment('polish')} disabled={!!aiBusy}
+                className="rounded-md border border-pine/60 px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft disabled:opacity-50"
+                title="직접 쓴 문장을 AI가 자연스럽고 정중하게 다듬어 줍니다(내용은 유지).">
+                {aiBusy === 'polish' ? '다듬는 중…' : '🪄 AI 다듬기'}
+              </button>
+            </div>
           </div>
           <textarea value={comment}
             onChange={e => { setComment(e.target.value); persist(e.target.value, nextPlan) }} rows={3}
-            placeholder="직접 입력하거나 [✨ 자동 작성]으로 초안을 만들어 수정하세요. 보고지·단톡방 텍스트에 들어갑니다."
+            placeholder="직접 입력하거나 [✨ AI 작성]으로 초안을 만들 수 있습니다. 직접 쓴 뒤 [🪄 AI 다듬기]로 문장을 정돈하세요. 비워두면 카드엔 기본 문구가 표시됩니다."
             className="rounded-lg border border-line px-3 py-2 font-normal" />
+          {aiNote && <span className="text-xs font-normal text-clay">{aiNote}</span>}
         </div>
         <label className="grid gap-1 text-sm font-bold">다음 학습 계획 <span className="font-normal text-ink2">(자동 저장)</span>
           <textarea value={nextPlan}
@@ -378,7 +438,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
             <ReportCard student={student} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
               weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
-              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={comment} nextPlan={nextPlan} />
+              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={comment.trim() || templateComment} nextPlan={nextPlan} />
           </div>
         </div>
       </div>
@@ -457,7 +517,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
           )}
         </Section>
 
-        {comment && <Section title="📝 선생님 한마디"><p className="whitespace-pre-wrap text-sm leading-relaxed">{comment}</p></Section>}
+        {(comment.trim() || templateComment) && <Section title="📝 선생님 한마디"><p className="whitespace-pre-wrap text-sm leading-relaxed">{comment.trim() || templateComment}</p></Section>}
         {nextPlan && <Section title="📌 다음 학습 계획"><p className="whitespace-pre-wrap text-sm leading-relaxed">{nextPlan}</p></Section>}
 
         <p className="mt-6 text-center text-sm text-ink2">오늘도 열심히 했습니다. 감사합니다 😊</p>
