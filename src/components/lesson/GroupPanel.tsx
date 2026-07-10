@@ -1,5 +1,6 @@
-import { Fragment, useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { fetchLive, pushNote, type LiveSolve } from '../../lib/live'
 import type { DailyConfig, Diff, Grading, Student, Worksheet } from '../../types'
 import { DIFFS, DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
@@ -14,10 +15,11 @@ import { ConfigModal } from './TodayPanel'
 // 탭: 학습내역(진도/숙제/학습통계/강의) · 오늘의 학습(전체학생) · 유형분석 · 학습지(목록/현황보드) · 보고서(저장 목록)
 // 실시간 모니터링([모니터링] 컬럼)은 별도 인프라 과제로 보류.
 
-type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'solvefb' | 'report'
+type Tab = 'history' | 'today' | 'live' | 'analysis' | 'worksheet' | 'solvefb' | 'report'
 const TABS: { key: Tab; label: string }[] = [
   { key: 'history', label: '학습내역' },
   { key: 'today', label: '오늘의 학습' },
+  { key: 'live', label: '실시간 풀이' },
   { key: 'analysis', label: '유형분석' },
   { key: 'worksheet', label: '학습지' },
   { key: 'solvefb', label: '풀이피드백' },
@@ -70,6 +72,7 @@ export default function GroupPanel({ label, students }: { label: string; student
       </div>
       {tab === 'history' && <GroupHistory label={label} students={students} />}
       {tab === 'today' && <GroupToday label={label} students={students} />}
+      {tab === 'live' && <GroupLiveMonitor students={students} />}
       {tab === 'analysis' && <GroupAnalysis students={students} />}
       {tab === 'worksheet' && <GroupWorksheets label={label} students={students} />}
       {tab === 'solvefb' && <GroupSolveFeedback students={students} />}
@@ -776,6 +779,158 @@ function GroupSolveFeedback({ students }: { students: Student[] }) {
           </div>
         </>
       )}
+    </div>
+  )
+}
+
+/* ═══════════ 실시간 풀이 모니터링 (여러 학생 한 화면 + 첨삭) ═══════════ */
+
+function agoText(at: number, _tick: number): string {
+  const s = Math.max(0, Math.round((Date.now() - at) / 1000))
+  if (s < 60) return `${s}초 전`
+  const m = Math.floor(s / 60)
+  if (m < 60) return `${m}분 전`
+  return `${Math.floor(m / 60)}시간 전`
+}
+
+function GroupLiveMonitor({ students }: { students: Student[] }) {
+  const ids = useMemo(() => new Set(students.map(s => s.id)), [students])
+  const [items, setItems] = useState<LiveSolve[]>([])
+  const [tick, setTick] = useState(0)          // n초 전 표기 갱신
+  const [target, setTarget] = useState<LiveSolve | null>(null)
+
+  // 3초 간격 폴링 — 반 학생들의 최신 풀이 스냅샷
+  useEffect(() => {
+    let alive = true
+    const load = async () => {
+      const all = await fetchLive()
+      if (alive) setItems(all.filter(v => ids.has(v.studentId)).sort((a, b) => b.at - a.at))
+    }
+    load()
+    const t = setInterval(() => { load(); setTick(x => x + 1) }, 3000)
+    return () => { alive = false; clearInterval(t) }
+  }, [ids])
+
+  const nameOf = useMemo(() => new Map(students.map(s => [s.id, s.name])), [students])
+
+  return (
+    <div>
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+        <span className="font-bold">실시간 풀이 <b className="text-pine">{items.length}</b>명</span>
+        <span className="rounded-md bg-pine-soft px-2 py-1 text-xs font-bold text-pine-dark">3초마다 자동 갱신</span>
+        <span className="text-xs text-ink2">풀이를 누르면 확대·빨간펜 첨삭을 보낼 수 있어요</span>
+      </div>
+
+      {items.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+          지금 풀이 중인 학생이 없습니다.<br />
+          학생이 학생앱에서 <b>‘✏️ 풀이 쓰고 AI 피드백 받기’</b>에 필기를 시작하면 여기 실시간으로 나타납니다.
+        </div>
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {items.map(v => {
+            const fresh = Date.now() - v.at < 10_000
+            return (
+              <button key={v.studentId} onClick={() => setTarget(v)}
+                className={`rounded-2xl border bg-white p-3 text-left transition hover:border-pine ${fresh ? 'border-pine' : 'border-line'}`}>
+                <div className="mb-1.5 flex items-center gap-2">
+                  <b className="text-sm">{nameOf.get(v.studentId) ?? v.name}</b>
+                  {fresh && <span className="flex items-center gap-1 rounded bg-pine-soft px-1.5 py-0.5 text-[10px] font-bold text-pine-dark"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-pine" />쓰는 중</span>}
+                  <div className="grow" />
+                  <span className="text-[11px] text-ink2">{agoText(v.at, tick)}</span>
+                </div>
+                <img src={v.img} alt={`${v.name} 풀이`} className="w-full rounded-lg border border-line/60 bg-white" />
+                <div className="mt-1 truncate text-[11px] text-ink2">{v.label}</div>
+              </button>
+            )
+          })}
+        </div>
+      )}
+
+      {target && <AnnotateModal item={target} onClose={() => setTarget(null)} />}
+    </div>
+  )
+}
+
+// 첨삭 모달 — 학생 풀이 위에 빨간펜 + 메시지 → 학생앱으로 실시간 전송
+function AnnotateModal({ item, onClose }: { item: LiveSolve; onClose: () => void }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const drawing = useRef(false)
+  const marked = useRef(false)
+  const [text, setText] = useState('')
+  const [state, setState] = useState<'idle' | 'sending' | 'sent'>('idle')
+
+  // 학생 스냅샷을 캔버스 바탕에 깔기 (다시 그리기용으로도 사용)
+  function drawBase(img: HTMLImageElement) {
+    const c = canvasRef.current; if (!c) return
+    c.width = img.naturalWidth * 2; c.height = img.naturalHeight * 2   // 2배 해상도로 선명하게
+    const g = c.getContext('2d')!
+    g.fillStyle = '#ffffff'; g.fillRect(0, 0, c.width, c.height)
+    g.drawImage(img, 0, 0, c.width, c.height)
+  }
+  useEffect(() => {
+    const img = new Image()
+    img.onload = () => drawBase(img)
+    img.src = item.img
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [item.img])
+
+  function xy(e: React.PointerEvent) {
+    const c = canvasRef.current!; const r = c.getBoundingClientRect()
+    return { x: (e.clientX - r.left) * (c.width / r.width), y: (e.clientY - r.top) * (c.height / r.height) }
+  }
+  function down(e: React.PointerEvent) {
+    e.preventDefault(); const g = canvasRef.current?.getContext('2d'); if (!g) return
+    drawing.current = true; marked.current = true
+    g.lineWidth = 5; g.lineCap = 'round'; g.strokeStyle = '#e0342f'
+    const { x, y } = xy(e); g.beginPath(); g.moveTo(x, y)
+    canvasRef.current!.setPointerCapture(e.pointerId)
+  }
+  function move(e: React.PointerEvent) {
+    if (!drawing.current) return
+    const g = canvasRef.current?.getContext('2d'); if (!g) return
+    const { x, y } = xy(e); g.lineTo(x, y); g.stroke()
+  }
+  function up() { drawing.current = false }
+  function resetPen() {
+    marked.current = false
+    const img = new Image(); img.onload = () => drawBase(img); img.src = item.img
+  }
+
+  async function send() {
+    if (!text.trim() && !marked.current) return
+    setState('sending')
+    const img = marked.current && canvasRef.current ? canvasRef.current.toDataURL('image/jpeg', 0.6) : undefined
+    await pushNote({ studentId: item.studentId, text: text.trim(), img, at: Date.now() })
+    setState('sent')
+    setTimeout(onClose, 900)
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white p-5" onClick={e => e.stopPropagation()}>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-lg font-black">{item.name} <span className="text-sm font-bold text-ink2">· {item.label}</span></h2>
+          <button onClick={onClose} aria-label="닫기" className="text-xl leading-none text-ink2 hover:text-ink">✕</button>
+        </div>
+        <p className="mb-2 text-xs text-ink2">풀이 위에 <b className="text-clay">빨간펜</b>으로 표시하고 메시지를 쓰면 학생 태블릿에 바로 전달됩니다.</p>
+        <canvas ref={canvasRef}
+          onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerLeave={up}
+          className="w-full touch-none rounded-xl border border-line bg-white" />
+        <div className="mt-1 text-right">
+          <button onClick={resetPen} className="text-xs text-ink2 underline">빨간펜 지우기</button>
+        </div>
+        <div className="mt-2 flex gap-2">
+          <input value={text} onChange={e => setText(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter') send() }}
+            placeholder="학생에게 보낼 한마디 (예: 이항할 때 부호 확인!)"
+            className="grow rounded-lg border border-line px-3 py-2 text-sm" />
+          <button onClick={send} disabled={state !== 'idle'}
+            className="shrink-0 rounded-lg bg-clay px-5 py-2 text-sm font-bold text-white hover:brightness-105 disabled:opacity-60">
+            {state === 'sending' ? '보내는 중…' : state === 'sent' ? '✓ 전달됨' : '📤 첨삭 보내기'}
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

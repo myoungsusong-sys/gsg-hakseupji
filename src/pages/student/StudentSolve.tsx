@@ -10,6 +10,7 @@ import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
 import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer } from './common'
+import { fetchNote, clearNote, type TeacherNote } from '../../lib/live'
 
 // ── 학습지 풀기 — 문항별 답 입력 + 임시저장 + 제출(자동채점) ────
 // · 답이 바뀔 때마다 localStorage 임시저장 (stu-draft-<wsId>) → 새로고침해도 유지
@@ -47,6 +48,17 @@ export default function StudentSolve() {
     setAnswers(d?.answers ?? {})
     setSavedAt(d?.at ?? null)
   }, [wsId])
+
+  // 선생님 실시간 첨삭 수신 — 4초마다 확인, 새 첨삭이 오면 배너로 표시 ([확인]하면 지움)
+  const [note, setNote] = useState<TeacherNote | null>(null)
+  useEffect(() => {
+    let alive = true
+    const poll = async () => { const n = await fetchNote(me.id); if (alive) setNote(n) }
+    poll()
+    const t = setInterval(poll, 4000)
+    return () => { alive = false; clearInterval(t) }
+  }, [me.id])
+  function ackNote() { clearNote(me.id); setNote(null) }
 
   if (!ws || !mine) return <Navigate to="/student/worksheets" replace />
 
@@ -93,6 +105,20 @@ export default function StudentSolve() {
         </div>
       </div>
 
+      {/* 선생님 실시간 첨삭 배너 — 빨간펜 이미지 + 한마디 */}
+      {note && (note.text || note.img) && (
+        <div className="mb-5 rounded-2xl border-2 border-clay bg-red-50 p-4">
+          <div className="mb-2 flex items-center gap-2">
+            <b className="text-clay">🖍 선생님 첨삭이 도착했어요!</b>
+            <div className="grow" />
+            <button onClick={ackNote}
+              className="rounded-lg bg-clay px-4 py-1.5 text-xs font-bold text-white hover:brightness-105">확인했어요</button>
+          </div>
+          {note.text && <p className="mb-2 whitespace-pre-wrap text-sm font-semibold leading-relaxed">{note.text}</p>}
+          {note.img && <img src={note.img} alt="선생님 첨삭" className="w-full max-w-xl rounded-xl border border-clay/40 bg-white" />}
+        </div>
+      )}
+
       {list.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
           문제를 불러오는 중이에요… 잠시 후에도 나오지 않으면 선생님께 문의해주세요.
@@ -113,7 +139,7 @@ export default function StudentSolve() {
               </div>
               <div className="border-t border-line/60 pt-3">
                 <AnswerInput p={p} value={answers[p.id] ?? ''} onChange={v => setAnswer(p.id, v)} />
-                {(cfg.solveFeedback ?? true) && <SolveFeedback studentId={me.id} worksheetId={ws.id} problem={p} />}
+                {(cfg.solveFeedback ?? true) && <SolveFeedback studentId={me.id} studentName={me.name} worksheetId={ws.id} label={`${ws.title} · ${i + 1}번`} problem={p} />}
               </div>
               {/* 채점 전 공개 (선생님 설정) — 정답/해설/풀이영상 */}
               {(cfg.showAnswerBefore || cfg.showSolutionBefore || (cfg.showVideoBefore && p.videoUrl)) && (

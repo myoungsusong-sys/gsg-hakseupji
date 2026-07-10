@@ -1,11 +1,13 @@
 import { useMemo, useRef, useState } from 'react'
 import { useStore } from '../../lib/store'
+import { pushLive } from '../../lib/live'
 import type { Problem } from '../../types'
 
 // 학생앱: 문항별 "풀이 쓰고 AI 피드백 받기" (사진 업로드 + 직접 필기 둘 다)
 // 정답을 알려주지 않고 풀이 과정을 채점/힌트. 서버리스 /api/solve-feedback (Claude 비전) 호출.
-export default function SolveFeedback({ studentId, worksheetId, problem }: {
-  studentId: string; worksheetId: string; problem: Problem
+// 필기 중에는 축소 스냅샷을 실시간 모니터링(pushLive)으로 올려 선생님이 여러 학생을 한 화면에서 본다.
+export default function SolveFeedback({ studentId, studentName, worksheetId, label, problem }: {
+  studentId: string; studentName: string; worksheetId: string; label: string; problem: Problem
 }) {
   const { solveFeedbacks, saveSolveFeedback } = useStore()
   const fbId = `${studentId}_${worksheetId}_${problem.id}`
@@ -47,7 +49,23 @@ export default function SolveFeedback({ studentId, worksheetId, problem }: {
     const g = ctx(); if (!g) return
     const { x, y } = xy(e); g.lineTo(x, y); g.stroke()
   }
-  function up() { drawing.current = false }
+  // 실시간 모니터링 스냅샷 — 축소 JPEG (선생님 화면 부하↓)
+  const lastPush = useRef(0)
+  function liveSnapshot(): string {
+    const c = canvasRef.current; if (!c) return ''
+    const w = 360, h = Math.round(360 * c.height / c.width)
+    const off = document.createElement('canvas'); off.width = w; off.height = h
+    const g = off.getContext('2d')!; g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h); g.drawImage(c, 0, 0, w, h)
+    return off.toDataURL('image/jpeg', 0.5)
+  }
+  function pushLiveThrottled() {
+    const now = Date.now()
+    if (now - lastPush.current < 1500) return   // 최대 1.5초에 1번
+    lastPush.current = now
+    const img = liveSnapshot(); if (!img) return
+    pushLive({ studentId, name: studentName, label, img, at: now })
+  }
+  function up() { drawing.current = false; if (dirty.current) pushLiveThrottled() }
   function clearCanvas() {
     const c = canvasRef.current, g = ctx(); if (!c || !g) return
     g.clearRect(0, 0, c.width, c.height); dirty.current = false

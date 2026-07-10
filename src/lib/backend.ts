@@ -150,12 +150,17 @@ export const cloud = {
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)
+  // ⚠️ 실시간 풀이 모니터링 스냅샷(settings id=`live_*`)은 앱 전체 리로드를 유발하지 않도록 무시한다.
   subscribe(onChange: () => void) {
     const sb = supabase
     if (!sb) return () => {}
     const ch = sb.channel('hj-sync')
     for (const t of ALL_TABLES)
-      ch.on('postgres_changes', { event: '*', schema: 'public', table: t }, onChange)
+      ch.on('postgres_changes', { event: '*', schema: 'public', table: t }, (payload: any) => {
+        const id = payload?.new?.id ?? payload?.old?.id
+        if (t === T.settings && typeof id === 'string' && id.startsWith('live_')) return
+        onChange()
+      })
     ch.subscribe()
     return () => { sb.removeChannel(ch) }
   },
