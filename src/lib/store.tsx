@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -32,6 +32,7 @@ interface Persisted {
   myBooks: MyBook[]
   uploads: UploadRec[]
   sheetTemplates: SheetTemplate[]
+  lecturePlans: LecturePlan[]
 }
 
 const EMPTY: Persisted = {
@@ -46,6 +47,7 @@ const EMPTY: Persisted = {
   myBooks: [],
   uploads: [],
   sheetTemplates: [],
+  lecturePlans: [],
 }
 
 interface Store extends Persisted {
@@ -76,6 +78,8 @@ interface Store extends Persisted {
   saveGrading: (g: Omit<Grading, 'id'>) => void
   upsertGrading: (g: Grading) => void   // 같은 id면 교체 — 실시간 자동 저장용
   saveDailyNote: (n: DailyNote) => void
+  setLecturePlan: (p: LecturePlan) => void          // 진도표 저장/갱신 (학생×교재 1개)
+  removeLecturePlan: (id: string) => void
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
@@ -144,6 +148,7 @@ function fromCloud(r: CloudData): Persisted {
     myBooks: r.myBooks ?? [],
     uploads: r.uploads ?? [],
     sheetTemplates: r.sheetTemplates ?? [],
+    lecturePlans: r.lecturePlans ?? [],
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -156,6 +161,7 @@ function toCloud(s: Persisted): CloudData {
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
+    lecturePlans: s.lecturePlans,
   }
 }
 
@@ -473,6 +479,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     saveDailyNote: n => {
       set(s => ({ ...s, dailyNotes: [...s.dailyNotes.filter(x => !(x.studentId === n.studentId && x.date === n.date)), n] }))
       cloud.upsert(cloud.T.dailyNotes, noteId(n), n)
+    },
+    setLecturePlan: p => {
+      const next = [...stateRef.current.lecturePlans.filter(x => x.id !== p.id), p]
+      set(s => ({ ...s, lecturePlans: next })); cloud.setSetting('lecturePlans', next)
+    },
+    removeLecturePlan: id => {
+      const next = stateRef.current.lecturePlans.filter(x => x.id !== id)
+      set(s => ({ ...s, lecturePlans: next })); cloud.setSetting('lecturePlans', next)
     },
   }
 

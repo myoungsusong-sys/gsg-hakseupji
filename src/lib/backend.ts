@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -38,6 +38,7 @@ export interface CloudData {
   myBooks: MyBook[]                            // 내 교재 (settings 'myBooks')
   uploads: UploadRec[]                         // 파일 업로드 대기 목록 (settings 'uploads')
   sheetTemplates: SheetTemplate[]              // 사용자 디자인 템플릿 (settings 'sheetTemplates')
+  lecturePlans: LecturePlan[]                  // 강의 진도표 (settings 'lecturePlans')
 }
 
 export function noteId(n: DailyNote): string {
@@ -85,6 +86,7 @@ export async function loadAll(): Promise<CloudData | null> {
     myBooks: (settingsMap.get('myBooks') as MyBook[]) ?? [],
     uploads: (settingsMap.get('uploads') as UploadRec[]) ?? [],
     sheetTemplates: (settingsMap.get('sheetTemplates') as SheetTemplate[]) ?? [],
+    lecturePlans: (settingsMap.get('lecturePlans') as LecturePlan[]) ?? [],
   }
 }
 
@@ -141,6 +143,7 @@ export const cloud = {
       local.myBooks.length ? this.setSetting('myBooks', local.myBooks) : Promise.resolve(),
       local.uploads.length ? this.setSetting('uploads', local.uploads) : Promise.resolve(),
       local.sheetTemplates.length ? this.setSetting('sheetTemplates', local.sheetTemplates) : Promise.resolve(),
+      local.lecturePlans.length ? this.setSetting('lecturePlans', local.lecturePlans) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

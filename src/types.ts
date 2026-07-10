@@ -283,6 +283,25 @@ export interface AcademyProfile {
   contactEmail?: string   // 대표 이메일
 }
 
+// 강의 진도표 — 학생×교재 1개. 수업일별로 진도(쪽 범위·단원)를 배분한 계획
+export interface PlanSession {
+  date: string          // YYYY-MM-DD 수업일
+  pageFrom: number
+  pageTo: number
+  unit: string          // 대표 단원명 (여러 단원이면 "…외 N")
+  done?: boolean        // 진행 완료 체크
+  note?: string         // 수업 메모(선택)
+}
+export interface LecturePlan {
+  id: string            // `${studentId}_${workbookId}`
+  studentId: string
+  workbookId: string
+  startDate: string     // YYYY-MM-DD
+  endDate: string       // YYYY-MM-DD
+  sessions: PlanSession[]
+  updatedAt: string
+}
+
 // 일일 보고지 메모 (학생×날짜)
 export interface DailyNote {
   studentId: string

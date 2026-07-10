@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useStore } from '../lib/store'
 import type { Student } from '../types'
 import GradePanel from '../components/lesson/GradePanel'
+import LecturePlanPanel from '../components/lesson/LecturePlanPanel'
 import WorksheetPanel from '../components/lesson/WorksheetPanel'
 import HistoryPanel from '../components/lesson/HistoryPanel'
 import TodayPanel from '../components/lesson/TodayPanel'
@@ -10,13 +11,14 @@ import ReportPanel from '../components/lesson/ReportPanel'
 import GroupPanel from '../components/lesson/GroupPanel'
 
 // 매쓰플랫과 동일한 6탭. 각 탭 구현은 components/lesson/* 모듈 (리마운트로 state 유실 방지)
-type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'material' | 'report'
+type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'material' | 'plan' | 'report'
 const TABS: { key: Tab; label: string }[] = [
   { key: 'history', label: '학습내역' },
   { key: 'today', label: '오늘의 학습' },
   { key: 'analysis', label: '유형분석' },
   { key: 'worksheet', label: '학습지' },
   { key: 'material', label: '교재' },
+  { key: 'plan', label: '진도표' },
   { key: 'report', label: '보고서' },
 ]
 
@@ -179,6 +181,7 @@ export default function Lesson() {
             {tab === 'analysis' && <AnalysisPanel key={student.id} student={student} />}
             {tab === 'worksheet' && <WorksheetPanel key={student.id} student={student} />}
             {tab === 'material' && <GradePanel key={student.id} student={student} />}
+            {tab === 'plan' && <LecturePlanPanel key={student.id} student={student} />}
             {tab === 'report' && <ReportPanel key={student.id} student={student} />}
           </>
         )}
