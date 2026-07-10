@@ -315,7 +315,7 @@ export default function TodayPanel({ student }: { student: Student }) {
                     <td className="py-2 text-clay">{r.solved ? r.wrong : '—'}</td>
                     <td className="py-2 text-ink2">{sec > 0 ? fmtHM(sec) : '—'}</td>
                     <td className="py-2">
-                      <button onClick={() => window.open('/student', '_blank')} title="학생앱 화면 열기"
+                      <button onClick={() => window.open(`${location.origin}/#/student`, '_blank')} title="학생앱 화면 열기"
                         className="rounded-lg border border-line px-2 py-0.5 text-[11px] font-semibold text-ink2 hover:bg-paper2">보기</button>
                     </td>
                     <td className="max-w-[180px] truncate py-2 pr-2 text-ink2">{r.titles.join(', ')}</td>

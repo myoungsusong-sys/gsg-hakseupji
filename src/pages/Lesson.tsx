@@ -97,7 +97,7 @@ export default function Lesson() {
             {groupName ? `${groupName} 수업` : student ? `${student.name} 학생 수업` : '수업'}
           </div>
           {/* [학생앱으로 이동하기] (매쓰플랫 패널 헤더 버튼 — 새 탭으로 학생앱 열기) */}
-          <button onClick={() => window.open('/student', '_blank')}
+          <button onClick={() => window.open(`${location.origin}/#/student`, '_blank')}
             className="mb-2.5 w-full rounded-lg border border-line py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-pine-dark">
             학생앱으로 이동하기 ↗
           </button>

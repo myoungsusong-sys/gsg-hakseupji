@@ -31,11 +31,13 @@ function AnswerLabel({ item }: { item: WBItem }) {
 }
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
-// 클릭 순환: 미채점 → ✕(오답) → ?(모름) → ○(정답) → 미채점
+// 클릭 순환: 미채점 → ✕(오답) → ?(모름) → ○(정답) → ✕(오답) … (한 번 마킹하면 3상태 순환)
+//   ★ '전체 정답' 후 틀린 것만 한 번 클릭하면 바로 오답이 되도록 정답→오답 (미채점 경유 없음).
+//   개별 미채점 해제가 필요하면 [전체 취소]로 범위를 초기화한다.
 // ⚠️ 저장은 "마킹된 문항만" 기록한다 — 미채점 문항을 정답으로 간주해 통째로 저장하면
 //    진도·통계가 오염된다(2026-07-08 실사 P0). 미채점 = 기록 없음.
 type Mark = '정답' | '오답' | '모름'
-const NEXT: Record<Mark, Mark | null> = { 오답: '모름', 모름: '정답', 정답: null }
+const NEXT: Record<Mark, Mark> = { 오답: '모름', 모름: '정답', 정답: '오답' }
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
 const MARK_CLASS: Record<Mark, string> = { 정답: 'text-pine', 오답: 'text-clay', 모름: 'text-amber' }
 // 행 배경: 정답=연파랑 · 오답=연분홍 · 모름=연노랑 · 미채점=흰색 (매쓰플랫 동일)
@@ -272,9 +274,7 @@ export default function GradePanel({ student }: { student: Student }) {
     applyMarks(prev => {
       const cur = prev[id]
       const next = { ...prev }
-      if (!cur) next[id] = '오답'                    // 미채점 → 첫 클릭은 오답 (오답 위주 채점)
-      else if (NEXT[cur]) next[id] = NEXT[cur]!
-      else delete next[id]                           // 정답 → 미채점 (마킹 해제)
+      next[id] = cur ? NEXT[cur] : '오답'             // 미채점→오답, 이후 오답→모름→정답→오답 순환(정답도 한 번에 오답)
       return next
     })
   }
