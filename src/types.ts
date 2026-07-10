@@ -177,6 +177,9 @@ export interface Student {
   email?: string         // 학생 이메일
   address?: string       // 집 주소
   homePhone?: string     // 집 전화
+  classDays?: string[]   // 수업 요일 (예: ['월','수','금']) — 다음 수업일 자동 계산에 사용
+  arriveTime?: string    // 기본 등원 시간 HH:MM (등원 체크 시 기본값)
+  leaveTime?: string     // 기본 하원 시간 HH:MM
   loginId?: string       // 학생앱 로그인 아이디 (없으면 attendNo 사용)
   authEmail?: string     // 학생앱 Supabase 계정 이메일 (계정 생성 스크립트가 기록)
   siblingIds?: string[]  // 형제 연결 — 학부모 연락처를 공유하는 형제 학생 id (상호 기록)
@@ -286,6 +289,9 @@ export interface DailyNote {
   date: string          // YYYY-MM-DD
   comment: string       // 선생님 한마디
   nextPlan: string      // 다음 학습 계획
+  checkIn?: string       // 등원 시간 HH:MM — 버튼으로 체크했을 때만 기록(없으면 보고서 미표시)
+  checkOut?: string      // 하원 시간 HH:MM
+  makeupDate?: string    // 보강일 YYYY-MM-DD — 있으면 '다음 수업'을 이 날짜로 우선 반영(수업 변경)
 }
 
 export type ThemeKey = 'pine' | 'amber' | 'navy' | 'plum' | 'slate' | 'blue' | 'teal' | 'coral'

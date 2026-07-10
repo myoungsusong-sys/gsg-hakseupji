@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { typeName, typeUnitName } from '../../data/curriculum'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { typeUnitName } from '../../data/curriculum'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import type { GradeResult, Grading, Student, WBItem } from '../../types'
@@ -11,23 +11,23 @@ import StudentBookDialog from './StudentBookDialog'
 
 // 정답 표시 (매쓰플랫 채점판 동일): 객관식 숫자→①~⑤, 수식(LaTeX)→KaTeX 렌더, 그 외 원문
 const CIRCLED = ['①', '②', '③', '④', '⑤']
+// 정답은 크고 진하게(선생님이 한눈에 보이게) — "정답" 라벨만 작게, 값은 굵고 크게
 function AnswerLabel({ item }: { item: WBItem }) {
   const a = item.answer
   if (!a) return null
-  if (['.', '-'].includes(a.trim())) {
-    return <div className="text-[11px] text-ink2">정답 <span className="text-ink2/70">풀이참조</span></div>
-  }
+  const wrap = (v: ReactNode, faded = false) => (
+    <div className="mt-0.5 text-xs text-ink2">정답 <span className={faded ? 'text-ink2/70' : 'text-[15px] font-extrabold text-ink'}>{v}</span></div>
+  )
+  if (['.', '-'].includes(a.trim())) return wrap('풀이참조', true)
   if (item.kind === '객관식') {
     const t = a.split(',').map(s => {
       const n = Number(s.trim())
       return n >= 1 && n <= 5 ? CIRCLED[n - 1] : s.trim()
     }).join(',')
-    return <div className="text-[11px] text-ink2">정답 {t}</div>
+    return wrap(t)
   }
-  if (/[\\{}^_]/.test(a)) {
-    return <div className="text-[11px] text-ink2">정답 <MathText text={`$${a}$`} /></div>
-  }
-  return <div className="text-[11px] text-ink2">정답 {a}</div>
+  if (/[\\{}^_]/.test(a)) return wrap(<MathText text={`$${a}$`} />)
+  return wrap(a)
 }
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
@@ -51,7 +51,7 @@ const CARD_UNMARKED = 'border-line bg-white hover:border-pine'
 // 다른 학생 갔다 돌아와도 마지막으로 보던 교재·쪽 범위가 그대로 복원되도록
 // 학생별·교재별로 저장한다(세션 넘어 새로고침에도 유지되게 localStorage).
 const LV_KEY = 'gsg-grade-lastview-v1'
-type LVEntry = { wb?: string | null; pages?: Record<string, [number, number]> }
+type LVEntry = { wb?: string | null; pages?: Record<string, [number, number]>; scroll?: Record<string, number> }
 let LV_CACHE: Record<string, LVEntry> | null = null
 function lvAll(): Record<string, LVEntry> {
   if (!LV_CACHE) { try { LV_CACHE = JSON.parse(localStorage.getItem(LV_KEY) || '{}') } catch { LV_CACHE = {} } }
@@ -63,6 +63,10 @@ function lvSetWb(sid: string, wb: string | null) { const a = lvAll(); a[sid] = {
 function lvSetPages(sid: string, wb: string, from: number, to: number) {
   const a = lvAll(); const e = a[sid] ?? {}
   a[sid] = { ...e, pages: { ...(e.pages ?? {}), [wb]: [from, to] } }; lvSaveAll()
+}
+function lvSetScroll(sid: string, wb: string, top: number) {
+  const a = lvAll(); const e = a[sid] ?? {}
+  a[sid] = { ...e, scroll: { ...(e.scroll ?? {}), [wb]: top } }; lvSaveAll()
 }
 
 export default function GradePanel({ student }: { student: Student }) {
@@ -77,6 +81,9 @@ export default function GradePanel({ student }: { student: Student }) {
   const [catalog, setCatalog] = useState(false)
   const [bulk, setBulk] = useState(false)
   const [menu, setMenu] = useState(false)
+  // 좌측 페이지 목록 스크롤 위치 복원용 (다른 학생 갔다 와도 스크롤 유지)
+  const asideRef = useRef<HTMLElement>(null)
+  const scrollRef = useRef(0)
 
   // 학생 전환·교재 추가/삭제 시 선택 보정 (다른 학생 교재가 선택돼 있지 않도록)
   useEffect(() => {
@@ -126,6 +133,28 @@ export default function GradePanel({ student }: { student: Student }) {
     if (wbId && pages.some(([p]) => p === from)) lvSetPages(student.id, wbId, from, to)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [from, to, wbId])
+
+  // 좌측 페이지 목록: 저장된 스크롤 위치 복원 (레이아웃 확정 후 적용 — 마운트 직후엔 아직 스크롤 불가라 rAF로 한 번 더)
+  useEffect(() => {
+    if (!wbId) return
+    const saved = lvGet(student.id).scroll?.[wbId]
+    if (saved == null) return
+    const apply = () => { if (asideRef.current) asideRef.current.scrollTop = saved }
+    apply()
+    const r = requestAnimationFrame(apply)
+    return () => cancelAnimationFrame(r)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wbId, pages.length])
+  // 스크롤 위치 저장 — 스크롤할 때마다 즉시 기록(rAF로 프레임당 1회로 스로틀). 언마운트 타이밍에 의존하지 않아 견고함.
+  const scrollSaveRef = useRef<number | null>(null)
+  function onAsideScroll(top: number) {
+    scrollRef.current = top
+    if (scrollSaveRef.current != null || !wbId) return
+    scrollSaveRef.current = requestAnimationFrame(() => {
+      scrollSaveRef.current = null
+      if (wbId) lvSetScroll(student.id, wbId, scrollRef.current)
+    })
+  }
 
   const inRange = useMemo(() => items.filter(i => i.page >= from && i.page <= to), [items, from, to])
 
@@ -474,7 +503,8 @@ export default function GradePanel({ student }: { student: Student }) {
 
       <div className="grid gap-4 lg:grid-cols-[220px_1fr]">
         {/* 좌측: 교재 페이지 목록 + 진도 (체크박스 = 페이지별 오답학습지 대상) */}
-        <aside className="h-fit max-h-[70vh] overflow-y-auto rounded-2xl border border-line bg-white p-2">
+        <aside ref={asideRef} onScroll={e => onAsideScroll(e.currentTarget.scrollTop)}
+          className="h-fit max-h-[70vh] overflow-y-auto rounded-2xl border border-line bg-white p-2">
           <div className="mb-1 flex items-center gap-2 px-2.5 pt-1 text-[11px] font-bold text-ink2">
             <span>선택</span><span className="grow">페이지</span><span>진도 확인</span>
           </div>
@@ -537,7 +567,6 @@ export default function GradePanel({ student }: { student: Student }) {
                           ? <input type="checkbox" checked={sel} readOnly className="pointer-events-none accent-[var(--color-pine,#2e6b4f)]" />
                           : <span className={`text-lg font-black ${m ? MARK_CLASS[m] : 'text-ink2/25'}`}>{m ? MARK_ICON[m] : '○'}</span>}
                       </div>
-                      <div className="mt-1 text-[11px] text-ink2">{typeName(i.typeId)}</div>
                       <AnswerLabel item={i} />
                     </button>
                   )

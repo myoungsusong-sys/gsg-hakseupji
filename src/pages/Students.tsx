@@ -343,6 +343,9 @@ interface FormState {
   homePhone: string
   memo: string
   klass: string
+  classDays: string[]
+  arriveTime: string
+  leaveTime: string
 }
 
 function emptyForm(): FormState {
@@ -350,6 +353,7 @@ function emptyForm(): FormState {
     name: '', sk: '중', gn: 1, attendNo: '',
     studentPhone: '', parentPhone: '', school: '', startDate: '', birth: '',
     email: '', address: '', homePhone: '', memo: '', klass: '',
+    classDays: [], arriveTime: '', leaveTime: '',
   }
 }
 
@@ -361,6 +365,7 @@ function formFromStudent(s: Student): FormState {
     school: s.school ?? '', startDate: s.startDate ?? '', birth: s.birth ?? '',
     email: s.email ?? '', address: s.address ?? '', homePhone: s.homePhone ?? '',
     memo: s.memo ?? '', klass: s.klass ?? '',
+    classDays: s.classDays ?? [], arriveTime: s.arriveTime ?? '', leaveTime: s.leaveTime ?? '',
   }
 }
 
@@ -388,6 +393,9 @@ function formPayload(f: FormState): Omit<Student, 'id' | 'active'> {
     email: t(f.email),
     address: t(f.address),
     homePhone: t(f.homePhone),
+    classDays: f.classDays.length ? f.classDays : undefined,
+    arriveTime: t(f.arriveTime),
+    leaveTime: t(f.leaveTime),
   }
 }
 
@@ -454,6 +462,37 @@ function StudentFields({ f, set, onRegenAttendNo }: {
       </Field>
 
       <p className="mt-2 border-b border-line pb-1.5 text-sm font-black">선택 입력 사항</p>
+      <Field label="수업 요일">
+        <div className="flex flex-col gap-1.5">
+          <div className="flex flex-wrap items-center gap-1">
+            {['월', '화', '수', '목', '금', '토', '일'].map(d => {
+              const on = f.classDays.includes(d)
+              return (
+                <button key={d} type="button"
+                  onClick={() => set({ classDays: on ? f.classDays.filter(x => x !== d) : [...f.classDays, d] })}
+                  className={`h-8 w-8 rounded-full text-sm font-bold ${on ? 'bg-pine text-paper' : 'border border-line text-ink2 hover:border-pine'}`}>{d}</button>
+              )
+            })}
+            <span className="ml-1 flex gap-1">
+              <button type="button" onClick={() => set({ classDays: ['월', '수', '금'] })}
+                className="rounded-md border border-line px-2 py-1 text-xs font-semibold text-ink2 hover:border-pine">월·수·금</button>
+              <button type="button" onClick={() => set({ classDays: ['화', '목', '토'] })}
+                className="rounded-md border border-line px-2 py-1 text-xs font-semibold text-ink2 hover:border-pine">화·목·토</button>
+            </span>
+          </div>
+          <span className="text-xs text-ink2">보고서의 &lsquo;다음 수업일&rsquo;이 이 요일 기준으로 자동 계산됩니다.</span>
+        </div>
+      </Field>
+      <Field label="기본 등·하원 시간">
+        <div className="flex items-center gap-2 text-sm">
+          <input type="time" value={f.arriveTime} onChange={e => set({ arriveTime: e.target.value })}
+            className="rounded-lg border border-line px-2 py-1.5" />
+          <span className="text-ink2">~</span>
+          <input type="time" value={f.leaveTime} onChange={e => set({ leaveTime: e.target.value })}
+            className="rounded-lg border border-line px-2 py-1.5" />
+          <span className="text-xs text-ink2">등원 체크 시 기본값</span>
+        </div>
+      </Field>
       <Field label="학생 연락처">
         <input value={f.studentPhone} onChange={e => set({ studentPhone: e.target.value })}
           placeholder="숫자만 입력해주세요." className={INPUT} />

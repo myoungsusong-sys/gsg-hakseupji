@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { toBlob } from 'html-to-image'
 import type { Grading, Student } from '../../types'
 import { useStore } from '../../lib/store'
-import { dateKey, monthKey, todayKey } from '../../lib/dates'
+import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { typeName, typeUnitName } from '../../data/curriculum'
 
@@ -132,19 +132,57 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
   const initial = dailyNotes.find(n => n.studentId === student.id && n.date === date)
   const [comment, setComment] = useState(initial?.comment ?? '')
   const [nextPlan, setNextPlan] = useState(initial?.nextPlan ?? '')
+  const [checkIn, setCheckIn] = useState(initial?.checkIn ?? '')       // 등원 시간 (체크해야 기록)
+  const [checkOut, setCheckOut] = useState(initial?.checkOut ?? '')     // 하원 시간
+  const [makeupDate, setMakeupDate] = useState(initial?.makeupDate ?? '') // 보강일 (있으면 다음수업 우선)
   const [copied, setCopied] = useState(false)
+  // 같은 틱에 여러 필드를 저장해도(예: 등원·하원 연속 클릭) 스테일 클로저로 서로 덮어쓰지 않도록 ref로 최신값 동기 유지
+  const noteRef = useRef({
+    comment: initial?.comment ?? '', nextPlan: initial?.nextPlan ?? '',
+    checkIn: initial?.checkIn ?? '', checkOut: initial?.checkOut ?? '', makeupDate: initial?.makeupDate ?? '',
+  })
 
   // 날짜가 바뀌면 저장분 불러오기
   useEffect(() => {
     const n = dailyNotes.find(x => x.studentId === student.id && x.date === date)
     setComment(n?.comment ?? '')
     setNextPlan(n?.nextPlan ?? '')
+    setCheckIn(n?.checkIn ?? '')
+    setCheckOut(n?.checkOut ?? '')
+    setMakeupDate(n?.makeupDate ?? '')
+    noteRef.current = {
+      comment: n?.comment ?? '', nextPlan: n?.nextPlan ?? '',
+      checkIn: n?.checkIn ?? '', checkOut: n?.checkOut ?? '', makeupDate: n?.makeupDate ?? '',
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [student.id, date])
 
-  function persist(c: string, p: string) {
-    saveDailyNote({ studentId: student.id, date, comment: c, nextPlan: p })
+  // 현재 값 전체를 하나의 노트로 저장 (ref 기준으로 병합 → 부분 저장 시 다른 필드가 지워지지 않음)
+  function persist(patch: Partial<{ comment: string; nextPlan: string; checkIn: string; checkOut: string; makeupDate: string }>) {
+    const m = { ...noteRef.current, ...patch }
+    noteRef.current = m
+    saveDailyNote({
+      studentId: student.id, date,
+      comment: m.comment, nextPlan: m.nextPlan,
+      checkIn: m.checkIn || undefined,
+      checkOut: m.checkOut || undefined,
+      makeupDate: m.makeupDate || undefined,
+    })
   }
+
+  // 다음 수업일 — 보강일이 있으면 우선(수업 변경), 없으면 수업 요일 기준 자동 계산
+  const autoNext = useMemo(() => nextClassDate(date, student.classDays), [date, student.classDays])
+  const nextSession = makeupDate
+    ? { key: makeupDate, label: krDateLabel(makeupDate), isMakeup: true }
+    : autoNext ? { key: autoNext, label: krDateLabel(autoNext), isMakeup: false } : null
+
+  // 등원/하원 체크 — 버튼을 눌러야 시간이 기록된다(안 누르면 보고서 미표시)
+  function nowHM(): string {
+    const d = new Date()
+    return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+  }
+  function stampIn() { const t = checkIn ? '' : (student.arriveTime || nowHM()); setCheckIn(t); persist({ checkIn: t }) }
+  function stampOut() { const t = checkOut ? '' : (student.leaveTime || nowHM()); setCheckOut(t); persist({ checkOut: t }) }
 
   const itemMap = useMemo(() => new Map(wbItems.map(i => [i.id, i])), [wbItems])
   const dayGradings = useMemo(
@@ -291,15 +329,15 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       if (!r.ok) {
         const e = await r.json().catch(() => ({} as { error?: string }))
         if (r.status === 503) {   // 키 미설정 → 템플릿 폴백(generate) / 안내(polish)
-          if (mode === 'generate' && templateComment) { setComment(templateComment); persist(templateComment, nextPlan); setAiNote('AI 미설정 — 기본 문구로 작성(설정하면 더 자연스러워집니다).') }
+          if (mode === 'generate' && templateComment) { setComment(templateComment); persist({ comment: templateComment }); setAiNote('AI 미설정 — 기본 문구로 작성(설정하면 더 자연스러워집니다).') }
           else setAiNote('AI 다듬기는 서버 설정(ANTHROPIC_API_KEY) 후 사용할 수 있습니다.')
         } else setAiNote('AI 오류: ' + (e.error ?? r.status))
         return
       }
       const { text } = await r.json() as { text: string }
-      setComment(text); persist(text, nextPlan)
+      setComment(text); persist({ comment: text })
     } catch {
-      if (mode === 'generate' && templateComment) { setComment(templateComment); persist(templateComment, nextPlan); setAiNote('네트워크 오류 — 기본 문구로 작성.') }
+      if (mode === 'generate' && templateComment) { setComment(templateComment); persist({ comment: templateComment }); setAiNote('네트워크 오류 — 기본 문구로 작성.') }
       else setAiNote('네트워크 오류로 AI 호출에 실패했습니다.')
     } finally { setAiBusy('') }
   }
@@ -309,6 +347,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     const lines: (string | null)[] = [
       `[깊은생각수학] ${student.name}${student.klass ? ` (${student.klass})` : ''} 오늘 학습`,
       `📅 ${dateKr}`,
+      (checkIn || checkOut) ? `⏰ 등원 ${checkIn || '—'} · 하원 ${checkOut || '—'}` : null,
       '',
       coveredUnits.units.length ? '📚 오늘 수업 내용' : null,
       ...coveredUnits.units.slice(0, 4).map(u => `· ${u.name} (${u.n}문항)`),
@@ -331,11 +370,12 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       (comment.trim() || templateComment) || null,
       nextPlan ? '' : null,
       nextPlan ? `📌 다음 학습: ${nextPlan}` : null,
+      nextSession ? `📅 다음 수업${nextSession.isMakeup ? '(보강)' : ''}: ${nextSession.label}` : null,
       '',
       '오늘도 열심히 했습니다. 감사합니다 😊',
     ]
     return lines.filter((l): l is string => l !== null).join('\n')
-  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan])
+  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan, checkIn, checkOut, nextSession])
 
   // 이미지 카드 복사/저장
   const cardRef = useRef<HTMLDivElement>(null)
@@ -417,17 +457,54 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
             </div>
           </div>
           <textarea value={comment}
-            onChange={e => { setComment(e.target.value); persist(e.target.value, nextPlan) }} rows={3}
+            onChange={e => { setComment(e.target.value); persist({ comment: e.target.value }) }} rows={3}
             placeholder="직접 입력하거나 [✨ AI 작성]으로 초안을 만들 수 있습니다. 직접 쓴 뒤 [🪄 AI 다듬기]로 문장을 정돈하세요. 비워두면 카드엔 기본 문구가 표시됩니다."
             className="rounded-lg border border-line px-3 py-2 font-normal" />
           {aiNote && <span className="text-xs font-normal text-clay">{aiNote}</span>}
         </div>
         <label className="grid gap-1 text-sm font-bold">다음 학습 계획 <span className="font-normal text-ink2">(자동 저장)</span>
           <textarea value={nextPlan}
-            onChange={e => { setNextPlan(e.target.value); persist(comment, e.target.value) }} rows={3}
+            onChange={e => { setNextPlan(e.target.value); persist({ nextPlan: e.target.value }) }} rows={3}
             placeholder="예: 최소공배수 오답 드릴 + 쎈 91~94p"
             className="rounded-lg border border-line px-3 py-2 font-normal" />
         </label>
+      </div>
+
+      {/* 수업 일정(다음 수업·보강) + 등·하원 체크 — 코멘트 근처 (자동 저장) */}
+      <div className="no-print mb-5 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-xl border border-line bg-paper2/40 px-4 py-3 text-sm">
+        <div className="flex items-center gap-2">
+          <span className="font-bold">다음 수업</span>
+          {nextSession ? (
+            <span className={`rounded-md px-2 py-1 text-xs font-bold ${nextSession.isMakeup ? 'bg-amber-soft text-amber' : 'bg-pine-soft text-pine-dark'}`}>
+              {nextSession.label}{nextSession.isMakeup ? ' · 보강' : ''}
+            </span>
+          ) : (
+            <span className="text-xs text-ink2">수업 요일 미설정 (관리 → 학생 등록에서 지정)</span>
+          )}
+        </div>
+        <label className="flex items-center gap-2">
+          <span className="font-bold">보강일</span>
+          <input type="date" value={makeupDate}
+            onChange={e => { setMakeupDate(e.target.value); persist({ makeupDate: e.target.value }) }}
+            className="rounded-lg border border-line px-2 py-1.5 text-sm" />
+          {makeupDate && (
+            <button type="button" onClick={() => { setMakeupDate(''); persist({ makeupDate: '' }) }}
+              className="text-xs text-ink2 underline hover:text-ink">지우기</button>
+          )}
+          <span className="text-xs text-ink2">있으면 다음 수업 우선</span>
+        </label>
+        <div className="flex items-center gap-2">
+          <span className="font-bold">등·하원</span>
+          <button type="button" onClick={stampIn}
+            className={`rounded-lg border px-3 py-1.5 text-xs font-bold ${checkIn ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:border-pine'}`}>
+            {checkIn ? `🟢 등원 ${checkIn}` : '🟢 등원 체크'}
+          </button>
+          <button type="button" onClick={stampOut}
+            className={`rounded-lg border px-3 py-1.5 text-xs font-bold ${checkOut ? 'border-clay bg-red-50 text-clay' : 'border-line text-ink2 hover:border-pine'}`}>
+            {checkOut ? `🔴 하원 ${checkOut}` : '🔴 하원 체크'}
+          </button>
+          <span className="text-xs text-ink2">누른 시간만 보고서에 표시</span>
+        </div>
       </div>
 
       {/* 단톡방 이미지 카드 (미리보기가 곧 캡처 원본) */}
@@ -438,7 +515,8 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
             <ReportCard student={student} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
               weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
-              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={comment.trim() || templateComment} nextPlan={nextPlan} />
+              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={comment.trim() || templateComment} nextPlan={nextPlan}
+              nextSession={nextSession} checkIn={checkIn} checkOut={checkOut} />
           </div>
         </div>
       </div>
@@ -453,6 +531,12 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
           <span className="font-bold">{student.name} {student.klass && <span className="font-normal text-ink2">· {student.klass}</span>}</span>
           <span className="text-ink2">{dateKr}</span>
         </div>
+        {(checkIn || checkOut) && (
+          <div className="mb-4 flex gap-4 text-sm">
+            <span>🟢 등원 <b>{checkIn || '—'}</b></span>
+            <span>🔴 하원 <b>{checkOut || '—'}</b></span>
+          </div>
+        )}
 
         <Section title="📖 오늘 푼 교재">
           {bookRows.length === 0 ? <Dim>오늘 교재 채점 기록이 없습니다.</Dim> : (
@@ -519,6 +603,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
 
         {(comment.trim() || templateComment) && <Section title="📝 선생님 한마디"><p className="whitespace-pre-wrap text-sm leading-relaxed">{comment.trim() || templateComment}</p></Section>}
         {nextPlan && <Section title="📌 다음 학습 계획"><p className="whitespace-pre-wrap text-sm leading-relaxed">{nextPlan}</p></Section>}
+        {nextSession && <Section title={`📅 다음 수업${nextSession.isMakeup ? ' (보강)' : ''}`}><p className="text-sm font-semibold">{nextSession.label}</p></Section>}
 
         <p className="mt-6 text-center text-sm text-ink2">오늘도 열심히 했습니다. 감사합니다 😊</p>
       </div>
@@ -814,7 +899,7 @@ const C = { blue: '#2b7de9', blueDark: '#1b5fc2', blueSoft: '#eef5fe', ink: '#1f
   line: '#e5e7eb', amberSoft: '#fff7e6', amber: '#b45309', red: '#dc2626', redSoft: '#fdecec', green: '#15803d' }
 
 function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
-  weekAvg, weekDelta, streak, wrongTypes, covered, hasDrill, comment, nextPlan }: {
+  weekAvg, weekDelta, streak, wrongTypes, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut }: {
   student: Student; dateKr: string
   bookRows: { name: string; range: string; total: number; correct: number; unknown: number; score: number }[]
   sheetRows: { name: string; total: number; correct: number; unknown: number; score: number }[]
@@ -822,6 +907,7 @@ function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCo
   weekAvg: number | null; weekDelta: number | null; streak: number
   wrongTypes: { name: string; n: number }[]; covered: { name: string; n: number }[]
   hasDrill: boolean; comment: string; nextPlan: string
+  nextSession: { key: string; label: string; isMakeup: boolean } | null; checkIn: string; checkOut: string
 }) {
   const rows = [
     ...bookRows.map(r => ({ ...r, icon: '📖', sub: r.range })),
@@ -843,6 +929,19 @@ function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCo
       </div>
 
       <div style={{ padding: '14px 18px 16px' }}>
+        {/* 등·하원 (체크한 경우에만) */}
+        {(checkIn || checkOut) && (
+          <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
+            <div style={{ flex: 1, background: C.blueSoft, borderRadius: 10, padding: '7px 10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span style={{ fontSize: 11.5, fontWeight: 700, color: C.ink2 }}>🟢 등원</span>
+              <span style={{ fontSize: 14, fontWeight: 900, color: C.blueDark }}>{checkIn || '—'}</span>
+            </div>
+            <div style={{ flex: 1, background: C.blueSoft, borderRadius: 10, padding: '7px 10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span style={{ fontSize: 11.5, fontWeight: 700, color: C.ink2 }}>🔴 하원</span>
+              <span style={{ fontSize: 14, fontWeight: 900, color: C.blueDark }}>{checkOut || '—'}</span>
+            </div>
+          </div>
+        )}
         {totalSolved === 0 ? (
           <div style={{ ...boxStyle, background: C.blueSoft, textAlign: 'center', color: C.ink2 }}>오늘 채점 기록이 없습니다.</div>
         ) : (
@@ -936,6 +1035,13 @@ function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCo
           <div style={{ ...boxStyle, background: C.blueSoft, marginTop: comment ? 8 : 12 }}>
             <span style={{ fontWeight: 800, color: C.blueDark }}>📌 다음 학습 </span>
             <span style={{ whiteSpace: 'pre-wrap' }}>{nextPlan}</span>
+          </div>
+        )}
+        {nextSession && (
+          <div style={{ ...boxStyle, background: nextSession.isMakeup ? C.amberSoft : C.blueSoft, marginTop: 8 }}>
+            <span style={{ fontWeight: 800, color: nextSession.isMakeup ? C.amber : C.blueDark }}>
+              📅 다음 수업{nextSession.isMakeup ? '(보강)' : ''} </span>
+            <span style={{ fontWeight: 700 }}>{nextSession.label}</span>
           </div>
         )}
 
