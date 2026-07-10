@@ -5,6 +5,7 @@ import { useStore } from '../../lib/store'
 import { defaultCurriculumForGrade, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import ProblemContent from '../../components/ProblemContent'
+import SolveFeedback from '../../components/student/SolveFeedback'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
@@ -112,6 +113,7 @@ export default function StudentSolve() {
               </div>
               <div className="border-t border-line/60 pt-3">
                 <AnswerInput p={p} value={answers[p.id] ?? ''} onChange={v => setAnswer(p.id, v)} />
+                <SolveFeedback studentId={me.id} worksheetId={ws.id} problem={p} />
               </div>
               {/* 채점 전 공개 (선생님 설정) — 정답/해설/풀이영상 */}
               {(cfg.showAnswerBefore || cfg.showSolutionBefore || (cfg.showVideoBefore && p.videoUrl)) && (

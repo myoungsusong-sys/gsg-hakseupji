@@ -302,6 +302,18 @@ export interface LecturePlan {
   updatedAt: string
 }
 
+// 학생 풀이 AI 피드백 (학생×학습지×문항) — 태블릿 풀이 사진/필기에 대한 단계별 피드백
+export interface SolveFeedback {
+  id: string            // `${studentId}_${worksheetId}_${problemId}`
+  studentId: string
+  worksheetId: string
+  problemId: string
+  hasWork: boolean      // 풀이 과정이 있었는지 (false=답만/낙서 → 베끼기 의심)
+  correct: boolean | null
+  feedback: string      // 학생에게 보여줄 피드백
+  at: string            // ISO
+}
+
 // 일일 보고지 메모 (학생×날짜)
 export interface DailyNote {
   studentId: string

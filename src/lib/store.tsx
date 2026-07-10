@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -33,6 +33,7 @@ interface Persisted {
   uploads: UploadRec[]
   sheetTemplates: SheetTemplate[]
   lecturePlans: LecturePlan[]
+  solveFeedbacks: SolveFeedback[]
 }
 
 const EMPTY: Persisted = {
@@ -48,6 +49,7 @@ const EMPTY: Persisted = {
   uploads: [],
   sheetTemplates: [],
   lecturePlans: [],
+  solveFeedbacks: [],
 }
 
 interface Store extends Persisted {
@@ -80,6 +82,7 @@ interface Store extends Persisted {
   saveDailyNote: (n: DailyNote) => void
   setLecturePlan: (p: LecturePlan) => void          // 진도표 저장/갱신 (학생×교재 1개)
   removeLecturePlan: (id: string) => void
+  saveSolveFeedback: (f: SolveFeedback) => void      // 학생 풀이 AI 피드백 저장 (학생×학습지×문항 최신 1개)
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
@@ -149,6 +152,7 @@ function fromCloud(r: CloudData): Persisted {
     uploads: r.uploads ?? [],
     sheetTemplates: r.sheetTemplates ?? [],
     lecturePlans: r.lecturePlans ?? [],
+    solveFeedbacks: r.solveFeedbacks ?? [],
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -161,7 +165,7 @@ function toCloud(s: Persisted): CloudData {
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
-    lecturePlans: s.lecturePlans,
+    lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks,
   }
 }
 
@@ -487,6 +491,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     removeLecturePlan: id => {
       const next = stateRef.current.lecturePlans.filter(x => x.id !== id)
       set(s => ({ ...s, lecturePlans: next })); cloud.setSetting('lecturePlans', next)
+    },
+    saveSolveFeedback: f => {
+      const next = [...stateRef.current.solveFeedbacks.filter(x => x.id !== f.id), f]
+      set(s => ({ ...s, solveFeedbacks: next })); cloud.setSetting('solveFeedbacks', next)
     },
   }
 
