@@ -31,7 +31,7 @@ export default async function handler(req: any, res: any) {
   try {
     const client = new Anthropic({ apiKey: key })
     const msg = await client.messages.create({
-      model: 'claude-opus-4-8',
+      model: 'claude-sonnet-5',
       max_tokens: 600,
       output_config: { effort: 'low' },
       system: SYSTEM,
