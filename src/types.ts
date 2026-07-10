@@ -262,6 +262,7 @@ export interface StudentAppConfig {
   showVideoBefore?: boolean      // 채점 전 풀이영상 공개
   dailyMasterOn?: boolean        // 오늘의 학습 — 전체 학생 공개 여부 (기본 true)
   dailyOffIds?: string[]         // 오늘의 학습 OFF 학생 id 목록
+  solveFeedback?: boolean        // 학생앱 문항별 '풀이 AI 피드백' 사용 (기본 true=사용)
   lab?: LabConfig                // 실험실 설정
 }
 

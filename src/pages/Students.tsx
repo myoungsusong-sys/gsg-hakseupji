@@ -1540,6 +1540,7 @@ function useRevealConfig() {
     'showAnswer', 'showSolution', 'showVideo', 'showAnswerBefore', 'showSolutionBefore', 'showVideoBefore',
   ]
   const dirty = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
+    || (cfg.solveFeedback ?? true) !== (studentAppConfig.solveFeedback ?? true)   // 기본 ON
   const save = () => {
     setStudentAppConfig({ ...studentAppConfig, ...cfg })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
@@ -1577,6 +1578,23 @@ function AnswerRevealSettings() {
           before={cfg.showSolutionBefore ?? false} after={cfg.showSolution}
           onBefore={v => setCfg(p => ({ ...p, showSolutionBefore: v }))}
           onAfter={v => setCfg(p => ({ ...p, showSolution: v }))} />
+        {/* 풀이 AI 피드백 사용 여부 (단일 on/off, 기본 사용) */}
+        <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
+          <div className="min-w-40">
+            <div className="text-sm font-bold">풀이 AI 피드백
+              <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(cfg.solveFeedback ?? true) ? 'bg-pine-soft text-pine-dark' : 'bg-paper2 text-ink2'}`}>
+                {(cfg.solveFeedback ?? true) ? '사용' : '사용 안 함'}
+              </span>
+            </div>
+            <div className="text-xs text-ink2">학생이 문제별로 필기·사진 풀이를 올리면 AI가 과정을 채점·피드백해요. (끄면 학생앱에서 숨김)</div>
+          </div>
+          <div className="grow" />
+          <label className="flex items-center gap-1.5 text-sm">
+            <input type="checkbox" checked={cfg.solveFeedback ?? true}
+              onChange={e => setCfg(p => ({ ...p, solveFeedback: e.target.checked }))} className="accent-pine" />
+            사용
+          </label>
+        </div>
       </div>
       <p className="mt-3 text-xs text-ink2">
         현재 전체 학생 공통 적용 — 학년·학생별 세분화는 준비 중이에요. '채점 후'를 끄면 결과 화면에 🔒 비공개로 표시됩니다.
