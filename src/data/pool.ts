@@ -11,16 +11,18 @@ export const POOL_COURSES = [
 
 // 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int1', 'h-int2'] as const
-// [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer] — 완자 교재 크롭 문항
-type WanjaRaw = [string, string, number, number, string]
+// [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer, solutionRelPath?]
+//  — 완자 교재 크롭 문항. solution은 정답친해 원본 페이지 이미지(정답·해설, 오류 위험 0)
+type WanjaRaw = [string, string, number, number, string, (string | 0)?]
 
 function toWanjaProblem(id: string, r: WanjaRaw): Problem {
-  const [img, tid, diff, isC, ans] = r
+  const [img, tid, diff, isC, ans, sol] = r
   return {
     id, typeId: tid, kind: isC ? '객관식' : '주관식',
     diff: (diff >= 1 && diff <= 5 ? diff : 3) as Problem['diff'],
-    body: '', answer: ans || '', solution: '', source: '완자',
+    body: '', answer: ans || '', source: '완자',
     imageUrl: `${import.meta.env.BASE_URL}${img}`,
+    solution: typeof sol === 'string' && sol ? `${import.meta.env.BASE_URL}${sol}` : '',
   }
 }
 
