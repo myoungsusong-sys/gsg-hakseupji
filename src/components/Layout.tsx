@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import { SUBJECTS, useSubject } from '../lib/subject'
 
 // 새 배포 감지 — 탭을 오래 열어두면 옛 번들이 계속 도는 문제 방지
 function useUpdateCheck(): boolean {
@@ -102,6 +103,7 @@ const topTab = ({ isActive }: { isActive: boolean }) =>
 export default function Layout() {
   const nav = useNavigate()
   const { academyProfile } = useStore()
+  const [subject, setSubject] = useSubject()   // 전역 과목 (수업 준비 화면 공용)
   const [bell, setBell] = useState(false)
   const stale = useUpdateCheck()
   const { items, unread, markRead } = useNotifications()
@@ -153,6 +155,15 @@ export default function Layout() {
             <NavLink to="/lesson" className={topTab}>수업</NavLink>
             <NavLink to="/manage" className={topTab}>관리</NavLink>
           </nav>
+          {/* 전역 과목 스위처 — 출제·문제은행·기출 화면이 이 과목을 따른다 (확장: lib/subject.ts SUBJECTS에 추가) */}
+          <div className="flex gap-0.5 rounded-lg bg-paper2 p-0.5" title="과목 — 수업 준비 화면 전체에 적용됩니다">
+            {SUBJECTS.map(s => (
+              <button key={s} onClick={() => setSubject(s)}
+                className={`rounded-md px-3.5 py-1 text-sm font-bold transition ${subject === s ? 'bg-pine text-paper shadow-sm' : 'text-ink2 hover:text-ink'}`}>
+                {s}
+              </button>
+            ))}
+          </div>
           <div className="grow" />
           <button onClick={() => nav('/prep/school-exam')}
             className="rounded-full bg-amber px-4 py-1.5 text-sm font-bold text-white shadow-sm transition hover:brightness-105">

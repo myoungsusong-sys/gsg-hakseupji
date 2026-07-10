@@ -4,6 +4,7 @@ import { CURRICULA, curriculumFor, typeName, typeSubUnitId, typeUnitName } from 
 import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
 import { useStore, uid } from '../lib/store'
+import { getSubject, useSubject, SUBJECTS } from '../lib/subject'
 import MathText, { isImageUrl } from '../components/MathText'
 import ProblemContent from '../components/ProblemContent'
 import { ProblemBlock, SheetHeader } from './WorksheetView'
@@ -53,8 +54,7 @@ const isMockProblem = (p: Problem) => /모의고사|수능|학평/.test(p.source
 const SCHOOL_LEVELS: { label: string; prefix: string }[] = [
   { label: '초', prefix: 'e' }, { label: '중', prefix: 'm' }, { label: '고', prefix: 'h' },
 ]
-// 과목 토글 (수학/과학) — Curriculum.subject로 구분 (기본 수학)
-const SUBJECTS: ('수학' | '과학')[] = ['수학', '과학']
+// 과목 토글 — 목록은 lib/subject.ts SUBJECTS 단일 소스 (확장 시 거기에만 추가)
 // 학기 칩 라벨: 초중 「1 - 1(22개정)」 · 고 「공통수학1(22개정)」 · 중등과학 「과학 1(22개정)」
 function semesterChipLabel(grade: string, label: string): string {
   const m = grade.match(/^[초중](\d)-(\d)$/)
@@ -110,9 +110,17 @@ export default function MakeWizard() {
 
   // STEP 1
   const [srcTab, setSrcTab] = useState<SrcTab>('chapter')
-  const [gradeId, setGradeId] = useState('m1-1')
+  // 초기 과정: 전역 과목(헤더 스위처)의 중등 첫 과정으로 시작 (수학이면 기존 기본 m1-1 유지)
+  const [gradeId, setGradeId] = useState(() => {
+    const s = getSubject()
+    if (s === '수학') return 'm1-1'
+    const first = CURRICULA.find(c => c.id.startsWith('m') && (c.subject ?? '수학') === s)
+      ?? CURRICULA.find(c => (c.subject ?? '수학') === s)
+    return (first ?? CURRICULA[0]).id
+  })
   const cur = curriculumFor(gradeId)
   useEffect(() => { store.ensureCourse(gradeId) }, [gradeId])   // 과정 문제 풀 지연 로드
+  const [gSubject, setGSubject] = useSubject()   // 전역 과목 (헤더 [수학|과학] 스위처)
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [count, setCount] = useState(50)
   const [diffFocus, setDiffFocus] = useState<Diff>(3)
@@ -129,6 +137,15 @@ export default function MakeWizard() {
   const [unitSearchOpen, setUnitSearchOpen] = useState(false)  // "내가 찾는 단원이 어디있지?"
   const [expanded, setExpanded] = useState<Set<string>>(new Set())     // 좌측 트리에서 펼친 대단원 (기본 전부 접힘)
   const [treeTarget, setTreeTarget] = useState<string | null>(null)    // 우측 유형 패널 대상 노드(대·중·소단원 id)
+
+  // 전역 과목(헤더 스위처)과 동기화 — 헤더에서 바꾸면 트리도 그 과목 첫 과정으로 전환
+  useEffect(() => {
+    if ((cur.subject ?? '수학') === gSubject) return
+    const first = CURRICULA.find(c => c.id.startsWith(gradeId[0]) && (c.subject ?? '수학') === gSubject)
+      ?? CURRICULA.find(c => (c.subject ?? '수학') === gSubject)
+    if (first) { setGradeId(first.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gSubject])
 
   // STEP 2
   const [items, setItems] = useState<Problem[]>([])
@@ -542,6 +559,7 @@ export default function MakeWizard() {
                       <button key={sub}
                         onClick={() => {
                           if ((cur.subject ?? '수학') === sub) return
+                          setGSubject(sub)   // 전역 과목도 함께 변경 (헤더 스위처와 동기)
                           const first = CURRICULA.find(c => c.id.startsWith(gradeId[0]) && (c.subject ?? '수학') === sub)
                             ?? CURRICULA.find(c => (c.subject ?? '수학') === sub)
                           if (first) { setGradeId(first.id); setSelected(new Set()); setExpanded(new Set()); setTreeTarget(null) }
