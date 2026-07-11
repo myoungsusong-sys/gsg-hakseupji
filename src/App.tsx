@@ -6,6 +6,8 @@ import { getLocalStudentId, isStudentEmail } from './lib/role'
 import Login from './pages/Login'
 import StudentShell from './pages/student/StudentShell'
 import StudentLocalLogin from './pages/student/StudentLocalLogin'
+import ParentLogin from './pages/parent/ParentLogin'
+import ParentHome from './pages/parent/ParentHome'
 import StudentHome from './pages/student/StudentHome'
 import StudentWorksheets from './pages/student/StudentWorksheets'
 import StudentSolve from './pages/student/StudentSolve'
@@ -46,11 +48,19 @@ export default function App() {
 function Gate() {
   const { ready, session } = useAuth()
   if (!ready) return <div className="flex min-h-screen items-center justify-center text-ink2">불러오는 중…</div>
-  if (SUPABASE_ON && !session) return <Login />
+  // 학부모앱(#/parent*)은 Supabase 세션 없이도 진입 — 서버리스가 이름+연락처로 검증
+  if (SUPABASE_ON && !session) {
+    if (typeof window !== 'undefined' && window.location.hash.startsWith('#/parent')) return <ParentOnlyApp />
+    return <Login />
+  }
   return (
     <StoreProvider>
       <HashRouter>
         <Routes>
+          {/* ── 학부모앱 (#/parent) — 로컬 모드/선생님 미리보기용. 프로덕션 미인증 진입은 ParentOnlyApp ── */}
+          <Route path="/parent-login" element={<ParentLogin />} />
+          <Route path="/parent" element={<ParentHome />} />
+
           {/* ── 학생앱 (#/student/*) — 선생님 메뉴 없는 학생 전용 셸 ── */}
           <Route path="/student-login" element={<StudentLocalLogin />} />
           <Route path="/student" element={<StudentShell />}>
@@ -119,6 +129,21 @@ function Gate() {
             <Route path="/worksheet/:id" element={<Page><WorksheetView /></Page>} />
           </Route>
           </Route>
+        </Routes>
+      </HashRouter>
+    </StoreProvider>
+  )
+}
+
+// 학부모 전용 앱 — 프로덕션에서 Supabase 세션 없이 #/parent 진입 시 (서버리스로 자녀 데이터 검증)
+function ParentOnlyApp() {
+  return (
+    <StoreProvider>
+      <HashRouter>
+        <Routes>
+          <Route path="/parent-login" element={<ParentLogin />} />
+          <Route path="/parent" element={<ParentHome />} />
+          <Route path="*" element={<Navigate to="/parent-login" replace />} />
         </Routes>
       </HashRouter>
     </StoreProvider>

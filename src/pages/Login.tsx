@@ -86,6 +86,13 @@ export default function Login() {
         ) : (
           <p className="mt-5 text-center text-xs text-ink2">아이디·비밀번호는 선생님께 받은 것을 사용해요.</p>
         )}
+
+        <div className="mt-5 border-t border-line pt-4 text-center">
+          <button onClick={() => { window.location.hash = '#/parent-login'; window.location.reload() }}
+            className="text-sm font-semibold text-pine hover:underline">
+            👪 학부모이신가요? 자녀 학습 보고서 보기
+          </button>
+        </div>
       </div>
     </div>
   )
