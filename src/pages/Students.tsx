@@ -141,6 +141,7 @@ function StudentsTab() {
   const [showForm, setShowForm] = useState(false)
   const [showBulk, setShowBulk] = useState(false)
   const [showImport, setShowImport] = useState(false)
+  const [showMgmt, setShowMgmt] = useState(false)
   const [detail, setDetail] = useState<Student | null>(null)
   const [appPreview, setAppPreview] = useState<Student | null>(null)
   const [sel, setSel] = useState<Set<string>>(new Set())
@@ -220,6 +221,8 @@ function StudentsTab() {
           퇴원생 보기
         </label>
         <div className="grow" />
+        <button onClick={() => setShowMgmt(true)}
+          className="rounded-lg border border-indigo-500 bg-white px-4 py-2 text-sm font-bold text-indigo-600 hover:bg-indigo-50">🏫 학원관리앱 가져오기</button>
         <button onClick={() => setShowImport(true)}
           className="rounded-lg border border-pine bg-white px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">매쓰플랫 가져오기</button>
         <button onClick={() => setShowBulk(true)}
@@ -243,6 +246,7 @@ function StudentsTab() {
       {showForm && <RegisterModal onClose={() => setShowForm(false)} />}
       {showBulk && <BulkModal onClose={() => setShowBulk(false)} />}
       {showImport && <MathflatImportModal onClose={() => setShowImport(false)} />}
+      {showMgmt && <MgmtImportModal onClose={() => setShowMgmt(false)} />}
       {detail && <DetailModal key={detail.id} s={detail} onClose={() => setDetail(null)} />}
       {appPreview && <StudentAppPreview key={appPreview.id} s={appPreview} onClose={() => setAppPreview(null)} />}
 
@@ -964,6 +968,156 @@ function buildImport(json: ImportedFile): { students: Student[]; gradings: Gradi
     }
   }
   return { students, gradings, recordCount: gradings.length }
+}
+
+// 학원관리앱(전과목) → 학습지앱 학생 명부 가져오기. 관리앱을 마스터로 삼아 공유.
+type MgmtStudent = { mgmtId: string; name: string; grade: string; school: string; studentPhone: string; parentPhone: string; memo: string; active: boolean }
+
+function normPhone(p?: string): string { return (p ?? '').replace(/\D/g, '') }
+
+function MgmtImportModal({ onClose }: { onClose: () => void }) {
+  const { students, addStudent } = useStore()
+  const [rows, setRows] = useState<MgmtStudent[] | null>(null)
+  const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [sel, setSel] = useState<Set<string>>(new Set())
+  const [onlyActive, setOnlyActive] = useState(true)
+  const [q, setQ] = useState('')
+  const [done, setDone] = useState<number | null>(null)
+
+  // 이미 연결된 관리앱 학생: mgmtId 매칭 우선, 없으면 이름+연락처 매칭
+  const linked = useMemo(() => {
+    const byMgmt = new Set(students.map(s => s.mgmtId).filter(Boolean) as string[])
+    const byNamePhone = new Set(students.map(s => `${s.name}|${normPhone(s.parentPhone) || normPhone(s.studentPhone)}`))
+    return { byMgmt, byNamePhone }
+  }, [students])
+
+  const isLinked = (m: MgmtStudent) =>
+    linked.byMgmt.has(m.mgmtId) || linked.byNamePhone.has(`${m.name}|${normPhone(m.parentPhone) || normPhone(m.studentPhone)}`)
+
+  useEffect(() => {
+    let alive = true
+    ;(async () => {
+      try {
+        if (!SUPABASE_ON) { setError('학원관리앱 연동은 클라우드(Supabase) 모드에서만 됩니다.'); setLoading(false); return }
+        const { data: sess } = await supabase!.auth.getSession()
+        const token = sess.session?.access_token
+        if (!token) { setError('로그인 후 이용해 주세요.'); setLoading(false); return }
+        const r = await fetch('/api/mgmt-students', { headers: { Authorization: `Bearer ${token}` } })
+        const d = await r.json().catch(() => ({}))
+        if (!alive) return
+        if (!r.ok) { setError(d.error || '학생을 불러오지 못했습니다.'); setLoading(false); return }
+        setRows((d.students as MgmtStudent[]) ?? [])
+        setLoading(false)
+      } catch { if (alive) { setError('네트워크 오류로 불러오지 못했습니다.'); setLoading(false) } }
+    })()
+    return () => { alive = false }
+  }, [])
+
+  const view = useMemo(() => {
+    const t = q.trim()
+    return (rows ?? [])
+      .filter(m => (onlyActive ? m.active : true))
+      .filter(m => !t || m.name.includes(t) || m.school.includes(t))
+      .sort((a, b) => Number(isLinked(a)) - Number(isLinked(b)) || a.name.localeCompare(b.name, 'ko'))
+  }, [rows, onlyActive, q, linked])
+
+  const importable = view.filter(m => !isLinked(m))
+  const allChecked = importable.length > 0 && importable.every(m => sel.has(m.mgmtId))
+  const toggleAll = () => setSel(prev => {
+    const n = new Set(prev)
+    if (allChecked) importable.forEach(m => n.delete(m.mgmtId))
+    else importable.forEach(m => n.add(m.mgmtId))
+    return n
+  })
+
+  function doImport() {
+    const pick = (rows ?? []).filter(m => sel.has(m.mgmtId) && !isLinked(m))
+    let n = 0
+    for (const m of pick) {
+      addStudent({
+        name: m.name,
+        grade: m.grade || '중1',
+        school: m.school || undefined,
+        studentPhone: m.studentPhone || undefined,
+        parentPhone: m.parentPhone || undefined,
+        memo: m.memo || undefined,
+        mgmtId: m.mgmtId,
+      })
+      n++
+    }
+    setSel(new Set())
+    setDone(n)
+  }
+
+  return (
+    <Modal title="🏫 학원관리앱에서 학생 가져오기" onClose={onClose}>
+      {done !== null ? (
+        <div className="grid gap-4 py-4 text-center">
+          <div className="text-4xl">✅</div>
+          <div className="text-sm text-ink">{done}명을 학습지앱 학생으로 가져왔습니다.</div>
+          <div className="text-xs text-ink2">전과목 학생은 학원관리앱에서 관리되고, 여기선 연결만 됩니다. 학습지앱 단과 학생은 그대로 유지됩니다.</div>
+          <button onClick={onClose} className="mx-auto rounded-lg bg-pine px-6 py-2 text-sm font-bold text-paper">확인</button>
+        </div>
+      ) : (
+        <div className="grid gap-3">
+          <p className="text-xs text-ink2">학원관리앱(전과목)의 학생을 학습지앱으로 공유합니다. 이미 연결된 학생은 회색으로 표시되며 중복 추가되지 않습니다.</p>
+          {loading ? (
+            <div className="py-10 text-center text-sm text-ink2">불러오는 중…</div>
+          ) : error ? (
+            <div className="rounded-lg border border-clay/40 bg-red-50 px-4 py-3 text-sm text-clay">{error}</div>
+          ) : (rows && rows.length === 0) ? (
+            <div className="rounded-lg border border-dashed border-line bg-paper2/50 px-4 py-8 text-center text-sm text-ink2">학원관리앱에 등록된 학생이 없습니다.</div>
+          ) : (
+            <>
+              <div className="flex flex-wrap items-center gap-2">
+                <input value={q} onChange={e => setQ(e.target.value)} placeholder="이름·학교 검색"
+                  className="w-40 rounded-lg border border-line px-3 py-1.5 text-sm" />
+                <label className="flex items-center gap-1.5 text-sm text-ink2">
+                  <input type="checkbox" checked={onlyActive} onChange={e => setOnlyActive(e.target.checked)} /> 재원생만
+                </label>
+                <div className="grow" />
+                <span className="text-sm text-ink2">가져올 수 있는 학생 <b className="text-indigo-600">{importable.length}</b>명</span>
+              </div>
+              <div className="max-h-80 overflow-y-auto rounded-lg border border-line">
+                <table className="w-full text-sm">
+                  <thead className="sticky top-0 bg-paper2 text-left text-xs text-ink2">
+                    <tr>
+                      <th className="w-8 px-3 py-2"><input type="checkbox" checked={allChecked} onChange={toggleAll} title="가져올 수 있는 전체 선택" /></th>
+                      <th className="px-2 py-2">이름</th><th className="px-2 py-2">학년</th><th className="px-2 py-2">학교</th><th className="px-2 py-2">학부모 연락처</th><th className="px-2 py-2">상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {view.map(m => {
+                      const done = isLinked(m)
+                      return (
+                        <tr key={m.mgmtId} className={`border-t border-line ${done ? 'bg-paper2/40 text-ink2' : 'hover:bg-pine-soft/30'}`}>
+                          <td className="px-3 py-2">
+                            <input type="checkbox" disabled={done} checked={sel.has(m.mgmtId)}
+                              onChange={() => setSel(p => { const n = new Set(p); n.has(m.mgmtId) ? n.delete(m.mgmtId) : n.add(m.mgmtId); return n })} />
+                          </td>
+                          <td className="px-2 py-2 font-bold text-ink">{m.name || '—'}</td>
+                          <td className="px-2 py-2">{m.grade || '—'}</td>
+                          <td className="px-2 py-2">{m.school || '—'}</td>
+                          <td className="px-2 py-2">{m.parentPhone || '—'}</td>
+                          <td className="px-2 py-2">{done ? <span className="text-xs text-ink2">연결됨</span> : <span className="text-xs font-bold text-indigo-600">가져오기</span>}</td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <div className="flex items-center justify-end gap-2">
+                <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-bold text-ink2">취소</button>
+                <button onClick={doImport} disabled={sel.size === 0}
+                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">{sel.size}명 가져오기</button>
+              </div>
+            </>
+          )}
+        </div>
+      )}
+    </Modal>
+  )
 }
 
 function MathflatImportModal({ onClose }: { onClose: () => void }) {

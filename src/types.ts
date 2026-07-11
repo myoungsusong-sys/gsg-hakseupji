@@ -198,6 +198,7 @@ export interface Student {
   loginId?: string       // 학생앱 로그인 아이디 (없으면 attendNo 사용)
   authEmail?: string     // 학생앱 Supabase 계정 이메일 (계정 생성 스크립트가 기록)
   siblingIds?: string[]  // 형제 연결 — 학부모 연락처를 공유하는 형제 학생 id (상호 기록)
+  mgmtId?: string        // 학원관리앱(전과목) 학생 id — 명부 공유로 연결됨. 있으면 관리앱에서 가져온 학생
 }
 
 export interface GradeResult {
