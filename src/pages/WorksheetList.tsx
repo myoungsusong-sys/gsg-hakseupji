@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
-import { typeName } from '../data/curriculum'
+import { typeName, subjectOfType } from '../data/curriculum'
+import { useSubject } from '../lib/subject'
 import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
 import type { Assignment, Student, Worksheet } from '../types'
@@ -51,6 +52,7 @@ export default function WorksheetList({ view }: { view: View }) {
     students, assignments, addAssignment,
     saveWorksheet, updateWorksheet, addMyBook,
   } = store
+  const [subject] = useSubject()
   const [q, setQ] = useState('')
   const [tagFilter, setTagFilter] = useState<string>('all')
   const [gradeFilter, setGradeFilter] = useState<'all' | GradeGroup>('all')
@@ -86,8 +88,20 @@ export default function WorksheetList({ view }: { view: View }) {
     return [...TAG_FILTER_OPTIONS, ...extra]
   }, [worksheets])
 
+  // 학습지 과목: 저장값 우선, 없으면(레거시) 문항 유형으로 유도(과학 유형 있으면 과학), 그래도 없으면 수학
+  const probType = useMemo(() => new Map(problems.map(p => [p.id, p.typeId])), [problems])
+  const wsSubject = useMemo(() => (w: Worksheet): '수학' | '과학' => {
+    if (w.subject) return w.subject
+    for (const pid of w.problemIds) {
+      const tid = probType.get(pid)
+      if (tid && subjectOfType(tid) === '과학') return '과학'
+    }
+    return '수학'
+  }, [probType])
+
   const list = useMemo(() => {
     let base = worksheets.filter(w => (view === 'trash') === !!w.deletedAt)
+    base = base.filter(w => wsSubject(w) === subject)
     if (gradeFilter !== 'all') base = base.filter(w => gradeGroup(w.grade) === gradeFilter)
     if (tagFilter !== 'all') base = base.filter(w => w.tags.includes(tagFilter))
     if (listFilter !== 'all') base = base.filter(w => w.listIds.includes(listFilter))
@@ -109,7 +123,7 @@ export default function WorksheetList({ view }: { view: View }) {
     return [...base].sort((a, b) => sortMode === 'name'
       ? a.title.localeCompare(b.title, 'ko')
       : b.createdAt.localeCompare(a.createdAt))
-  }, [worksheets, view, q, gradeFilter, sortMode, tagFilter, listFilter, dateFrom, dateTo, excludeReview, mineOnly, wsTypes])
+  }, [worksheets, view, q, gradeFilter, sortMode, tagFilter, listFilter, dateFrom, dateTo, excludeReview, mineOnly, wsTypes, subject, wsSubject])
 
   // 학습지별 출제된 학생 (수업·숙제 무관, 학생 중복 제거)
   const assignedByWs = useMemo(() => {

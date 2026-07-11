@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
-import { CURRICULA, typeName } from '../data/curriculum'
+import { CURRICULA, typeName, subjectOfCourse } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
+import { useSubject } from '../lib/subject'
 import BookCatalogDialog from '../components/BookCatalogDialog'
 import BulkImportModal from '../components/BulkImportModal'
 import type { Diff, Kind, WBItem, Workbook } from '../types'
@@ -9,10 +10,18 @@ import { DIFF_LABEL, DIFFS } from '../types'
 // 시중문제집 관리: 정답표(문항→정답·유형)만 등록. 문제 원문은 저장하지 않는다.
 export default function Workbooks() {
   const { workbooks, wbItems, addWorkbook, removeWorkbook, setWBItems } = useStore()
+  const [subject] = useSubject()
+  // 교재 과목: 저장값 → course로 유도 → 수학(레거시). 헤더 과목 스위처로 필터
+  const shownWorkbooks = useMemo(
+    () => workbooks.filter(w => (w.subject ?? subjectOfCourse(w.course) ?? '수학') === subject),
+    [workbooks, subject],
+  )
   const [sel, setSel] = useState<string | null>(workbooks[0]?.id ?? null)
   const [adding, setAdding] = useState(false)
 
-  const current = workbooks.find(w => w.id === sel) ?? null
+  // 과목 전환 시 선택된 교재가 현재 과목에 없으면 첫 항목으로
+  const selInSubject = shownWorkbooks.some(w => w.id === sel)
+  const current = (selInSubject ? workbooks.find(w => w.id === sel) : shownWorkbooks[0]) ?? null
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === sel).sort((a, b) => a.page - b.page || a.no - b.no),
     [wbItems, sel],
@@ -30,10 +39,10 @@ export default function Workbooks() {
         <div className="h-fit rounded-2xl border border-line bg-white p-4">
           <button onClick={() => setAdding(true)}
             className="mb-3 w-full rounded-lg bg-pine px-3 py-2 text-sm font-bold text-paper">+ 교재 추가</button>
-          {workbooks.length === 0 && (
-            <p className="px-1 text-sm text-ink2">내가 쓰는 문제집을 추가하세요. (쎈, RPM 등)</p>
+          {shownWorkbooks.length === 0 && (
+            <p className="px-1 text-sm text-ink2">{subject} 교재가 없습니다. 위 「+ 교재 추가」로 등록하세요.</p>
           )}
-          {workbooks.map(w => (
+          {shownWorkbooks.map(w => (
             <div key={w.id}
               className={`mb-1 flex items-center gap-1 rounded-lg px-3 py-2 text-sm ${sel === w.id ? 'bg-pine-soft' : 'hover:bg-paper2'}`}>
               <button onClick={() => setSel(w.id)} className="min-w-0 grow text-left">
@@ -63,7 +72,8 @@ export default function Workbooks() {
         existingKeys={new Set(workbooks.map(w => w.matchKey).filter((k): k is string => !!k))}
         onAdd={books => {
           let last: string | null = null
-          for (const b of books) last = addWorkbook(b)
+          // 현재 과목으로 태깅 (course로 유도되면 그 값 우선)
+          for (const b of books) last = addWorkbook({ ...b, subject: subjectOfCourse(b.course) ?? subject })
           if (last) setSel(last)
           setAdding(false)
         }} />}

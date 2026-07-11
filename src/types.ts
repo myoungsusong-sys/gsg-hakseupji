@@ -87,6 +87,7 @@ export interface Worksheet {
   title: string
   author: string
   grade: string
+  subject?: '수학' | '과학'   // 출제 과목 (없으면 레거시 = 수학). 헤더 과목 스위처 목록 필터용
   tags: string[]
   theme: ThemeKey
   problemIds: string[]
@@ -141,6 +142,7 @@ export interface SheetTemplate {
 // 시중문제집: 문제 원문은 저장하지 않는다. 채점·유형 진단용 정답표만.
 export interface Workbook {
   id: string
+  subject?: '수학' | '과학'   // 과목 (없으면 course로 유도, 그래도 없으면 수학)
   name: string          // 예: 쎈 중등수학 1(상)
   publisher: string     // 예: 좋은책신사고
   grade: string

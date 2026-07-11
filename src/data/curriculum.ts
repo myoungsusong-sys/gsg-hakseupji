@@ -1853,6 +1853,22 @@ export function allTypeIds(): string[] {
   return eachType().map(x => x.t.id)
 }
 
+// 과정 id → 과목 (헤더 과목 스위처 목록 필터용)
+export function subjectOfCourse(id?: string): '수학' | '과학' | undefined {
+  if (!id) return undefined
+  return CURRICULA.find(c => c.id === id)?.subject
+}
+
+// 유형 id → 과목. 과학 유형만 트리에 있으므로 과학이면 '과학', 그 외(수학 트리·매쓰플랫 개념id)는 undefined(=수학 취급)
+let _typeSubject: Map<string, '수학' | '과학'> | null = null
+export function subjectOfType(typeId: string): '수학' | '과학' | undefined {
+  if (!_typeSubject) {
+    _typeSubject = new Map()
+    for (const x of eachType()) _typeSubject.set(x.t.id, x.c.subject ?? '수학')
+  }
+  return _typeSubject.get(typeId)
+}
+
 export function typeName(typeId: string): string {
   return eachType().find(x => x.t.id === typeId)?.t.name ?? typeId
 }

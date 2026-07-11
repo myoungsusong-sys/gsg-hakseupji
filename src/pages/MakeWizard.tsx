@@ -393,6 +393,7 @@ export default function MakeWizard() {
       title: title.trim(),
       author: author.trim() || '출제자',
       grade: gradeValue,
+      subject: cur.subject ?? '수학',
       tags: [...tags],
       theme,
       problemIds: items.map(p => p.id),
