@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { CURRICULA } from '../data/curriculum'
+import { CURRICULA, subjectOfType } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
+import { useSubject } from '../lib/subject'
+import { useBrand } from '../lib/brand'
 import ProblemContent from '../components/ProblemContent'
 import FileUploader from '../components/FileUploader'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
@@ -19,7 +21,10 @@ interface DbSet {
 const SET_CATEGORIES = ['전체', '학교별 기출', '직접 입력', '연산 생성', '기타'] as const
 type SetCategory = typeof SET_CATEGORIES[number]
 
-const PUBLISHER = '깊은생각수학'
+// 자료(세트)의 과목 — 문항 유형에 과학이 하나라도 있으면 과학, 아니면 수학
+function setSubjectOf(g: DbSet): '수학' | '과학' {
+  return g.problems.some(p => subjectOfType(p.typeId) === '과학') ? '과학' : '수학'
+}
 
 function categoryOf(source: string): SetCategory {
   if (source === '직접 입력') return '직접 입력'
@@ -39,11 +44,13 @@ function courseOf(typeId: string) {
 export default function MyDb() {
   const { customProblems, addProblem, removeProblem, saveWorksheet } = useStore()
   const nav = useNavigate()
+  const [subject] = useSubject()          // 전역 과목 (헤더 스위처)
+  const brand = useBrand()                // 과목 반영 학원명(게시자)
 
   const [viewMode, setViewMode] = useState<'자료' | '유형'>('자료')   // 보기 전환 탭 (매쓰플랫 동일)
   const [category, setCategory] = useState<SetCategory>('전체')
   const [pubOpen, setPubOpen] = useState(false)                 // 게시자 멀티체크 팝오버
-  const [pubChecked, setPubChecked] = useState<Set<string>>(new Set([PUBLISHER]))  // 체크된 게시자
+  const [pubChecked, setPubChecked] = useState<Set<string>>(() => new Set([brand]))  // 체크된 게시자
   const [publisher, setPublisher] = useState('전체')            // 적용된 게시자 필터
   const [q, setQ] = useState('')                                // 자료명 검색
   const [refreshTick, setRefreshTick] = useState(0)             // ↻ 새로고침 (필터·선택 초기화)
@@ -59,10 +66,16 @@ export default function MyDb() {
   void refreshTick
 
   function refresh() {
-    setCategory('전체'); setPublisher('전체'); setPubChecked(new Set([PUBLISHER]))
+    setCategory('전체'); setPublisher('전체'); setPubChecked(new Set([brand]))
     setQ(''); setSelected([]); setExpanded(null); setMenuFor(null)
     setRefreshTick(t => t + 1)
   }
+
+  // 현재 과목 문항만 (유형 보기용)
+  const subjectProblems = useMemo(
+    () => customProblems.filter(p => (subjectOfType(p.typeId) === '과학' ? '과학' : '수학') === subject),
+    [customProblems, subject],
+  )
 
   const sets = useMemo<DbSet[]>(() => {
     const bySource = new Map<string, Problem[]>()
@@ -76,8 +89,9 @@ export default function MyDb() {
   }, [customProblems])
 
   const visible = sets.filter(g =>
+    setSubjectOf(g) === subject &&
     (category === '전체' || categoryOf(g.source) === category) &&
-    (publisher === '전체' || publisher === PUBLISHER) &&
+    (publisher === '전체' || publisher === brand) &&
     (!q.trim() || g.source.includes(q.trim())))
 
   const visibleSelected = selected.filter(s => visible.some(g => g.source === s))
@@ -125,7 +139,8 @@ export default function MyDb() {
     saveWorksheet({
       id,
       title: g.source,
-      author: PUBLISHER,
+      author: brand,
+      subject: c?.subject ?? setSubjectOf(g),
       grade: c?.grade ?? '중1-1',
       tags: ['나의 DB'],
       theme: 'pine',
@@ -151,7 +166,7 @@ export default function MyDb() {
         ))}
       </div>
 
-      {viewMode === '유형' && <TypeView problems={customProblems} />}
+      {viewMode === '유형' && <TypeView problems={subjectProblems} />}
 
       {viewMode === '자료' && (<>
       {/* 필터 줄 */}
@@ -173,12 +188,12 @@ export default function MyDb() {
               <button onClick={() => setPubChecked(new Set())} className="mb-2 text-xs text-ink2 hover:text-ink">전체 해제</button>
               <label className="flex cursor-pointer items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-paper2">
                 <input type="checkbox" className="h-4 w-4 accent-pine"
-                  checked={pubChecked.has(PUBLISHER)}
-                  onChange={e => setPubChecked(e.target.checked ? new Set([PUBLISHER]) : new Set())} />
-                {PUBLISHER} <span className="text-xs text-ink2">(학원계정)</span>
+                  checked={pubChecked.has(brand)}
+                  onChange={e => setPubChecked(e.target.checked ? new Set([brand]) : new Set())} />
+                {brand} <span className="text-xs text-ink2">(학원계정)</span>
               </label>
               <div className="mt-3 flex justify-end">
-                <button onClick={() => { setPublisher(pubChecked.size === 0 ? '전체' : PUBLISHER); setPubOpen(false) }}
+                <button onClick={() => { setPublisher(pubChecked.size === 0 ? '전체' : brand); setPubOpen(false) }}
                   className="rounded-lg bg-pine px-4 py-1.5 text-sm font-bold text-paper">적용하기</button>
               </div>
             </div>
@@ -227,6 +242,7 @@ export default function MyDb() {
               {visible.map(g => (
                 <SetRow key={g.source} g={g}
                   grade={gradeLabel(g)}
+                  publisher={brand}
                   checked={selected.includes(g.source)}
                   expanded={expanded === g.source}
                   showAll={showAll}
@@ -363,9 +379,10 @@ function TypeView({ problems }: { problems: Problem[] }) {
 
 const PREVIEW_LIMIT = 5
 
-function SetRow({ g, grade, checked, expanded, showAll, menuOpen, onCheck, onExpand, onShowAll, onMenu, onMake, onRemove }: {
+function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onCheck, onExpand, onShowAll, onMenu, onMake, onRemove }: {
   g: DbSet
   grade: string
+  publisher: string
   checked: boolean
   expanded: boolean
   showAll: boolean
@@ -389,7 +406,7 @@ function SetRow({ g, grade, checked, expanded, showAll, menuOpen, onCheck, onExp
           <div className="font-semibold text-ink">{g.source}</div>
           <div className="text-xs font-bold text-pine">{g.problems.length}문제</div>
         </td>
-        <td className="px-3 py-3 text-ink2">{PUBLISHER}</td>
+        <td className="px-3 py-3 text-ink2">{publisher}</td>
         <td className="px-3 py-3 text-ink2">-</td>
         <td className="relative px-3 py-3 text-center" onClick={e => e.stopPropagation()}>
           <button onClick={onMenu} className="rounded px-2 py-1 text-lg leading-none text-ink2 hover:bg-paper2">⋮</button>
