@@ -7,6 +7,7 @@ import { WB_MATCH_BOOKS, loadWbMatch, courseOfGrade, type MatchData, type WbMatc
 import { TEXTBOOK_BOOKS } from '../data/textbooks'
 import { typeName } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
+import { useBrand } from '../lib/brand'
 import type { Problem } from '../types'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL } from '../types'
 
@@ -298,6 +299,7 @@ type RawItem = [string, number, string, number, string?, string?]   // [label, p
 
 function WorkbookDetailDialog({ book, onClose }: { book: WbMatchBook; onClose: () => void }) {
   const store = useStore()
+  const brand = useBrand()
   const { problems, saveWorksheet } = store
   const nav = useNavigate()
   const course = courseOfGrade(book.grade)
@@ -387,7 +389,7 @@ function WorkbookDetailDialog({ book, onClose }: { book: WbMatchBook; onClose: (
     saveWorksheet({
       id,
       title: `${book.name} p.${pgs[0]}~${pgs[pgs.length - 1]} 쌍둥이·유사`,
-      author: '깊은생각수학',
+      author: brand,
       grade: book.grade,
       tags: ['기타자료 유사'],
       theme: 'pine',

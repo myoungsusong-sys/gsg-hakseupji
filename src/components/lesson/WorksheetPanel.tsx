@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import type { Assignment, Diff, GradeResult, Grading, Problem, Student, Worksheet } from '../../types'
 import { DIFF_LABEL } from '../../types'
 import { useStore, uid } from '../../lib/store'
+import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
 import { typeName } from '../../data/curriculum'
 import MathText from '../MathText'
@@ -404,6 +405,7 @@ function SheetAnswer({ p }: { p: Problem }) {
 
 function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
   const { problems, gradings, upsertGrading } = useStore()
+  const brand = useBrand()
   const list = useMemo(() => {
     const m = new Map(problems.map(p => [p.id, p]))
     return ws.problemIds.map(id => m.get(id)).filter((p): p is Problem => !!p)
@@ -547,7 +549,7 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
   // [원클릭 보고서] — 이 학습지 채점 결과를 단톡방용 텍스트로 즉시 복사
   async function oneClickReport() {
     const lines = [
-      `[깊은생각수학] ${student.name} 학습 결과`,
+      `[${brand}] ${student.name} 학습 결과`,
       `📄 ${ws.title}`,
       score != null
         ? `채점 ${live.marked}/${list.length}문항 — 정답 ${live.correct} · 오답 ${live.wrong} · 모름 ${live.unknown} (${score}점)`

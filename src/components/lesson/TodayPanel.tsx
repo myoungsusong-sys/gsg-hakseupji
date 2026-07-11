@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useStore, uid } from '../../lib/store'
+import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
 import { pickProblems } from '../../lib/select'
 import { pickDrillProblems, weakTypes, wrongByType } from '../../lib/drill'
@@ -34,6 +35,7 @@ const REVIEW_MODES: { value: NonNullable<DailyConfig['reviewMode']>; title: stri
 // 매쓰플랫 수업>오늘의 학습 동일 구조: 설정 → 매일 1클릭 자동 출제 → 날짜별 기록
 export default function TodayPanel({ student }: { student: Student }) {
   const { dailyConfigs, setDailyConfig, problems, gradings, wbItems, worksheets, assignments, saveWorksheet, addAssignment, diffMatrix, ensureCourse } = useStore()
+  const brand = useBrand()
   const cfg = dailyConfigs[student.id]
   useEffect(() => { ensureCourse(cfg?.courseId || '') }, [cfg?.courseId])   // 설정 과정 풀 로드
   const [editing, setEditing] = useState(false)
@@ -195,7 +197,7 @@ export default function TodayPanel({ student }: { student: Student }) {
     saveWorksheet({
       id,
       title,
-      author: '깊은생각수학',
+      author: brand,
       grade: student.grade,
       tags: ['오늘의 학습', '일일 TEST'],
       theme: 'amber',

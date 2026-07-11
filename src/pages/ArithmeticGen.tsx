@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { curriculumFor } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
+import { useBrand } from '../lib/brand'
 import MathText from '../components/MathText'
 import GradeSelect from '../components/GradeSelect'
 import type { Problem } from '../types'
@@ -211,6 +212,7 @@ function recommendType(courseId: string, op: OpId): string {
 // ── 페이지 ───────────────────────────────────────────────
 export default function ArithmeticGen() {
   const { addProblem, saveWorksheet } = useStore()
+  const brand = useBrand()
   const nav = useNavigate()
 
   const [op, setOp] = useState<OpId>('nat-add')
@@ -262,7 +264,7 @@ export default function ArithmeticGen() {
     saveWorksheet({
       id: wsId,
       title: `연산 - ${opLabel(op)} (${now.getMonth() + 1}.${now.getDate()})`,
-      author: '깊은생각수학',
+      author: brand,
       grade: curriculumFor(courseId).grade,
       tags: ['연산'],
       theme: 'pine',

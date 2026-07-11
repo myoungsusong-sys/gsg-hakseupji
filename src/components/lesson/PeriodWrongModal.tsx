@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import type { Grading, Student, Worksheet } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
+import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
 import { pickDrillProblems, wrongByType, type TypeStat, type WrongRef } from '../../lib/drill'
 import { achievementOf } from '../../lib/achievement'
@@ -28,6 +29,7 @@ type Way = typeof WAYS[number][0]
 // 매쓰플랫 「단원·기간별 취약 유형 관리」 (풀스크린 3탭) — 원본 구조: 단원 트리 + 우측 2탭
 export default function PeriodWrongModal({ student, onClose }: { student: Student; onClose: () => void }) {
   const { gradings, wbItems, worksheets, problems, assignments, saveWorksheet, addAssignment, ensureCourse } = useStore()
+  const brand = useBrand()
   const nav = useNavigate()
   const [tab, setTab] = useState<Tab>('weak')
   const [from, setFrom] = useState(() => {
@@ -48,7 +50,7 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
     if (problemIds.length === 0) { alert('선발 가능한 문제가 문제은행에 없습니다.'); return }
     const id = uid('ws')
     saveWorksheet({
-      id, title, author: '깊은생각수학',
+      id, title, author: brand,
       grade: (firstTypeId && courseTagOfType(firstTypeId)) || student.grade,
       tags, theme: 'amber', problemIds, conceptIds: [],
       options: { ...DEFAULT_SHEET_OPTIONS, autoGrade, wrongNoteArea: true },

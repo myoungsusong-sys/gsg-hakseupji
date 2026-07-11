@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { SUBJECTS, useSubject } from '../lib/subject'
+import { brandFor } from '../lib/brand'
 
 // 새 배포 감지 — 탭을 오래 열어두면 옛 번들이 계속 도는 문제 방지
 function useUpdateCheck(): boolean {
@@ -125,7 +126,7 @@ export default function Layout() {
     return () => clearTimeout(t)
   }, [toast])
 
-  const academyName = academyProfile.academyName?.trim() || '깊은생각수학'
+  const academyName = brandFor(academyProfile.academyName?.trim() || '깊은생각수학', subject)
 
   // [맨 위로] 플로팅 버튼 — 스크롤이 내려가면 표시 (매쓰플랫 동일)
   const [showTop, setShowTop] = useState(false)

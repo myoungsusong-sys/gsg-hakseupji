@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import type { Diff, Student } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
+import { useBrand } from '../../lib/brand'
 import { pickDrillProblems } from '../../lib/drill'
 import { courseTagOfType } from '../../data/curriculum'
 
@@ -37,6 +38,7 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
   pagePicker?: PagePicker
 }) {
   const { problems, worksheets, assignments, saveWorksheet, addAssignment } = useStore()
+  const brand = useBrand()
   const nav = useNavigate()
 
   // 페이지 선택기 (페이지별 오답학습지에서만)
@@ -125,7 +127,7 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
     saveWorksheet({
       id,
       title: finalTitle,
-      author: '깊은생각수학',
+      author: brand,
       // 학년 뱃지 = 문항 과정 기준 (미적분Ⅰ 오답 학습지가 학생 학년(중1-1)으로 찍히던 문제 수정)
       grade: (effWrongs[0] && courseTagOfType(effWrongs[0].typeId)) || student.grade,
       tags: defaultTags ?? ['오답'],

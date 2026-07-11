@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, subjectOfType } from '../data/curriculum'
 import { useSubject } from '../lib/subject'
+import { useBrand, myAuthorSet } from '../lib/brand'
 import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
 import type { Assignment, Student, Worksheet } from '../types'
@@ -12,8 +13,6 @@ export type View = 'active' | 'favorites' | 'trash'
 
 type GradeGroup = '초' | '중' | '고'
 type SortMode = 'created' | 'name'
-
-const MY_AUTHOR = '깊은생각수학'
 
 // 매쓰플랫 「학습지 유형」 필터 칩 — tags·title 키워드 매칭
 const WS_TYPE_CHIPS = ['단원유형별', '시중교재', '수능모의고사', '학교별 기출', '병합 학습지'] as const
@@ -50,9 +49,11 @@ export default function WorksheetList({ view }: { view: View }) {
     trashWorksheet, restoreWorksheet, purgeWorksheet, duplicateWorksheet,
     addList, renameList, removeList, setWorksheetLists,
     students, assignments, addAssignment,
-    saveWorksheet, updateWorksheet, addMyBook,
+    saveWorksheet, updateWorksheet, addMyBook, academyProfile,
   } = store
   const [subject] = useSubject()
+  const brand = useBrand()
+  const mineSet = useMemo(() => myAuthorSet(academyProfile.academyName?.trim() || '깊은생각수학'), [academyProfile.academyName])
   const [q, setQ] = useState('')
   const [tagFilter, setTagFilter] = useState<string>('all')
   const [gradeFilter, setGradeFilter] = useState<'all' | GradeGroup>('all')
@@ -108,7 +109,7 @@ export default function WorksheetList({ view }: { view: View }) {
     if (dateFrom) base = base.filter(w => w.createdAt.slice(0, 10) >= dateFrom)
     if (dateTo) base = base.filter(w => w.createdAt.slice(0, 10) <= dateTo)
     if (excludeReview) base = base.filter(w => !w.tags.some(t => t.includes('오답') || t.includes('복습')))
-    if (mineOnly) base = base.filter(w => w.author === MY_AUTHOR)
+    if (mineOnly) base = base.filter(w => mineSet.has(w.author))
     if (wsTypes.size > 0) {
       base = base.filter(w => {
         const hay = w.title + ' ' + w.tags.join(' ')
@@ -123,7 +124,7 @@ export default function WorksheetList({ view }: { view: View }) {
     return [...base].sort((a, b) => sortMode === 'name'
       ? a.title.localeCompare(b.title, 'ko')
       : b.createdAt.localeCompare(a.createdAt))
-  }, [worksheets, view, q, gradeFilter, sortMode, tagFilter, listFilter, dateFrom, dateTo, excludeReview, mineOnly, wsTypes, subject, wsSubject])
+  }, [worksheets, view, q, gradeFilter, sortMode, tagFilter, listFilter, dateFrom, dateTo, excludeReview, mineOnly, wsTypes, subject, wsSubject, mineSet])
 
   // 학습지별 출제된 학생 (수업·숙제 무관, 학생 중복 제거)
   const assignedByWs = useMemo(() => {
@@ -227,7 +228,7 @@ export default function WorksheetList({ view }: { view: View }) {
       ...targets.map(w => `- ${w.title} (${w.grade}, ${w.problemIds.length}문제)`),
       '', '※ PDF는 다운로드 후 첨부해 주세요.',
     ].join('\n')
-    location.href = `mailto:?subject=${encodeURIComponent(`[깊은생각수학] 학습지 ${targets.length}개`)}&body=${encodeURIComponent(body)}`
+    location.href = `mailto:?subject=${encodeURIComponent(`[${brand}] 학습지 ${targets.length}개`)}&body=${encodeURIComponent(body)}`
   }
 
   // 일괄 「리스트에 담기」: 선택한 리스트를 선택 학습지 전체에 추가

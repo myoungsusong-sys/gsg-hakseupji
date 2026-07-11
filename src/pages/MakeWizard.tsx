@@ -5,6 +5,7 @@ import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
 import { useStore, uid } from '../lib/store'
 import { getSubject, useSubject, SUBJECTS } from '../lib/subject'
+import { brandFor, myAuthorSet } from '../lib/brand'
 import MathText, { isImageUrl } from '../components/MathText'
 import ProblemContent from '../components/ProblemContent'
 import { ProblemBlock, SheetHeader } from './WorksheetView'
@@ -98,8 +99,9 @@ export default function MakeWizard() {
   const store = useStore()
   const {
     problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments,
-    customProblems, sheetTemplates, addSheetTemplate, removeSheetTemplate,
+    customProblems, sheetTemplates, addSheetTemplate, removeSheetTemplate, academyProfile,
   } = store
+  const academyName = academyProfile.academyName?.trim() || '깊은생각수학'
   const nav = useNavigate()
   const [params] = useSearchParams()
   const editId = params.get('edit')
@@ -171,7 +173,7 @@ export default function MakeWizard() {
   // STEP 3
   const [title, setTitle] = useState('')
   const [wsGrade, setWsGrade] = useState('')                 // 학년 선택 (빈값 = 현재 과정)
-  const [author, setAuthor] = useState('깊은생각수학')
+  const [author, setAuthor] = useState(() => brandFor(academyName, getSubject()))
   const [tags, setTags] = useState<Set<string>>(new Set(['기본']))
   const [theme, setTheme] = useState<ThemeKey>('pine')
   const [opts, setOpts] = useState<SheetOptions>(DEFAULT_SHEET_OPTIONS)
@@ -391,7 +393,10 @@ export default function MakeWizard() {
     if (!title.trim()) { alert('학습지명을 입력해주세요.'); return }
     const payload = {
       title: title.trim(),
-      author: author.trim() || '출제자',
+      // 우리 학원 브랜드 출제자면 이 학습지 과목에 맞춰 표기(깊은생각수학/과학), 커스텀 출제자는 그대로
+      author: myAuthorSet(academyName).has(author.trim())
+        ? brandFor(academyName, cur.subject ?? '수학')
+        : (author.trim() || '출제자'),
       grade: gradeValue,
       subject: cur.subject ?? '수학',
       tags: [...tags],

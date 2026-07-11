@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { toBlob } from 'html-to-image'
 import type { Grading, Student } from '../../types'
 import { useStore } from '../../lib/store'
-import { useSubject } from '../../lib/subject'
+import { useBrand } from '../../lib/brand'
 import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -12,11 +12,6 @@ import { typeName, typeUnitName } from '../../data/curriculum'
 type Mode = 'daily' | 'monthly'
 
 const KIND_LABEL = { daily: '일일 보고지', monthly: '월간 보고서', analysis: '유형분석 보고서' } as const
-
-// 학원명 과목 반영: 과학 보고서면 끝의 '수학'→'과학'(예: 깊은생각수학→깊은생각과학). 그 외 이름은 그대로.
-function brandFor(academyName: string, subject: '수학' | '과학'): string {
-  return subject === '과학' ? academyName.replace(/수학$/, '과학') : academyName
-}
 
 export default function ReportPanel({ student }: { student: Student }) {
   const { savedReports, removeSavedReport } = useStore()
@@ -133,9 +128,8 @@ async function copyText(text: string, done: () => void) {
 // ── 일일 보고지 (하원 시 학부모 단톡방 피드백) ──────────────────────────────
 
 function DailyReport({ student, initialDate }: { student: Student; initialDate?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile } = useStore()
-  const [subject] = useSubject()
-  const brand = brandFor(academyProfile.academyName?.trim() || '깊은생각수학', subject)
+  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport } = useStore()
+  const brand = useBrand()
   const [date, setDate] = useState(initialDate ?? todayKey())
   const initial = dailyNotes.find(n => n.studentId === student.id && n.date === date)
   const [comment, setComment] = useState(initial?.comment ?? '')
@@ -677,9 +671,8 @@ const MONTH_TOGGLES = [
 type MonthToggle = typeof MONTH_TOGGLES[number]['key']
 
 function MonthlyReport({ student, initialMonth }: { student: Student; initialMonth?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, addSavedReport, academyProfile } = useStore()
-  const [subject] = useSubject()
-  const brand = brandFor(academyProfile.academyName?.trim() || '깊은생각수학', subject)
+  const { gradings, workbooks, worksheets, wbItems, addSavedReport } = useStore()
+  const brand = useBrand()
   const [month, setMonth] = useState(initialMonth ?? monthKey(new Date()))
   const [opinion, setOpinion] = useState('')
   const [inc, setInc] = useState<Record<MonthToggle, boolean>>({ history: true, weekly: true, weak: true })
