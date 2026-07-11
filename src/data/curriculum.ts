@@ -249,7 +249,7 @@ const MF_M2_2: Curriculum = {
 
 // 중학교 3학년 1학기 (22개정) — 매쓰플랫 기준 자동생성 (대>중>소>유형=conceptId)
 const MF_M3_1: Curriculum = {
-  id: 'm3-1', grade: '중3-1', label: '중학교 3학년 1학기 (22개정)',
+  id: 'm3-1', grade: '중3-1', label: '중학교 3학년 1학기 (2015개정)',
   units: [
     { id: 'm3-1-u0', name: '실수와 그 계산', mids: [
       { id: 'm3-1-u0m0', name: '제곱근과 실수', subs: [
@@ -313,7 +313,7 @@ const MF_M3_1: Curriculum = {
 
 // 중학교 3학년 2학기 (22개정) — 매쓰플랫 기준 자동생성 (대>중>소>유형=conceptId)
 const MF_M3_2: Curriculum = {
-  id: 'm3-2', grade: '중3-2', label: '중학교 3학년 2학기 (22개정)',
+  id: 'm3-2', grade: '중3-2', label: '중학교 3학년 2학기 (2015개정)',
   units: [
     { id: 'm3-2-u0', name: '삼각비', mids: [
       { id: 'm3-2-u0m0', name: '삼각비', subs: [
