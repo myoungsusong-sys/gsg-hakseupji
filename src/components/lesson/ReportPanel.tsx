@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { toBlob } from 'html-to-image'
 import type { Grading, Student } from '../../types'
 import { useStore } from '../../lib/store'
+import { useSubject } from '../../lib/subject'
 import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -11,6 +12,11 @@ import { typeName, typeUnitName } from '../../data/curriculum'
 type Mode = 'daily' | 'monthly'
 
 const KIND_LABEL = { daily: '일일 보고지', monthly: '월간 보고서', analysis: '유형분석 보고서' } as const
+
+// 학원명 과목 반영: 과학 보고서면 끝의 '수학'→'과학'(예: 깊은생각수학→깊은생각과학). 그 외 이름은 그대로.
+function brandFor(academyName: string, subject: '수학' | '과학'): string {
+  return subject === '과학' ? academyName.replace(/수학$/, '과학') : academyName
+}
 
 export default function ReportPanel({ student }: { student: Student }) {
   const { savedReports, removeSavedReport } = useStore()
@@ -127,7 +133,9 @@ async function copyText(text: string, done: () => void) {
 // ── 일일 보고지 (하원 시 학부모 단톡방 피드백) ──────────────────────────────
 
 function DailyReport({ student, initialDate }: { student: Student; initialDate?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport } = useStore()
+  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile } = useStore()
+  const [subject] = useSubject()
+  const brand = brandFor(academyProfile.academyName?.trim() || '깊은생각수학', subject)
   const [date, setDate] = useState(initialDate ?? todayKey())
   const initial = dailyNotes.find(n => n.studentId === student.id && n.date === date)
   const [comment, setComment] = useState(initial?.comment ?? '')
@@ -367,7 +375,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
   // 단톡방 복사용 텍스트 (교재/학습지 섹션 분리, 모름 표기)
   const kakaoText = useMemo(() => {
     const lines: (string | null)[] = [
-      `[깊은생각수학] ${student.name}${student.klass ? ` (${student.klass})` : ''} 오늘 학습`,
+      `[${brand}] ${student.name}${student.klass ? ` (${student.klass})` : ''} 오늘 학습`,
       `📅 ${dateKr}`,
       (checkIn || checkOut) ? `⏰ 등원 ${checkIn || '—'} · 하원 ${checkOut || '—'}` : null,
       todayPlanText ? `📘 오늘 진도: ${todayPlanText}` : null,
@@ -398,7 +406,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       '오늘도 열심히 했습니다. 감사합니다 😊',
     ]
     return lines.filter((l): l is string => l !== null).join('\n')
-  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan, checkIn, checkOut, nextSession, todayPlanText, nextPlanText])
+  }, [brand, student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan, checkIn, checkOut, nextSession, todayPlanText, nextPlanText])
 
   // 이미지 카드 복사/저장
   const cardRef = useRef<HTMLDivElement>(null)
@@ -554,7 +562,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
         <div className="mb-2 text-center text-xs text-ink2">👇 아래 카드가 그대로 이미지가 됩니다 — [🖼 이미지 카드 복사] 후 카톡에 붙여넣기</div>
         <div className="flex justify-center">
           <div ref={cardRef}>
-            <ReportCard student={student} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
+            <ReportCard student={student} brand={brand} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
               weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
               covered={coveredUnits.units} hasDrill={drills.length > 0} comment={effComment} nextPlan={effNextPlan}
@@ -567,7 +575,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       {/* 인쇄용 일일 보고지 */}
       <div className="print-root mx-auto max-w-3xl rounded-2xl border border-line bg-white p-8 shadow-sm">
         <div className="mb-1 flex items-baseline gap-2">
-          <span className="text-lg font-black text-pine-dark">깊은생각수학</span>
+          <span className="text-lg font-black text-pine-dark">{brand}</span>
           <span className="text-lg font-light">일일 학습 보고서</span>
         </div>
         <div className="mb-4 flex items-center justify-between border-b-2 border-pine pb-2 text-sm">
@@ -669,7 +677,9 @@ const MONTH_TOGGLES = [
 type MonthToggle = typeof MONTH_TOGGLES[number]['key']
 
 function MonthlyReport({ student, initialMonth }: { student: Student; initialMonth?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, addSavedReport } = useStore()
+  const { gradings, workbooks, worksheets, wbItems, addSavedReport, academyProfile } = useStore()
+  const [subject] = useSubject()
+  const brand = brandFor(academyProfile.academyName?.trim() || '깊은생각수학', subject)
   const [month, setMonth] = useState(initialMonth ?? monthKey(new Date()))
   const [opinion, setOpinion] = useState('')
   const [inc, setInc] = useState<Record<MonthToggle, boolean>>({ history: true, weekly: true, weak: true })
@@ -726,7 +736,7 @@ function MonthlyReport({ student, initialMonth }: { student: Student; initialMon
   // 단톡방 복사용 텍스트 (내용 구성 토글 반영)
   const kakaoText = useMemo(() => {
     const lines: (string | null)[] = [
-      `[깊은생각수학] ${student.name}${student.klass ? ` (${student.klass})` : ''} ${Number(m)}월 학습 리포트`,
+      `[${brand}] ${student.name}${student.klass ? ` (${student.klass})` : ''} ${Number(m)}월 학습 리포트`,
       `📅 ${monthKr}`,
       '',
       '📊 이번 달 요약',
@@ -756,7 +766,7 @@ function MonthlyReport({ student, initialMonth }: { student: Student; initialMon
     if (opinion) lines.push('', '📝 선생님 의견', opinion)
     lines.push('', '한 달 동안 수고 많았습니다. 감사합니다 😊')
     return lines.filter((l): l is string => l !== null).join('\n')
-  }, [student.name, student.klass, m, monthKr, studyDays, totalSolved, overall, totalWrong, inc, bookAggs, sheetAggs, weekly, weakTop5, opinion])
+  }, [brand, student.name, student.klass, m, monthKr, studyDays, totalSolved, overall, totalWrong, inc, bookAggs, sheetAggs, weekly, weakTop5, opinion])
 
   return (
     <div>
@@ -797,7 +807,7 @@ function MonthlyReport({ student, initialMonth }: { student: Student; initialMon
       {/* 인쇄용 월간 보고서 */}
       <div className="print-root mx-auto max-w-3xl rounded-2xl border border-line bg-white p-8 shadow-sm">
         <div className="mb-1 flex items-baseline gap-2">
-          <span className="text-lg font-black text-pine-dark">깊은생각수학</span>
+          <span className="text-lg font-black text-pine-dark">{brand}</span>
           <span className="text-lg font-light">월간 학습 보고서</span>
         </div>
         <div className="mb-4 flex items-center justify-between border-b-2 border-pine pb-2 text-sm">
@@ -944,10 +954,10 @@ function KakaoPreview({ text }: { text: string }) {
 const C = { blue: '#2b7de9', blueDark: '#1b5fc2', blueSoft: '#eef5fe', ink: '#1f2937', ink2: '#6b7280',
   line: '#e5e7eb', amberSoft: '#fff7e6', amber: '#b45309', red: '#dc2626', redSoft: '#fdecec', green: '#15803d' }
 
-function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
+function ReportCard({ student, brand, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
   weekAvg, weekDelta, streak, wrongTypes, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut,
   todayPlanText, nextPlanText }: {
-  student: Student; dateKr: string
+  student: Student; brand: string; dateKr: string
   bookRows: { name: string; range: string; total: number; correct: number; unknown: number; score: number }[]
   sheetRows: { name: string; total: number; correct: number; unknown: number; score: number }[]
   totalSolved: number; totalCorrect: number; totalUnknown: number; overall: number
@@ -968,7 +978,7 @@ function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCo
       {/* 헤더 */}
       <div style={{ background: `linear-gradient(135deg, ${C.blue}, ${C.blueDark})`, color: '#fff', padding: '16px 20px 14px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-          <span style={{ fontWeight: 900, fontSize: 15 }}>깊은생각수학</span>
+          <span style={{ fontWeight: 900, fontSize: 15 }}>{brand}</span>
           <span style={{ fontSize: 12, opacity: .85 }}>{dateKr}</span>
         </div>
         <div style={{ marginTop: 6, fontSize: 20, fontWeight: 900 }}>
@@ -1103,7 +1113,7 @@ function ReportCard({ student, dateKr, bookRows, sheetRows, totalSolved, totalCo
         {/* 푸터 */}
         <div style={{ marginTop: 14, paddingTop: 10, borderTop: `1px solid ${C.line}`,
           display: 'flex', justifyContent: 'space-between', fontSize: 10.5, color: C.ink2 }}>
-          <span>깊은생각수학 학습관리 시스템 · 자동 생성</span>
+          <span>{brand} 학습관리 시스템 · 자동 생성</span>
           <span>오늘도 열심히 했습니다 😊</span>
         </div>
       </div>
