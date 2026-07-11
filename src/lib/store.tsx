@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -34,6 +34,7 @@ interface Persisted {
   sheetTemplates: SheetTemplate[]
   lecturePlans: LecturePlan[]
   solveFeedbacks: SolveFeedback[]
+  teachers: Teacher[]
 }
 
 const EMPTY: Persisted = {
@@ -50,6 +51,7 @@ const EMPTY: Persisted = {
   sheetTemplates: [],
   lecturePlans: [],
   solveFeedbacks: [],
+  teachers: [],
 }
 
 interface Store extends Persisted {
@@ -83,6 +85,9 @@ interface Store extends Persisted {
   setLecturePlan: (p: LecturePlan) => void          // 진도표 저장/갱신 (학생×교재 1개)
   removeLecturePlan: (id: string) => void
   saveSolveFeedback: (f: SolveFeedback) => void      // 학생 풀이 AI 피드백 저장 (학생×학습지×문항 최신 1개)
+  addTeacher: (t: Omit<Teacher, 'id' | 'active'>) => string   // 강사 등록
+  updateTeacher: (id: string, patch: Partial<Teacher>) => void
+  removeTeacher: (id: string) => void
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
@@ -153,6 +158,7 @@ function fromCloud(r: CloudData): Persisted {
     sheetTemplates: r.sheetTemplates ?? [],
     lecturePlans: r.lecturePlans ?? [],
     solveFeedbacks: r.solveFeedbacks ?? [],
+    teachers: r.teachers ?? [],
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -165,7 +171,7 @@ function toCloud(s: Persisted): CloudData {
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
-    lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks,
+    lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers,
   }
 }
 
@@ -495,6 +501,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     saveSolveFeedback: f => {
       const next = [...stateRef.current.solveFeedbacks.filter(x => x.id !== f.id), f]
       set(s => ({ ...s, solveFeedbacks: next })); cloud.setSetting('solveFeedbacks', next)
+    },
+    addTeacher: t => {
+      const id = uid('tc')
+      const next = [...stateRef.current.teachers, { ...t, id, active: true }]
+      set(s => ({ ...s, teachers: next })); cloud.setSetting('teachers', next)
+      return id
+    },
+    updateTeacher: (id, patch) => {
+      const next = stateRef.current.teachers.map(t => t.id === id ? { ...t, ...patch } : t)
+      set(s => ({ ...s, teachers: next })); cloud.setSetting('teachers', next)
+    },
+    removeTeacher: id => {
+      const next = stateRef.current.teachers.filter(t => t.id !== id)
+      set(s => ({ ...s, teachers: next })); cloud.setSetting('teachers', next)
     },
   }
 

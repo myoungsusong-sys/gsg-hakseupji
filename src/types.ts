@@ -161,6 +161,19 @@ export interface WBItem {
   diff?: Diff
 }
 
+// 강사 — 다중 강사 운영(매쓰플랫 선생님 관리 등가). 계정 발급 시 t-<loginId>@teacher.gsg.app 로그인.
+export interface Teacher {
+  id: string
+  name: string
+  phone?: string
+  subjects?: string[]        // 담당 과목
+  classes?: string[]         // 담당 반 이름
+  loginId?: string           // 강사 계정 아이디
+  accountCreated?: boolean   // Supabase 계정 발급됨
+  active: boolean
+  memo?: string
+}
+
 export interface Student {
   id: string
   name: string

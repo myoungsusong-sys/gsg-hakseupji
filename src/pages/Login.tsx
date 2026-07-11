@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useAuth } from '../lib/auth'
-import { studentEmailOf } from '../lib/role'
+import { studentEmailOf, teacherEmailOf } from '../lib/role'
 
 // 로그인 — [선생님 | 학생] 탭 (supabase 모드에서만 표시되는 화면)
 // 학생 탭: 아이디(출결번호)+비밀번호 → s-<아이디>@student.gsg.app 규약으로 변환해 로그인
@@ -22,7 +22,10 @@ export default function Login() {
     if (role === 'student') {
       msg = await signIn(studentEmailOf(sid), pw)
     } else {
-      msg = mode === 'in' ? await signIn(email, pw) : await signUp(email, pw)
+      // 강사 로그인 편의: @ 없이 아이디만 입력하면 강사 계정 이메일로 변환 (원장 이메일은 @ 포함)
+      const id = email.trim()
+      const loginEmail = id.includes('@') ? id : teacherEmailOf(id)
+      msg = mode === 'in' ? await signIn(loginEmail, pw) : await signUp(email, pw)
     }
     setBusy(false)
     if (msg) { setErr(translate(msg, role)); return }

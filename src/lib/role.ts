@@ -6,6 +6,15 @@ import type { Student } from '../types'
 // 세션 이메일이 이 도메인이면 학생 모드 → #/student/* 만 접근 가능.
 
 export const STUDENT_EMAIL_DOMAIN = 'student.gsg.app'
+export const TEACHER_EMAIL_DOMAIN = 'teacher.gsg.app'
+
+// 강사 계정 이메일 규약: t-<loginId>@teacher.gsg.app (원장 계정은 별개 — 실제 이메일)
+export function teacherEmailOf(loginId: string): string {
+  return `t-${loginId.trim().toLowerCase()}@${TEACHER_EMAIL_DOMAIN}`
+}
+export function isTeacherAccountEmail(email: string | null | undefined): boolean {
+  return !!email && email.trim().toLowerCase().endsWith(`@${TEACHER_EMAIL_DOMAIN}`)
+}
 
 export function studentEmailOf(loginId: string): string {
   return `s-${loginId.trim().toLowerCase()}@${STUDENT_EMAIL_DOMAIN}`

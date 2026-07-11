@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
-import type { Grading, GradeResult, Student, StudentAppConfig } from '../types'
-import { studentEmailOf } from '../lib/role'
-import { SUPABASE_ON } from '../lib/supabase'
+import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '../types'
+import { studentEmailOf, teacherEmailOf } from '../lib/role'
+import { SUPABASE_ON, supabase } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
 
 const TABS = ['학생 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
@@ -1054,12 +1054,13 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
 // 학생 폼의 "반" 문자열 방식과 양방향 호환 — 저장 시 Student.klass를 갱신한다.
 
 function KlassTab() {
-  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile } = useStore()
+  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile, teachers } = useStore()
   const [query, setQuery] = useState('')
   const [editor, setEditor] = useState<{ name?: string } | null>(null)
   const [sel, setSel] = useState<Set<string>>(new Set())
 
   const teacherName = academyProfile.teacherName?.trim() || '명수쌤'
+  const teacherOfClass = (k: string) => teachers.find(t => t.classes?.includes(k))?.name ?? teacherName
   const active = students.filter(s => s.active)
   const groups = useMemo(() => {
     const m = new Map<string, Student[]>()
@@ -1161,7 +1162,7 @@ function KlassTab() {
                         : `${members[0].name} 외 ${members.length - 1}명`}
                       <span className="ml-1 text-xs text-ink2">({members.length}명)</span>
                     </td>
-                    <td className="px-3 py-2.5">{teacherName}</td>
+                    <td className="px-3 py-2.5">{teacherOfClass(name)}</td>
                     <td className="px-3 py-2.5">
                       <button onClick={() => setEditor({ name })}
                         className="rounded border border-line px-3 py-1 text-xs text-ink2 hover:border-pine hover:text-pine">상세</button>
@@ -1195,10 +1196,12 @@ function KlassTab() {
 // ── 반 만들기 / 반 상세 (전체 화면 + 학생 듀얼 리스트) ─────────────
 
 function KlassEditor({ name, onClose }: { name?: string; onClose: () => void }) {
-  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile } = useStore()
+  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile, teachers, updateTeacher } = useStore()
   const isEdit = !!name
   const teacherName = academyProfile.teacherName?.trim() || '명수쌤'
   const [klassName, setKlassName] = useState(name ?? '')
+  // 담당 강사 — 이 반을 classes에 가진 강사 (없으면 원장 자동)
+  const [teacherId, setTeacherId] = useState<string>(() => (name ? teachers.find(t => t.classes?.includes(name))?.id ?? '' : ''))
   const [selected, setSelected] = useState<Set<string>>(
     () => new Set(name ? students.filter(s => s.active && s.klass === name).map(s => s.id) : []))
   const [query, setQuery] = useState('')
@@ -1269,6 +1272,16 @@ function KlassEditor({ name, onClose }: { name?: string; onClose: () => void }) 
     } else if (!klassOrder.includes(nn)) {
       setKlassOrder([...klassOrder, nn])
     }
+    // 담당 강사 재배정 — 이 반(이름 변경 시 옛 이름 포함)을 모든 강사에서 제거 후 선택 강사에 추가
+    for (const t of teachers) {
+      const has = t.classes?.includes(nn) || (name && t.classes?.includes(name))
+      const shouldHave = t.id === teacherId
+      if (has || shouldHave) {
+        const base = (t.classes ?? []).filter(c => c !== nn && c !== name)
+        const nextClasses = shouldHave ? [...base, nn] : base
+        if (JSON.stringify(nextClasses) !== JSON.stringify(t.classes ?? [])) updateTeacher(t.id, { classes: nextClasses })
+      }
+    }
     onClose()
   }
 
@@ -1312,10 +1325,17 @@ function KlassEditor({ name, onClose }: { name?: string; onClose: () => void }) 
             placeholder="반 이름을 입력해주세요." className={INPUT} />
         </Field>
         <Field label="반 선생님">
-          <div className="flex items-center gap-2">
-            <span className="rounded-lg bg-pine-soft px-3 py-1.5 text-sm font-bold text-pine-dark">{teacherName}</span>
-            <span className="text-xs text-ink2">단일 강사 운영 — 자동 지정</span>
-          </div>
+          {teachers.length === 0 ? (
+            <div className="flex items-center gap-2">
+              <span className="rounded-lg bg-pine-soft px-3 py-1.5 text-sm font-bold text-pine-dark">{teacherName}</span>
+              <span className="text-xs text-ink2">등록된 강사가 없으면 원장 자동 지정 — [선생님 관리]에서 강사 추가</span>
+            </div>
+          ) : (
+            <select value={teacherId} onChange={e => setTeacherId(e.target.value)} className={INPUT}>
+              <option value="">{teacherName} (원장)</option>
+              {teachers.filter(t => t.active).map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+            </select>
+          )}
         </Field>
       </div>
 
@@ -1366,12 +1386,180 @@ function KlassEditor({ name, onClose }: { name?: string; onClose: () => void }) 
 
 // ── 선생님 관리 ────────────────────────────────────
 
+const TEACHER_SUBJECTS = ['수학', '과학', '국어', '영어', '사회'] as const
+
 function TeachersTab() {
+  const { teachers, klassOrder, addTeacher, updateTeacher, removeTeacher } = useStore()
+  const [editor, setEditor] = useState<{ t?: Teacher } | null>(null)
+  const [acct, setAcct] = useState<Teacher | null>(null)
+
   return (
-    <div className="rounded-2xl border border-line bg-white p-6">
-      <h3 className="mb-1 font-black">선생님 관리</h3>
-      <p className="text-sm text-ink2">단일 강사 운영 중 — 강사가 늘어나면 활성화합니다.</p>
+    <div>
+      <div className="mb-4 flex items-center gap-3">
+        <div>
+          <h3 className="font-black">선생님(강사) 관리</h3>
+          <p className="text-sm text-ink2">강사를 등록하고 계정(아이디)을 발급하며, 반을 배정합니다.</p>
+        </div>
+        <div className="grow" />
+        <button onClick={() => setEditor({})}
+          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-105">＋ 강사 등록</button>
+      </div>
+
+      {teachers.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+          등록된 강사가 없습니다. <b>＋ 강사 등록</b>으로 추가하세요.
+        </div>
+      ) : (
+        <div className="overflow-hidden rounded-2xl border border-line bg-white">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-line bg-paper2 text-left text-xs text-ink2">
+                <th className="px-4 py-2.5">이름</th><th>담당 과목</th><th>담당 반</th><th>연락처</th><th>계정</th><th className="text-right pr-4">관리</th>
+              </tr>
+            </thead>
+            <tbody>
+              {teachers.map(t => (
+                <tr key={t.id} className="border-b border-line/50">
+                  <td className="px-4 py-2.5 font-bold">{t.name}{!t.active && <span className="ml-1 text-xs text-ink2">(비활성)</span>}</td>
+                  <td className="text-ink2">{t.subjects?.join('·') || '—'}</td>
+                  <td className="text-ink2">{t.classes?.length ? t.classes.join(', ') : '—'}</td>
+                  <td className="text-ink2">{t.phone || '—'}</td>
+                  <td>
+                    {t.accountCreated
+                      ? <span className="rounded bg-pine-soft px-2 py-0.5 text-xs font-bold text-pine-dark">발급됨 · {t.loginId}</span>
+                      : <button onClick={() => setAcct(t)} className="rounded border border-pine px-2 py-0.5 text-xs font-bold text-pine hover:bg-pine-soft">계정 만들기</button>}
+                  </td>
+                  <td className="pr-4 text-right">
+                    <button onClick={() => setEditor({ t })} className="text-xs font-semibold text-ink2 hover:text-pine">수정</button>
+                    <button onClick={() => { if (confirm(`${t.name} 강사를 삭제할까요? (계정은 남습니다)`)) removeTeacher(t.id) }}
+                      className="ml-3 text-xs font-semibold text-clay hover:underline">삭제</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {editor && (
+        <TeacherEditor teacher={editor.t} klassOptions={klassOrder}
+          onSave={(patch) => {
+            if (editor.t) updateTeacher(editor.t.id, patch)
+            else addTeacher(patch)
+            setEditor(null)
+          }}
+          onClose={() => setEditor(null)} />
+      )}
+      {acct && (
+        <TeacherAccountModal teacher={acct}
+          onDone={(loginId) => { updateTeacher(acct.id, { loginId, accountCreated: true }); setAcct(null) }}
+          onClose={() => setAcct(null)} />
+      )}
     </div>
+  )
+}
+
+function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
+  teacher?: Teacher; klassOptions: string[]
+  onSave: (patch: Omit<Teacher, 'id' | 'active'>) => void; onClose: () => void
+}) {
+  const [name, setName] = useState(teacher?.name ?? '')
+  const [phone, setPhone] = useState(teacher?.phone ?? '')
+  const [subjects, setSubjects] = useState<Set<string>>(new Set(teacher?.subjects ?? []))
+  const [classes, setClasses] = useState<Set<string>>(new Set(teacher?.classes ?? []))
+  const [memo, setMemo] = useState(teacher?.memo ?? '')
+  const toggle = (set: React.Dispatch<React.SetStateAction<Set<string>>>, v: string) =>
+    set(prev => { const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n })
+
+  return (
+    <Modal title={teacher ? '강사 수정' : '강사 등록'} onClose={onClose}>
+      <div className="grid gap-3">
+        <Field label="이름"><input value={name} onChange={e => setName(e.target.value)} autoFocus className={INPUT} placeholder="강사 이름" /></Field>
+        <Field label="연락처"><input value={phone} onChange={e => setPhone(e.target.value)} className={INPUT} placeholder="010-0000-0000" /></Field>
+        <Field label="담당 과목">
+          <div className="flex flex-wrap gap-1.5">
+            {TEACHER_SUBJECTS.map(s => (
+              <button key={s} onClick={() => toggle(setSubjects, s)}
+                className={`rounded-full px-3 py-1.5 text-sm font-bold ${subjects.has(s) ? 'bg-pine text-paper' : 'border border-line text-ink2'}`}>{s}</button>
+            ))}
+          </div>
+        </Field>
+        <Field label="담당 반">
+          {klassOptions.length === 0
+            ? <span className="text-xs text-ink2">먼저 [반 관리]에서 반을 만들면 여기서 배정할 수 있어요.</span>
+            : <div className="flex flex-wrap gap-1.5">
+                {klassOptions.map(k => (
+                  <button key={k} onClick={() => toggle(setClasses, k)}
+                    className={`rounded-full px-3 py-1.5 text-sm font-bold ${classes.has(k) ? 'bg-pine text-paper' : 'border border-line text-ink2'}`}>{k}</button>
+                ))}
+              </div>}
+        </Field>
+        <Field label="메모"><input value={memo} onChange={e => setMemo(e.target.value)} className={INPUT} placeholder="선택" /></Field>
+      </div>
+      <div className="mt-5 flex justify-end gap-2">
+        <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:bg-paper2">취소</button>
+        <button onClick={() => { if (!name.trim()) { alert('이름을 입력하세요.'); return } onSave({ name: name.trim(), phone: phone.trim() || undefined, subjects: [...subjects], classes: [...classes], memo: memo.trim() || undefined, loginId: teacher?.loginId, accountCreated: teacher?.accountCreated }) }}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">저장</button>
+      </div>
+    </Modal>
+  )
+}
+
+function TeacherAccountModal({ teacher, onDone, onClose }: {
+  teacher: Teacher; onDone: (loginId: string) => void; onClose: () => void
+}) {
+  const [loginId, setLoginId] = useState(teacher.loginId ?? '')
+  const [pw, setPw] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [err, setErr] = useState<string | null>(null)
+  const [done, setDone] = useState<{ email: string } | null>(null)
+
+  async function create() {
+    setErr(null)
+    const id = loginId.trim().toLowerCase()
+    if (!/^[a-z0-9._-]{3,}$/.test(id)) { setErr('아이디는 영문·숫자 3자 이상(공백 없이).'); return }
+    if (pw.length < 6) { setErr('비밀번호는 6자 이상.'); return }
+    setBusy(true)
+    try {
+      if (SUPABASE_ON) {
+        const { data: sess } = await supabase!.auth.getSession()
+        const token = sess.session?.access_token
+        const r = await fetch('/api/create-teacher-account', {
+          method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token ?? ''}` },
+          body: JSON.stringify({ loginId: id, password: pw, name: teacher.name }),
+        })
+        if (!r.ok) { const e = await r.json().catch(() => ({})); setErr(e.error || '계정 생성 실패'); setBusy(false); return }
+      }
+      setDone({ email: teacherEmailOf(id) })
+      setBusy(false)
+    } catch { setErr('네트워크 오류'); setBusy(false) }
+  }
+
+  return (
+    <Modal title={`${teacher.name} 강사 계정 만들기`} onClose={onClose}>
+      {done ? (
+        <div className="grid gap-3">
+          <div className="rounded-xl bg-pine-soft/50 p-4 text-sm">
+            <p className="mb-2 font-bold text-pine-dark">✅ 계정이 만들어졌어요. 강사에게 아래 정보를 전달하세요.</p>
+            <div className="rounded-lg bg-white px-3 py-2">아이디: <b>{loginId.trim().toLowerCase()}</b></div>
+            <div className="mt-1 rounded-lg bg-white px-3 py-2">비밀번호: <b>{pw}</b></div>
+            <p className="mt-2 text-xs text-ink2">강사는 로그인 화면 [선생님] 탭에서 <b>아이디</b>(또는 {done.email})와 비밀번호로 로그인합니다.</p>
+          </div>
+          <div className="flex justify-end"><button onClick={() => onDone(loginId.trim().toLowerCase())} className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">완료</button></div>
+        </div>
+      ) : (
+        <div className="grid gap-3">
+          <p className="text-sm text-ink2">강사가 로그인할 아이디와 초기 비밀번호를 정하세요. {SUPABASE_ON ? '실제 로그인 계정이 만들어집니다.' : '(로컬 모드: 아이디만 기록)'}</p>
+          <Field label="아이디 (영문·숫자)"><input value={loginId} onChange={e => setLoginId(e.target.value)} autoFocus className={INPUT} placeholder="예: teacher1" /></Field>
+          <Field label="초기 비밀번호 (6자 이상)"><input value={pw} onChange={e => setPw(e.target.value)} className={INPUT} placeholder="강사에게 전달할 비밀번호" /></Field>
+          {err && <p className="text-sm text-clay">{err}</p>}
+          <div className="flex justify-end gap-2">
+            <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:bg-paper2">취소</button>
+            <button onClick={create} disabled={busy} className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-60">{busy ? '만드는 중…' : '계정 만들기'}</button>
+          </div>
+        </div>
+      )}
+    </Modal>
   )
 }
 
