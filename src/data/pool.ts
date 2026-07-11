@@ -10,7 +10,7 @@ export const POOL_COURSES = [
 ] as const
 
 // 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
-export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int1', 'h-int2', 'm-sci3-2'] as const
+export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int1', 'h-int2', 'm-sci3-2', 'm-sci2-2'] as const
 // [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer, solutionRelPath?]
 //  — 완자 교재 크롭 문항. solution은 정답친해 원본 페이지 이미지(정답·해설, 오류 위험 0)
 type WanjaRaw = [string, string, number, number, string, (string | 0)?]
