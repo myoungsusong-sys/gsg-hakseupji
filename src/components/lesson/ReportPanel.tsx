@@ -132,6 +132,8 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
   const initial = dailyNotes.find(n => n.studentId === student.id && n.date === date)
   const [comment, setComment] = useState(initial?.comment ?? '')
   const [nextPlan, setNextPlan] = useState(initial?.nextPlan ?? '')
+  // '없음' 표시값: 채점·발송 교사가 추가할 내용이 없을 때 한 번에 처리 → 보고서에서 해당 항목 생략(선생님 한마디는 기본문구도 표시 안 함)
+  const isNone = (s: string) => s.trim() === '없음'
   const [checkIn, setCheckIn] = useState(initial?.checkIn ?? '')       // 등원 시간 (체크해야 기록)
   const [checkOut, setCheckOut] = useState(initial?.checkOut ?? '')     // 하원 시간
   const [makeupDate, setMakeupDate] = useState(initial?.makeupDate ?? '') // 보강일 (있으면 다음수업 우선)
@@ -310,7 +312,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     if (weekAvg != null && weekDelta != null) L.push(`지난 7일 평균 ${weekAvg}점 대비 ${weekDelta >= 0 ? '+' : ''}${weekDelta}점`)
     if (streak >= 2) L.push(`연속 학습 ${streak}일째`)
     if (wrongTypes.length) L.push('오늘 취약 유형: ' + wrongTypes.slice(0, 3).map(t => t.name).join(', ') + (drills.length ? ' (오답 드릴 학습지 생성함)' : ''))
-    if (nextPlan) L.push('다음 학습 계획: ' + nextPlan)
+    if (nextPlan && !isNone(nextPlan)) L.push('다음 학습 계획: ' + nextPlan.trim())
     return L.join('\n')
   }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan])
 
@@ -331,11 +333,15 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     return parts.join(' ')
   }, [coveredUnits, totalSolved, totalCorrect, overall, weekDelta, wrongTypes, drills.length, streak])
 
+  // 보고서 출력용 값 — '없음'이면 빈값(섹션 생략), 선생님 한마디는 비었을 때만 기본문구 사용
+  const effComment = isNone(comment) ? '' : (comment.trim() || templateComment)
+  const effNextPlan = isNone(nextPlan) ? '' : nextPlan.trim()
+
   // 선생님 한마디 AI — 작성(generate)/다듬기(polish). 서버리스(/api/comment) 호출, 실패 시 템플릿 폴백.
   const [aiBusy, setAiBusy] = useState<'' | 'generate' | 'polish'>('')
   const [aiNote, setAiNote] = useState('')
   async function aiComment(mode: 'generate' | 'polish') {
-    if (mode === 'polish' && !comment.trim()) { setAiNote('다듬을 내용을 먼저 입력하세요.'); return }
+    if (mode === 'polish' && (!comment.trim() || isNone(comment))) { setAiNote('다듬을 내용을 먼저 입력하세요.'); return }
     setAiBusy(mode); setAiNote('')
     try {
       const r = await fetch('/api/comment', {
@@ -382,11 +388,11 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       wrongTypes.length ? '🔁 오늘 약했던 유형' : null,
       wrongTypes.length ? `· ${wrongTypes.map(t => t.name).join(', ')}` : null,
       wrongTypes.length ? (drills.length ? '→ 오답 드릴 학습지로 복습 예정' : '→ 다음 시간 복습 예정') : null,
-      (comment.trim() || templateComment) ? '' : null,
-      (comment.trim() || templateComment) ? '📝 선생님 한마디' : null,
-      (comment.trim() || templateComment) || null,
-      nextPlan ? '' : null,
-      nextPlan ? `📌 다음 학습: ${nextPlan}` : null,
+      effComment ? '' : null,
+      effComment ? '📝 선생님 한마디' : null,
+      effComment || null,
+      effNextPlan ? '' : null,
+      effNextPlan ? `📌 다음 학습: ${effNextPlan}` : null,
       nextSession ? `📅 다음 수업${nextSession.isMakeup ? '(보강)' : ''}: ${nextSession.label}${nextPlanText ? ` (${nextPlanText})` : ''}` : null,
       '',
       '오늘도 열심히 했습니다. 감사합니다 😊',
@@ -471,6 +477,11 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
                 title="직접 쓴 문장을 AI가 자연스럽고 정중하게 다듬어 줍니다(내용은 유지).">
                 {aiBusy === 'polish' ? '다듬는 중…' : '🪄 AI 다듬기'}
               </button>
+              <button type="button" onClick={() => { const v = isNone(comment) ? '' : '없음'; setComment(v); persist({ comment: v }) }}
+                className={`rounded-md border px-2.5 py-1 text-xs font-bold ${isNone(comment) ? 'border-ink2 bg-ink2/10 text-ink' : 'border-line text-ink2 hover:bg-paper2'}`}
+                title="추가할 내용이 없으면 없음으로 표시 — 보고서엔 이 항목이 빠집니다. 다시 누르면 해제.">
+                {isNone(comment) ? '없음 ✓' : '없음'}
+              </button>
             </div>
           </div>
           <textarea value={comment}
@@ -479,12 +490,20 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
             className="rounded-lg border border-line px-3 py-2 font-normal" />
           {aiNote && <span className="text-xs font-normal text-clay">{aiNote}</span>}
         </div>
-        <label className="grid gap-1 text-sm font-bold">다음 학습 계획 <span className="font-normal text-ink2">(자동 저장)</span>
+        <div className="grid gap-1 text-sm font-bold">
+          <div className="flex flex-wrap items-center justify-between gap-1">
+            <span>다음 학습 계획 <span className="font-normal text-ink2">(자동 저장)</span></span>
+            <button type="button" onClick={() => { const v = isNone(nextPlan) ? '' : '없음'; setNextPlan(v); persist({ nextPlan: v }) }}
+              className={`rounded-md border px-2.5 py-1 text-xs font-bold ${isNone(nextPlan) ? 'border-ink2 bg-ink2/10 text-ink' : 'border-line text-ink2 hover:bg-paper2'}`}
+              title="추가할 내용이 없으면 없음으로 표시 — 보고서엔 이 항목이 빠집니다. 다시 누르면 해제.">
+              {isNone(nextPlan) ? '없음 ✓' : '없음'}
+            </button>
+          </div>
           <textarea value={nextPlan}
             onChange={e => { setNextPlan(e.target.value); persist({ nextPlan: e.target.value }) }} rows={3}
             placeholder="예: 최소공배수 오답 드릴 + 쎈 91~94p"
             className="rounded-lg border border-line px-3 py-2 font-normal" />
-        </label>
+        </div>
       </div>
 
       {/* 수업 일정(다음 수업·보강) + 등·하원 체크 — 코멘트 근처 (자동 저장) */}
@@ -538,7 +557,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
             <ReportCard student={student} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
               weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
-              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={comment.trim() || templateComment} nextPlan={nextPlan}
+              covered={coveredUnits.units} hasDrill={drills.length > 0} comment={effComment} nextPlan={effNextPlan}
               nextSession={nextSession} checkIn={checkIn} checkOut={checkOut}
               todayPlanText={todayPlanText} nextPlanText={nextPlanText} />
           </div>
@@ -628,8 +647,8 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
           )}
         </Section>
 
-        {(comment.trim() || templateComment) && <Section title="📝 선생님 한마디"><p className="whitespace-pre-wrap text-sm leading-relaxed">{comment.trim() || templateComment}</p></Section>}
-        {nextPlan && <Section title="📌 다음 학습 계획"><p className="whitespace-pre-wrap text-sm leading-relaxed">{nextPlan}</p></Section>}
+        {effComment && <Section title="📝 선생님 한마디"><p className="whitespace-pre-wrap text-sm leading-relaxed">{effComment}</p></Section>}
+        {effNextPlan && <Section title="📌 다음 학습 계획"><p className="whitespace-pre-wrap text-sm leading-relaxed">{effNextPlan}</p></Section>}
         {nextSession && <Section title={`📅 다음 수업${nextSession.isMakeup ? ' (보강)' : ''}`}><p className="text-sm font-semibold">{nextSession.label}{nextPlanText ? ` · ${nextPlanText}` : ''}</p></Section>}
 
         <p className="mt-6 text-center text-sm text-ink2">오늘도 열심히 했습니다. 감사합니다 😊</p>
