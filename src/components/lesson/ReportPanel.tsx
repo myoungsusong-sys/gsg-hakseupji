@@ -3,6 +3,7 @@ import { toBlob } from 'html-to-image'
 import type { Grading, Student } from '../../types'
 import { useStore } from '../../lib/store'
 import { useBrand } from '../../lib/brand'
+import { SUPABASE_ON, supabase } from '../../lib/supabase'
 import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -201,8 +202,32 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     const d = new Date()
     return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
   }
-  function stampIn() { const t = checkIn ? '' : (student.arriveTime || nowHM()); setCheckIn(t); persist({ checkIn: t }) }
-  function stampOut() { const t = checkOut ? '' : (student.leaveTime || nowHM()); setCheckOut(t); persist({ checkOut: t }) }
+  function stampIn() { const t = checkIn ? '' : (student.arriveTime || autoAttend?.checkIn || nowHM()); setCheckIn(t); persist({ checkIn: t }) }
+  function stampOut() { const t = checkOut ? '' : (student.leaveTime || autoAttend?.checkOut || nowHM()); setCheckOut(t); persist({ checkOut: t }) }
+
+  // 학원관리앱 출결 자동 반영 — 학생에 mgmtId가 있으면 관리앱 키오스크 등하원을 불러온다(수동 체크가 우선).
+  const [autoAttend, setAutoAttend] = useState<{ checkIn: string; checkOut: string; status: string; late: boolean } | null>(null)
+  useEffect(() => {
+    setAutoAttend(null)
+    if (!SUPABASE_ON || !student.mgmtId) return
+    let alive = true
+    ;(async () => {
+      try {
+        const { data: sess } = await supabase!.auth.getSession()
+        const token = sess.session?.access_token
+        if (!token) return
+        const r = await fetch(`/api/mgmt-attendance?mgmtId=${encodeURIComponent(student.mgmtId!)}&date=${date}`, { headers: { Authorization: `Bearer ${token}` } })
+        if (!r.ok) return
+        const d = await r.json().catch(() => ({}))
+        if (alive && d.attendance) setAutoAttend(d.attendance)
+      } catch { /* 무시 — 자동 반영 실패해도 수동 체크로 동작 */ }
+    })()
+    return () => { alive = false }
+  }, [student.mgmtId, date])
+
+  // 보고서에 쓰는 등원/하원 — 수동 체크 우선, 없으면 관리앱 자동값
+  const effCheckIn = checkIn || autoAttend?.checkIn || ''
+  const effCheckOut = checkOut || autoAttend?.checkOut || ''
 
   const itemMap = useMemo(() => new Map(wbItems.map(i => [i.id, i])), [wbItems])
   const dayGradings = useMemo(
@@ -371,7 +396,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
     const lines: (string | null)[] = [
       `[${brand}] ${student.name}${student.klass ? ` (${student.klass})` : ''} 오늘 학습`,
       `📅 ${dateKr}`,
-      (checkIn || checkOut) ? `⏰ 등원 ${checkIn || '—'} · 하원 ${checkOut || '—'}` : null,
+      (effCheckIn || effCheckOut) ? `⏰ 등원 ${effCheckIn || '—'} · 하원 ${effCheckOut || '—'}` : null,
       todayPlanText ? `📘 오늘 진도: ${todayPlanText}` : null,
       '',
       coveredUnits.units.length ? '📚 오늘 수업 내용' : null,
@@ -400,7 +425,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       '오늘도 열심히 했습니다. 감사합니다 😊',
     ]
     return lines.filter((l): l is string => l !== null).join('\n')
-  }, [brand, student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan, checkIn, checkOut, nextSession, todayPlanText, nextPlanText])
+  }, [brand, student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, comment, templateComment, nextPlan, effCheckIn, effCheckOut, nextSession, todayPlanText, nextPlanText])
 
   // 이미지 카드 복사/저장
   const cardRef = useRef<HTMLDivElement>(null)
@@ -540,14 +565,18 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
         <div className="flex items-center gap-2">
           <span className="font-bold">등·하원</span>
           <button type="button" onClick={stampIn}
-            className={`rounded-lg border px-3 py-1.5 text-xs font-bold ${checkIn ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:border-pine'}`}>
-            {checkIn ? `🟢 등원 ${checkIn}` : '🟢 등원 체크'}
+            className={`rounded-lg border px-3 py-1.5 text-xs font-bold ${effCheckIn ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:border-pine'}`}>
+            {effCheckIn ? `🟢 등원 ${effCheckIn}` : '🟢 등원 체크'}
           </button>
           <button type="button" onClick={stampOut}
-            className={`rounded-lg border px-3 py-1.5 text-xs font-bold ${checkOut ? 'border-clay bg-red-50 text-clay' : 'border-line text-ink2 hover:border-pine'}`}>
-            {checkOut ? `🔴 하원 ${checkOut}` : '🔴 하원 체크'}
+            className={`rounded-lg border px-3 py-1.5 text-xs font-bold ${effCheckOut ? 'border-clay bg-red-50 text-clay' : 'border-line text-ink2 hover:border-pine'}`}>
+            {effCheckOut ? `🔴 하원 ${effCheckOut}` : '🔴 하원 체크'}
           </button>
-          <span className="text-xs text-ink2">누른 시간만 보고서에 표시</span>
+          {autoAttend && (!checkIn || !checkOut) && (effCheckIn || effCheckOut) ? (
+            <span className="rounded-md bg-indigo-50 px-2 py-0.5 text-xs font-bold text-indigo-600" title="학원관리앱 키오스크 등하원이 자동 반영됨. 버튼을 누르면 수동값이 우선합니다.">🏫 관리앱 자동</span>
+          ) : (
+            <span className="text-xs text-ink2">누르면 수동 기록(관리앱보다 우선)</span>
+          )}
         </div>
       </div>
 
@@ -560,7 +589,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
               weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
               covered={coveredUnits.units} hasDrill={drills.length > 0} comment={effComment} nextPlan={effNextPlan}
-              nextSession={nextSession} checkIn={checkIn} checkOut={checkOut}
+              nextSession={nextSession} checkIn={effCheckIn} checkOut={effCheckOut}
               todayPlanText={todayPlanText} nextPlanText={nextPlanText} />
           </div>
         </div>
@@ -576,10 +605,10 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
           <span className="font-bold">{student.name} {student.klass && <span className="font-normal text-ink2">· {student.klass}</span>}</span>
           <span className="text-ink2">{dateKr}</span>
         </div>
-        {(checkIn || checkOut) && (
+        {(effCheckIn || effCheckOut) && (
           <div className="mb-4 flex gap-4 text-sm">
-            <span>🟢 등원 <b>{checkIn || '—'}</b></span>
-            <span>🔴 하원 <b>{checkOut || '—'}</b></span>
+            <span>🟢 등원 <b>{effCheckIn || '—'}</b></span>
+            <span>🔴 하원 <b>{effCheckOut || '—'}</b></span>
           </div>
         )}
         {todayPlanText && (
