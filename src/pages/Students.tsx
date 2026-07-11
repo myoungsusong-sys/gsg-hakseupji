@@ -976,24 +976,31 @@ type MgmtStudent = { mgmtId: string; name: string; grade: string; school: string
 function normPhone(p?: string): string { return (p ?? '').replace(/\D/g, '') }
 
 function MgmtImportModal({ onClose }: { onClose: () => void }) {
-  const { students, addStudent } = useStore()
+  const { students, addStudent, updateStudent } = useStore()
   const [rows, setRows] = useState<MgmtStudent[] | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [sel, setSel] = useState<Set<string>>(new Set())
   const [onlyActive, setOnlyActive] = useState(true)
   const [q, setQ] = useState('')
-  const [done, setDone] = useState<number | null>(null)
+  const [done, setDone] = useState<{ imported: number; linked: number } | null>(null)
 
-  // 이미 연결된 관리앱 학생: mgmtId 매칭 우선, 없으면 이름+연락처 매칭
-  const linked = useMemo(() => {
-    const byMgmt = new Set(students.map(s => s.mgmtId).filter(Boolean) as string[])
-    const byNamePhone = new Set(students.map(s => `${s.name}|${normPhone(s.parentPhone) || normPhone(s.studentPhone)}`))
-    return { byMgmt, byNamePhone }
+  // 관리앱 학생 ↔ 기존 학습지앱 학생 대응: mgmtId 매칭 우선, 없으면 이름+연락처 매칭
+  const byMgmt = useMemo(() => new Map(students.filter(s => s.mgmtId).map(s => [s.mgmtId!, s])), [students])
+  const byNamePhone = useMemo(() => {
+    const m = new Map<string, Student>()
+    for (const s of students) m.set(`${s.name}|${normPhone(s.parentPhone) || normPhone(s.studentPhone)}`, s)
+    return m
   }, [students])
-
-  const isLinked = (m: MgmtStudent) =>
-    linked.byMgmt.has(m.mgmtId) || linked.byNamePhone.has(`${m.name}|${normPhone(m.parentPhone) || normPhone(m.studentPhone)}`)
+  const matchOf = (m: MgmtStudent): Student | undefined =>
+    byMgmt.get(m.mgmtId) || byNamePhone.get(`${m.name}|${normPhone(m.parentPhone) || normPhone(m.studentPhone)}`)
+  // 'linked' 이미 연결됨(스킵) · 'link' 기존 학생에 연결 · 'import' 신규 추가
+  const statusOf = (m: MgmtStudent): 'linked' | 'link' | 'import' => {
+    const ex = matchOf(m)
+    if (!ex) return 'import'
+    return ex.mgmtId === m.mgmtId ? 'linked' : 'link'
+  }
+  const isLinked = (m: MgmtStudent) => statusOf(m) === 'linked'
 
   useEffect(() => {
     let alive = true
@@ -1020,9 +1027,9 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
       .filter(m => (onlyActive ? m.active : true))
       .filter(m => !t || m.name.includes(t) || m.school.includes(t))
       .sort((a, b) => Number(isLinked(a)) - Number(isLinked(b)) || a.name.localeCompare(b.name, 'ko'))
-  }, [rows, onlyActive, q, linked])
+  }, [rows, onlyActive, q, byMgmt, byNamePhone])
 
-  const importable = view.filter(m => !isLinked(m))
+  const importable = view.filter(m => !isLinked(m))   // 연결하기 + 가져오기 (선택 가능)
   const allChecked = importable.length > 0 && importable.every(m => sel.has(m.mgmtId))
   const toggleAll = () => setSel(prev => {
     const n = new Set(prev)
@@ -1033,21 +1040,27 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
 
   function doImport() {
     const pick = (rows ?? []).filter(m => sel.has(m.mgmtId) && !isLinked(m))
-    let n = 0
+    let imported = 0, linkedN = 0
     for (const m of pick) {
-      addStudent({
-        name: m.name,
-        grade: m.grade || '중1',
-        school: m.school || undefined,
-        studentPhone: m.studentPhone || undefined,
-        parentPhone: m.parentPhone || undefined,
-        memo: m.memo || undefined,
-        mgmtId: m.mgmtId,
-      })
-      n++
+      const st = statusOf(m)
+      if (st === 'link') {
+        const ex = matchOf(m)
+        if (ex) { updateStudent(ex.id, { mgmtId: m.mgmtId }); linkedN++ }
+      } else {
+        addStudent({
+          name: m.name,
+          grade: m.grade || '중1',
+          school: m.school || undefined,
+          studentPhone: m.studentPhone || undefined,
+          parentPhone: m.parentPhone || undefined,
+          memo: m.memo || undefined,
+          mgmtId: m.mgmtId,
+        })
+        imported++
+      }
     }
     setSel(new Set())
-    setDone(n)
+    setDone({ imported, linked: linkedN })
   }
 
   return (
@@ -1055,13 +1068,19 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
       {done !== null ? (
         <div className="grid gap-4 py-4 text-center">
           <div className="text-4xl">✅</div>
-          <div className="text-sm text-ink">{done}명을 학습지앱 학생으로 가져왔습니다.</div>
+          <div className="text-sm text-ink">
+            {done.imported > 0 && <>신규 {done.imported}명 가져오기</>}
+            {done.imported > 0 && done.linked > 0 && ' · '}
+            {done.linked > 0 && <>기존 {done.linked}명 연결</>}
+            {done.imported === 0 && done.linked === 0 && '처리된 학생이 없습니다.'}
+            {(done.imported > 0 || done.linked > 0) && ' 완료'}
+          </div>
           <div className="text-xs text-ink2">전과목 학생은 학원관리앱에서 관리되고, 여기선 연결만 됩니다. 학습지앱 단과 학생은 그대로 유지됩니다.</div>
           <button onClick={onClose} className="mx-auto rounded-lg bg-pine px-6 py-2 text-sm font-bold text-paper">확인</button>
         </div>
       ) : (
         <div className="grid gap-3">
-          <p className="text-xs text-ink2">학원관리앱(전과목)의 학생을 학습지앱으로 공유합니다. 이미 연결된 학생은 회색으로 표시되며 중복 추가되지 않습니다.</p>
+          <p className="text-xs text-ink2">학원관리앱(전과목)의 학생을 학습지앱으로 공유합니다. 이름·연락처가 같은 <b>기존 학습지앱 학생은 자동으로 연결</b>되고, 없는 학생만 새로 가져옵니다. 이미 연결된 학생은 회색으로 표시됩니다.</p>
           {loading ? (
             <div className="py-10 text-center text-sm text-ink2">불러오는 중…</div>
           ) : error ? (
@@ -1077,7 +1096,7 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
                   <input type="checkbox" checked={onlyActive} onChange={e => setOnlyActive(e.target.checked)} /> 재원생만
                 </label>
                 <div className="grow" />
-                <span className="text-sm text-ink2">가져올 수 있는 학생 <b className="text-indigo-600">{importable.length}</b>명</span>
+                <span className="text-sm text-ink2">연결/가져올 수 있는 학생 <b className="text-indigo-600">{importable.length}</b>명</span>
               </div>
               <div className="max-h-80 overflow-y-auto rounded-lg border border-line">
                 <table className="w-full text-sm">
@@ -1089,18 +1108,23 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
                   </thead>
                   <tbody>
                     {view.map(m => {
-                      const done = isLinked(m)
+                      const st = statusOf(m)
+                      const isDone = st === 'linked'
                       return (
-                        <tr key={m.mgmtId} className={`border-t border-line ${done ? 'bg-paper2/40 text-ink2' : 'hover:bg-pine-soft/30'}`}>
+                        <tr key={m.mgmtId} className={`border-t border-line ${isDone ? 'bg-paper2/40 text-ink2' : 'hover:bg-pine-soft/30'}`}>
                           <td className="px-3 py-2">
-                            <input type="checkbox" disabled={done} checked={sel.has(m.mgmtId)}
+                            <input type="checkbox" disabled={isDone} checked={sel.has(m.mgmtId)}
                               onChange={() => setSel(p => { const n = new Set(p); n.has(m.mgmtId) ? n.delete(m.mgmtId) : n.add(m.mgmtId); return n })} />
                           </td>
                           <td className="px-2 py-2 font-bold text-ink">{m.name || '—'}</td>
                           <td className="px-2 py-2">{m.grade || '—'}</td>
                           <td className="px-2 py-2">{m.school || '—'}</td>
                           <td className="px-2 py-2">{m.parentPhone || '—'}</td>
-                          <td className="px-2 py-2">{done ? <span className="text-xs text-ink2">연결됨</span> : <span className="text-xs font-bold text-indigo-600">가져오기</span>}</td>
+                          <td className="px-2 py-2">
+                            {st === 'linked' ? <span className="text-xs text-ink2">연결됨</span>
+                              : st === 'link' ? <span className="text-xs font-bold text-pine" title="이름·연락처가 같은 기존 학습지앱 학생에 연결됩니다">🔗 연결하기</span>
+                              : <span className="text-xs font-bold text-indigo-600">가져오기</span>}
+                          </td>
                         </tr>
                       )
                     })}
@@ -1110,7 +1134,7 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
               <div className="flex items-center justify-end gap-2">
                 <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-bold text-ink2">취소</button>
                 <button onClick={doImport} disabled={sel.size === 0}
-                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">{sel.size}명 가져오기</button>
+                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">{sel.size}명 연결/가져오기</button>
               </div>
             </>
           )}
