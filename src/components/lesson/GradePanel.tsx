@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { typeUnitName } from '../../data/curriculum'
+import { typeUnitName, subjectOfCourse } from '../../data/curriculum'
+import { useSubject } from '../../lib/subject'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import type { GradeResult, Grading, Student, WBItem } from '../../types'
@@ -73,8 +74,14 @@ function lvSetScroll(sid: string, wb: string, top: number) {
 
 export default function GradePanel({ student }: { student: Student }) {
   const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems } = useStore()
-  // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 = 배정분)
-  const myBooks = useMemo(() => workbooks.filter(w => w.studentId === student.id), [workbooks, student.id])
+  const [subject] = useSubject()
+  // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 = 배정분) — 현재 과목 모드에 맞는 교재만
+  // (과목 = 명시 subject > course로 유도 > 없으면 수학. 과학 창에서 수학 교재가 뜨지 않도록)
+  const myBooks = useMemo(
+    () => workbooks.filter(w => w.studentId === student.id
+      && (w.subject ?? subjectOfCourse(w.course) ?? '수학') === subject),
+    [workbooks, student.id, subject],
+  )
   const [wbId, setWbId] = useState<string | null>(() => {
     const saved = lvGet(student.id).wb        // 마지막으로 보던 교재 복원 (아직 배정돼 있을 때만)
     return saved && myBooks.some(b => b.id === saved) ? saved : (myBooks[0]?.id ?? null)
@@ -388,11 +395,11 @@ export default function GradePanel({ student }: { student: Student }) {
   if (myBooks.length === 0 || !wb) {
     return (
       <div className="rounded-2xl border border-dashed border-line bg-white/60 p-16 text-center">
-        <p className="mb-4 text-sm text-ink2"><b>{student.name}</b> 학생에게 배정된 교재가 없습니다. 시중교재를 등록하면 문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.</p>
+        <p className="mb-4 text-sm text-ink2"><b>{student.name}</b> 학생에게 배정된 {subject === '과학' ? '과학' : ''} 교재가 없습니다. {subject === '과학' ? '오투 중등과학 교재를 등록하면 쪽·문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.' : '시중교재를 등록하면 문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.'}</p>
         <button onClick={() => setCatalog(true)}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper">＋ 교재 등록</button>
         {catalog && (
-          <BookCatalogDialog defaultGrade={student.grade} existingKeys={existingKeys}
+          <BookCatalogDialog defaultGrade={student.grade} existingKeys={existingKeys} subject={subject}
             onClose={() => setCatalog(false)}
             onAdd={books => {
               let last: string | null = null

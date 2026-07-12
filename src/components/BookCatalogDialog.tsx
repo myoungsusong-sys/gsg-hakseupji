@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { WB_MATCH_BOOKS } from '../data/wbMatch'
 import { TEXTBOOK_BOOKS } from '../data/textbooks'
+import { OTU_BOOKS } from '../data/otuBooks'
+import type { Subject } from '../lib/subject'
 
 // 매쓰플랫 「전체 교재 목록」과 동일한 카탈로그 다이얼로그
 // 시중교재 719종(중1-1~중3-2 · 공통수학1 · 공통수학2 · 대수 · 미적분Ⅰ · 확률과 통계 · 미적분Ⅱ · 기하)
@@ -32,14 +34,16 @@ function tbGradeLabel(schoolType: 'E' | 'M' | 'H', grade: string, semester?: num
 }
 const LEVEL_OF_ST = { E: '초', M: '중', H: '고' } as const
 
-export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string; course?: string }
+export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string; course?: string; subject?: Subject }
 
-export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose, onAdd }: {
+export default function BookCatalogDialog({ defaultGrade, existingKeys, subject = '수학', onClose, onAdd }: {
   defaultGrade?: string
   existingKeys: Set<string>
+  subject?: Subject
   onClose: () => void
   onAdd: (books: CatalogBook[]) => void
 }) {
+  const sci = subject === '과학'
   const [level, setLevel] = useState<typeof LEVELS[number]>('전체')
   const [sub, setSub] = useState('전체')   // 2차 필터: 학년·학기(중) / 과목(고)
   const [tab, setTab] = useState<Tab>('시중교재')
@@ -103,6 +107,14 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
     // TEXTBOOK_BOOKS는 이미 학교급→개정→학년→출판사 순으로 정렬돼 있음
   }, [isTextbook, level, sub, q])
 
+  // 과학(오투) 필터 — 교재명·학년 검색만 (오투 중등과학 5권)
+  const filteredOtu = useMemo(() => {
+    if (!sci) return []
+    const kw = q.trim().toLowerCase()
+    return OTU_BOOKS.filter(b =>
+      !kw || b.name.toLowerCase().includes(kw) || b.grade.includes(kw) || b.publisher.toLowerCase().includes(kw))
+  }, [sci, q])
+
   function toggle(key: string) {
     setChecked(prev => {
       const n = new Set(prev)
@@ -113,7 +125,11 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
 
   function submit() {
     let books: CatalogBook[]
-    if (isTextbook) {
+    if (sci) {
+      books = OTU_BOOKS
+        .filter(b => checked.has(b.key))
+        .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key, course: b.course, subject: '과학' as Subject }))
+    } else if (isTextbook) {
       // 정답표(wb-match) 보유 교과서(393권)는 matchKey·course를 실어 등록 → 시중교재와 동일하게
       // 채점판 번호·정답이 자동 파생. 미보유(정답 미지원)는 matchKey 없이 등록(정답표 수동 등록 필요).
       books = TEXTBOOK_BOOKS
@@ -136,20 +152,20 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
     onAdd([{ name: mName.trim(), publisher: mPub.trim(), grade: mGrade }])
   }
 
-  const showEmpty = isTextbook ? filteredTb.length === 0 : (tab === '시중교재' && filteredMatch.length === 0)
+  const showEmpty = sci ? filteredOtu.length === 0 : isTextbook ? filteredTb.length === 0 : (tab === '시중교재' && filteredMatch.length === 0)
 
   return (
     <div className="fixed inset-0 z-40 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
       <div className="flex max-h-[80vh] w-full max-w-2xl flex-col rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
         <div className="mb-3 flex items-center gap-3">
-          <h3 className="text-lg font-bold">전체 교재 목록</h3>
+          <h3 className="text-lg font-bold">{sci ? '오투 중등과학 교재' : '전체 교재 목록'}</h3>
           <div className="grow" />
           <button onClick={onClose} className="text-ink2 hover:text-ink">✕</button>
         </div>
 
         {/* 필터: 학교급 칩 + 검색 */}
         <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
-          {LEVELS.map(l => (
+          {!sci && LEVELS.map(l => (
             <button key={l} onClick={() => { setLevel(l); setSub('전체') }}
               className={`rounded-full px-3 py-1 text-xs font-bold ${level === l ? 'bg-pine text-paper' : 'border border-line text-ink2 hover:bg-paper2'}`}>
               {l}
@@ -177,15 +193,15 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             className="w-56 rounded-lg border border-line px-3 py-1.5 text-sm" autoFocus />
         </div>
 
-        {/* 탭: 내 교재 | 시그니처 교재 | 시중교재 | 교과서 (기본: 시중교재) */}
-        <div className="mb-3 flex gap-1 border-b border-line text-sm">
+        {/* 탭: 내 교재 | 시그니처 교재 | 시중교재 | 교과서 (기본: 시중교재) — 과학은 오투만이라 탭 없음 */}
+        {!sci && <div className="mb-3 flex gap-1 border-b border-line text-sm">
           {TABS.map(t => (
             <button key={t} onClick={() => { setTab(t); setSub('전체') }}
               className={`-mb-px px-3 py-2 font-semibold ${tab === t ? 'border-b-2 border-ink font-bold text-ink' : 'text-ink2 hover:text-ink'}`}>
               {t}
             </button>
           ))}
-        </div>
+        </div>}
 
         {/* 교재 표 */}
         <div className="min-h-0 grow overflow-y-auto rounded-xl border border-line">
@@ -199,7 +215,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
             </thead>
             <tbody>
               {/* 시중교재 */}
-              {!isTextbook && filteredMatch.map(b => {
+              {!sci && !isTextbook && filteredMatch.map(b => {
                 const has = existingKeys.has(b.key)
                 const on = checked.has(b.key)
                 return (
@@ -224,7 +240,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
                 )
               })}
               {/* 교과서 */}
-              {isTextbook && filteredTb.map(b => {
+              {!sci && isTextbook && filteredTb.map(b => {
                 const on = checked.has(b.key)
                 return (
                   <tr key={b.key} onClick={() => toggle(b.key)}
@@ -247,13 +263,38 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
                   </tr>
                 )
               })}
+              {/* 과학: 오투 중등과학 교재 */}
+              {sci && filteredOtu.map(b => {
+                const has = existingKeys.has(b.key)
+                const on = checked.has(b.key)
+                return (
+                  <tr key={b.key} onClick={() => { if (!has) toggle(b.key) }}
+                    className={`border-t border-line/50 ${has ? '' : `cursor-pointer ${on ? 'bg-pine-soft/50' : 'hover:bg-paper2'}`}`}>
+                    <td className="px-3 py-1.5">
+                      <input type="checkbox" checked={on || has} disabled={has} readOnly
+                        className="pointer-events-none accent-[var(--color-pine,#2e6b4f)] disabled:opacity-40" />
+                    </td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
+                      <div>{gradeLabel(b.grade)}</div>
+                      <div className="text-[10px]">과학 · {b.count}문항</div>
+                    </td>
+                    <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">OX채점</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
+                    <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">
+                      {has ? <><span className="text-green-500">●</span> 이미 배정됨</> : '-'}
+                    </td>
+                  </tr>
+                )
+              })}
               {/* 내 교재 · 시그니처 교재: 데이터 없음 */}
             </tbody>
           </table>
           {showEmpty && (
             <p className="whitespace-pre-line p-8 text-center text-sm text-ink2">{'검색 결과가 없습니다.\n다시 입력해주세요.'}</p>
           )}
-          {(tab === '내 교재' || tab === '시그니처 교재') && (
+          {!sci && (tab === '내 교재' || tab === '시그니처 교재') && (
             <p className="whitespace-pre-line p-8 text-center text-sm text-ink2">{'표시할 교재가 없습니다.'}</p>
           )}
         </div>
@@ -273,13 +314,13 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, onClose,
           </button>
         </div>
 
-        {/* 직접 입력 폴백 (작은 링크) */}
-        <div className="mt-2 text-right">
+        {/* 직접 입력 폴백 (작은 링크) — 과학(오투)은 매칭 교재만이라 숨김 */}
+        {!sci && <div className="mt-2 text-right">
           <button onClick={() => setManual(v => !v)}
             className="text-xs text-ink2 underline hover:text-ink">직접 입력</button>
-        </div>
+        </div>}
 
-        {manual && (
+        {!sci && manual && (
           <div className="mt-2 flex flex-wrap items-end gap-2 rounded-xl border border-line bg-paper2 p-3 text-sm">
             <label className="grid gap-1 text-xs font-bold">교재명
               <input value={mName} onChange={e => setMName(e.target.value)} placeholder="쎈 중등수학 1(상)"

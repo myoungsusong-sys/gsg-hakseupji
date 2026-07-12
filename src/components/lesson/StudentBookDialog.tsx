@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
+import { useSubject } from '../../lib/subject'
+import { subjectOfCourse } from '../../data/curriculum'
 import type { Student } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 
@@ -14,12 +16,17 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
   onClose: () => void
 }) {
   const { workbooks, gradings, addWorkbook, removeWorkbook } = useStore()
+  const [subject] = useSubject()
   const [selId, setSelId] = useState<string | null>(currentId)
   const [tab, setTab] = useState<Tab>('전체')
   const [catalog, setCatalog] = useState(false)
 
-  // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 다이얼로그)
-  const myBooks = useMemo(() => workbooks.filter(w => w.studentId === student.id), [workbooks, student.id])
+  // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 다이얼로그) — 현재 과목 모드에 맞는 교재만
+  const myBooks = useMemo(
+    () => workbooks.filter(w => w.studentId === student.id
+      && (w.subject ?? subjectOfCourse(w.course) ?? '수학') === subject),
+    [workbooks, student.id, subject],
+  )
   const rows = useMemo(() => {
     return [...myBooks]
       // 학생 학년과 같은 과정 우선 (stable sort)
@@ -127,6 +134,7 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
           <BookCatalogDialog
             defaultGrade={student.grade}
             existingKeys={existingKeys}
+            subject={subject}
             onClose={() => setCatalog(false)}
             onAdd={books => {
               let last: string | null = null
