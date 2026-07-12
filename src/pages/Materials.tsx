@@ -5,9 +5,10 @@ import Placeholder from '../components/Placeholder'
 import Workbooks from './Workbooks'
 import { WB_MATCH_BOOKS, loadWbMatch, courseOfGrade, type MatchData, type WbMatchBook } from '../data/wbMatch'
 import { TEXTBOOK_BOOKS } from '../data/textbooks'
-import { typeName } from '../data/curriculum'
+import { typeName, subjectOfCourse } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
 import { useBrand } from '../lib/brand'
+import { useSubject } from '../lib/subject'
 import type { Problem } from '../types'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL } from '../types'
 
@@ -160,12 +161,27 @@ function MakeBookModal({ worksheets, onClose, onSave }: {
 type MarketRow = {
   key: string; name: string; publisher: string; grade: string
   kind: '시중교재' | '교과서'; count: number; answer: boolean
+  course?: string                          // 과목 판별용 과정 id
   matchBook?: WbMatchBook
   tbMatchKey?: string; tbCourse?: string   // 교과서 정답표(wb-match) 매칭 — 등록 시 자동 채점
+  sciCourse?: string                       // 과학 교재(오투 등) — 클릭 시 그 과정으로 학습지 만들기
 }
+
+// 오투 과학 교재 — 이미지 문제풀로 편입된 과정(WANJA_COURSES). 교재 검색에서 찾아 바로 출제.
+const OTU_BOOKS: { name: string; grade: string; course: string; count: number }[] = [
+  { name: '오투 중등과학 1-1 (22개정)', grade: '중1', course: 'm-sci1-1', count: 379 },
+  { name: '오투 중등과학 1-2 (22개정)', grade: '중1', course: 'm-sci1-2', count: 336 },
+  { name: '오투 중등과학 2-1 (22개정)', grade: '중2', course: 'm-sci2-1', count: 432 },
+  { name: '오투 중등과학 2-2 (22개정)', grade: '중2', course: 'm-sci2-2', count: 419 },
+  { name: '오투 중등과학 3-2 (15개정)', grade: '중3', course: 'm-sci3-2', count: 359 },
+  { name: '오투 고등 통합과학1 (22개정)', grade: '고1', course: 'h-int1', count: 361 },
+  { name: '오투 고등 통합과학2 (22개정)', grade: '고1', course: 'h-int2', count: 335 },
+]
 
 function MarketCatalog() {
   const { workbooks, addWorkbook } = useStore()
+  const [subject] = useSubject()
+  const nav = useNavigate()
   const [level, setLevel] = useState<'전체' | '초' | '중' | '고'>('전체')
   const [course, setCourse] = useState('전체')
   const [kind, setKind] = useState<'전체' | '시중교재' | '교과서'>('전체')
@@ -177,7 +193,7 @@ function MarketCatalog() {
   const rows = useMemo<MarketRow[]>(() => {
     const market: MarketRow[] = WB_MATCH_BOOKS.map(b => ({
       key: `m|${b.key}`, name: b.name, publisher: b.publisher, grade: b.grade,
-      kind: '시중교재', count: b.count, answer: true, matchBook: b,
+      kind: '시중교재', count: b.count, answer: true, course: b.course, matchBook: b,
     }))
     // 교과서 405종 (BookCatalogDialog와 동일 카탈로그 재사용) — 정답표는 수동 등록
     const tb: MarketRow[] = TEXTBOOK_BOOKS.map(b => ({
@@ -185,15 +201,24 @@ function MarketCatalog() {
       name: `${b.name}${b.rev === '15' ? ' (15개정)' : ''}`,
       publisher: b.publisher,
       grade: b.schoolType === 'E' ? `초${b.grade}${b.semester ? `-${b.semester}` : ''}` : b.schoolType === 'M' ? `중${b.grade}` : b.grade,
-      kind: '교과서', count: b.count, answer: !!b.hasAnswers,
+      kind: '교과서', count: b.count, answer: !!b.hasAnswers, course: b.course,
       ...(b.hasAnswers ? { tbMatchKey: b.matchKey, tbCourse: b.course } : {}),
     }))
-    return [...market, ...tb]
+    // 오투 과학 교재 — 클릭 시 그 과정으로 학습지 만들기
+    const sci: MarketRow[] = OTU_BOOKS.map(b => ({
+      key: `s|${b.course}`, name: b.name, publisher: '비상교육', grade: b.grade,
+      kind: '시중교재', count: b.count, answer: false, course: b.course, sciCourse: b.course,
+    }))
+    return [...market, ...tb, ...sci]
   }, [])
+
+  // 교재 과목: 과정으로 유도(과학 과정이면 과학, 그 외/무과정=수학)
+  const rowSubject = (r: MarketRow) => subjectOfCourse(r.course) ?? '수학'
 
   const list = useMemo(() => {
     const kw = q.trim().toLowerCase()
     return rows.filter(r => {
+      if (rowSubject(r) !== subject) return false
       if (kind !== '전체' && r.kind !== kind) return false
       if (level === '초' && !r.grade.startsWith('초')) return false
       if (level === '중' && !r.grade.startsWith('중')) return false
@@ -202,7 +227,7 @@ function MarketCatalog() {
       if (kw && !r.name.toLowerCase().includes(kw) && !r.publisher.toLowerCase().includes(kw)) return false
       return true
     })
-  }, [rows, level, course, kind, q])
+  }, [rows, level, course, kind, q, subject])
 
   return (
     <div>
@@ -248,18 +273,26 @@ function MarketCatalog() {
                   <tr key={r.key} className="border-t border-line/60">
                     <td className="px-4 py-2 text-ink2">{r.grade}<br /><span className="text-[10px]">{r.name.includes('(15개정)') ? '(15개정)' : '(22개정)'}</span></td>
                     <td className="font-semibold">
-                      {r.matchBook ? (
+                      {r.sciCourse ? (
+                        <button onClick={() => nav(`/make?course=${r.sciCourse}`)} className="text-left hover:underline" title="이 교재의 문제로 학습지 만들기">
+                          {r.name}
+                        </button>
+                      ) : r.matchBook ? (
                         <button onClick={() => setDetail(r.matchBook!)} className="text-left hover:underline" title="페이지·문항 상세 보기">
                           {r.name}
                         </button>
                       ) : r.name.replace(' (15개정)', '')}
                       {r.matchBook && <span className="ml-1.5 rounded bg-lime-100 px-1.5 py-0.5 text-[10px] font-bold text-lime-700">쌍둥이 지원</span>}
+                      {r.sciCourse && <span className="ml-1.5 rounded bg-indigo-100 px-1.5 py-0.5 text-[10px] font-bold text-indigo-700">문제은행</span>}
                       <div className="text-[11px] font-normal text-ink2">{r.count.toLocaleString()}문항</div>
                     </td>
                     <td className="text-ink2">{r.answer ? '지원' : '미지원'}</td>
                     <td className="text-ink2">{r.publisher}</td>
                     <td className="pr-4 text-right">
-                      {r.matchBook ? (
+                      {r.sciCourse ? (
+                        <button onClick={() => nav(`/make?course=${r.sciCourse}`)}
+                          className="rounded-lg border border-indigo-500 px-3 py-1 text-xs font-bold text-indigo-600 hover:bg-indigo-50">학습지 만들기</button>
+                      ) : r.matchBook ? (
                         has ? <span className="text-xs text-ink2">등록됨</span> : (
                           <button onClick={() => addWorkbook({ name: r.name, publisher: r.publisher, grade: r.grade, matchKey: r.matchBook!.key })}
                             className="rounded-lg border border-pine px-3 py-1 text-xs font-bold text-pine hover:bg-pine-soft">출제하기</button>
