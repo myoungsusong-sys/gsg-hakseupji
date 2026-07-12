@@ -206,19 +206,23 @@ export default function GradePanel({ student }: { student: Student }) {
     timerRef.current = setTimeout(() => flushRef.current(), 900)
   }
 
-  // 범위·교재·학생이 바뀌면: 대기분 즉시 저장 → 그 범위의 오늘 채점 기록을 불러와 이어서 채점
+  // 범위·교재·학생이 바뀌면: 대기분 즉시 저장 → 채점 기록을 불러와 이어서 채점.
+  // ★ 정확한 쪽 범위 일치에 의존하지 않는다 — 이 학생·이 교재의 '모든' 채점 기록을
+  //    오래된→최신 순으로 병합(최신이 덮어씀)해 복원한다. 그래서 채점 후 다른 페이지를
+  //    보다가 학생을 갔다 와도(=복원 범위가 채점 범위와 달라도) 정답·오답 표시가 유지된다.
   useEffect(() => {
+    const pend = pendingRef.current   // 아직 store에 반영 안 된 대기 저장분(같은 학생 범위 전환 시)
     flushRef.current()
     gidRef.current = null
-    const today = todayKey()
-    const exist = gradingsRef.current.find(g =>
-      g.studentId === student.id && g.workbookId === wbId &&
-      g.pageFrom === from && g.pageTo === to && dateKey(g.date) === today)
+    const relevant = gradingsRef.current
+      .filter(g => g.studentId === student.id && g.workbookId === wbId)
+      .slice()
+      .sort((a, b) => a.date.localeCompare(b.date))
+    if (pend && pend.workbookId === wbId) relevant.push(pend)   // 방금 마킹분을 최신으로 취급
     const seeded: Record<string, Mark> = {}
-    if (exist) {
-      for (const r of exist.results) {
+    for (const g of relevant) {
+      for (const r of g.results) {
         if (!r.itemId) continue
-        // 기록에 있는 문항만 복원 — 정답 마킹도 복원 (기록 없는 문항은 미채점 유지)
         seeded[r.itemId] = r.unknown ? '모름' : r.correct ? '정답' : '오답'
       }
     }
