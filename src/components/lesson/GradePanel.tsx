@@ -3,6 +3,7 @@ import { typeUnitName, subjectOfCourse } from '../../data/curriculum'
 import { useSubject } from '../../lib/subject'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
+import { wbAnswerImg } from '../../lib/answers'
 import type { GradeResult, Grading, Student, WBItem } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 import BulkImportModal from '../BulkImportModal'
@@ -18,6 +19,14 @@ function AnswerLabel({ item }: { item: WBItem }) {
   if (!a) return null
   const wrap = (v: ReactNode, faded = false) => (
     <div className="mt-0.5 text-xs text-ink2">정답 <span className={faded ? 'text-ink2/70' : 'text-[15px] font-extrabold text-ink'}>{v}</span></div>
+  )
+  // 서술형: 정답이 이미지(매쓰플랫 answer.png)로 제공되는 문항 → 매쓰플랫과 동일하게 정답 이미지 표시
+  const img = wbAnswerImg(a)
+  if (img) return (
+    <div className="mt-0.5 text-xs text-ink2">정답
+      <img src={img} alt="정답" loading="lazy"
+        className="mt-0.5 max-h-24 w-auto max-w-full rounded border border-line bg-white" />
+    </div>
   )
   if (['.', '-'].includes(a.trim())) return wrap('풀이참조', true)
   if (item.kind === '객관식') {

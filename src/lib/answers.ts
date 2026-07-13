@@ -1,6 +1,16 @@
 // 답안 정규화 — 채점 대조는 normAnswer(a) === normAnswer(b)
 const CIRCLED = '①②③④⑤'
 
+// 매쓰플랫 서술형(정답이 텍스트로 없는 문항) — 정답이 풀이(정답) 이미지로만 제공된다.
+// 수집 시 answer 를 `@<pid>/<hash>` 마커로 저장 → 표시 때 매쓰플랫 CDN answer.png 로 렌더.
+// (pool.ts 의 broken 정답 처리와 동일한 freewheelin-contents CDN·이미지 방식)
+export function wbAnswerImg(answer: string | undefined | null): string | null {
+  if (!answer) return null
+  const m = answer.trim().match(/^@(\d+)\/([0-9a-f]+)$/i)
+  if (!m) return null
+  return `https://freewheelin-contents.mathflat.com/problem/${m[1]}/${m[2]}/answer.png`
+}
+
 export function normAnswer(s: string): string {
   let t = s.trim()
   // 공백 전부 제거
