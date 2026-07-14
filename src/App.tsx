@@ -31,6 +31,8 @@ import CsatLibrary from './pages/CsatLibrary'
 import GichulView from './pages/GichulView'
 import GichulTag from './pages/GichulTag'
 import ArithmeticGen from './pages/ArithmeticGen'
+import LecturePage from './pages/LecturePage'
+import EssayPage from './pages/EssayPage'
 import WorksheetUpload from './pages/WorksheetUpload'
 
 function Page({ children }: { children: React.ReactNode }) {
@@ -103,16 +105,8 @@ function Gate() {
                   plan="KMM 문항 데이터를 확보하면 회차/유형별로 탑재. (별도 라이선스·데이터 필요)" />
               } />
               <Route path="/prep/arithmetic" element={<ArithmeticGen />} />
-              <Route path="/prep/essay" element={
-                <Placeholder title="서술형"
-                  original={['단원별 서술형 세트(기본/일반/심화, 10문제 단위)']}
-                  plan="서술형 문제를 유형 트리에 태그로 얹어 세트 생성." />
-              } />
-              <Route path="/prep/lecture" element={
-                <Placeholder title="강의"
-                  original={['개념 강의 영상 목록(강 단위) + 출제하기(영상 숙제) + 학생앱 공개 토글 + 시청 내역']}
-                  plan="명수쌤 강의 영상(녹음 파이프라인 산출물)을 단원 트리에 연결." />
-              } />
+              <Route path="/prep/essay" element={<EssayPage />} />
+              <Route path="/prep/lecture" element={<LecturePage />} />
               <Route path="/prep/share" element={
                 <Placeholder title="다른 기관 학습지"
                   original={['타 학원 공개 학습지 검색(난이도·문제 수 슬라이더) — 상호 공개 마켓']}
