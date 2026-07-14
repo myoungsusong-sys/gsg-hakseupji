@@ -8,10 +8,15 @@ export const POOL_COURSES = [
   'e1-1', 'e1-2', 'e2-1', 'e2-2', 'e3-1', 'e3-2', 'e4-1', 'e4-2', 'e5-1', 'e5-2', 'e6-1', 'e6-2',
   'm1-1', 'm1-2', 'm2-1', 'm2-2', 'm3-1', 'm3-2', 'm3-2-2015',
   'h-cm1', 'h-cm2', 'h-alg', 'h-calc1', 'h-stat', 'h-calc2', 'h-geo',
+  // 사이언스플랫 과학 — 매쓰플랫형 Raw 문제은행(정답 포함, 자동채점). 이미지 CDN만 다름(SCI_POOL_COURSES)
+  'm-sci1-1', 'm-sci2-1', 'h-int1',
 ] as const
 
+// 사이언스플랫 문제은행을 쓰는 과학 과정 — 이미지 CDN이 scienceflat-contents.scienceflat.com (매쓰플랫과 다름)
+export const SCI_POOL_COURSES: readonly string[] = ['m-sci1-1', 'm-sci2-1', 'h-int1']
+
 // 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
-export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int1', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-1', 'm-sci1-2', 'm-sci2-1'] as const
+export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const
 // [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer, solutionRelPath?]
 //  — 완자 교재 크롭 문항. solution은 정답친해 원본 페이지 이미지(정답·해설, 오류 위험 0)
 type WanjaRaw = [string, string, number, number, string, (string | 0)?]
@@ -38,9 +43,9 @@ function choiceAnswer(a: string): string {
   }).join(',')
 }
 
-function toProblem(id: string, r: Raw): Problem {
+function toProblem(id: string, r: Raw, host = 'freewheelin-contents.mathflat.com'): Problem {
   const [pid, hash, cid, level, isC, ans] = r
-  const base = `https://freewheelin-contents.mathflat.com/problem/${pid}/${hash}`
+  const base = `https://${host}/problem/${pid}/${hash}`
   // 답이 이미지로만 제공되는 문항(수집값 '.'·빈값·'풀이참조') → answer.png (같은 해시)
   const broken = !ans || ['.', '-', '풀이참조'].includes(ans.trim())
   const answer = broken ? `${base}/answer.png` : (isC ? choiceAnswer(ans) : ans)
@@ -78,10 +83,11 @@ export function loadPool(course: string): Promise<Problem[]> {
     p = fetch(`${import.meta.env.BASE_URL}pool-${course}.json`)
       .then(r => { if (!r.ok) throw new Error('pool ' + course + ' ' + r.status); return r.json() })
       .then((d: Record<string, Raw | WanjaRaw>) => {
+        const host = SCI_POOL_COURSES.includes(course) ? 'scienceflat-contents.scienceflat.com' : 'freewheelin-contents.mathflat.com'
         const arr = isWanja
           ? Object.entries(d).map(([k, r]) => toWanjaProblem(k, r as WanjaRaw))
           // 키 정규화: 'mf' 접두 통일 (기존 학습지 problemIds가 mf<pid> 형식)
-          : Object.entries(d).map(([k, r]) => toProblem(k.startsWith('mf') ? k : 'mf' + k, r as Raw))
+          : Object.entries(d).map(([k, r]) => toProblem(k.startsWith('mf') ? k : 'mf' + k, r as Raw, host))
         cache.set(course, arr)
         return arr
       })
