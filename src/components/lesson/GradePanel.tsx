@@ -36,8 +36,17 @@ function AnswerLabel({ item }: { item: WBItem }) {
     }).join(',')
     return wrap(t)
   }
-  if (/[\\{}^_]/.test(a)) return wrap(<MathText text={`$${a}$`} />)
+  if (/[\\{}^_]/.test(a)) return wrap(<MathText text={`$${safeLatex(a)}$`} />)
   return wrap(a)
+}
+
+// 혹시 남아 있을 잘린 LaTeX(끝이 \ 이거나 중괄호 불균형)도 KaTeX가 throw해 원문이 노출되지 않도록 보정
+function safeLatex(s: string): string {
+  let t = s.replace(/\\+\s*$/, '')          // 끝의 백슬래시 제거
+  const open = (t.match(/{/g) || []).length
+  const close = (t.match(/}/g) || []).length
+  if (open > close) t += '}'.repeat(open - close)  // 열린 중괄호 닫기
+  return t
 }
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
