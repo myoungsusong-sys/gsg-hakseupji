@@ -19,15 +19,19 @@ const TABS = ['내 교재', '시그니처 교재', '시중교재', '교과서'] 
 type Tab = typeof TABS[number]
 
 // 2차 필터 (매쓰플랫 동일): 중=학년·학기 드롭다운, 고=과목 드롭다운
-const MID_TERMS = ['중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2']
+const MID_TERMS = ['중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2', '중3-2(2015)']
 const HIGH_SUBJECTS = ['공통수학1', '공통수학2', '대수', '미적분Ⅰ', '확률과 통계', '미적분Ⅱ', '기하']
 const ELEM_TERMS = ['초1-1', '초1-2', '초2-1', '초2-2', '초3-1', '초3-2', '초4-1', '초4-2', '초5-1', '초5-2', '초6-1', '초6-2']
 
-// 학년 표기 (매쓰플랫 동일): 초등 "초 3-1", 중등 "중 1-1", 고등은 과목명 그대로
+// 학년 표기 (매쓰플랫 동일): 초등 "초 3-1", 중등 "중 1-1", 고등은 과목명 그대로. '(2015)' 표식은 개정 부라벨로 분리.
 function gradeLabel(grade: string): string {
-  if (grade.startsWith('중')) return `중 ${grade.slice(1)}`
-  if (grade.startsWith('초')) return `초 ${grade.slice(1)}`
-  return grade
+  const g = grade.replace('(2015)', '')
+  if (g.startsWith('중')) return `중 ${g.slice(1)}`
+  if (g.startsWith('초')) return `초 ${g.slice(1)}`
+  return g
+}
+function gradeRev(grade: string): string {
+  return grade.endsWith('(2015)') ? '(2015개정)' : '(22개정)'
 }
 
 // 교과서 학년 표기: 초 3-1 / 중 1 / 공통수학1 …
@@ -181,7 +185,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
               className="rounded-lg border border-line px-2 py-1.5 text-xs font-semibold text-ink">
               <option value="전체">{level === '고' ? '과목 전체' : '학년·학기'}</option>
               {(level === '초' ? ELEM_TERMS : level === '중' ? MID_TERMS : HIGH_SUBJECTS).map(s => (
-                <option key={s} value={s}>{s}(22개정)</option>
+                <option key={s} value={s}>{s.endsWith('(2015)') ? s.replace('(2015)', '(2015개정)') : `${s}(22개정)`}</option>
               ))}
             </select>
           )}
@@ -231,7 +235,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
                     </td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
                       <div>{gradeLabel(b.grade)}</div>
-                      <div className="text-[10px]">(22개정)</div>
+                      <div className="text-[10px]">{gradeRev(b.grade)}</div>
                     </td>
                     <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">지원</td>
