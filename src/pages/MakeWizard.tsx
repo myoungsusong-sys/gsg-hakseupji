@@ -59,7 +59,7 @@ const SCHOOL_LEVELS: { label: string; prefix: string }[] = [
 // 학기 칩 라벨: 초중 「1 - 1(22개정)」 · 고 「공통수학1(22개정)」 · 중등과학 「과학 1(22개정)」
 function semesterChipLabel(grade: string, label: string): string {
   const m = grade.match(/^[초중](\d)-(\d)$/)
-  if (m) return `${m[1]} - ${m[2]}(22개정)`
+  if (m) return `${m[1]} - ${m[2]}(${label.match(/\((\d+개정)\)/)?.[1] ?? '22개정'})`
   const sci = grade.match(/^중(\d)$/)                       // 중등 과학 과정 (grade '중1'~'중3')
   const rev = label.match(/\((\d+개정)\)/)?.[1] ?? '22개정'
   if (sci) return `과학 ${sci[1]}(${rev})`

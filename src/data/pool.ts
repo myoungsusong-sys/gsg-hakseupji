@@ -6,7 +6,7 @@ import type { Problem } from '../types'
 
 export const POOL_COURSES = [
   'e1-1', 'e1-2', 'e2-1', 'e2-2', 'e3-1', 'e3-2', 'e4-1', 'e4-2', 'e5-1', 'e5-2', 'e6-1', 'e6-2',
-  'm1-1', 'm1-2', 'm2-1', 'm2-2', 'm3-1', 'm3-2',
+  'm1-1', 'm1-2', 'm2-1', 'm2-2', 'm3-1', 'm3-2', 'm3-2-2015',
   'h-cm1', 'h-cm2', 'h-alg', 'h-calc1', 'h-stat', 'h-calc2', 'h-geo',
 ] as const
 
