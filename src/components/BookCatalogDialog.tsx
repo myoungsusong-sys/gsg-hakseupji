@@ -9,6 +9,7 @@ import type { Subject } from '../lib/subject'
 // 교과서 405종(초 268 · 중 48 · 고 89, 15/22개정) — 매쓰플랫 type=SCHOOL 전량
 
 const COURSES = [
+  '초1-1', '초1-2', '초2-1', '초2-2', '초3-1', '초3-2', '초4-1', '초4-2', '초5-1', '초5-2', '초6-1', '초6-2',
   '중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2',
   '공통수학1', '공통수학2', '대수', '미적분Ⅰ', '확률과 통계', '미적분Ⅱ', '기하',
 ]
@@ -20,10 +21,13 @@ type Tab = typeof TABS[number]
 // 2차 필터 (매쓰플랫 동일): 중=학년·학기 드롭다운, 고=과목 드롭다운
 const MID_TERMS = ['중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2']
 const HIGH_SUBJECTS = ['공통수학1', '공통수학2', '대수', '미적분Ⅰ', '확률과 통계', '미적분Ⅱ', '기하']
+const ELEM_TERMS = ['초1-1', '초1-2', '초2-1', '초2-2', '초3-1', '초3-2', '초4-1', '초4-2', '초5-1', '초5-2', '초6-1', '초6-2']
 
-// 학년 표기 (매쓰플랫 동일): 중등 "중 1-1", 고등은 과목명 그대로
+// 학년 표기 (매쓰플랫 동일): 초등 "초 3-1", 중등 "중 1-1", 고등은 과목명 그대로
 function gradeLabel(grade: string): string {
-  return grade.startsWith('중') ? `중 ${grade.slice(1)}` : grade
+  if (grade.startsWith('중')) return `중 ${grade.slice(1)}`
+  if (grade.startsWith('초')) return `초 ${grade.slice(1)}`
+  return grade
 }
 
 // 교과서 학년 표기: 초 3-1 / 중 1 / 공통수학1 …
@@ -76,9 +80,9 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
     if (tab !== '시중교재') return []
     const kw = q.trim().toLowerCase()
     const list = WB_MATCH_BOOKS.filter(b => {
-      if (level === '초') return false   // 초등 시중교재 데이터 없음
+      if (level === '초' && !b.grade.startsWith('초')) return false
       if (level === '중' && !b.grade.startsWith('중')) return false
-      if (level === '고' && b.grade.startsWith('중')) return false
+      if (level === '고' && (b.grade.startsWith('중') || b.grade.startsWith('초'))) return false
       if (sub !== '전체' && b.grade !== sub) return false   // 2차 필터(학년·학기/과목)
       if (kw && !b.name.toLowerCase().includes(kw)) return false
       return true
@@ -172,11 +176,11 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
             </button>
           ))}
           {/* 2차 드롭다운 (매쓰플랫 동일): 중=학년·학기, 고=과목 전체 */}
-          {!isTextbook && (level === '중' || level === '고') && (
+          {!isTextbook && (level === '초' || level === '중' || level === '고') && (
             <select value={sub} onChange={e => setSub(e.target.value)}
               className="rounded-lg border border-line px-2 py-1.5 text-xs font-semibold text-ink">
-              <option value="전체">{level === '중' ? '학년·학기' : '과목 전체'}</option>
-              {(level === '중' ? MID_TERMS : HIGH_SUBJECTS).map(s => (
+              <option value="전체">{level === '고' ? '과목 전체' : '학년·학기'}</option>
+              {(level === '초' ? ELEM_TERMS : level === '중' ? MID_TERMS : HIGH_SUBJECTS).map(s => (
                 <option key={s} value={s}>{s}(22개정)</option>
               ))}
             </select>
@@ -305,7 +309,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
             className="rounded-lg border border-line px-4 py-2 font-semibold text-ink2 hover:bg-paper2">
             이전
           </button>
-          {isTextbook && <span className="text-[11px] text-ink2">'정답 지원' 교과서는 등록 즉시 자동 채점(초등은 채점만·오답드릴 없음). 그 외는 정답표 일괄 등록 후 채점됩니다.</span>}
+          {isTextbook && <span className="text-[11px] text-ink2">'정답 지원' 교과서는 등록 즉시 자동 채점됩니다. 그 외는 정답표 일괄 등록 후 채점됩니다.</span>}
           <div className="grow" />
           <span className="text-ink2">선택한 교재 수 <b className="text-pine">{checked.size}</b>권</span>
           <button onClick={submit} disabled={checked.size === 0}

@@ -254,9 +254,6 @@ function MarketCatalog() {
       {list.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
           검색 결과가 없습니다.<br />다시 입력해주세요.
-          {level === '초' && kind !== '교과서' && (
-            <div className="mt-2 text-xs">※ 초등 시중교재 문항 매칭 데이터는 아직 없습니다 — 초등은 교과서 목록을 이용하세요.</div>
-          )}
         </div>
       ) : (
         <div className="max-h-[65vh] overflow-y-auto rounded-2xl border border-line bg-white">
@@ -301,7 +298,7 @@ function MarketCatalog() {
                         <button onClick={() => {
                           if (r.tbMatchKey) {
                             addWorkbook({ name: r.name.replace(' (15개정)', ''), publisher: r.publisher, grade: r.grade, matchKey: r.tbMatchKey, course: r.tbCourse })
-                            alert('교과서를 등록했습니다. 정답표가 자동 연동되어 채점판에 번호·정답이 표시됩니다.' + (r.tbCourse?.startsWith('e') ? ' (초등은 채점 전용 — 오답 드릴 없음)' : ''))
+                            alert('교과서를 등록했습니다. 정답표가 자동 연동되어 채점판에 번호·정답이 표시됩니다.')
                           } else {
                             addWorkbook({ name: r.name.replace(' (15개정)', ''), publisher: r.publisher, grade: r.grade })
                             alert('교과서를 등록했습니다. 정답표(채점용) 탭에서 문항·정답을 입력하면 채점·드릴에 연동됩니다.')
