@@ -40,13 +40,26 @@ function AnswerLabel({ item }: { item: WBItem }) {
   return wrap(a)
 }
 
-// 혹시 남아 있을 잘린 LaTeX(끝이 \ 이거나 중괄호 불균형)도 KaTeX가 throw해 원문이 노출되지 않도록 보정
+// LaTeX 정답이 KaTeX 에러(원문 노출·빨간 에러박스) 없이 렌더되도록 보정:
+// ① 끝의 백슬래시 제거(잘린 명령), ② 짝 안 맞는 중괄호 정리(여분 } 삭제·열린 { 닫기).
+// 매쓰플랫 answer 필드의 마크업 잔재(예: '\frac{6}{8}}', '[(예)}', '[7/8}')로 인한 에러 방지.
 function safeLatex(s: string): string {
-  let t = s.replace(/\\+\s*$/, '')          // 끝의 백슬래시 제거
-  const open = (t.match(/{/g) || []).length
-  const close = (t.match(/}/g) || []).length
-  if (open > close) t += '}'.repeat(open - close)  // 열린 중괄호 닫기
-  return t
+  let raw = s
+    // eslint-disable-next-line no-control-regex
+    .replace(/[\x00-\x1f]/g, '')               // 제어문자 제거(form-feed 등 매쓰플랫 데이터 잔재)
+    .replace(/^!+/, '')                         // answerMathflat 마커('!!') 제거
+    .replace(/\$/g, '')                         // 임베디드 $ 제거(AnswerLabel이 $로 감쌈)
+    .replace(/\{\^/g, '{')                       // 그룹이 ^로 시작(무효, 매쓰플랫 '{^x^2}'류) → 선행 ^ 제거
+    .replace(/\\(begin|end)(pmatrix|bmatrix|matrix|cases|array)/g, '\\$1{$2}')  // 중괄호 빠진 환경명 복원
+    .replace(/\\+\s*$/, '')                     // 끝의 백슬래시 제거(잘린 명령)
+  let depth = 0, out = ''
+  for (const ch of raw) {
+    if (ch === '{') { depth++; out += ch }
+    else if (ch === '}') { if (depth > 0) { depth--; out += ch } /* 짝 없는 } 는 버림 */ }
+    else out += ch
+  }
+  if (depth > 0) out += '}'.repeat(depth)    // 닫히지 않은 { 닫기
+  return out
 }
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
