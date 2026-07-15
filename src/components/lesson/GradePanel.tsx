@@ -20,12 +20,13 @@ function AnswerLabel({ item }: { item: WBItem }) {
   const wrap = (v: ReactNode, faded = false) => (
     <div className="mt-0.5 text-xs text-ink2">정답 <span className={faded ? 'text-ink2/70' : 'text-[15px] font-extrabold text-ink'}>{v}</span></div>
   )
-  // 서술형: 정답이 이미지(매쓰플랫 answer.png)로 제공되는 문항 → 매쓰플랫과 동일하게 정답 이미지 표시
+  // 서술형: 정답이 이미지(매쓰플랫 answerImageUrl, 표·그래프·다단계 풀이)로 제공되는 문항.
+  // 정답 이미지는 표/그래프라 텍스트 크기로 줄이면 안 보임 → 문항 간 통일된 읽히는 높이(64px)로.
   const img = wbAnswerImg(a)
   if (img) return (
     <div className="mt-0.5 text-xs text-ink2">정답
-      <img src={img} alt="정답" loading="lazy"
-        className="mt-0.5 max-h-24 w-auto max-w-full rounded border border-line bg-white" />
+      <img src={img} alt="정답"
+        className="mt-0.5 block max-h-16 w-auto max-w-full rounded bg-white" />
     </div>
   )
   if (['.', '-'].includes(a.trim())) return wrap('풀이참조', true)

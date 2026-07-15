@@ -6,7 +6,11 @@ const CIRCLED = '①②③④⑤'
 // (pool.ts 의 broken 정답 처리와 동일한 freewheelin-contents CDN·이미지 방식)
 export function wbAnswerImg(answer: string | undefined | null): string | null {
   if (!answer) return null
-  const m = answer.trim().match(/^@(\d+)\/([0-9a-f]+)$/i)
+  const a = answer.trim()
+  // 실제 정답 이미지 URL(매쓰플랫 서술형 answerImageUrl, S3 등) — 직접 사용
+  if (/^https?:\/\/\S+\.(png|jpe?g|gif|webp)(\?\S*)?$/i.test(a)) return a
+  // (레거시) @pid/hash → freewheelin CDN answer.png
+  const m = a.match(/^@(\d+)\/([0-9a-f]+)$/i)
   if (!m) return null
   return `https://freewheelin-contents.mathflat.com/problem/${m[1]}/${m[2]}/answer.png`
 }
