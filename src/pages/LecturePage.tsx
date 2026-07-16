@@ -3,6 +3,8 @@ import GradeSelect from '../components/GradeSelect'
 import VideoModal from '../components/VideoModal'
 import { curriculumFor } from '../data/curriculum'
 import { loadLectures, hasLectures, LECTURE_COURSES, type Lecture, type LectureUnit } from '../data/lectures'
+import { loadLecNotes, type LecNoteMap } from '../data/lecnotes'
+import LectureNoteModal, { getLecScore } from '../components/LectureNoteModal'
 
 // 개념강의 — 매쓰플랫 강의 목록(강 단위) 그대로. 과정 선택 → 대단원/중단원별 강의 → 영상 재생(HLS)
 // 초1·2, 중3-2(22개정)은 매쓰플랫에 개념강의가 없음(강의 있는 과정만 선택지에 노출)
@@ -21,11 +23,14 @@ export default function LecturePage() {
   const [loading, setLoading] = useState(true)
   const [play, setPlay] = useState<Lecture | null>(null)
   const [open, setOpen] = useState<Record<string, boolean>>({})
+  const [notes, setNotes] = useState<LecNoteMap>({})
+  const [noteOf, setNoteOf] = useState<Lecture | null>(null)   // 필기노트 창
 
   useEffect(() => {
     let alive = true
     setLoading(true)
     loadLectures(courseId).then(u => { if (alive) { setUnits(u); setLoading(false); setOpen({}) } })
+    loadLecNotes(courseId).then(n => { if (alive) setNotes(n) })
     return () => { alive = false }
   }, [courseId])
 
@@ -74,13 +79,23 @@ export default function LecturePage() {
                         <div className="mb-1 mt-1 text-xs font-bold text-ink2">{c.name}</div>
                         <ul>
                           {c.lectures.map(L => (
-                            <li key={L.id}>
+                            <li key={L.id} className="flex items-center gap-1">
                               <button onClick={() => setPlay(L)}
-                                className="group flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left hover:bg-pine-soft/40">
+                                className="group flex min-w-0 grow items-center gap-3 rounded-lg px-2 py-2 text-left hover:bg-pine-soft/40">
                                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-pine text-xs text-white group-hover:bg-pine-dark">▶</span>
                                 <span className="min-w-0 grow truncate text-sm">{L.title}</span>
                                 <span className="shrink-0 text-xs tabular-nums text-ink2">{fmtDur(L.seconds)}</span>
                               </button>
+                              {notes[String(L.id)] && (() => {
+                                const sc = getLecScore(L.id)
+                                return (
+                                  <button onClick={() => setNoteOf(L)} title="필기노트 · 이해 확인"
+                                    className="shrink-0 rounded-lg border border-line px-2 py-1.5 text-xs font-bold hover:border-pine hover:bg-pine-soft/40">
+                                    📝 노트
+                                    {sc && <span className={`ml-1 ${sc.best === sc.total ? 'text-pine-dark' : 'text-ink2'}`}>{sc.best}/{sc.total}</span>}
+                                  </button>
+                                )
+                              })()}
                             </li>
                           ))}
                         </ul>
@@ -96,6 +111,12 @@ export default function LecturePage() {
 
       {play && (
         <VideoModal badge="개념강의" title={play.title} src={play.videoUrl} onClose={() => setPlay(null)} />
+      )}
+
+      {noteOf && notes[String(noteOf.id)] && (
+        <LectureNoteModal lecId={noteOf.id} note={notes[String(noteOf.id)]}
+          onClose={() => setNoteOf(null)}
+          onPlay={() => { const L = noteOf; setNoteOf(null); setPlay(L) }} />
       )}
     </div>
   )
