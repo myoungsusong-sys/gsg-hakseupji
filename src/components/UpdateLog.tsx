@@ -24,7 +24,15 @@ export function useChangelog() {
     }
     load()
     const t = setInterval(load, 3 * 60 * 1000)
-    return () => { alive = false; clearInterval(t) }
+    // 사파리 등은 백그라운드 탭의 타이머를 강하게 억제한다 → 탭이 다시 활성화되면 즉시 재확인
+    const onWake = () => { if (document.visibilityState === 'visible') load() }
+    document.addEventListener('visibilitychange', onWake)
+    window.addEventListener('focus', onWake)
+    return () => {
+      alive = false; clearInterval(t)
+      document.removeEventListener('visibilitychange', onWake)
+      window.removeEventListener('focus', onWake)
+    }
   }, [])
   // 로드 이후 새로 추가된 항목(ts 문자열이 고정폭이라 사전순 비교 = 시간순)
   const unseen = useMemo(
