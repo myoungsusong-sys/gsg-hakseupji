@@ -65,13 +65,15 @@ function safeLatex(s: string): string {
 }
 
 // 매쓰플랫 「수업 > 교재」 채점 화면
-// 클릭 순환: 미채점 → ✕(오답) → ?(모름) → ○(정답) → ✕(오답) … (한 번 마킹하면 3상태 순환)
-//   ★ '전체 정답' 후 틀린 것만 한 번 클릭하면 바로 오답이 되도록 정답→오답 (미채점 경유 없음).
-//   개별 미채점 해제가 필요하면 [전체 취소]로 범위를 초기화한다.
+// 클릭 순환(4상태): 미채점 → ✕(오답) → ?(모름) → ○(정답) → 미채점 → ✕ … (명수쌤 지시 2026-07-17)
+//   정답 다음 한 번 더 누르면 아무것도 안 매긴 처음 상태로 돌아온다(개별 취소).
+//   ※ 그래서 '전체 정답' 후 틀린 것을 오답으로 만들려면 두 번 눌러야 한다(정답→미채점→오답).
 // ⚠️ 저장은 "마킹된 문항만" 기록한다 — 미채점 문항을 정답으로 간주해 통째로 저장하면
 //    진도·통계가 오염된다(2026-07-08 실사 P0). 미채점 = 기록 없음.
 type Mark = '정답' | '오답' | '모름'
-const NEXT: Record<Mark, Mark> = { 오답: '모름', 모름: '정답', 정답: '오답' }
+// 다음 상태 — 정답에서 undefined(미채점)로 한 바퀴 돈다
+const NEXT: Record<Mark, Mark | undefined> = { 오답: '모름', 모름: '정답', 정답: undefined }
+function nextMark(cur: Mark | undefined): Mark | undefined { return cur ? NEXT[cur] : '오답' }
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
 const MARK_CLASS: Record<Mark, string> = { 정답: 'text-pine', 오답: 'text-clay', 모름: 'text-amber' }
 // 행 배경: 정답=연파랑 · 오답=연분홍 · 모름=연노랑 · 미채점=흰색 (매쓰플랫 동일)
@@ -316,9 +318,10 @@ export default function GradePanel({ student }: { student: Student }) {
   }
   function cycle(id: string) {
     applyMarks(prev => {
-      const cur = prev[id]
       const next = { ...prev }
-      next[id] = cur ? NEXT[cur] : '오답'             // 미채점→오답, 이후 오답→모름→정답→오답 순환(정답도 한 번에 오답)
+      const nx = nextMark(prev[id])                   // 미채점→✕→?→○→미채점 순환
+      if (nx) next[id] = nx
+      else delete next[id]                            // 정답 다음 = 미채점(기록에서도 빠진다)
       return next
     })
   }
@@ -330,8 +333,9 @@ export default function GradePanel({ student }: { student: Student }) {
     applyMarks(prev => {
       const next = { ...prev }
       const k = subKey(itemId, subNo)
-      const cur = prev[k]
-      next[k] = cur ? NEXT[cur] : '오답'
+      const nx = nextMark(prev[k])                    // 소문항도 미채점→✕→?→○→미채점
+      if (nx) next[k] = nx
+      else delete next[k]
       const subMarks = allSubNos.map(n => next[subKey(itemId, n)])
       if (subMarks.some(s => !s)) delete next[itemId]                    // 미완 → 문항은 미채점
       else if (subMarks.some(s => s === '오답')) next[itemId] = '오답'
