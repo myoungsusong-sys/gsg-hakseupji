@@ -212,11 +212,13 @@ function BlankSection({ blanks }: { blanks: Blank[] }) {
 }
 
 export default function LectureNoteModal(
-  { lecId, note, onClose, onPlay }: { lecId: number; note: LecNote; onClose: () => void; onPlay?: () => void },
+  { lecId, note, onClose, onPlay, initialTab = 'note' }:
+  { lecId: number; note: LecNote; onClose: () => void; onPlay?: () => void; initialTab?: 'note' | 'blank' },
 ) {
-  // 정리노트 / 빈칸테스트를 탭으로 분리 — 인쇄도 보고 있는 탭만 나간다
-  const [tab, setTab] = useState<'note' | 'blank'>('note')
+  // 정리노트 / 빈칸테스트를 탭으로 분리 — 인쇄도 보고 있는 탭만 나간다.
+  // 강의 목록에서 어느 버튼으로 열었는지에 따라 처음 탭이 정해진다.
   const hasBlank = !!note.blank && note.blank.length > 0
+  const [tab, setTab] = useState<'note' | 'blank'>(initialTab === 'blank' && hasBlank ? 'blank' : 'note')
 
   return (
     <div className="note-noprint fixed inset-0 z-50 bg-black/40" onClick={onClose}>

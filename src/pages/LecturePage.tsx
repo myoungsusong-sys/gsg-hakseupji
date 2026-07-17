@@ -24,7 +24,8 @@ export default function LecturePage() {
   const [play, setPlay] = useState<Lecture | null>(null)
   const [open, setOpen] = useState<Record<string, boolean>>({})
   const [notes, setNotes] = useState<LecNoteMap>({})
-  const [noteOf, setNoteOf] = useState<Lecture | null>(null)   // 필기노트 창
+  // 노트 창 — 어느 버튼으로 열었는지(정리노트/빈칸)까지 함께 들고 있는다
+  const [noteOf, setNoteOf] = useState<{ L: Lecture; tab: 'note' | 'blank' } | null>(null)
 
   useEffect(() => {
     let alive = true
@@ -87,13 +88,22 @@ export default function LecturePage() {
                                 <span className="shrink-0 text-xs tabular-nums text-ink2">{fmtDur(L.seconds)}</span>
                               </button>
                               {notes[String(L.id)] && (() => {
+                                const nt = notes[String(L.id)]
                                 const sc = getLecScore(L.id)
                                 return (
-                                  <button onClick={() => setNoteOf(L)} title="필기노트 · 이해 확인"
-                                    className="shrink-0 rounded-lg border border-line px-2 py-1.5 text-xs font-bold hover:border-pine hover:bg-pine-soft/40">
-                                    📝 노트
-                                    {sc && <span className={`ml-1 ${sc.best === sc.total ? 'text-pine-dark' : 'text-ink2'}`}>{sc.best}/{sc.total}</span>}
-                                  </button>
+                                  <>
+                                    <button onClick={() => setNoteOf({ L, tab: 'note' })} title="정리노트 · 이해 확인"
+                                      className="shrink-0 rounded-lg border border-line px-2 py-1.5 text-xs font-bold hover:border-pine hover:bg-pine-soft/40">
+                                      📝 노트
+                                      {sc && <span className={`ml-1 ${sc.best === sc.total ? 'text-pine-dark' : 'text-ink2'}`}>{sc.best}/{sc.total}</span>}
+                                    </button>
+                                    {nt.blank && nt.blank.length > 0 && (
+                                      <button onClick={() => setNoteOf({ L, tab: 'blank' })} title="개념 빈칸 테스트 (인쇄 가능)"
+                                        className="shrink-0 rounded-lg border border-line px-2 py-1.5 text-xs font-bold hover:border-note-accent hover:bg-note-pink/40">
+                                        ✍️ 빈칸
+                                      </button>
+                                    )}
+                                  </>
                                 )
                               })()}
                             </li>
@@ -113,10 +123,10 @@ export default function LecturePage() {
         <VideoModal badge="개념강의" title={play.title} src={play.videoUrl} onClose={() => setPlay(null)} />
       )}
 
-      {noteOf && notes[String(noteOf.id)] && (
-        <LectureNoteModal lecId={noteOf.id} note={notes[String(noteOf.id)]}
+      {noteOf && notes[String(noteOf.L.id)] && (
+        <LectureNoteModal lecId={noteOf.L.id} note={notes[String(noteOf.L.id)]} initialTab={noteOf.tab}
           onClose={() => setNoteOf(null)}
-          onPlay={() => { const L = noteOf; setNoteOf(null); setPlay(L) }} />
+          onPlay={() => { const L = noteOf.L; setNoteOf(null); setPlay(L) }} />
       )}
     </div>
   )
