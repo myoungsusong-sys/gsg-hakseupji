@@ -1,13 +1,16 @@
-// 개념강의 필기노트 + 이해확인 문제 — 과정별 정적 파일(/lecnotes-<course>.json) 지연 로드
-// 형식: { "<강의id>": { t: 제목, n: 노트블록[], q: 확인문제[] } }
-//   노트블록 b: { t:'h'|'p'|'box'|'ex', x: 텍스트($...$는 KaTeX), s?: 풀이단계[] }
-//     h=소제목 / p=본문 / box=핵심정리(강조) / ex=예제(x=문제, s=풀이 단계들)
-//   확인문제 q: { q: 발문, c: 선택지[], a: 정답 index(0~), e: 해설 }
-// ⚠️ 노트는 요약본이 아니다 — 강의가 다루는 개념·정의·예제·주의점을 빠짐없이 담는다(무누락 원칙).
+// 개념강의 요약 정리노트(여고생 스타일) + 이해확인 — 과정별 정적 파일(/lecnotes-<course>.json) 지연 로드
+// 형식: { "<강의id>": { t, intro?, sec[], memo[], q[] } }
+//   intro : 이 강의에서 뭘 배우는지 한 줄
+//   sec   : 요약 섹션 { h: 이모지 소제목, pts: 핵심 요점[], tip?: 꿀팁/주의 }
+//           요점 텍스트 안에서 ==형광펜== 강조, $...$ KaTeX 수식
+//   memo  : 시험 전 외워야 할 개념·공식 카드 { k: 이름, v: 내용/공식 }
+//   q     : 이해확인 객관식 { q, c[], a(정답 index), e(해설) }
+// ⚠️ 요약이지만 시험에 나오는 개념·공식·유형은 빠뜨리지 않는다. 공식·수식은 원본과 정확히 일치.
 
-export type NoteBlock = { t: 'h' | 'p' | 'box' | 'ex'; x: string; s?: string[] }
 export type Quiz = { q: string; c: string[]; a: number; e: string }
-export type LecNote = { t: string; n: NoteBlock[]; q: Quiz[] }
+export type NoteSec = { h: string; pts: string[]; tip?: string }
+export type Memo = { k: string; v: string }
+export type LecNote = { t: string; intro?: string; sec: NoteSec[]; memo: Memo[]; q: Quiz[] }
 export type LecNoteMap = Record<string, LecNote>
 
 const cache = new Map<string, LecNoteMap>()

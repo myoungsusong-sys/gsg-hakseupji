@@ -14,6 +14,20 @@
   --color-amber: #f08c00;
   --color-amber-soft: #fdf1df;
   --color-clay: #e5484d;
+  /* 정리노트(여고생 스타일) — 형광펜/파스텔 */
+  --color-hilite: #fff2a8;
+  --color-note-pink: #fde7ef;
+  --color-note-purple: #efe9fe;
+  --color-note-mint: #e4f7f0;
+  --color-note-accent: #e86aa6;
+}
+
+/* 정리노트 인쇄 — .note-print 안만 A4로 깔끔하게 */
+@media print {
+  body * { visibility: hidden; }
+  .note-print, .note-print * { visibility: visible; }
+  .note-print { position: absolute; inset: 0; margin: 0; box-shadow: none; max-width: 100%; }
+  .note-noprint { display: none !important; }
 }
 
 html { background: var(--color-paper2); }
