@@ -67,13 +67,17 @@ function safeLatex(s: string): string {
 // 매쓰플랫 「수업 > 교재」 채점 화면
 // 클릭 순환(4상태): 미채점 → ✕(오답) → ?(모름) → ○(정답) → 미채점 → ✕ … (명수쌤 지시 2026-07-17)
 //   정답 다음 한 번 더 누르면 아무것도 안 매긴 처음 상태로 돌아온다(개별 취소).
-//   ※ 그래서 '전체 정답' 후 틀린 것을 오답으로 만들려면 두 번 눌러야 한다(정답→미채점→오답).
+// ★ 예외 — '전체 정답'으로 일괄 마킹된 항목은 첫 클릭에서 바로 ✕(오답)로 간다.
+//   (전체 정답 → 틀린 것만 한 번씩 찍는 실제 채점 흐름. 한 번 손댄 뒤부터는 위 4상태 순환)
 // ⚠️ 저장은 "마킹된 문항만" 기록한다 — 미채점 문항을 정답으로 간주해 통째로 저장하면
 //    진도·통계가 오염된다(2026-07-08 실사 P0). 미채점 = 기록 없음.
 type Mark = '정답' | '오답' | '모름'
 // 다음 상태 — 정답에서 undefined(미채점)로 한 바퀴 돈다
 const NEXT: Record<Mark, Mark | undefined> = { 오답: '모름', 모름: '정답', 정답: undefined }
-function nextMark(cur: Mark | undefined): Mark | undefined { return cur ? NEXT[cur] : '오답' }
+function nextMark(cur: Mark | undefined, bulk = false): Mark | undefined {
+  if (bulk && cur === '정답') return '오답'      // 전체 정답 직후 첫 클릭 → 바로 오답
+  return cur ? NEXT[cur] : '오답'
+}
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
 const MARK_CLASS: Record<Mark, string> = { 정답: 'text-pine', 오답: 'text-clay', 모름: 'text-amber' }
 // 행 배경: 정답=연파랑 · 오답=연분홍 · 모름=연노랑 · 미채점=흰색 (매쓰플랫 동일)
@@ -152,6 +156,8 @@ export default function GradePanel({ student }: { student: Student }) {
   const [marks, setMarks] = useState<Record<string, Mark>>({})   // 없으면 미채점(기록 안 함)
   // 연타 유실 방지: 같은 틱에 여러 카드를 클릭해도 항상 최신 marks 위에서 갱신되도록 ref 동기 유지
   const marksRef = useRef(marks)
+  // '전체 정답'으로 일괄 마킹된 키 — 이 상태의 첫 클릭은 바로 ✕로 보낸다(개별로 손대면 즉시 해제)
+  const bulkRef = useRef<Set<string>>(new Set())
   const [selecting, setSelecting] = useState(false)
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [pageChecked, setPageChecked] = useState<Set<number>>(new Set())   // 페이지별 오답학습지용
@@ -270,6 +276,7 @@ export default function GradePanel({ student }: { student: Student }) {
     }
     marksRef.current = seeded
     setMarks(seeded)
+    bulkRef.current = new Set()   // 교재·범위·학생이 바뀌면 '전체 정답' 표시는 무효(옛 표시가 남으면 첫 클릭이 엉뚱하게 ✕로 감)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wbId, from, to, student.id])
 
@@ -317,9 +324,11 @@ export default function GradePanel({ student }: { student: Student }) {
     queueSave(next)
   }
   function cycle(id: string) {
+    const bulk = bulkRef.current.has(id)
+    bulkRef.current.delete(id)                        // 한 번 손대면 이후엔 일반 4상태 순환
     applyMarks(prev => {
       const next = { ...prev }
-      const nx = nextMark(prev[id])                   // 미채점→✕→?→○→미채점 순환
+      const nx = nextMark(prev[id], bulk)             // 미채점→✕→?→○→미채점 (전체정답 직후엔 ○→✕)
       if (nx) next[id] = nx
       else delete next[id]                            // 정답 다음 = 미채점(기록에서도 빠진다)
       return next
@@ -330,10 +339,12 @@ export default function GradePanel({ student }: { student: Student }) {
   //  · 하나라도 오답이면 문항은 오답 / 오답 없고 모름이 있으면 모름 / 전부 정답이어야 정답
   //  · 아직 안 매긴 소문항이 남아 있으면 문항은 미채점으로 둔다(통계 오염 방지, 기존 규칙과 동일)
   function cycleSub(itemId: string, subNo: string, allSubNos: string[]) {
+    const k = subKey(itemId, subNo)
+    const bulk = bulkRef.current.has(k)
+    bulkRef.current.delete(k)
     applyMarks(prev => {
       const next = { ...prev }
-      const k = subKey(itemId, subNo)
-      const nx = nextMark(prev[k])                    // 소문항도 미채점→✕→?→○→미채점
+      const nx = nextMark(prev[k], bulk)              // 소문항도 동일(전체정답 직후엔 ○→✕)
       if (nx) next[k] = nx
       else delete next[k]
       const subMarks = allSubNos.map(n => next[subKey(itemId, n)])
@@ -345,17 +356,26 @@ export default function GradePanel({ student }: { student: Student }) {
     })
   }
   function setAll(m: Mark) {
+    // '전체 정답'일 때만 일괄 표시 — 이 상태의 첫 클릭은 바로 ✕로 간다(틀린 것만 찍는 흐름)
+    const bulk = new Set<string>()
     applyMarks(prev => {
       const next = { ...prev }
       for (const i of inRange) {
         next[i.id] = m
+        if (m === '정답') bulk.add(i.id)
         // 소문항이 있으면 같이 맞춰 준다 — 문항만 바꾸면 카드 안 소문항이 미채점으로 남아 어긋난다
-        for (const s of splitSubItems(i.answer) ?? []) next[subKey(i.id, s.no)] = m
+        for (const s of splitSubItems(i.answer) ?? []) {
+          const k = subKey(i.id, s.no)
+          next[k] = m
+          if (m === '정답') bulk.add(k)
+        }
       }
       return next
     })
+    bulkRef.current = bulk
   }
   function clearAll() {   // 전체 취소 — 범위 전체를 미채점으로 (기록에서도 제거)
+    bulkRef.current = new Set()
     applyMarks(prev => {
       const next = { ...prev }
       for (const i of inRange) {
