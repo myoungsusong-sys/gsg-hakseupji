@@ -4,6 +4,7 @@ import { useSubject } from '../../lib/subject'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { wbAnswerImg } from '../../lib/answers'
+import { splitSubItems, subKey } from '../../lib/subitems'
 import type { GradeResult, Grading, Student, WBItem } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 import BulkImportModal from '../BulkImportModal'
@@ -321,17 +322,42 @@ export default function GradePanel({ student }: { student: Student }) {
       return next
     })
   }
+
+  // 소문항 채점 — 소문항 하나를 돌리고, 그 결과로 문항 전체 마크를 자동 집계한다.
+  //  · 하나라도 오답이면 문항은 오답 / 오답 없고 모름이 있으면 모름 / 전부 정답이어야 정답
+  //  · 아직 안 매긴 소문항이 남아 있으면 문항은 미채점으로 둔다(통계 오염 방지, 기존 규칙과 동일)
+  function cycleSub(itemId: string, subNo: string, allSubNos: string[]) {
+    applyMarks(prev => {
+      const next = { ...prev }
+      const k = subKey(itemId, subNo)
+      const cur = prev[k]
+      next[k] = cur ? NEXT[cur] : '오답'
+      const subMarks = allSubNos.map(n => next[subKey(itemId, n)])
+      if (subMarks.some(s => !s)) delete next[itemId]                    // 미완 → 문항은 미채점
+      else if (subMarks.some(s => s === '오답')) next[itemId] = '오답'
+      else if (subMarks.some(s => s === '모름')) next[itemId] = '모름'
+      else next[itemId] = '정답'
+      return next
+    })
+  }
   function setAll(m: Mark) {
     applyMarks(prev => {
       const next = { ...prev }
-      for (const i of inRange) next[i.id] = m
+      for (const i of inRange) {
+        next[i.id] = m
+        // 소문항이 있으면 같이 맞춰 준다 — 문항만 바꾸면 카드 안 소문항이 미채점으로 남아 어긋난다
+        for (const s of splitSubItems(i.answer) ?? []) next[subKey(i.id, s.no)] = m
+      }
       return next
     })
   }
   function clearAll() {   // 전체 취소 — 범위 전체를 미채점으로 (기록에서도 제거)
     applyMarks(prev => {
       const next = { ...prev }
-      for (const i of inRange) delete next[i.id]
+      for (const i of inRange) {
+        delete next[i.id]
+        for (const s of splitSubItems(i.answer) ?? []) delete next[subKey(i.id, s.no)]
+      }
       return next
     })
   }
@@ -601,6 +627,38 @@ export default function GradePanel({ student }: { student: Student }) {
                   const cardCls = selecting
                     ? (m && m !== '정답' ? 'border-clay bg-red-50' : sel ? 'border-pine bg-pine-soft/40' : 'border-line bg-white hover:border-pine')
                     : (m ? CARD_CLASS[m] : CARD_UNMARKED)
+                  // "(1) ○ (2) × …" 처럼 소문항이 여러 개면 소문항별로 채점한다(어디를 틀렸는지 남기려고).
+                  const subs = selecting ? null : splitSubItems(i.answer)
+                  if (subs) {
+                    return (
+                      <div key={i.id} className={`rounded-xl border p-3 text-left transition ${cardCls}`}>
+                        <div className="flex items-center justify-between gap-1">
+                          <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
+                          <span className="flex items-center gap-1">
+                            <span className="text-[10px] text-ink2">{subs.length}개</span>
+                            <span className={`text-lg font-black ${m ? MARK_CLASS[m] : 'text-ink2/25'}`}>{m ? MARK_ICON[m] : '○'}</span>
+                          </span>
+                        </div>
+                        <div className="mt-1 grid gap-1">
+                          {subs.map(s => {
+                            const sm = markOf(subKey(i.id, s.no))
+                            return (
+                              <button key={s.no} onClick={() => cycleSub(i.id, s.no, subs.map(x => x.no))}
+                                className={`flex items-start gap-1.5 rounded-lg border px-2 py-1 text-left text-xs transition ${
+                                  sm === '정답' ? 'border-pine/40 bg-pine-soft/50'
+                                  : sm === '오답' ? 'border-clay bg-red-50'
+                                  : sm === '모름' ? 'border-amber bg-amber-soft/50'
+                                  : 'border-line/70 bg-white hover:border-pine'}`}>
+                                <span className={`shrink-0 font-black ${sm ? MARK_CLASS[sm] : 'text-ink2/25'}`}>{sm ? MARK_ICON[sm] : '○'}</span>
+                                <span className="shrink-0 font-bold text-ink2">({s.no})</span>
+                                <span className="min-w-0 grow break-words"><MathText text={safeLatex(s.ans)} /></span>
+                              </button>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )
+                  }
                   return (
                     <button key={i.id} onClick={() => selecting ? toggleSelect(i.id) : cycle(i.id)}
                       className={`rounded-xl border p-3 text-left transition ${cardCls}`}>
