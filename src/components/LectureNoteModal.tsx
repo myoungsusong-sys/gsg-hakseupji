@@ -91,10 +91,51 @@ function QuizSection({ lecId, quiz }: { lecId: number; quiz: Quiz[] }) {
   )
 }
 
-// 개념 빈칸테스트 — 화면에선 입력·채점, 인쇄하면 학생용 시험지(빈 네모칸)로 나간다.
+// 개념 빈칸테스트 — 화면에선 입력·채점, 인쇄하면 학생용 시험지(빈 밑줄)로 나간다.
 // q의 {{1}} 자리에 입력칸을 끼워 렌더. 채점은 공백·대소문자 무시 비교.
 function normAns(s: string): string {
   return (s || '').replace(/\s+/g, '').replace(/[.,]$/, '').toLowerCase()
+}
+
+// 빈칸 뒤 조사 자동 보정 —— 정답이 "2"·"$3^2$"처럼 수식/숫자라 받침을 알 수 없어
+// "2 과 3", "곱셈 기호을" 같은 비문이 생긴다. 정답의 마지막 '읽는 소리'로 받침을 판정해 고른다.
+const JOSA: Record<string, [string, string]> = {   // [받침 있음, 받침 없음]
+  '과': ['과', '와'], '와': ['과', '와'],
+  '을': ['을', '를'], '를': ['을', '를'],
+  '이': ['이', '가'], '가': ['이', '가'],
+  '은': ['은', '는'], '는': ['은', '는'],
+  '으로': ['으로', '로'], '로': ['으로', '로'],
+}
+// 숫자·알파벳의 한글 읽기 끝소리에 받침이 있는지
+const DIGIT_JONG: Record<string, boolean> = { '0': false, '1': true, '2': false, '3': true, '4': false, '5': false, '6': true, '7': true, '8': true, '9': false }
+function hasJong(ans: string): boolean | null {
+  const raw = (ans || '').trim()
+  // 거듭제곱($3^2$, $2^{10}$)은 "…제곱"으로 읽히므로 받침 없음. 지수 표기를 먼저 판정한다.
+  if (/\^\s*\{?\s*\d+\s*\}?\s*\$?\s*$/.test(raw)) return false
+  // 분수($\frac{4}{9}$)는 "…분의 …"로 읽히므로 분자 숫자로 판정
+  const frac = raw.match(/\\d?frac\s*\{[^}]*\}\s*\{([^}]*)\}/)
+  if (frac) {
+    const n = frac[1].replace(/[^0-9]/g, '').slice(-1)
+    if (n) return DIGIT_JONG[n]
+  }
+  // 그 밖에는 수식·기호를 걷어내고 마지막 '읽히는' 글자로 판정
+  const t = raw.replace(/\$/g, '').replace(/\\[a-zA-Z]+|[{}^_\\]/g, '').replace(/[()[\]\s.,]/g, '')
+  const last = t.slice(-1)
+  if (!last) return null
+  if (/[0-9]/.test(last)) return DIGIT_JONG[last]
+  const code = last.charCodeAt(0)
+  if (code >= 0xac00 && code <= 0xd7a3) return (code - 0xac00) % 28 !== 0   // 한글: 종성 유무
+  return null                                                               // 판정 불가 → 원문 유지
+}
+function fixJosa(seg: string, prevAns: string | undefined): string {
+  if (prevAns === undefined) return seg
+  const m = seg.match(/^\s*(으로|로|과|와|을|를|이|가|은|는)(?![가-힣])/)
+  if (!m) return seg
+  const jong = hasJong(prevAns)
+  if (jong === null) return seg
+  const pair = JOSA[m[1]]
+  if (!pair) return seg
+  return seg.replace(m[1], jong ? pair[0] : pair[1])
 }
 
 function BlankSection({ blanks }: { blanks: Blank[] }) {
@@ -108,10 +149,9 @@ function BlankSection({ blanks }: { blanks: Blank[] }) {
   if (blanks.length === 0) return null
 
   return (
-    <div className="mt-7 break-before-page">
-      <div className="mb-2 flex items-center gap-2 border-b-2 border-dashed border-note-accent/40 pb-2">
-        <h3 className="text-base font-black text-note-accent">✍️ 개념 빈칸 테스트</h3>
-        <span className="text-xs text-ink2">빈칸 {total}개</span>
+    <div>
+      <div className="note-noprint mb-2 flex items-center gap-2">
+        <span className="text-xs text-ink2">빈칸에 알맞은 말을 써넣으세요 · 총 {total}개</span>
         <div className="grow" />
         {graded && <span className="text-sm font-black">{got}/{total}</span>}
       </div>
@@ -124,7 +164,12 @@ function BlankSection({ blanks }: { blanks: Blank[] }) {
               <span className="mr-1.5 font-black text-note-accent">{i + 1}.</span>
               {parts.map((p, k) => {
                 const m = p.match(/^\{\{(\d+)\}\}$/)
-                if (!m) return <NoteText key={k} text={p} />
+                if (!m) {
+                  // 바로 앞이 빈칸이면 그 정답의 받침에 맞춰 조사를 고른다 ("2 과 3" → "2 와 3")
+                  const prev = parts[k - 1]?.match(/^\{\{(\d+)\}\}$/)
+                  const text = prev ? fixJosa(p, b.a[Number(prev[1]) - 1]) : p
+                  return <NoteText key={k} text={text} />
+                }
                 const j = Number(m[1]) - 1
                 const key = `${i}-${j}`
                 const right = graded && normAns(val[key] || '') === normAns(b.a[j] ?? '')
@@ -169,15 +214,18 @@ function BlankSection({ blanks }: { blanks: Blank[] }) {
 export default function LectureNoteModal(
   { lecId, note, onClose, onPlay }: { lecId: number; note: LecNote; onClose: () => void; onPlay?: () => void },
 ) {
+  // 정리노트 / 빈칸테스트를 탭으로 분리 — 인쇄도 보고 있는 탭만 나간다
+  const [tab, setTab] = useState<'note' | 'blank'>('note')
+  const hasBlank = !!note.blank && note.blank.length > 0
+
   return (
     <div className="note-noprint fixed inset-0 z-50 bg-black/40" onClick={onClose}>
       <div className="absolute inset-x-0 bottom-0 top-0 mx-auto flex max-w-3xl flex-col bg-white shadow-2xl sm:inset-y-6 sm:rounded-3xl"
         onClick={e => e.stopPropagation()}>
         {/* 헤더 (인쇄 제외) */}
         <div className="note-noprint flex shrink-0 items-center gap-2 border-b border-line px-5 py-3">
-          <span className="rounded-full bg-note-pink px-2.5 py-0.5 text-xs font-black text-note-accent">정리노트</span>
           <b className="min-w-0 grow truncate text-sm">{note.t}</b>
-          <button onClick={() => window.print()} title="인쇄"
+          <button onClick={() => window.print()} title="보고 있는 탭을 인쇄"
             className="shrink-0 rounded-lg border border-line px-2.5 py-1 text-xs font-bold hover:border-note-accent">🖨️ 인쇄</button>
           {onPlay && (
             <button onClick={onPlay} className="shrink-0 rounded-lg bg-pine px-3 py-1 text-xs font-bold text-white hover:bg-pine-dark">▶ 강의</button>
@@ -185,7 +233,38 @@ export default function LectureNoteModal(
           <button onClick={onClose} className="shrink-0 text-ink2 hover:text-ink">✕</button>
         </div>
 
+        {/* 탭 — 정리노트 | 빈칸테스트 */}
+        {hasBlank && (
+          <div className="note-noprint flex shrink-0 gap-1 border-b border-line px-4 pt-2">
+            {([['note', '📖 정리노트'], ['blank', '✍️ 빈칸 테스트']] as const).map(([k, label]) => (
+              <button key={k} onClick={() => setTab(k)}
+                className={`rounded-t-xl px-4 py-2 text-sm font-bold transition ${
+                  tab === k ? 'bg-note-pink/60 text-note-accent' : 'text-ink2 hover:bg-paper2'}`}>
+                {label}
+                {k === 'blank' && <span className="ml-1 text-xs font-normal">{note.blank!.length}문항</span>}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* 빈칸 테스트 탭 — 노트와 완전히 분리된 공간(인쇄하면 시험지) */}
+        {tab === 'blank' && hasBlank && (
+          <div className="note-print grow overflow-y-auto px-5 py-5 sm:px-8">
+            <div className="mb-4 flex items-end justify-between border-b-2 border-dashed border-note-accent/40 pb-3">
+              <div>
+                <div className="text-xs font-bold text-note-accent">✍️ 개념 빈칸 테스트</div>
+                <h1 className="mt-0.5 text-xl font-black leading-snug">{note.t}</h1>
+              </div>
+              {/* 인쇄용 이름/점수 칸 */}
+              <div className="note-printonly text-xs">이름 __________ 점수 ______</div>
+            </div>
+            <BlankSection blanks={note.blank!} />
+            <div className="h-6" />
+          </div>
+        )}
+
         {/* 노트 본문 (인쇄 대상) */}
+        {tab === 'note' && (
         <div className="note-print grow overflow-y-auto px-5 py-5 sm:px-8">
           <div className="mb-4 border-b-2 border-dashed border-note-accent/40 pb-3">
             <div className="text-xs font-bold text-note-accent">📖 오늘의 개념정리</div>
@@ -230,10 +309,10 @@ export default function LectureNoteModal(
             </div>
           )}
 
-          {note.blank && note.blank.length > 0 && <BlankSection blanks={note.blank} />}
           <QuizSection lecId={lecId} quiz={note.q} />
           <div className="h-6" />
         </div>
+        )}
       </div>
     </div>
   )
