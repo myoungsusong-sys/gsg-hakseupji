@@ -23,11 +23,14 @@
 }
 
 /* 정리노트 인쇄 — .note-print 안만 A4로 깔끔하게 */
+.note-printonly { display: none; }          /* 화면에선 숨김 (인쇄용 빈칸 밑줄 등) */
 @media print {
   body * { visibility: hidden; }
   .note-print, .note-print * { visibility: visible; }
   .note-print { position: absolute; inset: 0; margin: 0; box-shadow: none; max-width: 100%; }
   .note-noprint { display: none !important; }
+  .note-printonly { display: inline-block !important; }   /* 인쇄 땐 빈칸을 밑줄로 */
+  .break-before-page { break-before: page; }              /* 빈칸테스트는 새 장에 */
 }
 
 html { background: var(--color-paper2); }

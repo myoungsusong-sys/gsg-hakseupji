@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import NoteText from './NoteText'
-import type { LecNote, Quiz } from '../data/lecnotes'
+import type { Blank, LecNote, Quiz } from '../data/lecnotes'
 
 // 개념강의 정리노트 창(여고생 스타일) — 요약 정리 + 외울 개념·공식 + 이해확인. 인쇄 가능.
 const SCORE_KEY = 'gsg-lecnote-score'
@@ -91,6 +91,81 @@ function QuizSection({ lecId, quiz }: { lecId: number; quiz: Quiz[] }) {
   )
 }
 
+// 개념 빈칸테스트 — 화면에선 입력·채점, 인쇄하면 학생용 시험지(빈 네모칸)로 나간다.
+// q의 {{1}} 자리에 입력칸을 끼워 렌더. 채점은 공백·대소문자 무시 비교.
+function normAns(s: string): string {
+  return (s || '').replace(/\s+/g, '').replace(/[.,]$/, '').toLowerCase()
+}
+
+function BlankSection({ blanks }: { blanks: Blank[] }) {
+  const [val, setVal] = useState<Record<string, string>>({})
+  const [graded, setGraded] = useState(false)
+  const total = useMemo(() => blanks.reduce((n, b) => n + b.a.length, 0), [blanks])
+  const got = useMemo(
+    () => blanks.reduce((n, b, i) => n + b.a.filter((ans, j) => normAns(val[`${i}-${j}`] || '') === normAns(ans)).length, 0),
+    [val, blanks],
+  )
+  if (blanks.length === 0) return null
+
+  return (
+    <div className="mt-7 break-before-page">
+      <div className="mb-2 flex items-center gap-2 border-b-2 border-dashed border-note-accent/40 pb-2">
+        <h3 className="text-base font-black text-note-accent">✍️ 개념 빈칸 테스트</h3>
+        <span className="text-xs text-ink2">빈칸 {total}개</span>
+        <div className="grow" />
+        {graded && <span className="text-sm font-black">{got}/{total}</span>}
+      </div>
+      <ol className="grid gap-2.5">
+        {blanks.map((b, i) => {
+          // "…약수가 {{1}}개…" → 텍스트와 입력칸을 번갈아 렌더
+          const parts = b.q.split(/(\{\{\d+\}\})/g)
+          return (
+            <li key={i} className="rounded-xl border border-line px-3 py-2 text-sm leading-loose">
+              <span className="mr-1.5 font-black text-note-accent">{i + 1}.</span>
+              {parts.map((p, k) => {
+                const m = p.match(/^\{\{(\d+)\}\}$/)
+                if (!m) return <NoteText key={k} text={p} />
+                const j = Number(m[1]) - 1
+                const key = `${i}-${j}`
+                const right = graded && normAns(val[key] || '') === normAns(b.a[j] ?? '')
+                const wrong = graded && !right
+                return (
+                  <span key={k} className="inline-flex items-baseline">
+                    {/* 인쇄용 빈 네모칸 */}
+                    <span className="note-printonly mx-0.5 inline-block h-5 w-24 border-b-2 border-ink/50 align-baseline" />
+                    <input value={val[key] ?? ''} onChange={e => setVal(v => ({ ...v, [key]: e.target.value }))}
+                      disabled={graded} placeholder={String(j + 1)}
+                      className={`note-noprint mx-0.5 w-24 rounded-md border-b-2 bg-note-pink/20 px-1.5 py-0.5 text-center text-sm font-bold outline-none placeholder:font-normal placeholder:text-ink2/40 ${
+                        wrong ? 'border-clay bg-clay/10 text-clay' : right ? 'border-note-accent text-note-accent' : 'border-note-accent/50 focus:border-note-accent'}`} />
+                    {wrong && <b className="note-noprint mr-0.5 text-xs text-note-accent">{b.a[j]}</b>}
+                  </span>
+                )
+              })}
+              {b.hint && <span className="ml-1 text-xs text-ink2">({b.hint})</span>}
+            </li>
+          )
+        })}
+      </ol>
+      <div className="note-noprint mt-3 flex gap-2">
+        {!graded ? (
+          <button onClick={() => setGraded(true)}
+            className="grow rounded-2xl bg-note-accent py-2.5 font-bold text-white hover:brightness-105">채점하기</button>
+        ) : (
+          <>
+            <div className="grow rounded-2xl bg-note-pink/50 py-2.5 text-center text-sm font-bold">
+              {got === total ? '완벽해요! 개념이 확실히 잡혔어요 👏'
+                : got >= total * 0.7 ? `${total - got}개만 더! 틀린 곳을 다시 외워보세요`
+                : '아직이에요. 위 암기카드를 다시 보고 도전!'}
+            </div>
+            <button onClick={() => { setVal({}); setGraded(false) }}
+              className="shrink-0 rounded-2xl border border-line px-4 font-bold hover:border-note-accent">다시</button>
+          </>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function LectureNoteModal(
   { lecId, note, onClose, onPlay }: { lecId: number; note: LecNote; onClose: () => void; onPlay?: () => void },
 ) {
@@ -155,6 +230,7 @@ export default function LectureNoteModal(
             </div>
           )}
 
+          {note.blank && note.blank.length > 0 && <BlankSection blanks={note.blank} />}
           <QuizSection lecId={lecId} quiz={note.q} />
           <div className="h-6" />
         </div>
