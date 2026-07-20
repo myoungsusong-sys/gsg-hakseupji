@@ -3,7 +3,7 @@ import { toBlob } from 'html-to-image'
 import type { DailyNote, Grading, SavedReport, Student } from '../../types'
 import { useStore } from '../../lib/store'
 import { brandFor, DEFAULT_ACADEMY } from '../../lib/brand'
-import { SUBJECTS, useSubject, subjectOfGrading, type Subject } from '../../lib/subject'
+import { SUBJECTS, useSubject, subjectOfGrading, subjectOfWorkbook, type Subject } from '../../lib/subject'
 import { SUPABASE_ON, supabase } from '../../lib/supabase'
 import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
@@ -211,8 +211,15 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     ? { key: makeupDate, label: krDateLabel(makeupDate), isMakeup: true }
     : autoNext ? { key: autoNext, label: krDateLabel(autoNext), isMakeup: false } : null
 
+  const wbById = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
+  const wsById = useMemo(() => new Map(worksheets.map(w => [w.id, w])), [worksheets])
+
   // 진도표 연동 — 오늘/다음 수업일의 계획된 진도(교재·쪽·단원)
-  const myPlans = useMemo(() => lecturePlans.filter(p => p.studentId === student.id), [lecturePlans, student.id])
+  // ★ 교재 과목으로 걸러야 한다 — 안 그러면 과학 보고서에 수학 진도표가 그대로 뜬다
+  const myPlans = useMemo(
+    () => lecturePlans.filter(p => p.studentId === student.id && subjectOfWorkbook(wbById.get(p.workbookId)) === subject),
+    [lecturePlans, student.id, wbById, subject],
+  )
   function planForDate(k: string | undefined): string {
     if (!k) return ''
     for (const p of myPlans) {
@@ -260,8 +267,6 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
   const effCheckOut = checkOut || autoAttend?.checkOut || ''
 
   const itemMap = useMemo(() => new Map(wbItems.map(i => [i.id, i])), [wbItems])
-  const wbById = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
-  const wsById = useMemo(() => new Map(worksheets.map(w => [w.id, w])), [worksheets])
   // ★ 현재 과목 것만 집계 — 안 거르면 같은 날 푼 다른 과목(수학) 교재·유형·단원이 과학 보고서에 섞여 나온다
   const myGradings = useMemo(
     () => gradings.filter(g => g.studentId === student.id && subjectOfGrading(g, wbById, wsById, itemMap) === subject),

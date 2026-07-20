@@ -32,6 +32,11 @@ export function setSubject(s: Subject) {
   listeners.forEach(f => f())
 }
 
+// 교재 1권의 과목 — 명시 subject > course로 유도 > 수학(레거시 데이터)
+export function subjectOfWorkbook(w: Workbook | undefined): Subject {
+  return w?.subject ?? subjectOfCourse(w?.course) ?? '수학'
+}
+
 // 채점 기록 1건의 과목 — 보고서·집계를 헤더 과목 스위처에 맞춰 거를 때 쓴다.
 // (안 거르면 과학 보고서에 그날 푼 수학 교재·유형·단원이 그대로 섞여 나온다)
 // 판정 순서: 교재/학습지의 명시 subject > 교재 course로 유도 > 문항 유형으로 유도 > 수학(레거시 데이터).
@@ -43,7 +48,7 @@ export function subjectOfGrading(
 ): Subject {
   if ((g.source ?? '교재') === '교재') {
     const w = g.workbookId ? wbById.get(g.workbookId) : undefined
-    if (w) return w.subject ?? subjectOfCourse(w.course) ?? '수학'
+    if (w) return subjectOfWorkbook(w)
   } else {
     const w = g.worksheetId ? wsById.get(g.worksheetId) : undefined
     if (w?.subject) return w.subject
