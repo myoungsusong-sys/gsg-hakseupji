@@ -57,7 +57,7 @@ export default function LecturePage() {
       ) : !hasLectures(courseId) || total === 0 ? (
         <div className="rounded-2xl border border-line bg-white py-16 text-center text-sm text-ink2">
           이 과정은 개념강의가 없습니다.
-          <div className="mt-1.5 text-xs text-ink2/70">초등 1·2학년, 중3-2(22개정) 등은 매쓰플랫에 개념강의가 제공되지 않습니다.</div>
+          <div className="mt-1.5 text-xs text-ink2/70">초등 1·2학년, 중3-2(22개정) 등은 개념강의가 제공되지 않습니다.</div>
         </div>
       ) : (
         <div className="space-y-3">

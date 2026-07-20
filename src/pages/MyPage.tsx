@@ -59,7 +59,7 @@ export default function MyPage() {
         <div className="rounded-2xl border border-line bg-white p-3">
           <div className="rounded-lg bg-pine-soft px-3 py-2 text-sm font-bold text-pine-dark">내 정보</div>
           <p className="mt-2 px-1 text-xs leading-relaxed text-ink2">
-            이용 현황·교재비 정산·1:1 문의·사용 가이드 등은 매쓰플랫 결제·고객지원 구조라 자체 앱에는 없어요.
+            이용 현황·교재비 정산·1:1 문의·사용 가이드 등은 외부 서비스의 결제·고객지원 기능이라 자체 앱에는 없어요.
           </p>
         </div>
       </aside>

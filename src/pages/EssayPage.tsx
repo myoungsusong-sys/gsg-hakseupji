@@ -91,7 +91,7 @@ export default function EssayPage() {
       ) : !hasEssay(courseId) || sets.length === 0 ? (
         <div className="rounded-2xl border border-line bg-white py-16 text-center text-sm text-ink2">
           이 과정은 서술형 세트가 없습니다.
-          <div className="mt-1.5 text-xs text-ink2/70">매쓰플랫 서술형은 중1·중2·공통수학1·2·중3-2(2015)만 제공됩니다.</div>
+          <div className="mt-1.5 text-xs text-ink2/70">서술형은 중1·중2·공통수학1·2·중3-2(2015)만 제공됩니다.</div>
         </div>
       ) : (
         <div className="space-y-3">

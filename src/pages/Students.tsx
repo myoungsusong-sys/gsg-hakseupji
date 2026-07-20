@@ -224,7 +224,7 @@ function StudentsTab() {
         <button onClick={() => setShowMgmt(true)}
           className="rounded-lg border border-indigo-500 bg-white px-4 py-2 text-sm font-bold text-indigo-600 hover:bg-indigo-50">🏫 학원관리앱 가져오기</button>
         <button onClick={() => setShowImport(true)}
-          className="rounded-lg border border-pine bg-white px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">매쓰플랫 가져오기</button>
+          className="rounded-lg border border-pine bg-white px-4 py-2 text-sm font-bold text-pine hover:bg-pine-soft">학습이력 가져오기</button>
         <button onClick={() => setShowBulk(true)}
           className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-bold text-ink2 hover:text-ink">학생 일괄 등록</button>
         <button onClick={() => setShowForm(true)}
@@ -1159,11 +1159,11 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
       try {
         const json = JSON.parse(String(reader.result ?? '')) as ImportedFile
         if (!Array.isArray(json.students) || json.students.length === 0) {
-          setError('학생 정보가 없는 파일입니다. 매쓰플랫에서 내보낸 파일이 맞는지 확인해주세요.'); return
+          setError('학생 정보가 없는 파일입니다. 내보내기로 받은 파일이 맞는지 확인해주세요.'); return
         }
         setParsed(buildImport(json))
       } catch {
-        setError('파일을 읽지 못했습니다. 매쓰플랫에서 내보낸 JSON 파일을 첨부해주세요.')
+        setError('파일을 읽지 못했습니다. 내보내기로 받은 JSON 파일을 첨부해주세요.')
       }
     }
     reader.readAsText(file)
@@ -1179,7 +1179,7 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
   const dateRange = dates.length ? `${dates[0]} ~ ${dates[dates.length - 1]}` : '—'
 
   return (
-    <Modal title="매쓰플랫 가져오기" onClose={onClose}>
+    <Modal title="학습이력 가져오기" onClose={onClose}>
       {done > 0 ? (
         <div className="grid gap-4 py-2 text-center">
           <div className="text-4xl">✅</div>
@@ -1192,8 +1192,8 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
       ) : (
         <div className="grid gap-4">
           <div className="rounded-xl border border-line bg-paper2 p-4 text-sm leading-relaxed text-ink2">
-            <p className="mb-1"><b className="text-pine">매쓰플랫 재원생 명단 + 학습이력</b>을 한 번에 가져옵니다.</p>
-            <p>매쓰플랫에서 내보낸 <b>JSON 파일</b>을 첨부하면, 학생과 각자의 학습 기록(학습지·오답, 정답/오답·점수)이 앱에 등록됩니다. 같은 학생·기록은 여러 번 가져와도 중복되지 않습니다.</p>
+            <p className="mb-1"><b className="text-pine">재원생 명단 + 학습이력</b>을 한 번에 가져옵니다.</p>
+            <p>이전에 쓰던 학습관리 서비스에서 내보낸 <b>JSON 파일</b>을 첨부하면, 학생과 각자의 학습 기록(학습지·오답, 정답/오답·점수)이 앱에 등록됩니다. 같은 학생·기록은 여러 번 가져와도 중복되지 않습니다.</p>
           </div>
 
           <input ref={fileRef} type="file" className="hidden"
@@ -2169,7 +2169,7 @@ function LabKmm() {
         매월 1회, 자동 출제되는 수학경시 시험을 활성화하거나 비활성화할 수 있는 옵션을 제공합니다.
       </p>
       <div className="rounded-xl border border-dashed border-line bg-paper2/50 p-6 text-sm text-ink2">
-        <b className="text-ink">콘텐츠 대기</b> — KMM은 매쓰플랫 주관 대회라 자체 등가 콘텐츠(월간 경시 모의)를
+        <b className="text-ink">콘텐츠 대기</b> — KMM은 외부 주관 대회라 자체 등가 콘텐츠(월간 경시 모의)를
         확보한 뒤 <b>매월 자동출제 토글 × 학년별 설정</b> 구조로 활성화할 예정이에요.
       </div>
     </section>

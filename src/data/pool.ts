@@ -57,7 +57,7 @@ function toProblem(id: string, r: Raw, host = 'freewheelin-contents.mathflat.com
     body: '',
     answer,
     solution: `${base}/solution.png`,
-    source: '매쓰플랫',
+    source: '기본 제공',
     isNew: !!r[6],
     imageUrl: `${base}/problem.png`,
     ...(typeof r[7] === 'string' && r[7] ? (() => {

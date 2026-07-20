@@ -564,7 +564,7 @@ export default function WorksheetView() {
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄 / PDF</button>
       </div>
       <p className="no-print mb-6 text-[11px] text-ink2">
-        여백 0으로 인쇄돼 머리말·꼬리말 없이 매쓰플랫 실물과 동일하게 나옵니다. 가장자리가 잘리면 인쇄창에서 <b>배율 100% · 여백 ‘없음’</b>을 확인하세요.
+        여백 0으로 인쇄돼 머리말·꼬리말 없이 실물 학습지와 동일하게 나옵니다. 가장자리가 잘리면 인쇄창에서 <b>배율 100% · 여백 ‘없음’</b>을 확인하세요.
       </p>
 
       {/* 조판 중 스피너 (이미지·폰트 로드 → 실측 → 페이지 분배) */}

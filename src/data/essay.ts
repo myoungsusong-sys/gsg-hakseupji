@@ -29,7 +29,7 @@ function toProblem(r: RawProb): Problem {
     body: '',
     answer: broken ? `${base}/answer.png` : String(ans),
     solution: `${base}/solution.png`,
-    source: '매쓰플랫',
+    source: '기본 제공',
     imageUrl: `${base}/problem.png`,
   }
 }

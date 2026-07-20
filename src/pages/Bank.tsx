@@ -354,7 +354,7 @@ export function BulkAddModal({ courseId, onClose, onAdd }: {
           유형은 현재 선택된 과정을 우선으로 전 과정 유형명·소단원명에서 검색해 매핑합니다.
         </p>
         <div className="mb-3 rounded-lg bg-amber-soft px-3 py-2 text-sm font-semibold text-clay">
-          ⚠️ 유료 서비스(매쓰플랫 등)의 문제를 옮겨 넣는 것은 저작권 위반입니다. 직접 만든 문제·보유 자료만 등록하세요.
+          ⚠️ 유료 서비스의 문제를 옮겨 넣는 것은 저작권 위반입니다. 직접 만든 문제·보유 자료만 등록하세요.
         </div>
         <textarea value={text} onChange={e => setText(e.target.value)} rows={12} placeholder={placeholder}
           className="w-full rounded-lg border border-line px-3 py-2 font-mono text-sm" />
