@@ -260,6 +260,7 @@ export interface DailyConfig {
 export interface SavedReport {
   id: string
   kind: 'daily' | 'monthly' | 'analysis'   // 일일 보고지 / 월간 보고서 / 유형분석 보고서
+  subject?: '수학' | '과학'   // 과목 (없으면 레거시 = 수학). 같은 날짜라도 과목별로 별개 보고서다
   studentId: string
   name: string          // 보고서명 (예: "2026년 07월 보고서")
   period: string        // 'YYYY-MM-DD' | 'YYYY-MM' | 과정 라벨(유형분석)
@@ -335,8 +336,12 @@ export interface SolveFeedback {
 export interface DailyNote {
   studentId: string
   date: string          // YYYY-MM-DD
-  comment: string       // 선생님 한마디
-  nextPlan: string      // 다음 학습 계획
+  comment: string       // 선생님 한마디 (레거시 필드 = 수학 값. 과목별 값은 bySubject)
+  nextPlan: string      // 다음 학습 계획 (동상)
+  // 과목별 선생님 한마디·다음 학습 계획 — 수학 보고서에 쓴 코멘트가 과학 보고서에 그대로 뜨지 않도록 분리.
+  // 등원·하원·보강일은 과목과 무관하므로 이 레코드에 공용으로 둔다(과목을 바꿔도 그대로 보인다).
+  // 이 필드가 없는 레거시 기록은 comment/nextPlan을 수학 값으로 읽는다.
+  bySubject?: Record<string, { comment: string; nextPlan: string }>
   checkIn?: string       // 등원 시간 HH:MM — 버튼으로 체크했을 때만 기록(없으면 보고서 미표시)
   checkOut?: string      // 하원 시간 HH:MM
   makeupDate?: string    // 보강일 YYYY-MM-DD — 있으면 '다음 수업'을 이 날짜로 우선 반영(수업 변경)

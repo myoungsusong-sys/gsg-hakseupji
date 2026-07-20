@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { toBlob } from 'html-to-image'
-import type { Grading, Student } from '../../types'
+import type { DailyNote, Grading, SavedReport, Student } from '../../types'
 import { useStore } from '../../lib/store'
-import { useBrand } from '../../lib/brand'
+import { brandFor, DEFAULT_ACADEMY } from '../../lib/brand'
+import { SUBJECTS, useSubject, subjectOfGrading, type Subject } from '../../lib/subject'
 import { SUPABASE_ON, supabase } from '../../lib/supabase'
 import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
@@ -17,20 +18,27 @@ const KIND_LABEL = { daily: '일일 보고지', monthly: '월간 보고서', ana
 export default function ReportPanel({ student }: { student: Student }) {
   const { savedReports, removeSavedReport } = useStore()
   const [mode, setMode] = useState<Mode>('daily')
+  // 보고서 과목 — 수학·과학 보고서는 서로 완전히 별개다(집계·코멘트·저장 목록 전부 분리).
+  // 헤더 전역 스위처와 연동 — 여기서 바꾸면 헤더도 같이 바뀌고, 헤더에서 바꾸면 보고서도 따라온다.
+  const [subject, setSubject] = useSubject()
   const [q, setQ] = useState('')                               // 보고서명 검색
   const [listOpen, setListOpen] = useState(false)              // 저장 목록 섹션
   const [load, setLoad] = useState<{ mode: Mode; period: string; n: number } | null>(null)  // 저장 보고서 열기
 
+  const subjectOfReport = (r: SavedReport): Subject => r.subject ?? '수학'   // 레거시 저장분 = 수학
+  const subjectReports = useMemo(
+    () => savedReports.filter(r => r.studentId === student.id && subjectOfReport(r) === subject),
+    [savedReports, student.id, subject],
+  )
   const myReports = useMemo(
-    () => savedReports.filter(r => r.studentId === student.id)
-      .filter(r => !q.trim() || r.name.includes(q.trim())),
-    [savedReports, student.id, q],
+    () => subjectReports.filter(r => !q.trim() || r.name.includes(q.trim())),
+    [subjectReports, q],
   )
 
-  function openSaved(kind: string, period: string) {
-    if (kind === 'analysis') { alert('유형분석 보고서는 수업 > 유형분석 탭의 [보고서 내역]에서 확인하세요.'); return }
-    setMode(kind as Mode)
-    setLoad(prev => ({ mode: kind as Mode, period, n: (prev?.n ?? 0) + 1 }))
+  function openSaved(r: SavedReport) {
+    if (r.kind === 'analysis') { alert('유형분석 보고서는 수업 > 유형분석 탭의 [보고서 내역]에서 확인하세요.'); return }
+    setMode(r.kind as Mode)
+    setLoad(prev => ({ mode: r.kind as Mode, period: r.period, n: (prev?.n ?? 0) + 1 }))
   }
 
   return (
@@ -44,12 +52,22 @@ export default function ReportPanel({ student }: { student: Student }) {
             </button>
           ))}
         </div>
+        {/* 과목 — 수학 보고서와 과학 보고서를 따로 만든다. 헤더 스위처와 같은 값 (확장: lib/subject.ts SUBJECTS에 추가) */}
+        <div className="flex w-fit rounded-xl border border-line bg-white p-1 text-sm font-bold"
+          title="과목 — 채점 집계·선생님 한마디·저장 목록이 과목별로 따로 관리됩니다 (헤더 과목과 연동)">
+          {SUBJECTS.map(s => (
+            <button key={s} onClick={() => setSubject(s)}
+              className={`rounded-lg px-4 py-1.5 ${subject === s ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>
+              {s}
+            </button>
+          ))}
+        </div>
         <div className="grow" />
         <input value={q} onChange={e => { setQ(e.target.value); if (e.target.value) setListOpen(true) }}
           placeholder="보고서명 검색" className="w-44 rounded-lg border border-line px-3 py-2 text-sm" />
         <button onClick={() => setListOpen(v => !v)}
           className={`rounded-lg border px-3 py-2 text-sm font-semibold ${listOpen ? 'border-pine bg-pine-soft/60 text-pine-dark' : 'border-line text-ink2 hover:text-ink'}`}>
-          🗂 저장 목록 ({savedReports.filter(r => r.studentId === student.id).length})
+          🗂 {subject} 저장 목록 ({subjectReports.length})
         </button>
       </div>
 
@@ -58,7 +76,7 @@ export default function ReportPanel({ student }: { student: Student }) {
         <div className="no-print mb-5 rounded-2xl border border-line bg-white p-4">
           {myReports.length === 0 ? (
             <p className="py-6 text-center text-sm text-ink2">
-              {q ? '검색 결과가 없습니다.' : <>아직 만들어진 보고서가 없습니다. 새로운 보고서를 만들어보세요. — 아래 [보고서 저장]을 누르면 이 목록에 쌓입니다.</>}
+              {q ? '검색 결과가 없습니다.' : <>아직 만들어진 {subject} 보고서가 없습니다. 새로운 보고서를 만들어보세요. — 아래 [보고서 저장]을 누르면 이 목록에 쌓입니다.</>}
             </p>
           ) : (
             <table className="w-full text-sm">
@@ -71,7 +89,7 @@ export default function ReportPanel({ student }: { student: Student }) {
                 {myReports.map(r => (
                   <tr key={r.id} className="border-b border-line/50 last:border-0">
                     <td className="py-2 pr-2">
-                      <button onClick={() => openSaved(r.kind, r.period)} className="text-left font-bold hover:text-pine hover:underline">
+                      <button onClick={() => openSaved(r)} className="text-left font-bold hover:text-pine hover:underline">
                         {r.name}
                       </button>
                     </td>
@@ -90,10 +108,11 @@ export default function ReportPanel({ student }: { student: Student }) {
         </div>
       )}
 
+      {/* key에 과목 포함 — 과목을 바꾸면 편집 중이던 코멘트가 남지 않도록 새로 마운트한다 */}
       {mode === 'daily'
-        ? <DailyReport key={`${student.id}-${load?.n ?? 0}`} student={student}
+        ? <DailyReport key={`${student.id}-${subject}-${load?.n ?? 0}`} student={student} subject={subject}
             initialDate={load?.mode === 'daily' ? load.period : undefined} />
-        : <MonthlyReport key={`${student.id}-${load?.n ?? 0}`} student={student}
+        : <MonthlyReport key={`${student.id}-${subject}-${load?.n ?? 0}`} student={student} subject={subject}
             initialMonth={load?.mode === 'monthly' ? load.period : undefined} />}
     </div>
   )
@@ -128,47 +147,58 @@ async function copyText(text: string, done: () => void) {
 
 // ── 일일 보고지 (하원 시 학부모 단톡방 피드백) ──────────────────────────────
 
-function DailyReport({ student, initialDate }: { student: Student; initialDate?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport } = useStore()
-  const brand = useBrand()
+function DailyReport({ student, subject, initialDate }: { student: Student; subject: Subject; initialDate?: string }) {
+  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile } = useStore()
+  // 브랜드는 보고서 과목 기준 (헤더 전역 과목이 아니라) — 과학 보고서엔 '깊은생각과학'
+  const brand = brandFor(academyProfile.academyName?.trim() || DEFAULT_ACADEMY, subject)
   const [date, setDate] = useState(initialDate ?? todayKey())
-  const initial = dailyNotes.find(n => n.studentId === student.id && n.date === date)
-  const [comment, setComment] = useState(initial?.comment ?? '')
-  const [nextPlan, setNextPlan] = useState(initial?.nextPlan ?? '')
-  // '없음' 표시값: 채점·발송 교사가 추가할 내용이 없을 때 한 번에 처리 → 보고서에서 해당 항목 생략(선생님 한마디는 기본문구도 표시 안 함)
-  const isNone = (s: string) => s.trim() === '없음'
-  const [checkIn, setCheckIn] = useState(initial?.checkIn ?? '')       // 등원 시간 (체크해야 기록)
-  const [checkOut, setCheckOut] = useState(initial?.checkOut ?? '')     // 하원 시간
-  const [makeupDate, setMakeupDate] = useState(initial?.makeupDate ?? '') // 보강일 (있으면 다음수업 우선)
-  const [copied, setCopied] = useState(false)
-  // 같은 틱에 여러 필드를 저장해도(예: 등원·하원 연속 클릭) 스테일 클로저로 서로 덮어쓰지 않도록 ref로 최신값 동기 유지
-  const noteRef = useRef({
-    comment: initial?.comment ?? '', nextPlan: initial?.nextPlan ?? '',
-    checkIn: initial?.checkIn ?? '', checkOut: initial?.checkOut ?? '', makeupDate: initial?.makeupDate ?? '',
-  })
 
-  // 날짜가 바뀌면 저장분 불러오기
-  useEffect(() => {
-    const n = dailyNotes.find(x => x.studentId === student.id && x.date === date)
-    setComment(n?.comment ?? '')
-    setNextPlan(n?.nextPlan ?? '')
-    setCheckIn(n?.checkIn ?? '')
-    setCheckOut(n?.checkOut ?? '')
-    setMakeupDate(n?.makeupDate ?? '')
-    noteRef.current = {
-      comment: n?.comment ?? '', nextPlan: n?.nextPlan ?? '',
+  // 저장분 → 화면 상태. 선생님 한마디·다음계획은 과목별(bySubject), 등하원·보강일은 과목 공용.
+  // 레거시(bySubject 없음) 기록의 comment/nextPlan은 수학 값으로 읽는다.
+  function noteState(n: DailyNote | undefined) {
+    const by: Record<string, { comment: string; nextPlan: string }> = { ...(n?.bySubject ?? {}) }
+    if (!by['수학']) by['수학'] = { comment: n?.comment ?? '', nextPlan: n?.nextPlan ?? '' }
+    const cur = by[subject] ?? { comment: '', nextPlan: '' }
+    return {
+      comment: cur.comment, nextPlan: cur.nextPlan, bySubject: by,
       checkIn: n?.checkIn ?? '', checkOut: n?.checkOut ?? '', makeupDate: n?.makeupDate ?? '',
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [student.id, date])
+  }
+  const initial = noteState(dailyNotes.find(n => n.studentId === student.id && n.date === date))
+  const [comment, setComment] = useState(initial.comment)
+  const [nextPlan, setNextPlan] = useState(initial.nextPlan)
+  // '없음' 표시값: 채점·발송 교사가 추가할 내용이 없을 때 한 번에 처리 → 보고서에서 해당 항목 생략(선생님 한마디는 기본문구도 표시 안 함)
+  const isNone = (s: string) => s.trim() === '없음'
+  const [checkIn, setCheckIn] = useState(initial.checkIn)       // 등원 시간 (체크해야 기록)
+  const [checkOut, setCheckOut] = useState(initial.checkOut)     // 하원 시간
+  const [makeupDate, setMakeupDate] = useState(initial.makeupDate) // 보강일 (있으면 다음수업 우선)
+  const [copied, setCopied] = useState(false)
+  // 같은 틱에 여러 필드를 저장해도(예: 등원·하원 연속 클릭) 스테일 클로저로 서로 덮어쓰지 않도록 ref로 최신값 동기 유지
+  const noteRef = useRef(initial)
 
-  // 현재 값 전체를 하나의 노트로 저장 (ref 기준으로 병합 → 부분 저장 시 다른 필드가 지워지지 않음)
+  // 날짜·학생·과목이 바뀌면 저장분 불러오기
+  useEffect(() => {
+    const s = noteState(dailyNotes.find(x => x.studentId === student.id && x.date === date))
+    setComment(s.comment)
+    setNextPlan(s.nextPlan)
+    setCheckIn(s.checkIn)
+    setCheckOut(s.checkOut)
+    setMakeupDate(s.makeupDate)
+    noteRef.current = s
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [student.id, date, subject])
+
+  // 현재 값 전체를 하나의 노트로 저장 (ref 기준으로 병합 → 부분 저장 시 다른 필드·다른 과목이 지워지지 않음)
   function persist(patch: Partial<{ comment: string; nextPlan: string; checkIn: string; checkOut: string; makeupDate: string }>) {
     const m = { ...noteRef.current, ...patch }
+    m.bySubject = { ...m.bySubject, [subject]: { comment: m.comment, nextPlan: m.nextPlan } }
     noteRef.current = m
     saveDailyNote({
       studentId: student.id, date,
-      comment: m.comment, nextPlan: m.nextPlan,
+      // 레거시 최상위 필드에는 수학 값을 그대로 유지 — 옛 버전 앱·기존 기록과 호환
+      comment: m.bySubject['수학']?.comment ?? '',
+      nextPlan: m.bySubject['수학']?.nextPlan ?? '',
+      bySubject: m.bySubject,
       checkIn: m.checkIn || undefined,
       checkOut: m.checkOut || undefined,
       makeupDate: m.makeupDate || undefined,
@@ -230,9 +260,16 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
   const effCheckOut = checkOut || autoAttend?.checkOut || ''
 
   const itemMap = useMemo(() => new Map(wbItems.map(i => [i.id, i])), [wbItems])
+  const wbById = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
+  const wsById = useMemo(() => new Map(worksheets.map(w => [w.id, w])), [worksheets])
+  // ★ 현재 과목 것만 집계 — 안 거르면 같은 날 푼 다른 과목(수학) 교재·유형·단원이 과학 보고서에 섞여 나온다
+  const myGradings = useMemo(
+    () => gradings.filter(g => g.studentId === student.id && subjectOfGrading(g, wbById, wsById, itemMap) === subject),
+    [gradings, student.id, subject, wbById, wsById, itemMap],
+  )
   const dayGradings = useMemo(
-    () => gradings.filter(g => g.studentId === student.id && dateKey(g.date) === date),
-    [gradings, student.id, date],
+    () => myGradings.filter(g => dateKey(g.date) === date),
+    [myGradings, date],
   )
 
   // 교재/학습지 분리 집계 — 같은 교재·학습지의 여러 채점(낱장)은 한 줄로 묶어 쪽 범위·점수 합산
@@ -271,7 +308,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
 
   // 내용 업그레이드: 지난 7일 평균 대비 + 연속 학습일
   const { weekAvg, weekDelta, streak } = useMemo(() => {
-    const my = gradings.filter(g => g.studentId === student.id)
+    const my = myGradings          // 현재 과목 기록만 (수학 학습일이 과학 연속일에 섞이지 않도록)
     const d0 = new Date(date + 'T00:00:00')
     // 지난 7일(오늘 제외) 평균 정답률
     let c = 0, t = 0
@@ -290,7 +327,7 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
       else break
     }
     return { weekAvg: avg, weekDelta: avg == null || !totalSolved ? null : overall - avg, streak: s }
-  }, [gradings, student.id, date, overall, totalSolved])
+  }, [myGradings, date, overall, totalSolved])
 
   // 오늘 약했던 유형 (교재 itemId·학습지 typeId 모두 집계)
   const wrongTypes = useMemo(() => {
@@ -325,7 +362,8 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
 
   // 오늘 만든 오답 드릴
   const drills = worksheets.filter(w =>
-    !w.deletedAt && dateKey(w.createdAt) === date && w.title.startsWith(student.name) && w.tags.includes('오답'))
+    !w.deletedAt && dateKey(w.createdAt) === date && w.title.startsWith(student.name) && w.tags.includes('오답')
+    && (w.subject ?? '수학') === subject)
 
   const dateKr = date.replaceAll('-', '. ') + '.'
 
@@ -472,8 +510,8 @@ function DailyReport({ student, initialDate }: { student: Student; initialDate?:
         <div className="grow" />
         <button
           onClick={() => {
-            const name = prompt('저장할 보고서 이름', `${student.name} ${date.slice(5).replace('-', '.')} 일일 보고지`)
-            if (name?.trim()) addSavedReport({ kind: 'daily', studentId: student.id, name: name.trim(), period: date })
+            const name = prompt('저장할 보고서 이름', `${student.name} ${date.slice(5).replace('-', '.')} ${subject} 일일 보고지`)
+            if (name?.trim()) addSavedReport({ kind: 'daily', subject, studentId: student.id, name: name.trim(), period: date })
           }}
           className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">💾 보고서 저장</button>
         <button onClick={() => copyText(kakaoText, () => { setCopied(true); setTimeout(() => setCopied(false), 1800) })}
@@ -699,18 +737,22 @@ const MONTH_TOGGLES = [
 ] as const
 type MonthToggle = typeof MONTH_TOGGLES[number]['key']
 
-function MonthlyReport({ student, initialMonth }: { student: Student; initialMonth?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, addSavedReport } = useStore()
-  const brand = useBrand()
+function MonthlyReport({ student, subject, initialMonth }: { student: Student; subject: Subject; initialMonth?: string }) {
+  const { gradings, workbooks, worksheets, wbItems, addSavedReport, academyProfile } = useStore()
+  const brand = brandFor(academyProfile.academyName?.trim() || DEFAULT_ACADEMY, subject)
   const [month, setMonth] = useState(initialMonth ?? monthKey(new Date()))
   const [opinion, setOpinion] = useState('')
   const [inc, setInc] = useState<Record<MonthToggle, boolean>>({ history: true, weekly: true, weak: true })
   const [copied, setCopied] = useState(false)
 
   const itemMap = useMemo(() => new Map(wbItems.map(i => [i.id, i])), [wbItems])
+  const wbById = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
+  const wsById = useMemo(() => new Map(worksheets.map(w => [w.id, w])), [worksheets])
+  // ★ 일일 보고지와 동일 — 현재 과목 기록만 집계
   const monthGradings = useMemo(
-    () => gradings.filter(g => g.studentId === student.id && monthKey(g.date) === month),
-    [gradings, student.id, month],
+    () => gradings.filter(g => g.studentId === student.id && monthKey(g.date) === month
+      && subjectOfGrading(g, wbById, wsById, itemMap) === subject),
+    [gradings, student.id, month, subject, wbById, wsById, itemMap],
   )
 
   // 요약 4종
@@ -809,8 +851,8 @@ function MonthlyReport({ student, initialMonth }: { student: Student; initialMon
         <div className="grow" />
         <button
           onClick={() => {
-            const name = prompt('저장할 보고서 이름', `${y}년 ${m}월 보고서`)
-            if (name?.trim()) addSavedReport({ kind: 'monthly', studentId: student.id, name: name.trim(), period: month })
+            const name = prompt('저장할 보고서 이름', `${y}년 ${m}월 ${subject} 보고서`)
+            if (name?.trim()) addSavedReport({ kind: 'monthly', subject, studentId: student.id, name: name.trim(), period: month })
           }}
           className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">💾 보고서 저장</button>
         <button onClick={() => copyText(kakaoText, () => { setCopied(true); setTimeout(() => setCopied(false), 1800) })}

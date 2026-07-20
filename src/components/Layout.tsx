@@ -128,8 +128,8 @@ export default function Layout() {
             <NavLink to="/lesson" className={topTab}>수업</NavLink>
             <NavLink to="/manage" className={topTab}>관리</NavLink>
           </nav>
-          {/* 전역 과목 스위처 — 출제·문제은행·기출 화면이 이 과목을 따른다 (확장: lib/subject.ts SUBJECTS에 추가) */}
-          <div className="flex gap-0.5 rounded-lg bg-paper2 p-0.5" title="과목 — 수업 준비 화면 전체에 적용됩니다">
+          {/* 전역 과목 스위처 — 출제·문제은행·기출·채점·보고서가 이 과목을 따른다 (확장: lib/subject.ts SUBJECTS에 추가) */}
+          <div className="flex gap-0.5 rounded-lg bg-paper2 p-0.5" title="과목 — 수업 준비·채점·보고서에 적용됩니다">
             {SUBJECTS.map(s => (
               <button key={s} onClick={() => setSubject(s)}
                 className={`rounded-md px-3.5 py-1 text-sm font-bold transition ${subject === s ? 'bg-pine text-paper shadow-sm' : 'text-ink2 hover:text-ink'}`}>
