@@ -2832,3 +2832,22 @@ export function courseTagOfType(typeId: string): string {
 export function typeSubUnitId(typeId: string): string {
   return eachType().find(x => x.t.id === typeId)?.s.id ?? ''
 }
+
+// ── 학습지 → 로드해야 할 과정 목록 ────────────────────────────────
+// ⚠️ defaultCurriculumForGrade는 '고1'→공통수학1, '고2'→대수 로 **수학**을 돌려준다.
+//    그래서 고등 과학 학습지(통합과학1·2=고1, 물리·화학·생명·지구=고2)를 학생앱에서 열면
+//    문제 풀이 로드되지 않아 "문제를 불러오는 중"에서 멈췄다.
+//    학습지의 grade·subject에 해당하는 과정을 모두 반환해 그 풀을 함께 로드한다.
+export function coursesForWorksheet(grade: string, subject?: '수학' | '과학'): string[] {
+  const out = new Set<string>()
+  const def = defaultCurriculumForGrade(grade)
+  const defCur = CURRICULA.find(c => c.id === def)
+  // 과목이 명시됐으면 그 과목 과정만 (수학 학습지에 과학 풀을 붙이지 않음)
+  if (!subject || !defCur || (defCur.subject ?? '수학') === subject) out.add(def)
+  for (const c of CURRICULA) {
+    if (c.grade !== grade) continue
+    if (subject && (c.subject ?? '수학') !== subject) continue
+    out.add(c.id)
+  }
+  return [...out]
+}

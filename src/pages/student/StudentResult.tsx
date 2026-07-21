@@ -3,7 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Problem } from '../../types'
 import { DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
-import { defaultCurriculumForGrade, typeName } from '../../data/curriculum'
+import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import ProblemContent from '../../components/ProblemContent'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
@@ -34,7 +34,7 @@ export default function StudentResult() {
   const g = ws ? latestGradingFor(gradings, me.id, ws.id) : undefined
 
   useEffect(() => {
-    if (ws) ensureCourse(defaultCurriculumForGrade(ws.grade))
+    if (ws) for (const c of coursesForWorksheet(ws.grade, ws.subject)) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.grade])
 

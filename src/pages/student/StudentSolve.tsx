@@ -3,7 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Grading, Problem } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { isMachineGradable, requestAiGrade } from '../../lib/aiGrade'
-import { defaultCurriculumForGrade, typeName } from '../../data/curriculum'
+import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import ProblemContent from '../../components/ProblemContent'
 import SolveFeedback from '../../components/student/SolveFeedback'
@@ -43,7 +43,7 @@ export default function StudentSolve() {
   const mine = !!ws && assignments.some(a => a.worksheetId === ws.id && a.studentId === me.id)
 
   useEffect(() => {
-    if (ws) ensureCourse(defaultCurriculumForGrade(ws.grade))
+    if (ws) for (const c of coursesForWorksheet(ws.grade, ws.subject)) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.grade])
 
