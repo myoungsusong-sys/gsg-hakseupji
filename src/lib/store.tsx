@@ -12,6 +12,13 @@ import { cloud, loadAll, noteId, type CloudData } from './backend'
 
 const LS_KEY = 'gsg-hakseupji-v1'
 
+// 'YYYY-MM-DD' → 요일 라벨 ('월'~'일') — 시간표 블록 조회용
+const TT_DAY_LABELS = ['월', '화', '수', '목', '금', '토', '일']
+function TT_DAY_OF(date: string): string {
+  const d = new Date(date + 'T00:00:00')
+  return TT_DAY_LABELS[(d.getDay() + 6) % 7]
+}
+
 interface Persisted {
   customProblems: Problem[]
   worksheets: Worksheet[]
@@ -35,6 +42,7 @@ interface Persisted {
   lecturePlans: LecturePlan[]
   solveFeedbacks: SolveFeedback[]
   teachers: Teacher[]
+  ttChecks: Record<string, true>
 }
 
 const EMPTY: Persisted = {
@@ -52,6 +60,7 @@ const EMPTY: Persisted = {
   lecturePlans: [],
   solveFeedbacks: [],
   teachers: [],
+  ttChecks: {},
 }
 
 interface Store extends Persisted {
@@ -91,6 +100,8 @@ interface Store extends Persisted {
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
+  // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
+  toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
   setStudentAppConfig: (cfg: StudentAppConfig) => void   // 학생앱 공개 설정 (선생님용 UI는 2단계)
   setKlassOrder: (order: string[]) => void               // 반 표시 순서
   setAcademyProfile: (p: AcademyProfile) => void         // 마이페이지 내 정보
@@ -159,6 +170,7 @@ function fromCloud(r: CloudData): Persisted {
     lecturePlans: r.lecturePlans ?? [],
     solveFeedbacks: r.solveFeedbacks ?? [],
     teachers: r.teachers ?? [],
+    ttChecks: r.ttChecks ?? {},
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -172,6 +184,7 @@ function toCloud(s: Persisted): CloudData {
     savedReports: s.savedReports,
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers,
+    ttChecks: s.ttChecks,
   }
 }
 
@@ -421,6 +434,45 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const next = stateRef.current.assignments.filter(a =>
         !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true)))
       set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+    },
+    toggleTTCheck: (studentId, date, blockIdx, workbookId) => {
+      const key = `${studentId}|${date}|${blockIdx}`
+      const cur = stateRef.current.ttChecks
+      const on = !cur[key]
+      const next = { ...cur }
+      if (on) next[key] = true
+      else delete next[key]
+      set(s => ({ ...s, ttChecks: next })); cloud.setSetting('ttChecks', next)
+
+      // 진도표 반영 — 연결 교재의 그날 세션 done. 그날 세션이 없으면 밀린(과거 미완) 세션을 완료 처리.
+      if (!workbookId) return
+      const plan = stateRef.current.lecturePlans.find(p => p.studentId === studentId && p.workbookId === workbookId)
+      if (!plan) return
+      let idx = plan.sessions.findIndex(s2 => s2.date === date)
+      if (idx < 0) {
+        // 밀린 진도: 지난 미완료 중 가장 최근 것 (체크 해제 시엔 방금 완료 처리한 것 = 지난 완료 중 최신)
+        const cands = plan.sessions
+          .map((s2, i) => ({ s2, i }))
+          .filter(({ s2 }) => s2.date < date && (on ? !s2.done : !!s2.done))
+          .sort((a, b) => b.s2.date.localeCompare(a.s2.date))
+        if (cands.length === 0) return
+        idx = cands[0].i
+      }
+      // 같은 교재 블록이 하루 여러 개면 남은 체크가 있는 동안은 done 유지
+      if (!on) {
+        const tt = stateRef.current.students.find(s2 => s2.id === studentId)?.timetable
+        const day = TT_DAY_OF(date)
+        const others = (tt?.blocks?.[day] ?? []).some((b, i) =>
+          i !== blockIdx && b.workbookId === workbookId && next[`${studentId}|${date}|${i}`])
+        if (others) return
+      }
+      const updated = {
+        ...plan,
+        sessions: plan.sessions.map((s2, i) => (i === idx ? { ...s2, done: on } : s2)),
+        updatedAt: new Date().toISOString(),
+      }
+      const plans = [...stateRef.current.lecturePlans.filter(p => p.id !== plan.id), updated]
+      set(s => ({ ...s, lecturePlans: plans })); cloud.setSetting('lecturePlans', plans)
     },
     setDailyConfig: (studentId, cfg) => {
       const next = { ...stateRef.current.dailyConfigs, [studentId]: cfg }

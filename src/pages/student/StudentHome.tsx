@@ -26,7 +26,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students, lecturePlans } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students, lecturePlans, ttChecks, toggleTTCheck } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable
@@ -174,24 +174,38 @@ export default function StudentHome() {
           {/* 📅 오늘 시간표 — 선생님이 짜준 주간 시간표의 오늘 블록 */}
           {ttToday.length > 0 && (
             <section className="rounded-2xl border border-line bg-white p-6">
-              <h2 className="mb-3 font-black">📅 오늘 시간표 <span className="text-xs font-semibold text-ink2">({todayDayLabel()}요일)</span></h2>
+              <div className="mb-3 flex flex-wrap items-baseline gap-2">
+                <h2 className="font-black">📅 오늘 시간표 <span className="text-xs font-semibold text-ink2">({todayDayLabel()}요일)</span></h2>
+                <span className="rounded-full bg-pine-soft px-2.5 py-1 text-xs font-black text-pine-dark">
+                  {ttToday.filter((_, i) => ttChecks[`${me.id}|${today}|${i}`]).length} / {ttToday.length} 완료
+                </span>
+                <span className="text-xs text-ink2">끝낸 시간은 체크해 주세요 — 진도표에 바로 반영돼요</span>
+              </div>
               <div className="grid gap-1.5">
                 {ttToday.map((b, i) => {
                   const now = isNowBlock(b)
                   const plan = planForBlock(b, today, lecturePlans, me.id)
+                  const doneKey = `${me.id}|${today}|${i}`
+                  const done = !!ttChecks[doneKey]
                   return (
-                    <div key={i}
-                      className={`flex items-center gap-3 rounded-xl border px-3 py-2 text-sm ${now ? 'border-pine bg-pine-soft/50' : 'border-line/60'}`}>
-                      <span className="w-24 shrink-0 font-black tabular-nums">{b.start}~{b.end}</span>
+                    <label key={i}
+                      className={`flex cursor-pointer items-center gap-3 rounded-xl border px-3 py-2 text-sm ${
+                        done ? 'border-pine/40 bg-pine-soft/25' : now ? 'border-pine bg-pine-soft/50' : 'border-line/60'}`}>
+                      <input type="checkbox" checked={done} disabled={pv.on}
+                        onChange={() => toggleTTCheck(me.id, today, i, b.workbookId)}
+                        className="size-4 shrink-0 accent-pine" />
+                      <span className={`w-24 shrink-0 font-black tabular-nums ${done ? 'text-ink2 line-through' : ''}`}>{b.start}~{b.end}</span>
                       <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>{b.subject}</span>
-                      <span className="min-w-0 truncate font-semibold">{b.kind === '인강' ? '🎧 ' : '📗 '}{b.title}</span>
+                      <span className={`min-w-0 truncate font-semibold ${done ? 'text-ink2 line-through' : ''}`}>{b.kind === '인강' ? '🎧 ' : '📗 '}{b.title}</span>
                       {plan && (
                         <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${plan.behind ? 'bg-red-100 text-red-800' : 'bg-paper2 text-ink2'}`}>
                           {plan.behind ? '⚠ ' : '📖 '}{plan.text}
                         </span>
                       )}
-                      {now && <span className="ml-auto shrink-0 rounded-full bg-pine px-2 py-0.5 text-[10px] font-black text-paper">지금</span>}
-                    </div>
+                      {done
+                        ? <span className="ml-auto shrink-0 text-xs font-black text-pine">✓ 완료</span>
+                        : now && <span className="ml-auto shrink-0 rounded-full bg-pine px-2 py-0.5 text-[10px] font-black text-paper">지금</span>}
+                    </label>
                   )
                 })}
               </div>

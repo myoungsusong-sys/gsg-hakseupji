@@ -41,6 +41,7 @@ export interface CloudData {
   lecturePlans: LecturePlan[]                  // 강의 진도표 (settings 'lecturePlans')
   solveFeedbacks: SolveFeedback[]              // 학생 풀이 AI 피드백 (settings 'solveFeedbacks')
   teachers: Teacher[]                         // 강사 (settings 'teachers')
+  ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
 }
 
 export function noteId(n: DailyNote): string {
@@ -91,6 +92,7 @@ export async function loadAll(): Promise<CloudData | null> {
     lecturePlans: (settingsMap.get('lecturePlans') as LecturePlan[]) ?? [],
     solveFeedbacks: (settingsMap.get('solveFeedbacks') as SolveFeedback[]) ?? [],
     teachers: (settingsMap.get('teachers') as Teacher[]) ?? [],
+    ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
   }
 }
 
@@ -150,6 +152,7 @@ export const cloud = {
       local.lecturePlans.length ? this.setSetting('lecturePlans', local.lecturePlans) : Promise.resolve(),
       local.solveFeedbacks.length ? this.setSetting('solveFeedbacks', local.solveFeedbacks) : Promise.resolve(),
       local.teachers.length ? this.setSetting('teachers', local.teachers) : Promise.resolve(),
+      Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

@@ -31,7 +31,7 @@ function emptyTT(): StudentTimetable {
 
 export default function TimetablePage() {
   const { studentId } = useParams()
-  const { students, workbooks, lecturePlans, updateStudent } = useStore()
+  const { students, workbooks, lecturePlans, ttChecks, updateStudent } = useStore()
   const brand = useBrand()
   const student = students.find(s => s.id === studentId)
 
@@ -210,15 +210,17 @@ export default function TimetablePage() {
               <div className="grid gap-1">
                 {(tt.blocks[d] ?? []).map((b: TTBlock, i: number) => {
                   // 진도 쪽수 — 오늘 요일 칸은 오늘 날짜 기준, 다른 요일은 그 요일의 이번 주 날짜 기준
-                  const plan = planForBlock(b, weekDateOf(d), lecturePlans, student.id)
+                  const dk = weekDateOf(d)
+                  const plan = planForBlock(b, dk, lecturePlans, student.id)
+                  const done = !!ttChecks[`${student.id}|${dk}|${i}`]   // 학생이 완료 체크한 블록
                   return (
-                    <div key={i} className={`group rounded-lg px-1.5 py-1 text-[11px] leading-tight ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>
+                    <div key={i} className={`group rounded-lg px-1.5 py-1 text-[11px] leading-tight ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타} ${done ? 'opacity-60' : ''}`}>
                       <div className="flex items-start justify-between gap-0.5">
-                        <span className="font-black tabular-nums">{b.start}</span>
+                        <span className="font-black tabular-nums">{done ? '✓ ' : ''}{b.start}</span>
                         <button type="button" onClick={() => removeBlock(d, i)}
                           className="note-noprint hidden text-[10px] group-hover:inline" aria-label="블록 삭제">✕</button>
                       </div>
-                      <p className="truncate font-semibold" title={b.title}>{b.kind === '인강' ? '🎧 ' : ''}{b.title}</p>
+                      <p className={`truncate font-semibold ${done ? 'line-through' : ''}`} title={b.title}>{b.kind === '인강' ? '🎧 ' : ''}{b.title}</p>
                       {plan && (
                         <p className={`truncate text-[10px] ${plan.behind ? 'font-bold text-red-700' : 'opacity-80'}`} title={plan.text}>
                           {plan.behind ? '⚠ ' : '📖 '}{plan.text}
