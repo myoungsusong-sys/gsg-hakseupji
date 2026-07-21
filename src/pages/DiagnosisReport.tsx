@@ -1,10 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { useStore } from '../lib/store'
+import { useStore, uid } from '../lib/store'
+import { useNavigate } from 'react-router-dom'
+import { DEFAULT_SHEET_OPTIONS } from '../types'
+import { pickDrillProblems } from '../lib/drill'
 import { useBrand } from '../lib/brand'
 import { courseTagOfType, typeName, typeUnitName } from '../data/curriculum'
 import { diagnosisCourses } from '../lib/diagnosis'
 import { achievementOf } from '../lib/achievement'
+import { supabase, SUPABASE_ON } from '../lib/supabase'
 
 // ── 입학 진단 리포트 — 학습 배경(등록 정보) + 입학 진단고사 채점 결과를 상담용 한 장으로 ──
 // 데이터는 전부 실시간 재계산(스토어) — 별도 저장 테이블 없음. 인쇄(.note-print)로 PDF 배포.
@@ -13,10 +17,30 @@ interface TypeStat { typeId: string; wrong: number; total: number }
 
 export default function DiagnosisReport() {
   const { studentId } = useParams()
-  const { students, worksheets, assignments, gradings, problems, ensureCourse } = useStore()
+  const { students, worksheets, assignments, gradings, problems, ensureCourse, saveWorksheet, addAssignment } = useStore()
   const brand = useBrand()
+  const nav = useNavigate()
   const student = students.find(s => s.id === studentId)
   const [comment, setComment] = useState('')
+  const [survey, setSurvey] = useState<{ date: string; scores: Record<string, number> } | null>(null)
+
+  // 학원관리앱 학습습관 자가진단 (관리앱 태블릿에서 응시한 결과) — mgmtId 연결 학생만
+  useEffect(() => {
+    let alive = true
+    ;(async () => {
+      if (!SUPABASE_ON || !student?.mgmtId) return
+      try {
+        const { data: sess } = await supabase!.auth.getSession()
+        const token = sess.session?.access_token
+        if (!token) return
+        const r = await fetch(`/api/mgmt-surveys?mgmtId=${encodeURIComponent(student.mgmtId)}`,
+          { headers: { Authorization: `Bearer ${token}` } })
+        const d = await r.json().catch(() => ({}))
+        if (alive && r.ok && d.survey) setSurvey(d.survey)
+      } catch { /* 연동 실패는 조용히 — 섹션만 생략 */ }
+    })()
+    return () => { alive = false }
+  }, [student])
 
   // 진단 문항 typeId 해석 보조용 풀 로드 (구 기록 fallback)
   useEffect(() => {
@@ -100,6 +124,41 @@ export default function DiagnosisReport() {
   }
   if (student.traits?.length) findings.push(`상담 시 확인된 성향: ${student.traits.join(', ')}`)
   if (student.goal) findings.push(`학습 목표: ${student.goal}`)
+  const habit = survey ? habitFeedback(survey.scores) : null
+  if (habit) findings.push(`학습습관 유형: ${habit.type}`)
+
+  const surveyNo = 3 + (weak.length > 0 ? 1 : 0)
+  const opinionNo = surveyNo + (survey ? 1 : 0)
+
+  // 취약 유형 → 문제은행에서 보완 학습지 자동 생성 (진단 출제분 제외, 유형당 2문제)
+  function makeDrill() {
+    const excludeIds = new Set<string>()
+    for (const wid of calc!.wsIds) {
+      const w = worksheets.find(x => x.id === wid)
+      if (w) for (const pid of w.problemIds) excludeIds.add(pid)
+    }
+    const picked = pickDrillProblems(
+      weak.map(s => ({ typeId: s.typeId })), problems,
+      { twinPer: 0, similarPer: 2, diffShift: 0, typeCap: 2, excludeIds })
+    if (picked.length === 0) { alert('보완 문제를 문제은행에서 찾지 못했습니다.'); return }
+    const id = uid('ws')
+    saveWorksheet({
+      id,
+      title: `진단 보완 — ${student!.name} (${new Date().toISOString().slice(0, 10).replace(/-/g, '.')})`,
+      author: brand,
+      grade: student!.grade,
+      tags: ['취약유형'],
+      theme: 'amber',
+      problemIds: picked.map(p => p.id),
+      conceptIds: [],
+      options: { ...DEFAULT_SHEET_OPTIONS, autoGrade: true },
+      listIds: [],
+      createdAt: new Date().toISOString(),
+      deletedAt: null,
+    })
+    addAssignment(id, [student!.id], '숙제')
+    nav(`/worksheet/${id}`)
+  }
 
   const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.')
   return (
@@ -193,11 +252,42 @@ export default function DiagnosisReport() {
               ))}
               {weak.length > 12 && <p className="text-xs text-ink2">외 {weak.length - 12}개 유형 (유형분석 화면에서 전체 확인)</p>}
             </div>
+            <button type="button" onClick={makeDrill}
+              className="note-noprint mt-3 rounded-lg border border-pine px-4 py-2 text-sm font-bold text-pine hover:bg-pine hover:text-paper">
+              🧩 취약 유형 보완 학습지 만들기 — 문제은행에서 유형당 2문제 자동 선발
+            </button>
           </Section>
         )}
 
-        {/* 4. 종합 소견 */}
-        <Section title={`${weak.length > 0 ? 4 : 3}. 종합 소견 및 학습 제안`}>
+        {/* 학습습관 자가진단 (관리앱 연동) */}
+        {survey && habit && (
+          <Section title={`${surveyNo}. 학습습관 자가진단 (${survey.date} 응시)`}>
+            <p className="mb-2 text-sm font-bold">{habit.type}</p>
+            <div className="grid gap-1.5">
+              {(['계획', '집중', '복습', '자기관리'] as const).map(dim => {
+                const v = survey.scores[dim] ?? 0
+                return (
+                  <div key={dim} className="flex items-center gap-2 text-sm">
+                    <span className="w-20 shrink-0 font-semibold">{dim}</span>
+                    <div className="h-3 flex-1 overflow-hidden rounded bg-paper2">
+                      <div className={`h-full ${v >= 4 ? 'bg-pine' : v >= 3 ? 'bg-amber' : 'bg-red-400'}`}
+                        style={{ width: `${(v / 5) * 100}%` }} />
+                    </div>
+                    <span className="w-10 shrink-0 text-right text-xs font-bold">{v.toFixed(1)}</span>
+                  </div>
+                )
+              })}
+            </div>
+            {habit.tips.length > 0 && (
+              <ul className="mt-2 grid list-disc gap-1 pl-5 text-sm text-ink2">
+                {habit.tips.map((t, i) => <li key={i}>{t}</li>)}
+              </ul>
+            )}
+          </Section>
+        )}
+
+        {/* 종합 소견 */}
+        <Section title={`${opinionNo}. 종합 소견 및 학습 제안`}>
           <ul className="grid list-disc gap-1 pl-5 text-sm">
             {findings.map((f, i) => <li key={i}>{f}</li>)}
           </ul>
@@ -273,4 +363,24 @@ import { curriculumFor } from '../data/curriculum'
 function courseTagOfType0(courseId: string): string {
   const c = curriculumFor(courseId)
   return c.grade.startsWith('고') ? c.label.replace(/ \(.*\)$/, '') : c.grade
+}
+
+// 학습습관 자가진단 해석 — 관리앱 lib/survey.ts와 동일 기준(점수 1.0~5.0)
+const HABIT_TYPE: Record<string, string> = {
+  계획: '계획형 — 설계부터 하는 타입', 집중: '몰입형 — 앉으면 끝을 보는 타입',
+  복습: '다지기형 — 반복으로 완성하는 타입', 자기관리: '리듬형 — 컨디션으로 승부하는 타입',
+}
+const HABIT_TIP: Record<string, string> = {
+  계획: '계획 없이 시작하는 편 — 등원 직후 플래너에 오늘 3칸만 채우는 습관부터.',
+  집중: '집중 유지가 어려운 편 — 25~30분 짧은 블록 + 휴대폰 반납이 효과적.',
+  복습: '배운 것을 다시 보지 않는 편 — 하원 전 10분 "오늘 배운 것 3줄 요약"부터.',
+  자기관리: '수면·환경 관리가 약한 편 — 취침 시간 고정을 학부모와 공유 권장.',
+}
+function habitFeedback(scores: Record<string, number>): { type: string; tips: string[] } | null {
+  const dims = ['계획', '집중', '복습', '자기관리']
+  const entries = dims.map(d => [d, scores[d] ?? 0] as const).filter(([, v]) => v > 0)
+  if (!entries.length) return null
+  const top = [...entries].sort((a, b) => b[1] - a[1])[0]
+  const tips = entries.filter(([, v]) => v < 3.5).map(([d]) => HABIT_TIP[d])
+  return { type: HABIT_TYPE[top[0]], tips }
 }
