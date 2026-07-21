@@ -1,4 +1,4 @@
-import type { StudentTimetable, TTBlock, TTResource } from '../types'
+import type { LecturePlan, StudentTimetable, TTBlock, TTResource } from '../types'
 
 // ── 주간 시간표 자동 배치 — 요일별 공부시간 창을 슬롯으로 쪼개고 교재·인강을 고르게 배분 ──
 
@@ -80,7 +80,10 @@ export function buildTimetable(
       const prev = out[out.length - 1]
       const pick = cands.find(r => !prev || r.title !== prev.title) ?? cands[0]
       remain.set(pick.id, (remain.get(pick.id) ?? 0) - 1)
-      out.push({ start: slot.start, end: slot.end, title: pick.title, subject: pick.subject, kind: pick.kind })
+      out.push({
+        start: slot.start, end: slot.end, title: pick.title, subject: pick.subject, kind: pick.kind,
+        ...(pick.workbookId ? { workbookId: pick.workbookId } : {}),
+      })
     }
     blocks[day] = out
   }
@@ -96,4 +99,19 @@ export function todayDayLabel(d = new Date()): string {
 export function isNowBlock(b: TTBlock, d = new Date()): boolean {
   const now = d.getHours() * 60 + d.getMinutes()
   return toMin(b.start) <= now && now < toMin(b.end)
+}
+
+// 블록의 그날 진도 — 연결된 교재의 진도표(LecturePlan)에서 해당 날짜 세션을 찾는다.
+// 그날 세션이 없으면 '가장 가까운 지난 미완료 세션'(밀린 진도)을 안내한다.
+export function planForBlock(
+  b: TTBlock, dateKey: string, plans: LecturePlan[], studentId: string,
+): { text: string; behind: boolean } | null {
+  if (!b.workbookId) return null
+  const p = plans.find(x => x.studentId === studentId && x.workbookId === b.workbookId)
+  if (!p) return null
+  const exact = p.sessions.find(s => s.date === dateKey)
+  if (exact) return { text: `${exact.pageFrom}~${exact.pageTo}p${exact.unit ? ` · ${exact.unit}` : ''}`, behind: false }
+  const overdue = p.sessions.filter(s => s.date < dateKey && !s.done).sort((a, b2) => b2.date.localeCompare(a.date))[0]
+  if (overdue) return { text: `밀린 진도 ${overdue.pageFrom}~${overdue.pageTo}p`, behind: true }
+  return null
 }

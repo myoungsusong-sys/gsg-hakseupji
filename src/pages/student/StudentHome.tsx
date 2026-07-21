@@ -7,7 +7,7 @@ import { typeName } from '../../data/curriculum'
 import { resultTypeId, weakTypes, wrongByType } from '../../lib/drill'
 import { achievementIndex } from '../../lib/achievement'
 import { useStudentSelf } from './StudentShell'
-import { isNowBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
+import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import {
   fmtHM, fmtHMS, latestGradingFor, myWorksheetRows, readDraft, readStudySeconds, statusOf,
   summaryOf, usePreview, PREVIEW_LOCK_TITLE, STATUS_CLASS, type StudentWsStatus,
@@ -26,7 +26,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students, lecturePlans } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable
@@ -178,12 +178,18 @@ export default function StudentHome() {
               <div className="grid gap-1.5">
                 {ttToday.map((b, i) => {
                   const now = isNowBlock(b)
+                  const plan = planForBlock(b, today, lecturePlans, me.id)
                   return (
                     <div key={i}
                       className={`flex items-center gap-3 rounded-xl border px-3 py-2 text-sm ${now ? 'border-pine bg-pine-soft/50' : 'border-line/60'}`}>
                       <span className="w-24 shrink-0 font-black tabular-nums">{b.start}~{b.end}</span>
                       <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>{b.subject}</span>
                       <span className="min-w-0 truncate font-semibold">{b.kind === '인강' ? '🎧 ' : '📗 '}{b.title}</span>
+                      {plan && (
+                        <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${plan.behind ? 'bg-red-100 text-red-800' : 'bg-paper2 text-ink2'}`}>
+                          {plan.behind ? '⚠ ' : '📖 '}{plan.text}
+                        </span>
+                      )}
                       {now && <span className="ml-auto shrink-0 rounded-full bg-pine px-2 py-0.5 text-[10px] font-black text-paper">지금</span>}
                     </div>
                   )

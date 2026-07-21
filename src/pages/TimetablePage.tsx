@@ -3,11 +3,21 @@ import { Link, useParams } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
 import { useBrand } from '../lib/brand'
 import type { StudentTimetable, TTBlock, TTResource } from '../types'
-import { buildTimetable, daySlots, SUBJECT_CLS, TT_DAYS, TT_SUBJECTS } from '../lib/timetable'
+import { buildTimetable, daySlots, planForBlock, SUBJECT_CLS, TT_DAYS, TT_SUBJECTS } from '../lib/timetable'
 
 // ── 주간 시간표 — 요일별 공부시간 + 교재·인강 선택 → 자동 배치 → 학생앱 홈에 '오늘 시간표'로 노출 ──
 
 const INPUT = 'rounded-lg border border-line px-2 py-1.5 text-sm'
+
+// 이번 주(월~일)에서 해당 요일의 날짜 키 — 그리드 각 칸의 진도를 그 요일 날짜로 조회
+function weekDateOf(day: string): string {
+  const now = new Date()
+  const mon = new Date(now)
+  mon.setDate(now.getDate() - ((now.getDay() + 6) % 7))
+  const d = new Date(mon)
+  d.setDate(mon.getDate() + TT_DAYS.indexOf(day as typeof TT_DAYS[number]))
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
 
 function emptyTT(): StudentTimetable {
   return {
@@ -21,7 +31,7 @@ function emptyTT(): StudentTimetable {
 
 export default function TimetablePage() {
   const { studentId } = useParams()
-  const { students, workbooks, updateStudent } = useStore()
+  const { students, workbooks, lecturePlans, updateStudent } = useStore()
   const brand = useBrand()
   const student = students.find(s => s.id === studentId)
 
@@ -131,7 +141,7 @@ export default function TimetablePage() {
               <span className="font-bold text-ink2">배정 교재 빠른 추가:</span>
               {myWorkbooks.map(w => (
                 <button key={w.id} type="button"
-                  onClick={() => set({ resources: [...tt.resources, { id: uid('ttr'), kind: '교재', title: w.name, subject: w.subject ?? '수학', weekly: 0 }] })}
+                  onClick={() => set({ resources: [...tt.resources, { id: uid('ttr'), kind: '교재', title: w.name, subject: w.subject ?? '수학', weekly: 0, workbookId: w.id }] })}
                   className="rounded-md border border-line px-2 py-1 font-semibold text-ink2 hover:border-pine">
                   ＋ {w.name}
                 </button>
@@ -151,6 +161,13 @@ export default function TimetablePage() {
                 <select value={r.subject} onChange={e => setRes(i, { subject: e.target.value })} className={INPUT}>
                   {TT_SUBJECTS.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
+                {r.kind === '교재' && myWorkbooks.length > 0 && (
+                  <select value={r.workbookId ?? ''} title="진도표 연결 — 연결하면 블록에 그날 진도 쪽수가 표시됩니다"
+                    onChange={e => setRes(i, { workbookId: e.target.value || undefined })} className={INPUT}>
+                    <option value="">진도 연결 안 함</option>
+                    {myWorkbooks.map(w => <option key={w.id} value={w.id}>📖 {w.name}</option>)}
+                  </select>
+                )}
                 <label className="flex items-center gap-1 text-xs text-ink2">
                   주당
                   <input type="number" min={0} max={40} value={r.weekly}
@@ -191,16 +208,25 @@ export default function TimetablePage() {
             <div key={d} className="min-w-0">
               <p className="mb-1 text-center text-xs font-black">{d}</p>
               <div className="grid gap-1">
-                {(tt.blocks[d] ?? []).map((b: TTBlock, i: number) => (
-                  <div key={i} className={`group rounded-lg px-1.5 py-1 text-[11px] leading-tight ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>
-                    <div className="flex items-start justify-between gap-0.5">
-                      <span className="font-black tabular-nums">{b.start}</span>
-                      <button type="button" onClick={() => removeBlock(d, i)}
-                        className="note-noprint hidden text-[10px] group-hover:inline" aria-label="블록 삭제">✕</button>
+                {(tt.blocks[d] ?? []).map((b: TTBlock, i: number) => {
+                  // 진도 쪽수 — 오늘 요일 칸은 오늘 날짜 기준, 다른 요일은 그 요일의 이번 주 날짜 기준
+                  const plan = planForBlock(b, weekDateOf(d), lecturePlans, student.id)
+                  return (
+                    <div key={i} className={`group rounded-lg px-1.5 py-1 text-[11px] leading-tight ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>
+                      <div className="flex items-start justify-between gap-0.5">
+                        <span className="font-black tabular-nums">{b.start}</span>
+                        <button type="button" onClick={() => removeBlock(d, i)}
+                          className="note-noprint hidden text-[10px] group-hover:inline" aria-label="블록 삭제">✕</button>
+                      </div>
+                      <p className="truncate font-semibold" title={b.title}>{b.kind === '인강' ? '🎧 ' : ''}{b.title}</p>
+                      {plan && (
+                        <p className={`truncate text-[10px] ${plan.behind ? 'font-bold text-red-700' : 'opacity-80'}`} title={plan.text}>
+                          {plan.behind ? '⚠ ' : '📖 '}{plan.text}
+                        </p>
+                      )}
                     </div>
-                    <p className="truncate font-semibold" title={b.title}>{b.kind === '인강' ? '🎧 ' : ''}{b.title}</p>
-                  </div>
-                ))}
+                  )
+                })}
                 {(tt.blocks[d] ?? []).length === 0 && <p className="text-center text-[10px] text-ink2">—</p>}
               </div>
             </div>

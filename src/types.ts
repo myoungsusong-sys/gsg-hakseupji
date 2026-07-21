@@ -218,8 +218,12 @@ export interface TTResource {
   title: string          // 예: 쎈 중등수학 1(상) / 엠베스트 국어
   subject: string        // 수학·영어·과학·국어·사회·기타
   weekly: number         // 주당 목표 블록 수 (0 = 자동 균등)
+  workbookId?: string    // 연결된 교재 — 있으면 진도표(LecturePlan)의 그날 쪽수를 블록에 표시
 }
-export interface TTBlock { start: string; end: string; title: string; subject: string; kind: '교재' | '인강' }
+export interface TTBlock {
+  start: string; end: string; title: string; subject: string; kind: '교재' | '인강'
+  workbookId?: string    // 진도 쪽수 조회용 (생성 시 자료에서 복사)
+}
 export interface StudentTimetable {
   days: Record<string, { start: string; end: string } | null>  // '월'~'일' — null이면 휴무
   slotMin: number                       // 블록 길이(분) — 기본 60
