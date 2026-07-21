@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -42,6 +42,8 @@ export interface CloudData {
   solveFeedbacks: SolveFeedback[]              // 학생 풀이 AI 피드백 (settings 'solveFeedbacks')
   teachers: Teacher[]                         // 강사 (settings 'teachers')
   ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
+  pointEntries: PointEntry[]                   // 포인트 수동/학부모 항목 (settings 'pointEntries')
+  pointSettlements: PointSettlement[]          // 월말 정산 스냅샷 (settings 'pointSettlements')
 }
 
 export function noteId(n: DailyNote): string {
@@ -93,6 +95,8 @@ export async function loadAll(): Promise<CloudData | null> {
     solveFeedbacks: (settingsMap.get('solveFeedbacks') as SolveFeedback[]) ?? [],
     teachers: (settingsMap.get('teachers') as Teacher[]) ?? [],
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
+    pointEntries: (settingsMap.get('pointEntries') as PointEntry[]) ?? [],
+    pointSettlements: (settingsMap.get('pointSettlements') as PointSettlement[]) ?? [],
   }
 }
 
@@ -153,6 +157,8 @@ export const cloud = {
       local.solveFeedbacks.length ? this.setSetting('solveFeedbacks', local.solveFeedbacks) : Promise.resolve(),
       local.teachers.length ? this.setSetting('teachers', local.teachers) : Promise.resolve(),
       Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
+      (local.pointEntries ?? []).length ? this.setSetting('pointEntries', local.pointEntries) : Promise.resolve(),
+      (local.pointSettlements ?? []).length ? this.setSetting('pointSettlements', local.pointSettlements) : Promise.resolve(),
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)

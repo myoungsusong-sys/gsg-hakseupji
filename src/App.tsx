@@ -23,6 +23,8 @@ import MakeWizard from './pages/MakeWizard'
 import WorksheetView from './pages/WorksheetView'
 import DiagnosisReport from './pages/DiagnosisReport'
 import TimetablePage from './pages/TimetablePage'
+import PointsPage from './pages/PointsPage'
+import FormsPage from './pages/FormsPage'
 import Materials from './pages/Materials'
 import NaesinPrep from './pages/NaesinPrep'
 import TestPrep from './pages/TestPrep'
@@ -101,6 +103,7 @@ function Gate() {
               <Route path="/gichul/:id" element={<GichulView />} />
               <Route path="/gichul-tag/:id" element={<GichulTag />} />
               <Route path="/prep/test" element={<TestPrep />} />
+              <Route path="/prep/forms" element={<FormsPage />} />
               <Route path="/prep/kmm" element={
                 <Placeholder title="KMM수학경시대회"
                   original={['KMM 수학경시대회 기출·모의 문항 회차별 제공']}
@@ -125,6 +128,7 @@ function Gate() {
             <Route path="/worksheet/:id" element={<Page><WorksheetView /></Page>} />
             <Route path="/diagnosis/:studentId" element={<Page><DiagnosisReport /></Page>} />
             <Route path="/timetable/:studentId" element={<Page><TimetablePage /></Page>} />
+            <Route path="/points" element={<Page><PointsPage /></Page>} />
           </Route>
           </Route>
         </Routes>

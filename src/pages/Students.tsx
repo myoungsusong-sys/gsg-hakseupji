@@ -5,6 +5,7 @@ import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '.
 import { studentEmailOf, teacherEmailOf } from '../lib/role'
 import { SUPABASE_ON, supabase } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
+import { BLOOD_TYPES, MBTI_TYPES } from '../lib/persona'
 
 const TABS = ['학생 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
 type Tab = typeof TABS[number]
@@ -365,6 +366,8 @@ interface FormState {
   traits: string[]
   weeklyHours: string
   parentConcern: string
+  mbti: string
+  bloodType: string
 }
 
 function emptyForm(): FormState {
@@ -374,6 +377,7 @@ function emptyForm(): FormState {
     email: '', address: '', homePhone: '', memo: '', klass: '',
     classDays: [], arriveTime: '', leaveTime: '',
     recentExams: [], prevEdu: '', progressNow: '', goal: '', traits: [], weeklyHours: '', parentConcern: '',
+    mbti: '', bloodType: '',
   }
 }
 
@@ -388,6 +392,7 @@ function formFromStudent(s: Student): FormState {
     classDays: s.classDays ?? [], arriveTime: s.arriveTime ?? '', leaveTime: s.leaveTime ?? '',
     recentExams: s.recentExams ?? [], prevEdu: s.prevEdu ?? '', progressNow: s.progressNow ?? '',
     goal: s.goal ?? '', traits: s.traits ?? [], weeklyHours: s.weeklyHours ?? '', parentConcern: s.parentConcern ?? '',
+    mbti: s.mbti ?? '', bloodType: s.bloodType ?? '',
   }
 }
 
@@ -430,6 +435,8 @@ function formPayload(f: FormState): Omit<Student, 'id' | 'active'> {
     traits: f.traits.length ? f.traits : undefined,
     weeklyHours: t(f.weeklyHours),
     parentConcern: t(f.parentConcern),
+    mbti: t(f.mbti),
+    bloodType: t(f.bloodType),
   }
 }
 
@@ -633,6 +640,30 @@ function StudentFields({ f, set, onRegenAttendNo }: {
           })}
         </div>
       </label>
+      <label className="grid grid-cols-[8.5rem_1fr] items-start gap-2 text-sm">
+        <span className="pt-2 font-bold">MBTI</span>
+        <div className="flex flex-col gap-1.5">
+          <div className="flex flex-wrap gap-1">
+            {MBTI_TYPES.map(t2 => (
+              <button key={t2} type="button" onClick={() => set({ mbti: f.mbti === t2 ? '' : t2 })}
+                className={`rounded-md border px-2 py-1 text-xs font-bold ${f.mbti === t2 ? 'border-pine bg-pine text-paper' : 'border-line text-ink2 hover:border-pine'}`}>
+                {t2}
+              </button>
+            ))}
+          </div>
+          <span className="text-xs text-ink2">모르면 비워두세요. 블록 길이·과목 배치의 <b>기본값 제안</b>과 상담 문구에만 참고합니다.</span>
+        </div>
+      </label>
+      <Field label="혈액형">
+        <div className="flex flex-wrap gap-1">
+          {BLOOD_TYPES.map(b => (
+            <button key={b} type="button" onClick={() => set({ bloodType: f.bloodType === b ? '' : b })}
+              className={`rounded-md border px-2.5 py-1 text-xs font-bold ${f.bloodType === b ? 'border-pine bg-pine text-paper' : 'border-line text-ink2 hover:border-pine'}`}>
+              {b}형
+            </button>
+          ))}
+        </div>
+      </Field>
       <Field label="주당 자기공부 시간">
         <input value={f.weeklyHours} onChange={e => set({ weeklyHours: e.target.value })}
           placeholder="예: 학원 외 주 5시간" className={INPUT} />

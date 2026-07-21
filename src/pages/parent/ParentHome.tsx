@@ -32,7 +32,7 @@ export default function ParentHome() {
       try {
         const b = SUPABASE_ON
           ? await fetchChildRemote(sess.name, sess.phone)
-          : matchChildLocal(store.students, store.dailyNotes, store.gradings, store.academyProfile.academyName ?? '', sess.name, sess.phone, store.ttChecks, store.lecturePlans)
+          : matchChildLocal(store.students, store.dailyNotes, store.gradings, store.academyProfile.academyName ?? '', sess.name, sess.phone, store.ttChecks, store.lecturePlans, store.pointEntries)
         if (!b) throw new Error('자녀 정보를 찾을 수 없습니다. 다시 로그인해 주세요.')
         if (alive) { setBundle(b); setLoading(false) }
       } catch (e: any) {
@@ -90,6 +90,7 @@ export default function ParentHome() {
         </div>
 
         <TodayTimetable bundle={bundle} />
+        <Allowance bundle={bundle} />
 
         {dates.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-line bg-white p-12 text-center text-sm text-ink2">
@@ -228,6 +229,86 @@ function TodayTimetable({ bundle }: { bundle: ChildBundle }) {
           )
         })}
       </div>
+    </div>
+  )
+}
+
+// 💝 용돈 보태기 — 실제 송금이 아니라 월말 정산에 합산되는 약속 기록(금액 상한 없음)
+function Allowance({ bundle }: { bundle: ChildBundle }) {
+  const store = useStore()
+  const [amount, setAmount] = useState('')
+  const [msg, setMsg] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [done, setDone] = useState<string | null>(null)
+  const [err, setErr] = useState<string | null>(null)
+
+  const month = todayKey().slice(0, 7)
+  const mine = (bundle.pointEntries ?? []).filter(e => e.kind === 'parent' && e.date.slice(0, 7) === month)
+  const sent = mine.reduce((a, e) => a + e.amount, 0)
+
+  async function send() {
+    const n = Math.floor(Number(amount) || 0)
+    if (n <= 0) { setErr('금액을 입력해 주세요.'); return }
+    if (!confirm(`${bundle.student.name} 학생에게 ${n.toLocaleString('ko-KR')}원을 보탤까요?\n\n(앱에는 약속으로 기록되고, 실제 전달은 월말 정산 때 이루어집니다)`)) return
+    setBusy(true); setErr(null)
+    try {
+      const sess = getParentSession()
+      if (SUPABASE_ON) {
+        const r = await fetch('/api/parent-allowance', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name: sess?.name, phone: sess?.phone, amount: n, message: msg }),
+        })
+        const d = await r.json().catch(() => ({}))
+        if (!r.ok) throw new Error(d.error || '전송 실패')
+      } else {
+        store.addPointEntry({
+          studentId: bundle.student.id, date: todayKey(), amount: n,
+          reason: msg.trim() || '부모님 응원 용돈', kind: 'parent', by: '학부모',
+        })
+      }
+      setDone(`${n.toLocaleString('ko-KR')}원을 보탰어요 💝`)
+      setAmount(''); setMsg('')
+    } catch (e: any) {
+      setErr(e?.message || '전송 실패')
+    } finally { setBusy(false) }
+  }
+
+  return (
+    <div className="mb-4 rounded-2xl border border-line bg-white p-5">
+      <div className="mb-2 flex flex-wrap items-baseline gap-2">
+        <span className="font-black">💝 용돈 보태기</span>
+        <span className="text-xs text-ink2">공부한 만큼 쌓이는 자녀 저금통에 보탤 수 있어요 (월말 정산)</span>
+        {sent > 0 && <><div className="grow" /><span className="text-sm font-black text-amber">이번 달 {sent.toLocaleString('ko-KR')}원</span></>}
+      </div>
+      <div className="flex flex-wrap items-center gap-2">
+        {[5000, 10000, 30000].map(v => (
+          <button key={v} onClick={() => setAmount(String(v))}
+            className="rounded-lg border border-line px-3 py-1.5 text-sm font-bold text-ink2 hover:border-pine">
+            {v.toLocaleString('ko-KR')}원
+          </button>
+        ))}
+        <input type="number" min={0} value={amount} onChange={e => setAmount(e.target.value)} placeholder="직접 입력"
+          className="w-28 rounded-lg border border-line px-3 py-1.5 text-sm" />
+        <input value={msg} onChange={e => setMsg(e.target.value)} placeholder="응원 한마디 (선택)" maxLength={60}
+          className="w-0 min-w-40 flex-1 rounded-lg border border-line px-3 py-1.5 text-sm" />
+        <button onClick={send} disabled={busy}
+          className="rounded-lg bg-amber px-4 py-1.5 text-sm font-bold text-paper disabled:opacity-40">
+          {busy ? '보내는 중…' : '보태기'}
+        </button>
+      </div>
+      {done && <p className="mt-2 text-sm font-bold text-pine-dark">{done} 자녀 앱에 바로 표시됩니다.</p>}
+      {err && <p className="mt-2 text-sm font-bold text-red-600">{err}</p>}
+      {mine.length > 0 && (
+        <div className="mt-3 grid gap-1">
+          {mine.slice(-3).reverse().map(e => (
+            <div key={e.id} className="flex items-center gap-2 rounded-lg bg-amber-soft/40 px-3 py-1.5 text-sm">
+              <span className="text-xs text-ink2">{e.date.slice(5)}</span>
+              <span className="min-w-0 truncate">{e.reason}</span>
+              <span className="ml-auto shrink-0 font-black text-amber">{e.amount.toLocaleString('ko-KR')}원</span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

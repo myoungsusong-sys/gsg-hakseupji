@@ -9,6 +9,7 @@ import { courseTagOfType, typeName, typeUnitName } from '../data/curriculum'
 import { diagnosisCourses } from '../lib/diagnosis'
 import { achievementOf } from '../lib/achievement'
 import { supabase, SUPABASE_ON } from '../lib/supabase'
+import { personaBadge, personaOf } from '../lib/persona'
 
 // ── 입학 진단 리포트 — 학습 배경(등록 정보) + 입학 진단고사 채점 결과를 상담용 한 장으로 ──
 // 데이터는 전부 실시간 재계산(스토어) — 별도 저장 테이블 없음. 인쇄(.note-print)로 PDF 배포.
@@ -124,6 +125,7 @@ export default function DiagnosisReport() {
   }
   if (student.traits?.length) findings.push(`상담 시 확인된 성향: ${student.traits.join(', ')}`)
   if (student.goal) findings.push(`학습 목표: ${student.goal}`)
+  const persona = personaOf(student.mbti, student.bloodType)
   const habit = survey ? habitFeedback(survey.scores) : null
   if (habit) findings.push(`학습습관 유형: ${habit.type}`)
 
@@ -200,6 +202,7 @@ export default function DiagnosisReport() {
             {!!student.traits?.length && <Row k="학습 성향">{student.traits.join(' · ')}</Row>}
             {student.weeklyHours && <Row k="자기공부 시간">{student.weeklyHours}</Row>}
             {student.parentConcern && <Row k="학부모 관심">{student.parentConcern}</Row>}
+            {(student.mbti || student.bloodType) && <Row k="성향(참고)">{personaBadge(student.mbti, student.bloodType)}</Row>}
             {student.memo && <Row k="특이사항">{student.memo}</Row>}
             {!student.recentExams?.length && !student.prevEdu && !student.goal && !student.traits?.length && (
               <p className="text-ink2">등록된 학습 배경이 없습니다. 학생 상세에서 입력하면 여기 표시됩니다.</p>
@@ -291,6 +294,14 @@ export default function DiagnosisReport() {
           <ul className="grid list-disc gap-1 pl-5 text-sm">
             {findings.map((f, i) => <li key={i}>{f}</li>)}
           </ul>
+          {persona && (
+            <div className="mt-3 rounded-xl bg-paper2/60 p-3">
+              <p className="text-xs font-bold text-ink2">지도 시 참고 ({personaBadge(student.mbti, student.bloodType)})</p>
+              <ul className="mt-1 grid list-disc gap-0.5 pl-5 text-sm">
+                {persona.tips.map((t, i) => <li key={i}>{t}</li>)}
+              </ul>
+            </div>
+          )}
           <textarea value={comment} onChange={e => setComment(e.target.value)} rows={3}
             placeholder="선생님 종합 코멘트 (입력한 내용이 인쇄에 그대로 들어갑니다)"
             className="note-noprint mt-3 w-full rounded-lg border border-line px-3 py-2 text-sm" />

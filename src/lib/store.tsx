@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -43,6 +43,8 @@ interface Persisted {
   solveFeedbacks: SolveFeedback[]
   teachers: Teacher[]
   ttChecks: Record<string, true>
+  pointEntries: PointEntry[]
+  pointSettlements: PointSettlement[]
 }
 
 const EMPTY: Persisted = {
@@ -61,6 +63,8 @@ const EMPTY: Persisted = {
   solveFeedbacks: [],
   teachers: [],
   ttChecks: {},
+  pointEntries: [],
+  pointSettlements: [],
 }
 
 interface Store extends Persisted {
@@ -102,6 +106,10 @@ interface Store extends Persisted {
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
+  // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
+  addPointEntry: (e: Omit<PointEntry, 'id'>) => void
+  removePointEntry: (id: string) => void
+  savePointSettlement: (s: PointSettlement) => void
   setStudentAppConfig: (cfg: StudentAppConfig) => void   // 학생앱 공개 설정 (선생님용 UI는 2단계)
   setKlassOrder: (order: string[]) => void               // 반 표시 순서
   setAcademyProfile: (p: AcademyProfile) => void         // 마이페이지 내 정보
@@ -171,6 +179,8 @@ function fromCloud(r: CloudData): Persisted {
     solveFeedbacks: r.solveFeedbacks ?? [],
     teachers: r.teachers ?? [],
     ttChecks: r.ttChecks ?? {},
+    pointEntries: r.pointEntries ?? [],
+    pointSettlements: r.pointSettlements ?? [],
   }
 }
 function toCloud(s: Persisted): CloudData {
@@ -185,6 +195,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers,
     ttChecks: s.ttChecks,
+    pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
 
@@ -473,6 +484,19 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       }
       const plans = [...stateRef.current.lecturePlans.filter(p => p.id !== plan.id), updated]
       set(s => ({ ...s, lecturePlans: plans })); cloud.setSetting('lecturePlans', plans)
+    },
+    addPointEntry: e => {
+      const rec: PointEntry = { ...e, id: uid('pt') }
+      const next = [...stateRef.current.pointEntries, rec]
+      set(s => ({ ...s, pointEntries: next })); cloud.setSetting('pointEntries', next)
+    },
+    removePointEntry: id => {
+      const next = stateRef.current.pointEntries.filter(x => x.id !== id)
+      set(s => ({ ...s, pointEntries: next })); cloud.setSetting('pointEntries', next)
+    },
+    savePointSettlement: st => {
+      const next = [...stateRef.current.pointSettlements.filter(x => x.id !== st.id), st]
+      set(s => ({ ...s, pointSettlements: next })); cloud.setSetting('pointSettlements', next)
     },
     setDailyConfig: (studentId, cfg) => {
       const next = { ...stateRef.current.dailyConfigs, [studentId]: cfg }

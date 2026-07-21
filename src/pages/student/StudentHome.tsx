@@ -8,6 +8,7 @@ import { resultTypeId, weakTypes, wrongByType } from '../../lib/drill'
 import { achievementIndex } from '../../lib/achievement'
 import { useStudentSelf } from './StudentShell'
 import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
+import { computeMonth, MONTHLY_CAP, won } from '../../lib/points'
 import {
   fmtHM, fmtHMS, latestGradingFor, myWorksheetRows, readDraft, readStudySeconds, statusOf,
   summaryOf, usePreview, PREVIEW_LOCK_TITLE, STATUS_CLASS, type StudentWsStatus,
@@ -26,7 +27,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students, lecturePlans, ttChecks, toggleTTCheck } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students, lecturePlans, ttChecks, toggleTTCheck, pointEntries } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable
@@ -171,6 +172,10 @@ export default function StudentHome() {
       <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
         {/* ── 좌측 본문 ── */}
         <div className="grid min-w-0 gap-5">
+          {/* 💰 이번 달 저금통 — 공부한 만큼 쌓이고, 월말에 현금으로 받는다 */}
+          <PiggyBank studentId={me.id} timetable={students.find(s => s.id === me.id)?.timetable}
+            ttChecks={ttChecks} gradings={gradings} pointEntries={pointEntries} today={today} />
+
           {/* 📅 오늘 시간표 — 선생님이 짜준 주간 시간표의 오늘 블록 */}
           {ttToday.length > 0 && (
             <section className="rounded-2xl border border-line bg-white p-6">
@@ -384,5 +389,79 @@ export default function StudentHome() {
         </aside>
       </div>
     </div>
+  )
+}
+
+// 💰 이번 달 저금통 — 공부한 만큼 쌓이는 금액(1포인트=1원)과 최근 내역. 월말에 현금으로 정산받는다.
+function PiggyBank({ studentId, timetable, ttChecks, gradings, pointEntries, today }: {
+  studentId: string
+  timetable: import('../../types').StudentTimetable | undefined
+  ttChecks: Record<string, true>
+  gradings: Grading[]
+  pointEntries: import('../../types').PointEntry[]
+  today: string
+}) {
+  const month = today.slice(0, 7)
+  const mp = useMemo(
+    () => computeMonth(studentId, month, today, timetable, ttChecks, gradings, pointEntries),
+    [studentId, month, today, timetable, ttChecks, gradings, pointEntries])
+
+  // 정산일(말일)까지 남은 날
+  const [y, m] = month.split('-').map(Number)
+  const lastDay = new Date(y, m, 0).getDate()
+  const dLeft = lastDay - Number(today.slice(8, 10))
+  const pct = Math.min(100, Math.round((mp.academyAmount / MONTHLY_CAP) * 100))
+
+  return (
+    <section className="rounded-2xl border border-line bg-white p-6">
+      <div className="mb-3 flex flex-wrap items-baseline gap-2">
+        <h2 className="font-black">💰 이번 달 저금통</h2>
+        <span className="text-xs text-ink2">{m}월 · 정산까지 {dLeft > 0 ? `${dLeft}일` : '오늘!'}</span>
+        <div className="grow" />
+        <span className="text-2xl font-black tabular-nums text-pine-dark">{won(mp.total)}</span>
+      </div>
+
+      <div className="h-2.5 overflow-hidden rounded-full bg-paper2">
+        <div className="h-full rounded-full bg-gradient-to-r from-pine to-pine-dark transition-all" style={{ width: `${pct}%` }} />
+      </div>
+      <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-ink2">
+        <span>학원 적립 <b className="text-ink">{won(mp.academyAmount)}</b> / 한도 {won(MONTHLY_CAP)}</span>
+        {mp.capped && <span className="rounded bg-amber-soft px-1.5 py-0.5 font-bold text-amber">한도 달성! 🎉</span>}
+        {mp.parentAmount > 0 && <span>· 부모님 용돈 <b className="text-ink">{won(mp.parentAmount)}</b> 💝</span>}
+      </div>
+
+      {mp.parent.length > 0 && (
+        <div className="mt-3 grid gap-1">
+          {mp.parent.slice(0, 3).map(e => (
+            <div key={e.id} className="rounded-xl bg-amber-soft/40 px-3 py-2 text-sm">
+              💝 부모님이 <b>{won(e.amount)}</b> 보태주셨어요{e.reason ? ` — “${e.reason}”` : ''}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {mp.days.length === 0 ? (
+        <p className="mt-3 text-sm text-ink2">이번 달 적립 내역이 아직 없어요. 시간표를 완료하면 쌓이기 시작해요!</p>
+      ) : (
+        <div className="mt-3 grid gap-1.5">
+          {mp.days.slice(0, 5).map(d => (
+            <div key={d.date} className="rounded-xl border border-line/60 px-3 py-2">
+              <div className="flex items-center gap-2 text-sm">
+                <span className="font-bold">{Number(d.date.slice(5, 7))}/{Number(d.date.slice(8, 10))}</span>
+                <div className="grow" />
+                <span className={`font-black tabular-nums ${d.net > 0 ? 'text-pine-dark' : 'text-ink2'}`}>+{won(d.net)}</span>
+              </div>
+              <div className="mt-0.5 flex flex-wrap gap-x-2 gap-y-0.5 text-[11px] text-ink2">
+                {d.items.map((it, i) => (
+                  <span key={i} className={it.amount < 0 ? 'text-red-600' : ''}>
+                    {it.label} {it.amount > 0 ? '+' : ''}{it.amount.toLocaleString('ko-KR')}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
   )
 }

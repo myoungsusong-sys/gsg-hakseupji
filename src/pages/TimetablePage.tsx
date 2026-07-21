@@ -5,6 +5,7 @@ import { useBrand } from '../lib/brand'
 import type { StudentTimetable, TTBlock, TTResource } from '../types'
 import { buildTimetable, daySlots, planForBlock, planWeekendMakeup, SUBJECT_CLS, TT_DAYS, TT_SUBJECTS } from '../lib/timetable'
 import { todayKey } from '../lib/dates'
+import { personaOf } from '../lib/persona'
 
 // ── 주간 시간표 — 요일별 공부시간 + 교재·인강 선택 → 자동 배치 → 학생앱 홈에 '오늘 시간표'로 노출 ──
 
@@ -64,6 +65,7 @@ export default function TimetablePage() {
     set({ resources: tt.resources.map((r, j) => (j === i ? { ...r, ...patch } : r)) })
 
   const totalSlots = TT_DAYS.reduce((a, d) => a + daySlots(tt.days[d], tt.slotMin).length, 0)
+  const persona = personaOf(student?.mbti, student?.bloodType)
 
   function generate() {
     const blocks = buildTimetable(tt.days, tt.slotMin, tt.resources)
@@ -134,6 +136,21 @@ export default function TimetablePage() {
             </select>
             <span>· 이번 주 총 {totalSlots}블록</span>
           </div>
+          {persona && (
+            <div className="mt-2 rounded-xl bg-paper2/60 px-3 py-2 text-xs leading-relaxed text-ink2">
+              <b className="text-ink">성향 참고</b> ({student.mbti}{student.bloodType ? ` · ${student.bloodType}형` : ''}) —
+              권장 블록 {persona.slotMin}분
+              {tt.slotMin !== persona.slotMin && (
+                <button type="button" onClick={() => set({ slotMin: persona.slotMin })}
+                  className="mx-1 rounded-md border border-pine px-1.5 py-0.5 font-bold text-pine hover:bg-pine hover:text-paper">
+                  {persona.slotMin}분으로 맞추기
+                </button>
+              )}
+              · {persona.interleave ? '같은 과목 연속보다 교차 배치가 잘 맞음' : '한 과목을 몰아서 하는 편이 잘 맞음'}
+              <br />{persona.planStyle}
+              <span className="ml-1 opacity-70">※ 참고 힌트일 뿐이며, 실제 편성은 완료 기록·진단 결과를 우선하세요.</span>
+            </div>
+          )}
           <div className="mt-3 grid gap-1.5">
             {TT_DAYS.map(d => {
               const win = tt.days[d]

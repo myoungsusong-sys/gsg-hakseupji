@@ -43,6 +43,7 @@ export default function PrepLayout() {
             </>
           )}
           <div className="my-2 border-t border-line" />
+          <NavLink to="/prep/forms" className={item}>양식지</NavLink>
           <NavLink to="/prep/share" className={item}>다른 기관 학습지</NavLink>
         </nav>
       </aside>

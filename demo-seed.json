@@ -1,0 +1,63 @@
+{
+  "students": [
+    {"id": "demo-s1", "name": "김하늘", "grade": "중2-1", "active": true, "parentPhone": "010-0000-0001", "school": "시연중"},
+    {"id": "demo-s2", "name": "이준서", "grade": "중1-1", "active": true, "parentPhone": "010-0000-0002", "school": "시연중"},
+    {"id": "demo-s3", "name": "박서연", "grade": "공통수학1", "active": true, "parentPhone": "010-0000-0003", "school": "시연고"}
+  ],
+  "workbooks": [
+    {"id": "demo-wb1", "name": "베이직쎈 중등수학2(상)", "publisher": "좋은책신사고", "grade": "중2-1"}
+  ],
+  "wbItems": [
+    {"id": "demo-i01", "workbookId": "demo-wb1", "page": 87, "no": 1, "typeId": "18044", "kind": "객관식", "answer": "③", "diff": 2},
+    {"id": "demo-i02", "workbookId": "demo-wb1", "page": 87, "no": 2, "typeId": "18046", "kind": "객관식", "answer": "⑤", "diff": 2},
+    {"id": "demo-i03", "workbookId": "demo-wb1", "page": 87, "no": 3, "typeId": "18030", "kind": "주관식", "answer": "318", "diff": 3},
+    {"id": "demo-i04", "workbookId": "demo-wb1", "page": 87, "no": 4, "typeId": "18046", "kind": "객관식", "answer": "②", "diff": 3},
+    {"id": "demo-i05", "workbookId": "demo-wb1", "page": 87, "no": 5, "typeId": "18047", "kind": "객관식", "answer": "④", "diff": 3},
+    {"id": "demo-i06", "workbookId": "demo-wb1", "page": 88, "no": 6, "typeId": "18048", "kind": "객관식", "answer": "①", "diff": 3},
+    {"id": "demo-i07", "workbookId": "demo-wb1", "page": 88, "no": 7, "typeId": "18051", "kind": "주관식", "answer": "8", "diff": 3},
+    {"id": "demo-i08", "workbookId": "demo-wb1", "page": 88, "no": 8, "typeId": "18030", "kind": "객관식", "answer": "③", "diff": 4},
+    {"id": "demo-i09", "workbookId": "demo-wb1", "page": 88, "no": 9, "typeId": "18046", "kind": "객관식", "answer": "⑤", "diff": 3},
+    {"id": "demo-i10", "workbookId": "demo-wb1", "page": 88, "no": 10, "typeId": "18020", "kind": "주관식", "answer": "15", "diff": 4}
+  ],
+  "customProblems": [
+    {"id": "demo-p1", "typeId": "18030", "kind": "주관식", "diff": 3, "custom": true, "source": "자체 제작", "twinGroup": "tg-demo-inc",
+     "body": "어느 중학교의 작년 전체 학생 수는 500명이었다. 올해는 작년에 비해 남학생이 6% 증가하고 여학생이 4% 감소하여 전체 학생 수가 10명 증가하였다. 올해 남학생 수를 구하시오.",
+     "answer": "318", "solution": "작년 남학생을 x명, 여학생을 y명이라 하면 x+y=500, 0.06x-0.04y=10. 두 식을 연립하면 6x-4(500-x)=1000, 10x=3000, x=300. 올해 남학생 수는 300×1.06=318(명)."},
+    {"id": "demo-p2", "typeId": "18030", "kind": "주관식", "diff": 3, "custom": true, "source": "자체 제작", "twinGroup": "tg-demo-inc",
+     "body": "어느 학교의 작년 전체 학생 수는 400명이었다. 올해는 작년에 비해 남학생이 5% 증가하고 여학생이 5% 감소하여 전체 학생 수가 4명 증가하였다. 올해 남학생 수를 구하시오.",
+     "answer": "252", "solution": "작년 남학생을 x명, 여학생을 y명이라 하면 x+y=400, 0.05x-0.05y=4에서 x-y=80. 연립하면 x=240, y=160. 올해 남학생 수는 240×1.05=252(명)."},
+    {"id": "demo-p3", "typeId": "18030", "kind": "주관식", "diff": 3, "custom": true, "source": "자체 제작", "twinGroup": "tg-demo-inc",
+     "body": "어느 학교의 작년 전체 학생 수는 600명이었다. 올해는 작년에 비해 남학생이 4% 증가하고 여학생이 6% 감소하여 전체 학생 수가 6명 감소하였다. 올해 남학생 수를 구하시오.",
+     "answer": "312", "solution": "작년 남학생을 x명, 여학생을 y명이라 하면 x+y=600, 0.04x-0.06y=-6에서 2x-3y=-300. y=600-x를 대입하면 2x-1800+3x=-300, 5x=1500, x=300. 올해 남학생 수는 300×1.04=312(명)."},
+    {"id": "demo-p4", "typeId": "18030", "kind": "객관식", "diff": 4, "custom": true, "source": "자체 제작", "twinGroup": "tg-demo-inc",
+     "body": "어느 학교의 작년 전체 학생 수는 300명이었다. 올해는 작년에 비해 남학생이 10% 증가하고 여학생이 5% 감소하여 전체 학생 수가 9명 증가하였다. 올해 남학생 수는?",
+     "choices": ["166명", "170명", "176명", "180명", "186명"], "answer": "③",
+     "solution": "작년 남학생을 x명, 여학생을 y명이라 하면 x+y=300, 0.1x-0.05y=9에서 2x-y=180. 연립하면 3x=480, x=160. 올해 남학생 수는 160×1.1=176(명)."},
+    {"id": "demo-p5", "typeId": "18020", "kind": "객관식", "diff": 3, "custom": true, "source": "자체 제작", "twinGroup": "tg-demo-price",
+     "body": "한 개에 800원인 사과와 한 개에 500원인 귤을 합하여 12개를 사고 7,800원을 지불하였다. 이때 산 사과의 개수는?",
+     "choices": ["4개", "5개", "6개", "7개", "8개"], "answer": "③",
+     "solution": "사과를 x개, 귤을 y개라 하면 x+y=12, 800x+500y=7800. 500(x+y)=6000이므로 300x=1800, x=6(개)."},
+    {"id": "demo-p6", "typeId": "18020", "kind": "객관식", "diff": 3, "custom": true, "source": "자체 제작", "twinGroup": "tg-demo-price",
+     "body": "한 개에 1,000원인 빵과 한 개에 600원인 우유를 합하여 10개를 사고 8,000원을 지불하였다. 이때 산 빵의 개수는?",
+     "choices": ["4개", "5개", "6개", "7개", "8개"], "answer": "②",
+     "solution": "빵을 x개, 우유를 y개라 하면 x+y=10, 1000x+600y=8000. 600(x+y)=6000이므로 400x=2000, x=5(개)."}
+  ],
+  "gradings": [
+    {"id": "demo-g1", "studentId": "demo-s1", "source": "교재", "workbookId": "demo-wb1", "date": "2026-07-08T18:30:00.000Z", "pageFrom": 87, "pageTo": 88,
+     "results": [
+       {"itemId": "demo-i01", "correct": true},
+       {"itemId": "demo-i02", "correct": true},
+       {"itemId": "demo-i03", "correct": false},
+       {"itemId": "demo-i04", "correct": true},
+       {"itemId": "demo-i05", "correct": true},
+       {"itemId": "demo-i06", "correct": true},
+       {"itemId": "demo-i07", "correct": true},
+       {"itemId": "demo-i08", "correct": false},
+       {"itemId": "demo-i09", "correct": true},
+       {"itemId": "demo-i10", "correct": false, "unknown": true}
+     ]}
+  ],
+  "dailyNotes": [
+    {"studentId": "demo-s1", "date": "2026-07-08", "comment": "연립방정식 계산은 안정적인데, 활용 문제에서 식 세우기가 아직 낯섭니다. 내일 쌍둥이 문제 4개로 다시 확인하겠습니다.", "nextPlan": "연립방정식의 활용 오답 드릴 4문제 + 88쪽 나머지"}
+  ]
+}

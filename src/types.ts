@@ -207,6 +207,9 @@ export interface Student {
   traits?: string[]      // 학습 성향 태그 (실수 잦음·개념 부족 등)
   weeklyHours?: string   // 주당 자기공부 시간
   parentConcern?: string // 학부모 관심·우려 포인트
+  // 성향 — 시간표 편성·코칭 톤의 "참고 힌트". 실제 판단은 진단·완료 기록(실측)이 우선한다.
+  mbti?: string          // 'INTJ' 등 16유형
+  bloodType?: string     // A·B·O·AB (재미·라포용 참고)
   timetable?: StudentTimetable  // 주간 시간표 (요일별 공부시간+교재·인강 자동 배치)
 }
 
@@ -231,6 +234,31 @@ export interface StudentTimetable {
   resources: TTResource[]
   blocks: Record<string, TTBlock[]>     // 요일별 배치 결과 (수동 삭제 반영)
   updatedAt: string
+}
+
+// ── 포인트 리워드 (1포인트 = 1원, 월말 현금 정산) ──────────────────
+// 자동 적립·차감은 저장하지 않고 학습 기록(ttChecks·gradings)에서 매번 파생 계산한다.
+// 여기 저장되는 건 사람이 만든 항목뿐: 선생님 수동 가감 + 학부모 용돈.
+export interface PointEntry {
+  id: string
+  studentId: string
+  date: string            // YYYY-MM-DD
+  amount: number          // 원 (+적립 / -차감)
+  reason: string
+  kind: 'manual' | 'parent'   // 선생님 수동 / 학부모 용돈(상한 없음·학원 지급분과 별도)
+  by?: string             // 등록자 표시 (선생님 이름·'학부모')
+}
+
+// 월말 정산 스냅샷 — 지급 시점의 금액을 고정 보관(이후 기록이 바뀌어도 지급액은 불변)
+export interface PointSettlement {
+  id: string              // `${studentId}_${YYYY-MM}`
+  studentId: string
+  month: string           // YYYY-MM
+  academyAmount: number   // 학원 지급분 (월 상한 적용 후)
+  parentAmount: number    // 학부모 용돈 합계 (상한 없음)
+  total: number
+  paidAt: string          // ISO
+  memo?: string
 }
 
 export interface GradeResult {

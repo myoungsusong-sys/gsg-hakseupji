@@ -63,6 +63,7 @@ export default async function handler(req: any, res: any) {
     const myChecks: Record<string, true> = {}
     for (const k of Object.keys(allChecks)) if (k.startsWith(`${me.id}|`)) myChecks[k] = true
     const allPlans = settings.find((s: any) => s?.__id === 'lecturePlans')?.value ?? []
+    const allPts = settings.find((s: any) => s?.__id === 'pointEntries')?.value ?? []
 
     res.status(200).json({
       student: {
@@ -74,6 +75,7 @@ export default async function handler(req: any, res: any) {
       gradings: allGr.filter((g: any) => g?.studentId === me.id),
       ttChecks: myChecks,
       lecturePlans: (Array.isArray(allPlans) ? allPlans : []).filter((p: any) => p?.studentId === me.id),
+      pointEntries: (Array.isArray(allPts) ? allPts : []).filter((e: any) => e?.studentId === me.id),
     })
   } catch (e: any) {
     res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
