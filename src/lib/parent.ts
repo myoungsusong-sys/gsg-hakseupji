@@ -1,14 +1,16 @@
 // 학부모앱 — 세션(로컬) + 자녀 데이터 조회.
 // 프로덕션(supabase): RLS 때문에 익명 읽기 불가 → 서버리스 /api/parent-data가 이름+연락처 검증 후 자녀 데이터만 반환.
 // 로컬 모드: store 데이터에서 직접 매칭.
-import type { DailyNote, Grading, Student } from '../types'
+import type { DailyNote, Grading, LecturePlan, Student } from '../types'
 
 export interface ParentSession { name: string; phone: string }
 export interface ChildBundle {
-  student: Pick<Student, 'id' | 'name' | 'grade' | 'klass' | 'classDays'>
+  student: Pick<Student, 'id' | 'name' | 'grade' | 'klass' | 'classDays' | 'timetable'>
   academyName: string
   dailyNotes: DailyNote[]
   gradings: Grading[]
+  ttChecks?: Record<string, true>   // 시간표 블록 완료 체크 (자녀 것만)
+  lecturePlans?: LecturePlan[]      // 진도표 (자녀 것만) — 오늘 시간표의 쪽수 표시용
 }
 
 const KEY = 'gsg-parent-session'
@@ -25,6 +27,7 @@ const digits = (s?: string) => (s || '').replace(/\D/g, '')
 export function matchChildLocal(
   students: Student[], dailyNotes: DailyNote[], gradings: Grading[], academyName: string,
   name: string, phone: string,
+  ttChecks: Record<string, true> = {}, lecturePlans: LecturePlan[] = [],
 ): ChildBundle | null {
   const n = name.trim(); const p = digits(phone)
   if (!n || p.length < 4) return null
@@ -32,11 +35,15 @@ export function matchChildLocal(
     const pp = digits(s.parentPhone); return pp.length >= 4 && (pp === p || pp.endsWith(p) || p.endsWith(pp))
   })())
   if (!me) return null
+  const mine: Record<string, true> = {}
+  for (const k of Object.keys(ttChecks)) if (k.startsWith(`${me.id}|`)) mine[k] = true
   return {
-    student: { id: me.id, name: me.name, grade: me.grade, klass: me.klass ?? '', classDays: me.classDays ?? [] },
+    student: { id: me.id, name: me.name, grade: me.grade, klass: me.klass ?? '', classDays: me.classDays ?? [], timetable: me.timetable },
     academyName,
     dailyNotes: dailyNotes.filter(d => d.studentId === me.id),
     gradings: gradings.filter(g => g.studentId === me.id),
+    ttChecks: mine,
+    lecturePlans: lecturePlans.filter(p => p.studentId === me.id),
   }
 }
 

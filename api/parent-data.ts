@@ -58,12 +58,22 @@ export default async function handler(req: any, res: any) {
       allData(sb, 'hj_daily_notes'), allData(sb, 'hj_gradings'), allData(sb, 'hj_settings'),
     ])
     const profile = settings.find((s: any) => s?.__id === 'academyProfile')?.value ?? null
+    // 시간표 완료 체크·진도표 — 자녀 것만 걸러서 전달 (오늘 시간표·완료율·쪽수 표시용)
+    const allChecks = settings.find((s: any) => s?.__id === 'ttChecks')?.value ?? {}
+    const myChecks: Record<string, true> = {}
+    for (const k of Object.keys(allChecks)) if (k.startsWith(`${me.id}|`)) myChecks[k] = true
+    const allPlans = settings.find((s: any) => s?.__id === 'lecturePlans')?.value ?? []
 
     res.status(200).json({
-      student: { id: me.id, name: me.name, grade: me.grade, klass: me.klass ?? '', classDays: me.classDays ?? [] },
+      student: {
+        id: me.id, name: me.name, grade: me.grade, klass: me.klass ?? '',
+        classDays: me.classDays ?? [], timetable: me.timetable ?? undefined,
+      },
       academyName: profile?.academyName ?? '',
       dailyNotes: allNotes.filter((d: any) => d?.studentId === me.id),
       gradings: allGr.filter((g: any) => g?.studentId === me.id),
+      ttChecks: myChecks,
+      lecturePlans: (Array.isArray(allPlans) ? allPlans : []).filter((p: any) => p?.studentId === me.id),
     })
   } catch (e: any) {
     res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })

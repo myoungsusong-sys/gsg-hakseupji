@@ -4,6 +4,8 @@ import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { dateKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { clearParentSession, fetchChildRemote, getParentSession, matchChildLocal, type ChildBundle } from '../../lib/parent'
+import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
+import { todayKey } from '../../lib/dates'
 
 function scoreOfDate(bundle: ChildBundle, key: string) {
   let solved = 0, correct = 0, unknown = 0
@@ -30,7 +32,7 @@ export default function ParentHome() {
       try {
         const b = SUPABASE_ON
           ? await fetchChildRemote(sess.name, sess.phone)
-          : matchChildLocal(store.students, store.dailyNotes, store.gradings, store.academyProfile.academyName ?? '', sess.name, sess.phone)
+          : matchChildLocal(store.students, store.dailyNotes, store.gradings, store.academyProfile.academyName ?? '', sess.name, sess.phone, store.ttChecks, store.lecturePlans)
         if (!b) throw new Error('자녀 정보를 찾을 수 없습니다. 다시 로그인해 주세요.')
         if (alive) { setBundle(b); setLoading(false) }
       } catch (e: any) {
@@ -86,6 +88,8 @@ export default function ParentHome() {
           <span className="text-sm text-ink2">{st.grade}{st.klass ? ` · ${st.klass}` : ''}</span>
           {bundle.academyName && <><div className="grow" /><span className="text-sm font-bold text-ink2">{bundle.academyName}</span></>}
         </div>
+
+        <TodayTimetable bundle={bundle} />
 
         {dates.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-line bg-white p-12 text-center text-sm text-ink2">
@@ -170,6 +174,60 @@ export default function ParentHome() {
 
         <p className="mt-6 text-center text-xs text-ink2">문의는 학원으로 연락 주세요. · 깊은생각 학습지 학부모앱</p>
       </main>
+    </div>
+  )
+}
+
+// 오늘 시간표 + 완료율 — 학원에서 짠 시간표와 자녀가 체크한 진행 상황(읽기 전용)
+function TodayTimetable({ bundle }: { bundle: ChildBundle }) {
+  const today = todayKey()
+  const blocks = bundle.student.timetable?.blocks?.[todayDayLabel()] ?? []
+  if (blocks.length === 0) return null
+
+  const checks = bundle.ttChecks ?? {}
+  const doneCount = blocks.filter((_, i) => checks[`${bundle.student.id}|${today}|${i}`]).length
+  const pct = Math.round((doneCount / blocks.length) * 100)
+
+  return (
+    <div className="mb-4 overflow-hidden rounded-2xl border border-line bg-white">
+      <div className="flex flex-wrap items-center gap-2 border-b border-line px-5 py-3">
+        <span className="font-black">📅 오늘 시간표</span>
+        <span className="text-xs text-ink2">({todayDayLabel()}요일)</span>
+        <div className="grow" />
+        <span className={`rounded-full px-2.5 py-1 text-xs font-black ${pct === 100 ? 'bg-pine text-paper' : 'bg-pine-soft text-pine-dark'}`}>
+          {doneCount} / {blocks.length} 완료 · {pct}%
+        </span>
+      </div>
+      <div className="h-1.5 bg-paper2">
+        <div className="h-full bg-pine transition-all" style={{ width: `${pct}%` }} />
+      </div>
+      <div className="grid gap-1.5 p-4">
+        {blocks.map((b, i) => {
+          const done = !!checks[`${bundle.student.id}|${today}|${i}`]
+          const now = isNowBlock(b)
+          const plan = planForBlock(b, today, bundle.lecturePlans ?? [], bundle.student.id)
+          return (
+            <div key={i}
+              className={`flex flex-wrap items-center gap-2 rounded-xl border px-3 py-2 text-sm ${
+                done ? 'border-pine/40 bg-pine-soft/25' : now ? 'border-pine bg-pine-soft/50' : 'border-line/60'}`}>
+              <span className={`shrink-0 text-xs font-black tabular-nums ${done ? 'text-ink2 line-through' : ''}`}>{b.start}~{b.end}</span>
+              <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>{b.subject}</span>
+              <span className={`min-w-0 truncate font-semibold ${done ? 'text-ink2 line-through' : ''}`}>
+                {b.kind === '인강' ? '🎧 ' : '📗 '}{b.title}
+              </span>
+              {b.makeup && <span className="shrink-0 rounded bg-amber-soft px-1.5 py-0.5 text-[11px] font-bold text-amber">🔁 보충</span>}
+              {plan && (
+                <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${plan.behind ? 'bg-red-100 text-red-800' : 'bg-paper2 text-ink2'}`}>
+                  {plan.behind ? '⚠ ' : '📖 '}{plan.text}
+                </span>
+              )}
+              {done
+                ? <span className="ml-auto shrink-0 text-xs font-black text-pine">✓ 완료</span>
+                : now && <span className="ml-auto shrink-0 rounded-full bg-pine px-2 py-0.5 text-[10px] font-black text-paper">진행 중</span>}
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
