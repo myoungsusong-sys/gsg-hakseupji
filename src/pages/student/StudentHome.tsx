@@ -7,6 +7,7 @@ import { typeName } from '../../data/curriculum'
 import { resultTypeId, weakTypes, wrongByType } from '../../lib/drill'
 import { achievementIndex } from '../../lib/achievement'
 import { useStudentSelf } from './StudentShell'
+import { isNowBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import {
   fmtHM, fmtHMS, latestGradingFor, myWorksheetRows, readDraft, readStudySeconds, statusOf,
   summaryOf, usePreview, PREVIEW_LOCK_TITLE, STATUS_CLASS, type StudentWsStatus,
@@ -25,7 +26,12 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students } = useStore()
+  // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
+  const ttToday = useMemo(() => {
+    const tt = students.find(s => s.id === me.id)?.timetable
+    return tt ? (tt.blocks[todayDayLabel()] ?? []) : []
+  }, [students, me.id])
   // 관리 > 학생앱 설정 「오늘의 학습」 소비 — 마스터 OFF 또는 이 학생 OFF면 섹션 숨김
   const dailyOn = studentAppConfig.dailyMasterOn !== false && !(studentAppConfig.dailyOffIds ?? []).includes(me.id)
   const nav = useNavigate()
@@ -165,6 +171,27 @@ export default function StudentHome() {
       <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
         {/* ── 좌측 본문 ── */}
         <div className="grid min-w-0 gap-5">
+          {/* 📅 오늘 시간표 — 선생님이 짜준 주간 시간표의 오늘 블록 */}
+          {ttToday.length > 0 && (
+            <section className="rounded-2xl border border-line bg-white p-6">
+              <h2 className="mb-3 font-black">📅 오늘 시간표 <span className="text-xs font-semibold text-ink2">({todayDayLabel()}요일)</span></h2>
+              <div className="grid gap-1.5">
+                {ttToday.map((b, i) => {
+                  const now = isNowBlock(b)
+                  return (
+                    <div key={i}
+                      className={`flex items-center gap-3 rounded-xl border px-3 py-2 text-sm ${now ? 'border-pine bg-pine-soft/50' : 'border-line/60'}`}>
+                      <span className="w-24 shrink-0 font-black tabular-nums">{b.start}~{b.end}</span>
+                      <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>{b.subject}</span>
+                      <span className="min-w-0 truncate font-semibold">{b.kind === '인강' ? '🎧 ' : '📗 '}{b.title}</span>
+                      {now && <span className="ml-auto shrink-0 rounded-full bg-pine px-2 py-0.5 text-[10px] font-black text-paper">지금</span>}
+                    </div>
+                  )
+                })}
+              </div>
+            </section>
+          )}
+
           {/* ① 오늘의 학습 — 선생님 설정(dailyMasterOn·dailyOffIds)이 OFF면 숨김 */}
           {dailyOn && (
           <section className="rounded-2xl border border-line bg-white p-6">

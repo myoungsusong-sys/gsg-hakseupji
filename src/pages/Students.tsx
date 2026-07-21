@@ -318,6 +318,8 @@ function StudentsTab() {
                           className="text-xs font-bold text-pine hover:underline">상세보기</button>
                         <a href={`#/diagnosis/${s.id}`}
                           className="text-xs font-bold text-amber hover:underline">진단 리포트</a>
+                        <a href={`#/timetable/${s.id}`}
+                          className="text-xs font-bold text-pine hover:underline">시간표</a>
                       </span>
                     </td>
                   </tr>

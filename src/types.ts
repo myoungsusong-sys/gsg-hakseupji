@@ -207,6 +207,25 @@ export interface Student {
   traits?: string[]      // 학습 성향 태그 (실수 잦음·개념 부족 등)
   weeklyHours?: string   // 주당 자기공부 시간
   parentConcern?: string // 학부모 관심·우려 포인트
+  timetable?: StudentTimetable  // 주간 시간표 (요일별 공부시간+교재·인강 자동 배치)
+}
+
+// ── 주간 시간표 — 요일별 공부시간을 정하고 교재·인강을 고르면 자동 배치 ──
+// Student.timetable(json)에 통째로 저장 — hj_students data라 마이그레이션 불필요.
+export interface TTResource {
+  id: string
+  kind: '교재' | '인강'
+  title: string          // 예: 쎈 중등수학 1(상) / 엠베스트 국어
+  subject: string        // 수학·영어·과학·국어·사회·기타
+  weekly: number         // 주당 목표 블록 수 (0 = 자동 균등)
+}
+export interface TTBlock { start: string; end: string; title: string; subject: string; kind: '교재' | '인강' }
+export interface StudentTimetable {
+  days: Record<string, { start: string; end: string } | null>  // '월'~'일' — null이면 휴무
+  slotMin: number                       // 블록 길이(분) — 기본 60
+  resources: TTResource[]
+  blocks: Record<string, TTBlock[]>     // 요일별 배치 결과 (수동 삭제 반영)
+  updatedAt: string
 }
 
 export interface GradeResult {
