@@ -197,6 +197,9 @@ export default function StudentHome() {
                       <span className={`w-24 shrink-0 font-black tabular-nums ${done ? 'text-ink2 line-through' : ''}`}>{b.start}~{b.end}</span>
                       <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타}`}>{b.subject}</span>
                       <span className={`min-w-0 truncate font-semibold ${done ? 'text-ink2 line-through' : ''}`}>{b.kind === '인강' ? '🎧 ' : '📗 '}{b.title}</span>
+                      {b.makeup && (
+                        <span className="shrink-0 rounded bg-amber-soft px-1.5 py-0.5 text-[11px] font-bold text-amber">🔁 보충</span>
+                      )}
                       {plan && (
                         <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${plan.behind ? 'bg-red-100 text-red-800' : 'bg-paper2 text-ink2'}`}>
                           {plan.behind ? '⚠ ' : '📖 '}{plan.text}

@@ -223,6 +223,7 @@ export interface TTResource {
 export interface TTBlock {
   start: string; end: string; title: string; subject: string; kind: '교재' | '인강'
   workbookId?: string    // 진도 쪽수 조회용 (생성 시 자료에서 복사)
+  makeup?: boolean       // 주말 보충 편성으로 추가된 블록
 }
 export interface StudentTimetable {
   days: Record<string, { start: string; end: string } | null>  // '월'~'일' — null이면 휴무

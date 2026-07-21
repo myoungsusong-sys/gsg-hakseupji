@@ -101,6 +101,69 @@ export function isNowBlock(b: TTBlock, d = new Date()): boolean {
   return toMin(b.start) <= now && now < toMin(b.end)
 }
 
+// ── 주말 보충 자동편성 ──────────────────────────────────────────────
+// 주중(어제까지)에 완료 체크가 안 된 블록을 자료별로 세어, 주말 빈 슬롯에 보충으로 채운다.
+// 오늘·미래 요일은 "아직 안 한 것"이라 미완으로 치지 않는다.
+
+export interface MakeupPlan {
+  missed: { title: string; subject: string; kind: '교재' | '인강'; workbookId?: string; count: number }[]
+  add: Record<string, TTBlock[]>   // 주말 요일 → 추가할 블록
+  freeSlots: number                // 주말 빈 슬롯 총수
+  placed: number                   // 실제 배치된 수
+}
+
+export function planWeekendMakeup(
+  tt: StudentTimetable,
+  studentId: string,
+  ttChecks: Record<string, true>,
+  weekDateOf: (day: string) => string,
+  todayKey: string,
+): MakeupPlan {
+  // 1) 주중 미완 집계 (어제까지)
+  const missedMap = new Map<string, MakeupPlan['missed'][number]>()
+  for (const d of ['월', '화', '수', '목', '금']) {
+    const dk = weekDateOf(d)
+    if (dk >= todayKey) continue                       // 오늘·미래는 제외
+    ;(tt.blocks[d] ?? []).forEach((b, i) => {
+      if (ttChecks[`${studentId}|${dk}|${i}`]) return  // 완료된 블록
+      const key = `${b.kind}|${b.title}`
+      const cur = missedMap.get(key)
+      if (cur) cur.count++
+      else missedMap.set(key, { title: b.title, subject: b.subject, kind: b.kind, workbookId: b.workbookId, count: 1 })
+    })
+  }
+  const missed = [...missedMap.values()].sort((a, b) => b.count - a.count)
+
+  // 2) 주말 빈 슬롯 — 그 요일 슬롯 중 현재 블록이 차지하지 않은 시각
+  const free: { day: string; slot: { start: string; end: string } }[] = []
+  for (const d of ['토', '일']) {
+    const taken = new Set((tt.blocks[d] ?? []).map(b => b.start))
+    for (const slot of daySlots(tt.days[d], tt.slotMin)) {
+      if (!taken.has(slot.start)) free.push({ day: d, slot })
+    }
+  }
+
+  // 3) 미완 많은 자료부터 라운드로빈으로 빈 슬롯 채우기
+  const add: Record<string, TTBlock[]> = { 토: [], 일: [] }
+  const remain = new Map(missed.map(m => [`${m.kind}|${m.title}`, m.count]))
+  let placed = 0
+  for (const { day, slot } of free) {
+    const cands = missed.filter(m => (remain.get(`${m.kind}|${m.title}`) ?? 0) > 0)
+    if (cands.length === 0) break
+    const prev = add[day][add[day].length - 1]
+    const pick = cands.find(m => !prev || m.title !== prev.title) ?? cands[0]
+    remain.set(`${pick.kind}|${pick.title}`, (remain.get(`${pick.kind}|${pick.title}`) ?? 0) - 1)
+    add[day].push({
+      start: slot.start, end: slot.end, title: pick.title, subject: pick.subject, kind: pick.kind,
+      ...(pick.workbookId ? { workbookId: pick.workbookId } : {}), makeup: true,
+    })
+    placed++
+  }
+  // 시간순 정렬 (기존 블록과 합칠 때 순서 유지)
+  for (const d of ['토', '일']) add[d].sort((a, b) => a.start.localeCompare(b.start))
+  return { missed, add, freeSlots: free.length, placed }
+}
+
 // 블록의 그날 진도 — 연결된 교재의 진도표(LecturePlan)에서 해당 날짜 세션을 찾는다.
 // 그날 세션이 없으면 '가장 가까운 지난 미완료 세션'(밀린 진도)을 안내한다.
 export function planForBlock(

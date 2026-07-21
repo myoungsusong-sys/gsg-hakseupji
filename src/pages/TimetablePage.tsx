@@ -3,7 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
 import { useBrand } from '../lib/brand'
 import type { StudentTimetable, TTBlock, TTResource } from '../types'
-import { buildTimetable, daySlots, planForBlock, SUBJECT_CLS, TT_DAYS, TT_SUBJECTS } from '../lib/timetable'
+import { buildTimetable, daySlots, planForBlock, planWeekendMakeup, SUBJECT_CLS, TT_DAYS, TT_SUBJECTS } from '../lib/timetable'
+import { todayKey } from '../lib/dates'
 
 // ── 주간 시간표 — 요일별 공부시간 + 교재·인강 선택 → 자동 배치 → 학생앱 홈에 '오늘 시간표'로 노출 ──
 
@@ -75,6 +76,30 @@ export default function TimetablePage() {
     setTT(next); setDirty(false)
     updateStudent(student!.id, { timetable: next })
   }
+  // 주말 보충 — 주중(어제까지) 미완 블록을 주말 빈 슬롯에 채운다
+  function applyMakeup() {
+    const r = planWeekendMakeup(tt, student!.id, ttChecks, weekDateOf, todayKey())
+    if (r.missed.length === 0) { alert('주중에 밀린 블록이 없습니다. 보충할 내용이 없어요.'); return }
+    if (r.placed === 0) { alert(`밀린 블록이 ${r.missed.reduce((a, m) => a + m.count, 0)}개 있지만 주말에 빈 시간이 없습니다.\n주말 공부시간을 늘리거나 기존 주말 블록을 지운 뒤 다시 시도하세요.`); return }
+    const summary = r.missed.filter(m => m.count > 0).map(m => `${m.title} ${m.count}회`).join(', ')
+    if (!confirm(`주중 밀린 학습: ${summary}\n\n주말 빈 시간 ${r.freeSlots}칸 중 ${r.placed}칸에 보충으로 배치합니다. 진행할까요?`)) return
+    const blocks = { ...tt.blocks }
+    for (const d of ['토', '일']) {
+      blocks[d] = [...(blocks[d] ?? []), ...(r.add[d] ?? [])].sort((a, b) => a.start.localeCompare(b.start))
+    }
+    const next = { ...tt, blocks, updatedAt: new Date().toISOString() }
+    setTT(next); setDirty(false)
+    updateStudent(student!.id, { timetable: next })
+  }
+  function clearMakeup() {
+    const blocks = { ...tt.blocks }
+    for (const d of TT_DAYS) blocks[d] = (blocks[d] ?? []).filter(b => !b.makeup)
+    const next = { ...tt, blocks, updatedAt: new Date().toISOString() }
+    setTT(next); setDirty(false)
+    updateStudent(student!.id, { timetable: next })
+  }
+  const makeupCount = TT_DAYS.reduce((a, d) => a + (tt.blocks[d] ?? []).filter(b => b.makeup).length, 0)
+
   function removeBlock(d: string, i: number) {
     const next = { ...tt, blocks: { ...tt.blocks, [d]: tt.blocks[d].filter((_, j) => j !== i) }, updatedAt: new Date().toISOString() }
     setTT(next)
@@ -194,6 +219,21 @@ export default function TimetablePage() {
             {dirty && <button type="button" onClick={save} className="rounded-lg border border-line px-4 py-2 text-sm font-bold text-ink2 hover:border-pine">설정만 저장</button>}
             <span className="text-xs text-ink2">생성하면 저장되고, 학생앱 홈에 &lsquo;오늘 시간표&rsquo;로 바로 표시됩니다.</span>
           </div>
+          <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-line pt-3">
+            <button type="button" onClick={applyMakeup}
+              className="rounded-lg border border-amber px-4 py-2 text-sm font-bold text-amber hover:bg-amber hover:text-paper">
+              🔁 주말 보충 자동 편성
+            </button>
+            {makeupCount > 0 && (
+              <button type="button" onClick={clearMakeup}
+                className="rounded-lg border border-line px-3 py-2 text-xs font-bold text-ink2 hover:border-pine">
+                보충 {makeupCount}개 지우기
+              </button>
+            )}
+            <span className="text-xs text-ink2">
+              주중에 학생이 완료 체크하지 않은 블록을 세어 주말 빈 시간에 채웁니다 (오늘·이후 요일은 제외).
+            </span>
+          </div>
         </div>
       </div>
 
@@ -214,9 +254,9 @@ export default function TimetablePage() {
                   const plan = planForBlock(b, dk, lecturePlans, student.id)
                   const done = !!ttChecks[`${student.id}|${dk}|${i}`]   // 학생이 완료 체크한 블록
                   return (
-                    <div key={i} className={`group rounded-lg px-1.5 py-1 text-[11px] leading-tight ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타} ${done ? 'opacity-60' : ''}`}>
+                    <div key={i} className={`group rounded-lg px-1.5 py-1 text-[11px] leading-tight ${SUBJECT_CLS[b.subject] ?? SUBJECT_CLS.기타} ${done ? 'opacity-60' : ''} ${b.makeup ? 'ring-1 ring-amber' : ''}`}>
                       <div className="flex items-start justify-between gap-0.5">
-                        <span className="font-black tabular-nums">{done ? '✓ ' : ''}{b.start}</span>
+                        <span className="font-black tabular-nums">{done ? '✓ ' : ''}{b.makeup ? '🔁 ' : ''}{b.start}</span>
                         <button type="button" onClick={() => removeBlock(d, i)}
                           className="note-noprint hidden text-[10px] group-hover:inline" aria-label="블록 삭제">✕</button>
                       </div>
