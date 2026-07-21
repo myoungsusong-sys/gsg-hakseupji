@@ -21,6 +21,7 @@ import Placeholder from './components/Placeholder'
 import WorksheetPage from './pages/WorksheetPage'
 import MakeWizard from './pages/MakeWizard'
 import WorksheetView from './pages/WorksheetView'
+import DiagnosisReport from './pages/DiagnosisReport'
 import Materials from './pages/Materials'
 import NaesinPrep from './pages/NaesinPrep'
 import TestPrep from './pages/TestPrep'
@@ -121,6 +122,7 @@ function Gate() {
 
             <Route path="/make" element={<Page><MakeWizard /></Page>} />
             <Route path="/worksheet/:id" element={<Page><WorksheetView /></Page>} />
+            <Route path="/diagnosis/:studentId" element={<Page><DiagnosisReport /></Page>} />
           </Route>
           </Route>
         </Routes>

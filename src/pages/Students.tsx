@@ -313,8 +313,12 @@ function StudentsTab() {
                       </button>
                     </td>
                     <td className="px-3 py-2.5">
-                      <button onClick={() => setDetail(s)}
-                        className="text-xs font-bold text-pine hover:underline">상세보기</button>
+                      <span className="flex items-center gap-2">
+                        <button onClick={() => setDetail(s)}
+                          className="text-xs font-bold text-pine hover:underline">상세보기</button>
+                        <a href={`#/diagnosis/${s.id}`}
+                          className="text-xs font-bold text-amber hover:underline">진단 리포트</a>
+                      </span>
                     </td>
                   </tr>
                 )
