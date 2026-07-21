@@ -344,7 +344,9 @@ function LookupTab() {
           <div className="mt-3">
             <p className="mb-1 text-xs font-bold text-ink2">🎧 인강 (내장 강좌표)</p>
             <div className="grid gap-1">
-              {lectures.map((l, i) => <LectureRow key={i} l={l} onPick={() => { setTotal(l.units); setUnit('강') }} />)}
+              {lectures.map((l, i) => (
+                <LectureRow key={i} l={l} onPick={() => { if (l.units) { setTotal(l.units); setUnit('강') } }} />
+              ))}
             </div>
           </div>
         )}
@@ -417,8 +419,16 @@ function LectureRow({ l, onPick }: { l: LectureInfo; onPick: () => void }) {
     <button onClick={onPick} className="flex flex-wrap items-center gap-2 rounded-xl border border-line px-3 py-2 text-left text-sm hover:border-pine">
       <span className="shrink-0 rounded bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">{l.site}</span>
       <b>{l.course}</b>
-      <span className="text-xs text-ink2">{l.teacher !== '-' ? `${l.teacher} · ` : ''}{l.subject} · 총 {l.units}강 · 1강 {l.minutesPerUnit}분</span>
-      <span className="ml-auto shrink-0 text-xs font-bold text-pine">강수 쓰기</span>
+      <span className="text-xs text-ink2">
+        {l.teacher && l.teacher !== '-' ? `${l.teacher} · ` : ''}{l.subject}
+        {l.grade ? ` · ${l.grade}` : ''}
+        {l.units ? ` · 총 ${l.units}강` : ' · 강수 미확인'}
+        {l.minutesPerUnit ? ` · 1강 ${l.minutesPerUnit}분` : ''}
+        {l.year ? ` · ${l.year}` : ''}
+      </span>
+      {l.units
+        ? <span className="ml-auto shrink-0 text-xs font-bold text-pine">강수 쓰기</span>
+        : <span className="ml-auto shrink-0 text-xs text-ink2">직접 입력 필요</span>}
     </button>
   )
 }
