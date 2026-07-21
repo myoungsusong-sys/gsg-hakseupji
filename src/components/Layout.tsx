@@ -4,6 +4,7 @@ import { useStore } from '../lib/store'
 import { SUBJECTS, useSubject } from '../lib/subject'
 import { brandFor } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
+import AiApprovalPanel from './lesson/AiApprovalPanel'
 
 // ── 알림센터: 최근 채점(학생 제출)·출제 이벤트를 알림으로 파생 ─────────
 interface Notif {
@@ -207,6 +208,9 @@ export default function Layout() {
           ↑
         </button>
       )}
+
+      {/* AI 1차 채점 승인 큐 — 대기 문항 있을 때만 플로팅 뱃지 (모든 선생님 화면) */}
+      <AiApprovalPanel />
 
       <Outlet />
     </div>

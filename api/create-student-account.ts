@@ -1,11 +1,11 @@
-// 강사 계정 발급·비밀번호 재설정 — Vercel 서버리스 (Node). 원장(로그인된 선생님)이 아이디+비번을 정하면
-// Supabase Admin API(service-role)로 실제 계정을 만든다. 계정 이메일 = t-<loginId>@teacher.gsg.app
-// action 'create'(기본) = 계정 생성 · 'reset' = 기존 계정 비밀번호 재설정(Admin API — 브라우저 anon 키로는 불가).
-// 보안: 호출자의 Supabase 세션 토큰을 검증(로그인된 사용자만, 학생 세션 차단) → 익명 계정 생성 차단.
+// 학생 계정 발급·비밀번호 초기화 — Vercel 서버리스 (Node). 선생님이 앱에서 직접 처리한다.
+// (이메일 등록 없이) 아이디+비번으로 계정 생성: 이메일 = s-<loginId>@student.gsg.app 규약.
+// 보안: 호출자의 Supabase 세션 토큰 검증(로그인된 선생님만) → 익명 호출 차단.
+// action 'create' = 계정 생성 · 'reset' = 기존 계정 비밀번호 변경(Admin API — 브라우저 anon 키로는 불가).
 import { createClient } from '@supabase/supabase-js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://rttqkpquyzfrdxqhgqvi.supabase.co'
-const TEACHER_DOMAIN = 'teacher.gsg.app'
+const STUDENT_DOMAIN = 'student.gsg.app'
 
 function readBody(req: any): Promise<any> {
   if (req.body && typeof req.body === 'object') return Promise.resolve(req.body)
@@ -21,7 +21,7 @@ export default async function handler(req: any, res: any) {
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY
   if (!key) { res.status(503).json({ error: '계정 발급이 아직 설정되지 않았습니다(SUPABASE_SERVICE_ROLE_KEY).' }); return }
 
-  // 호출자 인증 — 로그인된 사용자(원장/강사)만 허용
+  // 호출자 인증 — 로그인된 선생님만
   const auth = String(req.headers?.authorization ?? '')
   const token = auth.startsWith('Bearer ') ? auth.slice(7) : ''
   if (!token) { res.status(401).json({ error: '로그인 후 이용해 주세요.' }); return }
@@ -30,35 +30,33 @@ export default async function handler(req: any, res: any) {
   const act = action === 'reset' ? 'reset' : 'create'
   const id = String(loginId ?? '').trim().toLowerCase()
   const pw = String(password ?? '')
-  if (!/^[a-z0-9._-]{3,}$/.test(id)) { res.status(400).json({ error: '아이디는 영문·숫자 3자 이상(공백 없이)으로 입력하세요.' }); return }
+  if (!/^[a-z0-9._-]{3,}$/.test(id)) { res.status(400).json({ error: '아이디는 영문·숫자 3자 이상(공백 없이)이어야 합니다.' }); return }
   if (pw.length < 6) { res.status(400).json({ error: '비밀번호는 6자 이상이어야 합니다.' }); return }
 
   try {
     const admin = createClient(SUPABASE_URL, key, { auth: { persistSession: false } })
-    // 세션 토큰 검증
     const { data: who, error: uerr } = await admin.auth.getUser(token)
     if (uerr || !who?.user) { res.status(401).json({ error: '세션이 만료되었습니다. 다시 로그인해 주세요.' }); return }
-    // 학생 세션으로는 강사 계정 조작 불가
-    if (String(who.user.email ?? '').toLowerCase().endsWith('@student.gsg.app')) {
-      res.status(403).json({ error: '선생님 계정으로 로그인해 주세요.' }); return
-    }
+    // 학생 계정으로는 계정 발급 불가 (선생님 세션만)
+    const callerEmail = String(who.user.email ?? '').toLowerCase()
+    if (callerEmail.endsWith(`@${STUDENT_DOMAIN}`)) { res.status(403).json({ error: '선생님 계정으로 로그인해 주세요.' }); return }
 
-    const email = `t-${id}@${TEACHER_DOMAIN}`
+    const email = `s-${id}@${STUDENT_DOMAIN}`
 
     if (act === 'create') {
       const { error } = await admin.auth.admin.createUser({
         email, password: pw, email_confirm: true,
-        user_metadata: { role: 'teacher', name: String(name ?? '').slice(0, 40) },
+        user_metadata: { role: 'student', name: String(name ?? '').slice(0, 40) },
       })
       if (error) {
         const msg = /already been registered|already exists/i.test(error.message)
-          ? '이미 사용 중인 아이디입니다. 다른 아이디로 만들어 주세요.' : String(error.message).slice(0, 200)
+          ? '이미 계정이 있는 아이디입니다. 비밀번호 초기화를 이용하세요.' : String(error.message).slice(0, 200)
         res.status(409).json({ error: msg }); return
       }
       res.status(200).json({ ok: true, email }); return
     }
 
-    // reset — 이메일로 사용자 검색 후 비밀번호 변경
+    // reset — 이메일로 사용자 검색(소규모 학원 규모라 페이지 스캔으로 충분) → 비밀번호 변경
     let uid: string | null = null
     for (let page = 1; page <= 10 && !uid; page++) {
       const { data, error } = await admin.auth.admin.listUsers({ page, perPage: 200 })

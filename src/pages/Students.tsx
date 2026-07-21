@@ -697,7 +697,8 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
   const [active, setActive] = useState(s.active)
   const [showReset, setShowReset] = useState(false)
   const [showSibling, setShowSibling] = useState(false)
-  const [copied, setCopied] = useState(false)
+  const [acctBusy, setAcctBusy] = useState(false)
+  const [acctMsg, setAcctMsg] = useState<{ ok: boolean; text: string } | null>(null)
   const set = (p: Partial<FormState>) => setF(prev => ({ ...prev, ...p }))
 
   // 형제 연결 등 스토어 변경분 반영 (모달 열려 있는 동안)
@@ -723,11 +724,28 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
     updateStudent(other.id, { siblingIds: (other.siblingIds ?? []).filter(id => id !== live.id) })
   }
 
-  const resetCmd = `node scripts/create-student-accounts.mjs --reset ${acctId ?? ''}`
-  const copyCmd = () => {
-    navigator.clipboard?.writeText(resetCmd).then(() => {
-      setCopied(true); setTimeout(() => setCopied(false), 2000)
-    })
+  // 학생 계정 생성·비밀번호 초기화 — 선생님앱에서 직접 (서버리스 /api/create-student-account, 이메일 등록 불필요)
+  async function accountAction(action: 'create' | 'reset') {
+    if (!acctId || !SUPABASE_ON) return
+    setAcctMsg(null); setAcctBusy(true)
+    try {
+      const { data: sess } = await supabase!.auth.getSession()
+      const token = sess.session?.access_token
+      const r = await fetch('/api/create-student-account', {
+        method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token ?? ''}` },
+        body: JSON.stringify({ action, loginId: acctId, password: `gsg${acctId}`, name: live.name }),
+      })
+      const j = await r.json().catch(() => ({}))
+      if (!r.ok) { setAcctMsg({ ok: false, text: j.error || '처리하지 못했어요. 잠시 후 다시 시도해주세요.' }); setAcctBusy(false); return }
+      if (action === 'create' || !live.authEmail) updateStudent(live.id, { authEmail: j.email })
+      setAcctMsg({
+        ok: true,
+        text: action === 'create'
+          ? `계정을 만들었어요 — 아이디 ${acctId} / 비밀번호 gsg${acctId}`
+          : `비밀번호를 gsg${acctId}(으)로 초기화했어요.`,
+      })
+      setAcctBusy(false)
+    } catch { setAcctMsg({ ok: false, text: '네트워크 오류예요. 잠시 후 다시 시도해주세요.' }); setAcctBusy(false) }
   }
 
   return (
@@ -758,8 +776,21 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
               {SUPABASE_ON
                 ? (live.authEmail
                   ? <span className="ml-2 rounded bg-pine-soft px-1.5 py-0.5 text-[10px] font-bold text-pine-dark">계정 생성됨</span>
-                  : <span className="ml-2 rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">미생성 — 계정 일괄 생성 스크립트로 생성</span>)
+                  : (
+                    <>
+                      <span className="ml-2 rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">미생성</span>
+                      <button type="button" onClick={() => accountAction('create')} disabled={acctBusy}
+                        className="ml-2 rounded-lg bg-pine px-2.5 py-1 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-50">
+                        {acctBusy ? '만드는 중…' : '계정 만들기'}
+                      </button>
+                    </>
+                  ))
                 : <span className="ml-2 rounded bg-paper2 px-1.5 py-0.5 text-[10px] font-bold text-ink2">로컬 모드 — 이름+출결번호로 입장</span>}
+              {acctMsg && (
+                <div className={`mt-1.5 text-xs font-semibold ${acctMsg.ok ? 'text-pine-dark' : 'text-clay'}`}>
+                  {acctMsg.ok ? '✓ ' : '⚠️ '}{acctMsg.text}
+                </div>
+              )}
             </div>
           ) : (
             <div className="text-ink2">출결 번호가 없어 학생앱 계정을 만들 수 없어요. 출결 번호를 입력해주세요.</div>
@@ -788,17 +819,13 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
               <p>로컬 모드에서는 학생앱이 이름+출결번호로 입장하므로 비밀번호가 없습니다. (Supabase 모드에서 사용하는 기능이에요.)</p>
             ) : (
               <div>
-                <p className="mb-1.5">
-                  비밀번호를 기본값 <b className="font-mono">gsg{acctId}</b>로 초기화하려면 아래 명령을 실행하세요.
-                  (보안상 브라우저에서는 다른 계정의 비밀번호를 바꿀 수 없어요 — service key 스크립트로 처리합니다.)
+                <p className="mb-2">
+                  비밀번호를 기본값 <b className="font-mono">gsg{acctId}</b>(으)로 초기화합니다. 학생에게 새 비밀번호를 알려주세요.
                 </p>
-                <div className="flex items-center gap-2">
-                  <code className="grow rounded-lg bg-white px-2 py-1.5 font-mono text-xs">{resetCmd}</code>
-                  <button type="button" onClick={copyCmd}
-                    className="shrink-0 rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-bold text-ink2 hover:text-pine">
-                    {copied ? '✓ 복사됨' : '복사'}
-                  </button>
-                </div>
+                <button type="button" onClick={() => accountAction('reset')} disabled={acctBusy}
+                  className="rounded-lg bg-amber px-4 py-2 text-xs font-bold text-white hover:brightness-105 disabled:opacity-50">
+                  {acctBusy ? '초기화 중…' : '지금 초기화하기'}
+                </button>
               </div>
             )}
           </div>
@@ -1712,7 +1739,13 @@ function TeachersTab() {
                   <td className="text-ink2">{t.phone || '—'}</td>
                   <td>
                     {t.accountCreated
-                      ? <span className="rounded bg-pine-soft px-2 py-0.5 text-xs font-bold text-pine-dark">발급됨 · {t.loginId}</span>
+                      ? (
+                        <span className="inline-flex items-center gap-1.5">
+                          <span className="rounded bg-pine-soft px-2 py-0.5 text-xs font-bold text-pine-dark">발급됨 · {t.loginId}</span>
+                          <button onClick={() => setAcct(t)} title="비밀번호 재설정"
+                            className="rounded border border-line px-2 py-0.5 text-xs font-bold text-ink2 hover:border-pine hover:text-pine">비번 재설정</button>
+                        </span>
+                      )
                       : <button onClick={() => setAcct(t)} className="rounded border border-pine px-2 py-0.5 text-xs font-bold text-pine hover:bg-pine-soft">계정 만들기</button>}
                   </td>
                   <td className="pr-4 text-right">
@@ -1794,6 +1827,8 @@ function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
 function TeacherAccountModal({ teacher, onDone, onClose }: {
   teacher: Teacher; onDone: (loginId: string) => void; onClose: () => void
 }) {
+  // 계정이 이미 있으면 '비밀번호 재설정' 모드 (아이디 고정), 없으면 '계정 만들기' 모드
+  const reset = !!teacher.accountCreated && !!teacher.loginId
   const [loginId, setLoginId] = useState(teacher.loginId ?? '')
   const [pw, setPw] = useState('')
   const [busy, setBusy] = useState(false)
@@ -1812,9 +1847,9 @@ function TeacherAccountModal({ teacher, onDone, onClose }: {
         const token = sess.session?.access_token
         const r = await fetch('/api/create-teacher-account', {
           method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token ?? ''}` },
-          body: JSON.stringify({ loginId: id, password: pw, name: teacher.name }),
+          body: JSON.stringify({ action: reset ? 'reset' : 'create', loginId: id, password: pw, name: teacher.name }),
         })
-        if (!r.ok) { const e = await r.json().catch(() => ({})); setErr(e.error || '계정 생성 실패'); setBusy(false); return }
+        if (!r.ok) { const e = await r.json().catch(() => ({})); setErr(e.error || (reset ? '재설정 실패' : '계정 생성 실패')); setBusy(false); return }
       }
       setDone({ email: teacherEmailOf(id) })
       setBusy(false)
@@ -1822,11 +1857,13 @@ function TeacherAccountModal({ teacher, onDone, onClose }: {
   }
 
   return (
-    <Modal title={`${teacher.name} 강사 계정 만들기`} onClose={onClose}>
+    <Modal title={reset ? `${teacher.name} 강사 비밀번호 재설정` : `${teacher.name} 강사 계정 만들기`} onClose={onClose}>
       {done ? (
         <div className="grid gap-3">
           <div className="rounded-xl bg-pine-soft/50 p-4 text-sm">
-            <p className="mb-2 font-bold text-pine-dark">✅ 계정이 만들어졌어요. 강사에게 아래 정보를 전달하세요.</p>
+            <p className="mb-2 font-bold text-pine-dark">
+              {reset ? '✅ 비밀번호를 재설정했어요. 강사에게 아래 정보를 전달하세요.' : '✅ 계정이 만들어졌어요. 강사에게 아래 정보를 전달하세요.'}
+            </p>
             <div className="rounded-lg bg-white px-3 py-2">아이디: <b>{loginId.trim().toLowerCase()}</b></div>
             <div className="mt-1 rounded-lg bg-white px-3 py-2">비밀번호: <b>{pw}</b></div>
             <p className="mt-2 text-xs text-ink2">강사는 로그인 화면 [선생님] 탭에서 <b>아이디</b>(또는 {done.email})와 비밀번호로 로그인합니다.</p>
@@ -1835,13 +1872,24 @@ function TeacherAccountModal({ teacher, onDone, onClose }: {
         </div>
       ) : (
         <div className="grid gap-3">
-          <p className="text-sm text-ink2">강사가 로그인할 아이디와 초기 비밀번호를 정하세요. {SUPABASE_ON ? '실제 로그인 계정이 만들어집니다.' : '(로컬 모드: 아이디만 기록)'}</p>
-          <Field label="아이디 (영문·숫자)"><input value={loginId} onChange={e => setLoginId(e.target.value)} autoFocus className={INPUT} placeholder="예: teacher1" /></Field>
-          <Field label="초기 비밀번호 (6자 이상)"><input value={pw} onChange={e => setPw(e.target.value)} className={INPUT} placeholder="강사에게 전달할 비밀번호" /></Field>
+          <p className="text-sm text-ink2">
+            {reset
+              ? <>새 비밀번호를 정하세요. {SUPABASE_ON ? '즉시 적용됩니다.' : '(로컬 모드: 실제 계정 없음)'}</>
+              : <>강사가 로그인할 아이디와 초기 비밀번호를 정하세요. {SUPABASE_ON ? '실제 로그인 계정이 만들어집니다.' : '(로컬 모드: 아이디만 기록)'}</>}
+          </p>
+          <Field label="아이디 (영문·숫자)">
+            <input value={loginId} onChange={e => setLoginId(e.target.value)} autoFocus={!reset} disabled={reset}
+              className={`${INPUT} ${reset ? 'opacity-60' : ''}`} placeholder="예: teacher1" />
+          </Field>
+          <Field label={reset ? '새 비밀번호 (6자 이상)' : '초기 비밀번호 (6자 이상)'}>
+            <input value={pw} onChange={e => setPw(e.target.value)} autoFocus={reset} className={INPUT} placeholder="강사에게 전달할 비밀번호" />
+          </Field>
           {err && <p className="text-sm text-clay">{err}</p>}
           <div className="flex justify-end gap-2">
             <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:bg-paper2">취소</button>
-            <button onClick={create} disabled={busy} className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-60">{busy ? '만드는 중…' : '계정 만들기'}</button>
+            <button onClick={create} disabled={busy} className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-60">
+              {busy ? '처리 중…' : reset ? '비밀번호 재설정' : '계정 만들기'}
+            </button>
           </div>
         </div>
       )}
@@ -2015,6 +2063,7 @@ function useRevealConfig() {
   ]
   const dirty = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
     || (cfg.solveFeedback ?? true) !== (studentAppConfig.solveFeedback ?? true)   // 기본 ON
+    || (cfg.aiGrade ?? false) !== (studentAppConfig.aiGrade ?? false)             // 기본 OFF
   const save = () => {
     setStudentAppConfig({ ...studentAppConfig, ...cfg })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
@@ -2066,6 +2115,26 @@ function AnswerRevealSettings() {
           <label className="flex items-center gap-1.5 text-sm">
             <input type="checkbox" checked={cfg.solveFeedback ?? true}
               onChange={e => setCfg(p => ({ ...p, solveFeedback: e.target.checked }))} className="accent-pine" />
+            사용
+          </label>
+        </div>
+        {/* AI 1차 채점 + 선생님 승인 (기본 사용 안 함) */}
+        <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
+          <div className="min-w-40">
+            <div className="text-sm font-bold">🤖 AI 1차 채점
+              <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(cfg.aiGrade ?? false) ? 'bg-violet-100 text-violet-700' : 'bg-paper2 text-ink2'}`}>
+                {(cfg.aiGrade ?? false) ? '사용' : '사용 안 함'}
+              </span>
+            </div>
+            <div className="text-xs text-ink2">
+              서술형·이미지정답·과학처럼 자동채점이 안 되는 문항을 AI가 1차 판정하고, 선생님이 승인 큐(우하단 🤖 뱃지)에서 확정해요.
+              확정 전 학생에겐 "가채점"으로 표시돼요.
+            </div>
+          </div>
+          <div className="grow" />
+          <label className="flex items-center gap-1.5 text-sm">
+            <input type="checkbox" checked={cfg.aiGrade ?? false}
+              onChange={e => setCfg(p => ({ ...p, aiGrade: e.target.checked }))} className="accent-pine" />
             사용
           </label>
         </div>
@@ -2132,12 +2201,12 @@ function StudentAccountGuide() {
           <div className="mt-0.5 text-xs text-ink2">아이디가 자동으로 이 규약의 Supabase 계정으로 변환돼요.</div>
         </div>
         <div className="rounded-xl bg-paper2/70 px-4 py-3">
-          <div className="text-xs font-bold text-ink2">계정 일괄 생성 · 비밀번호 초기화</div>
-          <div className="font-mono text-xs">node scripts/create-student-accounts.mjs</div>
-          <div className="mt-0.5 text-xs text-ink2">
-            앱 저장소의 스크립트로 재원생 전원의 계정을 만들어요 (Supabase service key 필요).
-            새 학생이 들어오면 다시 실행 — 기존 계정은 건너뛰어요.
-            비밀번호 초기화는 <span className="font-mono">--reset &lt;아이디&gt;</span> (학생 상세보기의 [학생 비밀번호 초기화]에서 명령 복사).
+          <div className="text-xs font-bold text-ink2">계정 만들기 · 비밀번호 초기화 — 앱에서 바로</div>
+          <div className="text-xs leading-relaxed text-ink2">
+            학생 <b className="text-ink">[상세보기]</b>의 학생앱 계정 블록에서 <b className="text-ink">[계정 만들기]</b>를 누르면
+            이메일 등록 없이 바로 계정이 생겨요 (기본 비밀번호 gsg&lt;아이디&gt;).
+            비밀번호를 잊으면 같은 화면의 <b className="text-ink">[학생 비밀번호 초기화] → [지금 초기화하기]</b>로 기본값 재설정.
+            <br /><span className="opacity-70">※ 여러 명 일괄 생성이 필요하면 예전 스크립트(node scripts/create-student-accounts.mjs)도 그대로 쓸 수 있어요.</span>
           </div>
         </div>
         <div className="rounded-xl bg-paper2/70 px-4 py-3">

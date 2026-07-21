@@ -216,6 +216,11 @@ export interface GradeResult {
   studentAnswer?: string
   correct: boolean
   unknown?: boolean      // '모름' — 집계는 오답과 동일, 표시만 구분
+  // ── AI 1차 채점 + 선생님 승인 (자동채점 불가 문항: 서술형·이미지정답·답없음 과학) ──
+  workImg?: string       // 학생 풀이 이미지 (축소 JPEG dataURL — 문제이미지+필기 합성 or 사진)
+  pending?: 'ai' | 'teacher'   // 'ai'=AI 판정 대기 · 'teacher'=선생님 승인 대기 · 없으면 확정
+  ai?: { verdict: boolean | null; reason: string; confidence: 'high' | 'mid' | 'low'; at: string }
+  approvedAt?: string    // 선생님 확정 시각 (승인/수정 완료)
 }
 
 export interface Grading {
@@ -288,6 +293,7 @@ export interface StudentAppConfig {
   dailyMasterOn?: boolean        // 오늘의 학습 — 전체 학생 공개 여부 (기본 true)
   dailyOffIds?: string[]         // 오늘의 학습 OFF 학생 id 목록
   solveFeedback?: boolean        // 학생앱 문항별 '풀이 AI 피드백' 사용 (기본 true=사용)
+  aiGrade?: boolean              // AI 1차 채점 + 선생님 승인 (서술형·과학 등 자동채점 불가 문항, 기본 false)
   lab?: LabConfig                // 실험실 설정
 }
 
@@ -338,6 +344,8 @@ export interface SolveFeedback {
   correct: boolean | null
   feedback: string      // 학생에게 보여줄 피드백
   at: string            // ISO
+  img?: string          // 제출한 풀이 이미지 (축소 JPEG dataURL — 빨간펜 표시 오버레이용)
+  marks?: { x: number; y: number; w: number; h: number; label: string }[]   // 틀린 부분 빨간펜 (0~1 정규화)
 }
 
 // 일일 보고지 메모 (학생×날짜)

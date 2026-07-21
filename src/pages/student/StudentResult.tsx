@@ -150,6 +150,12 @@ export default function StudentResult() {
               <span className="font-semibold text-clay">틀린 문제 {sum.wrong}</span>
               <span className="text-ink2">|</span>
               <span className="font-semibold text-pine-dark">맞은 문제 {sum.correct}</span>
+              {g.results.some(r => r.pending) && (
+                <span className="rounded-lg bg-violet-50 px-3 py-1.5 text-xs font-bold text-violet-700"
+                  title="서술형 등 자동채점이 어려운 문항은 AI가 1차 채점하고 선생님이 확인 후 확정돼요">
+                  🤖 AI 가채점 {g.results.filter(r => r.pending).length}문항 — 선생님 확인 중 (점수 잠정)
+                </span>
+              )}
             </div>
           </div>
 
@@ -178,9 +184,14 @@ export default function StudentResult() {
               return (
                 <div key={no} className="overflow-hidden rounded-2xl border border-line bg-white">
                   {/* 번호 밴드 — 정답 연파랑 / 오답 연분홍 */}
-                  <div className={`flex items-center gap-2 px-4 py-2 ${correct ? 'bg-pine-soft' : 'bg-red-50'}`}>
-                    <span className={`text-lg font-black ${correct ? 'text-pine-dark' : 'text-clay'}`}>{correct ? '○' : '✕'}</span>
-                    <b className={correct ? 'text-pine-dark' : 'text-clay'}>{no}번</b>
+                  <div className={`flex items-center gap-2 px-4 py-2 ${r?.pending ? 'bg-violet-50' : correct ? 'bg-pine-soft' : 'bg-red-50'}`}>
+                    <span className={`text-lg font-black ${r?.pending ? 'text-violet-700' : correct ? 'text-pine-dark' : 'text-clay'}`}>
+                      {r?.pending ? '🤖' : correct ? '○' : '✕'}
+                    </span>
+                    <b className={r?.pending ? 'text-violet-700' : correct ? 'text-pine-dark' : 'text-clay'}>{no}번</b>
+                    {r?.pending && <span className="rounded bg-white/70 px-1.5 py-0.5 text-[10px] font-bold text-violet-700">
+                      {r.pending === 'ai' ? 'AI 채점 중' : `가채점 ${r.correct ? '○' : '✕'} · 확인 중`}
+                    </span>}
                     {p && <span className="ml-1 truncate text-[11px] text-ink2">{typeName(p.typeId)}</span>}
                   </div>
                   <div className="grid gap-2.5 p-4">

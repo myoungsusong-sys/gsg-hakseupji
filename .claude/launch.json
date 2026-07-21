@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "hakseupji-local-5199",
+      "name": "hakseupji-restored-5199",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd \"$HOME/hakseupji-build\" && npx vite --port 5199 --strictPort"],
+      "runtimeArgs": ["-c", "export PATH=\"$HOME/.nvm/versions/node/v24.18.0/bin:$PATH\" && cd \"$HOME/hakseupji-restored\" && npx vite --port 5199 --strictPort"],
       "port": 5199
     }
   ]

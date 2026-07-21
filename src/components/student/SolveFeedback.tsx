@@ -81,6 +81,25 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
     return { dataUrl: off.toDataURL('image/png'), mediaType: 'image/png' }
   }
 
+  // 저장용 축소본 (빨간펜 오버레이 재표시용 — hj_ 저장 부담 최소화)
+  function shrink(dataUrl: string): Promise<string> {
+    return new Promise(resolve => {
+      const img = new Image()
+      img.onload = () => {
+        try {
+          const w = Math.min(640, img.naturalWidth)
+          const h = Math.round(w * img.naturalHeight / img.naturalWidth)
+          const c = document.createElement('canvas'); c.width = w; c.height = h
+          const g = c.getContext('2d')!
+          g.fillStyle = '#fff'; g.fillRect(0, 0, w, h); g.drawImage(img, 0, 0, w, h)
+          resolve(c.toDataURL('image/jpeg', 0.6))
+        } catch { resolve(dataUrl) }
+      }
+      img.onerror = () => resolve(dataUrl)
+      img.src = dataUrl
+    })
+  }
+
   async function submit() {
     const image = currentImage()
     if (!image) { setErr(mode === 'photo' ? '먼저 사진을 올려주세요.' : '먼저 풀이를 써주세요.'); return }
@@ -100,10 +119,13 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
         setBusy(false); return
       }
       const j = await r.json()
+      const marks = Array.isArray(j.marks) ? j.marks : []
+      const small = marks.length > 0 ? await shrink(image.dataUrl) : undefined   // 표시할 곳 있을 때만 이미지 보관
       saveSolveFeedback({
         id: fbId, studentId, worksheetId, problemId: problem.id,
         hasWork: j.hasWork !== false, correct: j.correct ?? null, feedback: String(j.feedback ?? ''),
         at: new Date().toISOString(),
+        ...(small ? { img: small, marks } : { marks }),
       })
       setBusy(false)
     } catch {
@@ -168,6 +190,32 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
                   : '⚠️ 풀이 과정을 써 주세요'}
               </div>
               <p className="whitespace-pre-wrap leading-relaxed">{saved.feedback}</p>
+
+              {/* 🖍 빨간펜 — AI가 짚은 틀린 부분을 내 풀이 위에 표시 */}
+              {saved.img && (saved.marks?.length ?? 0) > 0 && (
+                <div className="mt-2.5">
+                  <div className="mb-1 text-xs font-bold text-clay">🖍 여기를 다시 봐요</div>
+                  <div className="relative inline-block max-w-full">
+                    <img src={saved.img} alt="내 풀이 (AI 표시)" className="max-h-72 w-auto max-w-full rounded-lg border border-line bg-white" />
+                    <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      {saved.marks!.map((m, i) => (
+                        <ellipse key={i}
+                          cx={(m.x + m.w / 2) * 100} cy={(m.y + m.h / 2) * 100}
+                          rx={Math.max(m.w * 55, 4)} ry={Math.max(m.h * 60, 4)}
+                          fill="none" stroke="#dc2626" strokeWidth="0.8"
+                          strokeDasharray="2.5 1.2" vectorEffect="non-scaling-stroke" strokeLinecap="round" />
+                      ))}
+                    </svg>
+                    {saved.marks!.map((m, i) => (
+                      <span key={i}
+                        className="absolute -translate-y-full rounded bg-red-600 px-1 py-0.5 text-[10px] font-bold leading-none text-white"
+                        style={{ left: `${Math.min(m.x * 100, 82)}%`, top: `${Math.max(m.y * 100, 6)}%` }}>
+                        {m.label || '확인'}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

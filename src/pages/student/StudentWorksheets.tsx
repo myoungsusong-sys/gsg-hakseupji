@@ -23,6 +23,7 @@ export default function StudentWorksheets() {
   const pv = usePreview()
   const [tab, setTab] = useState<typeof TABS[number]>('전체')
   const [homeworkOnly, setHomeworkOnly] = useState(false)
+  const [examOnly, setExamOnly] = useState(false)   // 학력평가만 보기 (매쓰플랫 동일)
   const [info, setInfo] = useState(false)
 
   // 기간 필터 — 기본 최근 1개월 (매쓰플랫 동일)
@@ -36,13 +37,14 @@ export default function StudentWorksheets() {
         if (from && d < from) return false
         if (to && d > to) return false
         if (homeworkOnly && !r.kinds.includes('숙제')) return false
+        if (examOnly && !r.ws.tags.includes('학력평가')) return false
         return true
       })
       .map(r => {
         const g = latestGradingFor(gradings, me.id, r.ws.id)
         return { ...r, g, st: statusOf(r.ws.id, g) as StudentWsStatus }
       })
-  }, [assignments, worksheets, gradings, me.id, from, to, homeworkOnly])
+  }, [assignments, worksheets, gradings, me.id, from, to, homeworkOnly, examOnly])
 
   const counts = useMemo(() => {
     const c: Record<string, number> = { 전체: rows.length, 학습가능: 0, 풀이중: 0, 학습완료: 0 }
@@ -74,6 +76,11 @@ export default function StudentWorksheets() {
           <input type="checkbox" checked={homeworkOnly} onChange={e => setHomeworkOnly(e.target.checked)}
             className="h-4 w-4 accent-pine" />
           숙제만 보기
+        </label>
+        <label className="flex items-center gap-2 font-semibold">
+          <input type="checkbox" checked={examOnly} onChange={e => setExamOnly(e.target.checked)}
+            className="h-4 w-4 accent-pine" />
+          학력평가만 보기
         </label>
       </div>
 

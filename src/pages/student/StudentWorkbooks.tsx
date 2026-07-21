@@ -61,6 +61,7 @@ export default function StudentWorkbooks() {
   const me = useStudentSelf()
   const { workbooks, wbItems, gradings } = useStore()
   const [openId, setOpenId] = useState<string | null>(null)
+  const [tab, setTab] = useState<'일반교재' | '시그니처교재'>('일반교재')   // 매쓰플랫 동일 탭
 
   const myBooks = useMemo(() => workbooks.filter(w => w.studentId === me.id), [workbooks, me.id])
 
@@ -88,7 +89,22 @@ export default function StudentWorkbooks() {
       <h1 className="mb-1 text-xl font-black">교재</h1>
       <p className="mb-4 text-sm text-ink2">교재 채점은 수업 시간에 선생님이 해요 — 여기서 결과를 확인할 수 있어요.</p>
 
-      {rows.length === 0 ? (
+      {/* 일반교재 | 시그니처교재 탭 (매쓰플랫 동일) */}
+      <div className="mb-5 flex justify-center gap-2">
+        {(['일반교재', '시그니처교재'] as const).map(t => (
+          <button key={t} onClick={() => setTab(t)}
+            className={`rounded-lg px-5 py-2 text-sm font-bold transition ${
+              tab === t ? 'bg-pine text-paper' : 'border border-line bg-white text-ink2 hover:text-ink'}`}>
+            {t}
+          </button>
+        ))}
+      </div>
+
+      {tab === '시그니처교재' ? (
+        <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+          📖<br />학원에서 구매한 시그니처 교재가 없어요.<br />선생님께 시그니처 교재 구매를 요청해보세요.
+        </div>
+      ) : rows.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
           아직 배정된 교재가 없어요. 선생님이 교재를 배정하면 여기에 나타나요.
         </div>
@@ -190,6 +206,11 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           <div className="text-xs text-ink2">{wb.publisher} · {wb.grade} · 전체 {items.length}문항 — 선생님 채점 결과 열람</div>
         </div>
       </div>
+
+      {/* 정답 비공개 안내 (매쓰플랫 동일 문구) */}
+      {!cfg.showAnswer && (
+        <p className="mb-3 text-sm text-ink2">채점 후 답과 해설이 비공개되어 있습니다. 선생님에게 문의해주세요.</p>
+      )}
 
       {/* 페이지 네비 + 토글 */}
       <div className="mb-4 flex flex-wrap items-center gap-3">

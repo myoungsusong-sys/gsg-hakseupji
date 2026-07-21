@@ -7,7 +7,9 @@ import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, typeSubU
 import { POOL_COURSES } from '../../data/pool'
 import { CONCEPTS } from '../../data/concepts'
 import { wrongByType } from '../../lib/drill'
-import { ACHIEVEMENT_GRADES, achievementOf } from '../../lib/achievement'
+import { ACHIEVEMENT_GRADES, achievementOf, type AchievementKey } from '../../lib/achievement'
+import { WB_MATCH_BOOKS, loadWbMatch, type WbMatchBook } from '../../data/wbMatch'
+import { TEXTBOOK_BOOKS, type TextbookBook } from '../../data/textbooks'
 import MathText from '../../components/MathText'
 import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
 
@@ -41,6 +43,12 @@ export default function StudentChallenge() {
   const [courseId, setCourseId] = useState(() => defaultCurriculumForGrade(me.grade) || 'm1-1')
   const [recoOnly, setRecoOnly] = useState(false)
   const [query, setQuery] = useState('')
+  // 교재·교과서 선택 / 성취도 선택 (매쓰플랫 챌린지 필터 동일)
+  const [bookOpen, setBookOpen] = useState(false)
+  const [bookSel, setBookSel] = useState<Set<string>>(new Set())            // matchKey 집합
+  const [bookTypeIds, setBookTypeIds] = useState<Set<string> | null>(null)  // 선택 교재가 다루는 유형
+  const [achOpen, setAchOpen] = useState(false)
+  const [achSel, setAchSel] = useState<Set<AchievementKey>>(new Set())
   const [openSubs, setOpenSubs] = useState<Set<string>>(new Set())
   const [highlight, setHighlight] = useState<string | null>(null)
   const [concept, setConcept] = useState<string | null>(null)   // [개념 익히기] 대상 유형 id
@@ -111,11 +119,42 @@ export default function StudentChallenge() {
       .slice(0, 3), [stats])
   const recoIds = useMemo(() => new Set([...weak, ...best].map(s => s.typeId)), [weak, best])
 
-  // 아코디언 기본: 첫 소단원 열기
+  // 아코디언 기본: 첫 소단원 열기 (과정 바뀌면 교재·성취도 필터도 초기화)
   useEffect(() => {
     setOpenSubs(new Set(subs.length ? [subs[0].subId] : []))
     setHighlight(null)
+    setBookSel(new Set()); setBookTypeIds(null); setAchSel(new Set())
   }, [courseId, subs])
+
+  // 이 과정의 교재·교과서 카탈로그 (시중교재 = wb-match, 교과서 = 정답표 보유분)
+  const marketBooks = useMemo(() => WB_MATCH_BOOKS.filter(b => b.course === courseId), [courseId])
+  const textBooks = useMemo(() => TEXTBOOK_BOOKS.filter(b => b.course === courseId && b.hasAnswers), [courseId])
+
+  // [적용하기] — 선택 교재들의 wb-match 문항에서 유형 집합 도출
+  async function applyBooks(sel: Set<string>) {
+    setBookSel(sel)
+    setBookOpen(false)
+    if (sel.size === 0) { setBookTypeIds(null); return }
+    try {
+      const data = await loadWbMatch(courseId)
+      const ids = new Set<string>()
+      for (const k of sel) for (const it of data[k] ?? []) ids.add(String(it[2]))
+      setBookTypeIds(ids)
+    } catch {
+      alert('교재 데이터를 불러오지 못했어요. 잠시 후 다시 시도해주세요.')
+      setBookSel(new Set()); setBookTypeIds(null)
+    }
+  }
+
+  // 성취도별 유형 수 (성취도 선택 모달 카운트)
+  const achCounts = useMemo(() => {
+    const c = new Map<AchievementKey, number>()
+    for (const s of subs) for (const t of s.types) {
+      const k = achievementOf(statMap.get(t.id)).key
+      c.set(k, (c.get(k) ?? 0) + 1)
+    }
+    return c
+  }, [subs, statMap])
 
   function toggleSub(id: string) {
     setOpenSubs(prev => { const n = new Set(prev); if (n.has(id)) n.delete(id); else n.add(id); return n })
@@ -162,10 +201,12 @@ export default function StudentChallenge() {
     return subs.map(s => {
       let types = s.types
       if (recoOnly) types = types.filter(t => recoIds.has(t.id))
+      if (bookTypeIds) types = types.filter(t => bookTypeIds.has(t.id))
+      if (achSel.size > 0) types = types.filter(t => achSel.has(achievementOf(statMap.get(t.id)).key))
       if (q && !(`${s.unit} ${s.sub}`.includes(q))) types = types.filter(t => t.name.includes(q))
       return { ...s, types }
     }).filter(s => s.types.length > 0)
-  }, [subs, recoOnly, recoIds, q])
+  }, [subs, recoOnly, recoIds, bookTypeIds, achSel, statMap, q])
 
   const hasPool = (POOL_COURSES as readonly string[]).includes(courseId)
   const loaded = !hasPool || [...byType.values()].some(arr => arr.length > 0)
@@ -217,6 +258,16 @@ export default function StudentChallenge() {
           className="rounded-lg border border-line bg-white px-2.5 py-2 text-sm font-bold">
           {courses.map(c => <option key={c.id} value={c.id}>{c.label.replace(' (22개정)', '')}</option>)}
         </select>
+        <button onClick={() => setBookOpen(true)}
+          className={`rounded-lg border px-3 py-2 text-sm font-bold ${
+            bookSel.size > 0 ? 'border-pine bg-pine-soft/60 text-pine-dark' : 'border-line bg-white text-ink2 hover:text-ink'}`}>
+          교재・교과서 선택{bookSel.size > 0 && ` ${bookSel.size}권`} <span className="text-xs">∨</span>
+        </button>
+        <button onClick={() => setAchOpen(true)}
+          className={`rounded-lg border px-3 py-2 text-sm font-bold ${
+            achSel.size > 0 ? 'border-pine bg-pine-soft/60 text-pine-dark' : 'border-line bg-white text-ink2 hover:text-ink'}`}>
+          성취도 선택{achSel.size > 0 && ` ${achSel.size}종`} <span className="text-xs">∨</span>
+        </button>
         <label className="flex items-center gap-2 text-sm font-semibold">
           <input type="checkbox" checked={recoOnly} onChange={e => setRecoOnly(e.target.checked)}
             className="h-4 w-4 accent-pine" />
@@ -242,7 +293,9 @@ export default function StudentChallenge() {
       <div className="grid gap-2.5">
         {visibleSubs.length === 0 && loaded && (
           <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
-            {recoOnly ? '추천 유형이 없어요. 학습을 진행하면 추천이 쌓여요.' : '검색 결과가 없어요.'}
+            {recoOnly ? '추천 유형이 없어요. 학습을 진행하면 추천이 쌓여요.'
+              : (achSel.size > 0 || bookTypeIds) ? '선택한 교재·성취도 조건에 맞는 유형이 없어요.'
+              : '검색 결과가 없어요.'}
           </div>
         )}
         {visibleSubs.map(s => {
@@ -348,6 +401,56 @@ export default function StudentChallenge() {
       {/* [개념 익히기] 모달 — 유형이 속한 소단원의 개념 정리 */}
       {concept && <ConceptModal typeId={concept} onClose={() => setConcept(null)} />}
 
+      {/* 교재·교과서 선택 모달 (매쓰플랫 동일 — 시그니처/시중교재/교과서 + 검색 + 적용하기) */}
+      {bookOpen && (
+        <BookPickModal market={marketBooks} texts={textBooks} initial={bookSel}
+          onApply={applyBooks} onClose={() => setBookOpen(false)} />
+      )}
+
+      {/* 성취도 선택 모달 (매쓰플랫 동일 — 7색 칩 + 유형 수) */}
+      {achOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-4" onClick={() => setAchOpen(false)}>
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl" onClick={e => e.stopPropagation()}>
+            <div className="mb-3 flex items-start justify-between gap-3">
+              <h2 className="text-base font-black">성취도 선택</h2>
+              <button onClick={() => setAchOpen(false)} className="text-lg text-ink2 hover:text-ink">✕</button>
+            </div>
+            <button onClick={() => { setAchOpen(false); setGradeInfo(true) }}
+              className="mb-4 flex items-center gap-1.5 rounded-lg bg-paper2/70 px-3 py-2 text-xs font-semibold text-ink2 hover:bg-paper2">
+              성취도 컬러가 무엇인가요? <span className="font-bold text-pine">ⓘ 설명보기</span>
+            </button>
+            <div className="grid grid-cols-4 gap-2">
+              {ACHIEVEMENT_GRADES.map(g => {
+                const on = achSel.has(g.key)
+                const n = achCounts.get(g.key) ?? 0
+                return (
+                  <button key={g.key}
+                    onClick={() => setAchSel(prev => {
+                      const nx = new Set(prev); if (nx.has(g.key)) nx.delete(g.key); else nx.add(g.key); return nx
+                    })}
+                    title={`${g.name} — ${g.desc}`}
+                    className={`flex items-center justify-center gap-1.5 rounded-xl border px-2 py-2.5 text-sm font-bold transition ${
+                      on ? 'border-pine ring-2 ring-pine/30' : 'border-line/70 hover:bg-paper2/50'}`}>
+                    <span className={`h-6 w-6 shrink-0 rounded-lg ${g.dot}`} />
+                    <span className={n === 0 ? 'text-ink2/40' : ''}>{n}개</span>
+                  </button>
+                )
+              })}
+            </div>
+            <div className="mt-4 flex justify-end gap-2">
+              <button onClick={() => setAchSel(new Set())}
+                className="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">
+                ⟲ 전체 초기화
+              </button>
+              <button onClick={() => setAchOpen(false)}
+                className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
+                적용하기
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* 성취도 컬러 설명 모달 (매쓰플랫 챌린지 성취도 컬러 7종) */}
       {gradeInfo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-4" onClick={() => setGradeInfo(false)}>
@@ -402,6 +505,114 @@ function ConceptModal({ typeId, onClose }: { typeId: string; onClose: () => void
             <p className="text-center text-xs text-ink2">개념을 익혔다면 아래 밴드에서 [학습하기]로 문제를 풀어봐요!</p>
           </div>
         )}
+      </div>
+    </div>
+  )
+}
+
+// ── 교재·교과서 선택 모달 (매쓰플랫 챌린지 동일 — 카테고리·검색·선택 수·적용하기) ──
+function BookPickModal({ market, texts, initial, onApply, onClose }: {
+  market: WbMatchBook[]
+  texts: TextbookBook[]
+  initial: Set<string>
+  onApply: (sel: Set<string>) => void
+  onClose: () => void
+}) {
+  type Cat = '시그니처' | '시중교재' | '교과서'
+  const [cat, setCat] = useState<Cat>('시중교재')   // 시그니처 교재는 미보유 — 시중교재부터
+  const [sel, setSel] = useState<Set<string>>(() => new Set(initial))
+  const [q, setQ] = useState('')
+
+  // matchKey 기준 행 (시중교재 key = "이름|출판사", 교과서는 matchKey 필드)
+  const rows = useMemo(() => {
+    const src = cat === '시중교재'
+      ? market.map(b => ({ mk: b.key, name: b.name, pub: b.publisher }))
+      : cat === '교과서'
+        ? texts.map(b => ({ mk: b.matchKey, name: b.name, pub: b.publisher }))
+        : []
+    const query = q.trim()
+    return query ? src.filter(r => r.name.includes(query) || r.pub.includes(query)) : src
+  }, [cat, market, texts, q])
+
+  const marketN = useMemo(() => market.filter(b => sel.has(b.key)).length, [market, sel])
+  const textN = useMemo(() => texts.filter(b => sel.has(b.matchKey)).length, [texts, sel])
+
+  function toggle(mk: string) {
+    setSel(prev => { const n = new Set(prev); if (n.has(mk)) n.delete(mk); else n.add(mk); return n })
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-4" onClick={onClose}>
+      <div className="flex max-h-[85vh] w-full max-w-2xl flex-col rounded-2xl bg-white shadow-xl"
+        onClick={e => e.stopPropagation()}>
+        {/* 검색 */}
+        <div className="flex items-center gap-2 border-b border-line p-4">
+          <input value={q} onChange={e => setQ(e.target.value)} autoFocus
+            placeholder="시그니처 / 시중교재 / 교과서 모두 검색해보세요."
+            className="grow rounded-lg border border-line px-3 py-2 text-sm" />
+          <button onClick={onClose} className="rounded-lg px-2 py-0.5 text-lg text-ink2 hover:bg-paper2">✕</button>
+        </div>
+        {/* 카테고리 + 목록 */}
+        <div className="grid min-h-0 grow grid-cols-[110px_1fr]">
+          <nav className="border-r border-line/60 py-2">
+            {(['시그니처', '시중교재', '교과서'] as Cat[]).map(c => (
+              <button key={c} onClick={() => setCat(c)}
+                className={`block w-full px-4 py-2.5 text-left text-sm font-bold ${
+                  cat === c ? 'text-pine-dark' : 'text-ink2 hover:text-ink'}`}>
+                {c}
+              </button>
+            ))}
+          </nav>
+          <div className="min-h-0 overflow-y-auto">
+            {rows.length === 0 ? (
+              <p className="p-8 text-center text-sm text-ink2">
+                {cat === '시그니처'
+                  ? '학원에서 구매한 시그니처 교재가 없어요.'
+                  : q ? '검색 결과가 없어요.' : '이 과정의 교재가 없어요.'}
+              </p>
+            ) : (
+              <table className="w-full text-sm">
+                <thead className="sticky top-0 bg-white">
+                  <tr className="border-b border-line text-left text-xs text-ink2">
+                    <th className="w-12 px-4 py-2">선택</th>
+                    <th className="py-2">교재명</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map(r => (
+                    <tr key={r.mk} className="border-b border-line/40 last:border-0 hover:bg-paper2/40">
+                      <td className="px-4 py-2.5">
+                        <input type="checkbox" checked={sel.has(r.mk)} onChange={() => toggle(r.mk)}
+                          className="h-4 w-4 accent-pine" />
+                      </td>
+                      <td className="py-2.5 pr-3">
+                        <button onClick={() => toggle(r.mk)} className="text-left font-semibold hover:text-pine">
+                          {r.name} <span className="text-xs font-normal text-ink2">{r.pub}</span>
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </div>
+        </div>
+        {/* 푸터 */}
+        <div className="flex flex-wrap items-center gap-3 border-t border-line p-4">
+          <button onClick={() => setSel(new Set())}
+            className="flex items-center gap-1 text-sm font-semibold text-ink2 hover:text-ink">
+            ⟲ 전체 초기화
+          </button>
+          <div className="grow" />
+          <span className="text-xs text-ink2">
+            시그니처 <b className="text-pine-dark">0</b>권 · 시중교재 <b className="text-pine-dark">{marketN}</b>권
+            · 교과서 <b className="text-pine-dark">{textN}</b>권 · 총 <b className="text-pine-dark">{sel.size}</b>권
+          </span>
+          <button onClick={() => onApply(sel)}
+            className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
+            적용하기
+          </button>
+        </div>
       </div>
     </div>
   )

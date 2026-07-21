@@ -13,7 +13,7 @@ import {
 } from './common'
 
 const DAY_LABEL = ['일', '월', '화', '수', '목', '금', '토']
-const PANEL_TABS = ['전체', '숙제', '학습지', '교재'] as const
+const PANEL_TABS = ['전체', '숙제', '학습지', '교재', '경시대회'] as const
 type PanelTab = typeof PANEL_TABS[number]
 
 // 유형 등급 — 매쓰플랫 성취도 7단계 컬러 체계(lib/achievement.ts)의 등급 인덱스 (0=화이트 … 6=스마일)
@@ -114,7 +114,7 @@ export default function StudentHome() {
   // ── 우측 배정물 패널 카드 ──
   interface PanelCard {
     key: string; icon: string; label: string; st: StudentWsStatus; title: string
-    sub?: string; score?: number; date: string; solveId?: string; homework?: boolean
+    sub?: string; score?: number; date: string; solveId?: string; homework?: boolean; contest?: boolean
   }
   const panelCards = useMemo<PanelCard[]>(() => {
     const cards: PanelCard[] = []
@@ -126,6 +126,7 @@ export default function StudentHome() {
         key: `ws-${ws.id}`, icon: '📄', label: `학습지・${ws.grade}`, st, title: ws.title,
         sub: `${ws.problemIds.length}문제`, score: done ? summaryOf(ws, g!).score : undefined,
         date, solveId: done ? undefined : ws.id, homework: kinds.includes('숙제'),
+        contest: ws.tags.includes('경시대회') || ws.tags.includes('KMM'),
       })
     }
     for (const wb of workbooks.filter(w => w.studentId === me.id)) {
@@ -151,6 +152,7 @@ export default function StudentHome() {
     if (panelTab === '숙제') return panelCards.filter(c => c.homework)
     if (panelTab === '학습지') return panelCards.filter(c => c.icon === '📄')
     if (panelTab === '교재') return panelCards.filter(c => c.icon === '📖')
+    if (panelTab === '경시대회') return panelCards.filter(c => c.contest)
     return panelCards
   }, [panelCards, panelTab])
 
@@ -299,9 +301,11 @@ export default function StudentHome() {
               <div className="rounded-xl border border-dashed border-line py-10 text-center text-sm text-ink2">
                 {panelTab === '숙제'
                   ? <>출제된 숙제가 없어요.<br />선생님에게 요청해주세요.</>
-                  : panelTab === '교재'
-                    ? '배정된 교재가 없어요.'
-                    : '출제된 학습지가 없어요.'}
+                  : panelTab === '경시대회'
+                    ? <>출제된 시험지가 없어요.<br />선생님에게 요청해주세요.</>
+                    : panelTab === '교재'
+                      ? '배정된 교재가 없어요.'
+                      : '출제된 학습지가 없어요.'}
               </div>
             ) : shownCards.map(c => (
               <div key={c.key} className="rounded-xl border border-line/70 p-3">
