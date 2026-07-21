@@ -199,6 +199,14 @@ export interface Student {
   authEmail?: string     // 학생앱 Supabase 계정 이메일 (계정 생성 스크립트가 기록)
   siblingIds?: string[]  // 형제 연결 — 학부모 연락처를 공유하는 형제 학생 id (상호 기록)
   mgmtId?: string        // 학원관리앱(전과목) 학생 id — 명부 공유로 연결됨. 있으면 관리앱에서 가져온 학생
+  // 학습 배경 — 입학 상담·진단 리포트가 인용한다
+  recentExams?: { name: string; subject: string; score: string }[]  // 최근 학교시험 (예: 1학기 중간·수학·82)
+  prevEdu?: string       // 이전 학원·과외 이력
+  progressNow?: string   // 현행·선행 진도 (예: 학교는 중2-2, 공통수학1 선행 중)
+  goal?: string          // 학습 목표 (내신/수능/특목 등)
+  traits?: string[]      // 학습 성향 태그 (실수 잦음·개념 부족 등)
+  weeklyHours?: string   // 주당 자기공부 시간
+  parentConcern?: string // 학부모 관심·우려 포인트
 }
 
 export interface GradeResult {

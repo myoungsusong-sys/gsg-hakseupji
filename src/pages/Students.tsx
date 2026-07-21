@@ -332,6 +332,8 @@ function StudentsTab() {
 
 // ── 학생 폼 공통 (개별 등록 · 상세 정보) ─────────────
 
+type ExamRow = { name: string; subject: string; score: string }
+
 interface FormState {
   name: string
   sk: School
@@ -350,6 +352,13 @@ interface FormState {
   classDays: string[]
   arriveTime: string
   leaveTime: string
+  recentExams: ExamRow[]
+  prevEdu: string
+  progressNow: string
+  goal: string
+  traits: string[]
+  weeklyHours: string
+  parentConcern: string
 }
 
 function emptyForm(): FormState {
@@ -358,6 +367,7 @@ function emptyForm(): FormState {
     studentPhone: '', parentPhone: '', school: '', startDate: '', birth: '',
     email: '', address: '', homePhone: '', memo: '', klass: '',
     classDays: [], arriveTime: '', leaveTime: '',
+    recentExams: [], prevEdu: '', progressNow: '', goal: '', traits: [], weeklyHours: '', parentConcern: '',
   }
 }
 
@@ -370,6 +380,8 @@ function formFromStudent(s: Student): FormState {
     email: s.email ?? '', address: s.address ?? '', homePhone: s.homePhone ?? '',
     memo: s.memo ?? '', klass: s.klass ?? '',
     classDays: s.classDays ?? [], arriveTime: s.arriveTime ?? '', leaveTime: s.leaveTime ?? '',
+    recentExams: s.recentExams ?? [], prevEdu: s.prevEdu ?? '', progressNow: s.progressNow ?? '',
+    goal: s.goal ?? '', traits: s.traits ?? [], weeklyHours: s.weeklyHours ?? '', parentConcern: s.parentConcern ?? '',
   }
 }
 
@@ -400,6 +412,18 @@ function formPayload(f: FormState): Omit<Student, 'id' | 'active'> {
     classDays: f.classDays.length ? f.classDays : undefined,
     arriveTime: t(f.arriveTime),
     leaveTime: t(f.leaveTime),
+    recentExams: (() => {
+      const rows = f.recentExams
+        .map(r => ({ name: r.name.trim(), subject: r.subject.trim(), score: r.score.trim() }))
+        .filter(r => r.name || r.subject || r.score)
+      return rows.length ? rows : undefined
+    })(),
+    prevEdu: t(f.prevEdu),
+    progressNow: t(f.progressNow),
+    goal: t(f.goal),
+    traits: f.traits.length ? f.traits : undefined,
+    weeklyHours: t(f.weeklyHours),
+    parentConcern: t(f.parentConcern),
   }
 }
 
@@ -539,8 +563,92 @@ function StudentFields({ f, set, onRegenAttendNo }: {
         <input value={f.klass} onChange={e => set({ klass: e.target.value })}
           placeholder="반 이름을 입력해주세요." className={INPUT} />
       </Field>
+
+      <p className="mt-2 border-b border-line pb-1.5 text-sm font-black">
+        학습 배경 <span className="text-xs font-semibold text-ink2">— 입학 상담·진단 리포트에 자동 인용됩니다</span>
+      </p>
+      <label className="grid grid-cols-[8.5rem_1fr] items-start gap-2 text-sm">
+        <span className="pt-2 font-bold">최근 학교시험</span>
+        <div className="flex flex-col gap-1.5">
+          {f.recentExams.map((r, i) => (
+            <div key={i} className="flex items-center gap-1.5">
+              <input value={r.name} onChange={e => setExamRow(f, set, i, { name: e.target.value })}
+                placeholder="1학기 중간" className="w-0 flex-1 rounded-lg border border-line px-2 py-2 text-sm" />
+              <input value={r.subject} onChange={e => setExamRow(f, set, i, { subject: e.target.value })}
+                placeholder="과목" className="w-16 shrink-0 rounded-lg border border-line px-2 py-2 text-sm" />
+              <input value={r.score} onChange={e => setExamRow(f, set, i, { score: e.target.value })}
+                placeholder="점수" className="w-16 shrink-0 rounded-lg border border-line px-2 py-2 text-sm" />
+              <button type="button" onClick={() => set({ recentExams: f.recentExams.filter((_, j) => j !== i) })}
+                className="shrink-0 text-ink2 hover:text-ink" aria-label="시험 삭제">✕</button>
+            </div>
+          ))}
+          <button type="button"
+            onClick={() => set({ recentExams: [...f.recentExams, { name: '', subject: '', score: '' }] })}
+            className="self-start rounded-md border border-line px-2.5 py-1 text-xs font-semibold text-ink2 hover:border-pine">
+            ＋ 시험 추가
+          </button>
+        </div>
+      </label>
+      <Field label="이전 학원·과외">
+        <input value={f.prevEdu} onChange={e => set({ prevEdu: e.target.value })}
+          placeholder="예: OO학원 1년 → 3개월 공백, 과외 6개월" className={INPUT} />
+      </Field>
+      <Field label="현행·선행 진도">
+        <input value={f.progressNow} onChange={e => set({ progressNow: e.target.value })}
+          placeholder="예: 학교는 중2-2 진행, 공통수학1 선행 중" className={INPUT} />
+      </Field>
+      <label className="grid grid-cols-[8.5rem_1fr] items-start gap-2 text-sm">
+        <span className="pt-2 font-bold">학습 목표</span>
+        <div className="flex flex-col gap-1.5">
+          <input value={f.goal} onChange={e => set({ goal: e.target.value })}
+            placeholder="직접 입력 또는 아래에서 선택" className={INPUT} />
+          <div className="flex flex-wrap gap-1">
+            {GOAL_PRESETS.map(g => (
+              <button key={g} type="button" onClick={() => set({ goal: g })}
+                className={`rounded-md border px-2 py-1 text-xs font-semibold ${f.goal === g ? 'border-pine bg-pine text-paper' : 'border-line text-ink2 hover:border-pine'}`}>
+                {g}
+              </button>
+            ))}
+          </div>
+        </div>
+      </label>
+      <label className="grid grid-cols-[8.5rem_1fr] items-start gap-2 text-sm">
+        <span className="pt-2 font-bold">학습 성향</span>
+        <div className="flex flex-wrap gap-1">
+          {TRAIT_TAGS.map(tag => {
+            const on = f.traits.includes(tag)
+            return (
+              <button key={tag} type="button"
+                onClick={() => set({ traits: on ? f.traits.filter(x => x !== tag) : [...f.traits, tag] })}
+                className={`rounded-md border px-2 py-1 text-xs font-semibold ${on ? 'border-pine bg-pine text-paper' : 'border-line text-ink2 hover:border-pine'}`}>
+                {tag}
+              </button>
+            )
+          })}
+        </div>
+      </label>
+      <Field label="주당 자기공부 시간">
+        <input value={f.weeklyHours} onChange={e => set({ weeklyHours: e.target.value })}
+          placeholder="예: 학원 외 주 5시간" className={INPUT} />
+      </Field>
+      <label className="grid grid-cols-[8.5rem_1fr] items-start gap-2 text-sm">
+        <span className="pt-2 font-bold">학부모 관심 포인트</span>
+        <textarea value={f.parentConcern} onChange={e => set({ parentConcern: e.target.value })} rows={2}
+          placeholder={'상담 때 학부모가 걱정·요청한 내용\n예시) 연산 실수 반복이 걱정, 숙제 관리 요청'}
+          className={INPUT} />
+      </label>
     </div>
   )
+}
+
+const GOAL_PRESETS = ['내신 대비', '수능 대비', '선행 학습', '기초 보강', '특목·자사고 대비']
+const TRAIT_TAGS = [
+  '실수가 잦음', '개념 이해 부족', '풀이 속도 느림', '서술형 약함', '기초 연산 부족',
+  '응용·심화 약함', '집중력 짧음', '숙제 미이행 잦음', '시험 불안', '성실·꾸준함',
+]
+
+function setExamRow(f: FormState, set: (p: Partial<FormState>) => void, i: number, patch: Partial<ExamRow>) {
+  set({ recentExams: f.recentExams.map((r, j) => (j === i ? { ...r, ...patch } : r)) })
 }
 
 // ── 학생 개별 등록 모달 ────────────────────────────
