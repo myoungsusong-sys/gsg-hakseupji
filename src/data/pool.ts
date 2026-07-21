@@ -84,10 +84,13 @@ export function loadPool(course: string): Promise<Problem[]> {
       .then(r => { if (!r.ok) throw new Error('pool ' + course + ' ' + r.status); return r.json() })
       .then((d: Record<string, Raw | WanjaRaw>) => {
         const host = SCI_POOL_COURSES.includes(course) ? 'scienceflat-contents.scienceflat.com' : 'freewheelin-contents.mathflat.com'
-        const arr = isWanja
-          ? Object.entries(d).map(([k, r]) => toWanjaProblem(k, r as WanjaRaw))
-          // 키 정규화: 'mf' 접두 통일 (기존 학습지 problemIds가 mf<pid> 형식)
-          : Object.entries(d).map(([k, r]) => toProblem(k.startsWith('mf') ? k : 'mf' + k, r as Raw, host))
+        // 한 과정에 두 포맷이 섞일 수 있다(예: 중1-1 = 사이언스플랫 + 오투 편입분).
+        // 판별: WanjaRaw[0]은 이미지 상대경로(문자열), Raw[0]은 매쓰플랫 pid(숫자).
+        const arr = Object.entries(d).map(([k, r]) =>
+          typeof r[0] === 'string'
+            ? toWanjaProblem(k, r as WanjaRaw)
+            // 키 정규화: 'mf' 접두 통일 (기존 학습지 problemIds가 mf<pid> 형식)
+            : toProblem(k.startsWith('mf') ? k : 'mf' + k, r as Raw, host))
         cache.set(course, arr)
         return arr
       })
