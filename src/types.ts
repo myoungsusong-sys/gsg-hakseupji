@@ -268,6 +268,7 @@ export interface GradeResult {
   studentAnswer?: string
   correct: boolean
   unknown?: boolean      // '모름' — 집계는 오답과 동일, 표시만 구분
+  sec?: number           // 풀이 시간(초) — 그 문항을 화면에 띄운 시각부터 답 입력까지 누적(학생앱만)
   // ── AI 1차 채점 + 선생님 승인 (자동채점 불가 문항: 서술형·이미지정답·답없음 과학) ──
   workImg?: string       // 학생 풀이 이미지 (축소 JPEG dataURL — 문제이미지+필기 합성 or 사진)
   pending?: 'ai' | 'teacher'   // 'ai'=AI 판정 대기 · 'teacher'=선생님 승인 대기 · 없으면 확정

@@ -150,6 +150,20 @@ export default function StudentResult() {
               <span className="font-semibold text-clay">틀린 문제 {sum.wrong}</span>
               <span className="text-ink2">|</span>
               <span className="font-semibold text-pine-dark">맞은 문제 {sum.correct}</span>
+              {(() => {
+                // ⏱ 문항별 풀이 시간 합계 — 기록이 있는 문항이 하나라도 있을 때만
+                const tot = g.results.reduce((a, r) => a + (r.sec ?? 0), 0)
+                const n = g.results.filter(r => r.sec).length
+                if (!tot) return null
+                const mm = String(Math.floor(tot / 60)).padStart(2, '0'), ss = String(tot % 60).padStart(2, '0')
+                const avg = Math.round(tot / n)
+                return (
+                  <span className="rounded-lg bg-paper2 px-3 py-1.5 text-xs font-bold text-ink2"
+                    title={`문항별 풀이 시간의 합 (기록된 ${n}문항)`}>
+                    ⏱ 총 풀이 {mm}:{ss} · 문제당 평균 {String(Math.floor(avg / 60)).padStart(2, '0')}:{String(avg % 60).padStart(2, '0')}
+                  </span>
+                )
+              })()}
               {g.results.some(r => r.pending) && (
                 <span className="rounded-lg bg-violet-50 px-3 py-1.5 text-xs font-bold text-violet-700"
                   title="서술형 등 자동채점이 어려운 문항은 AI가 1차 채점하고 선생님이 확인 후 확정돼요">
@@ -193,6 +207,12 @@ export default function StudentResult() {
                       {r.pending === 'ai' ? 'AI 채점 중' : `가채점 ${r.correct ? '○' : '✕'} · 확인 중`}
                     </span>}
                     {p && <span className="ml-1 truncate text-[11px] text-ink2">{typeName(p.typeId)}</span>}
+                    {!!r?.sec && (
+                      <span title="이 문제를 푸는 데 걸린 시간"
+                        className="ml-auto shrink-0 rounded-full bg-white/70 px-1.5 py-0.5 text-[10px] font-bold tabular-nums text-ink2">
+                        ⏱ {String(Math.floor(r.sec / 60)).padStart(2, '0')}:{String(r.sec % 60).padStart(2, '0')}
+                      </span>
+                    )}
                   </div>
                   <div className="grid gap-2.5 p-4">
                     {withBody && p && (

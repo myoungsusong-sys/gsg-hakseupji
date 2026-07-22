@@ -69,12 +69,31 @@ export default function StudentSolve() {
   const [inks, setInks] = useState<Record<string, Stroke[]>>({})
   const [redos, setRedos] = useState<Record<string, Stroke[]>>({})
 
+  // ── ⏱ 문항별 풀이 초시계 ─────────────────────────────────────────
+  // 그 문항이 화면에 떠 있고 **아직 답을 입력하지 않은 동안**만 카운트한다.
+  // 답을 넣으면 멈추고(그 값이 '푸는 데 걸린 시간'), 답을 지우면 이어서 다시 간다.
+  // 탭을 벗어나 있는 동안은 세지 않는다(딴짓 시간이 섞이지 않게).
+  const [secs, setSecs] = useState<Record<string, number>>({})   // 문항 id → 누적 초
+  const [, setTick] = useState(0)                                // 1초마다 리렌더(값 자체는 미사용)
+  const runStart = useRef<number | null>(null)                   // 현재 구간 시작(ms)
+  const runPid = useRef<string | null>(null)
+
   useEffect(() => {
     const d = wsId ? readDraft(wsId) : null
     setAnswers(d?.answers ?? {})
     setSavedAt(d?.at ?? null)
-    setIdx(0); setInks({}); setRedos({})
+    setIdx(0); setInks({}); setRedos({}); setSecs({})
+    runStart.current = null; runPid.current = null
   }, [wsId])
+
+  // 진행 중 구간을 secs에 확정(문항 이동·답 입력·화면 이탈 시 호출)
+  function flushRun() {
+    const pid = runPid.current, st = runStart.current
+    runStart.current = null; runPid.current = null
+    if (!pid || st == null) return
+    const add = Math.round((Date.now() - st) / 1000)
+    if (add > 0) setSecs(prev => ({ ...prev, [pid]: (prev[pid] ?? 0) + add }))
+  }
 
   // 선생님 실시간 첨삭 수신 — 4초마다 확인 (우리만의 기능)
   const [note, setNote] = useState<TeacherNote | null>(null)
@@ -87,11 +106,42 @@ export default function StudentSolve() {
   }, [me.id])
   function ackNote() { clearNote(me.id); setNote(null) }
 
+  // 현재 문항·답 여부에 따라 초시계 시작/정지 + 1초 갱신
+  const curPid = list[idx]?.id
+  const curAnswered = !!(curPid && (answers[curPid] ?? '').trim())
+  useEffect(() => {
+    // 대상이 바뀌었거나 답이 채워졌으면 진행 구간을 확정
+    if (runPid.current && (runPid.current !== curPid || curAnswered)) flushRun()
+    // ⚠️ 시작 조건에 document.hidden을 넣지 않는다 — 태블릿 웹뷰·키오스크·미리보기처럼
+    //    항상 hidden으로 보고되는 환경에서 초시계가 아예 안 도는 사고가 난다.
+    //    대신 visibilitychange로 '벗어날 때만' 멈추고 돌아오면 이어서 센다.
+    const shouldRun = !!curPid && !curAnswered
+    if (shouldRun && runStart.current == null) { runStart.current = Date.now(); runPid.current = curPid! }
+    if (!shouldRun) return
+    const t = setInterval(() => setTick(n => n + 1), 1000)
+    const onVis = () => { if (document.hidden) flushRun(); else if (runStart.current == null) { runStart.current = Date.now(); runPid.current = curPid! } }
+    document.addEventListener('visibilitychange', onVis)
+    return () => { clearInterval(t); document.removeEventListener('visibilitychange', onVis) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [curPid, curAnswered])
+
+  // 화면을 벗어날 때 마지막 구간 확정
+  useEffect(() => () => { flushRun() }, [])
+
   if (!ws || !mine) return <Navigate to="/student/worksheets" replace />
 
   const p = list[idx]
 
+  // 표시용 경과 초 = 확정분 + 진행 중 구간
+  function elapsed(pid: string): number {
+    const base = secs[pid] ?? 0
+    if (runPid.current === pid && runStart.current != null) return base + Math.floor((Date.now() - runStart.current) / 1000)
+    return base
+  }
+  const fmtMS = (s: number) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
+
   function setAnswer(pid: string, v: string) {
+    if (v.trim()) flushRun()          // 답을 넣는 순간 초시계 정지
     setAnswers(prev => {
       const next = { ...prev, [pid]: v }
       setSavedAt(writeDraft(ws!.id, next))
@@ -172,13 +222,14 @@ export default function StudentSolve() {
     const results: GradeResult[] = answered.map(q => {
       const a = answers[q.id].trim()
       const dk = a === DONT_KNOW
-      if (dk) return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, unknown: true }
+      const sec = secs[q.id] || undefined          // ⏱ 그 문항 풀이 시간(초)
+      if (dk) return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, unknown: true, sec }
       // 자동채점 불가(서술형·이미지정답·답없음 과학) + AI 채점 ON → AI 1차 채점 대상
       if (aiOn && !isMachineGradable(q)) {
         aiTargets.push(q)
-        return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, pending: 'ai' as const }
+        return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, pending: 'ai' as const, sec }
       }
-      return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: autoCorrect(q, a) }
+      return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: autoCorrect(q, a), sec }
     })
     const rec: Grading = {
       id: uid('gr'), studentId: me.id, source: '학습지', worksheetId: ws!.id,
@@ -264,6 +315,15 @@ export default function StudentSolve() {
               <button onClick={() => setIdx(i => Math.min(list.length - 1, i + 1))} disabled={isLast}
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-lg text-ink2 hover:bg-paper2 disabled:opacity-30">→</button>
             </div>
+            {/* ⏱ 이 문제 풀이 초시계 — 답을 넣으면 멈춘다 */}
+            {p && (
+              <span title={curAnswered ? '답을 입력해서 멈췄어요' : '이 문제를 푸는 중이에요'}
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-black tabular-nums ${
+                  curAnswered ? 'bg-pine-soft text-pine-dark' : 'bg-amber-soft text-amber'}`}>
+                {curAnswered ? '✓' : '⏱'} {fmtMS(elapsed(p.id))}
+                <span className="text-[10px] font-semibold opacity-70">{curAnswered ? '걸림' : '풀이 중'}</span>
+              </span>
+            )}
             <label className="flex cursor-pointer items-center gap-2 text-sm font-semibold text-ink2">
               문제 풀이 현황
               <button onClick={() => setStatusOn(v => !v)} role="switch" aria-checked={statusOn}
@@ -283,13 +343,16 @@ export default function StudentSolve() {
             <div className="mb-4 flex flex-wrap gap-1.5 rounded-2xl border border-line bg-white p-3.5">
               {list.map((q, i) => {
                 const a = (answers[q.id] ?? '').trim()
+                const t = elapsed(q.id)
                 return (
                   <button key={q.id} onClick={() => setIdx(i)}
-                    className={`h-9 w-9 rounded-full border text-sm font-bold transition ${
+                    title={t ? `풀이 ${fmtMS(t)}` : '아직 풀지 않았어요'}
+                    className={`flex flex-col items-center rounded-xl border px-2 py-1 transition ${
                       i === idx ? 'border-pine ring-2 ring-pine/30' : 'border-line'} ${
                       a === DONT_KNOW ? 'bg-amber-soft text-amber'
                         : a ? 'bg-pine text-paper' : 'bg-white text-ink2 hover:bg-paper2'}`}>
-                    {i + 1}
+                    <span className="text-sm font-bold leading-5">{i + 1}</span>
+                    <span className="text-[9px] font-semibold tabular-nums opacity-80">{t ? fmtMS(t) : '—'}</span>
                   </button>
                 )
               })}
