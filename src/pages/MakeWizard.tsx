@@ -5,7 +5,7 @@ import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
 import { useStore, uid } from '../lib/store'
 import { getSubject, useSubject, SUBJECTS } from '../lib/subject'
-import { brandFor, myAuthorSet } from '../lib/brand'
+import { brandFor, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
 import MathText, { isImageUrl } from '../components/MathText'
 import ProblemContent from '../components/ProblemContent'
 import { ProblemBlock, SheetHeader } from './WorksheetView'
@@ -101,7 +101,7 @@ export default function MakeWizard() {
     problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments,
     customProblems, sheetTemplates, addSheetTemplate, removeSheetTemplate, academyProfile,
   } = store
-  const academyName = academyProfile.academyName?.trim() || '깊은생각수학'
+  const academyName = academyProfile.academyName?.trim() || DEFAULT_ACADEMY
   const nav = useNavigate()
   const [params] = useSearchParams()
   const editId = params.get('edit')

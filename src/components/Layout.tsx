@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { SUBJECTS, useSubject } from '../lib/subject'
-import { brandFor } from '../lib/brand'
+import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
 
@@ -105,7 +105,7 @@ export default function Layout() {
     return () => clearTimeout(t)
   }, [toast])
 
-  const academyName = brandFor(academyProfile.academyName?.trim() || '깊은생각수학', subject)
+  const academyName = brandFor(academyProfile.academyName?.trim() || DEFAULT_ACADEMY, subject)
 
   // [맨 위로] 플로팅 버튼 — 스크롤이 내려가면 표시 (매쓰플랫 동일)
   const [showTop, setShowTop] = useState(false)

@@ -127,7 +127,7 @@ export default function MyPage() {
               <div>
                 <div className={label}>교육기관 명</div>
                 <input value={academyName} onChange={e => setAcademyName(e.target.value)}
-                  placeholder="깊은생각수학" className={INPUT} />
+                  placeholder="대치스파르타 프리미엄" className={INPUT} />
                 <p className="mt-1 text-xs text-ink2">헤더의 계정 버튼과 학생 안내에 보여지는 교육기관 이름입니다.</p>
               </div>
               <div>

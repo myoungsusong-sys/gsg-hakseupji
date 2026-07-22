@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, subjectOfType } from '../data/curriculum'
 import { useSubject } from '../lib/subject'
-import { useBrand, myAuthorSet } from '../lib/brand'
+import { useBrand, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
 import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
 import type { Assignment, Student, Worksheet } from '../types'
@@ -53,7 +53,7 @@ export default function WorksheetList({ view }: { view: View }) {
   } = store
   const [subject] = useSubject()
   const brand = useBrand()
-  const mineSet = useMemo(() => myAuthorSet(academyProfile.academyName?.trim() || '깊은생각수학'), [academyProfile.academyName])
+  const mineSet = useMemo(() => myAuthorSet(academyProfile.academyName?.trim() || DEFAULT_ACADEMY), [academyProfile.academyName])
   const [q, setQ] = useState('')
   const [tagFilter, setTagFilter] = useState<string>('all')
   const [gradeFilter, setGradeFilter] = useState<'all' | GradeGroup>('all')
