@@ -389,8 +389,11 @@ export default function MakeWizard() {
   // 학년 선택값 (기본 = 현재 과정 / 수정 모드는 기존 학년)
   const gradeValue = wsGrade || (editing ? editing.grade : cur.grade)
 
-  function save() {
+  function save(printAfter = false) {
     if (!title.trim()) { alert('학습지명을 입력해주세요.'); return }
+    // 저장 후 바로 인쇄: 학습지 화면(WorksheetView)에서 조판 완료 후 문제지를 자동 인쇄한다
+    // (미리보기 화면에서 브라우저 인쇄를 누르면 축소 미리보기가 인쇄돼 빈 페이지가 나오는 문제 방지)
+    const suffix = printAfter ? '?out=문제지' : ''
     const payload = {
       title: title.trim(),
       // 우리 학원 브랜드 출제자면 이 학습지 과목에 맞춰 표기(깊은생각수학/과학), 커스텀 출제자는 그대로
@@ -407,11 +410,11 @@ export default function MakeWizard() {
     }
     if (editing) {
       updateWorksheet(editing.id, payload)
-      nav(`/worksheet/${editing.id}`)
+      nav(`/worksheet/${editing.id}${suffix}`)
     } else {
       const id = uid('ws')
       saveWorksheet({ ...payload, id, listIds: [], createdAt: new Date().toISOString(), deletedAt: null })
-      nav(`/worksheet/${id}`)
+      nav(`/worksheet/${id}${suffix}`)
     }
   }
 
@@ -1385,7 +1388,7 @@ export default function MakeWizard() {
           <div className="h-fit rounded-2xl border border-line bg-white p-6">
             <div className="mb-3 text-sm">
               <span className="font-bold text-ink">학습지 미리보기</span>
-              <span className="text-ink2"> — 미리보기 화면은 실제 학습지와 약간의 차이가 있습니다.</span>
+              <span className="text-ink2"> — 이 화면은 축소 미리보기예요. 인쇄는 아래 <b className="text-amber">🖨 저장하고 인쇄</b>를 눌러주세요(브라우저 인쇄 Ctrl+P로는 빈 페이지가 나옵니다).</span>
             </div>
             <div className="relative aspect-[210/297] overflow-hidden rounded-md border border-line bg-white shadow-md">
               <div className="w-[182%] origin-top-left scale-[0.55] px-[11mm] py-[12mm]">
@@ -1472,10 +1475,17 @@ export default function MakeWizard() {
               </button>
             )}
             {step === 3 && (
-              <button onClick={save}
-                className="rounded-lg bg-amber px-6 py-2.5 text-sm font-bold text-white hover:brightness-105">
-                {editing ? '수정 저장하기' : '학습지 만들기'}
-              </button>
+              <>
+                <button onClick={() => save(false)}
+                  className="rounded-lg border border-amber px-5 py-2.5 text-sm font-bold text-amber hover:bg-amber-soft/40">
+                  {editing ? '수정 저장하기' : '학습지 만들기'}
+                </button>
+                <button onClick={() => save(true)}
+                  title="저장한 뒤 학습지 화면에서 문제지를 바로 인쇄합니다"
+                  className="rounded-lg bg-amber px-6 py-2.5 text-sm font-bold text-white hover:brightness-105">
+                  🖨 저장하고 인쇄
+                </button>
+              </>
             )}
           </div>
         </div>
