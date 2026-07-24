@@ -62,6 +62,14 @@ export default function StudentHeaderExtras({ me, preview = false, onLogout }: {
       <button onClick={() => setOpen('my')} className="text-sm font-bold hover:text-pine" title="마이페이지">
         👤 {me.name}<span className="ml-1 font-normal text-ink2">학생</span>
       </button>
+      {onLogout && (
+        <button
+          onClick={() => { if (!preview && confirm(`${me.name} 학생, 로그아웃할까요?`)) onLogout() }}
+          disabled={preview} title={preview ? PREVIEW_LOCK_TITLE : '로그아웃'}
+          className="rounded-lg border border-line px-2.5 py-1.5 text-sm font-semibold text-clay hover:bg-red-50 disabled:opacity-40">
+          🔒 <span className="hidden lg:inline">로그아웃</span>
+        </button>
+      )}
 
       {open === 'feedback' && <FeedbackModal me={me} preview={preview} onClose={() => setOpen(null)} />}
       {open === 'notif' && <NotifModal notifs={notifs} onClose={() => setOpen(null)} />}
