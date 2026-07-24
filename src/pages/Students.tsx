@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
 import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '../types'
 import { studentEmailOf, teacherEmailOf } from '../lib/role'
-import { SUPABASE_ON, supabase } from '../lib/supabase'
+import { SUPABASE_ON, supabase, signUpStudentClient } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
 import { BLOOD_TYPES, MBTI_TYPES } from '../lib/persona'
 
@@ -773,7 +773,24 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
         body: JSON.stringify({ action, loginId: acctId, password: `gsg${acctId}`, name: live.name }),
       })
       const j = await r.json().catch(() => ({}))
-      if (!r.ok) { setAcctMsg({ ok: false, text: j.error || '처리하지 못했어요. 잠시 후 다시 시도해주세요.' }); setAcctBusy(false); return }
+      if (!r.ok) {
+        // 서버(service_role) 발급 실패 → 계정 '생성'은 클라이언트 signUp으로 폴백.
+        // (Vercel의 SUPABASE_SERVICE_ROLE_KEY가 잘못됐을 때도 학원 운영이 막히지 않게.)
+        // ⚠️ 이 폴백은 Supabase Auth의 "Confirm email"이 꺼져 있어야 즉시 로그인됨.
+        //    비밀번호 초기화(reset)는 관리자 권한이 필요해 폴백 불가 → 서버 키를 고쳐야 함.
+        if (action === 'create') {
+          const done = await signUpStudentClient(studentEmailOf(acctId), `gsg${acctId}`)
+          if (done.ok) {
+            updateStudent(live.id, { authEmail: studentEmailOf(acctId) })
+            setAcctMsg({ ok: true, text: done.needConfirm
+              ? `계정은 만들었지만 이메일 확인이 켜져 있어요 — Supabase에서 "Confirm email"을 끄면 바로 로그인됩니다. (아이디 ${acctId} / 비번 gsg${acctId})`
+              : `계정을 만들었어요 — 아이디 ${acctId} / 비밀번호 gsg${acctId}` })
+            setAcctBusy(false); return
+          }
+          setAcctMsg({ ok: false, text: done.text }); setAcctBusy(false); return
+        }
+        setAcctMsg({ ok: false, text: j.error || '처리하지 못했어요. 잠시 후 다시 시도해주세요.' }); setAcctBusy(false); return
+      }
       if (action === 'create' || !live.authEmail) updateStudent(live.id, { authEmail: j.email })
       setAcctMsg({
         ok: true,
