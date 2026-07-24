@@ -26,11 +26,29 @@ function wbGradable(item: WBItem): boolean {
   if (wbAnswerImg(a)) return false   // 이미지 정답 = 자동대조하려면 정답을 보여줘야 함 → 선생님 채점
   return true
 }
-// 학생 답 ↔ 정답 대조 (normAnswer 정규화: 공백·원문자·전각·OX 통일)
+// 채점 대조용 정규화 — normAnswer(공백·원문자·전각·OX) + LaTeX·단위·도(°) 제거로 관대하게
+function coreNorm(s: string): string {
+  let t = normAnswer(s ?? '').toLowerCase()
+  t = t.replace(/\\[;,! ]|~/g, '')                 // LaTeX 간격(\; \, \! \ )
+  t = t.replace(/\\circ/g, '').replace(/[°˚]/g, '') // 도 기호
+  t = t.replace(/\\left|\\right|\\/g, '')           // 남은 LaTeX 명령 백슬래시
+  t = t.replace(/[{}^$]/g, '')                       // 괄호·지수·$
+  t = t.replace(/cm|도/g, '')                        // 흔한 단위(cm, 도)
+  return t
+}
+const wbTokens = (s: string) => coreNorm(s).split(',').map(x => x.trim()).filter(Boolean).sort()
+const stripVar = (tok: string) => tok.replace(/^[a-z가-힣]+=/, '')
+
+// 학생 답 ↔ 정답 대조 — 다중값(쉼표)·변수라벨 생략·단위/도/LaTeX 차이에 관대
 function autoCorrectWB(item: WBItem, ans: string): boolean {
-  const a = normAnswer((item.answer ?? '').trim())
-  const s = normAnswer(ans)
-  return s !== '' && s === a
+  const c = coreNorm(item.answer ?? ''), s = coreNorm(ans)
+  if (s === '') return false
+  if (c === s) return true
+  const ct = wbTokens(item.answer ?? ''), st = wbTokens(ans)
+  if (ct.length > 0 && ct.length === st.length && ct.every((x, i) => x === st[i])) return true
+  // 변수 라벨(x=, y=) 생략 허용 — 값 다중집합 비교
+  const cv = ct.map(stripVar).sort(), sv = st.map(stripVar).sort()
+  return cv.length > 0 && cv.length === sv.length && cv.every((x, i) => x === sv[i])
 }
 type WbInputKind = '객관식' | 'OX' | '주관식'
 function wbInputKind(item: WBItem): WbInputKind {
@@ -54,16 +72,26 @@ function WbAnswerInput({ item, value, onChange }: {
     </button>
   )
   if (kind === '객관식') {
+    // 복수정답("정답 N개") 지원 — 여러 개 선택 가능. 값은 선택한 원문자를 번호순 쉼표 연결.
+    const sel = value && value !== '모름' ? value.split(',') : []
+    const toggle = (c: string) => {
+      const next = sel.includes(c) ? sel.filter(x => x !== c) : [...sel, c]
+      next.sort((a, b) => CIRCLE5.indexOf(a) - CIRCLE5.indexOf(b))
+      onChange(next.join(','))
+    }
     return (
-      <div className="flex flex-wrap gap-1.5">
-        {CIRCLE5.map(c => (
-          <button key={c} type="button" onClick={() => onChange(value === c ? '' : c)}
-            className={`h-9 w-9 rounded-full border text-base font-bold ${
-              value === c ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
-            {c}
-          </button>
-        ))}
-        {unknownBtn}
+      <div className="grid gap-1">
+        <div className="flex flex-wrap gap-1.5">
+          {CIRCLE5.map(c => (
+            <button key={c} type="button" onClick={() => toggle(c)}
+              className={`h-9 w-9 rounded-full border text-base font-bold ${
+                sel.includes(c) ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
+              {c}
+            </button>
+          ))}
+          {unknownBtn}
+        </div>
+        <span className="text-[10px] text-ink2/70">정답이 여러 개면 해당 번호를 모두 눌러요</span>
       </div>
     )
   }
@@ -83,11 +111,14 @@ function WbAnswerInput({ item, value, onChange }: {
     )
   }
   return (
-    <div className="flex flex-wrap items-center gap-1.5">
-      <input value={value === '모름' ? '' : value} onChange={e => onChange(e.target.value)}
-        placeholder="답 입력"
-        className="w-40 rounded-lg border border-line px-3 py-2 text-sm" />
-      {unknownBtn}
+    <div className="grid gap-1">
+      <div className="flex flex-wrap items-center gap-1.5">
+        <input value={value === '모름' ? '' : value} onChange={e => onChange(e.target.value)}
+          placeholder="답 입력"
+          className="w-40 rounded-lg border border-line px-3 py-2 text-sm" />
+        {unknownBtn}
+      </div>
+      <span className="text-[10px] text-ink2/70">여러 값은 쉼표로 (예: x=3, y=5) · 단위·°·$는 생략 가능</span>
     </div>
   )
 }
