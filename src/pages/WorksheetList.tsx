@@ -73,6 +73,7 @@ export default function WorksheetList({ view }: { view: View }) {
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [assignTarget, setAssignTarget] = useState<string[] | null>(null)
   const [outDialog, setOutDialog] = useState<'download' | 'print' | null>(null)
+  const [outSingleId, setOutSingleId] = useState<string | null>(null)   // 행별 다운로드: 그 학습지 1개만
   const [bulkListOpen, setBulkListOpen] = useState(false)   // 일괄 「리스트에 담기」
   const nav = useNavigate()
 
@@ -505,6 +506,7 @@ export default function WorksheetList({ view }: { view: View }) {
                     <th className="whitespace-nowrap px-3 py-3">생성일</th>
                     <th className="whitespace-nowrap px-3 py-3">출제자</th>
                     <th className="whitespace-nowrap px-3 py-3">미리보기</th>
+                    <th className="whitespace-nowrap px-3 py-3">다운로드</th>
                     <th className="whitespace-nowrap px-3 py-3">출제</th>
                     <th className="whitespace-nowrap px-3 py-3">더보기</th>
                   </tr>
@@ -551,6 +553,11 @@ export default function WorksheetList({ view }: { view: View }) {
                         <td className="px-3 py-3 text-center">
                           <button onClick={() => nav(`/worksheet/${w.id}`)} title="미리보기"
                             className="rounded-lg border border-line px-2.5 py-1.5 hover:bg-paper2">🔍</button>
+                        </td>
+                        <td className="px-3 py-3 text-center">
+                          <button onClick={() => { setOutSingleId(w.id); setOutDialog('download') }}
+                            title="문제·정답·해설 다운로드"
+                            className="rounded-lg border border-line px-2.5 py-1.5 text-blue-600 hover:border-blue-500 hover:bg-blue-50">⬇</button>
                         </td>
                         <td className="whitespace-nowrap px-3 py-3 text-center">
                           {assignedNames.length > 0 ? (
@@ -637,7 +644,9 @@ export default function WorksheetList({ view }: { view: View }) {
 
       {/* 학습지 다운로드/인쇄 다이얼로그 — 다중 선택 시 첫 학습지 현재 탭 + 나머지 새 탭 자동 인쇄 */}
       {outDialog && (() => {
-        const targets = list.filter(w => checked.has(w.id))
+        // 행별 다운로드(outSingleId)면 그 학습지 1개만, 아니면 체크된 학습지 전체
+        const single = outSingleId ? worksheets.find(w => w.id === outSingleId) : null
+        const targets = single ? [single] : list.filter(w => checked.has(w.id))
         const target = targets[0]
         if (!target) return null
         const names = [...(assignedByWs.get(target.id) ?? [])]
@@ -645,7 +654,7 @@ export default function WorksheetList({ view }: { view: View }) {
           .filter((n): n is string => !!n)
         return (
           <WorksheetOutputDialog mode={outDialog} ws={target} extraWs={targets.slice(1)} studentNames={names}
-            onClose={() => setOutDialog(null)} />
+            onClose={() => { setOutDialog(null); setOutSingleId(null) }} />
         )
       })()}
 
