@@ -7,4 +7,5 @@ export const OTU_BOOKS: OtuBook[] = [
   { key: "오투 중등과학 2-1|비상교육", name: "오투 중등과학 2-1", publisher: "비상교육", grade: "중2-1", course: "m-sci2-1", count: 432 },
   { key: "오투 중등과학 2-2|비상교육", name: "오투 중등과학 2-2", publisher: "비상교육", grade: "중2-2", course: "m-sci2-2", count: 419 },
   { key: "오투 중등과학 3-2|비상교육", name: "오투 중등과학 3-2", publisher: "비상교육", grade: "중3-2", course: "m-sci3-2", count: 359 },
+  { key: "오투 통합과학2|비상교육", name: "오투 통합과학2", publisher: "비상교육", grade: "통합과학2", course: "h-int2", count: 342 },
 ]
