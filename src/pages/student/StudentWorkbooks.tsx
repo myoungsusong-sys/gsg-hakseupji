@@ -1,10 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { wbAnswerImg, normAnswer } from '../../lib/answers'
 import { typeName, typeUnitName } from '../../data/curriculum'
-import { loadLectures, hasLectures, type Lecture } from '../../data/lectures'
+import { loadLectures, hasLectures, type Lecture, type LectureUnit } from '../../data/lectures'
 import MathText from '../../components/MathText'
 import VideoModal from '../../components/VideoModal'
 import { useStudentSelf } from './common'
@@ -282,35 +282,33 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const [savedAt, setSavedAt] = useState('')
   const [retryOpen, setRetryOpen] = useState<string | null>(null)      // 다시 풀기 인라인 입력 중인 문항
   const [retryAns, setRetryAns] = useState('')                          // 다시 풀기 입력값
-  // 인강(풀이 강의) — 2회 틀림 문항의 단원 강의 목록 모달 + 재생
+  // 인강(풀이 강의) — 교재 course의 강의를 미리 로드해 문항별 유무를 바로 표시
   const [lecPick, setLecPick] = useState<{ unit: string; lectures: Lecture[] } | null>(null)
-  const [lecLoading, setLecLoading] = useState(false)
+  const [lecUnits, setLecUnits] = useState<LectureUnit[] | null>(null)   // null=확인 중 · []=강의 없음
   const [video, setVideo] = useState<{ src: string; title: string } | null>(null)
 
-  // 문항의 단원에 맞는 강의 목록을 불러와 모달로 띄운다 (course에 강의 없으면 안내)
-  async function openLectures(item: WBItem) {
+  // 교재 진입 시 이 course의 개념강의를 미리 로드 (없는 과정이면 즉시 빈 배열)
+  useEffect(() => {
+    let alive = true
     const course = wb.course
-    const uni = typeUnitName(item.typeId)          // "대단원 · 중단원"
-    const [unitName = '', midName = ''] = uni.split(' · ')
-    if (!course || !hasLectures(course)) {
-      setLecPick({ unit: unitName || wb.name, lectures: [] })
-      return
-    }
-    setLecLoading(true)
-    try {
-      const units = await loadLectures(course)
-      const norm = (s: string) => s.replace(/\s/g, '')
-      const u = units.find(x => norm(x.unit) === norm(unitName)) ?? units.find(x => norm(x.unit).includes(norm(unitName)) || norm(unitName).includes(norm(x.unit)))
-      let lectures: Lecture[] = []
-      if (u) {
-        const ch = u.chapters.find(c => norm(c.name) === norm(midName))
-          ?? u.chapters.find(c => norm(c.name).includes(norm(midName)) || norm(midName).includes(norm(c.name)))
-        lectures = ch ? ch.lectures : u.chapters.flatMap(c => c.lectures)
-      }
-      setLecPick({ unit: midName || unitName || wb.name, lectures })
-    } finally {
-      setLecLoading(false)
-    }
+    if (!course || !hasLectures(course)) { setLecUnits([]); return }
+    setLecUnits(null)
+    loadLectures(course).then(u => { if (alive) setLecUnits(u) })
+    return () => { alive = false }
+  }, [wb.course])
+
+  // 문항의 단원에 맞는 강의 목록 (미리 로드된 lecUnits에서 매칭) — 없으면 빈 배열
+  function lectureMatch(item: WBItem): { unit: string; lectures: Lecture[] } {
+    const [unitName = '', midName = ''] = typeUnitName(item.typeId).split(' · ')
+    const label = midName || unitName || wb.name
+    if (!lecUnits || lecUnits.length === 0) return { unit: label, lectures: [] }
+    const norm = (s: string) => s.replace(/\s/g, '')
+    const u = lecUnits.find(x => norm(x.unit) === norm(unitName))
+      ?? lecUnits.find(x => norm(x.unit).includes(norm(unitName)) || norm(unitName).includes(norm(x.unit)))
+    if (!u) return { unit: label, lectures: [] }
+    const ch = u.chapters.find(c => norm(c.name) === norm(midName))
+      ?? u.chapters.find(c => norm(c.name).includes(norm(midName)) || norm(midName).includes(norm(c.name)))
+    return { unit: label, lectures: ch ? ch.lectures : u.chapters.flatMap(c => c.lectures) }
   }
 
   const items = useMemo(
@@ -568,13 +566,22 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                       </div>
                     </div>
                   )}
-                  {/* 두 번 틀림 → 풀이 강의 다시보기 */}
-                  {twiceWrong && (
-                    <button onClick={() => openLectures(i)} disabled={lecLoading}
-                      className="mt-0.5 w-fit rounded-lg bg-clay px-3 py-1.5 text-xs font-bold text-white hover:brightness-110 disabled:opacity-50">
-                      📹 {lecLoading ? '강의 불러오는 중…' : '풀이 강의 다시보기'}
-                    </button>
-                  )}
+                  {/* 두 번 틀림 → 풀이 강의 (없으면 '없음'으로 바로 표시) */}
+                  {twiceWrong && (() => {
+                    if (lecUnits === null)
+                      return <span className="mt-0.5 text-xs text-ink2/50">📹 강의 확인 중…</span>
+                    const lm = lectureMatch(i)
+                    return lm.lectures.length > 0 ? (
+                      <button onClick={() => setLecPick(lm)}
+                        className="mt-0.5 w-fit rounded-lg bg-clay px-3 py-1.5 text-xs font-bold text-white hover:brightness-110">
+                        📹 풀이 강의 다시보기
+                      </button>
+                    ) : (
+                      <span className="mt-0.5 w-fit rounded-lg bg-paper2 px-3 py-1.5 text-xs font-bold text-ink2/60">
+                        📹 풀이 강의 없음
+                      </span>
+                    )
+                  })()}
 
                   {cfg.showAnswer ? (
                     <div className="flex flex-wrap items-center gap-2">
