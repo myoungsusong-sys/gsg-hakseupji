@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
@@ -98,16 +99,20 @@ const BAND_CLASS: Record<Mark, string> = {
 }
 const BAND_UNMARKED = 'bg-paper2 text-ink2/60'
 
+type MarkInfo = { mark: Mark; date: string; ans?: string; careless?: boolean; attempts?: number; gid: string }
 // 문항별 최신 채점 마크 (같은 문항을 여러 번 채점하면 최신 기록 우선)
-function latestMarks(gradings: Grading[], studentId: string, workbookId: string): Map<string, { mark: Mark; date: string; ans?: string }> {
-  const m = new Map<string, { mark: Mark; date: string; ans?: string }>()
+function latestMarks(gradings: Grading[], studentId: string, workbookId: string): Map<string, MarkInfo> {
+  const m = new Map<string, MarkInfo>()
   for (const g of gradings) {
     if (g.studentId !== studentId || g.workbookId !== workbookId) continue
     for (const r of g.results) {
       if (!r.itemId) continue
       const prev = m.get(r.itemId)
       if (prev && prev.date > g.date) continue
-      m.set(r.itemId, { mark: r.unknown ? '모름' : r.correct ? '정답' : '오답', date: g.date, ans: r.studentAnswer })
+      m.set(r.itemId, {
+        mark: r.unknown ? '모름' : r.correct ? '정답' : '오답',
+        date: g.date, ans: r.studentAnswer, careless: r.careless, attempts: r.attempts ?? 1, gid: g.id,
+      })
     }
   }
   return m
@@ -234,12 +239,15 @@ export default function StudentWorkbooks() {
 // ── 교재 상세 — 페이지별 채점 (보기 / 직접 풀고 채점) ────────────────
 function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const me = useStudentSelf()
+  const nav = useNavigate()
   const { wbItems, gradings, upsertGrading, studentAppConfig: cfg } = useStore()
   const [onlyWrong, setOnlyWrong] = useState(false)
   const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
   const [mode, setMode] = useState<'view' | 'grade'>('view')   // 보기 / 채점(직접 풀기)
   const [answers, setAnswers] = useState<Record<string, string>>({})   // 채점 모드 입력값
   const [savedAt, setSavedAt] = useState('')
+  const [retryOpen, setRetryOpen] = useState<string | null>(null)      // 다시 풀기 인라인 입력 중인 문항
+  const [retryAns, setRetryAns] = useState('')                          // 다시 풀기 입력값
 
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === wb.id).sort((a, b) => a.page - b.page || a.no - b.no),
@@ -268,6 +276,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
 
   const gradedOnPage = pageItems.filter(i => marks.has(i.id)).length
   const wrongOnPage = pageItems.filter(i => { const m = marks.get(i.id)?.mark; return m === '오답' || m === '모름' }).length
+  const carelessOnPage = pageItems.filter(i => marks.get(i.id)?.careless).length   // 실수(다시 풀어 맞힌) 수
 
   // 이 페이지에서 자동채점 가능한 문항 (텍스트 정답) — 채점 모드 대상
   const gradableOnPage = pageItems.filter(wbGradable)
@@ -296,6 +305,22 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     setAnswers({})
     setMode('view')
     setOnlyWrong(false)
+  }
+
+  // 틀린 문제 다시 풀기 — 그 문항이 든 최신 기록을 찾아 결과를 갱신(2차 시도).
+  //  · 다시 풀어 맞히면 careless=true(실수 — 아는데 틀렸던 것). 여전히 틀리면 attempts=2로 두고 강의 안내.
+  function regradeOne(item: WBItem, ans: string) {
+    const rec = marks.get(item.id)
+    if (!rec) return
+    const g = gradings.find(x => x.id === rec.gid)
+    if (!g) return
+    const ok = autoCorrectWB(item, ans)
+    const results = g.results.map(r =>
+      r.itemId === item.id
+        ? { ...r, attempts: 2, retryAnswer: ans, careless: ok || undefined }
+        : r)
+    upsertGrading({ ...g, date: new Date().toISOString(), results })
+    setRetryOpen(null); setRetryAns('')
   }
 
   return (
@@ -355,7 +380,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
         <span className="text-xs text-ink2">
           {mode === 'grade'
             ? <>이 쪽 채점 문항 {gradableOnPage.length} · 입력 <b className="text-pine-dark">{answeredCount}</b></>
-            : <>이 쪽 {pageItems.length}문항 · 채점 {gradedOnPage} · 오답·모름 <b className="text-clay">{wrongOnPage}</b></>}
+            : <>이 쪽 {pageItems.length}문항 · 채점 {gradedOnPage} · 오답·모름 <b className="text-clay">{wrongOnPage}</b>{carelessOnPage > 0 && <> · 실수 <b className="text-amber">{carelessOnPage}</b></>}</>}
         </span>
         <div className="grow" />
         {mode === 'view' && (
@@ -423,12 +448,28 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           {shown.map(i => {
             const rec = marks.get(i.id)
             const m = rec?.mark
+            const careless = !!rec?.careless
+            const attempts = rec?.attempts ?? 1
+            const wrongish = m === '오답' || m === '모름'
+            const canRetry = wrongish && !careless && attempts < 2 && wbGradable(i)
+            const twiceWrong = wrongish && !careless && attempts >= 2
+            const bandCls = careless ? BAND_CLASS['모름'] : m ? BAND_CLASS[m] : BAND_UNMARKED
             return (
               <div key={i.id} className="overflow-hidden rounded-2xl border border-line bg-white">
-                <div className={`flex items-center gap-2 px-3.5 py-2 ${m ? BAND_CLASS[m] : BAND_UNMARKED}`}>
+                <div className={`flex items-center gap-2 px-3.5 py-2 ${bandCls}`}>
                   <span className="text-lg font-black leading-none">{m ? MARK_ICON[m] : '·'}</span>
                   <b>{i.label ?? i.no}번</b>
                   {!m && <span className="text-[11px]">미채점</span>}
+                  {careless && (
+                    <span className="ml-auto rounded-full bg-white/80 px-2 py-0.5 text-[10px] font-bold text-amber">
+                      ✏️ 실수 (다시 풀어 맞힘)
+                    </span>
+                  )}
+                  {twiceWrong && (
+                    <span className="ml-auto rounded-full bg-white/80 px-2 py-0.5 text-[10px] font-bold text-clay">
+                      두 번 틀림
+                    </span>
+                  )}
                 </div>
                 <div className="grid gap-1.5 p-3.5 text-sm">
                   <div className="text-xs text-ink2">{typeName(i.typeId)}</div>
@@ -438,8 +479,39 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                       <b className={m === '정답' ? 'text-pine-dark' : 'text-clay'}>
                         {rec.ans.includes('$') ? <MathText text={rec.ans} /> : rec.ans}
                       </b>
+                      {careless && rec.ans && (
+                        <span className="text-[11px] text-ink2">→ 다시 <b className="text-pine-dark">정답</b></span>
+                      )}
                     </div>
                   )}
+
+                  {/* 틀린 문제 다시 풀기 (재채점) */}
+                  {canRetry && retryOpen !== i.id && (
+                    <button onClick={() => { setRetryOpen(i.id); setRetryAns('') }}
+                      className="mt-0.5 w-fit rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">
+                      ✏️ 다시 풀기
+                    </button>
+                  )}
+                  {canRetry && retryOpen === i.id && (
+                    <div className="mt-0.5 grid gap-2 rounded-xl bg-paper2/50 p-2.5">
+                      <span className="text-[11px] font-semibold text-ink2">다시 풀어서 답을 입력하세요 (맞히면 ‘실수’로 기록돼요)</span>
+                      <WbAnswerInput item={i} value={retryAns} onChange={setRetryAns} />
+                      <div className="flex gap-2">
+                        <button onClick={() => regradeOne(i, retryAns)} disabled={retryAns === '' || retryAns === '모름'}
+                          className="rounded-lg bg-pine px-3 py-1.5 text-xs font-bold text-paper disabled:opacity-40">채점</button>
+                        <button onClick={() => { setRetryOpen(null); setRetryAns('') }}
+                          className="rounded-lg border border-line px-3 py-1.5 text-xs font-semibold text-ink2 hover:bg-white">취소</button>
+                      </div>
+                    </div>
+                  )}
+                  {/* 두 번 틀림 → 풀이 강의 다시보기 */}
+                  {twiceWrong && (
+                    <button onClick={() => nav('/student/lectures')}
+                      className="mt-0.5 w-fit rounded-lg bg-clay px-3 py-1.5 text-xs font-bold text-white hover:brightness-110">
+                      📹 풀이 강의 다시보기
+                    </button>
+                  )}
+
                   {cfg.showAnswer ? (
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="text-xs font-semibold text-ink2">답 :</span>
