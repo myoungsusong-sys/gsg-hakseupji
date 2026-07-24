@@ -1,20 +1,95 @@
 import { useMemo, useState } from 'react'
-import type { Grading, WBItem, Workbook } from '../../types'
-import { useStore } from '../../lib/store'
-import { dateKey } from '../../lib/dates'
-import { wbAnswerImg } from '../../lib/answers'
+import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
+import { useStore, uid } from '../../lib/store'
+import { dateKey, todayKey } from '../../lib/dates'
+import { wbAnswerImg, normAnswer } from '../../lib/answers'
 import { typeName, typeUnitName } from '../../data/curriculum'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './common'
 
-// ── 교재 탭 (매쓰플랫 학생앱 교재 구조) — 선생님 채점 결과 열람 전용 ──
+// ── 교재 탭 (매쓰플랫 학생앱 교재 구조) ──
 // 목록: 출제일 | [시중교재] 교재명 | 진척도 % 게이지 (채점된 문항/전체 문항)
 // 상세: 페이지 네비([←] NP [→], 시작=마지막 채점 쪽) + 오답/모름만 토글 + 문항 카드 3열
-//       번호 밴드 ○/✕/?/미채점 + 유형명 + 정답(공개설정 따름, 비공개면 🔒 안내)
-// 학생은 교재를 채점할 수 없다 — 채점은 수업 시간에 선생님이 한다.
+//   · [보기 모드] 번호 밴드 ○/✕/?/미채점 + 유형명 + 내 답 (정답은 공개설정 따름, 기본 비공개)
+//   · [채점 모드] "✏️ 직접 풀고 채점하기" — 학생이 페이지 문항 답을 입력→[채점하기]로 자동채점
+//     (매쓰플랫 교재 채점 동일). 정답은 노출하지 않고 ○/✕만 매긴다. 정답이 이미지(서술형)인
+//     문항은 대조에 정답 노출이 필요하므로 자동채점 대상에서 빼고 '선생님 채점' 문항으로 둔다.
 
 type Mark = '정답' | '오답' | '모름'
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
+
+// 자동채점 가능 문항 여부 — 정답이 텍스트(객관식·단답·OX)일 때만. 풀이참조·이미지 정답은 제외.
+function wbGradable(item: WBItem): boolean {
+  const a = (item.answer ?? '').trim()
+  if (!a || ['.', '-'].includes(a)) return false
+  if (wbAnswerImg(a)) return false   // 이미지 정답 = 자동대조하려면 정답을 보여줘야 함 → 선생님 채점
+  return true
+}
+// 학생 답 ↔ 정답 대조 (normAnswer 정규화: 공백·원문자·전각·OX 통일)
+function autoCorrectWB(item: WBItem, ans: string): boolean {
+  const a = normAnswer((item.answer ?? '').trim())
+  const s = normAnswer(ans)
+  return s !== '' && s === a
+}
+type WbInputKind = '객관식' | 'OX' | '주관식'
+function wbInputKind(item: WBItem): WbInputKind {
+  const n = normAnswer((item.answer ?? '').trim())
+  if (n === 'O' || n === 'X') return 'OX'
+  if (item.kind === '객관식') return '객관식'
+  return '주관식'
+}
+
+const CIRCLE5 = ['①', '②', '③', '④', '⑤']
+// 교재 채점 모드 답 입력 (정답 비노출) — 객관식 ①~⑤ · OX · 단답 텍스트 + 모름
+function WbAnswerInput({ item, value, onChange }: {
+  item: WBItem; value: string; onChange: (v: string) => void
+}) {
+  const kind = wbInputKind(item)
+  const unknownBtn = (
+    <button type="button" onClick={() => onChange(value === '모름' ? '' : '모름')}
+      className={`h-9 rounded-full border px-3 text-sm font-bold ${
+        value === '모름' ? 'border-amber bg-amber text-white' : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
+      모름
+    </button>
+  )
+  if (kind === '객관식') {
+    return (
+      <div className="flex flex-wrap gap-1.5">
+        {CIRCLE5.map(c => (
+          <button key={c} type="button" onClick={() => onChange(value === c ? '' : c)}
+            className={`h-9 w-9 rounded-full border text-base font-bold ${
+              value === c ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
+            {c}
+          </button>
+        ))}
+        {unknownBtn}
+      </div>
+    )
+  }
+  if (kind === 'OX') {
+    return (
+      <div className="flex gap-1.5">
+        {(['O', 'X'] as const).map(m => (
+          <button key={m} type="button" onClick={() => onChange(value === m ? '' : m)}
+            className={`h-9 w-9 rounded-full border text-base font-black ${
+              value === m ? (m === 'O' ? 'border-pine bg-pine text-paper' : 'border-clay bg-clay text-white')
+              : 'border-line bg-white text-ink hover:bg-paper2'}`}>
+            {m}
+          </button>
+        ))}
+        {unknownBtn}
+      </div>
+    )
+  }
+  return (
+    <div className="flex flex-wrap items-center gap-1.5">
+      <input value={value === '모름' ? '' : value} onChange={e => onChange(e.target.value)}
+        placeholder="답 입력"
+        className="w-40 rounded-lg border border-line px-3 py-2 text-sm" />
+      {unknownBtn}
+    </div>
+  )
+}
 // 번호 밴드: 정답 연파랑(pine-soft, 결과 화면과 동일 팔레트)/오답 연분홍/모름 연노랑/미채점 회색
 const BAND_CLASS: Record<Mark, string> = {
   정답: 'bg-pine-soft text-pine-dark',
@@ -24,15 +99,15 @@ const BAND_CLASS: Record<Mark, string> = {
 const BAND_UNMARKED = 'bg-paper2 text-ink2/60'
 
 // 문항별 최신 채점 마크 (같은 문항을 여러 번 채점하면 최신 기록 우선)
-function latestMarks(gradings: Grading[], studentId: string, workbookId: string): Map<string, { mark: Mark; date: string }> {
-  const m = new Map<string, { mark: Mark; date: string }>()
+function latestMarks(gradings: Grading[], studentId: string, workbookId: string): Map<string, { mark: Mark; date: string; ans?: string }> {
+  const m = new Map<string, { mark: Mark; date: string; ans?: string }>()
   for (const g of gradings) {
     if (g.studentId !== studentId || g.workbookId !== workbookId) continue
     for (const r of g.results) {
       if (!r.itemId) continue
       const prev = m.get(r.itemId)
       if (prev && prev.date > g.date) continue
-      m.set(r.itemId, { mark: r.unknown ? '모름' : r.correct ? '정답' : '오답', date: g.date })
+      m.set(r.itemId, { mark: r.unknown ? '모름' : r.correct ? '정답' : '오답', date: g.date, ans: r.studentAnswer })
     }
   }
   return m
@@ -87,7 +162,7 @@ export default function StudentWorkbooks() {
   return (
     <div>
       <h1 className="mb-1 text-xl font-black">교재</h1>
-      <p className="mb-4 text-sm text-ink2">교재 채점은 수업 시간에 선생님이 해요 — 여기서 결과를 확인할 수 있어요.</p>
+      <p className="mb-4 text-sm text-ink2">교재를 열어 직접 풀고 채점할 수 있어요 — 답을 입력하면 자동으로 채점돼요.</p>
 
       {/* 일반교재 | 시그니처교재 탭 (매쓰플랫 동일) */}
       <div className="mb-5 flex justify-center gap-2">
@@ -156,12 +231,15 @@ export default function StudentWorkbooks() {
   )
 }
 
-// ── 교재 상세 — 페이지별 채점 결과 (읽기 전용) ────────────────────
+// ── 교재 상세 — 페이지별 채점 (보기 / 직접 풀고 채점) ────────────────
 function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const me = useStudentSelf()
-  const { wbItems, gradings, studentAppConfig: cfg } = useStore()
+  const { wbItems, gradings, upsertGrading, studentAppConfig: cfg } = useStore()
   const [onlyWrong, setOnlyWrong] = useState(false)
   const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
+  const [mode, setMode] = useState<'view' | 'grade'>('view')   // 보기 / 채점(직접 풀기)
+  const [answers, setAnswers] = useState<Record<string, string>>({})   // 채점 모드 입력값
+  const [savedAt, setSavedAt] = useState('')
 
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === wb.id).sort((a, b) => a.page - b.page || a.no - b.no),
@@ -191,11 +269,42 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const gradedOnPage = pageItems.filter(i => marks.has(i.id)).length
   const wrongOnPage = pageItems.filter(i => { const m = marks.get(i.id)?.mark; return m === '오답' || m === '모름' }).length
 
+  // 이 페이지에서 자동채점 가능한 문항 (텍스트 정답) — 채점 모드 대상
+  const gradableOnPage = pageItems.filter(wbGradable)
+  const answeredCount = gradableOnPage.filter(i => (answers[i.id] ?? '') !== '').length
+
+  // 채점하기 — 입력한 답을 자동채점해 저장(같은 날·같은 쪽 학생 기록에 덮어쓰기)
+  function submitGrade() {
+    const results: GradeResult[] = gradableOnPage
+      .filter(i => (answers[i.id] ?? '') !== '')
+      .map(i => {
+        const ans = answers[i.id]!
+        const unknown = ans === '모름'
+        return { itemId: i.id, studentAnswer: ans, correct: unknown ? false : autoCorrectWB(i, ans), unknown: unknown || undefined }
+      })
+    if (results.length === 0) return
+    const today = todayKey()
+    const exist = gradings.find(g =>
+      g.studentId === me.id && g.workbookId === wb.id && g.by === 'student' &&
+      g.pageFrom === page && g.pageTo === page && dateKey(g.date) === today)
+    upsertGrading({
+      id: exist?.id ?? uid('gr'),
+      studentId: me.id, source: '교재', workbookId: wb.id, by: 'student',
+      date: new Date().toISOString(), pageFrom: page, pageTo: page, results,
+    })
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+    setAnswers({})
+    setMode('view')
+    setOnlyWrong(false)
+  }
+
   return (
     <div>
       <div className="mb-5 flex flex-wrap items-center gap-3">
-        <button onClick={onBack}
-          className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">← 교재</button>
+        <button onClick={() => (mode === 'grade' ? setMode('view') : onBack())}
+          className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">
+          {mode === 'grade' ? '← 채점 취소' : '← 교재'}
+        </button>
         <div>
           <h1 className="text-lg font-black">
             {wb.matchKey && (
@@ -203,14 +312,29 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
             )}
             {wb.name}
           </h1>
-          <div className="text-xs text-ink2">{wb.publisher} · {wb.grade} · 전체 {items.length}문항 — 선생님 채점 결과 열람</div>
+          <div className="text-xs text-ink2">
+            {wb.publisher} · {wb.grade} · 전체 {items.length}문항
+            {mode === 'grade' ? ' — 직접 풀고 채점' : ''}
+          </div>
         </div>
+        <div className="grow" />
+        {mode === 'view' && savedAt && (
+          <span className="text-xs font-bold text-pine">✓ 채점 저장됨 {savedAt}</span>
+        )}
+        {mode === 'view' && (
+          <button onClick={() => { setMode('grade'); setAnswers({}); setOnlyWrong(false) }}
+            className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
+            ✏️ 직접 풀고 채점하기
+          </button>
+        )}
       </div>
 
-      {/* 정답 비공개 안내 (매쓰플랫 동일 문구) */}
-      {!cfg.showAnswer && (
+      {/* 안내 문구 */}
+      {mode === 'grade' ? (
+        <p className="mb-3 text-sm text-ink2">이 쪽 문항의 답을 입력하고 <b className="text-pine-dark">채점하기</b>를 누르면 자동으로 채점돼요. 정답은 공개되지 않아요.</p>
+      ) : !cfg.showAnswer ? (
         <p className="mb-3 text-sm text-ink2">채점 후 답과 해설이 비공개되어 있습니다. 선생님에게 문의해주세요.</p>
-      )}
+      ) : null}
 
       {/* 페이지 네비 + 토글 */}
       <div className="mb-4 flex flex-wrap items-center gap-3">
@@ -229,25 +353,76 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           </button>
         </div>
         <span className="text-xs text-ink2">
-          이 쪽 {pageItems.length}문항 · 채점 {gradedOnPage} · 오답·모름 <b className="text-clay">{wrongOnPage}</b>
+          {mode === 'grade'
+            ? <>이 쪽 채점 문항 {gradableOnPage.length} · 입력 <b className="text-pine-dark">{answeredCount}</b></>
+            : <>이 쪽 {pageItems.length}문항 · 채점 {gradedOnPage} · 오답·모름 <b className="text-clay">{wrongOnPage}</b></>}
         </span>
         <div className="grow" />
-        <label className="flex items-center gap-2 text-sm font-semibold">
-          <input type="checkbox" checked={onlyWrong} onChange={e => setOnlyWrong(e.target.checked)}
-            className="h-4 w-4 accent-pine" />
-          오답/모르는 문제만 보기
-        </label>
+        {mode === 'view' && (
+          <label className="flex items-center gap-2 text-sm font-semibold">
+            <input type="checkbox" checked={onlyWrong} onChange={e => setOnlyWrong(e.target.checked)}
+              className="h-4 w-4 accent-pine" />
+            오답/모르는 문제만 보기
+          </label>
+        )}
       </div>
 
-      {/* 문항 카드 그리드 (3열) */}
-      {shown.length === 0 ? (
+      {/* ── 채점 모드: 답 입력 카드 ── */}
+      {mode === 'grade' ? (
+        pageItems.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+            이 쪽에는 문항이 없어요.
+          </div>
+        ) : (
+          <>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {pageItems.map(i => {
+                const gradable = wbGradable(i)
+                return (
+                  <div key={i.id} className="overflow-hidden rounded-2xl border border-line bg-white">
+                    <div className="flex items-center gap-2 bg-paper2 px-3.5 py-2 text-ink2/70">
+                      <b className="text-ink">{i.label ?? i.no}번</b>
+                      <span className="truncate text-[11px]">{typeName(i.typeId)}</span>
+                    </div>
+                    <div className="grid gap-2 p-3.5 text-sm">
+                      {gradable ? (
+                        <WbAnswerInput item={i} value={answers[i.id] ?? ''}
+                          onChange={v => setAnswers(prev => ({ ...prev, [i.id]: v }))} />
+                      ) : (
+                        <div className="rounded-lg bg-paper2/60 px-2.5 py-2 text-xs text-ink2">
+                          ✍️ 이 문항은 선생님이 채점해요 (자동채점 대상 아님).
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+            {/* 하단 채점 바 */}
+            <div className="mt-4 flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-white px-5 py-4">
+              <span className="text-sm text-ink2">
+                채점 문항 <b className="text-ink">{gradableOnPage.length}</b> 중 <b className="text-pine-dark">{answeredCount}</b>개 입력함
+              </span>
+              <div className="grow" />
+              <button onClick={() => setMode('view')}
+                className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">취소</button>
+              <button onClick={submitGrade} disabled={answeredCount === 0}
+                className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-40">
+                채점하기
+              </button>
+            </div>
+          </>
+        )
+      ) : /* ── 보기 모드: 채점 결과 카드 ── */
+      shown.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
           {onlyWrong ? '이 쪽에는 오답·모르는 문제가 없어요 🎉' : '이 쪽에는 문항이 없어요.'}
         </div>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {shown.map(i => {
-            const m = marks.get(i.id)?.mark
+            const rec = marks.get(i.id)
+            const m = rec?.mark
             return (
               <div key={i.id} className="overflow-hidden rounded-2xl border border-line bg-white">
                 <div className={`flex items-center gap-2 px-3.5 py-2 ${m ? BAND_CLASS[m] : BAND_UNMARKED}`}>
@@ -257,6 +432,14 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                 </div>
                 <div className="grid gap-1.5 p-3.5 text-sm">
                   <div className="text-xs text-ink2">{typeName(i.typeId)}</div>
+                  {rec?.ans && (
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-semibold text-ink2">내 답 :</span>
+                      <b className={m === '정답' ? 'text-pine-dark' : 'text-clay'}>
+                        {rec.ans.includes('$') ? <MathText text={rec.ans} /> : rec.ans}
+                      </b>
+                    </div>
+                  )}
                   {cfg.showAnswer ? (
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="text-xs font-semibold text-ink2">답 :</span>
