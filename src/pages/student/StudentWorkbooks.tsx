@@ -1,11 +1,12 @@
 import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { wbAnswerImg, normAnswer } from '../../lib/answers'
 import { typeName, typeUnitName } from '../../data/curriculum'
+import { loadLectures, hasLectures, type Lecture } from '../../data/lectures'
 import MathText from '../../components/MathText'
+import VideoModal from '../../components/VideoModal'
 import { useStudentSelf } from './common'
 
 // ── 교재 탭 (매쓰플랫 학생앱 교재 구조) ──
@@ -26,9 +27,12 @@ function wbGradable(item: WBItem): boolean {
   if (wbAnswerImg(a)) return false   // 이미지 정답 = 자동대조하려면 정답을 보여줘야 함 → 선생님 채점
   return true
 }
-// 채점 대조용 정규화 — normAnswer(공백·원문자·전각·OX) + LaTeX·단위·도(°) 제거로 관대하게
+// 채점 대조용 정규화 — normAnswer(공백·원문자·전각·OX) + LaTeX·분수·단위·도(°) 제거로 관대하게
 function coreNorm(s: string): string {
   let t = normAnswer(s ?? '').toLowerCase()
+  // 분수 \frac{a}{b}·\dfrac·\tfrac → a/b (학생은 15/2 처럼 입력)
+  t = t.replace(/\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}/g, '$1/$2')
+  t = t.replace(/\\text\{([^{}]*)\}/g, '$1')       // \text{ cm} → 안쪽만
   t = t.replace(/\\[;,! ]|~/g, '')                 // LaTeX 간격(\; \, \! \ )
   t = t.replace(/\\circ/g, '').replace(/[°˚]/g, '') // 도 기호
   t = t.replace(/\\left|\\right|\\/g, '')           // 남은 LaTeX 명령 백슬래시
@@ -118,7 +122,7 @@ function WbAnswerInput({ item, value, onChange }: {
           className="w-40 rounded-lg border border-line px-3 py-2 text-sm" />
         {unknownBtn}
       </div>
-      <span className="text-[10px] text-ink2/70">여러 값은 쉼표로 (예: x=3, y=5) · 단위·°·$는 생략 가능</span>
+      <span className="text-[10px] text-ink2/70">분수는 15/2 처럼 · 여러 값은 쉼표로 (예: x=3, y=5) · 단위·°는 생략 가능</span>
     </div>
   )
 }
@@ -270,7 +274,6 @@ export default function StudentWorkbooks() {
 // ── 교재 상세 — 페이지별 채점 (보기 / 직접 풀고 채점) ────────────────
 function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const me = useStudentSelf()
-  const nav = useNavigate()
   const { wbItems, gradings, upsertGrading, studentAppConfig: cfg } = useStore()
   const [onlyWrong, setOnlyWrong] = useState(false)
   const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
@@ -279,6 +282,36 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const [savedAt, setSavedAt] = useState('')
   const [retryOpen, setRetryOpen] = useState<string | null>(null)      // 다시 풀기 인라인 입력 중인 문항
   const [retryAns, setRetryAns] = useState('')                          // 다시 풀기 입력값
+  // 인강(풀이 강의) — 2회 틀림 문항의 단원 강의 목록 모달 + 재생
+  const [lecPick, setLecPick] = useState<{ unit: string; lectures: Lecture[] } | null>(null)
+  const [lecLoading, setLecLoading] = useState(false)
+  const [video, setVideo] = useState<{ src: string; title: string } | null>(null)
+
+  // 문항의 단원에 맞는 강의 목록을 불러와 모달로 띄운다 (course에 강의 없으면 안내)
+  async function openLectures(item: WBItem) {
+    const course = wb.course
+    const uni = typeUnitName(item.typeId)          // "대단원 · 중단원"
+    const [unitName = '', midName = ''] = uni.split(' · ')
+    if (!course || !hasLectures(course)) {
+      setLecPick({ unit: unitName || wb.name, lectures: [] })
+      return
+    }
+    setLecLoading(true)
+    try {
+      const units = await loadLectures(course)
+      const norm = (s: string) => s.replace(/\s/g, '')
+      const u = units.find(x => norm(x.unit) === norm(unitName)) ?? units.find(x => norm(x.unit).includes(norm(unitName)) || norm(unitName).includes(norm(x.unit)))
+      let lectures: Lecture[] = []
+      if (u) {
+        const ch = u.chapters.find(c => norm(c.name) === norm(midName))
+          ?? u.chapters.find(c => norm(c.name).includes(norm(midName)) || norm(midName).includes(norm(c.name)))
+        lectures = ch ? ch.lectures : u.chapters.flatMap(c => c.lectures)
+      }
+      setLecPick({ unit: midName || unitName || wb.name, lectures })
+    } finally {
+      setLecLoading(false)
+    }
+  }
 
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === wb.id).sort((a, b) => a.page - b.page || a.no - b.no),
@@ -537,9 +570,9 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                   )}
                   {/* 두 번 틀림 → 풀이 강의 다시보기 */}
                   {twiceWrong && (
-                    <button onClick={() => nav('/student/lectures')}
-                      className="mt-0.5 w-fit rounded-lg bg-clay px-3 py-1.5 text-xs font-bold text-white hover:brightness-110">
-                      📹 풀이 강의 다시보기
+                    <button onClick={() => openLectures(i)} disabled={lecLoading}
+                      className="mt-0.5 w-fit rounded-lg bg-clay px-3 py-1.5 text-xs font-bold text-white hover:brightness-110 disabled:opacity-50">
+                      📹 {lecLoading ? '강의 불러오는 중…' : '풀이 강의 다시보기'}
                     </button>
                   )}
 
@@ -565,6 +598,52 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
         <PageListModal items={items} marks={marks} current={page}
           onPick={p => { setPage(p); setPageList(false) }} onClose={() => setPageList(false)} />
       )}
+
+      {/* 풀이 강의 목록 모달 (2회 틀림 → 인강 시청) */}
+      {lecPick && (
+        <LecturePickModal unit={lecPick.unit} lectures={lecPick.lectures}
+          onPlay={l => { setVideo({ src: l.videoUrl, title: l.title }); setLecPick(null) }}
+          onClose={() => setLecPick(null)} />
+      )}
+      {video && <VideoModal src={video.src} title={video.title} badge="풀이 강의" onClose={() => setVideo(null)} />}
+    </div>
+  )
+}
+
+// ── 풀이 강의 목록 모달 — 그 문항 단원의 개념강의를 골라 재생 ──
+function LecturePickModal({ unit, lectures, onPlay, onClose }: {
+  unit: string; lectures: Lecture[]; onPlay: (l: Lecture) => void; onClose: () => void
+}) {
+  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-4" onClick={onClose}>
+      <div className="max-h-[80vh] w-full max-w-md overflow-y-auto rounded-2xl bg-white p-6 shadow-xl"
+        onClick={e => e.stopPropagation()}>
+        <div className="mb-1 flex items-start gap-3">
+          <div>
+            <h2 className="text-lg font-black">📹 풀이 강의</h2>
+            <div className="text-xs text-ink2">{unit}</div>
+          </div>
+          <div className="grow" />
+          <button onClick={onClose} className="rounded-lg px-2 py-0.5 text-lg text-ink2 hover:bg-paper2">✕</button>
+        </div>
+        {lectures.length === 0 ? (
+          <div className="rounded-xl border border-dashed border-line bg-paper2/40 p-8 text-center text-sm text-ink2">
+            이 단원의 풀이 강의는 아직 준비 중이에요.<br />선생님께 문의해 주세요.
+          </div>
+        ) : (
+          <div className="mt-3 grid gap-1.5">
+            {lectures.map(l => (
+              <button key={l.id} onClick={() => onPlay(l)}
+                className="flex items-center gap-3 rounded-xl border border-line px-3 py-2.5 text-left hover:border-pine hover:bg-pine-soft/30">
+                <span className="text-lg">▶</span>
+                <span className="min-w-0 grow text-sm font-semibold">{l.title}</span>
+                <span className="shrink-0 text-xs tabular-nums text-ink2">{fmt(l.seconds)}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
