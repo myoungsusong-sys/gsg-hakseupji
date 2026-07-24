@@ -6,6 +6,7 @@ import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail } from '../../lib/role'
 import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
+import { useChangelog, UpdateBanner } from '../../components/UpdateLog'
 import { StudentSelfCtx, tickStudySecond } from './common'
 import { todayKey } from '../../lib/dates'
 
@@ -24,6 +25,8 @@ export default function StudentShell() {
   const { email, signOut } = useAuth()
   const { students, synced } = useStore()
   const nav = useNavigate()
+  // 새 배포 감지 → 상단 업데이트 배너(선생님앱과 동일). 훅은 조건 반환 전에 호출.
+  const { entries: changelog, stale, unseen } = useChangelog()
 
   // 본인 판별: supabase 모드 = 세션 이메일 → 학생 레코드 / 로컬 모드 = 로컬 학생 세션
   // 관리앱 [채점하러 가기]로 넘어온 학생은 세션 없이 로컬 학생 세션으로 진입하므로, 로컬 세션을 먼저 본다.
@@ -76,6 +79,7 @@ export default function StudentShell() {
   return (
     <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
+        {stale && <UpdateBanner items={unseen.length ? unseen : changelog.slice(0, 1)} />}
         <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-5 px-6 py-3">
             <div className="flex items-baseline gap-2">
