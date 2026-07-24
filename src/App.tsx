@@ -1,8 +1,9 @@
-import { HashRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
-import { StoreProvider } from './lib/store'
+import { useEffect } from 'react'
+import { HashRouter, Navigate, Outlet, Route, Routes, useNavigate } from 'react-router-dom'
+import { StoreProvider, useStore } from './lib/store'
 import { SUPABASE_ON } from './lib/supabase'
 import { AuthProvider, useAuth } from './lib/auth'
-import { getLocalStudentId, isStudentEmail } from './lib/role'
+import { getLocalStudentId, setLocalStudentId, isStudentEmail } from './lib/role'
 import Login from './pages/Login'
 import StudentShell from './pages/student/StudentShell'
 import StudentLocalLogin from './pages/student/StudentLocalLogin'
@@ -51,17 +52,40 @@ export default function App() {
   )
 }
 
+// 관리앱 [채점하러 가기]로 넘어온 학생(?mgmt=<관리앱학생id>)을 찾아 학생앱으로 진입시킨다.
+// 학생 명부(hj_students)가 로드되면 mgmtId가 일치하는 학생을 찾아 로컬 세션을 걸고 #/student로 보낸다.
+// mgmt 파라미터가 없으면 아무 일도 하지 않는다.
+function MgmtEntry() {
+  const { students, synced } = useStore()
+  const nav = useNavigate()
+  useEffect(() => {
+    const mgmt = new URLSearchParams(window.location.search).get('mgmt')
+    if (!mgmt || !synced) return
+    const me = students.find((s) => s.mgmtId === mgmt)
+    if (me) setLocalStudentId(me.id)
+    // 파라미터를 지우고 학생앱으로 (일치하는 학생이 없어도 학생 로그인 화면 흐름으로 보낸다)
+    window.history.replaceState(null, '', window.location.pathname)
+    nav(me ? '/student' : '/student-login', { replace: true })
+  }, [synced, students, nav])
+  return null
+}
+
 function Gate() {
   const { ready, session } = useAuth()
   if (!ready) return <div className="flex min-h-screen items-center justify-center text-ink2">불러오는 중…</div>
   // 학부모앱(#/parent*)은 Supabase 세션 없이도 진입 — 서버리스가 이름+연락처로 검증
   if (SUPABASE_ON && !session) {
     if (typeof window !== 'undefined' && window.location.hash.startsWith('#/parent')) return <ParentOnlyApp />
-    return <Login />
+    // 관리앱(학원관리) 학생앱에서 [채점하러 가기]로 넘어온 경우 — ?mgmt=<관리앱학생id>.
+    // 좌석 태블릿에는 학습지앱 세션이 없으므로, 이 파라미터가 있거나 이미 로컬 학생 세션이 있으면
+    // 로그인 없이 학생앱으로 진입시킨다(학생 데이터는 anon 읽기 허용). MgmtEntry가 학생을 찾아 세션을 건다.
+    const mgmt = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('mgmt') : null
+    if (!mgmt && !getLocalStudentId()) return <Login />
   }
   return (
     <StoreProvider>
       <HashRouter>
+        <MgmtEntry />
         <Routes>
           {/* ── 학부모앱 (#/parent) — 로컬 모드/선생님 미리보기용. 프로덕션 미인증 진입은 ParentOnlyApp ── */}
           <Route path="/parent-login" element={<ParentLogin />} />
@@ -142,6 +166,7 @@ function ParentOnlyApp() {
   return (
     <StoreProvider>
       <HashRouter>
+        <MgmtEntry />
         <Routes>
           <Route path="/parent-login" element={<ParentLogin />} />
           <Route path="/parent" element={<ParentHome />} />

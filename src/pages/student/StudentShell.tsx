@@ -26,12 +26,14 @@ export default function StudentShell() {
   const nav = useNavigate()
 
   // 본인 판별: supabase 모드 = 세션 이메일 → 학생 레코드 / 로컬 모드 = 로컬 학생 세션
+  // 관리앱 [채점하러 가기]로 넘어온 학생은 세션 없이 로컬 학생 세션으로 진입하므로, 로컬 세션을 먼저 본다.
   let me: Student | undefined
-  if (SUPABASE_ON) {
+  const localSid = getLocalStudentId()
+  const localMe = localSid ? students.find(s => s.id === localSid) : undefined
+  if (localMe) {
+    me = localMe
+  } else if (SUPABASE_ON) {
     me = email && isStudentEmail(email) ? matchStudentByEmail(students, email) : undefined
-  } else {
-    const sid = getLocalStudentId()
-    me = sid ? students.find(s => s.id === sid) : undefined
   }
 
   // 학습 타이머 — 접속(화면 표시) 중 1초 단위 누적 (매쓰플랫 ⏱ 순공시간)
@@ -44,7 +46,8 @@ export default function StudentShell() {
     return () => clearInterval(t)
   }, [meId])
 
-  if (SUPABASE_ON) {
+  if (SUPABASE_ON && !localMe) {
+    // 로컬 학생 세션(관리앱 연동 진입)이 아니면 이메일 기반으로 본인을 검증한다.
     if (!isStudentEmail(email)) return <Navigate to="/" replace />   // 선생님 계정 → 선생님 화면
     if (!me) {
       if (!synced) return <div className="flex min-h-screen items-center justify-center text-ink2">불러오는 중…</div>
@@ -59,13 +62,15 @@ export default function StudentShell() {
         </div>
       )
     }
-  } else {
-    if (!me) return <Navigate to="/student-login" replace />
+  } else if (!me) {
+    if (!synced) return <div className="flex min-h-screen items-center justify-center text-ink2">불러오는 중…</div>
+    return <Navigate to="/student-login" replace />
   }
 
   async function logout() {
-    if (SUPABASE_ON) { await signOut() }
-    else { clearLocalStudentId(); nav('/student-login', { replace: true }) }
+    clearLocalStudentId()   // 관리앱 연동 진입 학생도 세션 정리
+    if (SUPABASE_ON && email) { await signOut() }
+    else nav('/student-login', { replace: true })
   }
 
   return (
