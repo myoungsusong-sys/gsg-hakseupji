@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
-import { wbAnswerImg, normAnswer } from '../../lib/answers'
+import { wbAnswerImg, normAnswer, isEssayAnswer } from '../../lib/answers'
 import { mathEqual } from '../../lib/mathAnswer'
 import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../components/student/MathAnswerField'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -28,6 +28,7 @@ function wbGradable(item: WBItem): boolean {
   const a = (item.answer ?? '').trim()
   if (!a || ['.', '-'].includes(a)) return false
   if (wbAnswerImg(a)) return false   // 이미지 정답 = 자동대조하려면 정답을 보여줘야 함 → 선생님 채점
+  if (isEssayAnswer(a)) return false // 서술형·예시답안 = 글자 대조 불가 → 모범답안 보고 자기채점
   return true
 }
 // 학생 답 ↔ 정답 대조는 lib/mathAnswer 의 mathEqual 에 위임한다.
@@ -163,7 +164,10 @@ function SelfCheckInput({ item, mark, revealed, onReveal, onMark }: {
   onReveal: () => void
   onMark: (m: Mark) => void
 }) {
-  const hasAnswerImg = !!wbAnswerImg((item.answer ?? '').trim())
+  const a = (item.answer ?? '').trim()
+  // 앱에 정답이 있는 문항(모범답안 문장 · 정답 그림)과, 정답 자체가 없는 '풀이참조' 문항을 구분
+  const hasAnswer = !!a && !['.', '-'].includes(a)
+  const essay = isEssayAnswer(a)
   const MARKS: [Mark, string, string][] = [
     ['정답', '○ 맞았어요', 'border-pine bg-pine text-paper'],
     ['오답', '✕ 틀렸어요', 'border-clay bg-clay text-white'],
@@ -172,24 +176,30 @@ function SelfCheckInput({ item, mark, revealed, onReveal, onMark }: {
   return (
     <div className="grid gap-2 rounded-lg bg-paper2/60 px-2.5 py-2.5">
       <span className="text-xs font-semibold text-ink2">
-        ✍️ 그림·서술로 답하는 문항이에요 — 공책에 풀고 정답과 맞춰본 뒤 직접 표시해요
+        {essay
+          ? '✍️ 서술형이에요 — 공책에 답을 쓰고, 모범답안과 뜻이 같은지 보고 표시해요'
+          : '✍️ 그림·서술로 답하는 문항이에요 — 공책에 풀고 정답과 맞춰본 뒤 직접 표시해요'}
       </span>
 
       {!revealed ? (
         <button type="button" onClick={onReveal}
           className="w-fit rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">
-          다 풀었어요 — {hasAnswerImg ? '정답 확인' : '맞춰보기'}
+          다 풀었어요 — {hasAnswer ? (essay ? '모범답안 보기' : '정답 확인') : '맞춰보기'}
         </button>
       ) : (
         <div className="grid gap-2">
-          {hasAnswerImg ? (
+          {hasAnswer ? (
             <div className="grid gap-1">
-              <span className="text-[11px] font-semibold text-ink2">정답</span>
-              <WbAnswer item={item} />
+              <span className="text-[11px] font-semibold text-ink2">
+                {essay ? '모범답안 — 표현이 달라도 뜻이 같으면 정답이에요' : '정답'}
+              </span>
+              <div className="rounded-lg bg-white px-2.5 py-2 text-sm leading-relaxed">
+                <WbAnswer item={item} />
+              </div>
             </div>
           ) : (
             <span className="text-[11px] text-ink2">
-              앱에 정답 그림이 없는 문항이에요 — 교재 뒤 <b>정답·해설</b>로 맞춰보세요.
+              앱에 정답이 없는 문항이에요 — 교재 뒤 <b>정답·해설</b>로 맞춰보세요.
             </span>
           )}
           <div className="flex flex-wrap gap-1.5">

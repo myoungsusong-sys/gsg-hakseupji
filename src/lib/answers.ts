@@ -21,6 +21,20 @@ export function wbAnswerImg(answer: string | undefined | null): string | null {
   return `https://freewheelin-contents.mathflat.com/problem/${m[1]}/${m[2]}/answer.png`
 }
 
+// 서술형(문장으로 답하는) 문항인지 — 정답이 "문장"이거나 "(예)…" 예시답안인 경우.
+// 이런 답은 학생이 뜻만 맞게 써도 글자가 같을 리 없어 기계 대조가 불가능하다.
+// (자동채점에 두면 사실상 무조건 오답 — 과학 서술형 8.9%, 초등 문장제 0.7%가 여기 해당)
+// → 자동채점에서 빼고, 모범답안을 보여주는 자기채점으로 돌린다.
+const ESSAY_TAIL = /(다|요|음|임|함|됨)\s*\.?\s*$/
+export function isEssayAnswer(answer: string | undefined | null): boolean {
+  const a = (answer ?? '').trim()
+  if (!a) return false
+  // "(예) …" · "예)" — 교재가 명시한 예시 답안. 정답이 하나로 정해지지 않는다.
+  if (/^\(?예\)/.test(a.replace(/\s/g, ''))) return true
+  const plain = a.replace(/\\[;,! ]/g, ' ')          // LaTeX 간격을 공백으로
+  return plain.length >= 12 && /\s/.test(plain) && /[가-힣]/.test(plain) && ESSAY_TAIL.test(plain)
+}
+
 export function normAnswer(s: string): string {
   let t = s.trim()
   // 공백 전부 제거
