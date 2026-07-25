@@ -8,6 +8,7 @@ import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../compon
 import { typeName, typeUnitName } from '../../data/curriculum'
 import { loadLectures, hasLectures, type Lecture, type LectureUnit } from '../../data/lectures'
 import MathText from '../../components/MathText'
+import ZoomImage from '../../components/ZoomImage'
 import VideoModal from '../../components/VideoModal'
 import { useStudentSelf } from './common'
 
@@ -134,7 +135,10 @@ const CIRCLED = ['①', '②', '③', '④', '⑤']
 function WbAnswer({ item }: { item: WBItem }) {
   const a = (item.answer ?? '').trim()
   const img = wbAnswerImg(a)
-  if (img) return <img src={img} alt="정답" loading="lazy" className="max-h-20 w-auto max-w-full rounded border border-line bg-white" />
+  if (img) return (
+    <ZoomImage src={img} alt="정답" title="정답 · 해설"
+      className="max-h-20 w-auto max-w-full rounded border border-line bg-white" />
+  )
   if (!a || ['.', '-'].includes(a)) return <span className="text-ink2/70">풀이참조</span>
   if (item.kind === '객관식') {
     const t = a.split(',').map(s => {

@@ -9,6 +9,7 @@ import type { GradeResult, Grading, Student, WBItem } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
 import BulkImportModal from '../BulkImportModal'
 import MathText from '../MathText'
+import ZoomImage from '../ZoomImage'
 import DrillModal, { type DrillWrong, type PagePicker } from './DrillModal'
 import StudentBookDialog from './StudentBookDialog'
 
@@ -25,9 +26,11 @@ function AnswerLabel({ item }: { item: WBItem }) {
   // 정답 이미지는 표/그래프라 텍스트 크기로 줄이면 안 보임 → 문항 간 통일된 읽히는 높이(64px)로.
   const img = wbAnswerImg(a)
   if (img) return (
-    <div className="mt-0.5 text-xs text-ink2">정답
-      <img src={img} alt="정답"
-        className="mt-0.5 block max-h-16 w-auto max-w-full rounded bg-white" />
+    <div className="mt-0.5 text-xs text-ink2">정답 <span className="text-ink2/60">(눌러서 크게)</span>
+      <div className="mt-0.5">
+        <ZoomImage src={img} alt="정답" title="서술형 정답·해설"
+          className="block max-h-16 w-auto max-w-full rounded bg-white" />
+      </div>
     </div>
   )
   if (['.', '-'].includes(a.trim())) return wrap('풀이참조', true)
