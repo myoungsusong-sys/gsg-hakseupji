@@ -657,6 +657,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "유형 해결의 법칙 중등수학3(상)|천재교육", name: "유형 해결의 법칙 중등수학3(상)", publisher: "천재교육", grade: "중3-1", course: "m3-1", count: 1340 },
   { key: "디딤돌수학 개념연산A 중등수학3(상)|디딤돌", name: "디딤돌수학 개념연산A 중등수학3(상)", publisher: "디딤돌", grade: "중3-1", course: "m3-1", count: 1338 },
   { key: "RPM 중등수학3(상)|개념원리", name: "RPM 중등수학3(상)", publisher: "개념원리", grade: "중3-1", course: "m3-1", count: 1310 },
+  { key: "베이직쎈 중등수학3(상)|좋은책신사고", name: "베이직쎈 중등수학3(상) (2015개정)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1597 },
   { key: "라이트쎈 중등수학3(상)|좋은책신사고", name: "라이트쎈 중등수학3(상) (2015개정)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1280 },
   { key: "풍산자 필수유형 중등수학3(상)|지학사", name: "풍산자 필수유형 중등수학3(상)", publisher: "지학사", grade: "중3-1", course: "m3-1", count: 1250 },
   { key: "체크체크 베이직 N제 중등수학3(상)|천재교육", name: "체크체크 베이직 N제 중등수학3(상)", publisher: "천재교육", grade: "중3-1", course: "m3-1", count: 1235 },
