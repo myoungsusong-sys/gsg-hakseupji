@@ -5,6 +5,7 @@ import { useStore, uid } from '../../lib/store'
 import { isMachineGradable, requestAiGrade } from '../../lib/aiGrade'
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
+import { levelFromGrade } from '../../components/student/MathAnswerField'
 import ProblemContent from '../../components/ProblemContent'
 import SolveFeedback from '../../components/student/SolveFeedback'
 import VideoModal from '../../components/VideoModal'
@@ -504,7 +505,7 @@ export default function StudentSolve() {
               </div>
             ) : (
               <div className="min-w-0 max-w-md grow">
-                <AnswerInput p={p} value={cur === DONT_KNOW ? '' : cur} onChange={v => setAnswer(p.id, v)} />
+                <AnswerInput p={p} value={cur === DONT_KNOW ? '' : cur} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(p.id, v)} />
               </div>
             )}
             <button onClick={() => setAnswer(p.id, cur === DONT_KNOW ? '' : DONT_KNOW)}
@@ -545,7 +546,7 @@ export default function StudentSolve() {
                   <div key={q.id} className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 p-3">
                     <b className="w-10 text-sm text-pine-dark">{i + 1}번</b>
                     <div className="min-w-0 grow">
-                      <AnswerInput p={q} value={(answers[q.id] ?? '') === DONT_KNOW ? '' : (answers[q.id] ?? '')} onChange={v => setAnswer(q.id, v)} />
+                      <AnswerInput p={q} value={(answers[q.id] ?? '') === DONT_KNOW ? '' : (answers[q.id] ?? '')} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(q.id, v)} />
                     </div>
                     <button onClick={() => setAnswer(q.id, (answers[q.id] ?? '') === DONT_KNOW ? '' : DONT_KNOW)}
                       className={`rounded-full border px-3 py-1.5 text-xs font-bold ${

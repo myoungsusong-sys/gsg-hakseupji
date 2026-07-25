@@ -1,5 +1,6 @@
 import type { Problem } from '../../types'
-import { normAnswer } from '../../lib/answers'
+import { mathEqual } from '../../lib/mathAnswer'
+import MathAnswerField, { type KeypadLevel } from './MathAnswerField'
 
 // ⚠️ 학생앱용 보존 컴포넌트 — 현재 앱 어디에서도 라우팅·import 되지 않는다.
 // 원래 수업>학습지 채점 화면(WorksheetGrade)이 "학생이 답을 입력하는" 방식이던 시절의 UI로,
@@ -15,16 +16,18 @@ const CIRCLED = ['①', '②', '③', '④', '⑤']
 export const isImgAnswer = (a: string) => /^https?:\/\/\S+\.(png|jpe?g|gif|webp)/i.test(a)
 
 // 자동 채점: 학생 답 ↔ 정답 대조. 이미지 정답 문항은 텍스트 대조 불가 → 학생 자기 ○ 표시로 대체
+// 대조는 lib/mathAnswer 의 mathEqual — LaTeX·㎠·"루트2"·단위 생략·값 동치를 모두 흡수한다.
 export function autoCorrect(p: Problem, studentAnswer: string): boolean {
   return isImgAnswer(p.answer)
     ? studentAnswer === '○'
-    : normAnswer(studentAnswer) !== '' && normAnswer(studentAnswer) === normAnswer(p.answer)
+    : mathEqual(p.answer, studentAnswer)
 }
 
-export default function AnswerInput({ p, value, onChange }: {
+export default function AnswerInput({ p, value, onChange, level = '중등' }: {
   p: Problem
   value: string
   onChange: (v: string) => void
+  level?: KeypadLevel
 }) {
   if (p.kind === '객관식') {
     return (
@@ -55,9 +58,5 @@ export default function AnswerInput({ p, value, onChange }: {
       </div>
     )
   }
-  return (
-    <input value={value} onChange={e => onChange(e.target.value)}
-      placeholder="답 입력"
-      className="w-56 rounded-lg border border-line px-3 py-2 text-sm" />
-  )
+  return <MathAnswerField value={value} onChange={onChange} level={level} width="w-56" />
 }

@@ -3,6 +3,8 @@ import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { wbAnswerImg, normAnswer } from '../../lib/answers'
+import { mathEqual } from '../../lib/mathAnswer'
+import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../components/student/MathAnswerField'
 import { typeName, typeUnitName } from '../../data/curriculum'
 import { loadLectures, hasLectures, type Lecture, type LectureUnit } from '../../data/lectures'
 import MathText from '../../components/MathText'
@@ -27,33 +29,9 @@ function wbGradable(item: WBItem): boolean {
   if (wbAnswerImg(a)) return false   // 이미지 정답 = 자동대조하려면 정답을 보여줘야 함 → 선생님 채점
   return true
 }
-// 채점 대조용 정규화 — normAnswer(공백·원문자·전각·OX) + LaTeX·분수·단위·도(°) 제거로 관대하게
-function coreNorm(s: string): string {
-  let t = normAnswer(s ?? '').toLowerCase()
-  // 분수 \frac{a}{b}·\dfrac·\tfrac → a/b (학생은 15/2 처럼 입력)
-  t = t.replace(/\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}/g, '$1/$2')
-  t = t.replace(/\\text\{([^{}]*)\}/g, '$1')       // \text{ cm} → 안쪽만
-  t = t.replace(/\\[;,! ]|~/g, '')                 // LaTeX 간격(\; \, \! \ )
-  t = t.replace(/\\circ/g, '').replace(/[°˚]/g, '') // 도 기호
-  t = t.replace(/\\left|\\right|\\/g, '')           // 남은 LaTeX 명령 백슬래시
-  t = t.replace(/[{}^$]/g, '')                       // 괄호·지수·$
-  t = t.replace(/cm|도/g, '')                        // 흔한 단위(cm, 도)
-  return t
-}
-const wbTokens = (s: string) => coreNorm(s).split(',').map(x => x.trim()).filter(Boolean).sort()
-const stripVar = (tok: string) => tok.replace(/^[a-z가-힣]+=/, '')
-
-// 학생 답 ↔ 정답 대조 — 다중값(쉼표)·변수라벨 생략·단위/도/LaTeX 차이에 관대
-function autoCorrectWB(item: WBItem, ans: string): boolean {
-  const c = coreNorm(item.answer ?? ''), s = coreNorm(ans)
-  if (s === '') return false
-  if (c === s) return true
-  const ct = wbTokens(item.answer ?? ''), st = wbTokens(ans)
-  if (ct.length > 0 && ct.length === st.length && ct.every((x, i) => x === st[i])) return true
-  // 변수 라벨(x=, y=) 생략 허용 — 값 다중집합 비교
-  const cv = ct.map(stripVar).sort(), sv = st.map(stripVar).sort()
-  return cv.length > 0 && cv.length === sv.length && cv.every((x, i) => x === sv[i])
-}
+// 학생 답 ↔ 정답 대조는 lib/mathAnswer 의 mathEqual 에 위임한다.
+// (LaTeX·조합문자 ㎠·루트/파이 한글표기·단위 생략·다중답 순서·값 동치 4/8=1/2 를 모두 흡수)
+const autoCorrectWB = (item: WBItem, ans: string) => mathEqual(item.answer ?? '', ans)
 type WbInputKind = '객관식' | 'OX' | '주관식'
 function wbInputKind(item: WBItem): WbInputKind {
   const n = normAnswer((item.answer ?? '').trim())
@@ -64,8 +42,8 @@ function wbInputKind(item: WBItem): WbInputKind {
 
 const CIRCLE5 = ['①', '②', '③', '④', '⑤']
 // 교재 채점 모드 답 입력 (정답 비노출) — 객관식 ①~⑤ · OX · 단답 텍스트 + 모름
-function WbAnswerInput({ item, value, onChange }: {
-  item: WBItem; value: string; onChange: (v: string) => void
+function WbAnswerInput({ item, value, onChange, level = '중등' }: {
+  item: WBItem; value: string; onChange: (v: string) => void; level?: KeypadLevel
 }) {
   const kind = wbInputKind(item)
   const unknownBtn = (
@@ -116,13 +94,11 @@ function WbAnswerInput({ item, value, onChange }: {
   }
   return (
     <div className="grid gap-1">
-      <div className="flex flex-wrap items-center gap-1.5">
-        <input value={value === '모름' ? '' : value} onChange={e => onChange(e.target.value)}
-          placeholder="답 입력"
-          className="w-40 rounded-lg border border-line px-3 py-2 text-sm" />
+      <div className="flex flex-wrap items-start gap-1.5">
+        <MathAnswerField value={value === '모름' ? '' : value} onChange={onChange} level={level} width="w-40" />
         {unknownBtn}
       </div>
-      <span className="text-[10px] text-ink2/70">분수는 15/2 처럼 · 여러 값은 쉼표로 (예: x=3, y=5) · 단위·°는 생략 가능</span>
+      <span className="text-[10px] text-ink2/70">분수는 15/2 · 여러 값은 쉼표로 (예: x=3, y=5) · 단위·°는 생략 가능 · 기호는 [√π] 버튼</span>
     </div>
   )
 }
@@ -473,7 +449,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                     </div>
                     <div className="grid gap-2 p-3.5 text-sm">
                       {gradable ? (
-                        <WbAnswerInput item={i} value={answers[i.id] ?? ''}
+                        <WbAnswerInput item={i} value={answers[i.id] ?? ''} level={levelFromCourse(wb.course)}
                           onChange={v => setAnswers(prev => ({ ...prev, [i.id]: v }))} />
                       ) : (
                         <div className="rounded-lg bg-paper2/60 px-2.5 py-2 text-xs text-ink2">
@@ -557,7 +533,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                   {canRetry && retryOpen === i.id && (
                     <div className="mt-0.5 grid gap-2 rounded-xl bg-paper2/50 p-2.5">
                       <span className="text-[11px] font-semibold text-ink2">다시 풀어서 답을 입력하세요 (맞히면 ‘실수’로 기록돼요)</span>
-                      <WbAnswerInput item={i} value={retryAns} onChange={setRetryAns} />
+                      <WbAnswerInput item={i} value={retryAns} onChange={setRetryAns} level={levelFromCourse(wb.course)} />
                       <div className="flex gap-2">
                         <button onClick={() => regradeOne(i, retryAns)} disabled={retryAns === '' || retryAns === '모름'}
                           className="rounded-lg bg-pine px-3 py-1.5 text-xs font-bold text-paper disabled:opacity-40">채점</button>
