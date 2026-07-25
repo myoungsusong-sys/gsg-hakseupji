@@ -110,7 +110,7 @@ const BAND_CLASS: Record<Mark, string> = {
 }
 const BAND_UNMARKED = 'bg-paper2 text-ink2/60'
 
-type MarkInfo = { mark: Mark; date: string; ans?: string; careless?: boolean; attempts?: number; gid: string }
+type MarkInfo = { mark: Mark; date: string; ans?: string; careless?: boolean; attempts?: number; gid: string; self?: boolean }
 // 문항별 최신 채점 마크 (같은 문항을 여러 번 채점하면 최신 기록 우선)
 function latestMarks(gradings: Grading[], studentId: string, workbookId: string): Map<string, MarkInfo> {
   const m = new Map<string, MarkInfo>()
@@ -122,7 +122,7 @@ function latestMarks(gradings: Grading[], studentId: string, workbookId: string)
       if (prev && prev.date > g.date) continue
       m.set(r.itemId, {
         mark: r.unknown ? '모름' : r.correct ? '정답' : '오답',
-        date: g.date, ans: r.studentAnswer, careless: r.careless, attempts: r.attempts ?? 1, gid: g.id,
+        date: g.date, ans: r.studentAnswer, careless: r.careless, attempts: r.attempts ?? 1, gid: g.id, self: r.self,
       })
     }
   }
@@ -146,6 +146,61 @@ function WbAnswer({ item }: { item: WBItem }) {
   if (a.includes('$')) return <MathText text={a} />
   if (/[\\{}^_]/.test(a)) return <MathText text={`$${a}$`} />
   return <b>{a}</b>
+}
+
+// 자기채점 입력 — 그래프 그리기·작도·서술형처럼 답을 기계로 대조할 수 없는 문항용.
+// 학생이 공책에 풀고 → [정답 확인]으로 앱의 정답 그림(있으면)을 열어 맞춰본 뒤 스스로 ○/✕/모름 표시.
+// 정답 그림이 없는 '풀이참조' 문항은 교재 뒤 해설로 맞추도록 안내한다.
+// (정답을 먼저 보고 베끼는 걸 막으려고, 반드시 "다 풀었어요"를 누른 뒤에만 정답이 열린다)
+function SelfCheckInput({ item, mark, revealed, onReveal, onMark }: {
+  item: WBItem
+  mark?: Mark
+  revealed: boolean
+  onReveal: () => void
+  onMark: (m: Mark) => void
+}) {
+  const hasAnswerImg = !!wbAnswerImg((item.answer ?? '').trim())
+  const MARKS: [Mark, string, string][] = [
+    ['정답', '○ 맞았어요', 'border-pine bg-pine text-paper'],
+    ['오답', '✕ 틀렸어요', 'border-clay bg-clay text-white'],
+    ['모름', '? 모르겠어요', 'border-amber bg-amber text-white'],
+  ]
+  return (
+    <div className="grid gap-2 rounded-lg bg-paper2/60 px-2.5 py-2.5">
+      <span className="text-xs font-semibold text-ink2">
+        ✍️ 그림·서술로 답하는 문항이에요 — 공책에 풀고 정답과 맞춰본 뒤 직접 표시해요
+      </span>
+
+      {!revealed ? (
+        <button type="button" onClick={onReveal}
+          className="w-fit rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">
+          다 풀었어요 — {hasAnswerImg ? '정답 확인' : '맞춰보기'}
+        </button>
+      ) : (
+        <div className="grid gap-2">
+          {hasAnswerImg ? (
+            <div className="grid gap-1">
+              <span className="text-[11px] font-semibold text-ink2">정답</span>
+              <WbAnswer item={item} />
+            </div>
+          ) : (
+            <span className="text-[11px] text-ink2">
+              앱에 정답 그림이 없는 문항이에요 — 교재 뒤 <b>정답·해설</b>로 맞춰보세요.
+            </span>
+          )}
+          <div className="flex flex-wrap gap-1.5">
+            {MARKS.map(([m, label, on]) => (
+              <button key={m} type="button" onClick={() => onMark(m)}
+                className={`h-9 rounded-full border px-3 text-xs font-bold ${
+                  mark === m ? on : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default function StudentWorkbooks() {
@@ -255,6 +310,9 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
   const [mode, setMode] = useState<'view' | 'grade'>('view')   // 보기 / 채점(직접 풀기)
   const [answers, setAnswers] = useState<Record<string, string>>({})   // 채점 모드 입력값
+  // 자기채점 — 그래프·작도·서술형처럼 기계 대조가 안 되는 문항을 학생이 직접 표시한 값
+  const [selfMarks, setSelfMarks] = useState<Record<string, Mark>>({})
+  const [revealed, setRevealed] = useState<Record<string, boolean>>({})  // 정답을 연 문항
   const [savedAt, setSavedAt] = useState('')
   const [retryOpen, setRetryOpen] = useState<string | null>(null)      // 다시 풀기 인라인 입력 중인 문항
   const [retryAns, setRetryAns] = useState('')                          // 다시 풀기 입력값
@@ -318,7 +376,10 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
 
   // 이 페이지에서 자동채점 가능한 문항 (텍스트 정답) — 채점 모드 대상
   const gradableOnPage = pageItems.filter(wbGradable)
+  // 자동채점 불가 문항(그래프·작도·서술형) — 자기채점 대상
+  const selfOnPage = pageItems.filter(i => !wbGradable(i))
   const answeredCount = gradableOnPage.filter(i => (answers[i.id] ?? '') !== '').length
+  const selfCount = selfOnPage.filter(i => selfMarks[i.id]).length
 
   // 채점하기 — 입력한 답을 자동채점해 저장(같은 날·같은 쪽 학생 기록에 덮어쓰기)
   function submitGrade() {
@@ -329,6 +390,12 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
         const unknown = ans === '모름'
         return { itemId: i.id, studentAnswer: ans, correct: unknown ? false : autoCorrectWB(i, ans), unknown: unknown || undefined }
       })
+    // 자기채점(그래프·작도·서술형) — self:true 로 자동채점과 구분해 기록
+    for (const i of selfOnPage) {
+      const m = selfMarks[i.id]
+      if (!m) continue
+      results.push({ itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined, self: true })
+    }
     if (results.length === 0) return
     const today = todayKey()
     const exist = gradings.find(g =>
@@ -341,6 +408,8 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
     setAnswers({})
+    setSelfMarks({})
+    setRevealed({})
     setMode('view')
     setOnlyWrong(false)
   }
@@ -417,7 +486,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
         </div>
         <span className="text-xs text-ink2">
           {mode === 'grade'
-            ? <>이 쪽 채점 문항 {gradableOnPage.length} · 입력 <b className="text-pine-dark">{answeredCount}</b></>
+            ? <>이 쪽 채점 문항 {gradableOnPage.length} · 입력 <b className="text-pine-dark">{answeredCount}</b>{selfOnPage.length > 0 && <> · 자기채점 {selfOnPage.length} · 표시 <b className="text-pine-dark">{selfCount}</b></>}</>
             : <>이 쪽 {pageItems.length}문항 · 채점 {gradedOnPage} · 오답·모름 <b className="text-clay">{wrongOnPage}</b>{carelessOnPage > 0 && <> · 실수 <b className="text-amber">{carelessOnPage}</b></>}</>}
         </span>
         <div className="grow" />
@@ -452,9 +521,11 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                         <WbAnswerInput item={i} value={answers[i.id] ?? ''} level={levelFromCourse(wb.course)}
                           onChange={v => setAnswers(prev => ({ ...prev, [i.id]: v }))} />
                       ) : (
-                        <div className="rounded-lg bg-paper2/60 px-2.5 py-2 text-xs text-ink2">
-                          ✍️ 이 문항은 선생님이 채점해요 (자동채점 대상 아님).
-                        </div>
+                        <SelfCheckInput item={i} mark={selfMarks[i.id]} revealed={!!revealed[i.id]}
+                          onReveal={() => setRevealed(p => ({ ...p, [i.id]: true }))}
+                          onMark={m => setSelfMarks(p => (p[i.id] === m
+                            ? Object.fromEntries(Object.entries(p).filter(([k]) => k !== i.id))
+                            : { ...p, [i.id]: m }))} />
                       )}
                     </div>
                   </div>
@@ -465,11 +536,14 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
             <div className="mt-4 flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-white px-5 py-4">
               <span className="text-sm text-ink2">
                 채점 문항 <b className="text-ink">{gradableOnPage.length}</b> 중 <b className="text-pine-dark">{answeredCount}</b>개 입력함
+                {selfOnPage.length > 0 && (
+                  <> · 자기채점 <b className="text-ink">{selfOnPage.length}</b> 중 <b className="text-pine-dark">{selfCount}</b>개 표시함</>
+                )}
               </span>
               <div className="grow" />
               <button onClick={() => setMode('view')}
                 className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:bg-paper2">취소</button>
-              <button onClick={submitGrade} disabled={answeredCount === 0}
+              <button onClick={submitGrade} disabled={answeredCount + selfCount === 0}
                 className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-40">
                 채점하기
               </button>
@@ -510,7 +584,14 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                   )}
                 </div>
                 <div className="grid gap-1.5 p-3.5 text-sm">
-                  <div className="text-xs text-ink2">{typeName(i.typeId)}</div>
+                  <div className="flex flex-wrap items-center gap-1.5 text-xs text-ink2">
+                    {typeName(i.typeId)}
+                    {rec?.self && (
+                      <span className="rounded-full bg-paper2 px-2 py-0.5 text-[10px] font-bold text-ink2">
+                        ✍️ 자기채점
+                      </span>
+                    )}
+                  </div>
                   {rec?.ans && (
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="text-xs font-semibold text-ink2">내 답 :</span>
