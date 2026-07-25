@@ -83,6 +83,9 @@ export function normMath(input: string): string {
   // 전각 → 반각, KaTeX 구분자 제거
   t = t.replace(/[！-～]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0xfee0))
   t = t.replace(/\$/g, '')
+  // 원문자 ①②③… → 1,2,3 — 교재 정답은 '4', 학생앱 객관식 버튼은 '④'로 들어온다.
+  // (이 변환이 빠지면 객관식 전 문항이 오답 처리된다)
+  t = t.replace(/[①-⑳]/g, ch => String(ch.charCodeAt(0) - 0x245f))
   // 표(배열) 답안 껍데기 제거
   t = t.replace(/\\begin\{[a-z*]+\}(?:\{[^{}]*\})?|\\end\{[a-z*]+\}|\\hline/g, ' ')
   // LaTeX 간격 명령
@@ -129,6 +132,8 @@ export function normMath(input: string): string {
   // 중괄호는 그룹 표시일 뿐 — 지수 표기 ^{2} 는 ^2 로
   t = t.replace(/\^\s*\{([^{}]*)\}/g, '^($1)').replace(/[{}]/g, '')
   t = t.replace(/\s+/g, '').toLowerCase()
+  // 정답 데이터에 섞여 들어온 꼬리 마침표 제거 ("3., 4" → "3,4") — 소수점은 뒤에 숫자가 있어 무사
+  t = t.replace(/(\d)\.(?=,|$)/g, '$1')
   // O/X 통일 — 다중답("×,○")도 각 칸마다 적용
   return t.split(',').map(tok =>
     /^[oο○◯〇]$/i.test(tok) ? 'O'
