@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
-import { wbAnswerImg, normAnswer, isEssayAnswer } from '../../lib/answers'
+import { wbAnswerImg, normAnswer, isEssayAnswer, answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
 import { mathEqual } from '../../lib/mathAnswer'
 import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../components/student/MathAnswerField'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -91,6 +91,33 @@ function WbAnswerInput({ item, value, onChange, level = '중등' }: {
           </button>
         ))}
         {unknownBtn}
+      </div>
+    )
+  }
+  // (가)·(나)를 함께 묻는 주관식 — 칸을 나눠 받는다.
+  // 한 칸에 "가=D 위, 나=펩신"처럼 몰아 쓰면 표기가 달라 오답 처리되던 문제를 없앤다.
+  const parts = answerParts(item.answer)
+  if (parts) {
+    const cur = splitAnswerParts(value, parts.length)
+    const setPart = (idx: number, v: string) =>
+      onChange(joinAnswerParts(parts.map((_, i) => (i === idx ? v : cur[i] ?? ''))))
+    const blanks = parts.filter((_, i) => !(cur[i] ?? '').trim())
+    const partial = value !== '모름' && blanks.length > 0 && blanks.length < parts.length
+    return (
+      <div className="grid gap-1.5">
+        <span className="text-[10px] text-ink2/70">답이 {parts.length}개인 문제예요 — 칸마다 하나씩 적어요</span>
+        {parts.map((part, idx) => (
+          <div key={part.label} className="flex items-start gap-2">
+            <span className="mt-2 w-7 shrink-0 text-sm font-bold text-ink2">({part.label})</span>
+            <MathAnswerField value={cur[idx] ?? ''} onChange={v => setPart(idx, v)} level={level} width="w-32" />
+          </div>
+        ))}
+        {partial && (
+          <span className="text-[10px] font-semibold text-amber">
+            {blanks.map(b => `(${b.label})`).join(' ')} 칸이 아직 비었어요 — 다 채워야 정답 처리돼요
+          </span>
+        )}
+        <div>{unknownBtn}</div>
       </div>
     )
   }

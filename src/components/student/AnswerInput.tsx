@@ -1,5 +1,6 @@
 import type { Problem } from '../../types'
 import { mathEqual } from '../../lib/mathAnswer'
+import { answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
 import MathAnswerField, { type KeypadLevel } from './MathAnswerField'
 
 // ⚠️ 학생앱용 보존 컴포넌트 — 현재 앱 어디에서도 라우팅·import 되지 않는다.
@@ -54,6 +55,24 @@ export default function AnswerInput({ p, value, onChange, level = '중등' }: {
             className={`h-9 w-9 rounded-full border text-base font-black ${value === m ? (m === '○' ? 'border-pine bg-pine text-paper' : 'border-clay bg-clay text-white') : 'border-line bg-white text-ink hover:bg-paper2'}`}>
             {m}
           </button>
+        ))}
+      </div>
+    )
+  }
+  // (가)·(나)를 함께 묻는 주관식 — 칸을 나눠 받는다 (교재 채점 화면과 같은 규칙)
+  const parts = answerParts(p.answer)
+  if (parts) {
+    const cur = splitAnswerParts(value, parts.length)
+    const setPart = (idx: number, v: string) =>
+      onChange(joinAnswerParts(parts.map((_, i) => (i === idx ? v : cur[i] ?? ''))))
+    return (
+      <div className="grid gap-1.5">
+        <span className="text-[10px] text-ink2/70">답이 {parts.length}개인 문제예요 — 칸마다 하나씩 적어요</span>
+        {parts.map((part, idx) => (
+          <div key={part.label} className="flex items-start gap-2">
+            <span className="mt-2 w-7 shrink-0 text-sm font-bold text-ink2">({part.label})</span>
+            <MathAnswerField value={cur[idx] ?? ''} onChange={v => setPart(idx, v)} level={level} width="w-40" />
+          </div>
         ))}
       </div>
     )

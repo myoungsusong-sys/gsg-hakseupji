@@ -259,7 +259,14 @@ function tokenEq(correct: string, student: string): boolean {
 }
 
 /** "x=3" 처럼 붙은 변수 라벨을 뗀다 (학생이 값만 써도 정답). */
-const stripLabel = (t: string) => t.replace(/^[a-zπθ가-힣]{1,4}=/, '')
+// 답 앞에 붙는 라벨을 뗀다 — "x=3"의 x=, 그리고 (가)·가)·가:·가= 같은 소문항 표기.
+// `(가) D` 와 `가=D` 를 같은 답으로 보게 해준다. 라벨을 뗀 뒤 내용이 다르면 여전히 오답.
+// ⚠️ 라벨을 떼서 빈 문자열이 되면(정답 자체가 "(가)"인 기호 고르기 문항) 떼지 않는다.
+//    안 그러면 정답 (가) 와 학생 답 (나) 가 둘 다 ''가 되어 오답이 정답으로 뒤집힌다.
+const stripLabel = (t: string) => {
+  const s = t.replace(/^\(?\s*[가-아]\s*[):=]\s*/, '').replace(/^[a-zπθ가-힣]{1,4}=/, '')
+  return s.trim() ? s : t
+}
 
 /** "A(또는B)" · "A또는B" 형태의 대안 정답을 모두 펼친다. */
 function alternatives(raw: string): string[] {

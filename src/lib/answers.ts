@@ -35,6 +35,56 @@ export function isEssayAnswer(answer: string | undefined | null): boolean {
   return plain.length >= 12 && /\s/.test(plain) && /[가-힣]/.test(plain) && ESSAY_TAIL.test(plain)
 }
 
+// ── (가)·(나)를 함께 묻는 주관식 ────────────────────────────────────────
+// 오투 중등과학 2-2 41P 14번처럼 한 문항이 (가)·(나) 두 가지를 묻는 주관식이 있다.
+// 정답은 `(가) D, (나) 펩신` 형태로 저장돼 있는데 입력칸이 하나뿐이라, 학생이
+// `가=D 위, 나=펩신`처럼 자기 식으로 적으면 내용이 맞아도 오답 처리됐다.
+// → 정답에서 파트를 읽어 (가)·(나) 칸을 나눠 받고, 같은 포맷으로 합성해 저장한다.
+// 오탐 방지: 문장형 서술답(\; 포함·60자 초과·15자 넘는 파트)이나 라벨이 가·나·다 순서가
+// 아닌 답은 대상에서 뺀다. (등록 교재 주관식 128만 문항 중 약 390건이 대상)
+// (2026-07-26 명수쌤 지시)
+export const PART_LABELS = ['가', '나', '다', '라', '마', '바', '사', '아'] as const
+
+export function answerParts(answer: string | undefined | null): { label: string; value: string }[] | null {
+  const a = (answer ?? '').trim()
+  if (!a || a.includes('\\;') || a.length > 60) return null
+  if (!a.startsWith('(가)')) return null
+  const labels = [...a.matchAll(/\(([가-아])\)/g)].map(m => m[1])
+  if (labels.length < 2 || labels.some((l, i) => l !== PART_LABELS[i])) return null
+  const chunks = a.split(/\(([가-아])\)/)          // ['', '가', ' D, ', '나', ' 펩신']
+  const out: { label: string; value: string }[] = []
+  for (let i = 1; i < chunks.length; i += 2) {
+    const value = (chunks[i + 1] ?? '').trim().replace(/^[,·]\s*/, '').replace(/[,·]\s*$/, '').trim()
+    if (!value || value.length > 15) return null
+    out.push({ label: chunks[i], value })
+  }
+  return out.length >= 2 ? out : null
+}
+
+/**
+ * 파트별 학생 입력을 정답과 같은 포맷(`(가) X, (나) Y`)으로 합친다. 전부 비면 ''.
+ * 빈 칸은 빼고 합친다 — `(가) D, (나) ` 같은 어정쩡한 답이 기록으로 남지 않게.
+ * (칸을 덜 채우면 정답과 개수가 달라 오답 처리되는데, 이건 실제로 덜 푼 것이 맞다)
+ */
+export function joinAnswerParts(values: string[]): string {
+  return values
+    .map((v, i) => (v.trim() ? `(${PART_LABELS[i]}) ${v.trim()}` : ''))
+    .filter(Boolean)
+    .join(', ')
+}
+
+/** 합성된 `(가) X, (나) Y` 문자열을 다시 칸별 값으로 되돌린다 (입력 중 상태 복원용). */
+export function splitAnswerParts(joined: string, n: number): string[] {
+  const out = Array<string>(n).fill('')
+  if (!joined || joined === '모름') return out
+  const chunks = joined.split(/\(([가-아])\)/)
+  for (let i = 1; i < chunks.length; i += 2) {
+    const idx = PART_LABELS.indexOf(chunks[i] as typeof PART_LABELS[number])
+    if (idx >= 0 && idx < n) out[idx] = (chunks[i + 1] ?? '').trim().replace(/[,·]\s*$/, '').trim()
+  }
+  return out
+}
+
 export function normAnswer(s: string): string {
   let t = s.trim()
   // 공백 전부 제거
