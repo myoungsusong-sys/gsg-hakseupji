@@ -117,7 +117,8 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen">
-      {stale && <UpdateBanner items={unseen.length ? unseen : changelog.slice(0, 1)} />}
+      {/* 선생님 화면은 자동 새로고침 금지 — 채점 도중 리로드되면 채점하던 학생·진행이 날아간다 */}
+      {stale && <UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
       <header className="no-print sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-6 py-3">
           <button onClick={() => nav('/')} className="flex items-baseline gap-2">

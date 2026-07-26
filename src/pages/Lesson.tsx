@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useStore } from '../lib/store'
 import type { Student } from '../types'
 import GradePanel from '../components/lesson/GradePanel'
@@ -38,7 +38,7 @@ function gradeSortKey(g: string): number {
 }
 
 export default function Lesson() {
-  const { students } = useStore()
+  const { students, synced } = useStore()
   const active = students.filter(s => s.active)
   const [studentId, setStudentId] = useState<string | null>(active[0]?.id ?? null)
   // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
@@ -47,6 +47,13 @@ export default function Lesson() {
   const [groupBy, setGroupBy] = useState<'학년' | '반'>('학년')
   const [q, setQ] = useState('')
   const [closed, setClosed] = useState<Set<string>>(new Set())
+
+  // 첫 렌더에는 클라우드 동기화 전이라 active가 비어 있다. 그래서 studentId 초기값이 null로 굳어,
+  // 학생이 다 들어온 뒤에도 아무도 선택되지 않은 채 채점판이 비어 보였다(2026-07-26 명수쌤 제보).
+  // 학생 명부가 들어오면 첫 학생을 잡아 준다. 이미 고른 학생·그룹은 건드리지 않는다.
+  useEffect(() => {
+    if (studentId === null && !groupName && active.length > 0) setStudentId(active[0].id)
+  }, [active, studentId, groupName])
 
   const student = groupName ? null : active.find(s => s.id === studentId) ?? null
 
@@ -85,6 +92,14 @@ export default function Lesson() {
   const allOpen = groups.every(([name]) => !closed.has(name))
 
   if (active.length === 0) {
+    // 동기화 전이면 "학생을 등록하세요"가 잠깐 스쳐 학생이 없어진 것처럼 보인다 → 불러오는 중으로 구분
+    if (!synced) {
+      return (
+        <div className="rounded-2xl border border-dashed border-line bg-white/60 p-16 text-center text-ink2">
+          학생 명부를 불러오는 중…
+        </div>
+      )
+    }
     return (
       <div className="rounded-2xl border border-dashed border-line bg-white/60 p-16 text-center text-ink2">
         먼저 <b className="text-pine">관리 → 학생 관리</b>에서 학생을 등록하세요.

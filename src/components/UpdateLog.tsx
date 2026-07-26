@@ -43,9 +43,11 @@ export function useChangelog() {
 }
 
 // 상단 배너 — 변경 내용을 보여주고 카운트다운 후 자동 새로고침(‘나중에’로 중단 가능)
-export function UpdateBanner({ items, seconds = 20 }: { items: ChangeEntry[]; seconds?: number }) {
+// auto=false면 카운트다운 없이 배너만 띄운다. 선생님 화면은 채점 도중 새로고침되면
+// 채점하던 학생·진행이 통째로 날아가므로(2026-07-26 명수쌤 제보) 반드시 수동으로 둔다.
+export function UpdateBanner({ items, seconds = 20, auto = true }: { items: ChangeEntry[]; seconds?: number; auto?: boolean }) {
   const [count, setCount] = useState(seconds)
-  const [paused, setPaused] = useState(false)
+  const [paused, setPaused] = useState(!auto)
   useEffect(() => {
     if (paused) return
     if (count <= 0) { location.reload(); return }
