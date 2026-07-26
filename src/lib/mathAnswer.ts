@@ -131,6 +131,11 @@ export function normMath(input: string): string {
   t = t.replace(/^\s*\((?:위에서부터|왼쪽에서부터|순서대로|차례로|예|답)\)\s*/g, '')
   // 중괄호는 그룹 표시일 뿐 — 지수 표기 ^{2} 는 ^2 로
   t = t.replace(/\^\s*\{([^{}]*)\}/g, '^($1)').replace(/[{}]/g, '')
+  // 천단위 쉼표는 한 수의 일부 — 떼어낸다. "1,200" = "1200".
+  // ⚠️ 공백을 지우기 전에 처리해야 한다. 붙여 쓴 "1,200"만 한 수로 보고,
+  //    띄어 쓴 "1, 200"은 답 두 개(1과 200)로 남긴다.
+  // 안 하면 1,200을 답 두 개로 읽어 "200,1"까지 정답이 되고, 정작 "1200"이라 쓴 학생이 오답 처리된다.
+  t = t.replace(/(\d),(\d{3})(?!\d)/g, '$1$2')
   t = t.replace(/\s+/g, '').toLowerCase()
   // 정답 데이터에 섞여 들어온 꼬리 마침표 제거 ("3., 4" → "3,4") — 소수점은 뒤에 숫자가 있어 무사
   t = t.replace(/(\d)\.(?=,|$)/g, '$1')
@@ -297,6 +302,20 @@ export function mathEqual(correct: string, student: string): boolean {
 
   const sAlts = alternatives(sRaw).map(normMath).filter(Boolean)
   if (!sAlts.length) return false
+  // 답이 여러 개인 문항(정답 "E, 이자")을 학생이 쉼표 없이 "E 이자"로 띄어 쓴 경우 —
+  // 조각 수가 정답과 같을 때만 쉼표를 넣은 것으로 보고 다중답 비교에 태운다.
+  // (조각 수가 다르면 그대로 오답. "15.4 kg, 1.1 kg"를 띄어 쓰면 4조각이라 매칭 안 됨)
+  // ⚠️ 천단위 쉼표("1,200")는 답이 두 개가 아니라 한 수이므로 제외한다.
+  if (!sRaw.includes(',') && /\s/.test(sRaw) && !/\d\s*,\s*\d{3}(?!\d)/.test(correct ?? '')) {
+    const cn = (correct ?? '').split(',').length
+    const toks = sRaw.split(/\s+/).filter(Boolean)
+    if (cn > 1 && toks.length === cn) {
+      for (const a of alternatives(toks.join(','))) {
+        const n = normMath(a)
+        if (n) sAlts.push(n)
+      }
+    }
+  }
 
   for (const cAlt of alternatives(correct)) {
     const c = normMath(cAlt)
