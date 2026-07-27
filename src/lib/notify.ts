@@ -1,4 +1,5 @@
-// 카톡 알림 보내기 (클라이언트 쪽) — /api/notify-kakao 호출
+// 카톡 알림 보내기 (클라이언트 쪽) — /api/diagnose 에 action:'notify' 로 보낸다
+// (별도 함수로 두면 Vercel Hobby 의 서버리스 함수 12개 상한을 넘어 배포가 실패한다)
 //
 // 알림은 **보고 저장을 방해하면 안 된다.** 실패해도 조용히 넘기고, 보고는 이미 클라우드에
 // 저장돼 선생님 화면 보고함에 남는다. 알림은 "빨리 알아채게" 하는 보조 수단일 뿐이다.
@@ -29,10 +30,10 @@ export function shouldNotify(key: string, minutes = 30): boolean {
 
 export async function notifyKakao(a: { title: string; text: string; url?: string }): Promise<NotifyResult> {
   try {
-    const res = await fetch('/api/notify-kakao', {
+    const res = await fetch('/api/diagnose', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(a),
+      body: JSON.stringify({ action: 'notify', ...a }),
     })
     const j = await res.json().catch(() => ({}))
     if (!res.ok) return { ok: false, error: String(j?.error ?? `전송 실패 (${res.status})`) }

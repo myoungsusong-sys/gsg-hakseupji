@@ -73,12 +73,88 @@ function readBody(req: any): Promise<any> {
   })
 }
 
+
+// ── 📱 카톡 알림 (같은 함수 안에 둔다) ─────────────────────────────────────
+// ⚠️ 별도 파일(api/notify-kakao.ts)로 뒀더니 **Vercel Hobby 플랜의 서버리스 함수 12개
+// 상한**을 넘어 배포가 조용히 실패했다(changelog 가 갱신되지 않아 알아챘다). 그래서
+// 진단 API 안에 `action: 'notify'` 로 합쳤다. 함수를 새로 추가할 때는 개수를 먼저 세라.
+//
+// 방식: 카카오톡 **"나에게 보내기"**(메모 API) — 알림톡은 사업자등록+템플릿 심사, 친구에게
+// 보내기는 검수가 필요하지만 이건 둘 다 없이 본인에게 보낼 수 있다.
+// 필요한 환경변수: KAKAO_REST_KEY, KAKAO_REFRESH_TOKEN, (선택) KAKAO_CLIENT_SECRET
+const TOKEN_URL = 'https://kauth.kakao.com/oauth/token'
+const SEND_URL = 'https://kapi.kakao.com/v2/api/talk/memo/default/send'
+
+async function sendKakao(b: any, res: any) {
+  const restKey = process.env.KAKAO_REST_KEY
+  const refreshToken = process.env.KAKAO_REFRESH_TOKEN
+  const clientSecret = process.env.KAKAO_CLIENT_SECRET
+  if (!restKey || !refreshToken) {
+    // 설정 전에는 조용히 꺼둔 상태 — 알림만 안 갈 뿐 보고 저장은 이미 끝났다
+    res.status(503).json({ error: '카톡 알림이 아직 설정되지 않았습니다(KAKAO_REST_KEY / KAKAO_REFRESH_TOKEN).' })
+    return
+  }
+  try {
+    const form = new URLSearchParams({
+      grant_type: 'refresh_token', client_id: restKey, refresh_token: refreshToken,
+    })
+    if (clientSecret) form.set('client_secret', clientSecret)
+    const tRes = await fetch(TOKEN_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
+      body: form,
+    })
+    const t: any = await tRes.json().catch(() => ({}))
+    if (!tRes.ok || !t?.access_token) {
+      res.status(502).json({
+        error: '카톡 로그인 토큰이 만료됐습니다. 리프레시 토큰을 다시 발급해 주세요.',
+        detail: String(t?.error_description ?? t?.error ?? tRes.status).slice(0, 200),
+      })
+      return
+    }
+    // 리프레시 토큰은 만료 1개월 미만일 때만 새로 발급된다. 새 토큰을 안전하게 저장할 곳이
+    // 없어(설정 테이블은 학생 앱도 읽어간다) 저장하지 않고, 대신 카톡 본문에 경고를 붙인다.
+    const leftDays = Number(t.refresh_token_expires_in ?? 0) / 86400
+    const warn = leftDays > 0 && leftDays < 14 ? `⚠️ 카톡 알림 재설정 필요 (${Math.floor(leftDays)}일 남음)\n` : ''
+
+    const url = typeof b.url === 'string' && /^https?:\/\//.test(b.url) ? b.url : 'https://gsg-hakseupji.vercel.app'
+    const sRes = await fetch(SEND_URL, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${t.access_token}`,
+        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+      },
+      body: new URLSearchParams({
+        template_object: JSON.stringify({
+          object_type: 'text',
+          text: `${warn}${String(b.title ?? '학습지앱 알림')}\n${String(b.text ?? '')}`.slice(0, 190),
+          link: { web_url: url, mobile_web_url: url },
+          button_title: '열어보기',
+        }),
+      }),
+    })
+    const s: any = await sRes.json().catch(() => ({}))
+    if (!sRes.ok) {
+      res.status(502).json({ error: '카톡 전송에 실패했습니다.', detail: String(s?.msg ?? sRes.status).slice(0, 200) })
+      return
+    }
+    res.status(200).json({ ok: true, warn: warn ? warn.trim() : undefined })
+  } catch (e: any) {
+    res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
+  }
+}
+
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'POST only' }); return }
+
+  // 카톡 알림도 이 함수가 받는다 (함수 개수 상한 때문 — 위 주석 참고)
+  const pre = await readBody(req)
+  if (pre?.action === 'notify') { await sendKakao(pre, res); return }
+
   const key = process.env.ANTHROPIC_API_KEY
   if (!key) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
 
-  const b = await readBody(req)
+  const b = pre
   const snap = {
     앱: b.app === 'teacher' ? '선생님 화면' : '학생앱',
     현재_주소: String(b.route ?? '').slice(0, 200),
