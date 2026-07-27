@@ -108,7 +108,7 @@ export default function StudentShell() {
               <NavLink to="/student/lectures" className={tab}>강의</NavLink>
             </nav>
             <div className="grow" />
-            <FixItButton app="student" synced={synced} />
+            <FixItButton app="student" synced={synced} who={me.name} />
             <StudentHeaderExtras me={me} onLogout={logout} />
           </div>
         </header>

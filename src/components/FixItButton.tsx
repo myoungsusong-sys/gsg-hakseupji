@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import { recentErrors, recentHops, storageUsage } from '../lib/errorLog'
+import { useStore, uid } from '../lib/store'
+import type { BugReport } from '../types'
 import { runHealAction, ACTION_LABEL, type HealAction } from '../lib/selfHeal'
 
 // 🛠 화면이 이상해요 — AI 점검 (학생앱·선생님 화면 공통) (2026-07-28 명수쌤 지시)
@@ -20,21 +22,31 @@ type Diag = {
 
 const REPORT_KEY = 'gsg-bug-reports'
 
-export default function FixItButton({ app, appVersion, synced, className = '' }: {
+export default function FixItButton({ app, appVersion, synced, who, className = '' }: {
   app: 'student' | 'teacher'
   appVersion?: string
   synced?: boolean
+  who?: string                    // 학생 이름 (선생님 화면이면 비움)
   className?: string
 }) {
   const [open, setOpen] = useState(false)
+  const { bugReports } = useStore()
+  // 선생님에게는 아직 처리 안 한 보고 건수를 배지로 보여준다 (쌓이기만 하면 아무도 안 본다)
+  const openCount = app === 'teacher' ? bugReports.filter(r => r.status === 'open').length : 0
   return (
     <>
-      <button type="button" onClick={() => setOpen(true)} title="화면이 이상할 때 눌러요"
-        className={className || 'rounded-lg border border-line bg-white px-2.5 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2'}>
+      <button type="button" onClick={() => setOpen(true)}
+        title={openCount ? `안 본 오류 보고 ${openCount}건` : '화면이 이상할 때 눌러요'}
+        className={`relative ${className || 'rounded-lg border border-line bg-white px-2.5 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2'}`}>
         🛠 <span className="hidden sm:inline">화면이 이상해요</span>
+        {openCount > 0 && (
+          <span className="absolute -right-1.5 -top-1.5 min-w-[18px] rounded-full bg-clay px-1 text-[10px] font-black leading-[18px] text-white">
+            {openCount}
+          </span>
+        )}
       </button>
       {open && createPortal(
-        <FixItModal app={app} appVersion={appVersion} synced={synced} onClose={() => setOpen(false)} />,
+        <FixItModal app={app} appVersion={appVersion} synced={synced} who={who} onClose={() => setOpen(false)} />,
         document.body,
       )}
     </>
@@ -44,9 +56,10 @@ export default function FixItButton({ app, appVersion, synced, className = '' }:
 // ⚠️ 반드시 createPortal 로 body 에 띄운다. 학생앱·선생님 헤더에 backdrop-blur 가 걸려 있어
 // (backdrop-filter 가 containing block 을 만든다) 헤더 안에서 렌더하면 fixed 모달이 헤더
 // 박스 기준으로 배치돼 화면 위로 잘린다.
-function FixItModal({ app, appVersion, synced, onClose }: {
-  app: 'student' | 'teacher'; appVersion?: string; synced?: boolean; onClose: () => void
+function FixItModal({ app, appVersion, synced, who, onClose }: {
+  app: 'student' | 'teacher'; appVersion?: string; synced?: boolean; who?: string; onClose: () => void
 }) {
+  const { bugReports, saveBugReport } = useStore()
   const [note, setNote] = useState('')
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
@@ -89,15 +102,20 @@ function FixItModal({ app, appVersion, synced, onClose }: {
     }
   }
 
-  // 보고서는 이 기기 수신함에도 남긴다 (선생님이 본인 화면에서 누른 경우 다시 볼 수 있게)
+  // 보고서는 **클라우드 한곳(hj_settings.bugReports)** 에 모은다 — 학생 기기에만 남으면
+  // 선생님이 영영 못 본다. 실패해도(오프라인 등) 이 기기에 남겨 두었다가 다음에 올라간다.
   function saveReport(d: Diag) {
+    const r: BugReport = {
+      id: uid('bug'), at: new Date().toISOString(), app,
+      route: location.hash || '#/', who, note: note || undefined,
+      cause: d.cause, report: d.report, fixable: d.fixable,
+      actions: d.actions.map(a => a.type), status: 'open', appVersion,
+    }
+    try { saveBugReport(r) } catch { /* 아래 로컬 백업으로 */ }
     try {
       const raw = localStorage.getItem(REPORT_KEY)
       const list = raw ? (JSON.parse(raw) as unknown[]) : []
-      list.push({
-        at: new Date().toISOString(), app, route: location.hash,
-        cause: d.cause, report: d.report, note, appVersion,
-      })
+      list.push(r)
       localStorage.setItem(REPORT_KEY, JSON.stringify(list.slice(-30)))
     } catch { /* 쿼터 초과면 굳이 남기지 않는다 */ }
   }
@@ -154,6 +172,7 @@ function FixItModal({ app, appVersion, synced, onClose }: {
               이 화면의 주소·오류 기록·저장 공간만 보내요. 이름이나 답안은 보내지 않아요.
             </p>
             {err && <p className="mt-2 text-xs font-semibold text-clay">{err}</p>}
+            {app === 'teacher' && <TeacherInbox reports={bugReports} onUpdate={saveBugReport} />}
           </>
         )}
 
@@ -209,6 +228,61 @@ function FixItModal({ app, appVersion, synced, onClose }: {
             </button>
           </div>
         )}
+      </div>
+    </div>
+  )
+}
+
+/** 보고 시각은 한국 시간으로 보여준다 (저장은 ISO/UTC — 그대로 찍으면 하루 전으로 보인다) */
+function fmtWhen(iso: string): string {
+  const d = new Date(iso)
+  return isNaN(d.getTime()) ? iso : d.toLocaleString('ko-KR', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+}
+
+// ── 선생님 화면에서만: 받은 오류 보고함 ──────────────────────────────────
+// 학생 기기에서 올라온 보고를 한곳에서 보고 처리한다. 같은 화면·같은 원인이 반복되면
+// 건수로 드러나므로 무엇부터 고쳐야 하는지 바로 보인다.
+function TeacherInbox({ reports, onUpdate }: { reports: BugReport[]; onUpdate: (r: BugReport) => void }) {
+  const [showDone, setShowDone] = useState(false)
+  const list = [...reports].reverse().filter(r => (showDone ? true : r.status === 'open'))
+  if (!reports.length) return null
+  return (
+    <div className="mt-4 border-t border-line pt-3">
+      <div className="mb-2 flex items-center justify-between">
+        <span className="text-xs font-black">
+          받은 오류 보고 {reports.filter(r => r.status === 'open').length}건
+        </span>
+        <button onClick={() => setShowDone(v => !v)} className="text-[11px] font-semibold text-ink2 underline">
+          {showDone ? '안 본 것만' : '처리한 것도 보기'}
+        </button>
+      </div>
+      {!list.length && <p className="py-2 text-xs text-ink2">안 본 보고가 없어요.</p>}
+      <div className="grid max-h-64 gap-1.5 overflow-auto">
+        {list.map(r => (
+          <details key={r.id} className={`rounded-lg border px-3 py-2 ${r.status === 'open' ? 'border-line' : 'border-line/50 opacity-60'}`}>
+            <summary className="cursor-pointer text-[11px]">
+              <b>{r.who ?? (r.app === 'teacher' ? '선생님' : '학생')}</b>
+              <span className="text-ink2"> · {fmtWhen(r.at)} · {r.route}</span>
+              {!r.fixable && <span className="ml-1 font-bold text-clay">코드 확인 필요</span>}
+              {r.note && <div className="mt-0.5 truncate text-ink2">“{r.note}”</div>}
+            </summary>
+            <pre className="mt-2 max-h-40 overflow-auto whitespace-pre-wrap break-words text-[11px] leading-relaxed text-ink2">
+              {r.cause}{'\n\n'}{r.report}
+            </pre>
+            <div className="mt-2 flex gap-1.5">
+              <button
+                onClick={() => navigator.clipboard?.writeText(`${r.route}\n${r.note ?? ''}\n\n${r.cause}\n\n${r.report}`)}
+                className="rounded border border-line px-2 py-1 text-[11px] font-bold text-ink2 hover:bg-paper2">
+                📋 복사
+              </button>
+              <button
+                onClick={() => onUpdate({ ...r, status: r.status === 'open' ? 'done' : 'open' })}
+                className="rounded border border-pine px-2 py-1 text-[11px] font-bold text-pine hover:bg-pine-soft">
+                {r.status === 'open' ? '✓ 처리됨으로' : '↩ 다시 열기'}
+              </button>
+            </div>
+          </details>
+        ))}
       </div>
     </div>
   )

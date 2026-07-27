@@ -455,3 +455,20 @@ export const TAG_FILTER_OPTIONS = [
   '유형별 학습', '유형별 오답', '취약유형', '그룹취약유형', '단원별 취약',
   '기간별 오답', '학습지 오답', '교재 오답', '기타',
 ]
+
+// 🛠 AI 점검이 만든 오류 보고 (학생앱·선생님 화면 공통, hj_settings 'bugReports')
+// AI 에는 이름을 보내지 않지만, 저장본에는 누구 화면인지 넣는다 — 선생님이 후속 대응을 하려면 필요하다.
+export type BugReport = {
+  id: string
+  at: string                      // ISO
+  app: 'student' | 'teacher'
+  route: string                   // 그 순간 주소 (튕김 추적의 핵심)
+  who?: string                    // 학생 이름 (선생님 화면이면 비움)
+  note?: string                   // 사용자가 적은 증상
+  cause: string                   // AI 원인 추정
+  report: string                  // 개발자용 보고서
+  fixable: boolean                // 화면에서 고칠 수 있었는지
+  actions?: string[]              // 실행한(또는 제안된) 조치
+  status: 'open' | 'done'
+  appVersion?: string
+}

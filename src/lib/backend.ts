@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -43,7 +43,8 @@ export interface CloudData {
   teachers: Teacher[]                         // 강사 (settings 'teachers')
   ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
   pointEntries: PointEntry[]                   // 포인트 수동/학부모 항목 (settings 'pointEntries')
-  pointSettlements: PointSettlement[]          // 월말 정산 스냅샷 (settings 'pointSettlements')
+  pointSettlements: PointSettlement[]
+  bugReports: BugReport[]                      // 🛠 AI 점검 오류 보고 (settings 'bugReports')          // 월말 정산 스냅샷 (settings 'pointSettlements')
 }
 
 export function noteId(n: DailyNote): string {
@@ -93,6 +94,7 @@ export async function loadAll(): Promise<CloudData | null> {
     sheetTemplates: (settingsMap.get('sheetTemplates') as SheetTemplate[]) ?? [],
     lecturePlans: (settingsMap.get('lecturePlans') as LecturePlan[]) ?? [],
     solveFeedbacks: (settingsMap.get('solveFeedbacks') as SolveFeedback[]) ?? [],
+    bugReports: (settingsMap.get('bugReports') as BugReport[]) ?? [],
     teachers: (settingsMap.get('teachers') as Teacher[]) ?? [],
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
     pointEntries: (settingsMap.get('pointEntries') as PointEntry[]) ?? [],
@@ -155,6 +157,7 @@ export const cloud = {
       local.sheetTemplates.length ? this.setSetting('sheetTemplates', local.sheetTemplates) : Promise.resolve(),
       local.lecturePlans.length ? this.setSetting('lecturePlans', local.lecturePlans) : Promise.resolve(),
       local.solveFeedbacks.length ? this.setSetting('solveFeedbacks', local.solveFeedbacks) : Promise.resolve(),
+      local.bugReports.length ? this.setSetting('bugReports', local.bugReports) : Promise.resolve(),
       local.teachers.length ? this.setSetting('teachers', local.teachers) : Promise.resolve(),
       Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
       (local.pointEntries ?? []).length ? this.setSetting('pointEntries', local.pointEntries) : Promise.resolve(),

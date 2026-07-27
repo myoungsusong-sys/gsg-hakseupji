@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -41,6 +41,7 @@ interface Persisted {
   sheetTemplates: SheetTemplate[]
   lecturePlans: LecturePlan[]
   solveFeedbacks: SolveFeedback[]
+  bugReports: BugReport[]
   teachers: Teacher[]
   ttChecks: Record<string, true>
   pointEntries: PointEntry[]
@@ -61,6 +62,7 @@ const EMPTY: Persisted = {
   sheetTemplates: [],
   lecturePlans: [],
   solveFeedbacks: [],
+  bugReports: [],
   teachers: [],
   ttChecks: {},
   pointEntries: [],
@@ -98,6 +100,7 @@ interface Store extends Persisted {
   setLecturePlan: (p: LecturePlan) => void          // 진도표 저장/갱신 (학생×교재 1개)
   removeLecturePlan: (id: string) => void
   saveSolveFeedback: (f: SolveFeedback) => void      // 학생 풀이 AI 피드백 저장 (학생×학습지×문항 최신 1개)
+  saveBugReport: (r: BugReport) => void              // 🛠 AI 점검 오류 보고 접수/갱신 (최근 200건 유지)
   addTeacher: (t: Omit<Teacher, 'id' | 'active'>) => string   // 강사 등록
   updateTeacher: (id: string, patch: Partial<Teacher>) => void
   removeTeacher: (id: string) => void
@@ -177,6 +180,7 @@ function fromCloud(r: CloudData): Persisted {
     sheetTemplates: r.sheetTemplates ?? [],
     lecturePlans: r.lecturePlans ?? [],
     solveFeedbacks: r.solveFeedbacks ?? [],
+    bugReports: r.bugReports ?? [],
     teachers: r.teachers ?? [],
     ttChecks: r.ttChecks ?? {},
     pointEntries: r.pointEntries ?? [],
@@ -194,6 +198,7 @@ function toCloud(s: Persisted): CloudData {
     savedReports: s.savedReports,
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers,
+    bugReports: s.bugReports,
     ttChecks: s.ttChecks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
@@ -573,6 +578,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     removeLecturePlan: id => {
       const next = stateRef.current.lecturePlans.filter(x => x.id !== id)
       set(s => ({ ...s, lecturePlans: next })); cloud.setSetting('lecturePlans', next)
+    },
+    saveBugReport: r => {
+      // 보고는 쌓이기만 하면 못 본다 — 클라우드 한곳에 모아 선생님 화면에서 확인·처리한다
+      const next = [...stateRef.current.bugReports.filter(x => x.id !== r.id), r].slice(-200)
+      set(s => ({ ...s, bugReports: next })); cloud.setSetting('bugReports', next)
     },
     saveSolveFeedback: f => {
       const next = [...stateRef.current.solveFeedbacks.filter(x => x.id !== f.id), f]
