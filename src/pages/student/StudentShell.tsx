@@ -6,6 +6,7 @@ import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail } from '../../lib/role'
 import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
+import FixItButton from '../../components/FixItButton'
 import { useChangelog, UpdateBanner } from '../../components/UpdateLog'
 import { StudentSelfCtx, tickStudySecond } from './common'
 import { todayKey } from '../../lib/dates'
@@ -107,6 +108,7 @@ export default function StudentShell() {
               <NavLink to="/student/lectures" className={tab}>강의</NavLink>
             </nav>
             <div className="grow" />
+            <FixItButton app="student" synced={synced} />
             <StudentHeaderExtras me={me} onLogout={logout} />
           </div>
         </header>

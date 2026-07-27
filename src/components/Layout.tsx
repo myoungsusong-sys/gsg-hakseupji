@@ -4,6 +4,7 @@ import { useStore } from '../lib/store'
 import { SUBJECTS, useSubject } from '../lib/subject'
 import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
+import FixItButton from './FixItButton'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
 
 // ── 알림센터: 최근 채점(학생 제출)·출제 이벤트를 알림으로 파생 ─────────
@@ -145,6 +146,7 @@ export default function Layout() {
             className="rounded-full bg-amber px-4 py-1.5 text-sm font-bold text-white shadow-sm transition hover:brightness-105">
             내신관
           </button>
+          <FixItButton app="teacher" />
           <button onClick={() => setLogOpen(true)} title="업데이트 이력"
             className="relative rounded-full px-2 py-1.5 text-lg hover:bg-paper2">
             📋
