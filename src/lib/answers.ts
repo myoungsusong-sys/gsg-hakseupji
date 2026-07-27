@@ -43,6 +43,40 @@ export function isEssayAnswer(answer: string | undefined | null): boolean {
   return plain.length >= 12 && /\s/.test(plain) && /[가-힣]/.test(plain) && ESSAY_TAIL.test(plain)
 }
 
+// ── 손으로 치기엔 너무 긴 수식 답 ────────────────────────────────────────
+// 베이직쎈 공통수학1 8P처럼 한 쪽 12문항이 전부 `x^3-2x^2+4xy+3y^2-y+5` 급 다항식인
+// 곳이 있다. 답을 알아도 한 쪽에 250타를 쳐야 해서 학생이 못 견딘다.
+// → 자동채점에서 빼고, 서술형과 같은 모범답안 자기채점으로 돌린다. (2026-07-27 명수쌤 지시)
+//
+// 기준은 "학생이 실제로 쳐야 하는 타수" 15자 이상 + 변수 + (지수·분수·근호). 셋을 모두
+// 요구하는 이유 —
+//  · 길이만 보면 `진호: 55점, 혜영: 53점` 같은 초등 나열형이 대량으로 딸려온다.
+//  · 변수·수식 기호가 없는 답은 아무리 길어도 그냥 숫자·낱말이라 치는 부담이 작다.
+// 초등 교재는 아예 제외한다(자기채점을 맡기기 이른 학년이고, 대상도 986건뿐이었다).
+
+/** 학생이 실제로 쳐야 하는 타수 추정 — LaTeX 껍데기를 학생 표기(`{x}^{3}`→`x^3`)로 벗긴 길이 */
+function typeLen(a: string): number {
+  let t = a
+  for (let i = 0; i < 6; i++) {
+    const n = t.replace(/\\[dt]?frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, '$1/$2')
+    if (n === t) break
+    t = n
+  }
+  return t.replace(/\\sqrt\s*\{([^{}]*)\}/g, '√$1')
+    .replace(/\\[a-zA-Z]+/g, '@')      // 남은 LaTeX 명령은 한 글자로 친다
+    .replace(/[{}]/g, '').replace(/\s+/g, '').length
+}
+
+export function isHeavyMathAnswer(answer: string | undefined | null, elementary = false): boolean {
+  const a = (answer ?? '').trim()
+  if (!a || elementary) return false
+  if (typeLen(a) < 15) return false
+  if (!/[a-zA-Z]/.test(a.replace(/\\[a-zA-Z]+/g, ''))) return false   // 변수 없는 답은 제외
+  // 각도 `^{\circ}` 는 지수로 세지 않는다 — `∠x=50°, ∠y=130°` 는 치기 쉬운 답이다(996건)
+  const s = a.replace(/\^\s*\{?\s*(?:\\circ|°|o)\s*\}?/g, '°')
+  return /\^|\\frac|\\sqrt/.test(s)
+}
+
 // ── (가)·(나)를 함께 묻는 주관식 ────────────────────────────────────────
 // 오투 중등과학 2-2 41P 14번처럼 한 문항이 (가)·(나) 두 가지를 묻는 주관식이 있다.
 // 정답은 `(가) D, (나) 펩신` 형태로 저장돼 있는데 입력칸이 하나뿐이라, 학생이

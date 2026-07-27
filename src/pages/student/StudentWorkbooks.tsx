@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
-import { wbAnswerImg, normAnswer, isEssayAnswer, answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
+import { wbAnswerImg, normAnswer, isEssayAnswer, isHeavyMathAnswer, answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
 import { mathEqual } from '../../lib/mathAnswer'
 import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../components/student/MathAnswerField'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -24,11 +24,12 @@ type Mark = '정답' | '오답' | '모름'
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
 
 // 자동채점 가능 문항 여부 — 정답이 텍스트(객관식·단답·OX)일 때만. 풀이참조·이미지 정답은 제외.
-function wbGradable(item: WBItem): boolean {
+function wbGradable(item: WBItem, elementary = false): boolean {
   const a = (item.answer ?? '').trim()
   if (!a || ['.', '-'].includes(a)) return false
   if (wbAnswerImg(a)) return false   // 이미지 정답 = 자동대조하려면 정답을 보여줘야 함 → 선생님 채점
   if (isEssayAnswer(a)) return false // 서술형·예시답안 = 글자 대조 불가 → 모범답안 보고 자기채점
+  if (item.kind !== '객관식' && isHeavyMathAnswer(a, elementary)) return false // 긴 수식 = 입력 부담 → 자기채점
   return true
 }
 // 학생 답 ↔ 정답 대조는 lib/mathAnswer 의 mathEqual 에 위임한다.
@@ -184,17 +185,20 @@ function WbAnswer({ item }: { item: WBItem }) {
 // 학생이 공책에 풀고 → [정답 확인]으로 앱의 정답 그림(있으면)을 열어 맞춰본 뒤 스스로 ○/✕/모름 표시.
 // 정답 그림이 없는 '풀이참조' 문항은 교재 뒤 해설로 맞추도록 안내한다.
 // (정답을 먼저 보고 베끼는 걸 막으려고, 반드시 "다 풀었어요"를 누른 뒤에만 정답이 열린다)
-function SelfCheckInput({ item, mark, revealed, onReveal, onMark }: {
+function SelfCheckInput({ item, mark, revealed, onReveal, onMark, elementary = false }: {
   item: WBItem
   mark?: Mark
   revealed: boolean
   onReveal: () => void
   onMark: (m: Mark) => void
+  elementary?: boolean
 }) {
   const a = (item.answer ?? '').trim()
   // 앱에 정답이 있는 문항(모범답안 문장 · 정답 그림)과, 정답 자체가 없는 '풀이참조' 문항을 구분
   const hasAnswer = !!a && !['.', '-'].includes(a)
   const essay = isEssayAnswer(a)
+  // 서술형은 아니고 '치기엔 너무 긴 수식'이라 자기채점으로 돌린 문항 — 안내 문구가 달라야 한다
+  const heavy = !essay && item.kind !== '객관식' && isHeavyMathAnswer(a, elementary)
   const MARKS: [Mark, string, string][] = [
     ['정답', '○ 맞았어요', 'border-pine bg-pine text-paper'],
     ['오답', '✕ 틀렸어요', 'border-clay bg-clay text-white'],
@@ -205,6 +209,8 @@ function SelfCheckInput({ item, mark, revealed, onReveal, onMark }: {
       <span className="text-xs font-semibold text-ink2">
         {essay
           ? '✍️ 서술형이에요 — 공책에 답을 쓰고, 모범답안과 뜻이 같은지 보고 표시해요'
+          : heavy
+          ? '✍️ 식이 길어 입력 대신 자기채점이에요 — 공책에 풀고 정답과 맞춰본 뒤 표시해요'
           : '✍️ 그림·서술로 답하는 문항이에요 — 공책에 풀고 정답과 맞춰본 뒤 직접 표시해요'}
       </span>
 
@@ -415,10 +421,12 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const wrongOnPage = pageItems.filter(i => { const m = marks.get(i.id)?.mark; return m === '오답' || m === '모름' }).length
   const carelessOnPage = pageItems.filter(i => marks.get(i.id)?.careless).length   // 실수(다시 풀어 맞힌) 수
 
+  // 초등 교재는 긴 수식 자기채점 대상에서 뺀다 (lib/answers 의 isHeavyMathAnswer 주석 참고)
+  const elem = levelFromCourse(wb.course) === '초등'
   // 이 페이지에서 자동채점 가능한 문항 (텍스트 정답) — 채점 모드 대상
-  const gradableOnPage = pageItems.filter(wbGradable)
-  // 자동채점 불가 문항(그래프·작도·서술형) — 자기채점 대상
-  const selfOnPage = pageItems.filter(i => !wbGradable(i))
+  const gradableOnPage = pageItems.filter(i => wbGradable(i, elem))
+  // 자동채점 불가 문항(그래프·작도·서술형·긴 수식) — 자기채점 대상
+  const selfOnPage = pageItems.filter(i => !wbGradable(i, elem))
   const answeredCount = gradableOnPage.filter(i => (answers[i.id] ?? '') !== '').length
   const selfCount = selfOnPage.filter(i => selfMarks[i.id]).length
 
@@ -550,7 +558,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           <>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {pageItems.map(i => {
-                const gradable = wbGradable(i)
+                const gradable = wbGradable(i, elem)
                 return (
                   <div key={i.id} className="overflow-hidden rounded-2xl border border-line bg-white">
                     <div className="flex items-center gap-2 bg-paper2 px-3.5 py-2 text-ink2/70">
@@ -562,7 +570,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                         <WbAnswerInput item={i} value={answers[i.id] ?? ''} level={levelFromCourse(wb.course)}
                           onChange={v => setAnswers(prev => ({ ...prev, [i.id]: v }))} />
                       ) : (
-                        <SelfCheckInput item={i} mark={selfMarks[i.id]} revealed={!!revealed[i.id]}
+                        <SelfCheckInput item={i} mark={selfMarks[i.id]} revealed={!!revealed[i.id]} elementary={elem}
                           onReveal={() => setRevealed(p => ({ ...p, [i.id]: true }))}
                           onMark={m => setSelfMarks(p => (p[i.id] === m
                             ? Object.fromEntries(Object.entries(p).filter(([k]) => k !== i.id))
@@ -604,7 +612,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
             const careless = !!rec?.careless
             const attempts = rec?.attempts ?? 1
             const wrongish = m === '오답' || m === '모름'
-            const canRetry = wrongish && !careless && attempts < 2 && wbGradable(i)
+            const canRetry = wrongish && !careless && attempts < 2 && wbGradable(i, elem)
             const twiceWrong = wrongish && !careless && attempts >= 2
             const bandCls = careless ? BAND_CLASS['모름'] : m ? BAND_CLASS[m] : BAND_UNMARKED
             return (
