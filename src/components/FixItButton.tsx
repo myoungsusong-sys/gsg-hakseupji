@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { recentErrors, recentHops, storageUsage } from '../lib/errorLog'
 import { useStore, uid } from '../lib/store'
 import type { BugReport } from '../types'
+import { notifyKakao, shouldNotify } from '../lib/notify'
 import { runHealAction, ACTION_LABEL, type HealAction } from '../lib/selfHeal'
 
 // 🛠 화면이 이상해요 — AI 점검 (학생앱·선생님 화면 공통) (2026-07-28 명수쌤 지시)
@@ -112,6 +113,17 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
       actions: d.actions.map(a => a.type), status: 'open', appVersion,
     }
     try { saveBugReport(r) } catch { /* 아래 로컬 백업으로 */ }
+
+    // 카톡 알림 — **화면에서 못 고친 건(코드 확인 필요)만** 보낸다. 자동으로 해결된 것까지
+    // 보내면 알림 피로로 정작 중요한 걸 놓친다. 같은 화면·같은 원인은 30분에 한 번만.
+    if (!d.fixable && shouldNotify(`${r.route}|${d.cause.slice(0, 40)}`)) {
+      notifyKakao({
+        title: '🛠 학습지앱 오류 보고',
+        text: `${r.who ?? (app === 'teacher' ? '선생님' : '학생')} · ${r.route}\n`
+          + `${note ? `"${note}"\n` : ''}${d.cause}`,
+        url: 'https://gsg-hakseupji.vercel.app/#/lesson',
+      }).catch(() => { /* 알림 실패는 무시 — 보고는 이미 저장됐다 */ })
+    }
     try {
       const raw = localStorage.getItem(REPORT_KEY)
       const list = raw ? (JSON.parse(raw) as unknown[]) : []
@@ -252,9 +264,12 @@ function TeacherInbox({ reports, onUpdate }: { reports: BugReport[]; onUpdate: (
         <span className="text-xs font-black">
           받은 오류 보고 {reports.filter(r => r.status === 'open').length}건
         </span>
-        <button onClick={() => setShowDone(v => !v)} className="text-[11px] font-semibold text-ink2 underline">
-          {showDone ? '안 본 것만' : '처리한 것도 보기'}
-        </button>
+        <div className="flex items-center gap-2">
+          <KakaoTest />
+          <button onClick={() => setShowDone(v => !v)} className="text-[11px] font-semibold text-ink2 underline">
+            {showDone ? '안 본 것만' : '처리한 것도 보기'}
+          </button>
+        </div>
       </div>
       {!list.length && <p className="py-2 text-xs text-ink2">안 본 보고가 없어요.</p>}
       <div className="grid max-h-64 gap-1.5 overflow-auto">
@@ -285,5 +300,30 @@ function TeacherInbox({ reports, onUpdate }: { reports: BugReport[]; onUpdate: (
         ))}
       </div>
     </div>
+  )
+}
+
+/** 카톡 알림이 실제로 오는지 확인하는 버튼 — 설정을 바꾼 뒤 여기서 바로 검증한다 */
+function KakaoTest() {
+  const [state, setState] = useState<'idle' | 'busy' | 'ok' | 'fail'>('idle')
+  const [msg, setMsg] = useState('')
+  async function go() {
+    setState('busy'); setMsg('')
+    const r = await notifyKakao({
+      title: '🛠 학습지앱 알림 테스트',
+      text: '이 메시지가 보이면 카톡 알림이 정상입니다.',
+      url: 'https://gsg-hakseupji.vercel.app/#/lesson',
+    })
+    setState(r.ok ? 'ok' : 'fail')
+    setMsg(r.ok ? (r.warn ?? '카톡을 확인해 보세요.') : (r.error ?? '전송 실패'))
+  }
+  return (
+    <span className="flex items-center gap-1.5">
+      <button onClick={go} disabled={state === 'busy'}
+        className="text-[11px] font-semibold text-ink2 underline disabled:opacity-50">
+        {state === 'busy' ? '보내는 중…' : '카톡 알림 테스트'}
+      </button>
+      {msg && <span className={`text-[10px] font-semibold ${state === 'ok' ? 'text-pine' : 'text-clay'}`}>{msg}</span>}
+    </span>
   )
 }
