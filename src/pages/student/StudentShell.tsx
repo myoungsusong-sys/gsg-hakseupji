@@ -86,6 +86,19 @@ export default function StudentShell() {
               <span className="text-xl font-black tracking-tight text-pine-dark">깊은생각</span>
               <span className="text-xl font-light text-ink">학습지</span>
             </div>
+            {/* 🏫 관리앱(대치스파르타 프리미엄) 학생앱에서 [채점하러 가기]로 넘어온 경우 돌아가는 길.
+                (2026-07-27 명수쌤 "학습지앱으로 갔다가 원래 앱으로 어떻게 돌아가?")
+                새 탭으로 열렸으면 그 탭을 닫아 원래 화면으로 돌아가고, 안 닫히면 관리앱 학생 화면으로 이동한다. */}
+            {me.mgmtId && (
+              <button
+                onClick={() => {
+                  window.close()
+                  window.setTimeout(() => { window.location.href = 'https://daechisparta.vercel.app/student' }, 250)
+                }}
+                className="shrink-0 rounded-full border border-line px-3 py-1.5 text-sm font-bold text-ink2 hover:bg-paper2"
+                title="대치스파르타 프리미엄 학생 화면으로 돌아갑니다"
+              >← 프리미엄앱</button>
+            )}
             <nav className="flex items-center gap-1">
               <NavLink to="/student" end className={tab}>학습 홈</NavLink>
               <NavLink to="/student/challenge" className={tab}>챌린지</NavLink>
