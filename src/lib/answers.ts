@@ -26,12 +26,20 @@ export function wbAnswerImg(answer: string | undefined | null): string | null {
 // (자동채점에 두면 사실상 무조건 오답 — 과학 서술형 8.9%, 초등 문장제 0.7%가 여기 해당)
 // → 자동채점에서 빼고, 모범답안을 보여주는 자기채점으로 돌린다.
 const ESSAY_TAIL = /(다|요|음|임|함|됨)\s*\.?\s*$/
+// 서술어미로 끝나지 않지만 정답이 하나로 정해지지 않는 꼬리 — 자동채점하면 무조건 오답이다.
+//  · `… 등` : 예시 나열("윷짝 던지기, 주사위 던지기 등"). 앞에 공백·쉼표·괄호가 와야 한다 —
+//    붙여 쓴 `20등`·`신호등`·`가로등`은 멀쩡한 정답이라 건드리면 안 된다(전수 확인: 걸러낼 것 37건).
+//  · `… 중 하나`·`… 중 한 가지` : 교재가 택일을 허용한 답("3,6,9,12,15,18 중 하나").
+const ESSAY_OPEN_TAIL =
+  /(?:[\s,、·)\]】]등|[\s,、·)\]】]중\s*(?:한|하나|두|세|네|다섯|[0-9]+)\s*(?:가지|개)?)\s*\.?\s*$/
 export function isEssayAnswer(answer: string | undefined | null): boolean {
   const a = (answer ?? '').trim()
   if (!a) return false
-  // "(예) …" · "예)" — 교재가 명시한 예시 답안. 정답이 하나로 정해지지 않는다.
-  if (/^\(?예\)/.test(a.replace(/\s/g, ''))) return true
+  // "(예) …" · "예) …" · "예: …" · "예시: …" — 교재가 명시한 예시 답안. 정답이 하나로 정해지지 않는다.
+  if (/^\(?예(시)?[):：]/.test(a.replace(/\s/g, ''))) return true
   const plain = a.replace(/\\[;,! ]/g, ' ')          // LaTeX 간격을 공백으로
+  // 예시 나열·택일은 길이·한글 조건을 두지 않는다(수식 나열 "…,\sqrt{2}+0.1 등"도 대조 불가라 같다)
+  if (ESSAY_OPEN_TAIL.test(plain)) return true
   return plain.length >= 12 && /\s/.test(plain) && /[가-힣]/.test(plain) && ESSAY_TAIL.test(plain)
 }
 
