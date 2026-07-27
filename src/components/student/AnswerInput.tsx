@@ -64,7 +64,7 @@ export default function AnswerInput({ p, value, onChange, level = '중등' }: {
   if (parts) {
     const cur = splitAnswerParts(value, parts.length)
     const setPart = (idx: number, v: string) =>
-      onChange(joinAnswerParts(parts.map((_, i) => (i === idx ? v : cur[i] ?? ''))))
+      onChange(joinAnswerParts(parts.map((_, i) => (i === idx ? v : cur[i] ?? '')), p.answer))
     return (
       <div className="grid gap-1.5">
         <span className="text-[10px] text-ink2/70">답이 {parts.length}개인 문제예요 — 칸마다 하나씩 적어요</span>

@@ -107,12 +107,75 @@ export function answerParts(answer: string | undefined | null): { label: string;
  * 파트별 학생 입력을 정답과 같은 포맷(`(가) X, (나) Y`)으로 합친다. 전부 비면 ''.
  * 빈 칸은 빼고 합친다 — `(가) D, (나) ` 같은 어정쩡한 답이 기록으로 남지 않게.
  * (칸을 덜 채우면 정답과 개수가 달라 오답 처리되는데, 이건 실제로 덜 푼 것이 맞다)
+ *
+ * ⚠️ 라벨 사이를 무엇으로 잇는지는 **정답 원문을 따라야 한다**. 교재 정답의 절반은
+ * `(가) n-r (나) r!` 처럼 쉼표가 없는데 늘 `, `로 이으면 조각 수가 달라 보여
+ * 칸을 정확히 채워도 오답이 됐다(349건 중 175건). answer 를 넘기면 그 형식에 맞춘다.
  */
-export function joinAnswerParts(values: string[]): string {
+export function joinAnswerParts(values: string[], answer?: string | null): string {
+  const sep = answer && !/,\s*\([가-아]\)/.test(answer) ? ' ' : ', '
   return values
     .map((v, i) => (v.trim() ? `(${PART_LABELS[i]}) ${v.trim()}` : ''))
     .filter(Boolean)
-    .join(', ')
+    .join(sep)
+}
+
+// ── 라벨 없이 쉼표로만 나열된 여러 답 ──────────────────────────────────
+// `2x, 5, 2, 5` 처럼 답이 여러 개인데 라벨이 없는 문항. 입력칸이 하나뿐이라 학생이
+// 쉼표·순서까지 맞춰 한 줄에 몰아 써야 했다. → (가)·(나)와 같이 칸을 나눠 받는다.
+// 채점값은 달라지지 않는다 — 쪼갠 조각을 `, `로 도로 합치면 원문과 같다(10만 건 왕복 검증 0 불일치).
+// (mathEqual 은 다중답을 순서 무관으로 비교하므로 칸 순서가 뒤바뀌어도 정답이다)
+// (2026-07-27 명수쌤 지시)
+
+/** 괄호 밖(top-level) 쉼표로만 자른다 — 좌표 `(2, 3)`·집합 `{1, 2}` 안의 쉼표는 구분자가 아니다 */
+function topSplitComma(a: string): string[] {
+  const out: string[] = []
+  let depth = 0, cur = '', i = 0
+  while (i < a.length) {
+    if (a.startsWith('\\left', i)) { depth++; cur += a.slice(i, i + 5); i += 5; continue }
+    if (a.startsWith('\\right', i)) { depth--; cur += a.slice(i, i + 6); i += 6; continue }
+    const c = a[i]
+    if ('([{｛'.includes(c)) depth++
+    else if (')]}｝'.includes(c)) depth--
+    if (c === ',' && depth <= 0) { out.push(cur); cur = ''; i++; continue }
+    cur += c; i++
+  }
+  out.push(cur)
+  return out.map(s => s.trim())
+}
+
+/** 조각 하나가 "칸에 넣어도 되는 짧고 깨끗한 답"인가 */
+function plainChunkOk(p: string): boolean {
+  if (!p || typeLen(p) > 10) return false
+  // 한글이 섞이면 지시문일 수 있다 — `(위에서부터)3`·`5+5에 ○표`·`'선분 ㄱㅇ'에 색칠`
+  if (/[가-힣]/.test(p)) return false
+  if (/\\[;,!:> ]|\\quad|\\qquad|\\text|~/.test(p)) return false   // LaTeX 간격/문장 껍데기
+  return true
+}
+
+/** 한 칸에 몰아 쓰던 여러 답 → 칸별 조각. 나눌 수 없으면 null. */
+export function plainAnswerParts(answer: string | undefined | null): string[] | null {
+  const a = (answer ?? '').trim()
+  if (!a) return null
+  if (/\d\s*,\s*\d{3}(?!\d)/.test(a)) return null   // 천단위 쉼표 `1,200` 은 한 수다
+  if (answerParts(a)) return null                   // (가)·(나)는 라벨 붙은 쪽에서 처리
+  if (/또는|그리고|이고/.test(a)) return null        // 대안 답·문장은 쪼개면 뜻이 깨진다
+  const p = topSplitComma(a)
+  if (p.length < 2 || p.length > 6) return null
+  return p.every(plainChunkOk) ? p : null
+}
+
+/** 칸별 입력을 정답과 같은 포맷(`a, b, c`)으로 합친다. 빈 칸은 빼고 합친다. */
+export function joinPlainParts(values: string[]): string {
+  return values.map(v => v.trim()).filter(Boolean).join(', ')
+}
+
+/** 합성된 `a, b, c` 를 다시 칸별 값으로 되돌린다 (입력 중 상태 복원용). */
+export function splitPlainParts(joined: string, n: number): string[] {
+  const out = Array<string>(n).fill('')
+  if (!joined || joined === '모름') return out
+  topSplitComma(joined).slice(0, n).forEach((v, i) => { out[i] = v })
+  return out
 }
 
 /** 합성된 `(가) X, (나) Y` 문자열을 다시 칸별 값으로 되돌린다 (입력 중 상태 복원용). */

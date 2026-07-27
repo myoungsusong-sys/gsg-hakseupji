@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
-import { wbAnswerImg, normAnswer, isEssayAnswer, isHeavyMathAnswer, answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
+import { wbAnswerImg, normAnswer, isEssayAnswer, isHeavyMathAnswer, answerParts, joinAnswerParts, splitAnswerParts, plainAnswerParts, joinPlainParts, splitPlainParts } from '../../lib/answers'
 import { mathEqual } from '../../lib/mathAnswer'
 import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../components/student/MathAnswerField'
 import { typeName, typeUnitName } from '../../data/curriculum'
@@ -101,7 +101,7 @@ function WbAnswerInput({ item, value, onChange, level = '중등' }: {
   if (parts) {
     const cur = splitAnswerParts(value, parts.length)
     const setPart = (idx: number, v: string) =>
-      onChange(joinAnswerParts(parts.map((_, i) => (i === idx ? v : cur[i] ?? ''))))
+      onChange(joinAnswerParts(parts.map((_, i) => (i === idx ? v : cur[i] ?? '')), item.answer))
     const blanks = parts.filter((_, i) => !(cur[i] ?? '').trim())
     const partial = value !== '모름' && blanks.length > 0 && blanks.length < parts.length
     return (
@@ -119,6 +119,35 @@ function WbAnswerInput({ item, value, onChange, level = '중등' }: {
           </span>
         )}
         <div>{unknownBtn}</div>
+      </div>
+    )
+  }
+  // 라벨 없이 쉼표로만 나열된 여러 답 — `2x, 5, 2, 5` 처럼 한 칸에 몰아 쓰던 것도 칸을 나눈다.
+  // 합쳐서 저장하는 값은 원문과 같은 포맷이라 채점 결과는 달라지지 않는다.
+  const plain = plainAnswerParts(item.answer)
+  if (plain) {
+    const cur = splitPlainParts(value, plain.length)
+    const setPart = (idx: number, v: string) =>
+      onChange(joinPlainParts(plain.map((_, i) => (i === idx ? v : cur[i] ?? ''))))
+    const blanks = plain.filter((_, i) => !(cur[i] ?? '').trim()).length
+    const partial = value !== '모름' && blanks > 0 && blanks < plain.length
+    return (
+      <div className="grid gap-1.5">
+        <span className="text-[10px] text-ink2/70">답이 {plain.length}개인 문제예요 — 칸마다 하나씩 적어요</span>
+        <div className="flex flex-wrap items-start gap-1.5">
+          {plain.map((_, idx) => (
+            <div key={idx} className="flex items-start gap-1">
+              <span className="mt-2 text-[11px] font-bold text-ink2/60">{idx + 1}</span>
+              <MathAnswerField value={cur[idx] ?? ''} onChange={v => setPart(idx, v)} level={level} width="w-24" />
+            </div>
+          ))}
+          {unknownBtn}
+        </div>
+        {partial && (
+          <span className="text-[10px] font-semibold text-amber">
+            아직 {blanks}칸이 비었어요 — 다 채워야 정답 처리돼요
+          </span>
+        )}
       </div>
     )
   }
