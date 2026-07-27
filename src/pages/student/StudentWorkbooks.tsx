@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
@@ -11,6 +11,7 @@ import MathText from '../../components/MathText'
 import ZoomImage from '../../components/ZoomImage'
 import VideoModal from '../../components/VideoModal'
 import { useStudentSelf } from './common'
+import { fileToScaledJpeg, scanAnswersFromPhoto, type ScanResult } from '../../lib/scanAnswers'
 
 // ── 교재 탭 (매쓰플랫 학생앱 교재 구조) ──
 // 목록: 출제일 | [시중교재] 교재명 | 진척도 % 게이지 (채점된 문항/전체 문항)
@@ -161,6 +162,92 @@ function WbAnswerInput({ item, value, onChange, level = '중등' }: {
     </div>
   )
 }
+// ── 📷 사진 한 장으로 이 쪽 답 채우기 ──────────────────────────────────
+// AI(/api/scan-answers)는 사진에서 번호별 답을 **읽기만** 한다. 채점은 기존 엔진이 그대로 하고,
+// 읽은 값은 입력칸에 채워지므로 학생이 오독을 눈으로 잡아 고칠 수 있다. (2026-07-27 명수쌤 지시)
+
+/** 이 문항이 몇 칸짜리인지 — AI에 "답이 몇 개인지"만 알려준다(정답 값은 보내지 않는다) */
+function scanPartCount(item: WBItem): number {
+  return answerParts(item.answer)?.length ?? plainAnswerParts(item.answer)?.length ?? 1
+}
+
+/** AI가 읽은 문자열을 입력칸이 기대하는 형식으로 맞춘다 */
+function scanValueToInput(item: WBItem, raw: string): string {
+  const v = (raw ?? '').trim()
+  if (!v) return ''
+  const kind = wbInputKind(item)
+  if (kind === '객관식') {
+    // 학생앱 객관식 값은 원문자 — AI가 읽은 "3" / "3,5" 를 ③ / ③,⑤ 로 바꾼다
+    return v.split(',').map(t => t.trim()).filter(Boolean)
+      .map(t => (/^[1-5]$/.test(t) ? CIRCLE5[+t - 1] : t)).join(',')
+  }
+  if (kind === 'OX') {
+    const n = normAnswer(v)
+    return n === 'O' || n === 'X' ? n : v
+  }
+  // (가)·(나) 라벨 문항은 정답 원문과 같은 포맷으로 합쳐야 채점된다
+  const lp = answerParts(item.answer)
+  if (lp && !v.includes('(')) {
+    const vals = v.split(',').map(t => t.trim())
+    return joinAnswerParts(lp.map((_, i) => vals[i] ?? ''), item.answer)
+  }
+  return v
+}
+
+function PhotoScanBar({ items, pageLabel, onFill }: {
+  items: WBItem[]; pageLabel: string; onFill: (results: ScanResult[]) => void
+}) {
+  const [busy, setBusy] = useState(false)
+  const [err, setErr] = useState('')
+  const [note, setNote] = useState('')
+  const fileRef = useRef<HTMLInputElement>(null)
+
+  async function onPick(e: React.ChangeEvent<HTMLInputElement>) {
+    const f = e.target.files?.[0]
+    e.target.value = ''            // 같은 사진을 다시 골라도 onChange 가 뜨게
+    if (!f) return
+    setErr(''); setNote(''); setBusy(true)
+    try {
+      const img = await fileToScaledJpeg(f)
+      const res = await scanAnswersFromPhoto({
+        dataUrl: img.dataUrl, mediaType: img.mediaType, pageLabel,
+        items: items.map(i => ({
+          no: String(i.label ?? i.no), kind: wbInputKind(i), parts: scanPartCount(i),
+        })),
+      })
+      const read = res.filter(r => r.answer.trim())
+      onFill(read)
+      const low = read.filter(r => r.confidence === 'low').length
+      setNote(read.length
+        ? `${read.length}문항을 채웠어요 — 맞게 읽었는지 보고 고친 뒤 채점하세요.${low ? ` (헷갈린 ${low}문항은 특히 확인!)` : ''}`
+        : '사진에서 답을 찾지 못했어요. 번호가 함께 보이게 다시 찍어보세요.')
+    } catch (e: any) {
+      setErr(String(e?.message ?? e))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  if (!items.length) return null
+  return (
+    <div className="mb-3 grid gap-1.5 rounded-xl border border-line bg-paper2/50 px-3 py-2.5">
+      <div className="flex flex-wrap items-center gap-2">
+        <button type="button" disabled={busy} onClick={() => fileRef.current?.click()}
+          className="rounded-lg border border-pine bg-white px-3 py-1.5 text-sm font-bold text-pine hover:bg-pine-soft disabled:opacity-50">
+          {busy ? '사진 읽는 중…' : '📷 사진으로 답 채우기'}
+        </button>
+        <span className="text-[11px] text-ink2">
+          공책에 쓴 답을 번호가 보이게 찍으면 이 쪽 {items.length}문항을 대신 채워줘요 (채점은 확인 후에)
+        </span>
+        <input ref={fileRef} type="file" accept="image/*" capture="environment"
+          onChange={onPick} className="hidden" />
+      </div>
+      {note && <span className="text-[11px] font-semibold text-pine-dark">{note}</span>}
+      {err && <span className="text-[11px] font-semibold text-clay">{err}</span>}
+    </div>
+  )
+}
+
 // 번호 밴드: 정답 연파랑(pine-soft, 결과 화면과 동일 팔레트)/오답 연분홍/모름 연노랑/미채점 회색
 const BAND_CLASS: Record<Mark, string> = {
   정답: 'bg-pine-soft text-pine-dark',
@@ -456,6 +543,15 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const gradableOnPage = pageItems.filter(i => wbGradable(i, elem))
   // 자동채점 불가 문항(그래프·작도·서술형·긴 수식) — 자기채점 대상
   const selfOnPage = pageItems.filter(i => !wbGradable(i, elem))
+  // 사진에서 읽어온 답을 입력칸에 채운다 (채점은 학생이 확인한 뒤 [채점하기]로)
+  const fillFromScan = (results: ScanResult[]) => setAnswers(prev => {
+    const next = { ...prev }
+    for (const r of results) {
+      const it = gradableOnPage.find(i => String(i.label ?? i.no) === r.no)
+      if (it) next[it.id] = scanValueToInput(it, r.answer)
+    }
+    return next
+  })
   const answeredCount = gradableOnPage.filter(i => (answers[i.id] ?? '') !== '').length
   const selfCount = selfOnPage.filter(i => selfMarks[i.id]).length
 
@@ -541,7 +637,10 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
 
       {/* 안내 문구 */}
       {mode === 'grade' ? (
-        <p className="mb-3 text-sm text-ink2">이 쪽 문항의 답을 입력하고 <b className="text-pine-dark">채점하기</b>를 누르면 자동으로 채점돼요. 정답은 공개되지 않아요.</p>
+        <>
+          <p className="mb-3 text-sm text-ink2">이 쪽 문항의 답을 입력하고 <b className="text-pine-dark">채점하기</b>를 누르면 자동으로 채점돼요. 정답은 공개되지 않아요.</p>
+          <PhotoScanBar items={gradableOnPage} pageLabel={`${wb.name} ${page}쪽`} onFill={fillFromScan} />
+        </>
       ) : !cfg.showAnswer ? (
         <p className="mb-3 text-sm text-ink2">채점 후 답과 해설이 비공개되어 있습니다. 선생님에게 문의해주세요.</p>
       ) : null}
