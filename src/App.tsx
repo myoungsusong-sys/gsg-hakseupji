@@ -60,7 +60,15 @@ function MgmtEntry() {
   const nav = useNavigate()
   useEffect(() => {
     const mgmt = new URLSearchParams(window.location.search).get('mgmt')
-    if (!mgmt || !synced) return
+    if (!mgmt) return
+    if (!synced) {
+      // ⚠️ 세션이 없으면 명부(hj_students)를 못 읽어 synced가 영영 false → **빈 화면**이 된다.
+      //    (관리앱 [채점하러 가기]로 들어온 태블릿에서 실제로 발생 — 2026-07-27 확인)
+      //    6초 안에 못 읽으면 최소한 학생 로그인 화면을 띄운다. 한 번 로그인하면 그 다음부터는 바로 들어온다.
+      //    (파라미터는 지우지 않는다 — 늦게라도 명부가 오면 아래 분기가 학생앱으로 보내준다)
+      const t = setTimeout(() => nav('/student-login', { replace: true }), 6000)
+      return () => clearTimeout(t)
+    }
     const me = students.find((s) => s.mgmtId === mgmt)
     if (me) setLocalStudentId(me.id)
     // 파라미터를 지우고 학생앱으로 (일치하는 학생이 없어도 학생 로그인 화면 흐름으로 보낸다)
