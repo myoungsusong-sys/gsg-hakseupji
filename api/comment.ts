@@ -10,7 +10,7 @@
 //   1. 오늘의 초점(angle)을 하나 정해 준다 — 다 훑지 말고 한 가지만 쓰게 한다.
 //   2. 분량을 매번 바꾼다 — 한 문장으로 끝나는 날이 있어야 사람 같다.
 //   3. 최근에 보낸 한마디를 같이 넘겨 준다 — 시작하는 말과 구조가 겹치지 않게.
-// 초점·분량은 (학생+날짜+과목) 해시로 고른다. 같은 날 다시 눌러도 같은 결이 나오고,
+// 초점은 날짜순으로 한 칸씩 밀어 고른다(연달아 같은 초점이 안 걸리게). 분량은 해시.
 // 날이 바뀌거나 학생이 바뀌면 달라진다.
 import Anthropic from '@anthropic-ai/sdk'
 
@@ -64,6 +64,19 @@ function hash(s: string): number {
 }
 const pick = <T,>(arr: T[], seed: string, salt: string): T => arr[hash(seed + salt) % arr.length]
 
+/**
+ * 오늘의 초점 고르기. 순수 해시로 뽑으면 며칠 걸러 같은 초점이 다시 걸린다(실제로
+ * 5일 뽑아보니 이틀이 '다음 시간 예고'로 겹쳤다). 그래서 **날짜순으로 한 칸씩 밀어**
+ * 고른다 — 하루 뒤든 이틀 뒤든 초점이 반드시 달라지고, 학생마다 시작점이 다르다.
+ * seed 는 `학생id|YYYY-MM-DD|과목` 형식.
+ */
+function angleOf(seed: string): string {
+  const [id = seed, date = ''] = seed.split('|')
+  const m = date.match(/^(\d{4})-(\d{2})-(\d{2})$/)
+  const day = m ? Math.floor(Date.UTC(+m[1], +m[2] - 1, +m[3]) / 86400000) : hash(date)
+  return ANGLES[(day + hash(id)) % ANGLES.length]
+}
+
 function readBody(req: any): Promise<any> {
   if (req.body && typeof req.body === 'object') return Promise.resolve(req.body)
   return new Promise((resolve) => {
@@ -93,7 +106,7 @@ export default async function handler(req: any, res: any) {
 내용을 더하거나 빼지 말고, 선생님이 쓴 말투를 살려라. AI가 고친 티가 나면 실패다.\n\n[오늘 데이터]\n${ctx}\n\n[선생님 초안]\n${String(draft ?? '').slice(0, 2000)}${avoid}`
     : `아래 오늘 학습 데이터로 '선생님 한마디'를 써라.
 
-[오늘은 이것에 초점을 둔다] ${pick(ANGLES, s, 'angle')}
+[오늘은 이것에 초점을 둔다] ${angleOf(s)}
 [분량] ${pick(LENGTHS, s, 'len')}
 
 데이터를 다 훑지 말고 위 초점 하나로만 써라. 초점에 쓸 만한 내용이 데이터에 없으면
