@@ -2108,24 +2108,46 @@ function RevealRow({ label, desc, before, after, onBefore, onAfter }: {
   )
 }
 
+// ⚠️ 이 화면의 값은 **클라우드 동기화보다 먼저 그려진다.** 화면에 붙잡아 둔 옛 값으로 저장하면
+// 클라우드의 최신 설정이 통째로 덮어씌워진다 — 만진 적도 없는 설정이 저절로 꺼지는 사고가 난다.
+// (2026-07-28 실사고: '정답 공개'가 저절로 비공개가 돼 학생 63명 전원이 🔒로 보였다. 이현구 학생 신고로 발견)
+// 그래서 두 겹으로 막는다.
+//   ① 선생님이 손대기 전까지는 저장소 값을 그대로 따라간다.
+//   ② 동기화가 끝나기 전에는 저장 자체를 막는다(옛 값을 올릴 길이 없어진다).
 function useRevealConfig() {
-  const { studentAppConfig, setStudentAppConfig } = useStore()
+  const { studentAppConfig, setStudentAppConfig, synced } = useStore()
   const [cfg, setCfg] = useState<StudentAppConfig>(studentAppConfig)
   const [savedAt, setSavedAt] = useState<string | null>(null)
+  const touched = useRef(false)
+
+  // ① 손대기 전에는 따라간다 (동기화가 늦게 끝나도 화면이 최신값을 보여준다)
+  useEffect(() => {
+    if (!touched.current) setCfg(studentAppConfig)
+  }, [studentAppConfig])
+
+  // 사용자가 실제로 바꾼 순간부터 화면 값을 고정한다 — 편집 중에 동기화가 끼어들어 입력이 날아가지 않게
+  const editCfg: typeof setCfg = updater => { touched.current = true; setCfg(updater) }
+
   const KEYS: (keyof StudentAppConfig)[] = [
     'showAnswer', 'showSolution', 'showVideo', 'showAnswerBefore', 'showSolutionBefore', 'showVideoBefore',
   ]
-  const dirty = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
+  const changed = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
     || (cfg.solveFeedback ?? true) !== (studentAppConfig.solveFeedback ?? true)   // 기본 ON
     || (cfg.aiGrade ?? false) !== (studentAppConfig.aiGrade ?? false)             // 기본 OFF
+  const dirty = synced && changed                                                 // ② 동기화 전에는 저장 불가
+
   const save = () => {
+    if (!dirty) return
     setStudentAppConfig({ ...studentAppConfig, ...cfg })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+    touched.current = false        // 저장 후에는 다시 저장소를 따라간다 (다른 기기에서 바꾼 값도 반영)
   }
-  return { cfg, setCfg, dirty, save, savedAt }
+  return { cfg, setCfg: editCfg, dirty, save, savedAt, syncing: !synced }
 }
 
-function SaveState({ dirty, savedAt }: { dirty: boolean; savedAt: string | null }) {
+function SaveState({ dirty, savedAt, syncing }: { dirty: boolean; savedAt: string | null; syncing?: boolean }) {
+  // 동기화 중에는 저장을 막는다 — 화면의 옛 값으로 클라우드를 덮어쓰는 사고를 원천 차단
+  if (syncing) return <p className="mb-3 text-xs text-ink2">⏳ 최신 설정을 불러오는 중이에요… 잠시 후 저장할 수 있어요</p>
   if (dirty) return <p className="mb-3 text-xs text-clay">저장하지 않은 변경이 있어요</p>
   if (savedAt) return <p className="mb-3 text-xs text-pine-dark">✓ 저장됨 {savedAt}</p>
   return <div className="mb-3" />
@@ -2133,7 +2155,7 @@ function SaveState({ dirty, savedAt }: { dirty: boolean; savedAt: string | null 
 
 // 정답 및 해설 공개 설정 — 채점 전/후 구분 (기존 boolean = 채점 후, 하위호환)
 function AnswerRevealSettings() {
-  const { cfg, setCfg, dirty, save, savedAt } = useRevealConfig()
+  const { cfg, setCfg, dirty, save, savedAt, syncing } = useRevealConfig()
   return (
     <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
       <div className="mb-1 flex items-center gap-3">
@@ -2145,7 +2167,7 @@ function AnswerRevealSettings() {
       <p className="mb-1 text-sm text-ink2">
         정답 확인은 선생님 설정에 따라 제공되며 정답이 등록된 문제·교재에서만 사용할 수 있어요.
       </p>
-      <SaveState dirty={dirty} savedAt={savedAt} />
+      <SaveState dirty={dirty} savedAt={savedAt} syncing={syncing} />
       <div className="grid gap-2.5">
         <RevealRow label="정답 공개" desc="각 문제의 정답을 볼 수 있어요."
           before={cfg.showAnswerBefore ?? false} after={cfg.showAnswer}
@@ -2202,7 +2224,7 @@ function AnswerRevealSettings() {
 
 // 풀이 영상 공개 설정
 function VideoRevealSettings() {
-  const { cfg, setCfg, dirty, save, savedAt } = useRevealConfig()
+  const { cfg, setCfg, dirty, save, savedAt, syncing } = useRevealConfig()
   return (
     <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
       <div className="mb-1 flex items-center gap-3">
@@ -2214,7 +2236,7 @@ function VideoRevealSettings() {
       <p className="mb-1 text-sm text-ink2">
         선생님이 설정한 풀이 영상 공개 여부에 따라 학생들이 풀이 영상을 확인할 수 있습니다.
       </p>
-      <SaveState dirty={dirty} savedAt={savedAt} />
+      <SaveState dirty={dirty} savedAt={savedAt} syncing={syncing} />
       <div className="grid gap-2.5">
         <RevealRow label="풀이영상 공개" desc="풀이영상이 있는 문제에서 영상을 볼 수 있어요."
           before={cfg.showVideoBefore ?? false} after={cfg.showVideo}
