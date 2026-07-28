@@ -147,6 +147,15 @@ async function copyText(text: string, done: () => void) {
 
 // ── 일일 보고지 (하원 시 학부모 단톡방 피드백) ──────────────────────────────
 
+/** 문자열 → 안정적인 해시. 같은 입력이면 늘 같은 값이라 같은 날 다시 열어도 문장이 안 바뀐다. */
+function hash(s: string): number {
+  let h = 2166136261
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) }
+  return h >>> 0
+}
+/** 후보 문장 중 하나를 (씨앗+자리)로 고른다 — 매번 토씨까지 같은 글이 나가지 않게 */
+const vary = (seed: string, slot: string, cands: string[]): string => cands[hash(seed + slot) % cands.length]
+
 function DailyReport({ student, subject, initialDate }: { student: Student; subject: Subject; initialDate?: string }) {
   const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile } = useStore()
   // 브랜드는 보고서 과목 기준 (헤더 전역 과목이 아니라) — 과학 보고서엔 '깊은생각과학'
@@ -386,26 +395,69 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     return L.join('\n')
   }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan])
 
-  // 오프라인/무키 폴백용 템플릿 초안 (API 미설정 시 사용)
+  // 선생님이 한마디를 비워 두면 이 문구가 그대로 학부모에게 나간다. 문장이 고정이면
+  // 매주 토씨까지 같은 글이 가서 가장 먼저 '기계가 쓴 티'가 나므로, 학생·날짜로 표현을
+  // 돌린다. 같은 날 다시 열어도 같은 문장, 날이 바뀌면 달라진다. (2026-07-28 명수쌤 지시)
   const templateComment = useMemo(() => {
+    const seed = `${student.id}|${date}|${subject}`
     const parts: string[] = []
     const unitNames = coveredUnits.units.slice(0, 2).map(u => u.name.split(' · ').pop()).filter(Boolean)
-    if (unitNames.length) parts.push(`오늘은 ${unitNames.join(', ')} 단원을 학습했습니다.`)
-    if (totalSolved) {
-      if (overall >= 90) parts.push(`${totalSolved}문항 중 ${totalCorrect}문항을 맞혀 ${overall}점, 아주 훌륭했습니다.`)
-      else if (overall >= 70) parts.push(`${totalSolved}문항 기준 ${overall}점으로 안정적으로 잘 해냈습니다.`)
-      else parts.push(`오늘은 ${overall}점으로 조금 아쉬웠지만 끝까지 성실하게 풀었습니다.`)
+    if (unitNames.length) {
+      const u = unitNames.join(', ')
+      parts.push(vary(seed, 'unit', [
+        `오늘은 ${u} 단원을 봤습니다.`,
+        `${u} 단원 진도를 나갔어요.`,
+        `오늘 수업은 ${u} 단원이었습니다.`,
+      ]))
     }
-    if (weekDelta != null && weekDelta >= 5) parts.push(`지난 7일 평균보다 ${weekDelta}점 올라 상승세가 뚜렷합니다.`)
-    else if (weekDelta != null && weekDelta <= -5) parts.push(`지난 7일 평균보다 ${Math.abs(weekDelta)}점 내려가 다음 시간에 집중 보완하겠습니다.`)
-    if (wrongTypes.length) parts.push(`「${wrongTypes[0].name}」 유형은 ${drills.length ? '오답 드릴 학습지로 한 번 더 다지겠습니다.' : '다음 시간에 복습하겠습니다.'}`)
-    if (streak >= 3) parts.push(`${streak}일 연속 학습 중입니다. 꾸준함이 큰 힘이 됩니다!`)
+    if (totalSolved) {
+      if (overall >= 90) parts.push(vary(seed, 'hi', [
+        `${overall}점으로 거의 다 맞혔습니다.`,
+        `${totalCorrect}문항을 맞혀 ${overall}점, 아주 잘했어요.`,
+        `${overall}점. 오늘은 흔들리는 데가 없었습니다.`,
+      ]))
+      else if (overall >= 70) parts.push(vary(seed, 'mid', [
+        `${overall}점으로 안정적이었습니다.`,
+        `${overall}점, 큰 무리 없이 풀어냈어요.`,
+        `${overall}점입니다. 아는 문제는 확실히 잡고 갑니다.`,
+      ]))
+      else parts.push(vary(seed, 'lo', [
+        `${overall}점으로 오늘은 조금 아쉬웠습니다.`,
+        `${overall}점. 어려워했지만 끝까지 붙잡고 풀었어요.`,
+        `오늘은 ${overall}점으로 고전했습니다.`,
+      ]))
+    }
+    if (weekDelta != null && weekDelta >= 5) parts.push(vary(seed, 'up', [
+      `지난주보다 ${weekDelta}점 올랐습니다.`,
+      `지난주 대비 ${weekDelta}점 상승했어요.`,
+    ]))
+    else if (weekDelta != null && weekDelta <= -5) parts.push(vary(seed, 'dn', [
+      `지난주보다 ${Math.abs(weekDelta)}점 내려가 다음 시간에 보완하겠습니다.`,
+      `지난주보다 ${Math.abs(weekDelta)}점 떨어졌습니다. 다음 시간에 짚고 가겠습니다.`,
+    ]))
+    if (wrongTypes.length) parts.push(vary(seed, 'wrong', [
+      `「${wrongTypes[0].name}」 쪽이 약해 ${drills.length ? '오답 학습지로 한 번 더 다지겠습니다.' : '다음 시간에 다시 보겠습니다.'}`,
+      `「${wrongTypes[0].name}」에서 자주 걸렸습니다. ${drills.length ? '오답 학습지를 따로 냈습니다.' : '다음 시간에 복습하겠습니다.'}`,
+    ]))
+    // 연속 학습은 매번 붙으면 상투적이라 3회에 1번만
+    if (streak >= 3 && hash(seed + 'streak') % 3 === 0) parts.push(`${streak}일째 빠지지 않고 나오고 있습니다.`)
     return parts.join(' ')
-  }, [coveredUnits, totalSolved, totalCorrect, overall, weekDelta, wrongTypes, drills.length, streak])
+  }, [student.id, date, subject, coveredUnits, totalSolved, totalCorrect, overall, weekDelta, wrongTypes, drills.length, streak])
 
   // 보고서 출력용 값 — '없음'이면 빈값(섹션 생략), 선생님 한마디는 비었을 때만 기본문구 사용
   const effComment = isNone(comment) ? '' : (comment.trim() || templateComment)
   const effNextPlan = isNone(nextPlan) ? '' : nextPlan.trim()
+
+  // 이 학생에게 최근에 보낸 한마디 (오늘 것 제외, 최신 4개) — AI가 같은 말·같은 틀을 반복하지 않게
+  // 하는 가장 강한 장치다. 매 수업 나가는 글이라 표현이 겹치면 바로 '기계가 쓴 티'가 난다.
+  const recentComments = useMemo(() => {
+    return dailyNotes
+      .filter(n => n.studentId === student.id && n.date < date)
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .map(n => (n.bySubject?.[subject]?.comment ?? (subject === '수학' ? n.comment : '')).trim())
+      .filter(c => c && !isNone(c))
+      .slice(0, 4)
+  }, [dailyNotes, student.id, date, subject])
 
   // 선생님 한마디 AI — 작성(generate)/다듬기(polish). 서버리스(/api/comment) 호출, 실패 시 템플릿 폴백.
   const [aiBusy, setAiBusy] = useState<'' | 'generate' | 'polish'>('')
@@ -416,7 +468,12 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     try {
       const r = await fetch('/api/comment', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ mode, context: aiContext, draft: comment }),
+        body: JSON.stringify({
+          mode, context: aiContext, draft: comment,
+          // 초점·분량을 고르는 씨앗. 같은 날 다시 눌러도 같은 결, 날·학생·과목이 바뀌면 달라진다
+          seed: `${student.id}|${date}|${subject}`,
+          recent: recentComments,
+        }),
       })
       if (!r.ok) {
         const e = await r.json().catch(() => ({} as { error?: string }))
