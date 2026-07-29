@@ -95,7 +95,19 @@ export function normMath(input: string): string {
   for (let i = 0; i < 4 && DECOR.test(t); i++) t = t.replace(DECOR, '$1')
   t = t.replace(DOT, '$1')
 
+  // 근호 \sqrt[n]{a} · \sqrt{a} · \sqrt a
+  //
+  // ⚠️ 분수보다 **먼저** 풀어야 한다. 아래 분수 정규식의 {…} 는 [^{}]* 라서 중괄호가
+  // 겹치면 못 잡는다. \frac{\sqrt{10}}{3} 의 분자에 \sqrt{10} 의 중괄호가 들어 있어
+  // 분수로 인식되지 않았고, 그래서 학생이 √10/3 이라고 제대로 써도 전부 오답이 됐다.
+  // (2026-07-28 발견 — 라이트쎈 3(상) 분모의 유리화 51문항이 통째로 걸려 있었다)
+  // 근호를 먼저 √(…) 로 바꾸면 분자에 중괄호가 없어져 분수 변환이 정상 동작한다.
+  t = t.replace(/\\sqrt\s*\[([^\]]*)\]\s*\{([^{}]*)\}/g, '(($2)^(1/($1)))')
+  t = t.replace(/\\sqrt\s*\{([^{}]*)\}/g, '√($1)')
+  t = t.replace(/\\sqrt\s*/g, '√')
+
   // 분수 — 대분수(앞이 숫자)면 덧셈으로, 아니면 나눗셈으로 괄호 씌워 보존
+  // (반복: 중첩 분수는 안쪽이 괄호꼴로 바뀐 뒤 바깥이 잡힌다)
   for (let i = 0; i < 6; i++) {
     const next = t.replace(
       /(\d*)\s*\\[dt]?frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g,
@@ -105,10 +117,6 @@ export function normMath(input: string): string {
     if (next === t) break
     t = next
   }
-  // 근호 \sqrt[n]{a} · \sqrt{a} · \sqrt a
-  t = t.replace(/\\sqrt\s*\[([^\]]*)\]\s*\{([^{}]*)\}/g, '(($2)^(1/($1)))')
-  t = t.replace(/\\sqrt\s*\{([^{}]*)\}/g, '√($1)')
-  t = t.replace(/\\sqrt\s*/g, '√')
 
   for (const [re, s] of LATEX_SYM) t = t.replace(re, s)
   t = t.replace(/\\circ(?![a-zA-Z])/g, '°')
