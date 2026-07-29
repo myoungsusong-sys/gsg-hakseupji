@@ -152,8 +152,21 @@ export default function BulkImportModal({ workbook, existing, onSave, onClose }:
           </div>
         )}
 
+        {/* 매칭 교재는 정답표가 이미 있다 — 여기 넣는 건 '덮어쓰기'라는 걸 분명히 알린다.
+            (개정판이 달라 책과 정답이 안 맞는 교재를 선생님이 직접 맞추는 용도) */}
+        {workbook.matchKey && (
+          <p className="mt-3 rounded-lg bg-amber-soft/50 px-3 py-2 text-xs text-ink2">
+            이 교재는 정답표가 이미 있습니다. <b className="text-ink">쪽과 번호가 같은 문항은 여기 넣은 정답으로 바뀝니다.</b>
+            {' '}책과 다른 문항만 넣으시면 됩니다 — 채점해 둔 기록은 그대로 남습니다.
+          </p>
+        )}
+
         <div className="mt-3 flex items-center gap-2">
-          {existing.length > 0 && <span className="text-xs text-ink2">기존 {existing.length}문항 뒤에 추가됩니다.</span>}
+          {existing.length > 0 && (
+            <span className="text-xs text-ink2">
+              {workbook.matchKey ? `이미 고쳐 넣은 ${existing.length}문항에 더해집니다.` : `기존 ${existing.length}문항 뒤에 추가됩니다.`}
+            </span>
+          )}
           <div className="grow" />
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
           <button onClick={save} disabled={rows.length === 0}

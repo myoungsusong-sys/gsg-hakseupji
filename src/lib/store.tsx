@@ -187,6 +187,29 @@ function fromCloud(r: CloudData): Persisted {
     pointSettlements: r.pointSettlements ?? [],
   }
 }
+/**
+ * 매칭 교재의 정답이 실제 책과 다를 때, 선생님이 직접 넣은 정답으로 덮어쓴다.
+ * (2026-07-28 명수쌤 지시 — 개정판이 달라 정답이 안 맞는 교재가 있었다)
+ *
+ * 짝은 (교재·쪽·문항번호)로 맞춘다. 덮어쓸 때도 **파생 문항의 id를 그대로 둔다** —
+ * 채점 기록이 문항 id로 저장돼 있어서 id가 바뀌면 이미 채점한 것이 전부 날아간다.
+ * 짝이 없는 수동 문항은 그대로 뒤에 붙인다(매칭표가 없는 교재의 기존 동작).
+ */
+const wbKey = (i: WBItem) => `${i.workbookId}|${i.page}|${i.label ?? i.no}`
+function mergeWbItems(manual: WBItem[], derived: WBItem[]): WBItem[] {
+  if (!manual.length) return derived
+  if (!derived.length) return manual
+  const fix = new Map(manual.map(i => [wbKey(i), i]))
+  const used = new Set<string>()
+  const merged = derived.map(d => {
+    const m = fix.get(wbKey(d))
+    if (!m) return d
+    used.add(wbKey(d))
+    return { ...d, answer: m.answer, kind: m.kind }   // 정답·형태만 교체, 유형·난이도·id는 유지
+  })
+  return [...merged, ...manual.filter(i => !used.has(wbKey(i)))]
+}
+
 function toCloud(s: Persisted): CloudData {
   return {
     customProblems: s.customProblems, worksheets: s.worksheets, myLists: s.myLists,
@@ -317,7 +340,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     ...state,
     synced,
     ensureCourse,
-    wbItems: [...state.wbItems, ...derivedWbItems],   // 수동 등록분 + 매칭 교재 파생분
+    wbItems: mergeWbItems(state.wbItems, derivedWbItems),   // 수동 등록분이 매칭 교재 파생분을 덮어씀
     // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀
     problems: [...SEED_PROBLEMS, ...state.customProblems.filter(p => !p.id.startsWith('mf')), ...poolProblems],
 

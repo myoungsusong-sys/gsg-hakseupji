@@ -164,6 +164,10 @@ export default function GradePanel({ student }: { student: Student }) {
   const [selecting, setSelecting] = useState(false)
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [pageChecked, setPageChecked] = useState<Set<number>>(new Set())   // 페이지별 오답학습지용
+
+  // 선생님이 직접 넣은 문항만 — 매칭 교재는 파생 문항과 섞여 있다(파생 id 는 `<교재id>#<순번>` 꼴).
+  // 정답 고치기 모달에는 이것만 넘겨야 파생분 1천여 개가 통째로 클라우드에 복사되지 않는다.
+  const manualItems = useMemo(() => items.filter(i => !i.id.includes('#')), [items])
   const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[]; pagePicker?: PagePicker } | null>(null)
   // 실시간 자동 저장 상태
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
@@ -527,6 +531,11 @@ export default function GradePanel({ student }: { student: Student }) {
         </label>
         <span className="text-ink2">범위 {inRange.length}문항</span>
         <div className="grow" />
+        <button onClick={() => setBulk(true)}
+          title="책의 정답과 다른 문항이 있으면 직접 넣어 덮어씁니다 (쪽·번호가 같으면 교체)"
+          className="rounded-lg border border-line px-3 py-2 text-xs font-semibold text-ink2 hover:bg-paper2">
+          ✏️ 정답 고치기{manualItems.length > 0 ? ` (${manualItems.length})` : ''}
+        </button>
         <button
           onClick={() => {
             const body = `교재: ${wb.name}%0A쪽 범위: ${from}~${to}p%0A오류 문항·내용: `
@@ -737,7 +746,7 @@ export default function GradePanel({ student }: { student: Student }) {
           }} />
       )}
       {bulk && (
-        <BulkImportModal workbook={wb} existing={items}
+        <BulkImportModal workbook={wb} existing={manualItems}
           onSave={next => { setWBItems(wb.id, next); setBulk(false) }}
           onClose={() => setBulk(false)} />
       )}
