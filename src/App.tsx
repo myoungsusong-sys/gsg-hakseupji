@@ -3,7 +3,7 @@ import { HashRouter, Navigate, Outlet, Route, Routes, useNavigate } from 'react-
 import { StoreProvider, useStore } from './lib/store'
 import { SUPABASE_ON } from './lib/supabase'
 import { AuthProvider, useAuth } from './lib/auth'
-import { getLocalStudentId, setLocalStudentId, isStudentEmail } from './lib/role'
+import { getLocalStudentId, setLocalStudentId, isStudentEmail, MGMT_KEY } from './lib/role'
 import Login from './pages/Login'
 import StudentShell from './pages/student/StudentShell'
 import StudentLocalLogin from './pages/student/StudentLocalLogin'
@@ -61,19 +61,14 @@ function MgmtEntry() {
   useEffect(() => {
     const mgmt = new URLSearchParams(window.location.search).get('mgmt')
     if (!mgmt) return
-    if (!synced) {
-      // ⚠️ 세션이 없으면 명부(hj_students)를 못 읽어 synced가 영영 false → **빈 화면**이 된다.
-      //    (관리앱 [채점하러 가기]로 들어온 태블릿에서 실제로 발생 — 2026-07-27 확인)
-      //    6초 안에 못 읽으면 최소한 학생 로그인 화면을 띄운다. 한 번 로그인하면 그 다음부터는 바로 들어온다.
-      //    (파라미터는 지우지 않는다 — 늦게라도 명부가 오면 아래 분기가 학생앱으로 보내준다)
-      const t = setTimeout(() => nav('/student-login', { replace: true }), 6000)
-      return () => clearTimeout(t)
-    }
+    // 누구로 들어왔는지 기억해 둔다 — 아래에서 파라미터를 지운 뒤에도 학생 화면에서 확인용으로 쓴다.
+    try { sessionStorage.setItem(MGMT_KEY, mgmt) } catch { /* 무시 */ }
+    if (!synced) return          // 명부가 올 때까지 기다린다 (세션이 있으면 곧 온다)
     const me = students.find((s) => s.mgmtId === mgmt)
     if (me) setLocalStudentId(me.id)
-    // 파라미터를 지우고 학생앱으로 (일치하는 학생이 없어도 학생 로그인 화면 흐름으로 보낸다)
+    // 파라미터를 지우고 학생앱으로. 명부에서 못 찾아도 학생 세션이면 학생앱이 알아서 본인을 찾는다.
     window.history.replaceState(null, '', window.location.pathname)
-    nav(me ? '/student' : '/student-login', { replace: true })
+    nav('/student', { replace: true })
   }, [synced, students, nav])
   return null
 }
@@ -84,11 +79,12 @@ function Gate() {
   // 학부모앱(#/parent*)은 Supabase 세션 없이도 진입 — 서버리스가 이름+연락처로 검증
   if (SUPABASE_ON && !session) {
     if (typeof window !== 'undefined' && window.location.hash.startsWith('#/parent')) return <ParentOnlyApp />
-    // 관리앱(학원관리) 학생앱에서 [채점하러 가기]로 넘어온 경우 — ?mgmt=<관리앱학생id>.
-    // 좌석 태블릿에는 학습지앱 세션이 없으므로, 이 파라미터가 있거나 이미 로컬 학생 세션이 있으면
-    // 로그인 없이 학생앱으로 진입시킨다(학생 데이터는 anon 읽기 허용). MgmtEntry가 학생을 찾아 세션을 건다.
-    const mgmt = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('mgmt') : null
-    if (!mgmt && !getLocalStudentId()) return <Login />
+    // 🛑 세션이 없으면 **무조건 로그인 화면**이다.
+    //    예전에는 관리앱 [채점하러 가기](?mgmt=…)나 로컬 학생세션이 있으면 그냥 통과시켰는데,
+    //    익명으로는 명부(hj_students)가 RLS에 막혀 빈 배열로 온다 → 학생을 못 찾고
+    //    첫 화면 '/'가 그대로 열려 **선생님 화면(#/prep/worksheet)이 학생에게 노출**됐다.
+    //    (2026-07-29 실서버에서 재현·확인. 학생은 채점 화면에 영영 못 들어갔다.)
+    return <Login />
   }
   return (
     <StoreProvider>

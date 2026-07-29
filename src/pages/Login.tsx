@@ -4,9 +4,18 @@ import { studentEmailOf, teacherEmailOf } from '../lib/role'
 
 // 로그인 — [선생님 | 학생] 탭 (supabase 모드에서만 표시되는 화면)
 // 학생 탭: 아이디(출결번호)+비밀번호 → s-<아이디>@student.gsg.app 규약으로 변환해 로그인
+//
+// 학원관리앱 [🧮 채점하러 가기]로 넘어오면 ?mgmt=<학생id>&name=<이름> 이 붙는다.
+// 그때는 **학생 탭을 먼저 펴고** 누구로 로그인해야 하는지 이름을 띄운다 (좌석 태블릿은 학생이 헤맨다).
+const entryParam = (k: string) => {
+  try { return new URLSearchParams(window.location.search).get(k) } catch { return null }
+}
+
 export default function Login() {
   const { signIn, signUp } = useAuth()
-  const [role, setRole] = useState<'teacher' | 'student'>('teacher')
+  const fromMgmt = !!entryParam('mgmt')
+  const mgmtName = (entryParam('name') ?? '').slice(0, 20)
+  const [role, setRole] = useState<'teacher' | 'student'>(fromMgmt ? 'student' : 'teacher')
   const [mode, setMode] = useState<'in' | 'up'>('in')
   const [email, setEmail] = useState('')
   const [sid, setSid] = useState('')          // 학생 아이디(출결번호)
@@ -46,6 +55,14 @@ export default function Login() {
         <p className="mb-4 text-sm text-ink2">
           {role === 'student' ? '학생 로그인' : (mode === 'in' ? '로그인' : '계정 만들기')}
         </p>
+
+        {/* 관리앱 [채점하러 가기]로 넘어온 학생 안내 — 이 태블릿에서 처음 한 번만 로그인하면 된다 */}
+        {fromMgmt && role === 'student' && (
+          <div className="mb-4 rounded-xl bg-pine-soft/50 px-4 py-3 text-sm leading-relaxed text-pine-dark">
+            <b>{mgmtName ? `${mgmtName} 학생,` : '학생 여러분,'}</b> 이 태블릿에서 <b>처음 한 번만</b> 로그인하면
+            다음부터는 [🧮 채점하러 가기]를 누를 때 바로 들어옵니다.
+          </div>
+        )}
 
         {/* [선생님 | 학생] 탭 */}
         <div className="mb-5 grid grid-cols-2 rounded-xl bg-paper2 p-1 text-sm font-bold">

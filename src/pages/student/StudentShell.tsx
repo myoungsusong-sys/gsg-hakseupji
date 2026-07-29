@@ -4,7 +4,7 @@ import type { Student } from '../../types'
 import { useAuth } from '../../lib/auth'
 import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
-import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail } from '../../lib/role'
+import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail, MGMT_KEY } from '../../lib/role'
 import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
 import FixItButton from '../../components/FixItButton'
 import { useChangelog, UpdateBanner } from '../../components/UpdateLog'
@@ -29,16 +29,19 @@ export default function StudentShell() {
   // 새 배포 감지 → 상단 업데이트 배너(선생님앱과 동일). 훅은 조건 반환 전에 호출.
   const { entries: changelog, stale, unseen } = useChangelog()
 
-  // 본인 판별: supabase 모드 = 세션 이메일 → 학생 레코드 / 로컬 모드 = 로컬 학생 세션
-  // 관리앱 [채점하러 가기]로 넘어온 학생은 세션 없이 로컬 학생 세션으로 진입하므로, 로컬 세션을 먼저 본다.
+  // 본인 판별: supabase 모드 = **세션 이메일이 유일한 기준** / 로컬 모드 = 로컬 학생 세션
+  // ⚠️ 예전에는 로컬 학생 세션(localStorage)을 세션보다 먼저 봤다 → 앞 학생이 남긴 값 때문에
+  //    좌석 태블릿에 **엉뚱한 학생**이 뜰 수 있었다. 계정이 있는 실서버에서는 계정이 진실이다. (2026-07-29)
   let me: Student | undefined
   const localSid = getLocalStudentId()
-  const localMe = localSid ? students.find(s => s.id === localSid) : undefined
-  if (localMe) {
-    me = localMe
-  } else if (SUPABASE_ON) {
+  if (SUPABASE_ON) {
     me = email && isStudentEmail(email) ? matchStudentByEmail(students, email) : undefined
+  } else {
+    me = localSid ? students.find(s => s.id === localSid) : undefined
   }
+  // 관리앱 [채점하러 가기]로 들어온 자리 주인 — 로그인된 계정과 다르면 알려준다
+  const seatMgmtId = (() => { try { return sessionStorage.getItem(MGMT_KEY) } catch { return null } })()
+  const wrongSeat = !!(seatMgmtId && me?.mgmtId && me.mgmtId !== seatMgmtId)
 
   // 학습 타이머 — 접속(화면 표시) 중 1초 단위 누적 (매쓰플랫 ⏱ 순공시간)
   const meId = me?.id
@@ -50,8 +53,8 @@ export default function StudentShell() {
     return () => clearInterval(t)
   }, [meId])
 
-  if (SUPABASE_ON && !localMe) {
-    // 로컬 학생 세션(관리앱 연동 진입)이 아니면 이메일 기반으로 본인을 검증한다.
+  if (SUPABASE_ON) {
+    // 이메일 기반으로 본인을 검증한다.
     if (!isStudentEmail(email)) return <Navigate to="/" replace />   // 선생님 계정 → 선생님 화면
     if (!me) {
       if (!synced) return <div className="flex min-h-screen items-center justify-center text-ink2">불러오는 중…</div>
@@ -81,6 +84,15 @@ export default function StudentShell() {
     <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
         {stale && <UpdateBanner items={unseen.length ? unseen : changelog.slice(0, 1)} />}
+        {/* 🚨 이 태블릿 자리 주인과 로그인된 계정이 다르다 — 앞 학생 계정으로 채점되는 사고를 막는다 */}
+        {wrongSeat && (
+          <div className="flex flex-wrap items-center gap-3 bg-clay px-5 py-2.5 text-sm font-bold text-white">
+            <span>⚠️ 이 자리의 학생이 아니라 <b>{me.name}</b> 계정으로 로그인돼 있어요. 내 계정이 맞나요?</span>
+            <button onClick={logout} className="ml-auto rounded-full bg-white/20 px-3 py-1 font-extrabold hover:bg-white/30">
+              내 계정으로 바꾸기
+            </button>
+          </div>
+        )}
         <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-5 px-6 py-3">
             <div className="flex items-baseline gap-2">

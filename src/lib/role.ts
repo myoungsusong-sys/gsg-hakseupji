@@ -41,6 +41,10 @@ export function matchStudentByEmail(students: Student[], email: string): Student
     (s.loginId ?? '').trim().toLowerCase() === lid || (s.attendNo ?? '').trim() === lid)
 }
 
+// 학원관리앱 [🧮 채점하러 가기]로 넘어온 학생 id(?mgmt=…). 주소에서 지운 뒤에도 이 탭에 남겨
+// "이 자리 주인"과 로그인된 계정이 같은지 확인하는 데 쓴다.
+export const MGMT_KEY = 'gsg-mgmt-entry'
+
 // ── 로컬 모드(supabase 없음) 학생 세션 — 개발·검증용 ──────────────
 // 학생 이름+출결번호 일치 시 입장. localStorage에 학생 id만 기록.
 const LOCAL_KEY = 'gsg-student-session'
