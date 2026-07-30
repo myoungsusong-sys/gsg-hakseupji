@@ -9,6 +9,11 @@ import type { Kind, WBItem, Workbook } from '../types'
 //   1 ③ 소인수분해  ← 번호 정답 [유형검색어]
 //   2 12
 //   38p 1 ②       ← 인라인 쪽 지정은 p 필수
+//   8 | 물이 증발하기 때문이다.   ← 공백이 든 정답(서술형)은 | 뒤에 문장 그대로
+//
+// 🔴 | 가 필요한 이유: 아래 파싱은 공백으로 토큰을 나눠 `번호 정답 유형검색어` 로 읽는다.
+// 서술형 정답은 문장이라 그냥 쓰면 첫 낱말만 정답이 되고 나머지가 유형검색어로 사라진다
+// (오투 과학 서술형 60문항을 넣으려다 발견). | 앞은 `번호`(+선택적 정답), | 뒤는 나머지.
 
 interface TypeRef { id: string; name: string; unit: string }
 interface ParsedRow { page: number; label: string; kind: Kind; answer: string; typeId: string; typeLabel: string; warn?: string }
@@ -49,18 +54,28 @@ export default function BulkImportModal({ workbook, existing, onSave, onClose }:
     text.split('\n').forEach((raw, idx) => {
       const line = raw.trim()
       if (!line) return
-      const tokens = line.split(/\s+/)
-      // 쪽 헤더 줄: 숫자 하나만 있는 줄
-      if (tokens.length === 1 && /^\d+$/.test(tokens[0])) { page = Number(tokens[0]); return }
+      // 공백이 든 정답(서술형)은 `|` 로 경계를 준다. `번호 | 문장` 또는 `번호 정답 | 유형검색어`
+      const bar = line.indexOf('|')
+      const head = bar >= 0 ? line.slice(0, bar).trim() : line
+      const tail = bar >= 0 ? line.slice(bar + 1).trim() : ''
+      const tokens = head.split(/\s+/).filter(Boolean)
+      // 쪽 헤더 줄: 숫자 하나만 있는 줄 (`39 | 문장` 은 헤더가 아니라 문항이다)
+      if (bar < 0 && tokens.length === 1 && /^\d+$/.test(tokens[0])) { page = Number(tokens[0]); return }
+      if (!tokens.length) { errors.push({ line: idx + 1, text: line, reason: '번호가 없음 — 형식: 번호 | 정답' }); return }
       // 인라인 쪽 지정: "38p 1 12" — p 필수
       let rest = tokens
       let p = page
       if (/^\d+[pP]$/.test(tokens[0])) { p = Number(tokens[0].slice(0, -1)); rest = tokens.slice(1) }
       if (p == null) { errors.push({ line: idx + 1, text: line, reason: '쪽이 지정되지 않음 — 쪽 헤더 줄(예: 37) 또는 "38p"로 시작' }); return }
-      if (rest.length < 2) { errors.push({ line: idx + 1, text: line, reason: '형식: 번호 정답 [유형검색어]' }); return }
-      const [label, answer, ...tq] = rest
+      if (rest.length < (bar >= 0 ? 1 : 2)) {
+        errors.push({ line: idx + 1, text: line, reason: '형식: 번호 정답 [유형검색어] · 문장 정답은 「번호 | 문장」' }); return
+      }
+      // `|` 있음 → 정답은 (번호 뒤 토큰이 있으면 그것들, 없으면) `|` 뒤 문장 그대로. 유형검색어는 그 반대편.
+      const label = rest[0]
+      const answer = bar >= 0 ? (rest.length > 1 ? rest.slice(1).join(' ') : tail) : rest[1]
+      const query = bar >= 0 ? (rest.length > 1 ? tail : '') : rest.slice(2).join(' ')
+      if (!answer) { errors.push({ line: idx + 1, text: line, reason: '정답이 비어 있음' }); return }
       const kind: Kind = /^[①②③④⑤]$/.test(answer) ? '객관식' : '주관식'
-      const query = tq.join(' ')
       let typeId: string
       let typeLabel: string
       let warn: string | undefined
@@ -108,9 +123,11 @@ export default function BulkImportModal({ workbook, existing, onSave, onClose }:
         <p className="mb-2 text-xs leading-relaxed text-ink2">
           쪽 번호만 있는 줄(<b>37</b>)이 쪽 헤더 — 이후 줄들은 그 쪽의 <b>번호 정답 [유형검색어]</b>.
           한 줄에서 쪽을 바꾸려면 <b>38p 1 12</b>처럼 p를 붙입니다. 정답이 ①~⑤면 객관식으로 자동 인식.
+          <br />
+          <b>공백이 든 문장 정답(서술형)</b>은 번호 뒤에 <b>|</b> 를 넣고 문장을 그대로 씁니다 — <b>8 | 물이 증발하기 때문이다.</b>
         </p>
         <textarea value={text} onChange={e => setText(e.target.value)} rows={7} autoFocus
-          placeholder={'37\n1 ③ 소인수분해\n2 12\n3 ② 약수의 개수\n38p 1 ⑤'}
+          placeholder={'37\n1 ③ 소인수분해\n2 12\n3 ② 약수의 개수\n38p 1 ⑤\n15\n8 | 증발하면서 주위의 열을 흡수하기 때문이다.'}
           className="mb-3 w-full rounded-xl border border-line px-3 py-2 font-mono text-sm" />
 
         {errors.length > 0 && (

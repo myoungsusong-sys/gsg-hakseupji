@@ -6,6 +6,7 @@ import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
 import FixItButton from './FixItButton'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
+import AdminChat from './AdminChat'
 
 // ── 알림센터: 최근 채점(학생 제출)·출제 이벤트를 알림으로 파생 ─────────
 interface Notif {
@@ -215,6 +216,9 @@ export default function Layout() {
 
       {/* AI 1차 채점 승인 큐 — 대기 문항 있을 때만 플로팅 뱃지 (모든 선생님 화면) */}
       <AiApprovalPanel />
+
+      {/* 💬 클로드에게 말로 고치기 (좌하단 — 우하단은 [맨 위로]·승인 큐가 쓴다) */}
+      <AdminChat />
 
       <Outlet />
     </div>

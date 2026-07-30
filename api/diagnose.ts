@@ -144,12 +144,133 @@ async function sendKakao(b: any, res: any) {
   }
 }
 
+// ── 💬 관리자 채팅 (같은 함수 안에 둔다) ───────────────────────────────────
+// 선생님이 말로 앱 데이터를 고친다. "오투 통합과학2 15쪽 8번 정답을 ~로 바꿔"
+//
+// ⚠️ 위 ①②와 같은 안전선을 그대로 따른다:
+//  · AI 는 **정해진 4가지 작업(op)** 만 돌려준다. 임의 코드·임의 필드는 없다.
+//  · 돌려준 작업은 **바로 실행되지 않는다.** 클라이언트가 "이전값 → 새값" 미리보기를 띄우고
+//    선생님이 [적용]을 눌러야 실행된다(화이트리스트로 한 번 더 거른다). 되돌리기도 있다.
+//  · 채점 엔진(answers.ts·mathAnswer.ts)과 소스 코드는 이 경로로 바뀌지 않는다.
+const OPS = ['answer.set', 'student.update', 'config.set', 'grading.mark'] as const
+const CONFIG_KEYS = [
+  'showAnswer', 'showSolution', 'showVideo',
+  'showAnswerBefore', 'showSolutionBefore', 'showVideoBefore',
+  'dailyMasterOn', 'solveFeedback', 'aiGrade',
+] as const
+
+const CHAT_SYSTEM = `너는 학원 학습지앱의 **관리자(선생님) 비서**다. 선생님이 말로 부탁하는 일을 앱 데이터 수정 작업으로 바꿔 준다.
+
+할 수 있는 작업은 아래 네 가지뿐이다. 이 밖의 일(코드 수정, 배포, 파일 만들기, 외부 전송)은 할 수 없다 —
+그런 부탁을 받으면 ops 를 비우고 reply 로 "그건 개발 세션에서 해야 한다"고 알려라.
+
+- answer.set — 교재 문항의 정답을 고친다. workbookId·page·label(문항 번호)·answer 가 모두 필요하다.
+  answer 는 책의 정답과 해설에 적힌 문장을 **그대로** 쓴다. 지어내지 마라.
+- student.update — 학생 정보를 고친다. studentId 와 patch(name·grade·klass·attendNo·school·active 중 일부).
+- config.set — 학생앱 전역 설정 스위치. key 와 value(true/false).
+  ⚠️ 이 설정은 학생별이 아니라 **전체 학생에게 한 번에** 적용된다. 그 사실을 reply 에 반드시 알려라.
+- grading.mark — 채점 기록 하나의 ○/✕ 를 고친다. gradingId·page·label·mark('o'|'x'|'unknown').
+
+지침:
+- **모르면 묻는다.** 어느 교재인지·몇 쪽인지·어느 학생인지 확실하지 않으면 ops 를 비우고 reply 로 되물어라.
+  이름이 비슷한 교재나 학생이 여럿이면 고르라고 물어라. 넘겨짚어 고치지 마라.
+- 정답 내용을 **추측해서 만들어내지 마라.** 선생님이 불러 준 문장만 쓴다.
+- 한 번에 여러 문항을 부탁받으면 ops 를 여러 개 만들어도 된다(최대 40개).
+- reply 는 한국어 존댓말로 짧게. 무엇을 바꿀 것인지 한 줄로 요약하고, 확인이 필요하면 그것만 묻는다.
+  (실제 적용은 선생님이 [적용] 버튼을 눌러야 일어난다 — "적용해 두었습니다"라고 하지 마라.)
+- 목록에 없는 id 는 절대 만들어 쓰지 마라.`
+
+const CHAT_SCHEMA = {
+  type: 'object',
+  properties: {
+    reply: { type: 'string' },
+    ops: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          type: { type: 'string', enum: OPS as unknown as string[] },
+          why: { type: 'string' },
+          workbookId: { type: 'string' },
+          page: { type: 'number' },
+          label: { type: 'string' },
+          answer: { type: 'string' },
+          studentId: { type: 'string' },
+          patch: {
+            type: 'object',
+            properties: {
+              name: { type: 'string' }, grade: { type: 'string' }, klass: { type: 'string' },
+              attendNo: { type: 'string' }, school: { type: 'string' }, active: { type: 'boolean' },
+            },
+            additionalProperties: false,
+          },
+          key: { type: 'string', enum: CONFIG_KEYS as unknown as string[] },
+          value: { type: 'boolean' },
+          gradingId: { type: 'string' },
+          mark: { type: 'string', enum: ['o', 'x', 'unknown'] },
+        },
+        required: ['type', 'why'],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ['reply', 'ops'],
+  additionalProperties: false,
+} as const
+
+async function adminChat(b: any, res: any, key: string) {
+  const history = (Array.isArray(b.history) ? b.history : []).slice(-12)
+    .filter((m: any) => (m?.role === 'user' || m?.role === 'assistant') && typeof m?.text === 'string')
+    .map((m: any) => ({ role: m.role as 'user' | 'assistant', content: String(m.text).slice(0, 4000) }))
+  if (!history.length) { res.status(400).json({ error: '메시지가 비어 있습니다.' }); return }
+
+  // 카탈로그(교재·학생·설정 목록)는 클라이언트가 만들어 보낸다 — 정답표 수십만 문항은 보내지 않는다.
+  const catalog = {
+    교재: Array.isArray(b.workbooks) ? b.workbooks.slice(0, 200) : [],
+    학생: Array.isArray(b.students) ? b.students.slice(0, 300) : [],
+    학생앱설정: b.config ?? {},
+    최근_채점기록: Array.isArray(b.gradings) ? b.gradings.slice(0, 30) : [],
+    // 선생님이 "지금 이 문항" 처럼 말할 때 쓰라고, 보고 있는 화면·교재를 함께 준다
+    지금_화면: String(b.route ?? '').slice(0, 200),
+  }
+
+  try {
+    const client = new Anthropic({ apiKey: key })
+    const msg = await client.messages.create({
+      model: 'claude-opus-5',
+      max_tokens: 16000,
+      output_config: { effort: 'medium', format: { type: 'json_schema', schema: CHAT_SCHEMA as any } },
+      system: `${CHAT_SYSTEM}\n\n## 지금 이 학원의 데이터 목록 (여기 있는 id 만 쓸 수 있다)\n${JSON.stringify(catalog).slice(0, 60000)}`,
+      messages: history,
+    })
+    if (msg.stop_reason === 'refusal') { res.status(502).json({ error: 'AI가 답하지 못했습니다.' }); return }
+    const text = msg.content
+      .filter((x): x is Anthropic.TextBlock => x.type === 'text')
+      .map(x => x.text).join('').trim()
+    let out: any = null
+    try { out = JSON.parse(text) } catch { out = null }
+    if (!out) { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
+
+    const ops = (Array.isArray(out.ops) ? out.ops : [])
+      .filter((o: any) => (OPS as readonly string[]).includes(o?.type))
+      .slice(0, 40)
+    res.status(200).json({ reply: String(out.reply ?? '').slice(0, 4000), ops })
+  } catch (e: any) {
+    res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
+  }
+}
+
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'POST only' }); return }
 
-  // 카톡 알림도 이 함수가 받는다 (함수 개수 상한 때문 — 위 주석 참고)
+  // 카톡 알림·관리자 채팅도 이 함수가 받는다 (함수 개수 상한 때문 — 위 주석 참고)
   const pre = await readBody(req)
   if (pre?.action === 'notify') { await sendKakao(pre, res); return }
+  if (pre?.action === 'chat') {
+    const k = process.env.ANTHROPIC_API_KEY
+    if (!k) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
+    await adminChat(pre, res, k); return
+  }
 
   const key = process.env.ANTHROPIC_API_KEY
   if (!key) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
