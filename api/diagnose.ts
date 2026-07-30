@@ -218,6 +218,36 @@ const CHAT_SCHEMA = {
   additionalProperties: false,
 } as const
 
+// 💬 채팅창을 쓸 수 있는 사람 — 이 둘만 (2026-07-30 명수쌤 지시).
+// 클라이언트에서 버튼을 숨기는 것만으로는 API 직접 호출을 막지 못한다 → 여기서 세션을 검증한다.
+// (src/lib/adminOps.ts 의 CHAT_ALLOWED_EMAILS 와 같은 목록을 유지할 것)
+const CHAT_ALLOWED = ['annals@hanmail.net', 'azzico77@naver.com']
+
+/** 로그인 세션의 이메일이 허용 목록에 있으면 true. 실패 사유는 문자열로 돌려준다. */
+async function chatCaller(req: any): Promise<{ ok: true; email: string } | { ok: false; code: number; error: string }> {
+  const auth = String(req.headers?.authorization ?? '')
+  const token = auth.startsWith('Bearer ') ? auth.slice(7) : ''
+  if (!token) return { ok: false, code: 401, error: '로그인 후 이용해 주세요.' }
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!key) return { ok: false, code: 503, error: '설정이 덜 되어 있습니다(SUPABASE_SERVICE_ROLE_KEY).' }
+  try {
+    const { createClient } = await import('@supabase/supabase-js')
+    const admin = createClient(
+      process.env.SUPABASE_URL || 'https://rttqkpquyzfrdxqhgqvi.supabase.co',
+      key, { auth: { persistSession: false } },
+    )
+    const { data, error } = await admin.auth.getUser(token)
+    if (error || !data?.user) return { ok: false, code: 401, error: '세션이 만료되었습니다. 다시 로그인해 주세요.' }
+    const email = String(data.user.email ?? '').trim().toLowerCase()
+    if (!CHAT_ALLOWED.includes(email)) {
+      return { ok: false, code: 403, error: '이 기능은 원장·관리자 계정만 사용할 수 있습니다.' }
+    }
+    return { ok: true, email }
+  } catch (e: any) {
+    return { ok: false, code: 502, error: String(e?.message ?? e).slice(0, 200) }
+  }
+}
+
 async function adminChat(b: any, res: any, key: string) {
   const history = (Array.isArray(b.history) ? b.history : []).slice(-12)
     .filter((m: any) => (m?.role === 'user' || m?.role === 'assistant') && typeof m?.text === 'string')
@@ -267,6 +297,8 @@ export default async function handler(req: any, res: any) {
   const pre = await readBody(req)
   if (pre?.action === 'notify') { await sendKakao(pre, res); return }
   if (pre?.action === 'chat') {
+    const who = await chatCaller(req)
+    if (!who.ok) { res.status(who.code).json({ error: who.error }); return }
     const k = process.env.ANTHROPIC_API_KEY
     if (!k) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
     await adminChat(pre, res, k); return

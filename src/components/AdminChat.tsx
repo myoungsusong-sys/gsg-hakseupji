@@ -1,8 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useStore, uid } from '../lib/store'
+import { useAuth } from '../lib/auth'
+import { SUPABASE_ON } from '../lib/supabase'
 import {
-  applyOps, clearLastApplied, previewOp, rememberApplied, takeLastApplied, undoSnapshot, validateOp,
+  applyOps, chatAllowed, clearLastApplied, previewOp, rememberApplied, takeLastApplied,
+  undoSnapshot, validateOp,
   type Ctx, type Op, type OpPreview, type Snapshot,
 } from '../lib/adminOps'
 
@@ -22,6 +25,10 @@ interface Msg { role: 'user' | 'assistant'; text: string }
 
 export default function AdminChat() {
   const [open, setOpen] = useState(false)
+  const { email } = useAuth()
+  // 허용된 두 계정만 — 로컬(목) 모드는 로그인이 없으므로 개발·검증용으로 열어 둔다.
+  // 라이브(Supabase 모드)에서는 로그인 이메일이 목록에 있어야 버튼 자체가 안 뜬다.
+  if (SUPABASE_ON && !chatAllowed(email)) return null
   return (
     <>
       <button type="button" onClick={() => setOpen(true)} title="클로드에게 말로 고치기"
@@ -35,6 +42,7 @@ export default function AdminChat() {
 
 function ChatPanel({ onClose }: { onClose: () => void }) {
   const st = useStore()
+  const { session } = useAuth()
   const [msgs, setMsgs] = useState<Msg[]>([{
     role: 'assistant',
     text: '무엇을 고칠까요? 예) "오투 통합과학2 15쪽 8번 정답을 «물이 증발할 때 주위에서 열을 흡수하기 때문이다.»로 바꿔"\n\n고칠 수 있는 것: 교재 정답 · 학생 정보 · 학생앱 설정 · 채점 기록. 적용 전에 바뀔 내용을 먼저 보여드립니다.',
@@ -91,8 +99,14 @@ function ChatPanel({ onClose }: { onClose: () => void }) {
     const next = [...msgs, { role: 'user' as const, text }]
     setMsgs(next); setInput(''); setBusy(true); setErr(''); setPreviews(null); setDoneNote('')
     try {
+      // 세션 토큰을 함께 보낸다 — 서버가 이메일을 보고 허용된 두 계정만 통과시킨다
+      const token = session?.access_token
       const res = await fetch('/api/diagnose', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
         body: JSON.stringify({ action: 'chat', history: next.filter(m => m.text), ...catalog() }),
       })
       if (!res.ok) {

@@ -10,6 +10,14 @@
 //  · 채점 엔진(answers.ts·mathAnswer.ts)과 소스 코드는 이 경로로 바뀌지 않는다.
 import type { Grading, Student, StudentAppConfig, WBItem, Workbook } from '../types'
 
+// 💬 채팅창을 쓸 수 있는 사람 — **이 둘만** (2026-07-30 명수쌤 지시)
+// 데이터를 실제로 고치는 창이라 강사·조교에게는 열지 않는다.
+// 서버(api/diagnose.ts 의 chat 분기)에서도 같은 목록으로 세션 이메일을 검증한다 —
+// 버튼을 숨기는 것만으로는 API 직접 호출을 막지 못하기 때문.
+export const CHAT_ALLOWED_EMAILS = ['annals@hanmail.net', 'azzico77@naver.com'] as const
+export const chatAllowed = (email: string | null | undefined) =>
+  !!email && (CHAT_ALLOWED_EMAILS as readonly string[]).includes(email.trim().toLowerCase())
+
 export const CONFIG_KEYS = [
   'showAnswer', 'showSolution', 'showVideo',
   'showAnswerBefore', 'showSolutionBefore', 'showVideoBefore',
