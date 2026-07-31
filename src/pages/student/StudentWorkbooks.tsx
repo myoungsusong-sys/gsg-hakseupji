@@ -522,8 +522,19 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     () => wbItems.filter(i => i.workbookId === wb.id).sort((a, b) => a.page - b.page || a.no - b.no),
     [wbItems, wb.id],
   )
-  // 정답표가 어느 개정 기준인지 — 교재명에 개정이 박혀 있으면 그대로 알려 준다.
-  const editionWarn = /\(2015개정\)/.test(wb.name) ? '2015개정' : null
+  // 정답표가 어느 개정 기준인지 — 개정은 교재명·학년·과정 세 군데에 흩어져 있다.
+  // 🔴 이름만 보면 2015개정 116권 중 1권밖에 못 잡는다(나머지는 grade='중3-2(2015)' 에만 있다).
+  const editionWarn =
+    /\(2015개정\)/.test(wb.name) || /\(2015\)/.test(wb.grade ?? '') || /-2015$/.test(wb.course ?? '')
+      ? '2015개정'
+      : /^중3-2/.test(wb.grade ?? '') ? '22개정' : null   // 중3-2는 두 개정이 공존한다
+
+  // 이 교재에 정답표가 사실상 없는가 — 있으면 "자동으로 채점돼요" 안내가 거짓말이 된다.
+  const withAnswer = items.filter(i => {
+    const a = (i.answer ?? '').trim()
+    return a && a !== '.' && a !== '-'
+  }).length
+  const noAnswerBook = items.length > 0 && withAnswer / items.length < 0.05
   const marks = useMemo(() => latestMarks(gradings, me.id, wb.id), [gradings, me.id, wb.id])
   const pages = useMemo(() => [...new Set(items.map(i => i.page))].sort((a, b) => a - b), [items])
 
@@ -642,7 +653,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
         {mode === 'view' && (
           <button onClick={() => { setMode('grade'); setAnswers({}); setOnlyWrong(false) }}
             className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
-            ✏️ 직접 풀고 채점하기
+            {noAnswerBook ? '✏️ 직접 풀고 자기채점하기' : '✏️ 직접 풀고 채점하기'}
           </button>
         )}
       </div>
@@ -660,7 +671,14 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
       {/* 안내 문구 */}
       {mode === 'grade' ? (
         <>
-          <p className="mb-3 text-sm text-ink2">이 쪽 문항의 답을 입력하고 <b className="text-pine-dark">채점하기</b>를 누르면 자동으로 채점돼요. 정답은 공개되지 않아요.</p>
+          {noAnswerBook ? (
+            <p className="mb-3 rounded-xl border border-amber/50 bg-amber-soft/60 px-3 py-2 text-sm text-ink">
+              이 교재는 <b>앱에 정답표가 아직 없어요</b> — 자동채점이 안 돼요.
+              교재 뒤 정답·해설을 보고 <b>스스로 ○/✕</b>를 표시하면 진도로 쌓여요.
+            </p>
+          ) : (
+            <p className="mb-3 text-sm text-ink2">이 쪽 문항의 답을 입력하고 <b className="text-pine-dark">채점하기</b>를 누르면 자동으로 채점돼요. 정답은 공개되지 않아요.</p>
+          )}
           <PhotoScanBar items={gradableOnPage} pageLabel={`${wb.name} ${page}쪽`} onFill={fillFromScan} />
         </>
       ) : !cfg.showAnswer ? (

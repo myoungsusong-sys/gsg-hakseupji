@@ -4,6 +4,10 @@ import { useSubject } from '../../lib/subject'
 import { subjectOfCourse } from '../../data/curriculum'
 import type { Student } from '../../types'
 import BookCatalogDialog from '../BookCatalogDialog'
+import { WB_MATCH_BOOKS } from '../../data/wbMatch'
+
+// 정답표가 없는 교재(카탈로그 noAnswer) — 선생님이 '지원'인 줄 알고 배정하지 않도록 표시한다
+const NO_ANSWER_KEYS = new Set(WB_MATCH_BOOKS.filter(b => b.noAnswer).map(b => b.key))
 
 // 매쓰플랫 「(학생명) 학생 교재」 다이얼로그 — 등록된 교재 중 채점할 교재 선택
 const TABS = ['전체', '내 교재', '시그니처 교재', '시중교재', '교과서'] as const
@@ -101,7 +105,15 @@ export default function StudentBookDialog({ student, currentId, onSelect, onClos
                         <span className="ml-1.5 rounded bg-lime-100 px-1.5 py-0.5 text-[10px] font-bold text-lime-700">쌍둥이 지원</span>
                       )}
                     </td>
-                    {isMarket && <td className="whitespace-nowrap py-2 pr-2 text-xs text-ink2">지원</td>}
+                    {/* 🔴 전에는 무조건 '지원' 이었다. 정답표가 없는 교재가 433권인데 선생님은
+                        자동채점이 되는 줄 알고 배정했다(2026-07-31 학생 민원으로 발견). */}
+                    {isMarket && (
+                      <td className="whitespace-nowrap py-2 pr-2 text-xs text-ink2">
+                        {w.matchKey && NO_ANSWER_KEYS.has(w.matchKey)
+                          ? <span className="font-semibold text-clay">정답 없음</span>
+                          : '지원'}
+                      </td>
+                    )}
                     <td className="whitespace-nowrap py-2 pr-2 text-xs text-ink2">{w.publisher}</td>
                     <td className="whitespace-nowrap px-3 py-2 text-right text-xs font-semibold">{progress}</td>
                   </tr>
