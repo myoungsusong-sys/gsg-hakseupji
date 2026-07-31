@@ -381,6 +381,13 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
 
   const dateKr = date.replaceAll('-', '. ') + '.'
 
+  // 학생앱에서 푼 기록에만 문항별 풀이 시간(sec)이 남는다 — 있을 때만 쓴다.
+  // (선생님이 채점판에서 매긴 기록엔 시간이 없다. 없는데 '빨리 풀었다'는 식으로 쓰면 지어내기다)
+  const solveMinutes = useMemo(() => {
+    const sec = dayGradings.reduce((a, g) => a + g.results.reduce((b, r) => b + (r.sec ?? 0), 0), 0)
+    return sec >= 60 ? Math.round(sec / 60) : 0
+  }, [dayGradings])
+
   // 오늘 데이터를 AI에 넘길 컨텍스트 문자열
   const aiContext = useMemo(() => {
     const L: string[] = [`학생: ${student.name}${student.klass ? ` (${student.klass})` : ''} · ${dateKr}`]
@@ -391,9 +398,24 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     if (weekAvg != null && weekDelta != null) L.push(`지난 7일 평균 ${weekAvg}점 대비 ${weekDelta >= 0 ? '+' : ''}${weekDelta}점`)
     if (streak >= 2) L.push(`연속 학습 ${streak}일째`)
     if (wrongTypes.length) L.push('오늘 취약 유형: ' + wrongTypes.slice(0, 3).map(t => t.name).join(', ') + (drills.length ? ' (오답 드릴 학습지 생성함)' : ''))
+    if (solveMinutes) L.push(`푼 시간: 약 ${solveMinutes}분 (학생앱에 기록된 시간)`)
     if (nextPlan && !isNone(nextPlan)) L.push('다음 학습 계획: ' + nextPlan.trim())
     return L.join('\n')
-  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan])
+  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan, solveMinutes])
+
+  // 🔴 AI 가 고를 수 있는 '오늘의 초점' — **근거가 실제로 있는 것만** 보낸다.
+  // 전에는 서버가 일곱 초점을 무조건 돌려서, 자료에 없는 초점이 걸리면 AI 가 태도·다음 계획·
+  // 집에서 할 일을 그럴듯하게 지어냈다(2026-07-31 명수쌤 지적). 근거가 없으면 그 초점을 아예 뺀다.
+  const aiAngles = useMemo(() => {
+    const k: string[] = []
+    if (coveredUnits.units.length) k.push('unit')
+    if (weekAvg != null && weekDelta != null) k.push('trend')
+    if (wrongTypes.length) { k.push('wrong'); k.push('home') }
+    if (solveMinutes) k.push('pace')
+    if (totalSolved) k.push('best')
+    if (nextPlan && !isNone(nextPlan)) k.push('next')
+    return k
+  }, [coveredUnits, weekAvg, weekDelta, wrongTypes, solveMinutes, totalSolved, nextPlan])
 
   // 선생님이 한마디를 비워 두면 이 문구가 그대로 학부모에게 나간다. 문장이 고정이면
   // 매주 토씨까지 같은 글이 가서 가장 먼저 '기계가 쓴 티'가 나므로, 학생·날짜로 표현을
@@ -473,6 +495,7 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
           // 초점·분량을 고르는 씨앗. 같은 날 다시 눌러도 같은 결, 날·학생·과목이 바뀌면 달라진다
           seed: `${student.id}|${date}|${subject}`,
           recent: recentComments,
+          have: aiAngles,          // 근거 있는 초점만 — 없는 초점이 걸리면 AI가 지어낸다
         }),
       })
       if (!r.ok) {

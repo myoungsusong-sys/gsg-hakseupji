@@ -29,24 +29,48 @@ const SYSTEM = `너는 학원 선생님이 학부모에게 보내는 일일 보�
 문장을 전부 '~습니다'로 끝내지 마라. '~네요', '~았어요', '~더군요' 같은 실제 말투를 섞어라.
 
 [사람처럼 보이는 법]
-- 구체적인 것 하나를 짚어라(단원 이름, 틀린 유형, 걸린 시간 등). 뭉뚱그리면 바로 티가 난다.
+- 구체적인 것 하나를 짚어라. **단, 자료에 적힌 것만** — 단원 이름, 틀린 유형, 점수, 지난주 대비.
+  뭉뚱그리면 티가 나지만, 없는 것을 지어내면 그건 거짓말이라 훨씬 나쁘다.
 - 잘한 날은 담백하게. 아쉬운 날은 감추지 말고 사실대로 쓰되, 다음에 뭘 할지 한마디 붙인다.
 - 학부모가 아는 말로 쓴다. '오답률', '정답률', '취약 유형' 같은 업계 말은 풀어서.
+
+[🔴 없는 것은 없는 대로 둔다 — 지어내면 그 글은 실패다]
+학부모는 이 글을 **선생님이 직접 본 사실**로 읽는다. 아래는 '오늘 데이터'에 **아예 없는**
+것들이다. 자료에 그 항목이 적혀 있지 않으면 절대 쓰지 마라. 짐작·추측·미화 모두 금지다.
+ · 수업 태도, 표정, 집중력, 자세, 앉아 있던 모습
+ · 질문을 했는지, 발표를 했는지, 친구와 어땠는지
+ · 걸린 시간·속도 (자료에 '푼 시간'이 없으면)
+ · 숙제를 해 왔는지, 집에서 무엇을 했는지
+ · 다음 시간에 무엇을 할지 (자료에 '다음 학습 계획'이 없으면)
+ · 학생의 마음·의지·노력의 정도 — "끝까지 붙잡고 풀었다", "포기하지 않았다",
+   "어려워했지만", "집중해서", "차분히" 같은 말은 자료에 근거가 없으면 전부 지어낸 것이다.
+ · 점수가 낮거나 높은 **이유** (자료에 없으면 원인을 만들어 붙이지 마라)
+쓸 말이 모자라면 **짧게 끝내라.** 한 문장이어도 된다. 채우려고 없는 말을 넣지 마라.
 
 [지키는 선]
 - 제공된 '오늘 데이터'에 없는 사실은 절대 지어내지 않는다. 없으면 안 쓰면 된다.
 - 결과 문장만 출력한다. 따옴표, 머리말("선생님 한마디:"), 설명은 붙이지 않는다.`
 
 // 오늘 어디에 초점을 둘지 — 다 훑지 말고 하나만 쓰게 하는 장치
-const ANGLES = [
-  '오늘 다룬 단원 내용 자체. 무엇을 배웠고 어디가 고비였는지.',
-  '지난주와 견준 흐름. 오르든 내리든 그 변화 하나만.',
-  '틀린 유형 하나를 짚고, 다음 시간에 그걸 어떻게 다룰지.',
-  '푸는 태도와 속도. 시간을 얼마나 썼는지, 막힌 데서 끝까지 붙잡았는지.',
-  '오늘 제일 잘한 것 하나만. 짧고 담백하게.',
-  '다음 수업에 무엇을 할지 예고 중심으로.',
-  '집에서 한 가지 도와줄 수 있는 것을 부탁하듯이.',
+//
+// 🔴 초점은 **그 근거가 오늘 자료에 실제로 있을 때만** 고른다. (2026-07-31 명수쌤 지적)
+// 전에는 일곱 가지를 날짜순으로 무조건 돌렸는데, 자료에 없는 초점이 걸리면
+// (태도·속도 / 다음 시간 예고 / 집에서 도울 것) AI가 그럴듯한 말을 **지어냈다** —
+// "끝까지 붙잡고 풀었어요", "다음 시간엔 ○○을 하겠습니다" 같은 문장이 근거 없이 나갔다.
+// 학부모는 이걸 선생님이 본 사실로 읽으니 가장 나쁜 종류의 오류다.
+// → 클라이언트가 "지금 자료로 쓸 수 있는 초점(have)"을 함께 보내고, 여기서 그 안에서만 고른다.
+const ANGLES: { key: string; text: string }[] = [
+  { key: 'unit', text: '오늘 다룬 단원 내용. 무엇을 배웠는지 — 자료에 적힌 범위 안에서만.' },
+  { key: 'trend', text: '지난주와 견준 흐름. 오르든 내리든 그 변화 하나만.' },
+  { key: 'wrong', text: '자주 틀린 유형 하나를 짚어라. (다음에 어떻게 할지는 자료에 계획이 있을 때만)' },
+  { key: 'pace', text: '푸는 데 걸린 시간. 자료에 적힌 시간만 쓰고, 태도나 마음가짐은 쓰지 마라.' },
+  { key: 'best', text: '오늘 제일 잘한 것 하나만. 짧고 담백하게.' },
+  { key: 'next', text: '자료에 적힌 다음 학습 계획을 예고하듯 한 줄로.' },
+  { key: 'home', text: '자주 틀린 그 유형을 집에서 한 번 더 봐 달라고 부탁하듯이. 그 밖의 부탁은 만들지 마라.' },
 ]
+// have 를 안 보내는 (옛) 호출용 기본값 — 자료에서 바로 확인되는 것만. 지어내기 쉬운
+// pace·next·home 은 근거를 받았을 때만 열린다.
+const SAFE_KEYS = ['unit', 'trend', 'wrong', 'best']
 
 const LENGTHS = [
   '한 문장. 짧게 끊어라.',
@@ -70,11 +94,16 @@ const pick = <T,>(arr: T[], seed: string, salt: string): T => arr[hash(seed + sa
  * 고른다 — 하루 뒤든 이틀 뒤든 초점이 반드시 달라지고, 학생마다 시작점이 다르다.
  * seed 는 `학생id|YYYY-MM-DD|과목` 형식.
  */
-function angleOf(seed: string): string {
+function angleOf(seed: string, have?: unknown): string {
+  const keys = Array.isArray(have) ? have.map(String) : []
+  const pool = ANGLES.filter(a => (keys.length ? keys : SAFE_KEYS).includes(a.key))
+  // 쓸 수 있는 초점이 하나도 없으면(자료가 거의 빈 날) 초점을 주지 않는다 —
+  // 억지로 하나 골라 주면 그게 곧 지어내기가 된다.
+  if (!pool.length) return '자료에 있는 사실 하나만 골라 담백하게. 없는 것은 쓰지 마라.'
   const [id = seed, date = ''] = seed.split('|')
   const m = date.match(/^(\d{4})-(\d{2})-(\d{2})$/)
   const day = m ? Math.floor(Date.UTC(+m[1], +m[2] - 1, +m[3]) / 86400000) : hash(date)
-  return ANGLES[(day + hash(id)) % ANGLES.length]
+  return pool[(day + hash(id)) % pool.length].text
 }
 
 function readBody(req: any): Promise<any> {
@@ -91,7 +120,7 @@ export default async function handler(req: any, res: any) {
   const key = process.env.ANTHROPIC_API_KEY
   if (!key) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
 
-  const { mode, context, draft, seed, recent } = await readBody(req)
+  const { mode, context, draft, seed, recent, have } = await readBody(req)
   const ctx = String(context ?? '').slice(0, 4000)
   // 최근에 보낸 한마디 — 시작하는 말과 구조가 겹치지 않게 하는 가장 강한 장치
   const past = (Array.isArray(recent) ? recent : [])
@@ -106,11 +135,12 @@ export default async function handler(req: any, res: any) {
 내용을 더하거나 빼지 말고, 선생님이 쓴 말투를 살려라. AI가 고친 티가 나면 실패다.\n\n[오늘 데이터]\n${ctx}\n\n[선생님 초안]\n${String(draft ?? '').slice(0, 2000)}${avoid}`
     : `아래 오늘 학습 데이터로 '선생님 한마디'를 써라.
 
-[오늘은 이것에 초점을 둔다] ${angleOf(s)}
+[오늘은 이것에 초점을 둔다] ${angleOf(s, have)}
 [분량] ${pick(LENGTHS, s, 'len')}
 
-데이터를 다 훑지 말고 위 초점 하나로만 써라. 초점에 쓸 만한 내용이 데이터에 없으면
-그때만 다른 것을 골라라.\n\n[오늘 데이터]\n${ctx}${avoid}`
+데이터를 다 훑지 말고 위 초점 하나로만 써라.
+**아래 [오늘 데이터]에 적힌 것이 전부다.** 여기 없는 일은 일어나지 않은 것으로 여기고,
+쓸 말이 모자라면 짧게 끝내라. 없는 사실을 채워 넣으면 실패다.\n\n[오늘 데이터]\n${ctx}${avoid}`
 
   try {
     const client = new Anthropic({ apiKey: key })
