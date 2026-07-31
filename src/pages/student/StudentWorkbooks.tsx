@@ -3,7 +3,7 @@ import type { GradeResult, Grading, WBItem, Workbook } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { wbAnswerImg, normAnswer, isEssayAnswer, isHeavyMathAnswer, answerParts, joinAnswerParts, splitAnswerParts, plainAnswerParts, joinPlainParts, splitPlainParts } from '../../lib/answers'
-import { mathEqual } from '../../lib/mathAnswer'
+import { answerUnit, mathEqual } from '../../lib/mathAnswer'
 import MathAnswerField, { levelFromCourse, type KeypadLevel } from '../../components/student/MathAnswerField'
 import { typeName, typeUnitName } from '../../data/curriculum'
 import { loadLectures, hasLectures, type Lecture, type LectureUnit } from '../../data/lectures'
@@ -152,13 +152,23 @@ function WbAnswerInput({ item, value, onChange, level = '중등' }: {
       </div>
     )
   }
+  // 정답이 `\sqrt{6}cm` 처럼 단위로 끝나면 **단위는 칸 밖에 적어 주고 값만 받는다.**
+  // 저장은 값 그대로 — 채점기가 단위 생략을 이미 허용하므로 합성하지 않는다(합성하면
+  // 학생이 단위를 또 쳤을 때 '√6cmcm' 이 되어 오답이 난다). (2026-07-31)
+  const u = answerUnit(item.answer)
   return (
     <div className="grid gap-1">
       <div className="flex flex-wrap items-start gap-1.5">
-        <MathAnswerField value={value === '모름' ? '' : value} onChange={onChange} level={level} width="w-40" />
+        <MathAnswerField value={value === '모름' ? '' : value} onChange={onChange} level={level} width="w-40"
+          hideUnits={!!u} />
+        {u && <span className="self-center text-sm font-bold text-ink">{u.label}</span>}
         {unknownBtn}
       </div>
-      <span className="text-[10px] text-ink2/70">분수는 15/2 · 여러 값은 쉼표로 (예: x=3, y=5) · 단위·°는 생략 가능 · 기호는 [√π] 버튼</span>
+      <span className="text-[10px] text-ink2/70">
+        {u
+          ? `단위 ${u.label}는 이미 적혀 있어요 — 숫자(값)만 넣으면 돼요 · 분수는 15/2 · 기호는 [√π] 버튼`
+          : '분수는 15/2 · 여러 값은 쉼표로 (예: x=3, y=5) · 단위·°는 생략 가능 · 기호는 [√π] 버튼'}
+      </span>
     </div>
   )
 }

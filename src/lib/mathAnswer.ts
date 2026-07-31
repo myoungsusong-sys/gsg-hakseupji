@@ -251,6 +251,29 @@ function splitUnit(tok: string): [string, string] {
   return [tok.slice(0, m.index), m[0].replace(/\^/g, '')]
 }
 
+// ── 입력칸 밖에 보여줄 단위 라벨 ──────────────────────────────────────────
+// 정답이 `\sqrt{6}cm` 이면 학생에게 단위를 치게 하지 말고 칸 옆에 'cm' 을 적어 준다.
+// (2026-07-31 명수쌤 지시 — 원본이 단위를 답과 분리해 갖고 있는 것을 보고 도입)
+//
+// 🔴 단위 목록은 **여기 UNIT_RE 하나만** 쓴다. 화면용으로 목록을 복사해 두면 채점이 보는
+//    단위와 갈라져 "라벨엔 cm 이라 써놓고 채점은 단위로 안 보는" 조용한 불일치가 난다.
+// 🔴 오탐이 무섭다. UNIT_RE 는 문자열 **끝**만 보므로 '지우개'(→개)·'공원'(→원)·'필통'(→통)
+//    같은 낱말 정답이 값+단위로 쪼개진다. 그래서 **앞이 실제 수식일 때만** 단위로 인정한다.
+const UNIT_LABEL: Record<string, string> = { cm2: 'cm²', cm3: 'cm³', m2: 'm²', m3: 'm³', km2: 'km²', mm2: 'mm²', mm3: 'mm³' }
+
+export function answerUnit(answer: string | undefined | null): { unit: string; label: string } | null {
+  const raw = (answer ?? '').trim()
+  if (!raw) return null
+  if (raw.includes(',')) return null            // 답이 여럿이면 칸 분리 쪽이 처리한다
+  const tok = normMath(raw)
+  const [head, unit] = splitUnit(tok)
+  if (!unit || !head) return null
+  // 앞이 값으로 읽히는 식일 때만 단위로 본다 — 낱말 정답('지우개')과 초등 '3 m 2 cm' 를 막는다
+  if (!/^[0-9+\-*/^().√π\s]+$/.test(head)) return null
+  if (mathValue(head) === null) return null
+  return { unit, label: UNIT_LABEL[unit] ?? unit }
+}
+
 const near = (a: number, b: number) =>
   Math.abs(a - b) <= 1e-9 * Math.max(1, Math.abs(a), Math.abs(b))
 

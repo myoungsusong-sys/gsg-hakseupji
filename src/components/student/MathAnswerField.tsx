@@ -67,6 +67,7 @@ function preview(v: string): string {
 
 export default function MathAnswerField({
   value, onChange, level = '중등', placeholder = '답 입력', className = '', width = 'w-44',
+  hideUnits = false,
 }: {
   value: string
   onChange: (v: string) => void
@@ -74,6 +75,8 @@ export default function MathAnswerField({
   placeholder?: string
   className?: string
   width?: string
+  /** 칸 밖에 단위 라벨이 붙은 문항 — 키패드 '단위' 탭을 숨긴다(라벨 있는데 또 치게 하면 안 된다) */
+  hideUnits?: boolean
 }) {
   const [open, setOpen] = useState(false)
   const [tab, setTab] = useState(TABS_BY_LEVEL[level][0])
@@ -92,7 +95,7 @@ export default function MathAnswerField({
     requestAnimationFrame(() => { el.focus(); el.setSelectionRange(pos, pos) })
   }
 
-  const tabs = TABS_BY_LEVEL[level]
+  const tabs = hideUnits ? TABS_BY_LEVEL[level].filter(t => t !== '단위') : TABS_BY_LEVEL[level]
   const pv = preview(value)
 
   return (

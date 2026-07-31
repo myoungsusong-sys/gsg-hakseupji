@@ -1,9 +1,10 @@
 import type { Problem } from '../../types'
-import { mathEqual } from '../../lib/mathAnswer'
+import { answerUnit, mathEqual } from '../../lib/mathAnswer'
 import { answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
 import MathAnswerField, { type KeypadLevel } from './MathAnswerField'
 
-// ⚠️ 학생앱용 보존 컴포넌트 — 현재 앱 어디에서도 라우팅·import 되지 않는다.
+// ⚠️ 학습지 풀이 화면(StudentSolve.tsx)이 쓰는 입력 컴포넌트다.
+//    (아래 옛 주석은 "어디서도 import 안 된다"고 하지만 낡았다 — 2026-07-31 확인)
 // 원래 수업>학습지 채점 화면(WorksheetGrade)이 "학생이 답을 입력하는" 방식이던 시절의 UI로,
 // 2026-07-08 매쓰플랫 group-scoring 방식(선생님이 정답을 보며 문항별 ○/✕만 마킹)으로
 // 교체하면서, 곧 만들 학생앱(학생이 직접 답 입력 → 자동 채점)에서 재활용하기 위해 옮겨 두었다.
@@ -74,6 +75,20 @@ export default function AnswerInput({ p, value, onChange, level = '중등' }: {
             <MathAnswerField value={cur[idx] ?? ''} onChange={v => setPart(idx, v)} level={level} width="w-40" />
           </div>
         ))}
+      </div>
+    )
+  }
+  // 정답이 단위로 끝나면 단위는 칸 밖에 적어 주고 값만 받는다 (교재 화면과 같은 규칙).
+  // 🔴 이 파일과 StudentWorkbooks 의 WbAnswerInput 은 별개 컴포넌트다 — 한쪽만 고치면 어긋난다.
+  const u = isImgAnswer(p.answer) ? null : answerUnit(p.answer)
+  if (u) {
+    return (
+      <div className="grid gap-1">
+        <div className="flex flex-wrap items-center gap-1.5">
+          <MathAnswerField value={value} onChange={onChange} level={level} width="w-44" hideUnits />
+          <span className="text-sm font-bold text-ink">{u.label}</span>
+        </div>
+        <span className="text-[10px] text-ink2/70">단위 {u.label}는 이미 적혀 있어요 — 숫자(값)만 넣으면 돼요</span>
       </div>
     )
   }
