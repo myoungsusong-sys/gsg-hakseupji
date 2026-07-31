@@ -522,6 +522,8 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     () => wbItems.filter(i => i.workbookId === wb.id).sort((a, b) => a.page - b.page || a.no - b.no),
     [wbItems, wb.id],
   )
+  // 정답표가 어느 개정 기준인지 — 교재명에 개정이 박혀 있으면 그대로 알려 준다.
+  const editionWarn = /\(2015개정\)/.test(wb.name) ? '2015개정' : null
   const marks = useMemo(() => latestMarks(gradings, me.id, wb.id), [gradings, me.id, wb.id])
   const pages = useMemo(() => [...new Set(items.map(i => i.page))].sort((a, b) => a - b), [items])
 
@@ -644,6 +646,16 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           </button>
         )}
       </div>
+
+      {/* 🔴 개정이 다른 책으로 채점하면 "문제랑 답이 다르다"가 된다 — 실제 학생 민원(2026-07-31).
+          정답표는 개정판마다 쪽·번호가 완전히 다르다(베이직쎈 3(상): 2015↔22 일치율 16.6%). */}
+      {editionWarn && (
+        <p className="mb-3 rounded-xl border border-clay/40 bg-red-50 px-3 py-2 text-sm font-semibold text-clay">
+          ⚠️ 이 교재의 정답표는 <b>{editionWarn}</b> 기준이에요. 손에 든 책이 다른 개정판이면
+          쪽·번호가 어긋나 <b>정답이 맞아도 틀리게 채점</b>돼요. 책 표지의 개정을 확인하고,
+          다르면 선생님께 말해 주세요.
+        </p>
+      )}
 
       {/* 안내 문구 */}
       {mode === 'grade' ? (
