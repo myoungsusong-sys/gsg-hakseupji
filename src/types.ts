@@ -410,6 +410,25 @@ export interface SolveFeedback {
 }
 
 // 일일 보고지 메모 (학생×날짜)
+// 오늘 수업 태도 — 선생님이 눌러 둔 것만 '선생님 한마디' AI의 근거가 된다. (2026-07-31 명수쌤 지시)
+//
+// 🔴 왜 만들었나: AI 가 태도·집중·숙제를 **지어내던 문제**(21차) 때문이다. 앱이 모르는 것을
+// 쓰게 하면 창작이 된다 → 쓰고 싶으면 사실을 입력받아야 한다. 안 누른 항목은 자료에 없고,
+// 자료에 없으면 AI는 태도 이야기를 아예 하지 않는다.
+// 과목별로 둔다(bySubject 안) — 같은 날 수학·과학을 다른 선생님이 볼 수 있다.
+export interface Attitude {
+  focus?: 'good' | 'ok' | 'low'              // 수업 집중
+  homework?: 'done' | 'partial' | 'none'     // 숙제
+  tags?: string[]                            // 관찰 태그 (ATTITUDE_TAGS 중에서)
+  memo?: string                              // 한 줄 메모 — 그대로 한마디의 근거가 된다
+}
+
+/** 태그는 목록에서 고르게 한다(자유 입력은 memo). 선생님이 한 번에 누를 수 있는 말들. */
+export const ATTITUDE_TAGS = [
+  '질문이 많았음', '끝까지 붙잡고 풂', '속도가 빨랐음', '서둘러 넘김',
+  '졸려 함', '컨디션이 안 좋음', '딴짓이 잦음', '필기를 꼼꼼히 함',
+] as const
+
 export interface DailyNote {
   studentId: string
   date: string          // YYYY-MM-DD
@@ -418,7 +437,7 @@ export interface DailyNote {
   // 과목별 선생님 한마디·다음 학습 계획 — 수학 보고서에 쓴 코멘트가 과학 보고서에 그대로 뜨지 않도록 분리.
   // 등원·하원·보강일은 과목과 무관하므로 이 레코드에 공용으로 둔다(과목을 바꿔도 그대로 보인다).
   // 이 필드가 없는 레거시 기록은 comment/nextPlan을 수학 값으로 읽는다.
-  bySubject?: Record<string, { comment: string; nextPlan: string }>
+  bySubject?: Record<string, { comment: string; nextPlan: string; attitude?: Attitude }>
   checkIn?: string       // 등원 시간 HH:MM — 버튼으로 체크했을 때만 기록(없으면 보고서 미표시)
   checkOut?: string      // 하원 시간 HH:MM
   makeupDate?: string    // 보강일 YYYY-MM-DD — 있으면 '다음 수업'을 이 날짜로 우선 반영(수업 변경)

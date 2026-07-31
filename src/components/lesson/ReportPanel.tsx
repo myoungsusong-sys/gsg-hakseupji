@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { toBlob } from 'html-to-image'
-import type { DailyNote, Grading, SavedReport, Student } from '../../types'
+import type { Attitude, DailyNote, Grading, SavedReport, Student } from '../../types'
+import { ATTITUDE_TAGS } from '../../types'
 import { useStore } from '../../lib/store'
 import { brandFor, DEFAULT_ACADEMY } from '../../lib/brand'
 import { SUBJECTS, useSubject, subjectOfGrading, subjectOfWorkbook, type Subject } from '../../lib/subject'
@@ -156,6 +157,10 @@ function hash(s: string): number {
 /** 후보 문장 중 하나를 (씨앗+자리)로 고른다 — 매번 토씨까지 같은 글이 나가지 않게 */
 const vary = (seed: string, slot: string, cands: string[]): string => cands[hash(seed + slot) % cands.length]
 
+// 오늘 수업 태도 — 버튼 라벨 (저장값은 영문 키, 화면·AI 자료엔 이 말로 나간다)
+const FOCUS_LABEL = { good: '좋았음', ok: '보통', low: '흐트러짐' } as const
+const HW_LABEL = { done: '해 옴', partial: '일부', none: '못 해 옴' } as const
+
 function DailyReport({ student, subject, initialDate }: { student: Student; subject: Subject; initialDate?: string }) {
   const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile } = useStore()
   // 브랜드는 보고서 과목 기준 (헤더 전역 과목이 아니라) — 과학 보고서엔 '깊은생각과학'
@@ -165,11 +170,11 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
   // 저장분 → 화면 상태. 선생님 한마디·다음계획은 과목별(bySubject), 등하원·보강일은 과목 공용.
   // 레거시(bySubject 없음) 기록의 comment/nextPlan은 수학 값으로 읽는다.
   function noteState(n: DailyNote | undefined) {
-    const by: Record<string, { comment: string; nextPlan: string }> = { ...(n?.bySubject ?? {}) }
+    const by: Record<string, { comment: string; nextPlan: string; attitude?: Attitude }> = { ...(n?.bySubject ?? {}) }
     if (!by['수학']) by['수학'] = { comment: n?.comment ?? '', nextPlan: n?.nextPlan ?? '' }
     const cur = by[subject] ?? { comment: '', nextPlan: '' }
     return {
-      comment: cur.comment, nextPlan: cur.nextPlan, bySubject: by,
+      comment: cur.comment, nextPlan: cur.nextPlan, attitude: cur.attitude ?? {}, bySubject: by,
       checkIn: n?.checkIn ?? '', checkOut: n?.checkOut ?? '', makeupDate: n?.makeupDate ?? '',
     }
   }
@@ -181,6 +186,17 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
   const [checkIn, setCheckIn] = useState(initial.checkIn)       // 등원 시간 (체크해야 기록)
   const [checkOut, setCheckOut] = useState(initial.checkOut)     // 하원 시간
   const [makeupDate, setMakeupDate] = useState(initial.makeupDate) // 보강일 (있으면 다음수업 우선)
+  const [attitude, setAttitude] = useState<Attitude>(initial.attitude) // 오늘 수업 태도 (누른 것만 AI 근거)
+  // ⚠️ 태도 칩은 연달아 눌리는 게 정상이다(집중→숙제→태그). 상태를 클로저로 읽으면 같은 틱의
+  // 앞 선택이 지워진다(실제로 겪었다 — 셋을 눌렀는데 마지막 하나만 남았다). 등·하원과 같은 ref 방식.
+  const attitudeRef = useRef<Attitude>(initial.attitude)
+  function patchAttitude(p: Partial<Attitude>) {
+    const next: Attitude = { ...attitudeRef.current, ...p }
+    for (const k of Object.keys(next) as (keyof Attitude)[]) if (next[k] === undefined) delete next[k]
+    attitudeRef.current = next
+    setAttitude(next)
+    persist({ attitude: next })
+  }
   const [copied, setCopied] = useState(false)
   // 같은 틱에 여러 필드를 저장해도(예: 등원·하원 연속 클릭) 스테일 클로저로 서로 덮어쓰지 않도록 ref로 최신값 동기 유지
   const noteRef = useRef(initial)
@@ -193,14 +209,23 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     setCheckIn(s.checkIn)
     setCheckOut(s.checkOut)
     setMakeupDate(s.makeupDate)
+    setAttitude(s.attitude)
+    attitudeRef.current = s.attitude
     noteRef.current = s
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [student.id, date, subject])
 
   // 현재 값 전체를 하나의 노트로 저장 (ref 기준으로 병합 → 부분 저장 시 다른 필드·다른 과목이 지워지지 않음)
-  function persist(patch: Partial<{ comment: string; nextPlan: string; checkIn: string; checkOut: string; makeupDate: string }>) {
+  function persist(patch: Partial<{ comment: string; nextPlan: string; checkIn: string; checkOut: string; makeupDate: string; attitude: Attitude }>) {
     const m = { ...noteRef.current, ...patch }
-    m.bySubject = { ...m.bySubject, [subject]: { comment: m.comment, nextPlan: m.nextPlan } }
+    // 태도는 비어 있으면(아무것도 안 누름) 저장하지 않는다 — '자료에 없음' 상태를 그대로 유지해야
+    // AI 가 태도 이야기를 꺼내지 않는다.
+    const at = m.attitude
+    const hasAt = !!(at && (at.focus || at.homework || at.tags?.length || at.memo?.trim()))
+    m.bySubject = {
+      ...m.bySubject,
+      [subject]: { comment: m.comment, nextPlan: m.nextPlan, ...(hasAt ? { attitude: at } : {}) },
+    }
     noteRef.current = m
     saveDailyNote({
       studentId: student.id, date,
@@ -388,6 +413,16 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     return sec >= 60 ? Math.round(sec / 60) : 0
   }, [dayGradings])
 
+  // 선생님이 체크한 태도를 한 줄 문장으로 (누른 것만). 비면 자료에 아예 안 넣는다.
+  const attitudeText = useMemo(() => {
+    const p: string[] = []
+    if (attitude.focus) p.push(`집중 ${FOCUS_LABEL[attitude.focus]}`)
+    if (attitude.homework) p.push(`숙제 ${HW_LABEL[attitude.homework]}`)
+    if (attitude.tags?.length) p.push(attitude.tags.join(', '))
+    if (attitude.memo?.trim()) p.push(`선생님 메모: ${attitude.memo.trim()}`)
+    return p.join(' · ')
+  }, [attitude])
+
   // 오늘 데이터를 AI에 넘길 컨텍스트 문자열
   const aiContext = useMemo(() => {
     const L: string[] = [`학생: ${student.name}${student.klass ? ` (${student.klass})` : ''} · ${dateKr}`]
@@ -399,9 +434,11 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     if (streak >= 2) L.push(`연속 학습 ${streak}일째`)
     if (wrongTypes.length) L.push('오늘 취약 유형: ' + wrongTypes.slice(0, 3).map(t => t.name).join(', ') + (drills.length ? ' (오답 드릴 학습지 생성함)' : ''))
     if (solveMinutes) L.push(`푼 시간: 약 ${solveMinutes}분 (학생앱에 기록된 시간)`)
+    // 태도는 **선생님이 직접 누른 것만** 들어간다. 안 누르면 이 줄이 없고, 자료에 없으면 AI는 안 쓴다.
+    if (attitudeText) L.push('오늘 수업 태도(선생님이 직접 체크함): ' + attitudeText)
     if (nextPlan && !isNone(nextPlan)) L.push('다음 학습 계획: ' + nextPlan.trim())
     return L.join('\n')
-  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan, solveMinutes])
+  }, [student.name, student.klass, dateKr, coveredUnits, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall, weekAvg, weekDelta, streak, wrongTypes, drills.length, nextPlan, solveMinutes, attitudeText])
 
   // 🔴 AI 가 고를 수 있는 '오늘의 초점' — **근거가 실제로 있는 것만** 보낸다.
   // 전에는 서버가 일곱 초점을 무조건 돌려서, 자료에 없는 초점이 걸리면 AI 가 태도·다음 계획·
@@ -414,8 +451,9 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     if (solveMinutes) k.push('pace')
     if (totalSolved) k.push('best')
     if (nextPlan && !isNone(nextPlan)) k.push('next')
+    if (attitudeText) k.push('attitude')      // 선생님이 태도를 체크한 날만 열린다
     return k
-  }, [coveredUnits, weekAvg, weekDelta, wrongTypes, solveMinutes, totalSolved, nextPlan])
+  }, [coveredUnits, weekAvg, weekDelta, wrongTypes, solveMinutes, totalSolved, nextPlan, attitudeText])
 
   // 선생님이 한마디를 비워 두면 이 문구가 그대로 학부모에게 나간다. 문장이 고정이면
   // 매주 토씨까지 같은 글이 가서 가장 먼저 '기계가 쓴 티'가 나므로, 학생·날짜로 표현을
@@ -610,6 +648,65 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
         <button onClick={saveCardImage} disabled={imgState === 'busy'}
           className="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink2 hover:bg-paper2" title="PNG 파일로 저장">⬇</button>
         <button onClick={() => window.print()} className="rounded-lg border border-pine px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">🖨 보고지 인쇄</button>
+      </div>
+
+      {/* 오늘 수업 태도 — 누른 것만 '선생님 한마디'의 근거가 된다.
+          AI 가 태도를 지어내던 문제(21차)의 해법: 없는 것을 쓰게 하지 말고, 사실을 입력받는다. */}
+      <div className="no-print mb-3 rounded-xl border border-line bg-paper2/40 px-4 py-3">
+        <div className="mb-2 flex flex-wrap items-center gap-2 text-sm font-bold">
+          <span>오늘 수업 태도</span>
+          <span className="font-normal text-ink2">
+            선생님이 누른 것만 [✨ AI 작성]의 근거가 됩니다 — 안 누르면 한마디에 태도 이야기가 나오지 않습니다.
+          </span>
+          {attitudeText && (
+            <button type="button" onClick={() => { attitudeRef.current = {}; setAttitude({}); persist({ attitude: {} }) }}
+              className="ml-auto rounded-md border border-line px-2 py-0.5 text-xs font-semibold text-ink2 hover:bg-white">
+              지우기
+            </button>
+          )}
+        </div>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-bold text-ink2">집중</span>
+            {(['good', 'ok', 'low'] as const).map(v => (
+              <button key={v} type="button"
+                onClick={() => patchAttitude({ focus: attitudeRef.current.focus === v ? undefined : v })}
+                className={`rounded-lg border px-2.5 py-1 text-xs font-bold ${attitude.focus === v ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:bg-white'}`}>
+                {FOCUS_LABEL[v]}
+              </button>
+            ))}
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-bold text-ink2">숙제</span>
+            {(['done', 'partial', 'none'] as const).map(v => (
+              <button key={v} type="button"
+                onClick={() => patchAttitude({ homework: attitudeRef.current.homework === v ? undefined : v })}
+                className={`rounded-lg border px-2.5 py-1 text-xs font-bold ${attitude.homework === v ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2 hover:bg-white'}`}>
+                {HW_LABEL[v]}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {ATTITUDE_TAGS.map(t => {
+            const on = attitude.tags?.includes(t)
+            return (
+              <button key={t} type="button"
+                onClick={() => {
+                  const cur = attitudeRef.current.tags ?? []
+                  const tags = cur.includes(t) ? cur.filter(x => x !== t) : [...cur, t]
+                  patchAttitude({ tags: tags.length ? tags : undefined })
+                }}
+                className={`rounded-full border px-2.5 py-1 text-xs font-semibold ${on ? 'border-amber bg-amber-soft text-ink' : 'border-line text-ink2 hover:bg-white'}`}>
+                {t}
+              </button>
+            )
+          })}
+        </div>
+        <input value={attitude.memo ?? ''}
+          onChange={e => patchAttitude({ memo: e.target.value || undefined })}
+          placeholder="한 줄 메모 (예: 삼각비 그림 그려 설명하니 바로 이해) — 적으면 한마디에 그대로 근거로 쓰입니다"
+          className="mt-2 w-full rounded-lg border border-line bg-white px-3 py-1.5 text-sm" />
       </div>
 
       <div className="no-print mb-5 grid gap-3 sm:grid-cols-2">
