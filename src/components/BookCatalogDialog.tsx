@@ -250,7 +250,11 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
                       <div className="text-[10px]">{gradeRev(b.grade, b.name)}</div>
                     </td>
                     <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
-                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">지원</td>
+                    {/* 정답표가 통째로 비어 있는 교재가 있다(원본에 아직 정답이 안 들어온 책).
+                        전부 '지원'으로 찍으면 등록하고 나서야 안다 — 있는 그대로 표시한다. */}
+                    <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
+                      {b.noAnswer ? <span className="text-clay">정답 없음</span> : '지원'}
+                    </td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
                     <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">

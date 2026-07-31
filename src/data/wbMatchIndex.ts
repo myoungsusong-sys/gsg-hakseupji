@@ -1,5 +1,5 @@
 // 자동 생성 — 22개정 시중교재 인덱스 (초 12학기+중 6학기+고 7과목, 문항별 번호·유형·정답 포함). 매칭은 /wb-match-<course>.json
-export interface WbMatchBook { key: string; name: string; publisher: string; grade: string; course: string; count: number }
+export interface WbMatchBook { key: string; name: string; publisher: string; grade: string; course: string; count: number; noAnswer?: boolean }
 export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "디딤돌수학 개념기본 공통수학1|디딤돌", name: "디딤돌수학 개념기본 공통수학1", publisher: "디딤돌", grade: "공통수학1", course: "h-cm1", count: 3131 },
   { key: "수력충전(2026) 공통수학1|수경출판사", name: "수력충전(2026) 공통수학1", publisher: "수경출판사", grade: "공통수학1", course: "h-cm1", count: 2638 },
@@ -658,7 +658,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "디딤돌수학 개념연산A 중등수학3(상)|디딤돌", name: "디딤돌수학 개념연산A 중등수학3(상)", publisher: "디딤돌", grade: "중3-1", course: "m3-1", count: 1338 },
   { key: "RPM 중등수학3(상)|개념원리", name: "RPM 중등수학3(상)", publisher: "개념원리", grade: "중3-1", course: "m3-1", count: 1310 },
   { key: "베이직쎈 중등수학3(상)|좋은책신사고", name: "베이직쎈 중등수학3(상) (2015개정)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1597 },
-  { key: "라이트쎈 중등수학3(상)|좋은책신사고", name: "라이트쎈 중등수학3(상) (2015개정)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1280 },
+  { key: "라이트쎈 중등수학3(상)|좋은책신사고", name: "라이트쎈 중등수학3(상)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1280 },
   { key: "풍산자 필수유형 중등수학3(상)|지학사", name: "풍산자 필수유형 중등수학3(상)", publisher: "지학사", grade: "중3-1", course: "m3-1", count: 1250 },
   { key: "체크체크 베이직 N제 중등수학3(상)|천재교육", name: "체크체크 베이직 N제 중등수학3(상)", publisher: "천재교육", grade: "중3-1", course: "m3-1", count: 1235 },
   { key: "교과서 개념잡기 중등수학3(상)|비상", name: "교과서 개념잡기 중등수학3(상)", publisher: "비상", grade: "중3-1", course: "m3-1", count: 1191 },
@@ -669,7 +669,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "각 GAK 중등수학3(상)|엔이능률", name: "각 GAK 중등수학3(상)", publisher: "엔이능률", grade: "중3-1", course: "m3-1", count: 1122 },
   { key: "풍산자 개념완성 중등수학3(상)|지학사", name: "풍산자 개념완성 중등수학3(상)", publisher: "지학사", grade: "중3-1", course: "m3-1", count: 1050 },
   { key: "개념원리 중등수학3(상)|개념원리", name: "개념원리 중등수학3(상)", publisher: "개념원리", grade: "중3-1", course: "m3-1", count: 1045 },
-  { key: "리피트 개념_개념첵 중등수학3(상)|미래엔", name: "리피트 개념_개념첵 중등수학3(상)", publisher: "미래엔", grade: "중3-1", course: "m3-1", count: 975 },
+  { key: "리피트 개념_개념첵 중등수학3(상)|미래엔", name: "리피트 개념_개념책 중등수학3(상)", publisher: "미래엔", grade: "중3-1", course: "m3-1", count: 975 },
   { key: "숨마쿰라우데 개념기본서 중학수학3(상)|이룸이앤비", name: "숨마쿰라우데 개념기본서 중학수학3(상)", publisher: "이룸이앤비", grade: "중3-1", course: "m3-1", count: 975 },
   { key: "개념쎈_워크북 중등수학3(상)|좋은책신사고", name: "개념쎈_워크북 중등수학3(상)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 935 },
   { key: "체크체크_개념드릴 중등수학3(상)|천재교육", name: "체크체크_개념드릴 중등수학3(상)", publisher: "천재교육", grade: "중3-1", course: "m3-1", count: 927 },
@@ -693,6 +693,12 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "풍산자 필수유형_워크북 중등수학3(상)|지학사", name: "풍산자 필수유형_워크북 중등수학3(상)", publisher: "지학사", grade: "중3-1", course: "m3-1", count: 226 },
   { key: "개념 해결의 법칙_단원 종합 문제 중등수학3(상)|천재교육", name: "개념 해결의 법칙_단원 종합 문제 중등수학3(상)", publisher: "천재교육", grade: "중3-1", course: "m3-1", count: 118 },
   { key: "라이트쎈_부록 중등수학3(상)|좋은책신사고", name: "라이트쎈_부록 중등수학3(상)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 102 },
+  { key: "수력충전 중등수학3(상)|수경출판사", name: "수력충전 중등수학3(상)", publisher: "수경출판사", grade: "중3-1", course: "m3-1", count: 2379, noAnswer: true },
+  { key: "수학의 바이블 개념ON 중등수학3(상)|이투스북", name: "수학의 바이블 개념ON 중등수학3(상)", publisher: "이투스북", grade: "중3-1", course: "m3-1", count: 1260, noAnswer: true },
+  { key: "수학의바이블 유형ON 중등수학3(상)|이투스북", name: "수학의바이블 유형ON 중등수학3(상)", publisher: "이투스북", grade: "중3-1", course: "m3-1", count: 1696, noAnswer: true },
+  { key: "연산 더블클릭 중등수학3(상)|천재교육", name: "연산 더블클릭 중등수학3(상)", publisher: "천재교육", grade: "중3-1", course: "m3-1", count: 1749, noAnswer: true },
+  { key: "완자 기출 PICK 중등수학3(상)|비상교육", name: "완자 기출 PICK 중등수학3(상)", publisher: "비상교육", grade: "중3-1", course: "m3-1", count: 793, noAnswer: true },
+  { key: "자이스토리 중등수학3(상)|수경출판사", name: "자이스토리 중등수학3(상)", publisher: "수경출판사", grade: "중3-1", course: "m3-1", count: 1990, noAnswer: true },
   { key: "디딤돌수학 개념연산 중등수학3(하)|디딤돌", name: "디딤돌수학 개념연산 중등수학3(하)", publisher: "디딤돌", grade: "중3-2", course: "m3-2", count: 1135 },
   { key: "수매씽 개념연산 중등수학3(하)|동아출판", name: "수매씽 개념연산 중등수학3(하)", publisher: "동아출판", grade: "중3-2", course: "m3-2", count: 917 },
   { key: "쎈 중등수학3(하)|좋은책신사고", name: "쎈 중등수학3(하)", publisher: "좋은책신사고", grade: "중3-2", course: "m3-2", count: 783 },
