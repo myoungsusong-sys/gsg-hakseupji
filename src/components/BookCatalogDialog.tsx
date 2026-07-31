@@ -30,9 +30,19 @@ function gradeLabel(grade: string): string {
   if (g.startsWith('초')) return `초 ${g.slice(1)}`
   return g
 }
-function gradeRev(grade: string): string {
+function gradeRev(grade: string, name = ''): string {
+  // 이름에 개정이 명시된 책(예: '베이직쎈 중등수학3(상) (2015개정)')은 그 표시를 따른다 —
+  // 중3-1은 2015개정 별도 코스가 없어 과정키만 보면 전부 (22개정)으로 찍혀 서로 어긋났다.
+  if (name.includes('(2015개정)')) return '(2015개정)'
   return grade.endsWith('(2015)') ? '(2015개정)' : '(22개정)'
 }
+
+// 🔴 같은 key 가 두 번 들어 있는 교재가 12권 있다 — 중3-2 는 22개정(m3-2)과
+// 2015개정(m3-2-2015) 이 같은 교재명을 쓴다(쎈·RPM·라이트쎈·최상위 …).
+// 목록 key 를 교재 key 로만 쓰면 React 가 두 줄을 같은 것으로 봐서, 학년·학기를 바꿔도
+// 그 24줄이 화면에 그대로 남는다(중3-1 을 골라도 3-2 가 같이 보이던 원인).
+// 선택 상태도 이걸로 잡아야 '쎈 중3-2'를 하나 눌렀을 때 2015개정판까지 함께 등록되지 않는다.
+const rowId = (b: { key: string; course: string }) => `${b.course}|${b.key}`
 
 // 교과서 학년 표기: 초 3-1 / 중 1 / 공통수학1 …
 function tbGradeLabel(schoolType: 'E' | 'M' | 'H', grade: string, semester?: number): string {
@@ -148,8 +158,10 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
         }))
     } else {
       books = WB_MATCH_BOOKS
-        .filter(b => checked.has(b.key))
-        .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key }))
+        .filter(b => checked.has(rowId(b)))
+        // course 를 함께 넘긴다 — 같은 교재명이 22개정·2015개정 둘 다 있는 중3-2 에서
+        // 어느 쪽 정답표(wb-match 파일)를 볼지가 갈린다.
+        .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key, course: b.course }))
     }
     if (books.length === 0) { alert('출제할 교재를 선택하세요.'); return }
     onAdd(books)
@@ -225,9 +237,9 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
               {/* 시중교재 */}
               {!sci && !isTextbook && filteredMatch.map(b => {
                 const has = existingKeys.has(b.key)
-                const on = checked.has(b.key)
+                const on = checked.has(rowId(b))
                 return (
-                  <tr key={b.key} onClick={() => { if (!has) toggle(b.key) }}
+                  <tr key={rowId(b)} onClick={() => { if (!has) toggle(rowId(b)) }}
                     className={`border-t border-line/50 ${has ? '' : `cursor-pointer ${on ? 'bg-pine-soft/50' : 'hover:bg-paper2'}`}`}>
                     <td className="px-3 py-1.5">
                       <input type="checkbox" checked={on || has} disabled={has} readOnly
@@ -235,7 +247,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
                     </td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
                       <div>{gradeLabel(b.grade)}</div>
-                      <div className="text-[10px]">{gradeRev(b.grade)}</div>
+                      <div className="text-[10px]">{gradeRev(b.grade, b.name)}</div>
                     </td>
                     <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">지원</td>
