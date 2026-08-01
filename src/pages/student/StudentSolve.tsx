@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Grading, Problem } from '../../types'
 import { useStore, uid } from '../../lib/store'
-import { isMachineGradable, requestAiGrade } from '../../lib/aiGrade'
+import { isMachineGradable } from '../../lib/aiGrade'
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
@@ -22,8 +22,17 @@ import { fetchNote, clearNote, type TeacherNote } from '../../lib/live'
 // · 우리만의 것(원본에 없음): ✏️ 풀이 쓰고 AI 피드백 받기, 선생님 실시간 첨삭, 임시저장, 채점 전 공개
 // · 답이 바뀔 때마다 localStorage 임시저장 (stu-draft-<wsId>) → 새로고침해도 유지
 // · 제출: confirm → autoCorrect 자동채점('모름'은 unknown 처리) → hj_gradings 저장 → 결과 화면
+// · 서술형 등 기계채점 불가 문항(!isMachineGradable): 공책에 풀고 [다 풀었어요]로 모범답안을 연 뒤
+//   스스로 ○/✕/? 표시(자기채점, 명수쌤 지시 2026-08-01). 교재 탭과 같은 규약(self:true)으로 저장하고,
+//   문제 위 필기가 있으면 workImg로 함께 남겨 선생님이 나중에 볼 수 있게 한다. AI 1차 채점은 폐지.
 
 const DONT_KNOW = '모름'
+// 자기채점 마크 — answers 맵에 센티널로 저장해 임시저장·진행 카운트·초시계가 그대로 따라오게 한다
+const SELF_PREFIX = 'SELF:'
+type SelfMark = '정답' | '오답' | '모름'
+function selfMarkOf(v: string): SelfMark | null {
+  return v.startsWith(SELF_PREFIX) ? (v.slice(SELF_PREFIX.length) as SelfMark) : null
+}
 const DIFF_LABEL: Record<number, string> = { 1: '하', 2: '중하', 3: '중', 4: '상', 5: '최상' }
 
 // 펜 설정 (매쓰플랫 동일 — 굵기 5·색 5)
@@ -189,56 +198,36 @@ export default function StudentSolve() {
     })
   }
 
-  // AI 1차 채점 파이프라인 — 제출 후 백그라운드로 문항별 판정 → pending 'teacher'로 갱신 (선생님 승인 큐행)
-  async function runAiPipeline(rec: Grading, targets: Problem[]) {
-    let cur = rec
-    for (const q of targets) {
-      let workImg: string | undefined
-      try { workImg = await exportWork(q, inks[q.id] ?? []) } catch { /* 풀이 이미지 없이 진행 */ }
-      let patch: Partial<GradeResult>
-      try {
-        const v = await requestAiGrade(q, (answers[q.id] ?? '').trim(), workImg)
-        patch = {
-          workImg, pending: 'teacher',
-          correct: v.verdict === true,   // 잠정 — 선생님 확정 전
-          ai: { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() },
-        }
-      } catch {
-        patch = { workImg, pending: 'teacher' }   // AI 실패 → 선생님 수동 채점으로 강등
-      }
-      cur = { ...cur, results: cur.results.map(r => r.itemId === q.id ? { ...r, ...patch } : r) }
-      upsertGrading(cur)
-    }
-  }
+  // (AI 1차 채점 파이프라인은 폐지 — 서술형은 자기채점으로 확정 저장한다. 2026-08-01)
 
-  function submit() {
+  async function submit() {
     if (answered.length === 0) { alert('답을 한 문제 이상 입력해주세요.'); return }
     const blank = list.length - answered.length
     const msg = blank > 0
       ? `아직 답을 입력하지 않은 문제가 ${blank}개 있어요.\n답을 입력한 문제만 채점됩니다. 제출할까요?`
       : '제출할까요? 제출하면 바로 자동 채점됩니다.'
     if (!confirm(msg)) return
-    const aiOn = cfg.aiGrade ?? false
-    const aiTargets: Problem[] = []
-    const results: GradeResult[] = answered.map(q => {
+    const results: GradeResult[] = []
+    for (const q of answered) {
       const a = answers[q.id].trim()
-      const dk = a === DONT_KNOW
       const sec = secs[q.id] || undefined          // ⏱ 그 문항 풀이 시간(초)
-      if (dk) return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, unknown: true, sec }
-      // 자동채점 불가(서술형·이미지정답·답없음 과학) + AI 채점 ON → AI 1차 채점 대상
-      if (aiOn && !isMachineGradable(q)) {
-        aiTargets.push(q)
-        return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, pending: 'ai' as const, sec }
+      const sm = selfMarkOf(a)
+      if (sm) {
+        // 자기채점(서술형 등) — 교재 탭과 같은 규약(self:true). 필기가 있으면 이미지로 함께 보존.
+        let workImg: string | undefined
+        try { workImg = await exportWork(q, inks[q.id] ?? []) } catch { /* 필기 없이 저장 */ }
+        results.push({ itemId: q.id, typeId: q.typeId, correct: sm === '정답', unknown: sm === '모름' || undefined, self: true, workImg, sec })
+        continue
       }
-      return { itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: autoCorrect(q, a), sec }
-    })
+      if (a === DONT_KNOW) { results.push({ itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, unknown: true, sec }); continue }
+      results.push({ itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: autoCorrect(q, a), sec })
+    }
     const rec: Grading = {
       id: uid('gr'), studentId: me.id, source: '학습지', worksheetId: ws!.id,
       date: new Date().toISOString(), results, by: 'student',
     }
     upsertGrading(rec)
     clearDraft(ws!.id)
-    if (aiTargets.length > 0) void runAiPipeline(rec, aiTargets)
     nav(`/student/result/${ws!.id}`, { replace: true })
   }
 
@@ -370,7 +359,9 @@ export default function StudentSolve() {
               <span className="text-xs text-ink2">난이도 <b>{DIFF_LABEL[p.diff] ?? '중'}</b></span>
               {cur !== '' && (
                 <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[10px] font-bold text-pine-dark">
-                  {cur === DONT_KNOW ? '모름 표시' : '답 입력됨'}
+                  {cur === DONT_KNOW ? '모름 표시'
+                    : selfMarkOf(cur) ? `자기채점 ${{ 정답: '○', 오답: '✕', 모름: '?' }[selfMarkOf(cur)!]}`
+                    : '답 입력됨'}
                 </span>
               )}
               <div className="grow" />
@@ -489,7 +480,11 @@ export default function StudentSolve() {
               <b className="text-pine-dark">{answered.length}</b><span className="text-ink2"> / {list.length}</span>
             </span>
             <div className="grow-0" />
-            {p.kind === '객관식' ? (
+            {!isMachineGradable(p) ? (
+              /* 서술형 등 기계채점 불가 — 모범답안 열람 후 스스로 ○/✕/? (자기채점) */
+              <WsSelfCheck key={p.id} p={p} value={cur}
+                onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')} />
+            ) : p.kind === '객관식' ? (
               <div className="flex gap-2">
                 {[1, 2, 3, 4, 5].map(n => {
                   const c = ['①', '②', '③', '④', '⑤'][n - 1]
@@ -508,11 +503,13 @@ export default function StudentSolve() {
                 <AnswerInput p={p} value={cur === DONT_KNOW ? '' : cur} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(p.id, v)} />
               </div>
             )}
-            <button onClick={() => setAnswer(p.id, cur === DONT_KNOW ? '' : DONT_KNOW)}
-              className={`h-11 rounded-full border px-4 text-sm font-bold transition ${
-                cur === DONT_KNOW ? 'border-amber bg-amber-soft text-amber' : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
-              모름
-            </button>
+            {isMachineGradable(p) && (
+              <button onClick={() => setAnswer(p.id, cur === DONT_KNOW ? '' : DONT_KNOW)}
+                className={`h-11 rounded-full border px-4 text-sm font-bold transition ${
+                  cur === DONT_KNOW ? 'border-amber bg-amber-soft text-amber' : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
+                모름
+              </button>
+            )}
             <div className="grow" />
             {!isLast && (
               <button onClick={() => setIdx(i => i + 1)}
@@ -545,14 +542,21 @@ export default function StudentSolve() {
                 {list.map((q, i) => (
                   <div key={q.id} className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 p-3">
                     <b className="w-10 text-sm text-pine-dark">{i + 1}번</b>
-                    <div className="min-w-0 grow">
-                      <AnswerInput p={q} value={(answers[q.id] ?? '') === DONT_KNOW ? '' : (answers[q.id] ?? '')} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(q.id, v)} />
-                    </div>
-                    <button onClick={() => setAnswer(q.id, (answers[q.id] ?? '') === DONT_KNOW ? '' : DONT_KNOW)}
-                      className={`rounded-full border px-3 py-1.5 text-xs font-bold ${
-                        (answers[q.id] ?? '') === DONT_KNOW ? 'border-amber bg-amber-soft text-amber' : 'border-line text-ink2 hover:bg-paper2'}`}>
-                      모름
-                    </button>
+                    {!isMachineGradable(q) ? (
+                      <WsSelfCheck key={q.id} p={q} value={answers[q.id] ?? ''}
+                        onMark={m => setAnswer(q.id, m ? SELF_PREFIX + m : '')} />
+                    ) : (
+                      <>
+                        <div className="min-w-0 grow">
+                          <AnswerInput p={q} value={(answers[q.id] ?? '') === DONT_KNOW ? '' : (answers[q.id] ?? '')} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(q.id, v)} />
+                        </div>
+                        <button onClick={() => setAnswer(q.id, (answers[q.id] ?? '') === DONT_KNOW ? '' : DONT_KNOW)}
+                          className={`rounded-full border px-3 py-1.5 text-xs font-bold ${
+                            (answers[q.id] ?? '') === DONT_KNOW ? 'border-amber bg-amber-soft text-amber' : 'border-line text-ink2 hover:bg-paper2'}`}>
+                          모름
+                        </button>
+                      </>
+                    )}
                   </div>
                 ))}
               </div>
@@ -650,6 +654,65 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
         }}
         onPointerCancel={() => { drawing.current = null; redraw() }}
       />
+    </div>
+  )
+}
+
+// 자기채점 (서술형 등 기계채점 불가 문항) — 공책·필기로 풀고, 모범답안을 연 뒤 스스로 ○/✕/? 표시.
+// 정답을 먼저 보고 베끼는 걸 막으려고 [다 풀었어요]를 눌러야 모범답안이 열린다 (교재 탭과 동일).
+// key={p.id} 로 마운트해 문항 이동 시 열람 상태가 리셋된다.
+function WsSelfCheck({ p, value, onMark }: { p: Problem; value: string; onMark: (m: SelfMark | null) => void }) {
+  const [revealed, setRevealed] = useState(false)
+  const mark = selfMarkOf(value)
+  const open = revealed || !!mark            // 이미 표시한 문항은 다시 와도 열린 상태
+  const a = (p.answer ?? '').trim()
+  const hasAnswer = !!a && !['.', '-'].includes(a)
+  const [showSol, setShowSol] = useState(false)
+  const MARKS: [SelfMark, string, string][] = [
+    ['정답', '○ 맞았어요', 'border-pine bg-pine text-paper'],
+    ['오답', '✕ 틀렸어요', 'border-clay bg-clay text-white'],
+    ['모름', '? 모르겠어요', 'border-amber bg-amber text-white'],
+  ]
+  return (
+    /* 하단 고정 답 바 안에서 열리므로 화면을 다 가리지 않게 높이를 제한한다 */
+    <div className="grid max-h-[45vh] min-w-0 grow gap-2 overflow-y-auto rounded-xl bg-paper2/60 px-3 py-2.5">
+      <span className="text-xs font-semibold text-ink2">
+        ✍️ 서술형이에요 — 공책이나 문제 위 필기로 풀고, 모범답안과 맞춰본 뒤 직접 표시해요
+      </span>
+      {!open ? (
+        <button type="button" onClick={() => setRevealed(true)}
+          className="w-fit rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">
+          다 풀었어요 — {hasAnswer ? '모범답안 보기' : '해설 보기'}
+        </button>
+      ) : (
+        <div className="grid gap-2">
+          {hasAnswer ? (
+            <div className="grid gap-1">
+              <span className="text-[11px] font-semibold text-ink2">모범답안 — 표현이 달라도 뜻이 같으면 정답이에요</span>
+              <div className="rounded-lg bg-white px-2.5 py-2 text-sm leading-relaxed"><AnswerText p={p} /></div>
+            </div>
+          ) : p.solution ? (
+            <div className="grid gap-1">
+              <span className="text-[11px] font-semibold text-ink2">해설을 보고 내 풀이와 맞춰보세요</span>
+              {showSol
+                ? <img src={p.solution} alt="해설" className="max-h-64 w-auto rounded-lg bg-white p-1" />
+                : <button type="button" onClick={() => setShowSol(true)}
+                    className="w-fit rounded-lg border border-line px-3 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2">해설 이미지 열기</button>}
+            </div>
+          ) : (
+            <span className="text-[11px] text-ink2">앱에 정답이 없는 문항이에요 — 선생님과 함께 확인해요.</span>
+          )}
+          <div className="flex flex-wrap gap-1.5">
+            {MARKS.map(([m, label, on]) => (
+              <button key={m} type="button" onClick={() => onMark(mark === m ? null : m)}
+                className={`rounded-full border px-3 py-1.5 text-xs font-bold transition ${
+                  mark === m ? on : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

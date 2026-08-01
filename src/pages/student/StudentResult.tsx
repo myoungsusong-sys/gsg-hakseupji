@@ -206,6 +206,8 @@ export default function StudentResult() {
                     {r?.pending && <span className="rounded bg-white/70 px-1.5 py-0.5 text-[10px] font-bold text-violet-700">
                       {r.pending === 'ai' ? 'AI 채점 중' : `가채점 ${r.correct ? '○' : '✕'} · 확인 중`}
                     </span>}
+                    {r?.self && <span className="rounded bg-white/70 px-1.5 py-0.5 text-[10px] font-bold text-ink2"
+                      title="모범답안을 보고 스스로 표시한 문항이에요">✍️ 자기채점</span>}
                     {p && <span className="ml-1 truncate text-[11px] text-ink2">{typeName(p.typeId)}</span>}
                     {!!r?.sec && (
                       <span title="이 문제를 푸는 데 걸린 시간"
