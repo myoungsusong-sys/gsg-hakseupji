@@ -75,8 +75,9 @@ type PageDef =
   | { part: 'so'; first: boolean; kind: 'socols'; cols: [number[], number[]] }
   | { part: 'o'; first: boolean; kind: 'omr'; left: number[]; right: number[] }
 
-/* 인쇄 작업 단위 — 렌더할 부(문제지 s / 빠른정답 q / 정답해설 so / OMR o)와 파일명 라벨 */
-type PrintJob = { label: string; s: boolean; q: boolean; so: boolean; o: boolean }
+/* 인쇄 작업 단위 — 렌더할 부(문제지 s / 빠른정답 q / 정답해설 so / OMR o)와 파일명 라벨
+   act: 'download'=PDF 파일 저장 / 'print'=PDF를 만들어 바로 인쇄창 (둘 다 진짜 PDF — 매쓰플랫 방식) */
+type PrintJob = { label: string; s: boolean; q: boolean; so: boolean; o: boolean; act?: 'download' | 'print' }
 const PART_FLAG: Record<string, keyof Omit<PrintJob, 'label'>> = {
   '문제지': 's', '빠른정답': 'q', '정답해설': 'so', 'OMR': 'o',
 }
@@ -257,24 +258,37 @@ export default function WorksheetView() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [measured, layoutKey, items, qaRows, concepts.length])
 
-  // job이 걸리면: 해당 부분만 렌더된 뒤 파일명(제목_문제지 등) 세팅 → 인쇄 → 원복.
-  // window.print()는 인쇄창이 닫힌 뒤 리턴 → 큐(each 모드)의 다음 부를 이어서 인쇄.
+  // job이 걸리면: 해당 부분만 렌더된 뒤 → 화면의 A4 페이지들을 캡처해 **진짜 PDF**로 조립(매쓰플랫 방식).
+  // download=파일 저장 / print=PDF를 숨김 iframe에 띄워 바로 인쇄창.
+  // window.print()+CSS 방식은 브라우저 인쇄 설정(여백·배율·용지)에 따라 조판이 깨져서 폐지했다 (2026-08-01).
+  const [making, setMaking] = useState(false)   // "PDF 만드는 중…" 오버레이
   useEffect(() => {
     if (!job || !ws) return
-    const prevTitle = document.title
-    document.title = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
-    const raf = requestAnimationFrame(() => {
-      window.print()
-      document.title = prevTitle
+    let alive = true
+    // rAF 2번 — job 반영 렌더가 화면에 완전히 커밋된 뒤 캡처
+    const raf = requestAnimationFrame(() => requestAnimationFrame(async () => {
+      if (!alive) return
+      setMaking(true)
+      try {
+        const { buildSheetPdf, savePdf, printPdf } = await import('../lib/sheetPdf')
+        const doc = await buildSheetPdf()
+        const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
+        if (job.act === 'print') printPdf(doc)
+        else savePdf(doc, filename)
+      } catch (e) {
+        alert('PDF 생성에 실패했습니다. 잠시 후 다시 시도해주세요.\n' + String(e).slice(0, 120))
+      }
+      if (!alive) return
+      setMaking(false)
       const next = jobQueueRef.current.shift()
       if (next) { setJob(next); return }
       setJob(null)
-      // 자동 인쇄(다이얼로그 경유)였다면 쿼리 제거 → 이후엔 일반 미리보기 화면
+      // 자동 실행(다이얼로그 경유)이었다면 쿼리 제거 → 이후엔 일반 미리보기 화면
       if (new URLSearchParams(window.location.hash.split('?')[1] ?? '').has('out')) {
         setSearchParams({}, { replace: true })
       }
-    })
-    return () => cancelAnimationFrame(raf)
+    }))
+    return () => { alive = false; cancelAnimationFrame(raf) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [job, ws])
 
@@ -288,19 +302,21 @@ export default function WorksheetView() {
     autoRan.current = true
     const sel = out.split(',').filter(p => p in PART_FLAG)
     if (sel.length === 0) { setSearchParams({}, { replace: true }); return }
+    const act = searchParams.get('act') === 'print' ? 'print' as const : 'download' as const
     if (searchParams.get('mode') === 'each' && sel.length > 1) {
-      const jobs = sel.map(p => jobOf(p, [p]))
+      const jobs = sel.map(p => ({ ...jobOf(p, [p]), act }))
       jobQueueRef.current = jobs.slice(1)
       setJob(jobs[0])
     } else {
-      setJob(jobOf(sel.length === 4 ? '전체' : sel.join('_'), sel))
+      setJob({ ...jobOf(sel.length === 4 ? '전체' : sel.join('_'), sel), act })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready0, searchParams])
 
   if (!ws) return <div className="text-ink2">학습지를 찾을 수 없습니다.</div>
 
-  const printPart = (label: string, ...sel: string[]) => setJob(jobOf(label, sel))
+  const printPart = (label: string, ...sel: string[]) => setJob({ ...jobOf(label, sel), act: 'download' })
+  const printAll = () => setJob({ ...jobOf('전체', ['문제지', '빠른정답', '정답해설', 'OMR']), act: 'print' })
   const show: Record<'s' | 'q' | 'so' | 'o', boolean> = {
     s: job ? job.s : true, q: job ? job.q : true, so: job ? job.so : true, o: job ? job.o : true,
   }
@@ -560,12 +576,23 @@ export default function WorksheetView() {
           <button onClick={() => printPart('OMR', 'OMR')} disabled={!ready}
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🅾 OMR</button>
         </div>
-        <button onClick={() => printPart('전체', '문제지', '빠른정답', '정답해설', 'OMR')} disabled={!ready}
-          className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄 / PDF</button>
+        <button onClick={printAll} disabled={!ready}
+          className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄</button>
       </div>
       <p className="no-print mb-6 text-[11px] text-ink2">
-        여백 0으로 인쇄돼 머리말·꼬리말 없이 실물 학습지와 동일하게 나옵니다. 가장자리가 잘리면 인쇄창에서 <b>배율 100% · 여백 ‘없음’</b>을 확인하세요.
+        버튼을 누르면 <b>PDF 파일로 만들어져</b> 저장(따로 다운로드) 또는 바로 인쇄창이 열립니다.
+        PDF라서 어떤 프린터·브라우저에서도 화면 그대로, 여백·배율 설정과 무관하게 출력됩니다.
       </p>
+
+      {/* PDF 생성 중 오버레이 — 페이지 캡처 동안 화면 조작 방지 */}
+      {making && (
+        <div className="no-print fixed inset-0 z-50 flex items-center justify-center bg-ink/40">
+          <div className="flex items-center gap-3 rounded-2xl bg-white px-8 py-6 text-sm font-bold shadow-xl">
+            <span className="inline-block h-5 w-5 animate-spin rounded-full border-2 border-line border-t-pine" />
+            PDF 만드는 중… ({job?.label})
+          </div>
+        </div>
+      )}
 
       {/* 조판 중 스피너 (이미지·폰트 로드 → 실측 → 페이지 분배) */}
       {!ready && (

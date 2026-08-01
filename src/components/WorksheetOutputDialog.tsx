@@ -41,6 +41,7 @@ export default function WorksheetOutputDialog({ mode, ws, extraWs, studentNames,
     const sp = new URLSearchParams()
     sp.set('out', sel.join(','))
     sp.set('mode', mode === 'download' ? pdfMode : 'one')
+    sp.set('act', mode)                                  // download=PDF 저장 / print=PDF 만들어 바로 인쇄창
     if (showName && name) sp.set('name', name)
     onClose()
     // 다중 선택: 나머지 학습지는 같은 옵션으로 새 탭에서 자동 인쇄 (팝업 차단 시 허용 필요)
@@ -118,12 +119,14 @@ export default function WorksheetOutputDialog({ mode, ws, extraWs, studentNames,
               </label>
             </div>
             <p className="mb-4 text-xs text-ink2">
-              인쇄창에서 대상 프린터를 <b>PDF로 저장</b>으로 선택하면 됩니다. 개별 PDF는 분류별로 인쇄창이 순서대로 열립니다.
+              <b>PDF 파일이 바로 저장됩니다.</b> 개별 PDF는 분류별 파일(문제지·정답해설…)로 나뉘어 저장됩니다.
             </p>
           </>
         )}
         {mode === 'print' && (
-          <p className="mb-4 text-xs text-ink2">매수·양면·흑백·역순 등은 이어서 열리는 브라우저 인쇄창에서 설정합니다.</p>
+          <p className="mb-4 text-xs text-ink2">
+            PDF로 만들어 인쇄창을 엽니다 — 여백·배율 설정과 무관하게 화면 그대로 출력됩니다. 매수·양면·흑백은 인쇄창에서 설정하세요.
+          </p>
         )}
 
         <div className="flex justify-end">
