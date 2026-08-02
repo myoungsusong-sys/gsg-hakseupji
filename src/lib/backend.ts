@@ -57,7 +57,11 @@ async function rows(table: string): Promise<any[]> {
   const PAGE = 1000
   const out: unknown[] = []
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await supabase.from(table).select('data').range(from, from + PAGE - 1)
+    let q = supabase.from(table).select('data').range(from, from + PAGE - 1)
+    // 설정 테이블의 실시간 스냅샷(live_*)·풀이 녹화(replay_*) 행은 크고(이미지·이벤트 로그)
+    // 부팅에 불필요하다 — 전용 API(lib/live.ts·lib/replay.ts)로만 읽으므로 부팅 로드에서 제외
+    if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%')
+    const { data, error } = await q
     if (error) { console.warn('load', table, error.message); break }
     const batch = data ?? []
     out.push(...batch.map((r: { data: unknown }) => r.data))
@@ -165,7 +169,8 @@ export const cloud = {
     ])
   },
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)
-  // ⚠️ 실시간 풀이 모니터링 스냅샷(settings id=`live_*`)은 앱 전체 리로드를 유발하지 않도록 무시한다.
+  // ⚠️ 실시간 풀이 스냅샷(live_*)·풀이 녹화(replay_*)는 초 단위로 upsert되므로
+  //    앱 전체 리로드를 유발하지 않도록 무시한다 (전용 폴링/조회로만 읽는다).
   subscribe(onChange: () => void) {
     const sb = supabase
     if (!sb) return () => {}
@@ -173,7 +178,7 @@ export const cloud = {
     for (const t of ALL_TABLES)
       ch.on('postgres_changes', { event: '*', schema: 'public', table: t }, (payload: any) => {
         const id = payload?.new?.id ?? payload?.old?.id
-        if (t === T.settings && typeof id === 'string' && id.startsWith('live_')) return
+        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_'))) return
         onChange()
       })
     ch.subscribe()

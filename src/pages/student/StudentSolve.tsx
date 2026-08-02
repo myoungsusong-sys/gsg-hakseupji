@@ -13,6 +13,7 @@ import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
 import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer } from './common'
 import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
+import { pushReplay, type ReplaySession } from '../../lib/replay'
 
 // ── 학습지 풀기 — 매쓰플랫 학생앱 풀이 화면 구조 ──────────────────
 // · 1문제씩 페이징: [←] N번 문제 / 총 M 문제 [→] + 문제 풀이 현황 토글(번호 칩 점프)
@@ -25,6 +26,10 @@ import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live
 // · 서술형 등 기계채점 불가 문항(!isMachineGradable): 공책에 풀고 [다 풀었어요]로 모범답안을 연 뒤
 //   스스로 ○/✕/? 표시(자기채점, 명수쌤 지시 2026-08-01). 교재 탭과 같은 규약(self:true)으로 저장하고,
 //   문제 위 필기가 있으면 workImg로 함께 남겨 선생님이 나중에 볼 수 있게 한다. AI 1차 채점은 폐지.
+// · 🤖 AI 실시간 코치(2026-08-02): 필기를 멈추고 18초가 지나면 AI가 풀이를 자동 점검해 틀린 부분을
+//   첨삭 배너로 알려준다(문항당 최대 2회, 새 필기가 있을 때만 재검사 — API 비용 통제).
+// · 🎬 풀이 과정 자동 녹화(2026-08-02): 필기·답 입력·문제 이동을 시간과 함께 기록해 20초마다 서버에
+//   올린다 → 선생님이 [실시간 풀이 > 풀이 다시보기]에서 영상처럼 재생.
 
 const DONT_KNOW = '모름'
 // 자기채점 마크 — answers 맵에 센티널로 저장해 임시저장·진행 카운트·초시계가 그대로 따라오게 한다
@@ -116,6 +121,130 @@ export default function StudentSolve() {
   }, [me.id])
   function ackNote() { clearNote(me.id); setNote(null) }
 
+  // ── 🎬 풀이 과정 자동 녹화 ──────────────────────────────────────
+  // 필기·답 입력·문제 이동을 세션 시작 기준 ms와 함께 기록. 좌표는 소수 3자리로 축소(용량↓).
+  const recRef = useRef<ReplaySession | null>(null)
+  const recDirty = useRef(false)
+  const recBytes = useRef(0)
+  const REC_MAX = 4000                // 이벤트 수 한도 — 초과 시 기록만 멈춘다(풀이는 계속)
+  const REC_MAX_BYTES = 1_500_000     // 직렬화 용량 한도 — 'set' 이벤트(전체 획 복사)가 커질 수 있어 바이트도 제한
+  const roundStroke = (s: Stroke): Stroke => ({
+    ...s, pts: s.pts.map(([x, y]) => [Math.round(x * 1000) / 1000, Math.round(y * 1000) / 1000] as [number, number]),
+  })
+  function recEvent(ev: { type: 'stroke' | 'set' | 'nav' | 'answer'; stroke?: Stroke; strokes?: Stroke[]; v?: string }, qIdx?: number) {
+    const r = recRef.current
+    if (!r || r.cut) return
+    if (r.events.length >= REC_MAX || recBytes.current >= REC_MAX_BYTES) { r.cut = true; recDirty.current = true; return }
+    const e = {
+      t: Date.now() - r.startedAt, q: qIdx ?? idx, type: ev.type,
+      ...(ev.stroke ? { stroke: roundStroke(ev.stroke) } : {}),
+      ...(ev.strokes ? { strokes: ev.strokes.map(roundStroke) } : {}),
+      ...(ev.v != null ? { v: ev.v } : {}),
+    }
+    r.events.push(e)
+    recBytes.current += JSON.stringify(e).length
+    recDirty.current = true
+  }
+  // 세션 시작 — 학습지·문제가 준비되면 1회. 행 id에 startedAt이 들어가므로(lib/replay.ts)
+  // 새로고침·재입장으로 새 세션이 시작돼도 이전 녹화를 덮어쓰지 않는다.
+  useEffect(() => {
+    if (!ws || list.length === 0) return
+    if (recRef.current?.wsId === ws.id) return
+    recRef.current = { studentId: me.id, name: me.name, wsId: ws.id, title: ws.title, startedAt: Date.now(), events: [] }
+    recDirty.current = false; recBytes.current = 0
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws?.id, list.length])
+  // 문항 이동 기록 (첫 진입 0번은 제외)
+  useEffect(() => {
+    if (idx === 0 && (recRef.current?.events.length ?? 0) === 0) return
+    recEvent({ type: 'nav' }, idx)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx])
+  // 20초마다(+화면 이탈·언마운트 시) 서버로 흘려보낸다.
+  // pushReplay는 성공 여부를 반환 — 실패하면 dirty를 복원해 다음 틱에 재시도(손실 최대 20초 보장).
+  useEffect(() => {
+    const flush = () => {
+      const r = recRef.current
+      if (!r || !recDirty.current) return
+      recDirty.current = false
+      pushReplay(r).then(ok => { if (!ok) recDirty.current = true })
+    }
+    const t = setInterval(flush, 20_000)
+    const onVis = () => { if (document.hidden) flush() }
+    document.addEventListener('visibilitychange', onVis)
+    return () => { clearInterval(t); document.removeEventListener('visibilitychange', onVis); flush() }
+  }, [])
+
+  // ── 🤖 AI 실시간 코치 — 필기를 멈추면 AI가 풀이를 점검해 자동 첨삭 ──
+  // 비용 통제: 필기 18초 멈춤 + 획 2개 이상 + 문항당 최대 2회 + 잉크 세대가 바뀌었을 때만 재검사.
+  // 답을 이미 넣은 문항은 건드리지 않는다('모름'은 예외 — 힌트가 가장 필요한 순간).
+  type AiNote = { img?: string; feedback: string; marks: { x: number; y: number; w: number; h: number; label: string }[]; at: number }
+  const [aiNotes, setAiNotes] = useState<Record<string, AiNote | null>>({})
+  const lastInkAt = useRef<Record<string, number>>({})
+  const inkRev = useRef<Record<string, number>>({})    // 문항별 잉크 세대 — 획 추가·undo·redo·전체지우기마다 +1
+  const coachCalls = useRef<Record<string, number>>({})
+  const coachRev = useRef<Record<string, number>>({})  // 마지막 검사 시점의 잉크 세대 (획 '개수' 비교는
+  //   전체지우기 후 더 적은 획으로 다시 푼 경우를 새 필기로 못 보는 버그가 있어 세대 방식으로 판정)
+  const coachBusy = useRef(false)
+  // 최신 answers 미러 — 비전 API 응답(수 초)이 도착한 뒤 재검증할 때 낡은 state 대신 이걸 본다
+  const answersRef = useRef(answers)
+  answersRef.current = answers
+  // ⚠️ document.hidden을 하드 가드로 쓰지 않는다 — 태블릿 웹뷰·키오스크는 항상 hidden으로 보고돼
+  //    (초시계에서 겪은 실사고) 코치가 영영 안 도는 사고가 난다. visibilitychange 전환이
+  //    실제로 관측됐을 때만 멈추고, 돌아오면 다시 돈다.
+  const coachHidden = useRef(false)
+  const AI_IDLE_MS = 18_000, AI_MAX_CALLS = 2, AI_MIN_STROKES = 2
+  useEffect(() => {
+    if ((cfg.aiCoach ?? true) === false) return
+    const onVis = () => { coachHidden.current = document.hidden }
+    document.addEventListener('visibilitychange', onVis)
+    const t = setInterval(async () => {
+      const q = list[idx]; if (!q || coachHidden.current || coachBusy.current) return
+      const id = q.id
+      const strokes = inks[id] ?? []
+      const last = lastInkAt.current[id] ?? 0
+      if (strokes.length < AI_MIN_STROKES) return
+      if (!last || Date.now() - last < AI_IDLE_MS) return
+      if ((coachCalls.current[id] ?? 0) >= AI_MAX_CALLS) return
+      const rev = inkRev.current[id] ?? 0
+      if ((coachRev.current[id] ?? -1) >= rev) return   // 마지막 검사 이후 새 필기 없음
+      const a = (answers[id] ?? '').trim()
+      if (a && a !== DONT_KNOW) return
+      coachBusy.current = true
+      // 실패해도 호출 횟수는 소모 — 서버 미설정(503) 등에서 3초마다 재호출되는 낭비를 막는다
+      coachCalls.current[id] = (coachCalls.current[id] ?? 0) + 1
+      coachRev.current[id] = rev
+      try {
+        const img = await exportWork(q, strokes)
+        if (img) {
+          const r = await fetch('/api/solve-feedback', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              imageBase64: img, mediaType: 'image/jpeg',
+              problemText: q.body?.trim()
+                ? q.body + (q.choices?.length ? '\n' + q.choices.join(' / ') : '')
+                : undefined,                       // 이미지 문항은 body가 비어 있다 — 이미지만으로 판단
+              answer: q.answer,
+            }),
+          })
+          if (r.ok) {
+            const j = await r.json()
+            const marks = Array.isArray(j.marks) ? j.marks : []
+            // 응답 도착 후 재검증 — 기다리는 수 초 사이 답을 넣었거나 필기를 바꿨으면 낡은 지적은 버린다
+            const a2 = (answersRef.current[id] ?? '').trim()
+            const fresh = (inkRev.current[id] ?? 0) === rev && (!a2 || a2 === DONT_KNOW)
+            // 틀린 부분이 있을 때만 말을 건다 — 잘 풀고 있으면 방해하지 않는다
+            if (fresh && j.hasWork !== false && (j.correct === false || marks.length > 0))
+              setAiNotes(prev => ({ ...prev, [id]: { img, feedback: String(j.feedback ?? ''), marks, at: Date.now() } }))
+          }
+        }
+      } catch { /* 네트워크 오류 — 다음 검사 기회에 */ }
+      finally { coachBusy.current = false }
+    }, 3000)
+    return () => { clearInterval(t); document.removeEventListener('visibilitychange', onVis) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx, list, inks, answers, cfg.aiCoach])
+
   // 현재 문항·답 여부에 따라 초시계 시작/정지 + 1초 갱신
   const curPid = list[idx]?.id
   const curAnswered = !!(curPid && (answers[curPid] ?? '').trim())
@@ -152,6 +281,9 @@ export default function StudentSolve() {
 
   function setAnswer(pid: string, v: string) {
     if (v.trim()) flushRun()          // 답을 넣는 순간 초시계 정지
+    recEvent({ type: 'answer', v }, Math.max(0, list.findIndex(x => x.id === pid)))
+    // 답(자기채점 포함)을 넣으면 그 문항의 AI 코치 배너는 치운다 — 끝낸 문제에 낡은 지적 금지
+    if (v.trim() && v !== DONT_KNOW) setAiNotes(prev => (prev[pid] ? { ...prev, [pid]: null } : prev))
     setAnswers(prev => {
       const next = { ...prev, [pid]: v }
       setSavedAt(writeDraft(ws!.id, next))
@@ -227,6 +359,13 @@ export default function StudentSolve() {
       date: new Date().toISOString(), results, by: 'student',
     }
     upsertGrading(rec)
+    // 🎬 녹화 마감 — 제출 표시 후 업로드 완료까지 기다린다(실패 시 1회 재시도).
+    // 화면 전환 후에는 재시도 기회가 없어서 여기서 확정해야 한다.
+    const rep = recRef.current
+    if (rep) {
+      rep.done = true; recDirty.current = false
+      if (!(await pushReplay(rep))) await pushReplay(rep)
+    }
     clearDraft(ws!.id)
     nav(`/student/result/${ws!.id}`, { replace: true })
   }
@@ -247,26 +386,39 @@ export default function StudentSolve() {
       if (img) pushLive({ studentId: me.id, name: me.name, label: `${ws!.title} · ${idx + 1}번`, img, at: Date.now() })
     }).catch(() => { /* 스냅샷 실패는 무시(다음 스트로크에 재시도) */ })
   }
+  // 잉크가 바뀔 때마다 세대·시각 갱신 (AI 코치의 '새 필기' 판정 근거)
+  function touchInk() {
+    lastInkAt.current[pid] = Date.now()
+    inkRev.current[pid] = (inkRev.current[pid] ?? 0) + 1
+  }
   function pushStroke(s: Stroke) {
     setInks(prev => ({ ...prev, [pid]: [...(prev[pid] ?? []), s] }))
     setRedos(prev => ({ ...prev, [pid]: [] }))
+    touchInk()
+    recEvent({ type: 'stroke', stroke: s })
     if (p) pushLiveInk(p, [...myInk, s])
   }
   function undoInk() {
     if (myInk.length === 0) return
     setInks(prev => ({ ...prev, [pid]: myInk.slice(0, -1) }))
     setRedos(prev => ({ ...prev, [pid]: [...myRedo, myInk[myInk.length - 1]] }))
+    touchInk()
+    recEvent({ type: 'set', strokes: myInk.slice(0, -1) })
   }
   function redoInk() {
     if (myRedo.length === 0) return
     setRedos(prev => ({ ...prev, [pid]: myRedo.slice(0, -1) }))
     setInks(prev => ({ ...prev, [pid]: [...myInk, myRedo[myRedo.length - 1]] }))
+    touchInk()
+    recEvent({ type: 'set', strokes: [...myInk, myRedo[myRedo.length - 1]] })
   }
   function clearInk() {
     if (myInk.length === 0) return
     if (!confirm('이 문제의 필기를 모두 지울까요?')) return
     setInks(prev => ({ ...prev, [pid]: [] }))
     setRedos(prev => ({ ...prev, [pid]: [] }))
+    touchInk()
+    recEvent({ type: 'set', strokes: [] })
   }
 
   const cur = (answers[pid] ?? '').trim()
@@ -300,6 +452,42 @@ export default function StudentSolve() {
           </div>
           {note.text && <p className="mb-2 whitespace-pre-wrap text-sm font-semibold leading-relaxed">{note.text}</p>}
           {note.img && <img src={note.img} alt="선생님 첨삭" className="w-full max-w-xl rounded-xl border border-clay/40 bg-white" />}
+        </div>
+      )}
+
+      {/* 🤖 AI 실시간 코치 첨삭 배너 — 현재 문항에서 필기를 멈추면 자동으로 온다 */}
+      {p && aiNotes[p.id] && (
+        <div className="mb-5 rounded-2xl border-2 border-violet-400 bg-violet-50 p-4">
+          <div className="mb-2 flex items-center gap-2">
+            <b className="text-violet-700">🤖 AI 선생님이 풀이를 봤어요!</b>
+            <div className="grow" />
+            <button onClick={() => setAiNotes(prev => ({ ...prev, [p.id]: null }))}
+              className="rounded-lg bg-violet-600 px-4 py-1.5 text-xs font-bold text-white hover:brightness-105">확인했어요</button>
+          </div>
+          {aiNotes[p.id]!.feedback && (
+            <p className="mb-2 whitespace-pre-wrap text-sm font-semibold leading-relaxed">{aiNotes[p.id]!.feedback}</p>
+          )}
+          {aiNotes[p.id]!.img && aiNotes[p.id]!.marks.length > 0 && (
+            <div className="relative inline-block w-full max-w-xl">
+              <img src={aiNotes[p.id]!.img} alt="내 풀이 (AI 표시)" className="w-full rounded-xl border border-violet-300 bg-white" />
+              <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                {aiNotes[p.id]!.marks.map((m, i) => (
+                  <ellipse key={i}
+                    cx={(m.x + m.w / 2) * 100} cy={(m.y + m.h / 2) * 100}
+                    rx={Math.max(m.w * 55, 4)} ry={Math.max(m.h * 60, 4)}
+                    fill="none" stroke="#dc2626" strokeWidth="0.8"
+                    strokeDasharray="2.5 1.2" vectorEffect="non-scaling-stroke" strokeLinecap="round" />
+                ))}
+              </svg>
+              {aiNotes[p.id]!.marks.map((m, i) => (
+                <span key={i}
+                  className="absolute -translate-y-full rounded bg-red-600 px-1 py-0.5 text-[10px] font-bold leading-none text-white"
+                  style={{ left: `${Math.min(m.x * 100, 82)}%`, top: `${Math.max(m.y * 100, 6)}%` }}>
+                  {m.label || '확인'}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       )}
 

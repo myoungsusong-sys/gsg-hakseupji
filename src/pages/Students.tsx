@@ -2134,6 +2134,7 @@ function useRevealConfig() {
   const changed = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
     || (cfg.solveFeedback ?? true) !== (studentAppConfig.solveFeedback ?? true)   // 기본 ON
     || (cfg.aiGrade ?? false) !== (studentAppConfig.aiGrade ?? false)             // 기본 OFF
+    || (cfg.aiCoach ?? true) !== (studentAppConfig.aiCoach ?? true)               // 기본 ON
   const dirty = synced && changed                                                 // ② 동기화 전에는 저장 불가
 
   const save = () => {
@@ -2211,6 +2212,26 @@ function AnswerRevealSettings() {
           <label className="flex items-center gap-1.5 text-sm">
             <input type="checkbox" checked={cfg.aiGrade ?? false}
               onChange={e => setCfg(p => ({ ...p, aiGrade: e.target.checked }))} className="accent-pine" />
+            사용
+          </label>
+        </div>
+        {/* 🤖 AI 실시간 코치 (기본 사용) */}
+        <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
+          <div className="min-w-40">
+            <div className="text-sm font-bold">🤖 AI 실시간 코치
+              <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(cfg.aiCoach ?? true) ? 'bg-violet-100 text-violet-700' : 'bg-paper2 text-ink2'}`}>
+                {(cfg.aiCoach ?? true) ? '사용' : '사용 안 함'}
+              </span>
+            </div>
+            <div className="text-xs text-ink2">
+              학생이 문제 위 필기를 멈추고 18초가 지나면 AI가 풀이를 자동 점검해, 틀린 부분이 있을 때만
+              학생 화면에 첨삭 배너를 보내요. (문항당 최대 2회 — 새 필기가 있을 때만 재검사)
+            </div>
+          </div>
+          <div className="grow" />
+          <label className="flex items-center gap-1.5 text-sm">
+            <input type="checkbox" checked={cfg.aiCoach ?? true}
+              onChange={e => setCfg(p => ({ ...p, aiCoach: e.target.checked }))} className="accent-pine" />
             사용
           </label>
         </div>

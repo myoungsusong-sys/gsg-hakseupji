@@ -355,6 +355,7 @@ export interface StudentAppConfig {
   dailyOffIds?: string[]         // 오늘의 학습 OFF 학생 id 목록
   solveFeedback?: boolean        // 학생앱 문항별 '풀이 AI 피드백' 사용 (기본 true=사용)
   aiGrade?: boolean              // AI 1차 채점 + 선생님 승인 (서술형·과학 등 자동채점 불가 문항, 기본 false)
+  aiCoach?: boolean              // 🤖 AI 실시간 코치 — 필기 멈추면 자동 점검·첨삭 (기본 true=사용)
   lab?: LabConfig                // 실험실 설정
 }
 

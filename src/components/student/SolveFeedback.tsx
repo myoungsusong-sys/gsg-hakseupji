@@ -110,7 +110,10 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           imageBase64: image.dataUrl, mediaType: image.mediaType,
-          problemText: (problem as any).q ?? (problem as any).question ?? undefined,
+          // Problem에는 q/question이 아니라 body가 있다 (이미지 문항은 body가 빈 문자열 — 이미지로만 판단)
+          problemText: problem.body?.trim()
+            ? problem.body + (problem.choices?.length ? '\n' + problem.choices.join(' / ') : '')
+            : undefined,
           answer: problem.answer,
         }),
       })

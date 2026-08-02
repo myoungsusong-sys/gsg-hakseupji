@@ -1,7 +1,9 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchLive, pushNote, type LiveSolve } from '../../lib/live'
-import type { DailyConfig, Diff, Grading, Student, Worksheet } from '../../types'
+import { fetchReplayList, fetchReplay, type ReplayMeta, type ReplaySession, type ReplayStroke } from '../../lib/replay'
+import ProblemContent from '../ProblemContent'
+import type { DailyConfig, Diff, Grading, Problem, Student, Worksheet } from '../../types'
 import { DIFFS, DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
@@ -798,6 +800,7 @@ function GroupLiveMonitor({ students }: { students: Student[] }) {
   const [items, setItems] = useState<LiveSolve[]>([])
   const [tick, setTick] = useState(0)          // n초 전 표기 갱신
   const [target, setTarget] = useState<LiveSolve | null>(null)
+  const [replayOpen, setReplayOpen] = useState(false)   // 🎬 풀이 다시보기
 
   // 3초 간격 폴링 — 반 학생들의 최신 풀이 스냅샷
   useEffect(() => {
@@ -819,6 +822,11 @@ function GroupLiveMonitor({ students }: { students: Student[] }) {
         <span className="font-bold">실시간 풀이 <b className="text-pine">{items.length}</b>명</span>
         <span className="rounded-md bg-pine-soft px-2 py-1 text-xs font-bold text-pine-dark">3초마다 자동 갱신</span>
         <span className="text-xs text-ink2">풀이를 누르면 확대·빨간펜 첨삭을 보낼 수 있어요</span>
+        <div className="grow" />
+        <button onClick={() => setReplayOpen(true)}
+          className="rounded-lg border border-violet-300 bg-violet-50 px-3 py-1.5 text-xs font-bold text-violet-700 hover:bg-violet-100">
+          🎬 풀이 다시보기
+        </button>
       </div>
 
       {items.length === 0 ? (
@@ -848,6 +856,223 @@ function GroupLiveMonitor({ students }: { students: Student[] }) {
       )}
 
       {target && <AnnotateModal item={target} onClose={() => setTarget(null)} />}
+      {replayOpen && <ReplayBrowser students={students} onClose={() => setReplayOpen(false)} />}
+    </div>
+  )
+}
+
+/* ═══════════ 🎬 풀이 다시보기 — 자동 녹화된 풀이 과정을 영상처럼 재생 ═══════════ */
+// 학생앱이 풀이 중 필기·답 입력·문제 이동을 자동 기록(lib/replay.ts)한 것을 학생별로 골라 재생한다.
+
+function ReplayBrowser({ students, onClose }: { students: Student[]; onClose: () => void }) {
+  const [sel, setSel] = useState<Student | null>(null)
+  const [sessions, setSessions] = useState<ReplayMeta[] | null>(null)   // 목록은 메타만 (events 미포함)
+  const [play, setPlay] = useState<ReplaySession | null>(null)
+  const [opening, setOpening] = useState<string | null>(null)           // 재생 준비 중인 세션 id
+
+  async function pick(st: Student) {
+    setSel(st); setSessions(null)
+    setSessions(await fetchReplayList(st.id))
+  }
+  // ▶ 재생을 눌렀을 때만 그 세션의 events를 통째로 가져온다
+  async function open(m: ReplayMeta) {
+    if (opening) return
+    setOpening(m.id)
+    const s = await fetchReplay(m.id)
+    setOpening(null)
+    if (s && (s.events?.length ?? 0) > 0) setPlay(s)
+    else alert('녹화를 불러오지 못했어요. 잠시 후 다시 시도해주세요.')
+  }
+
+  if (play) return <ReplayPlayer s={play} onClose={() => setPlay(null)} />
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white p-5" onClick={e => e.stopPropagation()}>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-lg font-black">🎬 풀이 다시보기 {sel && <span className="text-sm font-bold text-ink2">· {sel.name}</span>}</h2>
+          <button onClick={onClose} aria-label="닫기" className="text-xl leading-none text-ink2 hover:text-ink">✕</button>
+        </div>
+        {!sel ? (
+          <>
+            <p className="mb-3 text-xs text-ink2">학생을 고르면 자동 녹화된 풀이 과정을 볼 수 있어요. (학생이 학습지를 풀면 자동으로 기록됩니다)</p>
+            <div className="flex flex-wrap gap-2">
+              {students.map(st => (
+                <button key={st.id} onClick={() => pick(st)}
+                  className="rounded-xl border border-line bg-white px-4 py-2 text-sm font-bold hover:border-pine hover:bg-pine-soft">
+                  {st.name}
+                </button>
+              ))}
+            </div>
+          </>
+        ) : sessions === null ? (
+          <p className="py-8 text-center text-sm text-ink2">불러오는 중…</p>
+        ) : (
+          <>
+            <button onClick={() => { setSel(null); setSessions(null) }} className="mb-3 text-xs text-ink2 underline">← 다른 학생</button>
+            {sessions.length === 0 ? (
+              <p className="py-8 text-center text-sm text-ink2">아직 녹화된 풀이가 없어요. 이 학생이 학습지를 풀면 자동으로 기록됩니다.</p>
+            ) : (
+              <div className="grid gap-2">
+                {sessions.map(m => (
+                  <button key={m.id} onClick={() => open(m)} disabled={!!opening}
+                    className="flex flex-wrap items-center gap-3 rounded-xl border border-line px-4 py-3 text-left hover:border-pine disabled:opacity-60">
+                    <b className="text-sm">{m.title}</b>
+                    <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold ${m.done ? 'bg-pine-soft text-pine-dark' : 'bg-amber-soft text-amber'}`}>
+                      {m.done ? '제출 완료' : '풀이 중 기록'}
+                    </span>
+                    <div className="grow" />
+                    <span className="text-xs text-ink2">
+                      {new Date(m.startedAt).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                      {' · '}{Math.max(1, Math.round(m.dur / 60000))}분 분량
+                    </span>
+                    <span className="rounded-lg bg-pine px-3 py-1.5 text-xs font-bold text-paper">
+                      {opening === m.id ? '여는 중…' : '▶ 재생'}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    </div>
+  )
+}
+
+// 재생기 — 이벤트를 시간순으로 적용해 그 시점의 필기·답·문항을 복원한다
+function ReplayPlayer({ s, onClose }: { s: ReplaySession; onClose: () => void }) {
+  const { worksheets, problems } = useStore()
+  const ws = worksheets.find(w => w.id === s.wsId)
+  const plist = useMemo(() => {
+    if (!ws) return []
+    const m = new Map(problems.map(p => [p.id, p]))
+    return ws.problemIds.map(id => m.get(id)).filter((p): p is Problem => !!p)
+  }, [ws, problems])
+
+  const dur = s.events.length ? s.events[s.events.length - 1].t + 1500 : 0
+  const [ms, setMs] = useState(0)
+  const [playing, setPlaying] = useState(true)
+  const [speed, setSpeed] = useState(2)
+  useEffect(() => {
+    if (!playing) return
+    const t = setInterval(() => setMs(m => {
+      const n = m + 100 * speed
+      if (n >= dur) { setPlaying(false); return dur }
+      return n
+    }), 100)
+    return () => clearInterval(t)
+  }, [playing, speed, dur])
+
+  const view = useMemo(() => {
+    let curQ = 0
+    const strokes: Record<number, ReplayStroke[]> = {}
+    const ans: Record<number, string> = {}
+    for (const e of s.events) {
+      if (e.t > ms) break
+      // answer는 화면 이동으로 치지 않는다 — ≡ 빠른채점 모달로 다른 문항 답을 넣으면
+      // nav 없이 answer만 기록되는데, 그걸 따라가면 재생 화면이 문항 사이를 널뛴다
+      if (e.type !== 'answer') curQ = e.q
+      if (e.type === 'stroke' && e.stroke) (strokes[e.q] ??= []).push(e.stroke)
+      else if (e.type === 'set') strokes[e.q] = [...(e.strokes ?? [])]
+      else if (e.type === 'answer') ans[e.q] = e.v ?? ''
+    }
+    return { curQ, strokes, ans }
+  }, [ms, s])
+
+  const p = plist[view.curQ]
+  const fmt = (v: number) => { const sec = Math.floor(v / 1000); return `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(sec % 60).padStart(2, '0')}` }
+  const ansLabel = (v?: string) => !v ? '—'
+    : v.startsWith('SELF:') ? `자기채점 ${({ 정답: '○', 오답: '✕', 모름: '?' } as Record<string, string>)[v.slice(5)] ?? ''}`
+    : v
+  // 점프·'다녀간 문항' 판정도 answer 이벤트는 제외 (빠른채점 입력만 있는 문항은 볼 화면이 없다)
+  const jump = (i: number) => { const e = s.events.find(ev => ev.q === i && ev.type !== 'answer'); if (e) { setMs(e.t); setPlaying(true) } }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={onClose}>
+      <div className="flex max-h-[94vh] w-full max-w-3xl flex-col rounded-2xl bg-white p-5" onClick={e => e.stopPropagation()}>
+        <div className="mb-2 flex items-center justify-between">
+          <h2 className="text-lg font-black">
+            🎬 {s.name} <span className="text-sm font-bold text-ink2">· {s.title}</span>
+            <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${s.done ? 'bg-pine-soft text-pine-dark' : 'bg-amber-soft text-amber'}`}>
+              {s.done ? '제출 완료' : '풀이 중 기록'}
+            </span>
+          </h2>
+          <button onClick={onClose} aria-label="닫기" className="text-xl leading-none text-ink2 hover:text-ink">✕</button>
+        </div>
+
+        {/* 문항 점프 칩 — 그 문항을 처음 만진 시점으로 이동 */}
+        <div className="mb-2 flex flex-wrap gap-1">
+          {plist.map((_, i) => {
+            const touched = s.events.some(ev => ev.q === i && ev.type !== 'answer')
+            return (
+              <button key={i} onClick={() => jump(i)} disabled={!touched}
+                className={`rounded-lg border px-2 py-1 text-xs font-bold ${
+                  view.curQ === i ? 'border-pine bg-pine text-paper'
+                    : touched ? 'border-line bg-white text-ink2 hover:bg-paper2' : 'border-line/50 bg-white text-ink2/30'}`}>
+                {i + 1}
+              </button>
+            )
+          })}
+        </div>
+
+        <div className="min-h-0 grow overflow-y-auto rounded-xl border border-line bg-white p-3">
+          {p ? (
+            <ReplayInk strokes={view.strokes[view.curQ] ?? []}>
+              <ProblemContent p={p} />
+            </ReplayInk>
+          ) : (
+            <div className="p-8 text-center text-sm text-ink2">이 문항 정보를 찾을 수 없어요 (학습지가 변경·삭제됐을 수 있어요)</div>
+          )}
+          <div className="mt-2 text-sm text-ink2">답 입력: <b className="text-ink">{ansLabel(view.ans[view.curQ])}</b></div>
+        </div>
+
+        {/* 재생 컨트롤 */}
+        <div className="mt-3 flex items-center gap-3">
+          <button onClick={() => { if (ms >= dur) setMs(0); setPlaying(v => !v) }}
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-pine text-lg text-paper hover:brightness-110">
+            {playing ? '⏸' : '▶'}
+          </button>
+          <input type="range" min={0} max={dur} step={100} value={ms}
+            onChange={e => setMs(Number(e.target.value))} className="grow accent-pine" />
+          <span className="text-xs font-bold tabular-nums text-ink2">{fmt(ms)} / {fmt(dur)}</span>
+          <button onClick={() => setSpeed(sp => sp >= 8 ? 1 : sp * 2)}
+            className="rounded-lg border border-line px-2.5 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2">
+            {speed}×
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// 읽기 전용 필기 오버레이 — 학생앱 InkCanvas와 같은 정규화 좌표 렌더 (입력 없음)
+function ReplayInk({ strokes, children }: { strokes: ReplayStroke[]; children: React.ReactNode }) {
+  const boxRef = useRef<HTMLDivElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  useEffect(() => {
+    const canvas = canvasRef.current, box = boxRef.current
+    if (!canvas || !box) return
+    const w = box.clientWidth, h = box.clientHeight
+    const dpr = window.devicePixelRatio || 1
+    if (canvas.width !== w * dpr || canvas.height !== h * dpr) { canvas.width = w * dpr; canvas.height = h * dpr }
+    const ctx = canvas.getContext('2d')!
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+    ctx.clearRect(0, 0, w, h)
+    for (const st of strokes) {
+      ctx.globalCompositeOperation = st.erase ? 'destination-out' : 'source-over'
+      ctx.strokeStyle = st.color
+      ctx.lineWidth = st.erase ? st.size * 5 : st.size
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round'
+      ctx.beginPath()
+      st.pts.forEach(([x, y], i) => { const px = x * w, py = y * h; if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py) })
+      ctx.stroke()
+    }
+    ctx.globalCompositeOperation = 'source-over'
+  })
+  return (
+    <div ref={boxRef} className="relative">
+      {children}
+      <canvas ref={canvasRef} className="pointer-events-none absolute inset-0 h-full w-full" />
     </div>
   )
 }
