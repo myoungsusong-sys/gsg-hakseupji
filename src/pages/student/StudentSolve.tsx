@@ -233,8 +233,9 @@ export default function StudentSolve() {
             // 응답 도착 후 재검증 — 기다리는 수 초 사이 답을 넣었거나 필기를 바꿨으면 낡은 지적은 버린다
             const a2 = (answersRef.current[id] ?? '').trim()
             const fresh = (inkRev.current[id] ?? 0) === rev && (!a2 || a2 === DONT_KNOW)
-            // 틀린 부분이 있을 때만 말을 건다 — 잘 풀고 있으면 방해하지 않는다
-            if (fresh && j.hasWork !== false && (j.correct === false || marks.length > 0))
+            // 말을 거는 경우: 풀이가 틀렸거나(marks 포함), 답만 찍고 과정이 없을 때(hasWork=false —
+            // "과정을 써 보자"는 지도도 코치의 역할). 제대로 풀고 있으면 방해하지 않는다.
+            if (fresh && (j.hasWork === false || j.correct === false || marks.length > 0))
               setAiNotes(prev => ({ ...prev, [id]: { img, feedback: String(j.feedback ?? ''), marks, at: Date.now() } }))
           }
         }
