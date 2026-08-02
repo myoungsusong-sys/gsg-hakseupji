@@ -3,8 +3,8 @@ import { useStore } from '../../lib/store'
 import { pushLive } from '../../lib/live'
 import type { Problem } from '../../types'
 
-// 학생앱: 문항별 "풀이 쓰고 AI 피드백 받기" (사진 업로드 + 직접 필기 둘 다)
-// 정답을 알려주지 않고 풀이 과정을 채점/힌트. 서버리스 /api/solve-feedback (Claude 비전) 호출.
+// 학생앱: 문항별 "✏️ 풀이 쓰기" 풀이창 (기본 펼침 — 사진 업로드 + 직접 필기 둘 다)
+// 원하면 AI 피드백도 받을 수 있다: 정답을 알려주지 않고 풀이 과정을 채점/힌트 (/api/solve-feedback, Claude 비전).
 // 필기 중에는 축소 스냅샷을 실시간 모니터링(pushLive)으로 올려 선생님이 여러 학생을 한 화면에서 본다.
 export default function SolveFeedback({ studentId, studentName, worksheetId, label, problem }: {
   studentId: string; studentName: string; worksheetId: string; label: string; problem: Problem
@@ -13,7 +13,8 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
   const fbId = `${studentId}_${worksheetId}_${problem.id}`
   const saved = useMemo(() => solveFeedbacks.find(f => f.id === fbId), [solveFeedbacks, fbId])
 
-  const [open, setOpen] = useState(false)
+  // 풀이창은 기본으로 펼쳐 둔다 — 문제 아래에 항상 풀이 공간이 보여야 바로 쓴다 (2026-08-02 명수쌤)
+  const [open, setOpen] = useState(true)
   const [mode, setMode] = useState<'photo' | 'draw'>('draw')
   const [img, setImg] = useState<{ dataUrl: string; mediaType: string } | null>(null)
   const [busy, setBusy] = useState(false)
@@ -137,7 +138,7 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
     <div className="mt-2 rounded-xl border border-line bg-paper2/40 p-2.5">
       <button onClick={() => setOpen(o => !o)}
         className="flex w-full items-center justify-between text-left text-sm font-bold text-pine-dark">
-        <span>✏️ 풀이 쓰고 AI 피드백 받기</span>
+        <span>✏️ 풀이 쓰기</span>
         <span className="text-xs text-ink2">{open ? '▲' : '▼'}</span>
       </button>
 
@@ -160,10 +161,10 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
 
           {mode === 'draw' ? (
             <div>
-              <canvas ref={canvasRef} width={640} height={360}
+              <canvas ref={canvasRef} width={640} height={480}
                 onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerLeave={up}
                 className="w-full touch-none rounded-lg border border-line bg-white"
-                style={{ aspectRatio: '16 / 9' }} />
+                style={{ aspectRatio: '4 / 3' }} />
               <div className="mt-1 text-right">
                 <button onClick={clearCanvas} className="text-xs text-ink2 underline">지우고 다시</button>
               </div>

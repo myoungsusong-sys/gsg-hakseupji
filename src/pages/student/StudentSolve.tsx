@@ -441,7 +441,7 @@ export default function StudentSolve() {
               <ProblemContent p={p} />
             </InkCanvas>
 
-            {/* ✏️ 풀이 쓰고 AI 피드백 받기 — 우리만의 기능 (매쓰플랫 없음) */}
+            {/* ✏️ 풀이 쓰기 풀이창 (기본 펼침) — AI 피드백은 안에서 선택 */}
             {(cfg.solveFeedback ?? true) && (
               <div className="mt-4 border-t border-line/60 pt-3">
                 <SolveFeedback studentId={me.id} studentName={me.name} worksheetId={ws.id} label={`${ws.title} · ${idx + 1}번`} problem={p} />
