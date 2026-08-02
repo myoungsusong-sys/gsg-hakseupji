@@ -824,7 +824,7 @@ function GroupLiveMonitor({ students }: { students: Student[] }) {
       {items.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
           지금 풀이 중인 학생이 없습니다.<br />
-          학생이 학생앱에서 <b>‘✏️ 풀이 쓰고 AI 피드백 받기’</b>에 필기를 시작하면 여기 실시간으로 나타납니다.
+          학생이 학생앱에서 <b>문제 위에 필기</b>하거나 <b>‘✏️ 풀이 쓰기’</b>에 쓰기 시작하면 여기 실시간으로 나타납니다.
         </div>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

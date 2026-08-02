@@ -12,7 +12,7 @@ import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
 import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer } from './common'
-import { fetchNote, clearNote, type TeacherNote } from '../../lib/live'
+import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
 
 // ── 학습지 풀기 — 매쓰플랫 학생앱 풀이 화면 구조 ──────────────────
 // · 1문제씩 페이징: [←] N번 문제 / 총 M 문제 [→] + 문제 풀이 현황 토글(번호 칩 점프)
@@ -235,9 +235,22 @@ export default function StudentSolve() {
   const pid = p?.id ?? ''
   const myInk = inks[pid] ?? []
   const myRedo = redos[pid] ?? []
+  // 문제 위 메인 필기도 실시간 모니터링에 올린다 (명수쌤 지시 2026-08-01).
+  // 기존엔 '✏️ 풀이 쓰기' 캔버스만 올라가서, 문제 위에만 필기하는 학생은 선생님 화면에 안 보였다.
+  // 스트로크가 끝날 때마다 스로틀(2초)로 exportWork(문제이미지+잉크 합성)를 올린다.
+  const lastLive = useRef(0)
+  function pushLiveInk(q: Problem, strokes: Stroke[]) {
+    const now = Date.now()
+    if (now - lastLive.current < 2000) return
+    lastLive.current = now
+    exportWork(q, strokes).then(img => {
+      if (img) pushLive({ studentId: me.id, name: me.name, label: `${ws!.title} · ${idx + 1}번`, img, at: Date.now() })
+    }).catch(() => { /* 스냅샷 실패는 무시(다음 스트로크에 재시도) */ })
+  }
   function pushStroke(s: Stroke) {
     setInks(prev => ({ ...prev, [pid]: [...(prev[pid] ?? []), s] }))
     setRedos(prev => ({ ...prev, [pid]: [] }))
+    if (p) pushLiveInk(p, [...myInk, s])
   }
   function undoInk() {
     if (myInk.length === 0) return
