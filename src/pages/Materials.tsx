@@ -169,13 +169,13 @@ type MarketRow = {
 
 // 오투 과학 교재 — 이미지 문제풀로 편입된 과정(WANJA_COURSES). 교재 검색에서 찾아 바로 출제.
 const OTU_BOOKS: { name: string; grade: string; course: string; count: number }[] = [
-  { name: '오투 중등과학 1-1 (22개정)', grade: '중1', course: 'm-sci1-1', count: 379 },
+  { name: '오투 중등과학 1-1 (22개정)', grade: '중1', course: 'm-sci1-1', count: 951 },
   { name: '오투 중등과학 1-2 (22개정)', grade: '중1', course: 'm-sci1-2', count: 336 },
-  { name: '오투 중등과학 2-1 (22개정)', grade: '중2', course: 'm-sci2-1', count: 432 },
+  { name: '오투 중등과학 2-1 (22개정)', grade: '중2', course: 'm-sci2-1', count: 1062 },
   { name: '오투 중등과학 2-2 (22개정)', grade: '중2', course: 'm-sci2-2', count: 419 },
   { name: '오투 중등과학 3-2 (15개정)', grade: '중3', course: 'm-sci3-2', count: 359 },
-  { name: '오투 고등 통합과학1 (22개정)', grade: '고1', course: 'h-int1', count: 361 },
-  { name: '오투 고등 통합과학2 (22개정)', grade: '고1', course: 'h-int2', count: 335 },
+  { name: '오투 고등 통합과학1 (22개정)', grade: '고1', course: 'h-int1', count: 350 },
+  { name: '오투 고등 통합과학2 (22개정)', grade: '고1', course: 'h-int2', count: 1024 },
 ]
 
 function MarketCatalog() {
