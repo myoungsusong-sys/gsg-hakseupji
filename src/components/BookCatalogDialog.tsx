@@ -54,9 +54,11 @@ const LEVEL_OF_ST = { E: '초', M: '중', H: '고' } as const
 
 export interface CatalogBook { name: string; publisher: string; grade: string; matchKey?: string; course?: string; subject?: Subject }
 
-export default function BookCatalogDialog({ defaultGrade, existingKeys, subject = '수학', onClose, onAdd }: {
+export default function BookCatalogDialog({ defaultGrade, existingKeys, existingLabel = '이미 배정됨', subject = '수학', onClose, onAdd }: {
   defaultGrade?: string
   existingKeys: Set<string>
+  // 학생 화면에서는 '이미 배정됨', 교재 라이브러리에서는 '이미 등록됨' — 학생 배정과 혼동되지 않게 한다
+  existingLabel?: string
   subject?: Subject
   onClose: () => void
   onAdd: (books: CatalogBook[]) => void
@@ -258,7 +260,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
                     <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">
-                      {has ? <><span className="text-green-500">●</span> 이미 배정됨</> : '-'}
+                      {has ? <><span className="text-green-500">●</span> {existingLabel}</> : '-'}
                     </td>
                   </tr>
                 )
@@ -307,7 +309,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, subject 
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">{b.publisher}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">-</td>
                     <td className="whitespace-nowrap px-3 py-1.5 text-xs text-ink2">
-                      {has ? <><span className="text-green-500">●</span> 이미 배정됨</> : '-'}
+                      {has ? <><span className="text-green-500">●</span> {existingLabel}</> : '-'}
                     </td>
                   </tr>
                 )
