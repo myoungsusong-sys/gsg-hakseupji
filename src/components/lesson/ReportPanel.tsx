@@ -541,6 +541,8 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
         if (r.status === 503) {   // 키 미설정 → 템플릿 폴백(generate) / 안내(polish)
           if (mode === 'generate' && templateComment) { setComment(templateComment); persist({ comment: templateComment }); setAiNote('AI 미설정 — 기본 문구로 작성(설정하면 더 자연스러워집니다).') }
           else setAiNote('AI 다듬기는 서버 설정(ANTHROPIC_API_KEY) 후 사용할 수 있습니다.')
+        } else if (r.status === 402) {   // Anthropic 크레딧 소진
+          setAiNote(e.error ?? 'AI 크레딧이 부족합니다. Anthropic 콘솔에서 충전해주세요.')
         } else setAiNote('AI 오류: ' + (e.error ?? r.status))
         return
       }

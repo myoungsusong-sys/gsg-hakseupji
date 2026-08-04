@@ -140,7 +140,13 @@ async function sendKakao(b: any, res: any) {
     }
     res.status(200).json({ ok: true, warn: warn ? warn.trim() : undefined })
   } catch (e: any) {
-    res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
+    // Anthropic 크레딧 소진은 원문이 영문 JSON이라 화면에 그대로 뜨면 알아보기 어렵다 → 한글 안내로 바꾼다
+    const msg = String(e?.message ?? e)
+    if (/credit balance is too low/i.test(msg)) {
+      res.status(402).json({ error: 'AI 크레딧이 부족합니다. Anthropic 콘솔(Plans & Billing)에서 충전한 뒤 다시 시도해주세요.' })
+      return
+    }
+    res.status(502).json({ error: msg.slice(0, 200) })
   }
 }
 

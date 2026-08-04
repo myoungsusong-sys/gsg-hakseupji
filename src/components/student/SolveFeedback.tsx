@@ -119,7 +119,9 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
       })
       if (!r.ok) {
         const e = await r.json().catch(() => ({}))
-        setErr(r.status === 503 ? '선생님이 AI 피드백을 아직 켜지 않았어요.' : (e.error || '피드백을 받지 못했어요. 잠시 후 다시 시도해주세요.'))
+        setErr(r.status === 503 ? '선생님이 AI 피드백을 아직 켜지 않았어요.'
+          : r.status === 402 ? 'AI 사용량이 다 찼어요. 선생님께 알려주세요.'
+          : (e.error || '피드백을 받지 못했어요. 잠시 후 다시 시도해주세요.'))
         setBusy(false); return
       }
       const j = await r.json()
