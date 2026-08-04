@@ -4,8 +4,20 @@
     {
       "name": "hakseupji-restored-5199",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "export PATH=\"$HOME/.nvm/versions/node/v24.18.0/bin:$PATH\" && cd \"$HOME/hakseupji-restored\" && npx vite --port 5199 --strictPort"],
+      "runtimeArgs": [
+        "-c",
+        "export PATH=\"$HOME/.nvm/versions/node/v24.18.0/bin:$PATH\" && cd \"$HOME/hakseupji-restored\" && npx vite --port 5199 --strictPort"
+      ],
       "port": 5199
+    },
+    {
+      "name": "hakseupji-deploy-5210",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "export PATH=\"$HOME/.nvm/versions/node/v24.18.0/bin:$PATH\" && cd \"$HOME/hakseupji-deploy\" && npx vite --port 5210 --strictPort"
+      ],
+      "port": 5210
     }
   ]
 }

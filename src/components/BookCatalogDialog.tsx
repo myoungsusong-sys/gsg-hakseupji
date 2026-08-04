@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { WB_MATCH_BOOKS } from '../data/wbMatch'
 import { TEXTBOOK_BOOKS } from '../data/textbooks'
 import { OTU_BOOKS } from '../data/otuBooks'
+import { OLSO_BOOKS } from '../data/olsoBooks'
 import type { Subject } from '../lib/subject'
 
 // 매쓰플랫 「전체 교재 목록」과 동일한 카탈로그 다이얼로그
@@ -63,7 +64,14 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, existing
   onClose: () => void
   onAdd: (books: CatalogBook[]) => void
 }) {
-  const sci = subject === '과학'
+  // 과목 전용 교재 카탈로그 — 과학=오투, 사회·역사=올쏘. (수학만 전체 카탈로그·교과서·내 교재 탭을 쓴다)
+  const special = useMemo(() => {
+    if (subject === '과학') return { title: '오투 중등과학 교재', books: OTU_BOOKS.map(b => ({ ...b, subject: '과학' as Subject })) }
+    if (subject === '사회' || subject === '역사')
+      return { title: `올쏘 중학 ${subject} 교재`, books: OLSO_BOOKS.filter(b => b.subject === subject) }
+    return null
+  }, [subject])
+  const sci = !!special
   const [level, setLevel] = useState<typeof LEVELS[number]>('전체')
   const [sub, setSub] = useState('전체')   // 2차 필터: 학년·학기(중) / 과목(고)
   const [tab, setTab] = useState<Tab>('시중교재')
@@ -129,11 +137,11 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, existing
 
   // 과학(오투) 필터 — 교재명·학년 검색만 (오투 중등과학 5권)
   const filteredOtu = useMemo(() => {
-    if (!sci) return []
+    if (!special) return []
     const kw = q.trim().toLowerCase()
-    return OTU_BOOKS.filter(b =>
+    return special.books.filter(b =>
       !kw || b.name.toLowerCase().includes(kw) || b.grade.includes(kw) || b.publisher.toLowerCase().includes(kw))
-  }, [sci, q])
+  }, [special, q])
 
   function toggle(key: string) {
     setChecked(prev => {
@@ -145,10 +153,10 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, existing
 
   function submit() {
     let books: CatalogBook[]
-    if (sci) {
-      books = OTU_BOOKS
+    if (special) {
+      books = special.books
         .filter(b => checked.has(b.key))
-        .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key, course: b.course, subject: '과학' as Subject }))
+        .map(b => ({ name: b.name, publisher: b.publisher, grade: b.grade, matchKey: b.key, course: b.course, subject: b.subject as Subject }))
     } else if (isTextbook) {
       // 정답표(wb-match) 보유 교과서(393권)는 matchKey·course를 실어 등록 → 시중교재와 동일하게
       // 채점판 번호·정답이 자동 파생. 미보유(정답 미지원)는 matchKey 없이 등록(정답표 수동 등록 필요).
@@ -180,7 +188,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, existing
     <div className="fixed inset-0 z-40 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
       <div className="flex max-h-[80vh] w-full max-w-2xl flex-col rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
         <div className="mb-3 flex items-center gap-3">
-          <h3 className="text-lg font-bold">{sci ? '오투 중등과학 교재' : '전체 교재 목록'}</h3>
+          <h3 className="text-lg font-bold">{special ? special.title : '전체 교재 목록'}</h3>
           <div className="grow" />
           <button onClick={onClose} className="text-ink2 hover:text-ink">✕</button>
         </div>
@@ -302,7 +310,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, existing
                     </td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">
                       <div>{gradeLabel(b.grade)}</div>
-                      <div className="text-[10px]">과학 · {b.count}문항</div>
+                      <div className="text-[10px]">{b.subject} · {b.count}문항</div>
                     </td>
                     <td className="py-1.5 pr-2 font-semibold">{b.name}</td>
                     <td className="whitespace-nowrap py-1.5 pr-2 text-xs text-ink2">OX채점</td>

@@ -68,7 +68,7 @@ export default function Workbooks() {
         </div>
       </div>
 
-      {adding && <BookCatalogDialog onClose={() => setAdding(false)}
+      {adding && <BookCatalogDialog onClose={() => setAdding(false)} subject={subject}
         // 이 화면은 공용 교재 라이브러리 — 특정 학생에게 배정된 교재(studentId 있음)는 판정에서 제외한다.
         // (전체를 보면 다른 학생 배정분 때문에 등록하지도 않은 교재가 '이미 배정됨'으로 표시됐다)
         existingKeys={new Set(workbooks.filter(w => !w.studentId).map(w => w.matchKey).filter((k): k is string => !!k))}

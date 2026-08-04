@@ -7,7 +7,7 @@ import { resultTypeId } from './drill'
 // 헤더 스위처에서 한 번 고르면 출제 관련 화면 전체가 그 과목 모드로 동작하고, 기기별로 기억된다.
 // ★ 확장(국어·영어·사회…): 아래 SUBJECTS 배열에 과목명만 추가하면 헤더 스위처가 따라온다.
 //   (커리큘럼 쪽은 curriculum.ts의 Curriculum.subject에 같은 문자열을 쓰면 자동 연동)
-export const SUBJECTS = ['수학', '과학'] as const
+export const SUBJECTS = ['수학', '과학', '사회', '역사'] as const
 export type Subject = (typeof SUBJECTS)[number]
 
 const KEY = 'gsg-subject'

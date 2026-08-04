@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, subjectOfType } from '../data/curriculum'
-import { useSubject } from '../lib/subject'
+import { useSubject, type Subject } from '../lib/subject'
 import { useBrand, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
 import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
@@ -90,13 +90,14 @@ export default function WorksheetList({ view }: { view: View }) {
     return [...TAG_FILTER_OPTIONS, ...extra]
   }, [worksheets])
 
-  // 학습지 과목: 저장값 우선, 없으면(레거시) 문항 유형으로 유도(과학 유형 있으면 과학), 그래도 없으면 수학
+  // 학습지 과목: 저장값 우선, 없으면(레거시) 문항 유형으로 유도, 그래도 없으면 수학
   const probType = useMemo(() => new Map(problems.map(p => [p.id, p.typeId])), [problems])
-  const wsSubject = useMemo(() => (w: Worksheet): '수학' | '과학' => {
+  const wsSubject = useMemo(() => (w: Worksheet): Subject => {
     if (w.subject) return w.subject
     for (const pid of w.problemIds) {
       const tid = probType.get(pid)
-      if (tid && subjectOfType(tid) === '과학') return '과학'
+      const s = tid ? subjectOfType(tid) : undefined
+      if (s && s !== '수학') return s
     }
     return '수학'
   }, [probType])

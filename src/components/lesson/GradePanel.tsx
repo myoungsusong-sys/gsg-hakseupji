@@ -484,7 +484,10 @@ export default function GradePanel({ student }: { student: Student }) {
   if (myBooks.length === 0 || !wb) {
     return (
       <div className="rounded-2xl border border-dashed border-line bg-white/60 p-16 text-center">
-        <p className="mb-4 text-sm text-ink2"><b>{student.name}</b> 학생에게 배정된 {subject === '과학' ? '과학' : ''} 교재가 없습니다. {subject === '과학' ? '오투 중등과학 교재를 등록하면 쪽·문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.' : '시중교재를 등록하면 문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.'}</p>
+        <p className="mb-4 text-sm text-ink2"><b>{student.name}</b> 학생에게 배정된 {subject === '수학' ? '' : subject} 교재가 없습니다. {
+          subject === '과학' ? '오투 중등과학 교재를 등록하면 쪽·문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.'
+          : subject === '사회' || subject === '역사' ? `올쏘 중학 ${subject} 교재를 등록하면 쪽·문항이 자동으로 붙어 바로 채점할 수 있습니다.`
+          : '시중교재를 등록하면 문항·유형이 자동으로 붙어 바로 채점할 수 있습니다.'}</p>
         <button onClick={() => setCatalog(true)}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper">＋ 교재 등록</button>
         {catalog && (

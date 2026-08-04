@@ -4,7 +4,7 @@ export interface SubUnit { id: string; name: string; types: TypeNode[] }
 export interface MidUnit { id: string; name: string; subs: SubUnit[] }
 export interface BigUnit { id: string; name: string; mids: MidUnit[] }
 
-export interface Curriculum { id: string; grade: string; label: string; units: BigUnit[]; subject?: '수학' | '과학' }
+export interface Curriculum { id: string; grade: string; label: string; units: BigUnit[]; subject?: '수학' | '과학' | '사회' | '역사' }
 
 // 중1-1 (22개정) — 매쓰플랫 기준 자동생성 (대>중>소>유형=conceptId)
 export const CURRICULUM: Curriculum = {
@@ -82,7 +82,7 @@ type SubC = [string, string[]]
 type MidC = [string, SubC[]]
 type BigC = [string, MidC[]]
 
-function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학'): Curriculum {
+function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사'): Curriculum {
   return {
     id, grade, label, ...(subject ? { subject } : {}),
     units: data.map((u, ui) => ({
@@ -2551,7 +2551,7 @@ type RType = [string, string]
 type RSub = [string, RType[]]
 type RMid = [string, RSub[]]
 type RBig = [string, RMid[]]
-function buildReal(id: string, grade: string, label: string, data: RBig[], subject?: '수학' | '과학'): Curriculum {
+function buildReal(id: string, grade: string, label: string, data: RBig[], subject?: '수학' | '과학' | '사회' | '역사'): Curriculum {
   return {
     id, grade, label, ...(subject ? { subject } : {}),
     units: data.map((u, ui) => ({
@@ -2715,6 +2715,17 @@ const SP_H_INT1: RBig[] = [
   ]],
 ]
 
+// ── 올쏘 중학 사회·역사 (2022개정) — 교재 채점용 최소 과정 트리 ──
+//    문제 이미지 풀은 없고 교재 채점표(wb-match-m-soc*/m-his*)만 쓴다.
+//    섹션(개념 확인·대표 문제·주관식 서술형)을 소단원으로 두어 유형 분석이 동작하게 한다.
+const OLSO_SECTIONS: BigC[] = [
+  ["교재 학습", [["교재 학습", [
+    ["개념 확인", ["개념 확인"]],
+    ["대표 문제", ["대표 문제"]],
+    ["주관식·서술형", ["주관식·서술형"]],
+  ]]]],
+]
+
 export const CURRICULA: Curriculum[] = [
   MF_E1_1, MF_E1_2, MF_E2_1, MF_E2_2,
   MF_E3_1, MF_E3_2, MF_E4_1, MF_E4_2,
@@ -2756,6 +2767,14 @@ export const CURRICULA: Curriculum[] = [
   build("h-scihist", "고3", "과학의 역사와 문화 (22개정)", SCI_H_SCIHIST, '과학'),
   build("h-climate", "고3", "기후변화와 환경생태 (22개정)", SCI_H_CLIMATE, '과학'),
   build("h-convsci", "고3", "융합과학 탐구 (22개정)", SCI_H_CONVSCI, '과학'),
+  build("m-soc1-1", "중1-1", "올쏘 중학 사회①-1 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
+  build("m-soc1-2", "중1-2", "올쏘 중학 사회①-2 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
+  build("m-soc2-1", "중2-1", "올쏘 중학 사회②-1 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
+  build("m-soc2-2", "중2-2", "올쏘 중학 사회②-2 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
+  build("m-his1-1", "중2-1", "올쏘 중학 역사①-1 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
+  build("m-his1-2", "중2-2", "올쏘 중학 역사①-2 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
+  build("m-his2-1", "중3-1", "올쏘 중학 역사②-1 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
+  build("m-his2-2", "중3-2", "올쏘 중학 역사②-2 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
 ]
 
 export function curriculumFor(id: string): Curriculum {
@@ -2795,14 +2814,14 @@ export function allTypeIds(): string[] {
 }
 
 // 과정 id → 과목 (헤더 과목 스위처 목록 필터용)
-export function subjectOfCourse(id?: string): '수학' | '과학' | undefined {
+export function subjectOfCourse(id?: string): '수학' | '과학' | '사회' | '역사' | undefined {
   if (!id) return undefined
   return CURRICULA.find(c => c.id === id)?.subject
 }
 
 // 유형 id → 과목. 과학 유형만 트리에 있으므로 과학이면 '과학', 그 외(수학 트리·매쓰플랫 개념id)는 undefined(=수학 취급)
-let _typeSubject: Map<string, '수학' | '과학'> | null = null
-export function subjectOfType(typeId: string): '수학' | '과학' | undefined {
+let _typeSubject: Map<string, '수학' | '과학' | '사회' | '역사'> | null = null
+export function subjectOfType(typeId: string): '수학' | '과학' | '사회' | '역사' | undefined {
   if (!_typeSubject) {
     _typeSubject = new Map()
     for (const x of eachType()) _typeSubject.set(x.t.id, x.c.subject ?? '수학')
@@ -2838,7 +2857,7 @@ export function typeSubUnitId(typeId: string): string {
 //    그래서 고등 과학 학습지(통합과학1·2=고1, 물리·화학·생명·지구=고2)를 학생앱에서 열면
 //    문제 풀이 로드되지 않아 "문제를 불러오는 중"에서 멈췄다.
 //    학습지의 grade·subject에 해당하는 과정을 모두 반환해 그 풀을 함께 로드한다.
-export function coursesForWorksheet(grade: string, subject?: '수학' | '과학'): string[] {
+export function coursesForWorksheet(grade: string, subject?: '수학' | '과학' | '사회' | '역사'): string[] {
   const out = new Set<string>()
   const def = defaultCurriculumForGrade(grade)
   const defCur = CURRICULA.find(c => c.id === def)
