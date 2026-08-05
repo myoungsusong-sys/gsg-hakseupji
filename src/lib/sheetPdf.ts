@@ -62,14 +62,19 @@ async function capturePage(page: HTMLElement): Promise<HTMLCanvasElement> {
 
   const css = await collectCss()
   const xhtml = new XMLSerializer().serializeToString(clone)
+  // ⚠️ SVG는 XML로 파싱된다 — Tailwind CSS에는 '>' '&' 같은 문자가 흔해서
+  //    <style>을 그대로 넣으면 XML 파싱이 깨져 렌더가 실패한다(=페이지 렌더 실패).
+  //    CDATA로 감싸 CSS를 문자 데이터로 취급하게 한다.
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">` +
     `<foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml">` +
-    `<style>${css.replace(/]]>/g, '')}</style>${xhtml}</div></foreignObject></svg>`
+    `<style><![CDATA[${css.replace(/]]>/g, ']] >')}]]></style>${xhtml}</div></foreignObject></svg>`
 
+  // ⚠️ blob: URL은 쓰면 안 된다 — SVG를 blob으로 로드하면 캔버스가 오염돼(tainted)
+  //    toDataURL이 막힌다(실측 확인). data: URL이어야 오염 없이 내보낼 수 있다.
   const img = new Image()
   await new Promise<void>((res, rej) => {
     img.onload = () => res()
-    img.onerror = () => rej(new Error('페이지 렌더 실패'))
+    img.onerror = () => rej(new Error(`페이지 렌더 실패 (SVG ${Math.round(svg.length / 1024)}KB)`))
     setTimeout(() => rej(new Error('캡처 시간 초과')), 30_000)
     img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg)
   })
