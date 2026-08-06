@@ -65,9 +65,10 @@ export default async function handler(req: any, res: any) {
   try {
     const client = new Anthropic({ apiKey: key })
     const msg = await client.messages.create({
+      // 🔴 Haiku 4.5 는 output_config.effort 를 지원하지 않는다 — 넣으면 400
+      //    ("This model does not support the effort parameter." 2026-08-06 라이브 실측)
       model: 'claude-haiku-4-5',
       max_tokens: 500,
-      output_config: { effort: 'low' },
       system: SYSTEM,
       messages: [{ role: 'user', content }],
     })
