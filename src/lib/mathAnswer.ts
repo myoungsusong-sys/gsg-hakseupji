@@ -59,6 +59,59 @@ const TYPED_ALIAS: [RegExp, string][] = [
   [/무한대/g, '∞'],
 ]
 
+// ── 4-bis. 도형 용어 오타 교정 (선분AB ← 선문AB) ────────────────────────────
+// 🔴 **일반 한글 오타 보정은 절대 하지 않는다.** 2026-08-06 실측:
+//    교재 주관식 정답 61,443종 가운데 **자모 하나 차이인 서로 다른 정답이 4,383쌍** 있었다.
+//    ('10만 배'↔'10만 개' · '12마리'↔'12마디' · '(가) 그래프'↔'(나) 그래프' ·
+//     '작습니다에 ○표'↔'적습니다에 ○표') 느슨하게 풀면 오답이 통째로 정답이 된다.
+// 그래서 **① 닫힌 용어 사전에 있고 ② 바로 뒤에 라틴 라벨(AB·O·ABC)이 붙은 꼴**로만 고친다.
+// 그런 자리의 한글은 도형 이름이지 답 자체가 아니라서(답은 라벨 쪽) 안전하다.
+const GEOM_TERMS = [
+  '선분', '직선', '반직선', '각', '호', '현', '원', '중점', '중심',
+  '지름', '반지름', '꼭짓점', '대각선', '수선', '접선', '삼각형', '사각형',
+  // ⚠️ 아래는 "고칠 대상"이 아니라 **고쳐지지 않게 지키는 낱말**이다.
+  //    사전에 없으면 밑면→밑변, 곡선→직선처럼 다른 용어로 교정돼 오답이 정답이 된다.
+  '변', '면', '밑변', '빗변', '밑면', '옆면', '윗면', '빗면',
+  '곡선', '중선', '접점', '교점', '교선', '정점',
+]
+const J_CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ'
+const J_JUNG = 'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ'
+const J_JONG = ' ㄱㄲㄳㄴㄵㄶㄷㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅄㅅㅆㅇㅈㅊㅋㅌㅍㅎ'
+/** 한글 낱말을 음절별 [초성, 중성, 종성] 로 분해 (한글이 아니면 null) */
+function toJamo(w: string): string[][] | null {
+  const out: string[][] = []
+  for (const ch of w) {
+    const c = ch.codePointAt(0)! - 0xac00
+    if (c < 0 || c > 11171) return null
+    out.push([J_CHO[Math.floor(c / 588)], J_JUNG[Math.floor((c % 588) / 28)], J_JONG[c % 28]])
+  }
+  return out
+}
+/** 음절 수가 같고 **자모 딱 하나만 바뀐**(빠지거나 더해진 건 제외) 사이인가 */
+function oneJamoApart(a: string, b: string): boolean {
+  const x = toJamo(a), y = toJamo(b)
+  if (!x || !y || x.length !== y.length) return false
+  let diff = 0
+  for (let i = 0; i < x.length; i++) {
+    for (let k = 0; k < 3; k++) {
+      if (x[i][k] === y[i][k]) continue
+      // 종성이 있고/없고의 차이는 제외 — '삼각형'과 '사각형'이 한 끗 차이가 돼 버린다
+      if (x[i][k] === ' ' || y[i][k] === ' ') return false
+      if (++diff > 1) return false
+    }
+  }
+  return diff === 1
+}
+/** 라틴 라벨 앞의 한글이 도형 용어 오타면 바로잡는다. 후보가 둘 이상이면 손대지 않는다. */
+function fixGeomTypo(t: string): string {
+  if (!/[가-힣]/.test(t)) return t
+  return t.replace(/([가-힣]{1,4})(?=[A-Za-z])/g, (m, w: string) => {
+    if (GEOM_TERMS.includes(w)) return m                      // 제대로 쓴 건 그대로
+    const hit = GEOM_TERMS.filter(term => oneJamoApart(term, w))
+    return hit.length === 1 ? hit[0] : m                      // 애매하면 고치지 않는다
+  })
+}
+
 // ── 5. 단위 (값 비교 시 분리) ───────────────────────────────────────────────
 // 길이·넓이·부피·무게 등 "학생이 생략해도 정답으로 볼" 단위. 시간(시간/분/초)처럼
 // 서로 혼동하면 안 되는 단위도 목록에 넣되, 서로 다른 단위끼리는 오답 처리한다.
@@ -129,6 +182,7 @@ export function normMath(input: string): string {
   t = t.replace(new RegExp(`[${SUP}]+`, 'g'), m =>
     '^' + [...m].map(c => SUP.indexOf(c)).join(''))
   t = t.replace(new RegExp(`[${SUB}]`, 'g'), c => String(SUB.indexOf(c)))
+  t = fixGeomTypo(t)                 // 선문AB → 선분AB (아래 '각ABC → ∠ABC' 별칭보다 먼저)
   for (const [re, s] of TYPED_ALIAS) t = t.replace(re, s)
   // ×는 피연산자 사이일 때만 곱셈 — 그 밖에는 "틀림 표시(✕)"이므로 건드리지 않는다
   t = t.replace(/(?<=[\d a-zπθ)])\s*[×✕]\s*(?=[\d a-zπθ(√])/gi, '*')
@@ -294,14 +348,25 @@ function tokenEq(correct: string, student: string): boolean {
   return cl !== '' && cl === sl
 }
 
-/** "x=3" 처럼 붙은 변수 라벨을 뗀다 (학생이 값만 써도 정답). */
-// 답 앞에 붙는 라벨을 뗀다 — "x=3"의 x=, 그리고 (가)·가)·가:·가= 같은 소문항 표기.
-// `(가) D` 와 `가=D` 를 같은 답으로 보게 해준다. 라벨을 뗀 뒤 내용이 다르면 여전히 오답.
+// 답 앞에 붙는 라벨을 [라벨, 본문]으로 나눈다 — "x=3"의 x=, (가)·가)·가:·가= 같은 소문항 표기.
 // ⚠️ 라벨을 떼서 빈 문자열이 되면(정답 자체가 "(가)"인 기호 고르기 문항) 떼지 않는다.
 //    안 그러면 정답 (가) 와 학생 답 (나) 가 둘 다 ''가 되어 오답이 정답으로 뒤집힌다.
-const stripLabel = (t: string) => {
-  const s = t.replace(/^\(?\s*[가-아]\s*[):=]\s*/, '').replace(/^[a-zπθ가-힣]{1,4}=/, '')
-  return s.trim() ? s : t
+function splitLabel(t: string): [label: string, body: string] {
+  let m = /^\(?\s*([가-아])\s*[):=]\s*/.exec(t)
+  if (m && t.slice(m[0].length).trim()) return [m[1], t.slice(m[0].length).trim()]
+  m = /^([a-zπθ가-힣]{1,4})=/.exec(t)
+  if (m && t.slice(m[0].length).trim()) return [m[1], t.slice(m[0].length).trim()]
+  return ['', t]
+}
+
+/** 라벨을 뗀 뒤 본문끼리 비교. `(가) D` 와 `가=D` 는 같은 답, 학생이 값만 써도 정답.
+ *  🔴 단, **양쪽 다 라벨이 있고 그 라벨이 서로 다르면 오답**이다 — 그 자리에선 라벨이 곧 답이다.
+ *  (2026-08-06 발견: 정답 `(가) 그래프` 에 학생이 `(나) 그래프` 라고 써도 정답 처리되고 있었다) */
+function labelEq(correct: string, student: string): boolean {
+  const [cl, cb] = splitLabel(correct)
+  const [sl, sb] = splitLabel(student)
+  if (cl && sl && cl !== sl) return false
+  return tokenEq(cb, sb)
 }
 
 /** "A(또는B)" · "A또는B" 형태의 대안 정답을 모두 펼친다. */
@@ -360,14 +425,14 @@ export function mathEqual(correct: string, student: string): boolean {
       if (ct.length > 1 && ct.length === st.length) {
         const pool = [...st]
         const ok = ct.every(x => {
-          const hit = pool.findIndex(y => tokenEq(x, y) || tokenEq(stripLabel(x), stripLabel(y)))
+          const hit = pool.findIndex(y => tokenEq(x, y) || labelEq(x, y))
           if (hit < 0) return false
           pool.splice(hit, 1)
           return true
         })
         if (ok) return true
       }
-      if (ct.length === 1 && st.length === 1 && tokenEq(stripLabel(c), stripLabel(s))) return true
+      if (ct.length === 1 && st.length === 1 && labelEq(c, s)) return true
     }
   }
   return false

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Grading, Problem } from '../../types'
 import { useStore, uid } from '../../lib/store'
-import { isMachineGradable } from '../../lib/aiGrade'
+import { isMachineGradable, requestAiGrade } from '../../lib/aiGrade'
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
@@ -25,7 +25,9 @@ import { pushReplay, type ReplaySession } from '../../lib/replay'
 // · 제출: confirm → autoCorrect 자동채점('모름'은 unknown 처리) → hj_gradings 저장 → 결과 화면
 // · 서술형 등 기계채점 불가 문항(!isMachineGradable): 공책에 풀고 [다 풀었어요]로 모범답안을 연 뒤
 //   스스로 ○/✕/? 표시(자기채점, 명수쌤 지시 2026-08-01). 교재 탭과 같은 규약(self:true)으로 저장하고,
-//   문제 위 필기가 있으면 workImg로 함께 남겨 선생님이 나중에 볼 수 있게 한다. AI 1차 채점은 폐지.
+//   문제 위 필기가 있으면 workImg로 함께 남겨 선생님이 나중에 볼 수 있게 한다.
+// · 🤖 서술형 AI 채점(2026-08-06 명수쌤 지시로 부활): 답을 **글로 써서** 내면 제출 때 AI(Haiku)가
+//   1차 판정하고 pending:'teacher'로 선생님 승인 큐에 올린다. 글로 안 쓰면 위 자기채점 그대로다.
 // · 🤖 AI 실시간 코치(2026-08-02): 필기를 멈추고 18초가 지나면 AI가 풀이를 자동 점검해 틀린 부분을
 //   첨삭 배너로 알려준다(문항당 최대 2회, 새 필기가 있을 때만 재검사 — API 비용 통제).
 // · 🎬 풀이 과정 자동 녹화(2026-08-02): 필기·답 입력·문제 이동을 시간과 함께 기록해 20초마다 서버에
@@ -353,6 +355,25 @@ export default function StudentSolve() {
         continue
       }
       if (a === DONT_KNOW) { results.push({ itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: false, unknown: true, sec }); continue }
+      // 🤖 서술형에 답을 글로 쓴 경우 — 기계 대조가 불가능하므로 AI가 1차 판정하고
+      //    반드시 선생님 승인 큐(pending:'teacher')로 올린다. AI가 최종 확정하지 않는다.
+      //    (AI 호출이 실패해도 제출은 막지 않는다 — 판정 없이 선생님에게 넘어간다)
+      if (!isMachineGradable(q)) {
+        let workImg: string | undefined
+        try { workImg = await exportWork(q, inks[q.id] ?? []) } catch { /* 필기 없이 저장 */ }
+        let ai: GradeResult['ai']
+        try {
+          const v = await requestAiGrade(q, a, workImg)
+          ai = { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() }
+        } catch { /* AI 실패 — 판정 없이 선생님 승인 대기로 */ }
+        results.push({
+          itemId: q.id, typeId: q.typeId, studentAnswer: a, workImg, sec,
+          correct: ai?.verdict === true,
+          unknown: ai?.verdict == null || undefined,
+          pending: 'teacher', ai,
+        })
+        continue
+      }
       results.push({ itemId: q.id, typeId: q.typeId, studentAnswer: a, correct: autoCorrect(q, a), sec })
     }
     const rec: Grading = {
@@ -685,7 +706,8 @@ export default function StudentSolve() {
             {!isMachineGradable(p) ? (
               /* 서술형 등 기계채점 불가 — 모범답안 열람 후 스스로 ○/✕/? (자기채점) */
               <WsSelfCheck key={p.id} p={p} value={cur}
-                onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')} />
+                onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')}
+                onText={t => setAnswer(p.id, t)} />
             ) : p.kind === '객관식' ? (
               <div className="flex gap-2">
                 {[1, 2, 3, 4, 5].map(n => {
@@ -746,7 +768,8 @@ export default function StudentSolve() {
                     <b className="w-10 text-sm text-pine-dark">{i + 1}번</b>
                     {!isMachineGradable(q) ? (
                       <WsSelfCheck key={q.id} p={q} value={answers[q.id] ?? ''}
-                        onMark={m => setAnswer(q.id, m ? SELF_PREFIX + m : '')} />
+                        onMark={m => setAnswer(q.id, m ? SELF_PREFIX + m : '')}
+                        onText={t => setAnswer(q.id, t)} />
                     ) : (
                       <>
                         <div className="min-w-0 grow">
@@ -863,9 +886,12 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
 // 자기채점 (서술형 등 기계채점 불가 문항) — 공책·필기로 풀고, 모범답안을 연 뒤 스스로 ○/✕/? 표시.
 // 정답을 먼저 보고 베끼는 걸 막으려고 [다 풀었어요]를 눌러야 모범답안이 열린다 (교재 탭과 동일).
 // key={p.id} 로 마운트해 문항 이동 시 열람 상태가 리셋된다.
-function WsSelfCheck({ p, value, onMark }: { p: Problem; value: string; onMark: (m: SelfMark | null) => void }) {
+function WsSelfCheck({ p, value, onMark, onText }: {
+  p: Problem; value: string; onMark: (m: SelfMark | null) => void; onText: (t: string) => void
+}) {
   const [revealed, setRevealed] = useState(false)
   const mark = selfMarkOf(value)
+  const typed = mark ? '' : value            // 같은 칸을 쓰므로 둘 중 하나만 존재한다
   const open = revealed || !!mark            // 이미 표시한 문항은 다시 와도 열린 상태
   const a = (p.answer ?? '').trim()
   const hasAnswer = !!a && !['.', '-'].includes(a)
@@ -879,8 +905,22 @@ function WsSelfCheck({ p, value, onMark }: { p: Problem; value: string; onMark: 
     /* 하단 고정 답 바 안에서 열리므로 화면을 다 가리지 않게 높이를 제한한다 */
     <div className="grid max-h-[45vh] min-w-0 grow gap-2 overflow-y-auto rounded-xl bg-paper2/60 px-3 py-2.5">
       <span className="text-xs font-semibold text-ink2">
-        ✍️ 서술형이에요 — 공책이나 문제 위 필기로 풀고, 모범답안과 맞춰본 뒤 직접 표시해요
+        ✍️ 서술형이에요 — 답을 글로 써서 내면 AI가 채점하고, 공책에 풀었으면 아래에서 직접 표시해요
       </span>
+      {/* 🤖 글로 써서 내기 — 쓰면 제출할 때 AI가 1차 채점하고 선생님이 확인한다.
+          안 쓰면 예전 그대로 자기채점(명수쌤 2026-08-01 지시)이라 기존 흐름은 그대로다. */}
+      {!mark && (
+        <div className="grid gap-1">
+          <textarea rows={2} value={typed} onChange={e => onText(e.target.value)}
+            placeholder="답을 문장으로 써보세요 (표현이 달라도 뜻이 같으면 정답이에요)"
+            className="w-full resize-none rounded-lg border border-line bg-white px-2.5 py-2 text-sm outline-none focus:border-pine" />
+          {!!typed.trim() && (
+            <span className="text-[11px] font-semibold text-pine-dark">
+              🤖 제출하면 AI가 1차 채점하고 선생님이 최종 확인해요
+            </span>
+          )}
+        </div>
+      )}
       {!open ? (
         <button type="button" onClick={() => setRevealed(true)}
           className="w-fit rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">
