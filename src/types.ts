@@ -78,7 +78,8 @@ export interface SheetOptions {
 export const DEFAULT_SHEET_OPTIONS: SheetOptions = {
   layout: 'basic', spacing: 3, showTypeName: true, showDiff: true,
   showCorrectRate: false, showNew: true,
-  wrongNoteArea: false, solutionWithBody: false, showDate: true, customDate: null,
+  // showDate 기본 false — 매쓰플랫 원본 메타줄은 `N문제 | 출제자  이름 ___` 로 날짜가 없다 (실측 2026-08-06)
+  wrongNoteArea: false, solutionWithBody: false, showDate: false, customDate: null,
   autoGrade: true,
 }
 

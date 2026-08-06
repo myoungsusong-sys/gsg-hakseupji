@@ -335,9 +335,11 @@ export default function WorksheetView() {
     return a === b ? a : `${a} ~ ${b}`
   })()
 
+  // 매쓰플랫 실측(2026-08-06, 원본 PDF): 유형명은 「| 유형명 |」처럼 파이프로 감싸고 7pt.
+  // 부가정보(난이도·정답률·신경향·연관)는 옵션을 켰을 때만 파이프 뒤에 ' · '로 잇는다.
   const caption = (p: Problem) => {
     const parts: string[] = []
-    if (opts.showTypeName) parts.push(typeName(p.typeId))
+    if (opts.showTypeName) parts.push(`| ${typeName(p.typeId)} |`)
     if (opts.showDiff) parts.push(DIFF_LABEL[p.diff])
     if (opts.showCorrectRate && p.correctRate != null) parts.push(`정답률 ${p.correctRate}%`)
     if (opts.showNew && p.isNew) parts.push('신경향')
@@ -438,7 +440,7 @@ export default function WorksheetView() {
   )
 
   const header1 = (
-    <PageHeader1 theme={theme.main} grade={ws.grade} title={ws.title} subtitle={subtitle}
+    <PageHeader1 theme={theme.main} grade={ws.tags?.[0] || ws.grade} title={ws.title} subtitle={subtitle}
       dateText={dateText} count={items.length} author={ws.author} studentName={studentName} />
   )
   const headerN = <PageHeaderN title={ws.title} subtitle={subtitle} />
@@ -647,7 +649,8 @@ export default function WorksheetView() {
   )
 }
 
-/* ── 1p 헤더 (매쓰플랫 §5-2): 학년 태그+제목 16pt 인라인 / 부제 13pt / 메타 11pt+이름 / 우상단 학원명 ── */
+/* ── 1p 헤더 (매쓰플랫 §5-2): 앞머리(태그 또는 학년)+제목 16pt 인라인 / 부제 13pt / 메타 11pt+이름 / 우상단 학원명
+   실측(2026-08-06 원본 PDF): 앞머리는 **태그**("학습지 오답"), 메타줄은 `26문제 | 출제자  이름 ___`(날짜 없음) ── */
 function PageHeader1({ theme, grade, title, subtitle, dateText, count, author, studentName }: {
   theme: string; grade: string; title: string; subtitle: string
   dateText: string | null; count: number; author: string; studentName?: string | null
@@ -698,14 +701,15 @@ function PageHeaderN({ title, subtitle }: { title: string; subtitle: string }) {
 
 /* ── 지면 머리글 (MakeWizard STEP3 축소 미리보기용 flow 버전 — 1p 헤더와 같은 구성) ── */
 export function SheetHeader({ ws, subtitle, dateText, count, theme }: {
-  ws: { grade: string; title: string; author: string }
+  ws: { grade: string; title: string; author: string; tags?: string[] }
   subtitle: string; dateText: string | null; count: number; theme: string
 }) {
+  const lead = ws.tags?.[0] || ws.grade   // 매쓰플랫 실측: 앞머리는 태그, 없으면 학년
   return (
     <div style={{ position: 'relative' }}>
       <div style={{ position: 'absolute', right: 0, top: 0, fontSize: '11pt', fontWeight: 800, color: '#333333' }}>{ws.author}</div>
       <h1 className="line-clamp-2" style={{ paddingRight: '42mm', fontSize: '16pt', fontWeight: 800, lineHeight: '22.4pt', color: '#000000' }}>
-        <span style={{ color: theme }}>{ws.grade} </span>{ws.title}
+        <span style={{ color: theme }}>{lead} </span>{ws.title}
       </h1>
       {subtitle && <div style={{ marginTop: '2.5mm', fontSize: '13pt', color: '#5c5c5c' }}>{subtitle}</div>}
       <div style={{ marginTop: '6mm', fontSize: '11pt', color: '#333333' }}>
@@ -729,7 +733,7 @@ export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims }: {
         {String(idx + 1).padStart(2, '0')}
       </span>
       {(caption || (onVideo && p.videoUrl)) && (
-        <div style={{ fontSize: '8pt', lineHeight: 1.3, color: '#949494', marginBottom: '1mm' }}>
+        <div style={{ fontSize: '7pt', lineHeight: 1.3, color: '#949494', marginBottom: '1mm' }}>
           {caption}
           {onVideo && p.videoUrl && (
             <button onClick={() => onVideo(p, idx)}
@@ -748,7 +752,7 @@ export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims }: {
                 ))}
               </div>
             )}
-            {p.kind === '주관식' && <div style={{ marginTop: '5mm', borderBottom: '1px dotted #bfbfbf' }} />}
+            {/* 매쓰플랫 원본에는 주관식 아래 점선(답 쓰는 줄)이 없다 — 실측 2026-08-06 */}
           </>}
     </div>
   )

@@ -1393,7 +1393,7 @@ export default function MakeWizard() {
             <div className="relative aspect-[210/297] overflow-hidden rounded-md border border-line bg-white shadow-md">
               <div className="w-[182%] origin-top-left scale-[0.55] px-[11mm] py-[12mm]">
                 <SheetHeader
-                  ws={{ grade: gradeValue, title: title.trim() || '학습지 제목', author: author.trim() || '출제자' }}
+                  ws={{ grade: gradeValue, title: title.trim() || '학습지 제목', author: author.trim() || '출제자', tags: [...tags] }}
                   subtitle={previewSubtitle} dateText={previewDateText}
                   count={items.length} theme={THEMES[theme].main} />
                 {opts.layout === 'basic' ? (
