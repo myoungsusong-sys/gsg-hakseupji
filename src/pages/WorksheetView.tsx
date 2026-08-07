@@ -74,15 +74,17 @@ type PageDef =
   | { part: 'q'; first: boolean; kind: 'qa'; left: number[]; right: number[] }
   | { part: 'so'; first: boolean; kind: 'socols'; cols: [number[], number[]] }
   | { part: 'o'; first: boolean; kind: 'omr'; left: number[]; right: number[] }
+  | { part: 'sa'; first: boolean; kind: 'sacols'; cols: [number[], number[]] }
 
 /* 인쇄 작업 단위 — 렌더할 부(문제지 s / 빠른정답 q / 정답해설 so / OMR o)와 파일명 라벨
    act: 'download'=PDF 파일 저장 / 'print'=PDF를 만들어 바로 인쇄창 (둘 다 진짜 PDF — 매쓰플랫 방식) */
-type PrintJob = { label: string; s: boolean; q: boolean; so: boolean; o: boolean; act?: 'download' | 'print' }
+type PrintJob = { label: string; s: boolean; q: boolean; so: boolean; o: boolean; sa: boolean; act?: 'download' | 'print' }
 const PART_FLAG: Record<string, keyof Omit<PrintJob, 'label'>> = {
-  '문제지': 's', '빠른정답': 'q', '정답해설': 'so', 'OMR': 'o',
+  '문제지': 's', '빠른정답': 'q', '정답해설': 'so', 'OMR': 'o', '문제+정답': 'sa',
 }
 const jobOf = (label: string, sel: string[]): PrintJob => ({
-  label, s: sel.includes('문제지'), q: sel.includes('빠른정답'), so: sel.includes('정답해설'), o: sel.includes('OMR'),
+  label, s: sel.includes('문제지'), q: sel.includes('빠른정답'), so: sel.includes('정답해설'),
+  o: sel.includes('OMR'), sa: sel.includes('문제+정답'),
 })
 
 // 블록을 페이지×열에 순서대로 분배. 열에 안 들어가면 다음 열/페이지로. (단독 초과 블록은 그냥 배치)
@@ -136,10 +138,11 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const [imgDims, setImgDims] = useState<Dims | null>(null)
   const [measured, setMeasured] = useState<Record<string, number> | null>(null)
   const measRef = useRef<HTMLDivElement>(null)
+  const measuredRef = useRef(false)      // soon() 이 rAF·setTimeout 둘 다 부르므로 중복 측정 방지
 
   const layoutKey = ws ? `${ws.id}|${(ws.problemIds ?? []).join(',')}|${JSON.stringify(opts)}|${ws.theme}` : ''
   useEffect(() => {
-    setImgDims(null); setMeasured(null)
+    setImgDims(null); setMeasured(null); measuredRef.current = false
     if (!ws) return
     let alive = true
     const urls = new Set<string>()
@@ -148,10 +151,17 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       if (isImageUrl(p.answer)) urls.add(p.answer)
       if (isImageUrl(p.solution)) urls.add(p.solution)
     }
+    // 🔴 응답이 없는 이미지 URL 하나가 학습지 조판을 **영영** 막는다 (2026-08-07 실측:
+    //    죽은 정답 이미지 때문에 「조판 중…」 에서 멈췄다). onerror 조차 안 오는 주소가 있다.
+    //    8초 안에 대답이 없으면 없는 것으로 치고 나머지로 조판한다.
+    const IMG_TIMEOUT = 8000
     Promise.all([...urls].map(u => new Promise<[string, { w: number; h: number }] | null>(res => {
       const img = new Image()
-      img.onload = () => res([u, { w: img.naturalWidth, h: img.naturalHeight }])
-      img.onerror = () => res(null)
+      let done = false
+      const finish = (v: [string, { w: number; h: number }] | null) => { if (!done) { done = true; res(v) } }
+      const t = setTimeout(() => finish(null), IMG_TIMEOUT)
+      img.onload = () => { clearTimeout(t); finish([u, { w: img.naturalWidth, h: img.naturalHeight }]) }
+      img.onerror = () => { clearTimeout(t); finish(null) }
       img.src = u
     }))).then(entries => {
       if (alive) setImgDims(new Map(entries.filter((e): e is [string, { w: number; h: number }] => e != null)))
@@ -164,15 +174,32 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   useEffect(() => {
     if (!imgDims || measured) return
     let alive = true
-    document.fonts.ready.then(() => requestAnimationFrame(() => {
-      if (!alive || !measRef.current) return
+    // 🔴 rAF 한 번만 노려서 재면, 그 순간 측정 DOM 이 아직 안 붙어 있으면 영영 안 잰다
+    //    ("조판 중…" 에서 멈춤, 2026-08-07 실측). DOM 이 생길 때까지 짧게 다시 본다.
+    // 🔴 rAF 는 탭이 비활성이면 아예 돌지 않는다 — 다른 탭에서 열어 둔 학습지가
+    //    「조판 중…」 에서 멈춘다 (2026-08-07 실측). setTimeout 을 같이 걸어 둔다.
+    const soon = (fn: () => void) => { requestAnimationFrame(fn); setTimeout(fn, 50) }
+    const measure = (tries = 0) => {
+      if (!alive || measuredRef.current) return
+      const el = measRef.current
+      const marks = el?.querySelectorAll<HTMLElement>('[data-mk]')
+      if (!el || !marks || marks.length === 0) {
+        if (tries < 60) soon(() => measure(tries + 1))
+        return
+      }
       const hs: Record<string, number> = {}
-      measRef.current.querySelectorAll<HTMLElement>('[data-mk]').forEach(el => {
-        hs[el.dataset.mk!] = el.offsetHeight / PXMM
-      })
+      marks.forEach(m => { hs[m.dataset.mk!] = m.offsetHeight / PXMM })
+      measuredRef.current = true
       setMeasured(hs)
-    }))
-    return () => { alive = false }
+    }
+    // 🔴 document.fonts.ready 가 끝내 resolve 되지 않는 경우가 있다 (KaTeX 가 수식마다
+    //    폰트를 더 부르면 pending 으로 되돌아간다). 그러면 조판이 영영 시작되지 않는다
+    //    — 「조판 중…」 에서 멈춤 (2026-08-07 실측). 3초를 넘기면 그냥 잰다.
+    let started = false
+    const start = () => { if (!started) { started = true; soon(() => measure()) } }
+    document.fonts.ready.then(start)
+    const fontT = setTimeout(start, 3000)
+    return () => { alive = false; clearTimeout(fontT) }
   }, [imgDims, measured])
 
   const concepts = (ws?.conceptIds ?? [])
@@ -243,6 +270,13 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     const soH = items.map((_, i) => measured[`s${i}`] ?? 0)
     fillColumns(soH, G.soGap, 2, p => p === 0 ? BODY1_H : BODYN_H)
       .forEach((cols, pi) => defs.push({ part: 'so', first: pi === 0, kind: 'socols', cols: [cols[0], cols[1]] }))
+
+    // 5부. 문제+정답 한 장 — 문제지와 같은 2단인데 문항마다 정답이 붙는다
+    {
+      const saH = items.map((_, i) => measured[`a${i}`] ?? 0)
+      fillColumns(saH, S, 2, p => p === 0 ? BODY1_H : BODYN_H)
+        .forEach((cols, pi) => defs.push({ part: 'sa', first: pi === 0, kind: 'sacols', cols: [cols[0], cols[1]] }))
+    }
 
     // 4부. OMR (§7-bis) — 행 13.6mm 고정 2단 표, 좌단 15행 → 우단 이어짐, 넘치면 다음 페이지
     {
@@ -320,8 +354,15 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
 
   const printPart = (label: string, ...sel: string[]) => setJob({ ...jobOf(label, sel), act: 'download' })
   const printAll = () => setJob({ ...jobOf('전체', ['문제지', '빠른정답', '정답해설', 'OMR']), act: 'print' })
-  const show: Record<'s' | 'q' | 'so' | 'o', boolean> = {
-    s: job ? job.s : true, q: job ? job.q : true, so: job ? job.so : true, o: job ? job.o : true,
+  // 「문제+정답」은 문제지와 겹치는 부라서, 아무것도 지정하지 않은 기본 화면에서는 감춘다.
+  // ?preview=문제+정답 이면 PDF 를 만들지 않고 화면으로만 보여준다(미리보기).
+  const preview = searchParams.get('preview')
+  const previewSel = preview ? preview.split(',').filter(p => p in PART_FLAG) : null
+  const previewJob = previewSel && previewSel.length > 0 ? jobOf('미리보기', previewSel) : null
+  const eff = job ?? previewJob
+  const show: Record<'s' | 'q' | 'so' | 'o' | 'sa', boolean> = {
+    s: eff ? eff.s : true, q: eff ? eff.q : true, so: eff ? eff.so : true, o: eff ? eff.o : true,
+    sa: eff ? eff.sa : false,
   }
 
   const fmtDate = (d: Date) =>
@@ -441,6 +482,13 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const solutionAt = (i: number) => (
     <SolutionBlock p={items[i]} idx={i} themeMain={theme.main} dims={dims} withBody={opts.solutionWithBody} />
   )
+  // 「문제+정답」 한 장 — 문제 바로 아래에 정답을 붙인다(선생님 대조용·자습용)
+  const probAnsAt = (i: number) => (
+    <>
+      {problemAt(i)}
+      <InlineAnswer p={items[i]} themeMain={theme.main} dims={dims} />
+    </>
+  )
 
   const header1 = (
     <PageHeader1 theme={theme.main} grade={ws.tags?.[0] || ws.grade} title={ws.title} subtitle={subtitle}
@@ -457,17 +505,18 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         </div>
       </div>
     )
-    if (pg.kind === 'cols' || pg.kind === 'socols') {
+    if (pg.kind === 'cols' || pg.kind === 'socols' || pg.kind === 'sacols') {
       const isS = pg.kind === 'cols'
-      const gap = isS ? S : G.soGap
+      const isSA = pg.kind === 'sacols'
+      const gap = isS || isSA ? S : G.soGap
       return (
         <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
           {pg.kind === 'cols' && pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
           <div style={{ position: 'relative', flex: 1, minHeight: 0, overflow: 'hidden' }}>
             {/* 중앙 세로 구분선 1pt #e7e7e7 — 기본 2단(문제지)에만, 해설지엔 없음 */}
-            {isS && <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: '#e7e7e7' }} />}
+            {(isS || isSA) && <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: '#e7e7e7' }} />}
             <div style={{ position: 'absolute', left: 0, top: 0, width: `${G.colW}mm` }}>
-              {pg.cols[0].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{isS ? problemAt(i) : solutionAt(i)}</div>)}
+              {pg.cols[0].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{isSA ? probAnsAt(i) : isS ? problemAt(i) : solutionAt(i)}</div>)}
             </div>
             <div style={{ position: 'absolute', right: 0, top: 0, width: `${G.colW}mm` }}>
               {pg.cols[1].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{isS ? problemAt(i) : solutionAt(i)}</div>)}
@@ -590,6 +639,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">📝 정답해설</button>
           <button onClick={() => printPart('OMR', 'OMR')} disabled={!ready}
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🅾 OMR</button>
+          <button onClick={() => printPart('문제+정답', '문제+정답')} disabled={!ready}
+            className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🧾 문제+정답</button>
         </div>
         <button onClick={printAll} disabled={!ready}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄</button>
@@ -628,6 +679,11 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           {items.map((_, i) => (
             <div key={`p${i}`} data-mk={`p${i}`} style={{ width: `${G.colW}mm` }}>
               {problemAt(i)}
+            </div>
+          ))}
+          {items.map((_, i) => (
+            <div key={`a${i}`} data-mk={`a${i}`} style={{ width: `${G.colW}mm` }}>
+              {probAnsAt(i)}
             </div>
           ))}
           {items.map((p, i) => (
@@ -733,6 +789,39 @@ export function SheetHeader({ ws, subtitle, dateText, count, theme }: {
         <span style={{ marginLeft: '6mm', color: '#000000' }}>이름 ________________</span>
       </div>
       <div style={{ marginTop: '4mm', borderTop: '1pt solid #f4f4f4' }} />
+    </div>
+  )
+}
+
+/* ── 「문제+정답」 한 장짜리용 인라인 정답 (문항 바로 아래 한 줄) ──
+   정답이 이미지(서술형·표)면 작게 얹고, 텍스트면 굵게. 없으면 「해설 참조」. */
+function InlineAnswer({ p, themeMain, dims }: { p: Problem; themeMain: string; dims?: Dims }) {
+  const a = (p.answer ?? '').trim()
+  const none = !a || ['.', '-'].includes(a)
+  return (
+    <div style={{
+      marginTop: '1.8mm', marginLeft: `${G.indent}mm`, paddingTop: '1.2mm',
+      borderTop: `1pt solid ${themeMain}22`, display: 'flex', alignItems: 'flex-start', gap: '2mm',
+    }}>
+      <span style={{ fontSize: '7.5pt', fontWeight: 800, color: themeMain, whiteSpace: 'nowrap', paddingTop: '0.4mm' }}>정답</span>
+      {none
+        ? <span style={{ fontSize: '9pt', color: '#9a9a9a' }}>해설 참조</span>
+        : isImageUrl(a)
+          ? <img src={a} alt="" style={scaledImgStyle(dims, a, G.probImgW * 0.55)}
+              /* 못 불러온 정답 이미지는 빈칸으로 남는다 — 안내로 바꾼다 */
+              onError={e => {
+                const el = e.currentTarget
+                el.style.display = 'none'
+                const tip = document.createElement('span')
+                tip.textContent = '해설 참조'
+                tip.style.cssText = 'font-size:9pt;color:#9a9a9a'
+                el.parentElement?.appendChild(tip)
+              }} />
+          : <span style={{ fontSize: '10pt', fontWeight: 700, lineHeight: 1.5 }}>
+              {p.kind === '객관식' && /^[1-5](\s*,\s*[1-5])*$/.test(a)
+                ? a.split(',').map(x => '①②③④⑤'[Number(x.trim()) - 1] ?? x.trim()).join(', ')
+                : <MathText text={a} />}
+            </span>}
     </div>
   )
 }

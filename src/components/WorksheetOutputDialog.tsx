@@ -9,7 +9,7 @@ import type { Worksheet } from '../types'
    - 실행 → WorksheetView로 이동(?out=…&mode=…&name=…) → 조판 완료 후 자동 window.print()
    ※ 매쓰플랫의 매수·양면·흑백·프린터 선택은 서버 인쇄 전제 → 우리는 브라우저 인쇄창이 담당 */
 
-export const OUTPUT_PARTS = ['문제지', '빠른정답', '정답해설', 'OMR'] as const
+export const OUTPUT_PARTS = ['문제지', '문제+정답', '빠른정답', '정답해설', 'OMR'] as const
 export type OutputPart = (typeof OUTPUT_PARTS)[number]
 
 export default function WorksheetOutputDialog({ mode, ws, extraWs, studentNames, onClose }: {
