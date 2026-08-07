@@ -55,9 +55,12 @@ export interface AiQuiz { question: string; choices: string[]; answerIndex: numb
 
 export async function requestAiQuiz(p: Problem, studentAnswer: string): Promise<AiQuiz> {
   const a = (p.answer ?? '').trim()
-  const r = await fetch('/api/ai-quiz', {
+  // 🔴 /api/ai-quiz 로 따로 두면 Vercel 함수가 12개 한도를 넘어 배포가 통째로 막힌다
+  //    (2026-08-07 실측) — ai-grade 에 mode:'quiz' 로 합쳐 부른다
+  const r = await fetch('/api/ai-grade', {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
+      mode: 'quiz',
       problemImageUrl: absUrl(p.imageUrl),
       problemText: !p.imageUrl && p.body ? p.body : undefined,
       answerText: a && !isImgUrl(a) && a !== '.' && a !== '-' ? a : undefined,

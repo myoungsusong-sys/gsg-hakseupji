@@ -17,6 +17,25 @@ const SYSTEM = `너는 한국 수학·과학 학원의 1차 채점관이다. 학
 {"verdict": true/false/null, "reason": "판정 근거", "confidence": "high"/"mid"/"low"}
 - verdict: 정답 true / 오답 false / 판정 불가(풀이·답 식별 불가 등) null.`
 
+// 확인용 객관식 만들기 (mode:'quiz') — 서술형을 틀린 학생이 정답을 빨간펜으로 적은 뒤
+// 바로 이해했는지 확인하는 5지선다. (명수쌤 2026-08-07)
+// 🔴 별도 엔드포인트로 두지 않는다 — Vercel 서버리스 함수는 12개가 한도라
+//    api/ai-quiz.ts 를 만들었더니 13개가 되어 배포가 통째로 막혔다 (2026-08-07 실측).
+const SYSTEM_QUIZ = `너는 한국 중·고등 수학·과학 학원의 문제 출제자다.
+학생이 방금 서술형 문제를 틀렸다. 학생이 정답을 제대로 이해했는지 30초 안에 확인할
+**5지선다 객관식 한 문제**를 만든다.
+
+원칙:
+- 원래 문제와 같은 개념·같은 수치를 묻는다. 새로운 개념이나 더 어려운 변형은 금지.
+- 정답은 원래 문제의 정답과 뜻이 같아야 한다.
+- 오답 4개는 학생이 흔히 하는 실수(부호 반대·계산 한 단계 누락·단위 혼동 등)에서 만든다.
+  터무니없는 보기는 넣지 않는다.
+- 보기는 짧게(각 30자 이내). 수식은 일반 텍스트로 쓴다(예: x^2, √3, 1/2).
+- 문항은 1~2문장. 존댓말.
+- 반드시 아래 JSON 한 줄로만 답한다(설명·코드블록 없이):
+{"question":"문항","choices":["것1","것2","것3","것4","것5"],"answerIndex":0,"why":"정답인 이유 한 문장"}
+- choices 는 정확히 5개, 번호를 붙이지 말고 내용만 쓴다. answerIndex 는 0~4.`
+
 function readBody(req: any): Promise<any> {
   if (req.body && typeof req.body === 'object') return Promise.resolve(req.body)
   return new Promise((resolve) => {
@@ -35,32 +54,42 @@ export default async function handler(req: any, res: any) {
   if (!key) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
 
   const {
+    mode,                                   // 'quiz' 면 확인용 객관식 만들기, 없으면 채점
     problemText, problemImageUrl,          // 문제 (텍스트 또는 이미지 URL — 과학은 이미지)
     answerText, answerImageUrl, solutionImageUrl,   // 정답 근거 (있는 것만)
     studentAnswer,                          // 학생이 고른/쓴 답 (①~⑤·단답)
     workImageBase64, workMediaType,         // 학생 풀이 이미지 (선택)
   } = await readBody(req)
 
-  if (!studentAnswer && !workImageBase64) { res.status(400).json({ error: '학생 답 또는 풀이 이미지가 필요합니다.' }); return }
+  const quiz = mode === 'quiz'
+  if (quiz) {
+    if (!problemText && !isHttp(problemImageUrl)) { res.status(400).json({ error: '문제가 필요합니다.' }); return }
+  } else if (!studentAnswer && !workImageBase64) {
+    res.status(400).json({ error: '학생 답 또는 풀이 이미지가 필요합니다.' }); return
+  }
 
   const content: any[] = []
   const push = (label: string, url: string) => content.push(
     { type: 'text', text: label },
     { type: 'image', source: { type: 'url', url } },
   )
-  if (isHttp(problemImageUrl)) push('[문제 이미지]', problemImageUrl)
-  if (problemText) content.push({ type: 'text', text: `[문제]\n${String(problemText).slice(0, 2000)}` })
-  if (answerText) content.push({ type: 'text', text: `[정답]\n${String(answerText).slice(0, 300)}` })
+  if (isHttp(problemImageUrl)) push(quiz ? '[원래 문제 이미지]' : '[문제 이미지]', problemImageUrl)
+  if (problemText) content.push({ type: 'text', text: `[${quiz ? '원래 문제' : '문제'}]\n${String(problemText).slice(0, 2000)}` })
+  if (answerText) content.push({ type: 'text', text: `[${quiz ? '원래 문제의 정답' : '정답'}]\n${String(answerText).slice(0, 300)}` })
   if (isHttp(answerImageUrl)) push('[정답 이미지]', answerImageUrl)
-  if (isHttp(solutionImageUrl)) push('[해설 이미지 — 정답 판정 기준]', solutionImageUrl)
-  if (studentAnswer) content.push({ type: 'text', text: `[학생이 제출한 답]\n${String(studentAnswer).slice(0, 300)}` })
-  if (workImageBase64) {
+  if (!quiz && isHttp(solutionImageUrl)) push('[해설 이미지 — 정답 판정 기준]', solutionImageUrl)
+  if (studentAnswer) content.push({ type: 'text', text: quiz
+    ? `[학생이 틀리게 쓴 답 — 오답 보기 만들 때 참고]\n${String(studentAnswer).slice(0, 300)}`
+    : `[학생이 제출한 답]\n${String(studentAnswer).slice(0, 300)}` })
+  if (!quiz && workImageBase64) {
     const media = OK_MEDIA.includes(workMediaType) ? workMediaType : 'image/jpeg'
     const data = String(workImageBase64).replace(/^data:[^,]+,/, '')
     content.push({ type: 'text', text: '[학생 풀이 이미지]' },
       { type: 'image', source: { type: 'base64', media_type: media as any, data } })
   }
-  content.push({ type: 'text', text: '위 자료로 지침대로 판정하고 JSON 한 줄로만 답하라.' })
+  content.push({ type: 'text', text: quiz
+    ? '위 자료로 확인용 5지선다 한 문제를 만들고 JSON 한 줄로만 답하라.'
+    : '위 자료로 지침대로 판정하고 JSON 한 줄로만 답하라.' })
 
   try {
     const client = new Anthropic({ apiKey: key })
@@ -68,13 +97,30 @@ export default async function handler(req: any, res: any) {
       // 🔴 Haiku 4.5 는 output_config.effort 를 지원하지 않는다 — 넣으면 400
       //    ("This model does not support the effort parameter." 2026-08-06 라이브 실측)
       model: 'claude-haiku-4-5',
-      max_tokens: 500,
-      system: SYSTEM,
+      max_tokens: quiz ? 700 : 500,
+      system: quiz ? SYSTEM_QUIZ : SYSTEM,
       messages: [{ role: 'user', content }],
     })
     const text = msg.content
       .filter((b): b is Anthropic.TextBlock => b.type === 'text')
       .map(b => b.text).join('').trim()
+    if (quiz) {
+      const q = text.match(/\{[\s\S]*\}/)
+      if (!q) { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
+      let j: any
+      try { j = JSON.parse(q[0]) } catch { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
+      const choices = Array.isArray(j.choices) ? j.choices.map((c: unknown) => String(c).slice(0, 80)) : []
+      const answerIndex = Number(j.answerIndex)
+      // 보기가 5개가 아니거나 정답 번호가 범위 밖이면 잘못된 문제를 학생에게 내지 않는다
+      if (choices.length !== 5 || !(answerIndex >= 0 && answerIndex <= 4)) {
+        res.status(502).json({ error: 'AI가 만든 보기가 올바르지 않습니다.' }); return
+      }
+      res.status(200).json({
+        question: String(j.question ?? '').slice(0, 400),
+        choices, answerIndex, why: String(j.why ?? '').slice(0, 300),
+      })
+      return
+    }
     let out: { verdict: boolean | null; reason: string; confidence: 'high' | 'mid' | 'low' } | null = null
     const m = text.match(/\{[\s\S]*\}/)
     if (m) {
