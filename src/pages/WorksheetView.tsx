@@ -108,7 +108,10 @@ function fillColumns(heights: number[], gap: number, ncols: number, availFor: (p
   return out
 }
 
-export default function WorksheetView() {
+// studentMode: 학생앱에서 자기 학습지를 PDF 로 받는 화면.
+// 선생님용 도구(수정·목록·부별 다운로드)는 숨기고 문제지만 내려받게 한다.
+// 🔴 선생님 라우트(/worksheet/:id)를 학생에게 열어 주면 안 된다 — 학생 전용 경로를 따로 둔다.
+export default function WorksheetView({ studentMode = false }: { studentMode?: boolean } = {}) {
   const { id } = useParams()
   const nav = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
@@ -562,6 +565,16 @@ export default function WorksheetView() {
           다른 화면(보고지 등)의 @page 12mm는 index.css 기본값 그대로 유지된다. */}
       <style>{`@page { size: A4; margin: 0; }`}</style>
 
+      {studentMode ? (
+        <div className="no-print mb-3 flex flex-wrap items-center gap-3">
+          <button onClick={() => nav('/student')} className="rounded-lg border border-line px-4 py-2 text-sm">← 돌아가기</button>
+          <div className="grow" />
+          <button onClick={() => printPart('문제지', '문제지')} disabled={!ready}
+            className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">
+            📄 학습지 PDF 받기
+          </button>
+        </div>
+      ) : (
       <div className="no-print mb-2 flex flex-wrap items-center gap-3">
         <button onClick={() => nav('/')} className="rounded-lg border border-line px-4 py-2 text-sm">← 목록</button>
         <button onClick={() => nav(`/make?edit=${ws.id}`)} className="rounded-lg border border-line px-4 py-2 text-sm hover:border-pine hover:text-pine">✏ 수정</button>
@@ -581,10 +594,13 @@ export default function WorksheetView() {
         <button onClick={printAll} disabled={!ready}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄</button>
       </div>
+      )}
+      {!studentMode && (
       <p className="no-print mb-6 text-[11px] text-ink2">
         버튼을 누르면 <b>PDF 파일로 만들어져</b> 저장(따로 다운로드) 또는 바로 인쇄창이 열립니다.
         PDF라서 어떤 프린터·브라우저에서도 화면 그대로, 여백·배율 설정과 무관하게 출력됩니다.
       </p>
+      )}
 
       {/* PDF 생성 중 오버레이 — 페이지 캡처 동안 화면 조작 방지 */}
       {making && (
@@ -791,9 +807,11 @@ function SolutionBlock({ p, idx, themeMain, dims, withBody }: {
       )}
       <div style={{ fontSize: '9pt', fontWeight: 800, color: '#777777', marginTop: '4mm' }}>해설</div>
       <div style={{ marginTop: '1.5mm' }}>
-        {isImageUrl(p.solution)
-          ? <img src={p.solution} alt="" style={scaledImgStyle(dims, p.solution, G.solImgW)} />
-          : <div style={{ fontSize: '9.5pt', lineHeight: 1.7 }}><MathText text={p.solution} /></div>}
+        {!p.solution
+          ? <div style={{ fontSize: '9.5pt', color: '#9a9a9a' }}>해설이 없는 문항입니다.</div>
+          : isImageUrl(p.solution)
+            ? <img src={p.solution} alt="" style={scaledImgStyle(dims, p.solution, G.solImgW)} />
+            : <div style={{ fontSize: '9.5pt', lineHeight: 1.7 }}><MathText text={p.solution} /></div>}
       </div>
     </div>
   )

@@ -105,6 +105,8 @@ function Gate() {
             <Route path="workbooks" element={<StudentWorkbooks />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
+            {/* 학생용 학습지 PDF — 선생님 화면을 열어 주지 않으려고 전용 경로를 둔다 */}
+            <Route path="print/:id" element={<WorksheetView studentMode />} />
             <Route path="*" element={<Navigate to="/student" replace />} />
           </Route>
 

@@ -6,8 +6,11 @@ function escapeHtml(s: string): string {
 }
 
 // "$...$" 구간만 KaTeX로, 나머지는 텍스트로 렌더링
+// 🔴 text 가 undefined 로 들어오면 화면 전체가 흰 화면이 된다 (2026-08-07 실측:
+//    해설이 없는 문항을 학습지에서 열자 WorksheetView 가 통째로 죽었다).
+//    데이터가 어떻든 화면은 살아 있어야 한다 — 빈 값으로 받아 넘긴다.
 export function mathToHtml(text: string): string {
-  const parts = text.split(/(\$[^$]+\$)/g)
+  const parts = String(text ?? '').split(/(\$[^$]+\$)/g)
   return parts.map(part => {
     if (part.startsWith('$') && part.endsWith('$')) {
       try {
@@ -26,7 +29,8 @@ export function isImageUrl(s: string): boolean {
   return typeof s === 'string' && /^(https?:\/\/\S+|\/\S+)\.(png|jpe?g|gif|webp)(\?|$)/i.test(s)
 }
 
-export default function MathText({ text, className }: { text: string; className?: string }) {
+export default function MathText({ text, className }: { text?: string | null; className?: string }) {
+  if (!text) return null
   if (isImageUrl(text)) {
     return <img src={text} alt="" className={className ? className + ' max-w-full' : 'max-w-full'} />
   }

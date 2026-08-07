@@ -310,6 +310,9 @@ export interface Assignment {
   studentId: string
   date: string           // ISO
   kind: '수업' | '숙제'
+  // 이 학습지에 한해 학생에게 무엇을 보여줄지. 지정하지 않으면 전역 설정(StudentAppConfig)을 따른다.
+  // 「문제만 내보내기」가 가능하다 — 정답·해설을 각각 끌 수 있다.
+  reveal?: { answer?: boolean; solution?: boolean }
 }
 
 // 오늘의 학습 — 학생별 자동 출제 설정 (hj_settings 'dailyConfigs')

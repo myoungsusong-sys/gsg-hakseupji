@@ -708,12 +708,14 @@ export default function WorksheetList({ view }: { view: View }) {
           // 학습지 하나를 다룰 때만 '이미 출제된 학생'을 미리 담아 준다.
           // (여러 개 일괄 출제는 학습지마다 대상이 달라 미리 담을 기준이 없다 — 더하기만 한다)
           initial={assignTarget.length === 1 ? [...(assignedByWs.get(assignTarget[0]) ?? [])] : []}
+          initialReveal={assignTarget.length === 1
+            ? assignments.find(a => a.worksheetId === assignTarget[0])?.reveal : undefined}
           onClose={() => setAssignTarget(null)}
-          onSubmit={(ids, kind) => {
+          onSubmit={(ids, kind, reveal) => {
             // 단일 학습지 = 다이얼로그의 선택이 곧 대상 전체(⊖ 로 뺀 학생은 출제 취소)
             // 여러 개 일괄 출제 = 미리 담을 기준이 없으니 더하기만 한다
-            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind)
-            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind)
+            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind, reveal)
+            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind, reveal)
             setAssignTarget(null)
             setChecked(new Set())
           }}
@@ -801,14 +803,18 @@ function ToggleRow({ label, on, onToggle }: { label: string; on: boolean; onTogg
    · 학년 표기가 '중2' 와 '중2-1' 두 가지라 앞 두 글자로 묶는다. */
 const gradeGroupOf = (g: string) => (g || '기타').slice(0, 2)
 
-function AssignModal({ title, students, initial, onClose, onSubmit }: {
+function AssignModal({ title, students, initial, initialReveal, onClose, onSubmit }: {
   title: string
   students: Student[]
   initial: string[]                       // 이미 출제된 학생 id
+  initialReveal?: Assignment['reveal']    // 이 학습지의 현재 공개 설정
   onClose: () => void
-  onSubmit: (studentIds: string[], kind: Assignment['kind']) => void
+  onSubmit: (studentIds: string[], kind: Assignment['kind'], reveal: Assignment['reveal']) => void
 }) {
   const [kind, setKind] = useState<Assignment['kind']>('수업')
+  // 학생에게 무엇을 내보낼지 — 끄면 그 학습지에서는 학생이 못 본다(문제만 내보내기)
+  const [showAns, setShowAns] = useState(initialReveal?.answer !== false)
+  const [showSol, setShowSol] = useState(initialReveal?.solution !== false)
   const [sel, setSel] = useState<Set<string>>(() => new Set(initial))
   const [q, setQ] = useState('')
   const [openGrades, setOpenGrades] = useState<Set<string>>(new Set())
@@ -934,12 +940,28 @@ function AssignModal({ title, students, initial, onClose, onSubmit }: {
           </div>
         )}
 
+        {/* 학생에게 공개 — 끄면 그 학습지에서는 문제만 보인다 */}
+        <div className="mt-3 flex flex-wrap items-center gap-4 rounded-xl bg-paper2/60 px-3 py-2.5 text-sm">
+          <b className="text-xs text-ink2">학생에게 공개</b>
+          <label className="flex cursor-pointer items-center gap-1.5">
+            <input type="checkbox" className="h-4 w-4 accent-pine" checked={showAns} onChange={e => setShowAns(e.target.checked)} />
+            정답
+          </label>
+          <label className="flex cursor-pointer items-center gap-1.5">
+            <input type="checkbox" className="h-4 w-4 accent-pine" checked={showSol} onChange={e => setShowSol(e.target.checked)} />
+            해설
+          </label>
+          <span className="text-[11px] text-ink2">
+            {showAns || showSol ? '제출 후 학생 화면에 보입니다.' : '문제만 나갑니다 — 정답·해설 모두 숨김.'}
+          </span>
+        </div>
+
         <div className="mt-4 flex items-center justify-end gap-2">
           {initial.length > 0 && (
             <span className="mr-auto text-xs text-ink2">이미 출제된 학생은 담겨 있어요 — ＋/－ 로 더하거나 뺄 수 있습니다.</span>
           )}
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
-          <button onClick={() => onSubmit([...sel], kind)}
+          <button onClick={() => onSubmit([...sel], kind, { answer: showAns, solution: showSol })}
             className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">
             선택 완료 ({sel.size}명)
           </button>

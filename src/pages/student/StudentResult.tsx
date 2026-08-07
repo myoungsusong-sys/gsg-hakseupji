@@ -18,7 +18,16 @@ import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, O
 export default function StudentResult() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, gradings, problems, ensureCourse, studentAppConfig: cfg } = useStore()
+  const { worksheets, gradings, problems, ensureCourse, studentAppConfig: gcfg, assignments } = useStore()
+  // 학습지별 공개 설정(출제할 때 고른 것)이 있으면 그게 우선이다 — 「문제만 내보내기」
+  const asgReveal = assignments.find(a => a.worksheetId === wsId && a.studentId === me.id)?.reveal
+  const cfg = {
+    ...gcfg,
+    showAnswer: asgReveal?.answer === false ? false : gcfg.showAnswer,
+    showSolution: asgReveal?.solution === false ? false : gcfg.showSolution,
+    showAnswerBefore: asgReveal?.answer === false ? false : gcfg.showAnswerBefore,
+    showSolutionBefore: asgReveal?.solution === false ? false : gcfg.showSolutionBefore,
+  }
   const nav = useNavigate()
   const supplement = useSupplement(me)
 

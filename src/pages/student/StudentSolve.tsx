@@ -60,12 +60,21 @@ interface Stroke { color: string; size: number; erase?: boolean; pts: [number, n
 export default function StudentSolve() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, assignments, problems, ensureCourse, upsertGrading, studentAppConfig: cfg } = useStore()
+  const { worksheets, assignments, problems, ensureCourse, upsertGrading, studentAppConfig: gcfg } = useStore()
   const nav = useNavigate()
   const [openSolution, setOpenSolution] = useState<Set<string>>(new Set())
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
 
   const ws = worksheets.find(w => w.id === wsId && !w.deletedAt)
+  // 학습지별 공개 설정(출제할 때 고른 것)이 전역 설정보다 우선한다 — 「문제만 내보내기」
+  const asgReveal = assignments.find(a => a.worksheetId === wsId && a.studentId === me.id)?.reveal
+  const cfg = {
+    ...gcfg,
+    showAnswer: asgReveal?.answer === false ? false : gcfg.showAnswer,
+    showSolution: asgReveal?.solution === false ? false : gcfg.showSolution,
+    showAnswerBefore: asgReveal?.answer === false ? false : gcfg.showAnswerBefore,
+    showSolutionBefore: asgReveal?.solution === false ? false : gcfg.showSolutionBefore,
+  }
   const mine = !!ws && assignments.some(a => a.worksheetId === ws.id && a.studentId === me.id)
 
   useEffect(() => {
@@ -472,6 +481,9 @@ export default function StudentSolve() {
         <button onClick={() => nav('/student/worksheets')}
           className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">←</button>
         <h1 className="grow text-center text-lg font-black">{ws.title}</h1>
+        {/* 학습지를 종이로 받고 싶을 때 — 문제만 담긴 PDF */}
+        <button onClick={() => nav(`/student/print/${ws.id}`)} title="학습지를 PDF 로 받기"
+          className="rounded-lg border border-line px-3 py-2 text-sm font-bold text-ink2 hover:text-ink">📄 PDF</button>
         <button onClick={() => setQuick(true)}
           className="rounded-lg border border-line px-3 py-2 text-sm font-bold text-ink2 hover:text-ink">
           ≡ 빠른채점
@@ -720,7 +732,7 @@ export default function StudentSolve() {
             <div className="grow-0" />
             {!isMachineGradable(p) ? (
               /* 서술형 등 기계채점 불가 — 모범답안 열람 후 스스로 ○/✕/? (자기채점) */
-              <WsSelfCheck key={p.id} p={p} value={cur}
+              <WsSelfCheck key={p.id} p={p} value={cur} showAnswer={cfg.showAnswer !== false}
                 ai={aiMarks[p.id]} onGraded={m => setAiMarks(s => ({ ...s, [p.id]: m }))}
                 onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')}
                 onText={t => setAnswer(p.id, t)} />
@@ -783,7 +795,7 @@ export default function StudentSolve() {
                   <div key={q.id} className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 p-3">
                     <b className="w-10 text-sm text-pine-dark">{i + 1}번</b>
                     {!isMachineGradable(q) ? (
-                      <WsSelfCheck key={q.id} p={q} value={answers[q.id] ?? ''}
+                      <WsSelfCheck key={q.id} p={q} value={answers[q.id] ?? ''} showAnswer={cfg.showAnswer !== false}
                         ai={aiMarks[q.id]} onGraded={m => setAiMarks(s => ({ ...s, [q.id]: m }))}
                         onMark={m => setAnswer(q.id, m ? SELF_PREFIX + m : '')}
                         onText={t => setAnswer(q.id, t)} />
@@ -903,15 +915,16 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
 // 자기채점 (서술형 등 기계채점 불가 문항) — 공책·필기로 풀고, 모범답안을 연 뒤 스스로 ○/✕/? 표시.
 // 정답을 먼저 보고 베끼는 걸 막으려고 [다 풀었어요]를 눌러야 모범답안이 열린다 (교재 탭과 동일).
 // key={p.id} 로 마운트해 문항 이동 시 열람 상태가 리셋된다.
-function WsSelfCheck({ p, value, onMark, onText, ai, onGraded }: {
+function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true }: {
   p: Problem; value: string; onMark: (m: SelfMark | null) => void; onText: (t: string) => void
   ai?: AiMark; onGraded?: (m: AiMark) => void
+  showAnswer?: boolean          // 선생님이 이 학습지에서 정답 공개를 껐으면 모범답안을 감춘다
 }) {
   const [revealed, setRevealed] = useState(false)
   const mark = selfMarkOf(value)
   const typed = mark ? '' : value            // 같은 칸을 쓰므로 둘 중 하나만 존재한다
   const a = (p.answer ?? '').trim()
-  const hasAnswer = !!a && !['.', '-'].includes(a)
+  const hasAnswer = showAnswer && !!a && !['.', '-'].includes(a)
   // AI 채점을 받았으면 정답은 이미 공개됐다 — 다시 [다 풀었어요]를 누를 필요가 없다
   const open = revealed || !!mark || !!ai
   const [showSol, setShowSol] = useState(false)
@@ -1002,7 +1015,7 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded }: {
       {!open ? (
         <button type="button" onClick={() => setRevealed(true)}
           className="w-fit rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">
-          다 풀었어요 — {hasAnswer ? '모범답안 보기' : '해설 보기'}
+          다 풀었어요 — {hasAnswer ? '모범답안 보기' : showAnswer ? '해설 보기' : '확인하기'}
         </button>
       ) : (
         <div className="grid gap-2">
@@ -1020,7 +1033,11 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded }: {
                     className="w-fit rounded-lg border border-line px-3 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2">해설 이미지 열기</button>}
             </div>
           ) : (
-            <span className="text-[11px] text-ink2">앱에 정답이 없는 문항이에요 — 선생님과 함께 확인해요.</span>
+            <span className="text-[11px] text-ink2">
+              {!showAnswer && !!a && !['.', '-'].includes(a)
+                ? '이 학습지는 선생님이 정답을 공개하지 않았어요 — 제출하면 채점 결과를 볼 수 있어요.'
+                : '앱에 정답이 없는 문항이에요 — 선생님과 함께 확인해요.'}
+            </span>
           )}
           {/* AI가 채점한 문항은 자기표시를 겹쳐 받지 않는다 — 둘이 어긋나면 통계가 꼬인다 */}
           {!ai && (
