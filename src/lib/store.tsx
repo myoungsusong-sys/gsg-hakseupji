@@ -105,6 +105,7 @@ interface Store extends Persisted {
   updateTeacher: (id: string, patch: Partial<Teacher>) => void
   removeTeacher: (id: string) => void
   addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
+  syncAssignments: (worksheetId: string, studentIds: string[], kind?: Assignment['kind']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
@@ -466,6 +467,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind }))
       if (fresh.length === 0) return
       const next = [...stateRef.current.assignments, ...fresh]
+      set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+    },
+    // 출제 다이얼로그 「선택 완료」 — 이 학습지를 받는 학생을 통째로 맞춘다.
+    // 🔴 add/remove 를 연달아 부르면 안 된다. stateRef 는 렌더 뒤에야 갱신돼서
+    //    두 번째 호출이 첫 번째의 결과를 지운다 (2026-08-07 실측). 한 번에 계산한다.
+    syncAssignments: (worksheetId, studentIds, kind = '수업') => {
+      const keep = new Set(studentIds)
+      const now = new Date().toISOString()
+      const kept = stateRef.current.assignments.filter(a =>
+        a.worksheetId !== worksheetId || keep.has(a.studentId))
+      const has = new Set(kept.filter(a => a.worksheetId === worksheetId && a.kind === kind).map(a => a.studentId))
+      const fresh: Assignment[] = studentIds.filter(sid => !has.has(sid))
+        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind }))
+      const next = [...kept, ...fresh]
       set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
     },
     removeAssignment: (worksheetId, studentId, kind) => {

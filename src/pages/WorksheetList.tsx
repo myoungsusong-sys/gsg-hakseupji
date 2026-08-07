@@ -48,7 +48,7 @@ export default function WorksheetList({ view }: { view: View }) {
     worksheets, problems, favorites, myLists, toggleFavorite,
     trashWorksheet, restoreWorksheet, purgeWorksheet, duplicateWorksheet,
     addList, renameList, removeList, setWorksheetLists,
-    students, assignments, addAssignment,
+    students, assignments, addAssignment, syncAssignments,
     saveWorksheet, updateWorksheet, addMyBook, academyProfile,
   } = store
   const [subject] = useSubject()
@@ -561,11 +561,15 @@ export default function WorksheetList({ view }: { view: View }) {
                             className="rounded-lg border border-line px-2.5 py-1.5 text-blue-600 hover:border-blue-500 hover:bg-blue-50">⬇</button>
                         </td>
                         <td className="whitespace-nowrap px-3 py-3 text-center">
+                          {/* 🔴 출제된 뒤에도 눌러서 학생을 더하거나 뺄 수 있어야 한다.
+                              전에는 이름만 텍스트로 찍혀 추가 출제할 방법이 없었다 (2026-08-07) */}
                           {assignedNames.length > 0 ? (
-                            <span className="text-xs font-semibold text-pine-dark">
+                            <button onClick={() => view === 'active' && setAssignTarget([w.id])}
+                              disabled={view !== 'active'} title="출제 학생 바꾸기"
+                              className="rounded-lg border border-pine/40 px-2.5 py-1.5 text-xs font-semibold text-pine-dark hover:bg-pine-soft disabled:cursor-default disabled:border-transparent disabled:hover:bg-transparent">
                               {assignedNames.slice(0, 3).join(', ')}
                               {assignedNames.length > 3 && ` 외 ${assignedNames.length - 3}명`}
-                            </span>
+                            </button>
                           ) : view === 'active' ? (
                             <button onClick={() => setAssignTarget([w.id])}
                               className="rounded-lg bg-pine px-3 py-1.5 text-xs font-semibold text-paper hover:bg-pine-dark">
@@ -701,9 +705,15 @@ export default function WorksheetList({ view }: { view: View }) {
             ? `「${worksheets.find(w => w.id === assignTarget[0])?.title ?? ''}」`
             : `학습지 ${assignTarget.length}개`}
           students={students.filter(s => s.active)}
+          // 학습지 하나를 다룰 때만 '이미 출제된 학생'을 미리 담아 준다.
+          // (여러 개 일괄 출제는 학습지마다 대상이 달라 미리 담을 기준이 없다 — 더하기만 한다)
+          initial={assignTarget.length === 1 ? [...(assignedByWs.get(assignTarget[0]) ?? [])] : []}
           onClose={() => setAssignTarget(null)}
           onSubmit={(ids, kind) => {
-            assignTarget.forEach(wsId => addAssignment(wsId, ids, kind))
+            // 단일 학습지 = 다이얼로그의 선택이 곧 대상 전체(⊖ 로 뺀 학생은 출제 취소)
+            // 여러 개 일괄 출제 = 미리 담을 기준이 없으니 더하기만 한다
+            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind)
+            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind)
             setAssignTarget(null)
             setChecked(new Set())
           }}
@@ -782,22 +792,65 @@ function ToggleRow({ label, on, onToggle }: { label: string; on: boolean; onTogg
   )
 }
 
-function AssignModal({ title, students, onClose, onSubmit }: {
+/* ── 학습지 출제하기 (참고 서비스의 2단 학생 선택기와 같은 구성) ──────────────
+   좌: 이름 검색 + **학년별 접이식 목록**(학년 통째로 ⊕ / 학생 개별 ⊕)
+   우: **선택된 학생 N명** — 학년별로 묶어 보여주고 ⊖ 로 뺀다
+   · 이미 출제된 학생은 처음부터 선택된 상태로 들어온다 → ⊖ 로 빼면 출제가 취소된다.
+     (전에는 한 명이라도 출제되면 목록에서 [출제하기] 버튼이 사라져 **다른 학생에게 추가로
+      낼 방법이 아예 없었다** — 2026-08-07 명수쌤 지적)
+   · 학년 표기가 '중2' 와 '중2-1' 두 가지라 앞 두 글자로 묶는다. */
+const gradeGroupOf = (g: string) => (g || '기타').slice(0, 2)
+
+function AssignModal({ title, students, initial, onClose, onSubmit }: {
   title: string
   students: Student[]
+  initial: string[]                       // 이미 출제된 학생 id
   onClose: () => void
   onSubmit: (studentIds: string[], kind: Assignment['kind']) => void
 }) {
   const [kind, setKind] = useState<Assignment['kind']>('수업')
-  const [sel, setSel] = useState<Set<string>>(new Set())
-  const allOn = students.length > 0 && students.every(s => sel.has(s.id))
+  const [sel, setSel] = useState<Set<string>>(() => new Set(initial))
+  const [q, setQ] = useState('')
+  const [openGrades, setOpenGrades] = useState<Set<string>>(new Set())
+
+  const byId = useMemo(() => new Map(students.map(s => [s.id, s])), [students])
+  // 좌측 목록 — 검색어로 거르고 학년별로 묶는다 (검색 중엔 전부 펼친다)
+  const groups = useMemo(() => {
+    const kw = q.trim().toLowerCase()
+    const hit = kw ? students.filter(s => s.name.toLowerCase().includes(kw)) : students
+    const m = new Map<string, Student[]>()
+    for (const s of hit) {
+      const g = gradeGroupOf(s.grade)
+      m.set(g, [...(m.get(g) ?? []), s])
+    }
+    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ko'))
+  }, [students, q])
+
+  // 우측 '선택된 학생' — 학년별로 묶어 보여준다
+  const picked = useMemo(() => {
+    const m = new Map<string, Student[]>()
+    for (const id of sel) {
+      const s = byId.get(id); if (!s) continue
+      const g = gradeGroupOf(s.grade)
+      m.set(g, [...(m.get(g) ?? []), s])
+    }
+    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ko'))
+  }, [sel, byId])
+
+  const add = (ids: string[]) => setSel(p => { const n = new Set(p); ids.forEach(i => n.add(i)); return n })
+  const drop = (ids: string[]) => setSel(p => { const n = new Set(p); ids.forEach(i => n.delete(i)); return n })
 
   return (
     <div className="fixed inset-0 z-30 flex items-center justify-center bg-ink/40 p-6" onClick={onClose}>
-      <div className="w-full max-w-md rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
-        <h3 className="mb-1 font-bold">출제하기</h3>
-        <p className="mb-4 text-sm text-ink2">{title}를 출제할 학생을 선택하세요.</p>
-        <div className="mb-4 flex gap-2">
+      <div className="flex max-h-[85vh] w-full max-w-3xl flex-col rounded-2xl bg-white p-6" onClick={e => e.stopPropagation()}>
+        <div className="mb-4 flex items-baseline gap-2">
+          <h3 className="text-base font-black">학습지 출제하기</h3>
+          <span className="min-w-0 truncate text-sm font-semibold text-ink2">{title}</span>
+          <div className="grow" />
+          <button onClick={onClose} className="rounded-lg px-2 text-lg text-ink2 hover:bg-paper2">✕</button>
+        </div>
+
+        <div className="mb-3 flex gap-2">
           {([['수업', '수업으로 출제'], ['숙제', '숙제로 출제']] as const).map(([k, label]) => (
             <button key={k} onClick={() => setKind(k)}
               className={`grow rounded-lg border px-4 py-2 text-sm font-semibold ${kind === k ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2'}`}>
@@ -805,39 +858,90 @@ function AssignModal({ title, students, onClose, onSubmit }: {
             </button>
           ))}
         </div>
+
         {students.length === 0 ? (
-          <div className="mb-3 rounded-xl border border-dashed border-line p-6 text-center text-sm text-ink2">
+          <div className="rounded-xl border border-dashed border-line p-8 text-center text-sm text-ink2">
             활성 학생이 없습니다. 학생 관리에서 학생을 먼저 등록하세요.
           </div>
         ) : (
-          <>
-            <label className="mb-2 flex cursor-pointer items-center gap-2 text-sm font-semibold">
-              <input type="checkbox" checked={allOn} className="h-4 w-4 accent-pine"
-                onChange={e => setSel(e.target.checked ? new Set(students.map(s => s.id)) : new Set())} />
-              전체 선택 ({students.length}명)
-            </label>
-            <div className="grid max-h-64 gap-2 overflow-auto">
-              {students.map(s => {
-                const on = sel.has(s.id)
-                return (
-                  <label key={s.id} className={`flex cursor-pointer items-center gap-2 rounded-xl border p-3 text-sm ${on ? 'border-pine bg-pine-soft/40' : 'border-line'}`}>
-                    <input type="checkbox" checked={on} className="h-4 w-4 accent-pine"
-                      onChange={() => setSel(prev => {
-                        const n = new Set(prev); if (n.has(s.id)) n.delete(s.id); else n.add(s.id); return n
-                      })} />
-                    <b>{s.name}</b>
-                    <span className="text-xs text-ink2">{s.grade}{s.klass ? ` · ${s.klass}` : ''}</span>
-                  </label>
-                )
-              })}
+          <div className="grid min-h-0 grow gap-3 sm:grid-cols-2">
+            {/* 좌 — 학년별 목록 */}
+            <div className="flex min-h-0 flex-col rounded-xl border border-line">
+              <div className="border-b border-line p-2">
+                <input value={q} onChange={e => setQ(e.target.value)} placeholder="🔍 학생 이름 검색"
+                  className="w-full rounded-lg border border-line px-3 py-2 text-sm outline-none focus:border-pine" />
+              </div>
+              <div className="min-h-0 grow overflow-y-auto p-1">
+                {groups.map(([g, list]) => {
+                  const open = q.trim() ? true : openGrades.has(g)
+                  const rest = list.filter(s => !sel.has(s.id))
+                  return (
+                    <div key={g}>
+                      <div className="flex items-center gap-1 rounded-lg px-2 py-2 hover:bg-paper2">
+                        <button onClick={() => setOpenGrades(p => { const n = new Set(p); n.has(g) ? n.delete(g) : n.add(g); return n })}
+                          className="flex grow items-center gap-2 text-left text-sm font-bold">
+                          <span className="text-ink2">{open ? '▾' : '▸'}</span>{g}
+                          <span className="text-xs font-semibold text-ink2">{list.length}명</span>
+                        </button>
+                        <button onClick={() => add(list.map(s => s.id))} disabled={rest.length === 0}
+                          title="이 학년 전체 추가"
+                          className="h-6 w-6 shrink-0 rounded-full bg-pine text-sm font-bold text-paper disabled:opacity-25">＋</button>
+                      </div>
+                      {open && list.map(s => {
+                        const on = sel.has(s.id)
+                        return (
+                          <div key={s.id} className="flex items-center gap-1 rounded-lg py-1.5 pl-6 pr-2 hover:bg-paper2">
+                            <span className={`grow text-sm ${on ? 'text-ink2 line-through' : ''}`}>
+                              {s.name}{s.klass && <span className="ml-1 text-xs text-ink2">{s.klass}</span>}
+                            </span>
+                            <button onClick={() => add([s.id])} disabled={on} title="추가"
+                              className="h-6 w-6 shrink-0 rounded-full bg-pine text-sm font-bold text-paper disabled:opacity-25">＋</button>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )
+                })}
+                {groups.length === 0 && <p className="p-6 text-center text-sm text-ink2">찾는 학생이 없어요.</p>}
+              </div>
             </div>
-          </>
+
+            {/* 우 — 선택된 학생 */}
+            <div className="flex min-h-0 flex-col rounded-xl border border-line">
+              <div className="border-b border-line px-3 py-3 text-sm font-bold">
+                선택된 학생 <span className="text-pine-dark">{sel.size}명</span>
+              </div>
+              <div className="min-h-0 grow overflow-y-auto p-1">
+                {picked.map(([g, list]) => (
+                  <div key={g}>
+                    <div className="flex items-center gap-1 rounded-lg px-2 py-2">
+                      <span className="grow text-sm font-bold">{g} <span className="text-xs font-semibold text-ink2">{list.length}명</span></span>
+                      <button onClick={() => drop(list.map(s => s.id))} title="이 학년 전체 빼기"
+                        className="h-6 w-6 shrink-0 rounded-full border border-line text-sm font-bold text-ink2 hover:border-clay hover:text-clay">－</button>
+                    </div>
+                    {list.map(s => (
+                      <div key={s.id} className="flex items-center gap-1 rounded-lg py-1.5 pl-6 pr-2 hover:bg-paper2">
+                        <span className="grow text-sm">{s.name}</span>
+                        <button onClick={() => drop([s.id])} title="빼기"
+                          className="h-6 w-6 shrink-0 rounded-full border border-line text-sm font-bold text-ink2 hover:border-clay hover:text-clay">－</button>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                {sel.size === 0 && <p className="p-6 text-center text-sm text-ink2">왼쪽에서 ＋ 를 눌러 학생을 담으세요.</p>}
+              </div>
+            </div>
+          </div>
         )}
-        <div className="mt-4 flex justify-end gap-2">
+
+        <div className="mt-4 flex items-center justify-end gap-2">
+          {initial.length > 0 && (
+            <span className="mr-auto text-xs text-ink2">이미 출제된 학생은 담겨 있어요 — ＋/－ 로 더하거나 뺄 수 있습니다.</span>
+          )}
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
-          <button disabled={sel.size === 0} onClick={() => onSubmit([...sel], kind)}
-            className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">
-            출제하기 ({sel.size}명)
+          <button onClick={() => onSubmit([...sel], kind)}
+            className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">
+            선택 완료 ({sel.size}명)
           </button>
         </div>
       </div>
