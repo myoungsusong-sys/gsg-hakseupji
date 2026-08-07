@@ -2,7 +2,16 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Grading, Problem } from '../../types'
 import { useStore, uid } from '../../lib/store'
-import { isMachineGradable, requestAiGrade } from '../../lib/aiGrade'
+import { isMachineGradable, requestAiGrade, requestAiQuiz, type AiQuiz } from '../../lib/aiGrade'
+
+// 서술형 즉시채점 결과 — AI 판정 + 확인용 객관식을 맞혔는지
+export interface AiMark {
+  verdict: boolean | null
+  reason: string
+  confidence: 'high' | 'mid' | 'low'
+  at: string
+  quizOk?: boolean          // 틀린 뒤 확인용 객관식을 맞혔으면 true
+}
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
@@ -91,6 +100,9 @@ export default function StudentSolve() {
   // 답을 넣으면 멈추고(그 값이 '푸는 데 걸린 시간'), 답을 지우면 이어서 다시 간다.
   // 탭을 벗어나 있는 동안은 세지 않는다(딴짓 시간이 섞이지 않게).
   const [secs, setSecs] = useState<Record<string, number>>({})   // 문항 id → 누적 초
+  // 🤖 서술형 즉시채점 결과 (문항 id → AI 판정 + 확인용 객관식 통과 여부)
+  // 학생이 답을 쓰고 그 자리에서 채점받으므로, 제출할 때 AI를 다시 부르지 않는다 (명수쌤 2026-08-07)
+  const [aiMarks, setAiMarks] = useState<Record<string, AiMark>>({})
   const [, setTick] = useState(0)                                // 1초마다 리렌더(값 자체는 미사용)
   const runStart = useRef<number | null>(null)                   // 현재 구간 시작(ms)
   const runPid = useRef<string | null>(null)
@@ -362,7 +374,10 @@ export default function StudentSolve() {
         let workImg: string | undefined
         try { workImg = await exportWork(q, inks[q.id] ?? []) } catch { /* 필기 없이 저장 */ }
         let ai: GradeResult['ai']
-        try {
+        // 학생이 문항에서 이미 [AI 채점받기]를 눌렀으면 그 판정을 쓴다 — 같은 답으로 두 번 부르지 않는다
+        const done = aiMarks[q.id]
+        if (done) ai = { verdict: done.verdict, reason: done.reason, confidence: done.confidence, at: done.at }
+        else try {
           const v = await requestAiGrade(q, a, workImg)
           ai = { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() }
         } catch { /* AI 실패 — 판정 없이 선생님 승인 대기로 */ }
@@ -706,6 +721,7 @@ export default function StudentSolve() {
             {!isMachineGradable(p) ? (
               /* 서술형 등 기계채점 불가 — 모범답안 열람 후 스스로 ○/✕/? (자기채점) */
               <WsSelfCheck key={p.id} p={p} value={cur}
+                ai={aiMarks[p.id]} onGraded={m => setAiMarks(s => ({ ...s, [p.id]: m }))}
                 onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')}
                 onText={t => setAnswer(p.id, t)} />
             ) : p.kind === '객관식' ? (
@@ -768,6 +784,7 @@ export default function StudentSolve() {
                     <b className="w-10 text-sm text-pine-dark">{i + 1}번</b>
                     {!isMachineGradable(q) ? (
                       <WsSelfCheck key={q.id} p={q} value={answers[q.id] ?? ''}
+                        ai={aiMarks[q.id]} onGraded={m => setAiMarks(s => ({ ...s, [q.id]: m }))}
                         onMark={m => setAnswer(q.id, m ? SELF_PREFIX + m : '')}
                         onText={t => setAnswer(q.id, t)} />
                     ) : (
@@ -886,16 +903,50 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
 // 자기채점 (서술형 등 기계채점 불가 문항) — 공책·필기로 풀고, 모범답안을 연 뒤 스스로 ○/✕/? 표시.
 // 정답을 먼저 보고 베끼는 걸 막으려고 [다 풀었어요]를 눌러야 모범답안이 열린다 (교재 탭과 동일).
 // key={p.id} 로 마운트해 문항 이동 시 열람 상태가 리셋된다.
-function WsSelfCheck({ p, value, onMark, onText }: {
+function WsSelfCheck({ p, value, onMark, onText, ai, onGraded }: {
   p: Problem; value: string; onMark: (m: SelfMark | null) => void; onText: (t: string) => void
+  ai?: AiMark; onGraded?: (m: AiMark) => void
 }) {
   const [revealed, setRevealed] = useState(false)
   const mark = selfMarkOf(value)
   const typed = mark ? '' : value            // 같은 칸을 쓰므로 둘 중 하나만 존재한다
-  const open = revealed || !!mark            // 이미 표시한 문항은 다시 와도 열린 상태
   const a = (p.answer ?? '').trim()
   const hasAnswer = !!a && !['.', '-'].includes(a)
+  // AI 채점을 받았으면 정답은 이미 공개됐다 — 다시 [다 풀었어요]를 누를 필요가 없다
+  const open = revealed || !!mark || !!ai
   const [showSol, setShowSol] = useState(false)
+  const [grading, setGrading] = useState(false)
+  const [err, setErr] = useState('')
+  const [quiz, setQuiz] = useState<AiQuiz | null>(null)
+  const [quizOpen, setQuizOpen] = useState(false)
+  const [quizLoading, setQuizLoading] = useState(false)
+
+  // 🤖 [AI 채점받기] — 학생이 쓴 답을 그 자리에서 채점하고 정답을 공개한다.
+  //    틀렸으면 확인용 객관식까지 이어서 띄운다 (맞았으면 만들지 않는다 — 토큰을 아낀다)
+  async function gradeNow() {
+    const t = typed.trim()
+    if (!t || grading) return
+    setGrading(true); setErr('')
+    try {
+      const v = await requestAiGrade(p, t)
+      const m: AiMark = { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() }
+      onGraded?.(m)
+      setRevealed(true)
+      if (v.verdict === false) await openQuiz()
+    } catch (e) {
+      setErr(e instanceof Error && /402/.test(e.message) ? 'AI 크레딧이 부족해요. 선생님께 알려주세요.' : 'AI 채점이 안 됐어요. 잠시 뒤 다시 눌러주세요.')
+    } finally { setGrading(false) }
+  }
+
+  // 확인용 객관식 열기 — 아직 안 만들었으면 그때 만든다(만들기 실패해도 팝업에서 다시 시도할 수 있다)
+  async function openQuiz() {
+    setQuizOpen(true)
+    if (quiz || quizLoading) return
+    setQuizLoading(true)
+    try { setQuiz(await requestAiQuiz(p, typed.trim())) }
+    catch { setQuiz(null) }
+    finally { setQuizLoading(false) }
+  }
   const MARKS: [SelfMark, string, string][] = [
     ['정답', '○ 맞았어요', 'border-pine bg-pine text-paper'],
     ['오답', '✕ 틀렸어요', 'border-clay bg-clay text-white'],
@@ -905,21 +956,48 @@ function WsSelfCheck({ p, value, onMark, onText }: {
     /* 하단 고정 답 바 안에서 열리므로 화면을 다 가리지 않게 높이를 제한한다 */
     <div className="grid max-h-[45vh] min-w-0 grow gap-2 overflow-y-auto rounded-xl bg-paper2/60 px-3 py-2.5">
       <span className="text-xs font-semibold text-ink2">
-        ✍️ 서술형이에요 — 답을 글로 써서 내면 AI가 채점하고, 공책에 풀었으면 아래에서 직접 표시해요
+        ✍️ 서술형이에요 — 답을 쓰고 [AI 채점받기]를 누르면 바로 채점해요 (공책에 풀었으면 아래에서 직접 표시)
       </span>
-      {/* 🤖 글로 써서 내기 — 쓰면 제출할 때 AI가 1차 채점하고 선생님이 확인한다.
-          안 쓰면 예전 그대로 자기채점(명수쌤 2026-08-01 지시)이라 기존 흐름은 그대로다. */}
+      {/* 🤖 답을 쓰고 그 자리에서 채점 → 정답 공개 → 틀리면 빨간펜 안내 + 확인용 객관식
+          (명수쌤 2026-08-07). 안 쓰면 예전 그대로 자기채점이라 기존 흐름은 그대로다. */}
       {!mark && (
-        <div className="grid gap-1">
-          <textarea rows={2} value={typed} onChange={e => onText(e.target.value)}
+        <div className="grid gap-1.5">
+          <textarea rows={2} value={typed} onChange={e => onText(e.target.value)} disabled={grading}
             placeholder="답을 문장으로 써보세요 (표현이 달라도 뜻이 같으면 정답이에요)"
-            className="w-full resize-none rounded-lg border border-line bg-white px-2.5 py-2 text-sm outline-none focus:border-pine" />
-          {!!typed.trim() && (
-            <span className="text-[11px] font-semibold text-pine-dark">
-              🤖 제출하면 AI가 1차 채점하고 선생님이 최종 확인해요
-            </span>
+            className="w-full resize-none rounded-lg border border-line bg-white px-2.5 py-2 text-sm outline-none focus:border-pine disabled:bg-paper2" />
+          {!!typed.trim() && !ai && (
+            <button type="button" onClick={gradeNow} disabled={grading}
+              className="w-fit rounded-lg bg-pine px-4 py-2 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-60">
+              {grading ? '🤖 채점 중…' : '🤖 AI 채점받기'}
+            </button>
+          )}
+          {!!err && <span className="text-[11px] font-semibold text-clay">{err}</span>}
+        </div>
+      )}
+      {/* 채점 결과 — 맞았는지 틀렸는지 바로 알려준다 */}
+      {ai && (
+        <div className={`grid gap-1 rounded-xl px-3 py-2 ${
+          ai.verdict === true ? 'bg-pine-soft' : ai.verdict === false ? 'bg-red-50' : 'bg-amber-soft'}`}>
+          <b className={`text-sm ${
+            ai.verdict === true ? 'text-pine-dark' : ai.verdict === false ? 'text-clay' : 'text-amber'}`}>
+            {ai.verdict === true ? '○ 정답이에요!' : ai.verdict === false ? '✕ 틀렸어요' : '? AI가 판정하지 못했어요 — 선생님이 확인해요'}
+          </b>
+          {!!ai.reason && <span className="text-[11px] leading-relaxed text-ink2">{ai.reason}</span>}
+          {ai.verdict === false && (
+            <div className="mt-0.5 grid gap-1.5">
+              <b className="text-xs text-clay">🖍 아래 정답을 <u>빨간펜으로 문제집에 직접</u> 적으세요.</b>
+              <button type="button" onClick={openQuiz}
+                className="w-fit rounded-lg border border-clay px-3 py-1.5 text-xs font-bold text-clay hover:bg-red-50">
+                {ai.quizOk ? '✓ 확인문제 통과 — 다시 풀기' : '확인문제 풀기'}
+              </button>
+            </div>
           )}
         </div>
+      )}
+      {/* 확인용 객관식 팝업 */}
+      {quizOpen && (
+        <RetryQuizModal quiz={quiz} loading={quizLoading}
+          onClose={ok => { setQuizOpen(false); if (ok && ai) onGraded?.({ ...ai, quizOk: true }) }} />
       )}
       {!open ? (
         <button type="button" onClick={() => setRevealed(true)}
@@ -944,17 +1022,82 @@ function WsSelfCheck({ p, value, onMark, onText }: {
           ) : (
             <span className="text-[11px] text-ink2">앱에 정답이 없는 문항이에요 — 선생님과 함께 확인해요.</span>
           )}
-          <div className="flex flex-wrap gap-1.5">
-            {MARKS.map(([m, label, on]) => (
-              <button key={m} type="button" onClick={() => onMark(mark === m ? null : m)}
-                className={`rounded-full border px-3 py-1.5 text-xs font-bold transition ${
-                  mark === m ? on : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
-                {label}
-              </button>
-            ))}
-          </div>
+          {/* AI가 채점한 문항은 자기표시를 겹쳐 받지 않는다 — 둘이 어긋나면 통계가 꼬인다 */}
+          {!ai && (
+            <div className="flex flex-wrap gap-1.5">
+              {MARKS.map(([m, label, on]) => (
+                <button key={m} type="button" onClick={() => onMark(mark === m ? null : m)}
+                  className={`rounded-full border px-3 py-1.5 text-xs font-bold transition ${
+                    mark === m ? on : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       )}
+    </div>
+  )
+}
+
+// 확인용 객관식 팝업 — 서술형을 틀린 학생이 정답을 빨간펜으로 적은 뒤 바로 확인한다.
+// 맞힐 때까지 다시 고를 수 있고, 맞히면 onClose(true) 로 통과를 알린다. (명수쌤 2026-08-07)
+function RetryQuizModal({ quiz, loading, onClose }: {
+  quiz: AiQuiz | null; loading: boolean; onClose: (ok: boolean) => void
+}) {
+  const [pick, setPick] = useState<number | null>(null)
+  const [ok, setOk] = useState(false)
+  const CIRCLED = ['①', '②', '③', '④', '⑤']
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/50 p-4">
+      <div className="grid max-h-[88vh] w-full max-w-lg gap-3 overflow-y-auto rounded-2xl bg-white p-5 shadow-xl">
+        <div className="flex items-center gap-2">
+          <h2 className="text-base font-black">🖍 확인 문제</h2>
+          <span className="text-xs font-semibold text-ink2">— 정답을 빨간펜으로 적었으면 풀어봐요</span>
+          <div className="grow" />
+          <button onClick={() => onClose(ok)} className="rounded-lg px-2 py-0.5 text-lg text-ink2 hover:bg-paper2">✕</button>
+        </div>
+        {loading ? (
+          <p className="py-8 text-center text-sm text-ink2">🤖 확인 문제를 만드는 중…</p>
+        ) : !quiz ? (
+          <div className="grid gap-2 py-6 text-center">
+            <p className="text-sm text-ink2">확인 문제를 만들지 못했어요.</p>
+            <button onClick={() => onClose(false)} className="mx-auto rounded-lg border border-line px-4 py-2 text-sm font-bold text-ink2 hover:bg-paper2">닫기</button>
+          </div>
+        ) : (
+          <>
+            <p className="rounded-xl bg-paper2/60 px-3 py-2.5 text-sm leading-relaxed">{quiz.question}</p>
+            <div className="grid gap-1.5">
+              {quiz.choices.map((c, i) => {
+                const chosen = pick === i
+                const right = i === quiz.answerIndex
+                const style = pick == null ? 'border-line bg-white hover:bg-paper2'
+                  : right && (chosen || ok) ? 'border-pine bg-pine-soft text-pine-dark'
+                  : chosen ? 'border-clay bg-red-50 text-clay' : 'border-line bg-white text-ink2'
+                return (
+                  <button key={i} type="button" disabled={ok}
+                    onClick={() => { setPick(i); if (right) setOk(true) }}
+                    className={`flex items-start gap-2 rounded-xl border px-3 py-2.5 text-left text-sm font-semibold transition ${style}`}>
+                    <span className="shrink-0">{CIRCLED[i]}</span><span className="min-w-0">{c}</span>
+                  </button>
+                )
+              })}
+            </div>
+            {pick != null && (
+              ok ? (
+                <div className="grid gap-2 rounded-xl bg-pine-soft px-3 py-2.5">
+                  <b className="text-sm text-pine-dark">○ 맞았어요! 이제 이해했네요 👍</b>
+                  {!!quiz.why && <span className="text-[11px] leading-relaxed text-ink2">{quiz.why}</span>}
+                  <button onClick={() => onClose(true)}
+                    className="w-fit rounded-lg bg-pine px-4 py-2 text-xs font-bold text-paper hover:brightness-110">닫기</button>
+                </div>
+              ) : (
+                <p className="rounded-xl bg-red-50 px-3 py-2.5 text-sm font-bold text-clay">✕ 다시 한 번 골라볼까요?</p>
+              )
+            )}
+          </>
+        )}
+      </div>
     </div>
   )
 }

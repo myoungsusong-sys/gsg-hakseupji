@@ -48,6 +48,34 @@ export async function requestAiGrade(p: Problem, studentAnswer: string, workImg?
   }
 }
 
+// ── 확인용 객관식 ─────────────────────────────────────────────
+// 서술형을 틀린 학생이 정답을 빨간펜으로 적은 뒤 바로 풀어 보는 5지선다.
+// 틀린 문항에서만 호출한다(맞으면 안 부른다).
+export interface AiQuiz { question: string; choices: string[]; answerIndex: number; why: string }
+
+export async function requestAiQuiz(p: Problem, studentAnswer: string): Promise<AiQuiz> {
+  const a = (p.answer ?? '').trim()
+  const r = await fetch('/api/ai-quiz', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      problemImageUrl: absUrl(p.imageUrl),
+      problemText: !p.imageUrl && p.body ? p.body : undefined,
+      answerText: a && !isImgUrl(a) && a !== '.' && a !== '-' ? a : undefined,
+      answerImageUrl: isImgUrl(a) ? absUrl(a) : undefined,
+      studentAnswer: studentAnswer || undefined,
+    }),
+  })
+  if (!r.ok) throw new Error(`ai-quiz ${r.status}`)
+  const j = await r.json()
+  if (!Array.isArray(j.choices) || j.choices.length !== 5) throw new Error('ai-quiz 보기 오류')
+  return {
+    question: String(j.question ?? ''),
+    choices: j.choices.map((c: unknown) => String(c)),
+    answerIndex: Number(j.answerIndex) || 0,
+    why: String(j.why ?? ''),
+  }
+}
+
 // 채점 대기(승인 큐) 카운트 — results에 pending 있는 문항 수
 export function pendingCount(results: GradeResult[]): number {
   return results.filter(r => r.pending).length
