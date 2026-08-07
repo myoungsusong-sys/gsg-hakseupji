@@ -996,7 +996,7 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded }: {
       )}
       {/* 확인용 객관식 팝업 */}
       {quizOpen && (
-        <RetryQuizModal quiz={quiz} loading={quizLoading}
+        <RetryQuizModal quiz={quiz} loading={quizLoading} p={p}
           onClose={ok => { setQuizOpen(false); if (ok && ai) onGraded?.({ ...ai, quizOk: true }) }} />
       )}
       {!open ? (
@@ -1042,8 +1042,8 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded }: {
 
 // 확인용 객관식 팝업 — 서술형을 틀린 학생이 정답을 빨간펜으로 적은 뒤 바로 확인한다.
 // 맞힐 때까지 다시 고를 수 있고, 맞히면 onClose(true) 로 통과를 알린다. (명수쌤 2026-08-07)
-function RetryQuizModal({ quiz, loading, onClose }: {
-  quiz: AiQuiz | null; loading: boolean; onClose: (ok: boolean) => void
+function RetryQuizModal({ quiz, loading, p, onClose }: {
+  quiz: AiQuiz | null; loading: boolean; p: Problem; onClose: (ok: boolean) => void
 }) {
   const [pick, setPick] = useState<number | null>(null)
   const [ok, setOk] = useState(false)
@@ -1066,7 +1066,10 @@ function RetryQuizModal({ quiz, loading, onClose }: {
           </div>
         ) : (
           <>
-            <p className="rounded-xl bg-paper2/60 px-3 py-2.5 text-sm leading-relaxed">{quiz.question}</p>
+            {/* 문제는 원본 그대로 보여준다 — 이미지 문항이면 이미지를, 아니면 문제 글을 */}
+            {p.imageUrl
+              ? <img src={p.imageUrl} alt="문제" className="max-h-56 w-auto max-w-full rounded-xl bg-white" />
+              : <p className="rounded-xl bg-paper2/60 px-3 py-2.5 text-sm leading-relaxed">{quiz.question || p.body}</p>}
             <div className="grid gap-1.5">
               {quiz.choices.map((c, i) => {
                 const chosen = pick === i

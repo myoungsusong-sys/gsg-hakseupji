@@ -21,25 +21,21 @@ const SYSTEM = `너는 한국 수학·과학 학원의 1차 채점관이다. 학
 // 바로 이해했는지 확인하는 5지선다. (명수쌤 2026-08-07)
 // 🔴 별도 엔드포인트로 두지 않는다 — Vercel 서버리스 함수는 12개가 한도라
 //    api/ai-quiz.ts 를 만들었더니 13개가 되어 배포가 통째로 막혔다 (2026-08-07 실측).
+// 🔴 문항은 AI 에게 맡기지 않는다. 원래 문제를 그대로 쓰고 **오답 보기 4개만** 받는다.
+//    문항을 만들게 했더니 "A+B+C 의 값은?" 처럼 묻는 것을 바꿔 놓고 정답은 원래 값을
+//    그대로 쓰는 앞뒤 안 맞는 문제가 나왔다 (2026-08-07 라이브 실측).
 const SYSTEM_QUIZ = `너는 한국 중·고등 수학·과학 학원의 문제 출제자다.
-학생이 방금 서술형 문제를 틀렸다. 정답을 적고 이해했는지 확인하도록,
-**그 문제를 그대로 5지선다로 바꾼다.**
+학생이 방금 서술형 문제를 틀렸다. 같은 문제를 객관식으로 다시 풀려서 확인하려 한다.
 
-가장 중요한 규칙:
-- **문제를 새로 만들지 마라.** 원래 문제의 묻는 내용을 그대로 쓰고 보기 5개만 붙인다.
-  숫자·조건을 바꾸거나 다른 것을 묻는 변형은 금지다.
-- **정답은 [원래 문제의 정답]과 반드시 같아야 하고, 그 값이 보기 안에 있어야 한다.**
-  보기를 다 쓴 뒤 answerIndex 자리의 보기가 정말 원래 정답인지 스스로 확인하고 답하라.
-- 오답 4개는 학생이 흔히 하는 실수(부호 반대·계산 한 단계 누락·단위 혼동 등)에서 만든다.
-  터무니없는 보기는 넣지 않는다.
-
-그 밖에:
-- 보기는 짧게(각 30자 이내). 수식은 일반 텍스트로 쓴다(예: x^2, √3, 1/2).
-- 문항은 원래 문제 문장을 거의 그대로. 존댓말.
-- why 는 정답이 왜 그 값인지 한 문장. 계산이 맞는지 확인한 뒤 쓴다.
+너의 일은 하나뿐이다 — **그럴듯한 오답 보기 4개**를 만드는 것.
+- 문항을 새로 쓰지 마라. 문제와 정답은 이미 정해져 있다.
+- 오답은 학생이 흔히 하는 실수에서 나온 값으로 만든다
+  (부호 반대 · 계산 한 단계 누락 · 단위 혼동 · 제곱/제곱근 혼동 등).
+- 정답과 형태가 같아야 한다. 정답이 수면 수로, 식이면 식으로, 각도면 각도로.
+- **정답과 같은 값을 오답에 넣지 마라.** 4개는 서로 달라야 한다.
+- 각 보기는 30자 이내. 수식은 일반 텍스트로(예: x^2, √3, 1/2).
 - 반드시 아래 JSON 한 줄로만 답한다(설명·코드블록 없이):
-{"question":"문항","choices":["것1","것2","것3","것4","것5"],"answerIndex":0,"why":"정답인 이유 한 문장"}
-- choices 는 정확히 5개, 번호를 붙이지 말고 내용만 쓴다. answerIndex 는 0~4.`
+{"distractors":["오답1","오답2","오답3","오답4"],"why":"정답이 그 값인 이유 한 문장"}`
 
 function readBody(req: any): Promise<any> {
   if (req.body && typeof req.body === 'object') return Promise.resolve(req.body)
@@ -114,23 +110,24 @@ export default async function handler(req: any, res: any) {
       if (!q) { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
       let j: any
       try { j = JSON.parse(q[0]) } catch { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
-      const choices: string[] = Array.isArray(j.choices) ? j.choices.map((c: unknown) => String(c).slice(0, 80)) : []
-      let answerIndex = Number(j.answerIndex)
-      // 보기가 5개가 아니거나 정답 번호가 범위 밖이면 잘못된 문제를 학생에게 내지 않는다
-      if (choices.length !== 5 || !(answerIndex >= 0 && answerIndex <= 4)) {
-        res.status(502).json({ error: 'AI가 만든 보기가 올바르지 않습니다.' }); return
+      // 문항·정답은 원본 그대로 쓰고, AI 에게 받은 것은 오답 4개뿐이다
+      const answer = String(answerText ?? '').trim()
+      if (!answer) { res.status(400).json({ error: '정답이 있어야 객관식을 만들 수 있습니다.' }); return }
+      const norm = (s: string) => String(s).replace(/[\s,]/g, '')
+      const seen = new Set([norm(answer)])
+      const bad: string[] = []
+      for (const d of (Array.isArray(j.distractors) ? j.distractors : [])) {
+        const t = String(d).slice(0, 80).trim()
+        if (!t || seen.has(norm(t))) continue      // 정답과 같거나 중복인 보기는 버린다
+        seen.add(norm(t)); bad.push(t)
       }
-      // 🔴 원래 정답이 보기 안에 있어야 한다. AI 가 문제를 변형해 놓고 답이 보기에 없는
-      //    문제를 만든 적이 있다(2026-08-07 라이브 실측) — 학생에게 그런 문제를 내지 않는다.
-      if (answerText) {
-        const norm = (s: string) => String(s).replace(/[\s,]/g, '').replace(/[①②③④⑤]/g, '')
-        const want = norm(answerText)
-        const at = choices.findIndex(c => norm(c) === want)
-        if (at < 0) { res.status(502).json({ error: '정답이 보기에 없는 문제가 만들어졌습니다.' }); return }
-        answerIndex = at
-      }
+      if (bad.length < 4) { res.status(502).json({ error: 'AI가 만든 보기가 올바르지 않습니다.' }); return }
+      // 정답 자리를 매번 바꾼다 — 늘 같은 번호면 답을 외워 버린다
+      const answerIndex = Math.floor(Math.random() * 5)
+      const choices = [...bad.slice(0, 4)]
+      choices.splice(answerIndex, 0, answer)
       res.status(200).json({
-        question: String(j.question ?? '').slice(0, 400),
+        question: String(problemText ?? '').slice(0, 2000),   // 원래 문제 그대로 (이미지 문제는 빈 값)
         choices, answerIndex, why: String(j.why ?? '').slice(0, 300),
       })
       return
