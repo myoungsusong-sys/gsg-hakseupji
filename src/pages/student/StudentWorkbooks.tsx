@@ -379,14 +379,21 @@ function SelfCheckInput({ item, mark, revealed, onReveal, onMark, elementary = f
           {mark && mark !== '정답' && onAnswer && (
             <div className="grid gap-1">
               <span className="text-[11px] font-semibold text-clay">
-                내가 쓴 답을 적어두면 선생님이 어디서 틀렸는지 바로 봐요 <span className="text-ink2">(건너뛰어도 돼요)</span>
+                {mark === '오답'
+                  ? <>내가 쓴 답을 <b>꼭</b> 적어주세요 — 선생님이 어디서 틀렸는지 보고 알려줍니다</>
+                  : <>모르겠으면 비워도 돼요 — 어디까지 해봤는지 적으면 더 좋아요 <span className="text-ink2">(선택)</span></>}
               </span>
               <input
+                id={`self-ans-${item.id}`}
                 value={answer}
                 onChange={e => onAnswer(e.target.value)}
-                placeholder="예: 3, x=2, ②"
-                className="h-10 rounded-lg border border-line bg-white px-3 text-sm outline-none focus:border-pine"
+                placeholder={mark === '오답' ? '내가 쓴 답 (예: 3, x=2, ②)' : '예: 3까지는 나왔어요'}
+                className={`h-10 rounded-lg border bg-white px-3 text-sm outline-none focus:border-pine ${
+                  mark === '오답' && !answer.trim() ? 'border-clay bg-clay/5' : 'border-line'}`}
               />
+              {mark === '오답' && !answer.trim() && (
+                <span className="text-[11px] font-bold text-clay">답을 적어야 채점됩니다</span>
+              )}
             </div>
           )}
         </div>
@@ -599,6 +606,17 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
 
   // 채점하기 — 입력한 답을 자동채점해 저장(같은 날·같은 쪽 학생 기록에 덮어쓰기)
   function submitGrade() {
+    // ✍️ 틀렸다고 표시한 문항은 **내가 쓴 답이 있어야** 채점한다 (2026-08-12 명수쌤 "필수로").
+    //    없으면 선생님 화면에 '몇 번 틀림'만 남아 무엇을 틀렸는지 알 수 없다.
+    //    '모름'은 강요하지 않는다 — 아무것도 못 썼으니 적을 답이 없다.
+    const missing = selfOnPage.filter(i => selfMarks[i.id] === '오답' && (answers[i.id] ?? '').trim() === '')
+    if (missing.length > 0) {
+      const nos = missing.map(i => String(i.label ?? i.no)).join(', ')
+      alert(`틀렸다고 표시한 문제는 내가 쓴 답을 적어야 채점돼요.\n\n적어야 할 문제: ${nos}번`)
+      document.getElementById(`self-ans-${missing[0].id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      ;(document.getElementById(`self-ans-${missing[0].id}`) as HTMLInputElement | null)?.focus()
+      return
+    }
     const results: GradeResult[] = gradableOnPage
       .filter(i => (answers[i.id] ?? '') !== '')
       .map(i => {
