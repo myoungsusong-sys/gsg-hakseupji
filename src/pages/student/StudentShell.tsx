@@ -10,6 +10,7 @@ import FixItButton from '../../components/FixItButton'
 import { useChangelog, UpdateBanner } from '../../components/UpdateLog'
 import { StudentSelfCtx, tickStudySecond } from './common'
 import { todayKey } from '../../lib/dates'
+import TeacherCallOverlay from '../../components/student/TeacherCallOverlay'
 
 // ── 학생 셸 — #/student/* 공통 프레임 + 본인(Student) 컨텍스트 ──
 // 매쓰플랫 학생앱 헤더 구조: 로고 | 학습 홈 · 챌린지 · 교재 · 학습지 · 강의 | 우측 학생명
@@ -93,6 +94,8 @@ export default function StudentShell() {
             </button>
           </div>
         )}
+        {/* 📢 선생님 호출 — 어느 화면에 있든 보이게 헤더 위에 둔다 */}
+        <TeacherCallOverlay studentId={me.id} name={me.name} />
         <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-5 px-6 py-3">
             <div className="flex items-baseline gap-2">
