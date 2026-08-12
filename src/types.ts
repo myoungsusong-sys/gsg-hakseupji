@@ -164,6 +164,23 @@ export interface WBItem {
   diff?: Diff
 }
 
+// 지점 — 당진·내포처럼 학생·반을 나눠 운영하는 단위 (2026-08-12 명수쌤 "지점이 여러 곳이야").
+//
+// 🔴 설계 원칙 3가지. 바꾸기 전에 반드시 읽을 것.
+//  ① **학생에만 branchId 를 단다.** 채점·학습지·포인트·시간표는 전부 studentId 경유라
+//     학생 하나만 붙이면 지점이 파생으로 결정된다 — 기록 마이그레이션 0건.
+//  ② **id 로 저장한다(이름 아님).** 반(klass)이 자유 텍스트라서 이름을 바꿀 때마다 학생
+//     레코드를 전수 갱신해야 하는 아픔(Students.tsx KlassEditor)을 반복하지 않는다.
+//  ③ **hj_settings 의 'branches' 키 하나**에 배열로 산다(teachers·klassOrder 와 같은 방식).
+//     새 테이블을 만들면 RLS·구독·마이그레이션이 전부 따라온다. 지점은 많아야 몇 개다.
+//     ⚠️ AcademyProfile 안에 넣지 말 것 — MyPage save()가 4개 필드로 객체를 새로 만들어
+//        덮어쓰므로 [정보수정] 한 번에 지점이 조용히 전멸한다.
+export interface Branch {
+  id: string        // uid('br')
+  name: string      // '당진' · '내포'
+  memo?: string
+}
+
 // 강사 — 다중 강사 운영(매쓰플랫 선생님 관리 등가). 계정 발급 시 t-<loginId>@teacher.gsg.app 로그인.
 export interface Teacher {
   id: string
@@ -175,6 +192,7 @@ export interface Teacher {
   accountCreated?: boolean   // Supabase 계정 발급됨
   active: boolean
   memo?: string
+  branchId?: string          // 소속 지점 — v1은 표시·기록 전용. 화면 필터에 쓰지 않는다(아래 주석)
 }
 
 export interface Student {
@@ -182,6 +200,7 @@ export interface Student {
   name: string
   grade: string          // '중2' 또는 '중1-1' 과정형 (둘 다 허용)
   klass?: string
+  branchId?: string      // 소속 지점(Branch.id). 없으면 **미배정 — 어느 지점에서도 보인다**
   active: boolean
   parentPhone?: string   // 학부모 연락처
   school?: string        // 학교

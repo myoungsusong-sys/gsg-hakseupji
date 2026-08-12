@@ -8,7 +8,7 @@ import { setLocalStudentId } from '../../lib/role'
 // 등록된 학생 이름 + 출결번호가 일치하면 학생 모드로 들어간다.
 // supabase 모드에선 이 화면을 쓰지 않는다(로그인 화면의 [학생] 탭 사용).
 export default function StudentLocalLogin() {
-  const { students } = useStore()
+  const { allStudents: students } = useStore()   // 지점 무관 — 로컬 로그인은 전원 대상
   const nav = useNavigate()
   const [name, setName] = useState('')
   const [attendNo, setAttendNo] = useState('')

@@ -25,7 +25,7 @@ const tab = ({ isActive }: { isActive: boolean }) =>
 
 export default function StudentShell() {
   const { email, signOut } = useAuth()
-  const { students, synced } = useStore()
+  const { allStudents: students, synced } = useStore()   // 지점 무관 — 학생 본인 매칭은 전원 대상
   const nav = useNavigate()
   // 새 배포 감지 → 상단 업데이트 배너(선생님앱과 동일). 훅은 조건 반환 전에 호출.
   const { entries: changelog, stale, unseen } = useChangelog()

@@ -27,7 +27,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, students, lecturePlans, ttChecks, toggleTTCheck, pointEntries } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable

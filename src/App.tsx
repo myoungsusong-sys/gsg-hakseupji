@@ -57,7 +57,7 @@ export default function App() {
 // 학생 명부(hj_students)가 로드되면 mgmtId가 일치하는 학생을 찾아 로컬 세션을 걸고 #/student로 보낸다.
 // mgmt 파라미터가 없으면 아무 일도 하지 않는다.
 function MgmtEntry() {
-  const { students, synced } = useStore()
+  const { allStudents: students, synced } = useStore()   // 지점 무관 — 관리앱 mgmtId 매칭은 전원 대상
   const nav = useNavigate()
   useEffect(() => {
     const mgmt = new URLSearchParams(window.location.search).get('mgmt')

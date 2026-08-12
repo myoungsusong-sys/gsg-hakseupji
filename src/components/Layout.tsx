@@ -75,6 +75,55 @@ function timeAgo(iso: string): string {
   return d < 7 ? `${d}일 전` : iso.slice(0, 10)
 }
 
+// ── 🏫 지점 선택 (헤더 우측 학원명 자리) ───────────────────────────────
+//
+// 🔴 지점이 1개 이하면 이 컴포넌트는 **아예 렌더되지 않는다**(Layout의 multiBranch 분기).
+//    지점을 안 쓰는 학원에서는 헤더가 예전과 글자 하나까지 같아야 한다.
+//
+// 왜 과목 스위처(세그먼트) 옆이 아닌가: 헤더 한 줄에 로고+5탭+과목4버튼+내신관+아이콘3개가
+// 이미 들어차 있다. 지점명은 사용자가 짓는 가변 길이라 세그먼트로 두면 이름을 길게 지은 날
+// 헤더가 깨진다. 학원명 버튼을 드롭다운으로 바꾸는 편이 자리를 안 먹는다.
+function BranchMenu({ academyName }: { academyName: string }) {
+  const nav = useNavigate()
+  const { branches, branchScope, setBranchScope } = useStore()
+  const [open, setOpen] = useState(false)
+  const cur = branches.find(b => b.id === branchScope)
+
+  return (
+    <div className="relative">
+      <button onClick={() => setOpen(v => !v)} title="지점 선택 · 마이페이지"
+        className="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-bold hover:bg-paper2">
+        <span>{academyName}</span>
+        <span className={cur ? 'text-pine' : 'text-ink2'}>· {cur?.name ?? '전체 지점'}</span>
+        <span className="text-[10px] text-ink2">▾</span>
+      </button>
+      {open && (
+        <>
+          <div className="fixed inset-0 z-30" onClick={() => setOpen(false)} />
+          <div className="absolute right-0 top-full z-40 mt-1 w-52 overflow-hidden rounded-xl border border-line bg-white py-1 shadow-xl">
+            <div className="px-3 py-1.5 text-[11px] font-bold text-ink2">지점</div>
+            {branches.map(b => (
+              <button key={b.id} onClick={() => { setBranchScope(b.id); setOpen(false) }}
+                className={`flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-paper2 ${
+                  branchScope === b.id ? 'font-bold text-pine' : ''}`}>
+                <span className="w-3">{branchScope === b.id ? '✓' : ''}</span>{b.name}
+              </button>
+            ))}
+            <button onClick={() => { setBranchScope('all'); setOpen(false) }}
+              className={`flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-paper2 ${
+                !cur ? 'font-bold text-pine' : ''}`}>
+              <span className="w-3">{!cur ? '✓' : ''}</span>전체 지점 보기
+            </button>
+            <div className="my-1 border-t border-line/70" />
+            <button onClick={() => { setOpen(false); nav('/mypage') }}
+              className="w-full px-3 py-2 text-left text-sm hover:bg-paper2">마이페이지</button>
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
 const topTab = ({ isActive }: { isActive: boolean }) =>
   `px-4 py-2 rounded-full text-[15px] font-bold transition ${
     isActive ? 'text-pine-dark' : 'text-ink2 hover:text-ink'
@@ -83,7 +132,7 @@ const topTab = ({ isActive }: { isActive: boolean }) =>
 // 매쓰플랫 헤더 구성 동일: 로고 | 수업 준비·수업·관리 | (우측) 내신관 · 알림 · 학원명(→마이페이지)
 export default function Layout() {
   const nav = useNavigate()
-  const { academyProfile } = useStore()
+  const { academyProfile, multiBranch } = useStore()
   const [subject, setSubject] = useSubject()   // 전역 과목 (수업 준비 화면 공용)
   const [bell, setBell] = useState(false)
   const { entries: changelog, stale, unseen } = useChangelog()
@@ -163,8 +212,10 @@ export default function Layout() {
               </span>
             )}
           </button>
-          <button onClick={() => nav('/mypage')} title="마이페이지"
-            className="rounded-lg px-3 py-1.5 text-sm font-bold hover:bg-paper2">{academyName}</button>
+          {multiBranch
+            ? <BranchMenu academyName={academyName} />
+            : <button onClick={() => nav('/mypage')} title="마이페이지"
+                className="rounded-lg px-3 py-1.5 text-sm font-bold hover:bg-paper2">{academyName}</button>}
         </div>
       </header>
 

@@ -59,7 +59,8 @@ MBTI: INFP
 특이사항: 밤에 집중이 잘 됨`
 
 function IntakeTab() {
-  const { students, addStudent } = useStore()
+  // 🔴 allStudents — 출결번호 중복검사는 전역이어야 한다(Students.tsx RegisterModal 주석 참조)
+  const { allStudents: students, addStudent, branchScope } = useStore()
   const brand = useBrand()
   const nav = useNavigate()
   const [text, setText] = useState('')
@@ -72,7 +73,9 @@ function IntakeTab() {
     if (!no || used.has(no)) {
       do { no = String(Math.floor(1000 + Math.random() * 9000)) } while (used.has(no))
     }
-    const id = addStudent({ ...parsed.patch, name: parsed.patch.name!, grade: parsed.patch.grade ?? '중1', attendNo: no })
+    // 지점: 지금 보고 있는 지점으로 등록한다(전체 보기 중이면 미배정 — 배너가 잡는다)
+    const id = addStudent({ ...parsed.patch, name: parsed.patch.name!, grade: parsed.patch.grade ?? '중1', attendNo: no,
+      branchId: branchScope !== 'all' ? branchScope : undefined })
     alert(`${parsed.patch.name} 학생을 등록했습니다. (출결번호 ${no})`)
     nav(`/timetable/${id}`)
   }

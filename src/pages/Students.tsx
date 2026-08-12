@@ -7,7 +7,7 @@ import { SUPABASE_ON, supabase, signUpStudentClient } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
 import { BLOOD_TYPES, MBTI_TYPES } from '../lib/persona'
 
-const TABS = ['학생 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
+const TABS = ['학생 관리', '지점 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
 type Tab = typeof TABS[number]
 
 const SCHOOL_FILTERS = ['전체', '초', '중', '고'] as const
@@ -69,6 +69,7 @@ export default function Students() {
       </div>
 
       {tab === '학생 관리' && <StudentsTab />}
+      {tab === '지점 관리' && <BranchTab />}
       {tab === '반 관리' && <KlassTab />}
       {tab === '선생님 관리' && <TeachersTab />}
       {tab === '학생앱' && <StudentAppTab />}
@@ -134,7 +135,8 @@ type Sort = 'latest' | 'nameAsc' | 'nameDesc' | 'gradeAsc' | 'gradeDesc'
 const PAGE_SIZE = 20
 
 function StudentsTab() {
-  const { students, setStudentActive } = useStore()
+  const { students, setStudentActive, updateStudent, branches, multiBranch } = useStore()
+  const [onlyNoBranch, setOnlyNoBranch] = useState(false)   // 지점 미배정만 — 배정 작업용
   const [sort, setSort] = useState<Sort>('latest')
   const [filter, setFilter] = useState<SchoolFilter>('전체')
   const [query, setQuery] = useState('')
@@ -155,6 +157,7 @@ function StudentsTab() {
       .filter(s => (showInactive ? true : s.active))
       .filter(s => filter === '전체' || s.grade.startsWith(filter))
       .filter(s => !q || s.name.includes(q))
+      .filter(s => !onlyNoBranch || !s.branchId)
     switch (sort) {
       case 'nameAsc': return [...filtered].sort((a, b) => a.name.localeCompare(b.name, 'ko'))
       case 'nameDesc': return [...filtered].sort((a, b) => b.name.localeCompare(a.name, 'ko'))
@@ -162,12 +165,12 @@ function StudentsTab() {
       case 'gradeDesc': return [...filtered].sort((a, b) => gradeRank(b.grade) - gradeRank(a.grade) || a.name.localeCompare(b.name, 'ko'))
       default: return [...filtered].reverse()
     }
-  }, [students, showInactive, filter, sort, query])
+  }, [students, showInactive, filter, sort, query, onlyNoBranch])
 
   const pageCount = Math.max(1, Math.ceil(list.length / PAGE_SIZE))
   const cur = Math.min(page, pageCount)
   const paged = list.slice((cur - 1) * PAGE_SIZE, cur * PAGE_SIZE)
-  useEffect(() => { setPage(1) }, [filter, query, showInactive, sort])
+  useEffect(() => { setPage(1) }, [filter, query, showInactive, sort, onlyNoBranch])
 
   const pageAllChecked = paged.length > 0 && paged.every(s => sel.has(s.id))
   const togglePageAll = () => setSel(prev => {
@@ -221,6 +224,12 @@ function StudentsTab() {
           <input type="checkbox" checked={showInactive} onChange={e => setShowInactive(e.target.checked)} />
           퇴원생 보기
         </label>
+        {multiBranch && (
+          <label className="flex items-center gap-1.5 text-sm text-ink2" title="지점을 배정할 학생만 골라 봅니다">
+            <input type="checkbox" checked={onlyNoBranch} onChange={e => setOnlyNoBranch(e.target.checked)} />
+            지점 미배정만
+          </label>
+        )}
         <div className="grow" />
         <button onClick={() => setShowMgmt(true)}
           className="rounded-lg border border-indigo-500 bg-white px-4 py-2 text-sm font-bold text-indigo-600 hover:bg-indigo-50">🏫 학원관리앱 가져오기</button>
@@ -239,6 +248,22 @@ function StudentsTab() {
             className="rounded-lg border border-line bg-white px-3 py-1 font-bold text-ink2 hover:text-pine">재원 처리</button>
           <button onClick={() => bulkActive(false)}
             className="rounded-lg border border-line bg-white px-3 py-1 font-bold text-ink2 hover:text-clay">퇴원 처리</button>
+          {multiBranch && (
+            <>
+              <span className="ml-2 text-ink2">|</span>
+              <select defaultValue="" onChange={e => {
+                  const v = e.target.value
+                  if (!v) return
+                  for (const id of sel) updateStudent(id, { branchId: v === '-' ? undefined : v })
+                  setSel(new Set()); e.currentTarget.value = ''
+                }}
+                className="rounded-lg border border-line bg-white px-2 py-1 text-sm font-bold">
+                <option value="">지점 이동…</option>
+                {branches.map(b => <option key={b.id} value={b.id}>{b.name}(으)로</option>)}
+                <option value="-">지점 미배정으로</option>
+              </select>
+            </>
+          )}
           <div className="grow" />
           <button onClick={() => setSel(new Set())} className="text-ink2 hover:text-ink">선택 해제 ✕</button>
         </div>
@@ -291,7 +316,16 @@ function StudentsTab() {
                     </td>
                     <td className="px-3 py-2.5 font-bold">{s.name}</td>
                     <td className="px-3 py-2.5">{s.parentPhone ?? <span className="text-ink2">—</span>}</td>
-                    <td className="px-3 py-2.5">{s.klass ?? <span className="text-ink2">—</span>}</td>
+                    <td className="px-3 py-2.5">
+                      {s.klass ?? <span className="text-ink2">—</span>}
+                      {multiBranch && (
+                        s.branchId
+                          ? <span className="ml-1.5 rounded bg-paper2 px-1.5 py-0.5 text-[11px] text-ink2">
+                              {branches.find(b => b.id === s.branchId)?.name ?? '?'}
+                            </span>
+                          : <span className="ml-1.5 rounded bg-amber/20 px-1.5 py-0.5 text-[11px] text-ink2">지점 미배정</span>
+                      )}
+                    </td>
                     <td className="px-3 py-2.5">
                       {acctId ? (
                         <span className="inline-flex items-center gap-1.5">
@@ -356,6 +390,7 @@ interface FormState {
   homePhone: string
   memo: string
   klass: string
+  branchId: string
   classDays: string[]
   arriveTime: string
   leaveTime: string
@@ -370,11 +405,26 @@ interface FormState {
   bloodType: string
 }
 
+// 지점 선택 — 다지점일 때만 나타난다. 안 고르면 미배정으로 들어가고 배너가 잡는다.
+// 🔴 선택을 **강제하지 않는다.** 강제하면 등록이 막혀 업무가 멈춘다.
+function BranchField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const { branches, multiBranch } = useStore()
+  if (!multiBranch) return null
+  return (
+    <Field label="지점">
+      <select value={value} onChange={e => onChange(e.target.value)} className={INPUT}>
+        <option value="">지점 미배정</option>
+        {branches.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
+      </select>
+    </Field>
+  )
+}
+
 function emptyForm(): FormState {
   return {
     name: '', sk: '중', gn: 1, attendNo: '',
     studentPhone: '', parentPhone: '', school: '', startDate: '', birth: '',
-    email: '', address: '', homePhone: '', memo: '', klass: '',
+    email: '', address: '', homePhone: '', memo: '', klass: '', branchId: '',
     classDays: [], arriveTime: '', leaveTime: '',
     recentExams: [], prevEdu: '', progressNow: '', goal: '', traits: [], weeklyHours: '', parentConcern: '',
     mbti: '', bloodType: '',
@@ -388,7 +438,7 @@ function formFromStudent(s: Student): FormState {
     studentPhone: s.studentPhone ?? '', parentPhone: s.parentPhone ?? '',
     school: s.school ?? '', startDate: s.startDate ?? '', birth: s.birth ?? '',
     email: s.email ?? '', address: s.address ?? '', homePhone: s.homePhone ?? '',
-    memo: s.memo ?? '', klass: s.klass ?? '',
+    memo: s.memo ?? '', klass: s.klass ?? '', branchId: s.branchId ?? '',
     classDays: s.classDays ?? [], arriveTime: s.arriveTime ?? '', leaveTime: s.leaveTime ?? '',
     recentExams: s.recentExams ?? [], prevEdu: s.prevEdu ?? '', progressNow: s.progressNow ?? '',
     goal: s.goal ?? '', traits: s.traits ?? [], weeklyHours: s.weeklyHours ?? '', parentConcern: s.parentConcern ?? '',
@@ -411,6 +461,7 @@ function formPayload(f: FormState): Omit<Student, 'id' | 'active'> {
     grade: `${f.sk}${f.gn}`,
     attendNo: t(f.attendNo),
     klass: t(f.klass),
+    branchId: t(f.branchId),
     parentPhone: t(f.parentPhone),
     school: t(f.school),
     memo: t(f.memo),
@@ -572,6 +623,7 @@ function StudentFields({ f, set, onRegenAttendNo }: {
           placeholder={'내용을 입력해주세요.\n예시) 문제를 빨리 풀어서 실수가 잦음, 분수 계산이 약함, 중간고사-70점 / 기말고사-94점 등'}
           className={INPUT} />
       </label>
+      <BranchField value={f.branchId} onChange={v => set({ branchId: v })} />
       <Field label="반">
         <input value={f.klass} onChange={e => set({ klass: e.target.value })}
           placeholder="반 이름을 입력해주세요." className={INPUT} />
@@ -691,7 +743,9 @@ function setExamRow(f: FormState, set: (p: Partial<FormState>) => void, i: numbe
 // ── 학생 개별 등록 모달 ────────────────────────────
 
 function RegisterModal({ onClose }: { onClose: () => void }) {
-  const { students, addStudent } = useStore()
+  // 🔴 allStudents — 출결번호·로그인아이디는 s-<loginId>@student.gsg.app 로 **전역 유일**이라
+  //    지점별로 좁히면 다른 지점 학생과 계정이 충돌한다. 여기만은 전 지점을 봐야 한다.
+  const { allStudents: students, addStudent } = useStore()
   const usedNos = useMemo(
     () => new Set(students.flatMap(s => [s.attendNo, s.loginId].filter(Boolean) as string[])),
     [students])
@@ -1013,7 +1067,8 @@ function downloadTemplate() {
 }
 
 function BulkModal({ onClose }: { onClose: () => void }) {
-  const { addStudent } = useStore()
+  const { addStudent, branches, multiBranch, branchScope } = useStore()
+  const [bulkBranch, setBulkBranch] = useState(branchScope === 'all' ? '' : branchScope)
   const [text, setText] = useState('')
   const fileRef = useRef<HTMLInputElement>(null)
 
@@ -1032,6 +1087,9 @@ function BulkModal({ onClose }: { onClose: () => void }) {
       addStudent({
         name: r.name!, grade: r.grade!,
         attendNo: r.attendNo, klass: r.klass, parentPhone: r.parentPhone, school: r.school,
+        // 🔴 CSV 열을 늘리지 않는다 — parseBulk가 콤마 위치로 자르므로 기존 양식이 전부 어긋난다.
+        //    지점은 모달의 select 하나로 받아 일괄 적용한다.
+        branchId: bulkBranch || undefined,
       })
     }
     onClose()
@@ -1048,6 +1106,17 @@ function BulkModal({ onClose }: { onClose: () => void }) {
           className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-bold text-ink2 hover:text-ink">파일 다운로드</button>
       </div>
 
+      {multiBranch && (
+        <div className="mb-4 flex items-center gap-3 rounded-xl border border-pine/40 bg-pine-soft px-4 py-3 text-sm">
+          <b className="text-pine-dark">이 파일의 학생을 넣을 지점</b>
+          <select value={bulkBranch} onChange={e => setBulkBranch(e.target.value)}
+            className="rounded-lg border border-line bg-white px-3 py-1.5 text-sm font-bold">
+            <option value="">지점 미배정</option>
+            {branches.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
+          </select>
+          <span className="text-xs text-ink2">CSV 양식은 그대로입니다 — 지점은 여기서 한 번에 정합니다.</span>
+        </div>
+      )}
       <div className="mb-4 rounded-xl border border-line bg-paper2 p-4">
         <p className="mb-2 text-sm">
           <b className="mr-2 text-pine">STEP 02</b>
@@ -1165,7 +1234,8 @@ type MgmtStudent = { mgmtId: string; name: string; grade: string; school: string
 function normPhone(p?: string): string { return (p ?? '').replace(/\D/g, '') }
 
 function MgmtImportModal({ onClose }: { onClose: () => void }) {
-  const { students, addStudent, updateStudent } = useStore()
+  const { students, addStudent, updateStudent, branches, multiBranch, branchScope } = useStore()
+  const [mgmtBranch, setMgmtBranch] = useState(branchScope === 'all' ? '' : branchScope)
   const [rows, setRows] = useState<MgmtStudent[] | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
@@ -1239,6 +1309,7 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
         addStudent({
           name: m.name,
           grade: m.grade || '중1',
+          branchId: mgmtBranch || undefined,
           school: m.school || undefined,
           studentPhone: m.studentPhone || undefined,
           parentPhone: m.parentPhone || undefined,
@@ -1284,6 +1355,16 @@ function MgmtImportModal({ onClose }: { onClose: () => void }) {
                 <label className="flex items-center gap-1.5 text-sm text-ink2">
                   <input type="checkbox" checked={onlyActive} onChange={e => setOnlyActive(e.target.checked)} /> 재원생만
                 </label>
+                {multiBranch && (
+                  <label className="flex items-center gap-1.5 text-sm text-ink2">
+                    가져올 지점
+                    <select value={mgmtBranch} onChange={e => setMgmtBranch(e.target.value)}
+                      className="rounded-lg border border-line px-2 py-1 text-sm font-bold">
+                      <option value="">지점 미배정</option>
+                      {branches.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
+                    </select>
+                  </label>
+                )}
                 <div className="grow" />
                 <span className="text-sm text-ink2">연결/가져올 수 있는 학생 <b className="text-indigo-600">{importable.length}</b>명</span>
               </div>
@@ -1416,12 +1497,176 @@ function MathflatImportModal({ onClose }: { onClose: () => void }) {
   )
 }
 
+// ── 지점 관리 ─────────────────────────────────────
+// 당진·내포처럼 **여러 곳에서 운영**할 때 학생·반을 나눈다 (2026-08-12 명수쌤).
+//
+// 🔴 이 화면만은 헤더의 지점 선택을 **따르지 않는다.** 여기가 학생을 지점 사이로 옮기는
+//    곳이라 전 지점 학생이 보여야 하기 때문이다 → allStudents 를 쓴다.
+//
+// 위계는 지점 → 반 → 학생. 반(klass)은 여전히 학생의 자유 텍스트이고, 반의 지점은
+// **그 반에 속한 학생들의 지점에서 파생**된다. 반을 엔티티로 승격시키지 않는다(범위 폭발).
+function BranchTab() {
+  const { allStudents, branches, addBranch, updateBranch, removeBranch, setBranches,
+          updateStudent, branchScope, setBranchScope } = useStore()
+  const active = allStudents.filter(s => s.active)
+  const [editing, setEditing] = useState<string | null>(null)
+  const [draft, setDraft] = useState('')
+
+  const stats = useMemo(() => {
+    const m = new Map<string, { n: number; klasses: Set<string> }>()
+    for (const s of active) {
+      const k = s.branchId ?? ''
+      if (!m.has(k)) m.set(k, { n: 0, klasses: new Set() })
+      const e = m.get(k)!
+      e.n++
+      if (s.klass) e.klasses.add(s.klass)
+    }
+    return m
+  }, [active])
+  const unassigned = stats.get('')?.n ?? 0
+
+  const move = (i: number, dir: -1 | 1) => {
+    const j = i + dir
+    if (j < 0 || j >= branches.length) return
+    const next = [...branches]
+    ;[next[i], next[j]] = [next[j], next[i]]
+    setBranches(next)
+  }
+
+  const create = () => {
+    const name = window.prompt('지점 이름을 입력하세요 (예: 당진 · 내포)')?.trim()
+    if (!name) return
+    if (branches.some(b => b.name === name)) { alert(`'${name}' 지점이 이미 있습니다.`); return }
+    addBranch({ name })
+  }
+
+  const rename = (id: string) => {
+    const nn = draft.trim()
+    if (!nn) { setEditing(null); return }
+    if (branches.some(b => b.id !== id && b.name === nn)) { alert(`'${nn}' 지점이 이미 있습니다.`); return }
+    // 🔴 id로 저장하기 때문에 이름 변경은 이 한 줄이 전부다.
+    //    반 이름 변경이 학생 레코드를 전수 훑어야 하는 것(KlassEditor)과 대비된다.
+    updateBranch(id, { name: nn })
+    setEditing(null)
+  }
+
+  const del = (b: { id: string; name: string }) => {
+    const n = stats.get(b.id)?.n ?? 0
+    const last = branches.length === 2
+    const msg = `'${b.name}' 지점을 삭제할까요?\n\n` +
+      `소속 학생 ${n}명은 **지점 미배정**이 되고, 학생 정보·채점 기록은 하나도 지워지지 않습니다.` +
+      (last ? '\n\n⚠️ 지점이 1개가 되어 지점 기능이 화면에서 숨겨집니다.' : '')
+    if (!window.confirm(msg)) return
+    for (const s of allStudents) if (s.branchId === b.id) updateStudent(s.id, { branchId: undefined })
+    if (branchScope === b.id) setBranchScope('all')
+    removeBranch(b.id)
+  }
+
+  return (
+    <div className="grid gap-4">
+      <div className="rounded-xl border border-line bg-paper2/50 px-4 py-3 text-sm text-ink2">
+        지점은 <b className="text-ink">학생·반·수업 화면을 지점별로 나눠 보기</b> 위한 것입니다.
+        지점을 2개 이상 만들면 헤더 오른쪽 학원명 자리에 <b className="text-ink">지점 선택</b>이 나타납니다.
+        <span className="mt-1 block text-xs">
+          이 화면은 학생을 지점 사이로 옮기는 곳이라 <b>헤더에서 고른 지점과 상관없이 전 학생</b>이 보입니다.
+        </span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <span className="text-sm font-bold">
+          지점 <b className="text-pine">{branches.length}</b>개
+          {unassigned > 0 && <span className="ml-2 font-normal text-ink2">· 지점 미배정 <b className="text-clay">{unassigned}</b>명</span>}
+        </span>
+        <div className="grow" />
+        <button onClick={create}
+          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">⊕ 지점 만들기</button>
+      </div>
+
+      {branches.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-line px-6 py-14 text-center text-sm text-ink2">
+          <div className="mb-2 text-3xl">🏫</div>
+          아직 지점이 없습니다. <b className="text-ink">[⊕ 지점 만들기]</b>로 지점을 만들면
+          학생·반·수업을 지점별로 나눠 볼 수 있어요.<br />
+          <span className="text-xs">지점이 1개뿐이면 지점 기능은 화면에 나타나지 않습니다.</span>
+        </div>
+      ) : (
+        <div className="overflow-hidden rounded-2xl border border-line bg-white">
+          <table className="w-full text-sm">
+            <thead className="bg-paper2 text-left text-xs text-ink2">
+              <tr>
+                <th className="w-14 px-3 py-2.5">순서</th>
+                <th className="px-3 py-2.5">지점 이름</th>
+                <th className="w-28 px-3 py-2.5">소속 학생</th>
+                <th className="px-3 py-2.5">반</th>
+                <th className="w-40 px-3 py-2.5"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {branches.map((b, i) => {
+                const st = stats.get(b.id)
+                return (
+                  <tr key={b.id} className="border-t border-line/70">
+                    <td className="px-3 py-2.5 text-ink2">{i + 1}</td>
+                    <td className="px-3 py-2.5">
+                      {editing === b.id ? (
+                        <input autoFocus value={draft} onChange={e => setDraft(e.target.value)}
+                          onKeyDown={e => { if (e.key === 'Enter') rename(b.id); if (e.key === 'Escape') setEditing(null) }}
+                          onBlur={() => rename(b.id)}
+                          className="w-48 rounded-lg border border-pine px-2 py-1 text-sm" />
+                      ) : (
+                        <button onClick={() => { setEditing(b.id); setDraft(b.name) }}
+                          className="font-bold hover:text-pine" title="이름 바꾸기">{b.name}</button>
+                      )}
+                    </td>
+                    <td className="px-3 py-2.5">{st?.n ?? 0}명</td>
+                    <td className="px-3 py-2.5 text-ink2">
+                      {st && st.klasses.size ? `${[...st.klasses].join(', ')} (${st.klasses.size}개)` : '—'}
+                    </td>
+                    <td className="px-3 py-2.5">
+                      <div className="flex justify-end gap-1">
+                        <button onClick={() => move(i, -1)} disabled={i === 0}
+                          className="rounded px-2 py-1 text-ink2 hover:bg-paper2 disabled:opacity-30">↑</button>
+                        <button onClick={() => move(i, 1)} disabled={i === branches.length - 1}
+                          className="rounded px-2 py-1 text-ink2 hover:bg-paper2 disabled:opacity-30">↓</button>
+                        <button onClick={() => del(b)}
+                          className="rounded px-2 py-1 text-clay hover:bg-red-50">삭제</button>
+                      </div>
+                    </td>
+                  </tr>
+                )
+              })}
+              {unassigned > 0 && (
+                <tr className="border-t border-line/70 bg-paper2/40">
+                  <td className="px-3 py-2.5 text-ink2">—</td>
+                  <td className="px-3 py-2.5 text-ink2">지점 미배정</td>
+                  <td className="px-3 py-2.5 text-clay">{unassigned}명</td>
+                  <td className="px-3 py-2.5 text-xs text-ink2" colSpan={2}>
+                    어느 지점을 골라도 보입니다 — <b>학생 관리</b> 탭에서 「지점 미배정만」으로 걸러 배정하세요.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ── 반 관리 ───────────────────────────────────────
 // 원본(매쓰플랫) 구조: 반 만들기/상세는 전체 화면 + 학생 듀얼 리스트.
 // 학생 폼의 "반" 문자열 방식과 양방향 호환 — 저장 시 Student.klass를 갱신한다.
-
+//
+// 🔴 지점: 이 화면의 `students`는 store에서 이미 지점 스코프가 적용된 목록이다.
+//    그래서 반 목록·삭제·중복검사가 자동으로 그 지점 안에서만 동작한다. (store.tsx scopedStudents)
 function KlassTab() {
-  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile, teachers } = useStore()
+  const { students, updateStudent, klassOrder, setKlassOrder, academyProfile, teachers,
+          branches, branchScope, multiBranch } = useStore()
+  // 🔴 다지점에서 '전체 지점'으로 보는 중이면 반을 만들거나 지울 수 없다.
+  //    반 이름은 자유 텍스트라 당진 'A반'과 내포 'A반'이 같은 이름이다 →
+  //    전체 상태에서 삭제하면 **두 지점 학생의 반이 한꺼번에 지워진다.**
+  const crossBranch = multiBranch && branchScope === 'all'
+  const curBranchName = branches.find(b => b.id === branchScope)?.name
   const [query, setQuery] = useState('')
   const [editor, setEditor] = useState<{ name?: string } | null>(null)
   const [sel, setSel] = useState<Set<string>>(new Set())
@@ -1457,7 +1702,9 @@ function KlassTab() {
 
   const removeSelected = () => {
     if (sel.size === 0) return
-    if (!confirm(`선택한 반 ${sel.size}개를 삭제할까요? 반 학생은 미배정으로 이동합니다.`)) return
+    if (crossBranch) { alert('지점을 먼저 고른 뒤에 반을 삭제해주세요.\n\n반 이름은 지점끼리 겹칠 수 있어서, 전체 지점 상태에서 지우면 다른 지점 학생의 반까지 지워집니다.'); return }
+    if (!confirm(`선택한 반 ${sel.size}개를 삭제할까요? 반 학생은 미배정으로 이동합니다.`
+      + (multiBranch ? `\n\n대상: ${curBranchName} 지점 학생 + 지점 미배정 학생` : ''))) return
     for (const name of sel) {
       for (const s of students) if (s.klass === name) updateStudent(s.id, { klass: undefined })
     }
@@ -1470,6 +1717,14 @@ function KlassTab() {
   return (
     <div>
       <div className="mb-2 text-xs text-ink2">반 정렬 순서(이동 ↑↓)는 이 목록의 표시 순서에 반영됩니다.</div>
+      {multiBranch && (
+        <div className={`mb-3 rounded-lg px-3 py-2 text-xs ${crossBranch ? 'bg-amber/15 text-ink' : 'bg-paper2 text-ink2'}`}>
+          {crossBranch
+            ? <>⚠️ <b>전체 지점</b>을 보는 중입니다 — 여러 지점의 반이 한 목록에 섞여 있어 <b>반 만들기·삭제가 잠겨</b> 있습니다.
+                헤더 오른쪽에서 지점을 고르세요.</>
+            : <><b className="text-pine">{curBranchName}</b> 지점의 반입니다 (지점 미배정 학생 포함).</>}
+        </div>
+      )}
       <div className="mb-4 flex flex-wrap items-center gap-3">
         <div className="flex items-center gap-0">
           <input value={query} onChange={e => setQuery(e.target.value)}
@@ -1486,8 +1741,9 @@ function KlassTab() {
           </button>
         )}
         <div className="grow" />
-        <button onClick={() => setEditor({})}
-          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">⊕ 반 만들기</button>
+        <button onClick={() => setEditor({})} disabled={crossBranch}
+          title={crossBranch ? '지점을 먼저 고르세요 — 어느 지점의 반인지 정해져야 만들 수 있습니다' : undefined}
+          className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper disabled:opacity-40">⊕ 반 만들기</button>
       </div>
 
       {groups.length === 0 ? (

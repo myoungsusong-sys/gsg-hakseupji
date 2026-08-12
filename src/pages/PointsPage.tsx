@@ -11,7 +11,10 @@ import type { Student } from '../types'
 const INPUT = 'rounded-lg border border-line px-2 py-1.5 text-sm'
 
 export default function PointsPage() {
-  const { students, gradings, ttChecks, pointEntries, pointSettlements, addPointEntry, removePointEntry, savePointSettlement } = useStore()
+  const { students, gradings, ttChecks, pointEntries, pointSettlements, addPointEntry, removePointEntry, savePointSettlement,
+          branches, branchScope, multiBranch } = useStore()
+  // 정산서 머리말용 지점명 — 단일 지점 학원이면 빈 문자열(예전과 동일한 머리말)
+  const branchName = multiBranch ? (branches.find(b => b.id === branchScope)?.name ?? '전체 지점') : ''
   const brand = useBrand()
   const today = todayKey()
   const [month, setMonth] = useState(today.slice(0, 7))
@@ -65,7 +68,8 @@ export default function PointsPage() {
 
       <div className="note-print overflow-hidden rounded-2xl border border-line bg-white">
         <div className="hidden border-b-2 border-ink px-5 py-3 print:block">
-          <b className="text-lg">{brand} · {month} 포인트 정산서</b>
+          {/* 지점명을 넣는다 — 당진·내포는 배분 구조가 다른 별개 사업이라 정산서가 섞이면 안 된다 */}
+          <b className="text-lg">{brand}{branchName ? ` ${branchName}` : ''} · {month} 포인트 정산서</b>
         </div>
         <table className="w-full text-sm">
           <thead className="bg-paper2/60 text-left">

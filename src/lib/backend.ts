@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 import type {
-  AcademyProfile, Assignment, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, Branch, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -41,6 +41,7 @@ export interface CloudData {
   lecturePlans: LecturePlan[]                  // 강의 진도표 (settings 'lecturePlans')
   solveFeedbacks: SolveFeedback[]              // 학생 풀이 AI 피드백 (settings 'solveFeedbacks')
   teachers: Teacher[]                         // 강사 (settings 'teachers')
+  branches: Branch[]                           // 지점 (settings 'branches') — 당진·내포 등
   ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
   pointEntries: PointEntry[]                   // 포인트 수동/학부모 항목 (settings 'pointEntries')
   pointSettlements: PointSettlement[]
@@ -100,6 +101,7 @@ export async function loadAll(): Promise<CloudData | null> {
     solveFeedbacks: (settingsMap.get('solveFeedbacks') as SolveFeedback[]) ?? [],
     bugReports: (settingsMap.get('bugReports') as BugReport[]) ?? [],
     teachers: (settingsMap.get('teachers') as Teacher[]) ?? [],
+    branches: (settingsMap.get('branches') as Branch[]) ?? [],
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
     pointEntries: (settingsMap.get('pointEntries') as PointEntry[]) ?? [],
     pointSettlements: (settingsMap.get('pointSettlements') as PointSettlement[]) ?? [],
@@ -163,6 +165,7 @@ export const cloud = {
       local.solveFeedbacks.length ? this.setSetting('solveFeedbacks', local.solveFeedbacks) : Promise.resolve(),
       local.bugReports.length ? this.setSetting('bugReports', local.bugReports) : Promise.resolve(),
       local.teachers.length ? this.setSetting('teachers', local.teachers) : Promise.resolve(),
+      local.branches.length ? this.setSetting('branches', local.branches) : Promise.resolve(),
       Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
       (local.pointEntries ?? []).length ? this.setSetting('pointEntries', local.pointEntries) : Promise.resolve(),
       (local.pointSettlements ?? []).length ? this.setSetting('pointSettlements', local.pointSettlements) : Promise.resolve(),

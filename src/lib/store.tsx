@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, Branch, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -9,6 +9,7 @@ import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../da
 import { loadPool } from '../data/pool'
 import { defaultCurriculumForGrade } from '../data/curriculum'
 import { cloud, loadAll, noteId, type CloudData } from './backend'
+import { ALL, setBranch, useBranchScope } from './branch'
 
 const LS_KEY = 'gsg-hakseupji-v1'
 
@@ -43,6 +44,7 @@ interface Persisted {
   solveFeedbacks: SolveFeedback[]
   bugReports: BugReport[]
   teachers: Teacher[]
+  branches: Branch[]
   ttChecks: Record<string, true>
   pointEntries: PointEntry[]
   pointSettlements: PointSettlement[]
@@ -64,6 +66,7 @@ const EMPTY: Persisted = {
   solveFeedbacks: [],
   bugReports: [],
   teachers: [],
+  branches: [],
   ttChecks: {},
   pointEntries: [],
   pointSettlements: [],
@@ -101,6 +104,15 @@ interface Store extends Persisted {
   removeLecturePlan: (id: string) => void
   saveSolveFeedback: (f: SolveFeedback) => void      // 학생 풀이 AI 피드백 저장 (학생×학습지×문항 최신 1개)
   saveBugReport: (r: BugReport) => void              // 🛠 AI 점검 오류 보고 접수/갱신 (최근 200건 유지)
+  // ── 지점(Branch) — 당진·내포처럼 나눠 운영하는 단위. 자세한 설계는 types.ts Branch 주석 ──
+  allStudents: Student[]        // 🔴 지점 스코프 **미적용** 원본. 학생앱 본인매칭·계정 중복검사 전용
+  branchScope: string           // 지금 보고 있는 지점 id ('all' = 전체)
+  multiBranch: boolean          // 지점이 2개 이상 — false면 지점 UI가 화면에 없다
+  setBranchScope: (v: string) => void
+  addBranch: (b: Omit<Branch, 'id'>) => string
+  updateBranch: (id: string, patch: Partial<Branch>) => void
+  removeBranch: (id: string) => void
+  setBranches: (next: Branch[]) => void                        // 순서 변경(배열 자체가 표시 순서)
   addTeacher: (t: Omit<Teacher, 'id' | 'active'>) => string   // 강사 등록
   updateTeacher: (id: string, patch: Partial<Teacher>) => void
   removeTeacher: (id: string) => void
@@ -183,6 +195,7 @@ function fromCloud(r: CloudData): Persisted {
     solveFeedbacks: r.solveFeedbacks ?? [],
     bugReports: r.bugReports ?? [],
     teachers: r.teachers ?? [],
+    branches: r.branches ?? [],
     ttChecks: r.ttChecks ?? {},
     pointEntries: r.pointEntries ?? [],
     pointSettlements: r.pointSettlements ?? [],
@@ -221,7 +234,7 @@ function toCloud(s: Persisted): CloudData {
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
-    lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers,
+    lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
     ttChecks: s.ttChecks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
@@ -337,9 +350,29 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const set = setState
+
+  // ── 지점 스코프 필터 ────────────────────────────────────────────────
+  // 🔴 store.students 를 **여기서 통째로 덮는다**. 화면 20여 곳을 각각 고치는 대신
+  //    파생 한 줄로 거는 이유는, 새 화면이 생겨도 자동으로 지점을 따르게 하기 위해서다.
+  //    전원이 필요한 곳(학생앱 본인매칭·출결번호 중복검사)만 allStudents 를 쓴다.
+  const rawScope = useBranchScope()
+  // 저장된 id가 삭제된 지점이면 조용히 전체로 떨어뜨린다 (학생 0명 화면 방지)
+  const branchScope = state.branches.some(b => b.id === rawScope) ? rawScope : ALL
+  const multiBranch = state.branches.length >= 2
+  const scopedStudents = useMemo(
+    () => (!multiBranch || branchScope === ALL)
+      ? state.students
+      // 미배정(!branchId)은 어느 지점에서도 보인다 — branch.ts 규칙 ③
+      : state.students.filter(s => !s.branchId || s.branchId === branchScope),
+    [state.students, multiBranch, branchScope])
+
   const store: Store = {
     ...state,
     synced,
+    students: scopedStudents,
+    allStudents: state.students,
+    branchScope, multiBranch,
+    setBranchScope: setBranch,
     ensureCourse,
     wbItems: mergeWbItems(state.wbItems, derivedWbItems),   // 수동 등록분이 매칭 교재 파생분을 덮어씀
     // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀
@@ -626,6 +659,23 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     saveSolveFeedback: f => {
       const next = [...stateRef.current.solveFeedbacks.filter(x => x.id !== f.id), f]
       set(s => ({ ...s, solveFeedbacks: next })); cloud.setSetting('solveFeedbacks', next)
+    },
+    addBranch: b => {
+      const id = uid('br')
+      const next = [...stateRef.current.branches, { ...b, id }]
+      set(s => ({ ...s, branches: next })); cloud.setSetting('branches', next)
+      return id
+    },
+    updateBranch: (id, patch) => {
+      const next = stateRef.current.branches.map(b => b.id === id ? { ...b, ...patch } : b)
+      set(s => ({ ...s, branches: next })); cloud.setSetting('branches', next)
+    },
+    removeBranch: id => {
+      const next = stateRef.current.branches.filter(b => b.id !== id)
+      set(s => ({ ...s, branches: next })); cloud.setSetting('branches', next)
+    },
+    setBranches: next => {
+      set(s => ({ ...s, branches: next })); cloud.setSetting('branches', next)
     },
     addTeacher: t => {
       const id = uid('tc')

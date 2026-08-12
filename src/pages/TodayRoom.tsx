@@ -51,7 +51,11 @@ const ago = (ms: number) => {
 const CALL_TEXTS = ['앞으로 나오세요', '틀린 문제 같이 봐요', '질문 있으면 지금 오세요', '풀이 확인하러 오세요']
 
 export default function TodayRoom() {
-  const { students, gradings, workbooks, worksheets, teachers, academyProfile } = useStore()
+  const { students, gradings, workbooks, worksheets, teachers, academyProfile, branches, branchScope, multiBranch } = useStore()
+  // 지점을 골라 본 상태면 제목 앞에 지점명을 박는다 — 어느 교실을 보고 있는지가 늘 보여야 한다
+  const branchLabel = multiBranch
+    ? <><b className="text-pine">{branches.find(b => b.id === branchScope)?.name ?? '전체 지점'}</b> · </>
+    : null
   const [subject] = useSubject()
   const [subjOnly, setSubjOnly] = useState(true)
   const [showZero, setShowZero] = useState(false)
@@ -156,7 +160,7 @@ export default function TodayRoom() {
         </span>
       </div>
       <p className="mb-2 text-sm text-ink2">
-        재원생 <b className="text-ink">{totalActive}명</b> 전원이 대상입니다 —
+        {branchLabel}재원생 <b className="text-ink">{totalActive}명</b> 전원이 대상입니다 —
         <b className="text-ink"> 관리앱 연결 {linked}명</b> ·
         <b className="text-ink"> 학습지앱 전용(수학만) {only}명</b>이 오늘 답을 입력했습니다.
       </p>
