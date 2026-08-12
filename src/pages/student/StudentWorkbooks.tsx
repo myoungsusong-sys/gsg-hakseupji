@@ -311,13 +311,15 @@ function WbAnswer({ item }: { item: WBItem }) {
 // 학생이 공책에 풀고 → [정답 확인]으로 앱의 정답 그림(있으면)을 열어 맞춰본 뒤 스스로 ○/✕/모름 표시.
 // 정답 그림이 없는 '풀이참조' 문항은 교재 뒤 해설로 맞추도록 안내한다.
 // (정답을 먼저 보고 베끼는 걸 막으려고, 반드시 "다 풀었어요"를 누른 뒤에만 정답이 열린다)
-function SelfCheckInput({ item, mark, revealed, onReveal, onMark, elementary = false }: {
+function SelfCheckInput({ item, mark, revealed, onReveal, onMark, elementary = false, answer = '', onAnswer }: {
   item: WBItem
   mark?: Mark
   revealed: boolean
   onReveal: () => void
   onMark: (m: Mark) => void
   elementary?: boolean
+  answer?: string                      // 학생이 쓴 답 (자기채점 문항도 답을 남긴다 — 2026-08-12)
+  onAnswer?: (v: string) => void
 }) {
   const a = (item.answer ?? '').trim()
   // 앱에 정답이 있는 문항(모범답안 문장 · 정답 그림)과, 정답 자체가 없는 '풀이참조' 문항을 구분
@@ -370,6 +372,23 @@ function SelfCheckInput({ item, mark, revealed, onReveal, onMark, elementary = f
               </button>
             ))}
           </div>
+
+          {/* ✍️ 내가 쓴 답 — 자기채점 문항도 **답을 남긴다** (2026-08-12 명수쌤 "답도 저장되게").
+              전에는 ○/✕만 눌러서, 선생님 화면에 '몇 번을 틀렸다'만 보이고 무엇이라 썼는지는 알 수 없었다.
+              강요하지 않는다(비워도 채점된다) — 틀렸을 때만 눈에 띄게 물어본다. */}
+          {mark && mark !== '정답' && onAnswer && (
+            <div className="grid gap-1">
+              <span className="text-[11px] font-semibold text-clay">
+                내가 쓴 답을 적어두면 선생님이 어디서 틀렸는지 바로 봐요 <span className="text-ink2">(건너뛰어도 돼요)</span>
+              </span>
+              <input
+                value={answer}
+                onChange={e => onAnswer(e.target.value)}
+                placeholder="예: 3, x=2, ②"
+                className="h-10 rounded-lg border border-line bg-white px-3 text-sm outline-none focus:border-pine"
+              />
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -591,7 +610,12 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     for (const i of selfOnPage) {
       const m = selfMarks[i.id]
       if (!m) continue
-      results.push({ itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined, self: true })
+      // 학생이 답을 적었으면 함께 저장한다 (관리앱 선생님 화면에 '내 답'으로 보인다)
+      const typed = (answers[i.id] ?? '').trim()
+      results.push({
+        itemId: i.id, correct: m === '정답', unknown: m === '모름' || undefined, self: true,
+        ...(typed ? { studentAnswer: typed } : {}),
+      })
     }
     if (results.length === 0) return
     const today = todayKey()
@@ -739,6 +763,8 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
                           onChange={v => setAnswers(prev => ({ ...prev, [i.id]: v }))} />
                       ) : (
                         <SelfCheckInput item={i} mark={selfMarks[i.id]} revealed={!!revealed[i.id]} elementary={elem}
+                          answer={answers[i.id] ?? ''}
+                          onAnswer={v => setAnswers(prev => ({ ...prev, [i.id]: v }))}
                           onReveal={() => setRevealed(p => ({ ...p, [i.id]: true }))}
                           onMark={m => setSelfMarks(p => (p[i.id] === m
                             ? Object.fromEntries(Object.entries(p).filter(([k]) => k !== i.id))
