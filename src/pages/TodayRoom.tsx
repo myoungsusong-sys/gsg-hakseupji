@@ -78,7 +78,7 @@ export default function TodayRoom() {
   const today = todayKey()
   const teacherName = teachers?.find(t => t.name)?.name || academyProfile.teacherName || '선생님'
 
-  const { rows, idle } = useMemo(() => {
+  const { rows, idle, totalActive, linked, only } = useMemo(() => {
     const actives = students.filter(s => s.active)
     const byId = new Map(actives.map(s => [s.id, s]))
     const wbById = new Map(workbooks.map(w => [w.id, w]))
@@ -116,7 +116,16 @@ export default function TodayRoom() {
       sort === 'recent' ? b.lastAt - a.lastAt
       : sort === 'name' ? a.st.name.localeCompare(b.st.name, 'ko')
       : (b.open - a.open) || (b.lastAt - a.lastAt))
-    return { rows: list, idle: actives.filter(s => !acc.has(s.id)) }
+    // 출처 내역 — "관리앱 아이들만 뜨는 것 아니냐"를 화면에서 바로 확인할 수 있게 나눠 센다.
+    // (표시용으로 mgmtId 로 거르는 코드는 이 앱 어디에도 없다. 재원생이면 전원 잡힌다.)
+    const linked = list.filter(r => r.st.mgmtId).length
+    return {
+      rows: list,
+      idle: actives.filter(s => !acc.has(s.id)),
+      totalActive: actives.length,
+      linked,
+      only: list.length - linked,
+    }
   }, [students, gradings, workbooks, worksheets, subject, subjOnly, sort, today])
 
   const callOf = useMemo(() => new Map(calls.map(c => [c.studentId, c])), [calls])
@@ -146,9 +155,14 @@ export default function TodayRoom() {
           {calls.length > 0 && <> · 호출중 <b className="text-clay">{calls.filter(c => c.state === 'calling').length}명</b></>}
         </span>
       </div>
+      <p className="mb-2 text-sm text-ink2">
+        재원생 <b className="text-ink">{totalActive}명</b> 전원이 대상입니다 —
+        <b className="text-ink"> 관리앱 연결 {linked}명</b> ·
+        <b className="text-ink"> 학습지앱 전용(수학만) {only}명</b>이 오늘 답을 입력했습니다.
+      </p>
       <p className="mb-4 text-sm text-ink2">
-        오늘 답을 입력한 학생이 <b>출제 여부·교재/학습지 구분 없이</b> 전부 나옵니다.
-        오답이 많은 학생이 앞에 옵니다 — 위에서부터 부르시면 됩니다.
+        출제 여부·교재/학습지 구분 없이 전부 나옵니다. 오답이 많은 학생이 앞에 옵니다 —
+        위에서부터 부르시면 됩니다.
       </p>
 
       <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
