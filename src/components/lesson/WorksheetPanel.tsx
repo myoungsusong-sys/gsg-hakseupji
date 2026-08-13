@@ -447,16 +447,33 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
 
   function queueSave(next: Record<string, SheetMark>) {
     if (list.length === 0) return
-    // ★ 마킹된 문항만 기록 — itemId=문제 id (미채점 문항은 결과에 넣지 않는다)
-    const results: GradeResult[] = list
-      .filter(p => next[p.id] != null)
-      .map(p => {
-        const m = next[p.id]!
-        return { itemId: p.id, typeId: p.typeId, correct: m === '정답', unknown: m === '모름' || undefined }
-      })
     const today = todayKey()
     const exist = gradingsRef.current.find(g =>
       g.studentId === student.id && g.source === '학습지' && g.worksheetId === ws.id && dateKey(g.date) === today)
+
+    // 🔴 기존 결과에 **덮어쓰지 말고 합친다.**
+    //    예전에는 마킹된 문항만으로 results 를 새로 만들어 같은 id 에 upsert 했다 →
+    //    학생이 오늘 제출한 기록(풀이 이미지·AI 판정·승인 대기·학생 답·풀이 시간)이
+    //    선생님이 그 학습지를 열어 한 문항만 표시하는 순간 **통째로 사라졌다** (2026-08-13 발견).
+    const prevAll = exist?.results ?? []
+    const prevById = new Map<string, GradeResult>()
+    for (const r of prevAll) if (r.itemId) prevById.set(r.itemId, r)
+    const results: GradeResult[] = []
+    for (const p of list) {
+      const m = next[p.id]
+      const prev = prevById.get(p.id)
+      if (m == null) { if (prev) results.push(prev); continue }   // 선생님이 안 건드린 문항은 원본 보존
+      // 선생님이 표시했다 = 사람이 확정한 것. 승인 대기였다면 여기서 확정된다.
+      results.push({
+        ...prev,
+        itemId: p.id, typeId: p.typeId,
+        correct: m === '정답', unknown: m === '모름' || undefined,
+        ...(prev?.pending ? { pending: undefined, approvedAt: new Date().toISOString() } : {}),
+      })
+    }
+    // list 에 없는 옛 기록(학습지 문항이 바뀐 경우·itemId 없는 구버전)도 버리지 않는다
+    const seen = new Set(list.map(p => p.id))
+    for (const r of prevAll) if (!r.itemId || !seen.has(r.itemId)) results.push(r)
     // 아무것도 마킹돼 있지 않고 기존 기록도 없으면 빈 기록을 만들지 않는다
     if (results.length === 0 && !exist && !gidRef.current) return
     const id = exist?.id ?? gidRef.current ?? uid('gr')
