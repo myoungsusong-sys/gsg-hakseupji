@@ -302,6 +302,35 @@ export interface GradeResult {
   pending?: 'ai' | 'teacher'   // 'ai'=AI 판정 대기 · 'teacher'=선생님 승인 대기 · 없으면 확정
   ai?: { verdict: boolean | null; reason: string; confidence: 'high' | 'mid' | 'low'; at: string }
   approvedAt?: string    // 선생님 확정 시각 (승인/수정 완료)
+  // ── 서술형 점수제(부분점수) + 첨삭 ──
+  // 🔴 correct 의 의미는 **바꾸지 않는다**(= 만점일 때만 true). 정답률·포인트·리포트 50여 곳이
+  //    correct 를 세고 있어서, 부분점수를 correct 에 반영하면 전 화면 숫자가 한꺼번에 흔들린다.
+  //    점수는 이 필드들로 따로 표시한다. 옛 기록은 전부 undefined 이므로 화면은 반드시
+  //    `score != null` 로 가드하고, 합계는 `filter(r => r.score != null)` 뒤에 더한다(NaN 방지).
+  score?: number         // 받은 점수
+  maxScore?: number      // 만점 (루브릭의 배점 합)
+  criteria?: { text: string; weight: number; got: number }[]   // 채점 당시 기준 스냅샷
+  rubricAt?: string      // 그때 쓴 루브릭 판본 (정본이 수정돼도 과거 점수는 안 변한다)
+  feedback?: string      // 학생이 읽는 첨삭 글 (ai.reason 은 선생님용이라 학생에게 보이지 않는다)
+  feedbackBy?: 'ai' | 'teacher'
+}
+
+// ── 서술형 배점 기준표(루브릭) ─────────────────────────
+// 🔴 **문항 단위로 한 번만 만들어 캐시한다.** 같은 문항을 푸는 모든 학생이 같은 기준으로 채점되게
+//    하는 것이 이 기능의 핵심이다. 학생마다 AI 가 기준을 새로 만들면 같은 답이 학생에 따라
+//    다른 점수를 받는다.
+// 🔴 저장은 hj_settings 의 **문항당 1행**(`rubric_<problemId>`) — live_*·replay_* 와 같은 방식.
+//    설정 키 하나에 맵으로 몰면 문항 수만큼 커져서(서술형 후보만 7만 문항) 쓰기마다 전량 업로드 +
+//    전 기기 재다운로드가 돌고, 동시 채점 시 서로를 덮어 지운다. 자세한 건 src/lib/rubric.ts.
+export interface Rubric {
+  id: string             // = Problem.id
+  maxScore: number       // criteria 의 weight 합과 반드시 같다
+  criteria: { text: string; weight: number }[]
+  answer?: string        // AI 가 정답·해설 이미지에서 읽어낸 최종 답
+  source?: 'answerText' | 'answerImage' | 'solutionImage' | 'aiSolved'
+  confidence?: 'high' | 'mid' | 'low'
+  at: string
+  by: 'ai' | 'teacher'   // 선생님이 점수를 조정해 확정하면 'teacher' 로 승격
 }
 
 export interface Grading {

@@ -61,7 +61,7 @@ async function rows(table: string): Promise<any[]> {
     let q = supabase.from(table).select('data').range(from, from + PAGE - 1)
     // 설정 테이블의 실시간 스냅샷(live_*)·풀이 녹화(replay_*) 행은 크고(이미지·이벤트 로그)
     // 부팅에 불필요하다 — 전용 API(lib/live.ts·lib/replay.ts)로만 읽으므로 부팅 로드에서 제외
-    if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%')
+    if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%').not('id', 'like', 'rubric_%')
     const { data, error } = await q
     if (error) { console.warn('load', table, error.message); break }
     const batch = data ?? []
@@ -181,7 +181,7 @@ export const cloud = {
     for (const t of ALL_TABLES)
       ch.on('postgres_changes', { event: '*', schema: 'public', table: t }, (payload: any) => {
         const id = payload?.new?.id ?? payload?.old?.id
-        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_'))) return
+        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_') || id.startsWith('rubric_'))) return
         onChange()
       })
     ch.subscribe()
