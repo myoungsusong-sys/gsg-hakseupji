@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Grading, Problem } from '../../types'
 import { useStore, uid } from '../../lib/store'
-import { isMachineGradable, requestAiGrade, requestAiQuiz, type AiQuiz } from '../../lib/aiGrade'
+import { gradeWithRubric, isMachineGradable, requestAiQuiz, type AiQuiz } from '../../lib/aiGrade'
 
 // 서술형 즉시채점 결과 — AI 판정 + 확인용 객관식을 맞혔는지
 export interface AiMark {
@@ -11,6 +11,12 @@ export interface AiMark {
   confidence: 'high' | 'mid' | 'low'
   at: string
   quizOk?: boolean          // 틀린 뒤 확인용 객관식을 맞혔으면 true
+  // ── 점수제(부분점수) — 루브릭이 있을 때만 채워진다 ──
+  score?: number
+  maxScore?: number
+  criteria?: { text: string; weight: number; got: number }[]
+  feedback?: string         // 학생이 읽는 첨삭
+  rubricAt?: string
 }
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
@@ -385,18 +391,27 @@ export default function StudentSolve() {
         let ai: GradeResult['ai']
         // 학생이 문항에서 이미 [AI 채점받기]를 눌렀으면 그 판정을 쓴다 — 같은 답으로 두 번 부르지 않는다
         const done = aiMarks[q.id]
-        if (done) ai = { verdict: done.verdict, reason: done.reason, confidence: done.confidence, at: done.at }
+        let sc: Partial<GradeResult> = {}
+        if (done) {
+          ai = { verdict: done.verdict, reason: done.reason, confidence: done.confidence, at: done.at }
+          sc = { score: done.score, maxScore: done.maxScore, criteria: done.criteria,
+                 feedback: done.feedback, feedbackBy: done.feedback ? 'ai' : undefined, rubricAt: done.rubricAt }
+        }
         // 관리 > 학생앱 설정의 「🤖 AI 1차 채점」 스위치를 실제로 따른다.
         // 🔴 예전에는 이 값을 읽는 코드가 없어서, 꺼둔 상태로도 AI 가 계속 호출됐다 (2026-08-13 수리).
         else if (cfg.aiGrade ?? true) try {
-          const v = await requestAiGrade(q, a, workImg)
+          const { v, rubricAt } = await gradeWithRubric(q, a, workImg)
           ai = { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() }
+          sc = { score: v.score, maxScore: v.maxScore, criteria: v.criteria,
+                 feedback: v.feedback, feedbackBy: v.feedback ? 'ai' : undefined, rubricAt }
         } catch { /* AI 실패 — 판정 없이 선생님 승인 대기로 */ }
         results.push({
           itemId: q.id, typeId: q.typeId, studentAnswer: a, workImg, sec,
+          // 🔴 correct 의 의미는 그대로다 — 만점일 때만 true. 부분점수는 score 로만 표시한다
+          //    (정답률·포인트·리포트 50여 곳이 correct 를 센다)
           correct: ai?.verdict === true,
           unknown: ai?.verdict == null || undefined,
-          pending: 'teacher', ai,
+          pending: 'teacher', ai, ...sc,
         })
         continue
       }
@@ -945,8 +960,11 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true
     if (!t || grading) return
     setGrading(true); setErr('')
     try {
-      const v = await requestAiGrade(p, t)
-      const m: AiMark = { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() }
+      const { v, rubricAt } = await gradeWithRubric(p, t)
+      const m: AiMark = {
+        verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString(),
+        score: v.score, maxScore: v.maxScore, criteria: v.criteria, feedback: v.feedback, rubricAt,
+      }
       onGraded?.(m)
       setRevealed(true)
       if (v.verdict === false) await openQuiz()
@@ -997,11 +1015,36 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true
       {ai && (
         <div className={`grid gap-1 rounded-xl px-3 py-2 ${
           ai.verdict === true ? 'bg-pine-soft' : ai.verdict === false ? 'bg-red-50' : 'bg-amber-soft'}`}>
-          <b className={`text-sm ${
-            ai.verdict === true ? 'text-pine-dark' : ai.verdict === false ? 'text-clay' : 'text-amber'}`}>
-            {ai.verdict === true ? '○ 정답이에요!' : ai.verdict === false ? '✕ 틀렸어요' : '? AI가 판정하지 못했어요 — 선생님이 확인해요'}
-          </b>
-          {!!ai.reason && <span className="text-[11px] leading-relaxed text-ink2">{ai.reason}</span>}
+          <div className="flex flex-wrap items-center gap-2">
+            <b className={`text-sm ${
+              ai.verdict === true ? 'text-pine-dark' : ai.verdict === false ? 'text-clay' : 'text-amber'}`}>
+              {ai.verdict === true ? '○ 정답이에요!' : ai.verdict === false ? '✕ 틀렸어요' : '? AI가 판정하지 못했어요 — 선생님이 확인해요'}
+            </b>
+            {/* 부분점수 — 루브릭이 있을 때만. 옛 기록은 score 가 없어 이 뱃지가 안 뜬다 */}
+            {ai.score != null && ai.maxScore != null && (
+              <span className="rounded-lg bg-white px-2 py-0.5 text-sm font-black text-ink">
+                {ai.score} <span className="text-xs font-bold text-ink2">/ {ai.maxScore}점</span>
+              </span>
+            )}
+          </div>
+          {/* 기준별 획득 — 어디서 깎였는지 학생이 스스로 안다 */}
+          {!!ai.criteria?.length && (
+            <div className="grid gap-0.5 rounded-lg bg-white/70 px-2.5 py-1.5">
+              {ai.criteria.map((c, i) => (
+                <div key={i} className="flex items-start gap-1.5 text-[11px] leading-relaxed">
+                  <span className={c.got >= c.weight ? 'text-pine' : c.got > 0 ? 'text-amber' : 'text-clay'}>
+                    {c.got >= c.weight ? '○' : c.got > 0 ? '△' : '✕'}
+                  </span>
+                  <span className="grow text-ink2">{c.text}</span>
+                  <span className="shrink-0 font-bold text-ink2">{c.got}/{c.weight}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          {/* 첨삭이 있으면 첨삭을, 없으면 예전처럼 판정 근거를 보여준다 */}
+          {!!(ai.feedback || ai.reason) && (
+            <span className="text-[11px] leading-relaxed text-ink2">{ai.feedback || ai.reason}</span>
+          )}
           {ai.verdict === false && (
             <div className="mt-0.5 grid gap-1.5">
               <b className="text-xs text-clay">🖍 아래 정답을 <u>빨간펜으로 문제집에 직접</u> 적으세요.</b>

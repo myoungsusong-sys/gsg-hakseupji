@@ -10,6 +10,10 @@ import MathText, { isImageUrl } from '../MathText'
 export default function AiApprovalPanel() {
   const { gradings, worksheets, students, problems, upsertGrading } = useStore()
   const [open, setOpen] = useState(false)
+  // 🔴 점수·첨삭 입력을 upsertGrading 에 직접 물리면 글자 하나마다 전역 저장 + 목록 전체
+  //    재계산 + 실시간 동기화가 돈다. 확정을 누를 때만 커밋한다. 키 = `${gId}#${rIdx}`
+  const [draft, setDraft] = useState<Record<string, { score?: number; feedback?: string }>>({})
+  const [drawer, setDrawer] = useState<string | null>(null)
   // 선생님이 판정하려면 문제와 모범답안이 보여야 한다. 학습지 문항은 problems 에 있다.
   // (해당 과정이 아직 안 불러와졌으면 못 찾을 수 있다 — 그때는 학생 답만 보여준다)
   const probOf = useMemo(() => new Map(problems.map(p => [p.id, p])), [problems])
@@ -42,13 +46,30 @@ export default function AiApprovalPanel() {
   // 확정: correct 지정, pending 제거, approvedAt 기록
   // 🔴 unknown 도 반드시 지운다 — AI 판정이 없어 '모름'으로 들어온 문항을 선생님이 ○/✕ 로
   //    확정했는데 unknown 이 남아 있으면 통계에서 계속 '모름'으로 세어진다 (2026-08-07 발견)
-  function decide(gId: string, rIdx: number, correct: boolean) {
+  // 🔴 score 도 같이 맞춘다 — 안 그러면 선생님이 AI 의 ○ 를 ✕ 로 뒤집었을 때
+  //    correct:false 인데 score:만점 인 모순 기록이 남는다.
+  //    mode: 'keep'=AI 점수 유지 · 'full'=만점 · 'zero'=0점 (선생님이 직접 넣은 값이 있으면 그게 우선)
+  function decide(gId: string, rIdx: number, correct: boolean, mode: 'keep' | 'full' | 'zero') {
     const g = gradings.find(x => x.id === gId)
     if (!g) return
-    const results = g.results.map((r, i) => i === rIdx
-      ? { ...r, correct, unknown: undefined, pending: undefined, approvedAt: new Date().toISOString() }
-      : r)
+    const key = `${gId}#${rIdx}`
+    const d = draft[key]
+    const at = new Date().toISOString()
+    const results = g.results.map((r, i) => {
+      if (i !== rIdx) return r
+      const next: import('../../types').GradeResult = {
+        ...r, correct, unknown: undefined, pending: undefined, approvedAt: at,
+      }
+      if (r.maxScore != null) {
+        next.score = d?.score != null ? d.score
+          : mode === 'full' ? r.maxScore : mode === 'zero' ? 0 : (r.score ?? 0)
+      }
+      if (d?.feedback != null) { next.feedback = d.feedback; next.feedbackBy = 'teacher' }
+      return next
+    })
     upsertGrading({ ...g, results })
+    setDraft(p => { const n = { ...p }; delete n[key]; return n })
+    setDrawer(null)
   }
 
   // 일괄 승인 — AI 판정(신뢰도 high)만 그대로 확정
@@ -144,17 +165,60 @@ export default function AiApprovalPanel() {
                           ? <img src={r.workImg} alt="학생 풀이" className="max-h-56 w-auto max-w-full rounded-xl border border-line" />
                           : <div className="rounded-xl bg-paper2/60 px-3 py-2 text-xs text-ink2">풀이 이미지 없음 — 제출한 답: <b>{r.studentAnswer || '—'}</b></div>}
                         {r.ai?.reason && <p className="mt-2 text-xs leading-relaxed text-ink2">{r.ai.reason}</p>}
+
+                        {/* ✍️ 부분점수 — 점수가 있는 문항에만. 옛 기록은 이 줄이 안 나온다 */}
+                        {r.maxScore != null && (() => {
+                          const key = `${gId}#${rIdx}`
+                          const d = draft[key]
+                          const cur = d?.score ?? r.score ?? 0
+                          const set = (v: number) => setDraft(p => ({ ...p, [key]: { ...p[key], score: Math.max(0, Math.min(r.maxScore!, v)) } }))
+                          return (
+                            <div className="mt-2">
+                              <button onClick={() => setDrawer(drawer === key ? null : key)}
+                                className="rounded-lg border border-line bg-white px-2.5 py-1 text-xs font-bold hover:border-pine">
+                                {cur} / {r.maxScore}점 {drawer === key ? '▴' : '▾'}
+                                {d && <span className="ml-1 text-pine">•</span>}
+                              </button>
+                              {drawer === key && (
+                                <div className="mt-2 grid gap-2 rounded-xl border border-line bg-white p-3">
+                                  {!!r.criteria?.length && (
+                                    <div className="grid gap-1">
+                                      {r.criteria.map((c, k) => (
+                                        <div key={k} className="flex items-start gap-1.5 text-[11px] leading-relaxed">
+                                          <span className="shrink-0 font-bold text-ink2">{c.got}/{c.weight}</span>
+                                          <span className="text-ink2">{c.text}</span>
+                                        </div>
+                                      ))}
+                                      <div className="text-[10px] text-ink2">🤖 AI 가 만든 기준 — 점수는 아래에서 고칠 수 있어요</div>
+                                    </div>
+                                  )}
+                                  <div className="flex items-center gap-2">
+                                    <button onClick={() => set(cur - 1)}
+                                      className="h-7 w-7 rounded-lg border border-line font-bold hover:bg-paper2">−</button>
+                                    <b className="w-16 text-center text-sm">{cur} / {r.maxScore}</b>
+                                    <button onClick={() => set(cur + 1)}
+                                      className="h-7 w-7 rounded-lg border border-line font-bold hover:bg-paper2">+</button>
+                                  </div>
+                                  <textarea rows={4} defaultValue={r.feedback ?? ''}
+                                    onChange={e => setDraft(p => ({ ...p, [key]: { ...p[key], feedback: e.target.value } }))}
+                                    placeholder="학생에게 보여줄 첨삭 — 고치면 '선생님 첨삭'으로 표시됩니다"
+                                    className="w-full resize-none rounded-lg border border-line px-2.5 py-2 text-xs leading-relaxed outline-none focus:border-pine" />
+                                </div>
+                              )}
+                            </div>
+                          )
+                        })()}
                       </div>
                       <div className="flex flex-row gap-1.5 sm:flex-col">
                         {r.ai && r.ai.verdict !== null && r.pending === 'teacher' && (
-                          <button onClick={() => decide(gId, rIdx, r.ai!.verdict === true)}
+                          <button onClick={() => decide(gId, rIdx, r.ai!.verdict === true, 'keep')}
                             className="rounded-lg bg-violet-600 px-3 py-2 text-xs font-bold text-white hover:brightness-110">
                             ✓ AI대로 승인
                           </button>
                         )}
-                        <button onClick={() => decide(gId, rIdx, true)}
+                        <button onClick={() => decide(gId, rIdx, true, 'full')}
                           className="rounded-lg border border-pine px-3 py-2 text-xs font-bold text-pine hover:bg-pine-soft">○ 정답</button>
-                        <button onClick={() => decide(gId, rIdx, false)}
+                        <button onClick={() => decide(gId, rIdx, false, 'zero')}
                           className="rounded-lg border border-clay px-3 py-2 text-xs font-bold text-clay hover:bg-red-50">✕ 오답</button>
                       </div>
                     </div>

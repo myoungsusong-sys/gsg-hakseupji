@@ -1,5 +1,6 @@
-import type { GradeResult, Problem } from '../types'
+import type { GradeResult, Problem, Rubric } from '../types'
 import { normAnswer } from './answers'
+import { getRubric, putRubric } from './rubric'
 
 // ── AI 1차 채점 클라이언트 — 자동채점 불가 문항 판별 + /api/ai-grade 호출 ──
 // 자동채점 가능 = 정답이 "기계 대조 가능한 텍스트"인 문항 (객관식·단답).
@@ -22,11 +23,23 @@ function absUrl(u?: string): string | undefined {
   return new URL(u, window.location.origin).href
 }
 
-export interface AiVerdict { verdict: boolean | null; reason: string; confidence: 'high' | 'mid' | 'low' }
+export interface AiVerdict {
+  verdict: boolean | null; reason: string; confidence: 'high' | 'mid' | 'low'
+  // ── 점수제(부분점수) — 루브릭이 있을 때만 채워진다 ──
+  score?: number; maxScore?: number
+  criteria?: { text: string; weight: number; got: number }[]
+  feedback?: string          // 학생이 읽는 첨삭 (reason 은 선생님용)
+  rubric?: Omit<Rubric, 'id' | 'at' | 'by'>   // 이번에 새로 만들어진 루브릭 → 캐시에 저장한다
+}
 
-export async function requestAiGrade(p: Problem, studentAnswer: string, workImg?: string): Promise<AiVerdict> {
+export async function requestAiGrade(
+  p: Problem, studentAnswer: string, workImg?: string,
+  opt?: { wantRubric?: boolean; rubric?: { maxScore: number; criteria: { text: string; weight: number }[] } },
+): Promise<AiVerdict> {
   const a = (p.answer ?? '').trim()
   const body = {
+    wantRubric: opt?.wantRubric || undefined,
+    rubric: opt?.rubric,
     problemImageUrl: absUrl(p.imageUrl),
     problemText: !p.imageUrl && p.body ? p.body : undefined,
     answerText: a && !isImgUrl(a) && a !== '.' && a !== '-' ? a : undefined,
@@ -45,7 +58,32 @@ export async function requestAiGrade(p: Problem, studentAnswer: string, workImg?
     verdict: j.verdict === true ? true : j.verdict === false ? false : null,
     reason: String(j.reason ?? ''),
     confidence: ['high', 'mid', 'low'].includes(j.confidence) ? j.confidence : 'low',
+    // 🔴 여기를 빠뜨리면 서버가 점수를 잘 돌려줘도 전부 버려진다. 에러가 안 나서
+    //    "왜 점수가 안 뜨지"로 한참 헤매게 된다.
+    score: typeof j.score === 'number' ? j.score : undefined,
+    maxScore: typeof j.maxScore === 'number' ? j.maxScore : undefined,
+    criteria: Array.isArray(j.criteria) ? j.criteria : undefined,
+    feedback: j.feedback ? String(j.feedback) : undefined,
+    rubric: j.rubric ?? undefined,
   }
+}
+
+// ── 서술형 채점 (점수제) ───────────────────────────────────────
+// 루브릭 캐시 조회 → 채점 → 새로 만들어졌으면 캐시에 저장. 호출부가 이 순서를 베끼지 않게 한다.
+export async function gradeWithRubric(
+  p: Problem, studentAnswer: string, workImg?: string,
+): Promise<{ v: AiVerdict; rubricAt?: string }> {
+  const cached = await getRubric(p.id).catch(() => null)
+  const v = await requestAiGrade(p, studentAnswer, workImg, {
+    wantRubric: !cached,
+    rubric: cached ? { maxScore: cached.maxScore, criteria: cached.criteria } : undefined,
+  })
+  if (!cached && v.rubric) {
+    const r: Rubric = { ...v.rubric, id: p.id, at: new Date().toISOString(), by: 'ai' }
+    void putRubric(r)          // 실패해도 채점은 이미 끝났다 — 기다리지 않는다
+    return { v, rubricAt: r.at }
+  }
+  return { v, rubricAt: cached?.at }
 }
 
 // ── 확인용 객관식 ─────────────────────────────────────────────

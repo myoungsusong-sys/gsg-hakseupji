@@ -92,6 +92,41 @@ export default function StudentResult() {
               </b>
             : <span className="text-ink2/60">미입력</span>}
         </div>
+        {/* ✍️ 서술형 부분점수 + 첨삭 — 점수가 있는 기록에만 뜬다.
+            옛 기록은 score 가 undefined 라 이 블록이 통째로 안 그려진다(예전 화면 그대로).
+            🔴 r.ai.reason 은 선생님용 문장이라 여기 절대 노출하지 않는다 — feedback 만 보여준다. */}
+        {r?.score != null && r?.maxScore != null && (
+          <div className="grid gap-1.5 rounded-xl bg-paper2/70 px-3 py-2.5">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className={`rounded-lg px-2 py-0.5 text-sm font-black ${
+                r.pending ? 'bg-violet-100 text-violet-700' : 'bg-white text-ink'}`}>
+                {r.score} <span className="text-xs font-bold text-ink2">/ {r.maxScore}점</span>
+              </span>
+              {r.pending && <span className="text-[11px] font-bold text-violet-700">가채점 — 선생님 확인 중</span>}
+            </div>
+            {!!r.criteria?.length && (
+              <div className="grid gap-0.5">
+                {r.criteria.map((c, i) => (
+                  <div key={i} className="flex items-start gap-1.5 text-[11px] leading-relaxed">
+                    <span className={c.got >= c.weight ? 'text-pine' : c.got > 0 ? 'text-amber' : 'text-clay'}>
+                      {c.got >= c.weight ? '○' : c.got > 0 ? '△' : '✕'}
+                    </span>
+                    <span className="grow text-ink2">{c.text}</span>
+                    <span className="shrink-0 font-bold text-ink2">{c.got}/{c.weight}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {!!r.feedback && (
+              <div className="border-t border-line/50 pt-1.5">
+                <div className="mb-0.5 text-[11px] font-bold text-ink2">
+                  {r.feedbackBy === 'teacher' ? '✍️ 선생님 첨삭' : r.pending ? '🤖 AI 첨삭 (선생님 확인 전)' : '🤖 AI 첨삭'}
+                </div>
+                <p className="text-[12px] leading-relaxed text-ink">{r.feedback}</p>
+              </div>
+            )}
+          </div>
+        )}
         {cfg.showAnswer && p && (
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs font-semibold text-ink2">답 :</span>
