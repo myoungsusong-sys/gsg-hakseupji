@@ -55,6 +55,11 @@ export interface AiQuiz { question: string; choices: string[]; answerIndex: numb
 
 export async function requestAiQuiz(p: Problem, studentAnswer: string): Promise<AiQuiz> {
   const a = (p.answer ?? '').trim()
+  // 🔴 이 함수는 **서술형(=isMachineGradable false)에서만** 불린다. 그런데 예전에는 정답 텍스트를
+  //    보내는 조건이 `a && !isImgUrl(a) && a !== '.' && a !== '-'` 로, 서술형 판정 조건과 **정확히 반대**였다.
+  //    → 서술형이면 answerText 가 반드시 undefined → 서버의 `if (!answer) 400` 에 100% 걸려
+  //    학생에게는 늘 "확인 문제를 만들지 못했어요"만 떴다. 기능이 통째로 죽어 있었다 (2026-08-13 발견).
+  //    이제 정답 이미지·해설 이미지를 함께 보내고, 서버가 AI 에게 **정답을 읽게** 해서 만든다.
   // 🔴 /api/ai-quiz 로 따로 두면 Vercel 함수가 12개 한도를 넘어 배포가 통째로 막힌다
   //    (2026-08-07 실측) — ai-grade 에 mode:'quiz' 로 합쳐 부른다
   const r = await fetch('/api/ai-grade', {
@@ -65,6 +70,8 @@ export async function requestAiQuiz(p: Problem, studentAnswer: string): Promise<
       problemText: !p.imageUrl && p.body ? p.body : undefined,
       answerText: a && !isImgUrl(a) && a !== '.' && a !== '-' ? a : undefined,
       answerImageUrl: isImgUrl(a) ? absUrl(a) : undefined,
+      // 정답 텍스트가 없을 때 AI 가 정답을 읽어낼 근거 — 이게 없으면 서버가 만들지 않는다
+      solutionImageUrl: p.solution && isImgUrl(p.solution) ? absUrl(p.solution) : undefined,
       studentAnswer: studentAnswer || undefined,
     }),
   })
@@ -82,4 +89,13 @@ export async function requestAiQuiz(p: Problem, studentAnswer: string): Promise<
 // 채점 대기(승인 큐) 카운트 — results에 pending 있는 문항 수
 export function pendingCount(results: GradeResult[]): number {
   return results.filter(r => r.pending).length
+}
+
+// ── 확정된 문항만 (승인 대기 제외) ─────────────────────────────
+// 🔴 pending 문항은 **아직 채점되지 않은 것**이다. 정답률의 분자에도 분모에도 넣지 않는다.
+//    안 그러면 선생님이 승인하기 전의 AI 판정이 성적으로 굳고, 특히 AI 호출이 실패한 날은
+//    correct=false 로 저장되어 학부모 화면 정답률과 포인트가 실제보다 낮게 찍힌다
+//    (2026-08-13 발견). TodayRoom.tsx 가 이미 같은 규칙을 쓰고 있다.
+export function settled(results: GradeResult[]): GradeResult[] {
+  return results.filter(r => !r.pending)
 }

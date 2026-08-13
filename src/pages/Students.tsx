@@ -2389,7 +2389,7 @@ function useRevealConfig() {
   ]
   const changed = KEYS.some(k => (cfg[k] ?? false) !== (studentAppConfig[k] ?? false))
     || (cfg.solveFeedback ?? true) !== (studentAppConfig.solveFeedback ?? true)   // 기본 ON
-    || (cfg.aiGrade ?? false) !== (studentAppConfig.aiGrade ?? false)             // 기본 OFF
+    || (cfg.aiGrade ?? true) !== (studentAppConfig.aiGrade ?? true)               // 기본 ON
     || (cfg.aiCoach ?? true) !== (studentAppConfig.aiCoach ?? true)               // 기본 ON
   const dirty = synced && changed                                                 // ② 동기화 전에는 저장 불가
 
@@ -2455,8 +2455,8 @@ function AnswerRevealSettings() {
         <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
           <div className="min-w-40">
             <div className="text-sm font-bold">🤖 AI 1차 채점
-              <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(cfg.aiGrade ?? false) ? 'bg-violet-100 text-violet-700' : 'bg-paper2 text-ink2'}`}>
-                {(cfg.aiGrade ?? false) ? '사용' : '사용 안 함'}
+              <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(cfg.aiGrade ?? true) ? 'bg-violet-100 text-violet-700' : 'bg-paper2 text-ink2'}`}>
+                {(cfg.aiGrade ?? true) ? '사용' : '사용 안 함'}
               </span>
             </div>
             <div className="text-xs text-ink2">
@@ -2466,7 +2466,7 @@ function AnswerRevealSettings() {
           </div>
           <div className="grow" />
           <label className="flex items-center gap-1.5 text-sm">
-            <input type="checkbox" checked={cfg.aiGrade ?? false}
+            <input type="checkbox" checked={cfg.aiGrade ?? true}
               onChange={e => setCfg(p => ({ ...p, aiGrade: e.target.checked }))} className="accent-pine" />
             사용
           </label>

@@ -8,12 +8,17 @@ import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/
 import { todayKey } from '../../lib/dates'
 
 function scoreOfDate(bundle: ChildBundle, key: string) {
-  let solved = 0, correct = 0, unknown = 0
+  let solved = 0, correct = 0, unknown = 0, pending = 0
   for (const g of bundle.gradings) {
     if (dateKey(g.date) !== key) continue
-    for (const r of g.results) { solved++; if (r.correct) correct++; else if (r.unknown) unknown++ }
+    for (const r of g.results) {
+      // 🔴 선생님 승인 대기는 아직 채점이 안 끝난 것 — 정답률 분자·분모 어디에도 넣지 않는다.
+      //    넣으면 AI 호출이 실패한 날(correct=false 로 저장) 아이 정답률이 실제보다 낮게 보인다 (2026-08-13).
+      if (r.pending) { pending++; continue }
+      solved++; if (r.correct) correct++; else if (r.unknown) unknown++
+    }
   }
-  return { solved, correct, unknown, score: solved ? Math.round(correct / solved * 100) : null }
+  return { solved, correct, unknown, pending, score: solved ? Math.round(correct / solved * 100) : null }
 }
 
 export default function ParentHome() {

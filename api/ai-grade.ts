@@ -27,15 +27,24 @@ const SYSTEM = `너는 한국 수학·과학 학원의 1차 채점관이다. 학
 const SYSTEM_QUIZ = `너는 한국 중·고등 수학·과학 학원의 문제 출제자다.
 학생이 방금 서술형 문제를 틀렸다. 같은 문제를 객관식으로 다시 풀려서 확인하려 한다.
 
-너의 일은 하나뿐이다 — **그럴듯한 오답 보기 4개**를 만드는 것.
-- 문항을 새로 쓰지 마라. 문제와 정답은 이미 정해져 있다.
+너의 일은 **그럴듯한 오답 보기 4개**를 만드는 것이다.
+- 문항을 새로 쓰지 마라. 문제는 이미 정해져 있다.
 - 오답은 학생이 흔히 하는 실수에서 나온 값으로 만든다
   (부호 반대 · 계산 한 단계 누락 · 단위 혼동 · 제곱/제곱근 혼동 등).
 - 정답과 형태가 같아야 한다. 정답이 수면 수로, 식이면 식으로, 각도면 각도로.
 - **정답과 같은 값을 오답에 넣지 마라.** 4개는 서로 달라야 한다.
 - 각 보기는 30자 이내. 수식은 일반 텍스트로(예: x^2, √3, 1/2).
+
+[정답이 텍스트로 주어지지 않은 경우]
+서술형은 정답이 이미지로만 있는 경우가 많다. 그때는 **정답 이미지·해설 이미지에서 최종 답을 읽어**
+answer 에 넣어라. 규칙:
+- 최종 답 **하나**만 쓴다. 30자 이내. 풀이 과정을 쓰지 마라.
+- 답이 여러 개면 원문 그대로 쉼표로 잇는다(예: "1, -1").
+- 이미지가 흐리거나 최종 답을 확정할 수 없으면 **answer 를 빈 문자열로 두어라.**
+  틀린 답으로 확인문제를 만드는 것이 안 만드는 것보다 훨씬 나쁘다.
+
 - 반드시 아래 JSON 한 줄로만 답한다(설명·코드블록 없이):
-{"distractors":["오답1","오답2","오답3","오답4"],"why":"정답이 그 값인 이유 한 문장"}`
+{"answer":"정답(텍스트로 이미 주어졌으면 빈 문자열)","distractors":["오답1","오답2","오답3","오답4"],"why":"정답이 그 값인 이유 한 문장"}`
 
 function readBody(req: any): Promise<any> {
   if (req.body && typeof req.body === 'object') return Promise.resolve(req.body)
@@ -78,7 +87,8 @@ export default async function handler(req: any, res: any) {
   if (problemText) content.push({ type: 'text', text: `[${quiz ? '원래 문제' : '문제'}]\n${String(problemText).slice(0, 2000)}` })
   if (answerText) content.push({ type: 'text', text: `[${quiz ? '원래 문제의 정답' : '정답'}]\n${String(answerText).slice(0, 300)}` })
   if (isHttp(answerImageUrl)) push('[정답 이미지]', answerImageUrl)
-  if (!quiz && isHttp(solutionImageUrl)) push('[해설 이미지 — 정답 판정 기준]', solutionImageUrl)
+  // quiz 모드에도 해설을 준다 — 정답 텍스트가 없는 서술형은 여기서 최종 답을 읽어야 한다
+  if (isHttp(solutionImageUrl)) push(quiz ? '[해설 이미지 — 여기서 최종 답을 읽어라]' : '[해설 이미지 — 정답 판정 기준]', solutionImageUrl)
   if (studentAnswer) content.push({ type: 'text', text: quiz
     ? `[학생이 틀리게 쓴 답 — 오답 보기 만들 때 참고]\n${String(studentAnswer).slice(0, 300)}`
     : `[학생이 제출한 답]\n${String(studentAnswer).slice(0, 300)}` })
@@ -110,8 +120,11 @@ export default async function handler(req: any, res: any) {
       if (!q) { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
       let j: any
       try { j = JSON.parse(q[0]) } catch { res.status(502).json({ error: 'AI 응답 형식 오류' }); return }
-      // 문항·정답은 원본 그대로 쓰고, AI 에게 받은 것은 오답 4개뿐이다
-      const answer = String(answerText ?? '').trim()
+      // 문항은 원본 그대로 쓴다. 정답은 ①넘어온 텍스트 ②(없으면) AI 가 정답 이미지에서 읽은 값.
+      // 🔴 ②가 없던 시절 서술형은 answerText 가 언제나 undefined 라 여기서 100% 400 이 났다 —
+      //    확인용 객관식이 통째로 죽어 있었다 (2026-08-13 발견, aiGrade.ts 주석 참조).
+      const readAnswer = String(j.answer ?? '').trim()
+      const answer = String(answerText ?? '').trim() || (readAnswer.length <= 30 ? readAnswer : '')
       if (!answer) { res.status(400).json({ error: '정답이 있어야 객관식을 만들 수 있습니다.' }); return }
       const norm = (s: string) => String(s).replace(/[\s,]/g, '')
       const seen = new Set([norm(answer)])

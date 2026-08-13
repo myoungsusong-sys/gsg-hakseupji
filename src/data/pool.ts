@@ -47,7 +47,9 @@ function toProblem(id: string, r: Raw, host = 'freewheelin-contents.mathflat.com
   const [pid, hash, cid, level, isC, ans] = r
   const base = `https://${host}/problem/${pid}/${hash}`
   // 답이 이미지로만 제공되는 문항(수집값 '.'·빈값·'풀이참조') → answer.png (같은 해시)
-  const broken = !ans || ['.', '-', '풀이참조'].includes(ans.trim())
+  // 🔴 '해설 참조' 를 빠뜨리면 그 문항은 자동채점을 타서 **학생이 뭘 써도 오답**이 된다.
+  //    전수 실측 2,857건이 이 상태였다 (2026-08-13 발견). essay.ts:22 와 목록을 맞춰 둔다.
+  const broken = !ans || ['.', '-', '풀이참조', '해설 참조', '해설참조'].includes(ans.trim())
   const answer = broken ? `${base}/answer.png` : (isC ? choiceAnswer(ans) : ans)
   return {
     id,

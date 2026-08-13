@@ -377,7 +377,11 @@ export interface StudentAppConfig {
   dailyMasterOn?: boolean        // 오늘의 학습 — 전체 학생 공개 여부 (기본 true)
   dailyOffIds?: string[]         // 오늘의 학습 OFF 학생 id 목록
   solveFeedback?: boolean        // 학생앱 문항별 '풀이 AI 피드백' 사용 (기본 true=사용)
-  aiGrade?: boolean              // AI 1차 채점 + 선생님 승인 (서술형·과학 등 자동채점 불가 문항, 기본 false)
+  // AI 1차 채점 + 선생님 승인 (서술형·과학 등 자동채점 불가 문항)
+  // 🔴 기본 true. 예전엔 기본 false 로 적혀 있었는데 **읽는 코드가 하나도 없어서** 꺼둔 상태로도
+  //    AI 가 계속 호출됐다(2026-08-13 발견). 스위치를 실제로 물리면서, 지금 돌고 있는 동작이
+  //    갑자기 멈추지 않도록 기본값을 실제 동작(켜짐)에 맞췄다.
+  aiGrade?: boolean
   aiCoach?: boolean              // 🤖 AI 실시간 코치 — 필기 멈추면 자동 점검·첨삭 (기본 true=사용)
   lab?: LabConfig                // 실험실 설정
 }

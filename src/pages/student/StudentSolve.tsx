@@ -386,7 +386,9 @@ export default function StudentSolve() {
         // 학생이 문항에서 이미 [AI 채점받기]를 눌렀으면 그 판정을 쓴다 — 같은 답으로 두 번 부르지 않는다
         const done = aiMarks[q.id]
         if (done) ai = { verdict: done.verdict, reason: done.reason, confidence: done.confidence, at: done.at }
-        else try {
+        // 관리 > 학생앱 설정의 「🤖 AI 1차 채점」 스위치를 실제로 따른다.
+        // 🔴 예전에는 이 값을 읽는 코드가 없어서, 꺼둔 상태로도 AI 가 계속 호출됐다 (2026-08-13 수리).
+        else if (cfg.aiGrade ?? true) try {
           const v = await requestAiGrade(q, a, workImg)
           ai = { verdict: v.verdict, reason: v.reason, confidence: v.confidence, at: new Date().toISOString() }
         } catch { /* AI 실패 — 판정 없이 선생님 승인 대기로 */ }
@@ -733,6 +735,7 @@ export default function StudentSolve() {
             {!isMachineGradable(p) ? (
               /* 서술형 등 기계채점 불가 — 모범답안 열람 후 스스로 ○/✕/? (자기채점) */
               <WsSelfCheck key={p.id} p={p} value={cur} showAnswer={cfg.showAnswer !== false}
+                aiOn={cfg.aiGrade ?? true}
                 ai={aiMarks[p.id]} onGraded={m => setAiMarks(s => ({ ...s, [p.id]: m }))}
                 onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')}
                 onText={t => setAnswer(p.id, t)} />
@@ -915,10 +918,11 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
 // 자기채점 (서술형 등 기계채점 불가 문항) — 공책·필기로 풀고, 모범답안을 연 뒤 스스로 ○/✕/? 표시.
 // 정답을 먼저 보고 베끼는 걸 막으려고 [다 풀었어요]를 눌러야 모범답안이 열린다 (교재 탭과 동일).
 // key={p.id} 로 마운트해 문항 이동 시 열람 상태가 리셋된다.
-function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true }: {
+function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true, aiOn = true }: {
   p: Problem; value: string; onMark: (m: SelfMark | null) => void; onText: (t: string) => void
   ai?: AiMark; onGraded?: (m: AiMark) => void
   showAnswer?: boolean          // 선생님이 이 학습지에서 정답 공개를 껐으면 모범답안을 감춘다
+  aiOn?: boolean                // 관리 > 학생앱 설정의 「🤖 AI 1차 채점」 — 끄면 예전처럼 자기채점만 한다
 }) {
   const [revealed, setRevealed] = useState(false)
   const mark = selfMarkOf(value)
@@ -969,7 +973,9 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true
     /* 하단 고정 답 바 안에서 열리므로 화면을 다 가리지 않게 높이를 제한한다 */
     <div className="grid max-h-[45vh] min-w-0 grow gap-2 overflow-y-auto rounded-xl bg-paper2/60 px-3 py-2.5">
       <span className="text-xs font-semibold text-ink2">
-        ✍️ 서술형이에요 — 답을 쓰고 [AI 채점받기]를 누르면 바로 채점해요 (공책에 풀었으면 아래에서 직접 표시)
+        {aiOn
+          ? '✍️ 서술형이에요 — 답을 쓰고 [AI 채점받기]를 누르면 바로 채점해요 (공책에 풀었으면 아래에서 직접 표시)'
+          : '✍️ 서술형이에요 — 답을 쓰거나, 공책에 풀었으면 아래에서 직접 표시해 주세요'}
       </span>
       {/* 🤖 답을 쓰고 그 자리에서 채점 → 정답 공개 → 틀리면 빨간펜 안내 + 확인용 객관식
           (명수쌤 2026-08-07). 안 쓰면 예전 그대로 자기채점이라 기존 흐름은 그대로다. */}
@@ -978,7 +984,7 @@ function WsSelfCheck({ p, value, onMark, onText, ai, onGraded, showAnswer = true
           <textarea rows={2} value={typed} onChange={e => onText(e.target.value)} disabled={grading}
             placeholder="답을 문장으로 써보세요 (표현이 달라도 뜻이 같으면 정답이에요)"
             className="w-full resize-none rounded-lg border border-line bg-white px-2.5 py-2 text-sm outline-none focus:border-pine disabled:bg-paper2" />
-          {!!typed.trim() && !ai && (
+          {aiOn && !!typed.trim() && !ai && (
             <button type="button" onClick={gradeNow} disabled={grading}
               className="w-fit rounded-lg bg-pine px-4 py-2 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-60">
               {grading ? '🤖 채점 중…' : '🤖 AI 채점받기'}

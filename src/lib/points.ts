@@ -69,6 +69,9 @@ function autoDay(
   // 학습지 점수 — 그날 채점 건별
   for (const g of gradings) {
     if (g.studentId !== studentId || dateKey(g.date) !== date) continue
+    // 🔴 선생님 승인 대기(AI 1차 채점)가 남아 있으면 아직 점수가 확정된 게 아니다.
+    //    미리 포인트를 줬다가 승인 뒤에 뺏는 일이 없도록 확정될 때까지 건너뛴다 (2026-08-13).
+    if (g.results.some(r => r.pending)) continue
     const total = g.results.length
     if (total === 0) continue
     const correct = g.results.filter(r => r.correct).length
