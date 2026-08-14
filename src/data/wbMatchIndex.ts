@@ -728,7 +728,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "완자 기출 PICK 중등수학3(상)|비상교육", name: "완자 기출 PICK 중등수학3(상)", publisher: "비상교육", grade: "중3-1", course: "m3-1", count: 793, noAnswer: true },
   { key: "자이스토리 중등수학3(상)|수경출판사", name: "자이스토리 중등수학3(상)", publisher: "수경출판사", grade: "중3-1", course: "m3-1", count: 1990, noAnswer: true },
   { key: "리피트 개념_개념책 중등수학3(상)|미래엔", name: "리피트 개념_개념책 중등수학3(상)", publisher: "미래엔", grade: "중3-1", course: "m3-1", count: 975 },
-  { key: "베이직쎈 중등수학3(상) (22개정)|좋은책신사고", name: "베이직쎈 중등수학3(상) (2015개정)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1657 },
+  { key: "베이직쎈 중등수학3(상) (22개정)|좋은책신사고", name: "베이직쎈 중등수학3(상) (2022개정)", publisher: "좋은책신사고", grade: "중3-1", course: "m3-1", count: 1657 },
   { key: "디딤돌수학 개념연산 중등수학3(하)|디딤돌", name: "디딤돌수학 개념연산 중등수학3(하)", publisher: "디딤돌", grade: "중3-2", course: "m3-2", count: 1135 },
   { key: "수매씽 개념연산 중등수학3(하)|동아출판", name: "수매씽 개념연산 중등수학3(하)", publisher: "동아출판", grade: "중3-2", course: "m3-2", count: 917 },
   { key: "쎈 중등수학3(하)|좋은책신사고", name: "쎈 중등수학3(하)", publisher: "좋은책신사고", grade: "중3-2", course: "m3-2", count: 783 },
