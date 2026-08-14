@@ -6,6 +6,7 @@ import { dateKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { clearParentSession, fetchChildRemote, getParentSession, matchChildLocal, type ChildBundle } from '../../lib/parent'
 import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import { todayKey } from '../../lib/dates'
+import { BrandLogo } from '../../components/BrandMark'
 
 function scoreOfDate(bundle: ChildBundle, key: string) {
   let solved = 0, correct = 0, unknown = 0, pending = 0
@@ -78,8 +79,7 @@ export default function ParentHome() {
       <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-2xl items-center gap-3 px-5 py-3">
           <div className="flex items-baseline gap-2">
-            <span className="text-lg font-black tracking-tight text-pine-dark">깊은생각</span>
-            <span className="text-lg font-light text-ink">학습지</span>
+            <BrandLogo />
           </div>
           <span className="rounded-full bg-pine-soft px-2 py-0.5 text-xs font-bold text-pine-dark">학부모</span>
           <div className="grow" />
@@ -178,7 +178,7 @@ export default function ParentHome() {
           </>
         )}
 
-        <p className="mt-6 text-center text-xs text-ink2">문의는 학원으로 연락 주세요. · 깊은생각 학습지 학부모앱</p>
+        <p className="mt-6 text-center text-xs text-ink2">문의는 학원으로 연락 주세요. · Summit On 학부모앱</p>
       </main>
     </div>
   )

@@ -7,6 +7,7 @@ import StudentWorksheets from './StudentWorksheets'
 import StudentWorkbooks from './StudentWorkbooks'
 import StudentChallenge from './StudentChallenge'
 import StudentLectures from './StudentLectures'
+import { BrandLogo } from '../../components/BrandMark'
 
 // ── 선생님용 학생앱 미리보기 오버레이 (관리 > 학생 관리 > [학생앱으로 이동]) ──
 // 매쓰플랫 동일 동선 — 단, 우리는 **보기 전용**: 제출·생성 버튼은 PreviewCtx로 비활성,
@@ -45,8 +46,7 @@ export default function StudentAppPreview({ s, onClose }: { s: Student; onClose:
         <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-5 px-6 py-3">
             <div className="flex items-baseline gap-2">
-              <span className="text-xl font-black tracking-tight text-pine-dark">깊은생각</span>
-              <span className="text-xl font-light text-ink">학습지</span>
+              <BrandLogo />
             </div>
             <nav className="flex items-center gap-1">
               {MENUS.map(m => (

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { fetchChildRemote, matchChildLocal, setParentSession } from '../../lib/parent'
+import { BrandLogo } from '../../components/BrandMark'
 
 // 학부모 입장 — 학생 이름 + 학부모 연락처(끝 4자리 이상)로 자녀 확인.
 // 별도 계정 없이 자녀의 학습 보고서를 열람. (프로덕션: 서버리스가 검증)
@@ -35,8 +36,7 @@ export default function ParentLogin() {
     <div className="flex min-h-screen items-center justify-center bg-paper2 p-6">
       <div className="w-full max-w-sm rounded-2xl border border-line bg-white p-8 shadow-sm">
         <div className="mb-1 flex items-baseline gap-2">
-          <span className="text-2xl font-black tracking-tight text-pine-dark">깊은생각</span>
-          <span className="text-2xl font-light text-ink">학습지</span>
+          <BrandLogo />
         </div>
         <p className="mb-1 text-sm font-bold text-ink">학부모 입장</p>
         <p className="mb-6 text-xs text-ink2">자녀의 학습 보고서를 확인하실 수 있어요. 자녀 이름과 등록된 학부모 연락처를 입력하세요.</p>

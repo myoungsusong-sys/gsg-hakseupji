@@ -2584,7 +2584,7 @@ function LabTab() {
   return (
     <div>
       <div className="mb-4 rounded-2xl border border-pine/30 bg-pine-soft px-5 py-4 text-sm text-pine-dark">
-        <b>깊은생각 실험실에 오신 것을 환영합니다.</b> 실험실을 통해 출시 준비 중인 새로운 기능을 먼저 이용하실 수 있습니다! 😎
+        <b>Summit On 실험실에 오신 것을 환영합니다.</b> 실험실을 통해 출시 준비 중인 새로운 기능을 먼저 이용하실 수 있습니다! 😎
       </div>
       <div className="mb-5 flex flex-wrap gap-1.5">
         {LAB_TABS.map(t => (

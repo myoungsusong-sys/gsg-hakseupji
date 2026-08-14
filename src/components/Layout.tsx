@@ -5,6 +5,7 @@ import { SUBJECTS, useSubject } from '../lib/subject'
 import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
 import FixItButton from './FixItButton'
+import { BrandLogo } from './BrandMark'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
 import AdminChat from './AdminChat'
 
@@ -172,9 +173,8 @@ export default function Layout() {
       {stale && <UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
       <header className="no-print sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-6 py-3">
-          <button onClick={() => nav('/')} className="flex items-baseline gap-2">
-            <span className="text-xl font-black tracking-tight text-pine-dark">깊은생각</span>
-            <span className="text-xl font-light text-ink">학습지</span>
+          <button onClick={() => nav('/')} className="flex items-center">
+            <BrandLogo />
           </button>
           <nav className="flex gap-1">
             <NavLink to="/prep/worksheet" className={topTab}>수업 준비</NavLink>

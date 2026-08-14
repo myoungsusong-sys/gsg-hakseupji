@@ -138,7 +138,7 @@ export default function MyPage() {
               </div>
               <div>
                 <div className={label}>로고</div>
-                <p className="text-sm text-ink2">자체 앱 고정 브랜드(깊은생각 학습지) — 별도 로고 설정이 필요 없어요.</p>
+                <p className="text-sm text-ink2">자체 앱 고정 브랜드(Summit On) — 별도 로고 설정이 필요 없어요.</p>
               </div>
             </div>
           </section>

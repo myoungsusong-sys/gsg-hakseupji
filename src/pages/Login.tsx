@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useAuth } from '../lib/auth'
 import { studentEmailOf, teacherEmailOf } from '../lib/role'
+import { BrandLogo } from '../components/BrandMark'
 
 // 로그인 — [선생님 | 학생] 탭 (supabase 모드에서만 표시되는 화면)
 // 학생 탭: 아이디(출결번호)+비밀번호 → s-<아이디>@student.gsg.app 규약으로 변환해 로그인
@@ -49,8 +50,7 @@ export default function Login() {
     <div className="flex min-h-screen items-center justify-center bg-paper p-6">
       <div className="w-full max-w-sm rounded-2xl border border-line bg-white p-8 shadow-sm">
         <div className="mb-1 flex items-baseline gap-2">
-          <span className="text-2xl font-black tracking-tight text-pine-dark">깊은생각</span>
-          <span className="text-2xl font-light text-ink">학습지</span>
+          <BrandLogo />
         </div>
         <p className="mb-4 text-sm text-ink2">
           {role === 'student' ? '학생 로그인' : (mode === 'in' ? '로그인' : '계정 만들기')}

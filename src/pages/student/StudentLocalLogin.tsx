@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 import { SUPABASE_ON } from '../../lib/supabase'
 import { useStore } from '../../lib/store'
 import { setLocalStudentId } from '../../lib/role'
+import { BrandLogo } from '../../components/BrandMark'
 
 // 로컬 모드(supabase 없음) 학생 입장 — 개발·검증용.
 // 등록된 학생 이름 + 출결번호가 일치하면 학생 모드로 들어간다.
@@ -32,8 +33,7 @@ export default function StudentLocalLogin() {
     <div className="flex min-h-screen items-center justify-center bg-paper2 p-6">
       <div className="w-full max-w-sm rounded-2xl border border-line bg-white p-8 shadow-sm">
         <div className="mb-1 flex items-baseline gap-2">
-          <span className="text-2xl font-black tracking-tight text-pine-dark">깊은생각</span>
-          <span className="text-2xl font-light text-ink">학습지</span>
+          <BrandLogo />
         </div>
         <p className="mb-6 text-sm text-ink2">학생 입장 (로컬 모드)</p>
 
