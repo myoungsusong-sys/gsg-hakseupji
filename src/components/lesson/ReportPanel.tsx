@@ -340,6 +340,23 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     }
     return [...m.values()].map(e => ({ name: e.name, range: '', total: e.total, correct: e.correct, unknown: e.unknown, score: pct(e.correct, e.total) }))
   }, [dayGradings, worksheets])
+  // ── 🔎 "AI 보고서를 눌렀는데 아무 내용이 없다"의 원인을 화면이 스스로 말하게 한다 ──
+  // 2026-08-13: 이현서 학생 보고서가 비어 있다는 문의. 확인해보니 그날 채점 기록이 0건이었고
+  // AI 는 "없는 것은 지어내지 마라" 지시를 지켜 정직하게 짧게 쓴 것이었다. 고장이 아니었는데
+  // 화면이 이유를 말해주지 않아 선생님이 원인을 알 수 없었다. 그래서 아래 진단을 붙인다.
+  // 🔴 과목 필터를 특히 조심 — myGradings 는 **현재 과목만** 본다. 수학 화면에서 과학만 푼 날은
+  //    "기록 없음"으로 보이지만 실제로는 다른 과목에 있다. 그 경우를 구분해 알려준다.
+  const otherSubjectToday = useMemo(
+    () => gradings.filter(g => g.studentId === student.id && dateKey(g.date) === date
+      && subjectOfGrading(g, wbById, wsById, itemMap) !== subject)
+      .reduce((a, g) => a + g.results.length, 0),
+    [gradings, student.id, date, subject, wbById, wsById, itemMap],
+  )
+  const lastGradedDate = useMemo(() => {
+    const ds = gradings.filter(g => g.studentId === student.id).map(g => dateKey(g.date)).sort()
+    return ds.length ? ds[ds.length - 1] : null
+  }, [gradings, student.id])
+
   const totalSolved = dayGradings.reduce((a, g) => a + g.results.length, 0)
   const totalCorrect = dayGradings.reduce((a, g) => a + g.results.filter(r => r.correct).length, 0)
   const totalUnknown = dayGradings.reduce((a, g) => a + g.results.filter(r => r.unknown).length, 0)
@@ -738,6 +755,26 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
             placeholder="직접 입력하거나 [✨ AI 작성]으로 초안을 만들 수 있습니다. 직접 쓴 뒤 [🪄 AI 다듬기]로 문장을 정돈하세요. 비워두면 카드엔 기본 문구가 표시됩니다."
             className="rounded-lg border border-line px-3 py-2 font-normal" />
           {aiNote && <span className="text-xs font-normal text-clay">{aiNote}</span>}
+          {/* 🔎 채점 기록이 없으면 AI 는 쓸 내용이 없다 — 버튼을 누르기 전에 이유를 먼저 알려준다.
+              (예전에는 AI 가 정직하게 "기록이 없어 전할 이야기가 없다"고만 써서, 선생님은
+               고장인지 데이터가 없는 건지 알 수 없었다 — 2026-08-13 이현서 학생 문의) */}
+          {totalSolved === 0 && (
+            <div className="rounded-lg border border-amber/50 bg-amber/10 px-3 py-2 text-xs font-normal leading-relaxed text-ink">
+              {otherSubjectToday > 0 ? (
+                <>⚠️ 오늘 <b>{subject}</b> 채점 기록이 없습니다 — 다만 <b>다른 과목에 {otherSubjectToday}문항</b>이 있어요.
+                  위 <b>과목 탭</b>을 바꿔서 확인해보세요. AI 작성은 지금 고른 과목 기록만 씁니다.</>
+              ) : (
+                <>⚠️ 오늘 이 학생의 채점 기록이 <b>0건</b>이라 AI가 쓸 내용이 없습니다.
+                  {lastGradedDate && lastGradedDate !== date && <> 마지막 채점일은 <b>{lastGradedDate}</b>예요.</>}
+                  {' '}채점을 먼저 하신 뒤 다시 눌러주세요.
+                  <span className="mt-1 block text-ink2">
+                    채점하셨는데도 이 안내가 뜬다면 — ①다른 학생으로 저장됐거나 ②학원관리앱(프리미엄)에서
+                    채점하셨거나 ③저장이 안 된 것입니다.
+                  </span>
+                </>
+              )}
+            </div>
+          )}
         </div>
         <div className="grid gap-1 text-sm font-bold">
           <div className="flex flex-wrap items-center justify-between gap-1">
