@@ -118,9 +118,54 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
     return [...front, ...picked.map(p => p.id)]
   }, [effWrongs, problems, twinPer, similarPer, diffShift, typeCap, excludePrev, prevIds, includeOriginal, originalIds])
 
+  // ── 🔎 "왜 0개인지"를 정확히 말해 주기 위한 진단 ────────────────────────
+  // 원인이 두 가지인데 예전에는 어느 경우든 "문제은행에 없습니다"로만 알렸다.
+  // (2026-08-13 실제 문의: 강려원 8~19쪽 → 알고 보니 54문항 **전부 정답**이라 대상이 0개였다.
+  //  그 교재의 문제은행은 220개 유형 전부 갖춰져 있었는데 없다고 알려 오해를 만들었다.)
+  //  ① 대상(틀린 문제)이 0개        → 범위를 넓히거나 「틀린 문제만」을 끄면 된다
+  //  ② 대상은 있는데 pool 이 못 채움 → 그때만 문제은행 문제다
+  const wrongPages = useMemo(() => {
+    if (!pagePicker) return null
+    const ps = pagePicker.wrongsForPages(pagePicker.allPages, true)
+      .map(w => w.page).filter((p): p is number => p != null)
+    return [...new Set(ps)].sort((a, b) => a - b)
+  }, [pagePicker])
+
+  // 오답이 있는 쪽을 "23~60, 71" 처럼 구간으로 묶어 보여준다
+  const wrongPagesLabel = useMemo(() => {
+    if (!wrongPages?.length) return ''
+    const parts: string[] = []
+    let lo = wrongPages[0], prev = lo
+    for (const p of wrongPages.slice(1)) {
+      if (p === prev + 1) { prev = p; continue }
+      parts.push(lo === prev ? `${lo}` : `${lo}~${prev}`); lo = p; prev = p
+    }
+    parts.push(lo === prev ? `${lo}` : `${lo}~${prev}`)
+    return parts.join(', ')
+  }, [wrongPages])
+
+  const emptyReason = useMemo(() => {
+    if (problemIds.length > 0) return ''
+    if (effWrongs.length > 0) return 'pool'          // ② 진짜 문제은행 부족
+    if (!pagePicker) return 'nowrong'
+    const total = pagePicker.wrongsForPages(selectedPages, false).length
+    if (total === 0) return 'norange'                // 그 범위에 채점 기록 자체가 없다
+    return 'allcorrect'                              // ① 다 맞혔다
+  }, [problemIds.length, effWrongs.length, pagePicker, selectedPages])
+
   function create(mode: 'view' | 'edit') {
     if (problemIds.length === 0) {
-      alert('해당 유형의 쌍둥이·유사 문제가 문제은행에 없습니다')
+      const solved = pagePicker ? pagePicker.wrongsForPages(selectedPages, false).length : 0
+      const where = wrongPagesLabel ? `\n\n이 교재에서 오답이 있는 쪽: ${wrongPagesLabel}쪽` : ''
+      alert(
+        emptyReason === 'pool'
+          ? '해당 유형의 쌍둥이·유사 문제가 문제은행에 없습니다'
+          : emptyReason === 'norange'
+            ? `고른 범위에 채점 기록이 없습니다.${where}`
+            : `고른 범위(${selectedPages[0] ?? '?'}~${selectedPages[selectedPages.length - 1] ?? '?'}쪽)에 `
+              + `틀린 문제가 없습니다 — ${solved}문항 전부 정답이에요.${where}`
+              + '\n\n범위를 바꾸시거나, 「틀린 문제만으로 추출」을 끄면 이 범위 전체로 만들 수 있어요.',
+      )
       return
     }
     const id = uid('ws')
@@ -264,7 +309,22 @@ export default function DrillModal({ student, title, wrongs, defaultTags, onClos
         {/* 6) 학습지 문제 수 — 실시간 합산 */}
         <div className="mt-4 rounded-xl bg-paper2 px-4 py-3 text-sm">
           학습지 문제 수 <b className="text-pine-dark">{problemIds.length}</b> 개
-          {problemIds.length === 0 && <span className="ml-2 text-xs text-clay">선발 가능한 문제가 없습니다</span>}
+          {/* 0개일 때 이유를 그 자리에서 말한다 — 만들기를 눌러 보고 나서야 알 일이 아니다 */}
+          {problemIds.length === 0 && (
+            <div className="mt-1 text-xs leading-relaxed text-clay">
+              {emptyReason === 'pool'
+                ? '이 유형의 쌍둥이·유사 문제가 문제은행에 없습니다.'
+                : emptyReason === 'norange'
+                  ? '고른 범위에 채점 기록이 없습니다.'
+                  : '고른 범위는 틀린 문제가 없어요 (전부 정답).'}
+              {emptyReason !== 'pool' && wrongPagesLabel && (
+                <span className="mt-0.5 block text-ink2">
+                  오답이 있는 쪽: <b className="text-ink">{wrongPagesLabel}</b>쪽
+                  {' '}— 범위를 바꾸거나 「틀린 문제만으로 추출」을 끄면 만들 수 있어요.
+                </span>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="mt-5 flex justify-end gap-2">
