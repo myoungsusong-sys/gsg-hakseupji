@@ -6,6 +6,7 @@ import { CONCEPTS, type Concept } from '../data/concepts'
 import MathText, { isImageUrl } from '../components/MathText'
 import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
+import { isStaleChunkError } from '../lib/staleChunk'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -307,7 +308,23 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       if (!alive) return
       setMaking(true)
       try {
-        const { buildSheetPdf, savePdf, printPdf } = await import('../lib/sheetPdf')
+        // 🔴 PDF 조판기는 무거워서 이 화면에서만 동적으로 불러온다(초기 로딩 단축).
+        //    그런데 새 버전이 배포되면 파일 이름의 해시가 바뀌어 **열어 둔 탭이 부르는 옛 청크가
+        //    서버에서 사라진다.** 그러면 "Failed to fetch dynamically imported module" 이 뜨는데,
+        //    선생님에겐 영문 TypeError 로만 보여서 앱이 고장난 것처럼 읽힌다 (2026-08-13 실제 문의).
+        //    → 이 경우만 가려내 "새로고침하면 됩니다"로 안내한다. 원인이 다르면 종전대로 알린다.
+        const mod = await import('../lib/sheetPdf').catch((e: unknown) => {
+          if (isStaleChunkError(e)) {
+            if (confirm(
+              '새 버전이 배포되어 지금 열어 둔 화면이 오래됐어요.\n' +
+              '새로고침하면 바로 인쇄·저장할 수 있습니다.\n\n지금 새로고침할까요?',
+            )) { location.reload() }
+            return null            // 취소하면 조용히 멈춘다 — 같은 오류창을 두 번 띄우지 않는다
+          }
+          throw e
+        })
+        if (!mod) return
+        const { buildSheetPdf, savePdf, printPdf } = mod
         const doc = await buildSheetPdf()
         const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
         if (job.act === 'print') printPdf(doc)
