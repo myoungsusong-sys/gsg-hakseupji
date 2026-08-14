@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 🔒 앱 비노출 — 지정하지 않은 사람은 존재 자체를 모르게. 검색엔진·AI 크롤러 색인 전면 차단.
+         (실제 접근 차단은 로그인/RLS 가 담당. 이건 "검색으로 발견되지 않게" 하는 층이다.) -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
     <!-- Pretendard — 매쓰플랫과 동일한 본문 글꼴 (오픈소스 OFL). 변수 폰트 1개로 전 굵기 커버. -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
