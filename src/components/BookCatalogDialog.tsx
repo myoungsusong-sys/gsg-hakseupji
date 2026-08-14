@@ -38,6 +38,28 @@ function gradeRev(grade: string, name = ''): string {
   return grade.endsWith('(2015)') ? '(2015개정)' : '(22개정)'
 }
 
+// ── 🔎 교재 검색 — 개정 표기를 정규화한다 ────────────────────────────
+// 🔴 사람마다 같은 책을 다른 말로 부른다: "22개정" · "2022" · "2022개정" · "2015개정" · "15개정".
+//    그런데 검색이 교재명 하나만 보고 있어서, 이름에 적힌 표기와 다르게 치면 "교재가 없다"고
+//    오해하게 된다. (2026-08-13 실제 문의: 베이직쎈 중3-1 을 "2022"로 찾았는데 표시명이
+//    "(2015개정)"이라 안 나왔다. 정작 그 책의 과정키에는 (22개정)이 들어 있었다.)
+// → 이름·출판사·과정키를 모두 검색 대상으로 삼고, 개정 표기는 한 토큰으로 접어서 비교한다.
+function revFold(s: string): string {
+  return s.toLowerCase()
+    .replace(/\(?\s*(?:20)?22\s*개정\s*\)?/g, ' @rev22 ')
+    .replace(/\(?\s*(?:20)?15\s*개정\s*\)?/g, ' @rev15 ')
+    .replace(/\b2022\b/g, ' @rev22 ')
+    .replace(/\b2015\b/g, ' @rev15 ')
+}
+const bookHay = (b: { name: string; publisher: string; key: string; grade: string }) =>
+  revFold(`${b.name} ${b.publisher} ${b.key} ${b.grade}`)
+
+// 띄어쓴 검색어는 **단어별로 모두** 들어 있으면 통과시킨다.
+// 통째로 부분일치만 보면 "베이직쎈 3-1"처럼 순서·표기가 다른 자연스러운 검색이 전부 실패한다
+// (교재명은 '중등수학3(상)', 학년은 '중3-1' 이라 한 문자열에 나란히 있지 않다).
+const hayMatch = (hay: string, kw: string) =>
+  revFold(kw).split(/\s+/).filter(Boolean).every(t => hay.includes(t))
+
 // 🔴 같은 key 가 두 번 들어 있는 교재가 12권 있다 — 중3-2 는 22개정(m3-2)과
 // 2015개정(m3-2-2015) 이 같은 교재명을 쓴다(쎈·RPM·라이트쎈·최상위 …).
 // 목록 key 를 교재 key 로만 쓰면 React 가 두 줄을 같은 것으로 봐서, 학년·학기를 바꿔도
@@ -108,7 +130,7 @@ export default function BookCatalogDialog({ defaultGrade, existingKeys, existing
       if (level === '중' && !b.grade.startsWith('중')) return false
       if (level === '고' && (b.grade.startsWith('중') || b.grade.startsWith('초'))) return false
       if (sub !== '전체' && b.grade !== sub) return false   // 2차 필터(학년·학기/과목)
-      if (kw && !b.name.toLowerCase().includes(kw)) return false
+      if (kw && !hayMatch(bookHay(b), kw)) return false
       return true
     })
     // 매쓰플랫 동일 정렬: ① 이미 배정된 교재 최상단 고정 ② 과정 오름차순(중1-1→…→기하) ③ 교재명순
