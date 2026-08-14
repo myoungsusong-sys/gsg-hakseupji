@@ -418,7 +418,8 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
   const [openBody, setOpenBody] = useState<Set<string>>(new Set())   // 「문제 보기」 펼친 문항
   const [drillOpen, setDrillOpen] = useState(false)
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
-  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
+  // 'retry' = 클라우드에 못 올렸다. 데이터는 outbox 가 들고 있다가 다시 보낸다(사라지지 않는다).
+  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'retry'>('idle')
   const [savedAt, setSavedAt] = useState('')
   // 열람 시각 (매쓰플랫: "YYYY.MM.DD HH:MM 열람")
   const [openedAt] = useState(() => {
@@ -438,9 +439,13 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
     const g = pendingRef.current
     if (!g) return
     pendingRef.current = null
-    upsertGrading(g)
-    setSaveState('saved')
-    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+    // 🔴 클라우드에 올라간 것을 확인한 뒤에만 「저장됨」이라고 말한다 (GradePanel 과 같은 이유).
+    //    예전에는 부르자마자 무조건 'saved' 였다 → 저장이 실패해도 화면은 저장됐다고 했고,
+    //    다른 기기가 저장하는 순간 그 채점이 사라졌다. 자세한 사정은 lib/outbox.ts 머리말.
+    void upsertGrading(g).then(ok => {
+      setSaveState(ok ? 'saved' : 'retry')
+      if (ok) setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+    })
   }
   const flushRef = useRef(flushSave)
   flushRef.current = flushSave
@@ -508,6 +513,19 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
 
   // 목록 복귀·언마운트 시 대기분 저장
   useEffect(() => () => flushRef.current(), [])
+
+  // 창을 닫거나 탭을 숨길 때도 대기분을 밀어 넣는다 — 탭 닫기는 언마운트가 아니라서
+  // 마지막 클릭 뒤 900ms 안에 닫으면 그 채점이 없던 일이 됐다 (GradePanel 과 같은 구멍).
+  useEffect(() => {
+    const bye = () => flushRef.current()
+    const onHide = () => { if (document.hidden) bye() }
+    window.addEventListener('pagehide', bye)
+    document.addEventListener('visibilitychange', onHide)
+    return () => {
+      window.removeEventListener('pagehide', bye)
+      document.removeEventListener('visibilitychange', onHide)
+    }
+  }, [])
 
   // marks 갱신은 반드시 이 함수를 통해서 — ref 동기 갱신으로 연타 유실 없음
   function applyMarks(mutate: (prev: Record<string, SheetMark>) => Record<string, SheetMark>) {
@@ -617,6 +635,7 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
           채점 기록은 실시간으로 자동 저장됩니다.
           {saveState === 'saving' && <span className="ml-2 text-amber">저장 중…</span>}
           {saveState === 'saved' && <span className="ml-2 text-pine">✓ 저장됨 {savedAt}</span>}
+          {saveState === 'retry' && <span className="ml-2 font-bold text-clay">⚠ 아직 안 올라감 — 다시 보내는 중</span>}
         </span>
         {list.length > 0 && (
           <span className="text-xs font-semibold">

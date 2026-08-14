@@ -1,4 +1,5 @@
 import { supabase } from './supabase'
+import * as outbox from './outbox'
 import type {
   AcademyProfile, Assignment, Branch, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
@@ -53,28 +54,33 @@ export function noteId(n: DailyNote): string {
 }
 
 // Supabase REST는 한 번에 최대 1000행만 반환 → range로 전량 페이지네이션
-async function rows(table: string): Promise<any[]> {
+//
+// 🔴 id 까지 같이 읽는다. 아직 클라우드에 못 올린 대기분(outbox)을 이 위에 덮어씌워야
+//    하는데, 그러려면 행마다 id 가 필요하다. 덮어씌우지 않으면 저장 못 한 채점이
+//    다른 기기의 저장 한 번에 화면에서 지워진다 (자세한 사정은 lib/outbox.ts 머리말).
+async function rows(table: string): Promise<{ id: string; data: unknown }[]> {
   if (!supabase) return []
   const PAGE = 1000
-  const out: unknown[] = []
+  const out: { id: string; data: unknown }[] = []
   for (let from = 0; ; from += PAGE) {
-    let q = supabase.from(table).select('data').range(from, from + PAGE - 1)
+    let q = supabase.from(table).select('id, data').range(from, from + PAGE - 1)
     // 설정 테이블의 실시간 스냅샷(live_*)·풀이 녹화(replay_*) 행은 크고(이미지·이벤트 로그)
     // 부팅에 불필요하다 — 전용 API(lib/live.ts·lib/replay.ts)로만 읽으므로 부팅 로드에서 제외
     if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%').not('id', 'like', 'rubric_%')
     const { data, error } = await q
     if (error) { console.warn('load', table, error.message); break }
     const batch = data ?? []
-    out.push(...batch.map((r: { data: unknown }) => r.data))
+    out.push(...batch.map((r: { id: string; data: unknown }) => ({ id: r.id, data: r.data })))
     if (batch.length < PAGE) break
   }
-  return out
+  return outbox.applyTo(table, out)
 }
 
 export async function loadAll(): Promise<CloudData | null> {
   if (!supabase) return null
+  const raw = await Promise.all(ALL_TABLES.map(rows))
   const [problems, worksheets, lists, workbooks, wbItems, students, gradings, dailyNotes, settings] =
-    await Promise.all(ALL_TABLES.map(rows))
+    raw.map(rs => rs.map(r => r.data as any))
   const settingsMap = new Map<string, any>()
   for (const s of settings) if (s && s.__id) settingsMap.set(s.__id, s.value)
   return {
@@ -110,30 +116,41 @@ export async function loadAll(): Promise<CloudData | null> {
 
 export const cloud = {
   on: !!supabase,
-  async upsert(table: string, id: string, data: unknown) {
-    if (!supabase) return
-    const { error } = await supabase.from(table).upsert({ id, data, updated_at: new Date().toISOString() })
-    if (error) console.warn('upsert', table, error.message)
+  // 🔴 아래 쓰기들은 실패해도 조용히 지나가지 않는다. 못 올린 것은 outbox 에 남아
+  //    될 때까지 재시도되고, 그때까지 loadAll() 결과 위에 덮어씌워져 화면에서도 안 사라진다.
+  //    반환값 true = 저장이 끝났다. 화면이 「저장됨」이라고 말하려면 이 값을 봐야 한다.
+  //    ⚠️ 클라우드 설정이 아예 없는 로컬 단독 모드(supabase=null)에서는 localStorage 저장이
+  //       곧 완료다 — 올릴 곳이 없으므로 true. 여기서 false 를 주면 멀쩡한 저장마다
+  //       「아직 안 올라감」이 뜨는 오탐이 된다.
+  async upsert(table: string, id: string, data: unknown): Promise<boolean> {
+    if (!supabase) return true
+    return outbox.write({ kind: 'upsert', table, id, data, at: new Date().toISOString() })
   },
-  async upsertMany(table: string, items: { id: string; data: unknown }[]) {
-    if (!supabase || items.length === 0) return
+  async upsertMany(table: string, items: { id: string; data: unknown }[]): Promise<boolean> {
+    if (!supabase || items.length === 0) return true
     const now = new Date().toISOString()
     const CHUNK = 500
+    let ok = true
     for (let i = 0; i < items.length; i += CHUNK) {
       const batch = items.slice(i, i + CHUNK).map(x => ({ id: x.id, data: x.data, updated_at: now }))
       const { error } = await supabase.from(table).upsert(batch)
-      if (error) console.warn('upsertMany', table, error.message)
+      if (error) {
+        console.warn('upsertMany', table, error.message)
+        // 뭉치 전송이 막히면 낱개로 큐에 넣어 둔다 — 이관·일괄 저장이 통째로 사라지지 않게
+        ok = false
+        for (const x of items.slice(i, i + CHUNK))
+          void outbox.write({ kind: 'upsert', table, id: x.id, data: x.data, at: now })
+      }
     }
+    return ok
   },
-  async del(table: string, id: string) {
-    if (!supabase) return
-    const { error } = await supabase.from(table).delete().eq('id', id)
-    if (error) console.warn('del', table, error.message)
+  async del(table: string, id: string): Promise<boolean> {
+    if (!supabase) return true
+    return outbox.write({ kind: 'del', table, id, at: new Date().toISOString() })
   },
-  async setSetting(key: string, value: unknown) {
-    if (!supabase) return
-    const { error } = await supabase.from(T.settings).upsert({ id: key, data: { __id: key, value }, updated_at: new Date().toISOString() })
-    if (error) console.warn('setting', key, error.message)
+  async setSetting(key: string, value: unknown): Promise<boolean> {
+    if (!supabase) return true
+    return outbox.write({ kind: 'upsert', table: T.settings, id: key, data: { __id: key, value }, at: new Date().toISOString() })
   },
   T,
   // 최초 진입 시 클라우드가 비어 있으면 로컬 데이터를 밀어 올림

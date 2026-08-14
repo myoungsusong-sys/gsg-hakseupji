@@ -17,6 +17,7 @@ import StudentWorkbooks from './pages/student/StudentWorkbooks'
 import StudentChallenge from './pages/student/StudentChallenge'
 import StudentLectures from './pages/student/StudentLectures'
 import Layout from './components/Layout'
+import SaveGuard from './components/SaveGuard'
 import PrepLayout from './components/PrepLayout'
 import Placeholder from './components/Placeholder'
 import WorksheetPage from './pages/WorksheetPage'
@@ -49,6 +50,8 @@ export default function App() {
   return (
     <AuthProvider>
       <Gate />
+      {/* 못 올린 저장이 남아 있으면 어느 화면에서든 보이게 — 로그인 화면 포함 */}
+      <SaveGuard />
     </AuthProvider>
   )
 }

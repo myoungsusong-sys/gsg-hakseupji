@@ -513,6 +513,9 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const [selfMarks, setSelfMarks] = useState<Record<string, Mark>>({})
   const [revealed, setRevealed] = useState<Record<string, boolean>>({})  // 정답을 연 문항
   const [savedAt, setSavedAt] = useState('')
+  // 클라우드에 아직 못 올린 상태 — 「저장됨」이라고 말하면 안 되는 경우다.
+  // (데이터는 outbox 가 들고 있다가 다시 보낸다. 자세한 사정은 lib/outbox.ts 머리말)
+  const [saveFailed, setSaveFailed] = useState(false)
   const [retryOpen, setRetryOpen] = useState<string | null>(null)      // 다시 풀기 인라인 입력 중인 문항
   const [retryAns, setRetryAns] = useState('')                          // 다시 풀기 입력값
   // 인강(풀이 강의) — 교재 course의 강의를 미리 로드해 문항별 유무를 바로 표시
@@ -640,12 +643,16 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     const exist = gradings.find(g =>
       g.studentId === me.id && g.workbookId === wb.id && g.by === 'student' &&
       g.pageFrom === page && g.pageTo === page && dateKey(g.date) === today)
-    upsertGrading({
+    // 🔴 올라간 것을 확인한 뒤에만 「저장됨」이라고 말한다 — 예전에는 부르자마자 무조건 저장됐다고 했고,
+    //    실패하면 학생이 푼 것이 다음 동기화에서 통째로 사라졌다.
+    void upsertGrading({
       id: exist?.id ?? uid('gr'),
       studentId: me.id, source: '교재', workbookId: wb.id, by: 'student',
       date: new Date().toISOString(), pageFrom: page, pageTo: page, results,
+    }).then(ok => {
+      setSaveFailed(!ok)
+      if (ok) setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
     })
-    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
     setAnswers({})
     setSelfMarks({})
     setRevealed({})
@@ -689,7 +696,10 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
           </div>
         </div>
         <div className="grow" />
-        {mode === 'view' && savedAt && (
+        {mode === 'view' && saveFailed && (
+          <span className="text-xs font-bold text-clay">⚠ 아직 안 올라감 — 다시 보내는 중</span>
+        )}
+        {mode === 'view' && !saveFailed && savedAt && (
           <span className="text-xs font-bold text-pine">✓ 채점 저장됨 {savedAt}</span>
         )}
         {mode === 'view' && (

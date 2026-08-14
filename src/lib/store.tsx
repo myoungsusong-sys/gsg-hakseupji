@@ -97,8 +97,10 @@ interface Store extends Persisted {
   setStudentActive: (id: string, active: boolean) => void
   updateStudent: (id: string, patch: Partial<Student>) => void
   importBulk: (students: Student[], gradings: Grading[]) => void   // 매쓰플랫 이관 (id 지정 upsert)
-  saveGrading: (g: Omit<Grading, 'id'>) => void
-  upsertGrading: (g: Grading) => void   // 같은 id면 교체 — 실시간 자동 저장용
+  // 🔴 반환값 = 클라우드까지 올라갔는가. 화면이 「저장됨」이라고 말하려면 이 값을 봐야 한다.
+  //    (못 올라가도 outbox 가 계속 재시도하므로 데이터는 잃지 않는다 — lib/outbox.ts)
+  saveGrading: (g: Omit<Grading, 'id'>) => Promise<boolean>
+  upsertGrading: (g: Grading) => Promise<boolean>   // 같은 id면 교체 — 실시간 자동 저장용
   saveDailyNote: (n: DailyNote) => void
   setLecturePlan: (p: LecturePlan) => void          // 진도표 저장/갱신 (학생×교재 1개)
   removeLecturePlan: (id: string) => void
@@ -632,12 +634,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     },
     saveGrading: g => {
       const rec = { ...g, id: uid('gr') }
-      set(s => ({ ...s, gradings: [rec, ...s.gradings] })); cloud.upsert(cloud.T.gradings, rec.id, rec)
+      set(s => ({ ...s, gradings: [rec, ...s.gradings] }))
+      return cloud.upsert(cloud.T.gradings, rec.id, rec)
     },
     upsertGrading: g => {
       const exists = stateRef.current.gradings.some(x => x.id === g.id)
       set(s => ({ ...s, gradings: exists ? s.gradings.map(x => x.id === g.id ? g : x) : [g, ...s.gradings] }))
-      cloud.upsert(cloud.T.gradings, g.id, g)
+      return cloud.upsert(cloud.T.gradings, g.id, g)
     },
     saveDailyNote: n => {
       set(s => ({ ...s, dailyNotes: [...s.dailyNotes.filter(x => !(x.studentId === n.studentId && x.date === n.date)), n] }))

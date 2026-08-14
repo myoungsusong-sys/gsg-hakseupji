@@ -170,7 +170,8 @@ export default function GradePanel({ student }: { student: Student }) {
   const manualItems = useMemo(() => items.filter(i => !i.id.includes('#')), [items])
   const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[]; pagePicker?: PagePicker } | null>(null)
   // 실시간 자동 저장 상태
-  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved'>('idle')
+  // 'retry' = 클라우드에 못 올렸다. 데이터는 outbox 가 들고 있다가 다시 보낸다(사라지지 않는다).
+  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'retry'>('idle')
   const [savedAt, setSavedAt] = useState('')
 
   // 교재 전환·매칭 문항 로드 시: 마지막으로 보던 쪽 범위를 복원(없거나 무효면 교재 전체)
@@ -223,14 +224,21 @@ export default function GradePanel({ student }: { student: Student }) {
   const gradingsRef = useRef(gradings)
   gradingsRef.current = gradings
 
+  // 🔴 클라우드에 올라간 것을 확인한 뒤에만 「저장됨」이라고 말한다.
+  //    예전에는 upsertGrading 을 부르자마자 무조건 'saved' 로 바꿨다. 그래서 네트워크가
+  //    끊겼거나 세션이 만료돼 저장이 실패해도 선생님 화면에는 「✓ 저장됨 18:42」가 떴고,
+  //    다른 기기가 저장하는 순간 그 채점이 통째로 사라졌다.
+  //    (2026-08-15 "채점했는데 기록 0건" — 자세한 사정은 lib/outbox.ts 머리말)
+  //    실패해도 데이터는 안 잃는다. outbox 가 될 때까지 다시 보내고 그동안 화면에도 남는다.
   function flushSave() {
     if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null }
     const g = pendingRef.current
     if (!g) return
     pendingRef.current = null
-    upsertGrading(g)
-    setSaveState('saved')
-    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+    void upsertGrading(g).then(ok => {
+      setSaveState(ok ? 'saved' : 'retry')
+      if (ok) setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+    })
   }
   const flushRef = useRef(flushSave)
   flushRef.current = flushSave
@@ -289,6 +297,22 @@ export default function GradePanel({ student }: { student: Student }) {
 
   // 탭 이동·언마운트 시 대기분 저장
   useEffect(() => () => flushRef.current(), [])
+
+  // 🔴 창을 닫거나 탭을 숨기는 순간에도 대기분을 밀어 넣는다.
+  //    브라우저 탭을 닫는 것은 리마운트가 아니라서 위 언마운트 정리가 안 돈다 →
+  //    마지막 클릭 뒤 900ms(디바운스) 안에 닫으면 그 채점이 통째로 없던 일이 됐다.
+  //    outbox 는 보내기 전에 localStorage 에 먼저 적으므로, 여기서 부르기만 하면
+  //    전송이 못 끝나도 다음에 앱을 열 때 올라간다.
+  useEffect(() => {
+    const bye = () => flushRef.current()
+    const onHide = () => { if (document.hidden) bye() }
+    window.addEventListener('pagehide', bye)
+    document.addEventListener('visibilitychange', onHide)
+    return () => {
+      window.removeEventListener('pagehide', bye)
+      document.removeEventListener('visibilitychange', onHide)
+    }
+  }, [])
 
   // 이 학생이 이 교재에서 이미 채점한 문항 id (좌측 진도 뱃지용)
   const gradedIds = useMemo(() => {
@@ -571,9 +595,10 @@ export default function GradePanel({ student }: { student: Student }) {
         <span className="text-xs text-ink2">
           채점 기록은 실시간으로 자동 저장됩니다.
           {/* 흔들림 방지: 저장 상태 글자는 항상 같은 폭을 차지(자리 예약)해 줄바꿈이 흔들리지 않게 */}
-          <span className="ml-2 inline-block w-24 align-baseline">
+          <span className="ml-2 inline-block w-44 align-baseline">
             {saveState === 'saving' && <span className="text-amber">저장 중…</span>}
             {saveState === 'saved' && <span className="text-pine">✓ 저장됨 {savedAt}</span>}
+            {saveState === 'retry' && <span className="font-bold text-clay">⚠ 아직 안 올라감 — 다시 보내는 중</span>}
           </span>
         </span>
         {inRange.length > 0 && (
