@@ -88,12 +88,13 @@ function nextMark(cur: Mark | undefined, bulk = false): Mark | undefined {
 const MARK_ICON: Record<Mark, string> = { 정답: '○', 오답: '✕', 모름: '?' }
 const MARK_CLASS: Record<Mark, string> = { 정답: 'text-pine', 오답: 'text-clay', 모름: 'text-amber' }
 // 행 배경: 정답=연파랑 · 오답=연분홍 · 모름=연노랑 · 미채점=흰색 (매쓰플랫 동일)
-const CARD_CLASS: Record<Mark, string> = {
-  정답: 'border-line bg-pine-soft/40 hover:border-pine',
-  오답: 'border-clay bg-red-50',
-  모름: 'border-amber bg-amber-soft/50',
+// 2026-08-15: 채점판을 카드 그리드 → 매쓰플랫형 표(구분선)로 바꾸면서 테두리 색은 안 쓰고
+// 배경색만 남겼다. 카드형 상수(CARD_CLASS/CARD_UNMARKED)는 쓰는 곳이 없어져 지웠다.
+const ROW_CLASS: Record<Mark, string> = {
+  정답: 'bg-pine-soft/40',
+  오답: 'bg-red-50',
+  모름: 'bg-amber-soft/50',
 }
-const CARD_UNMARKED = 'border-line bg-white hover:border-pine'
 
 // ── 채점 화면 "마지막 상태" 기억 ────────────────────────────────
 // 학생을 바꾸면 GradePanel이 리마운트(key=student.id)되어 로컬 state가 사라진다.
@@ -691,20 +692,23 @@ export default function GradePanel({ student }: { student: Student }) {
             )
           ) : (
             <>
-              {/* 매쓰플랫 실측(1440창): 문항 목록은 **2열** · 칸 폭 ~320px · 높이 40~43px.
-                  우리는 4열이라 칸이 좁고 정답이 줄바꿈됐다. 2열로 맞춘다. */}
-              <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+              {/* 매쓰플랫 채점판 문항 목록 (2026-08-15 실측 + 명수쌤 화면 대조):
+                  **1열 전체폭** · 행 높이 56~60px · 카드가 아니라 **구분선으로 나눈 표**.
+                  한 행 = [번호(고정폭)] [정답] [채점표시]. 흰 배경 위에 테두리 한 겹만 두른다. */}
+              <div className="overflow-hidden rounded-2xl border border-line bg-white">
                 {inRange.map(i => {
                   const m = markOf(i.id)
                   const sel = selected.has(i.id)
-                  const cardCls = selecting
-                    ? (m && m !== '정답' ? 'border-clay bg-red-50' : sel ? 'border-pine bg-pine-soft/40' : 'border-line bg-white hover:border-pine')
-                    : (m ? CARD_CLASS[m] : CARD_UNMARKED)
+                  // 표 행용 — 테두리는 아래 구분선 하나뿐이라 배경색만 쓴다(카드 테두리 색은 안 씀)
+                  const rowCls = selecting
+                    ? (m && m !== '정답' ? 'bg-red-50' : sel ? 'bg-pine-soft/40' : 'bg-white hover:bg-paper2')
+                    : (m ? ROW_CLASS[m] : 'bg-white hover:bg-paper2')
                   // "(1) ○ (2) × …" 처럼 소문항이 여러 개면 소문항별로 채점한다(어디를 틀렸는지 남기려고).
                   const subs = selecting ? null : splitSubItems(i.answer)
                   if (subs) {
                     return (
-                      <div key={i.id} className={`rounded-xl border px-3 py-2 text-left transition ${cardCls}`}>
+                      // 소문항 묶음도 같은 표 안의 한 행(구분선)으로 — 다만 안에 소문항이 들어가 키가 크다
+                      <div key={i.id} className={`border-b border-line px-4 py-2 text-left transition last:border-b-0 ${rowCls}`}>
                         <div className="flex items-center justify-between gap-1">
                           <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
                           <span className="flex items-center gap-1">
@@ -733,11 +737,10 @@ export default function GradePanel({ student }: { student: Student }) {
                     )
                   }
                   return (
-                    // 매쓰플랫 실측: 문항 한 칸은 **한 줄**이다 — 번호 · 정답 · 채점표시가 가로로 놓이고
-                    // 높이 40~43px. 우리는 번호/정답을 두 줄로 쌓아 68px 이었다.
+                    // 매쓰플랫과 같은 표 한 행: 번호(고정폭) · 정답 · 채점표시. 높이 60px, 구분선.
                     <button key={i.id} onClick={() => selecting ? toggleSelect(i.id) : cycle(i.id)}
-                      className={`flex min-h-11 items-center gap-2 rounded-xl border px-3 py-1.5 text-left transition ${cardCls}`}>
-                      <b className="shrink-0 text-sm">p.{i.page} {i.label ?? i.no}번</b>
+                      className={`flex h-[60px] w-full items-center gap-3 border-b border-line px-4 text-left transition last:border-b-0 ${rowCls}`}>
+                      <span className="w-24 shrink-0 text-sm text-ink2">p.{i.page} {i.label ?? i.no}</span>
                       <span className="min-w-0 grow"><AnswerLabel item={i} inline /></span>
                       {selecting
                         ? <input type="checkbox" checked={sel} readOnly className="pointer-events-none shrink-0 accent-[var(--color-pine,#2e6b4f)]" />
