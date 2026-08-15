@@ -634,7 +634,8 @@ export default function GradePanel({ student }: { student: Student }) {
         </div>
       )}
 
-      <div className="grid gap-4 lg:grid-cols-[220px_1fr]">
+      {/* 좌측 페이지 목록 폭 — 매쓰플랫 실측 180px (2026-08-15). 우리는 220px 이었다. */}
+      <div className="grid gap-4 lg:grid-cols-[180px_1fr]">
         {/* 좌측: 교재 페이지 목록 + 진도 (체크박스 = 페이지별 오답학습지 대상) */}
         <aside ref={asideRef} onScroll={e => onAsideScroll(e.currentTarget.scrollTop)}
           className="h-fit max-h-[70vh] overflow-y-auto rounded-2xl border border-line bg-white p-2">
@@ -695,7 +696,7 @@ export default function GradePanel({ student }: { student: Student }) {
                   const subs = selecting ? null : splitSubItems(i.answer)
                   if (subs) {
                     return (
-                      <div key={i.id} className={`rounded-xl border p-3 text-left transition ${cardCls}`}>
+                      <div key={i.id} className={`rounded-xl border px-3 py-2 text-left transition ${cardCls}`}>
                         <div className="flex items-center justify-between gap-1">
                           <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
                           <span className="flex items-center gap-1">
@@ -725,7 +726,7 @@ export default function GradePanel({ student }: { student: Student }) {
                   }
                   return (
                     <button key={i.id} onClick={() => selecting ? toggleSelect(i.id) : cycle(i.id)}
-                      className={`rounded-xl border p-3 text-left transition ${cardCls}`}>
+                      className={`rounded-xl border px-3 py-2 text-left transition ${cardCls}`}>
                       <div className="flex items-center justify-between gap-1">
                         <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
                         {selecting

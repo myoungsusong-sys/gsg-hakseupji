@@ -107,8 +107,9 @@ export default function Lesson() {
     )
   }
 
+  // 좌측 학생 목록 폭 — 매쓰플랫 실측 180px (2026-08-15). 우리는 230px 이었다.
   return (
-    <div className="grid gap-6 lg:grid-cols-[230px_1fr]">
+    <div className="grid gap-6 lg:grid-cols-[180px_1fr]">
       <aside className="no-print h-fit overflow-hidden rounded-2xl border border-line bg-white">
         <div className="border-b border-line px-4 py-3">
           <div className="mb-2 flex items-center gap-2 text-sm font-black text-ink">
