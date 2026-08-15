@@ -19,9 +19,11 @@ import { BrandLogo } from '../../components/BrandMark'
 
 export { useStudentSelf } from './common'
 
+// 매쓰플랫 학생앱 실측(2026-08-15, 1440창): 네비 16px · 패딩 8/12 · 높이 40px ·
+// **활성만 700, 나머지 400**. 우리는 15px · 패딩 8/14 · 전부 700 이었다.
 const tab = ({ isActive }: { isActive: boolean }) =>
-  `px-3.5 py-2 rounded-full text-[15px] font-bold transition ${
-    isActive ? 'bg-pine-soft text-pine-dark' : 'text-ink2 hover:text-ink'
+  `whitespace-nowrap rounded-full px-3 py-2 text-[16px] leading-6 transition ${
+    isActive ? 'bg-pine-soft font-bold text-pine-dark' : 'font-normal text-ink2 hover:text-ink'
   }`
 
 export default function StudentShell() {
@@ -98,7 +100,7 @@ export default function StudentShell() {
         {/* 📢 선생님 호출 — 어느 화면에 있든 보이게 헤더 위에 둔다 */}
         <TeacherCallOverlay studentId={me.id} name={me.name} />
         <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
-          <div className="mx-auto flex max-w-6xl items-center gap-5 px-6 py-3">
+          <div className="mx-auto flex w-full items-center gap-5 px-6 py-5">
             <div className="flex items-baseline gap-2">
               <BrandLogo />
             </div>
@@ -127,7 +129,7 @@ export default function StudentShell() {
             <StudentHeaderExtras me={me} onLogout={logout} />
           </div>
         </header>
-        <main className="mx-auto max-w-6xl px-6 py-8">
+        <main className="mx-auto w-full px-6 py-8">
           <Outlet />
         </main>
       </div>
