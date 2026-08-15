@@ -12,13 +12,19 @@ export const POOL_COURSES = [
   // 매쓰플랫 전 과정 수확으로 채웠다. h-hs2(고등수학 하)는 아직 우리 교재 과정이 없어 파일만 둔다.
   'h-hs1', 'h-hs2', 'h-s1', 'h-s2', 'h-calc15',
   // 사이언스플랫 과학 — 매쓰플랫형 Raw 문제은행(정답 포함, 자동채점). 이미지 CDN만 다름(SCI_POOL_COURSES)
-  'm-sci1-1', 'm-sci2-1', 'h-int1',
+  // 2026-08-15: 사이언스플랫 전 과정(중1-1~중3-2 · 통합과학1·2 = 개념 441개) 수확으로 8과정 모두 채움
+  'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
 ] as const
 
 // 사이언스플랫 문제은행을 쓰는 과학 과정 — 이미지 CDN이 scienceflat-contents.scienceflat.com (매쓰플랫과 다름)
-export const SCI_POOL_COURSES: readonly string[] = ['m-sci1-1', 'm-sci2-1', 'h-int1']
+// 🔴 여기 빠지면 그 과정의 Raw 문항은 매쓰플랫 CDN 을 보게 돼 **이미지가 전부 깨진다.**
+//    완자 문항은 BASE_URL 상대경로라 이 목록과 무관하다 — 한 파일에 둘이 섞여 있어도 안전하다.
+export const SCI_POOL_COURSES: readonly string[] = [
+  'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
+]
 
 // 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
+// (사이언스플랫 Raw 와 같은 파일에 섞여 있다. 로더가 행 단위로 첫 필드 타입을 보고 가른다)
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const
 // [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer, solutionRelPath?]
 //  — 완자 교재 크롭 문항. solution은 정답친해 원본 페이지 이미지(정답·해설, 오류 위험 0)
