@@ -16,11 +16,15 @@ import StudentBookDialog from './StudentBookDialog'
 // 정답 표시 (매쓰플랫 채점판 동일): 객관식 숫자→①~⑤, 수식(LaTeX)→KaTeX 렌더, 그 외 원문
 const CIRCLED = ['①', '②', '③', '④', '⑤']
 // 정답은 크고 진하게(선생님이 한눈에 보이게) — "정답" 라벨만 작게, 값은 굵고 크게
-function AnswerLabel({ item }: { item: WBItem }) {
+// inline=true 는 채점판 한 줄 배치용 — 매쓰플랫처럼 번호 옆에 정답이 나란히 붙는다.
+// (기본값은 기존처럼 아래로 쌓는 형태. 소문항 카드 등 다른 곳이 그대로 쓰고 있다)
+function AnswerLabel({ item, inline = false }: { item: WBItem; inline?: boolean }) {
   const a = item.answer
   if (!a) return null
   const wrap = (v: ReactNode, faded = false) => (
-    <div className="mt-0.5 text-xs text-ink2">정답 <span className={faded ? 'text-ink2/70' : 'text-[15px] font-extrabold text-ink'}>{v}</span></div>
+    <div className={`${inline ? 'truncate' : 'mt-0.5'} text-xs text-ink2`}>
+      정답 <span className={faded ? 'text-ink2/70' : 'text-[15px] font-extrabold text-ink'}>{v}</span>
+    </div>
   )
   // 서술형: 정답이 이미지(매쓰플랫 answerImageUrl, 표·그래프·다단계 풀이)로 제공되는 문항.
   // 정답 이미지는 표/그래프라 텍스트 크기로 줄이면 안 보임 → 문항 간 통일된 읽히는 높이(64px)로.
@@ -687,7 +691,9 @@ export default function GradePanel({ student }: { student: Student }) {
             )
           ) : (
             <>
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+              {/* 매쓰플랫 실측(1440창): 문항 목록은 **2열** · 칸 폭 ~320px · 높이 40~43px.
+                  우리는 4열이라 칸이 좁고 정답이 줄바꿈됐다. 2열로 맞춘다. */}
+              <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
                 {inRange.map(i => {
                   const m = markOf(i.id)
                   const sel = selected.has(i.id)
@@ -727,15 +733,15 @@ export default function GradePanel({ student }: { student: Student }) {
                     )
                   }
                   return (
+                    // 매쓰플랫 실측: 문항 한 칸은 **한 줄**이다 — 번호 · 정답 · 채점표시가 가로로 놓이고
+                    // 높이 40~43px. 우리는 번호/정답을 두 줄로 쌓아 68px 이었다.
                     <button key={i.id} onClick={() => selecting ? toggleSelect(i.id) : cycle(i.id)}
-                      className={`rounded-xl border px-3 py-2 text-left transition ${cardCls}`}>
-                      <div className="flex items-center justify-between gap-1">
-                        <b className="text-sm">p.{i.page} {i.label ?? i.no}번</b>
-                        {selecting
-                          ? <input type="checkbox" checked={sel} readOnly className="pointer-events-none accent-[var(--color-pine,#2e6b4f)]" />
-                          : <span className={`text-lg font-black ${m ? MARK_CLASS[m] : 'text-ink2/25'}`}>{m ? MARK_ICON[m] : '○'}</span>}
-                      </div>
-                      <AnswerLabel item={i} />
+                      className={`flex min-h-11 items-center gap-2 rounded-xl border px-3 py-1.5 text-left transition ${cardCls}`}>
+                      <b className="shrink-0 text-sm">p.{i.page} {i.label ?? i.no}번</b>
+                      <span className="min-w-0 grow"><AnswerLabel item={i} inline /></span>
+                      {selecting
+                        ? <input type="checkbox" checked={sel} readOnly className="pointer-events-none shrink-0 accent-[var(--color-pine,#2e6b4f)]" />
+                        : <span className={`shrink-0 text-lg font-black ${m ? MARK_CLASS[m] : 'text-ink2/25'}`}>{m ? MARK_ICON[m] : '○'}</span>}
                     </button>
                   )
                 })}
