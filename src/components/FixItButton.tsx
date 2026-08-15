@@ -38,7 +38,7 @@ export default function FixItButton({ app, appVersion, synced, who, className = 
     <>
       <button type="button" onClick={() => setOpen(true)}
         title={openCount ? `안 본 오류 보고 ${openCount}건` : '화면이 이상할 때 눌러요'}
-        className={`relative ${className || 'rounded-lg border border-line bg-white px-2.5 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2'}`}>
+        className={`relative whitespace-nowrap ${className || 'rounded-lg border border-line bg-white px-2.5 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2'}`}>
         🛠 <span className="hidden sm:inline">화면이 이상해요</span>
         {openCount > 0 && (
           <span className="absolute -right-1.5 -top-1.5 min-w-[18px] rounded-full bg-clay px-1 text-[10px] font-black leading-[18px] text-white">

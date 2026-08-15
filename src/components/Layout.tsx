@@ -125,9 +125,12 @@ function BranchMenu({ academyName }: { academyName: string }) {
   )
 }
 
+// 매쓰플랫 실측(2026-08-15, 1440창): 폰트 18px · 패딩 12/16 · whitespace-nowrap ·
+// **활성만 700, 나머지는 500**. 우리는 15px·전부 700·줄바꿈 허용이라
+// 1280 화면에서 「수업 준비」가 두 줄로 접히며 헤더가 86px 로 부풀었다(매쓰플랫 61px).
 const topTab = ({ isActive }: { isActive: boolean }) =>
-  `px-4 py-2 rounded-full text-[15px] font-bold transition ${
-    isActive ? 'text-pine-dark' : 'text-ink2 hover:text-ink'
+  `whitespace-nowrap rounded-full px-4 py-3 text-[18px] leading-[24px] transition ${
+    isActive ? 'font-bold text-pine-dark' : 'font-medium text-ink2 hover:text-ink'
   }`
 
 // 매쓰플랫 헤더 구성 동일: 로고 | 수업 준비·수업·관리 | (우측) 내신관 · 알림 · 학원명(→마이페이지)
@@ -172,7 +175,7 @@ export default function Layout() {
       {/* 선생님 화면은 자동 새로고침 금지 — 채점 도중 리로드되면 채점하던 학생·진행이 날아간다 */}
       {stale && <UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
       <header className="no-print sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
-        <div className="mx-auto flex w-full items-center gap-6 px-6 py-3">
+        <div className="mx-auto flex w-full items-center gap-6 px-6 py-1.5">
           <button onClick={() => nav('/')} className="flex items-center">
             <BrandLogo />
           </button>
@@ -187,14 +190,14 @@ export default function Layout() {
           <div className="flex gap-0.5 rounded-lg bg-paper2 p-0.5" title="과목 — 수업 준비·채점·보고서에 적용됩니다">
             {SUBJECTS.map(s => (
               <button key={s} onClick={() => setSubject(s)}
-                className={`rounded-md px-3.5 py-1 text-sm font-bold transition ${subject === s ? 'bg-pine text-paper shadow-sm' : 'text-ink2 hover:text-ink'}`}>
+                className={`whitespace-nowrap rounded-md px-3.5 py-1 text-sm font-bold transition ${subject === s ? 'bg-pine text-paper shadow-sm' : 'text-ink2 hover:text-ink'}`}>
                 {s}
               </button>
             ))}
           </div>
           <div className="grow" />
           <button onClick={() => nav('/prep/school-exam')}
-            className="rounded-full bg-amber px-4 py-1.5 text-sm font-bold text-white shadow-sm transition hover:brightness-105">
+            className="whitespace-nowrap rounded-full bg-amber px-4 py-1.5 text-sm font-bold text-white shadow-sm transition hover:brightness-105">
             내신관
           </button>
           <FixItButton app="teacher" />
@@ -215,7 +218,7 @@ export default function Layout() {
           {multiBranch
             ? <BranchMenu academyName={academyName} />
             : <button onClick={() => nav('/mypage')} title="마이페이지"
-                className="rounded-lg px-3 py-1.5 text-sm font-bold hover:bg-paper2">{academyName}</button>}
+                className="max-w-[14rem] truncate whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-bold hover:bg-paper2">{academyName}</button>}
         </div>
       </header>
 
