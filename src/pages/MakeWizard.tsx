@@ -1443,7 +1443,7 @@ export default function MakeWizard() {
       {/* 하단 고정 바: 문제 수·유형 수 + 단계 이동 (매쓰플랫 방식) */}
       {(step > 1 || srcTab === 'chapter') && (
         <div className="no-print fixed inset-x-0 bottom-0 z-30 border-t border-line bg-white/95 backdrop-blur">
-          <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-1 px-6 py-3">
+          <div className="mx-auto flex w-full flex-wrap items-center gap-x-4 gap-y-1 px-6 py-3">
             <div className="text-sm">
               학습지 문제 수 <b className="text-pine-dark">{step === 1 ? Math.min(count, availableCount) : items.length}</b> 개
               {' | '}유형 <b>{step === 1 ? selected.size : new Set(items.map(p => p.typeId)).size}</b>개

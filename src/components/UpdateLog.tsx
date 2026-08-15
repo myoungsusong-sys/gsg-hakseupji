@@ -58,7 +58,7 @@ export function UpdateBanner({ items, seconds = 20, auto = true }: { items: Chan
   if (!top) return null
   return (
     <div className="no-print sticky top-0 z-40 bg-amber text-white shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5 text-sm">
+      <div className="mx-auto flex w-full items-center gap-3 px-4 py-2.5 text-sm">
         <span className="text-lg leading-none">🎉</span>
         <div className="min-w-0 grow leading-snug">
           <b>업데이트: {top.title}</b>

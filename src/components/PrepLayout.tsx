@@ -11,7 +11,7 @@ export default function PrepLayout() {
   const [examOpen, setExamOpen] = useState(true)
   const [areaOpen, setAreaOpen] = useState(true)
   return (
-    <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
+    <div className="mx-auto flex w-full gap-6 px-6 py-6">
       <aside className="no-print w-44 shrink-0">
         <nav className="sticky top-20 rounded-2xl border border-line bg-white p-2">
           <NavLink to="/prep/worksheet" className={item}>학습지</NavLink>

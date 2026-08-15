@@ -135,3 +135,14 @@ body {
 @media print {
   .sheet-problem .katex { overflow: hidden; }
 }
+
+/* ── 수식이 어디서든 제 칸을 넘지 않게 (2026-08-15) ─────────────────────
+   위 규칙은 `.sheet-problem`(학습지 조판) 안에서만 돌아서, 채점판 카드·목록처럼
+   학습지가 아닌 화면에서는 긴 수식이 카드 밖으로 삐져나왔다.
+   실측: 1280px 화면에서 문서 폭이 1875px까지 늘어나 가로 스크롤이 생기고
+   "화면이 깨져 보인다"는 보고로 이어졌다(명수쌤 2026-08-15).
+   → 전역으로 칸을 넘지 않게 캡하고, 넘칠 때만 그 수식만 가로 스크롤한다. */
+.katex { max-width: 100%; }
+@media screen {
+  .katex { display: inline-block; overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
+}

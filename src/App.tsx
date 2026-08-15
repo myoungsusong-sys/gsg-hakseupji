@@ -43,7 +43,7 @@ import EssayPage from './pages/EssayPage'
 import WorksheetUpload from './pages/WorksheetUpload'
 
 function Page({ children }: { children: React.ReactNode }) {
-  return <div className="print-page-reset mx-auto max-w-7xl px-6 py-8">{children}</div>
+  return <div className="print-page-reset mx-auto w-full px-6 py-8">{children}</div>
 }
 
 export default function App() {
