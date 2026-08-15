@@ -12,7 +12,8 @@ export default function WorksheetPage() {
       <div className="mb-6 flex gap-8 border-b border-line px-1">
         {([['mine', '내 학습지'], ['db', '나의 DB'], ['favorites', '즐겨찾는 문제'], ['trash', '학습지 휴지통']] as const).map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)}
-            className={`-mb-px border-b-2 pb-3 pt-1 text-[15px] font-bold transition ${
+            // 매쓰플랫 실측: 탭 16px/700. 우리 --text-base 는 본문 기준 14px 이라 명시 지정한다.
+            className={`-mb-px whitespace-nowrap border-b-2 pb-3 pt-1 text-[16px] font-bold transition ${
               tab === k ? 'border-pine text-ink' : 'border-transparent text-ink2 hover:text-ink'
             }`}>
             {label}
