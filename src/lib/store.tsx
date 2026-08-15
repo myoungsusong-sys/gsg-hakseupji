@@ -145,9 +145,13 @@ interface Store extends Persisted {
 const Ctx = createContext<Store | null>(null)
 
 // 교과서 wb-match 과정키 → 문제 풀 과정키(pool-*.json). 22개정 고등은 풀 명칭이 다름(대수=h-alg 등).
-// 초등 e*·중등 m*는 풀 과정키 동일. 매핑 없음(15개정 h-hs1/h-s1/h-s2/h-calc15) → 풀 없음(채점만, 드릴 불가).
+// 초등 e*·중등 m*는 풀 과정키 동일.
+// 🔴 2026-08-15: 15개정 고등 4과정(h-hs1/h-s1/h-s2/h-calc15)은 여기 매핑이 없어서 **풀 없음 →
+//    채점은 되는데 오답학습지가 안 만들어졌다.** 매쓰플랫 전 과정 수확으로 풀을 만들어 연결했다.
+//    (그 전까지 「문제 없음 0개」의 가장 큰 원인이 이 네 과정이었다 — 부족 유형 1,404개)
 const POOL_OF_WBCOURSE: Record<string, string> = {
   'h-dae': 'h-alg', 'h-mi1': 'h-calc1', 'h-prob': 'h-stat', 'h-mi2': 'h-calc2',
+  'h-hs1': 'h-hs1', 'h-s1': 'h-s1', 'h-s2': 'h-s2', 'h-calc15': 'h-calc15',
 }
 function poolCourseOfWb(c?: string): string | undefined {
   if (!c) return undefined
