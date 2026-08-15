@@ -634,8 +634,9 @@ export default function GradePanel({ student }: { student: Student }) {
         </div>
       )}
 
-      {/* 좌측 페이지 목록 폭 — 매쓰플랫 실측 180px (2026-08-15). 우리는 220px 이었다. */}
-      <div className="grid gap-4 lg:grid-cols-[180px_1fr]">
+      {/* 좌측 페이지 목록 — 매쓰플랫 실측(2026-08-15, 1440창): 폭 440px · 행 높이 48px · 1열 · 14px.
+          처음에 180px 로 줄였다가 실측해 보니 매쓰플랫이 훨씬 넓어서 바로잡았다. */}
+      <div className="grid gap-4 lg:grid-cols-[440px_1fr]">
         {/* 좌측: 교재 페이지 목록 + 진도 (체크박스 = 페이지별 오답학습지 대상) */}
         <aside ref={asideRef} onScroll={e => onAsideScroll(e.currentTarget.scrollTop)}
           className="h-fit max-h-[70vh] overflow-y-auto rounded-2xl border border-line bg-white p-2">
@@ -653,7 +654,8 @@ export default function GradePanel({ student }: { student: Student }) {
                 {header && (
                   <div className="mb-0.5 mt-1 rounded bg-paper2 px-2 py-1 text-[10px] font-bold text-ink2">{header}</div>
                 )}
-                <div className={`mb-0.5 flex w-full items-center gap-2 rounded-lg px-2.5 py-1.5 ${on ? 'bg-pine-soft font-bold text-pine-dark' : 'hover:bg-paper2'}`}>
+                {/* 행 높이 48px — 매쓰플랫 실측값 */}
+                <div className={`mb-0.5 flex h-12 w-full items-center gap-2 rounded-lg px-2.5 ${on ? 'bg-pine-soft font-bold text-pine-dark' : 'hover:bg-paper2'}`}>
                   <input type="checkbox" checked={pageChecked.has(p)} onChange={() => togglePage(p)}
                     className="accent-[var(--color-pine,#2e6b4f)]" />
                   <button onClick={() => { setFrom(p); setTo(p) }}
