@@ -17,6 +17,8 @@ export const LECTURE_COURSES = [
   'e3-1', 'e3-2', 'e4-1', 'e4-2', 'e5-1', 'e5-2', 'e6-1', 'e6-2',
   'm1-1', 'm1-2', 'm2-1', 'm2-2', 'm3-1', 'm3-2-2015',
   'h-cm1', 'h-cm2', 'h-alg', 'h-calc1', 'h-stat', 'h-calc2', 'h-geo',
+  // 2026-08-15: 15개정 고등 개념강의 194강 신규 수확(/lecture/group). pool 도 이미 있어 짝이 맞는다.
+  'h-hs1', 'h-hs2', 'h-s1', 'h-s2', 'h-calc15',
 ] as const
 
 type RawLec = [number, string, string, number]   // [id, hash, title, seconds]
