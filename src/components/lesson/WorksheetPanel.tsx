@@ -484,6 +484,9 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
     const id = exist?.id ?? gidRef.current ?? uid('gr')
     gidRef.current = id
     pendingRef.current = {
+      // 🔴 기존 기록의 by·autoDrill 등 다른 필드를 버리지 않는다 — 필드 나열로 새로 만들면
+      //    자동 오답학습지 멱등 마커(autoDrill)가 소리 없이 지워져 중복 생성이 재발화한다 (2026-08-16 리뷰).
+      ...exist,
       id, studentId: student.id, source: '학습지', worksheetId: ws.id,
       date: new Date().toISOString(), results,
     }

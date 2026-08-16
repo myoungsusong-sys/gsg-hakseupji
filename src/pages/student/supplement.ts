@@ -88,14 +88,24 @@ export function useSupplement(me: Student) {
     })
   }
 
-  function create(kind: SupplementKind, ws: Worksheet, g: Grading): void {
+  // 학습지 생성+배정까지만 하고 **이동하지 않는** 코어. 자동 트리거(silent)와 수동 버튼이 공유한다.
+  // silent=true 면 모든 가드 실패를 alert 없이 null 로 돌려준다 (결과 화면 자동 생성용).
+  // wsId 를 주면 그 **결정적 id** 로 만든다 — 자동 트리거가 `ws-auto-<채점id>` 를 넘겨,
+  // 두 기기/두 탭이 동시에 발화해도 클라우드에선 같은 행 upsert 라 드릴이 두 장 생기지 않는다.
+  function build(kind: SupplementKind, ws: Worksheet, g: Grading, flags?: { silent?: boolean; wsId?: string }): string | null {
+    const silent = !!flags?.silent
+    // 멱등 가드: 결정적 id 의 드릴이 이미 있으면(다른 기기가 먼저 만듦) 재생성 없이 그 id 를 돌려준다
+    if (flags?.wsId) {
+      const dup = worksheets.find(w => w.id === flags.wsId && !w.deletedAt)
+      if (dup) return dup.id
+    }
     // 가드0: 선생님이 원클릭 복습을 꺼둔 학년이면 생성 불가 (관리 > 실험실)
-    if (!allowed) { alert(ONE_CLICK_OFF_MSG); return }
+    if (!allowed) { if (!silent) alert(ONE_CLICK_OFF_MSG); return null }
     // 가드: 같은 종류의 진행 중 보충학습이 있으면 생성 불가
     const pending = pendingOf(kind)
     if (pending) {
-      alert(`${SUPPLEMENT_RULE_MSG}\n\n진행 중: ${pending.title}\n먼저 풀고 제출해주세요.`)
-      return
+      if (!silent) alert(`${SUPPLEMENT_RULE_MSG}\n\n진행 중: ${pending.title}\n먼저 풀고 제출해주세요.`)
+      return null
     }
 
     const problemMap = new Map(problems.map(p => [p.id, p]))
@@ -106,10 +116,13 @@ export function useSupplement(me: Student) {
 
     let refs: WrongRef[]
     let opts: Parameters<typeof pickDrillProblems>[2]
-    // 체인 전체(원 학습지+이전 회차들)의 문제는 다시 내지 않음
+    // 체인 전체(원 학습지+**내** 이전 회차들)의 문제는 다시 내지 않음.
+    // 🔴 체인 드릴은 내게 배정된 것만 제외한다 — 같은 원본 학습지로 반 친구들이 만든 드릴까지
+    //    제외하면 늦게 제출한 학생일수록 문제은행이 조용히 고갈된다 (2026-08-16 리뷰).
+    const myWsIds = new Set(assignments.filter(a => a.studentId === me.id).map(a => a.worksheetId))
     const excludeIds = new Set<string>()
     for (const w of worksheets) {
-      if (w.id === sourceWsId || w.id === ws.id || w.supplement?.sourceWsId === sourceWsId) {
+      if (w.id === sourceWsId || w.id === ws.id || (w.supplement?.sourceWsId === sourceWsId && myWsIds.has(w.id))) {
         for (const pid of w.problemIds) excludeIds.add(pid)
       }
     }
@@ -118,26 +131,26 @@ export function useSupplement(me: Student) {
       refs = wrongRefsOf(ws, g, problemMap)
       if (refs.length === 0) {
         // 틀린 유형을 모두 맞음 — 오답학습 완료 (원본: 추가학습 생성 불가)
-        alert(chainKind === '오답학습'
+        if (!silent) alert(chainKind === '오답학습'
           ? `오답학습 완료! 🎉 ${WRONG_DONE_MSG}`
           : `틀린 문제가 없어요. ${WRONG_DONE_MSG}`)
-        return
+        return null
       }
       opts = { twinPer: 1, similarPer: 1, diffShift: 0, typeCap: 3, excludeIds }
     } else {
       // 심화학습: 직전 학습지에서 **맞힌 문제의 유형만** 난이도 한 단계 위로 (원본 규칙 ②)
       refs = correctRefsOf(ws, g, problemMap)
       if (refs.length === 0) {
-        alert('맞힌 문제가 없어요. 심화학습은 정답 문제의 유형으로 만들어져요 — 오답학습으로 먼저 연습해보세요!')
-        return
+        if (!silent) alert('맞힌 문제가 없어요. 심화학습은 정답 문제의 유형으로 만들어져요 — 오답학습으로 먼저 연습해보세요!')
+        return null
       }
       opts = { twinPer: 0, similarPer: 1, diffShift: 1, typeCap: 2, excludeIds }
     }
 
     const picked = pickDrillProblems(refs, problems, opts)
-    if (picked.length === 0) { alert('출제할 수 있는 문제가 문제은행에 없어요.'); return }
+    if (picked.length === 0) { if (!silent) alert('출제할 수 있는 문제가 문제은행에 없어요.'); return null }
 
-    const id = uid('ws')
+    const id = flags?.wsId ?? uid('ws')
     saveWorksheet({
       id,
       title: `[${kind}-${round}회차] ${baseTitleOf(ws)}`,
@@ -154,8 +167,14 @@ export function useSupplement(me: Student) {
       supplement: { kind, sourceWsId, round },
     })
     addAssignment(id, [me.id], '숙제')
-    nav(`/student/solve/${id}`)
+    return id
   }
 
-  return { create, pendingOf, allowed }
+  // 수동 버튼(◎ 오답학습 · 📊 심화학습) — 만들고 바로 풀러 이동 (기존 동작 그대로)
+  function create(kind: SupplementKind, ws: Worksheet, g: Grading): void {
+    const id = build(kind, ws, g)
+    if (id) nav(`/student/solve/${id}`)
+  }
+
+  return { create, build, pendingOf, allowed }
 }

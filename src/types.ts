@@ -349,6 +349,8 @@ export interface Grading {
   title?: string                                // 원본 학습지/교재명 (표시용 라벨)
   category?: '학습지' | '교재' | '오답' | '챌린지'   // 학습내역 진도 카드 분류
   by?: 'student'                                // 학생앱 자기 채점(제출) 기록 — 없으면 선생님 채점
+  // 이 채점에서 자동 오답학습지를 이미 만들었다는 멱등 마커 — 결과 화면 재방문 시 중복 생성 방지
+  autoDrill?: { wsId: string; at: string }
 }
 
 // 학습지 출제 (수업/숙제) — hj_settings 'assignments' 키에 배열로 저장
@@ -412,6 +414,7 @@ export interface StudentAppConfig {
   //    갑자기 멈추지 않도록 기본값을 실제 동작(켜짐)에 맞췄다.
   aiGrade?: boolean
   aiCoach?: boolean              // 🤖 AI 실시간 코치 — 필기 멈추면 자동 점검·첨삭 (기본 true=사용)
+  autoDrill?: boolean            // 📘 제출 즉시 오답학습지 자동 생성·숙제 배정 (기본 true=사용)
   lab?: LabConfig                // 실험실 설정
 }
 

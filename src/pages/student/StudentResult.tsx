@@ -8,8 +8,12 @@ import ProblemContent from '../../components/ProblemContent'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
-import { latestGradingFor, summaryOf, AnswerText, isImgAnswer } from './common'
+import { latestGradingFor, statusOf, summaryOf, AnswerText, isImgAnswer } from './common'
 import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, ONE_CLICK_OFF_MSG } from './supplement'
+
+// 자동 오답학습지 이중 발화 방어 — 같은 채점(g.id)으로는 한 세션에 한 번만 시도.
+// StrictMode(dev) 마운트 2회·재마운트 때 stateRef/마커가 아직 낡아 있는 창을 막는다.
+const autoDrillFired = new Set<string>()
 
 // ── 학습지 결과 화면 (매쓰플랫 학생앱 학습완료 상세 구조) ────────
 // 요약 카드 + 문항 카드 그리드(정답 연파랑/오답 연분홍) + [한문제씩] 모드(1문항 페이지 넘김
@@ -18,7 +22,7 @@ import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, O
 export default function StudentResult() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, gradings, problems, ensureCourse, studentAppConfig: gcfg, assignments } = useStore()
+  const { worksheets, gradings, problems, ensureCourse, studentAppConfig: gcfg, assignments, upsertGrading } = useStore()
   // 학습지별 공개 설정(출제할 때 고른 것)이 있으면 그게 우선이다 — 「문제만 내보내기」
   const asgReveal = assignments.find(a => a.worksheetId === wsId && a.studentId === me.id)?.reveal
   const cfg = {
@@ -46,6 +50,31 @@ export default function StudentResult() {
     if (ws) for (const c of coursesForWorksheet(ws.grade, ws.subject)) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.grade])
+
+  // 📘 제출 즉시 자동 오답학습지 — 학생이 방금 제출한 채점에 확정 오답이 있으면
+  // 조용히 만들어 숙제로 배정한다. 발화 조건(적대 리뷰 반영, 전부 필수):
+  //  · by==='student' — 학생 제출 기록만. 선생님 채점(연속 자동저장)은 절대 발화하지 않는다
+  //    (선생님이 셀 단위로 채점하는 도중 학생이 결과를 열면 반쪽 데이터로 만들어지는 사고 차단).
+  //  · 10분 컷오프 — "제출 직후"에만. 배포 전 옛 채점을 복습 열람만 해도 숙제가 걸리는
+  //    소급 발화를 막고, build 실패 기록이 영구 재시도 무장 상태로 남는 것도 막는다.
+  //  · 구성도 확정 오답만 — 가채점(pending) 오답 유형이 승인 전에 학습지로 박제되지 않게
+  //    results 를 확정분으로 거른 사본을 build 에 넘긴다(트리거·구성 기준 일치).
+  // 멱등 방어: g.autoDrill 마커 · 모듈 fired 가드(StrictMode/재마운트) · build 내부 pendingOf.
+  useEffect(() => {
+    if (!ws || !g) return
+    if ((gcfg.autoDrill ?? true) === false) return   // 관리 스위치 OFF
+    if (g.by !== 'student') return                   // 학생 제출 기록에만
+    if (g.autoDrill) return                          // 이미 이 채점으로 생성함
+    if (Date.now() - new Date(g.date).getTime() > 10 * 60_000) return   // 제출 직후에만
+    if (autoDrillFired.has(g.id)) return             // 같은 세션 이중 실행(StrictMode 등) 방어
+    const confirmed = { ...g, results: g.results.filter(r => !r.pending) }
+    if (!confirmed.results.some(r => !r.correct)) return
+    autoDrillFired.add(g.id)
+    // 결정적 id — 두 기기/두 탭이 동시에 발화해도 클라우드에선 같은 행이라 드릴이 두 장 생기지 않는다
+    const newId = supplement.build('오답학습', ws, confirmed, { silent: true, wsId: `ws-auto-${g.id}` })
+    if (newId) upsertGrading({ ...g, autoDrill: { wsId: newId, at: new Date().toISOString() } })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws?.id, g?.id])
 
   const items = useMemo(() => {
     if (!ws || !g) return []
@@ -180,6 +209,26 @@ export default function StudentResult() {
           {single ? '☰ 모아 보기' : '📄 한문제씩'}
         </button>
       </div>
+
+      {/* 📘 자동 오답학습지 안내 띠 — 제출 즉시 만들어진 복습 숙제로 바로 진입.
+          드릴을 이미 다 풀었으면(학습완료) 띠를 거둔다 — 완료된 드릴로 재진입해
+          재제출하면 같은 회차가 또 생기는 동선을 막는다 (2026-08-16 리뷰). */}
+      {g.autoDrill && (() => {
+        const dw = worksheets.find(w => w.id === g.autoDrill!.wsId && !w.deletedAt)
+        if (!dw || statusOf(dw.id, latestGradingFor(gradings, me.id, dw.id)) === '학습완료') return null
+        return (
+          <div className="mb-5 flex flex-wrap items-center gap-3 rounded-xl border border-pine/40 bg-pine-soft px-4 py-3">
+            <span className="text-sm font-bold text-pine-dark">
+              📘 틀린 유형으로 <b>오답학습지</b>가 숙제로 만들어졌어요!
+            </span>
+            <div className="grow" />
+            <button onClick={() => nav(`/student/solve/${dw.id}`)}
+              className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
+              바로 풀기 →
+            </button>
+          </div>
+        )
+      })()}
 
       {!single && (
         <>
