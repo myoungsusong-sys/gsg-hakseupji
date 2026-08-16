@@ -499,14 +499,18 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       cloud.upsertMany(cloud.T.students, mergedStudents.map(st => ({ id: st.id, data: st })))
       cloud.upsertMany(cloud.T.gradings, gradings.map(g => ({ id: g.id, data: g })))
     },
+    // 🔴 배정 3형제(add/sync/remove)는 setSetting(통짜 배열, 마지막 쓰기가 이김) 금지 —
+    //    자동 오답학습지가 학생 제출마다 학생 기기에서 배정을 만들어, 반 전체 제출이면
+    //    여러 기기가 같은 순간에 쓴다. 통짜로 쓰면 한쪽 배정이 통째로 사라진다
+    //    (2026-08-15 강리원 실사고). 명령(cmd)을 넘기면 서버 최신에 병합돼 저장된다.
     addAssignment: (worksheetId, studentIds, kind = '수업', reveal) => {
       const now = new Date().toISOString()
       const fresh: Assignment[] = studentIds
         .filter(sid => !stateRef.current.assignments.some(a => a.worksheetId === worksheetId && a.studentId === sid && a.kind === kind))
         .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal }))
       if (fresh.length === 0) return
-      const next = [...stateRef.current.assignments, ...fresh]
-      set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+      set(s => ({ ...s, assignments: [...s.assignments, ...fresh] }))
+      cloud.assignmentOps([{ type: 'add', items: fresh }])
     },
     // 출제 다이얼로그 「선택 완료」 — 이 학습지를 받는 학생을 통째로 맞춘다.
     // 🔴 add/remove 를 연달아 부르면 안 된다. stateRef 는 렌더 뒤에야 갱신돼서
@@ -520,14 +524,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const has = new Set(kept.filter(a => a.worksheetId === worksheetId && a.kind === kind).map(a => a.studentId))
       const fresh: Assignment[] = studentIds.filter(sid => !has.has(sid))
         .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal }))
-      const next = [...kept, ...fresh]
-      set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+      set(s => ({ ...s, assignments: [...kept, ...fresh] }))
+      cloud.assignmentOps([{ type: 'sync', worksheetId, studentIds, kind, reveal, items: fresh }])
     },
     removeAssignment: (worksheetId, studentId, kind) => {
       // kind 지정 시 그 종류만 제거 (숙제 취소가 수업 출제까지 지우던 버그 방지)
-      const next = stateRef.current.assignments.filter(a =>
-        !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true)))
-      set(s => ({ ...s, assignments: next })); cloud.setSetting('assignments', next)
+      set(s => ({ ...s, assignments: s.assignments.filter(a =>
+        !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true))) }))
+      cloud.assignmentOps([{ type: 'remove', worksheetId, studentId, kind }])
     },
     toggleTTCheck: (studentId, date, blockIdx, workbookId) => {
       const key = `${studentId}|${date}|${blockIdx}`
@@ -699,6 +703,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       set(s => ({ ...s, teachers: next })); cloud.setSetting('teachers', next)
     },
   }
+
+  // dev 전용 콘솔 핸들 — 로컬 검증(두 탭 동시 배정 재현 등)에서 store 를 직접 부를 수 있게.
+  // 프로덕션 빌드에서는 DEV 가 false 로 치환돼 이 줄이 통째로 제거된다.
+  if (import.meta.env.DEV) (window as unknown as { __store: Store }).__store = store
 
   return <Ctx.Provider value={store}>{children}</Ctx.Provider>
 }

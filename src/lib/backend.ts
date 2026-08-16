@@ -1,5 +1,6 @@
 import { supabase } from './supabase'
 import * as outbox from './outbox'
+import type { AssignmentCmd } from './assignmentCmds'
 import type {
   AcademyProfile, Assignment, Branch, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
@@ -151,6 +152,13 @@ export const cloud = {
   async setSetting(key: string, value: unknown): Promise<boolean> {
     if (!supabase) return true
     return outbox.write({ kind: 'upsert', table: T.settings, id: key, data: { __id: key, value }, at: new Date().toISOString() })
+  },
+  // 🔴 배정(assignments)만은 setSetting(통짜 배열, 마지막 쓰기가 이김)을 쓰면 안 된다 —
+  //    두 기기가 동시에 배정하면 한쪽이 통째로 사라진다(2026-08-15 강리원 배정 유실).
+  //    명령을 넘기면 서버 최신에 병합(CAS)해 저장한다. 자세한 사정은 lib/assignmentCmds.ts.
+  async assignmentOps(cmds: AssignmentCmd[]): Promise<boolean> {
+    if (!supabase) return true
+    return outbox.writeAssignmentOps(cmds)
   },
   T,
   // 최초 진입 시 클라우드가 비어 있으면 로컬 데이터를 밀어 올림
