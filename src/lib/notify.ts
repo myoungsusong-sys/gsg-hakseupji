@@ -28,7 +28,10 @@ export function shouldNotify(key: string, minutes = 30): boolean {
   }
 }
 
-export async function notifyKakao(a: { title: string; text: string; url?: string }): Promise<NotifyResult> {
+// via 를 안 주면 서버가 고른다(텔레그램 설정돼 있으면 텔레그램, 아니면 카톡)
+export async function notifyKakao(
+  a: { title: string; text: string; url?: string; via?: 'telegram' | 'kakao' },
+): Promise<NotifyResult> {
   try {
     const res = await fetch('/api/diagnose', {
       method: 'POST',

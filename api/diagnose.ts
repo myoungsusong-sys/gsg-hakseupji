@@ -85,6 +85,34 @@ function readBody(req: any): Promise<any> {
 const TOKEN_URL = 'https://kauth.kakao.com/oauth/token'
 const SEND_URL = 'https://kapi.kakao.com/v2/api/talk/memo/default/send'
 
+// 텔레그램 알림 — 카톡과 달리 리프레시 토큰 만료가 없고 길이 제한도 넉넉하다.
+// 🔴 별도 api 파일로 만들면 12/12 상한을 넘어 배포가 통째로 막힌다 — 여기 둔다.
+//    (같은 이유로 카톡·AdminChat 도 이 파일에 합쳐져 있다)
+async function sendTelegram(b: any, res: any) {
+  const token = process.env.TELEGRAM_BOT_TOKEN
+  const chatId = process.env.TELEGRAM_CHAT_ID
+  if (!token || !chatId) {
+    res.status(503).json({ error: '텔레그램 알림이 아직 설정되지 않았습니다(TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID).' })
+    return
+  }
+  const url = typeof b.url === 'string' && /^https?:\/\//.test(b.url) ? b.url : ''
+  const text = `${String(b.title ?? '학습지앱 알림')}\n${String(b.text ?? '')}${url ? `\n${url}` : ''}`.slice(0, 3500)
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: chatId, text, disable_web_page_preview: true }),
+    })
+    const j: any = await r.json().catch(() => ({}))
+    if (!r.ok || !j?.ok) {
+      res.status(502).json({ error: '텔레그램 전송에 실패했습니다.', detail: String(j?.description ?? r.status).slice(0, 200) })
+      return
+    }
+    res.status(200).json({ ok: true })
+  } catch (e: any) {
+    res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
+  }
+}
+
 async function sendKakao(b: any, res: any) {
   const restKey = process.env.KAKAO_REST_KEY
   const refreshToken = process.env.KAKAO_REFRESH_TOKEN
@@ -301,7 +329,13 @@ export default async function handler(req: any, res: any) {
 
   // 카톡 알림·관리자 채팅도 이 함수가 받는다 (함수 개수 상한 때문 — 위 주석 참고)
   const pre = await readBody(req)
-  if (pre?.action === 'notify') { await sendKakao(pre, res); return }
+  if (pre?.action === 'notify') {
+    // 텔레그램 환경변수가 붙어 있으면 텔레그램으로. 없으면 예전대로 카톡.
+    // → 환경변수를 지우는 것만으로 코드 수정 없이 카톡으로 되돌아간다.
+    const useTg = pre.via === 'telegram' || (!pre.via && !!process.env.TELEGRAM_BOT_TOKEN)
+    await (useTg ? sendTelegram(pre, res) : sendKakao(pre, res))
+    return
+  }
   if (pre?.action === 'chat') {
     const who = await chatCaller(req)
     if (!who.ok) { res.status(who.code).json({ error: who.error }); return }

@@ -5,6 +5,8 @@ import { SUBJECTS, useSubject } from '../lib/subject'
 import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
 import FixItButton from './FixItButton'
+import { useAuth } from '../lib/auth'
+import { teacherEmailOf } from '../lib/role'
 import { BrandLogo } from './BrandMark'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
 import AdminChat from './AdminChat'
@@ -136,12 +138,18 @@ const topTab = ({ isActive }: { isActive: boolean }) =>
 // 매쓰플랫 헤더 구성 동일: 로고 | 수업 준비·수업·관리 | (우측) 내신관 · 알림 · 학원명(→마이페이지)
 export default function Layout() {
   const nav = useNavigate()
-  const { academyProfile, multiBranch } = useStore()
+  const { academyProfile, multiBranch, teachers } = useStore()
+  const { email } = useAuth()
   const [subject, setSubject] = useSubject()   // 전역 과목 (수업 준비 화면 공용)
   const [bell, setBell] = useState(false)
   const { entries: changelog, stale, unseen } = useChangelog()
   const [logOpen, setLogOpen] = useState(false)
   const { items, unread, markRead } = useNotifications()
+  // 🔴 선생님 오류·요청 보고에 **누가 올렸는지**를 싣는다. 예전엔 who 를 안 넘겨서
+  //    선생님 보고가 전원 익명이었다 — 누가 부탁했는지 모르면 되물을 수도, 자동 처리할 수도 없다.
+  //    강사 계정은 t-<loginId>@teacher.gsg.app 규약이라 teachers 에서 이름을 찾고,
+  //    원장 계정은 실제 이메일이라 teachers 에 없다 → 이메일을 그대로 쓴다.
+  const meTeacher = teachers.find(t => t.loginId && teacherEmailOf(t.loginId) === (email ?? '').toLowerCase())
 
   // 세션 중 새 알림 도착 시 우하단 토스트 "새로운 알림 N건이 있어요"
   const [toast, setToast] = useState(0)
@@ -200,7 +208,7 @@ export default function Layout() {
             className="whitespace-nowrap rounded-full bg-amber px-4 py-1.5 text-sm font-bold text-white shadow-sm transition hover:brightness-105">
             내신관
           </button>
-          <FixItButton app="teacher" />
+          <FixItButton app="teacher" who={meTeacher?.name ?? email ?? undefined} appVersion={changelog[0]?.ts} />
           <button onClick={() => setLogOpen(true)} title="업데이트 이력"
             className="relative rounded-full px-2 py-1.5 text-lg hover:bg-paper2">
             📋

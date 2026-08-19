@@ -548,6 +548,18 @@ export type BugReport = {
   report: string                  // 개발자용 보고서
   fixable: boolean                // 화면에서 고칠 수 있었는지
   actions?: string[]              // 실행한(또는 제안된) 조치
-  status: 'open' | 'done'
+  // 접수됨 → 작업중 → 반영됨 / 안 하기로. 'done' 은 옛 레코드 호환용으로 남긴다
+  status: 'open' | 'doing' | 'shipped' | 'declined' | 'done'
   appVersion?: string
+  // ── 개선 요청 (2026-08-17) — 선생님이 "이렇게 바꿔주세요"를 올리는 창구 ──
+  // 🔴 전부 옵셔널이라 옛 레코드는 그대로 산다(kind 없으면 'bug' 로 본다).
+  //    별도 배열(featureRequests)을 만들지 않는 이유: bugReports 저장이 통짜 배열 LWW라
+  //    배열을 늘리면 같은 유실 결함을 하나 더 만드는 것이다.
+  kind?: 'bug' | 'request'
+  why?: '수업막힘' | '오래걸림' | '학생혼란' | '있으면편함'
+  scope?: '나만' | '선생님전체' | '학생화면'
+  routeTitle?: string             // 사람이 읽는 화면 이름
+  votes?: string[]                // 같은 요청에 한 표 준 사람
+  resolution?: string             // shipped·declined 사유
+  shippedVersion?: string         // 반영된 changelog ts
 }
