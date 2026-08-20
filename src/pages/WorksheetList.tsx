@@ -6,6 +6,7 @@ import { useSubject, type Subject } from '../lib/subject'
 import { useBrand, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
 import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
+import ExamReport from '../components/ExamReport'
 import type { Assignment, Student, Worksheet } from '../types'
 import { DIFF_COLOR, DIFF_LABEL, TAG_FILTER_OPTIONS } from '../types'
 
@@ -48,7 +49,7 @@ export default function WorksheetList({ view }: { view: View }) {
     worksheets, problems, favorites, myLists, toggleFavorite,
     trashWorksheet, restoreWorksheet, purgeWorksheet, duplicateWorksheet,
     addList, renameList, removeList, setWorksheetLists,
-    students, assignments, addAssignment, syncAssignments, klassOrder,
+    students, assignments, gradings, addAssignment, syncAssignments, klassOrder,
     saveWorksheet, updateWorksheet, addMyBook, academyProfile,
   } = store
   const [subject] = useSubject()
@@ -72,6 +73,7 @@ export default function WorksheetList({ view }: { view: View }) {
   const [listMenu, setListMenu] = useState<{ id: string; x: number; y: number } | null>(null)
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [assignTarget, setAssignTarget] = useState<string[] | null>(null)
+  const [examReport, setExamReport] = useState<string | null>(null)   // 🏁 시험 성적표를 볼 학습지 id
   const [outDialog, setOutDialog] = useState<'download' | 'print' | null>(null)
   const [outSingleId, setOutSingleId] = useState<string | null>(null)   // 행별 다운로드: 그 학습지 1개만
   const [bulkListOpen, setBulkListOpen] = useState(false)   // 일괄 「리스트에 담기」
@@ -602,6 +604,9 @@ export default function WorksheetList({ view }: { view: View }) {
             className="fixed z-30 w-44 rounded-xl border border-line bg-white py-1 text-sm shadow-lg">
             {view === 'active' ? (
               <>
+                {assignments.some(a => a.worksheetId === w.id && a.kind === '시험') && (
+                  <MenuItem label="🏁 시험 성적표" onClick={() => { setExamReport(w.id); setMenuFor(null) }} />
+                )}
                 <MenuItem label="리스트에 담기" onClick={() => { setListModal(w); setMenuFor(null) }} />
                 <MenuItem label="수정" onClick={() => nav(`/make?edit=${w.id}`)} />
                 <MenuItem label="복제 후 수정" onClick={() => {
@@ -711,17 +716,30 @@ export default function WorksheetList({ view }: { view: View }) {
           initial={assignTarget.length === 1 ? [...(assignedByWs.get(assignTarget[0]) ?? [])] : []}
           initialReveal={assignTarget.length === 1
             ? assignments.find(a => a.worksheetId === assignTarget[0])?.reveal : undefined}
+          initialKind={assignTarget.length === 1
+            ? assignments.find(a => a.worksheetId === assignTarget[0])?.kind : undefined}
+          initialExam={assignTarget.length === 1
+            ? assignments.find(a => a.worksheetId === assignTarget[0])?.exam : undefined}
           onClose={() => setAssignTarget(null)}
-          onSubmit={(ids, kind, reveal) => {
+          onSubmit={(ids, kind, reveal, exam) => {
             // 단일 학습지 = 다이얼로그의 선택이 곧 대상 전체(⊖ 로 뺀 학생은 출제 취소)
             // 여러 개 일괄 출제 = 미리 담을 기준이 없으니 더하기만 한다
-            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind, reveal)
-            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind, reveal)
+            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind, reveal, exam)
+            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind, reveal, exam)
             setAssignTarget(null)
             setChecked(new Set())
           }}
         />
       )}
+
+      {/* 🏁 시험 성적표 */}
+      {examReport && (() => {
+        const w = worksheets.find(x => x.id === examReport)
+        return w ? (
+          <ExamReport ws={w} students={students} assignments={assignments} gradings={gradings}
+            onClose={() => setExamReport(null)} />
+        ) : null
+      })()}
 
       {/* 마이 리스트에 담기 모달 */}
       {listModal && (
@@ -812,19 +830,40 @@ const gradeRank = (g: string) => {
 }
 const ALWAYS_OPEN_KEY = 'hj_assign_always_open'   // 「학생 목록 항상 열어서 보기」 기억
 
-function AssignModal({ title, students, initial, initialReveal, klassOrder, onClose, onSubmit }: {
+// datetime-local 입력 ↔ ISO. 입력칸은 「그 자리 시각」이고 저장은 ISO다(다른 기기에서도 같은 순간).
+function toLocalInput(iso?: string): string {
+  if (!iso) return ''
+  const d = new Date(iso)
+  const p = (n: number) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`
+}
+function fromLocalInput(v: string): string | undefined {
+  if (!v) return undefined
+  const d = new Date(v)
+  return isNaN(d.getTime()) ? undefined : d.toISOString()
+}
+
+function AssignModal({ title, students, initial, initialReveal, initialKind, initialExam, klassOrder, onClose, onSubmit }: {
   title: string
   students: Student[]
   klassOrder: string[]                    // 반 표시 순서 (관리 > 반 순서)
   initial: string[]                       // 이미 출제된 학생 id
   initialReveal?: Assignment['reveal']    // 이 학습지의 현재 공개 설정
+  initialKind?: Assignment['kind']        // 이미 출제돼 있으면 그 종류로 열린다
+  initialExam?: Assignment['exam']        // 시험으로 출제돼 있으면 그 규칙으로 열린다
   onClose: () => void
-  onSubmit: (studentIds: string[], kind: Assignment['kind'], reveal: Assignment['reveal']) => void
+  onSubmit: (studentIds: string[], kind: Assignment['kind'], reveal: Assignment['reveal'], exam?: Assignment['exam']) => void
 }) {
-  const [kind, setKind] = useState<Assignment['kind']>('수업')
+  const [kind, setKind] = useState<Assignment['kind']>(initialKind ?? '수업')
   // 학생에게 무엇을 내보낼지 — 끄면 그 학습지에서는 학생이 못 본다(문제만 내보내기)
   const [showAns, setShowAns] = useState(initialReveal?.answer !== false)
   const [showSol, setShowSol] = useState(initialReveal?.solution !== false)
+  // ⏱ 시험 규칙 — 「시험으로 출제」일 때만 쓴다
+  const [minutes, setMinutes] = useState(initialExam?.minutes ?? 50)
+  const [once, setOnce] = useState(initialExam?.once ?? true)
+  const [openAt, setOpenAt] = useState(toLocalInput(initialExam?.openAt))
+  const [closeAt, setCloseAt] = useState(toLocalInput(initialExam?.closeAt))
+  const isExam = kind === '시험'
   const [sel, setSel] = useState<Set<string>>(() => new Set(initial))
   const [q, setQ] = useState('')
   const [openGrades, setOpenGrades] = useState<Set<string>>(new Set())
@@ -884,13 +923,50 @@ function AssignModal({ title, students, initial, initialReveal, klassOrder, onCl
         </div>
 
         <div className="mb-3 flex gap-2">
-          {([['수업', '수업으로 출제'], ['숙제', '숙제로 출제']] as const).map(([k, label]) => (
-            <button key={k} onClick={() => setKind(k)}
-              className={`grow rounded-lg border px-4 py-2 text-sm font-semibold ${kind === k ? 'border-pine bg-pine-soft text-pine-dark' : 'border-line text-ink2'}`}>
+          {([['수업', '수업으로 출제'], ['숙제', '숙제로 출제'], ['시험', '⏱ 시험으로 출제']] as const).map(([k, label]) => (
+            <button key={k} onClick={() => {
+              setKind(k)
+              // 시험은 기본이 「문제만」 — 푸는 중에 정답·해설이 보이면 시험이 아니다
+              if (k === '시험') { setShowAns(false); setShowSol(false) }
+            }}
+              className={`grow rounded-lg border px-4 py-2 text-sm font-semibold ${kind === k ? (k === '시험' ? 'border-clay bg-red-50 text-clay' : 'border-pine bg-pine-soft text-pine-dark') : 'border-line text-ink2'}`}>
               {label}
             </button>
           ))}
         </div>
+
+        {/* ⏱ 시험 규칙 — 제한시간·1회 응시·응시 창 */}
+        {isExam && (
+          <div className="mb-3 rounded-xl border border-clay/40 bg-red-50/60 p-3">
+            <div className="mb-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+              <label className="flex items-center gap-2 font-bold text-clay">
+                제한시간
+                <input type="number" min={0} max={600} value={minutes}
+                  onChange={e => setMinutes(Math.max(0, Math.min(600, Number(e.target.value) || 0)))}
+                  className="w-20 rounded-lg border border-line px-2 py-1 text-right font-black outline-none focus:border-clay" />
+                분
+              </label>
+              <span className="text-xs text-ink2">0이면 시간 제한 없음 — 시간이 다 되면 그때까지 쓴 답으로 자동 제출됩니다.</span>
+            </div>
+            <label className="flex cursor-pointer items-center gap-2 text-sm font-semibold">
+              <input type="checkbox" className="h-4 w-4 accent-clay" checked={once} onChange={e => setOnce(e.target.checked)} />
+              1회만 응시 <span className="text-xs font-normal text-ink2">(제출하면 다시 들어갈 수 없고 결과만 봅니다)</span>
+            </label>
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+              <label className="flex items-center gap-2">
+                <span className="text-xs font-bold text-ink2">응시 시작</span>
+                <input type="datetime-local" value={openAt} onChange={e => setOpenAt(e.target.value)}
+                  className="rounded-lg border border-line px-2 py-1 text-sm" />
+              </label>
+              <label className="flex items-center gap-2">
+                <span className="text-xs font-bold text-ink2">응시 마감</span>
+                <input type="datetime-local" value={closeAt} onChange={e => setCloseAt(e.target.value)}
+                  className="rounded-lg border border-line px-2 py-1 text-sm" />
+              </label>
+              <span className="text-xs text-ink2">비워 두면 바로 시작 · 마감 없음</span>
+            </div>
+          </div>
+        )}
 
         {/* 학년 / 반 — 학생을 어느 기준으로 묶어 볼지 (매쓰플랫 동일) */}
         <div className="mb-3 flex rounded-lg bg-paper2 p-1">
@@ -1004,9 +1080,10 @@ function AssignModal({ title, students, initial, initialReveal, klassOrder, onCl
           )}
           <div className="grow" />
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
-          <button onClick={() => onSubmit([...sel], kind, { answer: showAns, solution: showSol })}
-            className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">
-            선택 완료 ({sel.size}명)
+          <button onClick={() => onSubmit([...sel], kind, { answer: showAns, solution: showSol },
+            isExam ? { minutes, once, openAt: fromLocalInput(openAt), closeAt: fromLocalInput(closeAt) } : undefined)}
+            className={`rounded-lg px-5 py-2 text-sm font-bold text-paper ${isExam ? 'bg-clay' : 'bg-pine'}`}>
+            {isExam ? '시험 출제' : '선택 완료'} ({sel.size}명)
           </button>
         </div>
       </div>

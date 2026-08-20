@@ -27,7 +27,7 @@ import SolveFeedback from '../../components/student/SolveFeedback'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
-import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer } from './common'
+import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer , examOf, examGate, examLeftSec, examStartedAt, markExamStart, clearExamStart, fmtClock } from './common'
 import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
 import { pushReplay, type ReplaySession } from '../../lib/replay'
 
@@ -70,7 +70,7 @@ interface Stroke { color: string; size: number; erase?: boolean; pts: [number, n
 export default function StudentSolve() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, assignments, problems, ensureCourse, upsertGrading, studentAppConfig: gcfg } = useStore()
+  const { worksheets, assignments, problems, gradings, ensureCourse, upsertGrading, studentAppConfig: gcfg } = useStore()
   const nav = useNavigate()
   const [openSolution, setOpenSolution] = useState<Set<string>>(new Set())
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
@@ -87,10 +87,40 @@ export default function StudentSolve() {
   }
   const mine = !!ws && assignments.some(a => a.worksheetId === ws.id && a.studentId === me.id)
 
+  // ── ⏱ 시험 모드 ────────────────────────────────────────────────
+  // 시험으로 출제된 학습지면 남은 시간을 재고, 0이 되면 그때까지 쓴 답으로 자동 제출한다.
+  const exam = ws ? examOf(assignments, me.id, ws.id) : undefined
+  const gradedBefore = useMemo(
+    () => gradings.some(g => g.studentId === me.id && g.source === '학습지' && g.worksheetId === wsId && g.results.length > 0),
+    [gradings, me.id, wsId])
+  const gate = exam ? examGate(exam, gradedBefore) : null
+  const [leftSec, setLeftSec] = useState<number | null>(null)
+  const autoSubmitted = useRef(false)
+  const submitRef = useRef<((auto?: boolean) => Promise<void>) | null>(null)
+
   useEffect(() => {
     if (ws) for (const c of coursesForWorksheet(ws.grade, ws.subject)) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.grade])
+
+  // ⏱ 시험 시계 — 처음 들어온 순간을 기기에 못 박아 새로고침해도 이어진다.
+  //    남은 시간이 0이 되면 그때까지 쓴 답으로 자동 제출한다(★ 한 번만).
+  useEffect(() => {
+    if (!ws || !exam || !gate?.can) return
+    const startedAt = examStartedAt(ws.id) ?? markExamStart(ws.id)
+    const tick = () => {
+      const left = examLeftSec(exam, startedAt)
+      setLeftSec(left)
+      if (left !== null && left <= 0 && !autoSubmitted.current) {
+        autoSubmitted.current = true
+        void submitRef.current?.(true)
+      }
+    }
+    tick()
+    const t = setInterval(tick, 1000)
+    return () => clearInterval(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws?.id, exam?.minutes, exam?.closeAt, gate?.can])
 
   const list = useMemo(() => {
     if (!ws) return []
@@ -304,6 +334,23 @@ export default function StudentSolve() {
   useEffect(() => () => { flushRun() }, [])
 
   if (!ws || !mine) return <Navigate to="/student/worksheets" replace />
+  // ⏱ 시험: 응시 전·마감·이미 응시함 → 들어올 수 없다 (결과는 결과 화면에서 본다)
+  if (gate && !gate.can) {
+    return (
+      <div className="mx-auto max-w-lg rounded-2xl border border-clay/40 bg-red-50 p-8 text-center">
+        <p className="mb-1 text-lg font-black text-clay">⏱ {gate.why}</p>
+        <p className="mb-5 text-sm font-semibold text-ink2">{gate.msg}</p>
+        <div className="flex justify-center gap-2">
+          <button onClick={() => nav('/student/worksheets')}
+            className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-bold">학습지 목록</button>
+          {gate.why === '응시 완료' && (
+            <button onClick={() => nav(`/student/result/${ws.id}`, { replace: true })}
+              className="rounded-lg bg-clay px-4 py-2 text-sm font-bold text-paper">결과 보기</button>
+          )}
+        </div>
+      </div>
+    )
+  }
 
   const p = list[idx]
 
@@ -368,13 +415,17 @@ export default function StudentSolve() {
 
   // (AI 1차 채점 파이프라인은 폐지 — 서술형은 자기채점으로 확정 저장한다. 2026-08-01)
 
-  async function submit() {
-    if (answered.length === 0) { alert('답을 한 문제 이상 입력해주세요.'); return }
+  // auto=true — ⏱ 시험 시간이 다 됐을 때. 확인창 없이 그때까지 쓴 답으로 그대로 낸다.
+  async function submit(auto = false) {
+    if (answered.length === 0) {
+      if (auto) { alert('시험 시간이 끝났어요. 입력한 답이 없어 제출하지 않았습니다.'); nav('/student/worksheets', { replace: true }); return }
+      alert('답을 한 문제 이상 입력해주세요.'); return
+    }
     const blank = list.length - answered.length
     const msg = blank > 0
       ? `아직 답을 입력하지 않은 문제가 ${blank}개 있어요.\n답을 입력한 문제만 채점됩니다. 제출할까요?`
       : '제출할까요? 제출하면 바로 자동 채점됩니다.'
-    if (!confirm(msg)) return
+    if (!auto && !confirm(msg)) return
     const results: GradeResult[] = []
     for (const q of answered) {
       const a = answers[q.id].trim()
@@ -436,8 +487,12 @@ export default function StudentSolve() {
       if (!(await pushReplay(rep))) await pushReplay(rep)
     }
     clearDraft(ws!.id)
+    clearExamStart(ws!.id)          // ⏱ 시험 시계 초기화 — 재응시(허용된 경우)는 새 시계로 잰다
+    if (auto) alert('시험 시간이 끝나 자동으로 제출했어요.')
     nav(`/student/result/${ws!.id}`, { replace: true })
   }
+
+  submitRef.current = submit          // ⏱ 시계가 부를 수 있게 최신 submit 을 잡아 둔다
 
   // 필기 조작 (현재 문항)
   const pid = p?.id ?? ''
@@ -504,6 +559,14 @@ export default function StudentSolve() {
         <button onClick={() => nav('/student/worksheets')}
           className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">←</button>
         <h1 className="grow text-center text-lg font-black">{ws.title}</h1>
+        {/* ⏱ 시험 남은 시간 — 1분 미만이면 빨갛게 깜박인다 */}
+        {exam && (
+          <div className={`rounded-lg px-3 py-2 text-sm font-black tabular-nums ${
+            leftSec !== null && leftSec <= 60 ? 'animate-pulse bg-clay text-paper' : 'bg-red-50 text-clay'}`}
+            title={exam.minutes ? `제한시간 ${exam.minutes}분` : '시간 제한 없는 시험'}>
+            ⏱ {leftSec === null ? '무제한' : fmtClock(leftSec)}
+          </div>
+        )}
         {/* 학습지를 종이로 받고 싶을 때 — 문제만 담긴 PDF */}
         <button onClick={() => nav(`/student/print/${ws.id}`)} title="학습지를 PDF 로 받기"
           className="rounded-lg border border-line px-3 py-2 text-sm font-bold text-ink2 hover:text-ink">📄 PDF</button>
@@ -803,7 +866,7 @@ export default function StudentSolve() {
               </button>
             )}
             {(isLast || answered.length === list.length) && (
-              <button onClick={submit}
+              <button onClick={() => submit()}
                 className={`rounded-lg px-8 py-2.5 text-sm font-bold ${
                   isLast ? 'bg-pine text-paper hover:brightness-110' : 'border border-pine text-pine hover:bg-pine-soft'}`}>
                 제출하기

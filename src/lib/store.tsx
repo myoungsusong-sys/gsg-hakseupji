@@ -118,8 +118,8 @@ interface Store extends Persisted {
   addTeacher: (t: Omit<Teacher, 'id' | 'active'>) => string   // 강사 등록
   updateTeacher: (id: string, patch: Partial<Teacher>) => void
   removeTeacher: (id: string) => void
-  addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal']) => void
-  syncAssignments: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal']) => void
+  addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam']) => void
+  syncAssignments: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
@@ -503,11 +503,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     //    자동 오답학습지가 학생 제출마다 학생 기기에서 배정을 만들어, 반 전체 제출이면
     //    여러 기기가 같은 순간에 쓴다. 통짜로 쓰면 한쪽 배정이 통째로 사라진다
     //    (2026-08-15 강리원 실사고). 명령(cmd)을 넘기면 서버 최신에 병합돼 저장된다.
-    addAssignment: (worksheetId, studentIds, kind = '수업', reveal) => {
+    addAssignment: (worksheetId, studentIds, kind = '수업', reveal, exam) => {
       const now = new Date().toISOString()
       const fresh: Assignment[] = studentIds
         .filter(sid => !stateRef.current.assignments.some(a => a.worksheetId === worksheetId && a.studentId === sid && a.kind === kind))
-        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal }))
+        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal, exam }))
       if (fresh.length === 0) return
       set(s => ({ ...s, assignments: [...s.assignments, ...fresh] }))
       cloud.assignmentOps([{ type: 'add', items: fresh }])
@@ -515,17 +515,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     // 출제 다이얼로그 「선택 완료」 — 이 학습지를 받는 학생을 통째로 맞춘다.
     // 🔴 add/remove 를 연달아 부르면 안 된다. stateRef 는 렌더 뒤에야 갱신돼서
     //    두 번째 호출이 첫 번째의 결과를 지운다 (2026-08-07 실측). 한 번에 계산한다.
-    syncAssignments: (worksheetId, studentIds, kind = '수업', reveal) => {
+    syncAssignments: (worksheetId, studentIds, kind = '수업', reveal, exam) => {
       const keep = new Set(studentIds)
       const now = new Date().toISOString()
       const kept = stateRef.current.assignments
         .filter(a => a.worksheetId !== worksheetId || keep.has(a.studentId))
-        .map(a => (a.worksheetId === worksheetId ? { ...a, reveal } : a))   // 공개 설정은 이 학습지 전체에 같게
+        .map(a => (a.worksheetId === worksheetId ? { ...a, reveal, exam } : a))   // 공개 설정·시험 규칙은 이 학습지 전체에 같게
       const has = new Set(kept.filter(a => a.worksheetId === worksheetId && a.kind === kind).map(a => a.studentId))
       const fresh: Assignment[] = studentIds.filter(sid => !has.has(sid))
-        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal }))
+        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal, exam }))
       set(s => ({ ...s, assignments: [...kept, ...fresh] }))
-      cloud.assignmentOps([{ type: 'sync', worksheetId, studentIds, kind, reveal, items: fresh }])
+      cloud.assignmentOps([{ type: 'sync', worksheetId, studentIds, kind, reveal, exam, items: fresh }])
     },
     removeAssignment: (worksheetId, studentId, kind) => {
       // kind 지정 시 그 종류만 제거 (숙제 취소가 수업 출제까지 지우던 버그 방지)

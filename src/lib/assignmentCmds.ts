@@ -21,7 +21,7 @@ export type AssignmentCmd =
   // (학습지×학생) 제거, kind 지정 시 그 종류만 — store.removeAssignment 와 동일
   | { type: 'remove'; worksheetId: string; studentId: string; kind?: Assignment['kind'] }
   // 이 학습지를 받는 학생을 통째로 맞춘다 — store.syncAssignments 와 동일 (출제 다이얼로그)
-  | { type: 'sync'; worksheetId: string; studentIds: string[]; kind: Assignment['kind']; reveal?: Assignment['reveal']; items: Assignment[] }
+  | { type: 'sync'; worksheetId: string; studentIds: string[]; kind: Assignment['kind']; reveal?: Assignment['reveal']; exam?: Assignment['exam']; items: Assignment[] }
 
 export function applyAssignmentCmds(cur: Assignment[], cmds: AssignmentCmd[]): Assignment[] {
   let out = cur
@@ -37,7 +37,7 @@ export function applyAssignmentCmds(cur: Assignment[], cmds: AssignmentCmd[]): A
       const keep = new Set(c.studentIds)
       const kept = out
         .filter(a => a.worksheetId !== c.worksheetId || keep.has(a.studentId))
-        .map(a => (a.worksheetId === c.worksheetId ? { ...a, reveal: c.reveal } : a))
+        .map(a => (a.worksheetId === c.worksheetId ? { ...a, reveal: c.reveal, exam: c.exam } : a))
       const has = new Set(kept.filter(a => a.worksheetId === c.worksheetId && a.kind === c.kind).map(a => a.studentId))
       out = [...kept, ...c.items.filter(n => !has.has(n.studentId) && !kept.some(a => a.id === n.id))]
     }

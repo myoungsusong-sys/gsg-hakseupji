@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react'
-import type { Assignment, Grading, Problem, Student, Worksheet } from '../../types'
+import type { Assignment, ExamOptions, Grading, Problem, Student, Worksheet } from '../../types'
 import MathText from '../../components/MathText'
 
 // ── 학생앱 공용 헬퍼 ────────────────────────────────────────────
@@ -85,6 +85,64 @@ export function myWorksheetRows(assignments: Assignment[], worksheets: Worksheet
     if (ws && !ws.deletedAt && !ws.studentHidden) rows.push({ ws, date: v.date, kinds: [...v.kinds] })   // 학생앱 비공개 학습지 제외
   }
   return rows.sort((a, b) => b.date.localeCompare(a.date))
+}
+
+// ── ⏱ 시험 모드 ────────────────────────────────────────────────
+// 「시험으로 출제」된 학습지는 응시 창(시작~마감)·제한시간·1회 응시 규칙을 받는다.
+// 규칙은 학습지 단위로 같으므로 이 학생의 배정 중 exam 이 붙은 것 하나를 쓴다.
+export function examOf(assignments: Assignment[], studentId: string, wsId: string): ExamOptions | undefined {
+  return assignments.find(a => a.studentId === studentId && a.worksheetId === wsId && a.kind === '시험' && a.exam)?.exam
+}
+
+export type ExamGate =
+  | { can: true; exam: ExamOptions }                       // 지금 응시할 수 있다
+  | { can: false; why: '응시 완료' | '응시 전' | '마감'; msg: string; exam: ExamOptions }
+
+// 지금 이 학생이 이 시험을 볼 수 있는지 — 볼 수 없으면 이유와 학생에게 보여줄 문장을 준다
+export function examGate(exam: ExamOptions, graded: boolean, now = Date.now()): ExamGate {
+  if (exam.once && graded)
+    return { can: false, why: '응시 완료', msg: '이미 응시한 시험이에요. 결과만 볼 수 있어요.', exam }
+  if (exam.openAt && now < Date.parse(exam.openAt))
+    return { can: false, why: '응시 전', msg: `${fmtWhen(exam.openAt)}부터 응시할 수 있어요.`, exam }
+  if (exam.closeAt && now > Date.parse(exam.closeAt))
+    return { can: false, why: '마감', msg: `${fmtWhen(exam.closeAt)}에 마감된 시험이에요.`, exam }
+  return { can: true, exam }
+}
+
+// 시험 시작 시각 — 기기에 남겨 새로고침해도 남은 시간이 이어진다(문항 임시저장과 같은 규약)
+export const examStartKey = (wsId: string) => `stu-exam-start-${wsId}`
+export function examStartedAt(wsId: string): number | null {
+  const v = Number(localStorage.getItem(examStartKey(wsId)))
+  return Number.isFinite(v) && v > 0 ? v : null
+}
+export function markExamStart(wsId: string): number {
+  const cur = examStartedAt(wsId)
+  if (cur) return cur
+  const now = Date.now()
+  localStorage.setItem(examStartKey(wsId), String(now))
+  return now
+}
+export function clearExamStart(wsId: string): void {
+  localStorage.removeItem(examStartKey(wsId))
+}
+
+// 남은 초 — 제한시간이 0(무제한)이면 null
+export function examLeftSec(exam: ExamOptions, startedAt: number, now = Date.now()): number | null {
+  if (!exam.minutes) return null
+  const end = startedAt + exam.minutes * 60_000
+  const hardEnd = exam.closeAt ? Math.min(end, Date.parse(exam.closeAt)) : end   // 마감이 더 이르면 마감이 끝이다
+  return Math.max(0, Math.ceil((hardEnd - now) / 1000))
+}
+
+export function fmtClock(sec: number): string {
+  const m = Math.floor(sec / 60), s = sec % 60
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+}
+
+export function fmtWhen(iso: string): string {
+  const d = new Date(iso)
+  const p = (n: number) => String(n).padStart(2, '0')
+  return `${d.getMonth() + 1}월 ${d.getDate()}일 ${p(d.getHours())}:${p(d.getMinutes())}`
 }
 
 // ── 학습 타이머 (매쓰플랫 "⏱ 접속 중 누적 학습시간" — 순공시간) ────────

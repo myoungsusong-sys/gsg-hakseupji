@@ -353,16 +353,27 @@ export interface Grading {
   autoDrill?: { wsId: string; at: string }
 }
 
-// 학습지 출제 (수업/숙제) — hj_settings 'assignments' 키에 배열로 저장
+// 시험 모드 — 「시험으로 출제」한 학습지에 붙는 응시 규칙 (없으면 평소 학습지와 같다)
+// 제한시간이 다 되면 학생앱이 그때까지 입력한 답으로 자동 제출한다.
+export interface ExamOptions {
+  minutes: number         // 제한시간(분) — 0이면 시간 제한 없음
+  once: boolean           // 1회만 응시 — 제출하면 다시 들어갈 수 없다(결과만 본다)
+  openAt?: string         // 응시 시작 (ISO) — 없으면 출제 즉시부터
+  closeAt?: string        // 응시 마감 (ISO) — 없으면 마감 없음
+}
+
+// 학습지 출제 (수업/숙제/시험) — hj_settings 'assignments' 키에 배열로 저장
 export interface Assignment {
   id: string
   worksheetId: string
   studentId: string
   date: string           // ISO
-  kind: '수업' | '숙제'
+  kind: '수업' | '숙제' | '시험'
   // 이 학습지에 한해 학생에게 무엇을 보여줄지. 지정하지 않으면 전역 설정(StudentAppConfig)을 따른다.
   // 「문제만 내보내기」가 가능하다 — 정답·해설을 각각 끌 수 있다.
   reveal?: { answer?: boolean; solution?: boolean }
+  // 시험으로 출제한 경우의 응시 규칙 (kind === '시험'). 학습지 단위로 같게 적용된다.
+  exam?: ExamOptions
 }
 
 // 오늘의 학습 — 학생별 자동 출제 설정 (hj_settings 'dailyConfigs')

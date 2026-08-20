@@ -7,7 +7,7 @@ import { useStudentSelf } from './StudentShell'
 import { useSupplement, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, ONE_CLICK_OFF_MSG } from './supplement'
 import {
   latestGradingFor, myWorksheetRows, statusOf, summaryOf, usePreview, PREVIEW_LOCK_TITLE,
-  STATUS_CLASS, type StudentWsStatus,
+  STATUS_CLASS, examOf, examGate, fmtWhen, type StudentWsStatus,
 } from './common'
 
 const TABS = ['전체', '학습가능', '풀이중', '학습완료'] as const
@@ -24,6 +24,7 @@ export default function StudentWorksheets() {
   const [tab, setTab] = useState<typeof TABS[number]>('전체')
   const [homeworkOnly, setHomeworkOnly] = useState(false)
   const [examOnly, setExamOnly] = useState(false)   // 학력평가만 보기 (매쓰플랫 동일)
+  const [testOnly, setTestOnly] = useState(false)   // ⏱ 시험만 보기 (우리 시험 모드)
   const [info, setInfo] = useState(false)
 
   // 기간 필터 — 기본 최근 1개월 (매쓰플랫 동일)
@@ -37,14 +38,18 @@ export default function StudentWorksheets() {
         if (from && d < from) return false
         if (to && d > to) return false
         if (homeworkOnly && !r.kinds.includes('숙제')) return false
+        if (testOnly && !r.kinds.includes('시험')) return false
         if (examOnly && !r.ws.tags.includes('학력평가')) return false
         return true
       })
       .map(r => {
         const g = latestGradingFor(gradings, me.id, r.ws.id)
-        return { ...r, g, st: statusOf(r.ws.id, g) as StudentWsStatus }
+        // ⏱ 시험으로 출제된 학습지 — 지금 응시할 수 있는지 함께 계산한다
+        const exam = examOf(assignments, me.id, r.ws.id)
+        const gate = exam ? examGate(exam, !!g && g.results.length > 0) : null
+        return { ...r, g, st: statusOf(r.ws.id, g) as StudentWsStatus, exam, gate }
       })
-  }, [assignments, worksheets, gradings, me.id, from, to, homeworkOnly, examOnly])
+  }, [assignments, worksheets, gradings, me.id, from, to, homeworkOnly, examOnly, testOnly])
 
   const counts = useMemo(() => {
     const c: Record<string, number> = { 전체: rows.length, 학습가능: 0, 풀이중: 0, 학습완료: 0 }
@@ -82,6 +87,11 @@ export default function StudentWorksheets() {
             className="h-4 w-4 accent-pine" />
           학력평가만 보기
         </label>
+        <label className="flex items-center gap-2 font-semibold">
+          <input type="checkbox" checked={testOnly} onChange={e => setTestOnly(e.target.checked)}
+            className="h-4 w-4 accent-clay" />
+          ⏱ 시험만 보기
+        </label>
       </div>
 
       {/* 상태 탭 */}
@@ -117,7 +127,7 @@ export default function StudentWorksheets() {
               </tr>
             </thead>
             <tbody>
-              {shown.map(({ ws, date, g, st, kinds }) => {
+              {shown.map(({ ws, date, g, st, kinds, exam, gate }) => {
                 const sum = g ? summaryOf(ws, g) : null
                 const wrongCount = g ? g.results.filter(r => !r.correct).length : 0
                 const done = st === '학습완료' && !!g
@@ -137,8 +147,20 @@ export default function StudentWorksheets() {
                         {ws.title}
                       </button>
                       <div className="mt-0.5 text-xs text-pine">
-                        {ws.problemIds.length}문제{kinds.includes('숙제') && <span className="ml-1.5 rounded bg-amber-soft px-1 py-0.5 text-[10px] font-bold text-amber">숙제</span>}
+                        {ws.problemIds.length}문제
+                        {kinds.includes('숙제') && <span className="ml-1.5 rounded bg-amber-soft px-1 py-0.5 text-[10px] font-bold text-amber">숙제</span>}
+                        {exam && (
+                          <span className="ml-1.5 rounded bg-red-100 px-1 py-0.5 text-[10px] font-bold text-clay">
+                            ⏱ 시험{exam.minutes ? ` ${exam.minutes}분` : ''}{exam.once ? ' · 1회' : ''}
+                          </span>
+                        )}
                       </div>
+                      {exam && gate && !gate.can && (
+                        <div className="mt-0.5 text-[11px] font-semibold text-clay">{gate.msg}</div>
+                      )}
+                      {exam && gate?.can && exam.closeAt && (
+                        <div className="mt-0.5 text-[11px] text-ink2">{fmtWhen(exam.closeAt)} 마감</div>
+                      )}
                     </td>
                     <td className="py-3 whitespace-nowrap">
                       {done && sum ? (
@@ -149,9 +171,12 @@ export default function StudentWorksheets() {
                         </button>
                       ) : (
                         <button onClick={() => nav(`/student/solve/${ws.id}`)}
-                          disabled={pv.on} title={pv.on ? PREVIEW_LOCK_TITLE : undefined}
-                          className="rounded-lg bg-pine px-3 py-1 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-40">
-                          {st === '풀이중' ? '이어서 풀기' : '풀기'}
+                          disabled={pv.on || (!!gate && !gate.can)}
+                          title={pv.on ? PREVIEW_LOCK_TITLE : gate && !gate.can ? gate.msg : undefined}
+                          className={`rounded-lg px-3 py-1 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-40 ${exam ? 'bg-clay' : 'bg-pine'}`}>
+                          {gate && !gate.can ? gate.why
+                            : exam ? (st === '풀이중' ? '이어서 응시' : '시험 보기')
+                            : st === '풀이중' ? '이어서 풀기' : '풀기'}
                         </button>
                       )}
                     </td>
