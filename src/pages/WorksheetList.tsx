@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, subjectOfType } from '../data/curriculum'
@@ -48,7 +48,7 @@ export default function WorksheetList({ view }: { view: View }) {
     worksheets, problems, favorites, myLists, toggleFavorite,
     trashWorksheet, restoreWorksheet, purgeWorksheet, duplicateWorksheet,
     addList, renameList, removeList, setWorksheetLists,
-    students, assignments, addAssignment, syncAssignments,
+    students, assignments, addAssignment, syncAssignments, klassOrder,
     saveWorksheet, updateWorksheet, addMyBook, academyProfile,
   } = store
   const [subject] = useSubject()
@@ -705,6 +705,7 @@ export default function WorksheetList({ view }: { view: View }) {
             ? `「${worksheets.find(w => w.id === assignTarget[0])?.title ?? ''}」`
             : `학습지 ${assignTarget.length}개`}
           students={students.filter(s => s.active)}
+          klassOrder={klassOrder}
           // 학습지 하나를 다룰 때만 '이미 출제된 학생'을 미리 담아 준다.
           // (여러 개 일괄 출제는 학습지마다 대상이 달라 미리 담을 기준이 없다 — 더하기만 한다)
           initial={assignTarget.length === 1 ? [...(assignedByWs.get(assignTarget[0]) ?? [])] : []}
@@ -801,11 +802,20 @@ function ToggleRow({ label, on, onToggle }: { label: string; on: boolean; onTogg
      (전에는 한 명이라도 출제되면 목록에서 [출제하기] 버튼이 사라져 **다른 학생에게 추가로
       낼 방법이 아예 없었다** — 2026-08-07 명수쌤 지적)
    · 학년 표기가 '중2' 와 '중2-1' 두 가지라 앞 두 글자로 묶는다. */
-const gradeGroupOf = (g: string) => (g || '기타').slice(0, 2)
+// '중2-1'→'중2'로 묶되, '공통수학1'처럼 과목명으로 쓰는 학년은 자르지 않는다('공통'이 되어버린다)
+const gradeGroupOf = (g: string) => (/^[초중고]/.test(g) ? g.slice(0, 2) : (g || '기타'))
+// 학년 순서 — 매쓰플랫과 같은 초1→중3→고3 차례. 가나다순으로 두면 '고1'이 맨 앞으로 온다.
+const gradeRank = (g: string) => {
+  const m = /^([초중고])(\d)?/.exec(g)
+  if (!m) return 900
+  return (m[1] === '초' ? 0 : m[1] === '중' ? 100 : 200) + Number(m[2] ?? 0)
+}
+const ALWAYS_OPEN_KEY = 'hj_assign_always_open'   // 「학생 목록 항상 열어서 보기」 기억
 
-function AssignModal({ title, students, initial, initialReveal, onClose, onSubmit }: {
+function AssignModal({ title, students, initial, initialReveal, klassOrder, onClose, onSubmit }: {
   title: string
   students: Student[]
+  klassOrder: string[]                    // 반 표시 순서 (관리 > 반 순서)
   initial: string[]                       // 이미 출제된 학생 id
   initialReveal?: Assignment['reveal']    // 이 학습지의 현재 공개 설정
   onClose: () => void
@@ -818,30 +828,47 @@ function AssignModal({ title, students, initial, initialReveal, onClose, onSubmi
   const [sel, setSel] = useState<Set<string>>(() => new Set(initial))
   const [q, setQ] = useState('')
   const [openGrades, setOpenGrades] = useState<Set<string>>(new Set())
+  // 매쓰플랫 동일: 학년 / 반 두 기준으로 묶어 본다
+  const [tab, setTab] = useState<'학년' | '반'>('학년')
+  const [alwaysOpen, setAlwaysOpen] = useState(() => localStorage.getItem(ALWAYS_OPEN_KEY) === '1')
+  useEffect(() => { localStorage.setItem(ALWAYS_OPEN_KEY, alwaysOpen ? '1' : '0') }, [alwaysOpen])
+
+  // 묶는 기준 — 학년 탭은 '중2', 반 탭은 반 이름(없으면 '반 미지정')
+  const keyOf = useCallback((s: Student) => (tab === '학년' ? gradeGroupOf(s.grade) : (s.klass?.trim() || '반 미지정')), [tab])
+  const cmpKey = useCallback((a: string, b: string) => {
+    if (tab === '반') {
+      const ia = klassOrder.indexOf(a), ib = klassOrder.indexOf(b)
+      if (ia !== -1 || ib !== -1) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib)
+      return a.localeCompare(b, 'ko')
+    }
+    return gradeRank(a) - gradeRank(b) || a.localeCompare(b, 'ko')
+  }, [tab, klassOrder])
 
   const byId = useMemo(() => new Map(students.map(s => [s.id, s])), [students])
   // 좌측 목록 — 검색어로 거르고 학년별로 묶는다 (검색 중엔 전부 펼친다)
   const groups = useMemo(() => {
     const kw = q.trim().toLowerCase()
-    const hit = kw ? students.filter(s => s.name.toLowerCase().includes(kw)) : students
+    const hit = kw
+      ? students.filter(s => s.name.toLowerCase().includes(kw) || (s.attendNo ?? '').includes(kw))
+      : students
     const m = new Map<string, Student[]>()
     for (const s of hit) {
-      const g = gradeGroupOf(s.grade)
+      const g = keyOf(s)
       m.set(g, [...(m.get(g) ?? []), s])
     }
-    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ko'))
-  }, [students, q])
+    return [...m.entries()].sort((a, b) => cmpKey(a[0], b[0]))
+  }, [students, q, keyOf, cmpKey])
 
   // 우측 '선택된 학생' — 학년별로 묶어 보여준다
   const picked = useMemo(() => {
     const m = new Map<string, Student[]>()
     for (const id of sel) {
       const s = byId.get(id); if (!s) continue
-      const g = gradeGroupOf(s.grade)
+      const g = keyOf(s)
       m.set(g, [...(m.get(g) ?? []), s])
     }
-    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ko'))
-  }, [sel, byId])
+    return [...m.entries()].sort((a, b) => cmpKey(a[0], b[0]))
+  }, [sel, byId, keyOf, cmpKey])
 
   const add = (ids: string[]) => setSel(p => { const n = new Set(p); ids.forEach(i => n.add(i)); return n })
   const drop = (ids: string[]) => setSel(p => { const n = new Set(p); ids.forEach(i => n.delete(i)); return n })
@@ -865,6 +892,16 @@ function AssignModal({ title, students, initial, initialReveal, onClose, onSubmi
           ))}
         </div>
 
+        {/* 학년 / 반 — 학생을 어느 기준으로 묶어 볼지 (매쓰플랫 동일) */}
+        <div className="mb-3 flex rounded-lg bg-paper2 p-1">
+          {(['학년', '반'] as const).map(t => (
+            <button key={t} onClick={() => { setTab(t); setOpenGrades(new Set()) }}
+              className={`grow rounded-md py-1.5 text-sm font-semibold ${tab === t ? 'bg-white text-ink shadow-sm' : 'text-ink2'}`}>
+              {t}
+            </button>
+          ))}
+        </div>
+
         {students.length === 0 ? (
           <div className="rounded-xl border border-dashed border-line p-8 text-center text-sm text-ink2">
             활성 학생이 없습니다. 학생 관리에서 학생을 먼저 등록하세요.
@@ -879,7 +916,7 @@ function AssignModal({ title, students, initial, initialReveal, onClose, onSubmi
               </div>
               <div className="min-h-0 grow overflow-y-auto p-1">
                 {groups.map(([g, list]) => {
-                  const open = q.trim() ? true : openGrades.has(g)
+                  const open = q.trim() || alwaysOpen ? true : openGrades.has(g)
                   const rest = list.filter(s => !sel.has(s.id))
                   return (
                     <div key={g}>
@@ -956,10 +993,16 @@ function AssignModal({ title, students, initial, initialReveal, onClose, onSubmi
           </span>
         </div>
 
-        <div className="mt-4 flex items-center justify-end gap-2">
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <label className="flex cursor-pointer items-center gap-2 text-xs text-ink2">
+            <input type="checkbox" className="h-4 w-4 accent-pine"
+              checked={alwaysOpen} onChange={e => setAlwaysOpen(e.target.checked)} />
+            학생 목록 항상 열어서 보기
+          </label>
           {initial.length > 0 && (
-            <span className="mr-auto text-xs text-ink2">이미 출제된 학생은 담겨 있어요 — ＋/－ 로 더하거나 뺄 수 있습니다.</span>
+            <span className="text-xs text-ink2">이미 출제된 학생은 담겨 있어요 — ＋/－ 로 더하거나 뺄 수 있습니다.</span>
           )}
+          <div className="grow" />
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
           <button onClick={() => onSubmit([...sel], kind, { answer: showAns, solution: showSol })}
             className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">
