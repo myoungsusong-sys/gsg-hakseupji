@@ -68,7 +68,17 @@ function MgmtEntry() {
     // 누구로 들어왔는지 기억해 둔다 — 아래에서 파라미터를 지운 뒤에도 학생 화면에서 확인용으로 쓴다.
     try { sessionStorage.setItem(MGMT_KEY, mgmt) } catch { /* 무시 */ }
     if (!synced) return          // 명부가 올 때까지 기다린다 (세션이 있으면 곧 온다)
-    const me = students.find((s) => s.mgmtId === mgmt)
+    /**
+     * 누구인지 찾기 — ① 연결번호(mgmtId) ② 없으면 **이름**으로 (2026-08-19)
+     *
+     * 왜 이름까지 보나 — 실제로 학습지앱 학생 72명 **전원 mgmtId가 비어 있었다.**
+     *   그래서 관리앱 [채점하러 가기]로 들어와도 본인을 못 찾아 채점 화면에 못 들어갔다.
+     *   관리앱이 이름(?name=)도 같이 넘겨주므로, 이름이 **딱 한 명**일 때만 그 학생으로 본다.
+     *   (동명이인이면 잘못 들어갈 수 있어 그때는 매칭하지 않는다.)
+     */
+    const name = (new URLSearchParams(window.location.search).get('name') ?? '').trim()
+    const byName = name ? students.filter((s) => (s.name ?? '').trim() === name) : []
+    const me = students.find((s) => s.mgmtId === mgmt) ?? (byName.length === 1 ? byName[0] : undefined)
     if (me) setLocalStudentId(me.id)
     // 파라미터를 지우고 학생앱으로. 명부에서 못 찾아도 학생 세션이면 학생앱이 알아서 본인을 찾는다.
     window.history.replaceState(null, '', window.location.pathname)
