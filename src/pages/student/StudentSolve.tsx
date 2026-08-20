@@ -880,6 +880,7 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
   const baseRef = useRef<HTMLCanvasElement>(null)    // 확정된 획
   const liveRef = useRef<HTMLCanvasElement>(null)    // 지금 긋는 획 하나
   const drawing = useRef<Stroke | null>(null)
+  const grainRef = useRef<HTMLCanvasElement | null>(null)   // 연필 입자 타일 — 한 번만 만든다
 
   // 캔버스 크기를 박스에 맞춘다(고해상도 화면 대응). 크기가 그대로면 아무것도 안 한다.
   function fit(canvas: HTMLCanvasElement | null): CanvasRenderingContext2D | null {
@@ -895,62 +896,144 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
     return ctx
   }
+  // ── 한 획 그리기 — 「선」이 아니라 「면」으로 그린다 ───────────────────────
+  //
+  // 🔴 왜 면인가 (2026-08-19 명수쌤 "실제 연필 질감으로 조금더 부드럽고 끊이지 않게").
+  //    굵기가 변하는 획을 선(stroke)으로 그리려면 구간을 나눠 여러 번 그어야 하는데,
+  //    그러면 이음매마다 둥근 끝이 겹쳐 **마디가 보이고 끊긴 것처럼** 읽힌다.
+  //    획의 양옆 가장자리를 계산해 **하나의 닫힌 면으로 한 번에 채우면** 이음매가 아예 없다.
+  //
+  // 부드러움은 세 겹으로 만든다:
+  //    ① Chaikin(모서리 깎기)으로 손떨림을 걷어낸다 — 사람이 그은 선의 각을 둥글린다
+  //    ② 굵기도 같이 부드럽게 이어 굵기가 계단처럼 튀지 않게 한다
+  //    ③ 가장자리를 곡선(2차 베지에)으로 이어 면 자체를 매끄럽게 만든다
+  //
+  // 연필 질감은 **입자를 빼서** 만든다. 흑연은 종이 결에 고르게 안 묻는다 —
+  // 획 안쪽만 잘라내 노이즈로 살짝 지우면 진짜 연필처럼 서걱해진다.
 
-  // 한 획 그리기.
-  //  · 점끼리 직선으로 잇지 않고 **중점을 지나는 2차 베지에**로 이어 곡선으로 만든다.
-  //  · 필압이 있으면 구간마다 굵기를 바꾼다 — 한 path 안에서는 굵기를 못 바꾸므로 구간을 나눠 긋고,
-  //    round 캡·조인이 이음매를 메운다(펜으로 쓴 것처럼 눌러 쓴 데가 굵어진다).
-  function paint(ctx: CanvasRenderingContext2D, s: Stroke, w: number, h: number) {
-    const n = s.pts.length
-    if (!n) return
-    ctx.globalCompositeOperation = s.erase ? 'destination-out' : 'source-over'
-    ctx.strokeStyle = s.color
-    ctx.lineCap = 'round'; ctx.lineJoin = 'round'
-    const base = s.erase ? s.size * 5 : s.size
-    const P = (i: number) => [s.pts[i][0] * w, s.pts[i][1] * h] as const
-    // 필압 → 굵기. 0.4~1.6배 사이에서만 움직여 글씨가 끊기거나 뭉치지 않게 한다.
-    const wid = (i: number) => {
-      const p = s.pts[i][2]
-      return p === undefined ? base : base * (0.4 + 1.2 * Math.min(1, Math.max(0, p)))
+  // 손떨림 제거 — 모서리를 깎아 곡선으로. 점이 많으면 1번만(비용 관리).
+  function chaikin(pts: [number, number, number?][], iters: number): [number, number, number?][] {
+    let cur = pts
+    for (let k = 0; k < iters; k++) {
+      if (cur.length < 3) return cur
+      const out: [number, number, number?][] = [cur[0]]
+      for (let i = 0; i < cur.length - 1; i++) {
+        const a = cur[i], b = cur[i + 1]
+        const mix = (t: number, u: number, r: number) => t + (u - t) * r
+        const pa = a[2], pb = b[2]
+        const pr = (r: number) => (pa === undefined || pb === undefined ? (pa ?? pb) : mix(pa, pb, r))
+        out.push([mix(a[0], b[0], 0.25), mix(a[1], b[1], 0.25), pr(0.25)])
+        out.push([mix(a[0], b[0], 0.75), mix(a[1], b[1], 0.75), pr(0.75)])
+      }
+      out.push(cur[cur.length - 1])
+      cur = out
     }
-    const varied = !s.erase && s.pts.some(pt => pt[2] !== undefined)
+    return cur
+  }
+
+  // 연필 입자 — 한 번만 만들어 재사용한다
+  function grain(ctx: CanvasRenderingContext2D): CanvasPattern | null {
+    if (grainRef.current) return ctx.createPattern(grainRef.current, 'repeat')
+    const c = document.createElement('canvas')
+    c.width = c.height = 96
+    const g = c.getContext('2d')
+    if (!g) return null
+    const img = g.createImageData(96, 96)
+    for (let i = 0; i < img.data.length; i += 4) {
+      // 성기게 흩뿌린 점 — 너무 촘촘하면 뿌옇게만 보이고 질감이 안 산다
+      const on = Math.random() < 0.30 ? Math.random() * 255 : 0
+      img.data[i] = img.data[i + 1] = img.data[i + 2] = 255
+      img.data[i + 3] = on
+    }
+    g.putImageData(img, 0, 0)
+    grainRef.current = c
+    return ctx.createPattern(c, 'repeat')
+  }
+
+  function paint(ctx: CanvasRenderingContext2D, s: Stroke, w: number, h: number) {
+    const raw = s.pts
+    if (!raw.length) return
+    const base = s.erase ? s.size * 5 : s.size
+
+    // 지우개는 질감이 필요 없다 — 종전처럼 선으로 지운다(면으로 하면 가장자리가 튄다)
+    if (s.erase) {
+      ctx.globalCompositeOperation = 'destination-out'
+      ctx.strokeStyle = '#000'; ctx.lineWidth = base
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round'
+      ctx.beginPath()
+      raw.forEach(([x, y], i) => { const px = x * w, py = y * h; if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py) })
+      if (raw.length === 1) ctx.lineTo(raw[0][0] * w + 0.01, raw[0][1] * h)
+      ctx.stroke()
+      ctx.globalCompositeOperation = 'source-over'
+      return
+    }
+
+    // ① 손떨림 걷어내기 (긴 획은 1번만)
+    const sm = chaikin(raw, raw.length > 120 ? 1 : 2)
+    const P = (i: number) => [sm[i][0] * w, sm[i][1] * h] as const
+    // ② 굵기 — 필압 0.35~1.5배. 없으면 기본 굵기
+    const wid = (i: number) => {
+      const p = sm[i][2]
+      return (p === undefined ? base : base * (0.35 + 1.15 * Math.min(1, Math.max(0, p)))) / 2   // 반폭
+    }
+    const n = sm.length
 
     if (n === 1) {
       const [x0, y0] = P(0)
-      ctx.lineWidth = wid(0); ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x0 + 0.01, y0); ctx.stroke()
-      ctx.globalCompositeOperation = 'source-over'; return
+      ctx.fillStyle = s.color
+      ctx.beginPath(); ctx.arc(x0, y0, wid(0), 0, Math.PI * 2); ctx.fill()
+      return
     }
 
-    if (!varied) {
-      // 굵기가 일정하면 한 번에 긋는 게 가장 매끄럽다(이음매 없음)
-      ctx.lineWidth = base
-      ctx.beginPath()
-      const [x0, y0] = P(0)
-      ctx.moveTo(x0, y0)
-      for (let i = 1; i < n - 1; i++) {
-        const [xa, ya] = P(i), [xb, yb] = P(i + 1)
+    // ③ 양옆 가장자리를 만들어 하나의 면으로 — 이음매가 없다
+    const L: [number, number][] = [], R: [number, number][] = []
+    for (let i = 0; i < n; i++) {
+      const [x, y] = P(i)
+      const [px, py] = P(Math.max(0, i - 1))
+      const [nx, ny] = P(Math.min(n - 1, i + 1))
+      let dx = nx - px, dy = ny - py
+      const len = Math.hypot(dx, dy) || 1
+      dx /= len; dy /= len
+      const r = wid(i)
+      L.push([x - dy * r, y + dx * r])
+      R.push([x + dy * r, y - dx * r])
+    }
+    const edge = (arr: [number, number][], move: boolean) => {
+      if (move) ctx.moveTo(arr[0][0], arr[0][1]); else ctx.lineTo(arr[0][0], arr[0][1])
+      for (let i = 1; i < arr.length - 1; i++) {
+        const [xa, ya] = arr[i], [xb, yb] = arr[i + 1]
         ctx.quadraticCurveTo(xa, ya, (xa + xb) / 2, (ya + yb) / 2)
       }
-      const [xl, yl] = P(n - 1)
-      ctx.lineTo(xl, yl)
-      ctx.stroke()
-      ctx.globalCompositeOperation = 'source-over'; return
+      const last = arr[arr.length - 1]
+      ctx.lineTo(last[0], last[1])
     }
+    ctx.beginPath()
+    edge(L, true)
+    // 끝을 둥글게 돌아 반대편으로
+    const [ex, ey] = P(n - 1)
+    ctx.arc(ex, ey, wid(n - 1), 0, Math.PI * 2)
+    edge([...R].reverse(), false)
+    const [sx, sy] = P(0)
+    ctx.arc(sx, sy, wid(0), 0, Math.PI * 2)
+    ctx.closePath()
 
-    // 필압 있음 — 구간마다 굵기를 바꿔 긋는다
-    let [px, py] = P(0)
-    for (let i = 1; i < n; i++) {
-      const [xa, ya] = P(i)
-      const mid = i < n - 1 ? [(xa + P(i + 1)[0]) / 2, (ya + P(i + 1)[1]) / 2] as const : ([xa, ya] as const)
-      ctx.lineWidth = (wid(i - 1) + wid(i)) / 2      // 앞뒤 필압의 중간 — 굵기가 계단처럼 튀지 않는다
-      ctx.beginPath(); ctx.moveTo(px, py)
-      if (i < n - 1) ctx.quadraticCurveTo(xa, ya, mid[0], mid[1]); else ctx.lineTo(xa, ya)
-      ctx.stroke()
-      ;[px, py] = mid
+    ctx.fillStyle = s.color
+    ctx.fill()
+
+    // ④ 연필 입자 — 획 안쪽만 잘라 노이즈로 살짝 지운다(흑연이 종이 결에 안 묻은 자리)
+    const gp = grain(ctx)
+    if (gp) {
+      ctx.save()
+      ctx.clip()
+      ctx.globalCompositeOperation = 'destination-out'
+      ctx.globalAlpha = 0.22
+      ctx.fillStyle = gp
+      ctx.fillRect(0, 0, w, h)
+      ctx.restore()
     }
     ctx.globalCompositeOperation = 'source-over'
+    ctx.globalAlpha = 1
   }
-
   // 확정된 획 전체 — strokes 가 바뀔 때만 부른다
   function redrawBase() {
     const box = boxRef.current
