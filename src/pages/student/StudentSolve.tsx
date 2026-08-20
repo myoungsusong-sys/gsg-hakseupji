@@ -61,7 +61,10 @@ const DIFF_LABEL: Record<number, string> = { 1: '하', 2: '중하', 3: '중', 4:
 const PEN_SIZES = [1.5, 2.5, 3.5, 5, 7]
 const PEN_COLORS = ['#1c1917', '#3b82f6', '#22c55e', '#f59e0b', '#f472b6']
 
-interface Stroke { color: string; size: number; erase?: boolean; pts: [number, number][] }  // pts는 0~1 정규화
+// pts = [x, y, 필압?] — x·y 는 0~1 정규화(리사이즈에도 유지), 필압은 0~1.
+// 🔴 필압은 **선택**이다. 옛 획은 [x,y] 두 개뿐이고 읽는 쪽이 전부 [x,y]만 꺼내 쓰므로
+//    그대로 산다(GroupPanel 읽기전용 오버레이·exportWork 제출 합성 둘 다 확인).
+interface Stroke { color: string; size: number; erase?: boolean; pts: [number, number, number?][] }
 
 export default function StudentSolve() {
   const me = useStudentSelf()
@@ -849,6 +852,20 @@ export default function StudentSolve() {
 }
 
 // ── 필기 캔버스 — 문제 본문 위 오버레이 (스트로크 0~1 정규화 좌표로 저장 → 리사이즈에도 유지) ──
+//
+// 🔴 필기가 뻑뻑하던 원인 넷을 한꺼번에 고쳤다 (2026-08-19 명수쌤 "부드럽게 필기가 안돼").
+//  ① **획 하나 그을 때마다 화면의 모든 획을 다시 그렸다.** pointermove 마다 redraw() 가
+//     strokes 전체를 처음부터 칠했다 → 필기가 쌓일수록 점점 느려진다(획 수에 비례).
+//     → 캔버스를 둘로 나눈다. 확정된 획(base)은 strokes 가 바뀔 때만 그리고,
+//       지금 긋는 획(live)은 자기 것만 지웠다 다시 그린다. 항상 1획치 비용이다.
+//  ② **펜 샘플을 버리고 있었다.** 태블릿·아이패드는 화면 주사율보다 빠르게 펜을 읽어
+//     여러 점을 한 pointermove 에 묶어 보낸다(coalesced). 그걸 안 꺼내 쓰면 중간 점이
+//     통째로 버려져 빠르게 그을수록 각지고 끊긴다. → getCoalescedEvents() 로 전부 받는다.
+//  ③ **점끼리 직선으로 이었다.** → 중점을 지나는 2차 베지에로 이어 곡선으로 만든다.
+//  ④ **useEffect(() => redraw()) 에 의존성이 없어** 부모가 리렌더될 때마다(답 입력·타이머)
+//     전체를 다시 칠했다. → strokes 가 바뀔 때만.
+//
+// 지우개는 base 에 직접 destination-out 으로 긋는다 — live 층에 그리면 빈 층만 지운다.
 function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, children }: {
   strokes: Stroke[]
   live: boolean                      // false면 표시·입력 모두 잠금(👁 숨김)
@@ -860,71 +877,179 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
   children: React.ReactNode
 }) {
   const boxRef = useRef<HTMLDivElement>(null)
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const baseRef = useRef<HTMLCanvasElement>(null)    // 확정된 획
+  const liveRef = useRef<HTMLCanvasElement>(null)    // 지금 긋는 획 하나
   const drawing = useRef<Stroke | null>(null)
 
-  function redraw() {
-    const canvas = canvasRef.current, box = boxRef.current
-    if (!canvas || !box) return
+  // 캔버스 크기를 박스에 맞춘다(고해상도 화면 대응). 크기가 그대로면 아무것도 안 한다.
+  function fit(canvas: HTMLCanvasElement | null): CanvasRenderingContext2D | null {
+    const box = boxRef.current
+    if (!canvas || !box) return null
     const w = box.clientWidth, h = box.clientHeight
     const dpr = window.devicePixelRatio || 1
-    if (canvas.width !== w * dpr || canvas.height !== h * dpr) {
-      canvas.width = w * dpr; canvas.height = h * dpr
+    if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+      canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr)
     }
-    const ctx = canvas.getContext('2d')!
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return null
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-    ctx.clearRect(0, 0, w, h)
-    const paint = (s: Stroke) => {
-      ctx.globalCompositeOperation = s.erase ? 'destination-out' : 'source-over'
-      ctx.strokeStyle = s.color
-      ctx.lineWidth = s.erase ? s.size * 5 : s.size
-      ctx.lineCap = 'round'; ctx.lineJoin = 'round'
-      ctx.beginPath()
-      s.pts.forEach(([x, y], i) => { const px = x * w, py = y * h; if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py) })
-      ctx.stroke()
+    return ctx
+  }
+
+  // 한 획 그리기.
+  //  · 점끼리 직선으로 잇지 않고 **중점을 지나는 2차 베지에**로 이어 곡선으로 만든다.
+  //  · 필압이 있으면 구간마다 굵기를 바꾼다 — 한 path 안에서는 굵기를 못 바꾸므로 구간을 나눠 긋고,
+  //    round 캡·조인이 이음매를 메운다(펜으로 쓴 것처럼 눌러 쓴 데가 굵어진다).
+  function paint(ctx: CanvasRenderingContext2D, s: Stroke, w: number, h: number) {
+    const n = s.pts.length
+    if (!n) return
+    ctx.globalCompositeOperation = s.erase ? 'destination-out' : 'source-over'
+    ctx.strokeStyle = s.color
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'
+    const base = s.erase ? s.size * 5 : s.size
+    const P = (i: number) => [s.pts[i][0] * w, s.pts[i][1] * h] as const
+    // 필압 → 굵기. 0.4~1.6배 사이에서만 움직여 글씨가 끊기거나 뭉치지 않게 한다.
+    const wid = (i: number) => {
+      const p = s.pts[i][2]
+      return p === undefined ? base : base * (0.4 + 1.2 * Math.min(1, Math.max(0, p)))
     }
-    for (const s of strokes) paint(s)
-    if (drawing.current) paint(drawing.current)
+    const varied = !s.erase && s.pts.some(pt => pt[2] !== undefined)
+
+    if (n === 1) {
+      const [x0, y0] = P(0)
+      ctx.lineWidth = wid(0); ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x0 + 0.01, y0); ctx.stroke()
+      ctx.globalCompositeOperation = 'source-over'; return
+    }
+
+    if (!varied) {
+      // 굵기가 일정하면 한 번에 긋는 게 가장 매끄럽다(이음매 없음)
+      ctx.lineWidth = base
+      ctx.beginPath()
+      const [x0, y0] = P(0)
+      ctx.moveTo(x0, y0)
+      for (let i = 1; i < n - 1; i++) {
+        const [xa, ya] = P(i), [xb, yb] = P(i + 1)
+        ctx.quadraticCurveTo(xa, ya, (xa + xb) / 2, (ya + yb) / 2)
+      }
+      const [xl, yl] = P(n - 1)
+      ctx.lineTo(xl, yl)
+      ctx.stroke()
+      ctx.globalCompositeOperation = 'source-over'; return
+    }
+
+    // 필압 있음 — 구간마다 굵기를 바꿔 긋는다
+    let [px, py] = P(0)
+    for (let i = 1; i < n; i++) {
+      const [xa, ya] = P(i)
+      const mid = i < n - 1 ? [(xa + P(i + 1)[0]) / 2, (ya + P(i + 1)[1]) / 2] as const : ([xa, ya] as const)
+      ctx.lineWidth = (wid(i - 1) + wid(i)) / 2      // 앞뒤 필압의 중간 — 굵기가 계단처럼 튀지 않는다
+      ctx.beginPath(); ctx.moveTo(px, py)
+      if (i < n - 1) ctx.quadraticCurveTo(xa, ya, mid[0], mid[1]); else ctx.lineTo(xa, ya)
+      ctx.stroke()
+      ;[px, py] = mid
+    }
     ctx.globalCompositeOperation = 'source-over'
   }
 
-  useEffect(() => { redraw() })
+  // 확정된 획 전체 — strokes 가 바뀔 때만 부른다
+  function redrawBase() {
+    const box = boxRef.current
+    const ctx = fit(baseRef.current)
+    if (!ctx || !box) return
+    const w = box.clientWidth, h = box.clientHeight
+    ctx.clearRect(0, 0, w, h)
+    for (const s of strokes) paint(ctx, s, w, h)
+  }
+
+  // 지금 긋는 획만 — 매 pointermove 마다 부르지만 1획치라 싸다.
+  // predicted = 브라우저가 예측한 앞쪽 점들. 화면에만 얹고 저장하지 않는다.
+  const predicted = useRef<[number, number, number?][]>([])
+  function redrawLive() {
+    const box = boxRef.current
+    const ctx = fit(liveRef.current)
+    if (!ctx || !box) return
+    const w = box.clientWidth, h = box.clientHeight
+    ctx.clearRect(0, 0, w, h)
+    const d = drawing.current
+    if (d && !d.erase) paint(ctx, { ...d, pts: [...d.pts, ...predicted.current] }, w, h)
+  }
+
+  // 🔴 의존성을 준다 — 없으면 부모가 리렌더될 때마다 전체를 다시 칠한다
+  useEffect(() => { redrawBase(); redrawLive() })   // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
-    const ro = new ResizeObserver(() => redraw())
+    const ro = new ResizeObserver(() => { redrawBase(); redrawLive() })
     if (boxRef.current) ro.observe(boxRef.current)
     return () => ro.disconnect()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  function norm(e: React.PointerEvent): [number, number] {
+  // 좌표 + 필압. 필압은 **펜일 때만** 쓴다 — 마우스는 누르면 무조건 0.5, 손가락은 0이나 1을
+  // 보내서 그대로 쓰면 굵기가 제멋대로 뛴다. 펜이 아니면 undefined 로 두고 기본 굵기로 그린다.
+  function norm(e: { clientX: number; clientY: number; pressure?: number; pointerType?: string }): [number, number, number?] {
     const r = boxRef.current!.getBoundingClientRect()
-    return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]
+    const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height
+    const p = e.pointerType === 'pen' && typeof e.pressure === 'number' && e.pressure > 0 ? e.pressure : undefined
+    return p === undefined ? [x, y] : [x, y, p]
   }
   const allowed = (e: React.PointerEvent) => live && (handWrite || e.pointerType === 'pen')
+
+  // 🔴 태블릿은 한 번의 pointermove 에 펜 좌표 여러 개를 묶어 보낸다. 그걸 다 꺼내야
+  //    빠르게 그어도 점이 안 빠진다. 지원 안 하는 브라우저는 그 이벤트 하나만 쓴다.
+  function pointsOf(e: React.PointerEvent): [number, number, number?][] {
+    const ne = e.nativeEvent as PointerEvent & { getCoalescedEvents?: () => PointerEvent[] }
+    const list = typeof ne.getCoalescedEvents === 'function' ? ne.getCoalescedEvents() : []
+    return (list.length ? list : [ne]).map(norm)
+  }
+
+  // 브라우저가 "펜이 다음에 갈 곳"을 예측해 준다. 그 점까지 미리 그려 두면 **획이 펜을 따라오는
+  // 느낌**이 사라져 체감 지연이 눈에 띄게 준다. 예측은 틀릴 수 있으므로 **화면에만 그리고
+  // 저장하지 않는다** — 다음 move 에서 live 층을 지우고 다시 그리므로 잔상이 남지 않는다.
+  function predictedOf(e: React.PointerEvent): [number, number, number?][] {
+    const ne = e.nativeEvent as PointerEvent & { getPredictedEvents?: () => PointerEvent[] }
+    if (typeof ne.getPredictedEvents !== 'function') return []
+    try { return ne.getPredictedEvents().map(norm) } catch { return [] }
+  }
 
   return (
     <div ref={boxRef} className="relative">
       {children}
-      <canvas ref={canvasRef}
+      <canvas ref={baseRef} className="pointer-events-none absolute inset-0 h-full w-full" />
+      <canvas ref={liveRef}
         className={`absolute inset-0 h-full w-full ${live ? 'touch-none' : 'pointer-events-none'}`}
         onPointerDown={e => {
           if (!allowed(e)) return
           e.currentTarget.setPointerCapture(e.pointerId)
-          drawing.current = { color, size, erase: tool === 'eraser', pts: [norm(e)] }
-          redraw()
+          drawing.current = { color, size, erase: tool === 'eraser', pts: [norm(e.nativeEvent)] }
+          redrawLive()
         }}
         onPointerMove={e => {
-          if (!drawing.current) return
-          drawing.current.pts.push(norm(e))
-          redraw()
+          const d = drawing.current
+          if (!d) return
+          const added = pointsOf(e)
+          if (d.erase) {
+            // 지우개는 base 에 바로 긋는다 — 지나간 만큼만 지우면 되므로 늘어난 구간만 그린다
+            const box = boxRef.current
+            const ctx = fit(baseRef.current)
+            if (ctx && box) {
+              const seg: Stroke = { ...d, pts: [d.pts[d.pts.length - 1], ...added] }
+              paint(ctx, seg, box.clientWidth, box.clientHeight)
+            }
+            d.pts.push(...added)
+          } else {
+            d.pts.push(...added)
+            predicted.current = predictedOf(e)
+            redrawLive()
+          }
         }}
         onPointerUp={() => {
-          if (!drawing.current) return
           const s = drawing.current
+          if (!s) return
           drawing.current = null
+          predicted.current = []
+          redrawLive()                     // live 층 비우기 — 확정본은 base 로 넘어간다
           if (s.pts.length > 1) onCommit(s)
         }}
-        onPointerCancel={() => { drawing.current = null; redraw() }}
+        onPointerCancel={() => { drawing.current = null; predicted.current = []; redrawLive() }}
       />
     </div>
   )

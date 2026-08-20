@@ -11,7 +11,8 @@
 // · 보존 정책: 목록 조회 때 30일 경과·학습지당 최근 3개 초과 행을 지연 삭제해 무한 증식을 막는다.
 import { supabase } from './supabase'
 
-export interface ReplayStroke { color: string; size: number; erase?: boolean; pts: [number, number][] }
+// pts = [x, y, 필압?] — 필압은 선택. 읽는 쪽이 [x,y]만 꺼내 쓰므로 옛 기록도 그대로 재생된다.
+export interface ReplayStroke { color: string; size: number; erase?: boolean; pts: [number, number, number?][] }
 
 export interface ReplayEvent {
   t: number                        // 세션 시작부터 경과 ms
