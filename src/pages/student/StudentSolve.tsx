@@ -3,6 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import type { GradeResult, Grading, Problem } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { gradeWithRubric, isMachineGradable, requestAiQuiz, type AiQuiz } from '../../lib/aiGrade'
+import * as pencil from '../../lib/pencilSound'
 
 // 서술형 즉시채점 결과 — AI 판정 + 확인용 객관식을 맞혔는지
 export interface AiMark {
@@ -109,6 +110,8 @@ export default function StudentSolve() {
   const [penSize, setPenSize] = useState(1)         // PEN_SIZES 인덱스
   const [penColor, setPenColor] = useState(PEN_COLORS[0])
   const [handWrite, setHandWrite] = useState(true)  // 손으로 쓰기 — OFF면 스타일러스(pen 포인터)만
+  // 🔴 연필 소리는 기기별 설정이다 — 교실에 태블릿이 여러 대면 꺼야 할 수 있다
+  const [penSound, setPenSound] = useState(() => pencil.soundOn())
   const [penPop, setPenPop] = useState(false)
   const [inks, setInks] = useState<Record<string, Stroke[]>>({})
   const [redos, setRedos] = useState<Record<string, Stroke[]>>({})
@@ -664,6 +667,15 @@ export default function StudentSolve() {
                         </button>
                       </label>
                     </div>
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="text-xs font-semibold text-ink2">✏️ 연필 소리</span>
+                      <button onClick={() => { const v = !penSound; setPenSound(v); pencil.setSoundOn(v) }}
+                        role="switch" aria-checked={penSound}
+                        title="쓸 때 사각사각 소리가 나요. 교실이 시끄러우면 끄세요"
+                        className={`h-5 w-9 rounded-full p-0.5 transition ${penSound ? 'bg-pine' : 'bg-line'}`}>
+                        <span className={`block h-4 w-4 rounded-full bg-white shadow transition ${penSound ? 'translate-x-4' : ''}`} />
+                      </button>
+                    </div>
                     <div className="mb-3 flex items-center justify-between px-1">
                       {PEN_SIZES.map((s, i) => (
                         <button key={i} onClick={() => setPenSize(i)}
@@ -1103,6 +1115,7 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
           if (!allowed(e)) return
           e.currentTarget.setPointerCapture(e.pointerId)
           drawing.current = { color, size, erase: tool === 'eraser', pts: [norm(e.nativeEvent)] }
+          if (tool !== 'eraser') pencil.begin()   // 🔴 제스처 안에서 불러야 소리가 허용된다
           redrawLive()
         }}
         onPointerMove={e => {
@@ -1121,6 +1134,8 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
           } else {
             d.pts.push(...added)
             predicted.current = predictedOf(e)
+            const ne = e.nativeEvent
+            pencil.move(ne.clientX, ne.clientY, ne.pointerType === 'pen' ? ne.pressure : undefined)
             redrawLive()
           }
         }}
@@ -1129,10 +1144,11 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
           if (!s) return
           drawing.current = null
           predicted.current = []
+          pencil.stop()
           redrawLive()                     // live 층 비우기 — 확정본은 base 로 넘어간다
           if (s.pts.length > 1) onCommit(s)
         }}
-        onPointerCancel={() => { drawing.current = null; predicted.current = []; redrawLive() }}
+        onPointerCancel={() => { drawing.current = null; predicted.current = []; pencil.stop(); redrawLive() }}
       />
     </div>
   )
