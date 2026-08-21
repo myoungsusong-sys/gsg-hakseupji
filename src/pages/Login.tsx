@@ -80,8 +80,14 @@ export default function Login() {
               placeholder="아이디 (출결번호)" autoComplete="username"
               className="rounded-lg border border-line px-3 py-2.5 outline-none focus:border-pine" />
           ) : (
-            <input type="email" required value={email} onChange={e => setEmail(e.target.value)}
-              placeholder="이메일" autoComplete="username"
+            // 🔴 type="email" 이면 안 된다 (2026-08-21). submit 은 «@ 없으면 강사 아이디»로
+            //    변환하게 돼 있는데(위 submit 참고), 입력칸이 email 이라 **브라우저가 그 전에 막았다**.
+            //    강사가 아이디만 넣으면 "parksw에 '@'가 없습니다"가 떠서 로그인 자체가 불가능했다.
+            //    계정 만들기(mode==='up')는 진짜 이메일이 필요하므로 그때만 email 로 검사한다.
+            <input type={mode === 'up' ? 'email' : 'text'} required value={email}
+              onChange={e => setEmail(e.target.value)} autoComplete="username"
+              placeholder={mode === 'up' ? '이메일' : '아이디 또는 이메일'}
+              autoCapitalize="off" autoCorrect="off" spellCheck={false}
               className="rounded-lg border border-line px-3 py-2.5 outline-none focus:border-pine" />
           )}
           <input type="password" required value={pw} onChange={e => setPw(e.target.value)}
