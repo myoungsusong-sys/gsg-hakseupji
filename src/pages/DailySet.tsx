@@ -4,7 +4,7 @@ import { useStore } from '../lib/store'
 import { useBrand } from '../lib/brand'
 import { todayKey } from '../lib/dates'
 import { loadWbMatch } from '../data/wbMatch'
-import { buildByTypeRound, dailyWsId, typeOrderOfBook, unitsOfOrder } from '../lib/daily'
+import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder } from '../lib/daily'
 import { typeUnitName } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
@@ -26,6 +26,16 @@ import type { Problem, Student } from '../types'
 //    학생 화면·PDF 출력·선생님 지도화면이 한꺼번에 해결된다.
 
 type Made = { student: Student; subject: '수학' | '과학'; wsId: string; n: number }
+
+/** [문제은행키, 교재매칭표키, 교재이름] — 앞 둘이 다를 수 있다(위 RAIL 주석 참고). */
+type Rail = [string, string, string]
+
+// 🔴 미적분Ⅰ은 **마플시너지**로 낸다 (명수쌤: "고등은 마플시너지 대표유형부터").
+//    한때 「마플시너지 미적분Ⅰ은 정답이 없어 쎈으로 대체」했는데 그 판단이 틀렸다 —
+//    매칭표의 정답 칸은 유형 차례를 읽는 데 쓰지 않고, 문제·정답·해설은 문제은행에서 온다.
+//    실측(2026-08-21): 마플시너지 미적분Ⅰ 149유형이 문제은행에 149/149 = 100% 있고
+//    1·2·3회차 모두 낼 수 있다. 쎈으로 돌아갈 이유가 없다.
+const MI1: Rail = ['h-calc1', 'h-mi1', '마플시너지 미적분Ⅰ']
 
 export default function DailySet() {
   const {
@@ -64,25 +74,57 @@ export default function DailySet() {
   //    그래서 여기서 명시적으로 잇는다 — 추측하지 않는다.
   // 🔴 유형 순서는 **교재 매칭표(책 차례)** 에서 뽑는다. 교육과정 트리는 과학 과정이 아예 없고,
   //    무엇보다 "마플시너지 대표유형부터" 라는 요구가 곧 '책 차례대로' 라는 뜻이다.
-  const RAIL: Record<string, { math?: [string, string]; sci?: [string, string] }> = {
-    //            [과정키, 교재이름(유형 순서를 가져올 책)]
-    중1: { math: ['m1-2', '수학의 바이블 유형ON 중등수학1(하)'], sci: ['m-sci1-2', '오투 중등과학 1-2'] },
-    중2: { math: ['m2-2', '쎈 중등수학2(하)'],                  sci: ['m-sci2-2', '오투 중등과학 2-2'] },
-    중3: { math: ['m3-2', '쎈 중등수학3(하)'],                  sci: ['m-sci3-2', '오투 중등과학 3-2'] },
-    고1: { math: ['h-cm2', '마플시너지 공통수학2'],              sci: ['h-int2', '오투 통합과학2'] },
-    고2: { math: ['h-alg', '마플시너지 대수'] },                 // 미적분은 아래 hi2Course 로 고른다
-    고3: { math: ['h-calc1', '쎈 미적분1'] },
+  // 🔴 과정키가 **두 벌**이다. 문제은행(pool-<키>.json)과 교재 매칭표(wb-match-<키>.json)의
+  //    파일 이름이 고등 일부에서 서로 다르다. 한 키로 둘 다 부르면 매칭표가 404 로 죽는데,
+  //    화면에는 「교재 차례를 못 읽음」 한 줄만 뜨고 그 학년은 **학습지가 0장** 나간다.
+  //      대수    pool=h-alg    wb-match=h-dae
+  //      미적분1 pool=h-calc1  wb-match=h-mi1
+  //    (2026-08-21 실측: 이 어긋남으로 고2·고3이 통째로 빠지고 있었다.)
+  const RAIL: Record<string, { math?: Rail; sci?: Rail }> = {
+    //            [문제은행키, 매칭표키, 교재이름(유형 차례를 가져올 책)]
+    중1: { math: ['m1-2', 'm1-2', '수학의 바이블 유형ON 중등수학1(하)'], sci: ['m-sci1-2', 'm-sci1-2', '오투 중등과학 1-2'] },
+    중2: { math: ['m2-2', 'm2-2', '쎈 중등수학2(하)'],                sci: ['m-sci2-2', 'm-sci2-2', '오투 중등과학 2-2'] },
+    중3: { math: ['m3-2', 'm3-2', '쎈 중등수학3(하)'],                sci: ['m-sci3-2', 'm-sci3-2', '오투 중등과학 3-2'] },
+    고1: { math: ['h-cm2', 'h-cm2', '마플시너지 공통수학2'],           sci: ['h-int2', 'h-int2', '오투 통합과학2'] },
+    고2: { math: ['h-alg', 'h-dae', '마플시너지 대수'] },              // 미적분은 hi2 토글로 바꾼다
+    고3: { math: MI1 },
   }
+
+  // ── 학년 갈래 미리보기 ───────────────────────────────────────────
+  // 🔴 명수쌤(2026-08-21): "학생이 학년이 다 다른 거 알지?"
+  //    맞다 — 그래서 **누르기 전에** 학년이 어떻게 갈리는지, 학년마다 무슨 책으로 나가는지,
+  //    못 내는 학생이 누구인지 화면에 보인다. 만들고 나서 「건너뛴 것」으로 알게 되면 늦다.
+  const GRADE_SORT = (g: string) =>
+    ({ 초: 0, 중: 10, 고: 20 }[g[0]] ?? 90) + (Number(g[1]) || 0)
+
+  const byGrade = useMemo(() => {
+    const m = new Map<string, { gk: string; raw: string; names: string[] }>()
+    for (const s of targets) {
+      const gk = gradeKey(s.grade)
+      const key = gk || `?${s.grade || '(학년 없음)'}`
+      const cur = m.get(key) ?? { gk, raw: s.grade || '(학년 없음)', names: [] }
+      cur.names.push(s.name)
+      m.set(key, cur)
+    }
+    return [...m.values()]
+      .map(v => {
+        const rail = RAIL[v.gk]
+        const math = (v.gk === '고2' && hi2 === '미적분' ? MI1 : rail?.math)?.[2]
+        return { ...v, math, sci: rail?.sci?.[2], ok: !!rail }
+      })
+      .sort((a, b) => (a.ok === b.ok ? GRADE_SORT(a.gk) - GRADE_SORT(b.gk) : a.ok ? -1 : 1))
+  }, [targets, hi2])
 
   // 대상 학생들이 쓰는 과정 목록 — [과정키, [과정키, 교재명, 화면라벨]]
   function railsOf(list: Student[]) {
-    const need = new Map<string, [string, string, string]>()
+    const need = new Map<string, { rail: Rail; label: string }>()
     for (const s of list) {
-      const rail = RAIL[s.grade]
+      const gk = gradeKey(s.grade)          // 🔴 '중2-2'·'공통수학2' 도 여기서 학년 키가 된다
+      const rail = RAIL[gk]
       if (!rail) continue
-      const mm = s.grade === '고2' && hi2 === '미적분' ? (['h-calc1', '쎈 미적분1'] as [string, string]) : rail.math
-      if (mm) need.set(mm[0], [mm[0], mm[1], `${s.grade} 수학`])
-      if (rail.sci) need.set(rail.sci[0], [rail.sci[0], rail.sci[1], `${s.grade} 과학`])
+      const mm = gk === '고2' && hi2 === '미적분' ? MI1 : rail.math
+      if (mm) need.set(mm[0], { rail: mm, label: `${gk} 수학` })
+      if (rail.sci) need.set(rail.sci[0], { rail: rail.sci, label: `${gk} 과학` })
     }
     return need
   }
@@ -95,9 +137,9 @@ export default function DailySet() {
     setBusy('단원 읽는 중…')
     const need = railsOf(targets)
     const out: { course: string; label: string; units: string[] }[] = []
-    for (const [course, [, bookName, label]] of need) {
+    for (const [course, { rail: [, wbKey, bookName], label }] of need) {
       try {
-        const data = await loadWbMatch(course)
+        const data = await loadWbMatch(wbKey)
         const key = Object.keys(data).find(k => k.startsWith(bookName + '|')) ?? Object.keys(data)[0]
         if (!key) continue
         const order = typeOrderOfBook(data[key] as unknown[][])
@@ -127,9 +169,9 @@ export default function DailySet() {
 
     setBusy('교재 차례 읽는 중…')
     const orders = new Map<string, string[]>()
-    for (const [course, [, bookName]] of need) {
+    for (const [course, { rail: [, wbKey, bookName] }] of need) {
       try {
-        const data = await loadWbMatch(course)
+        const data = await loadWbMatch(wbKey)
         const key = Object.keys(data).find(k => k.startsWith(bookName + '|')) ?? Object.keys(data)[0]
         if (key) orders.set(course, typeOrderOfBook(data[key] as unknown[][]))
       } catch { /* 매칭표가 없으면 아래에서 건너뛴다 */ }
@@ -148,15 +190,20 @@ export default function DailySet() {
 
     const pool = problemsRef.current
     for (const s of targets) {
-      const rail = RAIL[s.grade]
-      if (!rail) { skip.push(`${s.name}(${s.grade}) — 지원하지 않는 학년`); continue }
+      const gk = gradeKey(s.grade)
+      const rail = RAIL[gk]
+      if (!rail) {
+        skip.push(`${s.name}(${s.grade || '학년 없음'}) — ${
+          gk ? '기본과제를 내지 않는 학년' : '학년을 읽지 못했습니다'}`)
+        continue
+      }
       setBusy(`${s.name} 학생 만드는 중…`)
-      const plan: [string, [string, string] | undefined][] = [
-        ['수학', s.grade === '고2' && hi2 === '미적분' ? ['h-calc1', '쎈 미적분1'] : rail.math],
+      const plan: [string, Rail | undefined][] = [
+        ['수학', gk === '고2' && hi2 === '미적분' ? MI1 : rail.math],
         ['과학', rail.sci],
       ]
       for (const [subject, entry] of plan) {
-        if (!entry) { skip.push(`${s.name}(${s.grade}) ${subject} — 해당 과정 없음`); continue }
+        if (!entry) { skip.push(`${s.name}(${gk}) ${subject} — 해당 과정 없음`); continue }
         const [course] = entry
         const typeOrder = orders.get(course)
         if (!typeOrder?.length) { skip.push(`${s.name} ${subject} — 교재 차례를 못 읽음(${course})`); continue }
@@ -173,7 +220,7 @@ export default function DailySet() {
         saveWorksheet({
           id,
           title: `${subject} 기본과제 ${round}회차 - ${s.name} (${day.slice(5).replace('-', '.')})`,
-          author: brand, grade: s.grade, subject: subject as '수학' | '과학',
+          author: brand, grade: gk, subject: subject as '수학' | '과학',
           tags: ['오늘의 학습', '기본과제'], theme: subject === '수학' ? 'amber' : 'pine',
           problemIds: picks.map((p: Problem) => p.id), conceptIds: [],
           options: { ...DEFAULT_SHEET_OPTIONS, autoGrade: true },
@@ -233,6 +280,33 @@ export default function DailySet() {
             <span className="text-ink2">문항</span>
           </label>
         </div>
+
+        {/* 학년 갈래 — 학생마다 학년이 달라서, 학년별로 다른 책·다른 문제가 나간다 */}
+        {byGrade.length > 0 && (
+          <div className="grid gap-1.5 rounded-xl bg-paper2/60 p-3">
+            <b className="text-sm">학년 갈래 <span className="font-normal text-ink2">— 학년마다 다른 책으로 나갑니다</span></b>
+            {byGrade.map(g => (
+              <div key={g.gk || g.raw}
+                className={`flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg px-2.5 py-1.5 text-xs ${
+                  g.ok ? 'bg-white' : 'border border-amber/50 bg-amber/10'}`}>
+                <b className={`w-10 shrink-0 ${g.ok ? '' : 'text-clay'}`}>{g.ok ? g.gk : g.raw}</b>
+                <span className="w-12 shrink-0 text-ink2">{g.names.length}명</span>
+                {g.ok ? (
+                  <>
+                    <span className="rounded bg-amber/20 px-1.5 py-0.5 font-semibold">수학 {g.math}</span>
+                    {g.sci
+                      ? <span className="rounded bg-pine-soft px-1.5 py-0.5 font-semibold text-pine-dark">과학 {g.sci}</span>
+                      : <span className="text-ink2">과학 교재 없음 — 수학만 나갑니다</span>}
+                  </>
+                ) : (
+                  <span className="font-semibold text-clay">기본과제 대상이 아닙니다 — 이 학생들은 빠집니다</span>
+                )}
+                <div className="grow" />
+                <span className="truncate text-ink2" title={g.names.join(', ')}>{g.names.join(' · ')}</span>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* 🔴 진도 범위 = 단원. "4단원이면 1,2단원" — 선생님이 쓰는 단위로 고른다 */}
         <div className="grid gap-2 rounded-xl bg-paper2/60 p-3">
