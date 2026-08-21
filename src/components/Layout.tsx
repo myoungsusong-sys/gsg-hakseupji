@@ -190,6 +190,7 @@ export default function Layout() {
           <nav className="flex gap-1">
             <NavLink to="/prep/worksheet" className={topTab}>수업 준비</NavLink>
             <NavLink to="/lesson" className={topTab}>수업</NavLink>
+            <NavLink to="/daily" className={topTab}>기본과제</NavLink>
             <NavLink to="/today" className={topTab}>오늘 교실</NavLink>
             <NavLink to="/manage" className={topTab}>관리</NavLink>
             <NavLink to="/points" className={topTab}>포인트</NavLink>

@@ -151,8 +151,22 @@ export interface TypeRoundOpts {
   typeOrder: string[]      // 교재가 정한 유형 순서 (앞에서부터 진도 순)
   round: number            // 1=대표유형, 2=유형별 2번째 …
   count: number            // 오늘 낼 문항 수
-  fromRatio?: number       // 범위 시작 비율 0~1 (기본 0)
-  toRatio?: number         // 범위 끝 비율 0~1 (기본 1 = 전체)
+  // 🔴 범위는 **단원**으로 자른다. 명수쌤: "중간범위의 기준은 보통 4단원이면 1,2단원."
+  //    유형 개수의 몇 %가 아니라 진도가 나간 단원까지 — 그게 선생님이 쓰는 단위다.
+  units?: string[]         // 낼 단원 이름들(대단원). 비면 전체
+  unitOf?: (typeId: string) => string   // 유형 → 대단원 이름
+}
+
+/** 유형 순서를 대단원 이름으로 묶는다 — 화면에서 단원을 고르게 하려고 쓴다. */
+export function unitsOfOrder(typeOrder: string[], unitOf: (t: string) => string): string[] {
+  const seen = new Set<string>()
+  const out: string[] = []
+  for (const t of typeOrder) {
+    const u = unitOf(t)
+    if (!u || seen.has(u)) continue
+    seen.add(u); out.push(u)
+  }
+  return out
 }
 
 /**
@@ -161,10 +175,11 @@ export interface TypeRoundOpts {
  * 같은 학생·같은 회차면 **항상 같은 문제**가 나온다 — 정렬이 결정적이라 재실행에 안전하다.
  */
 export function buildByTypeRound(problems: Problem[], o: TypeRoundOpts): Problem[] {
-  const from = Math.max(0, Math.min(1, o.fromRatio ?? 0))
-  const to = Math.max(from, Math.min(1, o.toRatio ?? 1))
-  const n = o.typeOrder.length
-  const slice = o.typeOrder.slice(Math.floor(n * from), Math.ceil(n * to))
+  // 단원을 골랐으면 그 단원의 유형만 남긴다(책 차례 순서는 그대로 유지)
+  const pick = new Set(o.units ?? [])
+  const slice = pick.size && o.unitOf
+    ? o.typeOrder.filter(t => pick.has(o.unitOf!(t)))
+    : o.typeOrder
   if (!slice.length) return []
 
   // 유형별로 문항을 모아 **결정적으로** 정렬한다(id 오름차순) — 같은 회차는 같은 문제가 나와야

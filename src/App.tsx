@@ -32,6 +32,7 @@ import NaesinPrep from './pages/NaesinPrep'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
 import TodayRoom from './pages/TodayRoom'
+import DailySet from './pages/DailySet'
 import Students from './pages/Students'
 import MyPage from './pages/MyPage'
 import CsatLibrary from './pages/CsatLibrary'
@@ -166,6 +167,7 @@ function Gate() {
             {/* 수업: 채점 → 오답 → 드릴 루프 */}
             <Route path="/lesson" element={<Page><Lesson /></Page>} />
             <Route path="/today" element={<Page><TodayRoom /></Page>} />
+            <Route path="/daily" element={<Page><DailySet /></Page>} />
             <Route path="/manage" element={<Page><Students /></Page>} />
             <Route path="/mypage" element={<Page><MyPage /></Page>} />
 
