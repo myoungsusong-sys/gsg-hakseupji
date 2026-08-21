@@ -13,17 +13,35 @@
 
 export interface VocaWord { w: string; mean: string }
 
-let cache: Record<string, [string, string][]> | null = null
+const cache = new Map<string, Record<string, [string, string][]>>()
 
-export async function loadVoca(): Promise<Record<string, [string, string][]>> {
-  if (cache) return cache
-  const r = await fetch(`${import.meta.env.BASE_URL}voca-cheonilmun-mid.json`)
+/** 단어장을 받아 온다. file 을 안 주면 중등(천일문) — 기존 호출부와 호환. */
+export async function loadVoca(file = 'voca-cheonilmun-mid.json'): Promise<Record<string, [string, string][]>> {
+  const hit = cache.get(file)
+  if (hit) return hit
+  const r = await fetch(`${import.meta.env.BASE_URL}${file}`)
   if (!r.ok) throw new Error('단어 파일을 불러오지 못했습니다')
-  cache = await r.json()
-  return cache!
+  const d = await r.json()
+  cache.set(file, d)
+  return d
 }
 
 export const VOCA_BOOK = '천일문VOCA 중등필수'
+export const VOCA_BOOK_HIGH = '완자 VOCA PICK 고등필수'
+
+// 🔴 학년마다 단어장이 다르다 (명수쌤 2026-08-21: "학생이 학년이 다 다른 거 알지?").
+//    고등학생에게 중등필수를 내면 시험이 되지 않는다.
+//    명수쌤은 **능률VOCA 수능필수**를 고르셨는데, 이 맥에는 그 책의 MP3 180개만 있고
+//    단어 목록 파일이 없다(02_영어/능률영단어/). 음성에서 철자를 받아쓰면 정답이 틀어지므로
+//    쓰지 않는다 — 어휘리스트(엑셀·PDF)를 받으면 이 표만 바꾸면 된다.
+export interface VocaBook { key: string; name: string; file: string }
+const MID: VocaBook = { key: 'mid', name: VOCA_BOOK, file: 'voca-cheonilmun-mid.json' }
+const HIGH: VocaBook = { key: 'high', name: VOCA_BOOK_HIGH, file: 'voca-wanja-high.json' }
+
+/** 학년으로 단어장을 고른다 — '고'로 시작하면 고등, 그 밖에는 중등. */
+export function vocaBookOf(grade: string): VocaBook {
+  return /^고/.test((grade ?? '').trim()) ? HIGH : MID
+}
 
 /** 채점용 정규화 — 대소문자·양끝 공백·연속 공백·마침표만 맞춘다(철자는 그대로 본다). */
 export function normWord(s: string): string {
@@ -56,7 +74,7 @@ export function isCorrect(word: string, typed: string): boolean {
 }
 
 /** 오늘 볼 DAY — 이 학생이 이미 본 가장 큰 DAY 다음. 없으면 1. */
-export function nextDay(doneDays: number[]): number {
+export function nextDay(doneDays: number[], lastDay = 40): number {
   const max = doneDays.length ? Math.max(...doneDays) : 0
-  return Math.min(40, Math.max(1, max + 1))
+  return Math.min(lastDay, Math.max(1, max + 1))
 }

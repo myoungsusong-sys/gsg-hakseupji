@@ -8,6 +8,7 @@ import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder } 
 import { typeUnitName } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
+import BatchPrint, { vocaSheetFor, type Sheet } from '../components/daily/BatchPrint'
 
 // ── 📤 오늘 기본과제 — 반/전체 학생에게 3세트를 한 번에 내보낸다 ────────────────
 //
@@ -25,7 +26,7 @@ import type { Problem, Student } from '../types'
 //    **유형 순서는 교재를 따르고 문제는 문제은행에서** 가져오면
 //    학생 화면·PDF 출력·선생님 지도화면이 한꺼번에 해결된다.
 
-type Made = { student: Student; subject: '수학' | '과학'; wsId: string; n: number }
+type Made = { student: Student; subject: '수학' | '과학'; wsId: string; n: number; problems: Problem[] }
 
 /** [문제은행키, 교재매칭표키, 교재이름] — 앞 둘이 다를 수 있다(위 RAIL 주석 참고). */
 type Rail = [string, string, string]
@@ -55,6 +56,9 @@ export default function DailySet() {
   const [busy, setBusy] = useState('')
   const [made, setMade] = useState<Made[]>([])
   const [skipped, setSkipped] = useState<string[]>([])
+  // 🔴 일괄 PDF — 만든 학습지를 학생 이름이 박힌 한 파일로 (명수쌤 2026-08-21)
+  const [sheets, setSheets] = useState<Sheet[] | null>(null)
+  const [vocaDay, setVocaDay] = useState(1)
   const [hi2, setHi2] = useState<'대수' | '미적분'>('대수')   // 고2는 두 과목 중 오늘 낼 것
   // 🔴 problems 는 지연 로드로 나중에 채워진다. 함수 안에서 잡은 값은 낡은 값이라
   //    ref 로 **지금 값**을 본다(안 그러면 늘 "문제은행이 안 들어왔어요" 가 뜬다).
@@ -227,11 +231,25 @@ export default function DailySet() {
           listIds: [], createdAt: new Date().toISOString(), deletedAt: null,
         })
         addAssignment(id, [s.id], '수업')
-        out.push({ student: s, subject: subject as '수학' | '과학', wsId: id, n: picks.length })
+        out.push({ student: s, subject: subject as '수학' | '과학', wsId: id, n: picks.length, problems: picks })
       }
     }
     setMade(out); setSkipped(skip); setBusy('')
   }
+
+  // 만든 것 + 학년별 단어시험지를 모아 인쇄 화면으로 넘긴다
+  async function openBatch() {
+    setBusy('인쇄본 준비 중…')
+    const list: Sheet[] = []
+    for (const m of made) list.push({ kind: '문제', student: m.student, subject: m.subject, problems: m.problems })
+    for (const st of [...new Map(made.map(m => [m.student.id, m.student])).values()]) {
+      const v = await vocaSheetFor(st, vocaDay)
+      if (v) list.push(v)
+    }
+    setSheets(list); setBusy('')
+  }
+
+  if (sheets) return <BatchPrint sheets={sheets} brand={brand} onClose={() => setSheets(null)} />
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-8">
@@ -360,6 +378,22 @@ export default function DailySet() {
               학생 {new Set(made.map(m => m.student.id)).size}명 · 문항 합계 {made.reduce((a, m) => a + m.n, 0)}
             </span>
           </div>
+          {/* 🔴 한 파일로 뽑는 길 — 학생마다 [🖨 인쇄]를 누르면 20명이면 20개 파일이 생긴다 */}
+          <div className="mb-3 flex flex-wrap items-center gap-2 rounded-xl bg-pine-soft px-3 py-2.5">
+            <b className="text-sm text-pine-dark">📄 전부 한 파일로</b>
+            <span className="text-xs text-ink2">학생 이름이 박힌 문제지 + 영어 단어시험지</span>
+            <label className="flex items-center gap-1.5 text-xs">
+              <span className="font-semibold">단어 DAY</span>
+              <input type="number" min={1} max={40} value={vocaDay} onChange={e => setVocaDay(Number(e.target.value))}
+                className="w-14 rounded-lg border border-line px-2 py-1 text-right font-bold" />
+            </label>
+            <div className="grow" />
+            <button onClick={openBatch} disabled={!!busy}
+              className="rounded-lg bg-pine px-4 py-2 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-50">
+              {busy || '📄 일괄 PDF 만들기'}
+            </button>
+          </div>
+
           <div className="grid gap-1.5">
             {made.map(m => (
               <div key={m.wsId} className="flex items-center gap-2 rounded-lg border border-line/70 px-3 py-2 text-sm">
@@ -368,7 +402,7 @@ export default function DailySet() {
                   m.subject === '수학' ? 'bg-amber/20 text-ink' : 'bg-pine-soft text-pine-dark'}`}>{m.subject}</span>
                 <span className="text-ink2">{m.n}문항</span>
                 <div className="grow" />
-                <Link to={`/worksheet/${m.wsId}?out=문제지`}
+                <Link to={`/worksheet/${m.wsId}?out=문제지&name=${encodeURIComponent(m.student.name)}`}
                   className="rounded-lg border border-line px-2.5 py-1 text-xs font-bold text-ink2 hover:border-pine">
                   🖨 인쇄
                 </Link>

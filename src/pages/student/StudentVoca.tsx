@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useStudentSelf } from './common'
 import { useStore, uid } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
-import { isCorrect, loadVoca, nextDay, VOCA_BOOK } from '../../lib/voca'
+import { isCorrect, loadVoca, nextDay, vocaBookOf } from '../../lib/voca'
 import type { GradeResult } from '../../types'
 
 // ── 🔤 영어 단어시험 (학생앱) ────────────────────────────────────────────
@@ -20,6 +20,8 @@ export default function StudentVoca() {
   const { gradings, workbooks, addWorkbook, upsertGrading } = useStore()
   const today = todayKey()
 
+  // 🔴 학년에 맞는 단어장 — 고등은 고등필수, 중등은 중등필수 (voca.ts vocaBookOf)
+  const book0 = useMemo(() => vocaBookOf(me.grade), [me.grade])
   const [all, setAll] = useState<Record<string, [string, string][]> | null>(null)
   const [err, setErr] = useState('')
   const [day, setDay] = useState<number | null>(null)
@@ -29,17 +31,17 @@ export default function StudentVoca() {
 
   // 이 학생이 이미 본 DAY (교재 기록의 pageFrom 에 DAY 를 넣어 둔다)
   const book = useMemo(
-    () => workbooks.find(w => w.studentId === me.id && w.name === VOCA_BOOK),
-    [workbooks, me.id])
+    () => workbooks.find(w => w.studentId === me.id && w.name === book0.name),
+    [workbooks, me.id, book0.name])
   const doneDays = useMemo(() => gradings
     .filter(g => g.studentId === me.id && book && g.workbookId === book.id && g.pageFrom != null)
     .map(g => g.pageFrom as number), [gradings, me.id, book])
 
   useEffect(() => {
-    loadVoca().then(d => { setAll(d); setDay(nextDay(doneDays)) })
+    loadVoca(book0.file).then(d => { setAll(d); setDay(nextDay(doneDays, Object.keys(d).length)) })
       .catch(e => setErr(String(e?.message ?? e)))
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [book0.file])
 
   // DAY 가 정해지면 문항을 세운다
   useEffect(() => {
@@ -69,7 +71,9 @@ export default function StudentVoca() {
   //    "이미 본 DAY"가 공짜로 계산되고 선생님 화면에도 교재명으로 보인다.
   function save(final: Row[]) {
     // addWorkbook 은 id 를 스스로 만들어 돌려준다
-    const wbId = book?.id ?? addWorkbook({ name: VOCA_BOOK, publisher: '쎄듀', grade: me.grade, studentId: me.id })
+    const wbId = book?.id ?? addWorkbook({
+      name: book0.name, publisher: book0.key === 'high' ? '비상교육' : '쎄듀',
+      grade: me.grade, studentId: me.id })
     const results: GradeResult[] = final.map((r, i) => ({
       itemId: `voca-${day}-${i}`,
       studentAnswer: r.typed,
@@ -98,9 +102,10 @@ export default function StudentVoca() {
     <div className="grid gap-4">
       <div className="flex flex-wrap items-center gap-3">
         <h1 className="text-lg font-black">🔤 영어 단어시험</h1>
+        <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{book0.name}</span>
         <select value={day} onChange={e => setDay(Number(e.target.value))}
           className="rounded-lg border border-line bg-white px-2.5 py-1 text-sm font-bold">
-          {Array.from({ length: 40 }, (_, i) => i + 1).map(d => (
+          {Array.from({ length: Object.keys(all).length }, (_, i) => i + 1).map(d => (
             <option key={d} value={d}>DAY {d}{doneDays.includes(d) ? ' ✓' : ''}</option>
           ))}
         </select>
