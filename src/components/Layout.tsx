@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import LoadFailBanner from './LoadFailBanner'
 import { SUBJECTS, useSubject } from '../lib/subject'
 import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
@@ -180,6 +181,9 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen">
+      {/* 🔴 클라우드 읽기가 실패했으면 제일 먼저 알린다 — 조용히 넘기면 선생님이
+          「채점이 사라졌다」고 보고 다시 채점하게 되고, 그게 진짜 유실을 만든다. */}
+      <LoadFailBanner />
       {/* 선생님 화면은 자동 새로고침 금지 — 채점 도중 리로드되면 채점하던 학생·진행이 날아간다 */}
       {stale && <UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
       <header className="no-print sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">

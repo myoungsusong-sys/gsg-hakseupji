@@ -59,9 +59,24 @@ export function noteId(n: DailyNote): string {
 // 🔴 id 까지 같이 읽는다. 아직 클라우드에 못 올린 대기분(outbox)을 이 위에 덮어씌워야
 //    하는데, 그러려면 행마다 id 가 필요하다. 덮어씌우지 않으면 저장 못 한 채점이
 //    다른 기기의 저장 한 번에 화면에서 지워진다 (자세한 사정은 lib/outbox.ts 머리말).
-async function rows(table: string): Promise<{ id: string; data: unknown }[]> {
-  if (!supabase) return []
-  const PAGE = 1000
+/**
+ * 한 테이블을 통째로 읽는다.
+ *
+ * 🔴 **실패를 반드시 알린다** (2026-08-21, 김준우 채점내역 유실).
+ *    예전에는 페이지 읽기가 실패하면 `break` 하고 **그때까지 받은 것만** 돌려줬다.
+ *    호출부는 그게 전부인 줄 알고 state·localStorage 를 덮어썼고,
+ *    **멀쩡히 저장돼 있던 채점이 화면에서 통째로 사라졌다.**
+ *    (2쪽째가 실패하면 앞 1,000행만 남는 «조용한 잘림»도 같은 사고다.)
+ *    → ok:false 면 호출부는 **그 표를 건드리지 않는다.**
+ *
+ * 🔴 hj_gradings 행에는 학생 풀이 이미지(base64)가 들어 있어 1,000행을 한 번에 받으면
+ *    응답이 수십 MB가 되어 실패하기 쉽다. 그 표만 페이지를 잘게 나눈다.
+ */
+const PAGE_OF: Record<string, number> = { [T.gradings]: 200 }
+
+async function rows(table: string): Promise<{ rows: { id: string; data: unknown }[]; ok: boolean }> {
+  if (!supabase) return { rows: [], ok: true }
+  const PAGE = PAGE_OF[table] ?? 1000
   const out: { id: string; data: unknown }[] = []
   for (let from = 0; ; from += PAGE) {
     let q = supabase.from(table).select('id, data').range(from, from + PAGE - 1)
@@ -69,19 +84,32 @@ async function rows(table: string): Promise<{ id: string; data: unknown }[]> {
     // 부팅에 불필요하다 — 전용 API(lib/live.ts·lib/replay.ts)로만 읽으므로 부팅 로드에서 제외
     if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%').not('id', 'like', 'rubric_%')
     const { data, error } = await q
-    if (error) { console.warn('load', table, error.message); break }
+    if (error) {
+      console.warn('[load 실패]', table, error.message, `— ${out.length}행까지 받음. 이 표는 갱신하지 않는다.`)
+      return { rows: [], ok: false }
+    }
     const batch = data ?? []
     out.push(...batch.map((r: { id: string; data: unknown }) => ({ id: r.id, data: r.data })))
     if (batch.length < PAGE) break
   }
-  return outbox.applyTo(table, out)
+  return { rows: outbox.applyTo(table, out), ok: true }
 }
 
-export async function loadAll(): Promise<CloudData | null> {
+/** 읽기에 실패한 테이블 목록 — 호출부(store)는 여기 든 표를 **덮어쓰지 않는다.** */
+export type LoadFail = Partial<Record<
+  'customProblems' | 'worksheets' | 'myLists' | 'workbooks' | 'wbItems' |
+  'students' | 'gradings' | 'dailyNotes' | 'settings', true>>
+
+export async function loadAll(): Promise<(CloudData & { __failed: LoadFail }) | null> {
   if (!supabase) return null
   const raw = await Promise.all(ALL_TABLES.map(rows))
   const [problems, worksheets, lists, workbooks, wbItems, students, gradings, dailyNotes, settings] =
-    raw.map(rs => rs.map(r => r.data as any))
+    raw.map(rs => rs.rows.map(r => r.data as any))
+  // 어느 표가 실패했나 — ALL_TABLES 순서와 아래 이름 순서가 같아야 한다
+  const NAMES = ['customProblems', 'worksheets', 'myLists', 'workbooks', 'wbItems',
+    'students', 'gradings', 'dailyNotes', 'settings'] as const
+  const __failed: LoadFail = {}
+  raw.forEach((r, i) => { if (!r.ok && NAMES[i]) __failed[NAMES[i]] = true })
   const settingsMap = new Map<string, any>()
   for (const s of settings) if (s && s.__id) settingsMap.set(s.__id, s.value)
   return {
@@ -112,6 +140,7 @@ export async function loadAll(): Promise<CloudData | null> {
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
     pointEntries: (settingsMap.get('pointEntries') as PointEntry[]) ?? [],
     pointSettlements: (settingsMap.get('pointSettlements') as PointSettlement[]) ?? [],
+    __failed,
   }
 }
 

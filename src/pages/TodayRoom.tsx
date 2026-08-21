@@ -4,6 +4,7 @@ import { dateKey, todayKey } from '../lib/dates'
 import { subjectOfWorkbook, useSubject, type Subject } from '../lib/subject'
 import { clearCall, fetchCalls, pushCall, type TeacherCall } from '../lib/live'
 import TeachPanel from '../components/lesson/TeachPanel'
+import DailyGradeBar from '../components/lesson/DailyGradeBar'
 import type { Grading, Student, Workbook, Worksheet } from '../types'
 
 // ── 📋 오늘 교실 — 오늘 답을 입력한 **전 학생**과 틀린 개수를 한 화면에, 거기서 바로 호출
@@ -189,6 +190,10 @@ export default function TodayRoom() {
           {CALL_TEXTS.map(t => <option key={t}>{t}</option>)}
         </select>
       </div>
+
+      {/* 🔴 기본과제는 선생님이 직접 채점한다 — 아래 목록은 「오늘 답을 입력한 학생」만 잡아서
+          채점 전 학생이 안 뜬다. 출제된 기본과제 자체를 기준으로 하는 줄을 위에 둔다. */}
+      <DailyGradeBar />
 
       {shown.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line p-10 text-center text-sm text-ink2">

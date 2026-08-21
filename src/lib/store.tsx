@@ -8,7 +8,7 @@ import { SEED_PROBLEMS } from '../data/problems'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { loadPool } from '../data/pool'
 import { defaultCurriculumForGrade } from '../data/curriculum'
-import { cloud, loadAll, noteId, type CloudData } from './backend'
+import { cloud, loadAll, noteId, type CloudData, type LoadFail } from './backend'
 import { ALL, setBranch, useBranchScope } from './branch'
 
 const LS_KEY = 'gsg-hakseupji-v1'
@@ -75,6 +75,8 @@ const EMPTY: Persisted = {
 interface Store extends Persisted {
   problems: Problem[]
   synced: boolean
+  /** 클라우드 읽기에 실패한 표 — 있으면 그 표는 **갱신하지 않은 것**이지 비어 있는 게 아니다. */
+  loadFail: LoadFail | null
   ensureCourse: (courseId: string) => void   // 매쓰플랫 문제 풀 과정별 지연 로드
   addProblem: (p: Problem) => void
   removeProblem: (id: string) => void
@@ -176,35 +178,46 @@ function load(): Persisted {
 }
 
 // CloudData → Persisted (정렬·정규화)
-function fromCloud(r: CloudData): Persisted {
+/**
+ * 클라우드 응답 → 앱 상태.
+ *
+ * 🔴 `prev` 를 반드시 넘겨라 (2026-08-21, 김준우 채점내역 유실).
+ *    읽기에 실패한 표(r.__failed)는 **덮어쓰지 않고 이전 값을 그대로 둔다.**
+ *    예전에는 실패가 빈 배열로 내려와 그대로 덮어써서, 멀쩡히 저장된 채점이
+ *    화면에서도 localStorage 에서도 사라졌다. 「또 없어졌다」의 구조적 원인이다.
+ */
+function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Persisted {
+  const f = r.__failed ?? {}
+  const keep = <K extends keyof Persisted>(k: K, next: Persisted[K], failed?: true): Persisted[K] =>
+    (failed && prev ? prev[k] : next)
   return {
-    customProblems: r.customProblems,
-    worksheets: r.worksheets.map(normWorksheet).sort((a, b) => b.createdAt.localeCompare(a.createdAt)),
-    favorites: r.favorites,
-    myLists: r.myLists,
-    diffMatrix: r.diffMatrix ?? DEFAULT_DIFF_MATRIX,
-    workbooks: r.workbooks,
-    wbItems: r.wbItems,
-    students: r.students,
-    gradings: r.gradings.sort((a, b) => b.date.localeCompare(a.date)),
-    dailyNotes: r.dailyNotes,
-    assignments: r.assignments ?? [],
-    dailyConfigs: r.dailyConfigs ?? {},
-    studentAppConfig: { ...DEFAULT_STUDENT_APP_CONFIG, ...(r.studentAppConfig ?? {}) },
-    klassOrder: r.klassOrder ?? [],
-    academyProfile: r.academyProfile ?? {},
-    savedReports: r.savedReports ?? [],
-    myBooks: r.myBooks ?? [],
-    uploads: r.uploads ?? [],
-    sheetTemplates: r.sheetTemplates ?? [],
-    lecturePlans: r.lecturePlans ?? [],
-    solveFeedbacks: r.solveFeedbacks ?? [],
-    bugReports: r.bugReports ?? [],
-    teachers: r.teachers ?? [],
-    branches: r.branches ?? [],
-    ttChecks: r.ttChecks ?? {},
-    pointEntries: r.pointEntries ?? [],
-    pointSettlements: r.pointSettlements ?? [],
+    customProblems: keep('customProblems', r.customProblems, f.customProblems),
+    worksheets: keep('worksheets', r.worksheets.map(normWorksheet).sort((a, b) => b.createdAt.localeCompare(a.createdAt)), f.worksheets),
+    favorites: keep('favorites', r.favorites, f.settings),
+    myLists: keep('myLists', r.myLists, f.myLists),
+    diffMatrix: keep('diffMatrix', r.diffMatrix ?? DEFAULT_DIFF_MATRIX, f.settings),
+    workbooks: keep('workbooks', r.workbooks, f.workbooks),
+    wbItems: keep('wbItems', r.wbItems, f.wbItems),
+    students: keep('students', r.students, f.students),
+    gradings: keep('gradings', r.gradings.sort((a, b) => b.date.localeCompare(a.date)), f.gradings),
+    dailyNotes: keep('dailyNotes', r.dailyNotes, f.dailyNotes),
+    assignments: keep('assignments', r.assignments ?? [], f.settings),
+    dailyConfigs: keep('dailyConfigs', r.dailyConfigs ?? {}, f.settings),
+    studentAppConfig: keep('studentAppConfig', { ...DEFAULT_STUDENT_APP_CONFIG, ...(r.studentAppConfig ?? {}) }, f.settings),
+    klassOrder: keep('klassOrder', r.klassOrder ?? [], f.settings),
+    academyProfile: keep('academyProfile', r.academyProfile ?? {}, f.settings),
+    savedReports: keep('savedReports', r.savedReports ?? [], f.settings),
+    myBooks: keep('myBooks', r.myBooks ?? [], f.settings),
+    uploads: keep('uploads', r.uploads ?? [], f.settings),
+    sheetTemplates: keep('sheetTemplates', r.sheetTemplates ?? [], f.settings),
+    lecturePlans: keep('lecturePlans', r.lecturePlans ?? [], f.settings),
+    solveFeedbacks: keep('solveFeedbacks', r.solveFeedbacks ?? [], f.settings),
+    bugReports: keep('bugReports', r.bugReports ?? [], f.settings),
+    teachers: keep('teachers', r.teachers ?? [], f.settings),
+    branches: keep('branches', r.branches ?? [], f.settings),
+    ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
+    pointEntries: keep('pointEntries', r.pointEntries ?? [], f.settings),
+    pointSettlements: keep('pointSettlements', r.pointSettlements ?? [], f.settings),
   }
 }
 /**
@@ -333,6 +346,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     } catch { /* 쿼터 초과 등은 무시 — 클라우드가 원본 */ }
   }, [state])
 
+  // 🔴 읽기에 실패한 표 — 화면에 띄워 선생님이 «없어진 게 아니라 못 읽은 것»임을 알게 한다.
+  //    조용히 넘기면 선생님이 다시 채점하게 되고, 그게 진짜 유실을 만든다.
+  const [loadFail, setLoadFail] = useState<LoadFail | null>(null)
+
   // 클라우드 동기화: 최초 로드 + 실시간 구독
   useEffect(() => {
     if (!cloud.on) return
@@ -344,12 +361,25 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         const has = remote.customProblems.length || remote.worksheets.length || remote.students.length ||
           remote.workbooks.length || remote.wbItems.length || remote.gradings.length ||
           remote.dailyNotes.length || remote.myLists.length || remote.favorites.length || remote.diffMatrix
-        if (has) setState(fromCloud(remote))
-        else await cloud.seedIfEmpty(toCloud(stateRef.current))  // 클라우드 비면 로컬 업로드
+        // 🔴 fromCloud 에 **직전 상태를 넘긴다** — 읽기에 실패한 표는 덮어쓰지 않는다.
+        //    (2026-08-21 김준우 채점내역 유실: 실패가 빈 배열로 내려와 그대로 덮어썼다)
+        if (has) setState(prev => fromCloud(remote, prev))
+        else if (!Object.keys(remote.__failed).length) {
+          // 🔴 「비었다」와 「못 읽었다」는 다르다. 하나라도 실패했으면 시드하지 않는다 —
+          //    그대로 두면 로컬 상태를 빈 클라우드에 덮어쓰는 반대 방향 사고가 난다.
+          await cloud.seedIfEmpty(toCloud(stateRef.current))
+        }
+        if (Object.keys(remote.__failed).length) setLoadFail(remote.__failed)
       }
       if (alive) {
         setSynced(true)
-        unsub = cloud.subscribe(() => { loadAll().then(r => { if (r && alive) setState(fromCloud(r)) }) })
+        unsub = cloud.subscribe(() => {
+          loadAll().then(r => {
+            if (!r || !alive) return
+            setState(prev => fromCloud(r, prev))
+            setLoadFail(Object.keys(r.__failed).length ? r.__failed : null)
+          })
+        })
       }
     })()
     return () => { alive = false; unsub() }
@@ -375,6 +405,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const store: Store = {
     ...state,
     synced,
+    loadFail,
     students: scopedStudents,
     allStudents: state.students,
     branchScope, multiBranch,

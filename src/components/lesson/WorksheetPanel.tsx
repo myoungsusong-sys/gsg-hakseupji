@@ -403,7 +403,9 @@ function SheetAnswer({ p }: { p: Problem }) {
   return <b>{a}</b>
 }
 
-function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
+// 🔴 오늘 교실에서도 바로 열 수 있게 내보낸다 (명수쌤 2026-08-21: "선생님앱에 채점을 할 수 있게").
+//    수업 > 학습지 탭 안에만 있으면 선생님이 학생 → 학습지 → 채점 3단계를 거쳐야 한다.
+export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
   const { problems, gradings, upsertGrading } = useStore()
   const brand = useBrand()
   const list = useMemo(() => {
@@ -415,7 +417,14 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
   // 연타 유실 방지: 같은 틱에 여러 셀을 클릭해도 항상 최신 marks 위에서 갱신 (GradePanel 동일)
   const marksRef = useRef(marks)
   const [hideAnswers, setHideAnswers] = useState(false)
-  const [openBody, setOpenBody] = useState<Set<string>>(new Set())   // 「문제 보기」 펼친 문항
+  // 「문제 보기」 펼친 문항.
+  // 🔴 명수쌤(2026-08-21): "선생님앱엔 문제풀이까지 다 뜨게 해줘."
+  //    기본과제는 **처음부터 전부 펼친 채로** 연다 — 선생님이 종이를 보며 채점하고 그 자리에서
+  //    설명해야 하므로 문항마다 「문제 보기」를 누르게 하면 안 된다.
+  //    그 밖의 학습지는 종전대로 접힘(문항이 많을 때 채점 속도가 중요하다).
+  const isDaily = (ws.tags ?? []).includes('기본과제')
+  const [openBody, setOpenBody] = useState<Set<string>>(new Set())
+  const [allOpen, setAllOpen] = useState(isDaily)
   const [drillOpen, setDrillOpen] = useState(false)
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
   // 'retry' = 클라우드에 못 올렸다. 데이터는 outbox 가 들고 있다가 다시 보낸다(사라지지 않는다).
@@ -668,6 +677,11 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
           <div className="flex items-center gap-3 border-b border-line bg-paper2/60 px-4 py-2 text-[11px] font-bold text-ink2">
             <span className="w-11 shrink-0">번호</span>
             <span className="grow">정답</span>
+            <button onClick={() => { setAllOpen(v => !v); setOpenBody(new Set()) }}
+              className={`rounded border px-2 py-0.5 font-semibold ${
+                allOpen ? 'border-pine bg-pine text-paper' : 'border-line bg-white hover:bg-paper2'}`}>
+              {allOpen ? '문제·해설 접기' : '문제·해설 모두 펼치기'}
+            </button>
             <button onClick={() => setHideAnswers(v => !v)}
               className="rounded border border-line bg-white px-2 py-0.5 font-semibold hover:bg-paper2">
               {hideAnswers ? '정답 보이기' : '정답 숨기기'}
@@ -676,7 +690,7 @@ function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Workshe
           </div>
           {list.map((p, i) => {
             const m = marks[p.id]
-            const open = openBody.has(p.id)
+            const open = allOpen !== openBody.has(p.id)   // 모두 펼침이면 개별 토글이 '접기'로 뒤집힌다
             return (
               <div key={p.id} className={`border-b border-line/50 transition-colors last:border-0 ${m ? SHEET_ROW_CLASS[m] : 'bg-white'}`}>
                 <div className="flex items-center gap-3 px-4 py-1.5">

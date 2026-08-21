@@ -227,7 +227,10 @@ export default function DailySet() {
           author: brand, grade: gk, subject: subject as '수학' | '과학',
           tags: ['오늘의 학습', '기본과제'], theme: subject === '수학' ? 'amber' : 'pine',
           problemIds: picks.map((p: Problem) => p.id), conceptIds: [],
-          options: { ...DEFAULT_SHEET_OPTIONS, autoGrade: true },
+          // 🔴 자동채점을 끈다 (명수쌤 2026-08-21: "이건 선생님이 직접 채점을 하시는 게 좋을 것 같애").
+          //    켜 두면 학생이 제출하는 순간 앱이 O/X 를 확정해 버려서, 선생님이 종이를 보고
+          //    매기는 채점과 어긋난다. 채점은 「오늘 교실 > 기본과제 채점」에서 선생님이 한다.
+          options: { ...DEFAULT_SHEET_OPTIONS, autoGrade: false },
           listIds: [], createdAt: new Date().toISOString(), deletedAt: null,
         })
         addAssignment(id, [s.id], '수업')
@@ -256,8 +259,9 @@ export default function DailySet() {
       <h1 className="mb-1 text-xl font-black">📤 오늘 기본과제</h1>
       <p className="mb-5 text-sm text-ink2">
         평일마다 학생별로 <b className="text-ink">수학·과학</b> 학습지를 한 번에 만듭니다.
-        학생이 풀고 채점하면 <Link to="/today" className="font-bold text-pine underline">오늘 교실</Link>에
-        오답 수로 떠서, 선생님이 부르고 틀린 문제를 바로 볼 수 있어요.
+        만든 뒤 <Link to="/today" className="font-bold text-pine underline">오늘 교실</Link>에
+        <b className="text-ink"> ✏️ 기본과제 채점</b> 줄이 생깁니다. 거기서 <b className="text-ink">선생님이 직접 채점</b>하고,
+        화면에 문제·정답·해설이 다 떠서 그 자리에서 설명할 수 있어요.
       </p>
 
       <div className="mb-5 grid gap-3 rounded-2xl border border-line bg-white p-4">
