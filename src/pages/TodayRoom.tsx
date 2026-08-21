@@ -3,6 +3,7 @@ import { useStore } from '../lib/store'
 import { dateKey, todayKey } from '../lib/dates'
 import { subjectOfWorkbook, useSubject, type Subject } from '../lib/subject'
 import { clearCall, fetchCalls, pushCall, type TeacherCall } from '../lib/live'
+import TeachPanel from '../components/lesson/TeachPanel'
 import type { Grading, Student, Workbook, Worksheet } from '../types'
 
 // ── 📋 오늘 교실 — 오늘 답을 입력한 **전 학생**과 틀린 개수를 한 화면에, 거기서 바로 호출
@@ -61,6 +62,7 @@ export default function TodayRoom() {
   const [showZero, setShowZero] = useState(false)
   const [sort, setSort] = useState<'wrong' | 'recent' | 'name'>('wrong')
   const [callText, setCallText] = useState(CALL_TEXTS[0])
+  const [teach, setTeach] = useState<Student | null>(null)   // 지도 패널 대상 학생
   const [calls, setCalls] = useState<TeacherCall[]>([])
   const [, tick] = useState(0)
   const busy = useRef(false)
@@ -219,10 +221,17 @@ export default function TodayRoom() {
                 </div>
                 <div className="mb-3 truncate text-xs text-ink2" title={r.labels.join(' · ')}>{r.labels.join(' · ')}</div>
                 {!c ? (
-                  <button onClick={() => call(r.st, `오답 ${r.open}개 · ${r.labels[0] ?? ''}`)}
-                    className="w-full rounded-lg bg-clay px-3 py-2 text-sm font-bold text-white hover:brightness-110">
-                    📢 호출
-                  </button>
+                  <div className="flex gap-1.5">
+                    {/* 부르기 전에 무엇을 틀렸는지 먼저 볼 수 있게 — 준비하고 부른다 */}
+                    <button onClick={() => setTeach(r.st)}
+                      className="shrink-0 rounded-lg border border-pine px-3 py-2 text-sm font-bold text-pine hover:bg-pine-soft">
+                      👨‍🏫 {r.open}
+                    </button>
+                    <button onClick={() => call(r.st, `오답 ${r.open}개 · ${r.labels[0] ?? ''}`)}
+                      className="grow rounded-lg bg-clay px-3 py-2 text-sm font-bold text-white hover:brightness-110">
+                      📢 호출
+                    </button>
+                  </div>
                 ) : (
                   <div className="flex gap-1.5">
                     <span className={`grow rounded-lg px-3 py-2 text-center text-sm font-bold ${
@@ -260,6 +269,7 @@ export default function TodayRoom() {
           </div>
         </div>
       )}
+      {teach && <TeachPanel student={teach} onClose={() => setTeach(null)} />}
     </div>
   )
 }
