@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { useStore } from '../lib/store'
 import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '../types'
 import { studentEmailOf, teacherEmailOf } from '../lib/role'
-import { SUPABASE_ON, supabase, signUpStudentClient } from '../lib/supabase'
+import { SUPABASE_ON, supabase, signUpAccountClient, signUpStudentClient } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
 import { BLOOD_TYPES, MBTI_TYPES } from '../lib/persona'
 
@@ -2159,7 +2159,17 @@ function TeacherAccountModal({ teacher, onDone, onClose }: {
           method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token ?? ''}` },
           body: JSON.stringify({ action: reset ? 'reset' : 'create', loginId: id, password: pw, name: teacher.name }),
         })
-        if (!r.ok) { const e = await r.json().catch(() => ({})); setErr(e.error || (reset ? '재설정 실패' : '계정 생성 실패')); setBusy(false); return }
+        if (!r.ok) {
+          const e = await r.json().catch(() => ({}))
+          // 🔴 서버 발급은 Supabase **Admin API** 를 탄다. 그 관문이 죽으면 계정 발급이
+          //    통째로 막혀 학원이 선다 (2026-08-21: Supabase 인시던트로 실제로 막혔다).
+          //    anon 키의 일반 signUp 은 다른 경로라 그때도 살아 있는 경우가 많다 → 우회한다.
+          //    ⚠️ 비밀번호 재설정(reset)은 관리자 권한이 필요해 우회가 불가능하다.
+          if (reset) { setErr(e.error || '재설정 실패'); setBusy(false); return }
+          const fb = await signUpAccountClient(teacherEmailOf(id), pw)
+          if (!fb.ok) { setErr(`${e.error || '계정 생성 실패'} · 우회 발급도 실패: ${fb.text}`); setBusy(false); return }
+          if (fb.needConfirm) { setErr('계정은 만들어졌지만 이메일 확인이 켜져 있어 바로 로그인할 수 없어요. Supabase 설정에서 Confirm email 을 꺼 주세요.'); setBusy(false); return }
+        }
       }
       setDone({ email: teacherEmailOf(id) })
       setBusy(false)

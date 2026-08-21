@@ -8,7 +8,7 @@ import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder } 
 import { typeUnitName } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
-import BatchPrint, { vocaSheetFor, type Sheet } from '../components/daily/BatchPrint'
+import BatchPrint, { vocaAnswerFor, vocaSheetFor, type Sheet } from '../components/daily/BatchPrint'
 
 // ── 📤 오늘 기본과제 — 반/전체 학생에게 3세트를 한 번에 내보낸다 ────────────────
 //
@@ -244,10 +244,29 @@ export default function DailySet() {
   async function openBatch() {
     setBusy('인쇄본 준비 중…')
     const list: Sheet[] = []
+    // ① 학생별 문제지
     for (const m of made) list.push({ kind: '문제', student: m.student, subject: m.subject, problems: m.problems })
-    for (const st of [...new Map(made.map(m => [m.student.id, m.student])).values()]) {
+    // ② 학생별 단어시험지
+    const stus = [...new Map(made.map(m => [m.student.id, m.student])).values()]
+    for (const st of stus) {
       const v = await vocaSheetFor(st, vocaDay)
       if (v) list.push(v)
+    }
+    // 🔴 ③ 정답·해설은 **학년·과목당 한 벌**. buildByTypeRound 에 학생 인자가 없어
+    //    같은 학년·과목이면 문항이 완전히 같다 — 학생 수만큼 찍으면 20배로 불어난다.
+    const keyOf = (m: Made) => `${gradeKey(m.student.grade)}|${m.subject}`
+    const uniq = new Map<string, Made>()
+    for (const m of made) if (!uniq.has(keyOf(m))) uniq.set(keyOf(m), m)
+    for (const [k, m] of uniq) {
+      const label = `${k.split('|')[0]} ${m.subject}`
+      list.push({ kind: '정답', label, problems: m.problems })
+      list.push({ kind: '해설', label, problems: m.problems })
+    }
+    // ④ 단어시험 정답 — 쓰는 책마다 한 벌 (중등필수·고교기본·수능)
+    const seen = new Set<string>()
+    for (const st of stus) {
+      const a = await vocaAnswerFor(st.grade, vocaDay)
+      if (a && a.kind === '단어정답' && !seen.has(a.label)) { seen.add(a.label); list.push(a) }
     }
     setSheets(list); setBusy('')
   }
