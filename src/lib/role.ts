@@ -58,3 +58,21 @@ export function setLocalStudentId(id: string): void {
 export function clearLocalStudentId(): void {
   localStorage.removeItem(LOCAL_KEY)
 }
+
+/**
+ * 로그인 이메일로 강사 기록을 찾는다.
+ *
+ * 🔴 두 가지 형태를 **둘 다** 받아야 한다 (2026-08-21):
+ *   ① 원장이 발급한 아이디 계정  t-<loginId>@teacher.gsg.app
+ *   ② 강사가 본인 이메일로 직접 가입한 계정 → Teacher.loginEmail 에 적어 둔 값
+ * ②를 빠뜨리면 그 강사가 올린 보고·요청이 전부 익명이 되어 누가 했는지 알 수 없다.
+ */
+export function teacherByEmail<T extends { loginId?: string; loginEmail?: string }>(
+  list: T[], email: string | null | undefined,
+): T | undefined {
+  const e = (email ?? '').trim().toLowerCase()
+  if (!e) return undefined
+  return list.find(t =>
+    (t.loginId && teacherEmailOf(t.loginId) === e) ||
+    (t.loginEmail && t.loginEmail.trim().toLowerCase() === e))
+}

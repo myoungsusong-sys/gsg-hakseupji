@@ -7,7 +7,7 @@ import { brandFor, DEFAULT_ACADEMY } from '../lib/brand'
 import { useChangelog, UpdateBanner, UpdateLogModal } from './UpdateLog'
 import FixItButton from './FixItButton'
 import { useAuth } from '../lib/auth'
-import { teacherEmailOf } from '../lib/role'
+import { teacherByEmail } from '../lib/role'
 import { BrandLogo } from './BrandMark'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
 import AdminChat from './AdminChat'
@@ -150,7 +150,7 @@ export default function Layout() {
   //    선생님 보고가 전원 익명이었다 — 누가 부탁했는지 모르면 되물을 수도, 자동 처리할 수도 없다.
   //    강사 계정은 t-<loginId>@teacher.gsg.app 규약이라 teachers 에서 이름을 찾고,
   //    원장 계정은 실제 이메일이라 teachers 에 없다 → 이메일을 그대로 쓴다.
-  const meTeacher = teachers.find(t => t.loginId && teacherEmailOf(t.loginId) === (email ?? '').toLowerCase())
+  const meTeacher = teacherByEmail(teachers, email)
 
   // 세션 중 새 알림 도착 시 우하단 토스트 "새로운 알림 N건이 있어요"
   const [toast, setToast] = useState(0)

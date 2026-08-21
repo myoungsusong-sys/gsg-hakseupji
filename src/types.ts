@@ -188,7 +188,12 @@ export interface Teacher {
   phone?: string
   subjects?: string[]        // 담당 과목
   classes?: string[]         // 담당 반 이름
-  loginId?: string           // 강사 계정 아이디
+  loginId?: string           // 강사 계정 아이디 (t-<loginId>@teacher.gsg.app 규약)
+  // 🔴 강사가 **본인 이메일로 직접 가입**한 경우의 로그인 이메일 (2026-08-21).
+  //    관리자 API 가 막혀 아이디 발급이 안 될 때 강사가 스스로 가입하는 길을 텄는데,
+  //    그러면 계정 이메일이 규약(t-…@teacher.gsg.app)과 달라 **앱이 누군지 모른다.**
+  //    보고서 작성자·요청자 이름이 전부 익명이 된다 → 여기에 적어 두고 매칭한다.
+  loginEmail?: string
   accountCreated?: boolean   // Supabase 계정 발급됨
   active: boolean
   memo?: string

@@ -2097,6 +2097,7 @@ function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
   const [subjects, setSubjects] = useState<Set<string>>(new Set(teacher?.subjects ?? []))
   const [classes, setClasses] = useState<Set<string>>(new Set(teacher?.classes ?? []))
   const [memo, setMemo] = useState(teacher?.memo ?? '')
+  const [loginEmail, setLoginEmail] = useState(teacher?.loginEmail ?? '')
   const toggle = (set: React.Dispatch<React.SetStateAction<Set<string>>>, v: string) =>
     set(prev => { const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n })
 
@@ -2123,11 +2124,22 @@ function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
                 ))}
               </div>}
         </Field>
+        {/* 🔴 강사가 **본인 이메일로 직접 가입**한 경우 여기에 그 이메일을 적어야
+            앱이 「누가 올린 보고·요청인지」를 안다. 안 적으면 전부 익명이 된다. */}
+        <Field label="로그인 이메일">
+          <input value={loginEmail} onChange={e => setLoginEmail(e.target.value)} className={INPUT}
+            type="email" autoCapitalize="off" autoCorrect="off" spellCheck={false}
+            placeholder="강사가 직접 가입했다면 그 이메일 (예: parksw@gmail.com)" />
+          <p className="mt-1 text-xs text-ink2">
+            아래 <b>[계정 만들기]</b>로 아이디를 발급했다면 <b>비워 두세요</b> — 아이디로 알아봅니다.
+            강사가 로그인 화면에서 <b>본인 이메일로 가입</b>했다면 그 주소를 적어 주세요.
+          </p>
+        </Field>
         <Field label="메모"><input value={memo} onChange={e => setMemo(e.target.value)} className={INPUT} placeholder="선택" /></Field>
       </div>
       <div className="mt-5 flex justify-end gap-2">
         <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:bg-paper2">취소</button>
-        <button onClick={() => { if (!name.trim()) { alert('이름을 입력하세요.'); return } onSave({ name: name.trim(), phone: phone.trim() || undefined, subjects: [...subjects], classes: [...classes], memo: memo.trim() || undefined, loginId: teacher?.loginId, accountCreated: teacher?.accountCreated }) }}
+        <button onClick={() => { if (!name.trim()) { alert('이름을 입력하세요.'); return } onSave({ name: name.trim(), phone: phone.trim() || undefined, subjects: [...subjects], classes: [...classes], memo: memo.trim() || undefined, loginEmail: loginEmail.trim().toLowerCase() || undefined, loginId: teacher?.loginId, accountCreated: teacher?.accountCreated }) }}
           className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">저장</button>
       </div>
     </Modal>
