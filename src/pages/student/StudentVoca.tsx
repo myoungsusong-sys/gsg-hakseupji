@@ -72,7 +72,7 @@ export default function StudentVoca() {
   function save(final: Row[]) {
     // addWorkbook 은 id 를 스스로 만들어 돌려준다
     const wbId = book?.id ?? addWorkbook({
-      name: book0.name, publisher: book0.key === 'high' ? '비상교육' : '쎄듀',
+      name: book0.name, publisher: '쎄듀',
       grade: me.grade, studentId: me.id })
     const results: GradeResult[] = final.map((r, i) => ({
       itemId: `voca-${day}-${i}`,

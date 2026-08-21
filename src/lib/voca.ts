@@ -27,21 +27,43 @@ export async function loadVoca(file = 'voca-cheonilmun-mid.json'): Promise<Recor
 }
 
 export const VOCA_BOOK = '천일문VOCA 중등필수'
-export const VOCA_BOOK_HIGH = '완자 VOCA PICK 고등필수'
 
-// 🔴 학년마다 단어장이 다르다 (명수쌤 2026-08-21: "학생이 학년이 다 다른 거 알지?").
-//    고등학생에게 중등필수를 내면 시험이 되지 않는다.
-//    명수쌤은 **능률VOCA 수능필수**를 고르셨는데, 이 맥에는 그 책의 MP3 180개만 있고
-//    단어 목록 파일이 없다(02_영어/능률영단어/). 음성에서 철자를 받아쓰면 정답이 틀어지므로
-//    쓰지 않는다 — 어휘리스트(엑셀·PDF)를 받으면 이 표만 바꾸면 된다.
+// ── 🎓 학년별 단어장 ──────────────────────────────────────────────────────
+//
+// 🔴 명수쌤(2026-08-21): "학생이 학년이 다 다른 거 알지?" · "02_영어 여기에 파일있어"
+//    → 학원 정본 단어장이 `02_영어/대치스파르타(영어단어)/` 에 통째로 있었다.
+//      처음에 못 찾은 것은 **한글 파일명이 NFD 라 find 가 못 걸었기 때문**이다
+//      (드라이브 한글 이름의 99%가 NFD. 찾을 때는 `00_도구/찾기.py` 를 쓸 것).
+//
+//    쎄듀 사다리를 그대로 따른다 — 책 이름이 곧 대상 학년이다.
+//      중1~중3  천일문 VOCA 중등필수   1,000단어 · 40일치
+//      고1      어휘끝 고교기본        1,260단어 · 51일치
+//      고2~고3  어휘끝 수능           1,855단어 · 75일치
+//
+//    ※ 명수쌤이 처음 고르신 **능률VOCA 수능필수**는 이 맥에 MP3 180개뿐이고 단어 목록이
+//      없다(드라이브 전체를 NFD 안전 검색으로 재확인). 음성에서 철자를 받아쓰면 정답이
+//      틀어지므로 쓰지 않았다. 어휘리스트를 받으면 아래 표만 바꾸면 된다.
+//    ※ 어휘끝 블랙(고난도)은 엑셀 서식이 달라(열 순서 뒤바뀜) 아직 안 넣었다.
+import { gradeKey } from './grade'
+
 export interface VocaBook { key: string; name: string; file: string }
-const MID: VocaBook = { key: 'mid', name: VOCA_BOOK, file: 'voca-cheonilmun-mid.json' }
-const HIGH: VocaBook = { key: 'high', name: VOCA_BOOK_HIGH, file: 'voca-wanja-high.json' }
 
-/** 학년으로 단어장을 고른다 — '고'로 시작하면 고등, 그 밖에는 중등. */
+const MID: VocaBook = { key: 'mid', name: VOCA_BOOK, file: 'voca-cheonilmun-mid.json' }
+const GOGYO: VocaBook = { key: 'gogyo', name: '어휘끝 고교기본', file: 'voca-eohwikkeut-gogyo.json' }
+const SUNEUNG: VocaBook = { key: 'suneung', name: '어휘끝 수능', file: 'voca-eohwikkeut-suneung.json' }
+
+export const VOCA_BOOK_HIGH = SUNEUNG.name
+
+/** 학년으로 단어장을 고른다. 고1은 고교기본, 고2·고3은 수능, 그 밖에는 중등필수. */
 export function vocaBookOf(grade: string): VocaBook {
-  return /^고/.test((grade ?? '').trim()) ? HIGH : MID
+  // 🔴 gradeKey 를 거쳐야 '고1-2'·'공통수학2'·'대수' 로 저장된 고등학생이 중등 단어장으로
+  //    떨어지지 않는다 (실측 2026-08-21: 거치지 않으면 그렇게 떨어졌다).
+  const gk = gradeKey(grade)
+  if (gk === '고1') return GOGYO
+  if (gk.startsWith('고')) return SUNEUNG
+  return MID
 }
+
 
 /** 채점용 정규화 — 대소문자·양끝 공백·연속 공백·마침표만 맞춘다(철자는 그대로 본다). */
 export function normWord(s: string): string {
