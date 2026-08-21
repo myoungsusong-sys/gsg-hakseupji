@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { WorksheetGrade } from './WorksheetPanel'
@@ -31,11 +32,14 @@ export default function DailyGradeBar() {
   const [fold, setFold] = useState(false)
   const today = todayKey()
 
-  const rows = useMemo(() => {
+  const { rows, diag } = useMemo(() => {
     // 오늘 만든 기본과제 학습지 (DailySet 이 tags 에 '기본과제' 를 넣는다)
-    const daily = worksheets.filter(w =>
-      !w.deletedAt && (w.tags ?? []).includes('기본과제') && dateKey(w.createdAt) === today)
-    if (!daily.length) return []
+    const tagged = worksheets.filter(w => !w.deletedAt && (w.tags ?? []).includes('기본과제'))
+    const daily = tagged.filter(w => dateKey(w.createdAt) === today)
+    // 🔴 왜 안 뜨는지 화면이 스스로 말하게 하려고 센다. 조용히 사라지면 선생님은
+    //    「고장났다」고만 알고, 원인(오늘 안 만듦·배정 없음)을 알 길이 없다.
+    const diag = { tagged: tagged.length, today: daily.length, assigned: 0 }
+    if (!daily.length) return { rows: [], diag }
 
     const wsById = new Map(daily.map(w => [w.id, w]))
     const stById = new Map(students.map(s => [s.id, s]))
@@ -61,16 +65,17 @@ export default function DailyGradeBar() {
         wrong: marked.filter(r => !r.correct && !r.careless).length,
       }
       const cur = by.get(st.id) ?? { st, cells: [] }
-      if (!cur.cells.some(c => c.ws.id === ws.id)) cur.cells.push(cell)
+      if (!cur.cells.some(c => c.ws.id === ws.id)) { cur.cells.push(cell); diag.assigned++ }
       by.set(st.id, cur)
     }
     // 수학 → 과학 차례로 (Worksheet.subject 는 선택 필드라 빈 값을 뒤로 보낸다)
     for (const v of by.values()) v.cells.sort((a, b) => (a.ws.subject ?? 'zz').localeCompare(b.ws.subject ?? 'zz'))
     // 안 끝난 사람 먼저 — 선생님이 위에서부터 훑으면 된다
-    return [...by.values()].sort((a, b) => {
+    const list = [...by.values()].sort((a, b) => {
       const left = (x: typeof a) => x.cells.reduce((s, c) => s + (c.total - c.done), 0)
       return left(b) - left(a) || a.st.name.localeCompare(b.st.name)
     })
+    return { rows: list, diag }
   }, [worksheets, assignments, gradings, students, today])
 
   if (open) {
@@ -83,7 +88,21 @@ export default function DailyGradeBar() {
     )
   }
 
-  if (!rows.length) return null
+  // 🔴 조용히 사라지지 않는다 — 왜 없는지 말한다.
+  if (!rows.length) {
+    const why = diag.today === 0
+      ? diag.tagged === 0
+        ? '아직 기본과제를 만든 적이 없습니다.'
+        : `오늘 만든 기본과제가 없습니다. (지난 것 ${diag.tagged}장은 있습니다)`
+      : `오늘 기본과제 ${diag.today}장은 있는데 **학생에게 배정된 것이 없습니다.**`
+    return (
+      <div className="mb-4 rounded-2xl border border-dashed border-line bg-white/60 px-4 py-3 text-sm">
+        <b className="text-ink2">✏️ 오늘 기본과제 채점</b>
+        <span className="ml-2 text-ink2">— {why}</span>
+        <Link to="/daily" className="ml-2 font-bold text-pine underline">기본과제에서 만들기</Link>
+      </div>
+    )
+  }
 
   const left = rows.reduce((s, r) => s + r.cells.reduce((t, c) => t + (c.total - c.done), 0), 0)
   const all = rows.reduce((s, r) => s + r.cells.reduce((t, c) => t + c.total, 0), 0)
