@@ -14,6 +14,7 @@ import StudentWorksheets from './pages/student/StudentWorksheets'
 import StudentSolve from './pages/student/StudentSolve'
 import StudentResult from './pages/student/StudentResult'
 import StudentWorkbooks from './pages/student/StudentWorkbooks'
+import StudentVoca from './pages/student/StudentVoca'
 import StudentChallenge from './pages/student/StudentChallenge'
 import StudentLectures from './pages/student/StudentLectures'
 import Layout from './components/Layout'
@@ -118,6 +119,7 @@ function Gate() {
             <Route path="solve/:wsId" element={<StudentSolve />} />
             <Route path="result/:wsId" element={<StudentResult />} />
             <Route path="workbooks" element={<StudentWorkbooks />} />
+            <Route path="voca" element={<StudentVoca />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
             {/* 학생용 학습지 PDF — 선생님 화면을 열어 주지 않으려고 전용 경로를 둔다 */}

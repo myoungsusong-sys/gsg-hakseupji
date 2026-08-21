@@ -121,6 +121,7 @@ export default function StudentShell() {
               <NavLink to="/student" end className={tab}>학습 홈</NavLink>
               <NavLink to="/student/challenge" className={tab}>챌린지</NavLink>
               <NavLink to="/student/workbooks" className={tab}>교재</NavLink>
+              <NavLink to="/student/voca" className={tab}>영단어</NavLink>
               <NavLink to="/student/worksheets" className={tab}>학습지</NavLink>
               <NavLink to="/student/lectures" className={tab}>강의</NavLink>
             </nav>
