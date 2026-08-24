@@ -33,6 +33,7 @@ interface Persisted {
   dailyNotes: DailyNote[]
   assignments: Assignment[]
   dailyConfigs: Record<string, DailyConfig>
+  dailyBooks: Record<string, string>
   studentAppConfig: StudentAppConfig
   klassOrder: string[]
   academyProfile: AcademyProfile
@@ -54,7 +55,7 @@ const EMPTY: Persisted = {
   customProblems: [], worksheets: [], favorites: [], myLists: [],
   diffMatrix: DEFAULT_DIFF_MATRIX,
   workbooks: [], wbItems: [], students: [], gradings: [], dailyNotes: [],
-  assignments: [], dailyConfigs: {},
+  assignments: [], dailyConfigs: {}, dailyBooks: {},
   studentAppConfig: DEFAULT_STUDENT_APP_CONFIG,
   klassOrder: [],
   academyProfile: {},
@@ -124,6 +125,8 @@ interface Store extends Persisted {
   syncAssignments: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam']) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
+  // 기본과제 학생별 수학 과정 지정 — 학년표와 진도가 다른 학생용(빈 문자열이면 학년 규칙)
+  setDailyBook: (studentId: string, courseId: string) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
   // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
@@ -203,6 +206,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     dailyNotes: keep('dailyNotes', r.dailyNotes, f.dailyNotes),
     assignments: keep('assignments', r.assignments ?? [], f.settings),
     dailyConfigs: keep('dailyConfigs', r.dailyConfigs ?? {}, f.settings),
+    dailyBooks: keep('dailyBooks', r.dailyBooks ?? {}, f.settings),
     studentAppConfig: keep('studentAppConfig', { ...DEFAULT_STUDENT_APP_CONFIG, ...(r.studentAppConfig ?? {}) }, f.settings),
     klassOrder: keep('klassOrder', r.klassOrder ?? [], f.settings),
     academyProfile: keep('academyProfile', r.academyProfile ?? {}, f.settings),
@@ -248,7 +252,7 @@ function toCloud(s: Persisted): CloudData {
     customProblems: s.customProblems, worksheets: s.worksheets, myLists: s.myLists,
     workbooks: s.workbooks, wbItems: s.wbItems, students: s.students, gradings: s.gradings,
     dailyNotes: s.dailyNotes, favorites: s.favorites, diffMatrix: s.diffMatrix,
-    assignments: s.assignments, dailyConfigs: s.dailyConfigs,
+    assignments: s.assignments, dailyConfigs: s.dailyConfigs, dailyBooks: s.dailyBooks,
     studentAppConfig: s.studentAppConfig,
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
@@ -619,6 +623,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setDailyConfig: (studentId, cfg) => {
       const next = { ...stateRef.current.dailyConfigs, [studentId]: cfg }
       set(s => ({ ...s, dailyConfigs: next })); cloud.setSetting('dailyConfigs', next)
+    },
+    setDailyBook: (studentId, courseId) => {
+      // 🔴 학년표(RAIL)가 안 맞는 학생이 있다 (2026-08-24 명수쌤: "유정무는 대수야,
+      //    원현정은 미적분1이고"). 학년으로 정한 교재를 학생 단위로 덮어쓴다.
+      //    빈 문자열이면 지정을 지우고 학년 규칙으로 돌아간다.
+      const next = { ...stateRef.current.dailyBooks }
+      if (courseId) next[studentId] = courseId; else delete next[studentId]
+      set(s => ({ ...s, dailyBooks: next })); cloud.setSetting('dailyBooks', next)
     },
     setStudentAppConfig: cfg => {
       set(s => ({ ...s, studentAppConfig: cfg })); cloud.setSetting('studentAppConfig', cfg)

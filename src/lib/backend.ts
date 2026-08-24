@@ -33,6 +33,7 @@ export interface CloudData {
   diffMatrix: DiffMatrix | null
   assignments: Assignment[]                    // 학습지 출제 (settings 'assignments')
   dailyConfigs: Record<string, DailyConfig>    // 오늘의 학습 설정 (settings 'dailyConfigs', 키=studentId)
+  dailyBooks: Record<string, string>           // 기본과제 학생별 수학 과정 지정 (settings 'dailyBooks', 키=studentId → 과정 id)
   studentAppConfig: StudentAppConfig | null    // 학생앱 공개 설정 (settings 'studentAppConfig')
   klassOrder: string[]                         // 반 표시 순서 (settings 'klassOrder')
   academyProfile: AcademyProfile | null        // 마이페이지 내 정보 (settings 'academyProfile')
@@ -125,6 +126,7 @@ export async function loadAll(): Promise<(CloudData & { __failed: LoadFail }) | 
     diffMatrix: (settingsMap.get('diffMatrix') as DiffMatrix) ?? null,
     assignments: (settingsMap.get('assignments') as Assignment[]) ?? [],
     dailyConfigs: (settingsMap.get('dailyConfigs') as Record<string, DailyConfig>) ?? {},
+    dailyBooks: (settingsMap.get('dailyBooks') as Record<string, string>) ?? {},
     studentAppConfig: (settingsMap.get('studentAppConfig') as StudentAppConfig) ?? null,
     klassOrder: (settingsMap.get('klassOrder') as string[]) ?? [],
     academyProfile: (settingsMap.get('academyProfile') as AcademyProfile) ?? null,
@@ -208,6 +210,7 @@ export const cloud = {
       local.diffMatrix ? this.setSetting('diffMatrix', local.diffMatrix) : Promise.resolve(),
       local.assignments.length ? this.setSetting('assignments', local.assignments) : Promise.resolve(),
       Object.keys(local.dailyConfigs).length ? this.setSetting('dailyConfigs', local.dailyConfigs) : Promise.resolve(),
+      Object.keys(local.dailyBooks).length ? this.setSetting('dailyBooks', local.dailyBooks) : Promise.resolve(),
       local.studentAppConfig ? this.setSetting('studentAppConfig', local.studentAppConfig) : Promise.resolve(),
       local.klassOrder.length ? this.setSetting('klassOrder', local.klassOrder) : Promise.resolve(),
       local.academyProfile ? this.setSetting('academyProfile', local.academyProfile) : Promise.resolve(),

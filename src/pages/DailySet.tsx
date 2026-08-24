@@ -38,9 +38,28 @@ type Rail = [string, string, string]
 //    1·2·3회차 모두 낼 수 있다. 쎈으로 돌아갈 이유가 없다.
 const MI1: Rail = ['h-calc1', 'h-mi1', '마플시너지 미적분Ⅰ']
 
+// ── 학생별 수학 교재 후보 ────────────────────────────────────────────
+// 🔴 학년표(RAIL)가 안 맞는 학생이 있다 (2026-08-24 명수쌤: "유정무는 대수야,
+//    원현정은 미적분1이고"). 유정무는 고1로 등록돼 있지만 대수를 하고 있고,
+//    원현정은 고2지만 미적분Ⅰ이다. 학년으로 정한 책을 **학생 단위로 덮어쓴다.**
+//    (전에는 「고2 과목」 토글 하나뿐이라 고2 전원이 같이 움직였고, 고1 학생은
+//     아예 바꿀 방법이 없었다.)
+// 매칭표에 마플시너지가 있는 고등 4권 + 중등 진도용 3권. 값은 문제은행 과정 id.
+const BOOK_CHOICES: { course: string; rail: Rail; label: string }[] = [
+  { course: 'h-cm1', rail: ['h-cm1', 'h-cm1', '마플시너지 공통수학1'], label: '마플시너지 공통수학1' },
+  { course: 'h-cm2', rail: ['h-cm2', 'h-cm2', '마플시너지 공통수학2'], label: '마플시너지 공통수학2' },
+  { course: 'h-alg', rail: ['h-alg', 'h-dae', '마플시너지 대수'], label: '마플시너지 대수' },
+  { course: 'h-calc1', rail: MI1, label: '마플시너지 미적분Ⅰ' },
+  { course: 'm1-2', rail: ['m1-2', 'm1-2', '수학의 바이블 유형ON 중등수학1(하)'], label: '바이블 유형ON 중1(하)' },
+  { course: 'm2-2', rail: ['m2-2', 'm2-2', '쎈 중등수학2(하)'], label: '쎈 중등수학2(하)' },
+  { course: 'm3-2', rail: ['m3-2', 'm3-2', '쎈 중등수학3(하)'], label: '쎈 중등수학3(하)' },
+]
+const bookRailOf = (course: string): Rail | undefined =>
+  BOOK_CHOICES.find(b => b.course === course)?.rail
+
 export default function DailySet() {
   const {
-    students, problems, saveWorksheet, addAssignment, ensureCourse,
+    students, problems, saveWorksheet, addAssignment, ensureCourse, dailyBooks, setDailyBook,
   } = useStore()
   const brand = useBrand()
   const day = todayKey()
@@ -107,7 +126,11 @@ export default function DailySet() {
       const gk = gradeKey(s.grade)
       const key = gk || `?${s.grade || '(학년 없음)'}`
       const cur = m.get(key) ?? { gk, raw: s.grade || '(학년 없음)', names: [] }
-      cur.names.push(s.name)
+      // 학생별 교재를 따로 지정했으면 이름 옆에 그 책을 적는다 — 학년 줄만 보고
+      // 「이 학년은 다 같은 책」이라고 오해하지 않게.
+      const pick = dailyBooks[s.id]
+      const picked = pick ? BOOK_CHOICES.find(b => b.course === pick)?.label : ''
+      cur.names.push(picked ? `${s.name}(${picked})` : s.name)
       m.set(key, cur)
     }
     return [...m.values()]
@@ -117,7 +140,16 @@ export default function DailySet() {
         return { ...v, math, sci: rail?.sci?.[2], ok: !!rail }
       })
       .sort((a, b) => (a.ok === b.ok ? GRADE_SORT(a.gk) - GRADE_SORT(b.gk) : a.ok ? -1 : 1))
-  }, [targets, hi2])
+  }, [targets, hi2, dailyBooks])
+
+  // 그 학생의 수학 교재 — **학생별 지정이 있으면 그것**, 없으면 학년 규칙(고2는 토글)
+  function mathRailOf(s: Student): Rail | undefined {
+    const pick = dailyBooks[s.id]
+    if (pick) return bookRailOf(pick)
+    const gk = gradeKey(s.grade)
+    const rail = RAIL[gk]
+    return gk === '고2' && hi2 === '미적분' ? MI1 : rail?.math
+  }
 
   // 대상 학생들이 쓰는 과정 목록 — [과정키, [과정키, 교재명, 화면라벨]]
   function railsOf(list: Student[]) {
@@ -126,8 +158,8 @@ export default function DailySet() {
       const gk = gradeKey(s.grade)          // 🔴 '중2-2'·'공통수학2' 도 여기서 학년 키가 된다
       const rail = RAIL[gk]
       if (!rail) continue
-      const mm = gk === '고2' && hi2 === '미적분' ? MI1 : rail.math
-      if (mm) need.set(mm[0], { rail: mm, label: `${gk} 수학` })
+      const mm = mathRailOf(s)
+      if (mm) need.set(mm[0], { rail: mm, label: `${mm[2]}` })
       if (rail.sci) need.set(rail.sci[0], { rail: rail.sci, label: `${gk} 과학` })
     }
     return need
@@ -204,7 +236,7 @@ export default function DailySet() {
       }
       setBusy(`${s.name} 학생 만드는 중…`)
       const plan: [string, Rail | undefined][] = [
-        ['수학', gk === '고2' && hi2 === '미적분' ? MI1 : rail.math],
+        ['수학', mathRailOf(s)],
         ['과학', rail.sci],
       ]
       for (const [subject, entry] of plan) {
@@ -348,6 +380,36 @@ export default function DailySet() {
               </div>
             ))}
           </div>
+        )}
+
+        {/* 학생별 교재 지정 — 학년표가 안 맞는 학생을 여기서 바로잡는다 */}
+        {targets.length > 0 && (
+          <details className="rounded-xl bg-paper2/60 p-3" open={Object.keys(dailyBooks).length > 0}>
+            <summary className="cursor-pointer text-sm font-bold">
+              학생별 교재 지정{' '}
+              <span className="font-normal text-ink2">
+                — 학년과 진도가 다른 학생만 바꾸세요 (안 바꾸면 위 학년 규칙대로)
+              </span>
+            </summary>
+            <div className="mt-2 grid gap-1.5 sm:grid-cols-2">
+              {targets.map(st => {
+                const gk = gradeKey(st.grade)
+                const def = (gk === '고2' && hi2 === '미적분' ? MI1 : RAIL[gk]?.math)?.[2]
+                return (
+                  <label key={st.id} className="flex items-center gap-2 rounded-lg bg-white px-2.5 py-1.5 text-xs">
+                    <b className="w-16 shrink-0 truncate">{st.name}</b>
+                    <span className="w-8 shrink-0 text-ink2">{gk || st.grade}</span>
+                    <select value={dailyBooks[st.id] ?? ''}
+                      onChange={e => setDailyBook(st.id, e.target.value)}
+                      className="grow rounded-lg border border-line px-2 py-1 font-semibold">
+                      <option value="">학년 규칙 — {def ?? '대상 아님'}</option>
+                      {BOOK_CHOICES.map(b => <option key={b.course} value={b.course}>{b.label}</option>)}
+                    </select>
+                  </label>
+                )
+              })}
+            </div>
+          </details>
         )}
 
         {/* 🔴 진도 범위 = 단원. "4단원이면 1,2단원" — 선생님이 쓰는 단위로 고른다 */}
