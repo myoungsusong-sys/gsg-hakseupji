@@ -260,10 +260,14 @@ export default function DailySet() {
           author: brand, grade: gk, subject: subject as '수학' | '과학',
           tags: ['오늘의 학습', '기본과제'], theme: subject === '수학' ? 'amber' : 'pine',
           problemIds: picks.map((p: Problem) => p.id), conceptIds: [],
-          // 🔴 자동채점을 끈다 (명수쌤 2026-08-21: "이건 선생님이 직접 채점을 하시는 게 좋을 것 같애").
-          //    켜 두면 학생이 제출하는 순간 앱이 O/X 를 확정해 버려서, 선생님이 종이를 보고
-          //    매기는 채점과 어긋난다. 채점은 「오늘 교실 > 기본과제 채점」에서 선생님이 한다.
-          options: { ...DEFAULT_SHEET_OPTIONS, autoGrade: false },
+          // 🔴 자동채점을 켠다 (명수쌤 2026-08-24: "학생이 답을 입력하면 자동 채점되게 해주고,
+          //    고친 후 박성우 선생님한테 가지고 가면 선생님이 설명을 할 수 있게 해줘").
+          //    08-21 에는 선생님이 직접 채점하기로 해서 꺼 뒀는데, 그러면 학생이 자기가 뭘
+          //    틀렸는지 그 자리에서 모른다. 이제 학생이 앱에서 답을 넣으면 즉시 O/X 가 뜨고,
+          //    틀린 것을 고쳐 본 뒤 선생님께 들고 간다.
+          //    ※ 선생님 화면은 그대로다 — 「오늘 교실 > 기본과제 채점」줄에 채점 결과가
+          //      채워진 채로 뜨고, 열면 문제·정답·해설이 다 보여 설명할 수 있다.
+          options: { ...DEFAULT_SHEET_OPTIONS, autoGrade: true },
           listIds: [], createdAt: new Date().toISOString(), deletedAt: null,
         })
         addAssignment(id, [s.id], '수업')

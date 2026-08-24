@@ -46,11 +46,13 @@ export const VOCA_BOOK = '천일문VOCA 중등필수'
 //    ※ 어휘끝 블랙(고난도)은 엑셀 서식이 달라(열 순서 뒤바뀜) 아직 안 넣었다.
 import { gradeKey } from './grade'
 
-export interface VocaBook { key: string; name: string; file: string }
+// days = 그 책의 DAY 수. 학생 홈이 **단어 파일을 받지 않고도** 오늘 볼 DAY를 계산하려고 둔다
+//   (홈에서 1~2MB 짜리 단어장을 받게 하면 첫 화면이 느려진다).
+export interface VocaBook { key: string; name: string; file: string; days: number }
 
-const MID: VocaBook = { key: 'mid', name: VOCA_BOOK, file: 'voca-cheonilmun-mid.json' }
-const GOGYO: VocaBook = { key: 'gogyo', name: '어휘끝 고교기본', file: 'voca-eohwikkeut-gogyo.json' }
-const SUNEUNG: VocaBook = { key: 'suneung', name: '어휘끝 수능', file: 'voca-eohwikkeut-suneung.json' }
+const MID: VocaBook = { key: 'mid', name: VOCA_BOOK, file: 'voca-cheonilmun-mid.json', days: 40 }
+const GOGYO: VocaBook = { key: 'gogyo', name: '어휘끝 고교기본', file: 'voca-eohwikkeut-gogyo.json', days: 51 }
+const SUNEUNG: VocaBook = { key: 'suneung', name: '어휘끝 수능', file: 'voca-eohwikkeut-suneung.json', days: 75 }
 
 export const VOCA_BOOK_HIGH = SUNEUNG.name
 
