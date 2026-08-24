@@ -2902,6 +2902,27 @@ export function typeUnitName(typeId: string): string {
   return x ? `${x.u.name} · ${x.m.name}` : ''
 }
 
+// 유형이 속한 **대단원 이름** — 트리에서 못 찾으면 유형 id 규칙으로 되찾는다.
+//
+// 🔴 왜 필요한가 (2026-08-24 실측): 기본과제 화면의 「진도 범위(단원)」에 중2 과학·고1 과학만
+//    통째로 안 떴다. 그 두 과정(m-sci2-2·h-int2)은 커리큘럼을 buildReal() 로 만들어
+//    **유형 id 가 개념 id**(예: '131')인데, 교재 매칭표와 문제은행은 build() 규칙 id
+//    (`<과정>-u{대}m{중}s{소}t{유형}`)를 쓴다. 그래서 typeUnitName() 이 빈 문자열을 돌려주고
+//    단원 목록이 0개가 됐다 → 그 학년 과학은 **범위를 고를 수 없어 책 맨 앞부터** 나갔다.
+//    (중3 과학은 build() 라 멀쩡했다 — 그래서 한쪽만 비어 보였다.)
+//
+//    id 규칙의 대단원 번호는 과정 트리의 대단원 순서와 같다(m-sci2-2 4단원·h-int2 3단원,
+//    양쪽 개수·순서 일치 실측). 그래서 번호로 이름을 찾아오면 정확하다.
+export function bigUnitNameOfType(typeId: string): string {
+  const viaTree = typeUnitName(typeId).split(' · ')[0]
+  if (viaTree) return viaTree
+  const m = /^(.+)-u(\d+)m\d+s\d+t\d+$/.exec(typeId)
+  if (!m) return ''
+  // curriculumFor 는 못 찾으면 중1-1 을 돌려주므로 여기선 쓰지 않는다(엉뚱한 단원명이 박힌다)
+  const cur = CURRICULA.find(c => c.id === m[1])
+  return cur?.units[Number(m[2])]?.name ?? ''
+}
+
 // 유형이 속한 과정의 학년 표기 — 중·초는 '중2-1'식, 고등은 과목명('미적분Ⅰ' 등)
 export function courseTagOfType(typeId: string): string {
   const x = eachType().find(y => y.t.id === typeId)

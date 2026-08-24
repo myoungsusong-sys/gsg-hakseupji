@@ -5,7 +5,7 @@ import { useBrand } from '../lib/brand'
 import { todayKey } from '../lib/dates'
 import { loadWbMatch } from '../data/wbMatch'
 import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder } from '../lib/daily'
-import { typeUnitName } from '../data/curriculum'
+import { bigUnitNameOfType } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
 import BatchPrint, { vocaAnswerFor, vocaSheetFor, type Sheet } from '../components/daily/BatchPrint'
@@ -133,8 +133,9 @@ export default function DailySet() {
     return need
   }
 
-  // typeUnitName 은 "대단원 · 중단원" 을 준다 — 대단원만 쓴다
-  const bigUnitOf = (t: string) => (typeUnitName(t) || '').split(' · ')[0] || ''
+  // 유형 → 대단원 이름. 교육과정 트리에 없으면 유형 id 규칙으로 되찾는다
+  // (중2 과학·고1 과학이 이것 때문에 단원 목록에 아예 안 떴다 — curriculum.ts 주석 참고)
+  const bigUnitOf = (t: string) => bigUnitNameOfType(t)
 
   // 대상 학생의 과정들을 읽어 단원 목록을 화면에 띄운다(단원을 골라야 범위를 정할 수 있다)
   async function loadUnits() {
