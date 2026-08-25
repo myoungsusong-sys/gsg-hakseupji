@@ -316,7 +316,21 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     wanted.forEach(c => ensureCourse(c))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.students, state.worksheets, state.workbooks])
-  const poolProblems = useMemo(() => Object.values(pools).flat(), [pools])
+  // 🔴 과정 파일 사이에 **같은 문항이 겹친다** (실측 2026-08-25: mf1131040 이
+  //    pool-m2-1.json 과 pool-m2-2.json 양쪽에 있다). 그냥 flat 하면 문제은행에
+  //    같은 문항이 두 벌 들어가고, 그러면 유형별 문항 목록이 [A, A, B, …] 가 된다.
+  //    → 「유형별 2번째 문제」(기본과제 2회차)가 1번째와 **같은 문제**로 나갔다.
+  //      중2 15문항 중 14개, 고1 15문항 중 9개가 어제 것과 똑같이 나간 사고의 원인.
+  //    id 기준으로 한 벌만 남긴다. 뽑기·오답드릴 등 문제은행을 쓰는 모든 곳이 같이 낫는다.
+  const poolProblems = useMemo(() => {
+    const seen = new Set<string>()
+    const out: Problem[] = []
+    for (const p of Object.values(pools).flat()) {
+      if (seen.has(p.id)) continue
+      seen.add(p.id); out.push(p)
+    }
+    return out
+  }, [pools])
 
   // 1회 마이그레이션: studentId 없는 옛 교재를 채점 기록으로 학생에게 귀속
   // (교재가 학생별로 안 나뉘어 채점판에 모든 학생 교재가 섞여 나오던 문제 해결)

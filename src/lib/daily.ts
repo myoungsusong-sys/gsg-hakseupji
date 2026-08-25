@@ -187,8 +187,13 @@ export function buildByTypeRound(problems: Problem[], o: TypeRoundOpts): Problem
 
   // 유형별로 문항을 모아 **결정적으로** 정렬한다(id 오름차순) — 같은 회차는 같은 문제가 나와야
   // 재출제·PDF 재생성 때 학생이 받은 것과 어긋나지 않는다.
+  // 🔴 같은 문항이 두 번 들어오면 arr = [A, A, B…] 가 되어 **2회차가 1회차와 같은 문제**로
+  //    나간다(2026-08-25 실사고). 문제은행 쪽에서도 id 중복을 없앴지만 여기서도 한 번 막는다.
   const byType = new Map<string, Problem[]>()
+  const seen = new Set<string>()
   for (const p of problems) {
+    if (seen.has(p.id)) continue
+    seen.add(p.id)
     const arr = byType.get(p.typeId)
     if (arr) arr.push(p); else byType.set(p.typeId, [p])
   }
