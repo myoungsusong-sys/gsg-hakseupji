@@ -2941,7 +2941,7 @@ export function typeSubUnitId(typeId: string): string {
 //    그래서 고등 과학 학습지(통합과학1·2=고1, 물리·화학·생명·지구=고2)를 학생앱에서 열면
 //    문제 풀이 로드되지 않아 "문제를 불러오는 중"에서 멈췄다.
 //    학습지의 grade·subject에 해당하는 과정을 모두 반환해 그 풀을 함께 로드한다.
-export function coursesForWorksheet(grade: string, subject?: '수학' | '과학' | '사회' | '역사'): string[] {
+export function coursesForWorksheet(grade: string, subject?: '수학' | '과학' | '사회' | '역사' | '영어'): string[] {
   const out = new Set<string>()
   const def = defaultCurriculumForGrade(grade)
   const defCur = CURRICULA.find(c => c.id === def)

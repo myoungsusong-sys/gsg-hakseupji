@@ -14,7 +14,9 @@ import type { Grading, Student, StudentAppConfig, WBItem, Workbook } from '../ty
 // 데이터를 실제로 고치는 창이라 강사·조교에게는 열지 않는다.
 // 서버(api/diagnose.ts 의 chat 분기)에서도 같은 목록으로 세션 이메일을 검증한다 —
 // 버튼을 숨기는 것만으로는 API 직접 호출을 막지 못하기 때문.
-export const CHAT_ALLOWED_EMAILS = ['annals@hanmail.net', 'azzico77@naver.com'] as const
+// 2026-08-26 명수쌤: azzico 관리자가 앱에서 직접 고치게 해 달라 → 주소가 둘 중 어느 것인지
+// 확실치 않아 **둘 다** 넣는다(둘 다 명수쌤이 쓰는 계정이다).
+export const CHAT_ALLOWED_EMAILS = ['annals@hanmail.net', 'azzico77@naver.com', 'azzico@naver.com'] as const
 export const chatAllowed = (email: string | null | undefined) =>
   !!email && (CHAT_ALLOWED_EMAILS as readonly string[]).includes(email.trim().toLowerCase())
 

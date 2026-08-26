@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useStore } from '../lib/store'
+import { useSubject } from '../lib/subject'
 import type { Student } from '../types'
 import GradePanel from '../components/lesson/GradePanel'
 import LecturePlanPanel from '../components/lesson/LecturePlanPanel'
@@ -46,6 +47,16 @@ export default function Lesson() {
   // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
   const [groupName, setGroupName] = useState<string | null>(null)
   const [tab, setTab] = useState<Tab>('history')
+  // 🔴 과목 카테고리 — 「영어」를 고르면 영어단어 하나만, 그 밖에는 영어단어를 뺀 나머지.
+  //    (명수쌤 2026-08-26: "영어 카테고리를 따로 만들고 영단어를 그 안에")
+  const [subject] = useSubject()
+  const tabs = useMemo(
+    () => subject === '영어' ? TABS.filter(t => t.key === 'voca') : TABS.filter(t => t.key !== 'voca'),
+    [subject])
+  // 과목을 바꾸면 지금 탭이 목록에 없을 수 있다 — 첫 탭으로 돌린다(빈 화면 방지)
+  useEffect(() => {
+    if (!tabs.some(t => t.key === tab)) setTab(tabs[0].key)
+  }, [tabs, tab])
   const [groupBy, setGroupBy] = useState<'학년' | '반'>('학년')
   const [q, setQ] = useState('')
   const [closed, setClosed] = useState<Set<string>>(new Set())
@@ -189,7 +200,7 @@ export default function Lesson() {
           <>
             <div className="no-print mb-5 flex flex-wrap items-center gap-x-5 gap-y-1 border-b border-line px-1">
               <h1 className="pb-3 text-lg font-black">{student.name}</h1>
-              {TABS.map(t => (
+              {tabs.map(t => (
                 <button key={t.key} onClick={() => setTab(t.key)}
                   className={`-mb-px whitespace-nowrap border-b-2 pb-3 text-[15px] font-bold ${tab === t.key ? 'border-pine text-ink' : 'border-transparent text-ink2 hover:text-ink'}`}>
                   {t.label}

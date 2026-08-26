@@ -255,7 +255,7 @@ const CHAT_SCHEMA = {
 // 💬 채팅창을 쓸 수 있는 사람 — 이 둘만 (2026-07-30 명수쌤 지시).
 // 클라이언트에서 버튼을 숨기는 것만으로는 API 직접 호출을 막지 못한다 → 여기서 세션을 검증한다.
 // (src/lib/adminOps.ts 의 CHAT_ALLOWED_EMAILS 와 같은 목록을 유지할 것)
-const CHAT_ALLOWED = ['annals@hanmail.net', 'azzico77@naver.com']
+const CHAT_ALLOWED = ['annals@hanmail.net', 'azzico77@naver.com', 'azzico@naver.com']
 
 /** 로그인 세션의 이메일이 허용 목록에 있으면 true. 실패 사유는 문자열로 돌려준다. */
 async function chatCaller(req: any): Promise<{ ok: true; email: string } | { ok: false; code: number; error: string }> {
