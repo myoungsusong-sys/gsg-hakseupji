@@ -8,7 +8,7 @@ import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder } 
 import { bigUnitNameOfType } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
-import BatchPrint, { vocaAnswerFor, vocaSheetFor, type Sheet } from '../components/daily/BatchPrint'
+import BatchPrint, { vocaAnswerFor, vocaSheetFor, vocaStudySheetFor, type Sheet } from '../components/daily/BatchPrint'
 
 // ── 📤 오늘 기본과제 — 반/전체 학생에게 3세트를 한 번에 내보낸다 ────────────────
 //
@@ -283,9 +283,13 @@ export default function DailySet() {
     const list: Sheet[] = []
     // ① 학생별 문제지
     for (const m of made) list.push({ kind: '문제', student: m.student, subject: m.subject, problems: m.problems })
-    // ② 학생별 단어시험지
+    // ② 학생별 단어장(외우기) → 단어시험지 순서.
+    //    🔴 명수쌤 2026-08-25: "영어 단어장을 먼저 만들어줘야 할 것 같애."
+    //       시험지만 주면 학생이 외울 것이 없다. 같은 DAY 를 단어장으로 먼저 준다.
     const stus = [...new Map(made.map(m => [m.student.id, m.student])).values()]
     for (const st of stus) {
+      const b0 = await vocaStudySheetFor(st, vocaDay)
+      if (b0) list.push(b0)
       const v = await vocaSheetFor(st, vocaDay)
       if (v) list.push(v)
     }

@@ -49,6 +49,7 @@ function solHeight(ratio: number): number {
 
 type Sheet =
   | { kind: '문제'; student: Student; subject: '수학' | '과학'; problems: Problem[] }
+  | { kind: '단어장'; student: Student; book: string; day: number; words: [string, string][] }   // 외우기용(영단어+뜻)
   | { kind: '단어'; student: Student; book: string; day: number; words: [string, string][] }
   | { kind: '정답'; label: string; problems: Problem[] }              // 학년·과목별 빠른정답
   | { kind: '해설'; label: string; problems: Problem[] }              // 학년·과목별 정답·해설
@@ -85,7 +86,7 @@ function answerText(p: Problem): string {
   return a
 }
 
-type Part = '문제지' | '빠른정답' | '정답해설' | '단어시험'
+type Part = '문제지' | '빠른정답' | '정답해설' | '단어장' | '단어시험'
 
 export default function BatchPrint({
   sheets, brand, onClose,
@@ -109,7 +110,8 @@ export default function BatchPrint({
     s.kind === '문제' ? parts.has('문제지')
       : s.kind === '정답' ? parts.has('빠른정답')
         : s.kind === '해설' ? parts.has('정답해설')
-          : parts.has('단어시험')), [sheets, parts])
+          : s.kind === '단어장' ? parts.has('단어장')
+            : parts.has('단어시험')), [sheets, parts])
 
   const urls = useMemo(() => {
     const s = new Set<string>()
@@ -125,6 +127,7 @@ export default function BatchPrint({
   type Page =
     | { t: '문제'; head: Extract<Sheet, { kind: '문제' }>; cols: Problem[][]; no: number; of: number }
     | { t: '해설'; head: Extract<Sheet, { kind: '해설' }>; cols: Problem[][]; no: number; of: number }
+    | { t: '단어장'; head: Extract<Sheet, { kind: '단어장' }> }
     | { t: '단어'; head: Extract<Sheet, { kind: '단어' }> }
     | { t: '정답'; head: Extract<Sheet, { kind: '정답' }> }
     | { t: '단어정답'; head: Extract<Sheet, { kind: '단어정답' }> }
@@ -146,6 +149,7 @@ export default function BatchPrint({
     if (!measured) return []
     const out: Page[] = []
     for (const sh of picked) {
+      if (sh.kind === '단어장') { out.push({ t: '단어장', head: sh }); continue }
       if (sh.kind === '단어') { out.push({ t: '단어', head: sh }); continue }
       if (sh.kind === '단어정답') { out.push({ t: '단어정답', head: sh }); continue }
       if (sh.kind === '정답') { out.push({ t: '정답', head: sh }); continue }
@@ -222,7 +226,7 @@ export default function BatchPrint({
 
   const PART_LIST: [Part, number][] = [
     ['문제지', countOf('문제')], ['빠른정답', countOf('정답')],
-    ['정답해설', countOf('해설')], ['단어시험', countOf('단어') + countOf('단어정답')],
+    ['정답해설', countOf('해설')], ['단어장', countOf('단어장')], ['단어시험', countOf('단어') + countOf('단어정답')],
   ]
 
   return (
@@ -370,6 +374,33 @@ export default function BatchPrint({
             )
           }
 
+          // 📕 단어장 (학생용 · 외우기) — 시험 전에 이걸 보고 외운다
+          if (pg.t === '단어장') {
+            const s0 = pg.head.student
+            const longest = Math.max(...pg.head.words.map(([, m]) => m.length))
+            const pad = longest > 26 ? '3.1mm' : longest > 18 ? '4.2mm' : '5.4mm'
+            const fs = longest > 26 ? '9.3pt' : '10.5pt'
+            return (
+              <div key={i} className={`mf-page ${last}`}>
+                <div style={{ padding: `${MARGIN}mm ${MARGIN}mm 0` }}>
+                  <Head big={s0.name} small={s0.grade} title="영어 단어장"
+                    sub={`${pg.head.book} · DAY ${pg.head.day} · 외운 뒤 시험을 봅니다`} />
+                  <div className="mt-3 grid grid-cols-2 gap-x-[6mm]">
+                    {pg.head.words.map(([w, mean], k) => (
+                      <div key={k} style={{ paddingTop: pad, paddingBottom: pad }}
+                        className="flex items-baseline gap-2 border-b border-line/70">
+                        <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{k + 1}</span>
+                        <b className="w-[34mm] shrink-0 text-[10.5pt]">{w}</b>
+                        <span style={{ fontSize: fs }} className="min-w-0 grow leading-snug text-ink2">{mean}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <Foot label={`영어 단어장 · ${s0.name} · DAY ${pg.head.day}`} />
+              </div>
+            )
+          }
+
           // 단어시험지 (학생용)
           const st = pg.head.student
           return (
@@ -417,6 +448,20 @@ export async function vocaSheetFor(student: Student, day: number): Promise<Sheet
     const words = all[d]
     if (!words?.length) return null
     return { kind: '단어', student, book: bk.name, day: Number(d), words }
+  } catch { return null }
+}
+
+/** 📕 단어장(외우기용) — 영단어와 뜻을 나란히. 명수쌤 2026-08-25: "영어 단어장을 먼저 만들어줘".
+ *  시험지만 주면 학생은 외울 것이 없다. 같은 DAY 의 25단어를 먼저 주고, 외운 뒤 시험을 본다. */
+export async function vocaStudySheetFor(student: Student, day: number): Promise<Sheet | null> {
+  const bk = vocaBookOf(student.grade)
+  try {
+    const all = await loadVoca(bk.file)
+    const keys = Object.keys(all)
+    const d = String(Math.min(Math.max(1, day), keys.length))
+    const words = all[d]
+    if (!words?.length) return null
+    return { kind: '단어장', student, book: bk.name, day: Number(d), words }
   } catch { return null }
 }
 
