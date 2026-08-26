@@ -575,6 +575,11 @@ export type BugReport = {
   why?: '수업막힘' | '오래걸림' | '학생혼란' | '있으면편함'
   scope?: '나만' | '선생님전체' | '학생화면'
   routeTitle?: string             // 사람이 읽는 화면 이름
+  // 🖼 화면 사진 (2026-08-26 명수쌤: "스크린샷도 가능해?") — 축소 JPEG dataURL.
+  //    글로 설명하기 어려운 화면 문제는 사진 한 장이 가장 빠르다.
+  //    🔴 bugReports 는 통짜 배열로 저장되므로 **한 건에 한 장만**, 폭 1100px·품질 0.6 으로
+  //       줄여 넣는다(보통 150~250KB). 원본을 그대로 넣으면 settings 행이 금방 부푼다.
+  shot?: string
   votes?: string[]                // 같은 요청에 한 표 준 사람
   resolution?: string             // shipped·declined 사유
   shippedVersion?: string         // 반영된 changelog ts

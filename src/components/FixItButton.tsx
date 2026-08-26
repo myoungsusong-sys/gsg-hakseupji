@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { recentErrors, recentHops, storageUsage } from '../lib/errorLog'
 import { useStore, uid } from '../lib/store'
@@ -63,6 +63,29 @@ export default function FixItButton({ app, appVersion, synced, who, className = 
   )
 }
 
+// 🖼 붙인 사진을 줄인다 — 폭 1100px·JPEG 0.6.
+// 🔴 원본(요즘 폰·맥 스크린샷은 5~10MB)을 그대로 넣으면 bugReports 통짜 배열이 금방 부푼다.
+//    한 건에 한 장, 이 크기면 보통 150~250KB 다.
+async function shrinkShot(file: File): Promise<string> {
+  const url = URL.createObjectURL(file)
+  try {
+    const img = await new Promise<HTMLImageElement>((ok, no) => {
+      const el = new Image()
+      el.onload = () => ok(el); el.onerror = () => no(new Error('사진을 읽지 못했어요'))
+      el.src = url
+    })
+    const scale = Math.min(1, 1100 / Math.max(1, img.naturalWidth))
+    const w = Math.max(1, Math.round(img.naturalWidth * scale))
+    const h = Math.max(1, Math.round(img.naturalHeight * scale))
+    const cv = document.createElement('canvas')
+    cv.width = w; cv.height = h
+    const ctx = cv.getContext('2d')
+    if (!ctx) throw new Error('사진을 줄이지 못했어요')
+    ctx.drawImage(img, 0, 0, w, h)
+    return cv.toDataURL('image/jpeg', 0.6)
+  } finally { URL.revokeObjectURL(url) }
+}
+
 // ⚠️ 반드시 createPortal 로 body 에 띄운다. 학생앱·선생님 헤더에 backdrop-blur 가 걸려 있어
 // (backdrop-filter 가 containing block 을 만든다) 헤더 안에서 렌더하면 fixed 모달이 헤더
 // 박스 기준으로 배치돼 화면 위로 잘린다.
@@ -71,6 +94,7 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
 }) {
   const { bugReports, saveBugReport } = useStore()
   const [note, setNote] = useState('')
+  const [shot, setShot] = useState<string | null>(null)   // 🖼 붙인 화면 사진(축소 JPEG)
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const [diag, setDiag] = useState<Diag | null>(null)
@@ -126,7 +150,7 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
     const r: BugReport = {
       id: uid('req'), at: new Date().toISOString(), app: 'teacher',
       route: location.hash || '#/', routeTitle: document.title,
-      who, note: t, kind: 'request', why, scope,
+      who, note: t, kind: 'request', why, scope, shot: shot ?? undefined,
       cause: '', report: '', fixable: false, status: 'open', appVersion,
     }
     try { saveBugReport(r) } catch { /* 저장 실패해도 알림은 보낸다 */ }
@@ -143,7 +167,7 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
       ].filter(Boolean).join('\n'),
       url: 'https://gsg-hakseupji.vercel.app/#/lesson',
     }).catch(() => { /* 알림 실패는 접수를 무르지 않는다 */ })
-    setSent(r.id); setNote(''); setBusy(false)
+    setSent(r.id); setNote(''); setShot(null); setBusy(false)
   }
 
   // 보고서는 **클라우드 한곳(hj_settings.bugReports)** 에 모은다 — 학생 기기에만 남으면
@@ -152,7 +176,7 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
     const r: BugReport = {
       id: uid('bug'), at: new Date().toISOString(), app,
       route: location.hash || '#/', who, note: note || undefined,
-      cause: d.cause, report: d.report, fixable: d.fixable,
+      cause: d.cause, report: d.report, fixable: d.fixable, shot: shot ?? undefined,
       actions: d.actions.map(a => a.type), status: 'open', appVersion,
     }
     try { saveBugReport(r) } catch { /* 아래 로컬 백업으로 */ }
@@ -219,6 +243,7 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
             <textarea value={note} onChange={e => setNote(e.target.value)} rows={3} disabled={busy}
               placeholder="예) 채점하려고 하는데 화면이 갑자기 바뀌어요 / 문제가 안 보여요"
               className="w-full rounded-xl border border-line p-3 text-sm" />
+            <ShotPicker shot={shot} setShot={setShot} setErr={setErr} disabled={busy} />
             <button onClick={diagnose} disabled={busy}
               className="mt-3 w-full rounded-lg bg-pine py-2.5 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-50">
               {busy ? 'AI가 이 화면을 살펴보는 중…' : '🔧 지금 고쳐주세요 (AI 점검)'}
@@ -247,6 +272,7 @@ function FixItModal({ app, appVersion, synced, who, onClose }: {
             <textarea value={note} onChange={e => setNote(e.target.value)} rows={3} disabled={busy}
               placeholder="예) 이 목록을 반별로 묶어서 보여주세요 / 오답 개수 옆에 학년도 같이 보이면 좋겠어요"
               className="w-full rounded-xl border border-line p-3 text-sm" />
+            <ShotPicker shot={shot} setShot={setShot} setErr={setErr} disabled={busy} />
             <div className="grid gap-1.5">
               <span className="text-xs font-bold text-ink2">왜 필요한가요?</span>
               <div className="flex flex-wrap gap-1.5">
@@ -399,6 +425,12 @@ function TeacherInbox({ reports, onUpdate }: { reports: BugReport[]; onUpdate: (
               {r.kind !== 'request' && !r.fixable && <span className="ml-1 font-bold text-clay">코드 확인 필요</span>}
               {r.note && <div className="mt-0.5 truncate text-ink2">“{r.note}”</div>}
             </summary>
+            {r.shot && (
+              <a href={r.shot} target="_blank" rel="noreferrer" title="새 탭에서 크게 보기">
+                <img src={r.shot} alt="보낸 화면 사진"
+                  className="mt-2 max-h-64 w-full rounded-lg border border-line object-contain" />
+              </a>
+            )}
             <pre className="mt-2 max-h-40 overflow-auto whitespace-pre-wrap break-words text-[11px] leading-relaxed text-ink2">
               {r.cause}{'\n\n'}{r.report}
             </pre>
@@ -443,5 +475,59 @@ function KakaoTest() {
       </button>
       {msg && <span className={`text-[10px] font-semibold ${state === 'ok' ? 'text-pine' : 'text-clay'}`}>{msg}</span>}
     </span>
+  )
+}
+
+
+// 🖼 화면 사진 붙이기 — 파일 고르기 + **붙여넣기(⌘V)**.
+// 명수쌤 2026-08-26: "스크린샷도 가능해?" — 맥에서 ⇧⌘4 로 찍고 이 창에서 ⌘V 하면 바로 붙는다.
+function ShotPicker({ shot, setShot, setErr, disabled }: {
+  shot: string | null
+  setShot: (v: string | null) => void
+  setErr: (v: string) => void
+  disabled?: boolean
+}) {
+  const [busy, setBusy] = useState(false)
+
+  async function take(file: File | null | undefined) {
+    if (!file) return
+    if (!/^image\//.test(file.type)) { setErr('사진 파일만 붙일 수 있어요.'); return }
+    setBusy(true); setErr('')
+    try { setShot(await shrinkShot(file)) }
+    catch (e) { setErr(String((e as Error)?.message ?? e)) }
+    finally { setBusy(false) }
+  }
+
+  // 창이 열려 있는 동안 어디에 붙여넣어도 잡는다(텍스트칸에 커서가 없어도 된다)
+  useEffect(() => {
+    const onPaste = (e: ClipboardEvent) => {
+      const f = [...(e.clipboardData?.items ?? [])]
+        .find(i => i.kind === 'file' && i.type.startsWith('image/'))?.getAsFile()
+      if (f) { e.preventDefault(); void take(f) }
+    }
+    window.addEventListener('paste', onPaste)
+    return () => window.removeEventListener('paste', onPaste)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  return (
+    <div className="mt-2 grid gap-1.5">
+      {shot ? (
+        <div className="relative">
+          <img src={shot} alt="붙인 화면 사진"
+            className="max-h-52 w-full rounded-xl border border-line object-contain" />
+          <button type="button" onClick={() => setShot(null)} disabled={disabled}
+            className="absolute right-2 top-2 rounded-lg bg-ink/75 px-2 py-1 text-xs font-bold text-paper">
+            사진 빼기
+          </button>
+        </div>
+      ) : (
+        <label className={`flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-line py-3 text-xs font-semibold text-ink2 hover:border-pine hover:text-pine ${disabled ? 'opacity-50' : ''}`}>
+          <input type="file" accept="image/*" className="hidden" disabled={disabled || busy}
+            onChange={e => { void take(e.target.files?.[0]); e.target.value = '' }} />
+          {busy ? '사진 줄이는 중…' : '🖼 화면 사진 붙이기 — 눌러서 고르거나, 찍은 뒤 ⌘V'}
+        </label>
+      )}
+    </div>
   )
 }
