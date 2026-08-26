@@ -241,8 +241,12 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
 
   // 다음 수업일 — 보강일이 있으면 우선(수업 변경), 없으면 수업 요일 기준 자동 계산
   const autoNext = useMemo(() => nextClassDate(date, student.classDays), [date, student.classDays])
-  const nextSession = makeupDate
-    ? { key: makeupDate, label: krDateLabel(makeupDate), isMakeup: true }
+  // 🔴 보강일이 보고서 날짜보다 **이전이면 다음 수업이 아니다** (2026-08-26 박성우 선생님 보고:
+  //    8/26 리포트에 「다음 수업 8월 25일」이 떴다 — 어제가 다음 수업일 수는 없다).
+  //    지나간 보강일은 버리고 요일 기준 자동 계산으로 돌아간다.
+  const useMakeup = !!makeupDate && makeupDate > date
+  const nextSession = useMakeup
+    ? { key: makeupDate as string, label: krDateLabel(makeupDate as string), isMakeup: true }
     : autoNext ? { key: autoNext, label: krDateLabel(autoNext), isMakeup: false } : null
 
   const wbById = useMemo(() => new Map(workbooks.map(w => [w.id, w])), [workbooks])
@@ -488,7 +492,14 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
       ]))
     }
     if (totalSolved) {
-      if (overall >= 90) parts.push(vary(seed, 'hi', [
+      // 🔴 100점에 "거의 다 맞혔습니다"는 틀린 말이다(2026-08-26 박성우 선생님 보고).
+      //    만점은 만점이라고 써야 학부모가 읽을 때 어색하지 않다.
+      if (overall === 100) parts.push(vary(seed, 'perfect', [
+        `${totalSolved}문항 전부 맞혀 100점입니다.`,
+        `100점 — 하나도 틀리지 않았습니다.`,
+        `오늘은 만점입니다. 끝까지 집중했어요.`,
+      ]))
+      else if (overall >= 90) parts.push(vary(seed, 'hi', [
         `${overall}점으로 거의 다 맞혔습니다.`,
         `${totalCorrect}문항을 맞혀 ${overall}점, 아주 잘했어요.`,
         `${overall}점. 오늘은 흔들리는 데가 없었습니다.`,

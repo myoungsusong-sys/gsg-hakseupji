@@ -358,10 +358,18 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
   // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
   useEffect(() => {
+    const snapshot = cloud.on ? { ...state, customProblems: [] } : state
     try {
-      const snapshot = cloud.on ? { ...state, customProblems: [] } : state
       localStorage.setItem(LS_KEY, JSON.stringify(snapshot))
-    } catch { /* 쿼터 초과 등은 무시 — 클라우드가 원본 */ }
+    } catch {
+      // 🔴 쿼터 초과 (2026-08-26: 오류 보고 7건이 전부 저장 공간 9MB대였다).
+      //    그냥 넘기면 이 기기 백업이 통째로 멈춘 채로 굴러가고, 인터넷이 끊긴 날
+      //    화면이 비어 보인다. **가장 무거운 표(교재 문항)를 덜어 한 번 더 시도**한다 —
+      //    wbItems 는 클라우드에서 다시 받으면 되는 파생 데이터라 버려도 안전하다.
+      try {
+        localStorage.setItem(LS_KEY, JSON.stringify({ ...snapshot, wbItems: [] }))
+      } catch { /* 그래도 안 되면 포기 — 클라우드가 원본이다 */ }
+    }
   }, [state])
 
   // 🔴 읽기에 실패한 표 — 화면에 띄워 선생님이 «없어진 게 아니라 못 읽은 것»임을 알게 한다.
