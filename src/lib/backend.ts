@@ -46,6 +46,7 @@ export interface CloudData {
   teachers: Teacher[]                         // 강사 (settings 'teachers')
   branches: Branch[]                           // 지점 (settings 'branches') — 당진·내포 등
   ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
+  reviewChecks: Record<string, true>           // 🏫 학교 복습 체크 (settings 'reviewChecks', 키=`학생|날짜|과목|solve|wrong`)
   pointEntries: PointEntry[]                   // 포인트 수동/학부모 항목 (settings 'pointEntries')
   pointSettlements: PointSettlement[]
   bugReports: BugReport[]                      // 🛠 AI 점검 오류 보고 (settings 'bugReports')          // 월말 정산 스냅샷 (settings 'pointSettlements')
@@ -140,6 +141,7 @@ export async function loadAll(): Promise<(CloudData & { __failed: LoadFail }) | 
     teachers: (settingsMap.get('teachers') as Teacher[]) ?? [],
     branches: (settingsMap.get('branches') as Branch[]) ?? [],
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
+    reviewChecks: (settingsMap.get('reviewChecks') as Record<string, true>) ?? {},
     pointEntries: (settingsMap.get('pointEntries') as PointEntry[]) ?? [],
     pointSettlements: (settingsMap.get('pointSettlements') as PointSettlement[]) ?? [],
     __failed,
@@ -224,6 +226,7 @@ export const cloud = {
       local.teachers.length ? this.setSetting('teachers', local.teachers) : Promise.resolve(),
       local.branches.length ? this.setSetting('branches', local.branches) : Promise.resolve(),
       Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
+      Object.keys(local.reviewChecks ?? {}).length ? this.setSetting('reviewChecks', local.reviewChecks) : Promise.resolve(),
       (local.pointEntries ?? []).length ? this.setSetting('pointEntries', local.pointEntries) : Promise.resolve(),
       (local.pointSettlements ?? []).length ? this.setSetting('pointSettlements', local.pointSettlements) : Promise.resolve(),
     ])

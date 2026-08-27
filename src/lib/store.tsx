@@ -47,6 +47,7 @@ interface Persisted {
   teachers: Teacher[]
   branches: Branch[]
   ttChecks: Record<string, true>
+  reviewChecks: Record<string, true>
   pointEntries: PointEntry[]
   pointSettlements: PointSettlement[]
 }
@@ -69,6 +70,7 @@ const EMPTY: Persisted = {
   teachers: [],
   branches: [],
   ttChecks: {},
+  reviewChecks: {},
   pointEntries: [],
   pointSettlements: [],
 }
@@ -129,6 +131,8 @@ interface Store extends Persisted {
   setDailyBook: (studentId: string, courseId: string) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
+  // 🏫 학교 복습 체크 (문제풀이·오답작성) — 키는 lib/schoolReview.ts reviewKey()
+  toggleReviewCheck: (key: string) => void
   // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
   addPointEntry: (e: Omit<PointEntry, 'id'>) => void
   removePointEntry: (id: string) => void
@@ -220,6 +224,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     teachers: keep('teachers', r.teachers ?? [], f.settings),
     branches: keep('branches', r.branches ?? [], f.settings),
     ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
+    reviewChecks: keep('reviewChecks', r.reviewChecks ?? {}, f.settings),
     pointEntries: keep('pointEntries', r.pointEntries ?? [], f.settings),
     pointSettlements: keep('pointSettlements', r.pointSettlements ?? [], f.settings),
   }
@@ -259,7 +264,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
-    ttChecks: s.ttChecks,
+    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
@@ -589,6 +594,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       set(s => ({ ...s, assignments: s.assignments.filter(a =>
         !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true))) }))
       cloud.assignmentOps([{ type: 'remove', worksheetId, studentId, kind }])
+    },
+    toggleReviewCheck: key => {
+      const cur = stateRef.current.reviewChecks
+      const next = { ...cur }
+      if (next[key]) delete next[key]; else next[key] = true
+      set(s => ({ ...s, reviewChecks: next })); cloud.setSetting('reviewChecks', next)
     },
     toggleTTCheck: (studentId, date, blockIdx, workbookId) => {
       const key = `${studentId}|${date}|${blockIdx}`

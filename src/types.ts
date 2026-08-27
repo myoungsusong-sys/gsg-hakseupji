@@ -236,6 +236,18 @@ export interface Student {
   mbti?: string          // 'INTJ' 등 16유형
   bloodType?: string     // A·B·O·AB (재미·라포용 참고)
   timetable?: StudentTimetable  // 주간 시간표 (요일별 공부시간+교재·인강 자동 배치)
+  // 🏫 학교 시간표 — 그날 학교에서 배운 과목을 그날 복습시키려고 받는다 (2026-08-26 명수쌤).
+  //    Student.timetable 과 같이 json 통째 저장이라 마이그레이션이 필요 없다.
+  schoolTimetable?: SchoolTimetable
+}
+
+// ── 🏫 학교 시간표 (복습용) ─────────────────────────────────────────────
+// 월~금 요일별 **과목 이름 목록**만 받는다. 교시 시간표를 그대로 옮기지 않는 이유:
+// 복습에 필요한 건 「그날 무엇을 배웠나」뿐이고, 시각까지 받으면 입력이 무거워 아무도 안 넣는다.
+// 규칙(수학 제외·문제풀이→오답작성 2단계·주말 마무리)은 lib/schoolReview.ts 가 정본.
+export interface SchoolTimetable {
+  days: Record<string, string[]>   // '월'~'금' → ['국어','영어','과학', …]
+  updatedAt: string
 }
 
 // ── 주간 시간표 — 요일별 공부시간을 정하고 교재·인강을 고르면 자동 배치 ──

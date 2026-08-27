@@ -11,6 +11,9 @@ import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/
 import { computeMonth, MONTHLY_CAP, won } from '../../lib/points'
 import { nextDay, vocaBookOf } from '../../lib/voca'
 import {
+  STEP_LABEL, mondayOf, reviewKey, weekProgress, weekReview,
+} from '../../lib/schoolReview'
+import {
   fmtHM, fmtHMS, latestGradingFor, myWorksheetRows, readDraft, readStudySeconds, statusOf,
   summaryOf, usePreview, PREVIEW_LOCK_TITLE, STATUS_CLASS, type StudentWsStatus,
 } from './common'
@@ -28,7 +31,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries, reviewChecks, toggleReviewCheck } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable
@@ -60,6 +63,7 @@ export default function StudentHome() {
     }
   }, [workbooks, gradings, me.id, me.grade])
 
+
   // 이번주(월~일 — 매쓰플랫 동일) 날짜들
   const week = useMemo(() => {
     const now = new Date()
@@ -73,6 +77,21 @@ export default function StudentHome() {
   }, [])
   const today = todayKey()
   const learnedDays = useMemo(() => new Set(myGradings.map(g => dateKey(g.date))), [myGradings])
+  // 🏫 학교 복습 — 그날 학교에서 배운 과목(수학 제외)을 문제풀이→오답작성 두 칸으로.
+  //    못 끝낸 것은 그 주 토·일로 넘어간다(밀림). 규칙은 lib/schoolReview.ts 가 정본.
+  const school = useMemo(() => {
+    const me2 = students.find(s => s.id === me.id)
+    if (!me2?.schoolTimetable) return null
+    const items = weekReview(me2, mondayOf(today), reviewChecks, today)
+    if (!items.length) return null
+    return {
+      items,
+      todayItems: items.filter(i => i.date === today),
+      late: items.filter(i => i.late),
+      prog: weekProgress(items),
+    }
+  }, [students, me.id, reviewChecks, today])
+
 
   // ⏱ 학습 타이머 — StudentShell이 localStorage에 누적한 오늘 학습시간(초), 1초마다 갱신
   const [nowSec, setNowSec] = useState(() => readStudySeconds(me.id, today))
@@ -236,6 +255,45 @@ export default function StudentHome() {
                   )
                 })}
               </div>
+            </section>
+          )}
+
+          {/* 🏫 오늘 학교 복습 — 그날 배운 과목을 문제풀이 → 오답작성까지 */}
+          {school && (
+            <section className="rounded-2xl border border-line bg-white p-6">
+              <div className="mb-3 flex flex-wrap items-baseline gap-2">
+                <h2 className="font-black">🏫 오늘 학교 복습</h2>
+                <span className="rounded-full bg-paper2/80 px-2.5 py-1 text-xs font-semibold text-ink2">
+                  이번주 {school.prog.done} / {school.prog.total}칸 · {school.prog.pct}%
+                </span>
+                <span className="text-xs text-ink2">문제 풀고 → 오답까지 쓰면 끝이에요 (수학은 따로 해요)</span>
+              </div>
+
+              {school.todayItems.length === 0 && school.late.length === 0 && (
+                <p className="text-sm text-ink2">오늘은 복습할 과목이 없어요. 잘하고 있어요 👍</p>
+              )}
+
+              {school.todayItems.length > 0 && (
+                <div className="grid gap-1.5">
+                  {school.todayItems.map(r => (
+                    <ReviewRow key={r.subject} r={r} meId={me.id} pv={pv.on}
+                      onToggle={toggleReviewCheck} />
+                  ))}
+                </div>
+              )}
+
+              {school.late.length > 0 && (
+                <div className="mt-3 rounded-xl border border-amber/50 bg-amber-soft/40 p-3">
+                  <b className="text-sm text-amber">⏰ 아직 못 끝낸 것 {school.late.length}과목</b>
+                  <p className="mb-2 text-xs text-ink2">이번 주 안에(토·일까지) 마무리하면 돼요.</p>
+                  <div className="grid gap-1.5">
+                    {school.late.map(r => (
+                      <ReviewRow key={`${r.date}-${r.subject}`} r={r} meId={me.id} pv={pv.on}
+                        onToggle={toggleReviewCheck} showDate />
+                    ))}
+                  </div>
+                </div>
+              )}
             </section>
           )}
 
@@ -502,5 +560,35 @@ function PiggyBank({ studentId, timetable, ttChecks, gradings, pointEntries, tod
         </div>
       )}
     </section>
+  )
+}
+
+
+/* 🏫 복습 한 줄 — 과목 이름 + [문제풀이][오답작성] 두 칸 */
+function ReviewRow({ r, meId, pv, onToggle, showDate }: {
+  r: { date: string; day: string; subject: string; solve: boolean; wrong: boolean; done: boolean }
+  meId: string
+  pv: boolean
+  onToggle: (key: string) => void
+  showDate?: boolean
+}) {
+  return (
+    <div className={`flex flex-wrap items-center gap-2 rounded-xl border px-3 py-2 text-sm ${
+      r.done ? 'border-pine/40 bg-pine-soft/25' : 'border-line/70'}`}>
+      {showDate && <span className="w-10 shrink-0 text-xs font-bold text-ink2">{r.day}요일</span>}
+      <b className={`w-20 shrink-0 ${r.done ? 'text-ink2 line-through' : ''}`}>{r.subject}</b>
+      {(['solve', 'wrong'] as const).map(step => {
+        const on = step === 'solve' ? r.solve : r.wrong
+        return (
+          <button key={step} disabled={pv}
+            onClick={() => onToggle(reviewKey(meId, r.date, r.subject, step))}
+            className={`rounded-full px-3 py-1.5 text-xs font-bold disabled:opacity-50 ${
+              on ? 'bg-pine text-paper' : 'border border-line text-ink2'}`}>
+            {on ? '✓ ' : ''}{STEP_LABEL[step]}
+          </button>
+        )
+      })}
+      {r.done && <span className="ml-auto text-xs font-black text-pine">끝!</span>}
+    </div>
   )
 }
