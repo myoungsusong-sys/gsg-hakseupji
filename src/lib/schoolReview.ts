@@ -15,10 +15,17 @@ import type { SchoolTimetable, Student } from '../types'
 //  ⑤ 주가 바뀌면 지난 주 미완료는 「지난주 못 끝냄」으로 남는다 — 다음 주로는 끌고 가지 않는다.
 //     (끌고 가면 밀린 것이 눈덩이가 되어 학생이 포기한다)
 
-/** 복습에서 빼는 과목 — 수학은 매일 따로 한다 */
-export const REVIEW_SKIP = ['수학'] as const
-export const isSkipped = (subject: string) =>
-  (REVIEW_SKIP as readonly string[]).includes(subject.replace(/\s/g, ''))
+/** 복습에서 빼는 과목 — 수학은 매일 따로 한다.
+ *  🔴 학교 시간표에는 「수학」이라고 안 적혀 있다. 「공통수학2」·「미적1」·「대수」처럼 적힌다
+ *     (2026-08-26 실측: 김관유=공통수학2, 원현정=미적1 이 그대로 복습 목록에 올라왔다).
+ *     그래서 **이름에 수학 과목 표시가 들어 있으면** 뺀다. */
+const MATH_HINTS = ['수학', '미적', '대수', '확통', '확률과통계', '기하'] as const
+const MATH_EXACT = ['수Ⅰ', '수Ⅱ', '수1', '수2', '수I', '수II'] as const
+export function isSkipped(subject: string): boolean {
+  const n = subject.replace(/\s/g, '')
+  if ((MATH_EXACT as readonly string[]).includes(n)) return true
+  return (MATH_HINTS as readonly string[]).some(h => n.includes(h))
+}
 
 /** 학교 시간표에 넣기 좋은 과목 후보 (직접 입력도 된다) */
 export const SCHOOL_SUBJECTS = [
@@ -87,9 +94,13 @@ export function weekReview(
 ): ReviewItem[] {
   const tt = student.schoolTimetable
   if (!tt) return []
+  // 🔴 시간표를 넣기 **전날들**은 복습 과제가 아니다. 안 그러면 등록하자마자
+  //    「밀린 것 16과목」이 뜬다(2026-08-26 실측). 등록한 날부터 센다.
+  const from = (tt.updatedAt || '').slice(0, 10)
   const out: ReviewItem[] = []
   for (const { key, label } of weekDays(anyDateInWeek)) {
     if (label === '토' || label === '일') continue      // 학교 수업이 없는 날
+    if (from && key < from) continue
     const subs = (tt.days[label] ?? [])
       .map(s => s.trim())
       .filter(s => s && !isSkipped(s))
