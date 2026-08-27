@@ -11,7 +11,7 @@ import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/
 import { computeMonth, MONTHLY_CAP, won } from '../../lib/points'
 import { nextDay, vocaBookOf } from '../../lib/voca'
 import {
-  STEP_LABEL, mondayOf, reviewKey, weekProgress, weekReview,
+  STEPS, STEP_LABEL, mondayOf, reviewKey, weekProgress, weekReview,
 } from '../../lib/schoolReview'
 import {
   fmtHM, fmtHMS, latestGradingFor, myWorksheetRows, readDraft, readStudySeconds, statusOf,
@@ -266,7 +266,7 @@ export default function StudentHome() {
                 <span className="rounded-full bg-paper2/80 px-2.5 py-1 text-xs font-semibold text-ink2">
                   이번주 {school.prog.done} / {school.prog.total}칸 · {school.prog.pct}%
                 </span>
-                <span className="text-xs text-ink2">문제 풀고 → 오답까지 쓰면 끝이에요 (수학은 따로 해요)</span>
+                <span className="text-xs text-ink2">노트 정리 → 문제 풀기 → 오답 쓰기, 셋 다 하면 끝이에요 (수학은 따로 해요)</span>
               </div>
 
               {school.todayItems.length === 0 && school.late.length === 0 && (
@@ -566,7 +566,7 @@ function PiggyBank({ studentId, timetable, ttChecks, gradings, pointEntries, tod
 
 /* 🏫 복습 한 줄 — 과목 이름 + [문제풀이][오답작성] 두 칸 */
 function ReviewRow({ r, meId, pv, onToggle, showDate }: {
-  r: { date: string; day: string; subject: string; solve: boolean; wrong: boolean; done: boolean }
+  r: { date: string; day: string; subject: string; note: boolean; solve: boolean; wrong: boolean; done: boolean }
   meId: string
   pv: boolean
   onToggle: (key: string) => void
@@ -577,8 +577,8 @@ function ReviewRow({ r, meId, pv, onToggle, showDate }: {
       r.done ? 'border-pine/40 bg-pine-soft/25' : 'border-line/70'}`}>
       {showDate && <span className="w-10 shrink-0 text-xs font-bold text-ink2">{r.day}요일</span>}
       <b className={`w-20 shrink-0 ${r.done ? 'text-ink2 line-through' : ''}`}>{r.subject}</b>
-      {(['solve', 'wrong'] as const).map(step => {
-        const on = step === 'solve' ? r.solve : r.wrong
+      {STEPS.map(step => {
+        const on = r[step]
         return (
           <button key={step} disabled={pv}
             onClick={() => onToggle(reviewKey(meId, r.date, r.subject, step))}

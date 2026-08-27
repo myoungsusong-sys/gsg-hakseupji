@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
 import { todayKey } from '../../lib/dates'
 import {
-  EMPTY_SCHOOL_TT, SCHOOL_SUBJECTS, STEP_LABEL, WEEKDAYS, hasSchoolTimetable, isSkipped,
-  mondayOf, reviewKey, weekDays, weekProgress, weekReview,
+  EMPTY_SCHOOL_TT, REVIEW_GROUPS, SCHOOL_SUBJECTS, STEPS, STEP_LABEL, WEEKDAYS,
+  groupOf, hasSchoolTimetable, isSkipped, mondayOf, reviewKey, weekDays, weekProgress, weekReview,
 } from '../../lib/schoolReview'
 import type { SchoolTimetable, Student } from '../../types'
 
@@ -42,8 +42,9 @@ export default function SchoolReviewPanel({ student }: { student: Student }) {
         <h2 className="mt-2 font-black">학교 시간표를 넣어주세요</h2>
         <p className="mx-auto mt-2 max-w-md text-sm text-ink2">
           요일별로 학교에서 배우는 과목을 넣으면, <b className="text-ink">그날 배운 과목</b>이 그날의 복습 과제가 됩니다.
-          한 과목은 <b className="text-ink">문제풀이 → 오답작성</b> 두 칸이고, 못 끝낸 것은 그 주 <b className="text-ink">토·일로 넘어가</b> 그 주 안에 마무리합니다.
-          <br />수학은 매일 따로 하므로 <b className="text-ink">복습 목록에서 빠집니다</b>.
+          한 과목은 <b className="text-ink">복습노트정리 → 문제풀이 → 오답작성</b> 세 칸이고, 못 끝낸 것은 그 주 <b className="text-ink">토·일로 넘어가</b> 그 주 안에 마무리합니다.
+          <br /><b className="text-ink">{REVIEW_GROUPS.join('·')}</b>만 복습합니다(체육·음악·정보 등은 빠집니다).
+          {' '}그중 <b className="text-ink">수학은 매일 따로</b> 하므로 목록에 안 나옵니다.
         </p>
         <button onClick={() => setEdit(true)}
           className="mt-4 rounded-xl bg-pine px-5 py-2.5 text-sm font-black text-paper">시간표 넣기</button>
@@ -105,9 +106,10 @@ export default function SchoolReviewPanel({ student }: { student: Student }) {
                       className={`flex flex-wrap items-center gap-2 rounded-xl border px-3 py-2 text-sm ${
                         r.done ? 'border-pine/40 bg-pine-soft/25' : r.late ? 'border-clay/40 bg-red-50/40' : 'border-line/70'}`}>
                       <b className={`w-24 shrink-0 ${r.done ? 'text-ink2 line-through' : ''}`}>{r.subject}</b>
-                      {(['solve', 'wrong'] as const).map(step => {
+                      <span className="w-9 shrink-0 rounded bg-paper2 px-1 py-0.5 text-center text-[10px] font-bold text-ink2">{r.group}</span>
+                      {STEPS.map(step => {
                         const k = reviewKey(student.id, r.date, r.subject, step)
-                        const on = step === 'solve' ? r.solve : r.wrong
+                        const on = r[step]
                         return (
                           <button key={step} onClick={() => toggleReviewCheck(k)}
                             className={`rounded-full px-3 py-1 text-xs font-bold ${
@@ -186,10 +188,18 @@ function TimetableEditor({ student, onSave, onCancel }: {
                   </button>
                 )
               })}
-              {(days[day] ?? []).filter(s => !(SCHOOL_SUBJECTS as readonly string[]).includes(s)).map(s => (
-                <button key={s} type="button" onClick={() => toggle(day, s)}
-                  className="rounded-full bg-pine px-2.5 py-1 text-xs font-bold text-paper">{s} ✕</button>
-              ))}
+              {(days[day] ?? []).filter(s => !(SCHOOL_SUBJECTS as readonly string[]).includes(s)).map(s => {
+                const g = groupOf(s)
+                const skip = isSkipped(s)
+                return (
+                  <button key={s} type="button" onClick={() => toggle(day, s)}
+                    title={skip ? (g === '수학' ? '수학은 매일 따로 해서 복습 목록에 안 나옵니다' : '국어·과학·사회·영어가 아니라 복습 목록에 안 나옵니다') : `${g} 복습 대상`}
+                    className={`rounded-full px-2.5 py-1 text-xs font-bold ${
+                      skip ? 'border border-line bg-white text-ink2' : 'bg-pine text-paper'}`}>
+                    {s}{skip ? ' (복습 안 함)' : ''} ✕
+                  </button>
+                )
+              })}
             </div>
             <div className="mt-2 flex gap-1.5">
               <input value={custom} onChange={e => setCustom(e.target.value)}
@@ -204,7 +214,8 @@ function TimetableEditor({ student, onSave, onCancel }: {
       </div>
 
       <p className="mt-3 text-xs text-ink2">
-        같은 과목이 하루에 두 번 있어도 복습은 한 번만 나옵니다.
+        복습은 <b className="text-ink">국어·과학·사회·영어</b>만 나옵니다 — 그 밖의 과목은 넣어도 「복습 안 함」으로 표시됩니다.
+        {' '}같은 과목이 하루에 두 번 있어도 복습은 한 번만 나옵니다.
         {' '}못 끝낸 과목은 <b className="text-ink">그 주 토·일로 넘어가</b> 일요일까지가 마감입니다.
       </p>
 
