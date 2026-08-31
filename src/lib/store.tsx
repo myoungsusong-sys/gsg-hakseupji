@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, Branch, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -34,6 +34,7 @@ interface Persisted {
   assignments: Assignment[]
   dailyConfigs: Record<string, DailyConfig>
   dailyBooks: Record<string, string>
+  counsels: Counsel[]
   studentAppConfig: StudentAppConfig
   klassOrder: string[]
   academyProfile: AcademyProfile
@@ -56,7 +57,7 @@ const EMPTY: Persisted = {
   customProblems: [], worksheets: [], favorites: [], myLists: [],
   diffMatrix: DEFAULT_DIFF_MATRIX,
   workbooks: [], wbItems: [], students: [], gradings: [], dailyNotes: [],
-  assignments: [], dailyConfigs: {}, dailyBooks: {},
+  assignments: [], dailyConfigs: {}, dailyBooks: {}, counsels: [],
   studentAppConfig: DEFAULT_STUDENT_APP_CONFIG,
   klassOrder: [],
   academyProfile: {},
@@ -129,6 +130,8 @@ interface Store extends Persisted {
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
   // 기본과제 학생별 수학 과정 지정 — 학년표와 진도가 다른 학생용(빈 문자열이면 학년 규칙)
   setDailyBook: (studentId: string, courseId: string) => void
+  // 🗓 주간 상담 — 한 학생 한 주에 한 장(같은 id면 덮어쓴다)
+  saveCounsel: (c: Counsel) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
   // 🏫 학교 복습 체크 (문제풀이·오답작성) — 키는 lib/schoolReview.ts reviewKey()
@@ -211,6 +214,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     assignments: keep('assignments', r.assignments ?? [], f.settings),
     dailyConfigs: keep('dailyConfigs', r.dailyConfigs ?? {}, f.settings),
     dailyBooks: keep('dailyBooks', r.dailyBooks ?? {}, f.settings),
+    counsels: keep('counsels', r.counsels ?? [], f.settings),
     studentAppConfig: keep('studentAppConfig', { ...DEFAULT_STUDENT_APP_CONFIG, ...(r.studentAppConfig ?? {}) }, f.settings),
     klassOrder: keep('klassOrder', r.klassOrder ?? [], f.settings),
     academyProfile: keep('academyProfile', r.academyProfile ?? {}, f.settings),
@@ -257,7 +261,7 @@ function toCloud(s: Persisted): CloudData {
     customProblems: s.customProblems, worksheets: s.worksheets, myLists: s.myLists,
     workbooks: s.workbooks, wbItems: s.wbItems, students: s.students, gradings: s.gradings,
     dailyNotes: s.dailyNotes, favorites: s.favorites, diffMatrix: s.diffMatrix,
-    assignments: s.assignments, dailyConfigs: s.dailyConfigs, dailyBooks: s.dailyBooks,
+    assignments: s.assignments, dailyConfigs: s.dailyConfigs, dailyBooks: s.dailyBooks, counsels: s.counsels,
     studentAppConfig: s.studentAppConfig,
     klassOrder: s.klassOrder, academyProfile: s.academyProfile,
     savedReports: s.savedReports,
@@ -664,6 +668,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const next = { ...stateRef.current.dailyBooks }
       if (courseId) next[studentId] = courseId; else delete next[studentId]
       set(s => ({ ...s, dailyBooks: next })); cloud.setSetting('dailyBooks', next)
+    },
+    saveCounsel: c => {
+      const next = [...stateRef.current.counsels.filter(x => x.id !== c.id), c]
+        .sort((a, b) => b.week.localeCompare(a.week))
+      set(s => ({ ...s, counsels: next })); cloud.setSetting('counsels', next)
     },
     setStudentAppConfig: cfg => {
       set(s => ({ ...s, studentAppConfig: cfg })); cloud.setSetting('studentAppConfig', cfg)

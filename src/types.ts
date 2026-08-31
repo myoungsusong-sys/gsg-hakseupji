@@ -565,6 +565,34 @@ export const TAG_FILTER_OPTIONS = [
 
 // 🛠 AI 점검이 만든 오류 보고 (학생앱·선생님 화면 공통, hj_settings 'bugReports')
 // AI 에는 이름을 보내지 않지만, 저장본에는 누구 화면인지 넣는다 — 선생님이 후속 대응을 하려면 필요하다.
+// ── 🗓 주간 상담 (진도체크 + 상담) — 명수쌤 2026-08-26 ──────────────────────
+// "일주일에 한 번 학생들 진도체크 및 상담을 하려고 해. 학생별로 상담 양식을 만들어줘."
+//
+// 🔴 **지난 한 주의 실적(푼 문항·점수·복습률·진도)은 여기에 저장하지 않는다.**
+//    채점 기록에서 매번 다시 계산한다 — 저장해 두면 나중에 채점이 바뀌었을 때 어긋난다.
+//    (savedReports 와 같은 원칙: 여기 남기는 건 «사람이 쓴 것»뿐이다)
+export interface Counsel {
+  id: string              // `${studentId}_${week}` — 한 학생 한 주에 한 장
+  studentId: string
+  week: string            // 그 주 월요일 YYYY-MM-DD
+  at: string              // 마지막 저장 시각 ISO
+  by?: string             // 상담한 선생님
+  progress?: string       // 진도 점검 — 계획 대비 어디까지 왔나
+  good?: string           // 잘한 점
+  weak?: string           // 보완할 점
+  talk?: string           // 학생과 나눈 이야기 (컨디션·고민·학습 습관)
+  goals?: { text: string; done?: boolean }[]   // 다음 주 목표 — 다음 상담 때 이 자리에서 체크한다
+  parentNote?: string     // 학부모 전달 사항
+  tags?: string[]         // 태도 태그 (빠르게 누르는 것)
+  nextDate?: string       // 다음 상담 예정일 YYYY-MM-DD
+}
+
+export const COUNSEL_TAGS = [
+  '집중 좋음', '질문 늘었음', '숙제 성실', '스스로 함',
+  '지각 잦음', '숙제 밀림', '집중 흐트러짐', '피곤해 보임',
+  '자신감 붙음', '어려워함', '진도 빠름', '진도 느림',
+] as const
+
 export type BugReport = {
   id: string
   at: string                      // ISO

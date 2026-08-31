@@ -11,11 +11,12 @@ import TodayPanel from '../components/lesson/TodayPanel'
 import AnalysisPanel from '../components/lesson/AnalysisPanel'
 import ReportPanel from '../components/lesson/ReportPanel'
 import VocaPanel from '../components/lesson/VocaPanel'
+import CounselPanel from '../components/lesson/CounselPanel'
 import SchoolReviewPanel from '../components/lesson/SchoolReviewPanel'
 import GroupPanel from '../components/lesson/GroupPanel'
 
 // 매쓰플랫과 동일한 6탭. 각 탭 구현은 components/lesson/* 모듈 (리마운트로 state 유실 방지)
-type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'material' | 'voca' | 'school' | 'plan' | 'solvefb' | 'report'
+type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'material' | 'voca' | 'school' | 'counsel' | 'plan' | 'solvefb' | 'report'
 const TABS: { key: Tab; label: string }[] = [
   { key: 'history', label: '학습내역' },
   { key: 'today', label: '오늘의 학습' },
@@ -24,6 +25,7 @@ const TABS: { key: Tab; label: string }[] = [
   { key: 'material', label: '교재' },
   { key: 'voca', label: '영어단어' },
   { key: 'school', label: '학교복습' },
+  { key: 'counsel', label: '주간상담' },
   { key: 'plan', label: '진도표' },
   { key: 'solvefb', label: '풀이피드백' },
   { key: 'report', label: '보고서' },
@@ -216,6 +218,7 @@ export default function Lesson() {
             {tab === 'material' && <GradePanel key={student.id} student={student} />}
             {tab === 'voca' && <VocaPanel key={student.id} student={student} />}
             {tab === 'school' && <SchoolReviewPanel key={student.id} student={student} />}
+            {tab === 'counsel' && <CounselPanel key={student.id} student={student} />}
             {tab === 'plan' && <LecturePlanPanel key={student.id} student={student} />}
             {tab === 'solvefb' && <SolveFeedbackPanel key={student.id} student={student} />}
             {tab === 'report' && <ReportPanel key={student.id} student={student} />}

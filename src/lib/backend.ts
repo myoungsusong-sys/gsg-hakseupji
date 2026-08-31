@@ -2,7 +2,7 @@ import { supabase } from './supabase'
 import * as outbox from './outbox'
 import type { AssignmentCmd } from './assignmentCmds'
 import type {
-  AcademyProfile, Assignment, Branch, BugReport, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
 } from '../types'
 
 // 각 컬렉션 ↔ Supabase 테이블 (테이블 = id text + data jsonb)
@@ -34,6 +34,7 @@ export interface CloudData {
   assignments: Assignment[]                    // 학습지 출제 (settings 'assignments')
   dailyConfigs: Record<string, DailyConfig>    // 오늘의 학습 설정 (settings 'dailyConfigs', 키=studentId)
   dailyBooks: Record<string, string>           // 기본과제 학생별 수학 과정 지정 (settings 'dailyBooks', 키=studentId → 과정 id)
+  counsels: Counsel[]                          // 🗓 주간 상담 (settings 'counsels')
   studentAppConfig: StudentAppConfig | null    // 학생앱 공개 설정 (settings 'studentAppConfig')
   klassOrder: string[]                         // 반 표시 순서 (settings 'klassOrder')
   academyProfile: AcademyProfile | null        // 마이페이지 내 정보 (settings 'academyProfile')
@@ -128,6 +129,7 @@ export async function loadAll(): Promise<(CloudData & { __failed: LoadFail }) | 
     assignments: (settingsMap.get('assignments') as Assignment[]) ?? [],
     dailyConfigs: (settingsMap.get('dailyConfigs') as Record<string, DailyConfig>) ?? {},
     dailyBooks: (settingsMap.get('dailyBooks') as Record<string, string>) ?? {},
+    counsels: (settingsMap.get('counsels') as Counsel[]) ?? [],
     studentAppConfig: (settingsMap.get('studentAppConfig') as StudentAppConfig) ?? null,
     klassOrder: (settingsMap.get('klassOrder') as string[]) ?? [],
     academyProfile: (settingsMap.get('academyProfile') as AcademyProfile) ?? null,
@@ -213,6 +215,7 @@ export const cloud = {
       local.assignments.length ? this.setSetting('assignments', local.assignments) : Promise.resolve(),
       Object.keys(local.dailyConfigs).length ? this.setSetting('dailyConfigs', local.dailyConfigs) : Promise.resolve(),
       Object.keys(local.dailyBooks).length ? this.setSetting('dailyBooks', local.dailyBooks) : Promise.resolve(),
+      local.counsels.length ? this.setSetting('counsels', local.counsels) : Promise.resolve(),
       local.studentAppConfig ? this.setSetting('studentAppConfig', local.studentAppConfig) : Promise.resolve(),
       local.klassOrder.length ? this.setSetting('klassOrder', local.klassOrder) : Promise.resolve(),
       local.academyProfile ? this.setSetting('academyProfile', local.academyProfile) : Promise.resolve(),
