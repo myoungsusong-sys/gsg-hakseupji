@@ -309,11 +309,33 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   // ── 매쓰플랫 문제 풀: 과정별 정적 파일 지연 로드 ────────────────────
   const [pools, setPools] = useState<Record<string, Problem[]>>({})
   const poolReqRef = useRef<Set<string>>(new Set())
+  // 🔴 과정 풀이 도착할 때마다 setPools 를 따로 부르면 안 된다.
+  //    아래 poolProblems 는 **누적된 전체**를 다시 훑어 중복을 제거하는데, 과정 25개를 따로 넣으면
+  //    그 계산이 25번 돈다(1+2+…+25 = 325 과정분 = 필요한 일의 13배). problems 배열도 그때마다 새로 만들어진다.
+  //    실측(2026-09-02, 맥북·재원생 72명): 앱을 열면 **6.9초짜리 완전 멈춤이 3번, 총 23.1초** 메인 스레드가 막혔다.
+  //    → 정원 선생님 신고 「수업준비를 누르면 렉걸린것처럼 화면이 멈춰요」·「자료가 하나도 없어요」의 원인.
+  //      (멈춰 있는 동안 목록이 비어 보인다. 자료가 없는 게 아니라 아직 못 그린 것이다.)
+  //    도착분을 300ms 창으로 모아 **한 번에** 넣는다. 최종 데이터는 똑같다.
+  const poolPendingRef = useRef<Record<string, Problem[]>>({})
+  const poolFlushRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   function ensureCourse(courseId: string) {
     if (!courseId || poolReqRef.current.has(courseId)) return
     poolReqRef.current.add(courseId)
     loadPool(courseId).then(arr => {
-      if (arr.length) setPools(prev => prev[courseId] ? prev : { ...prev, [courseId]: arr })
+      if (!arr.length) return
+      poolPendingRef.current[courseId] = arr
+      if (poolFlushRef.current) return                 // 이미 예약돼 있으면 거기에 얹힌다
+      poolFlushRef.current = setTimeout(() => {
+        poolFlushRef.current = null
+        const add = poolPendingRef.current
+        poolPendingRef.current = {}
+        setPools(prev => {
+          let changed = false
+          const next = { ...prev }
+          for (const [k, v] of Object.entries(add)) if (!next[k]) { next[k] = v; changed = true }
+          return changed ? next : prev
+        })
+      }, 300)
     })
   }
   // 사용 흔적이 있는 과정 자동 로드 (학생 학년·학습지·교재)
@@ -331,15 +353,33 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   //    → 「유형별 2번째 문제」(기본과제 2회차)가 1번째와 **같은 문제**로 나갔다.
   //      중2 15문항 중 14개, 고1 15문항 중 9개가 어제 것과 똑같이 나간 사고의 원인.
   //    id 기준으로 한 벌만 남긴다. 뽑기·오답드릴 등 문제은행을 쓰는 모든 곳이 같이 낫는다.
+  //    🔴 **누적식으로 합친다.** 예전에는 과정이 하나 도착할 때마다 「지금까지 받은 전부」를 처음부터
+  //       다시 훑어 중복을 제거했다. 과정이 20여 개면 같은 문항을 20번 다시 검사하는 셈이라
+  //       메인 스레드가 통째로 멈춘다(실측: 총 23.1초, 한 번에 6.9초).
+  //       이미 합친 과정은 건너뛰고 **새로 온 과정만** 뒤에 붙인다 — 결과 배열은 완전히 같다.
+  const mergedPoolRef = useRef<{ courses: Set<string>; seen: Set<string>; out: Problem[] }>(
+    { courses: new Set(), seen: new Set(), out: [] })
   const poolProblems = useMemo(() => {
-    const seen = new Set<string>()
-    const out: Problem[] = []
-    for (const p of Object.values(pools).flat()) {
-      if (seen.has(p.id)) continue
-      seen.add(p.id); out.push(p)
+    const m = mergedPoolRef.current
+    let added = false
+    for (const [course, arr] of Object.entries(pools)) {
+      if (m.courses.has(course)) continue
+      m.courses.add(course); added = true
+      for (const p of arr) {
+        if (m.seen.has(p.id)) continue
+        m.seen.add(p.id); m.out.push(p)
+      }
     }
-    return out
+    // 소비 측이 갱신을 알아채려면 참조가 바뀌어야 한다(내용은 그대로).
+    return added ? m.out.slice() : m.out
   }, [pools])
+
+  // 🔴 problems 는 20만 개 규모다. store 객체 안에서 매 렌더마다 새로 spread 하면
+  //    그 자체가 수백 ms 씩 메인 스레드를 먹는다(위 실측 23.1초의 일부).
+  //    입력이 안 바뀌면 같은 배열을 재사용한다 — 참조가 유지되니 소비 측 재계산도 같이 준다.
+  const problems = useMemo(
+    () => [...SEED_PROBLEMS, ...state.customProblems.filter(p => !p.id.startsWith('mf')), ...poolProblems],
+    [state.customProblems, poolProblems])
 
   // 1회 마이그레이션: studentId 없는 옛 교재를 채점 기록으로 학생에게 귀속
   // (교재가 학생별로 안 나뉘어 채점판에 모든 학생 교재가 섞여 나오던 문제 해결)
@@ -475,8 +515,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setBranchScope: setBranch,
     ensureCourse,
     wbItems: mergeWbItems(state.wbItems, derivedWbItems),   // 수동 등록분이 매칭 교재 파생분을 덮어씀
-    // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀
-    problems: [...SEED_PROBLEMS, ...state.customProblems.filter(p => !p.id.startsWith('mf')), ...poolProblems],
+    // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀 (위에서 memo)
+    problems,
 
     addProblem: p => { set(s => ({ ...s, customProblems: [...s.customProblems, p] })); cloud.upsert(cloud.T.problems, p.id, p) },
     removeProblem: id => { set(s => ({ ...s, customProblems: s.customProblems.filter(p => p.id !== id) })); cloud.del(cloud.T.problems, id) },
