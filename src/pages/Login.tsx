@@ -130,5 +130,12 @@ function translate(msg: string, role: 'teacher' | 'student'): string {
   if (/already registered/i.test(msg)) return '이미 가입된 이메일입니다. 로그인해 주세요.'
   if (/signups? (are )?disabled|not allowed/i.test(msg)) return '신규 가입이 막혀 있습니다. 기존 계정으로 로그인해 주세요.'
   if (/Password should be at least/i.test(msg)) return '비밀번호는 6자 이상이어야 합니다.'
+  // 🔴 서버(Supabase) 사용량 한도 초과로 프로젝트 전체가 잠긴 상태(402).
+  //    2026-09-02 실제로 이 영어 원문이 그대로 떠서 「비밀번호가 틀렸나」로 오해했다.
+  //    아이디·비밀번호와 무관하고, 아무도 못 들어온다는 것을 분명히 말해 준다.
+  if (/exceed_egress_quota|restricted due to the following violations|quota/i.test(msg))
+    return '서버 사용량 한도를 넘어 잠시 잠겨 있습니다. 아이디·비밀번호 문제가 아니라 지금은 아무도 들어올 수 없어요. 선생님께 알려 주세요.'
+  if (/Failed to fetch|NetworkError|Load failed/i.test(msg))
+    return '서버에 연결하지 못했습니다. 인터넷 연결을 확인하고 다시 시도해 주세요.'
   return msg
 }
