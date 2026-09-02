@@ -318,15 +318,27 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   //    도착분을 300ms 창으로 모아 **한 번에** 넣는다. 최종 데이터는 똑같다.
   const poolPendingRef = useRef<Record<string, Problem[]>>({})
   const poolFlushRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const poolFirstPendingRef = useRef<number | null>(null)
   function ensureCourse(courseId: string) {
     if (!courseId || poolReqRef.current.has(courseId)) return
     poolReqRef.current.add(courseId)
     loadPool(courseId).then(arr => {
       if (!arr.length) return
       poolPendingRef.current[courseId] = arr
-      if (poolFlushRef.current) return                 // 이미 예약돼 있으면 거기에 얹힌다
+      // 도착이 이어지는 동안은 기다렸다가 **한 번에** 넣는다(디바운스 600ms).
+      // 다만 계속 밀리면 안 되니 첫 도착으로부터 4초가 지나면 그때는 바로 넣는다.
+      // 합치는 계산 자체는 누적식이라 싸졌지만, 넣을 때마다 problems 배열이 새로 만들어지고
+      // 화면들이 다시 그려지는 비용은 남는다 — 그 횟수를 줄이는 것이 목적이다.
+      // 실측: 3번 나눠 넣으면 4.9초짜리 멈춤이 3번(총 14.7초).
+      if (poolFirstPendingRef.current == null) poolFirstPendingRef.current = Date.now()
+      const overdue = Date.now() - poolFirstPendingRef.current >= 4000
+      if (poolFlushRef.current) {
+        if (!overdue) clearTimeout(poolFlushRef.current)   // 아직 여유 → 뒤로 미룬다
+        else return                                        // 이미 곧 들어간다
+      }
       poolFlushRef.current = setTimeout(() => {
         poolFlushRef.current = null
+        poolFirstPendingRef.current = null
         const add = poolPendingRef.current
         poolPendingRef.current = {}
         setPools(prev => {
@@ -335,7 +347,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           for (const [k, v] of Object.entries(add)) if (!next[k]) { next[k] = v; changed = true }
           return changed ? next : prev
         })
-      }, 300)
+      }, overdue ? 0 : 600)
     })
   }
   // 사용 흔적이 있는 과정 자동 로드 (학생 학년·학습지·교재)
