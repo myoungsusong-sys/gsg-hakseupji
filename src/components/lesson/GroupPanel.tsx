@@ -803,11 +803,27 @@ function GroupLiveMonitor({ students }: { students: Student[] }) {
   const [replayOpen, setReplayOpen] = useState(false)   // 🎬 풀이 다시보기
 
   // 3초 간격 폴링 — 반 학생들의 최신 풀이 스냅샷
+  //
+  // 🔴 첫 조회만 「최근 1시간」을 통째로 받고, 그 뒤로는 **직전 조회 이후 갱신된 행만** 받아
+  //    캐시에 덮어쓴다. 전량을 3초마다 받으면 학생 필기 JPEG 전원분이 계속 재전송돼
+  //    Supabase 대역폭이 터진다(2026-09-02 실제로 402 로 프로젝트가 잠겼다 — live.ts 주석 참조).
+  //    화면에 보이는 것은 캐시라 「n초 전」 표기와 지난 학생 목록은 그대로 유지된다.
+  const cacheRef = useRef<Map<string, LiveSolve>>(new Map())
+  const sinceRef = useRef<string | undefined>(undefined)
   useEffect(() => {
     let alive = true
+    cacheRef.current = new Map()
+    sinceRef.current = new Date(Date.now() - 60 * 60 * 1000).toISOString()   // 첫 판: 최근 1시간
     const load = async () => {
-      const all = await fetchLive()
-      if (alive) setItems(all.filter(v => ids.has(v.studentId)).sort((a, b) => b.at - a.at))
+      const prevSince = sinceRef.current
+      // 서버·클라이언트 시계 차이를 감안해 20초 겹쳐 받는다 (놓치는 것보다 조금 겹치는 게 낫다)
+      const nextSince = new Date(Date.now() - 20 * 1000).toISOString()
+      const fresh = await fetchLive(prevSince)
+      if (!alive) return
+      sinceRef.current = nextSince
+      for (const v of fresh) cacheRef.current.set(v.studentId, v)
+      setItems([...cacheRef.current.values()]
+        .filter(v => ids.has(v.studentId)).sort((a, b) => b.at - a.at))
     }
     load()
     const t = setInterval(() => { load(); setTick(x => x + 1) }, 3000)

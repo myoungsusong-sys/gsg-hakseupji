@@ -389,6 +389,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!cloud.on) return
     let unsub = () => {}
+    let cancelPending = () => {}
     let alive = true
     ;(async () => {
       const remote = await loadAll()
@@ -408,16 +409,43 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       }
       if (alive) {
         setSynced(true)
-        unsub = cloud.subscribe(() => {
-          loadAll().then(r => {
+        // 🔴 실시간 변경 → 전량 재로드를 **묶어서** 한다.
+        //    예전에는 변경 한 건마다 loadAll() 을 그대로 다시 돌렸다. 수업 중에는 학생이 제출할 때마다
+        //    접속한 기기 전부가 동시에 전 테이블을 다시 받아, 제출 20건이면 재로드도 20번이었다.
+        //    (2026-09-02 Supabase egress 초과로 프로젝트가 402 로 잠긴 사고의 원인 중 하나)
+        //    → 몰려 들어오는 변경은 2초 안에 하나로 합치고, 재로드 사이는 최소 10초를 띄운다.
+        //      실시간 풀이 모니터는 따로 3초마다 돌기 때문에 수업 화면 체감은 그대로다.
+        const BURST_MS = 2_000     // 연달아 오는 변경을 한 번으로 합치는 창
+        const MIN_GAP_MS = 10_000  // 재로드끼리 최소 간격
+        let timer: ReturnType<typeof setTimeout> | null = null
+        let lastRunAt = 0
+        let running = false
+        let queued = false
+        const runReload = async () => {
+          timer = null
+          if (!alive) return
+          if (running) { queued = true; return }   // 앞 요청이 아직이면 끝난 뒤 한 번만 더
+          running = true
+          lastRunAt = Date.now()
+          try {
+            const r = await loadAll()
             if (!r || !alive) return
             setState(prev => fromCloud(r, prev))
             setLoadFail(Object.keys(r.__failed).length ? r.__failed : null)
-          })
-        })
+          } finally {
+            running = false
+            if (queued && alive) { queued = false; scheduleReload() }
+          }
+        }
+        const scheduleReload = () => {
+          if (timer || !alive) return
+          timer = setTimeout(runReload, Math.max(BURST_MS, MIN_GAP_MS - (Date.now() - lastRunAt)))
+        }
+        unsub = cloud.subscribe(scheduleReload)
+        cancelPending = () => { if (timer) { clearTimeout(timer); timer = null } }
       }
     })()
-    return () => { alive = false; unsub() }
+    return () => { alive = false; unsub(); cancelPending() }
   }, [])
 
   const set = setState

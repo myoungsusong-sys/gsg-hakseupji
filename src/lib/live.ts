@@ -34,11 +34,20 @@ export async function pushLive(v: LiveSolve): Promise<void> {
   }
 }
 
-// 선생님: 전체 live 스냅샷 조회 (첨삭 노트 live_note_* 는 제외)
-export async function fetchLive(): Promise<LiveSolve[]> {
+// 선생님: live 스냅샷 조회 (첨삭 노트 live_note_* 는 제외)
+//
+// 🔴 대역폭 주의 — 이 함수는 3초마다 돌고, 각 행에는 학생 필기 JPEG dataURL(장당 10~13KB)이 들어 있다.
+//    전량(`live_%`)을 매번 받으면 「그동안 한 번이라도 푼 학생」 전원분이 3초마다 다시 내려온다.
+//    2026-09-02 이것 때문에 Supabase egress 가 한 달 30.8GB(무료 한도 5GB의 6.2배)까지 올라가
+//    프로젝트 전체가 402 로 잠겼고, 학습지앱·학원관리앱이 같이 멈췄다.
+//    → `sinceIso` 를 주면 **그 시각 이후 갱신된 행만** 받는다. 지금 필기 중인 학생만 오간다.
+//    호출부는 받은 것을 캐시에 병합해 쓴다(GroupPanel 의 라이브 모니터).
+export async function fetchLive(sinceIso?: string): Promise<LiveSolve[]> {
   if (supabase) {
     try {
-      const { data } = await supabase.from('hj_settings').select('data').like('id', 'live_%')
+      let q = supabase.from('hj_settings').select('data').like('id', 'live_%')
+      if (sinceIso) q = q.gt('updated_at', sinceIso)
+      const { data } = await q
       return (data ?? [])
         .filter((r: any) => !String(r.data?.__id ?? '').startsWith('live_note_'))
         .map((r: any) => r.data?.value).filter((v: any): v is LiveSolve => !!v && !!v.studentId && !!v.img)
