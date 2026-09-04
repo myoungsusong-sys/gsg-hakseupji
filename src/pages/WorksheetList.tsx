@@ -843,7 +843,7 @@ function fromLocalInput(v: string): string | undefined {
   return isNaN(d.getTime()) ? undefined : d.toISOString()
 }
 
-function AssignModal({ title, students, initial, initialReveal, initialKind, initialExam, klassOrder, onClose, onSubmit }: {
+export function AssignModal({ title, students, initial, initialReveal, initialKind, initialExam, klassOrder, onClose, onSubmit }: {
   title: string
   students: Student[]
   klassOrder: string[]                    // 반 표시 순서 (관리 > 반 순서)
