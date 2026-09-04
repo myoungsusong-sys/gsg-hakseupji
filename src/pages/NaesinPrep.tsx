@@ -8,7 +8,7 @@ import ProblemContent from '../components/ProblemContent'
 import { AssignModal } from './WorksheetList'
 import {
   TEXTBOOK_GRADE_FILTERS, RECOMMEND_GRADE_FILTERS, PUBLISHERS,
-  naesinCurricula, textbookSets, recommendSets, pickNaesinChain, naesinCount, indexPool, filterUsable,
+  naesinCurricula, textbookSets, recommendSets, publisherSets, publishersFor, pickNaesinChain, naesinCount, indexPool, filterUsable,
   type NaesinSet,
 } from '../lib/naesin'
 
@@ -116,8 +116,15 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
   useEffect(() => { setChecked(new Set()) }, [gradeIdx, publisher, q, mode])
 
   const sets = useMemo(() => {
-    if (mode === 'textbook' && publisher !== '전체') return []      // 그 출판사 문항은 없다 — 아래에서 "준비 중"
-    const all = curricula.flatMap((c) => (mode === 'textbook' ? textbookSets(c) : recommendSets(c)))
+    let all: NaesinSet[]
+    if (mode === 'recommend') all = curricula.flatMap(recommendSets)
+    else if (publisher === '전체') {
+      // 원본의 「전체」= 모든 출판사 행. 목차가 있는 출판사는 그 행으로, 목차가 없는 과정은 「공통」 세트로
+      all = curricula.flatMap((c) => {
+        const pubs = publishersFor(c.id)
+        return pubs.length ? pubs.flatMap((p) => publisherSets(c, p)) : textbookSets(c)
+      })
+    } else all = curricula.flatMap((c) => publisherSets(c, publisher))      // 목차가 없으면 빈 표 → "준비 중"
     const needle = q.trim()
     return needle ? all.filter((s) => s.title.includes(needle) || s.subtitle.includes(needle)) : all
   }, [curricula, mode, publisher, q])

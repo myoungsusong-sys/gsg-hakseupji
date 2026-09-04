@@ -1,6 +1,7 @@
 import type { Problem, Diff } from '../types'
 import { CURRICULA, curriculumFor, type Curriculum, type BigUnit, type MidUnit } from '../data/curriculum'
 import { POOL_COURSES } from '../data/pool'
+import tocRaw from '../data/textbookToc.json'
 
 /**
  * 🏫 내신 대비 세트 — 매쓰플랫 「내신관」과 **같은 목록·같은 문구**를 우리 문제 풀로 만든다
@@ -238,4 +239,56 @@ export function naesinCount(set: NaesinSet, index: PoolIndex): number {
   let n = 0
   for (const t of set.typeIds) { n += index.get(t)?.length ?? 0; if (n >= set.count) return set.count }
   return n
+}
+
+// ── 출판사별 교과서 세트 — 공개 목차(단원·쪽수·단원마무리 코너)를 우리 문항으로 채운다 ───────
+//  원본 탭2의 「교학사 · [중1-1] 수와 연산-교학사1 · (교과서 - 교학사) p.24~26 도담도담 생각 다지기」와 같은 행.
+//  목차는 출판사 공식 사이트·서점 목차 등 공개 자료에서 모았다(src/data/textbookToc.json). 문항은 우리 풀.
+//  유료 서비스 화면의 문항을 옮기지 않는다 — 그 권리는 출판사·학교 것이다.
+export interface TocReview { name: string; pageStart?: number | null; pageEnd?: number | null }
+export interface TocMid { ourMidId?: string | null; name: string; pageStart?: number | null; pageEnd?: number | null }
+export interface TocUnit { ourUnitId?: string | null; name: string; pageStart?: number | null; pageEnd?: number | null; review?: TocReview[]; mids?: TocMid[] }
+export interface TocBook { source?: string; confidence?: string; units: TocUnit[] }
+export type TextbookToc = Record<string, Record<string, TocBook>>
+export const TEXTBOOK_TOC = tocRaw as unknown as TextbookToc
+
+/** 이 과정에 목차가 있는 출판사들 */
+export function publishersFor(courseId: string): string[] {
+  return Object.keys(TEXTBOOK_TOC[courseId] ?? {})
+}
+
+const pageRange = (a?: number | null, b?: number | null) =>
+  a && b ? `p.${a}~${b}` : a ? `p.${a}~` : ''
+
+/**
+ * 출판사 세트 — 교과서 대단원마다 단원마무리 코너 수만큼(없으면 3개) 세트를 만든다.
+ * 앞 코너들은 기초·실전, 마지막 코너(단원 매듭짓기류)는 고난도.
+ */
+export function publisherSets(cur: Curriculum, publisher: string): NaesinSet[] {
+  const book = TEXTBOOK_TOC[cur.id]?.[publisher]
+  if (!book) return []
+  const out: NaesinSet[] = []
+  book.units.forEach((tu) => {
+    const ours = cur.units.find((u) => u.id === tu.ourUnitId) ?? cur.units.find((u) => u.name === tu.name)
+    if (!ours) return
+    const reviews: TocReview[] = tu.review && tu.review.length
+      ? tu.review
+      : [{ name: '생각 다지기' }, { name: '생각 다지기' }, { name: '단원 매듭짓기' }]
+    reviews.forEach((rv, i) => {
+      const level: NaesinLevel = i === reviews.length - 1 ? '고난도' : i === 0 ? '기초' : '실전'
+      const pages = pageRange(rv.pageStart, rv.pageEnd) || pageRange(tu.pageStart, tu.pageEnd)
+      out.push({
+        key: `${cur.id}|${ours.id}|pub:${publisher}|${i}`,
+        courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
+        unitName: ours.name, level,
+        title: `내신대비 | [${semesterTag(cur)}] ${tu.name}-${publisher}${i + 1}`,
+        subtitle: `(교과서 - ${publisher}) ${pages} ${rv.name}`.replace(/\s+/g, ' ').trim(),
+        publisher,
+        diffLabel: LEVEL_DIFF[level],
+        typeIds: typesOfUnit(ours),
+        count: COUNT,
+      })
+    })
+  })
+  return out
 }
