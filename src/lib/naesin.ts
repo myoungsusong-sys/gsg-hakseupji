@@ -3,85 +3,150 @@ import { CURRICULA, curriculumFor, type Curriculum, type BigUnit, type MidUnit }
 import { POOL_COURSES } from '../data/pool'
 
 /**
- * 🏫 내신 대비 세트 — 매쓰플랫 「내신관」과 같은 목록을 우리 문제 풀로 만든다 (2026-09-04 명수쌤 지시)
+ * 🏫 내신 대비 세트 — 매쓰플랫 「내신관」과 **같은 목록·같은 문구**를 우리 문제 풀로 만든다
+ *   (2026-09-04 명수쌤 "매쓰플랫과 동일하게 만들어줘" — 두 번 강조)
  *
- * 매쓰플랫 내신관은 세 가지를 판다: ① 학교별 기출 ② 교과서 종별 대비 ③ 유형 기반 추천.
- * 우리는 ①②의 원본(학교 기출지·교과서 문항)이 없다 — 저작권 자료라 수록 못 한다.
- * 대신 **교육과정 단원 트리 + 자체 문제 풀**로 같은 모양의 목록을 만든다:
- *   · 「내신 대비 교과서」 탭 = **대단원(교과서 단원) 단위** 세트 — 시험 범위가 "3단원까지"로 오니까
- *   · 「내신 대비 추천」 탭  = **중단원(유형) 단위** 세트 × 난이도 3종 — 매쓰플랫 추천 목록과 같은 알갱이
+ * 원본 실측(teacher.mathflat.com/lesson-preparation/school-exam, 2026-09-04):
+ *   탭2 「내신 대비 교과서」 — 학년 필터 19개(중1(22개정)…기하) + 출판사 10개, 표 칸 선택·학년·출판사·학습지명·문제수·미리보기·수정·출제
+ *        제목 `내신대비 | [중1-1] 수와 연산-교학사1` · 부제 `(교과서 - 교학사) p.24~26 도담도담 생각 다지기` · 문제수 29
+ *   탭3 「내신 대비 추천」 — 학년 필터 18개(전체·중1…기하), 표 칸 선택·학년·학습지명·문제수·난이도·미리보기·수정·출제
+ *        제목 `내신대비 | [중1-1] 01 소인수분해1` / `…2` / `…3(고난도)` · 「자동 채점」 뱃지 · 부제 중단원명 · 25문제 · 난이도 중/중/중상
  *
- * 세트는 미리 저장해 두지 않는다. 목록은 매번 계산하고, [출제하기]를 누르는 순간에만 학습지로 굳힌다
- * (매쓰플랫도 그렇다 — 목록에 있는 건 "만들 수 있는 것"이지 "만들어 둔 것"이 아니다).
+ * 우리가 못 갖춘 것 하나 — **교과서(출판사별) 문항 원본**. 저작권 자료라 수록하지 않는다.
+ * 그래서 탭2의 세트는 출판사 대신 「공통」으로 달고, 대단원(시험 범위) 단위로 1·2·3번을 만든다
+ * (원본의 -교학사1·2 = 단원 중간 정리, -교학사3 = 단원 매듭짓기 → 우리도 1·2 = 기초·실전, 3 = 고난도).
+ * 출판사를 고르면 표는 비고 "준비 중"이라고 말한다 — 있는 척하지 않는다.
+ *
+ * 세트는 미리 저장하지 않는다. 목록은 매번 계산하고, [출제하기]를 누를 때만 학습지로 굳힌다(원본도 그렇다).
  */
 
 export type NaesinLevel = '기초' | '실전' | '고난도'
-
-export interface NaesinSet {
-  key: string                 // 안정적인 식별자 (course|unit|mid|level)
-  courseId: string
-  grade: string               // '중1-1' · '고1' …
-  courseLabel: string         // '중학교 1학년 1학기 (22개정)'
-  unitName: string            // 대단원 — 표의 파란 부제
-  midName?: string            // 중단원 — 추천 탭에서만
-  title: string               // '내신대비 | [중1-1] 01 소인수분해 (실전)'
-  level: NaesinLevel
-  diffLabel: string           // 표의 「난이도」 칸 — 중하 / 중 / 중상
-  typeIds: string[]           // 이 세트가 덮는 유형
-  count: number               // 목표 문항 수
-}
-
-/** 난이도 배합 — 매쓰플랫 추천 목록의 「중하 / 중 / 중상」 3단과 같은 뜻 */
-const LEVEL_MIX: Record<NaesinLevel, { diffs: Diff[]; label: string; count: number }> = {
-  기초:  { diffs: [1, 2, 2, 3],    label: '중하', count: 20 },
-  실전:  { diffs: [2, 3, 3, 4],    label: '중',   count: 25 },
-  고난도: { diffs: [3, 4, 4, 5],   label: '중상', count: 20 },
-}
 export const LEVELS: NaesinLevel[] = ['기초', '실전', '고난도']
 
-/** 내신 대비를 만들 수 있는 과정 — 풀이 있고 교육과정 트리가 진짜로 있는 것만 (폴백 트리에 걸리면 엉뚱한 단원이 붙는다) */
-export function naesinCourses(): Curriculum[] {
-  return (POOL_COURSES as readonly string[])
-    .filter((id) => CURRICULA.some((c) => c.id === id))
-    .map((id) => curriculumFor(id))
-    .filter((c) => !c.subject || c.subject === '수학')       // 내신관은 수학 — 과학은 별도
+export interface NaesinSet {
+  key: string
+  courseId: string
+  grade: string               // 표의 「학년」 칸 윗줄 — '중1' · '고1' (원본과 같은 형식)
+  revision: string            // 아랫줄 — '(22개정)' · '(15개정)'
+  semester: string            // 괄호 학기 표기 — '중1-1' · '고1'
+  unitName: string
+  midName?: string
+  title: string               // 원본 형식 그대로
+  subtitle: string            // 원본의 파란 부제 자리
+  publisher: string           // 탭2 「출판사」 칸 — 우리는 '공통'
+  level: NaesinLevel
+  diffLabel: string           // 탭3 「난이도」 — 중 / 중 / 중상 (원본과 같음)
+  typeIds: string[]
+  count: number               // 원본과 같이 25
 }
 
+// ── 원본 필터 문구 그대로 ────────────────────────────────────────────────────
+/** 탭2 학년 필터 19개 — 원본 순서·문구 그대로. 우리 과정으로 이어지는 것만 courses 가 채워진다 */
+export const TEXTBOOK_GRADE_FILTERS: { label: string; courses: string[] }[] = [
+  { label: '중1(22개정)', courses: ['m1-1', 'm1-2'] },
+  { label: '중1', courses: [] },
+  { label: '중2(22개정)', courses: ['m2-1', 'm2-2'] },
+  { label: '중2', courses: [] },
+  { label: '중3', courses: ['m3-1', 'm3-2', 'm3-2-2015'] },
+  { label: '공통수학1', courses: ['h-cm1'] },
+  { label: '수학(상)', courses: ['h-hs1'] },
+  { label: '공통수학2', courses: ['h-cm2'] },
+  { label: '수학(하)', courses: ['h-hs2'] },
+  { label: '대수', courses: ['h-alg'] },
+  { label: '수학 I', courses: ['h-s1'] },
+  { label: '미적분1', courses: ['h-calc1'] },
+  { label: '수학 II', courses: ['h-s2'] },
+  { label: '확통(22개정)', courses: ['h-stat'] },
+  { label: '확통', courses: [] },
+  { label: '미적분2(22개정)', courses: ['h-calc2'] },
+  { label: '미적분', courses: ['h-calc15'] },
+  { label: '기하(22개정)', courses: ['h-geo'] },
+  { label: '기하', courses: [] },
+]
+/** 탭3 학년 필터 — 원본은 「전체」로 시작하고 22개정 중복 칩이 없다 */
+export const RECOMMEND_GRADE_FILTERS: { label: string; courses: string[] }[] = [
+  { label: '전체', courses: [] },
+  { label: '중1', courses: ['m1-1', 'm1-2'] },
+  { label: '중2', courses: ['m2-1', 'm2-2'] },
+  { label: '중3', courses: ['m3-1', 'm3-2', 'm3-2-2015'] },
+  { label: '공통수학1', courses: ['h-cm1'] },
+  { label: '수학(상)', courses: ['h-hs1'] },
+  { label: '공통수학2', courses: ['h-cm2'] },
+  { label: '수학(하)', courses: ['h-hs2'] },
+  { label: '대수', courses: ['h-alg'] },
+  { label: '수학 I', courses: ['h-s1'] },
+  { label: '미적분1', courses: ['h-calc1'] },
+  { label: '수학 II', courses: ['h-s2'] },
+  { label: '확통(22개정)', courses: ['h-stat'] },
+  { label: '확통', courses: [] },
+  { label: '미적분2(22개정)', courses: ['h-calc2'] },
+  { label: '미적분', courses: ['h-calc15'] },
+  { label: '기하(22개정)', courses: ['h-geo'] },
+  { label: '기하', courses: [] },
+]
+/** 탭2 출판사 필터 — 원본 그대로. 「전체」 외에는 우리 문항이 없다 */
+export const PUBLISHERS = ['전체', '교학사', '능률', '동아', '미래엔', '비상', '와이비엠', '지학사', '천재(김화경)', '천재(김동재)'] as const
+export const OUR_PUBLISHER = '공통'
+
+/** 풀이 있고 교육과정 트리가 진짜로 있는 과정만 (폴백 트리에 걸리면 엉뚱한 단원이 붙는다) */
+export function hasNaesin(courseId: string): boolean {
+  return (POOL_COURSES as readonly string[]).includes(courseId) && CURRICULA.some((c) => c.id === courseId)
+}
+export function naesinCurricula(courseIds: string[]): Curriculum[] {
+  return courseIds.filter(hasNaesin).map(curriculumFor).filter((c) => !c.subject || c.subject === '수학')
+}
+
+// ── 세트 만들기 ─────────────────────────────────────────────────────────────
 const zero2 = (n: number) => String(n).padStart(2, '0')
-const bracket = (grade: string) => `[${grade.replace(/^(중|고)(\d)-(\d)$/, '$1$2-$3')}]`
+const revisionOf = (label: string) => (label.match(/\((\d+)개정\)/)?.[1] ?? '22') + '개정'
+/** '중1-1' → '중1', '고1' → '고1' (표의 학년 칸) */
+const gradeOnly = (g: string) => g.replace(/^(중|고)(\d)-\d$/, '$1$2')
+
+/** 원본의 -교학사1 / -교학사2 / -교학사3 과 같은 꼬리표 */
+const LEVEL_NO: Record<NaesinLevel, string> = { 기초: '1', 실전: '2', 고난도: '3(고난도)' }
+/** 원본 추천 목록의 난이도 칸 — 1·2번은 「중」, 3번은 「중상」 */
+const LEVEL_DIFF: Record<NaesinLevel, string> = { 기초: '중', 실전: '중', 고난도: '중상' }
+const LEVEL_MIX: Record<NaesinLevel, Diff[]> = { 기초: [1, 2, 2, 3], 실전: [2, 3, 3, 4], 고난도: [3, 4, 4, 5] }
+const COUNT = 25
 
 function typesOfMid(m: MidUnit): string[] { return m.subs.flatMap((s) => s.types.map((t) => t.id)) }
 function typesOfUnit(u: BigUnit): string[] { return u.mids.flatMap(typesOfMid) }
 
-/** 「내신 대비 교과서」 — 대단원 단위. 시험 범위 단위로 뽑는다 */
+/** 탭2 「내신 대비 교과서」 — 대단원 × 1·2·3번. 제목 `[중1-1] 수와 연산-공통1` */
 export function textbookSets(cur: Curriculum): NaesinSet[] {
   return cur.units.flatMap((u, ui) =>
     LEVELS.map((level) => ({
       key: `${cur.id}|${u.id}|*|${level}`,
-      courseId: cur.id, grade: cur.grade, courseLabel: cur.label,
+      courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
       unitName: u.name, level,
-      title: `내신대비 | ${bracket(cur.grade)} ${zero2(ui + 1)} ${u.name} (${level})`,
-      diffLabel: LEVEL_MIX[level].label,
+      title: `내신대비 | [${cur.grade}] ${u.name}-${OUR_PUBLISHER}${LEVEL_NO[level]}`,
+      subtitle: `(단원 정리 - ${OUR_PUBLISHER}) ${zero2(ui + 1)} ${u.name} ${level === '고난도' ? '단원 매듭짓기' : '생각 다지기'}`,
+      publisher: OUR_PUBLISHER,
+      diffLabel: LEVEL_DIFF[level],
       typeIds: typesOfUnit(u),
-      count: LEVEL_MIX[level].count,
+      count: COUNT,
     })),
   )
 }
 
-/** 「내신 대비 추천」 — 중단원(유형 묶음) 단위 × 난이도 3종 */
+/** 탭3 「내신 대비 추천」 — 중단원 × 1·2·3(고난도). 제목 `[중1-1] 01 소인수분해1` */
 export function recommendSets(cur: Curriculum): NaesinSet[] {
   const out: NaesinSet[] = []
-  cur.units.forEach((u, ui) => {
-    u.mids.forEach((m, mi) => {
+  let n = 0
+  cur.units.forEach((u) => {
+    u.mids.forEach((m) => {
+      n += 1
       LEVELS.forEach((level) => {
         out.push({
           key: `${cur.id}|${u.id}|${m.id}|${level}`,
-          courseId: cur.id, grade: cur.grade, courseLabel: cur.label,
+          courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
           unitName: u.name, midName: m.name, level,
-          title: `내신대비 | ${bracket(cur.grade)} ${zero2(ui + 1)}-${mi + 1} ${m.name} (${level})`,
-          diffLabel: LEVEL_MIX[level].label,
+          title: `내신대비 | [${cur.grade}] ${zero2(n)} ${m.name}${LEVEL_NO[level]}`,
+          subtitle: m.name,
+          publisher: OUR_PUBLISHER,
+          diffLabel: LEVEL_DIFF[level],
           typeIds: typesOfMid(m),
-          count: LEVEL_MIX[level].count,
+          count: COUNT,
         })
       })
     })
@@ -90,42 +155,42 @@ export function recommendSets(cur: Curriculum): NaesinSet[] {
 }
 
 /**
- * 세트 → 실제 문항 고르기.
- *  · 유형을 고르게 돈다 (한 유형에 몰리지 않게)
- *  · 같은 쌍둥이 그룹(숫자만 다른 문제)은 한 세트에 하나만
- *  · 난이도는 LEVEL_MIX 순환 — 없으면 이웃 난이도로 대체, 그래도 없으면 건너뛴다
- * 풀에 문항이 부족하면 목표보다 적게 돌려준다 — 억지로 채우지 않는다 (표에 실제 수를 보여준다).
+ * 세트 → 실제 문항.
+ *  · 유형을 고르게 돈다 · 같은 쌍둥이 그룹은 한 세트에 하나만 · 난이도는 LEVEL_MIX 순환(없으면 이웃 난이도)
+ * 풀이 모자라면 목표보다 적게 돌려준다 — 억지로 채우지 않고 표에 실제 수를 보여준다.
  */
-export function pickNaesinProblems(set: NaesinSet, pool: Problem[]): Problem[] {
-  const byType = new Map<string, Problem[]>()
-  for (const p of pool) {
-    if (!set.typeIds.includes(p.typeId)) continue
-    if (!byType.has(p.typeId)) byType.set(p.typeId, [])
-    byType.get(p.typeId)!.push(p)
-  }
+/**
+ * 풀을 유형별로 한 번만 색인한다 — 세트마다 전체 풀(수만 문항)을 훑으면 화면이 멈춘다
+ * (2026-09-04 「전체」 필터에서 세트 1,300여 개 × 풀 수만 건 = 렌더러가 30초 넘게 얼어붙었다)
+ */
+export type PoolIndex = Map<string, Problem[]>
+export function indexPool(pool: Problem[]): PoolIndex {
+  const m: PoolIndex = new Map()
+  for (const p of pool) { const a = m.get(p.typeId); if (a) a.push(p); else m.set(p.typeId, [p]) }
+  return m
+}
+
+export function pickNaesinProblems(set: NaesinSet, poolOrIndex: Problem[] | PoolIndex): Problem[] {
+  const byType = poolOrIndex instanceof Map ? poolOrIndex : indexPool(poolOrIndex)
   const types = set.typeIds.filter((t) => (byType.get(t)?.length ?? 0) > 0)
   if (!types.length) return []
 
   const picked: Problem[] = []
   const usedIds = new Set<string>()
   const usedTwins = new Set<string>()
-  const mix = LEVEL_MIX[set.level].diffs
+  const mix = LEVEL_MIX[set.level]
 
   const take = (typeId: string, want: Diff): boolean => {
     const cands = byType.get(typeId) ?? []
-    // 원하는 난이도 → ±1 → 아무거나 순으로 찾되, 이미 쓴 문제·같은 쌍둥이는 뺀다
     const order = [want, (want - 1) as Diff, (want + 1) as Diff, 1, 2, 3, 4, 5] as Diff[]
     for (const d of order) {
+      if (d < 1 || d > 5) continue
       const p = cands.find((c) => c.diff === d && !usedIds.has(c.id) && !(c.twinGroup && usedTwins.has(c.twinGroup)))
-      if (p) {
-        picked.push(p); usedIds.add(p.id); if (p.twinGroup) usedTwins.add(p.twinGroup)
-        return true
-      }
+      if (p) { picked.push(p); usedIds.add(p.id); if (p.twinGroup) usedTwins.add(p.twinGroup); return true }
     }
     return false
   }
 
-  // 유형을 순환하며 하나씩 — 목표 수에 닿거나, 한 바퀴 내내 아무것도 못 집으면 끝
   let i = 0, dry = 0
   while (picked.length < set.count && dry < types.length) {
     const ok = take(types[i % types.length], mix[i % mix.length])
@@ -135,9 +200,9 @@ export function pickNaesinProblems(set: NaesinSet, pool: Problem[]): Problem[] {
   return picked
 }
 
-/** 세트가 덮는 유형 중 풀에 문항이 있는 유형 수 / 후보 문항 수 — 표에 "만들 수 있나"를 보여주려고 */
-export function poolCoverage(set: NaesinSet, pool: Problem[]): { types: number; problems: number } {
-  const ids = new Set(set.typeIds)
-  const hit = pool.filter((p) => ids.has(p.typeId))
-  return { types: new Set(hit.map((p) => p.typeId)).size, problems: hit.length }
+/** 표의 「문제수」 — 후보가 목표보다 많으면 목표치, 적으면 후보 수 (실제 뽑기와 같은 값을 싸게 얻는다) */
+export function naesinCount(set: NaesinSet, index: PoolIndex): number {
+  let n = 0
+  for (const t of set.typeIds) { n += index.get(t)?.length ?? 0; if (n >= set.count) return set.count }
+  return n
 }
