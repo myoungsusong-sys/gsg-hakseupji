@@ -8,7 +8,7 @@ import ProblemContent from '../components/ProblemContent'
 import { AssignModal } from './WorksheetList'
 import {
   TEXTBOOK_GRADE_FILTERS, RECOMMEND_GRADE_FILTERS, PUBLISHERS,
-  naesinCurricula, textbookSets, recommendSets, pickNaesinProblems, naesinCount, indexPool,
+  naesinCurricula, textbookSets, recommendSets, pickNaesinChain, naesinCount, indexPool, filterUsable,
   type NaesinSet,
 } from '../lib/naesin'
 
@@ -71,7 +71,7 @@ function Hall({ onGo }: { onGo: (tab: string) => void }) {
         <section className="rounded-2xl border border-line bg-white p-4">
           <p className="mb-1 text-sm font-black">학교별 기출</p>
           <Row tag="학습지" label="단원별 학습지" to="/make" />
-          <Row tag="학습지" label="학교별 기출 축보" sub="시험지 업로드 → 문제은행" to="/prep/worksheet-upload" />
+          <Row tag="학습지" label="학교별 기출 족보" sub="시험지 업로드 → 문제은행" to="/prep/worksheet-upload" />
           <Row tag="학습지" label="학교별 기출 학습지" sub="중등, 고1 전체 지원" to="/prep/worksheet" />
           <Row tag="교재" label="학교별 기출 교재" sub="중등, 고1 전체 지원" to="/prep/workbook" />
         </section>
@@ -113,7 +113,6 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
   const courseIds = filter.courses.length ? filter.courses : FILTERS.flatMap((f) => f.courses)
   const curricula = useMemo(() => naesinCurricula(courseIds), [courseIds.join(',')])
 
-  useEffect(() => { curricula.forEach((c) => ensureCourse(c.id)) }, [curricula, ensureCourse])
   useEffect(() => { setChecked(new Set()) }, [gradeIdx, publisher, q, mode])
 
   const sets = useMemo(() => {
@@ -128,8 +127,16 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
     const ids = new Set(curricula.flatMap((c) => c.units.flatMap((u) => u.mids.flatMap((m) => m.subs.flatMap((s) => s.types.map((t) => t.id))))))
     return problems.filter((p) => ids.has(p.typeId))
   }, [curricula, problems])
-  const loading = curricula.length > 0 && pool.length === 0
   const index = useMemo(() => indexPool(pool), [pool])
+  /** 과정별로 풀이 도착했나 — 그 과정 유형 중 하나라도 문항이 있으면 도착 */
+  const courseReady = useMemo(() => {
+    const m = new Map<string, boolean>()
+    for (const c of curricula) {
+      const ids = c.units.flatMap((u) => u.mids.flatMap((mm) => mm.subs.flatMap((sub) => sub.types.map((t) => t.id))))
+      m.set(c.id, ids.some((t) => (index.get(t)?.length ?? 0) > 0))
+    }
+    return m
+  }, [curricula, index])
   const counts = useMemo(() => new Map(sets.map((s) => [s.key, naesinCount(s, index)])), [sets, index])
   // 원본처럼 한 페이지씩 — 「전체」는 세트가 천 개를 넘어 한 번에 그리면 느리다
   const PAGE = 30
@@ -137,10 +144,15 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
   useEffect(() => { setPage(0) }, [gradeIdx, publisher, q, mode])
   const pageSets = sets.slice(page * PAGE, page * PAGE + PAGE)
   const pages = Math.max(1, Math.ceil(sets.length / PAGE))
+  // 풀은 **보이는 페이지 + 다음 페이지의 과정만** 싣는다 — 「전체」에서 14과정 35MB를 한꺼번에 받지 않게
+  const needed = useMemo(() => new Set([...pageSets, ...sets.slice((page + 1) * PAGE, (page + 2) * PAGE)].map((x) => x.courseId)), [pageSets, sets, page])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { needed.forEach((id) => ensureCourse(id)) }, [needed])
+  const loading = [...needed].some((id) => !courseReady.get(id))
 
   /** 세트를 학습지로 굳힌다 — 원본도 목록의 세트는 출제 순간에 학습지가 된다 */
   function materialize(set: NaesinSet): string | null {
-    const picked = pickNaesinProblems(set, index)
+    const picked = pickNaesinChain(sets, set, index)
     if (picked.length === 0) { alert('이 범위의 문제가 문제은행에 아직 없습니다.'); return null }
     const id = uid('ws')
     saveWorksheet({
@@ -180,7 +192,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
       <div className="mb-2 flex flex-wrap gap-1.5">
         {FILTERS.map((f, i) => (
           <button key={f.label} type="button" onClick={() => setGradeIdx(i)}
-            className={pill(i === gradeIdx, f.courses.length === 0 && f.label !== '전체')}>{f.label}</button>
+            className={pill(i === gradeIdx, !filterUsable(f))}>{f.label}</button>
         ))}
       </div>
       {/* 출판사 필터 — 탭2에만. 원본 10개 그대로 */}
@@ -197,7 +209,11 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
       {checked.size > 0 && (
         <div className="mb-2 flex items-center gap-3 rounded-xl border border-pine/40 bg-pine-soft/40 px-4 py-2 text-sm">
           <span className="font-bold">{checked.size}개 선택</span>
-          <button type="button" onClick={() => setAssignMany(sets.filter((x) => checked.has(x.key) && (counts.get(x.key) ?? 0) > 0))}
+          <button type="button" onClick={() => {
+              const targets = sets.filter((x) => checked.has(x.key) && (counts.get(x.key) ?? 0) > 0)
+              if (targets.length > 10 && !confirm(`학습지 ${targets.length}개를 한 번에 만듭니다. 계속할까요?`)) return
+              setAssignMany(targets)
+            }}
             className="rounded-lg bg-pine px-3 py-1.5 text-xs font-semibold text-paper hover:bg-pine-dark">출제하기</button>
           <button type="button" onClick={() => setChecked(new Set())} className="text-xs text-ink2 hover:underline">선택 해제</button>
         </div>
@@ -207,9 +223,9 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
           <thead>
             <tr className="border-b border-line bg-paper2/60 text-xs text-ink2">
               <th className="w-10 px-3 py-3">
-                <input type="checkbox" className="h-4 w-4 accent-pine"
-                  checked={sets.length > 0 && sets.every((s) => checked.has(s.key))}
-                  onChange={(e) => setChecked(e.target.checked ? new Set(sets.map((s) => s.key)) : new Set())} />
+                <input type="checkbox" className="h-4 w-4 accent-pine" title="이 페이지 전체 선택"
+                  checked={pageSets.length > 0 && pageSets.every((s) => checked.has(s.key))}
+                  onChange={(e) => setChecked((c) => { const nx = new Set(c); pageSets.forEach((s) => { if (e.target.checked) nx.add(s.key); else nx.delete(s.key) }); return nx })} />
               </th>
               <th className="whitespace-nowrap px-3 py-3">학년</th>
               {mode === 'textbook' && <th className="whitespace-nowrap px-3 py-3">출판사</th>}
@@ -226,7 +242,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
               <tr><td colSpan={cols} className="px-3 py-10 text-center text-sm text-ink2">
                 {mode === 'textbook' && publisher !== '전체'
                   ? `「${publisher}」 교과서 문항은 준비 중입니다. 「전체」에서 단원별 세트를 쓰세요.`
-                  : filter.courses.length === 0 && filter.label !== '전체'
+                  : !filterUsable(filter)
                     ? `「${filter.label}」 과정은 준비 중입니다.`
                     : '해당하는 학습지가 없습니다.'}
               </td></tr>
@@ -238,7 +254,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
                 <tr key={s.key} className="border-b border-line last:border-b-0 hover:bg-paper2/40">
                   <td className="px-3 py-3 text-center">
                     <input type="checkbox" className="h-4 w-4 accent-pine" checked={checked.has(s.key)}
-                      onChange={() => setChecked((c) => { const nx = new Set(c); nx.has(s.key) ? nx.delete(s.key) : nx.add(s.key); return nx })} />
+                      onChange={() => setChecked((c) => { const nx = new Set(c); if (nx.has(s.key)) nx.delete(s.key); else nx.add(s.key); return nx })} />
                   </td>
                   <td className="whitespace-nowrap px-3 py-3 text-center">
                     <div className="font-semibold">{s.grade}</div>
@@ -289,7 +305,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
       {previewSet && (
         <PreviewModal
           set={previewSet}
-          problems={pickNaesinProblems(previewSet, index)}
+          problems={pickNaesinChain(sets, previewSet, index)}
           onClose={() => setPreviewSet(null)}
           onAssign={() => { setAssignSet(previewSet); setPreviewSet(null) }}
           onEdit={() => edit(previewSet)}

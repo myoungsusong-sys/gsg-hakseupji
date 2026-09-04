@@ -92,6 +92,10 @@ export const OUR_PUBLISHER = '공통'
 export function hasNaesin(courseId: string): boolean {
   return (POOL_COURSES as readonly string[]).includes(courseId) && CURRICULA.some((c) => c.id === courseId)
 }
+/** 이 필터 칩으로 실제 세트를 만들 수 있나 (설정된 과정 수가 아니라 풀+교육과정이 진짜 있는 과정 수) */
+export function filterUsable(f: { label: string; courses: string[] }): boolean {
+  return f.label === '전체' || naesinCurricula(f.courses).length > 0
+}
 export function naesinCurricula(courseIds: string[]): Curriculum[] {
   return courseIds.filter(hasNaesin).map(curriculumFor).filter((c) => !c.subject || c.subject === '수학')
 }
@@ -101,6 +105,11 @@ const zero2 = (n: number) => String(n).padStart(2, '0')
 const revisionOf = (label: string) => (label.match(/\((\d+)개정\)/)?.[1] ?? '22') + '개정'
 /** '중1-1' → '중1', '고1' → '고1' (표의 학년 칸) */
 const gradeOnly = (g: string) => g.replace(/^(중|고)(\d)-\d$/, '$1$2')
+/** 제목의 [학기] 표기 — 22개정은 그대로, 아니면 개정을 붙여 같은 이름의 세트가 두 줄 생기지 않게 (중3-2 vs 중3-2(15개정)) */
+const semesterTag = (cur: Curriculum) => {
+  const rev = revisionOf(cur.label)
+  return rev === '22개정' ? cur.grade : `${cur.grade}(${rev.replace('2015', '15')})`
+}
 
 /** 원본의 -교학사1 / -교학사2 / -교학사3 과 같은 꼬리표 */
 const LEVEL_NO: Record<NaesinLevel, string> = { 기초: '1', 실전: '2', 고난도: '3(고난도)' }
@@ -119,7 +128,7 @@ export function textbookSets(cur: Curriculum): NaesinSet[] {
       key: `${cur.id}|${u.id}|*|${level}`,
       courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
       unitName: u.name, level,
-      title: `내신대비 | [${cur.grade}] ${u.name}-${OUR_PUBLISHER}${LEVEL_NO[level]}`,
+      title: `내신대비 | [${semesterTag(cur)}] ${u.name}-${OUR_PUBLISHER}${LEVEL_NO[level]}`,
       subtitle: `(단원 정리 - ${OUR_PUBLISHER}) ${zero2(ui + 1)} ${u.name} ${level === '고난도' ? '단원 매듭짓기' : '생각 다지기'}`,
       publisher: OUR_PUBLISHER,
       diffLabel: LEVEL_DIFF[level],
@@ -141,7 +150,7 @@ export function recommendSets(cur: Curriculum): NaesinSet[] {
           key: `${cur.id}|${u.id}|${m.id}|${level}`,
           courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
           unitName: u.name, midName: m.name, level,
-          title: `내신대비 | [${cur.grade}] ${zero2(n)} ${m.name}${LEVEL_NO[level]}`,
+          title: `내신대비 | [${semesterTag(cur)}] ${zero2(n)} ${m.name}${LEVEL_NO[level]}`,
           subtitle: m.name,
           publisher: OUR_PUBLISHER,
           diffLabel: LEVEL_DIFF[level],
@@ -170,34 +179,58 @@ export function indexPool(pool: Problem[]): PoolIndex {
   return m
 }
 
-export function pickNaesinProblems(set: NaesinSet, poolOrIndex: Problem[] | PoolIndex): Problem[] {
+export function pickNaesinProblems(set: NaesinSet, poolOrIndex: Problem[] | PoolIndex, exclude: Set<string> = new Set()): Problem[] {
   const byType = poolOrIndex instanceof Map ? poolOrIndex : indexPool(poolOrIndex)
   const types = set.typeIds.filter((t) => (byType.get(t)?.length ?? 0) > 0)
   if (!types.length) return []
 
   const picked: Problem[] = []
-  const usedIds = new Set<string>()
+  const usedIds = new Set<string>(exclude)      // 앞 세트(1번→2번→3번)에서 쓴 문항은 다시 안 집는다
   const usedTwins = new Set<string>()
   const mix = LEVEL_MIX[set.level]
+  const cursor = new Map<string, number>()      // 유형별 난이도 커서 — 유형 수가 4의 배수여도 난이도가 고루 돈다
 
-  const take = (typeId: string, want: Diff): boolean => {
+  const take = (typeId: string, wide: boolean): boolean => {
     const cands = byType.get(typeId) ?? []
-    const order = [want, (want - 1) as Diff, (want + 1) as Diff, 1, 2, 3, 4, 5] as Diff[]
+    const k = cursor.get(typeId) ?? 0
+    const want = mix[k % mix.length]
+    // 1차는 목표·이웃 난이도까지만. 그래도 모자라면 2차(wide)에서 아무 난이도나 — 고난도 세트에 하 문항이 섞이지 않게
+    const order = (wide ? [want, want - 1, want + 1, 1, 2, 3, 4, 5] : [want, want - 1, want + 1]) as Diff[]
     for (const d of order) {
       if (d < 1 || d > 5) continue
       const p = cands.find((c) => c.diff === d && !usedIds.has(c.id) && !(c.twinGroup && usedTwins.has(c.twinGroup)))
-      if (p) { picked.push(p); usedIds.add(p.id); if (p.twinGroup) usedTwins.add(p.twinGroup); return true }
+      if (p) { picked.push(p); usedIds.add(p.id); if (p.twinGroup) usedTwins.add(p.twinGroup); cursor.set(typeId, k + 1); return true }
     }
     return false
   }
 
-  let i = 0, dry = 0
-  while (picked.length < set.count && dry < types.length) {
-    const ok = take(types[i % types.length], mix[i % mix.length])
-    dry = ok ? 0 : dry + 1
-    i++
+  for (const wide of [false, true]) {
+    let i = 0, dry = 0
+    while (picked.length < set.count && dry < types.length) {
+      const ok = take(types[i % types.length], wide)
+      dry = ok ? 0 : dry + 1
+      i++
+    }
+    if (picked.length >= set.count) break
   }
   return picked
+}
+
+/**
+ * 같은 중단원(또는 대단원)의 1·2·3번을 **순서대로 이어 뽑는다** — 앞 번호가 쓴 문항은 뒤 번호에서 뺀다.
+ * 학생이 1번·2번을 이어 풀 때 같은 문제가 다시 나오지 않게 (실측: 제외 없이 뽑으면 평균 25% 겹쳤다).
+ */
+export function pickNaesinChain(sets: NaesinSet[], target: NaesinSet, index: PoolIndex): Problem[] {
+  const siblings = sets
+    .filter((s) => s.courseId === target.courseId && s.unitName === target.unitName && s.midName === target.midName)
+    .sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level))
+  const used = new Set<string>()
+  for (const s of siblings) {
+    const picked = pickNaesinProblems(s, index, used)
+    if (s.key === target.key) return picked
+    picked.forEach((p) => used.add(p.id))
+  }
+  return pickNaesinProblems(target, index)
 }
 
 /** 표의 「문제수」 — 후보가 목표보다 많으면 목표치, 적으면 후보 수 (실제 뽑기와 같은 값을 싸게 얻는다) */
