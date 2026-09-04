@@ -95,7 +95,7 @@ function Hall({ onGo }: { onGo: (tab: string) => void }) {
 // ── 탭2·탭3 공용 표 — 원본과 같은 칸 구성 ───────────────────────────────────
 
 function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
-  const { problems, ensureCourse, saveWorksheet, addAssignment, students, klassOrder } = useStore()
+  const { problems, ensureCourse, poolLoaded, saveWorksheet, addAssignment, students, klassOrder } = useStore()
   const brand = useBrand()
   const nav = useNavigate()
 
@@ -109,13 +109,14 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
   const [previewSet, setPreviewSet] = useState<NaesinSet | null>(null)    // 저장 없이 보기
 
   const filter = FILTERS[gradeIdx]
-  // 「전체」(추천 탭) = 우리 과정 전부
-  const courseIds = filter.courses.length ? filter.courses : FILTERS.flatMap((f) => f.courses)
+  // 🔴 「전체」 칩일 때만 전 과정. 예전엔 `courses.length ? … : 전부` 라서, 아직 못 만드는 칩
+  //    (중1·중2·확통·기하 = courses 가 빈 배열)을 눌러도 14과정 세트가 통째로 떴다(2026-09-04 리뷰).
+  const courseIds = filter.label === '전체' ? FILTERS.flatMap((f) => f.courses) : filter.courses
   const curricula = useMemo(() => naesinCurricula(courseIds), [courseIds.join(',')])
 
   useEffect(() => { setChecked(new Set()) }, [gradeIdx, publisher, q, mode])
 
-  const sets = useMemo(() => {
+  const allSets = useMemo(() => {
     let all: NaesinSet[]
     if (mode === 'recommend') all = curricula.flatMap(recommendSets)
     else if (publisher === '전체') {
@@ -125,9 +126,15 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
         return pubs.length ? pubs.flatMap((p) => publisherSets(c, p)) : textbookSets(c)
       })
     } else all = curricula.flatMap((c) => publisherSets(c, publisher))      // 목차가 없으면 빈 표 → "준비 중"
+    return all
+  }, [curricula, mode, publisher])
+  // 표에 보여줄 것만 검색어로 거른다. **뽑기에는 allSets 를 쓴다** —
+  // 검색으로 형제(1·2·3번)가 목록에서 사라지면 체인 제외가 조용히 풀려, 같은 세트인데
+  // 검색 유무에 따라 다른 문항이 굳는다(2026-09-04 리뷰).
+  const sets = useMemo(() => {
     const needle = q.trim()
-    return needle ? all.filter((s) => s.title.includes(needle) || s.subtitle.includes(needle)) : all
-  }, [curricula, mode, publisher, q])
+    return needle ? allSets.filter((s) => s.title.includes(needle) || s.subtitle.includes(needle)) : allSets
+  }, [allSets, q])
 
   // 이 화면이 다루는 과정의 풀만 걸러 둔다 — 세트마다 전체 풀을 훑지 않게
   const pool = useMemo<Problem[]>(() => {
@@ -135,15 +142,6 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
     return problems.filter((p) => ids.has(p.typeId))
   }, [curricula, problems])
   const index = useMemo(() => indexPool(pool), [pool])
-  /** 과정별로 풀이 도착했나 — 그 과정 유형 중 하나라도 문항이 있으면 도착 */
-  const courseReady = useMemo(() => {
-    const m = new Map<string, boolean>()
-    for (const c of curricula) {
-      const ids = c.units.flatMap((u) => u.mids.flatMap((mm) => mm.subs.flatMap((sub) => sub.types.map((t) => t.id))))
-      m.set(c.id, ids.some((t) => (index.get(t)?.length ?? 0) > 0))
-    }
-    return m
-  }, [curricula, index])
   const counts = useMemo(() => new Map(sets.map((s) => [s.key, naesinCount(s, index)])), [sets, index])
   // 원본처럼 한 페이지씩 — 「전체」는 세트가 천 개를 넘어 한 번에 그리면 느리다
   const PAGE = 30
@@ -155,11 +153,11 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
   const needed = useMemo(() => new Set([...pageSets, ...sets.slice((page + 1) * PAGE, (page + 2) * PAGE)].map((x) => x.courseId)), [pageSets, sets, page])
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { needed.forEach((id) => ensureCourse(id)) }, [needed])
-  const loading = [...needed].some((id) => !courseReady.get(id))
+  const loading = [...needed].some((id) => !poolLoaded.has(id))
 
   /** 세트를 학습지로 굳힌다 — 원본도 목록의 세트는 출제 순간에 학습지가 된다 */
   function materialize(set: NaesinSet): string | null {
-    const picked = pickNaesinChain(sets, set, index)
+    const picked = pickNaesinChain(allSets, set, index)
     if (picked.length === 0) { alert('이 범위의 문제가 문제은행에 아직 없습니다.'); return null }
     const id = uid('ws')
     saveWorksheet({
@@ -188,7 +186,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
           <p className="mt-0.5 text-xs text-ink2">
             {mode === 'textbook'
               ? '교과서 별 단원정리에 해당되는 문제의 쌍둥이문제로 구성한 학습지입니다.'
-              : <>각종 교과서에서 자주 출제되는 유형을 토대로 내신 대비에 최적화된 문제들로 구성한 학습지입니다. <Link to="/prep/worksheet" className="underline">자동 채점이란?</Link></>}
+              : <>각종 교과서에서 자주 출제되는 유형을 토대로 내신 대비에 최적화된 문제들로 구성한 학습지입니다. <span className="cursor-help underline decoration-dotted" title="학생이 학생앱에서 답을 입력하면 정답을 앱이 바로 채점합니다. 선생님은 결과만 확인하면 됩니다.">자동 채점이란?</span></>}
           </p>
         </div>
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="학습지명 검색"
@@ -218,7 +216,9 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
           <span className="font-bold">{checked.size}개 선택</span>
           <button type="button" onClick={() => {
               const targets = sets.filter((x) => checked.has(x.key) && (counts.get(x.key) ?? 0) > 0)
-              if (targets.length > 10 && !confirm(`학습지 ${targets.length}개를 한 번에 만듭니다. 계속할까요?`)) return
+              const skipped = checked.size - targets.length
+              if (targets.length === 0) { alert('고른 학습지에 문항이 없습니다. 문제 풀이 다 오면 다시 시도해 주세요.'); return }
+              if (!confirm(`학습지 ${targets.length}개를 한 번에 만듭니다.${skipped > 0 ? `\n(문항이 없는 ${skipped}개는 제외)` : ''} 계속할까요?`)) return
               setAssignMany(targets)
             }}
             className="rounded-lg bg-pine px-3 py-1.5 text-xs font-semibold text-paper hover:bg-pine-dark">출제하기</button>
@@ -312,7 +312,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
       {previewSet && (
         <PreviewModal
           set={previewSet}
-          problems={pickNaesinChain(sets, previewSet, index)}
+          problems={pickNaesinChain(allSets, previewSet, index)}
           onClose={() => setPreviewSet(null)}
           onAssign={() => { setAssignSet(previewSet); setPreviewSet(null) }}
           onEdit={() => edit(previewSet)}

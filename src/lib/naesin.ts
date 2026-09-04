@@ -103,13 +103,13 @@ export function naesinCurricula(courseIds: string[]): Curriculum[] {
 
 // ── 세트 만들기 ─────────────────────────────────────────────────────────────
 const zero2 = (n: number) => String(n).padStart(2, '0')
-const revisionOf = (label: string) => (label.match(/\((\d+)개정\)/)?.[1] ?? '22') + '개정'
+const revisionOf = (label: string) => (label.match(/\((\d+)개정\)/)?.[1] ?? '22').slice(-2) + '개정'
 /** '중1-1' → '중1', '고1' → '고1' (표의 학년 칸) */
 const gradeOnly = (g: string) => g.replace(/^(중|고)(\d)-\d$/, '$1$2')
 /** 제목의 [학기] 표기 — 22개정은 그대로, 아니면 개정을 붙여 같은 이름의 세트가 두 줄 생기지 않게 (중3-2 vs 중3-2(15개정)) */
 const semesterTag = (cur: Curriculum) => {
   const rev = revisionOf(cur.label)
-  return rev === '22개정' ? cur.grade : `${cur.grade}(${rev.replace('2015', '15')})`
+  return rev === '22개정' ? cur.grade : `${cur.grade}(${rev})`
 }
 
 /** 원본의 -교학사1 / -교학사2 / -교학사3 과 같은 꼬리표 */
@@ -202,6 +202,10 @@ export function pickNaesinProblems(set: NaesinSet, poolOrIndex: Problem[] | Pool
       const p = cands.find((c) => c.diff === d && !usedIds.has(c.id) && !(c.twinGroup && usedTwins.has(c.twinGroup)))
       if (p) { picked.push(p); usedIds.add(p.id); if (p.twinGroup) usedTwins.add(p.twinGroup); cursor.set(typeId, k + 1); return true }
     }
+    // 못 집었어도 커서를 한 칸 돌린다 — 안 그러면 목표 난이도 재고가 없는 유형은
+    // 다음 순회에서도 같은 난이도만 노려 1차 패스에서 영영 안 뽑힌다
+    // (실측 m1-1: 795유형 중 109개가 난이도 1·2 재고 0). 2026-09-04 리뷰.
+    cursor.set(typeId, k + 1)
     return false
   }
 

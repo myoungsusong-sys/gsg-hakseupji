@@ -81,6 +81,7 @@ interface Store extends Persisted {
   synced: boolean
   /** 클라우드 읽기에 실패한 표 — 있으면 그 표는 **갱신하지 않은 것**이지 비어 있는 게 아니다. */
   loadFail: LoadFail | null
+  poolLoaded: Set<string>
   ensureCourse: (courseId: string) => void   // 매쓰플랫 문제 풀 과정별 지연 로드
   addProblem: (p: Problem) => void
   removeProblem: (id: string) => void
@@ -308,6 +309,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   // ── 매쓰플랫 문제 풀: 과정별 정적 파일 지연 로드 ────────────────────
   const [pools, setPools] = useState<Record<string, Problem[]>>({})
+  /** 이 과정 풀을 **받아봤나**(문항이 0개여도 true). 화면의 「불러오는 중」 판정은 이걸 쓴다 */
+  const poolLoaded = useMemo(() => new Set(Object.keys(pools)), [pools])
   const poolReqRef = useRef<Set<string>>(new Set())
   // 🔴 과정 풀이 도착할 때마다 setPools 를 따로 부르면 안 된다.
   //    아래 poolProblems 는 **누적된 전체**를 다시 훑어 중복을 제거하는데, 과정 25개를 따로 넣으면
@@ -323,7 +326,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     if (!courseId || poolReqRef.current.has(courseId)) return
     poolReqRef.current.add(courseId)
     loadPool(courseId).then(arr => {
-      if (!arr.length) return
+      // 🔴 빈 결과(파일 없음·네트워크 실패)도 **기록**한다. 예전엔 그냥 return 해서
+      //    pools 에 그 과정이 영영 안 생겼고, 화면은 「불러오는 중…」에 갇힌 채
+      //    출제·미리보기가 잠겼다(2026-09-04 내신관 리뷰). 재요청은 poolReqRef 가 막으므로 새로고침 말곤 길이 없었다.
+      if (!arr.length) { setPools(prev => (prev[courseId] ? prev : { ...prev, [courseId]: [] })); return }
       poolPendingRef.current[courseId] = arr
       // 도착이 이어지는 동안은 기다렸다가 **한 번에** 넣는다(디바운스 600ms).
       // 다만 계속 밀리면 안 되니 첫 도착으로부터 4초가 지나면 그때는 바로 넣는다.
@@ -529,6 +535,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     wbItems: mergeWbItems(state.wbItems, derivedWbItems),   // 수동 등록분이 매칭 교재 파생분을 덮어씀
     // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀 (위에서 memo)
     problems,
+    poolLoaded,
 
     addProblem: p => { set(s => ({ ...s, customProblems: [...s.customProblems, p] })); cloud.upsert(cloud.T.problems, p.id, p) },
     removeProblem: id => { set(s => ({ ...s, customProblems: s.customProblems.filter(p => p.id !== id) })); cloud.del(cloud.T.problems, id) },
