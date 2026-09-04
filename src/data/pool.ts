@@ -102,10 +102,24 @@ export function loadPool(course: string): Promise<Problem[]> {
             ? toWanjaProblem(k, r as WanjaRaw)
             // 키 정규화: 'mf' 접두 통일 (기존 학습지 problemIds가 mf<pid> 형식)
             : toProblem(k.startsWith('mf') ? k : 'mf' + k, r as Raw, host))
+        return arr
+      })
+      .catch(err => { inflight.delete(course); console.warn('pool', course, String(err).slice(0, 80)); return [] as Problem[] })
+      // 🆕 자체 생성 문항 — public/gen-<course>.json (Problem 객체 배열, custom:true). 없으면(404) 조용히 넘어간다.
+      //    2026-09-04: 유형마다 새로 지은 문제(정답을 독립 풀이자 2명이 교차검증한 것만)를 여기로 넣는다.
+      //    문항 권리가 우리 것이라 어디에 내놔도 되는 풀이다.
+      .then(async arr => {
+        try {
+          const g = await fetch(`${import.meta.env.BASE_URL}gen-${course}.json`)
+          if (g.ok) {
+            const gen = (await g.json()) as Problem[]
+            const seen = new Set(arr.map(p => p.id))
+            for (const q of gen) if (q && q.id && !seen.has(q.id)) arr.push({ ...q, custom: true, source: q.source || '자체 생성' })
+          }
+        } catch { /* 생성 파일이 없거나 깨져도 기본 풀은 그대로 */ }
         cache.set(course, arr)
         return arr
       })
-      .catch(err => { inflight.delete(course); console.warn('pool', course, String(err).slice(0, 80)); return [] })
     inflight.set(course, p)
   }
   return p
