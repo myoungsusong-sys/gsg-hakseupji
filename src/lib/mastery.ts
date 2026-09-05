@@ -153,7 +153,10 @@ function topLevelEq(s: string): number {
 }
 
 /** 우변이 빈칸으로 낼 값어치가 있나. `y=f(x)`·`P(X=a)=0` 같은 건 문제가 안 된다 */
-const WORTH_ASKING = /[0-9^_]|\\d?frac|\\sqrt|\\sum|\\int|\\times|\\div|\\cdot|\\pi|[+\-]/
+// 우변이 빈칸으로 낼 값어치가 있나. 한 글자(`0`·`a`)나 `f(x)` 같은 것만 걸러낸다.
+// 🔴 예전엔 '숫자나 연산기호가 있어야' 통과시켰는데, 그러면 $PV = nRT$·$p = mv$ 같은
+//    정통 공식이 전부 탈락했다(2026-09-05 에이전트가 발견).
+const TRIVIAL_RHS = /^(?:\d|[A-Za-z]|\\?[A-Za-z]+\s*\(\s*[A-Za-z]\s*\))$/
 
 /** 「소인수: 어떤 자연수의 …」 처럼 **줄머리에 정의어**가 있는 것만 용어 빈칸으로 쓴다.
  *  문장 한가운데서 가장 긴 낱말을 집으면 「최대공약수의」·「소인수분해했을」 처럼
@@ -189,7 +192,7 @@ export function conceptBlanks(typeId: string): ConceptBlank[] {
           const i = topLevelEq(inner)
           if (i <= 0) continue
           const rhs = inner.slice(i + 1).trim()
-          if (rhs.length < 2 || !WORTH_ASKING.test(rhs)) continue
+          if (rhs.length < 2 || TRIVIAL_RHS.test(rhs)) continue
           formulas.push({
             conceptId: c.id, title: c.title,
             text: line.replace(m[0], `$${inner.slice(0, i + 1)}\\;\\square$`),

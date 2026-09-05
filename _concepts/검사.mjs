@@ -4,7 +4,10 @@
 import fs from 'node:fs'
 
 const EXAMPLE_LINE = /^\s*(예|예시|참고|주의)\s*[:：]/
-const WORTH_ASKING = /[0-9^_]|\\d?frac|\\sqrt|\\sum|\\int|\\times|\\div|\\cdot|\\pi|[+\-]/
+// 우변이 빈칸으로 낼 값어치가 있나. 한 글자(`0`·`a`)나 `f(x)` 같은 것만 걸러낸다.
+// 🔴 예전엔 '숫자나 연산기호가 있어야' 통과시켰는데, 그러면 $PV = nRT$·$p = mv$ 같은
+//    정통 공식이 전부 탈락했다(2026-09-05 에이전트가 발견).
+const TRIVIAL_RHS = /^(?:\d|[A-Za-z]|\\?[A-Za-z]+\s*\(\s*[A-Za-z]\s*\))$/
 const LABEL_WORDS = /^(성질|참고|주의|방법|유형|정리|공식|핵심|조건|계산|풀이|요약|보기|순서|절차)$/
 const DEF_HEAD = /^([가-힣](?:[가-힣A-Za-z0-9·() ]{0,14}[가-힣A-Za-z0-9)])?)(?:\s*\$[^$]*\$)?\s*[:：]/
 const goodTerm = (w) => !/[0-9]/.test(w) && !LABEL_WORDS.test(w) && w.length >= 2
@@ -30,7 +33,7 @@ function check(c) {
       const inner = m[1], i = topLevelEq(inner)
       if (i <= 0) continue
       const rhs = inner.slice(i + 1).trim()
-      if (rhs.length < 2 || !WORTH_ASKING.test(rhs)) continue
+      if (rhs.length < 2 || TRIVIAL_RHS.test(rhs)) continue
       formula++; hit = true; break
     }
     if (hit) continue
