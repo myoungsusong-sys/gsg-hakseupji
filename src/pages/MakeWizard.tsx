@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { CURRICULA, curriculumFor, typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
+import { buildSixSet, subUnitMap, SIX_SLOTS } from '../lib/sixSet'
 import { useStore, uid } from '../lib/store'
 import { getSubject, useSubject, SUBJECTS } from '../lib/subject'
 import { brandFor, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
@@ -441,6 +442,24 @@ export default function MakeWizard() {
     () => problems.filter(p => favorites.includes(p.id)),
     [problems, favorites],
   )
+
+  // 🎯 6종 세트 — 고른 문항 하나에 딸린 여섯 갈래 (lib/sixSet.ts)
+  //    난이도 필터(twinDiffs)는 일부러 안 건다 — 세트의 핵심이 「난이도 사다리」라서
+  //    필터를 걸면 기본·심화 칸이 통째로 사라진다.
+  const sixSet = useMemo(
+    () => (twinTarget ? buildSixSet(twinTarget, problems, subUnitMap(), usedIds) : null),
+    [twinTarget, problems, usedIds],
+  )
+  /** 6종 세트를 한꺼번에 학습지에 넣는다 — 기준 문항 뒤에 쉬운 것부터 어려운 순으로 */
+  function addSixSet(s: NonNullable<typeof sixSet>) {
+    const order = SIX_SLOTS.filter(k => s.items[k])
+    let anchor = s.base.id
+    for (const k of order) {
+      const p = s.items[k]!
+      addItem(p, anchor)
+      anchor = p.id
+    }
+  }
 
   // 쌍둥이·유사 패널: 난이도 필터 + 새로 불러오기(순서 재배치)
   const twinList = useMemo(() => !twinTarget ? [] :
@@ -973,6 +992,38 @@ export default function MakeWizard() {
                             <button onClick={() => setTwinDiffs(new Set())} className="text-xs text-ink2 hover:text-ink">초기화</button>
                           )}
                         </div>
+                        {/* 🎯 6종 세트 — 이 문항 하나로 쉬운 것부터 어려운 것까지 한 벌
+                            (2026-09-05 명수쌤 스펙: 기본·쌍둥이·다른답·유사유형·심화1·심화2) */}
+                        <div className="mb-3 rounded-xl border border-pine/40 bg-pine-soft/30 p-3">
+                          <div className="mb-2 flex items-center gap-2">
+                            <span className="text-xs font-bold text-pine-dark">🎯 6종 세트</span>
+                            <span className="text-[11px] text-ink2">쉬운 것 → 이 문제 → 어려운 것까지 한 번에</span>
+                            <button type="button" onClick={() => sixSet && addSixSet(sixSet)}
+                              disabled={!sixSet}
+                              className="ml-auto rounded bg-pine px-2.5 py-1 text-[11px] font-semibold text-paper hover:bg-pine-dark disabled:opacity-40">
+                              6문항 한 번에 추가
+                            </button>
+                          </div>
+                          <div className="grid gap-1.5">
+                            {sixSet && SIX_SLOTS.map(slot => {
+                              const p = sixSet.items[slot]
+                              return (
+                                <div key={slot} className="flex items-center gap-2 text-[11px]">
+                                  <span className="w-14 shrink-0 font-semibold text-pine-dark">{slot}</span>
+                                  {p ? (
+                                    <>
+                                      <span className="rounded bg-paper2 px-1.5 py-0.5">{DIFF_LABEL[p.diff]}</span>
+                                      <span className="min-w-0 flex-1 truncate text-ink2">{typeName(p.typeId)}</span>
+                                      <button type="button" onClick={() => addItem(p, twinTarget.id)}
+                                        className="shrink-0 rounded border border-pine px-1.5 py-0.5 font-semibold text-pine hover:bg-pine-soft">추가</button>
+                                    </>
+                                  ) : <span className="text-ink2">— 없음</span>}
+                                </div>
+                              )
+                            })}
+                          </div>
+                        </div>
+
                         <div className="mb-2 text-xs font-bold text-pine-dark">● 쌍둥이 문제 (같은 템플릿·숫자 변형)</div>
                         {twinList.map(p => (
                           <CandidateCard key={p.id} p={p}

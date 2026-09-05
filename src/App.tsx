@@ -30,6 +30,7 @@ import PointsPage from './pages/PointsPage'
 import FormsPage from './pages/FormsPage'
 import Materials from './pages/Materials'
 import NaesinPrep from './pages/NaesinPrep'
+import MasteryPage from './pages/MasteryPage'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
 import TodayRoom from './pages/TodayRoom'
@@ -120,6 +121,7 @@ function Gate() {
             <Route path="result/:wsId" element={<StudentResult />} />
             <Route path="workbooks" element={<StudentWorkbooks />} />
             <Route path="voca" element={<StudentVoca />} />
+            <Route path="mastery" element={<MasteryPage />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
             {/* 학생용 학습지 PDF — 선생님 화면을 열어 주지 않으려고 전용 경로를 둔다 */}
@@ -146,6 +148,7 @@ function Gate() {
                   plan="보유 학교 기출 PDF를 업로드→디지털 문제로 변환(Claude)해 쌓이면 검색·출제 활성화." />
               } />
               <Route path="/prep/school-exam" element={<NaesinPrep />} />
+              <Route path="/prep/mastery" element={<MasteryPage />} />
               <Route path="/prep/csat" element={<CsatLibrary />} />
               <Route path="/gichul/:id" element={<GichulView />} />
               <Route path="/gichul-tag/:id" element={<GichulTag />} />

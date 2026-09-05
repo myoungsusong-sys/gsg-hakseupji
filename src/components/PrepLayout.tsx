@@ -24,6 +24,7 @@ export default function PrepLayout() {
             <>
               <NavLink to="/prep/school-test" className={item}>학교별 기출</NavLink>
               <NavLink to="/prep/school-exam" className={item}>내신 대비</NavLink>
+              <NavLink to="/prep/mastery" className={item}>유형 마스터</NavLink>
               <NavLink to="/prep/csat" className={item}>수능·모의고사</NavLink>
               <NavLink to="/prep/test" className={item}>테스트</NavLink>
               <NavLink to="/prep/kmm" className={item}>KMM수학경시대회</NavLink>
