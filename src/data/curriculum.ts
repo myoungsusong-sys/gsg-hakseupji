@@ -83,6 +83,7 @@ type MidC = [string, SubC[]]
 type BigC = [string, MidC[]]
 
 import { ENG_SECTIONS, KOR_SECTIONS } from './curriculum-engkor'
+import { SOC1_SECTIONS, SOC2_SECTIONS } from './curriculum-soc'
 
 function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
@@ -2832,6 +2833,9 @@ export const CURRICULA: Curriculum[] = [
   build("h-scihist", "고3", "과학의 역사와 문화 (22개정)", SCI_H_SCIHIST, '과학'),
   build("h-climate", "고3", "기후변화와 환경생태 (22개정)", SCI_H_CLIMATE, '과학'),
   build("h-convsci", "고3", "융합과학 탐구 (22개정)", SCI_H_CONVSCI, '과학'),
+  // 통합사회1·2 (22개정) — 2028 수능 탐구 필수 과목. 트리는 curriculum-soc.ts (성취기준 뼈대). 2026-09-05
+  build("h-soc1", "고1", "통합사회1 (22개정)", SOC1_SECTIONS, '사회'),
+  build("h-soc2", "고1", "통합사회2 (22개정)", SOC2_SECTIONS, '사회'),
   build("m-soc1-1", "중1-1", "올쏘 중학 사회①-1 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
   build("m-soc1-2", "중1-2", "올쏘 중학 사회①-2 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
   build("m-soc2-1", "중2-1", "올쏘 중학 사회②-1 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),

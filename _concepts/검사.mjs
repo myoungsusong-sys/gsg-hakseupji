@@ -54,7 +54,8 @@ for (const c of arr) {
   const { term, formula } = check(c)
   // 🔴 영어·국어에는 수식이 없다. 공식 줄을 강제하면 **억지 수식**을 지어내게 된다
   //    (2026-09-05). 대신 용어 빈칸을 **2개 이상** 요구해 빈칸 수를 맞춘다.
-  const noMath = /^(eng|kor)-/.test(c.subId)
+  //    통합사회(h-soc)도 같다 — 경제·인구 몇 곳 말고는 수식이 없다(2026-09-05).
+  const noMath = /^(eng|kor|h-soc)/.test(c.subId)
   if (noMath) {
     if (term < 2) bad.push(`${c.subId} 용어 빈칸 ${term}개 — 영어·국어는 「낱말: 설명」 줄이 2개 이상 필요`)
   } else {

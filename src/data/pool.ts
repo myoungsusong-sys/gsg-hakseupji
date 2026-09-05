@@ -32,6 +32,7 @@ export const SCI_POOL_COURSES: readonly string[] = [
 export const GEN_ONLY_COURSES: readonly string[] = [
   'eng-m1', 'eng-m2', 'eng-m3', 'eng-h1', 'eng-h2', 'eng-h3',
   'kor-m1', 'kor-m2', 'kor-m3', 'kor-h1', 'kor-h2', 'kor-h3',
+  'h-soc1', 'h-soc2',   // 통합사회1·2 — 씨앗(gen-h-soc*.json)만 있다 (2026-09-05)
 ]
 
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const

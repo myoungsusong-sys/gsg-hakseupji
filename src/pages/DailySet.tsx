@@ -26,7 +26,7 @@ import BatchPrint, { vocaAnswerFor, vocaSheetFor, vocaStudySheetFor, type Sheet 
 //    **유형 순서는 교재를 따르고 문제는 문제은행에서** 가져오면
 //    학생 화면·PDF 출력·선생님 지도화면이 한꺼번에 해결된다.
 
-type Made = { student: Student; subject: '수학' | '과학'; wsId: string; n: number; problems: Problem[] }
+type Made = { student: Student; subject: '수학' | '과학' | '사회'; wsId: string; n: number; problems: Problem[] }
 
 /** [문제은행키, 교재매칭표키, 교재이름] — 앞 둘이 다를 수 있다(위 RAIL 주석 참고). */
 type Rail = [string, string, string]
@@ -81,6 +81,17 @@ const sciBookRailOf = (course: string): Rail | undefined =>
 /** 학생별 과학 지정은 같은 settings 표(dailyBooks)에 `<학생id>|sci` 키로 둔다 — 새 표·새 컬럼 없이. */
 const sciKey = (studentId: string) => `${studentId}|sci`
 
+// ── 학생별 사회 교재 후보 (2026-09-05 명수쌤: "통합사회도 씨앗 패밀리 방식으로 만들어줘") ──
+// 🔴 통합사회는 교재 매칭표가 없다 → 매칭표키 '' = 교육과정 트리 차례(curriculum-soc.ts).
+//    문제는 전부 우리 씨앗(gen-h-soc1/2.json, source 씨앗제조기)이라 권리가 우리 것이다.
+const SOC_CHOICES: { course: string; rail: Rail; label: string }[] = [
+  { course: 'h-soc1', rail: ['h-soc1', '', '통합사회1 (교육과정 차례)'], label: '통합사회1 (교육과정 차례)' },
+  { course: 'h-soc2', rail: ['h-soc2', '', '통합사회2 (교육과정 차례)'], label: '통합사회2 (교육과정 차례)' },
+]
+const socBookRailOf = (course: string): Rail | undefined =>
+  SOC_CHOICES.find(b => b.course === course)?.rail
+const socKey = (studentId: string) => `${studentId}|soc`
+
 /** 유형 차례 — 매칭표키가 있으면 그 책의 차례, '' 이면 교육과정 트리 차례 */
 async function typeOrderOfRail(wbKey: string, bookName: string, course: string): Promise<string[]> {
   if (!wbKey) return typeOrderOfCurriculum(course)
@@ -104,6 +115,7 @@ export default function DailySet() {
   const [unitList, setUnitList] = useState<{ course: string; label: string; units: string[] }[]>([])
   const [mathN, setMathN] = useState(15)
   const [sciN, setSciN] = useState(18)
+  const [socN, setSocN] = useState(15)     // 사회(통합사회) — 지정한 학생만 나간다
   const [busy, setBusy] = useState('')
   const [made, setMade] = useState<Made[]>([])
   const [skipped, setSkipped] = useState<string[]>([])
@@ -162,9 +174,11 @@ export default function DailySet() {
       // 「이 학년은 다 같은 책」이라고 오해하지 않게.
       const pick = dailyBooks[s.id]
       const spick = dailyBooks[sciKey(s.id)]
+      const opick = dailyBooks[socKey(s.id)]
       const picked = [
         pick ? BOOK_CHOICES.find(b => b.course === pick)?.label : '',
         spick ? SCI_CHOICES.find(b => b.course === spick)?.label : '',
+        opick ? SOC_CHOICES.find(b => b.course === opick)?.label : '',
       ].filter(Boolean).join(' · ')
       cur.names.push(picked ? `${s.name}(${picked})` : s.name)
       m.set(key, cur)
@@ -194,6 +208,12 @@ export default function DailySet() {
     return RAIL[gradeKey(s.grade)]?.sci
   }
 
+  // 그 학생의 사회 교재 — 학년 규칙이 없다. 지정한 학생만 나간다(2028 수능 탐구 필수라 정시 학생은 지정한다)
+  function socRailOf(s: Student): Rail | undefined {
+    const pick = dailyBooks[socKey(s.id)]
+    return pick ? socBookRailOf(pick) : undefined
+  }
+
   // 대상 학생들이 쓰는 과정 목록 — [과정키, [과정키, 교재명, 화면라벨]]
   function railsOf(list: Student[]) {
     const need = new Map<string, { rail: Rail; label: string }>()
@@ -205,6 +225,8 @@ export default function DailySet() {
       if (mm) need.set(mm[0], { rail: mm, label: `${mm[2]}` })
       const ss = sciRailOf(s)
       if (ss) need.set(ss[0], { rail: ss, label: ss[2] })
+      const so = socRailOf(s)
+      if (so) need.set(so[0], { rail: so, label: so[2] })
     }
     return need
   }
@@ -279,9 +301,10 @@ export default function DailySet() {
       const plan: [string, Rail | undefined][] = [
         ['수학', mathRailOf(s)],
         ['과학', sciRailOf(s)],
+        ['사회', socRailOf(s)],
       ]
       for (const [subject, entry] of plan) {
-        if (!entry) { skip.push(`${s.name}(${gk}) ${subject} — 해당 과정 없음`); continue }
+        if (!entry) { if (subject !== '사회') skip.push(`${s.name}(${gk}) ${subject} — 해당 과정 없음`); continue }
         const [course] = entry
         const typeOrder = orders.get(course)
         if (!typeOrder?.length) { skip.push(`${s.name} ${subject} — 교재 차례를 못 읽음(${course})`); continue }
@@ -290,7 +313,7 @@ export default function DailySet() {
         if (!inCourse.length) { skip.push(`${s.name} ${subject} — 문제은행이 안 들어왔어요(${course})`); continue }
         const picks = buildByTypeRound(inCourse, {
           typeOrder, round,
-          count: subject === '수학' ? mathN : sciN,
+          count: subject === '수학' ? mathN : subject === '사회' ? socN : sciN,
           units: unitPick[course], unitOf: bigUnitOf,
         })
         if (!picks.length) { skip.push(`${s.name} ${subject} — 이 범위·회차에 문제가 없어요`); continue }
@@ -298,8 +321,8 @@ export default function DailySet() {
         saveWorksheet({
           id,
           title: `${subject} 기본과제 ${round}회차 - ${s.name} (${day.slice(5).replace('-', '.')})`,
-          author: brand, grade: gk, subject: subject as '수학' | '과학',
-          tags: ['오늘의 학습', '기본과제'], theme: subject === '수학' ? 'amber' : 'pine',
+          author: brand, grade: gk, subject: subject as '수학' | '과학' | '사회',
+          tags: ['오늘의 학습', '기본과제'], theme: subject === '수학' ? 'amber' : subject === '사회' ? 'navy' : 'pine',
           problemIds: picks.map((p: Problem) => p.id), conceptIds: [],
           // 🔴 자동채점을 켠다 (명수쌤 2026-08-24: "학생이 답을 입력하면 자동 채점되게 해주고,
           //    고친 후 박성우 선생님한테 가지고 가면 선생님이 설명을 할 수 있게 해줘").
@@ -312,7 +335,7 @@ export default function DailySet() {
           listIds: [], createdAt: new Date().toISOString(), deletedAt: null,
         })
         addAssignment(id, [s.id], '수업')
-        out.push({ student: s, subject: subject as '수학' | '과학', wsId: id, n: picks.length, problems: picks })
+        out.push({ student: s, subject: subject as '수학' | '과학' | '사회', wsId: id, n: picks.length, problems: picks })
       }
     }
     setMade(out); setSkipped(skip); setBusy('')
@@ -402,6 +425,12 @@ export default function DailySet() {
               className="w-14 rounded-lg border border-line px-2 py-1 text-right font-bold" />
             <span className="text-ink2">문항</span>
           </label>
+          <label className="flex items-center gap-2">
+            <span className="font-semibold">사회</span>
+            <input type="number" min={5} max={40} value={socN} onChange={e => setSocN(Number(e.target.value))}
+              className="w-14 rounded-lg border border-line px-2 py-1 text-right font-bold" />
+            <span className="text-ink2">문항 <span className="text-[10px]">(지정한 학생만)</span></span>
+          </label>
         </div>
 
         {/* 학년 갈래 — 학생마다 학년이 달라서, 학년별로 다른 책·다른 문제가 나간다 */}
@@ -437,7 +466,7 @@ export default function DailySet() {
             <summary className="cursor-pointer text-sm font-bold">
               학생별 교재 지정{' '}
               <span className="font-normal text-ink2">
-                — 학년과 진도가 다른 학생만 바꾸세요 (안 바꾸면 위 학년 규칙대로) · 고2 정시는 확률과 통계·통합과학을 여기서 고릅니다
+                — 학년과 진도가 다른 학생만 바꾸세요 (안 바꾸면 위 학년 규칙대로) · 고2 정시는 확률과 통계·통합과학·통합사회를 여기서 고릅니다
               </span>
             </summary>
             <div className="mt-2 grid gap-1.5 sm:grid-cols-2">
@@ -459,7 +488,12 @@ export default function DailySet() {
                       className="grow rounded-lg border border-line px-2 py-1 font-semibold">
                       <option value="">과학 학년 규칙 — {RAIL[gk]?.sci?.[2] ?? '없음(과학 안 나감)'}</option>
                       {SCI_CHOICES.map(b => <option key={b.course} value={b.course}>{b.label}</option>)}
-                      <option value="__soc" disabled>통합사회 — 문제은행 준비 중 (아직 못 냅니다)</option>
+                    </select>
+                    <select value={dailyBooks[socKey(st.id)] ?? ''}
+                      onChange={e => setDailyBook(socKey(st.id), e.target.value)}
+                      className="grow rounded-lg border border-line px-2 py-1 font-semibold">
+                      <option value="">사회 안 냄</option>
+                      {SOC_CHOICES.map(b => <option key={b.course} value={b.course}>{b.label}</option>)}
                     </select>
                   </label>
                 )
@@ -503,7 +537,7 @@ export default function DailySet() {
 
         <button onClick={makeAll} disabled={!!busy || !targets.length}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:brightness-110 disabled:opacity-50">
-          {busy || `📤 ${targets.length}명에게 만들기 (수학 + 과학)`}
+          {busy || `📤 ${targets.length}명에게 만들기 (수학 + 과학${targets.some(s => socRailOf(s)) ? ' + 사회' : ''})`}
         </button>
         {!targets.length && (
           <p className="text-xs text-clay">

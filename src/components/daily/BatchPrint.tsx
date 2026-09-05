@@ -48,7 +48,7 @@ function solHeight(ratio: number): number {
 }
 
 type Sheet =
-  | { kind: '문제'; student: Student; subject: '수학' | '과학'; problems: Problem[] }
+  | { kind: '문제'; student: Student; subject: '수학' | '과학' | '사회'; problems: Problem[] }
   | { kind: '단어장'; student: Student; book: string; day: number; words: [string, string][] }   // 외우기용(영단어+뜻)
   | { kind: '단어'; student: Student; book: string; day: number; words: [string, string][] }
   | { kind: '정답'; label: string; problems: Problem[] }              // 학년·과목별 빠른정답
