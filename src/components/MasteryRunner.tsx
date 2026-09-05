@@ -171,7 +171,8 @@ export default function MasteryRunner({
           </div>
 
           <div className="rounded-xl border border-line p-4">
-            <ProblemContent p={current} />
+            {/* 보기는 아래에서 **클릭 버튼**으로 직접 그린다 — 여기서 또 그리면 두 번 나온다 */}
+            <ProblemContent p={current} hideChoices />
             {current.choices && (
               <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
                 {current.choices.map((c, i) => (

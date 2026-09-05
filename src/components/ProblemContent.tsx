@@ -2,8 +2,10 @@ import MathText from './MathText'
 import type { Problem } from '../types'
 
 // 문제 본문 렌더 — 이미지 기반(기출)이면 이미지, 아니면 텍스트+보기(KaTeX)
-export default function ProblemContent({ p, textClass, imgClass }: {
+export default function ProblemContent({ p, textClass, imgClass, hideChoices }: {
   p: Problem; textClass?: string; imgClass?: string
+  /** 보기를 화면이 **직접 그릴 때**(클릭해서 고르는 화면) 켠다 — 안 그러면 보기가 두 번 나온다 */
+  hideChoices?: boolean
 }) {
   if (p.imageUrl) {
     // 매쓰플랫 문제 이미지는 폭 930px(@2x) 규격 — 원본의 50%(465px)로 캡해야
@@ -13,7 +15,7 @@ export default function ProblemContent({ p, textClass, imgClass }: {
   return (
     <>
       <MathText text={p.body} className={textClass ?? 'text-[15px] leading-relaxed'} />
-      {p.choices && (
+      {p.choices && !hideChoices && (
         <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm text-ink2">
           {p.choices.map((c, ci) => (
             <span key={ci}>{'①②③④⑤'[ci]} <MathText text={c} /></span>
