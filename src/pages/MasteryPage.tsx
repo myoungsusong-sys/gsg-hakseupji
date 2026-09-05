@@ -81,7 +81,8 @@ export default function MasteryPage({ studentId = 'me' }: { studentId?: string }
   // 가장 쉬운 것을 기준으로 잡으면 기본과 표준이 똑같이 「하」가 되어 사다리가 뭉개진다(2026-09-05 실측).
   const base: Problem | null = useMemo(() => {
     if (!pool.length) return null
-    return (paramBase && pool.find((p) => p.id === paramBase))
+    const given = paramBase ? pool.find((p) => p.id === paramBase) : undefined
+    return given
       ?? [...pool].sort((a, b) => Math.abs(a.diff - 3) - Math.abs(b.diff - 3))[0]
   }, [pool, paramBase])
 
