@@ -9,7 +9,7 @@ import { resultTypeId } from './drill'
 //   (커리큘럼 쪽은 curriculum.ts의 Curriculum.subject에 같은 문자열을 쓰면 자동 연동)
 // 🔴 영어는 문제은행·교재가 아니라 **단어장**으로 굴러간다(2026-08-26 명수쌤: "영어 카테고리를
 //    따로 만들고 영단어를 그 안에"). 그래서 영어를 고르면 수업 화면이 「영어단어」 하나로 바뀐다.
-export const SUBJECTS = ['수학', '과학', '사회', '역사', '영어'] as const
+export const SUBJECTS = ['수학', '과학', '사회', '역사', '영어', '국어'] as const
 export type Subject = (typeof SUBJECTS)[number]
 
 const KEY = 'gsg-subject'

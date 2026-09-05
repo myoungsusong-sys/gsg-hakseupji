@@ -4,7 +4,7 @@ export interface SubUnit { id: string; name: string; types: TypeNode[] }
 export interface MidUnit { id: string; name: string; subs: SubUnit[] }
 export interface BigUnit { id: string; name: string; mids: MidUnit[] }
 
-export interface Curriculum { id: string; grade: string; label: string; units: BigUnit[]; subject?: '수학' | '과학' | '사회' | '역사' }
+export interface Curriculum { id: string; grade: string; label: string; units: BigUnit[]; subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어' }
 
 // 중1-1 (22개정) — 매쓰플랫 기준 자동생성 (대>중>소>유형=conceptId)
 export const CURRICULUM: Curriculum = {
@@ -82,7 +82,9 @@ type SubC = [string, string[]]
 type MidC = [string, SubC[]]
 type BigC = [string, MidC[]]
 
-function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사'): Curriculum {
+import { ENG_SECTIONS, KOR_SECTIONS } from './curriculum-engkor'
+
+function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
     id, grade, label, ...(subject ? { subject } : {}),
     units: data.map((u, ui) => ({
@@ -2346,7 +2348,7 @@ type RType = [string, string]
 type RSub = [string, RType[]]
 type RMid = [string, RSub[]]
 type RBig = [string, RMid[]]
-function buildReal(id: string, grade: string, label: string, data: RBig[], subject?: '수학' | '과학' | '사회' | '역사'): Curriculum {
+function buildReal(id: string, grade: string, label: string, data: RBig[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
     id, grade, label, ...(subject ? { subject } : {}),
     units: data.map((u, ui) => ({
@@ -2838,6 +2840,20 @@ export const CURRICULA: Curriculum[] = [
   build("m-his1-2", "중2-2", "올쏘 중학 역사①-2 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
   build("m-his2-1", "중3-1", "올쏘 중학 역사②-1 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
   build("m-his2-2", "중3-2", "올쏘 중학 역사②-2 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
+  // 🆕 영어·국어 — 유형 트리는 학년마다 같다(잉글리시플랫도 같은 분류를 학년에 공통으로 쓴다).
+  //    학교별 교과서(출판사) 차이는 교재 쪽에서 붙이고, 사다리는 유형으로만 굴린다.
+  build("eng-m1", "중1", "중1 영어", ENG_SECTIONS, '영어'),
+  build("kor-m1", "중1", "중1 국어", KOR_SECTIONS, '국어'),
+  build("eng-m2", "중2", "중2 영어", ENG_SECTIONS, '영어'),
+  build("kor-m2", "중2", "중2 국어", KOR_SECTIONS, '국어'),
+  build("eng-m3", "중3", "중3 영어", ENG_SECTIONS, '영어'),
+  build("kor-m3", "중3", "중3 국어", KOR_SECTIONS, '국어'),
+  build("eng-h1", "고1", "고1 영어", ENG_SECTIONS, '영어'),
+  build("kor-h1", "고1", "고1 국어", KOR_SECTIONS, '국어'),
+  build("eng-h2", "고2", "고2 영어", ENG_SECTIONS, '영어'),
+  build("kor-h2", "고2", "고2 국어", KOR_SECTIONS, '국어'),
+  build("eng-h3", "고3", "고3 영어", ENG_SECTIONS, '영어'),
+  build("kor-h3", "고3", "고3 국어", KOR_SECTIONS, '국어'),
 ]
 
 export function curriculumFor(id: string): Curriculum {
@@ -2877,14 +2893,14 @@ export function allTypeIds(): string[] {
 }
 
 // 과정 id → 과목 (헤더 과목 스위처 목록 필터용)
-export function subjectOfCourse(id?: string): '수학' | '과학' | '사회' | '역사' | undefined {
+export function subjectOfCourse(id?: string): '수학' | '과학' | '사회' | '역사' | '영어' | '국어' | undefined {
   if (!id) return undefined
   return CURRICULA.find(c => c.id === id)?.subject
 }
 
 // 유형 id → 과목. 과학 유형만 트리에 있으므로 과학이면 '과학', 그 외(수학 트리·매쓰플랫 개념id)는 undefined(=수학 취급)
-let _typeSubject: Map<string, '수학' | '과학' | '사회' | '역사'> | null = null
-export function subjectOfType(typeId: string): '수학' | '과학' | '사회' | '역사' | undefined {
+let _typeSubject: Map<string, '수학' | '과학' | '사회' | '역사' | '영어' | '국어'> | null = null
+export function subjectOfType(typeId: string): '수학' | '과학' | '사회' | '역사' | '영어' | '국어' | undefined {
   if (!_typeSubject) {
     _typeSubject = new Map()
     for (const x of eachType()) _typeSubject.set(x.t.id, x.c.subject ?? '수학')
@@ -2941,7 +2957,7 @@ export function typeSubUnitId(typeId: string): string {
 //    그래서 고등 과학 학습지(통합과학1·2=고1, 물리·화학·생명·지구=고2)를 학생앱에서 열면
 //    문제 풀이 로드되지 않아 "문제를 불러오는 중"에서 멈췄다.
 //    학습지의 grade·subject에 해당하는 과정을 모두 반환해 그 풀을 함께 로드한다.
-export function coursesForWorksheet(grade: string, subject?: '수학' | '과학' | '사회' | '역사' | '영어'): string[] {
+export function coursesForWorksheet(grade: string, subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어' | '영어'): string[] {
   const out = new Set<string>()
   const def = defaultCurriculumForGrade(grade)
   const defCur = CURRICULA.find(c => c.id === def)
