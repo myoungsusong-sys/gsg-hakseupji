@@ -4,7 +4,7 @@ import { useStore } from '../lib/store'
 import { useBrand } from '../lib/brand'
 import { todayKey } from '../lib/dates'
 import { loadWbMatch } from '../data/wbMatch'
-import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder } from '../lib/daily'
+import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder, typeOrderOfCurriculum } from '../lib/daily'
 import { bigUnitNameOfType } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
@@ -50,12 +50,44 @@ const BOOK_CHOICES: { course: string; rail: Rail; label: string }[] = [
   { course: 'h-cm2', rail: ['h-cm2', 'h-cm2', '마플시너지 공통수학2'], label: '마플시너지 공통수학2' },
   { course: 'h-alg', rail: ['h-alg', 'h-dae', '마플시너지 대수'], label: '마플시너지 대수' },
   { course: 'h-calc1', rail: MI1, label: '마플시너지 미적분Ⅰ' },
+  // 🔴 확률과 통계 (2026-09-05 명수쌤: "기본과제 교재 후보에 확통·통합사회·통합과학도 넣어줘").
+  //    2028 수능(22개정 첫 수능) 수학 = 대수·미적분Ⅰ·확률과 통계 셋 다. 매칭표(wb-match-h-prob)에
+  //    마플시너지가 없어 **베이직쎈**으로 낸다 — 실측: 104유형 전부 문제은행(pool-h-stat)에 있고
+  //    3회차까지 가능(1,079문항). 쎈은 102/102, RPM 99/99 — 베이직쎈이 가장 많이 덮는다.
+  { course: 'h-stat', rail: ['h-stat', 'h-prob', '베이직쎈 확률과 통계'], label: '베이직쎈 확률과 통계' },
   { course: 'm1-2', rail: ['m1-2', 'm1-2', '수학의 바이블 유형ON 중등수학1(하)'], label: '바이블 유형ON 중1(하)' },
   { course: 'm2-2', rail: ['m2-2', 'm2-2', '쎈 중등수학2(하)'], label: '쎈 중등수학2(하)' },
   { course: 'm3-2', rail: ['m3-2', 'm3-2', '쎈 중등수학3(하)'], label: '쎈 중등수학3(하)' },
 ]
 const bookRailOf = (course: string): Rail | undefined =>
   BOOK_CHOICES.find(b => b.course === course)?.rail
+
+// ── 학생별 과학 교재 후보 (2026-09-05 명수쌤: "기본과제 교재 후보에 확통·통합사회·통합과학도 넣어줘") ──
+// 🔴 2028 수능(22개정 첫 수능) 탐구 = 통합사회 + 통합과학 둘 다 필수. 고2 정시 학생은 통합과학1·2를 여기서 고른다.
+//    · 통합과학2 = 오투 매칭표(유형 58) 그대로 — 고1 규칙과 같은 책.
+//    · 통합과학1 = 매칭표(wb-match)가 없다 → 매칭표키 '' = **교육과정 트리 차례**로 낸다
+//      (실측: 문제은행 69유형 = 트리 69유형, id 동일. lib/daily.ts typeOrderOfCurriculum).
+//    · 통합사회 = 과정·문제은행·매칭표가 **전부 없다.** 후보에 넣으면 빈 학습지가 나가므로 넣지 않는다 —
+//      화면에는 「준비 중」으로만 보인다. 문제은행부터 만들어야 한다(자체 문항 씨앗 패밀리 방식).
+const SCI_CHOICES: { course: string; rail: Rail; label: string }[] = [
+  { course: 'h-int1', rail: ['h-int1', '', '통합과학1 (교육과정 차례)'], label: '통합과학1 (교육과정 차례)' },
+  { course: 'h-int2', rail: ['h-int2', 'h-int2', '오투 통합과학2'], label: '오투 통합과학2' },
+  { course: 'm-sci1-2', rail: ['m-sci1-2', 'm-sci1-2', '오투 중등과학 1-2'], label: '오투 중등과학 1-2' },
+  { course: 'm-sci2-2', rail: ['m-sci2-2', 'm-sci2-2', '오투 중등과학 2-2'], label: '오투 중등과학 2-2' },
+  { course: 'm-sci3-2', rail: ['m-sci3-2', 'm-sci3-2', '오투 중등과학 3-2'], label: '오투 중등과학 3-2' },
+]
+const sciBookRailOf = (course: string): Rail | undefined =>
+  SCI_CHOICES.find(b => b.course === course)?.rail
+/** 학생별 과학 지정은 같은 settings 표(dailyBooks)에 `<학생id>|sci` 키로 둔다 — 새 표·새 컬럼 없이. */
+const sciKey = (studentId: string) => `${studentId}|sci`
+
+/** 유형 차례 — 매칭표키가 있으면 그 책의 차례, '' 이면 교육과정 트리 차례 */
+async function typeOrderOfRail(wbKey: string, bookName: string, course: string): Promise<string[]> {
+  if (!wbKey) return typeOrderOfCurriculum(course)
+  const data = await loadWbMatch(wbKey)
+  const key = Object.keys(data).find(k => k.startsWith(bookName + '|')) ?? Object.keys(data)[0]
+  return key ? typeOrderOfBook(data[key] as unknown[][]) : []
+}
 
 export default function DailySet() {
   const {
@@ -129,7 +161,11 @@ export default function DailySet() {
       // 학생별 교재를 따로 지정했으면 이름 옆에 그 책을 적는다 — 학년 줄만 보고
       // 「이 학년은 다 같은 책」이라고 오해하지 않게.
       const pick = dailyBooks[s.id]
-      const picked = pick ? BOOK_CHOICES.find(b => b.course === pick)?.label : ''
+      const spick = dailyBooks[sciKey(s.id)]
+      const picked = [
+        pick ? BOOK_CHOICES.find(b => b.course === pick)?.label : '',
+        spick ? SCI_CHOICES.find(b => b.course === spick)?.label : '',
+      ].filter(Boolean).join(' · ')
       cur.names.push(picked ? `${s.name}(${picked})` : s.name)
       m.set(key, cur)
     }
@@ -151,6 +187,13 @@ export default function DailySet() {
     return gk === '고2' && hi2 === '미적분' ? MI1 : rail?.math
   }
 
+  // 그 학생의 과학 교재 — 학생별 지정이 있으면 그것, 없으면 학년 규칙(고2·고3은 기본이 없어 지정해야 나간다)
+  function sciRailOf(s: Student): Rail | undefined {
+    const pick = dailyBooks[sciKey(s.id)]
+    if (pick) return sciBookRailOf(pick)
+    return RAIL[gradeKey(s.grade)]?.sci
+  }
+
   // 대상 학생들이 쓰는 과정 목록 — [과정키, [과정키, 교재명, 화면라벨]]
   function railsOf(list: Student[]) {
     const need = new Map<string, { rail: Rail; label: string }>()
@@ -160,7 +203,8 @@ export default function DailySet() {
       if (!rail) continue
       const mm = mathRailOf(s)
       if (mm) need.set(mm[0], { rail: mm, label: `${mm[2]}` })
-      if (rail.sci) need.set(rail.sci[0], { rail: rail.sci, label: `${gk} 과학` })
+      const ss = sciRailOf(s)
+      if (ss) need.set(ss[0], { rail: ss, label: ss[2] })
     }
     return need
   }
@@ -176,10 +220,8 @@ export default function DailySet() {
     const out: { course: string; label: string; units: string[] }[] = []
     for (const [course, { rail: [, wbKey, bookName], label }] of need) {
       try {
-        const data = await loadWbMatch(wbKey)
-        const key = Object.keys(data).find(k => k.startsWith(bookName + '|')) ?? Object.keys(data)[0]
-        if (!key) continue
-        const order = typeOrderOfBook(data[key] as unknown[][])
+        const order = await typeOrderOfRail(wbKey, bookName, course)
+        if (!order.length) continue
         const units = unitsOfOrder(order, bigUnitOf)
         if (units.length) out.push({ course, label, units })
       } catch { /* 매칭표 없음 */ }
@@ -208,9 +250,8 @@ export default function DailySet() {
     const orders = new Map<string, string[]>()
     for (const [course, { rail: [, wbKey, bookName] }] of need) {
       try {
-        const data = await loadWbMatch(wbKey)
-        const key = Object.keys(data).find(k => k.startsWith(bookName + '|')) ?? Object.keys(data)[0]
-        if (key) orders.set(course, typeOrderOfBook(data[key] as unknown[][]))
+        const o = await typeOrderOfRail(wbKey, bookName, course)
+        if (o.length) orders.set(course, o)
       } catch { /* 매칭표가 없으면 아래에서 건너뛴다 */ }
     }
 
@@ -237,7 +278,7 @@ export default function DailySet() {
       setBusy(`${s.name} 학생 만드는 중…`)
       const plan: [string, Rail | undefined][] = [
         ['수학', mathRailOf(s)],
-        ['과학', rail.sci],
+        ['과학', sciRailOf(s)],
       ]
       for (const [subject, entry] of plan) {
         if (!entry) { skip.push(`${s.name}(${gk}) ${subject} — 해당 과정 없음`); continue }
@@ -396,7 +437,7 @@ export default function DailySet() {
             <summary className="cursor-pointer text-sm font-bold">
               학생별 교재 지정{' '}
               <span className="font-normal text-ink2">
-                — 학년과 진도가 다른 학생만 바꾸세요 (안 바꾸면 위 학년 규칙대로)
+                — 학년과 진도가 다른 학생만 바꾸세요 (안 바꾸면 위 학년 규칙대로) · 고2 정시는 확률과 통계·통합과학을 여기서 고릅니다
               </span>
             </summary>
             <div className="mt-2 grid gap-1.5 sm:grid-cols-2">
@@ -412,6 +453,13 @@ export default function DailySet() {
                       className="grow rounded-lg border border-line px-2 py-1 font-semibold">
                       <option value="">학년 규칙 — {def ?? '대상 아님'}</option>
                       {BOOK_CHOICES.map(b => <option key={b.course} value={b.course}>{b.label}</option>)}
+                    </select>
+                    <select value={dailyBooks[sciKey(st.id)] ?? ''}
+                      onChange={e => setDailyBook(sciKey(st.id), e.target.value)}
+                      className="grow rounded-lg border border-line px-2 py-1 font-semibold">
+                      <option value="">과학 학년 규칙 — {RAIL[gk]?.sci?.[2] ?? '없음(과학 안 나감)'}</option>
+                      {SCI_CHOICES.map(b => <option key={b.course} value={b.course}>{b.label}</option>)}
+                      <option value="__soc" disabled>통합사회 — 문제은행 준비 중 (아직 못 냅니다)</option>
                     </select>
                   </label>
                 )

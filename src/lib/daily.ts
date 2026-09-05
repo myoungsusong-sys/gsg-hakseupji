@@ -211,6 +211,16 @@ export function buildByTypeRound(problems: Problem[], o: TypeRoundOpts): Problem
 }
 
 /** 교재(wb-match)가 정한 유형 순서를 뽑는다 — 책에 실린 차례 그대로, 중복 제거. */
+/**
+ * 교재 매칭표가 없는 과정의 유형 차례 — 교육과정 트리(대단원>중단원>소단원>유형) 순서 그대로.
+ * 2026-09-05: 통합과학1 은 매칭표(wb-match)가 없는데 문제은행(69유형)과 트리(69유형)의 유형 id 가 같다(실측).
+ * 매칭표가 있는 과정은 이걸 쓰지 않는다 — "책 차례대로"가 원칙이고, 이건 책이 없을 때의 차선이다.
+ */
+export function typeOrderOfCurriculum(courseId: string): string[] {
+  const cur = curriculumFor(courseId)
+  return cur.units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id))))
+}
+
 export function typeOrderOfBook(rows: unknown[][]): string[] {
   const seen = new Set<string>()
   const out: string[] = []
