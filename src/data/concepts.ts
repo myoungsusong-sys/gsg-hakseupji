@@ -1,5 +1,7 @@
 // 소단원별 개념 정리 — 13과정 274개 (수학전문가 7명 생성 · 검산관 전수 검수, 2026-07-07)
 // STEP2 '개념 추가' 탭에서 학습지에 삽입. $...$ 는 KaTeX 렌더링.
+import { CONCEPTS_GEN } from './concepts-gen'
+
 export interface Concept {
   id: string
   subId: string       // 소속 소단원 id (curriculum SubUnit.id)
@@ -7,7 +9,7 @@ export interface Concept {
   lines: string[]
 }
 
-export const CONCEPTS: Concept[] = [
+const CORE: Concept[] = [
   {
     id: 'c-m1-1-u0m0s0', subId: 'm1-1-u0m0s0', title: '소수와 합성수',
     lines: [
@@ -2679,6 +2681,13 @@ export const CONCEPTS: Concept[] = [
 ]
 
 // 선택 범위(소단원 id들)에 해당하는 개념들
+// 손으로 검수한 정본(CORE, 중·고 수학) + 자동 생성분(초등·과학·사회역사).
+// 같은 소단원이 양쪽에 있으면 **정본이 이긴다**.
+export const CONCEPTS: Concept[] = (() => {
+  const have = new Set(CORE.map(c => c.subId))
+  return [...CORE, ...CONCEPTS_GEN.filter(c => !have.has(c.subId))]
+})()
+
 export function conceptsForSubUnits(subIds: Set<string>): Concept[] {
   return CONCEPTS.filter(c => subIds.has(c.subId))
 }

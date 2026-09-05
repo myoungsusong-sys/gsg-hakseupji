@@ -5,6 +5,7 @@ import type {
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
+import type { MasteryState } from './mastery'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { loadPool } from '../data/pool'
 import { defaultCurriculumForGrade } from '../data/curriculum'
@@ -49,6 +50,8 @@ interface Persisted {
   branches: Branch[]
   ttChecks: Record<string, true>
   reviewChecks: Record<string, true>
+  /** 🪜 유형 마스터 진행상태 — 키는 `학생id|유형id`. 기기를 바꿔도 이어서 올라간다 */
+  masteries: Record<string, MasteryState>
   pointEntries: PointEntry[]
   pointSettlements: PointSettlement[]
 }
@@ -72,6 +75,7 @@ const EMPTY: Persisted = {
   branches: [],
   ttChecks: {},
   reviewChecks: {},
+  masteries: {},
   pointEntries: [],
   pointSettlements: [],
 }
@@ -137,6 +141,7 @@ interface Store extends Persisted {
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
   // 🏫 학교 복습 체크 (문제풀이·오답작성) — 키는 lib/schoolReview.ts reviewKey()
   toggleReviewCheck: (key: string) => void
+  saveMastery: (studentId: string, typeId: string, st: MasteryState) => void
   // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
   addPointEntry: (e: Omit<PointEntry, 'id'>) => void
   removePointEntry: (id: string) => void
@@ -230,6 +235,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     branches: keep('branches', r.branches ?? [], f.settings),
     ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
     reviewChecks: keep('reviewChecks', r.reviewChecks ?? {}, f.settings),
+    masteries: keep('masteries', r.masteries ?? {}, f.settings),
     pointEntries: keep('pointEntries', r.pointEntries ?? [], f.settings),
     pointSettlements: keep('pointSettlements', r.pointSettlements ?? [], f.settings),
   }
@@ -269,7 +275,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
-    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks,
+    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, masteries: s.masteries,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
@@ -685,6 +691,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       set(s => ({ ...s, assignments: s.assignments.filter(a =>
         !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true))) }))
       cloud.assignmentOps([{ type: 'remove', worksheetId, studentId, kind }])
+    },
+    saveMastery: (studentId, typeId, st) => {
+      const next = { ...stateRef.current.masteries, [`${studentId}|${typeId}`]: st }
+      set(s => ({ ...s, masteries: next })); cloud.setSetting('masteries', next)
     },
     toggleReviewCheck: key => {
       const cur = stateRef.current.reviewChecks

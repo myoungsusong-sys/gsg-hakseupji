@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import { useSubject, SUBJECTS, type Subject } from '../lib/subject'
 import { CURRICULA } from '../data/curriculum'
 import MasteryRunner from '../components/MasteryRunner'
 import MasteryPrint from '../components/MasteryPrint'
+import { newMastery, type MasteryState } from '../lib/mastery'
 import type { Problem } from '../types'
 
 /**
@@ -12,20 +14,50 @@ import type { Problem } from '../types'
  *   개념 빈칸 ↔ 기본 ↔ 표준 ↔ 심화 ↔ 최상
  *   틀리면 내려가 다시 이해시키고, 두 번 연속 맞히면 올린다.
  *
- * 화면으로 풀리는 학생은 [시작]으로, 태블릿을 안 쓰는 학생은 [인쇄]로 같은 사다리를 종이로 받는다.
+ * 🔴 **과목을 가리지 않는다.** 사다리는 `유형 + 문제풀 + 개념카드` 세 가지만 있으면 돌아간다
+ *    (2026-09-05 명수쌤: "모든과목 문제은행이 수학처럼 … 최종 유형정복까지").
+ *    수학·과학·사회·역사는 문제풀이 있으니 개념카드가 채워지는 대로 그 과정이 열린다.
+ *
+ * 들어오는 길 둘 — 유형을 직접 고르거나, 학생이 **방금 틀린 문항**에서 넘어온다
+ * (`?type=<유형id>&base=<문항id>`). 진행상태는 학생별·유형별로 저장돼 기기를 바꿔도 이어진다.
  */
 
 type TypeRow = { id: string; name: string; course: string; sub: string }
 
-export default function MasteryPage() {
-  const { problems, ensureCourse } = useStore()
+/** 유형이 속한 과정 — 틀린 문항에서 넘어올 때 과정을 알아내려고 쓴다 */
+function courseOfType(typeId: string): string | null {
+  for (const c of CURRICULA) for (const u of c.units) for (const m of u.mids)
+    for (const s of m.subs) for (const t of s.types) if (t.id === typeId) return c.id
+  return null
+}
+
+export default function MasteryPage({ studentId = 'me' }: { studentId?: string }) {
+  const { problems, ensureCourse, masteries, saveMastery } = useStore()
   const [params] = useSearchParams()
-  const [course, setCourse] = useState(params.get('course') ?? 'm1-1')
+  const [subject, setSubject] = useSubject()
+
+  const paramType = params.get('type')
+  const paramBase = params.get('base')
+  const [course, setCourse] = useState(
+    () => params.get('course') ?? (paramType && courseOfType(paramType)) ?? 'm1-1',
+  )
   const [q, setQ] = useState('')
-  const [typeId, setTypeId] = useState<string | null>(params.get('type'))
+  const [typeId, setTypeId] = useState<string | null>(paramType)
   const [mode, setMode] = useState<'풀기' | '인쇄'>('풀기')
 
   useEffect(() => { ensureCourse(course) }, [course])   // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 과목 스위처에 맞는 과정만 보여 준다 (subject 없는 과정 = 수학)
+  const courses = useMemo(
+    () => CURRICULA.filter((c) => (c.subject ?? '수학') === subject),
+    [subject],
+  )
+  // 고른 과정이 그 과목에 없으면 첫 과정으로 옮긴다
+  useEffect(() => {
+    if (courses.length && !courses.some((c) => c.id === course)) {
+      setCourse(courses[0].id); setTypeId(null)
+    }
+  }, [courses])   // eslint-disable-line react-hooks/exhaustive-deps
 
   const rows = useMemo<TypeRow[]>(() => {
     const c = CURRICULA.find((x) => x.id === course)
@@ -45,14 +77,16 @@ export default function MasteryPage() {
     () => (typeId ? problems.filter((p) => p.typeId === typeId) : []),
     [problems, typeId],
   )
-  // 기준 문항 = 그 유형의 **표준**(중간 난이도). 여기가 2층이고 위아래로 사다리가 뻗는다.
+  // 기준 문항 = 학생이 방금 틀린 그 문제. 없으면 그 유형의 **표준**(중간 난이도).
   // 가장 쉬운 것을 기준으로 잡으면 기본과 표준이 똑같이 「하」가 되어 사다리가 뭉개진다(2026-09-05 실측).
   const base: Problem | null = useMemo(() => {
     if (!pool.length) return null
-    return [...pool].sort((a, b) => Math.abs(a.diff - 3) - Math.abs(b.diff - 3))[0]
-  }, [pool])
+    return (paramBase && pool.find((p) => p.id === paramBase))
+      ?? [...pool].sort((a, b) => Math.abs(a.diff - 3) - Math.abs(b.diff - 3))[0]
+  }, [pool, paramBase])
 
   const row = rows.find((r) => r.id === typeId)
+  const saved = typeId ? masteries[`${studentId}|${typeId}`] : undefined
 
   if (typeId && base && row) {
     if (mode === '인쇄') {
@@ -61,7 +95,10 @@ export default function MasteryPage() {
     }
     return (
       <MasteryRunner
-        typeId={typeId} typeName={row.name} base={base} pool={pool} studentId="me"
+        key={typeId}
+        typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId}
+        initial={saved ?? newMastery(studentId, typeId, 2)}
+        onChange={(st: MasteryState) => saveMastery(studentId, typeId, st)}
         onClose={() => setTypeId(null)}
       />
     )
@@ -76,12 +113,16 @@ export default function MasteryPage() {
       </p>
 
       <div className="mt-4 flex flex-wrap gap-2">
+        <select value={subject} onChange={(e) => setSubject(e.target.value as Subject)}
+          className="rounded-lg border border-line px-3 py-2 text-sm font-bold">
+          {SUBJECTS.map((s) => <option key={s} value={s}>{s}</option>)}
+        </select>
         <select value={course} onChange={(e) => { setCourse(e.target.value); setTypeId(null) }}
           className="rounded-lg border border-line px-3 py-2 text-sm">
-          {CURRICULA.map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
+          {courses.map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
         </select>
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="유형·소단원 검색"
-          className="flex-1 rounded-lg border border-line px-3 py-2 text-sm" />
+          className="min-w-[10rem] flex-1 rounded-lg border border-line px-3 py-2 text-sm" />
         <label className="flex items-center gap-1.5 text-sm text-ink2">
           <input type="checkbox" checked={mode === '인쇄'}
             onChange={(e) => setMode(e.target.checked ? '인쇄' : '풀기')} />
@@ -89,9 +130,16 @@ export default function MasteryPage() {
         </label>
       </div>
 
+      {!courses.length && (
+        <p className="mt-4 rounded-xl border border-dashed border-line p-6 text-center text-sm text-ink2">
+          {subject} 은(는) 아직 문제은행이 없습니다.
+        </p>
+      )}
+
       <div className="mt-3 divide-y divide-line rounded-xl border border-line bg-paper">
         {shown.map((r) => {
           const n = problems.filter((p) => p.typeId === r.id).length
+          const st = masteries[`${studentId}|${r.id}`]
           return (
             <button key={r.id} type="button" disabled={n === 0} onClick={() => setTypeId(r.id)}
               className="flex w-full items-center justify-between px-4 py-2.5 text-left text-sm hover:bg-pine-soft disabled:opacity-40">
@@ -99,11 +147,16 @@ export default function MasteryPage() {
                 <span className="text-ink">{r.name}</span>
                 <span className="ml-2 text-xs text-ink2">{r.sub}</span>
               </span>
-              <span className="text-xs text-ink2">{n}문항</span>
+              <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
+                {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
+                {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
+                {n}문항
+              </span>
             </button>
           )
         })}
-        {!shown.length && <p className="px-4 py-6 text-center text-sm text-ink2">해당하는 유형이 없습니다.</p>}
+        {!shown.length && !!courses.length &&
+          <p className="px-4 py-6 text-center text-sm text-ink2">해당하는 유형이 없습니다.</p>}
       </div>
     </div>
   )

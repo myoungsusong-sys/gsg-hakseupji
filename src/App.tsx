@@ -31,6 +31,7 @@ import FormsPage from './pages/FormsPage'
 import Materials from './pages/Materials'
 import NaesinPrep from './pages/NaesinPrep'
 import MasteryPage from './pages/MasteryPage'
+import StudentMastery from './pages/student/StudentMastery'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
 import TodayRoom from './pages/TodayRoom'
@@ -121,7 +122,7 @@ function Gate() {
             <Route path="result/:wsId" element={<StudentResult />} />
             <Route path="workbooks" element={<StudentWorkbooks />} />
             <Route path="voca" element={<StudentVoca />} />
-            <Route path="mastery" element={<MasteryPage />} />
+            <Route path="mastery" element={<StudentMastery />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
             {/* 학생용 학습지 PDF — 선생님 화면을 열어 주지 않으려고 전용 경로를 둔다 */}

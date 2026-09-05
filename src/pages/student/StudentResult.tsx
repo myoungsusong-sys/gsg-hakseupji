@@ -314,6 +314,15 @@ export default function StudentResult() {
                       <div className="rounded-xl bg-paper2/50 p-3"><ProblemContent p={p} /></div>
                     )}
                     <ItemBody no={no} p={p} r={r} />
+                    {/* 🪜 틀린 문항은 그 자리에서 사다리로 — 개념 빈칸까지 내려갔다가 다시 올라온다
+                        (2026-09-05 명수쌤: "틀리면 기본개념…맞으면 단계를 높여서 최종 유형정복까지") */}
+                    {!correct && !r?.pending && p && (
+                      <button type="button"
+                        onClick={() => nav(`/student/mastery?type=${p.typeId}&base=${encodeURIComponent(p.id)}`)}
+                        className="w-full rounded-xl bg-pine py-2.5 text-sm font-bold text-white hover:bg-pine-dark">
+                        🪜 이 유형 마스터하기
+                      </button>
+                    )}
                   </div>
                 </div>
               )
