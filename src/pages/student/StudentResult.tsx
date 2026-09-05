@@ -8,7 +8,7 @@ import ProblemContent from '../../components/ProblemContent'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
-import { latestGradingFor, statusOf, summaryOf, AnswerText, isImgAnswer } from './common'
+import { latestGradingFor, statusOf, summaryOf, AnswerText, isImgAnswer, usePreview } from './common'
 import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, ONE_CLICK_OFF_MSG } from './supplement'
 
 // 자동 오답학습지 이중 발화 방어 — 같은 채점(g.id)으로는 한 세션에 한 번만 시도.
@@ -33,6 +33,7 @@ export default function StudentResult() {
     showSolutionBefore: asgReveal?.solution === false ? false : gcfg.showSolutionBefore,
   }
   const nav = useNavigate()
+  const preview = usePreview()   // 선생님 미리보기에선 라우팅을 막는다
   const supplement = useSupplement(me)
 
   const [onlyWrong, setOnlyWrong] = useState(false)
@@ -316,7 +317,7 @@ export default function StudentResult() {
                     <ItemBody no={no} p={p} r={r} />
                     {/* 🪜 틀린 문항은 그 자리에서 사다리로 — 개념 빈칸까지 내려갔다가 다시 올라온다
                         (2026-09-05 명수쌤: "틀리면 기본개념…맞으면 단계를 높여서 최종 유형정복까지") */}
-                    {!correct && !r?.pending && p && (
+                    {!correct && !r?.pending && p && !preview.on && (
                       <button type="button"
                         onClick={() => nav(`/student/mastery?type=${p.typeId}&base=${encodeURIComponent(p.id)}`)}
                         className="w-full rounded-xl bg-pine py-2.5 text-sm font-bold text-white hover:bg-pine-dark">
