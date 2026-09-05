@@ -31,6 +31,7 @@ import FormsPage from './pages/FormsPage'
 import Materials from './pages/Materials'
 import NaesinPrep from './pages/NaesinPrep'
 import MasteryPage from './pages/MasteryPage'
+import SchoolBooks from './pages/SchoolBooks'
 import StudentMastery from './pages/student/StudentMastery'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
@@ -150,6 +151,7 @@ function Gate() {
               } />
               <Route path="/prep/school-exam" element={<NaesinPrep />} />
               <Route path="/prep/mastery" element={<MasteryPage />} />
+              <Route path="/prep/school-books" element={<SchoolBooks />} />
               <Route path="/prep/csat" element={<CsatLibrary />} />
               <Route path="/gichul/:id" element={<GichulView />} />
               <Route path="/gichul-tag/:id" element={<GichulTag />} />

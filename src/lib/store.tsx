@@ -52,6 +52,8 @@ interface Persisted {
   reviewChecks: Record<string, true>
   /** 🪜 유형 마스터 진행상태 — 키는 `학생id|유형id`. 기기를 바꿔도 이어서 올라간다 */
   masteries: Record<string, MasteryState>
+  /** 🏫 학교별 교과서 — `학교명` → 과목 → 교과서(출판사·저자). 국어·영어는 학교마다 다르다 */
+  schoolBooks: Record<string, Record<string, string>>
   pointEntries: PointEntry[]
   pointSettlements: PointSettlement[]
 }
@@ -76,6 +78,7 @@ const EMPTY: Persisted = {
   ttChecks: {},
   reviewChecks: {},
   masteries: {},
+  schoolBooks: {},
   pointEntries: [],
   pointSettlements: [],
 }
@@ -142,6 +145,7 @@ interface Store extends Persisted {
   // 🏫 학교 복습 체크 (문제풀이·오답작성) — 키는 lib/schoolReview.ts reviewKey()
   toggleReviewCheck: (key: string) => void
   saveMastery: (studentId: string, typeId: string, st: MasteryState) => void
+  setSchoolBook: (school: string, subject: string, book: string) => void
   // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
   addPointEntry: (e: Omit<PointEntry, 'id'>) => void
   removePointEntry: (id: string) => void
@@ -236,6 +240,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
     reviewChecks: keep('reviewChecks', r.reviewChecks ?? {}, f.settings),
     masteries: keep('masteries', r.masteries ?? {}, f.settings),
+    schoolBooks: keep('schoolBooks', r.schoolBooks ?? {}, f.settings),
     pointEntries: keep('pointEntries', r.pointEntries ?? [], f.settings),
     pointSettlements: keep('pointSettlements', r.pointSettlements ?? [], f.settings),
   }
@@ -275,7 +280,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
-    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, masteries: s.masteries,
+    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, masteries: s.masteries, schoolBooks: s.schoolBooks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
@@ -691,6 +696,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       set(s => ({ ...s, assignments: s.assignments.filter(a =>
         !(a.worksheetId === worksheetId && a.studentId === studentId && (kind ? a.kind === kind : true))) }))
       cloud.assignmentOps([{ type: 'remove', worksheetId, studentId, kind }])
+    },
+    setSchoolBook: (school, subject, book) => {
+      const cur = stateRef.current.schoolBooks
+      const one = { ...(cur[school] ?? {}) }
+      if (book.trim()) one[subject] = book.trim(); else delete one[subject]
+      const next = { ...cur, [school]: one }
+      if (!Object.keys(one).length) delete next[school]
+      set(s => ({ ...s, schoolBooks: next })); cloud.setSetting('schoolBooks', next)
     },
     saveMastery: (studentId, typeId, st) => {
       const next = { ...stateRef.current.masteries, [`${studentId}|${typeId}`]: st }
