@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
+import { autoCorrect, isImgAnswer } from './student/AnswerInput'
 import MathText from './MathText'
 import {
   newMastery, step, passConcept, pickForFloor, conceptBlanks,
@@ -37,6 +38,8 @@ export default function MasteryRunner({
   const [state, setState] = useState<MasteryState>(() => initial ?? newMastery(studentId, typeId, 2))
   const [current, setCurrent] = useState<Problem | null>(null)
   const [picked, setPicked] = useState<number | null>(null)   // 객관식 선택
+  const [input, setInput] = useState('')                      // 주관식 학생 답
+  const [judged, setJudged] = useState<boolean | null>(null)  // 자동 채점 결과
   const [revealed, setRevealed] = useState(false)
   const [msg, setMsg] = useState<string>('')
   const [event, setEvent] = useState<string>('')
@@ -48,7 +51,7 @@ export default function MasteryRunner({
 
   // 층이 바뀌면 그 층의 문제를 새로 뽑는다
   useEffect(() => {
-    setPicked(null); setRevealed(false)
+    setPicked(null); setRevealed(false); setInput(''); setJudged(null)
     if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); return }
     setCurrent(pickForFloor(state, base, pool))
   }, [state.floor, state.servedIds.length, base, pool])   // eslint-disable-line react-hooks/exhaustive-deps
@@ -59,9 +62,24 @@ export default function MasteryRunner({
     setState(r.next); setMsg(r.message); setEvent(r.event)
   }
 
+  // 매쓰플랫 문항은 보기가 **이미지 안에** 있어 choices 배열이 없다.
+  // 그래도 객관식이면 ①~⑤ 버튼을 줘야 한다 — 안 그러면 학생이 식을 통째로 타이핑해야 한다.
+  const isChoice = !!current && (current.kind === '객관식' || !!current.choices)
+
   function mark(correct: boolean) {
     if (!current) return
     apply(step(state, current.id, correct, new Date().toISOString()))
+  }
+
+  /** 학생 답을 채점한다. **맞으면 곧바로 다음 단계로 넘어간다.**
+   *  틀렸을 때만 정답·해설을 띄우고 [다음 문제로] 를 한 번 누르게 한다 —
+   *  틀린 문제의 해설을 못 보고 넘어가면 사다리를 타는 뜻이 없다. */
+  function judge(answer: string) {
+    if (!current || judged !== null) return
+    const ok = autoCorrect(current, answer)
+    setJudged(ok)
+    setRevealed(true)
+    if (ok) mark(true)
   }
 
   // ── 마스터 / 선생님 호출 ──────────────────────────────────────────────
@@ -173,31 +191,68 @@ export default function MasteryRunner({
           <div className="rounded-xl border border-line p-4">
             {/* 보기는 아래에서 **클릭 버튼**으로 직접 그린다 — 여기서 또 그리면 두 번 나온다 */}
             <ProblemContent p={current} hideChoices />
-            {current.choices && (
+            {isChoice && (
               <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
-                {current.choices.map((c, i) => (
-                  <button key={i} type="button" disabled={revealed}
-                    onClick={() => { setPicked(i); setRevealed(true) }}
+                {(current.choices ?? ['', '', '', '', '']).map((c, i) => (
+                  <button key={i} type="button" disabled={judged !== null}
+                    onClick={() => { setPicked(i); judge('①②③④⑤'[i]) }}
                     className={`rounded-lg border px-3 py-1.5 text-sm ${
                       picked === i ? 'border-pine bg-pine-soft font-bold' : 'border-line hover:bg-paper2'
                     }`}>
-                    {'①②③④⑤'[i]} <MathText text={c} />
+                    {'①②③④⑤'[i]}{c ? <> <MathText text={c} /></> : null}
                   </button>
                 ))}
               </div>
             )}
           </div>
 
-          {/* 채점 */}
-          {!revealed && !current.choices && (
-            <button type="button" onClick={() => setRevealed(true)}
-              className="mt-3 w-full rounded-lg border border-pine py-2.5 text-sm font-bold text-pine hover:bg-pine-soft">
-              풀었습니다 — 정답 확인
-            </button>
+          {/* 채점 — 학생이 답을 넣으면 **자동으로** 맞는지 보고 단계를 옮긴다 */}
+          {judged === null && !isChoice && !isImgAnswer(String(current.answer ?? '')) && (
+            <form className="mt-3 flex gap-2"
+              onSubmit={(e) => { e.preventDefault(); if (input.trim()) judge(input) }}>
+              <input
+                value={input} onChange={(e) => setInput(e.target.value)}
+                autoFocus inputMode="text" placeholder="답을 입력하세요"
+                className="flex-1 rounded-lg border border-line px-3 py-2.5 text-base focus:border-pine focus:outline-none"
+              />
+              <button type="submit" disabled={!input.trim()}
+                className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper disabled:opacity-40">
+                제출
+              </button>
+            </form>
           )}
-          {revealed && (
-            <div className="mt-3 rounded-xl border border-line bg-paper2/40 p-3">
-              <div className="text-sm"><b>정답</b> <MathText text={String(current.answer ?? '')} /></div>
+
+          {/* 정답이 이미지로만 오는 문항(서술형 등)은 기계가 못 읽는다 — 스스로 대조한다 */}
+          {judged === null && !isChoice && isImgAnswer(String(current.answer ?? '')) && (
+            !revealed ? (
+              <button type="button" onClick={() => setRevealed(true)}
+                className="mt-3 w-full rounded-lg border border-pine py-2.5 text-sm font-bold text-pine hover:bg-pine-soft">
+                풀었습니다 — 정답 보기
+              </button>
+            ) : (
+              <div className="mt-3 rounded-xl border border-line bg-paper2/40 p-3">
+                <p className="text-xs text-ink2">이 문항은 정답이 그림이라 자동 채점이 안 됩니다. 직접 맞춰 보세요.</p>
+                <img src={String(current.answer)} alt="정답" className="mt-2 max-h-16" />
+                <div className="mt-3 flex gap-2">
+                  <button type="button" onClick={() => { setJudged(true); mark(true) }}
+                    className="flex-1 rounded-lg bg-pine py-2.5 text-sm font-bold text-paper">맞았어요</button>
+                  <button type="button" onClick={() => setJudged(false)}
+                    className="flex-1 rounded-lg border border-amber py-2.5 text-sm font-bold text-amber">틀렸어요</button>
+                </div>
+              </div>
+            )
+          )}
+
+          {/* 틀렸을 때만 멈춰서 정답·해설을 보여 준다 */}
+          {judged === false && (
+            <div className="mt-3 rounded-xl border border-clay/40 bg-red-50/60 p-3">
+              <p className="text-sm font-bold text-clay">✕ 틀렸습니다</p>
+              <div className="mt-2 text-sm">
+                <b>정답</b>{' '}
+                {isImgAnswer(String(current.answer ?? ''))
+                  ? <img src={String(current.answer)} alt="정답" className="inline-block max-h-6 align-middle" />
+                  : <MathText text={String(current.answer ?? '')} />}
+              </div>
               {current.solution && !current.solution.startsWith('http') && (
                 <div className="mt-2 whitespace-pre-wrap text-xs leading-relaxed text-ink2">
                   <MathText text={current.solution} />
@@ -206,16 +261,10 @@ export default function MasteryRunner({
               {current.solution?.startsWith('http') && (
                 <img src={current.solution} alt="해설" className="mt-2 w-full max-w-[430px]" />
               )}
-              <div className="mt-3 flex gap-2">
-                <button type="button" onClick={() => mark(true)}
-                  className="flex-1 rounded-lg bg-pine py-2.5 text-sm font-bold text-paper hover:bg-pine-dark">
-                  맞았어요
-                </button>
-                <button type="button" onClick={() => mark(false)}
-                  className="flex-1 rounded-lg border border-amber py-2.5 text-sm font-bold text-amber hover:bg-amber/10">
-                  틀렸어요
-                </button>
-              </div>
+              <button type="button" onClick={() => mark(false)}
+                className="mt-3 w-full rounded-lg bg-clay py-2.5 text-sm font-bold text-white">
+                해설을 봤습니다 — 한 단계 내려가기
+              </button>
             </div>
           )}
         </div>
