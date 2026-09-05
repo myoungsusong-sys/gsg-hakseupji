@@ -4,7 +4,7 @@
 import fs from 'node:fs'
 
 const EXAMPLE_LINE = /^\s*(예|예시|참고|주의)\s*[:：]/
-const WORTH_ASKING = /[0-9^_]|\\d?frac|\\sqrt|\\sum|\\int|\\times|\\cdot|\\pi|[+\-]/
+const WORTH_ASKING = /[0-9^_]|\\d?frac|\\sqrt|\\sum|\\int|\\times|\\div|\\cdot|\\pi|[+\-]/
 const LABEL_WORDS = /^(성질|참고|주의|방법|유형|정리|공식|핵심|조건|계산|풀이|요약|보기|순서|절차)$/
 const DEF_HEAD = /^([가-힣][가-힣A-Za-z0-9·()]{1,11})(?:\s*\$[^$]*\$)?\s*[:：]/
 const goodTerm = (w) => !/[0-9]/.test(w) && !LABEL_WORDS.test(w) && w.length >= 2

@@ -153,7 +153,7 @@ function topLevelEq(s: string): number {
 }
 
 /** 우변이 빈칸으로 낼 값어치가 있나. `y=f(x)`·`P(X=a)=0` 같은 건 문제가 안 된다 */
-const WORTH_ASKING = /[0-9^_]|\\d?frac|\\sqrt|\\sum|\\int|\\times|\\cdot|\\pi|[+\-]/
+const WORTH_ASKING = /[0-9^_]|\\d?frac|\\sqrt|\\sum|\\int|\\times|\\div|\\cdot|\\pi|[+\-]/
 
 /** 「소인수: 어떤 자연수의 …」 처럼 **줄머리에 정의어**가 있는 것만 용어 빈칸으로 쓴다.
  *  문장 한가운데서 가장 긴 낱말을 집으면 「최대공약수의」·「소인수분해했을」 처럼
