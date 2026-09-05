@@ -52,8 +52,15 @@ for (const c of arr) {
   if (c.lines.length < 4) bad.push(`${c.subId} 줄이 ${c.lines.length}개 (4개 이상)`)
   for (const l of c.lines) if ((l.match(/\$/g) ?? []).length % 2) dollars.push(`${c.subId} $ 짝이 안 맞음: ${l.slice(0, 50)}`)
   const { term, formula } = check(c)
-  if (!term) bad.push(`${c.subId} 용어 빈칸 0개 — 줄머리에 「낱말: 설명」 줄이 필요`)
-  if (!formula) bad.push(`${c.subId} 공식 빈칸 0개 — $...$ 안 괄호 밖 등호 + 값 있는 우변이 필요`)
+  // 🔴 영어·국어에는 수식이 없다. 공식 줄을 강제하면 **억지 수식**을 지어내게 된다
+  //    (2026-09-05). 대신 용어 빈칸을 **2개 이상** 요구해 빈칸 수를 맞춘다.
+  const noMath = /^(eng|kor)-/.test(c.subId)
+  if (noMath) {
+    if (term < 2) bad.push(`${c.subId} 용어 빈칸 ${term}개 — 영어·국어는 「낱말: 설명」 줄이 2개 이상 필요`)
+  } else {
+    if (!term) bad.push(`${c.subId} 용어 빈칸 0개 — 줄머리에 「낱말: 설명」 줄이 필요`)
+    if (!formula) bad.push(`${c.subId} 공식 빈칸 0개 — $...$ 안 괄호 밖 등호 + 값 있는 우변이 필요`)
+  }
 }
 console.log(`카드 ${arr.length}개`)
 const all = [...dollars, ...bad]
