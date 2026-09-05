@@ -44,6 +44,7 @@ import GichulView from './pages/GichulView'
 import GichulTag from './pages/GichulTag'
 import ArithmeticGen from './pages/ArithmeticGen'
 import LecturePage from './pages/LecturePage'
+import LecNoteCheck from './pages/LecNoteCheck'
 import EssayPage from './pages/EssayPage'
 import WorksheetUpload from './pages/WorksheetUpload'
 
@@ -165,6 +166,7 @@ function Gate() {
               <Route path="/prep/arithmetic" element={<ArithmeticGen />} />
               <Route path="/prep/essay" element={<EssayPage />} />
               <Route path="/prep/lecture" element={<LecturePage />} />
+              <Route path="/prep/lecnote" element={<LecNoteCheck />} />
               <Route path="/prep/share" element={
                 <Placeholder title="다른 기관 학습지"
                   original={['타 학원 공개 학습지 검색(난이도·문제 수 슬라이더) — 상호 공개 마켓']}

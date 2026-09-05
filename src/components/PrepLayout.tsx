@@ -42,6 +42,7 @@ export default function PrepLayout() {
                 서술형 <span className="ml-1 rounded bg-clay px-1 text-[10px] font-bold text-white">N</span>
               </NavLink>
               <NavLink to="/prep/lecture" className={item}>강의</NavLink>
+              <NavLink to="/prep/lecnote" className={item}>인강노트 확인</NavLink>
             </>
           )}
           <div className="my-2 border-t border-line" />
