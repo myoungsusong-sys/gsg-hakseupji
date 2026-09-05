@@ -25,6 +25,15 @@ export const SCI_POOL_COURSES: readonly string[] = [
 
 // 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
 // (사이언스플랫 Raw 와 같은 파일에 섞여 있다. 로더가 행 단위로 첫 필드 타입을 보고 가른다)
+// 🆕 **생성분만 있는 과정** — 영어·국어는 매쓰플랫 수확분(pool-*.json)이 없고
+//    우리가 만든 gen-<과정>.json 만 있다. 이 목록에 없으면 아래 loadPool 이 곧바로
+//    빈 배열로 끝나 **문항이 하나도 안 들어간다**(2026-09-05 화면에서 발견: 전 유형 0문항).
+//    pool-*.json 404 는 아래 .catch 가 흡수하므로 이 목록에만 넣으면 gen 이 실린다.
+export const GEN_ONLY_COURSES: readonly string[] = [
+  'eng-m1', 'eng-m2', 'eng-m3', 'eng-h1', 'eng-h2', 'eng-h3',
+  'kor-m1', 'kor-m2', 'kor-m3', 'kor-h1', 'kor-h2', 'kor-h3',
+]
+
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const
 // [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer, solutionRelPath?]
 //  — 완자 교재 크롭 문항. solution은 정답친해 원본 페이지 이미지(정답·해설, 오류 위험 0)
@@ -86,7 +95,7 @@ const inflight = new Map<string, Promise<Problem[]>>()
 export function loadPool(course: string): Promise<Problem[]> {
   const isMath = POOL_COURSES.includes(course as typeof POOL_COURSES[number])
   const isWanja = WANJA_COURSES.includes(course as typeof WANJA_COURSES[number])
-  if (!isMath && !isWanja) return Promise.resolve([])
+  if (!isMath && !isWanja && !GEN_ONLY_COURSES.includes(course)) return Promise.resolve([])
   const hit = cache.get(course)
   if (hit) return Promise.resolve(hit)
   let p = inflight.get(course)

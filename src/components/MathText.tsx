@@ -19,7 +19,9 @@ export function mathToHtml(text: string): string {
         return escapeHtml(part)
       }
     }
-    return escapeHtml(part)
+    // 수식 밖 텍스트: 이스케이프한 **뒤에** `**굵게**` 만 태그로 되살린다.
+    // (이스케이프 전에 하면 본문의 < > 가 태그로 새어 들어간다)
+    return escapeHtml(part).replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
   }).join('')
 }
 

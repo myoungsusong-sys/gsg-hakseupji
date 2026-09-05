@@ -52,12 +52,25 @@ export default function MasteryPage({ studentId = 'me' }: { studentId?: string }
     () => CURRICULA.filter((c) => (c.subject ?? '수학') === subject),
     [subject],
   )
-  // 고른 과정이 그 과목에 없으면 첫 과정으로 옮긴다
+  // 🔴 링크로 들어온 과정(예: 국어)이 지금 과목(수학)과 다르면 **과목을 먼저 맞춘다.**
+  //    안 그러면 아래 효과가 「그 과목에 없는 과정」이라 보고 첫 과정으로 되돌려 버린다
+  //    (2026-09-05 실물에서 발견 — 국어 링크가 초1-1 수학으로 튀었다).
   useEffect(() => {
+    const c = CURRICULA.find((x) => x.id === course)
+    const want = c?.subject ?? '수학'
+    if (want !== subject) setSubject(want)
+  }, [course])   // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 고른 과정이 그 과목에 없으면 첫 과정으로 옮긴다.
+  // 단 **과목을 바꾸는 중이면 건드리지 않는다** — 위 효과가 과목을 맞추기 전에
+  // 이게 먼저 돌면 링크로 연 유형이 풀려 목록으로 튄다(2026-09-05 실물에서 발견).
+  useEffect(() => {
+    const cur = CURRICULA.find((x) => x.id === course)
+    if ((cur?.subject ?? '수학') !== subject) return      // 아직 과목이 안 맞았다 — 기다린다
     if (courses.length && !courses.some((c) => c.id === course)) {
       setCourse(courses[0].id); setTypeId(null)
     }
-  }, [courses])   // eslint-disable-line react-hooks/exhaustive-deps
+  }, [courses, subject])   // eslint-disable-line react-hooks/exhaustive-deps
 
   const rows = useMemo<TypeRow[]>(() => {
     const c = CURRICULA.find((x) => x.id === course)
