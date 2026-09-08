@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
+import MasteryQueue from '../../components/MasteryQueue'
+import { stateToStart } from '../../lib/wrongTypes'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Grading } from '../../types'
 import { useStore } from '../../lib/store'
@@ -31,7 +33,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries, reviewChecks, toggleReviewCheck } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries, reviewChecks, toggleReviewCheck, saveMastery } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable
@@ -296,6 +298,10 @@ export default function StudentHome() {
               )}
             </section>
           )}
+
+          {/* 🪜 정복할 유형 — 교재·학습지에서 틀린 유형이 저절로 줄을 선다. 누르면 사다리로 (2026-09-08) */}
+          <MasteryQueue studentId={me.id} compact limit={5}
+            onPick={(r) => { saveMastery(me.id, r.typeId, stateToStart(r, me.id)); nav(`/student/mastery?type=${r.typeId}`) }} />
 
           {/* 🔤 오늘 영단어 — 매일 한 DAY(25단어). 뜻을 보고 영단어를 쓰면 바로 채점된다 */}
           <section className="rounded-2xl border border-line bg-white p-6">

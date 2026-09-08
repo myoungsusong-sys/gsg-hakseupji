@@ -7,6 +7,8 @@ import MasteryRunner from '../components/MasteryRunner'
 import MasteryPrint from '../components/MasteryPrint'
 import { newMastery, type MasteryState } from '../lib/mastery'
 import type { Problem } from '../types'
+import MasteryQueue, { typeNameOf } from '../components/MasteryQueue'
+import { stateToStart, type WrongTypeRow } from '../lib/wrongTypes'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -102,6 +104,14 @@ export default function MasteryPage({ studentId = 'me' }: { studentId?: string }
   const row = rows.find((r) => r.id === typeId)
   const saved = typeId ? masteries[`${studentId}|${typeId}`] : undefined
 
+  // 🪜 정복 대기 큐에서 누름 — 과정을 그 유형의 것으로 맞추고, 시작층(강등이면 한 층 아래)을 저장한 뒤 연다 (2026-09-08)
+  const pickFromQueue = (r: WrongTypeRow) => {
+    const t = typeNameOf(r.typeId)
+    if (t) setCourse(t.course)
+    saveMastery(studentId, r.typeId, stateToStart(r, studentId))
+    setTypeId(r.typeId)
+  }
+
   if (typeId && base && row) {
     if (mode === '인쇄') {
       return <MasteryPrint typeId={typeId} typeName={row.name} base={base} pool={pool}
@@ -125,6 +135,9 @@ export default function MasteryPage({ studentId = 'me' }: { studentId?: string }
         유형 하나를 개념 빈칸부터 최상 난이도까지 올려 붙인다.
         틀리면 한 단계 내려가 다시 이해시키고, 연속 두 문제를 맞히면 올라간다.
       </p>
+
+      {/* 🪜 교재·학습지 오답이 만든 줄 — 여기서 누르면 바로 사다리 (2026-09-08 명수쌤: 문제집 오답도 승강제 유형정복에) */}
+      <div className="mt-4"><MasteryQueue studentId={studentId} onPick={pickFromQueue} /></div>
 
       <div className="mt-4 flex flex-wrap gap-2">
         <select value={subject} onChange={(e) => setSubject(e.target.value as Subject)}
