@@ -33,9 +33,12 @@ function courseOfType(typeId: string): string | null {
   return null
 }
 
-export default function MasteryPage({ studentId = 'me' }: { studentId?: string }) {
-  const { problems, ensureCourse, masteries, saveMastery } = useStore()
+export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
+  const { problems, ensureCourse, masteries, saveMastery, allStudents } = useStore()
   const [params] = useSearchParams()
+  // 선생님이 특정 학생의 사다리를 열어 본다 (`?student=<학생id>`) — 학생 대신 확인·시연할 때 (2026-09-08)
+  const studentId = params.get('student') ?? studentIdProp
+  const viewingName = params.get('student') ? (allStudents.find((s) => s.id === studentId)?.name ?? studentId) : null
   const [subject, setSubject] = useSubject()
 
   const paramType = params.get('type')
@@ -130,7 +133,7 @@ export default function MasteryPage({ studentId = 'me' }: { studentId?: string }
 
   return (
     <div className="mx-auto max-w-3xl">
-      <h1 className="text-lg font-bold text-ink">🪜 유형 마스터</h1>
+      <h1 className="text-lg font-bold text-ink">🪜 유형 마스터{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
       <p className="mt-1 text-sm text-ink2">
         유형 하나를 개념 빈칸부터 최상 난이도까지 올려 붙인다.
         틀리면 한 단계 내려가 다시 이해시키고, 연속 두 문제를 맞히면 올라간다.

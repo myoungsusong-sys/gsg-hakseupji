@@ -73,6 +73,7 @@ export function wrongTypesOf(opts: {
 
   for (const g of gradings) {
     if (g.studentId !== studentId || !g.date || g.date < since) continue
+    const gDate = g.date.slice(0, 10)          // 채점 date 는 ISO(시각 포함)일 수 있다 — 날짜만 쓴다
     const source: '교재' | '학습지' = (g.source ?? '교재') === '학습지' ? '학습지' : '교재'
     for (const r of g.results) {
       if (r.correct || r.careless) continue
@@ -90,7 +91,7 @@ export function wrongTypesOf(opts: {
       if (!typeId) continue
       const a = acc.get(typeId) ?? { wrong: 0, lastAt: '', sources: new Set(), books: new Set(), minDiff: 5 }
       a.wrong += 1
-      if (g.date > a.lastAt) a.lastAt = g.date
+      if (gDate > a.lastAt) a.lastAt = gDate
       a.sources.add(source)
       if (g.workbookId) a.books.add(g.workbookId)
       a.minDiff = Math.min(a.minDiff, diff)
