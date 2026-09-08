@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- 📱 홈 화면 설치(PWA) — 학생 폰에서 앱처럼 열린다. 검색 노출과는 무관(아래 robots 차단 유지). 2026-09-08 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#1f6feb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Summit On" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- 🔒 앱 비노출 — 지정하지 않은 사람은 존재 자체를 모르게. 검색엔진·AI 크롤러 색인 전면 차단.
          (실제 접근 차단은 로그인/RLS 가 담당. 이건 "검색으로 발견되지 않게" 하는 층이다.) -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
