@@ -52,7 +52,8 @@ export default function MasteryQueue({ studentId, onPick, limit = 12, compact = 
           return (
             <li key={r.typeId} className="flex flex-wrap items-center gap-2 py-2.5">
               <span className={`rounded-full px-2 py-0.5 text-[11px] font-black ${BADGE[r.status]}`}>{r.status}</span>
-              <span className="font-bold">{t?.name ?? r.typeId}</span>
+              {/* 커리큘럼에 이름이 없는 유형도 사다리는 돈다 — 번호라도 보여 준다 (2026-09-12) */}
+              <span className="font-bold">{t?.name ?? `유형 ${r.typeId}`}</span>
               {t?.sub && <span className="text-xs text-ink2">{t.sub}</span>}
               <span className="text-xs text-ink2">
                 오답 {r.wrong} · {r.sources.join('+')} · {r.lastAt.slice(5).replace('-', '/')}

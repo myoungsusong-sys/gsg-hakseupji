@@ -26,15 +26,43 @@ import { stateToStart, type WrongTypeRow } from '../lib/wrongTypes'
 
 type TypeRow = { id: string; name: string; course: string; sub: string }
 
-/** 유형이 속한 과정 — 틀린 문항에서 넘어올 때 과정을 알아내려고 쓴다 */
-function courseOfType(typeId: string): string | null {
+/**
+ * 🗺️ 커리큘럼 **밖** 유형의 소속 과정 — public/type-course.json (scripts/build-type-course.mjs 가 만든다)
+ *
+ * 🔴 왜 필요한가 (2026-09-12 실측)
+ *    커리큘럼 트리에 등록된 유형은 6,684개인데, 실제 문항은 그보다 훨씬 넓게 붙어 있다 —
+ *    이미지 풀 1,322,593문항 중 **712,189건(53.8%)**, 교재(wb-match) **78,673문항**이
+ *    커리큘럼에 없는 유형이다. 그런 문항을 틀리면 정복 큐에는 줄이 서는데
+ *    아래 `row` 를 못 찾아 **[정복 시작]이 아무 반응도 없었다**(게다가 상태는 저장돼 '진행중'으로 영영 남음).
+ *    사다리 자체는 `유형 + 문제풀` 만 있으면 도니까, 과정만 알아내면 그대로 돌릴 수 있다.
+ */
+let typeCourse: Record<string, string> | null = null
+let typeCourseReq: Promise<Record<string, string>> | null = null
+function loadTypeCourse(): Promise<Record<string, string>> {
+  if (typeCourse) return Promise.resolve(typeCourse)
+  typeCourseReq ??= fetch(`${import.meta.env.BASE_URL}type-course.json`)
+    .then((r) => (r.ok ? r.json() : {}))
+    .catch(() => ({}))
+    .then((d: Record<string, string>) => (typeCourse = d))
+  return typeCourseReq
+}
+
+/** 커리큘럼 트리 안에서만 찾는다 (색인 fallback 없이) */
+function courseOfTypeInCurriculum(typeId: string): string | null {
   for (const c of CURRICULA) for (const u of c.units) for (const m of u.mids)
     for (const s of m.subs) for (const t of s.types) if (t.id === typeId) return c.id
   return null
 }
 
+/** 유형이 속한 과정 — 틀린 문항에서 넘어올 때 과정을 알아내려고 쓴다 */
+function courseOfType(typeId: string): string | null {
+  for (const c of CURRICULA) for (const u of c.units) for (const m of u.mids)
+    for (const s of m.subs) for (const t of s.types) if (t.id === typeId) return c.id
+  return typeCourse?.[typeId] ?? null
+}
+
 export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
-  const { problems, ensureCourse, masteries, saveMastery, allStudents } = useStore()
+  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents } = useStore()
   const [params] = useSearchParams()
   // 선생님이 특정 학생의 사다리를 열어 본다 (`?student=<학생id>`) — 학생 대신 확인·시연할 때 (2026-09-08)
   const studentId = params.get('student') ?? studentIdProp
@@ -51,6 +79,16 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const [mode, setMode] = useState<'풀기' | '인쇄'>('풀기')
 
   useEffect(() => { ensureCourse(course) }, [course])   // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 🗺️ 유형→과정 색인은 fetch 라 첫 렌더에 없다. 도착한 뒤 **커리큘럼 밖 유형이면 과정을 다시 맞춘다.**
+  //    (안 하면 `?type=` 링크로 들어온 커리큘럼 밖 유형이 기본값 m1-1 풀을 보고 빈 화면이 된다)
+  const [, setIdxReady] = useState(0)
+  useEffect(() => {
+    loadTypeCourse().then((idx) => {
+      setIdxReady((n) => n + 1)
+      if (typeId && !courseOfTypeInCurriculum(typeId) && idx[typeId]) setCourse(idx[typeId])
+    })
+  }, [typeId])
 
   // 과목 스위처에 맞는 과정만 보여 준다 (subject 없는 과정 = 수학)
   const courses = useMemo(
@@ -104,13 +142,18 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       ?? [...pool].sort((a, b) => Math.abs(a.diff - 3) - Math.abs(b.diff - 3))[0]
   }, [pool, paramBase])
 
+  // 🔴 커리큘럼에 **이름이 없는 유형**도 문항만 있으면 사다리를 돌린다.
+  //    예전엔 여기서 undefined 가 나와 아래 `typeId && base && row` 가 막혔고,
+  //    학생이 [정복 시작]을 눌러도 화면이 그대로였다 (2026-09-12 수정).
+  //    이름은 모르지만 사다리는 유형·문제풀만 있으면 돈다 — 0층 개념 빈칸도 없으면 안내 후 넘어간다.
   const row = rows.find((r) => r.id === typeId)
+    ?? (typeId && pool.length ? { id: typeId, name: `유형 ${typeId}`, course, sub: '' } : undefined)
   const saved = typeId ? masteries[`${studentId}|${typeId}`] : undefined
 
   // 🪜 정복 대기 큐에서 누름 — 과정을 그 유형의 것으로 맞추고, 시작층(강등이면 한 층 아래)을 저장한 뒤 연다 (2026-09-08)
   const pickFromQueue = (r: WrongTypeRow) => {
-    const t = typeNameOf(r.typeId)
-    if (t) setCourse(t.course)
+    const c = typeNameOf(r.typeId)?.course ?? courseOfType(r.typeId)
+    if (c) setCourse(c)
     saveMastery(studentId, r.typeId, stateToStart(r, studentId))
     setTypeId(r.typeId)
   }
@@ -128,6 +171,31 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         onChange={(st: MasteryState) => saveMastery(studentId, typeId, st)}
         onClose={() => setTypeId(null)}
       />
+    )
+  }
+
+  // 유형을 골랐는데 그 유형에 문항이 하나도 없다 — 조용히 목록으로 돌아가면
+  // 학생은 "버튼이 고장났다"고 느낀다. 이유를 말하고 돌아갈 길을 준다 (2026-09-12).
+  // ⚠️ 풀은 비동기로 실린다 — `poolLoaded` 를 안 보면 **로딩 중에 이 안내가 잘못 뜬다.**
+  if (typeId && !pool.length && !poolLoaded.has(course)) {
+    return <div className="mx-auto max-w-3xl py-16 text-center text-sm text-ink2">문제를 불러오는 중…</div>
+  }
+  if (typeId && !pool.length) {
+    return (
+      <div className="mx-auto max-w-3xl">
+        <div className="mt-6 rounded-2xl border border-line bg-white p-6 text-center">
+          <div className="text-3xl">📭</div>
+          <p className="mt-3 font-black text-ink">이 유형은 아직 풀 문제가 없습니다</p>
+          <p className="mt-1 text-sm text-ink2">
+            교재에서는 틀린 유형이지만 연습할 문항이 아직 들어오지 않았어요. 선생님께 알려 주세요.
+            <span className="ml-1 text-xs">(유형 {typeId})</span>
+          </p>
+          <button type="button" onClick={() => setTypeId(null)}
+            className="mt-4 rounded-lg border border-line px-4 py-2 text-sm hover:bg-paper2">
+            목록으로
+          </button>
+        </div>
+      </div>
     )
   }
 
