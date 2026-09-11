@@ -1,4 +1,5 @@
 import type { Problem } from '../types'
+import { isImageAnswer } from './answerImage'
 
 // 서술형 세트 — 과정별 정적 파일(/essay-<course>.json) 지연 로드
 // 매쓰플랫 school-prepare-essay 수집(2026-07-14). 단원별 기본/일반/심화 10문제 세트.
@@ -19,7 +20,7 @@ export function hasEssay(course: string): boolean {
 function toProblem(r: RawProb): Problem {
   const [pid, hash, cid, level, ans] = r
   const base = `https://freewheelin-contents.mathflat.com/problem/${pid}/${hash}`
-  const broken = !ans || ['.', '-', '풀이참조', '해설 참조'].includes(String(ans).trim())
+  const broken = isImageAnswer(ans)   // 판정은 answerImage.ts 한 곳에서 (pool.ts와 동일 규칙)
   return {
     // 'mf' 접두는 store 통합 problems에서 pool 전용으로 걸러짐 → 서술형은 'es' 접두로 customProblems에 유지
     id: `es${pid}`,
