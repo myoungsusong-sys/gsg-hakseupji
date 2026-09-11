@@ -18,6 +18,7 @@ import StudentVoca from './pages/student/StudentVoca'
 import StudentChallenge from './pages/student/StudentChallenge'
 import StudentLectures from './pages/student/StudentLectures'
 import Layout from './components/Layout'
+import Help from './pages/Help'
 import SaveGuard from './components/SaveGuard'
 import PrepLayout from './components/PrepLayout'
 import Placeholder from './components/Placeholder'
@@ -127,6 +128,7 @@ function Gate() {
             <Route path="mastery" element={<StudentMastery />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
+            <Route path="help" element={<Help only="student" />} />
             {/* 학생용 학습지 PDF — 선생님 화면을 열어 주지 않으려고 전용 경로를 둔다 */}
             <Route path="print/:id" element={<WorksheetView studentMode />} />
             <Route path="*" element={<Navigate to="/student" replace />} />
@@ -136,6 +138,7 @@ function Gate() {
           <Route element={<TeacherGate />}>
           <Route element={<Layout />}>
             <Route path="/" element={<Navigate to="/prep/worksheet" replace />} />
+            <Route path="/help" element={<Help />} />
 
             {/* 수업 준비 (매쓰플랫 사이드바 구조 동일) */}
             <Route element={<PrepLayout />}>
