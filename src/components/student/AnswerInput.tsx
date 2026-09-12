@@ -19,8 +19,11 @@ export const isImgAnswer = (a: string) => /^https?:\/\/\S+\.(png|jpe?g|gif|webp)
 
 // 자동 채점: 학생 답 ↔ 정답 대조. 이미지 정답 문항은 텍스트 대조 불가 → 학생 자기 ○ 표시로 대체
 // 대조는 lib/mathAnswer 의 mathEqual — LaTeX·㎠·"루트2"·단위 생략·값 동치를 모두 흡수한다.
+/** 기계가 채점할 수 없는 문항 — 이미지 정답, 또는 서술형(selfGrade). 학생이 대조 후 ○/✕ 를 찍는다 */
+export const isSelfGraded = (p: Problem) => isImgAnswer(p.answer) || !!p.selfGrade
+
 export function autoCorrect(p: Problem, studentAnswer: string): boolean {
-  return isImgAnswer(p.answer)
+  return isSelfGraded(p)
     ? studentAnswer === '○'
     : mathEqual(p.answer, studentAnswer)
 }
@@ -44,12 +47,14 @@ export default function AnswerInput({ p, value, onChange, level = '중등' }: {
       </div>
     )
   }
-  if (isImgAnswer(p.answer)) {
+  if (isSelfGraded(p)) {
     return (
       <div className="flex flex-wrap items-center gap-3">
         <div className="rounded-lg border border-line bg-paper2/60 p-2">
-          <div className="mb-1 text-[10px] text-ink2">정답 (이미지) — 학생 답과 대조 후 표시</div>
-          <img src={p.answer} alt="정답" className="max-h-16 w-auto" />
+          <div className="mb-1 text-[10px] text-ink2">정답 — 학생 답과 대조 후 표시</div>
+          {isImgAnswer(p.answer)
+            ? <img src={p.answer} alt="정답" className="max-h-16 w-auto" />
+            : <div className="max-w-[420px] whitespace-pre-wrap text-sm">{p.answer}</div>}
         </div>
         {(['○', '✕'] as const).map(m => (
           <button key={m} type="button" onClick={() => onChange(value === m ? '' : m)}

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
-import { autoCorrect, isImgAnswer } from './student/AnswerInput'
+import { autoCorrect, isImgAnswer, isSelfGraded } from './student/AnswerInput'
 import MathText from './MathText'
 import {
   newMastery, step, passConcept, pickForFloor, conceptBlanks,
@@ -207,7 +207,7 @@ export default function MasteryRunner({
           </div>
 
           {/* 채점 — 학생이 답을 넣으면 **자동으로** 맞는지 보고 단계를 옮긴다 */}
-          {judged === null && !isChoice && !isImgAnswer(String(current.answer ?? '')) && (
+          {judged === null && !isChoice && !isSelfGraded(current) && (
             <form className="mt-3 flex gap-2"
               onSubmit={(e) => { e.preventDefault(); if (input.trim()) judge(input) }}>
               <input
@@ -223,7 +223,7 @@ export default function MasteryRunner({
           )}
 
           {/* 정답이 이미지로만 오는 문항(서술형 등)은 기계가 못 읽는다 — 스스로 대조한다 */}
-          {judged === null && !isChoice && isImgAnswer(String(current.answer ?? '')) && (
+          {judged === null && !isChoice && isSelfGraded(current) && (
             !revealed ? (
               <button type="button" onClick={() => setRevealed(true)}
                 className="mt-3 w-full rounded-lg border border-pine py-2.5 text-sm font-bold text-pine hover:bg-pine-soft">
@@ -231,8 +231,10 @@ export default function MasteryRunner({
               </button>
             ) : (
               <div className="mt-3 rounded-xl border border-line bg-paper2/40 p-3">
-                <p className="text-xs text-ink2">이 문항은 정답이 그림이라 자동 채점이 안 됩니다. 직접 맞춰 보세요.</p>
-                <img src={String(current.answer)} alt="정답" className="mt-2 max-h-16" />
+                <p className="text-xs text-ink2">이 문항은 자동 채점이 안 됩니다. 정답과 대조해 직접 표시해 주세요.</p>
+                {isImgAnswer(String(current.answer ?? ''))
+                  ? <img src={String(current.answer)} alt="정답" className="mt-2 max-h-16" />
+                  : <div className="mt-2 whitespace-pre-wrap rounded-lg bg-white p-2 text-sm font-bold">{String(current.answer)}</div>}
                 <div className="mt-3 flex gap-2">
                   <button type="button" onClick={() => { setJudged(true); mark(true) }}
                     className="flex-1 rounded-lg bg-pine py-2.5 text-sm font-bold text-paper">맞았어요</button>

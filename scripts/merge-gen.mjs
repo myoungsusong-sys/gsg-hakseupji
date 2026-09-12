@@ -23,7 +23,9 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json')).sort()) {
       if (!Array.isArray(p.choices) || p.choices.length !== 5) why.push('보기 5개 아님')
       if (!CIRC.includes(String(p.answer).trim())) why.push('객관식 정답이 ①~⑤ 아님')
     }
-    if (p.kind === '주관식' && String(p.answer).length > 40) why.push('주관식 정답 너무 김')
+    // ✍️ selfGrade(서술형 자기채점)는 길이 제한을 두지 않는다 — 어차피 기계가 대조하지 않는다.
+    //    켜지 않은 주관식은 mathEqual 로 대조하므로 긴 답이면 학생이 무엇을 써도 오답이 된다.
+    if (p.kind === '주관식' && !p.selfGrade && String(p.answer).length > 40) why.push('주관식 정답 너무 김 (selfGrade 필요)')
     if (typeof p.body === 'string' && (p.body.split('$').length - 1) % 2) why.push('$ 짝 안 맞음(본문)')
     if (typeof p.solution === 'string' && (p.solution.split('$').length - 1) % 2) why.push('$ 짝 안 맞음(풀이)')
     if (seen.has(p.id)) why.push('id 중복')
@@ -35,6 +37,7 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json')).sort()) {
       // 📗 교과서(출판사) — 영어 내신 문항은 그 교과서 본문이 지문이라 학생 교과서와 맞춰 걸러야 한다.
       //    여기서 안 흘려보내면 public/gen-*.json 에서 사라져 필터가 통째로 무력해진다(2026-09-12 실측).
       ...(p.book ? { book: String(p.book) } : {}),
+      ...(p.selfGrade ? { selfGrade: true } : {}),
       custom: true })
   })
 }
