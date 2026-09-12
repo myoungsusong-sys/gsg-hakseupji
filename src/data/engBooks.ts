@@ -14,7 +14,9 @@ export const ENG_BOOKS: Record<string, readonly string[]> = {
              '미래엔(문영인)', '비상(황종배)', '지학사(송미정)', '천재(소영순)', '천재(이상기)'],
   'eng-m2': ['NE능률(김기택)', 'YBM(김은형)', 'YBM(박준언)', '동아(윤정미)', '동아(이병민)',
              '미래엔(문영인)', '비상(황종배)', '지학사(송미정)', '천재(소영순)', '천재(이상기)'],
-  'eng-m3': [],
+  'eng-m3': ['NE능률(김성곤)', 'NE능률(양현권)', 'YBM(박준언)', 'YBM(송미정)', '금성(최인철)',
+             '동아(윤정미)', '동아(이병민)', '미래엔(최연희)', '비상(김진완)', '지학사(민찬규)',
+             '천재(이재영)', '천재(정사열)'],
   'eng-h1': ['NE능률(민병천)', 'NE능률(오선영)', 'YBM(김은형)', 'YBM(박준언)', '동아(이병민)',
              '미래엔(김성연)', '비상(홍민표)', '지학사(신상근)', '천재(강상구)', '천재(조수경)'],
   'eng-h2': ['NE능률(오선영)', 'YBM(박준언)', '동아(박용예)', '미래엔(김성연)',
@@ -27,6 +29,7 @@ export const ENG_BOOKS: Record<string, readonly string[]> = {
 export const ENG_BOOK_OPTIONS: { grade: string; books: readonly string[] }[] = [
   { grade: '중1', books: ENG_BOOKS['eng-m1'] },
   { grade: '중2', books: ENG_BOOKS['eng-m2'] },
+  { grade: '중3', books: ENG_BOOKS['eng-m3'] },
   { grade: '고1 (공통영어1·2)', books: ENG_BOOKS['eng-h1'] },
   { grade: '고2 (영어I)', books: ENG_BOOKS['eng-h2'] },
   { grade: '고3 (영어II)', books: ENG_BOOKS['eng-h3'] },
