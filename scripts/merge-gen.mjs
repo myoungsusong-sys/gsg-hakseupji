@@ -31,7 +31,11 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json')).sort()) {
     seen.add(p.id)
     out.push({ id: p.id, typeId: String(p.typeId), kind: p.kind, diff: Number(p.diff), body: p.body,
       ...(p.choices ? { choices: p.choices } : {}), answer: String(p.answer).trim(), solution: p.solution,
-      source: p.source || '자체 생성', custom: true })
+      source: p.source || '자체 생성',
+      // 📗 교과서(출판사) — 영어 내신 문항은 그 교과서 본문이 지문이라 학생 교과서와 맞춰 걸러야 한다.
+      //    여기서 안 흘려보내면 public/gen-*.json 에서 사라져 필터가 통째로 무력해진다(2026-09-12 실측).
+      ...(p.book ? { book: String(p.book) } : {}),
+      custom: true })
   })
 }
 mkdirSync(join(process.cwd(), 'public'), { recursive: true })

@@ -40,6 +40,8 @@ export interface Problem {
   twinGroup?: string     // 같은 템플릿(숫자 변형) 그룹
   isNew?: boolean        // 신경향
   correctRate?: number   // 정답률(%) — 출제 데이터가 쌓이면 채워짐
+  book?: string          // 📗 이 문항이 매여 있는 교과서 (예: '동아(윤정미)'). 영어 내신 문항은
+                         //    그 교과서 본문이 지문이라 학생 교과서와 맞아야 한다 (data/engBooks.ts)
   imageUrl?: string      // 이미지 기반 문제(기출 크롭). 있으면 body/choices 대신 이미지 렌더
   videoUrl?: string      // 문항별 풀이영상 (HLS m3u8)
   subtitleUrl?: string   // 풀이영상 자막 (vtt)
@@ -239,6 +241,7 @@ export interface Student {
   // 🏫 학교 시간표 — 그날 학교에서 배운 과목을 그날 복습시키려고 받는다 (2026-08-26 명수쌤).
   //    Student.timetable 과 같이 json 통째 저장이라 마이그레이션이 필요 없다.
   schoolTimetable?: SchoolTimetable
+  engBook?: string       // 📗 학교가 쓰는 영어 교과서 (예: '동아(윤정미)') — 영어 문항을 이 교과서 것으로 거른다
 }
 
 // ── 🏫 학교 시간표 (복습용) ─────────────────────────────────────────────

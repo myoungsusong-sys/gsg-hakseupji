@@ -9,6 +9,7 @@ import { newMastery, type MasteryState } from '../lib/mastery'
 import type { Problem } from '../types'
 import MasteryQueue, { typeNameOf } from '../components/MasteryQueue'
 import { stateToStart, type WrongTypeRow } from '../lib/wrongTypes'
+import { filterByEngBook } from '../data/engBooks'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -129,9 +130,13 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     return (k ? rows.filter((r) => r.name.includes(k) || r.sub.includes(k)) : rows).slice(0, 300)
   }, [rows, q])
 
+  // 📗 영어는 **학생이 쓰는 교과서 문항만** 낸다 — 다른 출판사 본문은 처음 보는 지문이라
+  //    내신 대비가 안 된다 (2026-09-12 명수쌤 지시). 교과서 미지정이면 거르지 않는다.
+  //    교과서에 매이지 않는 문항(어휘·어법·씨앗)은 book 이 없어 항상 남는다.
+  const engBook = allStudents.find((s) => s.id === studentId)?.engBook
   const pool = useMemo(
-    () => (typeId ? problems.filter((p) => p.typeId === typeId) : []),
-    [problems, typeId],
+    () => (typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engBook) : []),
+    [problems, typeId, engBook],
   )
   // 기준 문항 = 학생이 방금 틀린 그 문제. 없으면 그 유형의 **표준**(중간 난이도).
   // 가장 쉬운 것을 기준으로 잡으면 기본과 표준이 똑같이 「하」가 되어 사다리가 뭉개진다(2026-09-05 실측).
@@ -202,6 +207,13 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   return (
     <div className="mx-auto max-w-3xl">
       <h1 className="text-lg font-bold text-ink">🪜 유형 마스터{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
+      {/* 📗 걸러지고 있다는 걸 알려 준다 — 안 그러면 "왜 문제가 몇 개 없지?" 가 된다 */}
+      {engBook && (
+        <p className="mt-1 text-xs font-bold text-pine-dark">
+          📗 영어 교과서 <span className="rounded bg-pine-soft px-1.5 py-0.5">{engBook}</span> 문항만 나갑니다
+          <span className="ml-1 font-normal text-ink2">(학생 정보에서 바꿀 수 있어요)</span>
+        </p>
+      )}
       <p className="mt-1 text-sm text-ink2">
         유형 하나를 개념 빈칸부터 최상 난이도까지 올려 붙인다.
         틀리면 한 단계 내려가 다시 이해시키고, 연속 두 문제를 맞히면 올라간다.
