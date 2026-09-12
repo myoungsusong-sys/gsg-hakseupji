@@ -19,7 +19,8 @@ export const ENG_BOOKS: Record<string, readonly string[]> = {
              '미래엔(김성연)', '비상(홍민표)', '지학사(신상근)', '천재(강상구)', '천재(조수경)'],
   'eng-h2': ['NE능률(오선영)', 'YBM(박준언)', '동아(박용예)', '미래엔(김성연)',
              '비상(홍민표)', '지학사(신상근)', '천재(강상구)', '천재(조수경)'],
-  'eng-h3': [],
+  'eng-h3': ['NE능률(오선영)', 'YBM(박준언)', '동아(박용예)', '미래엔(김성연)',
+             '비상(홍민표)', '지학사(신상근)', '천재(강상구)', '천재(조수경)'],
 }
 
 /** 화면에서 고를 수 있는 교과서 전부 (중복 제거) — 학생 정보 입력칸이 쓴다 */
@@ -28,6 +29,7 @@ export const ENG_BOOK_OPTIONS: { grade: string; books: readonly string[] }[] = [
   { grade: '중2', books: ENG_BOOKS['eng-m2'] },
   { grade: '고1 (공통영어1·2)', books: ENG_BOOKS['eng-h1'] },
   { grade: '고2 (영어I)', books: ENG_BOOKS['eng-h2'] },
+  { grade: '고3 (영어II)', books: ENG_BOOKS['eng-h3'] },
 ]
 
 /**
