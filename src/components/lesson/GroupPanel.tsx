@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { isVocaGrading, vocaRangeLabel } from '../../lib/voca'
 import { fetchLive, pushNote, type LiveSolve } from '../../lib/live'
 import { fetchReplayList, fetchReplay, type ReplayMeta, type ReplaySession, type ReplayStroke } from '../../lib/replay'
 import ProblemContent from '../ProblemContent'
@@ -210,7 +211,7 @@ function GroupHistory({ label, students }: { label: string; students: Student[] 
                         <text x="28" y="32" textAnchor="middle" fontSize="12" fontWeight="900" fill="var(--color-pine-dark)">{s}%</text>
                       </svg>
                       <div className="text-xs text-ink2">
-                        {g.pageFrom != null && <div>진도 {g.pageFrom}P~{g.pageTo ?? g.pageFrom}P</div>}
+                        {g.pageFrom != null && <div>진도 {isVocaGrading(g) ? vocaRangeLabel(g) : `${g.pageFrom}P~${g.pageTo ?? g.pageFrom}P`}</div>}
                         <div>채점 문제 수 <b className="text-ink">{g.results.length}문제</b></div>
                         <div><span className="font-bold text-pine">○{correct}</span> <span className="ml-1 font-bold text-clay">✗{wrong}</span></div>
                       </div>

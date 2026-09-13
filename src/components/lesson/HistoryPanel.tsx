@@ -1,5 +1,6 @@
 import { Fragment, useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
+import { isVocaGrading, vocaRangeLabel } from '../../lib/voca'
 import { dateKey, todayKey } from '../../lib/dates'
 import { DIFFS, DIFF_LABEL } from '../../types'
 import type { Diff, Student } from '../../types'
@@ -93,7 +94,7 @@ export default function HistoryPanel({ student }: { student: Student }) {
     }
     if (g.workbookId) {
       const name = wbMap.get(g.workbookId)?.name ?? '교재'
-      const range = g.pageFrom != null ? ` p.${g.pageFrom}~${g.pageTo ?? g.pageFrom}` : ''
+      const range = g.pageFrom == null ? '' : isVocaGrading(g) ? ` ${vocaRangeLabel(g)}` : ` p.${g.pageFrom}~${g.pageTo ?? g.pageFrom}`
       return { id: g.id, badge: '교재' as const, group: '교재' as const, label: `${name}${range}`, round: roundOf.get(g.id), total, correct, unknown }
     }
     const ws = g.worksheetId ? wsMap.get(g.worksheetId) : undefined

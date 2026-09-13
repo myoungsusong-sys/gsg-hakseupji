@@ -1,71 +1,126 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
-import { dateKey } from '../../lib/dates'
-import { loadVoca, nextDay, vocaBookOf } from '../../lib/voca'
+import { dateKey, todayKey } from '../../lib/dates'
+import {
+  flattenVoca, loadVoca, MODE_LABEL, nextWordNo, PER_DAY_OPTIONS, planVoca, VOCA_BOOKS, vocaBookOf, vocaLevelOf,
+  vocaSessions, vocaSettingsOf, vocaWorkbookOf, type VocaFlat, type VocaMode, type VocaModeResult,
+} from '../../lib/voca'
 import type { Student } from '../../types'
 
 // ── 🔤 영어단어 (수업 > 학생 탭) ─────────────────────────────────────────────
 //
 // 명수쌤 2026-08-25: "학습지앱에 영어단어 항목 만들어줘."
-// 학생앱에는 단어시험이 있었는데 **선생님 화면에는 아무것도 없었다.** 누가 어디까지 외웠는지,
-// 무엇을 틀렸는지 볼 데가 없으니 지도할 수가 없다.
+// 🎚️ 2026-09-14: "하루분량은 선택하게 해주고 2번(중등필수 책)도 선택하게 해주고 3번(뜻시험)도 해주고"
+//   → 학년 대신 **영단어 수준진단 테스트** 결과로 선생님이 학생마다
+//     단어장(6권) · 하루 분량 · 시험 종류(단어시험/뜻시험)를 고른다.
 //
-// 🔴 새 저장소를 만들지 않는다. 학생앱 단어시험은 결과를 평범한 Grading 으로 남긴다
-//    (교재 = 학년별 단어장, pageFrom = DAY, itemId = `voca-<day>-<번호>`).
-//    여기서는 그걸 읽어 보여 주기만 한다 — 기록이 두 벌이 되면 반드시 어긋난다.
+// 🔴 새 저장소를 만들지 않는다. 학생앱 단어시험 결과(평범한 Grading)를 읽어 보여 주기만 한다.
+//    설정만 Student.voca 에 저장한다.
 
 export default function VocaPanel({ student }: { student: Student }) {
-  const { gradings, workbooks } = useStore()
-  const book = useMemo(() => vocaBookOf(student.grade), [student.grade])
-  const [all, setAll] = useState<Record<string, [string, string][]> | null>(null)
+  const { gradings, workbooks, updateStudent } = useStore()
+  const settings = useMemo(() => vocaSettingsOf(student), [student.grade, student.voca])   // eslint-disable-line react-hooks/exhaustive-deps
+  const [flat, setFlat] = useState<VocaFlat | null>(null)
   const [err, setErr] = useState('')
-  const [open, setOpen] = useState<number | null>(null)
+  const [open, setOpen] = useState<string | null>(null)
 
   useEffect(() => {
-    setAll(null); setErr('')
-    loadVoca(book.file).then(setAll).catch(e => setErr(String(e?.message ?? e)))
-  }, [book.file])
+    setFlat(null); setErr('')
+    loadVoca(settings.book.file).then(d => setFlat(flattenVoca(settings.book.file, d)))
+      .catch(e => setErr(String(e?.message ?? e)))
+  }, [settings.book.file])
 
-  // 이 학생의 단어장 교재 (학생앱이 학생당 1권 만든다)
-  const wb = useMemo(
-    () => workbooks.find(w => w.studentId === student.id && w.name === book.name),
-    [workbooks, student.id, book.name])
+  const mine = useMemo(() => gradings.filter(g => g.studentId === student.id), [gradings, student.id])
+  const wb = vocaWorkbookOf(workbooks, student.id, settings.book)
+  const sessions = useMemo(() => (flat ? vocaSessions(mine, wb?.id, flat) : []), [flat, mine, wb?.id])
+  const total = flat?.words.length ?? 0
+  const plan = flat ? planVoca(settings, sessions, total, todayKey()) : null
+  const doneWords = nextWordNo(sessions) - 1
+  const avg = (m: VocaMode) => {
+    const xs = sessions.map(s => s[m]).filter((x): x is VocaModeResult => !!x)
+    return xs.length ? Math.round(xs.reduce((a, x) => a + x.right / x.total, 0) / xs.length * 100) : null
+  }
+  // 이전에 다른 단어장으로 본 기록 — 책을 바꿔도 예전 기록이 사라진 것처럼 보이면 안 된다
+  const others = VOCA_BOOKS
+    .filter(b => b.book.key !== settings.book.key)
+    .map(b => ({ b, w: vocaWorkbookOf(workbooks, student.id, b.book) }))
+    .map(({ b, w }) => ({ name: b.book.name, n: w ? mine.filter(g => g.workbookId === w.id).length : 0 }))
+    .filter(x => x.n > 0)
 
-  const rows = useMemo(() => {
-    if (!wb) return []
-    return gradings
-      .filter(g => g.studentId === student.id && g.workbookId === wb.id && g.pageFrom != null)
-      .map(g => {
-        const total = g.results.length
-        const right = g.results.filter(r => r.correct).length
-        const careless = g.results.filter(r => r.careless).length
-        return { day: g.pageFrom as number, date: dateKey(g.date), total, right, careless, results: g.results }
-      })
-      .sort((a, b) => b.day - a.day)
-  }, [gradings, wb, student.id])
-
-  const doneDays = rows.map(r => r.day)
-  const today = nextDay(doneDays, book.days)
-  const avg = rows.length
-    ? Math.round(rows.reduce((s, r) => s + (r.total ? r.right / r.total : 0), 0) / rows.length * 100)
-    : null
+  const save = (patch: NonNullable<Student['voca']>) =>
+    updateStudent(student.id, { voca: { book: settings.book.key, perDay: settings.perDay, modes: settings.modes, ...patch } })
+  const toggleMode = (m: VocaMode) => {
+    const has = settings.modes.includes(m)
+    const next = (['word', 'meaning'] as VocaMode[]).filter(x => (x === m ? !has : settings.modes.includes(x)))
+    if (next.length) save({ modes: next })            // 하나는 남겨야 시험을 볼 수 있다
+  }
+  const perDayOptions = [...new Set([...PER_DAY_OPTIONS, settings.perDay])].sort((a, b) => a - b)
 
   const card = 'rounded-2xl border border-line bg-white p-5'
+  const chip = (x: VocaModeResult | undefined, label: string) => {
+    if (!x) return null
+    const sc = Math.round(x.right / x.total * 100)
+    return (
+      <span className={`rounded-full px-2 py-0.5 text-xs font-black ${
+        sc >= 90 ? 'bg-pine-soft text-pine-dark' : sc >= 70 ? 'bg-amber-soft text-amber' : 'bg-red-100 text-red-800'}`}>
+        {label} {x.right}/{x.total}
+      </span>
+    )
+  }
 
   return (
     <div className="grid gap-4">
       <div className={card}>
         <div className="flex flex-wrap items-baseline gap-3">
           <h2 className="font-black">🔤 영어단어</h2>
-          <span className="rounded-full bg-paper2 px-2.5 py-1 text-xs font-semibold text-ink2">{book.name}</span>
-          <span className="text-xs text-ink2">학년에 맞는 단어장이 자동으로 정해집니다 (중등 / 고1 / 고2·3)</span>
+          <span className="rounded-full bg-paper2 px-2.5 py-1 text-xs font-semibold text-ink2">{settings.book.name}</span>
+          <span className="text-xs text-ink2">{vocaLevelOf(settings.book)} · 하루 {settings.perDay}개 · {settings.modes.map(m => MODE_LABEL[m].split(' ')[0]).join(' + ')}</span>
         </div>
+
+        {/* 🎚️ 설정 — 수준진단 테스트 결과로 정한다 */}
+        <div className="mt-4 grid gap-3 rounded-xl bg-paper2/50 p-3 sm:grid-cols-3">
+          <label className="grid gap-1 text-xs">
+            <span className="font-bold text-ink2">단어장</span>
+            <select value={settings.book.key} onChange={e => save({ book: e.target.value })}
+              className="rounded-lg border border-line bg-white px-2 py-1.5 text-sm font-bold">
+              {VOCA_BOOKS.map(b => <option key={b.book.key} value={b.book.key}>{b.level} — {b.book.name}</option>)}
+            </select>
+          </label>
+          <label className="grid gap-1 text-xs">
+            <span className="font-bold text-ink2">하루 분량</span>
+            <select value={settings.perDay} onChange={e => save({ perDay: Number(e.target.value) })}
+              className="rounded-lg border border-line bg-white px-2 py-1.5 text-sm font-bold">
+              {perDayOptions.map(n => <option key={n} value={n}>{n}개</option>)}
+            </select>
+          </label>
+          <div className="grid gap-1 text-xs">
+            <span className="font-bold text-ink2">시험 종류</span>
+            <div className="flex flex-wrap gap-x-3 gap-y-1 pt-1">
+              {(['word', 'meaning'] as VocaMode[]).map(m => (
+                <label key={m} className="flex items-center gap-1.5 text-sm">
+                  <input type="checkbox" checked={settings.modes.includes(m)} onChange={() => toggleMode(m)} />
+                  {MODE_LABEL[m]}
+                </label>
+              ))}
+            </div>
+          </div>
+        </div>
+        <p className="mt-2 text-xs text-ink2">
+          분량을 바꿔도 <b className="text-ink">마지막으로 본 단어 다음부터</b> 이어집니다. 책을 바꾸면 그 책의 기록부터 이어집니다.
+          {!settings.custom && <> 지금은 학년 기본값({vocaBookOf(student.grade).name}·25개·단어시험)입니다.</>}
+          {settings.custom && (
+            <button onClick={() => updateStudent(student.id, { voca: undefined })}
+              className="ml-2 font-bold text-pine underline">학년 기본값으로 되돌리기</button>
+          )}
+        </p>
+
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
-            ['본 DAY', `${rows.length} / ${book.days}`],
-            ['다음 DAY', `DAY ${today}`],
-            ['평균 점수', avg == null ? '—' : `${avg}점`],
-            ['외운 단어', `${rows.reduce((s, r) => s + r.right, 0)}개`],
+            ['진도', total ? `${doneWords.toLocaleString()} / ${total.toLocaleString()}` : '—'],
+            [plan?.doneToday ? '오늘 끝 · 다음' : '오늘 볼 범위',
+              plan ? (plan.finished ? '책 끝' : `${plan.from}~${plan.to}번`) : '—'],
+            ['단어시험 평균', avg('word') == null ? '—' : `${avg('word')}점`],
+            ['뜻시험 평균', avg('meaning') == null ? '—' : `${avg('meaning')}점`],
           ].map(([k, v]) => (
             <div key={k} className="rounded-xl bg-paper2/60 px-3 py-2.5">
               <div className="text-[11px] font-semibold text-ink2">{k}</div>
@@ -73,81 +128,86 @@ export default function VocaPanel({ student }: { student: Student }) {
             </div>
           ))}
         </div>
+        {plan && !plan.finished && plan.pending.length > 0 && !plan.doneToday && plan.todaySession && (
+          <p className="mt-2 text-xs font-bold text-amber">오늘 {plan.from}~{plan.to}번에서 {plan.pending.map(m => MODE_LABEL[m].split(' ')[0]).join('·')}이 남았습니다.</p>
+        )}
+        {others.length > 0 && (
+          <p className="mt-2 text-xs text-ink2">이전 단어장 기록: {others.map(o => `${o.name} ${o.n}회`).join(' · ')}</p>
+        )}
         <p className="mt-3 text-xs text-ink2">
-          학생은 <b className="text-ink">학생앱 → 영단어</b>에서 뜻을 보고 영단어를 씁니다(25개, 자동채점 + 틀린 것 재시험).
-          종이 단어장·시험지는 <b className="text-ink">기본과제 → 일괄 PDF</b>에서 함께 나옵니다.
+          학생은 <b className="text-ink">학생앱 → 영단어</b>에서 봅니다. 단어시험은 자동채점 + 틀린 것 재시험,
+          뜻시험은 책의 뜻과 같으면 자동 정답이고 다르면 학생이 책의 뜻과 비교해 직접 표시합니다.
+          종이 단어장·시험지는 <b className="text-ink">기본과제 → 일괄 PDF</b>에서 학생마다 다음 범위로 나옵니다.
         </p>
       </div>
 
       {err && <div className={`${card} text-sm text-clay`}>단어장을 불러오지 못했습니다 — {err}</div>}
 
       <div className={card}>
-        <b className="text-sm">DAY별 기록</b>
-        {rows.length === 0 ? (
-          <p className="mt-3 text-sm text-ink2">아직 본 단어시험이 없습니다. 학생앱 영단어에서 DAY {today}부터 시작합니다.</p>
+        <b className="text-sm">범위별 기록</b>
+        {sessions.length === 0 ? (
+          <p className="mt-3 text-sm text-ink2">
+            아직 본 단어시험이 없습니다.{plan && !plan.finished ? ` 학생앱 영단어에서 ${plan.from}~${plan.to}번부터 시작합니다.` : ''}
+          </p>
         ) : (
           <div className="mt-3 grid gap-1.5">
-            {rows.map(r => {
-              const words = all?.[String(r.day)] ?? []
-              const wrong = r.results
-                .map((x, i) => ({ x, i }))
-                .filter(({ x }) => !x.correct || x.careless)
-              const score = r.total ? Math.round(r.right / r.total * 100) : 0
-              const on = open === r.day
+            {sessions.map(s => {
+              const key = s.gradingId
+              const on = open === key
+              const wrongOf = (x: VocaModeResult | undefined, meaning: boolean) =>
+                (x?.items ?? []).filter(({ r }) => !r.correct || r.careless || (meaning && r.self))
+              const wW = wrongOf(s.word, false), wM = wrongOf(s.meaning, true)
               return (
-                <div key={r.day} className="rounded-xl border border-line/70">
-                  <button onClick={() => setOpen(on ? null : r.day)}
+                <div key={key} className="rounded-xl border border-line/70">
+                  <button onClick={() => setOpen(on ? null : key)}
                     className="flex w-full flex-wrap items-center gap-x-3 gap-y-1 px-3 py-2.5 text-left text-sm">
-                    <b className="w-[4.5rem] shrink-0">DAY {r.day}</b>
-                    <span className="w-20 shrink-0 text-xs text-ink2">{r.date.slice(5)}</span>
-                    <span className={`rounded-full px-2 py-0.5 text-xs font-black ${
-                      score >= 90 ? 'bg-pine-soft text-pine-dark' : score >= 70 ? 'bg-amber-soft text-amber' : 'bg-red-100 text-red-800'}`}>
-                      {r.right} / {r.total} · {score}점
-                    </span>
-                    {r.careless > 0 && (
-                      <span className="rounded bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">
-                        다시 풀어 맞힘 {r.careless}
-                      </span>
-                    )}
+                    <b className="w-40 shrink-0">{s.legacyDay ? `DAY ${s.legacyDay}` : `${s.from}~${s.to}번`}</b>
+                    <span className="w-20 shrink-0 text-xs text-ink2">{dateKey(s.date).slice(5)}</span>
+                    {chip(s.word, '단어')}
+                    {chip(s.meaning, '뜻')}
+                    {(s.word?.careless ?? 0) > 0 && <span className="rounded bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">다시 풀어 맞힘 {s.word?.careless}</span>}
+                    {(s.meaning?.self ?? 0) > 0 && <span className="rounded bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">뜻 직접 판정 {s.meaning?.self}</span>}
                     <div className="grow" />
-                    <span className="text-xs font-bold text-pine">{on ? '접기 ▲' : `틀린 단어 ${wrong.length}개 보기 ▼`}</span>
+                    <span className="text-xs font-bold text-pine">{on ? '접기 ▲' : `살펴볼 단어 ${wW.length + wM.length}개 ▼`}</span>
                   </button>
                   {on && (
-                    <div className="border-t border-line/70 px-3 py-3">
-                      {wrong.length === 0 ? (
-                        <p className="text-sm text-ink2">다 맞혔습니다.</p>
-                      ) : (
-                        <table className="w-full text-sm">
-                          <thead>
-                            <tr className="text-left text-xs text-ink2">
-                              <th className="w-8 pb-1.5">#</th>
-                              <th className="pb-1.5">뜻</th>
-                              <th className="w-32 pb-1.5">정답</th>
-                              <th className="w-32 pb-1.5">학생이 쓴 답</th>
-                              <th className="w-24 pb-1.5">다시 풀기</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {wrong.map(({ x, i }) => {
-                              const [w, mean] = words[i] ?? ['', '']
-                              return (
-                                <tr key={i} className="border-t border-line/60">
-                                  <td className="py-1.5 text-xs text-ink2">{i + 1}</td>
-                                  <td className="py-1.5">{mean || <span className="text-ink2">—</span>}</td>
-                                  <td className="py-1.5 font-bold">{w}</td>
-                                  <td className="py-1.5 text-clay">{x.studentAnswer || <span className="text-ink2">(빈칸)</span>}</td>
-                                  <td className="py-1.5">
-                                    {x.careless
-                                      ? <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark">맞힘 {x.retryAnswer ? `(${x.retryAnswer})` : ''}</span>
-                                      : <span className="text-xs text-ink2">—</span>}
-                                  </td>
-                                </tr>
-                              )
-                            })}
-                          </tbody>
-                        </table>
-                      )}
-                      {!all && !err && <p className="mt-2 text-xs text-ink2">단어를 불러오는 중…</p>}
+                    <div className="grid gap-3 border-t border-line/70 px-3 py-3">
+                      {([['단어시험', wW, false], ['뜻시험', wM, true]] as const).map(([label, list, meaning]) => (
+                        (meaning ? s.meaning : s.word) && (
+                          <div key={label}>
+                            <div className="mb-1 text-xs font-bold text-ink2">{label}</div>
+                            {list.length === 0 ? <p className="text-sm text-ink2">다 맞혔습니다.</p> : (
+                              <table className="w-full text-sm">
+                                <thead>
+                                  <tr className="text-left text-xs text-ink2">
+                                    <th className="w-12 pb-1.5">번호</th><th className="w-36 pb-1.5">단어</th>
+                                    <th className="pb-1.5">뜻</th><th className="w-40 pb-1.5">학생이 쓴 답</th><th className="w-28 pb-1.5">비고</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {list.map(({ no, r }) => {
+                                    const x = flat?.words[no - 1]
+                                    return (
+                                      <tr key={no} className="border-t border-line/60">
+                                        <td className="py-1.5 text-xs text-ink2">{no}</td>
+                                        <td className="py-1.5 font-bold">{x?.w ?? '—'}</td>
+                                        <td className="py-1.5 text-ink2">{x?.mean ?? '—'}</td>
+                                        <td className={`py-1.5 ${r.correct ? 'text-ink' : 'text-clay'}`}>{r.studentAnswer || <span className="text-ink2">(빈칸)</span>}</td>
+                                        <td className="py-1.5">
+                                          {r.careless ? <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark">다시 풀어 맞힘 {r.retryAnswer ? `(${r.retryAnswer})` : ''}</span>
+                                            : r.self && r.correct ? <span className="rounded bg-amber-soft px-1.5 py-0.5 text-[11px] font-bold text-amber">직접 인정</span>
+                                              : <span className="text-xs text-ink2">틀림</span>}
+                                        </td>
+                                      </tr>
+                                    )
+                                  })}
+                                </tbody>
+                              </table>
+                            )}
+                          </div>
+                        )
+                      ))}
+                      {!flat && !err && <p className="text-xs text-ink2">단어를 불러오는 중…</p>}
                     </div>
                   )}
                 </div>

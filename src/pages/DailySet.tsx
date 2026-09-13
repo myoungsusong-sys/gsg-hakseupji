@@ -8,7 +8,7 @@ import { buildByTypeRound, dailyWsId, gradeKey, typeOrderOfBook, unitsOfOrder, t
 import { bigUnitNameOfType } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem, Student } from '../types'
-import BatchPrint, { vocaAnswerFor, vocaSheetFor, vocaStudySheetFor, type Sheet } from '../components/daily/BatchPrint'
+import BatchPrint, { vocaSheetsFor, type Sheet } from '../components/daily/BatchPrint'
 
 // ── 📤 오늘 기본과제 — 반/전체 학생에게 3세트를 한 번에 내보낸다 ────────────────
 //
@@ -102,7 +102,7 @@ async function typeOrderOfRail(wbKey: string, bookName: string, course: string):
 
 export default function DailySet() {
   const {
-    students, problems, saveWorksheet, addAssignment, ensureCourse, dailyBooks, setDailyBook,
+    students, problems, saveWorksheet, addAssignment, ensureCourse, dailyBooks, setDailyBook, gradings, workbooks,
   } = useStore()
   const brand = useBrand()
   const day = todayKey()
@@ -121,7 +121,6 @@ export default function DailySet() {
   const [skipped, setSkipped] = useState<string[]>([])
   // 🔴 일괄 PDF — 만든 학습지를 학생 이름이 박힌 한 파일로 (명수쌤 2026-08-21)
   const [sheets, setSheets] = useState<Sheet[] | null>(null)
-  const [vocaDay, setVocaDay] = useState(1)
   const [hi2, setHi2] = useState<'대수' | '미적분'>('대수')   // 고2는 두 과목 중 오늘 낼 것
   // 🔴 problems 는 지연 로드로 나중에 채워진다. 함수 안에서 잡은 값은 낡은 값이라
   //    ref 로 **지금 값**을 본다(안 그러면 늘 "문제은행이 안 들어왔어요" 가 뜬다).
@@ -347,15 +346,15 @@ export default function DailySet() {
     const list: Sheet[] = []
     // ① 학생별 문제지
     for (const m of made) list.push({ kind: '문제', student: m.student, subject: m.subject, problems: m.problems })
-    // ② 학생별 단어장(외우기) → 단어시험지 순서.
-    //    🔴 명수쌤 2026-08-25: "영어 단어장을 먼저 만들어줘야 할 것 같애."
-    //       시험지만 주면 학생이 외울 것이 없다. 같은 DAY 를 단어장으로 먼저 준다.
+    // ② 학생별 단어장(외우기) → 단어시험지 · 뜻시험지.
+    //    🔴 명수쌤 2026-08-25: "영어 단어장을 먼저 만들어줘야 할 것 같애." — 외울 것을 먼저 준다.
+    //    🎚️ 2026-09-14: 학생마다 자기 책·하루 분량·시험 종류·다음 범위로 나간다(전원 공통 DAY 입력칸 없앰).
     const stus = [...new Map(made.map(m => [m.student.id, m.student])).values()]
+    const vocaAnswers: Sheet[] = []
     for (const st of stus) {
-      const b0 = await vocaStudySheetFor(st, vocaDay)
-      if (b0) list.push(b0)
-      const v = await vocaSheetFor(st, vocaDay)
-      if (v) list.push(v)
+      const v = await vocaSheetsFor(st, gradings, workbooks, day)
+      list.push(...v.study, ...v.tests)
+      vocaAnswers.push(...v.answer)
     }
     // 🔴 ③ 정답·해설은 **학년·과목당 한 벌**. buildByTypeRound 에 학생 인자가 없어
     //    같은 학년·과목이면 문항이 완전히 같다 — 학생 수만큼 찍으면 20배로 불어난다.
@@ -367,11 +366,12 @@ export default function DailySet() {
       list.push({ kind: '정답', label, problems: m.problems })
       list.push({ kind: '해설', label, problems: m.problems })
     }
-    // ④ 단어시험 정답 — 쓰는 책마다 한 벌 (중등필수·고교기본·수능)
+    // ④ 단어·뜻시험 정답 — 같은 책·같은 범위면 한 벌만
     const seen = new Set<string>()
-    for (const st of stus) {
-      const a = await vocaAnswerFor(st.grade, vocaDay)
-      if (a && a.kind === '단어정답' && !seen.has(a.label)) { seen.add(a.label); list.push(a) }
+    for (const a of vocaAnswers) {
+      if (a.kind !== '단어정답') continue
+      const k = `${a.label}|${a.range}`
+      if (!seen.has(k)) { seen.add(k); list.push(a) }
     }
     setSheets(list); setBusy('')
   }
@@ -558,11 +558,7 @@ export default function DailySet() {
           <div className="mb-3 flex flex-wrap items-center gap-2 rounded-xl bg-pine-soft px-3 py-2.5">
             <b className="text-sm text-pine-dark">📄 전부 한 파일로</b>
             <span className="text-xs text-ink2">학생 이름이 박힌 문제지 + 영어 단어시험지</span>
-            <label className="flex items-center gap-1.5 text-xs">
-              <span className="font-semibold">단어 DAY</span>
-              <input type="number" min={1} max={40} value={vocaDay} onChange={e => setVocaDay(Number(e.target.value))}
-                className="w-14 rounded-lg border border-line px-2 py-1 text-right font-bold" />
-            </label>
+            <span className="text-xs text-ink2">영단어는 학생마다 정한 단어장 · 하루 분량 · 다음 범위로 나갑니다</span>
             <div className="grow" />
             <button onClick={openBatch} disabled={!!busy}
               className="rounded-lg bg-pine px-4 py-2 text-xs font-bold text-paper hover:brightness-110 disabled:opacity-50">

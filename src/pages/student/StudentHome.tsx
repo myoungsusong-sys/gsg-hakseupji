@@ -11,7 +11,7 @@ import { achievementIndex } from '../../lib/achievement'
 import { useStudentSelf } from './StudentShell'
 import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import { computeMonth, MONTHLY_CAP, won } from '../../lib/points'
-import { nextDay, vocaBookOf } from '../../lib/voca'
+import { MODE_LABEL, vocaSettingsOf, vocaWorkbookOf } from '../../lib/voca'
 import {
   STEPS, STEP_LABEL, mondayOf, reviewKey, weekProgress, weekReview,
 } from '../../lib/schoolReview'
@@ -48,22 +48,23 @@ export default function StudentHome() {
   const myGradings = useMemo(() => gradings.filter(g => g.studentId === me.id), [gradings, me.id])
 
   // 🔤 오늘 영단어 — 학생이 「오늘 할 일」에서 바로 보게 (명수쌤 2026-08-24 "영단어까지 다 배포").
-  //    시험 자체는 학생앱 영단어 화면(StudentVoca)이 이미 하고 자동채점까지 한다.
-  //    여기서는 **오늘 볼 DAY 와 오늘 본 점수만** 보여 준다 — 단어 파일은 받지 않는다(홈이 느려진다).
+  //    🎚️ 2026-09-14: 책·하루 분량·시험 종류는 선생님이 학생마다 정한다(voca.ts vocaSettingsOf).
+  //    여기서는 **오늘 끝냈는지와 점수만** 보여 준다 — 단어 파일은 받지 않는다(홈이 느려진다).
   const voca = useMemo(() => {
-    const book = vocaBookOf(me.grade)
-    const wb = workbooks.find(w => w.studentId === me.id && w.name === book.name)
-    const days = wb
-      ? gradings.filter(g => g.studentId === me.id && g.workbookId === wb.id && g.pageFrom != null)
+    const s = vocaSettingsOf(me)
+    const wb = vocaWorkbookOf(workbooks, me.id, s.book)
+    const todays = wb
+      ? gradings.filter(g => g.studentId === me.id && g.workbookId === wb.id && dateKey(g.date) === todayKey())
       : []
-    const todayRec = days.find(g => dateKey(g.date) === todayKey())
-    const done = days.map(g => g.pageFrom as number)
+    const res = todays.flatMap(g => g.results)
+    const has = (pre: string) => res.some(r => r.itemId?.startsWith(pre))
+    const doneModes = s.modes.filter(m => (m === 'word' ? has('vw-') || has('voca-') : has('vm-')))
     return {
-      book, day: nextDay(done, book.days), todayRec,
-      right: todayRec ? todayRec.results.filter(r => r.correct).length : 0,
-      total: todayRec ? todayRec.results.length : 0,
+      s, started: todays.length > 0, allDone: doneModes.length === s.modes.length,
+      left: s.modes.filter(m => !doneModes.includes(m)),
+      right: res.filter(r => r.correct).length, total: res.length,
     }
-  }, [workbooks, gradings, me.id, me.grade])
+  }, [workbooks, gradings, me])
 
 
   // 이번주(월~일 — 매쓰플랫 동일) 날짜들
@@ -303,23 +304,29 @@ export default function StudentHome() {
           <MasteryQueue studentId={me.id} compact limit={5}
             onPick={(r) => { saveMastery(me.id, r.typeId, stateToStart(r, me.id)); nav(`/student/mastery?type=${r.typeId}`) }} />
 
-          {/* 🔤 오늘 영단어 — 매일 한 DAY(25단어). 뜻을 보고 영단어를 쓰면 바로 채점된다 */}
+          {/* 🔤 오늘 영단어 — 선생님이 정한 책·하루 분량·시험 종류로 매일 이어서 본다 */}
           <section className="rounded-2xl border border-line bg-white p-6">
             <div className="mb-3 flex flex-wrap items-baseline gap-2">
               <h2 className="font-black">🔤 오늘 영단어</h2>
               <span className="rounded-full bg-paper2/80 px-2.5 py-1 text-xs font-semibold text-ink2">
-                {voca.book.name}
+                {voca.s.book.name}
               </span>
-              {voca.todayRec
+              {voca.allDone
                 ? <span className="rounded-full bg-pine-soft px-2.5 py-1 text-xs font-black text-pine-dark">
-                    오늘 DAY {voca.todayRec.pageFrom} 끝냈어요 — {voca.right} / {voca.total}
+                    오늘 단어 끝냈어요 — {voca.right} / {voca.total}
                   </span>
-                : <span className="text-xs text-ink2">뜻을 보고 영단어를 쓰면 바로 채점돼요 (25단어)</span>}
+                : voca.started
+                  ? <span className="rounded-full bg-amber-soft px-2.5 py-1 text-xs font-black text-amber">
+                      {voca.left.map(m => MODE_LABEL[m].split(' ')[0]).join('·')}이 남았어요
+                    </span>
+                  : <span className="text-xs text-ink2">
+                      하루 {voca.s.perDay}개 · {voca.s.modes.map(m => MODE_LABEL[m].split(' ')[0]).join(' + ')}
+                    </span>}
             </div>
             <Link to="/student/voca"
               className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-black ${
-                voca.todayRec ? 'border border-line bg-white text-ink2 hover:border-pine' : 'bg-pine text-paper'}`}>
-              {voca.todayRec ? '↻ 다시 보기' : `DAY ${voca.day} 시험 보기 →`}
+                voca.allDone ? 'border border-line bg-white text-ink2 hover:border-pine' : 'bg-pine text-paper'}`}>
+              {voca.allDone ? '↻ 다시 보기' : voca.started ? '이어서 보기 →' : `오늘 단어 ${voca.s.perDay}개 시험 보기 →`}
             </Link>
           </section>
 

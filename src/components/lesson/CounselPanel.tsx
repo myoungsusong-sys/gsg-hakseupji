@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import { mondayOf, weekDays, weekProgress, weekReview } from '../../lib/schoolReview'
-import { nextDay, vocaBookOf } from '../../lib/voca'
+import { isVocaWorkbookName, vocaSettingsOf, vocaWorkbookOf } from '../../lib/voca'
 import { COUNSEL_TAGS } from '../../types'
 import type { Counsel, Student } from '../../types'
 
@@ -78,10 +78,16 @@ export default function CounselPanel({ student }: { student: Student }) {
       return !!w && !w.deletedAt && (w.tags ?? []).includes('기본과제')
     })
     const dailyDone = daily.filter(a => wk.some(g => g.worksheetId === a.worksheetId)).length
-    // 영단어
-    const vb = vocaBookOf(student.grade)
-    const vwb = workbooks.find(w => w.studentId === student.id && w.name === vb.name)
-    const vDays = vwb ? mine.filter(g => g.workbookId === vwb.id && g.pageFrom != null).map(g => g.pageFrom as number) : []
+    // 영단어 — 학생별 설정(책·분량·시험). 진도는 단어 번호로 센다(2026-09-14)
+    const vs = vocaSettingsOf(student)
+    const vwb = vocaWorkbookOf(workbooks, student.id, vs.book)
+    const vRecs = vwb ? mine.filter(g => g.workbookId === vwb.id && g.pageFrom != null) : []
+    const vNew = vRecs.filter(g => !g.results.some(r => r.itemId?.startsWith('voca-')))
+    const vOld = vRecs.filter(g => g.results.some(r => r.itemId?.startsWith('voca-')))
+    // 예전 DAY 기록만 있으면 DAY 로, 새 기록이 있으면 단어 번호로 (정확한 환산은 단어 파일이 있어야 해서 여기선 하지 않는다)
+    const vProgress = vNew.length
+      ? `${Math.max(...vNew.map(g => g.pageTo ?? (g.pageFrom as number)))}번 단어까지`
+      : vOld.length ? `DAY ${Math.max(...vOld.map(g => g.pageFrom as number))}까지` : '시작 전'
     const vWeek = vwb ? wk.filter(g => g.workbookId === vwb.id).length : 0
     // 교재 진도 — 그 주에 채점한 교재별 마지막 쪽
     const wbById = new Map(workbooks.map(w => [w.id, w]))
@@ -89,7 +95,7 @@ export default function CounselPanel({ student }: { student: Student }) {
     for (const g of wk) {
       if ((g.source ?? '교재') !== '교재' || !g.workbookId) continue
       const w = wbById.get(g.workbookId)
-      if (!w || w.name === vb.name) continue
+      if (!w || isVocaWorkbookName(w.name)) continue   // 단어장은 교재 진도가 아니다
       const p = g.pageTo ?? g.pageFrom
       if (p == null) continue
       const cur = books.get(w.id)
@@ -110,7 +116,7 @@ export default function CounselPanel({ student }: { student: Student }) {
       unresolved,
       review: rp, lateSubs,
       daily: daily.length, dailyDone,
-      vocaNext: nextDay(vDays, vb.days), vocaWeek: vWeek, vocaBook: vb.name,
+      vocaProgress: vProgress, vocaWeek: vWeek, vocaBook: `${vs.book.name} · 하루 ${vs.perDay}개`,
       books: [...books.values()],
       planNote,
     }
@@ -198,7 +204,7 @@ export default function CounselPanel({ student }: { student: Student }) {
           )}
           <div className="flex flex-wrap items-center gap-2">
             <span className="w-20 shrink-0 text-xs font-bold text-ink2">영단어</span>
-            <span>이번 주 <b>{stat.vocaWeek}회</b> · 다음 <b>DAY {stat.vocaNext}</b></span>
+            <span>이번 주 <b>{stat.vocaWeek}회</b> · <b>{stat.vocaProgress}</b></span>
             <span className="text-xs text-ink2">{stat.vocaBook}</span>
           </div>
           {stat.books.length > 0 && (

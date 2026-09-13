@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useStore } from '../lib/store'
+import { isVocaGrading, vocaRangeLabel } from '../lib/voca'
 import { dateKey, todayKey } from '../lib/dates'
 import { subjectOfWorkbook, useSubject, type Subject } from '../lib/subject'
 import { clearCall, fetchCalls, pushCall, type TeacherCall } from '../lib/live'
@@ -40,6 +41,7 @@ function labelOf(g: Grading, wbById: Map<string, Workbook>, wsById: Map<string, 
     || (g.workbookId && wbById.get(g.workbookId)?.name)
     || g.title || (g.source ?? '교재')
   if (g.pageFrom == null) return base
+  if (isVocaGrading(g)) return `${base} ${vocaRangeLabel(g)}`   // 단어시험은 쪽이 아니다 — DAY 5 / 151~180번 단어
   return `${base} ${g.pageFrom}${g.pageTo && g.pageTo !== g.pageFrom ? `~${g.pageTo}` : ''}쪽`
 }
 

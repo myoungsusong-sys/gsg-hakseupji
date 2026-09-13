@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { loadVoca, vocaBookOf } from '../../lib/voca'
+import { vocaPlanFor } from '../../lib/voca'
 import { isStaleChunkError } from '../../lib/staleChunk'
 import { isImageUrl } from '../MathText'
-import type { Problem, Student } from '../../types'
+import type { Problem, Student, Grading, Workbook } from '../../types'
 
 // ── 📄 오늘 기본과제 일괄 PDF — 문제지·정답·해설·단어시험을 한 파일로 ──────────────────
 //
@@ -49,11 +49,12 @@ function solHeight(ratio: number): number {
 
 type Sheet =
   | { kind: '문제'; student: Student; subject: '수학' | '과학' | '사회'; problems: Problem[] }
-  | { kind: '단어장'; student: Student; book: string; day: number; words: [string, string][] }   // 외우기용(영단어+뜻)
-  | { kind: '단어'; student: Student; book: string; day: number; words: [string, string][] }
+  | { kind: '단어장'; student: Student; book: string; range: string; offset: number; words: [string, string][] }   // 외우기용(영단어+뜻)
+  | { kind: '단어'; student: Student; book: string; range: string; offset: number; words: [string, string][] }    // 단어시험지(뜻 → 영어)
+  | { kind: '뜻'; student: Student; book: string; range: string; offset: number; words: [string, string][] }      // 뜻시험지(영어 → 뜻)
   | { kind: '정답'; label: string; problems: Problem[] }              // 학년·과목별 빠른정답
   | { kind: '해설'; label: string; problems: Problem[] }              // 학년·과목별 정답·해설
-  | { kind: '단어정답'; label: string; day: number; words: [string, string][] }
+  | { kind: '단어정답'; label: string; range: string; offset: number; words: [string, string][] }   // 단어·뜻시험 공용 정답
 
 /** 이미지 가로/세로 비를 미리 재 둔다 — 못 재면 A4 문항의 흔한 비율(2.6)로 본다. */
 function useRatios(urls: string[]): Map<string, number> {
@@ -86,7 +87,7 @@ function answerText(p: Problem): string {
   return a
 }
 
-type Part = '문제지' | '빠른정답' | '정답해설' | '단어장' | '단어시험'
+type Part = '문제지' | '빠른정답' | '정답해설' | '단어장' | '단어시험' | '뜻시험'
 
 export default function BatchPrint({
   sheets, brand, onClose,
@@ -95,7 +96,7 @@ export default function BatchPrint({
   const [done, setDone] = useState(false)
   // 🔴 정답·해설을 기본으로 켜 둔다 — 선생님이 채점하려면 없으면 안 되는 것이다.
   const [parts, setParts] = useState<Set<Part>>(
-    new Set<Part>(['문제지', '빠른정답', '정답해설', '단어시험']))
+    new Set<Part>(['문제지', '빠른정답', '정답해설', '단어시험', '뜻시험']))
   const stage = useRef<HTMLDivElement>(null)
   const today = new Date()
   const dstr = `${today.getFullYear()}. ${today.getMonth() + 1}. ${today.getDate()}`
@@ -111,7 +112,9 @@ export default function BatchPrint({
       : s.kind === '정답' ? parts.has('빠른정답')
         : s.kind === '해설' ? parts.has('정답해설')
           : s.kind === '단어장' ? parts.has('단어장')
-            : parts.has('단어시험')), [sheets, parts])
+            : s.kind === '뜻' ? parts.has('뜻시험')
+              : s.kind === '단어정답' ? (parts.has('단어시험') || parts.has('뜻시험'))
+                : parts.has('단어시험')), [sheets, parts])
 
   const urls = useMemo(() => {
     const s = new Set<string>()
@@ -129,6 +132,7 @@ export default function BatchPrint({
     | { t: '해설'; head: Extract<Sheet, { kind: '해설' }>; cols: Problem[][]; no: number; of: number }
     | { t: '단어장'; head: Extract<Sheet, { kind: '단어장' }> }
     | { t: '단어'; head: Extract<Sheet, { kind: '단어' }> }
+    | { t: '뜻'; head: Extract<Sheet, { kind: '뜻' }> }
     | { t: '정답'; head: Extract<Sheet, { kind: '정답' }> }
     | { t: '단어정답'; head: Extract<Sheet, { kind: '단어정답' }> }
 
@@ -151,6 +155,7 @@ export default function BatchPrint({
     for (const sh of picked) {
       if (sh.kind === '단어장') { out.push({ t: '단어장', head: sh }); continue }
       if (sh.kind === '단어') { out.push({ t: '단어', head: sh }); continue }
+      if (sh.kind === '뜻') { out.push({ t: '뜻', head: sh }); continue }
       if (sh.kind === '단어정답') { out.push({ t: '단어정답', head: sh }); continue }
       if (sh.kind === '정답') { out.push({ t: '정답', head: sh }); continue }
       if (sh.kind === '해설') {
@@ -193,7 +198,8 @@ export default function BatchPrint({
   }
 
   const students = new Set(sheets
-    .filter((s): s is Extract<Sheet, { kind: '문제' | '단어' }> => s.kind === '문제' || s.kind === '단어')
+    .filter((s): s is Extract<Sheet, { kind: '문제' | '단어' | '뜻' | '단어장' }> =>
+      s.kind === '문제' || s.kind === '단어' || s.kind === '뜻' || s.kind === '단어장')
     .map(s => s.student.id)).size
   const countOf = (k: Sheet['kind']) => sheets.filter(s => s.kind === k).length
 
@@ -226,7 +232,7 @@ export default function BatchPrint({
 
   const PART_LIST: [Part, number][] = [
     ['문제지', countOf('문제')], ['빠른정답', countOf('정답')],
-    ['정답해설', countOf('해설')], ['단어장', countOf('단어장')], ['단어시험', countOf('단어') + countOf('단어정답')],
+    ['정답해설', countOf('해설')], ['단어장', countOf('단어장')], ['단어시험', countOf('단어') + countOf('단어정답')], ['뜻시험', countOf('뜻')],
   ]
 
   return (
@@ -357,24 +363,48 @@ export default function BatchPrint({
             return (
               <div key={i} className={`mf-page ${last}`}>
                 <div style={{ padding: `${MARGIN}mm ${MARGIN}mm 0` }}>
-                  <Head answer big="단어시험 정답" small={pg.head.label} title="선생님용"
-                    sub={`DAY ${pg.head.day} · 채점용`} />
+                  <Head answer big="단어·뜻시험 정답" small={pg.head.label} title="선생님용"
+                    sub={`${pg.head.range} · 채점용`} />
                   <div className="mt-3 grid grid-cols-2 gap-x-[6mm]">
                     {pg.head.words.map(([w, mean], k) => (
                       <div key={k} className="flex items-baseline gap-2 border-b border-line/70 py-[3.4mm]">
-                        <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{k + 1}</span>
+                        <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{pg.head.offset + k + 1}</span>
                         <b className="w-[34mm] shrink-0 text-[10.5pt]">{w}</b>
                         <span className="min-w-0 grow truncate text-[9.5pt] text-ink2">{mean}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-                <Foot label={`단어시험 정답 · ${pg.head.label}`} />
+                <Foot label={`단어·뜻시험 정답 · ${pg.head.label} · ${pg.head.range}`} />
               </div>
             )
           }
 
           // 📕 단어장 (학생용 · 외우기) — 시험 전에 이걸 보고 외운다
+          // 📝 뜻시험지 (학생용) — 영단어를 보고 우리말 뜻을 쓴다 (2026-09-14)
+          if (pg.t === '뜻') {
+            const st = pg.head.student
+            return (
+              <div key={i} className={`mf-page ${last}`}>
+                <div style={{ padding: `${MARGIN}mm ${MARGIN}mm 0` }}>
+                  <Head big={st.name} small={st.grade} title="영어 뜻시험"
+                    sub={`${pg.head.book} · ${pg.head.range}`} />
+                  <div className="mt-3 grid grid-cols-2 gap-x-[6mm]">
+                    {pg.head.words.map(([w], k) => (
+                      <div key={k} style={{ paddingTop: '5.4mm', paddingBottom: '5.4mm' }}
+                        className="flex items-center gap-2 border-b border-line/70">
+                        <span className="w-[8mm] shrink-0 text-[9pt] font-bold text-ink2">{pg.head.offset + k + 1}</span>
+                        <b className="w-[36mm] shrink-0 text-[10.5pt]">{w}</b>
+                        <span className="h-[6mm] min-w-0 grow border-b border-ink2/50" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <Foot label={`${st.name} · ${st.grade}`} />
+              </div>
+            )
+          }
+
           if (pg.t === '단어장') {
             const s0 = pg.head.student
             const longest = Math.max(...pg.head.words.map(([, m]) => m.length))
@@ -384,19 +414,19 @@ export default function BatchPrint({
               <div key={i} className={`mf-page ${last}`}>
                 <div style={{ padding: `${MARGIN}mm ${MARGIN}mm 0` }}>
                   <Head big={s0.name} small={s0.grade} title="영어 단어장"
-                    sub={`${pg.head.book} · DAY ${pg.head.day} · 외운 뒤 시험을 봅니다`} />
+                    sub={`${pg.head.book} · ${pg.head.range} · 외운 뒤 시험을 봅니다`} />
                   <div className="mt-3 grid grid-cols-2 gap-x-[6mm]">
                     {pg.head.words.map(([w, mean], k) => (
                       <div key={k} style={{ paddingTop: pad, paddingBottom: pad }}
                         className="flex items-baseline gap-2 border-b border-line/70">
-                        <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{k + 1}</span>
+                        <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{pg.head.offset + k + 1}</span>
                         <b className="w-[34mm] shrink-0 text-[10.5pt]">{w}</b>
                         <span style={{ fontSize: fs }} className="min-w-0 grow leading-snug text-ink2">{mean}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-                <Foot label={`영어 단어장 · ${s0.name} · DAY ${pg.head.day}`} />
+                <Foot label={`영어 단어장 · ${s0.name} · ${pg.head.range}`} />
               </div>
             )
           }
@@ -407,7 +437,7 @@ export default function BatchPrint({
             <div key={i} className={`mf-page ${last}`}>
               <div style={{ padding: `${MARGIN}mm ${MARGIN}mm 0` }}>
                 <Head big={st.name} small={st.grade} title="영어 단어시험"
-                  sub={`${pg.head.book} · DAY ${pg.head.day}`} />
+                  sub={`${pg.head.book} · ${pg.head.range}`} />
                 {/* 🔴 줄 높이는 **뜻 길이를 보고** 정한다. 천일문(중등)은 뜻이 짧지만
                     어휘끝 수능은 "1. 외모, (겉)모습 2. 출현, 등장" 처럼 길어 두 줄이 되고,
                     고정 여백으로 두면 25번째 단어가 지면 밖으로 밀린다(실측 125px 넘침). */}
@@ -420,7 +450,7 @@ export default function BatchPrint({
                       {pg.head.words.map(([, mean], k) => (
                         <div key={k} style={{ paddingTop: pad, paddingBottom: pad }}
                           className="flex items-center gap-2 border-b border-line/70">
-                          <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{k + 1}</span>
+                          <span className="w-[6mm] shrink-0 text-[9pt] font-bold text-ink2">{pg.head.offset + k + 1}</span>
                           <span style={{ fontSize: fs }} className="min-w-0 grow leading-snug">{mean}</span>
                           <span className="h-[6mm] w-[36mm] shrink-0 border-b border-ink2/50" />
                         </div>
@@ -438,44 +468,38 @@ export default function BatchPrint({
   )
 }
 
-/** 단어시험지에 쓸 그날의 단어 — 학년에 맞는 책에서 고른다. */
-export async function vocaSheetFor(student: Student, day: number): Promise<Sheet | null> {
-  const bk = vocaBookOf(student.grade)
+/**
+ * 🔤 학생 한 명의 오늘 단어 인쇄물 — 학생마다 정한 책·하루 분량·시험 종류와 진도를 따른다 (2026-09-14).
+ * 🔴 예전엔 선생님이 DAY 하나를 입력해 **전원이 같은 DAY** 를 받았고, 입력칸이 최대 40이라
+ *    고1(51일)·고2~3(75일)은 41일째부터 뽑을 수 없었다. 이제 학생마다 자기 다음 범위가 나간다.
+ * 한 장에 26개까지 — 25개 기준으로 맞춘 줄 간격이라 그보다 많으면 지면 밖으로 밀린다. 넘으면 여러 장으로 나눈다.
+ */
+export async function vocaSheetsFor(student: Student, gradings: Grading[], workbooks: Workbook[], today: string):
+  Promise<{ study: Sheet[]; tests: Sheet[]; answer: Sheet[] }> {
+  const empty = { study: [] as Sheet[], tests: [] as Sheet[], answer: [] as Sheet[] }
   try {
-    const all = await loadVoca(bk.file)
-    const keys = Object.keys(all)
-    const d = String(Math.min(Math.max(1, day), keys.length))
-    const words = all[d]
-    if (!words?.length) return null
-    return { kind: '단어', student, book: bk.name, day: Number(d), words }
-  } catch { return null }
-}
-
-/** 📕 단어장(외우기용) — 영단어와 뜻을 나란히. 명수쌤 2026-08-25: "영어 단어장을 먼저 만들어줘".
- *  시험지만 주면 학생은 외울 것이 없다. 같은 DAY 의 25단어를 먼저 주고, 외운 뒤 시험을 본다. */
-export async function vocaStudySheetFor(student: Student, day: number): Promise<Sheet | null> {
-  const bk = vocaBookOf(student.grade)
-  try {
-    const all = await loadVoca(bk.file)
-    const keys = Object.keys(all)
-    const d = String(Math.min(Math.max(1, day), keys.length))
-    const words = all[d]
-    if (!words?.length) return null
-    return { kind: '단어장', student, book: bk.name, day: Number(d), words }
-  } catch { return null }
-}
-
-/** 단어시험 정답지 — 책마다 한 벌. 선생님이 채점하려면 영단어가 있어야 한다. */
-export async function vocaAnswerFor(grade: string, day: number): Promise<Sheet | null> {
-  const bk = vocaBookOf(grade)
-  try {
-    const all = await loadVoca(bk.file)
-    const keys = Object.keys(all)
-    const d = String(Math.min(Math.max(1, day), keys.length))
-    const words = all[d]
-    if (!words?.length) return null
-    return { kind: '단어정답', label: bk.name, day: Number(d), words }
-  } catch { return null }
+    const { settings, plan, words } = await vocaPlanFor(student, gradings, workbooks, today)
+    if (!words.length) return empty
+    const book = settings.book.name
+    const pairs = words.map(x => [x.w, x.mean] as [string, string])
+    const PER = 26
+    const n = Math.ceil(pairs.length / PER)
+    const out = { study: [] as Sheet[], tests: [] as Sheet[], answer: [] as Sheet[] }
+    // 🔴 시험지는 **같은 시험끼리** 붙인다 — 장마다 번갈아 넣으면 단어시험 1/2 → 뜻시험 1/2 → 단어시험 2/2 로
+    //    섞여 인쇄된다(검증 화면 실측). 단어시험 전 장 → 뜻시험 전 장 순서로 모은다.
+    const wordT: Sheet[] = [], meanT: Sheet[] = []
+    for (let i = 0; i < pairs.length; i += PER) {
+      const chunk = pairs.slice(i, i + PER)
+      const range = `${plan.from}~${plan.to}번${n > 1 ? ` (${i / PER + 1}/${n})` : ''}`
+      const offset = plan.from - 1 + i
+      out.study.push({ kind: '단어장', student, book, range, offset, words: chunk })
+      if (settings.modes.includes('word')) wordT.push({ kind: '단어', student, book, range, offset, words: chunk })
+      if (settings.modes.includes('meaning')) meanT.push({ kind: '뜻', student, book, range, offset, words: chunk })
+      out.answer.push({ kind: '단어정답', label: book, range, offset, words: chunk })
+    }
+    out.tests.push(...wordT, ...meanT)
+    return out
+  } catch { return empty }
 }
 
 export type { Sheet }
