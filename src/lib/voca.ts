@@ -85,6 +85,10 @@ export function acceptedAnswers(word: string): string[] {
   for (const part of word.split(/\s*[/,]\s*|\s+or\s+/)) add(part)
   // 괄호 안은 선택 — 있어도 없어도 인정
   add(word.replace(/\([^)]*\)/g, ' '))
+  // 🔴 괄호가 낱말에 **붙은** 접미사형(biotech(nology)·wage(s)·botanic(al)·afterward(s))은
+  //    괄호만 떼고 **붙여 쓴 꼴**도 인정해야 한다. 위 줄은 괄호 안을 지운 꼴(biotech)만 만들어서
+  //    학생이 biotechnology·wages 라고 맞게 써도 오답이었다(2026-09-13 실측, 단어장 7개 항목).
+  add(word.replace(/\(([^)]*)\)/g, '$1'))
   // get[be] used to → get / be 두 갈래
   const br = /^(.*?)\[([^\]]+)\](.*)$/.exec(word)
   if (br) { add(`${br[1]}${br[3]}`); add(`${br[2]}${br[3]}`) }
