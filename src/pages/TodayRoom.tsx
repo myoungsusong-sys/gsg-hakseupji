@@ -40,8 +40,8 @@ function labelOf(g: Grading, wbById: Map<string, Workbook>, wsById: Map<string, 
   const base = (g.worksheetId && wsById.get(g.worksheetId)?.title)
     || (g.workbookId && wbById.get(g.workbookId)?.name)
     || g.title || (g.source ?? '교재')
+  if (isVocaGrading(g)) return `${base} ${vocaRangeLabel(g)}`   // 단어시험은 쪽이 아니다 — DAY 5 / 151~180번 단어 / 오답 복습 12개
   if (g.pageFrom == null) return base
-  if (isVocaGrading(g)) return `${base} ${vocaRangeLabel(g)}`   // 단어시험은 쪽이 아니다 — DAY 5 / 151~180번 단어
   return `${base} ${g.pageFrom}${g.pageTo && g.pageTo !== g.pageFrom ? `~${g.pageTo}` : ''}쪽`
 }
 

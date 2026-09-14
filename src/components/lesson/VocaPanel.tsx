@@ -3,7 +3,7 @@ import { useStore } from '../../lib/store'
 import { dateKey, todayKey } from '../../lib/dates'
 import {
   flattenVoca, loadVoca, MODE_LABEL, nextWordNo, PER_DAY_OPTIONS, planVoca, VOCA_BOOKS, vocaBookOf, vocaLevelOf,
-  vocaSessions, vocaSettingsOf, vocaWorkbookOf, type VocaFlat, type VocaMode, type VocaModeResult,
+  vocaReviewQueue, vocaReviews, vocaSessions, vocaSettingsOf, vocaWorkbookOf, type VocaFlat, type VocaMode, type VocaModeResult,
 } from '../../lib/voca'
 import type { Student } from '../../types'
 
@@ -36,6 +36,15 @@ export default function VocaPanel({ student }: { student: Student }) {
   const total = flat?.words.length ?? 0
   const plan = flat ? planVoca(settings, sessions, total, todayKey()) : null
   const doneWords = nextWordNo(sessions) - 1
+  // 🔁 오답 복습 — 전에 틀려서 오늘 다시 볼 단어 (시험별, 하루 분량까지)
+  const queue = flat ? vocaReviewQueue(mine, wb?.id, flat, todayKey(), settings.perDay) : null
+  const reviewWaiting = queue ? settings.modes.reduce((a, m) => a + queue.waiting[m], 0) : 0
+  const reviews = useMemo(() => vocaReviews(mine, wb?.id), [mine, wb?.id])
+  type Rec = { key: string; label: string; date: string; word?: VocaModeResult; meaning?: VocaModeResult; review: boolean }
+  const records: Rec[] = [
+    ...sessions.map(s => ({ key: s.gradingId, label: s.legacyDay ? `DAY ${s.legacyDay}` : `${s.from}~${s.to}번`, date: s.date, word: s.word, meaning: s.meaning, review: false })),
+    ...reviews.map(r => ({ key: r.gradingId, label: '🔁 오답 복습', date: r.date, word: r.word, meaning: r.meaning, review: true })),
+  ].sort((a, b) => b.date.localeCompare(a.date))
   const avg = (m: VocaMode) => {
     const xs = sessions.map(s => s[m]).filter((x): x is VocaModeResult => !!x)
     return xs.length ? Math.round(xs.reduce((a, x) => a + x.right / x.total, 0) / xs.length * 100) : null
@@ -114,11 +123,12 @@ export default function VocaPanel({ student }: { student: Student }) {
           )}
         </p>
 
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
           {[
             ['진도', total ? `${doneWords.toLocaleString()} / ${total.toLocaleString()}` : '—'],
             [plan?.doneToday ? '오늘 끝 · 다음' : '오늘 볼 범위',
               plan ? (plan.finished ? '책 끝' : `${plan.from}~${plan.to}번`) : '—'],
+            ['오답 복습 대기', queue ? `${reviewWaiting}개` : '—'],
             ['단어시험 평균', avg('word') == null ? '—' : `${avg('word')}점`],
             ['뜻시험 평균', avg('meaning') == null ? '—' : `${avg('meaning')}점`],
           ].map(([k, v]) => (
@@ -131,11 +141,18 @@ export default function VocaPanel({ student }: { student: Student }) {
         {plan && !plan.finished && plan.pending.length > 0 && !plan.doneToday && plan.todaySession && (
           <p className="mt-2 text-xs font-bold text-amber">오늘 {plan.from}~{plan.to}번에서 {plan.pending.map(m => MODE_LABEL[m].split(' ')[0]).join('·')}이 남았습니다.</p>
         )}
+        {queue && reviewWaiting > 0 && (
+          <p className="mt-2 text-xs text-ink2">
+            🔁 오답 복습: {settings.modes.map(m => `${MODE_LABEL[m].split(' ')[0]} ${queue.waiting[m]}개`).join(' · ')}
+            {settings.modes.some(m => queue.waiting[m] > settings.perDay) && ` — 하루 ${settings.perDay}개씩 나눠 냅니다`}
+          </p>
+        )}
         {others.length > 0 && (
           <p className="mt-2 text-xs text-ink2">이전 단어장 기록: {others.map(o => `${o.name} ${o.n}회`).join(' · ')}</p>
         )}
         <p className="mt-3 text-xs text-ink2">
-          학생은 <b className="text-ink">학생앱 → 영단어</b>에서 봅니다. 단어시험은 자동채점 + 틀린 것 재시험,
+          학생은 <b className="text-ink">학생앱 → 영단어</b>에서 봅니다. <b className="text-ink">틀린 단어는 다음 날부터 오답 복습으로 다시 나오고</b>{' '}
+          처음에 맞히면 빠집니다(시험별로, 하루 분량까지 · 재시험으로 맞힌 실수도 다시 나옴). 단어시험은 자동채점 + 틀린 것 재시험,
           뜻시험은 책의 뜻과 같으면 자동 정답이고 다르면 학생이 책의 뜻과 비교해 직접 표시합니다.
           종이 단어장·시험지는 <b className="text-ink">기본과제 → 일괄 PDF</b>에서 학생마다 다음 범위로 나옵니다.
         </p>
@@ -144,15 +161,15 @@ export default function VocaPanel({ student }: { student: Student }) {
       {err && <div className={`${card} text-sm text-clay`}>단어장을 불러오지 못했습니다 — {err}</div>}
 
       <div className={card}>
-        <b className="text-sm">범위별 기록</b>
-        {sessions.length === 0 ? (
+        <b className="text-sm">시험 기록</b>
+        {records.length === 0 ? (
           <p className="mt-3 text-sm text-ink2">
             아직 본 단어시험이 없습니다.{plan && !plan.finished ? ` 학생앱 영단어에서 ${plan.from}~${plan.to}번부터 시작합니다.` : ''}
           </p>
         ) : (
           <div className="mt-3 grid gap-1.5">
-            {sessions.map(s => {
-              const key = s.gradingId
+            {records.map(s => {
+              const key = s.key
               const on = open === key
               const wrongOf = (x: VocaModeResult | undefined, meaning: boolean) =>
                 (x?.items ?? []).filter(({ r }) => !r.correct || r.careless || (meaning && r.self))
@@ -161,7 +178,7 @@ export default function VocaPanel({ student }: { student: Student }) {
                 <div key={key} className="rounded-xl border border-line/70">
                   <button onClick={() => setOpen(on ? null : key)}
                     className="flex w-full flex-wrap items-center gap-x-3 gap-y-1 px-3 py-2.5 text-left text-sm">
-                    <b className="w-40 shrink-0">{s.legacyDay ? `DAY ${s.legacyDay}` : `${s.from}~${s.to}번`}</b>
+                    <b className="w-40 shrink-0">{s.label}</b>
                     <span className="w-20 shrink-0 text-xs text-ink2">{dateKey(s.date).slice(5)}</span>
                     {chip(s.word, '단어')}
                     {chip(s.meaning, '뜻')}

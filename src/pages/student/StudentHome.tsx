@@ -11,7 +11,7 @@ import { achievementIndex } from '../../lib/achievement'
 import { useStudentSelf } from './StudentShell'
 import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import { computeMonth, MONTHLY_CAP, won } from '../../lib/points'
-import { MODE_LABEL, vocaSettingsOf, vocaWorkbookOf } from '../../lib/voca'
+import { flattenVoca, loadVoca, MODE_LABEL, vocaReviewQueue, vocaSettingsOf, vocaWorkbookOf, type VocaFlat } from '../../lib/voca'
 import {
   STEPS, STEP_LABEL, mondayOf, reviewKey, weekProgress, weekReview,
 } from '../../lib/schoolReview'
@@ -49,22 +49,33 @@ export default function StudentHome() {
 
   // 🔤 오늘 영단어 — 학생이 「오늘 할 일」에서 바로 보게 (명수쌤 2026-08-24 "영단어까지 다 배포").
   //    🎚️ 2026-09-14: 책·하루 분량·시험 종류는 선생님이 학생마다 정한다(voca.ts vocaSettingsOf).
-  //    여기서는 **오늘 끝냈는지와 점수만** 보여 준다 — 단어 파일은 받지 않는다(홈이 느려진다).
+  //    🔁 2026-09-14: 전에 틀린 단어(오답 복습)가 남았으면 **그것부터** 알려 준다.
+  //       대기열을 셀 때 예전 DAY 기록을 단어 번호로 바꾸려면 단어 파일(26~190KB)이 필요해 받아 온다.
+  const vs = useMemo(() => vocaSettingsOf(me), [me])
+  const [vflat, setVflat] = useState<VocaFlat | null>(null)
+  useEffect(() => {
+    let alive = true
+    loadVoca(vs.book.file).then(d => { if (alive) setVflat(flattenVoca(vs.book.file, d)) }).catch(() => {})
+    return () => { alive = false }
+  }, [vs.book.file])
   const voca = useMemo(() => {
-    const s = vocaSettingsOf(me)
+    const s = vs
     const wb = vocaWorkbookOf(workbooks, me.id, s.book)
-    const todays = wb
-      ? gradings.filter(g => g.studentId === me.id && g.workbookId === wb.id && dateKey(g.date) === todayKey())
-      : []
+    const mineG = gradings.filter(g => g.studentId === me.id)
+    const todays = wb ? mineG.filter(g => g.workbookId === wb.id && dateKey(g.date) === todayKey()) : []
     const res = todays.flatMap(g => g.results)
     const has = (pre: string) => res.some(r => r.itemId?.startsWith(pre))
     const doneModes = s.modes.filter(m => (m === 'word' ? has('vw-') || has('voca-') : has('vm-')))
+    const q = vflat && wb ? vocaReviewQueue(mineG, wb.id, vflat, todayKey(), s.perDay) : null
+    const reviewLeft = q ? s.modes.filter(m => q[m].length > 0 && !q.doneToday[m]) : []
     return {
-      s, started: todays.length > 0, allDone: doneModes.length === s.modes.length,
+      s, started: todays.length > 0,
+      reviewCount: q ? reviewLeft.reduce((a, m) => a + q[m].length, 0) : 0,
+      allDone: doneModes.length === s.modes.length && reviewLeft.length === 0,
       left: s.modes.filter(m => !doneModes.includes(m)),
       right: res.filter(r => r.correct).length, total: res.length,
     }
-  }, [workbooks, gradings, me])
+  }, [workbooks, gradings, me, vs, vflat])
 
 
   // 이번주(월~일 — 매쓰플랫 동일) 날짜들
@@ -315,18 +326,24 @@ export default function StudentHome() {
                 ? <span className="rounded-full bg-pine-soft px-2.5 py-1 text-xs font-black text-pine-dark">
                     오늘 단어 끝냈어요 — {voca.right} / {voca.total}
                   </span>
-                : voca.started
+                : voca.reviewCount > 0
                   ? <span className="rounded-full bg-amber-soft px-2.5 py-1 text-xs font-black text-amber">
-                      {voca.left.map(m => MODE_LABEL[m].split(' ')[0]).join('·')}이 남았어요
+                      🔁 전에 틀린 단어 {voca.reviewCount}개부터 다시 봐요
                     </span>
-                  : <span className="text-xs text-ink2">
-                      하루 {voca.s.perDay}개 · {voca.s.modes.map(m => MODE_LABEL[m].split(' ')[0]).join(' + ')}
-                    </span>}
+                  : voca.started
+                    ? <span className="rounded-full bg-amber-soft px-2.5 py-1 text-xs font-black text-amber">
+                        {voca.left.map(m => MODE_LABEL[m].split(' ')[0]).join('·')}이 남았어요
+                      </span>
+                    : <span className="text-xs text-ink2">
+                        하루 {voca.s.perDay}개 · {voca.s.modes.map(m => MODE_LABEL[m].split(' ')[0]).join(' + ')}
+                      </span>}
             </div>
             <Link to="/student/voca"
               className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-black ${
                 voca.allDone ? 'border border-line bg-white text-ink2 hover:border-pine' : 'bg-pine text-paper'}`}>
-              {voca.allDone ? '↻ 다시 보기' : voca.started ? '이어서 보기 →' : `오늘 단어 ${voca.s.perDay}개 시험 보기 →`}
+              {voca.allDone ? '↻ 다시 보기'
+                : voca.reviewCount > 0 ? '오답 복습부터 하기 →'
+                  : voca.started ? '이어서 보기 →' : `오늘 단어 ${voca.s.perDay}개 시험 보기 →`}
             </Link>
           </section>
 

@@ -88,7 +88,7 @@ function ChatPanel({ onClose }: { onClose: () => void }) {
         .map(g => ({
           id: g.id, 학생: st.students.find(s => s.id === g.studentId)?.name ?? '?',
           교재: st.workbooks.find(w => w.id === g.workbookId)?.name ?? '',
-          날짜: g.date, 쪽: g.pageFrom && g.pageTo ? (isVocaGrading(g) ? vocaRangeLabel(g) : `${g.pageFrom}~${g.pageTo}`) : '', 문항수: g.results.length,
+          날짜: g.date, 쪽: isVocaGrading(g) ? vocaRangeLabel(g) : g.pageFrom && g.pageTo ? `${g.pageFrom}~${g.pageTo}` : '', 문항수: g.results.length,
         })),
       route: location.hash || '#/',
     }

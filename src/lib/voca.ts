@@ -281,14 +281,20 @@ export function isMeaningCorrect(mean: string, typed: string): boolean {
 }
 
 // ── 저장 도우미 ───────────────────────────────────────────────────────────────
-export function vocaItemId(mode: VocaMode, no: number): string { return `${mode === 'word' ? 'vw' : 'vm'}-${no}` }
+/** 결과 itemId — 범위 시험 vw-/vm-, 🔁 오답 복습 rw-/rm- */
+export function vocaItemId(mode: VocaMode, no: number, review = false): string {
+  return `${review ? 'r' : 'v'}${mode === 'word' ? 'w' : 'm'}-${no}`
+}
 /** 같은 범위 기록에 다른 시험 결과를 합친다 — 같은 시험을 다시 보면 그 시험 결과만 바꾼다 */
-export function mergeVocaResults(prev: GradeResult[], mode: VocaMode, next: GradeResult[]): GradeResult[] {
-  const pre = mode === 'word' ? 'vw-' : 'vm-'
+export function mergeVocaResults(prev: GradeResult[], mode: VocaMode, next: GradeResult[], review = false): GradeResult[] {
+  const pre = `${review ? 'r' : 'v'}${mode === 'word' ? 'w' : 'm'}-`
   return [...prev.filter(r => !r.itemId?.startsWith(pre) && !r.itemId?.startsWith('voca-')), ...next]
 }
 /** 쪽수 대신 보여 줄 범위 이름 — 예전 기록은 'DAY 5', 새 기록은 '151~180번 단어' */
 export function vocaRangeLabel(g: Pick<Grading, 'pageFrom' | 'pageTo' | 'results'>): string {
+  if (g.pageFrom == null && g.results.some(r => /^r[wm]-/.test(r.itemId ?? ''))) {
+    return `오답 복습 ${new Set(g.results.map(r => (r.itemId ?? '').slice(3))).size}개`
+  }
   if (g.results.some(r => r.itemId?.startsWith('voca-'))) return `DAY ${g.pageFrom}`
   return `${g.pageFrom}~${g.pageTo ?? g.pageFrom}번 단어`
 }
@@ -301,10 +307,80 @@ export async function vocaPlanFor(st: Student, gradings: Grading[], workbooks: W
   const wb = vocaWorkbookOf(workbooks, st.id, settings.book)
   const sessions = vocaSessions(gradings.filter(g => g.studentId === st.id), wb?.id, flat)
   const plan = planVoca(settings, sessions, flat.words.length, today)
-  return { settings, plan, total: flat.words.length, words: plan.finished ? [] : flat.words.slice(plan.from - 1, plan.to) }
+  const review = vocaReviewQueue(gradings.filter(g => g.studentId === st.id), wb?.id, flat, today, settings.perDay)
+  return { settings, plan, review, total: flat.words.length, words: plan.finished ? [] : flat.words.slice(plan.from - 1, plan.to) }
 }
 
 /** 이 채점 기록이 영단어 시험인가 — 쪽수 대신 단어 범위로 보여 줄 때 쓴다 */
 export function isVocaGrading(g: Pick<Grading, 'results'>): boolean {
-  return g.results.some(r => /^(vw|vm|voca)-/.test(r.itemId ?? ''))
+  return g.results.some(r => /^(vw|vm|rw|rm|voca)-/.test(r.itemId ?? ''))
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// 🔁 오답 복습  (2026-09-14 명수쌤 "틀린 단어 다음날 다시 나오게 해줘")
+//
+//   · 틀린 단어는 **다음 날부터** 매일 '오답 복습'으로 다시 나온다. 맞히면 빠지고, 또 틀리면 다음 날 또 나온다.
+//     단어시험 '실수'(2차에 맞힘)도 틀린 것으로 본다 — 처음에 맞혀야 빠진다.
+//   · 시험별로 따로 센다 — 뜻시험에서만 틀렸으면 뜻시험 복습에만 나온다.
+//   · '마지막으로 본 결과'로 판정한다(범위 시험·복습·지난 범위 다시 보기 전부). 오늘 틀린 건 내일부터.
+//   · 쌓이면 새 단어를 못 보므로 **하루 분량만큼만** 낸다(최근에 틀린 것부터). 나머지는 다음 날로.
+//   · 저장: pageFrom 없이 itemId `rw-<번호>`(단어) · `rm-<번호>`(뜻) → 범위 기록(vocaSessions)과 섞이지 않는다.
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export interface VocaItemRef { mode: VocaMode; no: number; review: boolean }
+/** 결과 itemId → 어느 시험의 몇 번 단어인가. 예전 voca-<DAY>-<i> 는 책의 DAY 시작 위치로 환산한다. */
+export function parseVocaItem(itemId: string | undefined, flat: VocaFlat | null): VocaItemRef | null {
+  if (!itemId) return null
+  const m = /^(vw|vm|rw|rm)-(\d+)$/.exec(itemId)
+  if (m) return { mode: m[1][1] === 'w' ? 'word' : 'meaning', no: Number(m[2]), review: m[1][0] === 'r' }
+  const l = /^voca-(\d+)-(\d+)$/.exec(itemId)
+  if (l && flat && flat.dayStart[l[1]] != null) return { mode: 'word', no: flat.dayStart[l[1]] + 1 + Number(l[2]), review: false }
+  return null
+}
+export function isVocaReviewGrading(g: Pick<Grading, 'pageFrom' | 'results'>): boolean {
+  return g.pageFrom == null && g.results.some(r => /^r[wm]-/.test(r.itemId ?? ''))
+}
+
+export interface VocaReviewQueue {
+  word: VocaWordAt[]; meaning: VocaWordAt[]          // 오늘 낼 복습 단어 (하루 분량까지)
+  waiting: Record<VocaMode, number>                  // 오늘 낼 수 있는 전체 (자르기 전)
+  doneToday: Record<VocaMode, boolean>               // 오늘 이 시험의 오답 복습을 이미 했다
+}
+export function vocaReviewQueue(gradings: Grading[], workbookId: string | undefined, flat: VocaFlat, today: string, cap: number): VocaReviewQueue {
+  const doneToday: Record<VocaMode, boolean> = { word: false, meaning: false }
+  if (!workbookId) return { word: [], meaning: [], waiting: { word: 0, meaning: 0 }, doneToday }
+  const last = new Map<string, { ok: boolean; day: string; at: string }>()
+  const mine = gradings.filter(g => g.workbookId === workbookId).sort((a, b) => a.date.localeCompare(b.date))
+  for (const g of mine) {
+    const day = dateKey(g.date)
+    for (const r of g.results) {
+      const ref = parseVocaItem(r.itemId, flat)
+      if (!ref) continue
+      // 단어시험 '실수'(처음 틀리고 곧바로 다시 써서 맞힘)도 처음엔 틀린 것 → 복습에 넣는다. 처음에 맞혀야 빠진다.
+      last.set(`${ref.mode}:${ref.no}`, { ok: r.correct && !r.careless, day, at: g.date })
+      if (ref.review && day === today) doneToday[ref.mode] = true
+    }
+  }
+  const pick = (mode: VocaMode) => [...last.entries()]
+    .filter(([k, v]) => k.startsWith(`${mode}:`) && !v.ok && v.day < today)
+    .map(([k, v]) => ({ no: Number(k.slice(mode.length + 1)), at: v.at }))
+    .sort((a, b) => b.at.localeCompare(a.at) || a.no - b.no)          // 최근에 틀린 것부터
+    .map(x => flat.words[x.no - 1])
+    .filter((x): x is VocaWordAt => !!x)
+  const w = pick('word'), m = pick('meaning')
+  const c = Math.max(1, cap)
+  return { word: w.slice(0, c), meaning: m.slice(0, c), waiting: { word: w.length, meaning: m.length }, doneToday }
+}
+
+export interface VocaReview { gradingId: string; date: string; word?: VocaModeResult; meaning?: VocaModeResult }
+export function vocaReviews(gradings: Grading[], workbookId: string | undefined): VocaReview[] {
+  if (!workbookId) return []
+  return gradings
+    .filter(g => g.workbookId === workbookId && isVocaReviewGrading(g))
+    .map(g => {
+      const pick = (pre: string) => g.results.filter(r => r.itemId?.startsWith(pre))
+        .map(r => ({ no: Number((r.itemId ?? '').slice(pre.length)), r })).sort((a, b) => a.no - b.no)
+      return { gradingId: g.id, date: g.date, word: summarize(pick('rw-')), meaning: summarize(pick('rm-')) }
+    })
+    .sort((a, b) => b.date.localeCompare(a.date))
 }

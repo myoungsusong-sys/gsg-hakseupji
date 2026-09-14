@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { vocaPlanFor } from '../../lib/voca'
+import { vocaPlanFor, type VocaWordAt } from '../../lib/voca'
 import { isStaleChunkError } from '../../lib/staleChunk'
 import { isImageUrl } from '../MathText'
 import type { Problem, Student, Grading, Workbook } from '../../types'
@@ -478,26 +478,51 @@ export async function vocaSheetsFor(student: Student, gradings: Grading[], workb
   Promise<{ study: Sheet[]; tests: Sheet[]; answer: Sheet[] }> {
   const empty = { study: [] as Sheet[], tests: [] as Sheet[], answer: [] as Sheet[] }
   try {
-    const { settings, plan, words } = await vocaPlanFor(student, gradings, workbooks, today)
-    if (!words.length) return empty
+    const { settings, plan, words, review } = await vocaPlanFor(student, gradings, workbooks, today)
     const book = settings.book.name
-    const pairs = words.map(x => [x.w, x.mean] as [string, string])
     const PER = 26
-    const n = Math.ceil(pairs.length / PER)
     const out = { study: [] as Sheet[], tests: [] as Sheet[], answer: [] as Sheet[] }
-    // 🔴 시험지는 **같은 시험끼리** 붙인다 — 장마다 번갈아 넣으면 단어시험 1/2 → 뜻시험 1/2 → 단어시험 2/2 로
-    //    섞여 인쇄된다(검증 화면 실측). 단어시험 전 장 → 뜻시험 전 장 순서로 모은다.
-    const wordT: Sheet[] = [], meanT: Sheet[] = []
-    for (let i = 0; i < pairs.length; i += PER) {
-      const chunk = pairs.slice(i, i + PER)
-      const range = `${plan.from}~${plan.to}번${n > 1 ? ` (${i / PER + 1}/${n})` : ''}`
-      const offset = plan.from - 1 + i
-      out.study.push({ kind: '단어장', student, book, range, offset, words: chunk })
-      if (settings.modes.includes('word')) wordT.push({ kind: '단어', student, book, range, offset, words: chunk })
-      if (settings.modes.includes('meaning')) meanT.push({ kind: '뜻', student, book, range, offset, words: chunk })
-      out.answer.push({ kind: '단어정답', label: book, range, offset, words: chunk })
+    const pairsOf = (xs: VocaWordAt[]) => xs.map(x => [x.w, x.mean] as [string, string])
+    const chunk = (pairs: [string, string][], name: string, base: number) => {
+      const n = Math.ceil(pairs.length / PER)
+      const res: { words: [string, string][]; range: string; offset: number }[] = []
+      for (let i = 0; i < pairs.length; i += PER) {
+        res.push({ words: pairs.slice(i, i + PER), offset: base + i, range: `${name}${n > 1 ? ` (${i / PER + 1}/${n})` : ''}` })
+      }
+      return res
     }
-    out.tests.push(...wordT, ...meanT)
+    // 🔴 시험지는 **같은 시험끼리** 붙인다 — 장마다 번갈아 넣으면 단어시험 1/2 → 뜻시험 1/2 → 단어시험 2/2 로
+    //    섞여 인쇄된다(검증 화면 실측).
+
+    // ① 🔁 오답 복습 — 전에 틀린 단어. 흩어진 단어라 번호는 1부터 다시 매긴다.
+    //    정답지는 **학생마다** 다르다(틀린 단어가 달라서) → 라벨에 학생 이름을 넣어 한 벌로 합쳐지지 않게 한다.
+    const rWord = settings.modes.includes('word') ? review.word : []
+    const rMean = settings.modes.includes('meaning') ? review.meaning : []
+    if (rWord.length || rMean.length) {
+      const union = [...new Map([...rWord, ...rMean].map(x => [x.no, x])).values()].sort((x, y) => x.no - y.no)
+      for (const c of chunk(pairsOf(union), '오답 복습', 0)) out.study.push({ kind: '단어장', student, book, ...c })
+      const rLabel = `${book} · ${student.name}`
+      for (const c of chunk(pairsOf(rWord), '오답 복습 · 단어시험', 0)) {
+        out.tests.push({ kind: '단어', student, book, ...c })
+        out.answer.push({ kind: '단어정답', label: rLabel, ...c })
+      }
+      for (const c of chunk(pairsOf(rMean), '오답 복습 · 뜻시험', 0)) {
+        out.tests.push({ kind: '뜻', student, book, ...c })
+        out.answer.push({ kind: '단어정답', label: rLabel, ...c })
+      }
+    }
+
+    // ② 오늘 새 범위 — 학생마다 자기 다음 범위
+    if (words.length) {
+      const wordT: Sheet[] = [], meanT: Sheet[] = []
+      for (const c of chunk(pairsOf(words), `${plan.from}~${plan.to}번`, plan.from - 1)) {
+        out.study.push({ kind: '단어장', student, book, ...c })
+        if (settings.modes.includes('word')) wordT.push({ kind: '단어', student, book, ...c })
+        if (settings.modes.includes('meaning')) meanT.push({ kind: '뜻', student, book, ...c })
+        out.answer.push({ kind: '단어정답', label: book, ...c })
+      }
+      out.tests.push(...wordT, ...meanT)
+    }
     return out
   } catch { return empty }
 }
