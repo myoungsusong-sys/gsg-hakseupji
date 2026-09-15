@@ -3,7 +3,7 @@ import { HashRouter, Navigate, Outlet, Route, Routes, useNavigate } from 'react-
 import { StoreProvider, useStore } from './lib/store'
 import { SUPABASE_ON } from './lib/supabase'
 import { AuthProvider, useAuth } from './lib/auth'
-import { getLocalStudentId, setLocalStudentId, isStudentEmail, MGMT_KEY } from './lib/role'
+import { getLocalStudentId, setLocalStudentId, isStudentEmail, MGMT_KEY, isTeacherAccountEmail } from './lib/role'
 import Login from './pages/Login'
 import StudentShell from './pages/student/StudentShell'
 import StudentLocalLogin from './pages/student/StudentLocalLogin'
@@ -37,6 +37,7 @@ import StudentMastery from './pages/student/StudentMastery'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
 import TodayRoom from './pages/TodayRoom'
+import Routine from './pages/Routine'
 import DailySet from './pages/DailySet'
 import Students from './pages/Students'
 import MyPage from './pages/MyPage'
@@ -137,7 +138,8 @@ function Gate() {
           {/* ── 선생님 라우트 — 학생 모드는 진입 불가(학생앱으로 리다이렉트) ── */}
           <Route element={<TeacherGate />}>
           <Route element={<Layout />}>
-            <Route path="/" element={<Navigate to="/prep/worksheet" replace />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/routine" element={<Page><Routine /></Page>} />
             <Route path="/help" element={<Help />} />
 
             {/* 수업 준비 (매쓰플랫 사이드바 구조 동일) */}
@@ -214,6 +216,13 @@ function ParentOnlyApp() {
 }
 
 // 학생 모드(학생 계정 세션 또는 로컬 학생 세션)는 선생님 라우트에 못 들어간다
+// ✅ 첫 화면 — 강사 계정(t-…@teacher.gsg.app)은 「오늘 할 일」부터, 원장은 수업 준비.
+//    (명수쌤 2026-09-15: 강사가 뭘 할지 몰라 기다리기만 한다 → 들어오자마자 체크리스트를 본다)
+function Home() {
+  const { email } = useAuth()
+  return <Navigate to={isTeacherAccountEmail(email) ? '/routine' : '/prep/worksheet'} replace />
+}
+
 function TeacherGate() {
   const { email } = useAuth()
   const studentMode = SUPABASE_ON ? isStudentEmail(email) : !!getLocalStudentId()

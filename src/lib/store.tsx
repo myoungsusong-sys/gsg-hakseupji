@@ -50,6 +50,8 @@ interface Persisted {
   branches: Branch[]
   ttChecks: Record<string, true>
   reviewChecks: Record<string, true>
+  /** ✅ 선생님 하루 루틴 체크 — 키 `강사키|날짜|항목id`, 호출 기록 `강사키|날짜|call|학생id` (lib/routine.ts) */
+  routineChecks: Record<string, true>
   /** 🪜 유형 마스터 진행상태 — 키는 `학생id|유형id`. 기기를 바꿔도 이어서 올라간다 */
   masteries: Record<string, MasteryState>
   /** 🏫 학교별 교과서 — `학교명` → 과목 → 교과서(출판사·저자). 국어·영어는 학교마다 다르다 */
@@ -77,6 +79,7 @@ const EMPTY: Persisted = {
   branches: [],
   ttChecks: {},
   reviewChecks: {},
+  routineChecks: {},
   masteries: {},
   schoolBooks: {},
   pointEntries: [],
@@ -144,6 +147,8 @@ interface Store extends Persisted {
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
   // 🏫 학교 복습 체크 (문제풀이·오답작성) — 키는 lib/schoolReview.ts reviewKey()
   toggleReviewCheck: (key: string) => void
+  // ✅ 선생님 루틴 체크 켜기/끄기 (같은 값이면 저장 안 함 — 호출 때마다 부르는 곳이 있다)
+  setRoutineCheck: (key: string, on: boolean) => void
   saveMastery: (studentId: string, typeId: string, st: MasteryState) => void
   setSchoolBook: (school: string, subject: string, book: string) => void
   // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
@@ -239,6 +244,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     branches: keep('branches', r.branches ?? [], f.settings),
     ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
     reviewChecks: keep('reviewChecks', r.reviewChecks ?? {}, f.settings),
+    routineChecks: keep('routineChecks', r.routineChecks ?? {}, f.settings),
     masteries: keep('masteries', r.masteries ?? {}, f.settings),
     schoolBooks: keep('schoolBooks', r.schoolBooks ?? {}, f.settings),
     pointEntries: keep('pointEntries', r.pointEntries ?? [], f.settings),
@@ -280,7 +286,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
-    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, masteries: s.masteries, schoolBooks: s.schoolBooks,
+    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, routineChecks: s.routineChecks, masteries: s.masteries, schoolBooks: s.schoolBooks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
@@ -708,6 +714,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     saveMastery: (studentId, typeId, st) => {
       const next = { ...stateRef.current.masteries, [`${studentId}|${typeId}`]: st }
       set(s => ({ ...s, masteries: next })); cloud.setSetting('masteries', next)
+    },
+    setRoutineCheck: (key, on) => {
+      const cur = stateRef.current.routineChecks
+      if (!!cur[key] === on) return
+      const next = { ...cur }
+      if (on) next[key] = true; else delete next[key]
+      set(s => ({ ...s, routineChecks: next })); cloud.setSetting('routineChecks', next)
     },
     toggleReviewCheck: key => {
       const cur = stateRef.current.reviewChecks

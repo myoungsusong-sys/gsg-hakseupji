@@ -11,6 +11,8 @@ import TodayPanel from '../components/lesson/TodayPanel'
 import AnalysisPanel from '../components/lesson/AnalysisPanel'
 import ReportPanel from '../components/lesson/ReportPanel'
 import VocaPanel from '../components/lesson/VocaPanel'
+import VocaClassPanel from '../components/lesson/VocaClassPanel'
+import EngLessonTest from '../components/lesson/EngLessonTest'
 import CounselPanel from '../components/lesson/CounselPanel'
 import SchoolReviewPanel from '../components/lesson/SchoolReviewPanel'
 import GroupPanel from '../components/lesson/GroupPanel'
@@ -44,6 +46,9 @@ function gradeSortKey(g: string): number {
   return LEVEL_ORDER[m[1]] * 10 + Number(m[2])
 }
 
+// 📊 영단어 전체 현황 — 반·학년이 아니라 재원생 전체를 한 그룹으로 본다(과목 영어에서만 버튼이 보인다)
+const ALL_GROUP = '__all__'
+
 export default function Lesson() {
   const { students, synced } = useStore()
   const active = students.filter(s => s.active)
@@ -62,6 +67,8 @@ export default function Lesson() {
     if (!tabs.some(t => t.key === tab)) setTab(tabs[0].key)
   }, [tabs, tab])
   const [groupBy, setGroupBy] = useState<'학년' | '반'>('학년')
+  // 📗 과목 영어의 반 화면 — 영단어 현황 | 수업 연계 테스트
+  const [engView, setEngView] = useState<'voca' | 'test'>('voca')
   const [q, setQ] = useState('')
   const [closed, setClosed] = useState<Set<string>>(new Set())
 
@@ -73,6 +80,7 @@ export default function Lesson() {
   }, [active, studentId, groupName])
 
   const student = groupName ? null : active.find(s => s.id === studentId) ?? null
+  const groupLabel = groupName === ALL_GROUP ? '전체 학생' : groupName
 
   // 좌측 학생 패널: 학년/반 그룹 아코디언 + 이름 검색 (매쓰플랫 동일)
   const groups = useMemo(() => {
@@ -99,6 +107,7 @@ export default function Lesson() {
   // 선택된 그룹의 학생들 (검색 필터와 무관하게 전체)
   const groupStudents = useMemo(() => {
     if (!groupName) return []
+    if (groupName === ALL_GROUP) return active
     return active.filter(s => (groupBy === '학년' ? shortGrade(s.grade) : (s.klass?.trim() || '미배정')) === groupName)
   }, [active, groupBy, groupName])
 
@@ -131,13 +140,21 @@ export default function Lesson() {
         <div className="border-b border-line px-4 py-3">
           <div className="mb-2 flex items-center gap-2 text-sm font-black text-ink">
             <span className="grid h-6 w-6 place-items-center rounded-full bg-pine-soft text-pine-dark">{groupName ? '👥' : '👤'}</span>
-            {groupName ? `${groupName} 수업` : student ? `${student.name} 학생 수업` : '수업'}
+            {groupName ? `${groupLabel} 수업` : student ? `${student.name} 학생 수업` : '수업'}
           </div>
           {/* [학생앱으로 이동하기] (매쓰플랫 패널 헤더 버튼 — 새 탭으로 학생앱 열기) */}
           <button onClick={() => window.open(`${location.origin}/#/student`, '_blank')}
             className="mb-2.5 w-full rounded-lg border border-line py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-pine-dark">
             학생앱으로 이동하기 ↗
           </button>
+          {/* 📊 과목 영어 — 반마다 [전체]를 누르면 그 반 영단어 현황, 이 버튼은 재원생 전체 */}
+          {subject === '영어' && (
+            <button onClick={() => setGroupName(ALL_GROUP)}
+              className={`mb-2.5 w-full rounded-lg border py-1.5 text-xs font-bold ${groupName === ALL_GROUP
+                ? 'border-pine bg-pine text-paper' : 'border-pine/40 text-pine-dark hover:border-pine hover:bg-pine-soft'}`}>
+              🔤 영단어 전체 현황
+            </button>
+          )}
           <div className="flex rounded-lg bg-paper2 p-0.5 text-xs font-bold">
             {(['학년', '반'] as const).map(g => (
               <button key={g} onClick={() => { setGroupBy(g); setGroupName(null) }}
@@ -197,7 +214,23 @@ export default function Lesson() {
       <main>
         {groupName && (
           groupStudents.length > 0
-            ? <GroupPanel key={`${groupBy}-${groupName}`} label={groupName} students={groupStudents} />
+            ? subject === '영어'
+              // 🔴 과목 영어의 반 화면은 영단어 현황이다(학생 화면도 영어는 영어단어 탭 하나뿐). 이름을 누르면 그 학생 영어단어 탭으로.
+              ? (
+                <>
+                  <div className="mb-4 flex gap-1.5">
+                    {([['voca', '🔤 영단어 현황'], ['test', '📝 수업 연계 테스트']] as const).map(([k, t]) => (
+                      <button key={k} onClick={() => setEngView(k)}
+                        className={`rounded-lg border px-3 py-1.5 text-sm font-bold ${engView === k ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink2 hover:border-pine'}`}>{t}</button>
+                    ))}
+                  </div>
+                  {engView === 'voca'
+                    ? <VocaClassPanel key={`${groupBy}-${groupName}`} label={groupLabel ?? ''} students={groupStudents}
+                        onOpen={id => { setStudentId(id); setGroupName(null); setTab('voca') }} />
+                    : <EngLessonTest key={`${groupBy}-${groupName}`} label={groupLabel ?? ''} students={groupStudents} />}
+                </>
+              )
+              : <GroupPanel key={`${groupBy}-${groupName}`} label={groupLabel ?? ''} students={groupStudents} />
             : <p className="p-10 text-center text-sm text-ink2">이 그룹에 학생이 없습니다.</p>
         )}
         {student && (

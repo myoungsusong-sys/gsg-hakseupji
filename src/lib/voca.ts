@@ -384,3 +384,62 @@ export function vocaReviews(gradings: Grading[], workbookId: string | undefined)
     })
     .sort((a, b) => b.date.localeCompare(a.date))
 }
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// 📊 반 전체 영단어 현황  (2026-09-15 명수쌤 "반 전체 영단어 현황 화면 만들어줘")
+//   학생 한 명의 오늘 상태를 한 줄로 요약한다 — 화면(VocaClassPanel)은 이것만 그린다.
+//   · state   : done = 오늘 볼 범위의 모든 시험 + 오늘 낼 오답 복습까지 끝 / partial = 뭔가 했지만 남음 / none = 오늘 기록 없음
+//               (책을 다 끝냈고 복습도 없으면 오늘 할 게 없으니 done)
+//   · openWrong: 아직 못 맞힌 단어(시험 합) — 오늘 틀린 것까지 포함(= 내일 복습 대기)
+//   · week    : 최근 7일(오래된 날 → 오늘) 단어시험 기록 여부 — 책을 바꿨어도 모든 단어장 기록으로 센다
+// ═══════════════════════════════════════════════════════════════════════════════
+export type VocaDayState = 'done' | 'partial' | 'none'
+export interface VocaStatus {
+  settings: VocaSettings
+  total: number; done: number; plan: VocaPlan
+  state: VocaDayState
+  rangeLeft: VocaMode[]          // 오늘 범위에서 남은 시험
+  reviewLeft: number             // 오늘 남은 오답 복습 단어 수
+  todayRight: number; todayTotal: number
+  openWrong: number
+  week: { day: string; did: boolean }[]
+  recentRate: number | null      // 최근 범위 시험 5회 정답률(%) — 단어·뜻 합
+  lastDate: string | null
+  started: boolean               // 지금 단어장에 기록이 있나
+}
+const shiftDay = (day: string, n: number) => { const d = new Date(`${day}T12:00:00`); d.setDate(d.getDate() + n); return dateKey(d) }
+
+export function vocaStatusOf(st: Pick<Student, 'id' | 'grade' | 'voca'>, gradings: Grading[], workbooks: Workbook[], flat: VocaFlat, today: string): VocaStatus {
+  const settings = vocaSettingsOf(st)
+  const wb = vocaWorkbookOf(workbooks, st.id, settings.book)
+  const mine = gradings.filter(g => g.studentId === st.id)
+  const sessions = vocaSessions(mine, wb?.id, flat)
+  const total = flat.words.length
+  const plan = planVoca(settings, sessions, total, today)
+  const queue = vocaReviewQueue(mine, wb?.id, flat, today, settings.perDay)
+  const hasToday = sessions.some(s => dateKey(s.date) === today)
+  const rangeLeft: VocaMode[] = !hasToday ? (plan.finished ? [] : [...settings.modes]) : plan.doneToday ? [] : plan.pending
+  const reviewLeft = settings.modes.reduce((a, m) => a + (queue.doneToday[m] ? 0 : queue[m].length), 0)
+
+  const allVoca = mine.filter(g => isVocaGrading(g))
+  const bookG = wb ? allVoca.filter(g => g.workbookId === wb.id) : []
+  const todayRes = bookG.filter(g => dateKey(g.date) === today).flatMap(g => g.results)
+  const left = rangeLeft.length + reviewLeft
+  const state: VocaDayState = left === 0 ? 'done' : todayRes.length ? 'partial' : 'none'
+
+  const next = vocaReviewQueue(mine, wb?.id, flat, shiftDay(today, 1), Number.MAX_SAFE_INTEGER)
+  const openWrong = settings.modes.reduce((a, m) => a + next.waiting[m], 0)
+
+  const days = new Set(allVoca.map(g => dateKey(g.date)))
+  const week = Array.from({ length: 7 }, (_, i) => { const day = shiftDay(today, i - 6); return { day, did: days.has(day) } })
+  const recent = [...sessions].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5)
+  let r = 0, t = 0
+  for (const s of recent) for (const m of [s.word, s.meaning]) if (m) { r += m.right; t += m.total }
+
+  return {
+    settings, total, done: Math.min(total, nextWordNo(sessions) - 1), plan, state, rangeLeft, reviewLeft,
+    todayRight: todayRes.filter(x => x.correct).length, todayTotal: todayRes.length,
+    openWrong, week, recentRate: t ? Math.round(r / t * 100) : null,
+    lastDate: [...days].sort().pop() ?? null, started: bookG.length > 0,
+  }
+}

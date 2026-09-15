@@ -49,6 +49,7 @@ export interface CloudData {
   branches: Branch[]                           // 지점 (settings 'branches') — 당진·내포 등
   ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
   reviewChecks: Record<string, true>           // 🏫 학교 복습 체크 (settings 'reviewChecks', 키=`학생|날짜|과목|solve|wrong`)
+  routineChecks: Record<string, true>          // ✅ 선생님 하루 루틴 체크 (settings 'routineChecks', 키=`강사키|날짜|항목id`)
   masteries: Record<string, MasteryState>      // 🪜 유형 마스터 진행상태 (settings 'masteries', 키=`학생id|유형id`)
   schoolBooks: Record<string, Record<string, string>>  // 🏫 학교별 교과서 (settings 'schoolBooks', 키=학교명 → 과목 → 교과서)
   pointEntries: PointEntry[]                   // 포인트 수동/학부모 항목 (settings 'pointEntries')
@@ -147,6 +148,7 @@ export async function loadAll(): Promise<(CloudData & { __failed: LoadFail }) | 
     branches: (settingsMap.get('branches') as Branch[]) ?? [],
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
     reviewChecks: (settingsMap.get('reviewChecks') as Record<string, true>) ?? {},
+    routineChecks: (settingsMap.get('routineChecks') as Record<string, true>) ?? {},
     masteries: (settingsMap.get('masteries') as CloudData['masteries']) ?? {},
     schoolBooks: (settingsMap.get('schoolBooks') as CloudData['schoolBooks']) ?? {},
     pointEntries: (settingsMap.get('pointEntries') as PointEntry[]) ?? [],
@@ -235,6 +237,7 @@ export const cloud = {
       local.branches.length ? this.setSetting('branches', local.branches) : Promise.resolve(),
       Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
       Object.keys(local.reviewChecks ?? {}).length ? this.setSetting('reviewChecks', local.reviewChecks) : Promise.resolve(),
+      Object.keys(local.routineChecks ?? {}).length ? this.setSetting('routineChecks', local.routineChecks) : Promise.resolve(),
       Object.keys(local.masteries ?? {}).length ? this.setSetting('masteries', local.masteries) : Promise.resolve(),
       Object.keys(local.schoolBooks ?? {}).length ? this.setSetting('schoolBooks', local.schoolBooks) : Promise.resolve(),
       (local.pointEntries ?? []).length ? this.setSetting('pointEntries', local.pointEntries) : Promise.resolve(),

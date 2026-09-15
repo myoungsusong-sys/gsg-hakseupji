@@ -192,6 +192,7 @@ export default function Layout() {
             <BrandLogo />
           </button>
           <nav className="flex gap-1">
+            <NavLink to="/routine" className={topTab}>✅ 오늘 할 일</NavLink>
             <NavLink to="/prep/worksheet" className={topTab}>수업 준비</NavLink>
             <NavLink to="/lesson" className={topTab}>수업</NavLink>
             <NavLink to="/daily" className={topTab}>기본과제</NavLink>

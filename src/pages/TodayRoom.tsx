@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useStore } from '../lib/store'
+import { useAuth } from '../lib/auth'
+import { routineCheckKey, routineKeyOf } from '../lib/routine'
 import { isVocaGrading, vocaRangeLabel } from '../lib/voca'
 import { dateKey, todayKey } from '../lib/dates'
 import { subjectOfWorkbook, useSubject, type Subject } from '../lib/subject'
@@ -55,7 +57,8 @@ const ago = (ms: number) => {
 const CALL_TEXTS = ['앞으로 나오세요', '틀린 문제 같이 봐요', '질문 있으면 지금 오세요', '풀이 확인하러 오세요']
 
 export default function TodayRoom() {
-  const { students, gradings, workbooks, worksheets, teachers, academyProfile, branches, branchScope, multiBranch } = useStore()
+  const { students, gradings, workbooks, worksheets, teachers, academyProfile, branches, branchScope, multiBranch, setRoutineCheck } = useStore()
+  const { email } = useAuth()
   // 지점을 골라 본 상태면 제목 앞에 지점명을 박는다 — 어느 교실을 보고 있는지가 늘 보여야 한다
   const branchLabel = multiBranch
     ? <><b className="text-pine">{branches.find(b => b.id === branchScope)?.name ?? '전체 지점'}</b> · </>
@@ -147,6 +150,8 @@ export default function TodayRoom() {
       state: 'calling', at: Date.now(), expiresAt: Date.now() + 15 * 60 * 1000,
     }
     setCalls(p => [...p.filter(x => x.studentId !== st.id), c])   // 즉시 반영
+    // ✅ 오늘 할 일 「먼저 부르기」의 자동 확인 근거 — 누가 몇 명을 불렀는지 남는다
+    setRoutineCheck(routineCheckKey(routineKeyOf(teachers, email), todayKey(), `call|${st.id}`), true)
     await pushCall(c)
   }
   async function done(st: Student) {
