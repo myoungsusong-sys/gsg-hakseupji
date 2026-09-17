@@ -4,6 +4,7 @@ import { useStore } from '../../lib/store'
 import { todayKey } from '../../lib/dates'
 import { dDayLabel, dayLabel, examPhase, examRows } from '../../lib/exam'
 import ExamForm from '../ExamForm'
+import ExamRangeAssign from './ExamRangeAssign'
 import type { SchoolExam, Student } from '../../types'
 
 // ── 📅 학생 시험 일정 (수업 준비 › 내신 대비 맨 위) ──────────────────────────────
@@ -15,6 +16,7 @@ export default function ExamSchedulePanel() {
   const today = todayKey()
   const [editing, setEditing] = useState<{ st: Student; exam?: SchoolExam } | null>(null)
   const [showAll, setShowAll] = useState(false)
+  const [assign, setAssign] = useState<{ st: Student; exam: SchoolExam } | null>(null)
   const rows = useMemo(() => examRows(students.filter(s => s.active), schoolExams, worksheets, assignments, today),
     [students, schoolExams, worksheets, assignments, today])
   const withExam = rows.filter(r => r.exam)
@@ -33,7 +35,7 @@ export default function ExamSchedulePanel() {
       </div>
       <p className="mb-3 text-xs text-ink2">
         학생이 학생앱 <b className="text-ink">학습 홈 › 🏫 학교 시험</b>에서 직접 넣습니다. 선생님도 여기서 넣거나 고칠 수 있어요.
-        대비 학습지는 아래 내신관에서 [출제하기]한 것(제목 '내신대비')을 최근 3주 기준으로 셉니다.
+        대비 학습지는 [📝 이 범위로 출제]나 내신관 [출제하기]로 나간 것(제목 '내신대비')을 최근 3주 기준으로 셉니다.
       </p>
 
       {editing && (
@@ -72,7 +74,11 @@ export default function ExamSchedulePanel() {
                     <td className="px-3 py-2 text-xs">{examPhase(e, today).label}</td>
                     <td className={`px-3 py-2 text-right font-bold ${r.sheets === 0 && (r.dDay ?? 99) <= 14 ? 'text-clay' : 'text-ink'}`}>{r.sheets}장</td>
                     <td className="px-3 py-2 text-right">
-                      <button onClick={() => setEditing({ st: r.st, exam: e })} className="text-xs font-bold text-pine hover:underline">고치기</button>
+                      <div className="flex flex-col items-end gap-1">
+                        <button onClick={() => setAssign({ st: r.st, exam: e })}
+                          className="whitespace-nowrap rounded-lg bg-pine px-2.5 py-1 text-xs font-bold text-paper hover:brightness-110">📝 이 범위로 출제</button>
+                        <button onClick={() => setEditing({ st: r.st, exam: e })} className="text-xs font-bold text-pine hover:underline">고치기</button>
+                      </div>
                     </td>
                   </tr>
                 )
@@ -93,7 +99,8 @@ export default function ExamSchedulePanel() {
           <span className="ml-1">(이름을 누르면 대신 넣을 수 있어요)</span>
         </div>
       )}
-      <p className="mt-2 text-xs text-ink2">내신 대비 학습지를 내려면 아래 <b className="text-ink">내신관</b>에서 학년·범위를 골라 [출제하기]. 학교별 기출은 <Link to="/prep/school-test" className="font-bold text-pine underline">학교별 기출</Link>.</p>
+      {assign && <ExamRangeAssign key={assign.exam.id} st={assign.st} exam={assign.exam} onClose={() => setAssign(null)} />}
+      <p className="mt-2 text-xs text-ink2">학생이 적은 범위로 바로 내려면 행의 <b className="text-ink">📝 이 범위로 출제</b>. 단원별로 골라 내려면 아래 <b className="text-ink">내신관</b>에서 학년·범위를 골라 [출제하기]. 학교별 기출은 <Link to="/prep/school-test" className="font-bold text-pine underline">학교별 기출</Link>.</p>
     </section>
   )
 }
