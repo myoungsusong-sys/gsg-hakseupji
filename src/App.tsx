@@ -15,6 +15,7 @@ import StudentSolve from './pages/student/StudentSolve'
 import StudentResult from './pages/student/StudentResult'
 import StudentWorkbooks from './pages/student/StudentWorkbooks'
 import StudentVoca from './pages/student/StudentVoca'
+import StudentExams from './pages/student/StudentExams'
 import StudentChallenge from './pages/student/StudentChallenge'
 import StudentLectures from './pages/student/StudentLectures'
 import Layout from './components/Layout'
@@ -126,6 +127,7 @@ function Gate() {
             <Route path="result/:wsId" element={<StudentResult />} />
             <Route path="workbooks" element={<StudentWorkbooks />} />
             <Route path="voca" element={<StudentVoca />} />
+            <Route path="exams" element={<StudentExams />} />
             <Route path="mastery" element={<StudentMastery />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />

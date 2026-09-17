@@ -632,3 +632,18 @@ export type BugReport = {
   resolution?: string             // shipped·declined 사유
   shippedVersion?: string         // 반영된 changelog ts
 }
+
+// ── 🏫 학교 시험 일정 — 학생이 학생앱에서 직접 넣는다 (2026-09-17 명수쌤 "학생들이 입력하게 해줘") ──
+//    시험마다 한 장. 날짜별 과목과 과목별 범위. D-day·대비 계획은 lib/exam.ts 가 계산한다.
+//    저장은 settings 'schoolExams' (반·상담과 같은 그릇). 선생님도 내신 대비 화면에서 고칠 수 있다.
+export interface SchoolExamDay { date: string; subjects: string[] }   // date = YYYY-MM-DD
+export interface SchoolExam {
+  id: string
+  studentId: string
+  name: string                          // '2학기 중간고사' 등 (lib/exam.ts EXAM_NAMES 또는 직접 입력)
+  days: SchoolExamDay[]                 // 날짜 오름차순
+  ranges?: Record<string, string>       // 과목 → 시험 범위 (예: '3단원~5단원, p.60~120')
+  memo?: string
+  by: 'student' | 'teacher'
+  updatedAt: string                     // ISO
+}

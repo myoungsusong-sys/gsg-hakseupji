@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import ExamSchedulePanel from '../components/prep/ExamSchedulePanel'
 import { Link, useNavigate } from 'react-router-dom'
 import SubTabs from '../components/SubTabs'
 import { useStore, uid } from '../lib/store'
@@ -31,6 +32,8 @@ export default function NaesinPrep() {
   const [tab, setTab] = useState('hall')
   return (
     <div>
+      {/* 📅 학생이 넣은 시험 일정 — D-day 순, 대비 학습지 유무 (2026-09-17) */}
+      <ExamSchedulePanel />
       <SubTabs tabs={TABS} value={tab} onChange={setTab} />
       {tab === 'hall' && <Hall onGo={setTab} />}
       {tab === 'textbook' && <SetTable mode="textbook" />}

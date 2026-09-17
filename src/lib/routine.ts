@@ -1,7 +1,8 @@
-import type { DailyNote, Grading, Student, Teacher, Worksheet } from '../types'
+import type { Assignment, DailyNote, Grading, SchoolExam, Student, Teacher, Worksheet } from '../types'
 import { dateKey } from './dates'
 import { isTeacherAccountEmail, teacherByEmail } from './role'
 import { isVocaGrading } from './voca'
+import { examRows } from './exam'
 
 // ── ✅ 선생님 하루 루틴(체크리스트) ─────────────────────────────────────────────
 //
@@ -37,6 +38,9 @@ export const ROUTINE: RoutineItem[] = [
   { id: 'room-open', when: '수업 전', label: '오늘 교실 화면 켜 두기',
     why: '수업 내내 이 화면이 누가 막혔는지 알려 준다. 닫아 두면 아무것도 모른다.',
     link: '/today', linkLabel: '오늘 교실' },
+  { id: 'exam-prep', when: '수업 전', label: '시험 2주 이내 학생 내신 대비 학습지 챙기기',
+    why: '학생이 넣은 시험 일정이 D-14 안이면 그 범위의 내신 대비 학습지가 나가 있어야 한다. 시험 전날 허둥대면 늦다.',
+    link: '/prep/school-exam', linkLabel: '수업 준비 › 내신 대비 › 학생 시험 일정' },
   { id: 'voca-none', when: '수업 전', label: '단어시험 안 본 학생 확인 → 오면 바로 보게 하기',
     why: '단어는 매일 봐야 붙는다. 하루 빠지면 다음 날 두 배가 된다.',
     link: '/lesson', linkLabel: '수업 › 영어 › 영단어 전체 현황', subjects: ['영어'] },
@@ -88,6 +92,8 @@ export interface RoutineCtx {
   gradings: Grading[]
   dailyNotes: DailyNote[]
   routineChecks: Record<string, true>
+  schoolExams?: SchoolExam[]
+  assignments?: Assignment[]
 }
 export interface AutoStatus { done?: boolean; note?: string }
 
@@ -100,6 +106,13 @@ export function autoStatus(item: RoutineItem, teacherKey: string, ctx: RoutineCt
     case 'daily-made': {
       const n = ctx.worksheets.filter(w => !w.deletedAt && (w.tags ?? []).includes('기본과제') && dateKey(w.createdAt) === today).length
       return { done: n > 0, note: n ? `오늘 ${n}장 만들어짐` : '아직 안 만듦' }
+    }
+    case 'exam-prep': {
+      const rows = examRows(active, ctx.schoolExams ?? [], ctx.worksheets, ctx.assignments ?? [], today)
+      const soon = rows.filter(r => r.exam && (r.dDay ?? 99) <= 14)
+      if (!soon.length) return { done: true, note: '2주 이내 시험인 학생 없음' }
+      const miss = soon.filter(r => r.sheets === 0)
+      return { done: miss.length === 0, note: `2주 이내 ${soon.length}명 · 대비 학습지 없는 학생 ${miss.length}명${miss.length ? ` (${miss.slice(0, 4).map(r => r.st.name).join('·')}${miss.length > 4 ? ' 외' : ''})` : ''}` }
     }
     case 'voca-none': {
       const did = new Set(todayG.filter(isVocaGrading).map(g => g.studentId))

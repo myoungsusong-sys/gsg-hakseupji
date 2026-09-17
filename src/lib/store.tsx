@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type {
-  AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet,
+  AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet, SchoolExam,
 } from '../types'
 import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
@@ -52,6 +52,8 @@ interface Persisted {
   reviewChecks: Record<string, true>
   /** ✅ 선생님 하루 루틴 체크 — 키 `강사키|날짜|항목id`, 호출 기록 `강사키|날짜|call|학생id` (lib/routine.ts) */
   routineChecks: Record<string, true>
+  /** 🏫 학교 시험 일정 — 학생이 직접 입력(settings 'schoolExams', lib/exam.ts) */
+  schoolExams: SchoolExam[]
   /** 🪜 유형 마스터 진행상태 — 키는 `학생id|유형id`. 기기를 바꿔도 이어서 올라간다 */
   masteries: Record<string, MasteryState>
   /** 🏫 학교별 교과서 — `학교명` → 과목 → 교과서(출판사·저자). 국어·영어는 학교마다 다르다 */
@@ -80,6 +82,7 @@ const EMPTY: Persisted = {
   ttChecks: {},
   reviewChecks: {},
   routineChecks: {},
+  schoolExams: [],
   masteries: {},
   schoolBooks: {},
   pointEntries: [],
@@ -149,6 +152,9 @@ interface Store extends Persisted {
   toggleReviewCheck: (key: string) => void
   // ✅ 선생님 루틴 체크 켜기/끄기 (같은 값이면 저장 안 함 — 호출 때마다 부르는 곳이 있다)
   setRoutineCheck: (key: string, on: boolean) => void
+  // 🏫 학교 시험 일정 — 같은 id면 교체(학생·선생님 모두 부른다)
+  saveSchoolExam: (e: SchoolExam) => void
+  removeSchoolExam: (id: string) => void
   saveMastery: (studentId: string, typeId: string, st: MasteryState) => void
   setSchoolBook: (school: string, subject: string, book: string) => void
   // 포인트 — 수동 가감(선생님)·학부모 용돈 등록, 월말 정산 저장
@@ -245,6 +251,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
     reviewChecks: keep('reviewChecks', r.reviewChecks ?? {}, f.settings),
     routineChecks: keep('routineChecks', r.routineChecks ?? {}, f.settings),
+    schoolExams: keep('schoolExams', r.schoolExams ?? [], f.settings),
     masteries: keep('masteries', r.masteries ?? {}, f.settings),
     schoolBooks: keep('schoolBooks', r.schoolBooks ?? {}, f.settings),
     pointEntries: keep('pointEntries', r.pointEntries ?? [], f.settings),
@@ -286,7 +293,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
-    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, routineChecks: s.routineChecks, masteries: s.masteries, schoolBooks: s.schoolBooks,
+    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, routineChecks: s.routineChecks, schoolExams: s.schoolExams, masteries: s.masteries, schoolBooks: s.schoolBooks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
@@ -714,6 +721,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     saveMastery: (studentId, typeId, st) => {
       const next = { ...stateRef.current.masteries, [`${studentId}|${typeId}`]: st }
       set(s => ({ ...s, masteries: next })); cloud.setSetting('masteries', next)
+    },
+    saveSchoolExam: e => {
+      const next = [...stateRef.current.schoolExams.filter(x => x.id !== e.id), e]
+        .sort((a, b) => (a.days[0]?.date ?? '').localeCompare(b.days[0]?.date ?? ''))
+      set(s => ({ ...s, schoolExams: next })); cloud.setSetting('schoolExams', next)
+    },
+    removeSchoolExam: id => {
+      const next = stateRef.current.schoolExams.filter(x => x.id !== id)
+      set(s => ({ ...s, schoolExams: next })); cloud.setSetting('schoolExams', next)
     },
     setRoutineCheck: (key, on) => {
       const cur = stateRef.current.routineChecks

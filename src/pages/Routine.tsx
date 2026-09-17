@@ -21,7 +21,7 @@ import {
 const md = (day: string) => `${Number(day.slice(5, 7))}월 ${Number(day.slice(8, 10))}일 (${weekdayOf(day)})`
 
 export default function Routine() {
-  const { students, worksheets, gradings, dailyNotes, teachers, routineChecks, setRoutineCheck, academyProfile } = useStore()
+  const { students, worksheets, gradings, dailyNotes, teachers, routineChecks, setRoutineCheck, academyProfile, schoolExams, assignments } = useStore()
   const { email } = useAuth()
   const today = todayKey()
   const me = teacherByEmail(teachers, email)
@@ -29,8 +29,8 @@ export default function Routine() {
   const isOwner = !isTeacherAccountEmail(email)
   const myName = me?.name ?? (isOwner ? (academyProfile.teacherName?.trim() || '원장') : '선생님')
   const ctx: RoutineCtx = useMemo(
-    () => ({ today, students, worksheets, gradings, dailyNotes, routineChecks }),
-    [today, students, worksheets, gradings, dailyNotes, routineChecks])
+    () => ({ today, students, worksheets, gradings, dailyNotes, routineChecks, schoolExams, assignments }),
+    [today, students, worksheets, gradings, dailyNotes, routineChecks, schoolExams, assignments])
   const items = useMemo(() => routineItemsFor(me), [me])
   const prog = routineProgress(myKey, items, ctx)
   const callsOf = (key: string) => Object.keys(routineChecks).filter(k => k.startsWith(`${key}|${today}|call|`)).length

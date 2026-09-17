@@ -12,6 +12,7 @@ import { useStudentSelf } from './StudentShell'
 import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import { computeMonth, MONTHLY_CAP, won } from '../../lib/points'
 import { flattenVoca, loadVoca, MODE_LABEL, vocaReviewQueue, vocaSettingsOf, vocaWorkbookOf, type VocaFlat } from '../../lib/voca'
+import { dDayLabel, dayLabel, examPhase, examState, examTasks, upcomingExamOf } from '../../lib/exam'
 import {
   STEPS, STEP_LABEL, mondayOf, reviewKey, weekProgress, weekReview,
 } from '../../lib/schoolReview'
@@ -33,7 +34,7 @@ const TOP_LEVEL = 6   // 스마일
 // 우: 배정물 리스트 패널 — 탭(전체/숙제/학습지/교재) + 카드 목록(독립 스크롤)
 export default function StudentHome() {
   const me = useStudentSelf()
-  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries, reviewChecks, toggleReviewCheck, saveMastery } = useStore()
+  const { assignments, worksheets, gradings, workbooks, wbItems, studentAppConfig, allStudents: students, lecturePlans, ttChecks, toggleTTCheck, pointEntries, reviewChecks, toggleReviewCheck, saveMastery, schoolExams } = useStore()
   // 📅 오늘 시간표 — 선생님이 시간표 페이지에서 자동 생성한 주간 시간표의 오늘 요일 블록
   const ttToday = useMemo(() => {
     const tt = students.find(s => s.id === me.id)?.timetable
@@ -227,6 +228,9 @@ export default function StudentHome() {
           {/* 💰 이번 달 저금통 — 공부한 만큼 쌓이고, 월말에 현금으로 받는다 */}
           <PiggyBank studentId={me.id} timetable={students.find(s => s.id === me.id)?.timetable}
             ttChecks={ttChecks} gradings={gradings} pointEntries={pointEntries} today={today} />
+
+          {/* 🏫 학교 시험 — 학생이 직접 넣은 일정으로 D-day 와 오늘 할 대비 과제 (lib/exam.ts) */}
+          <ExamCard studentId={me.id} exams={schoolExams} today={today} />
 
           {/* 📅 오늘 시간표 — 선생님이 짜준 주간 시간표의 오늘 블록 */}
           {ttToday.length > 0 && (
@@ -620,5 +624,49 @@ function ReviewRow({ r, meId, pv, onToggle, showDate }: {
       })}
       {r.done && <span className="ml-auto text-xs font-black text-pine">끝!</span>}
     </div>
+  )
+}
+
+// ── 🏫 학교 시험 카드 — 일정이 없으면 넣으라고, 있으면 D-day · 날짜별 과목 · 지금 시기의 과목별 할 일 ──
+//    명수쌤 2026-09-17: "학생들 시험일정을 올리면 거기에 맞게 준비할 수 있도록 · 학생들이 입력하게 해줘"
+function ExamCard({ studentId, exams, today }: { studentId: string; exams: import('../../types').SchoolExam[]; today: string }) {
+  const exam = upcomingExamOf(exams, studentId, today)
+  if (!exam) {
+    return (
+      <section className="rounded-2xl border border-line bg-white p-5">
+        <div className="flex flex-wrap items-center gap-3">
+          <h2 className="font-black">🏫 학교 시험</h2>
+          <span className="text-sm text-ink2">시험 날짜와 과목을 넣어 두면 D-day에 맞춰 할 일을 알려 줘요.</span>
+          <div className="grow" />
+          <Link to="/student/exams" className="rounded-xl bg-pine px-4 py-2 text-sm font-black text-paper">시험 일정 입력하기 →</Link>
+        </div>
+      </section>
+    )
+  }
+  const { dDay, state } = examState(exam, today)
+  const phase = examPhase(exam, today)
+  const tasks = examTasks(exam, today)
+  return (
+    <section className={`rounded-2xl border p-5 ${state === 'during' ? 'border-clay/50 bg-red-50/40' : dDay <= 7 ? 'border-amber/50 bg-amber-soft/30' : 'border-line bg-white'}`}>
+      <div className="mb-2 flex flex-wrap items-baseline gap-2">
+        <h2 className="font-black">🏫 {exam.name}</h2>
+        <span className={`rounded-full px-2.5 py-1 text-sm font-black ${state === 'during' ? 'bg-clay text-white' : dDay <= 7 ? 'bg-amber text-white' : 'bg-pine-soft text-pine-dark'}`}>{dDayLabel(dDay)}</span>
+        <span className="text-xs text-ink2">{exam.days.map(dayLabel).join(' → ')}</span>
+        <div className="grow" />
+        <Link to="/student/exams" className="text-xs font-bold text-pine hover:underline">일정 보기·고치기 →</Link>
+      </div>
+      <div className="rounded-xl bg-white/70 p-3">
+        <div className="text-xs font-black">지금은 「{phase.label}」 시기 — {phase.hint}</div>
+        <ul className="mt-1.5 grid gap-1 text-sm sm:grid-cols-2">
+          {tasks.slice(0, 6).map((t, i) => (
+            <li key={i} className="flex min-w-0 items-center gap-2">
+              <b className="w-14 shrink-0 truncate">{t.subject}</b>
+              <span className="min-w-0 grow truncate" title={t.text}>{t.text}</span>
+              {t.link && <Link to={t.link} className="shrink-0 text-xs font-bold text-pine hover:underline">{t.linkLabel} →</Link>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )
 }
