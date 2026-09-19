@@ -229,7 +229,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "베이직쎈 미적분1|좋은책신사고", name: "베이직쎈 미적분1", publisher: "좋은책신사고", grade: "미적분Ⅰ", course: "h-mi1", count: 1120 },
   { key: "쎈 미적분1|좋은책신사고", name: "쎈 미적분1", publisher: "좋은책신사고", grade: "미적분Ⅰ", course: "h-mi1", count: 1099 },
   { key: "개념 해결의 법칙 미적분Ⅰ|천재교육", name: "개념 해결의 법칙 미적분Ⅰ", publisher: "천재교육", grade: "미적분Ⅰ", course: "h-mi1", count: 1062 },
-  { key: "마플교과서 미적분Ⅰ|희망에듀", name: "마플교과서 미적분Ⅰ", publisher: "희망에듀", grade: "미적분Ⅰ", course: "h-mi1", count: 1029, noAnswer: true },
+  { key: "마플교과서 미적분Ⅰ|희망에듀", name: "마플교과서 미적분Ⅰ", publisher: "희망에듀", grade: "미적분Ⅰ", course: "h-mi1", count: 1029 },   // 정답 채움 2026-09-20(마플 빠른정답 · 수식 깨진 값은 자기채점)
   { key: "풍산자반복수학 미적분1|지학사", name: "풍산자반복수학 미적분1", publisher: "지학사", grade: "미적분Ⅰ", course: "h-mi1", count: 1008 },
   { key: "각 GAK 미적분Ⅰ|NE능률", name: "각 GAK 미적분Ⅰ", publisher: "NE능률", grade: "미적분Ⅰ", course: "h-mi1", count: 988, noAnswer: true },
   { key: "유형+내신 고쟁이 미적분1|이투스북", name: "유형+내신 고쟁이 미적분1", publisher: "이투스북", grade: "미적분Ⅰ", course: "h-mi1", count: 953 },
