@@ -217,7 +217,7 @@ export const WB_MATCH_BOOKS: WbMatchBook[] = [
   { key: "디딤돌수학 개념기본 미적분1|디딤돌", name: "디딤돌수학 개념기본 미적분1", publisher: "디딤돌", grade: "미적분Ⅰ", course: "h-mi1", count: 1945, noAnswer: true },
   { key: "수매씽 문제 기본서 미적분1|동아출판", name: "수매씽 문제 기본서 미적분1", publisher: "동아출판", grade: "미적분Ⅰ", course: "h-mi1", count: 1884, noAnswer: true },
   { key: "수력충전 미적분1|수경출판사", name: "수력충전 미적분1", publisher: "수경출판사", grade: "미적분Ⅰ", course: "h-mi1", count: 1795 },
-  { key: "마플시너지 미적분Ⅰ|희망에듀", name: "마플시너지 미적분Ⅰ", publisher: "희망에듀", grade: "미적분Ⅰ", course: "h-mi1", count: 1768, noAnswer: true },
+  { key: "마플시너지 미적분Ⅰ|희망에듀", name: "마플시너지 미적분Ⅰ", publisher: "희망에듀", grade: "미적분Ⅰ", course: "h-mi1", count: 1768 },   // 정답 채움 2026-09-20(마플 학습자료실 빠른정답 PDF)
   // 별책 — 문제편 해설에 실린 「내신연계문제」 693문항. 정답표 있음(2026-08-21 추출·표본 84 눈대조).
   //   문제편과 번호 체계가 달라 별도 교재로 둔다. 쪽 = 단원(1~3)×100 + 그 단원 인쇄 쪽.
   { key: "마플시너지 미적분Ⅰ 내신연계문제|희망에듀", name: "마플시너지 미적분Ⅰ 내신연계문제", publisher: "희망에듀", grade: "미적분Ⅰ", course: "h-mi1", count: 693 },
