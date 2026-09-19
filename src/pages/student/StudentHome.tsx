@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import MasteryQueue from '../../components/MasteryQueue'
+import MasteryQueue, { RecentWrongShortcut } from '../../components/MasteryQueue'
 import { stateToStart } from '../../lib/wrongTypes'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Grading } from '../../types'
@@ -316,8 +316,12 @@ export default function StudentHome() {
           )}
 
           {/* 🪜 정복할 유형 — 교재·학습지에서 틀린 유형이 저절로 줄을 선다. 누르면 사다리로 (2026-09-08) */}
-          <MasteryQueue studentId={me.id} compact limit={5}
-            onPick={(r) => { saveMastery(me.id, r.typeId, stateToStart(r, me.id)); nav(`/student/mastery?type=${r.typeId}`) }} />
+          {/* 📕 방금 채점한 오답 — 선생님이 채점판에 오답을 넣거나 학생이 자가채점하면 바로 뜬다 (2026-09-19) */}
+          <RecentWrongShortcut studentId={me.id} disabled={pv.on} disabledTitle={PREVIEW_LOCK_TITLE}
+            onGo={(ids) => { if (!pv.on) nav(`/student/mastery?grading=${ids.join(',')}`) }} />
+
+          <MasteryQueue studentId={me.id} compact limit={5} disabled={pv.on} disabledTitle={PREVIEW_LOCK_TITLE}
+            onPick={(r) => { if (pv.on) return; saveMastery(me.id, r.typeId, stateToStart(r, me.id)); nav(`/student/mastery?type=${r.typeId}`) }} />
 
           {/* 🔤 오늘 영단어 — 선생님이 정한 책·하루 분량·시험 종류로 매일 이어서 본다 */}
           <section className="rounded-2xl border border-line bg-white p-6">

@@ -12,6 +12,8 @@ import MathText from '../MathText'
 import ZoomImage from '../ZoomImage'
 import DrillModal, { type DrillWrong, type PagePicker } from './DrillModal'
 import StudentBookDialog from './StudentBookDialog'
+import { useNavigate } from 'react-router-dom'
+import { wrongTypesOf } from '../../lib/wrongTypes'
 
 // 정답 표시 (매쓰플랫 채점판 동일): 객관식 숫자→①~⑤, 수식(LaTeX)→KaTeX 렌더, 그 외 원문
 const CIRCLED = ['①', '②', '③', '④', '⑤']
@@ -120,7 +122,8 @@ function lvSetScroll(sid: string, wb: string, top: number) {
 }
 
 export default function GradePanel({ student }: { student: Student }) {
-  const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems } = useStore()
+  const { workbooks, wbItems, gradings, upsertGrading, addWorkbook, setWBItems, problems, masteries } = useStore()
+  const nav = useNavigate()
   const [subject] = useSubject()
   // 이 학생에게 배정된 교재만 (매쓰플랫: 학생 교재 = 배정분) — 현재 과목 모드에 맞는 교재만
   // (과목 = 명시 subject > course로 유도 > 없으면 수학. 과학 창에서 수학 교재가 뜨지 않도록)
@@ -220,6 +223,15 @@ export default function GradePanel({ student }: { student: Student }) {
   }
 
   const inRange = useMemo(() => items.filter(i => i.page >= from && i.page <= to), [items, from, to])
+  // 📕 이 범위와 겹치는 채점 기록에서 **아직 정복 안 된 오답 유형** (2026-09-19 명수쌤: "교재 오답을 입력하면 바로 그 유형만 승강제로")
+  const rangeWrong = useMemo(() => {
+    if (!wb) return { ids: [] as string[], rows: [] }
+    const ids = gradings
+      .filter(g => g.studentId === student.id && g.workbookId === wb.id &&
+        (g.pageFrom ?? -1) <= to && from <= (g.pageTo ?? g.pageFrom ?? -1))
+      .map(g => g.id)
+    return { ids, rows: ids.length ? wrongTypesOf({ studentId: student.id, gradings, wbItems, problems, masteries, gradingIds: ids, pageRange: [from, to] }) : [] }
+  }, [gradings, wbItems, problems, masteries, student.id, wb, from, to])
 
   // ── 실시간 자동 저장 (매쓰플랫 방식) ────────────────────────
   // 문항 클릭마다 디바운스 저장. 같은 날·같은 범위 채점은 한 기록에 덮어쓰기(upsert).
@@ -606,6 +618,20 @@ export default function GradePanel({ student }: { student: Student }) {
             {saveState === 'retry' && <span className="font-bold text-clay">⚠ 아직 안 올라감 — 다시 보내는 중</span>}
           </span>
         </span>
+        {/* 📕 이 범위에서 틀린 문제의 유형만 바로 승강제로 — 학생 앱 홈에도 같은 줄이 바로 뜬다 (2026-09-19) */}
+        {rangeWrong.rows.length > 0 && (
+          <button type="button"
+            onClick={() => {
+              flushRef.current()
+              // 0.9초 저장 대기 중이던 오늘 채점도 싣는다 — 방금 매긴 오답이 빠지지 않게 (리뷰 F8)
+              const ids = [...new Set([...rangeWrong.ids, ...(gidRef.current ? [gidRef.current] : [])])]
+              nav(`/prep/mastery?student=${encodeURIComponent(student.id)}&grading=${ids.join(',')}&p=${from}-${to}`)
+            }}
+            title="이 범위 채점에서 틀린 문제의 유형만 개념→기본→표준→심화→최상으로 정복합니다. 학생 앱 홈 「방금 채점한 오답」에도 바로 뜹니다."
+            className="rounded-lg border-2 border-pine bg-pine-soft px-3 py-1 text-xs font-black text-pine-dark hover:brightness-105">
+            🪜 오답 {rangeWrong.rows.length}유형 → 유형 정복
+          </button>
+        )}
         {inRange.length > 0 && (
           <span className="text-xs font-semibold tabular-nums">
             채점 {live.marked}문항 · <b className="text-pine">정답 {live.correct}</b> · <b className="text-clay">오답 {live.wrong}</b> · <b className="text-amber">모름 {live.unknown}</b>

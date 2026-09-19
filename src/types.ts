@@ -326,6 +326,7 @@ export interface GradeResult {
   // ── AI 1차 채점 + 선생님 승인 (자동채점 불가 문항: 서술형·이미지정답·답없음 과학) ──
   workImg?: string       // 학생 풀이 이미지 (축소 JPEG dataURL — 문제이미지+필기 합성 or 사진)
   pending?: 'ai' | 'teacher'   // 'ai'=AI 판정 대기 · 'teacher'=선생님 승인 대기 · 없으면 확정
+  at?: string            // 이 표시(정답·오답·모름)가 **처음 생긴 시각**(ISO). 다시 저장해도 표시가 같으면 이어받는다 — 정복 판정용 (lib/wrongTypes carryResultAt)
   ai?: { verdict: boolean | null; reason: string; confidence: 'high' | 'mid' | 'low'; at: string }
   approvedAt?: string    // 선생님 확정 시각 (승인/수정 완료)
   // ── 서술형 점수제(부분점수) + 첨삭 ──

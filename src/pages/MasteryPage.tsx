@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { useSubject, SUBJECTS, type Subject } from '../lib/subject'
 import { CURRICULA } from '../data/curriculum'
@@ -7,8 +7,8 @@ import MasteryRunner from '../components/MasteryRunner'
 import MasteryPrint from '../components/MasteryPrint'
 import { newMastery, type MasteryState } from '../lib/mastery'
 import type { Problem } from '../types'
-import MasteryQueue, { typeNameOf } from '../components/MasteryQueue'
-import { stateToStart, type WrongTypeRow } from '../lib/wrongTypes'
+import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQueue'
+import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
 
 /**
@@ -63,8 +63,18 @@ function courseOfType(typeId: string): string | null {
 }
 
 export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
-  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents } = useStore()
+  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems } = useStore()
   const [params] = useSearchParams()
+  const nav = useNavigate()
+  // 📕 채점 단위 정복 (`?grading=<채점id>[,<채점id>]`) — 그 채점의 **오답 유형만** 줄 세워 바로 사다리로.
+  //    들어오면 첫 유형이 자동으로 열리고, 하나를 정복하면 다음 유형으로 넘어간다 (2026-09-19 명수쌤 지시).
+  const scopeIds = useMemo(() => (params.get('grading') ?? '').split(',').map((x) => x.trim()).filter(Boolean), [params])
+  const scoped = scopeIds.length > 0
+  // 쪽 범위(`&p=12-12`) — 학생 쪽 화면·선생님 채점 범위에서 들어오면 그 쪽의 오답만 (리뷰 F7)
+  const pageRange = useMemo<[number, number] | undefined>(() => {
+    const m = /^(\d+)(?:-(\d+))?$/.exec(params.get('p') ?? '')
+    return m ? [Number(m[1]), Number(m[2] ?? m[1])] : undefined
+  }, [params])
   // 선생님이 특정 학생의 사다리를 열어 본다 (`?student=<학생id>`) — 학생 대신 확인·시연할 때 (2026-09-08)
   const studentId = params.get('student') ?? studentIdProp
   const viewingName = params.get('student') ? (allStudents.find((s) => s.id === studentId)?.name ?? studentId) : null
@@ -110,6 +120,9 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   // 이게 먼저 돌면 링크로 연 유형이 풀려 목록으로 튄다(2026-09-05 실물에서 발견).
   useEffect(() => {
     const cur = CURRICULA.find((x) => x.id === course)
+    // 커리큘럼 **밖** 과정(색인으로 찾은 h-s1 등)에서 사다리를 여는 중이면 건드리지 않는다 —
+    // 안 그러면 과목이 바뀌는 순간 방금 연 유형이 닫혀 자동 시작이 조용히 취소된다 (2026-09-19 리뷰 F5)
+    if (!cur && typeId) return
     if ((cur?.subject ?? '수학') !== subject) return      // 아직 과목이 안 맞았다 — 기다린다
     if (courses.length && !courses.some((c) => c.id === course)) {
       setCourse(courses[0].id); setTypeId(null)
@@ -155,12 +168,54 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     ?? (typeId && pool.length ? { id: typeId, name: `유형 ${typeId}`, course, sub: '' } : undefined)
   const saved = typeId ? masteries[`${studentId}|${typeId}`] : undefined
 
-  // 🪜 정복 대기 큐에서 누름 — 과정을 그 유형의 것으로 맞추고, 시작층(강등이면 한 층 아래)을 저장한 뒤 연다 (2026-09-08)
+  // 🪜 정복 대기 큐에서 누름 — 과정을 그 유형의 것으로 맞추고, 시작층(강등이면 한 층 아래)으로 연다 (2026-09-08)
+  //    ⚠️ 여기서 바로 저장하지 않는다. 풀 문제가 없는 유형(📭)까지 「진행중」으로 저장돼 줄 맨 위로 올라가,
+  //       정복하고 닫을 때마다 그 📭 로 되돌아왔다 (2026-09-19 리뷰 F3). 러너가 뜰 때 onChange 가 저장한다.
+  const [startOverride, setStartOverride] = useState<Record<string, MasteryState>>({})
   const pickFromQueue = (r: WrongTypeRow) => {
     const c = typeNameOf(r.typeId)?.course ?? courseOfType(r.typeId)
     if (c) setCourse(c)
-    saveMastery(studentId, r.typeId, stateToStart(r, studentId))
+    setStartOverride((m) => ({ ...m, [r.typeId]: stateToStart(r, studentId) }))
     setTypeId(r.typeId)
+  }
+
+  // 📕 범위 모드 — 범위가 아닐 때는 계산하지 않는다(아래 전체 큐가 따로 계산한다, 리뷰 F6)
+  const scopedRows = useWrongTypes(studentId, 30, scoped ? scopeIds : undefined, { pageRange, skip: !scoped })
+  const scopeLoadedNow = scoped && scopeLoaded(scopeIds, gradings.filter((g) => g.studentId === studentId), wbItems)
+  // 정답표를 못 불러왔거나 다른 학생 채점이면 영원히 준비가 안 된다 — 8초 뒤엔 있는 것으로 진행 (리뷰 F4)
+  const [scopeTimedOut, setScopeTimedOut] = useState(false)
+  useEffect(() => {
+    if (!scoped || scopeLoadedNow) return
+    const t = setTimeout(() => setScopeTimedOut(true), 8000)
+    return () => clearTimeout(t)
+  }, [scoped, scopeLoadedNow])
+  const scopeReady = scopeLoadedNow || scopeTimedOut
+  // 풀 문제가 없는 유형(📭)은 이번 범위에서 건너뛴다 — 🎉 판정·자동 다음에서 뺀다 (리뷰 F3)
+  const [skipped, setSkipped] = useState<Set<string>>(() => new Set())
+  const liveRows = useMemo(() => scopedRows.filter((r) => !skipped.has(r.typeId)), [scopedRows, skipped])
+  const autoStarted = useRef(false)
+  useEffect(() => {
+    if (!scoped || autoStarted.current || typeId || !scopeReady || !liveRows.length) return
+    autoStarted.current = true
+    pickFromQueue(liveRows[0])
+  }, [scoped, scopeReady, liveRows, typeId])   // eslint-disable-line react-hooks/exhaustive-deps
+  // 사다리의 마지막 상태 — 닫힐 때 「정복하고 닫았나」를 알아야 다음 유형으로 넘길지 정한다
+  const lastState = useRef<MasteryState | null>(null)
+  const nextScoped = (after: string | null) => liveRows.find((r) => r.typeId !== after) ?? null
+  // 📭 확인 — 색인·풀이 다 실린 뒤에도 문항이 0이면 이 범위에서 빼고 다음 유형으로
+  const [idxLoaded, setIdxLoaded] = useState(() => typeCourse !== null)
+  useEffect(() => { loadTypeCourse().then(() => setIdxLoaded(true)) }, [])
+  useEffect(() => {
+    if (!scoped || !typeId || !idxLoaded || pool.length || !poolLoaded.has(course)) return
+    if ((courseOfType(typeId) ?? course) !== course) return          // 아직 그 유형의 과정으로 안 옮겼다 — 기다린다
+    setSkipped((s) => (s.has(typeId) ? s : new Set(s).add(typeId)))
+    const nx = liveRows.find((r) => r.typeId !== typeId)
+    if (nx) pickFromQueue(nx); else setTypeId(null)
+  }, [scoped, typeId, idxLoaded, pool.length, poolLoaded, course])   // eslint-disable-line react-hooks/exhaustive-deps
+  const leaveScope = () => {
+    const sp = new URLSearchParams(params); sp.delete('grading'); sp.delete('p')
+    const qs = sp.toString()
+    nav(`${location.hash.replace(/^#/, '').split('?')[0]}${qs ? `?${qs}` : ''}`, { replace: true })
   }
 
   if (typeId && base && row) {
@@ -172,9 +227,18 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       <MasteryRunner
         key={typeId}
         typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId}
-        initial={saved ?? newMastery(studentId, typeId, 2)}
-        onChange={(st: MasteryState) => saveMastery(studentId, typeId, st)}
-        onClose={() => setTypeId(null)}
+        initial={startOverride[typeId] ?? saved ?? newMastery(studentId, typeId, 2)}
+        onChange={(st: MasteryState) => {
+          lastState.current = st; saveMastery(studentId, typeId, st)
+          if (startOverride[typeId]) setStartOverride((m) => { const n = { ...m }; delete n[typeId]; return n })
+        }}
+        onClose={() => {
+          const mastered = !!lastState.current?.mastered
+          lastState.current = null
+          // 📕 채점 단위 정복 중이면 — 정복하고 닫은 경우 다음 오답 유형을 바로 연다
+          if (scoped && mastered) { const nx = nextScoped(typeId); if (nx) { pickFromQueue(nx); return } }
+          setTypeId(null)
+        }}
       />
     )
   }
@@ -195,10 +259,18 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
             교재에서는 틀린 유형이지만 연습할 문항이 아직 들어오지 않았어요. 선생님께 알려 주세요.
             <span className="ml-1 text-xs">(유형 {typeId})</span>
           </p>
-          <button type="button" onClick={() => setTypeId(null)}
-            className="mt-4 rounded-lg border border-line px-4 py-2 text-sm hover:bg-paper2">
-            목록으로
-          </button>
+          <div className="mt-4 flex justify-center gap-2">
+            <button type="button" onClick={() => setTypeId(null)}
+              className="rounded-lg border border-line px-4 py-2 text-sm hover:bg-paper2">
+              목록으로
+            </button>
+            {scoped && nextScoped(typeId) && (
+              <button type="button" onClick={() => pickFromQueue(nextScoped(typeId)!)}
+                className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper">
+                다음 오답 유형 →
+              </button>
+            )}
+          </div>
         </div>
       </div>
     )
@@ -219,6 +291,39 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         틀리면 한 단계 내려가 다시 이해시키고, 연속 두 문제를 맞히면 올라간다.
       </p>
 
+      {/* 📕 채점 단위 정복 — 이번 채점의 오답 유형만. 전체 목록은 숨긴다(「오답 문제 유형만」이 요구사항) */}
+      {scoped ? (
+        <div className="mt-4 grid gap-3">
+          {!scopeReady ? (
+            <div className="rounded-2xl border border-line bg-white p-6 text-center text-sm text-ink2">채점한 문제의 유형을 찾는 중…</div>
+          ) : liveRows.length ? (
+            <MasteryQueue studentId={studentId} gradingIds={scopeIds} rows={liveRows} onPick={pickFromQueue} />
+          ) : !scopeLoadedNow && !scopedRows.length ? (
+            <div className="rounded-2xl border border-line bg-white p-6 text-center">
+              <div className="text-3xl">🔎</div>
+              <p className="mt-2 font-black text-ink">채점한 문제의 유형을 찾지 못했어요</p>
+              <p className="mt-1 text-sm text-ink2">교재 정답표를 불러오지 못했거나, 다른 학생의 채점일 수 있어요. 선생님께 알려 주세요.</p>
+            </div>
+          ) : scopedRows.length ? (
+            <div className="rounded-2xl border border-line bg-white p-6 text-center">
+              <div className="text-3xl">📭</div>
+              <p className="mt-2 font-black text-ink">남은 {scopedRows.length}유형은 아직 연습할 문제가 없어요</p>
+              <p className="mt-1 text-sm text-ink2">선생님께 알려 주세요. 나머지 오답 유형은 모두 정복했어요.</p>
+            </div>
+          ) : (
+            <div className="rounded-2xl border-2 border-pine bg-pine-soft/60 p-6 text-center">
+              <div className="text-3xl">🎉</div>
+              <p className="mt-2 font-black text-ink">이번 채점에서 틀린 유형을 모두 정복했어요</p>
+              <p className="mt-1 text-sm text-ink2">같은 유형을 나중에 또 틀리면 한 층 아래(심화)부터 다시 줄을 섭니다.</p>
+            </div>
+          )}
+          <button type="button" onClick={leaveScope}
+            className="justify-self-start text-xs font-bold text-ink2 underline-offset-2 hover:underline">
+            ← 전체 유형 목록 보기
+          </button>
+        </div>
+      ) : (
+      <>
       {/* 🪜 교재·학습지 오답이 만든 줄 — 여기서 누르면 바로 사다리 (2026-09-08 명수쌤: 문제집 오답도 승강제 유형정복에) */}
       <div className="mt-4"><MasteryQueue studentId={studentId} onPick={pickFromQueue} /></div>
 
@@ -268,6 +373,8 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         {!shown.length && !!courses.length &&
           <p className="px-4 py-6 text-center text-sm text-ink2">해당하는 유형이 없습니다.</p>}
       </div>
+      </>
+      )}
     </div>
   )
 }

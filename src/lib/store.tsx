@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { carryResultAt } from './wrongTypes'
 import type { ReactNode } from 'react'
 import type {
   AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet, SchoolExam,
@@ -547,6 +548,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       : state.students.filter(s => !s.branchId || s.branchId === branchScope),
     [state.students, multiBranch, branchScope])
 
+  const mergedWbItems = useMemo(() => mergeWbItems(state.wbItems, derivedWbItems), [state.wbItems, derivedWbItems])
+
   const store: Store = {
     ...state,
     synced,
@@ -556,7 +559,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     branchScope, multiBranch,
     setBranchScope: setBranch,
     ensureCourse,
-    wbItems: mergeWbItems(state.wbItems, derivedWbItems),   // 수동 등록분이 매칭 교재 파생분을 덮어씀
+    wbItems: mergedWbItems,   // 수동 등록분이 매칭 교재 파생분을 덮어씀 (memo — 렌더마다 새 배열이면 아래 화면들 memo 가 전부 무효)
     // 자체 시드 + 직접 등록분(mf 정적분 제외 — 풀 파일이 대체) + 과정별 매쓰플랫 풀 (위에서 memo)
     problems,
     poolLoaded,
@@ -865,11 +868,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       set(s => ({ ...s, sheetTemplates: next })); cloud.setSetting('sheetTemplates', next)
     },
     saveGrading: g => {
-      const rec = { ...g, id: uid('gr') }
+      const rec = carryResultAt({ ...g, id: uid('gr') }, stateRef.current.gradings)
       set(s => ({ ...s, gradings: [rec, ...s.gradings] }))
       return cloud.upsert(cloud.T.gradings, rec.id, rec)
     },
-    upsertGrading: g => {
+    upsertGrading: g0 => {
+      // ⏱ 문항별 「그 표시가 처음 생긴 시각」을 박는다 — 이어서 채점해도 정복한 유형이 되살아나지 않게 (2026-09-19 리뷰 F1)
+      const g = carryResultAt(g0, stateRef.current.gradings)
       const exists = stateRef.current.gradings.some(x => x.id === g.id)
       set(s => ({ ...s, gradings: exists ? s.gradings.map(x => x.id === g.id ? g : x) : [g, ...s.gradings] }))
       return cloud.upsert(cloud.T.gradings, g.id, g)

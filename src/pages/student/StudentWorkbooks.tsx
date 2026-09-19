@@ -10,7 +10,9 @@ import { loadLectures, hasLectures, type Lecture, type LectureUnit } from '../..
 import MathText from '../../components/MathText'
 import ZoomImage from '../../components/ZoomImage'
 import VideoModal from '../../components/VideoModal'
-import { useStudentSelf } from './common'
+import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
+import { useNavigate } from 'react-router-dom'
+import { wrongTypesOf } from '../../lib/wrongTypes'
 import { fileToScaledJpeg, scanAnswersFromPhoto, type ScanResult } from '../../lib/scanAnswers'
 
 // ── 교재 탭 (매쓰플랫 학생앱 교재 구조) ──
@@ -504,7 +506,9 @@ export default function StudentWorkbooks() {
 // ── 교재 상세 — 페이지별 채점 (보기 / 직접 풀고 채점) ────────────────
 function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const me = useStudentSelf()
-  const { wbItems, gradings, upsertGrading, studentAppConfig: cfg } = useStore()
+  const { wbItems, gradings, upsertGrading, studentAppConfig: cfg, problems, masteries } = useStore()
+  const nav = useNavigate()
+  const pv = usePreview()
   const [onlyWrong, setOnlyWrong] = useState(false)
   const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
   const [mode, setMode] = useState<'view' | 'grade'>('view')   // 보기 / 채점(직접 풀기)
@@ -578,6 +582,14 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
     }
     return bestPage
   })
+  // 📕 이 쪽을 채점한 기록(선생님·학생 모두)에서 **아직 정복 안 된 오답 유형** — 결과 화면에서 바로 사다리로 (2026-09-19)
+  const pageWrong = useMemo(() => {
+    const ids = gradings
+      .filter((g) => g.studentId === me.id && g.workbookId === wb.id &&
+        (g.pageFrom ?? -1) <= page && page <= (g.pageTo ?? g.pageFrom ?? -1))
+      .map((g) => g.id)
+    return { ids, rows: ids.length ? wrongTypesOf({ studentId: me.id, gradings, wbItems, problems, masteries, gradingIds: ids, pageRange: [page, page] }) : [] }
+  }, [gradings, wbItems, problems, masteries, me.id, wb.id, page])
 
   const pageIdx = Math.max(0, pages.indexOf(page))
   const pageItems = items.filter(i => i.page === page)
@@ -701,6 +713,13 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
         )}
         {mode === 'view' && !saveFailed && savedAt && (
           <span className="text-xs font-bold text-pine">✓ 채점 저장됨 {savedAt}</span>
+        )}
+        {mode === 'view' && pageWrong.rows.length > 0 && (
+          <button onClick={() => { if (!pv.on) nav(`/student/mastery?grading=${pageWrong.ids.join(',')}&p=${page}-${page}`) }}
+            disabled={pv.on} title={pv.on ? PREVIEW_LOCK_TITLE : '이 쪽에서 지금 틀린 문제의 유형만 승강제로 정복합니다'}
+            className="rounded-lg border-2 border-pine bg-pine-soft px-4 py-2 text-sm font-black text-pine-dark hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-60">
+            🪜 이 쪽 오답 {pageWrong.rows.length}유형 바로 정복 →
+          </button>
         )}
         {mode === 'view' && (
           <button onClick={() => { setMode('grade'); setAnswers({}); setOnlyWrong(false) }}
