@@ -3,7 +3,7 @@ import { useStore, uid } from '../../lib/store'
 import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
 import { pickProblems } from '../../lib/select'
-import { pickDrillProblems, weakTypes, wrongByType } from '../../lib/drill'
+import { pickDrillProblems, weakTypes, wrongByType, wrongDiffByType } from '../../lib/drill'
 import { CURRICULA, curriculumFor } from '../../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS, DIFFS, DIFF_LABEL } from '../../types'
 import type { DailyConfig, Diff, Problem, Student } from '../../types'
@@ -181,8 +181,9 @@ export default function TodayPanel({ student }: { student: Student }) {
       if (mode === 'twin' || mode === 'both') {
         const weak = weakTypes(wrongByType(student.id, recent, wbItems))
         if (weak.length) {
+          const dOf = wrongDiffByType(student.id, recent, wbItems, problems, worksheets)
           const drill = pickDrillProblems(
-            weak.map(w => ({ typeId: w.typeId })),
+            weak.map(w => ({ typeId: w.typeId, diff: dOf.get(w.typeId) })),
             problems,
             { twinPer: 1, similarPer: 1, diffShift: 0, typeCap: 2, excludeIds: used },
           )

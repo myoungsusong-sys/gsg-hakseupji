@@ -2,6 +2,7 @@ import type { Problem } from '../../types'
 import { answerUnit, mathEqual } from '../../lib/mathAnswer'
 import { answerParts, joinAnswerParts, splitAnswerParts } from '../../lib/answers'
 import MathAnswerField, { type KeypadLevel } from './MathAnswerField'
+import ZoomImage from '../ZoomImage'
 
 // ⚠️ 학습지 풀이 화면(StudentSolve.tsx)이 쓰는 입력 컴포넌트다.
 //    (아래 옛 주석은 "어디서도 import 안 된다"고 하지만 낡았다 — 2026-07-31 확인)
@@ -54,7 +55,12 @@ export default function AnswerInput({ p, value, onChange, level = '중등' }: {
           <div className="mb-1 text-[10px] text-ink2">정답 — 학생 답과 대조 후 표시</div>
           {isImgAnswer(p.answer)
             ? <img src={p.answer} alt="정답" className="max-h-16 w-auto" />
-            : <div className="max-w-[420px] whitespace-pre-wrap text-sm">{p.answer}</div>}
+            : p.answer
+              ? <div className="max-w-[420px] whitespace-pre-wrap text-sm">{p.answer}</div>
+              // 정답표에 '해설 참조'뿐인 서술형(완자·오투) — 해설 페이지를 눌러 크게 보고 맞춘다
+              : p.solution
+                ? <ZoomImage src={p.solution} alt="해설" title="해설 — 모범답안" className="max-h-24 w-auto rounded border border-line bg-white" />
+                : <div className="text-xs text-ink2">앱에 정답이 없는 문항 — 선생님과 확인해요</div>}
         </div>
         {(['○', '✕'] as const).map(m => (
           <button key={m} type="button" onClick={() => onChange(value === m ? '' : m)}

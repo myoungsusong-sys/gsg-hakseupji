@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
 import { useNavigate } from 'react-router-dom'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
-import { pickDrillProblems } from '../lib/drill'
+import { pickDrillProblems, wrongDiffByType } from '../lib/drill'
 import { useBrand } from '../lib/brand'
 import { courseTagOfType, typeName, typeUnitName } from '../data/curriculum'
 import { diagnosisCourses } from '../lib/diagnosis'
@@ -139,8 +139,9 @@ export default function DiagnosisReport() {
       const w = worksheets.find(x => x.id === wid)
       if (w) for (const pid of w.problemIds) excludeIds.add(pid)
     }
+    const dOf = wrongDiffByType(student?.id ?? '', gradings, [], problems, worksheets)
     const picked = pickDrillProblems(
-      weak.map(s => ({ typeId: s.typeId })), problems,
+      weak.map(s => ({ typeId: s.typeId, diff: dOf.get(s.typeId) })), problems,
       { twinPer: 0, similarPer: 2, diffShift: 0, typeCap: 2, excludeIds })
     if (picked.length === 0) { alert('보완 문제를 문제은행에서 찾지 못했습니다.'); return }
     const id = uid('ws')

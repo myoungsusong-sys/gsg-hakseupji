@@ -2,6 +2,7 @@ import type { Problem, Diff } from '../types'
 import { CURRICULA, curriculumFor, type Curriculum, type BigUnit, type MidUnit } from '../data/curriculum'
 import { POOL_COURSES } from '../data/pool'
 import tocRaw from '../data/textbookToc.json'
+import { autoPickable } from './pickable'
 
 /**
  * 🏫 내신 대비 세트 — 매쓰플랫 「내신관」과 **같은 목록·같은 문구**를 우리 문제 풀로 만든다
@@ -199,7 +200,7 @@ export function pickNaesinProblems(set: NaesinSet, poolOrIndex: Problem[] | Pool
     const order = (wide ? [want, want - 1, want + 1, 1, 2, 3, 4, 5] : [want, want - 1, want + 1]) as Diff[]
     for (const d of order) {
       if (d < 1 || d > 5) continue
-      const p = cands.find((c) => c.diff === d && !usedIds.has(c.id) && !(c.twinGroup && usedTwins.has(c.twinGroup)))
+      const p = cands.find((c) => c.diff === d && autoPickable(c) && !usedIds.has(c.id) && !(c.twinGroup && usedTwins.has(c.twinGroup)))
       if (p) { picked.push(p); usedIds.add(p.id); if (p.twinGroup) usedTwins.add(p.twinGroup); cursor.set(typeId, k + 1); return true }
     }
     // 못 집었어도 커서를 한 칸 돌린다 — 안 그러면 목표 난이도 재고가 없는 유형은

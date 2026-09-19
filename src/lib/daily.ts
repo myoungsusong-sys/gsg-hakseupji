@@ -1,8 +1,9 @@
 import type { Assignment, DailyConfig, DiffMatrix, Grading, Problem, Student, WBItem, Worksheet } from '../types'
 import { pickProblems } from './select'
-import { pickDrillProblems, weakTypes, wrongByType } from './drill'
+import { pickDrillProblems, weakTypes, wrongByType, wrongDiffByType } from './drill'
 import { curriculumFor } from '../data/curriculum'
 import { dateKey } from './dates'
+import { autoPickable } from './pickable'
 
 // 학년 정규화는 lib/grade.ts 가 정본 — 기존 호출부를 위해 그대로 내보낸다
 export { gradeKey } from './grade'
@@ -31,7 +32,8 @@ export interface DailyCtx {
 
 /** 그 학생의 오늘치 문항을 고른다. 조건에 맞는 게 없으면 빈 배열(호출부가 건너뛴다). */
 export function buildDailyPicks(student: Student, cfg: DailyConfig, ctx: DailyCtx): Problem[] {
-  const { problems, gradings, wbItems, worksheets, assignments, diffMatrix } = ctx
+  const { gradings, wbItems, worksheets, assignments, diffMatrix } = ctx
+  const problems = ctx.problems.filter(autoPickable)
   const cur = curriculumFor(cfg.courseId)
   const units = cfg.unitIds.length ? cur.units.filter(u => cfg.unitIds.includes(u.id)) : cur.units
   const midSel = new Set(cfg.midIds ?? [])
@@ -106,8 +108,9 @@ export function buildDailyPicks(student: Student, cfg: DailyConfig, ctx: DailyCt
     if (mode === 'twin' || mode === 'both') {
       const weak = weakTypes(wrongByType(student.id, recent, wbItems))
       if (weak.length) {
+        const dOf = wrongDiffByType(student.id, recent, wbItems, ctx.problems, worksheets)
         reviewPicked.push(...pickDrillProblems(
-          weak.map(w => ({ typeId: w.typeId })), problems,
+          weak.map(w => ({ typeId: w.typeId, diff: dOf.get(w.typeId) })), problems,
           { twinPer: 1, similarPer: 1, diffShift: 0, typeCap: 2, excludeIds: used },
         ))
       }
@@ -178,6 +181,7 @@ export function unitsOfOrder(typeOrder: string[], unitOf: (t: string) => string)
  * 같은 학생·같은 회차면 **항상 같은 문제**가 나온다 — 정렬이 결정적이라 재실행에 안전하다.
  */
 export function buildByTypeRound(problems: Problem[], o: TypeRoundOpts): Problem[] {
+  problems = problems.filter(autoPickable)
   // 단원을 골랐으면 그 단원의 유형만 남긴다(책 차례 순서는 그대로 유지)
   const pick = new Set(o.units ?? [])
   const slice = pick.size && o.unitOf

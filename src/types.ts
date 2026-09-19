@@ -41,6 +41,7 @@ export interface Problem {
   isNew?: boolean        // 신경향
   correctRate?: number   // 정답률(%) — 출제 데이터가 쌓이면 채워짐
   selfGrade?: boolean    // ✍️ 서술형 — 기계가 채점 못 한다. 학생이 정답을 보고 스스로 ○/✕ 표시.
+  noAnswer?: boolean     // 🚫 정답도 해설도 없다 — 앱이 알아서 고르는 출제(오답학습지·기본과제·승강제·내신 대비…)에서 뺀다 (lib/pickable.ts)
                          //    (이미지 정답 문항과 같은 흐름. 안 켜면 문장 답이 전부 오답 처리된다)
   book?: string          // 📗 이 문항이 매여 있는 교과서 (예: '동아(윤정미)'). 영어 내신 문항은
                          //    그 교과서 본문이 지문이라 학생 교과서와 맞아야 한다 (data/engBooks.ts)

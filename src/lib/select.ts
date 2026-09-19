@@ -1,5 +1,6 @@
 import type { Diff, DiffMatrix, Kind, Problem } from '../types'
 import { DIFFS } from '../types'
+import { autoPickable } from './pickable'
 
 // 매쓰플랫 방식: 선택 난이도 → 비율 매트릭스로 난이도별 목표 문항 수 산출 후,
 // 난이도 구간마다 유형(교육과정 순) 라운드로빈으로 선발. 부족분은 인접 난이도에서 보충.
@@ -11,6 +12,7 @@ export function pickProblems(
   typeOrder: string[],
   matrix: DiffMatrix,
 ): Problem[] {
+  pool = pool.filter(autoPickable)
   const filtered = pool.filter(p => kind === 'all' || p.kind === kind)
   if (filtered.length === 0) return []
 

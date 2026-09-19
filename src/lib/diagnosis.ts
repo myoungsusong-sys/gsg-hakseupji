@@ -1,6 +1,7 @@
 import type { Diff, Problem } from '../types'
 import { curriculumFor, defaultCurriculumForGrade } from '../data/curriculum'
 import { POOL_COURSES, WANJA_COURSES } from '../data/pool'
+import { autoPickable } from './pickable'
 
 // ── 입학 진단고사 — 과정(현재+선수) 유형을 대단원 고르게 커버하는 문항 선발 ──────────
 // 채점하면 유형분석(7컬러)이 그대로 신입생 취약점 지도가 된다.
@@ -50,6 +51,7 @@ function stride<T>(arr: T[], n: number): T[] {
 // 과정 1개에서 count문항 선발 — 대단원별 비례 배분 → 유형 고른 표집 → 유형당 1문항
 // 난이도는 [중,중하,중,상] 순환 목표에 근접한 문항을 고름 (진단 표준 분포: 중 50%·중하 25%·상 25%)
 export function pickDiagnosisProblems(courseId: string, count: number, pool: Problem[]): Problem[] {
+  pool = pool.filter(autoPickable)
   const cur = curriculumFor(courseId)
   const byType = new Map<string, Problem[]>()
   for (const p of pool) {

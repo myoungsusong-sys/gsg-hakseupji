@@ -1,5 +1,6 @@
 import type { Problem, Diff } from '../types'
 import { CURRICULA } from '../data/curriculum'
+import { autoPickable } from './pickable'
 
 /**
  * 🎯 6종 세트 — 문항 하나에 딸린 여섯 갈래 (2026-09-05 명수쌤 스펙)
@@ -94,6 +95,7 @@ export function buildSixSet(
   subUnitOf: SubUnitMap,
   used: Set<string> = new Set(),
 ): SixSet {
+  pool = pool.filter(autoPickable)
   const taken = new Set<string>([base.id, ...used])
   const items: Partial<Record<SixSlot, Problem>> = {}
   const missing: SixSlot[] = []

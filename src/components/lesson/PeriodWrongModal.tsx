@@ -5,7 +5,7 @@ import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
-import { pickDrillProblems, wrongByType, type TypeStat, type WrongRef } from '../../lib/drill'
+import { pickDrillProblems, wrongByType, type TypeStat, type WrongRef, wrongDiffByType } from '../../lib/drill'
 import { achievementOf } from '../../lib/achievement'
 import { CURRICULA, curriculumFor, courseTagOfType, typeName } from '../../data/curriculum'
 import DrillModal, { type DrillWrong } from './DrillModal'
@@ -68,6 +68,9 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
     [gradings, student.id, yearAgo],
   )
   const stats = useMemo(() => wrongByType(student.id, yearGradings, wbItems), [student.id, yearGradings, wbItems])
+  // 유형만 골라 내는 학습지도 그 유형에서 **실제로 틀린 난이도**에 맞춘다 (lib/drill.ts 난이도 규칙)
+  const diffOfType = useMemo(() => wrongDiffByType(student.id, yearGradings, wbItems, problems, worksheets),
+    [student.id, yearGradings, wbItems, problems, worksheets])
   const statMap = useMemo(() => new Map(stats.map(s => [s.typeId, s])), [stats])
 
   const [courseId, setCourseId] = useState(() => CURRICULA.find(c => c.grade === student.grade)?.id ?? 'm1-1')
@@ -131,13 +134,13 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
 
   // 틀린 유형 학습지 문제 선발 (난이도 옵션: 쌍둥이/쉽게/그대로/어렵게)
   const typeSheetIds = useMemo(() => {
-    const refs: WrongRef[] = targetTypes.map(s => ({ typeId: s.typeId }))
+    const refs: WrongRef[] = targetTypes.map(s => ({ typeId: s.typeId, diff: diffOfType.get(s.typeId) }))
     const excludeIds = new Set<string>(includeAssigned ? [] : assignedIds)
     const opts = typeDiff === 'twin'
       ? { twinPer: 1, similarPer: 1, diffShift: 0 as const, typeCap: 3, excludeIds }
       : { twinPer: 0, similarPer: 2, diffShift: (typeDiff === 'easy' ? -1 : typeDiff === 'hard' ? 1 : 0) as -1 | 0 | 1, typeCap: 3, excludeIds }
     return pickDrillProblems(refs, problems, opts).map(p => p.id)
-  }, [targetTypes, typeDiff, includeAssigned, assignedIds, problems])
+  }, [targetTypes, typeDiff, includeAssigned, assignedIds, problems, diffOfType])
 
   // ── 탭1 우측 · 틀린 문제 학습지 옵션 (최근 1년 틀린 문제 기반) ──
   const [probWay, setProbWay] = useState<Way>('twin')

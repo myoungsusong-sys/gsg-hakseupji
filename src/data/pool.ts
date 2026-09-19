@@ -38,16 +38,25 @@ export const GEN_ONLY_COURSES: readonly string[] = [
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const
 // [imageRelPath, typeId, diff(1~5), isChoice(0/1), answer, solutionRelPath?]
 //  — 완자 교재 크롭 문항. solution은 정답친해 원본 페이지 이미지(정답·해설, 오류 위험 0)
-type WanjaRaw = [string, string, number, number, string, (string | 0)?]
+type WanjaRaw = [string, string, number, number, string, (string | 0)?, (0 | 1)?]   // [6] 1 = 문장형 정답(스스로 채점)
 
+// 🔴 2026-09-19: 정답표에 '해설 참조'라고만 적힌 서술형이 정답 칸이 빈 채 **객관식으로** 들어와,
+//    승강제·오답학습지에서 학생이 무엇을 골라도 오답이 됐다(완자·오투 285문항 — 통합과학2 66·생명 61·
+//    화학 41·지구 73·물리 44). 매쓰플랫 문항(toProblem)은 answerImage.ts 규칙을 거치는데 여기만 빠져 있었다.
+//    → 빈 정답은 서술형 + 스스로 채점(selfGrade), 모범답안 대신 해설 이미지를 보여 준다.
+//      해설도 없으면 noAnswer — 앱이 알아서 고르는 출제에서 뺀다. r[6]===1 은 정답이 문장이라 스스로 채점.
 function toWanjaProblem(id: string, r: WanjaRaw): Problem {
-  const [img, tid, diff, isC, ans, sol] = r
+  const [img, tid, diff, isC, ans, sol, essay] = r
+  const solution = typeof sol === 'string' && sol ? `${import.meta.env.BASE_URL}${sol}` : ''
+  const blank = isImageAnswer(ans)
   return {
-    id, typeId: tid, kind: isC ? '객관식' : '주관식',
+    id, typeId: tid, kind: isC && !blank && essay !== 1 ? '객관식' : '주관식',
     diff: (diff >= 1 && diff <= 5 ? diff : 3) as Problem['diff'],
-    body: '', answer: ans || '', source: '완자',
+    body: '', answer: blank ? '' : ans, source: '완자',
     imageUrl: `${import.meta.env.BASE_URL}${img}`,
-    solution: typeof sol === 'string' && sol ? `${import.meta.env.BASE_URL}${sol}` : '',
+    solution,
+    ...(blank || essay === 1 ? { selfGrade: true } : {}),
+    ...(blank && !solution ? { noAnswer: true } : {}),
   }
 }
 

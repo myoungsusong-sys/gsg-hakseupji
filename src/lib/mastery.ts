@@ -2,6 +2,7 @@ import type { Problem, Diff } from '../types'
 import { CONCEPTS } from '../data/concepts'
 import { CURRICULA } from '../data/curriculum'
 import { buildSixSet, subUnitMap } from './sixSet'
+import { autoPickable } from './pickable'
 
 /**
  * 🪜 유형 마스터 — 틀리면 내려가고 맞히면 올라가는 **적응형 사다리** (2026-09-05 명수쌤 지시)
@@ -248,6 +249,7 @@ export function pickForFloor(
   base: Problem,
   pool: Problem[],
 ): Problem | null {
+  pool = pool.filter(autoPickable)
   const used = new Set(state.servedIds)
   const set = buildSixSet(base, pool, subUnitMap(), used)
   const slot = ({ 1: '기본', 2: '쌍둥이', 3: '심화1', 4: '심화2' } as const)[
