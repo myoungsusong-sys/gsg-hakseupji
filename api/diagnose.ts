@@ -74,6 +74,126 @@ function readBody(req: any): Promise<any> {
 }
 
 
+// ── ❓ 문제 질문함 (같은 함수 안에 둔다 — 함수 12개 상한) ────────────────────
+// 학생이 문제를 찍어 올리면 명수쌤 맥의 워커가 해설 노트 이미지를 만들어 돌려준다.
+//
+// 🔴 왜 서버를 거치나 — 이 경로가 아니면 «새 테이블·새 버킷»을 만들어야 하는데,
+//    그러려면 Supabase 대시보드 로그인(DDL)이 필요하다. 세션이 만료돼 있고 비밀번호는
+//    클로드가 다루지 않는다. 그래서 **DDL 0** 으로 간다:
+//      · 행  = 기존 hj_settings 에 `qna_<질문id>` (사진이 없으니 행은 작다)
+//      · 사진 = Storage 버킷 'qna' — 없으면 이 함수가 service_role 로 만든다
+//    service_role 키는 **Vercel 안에만** 있고 워커·브라우저로 나가지 않는다.
+// 🔴 backend.ts 의 실시간 구독은 qna_* 를 무시한다. 안 그러면 질문 하나에 전 기기가
+//    9개 테이블을 다시 받아 egress 가 터진다(2026-09-02 실사고).
+const QNA_BUCKET = 'qna'
+
+function sbEnv() {
+  const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  return { url, key }
+}
+
+async function sbRest(path: string, init: any = {}) {
+  const { url, key } = sbEnv()
+  if (!url || !key) throw new Error('서버에 Supabase 설정이 없습니다(SUPABASE_SERVICE_ROLE_KEY).')
+  const r = await fetch(`${url}${path}`, {
+    ...init,
+    headers: { apikey: key, Authorization: `Bearer ${key}`, ...(init.headers || {}) },
+  })
+  return r
+}
+
+/** 버킷이 없으면 만든다 (공개 버킷 — 경로가 난수라 추측 불가. 관리앱 snapshots 와 같은 방식) */
+async function qnaEnsureBucket() {
+  const r = await sbRest(`/storage/v1/bucket/${QNA_BUCKET}`)
+  if (r.ok) return
+  await sbRest('/storage/v1/bucket', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id: QNA_BUCKET, name: QNA_BUCKET, public: true }),
+  })
+}
+
+async function qnaUpload(path: string, b64: string, contentType: string) {
+  await qnaEnsureBucket()
+  const bytes = Buffer.from(b64, 'base64')
+  if (bytes.length > 8 * 1024 * 1024) throw new Error('사진이 너무 큽니다(8MB 초과).')
+  const r = await sbRest(`/storage/v1/object/${QNA_BUCKET}/${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': contentType, 'x-upsert': 'true' },
+    body: bytes,
+  })
+  if (!r.ok) throw new Error(`업로드 실패(${r.status}) ${(await r.text()).slice(0, 120)}`)
+  const { url } = sbEnv()
+  return `${url}/storage/v1/object/public/${QNA_BUCKET}/${path}`
+}
+
+async function qnaRow(id: string) {
+  const r = await sbRest(`/rest/v1/hj_settings?id=eq.${encodeURIComponent(id)}&select=id,data`)
+  const rows = await r.json().catch(() => [])
+  return Array.isArray(rows) && rows[0] ? rows[0].data?.value : null
+}
+
+async function qnaWrite(id: string, value: any) {
+  const r = await sbRest('/rest/v1/hj_settings', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Prefer: 'resolution=merge-duplicates,return=minimal' },
+    body: JSON.stringify({ id, data: { __id: id, value }, updated_at: new Date().toISOString() }),
+  })
+  if (!r.ok) throw new Error(`저장 실패(${r.status}) ${(await r.text()).slice(0, 120)}`)
+}
+
+const qnaKeyOk = (k: unknown) =>
+  !!process.env.QNA_WORKER_KEY && typeof k === 'string' && k === process.env.QNA_WORKER_KEY
+
+async function handleQna(p: any, res: any) {
+  const act = String(p.action || '')
+  try {
+    // ① 사진 올리기 — 학생의 문제 사진(shot) / 워커의 해설 이미지(answer)
+    if (act === 'qna-upload') {
+      const id = String(p.questionId || '')
+      const kind = p.kind === 'answer' ? 'answer' : 'shot'
+      if (!/^q-[\w-]{4,80}$/.test(id)) { res.status(400).json({ error: '질문 id 형식이 아닙니다.' }); return }
+      if (kind === 'answer' && !qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      if (typeof p.b64 !== 'string' || p.b64.length < 100) { res.status(400).json({ error: '사진이 비어 있습니다.' }); return }
+      const url = await qnaUpload(`${id}/${kind}.jpg`, p.b64, 'image/jpeg')
+      res.status(200).json({ ok: true, url }); return
+    }
+    // ② 워커 — 대기 1건 집어 잠그기 (20분 넘게 만드는중이면 죽은 것으로 보고 다시 집는다)
+    if (act === 'qna-take') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const r = await sbRest('/rest/v1/hj_settings?id=like.qna_*&select=id,data,updated_at&order=updated_at.asc&limit=200')
+      const rows = await r.json().catch(() => [])
+      const stale = Date.now() - 20 * 60_000
+      const hit = (Array.isArray(rows) ? rows : []).find((x: any) => {
+        const q = x?.data?.value
+        if (!q) return false
+        if (q.status === '대기') return true
+        return q.status === '만드는중' && Date.parse(x.updated_at || '') < stale
+      })
+      if (!hit) { res.status(200).json({ ok: true, q: null }); return }
+      const q = { ...hit.data.value, status: '만드는중' }
+      await qnaWrite(hit.id, q)
+      res.status(200).json({ ok: true, q }); return
+    }
+    // ③ 워커 — 완료 / 실패
+    if (act === 'qna-done' || act === 'qna-fail') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const id = `qna_${String(p.id || '')}`
+      const cur = await qnaRow(id)
+      if (!cur) { res.status(404).json({ error: '그런 질문이 없습니다.' }); return }
+      const q = act === 'qna-done'
+        ? { ...cur, status: '완료', answerUrl: String(p.url || ''), answerText: String(p.title || ''), answeredAt: new Date().toISOString(), error: undefined }
+        : { ...cur, status: p.final ? '실패' : '대기', error: String(p.error || '').slice(0, 300), tries: (Number(cur.tries) || 0) + 1 }
+      await qnaWrite(id, q)
+      res.status(200).json({ ok: true }); return
+    }
+    res.status(400).json({ error: '모르는 동작입니다.' })
+  } catch (e: any) {
+    res.status(500).json({ error: String(e?.message || e).slice(0, 200) })
+  }
+}
+
 // ── 📱 카톡 알림 (같은 함수 안에 둔다) ─────────────────────────────────────
 // ⚠️ 별도 파일(api/notify-kakao.ts)로 뒀더니 **Vercel Hobby 플랜의 서버리스 함수 12개
 // 상한**을 넘어 배포가 조용히 실패했다(changelog 가 갱신되지 않아 알아챘다). 그래서
@@ -335,6 +455,9 @@ export default async function handler(req: any, res: any) {
     const useTg = pre.via === 'telegram' || (!pre.via && !!process.env.TELEGRAM_BOT_TOKEN)
     await (useTg ? sendTelegram(pre, res) : sendKakao(pre, res))
     return
+  }
+  if (typeof pre?.action === 'string' && pre.action.startsWith('qna-')) {
+    await handleQna(pre, res); return
   }
   if (pre?.action === 'chat') {
     const who = await chatCaller(req)

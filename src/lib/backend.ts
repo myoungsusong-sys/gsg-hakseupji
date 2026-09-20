@@ -257,7 +257,9 @@ export const cloud = {
     for (const t of ALL_TABLES)
       ch.on('postgres_changes', { event: '*', schema: 'public', table: t }, (payload: any) => {
         const id = payload?.new?.id ?? payload?.old?.id
-        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_') || id.startsWith('rubric_'))) return
+        // qna_* (문제 질문함)도 같은 이유로 무시한다 — 질문/해설이 오갈 때마다 전 기기가
+        // 9개 테이블을 다시 받으면 egress 가 터진다(2026-09-02 실사고). 질문함은 자체 폴링으로 읽는다.
+        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_') || id.startsWith('rubric_') || id.startsWith('qna_'))) return
         onChange()
       })
     ch.subscribe()
