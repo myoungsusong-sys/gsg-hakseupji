@@ -17,7 +17,7 @@ import { supabase } from './supabase'
 
 const 접두 = 'qna_'
 
-export type QnaStatus = '대기' | '만드는중' | '완료' | '실패'
+export type QnaStatus = '대기' | '만드는중' | '완료' | '보류' | '실패'
 
 export interface Question {
   id: string
@@ -29,6 +29,8 @@ export interface Question {
   status: QnaStatus
   answerUrl?: string           // 해설 노트 이미지
   answerText?: string          // 해설 한 줄 요약(워커가 넣는다)
+  card?: { 핵심?: string; 정답?: string; 다음?: string }   // 앱에 글로 보여주는 3줄
+  context?: string             // 개인화용 학생 맥락(학생앱이 만들어 붙인다)
   answeredAt?: string
   error?: string               // 실패 사유(선생님 화면에만)
   tries?: number
@@ -63,7 +65,7 @@ export async function shrinkPhoto(file: File, maxW = 1600, quality = 0.72): Prom
 
 /** 질문 올리기 — 사진은 서버가 Storage 에, 본문은 hj_settings 한 줄에 */
 export async function askQuestion(args: {
-  studentId: string; studentName: string; text: string; photo: File
+  studentId: string; studentName: string; text: string; photo: File; context?: string
 }): Promise<Question> {
   if (!supabase) throw new Error('클라우드에 연결돼 있지 않아 질문을 보낼 수 없어요.')
   const id = newQuestionId(args.studentId)
@@ -86,6 +88,8 @@ export async function askQuestion(args: {
     createdAt: new Date().toISOString(),
     status: '대기',
     tries: 0,
+    // 개인화 단계에서만 쓰인다. 풀이·검증에는 들어가지 않는다(삼자토론 확정).
+    context: (args.context || '').slice(0, 1200) || undefined,
   }
   const { error } = await supabase.from('hj_settings')
     .upsert({ id: 접두 + id, data: { __id: 접두 + id, value: q }, updated_at: q.createdAt })

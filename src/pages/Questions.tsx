@@ -10,6 +10,7 @@ const BADGE: Record<QnaStatus, { t: string; c: string }> = {
   대기:    { t: '접수됨',       c: 'bg-paper2 text-ink2' },
   만드는중: { t: '만드는 중',    c: 'bg-amber-soft text-amber' },
   완료:    { t: '보냄',         c: 'bg-pine-soft text-pine-dark' },
+  보류:    { t: '🟡 검증 불일치 — 직접 답변', c: 'bg-amber-soft text-amber' },
   실패:    { t: '🔴 직접 답변 필요', c: 'bg-rose-100 text-rose-700' },
 }
 
@@ -33,8 +34,8 @@ export default function Questions() {
   }, [load])
 
   const 보임 = list.filter(q =>
-    only === '전체' ? true : only === '실패' ? q.status === '실패' : q.status !== '완료')
-  const 실패수 = list.filter(q => q.status === '실패').length
+    only === '전체' ? true : only === '실패' ? (q.status === '실패' || q.status === '보류') : q.status !== '완료')
+  const 실패수 = list.filter(q => q.status === '실패' || q.status === '보류').length
   const 진행수 = list.filter(q => q.status === '대기' || q.status === '만드는중').length
 
   if (!SUPABASE_ON) return <div className="p-6 text-sm text-ink2">클라우드 모드에서만 볼 수 있어요.</div>
@@ -56,7 +57,7 @@ export default function Questions() {
 
       {실패수 > 0 && (
         <div className="mb-4 rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
-          🔴 자동으로 해설을 못 만든 질문이 <b>{실패수}건</b> 있습니다. 이 학생들에게는 선생님이 직접 답해 주세요.
+          🔴 자동 검증을 통과하지 못한 질문이 <b>{실패수}건</b> 있습니다. 학생에게 <b>보내지 않았습니다</b> — 선생님이 직접 답해 주세요.
         </div>
       )}
       {err && <div className="mb-4 rounded-2xl border border-line bg-amber-soft px-4 py-3 text-sm text-amber">{err}</div>}

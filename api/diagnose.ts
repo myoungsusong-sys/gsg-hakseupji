@@ -183,8 +183,12 @@ async function handleQna(p: any, res: any) {
       const cur = await qnaRow(id)
       if (!cur) { res.status(404).json({ error: '그런 질문이 없습니다.' }); return }
       const q = act === 'qna-done'
-        ? { ...cur, status: '완료', answerUrl: String(p.url || ''), answerText: String(p.title || ''), answeredAt: new Date().toISOString(), error: undefined }
-        : { ...cur, status: p.final ? '실패' : '대기', error: String(p.error || '').slice(0, 300), tries: (Number(cur.tries) || 0) + 1 }
+        ? { ...cur, status: '완료', answerUrl: String(p.url || ''), answerText: String(p.title || ''),
+            card: p.card && typeof p.card === 'object' ? p.card : undefined,
+            answeredAt: new Date().toISOString(), error: undefined }
+        // hold = 자동 검증을 통과하지 못한 것. 재시도가 아니라 «사람이 볼 것» 으로 돌린다.
+        : { ...cur, status: p.hold ? '보류' : p.final ? '실패' : '대기',
+            error: String(p.error || '').slice(0, 300), tries: (Number(cur.tries) || 0) + 1 }
       await qnaWrite(id, q)
       res.status(200).json({ ok: true }); return
     }

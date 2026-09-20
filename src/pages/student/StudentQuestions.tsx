@@ -1,5 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
+import { useStore } from '../../lib/store'
+import { wrongTypesOf } from '../../lib/wrongTypes'
+import { typeName } from '../../data/curriculum'
 import {
   askQuestion, myQuestions, removeQuestion, markQnaRead,
   type Question, type QnaStatus,
@@ -14,12 +18,14 @@ const BADGE: Record<QnaStatus, { t: string; c: string }> = {
   대기:    { t: '접수됨',        c: 'bg-paper2 text-ink2' },
   만드는중: { t: '해설 만드는 중', c: 'bg-amber-soft text-amber' },
   완료:    { t: '해설 도착',      c: 'bg-pine-soft text-pine-dark' },
+  보류:    { t: '선생님 확인 중', c: 'bg-amber-soft text-amber' },
   실패:    { t: '다시 만드는 중', c: 'bg-amber-soft text-amber' },
 }
 
 export default function StudentQuestions() {
   const me = useStudentSelf()
   const preview = usePreview()
+  const store = useStore()
   const [list, setList] = useState<Question[]>([])
   const [err, setErr] = useState('')
   const [loading, setLoading] = useState(true)
@@ -83,7 +89,8 @@ export default function StudentQuestions() {
         </div>
       )}
 
-      {open && <AskModal me={{ id: me.id, name: me.name }} onClose={() => setOpen(false)} onDone={() => { setOpen(false); void load() }} />}
+      {open && <AskModal me={{ id: me.id, name: me.name }} 맥락={() => 학생맥락(me, store)}
+                         onClose={() => setOpen(false)} onDone={() => { setOpen(false); void load() }} />}
       {zoom?.answerUrl && <Lightbox url={zoom.answerUrl} onClose={() => setZoom(null)} />}
     </div>
   )
@@ -119,7 +126,21 @@ function Card({ q, onZoom, onDelete }: { q: Question; onZoom: () => void; onDele
 
       {q.status === '완료' && q.answerUrl && (
         <div className="mt-3">
-          {q.answerText && <p className="mb-2 text-sm font-bold text-pine-dark">💡 {q.answerText}</p>}
+          {/* 🔴 폰에서 가장 먼저 알고 싶은 셋을 «글로» 먼저 준다 — 이미지를 확대해 찾게 하지 않는다 */}
+          {(q.card?.핵심 || q.card?.정답 || q.card?.다음 || q.answerText) && (
+            <div className="mb-2.5 grid gap-1.5 rounded-xl bg-pine-soft/40 px-3.5 py-3 text-sm">
+              {(q.card?.핵심 || q.answerText) &&
+                <div><b className="text-pine-dark">💡 핵심</b> <span className="text-ink">{q.card?.핵심 || q.answerText}</span></div>}
+              {q.card?.정답 &&
+                <div><b className="text-pine-dark">✅ 정답</b> <span className="text-ink">{q.card.정답}</span></div>}
+              {q.card?.다음 && (
+                <div className="flex flex-wrap items-center gap-2">
+                  <span><b className="text-pine-dark">👉 다음</b> <span className="text-ink">{q.card.다음}</span></span>
+                  <Link to="/student/mastery" className="rounded-full bg-pine px-3 py-1 text-xs font-bold text-paper">바로 풀기</Link>
+                </div>
+              )}
+            </div>
+          )}
           <button onClick={onZoom} className="block w-full overflow-hidden rounded-xl border border-line">
             <img src={q.answerUrl} alt="해설 노트" className="w-full" />
           </button>
@@ -127,9 +148,11 @@ function Card({ q, onZoom, onDelete }: { q: Question; onZoom: () => void; onDele
         </div>
       )}
 
-      {(q.status === '대기' || q.status === '만드는중' || q.status === '실패') && (
+      {q.status !== '완료' && (
         <div className="mt-3 rounded-xl bg-paper2 px-3 py-2.5 text-xs text-ink2">
-          {q.status === '실패'
+          {q.status === '보류'
+            ? '이 문제는 자동 검산이 딱 맞아떨어지지 않아서, 선생님이 직접 보고 계세요. 곧 답을 드릴게요.'
+            : q.status === '실패'
             ? '해설을 만들다 막혀서 다시 시도하고 있어요. 오래 걸리면 선생님이 직접 답해 주실 거예요.'
             : '해설 노트를 만들고 있어요. 다 되면 이 화면에 그림으로 도착해요.'}
         </div>
@@ -138,8 +161,35 @@ function Card({ q, onZoom, onDelete }: { q: Question; onZoom: () => void; onDele
   )
 }
 
-function AskModal({ me, onClose, onDone }: {
-  me: { id: string; name: string }; onClose: () => void; onDone: () => void
+// 🔴 «관련 있는 증거 2~3개만» 넣는다 (삼자토론 확정). 학생 DB 를 통째로 보내지 않는다.
+//    전체 오답 목록·질문 이력·학교·선생님 평가 메모는 넣지 않는다 — 잡음이고 편견이다.
+function 학생맥락(me: { id: string; name: string; grade?: string }, store: ReturnType<typeof useStore>): string {
+  let 최근 = ''
+  try {
+    const rows = wrongTypesOf({
+      studentId: me.id, gradings: store.gradings, wbItems: store.wbItems,
+      problems: store.problems, masteries: store.masteries, days: 21,
+    }).slice(0, 2)
+    최근 = rows.map(r => {
+      const st = r.state ? ` (유형 정복 ${r.state.floor}/4층)` : ''
+      return `- ${typeName(r.typeId)} — 최근 ${r.wrong}문항 틀림${st}`
+    }).join('\n')
+  } catch { /* 기록이 없으면 그냥 비운다 */ }
+  return [
+    '[학생 맥락]',
+    `이름: ${me.name}`,
+    `과정: ${me.grade ?? ''}`,
+    '',
+    '최근 3주 안에 자주 틀린 유형(참고용):',
+    최근 || '- 기록 없음',
+    '',
+    '🔴 위 기록은 이번 문제와 «핵심 개념이 명확히 같을 때만» 언급하라.',
+    '   같은 단원이라는 이유만으로 잇지 마라. 근거가 분명하지 않으면 아예 언급하지 마라.',
+  ].join('\n')
+}
+
+function AskModal({ me, 맥락, onClose, onDone }: {
+  me: { id: string; name: string }; 맥락: () => string; onClose: () => void; onDone: () => void
 }) {
   const [file, setFile] = useState<File | null>(null)
   const [url, setUrl] = useState('')
@@ -161,7 +211,7 @@ function AskModal({ me, onClose, onDone }: {
     if (text.trim().length < 5) { setErr('어디가 막히는지 한 줄이라도 적어 주세요. 그래야 그 부분을 짚어 드려요.'); return }
     setBusy(true); setErr('')
     try {
-      await askQuestion({ studentId: me.id, studentName: me.name, text, photo: file })
+      await askQuestion({ studentId: me.id, studentName: me.name, text, photo: file, context: 맥락() })
       onDone()
     } catch (e) { setErr(e instanceof Error ? e.message : String(e)); setBusy(false) }
   }
