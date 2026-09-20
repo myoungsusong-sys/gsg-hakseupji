@@ -199,6 +199,7 @@ export default function Layout() {
             <NavLink to="/today" className={topTab}>오늘 교실</NavLink>
             <NavLink to="/manage" className={topTab}>관리</NavLink>
             <NavLink to="/points" className={topTab}>포인트</NavLink>
+            <NavLink to="/questions" className={topTab}>질문함</NavLink>
             <NavLink to="/help" className={topTab}>📖 사용법</NavLink>
           </nav>
           {/* 전역 과목 스위처 — 출제·문제은행·기출·채점·보고서가 이 과목을 따른다 (확장: lib/subject.ts SUBJECTS에 추가) */}

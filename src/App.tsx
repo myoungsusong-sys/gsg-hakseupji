@@ -18,6 +18,8 @@ import StudentVoca from './pages/student/StudentVoca'
 import StudentExams from './pages/student/StudentExams'
 import StudentChallenge from './pages/student/StudentChallenge'
 import StudentLectures from './pages/student/StudentLectures'
+import StudentQuestions from './pages/student/StudentQuestions'
+import Questions from './pages/Questions'
 import Layout from './components/Layout'
 import Help from './pages/Help'
 import SaveGuard from './components/SaveGuard'
@@ -131,6 +133,7 @@ function Gate() {
             <Route path="mastery" element={<StudentMastery />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
+            <Route path="questions" element={<StudentQuestions />} />
             <Route path="help" element={<Help only="student" />} />
             {/* 학생용 학습지 PDF — 선생님 화면을 열어 주지 않으려고 전용 경로를 둔다 */}
             <Route path="print/:id" element={<WorksheetView studentMode />} />
@@ -193,6 +196,7 @@ function Gate() {
             <Route path="/diagnosis/:studentId" element={<Page><DiagnosisReport /></Page>} />
             <Route path="/timetable/:studentId" element={<Page><TimetablePage /></Page>} />
             <Route path="/points" element={<Page><PointsPage /></Page>} />
+            <Route path="/questions" element={<Page><Questions /></Page>} />
           </Route>
           </Route>
         </Routes>
