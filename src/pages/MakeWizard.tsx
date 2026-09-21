@@ -5,6 +5,7 @@ import { conceptsForSubUnits } from '../data/concepts'
 import { pickProblems, twinProblems, similarProblems } from '../lib/select'
 import { buildSixSet, subUnitMap, SIX_SLOTS } from '../lib/sixSet'
 import { useStore, uid } from '../lib/store'
+import { countByType, probIndex } from '../lib/probIndex'
 import { getSubject, useSubject, SUBJECTS } from '../lib/subject'
 import { brandFor, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
 import MathText, { isImageUrl } from '../components/MathText'
@@ -182,7 +183,8 @@ export default function MakeWizard() {
   // 수정 모드 초기화
   useEffect(() => {
     if (!editing) return
-    setItems(editing.problemIds.map(pid => problems.find(p => p.id === pid)).filter(p => p != null))
+    const byId = probIndex(problems)
+    setItems(editing.problemIds.map(pid => byId.get(pid)).filter(p => p != null))
     setTitle(editing.title)
     setAuthor(editing.author)
     setTags(new Set(editing.tags))
@@ -190,7 +192,7 @@ export default function MakeWizard() {
     setOpts(editing.options)
     setConceptIds(new Set(editing.conceptIds ?? []))
     setSelected(new Set(editing.problemIds
-      .map(pid => problems.find(p => p.id === pid)?.typeId)
+      .map(pid => byId.get(pid)?.typeId)
       .filter((t): t is string => !!t)))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editId])
@@ -722,7 +724,7 @@ export default function MakeWizard() {
                           <div className="mb-1.5 rounded bg-paper2 px-2.5 py-1.5 text-xs font-bold text-ink2">{s.name}</div>
                           <div className="grid gap-0.5">
                             {s.types.map(t => {
-                              const n = problems.filter(p => p.typeId === t.id).length
+                              const n = countByType(problems).get(t.id) ?? 0
                               return (
                                 <label key={t.id} className="flex cursor-pointer items-center gap-2 rounded px-2 py-1 text-sm hover:bg-paper2">
                                   <input type="checkbox" checked={selected.has(t.id)}

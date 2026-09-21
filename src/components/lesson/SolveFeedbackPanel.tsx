@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useStore } from '../../lib/store'
+import { probIndex } from '../../lib/probIndex'
 import { typeName } from '../../data/curriculum'
 import MathText from '../MathText'
 import type { Student } from '../../types'
@@ -29,7 +30,7 @@ export default function SolveFeedbackPanel({ student }: { student: Student }) {
     return i >= 0 ? i + 1 : null
   }
   const probType = (pid: string) => {
-    const p = problems.find(x => x.id === pid)
+    const p = probIndex(problems).get(pid)
     return p ? typeName(p.typeId) : ''
   }
 

@@ -8,6 +8,7 @@ import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
 import { isStaleChunkError } from '../lib/staleChunk'
 import { poolStagesFor } from '../lib/wsPools'
+import { probIndex } from '../lib/probIndex'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -130,7 +131,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
 
   const ws = worksheets.find(w => w.id === id)
   const items = useMemo(
-    () => (ws?.problemIds ?? []).map(pid => problems.find(p => p.id === pid)).filter(p => p != null),
+    () => { const byId = probIndex(problems); return (ws?.problemIds ?? []).map(pid => byId.get(pid)).filter(p => p != null) },
     [ws, problems],
   )
   const theme = ws ? THEMES[ws.theme] : THEMES.pine

@@ -7,6 +7,7 @@ import ProblemContent from '../ProblemContent'
 import type { DailyConfig, Diff, Grading, Problem, Student, Worksheet } from '../../types'
 import { DIFFS, DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
+import { probIndex } from '../../lib/probIndex'
 import { dateKey, todayKey } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
 import { ACHIEVEMENT_GRADES, achievementOf } from '../../lib/achievement'
@@ -717,7 +718,7 @@ function GroupSolveFeedback({ students }: { students: Student[] }) {
 
   const wsName = (id: string) => worksheets.find(w => w.id === id)?.title ?? '학습지'
   const probNo = (wsId: string, pid: string) => { const w = worksheets.find(x => x.id === wsId); const i = w ? w.problemIds.indexOf(pid) : -1; return i >= 0 ? i + 1 : null }
-  const probType = (pid: string) => { const p = problems.find(x => x.id === pid); return p ? typeName(p.typeId) : '' }
+  const probType = (pid: string) => { const p = probIndex(problems).get(pid); return p ? typeName(p.typeId) : '' }
 
   if (groupFb.length === 0) {
     return (

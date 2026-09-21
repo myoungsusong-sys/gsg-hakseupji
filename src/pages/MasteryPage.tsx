@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import { countByType } from '../lib/probIndex'
 import { useSubject, SUBJECTS, type Subject } from '../lib/subject'
 import { CURRICULA } from '../data/curriculum'
 import MasteryRunner from '../components/MasteryRunner'
@@ -353,7 +354,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
 
       <div className="mt-3 divide-y divide-line rounded-xl border border-line bg-paper">
         {shown.map((r) => {
-          const n = problems.filter((p) => p.typeId === r.id).length
+          const n = countByType(problems).get(r.id) ?? 0
           const st = masteries[`${studentId}|${r.id}`]
           return (
             <button key={r.id} type="button" disabled={n === 0} onClick={() => setTypeId(r.id)}

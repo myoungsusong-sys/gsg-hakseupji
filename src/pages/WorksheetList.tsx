@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import { probIndex } from '../lib/probIndex'
 import { typeName, subjectOfType } from '../data/curriculum'
 import { useSubject, type Subject } from '../lib/subject'
 import { useBrand, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
@@ -245,8 +246,10 @@ export default function WorksheetList({ view }: { view: View }) {
 
   // 행 부제: 유형 트리에 실제로 있는 유형명만 사용(옛 시드의 내부 id 노출 방지),
   // 유효한 이름이 없으면 유형 범위 생략
+  // 🔴 problems.find 금지 — 문제은행 66만 문항을 행·문항마다 훑어 목록이 28초씩 멈췄다(lib/probIndex.ts)
   function rangeSummary(w: Worksheet): string {
-    const ps = w.problemIds.map(pid => problems.find(p => p.id === pid)).filter(p => p != null)
+    const byId = probIndex(problems)
+    const ps = w.problemIds.map(pid => byId.get(pid)).filter(p => p != null)
     if (ps.length === 0) return '0문제'
     const avg = ps.reduce((a, p) => a + p.diff, 0) / ps.length
     const diffLabel = DIFF_LABEL[Math.round(avg) as 1 | 2 | 3 | 4 | 5]

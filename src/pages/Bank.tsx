@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { CURRICULA, curriculumFor, typeName, typeUnitName } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
+import { countByType } from '../lib/probIndex'
 import MathText from '../components/MathText'
 import ProblemContent from '../components/ProblemContent'
 import GradeSelect from '../components/GradeSelect'
@@ -39,7 +40,7 @@ export default function Bank() {
                   <div key={s.id} className={s.name === m.name ? '' : 'ml-2'}>
                     {s.name !== m.name && <div className="mt-0.5 text-[11px] font-semibold text-ink2/80">{s.name}</div>}
                     {s.types.map(t => {
-                      const n = problems.filter(p => p.typeId === t.id).length
+                      const n = countByType(problems).get(t.id) ?? 0
                       return (
                         <button key={t.id} onClick={() => setTypeFilter(t.id)}
                           className={`ml-2 block w-[calc(100%-8px)] rounded px-2 py-1 text-left text-xs ${typeFilter === t.id ? 'bg-pine-soft font-bold text-pine-dark' : 'text-ink2 hover:bg-paper2'}`}>
