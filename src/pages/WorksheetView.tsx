@@ -350,7 +350,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         const { buildSheetPdf, savePdf, printPdf } = mod
         const doc = await buildSheetPdf()
         const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
-        if (job.act === 'print') printPdf(doc)
+        if (job.act === 'print') printPdf(doc, filename)
         else savePdf(doc, filename)
       } catch (e) {
         alert('PDF 생성에 실패했습니다. 잠시 후 다시 시도해주세요.\n' + String(e).slice(0, 120))
