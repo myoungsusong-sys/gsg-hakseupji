@@ -7,6 +7,7 @@ import MathText, { isImageUrl } from '../components/MathText'
 import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
 import { isStaleChunkError } from '../lib/staleChunk'
+import { poolStagesFor } from '../lib/wsPools'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -118,7 +119,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const { id } = useParams()
   const nav = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
-  const { worksheets, problems } = useStore()
+  const { worksheets, problems, ensureCourse, poolLoaded } = useStore()
   // 인쇄 작업(job): 지정 부분만 렌더 → 매쓰플랫처럼 문제지/빠른정답/정답해설/OMR 따로 PDF 저장.
   const [job, setJob] = useState<PrintJob | null>(null)
   // 개별 PDF(each) 모드: 남은 부들의 순차 인쇄 큐 — 이전 print() 리턴 후 다음 실행
@@ -135,16 +136,38 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const theme = ws ? THEMES[ws.theme] : THEMES.pine
   const opts = ws?.options ?? DEFAULT_SHEET_OPTIONS
 
+  /* ── 조판 0단계: 문항이 든 문제은행을 불러온다 (lib/wsPools.ts — 무한 「조판 중…」 수정, 2026-09-21) ──
+     같은 학년·과목 → 같은 학교급 → 과목 전체 순으로, 못 찾은 문항이 있을 때만 다음 단계로 넓힌다.
+     끝까지 못 찾은 문항은 빼고 조판한다 — 어떤 경우에도 멈춰 있지 않는다. */
+  const stages = useMemo(() => (ws ? poolStagesFor(ws.grade, ws.subject) : []), [ws?.grade, ws?.subject])   // eslint-disable-line react-hooks/exhaustive-deps
+  const missingIds = useMemo(() => {
+    if (!ws) return 0
+    const have = new Set(items.map(p => p.id))
+    return (ws.problemIds ?? []).filter(pid => !have.has(pid)).length
+  }, [ws, items])
+  const [stage, setStage] = useState(0)
+  useEffect(() => { setStage(0) }, [ws?.id])
+  useEffect(() => {
+    if (!ws || missingIds === 0 || stage >= stages.length) return
+    const cs = stages[stage]
+    cs.forEach(c => ensureCourse(c))
+    if (cs.every(c => poolLoaded.has(c))) setStage(n => n + 1)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws?.id, missingIds, stage, stages, poolLoaded])
+  const poolsSettled = !!ws && (missingIds === 0 || stage >= stages.length)
+
   /* ── 조판 1단계: 이미지 원본 크기 로드 (로드 완료까지 "조판 중…") ── */
   const [imgDims, setImgDims] = useState<Dims | null>(null)
   const [measured, setMeasured] = useState<Record<string, number> | null>(null)
   const measRef = useRef<HTMLDivElement>(null)
   const measuredRef = useRef(false)      // soon() 이 rAF·setTimeout 둘 다 부르므로 중복 측정 방지
 
-  const layoutKey = ws ? `${ws.id}|${(ws.problemIds ?? []).join(',')}|${JSON.stringify(opts)}|${ws.theme}` : ''
+  // 🔴 실제로 찾은 문항 id 로 키를 만든다 — 문제은행이 늦게 도착해도 다시 조판한다
+  //    (예전엔 problemIds 로 만들어서, 문항이 비어 있던 첫 조판 결과에 그대로 굳었다)
+  const layoutKey = ws && poolsSettled ? `${ws.id}|${items.map(p => p.id).join(',')}|${JSON.stringify(opts)}|${ws.theme}` : ''
   useEffect(() => {
     setImgDims(null); setMeasured(null); measuredRef.current = false
-    if (!ws) return
+    if (!ws || !poolsSettled) return
     let alive = true
     const urls = new Set<string>()
     for (const p of items) {
@@ -680,11 +703,25 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         </div>
       )}
 
-      {/* 조판 중 스피너 (이미지·폰트 로드 → 실측 → 페이지 분배) */}
-      {!ready && (
+      {/* 끝까지 못 찾은 문항 — 빼고 인쇄한다는 것을 알린다 */}
+      {poolsSettled && missingIds > 0 && items.length > 0 && (
+        <div className="no-print mb-3 rounded-xl border border-amber/50 bg-amber-soft/40 px-4 py-2 text-xs text-ink">
+          ⚠️ 이 학습지 문항 {ws.problemIds.length}개 중 <b>{missingIds}개</b>를 문제은행에서 찾지 못해 빼고 만들었습니다.
+        </div>
+      )}
+      {poolsSettled && items.length === 0 && (
+        <div className="no-print mx-auto max-w-md rounded-2xl border border-line bg-white p-10 text-center text-sm text-ink2">
+          이 학습지의 문항을 문제은행에서 찾지 못했습니다. 새로고침한 뒤에도 같으면 학습지를 다시 만들어 주세요.
+        </div>
+      )}
+
+      {/* 조판 중 스피너 (문제은행 → 이미지·폰트 로드 → 실측 → 페이지 분배) */}
+      {!ready && !(poolsSettled && items.length === 0) && (
         <div className="no-print mx-auto flex max-w-md items-center justify-center gap-3 rounded-2xl border border-line bg-white p-10 text-sm text-ink2">
           <span className="inline-block h-5 w-5 animate-spin rounded-full border-2 border-line border-t-pine" />
-          조판 중… (문항 이미지를 불러와 A4 페이지에 배치하고 있습니다)
+          {poolsSettled
+            ? '조판 중… (문항 이미지를 불러와 A4 페이지에 배치하고 있습니다)'
+            : `문항 불러오는 중… (문제은행 ${Math.min(stage + 1, stages.length)}/${stages.length}단계)`}
         </div>
       )}
 
