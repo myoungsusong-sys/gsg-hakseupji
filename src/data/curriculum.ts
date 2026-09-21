@@ -2912,13 +2912,26 @@ export function subjectOfType(typeId: string): '수학' | '과학' | '사회' | 
   return _typeSubject.get(typeId)
 }
 
+// 🔴 유형 id 색인 (2026-09-21) — typeName 등이 부를 때마다 eachType() 로 **전 과정 유형 배열을 새로 만들어**
+//    처음부터 찾았다. 학습지 목록이 문항마다 typeName 을 두 번씩 불러(문항 5,922개) ⋮ 한 번에 1.7초가 걸렸다.
+//    CURRICULA 는 실행 중 바뀌지 않으므로(subjectOfType 과 같은 전제) 한 번만 만든다. 같은 id 는 find 처럼 앞의 것.
+type TypeEntry = { t: TypeNode; s: SubUnit; m: MidUnit; u: BigUnit; c: Curriculum }
+let _typeIndex: Map<string, TypeEntry> | null = null
+function typeEntry(typeId: string): TypeEntry | undefined {
+  if (!_typeIndex) {
+    _typeIndex = new Map()
+    for (const x of eachType()) if (!_typeIndex.has(x.t.id)) _typeIndex.set(x.t.id, x)
+  }
+  return _typeIndex.get(typeId)
+}
+
 export function typeName(typeId: string): string {
-  return eachType().find(x => x.t.id === typeId)?.t.name ?? typeId
+  return typeEntry(typeId)?.t.name ?? typeId
 }
 
 // "대단원 · 중단원" (범위 요약용)
 export function typeUnitName(typeId: string): string {
-  const x = eachType().find(y => y.t.id === typeId)
+  const x = typeEntry(typeId)
   return x ? `${x.u.name} · ${x.m.name}` : ''
 }
 
@@ -2945,7 +2958,7 @@ export function bigUnitNameOfType(typeId: string): string {
 
 // 유형이 속한 과정의 학년 표기 — 중·초는 '중2-1'식, 고등은 과목명('미적분Ⅰ' 등)
 export function courseTagOfType(typeId: string): string {
-  const x = eachType().find(y => y.t.id === typeId)
+  const x = typeEntry(typeId)
   if (!x) return ''
   const c = x.c
   return c.grade.startsWith('고') ? c.label.replace(' (22개정)', '') : c.grade
@@ -2953,7 +2966,7 @@ export function courseTagOfType(typeId: string): string {
 
 // 유형이 속한 소단원 id (개념 매칭용)
 export function typeSubUnitId(typeId: string): string {
-  return eachType().find(x => x.t.id === typeId)?.s.id ?? ''
+  return typeEntry(typeId)?.s.id ?? ''
 }
 
 // ── 학습지 → 로드해야 할 과정 목록 ────────────────────────────────
