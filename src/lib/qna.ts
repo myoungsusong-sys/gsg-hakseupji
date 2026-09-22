@@ -120,6 +120,26 @@ export function allQuestions(limit = 60): Promise<Question[]> {
   return 읽기(`${접두}%`, limit)
 }
 
+/** 워커(아이맥) 상태 보고 — 워커가 5분마다·단계가 바뀔 때 서버 wcfg_qna_beat 에 쓴다 */
+export interface WorkerBeat {
+  at: string                                   // 서버가 받은 시각
+  host?: string                                // 워커 맥 이름
+  시작?: string                                 // 워커가 켜진 시각
+  상태?: string                                 // 대기중 · 처리중 · 한도대기 · 오류
+  현재?: { 질문?: string; 학생?: string; 단계?: string; 시작?: string } | null
+  오늘?: { 날짜?: string; 완료?: number; 보류?: number; 실패?: number }
+  최근오류?: { at: string; 글: string }[]
+  최근기록?: string[]
+  설정버전?: number | null
+}
+
+export async function workerBeat(): Promise<WorkerBeat | null> {
+  if (!supabase) return null
+  const { data, error } = await supabase.from('hj_settings').select('data').eq('id', 'wcfg_qna_beat').maybeSingle()
+  if (error) throw new Error(error.message.slice(0, 200))
+  return (data as any)?.data?.value ?? null
+}
+
 /** 질문 지우기 — 학생이 잘못 올렸을 때 */
 export async function removeQuestion(id: string): Promise<void> {
   if (!supabase) return

@@ -200,6 +200,17 @@ async function handleQna(p: any, res: any) {
       await qnaWrite(id, { 틀, 설정, 버전, updatedAt: new Date().toISOString(), by: String(p.by || '').slice(0, 60) })
       res.status(200).json({ ok: true, 버전 }); return
     }
+    // ⑤ 워커 상태 보고(박동) — 아이맥 워커가 5분마다·단계가 바뀔 때 보낸다. 어느 맥·선생님 앱에서든 본다 (2026-09-22)
+    //    행 id 'wcfg_qna_beat' (부팅 로드·실시간 처리에서 빠진다). 쓰기는 워커 키, 읽기는 워커 키 또는 선생님 앱(직접 조회).
+    if (act === 'qna-beat' || act === 'qna-beat-get') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const id = 'wcfg_qna_beat'
+      if (act === 'qna-beat-get') { res.status(200).json({ ok: true, beat: (await qnaRow(id)) ?? null }); return }
+      const b = p.beat && typeof p.beat === 'object' ? p.beat : {}
+      if (JSON.stringify(b).length > 20_000) { res.status(400).json({ error: '상태가 너무 큽니다.' }); return }
+      await qnaWrite(id, { ...b, at: new Date().toISOString() })
+      res.status(200).json({ ok: true }); return
+    }
     if (act === 'qna-done' || act === 'qna-fail') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
       const id = `qna_${String(p.id || '')}`
