@@ -90,7 +90,11 @@ async function rows(table: string): Promise<{ rows: { id: string; data: unknown 
     let q = supabase.from(table).select('id, data').range(from, from + PAGE - 1)
     // 설정 테이블의 실시간 스냅샷(live_*)·풀이 녹화(replay_*) 행은 크고(이미지·이벤트 로그)
     // 부팅에 불필요하다 — 전용 API(lib/live.ts·lib/replay.ts)로만 읽으므로 부팅 로드에서 제외
+    // 🔴 qna_*(문제 질문함)·wcfg_*(질문 워커 설정)도 뺀다 (2026-09-22). 빠져 있어서 학생앱을 켤 때마다
+    //    «모든 학생의 질문»(이름·질문·사진 주소·학생 맥락)을 같이 받고 있었다 — 개인정보이자 egress.
+    //    질문함은 lib/qna.ts 가 «본인 것만 + limit» 으로 따로 읽는다.
     if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%').not('id', 'like', 'rubric_%')
+      .not('id', 'like', 'qna_%').not('id', 'like', 'wcfg_%')
     const { data, error } = await q
     if (error) {
       console.warn('[load 실패]', table, error.message, `— ${out.length}행까지 받음. 이 표는 갱신하지 않는다.`)
@@ -259,7 +263,7 @@ export const cloud = {
         const id = payload?.new?.id ?? payload?.old?.id
         // qna_* (문제 질문함)도 같은 이유로 무시한다 — 질문/해설이 오갈 때마다 전 기기가
         // 9개 테이블을 다시 받으면 egress 가 터진다(2026-09-02 실사고). 질문함은 자체 폴링으로 읽는다.
-        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_') || id.startsWith('rubric_') || id.startsWith('qna_'))) return
+        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_') || id.startsWith('rubric_') || id.startsWith('qna_') || id.startsWith('wcfg_'))) return
         onChange()
       })
     ch.subscribe()

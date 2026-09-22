@@ -177,6 +177,25 @@ async function handleQna(p: any, res: any) {
       res.status(200).json({ ok: true, q }); return
     }
     // ③ 워커 — 완료 / 실패
+    // ④ 워커 설정(지시문 틀·설정값) — 어느 맥에서든 고쳐 올리면 워커가 다음 질문부터 쓴다 (2026-09-22)
+    //    행 id 'wcfg_qna' — 부팅 로드·실시간 구독에서 빠진다(backend.ts). 워커 키가 있어야 읽고 쓴다.
+    if (act === 'qna-config' || act === 'qna-config-set') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const id = 'wcfg_qna'
+      if (act === 'qna-config') { res.status(200).json({ ok: true, cfg: (await qnaRow(id)) ?? null }); return }
+      const 틀 = p.cfg?.틀
+      if (!틀 || typeof 틀 !== 'object' || !Object.keys(틀).length) { res.status(400).json({ error: '틀이 비어 있습니다.' }); return }
+      for (const [k, v] of Object.entries(틀)) {
+        if (!/^[\w가-힣.]{1,40}\.txt$/.test(k) || typeof v !== 'string' || v.length > 60_000) {
+          res.status(400).json({ error: `틀 파일이 이상합니다: ${k}` }); return
+        }
+      }
+      const 설정 = p.cfg?.설정 && typeof p.cfg.설정 === 'object' ? p.cfg.설정 : {}
+      const cur = await qnaRow(id)
+      const 버전 = (Number(cur?.버전) || 0) + 1
+      await qnaWrite(id, { 틀, 설정, 버전, updatedAt: new Date().toISOString(), by: String(p.by || '').slice(0, 60) })
+      res.status(200).json({ ok: true, 버전 }); return
+    }
     if (act === 'qna-done' || act === 'qna-fail') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
       const id = `qna_${String(p.id || '')}`
