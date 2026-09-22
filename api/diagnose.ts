@@ -96,9 +96,13 @@ function sbEnv() {
 async function sbRest(path: string, init: any = {}) {
   const { url, key } = sbEnv()
   if (!url || !key) throw new Error('서버에 Supabase 설정이 없습니다(SUPABASE_SERVICE_ROLE_KEY).')
+  // 🔴 새 형식 키(sb_secret_…)는 JWT 가 아니다 — Authorization 에 넣으면 관리자 권한으로 인정되지 않을 수 있다
+  //    (2026-09-22: wcfg_qna 저장이 「row-level security」 401 로 막혔다). apikey 에만 넣는다.
+  //    옛 JWT 키(eyJ…)는 종전대로 둘 다 보낸다.
+  const auth = key.startsWith('eyJ') ? { Authorization: `Bearer ${key}` } : {}
   const r = await fetch(`${url}${path}`, {
     ...init,
-    headers: { apikey: key, Authorization: `Bearer ${key}`, ...(init.headers || {}) },
+    headers: { apikey: key, ...auth, ...(init.headers || {}) },
   })
   return r
 }
