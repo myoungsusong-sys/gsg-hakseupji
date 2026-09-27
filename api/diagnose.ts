@@ -161,7 +161,8 @@ async function handleQna(p: any, res: any) {
       // 진단 화면(워커가 실패한 순간의 ChatGPT 화면) — 다른 맥·선생님 앱에서 원격으로 원인을 본다 (2026-09-27)
       if (kind === 'diag') {
         if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
-        const name = String(p.name || 'diag').replace(/[^\w가-힣.-]/g, '_').slice(0, 60)
+        // Storage 는 한글 경로를 거부한다(InvalidKey, 9/27 실측) → 영문·숫자만
+        const name = (String(p.name || '').replace(/[^A-Za-z0-9_.-]/g, '').slice(0, 40)) || 'diag'
         const url = await qnaUpload(`diag/${new Date().toISOString().replace(/[:.]/g, '-')}_${name}.png`, p.b64, 'image/png')
         res.status(200).json({ ok: true, url }); return
       }
