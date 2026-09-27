@@ -137,7 +137,7 @@ export interface WorkerBeat {
   상태?: string                                 // 대기중 · 처리중 · 한도대기 · 오류
   현재?: { 질문?: string; 학생?: string; 단계?: string; 시작?: string } | null
   오늘?: { 날짜?: string; 완료?: number; 보류?: number; 실패?: number }
-  최근오류?: { at: string; 글: string }[]
+  최근오류?: { at: string; 글: string; 화면?: string }[]   // 화면 = 실패한 순간의 ChatGPT 화면(진단용)
   최근기록?: string[]
   설정버전?: number | null
 }

@@ -156,10 +156,17 @@ async function handleQna(p: any, res: any) {
     // ① 사진 올리기 — 학생의 문제 사진(shot) / 워커의 해설 이미지(answer)
     if (act === 'qna-upload') {
       const id = String(p.questionId || '')
-      const kind = p.kind === 'answer' ? 'answer' : 'shot'
+      const kind = p.kind === 'answer' ? 'answer' : p.kind === 'diag' ? 'diag' : 'shot'
+      if (typeof p.b64 !== 'string' || p.b64.length < 100) { res.status(400).json({ error: '사진이 비어 있습니다.' }); return }
+      // 진단 화면(워커가 실패한 순간의 ChatGPT 화면) — 다른 맥·선생님 앱에서 원격으로 원인을 본다 (2026-09-27)
+      if (kind === 'diag') {
+        if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+        const name = String(p.name || 'diag').replace(/[^\w가-힣.-]/g, '_').slice(0, 60)
+        const url = await qnaUpload(`diag/${new Date().toISOString().replace(/[:.]/g, '-')}_${name}.png`, p.b64, 'image/png')
+        res.status(200).json({ ok: true, url }); return
+      }
       if (!/^q-[\w-]{4,80}$/.test(id)) { res.status(400).json({ error: '질문 id 형식이 아닙니다.' }); return }
       if (kind === 'answer' && !qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
-      if (typeof p.b64 !== 'string' || p.b64.length < 100) { res.status(400).json({ error: '사진이 비어 있습니다.' }); return }
       const url = await qnaUpload(`${id}/${kind}.jpg`, p.b64, 'image/jpeg')
       res.status(200).json({ ok: true, url }); return
     }

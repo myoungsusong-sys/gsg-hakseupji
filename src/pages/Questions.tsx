@@ -155,7 +155,8 @@ function WorkerStatus({ beat }: { beat: WorkerBeat | null | undefined }) {
             <div>
               <div className="mb-1 font-bold text-rose-700">최근 오류</div>
               {beat.최근오류.slice().reverse().map((e, i) => (
-                <div key={i} className="font-mono"><span className="text-ink2">{e.at.slice(5, 16).replace('T', ' ')}</span> {e.글}</div>
+                <div key={i} className="font-mono"><span className="text-ink2">{e.at.slice(5, 16).replace('T', ' ')}</span> {e.글}
+                  {e.화면 && <a href={e.화면} target="_blank" rel="noreferrer" className="ml-1.5 font-sans font-semibold text-pine-dark underline">📷 화면</a>}</div>
               ))}
             </div>
           )}
