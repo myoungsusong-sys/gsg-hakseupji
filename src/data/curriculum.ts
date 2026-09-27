@@ -2869,16 +2869,26 @@ export function defaultCurriculumForGrade(grade: string): string {
   if (grade === '고1') return 'h-cm1'
   if (grade === '고2') return 'h-alg'
   if (grade === '고3') return 'h-calc2'
-  const exact = CURRICULA.find(c => c.grade === grade)   // '중1-1'·'초3-2' 과정형
+  // 🔴 수학 과정을 먼저 찾는다 (2026-09-27). 9/5 영어·국어 트리(eng-m2·kor-m2 = 학년 '중2' 그대로)와
+  //    중3 과학(m-sci3 = '중3')이 들어온 뒤 '중1'→영어, '중2'→영어, '중3'→과학 으로 잡혔다.
+  //    → 학생 챌린지·진단평가·강의노트 확인의 기본 과정, 학년이 '중2' 인 학습지(기본과제 등)의 문제은행이 틀렸다.
+  //    과목이 정해진 경우는 coursesForWorksheet(grade, subject) 가 그 과목 과정을 따로 붙인다.
+  const 수학 = (c: Curriculum) => (c.subject ?? '수학') === '수학'
+  const exact = CURRICULA.find(c => c.grade === grade && 수학(c))   // '중1-1'·'초3-2' 과정형
   if (exact) return exact.id
-  // 고등 과목명 ('공통수학1'·'대수'·'미적분Ⅰ'·'확률과 통계'·'미적분Ⅱ'·'기하' — 시중교재 grade 형식)
-  const byLabel = CURRICULA.find(c => c.label.startsWith(grade))
-  if (byLabel) return byLabel.id
-  const m = grade.match(/^(초|중)(\d)$/)                  // '중2'·'초5' → 그 학년 1학기
+  const m = grade.match(/^(초|중)(\d)$/)                  // '중2'·'초5' → 그 학년 1학기 수학
   if (m) {
-    const first = CURRICULA.find(c => c.grade === `${m[1]}${m[2]}-1`)
+    const first = CURRICULA.find(c => c.grade === `${m[1]}${m[2]}-1` && 수학(c))
     if (first) return first.id
   }
+  // 고등 과목명 ('공통수학1'·'대수'·'미적분Ⅰ'·'확률과 통계'·'미적분Ⅱ'·'기하' — 시중교재 grade 형식)
+  const byLabel = CURRICULA.find(c => c.label.startsWith(grade) && 수학(c))
+  if (byLabel) return byLabel.id
+  // 수학이 아닌 과정명('통합과학2' 등) — 그 과목 과정
+  const exactAny = CURRICULA.find(c => c.grade === grade)
+  if (exactAny) return exactAny.id
+  const byLabelAny = CURRICULA.find(c => c.label.startsWith(grade))
+  if (byLabelAny) return byLabelAny.id
   return 'm1-1'
 }
 
@@ -2984,6 +2994,14 @@ export function coursesForWorksheet(grade: string, subject?: '수학' | '과학'
     if (c.grade !== grade) continue
     if (subject && (c.subject ?? '수학') !== subject) continue
     out.add(c.id)
+  }
+  // 학기 없이 '중2'·'초5' 로만 적힌 수학 학습지(기본과제 등)는 2학기 문제일 수도 있다 → 두 학기를 다 붙인다
+  const m = grade.match(/^(초|중)(\d)$/)
+  if (m && (!subject || subject === '수학')) {
+    for (const sem of ['1', '2']) {
+      const c = CURRICULA.find(c => c.grade === `${m[1]}${m[2]}-${sem}` && (c.subject ?? '수학') === '수학')
+      if (c) out.add(c.id)
+    }
   }
   return [...out]
 }

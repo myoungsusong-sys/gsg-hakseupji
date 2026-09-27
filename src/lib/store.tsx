@@ -9,7 +9,9 @@ import { SEED_PROBLEMS } from '../data/problems'
 import type { MasteryState } from './mastery'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { loadPool } from '../data/pool'
-import { defaultCurriculumForGrade } from '../data/curriculum'
+import { coursesForWorksheet, defaultCurriculumForGrade } from '../data/curriculum'
+import { useAuthEmail } from './auth'
+import { isStudentEmail, matchStudentByEmail } from './role'
 import { cloud, loadAll, noteId, type CloudData, type LoadFail } from './backend'
 import { ALL, setBranch, useBranchScope } from './branch'
 
@@ -299,6 +301,29 @@ function toCloud(s: Persisted): CloudData {
   }
 }
 
+/** 앱을 열 때 미리 불러올 문제은행 과정. studentEmail 이 있으면 «그 학생에게 필요한 것만».
+ *  학생 목록이 아직 없어 본인을 못 찾으면 null(아무것도 안 불러오고, 도착하면 다시 돈다). */
+export function autoPoolCourses(
+  st: Pick<Persisted, 'students' | 'worksheets' | 'workbooks' | 'assignments'>,
+  studentEmail: string | null,
+): Set<string> | null {
+  const wanted = new Set<string>()
+  if (studentEmail) {
+    const me = matchStudentByEmail(st.students, studentEmail)
+    if (!me) return null
+    for (const c of coursesForWorksheet(me.grade, '수학')) wanted.add(c)
+    const mine = new Set(st.assignments.filter(a => a.studentId === me.id).map(a => a.worksheetId))
+    // 과목이 없는 옛 학습지는 수학이다 (subject 없으면 같은 학년의 영어·국어까지 붙이지 않게)
+    for (const w of st.worksheets) if (!w.deletedAt && mine.has(w.id)) for (const c of coursesForWorksheet(w.grade, w.subject ?? '수학')) wanted.add(c)
+    for (const w of st.workbooks) if (w.studentId === me.id) wanted.add(poolCourseOfWb(w.course) ?? defaultCurriculumForGrade(w.grade))
+    return wanted
+  }
+  for (const s of st.students) if (s.active) wanted.add(defaultCurriculumForGrade(s.grade))
+  for (const w of st.worksheets) if (!w.deletedAt) wanted.add(defaultCurriculumForGrade(w.grade))
+  for (const w of st.workbooks) wanted.add(poolCourseOfWb(w.course) ?? defaultCurriculumForGrade(w.grade))
+  return wanted
+}
+
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<Persisted>(load)
   const [synced, setSynced] = useState(!cloud.on)
@@ -382,14 +407,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     })
   }
   // 사용 흔적이 있는 과정 자동 로드 (학생 학년·학습지·교재)
+  // 🔴 2026-09-27 명수쌤 「학습지앱이 반응이 좀 느려」 — 학생 태블릿도 선생님과 똑같이 «전체 학생·전체 학습지·전체 교재»
+  //    기준으로 과정 25개쯤(문제은행 66만 문항, 브라우저 메모리 약 1GB)을 불러오고 있었다.
+  //    학생 기기는 «본인 학년 기본 과정 + 본인에게 나간 학습지 + 본인 교재» 만 불러온다.
+  //    (풀기·결과·챌린지 화면은 필요한 과정을 각자 ensureCourse 로 따로 불러온다)
+  const authEmail = useAuthEmail()
+  const 학생기기 = !!authEmail && isStudentEmail(authEmail)
   useEffect(() => {
-    const wanted = new Set<string>()
-    for (const s of state.students) if (s.active) wanted.add(defaultCurriculumForGrade(s.grade))
-    for (const w of state.worksheets) if (!w.deletedAt) wanted.add(defaultCurriculumForGrade(w.grade))
-    for (const w of state.workbooks) wanted.add(poolCourseOfWb(w.course) ?? defaultCurriculumForGrade(w.grade))
-    wanted.forEach(c => ensureCourse(c))
+    const wanted = autoPoolCourses(state, 학생기기 ? authEmail : null)
+    if (wanted) wanted.forEach(c => ensureCourse(c))
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [state.students, state.worksheets, state.workbooks])
+  }, [state.students, state.worksheets, state.workbooks, state.assignments, 학생기기, authEmail])
   // 🔴 과정 파일 사이에 **같은 문항이 겹친다** (실측 2026-08-25: mf1131040 이
   //    pool-m2-1.json 과 pool-m2-2.json 양쪽에 있다). 그냥 flat 하면 문제은행에
   //    같은 문항이 두 벌 들어가고, 그러면 유형별 문항 목록이 [A, A, B, …] 가 된다.

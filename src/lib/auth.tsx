@@ -45,6 +45,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
 
+/** 로그인 이메일만 — AuthProvider 밖에서도 멈추지 않는다(저장소가 학생 기기인지 볼 때 쓴다) */
+export function useAuthEmail(): string | null {
+  return useContext(Ctx)?.email ?? null
+}
+
 export function useAuth(): AuthState {
   const s = useContext(Ctx)
   if (!s) throw new Error('AuthProvider missing')
