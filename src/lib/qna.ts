@@ -77,7 +77,16 @@ export async function askQuestion(args: {
     body: JSON.stringify({ action: 'qna-upload', questionId: id, kind: 'shot', b64 }),
   })
   const up = await r.json().catch(() => ({}))
-  if (!r.ok || !up.url) throw new Error(up.error || '사진을 올리지 못했어요. 잠시 뒤 다시 시도해 주세요.')
+  if (!r.ok || !up.url) {
+    const 원문 = String(up.error || r.status)
+    console.warn('[질문함 업로드 실패]', 원문)
+    // 🔴 2026-09-27: 학생 화면에 「업로드 실패(400) {"statusCode":"404","error":"Bucket not found"…}」 영문 JSON 이 그대로 떴다.
+    //    서버 설정(관리자 키·사진 저장소) 문제는 학생이 할 수 있는 게 없다 → 알아들을 수 있는 말로 바꾼다.
+    if (/Bucket not found|NoSuchBucket|저장 실패|row-level security|Supabase 설정|401|403/.test(원문)) {
+      throw new Error('질문함이 아직 준비 중이에요. 오늘은 선생님께 문제를 직접 보여 주세요 — 준비가 끝나면 여기서 바로 해설을 받을 수 있어요.')
+    }
+    throw new Error('사진을 올리지 못했어요. 인터넷을 확인하고 잠시 뒤 다시 시도해 주세요.')
+  }
 
   const q: Question = {
     id,
