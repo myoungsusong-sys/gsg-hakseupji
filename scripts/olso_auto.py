@@ -191,7 +191,10 @@ if __name__ == '__main__':
             if isinstance(s, tuple) and s and s[0] == '기다림':
                 전[c] = s[1]; continue
             try:
-                ok = 한과정(c)
+                sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+                from with_lock import 잠금   # 수동 배포와 git 이 겹치지 않게(2026-09-28 역사②-1 커밋 누락 사고)
+                with 잠금():
+                    ok = 한과정(c)
             except Exception as e:
                 찍기(f'🔴 {c} 처리 중 오류 — {str(e)[:300]} · 3분 뒤 다시')
                 전.pop(c, None)
