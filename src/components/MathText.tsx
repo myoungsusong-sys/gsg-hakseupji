@@ -19,9 +19,12 @@ export function mathToHtml(text: string): string {
         return escapeHtml(part)
       }
     }
-    // 수식 밖 텍스트: 이스케이프한 **뒤에** `**굵게**` 만 태그로 되살린다.
+    // 수식 밖 텍스트: 이스케이프한 **뒤에** `**굵게**` 와 `<u>밑줄</u>` 만 태그로 되살린다.
     // (이스케이프 전에 하면 본문의 < > 가 태그로 새어 들어간다)
-    return escapeHtml(part).replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+    // 🔴 2026-09-28: 통합사회 「옳지 <u>않은</u> 것은?」 43문항이 학생 화면에 태그 글자 그대로 보였다.
+    return escapeHtml(part)
+      .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+      .replace(/&lt;u&gt;((?:(?!&lt;).)+?)&lt;\/u&gt;/g, '<u>$1</u>')
   }).join('')
 }
 
