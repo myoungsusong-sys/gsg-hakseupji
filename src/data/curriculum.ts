@@ -2846,6 +2846,10 @@ export const CURRICULA: Curriculum[] = [
   build("m-his1-2", "중2-2", "올쏘 중학 역사①-2 (2022개정·올쏘)", OLSO_TREES["m-his1-2"] ?? OLSO_SECTIONS, '역사'),
   build("m-his2-1", "중3-1", "올쏘 중학 역사②-1 (2022개정·올쏘)", OLSO_TREES["m-his2-1"] ?? OLSO_SECTIONS, '역사'),
   build("m-his2-2", "중3-2", "올쏘 중학 역사②-2 (2022개정·올쏘)", OLSO_TREES["m-his2-2"] ?? OLSO_SECTIONS, '역사'),
+  // 🆕 고1 한국사1·2 (22개정) — 2026-09-28 명수쌤 「곧 시험 — 전 과목」. 올쏘 개념 ALL·기출 ALL 한국사로 세운 트리·유사유형
+  //    (트리는 curriculum-olso.ts 의 OLSO_TREES — 생성분이 붙기 전에는 예비 틀)
+  build("h-khis1", "고1", "한국사1 (22개정)", OLSO_TREES["h-khis1"] ?? OLSO_SECTIONS, '역사'),
+  build("h-khis2", "고1", "한국사2 (22개정)", OLSO_TREES["h-khis2"] ?? OLSO_SECTIONS, '역사'),
   // 🆕 영어·국어 — 유형 트리는 학년마다 같다(잉글리시플랫도 같은 분류를 학년에 공통으로 쓴다).
   //    학교별 교과서(출판사) 차이는 교재 쪽에서 붙이고, 사다리는 유형으로만 굴린다.
   build("eng-m1", "중1", "중1 영어", ENG_SECTIONS, '영어'),

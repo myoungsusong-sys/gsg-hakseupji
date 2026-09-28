@@ -68,6 +68,11 @@ export function coursesForExamSubject(subject: string, grade: string, sem: 1 | 2
       push(`m-his${a}-${sem}`, `m-his${a}-${o}`, `m-his${b}-${sem}`, `m-his${b}-${o}`)
       return out
     }
+    // 🆕 고등 한국사(22개정 고1 한국사1·2) — 2026-09-28. 학기로 1·2 를 먼저, 나머지를 뒤에
+    if (lv === '고' && /한국사|역사/.test(name)) {
+      push(sem === 1 ? 'h-khis1' : 'h-khis2', 'h-khis1', 'h-khis2')
+      return out
+    }
     if (/한국사|역사/.test(name)) return []
     if (lv === '중') {
       const a = Math.min(n, 2), b = a === 1 ? 2 : 1, o = sem === 1 ? 2 : 1

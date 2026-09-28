@@ -17,7 +17,14 @@ import glob, json, os, re, shutil, subprocess, sys, time, unicodedata
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 F = os.path.expanduser('~/Library/CloudStorage/GoogleDrive-myoungsusong@gmail.com/내 드라이브/08_강의제작_AI/학습지앱 (1)/중학사회역사_문제은행/생성분')
-ALL = ['m-soc1-1', 'm-soc1-2', 'm-soc2-1', 'm-soc2-2', 'm-his1-1', 'm-his1-2', 'm-his2-1', 'm-his2-2']
+ALL = ['m-soc2-2', 'm-his1-2', 'm-soc1-2', 'm-his2-2', 'm-soc2-1', 'm-his2-1', 'm-soc1-1', 'm-his1-1', 'h-khis2', 'h-khis1']
+# 과정마다 생성분이 있는 드라이브 폴더(한국사는 따로)
+KHIS = os.path.expanduser('~/Library/CloudStorage/GoogleDrive-myoungsusong@gmail.com/내 드라이브/08_강의제작_AI/학습지앱 (1)/고1한국사_문제은행/생성분')
+def 폴더(c):
+    return KHIS if c.startswith('h-khis') else F
+이름표 = {'m-soc1-1': '중학 사회①-1', 'm-soc1-2': '중학 사회①-2', 'm-soc2-1': '중학 사회②-1', 'm-soc2-2': '중학 사회②-2',
+        'm-his1-1': '중학 역사①-1', 'm-his1-2': '중학 역사①-2', 'm-his2-1': '중학 역사②-1', 'm-his2-2': '중학 역사②-2',
+        'h-khis1': '고1 한국사1', 'h-khis2': '고1 한국사2'}
 ENV = {**os.environ, 'PATH': os.path.expanduser('~/.nvm/versions/node/v24.18.0/bin') + ':' + os.environ.get('PATH', '')}
 C = '①②③④⑤'
 
@@ -31,18 +38,19 @@ def 붙었나(c):
 
 
 def 도착(c, 전):
-    d = os.path.join(F, c)
+    d = os.path.join(폴더(c), c)
     if not os.path.isdir(d):
         return None
     fs = [unicodedata.normalize('NFC', x) for x in os.listdir(d)]
-    if not ('_tree.json' in fs and '_concepts.json' in fs and '_wbmap.json' in fs and any(x.startswith('p-') for x in fs)):
+    채점표필요 = '_wbitems.json' in fs          # 교재 채점표가 있는 과정만 _wbmap 이 필요하다
+    if not ('_tree.json' in fs and '_concepts.json' in fs and (not 채점표필요 or '_wbmap.json' in fs) and any(x.startswith('p-') for x in fs)):
         return None
     sig = (len(fs), sum(os.path.getsize(os.path.join(d, x)) for x in os.listdir(d) if os.path.isfile(os.path.join(d, x))))
     return sig if 전.get(c) == sig else ('기다림', sig)
 
 
 def 복사(c):
-    src = os.path.join(F, c)
+    src = os.path.join(폴더(c), c)
     dst = f'_gen/{c}'
     shutil.rmtree(dst, ignore_errors=True)
     shutil.copytree(src, dst, ignore=shutil.ignore_patterns('_mk'))
@@ -79,6 +87,8 @@ def 관문_문항(c):
 
 def 관문_채점표(c):
     """④ 붙인 뒤 교재 채점표 — «쪽:id» 기준 불일치·트리에 없는 유형"""
+    if not (os.path.exists(f'_gen/{c}/_wbmap.json') and os.path.exists(f'public/wb-match-{c}.json')):
+        return 0, 0, 0                            # 교재 채점표가 없는 과정
     wm = json.load(open(f'_gen/{c}/_wbmap.json'))
     tree = json.load(open(f'_gen/{c}/_tree.json'))
     types = set()
@@ -132,12 +142,12 @@ def 한과정(c):
         if rc != 0:
             찍기('🔴 배포 안 함 —', ' '.join(cmd), '실패\n' + out[-1500:]); return False
     찍기('⑤ tsc·빌드 통과')
-    이름 = {'soc': '사회', 'his': '역사'}[c[2:5]] + {'1-1': '①-1', '1-2': '①-2', '2-1': '②-1', '2-2': '②-2'}[c[-3:]]
-    rc, out = 돌리기([sys.executable, 'scripts/changelog_add.py', f'중학 {이름} 문제은행 {n}문항',
-                     f'올쏘 중학 {이름}(22개정)을 교재 목차대로 단원·유형으로 세우고 새로 지은 {n}문항과 소단원 개념카드를 넣었어요. 교재 채점 문항도 새 유형에 연결돼 교재에서 틀리면 그 유형 연습으로 이어져요.'])
+    이름 = 이름표[c]
+    rc, out = 돌리기([sys.executable, 'scripts/changelog_add.py', f'{이름} 문제은행 {n}문항',
+                     f'올쏘 {이름}(22개정)을 교재 목차대로 단원·유형으로 세우고 새로 지은 {n}문항과 소단원 개념카드를 넣었어요. 교재 채점 문항도 새 유형에 연결돼 교재에서 틀리면 그 유형 연습으로 이어져요.'])
     돌리기(['git', 'add', '-A'])
     rc, out = 돌리기(['git', 'commit', '-q', '-m',
-                     f'올쏘 중학 {이름}: {n}문항 붙임 (olso_auto — 관문 ①~⑤ 통과)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'])
+                     f'올쏘 {이름}: {n}문항 붙임 (olso_auto — 관문 ①~⑤ 통과)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'])
     rc, out = 돌리기(['git', 'push', '-q', 'origin', 'main'], 초=300)
     if rc != 0:
         찍기('🔴 push 실패\n' + out[-800:]); return False

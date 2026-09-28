@@ -10,7 +10,7 @@ import json, os, subprocess, sys, glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
-ALL = ['m-soc1-1', 'm-soc1-2', 'm-soc2-1', 'm-soc2-2', 'm-his1-1', 'm-his1-2', 'm-his2-1', 'm-his2-2']
+ALL = ['m-soc1-1', 'm-soc1-2', 'm-soc2-1', 'm-soc2-2', 'm-his1-1', 'm-his1-2', 'm-his2-1', 'm-his2-2', 'h-khis1', 'h-khis2']
 want = sys.argv[1:] or ALL
 ok = []
 for c in want:
@@ -39,11 +39,11 @@ with open(path, 'w') as f:
 
 node = os.environ.get('NODE', 'node')
 for c in ok:
-    # ② 교재 채점표
-    wm = json.load(open(f'_gen/{c}/_wbmap.json'))
-    p = f'public/wb-match-{c}.json'
-    d = json.load(open(p))
+    # ② 교재 채점표 — 교재 채점표가 없는 과정(고1 한국사 등)은 건너뛴다
     n = 0
+    p = f'public/wb-match-{c}.json'
+    wm = json.load(open(f'_gen/{c}/_wbmap.json')) if os.path.exists(f'_gen/{c}/_wbmap.json') else {}
+    d = json.load(open(p)) if os.path.exists(p) and wm else {}
     for k, items in d.items():
         for it in items:
             # 🔴 2026-09-28: 교재 문항 id(개념01·대표01 …)는 단원마다 다시 쓰인다 → «쪽:id» 로 먼저 찾는다.
@@ -52,7 +52,8 @@ for c in ok:
             t = wm.get(key) or wm.get(it[0])
             if t and it[2] != t:
                 it[2] = t; n += 1
-    json.dump(d, open(p, 'w'), ensure_ascii=False, separators=(',', ':'))
+    if d:
+        json.dump(d, open(p, 'w'), ensure_ascii=False, separators=(',', ':'))
     # ③ 개념카드
     json.dump(json.load(open(f'_gen/{c}/_concepts.json')), open(f'_concepts/{c}.json', 'w'), ensure_ascii=False, indent=1)
     # ④ 문항

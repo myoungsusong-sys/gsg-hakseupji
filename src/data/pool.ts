@@ -35,6 +35,7 @@ export const GEN_ONLY_COURSES: readonly string[] = [
   'h-soc1', 'h-soc2',   // 통합사회1·2 — 씨앗(gen-h-soc*.json)만 있다 (2026-09-05)
   // 중학 사회·역사 — 올쏘 유사유형 씨앗(gen-m-soc*·gen-m-his*.json) (2026-09-28)
   'm-soc1-1', 'm-soc1-2', 'm-soc2-1', 'm-soc2-2', 'm-his1-1', 'm-his1-2', 'm-his2-1', 'm-his2-2',
+  'h-khis1', 'h-khis2',   // 고1 한국사1·2 (22개정) — 올쏘 유사유형 씨앗 (2026-09-28)
 ]
 
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const
