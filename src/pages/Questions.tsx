@@ -141,7 +141,9 @@ export default function Questions() {
                       <p className="mt-1 text-xs text-ink2">
                         📤 전송 {fmt(q.answeredAt)}
                         {q.takenAt && <> · {Math.max(1, Math.round((Date.parse(q.answeredAt) - Date.parse(q.takenAt)) / 60_000))}분 만에</>}
-                        {' · '}{q.pushResult === '보냄' ? '📲 폰 알림 보냄' : '앱 안 알림(폰 알림 안 켬)'}
+                        {' · '}{q.pushResult === '보냄' ? '📲 폰 알림 보냄'
+                          : q.pushResult === '구독 없음' ? '앱 안 알림(학생이 폰 알림을 안 켬)'
+                          : q.pushResult ? `📲 폰 알림 못 보냄 — 앱 안 알림만` : '앱 안 알림'}
                         {' · '}{q.seenAt ? <span className="font-bold text-pine-dark">👀 학생 확인 {fmt(q.seenAt)}</span> : <span className="text-amber">아직 안 봄</span>}
                       </p>
                     )}
