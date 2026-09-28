@@ -379,6 +379,8 @@ async function handleQna(p: any, res: any) {
       await qnaWrite(id, q)
       // 📲 완료면 학생 기기로 바로 알린다 — 결과(보냄/구독 없음/실패 …)는 워커 기록에 남도록 돌려준다
       const push = act === 'qna-done' ? await qnaPush(q) : undefined
+      // 선생님 화면 「📲 폰 알림 보냄/앱에서 확인」 — 결과를 질문 줄에 남긴다
+      if (push) { try { await qnaWrite(id, { ...q, pushResult: push }) } catch { /* 알림 결과는 못 적어도 해설은 이미 갔다 */ } }
       res.status(200).json({ ok: true, push }); return
     }
     res.status(400).json({ error: '모르는 동작입니다.' })

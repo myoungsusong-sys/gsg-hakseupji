@@ -35,6 +35,21 @@ export interface Question {
   error?: string               // 실패 사유(선생님 화면에만)
   tries?: number
   push?: PushSubscriptionJSON  // 📲 해설이 오면 알릴 기기(질문 보낸 기기) — qna-done 이 여기로 푸시를 보낸다
+  pushResult?: string          // 📲 폰 알림 결과(보냄 · 구독 없음 · 실패 …) — 서버가 적는다
+  worker?: string              // 만든 워커 칸(맥#칸)
+  takenAt?: string             // 워커가 집은 시각
+  seenAt?: string              // 👀 학생이 질문함에서 해설을 처음 본 시각(학생앱이 적는다)
+}
+
+/** 시험 질문(qna-testq)은 학생 id 가 st-qnatest — 선생님 목록·알림에서 뺀다 */
+export const isTestQuestion = (q: { studentId?: string; sid?: string }) => (q.studentId ?? q.sid) === 'st-qnatest'
+
+/** 해설이 늦는 질문 — 기다림·만드는 중인 채로 20분이 넘었다(워커가 멈췄을 수 있다) */
+export function stuckMinutes(q: { status?: string; st?: string; createdAt?: string; c?: string }): number {
+  const st = q.status ?? q.st
+  if (st !== '대기' && st !== '만드는중') return 0
+  const m = Math.floor((Date.now() - Date.parse(q.createdAt ?? q.c ?? '')) / 60_000)
+  return m >= 20 ? m : 0
 }
 
 /** 질문 1건의 id — 본인 것만 골라 읽으려고 학생 id 를 접두어로 박는다(live_* 와 같은 관례) */
@@ -125,6 +140,31 @@ async function 읽기(like: string, limit: number): Promise<Question[]> {
 /** 내 질문 목록 (최근순) */
 export function myQuestions(studentId: string, limit = 30): Promise<Question[]> {
   return 읽기(`${접두}q-${studentId}-%`, limit)
+}
+
+/** 선생님 알림용 — 질문 줄에서 필요한 칸만(사진·푸시 구독·맥락은 안 받는다, egress) */
+export interface QnaLite {
+  id: string; up: string; st: QnaStatus; name: string; sid: string; text: string
+  c: string; a?: string; e?: string; seen?: string; push?: string
+}
+export async function qnaFeed(limit = 40): Promise<QnaLite[]> {
+  if (!supabase) return []
+  const { data, error } = await supabase.from('hj_settings')
+    .select('id, up:updated_at, st:data->value->>status, name:data->value->>studentName, sid:data->value->>studentId, text:data->value->>text, c:data->value->>createdAt, a:data->value->>answeredAt, e:data->value->>error, seen:data->value->>seenAt, push:data->value->>pushResult')
+    .like('id', `${접두}%`).order('updated_at', { ascending: false }).limit(limit)
+  if (error) throw new Error(error.message.slice(0, 200))
+  return ((data ?? []) as any[]).map(r => ({ ...r, id: String(r.id).slice(접두.length) }) as QnaLite).filter(q => !isTestQuestion(q))
+}
+
+/** 👀 학생이 질문함에서 해설을 봤다 — 처음 한 번만 seenAt 을 적는다(선생님 화면 「학생 확인」) */
+export async function markSeen(list: Question[]): Promise<void> {
+  if (!supabase) return
+  const now = new Date().toISOString()
+  for (const q of list) {
+    if (q.status !== '완료' || q.seenAt) continue
+    const v = { ...q, seenAt: now }
+    await supabase.from('hj_settings').update({ data: { __id: 접두 + q.id, value: v } }).eq('id', 접두 + q.id)
+  }
 }
 
 /** 선생님 질문함 (전체 최근순) */

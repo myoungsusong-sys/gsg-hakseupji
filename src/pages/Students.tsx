@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { ENG_BOOK_OPTIONS } from '../data/engBooks'
 import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '../types'
 import { studentEmailOf, teacherEmailOf } from '../lib/role'
 import { SUPABASE_ON, supabase, signUpAccountClient, signUpStudentClient } from '../lib/supabase'
 import StudentAppPreview from './student/StudentAppPreview'
+import { myQuestions, stuckMinutes, type Question } from '../lib/qna'
 import { BLOOD_TYPES, MBTI_TYPES } from '../lib/persona'
 
 const TABS = ['학생 관리', '지점 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
@@ -952,6 +954,8 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
             )}
           </div>
         )}
+
+        <StudentQnaPanel sid={s.id} onGo={onClose} />
 
         <div className="mt-5 flex flex-wrap items-center gap-2">
           <button type="button" onClick={() => setShowReset(v => !v)}
@@ -2805,6 +2809,56 @@ function ExtraTab({ onGoLab }: { onGoLab: () => void }) {
           )}
         </div>
       ))}
+    </div>
+  )
+}
+
+// ── ❓ 이 학생의 질문·해설 전송 (2026-09-28 명수쌤 「학생별로 질문과 해설지 전송이 선생님앱에서도 뜨게」) ──
+//    학생 정보 창을 열 때 한 번만 읽는다(최근 10건). 자세히는 질문함(?student=)으로.
+function StudentQnaPanel({ sid, onGo }: { sid: string; onGo: () => void }) {
+  const nav = useNavigate()
+  const [list, setList] = useState<Question[] | null>(null)
+  useEffect(() => {
+    if (!SUPABASE_ON) return
+    let alive = true
+    myQuestions(sid, 10).then(l => { if (alive) setList(l) }).catch(() => { if (alive) setList([]) })
+    return () => { alive = false }
+  }, [sid])
+  if (!SUPABASE_ON || list === null) return null
+  const 보냄 = list.filter(q => q.status === '완료').length
+  const 못보냄 = list.filter(q => q.status === '실패' || q.status === '보류' || stuckMinutes(q) > 0).length
+  const fmt = (iso?: string) => {
+    if (!iso) return ''
+    const d = new Date(iso), p = (n: number) => String(n).padStart(2, '0')
+    return `${d.getMonth() + 1}/${d.getDate()} ${p(d.getHours())}:${p(d.getMinutes())}`
+  }
+  return (
+    <div className="mt-5 rounded-xl border border-line bg-paper2/50 px-4 py-3 text-sm">
+      <div className="mb-2 flex items-center gap-2">
+        <b>❓ 질문·해설</b>
+        <span className="text-xs text-ink2">최근 {list.length}건 · 보냄 {보냄}{못보냄 ? ` · ` : ''}</span>
+        {못보냄 > 0 && <span className="text-xs font-bold text-rose-700">못 보냄 {못보냄}</span>}
+        <div className="grow" />
+        {list.length > 0 && (
+          <button type="button" onClick={() => { onGo(); nav(`/questions?student=${encodeURIComponent(sid)}`) }}
+            className="text-xs font-bold text-pine-dark hover:underline">질문함에서 보기 →</button>
+        )}
+      </div>
+      {list.length === 0 ? <div className="text-xs text-ink2">아직 올린 질문이 없어요.</div> : (
+        <div className="grid gap-1.5">
+          {list.slice(0, 5).map(q => (
+            <div key={q.id} className="flex items-center gap-2 text-xs">
+              <span className="w-20 shrink-0 text-ink2">{fmt(q.createdAt)}</span>
+              <span className="min-w-0 grow truncate">{q.text}</span>
+              <span className={`shrink-0 font-bold ${q.status === '완료' ? 'text-pine-dark' : q.status === '실패' || q.status === '보류' || stuckMinutes(q) ? 'text-rose-700' : 'text-amber'}`}>
+                {q.status === '완료' ? `보냄 ${fmt(q.answeredAt)}${q.seenAt ? ' · 👀' : ''}`
+                  : q.status === '실패' ? '🔴 못 보냄' : q.status === '보류' ? '🟡 보류'
+                  : stuckMinutes(q) ? `⏰ ${stuckMinutes(q)}분째` : '만드는 중'}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

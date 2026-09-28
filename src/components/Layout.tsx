@@ -11,17 +11,75 @@ import { teacherByEmail } from '../lib/role'
 import { BrandLogo } from './BrandMark'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
 import AdminChat from './AdminChat'
+import { qnaFeed, stuckMinutes, type QnaLite } from '../lib/qna'
+import { SUPABASE_ON } from '../lib/supabase'
+import { notifyKakao, shouldNotify } from '../lib/notify'
 
 // ── 알림센터: 최근 채점(학생 제출)·출제 이벤트를 알림으로 파생 ─────────
 interface Notif {
   id: string
   date: string   // ISO
   text: string
+  to?: string    // 누르면 갈 화면(질문함 알림 → 그 학생 질문함)
+  warn?: boolean // 🔴 선생님이 손봐야 하는 알림(전송 못 함·늦음)
+}
+
+// ── ❓ 질문함 알림 (2026-09-28 명수쌤 「학생별 질문·해설 전송이 선생님앱에도 뜨게, 전송 못 되면 선생님한테도」) ──
+//    질문 줄은 store 를 타지 않는다(egress) → 필요한 칸만 1분마다 읽는다.
+//    · 질문 도착 · 해설 전송(폰 알림·학생 확인) · 🔴 전송 못 함(실패) · 🟡 보류 · ⏰ 20분 넘게 못 받음
+//    · ⏰ 늦음은 워커가 멈췄을 수 있어(워커는 제 입으로 못 알린다) 명수쌤 텔레그램으로도 보낸다 — 질문마다 6시간에 한 번
+function useQnaNotifs(): { items: Notif[]; attention: number } {
+  const [feed, setFeed] = useState<QnaLite[]>([])
+  useEffect(() => {
+    if (!SUPABASE_ON) return
+    let alive = true
+    const go = async () => {
+      try {
+        const f = await qnaFeed(40)
+        if (!alive) return
+        setFeed(f)
+        for (const q of f) {
+          const m = stuckMinutes(q)
+          if (m && shouldNotify(`qna-stuck-${q.id}`, 360)) {
+            void notifyKakao({ title: '⏰ 질문함 — 해설이 늦어요',
+              text: `${q.name} 학생 질문이 ${m}분째 해설을 못 받았습니다.\n「${q.text.slice(0, 40)}」\n워커(아이맥)가 멈췄을 수 있어요 — 선생님앱 질문함에서 워커 상태를 확인해 주세요.` })
+          }
+        }
+      } catch { /* 다음 차례에 */ }
+    }
+    void go()
+    const t = setInterval(go, 60_000)
+    return () => { alive = false; clearInterval(t) }
+  }, [])
+  const items = useMemo(() => {
+    const out: Notif[] = []
+    for (const q of feed) {
+      const to = `/questions?student=${encodeURIComponent(q.sid)}`
+      out.push({ id: `n-qq-${q.id}`, date: q.c, to, text: `❓ ${q.name} 학생 질문 — 「${q.text.slice(0, 24)}」` })
+      if (q.st === '완료' && q.a) {
+        out.push({ id: `n-qa-${q.id}`, date: q.a, to,
+          text: `✅ ${q.name} 해설 전송${q.push === '보냄' ? ' · 📲 폰 알림' : ''}${q.seen ? ' · 👀 학생 확인' : ''}` })
+      } else if (q.st === '실패') {
+        out.push({ id: `n-qf-${q.id}`, date: q.up, to, warn: true,
+          text: `🔴 ${q.name} 해설 전송 못 함 — 선생님이 직접 답해 주세요${q.e ? ` (${q.e.slice(0, 40)})` : ''}` })
+      } else if (q.st === '보류') {
+        out.push({ id: `n-qh-${q.id}`, date: q.up, to, warn: true,
+          text: `🟡 ${q.name} 해설 보류 — 자동 검수에서 멈췄어요. 선생님 확인이 필요합니다` })
+      } else {
+        const m = stuckMinutes(q)
+        if (m) out.push({ id: `n-qs-${q.id}`, date: new Date(Date.parse(q.c) + 20 * 60_000).toISOString(), to, warn: true,
+          text: `⏰ ${q.name} 질문이 ${m}분째 해설을 못 받았어요 — 워커를 확인해 주세요` })
+      }
+    }
+    return out
+  }, [feed])
+  const attention = feed.filter(q => q.st === '실패' || q.st === '보류' || stuckMinutes(q) > 0).length
+  return { items, attention }
 }
 
 const NOTIF_READ_KEY = 'gsg-notif-read-at'
 
-function useNotifications(): { items: Notif[]; unread: number; markRead: () => void } {
+function useNotifications(extra: Notif[] = []): { items: Notif[]; unread: number; markRead: () => void } {
   const { gradings, assignments, students, worksheets } = useStore()
   const [readAt, setReadAt] = useState<string>(() => {
     try { return localStorage.getItem(NOTIF_READ_KEY) ?? '' } catch { return '' }
@@ -55,8 +113,9 @@ function useNotifications(): { items: Notif[]; unread: number; markRead: () => v
         text: `${name} 학생에게 ${a.kind} 출제 — ${wsOf.get(a.worksheetId) ?? '학습지'}`,
       })
     }
-    return out.sort((a, b) => b.date.localeCompare(a.date)).slice(0, 30)
-  }, [gradings, assignments, students, worksheets])
+    out.push(...extra)
+    return out.sort((a, b) => b.date.localeCompare(a.date)).slice(0, 40)
+  }, [gradings, assignments, students, worksheets, extra])
 
   const unread = readAt ? items.filter(n => n.date > readAt).length : items.length
   const markRead = () => {
@@ -145,7 +204,8 @@ export default function Layout() {
   const [bell, setBell] = useState(false)
   const { entries: changelog, stale, unseen } = useChangelog()
   const [logOpen, setLogOpen] = useState(false)
-  const { items, unread, markRead } = useNotifications()
+  const qna = useQnaNotifs()
+  const { items, unread, markRead } = useNotifications(qna.items)
   // 🔴 선생님 오류·요청 보고에 **누가 올렸는지**를 싣는다. 예전엔 who 를 안 넘겨서
   //    선생님 보고가 전원 익명이었다 — 누가 부탁했는지 모르면 되물을 수도, 자동 처리할 수도 없다.
   //    강사 계정은 t-<loginId>@teacher.gsg.app 규약이라 teachers 에서 이름을 찾고,
@@ -199,7 +259,10 @@ export default function Layout() {
             <NavLink to="/today" className={topTab}>오늘 교실</NavLink>
             <NavLink to="/manage" className={topTab}>관리</NavLink>
             <NavLink to="/points" className={topTab}>포인트</NavLink>
-            <NavLink to="/questions" className={topTab}>질문함</NavLink>
+            <NavLink to="/questions" className={topTab}>질문함{qna.attention > 0 && (
+              <span title="전송 못 함·보류·늦음 — 선생님 확인이 필요한 질문"
+                className="ml-1 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-clay px-1 align-middle text-[10px] font-bold text-white">{qna.attention}</span>
+            )}</NavLink>
             <NavLink to="/help" className={topTab}>📖 사용법</NavLink>
           </nav>
           {/* 전역 과목 스위처 — 출제·문제은행·기출·채점·보고서가 이 과목을 따른다 (확장: lib/subject.ts SUBJECTS에 추가) */}
@@ -255,10 +318,12 @@ export default function Layout() {
             ) : (
               <div className="grid max-h-[calc(100vh-6rem)] gap-2 overflow-y-auto pr-1">
                 {items.map(n => (
-                  <div key={n.id} className="rounded-xl border border-line/70 px-3 py-2.5 text-sm">
+                  <button key={n.id} type="button" disabled={!n.to}
+                    onClick={() => { if (n.to) { setBell(false); nav(n.to) } }}
+                    className={`rounded-xl border px-3 py-2.5 text-left text-sm ${n.warn ? 'border-rose-200 bg-rose-50' : 'border-line/70'} ${n.to ? 'hover:border-pine' : 'cursor-default'}`}>
                     <div className="leading-snug">{n.text}</div>
                     <div className="mt-0.5 text-xs text-ink2">{timeAgo(n.date)}</div>
-                  </div>
+                  </button>
                 ))}
               </div>
             )}

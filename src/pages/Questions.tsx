@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from 'react'
-import { allQuestions, workerBeats, type Question, type QnaStatus, type WorkerBeat } from '../lib/qna'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import { allQuestions, isTestQuestion, stuckMinutes, workerBeats, type Question, type QnaStatus, type WorkerBeat } from '../lib/qna'
 import { SUPABASE_ON } from '../lib/supabase'
 
 // ── 선생님 질문함 — 학생이 올린 질문과 자동 생성된 해설 노트 ─────────
@@ -23,7 +24,7 @@ export default function Questions() {
   const [beats, setBeats] = useState<WorkerBeat[] | undefined>(undefined)   // undefined = 아직 못 읽음 · 워커 맥마다 하나
 
   const load = useCallback(async () => {
-    try { setList(await allQuestions(60)); setErr('') }
+    try { setList((await allQuestions(150)).filter(q => !isTestQuestion(q))); setErr('') }
     catch (e) { setErr(e instanceof Error ? e.message : String(e)) }
     finally { setLoading(false) }
     try { setBeats(await workerBeats()) } catch { setBeats([]) }
@@ -35,8 +36,24 @@ export default function Questions() {
     return () => clearInterval(t)
   }, [load])
 
-  const 보임 = list.filter(q =>
-    only === '전체' ? true : only === '실패' ? (q.status === '실패' || q.status === '보류') : q.status !== '완료')
+  // 👤 학생별 — 주소 ?student=<id> (알림센터·학생 정보 창에서 바로 온다)
+  const [params, setParams] = useSearchParams()
+  const 학생 = params.get('student') || ''
+  const 학생들 = useMemo(() => {
+    const m = new Map<string, { id: string; name: string; 전체: number; 보냄: number; 못보냄: number; 최근: string }>()
+    for (const q of list) {
+      const r = m.get(q.studentId) ?? { id: q.studentId, name: q.studentName, 전체: 0, 보냄: 0, 못보냄: 0, 최근: '' }
+      r.전체++
+      if (q.status === '완료') r.보냄++
+      if (q.status === '실패' || q.status === '보류' || stuckMinutes(q) > 0) r.못보냄++
+      if (q.createdAt > r.최근) r.최근 = q.createdAt
+      m.set(q.studentId, r)
+    }
+    return [...m.values()].sort((a, b) => b.못보냄 - a.못보냄 || b.최근.localeCompare(a.최근))
+  }, [list])
+  const 고른 = 학생들.find(x => x.id === 학생)
+  const 보임 = list.filter(q => (!학생 || q.studentId === 학생) && (
+    only === '전체' ? true : only === '실패' ? (q.status === '실패' || q.status === '보류' || stuckMinutes(q) > 0) : q.status !== '완료'))
   const 실패수 = list.filter(q => q.status === '실패' || q.status === '보류').length
   const 진행수 = list.filter(q => q.status === '대기' || q.status === '만드는중').length
 
@@ -62,6 +79,28 @@ export default function Questions() {
         : (beats.filter(b => Date.now() - Date.parse(b.at) < 86400_000).length
             ? beats.filter(b => Date.now() - Date.parse(b.at) < 86400_000) : beats.slice(0, 1))
             .map(b => <WorkerStatus key={b.host ?? b.at} beat={b} />)}
+
+      {학생들.length > 0 && (
+        <div className="mb-4 flex flex-wrap items-center gap-1.5">
+          <span className="mr-1 text-xs font-bold text-ink2">👤 학생별</span>
+          <button onClick={() => setParams({})}
+            className={`rounded-full px-3 py-1 text-xs font-bold ${!학생 ? 'bg-ink text-paper' : 'border border-line bg-white text-ink2 hover:text-ink'}`}>전체</button>
+          {학생들.map(x => (
+            <button key={x.id} onClick={() => setParams(학생 === x.id ? {} : { student: x.id })}
+              title={`질문 ${x.전체} · 보냄 ${x.보냄}${x.못보냄 ? ` · 못 보냄 ${x.못보냄}` : ''}`}
+              className={`rounded-full px-3 py-1 text-xs font-bold ${학생 === x.id ? 'bg-pine text-paper'
+                : x.못보냄 ? 'border border-rose-200 bg-rose-50 text-rose-700' : 'border border-line bg-white text-ink2 hover:text-ink'}`}>
+              {x.name} {x.보냄}/{x.전체}{x.못보냄 ? ` · 🔴${x.못보냄}` : ''}
+            </button>
+          ))}
+        </div>
+      )}
+      {고른 && (
+        <div className="mb-4 rounded-2xl border border-line bg-white px-4 py-3 text-sm">
+          <b>{고른.name}</b> 학생 — 질문 {고른.전체}건 · 해설 보냄 {고른.보냄}건
+          {고른.못보냄 > 0 && <span className="ml-1 font-bold text-rose-700">· 아직 못 보냄 {고른.못보냄}건</span>}
+        </div>
+      )}
 
       {실패수 > 0 && (
         <div className="mb-4 rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
@@ -93,10 +132,20 @@ export default function Questions() {
                       <span className="text-xs text-ink2/70">{fmt(q.createdAt)}</span>
                       {typeof q.tries === 'number' && q.tries > 0 && q.status !== '완료' &&
                         <span className="text-xs text-ink2/70">재시도 {q.tries}</span>}
+                      {stuckMinutes(q) > 0 &&
+                        <span className="rounded-full bg-rose-100 px-2 py-0.5 text-xs font-bold text-rose-700">⏰ {stuckMinutes(q)}분째 못 받음</span>}
                     </div>
                     <p className="whitespace-pre-wrap break-words text-sm text-ink">{q.text}</p>
                     {q.answerText && <p className="mt-1 text-sm text-pine-dark">💡 {q.answerText}</p>}
-                    {q.error && <p className="mt-1 break-words text-xs text-rose-600">{q.error}</p>}
+                    {q.status === '완료' && q.answeredAt && (
+                      <p className="mt-1 text-xs text-ink2">
+                        📤 전송 {fmt(q.answeredAt)}
+                        {q.takenAt && <> · {Math.max(1, Math.round((Date.parse(q.answeredAt) - Date.parse(q.takenAt)) / 60_000))}분 만에</>}
+                        {' · '}{q.pushResult === '보냄' ? '📲 폰 알림 보냄' : '앱 안 알림(폰 알림 안 켬)'}
+                        {' · '}{q.seenAt ? <span className="font-bold text-pine-dark">👀 학생 확인 {fmt(q.seenAt)}</span> : <span className="text-amber">아직 안 봄</span>}
+                      </p>
+                    )}
+                    {q.status !== '완료' && q.error && <p className="mt-1 break-words text-xs text-rose-600">{q.error}</p>}
                   </div>
                   {q.answerUrl && (
                     <button onClick={() => setZoom(q.answerUrl!)} className="shrink-0">

@@ -5,7 +5,7 @@ import { useStore } from '../../lib/store'
 import { wrongTypesOf } from '../../lib/wrongTypes'
 import { typeName } from '../../data/curriculum'
 import {
-  askQuestion, myQuestions, removeQuestion, markQnaRead, QNA_READ_KEY, queueInfos,
+  askQuestion, myQuestions, removeQuestion, markQnaRead, markSeen, QNA_READ_KEY, queueInfos,
   type Question, type QnaStatus, type QueueInfo,
 } from '../../lib/qna'
 import { pushBlocker, pushSupported, subscribeForAnswer } from '../../lib/qnaNotify'
@@ -45,7 +45,11 @@ export default function StudentQuestions() {
       setErr('')
       // 📬 머리 쪽 알림(빨간 숫자·딩동)과 같은 목록을 쓴다 — 서버를 두 번 부르지 않게
       try { window.dispatchEvent(new CustomEvent('qna:list', { detail: l })) } catch { /* 무시 */ }
-      if (document.visibilityState === 'visible') markQnaRead()
+      if (document.visibilityState === 'visible') {
+        markQnaRead()
+        // 👀 선생님 화면 「학생 확인」 — 처음 본 해설에만 한 번 적는다(미리보기 화면에서는 적지 않는다)
+        if (!preview.on) void markSeen(l).catch(() => {})
+      }
       // ⏳ 기다리는 질문이 있을 때만 대기 순서를 읽는다
       if (l.some(q => q.status === '대기' || q.status === '만드는중')) set줄(await queueInfos(l).catch(() => new Map()))
       else set줄(new Map())
