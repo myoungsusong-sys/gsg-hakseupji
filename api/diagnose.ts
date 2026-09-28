@@ -295,6 +295,23 @@ async function handleQna(p: any, res: any) {
       if (!v) { res.status(503).json({ error: '알림 키가 아직 없습니다.' }); return }
       res.status(200).json({ ok: true, key: v.publicKey }); return
     }
+    // 🔁 실패 다시 돌리기 — 워커가 새 코드를 받아 다시 켜졌을 때 스스로 부른다(에어가 지켜볼 필요 없게, 2026-09-28)
+    if (act === 'qna-requeue') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const hours = Math.min(72, Math.max(1, Number(p.hours) || 24))
+      const since = new Date(Date.now() - hours * 3600_000).toISOString()
+      const r = await sbRest('/rest/v1/hj_settings?id=like.qna_*&select=id,data&order=updated_at.desc&limit=200')
+      const rows = await r.json().catch(() => [])
+      let n = 0
+      for (const row of Array.isArray(rows) ? rows : []) {
+        const q = row?.data?.value
+        if (q?.status === '실패' && String(q.createdAt ?? '') > since) {
+          await qnaWrite(row.id, { ...q, status: '대기', error: '자동 재시도(워커 코드 갱신 후)' })
+          n++
+        }
+      }
+      res.status(200).json({ ok: true, n }); return
+    }
     // 알림 시험 — 워커 키로만. 구독 하나에 시험 알림을 보내 «서버 → 폰» 길이 살아 있는지 본다
     if (act === 'qna-pushtest') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
