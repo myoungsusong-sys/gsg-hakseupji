@@ -136,6 +136,9 @@ export function normMath(input: string): string {
   // 전각 → 반각, KaTeX 구분자 제거
   t = t.replace(/[！-～]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0xfee0))
   t = t.replace(/\$/g, '')
+  // 책·작품 이름 괄호와 둥근따옴표는 답의 일부가 아니다 — 『삼국사기』·「시천주」·‘독립 협회’ 를 쳐도 맞게.
+  // (2026-09-28: 한국사·사회 단답이 괄호 때문에 오답 처리될 뻔했다. ASCII ' " 는 수학 기호(f'(x))라 건드리지 않는다)
+  t = t.replace(/[『』「」《》〈〉‘’“”]/g, '')
   // 원문자 ①②③… → 1,2,3 — 교재 정답은 '4', 학생앱 객관식 버튼은 '④'로 들어온다.
   // (이 변환이 빠지면 객관식 전 문항이 오답 처리된다)
   t = t.replace(/[①-⑳]/g, ch => String(ch.charCodeAt(0) - 0x245f))
