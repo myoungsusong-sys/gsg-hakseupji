@@ -1,0 +1,888 @@
+# 고1 영어(eng-h1) 빈 유형 채우기 — 9유형 × 6문항 (2026-09-28 · jobH)
+# 지문은 전부 직접 창작(연구 소개형은 잘 알려진 연구의 내용을 자기 말로 풀어 씀). 발문·풀이는 한국어.
+import sys, os; sys.path.insert(0, '/private/tmp/claude-501/-Users-songmyeongsumaegbug-eeo-Library-Mobile-Documents-com-apple-CloudDocs-08------AI/19f5d8ef-bdd5-411c-80d8-fdf503e62ef1/scratchpad/korgen')
+import lib; lib.COURSE = 'eng-h1'
+from lib import q, qf, s, save
+
+F = ['ⓐ', 'ⓑ', 'ⓒ', 'ⓓ', 'ⓔ']
+AE = ['(A)', '(B)', '(C)', '(D)', '(E)']
+
+
+def P(발문, 지문, 뒤=''):
+    return f'{발문}\n\n{지문}' + (f'\n\n{뒤}' if 뒤 else '')
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m0s3t1 독해/대의 파악/목적 파악/글의 종류·출처
+# ══════════════════════════════════════════════════════════════
+T = 'u0m0s3t1'
+
+q(T, 1, P('다음 글의 종류로 가장 적절한 것은?',
+          'Tired of carrying a heavy water bottle all day? Meet the FoldyBottle! '
+          'This amazing bottle folds down to the size of your palm when it is empty, so it fits easily into any pocket or bag. '
+          'Made from safe, soft silicone, it is leak-proof and dishwasher-safe. '
+          'It comes in six bright colors, so you can choose one that matches your style. '
+          'Order this week and get 20% off plus free shipping! '
+          'Don\'t miss this chance to make your daily life a little lighter.'),
+  'advertisement',
+  ['diary', 'news article', 'biography', 'recipe'],
+  ['제품 이름(FoldyBottle)을 소개하고, 장점(접으면 손바닥 크기, 새지 않음, 식기세척기 사용 가능, 여섯 가지 색)을 늘어놓는다.',
+   '「Order this week and get 20% off plus free shipping!(이번 주에 주문하면 20% 할인에 무료 배송!)」처럼 구매를 권하는 표현이 있으므로 광고(advertisement)이다.',
+   '개인의 하루 기록(diary), 사건 보도(news article), 인물의 일생(biography), 요리법(recipe)의 특징은 없다.'])
+
+q(T, 2, P('다음 글의 종류로 가장 적절한 것은?',
+          'Friday, October 16\n\n'
+          'Today was our school\'s sports festival. I was so nervous before the relay race that my hands were shaking. '
+          'When the baton was passed to me, our team was in third place. '
+          'I ran as hard as I could and passed two runners just before the finish line! '
+          'Everyone in my class shouted my name, and my best friend Jiwoo ran over and hugged me. '
+          'I will never forget that moment. '
+          'Now my legs hurt a lot, but I feel really proud of myself. '
+          'I\'d better go to bed early tonight.'),
+  'diary',
+  ['advertisement', 'movie review', 'news article', 'recipe'],
+  ['맨 위에 날짜가 있고, 글쓴이(I)가 그날 겪은 일(계주에서 두 명을 제치고 들어옴)과 그때의 감정(긴장 → 뿌듯함)을 적은 뒤, 「오늘 밤엔 일찍 자야겠다」로 끝맺는다.',
+   '하루를 돌아보며 자신의 경험과 감정을 기록한 개인적인 글이므로 일기(diary)이다.',
+   '운동회 이야기가 나오지만 제3자가 사실을 전달하는 기사(news article)가 아니라, 1인칭으로 자기 감정을 쓴 글이다.'])
+
+q(T, 3, P('다음 글의 종류로 가장 적절한 것은?',
+          'If you are looking for a book that will keep you up all night, "Salt and Lanterns" is the one. '
+          'The story follows a young girl who discovers a secret message hidden in her grandfather\'s old lighthouse. '
+          'The author does a wonderful job of building suspense, and each chapter ends in a way that makes you want to read the next one right away. '
+          'The characters feel real, and the island setting is described so vividly that I could almost smell the sea. '
+          'My only complaint is that the ending felt a bit rushed. '
+          'Still, I would strongly recommend it to anyone who loves mysteries.\n\n'
+          'Rating: ★★★★☆'),
+  'book review',
+  ['advertisement', 'biography', 'news article', 'diary'],
+  ['책 한 권의 줄거리를 짧게 소개하고, 좋은 점(긴장감, 생생한 인물과 배경)과 아쉬운 점(「My only complaint is that the ending felt a bit rushed.(유일한 불만은 결말이 조금 서둘러 끝난 느낌이라는 것이다.)」)을 함께 평가한다.',
+   '마지막에 추천과 별점(Rating)까지 있으므로 서평(book review)이다.',
+   '추천하는 말이 있어 광고(advertisement)처럼 보일 수 있지만, 광고는 단점을 말하지 않고 구매를 권한다. 이 글은 개인의 평가(장단점·별점)를 담은 서평이다.'])
+
+q(T, 3, P('다음 글의 종류로 가장 적절한 것은?',
+          'Local Students Turn Empty Lot into Community Garden\n\n'
+          'RIVERTON — A group of high school students has turned an empty lot on Pine Street into a colorful community garden. '
+          'The project began last spring when members of Riverton High School\'s environmental club noticed that the lot was full of trash. '
+          'With permission from the city, about thirty students spent their weekends clearing the area and planting vegetables and flowers. '
+          '"We wanted to create a place where neighbors could meet and share food," said Emily Carter, 17, the club\'s president. '
+          'The garden officially opened on Saturday, and the vegetables grown there will be donated to a local food bank.'),
+  'news article',
+  ['personal letter', 'biography', 'book review', 'advertisement'],
+  ['제목(헤드라인)과 지명(RIVERTON —)으로 시작하고, 누가·언제·어디서·무엇을·어떻게 했는지를 객관적으로 전한다.',
+   '관계자의 말을 따옴표로 인용하고 이름·나이·직책(Emily Carter, 17, the club\'s president)을 밝히는 것은 신문 기사(news article)의 전형적인 특징이다.',
+   '특정인에게 보내는 편지, 한 인물의 일생, 책에 대한 평가, 상품 판매 권유의 특징은 없다.'])
+
+q(T, 4, P('다음 글이 쓰인 상황으로 가장 적절한 것은?',
+          'Good morning, principal, teachers, parents, and my fellow graduates. '
+          'Three years ago, we walked through the school gate for the first time, nervous and unsure of ourselves. '
+          'Today, we are standing here as young adults ready to take our next steps. '
+          'Looking back, what I remember most is not the tests we took but the people who helped us along the way. '
+          'To our teachers, thank you for believing in us even when we did not believe in ourselves. '
+          'To our parents, thank you for your endless patience. '
+          'And to my classmates, let\'s never stop being curious and kind. '
+          'Congratulations, everyone!'),
+  '졸업식에서 졸업생 대표가 하는 연설',
+  ['입학식에서 교장이 신입생에게 하는 환영사',
+   '학부모에게 보내는 가정 통신문',
+   '교사가 제자에게 보내는 편지',
+   '학교 신문에 실린 졸업식 보도 기사'],
+  ['청중을 부르는 인사(Good morning, principal, teachers, parents, and my fellow graduates)로 시작하므로 여러 사람 앞에서 말하는 연설이다.',
+   '「my fellow graduates(나의 동료 졸업생 여러분)」, 「Three years ago, we walked through the school gate for the first time(3년 전 우리는 처음 교문을 들어섰다)」에서 말하는 이가 «졸업생»임을 알 수 있다. 선생님과 부모님께 감사하고 친구들을 격려하므로 졸업생 대표의 연설이다.',
+   '교장의 환영사라면 말하는 이가 졸업생일 수 없고, 보도 기사라면 3인칭으로 사실을 전했을 것이다.'])
+
+q(T, 5, P('다음 글이 실리기에 가장 적절한 곳은?',
+          'To the Editor:\n\n'
+          'I am writing in response to your article "City Plans to Close Branch Libraries," published on May 12. '
+          'As a high school student who visits the Oakwood branch library almost every day, I was deeply disappointed to read about the plan. '
+          'For many students in our neighborhood, the library is the only quiet place to study after school. '
+          'It also offers free programs for children and the elderly that no other place in town provides. '
+          'The city says that closing small branches will save money, but I believe the cost to the community will be far greater. '
+          'I urge the city council to reconsider its decision.\n\n'
+          'Daniel Kim, Oakwood'),
+  '신문의 독자 투고란',
+  ['신문의 사회면 보도 기사',
+   '도서관의 프로그램 홍보 안내문',
+   '개인의 일기장',
+   '소설책의 한 장면'],
+  ['「To the Editor:(편집자님께)」로 시작하고, 신문에 실린 기사(「City Plans to Close Branch Libraries」)에 대한 «독자의 의견»을 밝힌 뒤 이름과 사는 곳으로 끝맺는다.',
+   '도서관 폐쇄 계획에 반대하며 「I urge the city council to reconsider its decision.(시 의회가 결정을 재고할 것을 촉구한다.)」이라고 주장하므로, 독자가 신문사에 보내는 투고(letter to the editor)이다.',
+   '매력적 오답 「보도 기사」: 기사는 기자가 사실을 객관적으로 전하지만, 이 글은 1인칭(I)으로 개인의 주장과 감정(deeply disappointed)을 드러낸다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m1s3t0 독해/세부 내용 파악/추론 불가/글에서 추론할 수 없는 것
+# ══════════════════════════════════════════════════════════════
+T = 'u0m1s3t0'
+
+q(T, 1, P('다음 글에서 추론할 수 «없는» 것은?',
+          'Sea otters are among the few mammals that use tools. '
+          'When they find a clam or a sea urchin with a hard shell, they float on their backs, place a rock on their chests, and hit the shell against the rock until it breaks open. '
+          'Some otters even keep a favorite rock in a loose pocket of skin under their arms and use it again and again. '
+          'Unlike most marine mammals, sea otters do not have a thick layer of fat to keep them warm. '
+          'Instead, they have extremely thick fur, which traps air and keeps the cold water away from their skin. '
+          'To keep their fur clean and working well, they spend several hours a day grooming it. '
+          'Sea otters also eat a lot: an adult may eat about a quarter of its body weight every day.'),
+  '해달은 체온을 유지하기 위해 두꺼운 지방층에 의존한다.',
+  ['해달은 딱딱한 먹이를 먹기 위해 도구를 사용한다.',
+   '해달은 마음에 드는 돌을 몸에 지니고 다니기도 한다.',
+   '해달의 털이 더러워지면 체온 유지에 어려움이 생길 수 있다.',
+   '해달은 매일 많은 양의 먹이를 먹는다.'],
+  ['「Unlike most marine mammals, sea otters do not have a thick layer of fat to keep them warm.(대부분의 해양 포유류와 달리 해달은 몸을 따뜻하게 하는 두꺼운 지방층이 없다.)」 — 해달은 지방층이 아니라 촘촘한 털로 체온을 지킨다. 따라서 「지방층에 의존한다」는 글과 어긋난다.',
+   '나머지: 돌로 조개껍데기를 깸(도구 사용), 겨드랑이의 피부 주머니에 좋아하는 돌을 넣어 둠, 털을 깨끗이 유지하려고 하루 몇 시간씩 손질함(털이 제 기능을 해야 따뜻함), 하루에 몸무게의 약 4분의 1을 먹음 — 모두 추론할 수 있다.'])
+
+q(T, 2, P('다음 글에서 추론할 수 «없는» 것은?',
+          'Why do we value things more when we have made them ourselves? '
+          'In one study, researchers asked some participants to assemble simple storage boxes from a kit, while others were given the same boxes already assembled. '
+          'Then both groups were asked how much they would pay for the boxes. '
+          'Surprisingly, the people who had built the boxes themselves were willing to pay much more than those who had received them ready-made, even though the boxes were identical. '
+          'Researchers named this the "IKEA effect," after the furniture company famous for its build-it-yourself products. '
+          'However, the effect disappeared when participants were unable to finish building the boxes. '
+          'It seems that our labor increases our love for a product only when that labor leads to successful completion. '
+          'In other words, it is not effort alone but the sense of accomplishment that makes our creations feel special.'),
+  'People value any product more as long as they spend time working on it.',
+  ['The two groups in the study had boxes of the same quality.',
+   'Completing a task seems to be important for the IKEA effect.',
+   'People may overvalue things that they have made themselves.',
+   'The researchers compared the prices that the two groups would pay.'],
+  ['「However, the effect disappeared when participants were unable to finish building the boxes.(하지만 참가자들이 상자를 끝까지 만들지 못했을 때는 그 효과가 사라졌다.)」 — 노력을 들이기만 하면 무조건 더 높이 평가한다는 진술은 글과 어긋난다.',
+   '마지막 문장처럼 노동이 가치를 높이는 것은 «성공적인 완성»으로 이어질 때뿐이다.',
+   '나머지: 두 집단의 상자는 똑같았고(identical), 완성이 중요하며, 자기가 만든 물건을 더 높이 평가하고, 연구자들은 두 집단이 지불하려는 가격을 비교했다 — 모두 추론 가능하다.'])
+
+q(T, 3, P('다음 글에서 추론할 수 «없는» 것은?',
+          'On a hot summer afternoon, the center of a large city can be several degrees warmer than the countryside around it. '
+          'This is known as the urban heat island effect. '
+          'Dark surfaces such as asphalt roads and roofs absorb much of the sun\'s energy during the day and release it slowly as heat, even after sunset. '
+          'In addition, cities have fewer trees and plants, which normally cool the air by releasing water through their leaves. '
+          'Heat from cars, air conditioners, and factories adds to the problem. '
+          'As a result, people living in city centers may suffer more from heat-related health problems during heat waves. '
+          'To reduce this effect, some cities are painting roofs white to reflect sunlight and creating "green roofs" covered with plants. '
+          'Others are planting more trees along streets to provide shade and cool the air.'),
+  '도시의 열섬 현상은 해가 지면 곧바로 사라진다.',
+  ['흰색 지붕은 짙은 색 지붕보다 햇빛을 더 많이 반사한다.',
+   '식물은 잎을 통해 수분을 내보내며 주변 공기를 식힌다.',
+   '에어컨 사용은 도시의 기온을 높이는 데 영향을 줄 수 있다.',
+   '도시에 나무를 더 심으면 열섬 현상을 줄이는 데 도움이 될 수 있다.'],
+  ['「Dark surfaces ~ release it slowly as heat, even after sunset.(짙은 색 표면은 낮 동안 흡수한 에너지를 해가 진 뒤에도 천천히 열로 내놓는다.)」 — 해가 진 뒤에도 열이 나오므로 「곧바로 사라진다」는 글과 어긋난다.',
+   '나머지: 지붕을 희게 칠해 햇빛을 반사함, 식물이 잎으로 수분을 내보내 공기를 식힘, 에어컨의 열이 문제를 키움, 가로수로 그늘과 냉각 효과 — 모두 추론 가능하다.'])
+
+q(T, 3, P('다음 글에서 추론할 수 «없는» 것은?',
+          'If you try to memorize a long list of words, you will probably remember the first few and the last few words better than those in the middle. '
+          'Psychologists call this the serial position effect. '
+          'The words at the beginning are remembered well because you have more time to repeat them in your mind before new words arrive. '
+          'This is called the primacy effect. '
+          'The words at the end, on the other hand, are still fresh in your short-term memory when you try to recall them, which is known as the recency effect. '
+          'The words in the middle get neither advantage, so they are the most easily forgotten. '
+          'This finding has practical uses. '
+          'For example, when studying, it may help to review the middle part of your notes more carefully, or to change the order of the material from time to time.'),
+  '목록의 마지막 단어들은 머릿속으로 가장 많이 되풀이했기 때문에 잘 기억된다.',
+  ['목록의 중간에 있는 단어들이 가장 잊히기 쉽다.',
+   '목록의 처음 단어들은 머릿속으로 되풀이할 시간이 더 많다.',
+   '공부할 때 자료의 순서를 바꾸면 기억에 도움이 될 수 있다.',
+   '마지막 단어들은 떠올리려는 시점에 아직 단기 기억에 남아 있다.'],
+  ['글에 따르면 «되풀이할 시간이 많아서» 잘 기억되는 것은 처음 단어들(초두 효과, primacy effect)이다.',
+   '마지막 단어들이 잘 기억되는 까닭은 「still fresh in your short-term memory(아직 단기 기억에 생생하게 남아 있음)」, 곧 최신 효과(recency effect) 때문이다. 따라서 두 효과의 이유를 뒤섞은 진술은 추론할 수 없다.',
+   '중간 단어가 가장 잘 잊힘, 처음 단어는 되풀이할 시간이 많음, 순서를 바꾸면 도움이 됨, 마지막 단어는 단기 기억에 남아 있음 — 모두 글과 일치한다.'])
+
+q(T, 4, P('다음 글에서 추론할 수 «없는» 것은?',
+          'Imagine that you have paid 15,000 won for a movie ticket. '
+          'Thirty minutes into the film, you realize that it is terribly boring. '
+          'Should you stay until the end? '
+          'Many people would say yes, because they don\'t want to "waste" the money they have already spent. '
+          'Economists, however, call this thinking the sunk cost fallacy. '
+          'The money is gone whether you stay or leave, so it should not affect your decision. '
+          'The only question that matters is how best to use the next ninety minutes of your life. '
+          'If leaving and taking a walk would make you happier, leaving is the rational choice. '
+          'The same trap appears in bigger decisions, such as continuing a failing business simply because a lot of money has already been invested in it. '
+          'Recognizing this trap can help us make wiser choices about how to spend our time, money, and energy.'),
+  '영화가 지루하다면 중간에 나가는 것이 언제나 합리적인 선택이다.',
+  ['필자는 지루한 영화를 끝까지 보는 것이 항상 옳다고 보지 않는다.',
+   '이미 낸 영화표 값은 계속 보든 나가든 되돌려 받을 수 없다.',
+   '합리적인 결정은 앞으로 얻을 만족을 기준으로 해야 한다.',
+   '매몰 비용의 오류는 사업과 같은 큰 결정에서도 나타날 수 있다.'],
+  ['「If leaving and taking a walk would make you happier, leaving is the rational choice.(나가서 산책하는 것이 더 행복하다면 나가는 것이 합리적이다.)」 — 나가는 것이 합리적인 것은 «그것이 더 큰 만족을 줄 때»라는 조건이 붙어 있다.',
+   '따라서 「언제나(무조건) 나가는 것이 합리적」이라는 진술은 글에서 추론할 수 없다. 핵심은 나가느냐 남느냐가 아니라 이미 쓴 돈(매몰 비용)을 판단 기준에서 빼는 것이다.',
+   '나머지: 끝까지 보는 것이 항상 옳지는 않음, 돈은 어떤 경우에도 이미 사라짐(The money is gone whether you stay or leave), 앞으로의 90분을 어떻게 쓸지가 기준, 실패하는 사업을 계속하는 것도 같은 함정 — 모두 추론 가능하다.'])
+
+q(T, 5, P('다음 글을 읽고 추론할 수 «없는» 것만을 <보기>에서 있는 대로 고른 것은?',
+          'A placebo is a treatment that has no active ingredient, such as a sugar pill. '
+          'Surprisingly, patients who take placebos often report feeling better. '
+          'This is not simply imagination; studies have shown that when people expect pain relief from a placebo, their brains release natural painkillers. '
+          'The effect tends to be stronger when the treatment seems more serious: for instance, two pills often work better than one, and injections often work better than pills. '
+          'Even the color of a pill can make a difference. '
+          'Because of this effect, new medicines are tested against placebos. '
+          'In many drug trials, neither the patients nor the doctors know who is receiving the real drug and who is receiving the placebo. '
+          'A drug is considered effective only if it helps patients significantly more than a placebo does.',
+          '<보기>\nㄱ. 플라시보 효과는 실제 신체 반응을 동반할 수 있다.\n'
+          'ㄴ. 플라시보는 환자가 효과를 기대하지 않을 때 더 잘 작용한다.\n'
+          'ㄷ. 약의 효과를 확인하려면 플라시보와 비교해 보아야 한다.\n'
+          'ㄹ. 알약의 개수나 색깔은 효과에 아무런 영향을 주지 않는다.'),
+  'ㄴ, ㄹ',
+  ['ㄱ, ㄴ', 'ㄱ, ㄷ', 'ㄴ, ㄷ', 'ㄷ, ㄹ'],
+  ['ㄱ(추론 가능): 「their brains release natural painkillers(뇌가 천연 진통 물질을 분비한다)」 — 단순한 상상이 아니라 실제 몸의 반응이 일어난다.',
+   'ㄴ(추론 불가): 뇌가 진통 물질을 내는 것은 사람들이 통증 완화를 «기대할 때(when people expect pain relief)»라고 했으므로 반대이다.',
+   'ㄷ(추론 가능): 새 약은 플라시보와 비교해 시험하고, 플라시보보다 확실히 더 나아야 효과가 있다고 인정된다. ㄹ(추론 불가): 알약 두 개가 한 개보다, 알약의 색깔까지도 효과에 차이를 낸다고 했다.',
+   '추론할 수 없는 것은 ㄴ, ㄹ이다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m1s4t1 독해/세부 내용 파악/질문 확인/도표·안내문 세부 정보
+# ══════════════════════════════════════════════════════════════
+T = 'u0m1s4t1'
+
+q(T, 1, P('다음 안내문의 내용과 일치하는 것은?',
+          'Riverside Youth Photo Contest\n'
+          'Theme: "Moments of Kindness"\n\n'
+          '• Who: High school students living in Riverside\n'
+          '• How to enter: Upload up to two photos to the contest website by September 30.\n'
+          '• Rules:\n'
+          '   - Photos must be taken by the participant.\n'
+          '   - Photos edited with filters or photo-editing apps will not be accepted.\n'
+          '   - Each photo must have a short title.\n'
+          '• Prizes:\n'
+          '   - 1st Place: a digital camera\n'
+          '   - 2nd Place: a 100,000 won gift card\n'
+          '• All winning photos will be displayed at City Hall in November.'),
+  '수상작은 11월에 시청에 전시된다.',
+  ['중학생도 참가할 수 있다.',
+   '사진은 최대 세 장까지 올릴 수 있다.',
+   '필터로 보정한 사진도 제출할 수 있다.',
+   '1등에게는 상품권이 주어진다.'],
+  ['「All winning photos will be displayed at City Hall in November.(모든 수상작은 11월에 시청에 전시된다.)」와 일치한다.',
+   '참가 대상은 리버사이드에 사는 «고등학생», 사진은 «최대 두 장(up to two photos)», 필터·편집 앱으로 보정한 사진은 받지 않으며, 1등 상품은 디지털카메라(상품권은 2등)이다.'])
+
+q(T, 2, P('다음 안내문의 내용과 일치하지 «않는» 것은?',
+          'Notice: Library Hours During the Exam Period\n\n'
+          'To support students preparing for final exams, the Central Library will extend its opening hours from June 15 to June 26.\n\n'
+          '• Weekdays: 7:00 a.m. – 11:00 p.m. (usually 9:00 a.m. – 9:00 p.m.)\n'
+          '• Saturdays: 9:00 a.m. – 9:00 p.m. (usually 9:00 a.m. – 6:00 p.m.)\n'
+          '• Sundays: Closed (no change)\n\n'
+          'Please note:\n'
+          '• Study rooms on the 3rd floor must be reserved in advance and can be used for up to 3 hours at a time.\n'
+          '• Food is not allowed in the reading rooms, but drinks in covered containers are allowed.\n'
+          '• The book return machine at the main entrance is available 24 hours a day.'),
+  '시험 기간에는 일요일에도 도서관을 이용할 수 있다.',
+  ['평일에는 평소보다 하루 4시간 더 오래 문을 연다.',
+   '토요일에는 평소보다 3시간 늦게 문을 닫는다.',
+   '3층 스터디룸은 한 번에 최대 3시간까지 쓸 수 있다.',
+   '뚜껑이 있는 용기에 담긴 음료는 열람실에 가지고 들어갈 수 있다.'],
+  ['「Sundays: Closed (no change)(일요일: 휴관, 변동 없음)」 — 시험 기간에도 일요일은 쉬므로 일치하지 않는다.',
+   '평일: 평소 9시~21시(12시간) → 7시~23시(16시간)로 4시간 늘어남. 토요일: 평소 18시 → 21시로 3시간 늦게 닫음.',
+   '스터디룸은 한 번에 최대 3시간, 열람실에서 음식은 안 되지만 뚜껑 있는 음료는 허용 — 모두 일치한다.'])
+
+q(T, 3, P('다음 안내문을 읽고 답할 수 «없는» 질문은?',
+          'Hanul Science Camp for High School Students\n'
+          'Explore the world of science through hands-on experiments!\n\n'
+          '• Dates: July 28 – July 31 (4 days, 3 nights)\n'
+          '• Location: Hanul University Campus\n'
+          '• Participants: 40 first- and second-year high school students\n'
+          '• Fee: 250,000 won (includes accommodation and all meals)\n'
+          '• Programs: robotics, chemistry experiments, star observation\n'
+          '• How to apply: Fill out the application form on our website and submit a short essay (500 words or less) explaining why you want to join.\n'
+          '• Deadline: July 7\n\n'
+          '※ Selected students will be notified by email on July 14.'),
+  'How many teachers will lead the programs?',
+  ['How much does the camp cost?',
+   'Where will the camp be held?',
+   'When will the selected students be informed?',
+   'How long can the application essay be?'],
+  ['캠프를 이끄는 교사(지도자)의 수는 안내문에 나오지 않으므로 「How many teachers will lead the programs?(프로그램을 이끌 교사는 몇 명인가?)」에는 답할 수 없다.',
+   '비용 250,000원(숙박·식사 포함), 장소 한울 대학교 캠퍼스, 선발 결과 7월 14일 이메일 통보, 에세이 500단어 이하 — 나머지 질문은 모두 답할 수 있다.',
+   '참가 인원 «40명»은 학생 수이지 교사 수가 아니라는 점에 주의한다.'])
+
+q(T, 3, P('고등학생인 수호는 학생증을 가진 친구 한 명과 함께 다음 서핑 강습에서 단체 강습(Group Lesson)을 각자 한 번씩 받으려고 한다. 두 사람 모두 학생증을 제시할 때, 두 사람이 내야 할 금액의 합계는?',
+          'Blue Wave Surfing Lessons\n\n'
+          '• Group Lesson (2 hours): 50,000 won per person\n'
+          '• Private Lesson (2 hours): 90,000 won per person\n\n'
+          '- Board and wetsuit rental is included in the price.\n'
+          '- Students with a student ID get 10% off group lessons only.\n'
+          '- If you book 3 or more lessons at once, you get an extra 10,000 won off the total price.\n'
+          '- Lessons are canceled when the waves are too high, and you will get a full refund.'),
+  '90,000원',
+  ['80,000원', '85,000원', '95,000원', '100,000원'],
+  ['단체 강습 1인 50,000원에서 학생 할인 10%를 받으면 1인 45,000원이다.',
+   '두 사람이므로 45,000원 × 2 = 90,000원.',
+   '강습은 모두 2회이므로 「3회 이상 한 번에 예약 시 10,000원 추가 할인」은 해당하지 않는다(80,000원은 이 할인을 잘못 적용한 값). 보드·슈트 대여료는 가격에 포함되어 있다.'])
+
+q(T, 4, P('다음 여객선 운항 시간표에 대한 설명으로 옳은 것은?',
+          'Harbor City → Coral Island Ferry Timetable\n'
+          '(Summer Season: June 1 – August 31)\n\n'
+          'Ship Name | Departs | Arrives | Days\n'
+          'Sea Star | 07:00 | 11:30 | Every day\n'
+          'Blue Whale | 09:30 | 14:00 | Mon – Fri\n'
+          'Ocean Queen | 13:00 | 17:30 | Sat & Sun only\n'
+          'Sea Star II | 16:00 | 20:30 | Every day except Wednesday\n\n'
+          '• Passengers must arrive at the port at least 40 minutes before departure.\n'
+          '• Vehicles can be carried only on the Blue Whale and the Ocean Queen.'),
+  '수요일에 차를 싣고 가려면 Blue Whale을 타야 한다.',
+  ['모든 배는 출발 후 5시간 만에 도착한다.',
+   '토요일에는 네 척의 배가 모두 운항한다.',
+   'Sea Star II를 타려면 오후 3시 30분까지 항구에 도착하면 된다.',
+   'Ocean Queen은 평일 오후에도 운항한다.'],
+  ['수요일 운항: Sea Star(매일), Blue Whale(월~금). Sea Star II는 수요일 제외, Ocean Queen은 주말만. 차를 실을 수 있는 배는 Blue Whale과 Ocean Queen뿐이므로 수요일에 차를 실으려면 Blue Whale을 타야 한다.',
+   '오답 확인: 모든 배는 4시간 30분 걸리고, 토요일에는 Blue Whale(월~금)이 없어 세 척만 운항하며, Ocean Queen은 주말에만 운항한다.',
+   'Sea Star II(16:00 출발)는 40분 전인 15:20까지 도착해야 하므로 15:30 도착은 늦다.'])
+
+q(T, 5, P('다음 안내문의 내용과 일치하는 것만을 <보기>에서 있는 대로 고른 것은?',
+          'Greenhill Charity Run\n\n'
+          '• Date: Sunday, October 18\n'
+          '• Courses and Entry Fees:\n'
+          '   - 5 km Fun Run: 20,000 won (open to all ages; runners under 14 must run with an adult)\n'
+          '   - 10 km Race: 30,000 won (ages 14 and up)\n'
+          '   - Half Marathon (21.1 km): 45,000 won (ages 18 and up)\n'
+          '• Early-bird discount: Register by September 30 and get 5,000 won off any course.\n'
+          '• All runners will receive a T-shirt. Finishers of the 10 km race and the half marathon will also receive a medal.\n'
+          '• All entry fees will be donated to Greenhill Children\'s Hospital.',
+          '<보기>\nㄱ. 16세 학생은 하프 마라톤에 참가할 수 없다.\n'
+          'ㄴ. 9월 25일에 10km 코스를 신청하면 참가비로 25,000원을 낸다.\n'
+          'ㄷ. 5km 코스를 완주한 참가자도 메달을 받는다.\n'
+          'ㄹ. 12세 어린이는 어른과 함께라면 10km 코스에 참가할 수 있다.'),
+  'ㄱ, ㄴ',
+  ['ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄱ, ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+  ['ㄱ(○): 하프 마라톤은 18세 이상(ages 18 and up)만 참가할 수 있다. ㄴ(○): 9월 30일까지 신청하면 5,000원 할인 → 30,000 − 5,000 = 25,000원.',
+   'ㄷ(×): 메달은 10km와 하프 마라톤 완주자에게만 준다(5km는 티셔츠만). ㄹ(×): 10km는 14세 이상만 참가할 수 있다. 「어른과 함께 뛰면 된다」는 조건은 5km 코스에만 해당한다.',
+   '일치하는 것은 ㄱ, ㄴ이다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m2s0t0 독해/글의 흐름 파악/무관한 문장/전체 흐름과 관계 없는 문장
+# ══════════════════════════════════════════════════════════════
+T = 'u0m2s0t0'
+발 = '다음 글에서 전체 흐름과 관계 없는 문장은?'
+
+qf(T, 1, P(발,
+           'Walking is one of the simplest and most effective forms of exercise. '
+           'ⓐ Unlike many sports, it requires no special equipment or training, and almost anyone can do it anywhere. '
+           'ⓑ Regular walking strengthens the heart and lungs and helps people maintain a healthy weight. '
+           'ⓒ It is also good for the mind, as a short walk outdoors can reduce stress and improve mood. '
+           'ⓓ Running shoes have recently become a fashion item, and some models are sold at very high prices. '
+           'ⓔ Because walking puts little pressure on the joints, it is a safe choice even for older adults or people recovering from injuries. '
+           'For these reasons, doctors often recommend walking for at least thirty minutes a day, and walking with friends or family can even turn this healthy habit into a pleasant time for conversation.'),
+   F, 3,
+   ['첫 문장 「걷기는 가장 간단하고 효과적인 운동 중 하나이다.」가 주제이다.',
+    'ⓐ 장비·훈련이 필요 없음(간단함), ⓑ 심폐 강화·체중 유지, ⓒ 스트레스 감소·기분 개선, ⓔ 관절 부담이 적어 노인·환자에게도 안전함 — 모두 걷기의 장점이다.',
+    'ⓓ 「운동화가 최근 패션 상품이 되어 일부 모델은 매우 비싸게 팔린다.」는 운동화 유행 이야기로, 걷기의 장점이라는 흐름과 관계가 없다.'])
+
+qf(T, 2, P(발,
+           'Many people wonder whether libraries are still needed now that so much information is available online. '
+           'Rather than disappearing, however, public libraries are changing their role in the community. '
+           'ⓐ In the past, libraries were mainly places for borrowing books and reading quietly. '
+           'ⓑ Printing technology spread across Europe in the fifteenth century and made books much cheaper. '
+           'ⓒ Today, however, many libraries offer computer classes, job-search support, and free Internet access for people who cannot afford it at home, helping them keep up with a rapidly changing world. '
+           'ⓓ Some libraries even lend out tools, musical instruments, and 3D printers. '
+           'ⓔ They also provide meeting rooms where local groups can gather to share ideas, study together, and plan neighborhood events. '
+           'In this way, libraries are becoming lively community centers that connect people with one another rather than simply quiet places that store books.'),
+   F, 1,
+   ['첫 문장은 «인터넷 시대에 도서관이 아직 필요한가»라는 물음을 던지고, 둘째 문장 「그러나 공공 도서관은 사라지는 대신 지역 사회에서의 역할을 바꾸고 있다.」가 주제를 제시한다.',
+    'ⓐ 과거의 역할(책 대출·조용한 독서) → ⓒ however로 오늘날의 새 역할(컴퓨터 강좌, 구직 지원, 무료 인터넷) → ⓓ 도구·악기·3D 프린터 대여 → ⓔ 모임 공간 제공으로 이어진다.',
+    'ⓑ 「15세기에 인쇄술이 유럽에 퍼져 책값이 훨씬 싸졌다.」는 책의 역사 이야기로, 도서관의 역할 변화라는 흐름과 관계가 없다.'])
+
+qf(T, 3, P(발,
+           'Many people believe they can save time by doing several things at once, but multitasking often makes us less efficient. '
+           'ⓐ In reality, the brain does not perform two demanding tasks at the same time; it quickly switches back and forth between them. '
+           'ⓑ Each time it switches, it needs a moment to refocus, and these small delays add up. '
+           'ⓒ As a result, a person who answers text messages while writing a report usually takes longer to finish than someone who does the two tasks one after the other. '
+           'ⓓ Switching also increases the chance of making mistakes, because important details can be lost during each change. '
+           'ⓔ Today\'s smartphones have more computing power than the computers that helped send astronauts to the moon. '
+           'So if you want to work faster and better, it is wiser to focus on one task at a time.'),
+   F, 4,
+   ['첫 문장 「많은 사람이 여러 일을 한꺼번에 해서 시간을 아낄 수 있다고 믿지만, 멀티태스킹은 오히려 효율을 떨어뜨린다.」가 주제이다.',
+    'ⓐ 뇌는 두 일을 동시에 하지 않고 빠르게 전환함 → ⓑ 전환할 때마다 지연이 쌓임 → ⓒ 그 결과 더 오래 걸림 → ⓓ 실수도 늘어남 — 멀티태스킹의 비효율을 차례로 설명한다.',
+    'ⓔ 「오늘날의 스마트폰은 우주 비행사를 달에 보낸 컴퓨터보다 계산 능력이 뛰어나다.」는 기기 성능 이야기로, 멀티태스킹의 비효율과 관계가 없다.'])
+
+qf(T, 3, P(발,
+           'Although they cover only a tiny part of the ocean floor, coral reefs are extremely valuable, both to sea life and to people. '
+           'ⓐ Thousands of species of fish, crabs, and other sea creatures depend on reefs for food, shelter, and safe places to lay their eggs. '
+           'ⓑ Reefs also protect coastal towns and beaches by breaking the force of waves during storms, reducing damage and erosion. '
+           'ⓒ Sharks, which live in many parts of the ocean, have existed for more than 400 million years. '
+           'ⓓ In addition, scientists have found substances in reef organisms that may be used to develop new medicines. '
+           'ⓔ Reefs also attract divers and tourists from all over the world, bringing jobs and income to local communities. '
+           'Protecting coral reefs, therefore, means protecting both the rich life of the ocean and the well-being of the people who depend on it.'),
+   F, 2,
+   ['첫 문장 「산호초는 바다 밑바닥의 아주 작은 부분만 차지하지만, 바다 생물과 사람 모두에게 매우 귀중하다.」가 주제이다.',
+    'ⓐ 바다 생물의 먹이·은신처·산란 장소, ⓑ 폭풍 때 파도의 힘을 줄여 해안 마을 보호, ⓓ 신약 개발 물질, ⓔ 관광 수입 — 모두 산호초의 가치이다.',
+    'ⓒ 「상어는 바다 여러 곳에 살며 4억 년 넘게 존재해 왔다.」는 바다 생물 이야기이지만 산호초의 가치와 관계가 없다.'])
+
+qf(T, 4, P(발,
+           'People tend to believe that others notice their appearance and behavior far more than they actually do. '
+           'ⓐ Wearing clothes that suit the weather is important for staying healthy in every season. '
+           'ⓑ In a well-known experiment, college students were asked to put on a T-shirt with an embarrassing picture on it and walk into a room full of other students. '
+           'ⓒ Afterward, the students wearing the shirt guessed that about half of the people in the room had noticed it. '
+           'ⓓ In fact, far fewer people had noticed — only about a quarter of them. '
+           'ⓔ Psychologists call this tendency the spotlight effect, because we feel as if a spotlight is always shining on us. '
+           'Knowing this can free us from unnecessary worry, since most people are too busy thinking about themselves to pay close attention to us.'),
+   F, 0,
+   ['첫 문장 「사람들은 남들이 자신의 외모와 행동을 실제보다 훨씬 더 많이 알아챈다고 믿는 경향이 있다.」가 주제이다.',
+    'ⓑ 창피한 그림의 티셔츠를 입고 들어가는 실험 → ⓒ 입은 학생들은 절반쯤이 알아챘을 거라 추측 → ⓓ 실제로는 약 4분의 1만 알아챔 → ⓔ 이를 «스포트라이트 효과»라 부름 — 실험과 개념이 자연스럽게 이어진다.',
+    'ⓐ 「날씨에 맞는 옷을 입는 것은 사계절 건강을 지키는 데 중요하다.」는 «옷을 입다»라는 낱말만 겹칠 뿐, 남의 시선을 과대평가하는 경향과 관계가 없다. 무관한 문장이 첫 자리에 올 수도 있음에 주의한다.'])
+
+qf(T, 5, P(발,
+           'Procrastination is often seen as a problem of poor time management, but many researchers now view it as a problem of managing emotions. '
+           'ⓐ When we face a task that makes us feel anxious, bored, or unsure of ourselves, putting it off gives us immediate relief from those unpleasant feelings. '
+           'ⓑ Making a detailed schedule with deadlines for each step is a common way to organize large projects at work. '
+           'ⓒ This relief, however, is only temporary, and the task remains, often causing even greater stress as the deadline approaches. '
+           'ⓓ Because the delay is rewarded with a short-term escape, the habit becomes stronger each time we repeat it. '
+           'ⓔ This explains why simply buying a new planner rarely solves the problem; what helps more is learning to tolerate the discomfort of starting. '
+           'Being kind to ourselves after we delay, rather than harshly blaming ourselves, can also make it easier to begin next time.'),
+   F, 1,
+   ['첫 문장 「미루기는 흔히 시간 관리의 문제로 여겨지지만, 많은 연구자들은 이제 이를 «감정 관리»의 문제로 본다.」가 주제이다.',
+    'ⓐ 불편한 감정을 주는 일을 미루면 즉각적인 안도감을 얻음 → ⓒ 「This relief(이 안도감)」는 일시적일 뿐임 → ⓓ 미루기가 보상받아 습관이 강해짐 → ⓔ 그래서 새 플래너(시간 관리 도구)로는 해결이 안 되고 시작의 불편함을 견디는 법이 필요함 — 감정 관리 관점으로 이어진다.',
+    'ⓑ 「단계별 마감이 있는 상세한 일정표를 짜는 것은 직장에서 큰 프로젝트를 조직하는 흔한 방법이다.」는 글쓴이가 넘어서려는 «시간 관리» 쪽 이야기로, ⓐ의 relief와 ⓒ의 This relief 사이를 끊는다. ⓔ도 planner를 언급하지만 «시간 관리로는 해결이 안 된다»는 논지를 뒷받침하므로 흐름에 맞다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m2s1t0 독해/글의 흐름 파악/문장 삽입/주어진 문장이 들어갈 위치
+# ══════════════════════════════════════════════════════════════
+T = 'u0m2s1t0'
+발 = '글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?'
+
+
+def 삽입(주어진, 지문):
+    return f'{발}\n\n[주어진 문장]\n{주어진}\n\n{지문}'
+
+
+qf(T, 1, 삽입('For example, a smile or a nod can show that you agree without saying a word.',
+              'When we think of communication, we usually think of the words we speak or write. '
+              '( A ) However, much of what we communicate is expressed through nonverbal signals such as facial expressions, gestures, and posture. '
+              '( B ) Likewise, crossing your arms during a conversation may make the other person think that you are not interested. '
+              '( C ) These signals are so powerful that when our words and our body language do not match, people tend to believe the body language. '
+              '( D ) For this reason, paying attention to nonverbal signals can help us understand others better. '
+              '( E ) It can also help us make sure that the messages we send are the ones we really intend to send. '
+              'After all, communication is not only about what we say but also about how we say it.'),
+   AE, 1,
+   ['주어진 문장: 「예를 들어, 미소나 고개 끄덕임은 말 한마디 없이도 동의한다는 것을 보여 줄 수 있다.」 — 앞에는 «말 없는 신호»에 대한 일반적인 설명이 와야 한다.',
+    '(B) 앞 문장이 비언어적 신호(표정·몸짓·자세)를 처음 소개하고, (B) 뒤 문장은 Likewise(마찬가지로)로 시작해 «팔짱 끼기»라는 두 번째 예를 든다. Likewise 앞에는 첫 번째 예가 있어야 하므로 주어진 문장은 (B)에 들어가야 한다.',
+    '(A)에 넣으면 비언어적 신호가 소개되기도 전에 예시가 나오고, (C) 이후는 신호의 힘과 그 활용을 말하는 부분이라 예시가 들어갈 자리가 아니다.'])
+
+qf(T, 2, 삽입('As a result, yellow and orange pigments that were there all along finally become visible.',
+              'In autumn, the leaves of many trees turn brilliant shades of yellow, orange, and red. '
+              '( A ) During spring and summer, leaves are green because they are full of chlorophyll, a pigment that plants use to make food from sunlight. '
+              '( B ) Chlorophyll is so plentiful in these seasons that it hides the other colors in the leaf. '
+              '( C ) As the days grow shorter and cooler in autumn, however, trees stop producing chlorophyll, and the green color gradually fades. '
+              '( D ) The red color, on the other hand, comes from pigments that some trees newly produce in autumn. '
+              '( E ) Because the amount of these red pigments depends on the weather, autumn colors can look different from year to year. '
+              'So the next time you walk through a colorful autumn forest, remember that some of those colors were hidden in the leaves all summer long.'),
+   AE, 3,
+   ['주어진 문장: 「그 결과, 내내 거기에 있었던 노란색과 주황색 색소가 마침내 보이게 된다.」 — As a result 앞에는 «초록색이 사라지는» 원인이 와야 한다.',
+    '(D) 앞 문장 「가을에 나무가 엽록소를 만들지 않아 초록색이 점점 옅어진다」의 결과로 노란·주황 색소가 드러나고, (D) 뒤 문장은 on the other hand(반면)로 «빨간색은 가을에 새로 만든 색소»라고 대조한다.',
+    '「there all along(내내 있었던)」의 노랑·주황과 「newly produce(새로 만든)」의 빨강이 대조되므로 (D)가 알맞다. (B)·(C)는 엽록소가 아직 다른 색을 가리고 있는 상황이라 들어갈 수 없다.'])
+
+qf(T, 3, 삽입('A classic experiment conducted in the 1970s clearly showed this surprising effect.',
+              'Rewards do not always increase motivation; sometimes they can even reduce it. '
+              '( A ) In the study, researchers observed preschool children who already enjoyed drawing with colored markers. '
+              '( B ) One group of children was told in advance that they would receive a "Good Player" certificate for drawing, while another group received no reward. '
+              '( C ) Days later, when the markers were placed in the classroom again, the children who had expected a reward spent much less time drawing on their own. '
+              '( D ) It seems that the reward changed the way the children saw the activity: drawing had become work done for a prize rather than something fun. '
+              '( E ) Psychologists call this the overjustification effect. '
+              'In other words, when people are rewarded for something they already enjoy, they may start to lose their natural interest in it.'),
+   AE, 0,
+   ['주어진 문장: 「1970년대에 이루어진 한 고전적인 실험이 이 놀라운 효과를 분명히 보여 주었다.」 — this surprising effect는 앞 문장의 «보상이 오히려 동기를 떨어뜨릴 수 있다»를 가리킨다.',
+    '(A) 뒤 문장은 「In the study(그 연구에서)」로 시작하는데, the study가 가리킬 대상이 앞에 없다. 주어진 문장이 (A)에 들어가야 「A classic experiment → the study」로 이어진다.',
+    '(B) 이후는 이미 실험 내용이 진행 중이라 실험을 처음 소개하는 문장이 들어갈 수 없다.'])
+
+qf(T, 3, 삽입('Knowing this tendency, however, can actually help you when you are the one who needs help.',
+              'When someone needs help in a public place, you might expect that the more people are around, the more likely the person is to receive help. '
+              '( A ) Surprisingly, research suggests the opposite. '
+              '( B ) In one experiment, participants who believed they were the only person hearing someone have a medical emergency were much more likely to help than those who believed several others could also hear it. '
+              '( C ) This phenomenon, known as the bystander effect, happens partly because responsibility is spread among everyone present. '
+              '( D ) Each person assumes that someone else will take action, so no one does. '
+              '( E ) So if you are ever in trouble in a crowd, point to one specific person and ask him or her directly for help. '
+              'Once a specific person has been singled out, that person is far more likely to feel responsible and step in.'),
+   AE, 4,
+   ['주어진 문장: 「하지만 이 경향을 알면, 여러분이 도움이 필요한 사람일 때 실제로 도움이 될 수 있다.」 — this tendency는 방관자 효과를, however는 앞의 부정적인 내용에서 긍정적인 활용으로의 전환을 나타낸다.',
+    '(E) 뒤 문장 「So if you are ever in trouble in a crowd, point to one specific person ~(그러니 군중 속에서 곤경에 처하면 한 사람을 지목해 직접 도움을 청하라)」은 주어진 문장이 말한 «활용법»의 구체적 내용이므로 (E)에 들어가야 한다.',
+    '(C)·(D)는 방관자 효과의 원인(책임 분산)을 설명하는 흐름 중간이라 들어갈 수 없다.'])
+
+qf(T, 4, 삽입('In a new place, however, these natural controls are often missing, allowing the population to grow without limits.',
+              'Every year, plants and animals are carried to new parts of the world, sometimes by accident and sometimes on purpose. '
+              '( A ) When such a species settles in a new environment, the results can be disastrous. '
+              '( B ) In its original home, a species is kept in check by predators, diseases, and competitors that have evolved alongside it. '
+              '( C ) The cane toad is a well-known example. '
+              '( D ) It was brought to Australia in 1935 in the hope that it would eat beetles that were damaging sugar cane crops. '
+              '( E ) However, with no natural enemies in its new home, the toad multiplied rapidly and spread across much of northern Australia, while doing little to control the beetles. '
+              'Worse still, because its skin contains a powerful poison, many native animals that tried to eat it died.'),
+   AE, 2,
+   ['주어진 문장: 「그러나 새로운 곳에서는 이러한 자연적 억제 요인이 없는 경우가 많아, 개체 수가 한없이 늘어나게 된다.」',
+    'these natural controls(이러한 자연적 억제 요인)는 (C) 앞 문장의 predators, diseases, and competitors(포식자·질병·경쟁자)를 가리키고, however는 「원래 서식지(original home)」와 「새로운 곳(a new place)」을 대조한다. 따라서 (C)에 들어가야 한다.',
+    '(B)에 넣으면 these natural controls가 가리킬 말이 없고, (D)·(E)에 넣으면 사탕수수두꺼비라는 예시의 흐름이 끊긴다.'])
+
+qf(T, 5, 삽입('While tapping, the tappers could not help hearing the melody in their heads.',
+              'Once we know something, it becomes surprisingly difficult to imagine what it was like not to know it. '
+              '( A ) This is why experts sometimes turn out to be poor teachers. '
+              '( B ) In a famous study, one group of people was asked to tap out the rhythm of well-known songs, such as "Happy Birthday," on a table, while listeners tried to name the songs. '
+              '( C ) The tappers predicted that listeners would guess about half of the songs correctly, but in reality, listeners recognized only a tiny fraction of them. '
+              'Why were the tappers so far off? '
+              '( D ) Their listeners, however, had no such melody to rely on; they heard only a series of meaningless knocks. '
+              '( E ) Psychologists call this the curse of knowledge, and overcoming it requires deliberately stepping into the shoes of someone who is new to the subject.'),
+   AE, 3,
+   ['주어진 문장: 「두드리는 동안, 두드리는 사람들은 머릿속에서 멜로디가 들리는 것을 어쩔 수 없었다.」 — 두드리는 사람들이 왜 결과를 지나치게 높게 예측했는지를 설명한다.',
+    '(D) 뒤 문장 「Their listeners, however, had no such melody to rely on(하지만 듣는 사람들에게는 기댈 그런 멜로디가 없었다)」의 no such melody는 바로 앞에 «머릿속 멜로디»가 언급되어야 성립하고, however는 두드리는 사람과 듣는 사람을 대조한다.',
+    '(D) 바로 앞 문장 「Why were the tappers so far off?(두드리는 사람들은 왜 그렇게 크게 빗나갔을까?)」라는 물음에 대한 답이 주어진 문장이다. 따라서 결과(예측은 절반, 실제는 극히 일부) → 물음 → 이유(머릿속 멜로디) → 대조(듣는 사람에겐 멜로디가 없음) 순서가 되는 (D)가 알맞다.', '(C)에 넣으면 결과가 나오기도 전에 이유가 먼저 나오고, 뒤의 물음(Why ~?)에 답할 문장이 사라져 흐름이 끊긴다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m3s0t0 독해/빈칸·의미 추론/빈칸 추론/빈칸에 들어갈 말(단어)
+# ══════════════════════════════════════════════════════════════
+T = 'u0m3s0t0'
+발 = '다음 빈칸에 들어갈 말로 가장 적절한 것은?'
+
+q(T, 1, P(발,
+          'Many great achievements require __________. '
+          'A farmer who plants seeds cannot dig them up every day to check whether they are growing. '
+          'He has to water them, wait, and trust that the plants will appear in time. '
+          'Even nature teaches this lesson: a tree takes many years to grow tall and strong. '
+          'Learning a musical instrument or a new language works in the same way. '
+          'At first, progress is so slow that it seems as if nothing is happening, and many people give up too early. '
+          'But those who keep practicing and wait calmly for results eventually see their skills blossom. '
+          'Quick results are rare, and lasting ones are rarer still. '
+          'In a world where we expect everything to happen instantly, the ability to wait is becoming more valuable than ever.'),
+  'patience',
+  ['talent', 'luck', 'speed', 'money'],
+  ['씨앗을 심은 농부는 매일 파 보지 않고 «기다리며» 믿어야 하고, 악기나 언어도 처음엔 진전이 느려 보이지만 «차분히 결과를 기다리는» 사람이 결국 성과를 본다.',
+   '마지막 문장 「the ability to wait(기다리는 능력)」이 빈칸의 뜻을 다시 말해 주므로 patience(인내심)가 알맞다.',
+   'speed(속도)는 「모든 것이 즉시 일어나길 기대한다」는 세태와 연결되는 반대 개념이고, talent·luck·money는 글에서 말하지 않았다.'])
+
+q(T, 2, P(발,
+          'Children ask an enormous number of questions every day: Why is the sky blue? Where do dreams come from? How do birds know where to fly? '
+          'Some of these questions are the very same ones that scientists have spent centuries trying to answer. '
+          'This natural __________ is one of the most powerful engines of learning. '
+          'When we genuinely want to know something, we pay closer attention, search for answers on our own, and remember what we discover for a longer time. '
+          'Unfortunately, as children grow older, many of them stop asking questions, partly because they are afraid of looking foolish in front of others. '
+          'Teachers and parents can help by welcoming questions, even strange ones, and by admitting that they themselves do not know every answer. '
+          'After all, every great discovery in history began with someone asking a simple question.'),
+  'curiosity',
+  ['fear', 'obedience', 'competition', 'laziness'],
+  ['빈칸 앞은 아이들이 쏟아 내는 «질문들», 빈칸 뒤는 「When we genuinely want to know something(무언가를 진심으로 알고 싶을 때)」 더 집중하고 스스로 답을 찾는다는 내용이다.',
+   '따라서 «알고 싶어 하는 마음», 곧 curiosity(호기심)가 배움의 강력한 원동력이라는 흐름이다.',
+   'fear(두려움)는 오히려 질문을 멈추게 하는 원인(afraid of looking foolish)으로 나왔고, obedience(순종)·competition(경쟁)·laziness(게으름)는 글과 관계없다.'])
+
+q(T, 3, P(발,
+          'A forest made up of a single type of tree may look neat, but it is surprisingly fragile. '
+          'If a disease or insect that attacks that particular tree arrives, it can spread quickly and destroy the entire forest. '
+          'A forest with many different kinds of trees, on the other hand, is much more likely to survive such attacks, because a disease that harms one species usually leaves the others untouched. '
+          'Farmers have learned the same lesson: fields planted with a single crop variety can be wiped out by one disease. '
+          'The same principle applies to human groups. '
+          'A team whose members have different backgrounds, skills, and ways of thinking can handle unexpected problems better than a team whose members all think alike. '
+          'In both nature and society, __________ is a source of strength.'),
+  'diversity',
+  ['uniformity', 'competition', 'tradition', 'isolation'],
+  ['한 종류의 나무만 있는 숲은 병 하나에 전부 무너지지만, 여러 종류가 섞인 숲은 살아남는다. 사람들의 팀도 배경·기술·사고방식이 «서로 다른» 구성원이 있을 때 문제를 더 잘 해결한다.',
+   '자연과 사회 모두에서 힘의 원천이 되는 것은 diversity(다양성)이다.',
+   'uniformity(획일성)는 글에서 약점(fragile, all think alike)으로 제시된 개념이라 정반대이고, competition·tradition·isolation은 언급되지 않았다.'])
+
+q(T, 3, P(발,
+          'Many people believe that the key to breaking a bad habit is simply to try harder. '
+          'However, relying on willpower alone rarely works for long, because temptations are everywhere and our energy runs low at the end of a tiring day. '
+          'People who successfully change their habits tend to take a different approach: they __________ their surroundings so that good choices become easy and bad choices become difficult. '
+          'For instance, someone who wants to eat less junk food keeps snacks out of the house and places a bowl of fruit on the kitchen table. '
+          'A student who wants to study more might leave her phone in another room. '
+          'Small changes like these reduce the need to fight temptation again and again. '
+          'Over time, the good habits become automatic, and they no longer require much effort at all.'),
+  'rearrange',
+  ['ignore', 'blame', 'abandon', 'admire'],
+  ['빈칸 뒤 예시: 간식을 집 밖에 두고 과일 그릇을 식탁에 올려 둠, 휴대 전화를 다른 방에 둠 — 모두 주변 환경을 «다시 배치하는» 행동이다.',
+   '따라서 좋은 선택은 쉽게, 나쁜 선택은 어렵게 되도록 주변 환경을 rearrange(재배치하다)한다는 말이 알맞다.',
+   'ignore(무시하다)·abandon(버리다)은 환경을 바꾸는 행동이 아니고, blame(탓하다)·admire(감탄하다)도 예시와 맞지 않는다.'])
+
+q(T, 4, P(발,
+          'The same action can have completely different meanings depending on the __________ in which it occurs. '
+          'Laughing loudly is perfectly natural at a comedy show, but it would be considered rude at a funeral. '
+          'Likewise, a thumbs-up gesture expresses approval in many countries, yet in some parts of the world it is regarded as an insult. '
+          'In some cultures, looking a teacher directly in the eye shows honesty, while in others it can seem disrespectful. '
+          'Even words can change their meaning: "Nice job" can be a sincere compliment or a sarcastic complaint, depending on the tone of voice and the situation. '
+          'Therefore, to understand what someone truly means, we must look beyond the action or the words themselves and consider the circumstances surrounding them. '
+          'Without this awareness, we can easily misunderstand others or be misunderstood ourselves.'),
+  'context',
+  ['intensity', 'frequency', 'sequence', 'duration'],
+  ['같은 웃음도 코미디 공연장과 장례식장에서 의미가 다르고, 엄지 척도 나라에 따라, "Nice job"도 말투와 상황에 따라 뜻이 달라진다.',
+   '마지막 문장 「consider the circumstances surrounding them(그것을 둘러싼 상황을 고려하라)」이 빈칸을 다시 말하므로, 의미를 좌우하는 것은 context(맥락, 상황)이다.',
+   'intensity(강도)는 «크게 웃기»에서 떠올릴 수 있는 매력적 오답이지만, 글에서 의미를 바꾸는 요인은 웃음의 크기가 아니라 «장소·상황»이다. frequency·sequence·duration은 글과 무관하다.'])
+
+q(T, 5, P(발,
+          'We often assume that creativity flourishes when people are given unlimited freedom and resources. '
+          'Yet history suggests otherwise. '
+          'When Dr. Seuss was challenged to write a children\'s book using only fifty different words, he produced "Green Eggs and Ham," one of the best-selling children\'s books of all time. '
+          'Similarly, poets working within the strict rules of a sonnet or a haiku often find that the rules push them toward unexpected word choices. '
+          'Filmmakers with small budgets, too, have often come up with creative solutions that big-budget productions never needed to find. '
+          'Having too many options can actually be paralyzing, since there is no clear place to start. '
+          'By contrast, __________ narrow the field of possibilities and force the mind to explore unfamiliar paths. '
+          'Rather than being obstacles to creativity, they can be its fuel.'),
+  'constraints',
+  ['freedoms', 'resources', 'rewards', 'distractions'],
+  ['닥터 수스는 «오직 50개의 단어만» 쓰라는 제약 속에서 명작을 썼고, 시인들은 소네트·하이쿠의 «엄격한 규칙» 안에서 뜻밖의 표현을 찾는다.',
+   '빈칸은 「가능성의 범위를 좁히고 마음이 낯선 길을 탐색하게 만드는 것」이며, 마지막 문장은 그것이 창의성의 장애물이 아니라 연료라고 한다 → constraints(제약)가 알맞다.',
+   'freedoms·resources는 첫 문장에서 사람들이 창의성의 조건이라고 «잘못» 믿는 것(선택지가 너무 많으면 오히려 마비됨)이라 정반대이고, rewards·distractions는 언급되지 않았다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u0m3s1t1 독해/빈칸·의미 추론/의미 추론/함축적 의미
+# ══════════════════════════════════════════════════════════════
+T = 'u0m3s1t1'
+발 = '다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?'
+
+q(T, 1, P(발,
+          'When we disagree with someone, our first reaction is often to defend our own opinion as strongly as possible. '
+          'We listen only to find weak points in the other person\'s argument, and we prepare our answer before they have even finished speaking. '
+          'But real understanding begins when we are willing to **walk in the other person\'s shoes**. '
+          'This means imagining how the world looks from their position, with their experiences, worries, and hopes. '
+          'It is not easy, because our own point of view always feels like the natural one. '
+          'Instead of asking, "How can I win this argument?" we should ask, "Why does this person see things so differently?" '
+          'When we do this, we may still disagree, but we will disagree with respect, and we may even discover that our views are closer than we thought. '
+          'Understanding does not require agreement, but it does require imagination.'),
+  '상대방의 입장이 되어 생각해 보는 것',
+  ['상대방의 행동을 그대로 따라 하는 것',
+   '상대방의 주장에서 약점을 찾는 것',
+   '상대방과 똑같은 경험을 직접 해 보는 것',
+   '상대방에게 자신의 의견을 강하게 주장하는 것'],
+  ['바로 뒤 문장 「This means imagining how the world looks from their position(이것은 그들의 입장에서 세상이 어떻게 보일지 상상하는 것을 의미한다)」이 굵은 부분을 풀이한다.',
+   '따라서 「상대방의 신발을 신고 걷다」는 «상대방의 입장이 되어 생각해 보는 것»을 뜻한다.',
+   '약점 찾기·자기 의견 강하게 주장하기는 글쓴이가 비판한 태도이고, 「똑같은 경험을 직접 해 보는 것」은 비유를 글자 그대로 받아들인 것이다(글은 «상상»하라고 했다).'])
+
+q(T, 2, P(발,
+          'When a student suddenly starts getting poor grades, teachers and parents often focus on the grades themselves. '
+          'They may sign the student up for extra classes or take away his phone until his scores improve. '
+          'However, low grades are often just **the tip of the iceberg**. '
+          'Behind them may lie problems that are much harder to see, such as trouble sleeping, conflicts with friends, or stress at home. '
+          'If adults deal only with the grades, the deeper causes remain untouched, and the problem is likely to return. '
+          'A doctor who treats only a patient\'s fever without looking for its cause would be making the same mistake. '
+          'It is therefore important to talk with the student and find out what lies beneath the surface. '
+          'Grades are important, but they are signals, not the whole story.'),
+  'a small visible sign of larger hidden problems',
+  ['a cold attitude toward teachers and parents',
+   'the most serious problem that must be solved first',
+   'a temporary drop that will soon disappear by itself',
+   'the final result of hard work and effort'],
+  ['빙산은 물 위에 보이는 부분(일각)보다 물 아래에 잠긴 부분이 훨씬 크다.',
+   '뒤 문장 「Behind them may lie problems that are much harder to see(그 뒤에는 훨씬 보기 어려운 문제들이 있을 수 있다)」처럼, 낮은 성적은 수면 부족·친구 갈등·가정 스트레스 같은 «더 큰 숨은 문제가 겉으로 드러난 작은 신호»이다.',
+   '「가장 먼저 해결해야 할 가장 심각한 문제」는 성적에만 매달리는 태도로, 글쓴이가 비판한 관점이다. 「저절로 사라질 일시적 하락」은 「the problem is likely to return」과 어긋난다.'])
+
+q(T, 3, P(발,
+          'Social media platforms are designed to show us content that we are likely to enjoy. '
+          'Because they learn from what we click on, they gradually fill our feeds with posts that match our existing tastes and opinions. '
+          'At first, this feels comfortable; everything we see seems to confirm that we are right. '
+          'Over time, however, we may end up **living in a room full of mirrors**. '
+          'We rarely encounter people who think differently, and we begin to believe that our view is the only reasonable one. '
+          'To avoid this trap, it is worth deliberately seeking out sources that challenge our beliefs. '
+          'Reading an article written from a different point of view or following people who disagree with us may feel uncomfortable, but it helps us see the world more completely.'),
+  'seeing only opinions that reflect what we already believe',
+  ['spending too much time looking at our own appearance',
+   'sharing our private lives with too many people',
+   'being exposed to a wide range of different views',
+   'becoming unable to enjoy content that we used to like'],
+  ['거울로 가득 찬 방에서는 어디를 보아도 «자기 자신»만 보인다.',
+   'SNS가 우리의 취향·의견에 맞는 게시물로만 피드를 채우면 「We rarely encounter people who think differently(다르게 생각하는 사람을 거의 만나지 못한다)」 — 곧 «이미 믿는 것을 비추는 의견만 보게 되는 상태»를 뜻한다.',
+   '「다양한 관점에 노출되는 것」은 정반대이고, 「외모를 들여다보는 것」은 거울을 글자 그대로 받아들인 해석이다.'])
+
+q(T, 3, P(발,
+          'In many meetings, decisions are made not by the best idea but by **the loudest voice in the room**. '
+          'People who speak confidently and frequently tend to dominate the discussion, while quieter members, who may have carefully thought-out ideas, hold back. '
+          'This happens partly because confidence is easily mistaken for competence. '
+          'As a result, groups often end up choosing options that sound convincing rather than those that are actually wise. '
+          'One way to solve this problem is to have everyone write down their ideas individually before the discussion begins. '
+          'This simple step ensures that every member\'s thinking is heard, not just that of the most talkative people. '
+          'Some teams also invite the quietest members to speak first. '
+          'Good decisions depend on hearing every voice, not only the most confident ones.'),
+  '자신 있게 자주 말하는 사람의 의견',
+  ['회의실에서 나는 소음을 줄이는 방법',
+   '가장 논리적으로 검증된 의견',
+   '참석자 전원이 합의한 결론',
+   '회의를 이끄는 사람의 공식적인 권한'],
+  ['바로 뒤 문장 「People who speak confidently and frequently tend to dominate the discussion(자신 있게 자주 말하는 사람들이 토론을 지배한다)」이 굵은 부분을 풀이한다.',
+   '「방에서 가장 큰 목소리」는 실제 목소리 크기가 아니라 «자신 있게 자주 말해 토론을 주도하는 사람의 의견»을 뜻한다.',
+   '「가장 논리적으로 검증된 의견」은 글에서 말한 the best idea에 가까워 굵은 부분과 «대조»되는 개념이고, 소음·전원 합의·공식 권한은 글과 관계가 없다.'])
+
+q(T, 4, P(발,
+          'Many musicians spend hours repeating the same piece, believing that more practice will automatically make them better. '
+          'But if they play a passage incorrectly every time, they are only training their fingers to repeat the error more smoothly. '
+          'The same is true in sports, where an athlete who repeats a poor swing thousands of times will find it very difficult to fix later. '
+          'In a sense, they are **carving the mistake deeper into stone**. '
+          'Effective practice requires slowing down, noticing what went wrong, and correcting it before repeating. '
+          'At first, slow practice may feel frustrating, because it seems as if less is being accomplished. '
+          'That is why many teachers say that ten minutes of careful, focused practice is worth more than an hour of mindless repetition. '
+          'Repetition is powerful, but only when what is being repeated is correct.'),
+  'making a wrong habit harder to change through repetition',
+  ['creating a work of art that will last for a long time',
+   'admitting their mistakes to their teachers honestly',
+   'slowing down to find out what went wrong',
+   'practicing difficult passages until they sound perfect'],
+  ['앞 문장 「they are only training their fingers to repeat the error more smoothly(손가락이 실수를 더 매끄럽게 반복하도록 훈련할 뿐이다)」이 근거이다.',
+   '돌에 새긴 것은 지우기 어렵다. 틀리게 반복할수록 실수가 더 깊이 굳어진다는 뜻이므로, «반복을 통해 잘못된 습관을 바꾸기 더 어렵게 만드는 것»이 알맞다.',
+   '「천천히 하며 무엇이 틀렸는지 찾기」는 글쓴이가 제시한 «해결책»이지 굵은 부분의 의미가 아니고, 「오래 남을 예술 작품을 만드는 것」은 돌에 새기다를 글자 그대로 받아들인 것이다.'])
+
+q(T, 5, P(발,
+          'Numbers help organizations see whether they are doing well. '
+          'A school may track test scores, and a call center may count how many calls each worker handles per hour. '
+          'Problems begin, however, when the number itself becomes the goal. '
+          'Teachers under pressure to raise scores may spend weeks drilling test-taking tricks instead of building real understanding. '
+          'Call center workers rewarded for speed may hurry customers off the phone before their problems are actually solved. '
+          'In each case, the score goes up while the thing it was meant to reflect gets worse. '
+          'The organization ends up **admiring the thermometer while the patient grows sicker**. '
+          'A good measure, in other words, can stop being a good measure once people start aiming at it. '
+          'The solution is not to throw numbers away but to use several measures together and to keep asking what they are supposed to show.'),
+  'focusing on improving indicators instead of the actual condition they represent',
+  ['relying on experts rather than numbers to make decisions',
+   'ignoring numbers because they are always misleading',
+   'measuring performance more often to detect problems early',
+   'treating customers\' complaints as more important than profits'],
+  ['온도계는 환자의 상태를 보여 주는 «지표»일 뿐이다. 온도계 숫자에 감탄하는 동안 환자가 더 아파진다는 것은, 지표(점수·통화 수)만 좋아지고 그것이 나타내려던 실제 상태(진짜 이해, 고객 문제 해결)는 나빠지는 상황을 뜻한다.',
+   '앞 문장 「the score goes up while the thing it was meant to reflect gets worse(점수는 오르는데 그 점수가 반영하려던 것은 나빠진다)」가 직접적인 근거이다.',
+   '「숫자는 늘 오해를 부르므로 무시한다」는 지나친 일반화이다 — 글은 숫자가 유용하지만(첫 문장) «목표가 될 때» 문제가 생긴다고 했다. 더 자주 측정하기·전문가 의존·고객 불만 우선은 글의 논지와 관계가 없다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u1m1s0t0 어법·어휘/어휘/낱말 쓰임/문맥상 낱말의 쓰임이 적절하지 않은 것
+# ══════════════════════════════════════════════════════════════
+T = 'u1m1s0t0'
+발 = '다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?'
+
+qf(T, 1, P(발,
+           'Getting enough sleep is essential for teenagers, whose brains and bodies are still developing. '
+           'During sleep, the brain ⓐ**stores** the information learned during the day, turning it into long-term memories. '
+           'Sleep also helps the body ⓑ**recover** from physical activity and fight off illness. '
+           'However, many students ⓒ**increase** their sleep time in order to study late at night or use their phones in bed. '
+           'As a result, they often feel ⓓ**tired** during the day and find it hard to concentrate in class. '
+           'Lack of sleep can also affect mood, making teenagers more likely to feel stressed or irritable. '
+           'Some schools have even started classes later in the morning to help students get more rest. '
+           'Experts ⓔ**recommend** that teenagers sleep at least eight hours a night.'),
+   F, 2,
+   ['However 뒤 문장은 학생들이 «밤늦게 공부하거나 침대에서 휴대 전화를 쓰기 위해» 잠 시간을 어떻게 하는지를 말하고, 다음 문장에서 그 결과 낮에 피곤하다고 한다.',
+    '따라서 잠 시간을 ⓒ increase(늘리다)가 아니라 reduce(줄이다) / cut(줄이다)가 되어야 한다.',
+    'ⓐ 저장하다, ⓑ 회복하다, ⓓ 피곤한, ⓔ 권장하다는 모두 문맥에 맞다.'])
+
+qf(T, 2, P(발,
+           'Plastic waste has become one of the most serious environmental problems of our time. '
+           'Because plastic is cheap and ⓐ**durable**, it is used in almost every product we buy. '
+           'Unfortunately, the same quality that makes it useful also makes it ⓑ**harmful** to the environment: plastic can take hundreds of years to break down. '
+           'Much of it ends up in the ocean, where sea animals ⓒ**mistake** it for food. '
+           'Tiny pieces of plastic, called microplastics, have even been found in the fish and salt that people eat. '
+           'Some countries have started to ⓓ**ban** single-use plastic bags and straws. '
+           'Many people are also choosing reusable bags, bottles, and containers instead. '
+           'If we all make an effort to use less plastic, we can ⓔ**worsen** the health of our oceans for future generations.'),
+   F, 4,
+   ['마지막 문장은 「우리 모두가 플라스틱을 덜 쓰려고 노력하면」이라는 긍정적인 조건이므로, 그 결과도 바다의 건강을 «지키거나 좋게 하는» 내용이어야 한다.',
+    '따라서 ⓔ worsen(악화시키다)은 improve(개선하다) / protect(보호하다)가 되어야 한다.',
+    'ⓐ durable(오래가는)은 수백 년 동안 분해되지 않는다는 뒤 내용과, ⓑ harmful(해로운)·ⓒ mistake A for B(A를 B로 착각하다)·ⓓ ban(금지하다)도 문맥에 맞다.'])
+
+qf(T, 3, P(발,
+           'Many people think that successful people ⓐ**frequently** fail at what they do. '
+           'In reality, however, most of them have failed many times. '
+           'What makes them different is not that they avoid failure but that they ⓑ**learn** from it. '
+           'When an attempt does not work, they analyze what went wrong and ⓒ**adjust** their approach. '
+           'They see each failure not as a final judgment but as useful ⓓ**feedback**. '
+           'For example, a scientist may run hundreds of experiments that do not work before finding one that does. '
+           'Each of those failed experiments tells the scientist something about what to try next. '
+           'In this sense, failure is not the opposite of success; it is a ⓔ**necessary** part of the path that leads to it. '
+           'So the next time you fail, ask yourself what the failure is trying to teach you.'),
+   F, 0,
+   ['둘째 문장 「In reality, however, most of them have failed many times.(그러나 실제로 그들 대부분은 여러 번 실패했다.)」의 however는 앞 문장(사람들의 생각)과 반대되는 사실을 말한다는 신호이다.',
+    '따라서 첫 문장은 «많은 사람이 성공한 사람들은 좀처럼 실패하지 않는다고 생각한다»가 되어야 하므로, ⓐ frequently(자주)는 rarely / seldom(좀처럼 ~ 않다)이 되어야 한다.',
+    'ⓑ 배우다, ⓒ 조정하다, ⓓ 피드백, ⓔ 필수적인은 «실패를 배움의 과정으로 본다»는 흐름에 맞다.'])
+
+qf(T, 3, P(발,
+           'Although forest fires are usually seen as disasters, some fires actually play an ⓐ**important** role in keeping forests healthy. '
+           'Small, natural fires clear away dead leaves and branches that have ⓑ**accumulated** on the forest floor. '
+           'By burning this material, they return nutrients to the soil and ⓒ**reduce** the risk of larger, more dangerous fires in the future. '
+           'Fire can also open up space in thick forests, allowing sunlight to reach the ground so that new plants can grow. '
+           'Some trees have even come to ⓓ**avoid** fire: certain pine cones open and release their seeds only when exposed to high heat. '
+           'For this reason, many forest managers now allow small fires to burn under careful ⓔ**control** rather than putting out every fire immediately. '
+           'Of course, large wildfires near homes must still be fought, but not every fire is an enemy.'),
+   F, 3,
+   ['콜론(:) 뒤 「어떤 솔방울은 높은 열에 노출될 때만 열려 씨앗을 퍼뜨린다」는 그 나무들이 번식을 위해 불을 «필요로 한다»는 뜻이다.',
+    '따라서 ⓓ avoid(피하다)는 depend on / rely on(의존하다)이 되어야 한다.',
+    'ⓐ 중요한 역할, ⓑ 쌓인 낙엽·가지, ⓒ 큰 산불의 위험을 줄임, ⓔ 신중한 통제 아래 태움 — 모두 «작은 산불이 숲을 건강하게 한다»는 흐름에 맞다.'])
+
+qf(T, 4, P(발,
+           'When people make estimates, they are often influenced by numbers that have nothing to do with the question. '
+           'In one famous experiment, participants watched a wheel of fortune stop on a number and were then asked to estimate the percentage of African countries in the United Nations. '
+           'Participants who had seen a high number gave ⓐ**higher** estimates than those who had seen a low number, even though they knew the number on the wheel was ⓑ**meaningful**. '
+           'This tendency to rely too heavily on the first piece of information we receive is called the anchoring effect. '
+           'Even experts, such as judges and real estate agents, have been shown to be affected by anchors. '
+           'Salespeople ⓒ**exploit** this effect by showing an expensive item first, which makes the following items seem ⓓ**cheaper** by comparison. '
+           'Being ⓔ**aware** of this bias can help us make more careful judgments.'),
+   F, 1,
+   ['첫 문장에서 사람들이 «질문과 아무 관계없는 숫자»에 영향을 받는다고 했고, 행운의 바퀴(돌림판) 숫자는 우연히 정해진 것이다.',
+    '「even though they knew ~(~라는 것을 알면서도)」는 양보이므로, 참가자들이 그 숫자가 «의미 없다(무작위이다)»는 것을 알면서도 영향을 받았다는 내용이 되어야 한다. 따라서 ⓑ meaningful(의미 있는)은 meaningless / random이 되어야 한다.',
+    'ⓐ 높은 숫자를 본 사람이 더 높은 추정치, ⓒ 판매원이 이를 이용함(exploit), ⓓ 비싼 물건을 먼저 보면 다음 물건이 더 싸 보임, ⓔ 편향을 «알면» 신중해질 수 있음 — 모두 적절하다.'])
+
+qf(T, 5, P(발,
+           'Intuition is often praised as a mysterious gift, but it is better understood as pattern recognition built through experience. '
+           'An experienced firefighter who senses danger before a floor collapses is not using magic; he is ⓐ**recognizing** subtle cues that he has encountered many times before. '
+           'However, intuition is only as ⓑ**reliable** as the environment in which it was developed. '
+           'It works well in fields where the same patterns ⓒ**rarely** repeat and where people receive quick, clear feedback on their decisions, such as chess or firefighting. '
+           'In fields that are highly ⓓ**unpredictable**, such as long-term stock market forecasting, even experts\' gut feelings are often no better than chance. '
+           'In such fields, the future depends on so many factors that past experience offers little guidance. '
+           'The lesson is not to ⓔ**abandon** intuition but to know when it deserves our trust.'),
+   F, 2,
+   ['직관은 «경험을 통해 쌓인 패턴 인식»이라고 했으므로, 직관이 잘 작동하려면 같은 패턴이 «자주» 되풀이되어야 한다.',
+    '따라서 ⓒ rarely(좀처럼 ~ 않다)는 regularly / frequently(규칙적으로, 자주)가 되어야 한다. 뒤 문장의 «예측 불가능한(unpredictable) 분야에서는 직관이 운과 다를 바 없다»와도 대조된다.',
+    'ⓐ 미묘한 단서를 알아봄, ⓑ 직관의 신뢰도는 환경에 달림, ⓓ 예측하기 어려운 분야, ⓔ 직관을 «버리라»는 것이 아니라 언제 믿을지 알라는 것 — 모두 적절하다.'])
+
+
+# ══════════════════════════════════════════════════════════════
+# u3m1s0t0 단어·문장/문장/문장 학습/문장 해석
+# ══════════════════════════════════════════════════════════════
+T = 'u3m1s0t0'
+
+q(T, 1, '다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe more you practice, the more confident you will become.',
+  '연습을 많이 하면 할수록 너는 더 자신감이 생길 것이다.',
+  ['너는 자신감이 있어서 더 많이 연습하게 될 것이다.',
+   '연습을 많이 해도 자신감은 생기지 않을 것이다.',
+   '너는 자신감을 얻기 위해 연습을 더 해야 했다.',
+   '연습보다 자신감이 더 중요해질 것이다.'],
+  ['「The + 비교급 ~, the + 비교급 …」은 「~하면 할수록 더 …하다」라는 뜻이다.',
+   'The more you practice(네가 더 많이 연습할수록), the more confident you will become(너는 더 자신감이 생길 것이다).',
+   '원인(연습)과 결과(자신감)를 뒤바꾸거나, 부정·과거·비교(~보다 중요)로 바꾼 해석은 틀렸다.'])
+
+q(T, 2, '다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nIt was not until I lost my phone that I realized how much I depended on it.',
+  '나는 휴대 전화를 잃어버리고 나서야 비로소 내가 그것에 얼마나 의존하고 있었는지 깨달았다.',
+  ['나는 휴대 전화를 잃어버리기 전까지 그것에 전혀 의존하지 않았다.',
+   '나는 휴대 전화에 많이 의존했기 때문에 그것을 잃어버리지 않았다.',
+   '내가 휴대 전화를 잃어버린 것은 그것에 의존했기 때문이 아니었다.',
+   '나는 휴대 전화를 잃어버렸지만 그것이 얼마나 필요한지 몰랐다.'],
+  ['「It is[was] not until A that B」는 「A하고 나서야 비로소 B하다」라는 뜻이다.',
+   'A = I lost my phone(휴대 전화를 잃어버림), B = I realized how much I depended on it(내가 그것에 얼마나 의존했는지 깨달음). how much ~는 간접의문문으로 「얼마나 많이 ~하는지」이다.',
+   '「잃어버리기 전까지 전혀 의존하지 않았다」는 not until을 글자 그대로 끊어 읽은 오역이고, 「필요한지 몰랐다」는 realized(깨달았다)와 반대이다.'])
+
+q(T, 3, '다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nSurrounded by tall buildings, the small park offers office workers a quiet place to rest.',
+  '높은 건물들로 둘러싸인 그 작은 공원은 직장인들에게 쉴 수 있는 조용한 장소를 제공한다.',
+  ['그 작은 공원은 높은 건물들을 둘러싸고 있어서 직장인들이 쉬기 어렵다.',
+   '직장인들은 높은 건물들에 둘러싸여 작은 공원에서 쉴 곳을 찾지 못한다.',
+   '높은 건물들 사이에 공원을 만들면 직장인들이 조용히 쉴 수 있을 것이다.',
+   '그 작은 공원은 높은 건물들로 둘러싸여 있지만 직장인들은 그곳을 이용하지 않는다.'],
+  ['Surrounded by tall buildings는 과거분사로 시작하는 분사구문으로, 의미상 주어는 the small park이다. 공원이 «둘러싸인» 것이므로 수동의 뜻 → 「높은 건물들로 둘러싸인」.',
+   '「offer + 사람 + 사물」은 「~에게 …을 제공하다」, a quiet place to rest는 to부정사의 형용사적 용법으로 「쉴 수 있는 조용한 장소」이다.',
+   '공원이 건물을 «둘러싸고 있다»는 능동 해석, 직장인이 둘러싸였다는 해석(의미상 주어 오류), 조건·양보로 바꾼 해석은 모두 틀렸다.'])
+
+q(T, 3, '다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nWhether we succeed or not depends on what we do today, not on what happened yesterday.',
+  '우리가 성공하느냐 못 하느냐는 어제 일어난 일이 아니라 오늘 우리가 하는 일에 달려 있다.',
+  ['우리가 어제 한 일 덕분에 오늘 성공할 수 있었다.',
+   '오늘 무엇을 할지는 우리가 어제 성공했는지에 달려 있다.',
+   '어제 일어난 일과 오늘 하는 일 모두 성공에 똑같이 중요하다.',
+   '우리가 성공하든 못 하든 오늘 할 일은 해야 한다.'],
+  ['Whether we succeed or not은 명사절 주어로 「우리가 성공하느냐 못 하느냐(는)」이고, 동사는 depends on(~에 달려 있다)이다.',
+   'what we do today(오늘 우리가 하는 것), what happened yesterday(어제 일어난 것)는 관계대명사 what이 이끄는 명사절이며, 「A, not B」는 「B가 아니라 A」이다.',
+   '「성공하든 못 하든 ~해야 한다」는 whether를 양보의 부사절로 잘못 읽은 것이다. 이 문장에서 whether절은 동사 depends의 «주어»이다.'])
+
+q(T, 4, '다음 중 영어 문장을 우리말로 옮긴 것이 바르지 «않은» 것은?',
+  'He is too proud to ask for help. → 그는 도움을 요청할 만큼 자존심이 강하다.',
+  ['Had I known the truth, I would have told you. → 내가 진실을 알았더라면 너에게 말했을 텐데.',
+   'She is the last person to tell a lie. → 그녀는 결코 거짓말을 할 사람이 아니다.',
+   'I can\'t help laughing at his jokes. → 나는 그의 농담에 웃지 않을 수 없다.',
+   'The book is worth reading twice. → 그 책은 두 번 읽을 가치가 있다.'],
+  ['「too + 형용사 + to부정사」는 「너무 ~해서 …할 수 없다」라는 뜻이다. He is too proud to ask for help. → 「그는 자존심이 너무 강해서 도움을 요청하지 못한다.」',
+   '「도움을 요청할 만큼 자존심이 강하다」는 「형용사 + enough + to부정사」의 뜻으로 잘못 옮긴 것이다.',
+   '나머지: Had I known = If I had known(가정법 과거완료의 도치), the last person to ~(결코 ~할 사람이 아니다), cannot help -ing(~하지 않을 수 없다), be worth -ing(~할 가치가 있다) — 모두 바르게 옮겼다.'])
+
+q(T, 5, P('다음 영어 문장과 우리말 해석이 바르게 짝지어진 것만을 <보기>에서 있는 대로 고른 것은?',
+          '<보기>\n'
+          'ㄱ. It is not what you say but how you say it that matters.\n    → 중요한 것은 네가 무엇을 말하느냐가 아니라 어떻게 말하느냐이다.\n'
+          'ㄴ. Seldom does he complain about his work.\n    → 그는 자신의 일에 대해 자주 불평한다.\n'
+          'ㄷ. Had it not been for your advice, I would have failed.\n    → 너의 조언이 없었더라면 나는 실패했을 것이다.\n'
+          'ㄹ. No sooner had he arrived home than it began to rain.\n    → 그가 집에 도착하자마자 비가 오기 시작했다.'),
+  'ㄱ, ㄷ, ㄹ',
+  ['ㄱ, ㄴ', 'ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+  ['ㄱ(○): 「It is ~ that …」 강조 구문으로 not A but B(A가 아니라 B)를 강조했다 → 「중요한 것은 무엇을 말하느냐가 아니라 어떻게 말하느냐이다.」',
+   'ㄴ(×): seldom은 「좀처럼 ~ 않다」라는 부정어이고, 부정어가 문장 앞에 나와 주어와 조동사가 도치(does he complain)되었다 → 「그는 자신의 일에 대해 좀처럼 불평하지 않는다.」 「자주 불평한다」는 정반대이다.',
+   'ㄷ(○): Had it not been for ~ = If it had not been for ~(~이 없었더라면, 가정법 과거완료). ㄹ(○): No sooner had + 주어 + p.p. ~ than … = 「~하자마자 …했다」.',
+   '바르게 짝지어진 것은 ㄱ, ㄷ, ㄹ이다.'])
+
+save(os.path.expanduser('~/hakseupji-deploy/_gen/eng-h1/p-seed.json'))

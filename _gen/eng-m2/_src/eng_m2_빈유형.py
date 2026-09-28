@@ -1,0 +1,529 @@
+# 중2 영어(eng-m2) 빈 유형 11개 × 6문항 — 2026-09-28 밤 · 지문은 전부 직접 창작
+import sys, os; sys.path.insert(0, '/private/tmp/claude-501/-Users-songmyeongsumaegbug-eeo-Library-Mobile-Documents-com-apple-CloudDocs-08------AI/19f5d8ef-bdd5-411c-80d8-fdf503e62ef1/scratchpad/korgen')
+import lib; lib.COURSE = 'eng-m2'
+from lib import q, qf, s, save
+import re
+
+WC = []   # (tid, 단어 수) — 지문 길이 점검용
+
+
+def P(tid, text):
+    t = text.strip()
+    WC.append((tid, len(re.findall(r"[A-Za-z][A-Za-z'’\-]*", t))))
+    return t
+
+
+def B(발문, p, tail=None):
+    return f'{발문}\n\n{p}' + (f'\n\n{tail}' if tail else '')
+
+
+E5 = ['ⓐ', 'ⓑ', 'ⓒ', 'ⓓ', 'ⓔ']
+A5 = ['(A)', '(B)', '(C)', '(D)', '(E)']
+INS = '글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?'
+
+# ───────────────────────── u0m0s0t1 주제문 찾기 ─────────────────────────
+T = 'u0m0s0t1'
+p = P(T, """ⓐ Learning a musical instrument is good for students in many ways. ⓑ First, it can improve your memory because you have to remember many notes and rhythms. ⓒ Second, practicing every day teaches you to be patient. ⓓ Also, playing music with others in a band or an orchestra is a great way to make new friends. ⓔ My cousin started playing the cello last year, and now she plays in the school orchestra with her new friends.""")
+qf(T, 1, B('다음 글의 주제문으로 가장 알맞은 것은?', p), E5, 0,
+   ['ⓐ 「악기를 배우는 것은 여러 면에서 학생들에게 좋다.」가 글 전체의 중심 내용이다.',
+    'ⓑ(기억력 향상), ⓒ(인내심), ⓓ(친구 사귀기)는 First·Second·Also 로 좋은 점을 하나씩 든 뒷받침 문장이다.',
+    'ⓔ는 사촌이 첼로를 배운 경험으로, 주제를 보여 주는 예시일 뿐이다.'])
+
+p = P(T, """ⓐ Every year, a huge number of plastic bags are thrown away around the world. ⓑ Many of them are carried by wind and rivers into the ocean, where they float for a long time. ⓒ Sea turtles often mistake floating bags for jellyfish, which they like to eat. ⓓ Eating plastic can make the turtles very sick or even kill them. ⓔ To protect sea animals, we should use fewer plastic bags and bring our own shopping bags instead.""")
+qf(T, 2, B('다음 글의 주제문으로 가장 알맞은 것은?', p), E5, 4,
+   ['ⓐ~ⓓ는 비닐봉지가 버려짐 → 바다로 흘러감 → 바다거북이 해파리로 착각해 먹음 → 병들거나 죽음이라는 문제 상황을 차례로 보여 준다.',
+    'ⓔ 「바다 동물을 보호하기 위해 우리는 비닐봉지를 덜 쓰고 장바구니를 가져가야 한다.」가 글쓴이가 말하려는 중심 내용(미괄식)이다.',
+    'ⓐ는 글의 첫 문장이지만 문제의 배경을 소개할 뿐이다.'])
+
+p = P(T, """ⓐ Have you ever felt nervous before a big test? ⓑ Most students have felt this way at least once. ⓒ Believe it or not, feeling a little nervous can actually help you do better. ⓓ When you are nervous, your heart beats faster, and your brain becomes more alert. ⓔ Because of this, you can focus more on the questions in front of you. So the next time you feel nervous before a test, don't worry too much.""")
+qf(T, 3, B('다음 글의 ⓐ~ⓔ 중 주제문으로 가장 알맞은 것은?', p, '*alert: 기민한, 정신이 초롱초롱한'), E5, 2,
+   ['ⓐ는 독자의 관심을 끄는 질문이고, ⓑ는 대부분의 학생이 그런 경험을 한다는 도입이다.',
+    'ⓒ 「믿기 어렵겠지만, 조금 긴장하는 것은 실제로 더 잘하는 데 도움이 될 수 있다.」가 글의 중심 내용이다.',
+    'ⓓ(심장이 빨리 뛰고 뇌가 더 기민해짐)와 ⓔ(문제에 더 집중할 수 있음)는 그 까닭을 설명하는 뒷받침 문장이다.'])
+
+p = P(T, """ⓐ In many cities, people are building gardens on the roofs of buildings. ⓑ These rooftop gardens make cities better places to live in. ⓒ They keep buildings cooler in summer, so less electricity is used for air conditioning. ⓓ They also give birds, bees, and butterflies a place to rest and find food in the middle of the city. ⓔ In addition, office workers can enjoy fresh air and beautiful flowers during their lunch break.""")
+qf(T, 3, B('다음 글에서 필자가 가장 강조하는 내용을 담은 문장은?', p), E5, 1,
+   ['ⓐ는 「많은 도시에서 건물 옥상에 정원을 만들고 있다.」라는 현상 소개이다.',
+    'ⓑ 「이런 옥상 정원은 도시를 살기 더 좋은 곳으로 만든다.」가 필자가 강조하는 중심 내용이다.',
+    'ⓒ(건물이 시원해져 전기를 덜 씀), ⓓ(새와 벌의 쉼터), ⓔ(직장인의 휴식)는 ⓑ를 뒷받침하는 구체적인 장점이다.',
+    'ⓐ는 사실을 알릴 뿐 필자의 생각을 담고 있지 않다.'])
+
+p = P(T, """ⓐ In the past, most people thought that only humans could use tools. ⓑ Then scientists began to watch chimpanzees in the wild more closely than before. ⓒ They saw the chimpanzees pushing sticks into holes to catch insects. ⓓ Studies like this show that some animals are much smarter than we used to think. ⓔ Crows, for example, can even bend a piece of wire into a hook to pull food out of a tube.""")
+qf(T, 4, B('다음 글의 주제문으로 가장 알맞은 것은?', p), E5, 3,
+   ['ⓐ는 「과거에는 인간만 도구를 쓸 수 있다고 생각했다.」는 옛 생각으로, 글이 뒤집으려는 내용이다.',
+    'ⓑ·ⓒ는 과학자들이 침팬지가 막대기로 곤충을 잡는 것을 관찰했다는 사례이다.',
+    'ⓓ 「이런 연구들은 일부 동물이 우리가 예전에 생각했던 것보다 훨씬 더 똑똑하다는 것을 보여 준다.」가 사례들을 묶어 결론을 내린 주제문이다.',
+    'ⓔ는 for example 로 이어지는 또 하나의 예(까마귀)이다. 주제문이 첫 문장이 아니라 글 중간에 온 경우이다.'])
+
+p = P(T, """ⓐ Many people believe that multitasking helps them get more work done. ⓑ They text their friends while doing homework or watch TV while studying for a test. ⓒ However, multitasking actually makes us less productive. ⓓ Our brains cannot fully focus on two things at once, so they switch quickly between tasks, and each switch wastes time and energy. ⓔ That is why students who text during class often remember less of the lesson later.""")
+q(T, 5, B('다음 글에 대한 설명으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?', p,
+          '*multitasking: 여러 가지 일을 동시에 하는 것  *productive: 생산적인\n\n<보기>\nㄱ. ⓐ와 ⓑ는 필자가 반박하려는 생각과 그 예이다.\nㄴ. 이 글의 주제문은 ⓒ이다.\nㄷ. ⓔ는 주제문과 반대되는 내용이다.\nㄹ. 필자는 멀티태스킹이 공부에 도움이 된다고 주장한다.'),
+  'ㄱ, ㄴ', ['ㄴ, ㄷ', 'ㄱ, ㄹ', 'ㄱ, ㄴ, ㄷ', 'ㄴ, ㄷ, ㄹ'],
+  ['ⓐ(멀티태스킹이 일을 더 많이 하게 해 준다는 믿음)와 ⓑ(숙제하며 문자하기, 공부하며 TV 보기)는 However 뒤에서 뒤집히는 생각과 그 예이므로 ㄱ은 옳다.',
+   'ⓒ 「그러나 멀티태스킹은 실제로 우리를 덜 효율적으로 만든다.」가 주제문이므로 ㄴ은 옳다.',
+   'ⓔ(수업 중 문자를 하는 학생은 수업 내용을 덜 기억한다)는 주제문을 뒷받침하는 예이므로 ㄷ은 틀리다. 필자는 멀티태스킹이 도움이 안 된다고 하므로 ㄹ도 틀리다.'])
+
+# ───────────────────────── u0m0s2t1 필자의 주장 ─────────────────────────
+T = 'u0m0s2t1'
+p = P(T, """These days, many students spend most of their free time indoors. They play computer games, watch videos, or chat online for hours. However, spending time outdoors is important for both our bodies and our minds. Sunlight helps our bodies make vitamin D, and fresh air makes us feel refreshed. Playing sports outside is also a great way to relieve stress. So I strongly believe that students should spend at least one hour outside every day.""")
+q(T, 1, B('다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?', p), '학생들은 매일 적어도 한 시간은 야외에서 보내야 한다.',
+  ['학생들은 컴퓨터 게임을 전혀 하지 말아야 한다.', '비타민 D는 음식으로 섭취하는 것이 가장 좋다.', '스트레스를 풀려면 실내 운동을 해야 한다.', '학생들은 온라인으로 친구를 더 많이 사귀어야 한다.'],
+  ['마지막 문장 「So I strongly believe that students should spend at least one hour outside every day.」에 필자의 주장이 분명히 드러난다.',
+   '해석: 그래서 나는 학생들이 매일 적어도 한 시간은 밖에서 보내야 한다고 굳게 믿는다.',
+   '게임을 「전혀 하지 말라」고 하지는 않았고, 실내 운동·온라인 친구는 글과 관계가 없다.'])
+
+p = P(T, """Some students never ask questions in class. They are afraid that others will laugh at them or think they are not smart. However, asking questions is one of the best ways to learn. When you ask, you can understand the lesson better, and your teacher can find out what the class needs. Also, other students probably have the same question! So don't be shy. Raise your hand and ask whenever you don't understand something.""")
+q(T, 2, B('다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?', p), '수업 중 모르는 것이 있으면 부끄러워하지 말고 질문해야 한다.',
+  ['질문은 수업이 끝난 뒤에 따로 해야 한다.', '선생님은 학생들에게 질문을 많이 해야 한다.', '똑똑한 학생만 수업 중에 질문해야 한다.', '친구가 모르는 것은 친구에게 먼저 물어봐야 한다.'],
+  ['However 뒤의 「asking questions is one of the best ways to learn(질문은 가장 좋은 학습 방법 중 하나)」와 마지막 두 문장 「So don\'t be shy. Raise your hand and ask ~」가 필자의 주장이다.',
+   '해석: 그러니 부끄러워하지 마라. 이해가 안 될 때마다 손을 들고 질문해라.',
+   '질문하는 사람은 학생이지 선생님이 아니며, 수업이 끝난 뒤에 하라는 말은 없다.'])
+
+p = P(T, """In our school cafeteria, a lot of food is thrown away every day. Some students take more food than they can eat, and others leave the vegetables they don't like. This wasted food is not only a waste of money but also bad for the environment. When food waste is buried in the ground, it produces gases that make the Earth warmer. We should take only as much food as we can finish. If everyone does this, we can make a big difference.""")
+q(T, 3, B('다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?', p), 'We should take only the amount of food we can eat.',
+  ['Students should eat more vegetables at school.', 'Schools should serve less food to students.', 'Food waste should be buried to protect the Earth.', 'Students should bring their own lunch to school.'],
+  ['「We should take only as much food as we can finish.」가 필자의 주장이다. (as much ~ as …: …만큼의 ~)',
+   '해석: 우리는 다 먹을 수 있는 만큼만 음식을 가져가야 한다.',
+   '채소 이야기는 음식이 버려지는 예일 뿐이고, 학교가 음식을 덜 주어야 한다는 말은 없다. 음식물 쓰레기를 묻으면 지구를 더 따뜻하게 하는 가스가 나온다고 했으므로 묻어야 한다는 보기는 글과 반대이다.'])
+
+p = P(T, """Every morning, our school looks clean and neat. The hallways are shiny, and the trash cans are empty. But have you ever thought about who does this work? The cleaning staff come to school before anyone else and clean every corner of the building. Still, very few students say hello to them or thank them. A simple “Thank you” costs nothing, but it can make someone's whole day brighter. Let's start greeting them with a smile tomorrow.""")
+q(T, 3, B('다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?', p, '*cleaning staff: 청소를 맡은 직원'), '학교를 깨끗하게 해 주시는 분들께 감사 인사를 해야 한다.',
+  ['학생들이 직접 학교를 청소해야 한다.', '학교의 청소 시간을 더 늘려야 한다.', '쓰레기통을 더 자주 비워야 한다.', '아침 일찍 등교하는 습관을 길러야 한다.'],
+  ['필자는 학교를 청소해 주시는 분들께 인사하거나 감사하는 학생이 거의 없다는 점을 지적한다.',
+   '「A simple “Thank you” costs nothing ~」과 「Let\'s start greeting them with a smile tomorrow.」에서 감사 인사를 하자는 주장이 드러난다.',
+   '학생이 직접 청소하자거나 청소 시간을 늘리자는 말은 없다.'])
+
+p = P(T, """Many students today take notes on laptops or tablets because typing is faster than writing by hand. It is true that typing lets you write down more of what the teacher says. However, writing by hand makes you think about the lesson more carefully. Since you can't write every word, you have to choose the most important ideas and put them in your own words. This helps you understand and remember the lesson better. So when you study, try picking up a pen instead of a keyboard.""")
+q(T, 4, B('다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?', p), '공부할 때는 손으로 필기하는 것이 더 효과적이다.',
+  ['타자로 필기하면 수업 내용을 더 많이 적을 수 있다.', '선생님의 말씀을 한 글자도 빠짐없이 적어야 한다.', '노트북은 교실에 가져오지 말아야 한다.', '필기보다 수업을 듣는 데에만 집중해야 한다.'],
+  ['필자는 「It is true that ~(~인 것은 사실이다)」으로 타자의 장점을 잠시 인정한 뒤, However 로 손 필기의 장점을 내세운다.',
+   '마지막 문장 「So when you study, try picking up a pen instead of a keyboard.(공부할 때는 키보드 대신 펜을 들어 보아라)」가 주장이다.',
+   '「타자로 더 많이 적을 수 있다」는 필자가 인정한 사실일 뿐 주장이 아니다. 모든 말을 받아 적을 수 없어 중요한 것을 골라야 한다고 했으므로 「빠짐없이 적어야 한다」는 글과 반대이다.'])
+
+p = P(T, """When a child gets a good grade, many parents say, “You're so smart!” It sounds like a nice thing to say, but it may not be the best kind of praise. Children who are praised for being smart often start to avoid difficult tasks. They are afraid that failing will show that they are not smart after all. On the other hand, children who are praised for their effort are more willing to try hard things. So instead of praising talent, parents should praise hard work and the process.""")
+q(T, 5, B('다음 글의 필자가 동의할 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?', p,
+          '<보기>\nㄱ. “정말 똑똑하구나!”라는 칭찬은 아이에게 언제나 도움이 된다.\nㄴ. 아이를 칭찬할 때에는 재능보다 노력과 과정을 칭찬하는 것이 좋다.\nㄷ. 노력을 칭찬받은 아이는 어려운 일에 도전하려는 경향이 있다.\nㄹ. 아이가 좋은 성적을 받아도 칭찬하지 말아야 한다.'),
+  'ㄴ, ㄷ', ['ㄱ, ㄴ', 'ㄷ, ㄹ', 'ㄱ, ㄴ, ㄷ', 'ㄴ, ㄷ, ㄹ'],
+  ['필자는 「똑똑하다」는 칭찬이 최선이 아닐 수 있다고 했으므로 ㄱ에 동의하지 않는다.',
+   '마지막 문장 「parents should praise hard work and the process(부모는 노력과 과정을 칭찬해야 한다)」가 주장이므로 ㄴ에 동의한다.',
+   '「children who are praised for their effort are more willing to try hard things」이므로 ㄷ에 동의한다.',
+   '필자는 칭찬의 «종류»를 바꾸자는 것이지 칭찬을 하지 말자는 것이 아니므로 ㄹ에는 동의하지 않는다.'])
+
+# ───────────────────────── u0m0s5t1 글의 분위기 ─────────────────────────
+T = 'u0m0s5t1'
+p = P(T, """Tonight was the last night of the town festival. The streets were filled with music and laughter. Children were running around with colorful balloons, and people were dancing together in the square. The smell of delicious food came from every corner. When the fireworks lit up the night sky, everyone cheered loudly and clapped. Even the old people were singing and laughing with their neighbors. It was the best night of the year.""")
+q(T, 1, B('다음 글의 분위기로 가장 알맞은 것은?', p), 'festive and lively',
+  ['sad and gloomy', 'calm and quiet', 'scary and tense', 'boring and dull'],
+  ['음악과 웃음소리가 가득한 거리, 풍선을 들고 뛰어다니는 아이들, 광장에서 춤추는 사람들, 불꽃놀이와 환호성이 나온다.',
+   '따라서 축제처럼 즐겁고 활기찬(festive and lively) 분위기이다.',
+   'calm and quiet(차분하고 조용한)는 시끌벅적한 장면과 맞지 않는다.'])
+
+p = P(T, """It was almost midnight, and I was home alone. Suddenly, the lights went out, and the house became completely dark and silent. Then I heard slow footsteps coming up the stairs, one step at a time. My heart was beating so fast that I could hardly breathe. I hid under my blanket and held my breath. The footsteps stopped right in front of my door. Then, slowly, the door handle began to turn.""")
+q(T, 2, B('다음 글의 분위기로 가장 알맞은 것은?', p), 'tense and scary',
+  ['peaceful and relaxing', 'cheerful and exciting', 'funny and humorous', 'warm and friendly'],
+  ['한밤중에 혼자 있는데 불이 꺼지고, 계단을 올라오는 발소리가 들리며, 숨을 죽인 채 문손잡이가 돌아가는 장면이다.',
+   'My heart was beating so fast that I could hardly breathe(심장이 너무 빨리 뛰어서 숨을 거의 쉴 수 없었다)에서 긴장감이 드러난다.',
+   '따라서 긴장되고 무서운(tense and scary) 분위기이다.'])
+
+p = P(T, """Early in the morning, I walked down to the lake behind my grandmother's house. A thin fog was floating over the water, and the only sound was the soft song of a bird. I sat on a wooden bench and watched the sun slowly rise above the hills. The water was so still that it looked like a mirror. For a long time, I just sat there, breathing in the cool, fresh air.""")
+q(T, 3, B('다음 글의 분위기로 가장 알맞은 것은?', p), 'calm and peaceful',
+  ['noisy and busy', 'urgent and nervous', 'mysterious and frightening', 'lively and festive'],
+  ['이른 아침 호수, 옅은 안개, 새소리만 들리는 고요함, 천천히 떠오르는 해, 거울처럼 잔잔한 물, 시원하고 맑은 공기가 나온다.',
+   '따라서 차분하고 평화로운(calm and peaceful) 분위기이다.',
+   '안개가 나오지만 무섭거나 불안한 사건은 없으므로 mysterious and frightening 은 알맞지 않다.'])
+
+p = P(T, """The moving truck was gone, and Mina's house was empty. She walked slowly through the rooms where she grew up. Her bedroom walls were bare, and her footsteps echoed on the wooden floor. Outside, a light rain was falling. Her best friend, Jiwon, was standing by the gate with red eyes. The two girls hugged for a long time without saying a word. Then Mina got into the car and waved until Jiwon disappeared from sight.""")
+q(T, 3, B('다음 글에 드러난 분위기로 가장 알맞은 것은?', p), 'sad', ['exciting', 'humorous', 'festive', 'scary'],
+  ['이삿짐 트럭이 떠난 빈집, 텅 빈 방에 울리는 발소리, 내리는 비, 눈이 빨개진 친구, 말없이 오래 껴안는 장면이 나온다.',
+   '정든 집과 가장 친한 친구와 헤어지는 장면이므로 슬픈(sad) 분위기이다.',
+   'exciting·festive 는 즐거운 분위기, scary 는 무서운 분위기이므로 맞지 않다.'])
+
+p = P(T, """The wind was getting stronger, and huge waves crashed against our small boat. Water poured in, and we could not see the shore anywhere. My brother held my hand tightly, and nobody said a word. We thought we might never get home. Then, through the dark clouds, we saw a bright light. It was a rescue boat! The men on the boat pulled us up and wrapped us in warm blankets. We laughed and cried at the same time.""")
+q(T, 4, B('다음 글의 분위기 변화로 가장 알맞은 것은?', p, '*rescue: 구조'), 'tense → relieved',
+  ['calm → tense', 'cheerful → gloomy', 'boring → exciting', 'peaceful → scary'],
+  ['앞부분: 거센 바람과 파도, 배 안으로 쏟아지는 물, 집에 못 갈지도 모른다는 생각 → 긴장되고 두려운(tense) 분위기이다.',
+   '뒷부분: 구조선이 나타나 따뜻한 담요로 감싸 주고, 웃다가 울다가 한다 → 안도하는(relieved) 분위기이다.',
+   '처음부터 위험한 상황이므로 calm·peaceful·cheerful 로 시작하는 보기는 틀리다.'])
+
+p = P(T, """(A) The gym was packed with students. The score was tied, and there were only five seconds left in the game. Everyone stood up and held their breath as Junho took the final shot. The ball rolled around the rim once, then twice...
+(B) Two hours later, the gym was empty. All the lights were off except one, and a single basketball lay in the corner. Junho sat alone on the bench, listening to the soft hum of the old heater.""")
+q(T, 5, B('다음 글 (A), (B)의 분위기를 바르게 짝지은 것은?', p, '*rim: (농구 골대의) 테  *hum: 웅웅거리는 소리'), 'tense – quiet',
+  ['tense – noisy', 'peaceful – quiet', 'festive – exciting', 'boring – tense'],
+  ['(A) 동점에 5초 남은 상황, 모두 일어나 숨을 죽이고, 공이 골대 테를 한 바퀴, 두 바퀴 돈다 → 긴장된(tense) 분위기이다.',
+   '(B) 텅 빈 체육관, 하나만 켜진 불, 구석의 농구공 하나, 혼자 앉아 난방기 소리를 듣는 준호 → 조용한(quiet) 분위기이다.',
+   '(B)는 사람이 없고 작은 소리만 들리므로 noisy·exciting 은 틀리고, (A)는 peaceful·festive·boring 이 아니다.'])
+
+# ───────────────────────── u0m1s3t0 글에서 추론할 수 없는 것 ─────────────────────────
+T = 'u0m1s3t0'
+p = P(T, """Hi, I'm Emma. I moved to Busan from London three months ago because of my dad's job. At first, everything was difficult for me. I couldn't read the signs, and the food was too spicy. But my classmates were really kind. They taught me some Korean words and took me to their favorite restaurants. Now I can order food in Korean, and I even love tteokbokki! I'm looking forward to exploring more of Korea.""")
+q(T, 1, B('다음 글을 읽고 추론할 수 «없는» 것은?', p), '엠마는 지금도 매운 음식을 전혀 먹지 못한다.',
+  ['엠마는 아빠의 직장 때문에 부산으로 이사 왔다.', '처음에 엠마는 한국 생활에 어려움을 겪었다.', '엠마의 반 친구들은 엠마에게 친절했다.', '엠마는 이제 한국어로 음식을 주문할 수 있다.'],
+  ['처음에는 음식이 너무 매웠지만, 지금은 「I even love tteokbokki!(떡볶이까지 아주 좋아한다)」라고 했다.',
+   '따라서 지금도 매운 음식을 전혀 못 먹는다는 추론은 글과 어긋난다.',
+   'because of my dad\'s job(①), everything was difficult(②), my classmates were really kind(③), I can order food in Korean(④)에서 나머지를 확인할 수 있다.'])
+
+p = P(T, """Last Saturday, our class went to a recycling center on a field trip. We saw huge piles of plastic bottles, cans, and paper. A worker told us that many items can't be recycled because they are dirty or mixed with other materials. He showed us a bottle that still had juice in it. “Because of this bottle, this whole bag has to be thrown away now,” he said. After the trip, we decided to wash our bottles and cans before putting them in the recycling bin.""")
+q(T, 2, B('다음 글을 읽고 추론할 수 «없는» 것은?', p), 'All the items at the center are recycled into new products.',
+  ['Dirty items can cause problems at recycling centers.', 'The class learned something useful from the worker.', 'The students will wash cans before recycling them.', 'A bottle with juice in it can spoil a whole bag of recycling.'],
+  ['직원은 「many items can\'t be recycled(많은 물건이 재활용될 수 없다)」고 했으므로, 모든 물건이 새 제품으로 재활용된다는 추론은 글과 어긋난다.',
+   '더러운 물건은 재활용이 안 되고(①), 주스가 남은 병 하나 때문에 봉지 전체를 버려야 했다(④).',
+   '견학 후 병과 캔을 씻어서 분리수거하기로 했으므로 ②, ③도 추론할 수 있다.'])
+
+p = P(T, """Jiho had practiced for the school talent show for a month. He was going to play the guitar and sing a song that he wrote himself. But on the day of the show, he found that one of his guitar strings was broken. There was no time to buy a new one. Just then, Seojun, a boy he hardly ever talked to, came over and handed Jiho his own guitar. “Use mine,” he said. Jiho's performance was a big success, and after the show, the two boys went to get ice cream together.""")
+q(T, 3, B('다음 글을 읽고 추론할 수 «없는» 것은?', p), '지호와 서준은 원래부터 가장 친한 친구였다.',
+  ['지호는 직접 만든 노래를 부를 계획이었다.', '지호는 공연 전에 새 기타 줄을 구할 수 없었다.', '서준은 지호를 기꺼이 도와주었다.', '지호와 서준은 이 일을 계기로 가까워졌을 것이다.'],
+  ['서준은 「a boy he hardly ever talked to(지호가 거의 말을 해 본 적이 없는 아이)」라고 했으므로 원래 가장 친한 친구였다는 추론은 글과 어긋난다.',
+   'a song that he wrote himself(①), There was no time to buy a new one(②), 자기 기타를 건네며 「Use mine.」이라고 한 것(③)에서 나머지를 알 수 있다.',
+   '공연 뒤 둘이 함께 아이스크림을 먹으러 갔으므로 가까워졌을 것이라고 추론할 수 있다(④).'])
+
+p = P(T, """Honeybees are very important to farmers. When bees fly from flower to flower to collect nectar, they carry pollen with them. This helps plants produce fruits and seeds. In fact, about one third of the food we eat depends on bees and other pollinators. Sadly, the number of honeybees is getting smaller in many parts of the world. Pesticides, diseases, and the loss of wild flowers are some of the reasons.""")
+q(T, 3, B('다음 글을 읽고 추론할 수 «없는» 것은?', p, '*nectar: 꿀(꽃꿀)  *pollen: 꽃가루  *pollinator: 꽃가루 매개자  *pesticide: 살충제'),
+  'The number of honeybees is growing around the world.',
+  ['Bees help plants make fruits.', 'Without pollinators, we would have less food.', 'Using pesticides can be harmful to bees.', 'Losing wild flowers is bad for honeybees.'],
+  ['「the number of honeybees is getting smaller in many parts of the world(세계 여러 곳에서 꿀벌의 수가 줄고 있다)」고 했으므로 늘고 있다는 추론은 글과 어긋난다.',
+   '벌이 꽃가루를 옮겨 식물이 열매를 맺게 한다(①), 우리가 먹는 음식의 약 3분의 1이 벌과 꽃가루 매개자에 달려 있다(②).',
+   '살충제와 야생화 감소는 꿀벌이 줄어드는 이유로 제시되었으므로 ③, ④도 추론할 수 있다.'])
+
+p = P(T, """Dear Ms. Carter,
+My name is Yuna Kim, and I'm in your Tuesday piano class. I'm writing to ask if I can change my lesson to Thursday. Starting next month, I have to take care of my little brother on Tuesday afternoons because my mom will start a new job. I really enjoy your class, so I don't want to stop taking lessons. If Thursday is not possible, Friday would also be fine for me. I look forward to hearing from you.
+Sincerely,
+Yuna Kim""")
+q(T, 4, B('다음 글을 읽고 추론할 수 «없는» 것은?', p), '유나는 다음 달부터 목요일 오후에 동생을 돌봐야 한다.',
+  ['유나는 지금 화요일에 피아노 수업을 듣고 있다.', '유나의 엄마는 다음 달부터 새로운 일을 시작한다.', '유나는 피아노 수업을 그만두고 싶어 하지 않는다.', '유나는 금요일에도 수업을 들을 수 있다.'],
+  ['유나가 동생을 돌봐야 하는 날은 화요일 오후(on Tuesday afternoons)이고, 그래서 수업을 목요일로 바꾸고 싶다고 했다.',
+   '목요일로 옮겨 달라고 부탁한 것은 목요일에는 시간이 된다는 뜻이므로, 목요일에 동생을 돌봐야 한다는 추론은 글과 어긋난다.',
+   'I\'m in your Tuesday piano class(①), my mom will start a new job(②), I don\'t want to stop taking lessons(③), Friday would also be fine(④)에서 나머지를 확인할 수 있다.'])
+
+p = P(T, """Our class held a bake sale to raise money for a local animal shelter. We sold cookies for 500 won each and cupcakes for 1,000 won each. By the end of the day, we sold 120 cookies and 80 cupcakes in total. We had spent 40,000 won on ingredients, so we took that amount out, and the rest of the money was given to the shelter. The shelter manager thanked us and invited our class to visit and meet the animals.""")
+q(T, 5, B('윗글을 읽고 추론할 수 «없는» 것만을 <보기>에서 있는 대로 고른 것은?', p,
+          '*bake sale: 빵·과자를 구워 파는 모금 행사  *ingredient: 재료\n\n<보기>\nㄱ. 컵케이크를 팔아 번 돈이 쿠키를 팔아 번 돈보다 많았다.\nㄴ. 학생들은 재료비를 빼지 않고 판매 금액 전부를 보호소에 주었다.\nㄷ. 보호소에 전달된 돈은 10만 원이다.\nㄹ. 쿠키는 컵케이크보다 적게 팔렸다.'),
+  'ㄴ, ㄹ', ['ㄱ, ㄴ', 'ㄱ, ㄷ', 'ㄴ, ㄷ', 'ㄷ, ㄹ'],
+  ['쿠키 판매액은 500원 × 120개 = 60,000원, 컵케이크 판매액은 1,000원 × 80개 = 80,000원이므로 ㄱ은 추론할 수 있다.',
+   '전체 판매액은 140,000원이고 재료비 40,000원을 뺀 나머지(the rest)를 보호소에 주었으므로 140,000 − 40,000 = 100,000원이다. ㄷ은 추론할 수 있고, 재료비를 빼지 않았다는 ㄴ은 글과 어긋난다.',
+   '쿠키는 120개, 컵케이크는 80개가 팔렸으므로 쿠키가 더 많이 팔렸다. 따라서 ㄹ도 글과 어긋난다.'])
+
+# ───────────────────────── u0m1s4t1 도표·안내문 세부 정보 ─────────────────────────
+T = 'u0m1s4t1'
+n = """[Riverside Park Clean-Up Day]
+Join us to make our park cleaner and greener!
+- Date: Saturday, April 22
+- Time: 9:00 a.m. – 12:00 p.m.
+- Meeting Place: Main gate of Riverside Park
+- What to Bring: Gloves and a water bottle
+Trash bags will be provided. Every volunteer will receive a free T-shirt!"""
+q(T, 1, B('다음 안내문을 읽고 알 수 «없는» 것은?', n), '참가 신청 방법',
+  ['행사 날짜', '모이는 장소', '가져올 준비물', '참가자가 받는 선물'],
+  ['날짜(4월 22일 토요일), 모이는 곳(공원 정문), 준비물(장갑과 물병), 선물(무료 티셔츠)은 안내문에 나와 있다.',
+   '참가 신청을 어떻게 하는지는 나와 있지 않다.',
+   '「Trash bags will be provided.」는 쓰레기봉투가 제공된다는 뜻(수동태)이다.'])
+
+n = """[Maple Middle School Book Club]
+Do you love reading? Come and share your thoughts with other book lovers!
+- Meetings: every Wednesday, 3:30 – 4:30 p.m.
+- Place: School Library, Room B
+- This month's book: The Secret Garden
+- Members read one book every month and discuss it together.
+- To join, sign up at the library desk by March 10.
+※ Snacks are provided at every meeting."""
+q(T, 2, B('다음 안내문의 내용과 일치하지 «않는» 것은?', n), '모임은 한 번에 두 시간 동안 진행된다.',
+  ['모임은 매주 수요일에 열린다.', '모임 장소는 학교 도서관이다.', '회원들은 한 달에 한 권의 책을 읽는다.', '모임 때마다 간식이 제공된다.'],
+  ['모임 시간은 3:30~4:30으로 한 시간이다. 따라서 두 시간 동안 진행된다는 것은 틀리다.',
+   'every Wednesday(①), School Library(②), one book every month(③), Snacks are provided at every meeting(④)은 안내문과 일치한다.'])
+
+n = """[Sunshine Water Park — Ticket Prices]
+- Adults: 30,000 won
+- Students (13–18): 20,000 won
+- Children (under 13): 15,000 won
+※ Group discount: Groups of 10 or more get 10% off the total ticket price.
+※ Life jackets can be rented for 3,000 won each."""
+q(T, 3, B('15세 학생 10명이 함께 이 워터파크 입장권을 사고, 그중 4명이 구명조끼를 빌린다면 내야 할 금액은 모두 얼마인가? (단, 구명조끼 대여료는 할인되지 않는다.)', n),
+  '192,000원', ['180,000원', '190,800원', '210,000원', '212,000원'],
+  ['15세는 Students(20,000원)이므로 입장권은 20,000 × 10 = 200,000원이다.',
+   '10명 이상 단체는 입장권 총액의 10%를 할인받으므로 200,000 − 20,000 = 180,000원이다.',
+   '구명조끼 4벌 대여료 3,000 × 4 = 12,000원을 더하면 180,000 + 12,000 = 192,000원이다.',
+   '할인을 빠뜨리면 212,000원, 구명조끼를 빠뜨리면 180,000원, 대여료까지 할인하면 190,800원이 되어 틀린다.'])
+
+n = """[Hanbit Science Camp for Teens]
+Explore the world of science through fun experiments!
+- Who: Middle school students
+- When: August 5 – 7 (3 days), 10:00 a.m. – 3:00 p.m.
+- Where: Hanbit Science Museum, 2nd floor
+- Programs: Making robots, building water rockets, exploring space with VR
+- Fee: 50,000 won (lunch included)
+- Only 30 students will be accepted, so hurry!
+Register online on the museum's website."""
+q(T, 3, B('다음 안내문을 읽고 답할 수 «없는» 질문은?', n), 'Who will teach the programs at the camp?',
+  ['Who can join the camp?', 'How many days does the camp last?', 'Is lunch included in the fee?', 'How many students can join the camp?'],
+  ['캠프 프로그램을 누가 가르치는지는 안내문에 나와 있지 않다.',
+   'Middle school students(①), 3 days(②), lunch included(③), Only 30 students will be accepted(④)로 나머지 질문에는 답할 수 있다.'])
+
+n = """[Green Valley Middle School Sports Day — Friday, May 23]
+9:00 – 9:30  Opening Ceremony (Main Field)
+9:30 – 11:00  Relay Races (Grades 1 & 2)
+11:00 – 12:00  Tug of War (All Grades)
+12:00 – 1:00  Lunch Break
+1:00 – 2:30  Dodgeball Tournament (Grade 3 only)
+2:30 – 3:00  Awards Ceremony
+※ If it rains, the event will be moved to the gym, and the relay races will be canceled."""
+q(T, 4, B('다음 일정표의 내용과 일치하는 것은?', n), '비가 오면 1, 2학년은 이어달리기를 하지 못한다.',
+  ['3학년 학생들도 이어달리기에 참가한다.', '줄다리기는 점심시간 이후에 열린다.', '피구 대회에는 모든 학년이 참가한다.', '시상식은 한 시간 동안 진행된다.'],
+  ['비가 오면 행사를 체육관으로 옮기고 이어달리기는 취소된다(the relay races will be canceled). 이어달리기는 1, 2학년 종목이므로 비가 오면 1, 2학년은 이어달리기를 하지 못한다.',
+   '이어달리기는 Grades 1 & 2, 피구는 Grade 3 only 이므로 ①, ③은 틀리다.',
+   '줄다리기(11:00~12:00)는 점심 전이고, 시상식(2:30~3:00)은 30분이므로 ②, ④도 틀리다.'])
+
+n = """[City Bike Rental]
+- Rental hours: 7:00 a.m. – 10:00 p.m.
+- Price: 1,000 won for the first hour, and 500 won for each extra 30 minutes
+- Children under 12 must ride with an adult.
+- Helmets are free, but you must return them with the bike.
+- If you return a bike after 10:00 p.m., you will have to pay a 5,000 won fine."""
+q(T, 5, B('다음 안내문의 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?', n,
+          '*fine: 벌금\n\n<보기>\nㄱ. 자전거를 2시간 동안 빌리면 2,000원을 낸다.\nㄴ. 10세 어린이는 혼자서 자전거를 탈 수 없다.\nㄷ. 헬멧을 빌리려면 추가 요금을 내야 한다.\nㄹ. 밤 10시가 넘어서 자전거를 반납하면 벌금을 낸다.'),
+  'ㄱ, ㄴ, ㄹ', ['ㄱ, ㄴ', 'ㄴ, ㄷ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+  ['ㄱ: 처음 1시간 1,000원 + 추가 1시간(30분 × 2) 500 × 2 = 1,000원 → 모두 2,000원이므로 옳다.',
+   'ㄴ: 12세 미만 어린이는 어른과 함께 타야 하므로(must ride with an adult) 옳다.',
+   'ㄷ: Helmets are free(헬멧은 무료)이므로 틀리다. ㄹ: 밤 10시 이후 반납하면 5,000원 벌금이므로 옳다.'])
+
+# ───────────────────────── u0m2s0t0 전체 흐름과 관계없는 문장 ─────────────────────────
+T = 'u0m2s0t0'
+p = P(T, """Camels are well suited to life in the desert. ⓐ Their humps store fat, which gives them energy when there is little food to eat. ⓑ They can go without drinking water for many days, even in very hot weather. ⓒ Horses were used for transportation in many countries in the past. ⓓ Their long eyelashes protect their eyes from blowing sand. ⓔ Also, their wide, flat feet keep them from sinking into the soft sand.""")
+qf(T, 1, B('다음 글에서 전체 흐름과 관계 «없는» 문장은?', p, '*be suited to: ~에 알맞다'), E5, 2,
+   ['첫 문장 「낙타는 사막 생활에 잘 맞는다.」 뒤에 혹(지방 저장), 물 없이 버티기, 긴 속눈썹, 넓은 발이 그 까닭으로 이어진다.',
+    'ⓒ 「과거에 많은 나라에서 말이 교통수단으로 쓰였다.」는 낙타와 사막 생활에 관한 글의 흐름과 관계가 없다.',
+    'ⓓ·ⓔ의 Their 는 낙타를 가리키므로 흐름에 맞다.'])
+
+p = P(T, """Sleep is very important for teenagers. ⓐ While you sleep, your brain organizes and stores what you learned during the day. ⓑ Sleep also helps your body grow and repair itself. ⓒ Teenagers who don't get enough sleep often find it hard to concentrate in class and remember new things. ⓓ They may also feel more stressed and get angry more easily than usual. ⓔ Some animals, such as bats, sleep for more than 18 hours a day.""")
+qf(T, 2, B('다음 글에서 전체 흐름과 관계 «없는» 문장은?', p), E5, 4,
+   ['글은 10대에게 잠이 중요한 까닭(기억 정리, 성장과 회복)과, 잠이 부족할 때의 문제(집중력 저하, 스트레스)를 설명한다.',
+    'ⓔ 「박쥐 같은 어떤 동물들은 하루에 18시간 넘게 잔다.」는 sleep 이라는 낱말은 같지만 10대의 잠이 중요하다는 흐름과 관계가 없다.'])
+
+p = P(T, """Many people believe that the Great Wall of China can be seen from the Moon. ⓐ However, this is not true. ⓑ The Great Wall was built over many centuries to protect China from invaders. ⓒ Although the wall is very long, it is quite narrow, and its color is similar to the land around it. ⓓ From the Moon, astronauts could see only clouds, oceans, and the shapes of continents. ⓔ So the idea is just a popular myth.""")
+qf(T, 3, B('다음 글에서 전체 흐름과 관계 «없는» 문장은?', p, '*invader: 침략자  *myth: 근거 없는 믿음'), E5, 1,
+   ['글은 「만리장성이 달에서 보인다는 믿음은 사실이 아니다」라는 내용이다.',
+    'ⓒ(길지만 폭이 좁고 주변 땅과 색이 비슷함), ⓓ(달에서는 구름·바다·대륙 모양만 보였음), ⓔ(그러니 근거 없는 믿음이다)는 모두 이를 뒷받침한다.',
+    'ⓑ 「만리장성은 침략자로부터 중국을 지키기 위해 여러 세기에 걸쳐 지어졌다.」는 성을 쌓은 역사로, 달에서 보이는지와 관계가 없다.'])
+
+p = P(T, """Volunteering is a great way for teenagers to grow. ⓐ By helping others, you can learn to understand people who are different from you. ⓑ You can also develop useful skills, such as teamwork, leadership, and communication. ⓒ Many volunteers also say that helping others makes them feel happier and more confident. ⓓ Some teenagers earn money by working part-time at restaurants or convenience stores. ⓔ So why don't you find a volunteer activity in your community this weekend?""")
+qf(T, 3, B('다음 글의 흐름으로 보아 어색한 문장은?', p), E5, 3,
+   ['글은 봉사 활동이 10대의 성장에 좋은 까닭(다른 사람 이해하기, 협동·소통 능력, 더 큰 행복감)을 들고 봉사를 권한다.',
+    'ⓓ 「어떤 10대들은 식당에서 아르바이트를 해서 돈을 번다.」는 돈을 받고 하는 일로, 봉사 활동의 좋은 점과 관계가 없다.'])
+
+p = P(T, """The invention of the printing press changed the world. ⓐ Before paper was invented, people wrote on things like stone, clay, and animal skins. ⓑ Before the printing press, books were copied by hand, so they were very expensive. ⓒ With the printing press, books could be made much faster and more cheaply. ⓓ As a result, more people were able to buy books and learn to read. ⓔ New ideas also spread more quickly from one country to another.""")
+qf(T, 4, B('다음 글에서 전체 흐름과 관계 «없는» 문장은?', p, '*printing press: 인쇄기'), E5, 0,
+   ['글은 인쇄기의 발명이 세상을 바꾼 과정을 말한다: 손으로 베껴 비쌌던 책(ⓑ) → 빠르고 싸게 만듦(ⓒ) → 더 많은 사람이 책을 사고 글을 배움(ⓓ) → 생각이 빠르게 퍼짐(ⓔ).',
+    'ⓐ 「종이가 발명되기 전 사람들은 돌, 진흙, 동물 가죽에 글을 썼다.」는 종이 이전의 글쓰기 재료 이야기로, 인쇄기가 가져온 변화와 관계가 없다.',
+    '같은 「기록의 역사」 이야기처럼 보여도 글의 중심(인쇄기의 영향)에서 벗어나면 관계없는 문장이다.'])
+
+p = P(T, """Smiling does more than just show that you are happy. ⓐ Some studies show that the act of smiling itself can improve your mood. ⓑ When you smile, your brain releases chemicals that make you feel good. ⓒ People all over the world understand a smile as a sign of friendliness. ⓓ Smiling can also lower your stress, even if the smile is not real at first. ⓔ So the next time you feel down, try smiling, even if you don't feel like it.""")
+qf(T, 5, B('다음 글에서 전체 흐름과 관계 «없는» 문장은?', p, '*release: 내보내다'), E5, 2,
+   ['첫 문장 「미소는 단지 행복하다는 것을 보여 주는 것 이상의 일을 한다.」의 핵심은 웃는 것이 «웃는 사람 자신»에게 주는 효과이다.',
+    'ⓐ(기분이 좋아짐), ⓑ(기분 좋게 하는 화학 물질), ⓓ(스트레스 감소), ⓔ(기분이 처질 때 웃어 보라)는 모두 그 효과를 말한다.',
+    'ⓒ 「전 세계 사람들은 미소를 친근함의 표시로 이해한다.」는 미소가 남에게 «보여 주는» 의미로, 첫 문장이 넘어서자고 한 바로 그 내용이다. 따라서 흐름과 관계가 없다.'])
+
+# ───────────────────────── u0m2s1t0 주어진 문장이 들어갈 위치 ─────────────────────────
+T = 'u0m2s1t0'
+g = "But her family didn't have enough money to buy a piano."
+p = P(T, """When Sora was eleven, she wanted to learn to play the piano. ( A ) So she practiced on a paper keyboard that she drew herself. ( B ) Every day after school, she pressed the paper keys and sang the notes out loud. ( C ) One day, her music teacher saw her practicing and was deeply moved. ( D ) The teacher let Sora use the school piano after class. ( E ) Today, Sora is a piano teacher who helps children from poor families learn music.""")
+qf(T, 1, f'{INS}\n\n[주어진 문장]\n{g}\n\n{p}', A5, 0,
+   ['주어진 문장 「그러나 그녀의 가족은 피아노를 살 만큼 돈이 넉넉하지 않았다.」는 피아노를 배우고 싶었다는 내용과 대조된다.',
+    '(A) 뒤의 So(그래서) 「직접 그린 종이 건반으로 연습했다」는 피아노를 살 수 없었던 결과이므로, 주어진 문장은 (A)에 와야 한다.',
+    '(B) 이후에는 이미 종이 건반으로 연습하고 있으므로 돈이 없었다는 내용이 들어가면 흐름이 거꾸로 된다.'])
+
+g = 'This is because water boils at a lower temperature on high mountains.'
+p = P(T, """Have you ever cooked ramen on top of a high mountain? ( A ) If you have, you may have noticed that the noodles don't cook well. ( B ) At sea level, water boils at 100°C. ( C ) But on a mountain 3,000 meters high, it boils at about 90°C. ( D ) The air pressure there is lower, so water boils more easily. ( E ) That is why some climbers bring special pots called pressure cookers to cook their food.""")
+qf(T, 2, f'{INS}\n\n[주어진 문장]\n{g}\n\n{p}', A5, 1,
+   ['주어진 문장 「이것은 높은 산에서는 물이 더 낮은 온도에서 끓기 때문이다.」는 앞 문장의 «까닭»을 밝힌다.',
+    '(B)에 넣으면 「면이 잘 익지 않는다 → 그것은 높은 산에서 물이 더 낮은 온도에서 끓기 때문이다 → 해수면에서는 100°C, 3,000m 산에서는 약 90°C」로 이어진다.',
+    '(D)·(E)에 넣으면 이미 설명한 내용(90°C에서 끓음, 기압이 낮아 잘 끓음)을 다시 까닭으로 드는 셈이 되어 어색하다.'])
+
+g = 'Inside, there was some cash, a student ID card, and a photo of a family.'
+p = P(T, """On my way home from school, I found a brown wallet on the sidewalk. ( A ) I looked around, but there was no one nearby. ( B ) I didn't know what to do at first. ( C ) Then I opened it to find out whose it was. ( D ) The ID card showed that the owner was a first grader at my school. ( E ) The next morning, I took the wallet to the teachers' office, and a week later, the owner came to my classroom to thank me.""")
+qf(T, 3, f'{INS}\n\n[주어진 문장]\n{g}\n\n{p}', A5, 3,
+   ['주어진 문장 「안에는 약간의 현금, 학생증, 가족사진이 있었다.」는 지갑을 연 뒤에야 알 수 있는 내용이다.',
+    '(D) 뒤의 The ID card(그 학생증)는 앞에서 학생증이 한 번 나와야 쓸 수 있는 표현이다.',
+    '따라서 「누구 것인지 알아보려고 지갑을 열었다」와 「그 학생증을 보니 주인이 우리 학교 1학년이었다」 사이인 (D)에 와야 한다.'])
+
+g = 'These tiny pieces are called microplastics.'
+p = P(T, """Plastic does not disappear easily. ( A ) When plastic trash ends up in the ocean, it can stay there for hundreds of years. ( B ) Over time, sunlight and waves slowly break it into smaller and smaller pieces. ( C ) Some of these pieces become less than 5 millimeters long. ( D ) Fish and other sea animals often eat microplastics by mistake. ( E ) When we eat these fish, the plastic may end up in our bodies, too.""")
+qf(T, 3, f'{INS}\n\n[주어진 문장]\n{g}\n\n{p}', A5, 3,
+   ['주어진 문장 「이 아주 작은 조각들은 미세 플라스틱이라고 불린다.」는 microplastics 라는 말을 처음 소개하는 문장이다(수동태 are called).',
+    '(D) 뒤에서 microplastics 가 설명 없이 쓰이므로, 그 앞에서 이 말이 소개되어야 한다.',
+    '또 These tiny pieces 는 바로 앞의 「5mm보다 작아진 조각들」을 가리키므로 (D)가 알맞다. (C)에 넣으면 모든 조각을 미세 플라스틱이라 부른 뒤 「그중 일부가 5mm보다 작아진다」고 하게 되어 어색하다.'])
+
+g = "A cat's tail, however, sends quite different messages."
+p = P(T, """Dogs and cats often use their tails to show their feelings. ( A ) When a dog is happy or excited, it usually wags its tail from side to side. ( B ) A dog that holds its tail low or between its legs is probably scared. ( C ) When a cat swings its tail quickly from side to side, it is usually annoyed. ( D ) On the other hand, a tail held straight up usually means that the cat is happy to see you. ( E ) So if you want to understand your pet, watch its tail carefully!""")
+qf(T, 4, f'{INS}\n\n[주어진 문장]\n{g}\n\n{p}', A5, 2,
+   ['주어진 문장 「그러나 고양이의 꼬리는 꽤 다른 메시지를 보낸다.」는 개의 꼬리 이야기에서 고양이의 꼬리 이야기로 넘어가는 연결 문장이다.',
+    '(A)·(B) 뒤는 개의 꼬리(기쁠 때 좌우로 흔듦, 무서울 때 낮추거나 다리 사이에 넣음) 설명이고, (C) 뒤부터 고양이의 꼬리 설명이 시작된다.',
+    '따라서 (C)에 와야 한다. 개는 기쁠 때 꼬리를 흔들지만 고양이는 짜증 날 때 흔든다는 «차이»가 however 와 맞물린다.',
+    '(D)·(E)는 이미 고양이 이야기가 시작된 뒤이므로 전환 문장이 들어갈 수 없다.'])
+
+g = 'This was the beginning of the sticky notes that people now use every day.'
+p = P(T, """In 1968, a scientist named Spencer Silver was trying to make a very strong glue. ( A ) Instead, he made a weak glue that could be removed easily. ( B ) At first, no one knew how to use it. ( C ) Years later, his coworker Art Fry was singing in a church choir. ( D ) His paper bookmarks kept falling out of his songbook, so he put some of Silver's glue on them. The bookmarks stayed in place and could be removed without tearing the pages. ( E )""")
+qf(T, 5, f'{INS}\n\n[주어진 문장]\n{g}\n\n{p}', A5, 4,
+   ['주어진 문장 「이것이 오늘날 사람들이 매일 쓰는 접착식 메모지의 시작이었다.」의 This 는 «붙였다 뗄 수 있는 책갈피»라는 발견을 가리킨다.',
+    '실버가 약한 접착제를 만듦 → 처음엔 쓸모를 몰랐음 → 프라이가 성가대에서 책갈피가 자꾸 빠지자 그 접착제를 발라 봄 → 책갈피가 붙어 있고 종이를 찢지 않고 떼어졌음 → (E) 이것이 메모지의 시작이었다.',
+    '(B)·(C)에 넣으면 아직 쓸모도 찾지 못한 상태에서 「시작이었다」고 하게 되어 어색하고, (D)에 넣으면 책갈피 이야기가 나오기 전이 된다.'])
+
+# ───────────────────────── u0m2s3t0 빈칸에 알맞은 연결어 ─────────────────────────
+T = 'u0m2s3t0'
+q(T, 1, "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nJisu was very tired after the long hike up the mountain. ______, she went to bed early without eating dinner.",
+  'Therefore', ['However', 'For example', 'In addition', 'On the other hand'],
+  ['앞 문장 「지수는 긴 산행 뒤에 매우 피곤했다.」는 원인, 뒤 문장 「저녁도 먹지 않고 일찍 잠자리에 들었다.」는 결과이다.',
+   '원인과 결과를 잇는 연결어는 Therefore(그러므로)이다.',
+   'However·On the other hand 는 대조, For example 은 예시, In addition 은 추가를 나타낸다.'])
+
+q(T, 2, "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nSome people think that video games are only a waste of time. ______, some studies show that certain games can improve problem-solving skills and teamwork.",
+  'However', ['As a result', 'For example', 'In other words', 'Besides'],
+  ['앞 문장은 「비디오 게임은 시간 낭비일 뿐이라고 생각하는 사람들이 있다.」, 뒤 문장은 「어떤 게임은 문제 해결 능력과 협동심을 기를 수 있다.」로 서로 반대되는 내용이다.',
+   '대조를 나타내는 연결어는 However(그러나)이다.',
+   'In other words(다시 말해)는 앞 내용을 바꾸어 말할 때 쓰는데, 뒤 문장은 앞 문장과 반대이므로 맞지 않다.'])
+
+q(T, 3, "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nMy grandfather always says, “The early bird catches the worm.” ______, people who start early have a better chance of success. That's why he wakes up at five every morning.",
+  'In other words', ['However', 'For example', 'On the other hand', 'Instead'],
+  ['앞 문장의 속담 「일찍 일어나는 새가 벌레를 잡는다.」를 뒤 문장에서 「일찍 시작하는 사람이 성공할 가능성이 더 높다.」라고 쉽게 풀어 말한다.',
+   '앞 내용을 다른 말로 바꾸어 설명할 때는 In other words(다시 말해)를 쓴다.',
+   '뒤 문장은 속담의 구체적인 예가 아니라 뜻풀이이므로 For example 은 맞지 않다.'])
+
+q(T, 3, "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nMinho usually takes the bus to school. But this morning, the bus was too crowded, so he couldn't get on. ______, he walked to school with his friend Taeho. They talked and laughed all the way, and it was more fun than taking the bus.",
+  'Instead', ['For example', 'In addition', 'Similarly', 'In other words'],
+  ['버스를 타지 못해서 그 대신 걸어서 학교에 갔다는 흐름이다.',
+   '앞의 일(버스 타기)을 하지 못하고 다른 일(걷기)을 할 때는 Instead(대신에)를 쓴다.',
+   'Similarly(마찬가지로)·In addition(게다가)은 같은 방향의 내용을 이을 때, For example 은 예를 들 때 쓴다.'])
+
+q(T, 4, "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nBats are often thought of as scary creatures. (A)______, they are very helpful to people. Many bats eat insects that damage crops. A single bat can eat hundreds of insects in one night. (B)______, some bats help plants by carrying pollen from flower to flower, just like bees.\n\n*crop: 농작물  *pollen: 꽃가루",
+  'However – In addition', ['Therefore – In addition', 'However – As a result', 'Similarly – Instead', 'Therefore – However'],
+  ['(A) 앞 「박쥐는 흔히 무서운 동물로 여겨진다.」와 뒤 「그러나 박쥐는 사람에게 매우 도움이 된다.」는 대조이므로 However 가 알맞다.',
+   '(B) 앞은 박쥐가 해충을 먹어 돕는 것, 뒤는 꽃가루를 옮겨 돕는 것으로, 도움이 되는 점을 하나 더 보태므로 In addition(게다가)이 알맞다.',
+   '(A)에 Therefore·Similarly 는 대조를 나타내지 못하고, (B)에 As a result 는 꽃가루 옮기기가 곤충을 먹은 결과가 아니므로 맞지 않다.'])
+
+q(T, 5, "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nMany people believe that they need to finish a task perfectly before moving on. (A)______, perfectionism can actually slow you down. You may spend hours fixing small details that nobody else will notice. (B)______, you may never start a project because you are afraid it won't be perfect. The key is to aim for progress, not perfection. (C)______, it is better to finish a good piece of work than to never finish a perfect one.\n\n*perfectionism: 완벽주의",
+  'However – In addition – In other words',
+  ['However – Nevertheless – In other words', 'Therefore – In addition – However', 'However – In addition – On the other hand', 'For example – Therefore – In other words'],
+  ['(A) 앞은 「완벽하게 끝내야 한다고 믿는 사람이 많다」, 뒤는 「완벽주의는 오히려 속도를 늦출 수 있다」로 대조이므로 However.',
+   '(B) 앞은 완벽주의의 문제 하나(작은 부분을 고치느라 몇 시간을 씀), 뒤는 또 하나의 문제(완벽하지 않을까 봐 아예 시작을 못 함)이므로 In addition(게다가).',
+   '(C) 앞 「핵심은 완벽이 아니라 발전을 목표로 하는 것이다.」를 뒤에서 「완벽한 것을 끝내지 못하는 것보다 괜찮은 것을 끝내는 편이 낫다.」로 바꾸어 말하므로 In other words(다시 말해).',
+   '(B)에 Nevertheless(그럼에도 불구하고)는 같은 방향의 문제를 덧붙이는 흐름과 맞지 않고, (C)에 On the other hand 는 앞 문장과 대조가 아니라 같은 말을 바꾸어 한 것이므로 맞지 않다.'])
+
+# ───────────────────────── u0m3s1t1 함축적 의미 ─────────────────────────
+T = 'u0m3s1t1'
+p = P(T, """On the first day of school, nobody in our class knew each other. Everyone was sitting quietly and looking down at their desks. I felt nervous, and the room was so quiet that I could hear the clock ticking. Then our teacher said, “Let's play a game to [break the ice].” We played a name game, and soon everyone was laughing and talking. At lunchtime, I ate with three new friends.""")
+q(T, 1, B('다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?', p), '어색한 분위기를 깨고 서로 편하게 친해지다',
+  ['얼음을 깨서 물을 마시다', '교실의 규칙을 어기다', '교실을 시원하게 만들다', '게임에서 이기다'],
+  ['break the ice 는 「얼음을 깨다」가 아니라 「(처음 만난 사이의) 어색한 분위기를 깨다」라는 뜻이다.',
+   '서로 모르는 학생들이 조용히 책상만 보고 있다가, 게임을 한 뒤 웃고 이야기하며 점심 무렵엔 새 친구를 세 명 사귀었다는 내용이 근거이다.'])
+
+p = P(T, """Ms. Kim usually greets us with a big smile and a loud “Good morning!” But this morning, her voice was weak, and she kept coughing. She also had a scarf around her neck and looked pale. She said, “I'm sorry, class. I'm a little [under the weather] today, so let's have a quiet reading time instead of a speaking activity.” We all read our books quietly so that she could rest.""")
+q(T, 2, B('다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?', p), '몸이 좋지 않다',
+  ['날씨가 매우 춥다', '기분이 매우 좋다', '우산을 가져오지 않았다', '학생들에게 화가 났다'],
+  ['under the weather 는 날씨와 관계없이 「몸이 좀 안 좋은」이라는 뜻이다.',
+   '목소리가 약하고 계속 기침을 하며 목에 스카프를 둘렀고, 학생들이 선생님이 쉬실 수 있도록 조용히 책을 읽었다는 내용이 근거이다.',
+   '선생님이 미안하다고 하셨고 학생들을 배려하므로 「화가 났다」는 맞지 않다.'])
+
+p = P(T, """Dahye started learning to draw last month. She wanted to draw like her favorite artist right away, but her pictures didn't look good at all. She felt frustrated and almost gave up drawing. Her art teacher looked at her drawings carefully and said, “You're doing fine. Remember, [Rome wasn't built in a day].” Dahye decided to keep drawing a little every day, and after a few months, her pictures began to look much better.""")
+q(T, 3, B('다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?', p, '*frustrated: 좌절한'), 'Great things take time and effort.',
+  ['Rome is a beautiful city to draw.', 'You should travel to learn art.', 'Drawing buildings is very difficult.', 'You should finish your work in one day.'],
+  ['「로마는 하루아침에 이루어지지 않았다.」는 큰일은 시간과 노력이 들어야 이루어진다는 뜻의 속담이다.',
+   '그림을 배운 지 한 달 만에 좋아하는 화가처럼 그리고 싶어 좌절한 다혜에게, 선생님은 조급해하지 말라는 뜻으로 이 말을 했다.',
+   '다혜가 매일 조금씩 그리기로 하고 몇 달 뒤 그림이 훨씬 나아졌다는 결말이 근거이다. 로마나 건물을 그리라는 뜻이 아니다.'])
+
+p = P(T, """Junsu and his best friend Taemin had a fight last week, and they haven't talked since then. Yesterday, Taemin sent Junsu a message: “I'm sorry about what I said. I really miss hanging out with you.” Junsu read the message several times. Then he showed the message to his older sister and asked what to do. She smiled and said, “Well, he said sorry first. Now [the ball is in your court].”""")
+q(T, 3, B('다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?', p), '이제 준수가 어떻게 할지 결정하고 행동할 차례이다.',
+  ['준수가 태민이에게 공을 돌려주어야 한다.', '준수와 태민이가 함께 테니스를 쳐야 한다.', '태민이가 먼저 사과해야 한다.', '누나가 대신 문제를 해결해 줄 것이다.'],
+  ['the ball is in your court 는 「공이 네 쪽 코트에 있다」, 곧 「이제 네가 결정하고 행동할 차례다」라는 뜻이다.',
+   '태민이가 먼저 사과 메시지를 보냈으므로(he said sorry first), 이제 답을 할지, 화해할지는 준수에게 달려 있다.',
+   '태민이는 이미 사과했으므로 「태민이가 먼저 사과해야 한다」는 틀리고, 실제 공이나 운동 이야기가 아니다.'])
+
+p = P(T, """My grandmother often says, “[You can't pour from an empty cup].” I didn't understand what she meant until last month. While I was preparing for my exams, I studied until 2 a.m. every night and often skipped meals to save time. I also wanted to help my friends study, but I was so tired that I couldn't even explain simple math problems to them. That's when I finally understood her words.""")
+q(T, 4, B('다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?', p), 'You need to take care of yourself before you can help others.',
+  ['You should always fill your cup with water.', 'Studying late at night is the best way to succeed.', 'Helping friends is more important than your own health.', 'You should not share your things with others.'],
+  ['「빈 컵으로는 (다른 잔에) 따를 수 없다.」는 내가 지쳐 있으면 남에게 줄 것도 없다는 비유이다.',
+   '글쓴이는 밤늦게까지 공부하고 끼니를 거르다가 너무 지쳐서 친구들에게 쉬운 수학 문제도 설명해 주지 못했다(so tired that I couldn\'t ~).',
+   '따라서 남을 도우려면 먼저 자기 자신을 돌보아야 한다는 뜻이다. 건강보다 친구를 돕는 것이 더 중요하다는 보기는 정반대이다.'])
+
+p = P(T, """When I joined the school orchestra, I wanted to play the violin. But the teacher gave me the triangle. I was disappointed. During practice, I just stood in the back, waiting for my one moment in the whole song. At our first concert, I was so nervous that I almost missed it. But I hit the triangle at exactly the right time, and its bright sound rang through the hall. After the concert, the conductor patted me on the shoulder and said, “[Every note matters, even the smallest one].”""")
+q(T, 5, B('다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?', p, '*conductor: 지휘자'), '작은 역할이라도 전체를 완성하는 데 꼭 필요하고 소중하다.',
+  ['트라이앵글은 오케스트라에서 가장 중요한 악기이다.', '작은 소리는 더 크게 연주해야 한다.', '바이올린을 연주해야 주인공이 될 수 있다.', '연주회에서는 실수하지 않도록 긴장해야 한다.'],
+  ['「모든 음이 중요하다, 가장 작은 음조차도.」는 곡 전체에서 단 한 번 울리는 트라이앵글 소리처럼 작은 역할도 소중하다는 뜻이다.',
+   '글쓴이는 바이올린 대신 트라이앵글을 맡아 실망했지만, 정확한 순간에 친 소리가 홀에 울려 퍼졌고 지휘자가 그를 격려했다.',
+   '트라이앵글이 «가장» 중요하다는 것은 지나친 해석이고, 「바이올린을 해야 주인공」은 글쓴이가 처음에 가졌던 생각일 뿐이다.'])
+
+# ───────────────────────── u2m0s2t0 문장에서 틀린 부분 찾아 고치기 (서술형) ─────────────────────────
+T = 'u2m0s2t0'
+s(T, 1, '다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.\n\nI enjoy to play badminton with my dad on weekends.',
+  'to play → playing  [채점 포인트] enjoy 뒤의 to play 를 동명사 playing 으로 고치면 정답.',
+  ['enjoy 는 목적어로 동명사(-ing)만 쓰는 동사이다(enjoy, finish, mind, give up 등).',
+   '따라서 enjoy to play → enjoy playing 으로 고친다.',
+   '해석: 나는 주말마다 아빠와 배드민턴 치는 것을 즐긴다.'], essay=True)
+
+s(T, 2, '다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.\n\nThis bridge built in 1990 by a famous engineer.',
+  'built → was built  [채점 포인트] 수동태 was built 로 고치면 정답(were built 는 오답).',
+  ['다리는 스스로 짓는 것이 아니라 «지어지는» 것이므로 수동태(be동사 + 과거분사)를 써야 한다.',
+   '1990년의 일이고 주어 This bridge 가 단수이므로 was built 로 쓴다.',
+   '해석: 이 다리는 1990년에 한 유명한 기술자에 의해 지어졌다.'], essay=True)
+
+s(T, 3, '다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.\n\nJupiter is very bigger than Earth.',
+  'very → much  [채점 포인트] very 를 비교급 강조 부사 much 로 고치면 정답(far, even, a lot, still 도 정답).',
+  ['비교급(bigger)을 강조할 때는 very 를 쓸 수 없고 much, far, even, a lot, still 을 쓴다.',
+   '따라서 very bigger → much bigger 로 고친다.',
+   '해석: 목성은 지구보다 훨씬 더 크다.'], essay=True)
+
+s(T, 3, '다음 두 문장에서 어법상 틀린 부분을 각각 하나씩 찾아 바르게 고쳐 쓰시오.\n\n(1) My mom asked me clean my room.\n(2) It is important for us to saving energy.',
+  '(1) clean → to clean  (2) saving → save  [채점 포인트] 두 곳을 모두 바르게 고쳐야 정답(한 곳만 맞으면 부분 점수).',
+  ['(1) ask + 목적어 + to부정사: 「~에게 …해 달라고 부탁하다(요청하다)」. asked me clean → asked me to clean. (해석: 엄마는 나에게 내 방을 청소하라고 하셨다.)',
+   '(2) It(가주어) ~ for 의미상 주어 + to부정사(진주어) 구문에서 to 뒤에는 동사원형이 온다. to saving → to save. (해석: 우리가 에너지를 절약하는 것은 중요하다.)'], essay=True)
+
+s(T, 4, '다음 글의 ⓐ~ⓔ 중 어법상 틀린 것을 두 개 찾아 기호를 쓰고, 바르게 고쳐 쓰시오.\n\nLast summer, my family visited Jeju Island. We ⓐ[were surprised] by its beautiful beaches. My sister wanted ⓑ[going] swimming right away. The water was ⓒ[clearer] than I expected. We also tried ⓓ[riding] horses. The horses were so gentle that even my little brother ⓔ[were] not scared.',
+  'ⓑ going → to go, ⓔ were → was  [채점 포인트] 기호 두 개와 고친 형태가 모두 맞아야 정답.',
+  ['ⓑ want 는 목적어로 to부정사를 쓰는 동사이므로 wanted going → wanted to go.',
+   'ⓔ 주어 my little brother 는 단수이므로 be동사 과거형은 was 이다. were → was.',
+   'ⓐ be surprised by(~에 놀라다, 수동태), ⓒ clearer than(비교급), ⓓ try -ing(시험 삼아 ~해 보다)는 모두 맞다.'], essay=True)
+
+s(T, 5, '다음 글에서 어법상 틀린 부분 3개를 찾아 바르게 고쳐 쓰시오.\n\nThe Amazon rainforest is the largest rainforest in the world, and it is home to countless plants and animals. However, a large part of the forest has destroyed by people over the last fifty years. Trees are cut down to make farms and roads. If we keep to cut down trees, many animals will lose their homes. We need protecting the rainforest for our future.',
+  'has destroyed → has been destroyed, keep to cut → keep cutting, need protecting → need to protect  [채점 포인트] 세 곳을 모두 찾아 바르게 고쳐야 정답. Trees are cut down 은 맞는 수동태이므로 고치면 감점.',
+  ['숲의 일부가 사람들에 의해 «파괴된» 것이므로 현재완료 수동태(has been + 과거분사)를 쓴다: has destroyed → has been destroyed.',
+   'keep 은 목적어로 동명사를 쓰는 동사이다(keep -ing: 계속 ~하다): keep to cut → keep cutting.',
+   '「우리가 열대 우림을 보호할 필요가 있다」는 need + to부정사로 쓴다: need protecting → need to protect.',
+   'Trees are cut down 은 「나무들이 베어진다」는 수동태로 맞다.'], essay=True)
+
+# ───────────────────────── u3m1s0t0 문장 해석 ─────────────────────────
+T = 'u3m1s0t0'
+q(T, 1, '다음 문장의 해석으로 가장 알맞은 것은?\n\nI decided to learn Chinese this year.', '나는 올해 중국어를 배우기로 결심했다.',
+  ['나는 올해 중국어를 배우는 것을 포기했다.', '나는 작년에 중국어를 배우기 시작했다.', '나는 올해 중국어를 가르치기로 결심했다.', '나는 중국어를 배우는 것이 쉽다고 생각했다.'],
+  ['decide + to부정사는 「~하기로 결심하다」라는 뜻이다.',
+   'learn 은 「배우다」, this year 는 「올해」이므로 「나는 올해 중국어를 배우기로 결심했다.」가 알맞다.',
+   'teach(가르치다)와 learn(배우다)을 헷갈리지 않도록 한다.'])
+
+q(T, 2, '다음 문장의 해석으로 가장 알맞은 것은?\n\nThis song was written by a famous singer.', '이 노래는 한 유명한 가수에 의해 쓰였다.',
+  ['이 노래는 한 유명한 가수를 위해 쓰였다.', '한 유명한 가수가 이 노래를 불렀다.', '한 유명한 가수가 이 노래를 쓸 것이다.', '이 노래를 쓴 뒤 그 가수는 유명해졌다.'],
+  ['was written by ~ 는 수동태로 「~에 의해 쓰였다」라는 뜻이다.',
+   'by 는 행위자(쓴 사람)를 나타내므로 「가수를 위해(for)」는 틀리고, 「불렀다(sang)」도 뜻이 다르다.',
+   '과거 시제이므로 「쓸 것이다」는 틀린다.'])
+
+q(T, 3, '다음 문장의 해석으로 가장 알맞은 것은?\n\nWalking in the rain is one of my favorite things.', '빗속을 걷는 것은 내가 가장 좋아하는 일 중 하나이다.',
+  ['나는 비가 올 때 걷는 것을 싫어한다.', '빗속에서 걷고 있는 사람들은 내가 좋아하는 사람들이다.', '비가 오는 날에는 걷는 것이 가장 좋다고 한다.', '나는 빗속을 걸어서 내가 좋아하는 곳에 갔다.'],
+  ['Walking in the rain 은 동명사구 주어로 「빗속을 걷는 것은」이라는 뜻이고, 동사는 is 이다.',
+   'one of my favorite things 는 「내가 가장 좋아하는 것들 중 하나」이다.',
+   'Walking 을 「걷고 있는 사람들」처럼 해석하면 주어를 잘못 읽은 것이다.'])
+
+q(T, 3, '다음 문장의 해석으로 가장 알맞은 것은?\n\nThis bag is not as heavy as that one.', '이 가방은 저 가방만큼 무겁지 않다.',
+  ['이 가방은 저 가방보다 더 무겁다.', '이 가방과 저 가방은 무게가 같다.', '저 가방은 이 가방만큼 무겁지 않다.', '이 가방은 저 가방만큼 가볍지 않다.'],
+  ['not as + 원급 + as ~ 는 「~만큼 …하지 않다」라는 뜻이다.',
+   '따라서 이 가방이 저 가방보다 가볍다는 의미로, 「이 가방은 저 가방만큼 무겁지 않다.」가 알맞다.',
+   '「이 가방은 저 가방만큼 가볍지 않다」는 이 가방이 더 무겁다는 뜻이 되어 반대이다.'])
+
+q(T, 4, '다음 중 문장의 해석이 바르지 «않은» 것은?', 'I forgot to lock the door. — 나는 문을 잠갔다는 것을 잊어버렸다.',
+  ["I'm looking forward to seeing you again. — 나는 너를 다시 만나기를 고대하고 있다.", 'She stopped to buy some water. — 그녀는 물을 사기 위해 멈췄다.',
+   'The window was broken by the wind. — 창문이 바람에 의해 깨졌다.', 'He is too young to drive a car. — 그는 너무 어려서 차를 운전할 수 없다.'],
+  ['forget + to부정사는 「(앞으로) ~할 것을 잊다」, forget + -ing 는 「(이미) ~한 것을 잊다」이다.',
+   '따라서 I forgot to lock the door. 는 「나는 문 잠그는 것을 잊어버렸다(잠그지 않았다).」로 해석해야 한다.',
+   'look forward to -ing(~하기를 고대하다), stop + to부정사(~하기 위해 멈추다), 수동태 was broken by, too ~ to …(너무 ~해서 …할 수 없다)는 모두 바르게 해석되었다.'])
+
+q(T, 5, '다음 <보기>의 문장 중 해석이 바른 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. It is not easy to make new friends. → 새 친구를 사귀는 것은 쉽지 않다.\nㄴ. I remember meeting her at the party. → 나는 파티에서 그녀를 만날 것을 기억한다.\nㄷ. The letter was sent to the wrong address. → 그 편지는 잘못된 주소로 보내졌다.\nㄹ. She is the smartest student in our class. → 그녀는 우리 반에서 가장 똑똑한 학생이다.',
+  'ㄱ, ㄷ, ㄹ', ['ㄱ, ㄴ', 'ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+  ['ㄱ: It(가주어) ~ to부정사(진주어) 구문으로 「새 친구를 사귀는 것은 쉽지 않다」(바름).',
+   'ㄴ: remember + -ing 는 「(과거에) ~한 것을 기억하다」이므로 「나는 파티에서 그녀를 만났던 것을 기억한다」로 해석해야 한다(틀림). 「만날 것을 기억하다」는 remember + to부정사의 뜻이다.',
+   'ㄷ: 수동태 was sent 「보내졌다」(바름). ㄹ: 최상급 the smartest 「가장 똑똑한」(바름).'])
+
+save(os.path.expanduser('~/hakseupji-deploy/_gen/eng-m2/p-seed.json'))
+print('지문 단어 수:', WC)
