@@ -228,16 +228,30 @@ async function handleQna(p: any, res: any) {
       const r = await sbRest('/rest/v1/hj_settings?id=like.qna_*&select=id,data,updated_at&order=updated_at.asc&limit=200')
       const rows = await r.json().catch(() => [])
       const stale = Date.now() - 20 * 60_000
-      const hit = (Array.isArray(rows) ? rows : []).find((x: any) => {
+      const 후보 = (Array.isArray(rows) ? rows : []).filter((x: any) => {
         const q = x?.data?.value
         if (!q) return false
         if (q.status === '대기') return true
         return q.status === '만드는중' && Date.parse(x.updated_at || '') < stale
       })
-      if (!hit) { res.status(200).json({ ok: true, q: null }); return }
-      const q = { ...hit.data.value, status: '만드는중' }
-      await qnaWrite(hit.id, q)
-      res.status(200).json({ ok: true, q }); return
+      // 🔴 2026-09-28 워커 여러 대·한 대에 여러 칸: «읽고 → 쓰기» 사이에 다른 칸이 같은 질문을 집을 수 있다.
+      //    → 조건부 갱신(그 줄이 아직 «대기» 이거나, 죽은 만드는중이면 updated_at 이 그대로일 때만)으로 먼저 잡은 쪽만 성공한다.
+      const who = String(p.worker || '').slice(0, 60) || undefined
+      for (const x of 후보.slice(0, 10)) {
+        const now = new Date().toISOString()
+        const q = { ...x.data.value, status: '만드는중', worker: who, takenAt: now }
+        const 조건 = x.data.value.status === '대기'
+          ? `data->value->>status=eq.${encodeURIComponent('대기')}`
+          : `updated_at=eq.${encodeURIComponent(x.updated_at)}`
+        const u = await sbRest(`/rest/v1/hj_settings?id=eq.${encodeURIComponent(x.id)}&${조건}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json', Prefer: 'return=representation' },
+          body: JSON.stringify({ data: { __id: x.id, value: q }, updated_at: now }),
+        })
+        const got = await u.json().catch(() => [])
+        if (u.ok && Array.isArray(got) && got.length) { res.status(200).json({ ok: true, q }); return }
+      }
+      res.status(200).json({ ok: true, q: null }); return
     }
     // ③ 워커 — 완료 / 실패
     // ④ 워커 설정(지시문 틀·설정값) — 어느 맥에서든 고쳐 올리면 워커가 다음 질문부터 쓴다 (2026-09-22)
@@ -282,11 +296,24 @@ async function handleQna(p: any, res: any) {
     //    행 id 'wcfg_qna_beat' (부팅 로드·실시간 처리에서 빠진다). 쓰기는 워커 키, 읽기는 워커 키 또는 선생님 앱(직접 조회).
     if (act === 'qna-beat' || act === 'qna-beat-get') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
-      const id = 'wcfg_qna_beat'
-      if (act === 'qna-beat-get') { res.status(200).json({ ok: true, beat: (await qnaRow(id)) ?? null }); return }
+      // 2026-09-28 워커 여러 대 — 맥마다 줄을 따로 둔다(한 줄을 같이 쓰면 서로 덮어쓴다). 옛 줄 wcfg_qna_beat 은 읽을 때만 본다.
+      if (act === 'qna-beat-get') {
+        const r = await sbRest('/rest/v1/hj_settings?id=like.wcfg_qna_beat*&select=id,data')
+        const rows = await r.json().catch(() => [])
+        const 맥별 = new Map<string, any>()
+        for (const row of Array.isArray(rows) ? rows : []) {
+          const b = row?.data?.value
+          if (!b?.at) continue
+          const k = String(b.host || row.id)
+          if (!맥별.has(k) || String(맥별.get(k).at) < String(b.at)) 맥별.set(k, b)
+        }
+        const beats = [...맥별.values()].sort((a, b) => String(b.at).localeCompare(String(a.at)))
+        res.status(200).json({ ok: true, beat: beats[0] ?? null, beats }); return
+      }
       const b = p.beat && typeof p.beat === 'object' ? p.beat : {}
       if (JSON.stringify(b).length > 20_000) { res.status(400).json({ error: '상태가 너무 큽니다.' }); return }
-      await qnaWrite(id, { ...b, at: new Date().toISOString() })
+      const 맥 = String(b.host || '').replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 60)
+      await qnaWrite(맥 ? `wcfg_qna_beat__${맥}` : 'wcfg_qna_beat', { ...b, at: new Date().toISOString() })
       res.status(200).json({ ok: true }); return
     }
     // 브라우저가 푸시를 구독할 때 쓰는 공개키 (비밀 아님)
@@ -311,6 +338,25 @@ async function handleQna(p: any, res: any) {
         }
       }
       res.status(200).json({ ok: true, n }); return
+    }
+    // 🧪 시험 질문 — 워커 키로만. 학생 id 가 st-qnatest 라 어느 학생 화면에도 안 뜬다. clear 면 시험 줄을 전부 지운다
+    if (act === 'qna-testq') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      if (p.clear) {
+        const d = await sbRest('/rest/v1/hj_settings?id=like.qna_q-st-qnatest-*', { method: 'DELETE', headers: { Prefer: 'return=representation' } })
+        const gone = await d.json().catch(() => [])
+        res.status(200).json({ ok: d.ok, n: Array.isArray(gone) ? gone.length : 0 }); return
+      }
+      const n = Math.min(4, Math.max(1, Number(p.n) || 1))
+      const ids: string[] = []
+      for (let i = 0; i < n; i++) {
+        const id = `q-st-qnatest-${Date.now().toString(36)}-${i}`
+        const q = { id, studentId: 'st-qnatest', studentName: String(p.name || '시험학생'), text: String(p.text || '어떻게 푸는지 모르겠어요'),
+          shotUrl: String(p.shotUrl || ''), createdAt: new Date(Date.now() + i).toISOString(), status: p.status === '보류' ? '보류' : '대기', tries: 0 }
+        await qnaWrite(`qna_${id}`, q)
+        ids.push(id)
+      }
+      res.status(200).json({ ok: true, ids }); return
     }
     // 알림 시험 — 워커 키로만. 구독 하나에 시험 알림을 보내 «서버 → 폰» 길이 살아 있는지 본다
     if (act === 'qna-pushtest') {

@@ -143,13 +143,74 @@ export interface WorkerBeat {
   최근오류?: { at: string; 글: string; 화면?: string }[]   // 화면 = 실패한 순간의 ChatGPT 화면(진단용)
   최근기록?: string[]
   설정버전?: number | null
+  동시?: number                                  // 이 맥이 동시에 만드는 칸 수(2026-09-28)
+  작업?: { 칸: number; 질문?: string; 학생?: string; 단계?: string; 시작?: string }[]   // 칸마다 지금 하는 일
+  코드버전?: number
 }
 
-export async function workerBeat(): Promise<WorkerBeat | null> {
-  if (!supabase) return null
-  const { data, error } = await supabase.from('hj_settings').select('data').eq('id', 'wcfg_qna_beat').maybeSingle()
+/** 워커 맥들의 상태 — 맥마다 줄이 따로다(wcfg_qna_beat__<맥>). 옛 줄(wcfg_qna_beat)은 같은 맥이면 새 것만 남긴다. 최근 신호순 */
+export async function workerBeats(): Promise<WorkerBeat[]> {
+  if (!supabase) return []
+  const { data, error } = await supabase.from('hj_settings').select('id, data').like('id', 'wcfg_qna_beat%')
   if (error) throw new Error(error.message.slice(0, 200))
-  return (data as any)?.data?.value ?? null
+  const 맥별 = new Map<string, WorkerBeat>()
+  for (const r of (data ?? []) as any[]) {
+    const b = r?.data?.value as WorkerBeat | undefined
+    if (!b?.at) continue
+    const k = b.host || r.id
+    const 전 = 맥별.get(k)
+    if (!전 || 전.at < b.at) 맥별.set(k, b)
+  }
+  return [...맥별.values()].sort((a, b) => b.at.localeCompare(a.at))
+}
+
+/** (옛 호출용) 가장 최근 신호를 보낸 워커 하나 */
+export async function workerBeat(): Promise<WorkerBeat | null> {
+  return (await workerBeats())[0] ?? null
+}
+
+// ── ⏳ 대기 순서 — 학생 화면 「앞에 2명 · 약 12분 뒤 도착」 (2026-09-28 명수쌤) ──
+// 읽는 것은 상태·시각 몇 칸뿐이다(jsonb 통째로 받지 않는다 — egress).
+export interface QueueInfo {
+  ahead: number        // 내 앞에 있는 질문 수(만드는 중 포함)
+  slots: number        // 지금 켜져 있는 워커 칸 수 합(0 이면 워커가 꺼져 있음)
+  perMin: number       // 한 건에 걸리는 시간(분) — 최근 완료 평균, 없으면 6
+  etaMin: number       // 대략 몇 분 뒤 도착
+  making: boolean      // 내 질문을 지금 만드는 중
+}
+/** 기다리는 내 질문들의 대기 순서 — 서버를 세 번만 읽고(열·워커·최근 완료) 질문마다 계산한다 */
+export async function queueInfos(mine: Question[]): Promise<Map<string, QueueInfo>> {
+  const out = new Map<string, QueueInfo>()
+  const 기다림 = mine.filter(q => q.status === '대기' || q.status === '만드는중')
+  if (!supabase || !기다림.length) return out
+  const [열, 맥들, 끝난] = await Promise.all([
+    supabase.from('hj_settings')
+      .select('id, st:data->value->>status, c:data->value->>createdAt, t:data->value->>takenAt')
+      .like('id', 'qna_%').in('data->value->>status', ['대기', '만드는중']).limit(100),
+    workerBeats().catch(() => [] as WorkerBeat[]),
+    supabase.from('hj_settings')
+      .select('t:data->value->>takenAt, a:data->value->>answeredAt')
+      .like('id', 'qna_%').eq('data->value->>status', '완료').order('updated_at', { ascending: false }).limit(12),
+  ])
+  if (열.error) return out
+  const rows = (열.data ?? []) as { id: string; st: string; c: string; t?: string }[]
+  const 살아있음 = 맥들.filter(b => Date.now() - Date.parse(b.at) < 15 * 60_000)
+  const slots = 살아있음.reduce((n, b) => n + Math.max(1, Number(b.동시) || 1), 0)
+  const 걸린 = ((끝난.data ?? []) as { t?: string; a?: string }[])
+    .map(r => (r.t && r.a ? (Date.parse(r.a) - Date.parse(r.t)) / 60_000 : NaN))
+    .filter(m => m > 1 && m < 30)
+  const perMin = 걸린.length ? Math.round(걸린.reduce((a, b) => a + b, 0) / 걸린.length) : 6
+  for (const mine1 of 기다림) {
+    const 나 = `qna_${mine1.id}`
+    const 내것 = rows.find(r => r.id === 나)
+    const making = (내것?.st ?? mine1.status) === '만드는중'
+    const ahead = making ? 0 : rows.filter(r => r.id !== 나 && (r.st === '만드는중' || (r.st === '대기' && r.c < mine1.createdAt))).length
+    const etaMin = making
+      ? Math.max(1, Math.round(perMin - (Date.now() - Date.parse(내것?.t || mine1.createdAt)) / 60_000))
+      : (Math.floor(ahead / Math.max(1, slots)) + 1) * perMin
+    out.set(mine1.id, { ahead, slots, perMin, etaMin, making })
+  }
+  return out
 }
 
 /** 질문 지우기 — 학생이 잘못 올렸을 때 */

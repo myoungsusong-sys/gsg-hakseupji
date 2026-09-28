@@ -5,8 +5,8 @@ import { useStore } from '../../lib/store'
 import { wrongTypesOf } from '../../lib/wrongTypes'
 import { typeName } from '../../data/curriculum'
 import {
-  askQuestion, myQuestions, removeQuestion, markQnaRead, QNA_READ_KEY,
-  type Question, type QnaStatus,
+  askQuestion, myQuestions, removeQuestion, markQnaRead, QNA_READ_KEY, queueInfos,
+  type Question, type QnaStatus, type QueueInfo,
 } from '../../lib/qna'
 import { pushBlocker, pushSupported, subscribeForAnswer } from '../../lib/qnaNotify'
 import { SUPABASE_ON } from '../../lib/supabase'
@@ -32,6 +32,7 @@ export default function StudentQuestions() {
   const [loading, setLoading] = useState(true)
   const [open, setOpen] = useState(false)
   const [zoom, setZoom] = useState<Question | null>(null)
+  const [줄, set줄] = useState<Map<string, QueueInfo>>(new Map())   // ⏳ 기다리는 질문의 대기 순서
   // 이 화면을 열기 «전» 까지 본 시각 — 그 뒤에 온 해설은 NEW 로 표시한다
   const [seenAt] = useState(() => {
     try { return localStorage.getItem(QNA_READ_KEY) || new Date(Date.now() - 3 * 86400_000).toISOString() } catch { return '' }
@@ -45,6 +46,9 @@ export default function StudentQuestions() {
       // 📬 머리 쪽 알림(빨간 숫자·딩동)과 같은 목록을 쓴다 — 서버를 두 번 부르지 않게
       try { window.dispatchEvent(new CustomEvent('qna:list', { detail: l })) } catch { /* 무시 */ }
       if (document.visibilityState === 'visible') markQnaRead()
+      // ⏳ 기다리는 질문이 있을 때만 대기 순서를 읽는다
+      if (l.some(q => q.status === '대기' || q.status === '만드는중')) set줄(await queueInfos(l).catch(() => new Map()))
+      else set줄(new Map())
     } catch (e) { setErr(e instanceof Error ? e.message : String(e)) }
     finally { setLoading(false) }
   }, [me.id])
@@ -96,7 +100,7 @@ export default function StudentQuestions() {
       ) : (
         <div className="grid gap-3">
           {list.map(q => (
-            <Card key={q.id} q={q} fresh={q.status === '완료' && !!seenAt && (q.answeredAt ?? '') > seenAt}
+            <Card key={q.id} q={q} line={줄.get(q.id)} fresh={q.status === '완료' && !!seenAt && (q.answeredAt ?? '') > seenAt}
                   onZoom={() => setZoom(q)} onDelete={async () => {
               if (!confirm('이 질문을 지울까요?')) return
               await removeQuestion(q.id); void load()
@@ -121,7 +125,7 @@ function Empty({ title, msg }: { title: string; msg: string }) {
   )
 }
 
-function Card({ q, fresh, onZoom, onDelete }: { q: Question; fresh?: boolean; onZoom: () => void; onDelete: () => void }) {
+function Card({ q, line, fresh, onZoom, onDelete }: { q: Question; line?: QueueInfo; fresh?: boolean; onZoom: () => void; onDelete: () => void }) {
   const b = BADGE[q.status] ?? BADGE.대기
   return (
     <div className={`rounded-2xl border bg-white p-4 ${fresh ? 'border-pine ring-4 ring-pine/15' : 'border-line'}`}>
@@ -172,6 +176,17 @@ function Card({ q, fresh, onZoom, onDelete }: { q: Question; fresh?: boolean; on
             : q.status === '실패'
             ? '해설을 만들다 막혀서 다시 시도하고 있어요. 오래 걸리면 선생님이 직접 답해 주실 거예요.'
             : `해설 노트를 만들고 있어요. 다 되면 이 화면에 그림으로 도착해요.${q.push ? ' 📲 도착하면 이 기기로 알림도 보내 드려요.' : ''}`}
+          {line && (q.status === '대기' || q.status === '만드는중') && (
+            <div className="mt-1.5 font-bold text-ink">
+              {line.slots === 0
+                ? '⏳ 해설 만드는 컴퓨터가 잠시 쉬고 있어요 — 선생님께 자동으로 알려 드렸어요.'
+                : line.making
+                ? `✏️ 지금 만들고 있어요 · 약 ${line.etaMin}분 뒤 도착`
+                : line.ahead === 0
+                ? `⏳ 곧 시작해요 · 약 ${line.etaMin}분 뒤 도착`
+                : `⏳ 앞에 ${line.ahead}명 · 약 ${line.etaMin}분 뒤 도착`}
+            </div>
+          )}
         </div>
       )}
     </div>

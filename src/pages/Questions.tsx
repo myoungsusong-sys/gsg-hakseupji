@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { allQuestions, workerBeat, type Question, type QnaStatus, type WorkerBeat } from '../lib/qna'
+import { allQuestions, workerBeats, type Question, type QnaStatus, type WorkerBeat } from '../lib/qna'
 import { SUPABASE_ON } from '../lib/supabase'
 
 // ── 선생님 질문함 — 학생이 올린 질문과 자동 생성된 해설 노트 ─────────
@@ -20,13 +20,13 @@ export default function Questions() {
   const [loading, setLoading] = useState(true)
   const [only, setOnly] = useState<'전체' | '처리 중' | '실패'>('전체')
   const [zoom, setZoom] = useState<string>('')
-  const [beat, setBeat] = useState<WorkerBeat | null | undefined>(undefined)   // undefined = 아직 못 읽음
+  const [beats, setBeats] = useState<WorkerBeat[] | undefined>(undefined)   // undefined = 아직 못 읽음 · 워커 맥마다 하나
 
   const load = useCallback(async () => {
     try { setList(await allQuestions(60)); setErr('') }
     catch (e) { setErr(e instanceof Error ? e.message : String(e)) }
     finally { setLoading(false) }
-    try { setBeat(await workerBeat()) } catch { setBeat(null) }
+    try { setBeats(await workerBeats()) } catch { setBeats([]) }
   }, [])
 
   useEffect(() => { void load() }, [load])
@@ -57,7 +57,11 @@ export default function Questions() {
         ))}
       </div>
 
-      <WorkerStatus beat={beat} />
+      {beats === undefined ? null : beats.length === 0 ? <WorkerStatus beat={null} />
+        // 하루 넘게 소식 없는 맥(치운 맥)은 숨긴다 — 전부 그렇다면 가장 최근 것 하나만 🔴 로 보인다
+        : (beats.filter(b => Date.now() - Date.parse(b.at) < 86400_000).length
+            ? beats.filter(b => Date.now() - Date.parse(b.at) < 86400_000) : beats.slice(0, 1))
+            .map(b => <WorkerStatus key={b.host ?? b.at} beat={b} />)}
 
       {실패수 > 0 && (
         <div className="mb-4 rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
@@ -140,7 +144,10 @@ function WorkerStatus({ beat }: { beat: WorkerBeat | null | undefined }) {
     <div className={`mb-4 rounded-2xl border px-4 py-3 text-sm ${색}`}>
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
         <b>{제목}</b>
-        {beat?.현재?.질문 && <span>· 지금 {beat.현재.학생 ?? ''} 질문 {beat.현재.단계 ?? ''}</span>}
+        {beat?.작업?.length
+          ? <span>· 지금 {beat.작업.map(w => `[${w.칸}] ${w.학생 ?? ''} ${w.단계 ?? ''}`).join(' · ')}</span>
+          : beat?.현재?.질문 && <span>· 지금 {beat.현재.학생 ?? ''} 질문 {beat.현재.단계 ?? ''}</span>}
+        {!!beat && (beat.동시 ?? 1) > 1 && <span className="text-ink2">· 동시 {beat.동시}칸</span>}
         {오늘 && <span className="text-ink2">· 오늘 보냄 {오늘.완료 ?? 0} · 보류 {오늘.보류 ?? 0} · 실패 {오늘.실패 ?? 0}</span>}
         <div className="grow" />
         {beat && (
