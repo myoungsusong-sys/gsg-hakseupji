@@ -46,8 +46,12 @@ for c in ok:
     n = 0
     for k, items in d.items():
         for it in items:
-            if it[0] in wm and it[2] != wm[it[0]]:
-                it[2] = wm[it[0]]; n += 1
+            # 🔴 2026-09-28: 교재 문항 id(개념01·대표01 …)는 단원마다 다시 쓰인다 → «쪽:id» 로 먼저 찾는다.
+            #    (예전엔 id 만 봐서 같은 id 가 여러 쪽에 있으면 전부 첫 쪽 유형으로 붙었다 — 사회①-1 첫 배포)
+            key = f'{it[1]}:{it[0]}'
+            t = wm.get(key) or wm.get(it[0])
+            if t and it[2] != t:
+                it[2] = t; n += 1
     json.dump(d, open(p, 'w'), ensure_ascii=False, separators=(',', ':'))
     # ③ 개념카드
     json.dump(json.load(open(f'_gen/{c}/_concepts.json')), open(f'_concepts/{c}.json', 'w'), ensure_ascii=False, indent=1)

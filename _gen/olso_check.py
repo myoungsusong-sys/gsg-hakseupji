@@ -89,7 +89,10 @@ if os.path.exists(wi):
     wm = load(os.path.join(D, '_wbmap.json')) if os.path.exists(os.path.join(D, '_wbmap.json')) else None
     if wm is None: errs.append('_wbmap.json 없음')
     else:
-        miss = [x[0] for x in items if x[0] not in wm]
+        # 교재 문항 id 는 단원마다 다시 쓰인다 → «쪽:id» 로 본다(없으면 id 만) — 2026-09-28
+        def 키(x):
+            return f'{x[1]}:{x[0]}' if isinstance(x, (list, tuple)) and len(x) > 1 else (x[0] if isinstance(x, (list, tuple)) else x)
+        miss = [키(x) for x in items if 키(x) not in wm and (x[0] if isinstance(x, (list, tuple)) else x) not in wm]
         badt = [k for k, v in wm.items() if v not in types]
         if miss: errs.append(f'wbmap 빠진 교재 문항 {len(miss)}개: {miss[:6]}')
         if badt: errs.append(f'wbmap 유형 id 트리에 없음 {len(badt)}개: {badt[:6]}')
