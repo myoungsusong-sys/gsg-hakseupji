@@ -163,7 +163,10 @@ async function handleQna(p: any, res: any) {
         if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
         // Storage 는 한글 경로를 거부한다(InvalidKey, 9/27 실측) → 영문·숫자만
         const name = (String(p.name || '').replace(/[^A-Za-z0-9_.-]/g, '').slice(0, 40)) || 'diag'
-        const url = await qnaUpload(`diag/${new Date().toISOString().replace(/[:.]/g, '-')}_${name}.png`, p.b64, 'image/png')
+        // 화면 구조 글(ext=txt)도 받는다 — 실패 순간의 DOM 요약을 다른 맥에서 바로 읽는다
+        const 글 = p.ext === 'txt'
+        const url = await qnaUpload(`diag/${new Date().toISOString().replace(/[:.]/g, '-')}_${name}.${글 ? 'txt' : 'png'}`,
+          p.b64, 글 ? 'text/plain; charset=utf-8' : 'image/png')
         res.status(200).json({ ok: true, url }); return
       }
       if (!/^q-[\w-]{4,80}$/.test(id)) { res.status(400).json({ error: '질문 id 형식이 아닙니다.' }); return }
@@ -206,6 +209,25 @@ async function handleQna(p: any, res: any) {
       const cur = await qnaRow(id)
       const 버전 = (Number(cur?.버전) || 0) + 1
       await qnaWrite(id, { 틀, 설정, 버전, updatedAt: new Date().toISOString(), by: String(p.by || '').slice(0, 60) })
+      res.status(200).json({ ok: true, 버전 }); return
+    }
+    // ⑥ 워커 코드 — 맥북에어에서 올리면 아이맥 워커가 10분 안에 받아 스스로 다시 켠다 (2026-09-28)
+    //    행 id 'wcfg_code' (부팅 로드·실시간 처리에서 빠진다). 워커 키로만 읽고 쓴다(공개 주소에 두지 않는다).
+    if (act === 'qna-code' || act === 'qna-code-set') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const id = 'wcfg_code'
+      if (act === 'qna-code') { res.status(200).json({ ok: true, code: (await qnaRow(id)) ?? null }); return }
+      const files = p.files
+      if (!files || typeof files !== 'object' || !Object.keys(files).length) { res.status(400).json({ error: '파일이 비어 있습니다.' }); return }
+      let total = 0
+      for (const [k, v] of Object.entries(files)) {
+        if (!/^[\w가-힣.-]{1,40}\.(py|js|sh)$/.test(k) || typeof v !== 'string') { res.status(400).json({ error: `파일 이름이 이상합니다: ${k}` }); return }
+        total += (v as string).length
+      }
+      if (total > 1_500_000) { res.status(400).json({ error: '코드가 너무 큽니다.' }); return }
+      const cur = await qnaRow(id)
+      const 버전 = (Number(cur?.버전) || 0) + 1
+      await qnaWrite(id, { files, 버전, updatedAt: new Date().toISOString(), by: String(p.by || '').slice(0, 60) })
       res.status(200).json({ ok: true, 버전 }); return
     }
     // ⑤ 워커 상태 보고(박동) — 아이맥 워커가 5분마다·단계가 바뀔 때 보낸다. 어느 맥·선생님 앱에서든 본다 (2026-09-22)
