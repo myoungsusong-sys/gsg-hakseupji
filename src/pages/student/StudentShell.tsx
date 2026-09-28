@@ -12,6 +12,7 @@ import { StudentSelfCtx, tickStudySecond } from './common'
 import { todayKey } from '../../lib/dates'
 import TeacherCallOverlay from '../../components/student/TeacherCallOverlay'
 import { BrandLogo } from '../../components/BrandMark'
+import { QnaArrivalToast, QnaBadge, useQnaArrivals } from '../../components/student/QnaArrivals'
 
 // ── 학생 셸 — #/student/* 공통 프레임 + 본인(Student) 컨텍스트 ──
 // 매쓰플랫 학생앱 헤더 구조: 로고 | 학습 홈 · 챌린지 · 교재 · 학습지 · 강의 | 우측 학생명
@@ -56,6 +57,9 @@ export default function StudentShell() {
     }, 1000)
     return () => clearInterval(t)
   }, [meId])
+
+  // 📬 해설 도착 알림 — 질문함 빨간 숫자 + 화면 아래 알림(조건 반환 전에 훅 호출)
+  const qna = useQnaArrivals(meId)
 
   if (SUPABASE_ON) {
     // 이메일 기반으로 본인을 검증한다.
@@ -124,7 +128,7 @@ export default function StudentShell() {
               <NavLink to="/student/voca" className={tab}>영단어</NavLink>
               <NavLink to="/student/worksheets" className={tab}>학습지</NavLink>
               <NavLink to="/student/lectures" className={tab}>강의</NavLink>
-              <NavLink to="/student/questions" className={tab}>질문함</NavLink>
+              <NavLink to="/student/questions" className={tab}>질문함<QnaBadge n={qna.unread.length} /></NavLink>
               <NavLink to="/student/help" className={tab}>사용법</NavLink>
             </nav>
             <div className="grow" />
@@ -135,6 +139,7 @@ export default function StudentShell() {
         <main className="mx-auto w-full px-6 py-8">
           <Outlet />
         </main>
+        <QnaArrivalToast unread={qna.unread} onPage={qna.onPage} name={me.name} />
       </div>
     </StudentSelfCtx.Provider>
   )

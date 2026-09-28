@@ -5,9 +5,10 @@ import { useStore } from '../../lib/store'
 import { wrongTypesOf } from '../../lib/wrongTypes'
 import { typeName } from '../../data/curriculum'
 import {
-  askQuestion, myQuestions, removeQuestion, markQnaRead,
+  askQuestion, myQuestions, removeQuestion, markQnaRead, QNA_READ_KEY,
   type Question, type QnaStatus,
 } from '../../lib/qna'
+import { pushBlocker, pushSupported, subscribeForAnswer } from '../../lib/qnaNotify'
 import { SUPABASE_ON } from '../../lib/supabase'
 
 // ── 질문함 — 모르는 문제를 찍어 올리면 해설 노트가 돌아온다 ────────────
@@ -31,16 +32,30 @@ export default function StudentQuestions() {
   const [loading, setLoading] = useState(true)
   const [open, setOpen] = useState(false)
   const [zoom, setZoom] = useState<Question | null>(null)
+  // 이 화면을 열기 «전» 까지 본 시각 — 그 뒤에 온 해설은 NEW 로 표시한다
+  const [seenAt] = useState(() => {
+    try { return localStorage.getItem(QNA_READ_KEY) || new Date(Date.now() - 3 * 86400_000).toISOString() } catch { return '' }
+  })
 
   const load = useCallback(async () => {
     try {
-      setList(await myQuestions(me.id))
+      const l = await myQuestions(me.id)
+      setList(l)
       setErr('')
+      // 📬 머리 쪽 알림(빨간 숫자·딩동)과 같은 목록을 쓴다 — 서버를 두 번 부르지 않게
+      try { window.dispatchEvent(new CustomEvent('qna:list', { detail: l })) } catch { /* 무시 */ }
+      if (document.visibilityState === 'visible') markQnaRead()
     } catch (e) { setErr(e instanceof Error ? e.message : String(e)) }
     finally { setLoading(false) }
   }, [me.id])
 
-  useEffect(() => { void load(); markQnaRead() }, [load])
+  useEffect(() => { void load() }, [load])
+  // 다른 앱에 갔다가 돌아오면 바로 새로 본다(폰 알림을 눌러 들어온 경우 포함)
+  useEffect(() => {
+    const v = () => { if (document.visibilityState === 'visible') void load() }
+    document.addEventListener('visibilitychange', v)
+    return () => document.removeEventListener('visibilitychange', v)
+  }, [load])
 
   // 아직 답을 기다리는 게 있을 때만 주기 확인 (없으면 서버를 두드리지 않는다)
   const waiting = list.some(q => q.status !== '완료')
@@ -81,7 +96,8 @@ export default function StudentQuestions() {
       ) : (
         <div className="grid gap-3">
           {list.map(q => (
-            <Card key={q.id} q={q} onZoom={() => setZoom(q)} onDelete={async () => {
+            <Card key={q.id} q={q} fresh={q.status === '완료' && !!seenAt && (q.answeredAt ?? '') > seenAt}
+                  onZoom={() => setZoom(q)} onDelete={async () => {
               if (!confirm('이 질문을 지울까요?')) return
               await removeQuestion(q.id); void load()
             }} />
@@ -105,15 +121,16 @@ function Empty({ title, msg }: { title: string; msg: string }) {
   )
 }
 
-function Card({ q, onZoom, onDelete }: { q: Question; onZoom: () => void; onDelete: () => void }) {
+function Card({ q, fresh, onZoom, onDelete }: { q: Question; fresh?: boolean; onZoom: () => void; onDelete: () => void }) {
   const b = BADGE[q.status] ?? BADGE.대기
   return (
-    <div className="rounded-2xl border border-line bg-white p-4">
+    <div className={`rounded-2xl border bg-white p-4 ${fresh ? 'border-pine ring-4 ring-pine/15' : 'border-line'}`}>
       <div className="flex items-start gap-3">
         <img src={q.shotUrl} alt="올린 문제" className="h-20 w-20 shrink-0 rounded-xl border border-line object-cover" />
         <div className="min-w-0 grow">
           <div className="mb-1 flex items-center gap-2">
             <span className={`rounded-full px-2.5 py-1 text-xs font-bold ${b.c}`}>{b.t}</span>
+            {fresh && <span className="rounded-full bg-clay px-2 py-0.5 text-[11px] font-black text-white">NEW</span>}
             <span className="text-xs text-ink2/70">{fmt(q.createdAt)}</span>
             <div className="grow" />
             {q.status !== '완료' && (
@@ -154,7 +171,7 @@ function Card({ q, onZoom, onDelete }: { q: Question; onZoom: () => void; onDele
             ? '이 문제는 자동 검산이 딱 맞아떨어지지 않아서, 선생님이 직접 보고 계세요. 곧 답을 드릴게요.'
             : q.status === '실패'
             ? '해설을 만들다 막혀서 다시 시도하고 있어요. 오래 걸리면 선생님이 직접 답해 주실 거예요.'
-            : '해설 노트를 만들고 있어요. 다 되면 이 화면에 그림으로 도착해요.'}
+            : `해설 노트를 만들고 있어요. 다 되면 이 화면에 그림으로 도착해요.${q.push ? ' 📲 도착하면 이 기기로 알림도 보내 드려요.' : ''}`}
         </div>
       )}
     </div>
@@ -197,6 +214,10 @@ function AskModal({ me, 맥락, onClose, onDone }: {
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const pick = useRef<HTMLInputElement>(null)
+  // 📲 해설 도착 폰 알림 — 켤 수 있는 기기면 기본으로 켠다. 못 켜는 기기는 이유만 작게 보인다
+  const 막힘 = pushBlocker()
+  const 켤수있음 = pushSupported() && !막힘 && (() => { try { return window.self === window.top } catch { return false } })()
+  const [alarm, setAlarm] = useState(켤수있음)
 
   useEffect(() => () => { if (url) URL.revokeObjectURL(url) }, [url])
 
@@ -211,7 +232,11 @@ function AskModal({ me, 맥락, onClose, onDone }: {
     if (text.trim().length < 5) { setErr('어디가 막히는지 한 줄이라도 적어 주세요. 그래야 그 부분을 짚어 드려요.'); return }
     setBusy(true); setErr('')
     try {
-      await askQuestion({ studentId: me.id, studentName: me.name, text, photo: file, context: 맥락() })
+      // 권한 창은 «누른 순간» 안에서만 뜬다 → 다른 await 보다 먼저 부른다. 8초 안에 안 되면 알림 없이 보낸다
+      const push = alarm
+        ? await Promise.race([subscribeForAnswer(), new Promise<undefined>(ok => setTimeout(() => ok(undefined), 8000))])
+        : undefined
+      await askQuestion({ studentId: me.id, studentName: me.name, text, photo: file, context: 맥락(), push })
       onDone()
     } catch (e) { setErr(e instanceof Error ? e.message : String(e)); setBusy(false) }
   }
@@ -248,6 +273,15 @@ function AskModal({ me, 맥락, onClose, onDone }: {
           className="mb-1 w-full resize-y rounded-2xl border border-line bg-white px-3.5 py-2.5 text-sm outline-none focus:border-pine"
         />
         <p className="mb-3 text-xs text-ink2/70">막히는 지점을 구체적으로 적을수록 해설이 정확해져요.</p>
+
+        {켤수있음 ? (
+          <label className="mb-3 flex items-center gap-2 rounded-xl bg-pine-soft/40 px-3 py-2.5 text-sm">
+            <input type="checkbox" checked={alarm} onChange={e => setAlarm(e.target.checked)} className="h-4 w-4 accent-pine" />
+            <span><b>📲 해설이 오면 폰 알림 받기</b> <span className="text-xs text-ink2/70">(앱을 닫아 둬도 와요)</span></span>
+          </label>
+        ) : 막힘 ? (
+          <p className="mb-3 text-xs text-ink2/70">📲 {막힘} 이 화면을 열어 두면 도착할 때 바로 알려 드려요.</p>
+        ) : null}
 
         {err && <div className="mb-3 rounded-xl bg-amber-soft px-3 py-2.5 text-sm text-amber">{err}</div>}
 

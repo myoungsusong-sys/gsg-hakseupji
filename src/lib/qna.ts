@@ -34,6 +34,7 @@ export interface Question {
   answeredAt?: string
   error?: string               // 실패 사유(선생님 화면에만)
   tries?: number
+  push?: PushSubscriptionJSON  // 📲 해설이 오면 알릴 기기(질문 보낸 기기) — qna-done 이 여기로 푸시를 보낸다
 }
 
 /** 질문 1건의 id — 본인 것만 골라 읽으려고 학생 id 를 접두어로 박는다(live_* 와 같은 관례) */
@@ -66,6 +67,7 @@ export async function shrinkPhoto(file: File, maxW = 1600, quality = 0.72): Prom
 /** 질문 올리기 — 사진은 서버가 Storage 에, 본문은 hj_settings 한 줄에 */
 export async function askQuestion(args: {
   studentId: string; studentName: string; text: string; photo: File; context?: string
+  push?: PushSubscriptionJSON
 }): Promise<Question> {
   if (!supabase) throw new Error('클라우드에 연결돼 있지 않아 질문을 보낼 수 없어요.')
   const id = newQuestionId(args.studentId)
@@ -99,6 +101,7 @@ export async function askQuestion(args: {
     tries: 0,
     // 개인화 단계에서만 쓰인다. 풀이·검증에는 들어가지 않는다(삼자토론 확정).
     context: (args.context || '').slice(0, 1200) || undefined,
+    push: args.push?.endpoint ? args.push : undefined,
   }
   const { error } = await supabase.from('hj_settings')
     .upsert({ id: 접두 + id, data: { __id: 접두 + id, value: q }, updated_at: q.createdAt })
@@ -159,10 +162,16 @@ export async function removeQuestion(id: string): Promise<void> {
 /** 아직 안 본 완료 답변 수 — 헤더 배지용(읽음 시각은 기기 로컬에 둔다) */
 export const QNA_READ_KEY = 'gsg-qna-read-at'
 export function unreadCount(list: Question[]): number {
+  return unreadOf(list).length
+}
+/** 아직 안 본 완료 답변들 — 이 기기에서 한 번도 질문함을 안 열었으면 최근 3일 것만 센다(옛 답이 전부 «새 것» 으로 뜨지 않게) */
+export function unreadOf(list: Question[]): Question[] {
   let readAt = ''
   try { readAt = localStorage.getItem(QNA_READ_KEY) ?? '' } catch { /* 무시 */ }
-  return list.filter(q => q.status === '완료' && (q.answeredAt ?? '') > readAt).length
+  if (!readAt) readAt = new Date(Date.now() - 3 * 86400_000).toISOString()
+  return list.filter(q => q.status === '완료' && (q.answeredAt ?? '') > readAt)
 }
 export function markQnaRead(): void {
   try { localStorage.setItem(QNA_READ_KEY, new Date().toISOString()) } catch { /* 무시 */ }
+  try { window.dispatchEvent(new Event('qna:read')) } catch { /* 무시 */ }
 }

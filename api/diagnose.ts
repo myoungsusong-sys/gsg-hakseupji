@@ -12,6 +12,8 @@
 //
 // 개인정보: 학생 이름·답안·문제 내용은 받지 않는다. 경로·오류 메시지·저장 키 이름뿐이다.
 import Anthropic from '@anthropic-ai/sdk'
+import webpush from 'web-push'
+import crypto from 'node:crypto'
 
 const ACTIONS = ['reload', 'hard_reload', 'go_home', 'relogin', 'free_space', 'none'] as const
 
@@ -147,6 +149,52 @@ async function qnaWrite(id: string, value: any) {
   if (!r.ok) throw new Error(`저장 실패(${r.status}) ${(await r.text()).slice(0, 120)}`)
 }
 
+// ── 📲 해설 도착 푸시 (2026-09-28 명수쌤 「학생 질문 도착 알림을 넣어서 바로 확인할 수 있게」) ─────────────
+// 학생이 질문을 보낼 때 그 기기의 푸시 구독(q.push)을 질문 줄에 같이 싣는다 → 워커가 qna-done 을 부르는 순간
+// 여기서 그 기기로 바로 보낸다(앱을 닫아 둬도 온다. 아이폰은 «홈 화면에 추가» 로 연 앱만).
+// 🔑 VAPID 키는 따로 두지 않는다 — 이미 서버에만 있는 SUPABASE_SERVICE_ROLE_KEY 에서 HMAC 으로 «유도» 한다.
+//    사람이 키를 옮겨 넣을 일이 없고, 브라우저로 내려가는 것은 공개키뿐이다.
+//    (서비스 키를 바꾸면 VAPID 도 바뀐다 → 옛 구독은 403 이 나고, 학생이 다음 질문을 보낼 때 새로 구독된다)
+const b64url = (b: Buffer) => b.toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+let _vapid: { publicKey: string; privateKey: string } | null = null
+function qnaVapid() {
+  if (_vapid) return _vapid
+  const sk = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!sk) return null
+  const N = BigInt('0xFFFFFFFF00000000FFFFFFFFFFFFFFFFBCE6FAADA7179E84F3B9CAC2FC632551')   // P-256 위수
+  for (let i = 0; i < 8; i++) {
+    const d = crypto.createHmac('sha256', sk).update(`gsg-qna-vapid-v1:${i}`).digest()
+    const k = BigInt('0x' + d.toString('hex'))
+    if (k === BigInt(0) || k >= N) continue
+    const ec = crypto.createECDH('prime256v1')
+    ec.setPrivateKey(d)
+    _vapid = { publicKey: b64url(ec.getPublicKey()), privateKey: b64url(d) }
+    return _vapid
+  }
+  return null
+}
+
+/** 해설이 도착했다고 학생 기기로 알린다. 실패해도 던지지 않는다(해설 저장을 막으면 안 된다). */
+async function qnaPush(q: any): Promise<string> {
+  const sub = q?.push
+  if (!sub || typeof sub !== 'object' || !sub.endpoint) return '구독 없음'
+  const v = qnaVapid()
+  if (!v) return 'VAPID 없음'
+  try {
+    webpush.setVapidDetails('mailto:myoungsusong@gmail.com', v.publicKey, v.privateKey)
+    const 정답 = q.card?.정답 ? ` · 정답 ${String(q.card.정답).slice(0, 30)}` : ''
+    await webpush.sendNotification(sub, JSON.stringify({
+      title: '📬 질문한 문제 해설이 도착했어요',
+      body: `${String(q.text || '').slice(0, 40)}${정답}\n눌러서 바로 확인하세요`,
+      url: '/#/student/questions',
+      tag: `qna-${String(q.id || '').slice(-12)}`,
+    }), { TTL: 86400, urgency: 'high' })
+    return '보냄'
+  } catch (e: any) {
+    return `실패 ${e?.statusCode ?? ''} ${String(e?.body || e?.message || '').slice(0, 60)}`
+  }
+}
+
 const qnaKeyOk = (k: unknown) =>
   !!process.env.QNA_WORKER_KEY && typeof k === 'string' && k === process.env.QNA_WORKER_KEY
 
@@ -241,6 +289,18 @@ async function handleQna(p: any, res: any) {
       await qnaWrite(id, { ...b, at: new Date().toISOString() })
       res.status(200).json({ ok: true }); return
     }
+    // 브라우저가 푸시를 구독할 때 쓰는 공개키 (비밀 아님)
+    if (act === 'qna-pushkey') {
+      const v = qnaVapid()
+      if (!v) { res.status(503).json({ error: '알림 키가 아직 없습니다.' }); return }
+      res.status(200).json({ ok: true, key: v.publicKey }); return
+    }
+    // 알림 시험 — 워커 키로만. 구독 하나에 시험 알림을 보내 «서버 → 폰» 길이 살아 있는지 본다
+    if (act === 'qna-pushtest') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const r = await qnaPush({ push: p.sub, id: 'q-test', text: String(p.text || '알림 시험'), card: { 정답: '시험' } })
+      res.status(200).json({ ok: r === '보냄', push: r }); return
+    }
     if (act === 'qna-done' || act === 'qna-fail') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
       const id = `qna_${String(p.id || '')}`
@@ -254,7 +314,9 @@ async function handleQna(p: any, res: any) {
         : { ...cur, status: p.hold ? '보류' : p.final ? '실패' : '대기',
             error: String(p.error || '').slice(0, 300), tries: (Number(cur.tries) || 0) + 1 }
       await qnaWrite(id, q)
-      res.status(200).json({ ok: true }); return
+      // 📲 완료면 학생 기기로 바로 알린다 — 결과(보냄/구독 없음/실패 …)는 워커 기록에 남도록 돌려준다
+      const push = act === 'qna-done' ? await qnaPush(q) : undefined
+      res.status(200).json({ ok: true, push }); return
     }
     res.status(400).json({ error: '모르는 동작입니다.' })
   } catch (e: any) {
