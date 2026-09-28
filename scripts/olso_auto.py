@@ -49,11 +49,32 @@ def 도착(c, 전):
     return sig if 전.get(c) == sig else ('기다림', sig)
 
 
+def 자리확보():
+    """🔴 2026-09-28 실사고: 맥북에어 디스크가 꽉 차(남은 396MB) 드라이브 받기가 전부 «Operation timed out» 으로 실패했다.
+       빌드 한 번에 dist 가 ~850MB 라 1.5GB 는 있어야 한다. 모자라면 다시 생기는 캐시(npx·npm)부터 비운다."""
+    free = shutil.disk_usage(os.path.expanduser('~')).free
+    if free < 1500 * 1024 * 1024:
+        for d in ('~/.npm/_npx', '~/.npm/_cacache'):
+            shutil.rmtree(os.path.expanduser(d), ignore_errors=True)
+        free = shutil.disk_usage(os.path.expanduser('~')).free
+        찍기(f'⚠️ 디스크 여유 {free // 2**20}MB — 캐시 비움')
+    return free
+
+
 def 복사(c):
     src = os.path.join(폴더(c), c)
     dst = f'_gen/{c}'
-    shutil.rmtree(dst, ignore_errors=True)
-    shutil.copytree(src, dst, ignore=shutil.ignore_patterns('_mk'))
+    자리확보()
+    for 번 in range(3):
+        shutil.rmtree(dst, ignore_errors=True)
+        try:
+            shutil.copytree(src, dst, ignore=shutil.ignore_patterns('_mk'))
+            break
+        except Exception as e:
+            찍기(f'⚠️ 드라이브에서 받기 실패({번 + 1}/3) — {str(e)[:120]}')
+            if 번 == 2:
+                raise
+            time.sleep(30)
     for d, dirs, files in os.walk(dst, topdown=False):
         for x in files + dirs:
             m = unicodedata.normalize('NFC', x)
@@ -169,7 +190,12 @@ if __name__ == '__main__':
                 continue
             if isinstance(s, tuple) and s and s[0] == '기다림':
                 전[c] = s[1]; continue
-            ok = 한과정(c)
+            try:
+                ok = 한과정(c)
+            except Exception as e:
+                찍기(f'🔴 {c} 처리 중 오류 — {str(e)[:300]} · 3분 뒤 다시')
+                전.pop(c, None)
+                continue
             sys.exit(0 if ok else 3)
         time.sleep(180)
     찍기('12시간 동안 새 과정 없음')
