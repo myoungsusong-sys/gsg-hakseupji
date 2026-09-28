@@ -12,7 +12,8 @@ const dir = join(process.cwd(), '_gen', course)
 if (!existsSync(dir)) { console.error('폴더 없음:', dir); process.exit(1) }
 const CIRC = ['①', '②', '③', '④', '⑤']
 const out = [], bad = [], seen = new Set()
-for (const f of readdirSync(dir).filter((x) => x.endsWith('.json')).sort()) {
+// `_` 로 시작하는 파일은 문항이 아니다(_tree·_concepts·_wbmap 등 메타) — `_existing.json`(기존 문항 원본)만 예외.
+for (const f of readdirSync(dir).filter((x) => x.endsWith('.json') && (!x.startsWith('_') || x === '_existing.json')).sort()) {
   let arr
   try { arr = JSON.parse(readFileSync(join(dir, f), 'utf8')) } catch (e) { bad.push([f, 'JSON 깨짐']); continue }
   if (!Array.isArray(arr)) { bad.push([f, '배열 아님']); continue }

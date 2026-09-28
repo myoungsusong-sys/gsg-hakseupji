@@ -20,7 +20,7 @@ import { DEFAULT_SHEET_OPTIONS, type SchoolExam, type Student, type ThemeKey } f
 
 type Row = { subject: string; courses: string[]; course: string; on: boolean; mids: string[]; how: RangePick['how'] }
 const HOW: Record<RangePick['how'], string> = { name: '범위 글자에서 단원 이름을 읽었어요', number: '범위의 단원 번호로 골랐어요 — 학교 교과서 번호와 다를 수 있어요', all: '범위를 못 읽어 전체로 잡았어요' }
-const THEME: Record<string, ThemeKey> = { 수학: 'amber', 과학: 'pine', 사회: 'navy', 영어: 'blue', 국어: 'coral' }
+const THEME: Record<string, ThemeKey> = { 수학: 'amber', 과학: 'pine', 사회: 'navy', 역사: 'navy', 영어: 'blue', 국어: 'coral' }
 
 export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; exam: SchoolExam; onClose: () => void }) {
   const { problems, poolLoaded, ensureCourse, worksheets, assignments, saveWorksheet, addAssignment, academyProfile } = useStore()

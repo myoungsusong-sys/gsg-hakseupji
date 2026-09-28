@@ -84,6 +84,7 @@ type BigC = [string, MidC[]]
 
 import { ENG_SECTIONS, KOR_SECTIONS } from './curriculum-engkor'
 import { SOC1_SECTIONS, SOC2_SECTIONS } from './curriculum-soc'
+import { OLSO_TREES } from './curriculum-olso'
 
 function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
@@ -2781,9 +2782,10 @@ const SP_H_INT2: RBig[] = [
   ]],
 ]
 
-// ── 올쏘 중학 사회·역사 (2022개정) — 교재 채점용 최소 과정 트리 ──
-//    문제 이미지 풀은 없고 교재 채점표(wb-match-m-soc*/m-his*)만 쓴다.
-//    섹션(개념 확인·대표 문제·주관식 서술형)을 소단원으로 두어 유형 분석이 동작하게 한다.
+// ── 올쏘 중학 사회·역사 (2022개정) ──
+//    2026-09-28: 교재 목차대로 세운 단원·유형 트리(curriculum-olso.ts, 원본 _gen/<과정>/_tree.json)와
+//    유사유형 씨앗 문항(gen-<과정>.json)이 생겼다. 아래 최소 트리는 그 과정의 트리가 없을 때만 쓰는 예비다.
+//    (예전: 섹션 개념 확인·대표 문제·주관식 서술형을 소단원으로 둔 교재 채점용 틀)
 const OLSO_SECTIONS: BigC[] = [
   ["교재 학습", [["교재 학습", [
     ["개념 확인", ["개념 확인"]],
@@ -2836,14 +2838,14 @@ export const CURRICULA: Curriculum[] = [
   // 통합사회1·2 (22개정) — 2028 수능 탐구 필수 과목. 트리는 curriculum-soc.ts (성취기준 뼈대). 2026-09-05
   build("h-soc1", "고1", "통합사회1 (22개정)", SOC1_SECTIONS, '사회'),
   build("h-soc2", "고1", "통합사회2 (22개정)", SOC2_SECTIONS, '사회'),
-  build("m-soc1-1", "중1-1", "올쏘 중학 사회①-1 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
-  build("m-soc1-2", "중1-2", "올쏘 중학 사회①-2 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
-  build("m-soc2-1", "중2-1", "올쏘 중학 사회②-1 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
-  build("m-soc2-2", "중2-2", "올쏘 중학 사회②-2 (2022개정·올쏘)", OLSO_SECTIONS, '사회'),
-  build("m-his1-1", "중2-1", "올쏘 중학 역사①-1 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
-  build("m-his1-2", "중2-2", "올쏘 중학 역사①-2 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
-  build("m-his2-1", "중3-1", "올쏘 중학 역사②-1 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
-  build("m-his2-2", "중3-2", "올쏘 중학 역사②-2 (2022개정·올쏘)", OLSO_SECTIONS, '역사'),
+  build("m-soc1-1", "중1-1", "올쏘 중학 사회①-1 (2022개정·올쏘)", OLSO_TREES["m-soc1-1"] ?? OLSO_SECTIONS, '사회'),
+  build("m-soc1-2", "중1-2", "올쏘 중학 사회①-2 (2022개정·올쏘)", OLSO_TREES["m-soc1-2"] ?? OLSO_SECTIONS, '사회'),
+  build("m-soc2-1", "중2-1", "올쏘 중학 사회②-1 (2022개정·올쏘)", OLSO_TREES["m-soc2-1"] ?? OLSO_SECTIONS, '사회'),
+  build("m-soc2-2", "중2-2", "올쏘 중학 사회②-2 (2022개정·올쏘)", OLSO_TREES["m-soc2-2"] ?? OLSO_SECTIONS, '사회'),
+  build("m-his1-1", "중2-1", "올쏘 중학 역사①-1 (2022개정·올쏘)", OLSO_TREES["m-his1-1"] ?? OLSO_SECTIONS, '역사'),
+  build("m-his1-2", "중2-2", "올쏘 중학 역사①-2 (2022개정·올쏘)", OLSO_TREES["m-his1-2"] ?? OLSO_SECTIONS, '역사'),
+  build("m-his2-1", "중3-1", "올쏘 중학 역사②-1 (2022개정·올쏘)", OLSO_TREES["m-his2-1"] ?? OLSO_SECTIONS, '역사'),
+  build("m-his2-2", "중3-2", "올쏘 중학 역사②-2 (2022개정·올쏘)", OLSO_TREES["m-his2-2"] ?? OLSO_SECTIONS, '역사'),
   // 🆕 영어·국어 — 유형 트리는 학년마다 같다(잉글리시플랫도 같은 분류를 학년에 공통으로 쓴다).
   //    학교별 교과서(출판사) 차이는 교재 쪽에서 붙이고, 사다리는 유형으로만 굴린다.
   build("eng-m1", "중1", "중1 영어", ENG_SECTIONS, '영어'),

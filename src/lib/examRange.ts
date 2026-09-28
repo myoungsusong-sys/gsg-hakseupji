@@ -10,7 +10,7 @@ import { groupOf } from './schoolReview'
 //      이름이 없으면 'N단원'·'Ⅱ~Ⅲ' 번호, 그것도 없으면 전체. 화면에서 선생님이 칩으로 고친다.
 //   ③ 문항 뽑기는 내신관(lib/naesin.ts pickNaesinProblems)을 그대로 쓴다 — 유형 고르게·쌍둥이 중복 없이·난이도 섞기.
 
-export type ExamSubjectGroup = '수학' | '국어' | '영어' | '과학' | '사회'
+export type ExamSubjectGroup = '수학' | '국어' | '영어' | '과학' | '사회' | '역사'
 
 /** 시험이 몇 학기 것인가 — 이름 우선, 없으면 달(3~8월 1학기) */
 export function semesterOf(exam: Pick<SchoolExam, 'name' | 'days'>): 1 | 2 {
@@ -61,8 +61,18 @@ export function coursesForExamSubject(subject: string, grade: string, sem: 1 | 2
       if (n === 1) push(sem === 1 ? 'h-int1' : 'h-int2', 'h-int1', 'h-int2')
     }
   } else if (group === '사회') {
+    // 🆕 중학 역사 — 올쏘 역사①·② 문제은행(2026-09-28). 학교마다 ①·②를 가르치는 학년이 달라
+    //    학년 기본값(중1·2 → ①, 중3 → ②) 뒤에 나머지 역사 과정을 후보로 붙인다(화면에서 고른다).
+    if (lv === '중' && /역사/.test(name)) {
+      const a = n >= 3 ? 2 : 1, b = a === 1 ? 2 : 1, o = sem === 1 ? 2 : 1
+      push(`m-his${a}-${sem}`, `m-his${a}-${o}`, `m-his${b}-${sem}`, `m-his${b}-${o}`)
+      return out
+    }
     if (/한국사|역사/.test(name)) return []
-    if (lv === '중') push(`m-soc${n}-${sem}`, `m-soc${n}-${sem === 1 ? 2 : 1}`)
+    if (lv === '중') {
+      const a = Math.min(n, 2), b = a === 1 ? 2 : 1, o = sem === 1 ? 2 : 1
+      push(`m-soc${a}-${sem}`, `m-soc${a}-${o}`, `m-soc${b}-${sem}`, `m-soc${b}-${o}`)
+    }
     else {
       if (/통합사회Ⅰ|통합사회1/.test(name)) push('h-soc1')
       if (/통합사회Ⅱ|통합사회2/.test(name)) push('h-soc2')
