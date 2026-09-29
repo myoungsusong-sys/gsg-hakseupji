@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Navigate, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { Navigate, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import type { Student } from '../../types'
 import { useAuth } from '../../lib/auth'
 import { SUPABASE_ON } from '../../lib/supabase'
@@ -33,6 +33,11 @@ export default function StudentShell() {
   const nav = useNavigate()
   // 새 배포 감지 → 상단 업데이트 배너(선생님앱과 동일). 훅은 조건 반환 전에 호출.
   const { entries: changelog, stale, unseen } = useChangelog()
+  // 🔴 2026-09-29 명수쌤 「챌린지 자꾸 튕겨내고 뒤로 돌아가서 학생들 학습하다가 중지했어요」 —
+  //    배포(변경 기록 한 줄)마다 20초 뒤 자동 새로고침이 돌아, 챌린지·풀이·승강제 도중 학생이 튕겨 나갔다
+  //    (그날 저녁 문항 배포 7번). → 자동 새로고침은 «학습 홈» 에 있을 때만. 풀이 중에는 배너만 띄우고 학생이 고른다.
+  const loc = useLocation()
+  const onHome = /^\/student\/?$/.test(loc.pathname)
 
   // 본인 판별: supabase 모드 = **세션 이메일이 유일한 기준** / 로컬 모드 = 로컬 학생 세션
   // ⚠️ 예전에는 로컬 학생 세션(localStorage)을 세션보다 먼저 봤다 → 앞 학생이 남긴 값 때문에
@@ -91,7 +96,7 @@ export default function StudentShell() {
   return (
     <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
-        {stale && <UpdateBanner items={unseen.length ? unseen : changelog.slice(0, 1)} />}
+        {stale && <UpdateBanner key={onHome ? 'home' : 'busy'} auto={onHome} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
         {/* 🚨 이 태블릿 자리 주인과 로그인된 계정이 다르다 — 앞 학생 계정으로 채점되는 사고를 막는다 */}
         {wrongSeat && (
           <div className="flex flex-wrap items-center gap-3 bg-clay px-5 py-2.5 text-sm font-bold text-white">

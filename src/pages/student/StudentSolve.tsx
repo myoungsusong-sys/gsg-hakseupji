@@ -71,7 +71,7 @@ interface Stroke { color: string; size: number; erase?: boolean; pts: [number, n
 export default function StudentSolve() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, assignments, problems, gradings, ensureCourse, upsertGrading, studentAppConfig: gcfg } = useStore()
+  const { worksheets, assignments, problems, gradings, ensureCourse, upsertGrading, studentAppConfig: gcfg, synced } = useStore()
   const nav = useNavigate()
   const [openSolution, setOpenSolution] = useState<Set<string>>(new Set())
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
@@ -334,6 +334,11 @@ export default function StudentSolve() {
   // 화면을 벗어날 때 마지막 구간 확정
   useEffect(() => () => { flushRun() }, [])
 
+  // 🔴 2026-09-29 「챌린지 자꾸 튕겨내고 뒤로 돌아가」 — 새로고침 직후 클라우드 자료가 오기 전에는 학습지가 아직 없다.
+  //    그때 바로 목록으로 돌려보내면 풀던 학생이 튕겨 나간다 → 자료를 다 받을 때까지 기다린 뒤에 판단한다.
+  if ((!ws || !mine) && !synced) {
+    return <div className="py-20 text-center text-sm text-ink2">학습지를 불러오는 중이에요…</div>
+  }
   if (!ws || !mine) return <Navigate to="/student/worksheets" replace />
   // ⏱ 시험: 응시 전·마감·이미 응시함 → 들어올 수 없다 (결과는 결과 화면에서 본다)
   if (gate && !gate.can) {
