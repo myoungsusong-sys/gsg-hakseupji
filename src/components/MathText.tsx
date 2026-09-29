@@ -25,6 +25,11 @@ export function mathToHtml(text: string): string {
     return escapeHtml(part)
       .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
       .replace(/&lt;u&gt;((?:(?!&lt;).)+?)&lt;\/u&gt;/g, '<u>$1</u>')
+      // 🆕 2026-09-29: 자료형 문항의 그림 — 본문 안 `[[그림:/figs/…/파일.png]]` 자리에 그림을 넣는다.
+      //    (시중 문제집처럼 «발문 + 그래프·표 그림» 을 실으려고. 경로는 앱 안 /figs/ 아래 파일만 허용)
+      .replace(/\[\[그림:\/?(figs\/[A-Za-z0-9_\-./]+\.(?:png|svg|webp|jpg))\]\]/g,
+        (_m, path: string) => path.includes('..') ? '' :
+          `<img src="${import.meta.env.BASE_URL}${path}" alt="자료 그림" class="my-2 block max-w-full" style="max-height:340px" />`)
   }).join('')
 }
 
