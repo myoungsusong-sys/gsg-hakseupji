@@ -3,7 +3,8 @@ import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
 import AskProblemButton from './student/AskProblemButton'
-import { autoCorrect, isImgAnswer, isSelfGraded } from './student/AnswerInput'
+import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
+import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
 import {
   newMastery, step, passConcept, pickForFloor, conceptBlanks,
@@ -40,6 +41,8 @@ export default function MasteryRunner({
   const [current, setCurrent] = useState<Problem | null>(null)
   const [picked, setPicked] = useState<number | null>(null)   // 객관식 선택
   const [input, setInput] = useState('')                      // 주관식 학생 답
+  const [sel, setSel] = useState('')                          // 정답이 여럿인 객관식 — 고른 보기 「①,③」
+  const [partVals, setPartVals] = useState<string[]>([])      // 답이 여럿인 주관식 — 칸별 입력
   const [judged, setJudged] = useState<boolean | null>(null)  // 자동 채점 결과
   const [revealed, setRevealed] = useState(false)
   const [msg, setMsg] = useState<string>('')
@@ -52,7 +55,7 @@ export default function MasteryRunner({
 
   // 층이 바뀌면 그 층의 문제를 새로 뽑는다
   useEffect(() => {
-    setPicked(null); setRevealed(false); setInput(''); setJudged(null)
+    setPicked(null); setRevealed(false); setInput(''); setSel(''); setPartVals([]); setJudged(null)
     if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); return }
     setCurrent(pickForFloor(state, base, pool))
   }, [state.floor, state.servedIds.length, base, pool])   // eslint-disable-line react-hooks/exhaustive-deps
@@ -66,6 +69,14 @@ export default function MasteryRunner({
   // 매쓰플랫 문항은 보기가 **이미지 안에** 있어 choices 배열이 없다.
   // 그래도 객관식이면 ①~⑤ 버튼을 줘야 한다 — 안 그러면 학생이 식을 통째로 타이핑해야 한다.
   const isChoice = !!current && (current.kind === '객관식' || !!current.choices)
+  // 🔴 2026-09-29 명수쌤 「승강제 문제 답 두 개 입력하는 거 답 하나만 입력이 된대」 —
+  //    보기를 누르는 즉시 그 한 개로 채점해서 정답이 둘인 객관식은 무엇을 눌러도 오답이었다.
+  //    → 정답이 여럿이면 보기를 켜고 끈 뒤 [제출]. 주관식도 답이 여럿이면((가)·(나), `a, b`) 칸을 나눠 받는다.
+  const multi = isChoice && choiceAnswerCount(current?.answer) > 1
+  const labeled = current && !isChoice ? answerParts(current.answer) : null
+  const plain = current && !isChoice && !labeled ? plainAnswerParts(current.answer) : null
+  const nParts = labeled?.length ?? plain?.length ?? 0
+  const joinedParts = labeled ? joinAnswerParts(partVals, current?.answer) : plain ? joinPlainParts(partVals) : ''
 
   function mark(correct: boolean) {
     if (!current) return
@@ -190,7 +201,7 @@ export default function MasteryRunner({
             {/* ❓ 학생 화면에서만 보인다(선생님 화면의 승강제는 학생 컨텍스트가 없어 버튼이 안 그려진다) */}
             <span className="ml-auto">
               <AskProblemButton p={current} where="승강제" label={`${typeName} · ${FLOOR_NAME[state.floor]}`}
-                studentAnswer={judged !== null ? (picked !== null ? '①②③④⑤'[picked] : input.trim() || undefined) : undefined}
+                studentAnswer={judged !== null ? (picked !== null ? '①②③④⑤'[picked] : sel || input.trim() || undefined) : undefined}
                 correct={judged === null ? undefined : judged === true} />
             </span>
           </div>
@@ -202,19 +213,50 @@ export default function MasteryRunner({
               <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
                 {(current.choices ?? ['', '', '', '', '']).map((c, i) => (
                   <button key={i} type="button" disabled={judged !== null}
-                    onClick={() => { setPicked(i); judge('①②③④⑤'[i]) }}
+                    onClick={() => { if (multi) setSel(v => toggleChoice(v, '①②③④⑤'[i])); else { setPicked(i); judge('①②③④⑤'[i]) } }}
                     className={`rounded-lg border px-3 py-1.5 text-sm ${
-                      picked === i ? 'border-pine bg-pine-soft font-bold' : 'border-line hover:bg-paper2'
+                      (multi ? sel.split(',').includes('①②③④⑤'[i]) : picked === i) ? 'border-pine bg-pine-soft font-bold' : 'border-line hover:bg-paper2'
                     }`}>
                     {'①②③④⑤'[i]}{c ? <> <MathText text={c} /></> : null}
                   </button>
                 ))}
               </div>
             )}
+            {multi && judged === null && (
+              <div className="mt-3 flex flex-wrap items-center gap-2">
+                <span className="text-xs text-ink2">정답이 여러 개인 문제예요 — 해당 번호를 모두 고른 뒤 제출해요</span>
+                <button type="button" disabled={!sel} onClick={() => judge(sel)}
+                  className="ml-auto rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">
+                  제출
+                </button>
+              </div>
+            )}
           </div>
 
           {/* 채점 — 학생이 답을 넣으면 **자동으로** 맞는지 보고 단계를 옮긴다 */}
-          {judged === null && !isChoice && !isSelfGraded(current) && (
+          {judged === null && !isChoice && !isSelfGraded(current) && nParts > 0 && (
+            <form className="mt-3 flex items-end gap-2"
+              onSubmit={(e) => { e.preventDefault(); if (joinedParts) { setInput(joinedParts); judge(joinedParts) } }}>
+              <div className="grid flex-1 gap-1.5">
+                <span className="text-[11px] text-ink2">답이 {nParts}개인 문제예요 — 칸마다 하나씩 적어요</span>
+                {Array.from({ length: nParts }, (_, k) => (
+                  <label key={k} className="flex items-center gap-2">
+                    {labeled && <span className="w-8 shrink-0 text-sm font-bold text-ink2">({labeled[k].label})</span>}
+                    <input
+                      value={partVals[k] ?? ''} autoFocus={k === 0} inputMode="text" placeholder={`답 ${k + 1}`}
+                      onChange={(e) => { const v = e.target.value; setPartVals(pv => { const n = [...pv]; n[k] = v; return n }) }}
+                      className="flex-1 rounded-lg border border-line px-3 py-2.5 text-base focus:border-pine focus:outline-none"
+                    />
+                  </label>
+                ))}
+              </div>
+              <button type="submit" disabled={!joinedParts}
+                className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper disabled:opacity-40">
+                제출
+              </button>
+            </form>
+          )}
+          {judged === null && !isChoice && !isSelfGraded(current) && nParts === 0 && (
             <form className="mt-3 flex gap-2"
               onSubmit={(e) => { e.preventDefault(); if (input.trim()) judge(input) }}>
               <input

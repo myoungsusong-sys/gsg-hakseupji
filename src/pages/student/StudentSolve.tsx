@@ -20,7 +20,7 @@ export interface AiMark {
   rubricAt?: string
 }
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
-import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
+import AnswerInput, { autoCorrect, choiceAnswerCount, toggleChoice } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
 import ProblemContent from '../../components/ProblemContent'
 import SolveFeedback from '../../components/student/SolveFeedback'
@@ -839,18 +839,23 @@ export default function StudentSolve() {
                 onMark={m => setAnswer(p.id, m ? SELF_PREFIX + m : '')}
                 onText={t => setAnswer(p.id, t)} />
             ) : p.kind === '객관식' ? (
-              <div className="flex gap-2">
-                {[1, 2, 3, 4, 5].map(n => {
-                  const c = ['①', '②', '③', '④', '⑤'][n - 1]
-                  const on = cur === c
-                  return (
-                    <button key={n} onClick={() => setAnswer(p.id, on ? '' : c)}
-                      className={`h-11 w-11 rounded-full border text-base font-bold transition ${
-                        on ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
-                      {n}
-                    </button>
-                  )
-                })}
+              <div className="grid gap-0.5">
+                <div className="flex gap-2">
+                  {[1, 2, 3, 4, 5].map(n => {
+                    const c = ['①', '②', '③', '④', '⑤'][n - 1]
+                    // 정답이 둘 이상이면 여러 개를 켜고 끈다 — 한 개만 받으면 무엇을 골라도 오답이었다(2026-09-29)
+                    const multi = choiceAnswerCount(p.answer) > 1
+                    const on = multi ? cur.split(',').includes(c) : cur === c
+                    return (
+                      <button key={n} onClick={() => setAnswer(p.id, multi ? toggleChoice(cur === DONT_KNOW ? '' : cur, c) : (on ? '' : c))}
+                        className={`h-11 w-11 rounded-full border text-base font-bold transition ${
+                          on ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
+                        {n}
+                      </button>
+                    )
+                  })}
+                </div>
+                {choiceAnswerCount(p.answer) > 1 && <span className="text-[10px] text-ink2/70">정답이 여러 개 — 모두 눌러요</span>}
               </div>
             ) : (
               <div className="min-w-0 max-w-md grow">

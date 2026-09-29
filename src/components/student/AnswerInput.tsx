@@ -29,6 +29,24 @@ export function autoCorrect(p: Problem, studentAnswer: string): boolean {
     : mathEqual(p.answer, studentAnswer)
 }
 
+/** 객관식 정답 개수 — 「②,④」·「2, 4」처럼 여러 개면 2 이상(보기를 모두 골라야 정답이다).
+ *  🔴 2026-09-29 명수쌤: 「승강제 문제 답 두 개 입력하는 거 답 하나만 입력이 된대」 — 보기를 한 개만
+ *     받아서 정답이 둘인 객관식(과학 약 800 · 전체 약 1만 3천 문항)은 무엇을 골라도 오답이었다. */
+export function choiceAnswerCount(answer: string | undefined | null): number {
+  const a = String(answer ?? '')
+  const circ = new Set(a.match(/[①-⑤]/g) ?? [])
+  if (circ.size) return circ.size
+  return Math.max(1, new Set(a.split(',').map(s => s.trim()).filter(s => /^[1-5]$/.test(s))).size)
+}
+
+/** 복수 정답 보기 켜고 끄기 — 고른 원문자를 번호순 쉼표로 잇는다(교재 채점 WbAnswerInput 과 같은 형식) */
+export function toggleChoice(value: string, c: string): string {
+  const sel = (value || '').split(',').filter(x => CIRCLED.includes(x))
+  const next = sel.includes(c) ? sel.filter(x => x !== c) : [...sel, c]
+  next.sort((a, b) => CIRCLED.indexOf(a) - CIRCLED.indexOf(b))
+  return next.join(',')
+}
+
 export default function AnswerInput({ p, value, onChange, level = '중등' }: {
   p: Problem
   value: string
@@ -36,15 +54,23 @@ export default function AnswerInput({ p, value, onChange, level = '중등' }: {
   level?: KeypadLevel
 }) {
   if (p.kind === '객관식') {
+    const multi = choiceAnswerCount(p.answer) > 1
+    const sel = (value || '').split(',')
     return (
-      <div className="flex gap-1.5">
-        {CIRCLED.map(c => (
-          <button key={c} type="button"
-            onClick={() => onChange(value === c ? '' : c)}
-            className={`h-9 w-9 rounded-full border text-base font-bold ${value === c ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
-            {c}
-          </button>
-        ))}
+      <div className="grid gap-1">
+        <div className="flex gap-1.5">
+          {CIRCLED.map(c => {
+            const on = multi ? sel.includes(c) : value === c
+            return (
+              <button key={c} type="button"
+                onClick={() => onChange(multi ? toggleChoice(value, c) : (value === c ? '' : c))}
+                className={`h-9 w-9 rounded-full border text-base font-bold ${on ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink hover:bg-paper2'}`}>
+                {c}
+              </button>
+            )
+          })}
+        </div>
+        {multi && <span className="text-[10px] text-ink2/70">정답이 여러 개인 문제예요 — 해당 번호를 모두 눌러요</span>}
       </div>
     )
   }

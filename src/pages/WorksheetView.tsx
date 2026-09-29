@@ -49,11 +49,22 @@ const PXMM = 96 / 25.4                             // CSS px per mm
 
 type Dims = Map<string, { w: number; h: number }>
 
-// 매쓰플랫 문제·해설 이미지(원본 930px)의 실물 스케일: baseW mm ↔ 930px, 작은 이미지는 비례 축소
-function scaledImgStyle(dims: Dims | undefined, url: string, baseWmm: number): CSSProperties {
+// 🔴 2026-09-29 명수쌤 「과학 오답학습지 출력하면 글자가 너무 작게 나와」 —
+//    완자·오투 교재 크롭(public/wanja·otu)은 한 단이 약 468px 인데 매쓰플랫 규격(930px)으로 줄여서
+//    단 폭의 절반(약 37mm, 글자 약 4pt)으로 찍혔다(교재 크롭 7,069장 중 6,431장).
+//    → 교재 크롭은 468px 를 한 단(73.2mm)으로 본다. 두 단에 걸친 넓은 크롭(1065px 등, 638장)은
+//      한 단에 넣으면 여전히 작아서 지면 전폭 띠로 싣는다(아래 layoutBands).
+const LOCAL_CROP = /\/(wanja|otu)\//
+const basePxOf = (url: string) => (LOCAL_CROP.test(url) ? 468 : 930)
+const isWideCrop = (dims: Dims | undefined, url: string | undefined) =>
+  !!url && LOCAL_CROP.test(url) && (dims?.get(url)?.w ?? 0) > 700
+const WIDE_IMG_W = CONTENT_W - G.indent            // 170.2 — 전폭 띠 문항의 그림 최대 폭
+
+// 문제·해설 이미지의 실물 스케일: baseW mm ↔ 원본 한 단 폭(매쓰플랫 930px · 교재 크롭 468px), 작은 이미지는 비례 축소
+function scaledImgStyle(dims: Dims | undefined, url: string, baseWmm: number, maxWmm = baseWmm): CSSProperties {
   const d = dims?.get(url)
-  if (!d || !d.w) return { width: '100%', maxWidth: `${baseWmm}mm`, height: 'auto' }
-  const w = Math.min(baseWmm, d.w * baseWmm / 930)
+  if (!d || !d.w) return { width: '100%', maxWidth: `${maxWmm}mm`, height: 'auto' }
+  const w = Math.min(maxWmm, d.w * baseWmm / basePxOf(url))
   return { width: `${w}mm`, height: `${w * d.h / d.w}mm` }
 }
 // 답 이미지: 자연 크기(96dpi 환산) — 셀/칸 폭 내 max-width, height auto (max-h 캡 없음)
@@ -74,6 +85,7 @@ type PageDef =
   | { part: 's'; first: boolean; kind: 'cols'; cols: [number[], number[]]; conceptsFirst: boolean }
   | { part: 's'; first: boolean; kind: 'rows'; rows: number[]; conceptsFirst: boolean }
   | { part: 's'; first: boolean; kind: 'split'; slots: number[]; conceptsFirst: boolean }
+  | { part: 's'; first: boolean; kind: 'bands'; bands: Band[]; conceptsFirst: boolean }
   | { part: 'q'; first: boolean; kind: 'qa'; left: number[]; right: number[] }
   | { part: 'so'; first: boolean; kind: 'socols'; cols: [number[], number[]] }
   | { part: 'o'; first: boolean; kind: 'omr'; left: number[]; right: number[] }
@@ -111,6 +123,49 @@ function fillColumns(heights: number[], gap: number, ncols: number, availFor: (p
     out.push(cols)
   }
   return out
+}
+
+// 전폭 띠가 섞인 문제지 — 두 단 띠와 전폭 띠(넓은 교재 크롭 문항)를 위에서부터 쌓는다.
+// 두 단 띠는 남은 문항이 그 쪽에 다 들어가면 두 단 높이를 고르게, 아니면 남은 높이까지 채운다.
+type Band = { cols: [number[], number[]]; h: number } | { wide: number; h: number }
+export function layoutBands(hs: number[], wide: boolean[], wideH: number[], gap: number, availFor: (page: number) => number): Band[][] {
+  const pages: Band[][] = []
+  let page: Band[] = [], used = 0
+  const newPage = () => { pages.push(page); page = []; used = 0 }
+  const room = () => availFor(pages.length) - used - (page.length ? gap : 0)
+  let i = 0
+  while (i < hs.length) {
+    if (wide[i]) {
+      if (page.length && wideH[i] > room()) newPage()
+      used += (page.length ? gap : 0) + wideH[i]
+      page.push({ wide: i, h: wideH[i] }); i++
+      continue
+    }
+    let j = i
+    while (j < hs.length && !wide[j]) j++
+    if (page.length && hs[i] > room()) newPage()
+    const rem = room()
+    const seg = hs.slice(i, j)
+    const total = seg.reduce((a, h) => a + h, 0) + gap * (seg.length - 1)
+    const lim0 = total <= 2 * rem ? Math.min(rem, Math.max(total / 2, seg[0])) : rem
+    const cols: [number[], number[]] = [[], []]
+    const hh = [0, 0]
+    for (const [c, lim] of [[0, lim0], [1, rem]] as const) {
+      while (i < j) {
+        const h = hs[i]
+        if (cols[c].length > 0 && hh[c] + gap + h > lim) break
+        hh[c] = cols[c].length === 0 ? h : hh[c] + gap + h
+        cols[c].push(i); i++
+        if (hh[c] > lim) break
+      }
+    }
+    const bh = Math.max(hh[0], hh[1])
+    used += (page.length ? gap : 0) + bh
+    page.push({ cols, h: bh })
+    if (i < j) newPage()
+  }
+  if (page.length) pages.push(page)
+  return pages
 }
 
 // studentMode: 학생앱에서 자기 학습지를 PDF 로 받는 화면.
@@ -275,8 +330,14 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'rows', rows: cols[0], conceptsFirst: pi === 0 && frontConcepts }))
     } else if (opts.layout === 'basic') {
       const hs = items.map((_, i) => measured[`p${i}`] ?? 0)
-      fillColumns(hs, S, 2, p => p === 0 ? avail1 : BODYN_H)
-        .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'cols', cols: [cols[0], cols[1]], conceptsFirst: pi === 0 && frontConcepts }))
+      const wide = items.map((_, i) => measured[`w${i}`] != null)
+      if (wide.some(Boolean)) {
+        layoutBands(hs, wide, items.map((_, i) => measured[`w${i}`] ?? 0), S, p => p === 0 ? avail1 : BODYN_H)
+          .forEach((bands, pi) => defs.push({ part: 's', first: pi === 0, kind: 'bands', bands, conceptsFirst: pi === 0 && frontConcepts }))
+      } else {
+        fillColumns(hs, S, 2, p => p === 0 ? avail1 : BODYN_H)
+          .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'cols', cols: [cols[0], cols[1]], conceptsFirst: pi === 0 && frontConcepts }))
+      }
     } else {
       const per = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 4 : 6
       for (let i = 0; i < items.length; i += per) {
@@ -472,10 +533,10 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       ))}
     </div>
   )
-  const problemAt = (i: number) => (
+  const problemAt = (i: number, wide = false) => (
     <>
       {conceptBefore.get(i) && conceptGroupEl(conceptBefore.get(i)!)}
-      <ProblemBlock p={items[i]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} />
+      <ProblemBlock p={items[i]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
     </>
   )
   const solveRowAt = (i: number, rowH: number) => (
@@ -566,6 +627,26 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         </div>
       )
     }
+    if (pg.kind === 'bands') return (
+      <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+        {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
+        <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
+          {pg.bands.map((b, k) => 'wide' in b
+            ? <div key={k} style={{ marginBottom: `${S}mm` }}>{problemAt(b.wide, true)}</div>
+            : (
+              <div key={k} style={{ position: 'relative', height: `${b.h}mm`, marginBottom: `${S}mm` }}>
+                <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: '#e7e7e7' }} />
+                <div style={{ position: 'absolute', left: 0, top: 0, width: `${G.colW}mm` }}>
+                  {b.cols[0].map(i => <div key={i} style={{ marginBottom: `${S}mm` }}>{problemAt(i)}</div>)}
+                </div>
+                <div style={{ position: 'absolute', right: 0, top: 0, width: `${G.colW}mm` }}>
+                  {b.cols[1].map(i => <div key={i} style={{ marginBottom: `${S}mm` }}>{problemAt(i)}</div>)}
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+    )
     if (pg.kind === 'split') {
       const two = opts.layout !== 'split2'
       const nrows = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 2 : 3
@@ -736,6 +817,12 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
               {problemAt(i)}
             </div>
           ))}
+          {/* 넓은 교재 크롭 문항 — 전폭 띠로 실을 때의 높이 */}
+          {items.map((p, i) => isWideCrop(dims, p.imageUrl) && (
+            <div key={`w${i}`} data-mk={`w${i}`} style={{ width: `${CONTENT_W}mm` }}>
+              {problemAt(i, true)}
+            </div>
+          ))}
           {items.map((_, i) => (
             <div key={`a${i}`} data-mk={`a${i}`} style={{ width: `${G.colW}mm` }}>
               {probAnsAt(i)}
@@ -883,9 +970,11 @@ function InlineAnswer({ p, themeMain, dims }: { p: Problem; themeMain: string; d
 
 /* ── 문항 블록 (§5-5): 번호 20pt bold 테마색 2자리 0패딩 + 본문 hanging indent 11.6mm,
       문제 이미지 폭 73.2mm(930px 원본 기준, 작으면 비례) ── */
-export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims }: {
+export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims, wide }: {
   p: Problem; idx: number; caption: string; themeMain: string
   onVideo?: (p: Problem, idx: number) => void; dims?: Dims
+  /** 전폭 띠(넓은 교재 크롭) — 그림을 한 단 폭에 가두지 않는다 */
+  wide?: boolean
 }) {
   return (
     <div style={{ position: 'relative', paddingLeft: `${G.indent}mm` }}>
@@ -902,7 +991,7 @@ export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims }: {
         </div>
       )}
       {p.imageUrl
-        ? <img src={p.imageUrl} alt="" style={scaledImgStyle(dims, p.imageUrl, G.probImgW)} />
+        ? <img src={p.imageUrl} alt="" style={scaledImgStyle(dims, p.imageUrl, G.probImgW, wide ? WIDE_IMG_W : G.probImgW)} />
         : <>
             <div style={{ fontSize: '10.5pt', lineHeight: 1.7 }}><MathText text={p.body} /></div>
             {p.choices && (
