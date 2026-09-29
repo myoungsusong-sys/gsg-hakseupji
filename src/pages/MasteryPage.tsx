@@ -11,6 +11,7 @@ import type { Problem } from '../types'
 import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQueue'
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
+import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -148,6 +149,12 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   //    내신 대비가 안 된다 (2026-09-12 명수쌤 지시). 교과서 미지정이면 거르지 않는다.
   //    교과서에 매이지 않는 문항(어휘·어법·씨앗)은 book 이 없어 항상 남는다.
   const engBook = allStudents.find((s) => s.id === studentId)?.engBook
+  // 📗 영어 교과서별 승강제(2026-09-29): 학생 교과서가 정해져 있으면 공통 과정(eng-m1 …) 대신 그 교과서 과정으로 연다
+  useEffect(() => {
+    if (!engBook || typeId || params.get('course')) return
+    const b = ENGBOOK_COURSES.find((x) => x.base === course && x.book === engBook)
+    if (b) setCourse(b.id)
+  }, [engBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
   const pool = useMemo(
     () => (typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engBook) : []),
     [problems, typeId, engBook],

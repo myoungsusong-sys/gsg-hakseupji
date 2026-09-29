@@ -45,6 +45,7 @@ export interface Problem {
                          //    (이미지 정답 문항과 같은 흐름. 안 켜면 문장 답이 전부 오답 처리된다)
   book?: string          // 📗 이 문항이 매여 있는 교과서 (예: '동아(윤정미)'). 영어 내신 문항은
                          //    그 교과서 본문이 지문이라 학생 교과서와 맞아야 한다 (data/engBooks.ts)
+  unit?: string          // 📗 교과서 과(단원) — 예 '6과'. 영어 exam4you 문항은 원본 PDF(교과서→과→예상문제)와 대조해 되살렸다(2026-09-29)
   imageUrl?: string      // 이미지 기반 문제(기출 크롭). 있으면 body/choices 대신 이미지 렌더
   videoUrl?: string      // 문항별 풀이영상 (HLS m3u8)
   subtitleUrl?: string   // 풀이영상 자막 (vtt)

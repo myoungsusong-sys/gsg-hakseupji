@@ -1,4 +1,5 @@
 import type { Problem } from '../types'
+import { ENGBOOK_COURSES } from './curriculum-engbook'
 
 // 매쓰플랫 문제 풀 — 과정별 정적 파일(/pool-<course>.json) 지연 로드
 // 형식: { "mf<pid>": [pid, hash, conceptId, level(1~5), isChoice(0/1), answer, trendy(0/1)] }
@@ -30,6 +31,7 @@ export const SCI_POOL_COURSES: readonly string[] = [
 //    빈 배열로 끝나 **문항이 하나도 안 들어간다**(2026-09-05 화면에서 발견: 전 유형 0문항).
 //    pool-*.json 404 는 아래 .catch 가 흡수하므로 이 목록에만 넣으면 gen 이 실린다.
 export const GEN_ONLY_COURSES: readonly string[] = [
+  ...ENGBOOK_COURSES.map(c => c.id),   // 영어 교과서별 승강제 과정 — gen-<과정>.json 만 있다 (2026-09-29)
   'eng-m1', 'eng-m2', 'eng-m3', 'eng-h1', 'eng-h2', 'eng-h3',
   'kor-m1', 'kor-m2', 'kor-m3', 'kor-h1', 'kor-h2', 'kor-h3',
   'h-soc1', 'h-soc2',   // 통합사회1·2 — 씨앗(gen-h-soc*.json)만 있다 (2026-09-05)

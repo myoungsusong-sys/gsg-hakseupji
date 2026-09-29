@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore, uid } from '../../lib/store'
 import { curriculumFor } from '../../data/curriculum'
-import { filterByEngBook } from '../../data/engBooks'
+import { filterByEngBook, filterByUnitNames, unitsIn } from '../../data/engBooks'
 import { gradeKey } from '../../lib/grade'
 import { brandFor, DEFAULT_ACADEMY } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
@@ -15,8 +15,7 @@ import { DEFAULT_SHEET_OPTIONS, type Problem, type Student } from '../../types'
 //   · 수업이 끝나면 여기서 반 학생 전원에게 **각자 자기 교과서 문항**으로 테스트를 낸다(학생 정보의 영어 교과서).
 //     교과서가 안 적힌 학생은 전체 문항에서 나간다 — 표에 빨갛게 표시해 준다.
 //   · 범위는 문항 유형(독해 · 어법·어휘 · 서술형 · 단어·문장)과 그 아래 중단원으로 고른다.
-//     🔴 문제은행에 교과서 '과(Lesson)' 표시가 없다(exam4you 추출 때 남기지 않았다 — 2026-09-15 확인).
-//        과 단위로 내려면 원본을 다시 추출해야 한다. 그때까지는 유형 + 교과서로 낸다.
+//     2026-09-29: exam4you 원본 PDF 와 대조해 문항마다 과(unit)를 되살렸다 → 「과」 칩으로 오늘 수업한 과만 낸다.
 //   · 자동채점을 켜서 학생이 앱에서 풀면 바로 ○/✕ 가 뜨고, 「오늘 교실」에 오답 수가 올라온다 → 선생님이 부른다.
 //   · 이전에 그 학생에게 나간 문항은 빼고 낸다(같은 문제 반복 방지).
 //   · 태그 '수업연계' — 오늘 할 일(lib/routine.ts eng-test)이 이 태그로 자동 확인한다.
@@ -65,6 +64,9 @@ export default function EngLessonTest({ label, students }: { label: string; stud
 
   const [mids, setMids] = useState<Set<string>>(new Set())      // 비어 있으면 전체
   useEffect(() => { setMids(new Set()) }, [course])
+  const [lessons, setLessons] = useState<string[]>([])       // 비어 있으면 전체 과 (과 이름: '3과'·'공통영어2 1과')
+  useEffect(() => { setLessons([]) }, [course])
+  const units = useMemo(() => unitsIn(pool), [pool])
   const [count, setCount] = useState(15)
   const [essay, setEssay] = useState(true)
   const [excludePrev, setExcludePrev] = useState(true)
@@ -92,11 +94,11 @@ export default function EngLessonTest({ label, students }: { label: string; stud
   const rows = useMemo(() => students.map(st => {
     const inRange = mids.size ? pool.filter(p => [...mids].some(m => p.typeId.startsWith(`${m}s`))) : pool
     const byKind = essay ? inRange : inRange.filter(p => p.kind === '객관식')
-    const byBook = filterByEngBook(byKind, st.engBook)
+    const byBook = filterByUnitNames(filterByEngBook(byKind, st.engBook), lessons)
     const prev = prevOf.get(st.id)
     const cands = excludePrev && prev ? byBook.filter(p => !prev.has(p.id)) : byBook
     return { st, cands, will: Math.min(count, cands.length) }
-  }), [students, pool, mids, essay, excludePrev, prevOf, count])
+  }), [students, pool, mids, essay, excludePrev, prevOf, count, lessons])
 
   // 오늘 이미 나간 수업 연계 테스트 (이 반)
   const todays = useMemo(() => {
@@ -167,6 +169,19 @@ export default function EngLessonTest({ label, students }: { label: string; stud
           <span className="text-xs text-ink2">{loaded ? `문제은행 ${pool.length.toLocaleString()}문항` : '문제은행 불러오는 중…'}</span>
         </div>
         <div>
+          {units.length > 0 && (
+            <div className="mb-3">
+              <div className="mb-1 text-xs font-bold text-ink2">과 — 오늘 수업한 과를 고르세요 (안 고르면 전체 과 · 학생마다 자기 교과서의 그 과)</div>
+              <div className="flex flex-wrap gap-1">
+                {units.map(u => (
+                  <button key={u} onClick={() => setLessons(l => l.includes(u) ? l.filter(x => x !== u) : [...l, u])}
+                    className={`rounded-full border px-2.5 py-0.5 text-xs font-bold ${lessons.includes(u) ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink2 hover:border-pine'}`}>
+                    {u}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           <div className="mb-1 text-xs font-bold text-ink2">범위 — 오늘 수업한 것에 맞춰 고르세요 (아무것도 안 고르면 전체)</div>
           <div className="grid gap-2 sm:grid-cols-2">
             {cur.units.map(u => {
