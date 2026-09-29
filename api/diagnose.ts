@@ -225,7 +225,9 @@ async function handleQna(p: any, res: any) {
     // ② 워커 — 대기 1건 집어 잠그기 (20분 넘게 만드는중이면 죽은 것으로 보고 다시 집는다)
     if (act === 'qna-take') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
-      const r = await sbRest('/rest/v1/hj_settings?id=like.qna_*&select=id,data,updated_at&order=updated_at.asc&limit=200')
+      // 🔴 2026-09-29: 완료된 줄까지 200개를 통째로 받던 것을 «대기·만드는중» 만 받게 — 워커 칸마다 몇 초에 한 번 부른다(egress).
+      //    (앱 문제 질문은 문제 원문을 줄에 싣는다 → 끝난 줄을 계속 받으면 그만큼 샌다)
+      const r = await sbRest(`/rest/v1/hj_settings?id=like.qna_*&data->value->>status=in.(${encodeURIComponent('대기')},${encodeURIComponent('만드는중')})&select=id,data,updated_at&order=updated_at.asc&limit=200`)
       const rows = await r.json().catch(() => [])
       const stale = Date.now() - 20 * 60_000
       const 후보 = (Array.isArray(rows) ? rows : []).filter((x: any) => {
@@ -352,7 +354,10 @@ async function handleQna(p: any, res: any) {
       for (let i = 0; i < n; i++) {
         const id = `q-st-qnatest-${Date.now().toString(36)}-${i}`
         const q = { id, studentId: 'st-qnatest', studentName: String(p.name || '시험학생'), text: String(p.text || '어떻게 푸는지 모르겠어요'),
-          shotUrl: String(p.shotUrl || ''), createdAt: new Date(Date.now() + i).toISOString(), status: p.status === '보류' ? '보류' : '대기', tries: 0 }
+          shotUrl: String(p.shotUrl || ''), createdAt: new Date(Date.now() + i).toISOString(), status: p.status === '보류' ? '보류' : '대기', tries: 0,
+          // 📄 문제 바로 질문 시험(2026-09-29) — 앱이 싣는 문제 원문·학생 맥락을 그대로 흉내 낸다
+          ...(p.problem && typeof p.problem === 'object' ? { problem: p.problem } : {}),
+          ...(typeof p.context === 'string' ? { context: p.context.slice(0, 1200) } : {}) }
         await qnaWrite(`qna_${id}`, q)
         ids.push(id)
       }

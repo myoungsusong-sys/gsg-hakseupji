@@ -2945,6 +2945,11 @@ export function typeName(typeId: string): string {
   return typeEntry(typeId)?.t.name ?? typeId
 }
 
+// 유형이 속한 과정 id (예: 'm2-1'·'h-soc2') — 트리에 없으면 빈 글
+export function courseIdOfType(typeId: string): string {
+  return typeEntry(typeId)?.c.id ?? ''
+}
+
 // "대단원 · 중단원" (범위 요약용)
 export function typeUnitName(typeId: string): string {
   const x = typeEntry(typeId)

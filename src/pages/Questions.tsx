@@ -136,6 +136,15 @@ export default function Questions() {
                         <span className="rounded-full bg-rose-100 px-2 py-0.5 text-xs font-bold text-rose-700">⏰ {stuckMinutes(q)}분째 못 받음</span>}
                     </div>
                     <p className="whitespace-pre-wrap break-words text-sm text-ink">{q.text}</p>
+                    {/* 📄 앱 문제에서 바로 물은 질문 — 어디 문제인지·앱 정답·학생 답(보류 판단용) */}
+                    {q.problem && (
+                      <p className="mt-1 text-xs text-ink2">
+                        📄 {q.problem.label || q.problem.typeName || '학습지 문제'}
+                        {q.problem.where ? ` · ${q.problem.where}` : ''}
+                        {q.problem.answer ? ` · 앱 정답 ${q.problem.answer}` : ''}
+                        {q.problem.studentAnswer ? ` · 학생 답 ${q.problem.studentAnswer}${q.problem.correct === false ? '(틀림)' : q.problem.correct === true ? '(맞음)' : ''}` : ''}
+                      </p>
+                    )}
                     {q.answerText && <p className="mt-1 text-sm text-pine-dark">💡 {q.answerText}</p>}
                     {q.status === '완료' && q.answeredAt && (
                       <p className="mt-1 text-xs text-ink2">

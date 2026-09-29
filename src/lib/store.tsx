@@ -974,6 +974,11 @@ export function useStore(): Store {
   return s
 }
 
+/** 가게가 없을 수도 있는 곳(여러 화면에 끼우는 작은 부품)용 — 없으면 null */
+export function useStoreMaybe(): Store | null {
+  return useContext(Ctx)
+}
+
 export function uid(prefix: string): string {
   return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`
 }

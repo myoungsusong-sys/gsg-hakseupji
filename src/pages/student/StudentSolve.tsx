@@ -24,6 +24,7 @@ import AnswerInput, { autoCorrect } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
 import ProblemContent from '../../components/ProblemContent'
 import SolveFeedback from '../../components/student/SolveFeedback'
+import AskProblemButton from '../../components/student/AskProblemButton'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
@@ -699,6 +700,11 @@ export default function StudentSolve() {
                     : selfMarkOf(cur) ? `자기채점 ${{ 정답: '○', 오답: '✕', 모름: '?' }[selfMarkOf(cur)!]}`
                     : '답 입력됨'}
                 </span>
+              )}
+              {/* ❓ 사진 없이 이 문제 바로 질문 (2026-09-29) — 🔴 시험 중에는 숨긴다 */}
+              {!exam && (
+                <AskProblemButton p={p} where="풀이 중" label={`${ws.title} · ${idx + 1}번`}
+                  studentAnswer={cur === DONT_KNOW ? '모름' : cur && !selfMarkOf(cur) && !isImgAnswer(cur) ? cur : undefined} />
               )}
               <div className="grow" />
               {/* 필기 툴바 (매쓰플랫 동일: 👁 ↶ ↷ 펜 지우개 🗑 + 펜 설정) */}

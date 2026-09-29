@@ -39,6 +39,27 @@ export interface Question {
   worker?: string              // 만든 워커 칸(맥#칸)
   takenAt?: string             // 워커가 집은 시각
   seenAt?: string              // 👀 학생이 질문함에서 해설을 처음 본 시각(학생앱이 적는다)
+  problem?: QnaProblem         // 📄 앱 문제에서 바로 물은 질문 — 문제 원문·정답을 같이 싣는다(사진 판독 없이 정확하게)
+}
+
+/** 📄 문제 바로 질문(2026-09-29) — 학습지·채점 결과·승강제 화면의 문제를 사진 없이 보낸다.
+ *  워커는 이 원문으로 «문제 옮겨 적기»를 건너뛰고, 앱 정답과 자기 풀이가 다르면 선생님 확인으로 돌린다. */
+export interface QnaProblem {
+  src: 'app'
+  pid?: string                 // 문항 id
+  typeId?: string
+  typeName?: string
+  course?: string              // 과정 id (m2-1 · h-soc2 …)
+  subject?: string             // 수학 · 과학 · 영어 · 국어 · 사회 · 역사
+  body?: string                // 문제 글(수식 $…$ · 표 · [[그림:]] 그대로). 이미지 문항이면 빈 글
+  choices?: string[]
+  answer?: string              // 앱 정답
+  solution?: string            // 앱 해설(글 해설만)
+  imageUrl?: string            // 이미지 문항의 문제 그림
+  studentAnswer?: string       // 학생이 낸 답(있으면)
+  correct?: boolean            // 채점 결과(채점 뒤에 물었으면)
+  where?: string               // 어디서 물었나 — 풀이 중 · 채점 결과 · 승강제
+  label?: string               // 학습지 이름 · 번호
 }
 
 /** 시험 질문(qna-testq)은 학생 id 가 st-qnatest — 선생님 목록·알림에서 뺀다 */
@@ -81,12 +102,17 @@ export async function shrinkPhoto(file: File, maxW = 1600, quality = 0.72): Prom
 
 /** 질문 올리기 — 사진은 서버가 Storage 에, 본문은 hj_settings 한 줄에 */
 export async function askQuestion(args: {
-  studentId: string; studentName: string; text: string; photo: File; context?: string
+  studentId: string; studentName: string; text: string
+  photo?: File                 // 찍은 사진 — 또는
+  shotB64?: string             // 앱이 그린 문제 그림(JPEG base64, problemShot.tsx)
+  problem?: QnaProblem
+  context?: string
   push?: PushSubscriptionJSON
 }): Promise<Question> {
   if (!supabase) throw new Error('클라우드에 연결돼 있지 않아 질문을 보낼 수 없어요.')
   const id = newQuestionId(args.studentId)
-  const b64 = await shrinkPhoto(args.photo)
+  const b64 = args.shotB64 ?? (args.photo ? await shrinkPhoto(args.photo) : '')
+  if (!b64) throw new Error('문제 그림이 없어요. 다시 시도해 주세요.')
 
   const r = await fetch('/api/diagnose', {
     method: 'POST',
@@ -117,11 +143,27 @@ export async function askQuestion(args: {
     // 개인화 단계에서만 쓰인다. 풀이·검증에는 들어가지 않는다(삼자토론 확정).
     context: (args.context || '').slice(0, 1200) || undefined,
     push: args.push?.endpoint ? args.push : undefined,
+    problem: args.problem ? 줄이기(args.problem) : undefined,
   }
   const { error } = await supabase.from('hj_settings')
     .upsert({ id: 접두 + id, data: { __id: 접두 + id, value: q }, updated_at: q.createdAt })
-  if (error) throw new Error(error.message.slice(0, 200))
+  if (error) {
+    console.warn('[질문함 저장 실패]', error.message)
+    // 권한(RLS) 오류 = 로그인이 풀린 기기. 영문 오류를 학생에게 그대로 보이지 않는다
+    if (/row-level security|JWT|401|403/.test(error.message)) throw new Error('로그인이 풀려서 질문을 저장하지 못했어요. 다시 로그인한 뒤 보내 주세요.')
+    throw new Error('질문을 저장하지 못했어요. 인터넷을 확인하고 잠시 뒤 다시 시도해 주세요.')
+  }
   return q
+}
+
+// 질문 줄은 hj_settings 한 줄이다 — 긴 지문·해설이 줄을 불리지 않게 칸마다 자른다(egress)
+function 줄이기(p: QnaProblem): QnaProblem {
+  const cut = (s: string | undefined, n: number) => (s ? String(s).slice(0, n) : undefined)
+  return {
+    ...p,
+    body: cut(p.body, 3000), solution: cut(p.solution, 2000), answer: cut(p.answer, 300),
+    studentAnswer: cut(p.studentAnswer, 300), choices: p.choices?.slice(0, 6).map(c => String(c).slice(0, 400)),
+  }
 }
 
 async function 읽기(like: string, limit: number): Promise<Question[]> {

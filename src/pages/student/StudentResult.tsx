@@ -6,6 +6,7 @@ import { useStore } from '../../lib/store'
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
 import ProblemContent from '../../components/ProblemContent'
 import VideoModal from '../../components/VideoModal'
+import AskProblemButton from '../../components/student/AskProblemButton'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
 import { latestGradingFor, statusOf, summaryOf, AnswerText, isImgAnswer, usePreview } from './common'
@@ -324,6 +325,13 @@ export default function StudentResult() {
                         🪜 이 유형 마스터하기
                       </button>
                     )}
+                    {/* ❓ 틀린 문제는 크게, 맞힌 문제는 작게 — 사진 없이 바로 질문 (2026-09-29) */}
+                    {!r?.pending && p && (
+                      <div className={correct ? 'text-right' : ''}>
+                        <AskProblemButton p={p} where="채점 결과" variant={correct ? 'link' : 'block'} label={`${ws.title} · ${no}번`}
+                          studentAnswer={r?.studentAnswer} correct={r ? !!r.correct : undefined} />
+                      </div>
+                    )}
                   </div>
                 </div>
               )
@@ -421,6 +429,11 @@ export default function StudentResult() {
                   ? <div className="rounded-xl bg-paper2/50 p-3"><ProblemContent p={cur.p} /></div>
                   : <div className="rounded-xl bg-paper2/50 p-3 text-sm text-ink2">문제를 불러오는 중이에요…</div>}
                 <ItemBody no={cur.no} p={cur.p} r={cur.r} />
+                {/* ❓ 채점 뒤에도 막힌 문제는 사진 없이 바로 질문 (2026-09-29) */}
+                {cur.p && !cur.r?.pending && (
+                  <AskProblemButton p={cur.p} where="채점 결과" variant="block" label={`${ws.title} · ${cur.no}번`}
+                    studentAnswer={cur.r?.studentAnswer} correct={cur.r ? !!cur.r.correct : undefined} />
+                )}
               </div>
             </div>
           </div>

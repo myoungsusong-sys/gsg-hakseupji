@@ -2,8 +2,8 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
 import { useStore } from '../../lib/store'
-import { wrongTypesOf } from '../../lib/wrongTypes'
-import { typeName } from '../../data/curriculum'
+import { studentQnaContext } from '../../lib/qnaContext'
+import { QuickChips, joinAsk } from '../../components/student/AskProblemButton'
 import {
   askQuestion, myQuestions, removeQuestion, markQnaRead, markSeen, QNA_READ_KEY, queueInfos,
   type Question, type QnaStatus, type QueueInfo,
@@ -90,9 +90,12 @@ export default function StudentQuestions() {
         >❓ 문제 찍어서 질문하기</button>
       </div>
 
-      <p className="mb-4 text-sm text-ink2">
+      <p className="mb-2 text-sm text-ink2">
         모르는 문제를 사진으로 찍고 <b>어디가 막히는지</b> 적어 보내면, 그 질문에 맞춘 <b>해설 노트</b>를 만들어 드려요.
         <span className="text-ink2/70"> (AI가 만들고 선생님이 확인합니다)</span>
+      </p>
+      <p className="mb-4 rounded-xl bg-pine-soft/40 px-3.5 py-2.5 text-sm text-ink">
+        💡 <b>학습지·채점 결과·승강제 문제</b>는 사진을 찍지 않아도 돼요 — 문제 옆 <b className="text-pine-dark">❓ 질문</b> 버튼을 누르면 그 문제가 그대로 와요.
       </p>
 
       {err && <div className="mb-4 rounded-2xl border border-line bg-amber-soft px-4 py-3 text-sm text-amber">{err}</div>}
@@ -100,7 +103,7 @@ export default function StudentQuestions() {
       {loading ? (
         <div className="rounded-2xl border border-line bg-white px-4 py-14 text-center text-sm text-ink2">불러오는 중…</div>
       ) : list.length === 0 ? (
-        <Empty title="" msg="아직 보낸 질문이 없어요. 풀다가 막히는 문제가 나오면 바로 찍어서 물어보세요." />
+        <Empty title="" msg="아직 보낸 질문이 없어요. 학습지를 풀다 막히면 문제 옆 ❓ 버튼, 교재·시험지 문제는 사진으로 물어보세요." />
       ) : (
         <div className="grid gap-3">
           {list.map(q => (
@@ -113,7 +116,7 @@ export default function StudentQuestions() {
         </div>
       )}
 
-      {open && <AskModal me={{ id: me.id, name: me.name }} 맥락={() => 학생맥락(me, store)}
+      {open && <AskModal me={{ id: me.id, name: me.name }} 맥락={() => studentQnaContext(me, store)}
                          onClose={() => setOpen(false)} onDone={() => { setOpen(false); void load() }} />}
       {zoom?.answerUrl && <Lightbox url={zoom.answerUrl} onClose={() => setZoom(null)} />}
     </div>
@@ -139,6 +142,7 @@ function Card({ q, line, fresh, onZoom, onDelete }: { q: Question; line?: QueueI
           <div className="mb-1 flex items-center gap-2">
             <span className={`rounded-full px-2.5 py-1 text-xs font-bold ${b.c}`}>{b.t}</span>
             {fresh && <span className="rounded-full bg-clay px-2 py-0.5 text-[11px] font-black text-white">NEW</span>}
+            {q.problem && <span className="rounded-full bg-paper2 px-2 py-0.5 text-[11px] font-bold text-ink2" title={q.problem.label || q.problem.typeName}>📄 학습지 문제</span>}
             <span className="text-xs text-ink2/70">{fmt(q.createdAt)}</span>
             <div className="grow" />
             {q.status !== '완료' && (
@@ -161,7 +165,10 @@ function Card({ q, line, fresh, onZoom, onDelete }: { q: Question; line?: QueueI
               {q.card?.다음 && (
                 <div className="flex flex-wrap items-center gap-2">
                   <span><b className="text-pine-dark">👉 다음</b> <span className="text-ink">{q.card.다음}</span></span>
-                  <Link to="/student/mastery" className="rounded-full bg-pine px-3 py-1 text-xs font-bold text-paper">바로 풀기</Link>
+                  <Link to={q.problem?.typeId && q.problem.pid
+                          ? `/student/mastery?type=${q.problem.typeId}&base=${encodeURIComponent(q.problem.pid)}`
+                          : '/student/mastery'}
+                        className="rounded-full bg-pine px-3 py-1 text-xs font-bold text-paper">바로 풀기</Link>
                 </div>
               )}
             </div>
@@ -197,39 +204,13 @@ function Card({ q, line, fresh, onZoom, onDelete }: { q: Question; line?: QueueI
   )
 }
 
-// 🔴 «관련 있는 증거 2~3개만» 넣는다 (삼자토론 확정). 학생 DB 를 통째로 보내지 않는다.
-//    전체 오답 목록·질문 이력·학교·선생님 평가 메모는 넣지 않는다 — 잡음이고 편견이다.
-function 학생맥락(me: { id: string; name: string; grade?: string }, store: ReturnType<typeof useStore>): string {
-  let 최근 = ''
-  try {
-    const rows = wrongTypesOf({
-      studentId: me.id, gradings: store.gradings, wbItems: store.wbItems,
-      problems: store.problems, masteries: store.masteries, days: 21,
-    }).slice(0, 2)
-    최근 = rows.map(r => {
-      const st = r.state ? ` (유형 정복 ${r.state.floor}/4층)` : ''
-      return `- ${typeName(r.typeId)} — 최근 ${r.wrong}문항 틀림${st}`
-    }).join('\n')
-  } catch { /* 기록이 없으면 그냥 비운다 */ }
-  return [
-    '[학생 맥락]',
-    `이름: ${me.name}`,
-    `과정: ${me.grade ?? ''}`,
-    '',
-    '최근 3주 안에 자주 틀린 유형(참고용):',
-    최근 || '- 기록 없음',
-    '',
-    '🔴 위 기록은 이번 문제와 «핵심 개념이 명확히 같을 때만» 언급하라.',
-    '   같은 단원이라는 이유만으로 잇지 마라. 근거가 분명하지 않으면 아예 언급하지 마라.',
-  ].join('\n')
-}
-
 function AskModal({ me, 맥락, onClose, onDone }: {
   me: { id: string; name: string }; 맥락: () => string; onClose: () => void; onDone: () => void
 }) {
   const [file, setFile] = useState<File | null>(null)
   const [url, setUrl] = useState('')
   const [text, setText] = useState('')
+  const [picked, setPicked] = useState<string[]>([])
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const pick = useRef<HTMLInputElement>(null)
@@ -248,14 +229,15 @@ function AskModal({ me, 맥락, onClose, onDone }: {
 
   async function send() {
     if (!file) { setErr('문제 사진을 먼저 찍어 주세요.'); return }
-    if (text.trim().length < 5) { setErr('어디가 막히는지 한 줄이라도 적어 주세요. 그래야 그 부분을 짚어 드려요.'); return }
+    const 글 = joinAsk(picked, text)
+    if (글.length < 2) { setErr('막힌 곳을 하나 고르거나 한 줄 적어 주세요. 그래야 그 부분을 짚어 드려요.'); return }
     setBusy(true); setErr('')
     try {
       // 권한 창은 «누른 순간» 안에서만 뜬다 → 다른 await 보다 먼저 부른다. 8초 안에 안 되면 알림 없이 보낸다
       const push = alarm
         ? await Promise.race([subscribeForAnswer(), new Promise<undefined>(ok => setTimeout(() => ok(undefined), 8000))])
         : undefined
-      await askQuestion({ studentId: me.id, studentName: me.name, text, photo: file, context: 맥락(), push })
+      await askQuestion({ studentId: me.id, studentName: me.name, text: 글, photo: file, context: 맥락(), push })
       onDone()
     } catch (e) { setErr(e instanceof Error ? e.message : String(e)); setBusy(false) }
   }
@@ -286,8 +268,9 @@ function AskModal({ me, 맥락, onClose, onDone }: {
         {url && <div className="mb-3 text-center text-xs text-ink2/70">사진을 누르면 다시 찍을 수 있어요</div>}
 
         <label className="mb-1.5 block text-sm font-bold">어디가 막히나요?</label>
+        <QuickChips picked={picked} onToggle={s => setPicked(v => v.includes(s) ? v.filter(x => x !== s) : [...v, s])} />
         <textarea
-          value={text} onChange={e => setText(e.target.value)} rows={4}
+          value={text} onChange={e => setText(e.target.value)} rows={3}
           placeholder="예) 4f'(x) 로 봐도 되나요? 아니면 치환해야 하나요? □ 안에 x 를 넣으면 왜 안 되는지 모르겠어요."
           className="mb-1 w-full resize-y rounded-2xl border border-line bg-white px-3.5 py-2.5 text-sm outline-none focus:border-pine"
         />

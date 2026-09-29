@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
+import AskProblemButton from './student/AskProblemButton'
 import { autoCorrect, isImgAnswer, isSelfGraded } from './student/AnswerInput'
 import MathText from './MathText'
 import {
@@ -186,6 +187,12 @@ export default function MasteryRunner({
             </span>
             <span className="rounded bg-paper2 px-2 py-0.5">{DIFF_LABEL[current.diff]}</span>
             <span className="text-ink2">{FLOOR_DESC[state.floor]}</span>
+            {/* ❓ 학생 화면에서만 보인다(선생님 화면의 승강제는 학생 컨텍스트가 없어 버튼이 안 그려진다) */}
+            <span className="ml-auto">
+              <AskProblemButton p={current} where="승강제" label={`${typeName} · ${FLOOR_NAME[state.floor]}`}
+                studentAnswer={judged !== null ? (picked !== null ? '①②③④⑤'[picked] : input.trim() || undefined) : undefined}
+                correct={judged === null ? undefined : judged === true} />
+            </span>
           </div>
 
           <div className="rounded-xl border border-line p-4">
