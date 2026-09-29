@@ -36,6 +36,9 @@ export const GEN_ONLY_COURSES: readonly string[] = [
   // 중학 사회·역사 — 올쏘 유사유형 씨앗(gen-m-soc*·gen-m-his*.json) (2026-09-28)
   'm-soc1-1', 'm-soc1-2', 'm-soc2-1', 'm-soc2-2', 'm-his1-1', 'm-his1-2', 'm-his2-1', 'm-his2-2',
   'h-khis1', 'h-khis2',   // 고1 한국사1·2 (22개정) — 올쏘 유사유형 씨앗 (2026-09-28)
+  // 고3 22개정 진로·융합선택 과학 — 완자·사이언스플랫 수확분이 없어 씨앗(gen-*.json)만 있다 (2026-09-29)
+  'h-mech', 'h-emq', 'h-mateng', 'h-chemrxn', 'h-cellmeta', 'h-biogen', 'h-earthsys', 'h-planet',
+  'h-scihist', 'h-climate', 'h-convsci',
 ]
 
 export const WANJA_COURSES = ['h-earth', 'h-phy', 'h-chem', 'h-bio', 'h-int2', 'm-sci3-2', 'm-sci2-2', 'm-sci1-2'] as const
