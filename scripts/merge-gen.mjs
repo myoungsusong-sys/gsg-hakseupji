@@ -39,6 +39,14 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json') && (!x.starts
       //    여기서 안 흘려보내면 public/gen-*.json 에서 사라져 필터가 통째로 무력해진다(2026-09-12 실측).
       ...(p.book ? { book: String(p.book) } : {}),
       ...(p.selfGrade ? { selfGrade: true } : {}),
+      // 🔴 2026-09-29: 아래 칸을 안 옮겨서 다시 합치면 쌍둥이 묶음(twinGroup)과 수학 씨앗 문항 그림(imageUrl 171개)이 사라졌다.
+      ...(p.twinGroup ? { twinGroup: String(p.twinGroup) } : {}),
+      ...(p.imageUrl ? { imageUrl: p.imageUrl } : {}),
+      ...(p.figure ? { figure: p.figure } : {}),
+      ...(p.noAnswer ? { noAnswer: true } : {}),
+      ...(p.isNew ? { isNew: true } : {}),
+      ...(p.videoUrl ? { videoUrl: p.videoUrl } : {}),
+      ...(p.subtitleUrl ? { subtitleUrl: p.subtitleUrl } : {}),
       custom: true })
   })
 }
