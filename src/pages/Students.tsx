@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { ENG_BOOK_OPTIONS } from '../data/engBooks'
+import { KOR_BOOK_OPTIONS } from '../data/korBooks'
 import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '../types'
 import { studentEmailOf, teacherEmailOf } from '../lib/role'
 import { SUPABASE_ON, supabase, signUpAccountClient, signUpStudentClient } from '../lib/supabase'
@@ -387,6 +388,7 @@ interface FormState {
   parentPhone: string
   school: string
   engBook: string
+  korBook: string
   startDate: string
   birth: string
   email: string
@@ -427,7 +429,7 @@ function BranchField({ value, onChange }: { value: string; onChange: (v: string)
 function emptyForm(): FormState {
   return {
     name: '', sk: '중', gn: 1, attendNo: '',
-    studentPhone: '', parentPhone: '', school: '', engBook: '', startDate: '', birth: '',
+    studentPhone: '', parentPhone: '', school: '', engBook: '', korBook: '', startDate: '', birth: '',
     email: '', address: '', homePhone: '', memo: '', klass: '', branchId: '',
     classDays: [], arriveTime: '', leaveTime: '',
     recentExams: [], prevEdu: '', progressNow: '', goal: '', traits: [], weeklyHours: '', parentConcern: '',
@@ -440,7 +442,7 @@ function formFromStudent(s: Student): FormState {
   return {
     name: s.name, sk, gn, attendNo: s.attendNo ?? '',
     studentPhone: s.studentPhone ?? '', parentPhone: s.parentPhone ?? '',
-    school: s.school ?? '', engBook: s.engBook ?? '', startDate: s.startDate ?? '', birth: s.birth ?? '',
+    school: s.school ?? '', engBook: s.engBook ?? '', korBook: s.korBook ?? '', startDate: s.startDate ?? '', birth: s.birth ?? '',
     email: s.email ?? '', address: s.address ?? '', homePhone: s.homePhone ?? '',
     memo: s.memo ?? '', klass: s.klass ?? '', branchId: s.branchId ?? '',
     classDays: s.classDays ?? [], arriveTime: s.arriveTime ?? '', leaveTime: s.leaveTime ?? '',
@@ -469,6 +471,7 @@ function formPayload(f: FormState): Omit<Student, 'id' | 'active'> {
     parentPhone: t(f.parentPhone),
     school: t(f.school),
     engBook: t(f.engBook),
+    korBook: t(f.korBook),
     memo: t(f.memo),
     studentPhone: t(f.studentPhone),
     startDate: t(f.startDate),
@@ -607,6 +610,17 @@ function StudentFields({ f, set, onRegenAttendNo }: {
         <select value={f.engBook} onChange={e => set({ engBook: e.target.value })} className={INPUT}>
           <option value="">미지정 — 전 출판사 문항이 나갑니다</option>
           {ENG_BOOK_OPTIONS.map(g => (
+            <optgroup key={g.grade} label={g.grade}>
+              {g.books.map(b => <option key={g.grade + b} value={b}>{b}</option>)}
+            </optgroup>
+          ))}
+        </select>
+      </Field>
+      {/* 📘 국어도 학교 교과서의 단원·작품에서 시험이 나온다 — 교과서별 과정으로 낸다 (2026-09-30) */}
+      <Field label="국어 교과서">
+        <select value={f.korBook} onChange={e => set({ korBook: e.target.value })} className={INPUT}>
+          <option value="">미지정 — 교과서 구분 없는 공통 국어 문항이 나갑니다</option>
+          {KOR_BOOK_OPTIONS.map(g => (
             <optgroup key={g.grade} label={g.grade}>
               {g.books.map(b => <option key={g.grade + b} value={b}>{b}</option>)}
             </optgroup>

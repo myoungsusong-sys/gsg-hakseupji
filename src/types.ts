@@ -246,6 +246,7 @@ export interface Student {
   //    Student.timetable 과 같이 json 통째 저장이라 마이그레이션이 필요 없다.
   schoolTimetable?: SchoolTimetable
   engBook?: string       // 📗 학교가 쓰는 영어 교과서 (예: '동아(윤정미)') — 영어 문항을 이 교과서 것으로 거른다
+  korBook?: string       // 📘 학교가 쓰는 국어 교과서 (예: '비상(박영민)') — 국어는 이 교과서 과정(단원·작품)으로 낸다 (2026-09-30)
   // 🎚️ 영단어 — 수준진단 결과로 선생님이 학생마다 정한다 (2026-09-14). 비면 학년 기본값(25개 · 단어시험).
   //    book: lib/voca.ts VOCA_BOOKS 의 key · perDay: 하루 단어 수 · modes: 'word'(뜻→영어) / 'meaning'(영어→뜻)
   voca?: { book?: string; perDay?: number; modes?: ('word' | 'meaning')[] }

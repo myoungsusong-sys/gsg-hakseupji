@@ -11,6 +11,7 @@ import type { Problem } from '../types'
 import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQueue'
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
+import { currentSem, korCourseFor } from '../data/korBooks'
 import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
 
 /**
@@ -155,6 +156,13 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     const b = ENGBOOK_COURSES.find((x) => x.base === course && x.book === engBook)
     if (b) setCourse(b.id)
   }, [engBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
+  // 📘 국어 교과서별 과정(2026-09-30): 학생 국어 교과서가 정해져 있으면 공통 국어(kor-m1 …) 대신 그 교과서의 이번 학기 과정으로 연다
+  const korBook = allStudents.find((s) => s.id === studentId)?.korBook
+  useEffect(() => {
+    if (!korBook || typeId || params.get('course') || !/^kor-[mh]\d$/.test(course)) return
+    const k = korCourseFor(course, korBook, currentSem())
+    if (k) setCourse(k)
+  }, [korBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
   const pool = useMemo(
     () => (typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engBook) : []),
     [problems, typeId, engBook],
@@ -292,6 +300,11 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         <p className="mt-1 text-xs font-bold text-pine-dark">
           📗 영어 교과서 <span className="rounded bg-pine-soft px-1.5 py-0.5">{engBook}</span> 문항만 나갑니다
           <span className="ml-1 font-normal text-ink2">(학생 정보에서 바꿀 수 있어요)</span>
+        </p>
+      )}
+      {korBook && (
+        <p className="mt-1 text-xs font-bold text-rose-700">
+          📘 국어 교과서 <span className="rounded bg-rose-100 px-1.5 py-0.5">{korBook}</span> 과정이 있으면 그 교과서 단원·작품으로 나갑니다
         </p>
       )}
       <p className="mt-1 text-sm text-ink2">
