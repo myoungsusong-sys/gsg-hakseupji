@@ -46,6 +46,7 @@ export interface Problem {
   book?: string          // 📗 이 문항이 매여 있는 교과서 (예: '동아(윤정미)'). 영어 내신 문항은
                          //    그 교과서 본문이 지문이라 학생 교과서와 맞아야 한다 (data/engBooks.ts)
   unit?: string          // 📗 교과서 과(단원) — 예 '6과'. 영어 exam4you 문항은 원본 PDF(교과서→과→예상문제)와 대조해 되살렸다(2026-09-29)
+  set?: string          // 📘 지문 세트 id — 같은 제시문에 붙은 국어 문항 묶음 (예 'kor-m12-bis-pym-u0m1s0-p1')
   imageUrl?: string      // 이미지 기반 문제(기출 크롭). 있으면 body/choices 대신 이미지 렌더
   videoUrl?: string      // 문항별 풀이영상 (HLS m3u8)
   subtitleUrl?: string   // 풀이영상 자막 (vtt)
