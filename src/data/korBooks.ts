@@ -24,9 +24,16 @@ export function korBookMatch(c: KorBookCourse, korBook?: string): boolean {
 export function korCourseFor(base: string, korBook?: string, sem?: 1 | 2, subject?: string): string | undefined {
   const cands = KORBOOK_COURSES.filter(c => c.base === base && korBookMatch(c, korBook))
   if (!cands.length) return undefined
-  const s = (subject ?? '').replace(/\s/g, '')
-  const byTitle = s ? cands.find(c => c.title.replace(/\s/g, '').includes(s) || s.includes(c.title.replace(/\s/g, ''))) : undefined
-  return (byTitle ?? cands.find(c => c.sem === sem) ?? cands[0]).id
+  const n = (x: string) => x.replace(/\s/g, '')
+  const s = n(subject ?? '')
+  const byTitle = s ? cands.filter(c => n(c.title).includes(s) || s.includes(n(c.title))) : []
+  // 고2·고3(과목별 과정, sem 0): 시험 과목을 알려 줬는데 그 과목 교과서 과정이 없으면 다른 과목으로 새지 않는다
+  if (s && !byTitle.length && cands.every(c => !c.sem)) return undefined
+  const pool = byTitle.length ? byTitle : cands
+  const bySem = pool.find(c => c.sem === sem)
+  if (bySem) return bySem.id
+  // 한 출판사에 과목(문학·독서와 작문·화법과 언어 …)이 여럿인데 과목을 모르면 짐작하지 않는다(첫 과목으로 새지 않게)
+  return pool.length === 1 ? pool[0].id : undefined
 }
 
 /** 지금 학기 — 8월부터 2학기 */
