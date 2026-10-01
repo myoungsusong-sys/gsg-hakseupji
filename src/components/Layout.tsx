@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { NavLink, Outlet, useNavigate } from 'react-router-dom'
+import CrashGuard from './CrashGuard'
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import LoadFailBanner from './LoadFailBanner'
 import { SUBJECTS, useSubject } from '../lib/subject'
@@ -198,6 +199,7 @@ const topTab = ({ isActive }: { isActive: boolean }) =>
 // 매쓰플랫 헤더 구성 동일: 로고 | 수업 준비·수업·관리 | (우측) 내신관 · 알림 · 학원명(→마이페이지)
 export default function Layout() {
   const nav = useNavigate()
+  const loc = useLocation()
   const { academyProfile, multiBranch, teachers } = useStore()
   const { email } = useAuth()
   const [subject, setSubject] = useSubject()   // 전역 과목 (수업 준비 화면 공용)
@@ -356,7 +358,7 @@ export default function Layout() {
       {/* 💬 클로드에게 말로 고치기 (좌하단 — 우하단은 [맨 위로]·승인 큐가 쓴다) */}
       <AdminChat />
 
-      <Outlet />
+      <CrashGuard key={loc.pathname} where={loc.pathname}><Outlet /></CrashGuard>
     </div>
   )
 }

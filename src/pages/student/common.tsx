@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import type { Assignment, ExamOptions, Grading, Problem, Student, Worksheet } from '../../types'
 import MathText from '../../components/MathText'
 
@@ -22,6 +22,33 @@ export function usePreview(): PreviewNav { return useContext(PreviewCtx) }
 // 미리보기에서 액션 버튼에 붙일 공통 안내
 export const PREVIEW_LOCK_TITLE = '미리보기는 보기 전용이에요 (실제 학생 데이터 보호)'
 
+// 🔴 2026-10-01 명수쌤 「앱을 고치면 이용하던 학생 화면이 처음으로 돌아가요」 —
+//    새로고침(배포 뒤 새로고침·멈춰서 당겨 새로고침·태블릿이 앱을 내렸다 다시 띄움)이 나도
+//    **보던 자리**(연 교재·쪽·채점 중 입력·문항 번호·챌린지 과정)로 돌아오게 하는 상태.
+//    키에 학생 id 를 꼭 넣는다(좌석 태블릿을 여러 학생이 쓴다). 6시간이 지나면 잊는다(다음 날은 처음부터).
+//    key=null 이면 저장하지 않는다(선생님 미리보기 등).
+const STICKY_TTL_MS = 6 * 3600_000
+export function readSticky<T>(key: string): T | undefined {
+  try {
+    const raw = localStorage.getItem(`stu-sticky:${key}`)
+    const o = raw ? JSON.parse(raw) as { v: T; at: number } : null
+    if (o && Date.now() - o.at < STICKY_TTL_MS) return o.v
+  } catch { /* 손상·접근 불가 → 없음 */ }
+  return undefined
+}
+export function writeSticky(key: string, v: unknown): void {
+  try { localStorage.setItem(`stu-sticky:${key}`, JSON.stringify({ v, at: Date.now() })) } catch { /* 쿼터 초과 무시 */ }
+}
+export function useStickyState<T>(key: string | null, initial: T | (() => T)): [T, React.Dispatch<React.SetStateAction<T>>] {
+  const [v, setV] = useState<T>(() => {
+    const got = key ? readSticky<T>(key) : undefined
+    if (got !== undefined) return got
+    return typeof initial === 'function' ? (initial as () => T)() : initial
+  })
+  useEffect(() => { if (key) writeSticky(key, v) }, [key, v])
+  return [v, setV]
+}
+
 // 임시저장 (localStorage) — 문항 답이 바뀔 때마다 저장, 제출 시 삭제
 export function draftKey(wsId: string): string {
   return `stu-draft-${wsId}`
@@ -43,6 +70,21 @@ export function writeDraft(wsId: string, answers: Record<string, string>): strin
 }
 export function clearDraft(wsId: string): void {
   localStorage.removeItem(draftKey(wsId))
+}
+
+// 풀던 문항 번호 (학생×학습지) — 새로고침해도 그 문항에서 이어진다. 6시간 지나면 처음부터.
+const idxKey = (sid: string, wsId: string) => `stu-solve-idx:${sid}:${wsId}`
+export function readSolveIdx(sid: string, wsId: string): number {
+  try {
+    const o = JSON.parse(localStorage.getItem(idxKey(sid, wsId)) ?? 'null') as { i: number; at: number } | null
+    return o && Date.now() - o.at < STICKY_TTL_MS && o.i > 0 ? o.i : 0
+  } catch { return 0 }
+}
+export function writeSolveIdx(sid: string, wsId: string, i: number): void {
+  try {
+    if (i > 0) localStorage.setItem(idxKey(sid, wsId), JSON.stringify({ i, at: Date.now() }))
+    else localStorage.removeItem(idxKey(sid, wsId))
+  } catch { /* 쿼터 초과 무시 */ }
 }
 
 // 이 학생의 학습지 최신 채점 (선생님 채점·학생 제출 모두 포함 — 최신 1건)

@@ -11,6 +11,7 @@ import type { Problem } from '../types'
 import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQueue'
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
+import { readSticky, writeSticky } from './student/common'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -83,11 +84,18 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
 
   const paramType = params.get('type')
   const paramBase = params.get('base')
+  // 🔴 2026-10-01 명수쌤 「승강제 과학을 풀다가 화면이 멈춰서 홈화면 나갔다 들어오면 다시 처음으로 간대」 —
+  //    고른 과정·유형이 화면 안에만 있어서, 태블릿이 앱을 내렸다 다시 띄우면 기본값(중1-1 수학 목록)으로 돌아갔다.
+  //    학생 화면이면 기기에 기억해 두고 그 자리로 다시 연다(링크로 들어온 유형·과정이 있으면 그것이 먼저).
+  const stickyKey = studentIdProp !== 'me' && !scoped && !params.get('student') ? `${studentIdProp}:mastery` : null
+  const [stuck] = useState(() =>
+    stickyKey && !paramType && !params.get('course') ? readSticky<{ course: string; typeId: string | null }>(stickyKey) : undefined)
   const [course, setCourse] = useState(
-    () => params.get('course') ?? (paramType && courseOfType(paramType)) ?? 'm1-1',
+    () => params.get('course') ?? (paramType && courseOfType(paramType)) ?? stuck?.course ?? 'm1-1',
   )
   const [q, setQ] = useState('')
-  const [typeId, setTypeId] = useState<string | null>(paramType)
+  const [typeId, setTypeId] = useState<string | null>(paramType ?? stuck?.typeId ?? null)
+  useEffect(() => { if (stickyKey) writeSticky(stickyKey, { course, typeId }) }, [stickyKey, course, typeId])
   const [mode, setMode] = useState<'풀기' | '인쇄'>('풀기')
 
   useEffect(() => { ensureCourse(course) }, [course])   // eslint-disable-line react-hooks/exhaustive-deps
@@ -148,10 +156,16 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   //    내신 대비가 안 된다 (2026-09-12 명수쌤 지시). 교과서 미지정이면 거르지 않는다.
   //    교과서에 매이지 않는 문항(어휘·어법·씨앗)은 book 이 없어 항상 남는다.
   const engBook = allStudents.find((s) => s.id === studentId)?.engBook
-  const pool = useMemo(
-    () => (typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engBook) : []),
-    [problems, typeId, engBook],
-  )
+  // 🔴 문제 묶음은 **내용이 같으면 같은 배열을 그대로** 쓴다. 다른 과정 문제가 새로 실리거나 자료를 다시 받아
+  //    problems 배열이 새로 만들어질 때마다 pool 도 새 배열이 되었고, 러너가 그걸 «층이 바뀌었다»로 받아
+  //    **풀던 문제를 새 문제로 바꾸고 입력하던 답을 지웠다**(2026-10-01 「승강제 풀다 처음으로」).
+  const poolRef = useRef<{ key: string; arr: Problem[] }>({ key: '', arr: [] })
+  const pool = useMemo(() => {
+    const next = typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engBook) : []
+    const key = `${typeId}|${next.map((p) => p.id).join(',')}`
+    if (key !== poolRef.current.key) poolRef.current = { key, arr: next }
+    return poolRef.current.arr
+  }, [problems, typeId, engBook])
   // 기준 문항 = 학생이 방금 틀린 그 문제. 없으면 그 유형의 **표준**(중간 난이도).
   // 가장 쉬운 것을 기준으로 잡으면 기본과 표준이 똑같이 「하」가 되어 사다리가 뭉개진다(2026-09-05 실측).
   const base: Problem | null = useMemo(() => {
@@ -219,6 +233,15 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     nav(`${location.hash.replace(/^#/, '').split('?')[0]}${qs ? `?${qs}` : ''}`, { replace: true })
   }
 
+  // 🔴 승강제 진행은 이 기기에도 **즉시** 따로 적어 둔다. 기기 전체 백업은 몇 초 묶어서 쓰므로,
+  //    답한 직후 태블릿이 멈춰 꺼지면 한 단계 전 상태로 다시 열릴 수 있다. 다시 열 때는 둘 중 마지막으로
+  //    푼 기록이 더 늦은 쪽을 쓴다(다른 기기에서 더 풀었으면 그쪽).
+  const localKey = stickyKey && typeId ? `${stickyKey}-st:${typeId}` : null
+  const lastAt = (s?: MasteryState) => s?.log?.[s.log.length - 1]?.at ?? ''
+  const localRaw = localKey ? readSticky<MasteryState>(localKey) : undefined
+  const localSt = localRaw && Array.isArray(localRaw.servedIds) && Array.isArray(localRaw.log) ? localRaw : undefined
+  const resumeSt = localSt && (!saved || lastAt(localSt) >= lastAt(saved)) ? localSt : saved
+
   if (typeId && base && row) {
     if (mode === '인쇄') {
       return <MasteryPrint typeId={typeId} typeName={row.name} base={base} pool={pool}
@@ -228,9 +251,10 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       <MasteryRunner
         key={typeId}
         typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId}
-        initial={startOverride[typeId] ?? saved ?? newMastery(studentId, typeId, 2)}
+        initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 2)}
         onChange={(st: MasteryState) => {
           lastState.current = st; saveMastery(studentId, typeId, st)
+          if (localKey) writeSticky(localKey, st)
           if (startOverride[typeId]) setStartOverride((m) => { const n = { ...m }; delete n[typeId]; return n })
         }}
         onClose={() => {

@@ -10,7 +10,7 @@ import { loadLectures, hasLectures, type Lecture, type LectureUnit } from '../..
 import MathText from '../../components/MathText'
 import ZoomImage from '../../components/ZoomImage'
 import VideoModal from '../../components/VideoModal'
-import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
+import { useStudentSelf, usePreview, useStickyState, PREVIEW_LOCK_TITLE } from './common'
 import { useNavigate } from 'react-router-dom'
 import { wrongTypesOf } from '../../lib/wrongTypes'
 import { fileToScaledJpeg, scanAnswersFromPhoto, type ScanResult } from '../../lib/scanAnswers'
@@ -407,7 +407,9 @@ function SelfCheckInput({ item, mark, revealed, onReveal, onMark, elementary = f
 export default function StudentWorkbooks() {
   const me = useStudentSelf()
   const { workbooks, wbItems, gradings } = useStore()
-  const [openId, setOpenId] = useState<string | null>(null)
+  const pv0 = usePreview()
+  // 새로고침해도 열어 둔 교재로 돌아온다 (common.useStickyState)
+  const [openId, setOpenId] = useStickyState<string | null>(pv0.on ? null : `${me.id}:wb-open`, null)
   const [tab, setTab] = useState<'일반교재' | '시그니처교재'>('일반교재')   // 매쓰플랫 동일 탭
 
   const myBooks = useMemo(() => workbooks.filter(w => w.studentId === me.id), [workbooks, me.id])
@@ -511,10 +513,12 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const pv = usePreview()
   const [onlyWrong, setOnlyWrong] = useState(false)
   const [pageList, setPageList] = useState(false)   // 페이지 리스트 모달
-  const [mode, setMode] = useState<'view' | 'grade'>('view')   // 보기 / 채점(직접 풀기)
-  const [answers, setAnswers] = useState<Record<string, string>>({})   // 채점 모드 입력값
+  // 새로고침해도 «채점 중이던 입력»과 쪽이 그대로 남는다 (common.useStickyState)
+  const sk = pv.on ? null : `${me.id}:wb:${wb.id}`
+  const [mode, setMode] = useStickyState<'view' | 'grade'>(sk && `${sk}:mode`, 'view')   // 보기 / 채점(직접 풀기)
+  const [answers, setAnswers] = useStickyState<Record<string, string>>(sk && `${sk}:ans`, {})   // 채점 모드 입력값
   // 자기채점 — 그래프·작도·서술형처럼 기계 대조가 안 되는 문항을 학생이 직접 표시한 값
-  const [selfMarks, setSelfMarks] = useState<Record<string, Mark>>({})
+  const [selfMarks, setSelfMarks] = useStickyState<Record<string, Mark>>(sk && `${sk}:self`, {})
   const [revealed, setRevealed] = useState<Record<string, boolean>>({})  // 정답을 연 문항
   const [savedAt, setSavedAt] = useState('')
   // 클라우드에 아직 못 올린 상태 — 「저장됨」이라고 말하면 안 되는 경우다.
@@ -572,7 +576,7 @@ function WorkbookDetail({ wb, onBack }: { wb: Workbook; onBack: () => void }) {
   const pages = useMemo(() => [...new Set(items.map(i => i.page))].sort((a, b) => a - b), [items])
 
   // 시작 페이지 = 마지막(최신) 채점 쪽 — 채점된 문항 중 가장 최근 기록의 최대 쪽
-  const [page, setPage] = useState<number>(() => {
+  const [page, setPage] = useStickyState<number>(sk && `${sk}:page`, () => {
     let bestDate = ''
     let bestPage = pages[0] ?? 1
     for (const i of items) {

@@ -12,7 +12,7 @@ import { loadPool } from '../data/pool'
 import { coursesForWorksheet, defaultCurriculumForGrade } from '../data/curriculum'
 import { useAuthEmail } from './auth'
 import { isStudentEmail, matchStudentByEmail } from './role'
-import { cloud, loadAll, noteId, type CloudData, type LoadFail } from './backend'
+import { cloud, loadAll, loadChanged, noteId, type CloudData, type CloudPatch, type LoadFail, type RowChange } from './backend'
 import { ALL, setBranch, useBranchScope } from './branch'
 
 const LS_KEY = 'gsg-hakseupji-v1'
@@ -262,6 +262,52 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
   }
 }
 /**
+ * 바뀐 줄만 끼워 넣는다 (2026-10-01 — backend.loadChanged 머리말).
+ * 🔴 안 바뀐 칸은 **같은 참조를 그대로** 둔다. 참조가 바뀌면 그 칸을 쓰는 화면이 전부 다시 계산된다
+ *    (예전엔 다시 받을 때마다 모든 칸이 새 배열이라 태블릿 화면 전체가 매번 다시 그려졌다).
+ *    내용이 같은 줄(내가 방금 쓴 것이 되돌아온 알림 등)도 바꾸지 않는다.
+ */
+export function applyPatch(prev: Persisted, p: CloudPatch): Persisted {
+  const same = (a: unknown, b: unknown) => a === b || JSON.stringify(a) === JSON.stringify(b)
+  let next: Persisted | null = null
+  const put = <K extends keyof Persisted>(k: K, v: Persisted[K]) => { (next ??= { ...prev })[k] = v }
+
+  for (const [field, ch] of Object.entries(p.rows) as [keyof Persisted, { up: unknown[]; gone: string[] }][]) {
+    if (!ch || !(field in prev)) continue
+    const idOf = field === 'dailyNotes' ? (x: any) => noteId(x) : (x: any) => x?.id as string
+    const cur = prev[field] as unknown as any[]
+    const at = new Map<string, number>()
+    cur.forEach((x, i) => at.set(idOf(x), i))
+    let arr: any[] | null = null
+    const drop = new Set(ch.gone.filter(id => at.has(id)))
+    for (const d0 of ch.up) {
+      const d = field === 'worksheets' ? normWorksheet(d0 as Worksheet) : d0
+      const id = idOf(d)
+      if (!id) continue
+      const i = at.get(id)
+      if (i == null) { (arr ??= cur.slice()).push(d); continue }
+      if (same(cur[i], d)) continue
+      ;(arr ??= cur.slice())[i] = d
+    }
+    if (drop.size) arr = (arr ?? cur).filter(x => !drop.has(idOf(x)))
+    if (!arr) continue
+    if (field === 'worksheets') arr.sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+    if (field === 'gradings') arr.sort((a, b) => b.date.localeCompare(a.date))
+    put(field, arr as never)
+  }
+
+  for (const [k, v0] of Object.entries(p.settings) as [keyof Persisted, unknown][]) {
+    if (!(k in prev)) continue
+    const v = k === 'diffMatrix' ? (v0 ?? DEFAULT_DIFF_MATRIX)
+      : k === 'studentAppConfig' ? { ...DEFAULT_STUDENT_APP_CONFIG, ...((v0 as object | null) ?? {}) }
+      : k === 'academyProfile' ? (v0 ?? {})
+      : v0
+    if (!same(prev[k], v)) put(k, v as never)
+  }
+  return next ?? prev
+}
+
+/**
  * 매칭 교재의 정답이 실제 책과 다를 때, 선생님이 직접 넣은 정답으로 덮어쓴다.
  * (2026-07-28 명수쌤 지시 — 개정판이 달라 정답이 안 맞는 교재가 있었다)
  *
@@ -477,8 +523,19 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   // 클라우드 모드면 원본은 Supabase → 대량 문제(customProblems)를 localStorage에 미러링하지 않음
   // (수천 문제 이미지 URL이 localStorage 5MB 쿼터를 초과해 렌더가 깨지던 문제 방지)
-  useEffect(() => {
-    const snapshot = cloud.on ? { ...state, customProblems: [] } : state
+  // 🔴 2026-10-01 「중간에 먹통」: 상태가 바뀔 **때마다** 전체(모든 학생 채점·풀이 사진 포함)를
+  //    JSON 으로 풀어 기기에 저장했다. 수업 중엔 몇 초마다 수 MB 를 두 번씩(쿼터 초과 → 다시) 풀어 쓰느라
+  //    태블릿이 그때마다 멈췄다. → 바뀐 뒤 4초 조용해지면 한 번만 쓴다. 쿼터에 막히면 1분은 다시 안 해 본다.
+  //    탭을 떠날 때(pagehide·숨김)는 미루지 않고 바로 쓴다. 클라우드가 원본이고 못 올린 쓰기는
+  //    outbox 가 따로 지키므로, 이 백업이 몇 초 늦어도 잃는 것은 없다.
+  const snapTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const snapBlockedUntil = useRef(0)
+  const writeSnapshot = useRef(() => {})
+  writeSnapshot.current = () => {
+    if (snapTimerRef.current) { clearTimeout(snapTimerRef.current); snapTimerRef.current = null }
+    if (Date.now() < snapBlockedUntil.current) return
+    const st = stateRef.current
+    const snapshot = cloud.on ? { ...st, customProblems: [] } : st
     try {
       localStorage.setItem(LS_KEY, JSON.stringify(snapshot))
     } catch {
@@ -488,21 +545,164 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       //    wbItems 는 클라우드에서 다시 받으면 되는 파생 데이터라 버려도 안전하다.
       try {
         localStorage.setItem(LS_KEY, JSON.stringify({ ...snapshot, wbItems: [] }))
-      } catch { /* 그래도 안 되면 포기 — 클라우드가 원본이다 */ }
+      } catch { snapBlockedUntil.current = Date.now() + 60_000 /* 그래도 안 되면 포기 — 클라우드가 원본이다 */ }
     }
+  }
+  const firstSnap = useRef(true)
+  useEffect(() => {
+    if (firstSnap.current) { firstSnap.current = false; return }   // 방금 읽어 온 그대로다
+    if (snapTimerRef.current) clearTimeout(snapTimerRef.current)
+    snapTimerRef.current = setTimeout(() => writeSnapshot.current(), cloud.on ? 4000 : 300)
   }, [state])
+  useEffect(() => {
+    const now = () => { if (snapTimerRef.current) writeSnapshot.current() }
+    const onHide = () => { if (document.visibilityState === 'hidden') now() }
+    window.addEventListener('pagehide', now)
+    document.addEventListener('visibilitychange', onHide)
+    return () => { window.removeEventListener('pagehide', now); document.removeEventListener('visibilitychange', onHide) }
+  }, [])
 
   // 🔴 읽기에 실패한 표 — 화면에 띄워 선생님이 «없어진 게 아니라 못 읽은 것»임을 알게 한다.
   //    조용히 넘기면 선생님이 다시 채점하게 되고, 그게 진짜 유실을 만든다.
   const [loadFail, setLoadFail] = useState<LoadFail | null>(null)
 
+  // 학생 기기면 «나» — 다른 학생의 채점 알림은 이 기기에서 다시 받지 않는다(학생 화면은 본인 채점만 쓴다)
+  const myStudentIdRef = useRef<string | null>(null)
+  myStudentIdRef.current = 학생기기 && authEmail ? (matchStudentByEmail(state.students, authEmail)?.id ?? null) : null
+  const studentEmailRef = useRef<string | null>(null)
+  studentEmailRef.current = 학생기기 ? authEmail : null
+  /** 🔴 2026-10-01 「먹통이 될 때 화면이 하얗게」 — 학생 태블릿이 반 전체 학생의 풀이 사진(workImg, JPEG dataURL)을
+   *  메모리에 들고 있었다. 학생 화면은 본인 채점만 쓰므로 **다른 학생 채점의 사진은 버린다.**
+   *  (이 기기는 남의 채점을 쓰지 않으니 클라우드 원본은 그대로다.) 선생님 기기는 건드리지 않는다. */
+  const slimForStudent = (st: Persisted): Persisted => {
+    const email = studentEmailRef.current
+    if (!email) return st
+    const meId = matchStudentByEmail(st.students, email)?.id
+    if (!meId) return st
+    let changed = false
+    const gradings = st.gradings.map(g => {
+      if (g.studentId === meId || !g.results?.some(r => r.workImg)) return g
+      changed = true
+      return { ...g, results: g.results.map(r => (r.workImg ? { ...r, workImg: undefined } : r)) }
+    })
+    return changed ? { ...st, gradings } : st
+  }
+  const slimRef = useRef(slimForStudent)
+  slimRef.current = slimForStudent
+
   // 클라우드 동기화: 최초 로드 + 실시간 구독
   useEffect(() => {
     if (!cloud.on) return
-    let unsub = () => {}
-    let cancelPending = () => {}
     let alive = true
+    // 🔴 2026-10-01 「학습지앱이 중간에 먹통」 — 바뀐 줄만 다시 받는다 (backend.loadChanged 머리말).
+    //    ① 실시간 알림 → (표, id) 를 모아 2초 뒤 그 줄만 읽어 끼운다.
+    //    ② 표 전체 다시 받기는 연결이 끊겼다 이어졌을 때 · 오래 잠들었다 깼을 때 · 부분 읽기가 실패했을 때만,
+    //       그리고 그 사이는 최소 15초. (예전: 누가 무엇을 저장하든 전 기기가 10초마다 전체를 다시 받았다.
+    //       2026-09-02 Supabase egress 초과 402 잠김도 이 재로드가 원인 중 하나였다.)
+    //    ③ 구독을 **먼저** 붙이고 첫 로드를 한다 — 첫 로드와 구독 사이 틈에 바뀐 것을 놓치지 않게.
+    //       첫 로드 중에 온 알림은 모아 뒀다가 로드가 끝난 뒤 그 줄만 다시 읽는다.
+    const BURST_MS = 2_000       // 연달아 오는 알림을 한 번으로 합치는 창
+    const FULL_GAP_MS = 15_000   // 전체 다시 받기끼리 최소 간격
+    const MAX_ROWS = 300         // 한 번에 이보다 많이 바뀌었으면(일괄 이관 등) 전체 다시 받기가 낫다
+    const SLEEP_MS = 5 * 60_000  // 이만큼 숨어 있다 돌아오면 전체 다시 받기(알림을 놓쳤을 수 있다)
+    const dirty = new Map<string, Set<string>>()
+    let needFull = false
+    let ready = false            // 첫 로드가 끝났나 — 그 전엔 알림을 모으기만 한다
+    let timer: ReturnType<typeof setTimeout> | null = null
+    let running = false
+    let queued = false
+    let lastFullAt = Date.now()
+    let hiddenAt = 0
+
+    const schedule = () => {
+      if (timer || !alive || !ready) return
+      const wait = needFull ? Math.max(BURST_MS, FULL_GAP_MS - (Date.now() - lastFullAt)) : BURST_MS
+      timer = setTimeout(run, wait)
+    }
+    const run = async () => {
+      timer = null
+      if (!alive) return
+      if (running) { queued = true; return }   // 앞 요청이 아직이면 끝난 뒤 한 번만 더
+      running = true
+      try {
+        if (needFull) {
+          needFull = false; dirty.clear(); lastFullAt = Date.now()
+          const r = await loadAll()
+          if (!r || !alive) return
+          setState(prev => slimRef.current(fromCloud(r, prev)))
+          setLoadFail(Object.keys(r.__failed).length ? r.__failed : null)
+          if (Object.keys(r.__failed).length) needFull = true   // 못 읽은 표는 15초 뒤 다시 (예전엔 다음 알림 때 다시 읽혔다)
+          return
+        }
+        if (!dirty.size) return
+        const batch = new Map(dirty); dirty.clear()
+        const p = await loadChanged(batch)
+        if (!alive) return
+        if (!p) { needFull = true; return }      // 부분 읽기 실패 → 전체 다시 받기로
+        setState(prev => slimRef.current(applyPatch(prev, p)))
+      } finally {
+        running = false
+        if (alive && (queued || needFull || dirty.size)) { queued = false; schedule() }
+      }
+    }
+    // 학생 기기: 반 전체가 같이 쓰는 큰 설정 행(승강제 진행·체크표·피드백 등)은 1분에 한 번만 다시 받는다.
+    // 학생 본인 칸은 이 기기가 쓴 것이라 이미 최신이고, 남의 칸은 학생 화면에 안 쓰인다.
+    // (승강제를 반 전체가 풀면 한 문제마다 이 행이 바뀌어, 그때마다 전 기기가 큰 행을 다시 받게 된다)
+    const SLOW_FOR_STUDENT = new Set(['masteries', 'ttChecks', 'reviewChecks', 'routineChecks', 'solveFeedbacks',
+      'bugReports', 'pointEntries', 'pointSettlements', 'counsels', 'savedReports', 'uploads'])
+    const SLOW_MS = 60_000
+    const slow = new Set<string>()
+    let slowTimer: ReturnType<typeof setTimeout> | null = null
+    const onChange = (c: RowChange) => {
+      if (!c.id) { needFull = true; schedule(); return }
+      // 학생 기기: 다른 학생 채점 줄은 받지 않는다 — 수업 중 알림의 대부분이 이것이다
+      const me = myStudentIdRef.current
+      if (me && c.table === cloud.T.gradings && c.studentId && c.studentId !== me) return
+      if (me && c.table === cloud.T.settings && SLOW_FOR_STUDENT.has(c.id)) {
+        slow.add(c.id)
+        slowTimer ??= setTimeout(() => {
+          slowTimer = null
+          if (!alive) return
+          let ids = dirty.get(cloud.T.settings)
+          if (!ids) dirty.set(cloud.T.settings, ids = new Set())
+          for (const id of slow) ids.add(id)
+          slow.clear()
+          schedule()
+        }, SLOW_MS)
+        return
+      }
+      let ids = dirty.get(c.table)
+      if (!ids) dirty.set(c.table, ids = new Set())
+      ids.add(c.id)
+      let n = 0
+      for (const s of dirty.values()) n += s.size
+      if (n > MAX_ROWS) needFull = true
+      schedule()
+    }
+    const onResync = () => { needFull = true; schedule() }
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') { hiddenAt = Date.now(); return }
+      if (hiddenAt && Date.now() - hiddenAt >= SLEEP_MS) onResync()
+      hiddenAt = 0
+    }
+    document.addEventListener('visibilitychange', onVis)
+    // 안전망 — 실시간 알림을 혹시 놓쳐도 오래 어긋나 있지 않게, 화면이 켜져 있을 때 가끔 전체를 맞춘다.
+    // (예전: 수업 중 10초마다 전체. 지금: 선생님 기기 5분 · 학생 기기 15분)
+    const safety = setInterval(() => {
+      if (!ready || document.visibilityState !== 'visible') return
+      const every = myStudentIdRef.current ? 15 * 60_000 : 5 * 60_000
+      if (Date.now() - lastFullAt >= every) onResync()
+    }, 60_000)
+
+    let joinedResolve: () => void = () => {}
+    const joined = new Promise<void>(res => { joinedResolve = res })
+    const unsub = cloud.subscribe(onChange, onResync, () => joinedResolve())
+
     ;(async () => {
+      // 구독이 붙기를 잠깐(최대 2.5초) 기다린 뒤 첫 로드 — 안 붙어도 로드는 한다
+      await Promise.race([joined, new Promise(res => setTimeout(res, 2_500))])
+      if (!alive) return
+      lastFullAt = Date.now()
       const remote = await loadAll()
       if (remote && alive) {
         const has = remote.customProblems.length || remote.worksheets.length || remote.students.length ||
@@ -510,53 +710,27 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           remote.dailyNotes.length || remote.myLists.length || remote.favorites.length || remote.diffMatrix
         // 🔴 fromCloud 에 **직전 상태를 넘긴다** — 읽기에 실패한 표는 덮어쓰지 않는다.
         //    (2026-08-21 김준우 채점내역 유실: 실패가 빈 배열로 내려와 그대로 덮어썼다)
-        if (has) setState(prev => fromCloud(remote, prev))
+        if (has) setState(prev => slimRef.current(fromCloud(remote, prev)))
         else if (!Object.keys(remote.__failed).length) {
           // 🔴 「비었다」와 「못 읽었다」는 다르다. 하나라도 실패했으면 시드하지 않는다 —
           //    그대로 두면 로컬 상태를 빈 클라우드에 덮어쓰는 반대 방향 사고가 난다.
           await cloud.seedIfEmpty(toCloud(stateRef.current))
         }
-        if (Object.keys(remote.__failed).length) setLoadFail(remote.__failed)
+        if (Object.keys(remote.__failed).length) { setLoadFail(remote.__failed); needFull = true }
       }
       if (alive) {
         setSynced(true)
-        // 🔴 실시간 변경 → 전량 재로드를 **묶어서** 한다.
-        //    예전에는 변경 한 건마다 loadAll() 을 그대로 다시 돌렸다. 수업 중에는 학생이 제출할 때마다
-        //    접속한 기기 전부가 동시에 전 테이블을 다시 받아, 제출 20건이면 재로드도 20번이었다.
-        //    (2026-09-02 Supabase egress 초과로 프로젝트가 402 로 잠긴 사고의 원인 중 하나)
-        //    → 몰려 들어오는 변경은 2초 안에 하나로 합치고, 재로드 사이는 최소 10초를 띄운다.
-        //      실시간 풀이 모니터는 따로 3초마다 돌기 때문에 수업 화면 체감은 그대로다.
-        const BURST_MS = 2_000     // 연달아 오는 변경을 한 번으로 합치는 창
-        const MIN_GAP_MS = 10_000  // 재로드끼리 최소 간격
-        let timer: ReturnType<typeof setTimeout> | null = null
-        let lastRunAt = 0
-        let running = false
-        let queued = false
-        const runReload = async () => {
-          timer = null
-          if (!alive) return
-          if (running) { queued = true; return }   // 앞 요청이 아직이면 끝난 뒤 한 번만 더
-          running = true
-          lastRunAt = Date.now()
-          try {
-            const r = await loadAll()
-            if (!r || !alive) return
-            setState(prev => fromCloud(r, prev))
-            setLoadFail(Object.keys(r.__failed).length ? r.__failed : null)
-          } finally {
-            running = false
-            if (queued && alive) { queued = false; scheduleReload() }
-          }
-        }
-        const scheduleReload = () => {
-          if (timer || !alive) return
-          timer = setTimeout(runReload, Math.max(BURST_MS, MIN_GAP_MS - (Date.now() - lastRunAt)))
-        }
-        unsub = cloud.subscribe(scheduleReload)
-        cancelPending = () => { if (timer) { clearTimeout(timer); timer = null } }
+        ready = true
+        if (dirty.size || needFull) schedule()
       }
     })()
-    return () => { alive = false; unsub(); cancelPending() }
+    return () => {
+      alive = false; unsub()
+      if (timer) { clearTimeout(timer); timer = null }
+      if (slowTimer) { clearTimeout(slowTimer); slowTimer = null }
+      clearInterval(safety)
+      document.removeEventListener('visibilitychange', onVis)
+    }
   }, [])
 
   const set = setState
@@ -750,8 +924,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       set(s => ({ ...s, schoolBooks: next })); cloud.setSetting('schoolBooks', next)
     },
     saveMastery: (studentId, typeId, st) => {
-      const next = { ...stateRef.current.masteries, [`${studentId}|${typeId}`]: st }
-      set(s => ({ ...s, masteries: next })); cloud.setSetting('masteries', next)
+      const k = `${studentId}|${typeId}`
+      const next = { ...stateRef.current.masteries, [k]: st }
+      set(s => ({ ...s, masteries: next })); cloud.mergeSettingKeys('masteries', { [k]: st })
     },
     saveSchoolExam: e => {
       const next = [...stateRef.current.schoolExams.filter(x => x.id !== e.id), e]
@@ -767,13 +942,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       if (!!cur[key] === on) return
       const next = { ...cur }
       if (on) next[key] = true; else delete next[key]
-      set(s => ({ ...s, routineChecks: next })); cloud.setSetting('routineChecks', next)
+      set(s => ({ ...s, routineChecks: next })); cloud.mergeSettingKeys('routineChecks', on ? { [key]: true } : {}, on ? [] : [key])
     },
     toggleReviewCheck: key => {
       const cur = stateRef.current.reviewChecks
       const next = { ...cur }
-      if (next[key]) delete next[key]; else next[key] = true
-      set(s => ({ ...s, reviewChecks: next })); cloud.setSetting('reviewChecks', next)
+      const on = !next[key]
+      if (on) next[key] = true; else delete next[key]
+      set(s => ({ ...s, reviewChecks: next })); cloud.mergeSettingKeys('reviewChecks', on ? { [key]: true } : {}, on ? [] : [key])
     },
     toggleTTCheck: (studentId, date, blockIdx, workbookId) => {
       const key = `${studentId}|${date}|${blockIdx}`
@@ -782,7 +958,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const next = { ...cur }
       if (on) next[key] = true
       else delete next[key]
-      set(s => ({ ...s, ttChecks: next })); cloud.setSetting('ttChecks', next)
+      set(s => ({ ...s, ttChecks: next })); cloud.mergeSettingKeys('ttChecks', on ? { [key]: true } : {}, on ? [] : [key])
 
       // 진도표 반영 — 연결 교재의 그날 세션 done. 그날 세션이 없으면 밀린(과거 미완) 세션을 완료 처리.
       if (!workbookId) return

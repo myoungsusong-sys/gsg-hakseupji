@@ -6,6 +6,7 @@ import AskProblemButton from './student/AskProblemButton'
 import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
+import { readSticky, writeSticky } from '../pages/student/common'
 import {
   newMastery, step, passConcept, pickForFloor, conceptBlanks,
   FLOOR_NAME, FLOOR_DESC, UP_STREAK, progressPercent,
@@ -54,10 +55,17 @@ export default function MasteryRunner({
   const [blankShown, setBlankShown] = useState(false)
 
   // 층이 바뀌면 그 층의 문제를 새로 뽑는다
+  // 🔴 2026-10-01: 새로고침·앱 재시작 뒤에도 **풀던 그 문제**로 돌아온다(같은 층·같은 진행 수일 때만).
+  const curKey = studentId && studentId !== 'me' ? `${studentId}:ladder-cur:${typeId}` : null
   useEffect(() => {
     setPicked(null); setRevealed(false); setInput(''); setSel(''); setPartVals([]); setJudged(null)
     if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); return }
-    setCurrent(pickForFloor(state, base, pool))
+    const kept = curKey ? readSticky<{ floor: number; n: number; pid: string }>(curKey) : undefined
+    const again = kept && kept.floor === state.floor && kept.n === state.servedIds.length
+      ? pool.find((p) => p.id === kept.pid) : undefined
+    const next = again ?? pickForFloor(state, base, pool)
+    setCurrent(next)
+    if (curKey && next) writeSticky(curKey, { floor: state.floor, n: state.servedIds.length, pid: next.id })
   }, [state.floor, state.servedIds.length, base, pool])   // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => { onChange?.(state) }, [state])          // eslint-disable-line react-hooks/exhaustive-deps

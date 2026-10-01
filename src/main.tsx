@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
+import CrashGuard from './components/CrashGuard'
 import { installErrorLog } from './lib/errorLog'
 import { isStaleChunkError } from './lib/staleChunk'
 
@@ -32,6 +33,6 @@ window.addEventListener('unhandledrejection', ev => {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <CrashGuard where="app" full><App /></CrashGuard>
   </StrictMode>,
 )

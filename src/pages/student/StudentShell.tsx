@@ -7,6 +7,7 @@ import { useStore } from '../../lib/store'
 import { clearLocalStudentId, getLocalStudentId, isStudentEmail, matchStudentByEmail, MGMT_KEY } from '../../lib/role'
 import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
 import FixItButton from '../../components/FixItButton'
+import CrashGuard from '../../components/CrashGuard'
 import { useChangelog, UpdateBanner } from '../../components/UpdateLog'
 import { StudentSelfCtx, tickStudySecond } from './common'
 import { todayKey } from '../../lib/dates'
@@ -35,9 +36,19 @@ export default function StudentShell() {
   const { entries: changelog, stale, unseen } = useChangelog()
   // 🔴 2026-09-29 명수쌤 「챌린지 자꾸 튕겨내고 뒤로 돌아가서 학생들 학습하다가 중지했어요」 —
   //    배포(변경 기록 한 줄)마다 20초 뒤 자동 새로고침이 돌아, 챌린지·풀이·승강제 도중 학생이 튕겨 나갔다
-  //    (그날 저녁 문항 배포 7번). → 자동 새로고침은 «학습 홈» 에 있을 때만. 풀이 중에는 배너만 띄우고 학생이 고른다.
+  //    (그날 저녁 문항 배포 7번). → 아래 10-01 수정으로 학생 기기의 자동 새로고침은 아예 없앴다.
   const loc = useLocation()
   const onHome = /^\/student\/?$/.test(loc.pathname)
+  // 🔴 2026-10-01 명수쌤 「앱 수정을 하면 이용하고 있는 학생들 화면이 처음으로 돌아가는 거 막아줘」 —
+  //    학생 기기는 배포로 **절대 저절로 새로고침하지 않는다**(홈에서도 20초 자동 새로고침을 뺐다).
+  //    새 버전은 ① 학생이 홈에서 [지금 새로고침]을 누르거나 ② 홈 화면에 둔 채 태블릿을 끄거나 다른 앱으로 갈 때
+  //    (= 아무것도 안 하고 있을 때) 조용히 받는다. 풀이·챌린지·승강제 중에는 배너도 띄우지 않는다.
+  useEffect(() => {
+    if (!stale || !onHome) return
+    const onHide = () => { if (document.visibilityState === 'hidden') location.reload() }
+    document.addEventListener('visibilitychange', onHide)
+    return () => document.removeEventListener('visibilitychange', onHide)
+  }, [stale, onHome])
 
   // 본인 판별: supabase 모드 = **세션 이메일이 유일한 기준** / 로컬 모드 = 로컬 학생 세션
   // ⚠️ 예전에는 로컬 학생 세션(localStorage)을 세션보다 먼저 봤다 → 앞 학생이 남긴 값 때문에
@@ -96,7 +107,7 @@ export default function StudentShell() {
   return (
     <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
-        {stale && <UpdateBanner key={onHome ? 'home' : 'busy'} auto={onHome} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
+        {stale && onHome && <UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
         {/* 🚨 이 태블릿 자리 주인과 로그인된 계정이 다르다 — 앞 학생 계정으로 채점되는 사고를 막는다 */}
         {wrongSeat && (
           <div className="flex flex-wrap items-center gap-3 bg-clay px-5 py-2.5 text-sm font-bold text-white">
@@ -138,11 +149,12 @@ export default function StudentShell() {
             </nav>
             <div className="grow" />
             <FixItButton app="student" synced={synced} who={me.name} appVersion={changelog[0]?.ts} />
-            <StudentHeaderExtras me={me} onLogout={logout} />
+            <CrashGuard where="student-header" quiet><StudentHeaderExtras me={me} onLogout={logout} /></CrashGuard>
           </div>
         </header>
         <main className="mx-auto w-full px-6 py-8">
-          <Outlet />
+          {/* 🛟 화면 오류가 나도 하얗게 지워지지 않게 — 머리(질문·화면이 이상해요 버튼)는 그대로 남는다 */}
+          <CrashGuard key={loc.pathname} where={loc.pathname}><Outlet /></CrashGuard>
         </main>
         <QnaArrivalToast unread={qna.unread} onPage={qna.onPage} name={me.name} />
       </div>

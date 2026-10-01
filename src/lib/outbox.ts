@@ -29,6 +29,10 @@ export type PendingOp =
   // 배정은 스냅샷 upsert(마지막 쓰기가 이김) 대신 명령으로 남긴다 — 보낼 때마다 서버 최신을
   // 읽어 병합하므로, 두 기기가 동시에 배정해도 서로를 지우지 않는다 (assignmentCmds.ts 머리말)
   | { kind: 'aops'; table: string; id: string; cmds: AssignmentCmd[]; at: string }
+  // 🔴 2026-10-01: 학생별 칸이 한 행(객체)에 모인 설정(masteries·ttChecks·reviewChecks·routineChecks)은
+  //    «바꾼 칸만» 보낸다 — 보낼 때 서버 최신을 읽어 그 칸만 고쳐 CAS 로 쓴다. 예전처럼 객체를 통째로 쓰면
+  //    승강제를 동시에 푸는 학생들이 서로의 진행을 옛 값으로 덮어써 «처음 단계로» 되돌아갔다.
+  | { kind: 'kmerge'; table: string; id: string; set: Record<string, unknown>; del: string[]; at: string }
 
 export interface OutboxStatus {
   pending: number        // 아직 못 올린 쓰기 건수
@@ -42,6 +46,19 @@ const keyOf = (table: string, id: string) => `${table}|${id}`
 
 // (테이블,id) 하나당 최신 것 하나만 남긴다 — upsert 라 마지막 쓰기가 이긴다
 const ops = new Map<string, PendingOp>()
+
+// 🔴 방금 올라간 쓰기도 잠깐 기억한다 (2026-10-01 「학생 화면이 처음으로 돌아가요」).
+//    읽기가 «쓰기 전에» 출발했다가 «쓰기가 끝난 뒤» 도착하면, 그 사이 ops 에서는 이미 빠져서
+//    덮어씌울 것이 없다 → 옛 값이 화면을 덮는다. 챌린지를 시작하자마자 그 배정이 지워져
+//    풀이 화면이 학습지 목록으로 튕기던 것이 이 경로다.
+//    → 읽기 출발 시각(since) 뒤에 확정된 쓰기는 그 읽기 결과 위에 한 번 더 덮는다.
+const RECENT_MS = 120_000
+const recent = new Map<string, { op: PendingOp; sentAt: number }>()
+function remember(k: string, op: PendingOp) {
+  const now = Date.now()
+  recent.set(k, { op, sentAt: now })
+  for (const [key, r] of recent) if (now - r.sentAt > RECENT_MS) recent.delete(key)
+}
 let overflow = false
 let failing = false
 let lastError: string | undefined
@@ -92,6 +109,7 @@ async function send(op: PendingOp): Promise<string | null> {
       return error ? error.message : null
     }
     if (op.kind === 'aops') return casMergeAssignments(op.cmds)
+    if (op.kind === 'kmerge') return casMerge(op.table, op.id, cur => mergeKeys(cur, op.set, op.del))
     const { error } = await supabase.from(op.table)
       .upsert({ id: op.id, data: op.data, updated_at: new Date().toISOString() })
     return error ? error.message : null
@@ -101,29 +119,38 @@ async function send(op: PendingOp): Promise<string | null> {
   }
 }
 
+/** 객체 설정값에 칸 단위 변경을 얹는다 — 몇 번을 다시 적용해도 결과가 같다(멱등) */
+export function mergeKeys(cur: unknown, set: Record<string, unknown>, del: string[]): Record<string, unknown> {
+  const out: Record<string, unknown> = { ...((cur && typeof cur === 'object' && !Array.isArray(cur)) ? cur as Record<string, unknown> : {}) }
+  for (const k of del) delete out[k]
+  Object.assign(out, set)
+  return out
+}
+
 /**
- * 배정 병합 저장 (CAS) — 서버 최신을 읽고 → 명령을 적용하고 → **읽었을 때의 updated_at
+ * 병합 저장 (CAS) — 서버 최신을 읽고 → 변경을 적용하고 → **읽었을 때의 updated_at
  * 그대로일 때만** 쓴다. 그 사이 다른 기기가 먼저 썼으면 0행 갱신이 되고, 다시 읽어 병합한다.
  * Postgres 가 행 잠금으로 갱신을 줄 세우므로 두 기기가 같은 순간에 써도 한쪽만 이기고,
- * 진 쪽은 이긴 쪽의 결과 **위에** 자기 명령을 다시 얹는다 — 어느 쪽 배정도 사라지지 않는다.
+ * 진 쪽은 이긴 쪽의 결과 **위에** 자기 변경을 다시 얹는다 — 어느 쪽 것도 사라지지 않는다.
+ * (처음엔 배정 전용이었다 — 2026-08-15 강리원 배정 유실. 2026-10-01 승강제 진행에도 쓴다)
  */
-async function casMergeAssignments(cmds: AssignmentCmd[]): Promise<string | null> {
+async function casMerge(table: string, id: string, apply: (cur: unknown) => unknown): Promise<string | null> {
   if (!supabase) return '클라우드 연결 없음'
-  let lastErr = '배정 저장 경합 — 재시도 초과'
+  let lastErr = '저장 경합 — 재시도 초과'
   for (let attempt = 0; attempt < 6; attempt++) {
     if (attempt > 0) await new Promise(r => setTimeout(r, 150 + Math.floor(Math.random() * 300) * attempt))
     const { data: row, error: readErr } = await supabase
-      .from(ASSIGN_TABLE).select('data, updated_at').eq('id', ASSIGN_KEY).maybeSingle()
+      .from(table).select('data, updated_at').eq('id', id).maybeSingle()
     if (readErr) return readErr.message
-    const cur = ((row?.data as { value?: Assignment[] } | null)?.value) ?? []
-    const payload = { data: { __id: ASSIGN_KEY, value: applyAssignmentCmds(cur, cmds) }, updated_at: new Date().toISOString() }
+    const cur = ((row?.data as { value?: unknown } | null)?.value)
+    const payload = { data: { __id: id, value: apply(cur) }, updated_at: new Date().toISOString() }
     if (!row) {
-      const { error } = await supabase.from(ASSIGN_TABLE).insert({ id: ASSIGN_KEY, ...payload })
+      const { error } = await supabase.from(table).insert({ id, ...payload })
       if (!error) return null
       if (error.code !== '23505') return error.message   // 23505(중복키) = 다른 기기가 방금 만듦 → 재시도
       lastErr = error.message
     } else {
-      const base = supabase.from(ASSIGN_TABLE).update(payload).eq('id', ASSIGN_KEY)
+      const base = supabase.from(table).update(payload).eq('id', id)
       const { data: hit, error } = await (row.updated_at == null
         ? base.is('updated_at', null)
         : base.eq('updated_at', row.updated_at as string)).select('id')
@@ -132,6 +159,10 @@ async function casMergeAssignments(cmds: AssignmentCmd[]): Promise<string | null
     }
   }
   return lastErr
+}
+
+function casMergeAssignments(cmds: AssignmentCmd[]): Promise<string | null> {
+  return casMerge(ASSIGN_TABLE, ASSIGN_KEY, cur => applyAssignmentCmds((cur as Assignment[] | undefined) ?? [], cmds))
 }
 
 // 2초 → 5 → 15 → 30 → 60초, 그 뒤로는 60초마다
@@ -155,6 +186,7 @@ export async function flush(): Promise<boolean> {
         return false                       // 하나 막히면 순서를 지키려 여기서 멈춘다
       }
       // 보내는 사이에 같은 칸에 더 새 것이 들어왔으면 그건 남긴다
+      remember(k, op)
       if (ops.get(k) === op) ops.delete(k)
     }
     fails = 0; failing = false; lastError = undefined
@@ -168,6 +200,7 @@ async function enqueueAndSend(k: string, op: PendingOp): Promise<boolean> {
   persist(); emit()
   const err = await send(op)
   if (!err) {
+    remember(k, op)
     if (ops.get(k) === op) { ops.delete(k); persist() }
     if (ops.size === 0) { fails = 0; failing = false; lastError = undefined }
     emit()
@@ -198,12 +231,44 @@ export async function writeAssignmentOps(cmds: AssignmentCmd[]): Promise<boolean
 }
 
 /**
+ * 객체 설정의 칸 몇 개만 바꾼다(위 kmerge). 같은 칸에 아직 못 보낸 변경이 있으면 **이어 붙인다** —
+ * 오프라인에 여러 번 눌러도 마지막 상태로 모두 올라간다.
+ */
+export async function writeKeyMerge(table: string, id: string, set: Record<string, unknown>, del: string[]): Promise<boolean> {
+  const k = keyOf(table, id)
+  const prev = ops.get(k)
+  const at = new Date().toISOString()
+  let op: PendingOp
+  if (prev?.kind === 'kmerge') {
+    const s2 = { ...prev.set }
+    for (const d of del) delete s2[d]
+    Object.assign(s2, set)
+    const d2 = [...new Set([...prev.del, ...del])].filter(d => !(d in set))
+    op = { ...prev, set: s2, del: d2, at }
+  } else if (prev?.kind === 'upsert') {
+    // 옛 방식(통째 쓰기)이 아직 대기 중이면 그 위에 얹어 통째 쓰기로 — 대기분을 잃지 않는다
+    const d = prev.data as { __id?: string; value?: unknown }
+    op = { ...prev, data: { __id: id, value: mergeKeys(d?.value, set, del) }, at }
+  } else {
+    op = { kind: 'kmerge', table, id, set, del, at }
+  }
+  return enqueueAndSend(k, op)
+}
+
+/**
  * 🔴 클라우드에서 읽어 온 행 위에 아직 못 올린 대기분을 덮어씌운다.
  * 이게 없으면 큐에 잘 담아 놓고도 화면에서는 채점이 사라진 것처럼 보인다(위 ③).
  */
-export function applyTo(table: string, rows: { id: string; data: unknown }[]): { id: string; data: unknown }[] {
-  if (ops.size === 0) return rows
-  const mine = [...ops.values()].filter(o => o.table === table)
+//   since: 이 읽기가 출발한 시각(ms). 그 뒤에 확정된 쓰기(recent)도 덮는다 — 위 recent 설명.
+//   only : 일부 행만 다시 읽은 경우 그 id 들에만 덮는다(다른 행을 «새로 생긴 것»처럼 끼워 넣지 않게).
+export function applyTo(
+  table: string, rows: { id: string; data: unknown }[], since?: number, only?: Set<string>,
+): { id: string; data: unknown }[] {
+  const late = since == null ? [] : [...recent.values()]
+    .filter(r => r.op.table === table && r.sentAt >= since && (!only || only.has(r.op.id))).map(r => r.op)
+  const pend = [...ops.values()].filter(o => o.table === table && (!only || only.has(o.id)))
+  // 늦게 확정된 것 먼저, 아직 못 올린 것(더 새것) 나중 — 같은 칸이면 대기분이 이긴다
+  const mine = [...late, ...pend]
   if (mine.length === 0) return rows
   const byId = new Map(rows.map(r => [r.id, r]))
   for (const o of mine) {
@@ -212,6 +277,11 @@ export function applyTo(table: string, rows: { id: string; data: unknown }[]): {
       // 배정 명령은 덮어쓰기가 아니라 클라우드 값 위에 적용 — 다른 기기의 배정을 화면에서도 안 지운다
       const cur = ((byId.get(o.id)?.data as { value?: Assignment[] } | undefined)?.value) ?? []
       byId.set(o.id, { id: o.id, data: { __id: o.id, value: applyAssignmentCmds(cur, o.cmds) } })
+    }
+    else if (o.kind === 'kmerge') {
+      // 칸 변경도 클라우드 값 위에 얹는다 — 다른 학생의 칸을 화면에서 안 지운다
+      const cur = (byId.get(o.id)?.data as { value?: unknown } | undefined)?.value
+      byId.set(o.id, { id: o.id, data: { __id: o.id, value: mergeKeys(cur, o.set, o.del) } })
     }
     else byId.set(o.id, { id: o.id, data: o.data })
   }

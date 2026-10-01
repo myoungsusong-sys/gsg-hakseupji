@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import type { GradeResult, Grading, Problem } from '../../types'
+import type { GradeResult, Grading, Problem, Worksheet } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { gradeWithRubric, isMachineGradable, requestAiQuiz, type AiQuiz } from '../../lib/aiGrade'
 import * as pencil from '../../lib/pencilSound'
@@ -28,7 +28,7 @@ import AskProblemButton from '../../components/student/AskProblemButton'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
-import { clearDraft, readDraft, writeDraft, AnswerText, isImgAnswer , examOf, examGate, examLeftSec, examStartedAt, markExamStart, clearExamStart, fmtClock } from './common'
+import { clearDraft, readDraft, writeDraft, readSolveIdx, writeSolveIdx, AnswerText, isImgAnswer , examOf, examGate, examLeftSec, examStartedAt, markExamStart, clearExamStart, fmtClock } from './common'
 import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
 import { pushReplay, type ReplaySession } from '../../lib/replay'
 
@@ -76,7 +76,13 @@ export default function StudentSolve() {
   const [openSolution, setOpenSolution] = useState<Set<string>>(new Set())
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
 
-  const ws = worksheets.find(w => w.id === wsId && !w.deletedAt)
+  // 🔴 2026-10-01 「학생 화면이 처음으로 돌아가요」 — 한 번 열린 학습지는 자료가 잠깐 비어도(다시 받는 중·
+  //    저장 직후 옛 값이 먼저 도착) 목록으로 내쫓지 않는다. 예전엔 그 한순간에 <Navigate> 로 튕겼다.
+  const seenWs = useRef<{ id?: string; ws?: Worksheet; mine?: boolean }>({})
+  if (seenWs.current.id !== wsId) seenWs.current = { id: wsId }
+  const wsNow = worksheets.find(w => w.id === wsId && !w.deletedAt)
+  if (wsNow) seenWs.current.ws = wsNow
+  const ws = wsNow ?? seenWs.current.ws
   // 학습지별 공개 설정(출제할 때 고른 것)이 전역 설정보다 우선한다 — 「문제만 내보내기」
   const asgReveal = assignments.find(a => a.worksheetId === wsId && a.studentId === me.id)?.reveal
   const cfg = {
@@ -86,7 +92,9 @@ export default function StudentSolve() {
     showAnswerBefore: asgReveal?.answer === false ? false : gcfg.showAnswerBefore,
     showSolutionBefore: asgReveal?.solution === false ? false : gcfg.showSolutionBefore,
   }
-  const mine = !!ws && assignments.some(a => a.worksheetId === ws.id && a.studentId === me.id)
+  const mineNow = !!ws && assignments.some(a => a.worksheetId === ws.id && a.studentId === me.id)
+  if (mineNow) seenWs.current.mine = true
+  const mine = mineNow || !!seenWs.current.mine
 
   // ── ⏱ 시험 모드 ────────────────────────────────────────────────
   // 시험으로 출제된 학습지면 남은 시간을 재고, 0이 되면 그때까지 쓴 답으로 자동 제출한다.
@@ -131,7 +139,7 @@ export default function StudentSolve() {
 
   const [answers, setAnswers] = useState<Record<string, string>>(() => (wsId && readDraft(wsId)?.answers) || {})
   const [savedAt, setSavedAt] = useState<string | null>(() => (wsId && readDraft(wsId)?.at) || null)
-  const [idx, setIdx] = useState(0)
+  const [idx, setIdx] = useState(() => (wsId ? readSolveIdx(me.id, wsId) : 0))
   const [statusOn, setStatusOn] = useState(false)   // 문제 풀이 현황 토글
   const [quick, setQuick] = useState(false)         // ≡ 빠른채점 모달
 
@@ -163,9 +171,12 @@ export default function StudentSolve() {
     const d = wsId ? readDraft(wsId) : null
     setAnswers(d?.answers ?? {})
     setSavedAt(d?.at ?? null)
-    setIdx(0); setInks({}); setRedos({}); setSecs({})
+    setIdx(wsId ? readSolveIdx(me.id, wsId) : 0); setInks({}); setRedos({}); setSecs({})
     runStart.current = null; runPid.current = null
   }, [wsId])
+
+  // 보던 문항 번호를 기억 — 새로고침해도 1번으로 돌아가지 않는다 (제출하면 지운다)
+  useEffect(() => { if (wsId) writeSolveIdx(me.id, wsId, idx) }, [me.id, wsId, idx])
 
   // 진행 중 구간을 secs에 확정(문항 이동·답 입력·화면 이탈 시 호출)
   function flushRun() {
@@ -493,6 +504,7 @@ export default function StudentSolve() {
       if (!(await pushReplay(rep))) await pushReplay(rep)
     }
     clearDraft(ws!.id)
+    writeSolveIdx(me.id, ws!.id, 0)
     clearExamStart(ws!.id)          // ⏱ 시험 시계 초기화 — 재응시(허용된 경우)는 새 시계로 잰다
     if (auto) alert('시험 시간이 끝나 자동으로 제출했어요.')
     nav(`/student/result/${ws!.id}`, { replace: true })

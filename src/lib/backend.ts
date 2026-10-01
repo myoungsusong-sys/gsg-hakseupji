@@ -84,6 +84,7 @@ const PAGE_OF: Record<string, number> = { [T.gradings]: 200 }
 
 async function rows(table: string): Promise<{ rows: { id: string; data: unknown }[]; ok: boolean }> {
   if (!supabase) return { rows: [], ok: true }
+  const startedAt = Date.now()   // 이 뒤에 확정된 내 쓰기는 결과 위에 다시 덮는다 (outbox.applyTo)
   const PAGE = PAGE_OF[table] ?? 1000
   const out: { id: string; data: unknown }[] = []
   for (let from = 0; ; from += PAGE) {
@@ -104,8 +105,86 @@ async function rows(table: string): Promise<{ rows: { id: string; data: unknown 
     out.push(...batch.map((r: { id: string; data: unknown }) => ({ id: r.id, data: r.data })))
     if (batch.length < PAGE) break
   }
-  return { rows: outbox.applyTo(table, out), ok: true }
+  return { rows: outbox.applyTo(table, out, startedAt), ok: true }
 }
+
+// 설정 테이블에서 실시간으로 다시 읽지 않는 행 — 전용 API 가 따로 읽는다(위 rows 의 제외 목록과 같다)
+const SKIP_SETTING = /^(live_|replay_|rubric_|qna_|wcfg_)/
+
+// ── 🔴 바뀐 줄만 다시 받기 (2026-10-01 「학습지앱이 중간에 먹통」) ─────────────────
+// 예전에는 어느 기기에서든 무엇 하나 저장되면 **접속한 모든 기기가 9개 표 전체를** 다시 받았다.
+// 수업 중에는 학생이 한 문제 저장할 때마다 → 반 전체 태블릿이 다른 학생 풀이 사진까지 든
+// 채점 표 전체를 다시 받고(10초에 한 번씩), 화면 전체를 다시 그리고, 그걸 통째로 기기에 저장했다.
+// → 실시간 알림에 실려 오는 (표, id) 로 **그 줄만** 다시 읽어 끼워 넣는다.
+//   표 전체 다시 받기는 앱을 열 때 · 실시간 연결이 끊겼다 이어질 때 · 실패했을 때만.
+//   (updated_at 으로 «언제 이후 바뀐 것» 을 묻는 방식은 쓰지 않는다 — updated_at 은 각 기기 시계로
+//    찍히는데 태블릿 시계가 몇 분씩 틀린 경우가 있어 바뀐 줄을 조용히 놓친다)
+
+/** 표 이름 → 화면 상태 칸 */
+export const FIELD_OF: Record<string, keyof CloudData> = {
+  [T.problems]: 'customProblems', [T.worksheets]: 'worksheets', [T.lists]: 'myLists',
+  [T.workbooks]: 'workbooks', [T.wbItems]: 'wbItems', [T.students]: 'students',
+  [T.gradings]: 'gradings', [T.dailyNotes]: 'dailyNotes',
+}
+
+/** 설정 행 id → 없을 때의 값 (loadAll 의 settingsMap 기본값과 같다) */
+const SETTING_DEFAULT: Partial<Record<keyof CloudData, unknown>> = {
+  favorites: [], diffMatrix: null, assignments: [], dailyConfigs: {}, dailyBooks: {}, counsels: [],
+  studentAppConfig: null, klassOrder: [], academyProfile: null, savedReports: [], myBooks: [], uploads: [],
+  sheetTemplates: [], lecturePlans: [], solveFeedbacks: [], bugReports: [], teachers: [], branches: [],
+  ttChecks: {}, reviewChecks: {}, routineChecks: {}, schoolExams: [], masteries: {}, schoolBooks: {},
+  pointEntries: [], pointSettlements: [],
+}
+
+/** 일부만 바뀐 클라우드 자료. rows: 표마다 새로 온 줄(data)·사라진 id. settings: 바뀐 설정 칸만 */
+export interface CloudPatch {
+  rows: Partial<Record<keyof CloudData, { up: unknown[]; gone: string[] }>>
+  settings: Partial<CloudData>
+}
+
+function addSettingRows(patch: CloudPatch, got: { id: string; data: unknown }[], asked?: Set<string>) {
+  const seen = new Set<string>()
+  for (const r of got) {
+    seen.add(r.id)
+    const k = r.id as keyof CloudData
+    if (!(k in SETTING_DEFAULT)) continue
+    const d = r.data as { __id?: string; value?: unknown } | null
+    ;(patch.settings as Record<string, unknown>)[k] = (d && d.__id ? d.value : undefined) ?? SETTING_DEFAULT[k]
+  }
+  // 물어봤는데 안 온 행 = 지워졌다 → 기본값 (loadAll 이 그 행이 없을 때 주는 값과 같다)
+  if (asked) for (const id of asked) {
+    const k = id as keyof CloudData
+    if (!seen.has(id) && k in SETTING_DEFAULT) (patch.settings as Record<string, unknown>)[k] = SETTING_DEFAULT[k]
+  }
+}
+
+/** 지정한 줄들만 다시 읽는다. 하나라도 실패하면 null — 호출부는 표 전체 다시 받기로 넘어간다. */
+export async function loadChanged(changed: Map<string, Set<string>>): Promise<CloudPatch | null> {
+  if (!supabase) return null
+  const patch: CloudPatch = { rows: {}, settings: {} }
+  for (const [table, idSet] of changed) {
+    const ids = [...idSet].filter(id => !(table === T.settings && SKIP_SETTING.test(id)))
+    if (!ids.length) continue
+    const startedAt = Date.now()
+    const got: { id: string; data: unknown }[] = []
+    for (let i = 0; i < ids.length; i += 100) {
+      const { data, error } = await supabase.from(table).select('id, data').in('id', ids.slice(i, i + 100))
+      if (error) { console.warn('[부분 갱신 실패]', table, error.message); return null }
+      for (const r of (data ?? []) as { id: string; data: unknown }[]) got.push({ id: r.id, data: r.data })
+    }
+    const asked = new Set(ids)
+    const rowsNow = outbox.applyTo(table, got, startedAt, asked)
+    if (table === T.settings) { addSettingRows(patch, rowsNow, asked); continue }
+    const field = FIELD_OF[table]
+    if (!field) continue
+    const present = new Set(rowsNow.map(r => r.id))
+    patch.rows[field] = { up: rowsNow.map(r => r.data), gone: ids.filter(id => !present.has(id)) }
+  }
+  return patch
+}
+
+/** 실시간 알림 한 건 — 어느 표의 어느 줄이 바뀌었나. studentId 는 채점 줄일 때 알림에 실려 온 값(없을 수 있다) */
+export interface RowChange { table: string; id: string | null; studentId?: string }
 
 /** 읽기에 실패한 테이블 목록 — 호출부(store)는 여기 든 표를 **덮어쓰지 않는다.** */
 export type LoadFail = Partial<Record<
@@ -201,6 +280,12 @@ export const cloud = {
     if (!supabase) return true
     return outbox.write({ kind: 'upsert', table: T.settings, id: key, data: { __id: key, value }, at: new Date().toISOString() })
   },
+  // 🔴 학생별 칸이 한 행에 모인 객체 설정(masteries·ttChecks·reviewChecks·routineChecks)은 바꾼 칸만 —
+  //    서버 최신에 병합(CAS)해 저장한다. 통째로 쓰면 동시에 쓰는 학생끼리 서로를 지운다 (outbox kmerge).
+  async mergeSettingKeys(key: string, set: Record<string, unknown>, del: string[] = []): Promise<boolean> {
+    if (!supabase) return true
+    return outbox.writeKeyMerge(T.settings, key, set, del)
+  },
   // 🔴 배정(assignments)만은 setSetting(통짜 배열, 마지막 쓰기가 이김)을 쓰면 안 된다 —
   //    두 기기가 동시에 배정하면 한쪽이 통째로 사라진다(2026-08-15 강리원 배정 유실).
   //    명령을 넘기면 서버 최신에 병합(CAS)해 저장한다. 자세한 사정은 lib/assignmentCmds.ts.
@@ -254,7 +339,8 @@ export const cloud = {
   // 다른 기기의 변경을 실시간 수신 → onChange(전체 리로드)
   // ⚠️ 실시간 풀이 스냅샷(live_*)·풀이 녹화(replay_*)는 초 단위로 upsert되므로
   //    앱 전체 리로드를 유발하지 않도록 무시한다 (전용 폴링/조회로만 읽는다).
-  subscribe(onChange: () => void) {
+  // 🔴 2026-10-01: 알림마다 «어느 표의 어느 줄»인지 넘긴다 — 받는 쪽(store)이 그 줄만 다시 읽는다.
+  subscribe(onChange: (c: RowChange) => void, onResync?: () => void, onSubscribed?: () => void) {
     const sb = supabase
     if (!sb) return () => {}
     const ch = sb.channel('hj-sync')
@@ -263,10 +349,17 @@ export const cloud = {
         const id = payload?.new?.id ?? payload?.old?.id
         // qna_* (문제 질문함)도 같은 이유로 무시한다 — 질문/해설이 오갈 때마다 전 기기가
         // 9개 테이블을 다시 받으면 egress 가 터진다(2026-09-02 실사고). 질문함은 자체 폴링으로 읽는다.
-        if (t === T.settings && typeof id === 'string' && (id.startsWith('live_') || id.startsWith('replay_') || id.startsWith('rubric_') || id.startsWith('qna_') || id.startsWith('wcfg_'))) return
-        onChange()
+        if (t === T.settings && typeof id === 'string' && SKIP_SETTING.test(id)) return
+        const sid = payload?.new?.data?.studentId
+        onChange({ table: t, id: typeof id === 'string' ? id : null, studentId: typeof sid === 'string' ? sid : undefined })
       })
-    ch.subscribe()
+    // onSubscribed(처음 붙음) · onResync(끊겼다가 다시 붙음 — 그 사이 알림을 놓쳤을 수 있다)
+    let joined = false
+    ch.subscribe((status: string) => {
+      if (status !== 'SUBSCRIBED') return
+      if (joined) onResync?.(); else onSubscribed?.()
+      joined = true
+    })
     return () => { sb.removeChannel(ch) }
   },
 }
