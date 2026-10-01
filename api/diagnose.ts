@@ -644,49 +644,6 @@ async function adminChat(b: any, res: any, key: string) {
   }
 }
 
-// 📏 임시 계측 창구 (2026-10-01 「학습지앱 먹통」 — 학생 기기가 실제로 얼마를 받는지 재려고).
-// 서버가 이미 가진 키로 표마다 줄 수·바이트만 세어 **숫자만** 돌려준다(이름·답안·id 없음).
-// 키는 서버 밖으로 나가지 않는다. 오늘 21:00(KST)이 지나면 저절로 닫힌다 — 재고 나면 이 블록을 지운다.
-const SIZE_REPORT_UNTIL = Date.parse('2026-10-01T21:00:00+09:00')
-async function sizeReport(b: any, res: any) {
-  if (Date.now() > SIZE_REPORT_UNTIL) { res.status(410).json({ error: '닫힌 창구' }); return }
-  const TABLES = ['hj_problems', 'hj_worksheets', 'hj_lists', 'hj_workbooks', 'hj_wb_items', 'hj_students', 'hj_gradings', 'hj_daily_notes', 'hj_settings']
-  const table = String(b.table ?? '')
-  if (!TABLES.includes(table)) { res.status(400).json({ error: 'table' }); return }
-  const t0 = Date.now()
-  const PAGE = table === 'hj_gradings' ? 200 : 1000
-  const SKIP = /^(live_|replay_|rubric_|qna_|wcfg_)/
-  let rows = 0, bytes = 0, maxRow = 0, imgBytes = 0, withImg = 0, skipRows = 0, skipBytes = 0
-  const perStudent = new Map<string, number>()
-  const settingSizes: Record<string, number> = {}
-  for (let from = 0; ; from += PAGE) {
-    const r = await sbRest(`/rest/v1/${table}?select=id,data&order=id.asc&offset=${from}&limit=${PAGE}`)
-    if (!r.ok) { res.status(502).json({ error: `읽기 실패 ${r.status}`, rows, bytes }); return }
-    const text = await r.text()
-    const batch = JSON.parse(text) as { id: string; data: any }[]
-    for (const row of batch) {
-      const n = JSON.stringify(row).length
-      if (table === 'hj_settings' && SKIP.test(row.id)) { skipRows++; skipBytes += n; continue }
-      rows++; bytes += n; if (n > maxRow) maxRow = n
-      if (table === 'hj_settings') settingSizes[row.id] = n
-      if (table === 'hj_gradings') {
-        let img = 0
-        for (const x of row.data?.results ?? []) if (typeof x?.workImg === 'string') img += x.workImg.length
-        if (img) { withImg++; imgBytes += img }
-        const sid = String(row.data?.studentId ?? '?')
-        perStudent.set(sid, (perStudent.get(sid) ?? 0) + n)
-      }
-    }
-    if (batch.length < PAGE || Date.now() - t0 > 50_000) break
-  }
-  const per = [...perStudent.values()].sort((a, b) => b - a)
-  res.status(200).json({
-    table, rows, bytes, maxRow, ms: Date.now() - t0,
-    ...(table === 'hj_gradings' ? { withImg, imgBytes, students: per.length, perStudentTop5: per.slice(0, 5), perStudentMedian: per[Math.floor(per.length / 2)] ?? 0 } : {}),
-    ...(table === 'hj_settings' ? { skipRows, skipBytes, bigKeys: Object.entries(settingSizes).filter(([k]) => /^[A-Za-z]+$/.test(k)).sort((a, b) => b[1] - a[1]).slice(0, 15) } : {}),
-  })
-}
-
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'POST only' }); return }
 
@@ -702,7 +659,6 @@ export default async function handler(req: any, res: any) {
   if (typeof pre?.action === 'string' && pre.action.startsWith('qna-')) {
     await handleQna(pre, res); return
   }
-  if (pre?.action === 'size-report') { await sizeReport(pre, res); return }
   if (pre?.action === 'chat') {
     const who = await chatCaller(req)
     if (!who.ok) { res.status(who.code).json({ error: who.error }); return }

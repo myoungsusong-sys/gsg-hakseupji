@@ -12,7 +12,7 @@ import { loadPool } from '../data/pool'
 import { coursesForWorksheet, defaultCurriculumForGrade } from '../data/curriculum'
 import { useAuthEmail } from './auth'
 import { isStudentEmail, matchStudentByEmail } from './role'
-import { cloud, loadAll, loadChanged, noteId, type CloudData, type CloudPatch, type LoadFail, type RowChange } from './backend'
+import { cloud, loadAll, loadChanged, loadStudentsOnly, noteId, type CloudData, type CloudPatch, type LoadFail, type RowChange } from './backend'
 import { ALL, setBranch, useBranchScope } from './branch'
 
 const LS_KEY = 'gsg-hakseupji-v1'
@@ -614,6 +614,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     let lastFullAt = Date.now()
     let hiddenAt = 0
 
+    // 학생 기기면 «나»의 id — 전체 받기 때 채점은 본인 것만 받는다. 못 찾으면 null(예전처럼 전부)
+    const myIdForLoad = async (): Promise<string | null> => {
+      const email = studentEmailRef.current
+      if (!email) return null
+      const known = matchStudentByEmail(stateRef.current.students, email)?.id
+      if (known) return known
+      const list = await loadStudentsOnly()
+      return list ? (matchStudentByEmail(list, email)?.id ?? null) : null
+    }
     const schedule = () => {
       if (timer || !alive || !ready) return
       const wait = needFull ? Math.max(BURST_MS, FULL_GAP_MS - (Date.now() - lastFullAt)) : BURST_MS
@@ -627,7 +636,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       try {
         if (needFull) {
           needFull = false; dirty.clear(); lastFullAt = Date.now()
-          const r = await loadAll()
+          const r = await loadAll({ gradingsOf: await myIdForLoad() })
           if (!r || !alive) return
           setState(prev => slimRef.current(fromCloud(r, prev)))
           setLoadFail(Object.keys(r.__failed).length ? r.__failed : null)
@@ -703,7 +712,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       await Promise.race([joined, new Promise(res => setTimeout(res, 2_500))])
       if (!alive) return
       lastFullAt = Date.now()
-      const remote = await loadAll()
+      const remote = await loadAll({ gradingsOf: await myIdForLoad() })
       if (remote && alive) {
         const has = remote.customProblems.length || remote.worksheets.length || remote.students.length ||
           remote.workbooks.length || remote.wbItems.length || remote.gradings.length ||

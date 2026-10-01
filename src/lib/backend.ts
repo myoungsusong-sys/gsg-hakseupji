@@ -82,7 +82,7 @@ export function noteId(n: DailyNote): string {
  */
 const PAGE_OF: Record<string, number> = { [T.gradings]: 200 }
 
-async function rows(table: string): Promise<{ rows: { id: string; data: unknown }[]; ok: boolean }> {
+async function rows(table: string, onlyStudent?: string | null): Promise<{ rows: { id: string; data: unknown }[]; ok: boolean }> {
   if (!supabase) return { rows: [], ok: true }
   const startedAt = Date.now()   // 이 뒤에 확정된 내 쓰기는 결과 위에 다시 덮는다 (outbox.applyTo)
   const PAGE = PAGE_OF[table] ?? 1000
@@ -94,6 +94,9 @@ async function rows(table: string): Promise<{ rows: { id: string; data: unknown 
     // 🔴 qna_*(문제 질문함)·wcfg_*(질문 워커 설정)도 뺀다 (2026-09-22). 빠져 있어서 학생앱을 켤 때마다
     //    «모든 학생의 질문»(이름·질문·사진 주소·학생 맥락)을 같이 받고 있었다 — 개인정보이자 egress.
     //    질문함은 lib/qna.ts 가 «본인 것만 + limit» 으로 따로 읽는다.
+    // 🔴 2026-10-01 실측: 앱을 열 때 받는 9.1MB 중 8.66MB(95%)가 채점 표(11,610건·67명)였다.
+    //    학생 화면은 본인 채점만 쓴다 → 학생 기기는 본인 것만 받는다(중앙값 89KB).
+    if (table === T.gradings && onlyStudent) q = q.eq('data->>studentId', onlyStudent)
     if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%').not('id', 'like', 'rubric_%')
       .not('id', 'like', 'qna_%').not('id', 'like', 'wcfg_%')
     const { data, error } = await q
@@ -183,6 +186,12 @@ export async function loadChanged(changed: Map<string, Set<string>>): Promise<Cl
   return patch
 }
 
+/** 학생 명부만 읽는다 — 학생 기기가 «나»를 알아야 채점을 본인 것만 받을 수 있다(첫 실행·기기 백업이 없을 때) */
+export async function loadStudentsOnly(): Promise<Student[] | null> {
+  const r = await rows(T.students)
+  return r.ok ? r.rows.map(x => x.data as Student) : null
+}
+
 /** 실시간 알림 한 건 — 어느 표의 어느 줄이 바뀌었나. studentId 는 채점 줄일 때 알림에 실려 온 값(없을 수 있다) */
 export interface RowChange { table: string; id: string | null; studentId?: string }
 
@@ -191,9 +200,10 @@ export type LoadFail = Partial<Record<
   'customProblems' | 'worksheets' | 'myLists' | 'workbooks' | 'wbItems' |
   'students' | 'gradings' | 'dailyNotes' | 'settings', true>>
 
-export async function loadAll(): Promise<(CloudData & { __failed: LoadFail }) | null> {
+/** gradingsOf: 학생 기기면 그 학생 id — 채점 표는 그 학생 것만 읽는다(없으면 전부) */
+export async function loadAll(opts?: { gradingsOf?: string | null }): Promise<(CloudData & { __failed: LoadFail }) | null> {
   if (!supabase) return null
-  const raw = await Promise.all(ALL_TABLES.map(rows))
+  const raw = await Promise.all(ALL_TABLES.map(t => rows(t, opts?.gradingsOf)))
   const [problems, worksheets, lists, workbooks, wbItems, students, gradings, dailyNotes, settings] =
     raw.map(rs => rs.rows.map(r => r.data as any))
   // 어느 표가 실패했나 — ALL_TABLES 순서와 아래 이름 순서가 같아야 한다
