@@ -257,6 +257,14 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
           if (localKey) writeSticky(localKey, st)
           if (startOverride[typeId]) setStartOverride((m) => { const n = { ...m }; delete n[typeId]; return n })
         }}
+        skipLabel={scoped && nextScoped(typeId) ? '다음 오답 유형으로 →' : '목록으로'}
+        onSkip={() => {
+          // 낼 문항이 0인 유형 — 이번 범위에서 빼고(정복 아님) 다음 오답 유형으로, 없으면 목록으로 (명수쌤 2026-10-02)
+          lastState.current = null
+          setSkipped((s) => (s.has(typeId) ? s : new Set(s).add(typeId)))
+          const nx = scoped ? nextScoped(typeId) : null
+          if (nx) pickFromQueue(nx); else setTypeId(null)
+        }}
         onClose={() => {
           const mastered = !!lastState.current?.mastered
           lastState.current = null

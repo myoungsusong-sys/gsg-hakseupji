@@ -26,7 +26,7 @@ import {
  */
 
 export default function MasteryRunner({
-  typeId, typeName, base, pool, studentId, initial, onChange, onClose,
+  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel,
 }: {
   typeId: string
   typeName: string
@@ -37,6 +37,9 @@ export default function MasteryRunner({
   initial?: MasteryState
   onChange?: (s: MasteryState) => void
   onClose?: () => void
+  /** 이 유형에 낼 문항이 아예 없을 때 — 다음 오답 유형(범위 모드) 또는 목록으로. 정복으로 치지 않는다 */
+  onSkip?: () => void
+  skipLabel?: string
 }) {
   // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
   const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 2))
@@ -196,8 +199,15 @@ export default function MasteryRunner({
       {msg && <Banner event={event} msg={msg} />}
       {!current ? (
         <div className="py-10 text-center text-sm text-ink2">
-          이 단계에 낼 문제가 더 없습니다.
-          <div className="mt-2 text-xs">문제은행에 이 유형·난이도 문항이 부족합니다.</div>
+          이 유형은 아직 풀 문제가 없습니다.
+          <div className="mt-2 text-xs">문제은행에 이 유형 문항이 들어오면 다시 이어서 할 수 있어요.</div>
+          {/* 🔴 2026-10-02 명수쌤: 낼 문제가 0이면 빈 화면 대신 다음으로 — 범위 모드면 다음 오답 유형, 아니면 목록. 정복으로 치지 않는다 */}
+          {onSkip && (
+            <button type="button" onClick={onSkip}
+              className="mt-4 rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-110">
+              {skipLabel ?? '다음 오답 유형으로 →'}
+            </button>
+          )}
         </div>
       ) : (
         <div>
