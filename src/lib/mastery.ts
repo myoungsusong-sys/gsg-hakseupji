@@ -286,9 +286,17 @@ export function pickForFloor(
   // 세트에 없으면 같은 유형에서 난이도로 직접 고른다
   const want = clampDiffOfFloor(state.floor, base.diff)
   const cands = pool.filter((x) => x.typeId === base.typeId && !used.has(x.id))
-  return cands.find((x) => x.diff === want)
+  const fresh = cands.find((x) => x.diff === want)
     ?? cands.sort((a, b) => Math.abs(a.diff - want) - Math.abs(b.diff - want))[0]
-    ?? null
+  if (fresh) return fresh
+  // 🔴 2026-10-02 최다혜 학생 «승강제가 멈춤»: 문항이 적은 유형에서 기본↔개념을 오가다 새 문제가 바닥나면
+  //    「이 단계에 낼 문제가 더 없습니다」에서 갈 곳이 없었다(맥북프로 세션 재현). 멈추지 않고 예전에 낸 문제를
+  //    다시 낸다 — 난이도가 가까운 것, 그중 가장 오래전에 낸 것부터. 방금 낸 2문제는 빼서 같은 문제가 연달아 나오지 않게.
+  const recent = new Set(state.servedIds.slice(-2))
+  const order = new Map(state.servedIds.map((id, i) => [id, i] as const))
+  const again = pool.filter((x) => x.typeId === base.typeId && !recent.has(x.id))
+  again.sort((a, b) => Math.abs(a.diff - want) - Math.abs(b.diff - want) || (order.get(a.id) ?? -1) - (order.get(b.id) ?? -1))
+  return again[0] ?? pool.find((x) => x.typeId === base.typeId) ?? null
 }
 
 function clampDiffOfFloor(floor: Floor, baseDiff: Diff): Diff {
