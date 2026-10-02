@@ -2532,17 +2532,17 @@ function AnswerRevealSettings() {
             사용
           </label>
         </div>
-        {/* 📘 자동 오답학습지 (기본 사용) */}
+        {/* 🪜 제출 즉시 오답 승강제 (기본 사용) — 2026-10-02 명수쌤 «모든 오답은 승강제에서»: 예전 자동 오답학습지 스위치를 그대로 쓴다 */}
         <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 px-4 py-3">
           <div className="min-w-40">
-            <div className="text-sm font-bold">📘 자동 오답학습지
+            <div className="text-sm font-bold">🪜 제출하면 틀린 유형 승강제로
               <span className={`ml-2 rounded px-1.5 py-0.5 text-[10px] font-bold ${(cfg.autoDrill ?? true) ? 'bg-pine-soft text-pine-dark' : 'bg-paper2 text-ink2'}`}>
                 {(cfg.autoDrill ?? true) ? '사용' : '사용 안 함'}
               </span>
             </div>
             <div className="text-xs text-ink2">
-              학생이 학습지를 제출해 채점되면, 틀린 유형으로 오답학습지가 <b>자동으로</b> 만들어져 숙제로 걸려요.
-              결과 화면에 [바로 풀기] 안내가 떠요. (진행 중인 오답학습이 있으면 끝날 때까지 새로 만들지 않아요)
+              학생이 학습지를 제출해 틀린 문제가 있으면, 그 유형의 <b>승강제(개념→기본→표준→심화→최상)</b>로 바로 넘어가요.
+              오답학습지는 따로 만들지 않아요. 시험 학습지는 넘기지 않고, 결과 화면의 [🪜 틀린 유형 승강제로] 버튼은 늘 있어요.
             </div>
           </div>
           <div className="grow" />

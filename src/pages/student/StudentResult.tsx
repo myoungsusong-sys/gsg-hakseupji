@@ -9,7 +9,7 @@ import VideoModal from '../../components/VideoModal'
 import AskProblemButton from '../../components/student/AskProblemButton'
 import MathText from '../../components/MathText'
 import { useStudentSelf } from './StudentShell'
-import { latestGradingFor, statusOf, summaryOf, AnswerText, isImgAnswer, usePreview } from './common'
+import { latestGradingFor, statusOf, summaryOf, AnswerText, isImgAnswer, usePreview, examOf } from './common'
 import { useSupplement, supplementKindOf, SUPPLEMENT_RULE_MSG, WRONG_DONE_MSG, ONE_CLICK_OFF_MSG } from './supplement'
 
 // 자동 오답학습지 이중 발화 방어 — 같은 채점(g.id)으로는 한 세션에 한 번만 시도.
@@ -23,7 +23,7 @@ const autoDrillFired = new Set<string>()
 export default function StudentResult() {
   const me = useStudentSelf()
   const { wsId } = useParams()
-  const { worksheets, gradings, problems, ensureCourse, studentAppConfig: gcfg, assignments, upsertGrading } = useStore()
+  const { worksheets, gradings, problems, ensureCourse, studentAppConfig: gcfg, assignments } = useStore()
   // 학습지별 공개 설정(출제할 때 고른 것)이 있으면 그게 우선이다 — 「문제만 내보내기」
   const asgReveal = assignments.find(a => a.worksheetId === wsId && a.studentId === me.id)?.reveal
   const cfg = {
@@ -72,9 +72,13 @@ export default function StudentResult() {
     const confirmed = { ...g, results: g.results.filter(r => !r.pending) }
     if (!confirmed.results.some(r => !r.correct)) return
     autoDrillFired.add(g.id)
-    // 결정적 id — 두 기기/두 탭이 동시에 발화해도 클라우드에선 같은 행이라 드릴이 두 장 생기지 않는다
-    const newId = supplement.build('오답학습', ws, confirmed, { silent: true, wsId: `ws-auto-${g.id}` })
-    if (newId) upsertGrading({ ...g, autoDrill: { wsId: newId, at: new Date().toISOString() } })
+    // 🪜 2026-10-02 명수쌤 «학생이 모든 오답은 승강제에서 진행하도록» — 오답학습지를 새로 만들지 않고
+    //    이 채점의 틀린 유형 승강제로 바로 보낸다(개념→기본→표준→심화→최상, 틀리면 내려가 다시).
+    //    한 기기에서 한 번만(뒤로 가기로 결과를 다시 봐도 또 끌려가지 않게). 시험 학습지·미리보기는 보내지 않는다.
+    if (preview.on || examOf(assignments, me.id, ws.id)) return
+    const key = `ladder-auto-${g.id}`
+    try { if (localStorage.getItem(key)) return; localStorage.setItem(key, new Date().toISOString()) } catch { /* 저장 못 해도 진행 */ }
+    nav(`/student/mastery?grading=${encodeURIComponent(g.id)}`)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.id, g?.id])
 
@@ -98,12 +102,13 @@ export default function StudentResult() {
   const anyOpen = cfg.showAnswer || cfg.showSolution || cfg.showVideo
   const shown = onlyWrong ? items.filter(x => !x.r?.correct) : items
   const wrongCount = g.results.filter(r => !r.correct).length
+  // 승강제로 갈 유형 수 — 확정 오답의 유형(같은 유형 여러 문제는 하나로)
+  const wrongTypeCount = new Set(items.filter(x => x.r && !x.r.correct && !x.r.pending)
+    .map(x => x.r!.typeId ?? x.p?.typeId).filter(Boolean)).size
   const suppKind = supplementKindOf(ws)
 
   // 보충학습 생성 가드 — 진행 중(미완료) 같은 종류가 있으면 생성 불가
-  const pendingWrong = supplement.pendingOf('오답학습')
   const pendingDeep = supplement.pendingOf('심화학습')
-  const wrongBlocked = pendingWrong && pendingWrong.id !== ws.id
   const deepBlocked = pendingDeep && pendingDeep.id !== ws.id
 
   function toggleSolution(pid: string) {
@@ -266,6 +271,19 @@ export default function StudentResult() {
                 </span>
               )}
             </div>
+            {/* 🪜 모든 오답은 승강제에서 (2026-10-02 명수쌤) — 틀린 유형만 줄 세워 개념→최상까지 */}
+            {wrongTypeCount > 0 && (
+              <button type="button" disabled={preview.on}
+                onClick={() => { if (!preview.on) nav(`/student/mastery?grading=${encodeURIComponent(g.id)}`) }}
+                className="mt-4 flex w-full items-center gap-3 rounded-xl bg-pine px-4 py-3 text-left text-paper hover:brightness-110 disabled:opacity-50">
+                <span className="text-2xl">🪜</span>
+                <span className="grow">
+                  <b className="block text-base">틀린 {wrongTypeCount}유형 승강제로 정복하기</b>
+                  <span className="text-xs opacity-90">틀린 문제의 유형을 개념 → 기본 → 표준 → 심화 → 최상까지 올려요</span>
+                </span>
+                <span className="rounded-lg bg-white/20 px-3 py-1.5 text-sm font-black">시작 →</span>
+              </button>
+            )}
           </div>
 
           {/* 토글 */}
@@ -452,14 +470,12 @@ export default function StudentResult() {
               : wrongCount > 0 ? <>오답·모름 <b className="text-clay">{wrongCount}문제</b></> : '오답이 없어요'}
           </span>
           <div className="grow" />
-          <button onClick={() => supplement.create('오답학습', ws, g)}
-            disabled={wrongCount === 0 || !!wrongBlocked || !supplement.allowed}
-            title={!supplement.allowed ? ONE_CLICK_OFF_MSG
-              : wrongBlocked ? `${SUPPLEMENT_RULE_MSG} (진행 중: ${pendingWrong!.title})`
-              : wrongCount === 0 ? WRONG_DONE_MSG
-              : '틀린 유형을 틀리지 않을 때까지 반복해서 공부해요'}
+          {/* 🪜 오답은 승강제로 (2026-10-02 명수쌤) — 예전 [◎ 오답학습](새 학습지 회차) 대신 */}
+          <button onClick={() => { if (!preview.on) nav(`/student/mastery?grading=${encodeURIComponent(g.id)}`) }}
+            disabled={wrongTypeCount === 0 || preview.on}
+            title={wrongTypeCount === 0 ? '틀린 문제가 없어요' : '틀린 유형을 승강제로 개념부터 최상까지 올려요'}
             className="rounded-lg border border-clay px-4 py-2 text-sm font-bold text-clay hover:bg-red-50 disabled:opacity-30 disabled:hover:bg-transparent">
-            ◎ 오답학습
+            🪜 오답 승강제
           </button>
           <button onClick={() => supplement.create('심화학습', ws, g)}
             disabled={!!deepBlocked || sum.correct === 0 || !supplement.allowed}
