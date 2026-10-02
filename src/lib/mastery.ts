@@ -85,6 +85,31 @@ export interface MasteryState {
   needsTeacher: boolean
 }
 
+/**
+ * 저장된 진행 상태를 그대로 믿지 않는다 — 서버(학생별 칸 병합)·기기 기억·옛 형식에서 빈 칸이 오면
+ * 기본값으로 채운다. 🔴 2026-10-02 최다혜 학생 승강제 «오류로 멈춤»: 진행 상태에 servedIds·log 가 없으면
+ * MasteryRunner 의 state.servedIds.length 에서 화면이 죽고 오류 받이가 계속 다시 그렸다(의심 지점, 맥북프로 세션 제보).
+ */
+export function normalizeMastery(raw: unknown, studentId: string, typeId: string): MasteryState | undefined {
+  if (!raw || typeof raw !== 'object') return undefined
+  const r = raw as Partial<MasteryState>
+  const fl = Number(r.floor)
+  const num = (v: unknown) => (typeof v === 'number' && Number.isFinite(v) && v >= 0 ? v : 0)
+  return {
+    ...r,
+    studentId: typeof r.studentId === 'string' && r.studentId ? r.studentId : studentId,
+    typeId: typeof r.typeId === 'string' && r.typeId ? r.typeId : typeId,
+    floor: (Number.isInteger(fl) && fl >= 0 && fl <= 4 ? fl : 2) as Floor,
+    streak: num(r.streak), missAtFloor: num(r.missAtFloor), missStreak: num(r.missStreak),
+    servedIds: Array.isArray(r.servedIds) ? r.servedIds.filter((x): x is string => typeof x === 'string') : [],
+    log: Array.isArray(r.log)
+      ? r.log.filter((l) => !!l && typeof l === 'object' && typeof (l as { at?: unknown }).at === 'string')
+      : [],
+    mastered: !!r.mastered,
+    needsTeacher: !!r.needsTeacher,
+  }
+}
+
 export function newMastery(studentId: string, typeId: string, startFloor: Floor = 2): MasteryState {
   return {
     studentId, typeId, floor: startFloor, streak: 0, missAtFloor: 0, missStreak: 0,

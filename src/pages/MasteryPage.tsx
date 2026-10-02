@@ -237,7 +237,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   //    답한 직후 태블릿이 멈춰 꺼지면 한 단계 전 상태로 다시 열릴 수 있다. 다시 열 때는 둘 중 마지막으로
   //    푼 기록이 더 늦은 쪽을 쓴다(다른 기기에서 더 풀었으면 그쪽).
   const localKey = stickyKey && typeId ? `${stickyKey}-st:${typeId}` : null
-  const lastAt = (s?: MasteryState) => s?.log?.[s.log.length - 1]?.at ?? ''
+  const lastAt = (s?: MasteryState) => (Array.isArray(s?.log) ? s!.log[s!.log.length - 1]?.at : '') ?? ''
   const localRaw = localKey ? readSticky<MasteryState>(localKey) : undefined
   const localSt = localRaw && Array.isArray(localRaw.servedIds) && Array.isArray(localRaw.log) ? localRaw : undefined
   const resumeSt = localSt && (!saved || lastAt(localSt) >= lastAt(saved)) ? localSt : saved

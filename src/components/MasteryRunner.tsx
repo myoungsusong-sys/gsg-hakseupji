@@ -8,7 +8,7 @@ import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '
 import MathText from './MathText'
 import { readSticky, writeSticky } from '../pages/student/common'
 import {
-  newMastery, step, passConcept, pickForFloor, conceptBlanks,
+  newMastery, normalizeMastery, step, passConcept, pickForFloor, conceptBlanks,
   FLOOR_NAME, FLOOR_DESC, UP_STREAK, progressPercent,
   type MasteryState, type ConceptBlank,
 } from '../lib/mastery'
@@ -38,7 +38,8 @@ export default function MasteryRunner({
   onChange?: (s: MasteryState) => void
   onClose?: () => void
 }) {
-  const [state, setState] = useState<MasteryState>(() => initial ?? newMastery(studentId, typeId, 2))
+  // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
+  const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 2))
   const [current, setCurrent] = useState<Problem | null>(null)
   const [picked, setPicked] = useState<number | null>(null)   // 객관식 선택
   const [input, setInput] = useState('')                      // 주관식 학생 답

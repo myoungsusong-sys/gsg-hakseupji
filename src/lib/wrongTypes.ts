@@ -59,8 +59,10 @@ export function startFloorFor(minDiff: number): Floor {
 /** 사다리를 정복한 시각(ISO). 마지막 오답보다 **먼저**였으면 강등 대상 */
 function masteredAt(st?: MasteryState): string | null {
   if (!st?.mastered) return null
-  const last = st.log[st.log.length - 1]
-  return last?.at ?? null
+  // 🔴 기록 배열이 빠진 옛·덜 찬 상태에서도 죽지 않게(2026-10-02 최다혜 승강제 오류)
+  const log = Array.isArray(st.log) ? st.log : []
+  const last = log[log.length - 1]
+  return typeof last?.at === 'string' ? last.at : null
 }
 
 // ── 색인 캐시 — 부를 때마다 수만 건 Map 을 새로 만들지 않는다 (리뷰 F6) ──
