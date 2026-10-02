@@ -1,0 +1,5 @@
+yethangul.woff2 — Noto Sans CJK KR Regular 의 옛한글 자모 부분 글꼴(subset)
+원본: https://github.com/notofonts/noto-cjk (Sans/OTF/Korean/NotoSansCJKkr-Regular.otf)
+라이선스: SIL Open Font License 1.1 — https://openfontlicense.org
+Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+만든 법: python3 -m fontTools.subset NotoSansCJKkr-Regular.otf --unicodes="U+1100-11FF,U+A960-A97F,U+D7B0-D7FF,U+302E-302F" --layout-features="ljmo,vjmo,tjmo,ccmp,locl" --flavor=woff2

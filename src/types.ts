@@ -45,6 +45,8 @@ export interface Problem {
                          //    (이미지 정답 문항과 같은 흐름. 안 켜면 문장 답이 전부 오답 처리된다)
   book?: string          // 📗 이 문항이 매여 있는 교과서 (예: '동아(윤정미)'). 영어 내신 문항은
                          //    그 교과서 본문이 지문이라 학생 교과서와 맞아야 한다 (data/engBooks.ts)
+  unit?: string          // 📗 교과서 과(단원) — 예 '6과'. 영어 exam4you 문항은 원본 PDF(교과서→과→예상문제)와 대조해 되살렸다(2026-09-29)
+  set?: string          // 📘 지문 세트 id — 같은 제시문에 붙은 국어 문항 묶음 (예 'kor-m12-bis-pym-u0m1s0-p1')
   imageUrl?: string      // 이미지 기반 문제(기출 크롭). 있으면 body/choices 대신 이미지 렌더
   videoUrl?: string      // 문항별 풀이영상 (HLS m3u8)
   subtitleUrl?: string   // 풀이영상 자막 (vtt)
@@ -245,6 +247,7 @@ export interface Student {
   //    Student.timetable 과 같이 json 통째 저장이라 마이그레이션이 필요 없다.
   schoolTimetable?: SchoolTimetable
   engBook?: string       // 📗 학교가 쓰는 영어 교과서 (예: '동아(윤정미)') — 영어 문항을 이 교과서 것으로 거른다
+  korBook?: string       // 📘 학교가 쓰는 국어 교과서 (예: '비상(박영민)') — 국어는 이 교과서 과정(단원·작품)으로 낸다 (2026-09-30)
   // 🎚️ 영단어 — 수준진단 결과로 선생님이 학생마다 정한다 (2026-09-14). 비면 학년 기본값(25개 · 단어시험).
   //    book: lib/voca.ts VOCA_BOOKS 의 key · perDay: 하루 단어 수 · modes: 'word'(뜻→영어) / 'meaning'(영어→뜻)
   voca?: { book?: string; perDay?: number; modes?: ('word' | 'meaning')[] }

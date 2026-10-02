@@ -41,6 +41,9 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json') && (!x.starts
       ...(p.selfGrade ? { selfGrade: true } : {}),
       // 🔴 2026-09-29: 아래 칸을 안 옮겨서 다시 합치면 쌍둥이 묶음(twinGroup)과 수학 씨앗 문항 그림(imageUrl 171개)이 사라졌다.
       ...(p.twinGroup ? { twinGroup: String(p.twinGroup) } : {}),
+      ...(p.unit ? { unit: String(p.unit) } : {}),
+      // 📘 국어 지문 세트(2026-09-30): 같은 제시문에 붙은 문항 묶음 — 학습지에서 제시문 하나 아래 문항들을 모아 싣는 데 쓴다
+      ...(p.set ? { set: String(p.set) } : {}),
       ...(p.imageUrl ? { imageUrl: p.imageUrl } : {}),
       ...(p.figure ? { figure: p.figure } : {}),
       ...(p.noAnswer ? { noAnswer: true } : {}),

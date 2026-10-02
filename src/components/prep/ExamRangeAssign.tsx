@@ -2,7 +2,9 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore, uid } from '../../lib/store'
 import { curriculumFor } from '../../data/curriculum'
-import { filterByEngBook } from '../../data/engBooks'
+import { filterByEngBook, filterByEngUnits, parseLessons } from '../../data/engBooks'
+import { ENGBOOK_COURSES } from '../../data/curriculum-engbook'
+import { korCourseFor } from '../../data/korBooks'
 import { gradeKey } from '../../lib/grade'
 import { brandFor, DEFAULT_ACADEMY } from '../../lib/brand'
 import { dayLabel, examSubjects } from '../../lib/exam'
@@ -27,6 +29,12 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
   const sem = semesterOf(exam)
   const [rows, setRows] = useState<Row[]>(() => examSubjects(exam).map(subject => {
     const courses = coursesForExamSubject(subject, st.grade, sem)
+    // 📗 영어: 학생 교과서가 있으면 그 교과서 과정(과 → 영역 → 유형)을 맨 앞에
+    const eb = st.engBook ? ENGBOOK_COURSES.find(x => x.base === courses[0] && x.book === st.engBook) : undefined
+    if (eb) courses.unshift(eb.id)
+    // 📘 국어: 학생 교과서가 있으면 그 교과서 과정(대단원 → 소단원·작품 → 유형)을 맨 앞에 — 학기·과목 이름으로 고른다
+    const kb = st.korBook && courses[0]?.startsWith('kor-') ? korCourseFor(courses[0], st.korBook, sem, subject) : undefined
+    if (kb) courses.unshift(kb)
     const course = courses[0] ?? ''
     const pr = course ? parseRange(exam.ranges?.[subject], curriculumFor(course)) : { midIds: [], how: 'all' as const }
     return { subject, courses, course, on: courses.length > 0, mids: pr.midIds, how: pr.how }
@@ -42,9 +50,15 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
   const cands = useMemo(() => rows.map(r => {
     if (!r.on || !r.course) return []
     let pool = pickCandidates(problems, typeIdsOfMids(curriculumFor(r.course), r.mids))
-    if (subjectGroupOfCourse(r.course) === '영어') pool = filterByEngBook(pool, st.engBook)
+    if (subjectGroupOfCourse(r.course) === '영어') {
+      pool = filterByEngBook(pool, st.engBook)
+      // 📗 시험범위의 과(「1~3과」「Lesson 1-3」)로 거른다 — 과 표시가 있는 교과서 문항만
+      const ls = parseLessons(exam.ranges?.[r.subject])
+      const vol = r.course === 'eng-h1' ? (sem === 1 ? '공통영어1' : '공통영어2') : ''
+      if (ls.length) { const byUnit = filterByEngUnits(pool, ls, vol); if (byUnit.length) pool = byUnit }
+    }
     return pool.filter(p => !prev.has(p.id))
-  }), [rows, problems, prev, st.engBook])
+  }), [rows, problems, prev, st.engBook, exam.ranges, sem])
 
   // 🔴 표시와 출제가 같게 — 창에서 미리 뽑아 두고 [출제]는 이것을 그대로 쓴다.
   //    같은 문제 틀(쌍둥이)은 한 장에 하나라서, 틀이 적은 과목은 후보가 많아도 목표보다 적게 나온다
@@ -172,6 +186,8 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
                         <p className="mt-1 text-[11px] text-ink2">
                           {HOW[r.how]}
                           {subjectGroupOfCourse(r.course) === '영어' && (st.engBook ? ` · 교과서 ${st.engBook} 문항만` : ' · 교과서 미지정(전체 교과서에서 나감)')}
+                          {subjectGroupOfCourse(r.course) === '국어' && (st.korBook ? (r.course.startsWith('kor-') && r.course.split('-').length > 2 ? ` · 교과서 ${st.korBook} 과정` : ` · 교과서 ${st.korBook} 과정이 아직 없어 공통 문항`) : ' · 국어 교과서 미지정(공통 문항)')}
+                          {subjectGroupOfCourse(r.course) === '영어' && (parseLessons(exam.ranges?.[r.subject]).length ? ` · ${parseLessons(exam.ranges?.[r.subject]).join('·')}과만` : ' · 범위에서 과를 못 읽어 전체 과')}
                         </p>
                         {poolLoaded.has(r.course) && cands[i].length > 0 && picks[i].length < count && (
                           <p className="text-[11px] font-bold text-clay">

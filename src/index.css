@@ -3,6 +3,15 @@
 /* Pretendard — 매쓰플랫과 동일한 본문 글꼴 (오픈소스 OFL). 변수 폰트 1개로 전 굵기 커버. */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css");
 
+/* 옛한글(중세 국어·고전 시가 원문: 말ᄊᆞ미·ᄃᆞ래 …) — Pretendard 에는 조합 규칙이 없어 낱자로 풀려 보인다(2026-09-30 실측).
+   옛한글 자모 범위에만 Noto Sans CJK KR 부분 글꼴(144KB·OFL)을 입힌다. 현대 한글은 그대로 Pretendard. */
+@font-face {
+  font-family: "YetHangul";
+  src: url("/fonts/yethangul.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+A960-A97F, U+D7B0-D7FF, U+302E-302F;
+  font-display: swap;
+}
+
 /* ── 매쓰플랫 실측 팔레트 (teacher.mathflat.com 라이브에서 computed style 추출, 2026-08-15) ──
    토큰 이름은 유지하고 값만 매쓰플랫 실제 색으로 교체 → 전 화면(추가기능 탭 포함)이 한 번에 동일화.
      · pine     = 매쓰플랫 메인 블루 #00abff (학습지 만들기 버튼·활성 상태)
@@ -49,7 +58,7 @@
 html { background: var(--color-paper2); }
 body {
   /* 매쓰플랫과 동일: Pretendard 우선 (변수 폰트 → 폴백 정적 Pretendard → 시스템) */
-  font-family: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  font-family: "YetHangul", "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   color: var(--color-ink);
   font-size: 14px;            /* 매쓰플랫 본문 기준 크기 */
   -webkit-font-smoothing: antialiased;

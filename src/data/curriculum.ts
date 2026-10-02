@@ -4,7 +4,7 @@ export interface SubUnit { id: string; name: string; types: TypeNode[] }
 export interface MidUnit { id: string; name: string; subs: SubUnit[] }
 export interface BigUnit { id: string; name: string; mids: MidUnit[] }
 
-export interface Curriculum { id: string; grade: string; label: string; units: BigUnit[]; subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어' }
+export interface Curriculum { id: string; grade: string; label: string; units: BigUnit[]; subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'; book?: string /* 교과서별 과정(영어 교과서 승강제) — 학습지 과정 목록에서는 뺀다 */ }
 
 // 중1-1 (22개정) — 매쓰플랫 기준 자동생성 (대>중>소>유형=conceptId)
 export const CURRICULUM: Curriculum = {
@@ -85,6 +85,8 @@ type BigC = [string, MidC[]]
 import { ENG_SECTIONS, KOR_SECTIONS } from './curriculum-engkor'
 import { SOC1_SECTIONS, SOC2_SECTIONS } from './curriculum-soc'
 import { OLSO_TREES } from './curriculum-olso'
+import { ENGBOOK_COURSES } from './curriculum-engbook'
+import { KORBOOK_COURSES } from './curriculum-korbook'
 
 function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
@@ -2866,6 +2868,12 @@ export const CURRICULA: Curriculum[] = [
   build("kor-h3", "고3", "고3 국어", KOR_SECTIONS, '국어'),
 ]
 
+// 📗 영어 교과서별 승강제 과정 (2026-09-29 명수쌤 「영어를 중·고 학년별 출판사별로 수준에 맞게 승강제」)
+//    교과서 한 권 = 과정 하나(과 → 영역 → 유형). 문항은 exam4you 예상문제를 원본 PDF 와 대조해 과를 되살린 사본(id 앞 'b-').
+for (const b of ENGBOOK_COURSES) CURRICULA.push({ ...build(b.id, b.grade, `${b.grade} 영어 · ${b.book} 교과서`, b.tree, '영어'), book: b.book })
+// 📘 국어 교과서별 과정 (2026-09-30) — 교과서 한 권(학기) = 과정 하나
+for (const b of KORBOOK_COURSES) CURRICULA.push({ ...build(b.id, b.grade, `${b.grade} 국어 · ${b.book} ${b.title}`, b.tree, '국어'), book: b.book })
+
 export function curriculumFor(id: string): Curriculum {
   return CURRICULA.find(c => c.id === id) ?? CURRICULUM
 }
@@ -3003,6 +3011,7 @@ export function coursesForWorksheet(grade: string, subject?: '수학' | '과학'
   if (!subject || !defCur || (defCur.subject ?? '수학') === subject) out.add(def)
   for (const c of CURRICULA) {
     if (c.grade !== grade) continue
+    if (c.book) continue                      // 교과서별 승강제 과정은 학습지 풀에 넣지 않는다(공통 과정 문항의 사본이라 겹친다)
     if (subject && (c.subject ?? '수학') !== subject) continue
     out.add(c.id)
   }

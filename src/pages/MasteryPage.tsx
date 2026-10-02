@@ -12,6 +12,8 @@ import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQu
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
 import { readSticky, writeSticky } from './student/common'
+import { currentSem, korCourseFor } from '../data/korBooks'
+import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -156,6 +158,19 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   //    내신 대비가 안 된다 (2026-09-12 명수쌤 지시). 교과서 미지정이면 거르지 않는다.
   //    교과서에 매이지 않는 문항(어휘·어법·씨앗)은 book 이 없어 항상 남는다.
   const engBook = allStudents.find((s) => s.id === studentId)?.engBook
+  // 📗 영어 교과서별 승강제(2026-09-29): 학생 교과서가 정해져 있으면 공통 과정(eng-m1 …) 대신 그 교과서 과정으로 연다
+  useEffect(() => {
+    if (!engBook || typeId || params.get('course')) return
+    const b = ENGBOOK_COURSES.find((x) => x.base === course && x.book === engBook)
+    if (b) setCourse(b.id)
+  }, [engBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
+  // 📘 국어 교과서별 과정(2026-09-30): 학생 국어 교과서가 정해져 있으면 공통 국어(kor-m1 …) 대신 그 교과서의 이번 학기 과정으로 연다
+  const korBook = allStudents.find((s) => s.id === studentId)?.korBook
+  useEffect(() => {
+    if (!korBook || typeId || params.get('course') || !/^kor-[mh]\d$/.test(course)) return
+    const k = korCourseFor(course, korBook, currentSem())
+    if (k) setCourse(k)
+  }, [korBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
   // 🔴 문제 묶음은 **내용이 같으면 같은 배열을 그대로** 쓴다. 다른 과정 문제가 새로 실리거나 자료를 다시 받아
   //    problems 배열이 새로 만들어질 때마다 pool 도 새 배열이 되었고, 러너가 그걸 «층이 바뀌었다»로 받아
   //    **풀던 문제를 새 문제로 바꾸고 입력하던 답을 지웠다**(2026-10-01 「승강제 풀다 처음으로」).
@@ -317,6 +332,11 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         <p className="mt-1 text-xs font-bold text-pine-dark">
           📗 영어 교과서 <span className="rounded bg-pine-soft px-1.5 py-0.5">{engBook}</span> 문항만 나갑니다
           <span className="ml-1 font-normal text-ink2">(학생 정보에서 바꿀 수 있어요)</span>
+        </p>
+      )}
+      {korBook && (
+        <p className="mt-1 text-xs font-bold text-rose-700">
+          📘 국어 교과서 <span className="rounded bg-rose-100 px-1.5 py-0.5">{korBook}</span> 과정이 있으면 그 교과서 단원·작품으로 나갑니다
         </p>
       )}
       <p className="mt-1 text-sm text-ink2">
