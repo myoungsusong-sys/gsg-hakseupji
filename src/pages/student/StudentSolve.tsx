@@ -144,7 +144,11 @@ export default function StudentSolve() {
   const [quick, setQuick] = useState(false)         // ≡ 빠른채점 모달
 
   // 필기 도구 상태 (문항별 스트로크 — 세션 메모리 보관)
-  const [tool, setTool] = useState<'pen' | 'eraser'>('pen')
+  // 🔴 2026-10-03 명수쌤 「손으로 펜을 고르지 않아도 필기되는 현상 바꿔줘 — 펜을 골라야만 써지게」
+  //    예전에는 처음부터 'pen' 이라, 화면에 들어가자마자 손이 닿기만 해도 그어졌다.
+  //    'none'(안 고름) 을 기본으로 둔다 — 펜이나 지우개를 눌러야 비로소 캔버스가 입력을 받는다.
+  //    안 골랐을 때는 캔버스가 터치를 통째로 흘려보내므로(pointer-events-none) 화면 스크롤도 된다.
+  const [tool, setTool] = useState<'none' | 'pen' | 'eraser'>('none')
   const [inkOn, setInkOn] = useState(true)          // 👁 필기 표시/숨김(숨기면 그리기도 잠금)
   const [penSize, setPenSize] = useState(1)         // PEN_SIZES 인덱스
   const [penColor, setPenColor] = useState(PEN_COLORS[0])
@@ -731,7 +735,7 @@ export default function StudentSolve() {
                   className={`${toolBtn(false)} disabled:opacity-30`}>↶</button>
                 <button onClick={redoInk} disabled={myRedo.length === 0} title="다시하기"
                   className={`${toolBtn(false)} disabled:opacity-30`}>↷</button>
-                <button onClick={() => { setTool('pen'); setPenPop(v => tool === 'pen' ? !v : true) }} title="펜 (다시 누르면 펜 설정)"
+                <button onClick={() => { setTool('pen'); setPenPop(v => tool === 'pen' ? !v : false) }} title="펜 (다시 누르면 펜 설정)"
                   className={toolBtn(tool === 'pen')}>
                   <span style={tool === 'pen' ? undefined : { color: penColor }}>✏️</span>
                 </button>
@@ -972,7 +976,7 @@ export default function StudentSolve() {
 function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, children }: {
   strokes: Stroke[]
   live: boolean                      // false면 표시·입력 모두 잠금(👁 숨김)
-  tool: 'pen' | 'eraser'
+  tool: 'none' | 'pen' | 'eraser'   // 'none' = 아직 안 고름 → 입력을 받지 않는다
   color: string
   size: number
   handWrite: boolean                 // false면 스타일러스(pointerType 'pen')만
@@ -1177,7 +1181,7 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
     const p = e.pointerType === 'pen' && typeof e.pressure === 'number' && e.pressure > 0 ? e.pressure : undefined
     return p === undefined ? [x, y] : [x, y, p]
   }
-  const allowed = (e: React.PointerEvent) => live && (handWrite || e.pointerType === 'pen')
+  const allowed = (e: React.PointerEvent) => live && tool !== 'none' && (handWrite || e.pointerType === 'pen')
 
   // 🔴 태블릿은 한 번의 pointermove 에 펜 좌표 여러 개를 묶어 보낸다. 그걸 다 꺼내야
   //    빠르게 그어도 점이 안 빠진다. 지원 안 하는 브라우저는 그 이벤트 하나만 쓴다.
@@ -1201,7 +1205,7 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
       {children}
       <canvas ref={baseRef} className="pointer-events-none absolute inset-0 h-full w-full" />
       <canvas ref={liveRef}
-        className={`absolute inset-0 h-full w-full ${live ? 'touch-none' : 'pointer-events-none'}`}
+        className={`absolute inset-0 h-full w-full ${live && tool !== 'none' ? 'touch-none' : 'pointer-events-none'}`}
         onPointerDown={e => {
           if (!allowed(e)) return
           e.currentTarget.setPointerCapture(e.pointerId)
