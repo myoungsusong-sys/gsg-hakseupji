@@ -200,13 +200,62 @@ function titleWords(t: string): string[] {
     .filter((w) => /^[가-힣]{2,10}$/.test(w) && GOOD_TERM(w))
 }
 
+/**
+ * 🔴 2026-10-03 명수쌤 「(가-1)로 해」 — **영어 교과서별 과정에는 개념카드가 하나도 없다.**
+ *
+ * 영어는 과정이 두 벌이다.
+ *   · 공통 과정 `eng-h1`  — 단원이 **유형 체계**(독해 > 대의 파악 > 주제 파악 …). 개념카드 186장이 여기 붙어 있다.
+ *   · 교과서별 과정 `eng-h1-b02` — 단원이 **교과서 과**(1과 > 어휘·어법·독해 …). 개념카드 **0장**.
+ * 그래서 학생이 교과서 과정으로 승강제를 하면 **0층(개념 빈칸)이 통째로 비었다.** 고1·고2 전부 그랬다.
+ *
+ * 과 번호는 서로 대응되지 않지만(1과 ↔ 주제 파악), **영역 이름은 거의 그대로 겹친다**
+ * — 교과서의 독해·어법·어휘·서술형·단어·문장 ↔ 공통 과정의 같은 이름 대단원/중단원.
+ * 영어 독해 전략(「주제문은 첫 문장이나 마지막 문장에 온다」)은 어느 교과서 어느 과에서나 통하므로
+ * **같은 영역의 공통 과정 카드를 빌려 쓴다.** 문항을 새로 만들지 않아도 0층이 산다.
+ *
+ * 어느 카드를 쓸지는 typeId 로 정해 **같은 유형에는 늘 같은 개념**이 나오게 한다(유형마다는 달라진다).
+ */
+function borrowedSubIds(typeId: string): string[] {
+  const m = /^(eng-[hm]\d)-b\d+-/.exec(typeId)
+  if (!m) return []
+  const base = CURRICULA.find((c) => c.id === m[1])
+  if (!base) return []
+
+  // 교과서 과정에서 이 유형이 속한 **영역(중단원) 이름**을 찾는다
+  let area: string | undefined
+  outer: for (const c of CURRICULA) {
+    if (!typeId.startsWith(c.id + '-')) continue
+    for (const u of c.units) for (const mid of u.mids) for (const sub of mid.subs)
+      if (sub.types.some((t) => t.id === typeId)) { area = mid.name; break outer }
+  }
+  if (!area) return []
+
+  // 공통 과정에서 같은 이름의 대단원(독해·서술형·단어·문장) 또는 중단원(어법·어휘)을 집는다
+  const out: string[] = []
+  for (const u of base.units) {
+    const mids = u.name === area ? u.mids : u.mids.filter((mm) => mm.name === area)
+    for (const mm of mids) for (const sub of mm.subs) out.push(sub.id)
+  }
+  return out
+}
+
 export function conceptBlanks(typeId: string): ConceptBlank[] {
   const sid = subIdOf(typeId)
-  if (!sid) return []
+  let cards = sid ? CONCEPTS.filter((x) => x.subId === sid) : []
+  if (!cards.length) {
+    const ids = new Set(borrowedSubIds(typeId))
+    const pool = ids.size ? CONCEPTS.filter((x) => ids.has(x.subId)) : []
+    if (pool.length) {
+      let h = 0
+      for (let i = 0; i < typeId.length; i++) h = (h * 31 + typeId.charCodeAt(i)) >>> 0
+      cards = [pool[h % pool.length]]      // 유형마다 하나씩 — 같은 유형이면 늘 같은 카드
+    }
+  }
+  if (!cards.length) return []
   const terms: ConceptBlank[] = []
   const formulas: ConceptBlank[] = []
 
-  for (const c of CONCEPTS.filter((x) => x.subId === sid)) {
+  for (const c of cards) {
     for (const line of c.lines) {
       if (EXAMPLE_LINE.test(line)) continue
 
@@ -243,7 +292,7 @@ export function conceptBlanks(typeId: string): ConceptBlank[] {
   }
   // 정의줄도 등식도 없는 소단원 — 개념카드 제목 낱말을 본문에서 찾아 가린다
   if (!terms.length && !formulas.length) {
-    for (const c of CONCEPTS.filter((x) => x.subId === sid)) {
+    for (const c of cards) {
       for (const w of titleWords(c.title)) {
         const line = c.lines.find((l) => l.includes(w) && !EXAMPLE_LINE.test(l))
         if (!line) continue
