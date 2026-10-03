@@ -15,7 +15,12 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
 
   // 풀이창은 기본으로 펼쳐 둔다 — 문제 아래에 항상 풀이 공간이 보여야 바로 쓴다 (2026-08-02 명수쌤)
   const [open, setOpen] = useState(true)
-  const [mode, setMode] = useState<'photo' | 'draw'>('draw')
+  // 🔴 2026-10-03 명수쌤 「학생들이 위아래 스크롤할 때도 펜을 선택 안 했는데 써져」
+  //    예전에는 'draw' 가 기본이라 풀이창을 열자마자 캔버스가 깔렸다. 그 캔버스가 touch-none 이라
+  //    **그 위에서는 화면 스크롤이 아예 안 되고**, 스크롤하려고 손을 대면 그대로 획이 그어졌다.
+  //    'none'(아직 안 고름) 을 기본으로 둔다 — 「✍️ 직접 쓰기」를 눌러야 캔버스가 나온다.
+  //    고르기 전에는 캔버스가 없으니 그 자리에서도 스크롤이 자유롭다.
+  const [mode, setMode] = useState<'none' | 'photo' | 'draw'>('none')
   const [img, setImg] = useState<{ dataUrl: string; mediaType: string } | null>(null)
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
@@ -164,7 +169,11 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
             ))}
           </div>
 
-          {mode === 'draw' ? (
+          {mode === 'none' ? (
+            <p className="rounded-lg border border-dashed border-line bg-paper2/40 px-3 py-6 text-center text-xs text-ink2">
+              위에서 <b>✍️ 직접 쓰기</b> 또는 <b>📷 사진 올리기</b>를 먼저 골라 주세요.
+            </p>
+          ) : mode === 'draw' ? (
             <div>
               <canvas ref={canvasRef} width={640} height={480}
                 onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerLeave={up}
