@@ -8,9 +8,9 @@ import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '
 import MathText from './MathText'
 import { readSticky, writeSticky } from '../pages/student/common'
 import {
-  newMastery, normalizeMastery, step, passConcept, pickForFloor, conceptBlanks,
+  newMastery, normalizeMastery, step, passConcept, pickForFloor, conceptBlanks, topFloorOf,
   FLOOR_NAME, FLOOR_DESC, UP_STREAK, progressPercent,
-  type MasteryState, type ConceptBlank,
+  type MasteryState, type ConceptBlank, type Floor,
 } from '../lib/mastery'
 
 /**
@@ -55,6 +55,9 @@ export default function MasteryRunner({
 
   // 개념 빈칸 (0층)
   const blanks = useMemo(() => conceptBlanks(typeId), [typeId])
+  // 🔴 2026-10-03 — 이 유형이 실제로 가진 난이도만큼만 사다리를 쓴다(「N단계 중 M단계」).
+  //    난이도가 한 종류뿐인 유형까지 5단계를 억지로 올리면 같은 문제를 다섯 번 보게 된다.
+  const top = useMemo(() => topFloorOf(typeId, pool), [typeId, pool])
   const [blankIdx, setBlankIdx] = useState(0)
   const [blankShown, setBlankShown] = useState(false)
 
@@ -92,7 +95,7 @@ export default function MasteryRunner({
 
   function mark(correct: boolean) {
     if (!current) return
-    apply(step(state, current.id, correct, new Date().toISOString()))
+    apply(step(state, current.id, correct, new Date().toISOString(), top))
   }
 
   /** 학생 답을 채점한다. **맞으면 곧바로 다음 단계로 넘어간다.**
@@ -109,7 +112,7 @@ export default function MasteryRunner({
   // ── 마스터 / 선생님 호출 ──────────────────────────────────────────────
   if (state.mastered) {
     return (
-      <Frame typeName={typeName} state={state} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
         <div className="py-10 text-center">
           <div className="text-4xl">🎉</div>
           <p className="mt-3 text-lg font-black text-pine-dark">이 유형을 마스터했습니다</p>
@@ -121,7 +124,7 @@ export default function MasteryRunner({
   }
   if (state.needsTeacher) {
     return (
-      <Frame typeName={typeName} state={state} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
         <div className="py-8 text-center">
           <div className="text-3xl">🙋</div>
           <p className="mt-3 text-base font-black text-amber">선생님을 불러 주세요</p>
@@ -142,7 +145,7 @@ export default function MasteryRunner({
   if (state.floor === 0) {
     const b: ConceptBlank | undefined = blanks[blankIdx]
     return (
-      <Frame typeName={typeName} state={state} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
         {msg && <Banner event={event} msg={msg} />}
         {!b ? (
           <div className="py-8 text-center text-sm text-ink2">
@@ -195,7 +198,7 @@ export default function MasteryRunner({
 
   // ── 1~4층: 문제 풀이 ──────────────────────────────────────────────────
   return (
-    <Frame typeName={typeName} state={state} onClose={onClose}>
+    <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
       {msg && <Banner event={event} msg={msg} />}
       {!current ? (
         <div className="py-10 text-center text-sm text-ink2">
@@ -345,17 +348,18 @@ export default function MasteryRunner({
 
 // ── 껍데기 ────────────────────────────────────────────────────────────────
 
-function Frame({ typeName, state, onClose, children }: {
-  typeName: string; state: MasteryState; onClose?: () => void; children: React.ReactNode
+function Frame({ typeName, state, top, onClose, children }: {
+  typeName: string; state: MasteryState; top: Floor; onClose?: () => void; children: React.ReactNode
 }) {
-  const pct = progressPercent(state)
+  const pct = progressPercent(state, top)
+  const steps = Array.from({ length: top + 1 }, (_, i) => i as Floor)
   return (
     <div className="rounded-2xl border border-line bg-white p-5">
       <div className="mb-3 flex items-center gap-2">
         <div className="min-w-0">
           <p className="truncate text-sm font-black">🪜 {typeName}</p>
           <p className="text-[11px] text-ink2">
-            {FLOOR_NAME[state.floor]} 단계 · 연속 {state.streak}/{UP_STREAK}
+            {top + 1}단계 중 {state.floor + 1}단계 · {FLOOR_NAME[state.floor]} · 연속 {state.streak}/{UP_STREAK}
             {state.log.length > 0 && ` · 지금까지 ${state.log.length}문제`}
           </p>
         </div>
@@ -367,7 +371,7 @@ function Frame({ typeName, state, onClose, children }: {
 
       {/* 사다리 — 지금 어느 층인지 한눈에 */}
       <div className="mb-3 flex items-center gap-1">
-        {([0, 1, 2, 3, 4] as const).map((f) => (
+        {steps.map((f) => (
           <div key={f} className="flex-1">
             <div className={`h-1.5 rounded-full ${
               f < state.floor ? 'bg-pine' : f === state.floor ? 'bg-pine-dark' : 'bg-line'

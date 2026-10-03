@@ -318,6 +318,29 @@ const clampFloor = (n: number): Floor => Math.min(4, Math.max(0, n)) as Floor
  * 그 층에 맞는 문항 하나. 6종 세트의 난이도 사다리를 그대로 쓴다
  * (사다리 계산은 sixSet.ts 에 한 번만 두고 여기서 재사용한다).
  */
+/**
+ * 🔴 2026-10-03 명수쌤 「(다)로 승강제도 맞춰줘 · N단계 중 M단계로 해」
+ *
+ * 사다리를 **그 유형이 실제로 가진 난이도에 맞춘다.**
+ * 예전에는 어떤 유형이든 0~4층(5단계) 고정이었다. 그런데 실측해 보니
+ * 영어 교과서 유형 964개 중 **59%가 10문항 미만**(5단계 × 연속 2정답에 모자람),
+ * **75%가 난이도 4종 미만**, **24%는 난이도가 1종뿐**이었다.
+ * 난이도가 한 종류뿐인 유형도 5단계를 억지로 올라가느라 **같은 난이도 문제를 다섯 번** 봤다.
+ *
+ * → 난이도 가짓수 k 만큼만 층을 쓴다. 0층(개념)은 항상 있으므로 **총 k+1 단계**다.
+ *   화면에는 「N단계 중 M단계」로 보여 준다.
+ */
+export function topFloorOf(typeId: string, pool: Problem[]): Floor {
+  return Math.min(4, Math.max(1, diffsOf(typeId, pool).length)) as Floor
+}
+
+/** 이 유형이 실제로 가진 난이도를 오름차순으로 (자동 출제 가능한 것만) */
+function diffsOf(typeId: string, pool: Problem[]): Diff[] {
+  const set = new Set<Diff>()
+  for (const p of pool) if (p.typeId === typeId && autoPickable(p)) set.add(p.diff)
+  return [...set].sort((a, b) => a - b)
+}
+
 export function pickForFloor(
   state: MasteryState,
   base: Problem,
@@ -333,7 +356,9 @@ export function pickForFloor(
   const p = set.items[slot]
   if (p) return p
   // 세트에 없으면 같은 유형에서 난이도로 직접 고른다
-  const want = clampDiffOfFloor(state.floor, base.diff)
+  // 🔴 층을 **그 유형이 실제로 가진 난이도 배열**에 그대로 꽂는다(1층→가장 쉬운 것, 꼭대기→가장 어려운 것).
+  //    예전처럼 base.diff ± 로 계산하면, 난이도가 3·4·5 뿐인 유형에서 1층도 2층도 결국 같은 문제가 나왔다.
+  const want = diffOfFloor(state.floor, diffsOf(base.typeId, pool), base.diff)
   const cands = pool.filter((x) => x.typeId === base.typeId && !used.has(x.id))
   const fresh = cands.find((x) => x.diff === want)
     ?? cands.sort((a, b) => Math.abs(a.diff - want) - Math.abs(b.diff - want))[0]
@@ -348,9 +373,13 @@ export function pickForFloor(
   return again[0] ?? pool.find((x) => x.typeId === base.typeId) ?? null
 }
 
-function clampDiffOfFloor(floor: Floor, baseDiff: Diff): Diff {
-  const delta = { 0: -1, 1: -1, 2: 0, 3: 1, 4: 2 }[floor]
-  return Math.min(5, Math.max(1, baseDiff + delta)) as Diff
+function diffOfFloor(floor: Floor, diffs: Diff[], baseDiff: Diff): Diff {
+  if (!diffs.length) {
+    const delta = { 0: -1, 1: -1, 2: 0, 3: 1, 4: 2 }[floor]       // 풀이 비면 종전 방식
+    return Math.min(5, Math.max(1, baseDiff + delta)) as Diff
+  }
+  if (floor <= 0) return diffs[0]                                  // 개념층 — 가장 쉬운 것
+  return diffs[Math.min(diffs.length - 1, floor - 1)]              // 1층→diffs[0], 2층→diffs[1] …
 }
 
 // ── 채점 후 다음 층 결정 ─────────────────────────────────────────────────────
@@ -373,6 +402,8 @@ export function step(
   problemId: string,
   correct: boolean,
   now: string,
+  /** 이 유형의 꼭대기 층 — topFloorOf() 로 구한다. 주지 않으면 종전대로 4층 */
+  top: Floor = 4,
 ): StepResult {
   const s: MasteryState = {
     ...state,
@@ -387,11 +418,12 @@ export function step(
       return { next: s, event: '유지',
         message: `맞았습니다. ${FLOOR_NAME[s.floor]} 단계에서 ${UP_STREAK - s.streak}문제만 더 맞히면 올라갑니다.` }
     }
-    if (s.floor >= 4) {
+    if (s.floor >= top) {
       s.mastered = true
-      return { next: s, event: '마스터', message: '이 유형을 마스터했습니다. 최상 단계까지 연속으로 맞혔습니다.' }
+      return { next: s, event: '마스터',
+        message: `이 유형을 마스터했습니다. 마지막 단계(${FLOOR_NAME[top]})까지 연속으로 맞혔습니다.` }
     }
-    const up = clampFloor(s.floor + 1)
+    const up = Math.min(top, clampFloor(s.floor + 1)) as Floor
     s.floor = up; s.streak = 0; s.missAtFloor = 0
     return { next: s, event: '올라감',
       message: `연속 ${UP_STREAK}문제 정답 — ${FLOOR_NAME[up]} 단계로 올라갑니다.` }
@@ -429,7 +461,7 @@ export function passConcept(state: MasteryState): StepResult {
 }
 
 /** 화면 진행 막대용 — 0~100 */
-export function progressPercent(s: MasteryState): number {
+export function progressPercent(s: MasteryState, top: Floor = 4): number {
   if (s.mastered) return 100
-  return Math.round(((s.floor + s.streak / UP_STREAK) / 5) * 100)
+  return Math.round(((s.floor + s.streak / UP_STREAK) / (top + 1)) * 100)
 }
