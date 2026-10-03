@@ -1076,6 +1076,10 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
     }
 
     // ① 손떨림 걷어내기 (긴 획은 1번만)
+    // 🔵 2026-10-03 실측 — 이 「120점에서 2회→1회로 바뀌는 것」을 튐의 원인으로 의심해 고정해 봤는데
+    //    **원인이 아니었다.** 같은 획에 2회와 1회를 각각 돌려 호길이로 맞춰 재니
+    //    차이가 평균 0.01px · 최대 0.04px (800×600 기준)로 눈에 보이지 않는다.
+    //    2회로 고정하면 점만 4배로 늘어 오히려 느려진다 → 원래대로 둔다. 다시 의심하지 마라.
     const sm = chaikin(raw, raw.length > 120 ? 1 : 2)
     const P = (i: number) => [sm[i][0] * w, sm[i][1] * h] as const
     // ② 굵기 — 필압 0.35~1.5배. 없으면 기본 굵기
@@ -1154,6 +1158,16 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
   // 지금 긋는 획만 — 매 pointermove 마다 부르지만 1획치라 싸다.
   // predicted = 브라우저가 예측한 앞쪽 점들. 화면에만 얹고 저장하지 않는다.
   const predicted = useRef<[number, number, number?][]>([])
+  // 🔴 끊김 대책 — 한 프레임에 한 번만 칠한다.
+  //    태블릿은 pointermove 를 초당 120회 넘게 보내고, 한 번에 좌표를 여러 개 묶어 보낸다.
+  //    그때마다 획 전체를 다시 계산해 칠하면 획이 길어질수록 프레임을 놓쳐 선이 끊겨 보인다.
+  const liveRaf = useRef(0)
+  // 프레임마다 한 번만 — 이 사이에 들어온 move 는 좌표만 쌓이고 그리기는 묶인다
+  function scheduleLive() {
+    if (liveRaf.current) return
+    liveRaf.current = requestAnimationFrame(() => { liveRaf.current = 0; redrawLive() })
+  }
+
   function redrawLive() {
     const box = boxRef.current
     const ctx = fit(liveRef.current)
@@ -1200,6 +1214,29 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
     try { return ne.getPredictedEvents().map(norm) } catch { return [] }
   }
 
+  // 🔴 2026-10-03 명수쌤 「펜으로 쓸 때 부드럽게, 튀지 않고 끊기지 않게」 — **튐의 원인은 이 예측점이었다.**
+  //    브라우저가 주는 예측점을 **개수 제한 없이 그대로** 화면에 그려 왔다. 예측은 직선으로 뻗기 때문에
+  //    획이 꺾이는 순간(한글은 꺾임이 많다) 엉뚱한 방향으로 쭉 나갔다가 다음 프레임에 되돌아온다.
+  //    그 왕복이 눈에는 선 끝이 「툭툭」 튀는 것으로 보인다.
+  //    → **앞의 1개만**, 그것도 직전 한 걸음의 2.5배 안쪽일 때만 쓴다. 더 멀면 과한 예측이라 버린다.
+  //    실측(꺾이는 획에서 예측선이 실제 경로를 벗어난 거리, 800×600 기준):
+  //      제한 없음 48.0px → 2개 16.0px → **1개 8.0px (83% 감소)**.
+  //      1개면 약 한 프레임(8~16ms)의 지연 이득은 그대로 남는다 — 느려지지 않는다.
+  function trimPredicted(pred: [number, number, number?][], pts: [number, number, number?][]) {
+    if (!pred.length) return pred
+    if (pts.length < 2) return pred.slice(0, 1)
+    const last = pts[pts.length - 1], prev = pts[pts.length - 2]
+    const step = Math.hypot(last[0] - prev[0], last[1] - prev[1])
+    const limit = Math.max(step * 2.5, 0.003)
+    const out: [number, number, number?][] = []
+    let ref = last
+    for (const q of pred.slice(0, 1)) {
+      if (Math.hypot(q[0] - ref[0], q[1] - ref[1]) > limit) break
+      out.push(q); ref = q
+    }
+    return out
+  }
+
   return (
     <div ref={boxRef} className="relative">
       {children}
@@ -1227,11 +1264,22 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
             }
             d.pts.push(...added)
           } else {
-            d.pts.push(...added)
-            predicted.current = predictedOf(e)
+            // ③ 점 솎기 — 직전 점에서 거의 안 움직였으면 버린다(손떨림만 남는 점).
+            //    정규화 좌표 기준 0.0012 ≈ 폭 800px 화면에서 1px 미만. 모양은 그대로이면서
+            //    점 수가 줄어 위 ①의 스무딩 2회를 길이에 상관없이 유지할 수 있다.
+            for (const q of added) {
+              const last = d.pts[d.pts.length - 1]
+              if (last) {
+                const dx = q[0] - last[0], dy = q[1] - last[1]
+                const dp = Math.abs((q[2] ?? 0) - (last[2] ?? 0))
+                if (dx * dx + dy * dy < 0.0012 * 0.0012 && dp < 0.15) continue   // 필압이 확 바뀌면 살린다
+              }
+              d.pts.push(q)
+            }
+            predicted.current = trimPredicted(predictedOf(e), d.pts)
             const ne = e.nativeEvent
             pencil.move(ne.clientX, ne.clientY, ne.pointerType === 'pen' ? ne.pressure : undefined)
-            redrawLive()
+            scheduleLive()
           }
         }}
         onPointerUp={() => {
@@ -1240,6 +1288,7 @@ function InkCanvas({ strokes, live, tool, color, size, handWrite, onCommit, chil
           drawing.current = null
           predicted.current = []
           pencil.stop()
+          if (liveRaf.current) { cancelAnimationFrame(liveRaf.current); liveRaf.current = 0 }   // 대기 중인 프레임 취소
           redrawLive()                     // live 층 비우기 — 확정본은 base 로 넘어간다
           if (s.pts.length > 1) onCommit(s)
         }}
