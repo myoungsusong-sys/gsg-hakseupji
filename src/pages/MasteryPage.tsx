@@ -7,6 +7,7 @@ import { CURRICULA } from '../data/curriculum'
 import MasteryRunner from '../components/MasteryRunner'
 import MasteryPrint from '../components/MasteryPrint'
 import { newMastery, type MasteryState } from '../lib/mastery'
+import { todaySet } from '../lib/masterySet'
 import type { Problem } from '../types'
 import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQueue'
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
@@ -67,7 +68,7 @@ function courseOfType(typeId: string): string | null {
 }
 
 export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
-  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems } = useStore()
+  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems, studentAppConfig } = useStore()
   const [params] = useSearchParams()
   const nav = useNavigate()
   // 📕 채점 단위 정복 (`?grading=<채점id>[,<채점id>]`) — 그 채점의 **오답 유형만** 줄 세워 바로 사다리로.
@@ -265,7 +266,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     return (
       <MasteryRunner
         key={typeId}
-        typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId}
+        typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId} course={course}
         initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 2)}
         onChange={(st: MasteryState) => {
           lastState.current = st; saveMastery(studentId, typeId, st)
@@ -327,6 +328,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   return (
     <div className="mx-auto max-w-3xl">
       <h1 className="text-lg font-bold text-ink">🪜 유형 마스터{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
+      <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
       {/* 📗 걸러지고 있다는 걸 알려 준다 — 안 그러면 "왜 문제가 몇 개 없지?" 가 된다 */}
       {engBook && (
         <p className="mt-1 text-xs font-bold text-pine-dark">
@@ -428,6 +430,34 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       </div>
       </>
       )}
+    </div>
+  )
+}
+
+/**
+ * 🪜 오늘 몫 띠 — 유형을 고르기 «전»에 「오늘 얼마 남았나」를 보여 준다 (2026-10-06 명수쌤 지시)
+ *
+ * 승강제는 하루 문제 수로 끊는다(= 한 세트). 목록에서 미리 알려 주지 않으면 학생은
+ * 유형을 눌러 들어간 뒤에야 「오늘 몫 끝」을 보게 된다.
+ */
+function TodayQuota({ masteries, studentId, cap }: {
+  masteries: Record<string, MasteryState>; studentId: string; cap?: number
+}) {
+  const s = useMemo(() => todaySet(masteries, studentId, cap), [masteries, studentId, cap])
+  const pct = Math.min(100, Math.round((s.done / Math.max(1, s.cap)) * 100))
+  return (
+    <div className={`mt-3 rounded-xl border p-3 ${s.full ? 'border-pine bg-pine-soft/50' : 'border-line bg-white'}`}>
+      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+        <b className="text-sm">{s.full ? '🌙 오늘 몫을 다 풀었어요' : `${s.setNo}세트`}</b>
+        <span className="text-xs text-ink2">오늘 {s.done}/{s.cap}문제</span>
+        {s.full
+          ? <span className="text-xs text-pine-dark">다음에 오면 이 자리에서 이어서 풀어요</span>
+          : <span className="text-xs text-ink2">앞으로 {s.left}문제</span>}
+      </div>
+      <div className="mt-2 h-1.5 rounded-full bg-line">
+        <div className={`h-1.5 rounded-full transition-all ${s.full ? 'bg-pine' : 'bg-amber'}`}
+          style={{ width: `${pct}%` }} />
+      </div>
     </div>
   )
 }

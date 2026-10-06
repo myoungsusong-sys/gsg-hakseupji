@@ -10,6 +10,7 @@ import { SUPABASE_ON, supabase, signUpAccountClient, signUpStudentClient } from 
 import StudentAppPreview from './student/StudentAppPreview'
 import { myQuestions, stuckMinutes, type Question } from '../lib/qna'
 import { BLOOD_TYPES, MBTI_TYPES } from '../lib/persona'
+import { normalizeCap, DAILY_CAP_MIN, DAILY_CAP_MAX } from '../lib/masterySet'
 
 const TABS = ['학생 관리', '지점 관리', '반 관리', '선생님 관리', '학생앱', '실험실', '추가 관리'] as const
 type Tab = typeof TABS[number]
@@ -2263,7 +2264,7 @@ function TeacherAccountModal({ teacher, onDone, onClose }: {
 
 // ── 학생앱 (매쓰플랫 관리 > 학생앱 설정 등가: 3탭 + 학생 계정 안내) ────
 
-const APP_SUBTABS = ['오늘의 학습 설정', '정답 · 해설 공개', '풀이 영상 공개', '학생 계정 안내'] as const
+const APP_SUBTABS = ['오늘의 학습 설정', '승강제 설정', '정답 · 해설 공개', '풀이 영상 공개', '학생 계정 안내'] as const
 type AppSubTab = typeof APP_SUBTABS[number]
 
 function StudentAppTab() {
@@ -2281,10 +2282,81 @@ function StudentAppTab() {
         ))}
       </div>
       {sub === '오늘의 학습 설정' && <DailyLearningSettings />}
+      {sub === '승강제 설정' && <MasterySettings />}
       {sub === '정답 · 해설 공개' && <AnswerRevealSettings />}
       {sub === '풀이 영상 공개' && <VideoRevealSettings />}
       {sub === '학생 계정 안내' && <StudentAccountGuide />}
     </div>
+  )
+}
+
+// 🪜 승강제 설정 — 하루 문제 수(= 한 세트) (2026-10-06 명수쌤 지시)
+//
+// 명수쌤 「과학 보니까 승강제 기본문제가 너무 많던데 나눠야하지않을까?
+//        학생이 하루에 와서 그걸 다 풀고 갈 수는 없으니까」
+//      → 「기본유형을 하루문제수로 하고 몇 세트를 만들어서 완전히 숙지할 수 있게 해줘」 · 과목 공통
+function MasterySettings() {
+  const { studentAppConfig, setStudentAppConfig } = useStore()
+  const saved = normalizeCap(studentAppConfig.masteryDailyCap)
+  const [cap, setCap] = useState(String(saved))
+  const [savedAt, setSavedAt] = useState<string | null>(null)
+  const n = normalizeCap(cap)
+  const dirty = n !== saved
+  const save = () => {
+    setStudentAppConfig({ ...studentAppConfig, masteryDailyCap: n })
+    setCap(String(n))
+    setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+  return (
+    <section className="max-w-3xl rounded-2xl border border-line bg-white p-6">
+      <div className="mb-1 flex items-center gap-3">
+        <h3 className="font-black">승강제 설정</h3>
+        <div className="grow" />
+        <button onClick={save} disabled={!dirty}
+          className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper disabled:opacity-40">저장하기</button>
+      </div>
+      <p className="mb-1 text-sm text-ink2">
+        학생이 <b>하루에 푸는 승강제 문제 수</b>예요. 이 수에 닿으면 그날은 거기서 멈추고,
+        다음에 오면 <b>그 자리에서 이어서</b> 다음 세트를 풉니다.
+      </p>
+      {savedAt && !dirty && <p className="mb-2 text-xs text-pine-dark">✓ 저장됨 {savedAt}</p>}
+      {dirty && <p className="mb-2 text-xs text-clay">저장하지 않은 변경이 있어요</p>}
+
+      <div className="mt-4 rounded-xl border border-line/70 p-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-sm font-bold">하루 문제 수</span>
+          <input type="number" min={DAILY_CAP_MIN} max={DAILY_CAP_MAX} value={cap}
+            onChange={(e) => setCap(e.target.value)}
+            className="w-20 rounded-lg border border-line px-3 py-1.5 text-center text-sm font-bold" />
+          <span className="text-sm text-ink2">문제 / 하루</span>
+          <div className="grow" />
+          {[10, 15, 20, 30].map((v) => (
+            <button key={v} type="button" onClick={() => setCap(String(v))}
+              className={`rounded-lg px-3 py-1.5 text-xs font-bold ${n === v
+                ? 'bg-pine text-paper'
+                : 'border border-line text-ink2 hover:text-ink'}`}>{v}</button>
+          ))}
+        </div>
+        <p className="mt-3 text-xs leading-relaxed text-ink2">
+          🔴 <b>과목을 가리지 않고 합쳐서</b> 셉니다 — 과학에서 {n}문제를 풀면 그날 수학 승강제도 멈춥니다.
+          학생이 하루에 쓸 수 있는 몫은 하나예요.
+        </p>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-paper2/60 p-4 text-xs leading-relaxed text-ink2">
+        <p className="font-bold text-ink">왜 끊나 (2026-10-06 실측)</p>
+        <p className="mt-1">
+          과학 문제은행은 유형 520개 · 문항 37,183개인데 그중 <b>422개(81%)가 4단계</b>짜리예요.
+          한 단계에서 2문제를 연속으로 맞혀야 올라가니 유형 하나에 <b>최소 8문제</b>,
+          앞에 개념 빈칸이 붙고 한 번이라도 틀리면 그 단계에서 2문제를 더 맞혀야 합니다.
+          정복 큐는 12유형까지 줄을 세우니 <b>최소 96문제</b> — 하루에 다 풀 수 없어요.
+        </p>
+        <p className="mt-2">
+          끊어도 <b>잃는 것은 없습니다.</b> 이미 푼 문제는 다시 나오지 않고(같은 문제를 두 번 내지 않아요),
+          올라간 단계도 그대로 남아 다른 기기에서도 이어집니다.
+        </p>
+      </div>
+    </section>
   )
 }
 

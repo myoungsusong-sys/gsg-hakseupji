@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
@@ -7,6 +7,11 @@ import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
 import { readSticky, writeSticky } from '../pages/student/common'
+import { useStore } from '../lib/store'
+import { dateKey } from '../lib/dates'
+import { todaySet, type TodaySet } from '../lib/masterySet'
+import MathAnswerField, { levelFromCourse } from './student/MathAnswerField'
+import { answerUnit } from '../lib/mathAnswer'
 import {
   newMastery, normalizeMastery, step, passConcept, pickForFloor, conceptBlanks, topFloorOf,
   FLOOR_NAME, FLOOR_DESC, UP_STREAK, progressPercent,
@@ -26,7 +31,7 @@ import {
  */
 
 export default function MasteryRunner({
-  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel,
+  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel, course,
 }: {
   typeId: string
   typeName: string
@@ -40,6 +45,8 @@ export default function MasteryRunner({
   /** 이 유형에 낼 문항이 아예 없을 때 — 다음 오답 유형(범위 모드) 또는 목록으로. 정복으로 치지 않는다 */
   onSkip?: () => void
   skipLabel?: string
+  /** 어느 과정인가 — 답 입력 키패드를 초등/중등/고등에 맞춘다 */
+  course?: string
 }) {
   // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
   const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 2))
@@ -61,12 +68,34 @@ export default function MasteryRunner({
   const [blankIdx, setBlankIdx] = useState(0)
   const [blankShown, setBlankShown] = useState(false)
 
+  // 🪜 오늘 몫 — 하루 문제 수에 닿으면 그날은 여기서 멈춘다(= 한 세트). 2026-10-06 명수쌤 지시.
+  //    과목을 가리지 않고 합쳐 센다. 지금 유형은 store 에 저장되기 전 값이 정확하니 직접 세어 더한다.
+  const { masteries, studentAppConfig } = useStore()
+  const [extend, setExtend] = useState(false)        // 「조금 더 풀기」를 누르면 오늘은 상한을 풀어 준다
+  const solvedHere = useMemo(() => {
+    const today = dateKey(new Date())
+    return state.log.filter((l) => l?.at && dateKey(l.at) === today).length
+  }, [state.log])
+  const sets: TodaySet = useMemo(
+    () => todaySet(masteries, studentId, studentAppConfig.masteryDailyCap,
+      { exceptTypeId: typeId, extraToday: solvedHere }),
+    [masteries, studentId, studentAppConfig.masteryDailyCap, typeId, solvedHere],
+  )
+  const capped = sets.full && !extend
+  // 🔴 아래 「층이 바뀌면 문제를 뽑는다」 useEffect 가 capped 를 의존성에 넣으면, 상한에 닿는 순간
+  //    다시 돌면서 **풀고 있던 문제를 치워 버린다**(마지막 문제의 해설을 못 본다).
+  //    그래서 ref 로만 읽는다 — 다음에 뽑으러 올 때 비로소 막힌다.
+  const cappedRef = useRef(capped)
+  useEffect(() => { cappedRef.current = capped }, [capped])
+
   // 층이 바뀌면 그 층의 문제를 새로 뽑는다
   // 🔴 2026-10-01: 새로고침·앱 재시작 뒤에도 **풀던 그 문제**로 돌아온다(같은 층·같은 진행 수일 때만).
   const curKey = studentId && studentId !== 'me' ? `${studentId}:ladder-cur:${typeId}` : null
   useEffect(() => {
     setPicked(null); setRevealed(false); setInput(''); setSel(''); setPartVals([]); setJudged(null)
     if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); return }
+    // 오늘 몫을 다 썼으면 다음 문제를 뽑지 않는다 — 뽑아 두면 servedIds 에 들어가 내일 그 문제를 잃는다
+    if (cappedRef.current) { setCurrent(null); return }
     const kept = curKey ? readSticky<{ floor: number; n: number; pid: string }>(curKey) : undefined
     const again = kept && kept.floor === state.floor && kept.n === state.servedIds.length
       ? pool.find((p) => p.id === kept.pid) : undefined
@@ -92,6 +121,12 @@ export default function MasteryRunner({
   const plain = current && !isChoice && !labeled ? plainAnswerParts(current.answer) : null
   const nParts = labeled?.length ?? plain?.length ?? 0
   const joinedParts = labeled ? joinAnswerParts(partVals, current?.answer) : plain ? joinPlainParts(partVals) : ''
+  // ✍️ 답 입력을 간단하게 (2026-10-06 명수쌤 「학생들이 정답입력을 간단히 할 수 있게 해줘」)
+  //    · 키패드 — 숫자·√·제곱·분수·ㄱㄴㄷ·㉠㉡·단위를 눌러서 넣는다(태블릿 OS 키보드를 안 띄워도 된다)
+  //    · 단위 — 정답이 「6[cm]」처럼 단위로 끝나면 cm 은 칸 밖에 미리 적어 주고 «숫자만» 받는다.
+  //      실측(2026-10-06): 주관식 정답 219,431개 중 54,803개(25.0%)가 이 모양이다.
+  const kp = levelFromCourse(course)
+  const unit = current && !isChoice && nParts === 0 ? answerUnit(current.answer) : null
 
   function mark(correct: boolean) {
     if (!current) return
@@ -112,7 +147,7 @@ export default function MasteryRunner({
   // ── 마스터 / 선생님 호출 ──────────────────────────────────────────────
   if (state.mastered) {
     return (
-      <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
         <div className="py-10 text-center">
           <div className="text-4xl">🎉</div>
           <p className="mt-3 text-lg font-black text-pine-dark">이 유형을 마스터했습니다</p>
@@ -124,7 +159,7 @@ export default function MasteryRunner({
   }
   if (state.needsTeacher) {
     return (
-      <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
         <div className="py-8 text-center">
           <div className="text-3xl">🙋</div>
           <p className="mt-3 text-base font-black text-amber">선생님을 불러 주세요</p>
@@ -141,11 +176,45 @@ export default function MasteryRunner({
     )
   }
 
+  // ── 오늘 몫을 다 썼다 ─────────────────────────────────────────────────
+  // 🔴 마스터·선생님 호출보다 «뒤»에 둔다 — 마지막 문제로 마스터했으면 축하를 먼저 보여 준다.
+  //    개념 빈칸(0층)보다는 «앞»이다. 상한에 닿았는데 새 유형의 개념만 계속 넘기게 두면 끊은 뜻이 없다.
+  if (capped && judged === null && !revealed) {
+    return (
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+        <div className="py-8 text-center">
+          <div className="text-3xl">🌙</div>
+          <p className="mt-3 text-base font-black text-pine-dark">오늘 몫을 다 풀었어요</p>
+          <p className="mt-1 text-sm text-ink2">
+            {sets.setNo}세트 · 오늘 {sets.done}문제 — 수고했어요.
+          </p>
+          <p className="mt-3 text-xs leading-relaxed text-ink2">
+            여기까지 푼 것은 그대로 남아 있어요.<br />
+            다음에 오면 <b>이 자리에서 이어서</b> 다음 세트를 풉니다.
+          </p>
+          <Trail state={state} />
+          <div className="mt-4 flex flex-col items-center gap-2">
+            {onClose && (
+              <button type="button" onClick={onClose}
+                className="w-full rounded-lg bg-pine py-2.5 text-sm font-bold text-paper hover:bg-pine-dark">
+                오늘은 여기까지
+              </button>
+            )}
+            <button type="button" onClick={() => setExtend(true)}
+              className="text-[11px] text-ink2 underline hover:text-ink">
+              조금 더 풀기
+            </button>
+          </div>
+        </div>
+      </Frame>
+    )
+  }
+
   // ── 0층: 개념 빈칸 ────────────────────────────────────────────────────
   if (state.floor === 0) {
     const b: ConceptBlank | undefined = blanks[blankIdx]
     return (
-      <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
         {msg && <Banner event={event} msg={msg} />}
         {!b ? (
           <div className="py-8 text-center text-sm text-ink2">
@@ -198,7 +267,7 @@ export default function MasteryRunner({
 
   // ── 1~4층: 문제 풀이 ──────────────────────────────────────────────────
   return (
-    <Frame typeName={typeName} state={state} top={top} onClose={onClose}>
+    <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
       {msg && <Banner event={event} msg={msg} />}
       {!current ? (
         <div className="py-10 text-center text-sm text-ink2">
@@ -262,14 +331,15 @@ export default function MasteryRunner({
               <div className="grid flex-1 gap-1.5">
                 <span className="text-[11px] text-ink2">답이 {nParts}개인 문제예요 — 칸마다 하나씩 적어요</span>
                 {Array.from({ length: nParts }, (_, k) => (
-                  <label key={k} className="flex items-center gap-2">
-                    {labeled && <span className="w-8 shrink-0 text-sm font-bold text-ink2">({labeled[k].label})</span>}
-                    <input
-                      value={partVals[k] ?? ''} autoFocus={k === 0} inputMode="text" placeholder={`답 ${k + 1}`}
-                      onChange={(e) => { const v = e.target.value; setPartVals(pv => { const n = [...pv]; n[k] = v; return n }) }}
-                      className="flex-1 rounded-lg border border-line px-3 py-2.5 text-base focus:border-pine focus:outline-none"
+                  <div key={k} className="flex items-start gap-2">
+                    {labeled && <span className="mt-2 w-8 shrink-0 text-sm font-bold text-ink2">({labeled[k].label})</span>}
+                    <MathAnswerField
+                      value={partVals[k] ?? ''} level={kp} width="w-40" placeholder={`답 ${k + 1}`}
+                      defaultOpen={k === 0}
+                      onChange={(v) => setPartVals(pv => { const n = [...pv]; n[k] = v; return n })}
+                      onSubmit={() => { if (joinedParts) { setInput(joinedParts); judge(joinedParts) } }}
                     />
-                  </label>
+                  </div>
                 ))}
               </div>
               <button type="submit" disabled={!joinedParts}
@@ -279,17 +349,25 @@ export default function MasteryRunner({
             </form>
           )}
           {judged === null && !isChoice && !isSelfGraded(current) && nParts === 0 && (
-            <form className="mt-3 flex gap-2"
+            <form className="mt-3"
               onSubmit={(e) => { e.preventDefault(); if (input.trim()) judge(input) }}>
-              <input
-                value={input} onChange={(e) => setInput(e.target.value)}
-                autoFocus inputMode="text" placeholder="답을 입력하세요"
-                className="flex-1 rounded-lg border border-line px-3 py-2.5 text-base focus:border-pine focus:outline-none"
-              />
-              <button type="submit" disabled={!input.trim()}
-                className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper disabled:opacity-40">
-                제출
-              </button>
+              <div className="flex flex-wrap items-start gap-2">
+                <MathAnswerField
+                  value={input} onChange={setInput} level={kp} width="w-44" defaultOpen
+                  hideUnits={!!unit} placeholder={unit ? '숫자만' : '답 입력'}
+                  onSubmit={() => { if (input.trim()) judge(input) }}
+                />
+                {unit && <span className="mt-2 text-sm font-bold text-ink">{unit.label}</span>}
+                <button type="submit" disabled={!input.trim()}
+                  className="mt-0.5 rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper disabled:opacity-40">
+                  제출
+                </button>
+              </div>
+              {unit && (
+                <span className="mt-1 block text-[11px] text-ink2">
+                  단위 {unit.label}는 이미 적혀 있어요 — 숫자(값)만 넣으면 돼요
+                </span>
+              )}
             </form>
           )}
 
@@ -348,8 +426,10 @@ export default function MasteryRunner({
 
 // ── 껍데기 ────────────────────────────────────────────────────────────────
 
-function Frame({ typeName, state, top, onClose, children }: {
-  typeName: string; state: MasteryState; top: Floor; onClose?: () => void; children: React.ReactNode
+function Frame({ typeName, state, top, sets, onClose, children }: {
+  typeName: string; state: MasteryState; top: Floor
+  sets?: TodaySet                      // 🪜 오늘 몫 — 몇 세트째 · 오늘 몇/몇 문제
+  onClose?: () => void; children: React.ReactNode
 }) {
   const pct = progressPercent(state, top)
   const steps = Array.from({ length: top + 1 }, (_, i) => i as Floor)
@@ -362,6 +442,12 @@ function Frame({ typeName, state, top, onClose, children }: {
             {top + 1}단계 중 {state.floor + 1}단계 · {FLOOR_NAME[state.floor]} · 연속 {state.streak}/{UP_STREAK}
             {state.log.length > 0 && ` · 지금까지 ${state.log.length}문제`}
           </p>
+          {sets && (
+            <p className="mt-0.5 text-[11px] font-semibold text-pine-dark">
+              {sets.setNo}세트 · 오늘 {sets.done}/{sets.cap}문제
+              {sets.left > 0 ? ` · 앞으로 ${sets.left}` : ' · 오늘 몫 끝'}
+            </p>
+          )}
         </div>
         {onClose && (
           <button type="button" onClick={onClose}
@@ -385,6 +471,17 @@ function Frame({ typeName, state, top, onClose, children }: {
       <div className="mb-3 h-1 rounded-full bg-line">
         <div className="h-1 rounded-full bg-pine transition-all" style={{ width: `${pct}%` }} />
       </div>
+
+      {/* 🪜 오늘 몫 — 사다리(이 유형의 진행)와 따로 보여 준다. 학생이 「오늘 얼마 남았나」를 알아야 한다 */}
+      {sets && (
+        <div className="mb-3 flex items-center gap-2">
+          <div className="h-1.5 flex-1 rounded-full bg-line">
+            <div className="h-1.5 rounded-full bg-amber transition-all"
+              style={{ width: `${Math.min(100, Math.round((sets.done / Math.max(1, sets.cap)) * 100))}%` }} />
+          </div>
+          <span className="shrink-0 text-[10px] text-ink2">오늘 {sets.done}/{sets.cap}</span>
+        </div>
+      )}
 
       {children}
     </div>

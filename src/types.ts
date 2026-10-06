@@ -456,6 +456,9 @@ export interface StudentAppConfig {
   aiGrade?: boolean
   aiCoach?: boolean              // 🤖 AI 실시간 코치 — 필기 멈추면 자동 점검·첨삭 (기본 true=사용)
   autoDrill?: boolean            // 📘 제출 즉시 오답학습지 자동 생성·숙제 배정 (기본 true=사용)
+  // 🪜 승강제 하루 문제 수 — 과목 공통(2026-10-06 명수쌤). 비면 lib/masterySet.ts 의 20.
+  //    이 수에 닿으면 그날 승강제는 멈추고, 다음에 와서 그 자리에서 이어 푼다(= 한 세트).
+  masteryDailyCap?: number
   lab?: LabConfig                // 실험실 설정
 }
 

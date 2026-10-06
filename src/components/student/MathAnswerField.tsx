@@ -23,11 +23,21 @@ export function levelFromGrade(grade?: string): KeypadLevel {
   return '고등'
 }
 
-type Key = { t: string; ins?: string; back?: number; hint?: string }
+type Key = { t: string; ins?: string; back?: number; hint?: string; del?: boolean; wide?: boolean }
 const K = (t: string, ins?: string, back?: number, hint?: string): Key => ({ t, ins, back, hint })
 
 // back = 삽입 후 커서를 왼쪽으로 옮길 칸수 (분수 "/" 처럼 가운데로 보낼 때)
 const GROUPS: Record<string, Key[]> = {
+  // 🔢 2026-10-06 명수쌤 「학생들이 정답입력을 간단히 할 수 있게 해줘」
+  //    실측: 주관식 정답 219,431개 중 **55.6%가 숫자·기호만**이고 길이 중앙값이 2자인데,
+  //    키패드에 숫자가 없어 그 짧은 답 하나를 치려고 태블릿 OS 키보드를 띄워야 했다
+  //    (키보드가 화면 절반을 가린다). 숫자를 맨 앞 탭으로 둔다.
+  '숫자': [
+    K('1', '1'), K('2', '2'), K('3', '3'), K('4', '4'), K('5', '5'),
+    K('6', '6'), K('7', '7'), K('8', '8'), K('9', '9'), K('0', '0'),
+    K('.', '.'), K('-', '-'), K('/', '/', 0, '분수는 15/2 처럼'),
+    { t: '⌫', del: true, hint: '한 글자 지우기' },
+  ],
   '수·기호': [
     K('√', '√'), K('제곱', '^2'), K('세제곱', '^3'), K('^', '^'),
     K('π', 'π'), K('±', '±'), K('°', '°'), K('÷', '/'), K('×', '*'),
@@ -50,9 +60,9 @@ const GROUPS: Record<string, Key[]> = {
 }
 
 const TABS_BY_LEVEL: Record<KeypadLevel, string[]> = {
-  초등: ['분수', '수·기호', '도형', '단위', '보기'],
-  중등: ['수·기호', '분수', '비교', '도형', '단위', '보기'],
-  고등: ['수·기호', '분수', '비교', '도형', '단위', '보기'],
+  초등: ['숫자', '분수', '수·기호', '도형', '단위', '보기'],
+  중등: ['숫자', '수·기호', '분수', '비교', '도형', '단위', '보기'],
+  고등: ['숫자', '수·기호', '분수', '비교', '도형', '단위', '보기'],
 }
 
 /** 학생이 친 표기를 표준 기호로 예쁘게 보여준다 (루트2 → √2). 채점 결과와 무관한 안내용. */
@@ -67,7 +77,7 @@ function preview(v: string): string {
 
 export default function MathAnswerField({
   value, onChange, level = '중등', placeholder = '답 입력', className = '', width = 'w-44',
-  hideUnits = false,
+  hideUnits = false, defaultOpen = false, onSubmit,
 }: {
   value: string
   onChange: (v: string) => void
@@ -77,13 +87,27 @@ export default function MathAnswerField({
   width?: string
   /** 칸 밖에 단위 라벨이 붙은 문항 — 키패드 '단위' 탭을 숨긴다(라벨 있는데 또 치게 하면 안 된다) */
   hideUnits?: boolean
+  /** 처음부터 키패드를 펴 둔다 — 승강제처럼 «한 문제 한 답»만 받는 화면 */
+  defaultOpen?: boolean
+  /** 칸에서 Enter 를 눌렀을 때 (키패드 안에서는 form submit 이 안 일어난다) */
+  onSubmit?: () => void
 }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(defaultOpen)
   const [tab, setTab] = useState(TABS_BY_LEVEL[level][0])
   const ref = useRef<HTMLInputElement>(null)
 
   function insert(k: Key) {
     const el = ref.current
+    // ⌫ — 커서 앞 한 글자(선택이 있으면 그 범위)를 지운다
+    if (k.del) {
+      if (!el) { onChange(value.slice(0, -1)); return }
+      const s = el.selectionStart ?? value.length
+      const e = el.selectionEnd ?? s
+      const from = s === e ? Math.max(0, s - 1) : s
+      onChange(value.slice(0, from) + value.slice(e))
+      requestAnimationFrame(() => { el.focus(); el.setSelectionRange(from, from) })
+      return
+    }
     const ins = k.ins ?? k.t
     if (!el) { onChange(value + ins); return }
     const s = el.selectionStart ?? value.length
@@ -103,6 +127,7 @@ export default function MathAnswerField({
       <div className="flex flex-wrap items-center gap-1.5">
         <input ref={ref} value={value} onChange={e => onChange(e.target.value)}
           placeholder={placeholder} autoComplete="off"
+          onKeyDown={(e) => { if (e.key === 'Enter' && onSubmit) { e.preventDefault(); onSubmit() } }}
           className={`${width} rounded-lg border border-line px-3 py-2 text-sm`} />
         <button type="button" onClick={() => setOpen(o => !o)}
           title="수식 기호 넣기"
@@ -132,7 +157,10 @@ export default function MathAnswerField({
           <div className="flex flex-wrap gap-1">
             {(GROUPS[tab] ?? []).map(k => (
               <button key={k.t} type="button" onClick={() => insert(k)} title={k.hint}
-                className="min-w-9 rounded-lg border border-line bg-white px-2 py-1.5 text-sm font-bold text-ink hover:border-pine hover:bg-pine-soft">
+                className={`rounded-lg border bg-white font-bold text-ink hover:border-pine hover:bg-pine-soft ${
+                  tab === '숫자'
+                    ? 'min-w-12 border-line px-3 py-2.5 text-base'   // 숫자는 손가락으로 누르니 크게
+                    : 'min-w-9 border-line px-2 py-1.5 text-sm'}`}>
                 {k.t}
               </button>
             ))}
