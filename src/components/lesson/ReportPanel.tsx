@@ -8,7 +8,7 @@ import { SUBJECTS, useSubject, subjectOfGrading, subjectOfWorkbook, type Subject
 import { SUPABASE_ON, supabase } from '../../lib/supabase'
 import { dateKey, monthKey, todayKey, krDateLabel, nextClassDate } from '../../lib/dates'
 import { resultTypeId } from '../../lib/drill'
-import { typeName, typeUnitName } from '../../data/curriculum'
+import { typeName, typeUnitName, subjectOfType } from '../../data/curriculum'
 
 // ── 수업 > 보고서: 일일 보고지 + 월간 보고서 (즉석 실시간 생성 + 저장 목록 레이어) ──────────
 
@@ -162,10 +162,34 @@ const FOCUS_LABEL = { good: '좋았음', ok: '보통', low: '흐트러짐' } as 
 const HW_LABEL = { done: '해 옴', partial: '일부', none: '못 해 옴' } as const
 
 function DailyReport({ student, subject, initialDate }: { student: Student; subject: Subject; initialDate?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile } = useStore()
+  const { gradings, workbooks, worksheets, wbItems, dailyNotes, lecturePlans, saveDailyNote, addSavedReport, academyProfile, masteries } = useStore()
   // 브랜드는 보고서 과목 기준 (헤더 전역 과목이 아니라) — 과학 보고서엔 '깊은생각과학'
   const brand = brandFor(academyProfile.academyName?.trim() || DEFAULT_ACADEMY, subject)
   const [date, setDate] = useState(initialDate ?? todayKey())
+
+  // 🪜 오늘 승강제 (2026-10-06 명수쌤 「승강제를 학생들이 풀면 그날 결과를 과목별로 학부모한테 카톡으로」)
+  //    그동안 학부모 보고서는 채점 기록(교재·학습지)만 담았다 — 학생이 승강제를 아무리 풀어도 한 줄도 안 나갔다.
+  //    masteries 는 `<학생id>|<유형id>` 키에 MasteryState 를 담고, log 에 푼 기록이 시각과 함께 쌓인다.
+  //    🔴 log 의 at 은 UTC ISO 라 앞 10자를 그냥 자르면 한국 새벽(0~9시) 기록이 전날로 샌다 → dateKey 로 **로컬 날짜**로 바꿔 센다.
+  const ladders = useMemo(() => {
+    const out: { name: string; from: number; to: number; solved: number; correct: number; mastered: boolean; stuck: boolean }[] = []
+    for (const [k, st] of Object.entries(masteries ?? {})) {
+      const bar = k.indexOf('|')
+      if (bar < 0 || k.slice(0, bar) !== student.id) continue
+      const typeId = k.slice(bar + 1)
+      if (subjectOfType(typeId) !== subject) continue          // 과목별 보고서 — 다른 과목 유형은 뺀다
+      const today = (st?.log ?? []).filter(l => l?.at && dateKey(new Date(l.at)) === date)
+      if (!today.length) continue
+      out.push({
+        name: typeName(typeId) || typeId,
+        from: today[0].floor, to: st.floor,
+        solved: today.length, correct: today.filter(l => l.correct).length,
+        mastered: !!st.mastered, stuck: !!st.needsTeacher,
+      })
+    }
+    // 많이 올라간 것 → 많이 푼 것 순서
+    return out.sort((a, b) => (b.to - b.from) - (a.to - a.from) || b.solved - a.solved)
+  }, [masteries, student.id, subject, date])
 
   // 저장분 → 화면 상태. 선생님 한마디·다음계획은 과목별(bySubject), 등하원·보강일은 과목 공용.
   // 레거시(bySubject 없음) 기록의 comment/nextPlan은 수학 값으로 읽는다.
@@ -855,9 +879,9 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
         <div className="mb-2 text-center text-xs text-ink2">👇 아래 카드가 그대로 이미지가 됩니다 — [🖼 이미지 카드 복사] 후 카톡에 붙여넣기</div>
         <div className="flex justify-center">
           <div ref={cardRef}>
-            <ReportCard student={student} brand={brand} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
+            <ReportCard student={student} brand={brand} subject={subject} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
-              weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes}
+              weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes} ladders={ladders}
               covered={coveredUnits.units} hasDrill={drills.length > 0} comment={effComment} nextPlan={effNextPlan}
               nextSession={nextSession} checkIn={effCheckIn} checkOut={effCheckOut}
               todayPlanText={todayPlanText} nextPlanText={nextPlanText} />
@@ -1250,15 +1274,16 @@ function KakaoPreview({ text }: { text: string }) {
 const C = { blue: '#2b7de9', blueDark: '#1b5fc2', blueSoft: '#eef5fe', ink: '#1f2937', ink2: '#6b7280',
   line: '#e5e7eb', amberSoft: '#fff7e6', amber: '#b45309', red: '#dc2626', redSoft: '#fdecec', green: '#15803d' }
 
-function ReportCard({ student, brand, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
-  weekAvg, weekDelta, streak, wrongTypes, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut,
+function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
+  weekAvg, weekDelta, streak, wrongTypes, ladders, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut,
   todayPlanText, nextPlanText }: {
-  student: Student; brand: string; dateKr: string
+  student: Student; brand: string; subject: Subject; dateKr: string
   bookRows: { name: string; range: string; total: number; correct: number; unknown: number; score: number }[]
   sheetRows: { name: string; total: number; correct: number; unknown: number; score: number }[]
   totalSolved: number; totalCorrect: number; totalUnknown: number; overall: number
   weekAvg: number | null; weekDelta: number | null; streak: number
   wrongTypes: { name: string; n: number }[]; covered: { name: string; n: number }[]
+  ladders: { name: string; from: number; to: number; solved: number; correct: number; mastered: boolean; stuck: boolean }[]
   hasDrill: boolean; comment: string; nextPlan: string
   nextSession: { key: string; label: string; isMakeup: boolean } | null; checkIn: string; checkOut: string
   todayPlanText: string; nextPlanText: string
@@ -1365,6 +1390,34 @@ function ReportCard({ student, brand, dateKr, bookRows, sheetRows, totalSolved, 
               ))}
             </div>
           </>
+        )}
+
+        {/* 🪜 오늘 승강제 — 그날 푼 유형의 단계 변화 (2026-10-06 명수쌤 지시) */}
+        {ladders.length > 0 && (
+          <div style={{ marginTop: 12 }}>
+            <div style={{ fontSize: 12, fontWeight: 800, marginBottom: 6 }}>🪜 오늘 승강제 — {subject}</div>
+            <div style={{ display: 'grid', gap: 4 }}>
+              {ladders.slice(0, 5).map((t, i) => {
+                const up = t.to > t.from, down = t.to < t.from
+                const label = t.mastered ? '✓ 마스터'
+                  : up ? `${t.from + 1}단계 → ${t.to + 1}단계 ↑`
+                  : down ? `${t.from + 1}단계 → ${t.to + 1}단계 ↓`
+                  : `${t.to + 1}단계 유지`
+                const col = t.mastered || up ? C.green : down ? C.amber : C.ink2
+                return (
+                  <div key={i} style={{ display: 'flex', alignItems: 'baseline', gap: 6, fontSize: 11.5 }}>
+                    <span style={{ color: C.ink2 }}>·</span>
+                    <span style={{ fontWeight: 700, flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{t.name}</span>
+                    <span style={{ fontWeight: 800, color: col, whiteSpace: 'nowrap' }}>{label}</span>
+                    <span style={{ color: C.ink2, whiteSpace: 'nowrap' }}>({t.solved}문제)</span>
+                  </div>
+                )
+              })}
+              {ladders.length > 5 && (
+                <div style={{ fontSize: 11, color: C.ink2 }}>외 {ladders.length - 5}개 유형</div>
+              )}
+            </div>
+          </div>
         )}
 
         {/* 취약 유형 */}

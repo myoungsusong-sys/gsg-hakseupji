@@ -26,7 +26,7 @@ const TAG_OPTIONS = [
 
 // 수업 > 학습지 탭 (매쓰플랫 동일) — 이 학생에게 출제한 학습지 목록·자동채점·오답 재출제
 export default function WorksheetPanel({ student }: { student: Student }) {
-  const { worksheets, assignments, gradings, problems, addAssignment, removeAssignment, duplicateWorksheet } = useStore()
+  const { worksheets, assignments, gradings, problems, addAssignment, removeAssignment, duplicateWorksheet, masteries } = useStore()
   const nav = useNavigate()
 
   const [tag, setTag] = useState('태그 전체')
@@ -41,6 +41,29 @@ export default function WorksheetPanel({ student }: { student: Student }) {
   const [outDialog, setOutDialog] = useState<'download' | 'print' | null>(null)
 
   const problemMap = useMemo(() => new Map(problems.map(p => [p.id, p])), [problems])
+
+  // 🪜 오늘 승강제에서 틀린 문항 (2026-10-06 명수쌤 「숙제를 낼 승강제 오답문제도 출력할 수 있게」)
+  //    승강제 기록(masteries)의 log 에 {problemId, correct} 가 남는다. 그중 **오늘 틀린 것**만 모아
+  //    기존 오답학습지 경로(DrillModal)에 그대로 넘긴다 — 만들기·출제·인쇄가 이미 그 안에 다 있다.
+  //    🔴 log 의 at 은 UTC ISO 라 앞 10자를 자르면 한국 새벽 기록이 전날로 샌다 → dateKey 로 로컬 날짜 비교.
+  const ladderWrongs = useMemo(() => {
+    const today = todayKey()
+    const out: DrillWrong[] = []
+    const seen = new Set<string>()
+    for (const [k, st] of Object.entries(masteries ?? {})) {
+      const bar = k.indexOf('|')
+      if (bar < 0 || k.slice(0, bar) !== student.id) continue
+      const typeId = k.slice(bar + 1)
+      for (const l of st?.log ?? []) {
+        if (l.correct || !l.problemId) continue
+        if (!l.at || dateKey(new Date(l.at)) !== today) continue
+        if (seen.has(l.problemId)) continue          // 같은 문제를 두 번 틀려도 한 번만
+        seen.add(l.problemId)
+        out.push({ typeId, diff: problemMap.get(l.problemId)?.diff, problemId: l.problemId })
+      }
+    }
+    return out
+  }, [masteries, student.id, problemMap])
 
   // 이 학생 출제 행 (학습지 조인, 삭제분 제외)
   const rows = useMemo(() => {
@@ -170,6 +193,12 @@ export default function WorksheetPanel({ student }: { student: Student }) {
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="학습지명 검색"
           className="w-48 rounded-lg border border-line px-3 py-2" />
         <div className="grow" />
+        <button onClick={() => setDrill({ title: `[승강제 오답] ${student.name} ${todayKey()}`, wrongs: ladderWrongs })}
+          disabled={ladderWrongs.length === 0}
+          title={ladderWrongs.length ? '오늘 승강제에서 틀린 문제로 숙제 학습지를 만듭니다' : '오늘 승강제에서 틀린 문제가 없습니다'}
+          className="rounded-lg border border-clay px-4 py-2 font-bold text-clay hover:bg-clay/10 disabled:opacity-40">
+          🪜 승강제 오답 숙제{ladderWrongs.length > 0 ? ` (${ladderWrongs.length})` : ''}
+        </button>
         <button onClick={() => setPeriodOpen(true)}
           className="rounded-lg border border-pine px-4 py-2 font-bold text-pine hover:bg-pine-soft">
           단원·기간별 취약 유형 관리
