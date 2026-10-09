@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
+import InkCanvas, { PEN_SIZES, PEN_COLORS, type Stroke } from './student/InkCanvas'
+import * as pencil from '../lib/pencilSound'
 import AskProblemButton from './student/AskProblemButton'
 import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
@@ -59,6 +61,20 @@ export default function MasteryRunner({
   const [revealed, setRevealed] = useState(false)
   const [msg, setMsg] = useState<string>('')
   const [event, setEvent] = useState<string>('')
+
+  // ✏️ 문제 위 필기 (2026-10-09 명수쌤 「학생이 수학 승강제풀이를 패드로 하는데 풀이를 쓸 수 없대」)
+  //    학습지 풀이 화면(StudentSolve)에는 펜 필기가 있는데 **승강제 화면에는 쓸 자리가 아예 없었다.**
+  //    같은 InkCanvas 를 문제 위 + 그 아래 빈 풀이 칸에 깐다. 규칙도 학습지와 같다 —
+  //    펜(또는 지우개)을 «골라야» 써지고, 안 골랐을 때는 터치가 통과해 화면이 스크롤된다(10-03 명수쌤).
+  //    필기는 이 기기 메모리에 문항별로만 둔다(서버로 보내지 않는다).
+  const [tool, setTool] = useState<'none' | 'pen' | 'eraser'>('none')
+  const [penSize, setPenSize] = useState(1)          // PEN_SIZES 인덱스
+  const [penColor, setPenColor] = useState(PEN_COLORS[0])
+  const [handWrite, setHandWrite] = useState(true)   // 손으로 쓰기 — 끄면 스타일러스(pen 포인터)만
+  const [penSound, setPenSound] = useState(() => pencil.soundOn())
+  const [penPop, setPenPop] = useState(false)
+  const [inks, setInks] = useState<Record<string, Stroke[]>>({})
+  const [redos, setRedos] = useState<Record<string, Stroke[]>>({})
 
   // 개념 빈칸 (0층)
   const blanks = useMemo(() => conceptBlanks(typeId), [typeId])
@@ -127,6 +143,34 @@ export default function MasteryRunner({
   //      실측(2026-10-06): 주관식 정답 219,431개 중 54,803개(25.0%)가 이 모양이다.
   const kp = levelFromCourse(course)
   const unit = current && !isChoice && nParts === 0 ? answerUnit(current.answer) : null
+
+  // 필기 조작 (지금 문항)
+  const inkId = current?.id ?? ''
+  const myInk = inks[inkId] ?? []
+  const myRedo = redos[inkId] ?? []
+  function pushStroke(s: Stroke) {
+    setInks(prev => ({ ...prev, [inkId]: [...(prev[inkId] ?? []), s] }))
+    setRedos(prev => ({ ...prev, [inkId]: [] }))
+  }
+  function undoInk() {
+    if (myInk.length === 0) return
+    setInks(prev => ({ ...prev, [inkId]: myInk.slice(0, -1) }))
+    setRedos(prev => ({ ...prev, [inkId]: [...myRedo, myInk[myInk.length - 1]] }))
+  }
+  function redoInk() {
+    if (myRedo.length === 0) return
+    setRedos(prev => ({ ...prev, [inkId]: myRedo.slice(0, -1) }))
+    setInks(prev => ({ ...prev, [inkId]: [...myInk, myRedo[myRedo.length - 1]] }))
+  }
+  function clearInk() {
+    if (myInk.length === 0) return
+    if (!confirm('이 문제의 필기를 모두 지울까요?')) return
+    setInks(prev => ({ ...prev, [inkId]: [] }))
+    setRedos(prev => ({ ...prev, [inkId]: [] }))
+  }
+  const toolBtn = (on: boolean) =>
+    `flex h-9 w-9 items-center justify-center rounded-lg border text-sm font-bold transition ${
+      on ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink2 hover:text-ink'}`
 
   function mark(correct: boolean) {
     if (!current) return
@@ -298,8 +342,86 @@ export default function MasteryRunner({
           </div>
 
           <div className="rounded-xl border border-line p-4">
-            {/* 보기는 아래에서 **클릭 버튼**으로 직접 그린다 — 여기서 또 그리면 두 번 나온다 */}
-            <ProblemContent p={current} hideChoices />
+            {/* ✏️ 필기 도구줄 — 학습지 풀이 화면과 같은 단추(↶ ↷ 펜 지우개 🗑 + 펜 설정) */}
+            <div className="mb-2 flex flex-wrap items-center gap-1.5">
+              <span className="text-[11px] text-ink2">
+                {tool === 'none' ? '✏️ 펜을 누르면 문제 위·아래 칸에 풀이를 쓸 수 있어요' : tool === 'pen' ? '✏️ 쓰는 중 — 펜을 한 번 더 누르면 펜 설정' : '◻ 지우는 중'}
+              </span>
+              <div className="grow" />
+              <div className="relative flex items-center gap-1.5">
+                <button type="button" onClick={undoInk} disabled={myInk.length === 0} title="되돌리기"
+                  className={`${toolBtn(false)} disabled:opacity-30`}>↶</button>
+                <button type="button" onClick={redoInk} disabled={myRedo.length === 0} title="다시하기"
+                  className={`${toolBtn(false)} disabled:opacity-30`}>↷</button>
+                <button type="button" onClick={() => { setTool('pen'); setPenPop(v => tool === 'pen' ? !v : false) }} title="펜 (다시 누르면 펜 설정)"
+                  className={toolBtn(tool === 'pen')}>
+                  <span style={tool === 'pen' ? undefined : { color: penColor }}>✏️</span>
+                </button>
+                <button type="button" onClick={() => { setTool('eraser'); setPenPop(false) }} title="지우개" className={toolBtn(tool === 'eraser')}>◻</button>
+                <button type="button" onClick={clearInk} disabled={myInk.length === 0} title="전체 지우기"
+                  className={`${toolBtn(false)} disabled:opacity-30`}>🗑</button>
+
+                {/* 펜 설정 — 손으로 쓰기 · 연필 소리 · 굵기 5 · 색 5 */}
+                {penPop && (
+                  <div className="absolute right-0 top-11 z-40 w-64 rounded-2xl border border-line bg-white p-4 shadow-xl">
+                    <div className="mb-3 flex items-center justify-between">
+                      <b className="text-sm">펜 설정</b>
+                      <label className="flex items-center gap-1.5 text-xs font-semibold text-ink2">
+                        손으로 쓰기
+                        <button type="button" onClick={() => setHandWrite(v => !v)} role="switch" aria-checked={handWrite}
+                          title="끄면 스타일러스 펜으로만 필기돼요"
+                          className={`h-5 w-9 rounded-full p-0.5 transition ${handWrite ? 'bg-pine' : 'bg-line'}`}>
+                          <span className={`block h-4 w-4 rounded-full bg-white shadow transition ${handWrite ? 'translate-x-4' : ''}`} />
+                        </button>
+                      </label>
+                    </div>
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="text-xs font-semibold text-ink2">✏️ 연필 소리</span>
+                      <button type="button" onClick={() => { const v = !penSound; setPenSound(v); pencil.setSoundOn(v) }}
+                        role="switch" aria-checked={penSound}
+                        title="쓸 때 사각사각 소리가 나요. 교실이 시끄러우면 끄세요"
+                        className={`h-5 w-9 rounded-full p-0.5 transition ${penSound ? 'bg-pine' : 'bg-line'}`}>
+                        <span className={`block h-4 w-4 rounded-full bg-white shadow transition ${penSound ? 'translate-x-4' : ''}`} />
+                      </button>
+                    </div>
+                    <div className="mb-3 flex items-center justify-between px-1">
+                      {PEN_SIZES.map((sz, i) => (
+                        <button type="button" key={i} onClick={() => setPenSize(i)}
+                          className={`flex h-8 w-8 items-center justify-center rounded-lg ${penSize === i ? 'bg-paper2 ring-1 ring-pine' : 'hover:bg-paper2/60'}`}>
+                          <span className="rounded-full bg-ink" style={{ width: sz * 2, height: sz * 2 }} />
+                        </button>
+                      ))}
+                    </div>
+                    <div className="flex items-center justify-between px-1">
+                      {PEN_COLORS.map(c => (
+                        <button type="button" key={c} onClick={() => setPenColor(c)}
+                          className={`flex h-9 w-9 items-center justify-center rounded-lg text-sm font-bold text-white ${penColor === c ? 'ring-2 ring-pine' : ''}`}
+                          style={{ background: c }}>
+                          {penColor === c ? '✓' : ''}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* 문제 본문 + 그 아래 빈 풀이 칸 — 둘 다 필기 캔버스 안이다.
+                🔴 보기 버튼은 캔버스 «밖»에 둔다 — 펜을 고른 동안 캔버스가 터치를 받으므로 안에 두면 안 눌린다 */}
+            <InkCanvas
+              strokes={myInk}
+              live
+              tool={tool}
+              color={penColor}
+              size={PEN_SIZES[penSize]}
+              handWrite={handWrite}
+              onCommit={pushStroke}>
+              {/* 보기는 아래에서 **클릭 버튼**으로 직접 그린다 — 여기서 또 그리면 두 번 나온다 */}
+              <ProblemContent p={current} hideChoices />
+              <div className="mt-3 flex h-72 items-start justify-end rounded-lg border border-dashed border-line/80 bg-paper2/20 p-2">
+                {myInk.length === 0 && <span className="text-[11px] text-ink2/60">풀이 칸</span>}
+              </div>
+            </InkCanvas>
             {isChoice && (
               <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
                 {(current.choices ?? ['', '', '', '', '']).map((c, i) => (
