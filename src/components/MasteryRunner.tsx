@@ -5,6 +5,7 @@ import ProblemContent from './ProblemContent'
 import InkCanvas, { PEN_SIZES, PEN_COLORS, type Stroke } from './student/InkCanvas'
 import * as pencil from '../lib/pencilSound'
 import AskProblemButton from './student/AskProblemButton'
+import { ConceptVideoButton, useConceptVideo } from './student/ConceptVideo'
 import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
@@ -83,6 +84,8 @@ export default function MasteryRunner({
   const top = useMemo(() => topFloorOf(typeId, pool), [typeId, pool])
   const [blankIdx, setBlankIdx] = useState(0)
   const [blankShown, setBlankShown] = useState(false)
+  // 🎬 개념 영상(2026-10-17 명수쌤 «빈칸 개념 확인 옆에 [개념 영상 보기]») — 지금 개념카드 영상이 먼저, 없으면 이 유형의 다른 카드 영상
+  const conceptVideo = useConceptVideo([blanks[blankIdx]?.conceptId, ...blanks.map((x) => x.conceptId)])
 
   // 🪜 오늘 몫 — 하루 문제 수에 닿으면 그날은 여기서 멈춘다(= 한 세트). 2026-10-06 명수쌤 지시.
   //    과목을 가리지 않고 합쳐 센다. 지금 유형은 store 에 저장되기 전 값이 정확하니 직접 세어 더한다.
@@ -287,12 +290,16 @@ export default function MasteryRunner({
               </div>
             )}
             {!blankShown ? (
-              <button type="button" onClick={() => setBlankShown(true)}
-                className="mt-3 w-full rounded-lg border border-pine py-2.5 text-sm font-bold text-pine hover:bg-pine-soft">
-                {b.kind === '공식' ? '빈칸에 들어갈 식 확인하기' : '빈칸에 들어갈 말 확인하기'}
-              </button>
+              <div className="mt-3 flex gap-2">
+                <button type="button" onClick={() => setBlankShown(true)}
+                  className="flex-1 rounded-lg border border-pine py-2.5 text-sm font-bold text-pine hover:bg-pine-soft">
+                  {b.kind === '공식' ? '빈칸에 들어갈 식 확인하기' : '빈칸에 들어갈 말 확인하기'}
+                </button>
+                {conceptVideo && <ConceptVideoButton video={conceptVideo} />}
+              </div>
             ) : (
               <div className="mt-3 flex gap-2">
+                {conceptVideo && <ConceptVideoButton video={conceptVideo} />}
                 <button type="button"
                   onClick={() => {
                     if (blankIdx + 1 < blanks.length) { setBlankIdx(blankIdx + 1); setBlankShown(false) }
