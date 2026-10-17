@@ -1,3 +1,16 @@
 {
-  "c-m2-1-u3m0s1": { "src": "concept-videos/c-m2-1-u3m0s1.mp4", "title": "일차함수와 그 그래프 — 절편·기울기와 함정 3가지", "sec": 84 }
+  "c-m2-1-u3m0s1": {"src": "concept-videos/c-m2-1-u3m0s1.mp4", "title": "일차함수와 그 그래프 — 절편·기울기와 함정 3가지", "sec": 84},
+  "c-m2-2-u0m0s0": {"src": "concept-videos/c-m2-2-u0m0s0.mp4", "title": "이등변삼각형의 성질", "sec": 85},
+  "c-m2-2-u0m0s1": {"src": "concept-videos/c-m2-2-u0m0s1.mp4", "title": "삼각형의 외심과 내심", "sec": 79},
+  "c-m2-2-u0m1s0": {"src": "concept-videos/c-m2-2-u0m1s0.mp4", "title": "평행사변형", "sec": 76},
+  "c-m2-2-u0m1s1": {"src": "concept-videos/c-m2-2-u0m1s1.mp4", "title": "여러 가지 사각형", "sec": 66},
+  "c-m2-2-u1m0s0": {"src": "concept-videos/c-m2-2-u1m0s0.mp4", "title": "닮은 도형", "sec": 87},
+  "c-m2-2-u1m0s1": {"src": "concept-videos/c-m2-2-u1m0s1.mp4", "title": "삼각형의 닮음 조건", "sec": 83},
+  "c-m2-2-u1m1s1": {"src": "concept-videos/c-m2-2-u1m1s1.mp4", "title": "삼각형의 무게중심", "sec": 81},
+  "c-m2-2-u1m1s2": {"src": "concept-videos/c-m2-2-u1m1s2.mp4", "title": "닮은 도형의 넓이와 부피", "sec": 85},
+  "c-m2-2-u1m2s0": {"src": "concept-videos/c-m2-2-u1m2s0.mp4", "title": "피타고라스 정리", "sec": 70},
+  "c-m2-2-u1m2s1": {"src": "concept-videos/c-m2-2-u1m2s1.mp4", "title": "피타고라스 정리의 활용", "sec": 93},
+  "c-m2-2-u2m0s0": {"src": "concept-videos/c-m2-2-u2m0s0.mp4", "title": "경우의 수", "sec": 77},
+  "c-m2-2-u2m0s1": {"src": "concept-videos/c-m2-2-u2m0s1.mp4", "title": "확률의 뜻과 성질", "sec": 92},
+  "c-m2-2-u2m0s2": {"src": "concept-videos/c-m2-2-u2m0s2.mp4", "title": "확률의 계산", "sec": 75}
 }
