@@ -178,6 +178,18 @@ function topLevelEq(s: string): number {
   return -1
 }
 
+/** 닫히지 않은 첫 괄호의 자리(없으면 -1) — 수식이 설명 괄호 중간에서 끊긴 경우를 찾는다 */
+function unclosedAt(s: string): number {
+  const open: number[] = []
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i]
+    if (ch === '\\') { i++; continue }
+    if (ch === '(' || ch === '{' || ch === '[') open.push(i)
+    else if ((ch === ')' || ch === '}' || ch === ']') && open.length) open.pop()
+  }
+  return open.length ? open[0] : -1
+}
+
 /** 우변이 빈칸으로 낼 값어치가 있나. `y=f(x)`·`P(X=a)=0` 같은 건 문제가 안 된다 */
 // 우변이 빈칸으로 낼 값어치가 있나. 한 글자(`0`·`a`)나 `f(x)` 같은 것만 걸러낸다.
 // 🔴 예전엔 '숫자나 연산기호가 있어야' 통과시켰는데, 그러면 $PV = nRT$·$p = mv$ 같은
@@ -266,11 +278,16 @@ export function conceptBlanks(typeId: string): ConceptBlank[] {
           const inner = m[1]
           const i = topLevelEq(inner)
           if (i <= 0) continue
-          const rhs = inner.slice(i + 1).trim()
+          const whole = inner.slice(i + 1).trim()
+          // 🔴 2026-10-17 명수쌤: 「$y=ax+b\ (a,\ b$는 상수, $a\neq0)$」 처럼 수식이 설명 괄호 한가운데서 끊긴 줄은
+          //    우변 «ax+b (a, b» 를 통째로 가려 「y = □는 상수, a≠0) 꼴로…」 가 됐다. 닫히지 않은 괄호부터는 가리지 않는다.
+          const cut = unclosedAt(whole)
+          const rhs = (cut < 0 ? whole : whole.slice(0, cut)).replace(/(?:\\[ ,;!]|\s)+$/, '').trim()
+          const rest = cut < 0 ? '' : whole.slice(cut)
           if (rhs.length < 2 || TRIVIAL_RHS.test(rhs)) continue
           formulas.push({
             conceptId: c.id, title: c.title,
-            text: line.replace(m[0], `$${inner.slice(0, i + 1)}\\;\\square$`),
+            text: line.replace(m[0], `$${inner.slice(0, i + 1)}\\;\\square${rest ? `\\ ${rest}` : ''}$`),
             answer: rhs, full: line, kind: '공식',
           })
           done = true
