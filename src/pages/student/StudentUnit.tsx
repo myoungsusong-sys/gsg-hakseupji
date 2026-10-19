@@ -56,7 +56,7 @@ export default function StudentUnit() {
   )
   const concepts = useMemo(() => (unit ? conceptsForSubUnits(new Set(unit.subIds)) : []), [unit])
   // 개념영상 — 단원 id(고른 층) · 그 아래 소단원 개념카드 id 순으로 있는 것 전부
-  const cvideos = useConceptVideos(unit ? [unit.id, ...unit.subIds, ...unit.subIds.map(id => `c-${id}`), ...concepts.map(c => c.id)] : [])
+  const cvideos = useConceptVideos(unit ? [...unit.videoKeys, ...unit.subIds.map(id => `c-${id}`), ...concepts.map(c => c.id)] : [])
 
   if (!unit) {
     return (

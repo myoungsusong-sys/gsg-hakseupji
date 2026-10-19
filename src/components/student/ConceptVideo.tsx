@@ -6,14 +6,17 @@
 
 import { useEffect, useState } from 'react'
 
-export interface ConceptVideoInfo { src: string; title?: string; sec?: number }
+export interface ConceptVideoInfo { src: string; title?: string; sec?: number; wide?: boolean /* 16:9 강의형(Explainer) — 세로 쇼츠가 아니면 true */ }
 
+// 🔗 2026-10-19: 우리 강사 이론으로 만든 단원 개념강의(가로)·쇼츠는 서버 저장소(Supabase 공개 버킷 concept-videos)에 있다.
+//    목록 = 앱 안 index.json(옛 14편) + 버킷의 index.json(관리앱 [개념영상 올리기]가 갱신). 같은 키면 버킷 것이 이긴다.
+const 버킷목록 = 'https://rttqkpquyzfrdxqhgqvi.supabase.co/storage/v1/object/public/concept-videos/index.json'
 let 목록: Promise<Record<string, ConceptVideoInfo>> | null = null
 function 목록받기(): Promise<Record<string, ConceptVideoInfo>> {
   if (!목록) {
-    목록 = fetch(`${import.meta.env.BASE_URL}concept-videos/index.json`)
-      .then(r => (r.ok ? r.json() : {}))
-      .catch(() => ({}))
+    const 받기 = (u: string) => fetch(u).then(r => (r.ok ? r.json() : {})).catch(() => ({}))
+    목록 = Promise.all([받기(`${import.meta.env.BASE_URL}concept-videos/index.json`), 받기(`${버킷목록}?t=${Math.floor(Date.now() / 600000)}`)])
+      .then(([a, b]) => ({ ...a, ...b }))
   }
   return 목록
 }
@@ -64,14 +67,15 @@ export function ConceptVideoButton({ video, className, label }: { video: Concept
       </button>
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3" onClick={() => setOpen(false)}>
-          <div className="flex max-h-full w-full max-w-sm flex-col" onClick={e => e.stopPropagation()}>
+          <div className={`flex max-h-full w-full flex-col ${video.wide ? 'max-w-5xl' : 'max-w-sm'}`} onClick={e => e.stopPropagation()}>
             <div className="mb-2 flex items-center gap-2 text-white">
               <span className="rounded bg-white/20 px-2 py-0.5 text-xs font-bold">개념 영상</span>
               <b className="min-w-0 grow truncate text-sm">{video.title ?? ''}</b>
               <button type="button" onClick={() => setOpen(false)} className="rounded-lg px-2 py-1 text-lg hover:bg-white/10">✕</button>
             </div>
             {/* 세로 영상(9:16) — 화면 높이에 맞춰 꽉 차게 */}
-            <video src={`${import.meta.env.BASE_URL}${video.src}`} controls autoPlay playsInline
+            {/* src 가 http 주소면 그대로(외부 저장소), 아니면 앱 안 파일 */}
+            <video src={/^https?:\/\//.test(video.src) ? video.src : `${import.meta.env.BASE_URL}${video.src}`} controls autoPlay playsInline
               className="max-h-[82vh] w-full rounded-xl bg-black object-contain" />
           </div>
         </div>

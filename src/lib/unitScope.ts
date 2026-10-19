@@ -17,23 +17,26 @@ export interface UnitScope {
   midName: string           // 대단원을 골랐으면 ''
   subName: string           // 소단원을 골랐을 때만
   subIds: string[]          // 개념카드 찾을 때
+  /** 고른 단원 + 위·아래 단원 id 전부 — 개념영상 찾을 때 (중단원 가로 강의 + 소단원 쇼츠) */
+  videoKeys: string[]
   typeIds: string[]         // 커리큘럼 순서대로
 }
 
 export function findUnit(id: string | null | undefined): UnitScope | null {
   if (!id) return null
   for (const c of CURRICULA) for (const u of c.units) {
-    const all = (subs: { id: string; types: { id: string }[] }[]) => ({
+    const all = (subs: { id: string; types: { id: string }[] }[], up: string[], mids: string[]) => ({
       subIds: subs.map(s => s.id),
       typeIds: subs.flatMap(s => s.types.map(t => t.id)),
+      videoKeys: [...up, id, ...mids, ...subs.map(s => s.id)].filter((x, i, a) => a.indexOf(x) === i),
     })
     if (u.id === id) {
-      return { id, course: c, name: u.name, path: u.name, bigName: u.name, midName: '', subName: '', ...all(u.mids.flatMap(m => m.subs)) }
+      return { id, course: c, name: u.name, path: u.name, bigName: u.name, midName: '', subName: '', ...all(u.mids.flatMap(m => m.subs), [], u.mids.map(m => m.id)) }
     }
     for (const m of u.mids) {
-      if (m.id === id) return { id, course: c, name: m.name, path: `${u.name} › ${m.name}`, bigName: u.name, midName: m.name, subName: '', ...all(m.subs) }
+      if (m.id === id) return { id, course: c, name: m.name, path: `${u.name} › ${m.name}`, bigName: u.name, midName: m.name, subName: '', ...all(m.subs, [u.id], []) }
       for (const s of m.subs) if (s.id === id) {
-        return { id, course: c, name: s.name, path: `${u.name} › ${m.name} › ${s.name}`, bigName: u.name, midName: m.name, subName: s.name, ...all([s]) }
+        return { id, course: c, name: s.name, path: `${u.name} › ${m.name} › ${s.name}`, bigName: u.name, midName: m.name, subName: s.name, ...all([s], [u.id, m.id], []) }
       }
     }
   }
