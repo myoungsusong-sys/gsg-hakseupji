@@ -16,6 +16,7 @@ import { readSticky, writeSticky } from './student/common'
 import { currentSem, korCourseFor } from '../data/korBooks'
 import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
 import { findUnit, tellHost } from '../lib/unitScope'
+import { pushWrong } from '../lib/wrongFeed'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -237,6 +238,8 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   }, [scoped, scopeReady, liveRows, typeId])   // eslint-disable-line react-hooks/exhaustive-deps
   // 사다리의 마지막 상태 — 닫힐 때 「정복하고 닫았나」를 알아야 다음 유형으로 넘길지 정한다
   const lastState = useRef<MasteryState | null>(null)
+  // 🆘 틀린 문제 → 선생님앱 — 유형별로 마지막으로 본 기록 길이. 처음 열 때는 기준만 잡고 보내지 않는다.
+  const seenLog = useRef(new Map<string, number>())
   const nextScoped = (after: string | null) => liveRows.find((r) => r.typeId !== after) ?? null
   // 📭 확인 — 색인·풀이 다 실린 뒤에도 문항이 0이면 이 범위에서 빼고 다음 유형으로
   const [idxLoaded, setIdxLoaded] = useState(() => typeCourse !== null)
@@ -296,6 +299,20 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId} course={course}
         initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 2)}
         onChange={(st: MasteryState) => {
+          const logs = Array.isArray(st.log) ? st.log : []
+          const prev = seenLog.current.get(typeId)
+          seenLog.current.set(typeId, logs.length)
+          const last = logs[logs.length - 1]
+          if (prev !== undefined && logs.length > prev && last && !last.correct) {
+            const p = pool.find((x) => x.id === last.problemId)
+            const me = allStudents.find((x) => x.id === studentId)
+            void pushWrong({ id: studentId, name: me?.name, mgmtId: me?.mgmtId }, {
+              at: last.at, course, typeId, typeName: row.name, floor: last.floor, problemId: last.problemId,
+              imageUrl: p?.imageUrl, body: p?.body ? String(p.body).slice(0, 800) : undefined,
+              choices: Array.isArray(p?.choices) ? (p!.choices as unknown[]).map(String).slice(0, 5) : undefined,
+              answer: p?.answer ? String(p.answer).slice(0, 200) : undefined, needsTeacher: !!st.needsTeacher,
+            })
+          }
           lastState.current = st; saveMastery(studentId, typeId, st)
           if (localKey) writeSticky(localKey, st)
           if (startOverride[typeId]) setStartOverride((m) => { const n = { ...m }; delete n[typeId]; return n })
