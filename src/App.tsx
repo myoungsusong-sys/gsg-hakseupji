@@ -37,6 +37,7 @@ import NaesinPrep from './pages/NaesinPrep'
 import MasteryPage from './pages/MasteryPage'
 import SchoolBooks from './pages/SchoolBooks'
 import StudentMastery from './pages/student/StudentMastery'
+import StudentUnit from './pages/student/StudentUnit'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
 import TodayRoom from './pages/TodayRoom'
@@ -93,8 +94,9 @@ function MgmtEntry() {
     if (me) setLocalStudentId(me.id)
     // 파라미터를 지우고 학생앱으로. 명부에서 못 찾아도 학생 세션이면 학생앱이 알아서 본인을 찾는다.
     // 🔴 2026-09-28: 관리앱 [❓ 문제 질문하기] 는 #/student/questions 로 들어온다 — 학생 화면 주소면 그대로 연다(전엔 늘 홈).
-    const 요청 = window.location.hash.replace(/^#/, '').split('?')[0]
-    const 갈곳 = /^\/student(\/[\w-]+)*$/.test(요청) ? 요청 : '/student'
+    // 🔗 2026-10-19: 주소 뒤 `?unit=…`(오늘 단원 개념학습·승강제)도 그대로 넘긴다 — 전엔 `?` 뒤를 지워 단원이 사라졌다
+    const [요청, 쿼리 = ''] = window.location.hash.replace(/^#/, '').split('?')
+    const 갈곳 = /^\/student(\/[\w-]+)*$/.test(요청) ? (쿼리 ? `${요청}?${쿼리}` : 요청) : '/student'
     window.history.replaceState(null, '', window.location.pathname)
     nav(갈곳, { replace: true })
   }, [synced, students, nav])
@@ -134,6 +136,7 @@ function Gate() {
             <Route path="voca" element={<StudentVoca />} />
             <Route path="exams" element={<StudentExams />} />
             <Route path="mastery" element={<StudentMastery />} />
+            <Route path="unit" element={<StudentUnit />} />
             <Route path="challenge" element={<StudentChallenge />} />
             <Route path="lectures" element={<StudentLectures />} />
             <Route path="questions" element={<StudentQuestions />} />

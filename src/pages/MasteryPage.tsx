@@ -15,6 +15,7 @@ import { filterByEngBook } from '../data/engBooks'
 import { readSticky, writeSticky } from './student/common'
 import { currentSem, korCourseFor } from '../data/korBooks'
 import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
+import { findUnit, tellHost } from '../lib/unitScope'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -87,14 +88,18 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
 
   const paramType = params.get('type')
   const paramBase = params.get('base')
+  // 🔗 오늘 단원 승강제 (`?unit=<단원id>`, 2026-10-19) — 관리앱 학생앱 [✏️ 문제풀이 · 풀러 가기] 로 들어온다.
+  //    그 단원 유형을 커리큘럼 순서대로 하나씩 끝까지(개념→…→최상) 올리고, 정복하면 다음 유형을 바로 연다.
+  const unitParam = params.get('unit')
+  const unit = useMemo(() => findUnit(unitParam), [unitParam])
   // 🔴 2026-10-01 명수쌤 「승강제 과학을 풀다가 화면이 멈춰서 홈화면 나갔다 들어오면 다시 처음으로 간대」 —
   //    고른 과정·유형이 화면 안에만 있어서, 태블릿이 앱을 내렸다 다시 띄우면 기본값(중1-1 수학 목록)으로 돌아갔다.
   //    학생 화면이면 기기에 기억해 두고 그 자리로 다시 연다(링크로 들어온 유형·과정이 있으면 그것이 먼저).
   const stickyKey = studentIdProp !== 'me' && !scoped && !params.get('student') ? `${studentIdProp}:mastery` : null
   const [stuck] = useState(() =>
-    stickyKey && !paramType && !params.get('course') ? readSticky<{ course: string; typeId: string | null }>(stickyKey) : undefined)
+    stickyKey && !paramType && !params.get('course') && !unitParam ? readSticky<{ course: string; typeId: string | null }>(stickyKey) : undefined)
   const [course, setCourse] = useState(
-    () => params.get('course') ?? (paramType && courseOfType(paramType)) ?? stuck?.course ?? 'm1-1',
+    () => params.get('course') ?? unit?.course.id ?? (paramType && courseOfType(paramType)) ?? stuck?.course ?? 'm1-1',
   )
   const [q, setQ] = useState('')
   const [typeId, setTypeId] = useState<string | null>(paramType ?? stuck?.typeId ?? null)
@@ -161,14 +166,14 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const engBook = allStudents.find((s) => s.id === studentId)?.engBook
   // 📗 영어 교과서별 승강제(2026-09-29): 학생 교과서가 정해져 있으면 공통 과정(eng-m1 …) 대신 그 교과서 과정으로 연다
   useEffect(() => {
-    if (!engBook || typeId || params.get('course')) return
+    if (!engBook || typeId || params.get('course') || unitParam) return
     const b = ENGBOOK_COURSES.find((x) => x.base === course && x.book === engBook)
     if (b) setCourse(b.id)
   }, [engBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
   // 📘 국어 교과서별 과정(2026-09-30): 학생 국어 교과서가 정해져 있으면 공통 국어(kor-m1 …) 대신 그 교과서의 이번 학기 과정으로 연다
   const korBook = allStudents.find((s) => s.id === studentId)?.korBook
   useEffect(() => {
-    if (!korBook || typeId || params.get('course') || !/^kor-[mh]\d$/.test(course)) return
+    if (!korBook || typeId || params.get('course') || unitParam || !/^kor-[mh]\d$/.test(course)) return
     const k = korCourseFor(course, korBook, currentSem())
     if (k) setCourse(k)
   }, [korBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
@@ -249,6 +254,28 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     nav(`${location.hash.replace(/^#/, '').split('?')[0]}${qs ? `?${qs}` : ''}`, { replace: true })
   }
 
+  // 🔗 오늘 단원 모드 — 그 단원 유형(문항 있는 것만)과 정복 수. 바뀔 때마다 관리앱에 알린다.
+  const counts = useMemo(() => countByType(problems), [problems])
+  const unitReady = !!unit && poolLoaded.has(unit.course.id)
+  const unitTypes = useMemo(
+    () => (unit ? unit.typeIds.filter((id) => (counts.get(id) ?? 0) > 0) : []),
+    [unit, counts],
+  )
+  const unitDone = unitTypes.filter((id) => masteries[`${studentId}|${id}`]?.mastered).length
+  const nextUnitType = (after: string | null) =>
+    unitTypes.find((id) => id !== after && !masteries[`${studentId}|${id}`]?.mastered) ?? null
+  useEffect(() => {
+    if (!unit || !unitReady) return
+    tellHost({ step: 'drill', unit: unit.id, done: unitDone, total: unitTypes.length, complete: unitTypes.length > 0 && unitDone >= unitTypes.length })
+  }, [unit, unitReady, unitDone, unitTypes.length])
+  const unitAuto = useRef(false)
+  useEffect(() => {
+    if (!unit || !unitReady || unitAuto.current || typeId) return
+    unitAuto.current = true
+    const nx = nextUnitType(null)
+    if (nx) setTypeId(nx)
+  }, [unit, unitReady, typeId])   // eslint-disable-line react-hooks/exhaustive-deps
+
   // 🔴 승강제 진행은 이 기기에도 **즉시** 따로 적어 둔다. 기기 전체 백업은 몇 초 묶어서 쓰므로,
   //    답한 직후 태블릿이 멈춰 꺼지면 한 단계 전 상태로 다시 열릴 수 있다. 다시 열 때는 둘 중 마지막으로
   //    푼 기록이 더 늦은 쪽을 쓴다(다른 기기에서 더 풀었으면 그쪽).
@@ -273,8 +300,9 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
           if (localKey) writeSticky(localKey, st)
           if (startOverride[typeId]) setStartOverride((m) => { const n = { ...m }; delete n[typeId]; return n })
         }}
-        skipLabel={scoped && nextScoped(typeId) ? '다음 오답 유형으로 →' : '목록으로'}
+        skipLabel={unit && nextUnitType(typeId) ? '다음 유형으로 →' : scoped && nextScoped(typeId) ? '다음 오답 유형으로 →' : '목록으로'}
         onSkip={() => {
+          if (unit) { lastState.current = null; setTypeId(nextUnitType(typeId)); return }
           // 낼 문항이 0인 유형 — 이번 범위에서 빼고(정복 아님) 다음 오답 유형으로, 없으면 목록으로 (명수쌤 2026-10-02)
           lastState.current = null
           setSkipped((s) => (s.has(typeId) ? s : new Set(s).add(typeId)))
@@ -286,6 +314,8 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
           lastState.current = null
           // 📕 채점 단위 정복 중이면 — 정복하고 닫은 경우 다음 오답 유형을 바로 연다
           if (scoped && mastered) { const nx = nextScoped(typeId); if (nx) { pickFromQueue(nx); return } }
+          // 🔗 오늘 단원 — 정복하고 닫았으면 그 단원의 다음 유형을 바로
+          if (unit && mastered) { const nx = nextUnitType(typeId); if (nx) { setTypeId(nx); return } }
           setTypeId(null)
         }}
       />
@@ -321,6 +351,71 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
             )}
           </div>
         </div>
+      </div>
+    )
+  }
+
+  if (unit) {
+    const all = unitTypes.length
+    const pct = all ? Math.round((unitDone / all) * 100) : 0
+    const nameOf = (id: string) => rows.find((r) => r.id === id)?.name ?? `유형 ${id}`
+    const leaveUnit = () => nav('/student/mastery', { replace: true })
+    return (
+      <div className="mx-auto max-w-3xl">
+        <p className="text-xs font-bold text-pine-dark">🪜 오늘 단원 승강제 · {unit.course.label}</p>
+        <h1 className="mt-1 text-lg font-black text-ink">{unit.name}</h1>
+        <p className="text-xs text-ink2">{unit.path}</p>
+        <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
+        <p className="mt-2 text-sm text-ink2">
+          유형마다 개념 빈칸 → 기본 → 표준 → 심화 → 최상. 틀리면 한 단계 내려가 다시, 두 문제 연속 맞히면 올라가요.
+        </p>
+        {!unitReady ? (
+          <div className="mt-4 rounded-2xl border border-line bg-white p-6 text-center text-sm text-ink2">문제를 불러오는 중…</div>
+        ) : !all ? (
+          <div className="mt-4 rounded-2xl border border-line bg-white p-6 text-center">
+            <div className="text-3xl">📭</div>
+            <p className="mt-2 font-black text-ink">이 단원은 아직 풀 문제가 없어요</p>
+            <p className="mt-1 text-sm text-ink2">선생님께 알려 주세요.</p>
+          </div>
+        ) : (
+          <>
+            <div className={`mt-4 rounded-2xl border p-4 ${unitDone >= all ? 'border-pine bg-pine-soft/60' : 'border-line bg-white'}`}>
+              <div className="flex items-baseline justify-between">
+                <b className="text-sm">{unitDone >= all ? '🎉 이 단원 유형을 모두 정복했어요' : `정복 ${unitDone} / ${all}유형`}</b>
+                <span className="text-xs text-ink2">{pct}%</span>
+              </div>
+              <div className="mt-2 h-2 rounded-full bg-line">
+                <div className="h-2 rounded-full bg-pine transition-all" style={{ width: `${pct}%` }} />
+              </div>
+              {unitDone < all && nextUnitType(null) && (
+                <button type="button" onClick={() => setTypeId(nextUnitType(null))}
+                  className="mt-3 w-full rounded-xl bg-pine py-2.5 text-sm font-black text-paper">
+                  ▶ 이어서 풀기 — {nameOf(nextUnitType(null)!)}
+                </button>
+              )}
+            </div>
+            <div className="mt-3 divide-y divide-line rounded-xl border border-line bg-paper">
+              {unitTypes.map((id) => {
+                const st = masteries[`${studentId}|${id}`]
+                return (
+                  <button key={id} type="button" onClick={() => setTypeId(id)}
+                    className="flex w-full items-center justify-between px-4 py-2.5 text-left text-sm hover:bg-pine-soft">
+                    <span className="text-ink">{nameOf(id)}</span>
+                    <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
+                      {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
+                      {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
+                      {counts.get(id) ?? 0}문항
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
+          </>
+        )}
+        <button type="button" onClick={leaveUnit}
+          className="mt-3 text-xs font-bold text-ink2 underline-offset-2 hover:underline">
+          ← 전체 유형 목록 보기
+        </button>
       </div>
     )
   }

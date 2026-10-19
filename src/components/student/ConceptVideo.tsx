@@ -34,13 +34,33 @@ export function useConceptVideo(conceptIds: (string | undefined)[]): ConceptVide
   return v
 }
 
-export function ConceptVideoButton({ video, className }: { video: ConceptVideoInfo; className?: string }) {
+/**
+ * 🔗 오늘 단원 개념학습용 (2026-10-19) — 키 여러 개 중 영상이 있는 것 **전부**.
+ * 키는 개념카드 id(`c-<소단원id>`)뿐 아니라 단원 id 그대로(`<과정>-u0m0` 등)도 된다 —
+ * 우리 강사 이론으로 만든 단원 개념영상은 단원 id 로 index.json 에 올린다.
+ */
+export function useConceptVideos(keys: string[]): (ConceptVideoInfo & { key: string })[] {
+  const [v, setV] = useState<(ConceptVideoInfo & { key: string })[]>([])
+  const k = keys.join('|')
+  useEffect(() => {
+    let alive = true
+    목록받기().then(m => {
+      if (!alive) return
+      const seen = new Set<string>()
+      setV(keys.filter(x => m[x] && !seen.has(m[x].src) && seen.add(m[x].src)).map(x => ({ key: x, ...m[x] })))
+    })
+    return () => { alive = false }
+  }, [k])   // eslint-disable-line react-hooks/exhaustive-deps
+  return v
+}
+
+export function ConceptVideoButton({ video, className, label }: { video: ConceptVideoInfo; className?: string; label?: string }) {
   const [open, setOpen] = useState(false)
   return (
     <>
       <button type="button" onClick={() => setOpen(true)}
         className={className ?? 'rounded-lg border border-pine bg-white px-3 py-2.5 text-sm font-bold text-pine hover:bg-pine-soft'}>
-        🎬 개념 영상 보기{video.sec ? <span className="ml-1 text-xs font-semibold opacity-70">{Math.floor(video.sec / 60)}:{String(video.sec % 60).padStart(2, '0')}</span> : null}
+        🎬 {label ?? '개념 영상 보기'}{video.sec ? <span className="ml-1 text-xs font-semibold opacity-70">{Math.floor(video.sec / 60)}:{String(video.sec % 60).padStart(2, '0')}</span> : null}
       </button>
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3" onClick={() => setOpen(false)}>
