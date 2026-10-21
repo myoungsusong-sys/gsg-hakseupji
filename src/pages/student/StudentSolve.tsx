@@ -32,6 +32,7 @@ import { useStudentSelf } from './StudentShell'
 import { clearDraft, readDraft, writeDraft, readSolveIdx, writeSolveIdx, AnswerText, isImgAnswer , examOf, examGate, examLeftSec, examStartedAt, markExamStart, clearExamStart, fmtClock } from './common'
 import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
 import { pushReplay, type ReplaySession } from '../../lib/replay'
+import { noteSheet } from '../../lib/progFeed'
 
 // ── 학습지 풀기 — 매쓰플랫 학생앱 풀이 화면 구조 ──────────────────
 // · 1문제씩 페이징: [←] N번 문제 / 총 M 문제 [→] + 문제 풀이 현황 토글(번호 칩 점프)
@@ -341,6 +342,13 @@ export default function StudentSolve() {
   // 화면을 벗어날 때 마지막 구간 확정
   useEffect(() => () => { flushRun() }, [])
 
+  // 📊 선생님앱 실시간 풀이 현황 — 이 학습지를 몇 문항째 풀고 있나(10초에 한 번까지만 올라간다)
+  const answeredN = list.filter(q => (answers[q.id] ?? '').trim() !== '').length
+  useEffect(() => {
+    if (!ws || !mine || gradedBefore) return
+    void noteSheet({ id: me.id, name: me.name, mgmtId: me.mgmtId }, { kind: '학습지', title: ws.title, answered: answeredN, total: list.length })
+  }, [ws?.id, answeredN, list.length])   // eslint-disable-line react-hooks/exhaustive-deps
+
   // 🔴 2026-09-29 「챌린지 자꾸 튕겨내고 뒤로 돌아가」 — 새로고침 직후 클라우드 자료가 오기 전에는 학습지가 아직 없다.
   //    그때 바로 목록으로 돌려보내면 풀던 학생이 튕겨 나간다 → 자료를 다 받을 때까지 기다린 뒤에 판단한다.
   if ((!ws || !mine) && !synced) {
@@ -492,6 +500,9 @@ export default function StudentSolve() {
       date: new Date().toISOString(), results, by: 'student',
     }
     upsertGrading(rec)
+    void noteSheet({ id: me.id, name: me.name, mgmtId: me.mgmtId },
+      { kind: '학습지', title: ws!.title, answered: results.length, total: results.length,
+        score: [results.filter(r => r.correct).length, results.length] })
     // 🎬 녹화 마감 — 제출 표시 후 업로드 완료까지 기다린다(실패 시 1회 재시도).
     // 화면 전환 후에는 재시도 기회가 없어서 여기서 확정해야 한다.
     const rep = recRef.current

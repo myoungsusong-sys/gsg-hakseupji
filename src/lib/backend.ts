@@ -98,7 +98,7 @@ async function rows(table: string, onlyStudent?: string | null): Promise<{ rows:
     //    학생 화면은 본인 채점만 쓴다 → 학생 기기는 본인 것만 받는다(중앙값 89KB).
     if (table === T.gradings && onlyStudent) q = q.eq('data->>studentId', onlyStudent)
     if (table === T.settings) q = q.not('id', 'like', 'live_%').not('id', 'like', 'replay_%').not('id', 'like', 'rubric_%')
-      .not('id', 'like', 'qna_%').not('id', 'like', 'wcfg_%').not('id', 'like', 'wrong_%')
+      .not('id', 'like', 'qna_%').not('id', 'like', 'wcfg_%').not('id', 'like', 'wrong_%').not('id', 'like', 'prog_%')
     const { data, error } = await q
     if (error) {
       console.warn('[load 실패]', table, error.message, `— ${out.length}행까지 받음. 이 표는 갱신하지 않는다.`)
@@ -112,7 +112,7 @@ async function rows(table: string, onlyStudent?: string | null): Promise<{ rows:
 }
 
 // 설정 테이블에서 실시간으로 다시 읽지 않는 행 — 전용 API 가 따로 읽는다(위 rows 의 제외 목록과 같다)
-const SKIP_SETTING = /^(live_|replay_|rubric_|qna_|wcfg_|wrong_)/   // wrong_ = 선생님앱 «틀린 문제» 피드(2026-10-19)
+const SKIP_SETTING = /^(live_|replay_|rubric_|qna_|wcfg_|wrong_|prog_)/   // wrong_ = 선생님앱 «틀린 문제» 피드(2026-10-19) · prog_ = «실시간 풀이 현황»(2026-10-21)
 
 // ── 🔴 바뀐 줄만 다시 받기 (2026-10-01 「학습지앱이 중간에 먹통」) ─────────────────
 // 예전에는 어느 기기에서든 무엇 하나 저장되면 **접속한 모든 기기가 9개 표 전체를** 다시 받았다.

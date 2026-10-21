@@ -17,6 +17,7 @@ import { currentSem, korCourseFor } from '../data/korBooks'
 import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
 import { findUnit, tellHost } from '../lib/unitScope'
 import { pushWrong } from '../lib/wrongFeed'
+import { noteMastery } from '../lib/progFeed'
 
 /**
  * 🪜 유형 마스터 — 유형 하나를 **끝까지** 물고 늘어지는 화면 (2026-09-05 명수쌤 지시)
@@ -282,6 +283,21 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   // 🔴 승강제 진행은 이 기기에도 **즉시** 따로 적어 둔다. 기기 전체 백업은 몇 초 묶어서 쓰므로,
   //    답한 직후 태블릿이 멈춰 꺼지면 한 단계 전 상태로 다시 열릴 수 있다. 다시 열 때는 둘 중 마지막으로
   //    푼 기록이 더 늦은 쪽을 쓴다(다른 기기에서 더 풀었으면 그쪽).
+  // 📊 선생님앱 실시간 풀이 현황 — 유형을 연 순간 «지금 이 유형»을 알린다(학생 본인 기기만, 선생님이 열어 본 것은 아님)
+  const isSelf = studentIdProp !== 'me' && !params.get('student')
+  const meStu = allStudents.find((x) => x.id === studentId)
+  const progStu = { id: studentId, name: meStu?.name, mgmtId: meStu?.mgmtId }
+  const progNow = (st: MasteryState | null | undefined, typeName: string, extraDone = 0) => ({
+    kind: '승강제' as const, title: typeName, course, unitName: unit?.name,
+    floor: st?.floor, unitDone: unit ? unitDone + extraDone : undefined, unitTotal: unit ? unitTypes.length : undefined,
+    needsTeacher: !!st?.needsTeacher, mastered: !!st?.mastered,
+  })
+  const openedRow = typeId && base && row ? `${typeId}|${row.name}` : ''
+  useEffect(() => {
+    if (!isSelf || !openedRow || !row) return
+    void noteMastery(progStu, progNow(saved, row.name))
+  }, [openedRow])   // eslint-disable-line react-hooks/exhaustive-deps
+
   const localKey = stickyKey && typeId ? `${stickyKey}-st:${typeId}` : null
   const lastAt = (s?: MasteryState) => (Array.isArray(s?.log) ? s!.log[s!.log.length - 1]?.at : '') ?? ''
   const localRaw = localKey ? readSticky<MasteryState>(localKey) : undefined
@@ -312,6 +328,11 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
               choices: Array.isArray(p?.choices) ? (p!.choices as unknown[]).map(String).slice(0, 5) : undefined,
               answer: p?.answer ? String(p.answer).slice(0, 200) : undefined, needsTeacher: !!st.needsTeacher,
             })
+          }
+          if (isSelf && prev !== undefined && logs.length > prev && last) {
+            const justMastered = st.mastered && !(lastState.current ?? saved)?.mastered
+            void noteMastery(progStu, progNow(st, row.name, justMastered ? 1 : 0),
+              { at: last.at, correct: last.correct, floor: last.floor, justMastered })
           }
           lastState.current = st; saveMastery(studentId, typeId, st)
           if (localKey) writeSticky(localKey, st)
