@@ -289,6 +289,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const progStu = { id: studentId, name: meStu?.name, mgmtId: meStu?.mgmtId }
   const progNow = (st: MasteryState | null | undefined, typeName: string, extraDone = 0) => ({
     kind: '승강제' as const, title: typeName, course, unitName: unit?.name,
+    subject: CURRICULA.find((c) => c.id === course)?.subject ?? '수학',
     floor: st?.floor, unitDone: unit ? unitDone + extraDone : undefined, unitTotal: unit ? unitTypes.length : undefined,
     needsTeacher: !!st?.needsTeacher, mastered: !!st?.mastered,
   })

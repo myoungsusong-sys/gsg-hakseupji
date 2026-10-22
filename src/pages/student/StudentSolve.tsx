@@ -346,7 +346,7 @@ export default function StudentSolve() {
   const answeredN = list.filter(q => (answers[q.id] ?? '').trim() !== '').length
   useEffect(() => {
     if (!ws || !mine || gradedBefore) return
-    void noteSheet({ id: me.id, name: me.name, mgmtId: me.mgmtId }, { kind: '학습지', title: ws.title, answered: answeredN, total: list.length })
+    void noteSheet({ id: me.id, name: me.name, mgmtId: me.mgmtId }, { kind: '학습지', title: ws.title, subject: ws.subject ?? '수학', answered: answeredN, total: list.length })
   }, [ws?.id, answeredN, list.length])   // eslint-disable-line react-hooks/exhaustive-deps
 
   // 🔴 2026-09-29 「챌린지 자꾸 튕겨내고 뒤로 돌아가」 — 새로고침 직후 클라우드 자료가 오기 전에는 학습지가 아직 없다.
@@ -501,7 +501,7 @@ export default function StudentSolve() {
     }
     upsertGrading(rec)
     void noteSheet({ id: me.id, name: me.name, mgmtId: me.mgmtId },
-      { kind: '학습지', title: ws!.title, answered: results.length, total: results.length,
+      { kind: '학습지', title: ws!.title, subject: ws!.subject ?? '수학', answered: results.length, total: results.length,
         score: [results.filter(r => r.correct).length, results.length] })
     // 🎬 녹화 마감 — 제출 표시 후 업로드 완료까지 기다린다(실패 시 1회 재시도).
     // 화면 전환 후에는 재시도 기회가 없어서 여기서 확정해야 한다.

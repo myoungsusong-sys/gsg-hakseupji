@@ -11,6 +11,7 @@ import { supabase } from './supabase'
 export interface ProgNow {
   kind: '승강제' | '학습지'
   title: string            // 승강제 = 유형 이름 · 학습지 = 학습지 제목
+  subject?: string         // 수학·과학·국어·영어·사회·역사 — 과목별 맞음·틀림을 센다(학부모 보고)
   course?: string
   unitName?: string        // 오늘 단원 승강제면 단원 이름
   floor?: number           // 0 개념 · 1 기본 · 2 표준 · 3 심화 · 4 최상
@@ -31,6 +32,10 @@ export interface ProgFeed {
   mastered: number         // 오늘 정복한 유형 수
   now: ProgNow
   recent: [string, 0 | 1, number][]   // 최근 답 [시각, 맞음, 층] — 12개
+  // 📊 과목별 오늘 (2026-10-22 명수쌤 «학습한 문제 중 몇 개 맞고 틀렸는지 과목별 현황도 학부모 보고에»)
+  //   n 푼 수 · ok 맞힌 수 · m 정복 유형 · w 틀린 유형(최근 5개, 겹침 없이)
+  subj?: Record<string, { n: number; ok: number; m: number; w: string[] }>
+  sheets?: [string, number, number, string][]   // 오늘 제출한 학습지 [제목, 맞힌 수, 전체, 과목]
 }
 
 type Stu = { id: string; name?: string; mgmtId?: string }
@@ -88,6 +93,10 @@ export async function noteMastery(stu: Stu, now: ProgNow, answer?: { at: string;
     n.correct = v.correct + (answer.correct ? 1 : 0)
     n.mastered = v.mastered + (answer.justMastered ? 1 : 0)
     n.recent = [...v.recent, [t, answer.correct ? 1 : 0, answer.floor] as [string, 0 | 1, number]].slice(-12)
+    const k = now.subject || '수학'
+    const o = v.subj?.[k] ?? { n: 0, ok: 0, m: 0, w: [] }
+    const w = answer.correct || !now.title ? o.w : [...o.w.filter((x) => x !== now.title), now.title].slice(-5)
+    n.subj = { ...(v.subj ?? {}), [k]: { n: o.n + 1, ok: o.ok + (answer.correct ? 1 : 0), m: o.m + (answer.justMastered ? 1 : 0), w } }
   }
   put(id, n)
 }
@@ -96,5 +105,14 @@ export async function noteMastery(stu: Stu, now: ProgNow, answer?: { at: string;
 export async function noteSheet(stu: Stu, now: ProgNow) {
   const b = await base(stu); if (!b) return
   const [id, v] = b
-  put(id, { ...v, name: stu.name ?? v.name, mgmtId: stu.mgmtId ?? v.mgmtId, at: new Date().toISOString(), now })
+  const n: ProgFeed = { ...v, name: stu.name ?? v.name, mgmtId: stu.mgmtId ?? v.mgmtId, at: new Date().toISOString(), now }
+  if (now.score) {
+    // 제출한 학습지 — 같은 학습지를 다시 내면 앞 기록을 바꾼다(과목 합계도 앞 것을 빼고 더한다)
+    const k = now.subject || '수학'
+    const prev = (v.sheets ?? []).find((x) => x[0] === now.title)
+    const o = v.subj?.[k] ?? { n: 0, ok: 0, m: 0, w: [] }
+    n.subj = { ...(v.subj ?? {}), [k]: { ...o, n: o.n - (prev?.[2] ?? 0) + now.score[1], ok: o.ok - (prev?.[1] ?? 0) + now.score[0] } }
+    n.sheets = [...(v.sheets ?? []).filter((x) => x[0] !== now.title), [now.title, now.score[0], now.score[1], k] as [string, number, number, string]].slice(-10)
+  }
+  put(id, n)
 }
