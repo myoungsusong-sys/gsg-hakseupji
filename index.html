@@ -22,6 +22,18 @@
     <title>Summit On</title>
   </head>
   <body>
+    <!-- 🟢 올리오 셸(관리형학습관 학생 태블릿) 안 iframe 으로 열릴 때 — 주소 플래그 theme=ollio&embed=1 (식별용, 인증 아님).
+         React 가 뜨기 전에 html 에 data-theme/data-embed 를 걸어 첫 렌더부터 올리오 색(초록·종이·Gowun Dodum)이 나오게 한다.
+         치환표 원본: 올리오 저장소 ollio-theme.json · 받는 코드: src/lib/ollioTheme.ts · CSS: src/index.css 맨 아래. (2026-10-24) -->
+    <script>
+      (function () {
+        try {
+          var q = new URLSearchParams(location.search);
+          if (q.get('theme') === 'ollio') document.documentElement.setAttribute('data-theme', 'ollio');
+          if (q.get('embed') === '1') document.documentElement.setAttribute('data-embed', '');
+        } catch (e) {}
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

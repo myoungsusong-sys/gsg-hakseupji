@@ -5,7 +5,9 @@ import App from './App'
 import CrashGuard from './components/CrashGuard'
 import { installErrorLog } from './lib/errorLog'
 import { isStaleChunkError } from './lib/staleChunk'
+import { installOllioTheme } from './lib/ollioTheme'
 
+installOllioTheme()   // 🟢 올리오 셸 iframe 안이면 ollio:theme v1 을 받아 CSS 변수를 덮고 theme-applied 로 답한다 (2026-10-24)
 installErrorLog()   // 🛠 AI 점검이 쓸 오류·화면이동 기록 시작 (개인정보 없음)
 
 // 🔴 새 배포 뒤 열어 둔 탭이 사라진 옛 청크를 부를 때의 전역 안전망.

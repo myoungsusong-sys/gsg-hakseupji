@@ -155,3 +155,50 @@ body {
 @media screen {
   .katex { display: inline-block; overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
 }
+
+
+/* ══ 올리오 테마 (2026-10-24) — 올리오 셸 iframe 안(html[data-theme="ollio"])에서만. 단독 화면 브랜드는 그대로.
+   값의 원본은 올리오 저장소 ollio-theme.json(토큰 12 + 모서리). 셸이 postMessage `ollio:theme v1` 로 같은 값을 다시 보내면
+   src/lib/ollioTheme.ts 가 CSS 변수를 덮어쓴다(지점 종이색이 바뀔 때). 글꼴 예외: 옛한글(YetHangul)·KaTeX 수식은 그대로. ══ */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+@font-face {
+  font-family: "Cafe24 Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+html[data-theme="ollio"] {
+  --color-paper: #fdfbf6;        /* 카드 */
+  --color-paper2: #f4efe4;       /* 바탕(공책 종이) */
+  --color-line: #d8d0bf;         /* 줄노트 선 */
+  --color-ink: #1c3028;          /* 본문 글자 */
+  --color-ink2: #6f7a71;         /* 보조 글자 */
+  --color-ink3: #6f7a71;
+  --color-pine: #4bb900;         /* 메인 → 올리오 초록 */
+  --color-pine-dark: #153d2f;    /* 진한색 → 짙은 초록 */
+  --color-pine-soft: #eafacf;    /* 연한 바탕 → 연두 */
+  --color-pine-border: #d8d0bf;  /* 테두리 → 줄노트 선 */
+  --color-amber: #f2a93b;        /* 경고 → 황토 연필 */
+  --color-amber-soft: #fff7e6;
+  --color-clay: #c8452c;         /* 오답 표시 → 빨간 연필 */
+  --radius-mf: 4px;              /* 버튼 4px (카드 6px 는 아래) */
+  --ollio-font-body: "Gowun Dodum";
+  --ollio-font-head: "Cafe24 Ssurround";
+  background: var(--color-paper2);
+}
+html[data-theme="ollio"] body {
+  font-family: "YetHangul", var(--ollio-font-body), "Gowun Dodum", system-ui, sans-serif;
+  color: var(--color-ink);
+}
+html[data-theme="ollio"] h1, html[data-theme="ollio"] h2,
+html[data-theme="ollio"] .ollio-head { font-family: "YetHangul", var(--ollio-font-head), "Cafe24 Ssurround", system-ui, sans-serif; font-weight: 700; }
+/* KaTeX 수식·옛한글은 글꼴을 바꾸지 않는다 */
+html[data-theme="ollio"] .katex, html[data-theme="ollio"] .katex * { font-family: KaTeX_Main, "Times New Roman", serif; }
+/* 그라데이션·유리 0 */
+html[data-theme="ollio"] [class*="bg-gradient"] { background-image: none !important; }
+html[data-theme="ollio"] [class*="backdrop-blur"] { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+/* 카드 모서리 6px — 큰 둥글기(2xl·3xl)를 올리오 값으로 */
+html[data-theme="ollio"] .rounded-2xl, html[data-theme="ollio"] .rounded-3xl, html[data-theme="ollio"] .rounded-xl { border-radius: 6px; }
+html[data-theme="ollio"] .rounded-lg, html[data-theme="ollio"] .rounded-md { border-radius: 4px; }
+/* embed=1 — 셸이 탐색을 맡으므로 학습지앱 머리·탭·«화면이 이상해요»·업데이트 배너를 숨긴다 */
+html[data-embed] [data-embed-hide] { display: none !important; }
+html[data-embed] main { padding-top: 12px; }

@@ -107,7 +107,7 @@ export default function StudentShell() {
   return (
     <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
-        {stale && onHome && <UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} />}
+        {stale && onHome && <div data-embed-hide><UpdateBanner auto={false} items={unseen.length ? unseen : changelog.slice(0, 1)} /></div>}
         {/* 🚨 이 태블릿 자리 주인과 로그인된 계정이 다르다 — 앞 학생 계정으로 채점되는 사고를 막는다 */}
         {wrongSeat && (
           <div className="flex flex-wrap items-center gap-3 bg-clay px-5 py-2.5 text-sm font-bold text-white">
@@ -119,7 +119,7 @@ export default function StudentShell() {
         )}
         {/* 📢 선생님 호출 — 어느 화면에 있든 보이게 헤더 위에 둔다 */}
         <TeacherCallOverlay studentId={me.id} name={me.name} />
-        <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
+        <header data-embed-hide className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
           <div className="mx-auto flex w-full items-center gap-5 px-6 py-5">
             <div className="flex items-baseline gap-2">
               <BrandLogo />
