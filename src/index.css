@@ -202,3 +202,18 @@ html[data-theme="ollio"] .rounded-lg, html[data-theme="ollio"] .rounded-md { bor
 /* embed=1 — 셸이 탐색을 맡으므로 학습지앱 머리·탭·«화면이 이상해요»·업데이트 배너를 숨긴다 */
 html[data-embed] [data-embed-hide] { display: none !important; }
 html[data-embed] main { padding-top: 12px; }
+
+/* 토큰을 안 거치는 Tailwind 파랑·보라 계열 유틸(bg/text/border-blue·indigo·violet·purple·sky·cyan)도 올리오 색으로 —
+   셸+iframe 통합 캡처에서 파랑·보라 픽셀 0 이 합격 기준(2026-10-24 실측: «학습지 만들기» 단추가 남아 있었다).
+   층(@layer utilities) 밖의 일반 규칙이라 유틸보다 우선한다. 옅은 단계(50~200)는 연두, 나머지는 짙은 초록. */
+html[data-theme="ollio"] [class*="bg-blue-"], html[data-theme="ollio"] [class*="bg-indigo-"], html[data-theme="ollio"] [class*="bg-violet-"],
+html[data-theme="ollio"] [class*="bg-purple-"], html[data-theme="ollio"] [class*="bg-sky-"], html[data-theme="ollio"] [class*="bg-cyan-"] { background-color: var(--color-pine-dark); color: #fff7e6; }
+html[data-theme="ollio"] [class*="bg-blue-50"], html[data-theme="ollio"] [class*="bg-blue-100"], html[data-theme="ollio"] [class*="bg-blue-200"],
+html[data-theme="ollio"] [class*="bg-indigo-50"], html[data-theme="ollio"] [class*="bg-indigo-100"], html[data-theme="ollio"] [class*="bg-violet-50"],
+html[data-theme="ollio"] [class*="bg-violet-100"], html[data-theme="ollio"] [class*="bg-purple-50"], html[data-theme="ollio"] [class*="bg-purple-100"],
+html[data-theme="ollio"] [class*="bg-sky-50"], html[data-theme="ollio"] [class*="bg-sky-100"], html[data-theme="ollio"] [class*="bg-cyan-50"], html[data-theme="ollio"] [class*="bg-cyan-100"] { background-color: var(--color-pine-soft); color: var(--color-ink); }
+html[data-theme="ollio"] [class*="text-blue-"], html[data-theme="ollio"] [class*="text-indigo-"], html[data-theme="ollio"] [class*="text-violet-"],
+html[data-theme="ollio"] [class*="text-purple-"], html[data-theme="ollio"] [class*="text-sky-"], html[data-theme="ollio"] [class*="text-cyan-"] { color: var(--color-pine-dark); }
+html[data-theme="ollio"] [class*="border-blue-"], html[data-theme="ollio"] [class*="border-indigo-"], html[data-theme="ollio"] [class*="border-violet-"],
+html[data-theme="ollio"] [class*="border-purple-"], html[data-theme="ollio"] [class*="border-sky-"], html[data-theme="ollio"] [class*="border-cyan-"] { border-color: var(--color-pine-border); }
+html[data-theme="ollio"] [class*="ring-blue-"], html[data-theme="ollio"] [class*="ring-indigo-"], html[data-theme="ollio"] [class*="ring-sky-"] { --tw-ring-color: var(--color-pine); }
