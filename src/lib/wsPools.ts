@@ -10,7 +10,8 @@ import { gradeKey } from './grade'
 //    문항을 하나도 못 찾아 「조판 중…」에서 영원히 멈췄다. 다른 화면을 먼저 봐서 그 과정이 올라와 있을 때만 됐다.
 //    → 미리보기가 직접 불러온다. 문항 id 만으로는 과정을 알 수 없으므로(mf<번호> 등) 가까운 것부터 넓힌다:
 //      ① 같은 학년·같은 과목  ② 같은 학교급·같은 과목  ③ 그 과목 전체.
-const LOADABLE: string[] = [...new Set<string>([...POOL_COURSES, ...GEN_ONLY_COURSES, ...WANJA_COURSES])]
+// 족보닷컴 과정(zb-…)은 뺀다 — 과정 하나가 수 MB라, 족보 학습지는 문항 id 로 따로 부른다(WorksheetView)
+const LOADABLE: string[] = [...new Set<string>([...POOL_COURSES, ...GEN_ONLY_COURSES, ...WANJA_COURSES])].filter(c => !c.startsWith('zb-'))
 const gradeOfCourse = (id: string) => CURRICULA.find(c => c.id === id)?.grade ?? ''
 /** 학교급(초/중/고) — 단원표에 학년이 없는 풀 전용 과정(15개정 고등 h-hs1·h-s1 등)은 이름으로 판정 */
 const levelOf = (id: string): string => {

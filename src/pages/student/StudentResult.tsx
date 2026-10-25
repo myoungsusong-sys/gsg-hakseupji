@@ -4,6 +4,7 @@ import type { GradeResult, Problem } from '../../types'
 import { DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
+import { zbCoursesOf } from '../../data/curriculum-zb'
 import ProblemContent from '../../components/ProblemContent'
 import VideoModal from '../../components/VideoModal'
 import AskProblemButton from '../../components/student/AskProblemButton'
@@ -49,9 +50,9 @@ export default function StudentResult() {
   const g = ws ? latestGradingFor(gradings, me.id, ws.id) : undefined
 
   useEffect(() => {
-    if (ws) for (const c of coursesForWorksheet(ws.grade, ws.subject)) ensureCourse(c)
+    if (ws) for (const c of [...coursesForWorksheet(ws.grade, ws.subject), ...zbCoursesOf(ws.problemIds)]) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ws?.grade])
+  }, [ws?.grade, ws?.id])
 
   // 📘 제출 즉시 자동 오답학습지 — 학생이 방금 제출한 채점에 확정 오답이 있으면
   // 조용히 만들어 숙제로 배정한다. 발화 조건(적대 리뷰 반영, 전부 필수):

@@ -31,7 +31,10 @@ function inlineToHtml(text: string): string {
       //    (시중 문제집처럼 «발문 + 그래프·표 그림» 을 실으려고. 경로는 앱 안 /figs/ 아래 파일만 허용)
       .replace(/\[\[그림:\/?(figs\/[A-Za-z0-9_\-./]+\.(?:png|svg|webp|jpg))\]\]/g,
         (_m, path: string) => path.includes('..') ? '' :
-          `<img src="${import.meta.env.BASE_URL}${path}" alt="자료 그림" class="my-2 block max-w-full" style="max-height:340px" />`)
+          // 📒 족보닷컴 문항 그림(figs/zb/…)은 발문·보기·표가 통째로 든 그림 — 높이를 묶지 않고 폭만 440px 로
+          path.startsWith('figs/zb/')
+            ? `<img src="${import.meta.env.BASE_URL}${path}" alt="문항 그림" class="my-2 block max-w-full" style="width:440px" />`
+            : `<img src="${import.meta.env.BASE_URL}${path}" alt="자료 그림" class="my-2 block max-w-full" style="max-height:340px" />`)
       .replace(/\n/g, '<br>')
   }).join('')
 }

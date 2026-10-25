@@ -250,7 +250,8 @@ export default function WorksheetList({ view }: { view: View }) {
   function rangeSummary(w: Worksheet): string {
     const byId = probIndex(problems)
     const ps = w.problemIds.map(pid => byId.get(pid)).filter(p => p != null)
-    if (ps.length === 0) return '0문제'
+    // 문제은행을 아직 안 불러온 학습지(족보닷컴·영어 등)는 담긴 문항 수라도 보인다 — 「0문제」로 비어 보이지 않게
+    if (ps.length === 0) return `${w.problemIds.length}문제`
     const avg = ps.reduce((a, p) => a + p.diff, 0) / ps.length
     const diffLabel = DIFF_LABEL[Math.round(avg) as 1 | 2 | 3 | 4 | 5]
     const names = ps.map(p => p.typeId).filter(id => typeName(id) !== id).map(id => typeName(id))

@@ -10,6 +10,7 @@ import type { MasteryState } from './mastery'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { loadPool } from '../data/pool'
 import { coursesForWorksheet, defaultCurriculumForGrade } from '../data/curriculum'
+import { zbCoursesOf } from '../data/curriculum-zb'
 import { useAuthEmail } from './auth'
 import { isStudentEmail, matchStudentByEmail } from './role'
 import { cloud, loadAll, loadChanged, loadStudentsOnly, noteId, type CloudData, type CloudPatch, type LoadFail, type RowChange } from './backend'
@@ -360,12 +361,15 @@ export function autoPoolCourses(
     for (const c of coursesForWorksheet(me.grade, '수학')) wanted.add(c)
     const mine = new Set(st.assignments.filter(a => a.studentId === me.id).map(a => a.worksheetId))
     // 과목이 없는 옛 학습지는 수학이다 (subject 없으면 같은 학년의 영어·국어까지 붙이지 않게)
-    for (const w of st.worksheets) if (!w.deletedAt && mine.has(w.id)) for (const c of coursesForWorksheet(w.grade, w.subject ?? '수학')) wanted.add(c)
+    for (const w of st.worksheets) if (!w.deletedAt && mine.has(w.id)) for (const c of [...coursesForWorksheet(w.grade, w.subject ?? '수학'), ...zbCoursesOf(w.problemIds)]) wanted.add(c)
     for (const w of st.workbooks) if (w.studentId === me.id) wanted.add(poolCourseOfWb(w.course) ?? defaultCurriculumForGrade(w.grade))
     return wanted
   }
   for (const s of st.students) if (s.active) wanted.add(defaultCurriculumForGrade(s.grade))
   for (const w of st.worksheets) if (!w.deletedAt) wanted.add(defaultCurriculumForGrade(w.grade))
+  // 📒 족보닷컴 학습지 — 학생에게 나간 것만 그 과정 파일을 미리 부른다(과정 하나가 수 MB라 전부 부르면 무겁다)
+  const given = new Set(st.assignments.map(a => a.worksheetId))
+  for (const w of st.worksheets) if (!w.deletedAt && given.has(w.id)) for (const c of zbCoursesOf(w.problemIds)) wanted.add(c)
   for (const w of st.workbooks) wanted.add(poolCourseOfWb(w.course) ?? defaultCurriculumForGrade(w.grade))
   return wanted
 }

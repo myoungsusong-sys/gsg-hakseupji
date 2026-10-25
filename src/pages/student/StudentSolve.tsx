@@ -20,6 +20,7 @@ export interface AiMark {
   rubricAt?: string
 }
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
+import { zbCoursesOf } from '../../data/curriculum-zb'
 import AnswerInput, { autoCorrect, choiceAnswerCount, toggleChoice } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
 import ProblemContent from '../../components/ProblemContent'
@@ -101,9 +102,9 @@ export default function StudentSolve() {
   const submitRef = useRef<((auto?: boolean) => Promise<void>) | null>(null)
 
   useEffect(() => {
-    if (ws) for (const c of coursesForWorksheet(ws.grade, ws.subject)) ensureCourse(c)
+    if (ws) for (const c of [...coursesForWorksheet(ws.grade, ws.subject), ...zbCoursesOf(ws.problemIds)]) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ws?.grade])
+  }, [ws?.grade, ws?.id])
 
   // ⏱ 시험 시계 — 처음 들어온 순간을 기기에 못 박아 새로고침해도 이어진다.
   //    남은 시간이 0이 되면 그때까지 쓴 답으로 자동 제출한다(★ 한 번만).

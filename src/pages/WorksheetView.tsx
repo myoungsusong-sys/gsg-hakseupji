@@ -8,6 +8,8 @@ import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
 import { isStaleChunkError } from '../lib/staleChunk'
 import { poolStagesFor } from '../lib/wsPools'
+import { zbCoursesOf } from '../data/curriculum-zb'
+import { zbBodyFor } from '../lib/zbPassage'
 import { probIndex } from '../lib/probIndex'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
 
@@ -195,7 +197,11 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   /* ── 조판 0단계: 문항이 든 문제은행을 불러온다 (lib/wsPools.ts — 무한 「조판 중…」 수정, 2026-09-21) ──
      같은 학년·과목 → 같은 학교급 → 과목 전체 순으로, 못 찾은 문항이 있을 때만 다음 단계로 넓힌다.
      끝까지 못 찾은 문항은 빼고 조판한다 — 어떤 경우에도 멈춰 있지 않는다. */
-  const stages = useMemo(() => (ws ? poolStagesFor(ws.grade, ws.subject) : []), [ws?.grade, ws?.subject])   // eslint-disable-line react-hooks/exhaustive-deps
+  const stages = useMemo(() => {
+    if (!ws) return []
+    const zb = zbCoursesOf(ws.problemIds)            // 📒 족보닷컴 학습지 — 문항 id 가 과정을 알려 준다
+    return zb.length ? [zb, ...poolStagesFor(ws.grade, ws.subject)] : poolStagesFor(ws.grade, ws.subject)
+  }, [ws?.id, ws?.grade, ws?.subject])   // eslint-disable-line react-hooks/exhaustive-deps
   const missingIds = useMemo(() => {
     if (!ws) return 0
     const have = new Set(items.map(p => p.id))
@@ -536,7 +542,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const problemAt = (i: number, wide = false) => (
     <>
       {conceptBefore.get(i) && conceptGroupEl(conceptBefore.get(i)!)}
-      <ProblemBlock p={items[i]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
+      <ProblemBlock p={items[i]} prev={items[i - 1]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
     </>
   )
   const solveRowAt = (i: number, rowH: number) => (
@@ -970,7 +976,8 @@ function InlineAnswer({ p, themeMain, dims }: { p: Problem; themeMain: string; d
 
 /* ── 문항 블록 (§5-5): 번호 20pt bold 테마색 2자리 0패딩 + 본문 hanging indent 11.6mm,
       문제 이미지 폭 73.2mm(930px 원본 기준, 작으면 비례) ── */
-export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims, wide }: {
+export function ProblemBlock({ p, prev, idx, caption, themeMain, onVideo, dims, wide }: {
+  prev?: Problem          // 📒 바로 앞 문항 — 족보 문항이 같은 지문이면 지문을 다시 싣지 않는다(zbBodyFor)
   p: Problem; idx: number; caption: string; themeMain: string
   onVideo?: (p: Problem, idx: number) => void; dims?: Dims
   /** 전폭 띠(넓은 교재 크롭) — 그림을 한 단 폭에 가두지 않는다 */
@@ -993,7 +1000,7 @@ export function ProblemBlock({ p, idx, caption, themeMain, onVideo, dims, wide }
       {p.imageUrl
         ? <img src={p.imageUrl} alt="" style={scaledImgStyle(dims, p.imageUrl, G.probImgW, wide ? WIDE_IMG_W : G.probImgW)} />
         : <>
-            <div style={{ fontSize: '10.5pt', lineHeight: 1.7 }}><MathText text={p.body} /></div>
+            <div style={{ fontSize: '10.5pt', lineHeight: 1.7 }}><MathText text={zbBodyFor(p, prev)} /></div>
             {p.choices && (
               <div style={{ marginTop: '1.5mm', display: 'grid', gap: '0.5mm', fontSize: '10pt', lineHeight: 1.6 }}>
                 {p.choices.map((c, ci) => (
