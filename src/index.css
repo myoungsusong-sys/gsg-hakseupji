@@ -159,13 +159,9 @@ body {
 
 /* ══ 올리오 테마 (2026-10-24) — 올리오 셸 iframe 안(html[data-theme="ollio"])에서만. 단독 화면 브랜드는 그대로.
    값의 원본은 올리오 저장소 ollio-theme.json(토큰 12 + 모서리). 셸이 postMessage `ollio:theme v1` 로 같은 값을 다시 보내면
-   src/lib/ollioTheme.ts 가 CSS 변수를 덮어쓴다(지점 종이색이 바뀔 때). 글꼴 예외: 옛한글(YetHangul)·KaTeX 수식은 그대로. ══ */
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
-@font-face {
-  font-family: "Cafe24 Ssurround";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
-  font-weight: 700; font-style: normal; font-display: swap;
-}
+   src/lib/ollioTheme.ts 가 CSS 변수를 덮어쓴다(지점 종이색이 바뀔 때). 글꼴 예외: 옛한글(YetHangul)·KaTeX 수식은 그대로.
+   글꼴(2026-10-25): 제목·본문 모두 Noto Sans KR — 올리오 앱과 같게. 글꼴 파일은 index.html 머리 스크립트가 theme=ollio 일 때만 불러온다
+   (옛 @import 는 이 파일 맨 아래라 빌드에서 버려져 Gowun Dodum 이 실제로는 한 번도 안 불렸다 — 운영 CSS 실측). ══ */
 html[data-theme="ollio"] {
   --color-paper: #fdfbf6;        /* 카드 */
   --color-paper2: #f4efe4;       /* 바탕(공책 종이) */
@@ -181,16 +177,16 @@ html[data-theme="ollio"] {
   --color-amber-soft: #fff7e6;
   --color-clay: #c8452c;         /* 오답 표시 → 빨간 연필 */
   --radius-mf: 4px;              /* 버튼 4px (카드 6px 는 아래) */
-  --ollio-font-body: "Gowun Dodum";
-  --ollio-font-head: "Cafe24 Ssurround";
+  --ollio-font-body: "Noto Sans KR";
+  --ollio-font-head: "Noto Sans KR";
   background: var(--color-paper2);
 }
 html[data-theme="ollio"] body {
-  font-family: "YetHangul", var(--ollio-font-body), "Gowun Dodum", system-ui, sans-serif;
+  font-family: "YetHangul", var(--ollio-font-body), "Noto Sans KR", system-ui, sans-serif;
   color: var(--color-ink);
 }
 html[data-theme="ollio"] h1, html[data-theme="ollio"] h2,
-html[data-theme="ollio"] .ollio-head { font-family: "YetHangul", var(--ollio-font-head), "Cafe24 Ssurround", system-ui, sans-serif; font-weight: 700; }
+html[data-theme="ollio"] .ollio-head { font-family: "YetHangul", var(--ollio-font-head), "Noto Sans KR", system-ui, sans-serif; font-weight: 700; }
 /* KaTeX 수식·옛한글은 글꼴을 바꾸지 않는다 */
 html[data-theme="ollio"] .katex, html[data-theme="ollio"] .katex * { font-family: KaTeX_Main, "Times New Roman", serif; }
 /* 그라데이션·유리 0 */

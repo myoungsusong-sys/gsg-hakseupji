@@ -23,13 +23,19 @@
   </head>
   <body>
     <!-- 🟢 올리오 셸(관리형학습관 학생 태블릿) 안 iframe 으로 열릴 때 — 주소 플래그 theme=ollio&embed=1 (식별용, 인증 아님).
-         React 가 뜨기 전에 html 에 data-theme/data-embed 를 걸어 첫 렌더부터 올리오 색(초록·종이·Gowun Dodum)이 나오게 한다.
+         React 가 뜨기 전에 html 에 data-theme/data-embed 를 걸어 첫 렌더부터 올리오 색(초록·종이)과 글꼴(Noto Sans KR)이 나오게 한다.
+         글꼴은 올리오 셸 안에서 열릴 때만 불러온다(단독 화면은 받지 않음). 2026-10-25 Gowun Dodum·Cafe24 Ssurround → Noto Sans KR(올리오 앱과 같게).
          치환표 원본: 올리오 저장소 ollio-theme.json · 받는 코드: src/lib/ollioTheme.ts · CSS: src/index.css 맨 아래. (2026-10-24) -->
     <script>
       (function () {
         try {
           var q = new URLSearchParams(location.search);
-          if (q.get('theme') === 'ollio') document.documentElement.setAttribute('data-theme', 'ollio');
+          if (q.get('theme') === 'ollio') {
+            document.documentElement.setAttribute('data-theme', 'ollio');
+            var f = document.createElement('link'); f.rel = 'stylesheet';
+            f.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap';
+            document.head.appendChild(f);
+          }
           if (q.get('embed') === '1') document.documentElement.setAttribute('data-embed', '');
         } catch (e) {}
       })();
