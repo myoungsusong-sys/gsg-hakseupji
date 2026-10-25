@@ -11,7 +11,6 @@ import { useAuth } from '../lib/auth'
 import { teacherByEmail } from '../lib/role'
 import { BrandLogo } from './BrandMark'
 import AiApprovalPanel from './lesson/AiApprovalPanel'
-import AdminChat from './AdminChat'
 import { qnaFeed, stuckMinutes, type QnaLite } from '../lib/qna'
 import { SUPABASE_ON } from '../lib/supabase'
 import { notifyKakao, shouldNotify } from '../lib/notify'
@@ -355,8 +354,7 @@ export default function Layout() {
       {/* AI 1차 채점 승인 큐 — 대기 문항 있을 때만 플로팅 뱃지 (모든 선생님 화면) */}
       <AiApprovalPanel />
 
-      {/* 💬 클로드에게 말로 고치기 (좌하단 — 우하단은 [맨 위로]·승인 큐가 쓴다) */}
-      <AdminChat />
+      {/* «클로드에게 말하기»(AdminChat) 단추는 명수쌤 지시로 뺐다(2026-10-25). 다시 쓰려면 import AdminChat 과 <AdminChat /> 를 이 자리에 되살린다. */}
 
       <CrashGuard key={loc.pathname} where={loc.pathname}><Outlet /></CrashGuard>
     </div>
