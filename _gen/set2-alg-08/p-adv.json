@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-alg-08-adv-001",
+"typeId": "set2-alg-08-u0m0s0t3",
+"twinGroup": "tw-set2-alg-08-u0m0s0t3",
+"diff": 4,
+"body": "한 원 위에 네 점 $A$, $B$, $C$, $D$가 이 순서로 놓여 있다. $\\overline{AB}=8$, $\\angle ADB=30^\\circ$, $\\angle BAC=45^\\circ$, $\\angle ABD=60^\\circ$일 때, $\\overline{AD}+\\overline{CD}$의 값은?",
+"solution": "첫째, 같은 현 $\\overline{AB}$에 대한 원주각이므로 $\\angle ACB=\\angle ADB=30^\\circ$이다. 따라서 삼각형 $ABC$에서\n$\\angle ABC=180^\\circ-45^\\circ-30^\\circ=105^\\circ$이다.\n\n둘째, 대각선 $\\overline{BD}$는 $\\angle ABC$의 내부에 있으므로\n$\\angle DBC=105^\\circ-60^\\circ=45^\\circ$이다.\n\n셋째, 원의 반지름을 $R$이라 하면 삼각형 $ABD$에 사인법칙을 적용하여\n$2R=\\dfrac{8}{\\sin30^\\circ}=16$을 얻는다.\n현 $\\overline{AD}$와 $\\overline{CD}$에 각각 사인법칙을 적용하면\n$\\overline{AD}=16\\sin60^\\circ=8\\sqrt{3}$,\n$\\overline{CD}=16\\sin45^\\circ=8\\sqrt{2}$이다.\n\n따라서 $\\overline{AD}+\\overline{CD}=8(\\sqrt{3}+\\sqrt{2})$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$4(\\sqrt{3}+\\sqrt{2})$",
+"$8(\\sqrt{3}+1)$",
+"$8(\\sqrt{3}+\\sqrt{2})$",
+"$16\\sqrt{2}$",
+"$16(\\sqrt{3}+\\sqrt{2})$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-adv-002",
+"typeId": "set2-alg-08-u0m0s0t3",
+"twinGroup": "tw-set2-alg-08-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\angle BAC=30^\\circ$, $\\overline{BC}=6$, $\\overline{CA}=6\\sqrt{3}$이다. 선분 $\\overline{BC}$ 위의 점 $D$가\n$\\angle BAD=\\angle DAC=15^\\circ$를 만족한다.\n\n주어진 조건을 만족하는 삼각형의 서로 다른 모양을 모두 고려할 때, 각 모양에서 얻는 선분 $\\overline{AD}$의 길이의 합은? 단, 서로 합동인 삼각형은 같은 모양으로 센다.\n\n필요하면 $\\sin15^\\circ=\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}$, $\\sin75^\\circ=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$를 이용한다.",
+"solution": "첫째, 삼각형 $ABC$에 사인법칙을 적용하면\n$\\sin B=\\dfrac{6\\sqrt{3}\\sin30^\\circ}{6}=\\dfrac{\\sqrt{3}}{2}$이다.\n따라서 $B=60^\\circ$ 또는 $B=120^\\circ$이다. 두 경우 모두 $A+B<180^\\circ$이므로 가능하다.\n\n둘째, $B=60^\\circ$이면 $C=90^\\circ$이다. 사인법칙에 의해\n$\\overline{AB}=\\dfrac{6\\sin90^\\circ}{\\sin30^\\circ}=12$이다.\n삼각형 $ABD$에서 $\\angle ADB=105^\\circ$이므로\n$\\overline{AD}=\\dfrac{12\\sin60^\\circ}{\\sin105^\\circ}=12\\sqrt{3}\\cdot\\dfrac{\\sqrt{6}-\\sqrt{2}}{2}=6(3\\sqrt{2}-\\sqrt{6})$이다.\n\n셋째, $B=120^\\circ$이면 $C=30^\\circ$이다. 사인법칙에 의해 $\\overline{AB}=6$이다.\n삼각형 $ABD$에서 $\\angle ADB=45^\\circ$이므로\n$\\overline{AD}=\\dfrac{6\\sin120^\\circ}{\\sin45^\\circ}=3\\sqrt{6}$이다.\n\n따라서 두 길이의 합은 $18\\sqrt{2}-3\\sqrt{6}$이고, 정답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$18\\sqrt{2}-9\\sqrt{6}$",
+"$3\\sqrt{6}$",
+"$18\\sqrt{2}-6\\sqrt{6}$",
+"$18\\sqrt{2}-3\\sqrt{6}$",
+"$18\\sqrt{2}+3\\sqrt{6}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-08-adv-003",
+"typeId": "set2-alg-08-u0m0s0t3",
+"twinGroup": "tw-set2-alg-08-u0m0s0t3",
+"diff": 5,
+"body": "한 원 위에 네 점 $A$, $B$, $C$, $D$가 이 순서로 놓여 있고, 두 대각선 $\\overline{AC}$와 $\\overline{BD}$의 교점을 $P$라 하자.\n$\\overline{BC}=8$, $\\angle BAC=\\angle CAD=30^\\circ$, $\\angle ABD=45^\\circ$일 때, $\\overline{AP}\\cdot\\overline{PC}$의 값은?\n\n단, $\\sin75^\\circ=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$이다.",
+"solution": "첫째, 같은 현 $\\overline{CD}$에 대한 원주각이므로\n$\\angle CBD=\\angle CAD=30^\\circ$이다.\n따라서 $\\angle ABC=45^\\circ+30^\\circ=75^\\circ$이고, 삼각형 $ABC$에서\n$\\angle BCA=180^\\circ-30^\\circ-75^\\circ=75^\\circ$이다.\n\n둘째, 삼각형 $BCP$에서\n$\\angle PBC=30^\\circ$, $\\angle BCP=75^\\circ$, $\\angle BPC=75^\\circ$이다.\n같은 크기의 각의 대변은 같으므로 $\\overline{BP}=\\overline{BC}=8$이다.\n사인법칙에 의해\n$\\overline{PC}=\\dfrac{8\\sin30^\\circ}{\\sin75^\\circ}=4(\\sqrt{6}-\\sqrt{2})$이다.\n\n셋째, 삼각형 $ABP$에서 $\\angle BAP=30^\\circ$, $\\angle ABP=45^\\circ$이므로\n$\\overline{AP}=\\dfrac{8\\sin45^\\circ}{\\sin30^\\circ}=8\\sqrt{2}$이다.\n\n따라서\n$\\overline{AP}\\cdot\\overline{PC}=8\\sqrt{2}\\cdot4(\\sqrt{6}-\\sqrt{2})=64(\\sqrt{3}-1)$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$32(\\sqrt{3}-1)$",
+"$64(\\sqrt{3}-1)$",
+"$64$",
+"$64(\\sqrt{3}+1)$",
+"$128(\\sqrt{3}-1)$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-08-adv-004",
+"typeId": "set2-alg-08-u0m0s0t3",
+"twinGroup": "tw-set2-alg-08-u0m0s0t3",
+"diff": 5,
+"body": "직선 도로 위의 두 관측 지점 $A$, $B$와 도로 밖의 목표 지점 $C$에 대하여 다음 측정값을 얻었다.\n\n$\\angle CAB=45^\\circ$, $\\overline{BC}=20\\,\\mathrm{m}$, $\\overline{AC}=10\\sqrt{6}\\,\\mathrm{m}$\n\n관측 기록에는 $\\angle ABC$가 예각인지 둔각인지 적혀 있지 않다.\n\n가능한 기준선 $\\overline{AB}$의 길이를 모두 구하고, 각각의 삼각형 $ABC$의 외접원 반지름을 구하시오. 또한 외접원 반지름을 추가로 알아내면 두 경우를 구별할 수 있는지 근거를 들어 설명하시오.\n\n필요하면 $\\sin15^\\circ=\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}$, $\\sin75^\\circ=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$를 이용한다.",
+"solution": "첫째, 사인법칙에 의해\n$\\sin B=\\dfrac{10\\sqrt{6}\\sin45^\\circ}{20}=\\dfrac{\\sqrt{3}}{2}$이다.\n따라서 $B=60^\\circ$ 또는 $B=120^\\circ$이다.\n두 경우 모두 $45^\\circ+B<180^\\circ$이므로 가능하다.\n\n둘째, $B=60^\\circ$이면 $C=75^\\circ$이므로\n$\\overline{AB}=\\dfrac{20\\sin75^\\circ}{\\sin45^\\circ}=10(\\sqrt{3}+1)\\,\\mathrm{m}$이다.\n$B=120^\\circ$이면 $C=15^\\circ$이므로\n$\\overline{AB}=\\dfrac{20\\sin15^\\circ}{\\sin45^\\circ}=10(\\sqrt{3}-1)\\,\\mathrm{m}$이다.\n\n셋째, 두 경우 모두 변 $\\overline{BC}$와 그 대각이 같으므로\n$R=\\dfrac{20}{2\\sin45^\\circ}=10\\sqrt{2}\\,\\mathrm{m}$이다.\n따라서 외접원 반지름을 추가로 알아내도 두 경우를 구별할 수 없다.\n\n[채점 기준]\n각의 두 후보와 가능 여부 확인: $3$점.\n기준선 길이 두 개 계산: 각 $2$점씩 총 $4$점.\n공통 반지름 계산: $2$점.\n반지름으로 구별할 수 없는 이유 설명: $1$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "주관식",
+"answer": "$\\overline{AB}=10(\\sqrt{3}+1)\\,\\mathrm{m}$ 또는 $10(\\sqrt{3}-1)\\,\\mathrm{m}$, 외접원 반지름은 두 경우 모두 $10\\sqrt{2}\\,\\mathrm{m}$이며 반지름으로는 구별할 수 없다.",
+"selfGrade": true
+},
+{
+"id": "set2-alg-08-adv-005",
+"typeId": "set2-alg-08-u0m0s0t3",
+"twinGroup": "tw-set2-alg-08-u0m0s0t3",
+"diff": 5,
+"body": "한 원 위에 네 점 $A$, $B$, $C$, $D$가 이 순서로 놓여 있다.\n$\\overline{AB}=12$, $\\angle ADB=60^\\circ$, $\\angle BAC=30^\\circ$, $\\angle CAD=45^\\circ$이다.\n\n두 대각선 $\\overline{AC}$, $\\overline{BD}$의 길이를 각각 구하고, 삼각형 $BCD$가 예각삼각형, 직각삼각형, 둔각삼각형 중 어느 것인지 근거를 들어 판단하시오.\n\n단, $\\sin75^\\circ=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$이다.",
+"solution": "첫째, 원의 반지름을 $R$이라 하면 삼각형 $ABD$에 사인법칙을 적용하여\n$2R=\\dfrac{12}{\\sin60^\\circ}=8\\sqrt{3}$을 얻는다.\n\n둘째, 같은 현 $\\overline{AB}$에 대한 원주각이므로\n$\\angle ACB=\\angle ADB=60^\\circ$이다.\n삼각형 $ABC$에서\n$\\angle ABC=180^\\circ-30^\\circ-60^\\circ=90^\\circ$이다.\n따라서 $\\overline{AC}$는 원의 지름이므로 $\\overline{AC}=8\\sqrt{3}$이다.\n\n셋째, $\\angle BAD=30^\\circ+45^\\circ=75^\\circ$이므로\n$\\overline{BD}=2R\\sin75^\\circ=8\\sqrt{3}\\cdot\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}=6\\sqrt{2}+2\\sqrt{6}$이다.\n\n넷째, 원에 내접하는 사각형의 마주 보는 두 각은 서로 보각이므로\n$\\angle BCD=180^\\circ-\\angle BAD=105^\\circ$이다.\n따라서 삼각형 $BCD$는 둔각삼각형이다.\n\n[채점 기준]\n외접원의 지름 계산: $2$점.\n직각인 원주각을 찾아 대각선 $\\overline{AC}$ 계산: $3$점.\n사인법칙으로 대각선 $\\overline{BD}$ 계산: $3$점.\n보각 관계를 이용한 삼각형의 모양 판단: $2$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "주관식",
+"answer": "$\\overline{AC}=8\\sqrt{3}$, $\\overline{BD}=6\\sqrt{2}+2\\sqrt{6}$, 둔각삼각형",
+"selfGrade": true
+},
+{
+"id": "set2-alg-08-adv-006",
+"typeId": "set2-alg-08-u0m0s0t3",
+"twinGroup": "tw-set2-alg-08-u0m0s0t3",
+"diff": 5,
+"body": "원형 저수지의 경계에 관측 지점 $A$, $B$와 시설 지점 $C$, $D$가 있다. 네 지점은 원 위에서 $A$, $C$, $B$, $D$의 순서로 놓여 있다.\n\n기준선 길이는 $\\overline{AB}=20\\sqrt{3}\\,\\mathrm{m}$이고, 관측 결과\n$\\angle ACB=60^\\circ$, $\\angle CAB=45^\\circ$, $\\angle ABD=30^\\circ$를 얻었다.\n\n시설 연결을 위해 $A$에서 $C$, $C$에서 $D$, $D$에서 $B$까지 각각 두 지점 사이의 직선으로 케이블을 설치한다. 필요한 케이블의 총길이는? 단, 여유분은 고려하지 않으며\n$\\sin75^\\circ=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$이다.",
+"solution": "첫째, 저수지 경계인 원의 반지름을 $R$이라 하면\n$2R=\\dfrac{20\\sqrt{3}}{\\sin60^\\circ}=40\\,\\mathrm{m}$이다.\n\n둘째, 삼각형 $ABC$에서\n$\\angle ABC=180^\\circ-60^\\circ-45^\\circ=75^\\circ$이다.\n따라서\n$\\overline{AC}=40\\sin75^\\circ=10(\\sqrt{6}+\\sqrt{2})\\,\\mathrm{m}$이다.\n\n셋째, 점 $C$와 점 $D$는 직선 $AB$의 서로 반대쪽에 있으므로\n$\\angle CBD=\\angle CBA+\\angle ABD=75^\\circ+30^\\circ=105^\\circ$이다.\n보각의 사인값이 같으므로\n$\\overline{CD}=40\\sin105^\\circ=40\\sin75^\\circ=10(\\sqrt{6}+\\sqrt{2})\\,\\mathrm{m}$이다.\n\n넷째, 현 $\\overline{AD}$와 $\\overline{DB}$에 대한 원주각을 구별한다.\n원에 내접하는 사각형의 마주 보는 각의 합에 의해\n$\\angle ADB=180^\\circ-\\angle ACB=120^\\circ$이다.\n삼각형 $ABD$에서 $\\angle BAD=30^\\circ$이므로\n$\\overline{DB}=40\\sin30^\\circ=20\\,\\mathrm{m}$이다.\n\n따라서 필요한 총길이는\n$\\overline{AC}+\\overline{CD}+\\overline{DB}=\\{20(\\sqrt{6}+\\sqrt{2})+20\\}\\,\\mathrm{m}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$\\{10(\\sqrt{6}+\\sqrt{2})+20\\}\\,\\mathrm{m}$",
+"$20(\\sqrt{6}+\\sqrt{2})\\,\\mathrm{m}$",
+"$\\{20(\\sqrt{6}+\\sqrt{2})+20\\}\\,\\mathrm{m}$",
+"$\\{20(\\sqrt{6}+\\sqrt{2})+20\\sqrt{3}\\}\\,\\mathrm{m}$",
+"$\\{40(\\sqrt{6}+\\sqrt{2})+40\\}\\,\\mathrm{m}$"
+],
+"answer": "③"
+}
+]

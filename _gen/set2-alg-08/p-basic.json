@@ -1,0 +1,112 @@
+[
+{
+"id": "set2-alg-08-basic-001",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형의 세 꼭짓점을 모두 지나는 원을 ( )이라 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "외접원",
+"solution": "정답 외접원 · 외접원은 삼각형의 세 꼭짓점을 모두 지나는 원이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-002",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형의 외접원의 중심을 ( )이라 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "외심",
+"solution": "정답 외심 · 외심은 삼각형의 외접원의 중심이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-003",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "외접원의 반지름이 $R$인 삼각형에서 사인법칙의 공통값 $\\dfrac{a}{\\sin A}$는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$2R$",
+"solution": "정답 $2R$ · 사인법칙의 공통값은 외접원의 지름 $2R$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-004",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "외접원의 지름을 보조선으로 이용한 사인법칙의 증명에서 지름에 대한 원주각의 크기는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$90^\\circ$",
+"solution": "정답 $90^\\circ$ · 지름에 대한 원주각은 직각이므로 직각삼각형을 만들어 사인의 정의를 적용할 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-005",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$A=30^\\circ$, $a=6$인 삼각형의 외접원의 반지름은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$6$",
+"solution": "정답 $6$ · $R=\\dfrac{a}{2\\sin A}=\\dfrac{6}{2\\times(1/2)}=6$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-006",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$A=45^\\circ$, $C=75^\\circ$인 삼각형에서 각 $B$의 크기는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$60^\\circ$",
+"solution": "정답 $60^\\circ$ · 삼각형의 내각의 합이 $180^\\circ$이므로 $B=180^\\circ-45^\\circ-75^\\circ=60^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-007",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$A=30^\\circ$, $B=60^\\circ$, $C=90^\\circ$인 삼각형의 변의 비 $a:b:c$는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$1:\\sqrt3:2$",
+"solution": "정답 $1:\\sqrt3:2$ · 사인법칙에 의해 $a:b:c=\\sin30^\\circ:\\sin60^\\circ:\\sin90^\\circ=1:\\sqrt3:2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-008",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$A=60^\\circ$, $a=6$, $b=2\\sqrt3$인 삼각형에서 $\\sin B=\\dfrac12$일 때 가능한 각 $B$의 크기는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$30^\\circ$",
+"solution": "정답 $30^\\circ$ · 후보 $150^\\circ$는 $A+B>180^\\circ$가 되어 불가능하므로 $B=30^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-009",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형에서 $\\sin A=\\sin B=\\sin C$이면 이 삼각형은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "정삼각형",
+"solution": "정답 정삼각형 · 사인법칙에 의해 세 변의 길이가 같으므로 정삼각형이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-basic-010",
+"typeId": "set2-alg-08-u0m0s0t1",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "기준선 $\\mathrm{AB}=40$ m이고 $A=60^\\circ$, $B=75^\\circ$인 거리 측정 삼각형에서 $\\mathrm{BC}=\\dfrac{40\\sin60^\\circ}{\\sin45^\\circ}$이므로 $\\mathrm{BC}$의 길이는 ( ) m이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$20\\sqrt6$",
+"solution": "정답 $20\\sqrt6$ · $\\mathrm{BC}=40\\times\\dfrac{\\sqrt3}{2}\\div\\dfrac{\\sqrt2}{2}=20\\sqrt6$이므로 두 지점 사이의 직선거리는 $20\\sqrt6$ m이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+}
+]

@@ -8569,5 +8569,309 @@
 "set2-int2-14-adv-005",
 "set2-int2-14-adv-006"
 ]
+},
+{
+"id": "ws-set2-alg-11-01",
+"course": "set2-alg-11",
+"title": "수업세트 | 대수 11 등비수열 ① O·X 20문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-11-ox-001",
+"set2-alg-11-ox-002",
+"set2-alg-11-ox-003",
+"set2-alg-11-ox-004",
+"set2-alg-11-ox-005",
+"set2-alg-11-ox-006",
+"set2-alg-11-ox-007",
+"set2-alg-11-ox-008",
+"set2-alg-11-ox-009",
+"set2-alg-11-ox-010",
+"set2-alg-11-ox-011",
+"set2-alg-11-ox-012",
+"set2-alg-11-ox-013",
+"set2-alg-11-ox-014",
+"set2-alg-11-ox-015",
+"set2-alg-11-ox-016",
+"set2-alg-11-ox-017",
+"set2-alg-11-ox-018",
+"set2-alg-11-ox-019",
+"set2-alg-11-ox-020"
+]
+},
+{
+"id": "ws-set2-alg-11-02",
+"course": "set2-alg-11",
+"title": "수업세트 | 대수 11 등비수열 ② 기본개념 확인 10문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-11-basic-001",
+"set2-alg-11-basic-002",
+"set2-alg-11-basic-003",
+"set2-alg-11-basic-004",
+"set2-alg-11-basic-005",
+"set2-alg-11-basic-006",
+"set2-alg-11-basic-007",
+"set2-alg-11-basic-008",
+"set2-alg-11-basic-009",
+"set2-alg-11-basic-010"
+]
+},
+{
+"id": "ws-set2-alg-11-03",
+"course": "set2-alg-11",
+"title": "수업세트 | 대수 11 등비수열 ③ 개념문제 16문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-11-con-001",
+"set2-alg-11-con-002",
+"set2-alg-11-con-003",
+"set2-alg-11-con-004",
+"set2-alg-11-con-005",
+"set2-alg-11-con-006",
+"set2-alg-11-con-007",
+"set2-alg-11-con-008",
+"set2-alg-11-con-009",
+"set2-alg-11-con-010",
+"set2-alg-11-con-011",
+"set2-alg-11-con-012",
+"set2-alg-11-con-013",
+"set2-alg-11-con-014",
+"set2-alg-11-con-015",
+"set2-alg-11-con-016"
+]
+},
+{
+"id": "ws-set2-alg-11-04",
+"course": "set2-alg-11",
+"title": "수업세트 | 대수 11 등비수열 ④ 심화문제 6문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-11-adv-001",
+"set2-alg-11-adv-002",
+"set2-alg-11-adv-003",
+"set2-alg-11-adv-004",
+"set2-alg-11-adv-005",
+"set2-alg-11-adv-006"
+]
+},
+{
+"id": "ws-set2-alg-08-01",
+"course": "set2-alg-08",
+"title": "수업세트 | 대수 08 사인법칙 ① O·X 20문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-08-ox-001",
+"set2-alg-08-ox-002",
+"set2-alg-08-ox-003",
+"set2-alg-08-ox-004",
+"set2-alg-08-ox-005",
+"set2-alg-08-ox-006",
+"set2-alg-08-ox-007",
+"set2-alg-08-ox-008",
+"set2-alg-08-ox-009",
+"set2-alg-08-ox-010",
+"set2-alg-08-ox-011",
+"set2-alg-08-ox-012",
+"set2-alg-08-ox-013",
+"set2-alg-08-ox-014",
+"set2-alg-08-ox-015",
+"set2-alg-08-ox-016",
+"set2-alg-08-ox-017",
+"set2-alg-08-ox-018",
+"set2-alg-08-ox-019",
+"set2-alg-08-ox-020"
+]
+},
+{
+"id": "ws-set2-alg-08-02",
+"course": "set2-alg-08",
+"title": "수업세트 | 대수 08 사인법칙 ② 기본개념 확인 10문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-08-basic-001",
+"set2-alg-08-basic-002",
+"set2-alg-08-basic-003",
+"set2-alg-08-basic-004",
+"set2-alg-08-basic-005",
+"set2-alg-08-basic-006",
+"set2-alg-08-basic-007",
+"set2-alg-08-basic-008",
+"set2-alg-08-basic-009",
+"set2-alg-08-basic-010"
+]
+},
+{
+"id": "ws-set2-alg-08-03",
+"course": "set2-alg-08",
+"title": "수업세트 | 대수 08 사인법칙 ③ 개념문제 16문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-08-con-001",
+"set2-alg-08-con-002",
+"set2-alg-08-con-003",
+"set2-alg-08-con-004",
+"set2-alg-08-con-005",
+"set2-alg-08-con-006",
+"set2-alg-08-con-007",
+"set2-alg-08-con-008",
+"set2-alg-08-con-009",
+"set2-alg-08-con-010",
+"set2-alg-08-con-011",
+"set2-alg-08-con-012",
+"set2-alg-08-con-013",
+"set2-alg-08-con-014",
+"set2-alg-08-con-015",
+"set2-alg-08-con-016"
+]
+},
+{
+"id": "ws-set2-alg-08-04",
+"course": "set2-alg-08",
+"title": "수업세트 | 대수 08 사인법칙 ④ 심화문제 6문항",
+"grade": "고2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-alg-08-adv-001",
+"set2-alg-08-adv-002",
+"set2-alg-08-adv-003",
+"set2-alg-08-adv-004",
+"set2-alg-08-adv-005",
+"set2-alg-08-adv-006"
+]
+},
+{
+"id": "ws-set2-int2-07-01",
+"course": "set2-int2-07",
+"title": "수업세트 | 통합과학2 07 생태계 구성 요소와 환경 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-07-con-001",
+"set2-int2-07-con-002",
+"set2-int2-07-con-003",
+"set2-int2-07-con-004",
+"set2-int2-07-con-005",
+"set2-int2-07-con-006",
+"set2-int2-07-con-007",
+"set2-int2-07-con-008",
+"set2-int2-07-con-009",
+"set2-int2-07-con-010",
+"set2-int2-07-con-011",
+"set2-int2-07-con-012",
+"set2-int2-07-con-013",
+"set2-int2-07-con-014",
+"set2-int2-07-con-015",
+"set2-int2-07-con-016"
+]
+},
+{
+"id": "ws-set2-int2-07-02",
+"course": "set2-int2-07",
+"title": "수업세트 | 통합과학2 07 생태계 구성 요소와 환경 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-07-adv-001",
+"set2-int2-07-adv-002",
+"set2-int2-07-adv-003",
+"set2-int2-07-adv-004",
+"set2-int2-07-adv-005",
+"set2-int2-07-adv-006"
+]
+},
+{
+"id": "ws-set2-int2-08-01",
+"course": "set2-int2-08",
+"title": "수업세트 | 통합과학2 08 생태계 평형 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-08-con-001",
+"set2-int2-08-con-002",
+"set2-int2-08-con-003",
+"set2-int2-08-con-004",
+"set2-int2-08-con-005",
+"set2-int2-08-con-006",
+"set2-int2-08-con-007",
+"set2-int2-08-con-008",
+"set2-int2-08-con-009",
+"set2-int2-08-con-010",
+"set2-int2-08-con-011",
+"set2-int2-08-con-012",
+"set2-int2-08-con-013",
+"set2-int2-08-con-014",
+"set2-int2-08-con-015",
+"set2-int2-08-con-016"
+]
+},
+{
+"id": "ws-set2-int2-08-02",
+"course": "set2-int2-08",
+"title": "수업세트 | 통합과학2 08 생태계 평형 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-08-adv-001",
+"set2-int2-08-adv-002",
+"set2-int2-08-adv-003",
+"set2-int2-08-adv-004",
+"set2-int2-08-adv-005",
+"set2-int2-08-adv-006"
+]
 }
 ]

@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-alg-08-con-001",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 1,
+"body": "삼각형 $ABC$의 외접원의 반지름이 $7$이고, $A=30^\\circ$, $B=90^\\circ$이다. $a=\\overline{BC}$, $b=\\overline{CA}$의 길이라 할 때, $b-a$의 값은?",
+"solution": "사인법칙에 의해 $a=2R\\sin A$, $b=2R\\sin B$이다.\n따라서\n$a=14\\sin30^\\circ=7$,\n$b=14\\sin90^\\circ=14$이다.\n그러므로 $b-a=14-7=7$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{7}{2}$",
+"$7$",
+"$14$",
+"$21$",
+"$28$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-08-con-002",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{BC}=8$, $\\overline{CA}=12$, $\\sin A=\\dfrac{1}{3}$일 때, $\\sin B$의 값은?",
+"solution": "$\\overline{BC}$의 대각은 $A$이고, $\\overline{CA}$의 대각은 $B$이다.\n사인법칙에 의해\n$\\dfrac{8}{\\sin A}=\\dfrac{12}{\\sin B}$이다.\n따라서\n$\\sin B=\\dfrac{12}{8}\\sin A=\\dfrac{12}{8}\\times\\dfrac{1}{3}=\\dfrac{1}{2}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{2}{9}$",
+"$\\dfrac{1}{3}$",
+"$\\dfrac{1}{2}$",
+"$\\dfrac{2}{3}$",
+"$\\dfrac{3}{4}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-003",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $A=120^\\circ$, $\\overline{BC}=9\\sqrt{3}$일 때, 외접원의 반지름은?",
+"solution": "보각의 사인값은 같으므로\n$\\sin120^\\circ=\\sin60^\\circ=\\dfrac{\\sqrt{3}}{2}$이다.\n외접원의 반지름을 $R$이라 하면 사인법칙에 의해\n$2R=\\dfrac{9\\sqrt{3}}{\\sin120^\\circ} =\\dfrac{9\\sqrt{3}}{\\sqrt{3}/2}=18$이다.\n따라서 $R=9$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{9}{2}$",
+"$\\dfrac{9\\sqrt{3}}{2}$",
+"$9$",
+"$9\\sqrt{3}$",
+"$18$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-004",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $B=45^\\circ$, $C=75^\\circ$, $\\overline{CA}=8$일 때, $\\overline{BC}$의 길이는?",
+"solution": "삼각형의 내각의 합에 의해\n$A=180^\\circ-45^\\circ-75^\\circ=60^\\circ$이다.\n$\\overline{BC}$의 길이를 $a$라 하면 사인법칙에 의해\n$\\dfrac{a}{\\sin60^\\circ}=\\dfrac{8}{\\sin45^\\circ}$이다.\n따라서\n$a=8\\times\\dfrac{\\sqrt{3}/2}{\\sqrt{2}/2}=4\\sqrt{6}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$4\\sqrt{2}$",
+"$4\\sqrt{3}$",
+"$4\\sqrt{6}$",
+"$\\dfrac{8\\sqrt{6}}{3}$",
+"$8\\sqrt{2}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-005",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$의 외접원의 반지름이 $5\\sqrt{2}$이고, $A=45^\\circ$, $B=60^\\circ$이다. 두 변 $\\overline{BC}$와 $\\overline{CA}$의 길이의 합은?",
+"solution": "외접원의 지름은 $2R=10\\sqrt{2}$이다.\n사인법칙에 의해\n$\\overline{BC}=10\\sqrt{2}\\sin45^\\circ =10\\sqrt{2}\\times\\dfrac{\\sqrt{2}}{2}=10$이다.\n또한\n$\\overline{CA}=10\\sqrt{2}\\sin60^\\circ =10\\sqrt{2}\\times\\dfrac{\\sqrt{3}}{2}=5\\sqrt{6}$이다.\n따라서 두 변의 길이의 합은 $10+5\\sqrt{6}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$5+\\dfrac{5\\sqrt{6}}{2}$",
+"$10+5\\sqrt{3}$",
+"$10+5\\sqrt{6}$",
+"$10+10\\sqrt{3}$",
+"$20+10\\sqrt{6}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-006",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\sin A:\\sin B:\\sin C=3:4:5$이고, 외접원의 반지름이 $10$이다. 가장 짧은 변의 길이는?",
+"solution": "사인법칙에 의해 세 변의 길이의 비는\n$a:b:c=\\sin A:\\sin B:\\sin C=3:4:5$이다.\n$3^2+4^2=5^2$이므로 피타고라스 정리의 역에 의해 $C=90^\\circ$이다.\n직각삼각형의 빗변은 외접원의 지름이므로\n$c=2R=20$이다.\n따라서 가장 짧은 변의 길이는\n$a=\\dfrac{3}{5}c=\\dfrac{3}{5}\\times20=12$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$6$",
+"$10$",
+"$12$",
+"$15$",
+"$20$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-007",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "강의 같은 쪽에 있는 두 지점 $A$, $B$ 사이의 거리는 $18\\,\\mathrm{m}$이다. 강 건너 지점 $C$를 관측하였더니 삼각형 $ABC$의 내부 각이 $\\angle CAB=45^\\circ$, $\\angle ABC=105^\\circ$이었다. 두 지점 $A$, $C$ 사이의 직선거리는?\n\n단, $\\sin105^\\circ=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$이다.",
+"solution": "삼각형의 내각의 합에 의해\n$\\angle ACB=180^\\circ-45^\\circ-105^\\circ=30^\\circ$이다.\n$\\overline{AB}$의 대각은 $\\angle ACB$이고, $\\overline{AC}$의 대각은 $\\angle ABC$이다.\n두 지점 $A$, $C$ 사이의 거리를 $x\\,\\mathrm{m}$라 하면 사인법칙에 의해\n$\\dfrac{x}{\\sin105^\\circ}=\\dfrac{18}{\\sin30^\\circ}$이다.\n따라서\n$x=18\\times\\dfrac{(\\sqrt{6}+\\sqrt{2})/4}{1/2} =9(\\sqrt{6}+\\sqrt{2})$이다.\n그러므로 구하는 직선거리는 $9(\\sqrt{6}+\\sqrt{2})\\,\\mathrm{m}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$9\\sqrt{2}\\,\\mathrm{m}$",
+"$9\\sqrt{3}\\,\\mathrm{m}$",
+"$\\dfrac{9(\\sqrt{6}+\\sqrt{2})}{2}\\,\\mathrm{m}$",
+"$9(\\sqrt{6}+\\sqrt{2})\\,\\mathrm{m}$",
+"$18(\\sqrt{6}+\\sqrt{2})\\,\\mathrm{m}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-08-con-008",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $A=30^\\circ$, $\\overline{BC}=5$, $\\overline{CA}=5\\sqrt{3}$이다. 이 조건을 만족하는 $\\overline{AB}$의 길이를 모두 구하고, 각 경우의 외접원의 반지름을 구하시오. 가능한 각의 후보를 빠짐없이 검토하는 과정을 서술하시오.",
+"solution": "외접원의 반지름을 $R$이라 하면 사인법칙에 의해\n$2R=\\dfrac{5}{\\sin30^\\circ}=10$이므로 $R=5$이다.\n\n또한 사인법칙에 의해\n$\\sin B=\\dfrac{5\\sqrt{3}\\sin30^\\circ}{5} =\\dfrac{\\sqrt{3}}{2}$이다.\n$0^\\circ<B<180^\\circ$이므로 $B=60^\\circ$ 또는 $B=120^\\circ$이다.\n\n$B=60^\\circ$이면\n$C=180^\\circ-30^\\circ-60^\\circ=90^\\circ$이다.\n따라서\n$\\overline{AB}=2R\\sin C=10\\sin90^\\circ=10$이다.\n\n$B=120^\\circ$이면\n$C=180^\\circ-30^\\circ-120^\\circ=30^\\circ$이다.\n따라서\n$\\overline{AB}=2R\\sin C=10\\sin30^\\circ=5$이다.\n\n두 경우 모두 나머지 내각이 양수이므로 가능한 삼각형이다. 따라서 $\\overline{AB}$의 길이는 $10$ 또는 $5$이고, 외접원의 반지름은 두 경우 모두 $5$이다.\n\n[채점 기준]\n외접원의 반지름 $R=5$를 구함: $2$점.\n사인법칙으로 $\\sin B=\\dfrac{\\sqrt{3}}{2}$를 구함: $2$점.\n$B=60^\\circ$, $120^\\circ$를 모두 찾고 각 경우가 가능함을 확인함: $2$점.\n각 경우의 $\\overline{AB}$의 길이 $10$, $5$를 구함: 각 $2$점, 총 $4$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "주관식",
+"answer": "$\\overline{AB}=10$ 또는 $5$, 외접원의 반지름은 두 경우 모두 $5$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-08-con-009",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\sin A=\\sin B$이고 $C=44^\\circ$일 때, $A$의 크기는?",
+"solution": "사인법칙에 의하여 $a:b=\\sin A:\\sin B=1:1$이므로 $a=b$이다.\n같은 삼각형에서 길이가 같은 두 변의 대각은 같으므로 $A=B$이다.\n삼각형의 내각의 합을 이용하면\n$2A=180^\\circ-44^\\circ=136^\\circ$\n따라서 $A=68^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$22^\\circ$",
+"$44^\\circ$",
+"$68^\\circ$",
+"$112^\\circ$",
+"$136^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-010",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서\n$\\sin A:\\sin B:\\sin C=5:12:13$\n일 때, 이 삼각형에 대한 설명으로 옳은 것은?",
+"solution": "사인법칙에 의하여\n$a:b:c=\\sin A:\\sin B:\\sin C=5:12:13$\n이다.\n양수 $k$에 대하여 $a=5k$, $b=12k$, $c=13k$로 놓으면\n$a^2+b^2=25k^2+144k^2=169k^2=c^2$\n이다.\n피타고라스 정리의 역에 의하여 가장 긴 변 $c$의 대각이 직각이다.\n따라서 $C=90^\\circ$인 직각삼각형이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"정삼각형이다.",
+"$A=90^\\circ$인 직각삼각형이다.",
+"$B=90^\\circ$인 직각삼각형이다.",
+"$C=90^\\circ$인 직각삼각형이다.",
+"둔각삼각형이다."
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-08-con-011",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$의 세 내각 $A$, $B$, $C$의 대변의 길이를 각각 $a$, $b$, $c$라 하자.\n$a\\sin A=b\\sin B$이고 $C=76^\\circ$일 때, $A$의 크기는?",
+"solution": "외접원의 반지름을 $R$라 하면 사인법칙에 의하여\n$\\sin A=\\dfrac{a}{2R}$, $\\sin B=\\dfrac{b}{2R}$\n이다.\n이를 주어진 식에 대입하면\n$\\dfrac{a^2}{2R}=\\dfrac{b^2}{2R}$\n이므로 $a^2=b^2$이다.\n변의 길이는 양수이므로 $a=b$이고, 따라서 $A=B$이다.\n내각의 합에 의하여\n$A=B=\\dfrac{180^\\circ-76^\\circ}{2}=52^\\circ$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$38^\\circ$",
+"$52^\\circ$",
+"$76^\\circ$",
+"$104^\\circ$",
+"$128^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-08-con-012",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$의 세 내각 $A$, $B$, $C$의 대변의 길이를 각각 $a$, $b$, $c$라 하자.\n$a\\sin C=2b\\sin A$이고 $B=30^\\circ$일 때, $A$의 크기는?",
+"solution": "외접원의 반지름을 $R$라 하면 사인법칙에 의하여\n$a\\cdot\\dfrac{c}{2R}=2b\\cdot\\dfrac{a}{2R}$\n이다.\n$a$와 $R$는 양수이므로 양변을 정리하면 $c=2b$이다.\n다시 사인법칙을 이용하면\n$\\dfrac{\\sin C}{\\sin B}=\\dfrac{c}{b}=2$\n이므로\n$\\sin C=2\\sin30^\\circ=1$\n이다.\n삼각형의 내각에서 $\\sin C=1$을 만족하는 각은 $C=90^\\circ$이다.\n따라서 $A=180^\\circ-30^\\circ-90^\\circ=60^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$30^\\circ$",
+"$45^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-08-con-013",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$의 세 내각 $A$, $B$, $C$의 대변의 길이를 각각 $a$, $b$, $c$라 하자.\n$a\\sin A+b\\sin B=c\\sin C$이고 $A=34^\\circ$일 때, $B$의 크기는?",
+"solution": "외접원의 반지름을 $R$라 하면 사인법칙에 의하여\n$a\\cdot\\dfrac{a}{2R}+b\\cdot\\dfrac{b}{2R}=c\\cdot\\dfrac{c}{2R}$\n이다.\n양변에 $2R$를 곱하면\n$a^2+b^2=c^2$\n이다.\n피타고라스 정리의 역에 의하여 $C=90^\\circ$이다.\n따라서 내각의 합을 이용하면\n$B=180^\\circ-34^\\circ-90^\\circ=56^\\circ$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$34^\\circ$",
+"$56^\\circ$",
+"$68^\\circ$",
+"$90^\\circ$",
+"$112^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-08-con-014",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $A=45^\\circ$, $BC=6\\sqrt{2}$, $CA=6$일 때, $C$의 크기는?",
+"solution": "$BC$는 $A$의 대변이고, $CA$는 $B$의 대변이다.\n사인법칙에 의하여\n$\\dfrac{6\\sqrt{2}}{\\sin45^\\circ}=\\dfrac{6}{\\sin B}$\n이므로\n$\\sin B=\\dfrac{6\\sin45^\\circ}{6\\sqrt{2}}=\\dfrac{1}{2}$\n이다.\n따라서 $B=30^\\circ$ 또는 $B=150^\\circ$이다.\n그런데 $B=150^\\circ$이면 $A+B=195^\\circ>180^\\circ$이므로 삼각형을 만들 수 없다.\n따라서 $B=30^\\circ$이고,\n$C=180^\\circ-45^\\circ-30^\\circ=105^\\circ$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$15^\\circ$",
+"$30^\\circ$",
+"$75^\\circ$",
+"$105^\\circ$",
+"$150^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-08-con-015",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $A=45^\\circ$, $BC=5\\sqrt{2}$, $CA=5\\sqrt{3}$이다. 가능한 $C$의 크기를 모두 나타낸 것은?",
+"solution": "사인법칙에 의하여\n$\\sin B=\\dfrac{CA\\sin A}{BC}=\\dfrac{5\\sqrt{3}\\cdot\\frac{\\sqrt{2}}{2}}{5\\sqrt{2}}=\\dfrac{\\sqrt{3}}{2}$\n이다.\n따라서 $B=60^\\circ$ 또는 $B=120^\\circ$이다.\n$B=60^\\circ$이면\n$C=180^\\circ-45^\\circ-60^\\circ=75^\\circ$\n이다.\n$B=120^\\circ$이면\n$C=180^\\circ-45^\\circ-120^\\circ=15^\\circ$\n이다.\n두 경우 모두 세 내각이 양수이고 그 합이 $180^\\circ$이므로 가능하다.\n따라서 가능한 $C$의 크기는 $15^\\circ$, $75^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "객관식",
+"choices": [
+"$15^\\circ$",
+"$75^\\circ$",
+"$60^\\circ$, $120^\\circ$",
+"$45^\\circ$, $135^\\circ$",
+"$15^\\circ$, $75^\\circ$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-alg-08-con-016",
+"typeId": "set2-alg-08-u0m0s0t2",
+"twinGroup": "tw-set2-alg-08-u0m0s0t2",
+"diff": 3,
+"body": "삼각형 $ABC$의 세 내각 $A$, $B$, $C$의 대변의 길이를 각각 $a$, $b$, $c$라 하고, 외접원의 반지름을 $R$라 하자.\n$a=R$, $b\\sin B=c\\sin C$일 때, 가능한 세 내각의 크기 $(A,B,C)$를 모두 구하고, 각 경우의 삼각형을 예각삼각형, 직각삼각형, 둔각삼각형 중 하나로 분류하시오. 풀이 과정을 함께 쓰시오.",
+"solution": "사인법칙에 의하여 $a=2R\\sin A$이다.\n여기에 $a=R$를 대입하면\n$R=2R\\sin A$\n이므로 $\\sin A=\\dfrac{1}{2}$이다.\n따라서 $A=30^\\circ$ 또는 $A=150^\\circ$이다.\n\n또한 사인법칙을 $b\\sin B=c\\sin C$에 적용하면\n$b\\cdot\\dfrac{b}{2R}=c\\cdot\\dfrac{c}{2R}$\n이므로 $b^2=c^2$이다.\n변의 길이가 양수이므로 $b=c$이고, 따라서 $B=C$이다.\n\n$A=30^\\circ$이면\n$B=C=\\dfrac{180^\\circ-30^\\circ}{2}=75^\\circ$\n이다. 세 내각이 모두 예각이므로 예각삼각형이다.\n\n$A=150^\\circ$이면\n$B=C=\\dfrac{180^\\circ-150^\\circ}{2}=15^\\circ$\n이다. 둔각인 내각이 있으므로 둔각삼각형이다.\n두 경우 모두 세 내각이 양수이고 그 합이 $180^\\circ$이므로 가능하다.\n\n[채점 기준]\n사인법칙으로 $\\sin A=\\dfrac{1}{2}$을 구하고 $A$의 두 후보를 모두 제시하면 $3$점.\n$b\\sin B=c\\sin C$를 변형하여 $B=C$를 이끌어 내면 $3$점.\n가능한 세 내각의 크기를 두 경우 모두 구하면 $2$점.\n각 경우를 예각삼각형과 둔각삼각형으로 정확히 분류하면 $2$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙",
+"kind": "주관식",
+"answer": "$(A,B,C)=(30^\\circ,75^\\circ,75^\\circ)$일 때 예각삼각형, $(A,B,C)=(150^\\circ,15^\\circ,15^\\circ)$일 때 둔각삼각형",
+"selfGrade": true
+}
+]

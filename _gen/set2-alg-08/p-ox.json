@@ -1,0 +1,222 @@
+[
+{
+"id": "set2-alg-08-ox-001",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 각 $A$의 대변은 $\\mathrm{BC}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 대변은 그 각과 마주 보는 변이므로 각 $A$의 대변은 $\\mathrm{BC}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-002",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "사인법칙에서 $\\dfrac{a}{\\sin A}$의 값은 외접원의 반지름 $R$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 사인법칙의 공통값은 외접원의 지름 $2R$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-003",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$A=120^\\circ$인 삼각형에서는 $\\sin A=-\\dfrac{\\sqrt3}{2}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $\\sin120^\\circ=\\sin60^\\circ=\\dfrac{\\sqrt3}{2}$이다. 삼각형의 내각의 사인값은 양수이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-004",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "외접원의 반지름이 $5$이고 $B=30^\\circ$인 삼각형에서 각 $B$의 대변의 길이는 $5$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $b=2R\\sin B=10\\times\\dfrac12=5$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-005",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "사인법칙은 예각삼각형, 직각삼각형, 둔각삼각형에서 모두 성립한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 삼각형의 모양에 관계없이 $\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}=\\dfrac{c}{\\sin C}=2R$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-006",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "직각삼각형의 외접원의 반지름은 두 직각변 중 짧은 변의 길이의 절반이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 직각삼각형에서는 빗변이 외접원의 지름이므로 외접원의 반지름은 빗변의 길이의 절반이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-007",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형의 한 변의 길이가 외접원의 지름과 같으면 그 변의 대각은 직각이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $a=2R$이면 $a=2R\\sin A$에서 $\\sin A=1$이므로 $A=90^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-008",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형에서 $a<2R$이면 각 $A$는 예각이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 둔각의 사인값도 $1$보다 작으므로 $a<2R$인 경우 각 $A$는 둔각일 수도 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-009",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형의 세 내각의 크기를 알면 사인법칙으로 세 변의 길이를 각각 정할 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 세 내각만 알면 세 변의 비를 알 수 있다. 변의 길이를 정하려면 한 변의 길이와 같은 추가 조건이 필요하다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-010",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$A=45^\\circ$, $B=60^\\circ$, $a=6$인 삼각형에서 $b=3\\sqrt6$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $b=\\dfrac{a\\sin B}{\\sin A}=\\dfrac{6\\times(\\sqrt3/2)}{\\sqrt2/2}=3\\sqrt6$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-011",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형에서 $\\sin B=\\dfrac12$이면 $B=30^\\circ$로 결정된다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $0^\\circ<B<180^\\circ$에서 후보는 $30^\\circ$와 $150^\\circ$이다. 다른 내각과의 합을 확인하여 가능한 후보를 골라야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-012",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$A=30^\\circ$, $a=6$, $b=6\\sqrt3$인 삼각형에서 각 $B$는 $60^\\circ$와 $120^\\circ$가 모두 가능하다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $\\sin B=\\dfrac{b\\sin A}{a}=\\dfrac{\\sqrt3}{2}$이다. 두 후보에 대해 나머지 각은 각각 $90^\\circ$, $30^\\circ$이므로 모두 가능하다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-013",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 변과 한 대각을 이용하여 계산한 다른 내각의 사인값이 $1$보다 크면 주어진 조건을 만족하는 삼각형은 없다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 삼각형의 내각의 사인값은 $0$보다 크고 $1$ 이하이므로 계산값이 $1$보다 크면 불가능하다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-014",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "각 $B$의 후보가 $A+B=180^\\circ$를 만족하면 삼각형의 내각으로 사용할 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $A+B=180^\\circ$이면 $C=0^\\circ$가 되어 삼각형이 아니다. 후보는 $A+B<180^\\circ$를 만족해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-015",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "같은 삼각형에서 $\\sin A=\\sin B$이면 $a=b$인 이등변삼각형이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $a=2R\\sin A$, $b=2R\\sin B$이므로 두 사인값이 같으면 두 대변의 길이도 같다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-016",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형에서 $a\\sin A=b\\sin B$이면 $a^2=b$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $\\sin A=\\dfrac{a}{2R}$, $\\sin B=\\dfrac{b}{2R}$를 대입하면 $a^2=b^2$이다. 변의 길이는 양수이므로 $a=b$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-017",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형에서 $\\sin A:\\sin B:\\sin C=3:4:5$이면 $c^2=a^2+b^2$가 성립하지 않는다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 사인법칙에 의해 $a:b:c=3:4:5$이므로 $c^2=a^2+b^2$가 성립한다. 따라서 이 삼각형은 $C=90^\\circ$인 직각삼각형이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-018",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "둔각 $A$에 대한 사인법칙의 증명에서 $\\sin(180^\\circ-A)=\\sin A$를 이용할 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 둔각의 사인값과 그 보각의 사인값이 같으므로 $\\dfrac{a}{2R}=\\sin(180^\\circ-A)$를 $\\dfrac{a}{2R}=\\sin A$로 바꿀 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-019",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "거리 측정을 위한 $\\triangle ABC$에서 $\\mathrm{AB}$와 두 내각을 알 때 $\\mathrm{AC}=\\dfrac{\\mathrm{AB}\\sin A}{\\sin C}$로 계산한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $\\mathrm{AC}$의 대각은 $B$이고 $\\mathrm{AB}$의 대각은 $C$이다. 따라서 $\\mathrm{AC}=\\dfrac{\\mathrm{AB}\\sin B}{\\sin C}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+},
+{
+"id": "set2-alg-08-ox-020",
+"typeId": "set2-alg-08-u0m0s0t0",
+"twinGroup": "tw-set2-alg-08-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$A=120^\\circ$, $a=6\\sqrt3$인 삼각형의 외접원의 넓이는 $36\\pi$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $R=\\dfrac{6\\sqrt3}{2\\sin120^\\circ}=6$이므로 외접원의 넓이는 $\\pi R^2=36\\pi$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 08 사인법칙"
+}
+]
