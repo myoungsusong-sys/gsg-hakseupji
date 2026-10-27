@@ -1,0 +1,222 @@
+[
+{
+"id": "set2-cm2-14-ox-001",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "실수 $a$에 대하여 $\\sqrt{a^2}=|a|$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 제곱근의 값은 $0$ 이상이므로 $\\sqrt{a^2}$은 $a$의 절댓값과 같다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-002",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$(\\sqrt{2})x$는 근호가 있으므로 무리식이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $(\\sqrt{2})x$는 실수 $\\sqrt{2}$를 계수로 갖는 다항식이다. 근호 안에 문자가 있는 $\\sqrt{2x}$와 구별해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-003",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\dfrac{1}{\\sqrt{3-x}}$가 실수가 되는 $x$의 범위는 $x\\leq 3$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $x=3$이면 분모가 $0$이 된다. 따라서 $3-x>0$, 즉 $x<3$이어야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-004",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\sqrt{x+2}+\\sqrt{3-x}$가 실수가 되는 $x$의 범위는 $-2\\leq x\\leq 3$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $x+2\\geq 0$과 $3-x\\geq 0$을 동시에 만족하는 범위는 $-2\\leq x\\leq 3$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-005",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\dfrac{1}{\\sqrt{3}-\\sqrt{2}}$를 유리화하면 $\\sqrt{3}+\\sqrt{2}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 분자와 분모에 $\\sqrt{3}+\\sqrt{2}$를 곱하면 분모가 $3-2=1$이 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-006",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\dfrac{2x}{\\sqrt{2+x}-\\sqrt{2-x}}$를 유리화하여 약분하면 원래 식에도 $x=0$을 대입할 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $x=0$이면 원래 식의 분모가 $0$이다. 약분한 뒤에도 원래 조건인 $x\\neq 0$은 유지된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-007",
+"typeId": "set2-cm2-14-u0m0s0t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$A=B>0$일 때 $\\dfrac{1}{\\sqrt{A}+\\sqrt{B}}$의 분자와 분모에 $\\sqrt{A}-\\sqrt{B}$를 곱하여 유리화할 수 없다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 이때 $\\sqrt{A}-\\sqrt{B}=0$이므로 분자와 분모에 곱할 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-008",
+"typeId": "set2-cm2-14-u0m0s1t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $y=\\sqrt{-x}$의 정의역은 $x\\geq 0$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 근호 안의 조건은 $-x\\geq 0$이다. 따라서 정의역은 $x\\leq 0$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-009",
+"typeId": "set2-cm2-14-u0m0s1t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $y=-\\sqrt{x}+2$의 치역은 $y\\geq 2$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $-\\sqrt{x}\\leq 0$이므로 $y\\leq 2$이다. 따라서 치역은 $y\\leq 2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-010",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$y=\\sqrt{x}$와 $y=-\\sqrt{-x}$의 그래프는 원점에 대하여 대칭이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $y=\\sqrt{x}$의 그래프를 원점에 대하여 대칭이동하면 $y=-\\sqrt{-x}$의 그래프가 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-011",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$y=\\sqrt{x+3}$의 그래프는 $y=\\sqrt{x}$의 그래프를 오른쪽으로 $3$만큼 평행이동한 것이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $x+3=x-(-3)$이므로 왼쪽으로 $3$만큼 평행이동한 것이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-012",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$y=-\\sqrt{-2x+4}-1$의 그래프의 시작점은 $(2,-1)$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 근호 안이 $0$이 되는 $x=2$에서 $y=-1$이므로 시작점은 $(2,-1)$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-013",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $y=-\\sqrt{-2x+4}-1$은 정의역에서 $x$가 커질수록 함숫값이 커진다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $x$가 커지면 $\\sqrt{-2x+4}$의 값은 작아지고, 그 앞에 음의 부호가 있으므로 함숫값은 커진다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-014",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $y=\\sqrt{x^2}$는 실수 전체에서 증가한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $\\sqrt{x^2}=|x|$이다. 따라서 $x\\leq 0$에서는 감소하고 $x\\geq 0$에서는 증가한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-015",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$-2\\leq x\\leq 3$에서 함수 $y=\\sqrt{7-x}-4$의 최댓값은 $-2$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 이 함수는 감소하므로 왼쪽 끝인 $x=-2$에서 최댓값을 갖는다. 최댓값은 $\\sqrt{9}-4=-1$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-016",
+"typeId": "set2-cm2-14-u0m0s1t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$f(x)=\\sqrt{2x-3}+1$의 역함수의 정의역은 $x\\geq 1$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 원래 함수의 치역이 $y\\geq 1$이므로 역함수의 정의역은 $x\\geq 1$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-017",
+"typeId": "set2-cm2-14-u0m0s1t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$g(x)=-\\sqrt{\\dfrac{x-1}{2}}+1$의 역함수는 $g^{-1}(x)=2(x-1)^2+1$이며 정의역은 $x\\geq 1$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 원래 함수의 치역이 $y\\leq 1$이므로 역함수의 정의역은 $x\\leq 1$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-018",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$y=\\sqrt{3x-1}$과 $y=x-k$의 교점을 구할 때에는 $x-k\\geq 0$이라는 조건을 확인해야 한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 교점에서는 $x-k$가 제곱근의 값 $\\sqrt{3x-1}$과 같으므로 $0$ 이상이어야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-019",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$y=\\sqrt{3x-1}$과 $y=x-\\dfrac13$의 그래프는 서로 다른 두 점에서 만난다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 시작점 $\\left(\\dfrac13,0\\right)$과 $\\left(\\dfrac{10}{3},3\\right)$에서 만나므로 교점은 두 개이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+},
+{
+"id": "set2-cm2-14-ox-020",
+"typeId": "set2-cm2-14-u0m0s2t0",
+"twinGroup": "tw-set2-cm2-14-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$y=\\sqrt{3x-1}$과 $y=x-1$의 교점은 제곱하여 얻은 이차방정식의 판별식이 양수이므로 두 개이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 제곱하여 얻은 두 근 중 $\\dfrac{5-\\sqrt{17}}2$는 $x-1\\geq 0$을 만족하지 않는다. 원래 식을 만족하는 근은 $\\dfrac{5+\\sqrt{17}}2$뿐이므로 교점은 한 개이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 공통수학2 14 무리함수"
+}
+]
