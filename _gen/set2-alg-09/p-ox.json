@@ -1,0 +1,222 @@
+[
+{
+"id": "set2-alg-09-ox-001",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 각 $A$를 끼우는 두 변의 길이는 $b$, $c$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 각 $A$를 이루는 두 변은 $AB$, $AC$이고, 그 길이는 각각 $c$, $b$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-002",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 변 $a$의 길이를 구하는 코사인법칙은 $a^2=b^2+c^2-2bc\\cos B$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 대변 $a$와 대응하는 각은 $A$이다. 바른 식은 $a^2=b^2+c^2-2bc\\cos A$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-003",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\cos A$를 세 변으로 나타내면 $\\dfrac{b^2+c^2-a^2}{2(b+c)}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 분모는 두 변의 합의 두 배가 아니라 곱의 두 배이다. 따라서 $\\cos A=\\dfrac{b^2+c^2-a^2}{2bc}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-004",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $A=90^\\circ$이면 코사인법칙은 $a^2=b^2+c^2$이 된다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $\\cos90^\\circ=0$이므로 코사인법칙의 코사인 항이 사라진다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-005",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $b$, $c$가 일정할 때 내각 $A$가 커질수록 대변 $a$의 길이도 커진다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $0^\\circ<A<180^\\circ$에서 $A$가 커지면 $\\cos A$가 작아지므로 $a^2=b^2+c^2-2bc\\cos A$는 커진다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-006",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $b=3$, $c=5$, $A=120^\\circ$이면 $a^2=9+25-15=19$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $\\cos120^\\circ=-\\dfrac12$이므로 $a^2=9+25+15=49$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-007",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "세 변의 길이가 $4$, $5$, $6$인 삼각형은 예각삼각형이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 가장 긴 변의 대각의 코사인 값은 $\\dfrac{4^2+5^2-6^2}{2\\cdot4\\cdot5}=\\dfrac18>0$이다. 가장 큰 각이 예각이므로 예각삼각형이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-008",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "길이가 $2$, $3$, $5$인 세 선분으로 삼각형을 만들 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 가장 긴 변의 길이는 나머지 두 변의 길이의 합보다 작아야 한다. $2+3=5$이므로 삼각형을 만들 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-009",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형의 내각 $B$에 대하여 $\\sin B=\\dfrac12$이면 $B=30^\\circ$로 정해진다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $0^\\circ<B<180^\\circ$에서 가능한 각은 $30^\\circ$와 $150^\\circ$이다. 다른 조건을 확인해야 각을 정할 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-010",
+"typeId": "set2-alg-09-u0m0s0t0",
+"twinGroup": "tw-set2-alg-09-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 두 변 $b$, $c$와 끼인각 $A$가 주어지면 코사인법칙으로 $a$를 구할 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $a^2=b^2+c^2-2bc\\cos A$를 계산한 뒤 양의 제곱근을 택한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-011",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 넓이 $S$는 $S=\\dfrac12bc\\sin B$로 구한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 두 변 $b$, $c$의 끼인각은 $A$이다. 바른 식은 $S=\\dfrac12bc\\sin A$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-012",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 변의 길이가 각각 $6$, $8$인 두 삼각형의 끼인각이 각각 $60^\\circ$, $120^\\circ$이면 두 삼각형의 넓이는 같다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $\\sin60^\\circ=\\sin120^\\circ=\\dfrac{\\sqrt3}{2}$이므로 두 넓이는 모두 $12\\sqrt3$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-013",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 변의 길이가 $4$, $6$이고 넓이가 $6$인 삼각형에서 두 변의 끼인각은 $30^\\circ$ 또는 $150^\\circ$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 끼인각을 $\\theta$라 하면 $6=\\dfrac12\\cdot4\\cdot6\\sin\\theta$이므로 $\\sin\\theta=\\dfrac12$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-014",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 변의 길이가 일정한 삼각형은 그 두 변의 끼인각이 $60^\\circ$일 때 넓이가 최대이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 넓이는 끼인각의 사인 값이 $1$일 때 최대이다. 따라서 끼인각이 $90^\\circ$일 때 넓이가 최대이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-015",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형의 내각 $A$에 대하여 $\\sin A=\\sqrt{1-\\cos^2A}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $\\sin^2A+\\cos^2A=1$이고, 삼각형의 내각에서는 $\\sin A>0$이므로 양의 제곱근을 택한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-016",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "헤론의 공식에 사용하는 반둘레 $s$는 $a+b+c$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 반둘레는 둘레의 절반이다. 따라서 $s=\\dfrac{a+b+c}{2}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-017",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "볼록사각형의 두 대각선의 길이가 $p$, $q$이고 두 대각선 사이의 한 각이 $\\theta$이면 넓이는 $pq\\sin\\theta$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 계수 $\\dfrac12$이 빠졌다. 바른 넓이 공식은 $S=\\dfrac12pq\\sin\\theta$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-018",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "이웃한 두 변의 길이가 $5$, $8$이고 끼인각이 $60^\\circ$인 평행사변형의 넓이는 $20\\sqrt3$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 평행사변형의 넓이는 $5\\cdot8\\sin60^\\circ=20\\sqrt3$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-019",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 대각선의 길이가 $6$, $8$인 마름모의 넓이는 $24$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 마름모의 두 대각선은 서로 수직이므로 넓이는 $\\dfrac12\\cdot6\\cdot8=24$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-ox-020",
+"typeId": "set2-alg-09-u0m0s1t0",
+"twinGroup": "tw-set2-alg-09-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "평행사변형의 넓이는 두 대각선의 길이의 곱을 $2$로 나누어 구한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 두 대각선의 길이가 $p$, $q$이고 그 사이의 한 각이 $\\theta$이면 넓이는 $\\dfrac12pq\\sin\\theta$이다. $\\dfrac12pq$를 쓰려면 두 대각선이 수직이어야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+}
+]

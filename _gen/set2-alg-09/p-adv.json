@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-alg-09-adv-001",
+"typeId": "set2-alg-09-u0m0s0t3",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"diff": 5,
+"body": "한 원에 내접하는 볼록사각형 $ABCD$에서 $\\overline{AB}=2$, $\\overline{BC}=3$, $\\overline{CD}=6$, $\\overline{DA}=5$이다. 두 대각선의 길이의 비 $\\dfrac{\\overline{BD}}{\\overline{AC}}$를 구하시오.\n단, 원에 내접하는 사각형의 마주 보는 두 내각의 합은 $180^\\circ$임을 이용할 수 있다.",
+"solution": "첫째, $\\overline{AC}=x$, $\\cos\\angle ABC=t$라 하자. 마주 보는 두 내각이 보각이므로 $\\cos\\angle ADC=-t$이다.\n\n두 삼각형에 코사인법칙을 각각 적용하면\n$x^2=2^2+3^2-2\\cdot2\\cdot3t=13-12t$,\n$x^2=5^2+6^2-2\\cdot5\\cdot6(-t)=61+60t$이다.\n따라서 $t=-\\dfrac23$이고 $x^2=21$이다.\n\n둘째, $\\overline{BD}=y$, $\\cos\\angle BAD=u$라 하자. 같은 방법으로\n$y^2=2^2+5^2-2\\cdot2\\cdot5u=29-20u$,\n$y^2=3^2+6^2-2\\cdot3\\cdot6(-u)=45+36u$이다.\n따라서 $u=-\\dfrac27$이고 $y^2=\\dfrac{243}{7}$이다.\n\n셋째, 대각선의 길이는 양수이므로\n$\\dfrac{y}{x}=\\sqrt{\\dfrac{243/7}{21}}=\\sqrt{\\dfrac{81}{49}}=\\dfrac97$이다.\n길이의 비와 길이의 제곱의 비를 구별해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{7}{9}$",
+"$\\dfrac{3}{\\sqrt7}$",
+"$\\dfrac{9}{7}$",
+"$\\dfrac{81}{49}$",
+"$\\dfrac{27}{7}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-09-adv-002",
+"typeId": "set2-alg-09-u0m0s0t3",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=5$, $\\overline{AC}=7$이다. 변 $BC$ 위의 점 $D$가 $\\overline{BD}:\\overline{DC}=1:2$를 만족하고 $\\overline{AD}=4$일 때, $\\cos\\angle BAC$의 값은?",
+"solution": "첫째, $\\overline{BD}=x$라 하면 $\\overline{DC}=2x$이다. $\\theta=\\angle ADB$라 하면 $\\angle ADC=180^\\circ-\\theta$이므로 두 각의 코사인 값은 부호가 반대이다.\n\n둘째, 두 삼각형에 코사인법칙을 적용하면\n$25=16+x^2-8x\\cos\\theta$,\n$49=16+4x^2+16x\\cos\\theta$이다.\n\n첫 번째 식의 양변에 $2$를 곱한 후 두 번째 식과 더하면\n$99=48+6x^2$이므로 $x^2=\\dfrac{17}{2}$이다.\n따라서 $\\overline{BC}^{\\,2}=(3x)^2=\\dfrac{153}{2}$이다.\n\n셋째, 삼각형 $ABC$에 코사인법칙을 적용하면\n$\\cos\\angle BAC=\\dfrac{25+49-\\frac{153}{2}}{2\\cdot5\\cdot7}=-\\dfrac{1}{28}$이다.\n\n점 $D$에서 생기는 두 각을 같은 각으로 처리하면 코사인 항이 올바르게 소거되지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$-\\dfrac{13}{28}$",
+"$-\\dfrac{1}{14}$",
+"$-\\dfrac{1}{28}$",
+"$\\dfrac{1}{28}$",
+"$\\dfrac{1}{14}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-09-adv-003",
+"typeId": "set2-alg-09-u0m0s0t3",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{BC}=7$, $\\overline{CA}=8$, $\\angle BAC=60^\\circ$이다.\n\n가능한 $\\overline{AB}$의 길이를 모두 구하고, 각각의 경우에 $\\angle ABC$가 예각인지 둔각인지 판정하시오. 또한 가능한 두 삼각형의 넓이의 합을 구하시오. 풀이 과정을 서술하시오.",
+"solution": "첫째, $\\overline{AB}=x$라 놓고 코사인법칙을 적용하면\n$7^2=8^2+x^2-2\\cdot8x\\cos60^\\circ$이다.\n따라서\n$x^2-8x+15=0$,\n$(x-3)(x-5)=0$이므로 $x=3$ 또는 $x=5$이다.\n\n두 경우 모두 삼각형의 성립 조건을 만족하며, 주어진 끼인각이 $60^\\circ$인 삼각형이 만들어진다.\n\n둘째, 코사인법칙으로 $\\angle ABC$를 판정한다.\n$\\cos\\angle ABC=\\dfrac{7^2+x^2-8^2}{2\\cdot7x}$이므로\n$x=3$일 때 $\\cos\\angle ABC=-\\dfrac17<0$이어서 둔각이고,\n$x=5$일 때 $\\cos\\angle ABC=\\dfrac17>0$이어서 예각이다.\n\n사인법칙으로도 $\\sin\\angle ABC=\\dfrac{8\\sin60^\\circ}{7}=\\dfrac{4\\sqrt3}{7}$을 얻는다. 사인 값이 같아도 예각과 둔각이 모두 가능하다는 점에 유의한다.\n\n셋째, 두 삼각형의 넓이의 합은\n$\\dfrac12\\cdot8\\cdot3\\sin60^\\circ+\\dfrac12\\cdot8\\cdot5\\sin60^\\circ=16\\sqrt3$이다.\n\n[채점 기준]\n코사인법칙으로 가능한 변의 길이를 모두 구하고 성립 여부 확인: $4$점\n각 경우의 코사인 값을 구하여 예각과 둔각 판정: $3$점\n두 삼각형의 넓이의 합 계산: $3$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "주관식",
+"answer": "$\\overline{AB}=3$일 때 둔각, $\\overline{AB}=5$일 때 예각, 넓이의 합은 $16\\sqrt3$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-09-adv-004",
+"typeId": "set2-alg-09-u0m0s1t3",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"diff": 4,
+"body": "평행사변형 $ABCD$에서 $\\overline{AB}=\\sqrt{13}$, $\\overline{AD}=\\sqrt{37}$이고, 두 대각선의 길이가 $\\overline{AC}=2\\overline{BD}$를 만족한다. 이 평행사변형의 넓이는?",
+"solution": "첫째, $\\theta=\\angle BAD$라 하자. 평행사변형의 이웃한 두 내각은 보각이므로 $\\angle ABC=180^\\circ-\\theta$이다.\n\n삼각형 $ABD$와 삼각형 $ABC$에 코사인법칙을 적용하면\n$\\overline{BD}^{\\,2}=50-2\\sqrt{481}\\cos\\theta$,\n$\\overline{AC}^{\\,2}=50+2\\sqrt{481}\\cos\\theta$이다.\n\n둘째, $\\overline{AC}=2\\overline{BD}$이므로 제곱한 길이에는\n$\\overline{AC}^{\\,2}=4\\overline{BD}^{\\,2}$가 성립한다.\n따라서\n$50+2\\sqrt{481}\\cos\\theta=4(50-2\\sqrt{481}\\cos\\theta)$이고,\n$\\sqrt{481}\\cos\\theta=15$이다.\n\n셋째, 내각의 사인 값은 양수이므로\n$\\sin\\theta=\\sqrt{1-\\dfrac{225}{481}}=\\dfrac{16}{\\sqrt{481}}$이다.\n따라서 평행사변형의 넓이는\n$\\sqrt{13}\\cdot\\sqrt{37}\\sin\\theta=16$이다.\n\n대각선이 수직이라는 조건이 없으므로 두 대각선의 곱의 절반을 곧바로 넓이로 사용할 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$8$",
+"$15$",
+"$16$",
+"$20$",
+"$\\sqrt{481}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-09-adv-005",
+"typeId": "set2-alg-09-u0m0s1t3",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=8$, $\\overline{AC}=5$이고 넓이가 $10\\sqrt3$이다. 변 $BC$의 중점을 $D$라 하자.\n\n가능한 $\\overline{BC}$의 길이를 모두 구하시오. 또한 어느 경우에도 $\\overline{BC}\\cdot\\overline{AD}$의 값이 같음을 보이고, 그 값을 구하시오. 풀이 과정을 서술하시오.",
+"solution": "첫째, $\\theta=\\angle BAC$라 하면 삼각형의 넓이 공식에 의해\n$10\\sqrt3=\\dfrac12\\cdot8\\cdot5\\sin\\theta$이다.\n따라서 $\\sin\\theta=\\dfrac{\\sqrt3}{2}$이고,\n$0^\\circ<\\theta<180^\\circ$에서 $\\theta=60^\\circ$ 또는 $120^\\circ$이다.\n\n둘째, $\\overline{BC}=a$라 하면 코사인법칙에 의해\n$a^2=8^2+5^2-2\\cdot8\\cdot5\\cos\\theta$이다.\n따라서 $\\theta=60^\\circ$일 때 $a^2=49$이고, $\\theta=120^\\circ$일 때 $a^2=129$이다.\n즉, $a=7$ 또는 $a=\\sqrt{129}$이다.\n\n셋째, $\\overline{AD}=m$, $\\phi=\\angle ADB$라 하자.\n$\\overline{BD}=\\overline{DC}=\\dfrac a2$이고 두 각 $\\angle ADB$, $\\angle ADC$는 보각이다.\n코사인법칙을 각각 적용하면\n$64=m^2+\\dfrac{a^2}{4}-am\\cos\\phi$,\n$25=m^2+\\dfrac{a^2}{4}+am\\cos\\phi$이다.\n두 식을 더하면\n$89=2m^2+\\dfrac{a^2}{2}$이므로\n$m^2=\\dfrac{178-a^2}{4}$이다.\n\n넷째, $a=7$일 때 $m=\\dfrac{\\sqrt{129}}2$이고, $a=\\sqrt{129}$일 때 $m=\\dfrac72$이다.\n따라서 두 경우 모두\n$\\overline{BC}\\cdot\\overline{AD}=\\dfrac{7\\sqrt{129}}2$이다.\n\n[채점 기준]\n넓이 공식으로 가능한 두 내각 결정: $2$점\n코사인법칙으로 가능한 두 변의 길이 계산: $2$점\n두 삼각형에 코사인법칙을 적용하여 $\\overline{AD}^{\\,2}$에 관한 식 유도: $4$점\n두 경우의 곱이 같음을 확인하고 값 제시: $2$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "주관식",
+"answer": "$\\overline{BC}=7$ 또는 $\\sqrt{129}$, $\\overline{BC}\\cdot\\overline{AD}=\\dfrac{7\\sqrt{129}}{2}$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-09-adv-006",
+"typeId": "set2-alg-09-u0m0s1t3",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"diff": 5,
+"body": "네 막대를 차례로 연결하여 한 원에 내접하는 볼록사각형 $ABCD$를 만든다. 막대의 길이는\n$\\overline{AB}=x$, $\\overline{BC}=6-x$, $\\overline{CD}=4$, $\\overline{DA}=2$이며, $0<x<6$이다.\n\n이러한 사각형이 만들어지는 경우 중 넓이가 최대일 때의 $x$의 값과 그 최대 넓이를 차례로 고른 것은?\n단, 원에 내접하는 사각형의 마주 보는 두 내각의 합은 $180^\\circ$임을 이용할 수 있다.",
+"solution": "첫째, $p=x(6-x)$, $\\theta=\\angle ABC$라 하자.\n$\\angle ADC=180^\\circ-\\theta$이므로 대각선 $AC$에 대하여 코사인법칙을 두 번 적용하면\n$\\overline{AC}^{\\,2}=x^2+(6-x)^2-2p\\cos\\theta=36-2p-2p\\cos\\theta$,\n$\\overline{AC}^{\\,2}=2^2+4^2+16\\cos\\theta=20+16\\cos\\theta$이다.\n따라서\n$\\cos\\theta=\\dfrac{8-p}{p+8}$이다.\n\n둘째, $p>0$이고 내각의 사인 값은 양수이므로\n$\\sin\\theta=\\sqrt{1-\\left(\\dfrac{8-p}{p+8}\\right)^2} =\\dfrac{4\\sqrt{2p}}{p+8}$이다.\n\n대각선 $AC$로 나눈 두 삼각형의 넓이를 더하면 사각형의 넓이 $S$는\n$S=\\dfrac12p\\sin\\theta+\\dfrac12\\cdot2\\cdot4\\sin(180^\\circ-\\theta) =\\dfrac12(p+8)\\sin\\theta =2\\sqrt{2p}$이다.\n\n셋째,\n$p=x(6-x)=9-(x-3)^2\\le9$이므로\n$S\\le2\\sqrt{18}=6\\sqrt2$이다.\n등호는 $x=3$일 때 성립한다.\n\n넷째, 등호가 실제로 가능한지 확인한다.\n$x=3$일 때 $\\cos\\theta=-\\dfrac1{17}$이고 $\\overline{AC}^{\\,2}=\\dfrac{324}{17}$이다.\n따라서 $\\overline{AC}=\\dfrac{18}{\\sqrt{17}}$은\n$0<\\overline{AC}<6$, $2<\\overline{AC}<6$을 만족한다.\n그러므로 세 변이 각각 $3,\\ 3,\\ \\overline{AC}$인 삼각형과 $2,\\ 4,\\ \\overline{AC}$인 삼각형이 모두 만들어진다. 두 삼각형을 대각선의 서로 반대쪽에 붙이면 마주 보는 두 내각이 보각인 볼록사각형을 얻는다.\n\n따라서 구하는 값은 $x=3$, 최대 넓이는 $6\\sqrt2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$2,\\ 8$",
+"$3,\\ 3\\sqrt2$",
+"$3,\\ 6\\sqrt2$",
+"$3,\\ 9$",
+"$4,\\ 8$"
+],
+"answer": "③"
+}
+]

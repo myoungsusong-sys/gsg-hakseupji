@@ -1,0 +1,112 @@
+[
+{
+"id": "set2-alg-09-basic-001",
+"typeId": "set2-alg-09-u0m0s0t1",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형에서 한 각과 마주 보는 변을 그 각의 ( )이라 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "대변",
+"solution": "정답 대변 · 각 $A$와 마주 보는 변의 길이를 $a$로 나타낸다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-002",
+"typeId": "set2-alg-09-u0m0s0t1",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형의 두 변과 끼인각으로 나머지 한 변을 구할 때 사용하는 법칙은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "코사인법칙",
+"solution": "정답 코사인법칙 · 두 변 $b$, $c$와 끼인각 $A$를 알면 $a^2=b^2+c^2-2bc\\cos A$를 이용한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-003",
+"typeId": "set2-alg-09-u0m0s0t1",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $a^2>b^2+c^2$이면 각 $A$는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "둔각",
+"solution": "정답 둔각 · $\\cos A=\\dfrac{b^2+c^2-a^2}{2bc}<0$이므로 $A$는 둔각이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-004",
+"typeId": "set2-alg-09-u0m0s0t1",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $b=5$, $c=8$, $A=60^\\circ$이면 $a=$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$7$",
+"solution": "정답 $7$ · $a^2=25+64-2\\cdot5\\cdot8\\cdot\\dfrac12=49$이고 변의 길이는 양수이므로 $a=7$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-005",
+"typeId": "set2-alg-09-u0m0s0t1",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $a=5$, $b=3$, $c=4$이면 각 $A$의 크기는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$90^\\circ$",
+"solution": "정답 $90^\\circ$ · $\\cos A=\\dfrac{9+16-25}{2\\cdot3\\cdot4}=0$이므로 $A=90^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-006",
+"typeId": "set2-alg-09-u0m0s1t1",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형의 두 변과 끼인각으로 넓이를 구할 때 두 변의 곱의 절반에 곱하는 것은 끼인각의 ( ) 값이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "사인",
+"solution": "정답 사인 · 두 변이 $a$, $b$이고 끼인각이 $C$이면 넓이는 $S=\\dfrac12ab\\sin C$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-007",
+"typeId": "set2-alg-09-u0m0s1t1",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "두 변의 길이가 일정한 삼각형의 넓이가 최대일 때 그 두 변의 끼인각은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$90^\\circ$",
+"solution": "정답 $90^\\circ$ · 끼인각이 $90^\\circ$일 때 사인 값이 최대인 $1$이 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-008",
+"typeId": "set2-alg-09-u0m0s1t1",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "헤론의 공식에서 $s=\\dfrac{a+b+c}{2}$로 정의하는 $s$를 ( )라 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "반둘레",
+"solution": "정답 반둘레 · 반둘레는 세 변의 길이의 합인 둘레를 $2$로 나눈 값이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-009",
+"typeId": "set2-alg-09-u0m0s1t1",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "세 변의 길이가 $5$, $5$, $6$인 삼각형의 넓이는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$12$",
+"solution": "정답 $12$ · 반둘레가 $8$이므로 헤론의 공식에 따라 넓이는 $\\sqrt{8\\cdot3\\cdot3\\cdot2}=12$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+},
+{
+"id": "set2-alg-09-basic-010",
+"typeId": "set2-alg-09-u0m0s1t1",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "볼록사각형의 넓이를 $S=\\dfrac12pq\\sin\\theta$로 구할 때 $p$, $q$는 두 ( )의 길이이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "대각선",
+"solution": "정답 대각선 · 이 공식에서 $\\theta$는 두 대각선 사이의 한 각이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이"
+}
+]

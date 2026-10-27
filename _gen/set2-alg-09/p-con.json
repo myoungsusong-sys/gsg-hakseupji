@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-alg-09-con-001",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $AB=7$, $AC=4$, $\\angle A=120^\\circ$일 때, 변 $BC$의 길이는?",
+"solution": "(가) 두 변 $AB$, $AC$의 끼인각은 $\\angle A$이므로 코사인법칙을 적용하면\n$BC^2=7^2+4^2-2\\cdot7\\cdot4\\cos120^\\circ$이다.\n(나) $\\cos120^\\circ=-\\dfrac12$이므로\n$BC^2=49+16+28=93$이다.\n(다) 변의 길이는 양수이므로 $BC=\\sqrt{93}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{37}$",
+"$\\sqrt{65}$",
+"$\\sqrt{79}$",
+"$\\sqrt{93}$",
+"$93$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-09-con-002",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $BC=\\sqrt{19}$, $CA=3$, $AB=5$일 때, $\\angle A$의 크기는?",
+"solution": "(가) $\\angle A$의 대변은 $BC$이다. 코사인법칙을 각에 관하여 정리하면\n$\\cos A=\\dfrac{AB^2+AC^2-BC^2}{2\\cdot AB\\cdot AC}$이다.\n(나) 주어진 값을 대입하면\n$\\cos A=\\dfrac{25+9-19}{2\\cdot5\\cdot3}=\\dfrac12$이다.\n(다) 삼각형의 내각이므로 $0^\\circ<A<180^\\circ$이다. 따라서 $\\angle A=60^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$30^\\circ$",
+"$45^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-09-con-003",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=6$, $BC=8$, $CA=9$이다. 이 삼각형의 가장 큰 내각과 그 각의 종류를 바르게 짝지은 것은?",
+"solution": "(가) 가장 긴 변은 $CA$이므로 그 대각인 $\\angle B$가 가장 크다.\n(나) 코사인법칙에 의하여\n$\\cos B=\\dfrac{AB^2+BC^2-CA^2}{2\\cdot AB\\cdot BC}=\\dfrac{36+64-81}{2\\cdot6\\cdot8}=\\dfrac{19}{96}$이다.\n(다) $\\cos B>0$이므로 $\\angle B$는 예각이다. 따라서 가장 큰 내각은 $\\angle B$이고, 그 각은 예각이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$\\angle A$, 예각",
+"$\\angle B$, 예각",
+"$\\angle C$, 예각",
+"$\\angle B$, 직각",
+"$\\angle B$, 둔각"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-09-con-004",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 3,
+"body": "세 변의 길이가 각각 $5$, $7$, $x$인 삼각형에서 $x$가 가장 긴 변의 길이이다. 이 삼각형이 둔각삼각형이 되도록 하는 자연수 $x$의 개수는?",
+"solution": "(가) 가장 긴 변의 길이가 $x$이므로 삼각형의 성립 조건에 의하여 $x<5+7=12$이다.\n(나) 길이가 $x$인 변의 대각을 $\\theta$라 하면\n$\\cos\\theta=\\dfrac{5^2+7^2-x^2}{2\\cdot5\\cdot7}=\\dfrac{74-x^2}{70}$이다.\n(다) 가장 큰 내각 $\\theta$가 둔각이어야 하므로 $\\cos\\theta<0$이다. 따라서 $x^2>74$, 즉 $x>\\sqrt{74}$이다.\n(라) $\\sqrt{74}<x<12$를 만족하는 자연수는 $9$, $10$, $11$이다. 이들은 모두 $7$보다 크므로 조건을 만족하며, 그 개수는 $3$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-09-con-005",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $AB=9$, $AC=4$, $\\angle A=150^\\circ$일 때, 이 삼각형의 넓이는?",
+"solution": "(가) 두 변과 그 끼인각을 이용하는 삼각형의 넓이 공식에 의하여\n$S=\\dfrac12\\cdot AB\\cdot AC\\sin A$이다.\n(나) $\\sin150^\\circ=\\dfrac12$이므로\n$S=\\dfrac12\\cdot9\\cdot4\\cdot\\dfrac12=9$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$9$",
+"$18$",
+"$9\\sqrt3$",
+"$18\\sqrt3$",
+"$36$"
+],
+"answer": "①"
+},
+{
+"id": "set2-alg-09-con-006",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=8$, $AC=6$이고 넓이가 $12\\sqrt3$이다. $\\angle A$가 둔각일 때, 변 $BC$의 길이는?",
+"solution": "(가) 삼각형의 넓이 공식에 의하여\n$12\\sqrt3=\\dfrac12\\cdot8\\cdot6\\sin A$이므로 $\\sin A=\\dfrac{\\sqrt3}{2}$이다.\n(나) $0^\\circ<A<180^\\circ$에서 가능한 각은 $60^\\circ$, $120^\\circ$이다. $\\angle A$가 둔각이므로 $\\angle A=120^\\circ$이다.\n(다) 코사인법칙을 적용하면\n$BC^2=8^2+6^2-2\\cdot8\\cdot6\\cos120^\\circ=64+36+48=148$이다.\n(라) 변의 길이는 양수이므로 $BC=\\sqrt{148}=2\\sqrt{37}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$2\\sqrt{13}$",
+"$10$",
+"$\\sqrt{37}$",
+"$148$",
+"$2\\sqrt{37}$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-alg-09-con-007",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 2,
+"body": "세 변의 길이가 각각 $7$, $8$, $9$인 삼각형의 넓이는?",
+"solution": "(가) 길이가 $7$, $8$인 두 변의 끼인각을 $\\theta$라 하면, 그 대변의 길이는 $9$이다. 코사인법칙에 의하여\n$\\cos\\theta=\\dfrac{7^2+8^2-9^2}{2\\cdot7\\cdot8}=\\dfrac{32}{112}=\\dfrac27$이다.\n(나) 삼각형의 내각에서 사인 값은 양수이므로\n$\\sin\\theta=\\sqrt{1-\\cos^2\\theta}=\\sqrt{1-\\dfrac4{49}}=\\dfrac{3\\sqrt5}{7}$이다.\n(다) 따라서 넓이는\n$S=\\dfrac12\\cdot7\\cdot8\\cdot\\dfrac{3\\sqrt5}{7}=12\\sqrt5$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$6\\sqrt5$",
+"$12\\sqrt5$",
+"$24\\sqrt5$",
+"$12\\sqrt7$",
+"$720$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-09-con-008",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=5$, $AC=12$로 일정하고 $\\angle A$의 크기가 변한다. 이 삼각형의 넓이의 최댓값과 넓이가 최대일 때의 변 $BC$의 길이를 구하고, 그 풀이 과정을 서술하시오.",
+"solution": "(가) 삼각형의 넓이를 $S$라 하면 두 변과 끼인각을 이용하는 넓이 공식에 의하여\n$S=\\dfrac12\\cdot5\\cdot12\\sin A=30\\sin A$이다.\n(나) $0^\\circ<A<180^\\circ$에서 $\\sin A\\le1$이므로 $S\\le30$이다. 등호는 $\\angle A=90^\\circ$일 때 성립하므로 넓이의 최댓값은 $30$이다.\n(다) 넓이가 최대일 때 코사인법칙을 적용하면\n$BC^2=5^2+12^2-2\\cdot5\\cdot12\\cos90^\\circ=169$이다.\n따라서 $BC=13$이다.\n[채점 기준]\n넓이를 $S=30\\sin A$로 나타내면 $1$점.\n$\\sin A\\le1$을 이용하여 넓이의 최댓값 $30$을 구하면 $1$점.\n넓이가 최대일 때 $\\angle A=90^\\circ$임을 밝히면 $1$점.\n코사인법칙 또는 피타고라스 정리로 $BC^2=169$를 구하면 $1$점.\n변의 길이 $BC=13$을 구하면 $1$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "주관식",
+"answer": "넓이의 최댓값은 $30$, 변 $BC$의 길이는 $13$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-09-con-009",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=5$, $\\overline{AC}=9$, $\\angle BAC=120^\\circ$일 때, $\\overline{BC}$의 길이는?",
+"solution": "두 변과 끼인각이 주어졌으므로 코사인법칙을 적용한다.\n$\\overline{BC}^{\\,2}=5^2+9^2-2\\cdot5\\cdot9\\cos120^\\circ$\n$\\cos120^\\circ=-\\dfrac12$이므로\n$\\overline{BC}^{\\,2}=25+81+45=151$이다.\n변의 길이는 양수이므로 $\\overline{BC}=\\sqrt{151}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{61}$",
+"$\\sqrt{106}$",
+"$\\sqrt{151}$",
+"$151$",
+"$14$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-09-con-010",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=4$, $\\overline{AC}=9$이고 넓이가 $9$이다. $\\angle BAC$가 둔각일 때, 그 크기는?",
+"solution": "두 변과 끼인각을 이용하는 삼각형의 넓이 공식에 의하여\n$9=\\dfrac12\\cdot4\\cdot9\\sin\\angle BAC$이다.\n따라서 $\\sin\\angle BAC=\\dfrac12$이다.\n삼각형의 내각 중 사인 값이 $\\dfrac12$인 각은 $30^\\circ$ 또는 $150^\\circ$이다.\n$\\angle BAC$는 둔각이므로 $\\angle BAC=150^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$30^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$120^\\circ$",
+"$150^\\circ$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-alg-09-con-011",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=7$, $\\overline{AC}=8$, $\\overline{BC}=9$일 때, 이 삼각형의 넓이는?",
+"solution": "먼저 코사인법칙으로 두 변 $\\overline{AB}$, $\\overline{AC}$의 끼인각을 구한다.\n$\\cos A=\\dfrac{7^2+8^2-9^2}{2\\cdot7\\cdot8}=\\dfrac27$이다.\n삼각형의 내각에서 사인 값은 양수이므로\n$\\sin A=\\sqrt{1-\\left(\\dfrac27\\right)^2}=\\dfrac{3\\sqrt5}{7}$이다.\n따라서 삼각형의 넓이는\n$\\dfrac12\\cdot7\\cdot8\\cdot\\dfrac{3\\sqrt5}{7}=12\\sqrt5$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$8$",
+"$12\\sqrt5$",
+"$24\\sqrt5$",
+"$28$",
+"$56$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-09-con-012",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 2,
+"body": "볼록사각형 $ABCD$의 두 대각선 $\\overline{AC}$, $\\overline{BD}$가 점 $O$에서 만난다. $\\overline{AC}=12$, $\\overline{BD}=7$, $\\angle AOB=120^\\circ$일 때, 사각형 $ABCD$의 넓이는?",
+"solution": "볼록사각형의 넓이는 두 대각선 길이의 곱에 두 대각선 사이의 각의 사인 값과 $\\dfrac12$을 곱한 값이다.\n따라서 사각형의 넓이를 $S$라 하면\n$S=\\dfrac12\\cdot12\\cdot7\\sin120^\\circ$이다.\n$\\sin120^\\circ=\\dfrac{\\sqrt3}{2}$이므로\n$S=42\\cdot\\dfrac{\\sqrt3}{2}=21\\sqrt3$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$21$",
+"$42$",
+"$42\\sqrt3$",
+"$21\\sqrt3$",
+"$84\\sqrt3$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-09-con-013",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=13$, $\\overline{AC}=14$, $\\overline{BC}=15$이다. 세 변에 모두 접하는 내접원의 중심을 $I$, 반지름을 $r$라 하자. 점 $I$에서 각 변에 내린 수선의 길이는 모두 $r$이다. $r$의 값은?",
+"solution": "먼저 코사인법칙을 적용하면\n$\\cos A=\\dfrac{13^2+14^2-15^2}{2\\cdot13\\cdot14}=\\dfrac5{13}$이다.\n삼각형의 내각에서 사인 값은 양수이므로\n$\\sin A=\\sqrt{1-\\left(\\dfrac5{13}\\right)^2}=\\dfrac{12}{13}$이다.\n따라서 삼각형 $ABC$의 넓이는\n$S=\\dfrac12\\cdot13\\cdot14\\cdot\\dfrac{12}{13}=84$이다.\n한편 삼각형 $ABC$를 삼각형 $IAB$, $IBC$, $ICA$로 나누면 각 삼각형의 높이는 모두 $r$이다.\n따라서\n$84=\\dfrac12\\cdot13r+\\dfrac12\\cdot15r+\\dfrac12\\cdot14r=21r$이다.\n그러므로 $r=4$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$2$",
+"$4$",
+"$6$",
+"$8$",
+"$12$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-09-con-014",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 1,
+"body": "이웃한 두 변의 길이가 각각 $4$, $9$인 평행사변형이 있다. 두 변의 끼인각을 변화시킬 때, 이 평행사변형의 넓이의 최댓값은?",
+"solution": "이웃한 두 변의 끼인각을 $\\theta$라 하면 평행사변형의 넓이는\n$S=4\\cdot9\\sin\\theta=36\\sin\\theta$이다.\n$0^\\circ<\\theta<180^\\circ$에서 $\\sin\\theta\\leq1$이므로 $S\\leq36$이다.\n$\\theta=90^\\circ$일 때 $\\sin\\theta=1$이므로 넓이의 최댓값은 $36$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$9$",
+"$18$",
+"$18\\sqrt3$",
+"$36$",
+"$72$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-09-con-015",
+"typeId": "set2-alg-09-u0m0s0t2",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6$, $\\overline{AC}=10$이고 넓이가 $15\\sqrt3$이다. $\\angle BAC$가 예각일 때, $\\overline{BC}$의 길이는?",
+"solution": "먼저 삼각형의 넓이 공식에 의하여\n$15\\sqrt3=\\dfrac12\\cdot6\\cdot10\\sin A$이다.\n따라서 $\\sin A=\\dfrac{\\sqrt3}{2}$이다.\n$A$가 예각이므로 $A=60^\\circ$이다.\n이제 코사인법칙을 적용하면\n$\\overline{BC}^{\\,2}=6^2+10^2-2\\cdot6\\cdot10\\cos60^\\circ=76$이다.\n변의 길이는 양수이므로 $\\overline{BC}=\\sqrt{76}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{76}$",
+"$\\sqrt{196}$",
+"$\\sqrt{136}$",
+"$\\sqrt{106}$",
+"$\\sqrt{16}$"
+],
+"answer": "①"
+},
+{
+"id": "set2-alg-09-con-016",
+"typeId": "set2-alg-09-u0m0s1t2",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=3$, $\\overline{AC}=8$, $\\angle BAC=60^\\circ$이다. 세 변에 모두 접하는 내접원의 중심을 $I$, 반지름을 $r$라 하자. 점 $I$에서 각 변에 내린 수선의 길이는 모두 $r$이다.\n\n삼각형 $ABC$의 넓이를 구하고, 삼각형 $IAB$, $IBC$, $ICA$의 넓이의 합을 이용하여 $r$를 구하는 과정을 서술하시오.",
+"solution": "먼저 두 변과 끼인각을 이용하면 삼각형 $ABC$의 넓이는\n$S=\\dfrac12\\cdot3\\cdot8\\sin60^\\circ=6\\sqrt3$이다.\n\n다음으로 코사인법칙을 적용하면\n$\\overline{BC}^{\\,2}=3^2+8^2-2\\cdot3\\cdot8\\cos60^\\circ=49$이다.\n변의 길이는 양수이므로 $\\overline{BC}=7$이다.\n\n삼각형 $IAB$, $IBC$, $ICA$에서 밑변을 각각 $\\overline{AB}$, $\\overline{BC}$, $\\overline{CA}$로 잡으면 높이는 모두 $r$이다.\n세 삼각형의 넓이의 합은 삼각형 $ABC$의 넓이와 같으므로\n$6\\sqrt3=\\dfrac12\\cdot3r+\\dfrac12\\cdot7r+\\dfrac12\\cdot8r=9r$이다.\n따라서 $r=\\dfrac{2\\sqrt3}{3}$이다.\n\n[채점 기준]\n삼각형 $ABC$의 넓이 $6\\sqrt3$을 구함: $2$점\n코사인법칙으로 $\\overline{BC}=7$을 구함: $2$점\n세 삼각형의 넓이의 합을 이용하여 $6\\sqrt3=9r$를 세움: $2$점\n$r=\\dfrac{2\\sqrt3}{3}$을 구함: $1$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 09 코사인법칙과 삼각형의 넓이",
+"kind": "주관식",
+"answer": "넓이 $6\\sqrt3$, $r=\\dfrac{2\\sqrt3}{3}$",
+"selfGrade": true
+}
+]
