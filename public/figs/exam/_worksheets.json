@@ -8473,5 +8473,101 @@
 "set2-alg-09-adv-005",
 "set2-alg-09-adv-006"
 ]
+},
+{
+"id": "ws-set2-int2-13-01",
+"course": "set2-int2-13",
+"title": "수업세트 | 통합과학2 13 과학 기술의 활용 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-13-con-001",
+"set2-int2-13-con-002",
+"set2-int2-13-con-003",
+"set2-int2-13-con-004",
+"set2-int2-13-con-005",
+"set2-int2-13-con-006",
+"set2-int2-13-con-007",
+"set2-int2-13-con-008",
+"set2-int2-13-con-009",
+"set2-int2-13-con-010",
+"set2-int2-13-con-011",
+"set2-int2-13-con-012",
+"set2-int2-13-con-013",
+"set2-int2-13-con-014",
+"set2-int2-13-con-015",
+"set2-int2-13-con-016"
+]
+},
+{
+"id": "ws-set2-int2-13-02",
+"course": "set2-int2-13",
+"title": "수업세트 | 통합과학2 13 과학 기술의 활용 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-13-adv-001",
+"set2-int2-13-adv-002",
+"set2-int2-13-adv-003",
+"set2-int2-13-adv-004",
+"set2-int2-13-adv-005",
+"set2-int2-13-adv-006"
+]
+},
+{
+"id": "ws-set2-int2-14-01",
+"course": "set2-int2-14",
+"title": "수업세트 | 통합과학2 14 과학 기술의 발전과 쟁점 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-14-con-001",
+"set2-int2-14-con-002",
+"set2-int2-14-con-003",
+"set2-int2-14-con-004",
+"set2-int2-14-con-005",
+"set2-int2-14-con-006",
+"set2-int2-14-con-007",
+"set2-int2-14-con-008",
+"set2-int2-14-con-009",
+"set2-int2-14-con-010",
+"set2-int2-14-con-011",
+"set2-int2-14-con-012",
+"set2-int2-14-con-013",
+"set2-int2-14-con-014",
+"set2-int2-14-con-015",
+"set2-int2-14-con-016"
+]
+},
+{
+"id": "ws-set2-int2-14-02",
+"course": "set2-int2-14",
+"title": "수업세트 | 통합과학2 14 과학 기술의 발전과 쟁점 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-14-adv-001",
+"set2-int2-14-adv-002",
+"set2-int2-14-adv-003",
+"set2-int2-14-adv-004",
+"set2-int2-14-adv-005",
+"set2-int2-14-adv-006"
+]
 }
 ]
