@@ -88,6 +88,7 @@ import { OLSO_TREES } from './curriculum-olso'
 import { ENGBOOK_COURSES } from './curriculum-engbook'
 import { KORBOOK_COURSES } from './curriculum-korbook'
 import { ZB_COURSES } from './curriculum-zb'
+import { EXAM_COURSES } from './curriculum-exam'
 
 function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
@@ -2876,6 +2877,8 @@ for (const b of ENGBOOK_COURSES) CURRICULA.push({ ...build(b.id, b.grade, `${b.g
 for (const b of KORBOOK_COURSES) CURRICULA.push({ ...build(b.id, b.grade, `${b.grade} 국어 · ${b.book} ${b.title}`, b.tree, '국어'), book: b.book })
 // 📒 족보닷컴 과정 (2026-10-25) — 교과서 한 권(학기) = 과정 하나. 학습지는 문항 id 로 자기 과정만 부른다(zbCoursesOf)
 for (const b of ZB_COURSES) CURRICULA.push({ ...buildReal(b.id, b.grade, `${b.grade} ${b.subject} · ${b.book} ${b.title}`, b.tree, b.subject), book: b.book })
+// 📝 시험대비 과정 (2026-10-27) — 시험대비 세트 한 세트 = 과정 하나(O·X / 기본개념 / 개념 / 심화). 맨 뒤에 붙여 학년 기본 과정 고르기에 끼지 않는다
+for (const b of EXAM_COURSES) CURRICULA.push(build(b.id, b.grade, b.label, b.tree, b.subject))
 
 export function curriculumFor(id: string): Curriculum {
   return CURRICULA.find(c => c.id === id) ?? CURRICULUM

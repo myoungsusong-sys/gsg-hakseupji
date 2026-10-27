@@ -1,0 +1,3008 @@
+[
+{
+"id": "exam-m22-con-001",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 1,
+"body": "AB = AC 인 이등변삼각형 ABC에서 ∠A = 44° 일 때, ∠B의 크기는?",
+"solution": "- △ABC는 이등변삼각형이므로 두 밑각의 크기가 같아 ∠B = ∠C 이다.\n- 삼각형의 세 내각의 크기의 합은 180°이므로 2∠B + 44° = 180° 이다.\n- 2∠B = 136° ⇒ ∠B = 68° 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"64°",
+"66°",
+"68°",
+"70°",
+"72°"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-002",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\overline{AB} = \\overline{AC}$이고 $\\angle A = 50^\\circ$일 때, $\\angle B$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con002.png]]",
+"solution": "[1단계] 이등변삼각형의 성질에 의하여 두 밑각의 크기는 서로 같다. 즉, $\\angle B = \\angle C$이다.\n[2단계] 삼각형의 세 내각의 크기의 합은 $180^\\circ$이므로 $\\angle B = (180^\\circ - 50^\\circ) \\div 2 = 130^\\circ \\div 2 = 65^\\circ$이다.\n따라서 답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$50^\\circ$",
+"$55^\\circ$",
+"$60^\\circ$",
+"$65^\\circ$",
+"$70^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-003",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 1,
+"body": "$\\overline{AB} = \\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 꼭지각 $\\angle A = 70^\\circ$일 때, 밑각 $\\angle C$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con003.png]]",
+"solution": "[1단계] 이등변삼각형의 두 밑각의 크기는 서로 같으므로 $\\angle B = \\angle C$이다.\n[2단계] 삼각형의 세 내각의 크기의 합은 $180^\\circ$이므로 $\\angle B + \\angle C = 180^\\circ - 70^\\circ = 110^\\circ$이다.\n[3단계] 따라서 $\\angle C = 110^\\circ \\div 2 = 55^\\circ$이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$50^\\circ$",
+"$55^\\circ$",
+"$60^\\circ$",
+"$65^\\circ$",
+"$70^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-004",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 1,
+"body": "다음 그림과 같이 $\\overline{AB}=\\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 꼭지각 $\\angle A$의 이등분선이 변 $\\overline{BC}$와 만나는 점을 $D$라 할 때, 다음 중 옳지 않은 것은?\n[[그림:/figs/exam-m22/con004.png]]",
+"solution": "이등변삼각형의 두 밑각의 크기는 같으므로 $\\angle B = \\angle C$이다 (① 참).\n이등변삼각형의 꼭지각의 이등분선은 밑변을 수직이등분하므로 $\\overline{BD} = \\overline{CD}$ (② 참), $\\overline{AD} \\perp \\overline{BC}$ 즉 $\\angle ADC = 90^\\circ$ (③ 참)이다.\n또한 $\\triangle ABD$와 $\\triangle ACD$는 대응하는 두 변과 그 끼인각이 같으므로 $\\mathrm{SAS}$ 합동이다 (⑤ 참).\n④ $\\overline{AD}$는 꼭지각의 이등분선이고 $\\overline{BD}$는 밑변의 절반이므로, 직각이등변삼각형 등 특수한 경우가 아니면 일반적으로 그 길이가 같지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\angle B = \\angle C$",
+"$\\overline{BD} = \\overline{CD}$",
+"$\\angle ADC = 90^\\circ$",
+"$\\overline{AD} = \\overline{BD}$",
+"$\\triangle ABD \\equiv \\triangle ACD$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-005",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 1,
+"body": "다음 그림과 같이 $\\overline{AB}=\\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 꼭짓점 $A$의 외각의 크기가 $108^\\circ$일 때, $\\angle C$의 크기는?\n[[그림:/figs/exam-m22/con005.png]]",
+"solution": "삼각형의 한 외각의 크기는 그와 이웃하지 않는 두 내각의 크기의 합과 같다.\n$\\angle A$의 외각이 $108^\\circ$이므로 $\\angle B + \\angle C = 108^\\circ$이다.\n$\\triangle ABC$는 $\\overline{AB} = \\overline{AC}$인 이등변삼각형이므로 두 밑각의 크기가 같아 $\\angle B = \\angle C$이다.\n따라서 $2 \\angle C = 108^\\circ$이므로 $\\angle C = 54^\\circ$이다.\n(또는 $\\angle A = 180^\\circ - 108^\\circ = 72^\\circ$이므로, $\\angle C = \\frac{180^\\circ - 72^\\circ}{2} = 54^\\circ$로 구할 수도 있다.)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$50^\\circ$",
+"$52^\\circ$",
+"$54^\\circ$",
+"$56^\\circ$",
+"$58^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-006",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 1,
+"body": "$\\overline{AB} = \\overline{AC}$인 이등변삼각형 $ABC$에서 $\\angle A$의 이등분선과 변 $\\overline{BC}$의 교점을 $D$라 할 때, 〈보기〉에서 옳은 것을 모두 고른 것은?\n〈보기〉\nㄱ. $\\angle B = \\angle C$\nㄴ. $\\overline{BD} = \\overline{CD}$\nㄷ. $\\overline{AD} \\perp \\overline{BC}$\nㄹ. $\\overline{AD} = \\overline{BD}$\n[[그림:/figs/exam-m22/con006.png]]",
+"solution": "$\\triangle ABD$와 $\\triangle ACD$에서 $\\overline{AB}=\\overline{AC}$, $\\angle BAD = \\angle CAD$이고, $\\overline{AD}$는 공통이므로 두 변의 길이와 그 끼인각의 크기가 각각 같아 $\\triangle ABD \\equiv \\triangle ACD$ (SAS 합동)이다.\n합동인 두 삼각형에서 대응각과 대응변의 크기가 같으므로 $\\angle B = \\angle C$ (ㄱ 맞음), $\\overline{BD} = \\overline{CD}$ (ㄴ 맞음)이다.\n또한 $\\angle ADB = \\angle ADC$이고 $\\angle ADB + \\angle ADC = 180^\\circ$이므로 $\\angle ADB = 90^\\circ$, 즉 $\\overline{AD} \\perp \\overline{BC}$ (ㄷ 맞음)이다.\nㄹ. $\\overline{AD}$와 $\\overline{BD}$의 길이가 같다는 조건은 없으므로 항상 성립하지는 않는다.\n따라서 옳은 것은 ㄱ, ㄴ, ㄷ이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-007",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "AB = AC 인 이등변삼각형 ABC에서 ∠A의 이등분선과 선분 BC의 교점을 D라 하자. BC = 12 cm, ∠C = 55° 일 때, 선분 BD의 길이와 ∠BAD의 크기를 바르게 짝지은 것은?",
+"solution": "- 이등변삼각형의 꼭지각의 이등분선은 밑변을 수직이등분하므로 BD = 1 / 2 × BC = 6 cm 이다.\n- AD ⊥ BC 이므로 △ADC에서 ∠ADC = 90° 이다.\n- 삼각형의 내각의 합에 의해 ∠DAC = 180° - (90° + 55°) = 35° 이다.\n- AD는 ∠A의 이등분선이므로 ∠BAD = ∠DAC = 35° 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"6 cm, 35°",
+"6 cm, 55°",
+"6 cm, 65°",
+"12 cm, 35°",
+"12 cm, 55°"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-008",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $\\overline{AB} = \\overline{AC}$이고 $\\angle A = 36^\\circ$이다. $\\angle B$의 이등분선과 변 $\\overline{AC}$의 교점을 $D$라 할 때, $\\angle BDC$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con008.png]]",
+"solution": "[1단계] $\\triangle ABC$에서 $\\overline{AB} = \\overline{AC}$이므로 $\\angle B = \\angle C = (180^\\circ - 36^\\circ) \\div 2 = 72^\\circ$이다.\n[2단계] 선분 $BD$가 $\\angle B$의 이등분선이므로 $\\angle ABD = 72^\\circ \\div 2 = 36^\\circ$이다.\n[3단계] $\\angle BDC$는 $\\triangle ABD$의 외각이므로 $\\angle BDC = \\angle A + \\angle ABD = 36^\\circ + 36^\\circ = 72^\\circ$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$68^\\circ$",
+"$70^\\circ$",
+"$72^\\circ$",
+"$75^\\circ$",
+"$78^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-009",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "폭이 일정한 종이 띠를 선분 $PQ$를 접는 선으로 하여 접었더니 겹친 부분이 $\\triangle PQR$이 되었다. $\\angle QPR = 50^\\circ$일 때, $\\angle PRQ$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con009.png]]",
+"solution": "[1단계] 종이 띠의 두 모서리는 평행하므로 엇각의 크기가 같고, 접은 각의 크기도 같다. 따라서 $\\angle PQR = \\angle QPR = 50^\\circ$이다.\n[2단계] 겹친 부분 $\\triangle PQR$은 두 내각의 크기가 같으므로 $\\overline{RP} = \\overline{RQ}$인 이등변삼각형이다.\n[3단계] 따라서 $\\angle PRQ = 180^\\circ - 2 \\times 50^\\circ = 80^\\circ$이다.\n따라서 답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$50^\\circ$",
+"$55^\\circ$",
+"$60^\\circ$",
+"$65^\\circ$",
+"$80^\\circ$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-010",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\overline{AB}=\\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 $\\angle A = 48^\\circ$이다. $\\angle B$의 이등분선과 변 $\\overline{AC}$의 교점을 $D$라 할 때, $\\angle BDC$의 크기는?\n[[그림:/figs/exam-m22/con010.png]]",
+"solution": "$\\triangle ABC$는 $\\overline{AB}=\\overline{AC}$인 이등변삼각형이므로,\n$\\angle ABC = \\angle C = \\dfrac{180^\\circ - 48^\\circ}{2} = 66^\\circ$이다.\n선분 $BD$가 $\\angle B$의 이등분선이므로,\n$\\angle ABD = \\dfrac{1}{2} \\angle ABC = \\dfrac{1}{2} \\times 66^\\circ = 33^\\circ$이다.\n$\\angle BDC$는 $\\triangle ABD$에서 $\\angle D$의 외각이므로, 이웃하지 않는 두 내각의 합과 같다.\n$\\angle BDC = \\angle A + \\angle ABD = 48^\\circ + 33^\\circ = 81^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$78^\\circ$",
+"$81^\\circ$",
+"$84^\\circ$",
+"$87^\\circ$",
+"$90^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-011",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\overline{AB}=\\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 $\\angle B$의 이등분선과 $\\angle C$의 외각의 이등분선이 만나는 점을 $D$라 하자. $\\angle BDC = 32^\\circ$일 때, $\\angle A$의 크기는?\n[[그림:/figs/exam-m22/con011.png]]",
+"solution": "$\\triangle ABC$에서 $\\angle C$의 외각의 크기를 유도해 보면,\n$\\angle ACD$ (점 $C$에서의 외각의 절반) = $\\dfrac{1}{2} (\\angle A + \\angle B)$이다.\n$\\triangle BCD$에서 점 $C$의 외각에 대한 성질을 쓰면,\n$\\angle D + \\angle DBC = \\angle ACD$가 성립한다.\n따라서 $\\angle D + \\dfrac{1}{2}\\angle B = \\dfrac{1}{2} (\\angle A + \\angle B)$가 되어 양변에서 $\\dfrac{1}{2}\\angle B$를 빼면,\n$\\angle D = \\dfrac{1}{2}\\angle A$라는 결론을 얻는다. (이 성질은 이등변삼각형이 아니어도 항상 성립한다.)\n문제에서 $\\angle BDC = \\angle D = 32^\\circ$이므로, $\\dfrac{1}{2}\\angle A = 32^\\circ$에서 $\\angle A = 64^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$58^\\circ$",
+"$60^\\circ$",
+"$62^\\circ$",
+"$64^\\circ$",
+"$66^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-012",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\overline{AB}=\\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 $\\angle A$의 이등분선과 변 $\\overline{BC}$의 교점을 $D$라 하자. $\\triangle ABC$의 넓이가 $60\\mathrm{cm}^2$이고 $\\overline{BC} = 15\\mathrm{cm}$일 때, 선분 $\\overline{AD}$의 길이는?\n[[그림:/figs/exam-m22/con012.png]]",
+"solution": "이등변삼각형에서 꼭지각의 이등분선은 밑변을 수직이등분한다.\n따라서 선분 $AD$는 $\\triangle ABC$의 밑변 $\\overline{BC}$에 내린 수선(높이) 역할을 한다.\n$\\triangle ABC$의 넓이 = $\\dfrac{1}{2} \\times \\overline{BC} \\times \\overline{AD}$이므로,\n$\\dfrac{1}{2} \\times 15 \\times \\overline{AD} = 60$\n$15 \\times \\overline{AD} = 120$\n$\\overline{AD} = 8\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$6\\mathrm{cm}$",
+"$7\\mathrm{cm}$",
+"$8\\mathrm{cm}$",
+"$9\\mathrm{cm}$",
+"$10\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-013",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "$\\overline{AB} = \\overline{AC}$인 이등변삼각형 $ABC$에서 $\\angle B$의 이등분선과 $\\angle C$의 외각의 이등분선의 교점을 $D$라 하자. $\\angle BDC = 32^\\circ$일 때, $\\angle A$의 크기는?\n[[그림:/figs/exam-m22/con013.png]]",
+"solution": "$\\triangle ABC$에서 $\\angle A$와 $\\angle BDC$ 사이에는 $\\angle BDC = \\dfrac{1}{2}\\angle A$가 성립하는 성질이 있다.\n(과정: $\\angle BDC = \\angle DCE - \\angle DBC = \\dfrac{1}{2}\\angle ACE - \\dfrac{1}{2}\\angle B = \\dfrac{1}{2}(\\angle ACE - \\angle B) = \\dfrac{1}{2}\\angle A$)\n따라서 $32^\\circ = \\dfrac{1}{2}\\angle A$이므로 $\\angle A = 32^\\circ \\times 2 = 64^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$54^\\circ$",
+"$58^\\circ$",
+"$60^\\circ$",
+"$64^\\circ$",
+"$68^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-014",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 3,
+"body": "$\\triangle ABC$에서 $\\overline{AB} = \\overline{AC}$이고 $\\angle A = 40^\\circ$이다. 점 $I$가 $\\triangle ABC$의 내심일 때, $\\angle IBC$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con014.png]]",
+"solution": "[1단계] $\\triangle ABC$는 $\\overline{AB} = \\overline{AC}$인 이등변삼각형이므로 $\\angle B = \\angle C = (180^\\circ - 40^\\circ) \\div 2 = 70^\\circ$이다.\n[2단계] 점 $I$는 $\\triangle ABC$의 내심이므로 내심의 뜻에 따라 세 내각의 이등분선의 교점이다.\n[3단계] 따라서 선분 $BI$는 $\\angle B$의 이등분선이므로 $\\angle IBC = \\dfrac{1}{2} \\angle B = \\dfrac{1}{2} \\times 70^\\circ = 35^\\circ$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$25^\\circ$",
+"$30^\\circ$",
+"$35^\\circ$",
+"$40^\\circ$",
+"$45^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-015",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 2,
+"body": "$\\overline{AB} = \\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 $\\angle A$의 이등분선과 변 $\\overline{BC}$의 교점을 $D$라 하자. $\\overline{BC} = 10\\mathrm{cm}$, $\\triangle ABD$의 넓이가 $30\\mathrm{cm^2}$일 때, 선분 $\\overline{AD}$의 길이를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con015.png]]",
+"solution": "[1단계] 이등변삼각형의 꼭지각의 이등분선은 밑변을 수직이등분하므로 $\\overline{BD} = \\overline{CD} = \\dfrac{1}{2} \\overline{BC} = 5\\mathrm{cm}$이고 $\\overline{AD} \\perp \\overline{BC}$이다. (근거: 꼭지각의 이등분선은 밑변의 수직이등분선)\n[2단계] $\\triangle ABD$는 직각삼각형이므로 넓이는 $\\dfrac{1}{2} \\times \\overline{BD} \\times \\overline{AD} = 30$이다.\n[3단계] $\\dfrac{1}{2} \\times 5 \\times \\overline{AD} = 30$에서 $\\overline{AD} = 12\\mathrm{cm}$이다.\n따라서 답은 $12\\mathrm{cm}$이다.\n[채점 기준]\n- 1단계: $\\overline{BD} = 5\\mathrm{cm}$ 및 $\\overline{AD} \\perp \\overline{BC}$임을 밝힌 경우 (2점)\n- 2단계: 넓이 공식을 이용하여 식을 세운 경우 (2점)\n- 3단계: 정확한 $\\overline{AD}$의 길이를 구한 경우 (2점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$12\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-016",
+"typeId": "exam-m22-u0m0s0t2",
+"twinGroup": "tw-exam-m22-u0m0s0t2",
+"diff": 3,
+"body": "폭이 일정하고 양 모서리가 평행한 종이 띠를 선분 $PQ$를 접는 선으로 하여 접었더니 겹친 부분이 $\\triangle PQR$이 되었다. $\\angle QPR = 64^\\circ$일 때, $\\angle PRQ$의 크기를 구하는 과정을 서술하시오.",
+"solution": "[1단계] 종이 띠의 위쪽 모서리와 아래쪽 모서리가 평행하므로 엇각의 크기가 같다. 따라서 접힌 각에 의해 $\\angle PQR = \\angle QPR = 64^\\circ$이다. (근거: 평행선의 성질 및 접은 각)\n[2단계] 겹쳐진 부분인 $\\triangle PQR$은 두 내각의 크기가 같으므로 $\\overline{RP} = \\overline{RQ}$인 이등변삼각형이다.\n[3단계] 따라서 $\\angle PRQ = 180^\\circ - (64^\\circ + 64^\\circ) = 180^\\circ - 128^\\circ = 52^\\circ$이다.\n따라서 답은 $52^\\circ$이다.\n[채점 기준]\n- 1단계: 엇각과 접은 각을 이용하여 $\\angle PQR = 64^\\circ$임을 구한 경우 (2점)\n- 2단계: $\\triangle PQR$이 이등변삼각형임을 밝힌 경우 (2점)\n- 3단계: 최종 각도를 올바르게 구한 경우 (2점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$52^\\circ$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-017",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle B = \\angle C = 65^\\circ$이다. $\\overline{AB} = 8\\mathrm{cm}$, $\\overline{BC} = 6\\mathrm{cm}$일 때, $\\triangle ABC$의 둘레의 길이는?",
+"solution": "$\\triangle ABC$에서 두 내각의 크기가 $\\angle B = \\angle C = 65^\\circ$로 같으므로, 이 삼각형은 $\\overline{AB} = \\overline{AC}$인 이등변삼각형이다.\n따라서 $\\overline{AC} = 8\\mathrm{cm}$이다.\n$\\triangle ABC$의 둘레의 길이는 세 변의 길이의 합이므로 $\\overline{AB} + \\overline{BC} + \\overline{AC} = 8 + 6 + 8 = 22(\\mathrm{cm})$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20\\mathrm{cm}$",
+"$22\\mathrm{cm}$",
+"$24\\mathrm{cm}$",
+"$26\\mathrm{cm}$",
+"$28\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-018",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "△ABC에서 변 AC 위에 점 D가 있다. AB = AC 이고, AD = BD = BC 일 때, ∠A 의 크기는? (단, ∠A는 예각이다.)",
+"solution": "- ∠A = x 라 하자.\n- △ABD는 AD = BD 인 이등변삼각형이므로 ∠ABD = x 이다.\n- △ABD의 외각 성질에 의해 ∠BDC = ∠A + ∠ABD = 2x 이다.\n- △BCD는 BD = BC 인 이등변삼각형이므로 ∠C = ∠BDC = 2x 이다.\n- 처음 △ABC도 AB = AC 인 이등변삼각형이므로 ∠ABC = ∠C = 2x 이다.\n- △ABC의 세 내각의 합은 180°이므로 x + 2x + 2x = 180° ⇒ 5x = 180° ⇒ x = 36° 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"30°",
+"36°",
+"40°",
+"45°",
+"72°"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-019",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "다음은 '두 내각의 크기가 같은 삼각형은 이등변삼각형이다.'를 증명하는 과정이다. ㈎, ㈏에 알맞은 것을 바르게 짝지은 것은?\n\n$\\angle B = \\angle C$인 $\\triangle ABC$에서 $\\angle A$의 이등분선과 변 $\\overline{BC}$의 교점을 $D$라 하자.\n$\\triangle ABD$와 $\\triangle ACD$에서\n$\\angle BAD = \\angle CAD$\n삼각형의 세 내각의 크기의 합은 $180^\\circ$이고 $\\angle B = \\angle C$이므로 $\\angle ADB = \\angle ADC = \\text{㈎}$\n$\\overline{AD}$는 공통\n따라서 $\\triangle ABD \\equiv \\triangle ACD$ ($\\text{㈏}$ 합동)\n그러므로 $\\overline{AB} = \\overline{AC}$이다.\n[[그림:/figs/exam-m22/con019.png]]",
+"solution": "[1단계] $\\triangle ABD$에서 $\\angle ADB = 180^\\circ - \\angle B - \\angle BAD$, $\\triangle ACD$에서 $\\angle ADC = 180^\\circ - \\angle C - \\angle CAD$이고, $\\angle B = \\angle C$, $\\angle BAD = \\angle CAD$이므로 $\\angle ADB = \\angle ADC$이다.\n[2단계] $\\angle ADB + \\angle ADC = 180^\\circ$이므로 $\\angle ADB = \\angle ADC = 90^\\circ$이다. 즉, ㈎는 $90^\\circ$이다.\n[3단계] $\\overline{AD}$가 공통이고 그 양 끝 각 $\\angle BAD = \\angle CAD$, $\\angle ADB = \\angle ADC$의 크기가 각각 같으므로 ASA 합동이다. 즉, ㈏는 ASA이다.\n따라서 답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$90^\\circ$, ASA",
+"$90^\\circ$, SAS",
+"$180^\\circ$, ASA",
+"$60^\\circ$, RHA",
+"$90^\\circ$, RHS"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-020",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\angle XAY = 36^\\circ$인 각의 변 $AX$ 위에 두 점 $B$, $D$가 있고, 변 $AY$ 위에 두 점 $C$, $E$가 있다. $\\overline{AB} = \\overline{BC} = \\overline{CD}$일 때, $\\angle DCE$의 크기를 구하시오. (단, 점 $E$는 $\\overline{AC}$의 연장선 위에 있다.)\n[[그림:/figs/exam-m22/con020.png]]",
+"solution": "[1단계] $\\triangle ABC$는 $\\overline{AB} = \\overline{BC}$인 이등변삼각형이므로 $\\angle BCA = \\angle A = 36^\\circ$이다.\n[2단계] $\\angle CBD$는 $\\triangle ABC$의 외각이므로 $\\angle CBD = \\angle A + \\angle BCA = 36^\\circ + 36^\\circ = 72^\\circ$이다.\n[3단계] $\\triangle BCD$는 $\\overline{BC} = \\overline{CD}$인 이등변삼각형이므로 $\\angle CDB = \\angle CBD = 72^\\circ$이다.\n[4단계] $\\angle DCE$는 $\\triangle ACD$의 외각이므로 $\\angle DCE = \\angle A + \\angle ADC = 36^\\circ + 72^\\circ = 108^\\circ$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$100^\\circ$",
+"$104^\\circ$",
+"$108^\\circ$",
+"$112^\\circ$",
+"$116^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-021",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\triangle ABC$에서 $\\angle B = \\angle C$이고, $\\angle BAD = \\angle CAD$이다. $\\overline{AB} = 8\\mathrm{cm}$, $\\overline{CD} = 3\\mathrm{cm}$일 때, $\\triangle ABC$의 둘레의 길이를 구하시오.\n[[그림:/figs/exam-m22/con021.png]]",
+"solution": "[1단계] $\\angle B = \\angle C$이므로 $\\triangle ABC$는 $\\overline{AB} = \\overline{AC} = 8\\mathrm{cm}$인 이등변삼각형이다.\n[2단계] 꼭지각 $\\angle A$의 이등분선 $\\overline{AD}$는 밑변 $\\overline{BC}$를 수직이등분하므로 $\\overline{BD} = \\overline{CD} = 3\\mathrm{cm}$이다.\n[3단계] 따라서 $\\overline{BC} = 3 + 3 = 6\\mathrm{cm}$이다.\n[4단계] 삼각형의 둘레의 길이는 $8 + 8 + 6 = 22\\mathrm{cm}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$18\\mathrm{cm}$",
+"$20\\mathrm{cm}$",
+"$22\\mathrm{cm}$",
+"$24\\mathrm{cm}$",
+"$26\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-022",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "다음 그림과 같이 꼭짓점 $A$에서 시작하는 두 반직선 $AX, AY$ 위에 $\\overline{AB} = \\overline{BC} = \\overline{CD}$가 되도록 점 $B, D$는 반직선 $AX$ 위에, 점 $C$는 반직선 $AY$ 위에 잡았다. $\\angle DCY$ (점 $C$에서 선분 $CD$와 반직선 $CY$ 사이의 바깥 각)가 $105^\\circ$일 때, $\\angle A$의 크기는?\n[[그림:/figs/exam-m22/con022.png]]",
+"solution": "구하는 각인 $\\angle A$의 크기를 $x$라 하자.\n$\\triangle ABC$에서 $\\overline{AB} = \\overline{BC}$이므로 $\\angle BCA = \\angle A = x$이다.\n$\\triangle ABC$의 점 $B$에서의 외각의 크기는 이웃하지 않는 두 내각의 합과 같으므로 $\\angle CBD = x + x = 2x$이다.\n$\\triangle BCD$에서 $\\overline{BC} = \\overline{CD}$이므로 $\\angle CDB = \\angle CBD = 2x$이다.\n큰 삼각형 $\\triangle ACD$에서 점 $C$에서의 외각인 $\\angle DCY$는 이웃하지 않는 두 내각 $\\angle A$와 $\\angle ADC$의 합과 같다.\n따라서 $\\angle DCY = \\angle A + \\angle ADC = x + 2x = 3x$이다.\n문제 조건에서 $\\angle DCY = 105^\\circ$이므로 $3x = 105^\\circ$, 즉 $x = 35^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$25^\\circ$",
+"$30^\\circ$",
+"$35^\\circ$",
+"$40^\\circ$",
+"$45^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-023",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "직사각형 모양의 긴 종이 띠를 선분 $EF$를 접는 선으로 하여 다음 그림과 같이 접었다. $\\angle AEF = 62^\\circ$일 때, 겹쳐진 부분인 $\\triangle EFG$에서 $\\angle EGF$의 크기는? (단, 점 $A, B$가 이동한 점을 각각 $A', B'$라 한다.)\n[[그림:/figs/exam-m22/con023.png]]",
+"solution": "종이를 접었을 때 접힌 각과 원래의 각의 크기는 같으므로,\n$\\angle GEF = \\angle AEF = 62^\\circ$이다.\n직사각형 모양의 종이 띠는 위아래 모서리가 평행하므로 엇각의 크기가 같다.\n따라서 $\\angle EFG = \\angle AEF = 62^\\circ$이다.\n즉 $\\triangle EFG$에서 두 밑각 $\\angle GEF = \\angle EFG = 62^\\circ$로 크기가 같으므로, 이 삼각형은 $\\overline{EG} = \\overline{FG}$인 이등변삼각형이다.\n따라서 $\\angle EGF = 180^\\circ - (62^\\circ + 62^\\circ) = 180^\\circ - 124^\\circ = 56^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$54^\\circ$",
+"$56^\\circ$",
+"$58^\\circ$",
+"$60^\\circ$",
+"$62^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-024",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\angle XAY$의 두 변 $AX$, $AY$ 위에 $\\overline{AB} = \\overline{BC} = \\overline{CD} = \\overline{DE}$가 되도록 점 $B$, $D$는 변 $AX$ 위에, 점 $C$, $E$는 변 $AY$ 위에 잡았다. 점 $D$를 지나고 점 $A$에서 멀어지는 반직선 $AX$ 위의 한 점을 $F$라 하자. $\\angle A = 18^\\circ$일 때, $\\angle EDF$의 크기는?\n[[그림:/figs/exam-m22/con024.png]]",
+"solution": "1) $\\triangle ABC$는 $\\overline{AB} = \\overline{BC}$인 이등변삼각형이므로 $\\angle BCA = \\angle A = 18^\\circ$이다.\n2) 삼각형의 한 외각의 크기는 이웃하지 않는 두 내각의 크기의 합과 같으므로 $\\triangle ABC$에서 $\\angle CBD = 18^\\circ + 18^\\circ = 36^\\circ$이다.\n3) $\\triangle BCD$는 $\\overline{BC} = \\overline{CD}$인 이등변삼각형이므로 $\\angle CDB = \\angle CBD = 36^\\circ$이다.\n4) $\\triangle ACD$에서 외각의 성질을 이용하면 $\\angle DCE = \\angle A + \\angle CDB = 18^\\circ + 36^\\circ = 54^\\circ$이다.\n5) $\\triangle CDE$는 $\\overline{CD} = \\overline{DE}$인 이등변삼각형이므로 $\\angle DEC = \\angle DCE = 54^\\circ$이다.\n6) 마지막으로 $\\triangle ADE$에서 외각의 성질을 이용하면 구하는 $\\angle EDF = \\angle A + \\angle AED = 18^\\circ + 54^\\circ = 72^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$54^\\circ$",
+"$64^\\circ$",
+"$72^\\circ$",
+"$80^\\circ$",
+"$90^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-025",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "폭이 8 cm 로 일정한 직사각형 모양의 종이 띠를 비스듬히 접어 겹쳐진 부분인 △ABC 가 생겼다. 종이가 접힌 선을 선분 BC 라 하고, 꼭짓점 A는 종이의 위쪽 가장자리에 위치한다. 선분 AB 의 길이가 15 cm 일 때, △ABC 의 넓이를 구하는 과정을 서술하시오.",
+"solution": "- [1단계] 종이를 접었으므로 접은 각의 크기가 같아 ∠ABC = ∠CBD 이고, 직사각형 평행선의 엇각 성질에 의해 ∠ACB = ∠CBD 이다.\n- [2단계] 따라서 ∠ABC = ∠ACB 가 되어, △ABC는 AB = AC 인 이등변삼각형이 된다.\n- [3단계] AB = 15 cm 이므로 밑변인 AC 의 길이도 15 cm 이다.\n- [4단계] 밑변을 AC로 할 때 높이는 일정한 종이의 폭인 8 cm 와 같으므로, △ABC의 넓이는 1 / 2 × 15 × 8 = 60 cm² 이다.\n- [채점 기준]\n  1. 접은 각과 엇각의 크기가 같음을 이용하여 밑각이 같음을 설명하기 (30%)\n  2. △ABC가 이등변삼각형임을 밝히고 선분 AC의 길이 구하기 (30%)\n  3. 밑변과 높이를 바르게 찾아 삼각형의 넓이 계산하기 (40%)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "60 cm²",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-026",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 2,
+"body": "폭이 일정한 직사각형 모양의 종이 띠를 오른쪽 그림과 같이 선분 $EF$를 접는 선으로 하여 접었더니 점 $C$가 점 $C'$으로 이동하였다. $\\angle AEF = 124^\\circ$일 때, $\\angle EGF$의 크기를 구하는 과정을 서술하시오. (단, $\\overline{AD} \\parallel \\overline{BC}$이고, $\\overline{ED'}$과 $\\overline{BC}$의 교점을 $G$라 한다.)\n[[그림:/figs/exam-m22/con026.png]]",
+"solution": "1) 평행선의 엇각의 크기는 같으므로 $\\overline{AD} \\parallel \\overline{BC}$에서 $\\angle EFC = \\angle AEF = 124^\\circ$이다.\n따라서 일직선상의 각에서 $\\angle GFE = 180^\\circ - 124^\\circ = 56^\\circ$이다.\n2) 또한 $\\angle DEF = 180^\\circ - \\angle AEF = 180^\\circ - 124^\\circ = 56^\\circ$이다.\n종이를 접었으므로 접은 각의 크기는 원래 각과 같아 $\\angle GEF = \\angle DEF = 56^\\circ$이다.\n3) $\\triangle EFG$에서 두 밑각 $\\angle GEF$와 $\\angle GFE$의 크기가 $56^\\circ$로 같으므로 $\\triangle EFG$는 이등변삼각형이다.\n4) 삼각형의 내각의 크기의 합은 $180^\\circ$이므로 $\\angle EGF = 180^\\circ - (56^\\circ + 56^\\circ) = 180^\\circ - 112^\\circ = 68^\\circ$이다.\n[채점 기준]\n1. 접은 각과 평행선의 엇각의 성질을 이용하여 $\\angle GEF$와 $\\angle GFE$의 크기를 각각 바르게 구하기 (60%)\n2. $\\triangle EFG$가 이등변삼각형임을 파악하고 $\\angle EGF$의 크기를 바르게 구하기 (40%)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$68^\\circ$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-027",
+"typeId": "exam-m22-u0m0s1t2",
+"twinGroup": "tw-exam-m22-u0m0s1t2",
+"diff": 3,
+"body": "다음 그림과 같이 $\\overline{AB}=\\overline{AC}$인 이등변삼각형 $\\triangle ABC$에서 $\\angle A = 36^\\circ$이다. $\\angle B$의 이등분선과 변 $\\overline{AC}$의 교점을 $D$라 할 때, 다음 물음에 답하고 그 과정을 서술하시오.\n(1) $\\angle BDC$의 크기를 구하시오.\n(2) $\\overline{AD} = 6\\mathrm{cm}$일 때, 변 $\\overline{BC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con027.png]]",
+"solution": "(1) $\\triangle ABC$는 $\\overline{AB} = \\overline{AC}$인 이등변삼각형이므로\n$\\angle ABC = \\angle C = \\dfrac{180^\\circ - 36^\\circ}{2} = 72^\\circ$이다.\n선분 $BD$가 $\\angle B$를 이등분하므로 $\\angle DBC = \\dfrac{1}{2} \\times 72^\\circ = 36^\\circ$이다.\n$\\triangle BCD$에서 세 내각의 합은 $180^\\circ$이므로\n$\\angle BDC = 180^\\circ - (\\angle C + \\angle DBC) = 180^\\circ - (72^\\circ + 36^\\circ) = 72^\\circ$이다.\n(2) $\\triangle BCD$에서 $\\angle BDC = \\angle C = 72^\\circ$이므로 $\\triangle BCD$는 이등변삼각형이 되어 $\\overline{BC} = \\overline{BD}$이다.\n또한 $\\triangle ABD$에서 $\\angle A = 36^\\circ$이고 $\\angle ABD = 36^\\circ$이므로 두 내각의 크기가 같아 이등변삼각형이 되어 $\\overline{AD} = \\overline{BD}$이다.\n결과적으로 $\\overline{BC} = \\overline{BD} = \\overline{AD}$가 성립한다.\n따라서 $\\overline{BC} = \\overline{AD} = 6\\mathrm{cm}$이다.\n\n[채점 기준]\n1. $\\angle C$와 $\\angle DBC$의 크기를 각각 정확히 구한 경우: 30%\n2. $\\angle BDC = 72^\\circ$임을 바르게 구한 경우: 20%\n3. 두 삼각형($\\triangle BCD, \\triangle ABD$)이 이등변삼각형이 되는 조건을 찾아 $\\overline{BC} = \\overline{BD} = \\overline{AD}$임을 논리적으로 설명한 경우: 30%\n4. $\\overline{BC} = 6\\mathrm{cm}$임을 바르게 도출한 경우: 20%",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "(1) $72^\\circ$ (2) $6\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-028",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 1,
+"body": "∠C = 90° 인 △ABC와 ∠F = 90° 인 △DEF가 있다. 두 직각삼각형이 항상 합동이라고 할 수 없는 조건은?",
+"solution": "- ①, ②: 빗변의 길이와 한 예각의 크기가 각각 같으므로 RHA 합동이다.\n- ③: 빗변의 길이와 다른 한 변의 길이가 각각 같으므로 RHS 합동이다.\n- ④: 두 쌍의 대응하는 변의 길이와 그 끼인각(90°)이 같으므로 SAS 합동이다.\n- ⑤: 세 각의 크기가 같아도 변의 길이가 다르면 합동이 아님을 주의해야 한다. (모양만 같은 닮음)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"AB = DE, ∠A = ∠D",
+"AB = DE, ∠B = ∠E",
+"AB = DE, AC = DF",
+"AC = DF, BC = EF",
+"∠A = ∠D, ∠B = ∠E"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-029",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 1,
+"body": "$\\angle C = \\angle F = 90^\\circ$인 두 직각삼각형 $ABC$와 $DEF$가 서로 합동이 되기 위한 조건이 아닌 것은?\n[[그림:/figs/exam-m22/con029.png]]",
+"solution": "[1단계] ①은 빗변의 길이와 한 예각의 크기가 각각 같으므로 RHA 합동이다.\n[2단계] ②는 빗변의 길이와 다른 한 변의 길이가 각각 같으므로 RHS 합동이다.\n[3단계] ③은 세 내각의 크기가 각각 같을 뿐 변의 길이에 대한 조건이 없으므로, 모양은 같아도 크기가 다를 수 있다. 따라서 합동이 되는 조건이 아니다.\n[4단계] ④는 두 변의 길이와 그 끼인각(직각)의 크기가 각각 같으므로 SAS 합동이다.\n[5단계] ⑤는 한 변 $\\overline{BC}$, $\\overline{EF}$의 길이와 그 양 끝 각의 크기가 각각 같으므로 ASA 합동이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{AB} = \\overline{DE}$, $\\angle B = \\angle E$",
+"$\\overline{AB} = \\overline{DE}$, $\\overline{AC} = \\overline{DF}$",
+"$\\angle A = \\angle D$, $\\angle B = \\angle E$",
+"$\\overline{AC} = \\overline{DF}$, $\\overline{BC} = \\overline{EF}$",
+"$\\angle B = \\angle E$, $\\overline{BC} = \\overline{EF}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-030",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 1,
+"body": "다음 그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$의 빗변 $AB$의 중점 $M$에서 두 변 $AC$, $BC$에 내린 수선의 발을 각각 $D$, $E$라 하자. $\\overline{MD} = \\overline{ME}$일 때, $\\triangle ADM \\equiv \\triangle BEM$이다. 이때 사용된 직각삼각형의 합동 조건은?\n[[그림:/figs/exam-m22/con030.png]]",
+"solution": "$\\triangle ADM$과 $\\triangle BEM$에서\n$\\overline{MD} \\perp \\overline{AC}$, $\\overline{ME} \\perp \\overline{BC}$이므로 $\\angle ADM = \\angle BEM = 90^\\circ$이다. (R)\n점 $M$은 빗변 $AB$의 중점이므로 $\\overline{AM} = \\overline{BM}$이다. (H)\n조건에서 $\\overline{MD} = \\overline{ME}$이다. (S)\n따라서 빗변의 길이와 다른 한 변의 길이가 각각 같으므로 $\\triangle ADM \\equiv \\triangle BEM$ (RHS 합동) 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"RHA 합동",
+"RHS 합동",
+"SSS 합동",
+"SAS 합동",
+"ASA 합동"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-031",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "다음은 '빗변의 길이와 한 예각의 크기가 각각 같은 두 직각삼각형은 서로 합동이다.'를 증명하는 과정이다. (가)~(다)에 알맞은 것을 차례대로 나열한 것은?\n〈보기〉\n$\\triangle ABC$와 $\\triangle DEF$에서 $\\angle C = \\angle F = 90^\\circ$, $\\overline{AB} = \\overline{DE}$, $\\angle B = \\angle E$이면\n$\\triangle ABC$에서 $\\angle A = 90^\\circ - \\angle B$이고, $\\triangle DEF$에서 $\\angle D = 90^\\circ - \\angle E$이므로\n$\\angle A = $ (가) 이다.\n따라서 $\\triangle ABC$와 $\\triangle DEF$에서\n$\\overline{AB} = \\overline{DE}$, $\\angle A = $ (가), $\\angle B = $ (나) 이므로\n$\\triangle ABC \\equiv \\triangle DEF$ ( (다) 합동 ) 이다.",
+"solution": "삼각형의 세 내각의 합은 $180^\\circ$이므로 직각삼각형에서 나머지 두 예각의 합은 $90^\\circ$이다.\n$\\angle B = \\angle E$이므로 $\\angle A = 90^\\circ - \\angle B = 90^\\circ - \\angle E = \\angle D$가 된다. 따라서 (가)는 $\\angle D$이다.\n두 삼각형에서 대응하는 한 변의 길이가 같고 ($\\overline{AB} = \\overline{DE}$), 그 양 끝 각의 크기가 각각 같으므로 ($\\angle A = \\angle D$, $\\angle B = \\angle E$) 두 삼각형은 ASA 합동이다.\n결과적으로 이는 RHA 합동 조건이 성립함을 보여주는 과정이다. 따라서 (나)는 $\\angle E$, (다)는 ASA 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\angle D$, $\\angle E$, ASA",
+"$\\angle D$, $\\angle F$, ASA",
+"$\\angle E$, $\\angle D$, SAS",
+"$\\angle F$, $\\angle E$, RHA",
+"$\\angle D$, $\\angle E$, RHS"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-032",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "다음은 $\\angle C = \\angle F = 90^\\circ$이고 $\\overline{AB} = \\overline{DE}$, $\\overline{AC} = \\overline{DF}$인 두 직각삼각형 $ABC$와 $DEF$가 서로 합동임을 증명하는 과정이다. (가)~(마)에 알맞은 것으로 옳지 않은 것은?\n〈보기〉\n두 직각삼각형 $ABC$와 $DEF$를 $\\overline{AC}$와 (가)이/가 겹치도록 이어 붙이면, $\\angle C = \\angle F = 90^\\circ$이므로 세 점 $B$, $C$, $E$는 한 직선 위에 있다.\n$\\triangle ABE$에서 $\\overline{AB} = (\\text{나})$이므로 $\\triangle ABE$는 (다)이다.\n따라서 $\\angle B = (\\text{라})$이다.\n두 직각삼각형 $ABC$와 $DEF$에서 $\\overline{AB} = \\overline{DE}$, $\\angle B = (\\text{라})$, $\\angle C = \\angle F = 90^\\circ$이므로\n$\\triangle ABC \\equiv \\triangle DEF$ ( (마) 합동 )이다.",
+"solution": "증명의 마지막 단계에서 두 직각삼각형 $ABC$와 $DEF$는 빗변의 길이($\\overline{AB}=\\overline{DE}$)와 한 예각의 크기($\\angle B = \\angle E$)가 각각 같으므로 'RHA 합동'이다. (또는 $\\angle A = \\angle D$임을 구하여 'ASA 합동'으로 서술할 수 있다.)\nSAS 합동은 두 변의 길이와 '그 끼인각'의 크기가 같아야 성립하므로 이 증명의 직접적인 결론으로 옳지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"(가) $\\overline{DF}$",
+"(나) $\\overline{DE}$",
+"(다) 이등변삼각형",
+"(라) $\\angle E$",
+"(마) SAS"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-033",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "AB = AC 인 직각이등변삼각형 ABC의 두 꼭짓점 B, C에서 꼭짓점 A를 지나는 직선 l에 내린 수선의 발을 각각 D, E라 하자. BD = 15 cm, CE = 8 cm 일 때, 선분 DE 의 길이는? (단, 점 A는 점 D와 점 E 사이에 있다.)",
+"solution": "- △ABD와 △CAE에서 ∠ADB = ∠CEA = 90°, 빗변 AB = CA 이다.\n- 평각은 180°이고 ∠BAC = 90° 이므로 ∠DAB + ∠EAC = 90° 이다.\n- △ABD에서 직각을 제외한 두 예각의 합이 90°이므로 ∠ABD + ∠DAB = 90° 이다.\n- 따라서 ∠ABD = ∠EAC 이므로 △ABD ≡ △CAE (RHA 합동) 이다.\n- AD = CE = 8 cm 이고, AE = BD = 15 cm 이다.\n- DE = AD + AE = 8 + 15 = 23 cm 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"7 cm",
+"15 cm",
+"17 cm",
+"23 cm",
+"30 cm"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-034",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "∠C = 90° 인 직각삼각형 ABC에서 점 D는 변 BC 위의 점이고, 점 E는 빗변 AB 위의 점이다. AB ⊥ DE 이고 AC = AE 일 때, BC = 12 cm, AB = 20 cm, AC = 16 cm 이면 △BDE 의 둘레의 길이는?",
+"solution": "- △ACD와 △AED에서 ∠C = ∠AED = 90°, 빗변 AD는 공통, 밑변 AC = AE 이다.\n- 따라서 △ACD ≡ △AED (RHS 합동) 이다.\n- 합동이므로 CD = ED 이다.\n- △BDE의 둘레 = BD + DE + EB = BD + CD + EB = BC + EB 로 정리된다.\n- EB = AB - AE 이고 AE = AC = 16 cm 이므로 EB = 20 - 16 = 4 cm 이다.\n- 따라서 △BDE의 둘레 = 12 + 4 = 16 cm 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"12 cm",
+"16 cm",
+"20 cm",
+"24 cm",
+"28 cm"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-035",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "$\\angle A = 90^\\circ$이고 $\\overline{AB} = \\overline{AC}$인 직각이등변삼각형 $ABC$의 꼭짓점 $A$를 지나는 직선 $l$에 두 꼭짓점 $B$, $C$에서 내린 수선의 발을 각각 $D$, $E$라 하자. $\\overline{BD} = 7\\,\\mathrm{cm}$, $\\overline{CE} = 4\\,\\mathrm{cm}$일 때, 선분 $DE$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con035.png]]",
+"solution": "[1단계] 직각삼각형 $ABD$와 $CAE$에서 $\\angle ADB = \\angle CEA = 90^\\circ$이고 빗변의 길이가 $\\overline{AB} = \\overline{AC}$로 같다.\n[2단계] $\\angle DAB + \\angle CAE = 90^\\circ$이고 $\\angle CAE + \\angle ACE = 90^\\circ$이므로 $\\angle DAB = \\angle ACE$이다.\n[3단계] 따라서 $\\triangle ABD \\equiv \\triangle CAE$ (RHA 합동)이므로 $\\overline{AD} = \\overline{CE} = 4\\,\\mathrm{cm}$, $\\overline{AE} = \\overline{BD} = 7\\,\\mathrm{cm}$이다.\n[4단계] $\\overline{DE} = \\overline{AD} + \\overline{AE} = 4 + 7 = 11\\,\\mathrm{cm}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$9\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$11\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$13\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-036",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "$\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\angle A$의 이등분선이 $\\overline{BC}$와 만나는 점을 $D$라 하자. $\\overline{AB} = 20\\,\\mathrm{cm}$, $\\overline{CD} = 6\\,\\mathrm{cm}$일 때, $\\triangle ABD$의 넓이를 구하시오.\n[[그림:/figs/exam-m22/con036.png]]",
+"solution": "[1단계] 점 $D$에서 빗변 $\\overline{AB}$에 내린 수선의 발을 $E$라 하면, $\\triangle ACD$와 $\\triangle AED$에서 $\\angle ACD = \\angle AED = 90^\\circ$, $\\overline{AD}$는 공통, $\\angle CAD = \\angle EAD$이므로 $\\triangle ACD \\equiv \\triangle AED$ (RHA 합동)이다.\n[2단계] 따라서 $\\overline{DE} = \\overline{CD} = 6\\,\\mathrm{cm}$이다.\n[3단계] $\\triangle ABD$의 넓이는 $\\overline{AB}$를 밑변, $\\overline{DE}$를 높이로 하여 $\\dfrac{1}{2} \\times 20 \\times 6 = 60\\,\\mathrm{cm^2}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$40\\,\\mathrm{cm^2}$",
+"$50\\,\\mathrm{cm^2}$",
+"$60\\,\\mathrm{cm^2}$",
+"$70\\,\\mathrm{cm^2}$",
+"$80\\,\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-037",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\angle A = 90^\\circ$, $\\overline{AB} = \\overline{AC}$인 직각이등변삼각형 $ABC$의 꼭짓점 $A$를 지나는 직선 $l$에 두 꼭짓점 $B$, $C$에서 내린 수선의 발을 각각 $D$, $E$라 하자. $\\overline{BD} = 12\\,\\mathrm{cm}$, $\\overline{DE} = 17\\,\\mathrm{cm}$일 때, $\\triangle CAE$의 넓이는?\n[[그림:/figs/exam-m22/con037.png]]",
+"solution": "$\\triangle ABD$와 $\\triangle CAE$에서\n$\\angle ADB = \\angle CEA = 90^\\circ$, 빗변 $\\overline{AB} = \\overline{CA}$ 이다.\n세 점 $D, A, E$가 한 직선 위에 있으므로 $\\angle DAB + 90^\\circ + \\angle EAC = 180^\\circ$ 즉, $\\angle DAB + \\angle EAC = 90^\\circ$ 이다.\n또한 직각삼각형 $ABD$에서 $\\angle DAB + \\angle ABD = 90^\\circ$ 이므로 $\\angle ABD = \\angle CAE$ 이다.\n따라서 $\\triangle ABD \\equiv \\triangle CAE$ (RHA 합동) 이다.\n합동인 두 삼각형의 대응변의 길이는 같으므로 $\\overline{AE} = \\overline{BD} = 12\\,\\mathrm{cm}$ 이다.\n$\\overline{DE} = \\overline{AD} + \\overline{AE} = 17\\,\\mathrm{cm}$ 이므로 $\\overline{AD} + 12 = 17$, 즉 $\\overline{AD} = 5\\,\\mathrm{cm}$ 이다.\n대응변인 $\\overline{CE} = \\overline{AD} = 5\\,\\mathrm{cm}$ 가 된다.\n그러므로 $\\triangle CAE$의 넓이는 $\\dfrac{1}{2} \\times \\overline{AE} \\times \\overline{CE} = \\dfrac{1}{2} \\times 12 \\times 5 = 30\\,\\mathrm{cm^2}$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20\\,\\mathrm{cm^2}$",
+"$25\\,\\mathrm{cm^2}$",
+"$30\\,\\mathrm{cm^2}$",
+"$35\\,\\mathrm{cm^2}$",
+"$40\\,\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-038",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 변 $AB$ 위에 $\\overline{BC} = \\overline{BD}$가 되도록 점 $D$를 잡고, 점 $D$를 지나 변 $AB$에 수직인 직선이 변 $AC$와 만나는 점을 $E$라 하자. $\\angle A = 36^\\circ$일 때, $\\angle BEC$의 크기는?\n[[그림:/figs/exam-m22/con038.png]]",
+"solution": "직각삼각형 $ABC$에서 $\\angle C = 90^\\circ$이고 $\\angle A = 36^\\circ$이므로 $\\angle B = 90^\\circ - 36^\\circ = 54^\\circ$이다.\n$\\triangle EBC$와 $\\triangle EBD$에서\n$\\angle C = \\angle EDB = 90^\\circ$ (R), 빗변 $\\overline{EB}$는 공통 (H), $\\overline{BC} = \\overline{BD}$ (S) 이므로\n$\\triangle EBC \\equiv \\triangle EBD$ (RHS 합동) 이다.\n따라서 대응각의 크기가 같으므로 $\\angle EBC = \\angle EBD = \\dfrac{1}{2} \\angle B = \\dfrac{1}{2} \\times 54^\\circ = 27^\\circ$ 이다.\n직각삼각형 $EBC$에서 구하고자 하는 각인 $\\angle BEC = 90^\\circ - \\angle EBC = 90^\\circ - 27^\\circ = 63^\\circ$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$57^\\circ$",
+"$60^\\circ$",
+"$63^\\circ$",
+"$66^\\circ$",
+"$69^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-039",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "다음 그림과 같은 $\\triangle ABC$에서 변 $BC$의 중점을 $M$이라 하고, 점 $M$에서 두 변 $AB$, $AC$에 내린 수선의 발을 각각 $D$, $E$라 하자. $\\overline{MD} = \\overline{ME}$이고 $\\angle A = 52^\\circ$일 때, $\\angle BMD$의 크기는?\n[[그림:/figs/exam-m22/con039.png]]",
+"solution": "$\\triangle BDM$과 $\\triangle CEM$에서\n$\\angle BDM = \\angle CEM = 90^\\circ$ (R)\n점 $M$이 $\\overline{BC}$의 중점이므로 빗변 $\\overline{BM} = \\overline{CM}$ (H)\n조건에서 $\\overline{MD} = \\overline{ME}$ (S)\n따라서 $\\triangle BDM \\equiv \\triangle CEM$ (RHS 합동) 이다.\n대응각의 크기가 같으므로 $\\angle B = \\angle C$ 가 되어 $\\triangle ABC$는 $\\overline{AB} = \\overline{AC}$인 이등변삼각형이다.\n$\\angle B = \\dfrac{180^\\circ - 52^\\circ}{2} = 64^\\circ$ 이다.\n직각삼각형 $BDM$에서 두 예각의 합은 $90^\\circ$ 이므로 $\\angle BMD = 90^\\circ - \\angle B = 90^\\circ - 64^\\circ = 26^\\circ$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$24^\\circ$",
+"$26^\\circ$",
+"$28^\\circ$",
+"$30^\\circ$",
+"$32^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-040",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 2,
+"body": "$\\angle B = 90^\\circ$인 직각삼각형 $ABC$에서 변 $\\overline{AC}$ 위에 점 $D$를 잡고, 점 $D$에서 $\\overline{AC}$에 수직인 직선을 그어 변 $\\overline{BC}$와 만나는 점을 $E$라 하자. $\\overline{AB} = \\overline{AD}$이고 $\\angle C = 38^\\circ$일 때, $\\angle AED$의 크기는?\n[[그림:/figs/exam-m22/con040.png]]",
+"solution": "$\\triangle ABE$와 $\\triangle ADE$에서 $\\angle B = \\angle ADE = 90^\\circ$이고, 빗변 $\\overline{AE}$는 공통이며, 문제의 조건에서 $\\overline{AB} = \\overline{AD}$이다.\n따라서 직각삼각형의 빗변의 길이와 다른 한 변의 길이가 각각 같으므로 $\\triangle ABE \\equiv \\triangle ADE$ (RHS 합동)이다.\n$\\triangle ABC$의 세 내각의 합에서 $\\angle BAC = 180^\\circ - (90^\\circ + 38^\\circ) = 52^\\circ$이다.\n합동인 두 삼각형에서 대응각의 크기가 같으므로 $\\angle BAE = \\angle DAE$이다. 따라서 $\\angle DAE = \\dfrac{1}{2} \\times 52^\\circ = 26^\\circ$이다.\n직각삼각형 $ADE$에서 $\\angle ADE = 90^\\circ$이므로 $\\angle AED = 180^\\circ - (90^\\circ + 26^\\circ) = 64^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$58^\\circ$",
+"$60^\\circ$",
+"$64^\\circ$",
+"$66^\\circ$",
+"$68^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-041",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 3,
+"body": "$\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 변 $AC$ 위의 점 $D$와 변 $AB$ 위의 점 $E$에 대하여 $\\overline{AB} \\perp \\overline{DE}$, $\\overline{BC} = \\overline{BE}$이다. $\\angle DBC = 24^\\circ$, $\\overline{DE} = 7\\,\\mathrm{cm}$일 때, $\\angle ADE$의 크기를 $x^\\circ$, $\\overline{CD}$의 길이를 $y\\,\\mathrm{cm}$라 하자. 이때 $x + y$의 값을 구하시오.\n[[그림:/figs/exam-m22/con041.png]]",
+"solution": "[1단계] $\\triangle DBC$와 $\\triangle DBE$에서 $\\angle DCB = \\angle DEB = 90^\\circ$, $\\overline{BD}$는 공통, $\\overline{BC} = \\overline{BE}$이므로 $\\triangle DBC \\equiv \\triangle DBE$ (RHS 합동)이다.\n[2단계] 따라서 $\\angle DBE = \\angle DBC = 24^\\circ$이고 $\\overline{CD} = \\overline{DE} = 7\\,\\mathrm{cm}$이므로 $y = 7$이다.\n[3단계] $\\angle B = 24^\\circ \\times 2 = 48^\\circ$이므로 $\\angle A = 90^\\circ - 48^\\circ = 42^\\circ$이다.\n[4단계] $\\triangle ADE$에서 $\\angle AED = 90^\\circ$이므로 $\\angle ADE = 90^\\circ - 42^\\circ = 48^\\circ$, 즉 $x = 48$이다.\n[5단계] 따라서 $x + y = 48 + 7 = 55$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$51$",
+"$53$",
+"$55$",
+"$57$",
+"$59$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-042",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 3,
+"body": "∠C = 90° 인 직각삼각형 ABC에서 ∠B = 22.5° 이다. 선분 BC 위의 점 D에 대하여 AD = BD 일 때, AC = 6 cm 이면 선분 CD 의 길이는?",
+"solution": "- △ABD는 AD = BD 인 이등변삼각형이므로 ∠DAB = ∠B = 22.5° 이다.\n- 삼각형의 외각 성질에 의해 외각 ∠ADC = ∠DAB + ∠B = 45° 이다.\n- △ADC에서 ∠C = 90°, ∠ADC = 45° 이므로 나머지 한 각 ∠DAC = 45° 가 된다.\n- 두 밑각의 크기가 같으므로 △ADC는 CD = AC 인 직각이등변삼각형이다.\n- 따라서 CD = AC = 6 cm 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"3 cm",
+"4 cm",
+"6 cm",
+"8 cm",
+"12 cm"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-043",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 3,
+"body": "다음 그림과 같이 $\\angle BAC = 90^\\circ$, $\\overline{AB} = \\overline{AC}$인 직각이등변삼각형 $ABC$의 두 꼭짓점 $B$, $C$에서 꼭짓점 $A$를 지나는 직선 $l$에 내린 수선의 발을 각각 $D$, $E$라 하자. 선분 $DE$의 길이가 $21\\,\\mathrm{cm}$이고, $\\overline{BD} - \\overline{CE} = 5\\,\\mathrm{cm}$일 때, 사다리꼴 $DBCE$의 넓이를 구하는 과정을 서술하시오. (단, $\\overline{BD} > \\overline{CE}$이고 점 $A$는 선분 $DE$ 위에 있다.)\n[[그림:/figs/exam-m22/con043.png]]",
+"solution": "[1단계] $\\triangle ABD \\equiv \\triangle CAE$ 임을 증명하기\n$\\triangle ABD$와 $\\triangle CAE$에서\n$\\angle ADB = \\angle CEA = 90^\\circ$, 빗변 $\\overline{AB} = \\overline{CA}$ 이다.\n직선 $l$ 위의 점 $A$에서 $\\angle DAB + \\angle BAC + \\angle EAC = 180^\\circ$ 이고 $\\angle BAC = 90^\\circ$ 이므로 $\\angle DAB + \\angle EAC = 90^\\circ$ 이다.\n또한 직각삼각형 $ABD$에서 $\\angle DAB + \\angle ABD = 90^\\circ$ 이므로 $\\angle ABD = \\angle CAE$ 이다.\n따라서 $\\triangle ABD \\equiv \\triangle CAE$ (RHA 합동) 이다.\n[2단계] $\\overline{BD}$와 $\\overline{CE}$의 길이를 각각 구하기\n합동인 두 삼각형의 대응변의 길이는 같으므로 $\\overline{AD} = \\overline{CE}$, $\\overline{BD} = \\overline{AE}$ 이다.\n$\\overline{DE} = \\overline{AD} + \\overline{AE} = \\overline{CE} + \\overline{BD} = 21\\,\\mathrm{cm}$ 이다.\n주어진 조건 $\\overline{BD} - \\overline{CE} = 5\\,\\mathrm{cm}$ 와 연립하여 풀면,\n$(\\overline{CE} + 5) + \\overline{CE} = 21 \\implies 2\\overline{CE} = 16 \\implies \\overline{CE} = 8\\,\\mathrm{cm}$ 이다.\n따라서 $\\overline{BD} = 21 - 8 = 13\\,\\mathrm{cm}$ 이다.\n[3단계] 사다리꼴 $DBCE$의 넓이 구하기\n사다리꼴 $DBCE$의 넓이는 $\\dfrac{1}{2} \\times (\\overline{BD} + \\overline{CE}) \\times \\overline{DE}$ 이다.\n$\\dfrac{1}{2} \\times (13 + 8) \\times 21 = \\dfrac{1}{2} \\times 21 \\times 21 = \\dfrac{441}{2} = 220.5\\,\\mathrm{cm^2}$ 이다.\n\n[채점 기준]\n- [4점] 두 직각삼각형이 합동임을 정확한 이유(RHA 합동)를 들어 설명함\n- [4점] 대응변의 성질과 주어진 조건을 연립하여 $\\overline{BD}$와 $\\overline{CE}$의 길이를 각각 바르게 구함\n- [2점] 사다리꼴의 넓이 공식을 이용하여 최종 넓이를 바르게 구함",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$220.5\\,\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-044",
+"typeId": "exam-m22-u0m0s2t2",
+"twinGroup": "tw-exam-m22-u0m0s2t2",
+"diff": 3,
+"body": "오른쪽 그림과 같이 $\\angle A = 90^\\circ$이고 $\\overline{AB} = \\overline{AC}$인 직각이등변삼각형 $ABC$의 꼭짓점 $A$를 지나는 직선 $l$ 위에 두 점 $B, C$에서 내린 수선의 발을 각각 $D, E$라 하자. $\\overline{BD} = 8\\,\\mathrm{cm}$, $\\overline{CE} = 6\\,\\mathrm{cm}$일 때, $\\triangle ABC$의 넓이를 구하는 과정을 서술하시오. (단, 세 점 $D, A, E$는 순서대로 직선 $l$ 위에 있다.)\n[[그림:/figs/exam-m22/con044.png]]",
+"solution": "1) $\\triangle ABD$와 $\\triangle CAE$에서 $\\angle BDA = \\angle AEC = 90^\\circ$이고, 문제의 조건에서 빗변 $\\overline{AB} = \\overline{CA}$이다.\n2) 세 점 $D, A, E$가 한 직선 위에 있으므로 $\\angle DAB + \\angle CAE = 180^\\circ - 90^\\circ = 90^\\circ$이다.\n또한 직각삼각형 $ABD$에서 $\\angle ABD + \\angle DAB = 90^\\circ$이므로 $\\angle ABD = \\angle CAE$가 성립한다.\n3) 따라서 직각삼각형의 빗변의 길이와 한 예각의 크기가 각각 같으므로 $\\triangle ABD \\equiv \\triangle CAE$ (RHA 합동)이다.\n4) 합동인 두 삼각형의 대응변의 길이는 같으므로 $\\overline{AD} = \\overline{CE} = 6\\,\\mathrm{cm}$, $\\overline{AE} = \\overline{BD} = 8\\,\\mathrm{cm}$이다.\n5) 사다리꼴 $DBCE$의 넓이는 $\\dfrac{1}{2} \\times (\\overline{BD} + \\overline{CE}) \\times \\overline{DE} = \\dfrac{1}{2} \\times (8 + 6) \\times (6 + 8) = \\dfrac{1}{2} \\times 14 \\times 14 = 98\\,\\mathrm{cm^2}$이다.\n6) 두 직각삼각형 $\\triangle ABD$와 $\\triangle CAE$의 넓이는 각각 $\\dfrac{1}{2} \\times 8 \\times 6 = 24\\,\\mathrm{cm^2}$이다.\n7) 따라서 $\\triangle ABC$의 넓이는 사다리꼴 넓이에서 두 직각삼각형 넓이를 뺀 값인 $98 - (24 + 24) = 50\\,\\mathrm{cm^2}$이다.\n[채점 기준]\n1. $\\triangle ABD \\equiv \\triangle CAE$ 임을 논리적으로 보이고 합동 조건(RHA)을 정확히 제시하기 (30%)\n2. 합동의 성질을 이용하여 $\\overline{AD}$, $\\overline{AE}$의 길이를 바르게 구하기 (20%)\n3. 사다리꼴 $DBCE$의 전체 넓이를 바르게 계산하기 (20%)\n4. 전체 넓이에서 두 삼각형 넓이를 빼서 $\\triangle ABC$의 넓이를 바르게 구하기 (30%)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$50\\,\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-045",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 1,
+"body": "∠XOY 의 이등분선 위의 한 점 P에서 두 변 OX, OY에 내린 수선의 발을 각각 A, B라 하자. PA = 5 cm, OA = 12 cm 일 때, △PBO 의 둘레의 길이는? (단, OP = 13 cm 이다.)",
+"solution": "- △PAO와 △PBO에서 ∠PAO = ∠PBO = 90°, 빗변 OP는 공통, 각의 이등분선이므로 ∠POA = ∠POB 이다.\n- 따라서 △PAO ≡ △PBO (RHA 합동) 이다.\n- 합동이므로 PB = PA = 5 cm, OB = OA = 12 cm 이다.\n- △PBO의 둘레 = PB + OB + OP = 5 + 12 + 13 = 30 cm 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"25 cm",
+"28 cm",
+"30 cm",
+"32 cm",
+"34 cm"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-046",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 1,
+"body": "$\\angle XOY$의 이등분선 위의 한 점 $P$에서 두 변 $OX$, $OY$에 내린 수선의 발을 각각 $A$, $B$라 하자. $\\overline{PA} = 6\\mathrm{cm}$일 때, $\\overline{PB}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con046.png]]",
+"solution": "[1단계] 각의 이등분선 위의 한 점에서 그 각을 이루는 두 변까지의 거리는 서로 같다.\n[2단계] 따라서 $\\overline{PB} = \\overline{PA} = 6\\mathrm{cm}$이다.\n따라서 답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$",
+"$8\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-047",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 1,
+"body": "다음 그림과 같이 $\\angle XOY$의 내부의 한 점 $P$에서 두 변 $OX$, $OY$에 내린 수선의 발을 각각 $A$, $B$라 하자. $\\overline{PA} = \\overline{PB}$일 때, 다음 중 옳지 않은 것은?\n[[그림:/figs/exam-m22/con047.png]]",
+"solution": "$\\triangle AOP$와 $\\triangle BOP$에서\n$\\angle PAO = \\angle PBO = 90^\\circ$ (R)\n빗변 $\\overline{OP}$는 공통 (H)\n조건에서 $\\overline{PA} = \\overline{PB}$ (S)\n따라서 $\\triangle AOP \\equiv \\triangle BOP$ (RHS 합동) 이다. (② 참)\n합동인 두 삼각형의 대응하는 각과 변의 크기는 각각 같으므로 $\\overline{OA} = \\overline{OB}$, $\\angle AOP = \\angle BOP$ 이다. (①, ③, ④ 참)\n수선의 발을 내렸으므로 $90^\\circ$인 각은 $\\angle PAO$와 $\\angle PBO$이다. $\\angle APO$와 $\\angle BPO$가 $90^\\circ$인 것은 아니다. 따라서 ⑤는 옳지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{OA} = \\overline{OB}$",
+"$\\triangle AOP \\equiv \\triangle BOP$",
+"$\\angle AOP = \\angle BOP$",
+"반직선 $OP$는 $\\angle XOY$를 이등분한다.",
+"$\\angle APO = \\angle BPO = 90^\\circ$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-048",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 2,
+"body": "$\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\angle A$의 이등분선과 변 $BC$의 교점을 $D$라 하자. $\\overline{AB} = 15\\,\\mathrm{cm}$, $\\overline{CD} = 4\\,\\mathrm{cm}$일 때, $\\triangle ABD$의 넓이를 구하시오.\n[[그림:/figs/exam-m22/con048.png]]",
+"solution": "[1단계] 점 $D$에서 빗변 $\\overline{AB}$에 내린 수선의 발을 $E$라 하면, 각의 이등분선의 성질(RHA 합동)에 의하여 $\\overline{DE} = \\overline{CD} = 4\\,\\mathrm{cm}$이다.\n[2단계] $\\triangle ABD$에서 변 $\\overline{AB}$를 밑변으로 하고 $\\overline{DE}$를 높이로 보면, 넓이는 $\\dfrac{1}{2} \\times \\overline{AB} \\times \\overline{DE} = \\dfrac{1}{2} \\times 15 \\times 4 = 30\\,\\mathrm{cm^2}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20\\,\\mathrm{cm^2}$",
+"$25\\,\\mathrm{cm^2}$",
+"$30\\,\\mathrm{cm^2}$",
+"$35\\,\\mathrm{cm^2}$",
+"$40\\,\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-049",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\angle B = 90^\\circ$인 직각삼각형 $\\triangle ABC$에서 $\\angle C$의 이등분선과 변 $\\overline{AB}$의 교점을 $D$라 하자. $\\overline{AC} = 15\\mathrm{cm}$이고 $\\triangle ADC$의 넓이가 $30\\mathrm{cm^2}$일 때, 선분 $\\overline{BD}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con049.png]]",
+"solution": "[1단계] 점 $D$에서 변 $\\overline{AC}$에 내린 수선의 발을 $E$라 하면, 각의 이등분선의 성질에 의하여 $\\triangle BCD \\equiv \\triangle ECD$ (RHA 합동)이다.\n[2단계] 따라서 $\\overline{DE} = \\overline{BD}$이다.\n[3단계] $\\triangle ADC$의 넓이는 $\\dfrac{1}{2} \\times \\overline{AC} \\times \\overline{DE} = 30$이므로 $\\dfrac{1}{2} \\times 15 \\times \\overline{DE} = 30$에서 $\\overline{DE} = 4\\mathrm{cm}$이다.\n[4단계] 그러므로 $\\overline{BD} = \\overline{DE} = 4\\mathrm{cm}$이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$",
+"$7\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-050",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\angle A$의 이등분선과 변 $BC$의 교점을 $D$라 하자. $\\overline{AB} = 20\\,\\mathrm{cm}$, $\\overline{AC} = 12\\,\\mathrm{cm}$이고 $\\triangle ABC$의 넓이가 $96\\,\\mathrm{cm^2}$일 때, $\\triangle ABD$의 넓이는?\n[[그림:/figs/exam-m22/con050.png]]",
+"solution": "점 $D$에서 $\\overline{AB}$에 내린 수선의 발을 $E$라 하면,\n각의 이등분선 위의 임의의 점에서 그 각을 이루는 두 변까지의 거리는 같으므로 $\\triangle ACD \\equiv \\triangle AED$ (RHA 합동) 가 되어 $\\overline{DC} = \\overline{DE}$ 이다.\n$\\triangle ABC$의 넓이는 $\\dfrac{1}{2} \\times \\overline{AC} \\times \\overline{BC} = \\dfrac{1}{2} \\times 12 \\times \\overline{BC} = 96\\,\\mathrm{cm^2}$ 이므로 $\\overline{BC} = 16\\,\\mathrm{cm}$ 이다.\n$\\triangle ABD$의 넓이는 $\\dfrac{1}{2} \\times \\overline{AB} \\times \\overline{DE} = \\dfrac{1}{2} \\times 20 \\times \\overline{DE} = 10 \\overline{DE}$ 이고,\n$\\triangle ACD$의 넓이는 $\\dfrac{1}{2} \\times \\overline{AC} \\times \\overline{DC} = \\dfrac{1}{2} \\times 12 \\times \\overline{DC} = 6 \\overline{DC}$ 이다.\n$\\triangle ABC = \\triangle ABD + \\triangle ACD$ 이고 $\\overline{DC} = \\overline{DE}$ 이므로\n$96 = 10 \\overline{DC} + 6 \\overline{DC} = 16 \\overline{DC}$ 가 되어 $\\overline{DC} = 6\\,\\mathrm{cm}$ 이다.\n따라서 $\\triangle ABD$의 넓이는 $10 \\times 6 = 60\\,\\mathrm{cm^2}$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$50\\,\\mathrm{cm^2}$",
+"$54\\,\\mathrm{cm^2}$",
+"$56\\,\\mathrm{cm^2}$",
+"$60\\,\\mathrm{cm^2}$",
+"$64\\,\\mathrm{cm^2}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-051",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 2,
+"body": "$\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\angle B$의 이등분선이 $\\overline{AC}$와 만나는 점을 $D$라 하자. $\\overline{AB} = 10\\,\\mathrm{cm}$, $\\overline{BC} = 6\\,\\mathrm{cm}$이고 $\\triangle ABD$의 넓이가 $15\\,\\mathrm{cm^2}$일 때, $\\overline{CD}$의 길이는?\n[[그림:/figs/exam-m22/con051.png]]",
+"solution": "점 $D$에서 빗변 $\\overline{AB}$에 내린 수선의 발을 $E$라 하자.\n$\\triangle DBC$와 $\\triangle DBE$에서 $\\angle C = \\angle DEB = 90^\\circ$, 빗변 $\\overline{BD}$는 공통이고, $\\overline{BD}$가 $\\angle B$의 이등분선이므로 $\\angle DBC = \\angle DBE$이다.\n따라서 빗변의 길이와 한 예각의 크기가 각각 같으므로 $\\triangle DBC \\equiv \\triangle DBE$ (RHA 합동)이다.\n합동인 두 삼각형의 대응변의 길이는 같으므로 $\\overline{DE} = \\overline{DC}$이다.\n$\\triangle ABD$의 넓이는 밑변을 $\\overline{AB}$, 높이를 $\\overline{DE}$로 볼 수 있으므로\n$\\dfrac{1}{2} \\times \\overline{AB} \\times \\overline{DE} = 15$에 대입하면 $\\dfrac{1}{2} \\times 10 \\times \\overline{DE} = 15$가 된다.\n이를 계산하면 $\\overline{DE} = 3\\,\\mathrm{cm}$이다.\n따라서 구하는 $\\overline{CD}$의 길이는 $\\overline{DE}$와 같은 $3\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$3\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-052",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 3,
+"body": "다음 그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\angle B$의 이등분선이 변 $AC$와 만나는 점을 $D$라 하자. 점 $D$에서 변 $AB$에 내린 수선의 발을 $E$라 할 때, $\\overline{AB} = 25\\,\\mathrm{cm}$, $\\overline{BC} = 15\\,\\mathrm{cm}$, $\\overline{AC} = 20\\,\\mathrm{cm}$이다. $\\triangle ADE$의 둘레의 길이는?\n[[그림:/figs/exam-m22/con052.png]]",
+"solution": "$\\triangle BCD$와 $\\triangle BED$에서\n$\\angle C = \\angle BED = 90^\\circ$, 빗변 $\\overline{BD}$는 공통, $\\angle CBD = \\angle EBD$ 이므로 $\\triangle BCD \\equiv \\triangle BED$ (RHA 합동) 이다.\n합동인 두 삼각형의 대응변의 길이는 같으므로 $\\overline{DE} = \\overline{DC}$ 이고, $\\overline{BE} = \\overline{BC} = 15\\,\\mathrm{cm}$ 이다.\n$\\overline{AE} = \\overline{AB} - \\overline{BE} = 25 - 15 = 10\\,\\mathrm{cm}$ 이다.\n구하고자 하는 $\\triangle ADE$의 둘레의 길이는\n$\\overline{AE} + \\overline{DE} + \\overline{AD} = \\overline{AE} + \\overline{DC} + \\overline{AD}$\n$= \\overline{AE} + (\\overline{DC} + \\overline{AD}) = \\overline{AE} + \\overline{AC}$\n$= 10 + 20 = 30\\,\\mathrm{cm}$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$26\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$",
+"$30\\,\\mathrm{cm}$",
+"$32\\,\\mathrm{cm}$",
+"$34\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-053",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 3,
+"body": "$\\angle XOY$의 이등분선 위에 점 $P$가 있다. 점 $P$에서 두 변 $OX$, $OY$에 내린 수선의 발을 각각 $A$, $B$라 하자. $\\overline{PA} = 6\\,\\mathrm{cm}$, $\\overline{OA} = 8\\,\\mathrm{cm}$, $\\overline{OP} = 10\\,\\mathrm{cm}$일 때, $\\triangle POB$의 둘레의 길이를 구하시오.\n[[그림:/figs/exam-m22/con053.png]]",
+"solution": "[1단계] $\\triangle POA$와 $\\triangle POB$에서 $\\angle PAO = \\angle PBO = 90^\\circ$, $\\overline{OP}$는 공통, $\\angle POA = \\angle POB$이므로 $\\triangle POA \\equiv \\triangle POB$ (RHA 합동)이다.\n[2단계] 대응변의 길이가 같으므로 $\\overline{PB} = \\overline{PA} = 6\\,\\mathrm{cm}$, $\\overline{OB} = \\overline{OA} = 8\\,\\mathrm{cm}$이다.\n[3단계] 따라서 $\\triangle POB$의 둘레의 길이는 $\\overline{OB} + \\overline{BP} + \\overline{OP} = 8 + 6 + 10 = 24\\,\\mathrm{cm}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20\\,\\mathrm{cm}$",
+"$22\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$26\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-054",
+"typeId": "exam-m22-u0m0s3t2",
+"twinGroup": "tw-exam-m22-u0m0s3t2",
+"diff": 3,
+"body": "오른쪽 그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\angle A$의 이등분선과 변 $\\overline{BC}$의 교점을 $D$라 하고, 점 $D$에서 빗변 $\\overline{AB}$에 내린 수선의 발을 $E$라 하자. $\\overline{AC} = 9\\,\\mathrm{cm}$, $\\overline{BC} = 12\\,\\mathrm{cm}$, $\\overline{AB} = 15\\,\\mathrm{cm}$일 때, $\\triangle EBD$의 둘레의 길이를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con054.png]]",
+"solution": "1) $\\triangle ACD$와 $\\triangle AED$에서 $\\angle C = \\angle AED = 90^\\circ$이고, 빗변 $\\overline{AD}$는 공통이며, 선분 $AD$가 $\\angle A$의 이등분선이므로 $\\angle CAD = \\angle EAD$이다.\n2) 따라서 직각삼각형의 빗변의 길이와 한 예각의 크기가 각각 같으므로 $\\triangle ACD \\equiv \\triangle AED$ (RHA 합동)이다.\n3) 합동인 두 삼각형의 대응변의 길이는 같으므로 $\\overline{AE} = \\overline{AC} = 9\\,\\mathrm{cm}$이고, $\\overline{ED} = \\overline{CD}$이다.\n4) 선분 $AB$의 길이가 $15\\,\\mathrm{cm}$이므로 $\\overline{BE} = \\overline{AB} - \\overline{AE} = 15 - 9 = 6\\,\\mathrm{cm}$이다.\n5) $\\triangle EBD$의 둘레의 길이는 $\\overline{BE} + \\overline{ED} + \\overline{DB}$이다.\n이때 $\\overline{ED} = \\overline{CD}$이므로, $\\overline{BE} + \\overline{CD} + \\overline{DB} = \\overline{BE} + (\\overline{CD} + \\overline{DB}) = \\overline{BE} + \\overline{BC}$가 된다.\n6) 선분 $BC$의 길이가 $12\\,\\mathrm{cm}$이므로 $\\triangle EBD$의 둘레의 길이는 $6 + 12 = 18\\,\\mathrm{cm}$이다.\n[채점 기준]\n1. $\\triangle ACD \\equiv \\triangle AED$ 임을 논리적으로 보이고 합동 조건(RHA)을 정확히 제시하기 (30%)\n2. 합동의 성질을 이용하여 $\\overline{AE}$의 길이와 $\\overline{ED} = \\overline{CD}$임을 바르게 서술하기 (30%)\n3. 선분의 길이의 합을 치환하여 $\\triangle EBD$의 둘레의 길이를 바르게 구하기 (40%)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$18\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-055",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 1,
+"body": "다음 중 삼각형의 외심에 대한 설명으로 옳지 않은 것은?",
+"solution": "예각삼각형의 외심은 삼각형의 내부에, 직각삼각형의 외심은 빗변의 중점에, 둔각삼각형의 외심은 삼각형의 외부에 위치한다. 따라서 모든 삼각형의 외심이 내부에 있는 것은 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"삼각형의 세 변의 수직이등분선은 한 점(외심)에서 만난다.",
+"외심에서 세 꼭짓점에 이르는 거리는 모두 같다.",
+"둔각삼각형의 외심은 삼각형의 외부에 위치한다.",
+"직각삼각형의 외심은 빗변의 중점과 일치한다.",
+"모든 삼각형의 외심은 항상 삼각형의 내부에 위치한다."
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-056",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 1,
+"body": "다음 중 삼각형의 외심에 대한 설명으로 옳은 것만을 〈보기〉에서 있는 대로 고른 것은?\n〈보기〉\nㄱ. 삼각형의 세 변의 수직이등분선은 한 점에서 만나며, 이 점이 외심이다.\nㄴ. 삼각형의 외심에서 세 변에 이르는 거리는 서로 같다.\nㄷ. 둔각삼각형의 외심은 항상 삼각형의 내부에 위치한다.",
+"solution": "[1단계] ㄱ은 삼각형의 외심의 정의 및 성질로 옳다. 세 변의 수직이등분선의 교점이 외심이다.\n[2단계] ㄴ은 내심에 대한 성질이다. 외심에서 세 «꼭짓점»에 이르는 거리가 같다(변에 이르는 거리는 내심).\n[3단계] ㄷ에서 둔각삼각형의 외심은 삼각형의 «외부»에 위치한다(내부에 위치하는 것은 항상 내심이다).\n따라서 옳은 것은 ㄱ뿐이다.\n따라서 답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-057",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 1,
+"body": "다음은 삼각형의 세 변의 수직이등분선이 한 점에서 만남을 증명하는 과정의 일부이다. $\\triangle ABC$에서 변 $\\overline{AB}$와 변 $\\overline{BC}$의 수직이등분선의 교점을 $O$라 하고, 점 $O$에서 변 $\\overline{AC}$에 내린 수선의 발을 $D$라 할 때, $\\triangle OAD \\equiv \\triangle OCD$를 성립하게 하는 합동 조건으로 가장 알맞은 것은?\n[[그림:/figs/exam-m22/con057.png]]",
+"solution": "[1단계] 점 $O$는 변 $\\overline{AB}$의 수직이등분선 위에 있으므로 $\\overline{OA} = \\overline{OB}$이고, 변 $\\overline{BC}$의 수직이등분선 위에 있으므로 $\\overline{OB} = \\overline{OC}$이다. 따라서 $\\overline{OA} = \\overline{OC}$가 성립한다.\n[2단계] $\\triangle OAD$와 $\\triangle OCD$는 $\\angle ODA = \\angle ODC = 90^\\circ$인 직각삼각형이다.\n[3단계] 빗변 $\\overline{OA} = \\overline{OC}$이고, 선분 $\\overline{OD}$가 공통이므로 직각삼각형의 빗변의 길이와 다른 한 변의 길이가 각각 같은 $\\text{RHS}$ 합동이 성립한다.\n따라서 답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\text{SSS}$ 합동",
+"$\\text{SAS}$ 합동",
+"$\\text{ASA}$ 합동",
+"$\\text{RHA}$ 합동",
+"$\\text{RHS}$ 합동"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-058",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 1,
+"body": "점 $O$가 $\\triangle ABC$의 외심일 때, 다음 중 옳지 않은 것은?",
+"solution": "[1단계] 삼각형의 외심은 세 변의 수직이등분선의 교점이며, 세 꼭짓점에 이르는 거리가 모두 같다.\n[2단계] 따라서 $\\overline{OA} = \\overline{OB} = \\overline{OC}$가 성립하며, $\\triangle OAB$, $\\triangle OBC$, $\\triangle OCA$는 각각 이등변삼각형이 된다. \n[3단계] ④번의 '세 변에 이르는 거리가 같은 점'은 삼각형의 내심($I$)에 대한 설명이므로 옳지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"외심 $O$는 세 변의 수직이등분선의 교점이다.",
+"$\\overline{OA} = \\overline{OB} = \\overline{OC}$",
+"$\\triangle OAB$, $\\triangle OBC$, $\\triangle OCA$는 모두 이등변삼각형이다.",
+"외심 $O$에서 세 변에 이르는 거리는 모두 같다.",
+"직각삼각형의 외심은 빗변의 중점이다."
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-059",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 1,
+"body": "그림과 같이 $\\angle A = 90^\\circ$인 직각삼각형 $ABC$에서 빗변 $\\overline{BC}$의 길이가 $18\\mathrm{cm}$이다. 이 삼각형의 외접원의 둘레의 길이는?\n[[그림:/figs/exam-m22/con059.png]]",
+"solution": "[1단계] 직각삼각형의 외심은 빗변의 중점이다.\n[2단계] 외접원의 중심이 빗변 $\\overline{BC}$의 중점이므로, 빗변 $\\overline{BC}$가 바로 외접원의 지름이 된다.\n[3단계] 지름의 길이가 $18\\mathrm{cm}$이므로, 외접원의 둘레의 길이는 $18 \\times \\pi = 18\\pi(\\mathrm{cm})$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$9\\pi\\,\\mathrm{cm}$",
+"$12\\pi\\,\\mathrm{cm}$",
+"$16\\pi\\,\\mathrm{cm}$",
+"$18\\pi\\,\\mathrm{cm}$",
+"$36\\pi\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-060",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 1,
+"body": "그림에서 점 $O$는 예각삼각형 $ABC$의 외심이다. $\\angle OAB = 34^\\circ$, $\\angle OCB = 26^\\circ$일 때, $\\angle OAC$의 크기는?\n[[그림:/figs/exam-m22/con060.png]]",
+"solution": "[1단계] 점 $O$가 $\\triangle ABC$의 외심일 때, 세 이등변삼각형의 밑각에 대해 $\\angle OAB + \\angle OBC + \\angle OCA = 90^\\circ$가 성립한다.\n[2단계] $\\triangle OBC$는 $\\overline{OB} = \\overline{OC}$인 이등변삼각형이므로 $\\angle OBC = \\angle OCB = 26^\\circ$이다.\n[3단계] $\\triangle OCA$는 $\\overline{OA} = \\overline{OC}$인 이등변삼각형이므로 $\\angle OCA = \\angle OAC$이다.\n[4단계] 따라서 $34^\\circ + 26^\\circ + \\angle OAC = 90^\\circ$이므로 $\\angle OAC = 30^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20^\\circ$",
+"$25^\\circ$",
+"$30^\\circ$",
+"$34^\\circ$",
+"$40^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-061",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림과 같이 $\\angle B = 90^\\circ$인 직각삼각형 $ABC$에서 점 $M$은 빗변 $AC$의 중점이다. $\\overline{AB} = 8\\mathrm{cm}$, $\\overline{BC} = 15\\mathrm{cm}$, $\\overline{AC} = 17\\mathrm{cm}$일 때, $\\triangle ABM$의 둘레의 길이를 구하시오.\n[[그림:/figs/exam-m22/con061.png]]",
+"solution": "직각삼각형의 빗변의 중점 $M$은 이 삼각형의 외심과 같다.\n외심에서 삼각형의 세 꼭짓점에 이르는 거리는 같으므로, $\\overline{AM} = \\overline{BM} = \\overline{CM} = \\frac{1}{2}\\overline{AC} = \\frac{17}{2} = 8.5\\mathrm{cm}$이다.\n따라서 $\\triangle ABM$의 둘레의 길이는 $\\overline{AB} + \\overline{AM} + \\overline{BM} = 8 + 8.5 + 8.5 = 25\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$22\\mathrm{cm}$",
+"$24\\mathrm{cm}$",
+"$25\\mathrm{cm}$",
+"$28\\mathrm{cm}$",
+"$30\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-062",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림에서 점 $O$는 $\\triangle ABC$의 외심이다. $\\angle OAB = 28^\\circ$, $\\angle OCB = 36^\\circ$일 때, $\\angle AOC$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con062.png]]",
+"solution": "점 $O$는 $\\triangle ABC$의 외심이므로 $\\triangle OAB$, $\\triangle OBC$, $\\triangle OCA$는 모두 이등변삼각형이다.\n$\\triangle OAB$에서 $\\overline{OA} = \\overline{OB}$이므로 $\\angle OBA = \\angle OAB = 28^\\circ$이다.\n$\\triangle OBC$에서 $\\overline{OB} = \\overline{OC}$이므로 $\\angle OBC = \\angle OCB = 36^\\circ$이다.\n따라서 $\\angle B = \\angle OBA + \\angle OBC = 28^\\circ + 36^\\circ = 64^\\circ$이다.\n외심의 성질에 의해 $\\angle AOC = 2\\angle B = 2 \\times 64^\\circ = 128^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$120^\\circ$",
+"$124^\\circ$",
+"$128^\\circ$",
+"$132^\\circ$",
+"$136^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-063",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림과 같이 점 $\\mathrm{O}$가 $\\triangle\\mathrm{ABC}$의 외심이고, $\\angle\\mathrm{OBA} = 32^\\circ$, $\\angle\\mathrm{OCA} = 24^\\circ$일 때, $\\angle\\mathrm{OBC}$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con063.png]]",
+"solution": "[1단계] 점 $\\mathrm{O}$가 외심이므로 $\\overline{OA} = \\overline{OB} = \\overline{OC}$이고, $\\triangle\\mathrm{OAB}$, $\\triangle\\mathrm{OBC}$, $\\triangle\\mathrm{OCA}$는 모두 이등변삼각형이다.\n[2단계] 따라서 $\\angle\\mathrm{OAB} = \\angle\\mathrm{OBA} = 32^\\circ$, $\\angle\\mathrm{OAC} = \\angle\\mathrm{OCA} = 24^\\circ$, $\\angle\\mathrm{OCB} = \\angle\\mathrm{OBC}$이다.\n[3단계] $\\triangle\\mathrm{ABC}$의 세 내각의 크기의 합은 $180^\\circ$이므로 $2(\\angle\\mathrm{OBA} + \\angle\\mathrm{OBC} + \\angle\\mathrm{OCA}) = 180^\\circ$, 즉 $\\angle\\mathrm{OBA} + \\angle\\mathrm{OBC} + \\angle\\mathrm{OCA} = 90^\\circ$이다.\n[4단계] $32^\\circ + \\angle\\mathrm{OBC} + 24^\\circ = 90^\\circ$이므로 $\\angle\\mathrm{OBC} = 34^\\circ$이다.\n따라서 답은 $34^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$34^\\circ$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-064",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림과 같이 $\\angle\\mathrm{C} = 90^\\circ$인 직각삼각형 $\\triangle\\mathrm{ABC}$에서 빗변 $\\overline{AB}$의 길이를 $\\mathrm{14\\,cm}$라 할 때, 이 직각삼각형의 외심 $\\mathrm{O}$에서 꼭짓점 $\\mathrm{C}$까지의 거리 $\\overline{OC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con064.png]]",
+"solution": "[1단계] 직각삼각형의 외심은 항상 «빗변의 중점»에 위치한다.\n[2단계] 점 $\\mathrm{O}$가 빗변 $\\overline{AB}$의 중점이므로 $\\overline{OA} = \\overline{OB} = \\overline{OC}$가 성립하며, 이는 외접원의 반지름의 길이와 같다.\n[3단계] 따라서 $\\overline{OC} = \\dfrac{1}{2} \\times \\overline{AB} = \\dfrac{1}{2} \\times 14 = \\mathrm{7\\,cm}$이다.\n따라서 답은 $7\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$7\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-065",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "오른쪽 그림에서 점 $O$는 $\\triangle ABC$의 외심이다. $\\angle OAB = 28^\\circ$, $\\angle OCB = 30^\\circ$일 때, $\\angle OAC$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con065.png]]",
+"solution": "[1단계] 점 $O$가 $\\triangle ABC$의 외심이므로 $\\overline{OA} = \\overline{OB} = \\overline{OC}$이고, $\\triangle OAB$, $\\triangle OBC$, $\\triangle OCA$는 모두 이등변삼각형이다.\n[2단계] 따라서 $\\angle OBA = \\angle OAB = 28^\\circ$, $\\angle OBC = \\angle OCB = 30^\\circ$, $\\angle OAC = \\angle OCA$이다.\n[3단계] 삼각형의 세 내각의 크기의 합이 $180^\\circ$이므로 $\\angle OAB + \\angle OBC + \\angle OCA = 90^\\circ$, 즉 $28^\\circ + 30^\\circ + \\angle OCA = 90^\\circ$이다.\n[4단계] 따라서 $\\angle OAC = \\angle OCA = 32^\\circ$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$28^\\circ$",
+"$30^\\circ$",
+"$32^\\circ$",
+"$36^\\circ$",
+"$40^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-066",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\overline{AB} = 20\\,\\mathrm{cm}$, $\\angle A = 60^\\circ$이다. 점 $O$가 $\\triangle ABC$의 외심일 때, 선분 $\\overline{OC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con066.png]]",
+"solution": "[1단계] 직각삼각형의 외심은 빗변의 중점에 위치한다.\n[2단계] 점 $O$가 빗변 $\\overline{AB}$의 중점이므로 $\\overline{OA} = \\overline{OB} = \\overline{OC} = \\dfrac{1}{2}\\overline{AB}$이다.\n[3단계] 따라서 $\\overline{OC} = \\dfrac{1}{2} \\times 20 = 10\\,\\mathrm{cm}$이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-067",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림에서 점 $O$는 $\\triangle ABC$의 외심이다. $\\angle OBA = 25^\\circ$, $\\angle OAC = 35^\\circ$일 때, $\\angle BOC$의 크기는?\n[[그림:/figs/exam-m22/con067.png]]",
+"solution": "[1단계] $\\triangle OAB$는 $\\overline{OA} = \\overline{OB}$인 이등변삼각형이므로 $\\angle OAB = \\angle OBA = 25^\\circ$이다.\n[2단계] 따라서 꼭지각 $\\angle A = \\angle OAB + \\angle OAC = 25^\\circ + 35^\\circ = 60^\\circ$이다.\n[3단계] 외심의 성질에 의해 $\\angle BOC = 2\\angle A$이므로, $\\angle BOC = 2 \\times 60^\\circ = 120^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$100^\\circ$",
+"$110^\\circ$",
+"$120^\\circ$",
+"$130^\\circ$",
+"$140^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-068",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림과 같이 예각삼각형 $ABC$의 외심을 $O$라 하자. $\\angle AOB : \\angle BOC : \\angle COA = 4 : 5 : 6$일 때, $\\angle B$의 크기는?\n[[그림:/figs/exam-m22/con068.png]]",
+"solution": "[1단계] 점 $O$를 중심으로 하는 한 바퀴의 각의 합은 $360^\\circ$이다.\n[2단계] $\\angle COA = 360^\\circ \\times \\dfrac{6}{4+5+6} = 360^\\circ \\times \\dfrac{6}{15} = 144^\\circ$이다.\n[3단계] 외심의 중심각 성질에 의해 $\\angle COA = 2\\angle B$가 성립하므로, $\\angle B = \\dfrac{144^\\circ}{2} = 72^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$54^\\circ$",
+"$60^\\circ$",
+"$72^\\circ$",
+"$84^\\circ$",
+"$90^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-069",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림과 같이 점 $O$는 $\\triangle ABC$의 외심이다. $\\angle A = 68^\\circ$일 때, $\\angle OBC$의 크기는?\n[[그림:/figs/exam-m22/con069.png]]",
+"solution": "[1단계] 외심의 성질에 따라 꼭지각과 중심각의 관계는 $\\angle BOC = 2\\angle A$이다.\n[2단계] $\\angle BOC = 2 \\times 68^\\circ = 136^\\circ$가 된다.\n[3단계] $\\triangle OBC$는 $\\overline{OB} = \\overline{OC}$인 이등변삼각형이므로, $\\angle OBC = \\dfrac{180^\\circ - 136^\\circ}{2} = \\dfrac{44^\\circ}{2} = 22^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$22^\\circ$",
+"$24^\\circ$",
+"$26^\\circ$",
+"$28^\\circ$",
+"$34^\\circ$"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-070",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 3,
+"body": "점 $O$는 $\\triangle ABC$의 외심이고, $\\overline{OA} = 7\\mathrm{cm}$이다. $\\triangle OAB$, $\\triangle OBC$, $\\triangle OCA$의 둘레의 길이의 합이 $72\\mathrm{cm}$일 때, $\\triangle ABC$의 둘레의 길이를 구하시오.",
+"solution": "[1단계] 점 $O$는 $\\triangle ABC$의 외심이므로 세 꼭짓점까지 이르는 거리가 같다. 즉, $\\overline{OA} = \\overline{OB} = \\overline{OC} = 7\\mathrm{cm}$이다.\n[2단계] 세 삼각형 $\\triangle OAB$, $\\triangle OBC$, $\\triangle OCA$의 둘레의 길이의 합은 다음과 같이 나타낼 수 있다.\n$(\\overline{AB} + \\overline{OA} + \\overline{OB}) + (\\overline{BC} + \\overline{OB} + \\overline{OC}) + (\\overline{CA} + \\overline{OC} + \\overline{OA})$\n$= (\\overline{AB} + \\overline{BC} + \\overline{CA}) + 2(\\overline{OA} + \\overline{OB} + \\overline{OC})$\n[3단계] 위 식에 각 선분의 길이를 대입하면,\n$(\\triangle ABC\\text{의 둘레}) + 2(7 + 7 + 7) = 72$\n$(\\triangle ABC\\text{의 둘레}) + 42 = 72$\n[4단계] 따라서 $\\triangle ABC$의 둘레의 길이는 $72 - 42 = 30(\\mathrm{cm})$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$24\\mathrm{cm}$",
+"$28\\mathrm{cm}$",
+"$30\\mathrm{cm}$",
+"$36\\mathrm{cm}$",
+"$42\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-071",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 3,
+"body": "점 $O$와 $I$는 각각 $\\angle A = 50^\\circ$이고 $\\overline{AB} = \\overline{AC}$인 이등변삼각형 $ABC$의 외심과 내심이다. 이때 $\\angle OBI$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con071.png]]",
+"solution": "이등변삼각형 $ABC$에서 $\\angle A = 50^\\circ$이므로 밑각의 크기는 $\\angle ABC = \\angle ACB = \\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$이다.\n점 $I$는 내심이므로 선분 $BI$는 $\\angle ABC$의 이등분선이다.\n따라서 $\\angle IBC = \\frac{1}{2} \\angle ABC = \\frac{1}{2} \\times 65^\\circ = 32.5^\\circ$이다.\n점 $O$는 외심이므로 외심각 $\\angle BOC = 2\\angle A = 2 \\times 50^\\circ = 100^\\circ$이다.\n또한 $\\triangle OBC$는 $\\overline{OB} = \\overline{OC}$인 이등변삼각형이므로\n$\\angle OBC = \\frac{180^\\circ - 100^\\circ}{2} = 40^\\circ$이다.\n따라서 구하는 각 $\\angle OBI = \\angle OBC - \\angle IBC = 40^\\circ - 32.5^\\circ = 7.5^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$5^\\circ$",
+"$7.5^\\circ$",
+"$10^\\circ$",
+"$12.5^\\circ$",
+"$15^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-072",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 3,
+"body": "그림과 같이 $\\angle\\mathrm{A} = 90^\\circ$, $\\overline{AB} = \\mathrm{12\\,cm}$, $\\overline{AC} = \\mathrm{16\\,cm}$인 직각삼각형 $\\triangle\\mathrm{ABC}$에서 점 $\\mathrm{O}$는 외심이다. 점 $\\mathrm{O}$와 꼭짓점 $\\mathrm{A}$를 이은 선분 $\\overline{OA}$로 만들어지는 삼각형 $\\triangle\\mathrm{ABO}$의 넓이를 구하시오.\n[[그림:/figs/exam-m22/con072.png]]",
+"solution": "[1단계] 직각삼각형의 외심은 빗변의 중점이므로 점 $\\mathrm{O}$는 빗변 $\\overline{BC}$의 중점이다.\n[2단계] 따라서 $\\overline{AO}$는 $\\triangle\\mathrm{ABC}$의 중선이고, $\\triangle\\mathrm{ABO}$와 $\\triangle\\mathrm{ACO}$는 밑변의 길이 $\\overline{BO} = \\overline{CO}$와 높이가 같으므로 넓이가 같다.\n[3단계] $\\triangle\\mathrm{ABC} = \\dfrac{1}{2} \\times 12 \\times 16 = 96\\,\\mathrm{cm^2}$이므로 $\\triangle\\mathrm{ABO} = \\dfrac{1}{2} \\times 96 = 48\\,\\mathrm{cm^2}$이다.\n따라서 답은 $48\\,\\mathrm{cm^2}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$48\\,\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-073",
+"typeId": "exam-m22-u0m1s0t2",
+"twinGroup": "tw-exam-m22-u0m1s0t2",
+"diff": 2,
+"body": "그림과 같이 $\\angle B = 90^\\circ$인 직각삼각형 $ABC$에서 점 $O$는 빗변 $AC$의 중점이다. $\\angle A = 52^\\circ$일 때, $\\angle OBC$의 크기를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con073.png]]",
+"solution": "[1단계] 점 $O$는 직각삼각형 $ABC$의 빗변 $AC$의 중점이므로, $\\triangle ABC$의 외심이다.\n[2단계] 외심에서 세 꼭짓점까지의 거리는 같으므로 $\\overline{OA} = \\overline{OB} = \\overline{OC}$이다. 따라서 $\\triangle OAB$는 이등변삼각형이 되어 $\\angle OBA = \\angle A = 52^\\circ$이다.\n[3단계] $\\angle B = 90^\\circ$이므로 $\\angle OBC = 90^\\circ - \\angle OBA = 90^\\circ - 52^\\circ = 38^\\circ$이다.\n\n[채점 기준]\n1. 점 $O$가 $\\triangle ABC$의 외심임을 서술하기 (2점)\n2. $\\triangle OAB$ 또는 $\\triangle OBC$가 이등변삼각형임을 이용하여 한 각의 크기 구하기 (3점)\n3. $\\angle OBC$의 크기를 올바르게 계산하기 (2점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$38^\\circ$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-074",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 1,
+"body": "그림의 점 $I$는 $\\triangle ABC$의 내심이다. 점 $I$에서 세 변 $\\overline{AB}$, $\\overline{BC}$, $\\overline{CA}$에 내린 수선의 발을 각각 $F$, $D$, $E$라 할 때, 다음 중 옳지 않은 것을 고르시오.\n[[그림:/figs/exam-m22/con074.png]]",
+"solution": "점 $I$는 $\\triangle ABC$의 내심이므로, 내심에서 세 변에 이르는 거리는 내접원의 반지름으로 같다. 즉, $\\overline{ID} = \\overline{IE} = \\overline{IF}$이다.\n$\\overline{IA} = \\overline{IB} = \\overline{IC}$는 삼각형의 꼭짓점까지 거리가 같은 외심의 성질이다. 따라서 ④번은 옳지 않다.\n또한 내심은 세 내각의 이등분선의 교점이므로 $\\triangle IBD \\equiv \\triangle IBF$ (RHA 합동) 등의 성질이 성립한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{ID} = \\overline{IE} = \\overline{IF}$",
+"$\\angle IAE = \\angle IAF$",
+"$\\triangle IBD \\equiv \\triangle IBF$",
+"$\\overline{IA} = \\overline{IB} = \\overline{IC}$",
+"삼각형의 세 내각의 이등분선은 한 점 $I$에서 만난다."
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-075",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 1,
+"body": "다음 중 삼각형의 내심에 대한 설명으로 옳지 않은 것은?",
+"solution": "[1단계] 직각삼각형의 외심이 빗변의 중점에 위치하며, 내심은 삼각형의 종류와 무관하게 «항상 삼각형의 내부»에 위치한다.\n[2단계] 따라서 ④번의 '직각삼각형의 내심은 빗변의 중점에 위치한다'는 설명은 외심의 성질을 잘못 적용한 오답이다.\n따라서 답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"삼각형의 세 내각의 이등분선은 한 점에서 만나며, 이 점이 내심이다.",
+"삼각형의 내심에서 세 변에 이르는 거리는 서로 같다.",
+"삼각형의 내심은 항상 삼각형의 내부에 위치한다.",
+"직각삼각형의 내심은 빗변의 중점에 위치한다.",
+"내심에서 세 변에 이르는 거리는 내접원의 반지름의 길이와 같다."
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-076",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 1,
+"body": "다음은 삼각형의 세 내각의 이등분선이 한 점에서 만남을 증명하는 과정의 일부이다. $\\triangle ABC$에서 $\\angle A$와 $\\angle B$의 이등분선의 교점을 $I$라 하고, 점 $I$에서 변 $\\overline{AB}$, $\\overline{BC}$, $\\overline{CA}$에 내린 수선의 발을 각각 $D, E, F$라 하자. 이때 $\\triangle ICE \\equiv \\triangle ICF$를 성립하게 하는 합동 조건으로 가장 알맞은 것은?\n[[그림:/figs/exam-m22/con076.png]]",
+"solution": "[1단계] 점 $I$는 $\\angle A$의 이등분선 위의 점이므로 $\\overline{ID} = \\overline{IF}$이고, $\\angle B$의 이등분선 위의 점이므로 $\\overline{ID} = \\overline{IE}$이다. 따라서 $\\overline{IE} = \\overline{IF}$이다.\n[2단계] $\\triangle ICE$와 $\\triangle ICF$는 $\\angle IEC = \\angle IFC = 90^\\circ$인 직각삼각형이다.\n[3단계] 빗변 $\\overline{IC}$가 공통이고 $\\overline{IE} = \\overline{IF}$이므로 빗변의 길이와 다른 한 변의 길이가 각각 같은 RHS 합동이다.\n따라서 답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\text{SSS}$ 합동",
+"$\\text{SAS}$ 합동",
+"$\\text{ASA}$ 합동",
+"$\\text{RHA}$ 합동",
+"$\\text{RHS}$ 합동"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-077",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 1,
+"body": "그림에서 점 $I$는 $\\triangle ABC$의 내심이다. $\\angle IAB = 32^\\circ$, $\\angle ICA = 28^\\circ$일 때, $\\angle BIC$의 크기는?\n[[그림:/figs/exam-m22/con077.png]]",
+"solution": "점 $I$는 내심이므로 세 내각의 이등분선의 교점입니다.\n$\\angle IAB + \\angle IBC + \\angle ICA = 90^\\circ$ 이므로,\n$32^\\circ + \\angle IBC + 28^\\circ = 90^\\circ$ 에서 $\\angle IBC = 30^\\circ$ 입니다.\n또한, $\\angle ICB = \\angle ICA = 28^\\circ$ 입니다.\n$\\triangle IBC$에서 세 각의 합은 $180^\\circ$이므로,\n$\\angle BIC = 180^\\circ - (\\angle IBC + \\angle ICB) = 180^\\circ - (30^\\circ + 28^\\circ) = 122^\\circ$ 입니다.\n(다른 풀이)\n$\\angle IAB = 32^\\circ$ 이므로 $\\angle A = 2 \\times 32^\\circ = 64^\\circ$\n$\\angle BIC = 90^\\circ + \\frac{1}{2}\\angle A = 90^\\circ + 32^\\circ = 122^\\circ$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$118^\\circ$",
+"$120^\\circ$",
+"$122^\\circ$",
+"$124^\\circ$",
+"$126^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-078",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "그림에서 점 $I$는 $\\triangle ABC$의 내심이다. $\\angle BIC = 118^\\circ$일 때, $\\angle A$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con078.png]]",
+"solution": "삼각형의 내심 $I$에 대하여 $\\angle BIC = 90^\\circ + \\frac{1}{2}\\angle A$가 성립한다.\n따라서 $118^\\circ = 90^\\circ + \\frac{1}{2}\\angle A$ 이고,\n$\\frac{1}{2}\\angle A = 28^\\circ$ 이므로,\n$\\angle A = 56^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$48^\\circ$",
+"$52^\\circ$",
+"$56^\\circ$",
+"$60^\\circ$",
+"$64^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-079",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "$\\triangle ABC$의 둘레의 길이가 $42\\mathrm{cm}$이고, 이 삼각형의 넓이가 $84\\mathrm{cm^2}$이다. $\\triangle ABC$의 내접원의 반지름의 길이를 구하시오.",
+"solution": "삼각형의 넓이를 $S$, 둘레의 길이를 $L$, 내접원의 반지름을 $r$이라 할 때, $S = \\frac{1}{2} r L$ 이 성립한다.\n$84 = \\frac{1}{2} \\times r \\times 42$\n$84 = 21r$\n따라서 $r = 4$ 이므로 내접원의 반지름의 길이는 $4\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$2\\mathrm{cm}$",
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-080",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "그림에서 점 $I$는 $\\triangle ABC$의 내심이고, 선분 $DE$는 변 $BC$에 평행하다. $\\overline{AB} = 10\\mathrm{cm}$, $\\overline{AC} = 12\\mathrm{cm}$, $\\overline{BC} = 14\\mathrm{cm}$일 때, $\\triangle ADE$의 둘레의 길이를 구하시오.\n[[그림:/figs/exam-m22/con080.png]]",
+"solution": "점 $I$가 $\\triangle ABC$의 내심이므로 $\\overline{BI}$, $\\overline{CI}$는 각각 $\\angle B$, $\\angle C$의 이등분선이다.\n$\\angle DBI = \\angle IBC$이고, $\\overline{DE} \\parallel \\overline{BC}$이므로 엇각의 크기가 같아 $\\angle DIB = \\angle IBC$이다.\n따라서 $\\angle DBI = \\angle DIB$이므로 $\\triangle DIB$는 $\\overline{DB} = \\overline{DI}$인 이등변삼각형이다.\n같은 방법으로 $\\triangle EIC$도 $\\overline{EC} = \\overline{EI}$인 이등변삼각형이다.\n$\\triangle ADE$의 둘레의 길이는\n$\\overline{AD} + \\overline{DE} + \\overline{EA} = \\overline{AD} + (\\overline{DI} + \\overline{IE}) + \\overline{EA}$\n$= \\overline{AD} + \\overline{DB} + \\overline{EC} + \\overline{EA} = \\overline{AB} + \\overline{AC}$가 된다.\n따라서 $\\triangle ADE$의 둘레의 길이는 $10 + 12 = 22\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20\\mathrm{cm}$",
+"$22\\mathrm{cm}$",
+"$24\\mathrm{cm}$",
+"$26\\mathrm{cm}$",
+"$28\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-081",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "그림과 같이 점 $\\mathrm{I}$가 $\\triangle\\mathrm{ABC}$의 내심이고 $\\angle\\mathrm{BIC} = 124^\\circ$일 때, $\\angle\\mathrm{A}$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con081.png]]",
+"solution": "[1단계] 점 $\\mathrm{I}$가 내심일 때, 내심이 만드는 각 공식에 의해 $\\angle\\mathrm{BIC} = 90^\\circ + \\dfrac{1}{2}\\angle\\mathrm{A}$가 성립한다.\n[2단계] 주어진 조건 $\\angle\\mathrm{BIC} = 124^\\circ$를 대입하면 $90^\\circ + \\dfrac{1}{2}\\angle\\mathrm{A} = 124^\\circ$이다.\n[3단계] $\\dfrac{1}{2}\\angle\\mathrm{A} = 34^\\circ$이므로 $\\angle\\mathrm{A} = 68^\\circ$이다.\n따라서 답은 $68^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$68^\\circ$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-082",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "그림과 같이 $\\triangle\\mathrm{ABC}$의 내접원이 세 변 $\\overline{AB}$, $\\overline{BC}$, $\\overline{CA}$와 만나는 접점을 각각 $\\mathrm{D}$, $\\mathrm{E}$, $\\mathrm{F}$라 하자. $\\overline{AB} = \\mathrm{10\\,cm}$, $\\overline{BC} = \\mathrm{12\\,cm}$, $\\overline{CA} = \\mathrm{8\\,cm}$일 때, 선분 $\\overline{AD}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con082.png]]",
+"solution": "[1단계] 원 밖의 한 점에서 그은 두 접선의 길이는 같으므로 $\\overline{AD} = \\overline{AF} = x$라 하자.\n[2단계] 접선의 길이에 의해 $\\overline{BD} = \\overline{BE} = 10 - x$, $\\overline{CE} = \\overline{CF} = 8 - x$이다.\n[3단계] $\\overline{BC} = \\overline{BE} + \\overline{CE}$이므로 $(10 - x) + (8 - x) = 12$이다.\n[4단계] $18 - 2x = 12$에서 $2x = 6$이므로 $\\overline{AD} = x = \\mathrm{3\\,cm}$이다.\n따라서 답은 $3\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$3\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-083",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "그림과 같이 점 $I$는 $\\triangle ABC$의 내심이고, 세 점 $D, E, F$는 내접원과 세 변의 접점이다. $\\triangle ABC$의 둘레의 길이가 $38\\mathrm{cm}$이고 $\\overline{AD} = 6\\mathrm{cm}$, $\\overline{BE} = 8\\mathrm{cm}$일 때, $\\overline{AC}$의 길이는?\n[[그림:/figs/exam-m22/con083.png]]",
+"solution": "원 밖의 한 점에서 원에 그은 두 접선의 길이는 같으므로\n$\\overline{AF} = \\overline{AD} = 6\\mathrm{cm}$, $\\overline{BD} = \\overline{BE} = 8\\mathrm{cm}$, $\\overline{CE} = \\overline{CF}$ 입니다.\n$\\triangle ABC$의 둘레의 길이는 $2(\\overline{AD} + \\overline{BE} + \\overline{CF})$ 이므로,\n$2(6 + 8 + \\overline{CF}) = 38$\n$14 + \\overline{CF} = 19 \\Rightarrow \\overline{CF} = 5\\mathrm{cm}$\n따라서 $\\overline{AC} = \\overline{AF} + \\overline{CF} = 6 + 5 = 11\\mathrm{cm}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$9\\mathrm{cm}$",
+"$10\\mathrm{cm}$",
+"$11\\mathrm{cm}$",
+"$12\\mathrm{cm}$",
+"$13\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-084",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "그림에서 점 $I$는 $\\triangle ABC$의 내심이고, 점 $I$를 지나며 변 $BC$에 평행한 직선이 두 변 $AB, AC$와 만나는 점을 각각 $D, E$라 하자. $\\overline{AB} = 15\\mathrm{cm}$, $\\overline{AC} = 13\\mathrm{cm}$, $\\overline{BC} = 16\\mathrm{cm}$일 때, $\\triangle ADE$의 둘레의 길이는?\n[[그림:/figs/exam-m22/con084.png]]",
+"solution": "점 $I$가 $\\triangle ABC$의 내심이므로 선분 $BI$와 $CI$는 각각 $\\angle B$와 $\\angle C$의 이등분선입니다. 즉, $\\angle DBI = \\angle IBC$ 이고 $\\angle ECI = \\angle ICB$ 입니다.\n$\\overline{DE} \\parallel \\overline{BC}$ 이므로 엇각의 크기가 같아 $\\angle DIB = \\angle IBC$, $\\angle EIC = \\angle ICB$ 가 성립합니다.\n따라서 $\\angle DBI = \\angle DIB$, $\\angle ECI = \\angle EIC$ 가 되어 $\\triangle DBI$ 와 $\\triangle ECI$ 는 이등변삼각형입니다.\n즉, $\\overline{DB} = \\overline{DI}$, $\\overline{EC} = \\overline{EI}$ 입니다.\n$\\triangle ADE$의 둘레의 길이 $= \\overline{AD} + \\overline{DE} + \\overline{EA}$\n$= \\overline{AD} + (\\overline{DI} + \\overline{EI}) + \\overline{EA}$\n$= (\\overline{AD} + \\overline{DB}) + (\\overline{EA} + \\overline{EC})$\n$= \\overline{AB} + \\overline{AC}$\n$= 15 + 13 = 28\\mathrm{cm}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$26\\mathrm{cm}$",
+"$27\\mathrm{cm}$",
+"$28\\mathrm{cm}$",
+"$29\\mathrm{cm}$",
+"$30\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-085",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 2,
+"body": "세 변의 길이가 $\\overline{AB} = 17\\mathrm{cm}$, $\\overline{BC} = 21\\mathrm{cm}$, $\\overline{CA} = 10\\mathrm{cm}$인 $\\triangle ABC$의 넓이가 $84\\mathrm{cm^2}$일 때, $\\triangle ABC$의 내접원의 넓이는?",
+"solution": "$\\triangle ABC$의 내접원의 반지름의 길이를 $r$라 하면,\n$\\triangle ABC$의 넓이 $= \\frac{1}{2} \\times r \\times (\\overline{AB} + \\overline{BC} + \\overline{CA})$ 입니다.\n$84 = \\frac{1}{2} \\times r \\times (17 + 21 + 10)$\n$84 = \\frac{1}{2} \\times r \\times 48$\n$24r = 84 \\Rightarrow r = \\frac{84}{24} = \\frac{7}{2}\\mathrm{cm}$\n따라서 내접원의 넓이는 $\\pi \\times r^2 = \\pi \\times \\left(\\frac{7}{2}\\right)^2 = \\frac{49}{4}\\pi\\mathrm{cm^2}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\frac{25}{4}\\pi\\mathrm{cm^2}$",
+"$9\\pi\\mathrm{cm^2}$",
+"$\\frac{49}{4}\\pi\\mathrm{cm^2}$",
+"$16\\pi\\mathrm{cm^2}$",
+"$25\\pi\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-086",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 3,
+"body": "그림과 같이 점 $\\mathrm{I}$가 $\\triangle\\mathrm{ABC}$의 내심이고, 내심을 지나며 밑변 $\\overline{BC}$에 평행한 직선이 변 $\\overline{AB}$, $\\overline{AC}$와 만나는 점을 각각 $\\mathrm{D}$, $\\mathrm{E}$라 하자. $\\overline{AB} = \\mathrm{9\\,cm}$, $\\overline{AC} = \\mathrm{7\\,cm}$일 때, $\\triangle\\mathrm{ADE}$의 둘레의 길이를 구하시오.\n[[그림:/figs/exam-m22/con086.png]]",
+"solution": "[1단계] 점 $\\mathrm{I}$가 내심이므로 $\\angle\\mathrm{IBC} = \\angle\\mathrm{DBI}$이고, 평행선에 의해 엇각 성질로 $\\angle\\mathrm{DBI} = \\angle\\mathrm{DIB}$가 성립한다.\n[2단계] 따라서 $\\triangle\\mathrm{DBI}$는 $\\overline{DB} = \\overline{DI}$인 이등변삼각형이 된다. 마찬가지로 $\\triangle\\mathrm{ECI}$도 $\\overline{EC} = \\overline{EI}$인 이등변삼각형이다.\n[3단계] $\\triangle\\mathrm{ADE}$의 둘레의 길이는 $\\overline{AD} + \\overline{DE} + \\overline{EA} = \\overline{AD} + (\\overline{DI} + \\overline{IE}) + \\overline{EA} = (\\overline{AD} + \\overline{DB}) + (\\overline{EC} + \\overline{EA}) = \\overline{AB} + \\overline{AC}$이다.\n[4단계] 따라서 $\\triangle\\mathrm{ADE}$의 둘레의 길이는 $9 + 7 = \\mathrm{16\\,cm}$이다.\n따라서 답은 $16\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$16\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-087",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 3,
+"body": "오른쪽 그림에서 점 $I$는 $\\triangle ABC$의 내심이고, 세 점 $D, E, F$는 내접원과 세 변의 접점이다. $\\overline{AB} = 14\\,\\mathrm{cm}$, $\\overline{BC} = 12\\,\\mathrm{cm}$, $\\overline{CA} = 10\\,\\mathrm{cm}$일 때, 선분 $\\overline{BD}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con087.png]]",
+"solution": "[1단계] 원 밖의 한 점에서 그은 두 접선의 길이는 같으므로 $\\overline{AD} = \\overline{AF} = x$, $\\overline{BD} = \\overline{BE} = y$, $\\overline{CE} = \\overline{CF} = z$라 하자.\n[2단계] $x + y = 14$, $y + z = 12$, $z + x = 10$이다.\n[3단계] 세 식을 모두 더하면 $2(x + y + z) = 36$이므로 $x + y + z = 18$이다.\n[4단계] 따라서 $\\overline{BD} = y = (x + y + z) - (z + x) = 18 - 10 = 8\\,\\mathrm{cm}$이다.\n따라서 답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-088",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 3,
+"body": "그림과 같이 $\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 $\\overline{AB} = 26\\mathrm{cm}$, $\\overline{BC} = 10\\mathrm{cm}$, $\\overline{CA} = 24\\mathrm{cm}$이다. 점 $O$는 이 삼각형의 외심이고 점 $I$는 내심일 때, 외접원의 반지름의 길이와 내접원의 반지름의 길이를 각각 구하고, 외접원의 넓이와 내접원의 넓이의 차를 구하는 과정을 서술하시오. (단, 원주율은 $\\pi$로 계산한다.)\n[[그림:/figs/exam-m22/con088.png]]",
+"solution": "[1단계] 외접원의 반지름 구하기\n직각삼각형의 외심은 빗변의 중점과 일치하므로 외접원의 지름은 빗변인 $\\overline{AB}$와 같다.\n외접원의 반지름 $R = \\frac{1}{2} \\times \\overline{AB} = \\frac{1}{2} \\times 26 = 13\\mathrm{cm}$이다.\n\n[2단계] 내접원의 반지름 구하기\n내접원의 반지름을 $r$이라 하면, 직각삼각형 $\\triangle ABC$의 넓이는 다음과 같이 두 가지 방법으로 나타낼 수 있다.\n$\\triangle ABC = \\frac{1}{2} \\times \\overline{BC} \\times \\overline{CA} = \\frac{1}{2} \\times 10 \\times 24 = 120\\mathrm{cm^2}$\n또한 $\\triangle ABC = \\frac{1}{2} r (\\overline{AB} + \\overline{BC} + \\overline{CA}) = \\frac{1}{2} r (26 + 10 + 24) = 30r$이다.\n$30r = 120$이므로 $r = 4\\mathrm{cm}$이다.\n\n[3단계] 두 원의 넓이의 차 구하기\n외접원의 넓이 = $\\pi \\times 13^2 = 169\\pi \\mathrm{cm^2}$\n내접원의 넓이 = $\\pi \\times 4^2 = 16\\pi \\mathrm{cm^2}$\n따라서 넓이의 차는 $169\\pi - 16\\pi = 153\\pi \\mathrm{cm^2}$이다.\n\n[채점 기준]\n1. 외접원의 반지름을 바르게 구함 (30%)\n2. 내접원의 반지름을 바르게 구함 (40%)\n3. 외접원과 내접원의 넓이의 차를 바르게 구함 (30%)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$153\\pi \\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-089",
+"typeId": "exam-m22-u0m1s1t2",
+"twinGroup": "tw-exam-m22-u0m1s1t2",
+"diff": 3,
+"body": "$\\angle\\mathrm{C} = 90^\\circ$인 직각삼각형 $\\triangle\\mathrm{ABC}$에서 $\\overline{AB} = \\mathrm{13\\,cm}$, $\\overline{BC} = \\mathrm{12\\,cm}$, $\\overline{CA} = \\mathrm{5\\,cm}$이다. 이 직각삼각형의 내접원의 반지름의 길이를 $r$라 할 때, $r$의 값을 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con089.png]]",
+"solution": "[1단계] 삼각형의 넓이 공식과 내접원의 반지름 사이의 관계를 이용한다. 직각삼각형의 넓이는 $\\triangle\\mathrm{ABC} = \\dfrac{1}{2} \\times \\overline{AC} \\times \\overline{BC} = \\dfrac{1}{2} \\times 5 \\times 12 = \\mathrm{30\\,cm^2}$이다. (배점 2점)\n[2단계] 내접원의 반지름의 길이를 $r$라 할 때, 삼각형의 넓이는 $\\triangle\\mathrm{ABC} = \\dfrac{1}{2} \\times r \\times (\\overline{AB} + \\overline{BC} + \\overline{CA})$로 표현된다. (배점 2점)\n[3단계] 수치를 대입하면 $\\dfrac{1}{2} \\times r \\times (13 + 12 + 5) = 30$, 즉 $15r = 30$이므로 $r = \\mathrm{2\\,cm}$이다. (배점 2점)\n따라서 답은 $r = 2\\,\\mathrm{cm}$이다.\n[채점 기준]\n- 1단계 직각삼각형의 넓이 정확히 산출: 2점\n- 2단계 내심과 넓이의 공식 활용 식 제시: 2점\n- 3단계 최종 내접원 반지름 도출: 2점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$r = 2\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-090",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 1,
+"body": "다음 중 삼각형의 외심과 내심에 대한 설명으로 옳은 것은?",
+"solution": "① 삼각형의 외심은 세 변의 수직이등분선의 교점입니다. 세 내각의 이등분선의 교점은 내심입니다.\n② 삼각형의 내심에서 세 변에 이르는 거리가 같습니다. 세 꼭짓점에 이르는 거리가 같은 것은 외심입니다.\n③ 직각삼각형의 외심이 빗변의 중점에 위치합니다. 내심은 항상 삼각형 내부에 있습니다.\n④ 삼각형의 내심은 모든 삼각형에서 항상 내부에 위치합니다. (참)\n⑤ 정삼각형의 외심과 내심은 일치하지만, 일반적인 예각삼각형에서는 일치하지 않습니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"삼각형의 외심은 세 내각의 이등분선의 교점이다.",
+"삼각형의 내심에서 세 꼭짓점에 이르는 거리는 같다.",
+"직각삼각형의 내심은 빗변의 중점에 위치한다.",
+"모든 삼각형의 내심은 삼각형의 내부에 위치한다.",
+"예각삼각형의 외심과 내심은 항상 일치한다."
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-091",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 2,
+"body": "점 $O$와 점 $I$는 각각 $\\triangle ABC$의 외심과 내심이다. $\\angle BOC = 144^\\circ$일 때, $\\angle BIC$의 크기는?",
+"solution": "[1단계] 외심의 성질에서 $\\angle BOC = 2\\angle A = 144^\\circ$이므로, $\\angle A = 72^\\circ$이다.\n[2단계] 내심의 성질에서 $\\angle BIC = 90^\\circ + \\dfrac{1}{2}\\angle A$가 성립한다.\n[3단계] 따라서 $\\angle BIC = 90^\\circ + \\dfrac{72^\\circ}{2} = 90^\\circ + 36^\\circ = 126^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$120^\\circ$",
+"$126^\\circ$",
+"$132^\\circ$",
+"$136^\\circ$",
+"$142^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-092",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 2,
+"body": "그림과 같이 $\\angle B = 90^\\circ$인 직각삼각형 $ABC$에서 점 $O$와 점 $I$는 각각 외심과 내심이다. $\\overline{AB} = 16\\mathrm{cm}$, $\\overline{BC} = 12\\mathrm{cm}$, $\\overline{AC} = 20\\mathrm{cm}$일 때, $\\triangle ABC$의 외접원의 반지름을 $R$, 내접원의 반지름을 $r$라 하자. 이때 $R + r$의 값은?\n[[그림:/figs/exam-m22/con092.png]]",
+"solution": "직각삼각형의 외심은 빗변의 중점이므로, 외접원의 반지름 $R$는 빗변 길이의 절반입니다.\n$R = \\frac{1}{2} \\times \\overline{AC} = \\frac{1}{2} \\times 20 = 10\\mathrm{cm}$\n직각삼각형의 내접원의 반지름 $r$는 직각을 낀 두 변과 빗변의 길이를 이용하여 구할 수 있습니다.\n$r = \\frac{\\overline{AB} + \\overline{BC} - \\overline{AC}}{2} = \\frac{16 + 12 - 20}{2} = 4\\mathrm{cm}$\n따라서 $R + r = 10 + 4 = 14\\mathrm{cm}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$12\\mathrm{cm}$",
+"$13\\mathrm{cm}$",
+"$14\\mathrm{cm}$",
+"$15\\mathrm{cm}$",
+"$16\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-093",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 3,
+"body": "그림에서 점 $O$와 점 $I$는 각각 $\\triangle ABC$의 외심과 내심이다. $\\angle A = 76^\\circ$일 때, $\\angle BOC - \\angle BIC$의 크기는?\n[[그림:/figs/exam-m22/con093.png]]",
+"solution": "점 $O$는 $\\triangle ABC$의 외심이므로 중심각은 꼭지각의 2배입니다.\n$\\angle BOC = 2\\angle A = 2 \\times 76^\\circ = 152^\\circ$\n점 $I$는 $\\triangle ABC$의 내심이므로 내심이 만드는 각은 다음과 같습니다.\n$\\angle BIC = 90^\\circ + \\frac{1}{2}\\angle A = 90^\\circ + 38^\\circ = 128^\\circ$\n따라서 구하는 각의 크기는 $\\angle BOC - \\angle BIC = 152^\\circ - 128^\\circ = 24^\\circ$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20^\\circ$",
+"$22^\\circ$",
+"$24^\\circ$",
+"$26^\\circ$",
+"$28^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-094",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 3,
+"body": "점 $O$와 점 $I$는 각각 $\\angle A = 40^\\circ$이고 $\\overline{AB} = \\overline{AC}$인 이등변삼각형 $ABC$의 외심과 내심이다. 이때 $\\angle OBI$의 크기를 구하시오.\n[[그림:/figs/exam-m22/con094.png]]",
+"solution": "[1단계] $\\overline{AB} = \\overline{AC}$이고 $\\angle A = 40^\\circ$이므로 $\\angle ABC = \\angle ACB = \\dfrac{180^\\circ - 40^\\circ}{2} = 70^\\circ$이다.\n[2단계] 점 $I$는 내심이므로 $\\angle IBC = \\dfrac{1}{2}\\angle ABC = 35^\\circ$이다.\n[3단계] 점 $O$는 외심이므로 $\\angle BOC = 2\\angle A = 80^\\circ$이고, $\\triangle OBC$는 $\\overline{OB} = \\overline{OC}$인 이등변삼각형이므로 $\\angle OBC = \\dfrac{180^\\circ - 80^\\circ}{2} = 50^\\circ$이다.\n[4단계] 따라서 $\\angle OBI = \\angle OBC - \\angle IBC = 50^\\circ - 35^\\circ = 15^\\circ$이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$10^\\circ$",
+"$15^\\circ$",
+"$20^\\circ$",
+"$25^\\circ$",
+"$30^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-095",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 3,
+"body": "그림에서 두 점 $O, I$는 $\\overline{AB} = \\overline{AC}$인 이등변삼각형 $ABC$의 외심과 내심이다. $\\angle A = 48^\\circ$일 때, $\\angle OBI$의 크기는?\n[[그림:/figs/exam-m22/con095.png]]",
+"solution": "$\\triangle ABC$는 $\\overline{AB} = \\overline{AC}$인 이등변삼각형이므로 밑각의 크기는 같습니다.\n$\\angle ABC = \\frac{180^\\circ - 48^\\circ}{2} = 66^\\circ$\n점 $I$는 내심이므로 $\\overline{BI}$는 $\\angle ABC$의 이등분선입니다.\n$\\angle IBC = \\frac{1}{2} \\times 66^\\circ = 33^\\circ$\n점 $O$는 외심이므로 $\\angle BOC = 2\\angle A = 2 \\times 48^\\circ = 96^\\circ$ 입니다.\n$\\triangle OBC$는 $\\overline{OB} = \\overline{OC}$인 이등변삼각형이므로,\n$\\angle OBC = \\frac{180^\\circ - 96^\\circ}{2} = 42^\\circ$ 입니다.\n이등변삼각형의 꼭지각의 이등분선 위에 외심과 내심이 모두 존재하므로 두 선분의 위치 관계에서\n$\\angle OBI = \\angle OBC - \\angle IBC = 42^\\circ - 33^\\circ = 9^\\circ$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$6^\\circ$",
+"$7^\\circ$",
+"$8^\\circ$",
+"$9^\\circ$",
+"$10^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-096",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 3,
+"body": "$\\angle C = 90^\\circ$이고 $\\overline{AC} = 6\\,\\mathrm{cm}$, $\\overline{BC} = 8\\,\\mathrm{cm}$, $\\overline{AB} = 10\\,\\mathrm{cm}$인 직각삼각형 $ABC$가 있다. 이 삼각형의 외접원의 반지름의 길이를 $R$, 내접원의 반지름의 길이를 $r$라 할 때, $R - r$의 값을 구하는 과정을 서술하시오.",
+"solution": "[1단계] 직각삼각형의 외심은 빗변의 중점에 위치하므로 외접원의 반지름의 길이 $R$은 빗변의 길이의 절반이다.\n따라서 $R = \\dfrac{1}{2} \\times 10 = 5\\,\\mathrm{cm}$이다. (배점 2점)\n[2단계] 삼각형의 넓이를 이용하여 내접원의 반지름의 길이 $r$를 구한다. \n$\\triangle ABC$의 넓이는 $\\dfrac{1}{2} \\times 6 \\times 8 = 24\\,\\mathrm{cm^2}$이고, 내접원의 반지름을 $r$라 하면 $\\triangle ABC = \\dfrac{1}{2}r(\\overline{AB} + \\overline{BC} + \\overline{CA})$이므로\n$\\dfrac{1}{2}r(10 + 8 + 6) = 24 \\implies 12r = 24 \\implies r = 2\\,\\mathrm{cm}$이다. (배점 3점)\n[3단계] 따라서 $R - r = 5 - 2 = 3\\,\\mathrm{cm}$이다. (배점 1점)\n따라서 답은 $3\\,\\mathrm{cm}$이다.\n[채점 기준]\n- 외접원의 반지름 $R$을 올바르게 구한 경우: 2점\n- 내접원의 반지름 $r$를 넓이 공식으로 올바르게 구한 경우: 3점\n- 최종 답 $R - r$을 올바르게 구한 경우: 1점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$3\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-097",
+"typeId": "exam-m22-u0m1s2t2",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"diff": 3,
+"body": "$\\angle B = 90^\\circ$인 직각삼각형 $ABC$에서 점 $O$는 외심, 점 $I$는 내심이다. $\\overline{AB} = 24\\mathrm{cm}$, $\\overline{BC} = 10\\mathrm{cm}$, $\\overline{CA} = 26\\mathrm{cm}$일 때, $\\triangle ABC$의 외접원의 넓이와 내접원의 넓이의 차를 구하는 과정을 서술하시오.",
+"solution": "[1단계] 직각삼각형의 외심 $O$는 빗변의 중점이다.\n외접원의 반지름을 $R$라 하면 $R = \\frac{1}{2} \\times \\overline{CA} = \\frac{1}{2} \\times 26 = 13\\mathrm{cm}$ 이다.\n따라서 외접원의 넓이는 $\\pi \\times 13^2 = 169\\pi\\mathrm{cm^2}$ 이다.\n[2단계] 내접원의 반지름을 $r$라 하면, $\\triangle ABC$의 넓이를 이용하여 $r$를 구할 수 있다.\n$\\triangle ABC$의 넓이는 $\\frac{1}{2} \\times 24 \\times 10 = 120\\mathrm{cm^2}$ 이다.\n넓이 공식 $S = \\frac{1}{2}r(a+b+c)$ 에 대입하면,\n$\\frac{1}{2} \\times r \\times (24 + 10 + 26) = 120$\n$30r = 120 \\Rightarrow r = 4\\mathrm{cm}$ 이다.\n따라서 내접원의 넓이는 $\\pi \\times 4^2 = 16\\pi\\mathrm{cm^2}$ 이다.\n[3단계] 외접원의 넓이와 내접원의 넓이의 차는\n$169\\pi - 16\\pi = 153\\pi\\mathrm{cm^2}$ 이다.\n\n[채점 기준]\n- [1단계] 외접원의 반지름의 길이를 찾고, 넓이를 올바르게 구함: 40%\n- [2단계] 삼각형의 넓이 공식을 이용하여 내접원의 반지름의 길이를 찾고, 넓이를 올바르게 구함: 40%\n- [3단계] 외접원과 내접원의 넓이의 차를 바르게 계산하여 결론을 도출함: 20%",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$153\\pi\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-098",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 1,
+"body": "평행사변형 ABCD에서 ∠A = 120°이고, AB = 6 cm, BC = 10 cm이다. 이때 ∠C의 크기와 CD의 길이를 바르게 짝지은 것은?",
+"solution": "- 평행사변형은 마주 보는 두 각(대각)의 크기가 같고, 마주 보는 두 변(대변)의 길이가 같습니다.\n- 대각 성질에 의해 ∠C = ∠A = 120° 입니다.\n- 대변 성질에 의해 CD = AB = 6 cm 입니다.\n- (검증) 이웃한 두 각의 합: ∠A + ∠B = 120° + 60° = 180°로 평행사변형 성질에 완벽히 부합합니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"60°, 6 cm",
+"60°, 10 cm",
+"120°, 6 cm",
+"120°, 10 cm",
+"180°, 6 cm"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-099",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 1,
+"body": "평행사변형 $\\mathrm{ABCD}$에서 두 대각선의 교점을 $\\mathrm{O}$라 할 때, 〈보기〉에서 옳지 않은 것만을 있는 대로 고른 것은?\n〈보기〉\nㄱ. $\\overline{AB} = \\overline{DC}$\nㄴ. $\\angle BAD = \\angle BCD$\nㄷ. $\\overline{AC} = \\overline{BD}$\nㄹ. $\\overline{AO} = \\overline{CO}$\nㅁ. $\\angle ABC = \\angle BCD$",
+"solution": "[1단계] 평행사변형의 두 쌍의 대변의 길이는 각각 같으므로 $\\overline{AB} = \\overline{DC}$이다. (ㄱ은 옳다.)\n[2단계] 평행사변형의 두 쌍의 대각의 크기는 각각 같으므로 $\\angle BAD = \\angle BCD$이다. (ㄴ은 옳다.)\n[3단계] 평행사변형의 두 대각선은 서로 다른 것을 이등분하므로 $\\overline{AO} = \\overline{CO}$이다. (ㄹ은 옳다.)\n[4단계] 두 대각선의 길이가 같은 것은 직사각형의 성질이므로 $\\overline{AC} = \\overline{BD}$는 항상 성립하지는 않는다. (ㄷ은 옳지 않다.)\n[5단계] 이웃하는 두 내각의 크기의 합은 $180^\\circ$이므로 $\\angle ABC = \\angle BCD$는 두 각이 모두 $90^\\circ$일 때만 성립한다. (ㅁ은 옳지 않다.)\n[6단계] 따라서 옳지 않은 것은 ㄷ, ㅁ이다.\n따라서 답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄷ, ㄹ",
+"ㄷ, ㅁ",
+"ㄹ, ㅁ"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-100",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 1,
+"body": "평행사변형 $ABCD$에서 $\\angle A = 110^\\circ$일 때, $\\angle B$와 $\\angle D$의 크기를 바르게 짝지은 것은?",
+"solution": "[1단계] 평행사변형에서 이웃하는 두 내각의 크기의 합은 $180^\\circ$이다.\n$\\angle A + \\angle B = 180^\\circ$이므로 $110^\\circ + \\angle B = 180^\\circ \\implies \\angle B = 70^\\circ$\n[2단계] 평행사변형에서 두 쌍의 대각의 크기는 각각 같다.\n$\\angle D = \\angle A = 110^\\circ$\n따라서 답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\angle B = 70^\\circ$, $\\angle D = 110^\\circ$",
+"$\\angle B = 70^\\circ$, $\\angle D = 70^\\circ$",
+"$\\angle B = 110^\\circ$, $\\angle D = 70^\\circ$",
+"$\\angle B = 110^\\circ$, $\\angle D = 110^\\circ$",
+"$\\angle B = 140^\\circ$, $\\angle D = 40^\\circ$"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-101",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 1,
+"body": "평행사변형 $\\mathrm{ABCD}$에서 $\\angle \\mathrm{A} = 3\\angle \\mathrm{B}$이고, $\\overline{AB} = 2x + 3$, $\\overline{DC} = 11$일 때, $\\angle \\mathrm{C}$의 크기와 $x$의 값을 바르게 짝지은 것은?",
+"solution": "평행사변형에서 이웃하는 두 내각의 크기의 합은 $180^\\circ$이므로 $\\angle \\mathrm{A} + \\angle \\mathrm{B} = 180^\\circ$이다.\n$3\\angle \\mathrm{B} + \\angle \\mathrm{B} = 180^\\circ \\rightarrow 4\\angle \\mathrm{B} = 180^\\circ \\rightarrow \\angle \\mathrm{B} = 45^\\circ$\n평행사변형의 마주 보는 두 대각의 크기는 서로 같으므로 $\\angle \\mathrm{C} = \\angle \\mathrm{A} = 3 \\times 45^\\circ = 135^\\circ$이다.\n또한, 평행사변형의 마주 보는 두 대변의 길이는 서로 같으므로 $\\overline{AB} = \\overline{DC}$이다.\n$2x + 3 = 11 \\rightarrow 2x = 8 \\rightarrow x = 4$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\angle \\mathrm{C} = 45^\\circ, x = 4$",
+"$\\angle \\mathrm{C} = 45^\\circ, x = 7$",
+"$\\angle \\mathrm{C} = 135^\\circ, x = 3$",
+"$\\angle \\mathrm{C} = 135^\\circ, x = 4$",
+"$\\angle \\mathrm{C} = 135^\\circ, x = 7$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-102",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 1,
+"body": "평행사변형 $\\mathrm{ABCD}$의 두 대각선의 교점을 $\\mathrm{O}$라 하자. $\\triangle \\mathrm{ABO}$의 넓이가 $15\\mathrm{cm^2}$일 때, 평행사변형 $\\mathrm{ABCD}$의 넓이는?",
+"solution": "평행사변형의 두 대각선은 평행사변형의 넓이를 4등분하므로 $\\triangle \\mathrm{ABO} = \\triangle \\mathrm{BCO} = \\triangle \\mathrm{CDO} = \\triangle \\mathrm{DAO} = \\dfrac{1}{4} \\square \\mathrm{ABCD}$가 성립한다.\n따라서 $\\square \\mathrm{ABCD} = 4 \\times \\triangle \\mathrm{ABO} = 4 \\times 15 = 60\\mathrm{cm^2}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$30\\mathrm{cm^2}$",
+"$45\\mathrm{cm^2}$",
+"$60\\mathrm{cm^2}$",
+"$75\\mathrm{cm^2}$",
+"$90\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-103",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 2,
+"body": "다음은 평행사변형 $\\mathrm{ABCD}$에서 두 대각선이 서로 다른 것을 이등분함을 증명하는 과정이다. (가)~(마)에 들어갈 내용으로 옳지 않은 것은?\n〈보기〉\n평행사변형 $\\mathrm{ABCD}$의 두 대각선의 교점을 $\\mathrm{O}$라 하면, $\\triangle \\mathrm{OAB}$와 $\\triangle \\mathrm{OCD}$에서\n$\\overline{AB} = \\text{(가)}$ (평행사변형의 대변)\n$\\overline{AB} \\parallel \\overline{DC}$이므로\n$\\angle \\mathrm{OAB} = \\text{(나)}$ (엇각)\n$\\angle \\mathrm{OBA} = \\text{(다)}$ (엇각)\n따라서 $\\triangle \\mathrm{OAB} \\equiv \\triangle \\mathrm{OCD}$ ( (라) 합동 )\n그러므로 $\\overline{OA} = \\overline{OC}$, $\\overline{OB} = \\text{(마)}$",
+"solution": "한 변의 길이와 그 양 끝각의 크기가 각각 같으므로 $\\triangle \\mathrm{OAB}$와 $\\triangle \\mathrm{OCD}$는 $\\mathrm{ASA}$ 합동이다. 따라서 (라)에 들어갈 내용은 $\\mathrm{ASA}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"(가) $\\overline{DC}$",
+"(나) $\\angle \\mathrm{OCD}$",
+"(다) $\\angle \\mathrm{ODC}$",
+"(라) $\\mathrm{SAS}$",
+"(마) $\\overline{OD}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-104",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 2,
+"body": "평행사변형 ABCD에서 ∠A의 이등분선이 변 BC와 만나는 점을 E라 하자. AB = 8 cm, AD = 13 cm일 때, 선분 EC의 길이는?",
+"solution": "- AD ∥ BC 이므로 엇각의 크기가 같습니다. (∠DAE = ∠AEB)\n- AE가 각을 이등분하므로 ∠BAE = ∠DAE 이며, 결론적으로 ∠BAE = ∠AEB 입니다.\n- 밑각이 같으므로 △ABE는 AB = BE 인 이등변삼각형이 됩니다.\n- BE = AB = 8 cm\n- 평행사변형의 대변의 길이는 같으므로 BC = AD = 13 cm 입니다.\n- 따라서 EC = BC - BE = 13 - 8 = 5 cm 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"4 cm",
+"5 cm",
+"6 cm",
+"7 cm",
+"8 cm"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-105",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 2,
+"body": "오른쪽 그림과 같은 평행사변형 $\\mathrm{ABCD}$에서 $\\angle A$의 이등분선이 변 $\\mathrm{BC}$와 만나는 점을 $\\mathrm{E}$라 하자. $\\overline{AB} = 7\\,\\mathrm{cm}$, $\\overline{AD} = 11\\,\\mathrm{cm}$일 때, 선분 $\\mathrm{EC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con105.png]]",
+"solution": "[1단계] 평행사변형 $\\mathrm{ABCD}$에서 $\\mathrm{AD} \\parallel \\mathrm{BC}$이므로 엇각의 성질에 의하여 $\\angle DAE = \\angle AEB$이다.\n[2단계] 선분 $\\mathrm{AE}$는 $\\angle A$의 이등분선이므로 $\\angle BAE = \\angle DAE$이다. 따라서 $\\angle BAE = \\angle AEB$가 성립한다.\n[3단계] 삼각형 $\\mathrm{ABE}$는 두 내각의 크기가 같으므로 $\\overline{BE} = \\overline{AB} = 7\\,\\mathrm{cm}$인 이등변삼각형이다.\n[4단계] 따라서 $\\overline{EC} = \\overline{BC} - \\overline{BE} = \\overline{AD} - \\overline{BE} = 11 - 7 = 4\\,\\mathrm{cm}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$3\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-106",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 2,
+"body": "평행사변형 $\\mathrm{ABCD}$에서 $\\angle \\mathrm{B}$의 이등분선이 변 $\\mathrm{AD}$와 만나는 점을 $\\mathrm{E}$, $\\angle \\mathrm{C}$의 이등분선이 변 $\\mathrm{AD}$와 만나는 점을 $\\mathrm{F}$라 하자. $\\overline{AB} = 8\\mathrm{cm}$, $\\overline{BC} = 12\\mathrm{cm}$일 때, 선분 $\\mathrm{EF}$의 길이는?\n[[그림:/figs/exam-m22/con106.png]]",
+"solution": "$\\overline{AD} \\parallel \\overline{BC}$이므로 $\\angle \\mathrm{AEB} = \\angle \\mathrm{EBC}$ (엇각)이다.\n이때 $\\overline{BE}$가 $\\angle \\mathrm{B}$의 이등분선이므로 $\\angle \\mathrm{ABE} = \\angle \\mathrm{EBC}$이다.\n따라서 $\\angle \\mathrm{ABE} = \\angle \\mathrm{AEB}$가 되어 $\\triangle \\mathrm{ABE}$는 이등변삼각형이다.\n$\\overline{AE} = \\overline{AB} = 8\\mathrm{cm}$\n같은 방법으로 $\\overline{AD} \\parallel \\overline{BC}$에서 $\\angle \\mathrm{DFC} = \\angle \\mathrm{FCB}$ (엇각)이고, $\\angle \\mathrm{DCF} = \\angle \\mathrm{FCB}$이므로 $\\triangle \\mathrm{DFC}$도 이등변삼각형이다.\n$\\overline{DF} = \\overline{DC} = \\overline{AB} = 8\\mathrm{cm}$\n변 $\\mathrm{AD}$의 길이는 $\\overline{BC}$와 같으므로 $12\\mathrm{cm}$이다.\n$\\overline{AD} = \\overline{AF} + \\overline{FE} + \\overline{ED} = 12\\mathrm{cm}$에서\n$\\overline{AE} = \\overline{AF} + \\overline{FE} = 8\\mathrm{cm}$, $\\overline{DF} = \\overline{FE} + \\overline{ED} = 8\\mathrm{cm}$이므로\n$\\overline{AE} + \\overline{DF} = (\\overline{AF} + \\overline{FE}) + (\\overline{FE} + \\overline{ED}) = \\overline{AD} + \\overline{FE} = 16\\mathrm{cm}$이다.\n$12 + \\overline{FE} = 16 \\rightarrow \\overline{FE} = 4\\mathrm{cm}$.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$2\\mathrm{cm}$",
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-107",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 2,
+"body": "평행사변형 $\\mathrm{ABCD}$의 두 대각선의 교점을 $\\mathrm{O}$라 하자. $\\overline{OA} = 3x - 1$, $\\overline{OB} = y + 2$, $\\overline{OC} = x + 5$, $\\overline{OD} = 3y - 4$일 때, $\\triangle \\mathrm{OBC}$의 둘레의 길이를 구하면? (단, $\\overline{BC} = 10\\mathrm{cm}$)",
+"solution": "평행사변형의 두 대각선은 서로 다른 것을 이등분하므로 $\\overline{OA} = \\overline{OC}$이고, $\\overline{OB} = \\overline{OD}$이다.\n1) $\\overline{OA} = \\overline{OC} \\rightarrow 3x - 1 = x + 5 \\rightarrow 2x = 6 \\rightarrow x = 3$\n따라서 $\\overline{OC} = 3 + 5 = 8\\mathrm{cm}$이다.\n2) $\\overline{OB} = \\overline{OD} \\rightarrow y + 2 = 3y - 4 \\rightarrow 2y = 6 \\rightarrow y = 3$\n따라서 $\\overline{OB} = 3 + 2 = 5\\mathrm{cm}$이다.\n$\\triangle \\mathrm{OBC}$의 둘레의 길이는 $\\overline{OB} + \\overline{OC} + \\overline{BC} = 5 + 8 + 10 = 23\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$20\\mathrm{cm}$",
+"$21\\mathrm{cm}$",
+"$22\\mathrm{cm}$",
+"$23\\mathrm{cm}$",
+"$24\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-108",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 2,
+"body": "평행사변형 $\\mathrm{ABCD}$의 넓이가 $72\\mathrm{cm^2}$이다. 내부의 한 점 $\\mathrm{P}$에 대하여 $\\triangle \\mathrm{PAB}$의 넓이가 $\\triangle \\mathrm{PCD}$ 넓이의 2배일 때, $\\triangle \\mathrm{PAB}$의 넓이는?",
+"solution": "평행사변형 내부의 한 점 $\\mathrm{P}$에 대하여 마주 보는 두 삼각형의 넓이의 합은 평행사변형 넓이의 절반이다.\n즉, $\\triangle \\mathrm{PAB} + \\triangle \\mathrm{PCD} = \\dfrac{1}{2} \\square \\mathrm{ABCD} = \\dfrac{1}{2} \\times 72 = 36\\mathrm{cm^2}$이다.\n조건에서 $\\triangle \\mathrm{PAB} = 2\\triangle \\mathrm{PCD}$이므로, $\\triangle \\mathrm{PCD} = \\dfrac{1}{2}\\triangle \\mathrm{PAB}$로 치환할 수 있다.\n$\\triangle \\mathrm{PAB} + \\dfrac{1}{2}\\triangle \\mathrm{PAB} = 36 \\rightarrow \\dfrac{3}{2}\\triangle \\mathrm{PAB} = 36 \\rightarrow \\triangle \\mathrm{PAB} = 36 \\times \\dfrac{2}{3} = 24\\mathrm{cm^2}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$12\\mathrm{cm^2}$",
+"$16\\mathrm{cm^2}$",
+"$18\\mathrm{cm^2}$",
+"$20\\mathrm{cm^2}$",
+"$24\\mathrm{cm^2}$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-109",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 3,
+"body": "평행사변형 $\\mathrm{ABCD}$의 변 $\\mathrm{BC}$의 연장선 위에 $\\overline{AB} = \\overline{CE}$가 되도록 점 $\\mathrm{E}$를 잡는다. $\\angle \\mathrm{A} = 114^\\circ$일 때, $\\angle \\mathrm{CDE}$의 크기는?\n[[그림:/figs/exam-m22/con109.png]]",
+"solution": "평행사변형의 마주 보는 대각의 크기는 같으므로 $\\angle \\mathrm{BCD} = \\angle \\mathrm{A} = 114^\\circ$이다.\n점 $\\mathrm{E}$는 변 $\\mathrm{BC}$의 연장선 위에 있으므로 $\\angle \\mathrm{DCE} = 180^\\circ - \\angle \\mathrm{BCD} = 180^\\circ - 114^\\circ = 66^\\circ$이다.\n평행사변형의 대변의 길이는 같으므로 $\\overline{AB} = \\overline{DC}$이다. \n조건에서 $\\overline{AB} = \\overline{CE}$이므로 $\\overline{DC} = \\overline{CE}$가 된다.\n따라서 $\\triangle \\mathrm{DCE}$는 $\\overline{DC} = \\overline{CE}$인 이등변삼각형이다.\n이등변삼각형의 두 밑각의 크기는 같으므로 $\\angle \\mathrm{CDE} = \\angle \\mathrm{CED}$이다.\n$\\angle \\mathrm{CDE} = \\dfrac{180^\\circ - 66^\\circ}{2} = 57^\\circ$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$51^\\circ$",
+"$53^\\circ$",
+"$55^\\circ$",
+"$57^\\circ$",
+"$59^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-110",
+"typeId": "exam-m22-u1m0s0t2",
+"twinGroup": "tw-exam-m22-u1m0s0t2",
+"diff": 3,
+"body": "평행사변형 $ABCD$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $E$라 하자. $\\overline{AB} = 7\\mathrm{cm}$, $\\overline{AD} = 12\\mathrm{cm}$일 때, 선분 $EC$의 길이는?\n[[그림:/figs/exam-m22/con110.png]]",
+"solution": "[1단계] 평행사변형에서 $\\overline{AD} \\parallel \\overline{BC}$이므로 엇각의 성질에 의해 $\\angle DAE = \\angle AEB$이다.\n[2단계] 선분 $AE$는 $\\angle A$의 이등분선이므로 $\\angle BAE = \\angle DAE$이다.\n[3단계] 따라서 $\\angle BAE = \\angle AEB$가 되어 $\\triangle ABE$는 $\\overline{AB} = \\overline{BE}$인 이등변삼각형이다.\n$\\overline{BE} = \\overline{AB} = 7\\mathrm{cm}$\n[4단계] $\\overline{BC} = \\overline{AD} = 12\\mathrm{cm}$이므로 $\\overline{EC} = \\overline{BC} - \\overline{BE} = 12 - 7 = 5\\mathrm{cm}$\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$",
+"$7\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-111",
+"typeId": "exam-m22-u1m0s1t2",
+"twinGroup": "tw-exam-m22-u1m0s1t2",
+"diff": 1,
+"body": "다음 중 사각형 ABCD가 평행사변형이 되는 조건이 아닌 것은? (단, 점 O는 두 대각선의 교점이다.)",
+"solution": "- 두 대각선은 서로 다른 것을 '이등분'해야 평행사변형이 됩니다. (올바른 조건: OA = OC, OB = OD)\n- 보기 ④의 OA = OB, OC = OD는 대각선이 교점에 의해 이등분되지 않는 형태입니다. \n- (예시) 등변사다리꼴의 경우 교점에서 위쪽 꼭짓점까지의 거리끼리, 아래쪽 꼭짓점까지의 거리끼리 같지만 평행사변형은 아닙니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"AB ∥ DC, AD ∥ BC",
+"AB = DC, AD = BC",
+"∠A = ∠C, ∠B = ∠D",
+"OA = OB, OC = OD",
+"AB ∥ DC, AB = DC"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-112",
+"typeId": "exam-m22-u1m0s1t2",
+"twinGroup": "tw-exam-m22-u1m0s1t2",
+"diff": 2,
+"body": "다음 중 사각형 $\\mathrm{ABCD}$가 평행사변형이 되는 조건이 **아닌** 것은? (단, 점 $\\mathrm{O}$는 두 대각선의 교점이다.)",
+"solution": "[1단계] 평행사변형이 되는 조건은 (1) 두 쌍의 대변이 각각 평행, (2) 두 쌍의 대변의 길이가 각각 같음, (3) 두 쌍의 대각의 크기가 각각 같음, (4) 두 대각선이 서로 다른 것을 이등분, (5) 한 쌍의 대변이 평행하고 그 길이가 같다.\n[2단계] ①은 (2번 조건), ②는 (3번 조건), ③은 (4번 조건), ⑤는 (5번 조건)에 해당하므로 모두 평행사변형이 된다.\n[3단계] ④의 «한 쌍의 대변이 평행하고, 다른 한 쌍의 대변의 길이가 같다»는 평행사변형이 되는 조건이 아니다. (이 경우 등변사다리꼴 등이 될 수 있다.)\n[4단계] 따라서 평행사변형이 되는 조건이 아닌 것은 ④이다.\n따라서 답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{AB} = \\overline{DC}$, $\\overline{AD} = \\overline{BC}$",
+"$\\angle A = \\angle C$, $\\angle B = \\angle D$",
+"$\\overline{AO} = \\overline{CO}$, $\\overline{BO} = \\overline{DO}$",
+"$\\overline{AB} \\parallel \\overline{DC}$, $\\overline{AD} = \\overline{BC}$",
+"$\\overline{AB} \\parallel \\overline{DC}$, $\\overline{AB} = \\overline{DC}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-113",
+"typeId": "exam-m22-u1m0s1t2",
+"twinGroup": "tw-exam-m22-u1m0s1t2",
+"diff": 2,
+"body": "다음 중 사각형 $ABCD$가 평행사변형이 되는 조건을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. $\\overline{AB} = \\overline{DC}$, $\\overline{AD} = \\overline{BC}$\nㄴ. $\\angle A = \\angle B$, $\\angle C = \\angle D$\nㄷ. $\\overline{OA} = \\overline{OC}$, $\\overline{OB} = \\overline{OD}$ (단, 점 $O$는 두 대각선의 교점이다.)\nㄹ. $\\overline{AB} \\parallel \\overline{DC}$, $\\overline{AD} = \\overline{BC}$",
+"solution": "[1단계] 평행사변형이 되는 조건은 (1) 두 쌍의 대변이 각각 평행하다. (2) 두 쌍의 대변의 길이가 각각 같다. (3) 두 쌍의 대각의 크기가 각각 같다. (4) 두 대각선이 서로 다른 것을 이등분한다. (5) 한 쌍의 대변이 평행하고 그 길이가 같다.\n[2단계] ㄱ은 조건 (2)에 해당하므로 평행사변형이 된다.\n[3단계] ㄴ은 $\\angle A = \\angle B$, $\\angle C = \\angle D$인 등변사다리꼴이 반례가 되므로 평행사변형이 되는 조건이 아니다.\n[4단계] ㄷ은 조건 (4)에 해당하므로 평행사변형이 된다.\n[5단계] ㄹ은 한 쌍의 대변이 평행하고 다른 한 쌍의 대변의 길이가 같은 등변사다리꼴이 반례가 되므로 평행사변형이 되는 조건이 아니다.\n[6단계] 따라서 평행사변형이 되는 조건은 ㄱ, ㄷ이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-114",
+"typeId": "exam-m22-u1m0s1t2",
+"twinGroup": "tw-exam-m22-u1m0s1t2",
+"diff": 2,
+"body": "다음 중 사각형 $\\mathrm{ABCD}$가 평행사변형이 되는 것을 〈보기〉에서 모두 고른 것은? (단, 점 $\\mathrm{O}$는 두 대각선의 교점이다.)\n〈보기〉\nㄱ. $\\angle \\mathrm{A} = 105^\\circ, \\angle \\mathrm{B} = 75^\\circ, \\angle \\mathrm{D} = 75^\\circ$\nㄴ. $\\overline{AB} \\parallel \\overline{DC}$, $\\overline{AD} = \\overline{BC}$\nㄷ. $\\overline{OA} = \\overline{OC} = 5\\mathrm{cm}$, $\\overline{OB} = \\overline{OD} = 6\\mathrm{cm}$\nㄹ. $\\overline{AB} = 4\\mathrm{cm}$, $\\overline{BC} = 6\\mathrm{cm}$, $\\overline{CD} = 4\\mathrm{cm}$, $\\overline{DA} = 6\\mathrm{cm}$",
+"solution": "ㄱ. 사각형의 네 내각의 합은 $360^\\circ$이므로 $\\angle \\mathrm{C} = 360^\\circ - (105^\\circ + 75^\\circ + 75^\\circ) = 105^\\circ$이다. 따라서 두 쌍의 대각의 크기가 각각 같으므로 평행사변형이다. (O)\nㄴ. 한 쌍의 대변이 평행하고 다른 한 쌍의 대변의 길이가 같은 경우는 '등변사다리꼴'이 될 수 있으므로 평행사변형이 되는 조건이 아니다. (X)\nㄷ. 두 대각선이 서로 다른 것을 이등분하므로 평행사변형이다. (O)\nㄹ. 두 쌍의 대변의 길이가 각각 같으므로 평행사변형이다. (O)\n따라서 평행사변형이 되는 것은 ㄱ, ㄷ, ㄹ이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-115",
+"typeId": "exam-m22-u1m0s1t2",
+"twinGroup": "tw-exam-m22-u1m0s1t2",
+"diff": 3,
+"body": "평행사변형 $ABCD$의 내부의 한 점 $P$에 대하여 $\\triangle PAB = 12\\mathrm{cm^2}$, $\\triangle PCD = 16\\mathrm{cm^2}$일 때, 평행사변형 $ABCD$의 넓이는?",
+"solution": "[1단계] 점 $P$에서 $\\overline{AB}$, $\\overline{DC}$에 내린 수선의 길이를 각각 $h_1$, $h_2$라 하면 $h_1 + h_2$는 평행사변형의 높이 $h$와 같다.\n[2단계] $\\overline{AB} = \\overline{DC}$이므로 $\\triangle PAB + \\triangle PCD = \\dfrac{1}{2} \\times \\overline{AB} \\times h_1 + \\dfrac{1}{2} \\times \\overline{DC} \\times h_2 = \\dfrac{1}{2} \\times \\overline{AB} \\times h$이다. 즉, 평행사변형 $ABCD$의 넓이의 $\\dfrac{1}{2}$이다.\n[3단계] $12 + 16 = 28$이므로 평행사변형 $ABCD$의 넓이는 $28 \\times 2 = 56\\mathrm{cm^2}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$48\\mathrm{cm^2}$",
+"$52\\mathrm{cm^2}$",
+"$56\\mathrm{cm^2}$",
+"$60\\mathrm{cm^2}$",
+"$64\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-116",
+"typeId": "exam-m22-u1m0s1t2",
+"twinGroup": "tw-exam-m22-u1m0s1t2",
+"diff": 3,
+"body": "사각형 $\\mathrm{ABCD}$에서 $\\overline{AD} \\parallel \\overline{BC}$이다. $\\overline{AD} = 3x - 2y$, $\\overline{BC} = x + 6$, $\\overline{AB} = 2x + y$, $\\overline{DC} = x + 3y$ 일 때, 이 사각형이 평행사변형이 되도록 하는 $x, y$의 값을 각각 구하고, 이때 평행사변형 $\\mathrm{ABCD}$의 둘레의 길이를 구하시오.",
+"solution": "한 쌍의 대변이 평행한 사각형이 평행사변형이 되려면 평행한 그 변의 길이가 같아야 한다.\n$\\overline{AD} = \\overline{BC}$이므로 $3x - 2y = x + 6 \\rightarrow 2x - 2y = 6 \\rightarrow x - y = 3 \\cdots$ (1)\n평행사변형이 되면 다른 한 쌍의 대변의 길이도 서로 같아야 하므로 $\\overline{AB} = \\overline{DC}$이다.\n$2x + y = x + 3y \\rightarrow x - 2y = 0 \\rightarrow x = 2y \\cdots$ (2)\n(2)를 (1)에 대입하면 $2y - y = 3 \\rightarrow y = 3$이다.\n$y = 3$을 (2)에 대입하면 $x = 6$이다.\n이때 대변의 길이를 구하면 $\\overline{AD} = 3(6) - 2(3) = 12$, $\\overline{AB} = 2(6) + 3 = 15$이다.\n따라서 평행사변형 $\\mathrm{ABCD}$의 둘레의 길이는 $2 \\times (\\overline{AD} + \\overline{AB}) = 2 \\times (12 + 15) = 54$이다.\n[채점 기준]\n- 평행사변형이 되는 조건을 이용하여 $\\overline{AD} = \\overline{BC}$ 방정식을 바르게 세운 경우: 30%\n- $\\overline{AB} = \\overline{DC}$ 방정식을 바르게 세운 경우: 30%\n- 연립방정식을 풀어 $x, y$의 값을 정확히 구한 경우: 20%\n- 평행사변형의 둘레의 길이를 정확히 구한 경우: 20%",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$x = 6$, $y = 3$, 둘레의 길이: $54$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-117",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 1,
+"body": "다음 중 사각형과 그 대각선의 성질이 바르게 짝지어지지 않은 것은?",
+"solution": "등변사다리꼴의 두 대각선은 길이는 같지만, 서로 다른 것을 이등분하지는 않는다. 평행사변형, 직사각형, 마름모, 정사각형은 모두 평행사변형의 성질을 가지므로 두 대각선이 서로 다른 것을 이등분한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"평행사변형 — 두 대각선은 서로 다른 것을 이등분한다.",
+"직사각형 — 두 대각선은 길이가 같고, 서로 다른 것을 이등분한다.",
+"마름모 — 두 대각선은 서로 다른 것을 수직이등분한다.",
+"정사각형 — 두 대각선은 길이가 같고, 서로 다른 것을 수직이등분한다.",
+"등변사다리꼴 — 두 대각선은 서로 다른 것을 이등분한다."
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-118",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 1,
+"body": "사각형의 각 변의 중점을 차례로 연결하여 만든 사각형의 종류가 바르게 짝지어지지 않은 것은?",
+"solution": "정사각형의 각 변의 중점을 차례로 연결하여 만든 사각형은 네 변의 길이가 같고(마름모 성질), 네 내각의 크기가 직각으로 모두 같은(직사각형 성질) '정사각형'이 된다. 직사각형이나 등변사다리꼴의 중점을 연결하면 두 대각선의 길이가 같다는 성질에 의해 마름모가 생성된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"사각형 $\\rightarrow$ 평행사변형",
+"평행사변형 $\\rightarrow$ 평행사변형",
+"직사각형 $\\rightarrow$ 마름모",
+"정사각형 $\\rightarrow$ 마름모",
+"등변사다리꼴 $\\rightarrow$ 마름모"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-119",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 1,
+"body": "오른쪽 그림과 같이 넓이가 $72\\mathrm{cm^2}$인 평행사변형 $ABCD$의 내부의 한 점 $P$에 대하여, $\\triangle PAB$와 $\\triangle PCD$의 넓이의 합은?\n[[그림:/figs/exam-m22/con119.png]]",
+"solution": "평행사변형 내부의 임의의 한 점 $P$에 대하여, 마주 보는 두 삼각형의 넓이의 합은 평행사변형 전체 넓이의 절반입니다.\n$\\triangle PAB + \\triangle PCD = \\dfrac{1}{2} \\Box ABCD = \\dfrac{1}{2} \\times 72 = 36\\mathrm{cm^2}$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$24\\mathrm{cm^2}$",
+"$30\\mathrm{cm^2}$",
+"$36\\mathrm{cm^2}$",
+"$42\\mathrm{cm^2}$",
+"$48\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-120",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "평행사변형 $ABCD$가 정사각형이 되기 위한 조건으로 가장 알맞은 것은? (단, 점 $O$는 두 대각선의 교점이다.)",
+"solution": "평행사변형이 정사각형이 되려면 '직사각형이 되는 조건(한 내각이 직각 또는 두 대각선의 길이가 같음)' 중 하나와 '마름모가 되는 조건(이웃하는 두 변의 길이가 같음 또는 두 대각선이 직교함)' 중 하나를 동시에 만족해야 한다.\n①은 마름모가 되는 조건이다.\n②는 직사각형이 되는 조건이다.\n③은 둘 다 마름모가 되는 조건이다.\n④는 둘 다 직사각형이 되는 조건이다.\n⑤는 마름모가 되는 조건($\\overline{AB} = \\overline{BC}$)과 직사각형이 되는 조건($\\overline{AC} = \\overline{BD}$)을 모두 갖추고 있으므로 정사각형이 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{AB} = \\overline{BC}$",
+"$\\overline{AC} = \\overline{BD}$",
+"$\\overline{AB} = \\overline{BC}$ 이고 $\\overline{AC} \\perp \\overline{BD}$",
+"$\\angle A = 90^\\circ$ 이고 $\\overline{AC} = \\overline{BD}$",
+"$\\overline{AB} = \\overline{BC}$ 이고 $\\overline{AC} = \\overline{BD}$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-121",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "마름모 ABCD에서 두 대각선의 교점을 O라 하자. ∠ABO = 25°일 때, ∠BCD의 크기는?",
+"solution": "- 마름모의 두 대각선은 서로 수직으로 만납니다. (∠AOB = 90°)\n- △ABO에서 나머지 한 예각은 ∠BAO = 90° - 25° = 65° 입니다.\n- 마름모의 대각선은 내각을 정확히 이등분하므로 ∠BAD = 65° × 2 = 130° 입니다.\n- 마름모도 평행사변형의 일종이므로 마주 보는 대각의 크기가 서로 같습니다.\n- 따라서 ∠BCD = ∠BAD = 130° 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"110°",
+"120°",
+"130°",
+"140°",
+"150°"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-122",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "평행사변형 ABCD가 직사각형이 되기 위한 조건으로 알맞은 것을 〈보기〉에서 모두 고른 것은? (단, 점 O는 두 대각선의 교점이다.)\n〈보기〉\nㄱ. AC = BD\nㄴ. AC ⊥ BD\nㄷ. AB = BC\nㄹ. ∠ABC = 90°\nㅁ. OA = OB",
+"solution": "- 평행사변형이 직사각형이 되려면 '한 내각이 직각'이거나 '두 대각선의 길이가 같아야' 합니다.\n- ㄱ. AC = BD (대각선의 길이가 같으므로 직사각형 조건)\n- ㄹ. ∠ABC = 90° (한 내각이 직각이므로 직사각형 조건)\n- ㅁ. 평행사변형은 원래 OA = OC, OB = OD 입니다. 여기에 OA = OB 가 추가되면 결과적으로 AC = BD 가 되어 직사각형 조건이 성립합니다.\n- (오답 분석) ㄴ, ㄷ은 마름모가 되기 위한 조건입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㅁ"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-123",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "평행사변형 $\\mathrm{ABCD}$에서 두 대각선의 교점을 $\\mathrm{O}$라 하자. $\\angle OAD = \\angle ODA$일 때, 평행사변형 $\\mathrm{ABCD}$는 어떤 사각형이 되는지 쓰시오.",
+"solution": "[1단계] 삼각형 $\\mathrm{OAD}$에서 $\\angle OAD = \\angle ODA$이므로 밑각의 크기가 같아서 $\\overline{OA} = \\overline{OD}$인 이등변삼각형이다.\n[2단계] 평행사변형의 두 대각선은 서로 다른 것을 이등분하므로 $\\overline{OA} = \\overline{OC}$, $\\overline{OB} = \\overline{OD}$이다.\n[3단계] 따라서 $\\overline{OA} = \\overline{OB} = \\overline{OC} = \\overline{OD}$가 성립하며, 이는 두 대각선의 길이가 서로 같음을 의미한다 ($\\overline{AC} = \\overline{BD}$).\n[4단계] 두 대각선의 길이가 같은 평행사변형은 직사각형이 된다.\n따라서 답은 직사각형이다.\n[채점 기준]\n· 대각선의 길이가 같음을 유도한 경우: 3점\n· 최종 정답(직사각형)을 도출한 경우: 2점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "직사각형",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-124",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "평행사변형 $ABCD$가 직사각형이 되기 위한 조건이 아닌 것은? (단, 점 $O$는 두 대각선의 교점이다.)",
+"solution": "[1단계] 평행사변형이 직사각형이 되는 조건은 「한 내각이 직각이다」 또는 「두 대각선의 길이가 같다」이다.\n[2단계] ①은 한 내각이 직각이므로 직사각형이 된다. ②는 두 대각선의 길이가 같으므로 직사각형이 된다. ④는 $\\overline{AC} = 2\\overline{OA} = 2\\overline{OB} = \\overline{BD}$이므로 직사각형이 된다.\n[3단계] ⑤는 $\\angle A + \\angle B = 180^\\circ$이고 $\\angle A = \\angle B$이므로 $\\angle A = 90^\\circ$가 되어 직사각형이 된다.\n[4단계] ③의 $\\overline{AC} \\perp \\overline{BD}$는 평행사변형이 마름모가 되는 조건이므로 직사각형이 되는 조건이 아니다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\angle A = 90^\\circ$",
+"$\\overline{AC} = \\overline{BD}$",
+"$\\overline{AC} \\perp \\overline{BD}$",
+"$\\overline{OA} = \\overline{OB}$",
+"$\\angle A = \\angle B$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-125",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "마름모 $ABCD$에서 두 대각선의 교점을 $O$라 하자. $\\angle OAB = 35^\\circ$일 때, $\\angle BCD$의 크기는?",
+"solution": "[1단계] 마름모의 대각선은 내각을 이등분하므로 $\\angle BAD = 2\\angle OAB = 2 \\times 35^\\circ = 70^\\circ$이다.\n[2단계] 마름모는 평행사변형이므로 두 쌍의 대각의 크기가 각각 같다. $\\angle BCD$는 $\\angle BAD$의 대각이므로 $\\angle BCD = \\angle BAD = 70^\\circ$이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$55^\\circ$",
+"$70^\\circ$",
+"$110^\\circ$",
+"$120^\\circ$",
+"$125^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-126",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "직사각형 $ABCD$에서 두 대각선의 교점을 $O$라 하자. $\\angle AOB = 124^\\circ$일 때, $\\angle OBC$의 크기는?\n[[그림:/figs/exam-m22/con126.png]]",
+"solution": "1. 평각의 크기는 $180^\\circ$이므로 $\\angle BOC = 180^\\circ - 124^\\circ = 56^\\circ$이다.\n2. 직사각형의 두 대각선은 길이가 같고 서로 다른 것을 이등분하므로 $\\overline{OB} = \\overline{OC}$이다.\n3. 따라서 $\\triangle OBC$는 이등변삼각형이므로 $\\angle OBC = \\angle OCB$이다.\n4. $\\angle OBC = \\dfrac{180^\\circ - 56^\\circ}{2} = 62^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$56^\\circ$",
+"$58^\\circ$",
+"$60^\\circ$",
+"$62^\\circ$",
+"$64^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-127",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "마름모 $ABCD$에서 $\\overline{AB} = 4x - 3$, $\\overline{BC} = 2x + 7$ 이다. 이 마름모의 둘레의 길이는?\n[[그림:/figs/exam-m22/con127.png]]",
+"solution": "1. 마름모는 네 변의 길이가 모두 같은 사각형이므로 $\\overline{AB} = \\overline{BC}$이다.\n2. 식을 세우면 $4x - 3 = 2x + 7$ 이 된다.\n3. 이항하여 정리하면 $2x = 10$ 이므로 $x = 5$ 이다.\n4. 마름모의 한 변의 길이는 $\\overline{AB} = 4 \\times 5 - 3 = 17$ 이다.\n5. 마름모의 둘레의 길이는 $17 \\times 4 = 68$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$56$",
+"$60$",
+"$64$",
+"$68$",
+"$72$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-128",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\overline{AD} \\parallel \\overline{BC}$인 사다리꼴 $ABCD$에서 두 대각선의 교점을 $O$라 하자. $\\triangle ABC = 45\\mathrm{cm^2}$, $\\triangle OBC = 27\\mathrm{cm^2}$일 때, $\\triangle DOC$의 넓이는?\n[[그림:/figs/exam-m22/con128.png]]",
+"solution": "$\\overline{AD} \\parallel \\overline{BC}$이므로 $\\triangle ABC$와 $\\triangle DBC$는 밑변 $\\overline{BC}$가 공통이고 높이가 같습니다.\n$\\triangle ABC = \\triangle DBC = 45\\mathrm{cm^2}$\n$\\triangle DOC = \\triangle DBC - \\triangle OBC$ 이므로\n$\\triangle DOC = 45 - 27 = 18\\mathrm{cm^2}$입니다. (또한 $\\triangle ABO = \\triangle DOC$ 입니다)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$15\\mathrm{cm^2}$",
+"$16\\mathrm{cm^2}$",
+"$18\\mathrm{cm^2}$",
+"$20\\mathrm{cm^2}$",
+"$22\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-129",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "평행사변형 $ABCD$ 내부의 한 점 $P$에 대하여 $\\triangle PAB = 12\\mathrm{cm^2}$, $\\triangle PBC = 20\\mathrm{cm^2}$, $\\triangle PDA = 14\\mathrm{cm^2}$일 때, $\\triangle PCD$의 넓이는?",
+"solution": "평행사변형 내부의 점 $P$에 대하여, 마주 보는 두 삼각형 넓이의 합은 서로 같습니다.\n$\\triangle PAB + \\triangle PCD = \\triangle PDA + \\triangle PBC$\n$12 + \\triangle PCD = 14 + 20 = 34$\n따라서 $\\triangle PCD = 34 - 12 = 22\\mathrm{cm^2}$입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$16\\mathrm{cm^2}$",
+"$18\\mathrm{cm^2}$",
+"$20\\mathrm{cm^2}$",
+"$22\\mathrm{cm^2}$",
+"$24\\mathrm{cm^2}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-130",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 3,
+"body": "사각형의 각 변의 중점을 차례로 연결하여 만든 사각형이 원래의 사각형과 동일한 종류가 되는 것을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. 평행사변형\nㄴ. 직사각형\nㄷ. 마름모\nㄹ. 정사각형\nㅁ. 등변사다리꼴",
+"solution": "- 각 사각형의 중점을 연결하여 만들어지는 새로운 사각형의 종류는 다음과 같습니다.\n- 평행사변형 → 평행사변형\n- 직사각형 → 마름모\n- 마름모 → 직사각형\n- 정사각형 → 정사각형\n- 등변사다리꼴 → 마름모\n- 따라서 원래의 사각형과 같은 모양이 유지되는 것은 평행사변형(ㄱ)과 정사각형(ㄹ)뿐입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄷ, ㅁ",
+"ㄹ, ㅁ"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-131",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 3,
+"body": "$\\overline{AD} \\parallel \\overline{BC}$ 인 등변사다리꼴 $ABCD$에서 $\\angle B = 60^\\circ$ 이고, $\\overline{AD} = 6\\mathrm{cm}$, $\\overline{AB} = 10\\mathrm{cm}$ 일 때, 변 $BC$의 길이는?\n[[그림:/figs/exam-m22/con131.png]]",
+"solution": "1. 점 $A$에서 변 $DC$에 평행한 직선을 그어 변 $BC$와 만나는 점을 $E$라 하자.\n2. 사각형 $AECD$는 $\\overline{AD} \\parallel \\overline{EC}$ 이고 $\\overline{AE} \\parallel \\overline{DC}$ 이므로 평행사변형이다.\n3. 따라서 $\\overline{EC} = \\overline{AD} = 6\\mathrm{cm}$ 이고, $\\overline{AE} = \\overline{DC}$ 이다.\n4. 등변사다리꼴의 평행하지 않은 두 대변의 길이는 같으므로 $\\overline{AB} = \\overline{DC} = 10\\mathrm{cm}$ 이다. 즉 $\\overline{AE} = 10\\mathrm{cm}$ 이다.\n5. $\\triangle ABE$에서 $\\overline{AB} = \\overline{AE} = 10\\mathrm{cm}$ 이므로 이등변삼각형이며, $\\angle B = 60^\\circ$ 이므로 나머지 두 각도 $60^\\circ$가 되어 정삼각형이 된다.\n6. 따라서 $\\overline{BE} = 10\\mathrm{cm}$ 이다.\n7. 구하는 변의 길이는 $\\overline{BC} = \\overline{BE} + \\overline{EC} = 10 + 6 = 16\\mathrm{cm}$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$14\\mathrm{cm}$",
+"$15\\mathrm{cm}$",
+"$16\\mathrm{cm}$",
+"$18\\mathrm{cm}$",
+"$20\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-132",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "사각형 $ABCD$에서 점 $D$를 지나고 대각선 $AC$에 평행한 직선이 변 $BC$의 연장선과 만나는 점을 $E$라 하자. $\\triangle ABC = 24\\mathrm{cm}^2$, $\\triangle ACD = 18\\mathrm{cm}^2$ 일 때, $\\triangle ABE$의 넓이는?\n[[그림:/figs/exam-m22/con132.png]]",
+"solution": "1. 평행선과 넓이의 성질에 따라, 밑변이 같고 두 평행선 사이에 있는 삼각형의 넓이는 같다.\n2. $\\overline{AC} \\parallel \\overline{DE}$ 이고 밑변이 $\\overline{AC}$ 로 공통이므로 $\\triangle ACD = \\triangle ACE$ 가 성립한다.\n3. 문제에서 $\\triangle ACD = 18\\mathrm{cm}^2$ 이므로 $\\triangle ACE$ 의 넓이도 $18\\mathrm{cm}^2$ 이다.\n4. 구하고자 하는 $\\triangle ABE$ 의 넓이는 $\\triangle ABC$ 와 $\\triangle ACE$ 의 넓이의 합과 같다.\n5. 따라서 $\\triangle ABE = 24\\mathrm{cm}^2 + 18\\mathrm{cm}^2 = 42\\mathrm{cm}^2$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$36\\mathrm{cm}^2$",
+"$38\\mathrm{cm}^2$",
+"$40\\mathrm{cm}^2$",
+"$42\\mathrm{cm}^2$",
+"$46\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-133",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 3,
+"body": "오른쪽 그림과 같은 마름모 $\\mathrm{ABCD}$에서 꼭짓점 $\\mathrm{A}$에서 변 $\\mathrm{BC}$에 내린 수선의 발을 $\\mathrm{H}$라 하고, $\\mathrm{AH}$와 대각선 $\\mathrm{BD}$의 교점을 $\\mathrm{P}$라 하자. $\\angle C = 130^\\circ$일 때, $\\angle APB$의 크기는?\n[[그림:/figs/exam-m22/con133.png]]",
+"solution": "[1단계] 마름모는 평행사변형이므로 이웃하는 두 내각의 크기의 합은 $180^\\circ$이다. 따라서 $\\angle B = 180^\\circ - 130^\\circ = 50^\\circ$이다.\n[2단계] 마름모의 대각선 $\\mathrm{BD}$는 $\\angle B$를 이등분하므로 $\\angle PBH = 50^\\circ \\div 2 = 25^\\circ$이다.\n[3단계] 직각삼각형 $\\mathrm{PBH}$에서 $\\angle BPH = 90^\\circ - 25^\\circ = 65^\\circ$이다.\n[4단계] 세 점 $\\mathrm{A}$, $\\mathrm{P}$, $\\mathrm{H}$는 한 직선 위에 있으므로 $\\angle APB = 180^\\circ - \\angle BPH = 180^\\circ - 65^\\circ = 115^\\circ$이다.\n따라서 답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$115^\\circ$",
+"$120^\\circ$",
+"$125^\\circ$",
+"$130^\\circ$",
+"$135^\\circ$"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-134",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 3,
+"body": "정사각형 $ABCD$의 내부에 $\\triangle ABE$가 정삼각형이 되도록 점 $E$를 잡을 때, $\\angle CDE$의 크기는?\n[[그림:/figs/exam-m22/con134.png]]",
+"solution": "1. $\\triangle ABE$는 정삼각형이므로 $\\overline{AB} = \\overline{AE} = \\overline{BE}$ 이고, $\\angle BAE = \\angle ABE = \\angle AEB = 60^\\circ$ 이다.\n2. 사각형 $ABCD$는 정사각형이므로 $\\overline{AB} = \\overline{AD}$ 이고, $\\angle DAB = 90^\\circ$ 이다.\n3. 따라서 $\\overline{AE} = \\overline{AD}$ 가 되어 $\\triangle ADE$는 이등변삼각형이다.\n4. $\\angle DAE = \\angle DAB - \\angle BAE = 90^\\circ - 60^\\circ = 30^\\circ$ 이다.\n5. 이등변삼각형 $\\triangle ADE$에서 두 밑각의 크기는 같으므로 $\\angle ADE = \\dfrac{180^\\circ - 30^\\circ}{2} = 75^\\circ$ 이다.\n6. 정사각형의 한 내각 $\\angle ADC = 90^\\circ$ 이므로, 구하는 각 $\\angle CDE = 90^\\circ - 75^\\circ = 15^\\circ$ 이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$10^\\circ$",
+"$15^\\circ$",
+"$20^\\circ$",
+"$25^\\circ$",
+"$30^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-135",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "평행사변형의 각 변의 중점을 차례로 연결하여 만든 사각형이 어떤 사각형이 되는지 그 이유를 포함하여 서술하시오.",
+"solution": "[1단계] 평행사변형 $\\mathrm{ABCD}$의 네 변 $\\mathrm{AB}$, $\\mathrm{BC}$, $\\mathrm{CD}$, $\\mathrm{DA}$의 중점을 각각 $\\mathrm{P}$, $\\mathrm{Q}$, $\\mathrm{R}$, $\\mathrm{S}$라 하자. 평행사변형의 대변의 길이는 같으므로 $\\overline{AP} = \\overline{BP} = \\overline{CR} = \\overline{DR}$, $\\overline{AS} = \\overline{DS} = \\overline{BQ} = \\overline{CQ}$이다.\n[2단계] $\\triangle APS$와 $\\triangle CRQ$에서 $\\overline{AP} = \\overline{CR}$, $\\overline{AS} = \\overline{CQ}$, $\\angle A = \\angle C$이므로 $\\triangle APS \\equiv \\triangle CRQ$ (SAS 합동)이고, $\\overline{PS} = \\overline{RQ}$이다.\n[3단계] $\\triangle BPQ$와 $\\triangle DRS$에서 $\\overline{BP} = \\overline{DR}$, $\\overline{BQ} = \\overline{DS}$, $\\angle B = \\angle D$이므로 $\\triangle BPQ \\equiv \\triangle DRS$ (SAS 합동)이고, $\\overline{PQ} = \\overline{RS}$이다.\n[4단계] 사각형 $\\mathrm{PQRS}$는 두 쌍의 대변의 길이가 각각 같으므로 평행사변형이다.\n따라서 답은 평행사변형이다.\n[채점 기준]\n· 삼각형의 합동을 이용하여 두 쌍의 대변의 길이가 각각 같음을 밝힌 경우: 3점\n· 최종 정답(평행사변형)을 도출한 경우: 2점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "평행사변형",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-136",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 2,
+"body": "$\\overline{AD} \\parallel \\overline{BC}$인 등변사다리꼴 $ABCD$에서 $\\overline{AD} = 6\\mathrm{cm}$, $\\overline{BC} = 10\\mathrm{cm}$, $\\angle B = 60^\\circ$일 때, 변 $AB$의 길이를 구하는 과정을 쓰시오.",
+"solution": "[1단계] 점 $D$를 지나고 $\\overline{AB}$에 평행한 직선이 $\\overline{BC}$와 만나는 점을 $E$라 하면, $\\overline{AD} \\parallel \\overline{BE}$, $\\overline{AB} \\parallel \\overline{DE}$이므로 사각형 $ABED$는 평행사변형이다. 따라서 $\\overline{BE} = \\overline{AD} = 6\\mathrm{cm}$, $\\overline{DE} = \\overline{AB}$이다.\n[2단계] $\\overline{EC} = \\overline{BC} - \\overline{BE} = 10 - 6 = 4\\mathrm{cm}$이다.\n[3단계] $\\overline{AB} \\parallel \\overline{DE}$이므로 $\\angle DEC = \\angle B = 60^\\circ$(동위각)이고, 등변사다리꼴의 두 밑각의 크기는 같으므로 $\\angle C = \\angle B = 60^\\circ$이다. 따라서 $\\triangle DEC$는 세 내각의 크기가 모두 $60^\\circ$인 정삼각형이다.\n[4단계] 따라서 $\\overline{AB} = \\overline{DE} = \\overline{EC} = 4\\mathrm{cm}$이다.\n따라서 답은 $4\\mathrm{cm}$이다.\n[채점 기준]\n- 1단계: 보조선을 그어 평행사변형 $ABED$를 찾고 $\\overline{EC}$의 길이 구하기 (배점 2점)\n- 2단계: $\\triangle DEC$가 정삼각형임을 밝히기 (배점 3점)\n- 3단계: 최종 $\\overline{AB}$의 길이 구하기 (배점 1점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$4\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-137",
+"typeId": "exam-m22-u1m1s0t2",
+"twinGroup": "tw-exam-m22-u1m1s0t2",
+"diff": 3,
+"body": "직사각형 $ABCD$를 대각선 $AC$를 접는 선으로 하여 점 $B$가 점 $P$에 오도록 접었다. 선분 $PC$와 변 $AD$의 교점을 $E$라 하고, $\\angle ACB = 28^\\circ$ 일 때, $\\angle AEC$의 크기를 구하는 과정을 서술하고 답을 구하시오.\n[[그림:/figs/exam-m22/con137.png]]",
+"solution": "1. 주어진 조건에서 $\\angle ACB = 28^\\circ$ 이다.\n2. 종이를 접었을 때 겹치는 부분의 각의 크기는 같으므로 $\\angle PCA = \\angle BCA = 28^\\circ$ 이다.\n3. 직사각형의 성질에 의해 $\\overline{AD} \\parallel \\overline{BC}$ 이므로 평행선의 엇각의 크기는 같다. 따라서 $\\angle EAC = \\angle BCA = 28^\\circ$ 이다.\n4. $\\triangle AEC$에서 두 내각이 $\\angle EAC = 28^\\circ$, $\\angle ECA(\\angle PCA) = 28^\\circ$ 인 이등변삼각형이 된다.\n5. 따라서 구하고자 하는 $\\angle AEC = 180^\\circ - (28^\\circ + 28^\\circ) = 180^\\circ - 56^\\circ = 124^\\circ$ 이다.\n\n[채점 기준]\n- $\\angle BCA$의 크기를 정확히 구하고, 접은 각 $\\angle PCA$의 크기가 같음을 설명한 경우: 40%\n- 평행선의 엇각 성질을 이용하여 $\\angle EAC$의 크기를 구한 경우: 30%\n- $\\triangle AEC$의 세 내각의 합을 이용하여 $\\angle AEC$의 최종 크기를 올바르게 계산한 경우: 30%",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$124^\\circ$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-138",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 1,
+"body": "오른쪽 그림과 같이 $\\mathrm{l \\parallel m}$일 때, 밑변 $\\mathrm{BC}$가 공통이고 꼭짓점 $\\mathrm{A}$, $\\mathrm{A'}$이 각각 직선 $\\mathrm{l}$ 위에 있다. $\\triangle ABC = 35\\,\\mathrm{cm^2}$일 때, 삼각형 $\\mathrm{A'BC}$의 넓이는?\n[[그림:/figs/exam-m22/con138.png]]",
+"solution": "[1단계] 평행선 사이의 거리 개념에 의해, 두 평행선 $\\mathrm{l \\parallel m}$ 사이의 거리는 어디서나 일정하므로 높이가 같다.\n[2단계] 삼각형 $\\mathrm{ABC}$와 삼각형 $\\mathrm{A'BC}$는 밑변 $\\mathrm{BC}$가 공통이고 높이가 같으므로 넓이가 서로 같다 (등적변형).\n[3단계] 따라서 삼각형 $\\mathrm{A'BC}$의 넓이는 삼각형 $\\mathrm{ABC}$의 넓이와 같은 $35\\,\\mathrm{cm^2}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$25\\,\\mathrm{cm^2}$",
+"$30\\,\\mathrm{cm^2}$",
+"$35\\,\\mathrm{cm^2}$",
+"$40\\,\\mathrm{cm^2}$",
+"$45\\,\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-139",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 1,
+"body": "오른쪽 그림과 같이 두 직선 $l$, $m$이 서로 평행($l \\parallel m$)할 때, 다음 중 $\\triangle ABC$와 넓이가 항상 같은 것은? (단, 점 $O$는 $\\overline{AC}$와 $\\overline{BD}$의 교점이다.)\n[[그림:/figs/exam-m22/con139.png]]",
+"solution": "두 직선 $l \\parallel m$ 이므로 밑변 $\\overline{BC}$가 공통이고 높이가 같은 삼각형은 $\\triangle ABC$와 $\\triangle DBC$입니다.\n따라서 $\\triangle ABC = \\triangle DBC$가 성립합니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\triangle ABD$",
+"$\\triangle ACD$",
+"$\\triangle OAD$",
+"$\\triangle DBC$",
+"$\\triangle OBC$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-140",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "평행사변형 ABCD의 넓이가 60 cm²이다. 내부의 임의의 한 점 P에 대하여 △PAB의 넓이가 18 cm²일 때, △PCD의 넓이는?",
+"solution": "- 평행사변형 내부의 한 점 P에 대해, 마주 보는 두 삼각형 넓이의 합은 전체 사각형 넓이의 절반입니다.\n- (예시) 직사각형 피자를 임의의 점에서 X자로 잘랐을 때, 마주 보는 조각을 합치면 정확히 피자 반 판이 되는 원리와 같습니다.\n- △PAB + △PCD = 60 ÷ 2 = 30 cm²\n- 18 + △PCD = 30 이므로, △PCD = 12 cm² 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"10 cm²",
+"12 cm²",
+"14 cm²",
+"15 cm²",
+"18 cm²"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-141",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\mathrm{AD} \\parallel \\mathrm{BC}$인 사다리꼴 $\\mathrm{ABCD}$에서 두 대각선 $\\mathrm{AC}$, $\\mathrm{BD}$의 교점을 $\\mathrm{O}$라 하자. $\\triangle ABO = 12\\,\\mathrm{cm^2}$, $\\overline{DO} : \\overline{OB} = 1 : 2$일 때, 사다리꼴 $\\mathrm{ABCD}$의 전체 넓이를 구하는 과정을 쓰고 답을 구하시오.\n[[그림:/figs/exam-m22/con141.png]]",
+"solution": "[1단계] $\\mathrm{AD} \\parallel \\mathrm{BC}$이므로 $\\triangle ABC$와 $\\triangle DBC$는 밑변 $\\mathrm{BC}$가 공통이고 높이가 같아 넓이가 같다.\n[2단계] 두 삼각형에서 공통인 $\\triangle OBC$를 빼면 $\\triangle ABO = \\triangle DCO$이므로 $\\triangle DCO = 12\\,\\mathrm{cm^2}$이다.\n[3단계] $\\triangle AOD$와 $\\triangle ABO$는 높이가 같으므로 넓이의 비는 밑변의 길이의 비와 같다. $\\triangle AOD : \\triangle ABO = \\overline{DO} : \\overline{OB} = 1 : 2$이므로 $\\triangle AOD = 6\\,\\mathrm{cm^2}$이다.\n[4단계] $\\triangle DOC$와 $\\triangle BOC$도 높이가 같으므로 $\\triangle DOC : \\triangle BOC = \\overline{DO} : \\overline{OB} = 1 : 2$에서 $\\triangle BOC = 24\\,\\mathrm{cm^2}$이다.\n[5단계] 따라서 사다리꼴 $\\mathrm{ABCD}$의 넓이는 $6 + 12 + 12 + 24 = 54\\,\\mathrm{cm^2}$이다.\n따라서 답은 $54\\,\\mathrm{cm^2}$이다.\n[채점 기준]\n· $\\triangle DCO$의 넓이를 구한 경우: 2점\n· $\\triangle AOD$와 $\\triangle BOC$의 넓이를 구한 경우: 2점\n· 전체 사다리꼴의 넓이를 구한 경우: 1점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$54\\,\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-142",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "넓이가 $60\\mathrm{cm^2}$인 $\\triangle ABC$의 변 $BC$ 위에 $\\overline{BD} : \\overline{DC} = 3 : 2$가 되도록 점 $D$를 잡았다. 이때 $\\triangle ABD$의 넓이는?",
+"solution": "[1단계] 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 내리면 $\\triangle ABD$와 $\\triangle ADC$는 높이가 같다.\n[2단계] 높이가 같은 두 삼각형의 넓이의 비는 밑변의 길이의 비와 같다.\n$\\triangle ABD : \\triangle ADC = \\overline{BD} : \\overline{DC} = 3 : 2$\n[3단계] 따라서 $\\triangle ABD$의 넓이는 전체 $\\triangle ABC$의 넓이의 $\\dfrac{3}{3+2}$배이다.\n$\\triangle ABD = 60 \\times \\dfrac{3}{5} = 36\\mathrm{cm^2}$\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$24\\mathrm{cm^2}$",
+"$30\\mathrm{cm^2}$",
+"$36\\mathrm{cm^2}$",
+"$40\\mathrm{cm^2}$",
+"$45\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-143",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "넓이가 $60\\mathrm{cm^2}$인 $\\triangle ABC$에서 변 $BC$ 위에 $\\overline{BP} : \\overline{PC} = 2 : 3$이 되도록 점 $P$를 잡았다. 이때 $\\triangle APC$의 넓이는?\n[[그림:/figs/exam-m22/con143.png]]",
+"solution": "높이가 같은 두 삼각형의 넓이의 비는 밑변의 길이의 비와 같습니다.\n$\\triangle ABP : \\triangle APC = \\overline{BP} : \\overline{PC} = 2 : 3$\n따라서 $\\triangle APC = \\triangle ABC \\times \\dfrac{3}{2+3} = 60 \\times \\dfrac{3}{5} = 36\\mathrm{cm^2}$입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$24\\mathrm{cm^2}$",
+"$30\\mathrm{cm^2}$",
+"$36\\mathrm{cm^2}$",
+"$40\\mathrm{cm^2}$",
+"$42\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-144",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 $\\overline{AD} \\parallel \\overline{BC}$인 사다리꼴 $ABCD$에서 두 대각선의 교점을 $O$라 하자. $\\overline{AO} : \\overline{OC} = 2 : 3$이고 $\\triangle ABO = 12\\mathrm{cm^2}$일 때, $\\triangle OBC$의 넓이는?\n[[그림:/figs/exam-m22/con144.png]]",
+"solution": "$\\triangle ABO$와 $\\triangle OBC$는 높이가 같으므로 넓이의 비는 밑변의 길이의 비와 같습니다.\n$\\triangle ABO : \\triangle OBC = \\overline{AO} : \\overline{OC} = 2 : 3$\n$12 : \\triangle OBC = 2 : 3$\n$2 \\times \\triangle OBC = 36$\n따라서 $\\triangle OBC = 18\\mathrm{cm^2}$입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$14\\mathrm{cm^2}$",
+"$15\\mathrm{cm^2}$",
+"$16\\mathrm{cm^2}$",
+"$18\\mathrm{cm^2}$",
+"$20\\mathrm{cm^2}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-145",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 3,
+"body": "오른쪽 그림과 같이 사각형 $ABCD$의 꼭짓점 $D$를 지나고 대각선 $AC$에 평행한 직선이 변 $BC$의 연장선과 만나는 점을 $E$라 하자. $\\triangle ABC = 35\\mathrm{cm^2}$, $\\triangle ACD = 25\\mathrm{cm^2}$일 때, $\\triangle ABE$의 넓이는?\n[[그림:/figs/exam-m22/con145.png]]",
+"solution": "$\\overline{AC} \\parallel \\overline{DE}$이므로 밑변이 $\\overline{AC}$로 공통이고 높이가 같아 $\\triangle ACD = \\triangle ACE$입니다.\n$\\triangle ABE = \\triangle ABC + \\triangle ACE = \\triangle ABC + \\triangle ACD = \\Box ABCD$\n따라서 $\\triangle ABE = 35 + 25 = 60\\mathrm{cm^2}$입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$40\\mathrm{cm^2}$",
+"$45\\mathrm{cm^2}$",
+"$50\\mathrm{cm^2}$",
+"$55\\mathrm{cm^2}$",
+"$60\\mathrm{cm^2}$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-146",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "AD ∥ BC인 사다리꼴 ABCD에서 두 대각선 AC, BD의 교점을 O라 하자. △ABO의 넓이가 12 cm²이고, DO : OB = 1 : 2 일 때, 사다리꼴 ABCD의 전체 넓이를 구하는 과정을 서술하고 답을 구하시오.",
+"solution": "- AD ∥ BC 이므로 밑변 AD를 공유하는 △ABD와 △ACD의 넓이는 같습니다.\n- 공통 부분인 △AOD를 빼면, △DOC = △ACD - △AOD = △ABD - △AOD = △ABO = 12 cm² 입니다.\n- 높이가 같은 삼각형의 넓이 비는 밑변의 길이 비와 같습니다. (DO : OB = 1 : 2)\n- △AOD : △ABO = 1 : 2 이므로 △AOD = 12 ÷ 2 = 6 cm² 입니다.\n- △DOC : △OBC = 1 : 2 이므로 △OBC = 12 × 2 = 24 cm² 입니다.\n- 사다리꼴 ABCD 전체 넓이 = 6 + 12 + 12 + 24 = 54 cm² 입니다.\n- (검증) 역산하여 각 삼각형의 넓이 비가 6 : 12 : 12 : 24 = 1 : 2 : 2 : 4 로 완벽히 성립하는지 확인 완료했습니다.\n\n[채점 기준]\n1. △DOC의 넓이가 12 cm² 임을 논리적으로 구한 경우 (2점)\n2. 넓이 비를 이용하여 △AOD(6 cm²)와 △OBC(24 cm²)의 넓이를 각각 바르게 구한 경우 (4점)\n3. 네 삼각형의 넓이를 모두 더해 사다리꼴의 전체 넓이(54 cm²)를 정확히 도출한 경우 (2점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "54 cm²",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-147",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 2,
+"body": "오른쪽 그림과 같은 $\\triangle ABC$에서 점 $D$는 변 $BC$의 중점이고, 점 $E$는 선분 $AD$ 위의 점으로 $\\overline{AE} : \\overline{ED} = 3 : 1$이다. $\\triangle AEC$의 넓이가 $18\\mathrm{cm^2}$일 때, $\\triangle ABC$의 넓이를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con147.png]]",
+"solution": "$\\triangle ADC$에서 $\\overline{AE} : \\overline{ED} = 3 : 1$ 이므로\n$\\triangle AEC : \\triangle EDC = 3 : 1$ 이다.\n$\\triangle AEC = 18\\mathrm{cm^2}$ 이므로 $\\triangle EDC = 18 \\times \\dfrac{1}{3} = 6\\mathrm{cm^2}$ 이다.\n따라서 $\\triangle ADC = 18 + 6 = 24\\mathrm{cm^2}$ 이다.\n점 $D$는 $\\overline{BC}$의 중점이므로 $\\overline{BD} = \\overline{DC}$ 이고,\n$\\triangle ABD = \\triangle ADC = 24\\mathrm{cm^2}$ 이다.\n그러므로 전체 넓이 $\\triangle ABC = 2 \\times 24 = 48\\mathrm{cm^2}$ 이다.\n\n[채점 기준]\n1. $\\triangle EDC$ 넓이 또는 $\\triangle ADC$ 넓이의 비를 올바르게 구함: 40%\n2. $\\triangle ADC = 24\\mathrm{cm^2}$ 임을 구함: 30%\n3. $\\triangle ABC$ 넓이가 $48\\mathrm{cm^2}$ 임을 정확히 구함: 30%",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$48\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-148",
+"typeId": "exam-m22-u1m1s1t2",
+"twinGroup": "tw-exam-m22-u1m1s1t2",
+"diff": 3,
+"body": "오른쪽 그림과 같이 $\\overline{AD} \\parallel \\overline{BC}$인 사다리꼴 $ABCD$에서 두 대각선의 교점을 $O$라 하자. $\\triangle AOD = 4\\mathrm{cm^2}$, $\\triangle ABO = 10\\mathrm{cm^2}$일 때, 다음 물음에 답하고 그 과정을 서술하시오.\n(1) $\\overline{AO} : \\overline{OC}$를 가장 간단한 자연수의 비로 나타내시오.\n(2) $\\triangle OBC$의 넓이를 구하시오.\n(3) 사다리꼴 $ABCD$의 넓이를 구하시오.\n[[그림:/figs/exam-m22/con148.png]]",
+"solution": "(1) $\\overline{AD} \\parallel \\overline{BC}$인 사다리꼴에서 $\\triangle ABC = \\triangle DBC$ 이고, 공통인 $\\triangle OBC$를 빼면 $\\triangle ABO = \\triangle DOC$ 가 성립한다.\n따라서 $\\triangle DOC = 10\\mathrm{cm^2}$ 이다.\n$\\triangle AOD$와 $\\triangle DOC$는 높이가 같으므로 넓이의 비는 밑변의 비와 같다.\n$\\overline{AO} : \\overline{OC} = \\triangle AOD : \\triangle DOC = 4 : 10 = 2 : 5$ 이다.\n(2) $\\triangle ABO$와 $\\triangle OBC$도 높이가 같으므로, 넓이의 비가 $\\overline{AO} : \\overline{OC}$ 와 같다.\n$\\triangle ABO : \\triangle OBC = 2 : 5$\n$10 : \\triangle OBC = 2 : 5$ 이므로 $2\\triangle OBC = 50$, 즉 $\\triangle OBC = 25\\mathrm{cm^2}$ 이다.\n(3) 사다리꼴 $ABCD = \\triangle AOD + \\triangle ABO + \\triangle DOC + \\triangle OBC$ 이다.\n사다리꼴 $ABCD = 4 + 10 + 10 + 25 = 49\\mathrm{cm^2}$ 이다.\n\n[채점 기준]\n1. $\\triangle DOC = 10\\mathrm{cm^2}$ 임을 알고 $\\overline{AO} : \\overline{OC} = 2 : 5$ 를 도출함: 40%\n2. 밑변의 비를 이용하여 $\\triangle OBC = 25\\mathrm{cm^2}$ 임을 도출함: 30%\n3. 네 삼각형의 넓이를 모두 더하여 사다리꼴 넓이 $49\\mathrm{cm^2}$ 를 정확히 구함: 30%",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "(1) $2 : 5$ (2) $25\\mathrm{cm^2}$ (3) $49\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-149",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 1,
+"body": "다음 그림에서 사각형 ABCD와 사각형 EFGH가 서로 닮은 도형일 때, 다음 중 옳지 않은 것은? (단, 점 A, B, C, D의 대응점은 각각 점 E, F, G, H이다.)\n\n사각형 ABCD에서 선분 AB = 4 cm, 선분 BC = 6 cm 이고 ∠B = 100˚, ∠D = 110˚ 입니다. \n사각형 EFGH에서 선분 EF = 6 cm 이고 ∠E = 70˚, ∠G = 80˚ 입니다.\n[[그림:/figs/exam-m22/con149.png]]",
+"solution": "- 사각형 ABCD와 사각형 EFGH의 닮음비는 대응변인 선분 AB와 선분 EF의 길이의 비와 같습니다. (4 : 6 = 2 : 3)\n- 대응변의 길이의 비가 일정하므로 선분 BC : 선분 FG = 2 : 3 입니다. (6 : 선분 FG = 2 : 3 → 선분 FG = 9 cm)\n- 닮은 도형에서 대응각의 크기는 서로 같으므로 ∠A = ∠E = 70˚, ∠C = ∠G = 80˚ 입니다.\n- 사각형의 네 내각의 크기의 합은 360˚ 이므로, 사각형 ABCD에서 ∠D = 360˚ - (70˚ + 100˚ + 80˚) = 110˚ 입니다.\n- 대응각의 성질에 따라 ∠H = ∠D = 110˚ 이므로 ⑤번 설명은 옳지 않습니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"두 사각형의 닮음비는 2 : 3 이다.",
+"선분 FG의 길이는 9 cm 이다.",
+"∠A의 크기는 70˚ 이다.",
+"∠C의 크기는 80˚ 이다.",
+"∠H의 크기는 100˚ 이다."
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-150",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 1,
+"body": "다음 그림과 같이 $\\triangle ABC \\sim \\triangle DEF$일 때, 다음 중 옳지 않은 것을 고르시오.\n[[그림:/figs/exam-m22/con150.png]]",
+"solution": "[1단계] 닮은 두 평면도형에서 닮음비가 $m:n$일 때, 둘레의 길이의 비는 $m:n$으로 닮음비와 같다. 넓이의 비가 $m^2:n^2$이 된다.\n[2단계] 따라서 닮음비가 $2:3$일 때, 둘레의 길이의 비는 $2:3$이어야 하므로 ④번은 옳지 않다.\n[3단계] ①, ②, ③, ⑤번은 닮은 도형의 성질과 대응 순서에 모두 올바르게 부합한다.\n따라서 답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"점 $\\mathrm{A}$의 대응점은 점 $\\mathrm{D}$이다.",
+"$\\overline{AB}$의 대응변은 $\\overline{DE}$이다.",
+"$\\angle C$의 대응각은 $\\angle F$이다.",
+"$\\triangle ABC$와 $\\triangle DEF$의 닮음비가 $2:3$이면, 둘레의 길이의 비는 $4:9$이다.",
+"닮은 두 도형에서 대응각의 크기는 각각 같다."
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-151",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 1,
+"body": "다음 그림과 같이 $\\triangle ABC \\sim \\triangle DEF$일 때, $\\overline{AB} = 8\\mathrm{cm}$, $\\overline{AC} = 10\\mathrm{cm}$, $\\overline{DE} = 12\\mathrm{cm}$이고 $\\angle B = 75^\\circ$, $\\angle F = 50^\\circ$이다. 이때 $\\angle A$의 크기와 $\\overline{DF}$의 길이를 바르게 짝지은 것은?\n[[그림:/figs/exam-m22/con151.png]]",
+"solution": "[1단계] 닮은 도형의 성질에 의하여 대응각의 크기는 각각 같으므로 $\\angle E = \\angle B = 75^\\circ$이다.\n[2단계] $\\triangle DEF$에서 삼각형의 내각의 총합은 $180^\\circ$이므로 $\\angle D = 180^\\circ - (75^\\circ + 50^\\circ) = 55^\\circ$이다. 따라서 대응각인 $\\angle A = \\angle D = 55^\\circ$이다.\n[3단계] 두 삼각형의 닮음비는 $\\overline{AB} : \\overline{DE} = 8 : 12 = 2 : 3$이다.\n[4단계] 대응변의 길이의 비는 일정하므로 $\\overline{AC} : \\overline{DF} = 2 : 3$에서 $10 : \\overline{DF} = 2 : 3$이므로 $\\overline{DF} = 15\\mathrm{cm}$이다.\n따라서 답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\angle A = 55^\\circ$, $\\overline{DF} = 15\\mathrm{cm}$",
+"$\\angle A = 55^\\circ$, $\\overline{DF} = 18\\mathrm{cm}$",
+"$\\angle A = 75^\\circ$, $\\overline{DF} = 15\\mathrm{cm}$",
+"$\\angle A = 75^\\circ$, $\\overline{DF} = 18\\mathrm{cm}$",
+"$\\angle A = 80^\\circ$, $\\overline{DF} = 15\\mathrm{cm}$"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-152",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 1,
+"body": "다음 중 항상 닮은 도형인 것은?",
+"solution": "항상 닮은 도형이 되는 조건은 다음과 같습니다.\n평면도형: 두 원, 중심각의 크기가 같은 두 부채꼴, 변의 개수가 같은 두 정다각형, 두 직각이등변삼각형 등\n입체도형: 두 구, 면의 개수가 같은 두 정다면체 등\n① 두 이등변삼각형은 꼭지각의 크기가 다를 수 있으므로 항상 닮음이 아닙니다.\n②, ⑤ 두 직사각형과 두 마름모는 이웃하는 변의 길이의 비가 다를 수 있으므로 항상 닮음이 아닙니다.\n④ 두 원기둥은 밑면의 반지름과 높이의 비가 다를 수 있으므로 항상 닮음이 아닙니다.\n③ 정팔면체는 정다면체이므로 두 정팔면체는 항상 닮은 도형입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"두 이등변삼각형",
+"두 직사각형",
+"두 정팔면체",
+"두 원기둥",
+"두 마름모"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-153",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 2,
+"body": "$\\triangle ABC \\sim \\triangle DEF$이고 닮음비가 $3 : 4$이다. $\\triangle ABC$의 둘레의 길이가 $24\\,\\mathrm{cm}$이고 $\\triangle DEF$의 넓이가 $80\\,\\mathrm{cm^2}$일 때, $\\triangle DEF$의 둘레의 길이와 $\\triangle ABC$의 넓이를 차례로 바르게 짝지은 것은?",
+"solution": "[1단계] 두 삼각형의 닮음비가 $3 : 4$이므로 둘레의 길이의 비도 $3 : 4$입니다.\n$\\triangle DEF$의 둘레의 길이를 $x\\,\\mathrm{cm}$라고 하면\n$24 : x = 3 : 4 \\implies 3x = 96 \\implies x = 32\\,\\mathrm{cm}$ 입니다.\n[2단계] 닮음비가 $3 : 4$이므로 넓이의 비는 $3^2 : 4^2 = 9 : 16$입니다.\n$\\triangle ABC$의 넓이를 $y\\,\\mathrm{cm^2}$라고 하면\n$y : 80 = 9 : 16 \\implies 16y = 720 \\implies y = 45\\,\\mathrm{cm^2}$ 입니다.\n따라서 $\\triangle DEF$의 둘레의 길이는 $32\\,\\mathrm{cm}$이고, $\\triangle ABC$의 넓이는 $45\\,\\mathrm{cm^2}$입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$30\\,\\mathrm{cm}, 45\\,\\mathrm{cm^2}$",
+"$32\\,\\mathrm{cm}, 45\\,\\mathrm{cm^2}$",
+"$32\\,\\mathrm{cm}, 60\\,\\mathrm{cm^2}$",
+"$36\\,\\mathrm{cm}, 45\\,\\mathrm{cm^2}$",
+"$36\\,\\mathrm{cm}, 60\\,\\mathrm{cm^2}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-154",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 2,
+"body": "다음 그림에서 $\\triangle ABC \\sim \\triangle ADE$이고, $\\overline{AB} = 8\\,\\mathrm{cm}$, $\\overline{AD} = 12\\,\\mathrm{cm}$, $\\overline{AE} = 9\\,\\mathrm{cm}$이다. 이때 $\\overline{AC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con154.png]]",
+"solution": "[1단계] $\\triangle ABC \\sim \\triangle ADE$이므로 대응변의 길이의 비는 일정하다. 대응 순서에 따라 $\\overline{AB} : \\overline{AD} = \\overline{AC} : \\overline{AE}$가 성립한다.\n[2단계] 주어진 값을 대입하면 $8 : 12 = \\overline{AC} : 9$이다.\n[3단계] 비례식을 풀면 $12 \\times \\overline{AC} = 8 \\times 9$, 즉 $12 \\overline{AC} = 72$이므로 $\\overline{AC} = 6\\,\\mathrm{cm}$이다.\n따라서 답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-155",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 2,
+"body": "서로 닮은 두 원기둥 $A$, $B$가 있다. 원기둥 $A$의 밑면의 반지름의 길이가 $4\\,\\mathrm{cm}$이고 원기둥 $B$의 밑면의 반지름의 길이가 $6\\,\\mathrm{cm}$일 때, 원기둥 $A$의 겉넓이가 $32\\pi\\,\\mathrm{cm^2}$이면 원기둥 $B$의 겉넓이는?",
+"solution": "[1단계] 두 원기둥 $A$, $B$의 밑면의 반지름의 길이의 비가 $4 : 6 = 2 : 3$이므로 닮음비는 $2 : 3$입니다.\n[2단계] 닮음비가 $2 : 3$이므로 겉넓이의 비는 $2^2 : 3^2 = 4 : 9$입니다.\n[3단계] 원기둥 $B$의 겉넓이를 $x\\,\\mathrm{cm^2}$라고 하면\n$4 : 9 = 32\\pi : x$\n$4x = 288\\pi$\n$x = 72\\pi$\n따라서 원기둥 $B$의 겉넓이는 $72\\pi\\,\\mathrm{cm^2}$입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$48\\pi\\,\\mathrm{cm^2}$",
+"$54\\pi\\,\\mathrm{cm^2}$",
+"$64\\pi\\,\\mathrm{cm^2}$",
+"$72\\pi\\,\\mathrm{cm^2}$",
+"$81\\pi\\,\\mathrm{cm^2}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-156",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 2,
+"body": "다음 그림에서 $\\overline{AB} = 12\\,\\mathrm{cm}$, $\\overline{AC} = 15\\,\\mathrm{cm}$, $\\overline{AD} = 5\\,\\mathrm{cm}$, $\\overline{AE} = 4\\,\\mathrm{cm}$, $\\overline{DE} = 6\\,\\mathrm{cm}$일 때, $\\overline{BC}$의 길이는?\n[[그림:/figs/exam-m22/con156.png]]",
+"solution": "[1단계] $\\triangle ADE$와 $\\triangle ACB$에서\n$\\overline{AD} : \\overline{AC} = 5 : 15 = 1 : 3$,\n$\\overline{AE} : \\overline{AB} = 4 : 12 = 1 : 3$ 이고,\n$\\angle A$는 공통이므로 $\\triangle ADE \\sim \\triangle ACB$ ($\\mathrm{SAS}$ 닮음) 입니다.\n[2단계] 두 삼각형의 닮음비가 $1 : 3$이므로\n$\\overline{DE} : \\overline{CB} = 1 : 3$ 입니다.\n[3단계] $6 : \\overline{BC} = 1 : 3$ 이므로 $\\overline{BC} = 18\\,\\mathrm{cm}$ 입니다.\n주의: 대응하는 변을 찾을 때 짧은 변은 짧은 변끼리, 긴 변은 긴 변끼리 짝지어야 합니다 ($\\overline{AD}$와 $\\overline{AC}$, $\\overline{AE}$와 $\\overline{AB}$).",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$12\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-157",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 2,
+"body": "다음 그림에서 $\\angle B = \\angle AED$ 이고, $\\overline{AD} = 4\\,\\mathrm{cm}$, $\\overline{AE} = 5\\,\\mathrm{cm}$, $\\overline{EC} = 3\\,\\mathrm{cm}$일 때, $\\overline{DB}$의 길이는?\n[[그림:/figs/exam-m22/con157.png]]",
+"solution": "[1단계] $\\triangle ADE$와 $\\triangle ABC$에서\n$\\angle A$는 공통이고, 주어진 조건에서 $\\angle AED = \\angle B$ 이므로\n$\\triangle ADE \\sim \\triangle ABC$ ($\\mathrm{AA}$ 닮음) 입니다.\n[2단계] $\\overline{AC} = \\overline{AE} + \\overline{EC} = 5 + 3 = 8\\,\\mathrm{cm}$ 이고,\n대응변의 비가 같으므로 $\\overline{AD} : \\overline{AC} = \\overline{AE} : \\overline{AB}$ 가 성립합니다.\n[3단계] $4 : 8 = 5 : \\overline{AB}$\n$1 : 2 = 5 : \\overline{AB}$ 이므로 $\\overline{AB} = 10\\,\\mathrm{cm}$ 입니다.\n따라서 $\\overline{DB} = \\overline{AB} - \\overline{AD} = 10 - 4 = 6\\,\\mathrm{cm}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-158",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 3,
+"body": "다음 그림과 같이 $\\angle A = 90^\\circ$인 직각삼각형 $ABC$의 꼭짓점 $A$에서 빗변 $BC$에 내린 수선의 발을 $D$라고 하자. $\\overline{BD} = 4\\,\\mathrm{cm}$, $\\overline{DC} = 9\\,\\mathrm{cm}$일 때, $\\triangle ADC$의 넓이는?\n[[그림:/figs/exam-m22/con158.png]]",
+"solution": "[1단계] 직각삼각형의 닮음의 응용 공식에 의해 $\\overline{AD}^2 = \\overline{BD} \\times \\overline{DC}$ 가 성립합니다.\n[2단계] $\\overline{AD}^2 = 4 \\times 9 = 36$ 이므로 $\\overline{AD} = 6\\,\\mathrm{cm}$ 입니다.\n[3단계] 따라서 구하는 $\\triangle ADC$의 넓이는\n$\\dfrac{1}{2} \\times \\overline{DC} \\times \\overline{AD} = \\dfrac{1}{2} \\times 9 \\times 6 = 27\\,\\mathrm{cm^2}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$18\\,\\mathrm{cm^2}$",
+"$24\\,\\mathrm{cm^2}$",
+"$27\\,\\mathrm{cm^2}$",
+"$36\\,\\mathrm{cm^2}$",
+"$54\\,\\mathrm{cm^2}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-159",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 2,
+"body": "오른쪽 그림과 같이 원뿔 모양의 그릇에 일정한 속도로 물을 채우고 있다. 물의 높이가 그릇 높이의 $\\dfrac{1}{2}$이 될 때까지 물을 채우는 데 $4$분이 걸렸다면, 이 그릇에 물을 가득 채울 때까지 앞으로 몇 분이 더 걸리겠는가?\n[[그림:/figs/exam-m22/con159.png]]",
+"solution": "[1단계] 물이 채워진 부분의 원뿔과 전체 그릇 모양의 원뿔은 서로 닮은 도형이고, 높이의 비가 $1 : 2$ 이므로 닮음비는 $1 : 2$ 입니다.\n[2단계] 닮음비가 $1 : 2$ 이므로 부피의 비는 $1^3 : 2^3 = 1 : 8$ 입니다.\n[3단계] 전체 그릇을 채우는 데 필요한 물의 양을 $8$이라고 하면, 이미 채워진 물의 양은 $1$이고 더 채워야 할 물의 양은 $8 - 1 = 7$ 입니다.\n물의 양 $1$을 채우는 데 $4$분이 걸리므로, 더 채워야 할 물의 양 $7$을 채우는 데 걸리는 시간은 $7 \\times 4 = 28$분입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$12$분",
+"$16$분",
+"$24$분",
+"$28$분",
+"$32$분"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-160",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 3,
+"body": "닮음비가 $2 : 3$인 두 입체도형 $A$와 $B$가 있다. 입체도형 $A$의 부피가 $160\\mathrm{cm^3}$일 때, 입체도형 $B$의 부피를 구하시오. 또, 입체도형 $B$의 겉넓이가 $270\\mathrm{cm^2}$일 때, 입체도형 $A$의 겉넓이를 구하시오.",
+"solution": "[1단계] 두 입체도형 $A$와 $B$의 닮음비가 $2 : 3$이므로, 부피의 비는 $2^3 : 3^3 = 8 : 27$이다.\n[2단계] 입체도형 $A$의 부피가 $160\\mathrm{cm^3}$이므로, 입체도형 $B$의 부피를 $V$라 하면 $8 : 27 = 160 : V$이다.\n$8V = 27 \\times 160 = 4320 \\implies V = 540\\mathrm{cm^3}$이다.\n[3단계] 닮음비가 $2 : 3$이므로 겉넓이의 비는 $2^2 : 3^2 = 4 : 9$이다.\n[4단계] 입체도형 $B$의 겉넓이가 $270\\mathrm{cm^2}$이므로, 입체도형 $A$의 겉넓이를 $S$라 하면 $4 : 9 = S : 270$이다.\n$9S = 4 \\times 270 = 1080 \\implies S = 120\\mathrm{cm^2}$이다.\n따라서 답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"부피: $540\\mathrm{cm^3}$, 겉넓이: $120\\mathrm{cm^2}$",
+"부피: $480\\mathrm{cm^3}$, 겉넓이: $120\\mathrm{cm^2}$",
+"부피: $540\\mathrm{cm^3}$, 겉넓이: $150\\mathrm{cm^2}$",
+"부피: $480\\mathrm{cm^3}$, 겉넓이: $150\\mathrm{cm^2}$",
+"부피: $360\\mathrm{cm^3}$, 겉넓이: $120\\mathrm{cm^2}$"
+],
+"answer": "①"
+},
+{
+"id": "exam-m22-con-161",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 3,
+"body": "다음 그림과 같이 직사각형 모양의 종이 $ABCD$를 점 $D$가 변 $BC$ 위의 점 $E$에 오도록 선분 $AF$를 접는 선으로 하여 접었다. $\\overline{AB} = 16\\,\\mathrm{cm}$, $\\overline{AD} = 20\\,\\mathrm{cm}$, $\\overline{BE} = 12\\,\\mathrm{cm}$일 때, $\\overline{CF}$의 길이는?\n[[그림:/figs/exam-m22/con161.png]]",
+"solution": "[1단계] 접힌 종이의 성질에 의해 $\\overline{AE} = \\overline{AD} = 20\\,\\mathrm{cm}$ 이고, $\\angle AEF = \\angle D = 90^\\circ$ 입니다.\n$\\overline{BC} = \\overline{AD} = 20\\,\\mathrm{cm}$ 이므로 $\\overline{EC} = \\overline{BC} - \\overline{BE} = 20 - 12 = 8\\,\\mathrm{cm}$ 입니다.\n[2단계] $\\triangle ABE$와 $\\triangle ECF$에서 $\\angle B = \\angle C = 90^\\circ$ 이고,\n$\\angle BAE + \\angle AEB = 90^\\circ$ 이며, 점 $E$는 직선 위의 점이므로 $\\angle AEB + \\angle CEF = 90^\\circ$ 입니다.\n따라서 $\\angle BAE = \\angle CEF$ 가 되어 $\\triangle ABE \\sim \\triangle ECF$ ($\\mathrm{AA}$ 닮음) 입니다.\n[3단계] 대응변의 길이의 비를 세우면 $\\overline{AB} : \\overline{EC} = \\overline{BE} : \\overline{CF}$ 입니다.\n$16 : 8 = 12 : \\overline{CF}$\n$2 : 1 = 12 : \\overline{CF}$ 이므로 $\\overline{CF} = 6\\,\\mathrm{cm}$ 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-162",
+"typeId": "exam-m22-u2m0s0t2",
+"twinGroup": "tw-exam-m22-u2m0s0t2",
+"diff": 3,
+"body": "다음 그림과 같은 평행사변형 $ABCD$에서 점 $E$는 변 $BC$ 위의 점이고, 선분 $AE$의 연장선과 선분 $DC$의 연장선이 만나는 점을 $F$라고 하자. $\\overline{AB} = 12\\,\\mathrm{cm}$, $\\overline{BE} = 8\\,\\mathrm{cm}$, $\\overline{CE} = 4\\,\\mathrm{cm}$일 때, $\\overline{CF}$의 길이를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con162.png]]",
+"solution": "[1단계] $\\triangle ABE$와 $\\triangle FCE$에서\n$\\overline{AB} \\parallel \\overline{DF}$ 이므로 $\\angle BAE = \\angle CFE$ (엇각), $\\angle ABE = \\angle FCE$ (엇각) 입니다.\n따라서 $\\triangle ABE \\sim \\triangle FCE$ ($\\mathrm{AA}$ 닮음) 입니다.\n[2단계] 두 삼각형의 닮음비는 대응하는 변인 $\\overline{BE}$와 $\\overline{CE}$의 비와 같습니다.\n$\\overline{BE} : \\overline{CE} = 8 : 4 = 2 : 1$ 이므로 닮음비는 $2 : 1$ 입니다.\n[3단계] 대응변의 비가 일정하므로 $\\overline{AB} : \\overline{FC} = 2 : 1$ 이 성립합니다.\n$12 : \\overline{FC} = 2 : 1$\n$2\\overline{FC} = 12 \\implies \\overline{FC} = 6\\,\\mathrm{cm}$ 입니다.\n따라서 $\\overline{CF}$의 길이는 $6\\,\\mathrm{cm}$ 입니다.\n\n[채점 기준]\n1단계: $\\triangle ABE \\sim \\triangle FCE$ 임을 근거와 함께 밝히기 (3점)\n2단계: 두 삼각형의 닮음비 구하기 (2점)\n3단계: 비례식을 세워 $\\overline{CF}$의 길이 구하기 (2점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$6\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-163",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 1,
+"body": "다음 중 두 삼각형 $\\triangle ABC$ 와 $\\triangle DEF$ 가 항상 닮은 도형이 되는 조건은?",
+"solution": "[1단계] 각 보기의 조건을 삼각형의 닮음 조건(SSS, SAS, AA)과 비교한다.\n① 대응하는 세 변의 길이의 비가 $3:6 = 4:8 \\neq 5:9$ 이므로 닮음이 아니다.\n② 대응하는 두 변의 길이의 비는 일정하지만, 그 끼인각의 크기가 다르므로 닮음이 아니다.\n③ 대응하는 두 변의 길이의 비가 같고 한 각의 크기가 같지만, 그 각이 두 변의 끼인각이 아니므로 항상 닮음이라고 할 수 없다.\n④ $\\triangle ABC$ 에서 $\\angle C = 180^\\circ - (60^\\circ + 50^\\circ) = 70^\\circ$ 이다. $\\triangle DEF$ 에서 $\\angle D = 180^\\circ - (50^\\circ + 70^\\circ) = 60^\\circ$ 이다. 따라서 두 쌍의 대응각의 크기가 각각 같으므로 AA 닮음이다.\n⑤ $\\triangle ABC$ 에서 $\\angle B = 180^\\circ - (70^\\circ + 40^\\circ) = 70^\\circ$ 이다. $\\triangle DEF$ 에서 $\\angle F = 180^\\circ - (80^\\circ + 70^\\circ) = 30^\\circ$ 이다. 대응각의 크기가 다르므로 닮음이 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{AB}=3, \\overline{BC}=4, \\overline{CA}=5$ 이고 $\\overline{DE}=6, \\overline{EF}=8, \\overline{FD}=9$",
+"$\\overline{AB}=4, \\overline{BC}=6, \\angle B=50^\\circ$ 이고 $\\overline{DE}=8, \\overline{EF}=12, \\angle E=60^\\circ$",
+"$\\overline{AB}=5, \\overline{BC}=7, \\angle A=40^\\circ$ 이고 $\\overline{DE}=10, \\overline{EF}=14, \\angle D=40^\\circ$",
+"$\\angle A=60^\\circ, \\angle B=50^\\circ$ 이고 $\\angle E=50^\\circ, \\angle F=70^\\circ$",
+"$\\angle A=70^\\circ, \\angle C=40^\\circ$ 이고 $\\angle D=80^\\circ, \\angle E=70^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-164",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 1,
+"body": "다음 중 항상 닮은 도형인 것을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. 두 이등변삼각형\nㄴ. 두 정육면체\nㄷ. 반지름의 길이가 같은 두 부채꼴\nㄹ. 꼭지각의 크기가 같은 두 이등변삼각형\nㅁ. 두 마름모",
+"solution": "[1단계] 평면도형과 입체도형 중에서 항상 닮은 도형의 성질을 확인한다.\nㄱ. 두 이등변삼각형은 꼭지각의 크기가 다르면 모양이 다르므로 항상 닮음이 아니다.\nㄴ. 두 정육면체는 모든 면이 정사각형이고 대응하는 모서리의 길이의 비가 일정하므로 항상 닮음이다.\nㄷ. 두 부채꼴은 중심각의 크기가 같아야만 닮은 도형이다. 반지름만 같다고 해서 항상 닮음인 것은 아니다.\nㄹ. 꼭지각의 크기가 같은 두 이등변삼각형은 두 밑각의 크기도 각각 같아지므로 AA 닮음이 성립하여 항상 닮음이다.\nㅁ. 두 마름모는 네 변의 길이는 각각 같지만 내각의 크기가 다를 수 있으므로 항상 닮음이 아니다.\n따라서 항상 닮은 도형은 ㄴ, ㄹ이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-165",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "그림과 같이 $\\triangle ABC$ 의 변 $AB$, $AC$ 위의 점 $D, E$ 에 대하여 $\\triangle ADE \\sim \\triangle ABC$ 가 되기 위한 조건이 아닌 것은?\n[[그림:/figs/exam-m22/con165.png]]",
+"solution": "[1단계] $\\triangle ADE$ 와 $\\triangle ABC$ 는 $\\angle A$ 를 공통으로 가진다.\n① 두 변의 길이의 비가 같고 끼인각이 같으므로 SAS 닮음이 된다.\n② 두 쌍의 대응각의 크기가 각각 같으므로 AA 닮음이 된다. (동위각이 같아 $\\overline{DE} \\parallel \\overline{BC}$ 인 경우)\n③ 두 쌍의 대응각의 크기가 각각 같으므로 AA 닮음이 된다.\n④ $\\overline{AD} : \\overline{DB} = \\overline{AE} : \\overline{EC}$ 이면 $\\overline{AD} : \\overline{AB} = \\overline{AE} : \\overline{AC}$ 가 성립하므로 ①과 같이 SAS 닮음이 된다.\n⑤ 세 변의 길이의 비로 닮음을 증명하려면 $\\overline{AD} : \\overline{AB} = \\overline{DE} : \\overline{BC}$ 가 되어야 한다. $\\overline{DB}$ 는 $\\triangle ABC$ 의 한 변이 아니므로 이 비례식으로는 닮음을 판정할 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{AD} : \\overline{AB} = \\overline{AE} : \\overline{AC}$",
+"$\\angle ADE = \\angle ABC$",
+"$\\angle AED = \\angle ACB$",
+"$\\overline{AD} : \\overline{DB} = \\overline{AE} : \\overline{EC}$",
+"$\\overline{DE} : \\overline{BC} = \\overline{AD} : \\overline{DB}$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-166",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "그림과 같은 삼각형 ABC에서 점 D, E는 각각 선분 AB, AC 위의 점입니다. 선분 AB = 10 cm, 선분 AC = 12 cm, 선분 AD = 6 cm, 선분 AE = 5 cm 이고 선분 BC = 16 cm 일 때, 선분 DE의 길이를 구하시오.\n[[그림:/figs/exam-m22/con166.png]]",
+"solution": "- 겹쳐 있는 두 삼각형을 분리하여 생각합니다. 삼각형 ADE와 삼각형 ACB에서 ∠A는 공통입니다.\n- 두 변의 길이의 비를 확인하면 선분 AD : 선분 AC = 6 : 12 = 1 : 2 이고, 선분 AE : 선분 AB = 5 : 10 = 1 : 2 입니다.\n- 대응하는 두 쌍의 변의 길이의 비가 같고 그 끼인각의 크기가 같으므로 두 삼각형은 SAS 닮음입니다. (예: 설계도를 실제 건물로 2배 확대하는 것과 같은 원리입니다.)\n- 두 삼각형의 닮음비가 1 : 2 이므로, 대응변인 선분 DE : 선분 CB = 1 : 2 가 성립합니다.\n- 선분 DE : 16 = 1 : 2 → 선분 DE = 8 cm 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"6 cm",
+"7 cm",
+"8 cm",
+"9 cm",
+"10 cm"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-167",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "그림과 같이 ∠A = 90˚ 인 직각삼각형 ABC에서 꼭짓점 A에서 빗변 BC에 내린 수선의 발을 D라 합니다. 선분 AB = 15 cm, 선분 AC = 20 cm, 선분 BC = 25 cm 일 때, 선분 AD의 길이와 선분 BD의 길이의 합을 구하시오.\n[[그림:/figs/exam-m22/con167.png]]",
+"solution": "- 삼각형 ABC 넓이를 두 가지 방향에서 접근하여 비교합니다. 선분 AD × 선분 BC = 선분 AB × 선분 AC 가 성립합니다.\n- 선분 AD × 25 = 15 × 20 → 선분 AD × 25 = 300 → 선분 AD = 12 cm 입니다.\n- 직각삼각형의 닮음 성질(AA 닮음)에 의해 선분 AB² = 선분 BD × 선분 BC 공식이 성립합니다.\n- 15² = 선분 BD × 25 → 225 = 선분 BD × 25 → 선분 BD = 9 cm 입니다.\n- 따라서 구하고자 하는 선분 AD + 선분 BD = 12 + 9 = 21 cm 입니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"18 cm",
+"19 cm",
+"20 cm",
+"21 cm",
+"22 cm"
+],
+"answer": "④"
+},
+{
+"id": "exam-m22-con-168",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\triangle ABC$의 변 $AB$ 위의 점 $D$와 변 $BC$ 위의 점 $E$에 대하여 $\\angle C = \\angle BDE$이다. $\\overline{AD} = 4\\,\\mathrm{cm}$, $\\overline{BD} = 6\\,\\mathrm{cm}$, $\\overline{BE} = 5\\,\\mathrm{cm}$일 때, $\\overline{EC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con168.png]]",
+"solution": "[1단계] $\\triangle ABC$와 $\\triangle EBD$에서 $\\angle B$는 공통이고 $\\angle ACB = \\angle EDB$이므로 $\\triangle ABC \\sim \\triangle EBD$ (AA 닮음)이다.\n[2단계] $\\overline{AB} = \\overline{AD} + \\overline{DB} = 4 + 6 = 10\\,\\mathrm{cm}$이다.\n[3단계] 대응변의 길이의 비가 같으므로 $\\overline{AB} : \\overline{EB} = \\overline{BC} : \\overline{BD}$, 즉 $10 : 5 = \\overline{BC} : 6$에서 $\\overline{BC} = 12\\,\\mathrm{cm}$이다.\n[4단계] 따라서 $\\overline{EC} = \\overline{BC} - \\overline{BE} = 12 - 5 = 7\\,\\mathrm{cm}$이다.\n따라서 답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-169",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "다음 그림과 같이 $\\triangle ABC$의 변 $AB$ 위에 점 $D$, 변 $AC$ 위에 점 $E$가 있다. $\\overline{AD} = 6\\mathrm{cm}$, $\\overline{DB} = 4\\mathrm{cm}$, $\\overline{AE} = 5\\mathrm{cm}$, $\\overline{EC} = 7\\mathrm{cm}$, $\\overline{DE} = 7\\mathrm{cm}$일 때, $\\overline{BC}$의 길이를 구하시오.\n[[그림:/figs/exam-m22/con169.png]]",
+"solution": "[1단계] $\\overline{AB} = 6 + 4 = 10\\mathrm{cm}$, $\\overline{AC} = 5 + 7 = 12\\mathrm{cm}$이다.\n[2단계] $\\triangle ADE$와 $\\triangle ACB$에서 $\\overline{AD} : \\overline{AC} = 6 : 12 = 1 : 2$, $\\overline{AE} : \\overline{AB} = 5 : 10 = 1 : 2$이고 $\\angle A$는 공통이므로 $\\triangle ADE \\sim \\triangle ACB$ (SAS 닮음)이다.\n[3단계] 닮음비가 $1 : 2$이므로 $\\overline{DE} : \\overline{CB} = 1 : 2$, 즉 $7 : \\overline{BC} = 1 : 2$에서 $\\overline{BC} = 14\\mathrm{cm}$이다.\n따라서 답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$\\overline{BC} = 10.5\\mathrm{cm}$",
+"$\\overline{BC} = 11.5\\mathrm{cm}$",
+"$\\overline{BC} = 12\\mathrm{cm}$",
+"$\\overline{BC} = 13\\mathrm{cm}$",
+"$\\overline{BC} = 14\\mathrm{cm}$"
+],
+"answer": "⑤"
+},
+{
+"id": "exam-m22-con-170",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "그림과 같은 $\\triangle ABC$ 에서 $\\overline{AB} = 8\\mathrm{cm}, \\overline{AC} = 10\\mathrm{cm}, \\overline{BC} = 12\\mathrm{cm}$ 이다. 변 $AC$ 위에 $\\overline{AD} = 4\\mathrm{cm}$ 가 되도록 점 $D$ 를 잡고, 변 $AB$ 위에 $\\overline{AE} = 5\\mathrm{cm}$ 가 되도록 점 $E$ 를 잡을 때, 선분 $DE$ 의 길이는?\n[[그림:/figs/exam-m22/con170.png]]",
+"solution": "[1단계] $\\triangle ADE$ 와 $\\triangle ABC$ 에서 겹쳐진 공통각을 찾는다.\n$\\angle A$ 는 두 삼각형의 공통각이다.\n[2단계] 대응하는 두 변의 길이의 비를 확인한다.\n$\\overline{AD} : \\overline{AB} = 4 : 8 = 1 : 2$\n$\\overline{AE} : \\overline{AC} = 5 : 10 = 1 : 2$\n따라서 대응하는 두 변의 길이의 비가 같고 그 끼인각의 크기가 같으므로 $\\triangle ADE \\sim \\triangle ABC$ (SAS 닮음) 이다.\n[3단계] 닮음비를 이용하여 $\\overline{DE}$ 의 길이를 구한다.\n닮음비가 $1 : 2$ 이므로 $\\overline{DE} : \\overline{BC} = 1 : 2$ 이다.\n$\\overline{DE} : 12 = 1 : 2 \\implies 2\\overline{DE} = 12 \\implies \\overline{DE} = 6\\mathrm{cm}$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$",
+"$7\\mathrm{cm}$",
+"$8\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-171",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "그림과 같이 두 선분 $AB$ 와 $CD$ 가 점 $P$ 에서 만나고 $\\angle PAC = \\angle PDB$ 이다. $\\overline{PA} = 12\\mathrm{cm}, \\overline{PC} = 8\\mathrm{cm}, \\overline{PD} = 6\\mathrm{cm}$ 일 때, 선분 $PB$ 의 길이는?\n[[그림:/figs/exam-m22/con171.png]]",
+"solution": "[1단계] 두 삼각형 $\\triangle PAC$ 와 $\\triangle PDB$ 에서 대응각을 찾는다.\n맞꼭지각의 크기는 같으므로 $\\angle APC = \\angle DPB$ 이다.\n문제의 조건에서 $\\angle PAC = \\angle PDB$ 이므로, 두 쌍의 대응각의 크기가 각각 같아 $\\triangle PAC \\sim \\triangle PDB$ (AA 닮음) 이다.\n[2단계] 닮음비를 구하고 $\\overline{PB}$ 의 길이를 계산한다.\n대응변인 $\\overline{PA}$ 와 $\\overline{PD}$ 의 길이의 비가 닮음비가 된다.\n닮음비 $= \\overline{PA} : \\overline{PD} = 12 : 6 = 2 : 1$\n대응변인 $\\overline{PC}$ 와 $\\overline{PB}$ 의 길이의 비도 $2 : 1$ 이 되어야 하므로,\n$8 : \\overline{PB} = 2 : 1 \\implies 2\\overline{PB} = 8 \\implies \\overline{PB} = 4\\mathrm{cm}$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$",
+"$9\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-172",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "그림과 같이 $\\angle A = 90^\\circ$ 인 직각삼각형 $ABC$ 의 꼭짓점 $A$ 에서 빗변 $BC$ 에 내린 수선의 발을 $D$ 라 하자. $\\overline{AD} = 6\\mathrm{cm}, \\overline{BD} = 4\\mathrm{cm}$ 일 때, $\\overline{CD}$ 의 길이와 $\\triangle ABC$ 의 넓이를 차례대로 바르게 나열한 것은?\n[[그림:/figs/exam-m22/con172.png]]",
+"solution": "[1단계] 직각삼각형의 닮음 공식을 이용하여 $\\overline{CD}$ 의 길이를 구한다.\n$\\triangle DBA \\sim \\triangle DAC$ 이므로 $\\overline{AD}^2 = \\overline{BD} \\times \\overline{CD}$ 가 성립한다.\n$6^2 = 4 \\times \\overline{CD} \\implies 36 = 4\\overline{CD} \\implies \\overline{CD} = 9\\mathrm{cm}$\n[2단계] 빗변 $\\overline{BC}$ 의 길이를 구하고 $\\triangle ABC$ 의 넓이를 계산한다.\n$\\overline{BC} = \\overline{BD} + \\overline{CD} = 4 + 9 = 13\\mathrm{cm}$\n$\\triangle ABC$ 의 넓이 $= \\dfrac{1}{2} \\times \\overline{BC} \\times \\overline{AD} = \\dfrac{1}{2} \\times 13 \\times 6 = 39\\mathrm{cm^2}$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$8\\mathrm{cm}, 36\\mathrm{cm^2}$",
+"$9\\mathrm{cm}, 39\\mathrm{cm^2}$",
+"$9\\mathrm{cm}, 78\\mathrm{cm^2}$",
+"$12\\mathrm{cm}, 39\\mathrm{cm^2}$",
+"$12\\mathrm{cm}, 52\\mathrm{cm^2}$"
+],
+"answer": "②"
+},
+{
+"id": "exam-m22-con-173",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 2,
+"body": "키가 $1.6\\mathrm{m}$ 인 학생이 나무의 높이를 측정하기 위해 지면에 거울을 놓았다. 학생이 거울로부터 $2\\mathrm{m}$ 떨어져 섰을 때, 거울을 통해 나무의 꼭대기가 보였다. 거울에서 나무의 밑동까지의 거리가 $10\\mathrm{m}$ 일 때, 나무의 높이는? (단, 지면과 거울은 평행하고, 빛의 입사각과 반사각의 크기는 같다.)\n[[그림:/figs/exam-m22/con173.png]]",
+"solution": "[1단계] 입사각과 반사각의 원리를 통해 직각삼각형의 닮음을 확인한다.\n학생의 눈높이를 나타내는 직각삼각형과 나무의 높이를 나타내는 직각삼각형은 수직인 직각을 공통으로 가지고, 거울에서의 입사각과 반사각이 같으므로 거울 쪽의 예각 크기도 같다.\n따라서 두 직각삼각형은 AA 닮음이다.\n[2단계] 비례식을 세워 나무의 높이를 계산한다.\n두 삼각형의 밑변의 비가 닮음비가 되므로 닮음비는 $2 : 10 = 1 : 5$ 이다.\n나무의 높이를 $h$ 라 하면 높이의 비도 $1 : 5$ 이다.\n$1.6 : h = 1 : 5 \\implies h = 1.6 \\times 5 = 8\\mathrm{m}$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$6.4\\mathrm{m}$",
+"$7.2\\mathrm{m}$",
+"$8\\mathrm{m}$",
+"$9.6\\mathrm{m}$",
+"$10\\mathrm{m}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-174",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 3,
+"body": "그림과 같이 변의 길이가 $16\\mathrm{cm}$ 인 정사각형 $ABCD$ 에서 변 $BC$ 의 중점을 $M$ 이라 하자. 변 $CD$ 위의 한 점 $E$ 에 대하여 $\\angle AME = 90^\\circ$ 일 때, 선분 $CE$ 의 길이는?\n[[그림:/figs/exam-m22/con174.png]]",
+"solution": "[1단계] $\\triangle ABM$ 과 $\\triangle MCE$ 의 각의 관계를 파악한다.\n정사각형이므로 $\\angle B = \\angle C = 90^\\circ$ 이다.\n$\\triangle ABM$ 에서 $\\angle BAM + \\angle AMB = 90^\\circ$ 이다.\n점 $M$ 은 평각 $180^\\circ$ 를 이루므로 $\\angle AMB + \\angle AME + \\angle EMC = 180^\\circ$ 이다.\n조건에서 $\\angle AME = 90^\\circ$ 이므로 $\\angle AMB + \\angle EMC = 90^\\circ$ 이다.\n따라서 $\\angle BAM = \\angle EMC$ 가 성립한다.\n두 직각삼각형에서 직각 외의 한 예각의 크기가 같으므로 $\\triangle ABM \\sim \\triangle MCE$ (AA 닮음) 이다.\n[2단계] 비례식을 세워 선분 $CE$ 의 길이를 구한다.\n점 $M$ 이 $\\overline{BC}$ 의 중점이므로 $\\overline{BM} = \\overline{MC} = 8\\mathrm{cm}$ 이다.\n닮음비는 빗변이 아닌 대응변 $\\overline{AB}$ 와 $\\overline{MC}$ 를 통해 구한다.\n$\\overline{AB} : \\overline{MC} = 16 : 8 = 2 : 1$\n따라서 대응변인 $\\overline{BM}$ 과 $\\overline{CE}$ 의 비도 $2 : 1$ 이다.\n$\\overline{BM} : \\overline{CE} = 8 : \\overline{CE} = 2 : 1 \\implies 2\\overline{CE} = 8 \\implies \\overline{CE} = 4\\mathrm{cm}$",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "객관식",
+"choices": [
+"$2\\mathrm{cm}$",
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$",
+"$6\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "exam-m22-con-175",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 3,
+"body": "그림과 같이 직사각형 ABCD 모양의 종이를 꼭짓점 D가 변 BC 위의 점 E에 오도록 선분 AF를 접는 선으로 하여 접었습니다. 선분 AB = 8 cm, 선분 BC = 10 cm, 선분 BE = 6 cm 일 때, 선분 CF의 길이를 구하시오.\n[[그림:/figs/exam-m22/con175.png]]",
+"solution": "- 직사각형의 성질에 의해 선분 AD = 선분 BC = 10 cm 이고, 점 D가 점 E로 접혀 이동했으므로 선분 AE = 선분 AD = 10 cm 입니다.\n- 직각삼각형 ABE에서 ∠B = 90˚ 이고, 접힌 각인 ∠AEF = ∠D = 90˚ 입니다.\n- 직선 위의 평각 180˚ 에서 ∠AEF = 90˚ 를 빼면 나머지 두 각의 합인 ∠BEA + ∠CEF = 90˚ 가 됩니다.\n- 직각삼각형 ABE에서도 직각을 제외한 두 예각의 합인 ∠BAE + ∠BEA = 90˚ 이므로, 결과적으로 ∠BAE = ∠CEF 가 성립합니다. \n- 따라서 직각삼각형 ABE와 직각삼각형 ECF는 두 각의 크기가 같아 AA 닮음입니다.\n- 선분 CE의 길이는 선분 BC - 선분 BE = 10 - 6 = 4 cm 로 구해집니다.\n- 두 직각삼각형의 대응변의 길이의 비는 선분 AB : 선분 EC = 8 : 4 = 2 : 1 이며, 이것이 곧 닮음비입니다.\n- 구하고자 하는 선분 CF의 대응변은 선분 BE 이므로, 선분 BE : 선분 CF = 2 : 1 이 성립합니다.\n- 6 : 선분 CF = 2 : 1 → 선분 CF = 3 cm 입니다.\n[채점 기준]\n- 접은 성질을 이용하여 선분 AE의 길이를 구하고 직각삼각형 ABE와 ECF가 AA 닮음임을 명시 (40%)\n- 두 삼각형의 대응변을 찾아 닮음비(2 : 1) 도출 (30%)\n- 비례식을 세워 최종적으로 선분 CF의 길이 계산 (30%)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "3 cm",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-176",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 3,
+"body": "다음 그림과 같이 $\\angle A = 90^\\circ$인 직각삼각형 $ABC$의 꼭짓점 $A$에서 빗변 $BC$에 내린 수선의 발을 $H$라 하자. $\\overline{AB} = 12\\,\\mathrm{cm}$, $\\overline{AC} = 16\\,\\mathrm{cm}$, $\\overline{BC} = 20\\,\\mathrm{cm}$일 때, 선분 $AH$의 길이를 구하는 과정을 단계별로 쓰시오.\n[[그림:/figs/exam-m22/con176.png]]",
+"solution": "[1단계] 직각삼각형의 넓이를 두 가지 방식으로 표현하여 방정식을 세운다. 삼각형의 넓이는 $\\dfrac{1}{2} \\times \\overline{AB} \\times \\overline{AC}$이기도 하고, $\\dfrac{1}{2} \\times \\overline{BC} \\times \\overline{AH}$이기도 하다. …… (2점)\n[2단계] $\\dfrac{1}{2} \\times 12 \\times 16 = \\dfrac{1}{2} \\times 20 \\times \\overline{AH}$를 만족하므로, 양변을 정리하면 $192 = 20 \\times \\overline{AH}$이다. …… (2점)\n[3단계] 따라서 $\\overline{AH} = \\dfrac{192}{20} = \\dfrac{48}{5}\\,\\mathrm{cm}$ (또는 $9.6\\,\\mathrm{cm}$)이다. …… (2점)\n따라서 답은 $\\dfrac{48}{5}\\,\\mathrm{cm}$이다.\n[채점 기준]\n- 1단계: 삼각형의 넓이 공식을 이용한 식 수립 (2점)\n- 2단계: 수치 대입 및 방정식 전개 (2점)\n- 3단계: 정확한 최종 길이 도출 (2점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$\\dfrac{48}{5}\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-177",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 3,
+"body": "다음 그림과 같이 $\\angle A = 90^\\circ$인 직각삼각형 $ABC$에서 꼭짓점 $A$에서 빗변 $\\overline{BC}$에 내린 수선의 발을 $D$라 하자. $\\overline{BD} = 4\\mathrm{cm}$, $\\overline{CD} = 9\\mathrm{cm}$일 때, 선분 $\\overline{AD}$의 길이와 삼각형 $\\triangle ABC$의 넓이를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con177.png]]",
+"solution": "[1단계] $\\triangle DBA$와 $\\triangle DAC$에서 $\\angle BDA = \\angle ADC = 90^\\circ$이고, $\\angle DBA = 90^\\circ - \\angle C = \\angle DAC$이므로 $\\triangle DBA \\sim \\triangle DAC$ (AA 닮음)이다.\n[2단계] 따라서 $\\overline{BD} : \\overline{AD} = \\overline{AD} : \\overline{CD}$이므로 $\\overline{AD}^2 = \\overline{BD} \\times \\overline{CD} = 4 \\times 9 = 36$이고, $\\overline{AD} > 0$이므로 $\\overline{AD} = 6\\mathrm{cm}$이다.\n[3단계] $\\overline{BC} = \\overline{BD} + \\overline{CD} = 4 + 9 = 13\\mathrm{cm}$이다.\n[4단계] $\\triangle ABC$의 넓이는 $\\dfrac{1}{2} \\times \\overline{BC} \\times \\overline{AD} = \\dfrac{1}{2} \\times 13 \\times 6 = 39\\mathrm{cm^2}$이다.\n따라서 답은 $\\overline{AD} = 6\\mathrm{cm}$, 넓이 $39\\mathrm{cm^2}$이다.\n[채점 기준]\n- $\\overline{AD}$의 길이를 구한 과정과 정답: 3점\n- $\\overline{BC}$의 길이 확인: 1점\n- 최종 $\\triangle ABC$의 넓이 도출: 2점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$\\overline{AD} = 6\\mathrm{cm}$, 넓이 $39\\mathrm{cm^2}$",
+"selfGrade": true
+},
+{
+"id": "exam-m22-con-178",
+"typeId": "exam-m22-u2m0s1t2",
+"twinGroup": "tw-exam-m22-u2m0s1t2",
+"diff": 3,
+"body": "그림과 같은 $\\triangle ABC$ 에서 $\\overline{AB} = 14\\mathrm{cm}, \\overline{AC} = 10\\mathrm{cm}$ 이다. 변 $AB$ 위에 점 $D$, 변 $AC$ 위에 점 $E$ 를 $\\angle ADE = \\angle ACB$ 가 되도록 잡는다. $\\overline{AD} = 5\\mathrm{cm}$ 일 때, 선분 $CE$ 의 길이를 구하는 과정을 서술하시오.\n[[그림:/figs/exam-m22/con178.png]]",
+"solution": "[1단계] $\\triangle ADE$ 와 $\\triangle ACB$ 에서 $\\angle A$ 는 공통이고, 조건에서 $\\angle ADE = \\angle ACB$ 이므로 $\\triangle ADE \\sim \\triangle ACB$ (AA 닮음) 이다.\n[2단계] 대응변의 길이의 비가 일정함을 이용하여 $\\overline{AE}$ 의 길이를 구한다.\n$\\overline{AD} : \\overline{AC} = \\overline{AE} : \\overline{AB}$ 이므로 $5 : 10 = \\overline{AE} : 14$ 이다.\n비례식을 풀면 $10\\overline{AE} = 70 \\implies \\overline{AE} = 7\\mathrm{cm}$ 이다.\n[3단계] $\\overline{CE} = \\overline{AC} - \\overline{AE}$ 이므로 $\\overline{CE} = 10 - 7 = 3\\mathrm{cm}$ 이다.\n\n[채점 기준]\n- $\\triangle ADE \\sim \\triangle ACB$ 임을 알고 AA 닮음 조건을 바르게 제시한 경우 (3점)\n- 닮음비를 이용하여 $\\overline{AE}$ 의 길이를 바르게 구한 경우 (3점)\n- $\\overline{CE}$ 의 길이를 바르게 구한 경우 (1점)",
+"source": "대치스파르타 프리미엄 · 2026 2학기 중간 시험대비 · 중2-2 수학",
+"kind": "주관식",
+"answer": "$3\\mathrm{cm}$",
+"selfGrade": true
+}
+]
