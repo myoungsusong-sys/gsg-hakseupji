@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-m22-07-adv-001",
+"typeId": "set2-m22-07-u0m0s0t3",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"diff": 4,
+"body": "삼각형 $ABC$의 무게중심을 $G$, 삼각형 $GBC$의 무게중심을 $H$라 하자. 점 $G$를 지나 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $E$, $F$라 하고, 점 $H$를 지나 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $P$, $Q$라 한다.\n\n삼각형 $BGH$의 넓이가 $9\\,\\mathrm{cm}^2$일 때, 사각형 $EFQP$의 넓이는?",
+"solution": "[1단계] 변 $BC$의 중점을 $D$라 하면 무게중심의 성질에 의해\n$AG:GD=2:1$, $GH:HD=2:1$이다.\n따라서\n$\\dfrac{AG}{AD}=\\dfrac23$, $\\dfrac{AH}{AD}=\\dfrac89$이다.\n\n[2단계] 삼각형 $GBD$의 넓이는 삼각형 $ABC$의 넓이의 $\\dfrac16$이다. 삼각형 $BGH$와 $BGD$는 꼭짓점 $B$에서 직선 $AD$에 이르는 높이가 같으므로\n$\\dfrac{[BGH]}{[BGD]}=\\dfrac{GH}{GD}=\\dfrac23$이다.\n여기서 $[XYZ]$는 삼각형 $XYZ$의 넓이를 뜻한다.\n\n따라서\n$[BGH]=\\dfrac19[ABC]$이므로 $[ABC]=81\\,\\mathrm{cm}^2$이다.\n\n[3단계] 평행선에 의한 닮음과 닮은 도형의 넓이의 비를 이용하면\n$[AEF]=\\left(\\dfrac23\\right)^2[ABC]$,\n$[APQ]=\\left(\\dfrac89\\right)^2[ABC]$이다.\n\n그러므로 사각형 $EFQP$의 넓이는\n$\\left(\\dfrac{64}{81}-\\dfrac49\\right)\\times81=28\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 07 삼각형의 무게중심",
+"kind": "객관식",
+"choices": [
+"$14\\,\\mathrm{cm}^2$",
+"$21\\,\\mathrm{cm}^2$",
+"$28\\,\\mathrm{cm}^2$",
+"$42\\,\\mathrm{cm}^2$",
+"$56\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-07-adv-002",
+"typeId": "set2-m22-07-u0m0s0t3",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 변 $BC$의 중점을 $D$, 무게중심을 $G$라 하자. 변 $AB$ 위에 $AE:EB=1:2$인 점 $E$를 잡고, 선분 $CE$와 중선 $AD$의 교점을 $P$라 한다.\n\n삼각형 $EPG$의 넓이가 $5\\,\\mathrm{cm}^2$일 때, 사각형 $EBDP$의 넓이는?",
+"solution": "[1단계] 점 $D$를 지나 선분 $CE$에 평행한 직선과 선분 $BE$의 교점을 $F$라 하자.\n\n삼각형 $BCE$에서 $D$는 변 $BC$의 중점이고 $DF\\parallel CE$이므로 $F$는 변 $BE$의 중점이다.\n따라서 $AE=EF=FB$이고 $AE:AF=1:2$이다.\n\n삼각형 $AEP$와 $AFD$는 두 쌍의 대응각이 같으므로 닮음이다. 따라서\n$AP:AD=AE:AF=1:2$이다.\n\n[2단계] 무게중심의 성질에 의해 $AG=\\dfrac23AD$이므로 점들은 중선 위에 $A$, $P$, $G$, $D$의 순서로 놓인다. 따라서\n$PG=\\left(\\dfrac23-\\dfrac12\\right)AD=\\dfrac16AD$이다.\n\n삼각형 $EPG$와 $EAD$는 직선 $AD$에 이르는 높이가 같으므로\n$[EPG]=\\dfrac16[EAD]$이다.\n\n또한 $AE=\\dfrac13AB$이고 $AD$는 중선이므로\n$[EAD]=\\dfrac13[ABD]=\\dfrac16[ABC]$이다.\n\n따라서\n$[EPG]=\\dfrac1{36}[ABC]$이므로 $[ABC]=180\\,\\mathrm{cm}^2$이다.\n\n[3단계] 삼각형 $AEP$와 $AED$의 넓이의 비는 $AP:AD=1:2$이므로\n$[AEP]=\\dfrac12\\times\\dfrac16[ABC]=\\dfrac1{12}[ABC]$이다.\n\n따라서 사각형 $EBDP$의 넓이는\n$[ABD]-[AEP]=\\left(\\dfrac12-\\dfrac1{12}\\right)\\times180=75\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 07 삼각형의 무게중심",
+"kind": "객관식",
+"choices": [
+"$30\\,\\mathrm{cm}^2$",
+"$45\\,\\mathrm{cm}^2$",
+"$60\\,\\mathrm{cm}^2$",
+"$75\\,\\mathrm{cm}^2$",
+"$90\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-07-adv-003",
+"typeId": "set2-m22-07-u0m0s0t3",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$의 무게중심을 $G$라 하고, 삼각형 $ACG$와 삼각형 $BCG$의 무게중심을 각각 $P$, $Q$라 하자.\n\n삼각형 $CGP$의 넓이가 $12\\,\\mathrm{cm}^2$일 때, 삼각형 $CPQ$의 넓이는?",
+"solution": "[1단계] $[XYZ]$를 삼각형 $XYZ$의 넓이라 하자. 점 $P$는 삼각형 $ACG$의 무게중심이므로\n$[CGP]=\\dfrac13[ACG]$이다.\n\n또한 $G$는 삼각형 $ABC$의 무게중심이므로\n$[ACG]=\\dfrac13[ABC]$이다.\n따라서\n$[CGP]=\\dfrac19[ABC]$이므로 $[ABC]=108\\,\\mathrm{cm}^2$이다.\n\n[2단계] 선분 $CG$의 중점을 $M$이라 하자. 무게중심의 성질에 의해\n$MP:MA=MQ:MB=1:3$이다.\n\n삼각형 $MPQ$와 $MAB$는 두 변의 길이의 비와 그 끼인각이 같으므로 닮음이다. 따라서\n$PQ\\parallel AB$, $PQ:AB=1:3$이다.\n\n[3단계] 변 $AB$의 중점을 $R$, 선분 $PQ$와 $MR$의 교점을 $N$이라 하자.\n\n$G$는 중선 $CR$ 위에 있고 $CG=\\dfrac23CR$이다. 따라서\n$CM=\\dfrac13CR$, $MR=\\dfrac23CR$이다.\n\n삼각형 $MNP$와 $MRA$의 닮음에 의해\n$MN=\\dfrac13MR=\\dfrac29CR$이다.\n그러므로\n$CN=CM+MN=\\dfrac59CR$이다.\n\n[4단계] 삼각형 $CPQ$와 $CAB$에서 두 밑변 $PQ$, $AB$가 평행하므로 높이의 비는 $CN:CR=5:9$이다.\n\n따라서\n$\\dfrac{[CPQ]}{[CAB]}=\\dfrac{PQ}{AB}\\times\\dfrac59=\\dfrac13\\times\\dfrac59=\\dfrac5{27}$이다.\n\n그러므로\n$[CPQ]=108\\times\\dfrac5{27}=20\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 07 삼각형의 무게중심",
+"kind": "객관식",
+"choices": [
+"$16\\,\\mathrm{cm}^2$",
+"$18\\,\\mathrm{cm}^2$",
+"$20\\,\\mathrm{cm}^2$",
+"$24\\,\\mathrm{cm}^2$",
+"$36\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-07-adv-004",
+"typeId": "set2-m22-07-u0m0s0t3",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"diff": 4,
+"body": "삼각형 $ABC$에서 변 $BC$의 중점을 $D$, 무게중심을 $G$라 하자. 점 $G$를 지나 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $E$, $F$라 하고, 삼각형 $AEF$의 무게중심을 $H$라 한다.\n\n$GH=4\\,\\mathrm{cm}$이고 삼각형 $HBC$의 넓이가 $90\\,\\mathrm{cm}^2$일 때, 중선 $AD$의 길이와 삼각형 $EHF$의 넓이를 각각 구하는 과정을 쓰시오.",
+"solution": "[1단계] 평행선에 의한 닮음에서\n$EG:BD=GF:DC=AG:AD=2:3$이다.\n$BD=DC$이므로 $EG=GF$이다. 따라서 $AG$는 삼각형 $AEF$의 중선이다.\n\n점 $H$는 삼각형 $AEF$의 무게중심이므로\n$AH=\\dfrac23AG=\\dfrac23\\times\\dfrac23AD=\\dfrac49AD$이다.\n\n[2단계] 따라서\n$GH=AG-AH=\\left(\\dfrac23-\\dfrac49\\right)AD=\\dfrac29AD$이다.\n$GH=4\\,\\mathrm{cm}$이므로\n$AD=4\\times\\dfrac92=18\\,\\mathrm{cm}$이다.\n\n[3단계] $HD=AD-AH=\\dfrac59AD$이다.\n삼각형 $HBC$와 $ABC$는 밑변 $BC$가 같고, 높이의 비는 $HD:AD=5:9$이다.\n\n따라서 삼각형 $ABC$의 넓이는\n$90\\times\\dfrac95=162\\,\\mathrm{cm}^2$이다.\n\n[4단계] 삼각형 $AEF$와 $ABC$의 닮음비는 $2:3$이므로 삼각형 $AEF$의 넓이는\n$162\\times\\dfrac49=72\\,\\mathrm{cm}^2$이다.\n\n점 $H$는 삼각형 $AEF$의 무게중심이므로 삼각형 $EHF$의 넓이는\n$72\\times\\dfrac13=24\\,\\mathrm{cm}^2$이다.\n\n[채점 기준]\n- $G$가 선분 $EF$의 중점임을 보이고 $AH=\\dfrac49AD$를 구함: $2$점\n- $GH=\\dfrac29AD$를 이용하여 $AD$를 구함: $2$점\n- 높이의 비를 이용하여 삼각형 $ABC$의 넓이를 구함: $2$점\n- 닮음의 넓이비와 무게중심의 성질로 삼각형 $EHF$의 넓이를 구함: $2$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 07 삼각형의 무게중심",
+"kind": "주관식",
+"answer": "$AD=18\\,\\mathrm{cm}$, 삼각형 $EHF$의 넓이는 $24\\,\\mathrm{cm}^2$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-07-adv-005",
+"typeId": "set2-m22-07-u0m0s0t3",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$의 무게중심을 $G$, 삼각형 $ABG$의 무게중심을 $H$라 하자. 점 $H$를 지나 변 $AB$에 평행한 직선이 변 $CA$, $CB$와 만나는 점을 각각 $E$, $F$라 한다. 삼각형 $AHB$의 넓이는 $9\\,\\mathrm{cm}^2$이다.\n\n한 학생이 다음과 같이 풀이하였다.\n\n“점 $H$는 무게중심이므로 $CE:CA=2:3$이다. 따라서 삼각형 $CEF$의 넓이는 삼각형 $ABC$의 넓이의 $\\dfrac49$이다.”\n\n이 풀이에서 잘못 적용한 성질을 설명하고, 올바른 닮음비를 이용하여 사각형 $ABFE$의 넓이를 구하는 과정을 쓰시오.",
+"solution": "[1단계] 무게중심이 중선을 꼭짓점에서부터 $2:1$로 나눈다는 성질은 그 무게중심이 속한 삼각형의 중선에 적용해야 한다. 점 $H$는 삼각형 $ABG$의 무게중심이므로, 삼각형 $ABC$에 바로 적용하여 $CE:CA=2:3$이라고 할 수 없다.\n\n[2단계] 변 $AB$의 중점을 $M$이라 하자.\n점 $G$는 중선 $CM$ 위에 있고\n$CG=\\dfrac23CM$, $GM=\\dfrac13CM$이다.\n\n삼각형 $ABG$에서 $GM$은 중선이므로\n$GH=\\dfrac23GM=\\dfrac29CM$이다.\n따라서\n$CH=CG+GH=\\dfrac89CM$이다.\n\n[3단계] 삼각형 $CEH$와 $CAM$은 두 쌍의 대응각이 같으므로 닮음이다. 따라서\n$CE:CA=CH:CM=8:9$이다.\n\n그러므로 삼각형 $CEF$와 $CAB$의 넓이의 비는\n$64:81$이다.\n\n[4단계] 점 $H$는 삼각형 $ABG$의 무게중심이므로\n$[AHB]=\\dfrac13[ABG]=\\dfrac19[ABC]$이다.\n따라서 삼각형 $ABC$의 넓이는 $81\\,\\mathrm{cm}^2$이다.\n\n사각형 $ABFE$의 넓이는\n$\\left(1-\\dfrac{64}{81}\\right)\\times81=17\\,\\mathrm{cm}^2$이다.\n\n[채점 기준]\n- 무게중심의 성질을 적용할 삼각형을 잘못 선택했음을 설명함: $2$점\n- $CH=\\dfrac89CM$을 구함: $2$점\n- 올바른 닮음비와 넓이의 비를 구함: $2$점\n- 전체 넓이를 구하고 사각형의 넓이를 계산함: $2$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 07 삼각형의 무게중심",
+"kind": "주관식",
+"answer": "$CE:CA=8:9$, 사각형 $ABFE$의 넓이는 $17\\,\\mathrm{cm}^2$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-07-adv-006",
+"typeId": "set2-m22-07-u0m0s0t3",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"diff": 4,
+"body": "삼각형 $ABC$ 모양의 종이에서 변 $BC$, $CA$, $AB$의 중점을 각각 $D$, $E$, $F$라 하고, 세 중선의 교점을 $G$라 한다. 세 삼각형 $AFG$, $BGD$, $CGE$의 내부에 파란색을 칠하였다.\n\n점 $G$를 지나 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $U$, $V$라 하자. 선분 $UV$를 따라 종이를 잘라 꼭짓점 $A$가 포함된 삼각형 $AUV$를 떼어 냈더니, 떼어 낸 조각에 포함된 파란색 부분의 넓이가 $20\\,\\mathrm{cm}^2$였다.\n\n남은 종이에 포함된 파란색 부분의 넓이는? 단, 선분의 넓이는 생각하지 않는다.",
+"solution": "[1단계] 삼각형 $ABC$의 넓이를 $S\\,\\mathrm{cm}^2$라 하자.\n세 중선으로 나뉜 여섯 삼각형의 넓이는 모두 같으므로, 처음 파란색 부분의 넓이는\n$\\dfrac{3}{6}S=\\dfrac12S$이다.\n\n[2단계] 무게중심을 지나는 평행선에 의한 닮음에서\n$AV:AC=2:3$이다.\n$AE=\\dfrac12AC$이므로\n$EV=\\left(\\dfrac23-\\dfrac12\\right)AC=\\dfrac16AC$이다.\n\n또한 $EC=\\dfrac12AC$이므로\n$EV:EC=1:3$이다.\n\n[3단계] 떼어 낸 삼각형 $AUV$에 포함된 파란색 부분은 삼각형 $AFG$ 전체와 삼각형 $EGV$이다.\n\n삼각형 $EGV$와 $EGC$는 꼭짓점 $G$에서 직선 $AC$에 이르는 높이가 같으므로\n$[EGV]=\\dfrac13[EGC]=\\dfrac1{18}S$이다.\n\n따라서 떼어 낸 파란색 부분의 넓이는\n$\\dfrac16S+\\dfrac1{18}S=\\dfrac29S$이다.\n\n[4단계] $\\dfrac29S=20$이므로 $S=90$이다.\n따라서 남은 파란색 부분의 넓이는\n$\\dfrac12\\times90-20=25\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 07 삼각형의 무게중심",
+"kind": "객관식",
+"choices": [
+"$10\\,\\mathrm{cm}^2$",
+"$15\\,\\mathrm{cm}^2$",
+"$20\\,\\mathrm{cm}^2$",
+"$25\\,\\mathrm{cm}^2$",
+"$30\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+}
+]

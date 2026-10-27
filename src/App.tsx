@@ -11,6 +11,7 @@ import ParentLogin from './pages/parent/ParentLogin'
 import ParentHome from './pages/parent/ParentHome'
 import StudentHome from './pages/student/StudentHome'
 import StudentWorksheets from './pages/student/StudentWorksheets'
+import StudentNaesin from './pages/student/StudentNaesin'
 import StudentSolve from './pages/student/StudentSolve'
 import StudentResult from './pages/student/StudentResult'
 import StudentWorkbooks from './pages/student/StudentWorkbooks'
@@ -130,6 +131,7 @@ function Gate() {
           <Route path="/student" element={<StudentShell />}>
             <Route index element={<StudentHome />} />
             <Route path="worksheets" element={<StudentWorksheets />} />
+            <Route path="naesin" element={<StudentNaesin />} />
             <Route path="solve/:wsId" element={<StudentSolve />} />
             <Route path="result/:wsId" element={<StudentResult />} />
             <Route path="workbooks" element={<StudentWorkbooks />} />

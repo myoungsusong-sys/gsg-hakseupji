@@ -1,0 +1,112 @@
+[
+{
+"id": "set2-m22-06-basic-001",
+"typeId": "set2-m22-06-u0m0s0t1",
+"twinGroup": "tw-set2-m22-06-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D,E$가 있고 $DE\\parallel BC$이면 $DE:BC=AD:$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$AB$",
+"solution": "정답 $AB$ · $\\triangle ADE\\sim\\triangle ABC$에서 $DE$와 $BC$, $AD$와 $AB$가 각각 대응한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-002",
+"typeId": "set2-m22-06-u0m0s0t1",
+"twinGroup": "tw-set2-m22-06-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D,E$가 있고 $DE\\parallel BC$일 때, $AD=6$, $DB=3$, $AE=8$이면 $EC=$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$4$",
+"solution": "정답 $4$ · $AD:DB=AE:EC$이므로 $EC=8\\times\\frac36=4$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-003",
+"typeId": "set2-m22-06-u0m0s0t1",
+"twinGroup": "tw-set2-m22-06-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "두 직선 위의 점들이 각각 $B,A,D$와 $C,A,E$의 순서로 놓이고 $BC\\parallel DE$일 때, $AB=10$, $AD=4$, $DE=6$이면 $BC=$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$15$",
+"solution": "정답 $15$ · $\\triangle ABC\\sim\\triangle ADE$이므로 $BC=6\\times\\frac{10}{4}=15$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-004",
+"typeId": "set2-m22-06-u0m0s1t1",
+"twinGroup": "tw-set2-m22-06-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "세 평행선이 두 직선에서 잘라 낸 대응하는 선분의 길이에 대하여 $4:6=6:x$일 때 $x=$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$9$",
+"solution": "정답 $9$ · 비례식에서 $4x=36$이므로 $x=9$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-005",
+"typeId": "set2-m22-06-u0m0s1t1",
+"twinGroup": "tw-set2-m22-06-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "사다리꼴 $ABCD$에서 점 $E,F$가 각각 변 $AB,DC$ 위에 있고 $AD\\parallel EF\\parallel BC$일 때, $AD=6$ cm, $BC=15$ cm, $AE:EB=1:2$이면 $EF$의 길이는 ( ) cm이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$9$",
+"solution": "정답 $9$ · 대각선 $AC$와 $EF$의 교점을 $G$라 하면 $EF=EG+GF=15\\times\\frac13+6\\times\\frac23=9$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-006",
+"typeId": "set2-m22-06-u0m0s2t1",
+"twinGroup": "tw-set2-m22-06-u0m0s2t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하면 $BD:DC=AB:$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$AC$",
+"solution": "정답 $AC$ · 삼각형의 각의 이등분선은 대변을 그 각을 이루는 두 변의 길이의 비로 나눈다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-007",
+"typeId": "set2-m22-06-u0m0s2t1",
+"twinGroup": "tw-set2-m22-06-u0m0s2t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 할 때, $AB=9$ cm, $AC=6$ cm, $BC=10$ cm이면 $DC$의 길이는 ( ) cm이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$4$",
+"solution": "정답 $4$ · $BD:DC=3:2$이므로 $DC=10\\times\\frac25=4$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-008",
+"typeId": "set2-m22-06-u0m0s3t1",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$의 중점을 각각 $M,N$이라 할 때, $BC=14$ cm이면 $MN$의 길이는 ( ) cm이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$7$",
+"solution": "정답 $7$ · 중점연결정리에 의해 $MN=\\frac12BC=7$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-009",
+"typeId": "set2-m22-06-u0m0s3t1",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"kind": "주관식",
+"diff": 2,
+"body": "세 변의 길이가 각각 $10$ cm, $14$ cm, $12$ cm인 삼각형의 세 변의 중점을 연결하여 만든 삼각형의 둘레는 ( ) cm이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$18$",
+"solution": "정답 $18$ · 중점을 연결하여 만든 삼각형의 둘레는 원래 삼각형의 둘레의 절반이므로 $(10+14+12)\\div2=18$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-basic-010",
+"typeId": "set2-m22-06-u0m0s3t1",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"kind": "주관식",
+"diff": 2,
+"body": "볼록사각형의 네 변의 중점을 차례로 연결하여 만든 사각형은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "평행사변형",
+"solution": "정답 평행사변형 · 중점연결정리에 의해 마주 보는 두 쌍의 변이 각각 평행하므로 평행사변형이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+}
+]

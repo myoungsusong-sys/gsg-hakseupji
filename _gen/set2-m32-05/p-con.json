@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-m32-05-con-001",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 1,
+"body": "원에 내접하는 사각형 $ABCD$에서 $\\angle BAD=(2x+10)^\\circ$, $\\angle BCD=(3x-5)^\\circ$일 때, $\\angle BCD$의 크기는?\n[[그림:/figs/set2-m32-05/con001.png]]",
+"solution": "원에 내접하는 사각형의 대각의 합은 $180^\\circ$이므로\n$(2x+10)+(3x-5)=180$이다.\n따라서 $5x=175$에서 $x=35$이다.\n그러므로 $\\angle BCD=(3\\times35-5)^\\circ=100^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$80^\\circ$",
+"$85^\\circ$",
+"$90^\\circ$",
+"$100^\\circ$",
+"$105^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-05-con-002",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 2,
+"body": "볼록사각형 $ABCD$에 대한 조건 중, 이 사각형이 원에 내접한다고 판단할 수 있는 것을 〈보기〉에서 모두 고른 것은? 단, 각 조건은 서로 독립적이다.\n〈보기〉\nㄱ. $\\angle BAD=83^\\circ$, $\\angle BCD=97^\\circ$이다.\nㄴ. $\\angle BAD=76^\\circ$, $\\angle ABC=104^\\circ$이다.\nㄷ. 세 점 $B$, $C$, $E$가 이 순서로 한 직선 위에 있고, $\\angle DCE=\\angle BAD=69^\\circ$이다.",
+"solution": "ㄱ. 대각의 합이 $83^\\circ+97^\\circ=180^\\circ$이므로 원에 내접한다.\nㄴ. 주어진 두 각은 이웃한 각이다. 이웃한 두 각의 합이 $180^\\circ$라는 조건만으로는 원에 내접한다고 판단할 수 없다.\nㄷ. 외각 $\\angle DCE$와 그 내대각 $\\angle BAD$가 같으므로 원에 내접한다.\n따라서 옳은 것은 ㄱ, ㄷ이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-05-con-003",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 2,
+"body": "원에 내접하는 사각형 $ABCD$의 변 $\\overline{BC}$를 점 $C$ 쪽으로 연장한 직선 위에 점 $E$가 있다. $\\angle DCE=112^\\circ$, $\\angle ABD=26^\\circ$일 때, $\\angle ADB$의 크기는?\n[[그림:/figs/set2-m32-05/con003.png]]",
+"solution": "원에 내접하는 사각형의 한 외각은 그 내대각과 같으므로\n$\\angle BAD=\\angle DCE=112^\\circ$이다.\n삼각형 $ABD$의 내각의 합은 $180^\\circ$이므로\n$\\angle ADB=180^\\circ-112^\\circ-26^\\circ=42^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$26^\\circ$",
+"$42^\\circ$",
+"$68^\\circ$",
+"$86^\\circ$",
+"$112^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-05-con-004",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 2,
+"body": "원에 내접하는 사각형 $ABCD$에 두 대각선 $\\overline{AC}$, $\\overline{BD}$를 그었다. 변 $\\overline{BC}$를 점 $C$ 쪽으로 연장한 직선 위의 점 $E$에 대하여 $\\angle DCE=104^\\circ$, $\\angle BAC=36^\\circ$이다. $\\angle CBD$의 크기는?\n[[그림:/figs/set2-m32-05/con004.png]]",
+"solution": "외각과 그 내대각의 크기가 같으므로\n$\\angle BAD=\\angle DCE=104^\\circ$이다.\n대각선 $\\overline{AC}$가 $\\angle BAD$를 나누므로\n$\\angle CAD=104^\\circ-36^\\circ=68^\\circ$이다.\n$\\angle CBD$와 $\\angle CAD$는 같은 호 $CD$에 대한 원주각이므로\n$\\angle CBD=68^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$36^\\circ$",
+"$40^\\circ$",
+"$68^\\circ$",
+"$76^\\circ$",
+"$104^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-05-con-005",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 2,
+"body": "볼록사각형 $ABCD$에서 $\\angle BAC=\\angle BDC=36^\\circ$, $\\angle ABD=29^\\circ$, $\\angle ABC=103^\\circ$이다. $\\angle CAD$의 크기는? 단, 두 점 $A$, $D$는 직선 $BC$의 같은 쪽에 있다.\n[[그림:/figs/set2-m32-05/con005.png]]",
+"solution": "두 점 $A$, $D$가 직선 $BC$의 같은 쪽에 있고 $\\angle BAC=\\angle BDC$이므로, 네 점 $A$, $B$, $C$, $D$는 한 원 위에 있다.\n대각선 $\\overline{BD}$가 $\\angle ABC$를 나누므로\n$\\angle CBD=103^\\circ-29^\\circ=74^\\circ$이다.\n$\\angle CAD$와 $\\angle CBD$는 같은 호 $CD$에 대한 원주각이므로\n$\\angle CAD=74^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$29^\\circ$",
+"$36^\\circ$",
+"$67^\\circ$",
+"$74^\\circ$",
+"$77^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-05-con-006",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 3,
+"body": "볼록사각형 $ACBD$에서 두 점 $C$, $D$는 직선 $AB$의 서로 반대쪽에 있다. $\\angle ACB=67^\\circ$, $\\angle ADB=113^\\circ$, $\\angle CAD=72^\\circ$일 때, $\\angle CBD$의 크기는?\n[[그림:/figs/set2-m32-05/con006.png]]",
+"solution": "사각형 $ACBD$에서 $\\angle ACB$와 $\\angle ADB$는 대각이다.\n$\\angle ACB+\\angle ADB=67^\\circ+113^\\circ=180^\\circ$이므로 사각형 $ACBD$는 원에 내접한다.\n이 사각형에서 $\\angle CAD$와 $\\angle CBD$도 대각이므로\n$\\angle CBD=180^\\circ-72^\\circ=108^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$41^\\circ$",
+"$67^\\circ$",
+"$72^\\circ$",
+"$108^\\circ$",
+"$113^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-05-con-007",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 2,
+"body": "평행사변형 $ABCD$의 네 꼭짓점이 한 원 위에 있다. 대각선 $\\overline{BD}$에 대하여 $\\angle ABD=(2x+5)^\\circ$, $\\angle ADB=(x+10)^\\circ$일 때, $\\angle ADB$의 크기는?\n[[그림:/figs/set2-m32-05/con007.png]]",
+"solution": "평행사변형의 대각의 크기는 같으므로 $\\angle BAD=\\angle BCD$이다.\n또한 원에 내접하므로 두 각의 합은 $180^\\circ$이다. 따라서 $\\angle BAD=90^\\circ$이다.\n삼각형 $ABD$에서\n$(2x+5)+(x+10)+90=180$이므로 $3x=75$, $x=25$이다.\n따라서 $\\angle ADB=(25+10)^\\circ=35^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$25^\\circ$",
+"$35^\\circ$",
+"$45^\\circ$",
+"$55^\\circ$",
+"$90^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-05-con-008",
+"typeId": "set2-m32-05-u0m0s0t2",
+"twinGroup": "tw-set2-m32-05-u0m0s0t2",
+"diff": 3,
+"body": "볼록사각형 $ABCD$에서 $\\angle ABC=102^\\circ$, $\\angle ADC=78^\\circ$, $\\angle ABD=31^\\circ$, $\\angle BAC=39^\\circ$이다.\n[[그림:/figs/set2-m32-05/con008.png]]\n네 점 $A$, $B$, $C$, $D$가 한 원 위에 있음을 설명하고, $\\angle BCD$의 크기를 구하는 과정을 서술하시오.",
+"solution": "먼저 $\\angle ABC+\\angle ADC=102^\\circ+78^\\circ=180^\\circ$이다.\n한 쌍의 대각의 합이 $180^\\circ$이므로 사각형 $ABCD$는 원에 내접한다.\n\n따라서 $\\angle BDC$와 $\\angle BAC$는 같은 호 $BC$에 대한 원주각이므로\n$\\angle BDC=\\angle BAC=39^\\circ$이다.\n\n대각선 $\\overline{BD}$가 $\\angle ABC$를 나누므로\n$\\angle DBC=102^\\circ-31^\\circ=71^\\circ$이다.\n\n삼각형 $BCD$의 내각의 합을 이용하면\n$\\angle BCD=180^\\circ-39^\\circ-71^\\circ=70^\\circ$이다.\n\n[채점 기준]\n- 대각의 합이 $180^\\circ$임을 이용하여 네 점이 한 원 위에 있음을 설명하면 $2$점.\n- 같은 호에 대한 원주각을 이용하여 $\\angle BDC=39^\\circ$를 구하면 $1$점.\n- $\\angle DBC=71^\\circ$를 구하면 $1$점.\n- 삼각형의 내각의 합을 이용하여 $\\angle BCD=70^\\circ$를 구하면 $1$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "주관식",
+"answer": "$70^\\circ$",
+"selfGrade": true
+},
+{
+"id": "set2-m32-05-con-009",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 1,
+"body": "원 위의 서로 다른 세 점 $A$, $B$, $C$가 있다. 점 $A$에서 그은 접선 위의 점 $T$와 점 $C$는 직선 $AB$의 서로 반대쪽에 있다. $\\angle BAT=58^\\circ$, $\\angle ABC=47^\\circ$일 때, $\\angle BAC$의 크기는?\n[[그림:/figs/set2-m32-05/con009.png]]",
+"solution": "(가) 접선과 현이 이루는 각의 성질에 의해 $\\angle ACB=\\angle BAT=58^\\circ$이다.\n(나) 삼각형의 세 내각의 크기의 합은 $180^\\circ$이므로\n$\\angle BAC=180^\\circ-47^\\circ-58^\\circ=75^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$47^\\circ$",
+"$58^\\circ$",
+"$75^\\circ$",
+"$105^\\circ$",
+"$122^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-05-con-010",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 1,
+"body": "원 위의 서로 다른 세 점 $A$, $B$, $C$에 대하여 $\\angle ACB=64^\\circ$이다. 점 $A$에서 그은 접선 위에 직선 $AB$를 기준으로 점 $C$와 같은 쪽에 있는 점 $T$를 잡았다. $\\angle BAT$의 크기는?\n[[그림:/figs/set2-m32-05/con010.png]]",
+"solution": "(가) 접선 위에서 점 $T$와 반대 방향에 있는 점을 $U$라 하자. 점 $C$와 점 $U$는 직선 $AB$의 서로 반대쪽에 있으므로, 접선과 현이 이루는 각의 성질에 의해\n$\\angle BAU=\\angle ACB=64^\\circ$이다.\n(나) 두 반직선 $AT$, $AU$는 서로 반대 방향이므로\n$\\angle BAT=180^\\circ-64^\\circ=116^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$26^\\circ$",
+"$64^\\circ$",
+"$90^\\circ$",
+"$116^\\circ$",
+"$128^\\circ$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-05-con-011",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 2,
+"body": "선분 $AB$를 지름으로 하는 원 위에 두 점 $A$, $B$와 다른 점 $C$가 있다. 점 $C$에서 그은 접선 위의 점 $T$와 점 $B$는 직선 $AC$의 서로 반대쪽에 있다. $\\angle BAC=56^\\circ$일 때, $\\angle ACT$의 크기는?\n[[그림:/figs/set2-m32-05/con011.png]]",
+"solution": "(가) 반원에 대한 원주각은 직각이므로 $\\angle ACB=90^\\circ$이다.\n(나) 삼각형의 내각의 합에 의해\n$\\angle ABC=180^\\circ-90^\\circ-56^\\circ=34^\\circ$이다.\n(다) 접선과 현 $AC$가 이루는 각의 성질에 의해\n$\\angle ACT=\\angle ABC=34^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$28^\\circ$",
+"$34^\\circ$",
+"$56^\\circ$",
+"$90^\\circ$",
+"$124^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-05-con-012",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 3,
+"body": "$\\overline{AB}=\\overline{AC}$인 삼각형 $ABC$의 외접원이 있다. 점 $C$에서 그은 접선과 변 $AB$를 점 $B$ 쪽으로 연장한 직선의 교점을 $P$라 하자. 이때 세 점은 $A$, $B$, $P$의 순서로 놓인다. $\\angle APC=24^\\circ$일 때, $\\angle BAC$의 크기는?\n[[그림:/figs/set2-m32-05/con012.png]]",
+"solution": "(가) $\\angle BAC=x$라 하면, 접선과 현 $BC$가 이루는 각의 성질에 의해 $\\angle BCP=x$이다.\n(나) 삼각형 $BCP$에서 $\\angle ABC$는 꼭짓점 $B$의 외각이므로\n$\\angle ABC=x+24^\\circ$이다.\n(다) $\\overline{AB}=\\overline{AC}$이므로 이등변삼각형의 두 밑각은 같다. 따라서\n$\\angle ACB=\\angle ABC=x+24^\\circ$이다.\n(라) 삼각형 $ABC$에서\n$x+2(x+24^\\circ)=180^\\circ$이므로\n$3x=132^\\circ$, $x=44^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$24^\\circ$",
+"$44^\\circ$",
+"$52^\\circ$",
+"$60^\\circ$",
+"$68^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-05-con-013",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 2,
+"body": "두 원이 점 $P$에서 외접한다. 점 $P$를 지나는 서로 다른 두 직선이 한 원과 각각 점 $A$, $B$에서, 다른 원과 각각 점 $C$, $D$에서 다시 만난다. 각 직선 위의 점들은 각각 $A$, $P$, $C$의 순서와 $B$, $P$, $D$의 순서로 놓인다. $\\angle PAB=49^\\circ$, $\\angle APB=63^\\circ$일 때, $\\angle CDP$의 크기는?\n[[그림:/figs/set2-m32-05/con013.png]]",
+"solution": "(가) 점 $P$에서 두 원의 공통접선을 긋는다. 두 원에서 접선과 현이 이루는 각의 성질을 적용하고 맞꼭지각이 같음을 이용하면\n$\\angle PAB=\\angle PCD$이다.\n(나) 이 두 각은 직선 $AC$를 가로지르는 두 직선 $AB$, $CD$의 엇각이므로 $AB\\parallel CD$이다.\n(다) 삼각형 $ABP$에서\n$\\angle ABP=180^\\circ-49^\\circ-63^\\circ=68^\\circ$이다.\n(라) 평행선의 엇각은 같으므로\n$\\angle CDP=\\angle ABP=68^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$49^\\circ$",
+"$63^\\circ$",
+"$68^\\circ$",
+"$112^\\circ$",
+"$117^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-05-con-014",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 2,
+"body": "작은 원이 큰 원의 안쪽에서 점 $P$에 접한다. 점 $P$에서 그은 서로 다른 두 반직선이 작은 원과 각각 점 $A$, $B$에서, 큰 원과 각각 점 $C$, $D$에서 다시 만난다. 각 반직선 위의 점들은 각각 $P$, $A$, $C$의 순서와 $P$, $B$, $D$의 순서로 놓인다. $\\angle PAB=72^\\circ$, $\\angle PDC=46^\\circ$일 때, $\\angle APB$의 크기는?\n[[그림:/figs/set2-m32-05/con014.png]]",
+"solution": "(가) 점 $P$에서 두 원의 공통접선을 긋는다. 두 원에서 접선과 현이 이루는 각의 성질을 적용하면\n$\\angle PAB=\\angle PCD$이다.\n(나) 이 두 각은 동위각이므로 $AB\\parallel CD$이다.\n(다) 평행선의 동위각은 같으므로\n$\\angle PBA=\\angle PDC=46^\\circ$이다.\n(라) 삼각형 $PAB$에서\n$\\angle APB=180^\\circ-72^\\circ-46^\\circ=62^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$26^\\circ$",
+"$46^\\circ$",
+"$62^\\circ$",
+"$72^\\circ$",
+"$118^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-05-con-015",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 2,
+"body": "네 점 $A$, $B$, $C$, $D$가 이 순서로 한 원 위에 놓여 있다. 점 $C$에서 그은 접선 위의 점 $T$와 점 $D$는 직선 $BC$의 서로 반대쪽에 있다. $\\angle BAD=118^\\circ$, $\\angle CBD=31^\\circ$일 때, $\\angle BCT$의 크기는?\n[[그림:/figs/set2-m32-05/con015.png]]",
+"solution": "(가) 원에 내접하는 사각형의 대각의 합은 $180^\\circ$이므로\n$\\angle BCD=180^\\circ-118^\\circ=62^\\circ$이다.\n(나) 삼각형 $BCD$에서\n$\\angle BDC=180^\\circ-62^\\circ-31^\\circ=87^\\circ$이다.\n(다) 접선과 현 $BC$가 이루는 각의 성질에 의해\n$\\angle BCT=\\angle BDC=87^\\circ$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "객관식",
+"choices": [
+"$31^\\circ$",
+"$62^\\circ$",
+"$87^\\circ$",
+"$93^\\circ$",
+"$118^\\circ$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-05-con-016",
+"typeId": "set2-m32-05-u0m0s1t2",
+"twinGroup": "tw-set2-m32-05-u0m0s1t2",
+"diff": 2,
+"body": "네 점 $A$, $B$, $C$, $D$가 이 순서로 한 원 위에 놓여 있다. 변 $BC$를 점 $C$ 쪽으로 연장한 직선 위에 점 $E$를 잡아 세 점이 $B$, $C$, $E$의 순서로 놓이게 하였다. 점 $D$에서 그은 접선 위의 점 $T$와 점 $A$는 직선 $CD$의 서로 반대쪽에 있다.\n\n[[그림:/figs/set2-m32-05/con016.png]]\n$\\angle DCE=113^\\circ$, $\\angle BAC=46^\\circ$일 때, $\\angle CDT$의 크기를 구하고 그 풀이 과정을 서술하시오.",
+"solution": "(가) 원에 내접하는 사각형의 한 외각은 그 내대각과 같으므로\n$\\angle BAD=\\angle DCE=113^\\circ$이다.\n(나) 대각선 $AC$가 $\\angle BAD$의 내부에 있으므로\n$\\angle CAD=\\angle BAD-\\angle BAC=113^\\circ-46^\\circ=67^\\circ$이다.\n(다) 접선과 현 $CD$가 이루는 각의 성질에 의해\n$\\angle CDT=\\angle CAD=67^\\circ$이다.\n\n[채점 기준]\n- 외각과 내대각의 관계를 이용하여 $\\angle BAD=113^\\circ$를 구하면 $2$점.\n- $\\angle CAD=67^\\circ$를 구하면 $2$점.\n- 접선과 현이 이루는 각의 성질을 근거로 $\\angle CDT=67^\\circ$를 구하면 $2$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 05 원주각의 활용",
+"kind": "주관식",
+"answer": "$67^\\circ$",
+"selfGrade": true
+}
+]

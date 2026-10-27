@@ -2749,7 +2749,7 @@
 {
 "id": "ws-exam-ms2e-03",
 "course": "exam-ms2e",
-"title": "내신대비 | 중2-2 과학 Ⅶ ③ 개념문제 Ⅶ. 전기와 자기 (90문항)",
+"title": "내신대비 | 중2-2 과학 Ⅶ ③ 개념문제 90문항",
 "grade": "중2-2",
 "subject": "과학",
 "tags": [
@@ -6793,6 +6793,1373 @@
 "exam-khis2-con-133",
 "exam-khis2-con-134",
 "exam-khis2-con-135"
+]
+},
+{
+"id": "ws-set2-cm2-07-01",
+"course": "set2-cm2-07",
+"title": "수업세트 | 공통수학2 07 명제와 조건 ① O·X 20문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-07-ox-001",
+"set2-cm2-07-ox-002",
+"set2-cm2-07-ox-003",
+"set2-cm2-07-ox-004",
+"set2-cm2-07-ox-005",
+"set2-cm2-07-ox-006",
+"set2-cm2-07-ox-007",
+"set2-cm2-07-ox-008",
+"set2-cm2-07-ox-009",
+"set2-cm2-07-ox-010",
+"set2-cm2-07-ox-011",
+"set2-cm2-07-ox-012",
+"set2-cm2-07-ox-013",
+"set2-cm2-07-ox-014",
+"set2-cm2-07-ox-015",
+"set2-cm2-07-ox-016",
+"set2-cm2-07-ox-017",
+"set2-cm2-07-ox-018",
+"set2-cm2-07-ox-019",
+"set2-cm2-07-ox-020"
+]
+},
+{
+"id": "ws-set2-cm2-07-02",
+"course": "set2-cm2-07",
+"title": "수업세트 | 공통수학2 07 명제와 조건 ② 기본개념 확인 10문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-07-basic-001",
+"set2-cm2-07-basic-002",
+"set2-cm2-07-basic-003",
+"set2-cm2-07-basic-004",
+"set2-cm2-07-basic-005",
+"set2-cm2-07-basic-006",
+"set2-cm2-07-basic-007",
+"set2-cm2-07-basic-008",
+"set2-cm2-07-basic-009",
+"set2-cm2-07-basic-010"
+]
+},
+{
+"id": "ws-set2-cm2-07-03",
+"course": "set2-cm2-07",
+"title": "수업세트 | 공통수학2 07 명제와 조건 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-07-con-001",
+"set2-cm2-07-con-002",
+"set2-cm2-07-con-003",
+"set2-cm2-07-con-004",
+"set2-cm2-07-con-005",
+"set2-cm2-07-con-006",
+"set2-cm2-07-con-007",
+"set2-cm2-07-con-008",
+"set2-cm2-07-con-009",
+"set2-cm2-07-con-010",
+"set2-cm2-07-con-011",
+"set2-cm2-07-con-012",
+"set2-cm2-07-con-013",
+"set2-cm2-07-con-014",
+"set2-cm2-07-con-015",
+"set2-cm2-07-con-016"
+]
+},
+{
+"id": "ws-set2-cm2-07-04",
+"course": "set2-cm2-07",
+"title": "수업세트 | 공통수학2 07 명제와 조건 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-07-adv-001",
+"set2-cm2-07-adv-002",
+"set2-cm2-07-adv-003",
+"set2-cm2-07-adv-004",
+"set2-cm2-07-adv-005",
+"set2-cm2-07-adv-006"
+]
+},
+{
+"id": "ws-set2-ms2-05-01",
+"course": "set2-ms2-05",
+"title": "수업세트 | 중2-2 과학 05 전기의 발생 ① O·X 15문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-05-ox-001",
+"set2-ms2-05-ox-002",
+"set2-ms2-05-ox-003",
+"set2-ms2-05-ox-004",
+"set2-ms2-05-ox-005",
+"set2-ms2-05-ox-006",
+"set2-ms2-05-ox-007",
+"set2-ms2-05-ox-008",
+"set2-ms2-05-ox-009",
+"set2-ms2-05-ox-010",
+"set2-ms2-05-ox-011",
+"set2-ms2-05-ox-012",
+"set2-ms2-05-ox-013",
+"set2-ms2-05-ox-014",
+"set2-ms2-05-ox-015"
+]
+},
+{
+"id": "ws-set2-ms2-05-02",
+"course": "set2-ms2-05",
+"title": "수업세트 | 중2-2 과학 05 전기의 발생 ② 기본개념 확인 11문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-05-basic-001",
+"set2-ms2-05-basic-002",
+"set2-ms2-05-basic-003",
+"set2-ms2-05-basic-004",
+"set2-ms2-05-basic-005",
+"set2-ms2-05-basic-006",
+"set2-ms2-05-basic-007",
+"set2-ms2-05-basic-008",
+"set2-ms2-05-basic-009",
+"set2-ms2-05-basic-010",
+"set2-ms2-05-basic-011"
+]
+},
+{
+"id": "ws-set2-ms2-05-03",
+"course": "set2-ms2-05",
+"title": "수업세트 | 중2-2 과학 05 전기의 발생 ③ 개념문제 27문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-05-con-001",
+"set2-ms2-05-con-002",
+"set2-ms2-05-con-003",
+"set2-ms2-05-con-004",
+"set2-ms2-05-con-005",
+"set2-ms2-05-con-006",
+"set2-ms2-05-con-007",
+"set2-ms2-05-con-008",
+"set2-ms2-05-con-009",
+"set2-ms2-05-con-010",
+"set2-ms2-05-con-011",
+"set2-ms2-05-con-012",
+"set2-ms2-05-con-013",
+"set2-ms2-05-con-014",
+"set2-ms2-05-con-015",
+"set2-ms2-05-con-016",
+"set2-ms2-05-con-017",
+"set2-ms2-05-con-018",
+"set2-ms2-05-con-019",
+"set2-ms2-05-con-020",
+"set2-ms2-05-con-021",
+"set2-ms2-05-con-022",
+"set2-ms2-05-con-023",
+"set2-ms2-05-con-024",
+"set2-ms2-05-con-025",
+"set2-ms2-05-con-026",
+"set2-ms2-05-con-027"
+]
+},
+{
+"id": "ws-set2-ms2-05-04",
+"course": "set2-ms2-05",
+"title": "수업세트 | 중2-2 과학 05 전기의 발생 ④ 심화문제 4문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-05-adv-001",
+"set2-ms2-05-adv-002",
+"set2-ms2-05-adv-003",
+"set2-ms2-05-adv-004"
+]
+},
+{
+"id": "ws-set2-ms2-06-01",
+"course": "set2-ms2-06",
+"title": "수업세트 | 중2-2 과학 06 전류, 전압, 저항 ① O·X 15문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-06-ox-001",
+"set2-ms2-06-ox-002",
+"set2-ms2-06-ox-003",
+"set2-ms2-06-ox-004",
+"set2-ms2-06-ox-005",
+"set2-ms2-06-ox-006",
+"set2-ms2-06-ox-007",
+"set2-ms2-06-ox-008",
+"set2-ms2-06-ox-009",
+"set2-ms2-06-ox-010",
+"set2-ms2-06-ox-011",
+"set2-ms2-06-ox-012",
+"set2-ms2-06-ox-013",
+"set2-ms2-06-ox-014",
+"set2-ms2-06-ox-015"
+]
+},
+{
+"id": "ws-set2-ms2-06-02",
+"course": "set2-ms2-06",
+"title": "수업세트 | 중2-2 과학 06 전류, 전압, 저항 ② 기본개념 확인 11문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-06-basic-001",
+"set2-ms2-06-basic-002",
+"set2-ms2-06-basic-003",
+"set2-ms2-06-basic-004",
+"set2-ms2-06-basic-005",
+"set2-ms2-06-basic-006",
+"set2-ms2-06-basic-007",
+"set2-ms2-06-basic-008",
+"set2-ms2-06-basic-009",
+"set2-ms2-06-basic-010",
+"set2-ms2-06-basic-011"
+]
+},
+{
+"id": "ws-set2-ms2-06-03",
+"course": "set2-ms2-06",
+"title": "수업세트 | 중2-2 과학 06 전류, 전압, 저항 ③ 개념문제 40문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-06-con-001",
+"set2-ms2-06-con-002",
+"set2-ms2-06-con-003",
+"set2-ms2-06-con-004",
+"set2-ms2-06-con-005",
+"set2-ms2-06-con-006",
+"set2-ms2-06-con-007",
+"set2-ms2-06-con-008",
+"set2-ms2-06-con-009",
+"set2-ms2-06-con-010",
+"set2-ms2-06-con-011",
+"set2-ms2-06-con-012",
+"set2-ms2-06-con-013",
+"set2-ms2-06-con-014",
+"set2-ms2-06-con-015",
+"set2-ms2-06-con-016",
+"set2-ms2-06-con-017",
+"set2-ms2-06-con-018",
+"set2-ms2-06-con-019",
+"set2-ms2-06-con-020",
+"set2-ms2-06-con-021",
+"set2-ms2-06-con-022",
+"set2-ms2-06-con-023",
+"set2-ms2-06-con-024",
+"set2-ms2-06-con-025",
+"set2-ms2-06-con-026",
+"set2-ms2-06-con-027",
+"set2-ms2-06-con-028",
+"set2-ms2-06-con-029",
+"set2-ms2-06-con-030",
+"set2-ms2-06-con-031",
+"set2-ms2-06-con-032",
+"set2-ms2-06-con-033",
+"set2-ms2-06-con-034",
+"set2-ms2-06-con-035",
+"set2-ms2-06-con-036",
+"set2-ms2-06-con-037",
+"set2-ms2-06-con-038",
+"set2-ms2-06-con-039",
+"set2-ms2-06-con-040"
+]
+},
+{
+"id": "ws-set2-ms2-06-04",
+"course": "set2-ms2-06",
+"title": "수업세트 | 중2-2 과학 06 전류, 전압, 저항 ④ 심화문제 4문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-06-adv-001",
+"set2-ms2-06-adv-002",
+"set2-ms2-06-adv-003",
+"set2-ms2-06-adv-004"
+]
+},
+{
+"id": "ws-set2-ms2-07-01",
+"course": "set2-ms2-07",
+"title": "수업세트 | 중2-2 과학 07 전류의 자기 작용 ① O·X 10문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-07-ox-001",
+"set2-ms2-07-ox-002",
+"set2-ms2-07-ox-003",
+"set2-ms2-07-ox-004",
+"set2-ms2-07-ox-005",
+"set2-ms2-07-ox-006",
+"set2-ms2-07-ox-007",
+"set2-ms2-07-ox-008",
+"set2-ms2-07-ox-009",
+"set2-ms2-07-ox-010"
+]
+},
+{
+"id": "ws-set2-ms2-07-02",
+"course": "set2-ms2-07",
+"title": "수업세트 | 중2-2 과학 07 전류의 자기 작용 ② 기본개념 확인 8문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-07-basic-001",
+"set2-ms2-07-basic-002",
+"set2-ms2-07-basic-003",
+"set2-ms2-07-basic-004",
+"set2-ms2-07-basic-005",
+"set2-ms2-07-basic-006",
+"set2-ms2-07-basic-007",
+"set2-ms2-07-basic-008"
+]
+},
+{
+"id": "ws-set2-ms2-07-03",
+"course": "set2-ms2-07",
+"title": "수업세트 | 중2-2 과학 07 전류의 자기 작용 ③ 개념문제 23문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-07-con-001",
+"set2-ms2-07-con-002",
+"set2-ms2-07-con-003",
+"set2-ms2-07-con-004",
+"set2-ms2-07-con-005",
+"set2-ms2-07-con-006",
+"set2-ms2-07-con-007",
+"set2-ms2-07-con-008",
+"set2-ms2-07-con-009",
+"set2-ms2-07-con-010",
+"set2-ms2-07-con-011",
+"set2-ms2-07-con-012",
+"set2-ms2-07-con-013",
+"set2-ms2-07-con-014",
+"set2-ms2-07-con-015",
+"set2-ms2-07-con-016",
+"set2-ms2-07-con-017",
+"set2-ms2-07-con-018",
+"set2-ms2-07-con-019",
+"set2-ms2-07-con-020",
+"set2-ms2-07-con-021",
+"set2-ms2-07-con-022",
+"set2-ms2-07-con-023"
+]
+},
+{
+"id": "ws-set2-ms2-07-04",
+"course": "set2-ms2-07",
+"title": "수업세트 | 중2-2 과학 07 전류의 자기 작용 ④ 심화문제 3문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-07-adv-001",
+"set2-ms2-07-adv-002",
+"set2-ms2-07-adv-003"
+]
+},
+{
+"id": "ws-set2-ms2-04-01",
+"course": "set2-ms2-04",
+"title": "수업세트 | 중2-2 과학 04 배설과 기관계의 통합적 작용 ① O·X 20문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-04-ox-001",
+"set2-ms2-04-ox-002",
+"set2-ms2-04-ox-003",
+"set2-ms2-04-ox-004",
+"set2-ms2-04-ox-005",
+"set2-ms2-04-ox-006",
+"set2-ms2-04-ox-007",
+"set2-ms2-04-ox-008",
+"set2-ms2-04-ox-009",
+"set2-ms2-04-ox-010",
+"set2-ms2-04-ox-011",
+"set2-ms2-04-ox-012",
+"set2-ms2-04-ox-013",
+"set2-ms2-04-ox-014",
+"set2-ms2-04-ox-015",
+"set2-ms2-04-ox-016",
+"set2-ms2-04-ox-017",
+"set2-ms2-04-ox-018",
+"set2-ms2-04-ox-019",
+"set2-ms2-04-ox-020"
+]
+},
+{
+"id": "ws-set2-ms2-04-02",
+"course": "set2-ms2-04",
+"title": "수업세트 | 중2-2 과학 04 배설과 기관계의 통합적 작용 ② 기본개념 확인 10문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-04-basic-001",
+"set2-ms2-04-basic-002",
+"set2-ms2-04-basic-003",
+"set2-ms2-04-basic-004",
+"set2-ms2-04-basic-005",
+"set2-ms2-04-basic-006",
+"set2-ms2-04-basic-007",
+"set2-ms2-04-basic-008",
+"set2-ms2-04-basic-009",
+"set2-ms2-04-basic-010"
+]
+},
+{
+"id": "ws-set2-ms2-04-03",
+"course": "set2-ms2-04",
+"title": "수업세트 | 중2-2 과학 04 배설과 기관계의 통합적 작용 ③ 개념문제 16문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-04-con-001",
+"set2-ms2-04-con-002",
+"set2-ms2-04-con-003",
+"set2-ms2-04-con-004",
+"set2-ms2-04-con-005",
+"set2-ms2-04-con-006",
+"set2-ms2-04-con-007",
+"set2-ms2-04-con-008",
+"set2-ms2-04-con-009",
+"set2-ms2-04-con-010",
+"set2-ms2-04-con-011",
+"set2-ms2-04-con-012",
+"set2-ms2-04-con-013",
+"set2-ms2-04-con-014",
+"set2-ms2-04-con-015",
+"set2-ms2-04-con-016"
+]
+},
+{
+"id": "ws-set2-ms2-04-04",
+"course": "set2-ms2-04",
+"title": "수업세트 | 중2-2 과학 04 배설과 기관계의 통합적 작용 ④ 심화문제 6문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-04-adv-001",
+"set2-ms2-04-adv-002",
+"set2-ms2-04-adv-003",
+"set2-ms2-04-adv-004",
+"set2-ms2-04-adv-005",
+"set2-ms2-04-adv-006"
+]
+},
+{
+"id": "ws-set2-ms2-02-01",
+"course": "set2-ms2-02",
+"title": "수업세트 | 중2-2 과학 02 순환 ① O·X 20문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-02-ox-001",
+"set2-ms2-02-ox-002",
+"set2-ms2-02-ox-003",
+"set2-ms2-02-ox-004",
+"set2-ms2-02-ox-005",
+"set2-ms2-02-ox-006",
+"set2-ms2-02-ox-007",
+"set2-ms2-02-ox-008",
+"set2-ms2-02-ox-009",
+"set2-ms2-02-ox-010",
+"set2-ms2-02-ox-011",
+"set2-ms2-02-ox-012",
+"set2-ms2-02-ox-013",
+"set2-ms2-02-ox-014",
+"set2-ms2-02-ox-015",
+"set2-ms2-02-ox-016",
+"set2-ms2-02-ox-017",
+"set2-ms2-02-ox-018",
+"set2-ms2-02-ox-019",
+"set2-ms2-02-ox-020"
+]
+},
+{
+"id": "ws-set2-ms2-02-02",
+"course": "set2-ms2-02",
+"title": "수업세트 | 중2-2 과학 02 순환 ② 기본개념 확인 10문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-02-basic-001",
+"set2-ms2-02-basic-002",
+"set2-ms2-02-basic-003",
+"set2-ms2-02-basic-004",
+"set2-ms2-02-basic-005",
+"set2-ms2-02-basic-006",
+"set2-ms2-02-basic-007",
+"set2-ms2-02-basic-008",
+"set2-ms2-02-basic-009",
+"set2-ms2-02-basic-010"
+]
+},
+{
+"id": "ws-set2-ms2-02-03",
+"course": "set2-ms2-02",
+"title": "수업세트 | 중2-2 과학 02 순환 ③ 개념문제 16문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-02-con-001",
+"set2-ms2-02-con-002",
+"set2-ms2-02-con-003",
+"set2-ms2-02-con-004",
+"set2-ms2-02-con-005",
+"set2-ms2-02-con-006",
+"set2-ms2-02-con-007",
+"set2-ms2-02-con-008",
+"set2-ms2-02-con-009",
+"set2-ms2-02-con-010",
+"set2-ms2-02-con-011",
+"set2-ms2-02-con-012",
+"set2-ms2-02-con-013",
+"set2-ms2-02-con-014",
+"set2-ms2-02-con-015",
+"set2-ms2-02-con-016"
+]
+},
+{
+"id": "ws-set2-ms2-02-04",
+"course": "set2-ms2-02",
+"title": "수업세트 | 중2-2 과학 02 순환 ④ 심화문제 6문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-02-adv-001",
+"set2-ms2-02-adv-002",
+"set2-ms2-02-adv-003",
+"set2-ms2-02-adv-004",
+"set2-ms2-02-adv-005",
+"set2-ms2-02-adv-006"
+]
+},
+{
+"id": "ws-set2-m22-05-01",
+"course": "set2-m22-05",
+"title": "수업세트 | 중2-2 수학 05 도형의 닮음 ① O·X 20문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-05-ox-001",
+"set2-m22-05-ox-002",
+"set2-m22-05-ox-003",
+"set2-m22-05-ox-004",
+"set2-m22-05-ox-005",
+"set2-m22-05-ox-006",
+"set2-m22-05-ox-007",
+"set2-m22-05-ox-008",
+"set2-m22-05-ox-009",
+"set2-m22-05-ox-010",
+"set2-m22-05-ox-011",
+"set2-m22-05-ox-012",
+"set2-m22-05-ox-013",
+"set2-m22-05-ox-014",
+"set2-m22-05-ox-015",
+"set2-m22-05-ox-016",
+"set2-m22-05-ox-017",
+"set2-m22-05-ox-018",
+"set2-m22-05-ox-019",
+"set2-m22-05-ox-020"
+]
+},
+{
+"id": "ws-set2-m22-05-02",
+"course": "set2-m22-05",
+"title": "수업세트 | 중2-2 수학 05 도형의 닮음 ② 기본개념 확인 10문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-05-basic-001",
+"set2-m22-05-basic-002",
+"set2-m22-05-basic-003",
+"set2-m22-05-basic-004",
+"set2-m22-05-basic-005",
+"set2-m22-05-basic-006",
+"set2-m22-05-basic-007",
+"set2-m22-05-basic-008",
+"set2-m22-05-basic-009",
+"set2-m22-05-basic-010"
+]
+},
+{
+"id": "ws-set2-m22-05-03",
+"course": "set2-m22-05",
+"title": "수업세트 | 중2-2 수학 05 도형의 닮음 ③ 개념문제 16문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-05-con-001",
+"set2-m22-05-con-002",
+"set2-m22-05-con-003",
+"set2-m22-05-con-004",
+"set2-m22-05-con-005",
+"set2-m22-05-con-006",
+"set2-m22-05-con-007",
+"set2-m22-05-con-008",
+"set2-m22-05-con-009",
+"set2-m22-05-con-010",
+"set2-m22-05-con-011",
+"set2-m22-05-con-012",
+"set2-m22-05-con-013",
+"set2-m22-05-con-014",
+"set2-m22-05-con-015",
+"set2-m22-05-con-016"
+]
+},
+{
+"id": "ws-set2-m22-05-04",
+"course": "set2-m22-05",
+"title": "수업세트 | 중2-2 수학 05 도형의 닮음 ④ 심화문제 6문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-05-adv-001",
+"set2-m22-05-adv-002",
+"set2-m22-05-adv-003",
+"set2-m22-05-adv-004",
+"set2-m22-05-adv-005",
+"set2-m22-05-adv-006"
+]
+},
+{
+"id": "ws-set2-m22-07-01",
+"course": "set2-m22-07",
+"title": "수업세트 | 중2-2 수학 07 삼각형의 무게중심 ① O·X 20문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-07-ox-001",
+"set2-m22-07-ox-002",
+"set2-m22-07-ox-003",
+"set2-m22-07-ox-004",
+"set2-m22-07-ox-005",
+"set2-m22-07-ox-006",
+"set2-m22-07-ox-007",
+"set2-m22-07-ox-008",
+"set2-m22-07-ox-009",
+"set2-m22-07-ox-010",
+"set2-m22-07-ox-011",
+"set2-m22-07-ox-012",
+"set2-m22-07-ox-013",
+"set2-m22-07-ox-014",
+"set2-m22-07-ox-015",
+"set2-m22-07-ox-016",
+"set2-m22-07-ox-017",
+"set2-m22-07-ox-018",
+"set2-m22-07-ox-019",
+"set2-m22-07-ox-020"
+]
+},
+{
+"id": "ws-set2-m22-07-02",
+"course": "set2-m22-07",
+"title": "수업세트 | 중2-2 수학 07 삼각형의 무게중심 ② 기본개념 확인 10문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-07-basic-001",
+"set2-m22-07-basic-002",
+"set2-m22-07-basic-003",
+"set2-m22-07-basic-004",
+"set2-m22-07-basic-005",
+"set2-m22-07-basic-006",
+"set2-m22-07-basic-007",
+"set2-m22-07-basic-008",
+"set2-m22-07-basic-009",
+"set2-m22-07-basic-010"
+]
+},
+{
+"id": "ws-set2-m22-07-03",
+"course": "set2-m22-07",
+"title": "수업세트 | 중2-2 수학 07 삼각형의 무게중심 ③ 개념문제 16문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-07-con-001",
+"set2-m22-07-con-002",
+"set2-m22-07-con-003",
+"set2-m22-07-con-004",
+"set2-m22-07-con-005",
+"set2-m22-07-con-006",
+"set2-m22-07-con-007",
+"set2-m22-07-con-008",
+"set2-m22-07-con-009",
+"set2-m22-07-con-010",
+"set2-m22-07-con-011",
+"set2-m22-07-con-012",
+"set2-m22-07-con-013",
+"set2-m22-07-con-014",
+"set2-m22-07-con-015",
+"set2-m22-07-con-016"
+]
+},
+{
+"id": "ws-set2-m22-07-04",
+"course": "set2-m22-07",
+"title": "수업세트 | 중2-2 수학 07 삼각형의 무게중심 ④ 심화문제 6문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-07-adv-001",
+"set2-m22-07-adv-002",
+"set2-m22-07-adv-003",
+"set2-m22-07-adv-004",
+"set2-m22-07-adv-005",
+"set2-m22-07-adv-006"
+]
+},
+{
+"id": "ws-set2-m22-06-01",
+"course": "set2-m22-06",
+"title": "수업세트 | 중2-2 수학 06 평행선과 선분의 길이의 비 ① O·X 20문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-06-ox-001",
+"set2-m22-06-ox-002",
+"set2-m22-06-ox-003",
+"set2-m22-06-ox-004",
+"set2-m22-06-ox-005",
+"set2-m22-06-ox-006",
+"set2-m22-06-ox-007",
+"set2-m22-06-ox-008",
+"set2-m22-06-ox-009",
+"set2-m22-06-ox-010",
+"set2-m22-06-ox-011",
+"set2-m22-06-ox-012",
+"set2-m22-06-ox-013",
+"set2-m22-06-ox-014",
+"set2-m22-06-ox-015",
+"set2-m22-06-ox-016",
+"set2-m22-06-ox-017",
+"set2-m22-06-ox-018",
+"set2-m22-06-ox-019",
+"set2-m22-06-ox-020"
+]
+},
+{
+"id": "ws-set2-m22-06-02",
+"course": "set2-m22-06",
+"title": "수업세트 | 중2-2 수학 06 평행선과 선분의 길이의 비 ② 기본개념 확인 10문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-06-basic-001",
+"set2-m22-06-basic-002",
+"set2-m22-06-basic-003",
+"set2-m22-06-basic-004",
+"set2-m22-06-basic-005",
+"set2-m22-06-basic-006",
+"set2-m22-06-basic-007",
+"set2-m22-06-basic-008",
+"set2-m22-06-basic-009",
+"set2-m22-06-basic-010"
+]
+},
+{
+"id": "ws-set2-m22-06-03",
+"course": "set2-m22-06",
+"title": "수업세트 | 중2-2 수학 06 평행선과 선분의 길이의 비 ③ 개념문제 16문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-06-con-001",
+"set2-m22-06-con-002",
+"set2-m22-06-con-003",
+"set2-m22-06-con-004",
+"set2-m22-06-con-005",
+"set2-m22-06-con-006",
+"set2-m22-06-con-007",
+"set2-m22-06-con-008",
+"set2-m22-06-con-009",
+"set2-m22-06-con-010",
+"set2-m22-06-con-011",
+"set2-m22-06-con-012",
+"set2-m22-06-con-013",
+"set2-m22-06-con-014",
+"set2-m22-06-con-015",
+"set2-m22-06-con-016"
+]
+},
+{
+"id": "ws-set2-m22-06-04",
+"course": "set2-m22-06",
+"title": "수업세트 | 중2-2 수학 06 평행선과 선분의 길이의 비 ④ 심화문제 6문항",
+"grade": "중2-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m22-06-adv-001",
+"set2-m22-06-adv-002",
+"set2-m22-06-adv-003",
+"set2-m22-06-adv-004",
+"set2-m22-06-adv-005",
+"set2-m22-06-adv-006"
+]
+},
+{
+"id": "ws-set2-m32-05-01",
+"course": "set2-m32-05",
+"title": "수업세트 | 중3-2 수학 05 원주각의 활용 ① O·X 20문항",
+"grade": "중3-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m32-05-ox-001",
+"set2-m32-05-ox-002",
+"set2-m32-05-ox-003",
+"set2-m32-05-ox-004",
+"set2-m32-05-ox-005",
+"set2-m32-05-ox-006",
+"set2-m32-05-ox-007",
+"set2-m32-05-ox-008",
+"set2-m32-05-ox-009",
+"set2-m32-05-ox-010",
+"set2-m32-05-ox-011",
+"set2-m32-05-ox-012",
+"set2-m32-05-ox-013",
+"set2-m32-05-ox-014",
+"set2-m32-05-ox-015",
+"set2-m32-05-ox-016",
+"set2-m32-05-ox-017",
+"set2-m32-05-ox-018",
+"set2-m32-05-ox-019",
+"set2-m32-05-ox-020"
+]
+},
+{
+"id": "ws-set2-m32-05-02",
+"course": "set2-m32-05",
+"title": "수업세트 | 중3-2 수학 05 원주각의 활용 ② 기본개념 확인 10문항",
+"grade": "중3-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m32-05-basic-001",
+"set2-m32-05-basic-002",
+"set2-m32-05-basic-003",
+"set2-m32-05-basic-004",
+"set2-m32-05-basic-005",
+"set2-m32-05-basic-006",
+"set2-m32-05-basic-007",
+"set2-m32-05-basic-008",
+"set2-m32-05-basic-009",
+"set2-m32-05-basic-010"
+]
+},
+{
+"id": "ws-set2-m32-05-03",
+"course": "set2-m32-05",
+"title": "수업세트 | 중3-2 수학 05 원주각의 활용 ③ 개념문제 16문항",
+"grade": "중3-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m32-05-con-001",
+"set2-m32-05-con-002",
+"set2-m32-05-con-003",
+"set2-m32-05-con-004",
+"set2-m32-05-con-005",
+"set2-m32-05-con-006",
+"set2-m32-05-con-007",
+"set2-m32-05-con-008",
+"set2-m32-05-con-009",
+"set2-m32-05-con-010",
+"set2-m32-05-con-011",
+"set2-m32-05-con-012",
+"set2-m32-05-con-013",
+"set2-m32-05-con-014",
+"set2-m32-05-con-015",
+"set2-m32-05-con-016"
+]
+},
+{
+"id": "ws-set2-m32-05-04",
+"course": "set2-m32-05",
+"title": "수업세트 | 중3-2 수학 05 원주각의 활용 ④ 심화문제 6문항",
+"grade": "중3-2",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-m32-05-adv-001",
+"set2-m32-05-adv-002",
+"set2-m32-05-adv-003",
+"set2-m32-05-adv-004",
+"set2-m32-05-adv-005",
+"set2-m32-05-adv-006"
+]
+},
+{
+"id": "ws-set2-ms2-09-01",
+"course": "set2-ms2-09",
+"title": "수업세트 | 중2-2 과학 09 우리은하와 우주 ① O·X 20문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-09-ox-001",
+"set2-ms2-09-ox-002",
+"set2-ms2-09-ox-003",
+"set2-ms2-09-ox-004",
+"set2-ms2-09-ox-005",
+"set2-ms2-09-ox-006",
+"set2-ms2-09-ox-007",
+"set2-ms2-09-ox-008",
+"set2-ms2-09-ox-009",
+"set2-ms2-09-ox-010",
+"set2-ms2-09-ox-011",
+"set2-ms2-09-ox-012",
+"set2-ms2-09-ox-013",
+"set2-ms2-09-ox-014",
+"set2-ms2-09-ox-015",
+"set2-ms2-09-ox-016",
+"set2-ms2-09-ox-017",
+"set2-ms2-09-ox-018",
+"set2-ms2-09-ox-019",
+"set2-ms2-09-ox-020"
+]
+},
+{
+"id": "ws-set2-ms2-09-02",
+"course": "set2-ms2-09",
+"title": "수업세트 | 중2-2 과학 09 우리은하와 우주 ② 기본개념 확인 10문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-09-basic-001",
+"set2-ms2-09-basic-002",
+"set2-ms2-09-basic-003",
+"set2-ms2-09-basic-004",
+"set2-ms2-09-basic-005",
+"set2-ms2-09-basic-006",
+"set2-ms2-09-basic-007",
+"set2-ms2-09-basic-008",
+"set2-ms2-09-basic-009",
+"set2-ms2-09-basic-010"
+]
+},
+{
+"id": "ws-set2-ms2-09-03",
+"course": "set2-ms2-09",
+"title": "수업세트 | 중2-2 과학 09 우리은하와 우주 ③ 개념문제 16문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-09-con-001",
+"set2-ms2-09-con-002",
+"set2-ms2-09-con-003",
+"set2-ms2-09-con-004",
+"set2-ms2-09-con-005",
+"set2-ms2-09-con-006",
+"set2-ms2-09-con-007",
+"set2-ms2-09-con-008",
+"set2-ms2-09-con-009",
+"set2-ms2-09-con-010",
+"set2-ms2-09-con-011",
+"set2-ms2-09-con-012",
+"set2-ms2-09-con-013",
+"set2-ms2-09-con-014",
+"set2-ms2-09-con-015",
+"set2-ms2-09-con-016"
+]
+},
+{
+"id": "ws-set2-ms2-09-04",
+"course": "set2-ms2-09",
+"title": "수업세트 | 중2-2 과학 09 우리은하와 우주 ④ 심화문제 6문항",
+"grade": "중2-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms2-09-adv-001",
+"set2-ms2-09-adv-002",
+"set2-ms2-09-adv-003",
+"set2-ms2-09-adv-004",
+"set2-ms2-09-adv-005",
+"set2-ms2-09-adv-006"
+]
+},
+{
+"id": "ws-set2-ms3-072-01",
+"course": "set2-ms3-072",
+"title": "수업세트 | 중3-2 과학 07-2 은하와 우주 ① O·X 20문항",
+"grade": "중3-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms3-072-ox-001",
+"set2-ms3-072-ox-002",
+"set2-ms3-072-ox-003",
+"set2-ms3-072-ox-004",
+"set2-ms3-072-ox-005",
+"set2-ms3-072-ox-006",
+"set2-ms3-072-ox-007",
+"set2-ms3-072-ox-008",
+"set2-ms3-072-ox-009",
+"set2-ms3-072-ox-010",
+"set2-ms3-072-ox-011",
+"set2-ms3-072-ox-012",
+"set2-ms3-072-ox-013",
+"set2-ms3-072-ox-014",
+"set2-ms3-072-ox-015",
+"set2-ms3-072-ox-016",
+"set2-ms3-072-ox-017",
+"set2-ms3-072-ox-018",
+"set2-ms3-072-ox-019",
+"set2-ms3-072-ox-020"
+]
+},
+{
+"id": "ws-set2-ms3-072-02",
+"course": "set2-ms3-072",
+"title": "수업세트 | 중3-2 과학 07-2 은하와 우주 ② 기본개념 확인 10문항",
+"grade": "중3-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms3-072-basic-001",
+"set2-ms3-072-basic-002",
+"set2-ms3-072-basic-003",
+"set2-ms3-072-basic-004",
+"set2-ms3-072-basic-005",
+"set2-ms3-072-basic-006",
+"set2-ms3-072-basic-007",
+"set2-ms3-072-basic-008",
+"set2-ms3-072-basic-009",
+"set2-ms3-072-basic-010"
+]
+},
+{
+"id": "ws-set2-ms3-072-03",
+"course": "set2-ms3-072",
+"title": "수업세트 | 중3-2 과학 07-2 은하와 우주 ③ 개념문제 16문항",
+"grade": "중3-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms3-072-con-001",
+"set2-ms3-072-con-002",
+"set2-ms3-072-con-003",
+"set2-ms3-072-con-004",
+"set2-ms3-072-con-005",
+"set2-ms3-072-con-006",
+"set2-ms3-072-con-007",
+"set2-ms3-072-con-008",
+"set2-ms3-072-con-009",
+"set2-ms3-072-con-010",
+"set2-ms3-072-con-011",
+"set2-ms3-072-con-012",
+"set2-ms3-072-con-013",
+"set2-ms3-072-con-014",
+"set2-ms3-072-con-015",
+"set2-ms3-072-con-016"
+]
+},
+{
+"id": "ws-set2-ms3-072-04",
+"course": "set2-ms3-072",
+"title": "수업세트 | 중3-2 과학 07-2 은하와 우주 ④ 심화문제 6문항",
+"grade": "중3-2",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-ms3-072-adv-001",
+"set2-ms3-072-adv-002",
+"set2-ms3-072-adv-003",
+"set2-ms3-072-adv-004",
+"set2-ms3-072-adv-005",
+"set2-ms3-072-adv-006"
+]
+},
+{
+"id": "ws-set2-cm2-08-01",
+"course": "set2-cm2-08",
+"title": "수업세트 | 공통수학2 08 명제의 역과 대우 ① O·X 20문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-08-ox-001",
+"set2-cm2-08-ox-002",
+"set2-cm2-08-ox-003",
+"set2-cm2-08-ox-004",
+"set2-cm2-08-ox-005",
+"set2-cm2-08-ox-006",
+"set2-cm2-08-ox-007",
+"set2-cm2-08-ox-008",
+"set2-cm2-08-ox-009",
+"set2-cm2-08-ox-010",
+"set2-cm2-08-ox-011",
+"set2-cm2-08-ox-012",
+"set2-cm2-08-ox-013",
+"set2-cm2-08-ox-014",
+"set2-cm2-08-ox-015",
+"set2-cm2-08-ox-016",
+"set2-cm2-08-ox-017",
+"set2-cm2-08-ox-018",
+"set2-cm2-08-ox-019",
+"set2-cm2-08-ox-020"
+]
+},
+{
+"id": "ws-set2-cm2-08-02",
+"course": "set2-cm2-08",
+"title": "수업세트 | 공통수학2 08 명제의 역과 대우 ② 기본개념 확인 10문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-08-basic-001",
+"set2-cm2-08-basic-002",
+"set2-cm2-08-basic-003",
+"set2-cm2-08-basic-004",
+"set2-cm2-08-basic-005",
+"set2-cm2-08-basic-006",
+"set2-cm2-08-basic-007",
+"set2-cm2-08-basic-008",
+"set2-cm2-08-basic-009",
+"set2-cm2-08-basic-010"
+]
+},
+{
+"id": "ws-set2-cm2-08-03",
+"course": "set2-cm2-08",
+"title": "수업세트 | 공통수학2 08 명제의 역과 대우 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-08-con-001",
+"set2-cm2-08-con-002",
+"set2-cm2-08-con-003",
+"set2-cm2-08-con-004",
+"set2-cm2-08-con-005",
+"set2-cm2-08-con-006",
+"set2-cm2-08-con-007",
+"set2-cm2-08-con-008",
+"set2-cm2-08-con-009",
+"set2-cm2-08-con-010",
+"set2-cm2-08-con-011",
+"set2-cm2-08-con-012",
+"set2-cm2-08-con-013",
+"set2-cm2-08-con-014",
+"set2-cm2-08-con-015",
+"set2-cm2-08-con-016"
+]
+},
+{
+"id": "ws-set2-cm2-08-04",
+"course": "set2-cm2-08",
+"title": "수업세트 | 공통수학2 08 명제의 역과 대우 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-08-adv-001",
+"set2-cm2-08-adv-002",
+"set2-cm2-08-adv-003",
+"set2-cm2-08-adv-004",
+"set2-cm2-08-adv-005",
+"set2-cm2-08-adv-006"
 ]
 }
 ]

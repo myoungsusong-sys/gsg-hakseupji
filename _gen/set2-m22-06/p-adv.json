@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-m22-06-adv-001",
+"typeId": "set2-m22-06-u0m0s0t3",
+"twinGroup": "tw-set2-m22-06-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있다. $AD:DB=2:3$이고 $DE\\parallel BC$이다. 두 선분 $BE$, $CD$의 교점을 $P$라 하자. 삼각형 $PDE$의 넓이가 $12\\,\\mathrm{cm}^2$일 때, 사각형 $DBCE$의 넓이는?\n[[그림:/figs/set2-m22-06/adv001.png]]",
+"solution": "삼각형의 두 변을 나누는 비와 평행선의 성질에 의해\n$DE:BC=AD:AB=2:5$이다.\n\n삼각형 $PDE$와 $PCB$는 맞꼭지각과 엇각에 의해 닮음이고, 닮음비가 $2:5$이다. 따라서\n$[\\triangle PBC]=12\\times\\left(\\dfrac{5}{2}\\right)^2=75\\,\\mathrm{cm}^2$이다.\n여기서 $[\\triangle XYZ]$는 삼각형 $XYZ$의 넓이를 뜻한다.\n\n또한 $PE:PB=PD:PC=2:5$이다. 삼각형 $PBD$와 $PED$는 꼭짓점 $D$에서 직선 $BE$에 내린 높이가 같으므로\n$[\\triangle PBD]=12\\times\\dfrac{5}{2}=30\\,\\mathrm{cm}^2$이다.\n\n같은 방법으로, 삼각형 $PCE$와 $PDE$는 꼭짓점 $E$에서 직선 $CD$에 내린 높이가 같으므로\n$[\\triangle PCE]=30\\,\\mathrm{cm}^2$이다.\n\n따라서 사각형 $DBCE$의 넓이는\n$12+75+30+30=147\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비",
+"kind": "객관식",
+"choices": [
+"$63\\,\\mathrm{cm}^2$",
+"$75\\,\\mathrm{cm}^2$",
+"$125\\,\\mathrm{cm}^2$",
+"$147\\,\\mathrm{cm}^2$",
+"$175\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-06-adv-002",
+"typeId": "set2-m22-06-u0m0s1t3",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD=12\\,\\mathrm{cm}$이다. 변 $AB$, $DC$ 위의 점 $E$, $F$에 대하여 $AD\\parallel EF\\parallel BC$, $AE:EB=2:1$이다. 선분 $EF$가 대각선 $AC$, $BD$와 만나는 점을 각각 $G$, $H$라 하자.\n\n점들은 선분 $EF$ 위에 $E$, $H$, $G$, $F$의 순서로 놓여 있고, $HG=22\\,\\mathrm{cm}$이다. 사각형 $AEFD$의 넓이가 $168\\,\\mathrm{cm}^2$일 때, 사각형 $EBCF$의 넓이는?\n[[그림:/figs/set2-m22-06/adv002.png]]",
+"solution": "$AE:AB=2:3$, $BE:BA=1:3$이다.\n\n삼각형 $BAD$에서 $EH\\parallel AD$이므로\n$EH=\\dfrac{1}{3}AD=4\\,\\mathrm{cm}$이다.\n따라서\n$EG=EH+HG=4+22=26\\,\\mathrm{cm}$이다.\n\n삼각형 $ABC$에서 $EG\\parallel BC$이므로\n$EG=\\dfrac{2}{3}BC$이다. 따라서\n$BC=26\\times\\dfrac{3}{2}=39\\,\\mathrm{cm}$이다.\n\n삼각형 $CDA$에서 $GF\\parallel AD$이고 $CG:CA=1:3$이므로\n$GF=\\dfrac{1}{3}AD=4\\,\\mathrm{cm}$이다.\n따라서 $EF=26+4=30\\,\\mathrm{cm}$이다.\n\n평행선 사이의 높이의 비도 $AE:EB=2:1$이다. 사각형 $EBCF$의 높이를 $h\\,\\mathrm{cm}$라 하면 사각형 $AEFD$의 높이는 $2h\\,\\mathrm{cm}$이므로\n$\\dfrac{1}{2}(12+30)\\times2h=168$,\n$h=4$이다.\n\n따라서 구하는 넓이는\n$\\dfrac{1}{2}(30+39)\\times4=138\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비",
+"kind": "객관식",
+"choices": [
+"$84\\,\\mathrm{cm}^2$",
+"$126\\,\\mathrm{cm}^2$",
+"$138\\,\\mathrm{cm}^2$",
+"$156\\,\\mathrm{cm}^2$",
+"$252\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-06-adv-003",
+"typeId": "set2-m22-06-u0m0s2t3",
+"twinGroup": "tw-set2-m22-06-u0m0s2t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $AB:AC=3:2$이고, $\\angle BAC$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하자. 점 $D$를 지나 변 $AC$에 평행한 직선이 변 $AB$와 만나는 점을 $E$라 하고, 점 $E$를 지나 변 $BC$에 평행한 직선이 선분 $AD$와 만나는 점을 $F$라 하자.\n\n삼각형 $ABC$의 넓이가 $250\\,\\mathrm{cm}^2$일 때, 사각형 $BDFE$의 넓이는?\n[[그림:/figs/set2-m22-06/adv003.png]]",
+"solution": "각의 이등분선의 성질에 의해\n$BD:DC=AB:AC=3:2$이다.\n삼각형 $ABD$와 $ADC$는 높이가 같으므로\n$[\\triangle ABD]=250\\times\\dfrac{3}{5}=150\\,\\mathrm{cm}^2$이다.\n\n$DE\\parallel AC$이므로 삼각형 $BDE$와 $BCA$는 닮음이다. 따라서\n$BE:BA=BD:BC=3:5$이고,\n$AE:AB=2:5$이다.\n\n삼각형 $ABD$에서 $EF\\parallel BD$이므로 삼각형 $AEF$와 $ABD$의 닮음비는 $2:5$이다. 따라서\n$[\\triangle AEF]=150\\times\\left(\\dfrac{2}{5}\\right)^2=24\\,\\mathrm{cm}^2$이다.\n\n사각형 $BDFE$는 삼각형 $ABD$에서 삼각형 $AEF$를 제외한 부분이므로 그 넓이는\n$150-24=126\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비",
+"kind": "객관식",
+"choices": [
+"$24\\,\\mathrm{cm}^2$",
+"$60\\,\\mathrm{cm}^2$",
+"$90\\,\\mathrm{cm}^2$",
+"$126\\,\\mathrm{cm}^2$",
+"$150\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-06-adv-004",
+"typeId": "set2-m22-06-u0m0s0t3",
+"twinGroup": "tw-set2-m22-06-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 변 $BA$를 점 $A$ 쪽으로 연장한 반직선 위에 점 $D$를, 변 $CA$를 점 $A$ 쪽으로 연장한 반직선 위에 점 $E$를 잡았다. 세 점의 순서는 각각 $B$, $A$, $D$와 $C$, $A$, $E$이고,\n$AB:AD=AC:AE=3:2$이다.\n\n점 $D$를 지나 직선 $AC$에 평행한 직선이 변 $BC$의 연장선과 만나는 점을 $F$라 하자. 삼각형 $ADE$의 넓이는 $12\\,\\mathrm{cm}^2$이다.\n\n[[그림:/figs/set2-m22-06/adv004.png]]\n$DE\\parallel BC$임을 증명하고, 삼각형 $DCF$의 넓이를 구하는 과정을 서술하시오.",
+"solution": "$AB:AD=AC:AE=3:2$이고, $\\angle BAC=\\angle DAE$는 맞꼭지각이다. 따라서 두 변의 길이의 비와 그 끼인각이 각각 같으므로 삼각형 $ABC$와 $ADE$는 닮음이다.\n\n대응각인 $\\angle ABC$와 $\\angle ADE$가 같다. 이 두 각은 직선 $BC$, $DE$에 대한 엇각이므로 $DE\\parallel BC$이다.\n\n두 삼각형의 닮음비가 $3:2$이므로\n$[\\triangle ABC]=12\\times\\left(\\dfrac{3}{2}\\right)^2=27\\,\\mathrm{cm}^2$이다.\n\n$DF\\parallel AC$이므로 삼각형 $BAC$와 $BDF$는 닮음이다.\n$BD=BA+AD$이므로\n$BA:BD=3:5$이고,\n$BC:BF=3:5$이다.\n따라서 점 $F$는 점 $C$ 바깥쪽에 있으며\n$CF:BF=2:5$이다.\n\n또한\n$[\\triangle BDF]=27\\times\\left(\\dfrac{5}{3}\\right)^2=75\\,\\mathrm{cm}^2$이다.\n\n삼각형 $DCF$와 $DBF$는 꼭짓점 $D$에서 직선 $BF$에 내린 높이가 같으므로\n$[\\triangle DCF]=75\\times\\dfrac{2}{5}=30\\,\\mathrm{cm}^2$이다.\n\n[채점 기준]\n닮음 조건을 이용하여 $DE\\parallel BC$를 증명하면 $3$점.\n삼각형 $ABC$의 넓이를 구하면 $2$점.\n$BA:BD$와 $CF:BF$를 구하면 $3$점.\n삼각형 $DCF$의 넓이를 구하면 $2$점. 총 $10$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비",
+"kind": "주관식",
+"answer": "$DE\\parallel BC$, $30\\,\\mathrm{cm}^2$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-06-adv-005",
+"typeId": "set2-m22-06-u0m0s3t3",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"diff": 4,
+"body": "볼록사각형 $ABCD$의 네 변 $AB$, $BC$, $CD$, $DA$의 중점을 각각 $E$, $F$, $G$, $H$라 하자. 삼각형 $AEH$의 넓이는 $9\\,\\mathrm{cm}^2$이고, 삼각형 $CFG$의 넓이는 $15\\,\\mathrm{cm}^2$이다.\n\n[[그림:/figs/set2-m22-06/adv005.png]]\n다음 두 물음에 대한 풀이를 서술하시오.\n\n(가) 삼각형의 닮음을 이용하여 $EF\\parallel AC$, $EF=\\dfrac{1}{2}AC$임을 증명하고, 같은 원리를 적용하여 사각형 $EFGH$가 평행사변형임을 증명하시오. 단, 중점연결정리를 증명 없이 바로 인용하지 않는다.\n\n(나) 사각형 $EFGH$의 넓이를 구하시오.",
+"solution": "(가) 삼각형 $BAC$에서\n$BE:BA=BF:BC=1:2$이고 $\\angle EBF=\\angle ABC$이다.\n따라서 두 변의 길이의 비와 그 끼인각이 각각 같으므로 삼각형 $BEF$와 $BAC$는 닮음이다.\n\n대응각이 같으므로 $EF\\parallel AC$이고, 대응변의 비에 의해\n$EF=\\dfrac{1}{2}AC$이다.\n\n삼각형 $DAC$에도 같은 논리를 적용하면\n$HG\\parallel AC$, $HG=\\dfrac{1}{2}AC$이다.\n따라서 $EF\\parallel HG$이다.\n\n삼각형 $ABD$, $CBD$에 각각 같은 논리를 적용하면\n$EH\\parallel BD$, $FG\\parallel BD$이므로 $EH\\parallel FG$이다.\n두 쌍의 대변이 각각 평행하므로 사각형 $EFGH$는 평행사변형이다.\n\n(나) 삼각형 $AEH$와 $ABD$의 닮음비는 $1:2$이므로\n$[\\triangle ABD]=4\\times9=36\\,\\mathrm{cm}^2$이다.\n마찬가지로\n$[\\triangle CBD]=4\\times15=60\\,\\mathrm{cm}^2$이다.\n\n따라서 사각형 $ABCD$의 넓이는\n$36+60=96\\,\\mathrm{cm}^2$이다.\n\n삼각형 $BEF$와 $BAC$, 삼각형 $DGH$와 $DAC$의 넓이의 비는 각각 $1:4$이므로\n$[\\triangle BEF]+[\\triangle DGH]=\\dfrac{1}{4}\\times96=24\\,\\mathrm{cm}^2$이다.\n\n따라서 사각형 $EFGH$의 넓이는\n$96-(9+15+24)=48\\,\\mathrm{cm}^2$이다.\n\n[채점 기준]\n닮음 조건으로 $EF\\parallel AC$, $EF=\\dfrac{1}{2}AC$를 증명하면 $3$점.\n나머지 변에도 적용하여 평행사변형임을 증명하면 $2$점.\n사각형 $ABCD$의 넓이를 구하면 $2$점.\n나머지 두 꼭짓점 쪽 삼각형의 넓이의 합을 구하고 최종 넓이를 구하면 $3$점. 총 $10$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비",
+"kind": "주관식",
+"answer": "(가) 해설 참조, (나) $48\\,\\mathrm{cm}^2$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-06-adv-006",
+"typeId": "set2-m22-06-u0m0s2t3",
+"twinGroup": "tw-set2-m22-06-u0m0s2t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 변 $AB$, $AC$의 중점을 각각 $M$, $N$이라 하자. $\\angle BAC$의 이등분선이 변 $BC$와 만나는 점을 $D$, 선분 $MN$과 만나는 점을 $P$라 한다. 점 $P$를 지나 변 $AC$에 평행한 직선이 변 $DC$와 만나는 점을 $Q$라 하자.\n\n삼각형 $BMQ$와 $DPQ$의 넓이의 비가 $5:2$이고, $AB+AC=28\\,\\mathrm{cm}$일 때, $AC-AB$의 값은?\n[[그림:/figs/set2-m22-06/adv006.png]]",
+"solution": "$M$, $N$은 각각 변 $AB$, $AC$의 중점이므로 중점연결정리에 의해 $MN\\parallel BC$이다.\n삼각형 $ABD$에서 중점 $M$을 지나 $BD$에 평행한 직선이 선분 $AD$와 만나는 점이 $P$이므로 $P$는 선분 $AD$의 중점이다.\n\n삼각형 $ADC$에서 $P$가 선분 $AD$의 중점이고 $PQ\\parallel AC$이므로 $Q$는 선분 $DC$의 중점이다. 따라서 $DQ=QC$이다.\n\n두 점 $M$, $P$는 직선 $BC$에 평행한 같은 직선 위에 있다. 따라서 삼각형 $BMQ$와 $DPQ$는 각각 밑변을 $BQ$, $DQ$로 잡으면 높이가 같다. 그러므로\n$BQ:DQ=5:2$이다.\n\n$DQ=QC=2k$라 놓으면 $BQ=5k$이고,\n$BD=BQ-DQ=3k$, $DC=4k$이다.\n따라서 $BD:DC=3:4$이다.\n\n각의 이등분선의 성질에 의해\n$AB:AC=BD:DC=3:4$이다.\n$AB+AC=28\\,\\mathrm{cm}$이므로\n$AB=12\\,\\mathrm{cm}$, $AC=16\\,\\mathrm{cm}$이다.\n\n따라서\n$AC-AB=16-12=4\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비",
+"kind": "객관식",
+"choices": [
+"$0\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$"
+],
+"answer": "②"
+}
+]

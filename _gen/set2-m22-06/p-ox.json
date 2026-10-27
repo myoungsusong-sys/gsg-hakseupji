@@ -1,0 +1,222 @@
+[
+{
+"id": "set2-m22-06-ox-001",
+"typeId": "set2-m22-06-u0m0s0t0",
+"twinGroup": "tw-set2-m22-06-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고 $DE\\parallel BC$이면 $AB:AD=AC:AE=BC:DE$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 평행선의 동위각이 같으므로 $\\triangle ABC\\sim\\triangle ADE$이고, 대응하는 변의 길이의 비는 같다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-002",
+"typeId": "set2-m22-06-u0m0s0t0",
+"twinGroup": "tw-set2-m22-06-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$의 내부에 각각 점 $D$, $E$가 있고 $DE\\parallel BC$이면 $DE:BC=AD:DB$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $DE:BC$는 닮음비이므로 $AD:AB$와 같다. $AD:DB$는 변을 나눈 두 부분의 길이의 비이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-003",
+"typeId": "set2-m22-06-u0m0s0t0",
+"twinGroup": "tw-set2-m22-06-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고 $DE\\parallel BC$일 때, $AD=6$, $DB=3$, $AE=8$이면 $EC=12$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $AD:DB=AE:EC$이므로 $6:3=8:EC$이다. 따라서 $EC=4$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-004",
+"typeId": "set2-m22-06-u0m0s0t0",
+"twinGroup": "tw-set2-m22-06-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$의 내부에 각각 점 $D$, $E$가 있고 $AD:DB=AE:EC$이면 $DE\\parallel BC$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 삼각형의 두 변을 같은 비로 나누는 두 점을 이은 직선은 나머지 변에 평행하다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-005",
+"typeId": "set2-m22-06-u0m0s0t0",
+"twinGroup": "tw-set2-m22-06-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 직선이 점 $A$에서 만나고 점들이 각각 $B,A,D$와 $C,A,E$의 순서로 놓인 모래시계 모양에서 $BC\\parallel DE$이면 $\\triangle ABC$와 $\\triangle ADE$는 맞꼭지각과 엇각을 이용하여 AA 닮음임을 알 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 점 $A$에서의 맞꼭지각이 같고 평행선의 엇각이 같으므로 두 삼각형은 닮음이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-006",
+"typeId": "set2-m22-06-u0m0s1t0",
+"twinGroup": "tw-set2-m22-06-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "세 평행선 $l,m,n$이 두 직선과 만나고, $l$과 $m$ 사이의 선분의 길이가 각각 $a,a'$, $m$과 $n$ 사이의 선분의 길이가 각각 $b,b'$일 때 $a:b=b':a'$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 같은 두 평행선 사이에서 잘린 선분끼리 대응시켜야 한다. 바른 비례식은 $a:b=a':b'$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-007",
+"typeId": "set2-m22-06-u0m0s1t0",
+"twinGroup": "tw-set2-m22-06-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "세 평행선이 두 직선에서 잘라 낸 대응하는 선분의 길이에 대하여 $4:6=6:x$이면 $x=9$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 비례식에서 $4x=36$이므로 $x=9$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-008",
+"typeId": "set2-m22-06-u0m0s1t0",
+"twinGroup": "tw-set2-m22-06-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 점 $E,F$가 각각 변 $AB,DC$ 위에 있고 $AD\\parallel EF\\parallel BC$일 때, $AD=6$ cm, $BC=15$ cm, $AE:EB=1:2$이면 $EF=5$ cm이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $5$ cm는 대각선 $AC$와 $EF$의 교점을 $G$라 할 때의 $EG$의 길이이다. $GF=4$ cm이므로 $EF=9$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-009",
+"typeId": "set2-m22-06-u0m0s1t0",
+"twinGroup": "tw-set2-m22-06-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 점 $E,F$가 각각 변 $AB,DC$ 위에 있고 $AD\\parallel EF\\parallel BC$일 때, $AE:EB=1:2$이면 $CF:CD=1:3$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $CF$는 $BE$에 대응하므로 $CF:CD=BE:BA=2:3$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-010",
+"typeId": "set2-m22-06-u0m0s1t0",
+"twinGroup": "tw-set2-m22-06-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 점 $E,F$가 각각 변 $AB,DC$ 위에 있고 $AD\\parallel EF\\parallel BC$일 때, 대각선 $AC$와 $EF$의 교점을 $G$라 하면 $EG:BC=AE:AB$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $\\triangle ABC$에서 $EG\\parallel BC$이므로 $\\triangle AEG\\sim\\triangle ABC$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-011",
+"typeId": "set2-m22-06-u0m0s2t0",
+"twinGroup": "tw-set2-m22-06-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하면 $BD:DC=AC:AB$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 대변을 나눈 선분과 그쪽에 있는 변을 대응시켜야 한다. 바른 비례식은 $BD:DC=AB:AC$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-012",
+"typeId": "set2-m22-06-u0m0s2t0",
+"twinGroup": "tw-set2-m22-06-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 할 때, $AB=9$ cm, $AC=6$ cm, $BC=10$ cm이면 $BD=6$ cm이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $BD:DC=9:6=3:2$이므로 $BD=10\\times\\frac35=6$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-013",
+"typeId": "set2-m22-06-u0m0s2t0",
+"twinGroup": "tw-set2-m22-06-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하면 $\\triangle ABD$와 $\\triangle ADC$의 넓이의 비는 $AB:AC$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 두 삼각형은 변 $BC$에 대한 높이가 같으므로 넓이의 비는 $BD:DC$이고, 이는 $AB:AC$와 같다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-014",
+"typeId": "set2-m22-06-u0m0s2t0",
+"twinGroup": "tw-set2-m22-06-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $AB=9$ cm, $AC=6$ cm일 때, $\\angle A$의 이등분선이 변 $BC$와 만나는 점 $D$는 $BC$의 중점이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $BD:DC=9:6=3:2$이므로 $BD$와 $DC$의 길이는 다르다. 따라서 $D$는 $BC$의 중점이 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-015",
+"typeId": "set2-m22-06-u0m0s2t0",
+"twinGroup": "tw-set2-m22-06-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 $\\angle A$의 이등분선을 $AD$라 하고, 점 $C$를 지나 $AD$에 평행한 직선과 $BA$의 연장선의 교점을 $E$라 하면 $AE=AC$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 평행선의 성질과 각의 이등분선의 성질에 의해 $\\angle AEC=\\angle ACE$이다. 따라서 $\\triangle AEC$는 $AE=AC$인 이등변삼각형이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-016",
+"typeId": "set2-m22-06-u0m0s3t0",
+"twinGroup": "tw-set2-m22-06-u0m0s3t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$의 중점을 각각 $M,N$이라 할 때, $BC=14$ cm이면 $MN=14$ cm이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 두 변의 중점을 연결한 선분의 길이는 나머지 변의 길이의 절반이다. 따라서 $MN=7$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-017",
+"typeId": "set2-m22-06-u0m0s3t0",
+"twinGroup": "tw-set2-m22-06-u0m0s3t0",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형의 세 변의 중점을 연결하여 만든 삼각형의 넓이는 원래 삼각형의 넓이의 $\\frac12$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 세 변의 중점을 연결하면 원래 삼각형이 합동인 삼각형 네 개로 나뉜다. 따라서 가운데 삼각형의 넓이는 원래 넓이의 $\\frac14$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-018",
+"typeId": "set2-m22-06-u0m0s3t0",
+"twinGroup": "tw-set2-m22-06-u0m0s3t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $M$이 변 $AB$의 중점이고, $M$을 지나 $BC$에 평행한 직선이 변 $AC$와 만나는 점을 $N$이라 하면 $AN=NC$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 한 변의 중점을 지나 다른 변에 평행한 직선은 나머지 변의 중점을 지난다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-019",
+"typeId": "set2-m22-06-u0m0s3t0",
+"twinGroup": "tw-set2-m22-06-u0m0s3t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$AD\\parallel BC$인 사다리꼴 $ABCD$에서 두 옆변 $AB,DC$의 중점을 각각 $M,N$이라 할 때, $AD=8$ cm, $BC=14$ cm이면 $MN=3$ cm이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $MN$의 길이는 두 밑변의 길이의 합의 절반이다. 따라서 $MN=(8+14)\\div2=11$ cm이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+},
+{
+"id": "set2-m22-06-ox-020",
+"typeId": "set2-m22-06-u0m0s3t0",
+"twinGroup": "tw-set2-m22-06-u0m0s3t0",
+"kind": "주관식",
+"diff": 1,
+"body": "볼록사각형의 네 변의 중점을 차례로 연결하여 만든 사각형은 평행사변형이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 각 대각선을 기준으로 중점연결정리를 적용하면 마주 보는 두 쌍의 변이 각각 평행하다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 06 평행선과 선분의 길이의 비"
+}
+]

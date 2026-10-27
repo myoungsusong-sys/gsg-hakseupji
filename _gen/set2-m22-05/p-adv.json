@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-m22-05-adv-001",
+"typeId": "set2-m22-05-u0m0s0t3",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"diff": 5,
+"body": "서로 닮은 세 삼각기둥 $\\mathrm{A}$, $\\mathrm{B}$, $\\mathrm{C}$가 작은 것부터 차례로 놓여 있다. 서로 대응하는 한 모서리의 길이는 차례로 같은 길이만큼 증가한다. 각 삼각기둥의 겉넓이를 각각 $S_{\\mathrm{A}}$, $S_{\\mathrm{B}}$, $S_{\\mathrm{C}}$라 할 때\n$(S_{\\mathrm{B}}-S_{\\mathrm{A}}):(S_{\\mathrm{C}}-S_{\\mathrm{B}})=5:7$\n이다. 삼각기둥 $\\mathrm{B}$와 $\\mathrm{A}$의 부피의 차가 $152\\,\\mathrm{cm}^3$일 때, 삼각기둥 $\\mathrm{C}$의 부피는?",
+"solution": "첫째, 대응하는 모서리의 길이가 같은 길이만큼 증가하므로 세 삼각기둥의 닮음비를 $x:(x+1):(x+2)$로 놓을 수 있다.\n\n둘째, 닮은 입체도형의 겉넓이의 비는 닮음비의 제곱의 비이므로\n$\\{(x+1)^2-x^2\\}:\\{(x+2)^2-(x+1)^2\\}=5:7$\n이다. 따라서\n$(2x+1):(2x+3)=5:7$,\n$7(2x+1)=5(2x+3)$이므로 $x=2$이다.\n\n셋째, 세 삼각기둥의 닮음비는 $2:3:4$이고, 부피의 비는 $8:27:64$이다. 따라서 삼각기둥 $\\mathrm{C}$의 부피는\n$152\\times\\dfrac{64}{27-8}=512\\,\\mathrm{cm}^3$\n이다.\n\n겉넓이의 차의 비를 모서리의 길이의 차의 비나 부피의 차의 비로 사용하면 안 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$216\\,\\mathrm{cm}^3$",
+"$304\\,\\mathrm{cm}^3$",
+"$456\\,\\mathrm{cm}^3$",
+"$512\\,\\mathrm{cm}^3$",
+"$608\\,\\mathrm{cm}^3$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-05-adv-002",
+"typeId": "set2-m22-05-u0m0s1t3",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"diff": 5,
+"body": "삼각형 $ABC$의 변 $\\overline{AB}$, $\\overline{AC}$ 위에 각각 점 $D$, $E$가 있다.\n$\\overline{AD}=6\\,\\mathrm{cm}$, $\\overline{DB}=4\\,\\mathrm{cm}$, $\\overline{AE}=4\\,\\mathrm{cm}$, $\\overline{EC}=11\\,\\mathrm{cm}$이고, 사각형 $DBCE$의 둘레의 길이는 $36\\,\\mathrm{cm}$이다.\n\n[[그림:/figs/set2-m22-05/adv002.png]]\n삼각형 $ADE$와 닮음인 삼각형을 대응하는 꼭짓점의 순서에 맞게 쓰고, 닮음 조건을 밝혀 증명하시오. 이를 이용하여 $\\overline{BC}$의 길이와 삼각형 $ADE$의 넓이 대 사각형 $DBCE$의 넓이의 비를 각각 구하시오.",
+"solution": "첫째, $\\overline{AB}=6+4=10\\,\\mathrm{cm}$, $\\overline{AC}=4+11=15\\,\\mathrm{cm}$이다.\n삼각형 $ADE$와 삼각형 $ACB$에서\n$\\overline{AD}:\\overline{AC}=6:15=2:5$,\n$\\overline{AE}:\\overline{AB}=4:10=2:5$\n이고, 그 끼인각인 $\\angle DAE$와 $\\angle CAB$는 같다.\n따라서 $\\triangle ADE\\sim\\triangle ACB$이다. 닮음 조건은 $\\mathrm{SAS}$ 닮음이다.\n\n둘째, $\\overline{DE}=x\\,\\mathrm{cm}$라 하면 대응변의 비에 의해 $\\overline{BC}=\\dfrac{5}{2}x\\,\\mathrm{cm}$이다.\n사각형 $DBCE$의 둘레에서\n$4+\\dfrac{5}{2}x+11+x=36$,\n$\\dfrac{7}{2}x=21$이므로 $x=6$이다.\n따라서 $\\overline{BC}=\\dfrac{5}{2}\\times 6=15\\,\\mathrm{cm}$이다.\n\n셋째, 닮음비가 $2:5$이므로 삼각형 $ADE$와 삼각형 $ABC$의 넓이의 비는 $4:25$이다. 사각형 $DBCE$는 전체 삼각형에서 삼각형 $ADE$를 제외한 부분이므로 구하는 넓이의 비는\n$4:(25-4)=4:21$\n이다.\n\n[채점 기준] 총 $10$점. 대응 순서와 $\\mathrm{SAS}$ 닮음의 근거 제시 $4$점, 둘레를 이용한 방정식과 $\\overline{BC}$ 계산 $3$점, 넓이의 비 계산 $3$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "주관식",
+"answer": "$\\overline{BC}=15\\,\\mathrm{cm}$, 넓이의 비는 $4:21$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-05-adv-003",
+"typeId": "set2-m22-05-u0m0s0t3",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $\\overline{AB}\\parallel\\overline{CD}$이고, $\\overline{AB}=6\\,\\mathrm{cm}$, $\\overline{CD}=15\\,\\mathrm{cm}$이다. 두 대각선의 교점을 $O$라 하자.\n\n선분 $\\overline{OC}$ 위의 점 $E$를 $\\overline{OE}:\\overline{EC}=2:3$이 되도록 잡고, 점 $E$를 지나며 $\\overline{CD}$에 평행한 직선과 선분 $\\overline{OD}$의 교점을 $F$라 한다.\n\n사다리꼴 $ABCD$의 넓이가 $147\\,\\mathrm{cm}^2$일 때, 사각형 $ECDF$의 넓이는?\n[[그림:/figs/set2-m22-05/adv003.png]]",
+"solution": "첫째, 평행선의 엇각과 맞꼭지각을 이용하면 $\\triangle AOB\\sim\\triangle COD$이다. 닮음 조건은 $\\mathrm{AA}$ 닮음이며, 닮음비는 $6:15=2:5$이다.\n따라서 $\\overline{AO}:\\overline{OC}=2:5$이고, 두 삼각형의 넓이의 비는 $4:25$이다.\n\n둘째, 삼각형 $AOD$와 삼각형 $COD$는 꼭짓점 $D$에서 직선 $AC$에 이르는 높이가 같으므로 넓이의 비가 $\\overline{AO}:\\overline{OC}=2:5$이다.\n마찬가지로 삼각형 $BOC$와 삼각형 $COD$의 넓이의 비도 $2:5$이다.\n\n따라서 네 삼각형 $AOB$, $AOD$, $BOC$, $COD$의 넓이의 비는\n$4:10:10:25$\n이다. 그러므로 삼각형 $COD$의 넓이는\n$147\\times\\dfrac{25}{49}=75\\,\\mathrm{cm}^2$\n이다.\n\n셋째, $\\overline{EF}\\parallel\\overline{CD}$이므로 $\\triangle OEF\\sim\\triangle OCD$이고,\n$\\overline{OE}:\\overline{OC}=2:5$\n이다. 따라서 삼각형 $OEF$의 넓이는\n$75\\times\\dfrac{4}{25}=12\\,\\mathrm{cm}^2$\n이다.\n\n구하는 사각형 $ECDF$의 넓이는 $75-12=63\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$45\\,\\mathrm{cm}^2$",
+"$48\\,\\mathrm{cm}^2$",
+"$63\\,\\mathrm{cm}^2$",
+"$72\\,\\mathrm{cm}^2$",
+"$87\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-05-adv-004",
+"typeId": "set2-m22-05-u0m0s1t3",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 모양의 종이 $ABC$에서 $\\overline{AB}:\\overline{AC}=2:3$, $\\overline{BC}=26\\,\\mathrm{cm}$이다. 점 $A$에서 $\\overline{BC}$에 내린 수선의 발을 $H$라 한다.\n\n꼭짓점 $B$가 꼭짓점 $C$에 포개어지도록 종이를 접었을 때, 접는 선과 $\\overline{BC}$, $\\overline{AC}$의 교점을 각각 $M$, $P$라 한다.\n\n[[그림:/figs/set2-m22-05/adv004.png]]\n삼각형의 닮음을 이용하여 $\\overline{BH}:\\overline{HC}$를 구하고, $\\overline{PM}$의 길이를 구하는 과정을 서술하시오.",
+"solution": "첫째, 직각삼각형의 빗변에 내린 수선으로 생기는 삼각형들은 $\\mathrm{AA}$ 닮음이다. 따라서\n$\\overline{AB}^{\\,2}=\\overline{BH}\\times\\overline{BC}$,\n$\\overline{AC}^{\\,2}=\\overline{HC}\\times\\overline{BC}$\n이다. 두 식의 비를 구하면\n$\\overline{BH}:\\overline{HC}=\\overline{AB}^{\\,2}:\\overline{AC}^{\\,2}=4:9$\n이다.\n\n둘째, $\\overline{BC}=26\\,\\mathrm{cm}$이므로\n$\\overline{BH}=8\\,\\mathrm{cm}$, $\\overline{HC}=18\\,\\mathrm{cm}$이다.\n또한 닮음에서 얻은 관계\n$\\overline{AH}^{\\,2}=\\overline{BH}\\times\\overline{HC}=8\\times18=144$\n에 의해 $\\overline{AH}=12\\,\\mathrm{cm}$이다.\n\n셋째, 접는 선 위의 점은 서로 포개어지는 두 점에서 같은 거리에 있다. 따라서 $\\overline{BM}=\\overline{CM}=13\\,\\mathrm{cm}$이고, 접는 선은 $\\overline{BC}$에 수직이다.\n\n삼각형 $PMC$와 삼각형 $AHC$는 한 쌍의 직각과 꼭짓점 $C$의 각이 각각 같으므로 $\\mathrm{AA}$ 닮음이다. 따라서\n$\\overline{PM}:\\overline{AH}=\\overline{CM}:\\overline{CH}=13:18$\n이므로\n$\\overline{PM}=12\\times\\dfrac{13}{18}=\\dfrac{26}{3}\\,\\mathrm{cm}$\n이다.\n\n[채점 기준] 총 $10$점. 닮음을 근거로 $\\overline{BH}:\\overline{HC}$ 계산 $3$점, $\\overline{AH}$ 계산 $2$점, 접는 선의 성질 설명 $2$점, $\\triangle PMC\\sim\\triangle AHC$를 이용한 길이 계산 $3$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "주관식",
+"answer": "$\\overline{BH}:\\overline{HC}=4:9$, $\\overline{PM}=\\dfrac{26}{3}\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-05-adv-005",
+"typeId": "set2-m22-05-u0m0s1t3",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 점 $A$로부터 $\\overline{BC}$에 내린 수선의 발을 $H$라 한다. 삼각형 $ABH$와 삼각형 $AHC$의 넓이의 비는 $9:16$이고, $\\overline{AH}=12\\,\\mathrm{cm}$이다.\n\n점 $H$에서 $\\overline{AB}$에 내린 수선의 발을 $K$, 점 $K$에서 $\\overline{BC}$에 내린 수선의 발을 $L$이라 할 때, $\\overline{KL}$의 길이는?\n[[그림:/figs/set2-m22-05/adv005.png]]",
+"solution": "첫째, 삼각형 $ABH$와 삼각형 $AHC$는 밑변을 각각 $\\overline{BH}$, $\\overline{HC}$로 잡으면 높이가 $\\overline{AH}$로 같다. 따라서\n$\\overline{BH}:\\overline{HC}=9:16$\n이다.\n\n$\\overline{BH}=9t\\,\\mathrm{cm}$, $\\overline{HC}=16t\\,\\mathrm{cm}$라 하면 직각삼각형의 닮음에서\n$\\overline{AH}^{\\,2}=\\overline{BH}\\times\\overline{HC}$\n이므로 $144=144t^2$이다. 길이는 양수이므로 $t=1$이다.\n따라서 $\\overline{BH}=9\\,\\mathrm{cm}$, $\\overline{HC}=16\\,\\mathrm{cm}$, $\\overline{BC}=25\\,\\mathrm{cm}$이다.\n\n둘째, $\\overline{AB}^{\\,2}=\\overline{BH}\\times\\overline{BC}=9\\times25=225$이므로 $\\overline{AB}=15\\,\\mathrm{cm}$이다.\n삼각형 $BKH$와 삼각형 $BHA$는 직각과 꼭짓점 $B$의 각이 각각 같으므로 $\\mathrm{AA}$ 닮음이다. 따라서\n$\\overline{BK}:\\overline{BH}=\\overline{BH}:\\overline{BA}=3:5$\n이므로 $\\overline{BK}=\\dfrac{27}{5}\\,\\mathrm{cm}$이다.\n\n셋째, 삼각형 $BLK$와 삼각형 $BHA$도 $\\mathrm{AA}$ 닮음이다. 이때\n$\\overline{KL}:\\overline{HA}=\\overline{BK}:\\overline{BA}=\\dfrac{27}{5}:15=9:25$\n이므로\n$\\overline{KL}=12\\times\\dfrac{9}{25}=\\dfrac{108}{25}\\,\\mathrm{cm}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{108}{25}\\,\\mathrm{cm}$",
+"$\\dfrac{144}{25}\\,\\mathrm{cm}$",
+"$\\dfrac{36}{5}\\,\\mathrm{cm}$",
+"$\\dfrac{48}{5}\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m22-05-adv-006",
+"typeId": "set2-m22-05-u0m0s0t3",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"diff": 4,
+"body": "꼭짓점이 아래를 향하도록 세운 원뿔 모양의 빈 물통에 일정한 부피의 물을 매분 넣고 있다. 물통의 입구는 수평이며, 물의 증발과 누수는 없다.\n\n물 표면의 넓이가 입구 넓이의 $\\dfrac{9}{25}$이 된 순간부터 $\\dfrac{16}{25}$이 된 순간까지 $74$분이 걸렸다. 물 표면의 넓이가 입구 넓이의 $\\dfrac{16}{25}$이 된 순간부터 물통을 가득 채울 때까지 걸리는 시간은?\n\n단, 물 표면은 항상 입구와 평행하며, 물통의 두께는 생각하지 않는다.",
+"solution": "첫째, 물이 차지하는 부분과 물통 전체는 서로 닮은 원뿔이다. 물 표면의 넓이와 입구 넓이의 비가 각각 $9:25$, $16:25$일 때, 물이 차지하는 원뿔과 물통 전체의 닮음비는 각각 $3:5$, $4:5$이다.\n\n둘째, 닮은 입체도형의 부피의 비는 닮음비의 세제곱의 비이므로 두 순간의 물의 부피와 물통 전체의 부피의 비는 각각 $27:125$, $64:125$이다.\n\n셋째, $74$분 동안 들어간 물의 부피는 전체 부피의 $\\dfrac{64-27}{125}=\\dfrac{37}{125}$이고, 이후 더 넣어야 하는 물의 부피는 전체 부피의 $\\dfrac{125-64}{125}=\\dfrac{61}{125}$이다.\n\n일정한 부피의 물을 매분 넣으므로 걸리는 시간은 넣는 물의 부피에 정비례한다. 따라서 구하는 시간은\n$74\\times\\dfrac{61}{37}=122$분이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$54$분",
+"$74$분",
+"$90$분",
+"$122$분",
+"$196$분"
+],
+"answer": "④"
+}
+]

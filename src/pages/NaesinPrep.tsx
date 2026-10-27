@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import ExamSchedulePanel from '../components/prep/ExamSchedulePanel'
+import ExamSetPanel from '../components/prep/ExamSetPanel'
 import { Link, useNavigate } from 'react-router-dom'
 import SubTabs from '../components/SubTabs'
 import { useStore, uid } from '../lib/store'
@@ -26,6 +27,7 @@ const TABS = [
   { key: 'hall', label: '내신관' },
   { key: 'textbook', label: '내신 대비 교과서' },
   { key: 'recommend', label: '내신 대비 추천' },
+  { key: 'examset', label: '📝 시험대비·수업세트' },   // 2026-10-27 시험대비 세트·수업세트 과정 — 출제·채점 결과·학부모 보고
 ]
 
 export default function NaesinPrep() {
@@ -38,6 +40,7 @@ export default function NaesinPrep() {
       {tab === 'hall' && <Hall onGo={setTab} />}
       {tab === 'textbook' && <SetTable mode="textbook" />}
       {tab === 'recommend' && <SetTable mode="recommend" />}
+      {tab === 'examset' && <ExamSetPanel />}
     </div>
   )
 }

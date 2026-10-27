@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-m22-05-con-001",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 1,
+"body": "다음 중 주어진 조건만으로 두 도형이 반드시 닮았다고 판단할 수 있는 것은?",
+"solution": "(1) 변의 개수가 같은 두 정다각형은 대응각의 크기가 각각 같고, 대응변의 길이의 비가 일정하므로 항상 닮은 도형이다.\n(2) 직사각형은 넓이가 같아도 가로와 세로의 길이의 비가 다를 수 있다. 마름모와 이등변삼각형은 주어진 조건만으로 각의 크기가 정해지지 않는다.\n(3) 원기둥은 밑면의 반지름이 같아도 높이가 다를 수 있으므로 반드시 닮았다고 할 수 없다.\n따라서 정답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"넓이가 같은 두 직사각형",
+"한 변의 길이가 같은 두 마름모",
+"둘레의 길이가 같은 두 이등변삼각형",
+"반지름의 길이가 같은 두 원기둥",
+"변의 개수가 같은 두 정다각형"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-m22-05-con-002",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 1,
+"body": "두 삼각형이 $\\triangle ABC\\sim\\triangle EFD$이고, $\\overline{AB}=8\\,\\mathrm{cm}$, $\\overline{BC}=10\\,\\mathrm{cm}$, $\\overline{EF}=12\\,\\mathrm{cm}$, $\\angle B=68^\\circ$이다. $\\overline{FD}$의 길이와 $\\angle F$의 크기를 차례대로 구한 것은?",
+"solution": "(1) 닮음 기호의 꼭짓점 순서에 따라 $\\overline{AB}$와 $\\overline{EF}$, $\\overline{BC}$와 $\\overline{FD}$가 각각 대응한다.\n(2) 두 삼각형의 닮음비는 $8:12=2:3$이므로\n$\\overline{FD}=10\\times\\dfrac{3}{2}=15\\,\\mathrm{cm}$이다.\n(3) 대응각의 크기는 같으므로 $\\angle F=\\angle B=68^\\circ$이다.\n따라서 정답은 ①이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$15\\,\\mathrm{cm}$, $68^\\circ$",
+"$15\\,\\mathrm{cm}$, $102^\\circ$",
+"$\\dfrac{20}{3}\\,\\mathrm{cm}$, $68^\\circ$",
+"$\\dfrac{20}{3}\\,\\mathrm{cm}$, $102^\\circ$",
+"$14\\,\\mathrm{cm}$, $68^\\circ$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m22-05-con-003",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 2,
+"body": "닮은 두 오각형에서 서로 대응하는 한 변의 길이가 작은 오각형은 $6\\,\\mathrm{cm}$, 큰 오각형은 $9\\,\\mathrm{cm}$이다. 두 오각형의 둘레의 길이의 합이 $70\\,\\mathrm{cm}$일 때, 큰 오각형의 둘레의 길이는?",
+"solution": "(1) 작은 오각형과 큰 오각형의 닮음비는 $6:9=2:3$이다.\n(2) 닮은 두 평면도형의 둘레의 길이의 비는 닮음비와 같으므로 $2:3$이다.\n(3) 따라서 큰 오각형의 둘레의 길이는\n$70\\times\\dfrac{3}{2+3}=42\\,\\mathrm{cm}$이다.\n따라서 정답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$28\\,\\mathrm{cm}$",
+"$35\\,\\mathrm{cm}$",
+"$42\\,\\mathrm{cm}$",
+"$\\dfrac{630}{13}\\,\\mathrm{cm}$",
+"$105\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-05-con-004",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 2,
+"body": "닮은 두 원기둥 $A$, $B$의 높이는 각각 $14\\,\\mathrm{cm}$, $21\\,\\mathrm{cm}$이다. 원기둥 $B$의 밑면의 반지름의 길이가 $9\\,\\mathrm{cm}$일 때, 원기둥 $A$의 밑면의 반지름의 길이는?",
+"solution": "(1) 닮은 두 원기둥에서 높이의 비와 밑면의 반지름의 길이의 비는 모두 닮음비와 같다.\n(2) 원기둥 $A$와 $B$의 닮음비는 $14:21=2:3$이다.\n(3) 따라서 원기둥 $A$의 밑면의 반지름의 길이는\n$9\\times\\dfrac{2}{3}=6\\,\\mathrm{cm}$이다.\n따라서 정답은 ④이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$\\dfrac{9}{2}\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$\\dfrac{27}{2}\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-05-con-005",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 2,
+"body": "닮은 두 직사각형 $A$, $B$의 넓이의 비가 $36:49$이다. 직사각형 $A$의 둘레의 길이가 $30\\,\\mathrm{cm}$일 때, 직사각형 $B$의 둘레의 길이는?",
+"solution": "(1) 닮은 두 평면도형의 넓이의 비는 닮음비의 제곱의 비이다.\n$36:49=6^2:7^2$이므로 직사각형 $A$와 $B$의 닮음비는 $6:7$이다.\n(2) 둘레의 길이의 비는 닮음비와 같으므로 $6:7$이다.\n(3) 따라서 직사각형 $B$의 둘레의 길이는\n$30\\times\\dfrac{7}{6}=35\\,\\mathrm{cm}$이다.\n따라서 정답은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{180}{7}\\,\\mathrm{cm}$",
+"$35\\,\\mathrm{cm}$",
+"$\\dfrac{245}{6}\\,\\mathrm{cm}$",
+"$60\\,\\mathrm{cm}$",
+"$\\dfrac{1715}{36}\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m22-05-con-006",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$의 변 $\\overline{AB}$, $\\overline{AC}$ 위에 각각 점 $D$, $E$가 있다. $\\overline{DE}\\parallel\\overline{BC}$이고 $\\overline{AD}:\\overline{DB}=3:2$이다. 삼각형 $ADE$의 넓이가 $27\\,\\mathrm{cm}^2$일 때, 사각형 $DBCE$의 넓이는?",
+"solution": "(1) $\\overline{DE}\\parallel\\overline{BC}$이므로 동위각의 크기가 각각 같다. 따라서 $\\triangle ADE\\sim\\triangle ABC$이다.\n(2) $\\overline{AD}:\\overline{DB}=3:2$이므로 닮음비는\n$\\overline{AD}:\\overline{AB}=3:(3+2)=3:5$이다.\n(3) 두 삼각형의 넓이의 비는 $3^2:5^2=9:25$이므로 삼각형 $ABC$의 넓이는\n$27\\times\\dfrac{25}{9}=75\\,\\mathrm{cm}^2$이다.\n(4) 사각형 $DBCE$의 넓이는\n$75-27=48\\,\\mathrm{cm}^2$이다.\n따라서 정답은 ⑤이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$12\\,\\mathrm{cm}^2$",
+"$18\\,\\mathrm{cm}^2$",
+"$45\\,\\mathrm{cm}^2$",
+"$75\\,\\mathrm{cm}^2$",
+"$48\\,\\mathrm{cm}^2$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-m22-05-con-007",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 2,
+"body": "닮은 두 삼각기둥 $A$, $B$의 부피의 비가 $64:125$이다. 삼각기둥 $B$의 겉넓이가 $150\\,\\mathrm{cm}^2$일 때, 삼각기둥 $A$의 겉넓이는?",
+"solution": "(1) 닮은 두 입체도형의 부피의 비는 닮음비의 세제곱의 비이다.\n$64:125=4^3:5^3$이므로 삼각기둥 $A$와 $B$의 닮음비는 $4:5$이다.\n(2) 겉넓이의 비는 닮음비의 제곱의 비이므로 $16:25$이다.\n(3) 따라서 삼각기둥 $A$의 겉넓이는\n$150\\times\\dfrac{16}{25}=96\\,\\mathrm{cm}^2$이다.\n따라서 정답은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{384}{5}\\,\\mathrm{cm}^2$",
+"$120\\,\\mathrm{cm}^2$",
+"$96\\,\\mathrm{cm}^2$",
+"$\\dfrac{375}{2}\\,\\mathrm{cm}^2$",
+"$\\dfrac{1875}{8}\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-05-con-008",
+"typeId": "set2-m22-05-u0m0s0t2",
+"twinGroup": "tw-set2-m22-05-u0m0s0t2",
+"diff": 3,
+"body": "닮은 두 직육면체 $A$, $B$의 겉넓이는 각각 $294\\,\\mathrm{cm}^2$, $600\\,\\mathrm{cm}^2$이고, 직육면체 $A$의 부피는 $343\\,\\mathrm{cm}^3$이다.\n\n지우는 “겉넓이의 비가 $49:100$이므로 부피의 비도 $49:100$이다.”라고 설명하였다. 지우의 설명이 틀린 이유를 쓰고, 직육면체 $B$의 부피를 구하는 과정을 서술하시오.",
+"solution": "(1) 닮은 두 입체도형의 닮음비가 $m:n$이면 겉넓이의 비는 $m^2:n^2$, 부피의 비는 $m^3:n^3$이다. 따라서 겉넓이의 비를 그대로 부피의 비로 사용할 수 없다.\n(2) 직육면체 $A$와 $B$의 겉넓이의 비는\n$294:600=49:100=7^2:10^2$이므로 닮음비는 $7:10$이다.\n(3) 부피의 비는 $7^3:10^3=343:1000$이다. 따라서 직육면체 $B$의 부피는\n$343\\times\\dfrac{1000}{343}=1000\\,\\mathrm{cm}^3$이다.\n\n[채점 기준]\n- 겉넓이의 비와 부피의 비가 닮음비에 따라 달라지는 이유를 설명하면 $2$점.\n- 겉넓이의 비에서 닮음비 $7:10$을 구하면 $1$점.\n- 부피의 비 $343:1000$을 이용하여 직육면체 $B$의 부피 $1000\\,\\mathrm{cm}^3$를 구하면 $2$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "주관식",
+"answer": "겉넓이의 비와 부피의 비는 각각 닮음비의 제곱의 비와 세제곱의 비이므로 지우의 설명은 틀리다. 직육면체 $B$의 부피는 $1000\\,\\mathrm{cm}^3$이다.",
+"selfGrade": true
+},
+{
+"id": "set2-m22-05-con-009",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 1,
+"body": "세 변의 길이가 각각 $4\\,\\mathrm{cm}$, $6\\,\\mathrm{cm}$, $7\\,\\mathrm{cm}$인 삼각형과 SSS 닮음인 삼각형은? 다음은 각 삼각형의 세 변의 길이이다.",
+"solution": "단계 1. SSS 닮음이려면 세 쌍의 대응변의 길이의 비가 모두 같아야 한다. 각 삼각형의 변을 짧은 것부터 차례로 대응시킨다.\n\n단계 2. ③에서\n$4:8=6:12=7:14=1:2$\n이므로 SSS 닮음이다. 나머지는 세 쌍의 대응변의 길이의 비가 모두 같지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$8\\,\\mathrm{cm}$, $10\\,\\mathrm{cm}$, $14\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$, $8\\,\\mathrm{cm}$, $9\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$, $12\\,\\mathrm{cm}$, $14\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$, $18\\,\\mathrm{cm}$, $20\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$, $6\\,\\mathrm{cm}$, $8\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-05-con-010",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle A=48^\\circ$, $\\angle B=67^\\circ$이다. 다음 중 $\\triangle ABC$와 닮은 삼각형의 두 내각의 크기로 알맞은 것은?",
+"solution": "단계 1. 삼각형의 내각의 합을 이용하면\n$\\angle C=180^\\circ-48^\\circ-67^\\circ=65^\\circ$\n이다.\n\n단계 2. ②의 삼각형은 $\\triangle ABC$와 두 내각의 크기가 각각 같으므로 AA 닮음이다. 나머지 삼각형은 세 내각의 크기가 $\\triangle ABC$와 일치하지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$48^\\circ$, $66^\\circ$",
+"$67^\\circ$, $65^\\circ$",
+"$48^\\circ$, $64^\\circ$",
+"$67^\\circ$, $64^\\circ$",
+"$65^\\circ$, $66^\\circ$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m22-05-con-011",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 2,
+"body": "두 삼각형 $\\triangle ABC$, $\\triangle DEF$에서\n$\\overline{AB}=8\\,\\mathrm{cm}$, $\\overline{AC}=12\\,\\mathrm{cm}$, $\\overline{BC}=14\\,\\mathrm{cm}$이고,\n$\\overline{DE}=12\\,\\mathrm{cm}$, $\\overline{DF}=18\\,\\mathrm{cm}$이다.\n$\\angle A=\\angle D$일 때, $\\overline{EF}$의 길이는?",
+"solution": "단계 1.\n$\\overline{AB}:\\overline{DE}=8:12=2:3$,\n$\\overline{AC}:\\overline{DF}=12:18=2:3$\n이고, 두 변의 끼인각인 $\\angle A$와 $\\angle D$의 크기가 같다.\n\n단계 2. 따라서 $\\triangle ABC\\sim\\triangle DEF$이고, SAS 닮음이다.\n\n단계 3. 대응변의 길이의 비를 이용하면\n$14:\\overline{EF}=2:3$\n이므로\n$\\overline{EF}=14\\times\\dfrac{3}{2}=21\\,\\mathrm{cm}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{28}{3}\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$",
+"$21\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-05-con-012",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 3,
+"body": "삼각형 $\\triangle ABC$의 변 $\\overline{AB}$, $\\overline{AC}$ 위에 각각 점 $D$, $E$가 있다.\n$\\overline{AD}=6\\,\\mathrm{cm}$, $\\overline{DB}=6\\,\\mathrm{cm}$, $\\overline{AE}=4\\,\\mathrm{cm}$, $\\overline{EC}=14\\,\\mathrm{cm}$, $\\overline{DE}=5\\,\\mathrm{cm}$일 때, $\\overline{BC}$의 길이는?\n[[그림:/figs/set2-m22-05/con012.png]]",
+"solution": "단계 1. 큰 삼각형의 두 변의 길이는\n$\\overline{AB}=6+6=12\\,\\mathrm{cm}$,\n$\\overline{AC}=4+14=18\\,\\mathrm{cm}$\n이다.\n\n단계 2.\n$\\overline{AD}:\\overline{AC}=6:18=1:3$,\n$\\overline{AE}:\\overline{AB}=4:12=1:3$\n이고, $\\angle DAE=\\angle CAB$이다.\n\n따라서 $\\triangle ADE\\sim\\triangle ACB$이고, SAS 닮음이다.\n\n단계 3. $\\overline{DE}$의 대응변은 $\\overline{CB}$이므로\n$5:\\overline{BC}=1:3$이다.\n따라서 $\\overline{BC}=15\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$",
+"$\\dfrac{45}{2}\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-05-con-013",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 2,
+"body": "삼각형 $\\triangle ABC$의 변 $\\overline{AB}$, $\\overline{BC}$ 위에 각각 점 $D$, $E$가 있다.\n$\\angle BDE=\\angle BCA$이고,\n$\\overline{AD}=6\\,\\mathrm{cm}$, $\\overline{DB}=4\\,\\mathrm{cm}$, $\\overline{BE}=5\\,\\mathrm{cm}$일 때, $\\overline{EC}$의 길이는?\n[[그림:/figs/set2-m22-05/con013.png]]",
+"solution": "단계 1. 점 $D$, $E$가 각각 변 $\\overline{BA}$, $\\overline{BC}$ 위에 있으므로\n$\\angle DBE=\\angle CBA$이다.\n또한 조건에서 $\\angle BDE=\\angle BCA$이다.\n\n따라서 $\\triangle BDE\\sim\\triangle BCA$이고, AA 닮음이다.\n\n단계 2. $\\overline{BA}=6+4=10\\,\\mathrm{cm}$이므로 대응변의 길이의 비에서\n$\\overline{BD}:\\overline{BC}=\\overline{BE}:\\overline{BA}$,\n즉 $4:\\overline{BC}=5:10$이다.\n따라서 $\\overline{BC}=8\\,\\mathrm{cm}$이다.\n\n단계 3.\n$\\overline{EC}=\\overline{BC}-\\overline{BE}=8-5=3\\,\\mathrm{cm}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$3\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$\\dfrac{15}{2}\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m22-05-con-014",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $\\triangle ABC$에서 꼭짓점 $A$에서 빗변 $\\overline{BC}$에 내린 수선의 발을 $H$라 하자.\n$\\overline{BH}=4\\,\\mathrm{cm}$, $\\overline{HC}=25\\,\\mathrm{cm}$일 때, $\\overline{AH}$의 길이는?\n[[그림:/figs/set2-m22-05/con014.png]]",
+"solution": "단계 1. $\\triangle HBA$와 $\\triangle HAC$는 AA 닮음이다. 대응변의 길이의 비에서\n$\\overline{BH}:\\overline{AH}=\\overline{AH}:\\overline{HC}$\n이므로\n$\\overline{AH}^{\\,2}=\\overline{BH}\\times\\overline{HC}$\n이다.\n\n단계 2.\n$\\overline{AH}^{\\,2}=4\\times25=100$\n이고, 길이는 양수이므로 $\\overline{AH}=10\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$21\\,\\mathrm{cm}$",
+"$29\\,\\mathrm{cm}$",
+"$50\\,\\mathrm{cm}$",
+"$100\\,\\mathrm{cm}$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m22-05-con-015",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 2,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $\\triangle ABC$에서 $\\overline{AH}\\perp\\overline{BC}$이고, 점 $H$는 변 $\\overline{BC}$ 위에 있다.\n$\\overline{AB}=15\\,\\mathrm{cm}$, $\\overline{BH}=9\\,\\mathrm{cm}$일 때, $\\overline{HC}$의 길이는?\n[[그림:/figs/set2-m22-05/con015.png]]",
+"solution": "단계 1. $\\triangle ABC\\sim\\triangle HBA$이므로\n$\\overline{AB}^{\\,2}=\\overline{BH}\\times\\overline{BC}$\n이다.\n\n단계 2. $15^2=9\\times\\overline{BC}$이므로\n$\\overline{BC}=\\dfrac{225}{9}=25\\,\\mathrm{cm}$\n이다.\n\n단계 3. 구하는 것은 빗변 전체가 아닌 $\\overline{HC}$의 길이이므로\n$\\overline{HC}=\\overline{BC}-\\overline{BH}=25-9=16\\,\\mathrm{cm}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "객관식",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$",
+"$25\\,\\mathrm{cm}$",
+"$34\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-05-con-016",
+"typeId": "set2-m22-05-u0m0s1t2",
+"twinGroup": "tw-set2-m22-05-u0m0s1t2",
+"diff": 2,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $\\triangle ABC$에서 꼭짓점 $A$에서 빗변 $\\overline{BC}$에 내린 수선의 발을 $H$라 하자.\n[[그림:/figs/set2-m22-05/con016.png]]\n$\\overline{AB}=10\\,\\mathrm{cm}$, $\\overline{BH}=8\\,\\mathrm{cm}$일 때, 다음 순서에 따라 $\\overline{AH}$의 길이를 구하는 과정을 서술하시오.\n\n(가) $\\triangle ABC$와 $\\triangle HBA$의 닮음 조건을 밝히고, 대응변의 비례식을 세워 $\\overline{BC}$의 길이를 구한다.\n\n(나) $\\overline{HC}$의 길이를 구한 후, 두 작은 직각삼각형의 닮음을 이용하여 $\\overline{AH}$의 길이를 구한다.",
+"solution": "단계 1. $\\angle BAC=\\angle BHA=90^\\circ$이고, $\\angle ABC=\\angle HBA$이므로\n$\\triangle ABC\\sim\\triangle HBA$이다. 닮음 조건은 AA 닮음이다.\n\n단계 2. 대응변의 비례식은\n$\\overline{AB}:\\overline{HB}=\\overline{BC}:\\overline{BA}$\n이다. 따라서\n$10:8=\\overline{BC}:10$\n이므로\n$\\overline{BC}=\\dfrac{25}{2}\\,\\mathrm{cm}$\n이다.\n\n단계 3.\n$\\overline{HC}=\\dfrac{25}{2}-8=\\dfrac{9}{2}\\,\\mathrm{cm}$\n이다.\n\n단계 4. $\\triangle HBA\\sim\\triangle HAC$이므로\n$\\overline{BH}:\\overline{AH}=\\overline{AH}:\\overline{HC}$\n이다. 따라서\n$\\overline{AH}^{\\,2}=8\\times\\dfrac{9}{2}=36$\n이므로 $\\overline{AH}=6\\,\\mathrm{cm}$이다.\n\n[채점 기준]\n- 같은 두 쌍의 각을 찾아 AA 닮음임을 설명하면 $2$점.\n- 대응변의 비례식을 세워 $\\overline{BC}=\\dfrac{25}{2}\\,\\mathrm{cm}$를 구하면 $3$점.\n- $\\overline{HC}=\\dfrac{9}{2}\\,\\mathrm{cm}$를 구하면 $2$점.\n- 두 작은 삼각형의 닮음에서 비례식을 세워 $\\overline{AH}=6\\,\\mathrm{cm}$를 구하면 $3$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 05 도형의 닮음",
+"kind": "주관식",
+"answer": "$6\\,\\mathrm{cm}$",
+"selfGrade": true
+}
+]

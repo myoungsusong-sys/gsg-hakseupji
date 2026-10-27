@@ -143,6 +143,7 @@ export default function StudentShell() {
               <NavLink to="/student/workbooks" className={tab}>교재</NavLink>
               <NavLink to="/student/voca" className={tab}>영단어</NavLink>
               <NavLink to="/student/worksheets" className={tab}>학습지</NavLink>
+              <NavLink to="/student/naesin" className={tab}>시험대비</NavLink>
               <NavLink to="/student/lectures" className={tab}>강의</NavLink>
               <NavLink to="/student/questions" className={tab}>질문함<QnaBadge n={qna.unread.length} /></NavLink>
               <NavLink to="/student/help" className={tab}>사용법</NavLink>
