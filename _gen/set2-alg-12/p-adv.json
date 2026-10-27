@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-alg-12-adv-001",
+"typeId": "set2-alg-12-u0m0s0t3",
+"twinGroup": "tw-set2-alg-12-u0m0s0t3",
+"diff": 4,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합을 $S_n$이라 하자. 모든 자연수 $n$에 대하여\n$S_n=pn^2+qn+r$\n이고, 다음 조건을 만족시킨다. 단, $p$, $q$, $r$는 상수이다.\n\n$a_1=a_2=3,\\qquad \\displaystyle\\sum_{k=1}^{4}ka_k=74$\n\n이때 $\\displaystyle\\sum_{k=1}^{8}(9-k)a_k$의 값은?",
+"solution": "(가) 첫째항과 나머지 항을 구분한다.\n$a_1=S_1=p+q+r=3$\n이고, $n\\geq2$일 때\n$a_n=S_n-S_{n-1}=p(2n-1)+q$\n이다. 따라서 $a_2=3p+q=3$에서\n$q=3-3p,\\qquad r=2p$\n이다.\n\n(나) 주어진 가중합으로 상수를 결정한다.\n$a_3=2p+3$, $a_4=4p+3$이므로\n$\\displaystyle\\sum_{k=1}^{4}ka_k =3+2\\cdot3+3(2p+3)+4(4p+3) =22p+30=74$.\n따라서\n$p=2,\\qquad q=-3,\\qquad r=4$.\n즉,\n$a_1=3,\\qquad a_n=4n-5\\quad(n\\geq2)$\n이다.\n\n(다) 합의 성질과 자연수의 거듭제곱의 합을 이용한다.\n$4n-5$에 $n=1$을 대입한 값은 $-1$이므로, 실제 첫째항과의 차인 $4$를 보정해야 한다.\n$S_8=2\\cdot8^2-3\\cdot8+4=108$,\n$\\displaystyle\\sum_{k=1}^{8}ka_k =\\sum_{k=1}^{8}(4k^2-5k)+4 =4\\cdot204-5\\cdot36+4=640$.\n따라서\n$\\displaystyle\\sum_{k=1}^{8}(9-k)a_k =9S_8-\\sum_{k=1}^{8}ka_k =9\\cdot108-640=332$.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$300$",
+"$304$",
+"$332$",
+"$336$",
+"$364$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-adv-002",
+"typeId": "set2-alg-12-u0m0s1t3",
+"twinGroup": "tw-set2-alg-12-u0m0s1t3",
+"diff": 4,
+"body": "모든 항이 양수인 등차수열 $\\{a_n\\}$이 다음 조건을 만족시킨다.\n\n$a_9=9a_1,\\qquad \\displaystyle\\sum_{k=1}^{8}\\frac{1}{a_ka_{k+1}}=\\frac{8}{81}$\n\n이때 $\\displaystyle\\sum_{k=2}^{8}\\frac{1}{a_ka_{k+2}}$의 값은?",
+"solution": "(가) 등차수열의 일반항을 결정한다.\n첫째항을 $a$, 공차를 $d$라 하면\n$a+8d=9a$\n이므로 $d=a$이다. 따라서\n$a_n=na\\quad(a>0)$.\n\n부분분수와 연쇄소거를 이용하면\n$\\displaystyle\\sum_{k=1}^{8}\\frac{1}{a_ka_{k+1}} =\\frac{1}{a^2}\\sum_{k=1}^{8}\\left(\\frac1k-\\frac1{k+1}\\right) =\\frac{8}{9a^2}$.\n그러므로\n$\\dfrac{8}{9a^2}=\\dfrac{8}{81}$\n에서 $a^2=9$이다. 모든 항이 양수이므로 $a=3$, 즉 $a_n=3n$이다.\n\n(나) 분모의 번호 차이에 맞추어 부분분수로 분리한다.\n$\\displaystyle\\frac{1}{a_ka_{k+2}} =\\frac{1}{9k(k+2)} =\\frac1{18}\\left(\\frac1k-\\frac1{k+2}\\right)$.\n\n(다) 앞뒤에 남는 항을 확인한다.\n$\\displaystyle\\sum_{k=2}^{8}\\frac{1}{a_ka_{k+2}} =\\frac1{18}\\left(\\frac12+\\frac13-\\frac19-\\frac1{10}\\right) =\\frac1{18}\\cdot\\frac{28}{45} =\\frac{14}{405}$.\n\n소거 간격이 $2$이므로 앞의 두 항과 뒤의 두 항이 남는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{1}{45}$",
+"$\\dfrac{14}{405}$",
+"$\\dfrac{43}{1296}$",
+"$\\dfrac{28}{405}$",
+"$\\dfrac{14}{135}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-12-adv-003",
+"typeId": "set2-alg-12-u0m0s0t3",
+"twinGroup": "tw-set2-alg-12-u0m0s0t3",
+"diff": 5,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합을 $S_n$이라 하자. 모든 자연수 $n$에 대하여\n$S_n=(n+1)a_n-\\dfrac{n(n+1)(2n+1)}{3}+4$\n가 성립한다.\n\n일반항 $a_n$을 구하고, $\\displaystyle\\sum_{k=1}^{6}ka_k$의 값을 구하는 과정을 서술하시오.",
+"solution": "(가) 첫째항을 결정한다.\n$n=1$일 때 $S_1=a_1$이므로\n$a_1=2a_1-2+4$.\n따라서 $a_1=-2$이다.\n\n(나) 이웃한 부분합의 차를 이용한다.\n$n\\geq2$일 때\n$S_{n-1}=na_{n-1}-\\dfrac{(n-1)n(2n-1)}{3}+4$.\n두 식을 빼고 $S_n-S_{n-1}=a_n$을 적용하면\n$a_n=(n+1)a_n-na_{n-1}-2n^2$.\n따라서\n$a_n-a_{n-1}=2n$.\n\n(다) 차를 차례로 더하여 일반항을 구한다.\n$n\\geq2$일 때\n$\\displaystyle a_n-a_1 =\\sum_{k=2}^{n}(a_k-a_{k-1}) =2\\sum_{k=2}^{n}k =n(n+1)-2$.\n$a_1=-2$이므로\n$a_n=n(n+1)-4$.\n이 식은 $n=1$에서도 성립한다.\n\n(라) 자연수의 거듭제곱의 합을 적용한다.\n$\\displaystyle\\sum_{k=1}^{6}ka_k =\\sum_{k=1}^{6}(k^3+k^2-4k) =21^2+91-4\\cdot21 =448$.\n\n[채점 기준]\n첫째항 결정: $2\\text{점}$.\n이웃한 부분합의 차로 $a_n-a_{n-1}=2n$ 도출: $3\\text{점}$.\n일반항 도출 및 첫째항 확인: $2\\text{점}$.\n거듭제곱의 합을 이용하여 최종값 계산: $3\\text{점}$.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "주관식",
+"answer": "$a_n=n(n+1)-4$, $\\displaystyle\\sum_{k=1}^{6}ka_k=448$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-12-adv-004",
+"typeId": "set2-alg-12-u0m0s1t3",
+"twinGroup": "tw-set2-alg-12-u0m0s1t3",
+"diff": 5,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합이\n$S_n=\\sqrt{n+1}+\\sqrt{n+2}+1-\\sqrt2$\n이다.\n\n자연수 $m$에 대하여 $S_m=4+\\sqrt2$일 때,\n$\\displaystyle\\sum_{k=1}^{m}\\left(\\sqrt{k}+\\sqrt{k+2}\\right)a_k$\n의 값을 구하는 과정을 서술하시오.",
+"solution": "(가) 첫째항과 나머지 항을 구분한다.\n$a_1=S_1=1+\\sqrt3$.\n$n\\geq2$일 때는\n$a_n=S_n-S_{n-1}=\\sqrt{n+2}-\\sqrt n$.\n이 차의 식에 $n=1$을 대입하면 $\\sqrt3-1$이므로 실제 첫째항과 다르다.\n\n(나) 켤레식의 곱을 이용하여 $m$을 구한다.\n$S_m=4+\\sqrt2$에서\n$\\sqrt{m+1}+\\sqrt{m+2}=3+2\\sqrt2$.\n한편\n$\\left(\\sqrt{m+2}-\\sqrt{m+1}\\right) \\left(\\sqrt{m+2}+\\sqrt{m+1}\\right)=1$\n이므로\n$\\sqrt{m+2}-\\sqrt{m+1} =\\dfrac1{3+2\\sqrt2}=3-2\\sqrt2$.\n두 식을 더하면 $2\\sqrt{m+2}=6$이므로 $m=7$이다.\n\n(다) 첫째항을 따로 계산한 뒤 합의 성질을 적용한다.\n$k\\geq2$일 때\n$\\left(\\sqrt{k}+\\sqrt{k+2}\\right)a_k =\\left(\\sqrt{k+2}+\\sqrt{k}\\right) \\left(\\sqrt{k+2}-\\sqrt{k}\\right)=2$.\n따라서\n$\\displaystyle\\sum_{k=1}^{7}\\left(\\sqrt{k}+\\sqrt{k+2}\\right)a_k =(1+\\sqrt3)^2+\\sum_{k=2}^{7}2 =4+2\\sqrt3+2\\cdot6 =16+2\\sqrt3$.\n\n[채점 기준]\n첫째항과 나머지 항을 구분하여 도출: $3\\text{점}$.\n켤레식을 이용하여 $m=7$ 도출: $3\\text{점}$.\n첫째항의 기여와 나머지 항의 기여를 각각 계산: $2\\text{점}$.\n항의 개수를 확인하여 최종값 계산: $2\\text{점}$.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "주관식",
+"answer": "$16+2\\sqrt3$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-12-adv-005",
+"typeId": "set2-alg-12-u0m0s0t3",
+"twinGroup": "tw-set2-alg-12-u0m0s0t3",
+"diff": 5,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합이\n$S_n=n^2+1$\n이다.\n\n자연수 $m$, $n$이\n$m\\leq n,\\qquad \\displaystyle\\sum_{k=m}^{n}a_k=65$\n를 만족시킬 때, 가능한 모든 $n$의 값의 합은?",
+"solution": "(가) 합의 시작 번호가 $1$인 경우를 따로 계산한다.\n$m=1$이면\n$\\displaystyle\\sum_{k=1}^{n}a_k=S_n=n^2+1=65$.\n따라서 $n=8$이다.\n\n(나) 합의 시작 번호가 $2$ 이상인 경우에는 부분합의 차를 이용한다.\n$m\\geq2$이면\n$\\displaystyle\\sum_{k=m}^{n}a_k =S_n-S_{m-1} =n^2-(m-1)^2$.\n따라서\n$(n-m+1)(n+m-1)=65$.\n\n여기서 $n-m+1$은 양의 정수이고,\n$(n+m-1)-(n-m+1)=2(m-1)>0$\n이므로 첫 번째 인수가 두 번째 인수보다 작다.\n\n(다) 가능한 인수의 쌍을 모두 조사한다.\n$65=1\\cdot65=5\\cdot13$이므로 다음 두 경우뿐이다.\n\n| $n-m+1$ | $n+m-1$ | $n$ | $m$ |\n|---|---|---|---|\n| $1$ | $65$ | $33$ | $33$ |\n| $5$ | $13$ | $9$ | $5$ |\n\n두 경우 모두 주어진 조건을 만족시킨다. 따라서 가능한 $n$은 $8$, $9$, $33$이고, 그 합은\n$8+9+33=50$\n이다.\n\n$S_n-S_{n-1}$에서 얻은 식을 첫째항까지 그대로 적용하면 $n=8$인 경우를 놓치게 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$42$",
+"$49$",
+"$50$",
+"$58$",
+"$84$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-adv-006",
+"typeId": "set2-alg-12-u0m0s1t3",
+"twinGroup": "tw-set2-alg-12-u0m0s1t3",
+"diff": 5,
+"body": "다음 표의 각 행에 놓인 수를 왼쪽부터 읽고, 위의 행부터 차례로 이어 붙여 수열 $\\{a_n\\}$을 만든다.\n\n| 행의 번호 | 왼쪽부터 놓인 수 |\n|---|---|\n| $1$ | $1$ |\n| $2$ | $2,\\ 6$ |\n| $3$ | $3,\\ 9,\\ 15$ |\n| $4$ | $4,\\ 12,\\ 20,\\ 28$ |\n| $\\vdots$ | $\\vdots$ |\n\n제$m$행에는 $m$개의 수가 놓이며, 왼쪽에서 제$r$번째 수는\n$m(2r-1)\\quad(1\\leq r\\leq m)$\n이다.\n\n$S_n=\\displaystyle\\sum_{k=1}^{n}a_k$라 하자. $S_N\\geq2500$을 만족시키는 가장 작은 자연수 $N$에 대하여 $S_N$의 값은?",
+"solution": "(가) 한 행의 합을 구한다.\n제$m$행의 합은\n$\\displaystyle\\sum_{r=1}^{m}m(2r-1) =m\\left(2\\cdot\\frac{m(m+1)}2-m\\right) =m^3$\n이다.\n\n(나) 완성된 행까지의 누적 항수와 부분합을 구한다.\n제$m$행까지의 누적 항수는\n$T_m=\\dfrac{m(m+1)}2$\n이고, 세제곱의 합 공식에 의하여\n$\\displaystyle S_{T_m}=\\sum_{j=1}^{m}j^3 =\\left\\{\\frac{m(m+1)}2\\right\\}^2$.\n\n따라서\n$T_9=45,\\qquad S_{45}=45^2=2025$,\n$T_{10}=55,\\qquad S_{55}=55^2=3025$.\n모든 항이 양수이므로 구하는 위치는 제$10$행 안에 있다.\n\n(다) 제$10$행을 일부만 더한 경우를 계산한다.\n제$10$행의 앞에서부터 $r$개를 더한 값은\n$\\displaystyle10\\sum_{j=1}^{r}(2j-1)=10r^2$.\n그러므로\n$S_{45+r}=2025+10r^2\\quad(1\\leq r\\leq10)$.\n\n$2025+10r^2\\geq2500$에서 $r^2\\geq\\dfrac{95}{2}$이다.\n$6^2<\\dfrac{95}{2}<7^2$이므로 가장 작은 $r$는 $7$이다.\n\n따라서 $N=45+7=52$이고,\n$S_N=2025+10\\cdot7^2=2515$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$2095$",
+"$2385$",
+"$2500$",
+"$2515$",
+"$3025$"
+],
+"answer": "④"
+}
+]

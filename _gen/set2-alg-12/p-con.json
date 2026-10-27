@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-alg-12-con-001",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 1,
+"body": "수열 $\\{a_k\\}$에 대하여 $\\displaystyle\\sum_{k=3}^{8}a_k=17$일 때, $\\displaystyle\\sum_{k=3}^{8}(2a_k-3)$의 값은?",
+"solution": "첫째, 합의 범위가 $k=3$부터 $k=8$까지이므로 항의 개수는 $8-3+1=6$이다.\n둘째, 합의 상수배와 차에 대한 성질을 적용하면\n$\\displaystyle\\sum_{k=3}^{8}(2a_k-3)=2\\sum_{k=3}^{8}a_k-\\sum_{k=3}^{8}3$\n$=2\\times17-3\\times6=16$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$10$",
+"$14$",
+"$16$",
+"$19$",
+"$31$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-con-002",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 1,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}k=21$일 때, $\\displaystyle\\sum_{k=1}^{n}k^3$의 값은?",
+"solution": "첫째, 자연수의 세제곱의 합은 자연수의 합 전체를 제곱한 것과 같으므로\n$\\displaystyle\\sum_{k=1}^{n}k^3=\\left(\\sum_{k=1}^{n}k\\right)^2$이다.\n둘째, 주어진 조건을 대입하면\n$\\displaystyle\\sum_{k=1}^{n}k^3=21^2=441$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$91$",
+"$126$",
+"$216$",
+"$441$",
+"$882$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-12-con-003",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 2,
+"body": "수열 $\\{a_k\\}$에 대하여\n$\\displaystyle\\sum_{k=1}^{8}a_k=31,\\qquad \\sum_{k=1}^{4}a_k=12,\\qquad a_4=5$\n일 때, $\\displaystyle\\sum_{k=4}^{8}(3a_k-2)$의 값은?",
+"solution": "첫째, 합의 범위를 나누는 성질에 의해\n$\\displaystyle\\sum_{k=4}^{8}a_k=\\sum_{k=1}^{8}a_k-\\sum_{k=1}^{4}a_k+a_4$\n$=31-12+5=24$이다.\n이때 빼는 합에 포함된 $a_4$를 다시 더해야 한다.\n둘째, 합의 범위에 포함된 항은 $8-4+1=5$개이므로\n$\\displaystyle\\sum_{k=4}^{8}(3a_k-2)=3\\times24-2\\times5=62$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$47$",
+"$57$",
+"$62$",
+"$72$",
+"$83$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-con-004",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 2,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}(2k+n)=78$이 성립할 때, $n$의 값은?",
+"solution": "첫째, $n$은 합을 계산하는 번호 $k$와 관계없는 상수이므로\n$\\displaystyle\\sum_{k=1}^{n}n=n^2$이다.\n둘째, 합의 성질과 자연수의 합 공식을 적용하면\n$\\displaystyle\\sum_{k=1}^{n}(2k+n)=2\\cdot\\frac{n(n+1)}{2}+n^2=2n^2+n$이다.\n셋째, 주어진 조건에서\n$2n^2+n=78$,\n$(n-6)(2n+13)=0$이다.\n$n$은 자연수이므로 $n=6$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-12-con-005",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 2,
+"body": "$\\displaystyle\\sum_{k=1}^{6}k(2k-1)$의 값은?",
+"solution": "첫째, 더할 항을 전개하고 합의 성질을 적용하면\n$\\displaystyle\\sum_{k=1}^{6}k(2k-1)=2\\sum_{k=1}^{6}k^2-\\sum_{k=1}^{6}k$이다.\n둘째, 자연수의 합과 제곱의 합 공식에 의해\n$\\displaystyle\\sum_{k=1}^{6}k=\\frac{6\\times7}{2}=21$,\n$\\displaystyle\\sum_{k=1}^{6}k^2=\\frac{6\\times7\\times13}{6}=91$이다.\n따라서 구하는 값은 $2\\times91-21=161$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$70$",
+"$140$",
+"$161$",
+"$182$",
+"$203$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-con-006",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 2,
+"body": "$\\displaystyle\\sum_{k=3}^{6}k^3$의 값은?",
+"solution": "첫째, 시작 번호가 $1$이 아니므로 합의 범위를 나누어\n$\\displaystyle\\sum_{k=3}^{6}k^3=\\sum_{k=1}^{6}k^3-\\sum_{k=1}^{2}k^3$\n으로 나타낸다.\n둘째, 자연수의 세제곱의 합 공식을 적용하면\n$\\displaystyle\\sum_{k=3}^{6}k^3=\\left(\\frac{6\\times7}{2}\\right)^2-\\left(\\frac{2\\times3}{2}\\right)^2$\n$=441-9=432$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$100$",
+"$324$",
+"$405$",
+"$432$",
+"$441$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-12-con-007",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 2,
+"body": "두 수열 $\\{a_k\\}$, $\\{b_k\\}$에 대하여\n$\\displaystyle\\sum_{k=1}^{6}(a_k+2b_k)=19,\\qquad \\sum_{k=1}^{6}(2a_k-b_k)=13$\n일 때, $\\displaystyle\\sum_{k=1}^{6}(3a_k+b_k-2)$의 값은?",
+"solution": "첫째, 같은 범위의 합끼리는 더할 수 있으므로\n$\\displaystyle\\sum_{k=1}^{6}(3a_k+b_k)=\\sum_{k=1}^{6}(a_k+2b_k)+\\sum_{k=1}^{6}(2a_k-b_k)$\n$=19+13=32$이다.\n둘째, 상수의 합은 상수에 항의 개수를 곱한 것이므로\n$\\displaystyle\\sum_{k=1}^{6}(3a_k+b_k-2)=32-2\\times6=20$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$8$",
+"$20$",
+"$30$",
+"$32$",
+"$44$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-12-con-008",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 2,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}k=36$이다. $n$의 값을 구하고, 이를 이용하여 $\\displaystyle\\sum_{k=1}^{n}k(k+1)$의 값을 구하는 과정을 서술하시오.",
+"solution": "첫째, 자연수의 합 공식에 의해\n$\\displaystyle\\frac{n(n+1)}{2}=36$이므로\n$n^2+n-72=0$,\n$(n-8)(n+9)=0$이다.\n$n$은 자연수이므로 $n=8$이다.\n둘째, 더할 항을 전개하고 합의 성질을 적용하면\n$\\displaystyle\\sum_{k=1}^{8}k(k+1)=\\sum_{k=1}^{8}k^2+\\sum_{k=1}^{8}k$이다.\n셋째, 제곱의 합 공식과 주어진 조건을 이용하면\n$\\displaystyle\\sum_{k=1}^{8}k(k+1)=\\frac{8\\times9\\times17}{6}+36$\n$=204+36=240$이다.\n[채점 기준]\n자연수의 합 공식을 이용하여 $n=8$을 구함: $2$점\n주어진 합을 제곱의 합과 자연수의 합으로 분리함: $2$점\n제곱의 합 공식을 적용하여 최종값 $240$을 구함: $2$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "주관식",
+"answer": "$n=8$, $\\displaystyle\\sum_{k=1}^{n}k(k+1)=240$",
+"selfGrade": true
+},
+{
+"id": "set2-alg-12-con-009",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 1,
+"body": "다음 합의 값을 구하시오.\n$\\displaystyle \\sum_{k=3}^{8}\\frac{2}{k(k+1)}$",
+"solution": "부분분수로 분리하면\n$\\displaystyle \\frac{2}{k(k+1)}=2\\left(\\frac{1}{k}-\\frac{1}{k+1}\\right)$\n이다.\n\n합의 시작 번호와 끝 번호에 맞추어 펼치면\n$\\displaystyle \\sum_{k=3}^{8}\\frac{2}{k(k+1)} =2\\left\\{\\left(\\frac13-\\frac14\\right)+\\left(\\frac14-\\frac15\\right)+\\cdots+\\left(\\frac18-\\frac19\\right)\\right\\}$\n이다.\n\n중간 항을 소거하면\n$\\displaystyle 2\\left(\\frac13-\\frac19\\right)=\\frac49$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{2}{9}$",
+"$\\dfrac{5}{12}$",
+"$\\dfrac{4}{9}$",
+"$\\dfrac{2}{3}$",
+"$\\dfrac{16}{9}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-con-010",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 1,
+"body": "다음 합의 값을 구하시오.\n$\\displaystyle \\frac{1}{\\sqrt4+\\sqrt5}+\\frac{1}{\\sqrt5+\\sqrt6}+\\cdots+\\frac{1}{\\sqrt{15}+\\sqrt{16}}$",
+"solution": "분모를 유리화하면\n$\\displaystyle \\frac{1}{\\sqrt{k}+\\sqrt{k+1}} =\\frac{\\sqrt{k+1}-\\sqrt{k}}{(k+1)-k} =\\sqrt{k+1}-\\sqrt{k}$\n이다.\n\n따라서 주어진 합은\n$\\displaystyle (\\sqrt5-\\sqrt4)+(\\sqrt6-\\sqrt5)+\\cdots+(\\sqrt{16}-\\sqrt{15})$\n이다.\n\n중간 항이 소거되므로 구하는 값은\n$\\displaystyle \\sqrt{16}-\\sqrt4=4-2=2$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$\\sqrt{15}-2$",
+"$4-\\sqrt3$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-12-con-011",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 2,
+"body": "다음 합의 값을 구하시오.\n$\\displaystyle \\sum_{k=2}^{7}\\left(3-\\frac{6}{k(k+1)}\\right)$",
+"solution": "합의 성질에 따라 상수항의 합과 분수 꼴의 합을 나누면\n$\\displaystyle \\sum_{k=2}^{7}\\left(3-\\frac{6}{k(k+1)}\\right) =\\sum_{k=2}^{7}3-6\\sum_{k=2}^{7}\\frac{1}{k(k+1)}$\n이다.\n\n항의 개수는 $7-2+1=6$이므로\n$\\displaystyle \\sum_{k=2}^{7}3=3\\times6=18$\n이다.\n\n부분분수와 연쇄소거를 이용하면\n$\\displaystyle \\sum_{k=2}^{7}\\frac{1}{k(k+1)} =\\sum_{k=2}^{7}\\left(\\frac1k-\\frac1{k+1}\\right) =\\frac12-\\frac18=\\frac38$\n이다.\n\n따라서 구하는 값은\n$\\displaystyle 18-6\\times\\frac38=\\frac{63}{4}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{51}{4}$",
+"$\\dfrac{63}{4}$",
+"$\\dfrac{69}{4}$",
+"$\\dfrac{135}{8}$",
+"$\\dfrac{75}{4}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-alg-12-con-012",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 2,
+"body": "첫째항이 $4$, 공차가 $3$인 등차수열 $\\{a_n\\}$에 대하여 다음 합의 값을 구하시오.\n$\\displaystyle \\frac{1}{a_1a_2}+\\frac{1}{a_2a_3}+\\cdots+\\frac{1}{a_{12}a_{13}}$",
+"solution": "등차수열의 이웃한 두 항의 차는 공차와 같으므로\n$a_{k+1}-a_k=3$\n이다. 따라서\n$\\displaystyle \\frac{1}{a_ka_{k+1}} =\\frac13\\left(\\frac1{a_k}-\\frac1{a_{k+1}}\\right)$\n이다.\n\n이를 주어진 합에 적용하여 소거하면\n$\\displaystyle \\frac13\\left(\\frac1{a_1}-\\frac1{a_{13}}\\right)$\n이 남는다.\n\n등차수열의 일반항을 이용하면\n$\\displaystyle a_{13}=4+(13-1)\\times3=40$\n이므로 구하는 값은\n$\\displaystyle \\frac13\\left(\\frac14-\\frac1{40}\\right)=\\frac3{40}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$-\\dfrac{3}{40}$",
+"$\\dfrac{11}{148}$",
+"$\\dfrac{3}{40}$",
+"$\\dfrac{9}{40}$",
+"$\\dfrac{27}{40}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-con-013",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 2,
+"body": "다음 합의 값을 구하시오.\n$\\displaystyle \\sum_{k=2}^{5}\\frac{2}{k(k+2)}$",
+"solution": "분모의 두 식의 차가 $2$이므로\n$\\displaystyle \\frac{2}{k(k+2)}=\\frac1k-\\frac1{k+2}$\n이다.\n\n따라서\n$\\displaystyle \\sum_{k=2}^{5}\\frac{2}{k(k+2)} =\\left(\\frac12-\\frac14\\right)+\\left(\\frac13-\\frac15\\right)+\\left(\\frac14-\\frac16\\right)+\\left(\\frac15-\\frac17\\right)$\n이다.\n\n같은 값이 반대 부호로 나타나는 항을 소거하면 앞뒤에서 각각 두 항씩 남는다. 따라서 구하는 값은\n$\\displaystyle \\frac12+\\frac13-\\frac16-\\frac17 =\\frac23-\\frac17=\\frac{11}{21}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{11}{42}$",
+"$\\dfrac{5}{14}$",
+"$\\dfrac{7}{15}$",
+"$\\dfrac{11}{21}$",
+"$\\dfrac{22}{21}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-12-con-014",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 2,
+"body": "다음 등식을 만족시키는 자연수 $n$의 값을 구하시오.\n$\\displaystyle \\sum_{k=1}^{n}\\frac{1}{\\sqrt{3k+1}+\\sqrt{3k+4}}=2$",
+"solution": "분모를 유리화하면 근호 안의 두 식의 차가 $3$이므로\n$\\displaystyle \\frac{1}{\\sqrt{3k+1}+\\sqrt{3k+4}} =\\frac{\\sqrt{3k+4}-\\sqrt{3k+1}}{3}$\n이다.\n\n따라서 주어진 합은\n$\\displaystyle \\frac13\\left\\{(\\sqrt7-2)+(\\sqrt{10}-\\sqrt7)+\\cdots+(\\sqrt{3n+4}-\\sqrt{3n+1})\\right\\} =\\frac{\\sqrt{3n+4}-2}{3}$\n이다.\n\n주어진 조건에 대입하면\n$\\displaystyle \\frac{\\sqrt{3n+4}-2}{3}=2$\n이므로 $\\sqrt{3n+4}=8$이다.\n\n양변을 제곱하여 풀면\n$\\displaystyle 3n+4=64,\\qquad n=20$\n이다. 이를 대입하면 주어진 합은 $\\dfrac{8-2}{3}=2$이므로 조건을 만족시킨다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$4$",
+"$10$",
+"$12$",
+"$20$",
+"$21$"
+],
+"answer": "④"
+},
+{
+"id": "set2-alg-12-con-015",
+"typeId": "set2-alg-12-u0m0s0t2",
+"twinGroup": "tw-set2-alg-12-u0m0s0t2",
+"diff": 2,
+"body": "다음 합의 값을 구하시오.\n$\\displaystyle \\sum_{k=2}^{9}\\frac{1}{(3k-1)(3k+2)}$",
+"solution": "분모의 두 식의 차가 $3$이므로\n$\\displaystyle \\frac{1}{(3k-1)(3k+2)} =\\frac13\\left(\\frac1{3k-1}-\\frac1{3k+2}\\right)$\n이다.\n\n따라서 주어진 합은\n$\\displaystyle \\frac13\\left\\{\\left(\\frac15-\\frac18\\right)+\\left(\\frac18-\\frac1{11}\\right)+\\cdots+\\left(\\frac1{26}-\\frac1{29}\\right)\\right\\}$\n이다.\n\n중간 항을 소거하면\n$\\displaystyle \\frac13\\left(\\frac15-\\frac1{29}\\right) =\\frac13\\times\\frac{24}{145} =\\frac8{145}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{4}{145}$",
+"$\\dfrac{7}{130}$",
+"$\\dfrac{8}{145}$",
+"$\\dfrac{9}{58}$",
+"$\\dfrac{24}{145}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-alg-12-con-016",
+"typeId": "set2-alg-12-u0m0s1t2",
+"twinGroup": "tw-set2-alg-12-u0m0s1t2",
+"diff": 3,
+"body": "다음 합을 분모의 유리화와 연쇄소거를 이용하여 구하시오. 소거 후 남는 항이 드러나도록 풀이 과정을 서술하시오.\n$\\displaystyle \\sum_{k=1}^{7}\\frac{1}{\\sqrt{k}+\\sqrt{k+2}}$",
+"solution": "분모에 켤레식을 곱하여 유리화하면\n$\\displaystyle \\frac{1}{\\sqrt{k}+\\sqrt{k+2}} =\\frac{\\sqrt{k+2}-\\sqrt{k}}{(k+2)-k} =\\frac12(\\sqrt{k+2}-\\sqrt{k})$\n이다.\n\n따라서 주어진 합은\n$\\displaystyle \\frac12\\left\\{(\\sqrt3-1)+(\\sqrt4-\\sqrt2)+(\\sqrt5-\\sqrt3)+\\cdots+(\\sqrt9-\\sqrt7)\\right\\}$\n이다.\n\n중간의 근호 항을 소거하면 양의 항에서는 $\\sqrt8$, $\\sqrt9$가, 음의 항에서는 $-1$, $-\\sqrt2$가 남는다.\n\n따라서 구하는 값은\n$\\displaystyle \\frac12(\\sqrt8+\\sqrt9-1-\\sqrt2) =\\frac12(2\\sqrt2+3-1-\\sqrt2) =1+\\frac{\\sqrt2}{2}$\n이다.\n\n[채점 기준]\n분모를 유리화하여 $\\dfrac12(\\sqrt{k+2}-\\sqrt{k})$로 나타내면 $2$점.\n연쇄소거 후 남는 항을 $\\dfrac12(\\sqrt8+\\sqrt9-1-\\sqrt2)$로 나타내면 $2$점.\n최종 답 $1+\\dfrac{\\sqrt2}{2}$를 구하면 $1$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합",
+"kind": "주관식",
+"answer": "$1+\\dfrac{\\sqrt2}{2}$",
+"selfGrade": true
+}
+]

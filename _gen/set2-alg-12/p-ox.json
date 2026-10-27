@@ -1,0 +1,222 @@
+[
+{
+"id": "set2-alg-12-ox-001",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=3}^{7}a_k$는 $a_3$부터 $a_7$까지의 다섯 항을 더한 것이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 항의 개수는 $7-3+1=5$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-002",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "부분합이 $S_n=n^2+1$인 수열의 일반항은 모든 자연수 $n$에 대하여 $a_n=2n-1$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $a_1=S_1=2$이지만 $2n-1$에 $n=1$을 대입하면 $1$이다. 따라서 $a_1=2$, $a_n=2n-1\\;(n\\ge2)$로 구분해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-003",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=3}^{7}4=28$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 상수 $4$를 더하는 횟수는 $7$번이 아니라 $5$번이다. 따라서 합은 $4\\times5=20$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-004",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{5}a_k=12$이면 $\\displaystyle\\sum_{k=1}^{5}(3a_k-2)=26$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 합의 성질에 따라 $3\\times12-2\\times5=26$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-005",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}n=n^2$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 끝 번호 $n$이 정해져 있으면 $n$은 $k$에 대한 상수이므로, $n$을 $n$번 더한 값은 $n^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-006",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 수열 $\\{a_k\\}$, $\\{b_k\\}$의 같은 번호의 항끼리 곱한 뒤 더한 값은 각각의 수열을 더한 두 값의 곱과 같다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $a_1=1$, $a_2=2$, $b_1=3$, $b_2=4$이면 곱의 합은 $11$이고 합의 곱은 $21$이다. 따라서 두 계산 결과는 일반적으로 같지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-007",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{7}a_k=\\sum_{k=1}^{3}a_k+\\sum_{k=4}^{7}a_k$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 오른쪽의 두 합에는 $a_1$부터 $a_7$까지의 항이 겹치거나 빠지지 않고 한 번씩 포함된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-008",
+"typeId": "set2-alg-12-u0m0s0t0",
+"twinGroup": "tw-set2-alg-12-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{n}ka_k=k\\sum_{k=1}^{n}a_k$와 같이 $k$를 합의 기호 밖으로 꺼낼 수 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · $k$는 합을 계산하는 동안 바뀌는 번호이므로 상수가 아니다. 합의 기호 밖으로 꺼낼 수 있는 것은 $k$와 관계없는 상수이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-009",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{3}k^2=\\left(\\sum_{k=1}^{3}k\\right)^2$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 왼쪽은 $1+4+9=14$이고 오른쪽은 $(1+2+3)^2=36$이다. 제곱의 합과 합의 제곱은 서로 다르다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-010",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}k^3=\\left\\{\\frac{n(n+1)}{2}\\right\\}^2$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 자연수의 세제곱의 합은 같은 범위의 자연수의 합을 제곱한 값이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-011",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=4}^{10}k^2$는 항이 일곱 개이므로 $\\displaystyle\\frac{7\\cdot8\\cdot15}{6}$으로 계산한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 제곱의 합 공식에 항의 개수를 그대로 넣으면 안 된다. 바른 계산은 $\\displaystyle\\sum_{k=1}^{10}k^2-\\sum_{k=1}^{3}k^2=385-14=371$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-012",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\frac{1}{k(k+3)}=\\frac13\\left(\\frac1k-\\frac1{k+3}\\right)$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 괄호 안을 통분하면 $\\displaystyle\\frac{3}{k(k+3)}$이므로 바깥에 $\\displaystyle\\frac13$을 곱해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-013",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{k(k+1)}=\\frac{n}{n+1}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 각 항을 $\\displaystyle\\frac1k-\\frac1{k+1}$로 분리하면 중간 항이 소거되어 $\\displaystyle1-\\frac1{n+1}=\\frac{n}{n+1}$이 남는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-014",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{5}\\frac{1}{k(k+2)}=\\frac12\\left(1-\\frac17\\right)$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 번호 차이가 $2$이므로 소거 후 앞뒤에서 각각 두 항이 남는다. 바른 식은 $\\displaystyle\\frac12\\left(1+\\frac12-\\frac16-\\frac17\\right)$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-015",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\frac{1}{(2k)(2k+2)}=\\frac12\\cdot\\frac{1}{k(k+1)}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 분모는 $(2k)(2k+2)=4k(k+1)$이다. 따라서 바깥 계수는 $\\displaystyle\\frac12$가 아니라 $\\displaystyle\\frac14$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-016",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "첫째항이 $3$, 공차가 $2$인 등차수열 $\\{a_n\\}$에 대하여 $\\displaystyle\\sum_{k=1}^{21}\\frac{1}{a_ka_{k+1}}=\\frac12\\left(\\frac1{a_1}-\\frac1{a_{22}}\\right)$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · $a_{k+1}-a_k=2$이므로 각 항을 $\\displaystyle\\frac12\\left(\\frac1{a_k}-\\frac1{a_{k+1}}\\right)$로 분리하면 연쇄소거된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-017",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\frac{1}{\\sqrt{k}+\\sqrt{k+2}}=\\sqrt{k+2}-\\sqrt{k}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 켤레식을 곱하면 분모는 $(k+2)-k=2$가 된다. 따라서 바른 식은 $\\displaystyle\\frac{\\sqrt{k+2}-\\sqrt{k}}{2}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-018",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=2}^{5}\\frac{1}{\\sqrt{k}+\\sqrt{k-1}}=\\sqrt5-1$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 유리화하면 각 항이 $\\sqrt{k}-\\sqrt{k-1}$이 되어, 소거 후 $\\sqrt5-1$이 남는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-019",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "자연수를 순서대로 한 개, 두 개, 세 개씩 묶은 군수열에서 제$m$군의 첫 항은 $\\displaystyle\\frac{m(m-1)}2+1$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "O",
+"solution": "정답 O · 제$m-1$군까지의 누적 항수는 $\\displaystyle\\frac{m(m-1)}2$이므로 그다음 자연수가 제$m$군의 첫 항이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-ox-020",
+"typeId": "set2-alg-12-u0m0s1t0",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "자연수를 순서대로 한 개, 두 개, 세 개씩 묶은 군수열에서 $50$은 제$10$군의 위치를 구할 때 $55-50$을 계산하므로 제$10$군의 다섯 번째 항이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"answer": "X",
+"solution": "정답 X · 군 안의 위치는 해당 수에서 바로 전 군까지의 누적 항수를 빼서 구한다. 따라서 $50-45=5$로 계산해야 하며, $55-50$은 군 안의 위치를 구하는 계산이 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+}
+]

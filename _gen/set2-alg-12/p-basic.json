@@ -1,0 +1,112 @@
+[
+{
+"id": "set2-alg-12-basic-001",
+"typeId": "set2-alg-12-u0m0s0t1",
+"twinGroup": "tw-set2-alg-12-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "합의 기호 $\\Sigma$는 ( )라고 읽는다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "시그마",
+"solution": "정답 시그마 · 시그마는 정해진 범위의 항을 차례로 더함을 나타내는 기호이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-002",
+"typeId": "set2-alg-12-u0m0s0t1",
+"twinGroup": "tw-set2-alg-12-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\displaystyle\\sum_{k=3}^{7}a_k$에서 더하는 항의 개수는 ( )개이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$5$",
+"solution": "정답 $5$ · 시작 번호가 $3$, 끝 번호가 $7$이므로 항의 개수는 $7-3+1=5$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-003",
+"typeId": "set2-alg-12-u0m0s0t1",
+"twinGroup": "tw-set2-alg-12-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "첫째항부터 제$n$항까지의 부분합을 $S_n$이라 할 때, 첫째항 $a_1$은 ( )과 같다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$S_1$",
+"solution": "정답 $S_1$ · 첫째항까지의 합은 첫째항 자체이므로 $a_1=S_1$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-004",
+"typeId": "set2-alg-12-u0m0s0t1",
+"twinGroup": "tw-set2-alg-12-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\displaystyle\\sum_{k=1}^{n}ca_k=c\\sum_{k=1}^{n}a_k$에서 밖으로 꺼내는 $c$는 $k$와 관계없는 ( )여야 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "상수",
+"solution": "정답 상수 · 합을 계산하는 동안 값이 바뀌지 않는 상수는 합의 기호 밖으로 꺼낼 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-005",
+"typeId": "set2-alg-12-u0m0s1t1",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "제곱의 합 공식으로 계산한 $\\displaystyle\\sum_{k=1}^{5}k^2$의 값은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$55$",
+"solution": "정답 $55$ · $\\displaystyle\\frac{5\\cdot6\\cdot11}{6}=55$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-006",
+"typeId": "set2-alg-12-u0m0s1t1",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "세제곱의 합 공식으로 계산한 $\\displaystyle\\sum_{k=1}^{3}k^3$의 값은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$36$",
+"solution": "정답 $36$ · $\\displaystyle\\sum_{k=1}^{3}k^3=(1+2+3)^2=36$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-007",
+"typeId": "set2-alg-12-u0m0s1t1",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "부분분수 식 $\\displaystyle\\frac{1}{k(k+3)}=(\\ \\ )\\left(\\frac1k-\\frac1{k+3}\\right)$에서 빈칸에 들어갈 계수는 무엇인가?\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$\\frac13$",
+"solution": "정답 $\\frac13$ · 두 분모 $k$와 $k+3$의 차가 $3$이므로 계수는 $\\displaystyle\\frac13$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-008",
+"typeId": "set2-alg-12-u0m0s1t1",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "합을 펼쳤을 때 같은 수가 양의 부호와 음의 부호로 나타나 차례로 없어지는 것을 ( )라고 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "연쇄소거",
+"solution": "정답 연쇄소거 · 연쇄소거를 이용하면 소거되지 않고 남은 항들로 합을 구할 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-009",
+"typeId": "set2-alg-12-u0m0s1t1",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\displaystyle\\frac{1}{\\sqrt{k}+\\sqrt{k+2}}$를 켤레식으로 유리화하여 얻는 $\\displaystyle\\frac{\\sqrt{k+2}-\\sqrt{k}}{(\\ \\ )}$의 분모는 무엇인가?\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$2$",
+"solution": "정답 $2$ · 합과 차를 곱하면 분모는 $(k+2)-k=2$가 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+},
+{
+"id": "set2-alg-12-basic-010",
+"typeId": "set2-alg-12-u0m0s1t1",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 2,
+"body": "자연수를 순서대로 한 개, 두 개, 세 개씩 묶은 군수열에서 제$9$군까지의 누적 항수는 ( )개이다.\n\n( )에 들어갈 말을 입력하세요.",
+"answer": "$45$",
+"solution": "정답 $45$ · 제$9$군까지의 누적 항수는 $\\displaystyle1+2+\\cdots+9=\\frac{9\\cdot10}{2}=45$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 대수 12 수열의 합"
+}
+]
