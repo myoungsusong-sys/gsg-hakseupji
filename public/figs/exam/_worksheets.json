@@ -8579,6 +8579,54 @@
 ]
 },
 {
+"id": "ws-set2-int2-10-01",
+"course": "set2-int2-10",
+"title": "수업세트 | 통합과학2 10 태양 에너지의 생성과 전환 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-10-con-001",
+"set2-int2-10-con-002",
+"set2-int2-10-con-003",
+"set2-int2-10-con-004",
+"set2-int2-10-con-005",
+"set2-int2-10-con-006",
+"set2-int2-10-con-007",
+"set2-int2-10-con-008",
+"set2-int2-10-con-009",
+"set2-int2-10-con-010",
+"set2-int2-10-con-011",
+"set2-int2-10-con-012",
+"set2-int2-10-con-013",
+"set2-int2-10-con-014",
+"set2-int2-10-con-015",
+"set2-int2-10-con-016"
+]
+},
+{
+"id": "ws-set2-int2-10-02",
+"course": "set2-int2-10",
+"title": "수업세트 | 통합과학2 10 태양 에너지의 생성과 전환 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-10-adv-001",
+"set2-int2-10-adv-002",
+"set2-int2-10-adv-003",
+"set2-int2-10-adv-004",
+"set2-int2-10-adv-005",
+"set2-int2-10-adv-006"
+]
+},
+{
 "id": "ws-set2-int2-11-01",
 "course": "set2-int2-11",
 "title": "수업세트 | 통합과학2 11 발전과 에너지원 ③ 개념문제 16문항",
@@ -8624,6 +8672,54 @@
 "set2-int2-11-adv-004",
 "set2-int2-11-adv-005",
 "set2-int2-11-adv-006"
+]
+},
+{
+"id": "ws-set2-int2-12-01",
+"course": "set2-int2-12",
+"title": "수업세트 | 통합과학2 12 에너지 효율과 신재생 에너지 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-12-con-001",
+"set2-int2-12-con-002",
+"set2-int2-12-con-003",
+"set2-int2-12-con-004",
+"set2-int2-12-con-005",
+"set2-int2-12-con-006",
+"set2-int2-12-con-007",
+"set2-int2-12-con-008",
+"set2-int2-12-con-009",
+"set2-int2-12-con-010",
+"set2-int2-12-con-011",
+"set2-int2-12-con-012",
+"set2-int2-12-con-013",
+"set2-int2-12-con-014",
+"set2-int2-12-con-015",
+"set2-int2-12-con-016"
+]
+},
+{
+"id": "ws-set2-int2-12-02",
+"course": "set2-int2-12",
+"title": "수업세트 | 통합과학2 12 에너지 효율과 신재생 에너지 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "과학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-int2-12-adv-001",
+"set2-int2-12-adv-002",
+"set2-int2-12-adv-003",
+"set2-int2-12-adv-004",
+"set2-int2-12-adv-005",
+"set2-int2-12-adv-006"
 ]
 },
 {
@@ -9176,6 +9272,110 @@
 "set2-alg-10-adv-004",
 "set2-alg-10-adv-005",
 "set2-alg-10-adv-006"
+]
+},
+{
+"id": "ws-set2-cm2-11-01",
+"course": "set2-cm2-11",
+"title": "수업세트 | 공통수학2 11 합성함수 ① O·X 20문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-11-ox-001",
+"set2-cm2-11-ox-002",
+"set2-cm2-11-ox-003",
+"set2-cm2-11-ox-004",
+"set2-cm2-11-ox-005",
+"set2-cm2-11-ox-006",
+"set2-cm2-11-ox-007",
+"set2-cm2-11-ox-008",
+"set2-cm2-11-ox-009",
+"set2-cm2-11-ox-010",
+"set2-cm2-11-ox-011",
+"set2-cm2-11-ox-012",
+"set2-cm2-11-ox-013",
+"set2-cm2-11-ox-014",
+"set2-cm2-11-ox-015",
+"set2-cm2-11-ox-016",
+"set2-cm2-11-ox-017",
+"set2-cm2-11-ox-018",
+"set2-cm2-11-ox-019",
+"set2-cm2-11-ox-020"
+]
+},
+{
+"id": "ws-set2-cm2-11-02",
+"course": "set2-cm2-11",
+"title": "수업세트 | 공통수학2 11 합성함수 ② 기본개념 확인 10문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-11-basic-001",
+"set2-cm2-11-basic-002",
+"set2-cm2-11-basic-003",
+"set2-cm2-11-basic-004",
+"set2-cm2-11-basic-005",
+"set2-cm2-11-basic-006",
+"set2-cm2-11-basic-007",
+"set2-cm2-11-basic-008",
+"set2-cm2-11-basic-009",
+"set2-cm2-11-basic-010"
+]
+},
+{
+"id": "ws-set2-cm2-11-03",
+"course": "set2-cm2-11",
+"title": "수업세트 | 공통수학2 11 합성함수 ③ 개념문제 16문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-11-con-001",
+"set2-cm2-11-con-002",
+"set2-cm2-11-con-003",
+"set2-cm2-11-con-004",
+"set2-cm2-11-con-005",
+"set2-cm2-11-con-006",
+"set2-cm2-11-con-007",
+"set2-cm2-11-con-008",
+"set2-cm2-11-con-009",
+"set2-cm2-11-con-010",
+"set2-cm2-11-con-011",
+"set2-cm2-11-con-012",
+"set2-cm2-11-con-013",
+"set2-cm2-11-con-014",
+"set2-cm2-11-con-015",
+"set2-cm2-11-con-016"
+]
+},
+{
+"id": "ws-set2-cm2-11-04",
+"course": "set2-cm2-11",
+"title": "수업세트 | 공통수학2 11 합성함수 ④ 심화문제 6문항",
+"grade": "고1",
+"subject": "수학",
+"tags": [
+"수업세트",
+"내신대비"
+],
+"problemIds": [
+"set2-cm2-11-adv-001",
+"set2-cm2-11-adv-002",
+"set2-cm2-11-adv-003",
+"set2-cm2-11-adv-004",
+"set2-cm2-11-adv-005",
+"set2-cm2-11-adv-006"
 ]
 },
 {
