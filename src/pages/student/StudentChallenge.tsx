@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import type { Problem } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
-import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, typeSubUnitId } from '../../data/curriculum'
+import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, typeSubUnitId, type Curriculum } from '../../data/curriculum'
+import { SUBJECTS, type Subject } from '../../lib/subject'
+import { isSchoolCourse } from '../../data/schoolPub'
 import { POOL_COURSES } from '../../data/pool'
 import { CONCEPTS } from '../../data/concepts'
 import { wrongByType } from '../../lib/drill'
@@ -29,6 +31,10 @@ const BANDS = [
 ] as const
 type BandKey = typeof BANDS[number]['key']
 
+type Level = '초등' | '중등' | '고등'
+const LEVELS: Level[] = ['초등', '중등', '고등']
+const levelOf = (g: string | undefined): Level => (g?.startsWith('초') ? '초등' : g?.startsWith('중') ? '중등' : '고등')
+
 const SLOT_MAX = 10
 const PICK_N = 5
 
@@ -39,8 +45,33 @@ export default function StudentChallenge() {
   const pv = usePreview()
 
   // 과정: 학생 학년 기본 — 초등~고등 전 과정 선택 가능 (문제 풀 없는 과정은 유형 트리만)
-  const courses = CURRICULA
   const [courseId, setCourseId] = useState(() => defaultCurriculumForGrade(me.grade) || 'm1-1')
+  // 🏫 과목·학교급 단추 + 우리 학교 교과서 먼저 (2026-10-28 명수쌤 «학생 챌린지 화면에도 과목·학교급 단추 넣어»
+  //    · «해당 학교를 입력하면 출판사 맞게 선택하게 해줘») — 전엔 295개 과정이 한 목록이라 고1 학생이 «국어 칸이 없다»고 했다.
+  //    국어·영어는 학생 「학교」로 그 학교 교과서 과정(data/schoolPub.ts)을 골라 맨 위에 «🏫 우리 학교»로 둔다.
+  const mine = (c: Curriculum) => isSchoolCourse(c, me.school, me.grade)
+  const [subj, setSubj] = useState<Subject>(() => (CURRICULA.find((c) => c.id === courseId)?.subject ?? '수학') as Subject)
+  const [level, setLevel] = useState<Level>(() => levelOf(me.grade))
+  useEffect(() => {   // 다른 길(취약 유형 단추 등)로 과정이 바뀌어도 단추가 따라간다
+    const c = CURRICULA.find((x) => x.id === courseId)
+    if (c) { setSubj((c.subject ?? '수학') as Subject); setLevel(levelOf(c.grade)) }
+  }, [courseId])
+  const ofSubj = (s: Subject) => CURRICULA.filter((c) => (c.subject ?? '수학') === s)
+  const levelsHere = LEVELS.filter((l) => ofSubj(subj).some((c) => levelOf(c.grade) === l))
+  const courses = useMemo(() => {
+    const xs = ofSubj(subj).filter((c) => levelOf(c.grade) === level)
+    return [...xs.filter(mine), ...xs.filter((c) => !mine(c))]
+  }, [subj, level, me.school, me.grade])   // eslint-disable-line react-hooks/exhaustive-deps
+  // 과목·학교급을 누르면 그 안에서 «우리 학교 교과서 · 내 학년» 과정부터 연다
+  const pick = (s: Subject, l: Level) => {
+    const all = ofSubj(s)
+    const lv = all.some((c) => levelOf(c.grade) === l) ? l : (LEVELS.find((x) => all.some((c) => levelOf(c.grade) === x)) ?? l)
+    const xs = all.filter((c) => levelOf(c.grade) === lv)
+    const g = /^[초중고]\d/.exec(me.grade ?? '')?.[0] ?? '~'
+    const best = xs.find((c) => mine(c) && c.grade.startsWith(g)) ?? xs.find(mine) ?? xs.find((c) => c.grade.startsWith(g)) ?? xs[0]
+    setSubj(s); setLevel(lv)
+    if (best) setCourseId(best.id)
+  }
   const [recoOnly, setRecoOnly] = useState(false)
   const [query, setQuery] = useState('')
   // 교재·교과서 선택 / 성취도 선택 (매쓰플랫 챌린지 필터 동일)
@@ -254,9 +285,25 @@ export default function StudentChallenge() {
 
       {/* 필터 바 */}
       <div className="mb-4 flex flex-wrap items-center gap-3">
+        <div className="flex w-full flex-wrap items-center gap-1.5" role="group" aria-label="과목">
+          {SUBJECTS.map((s) => (
+            <button key={s} type="button" onClick={() => pick(s, level)} aria-pressed={subj === s}
+              className={`rounded-full px-4 py-1.5 text-sm font-bold ${subj === s ? 'bg-pine text-paper' : 'border border-line bg-white text-ink2 hover:bg-pine-soft'}`}>
+              {s}
+            </button>
+          ))}
+          <span className="mx-1 h-5 w-px bg-line" />
+          {levelsHere.map((l) => (
+            <button key={l} type="button" onClick={() => pick(subj, l)} aria-pressed={level === l}
+              className={`rounded-lg px-4 py-1.5 text-sm font-black ${level === l ? 'bg-ink text-paper' : 'border border-line bg-white text-ink2 hover:bg-paper2'}`}>
+              {l}
+            </button>
+          ))}
+        </div>
         <select value={courseId} onChange={e => setCourseId(e.target.value)}
           className="rounded-lg border border-line bg-white px-2.5 py-2 text-sm font-bold">
-          {courses.map(c => <option key={c.id} value={c.id}>{c.label.replace(' (22개정)', '')}</option>)}
+          {!courses.some((c) => c.id === courseId) && <option value={courseId}>{curriculumFor(courseId).label.replace(' (22개정)', '')}</option>}
+          {courses.map(c => <option key={c.id} value={c.id}>{(mine(c) ? '🏫 우리 학교 · ' : '') + c.label.replace(' (22개정)', '')}</option>)}
         </select>
         <button onClick={() => setBookOpen(true)}
           className={`rounded-lg border px-3 py-2 text-sm font-bold ${

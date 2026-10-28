@@ -30,6 +30,7 @@ import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
 import { readSticky, writeSticky } from './student/common'
 import { currentSem, korCourseFor } from '../data/korBooks'
+import { schoolBookFor } from '../data/schoolPub'
 import { ENGBOOK_COURSES } from '../data/curriculum-engbook'
 import { findUnit, tellHost } from '../lib/unitScope'
 import { pushWrong } from '../lib/wrongFeed'
@@ -213,7 +214,9 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   // 📗 영어는 **학생이 쓰는 교과서 문항만** 낸다 — 다른 출판사 본문은 처음 보는 지문이라
   //    내신 대비가 안 된다 (2026-09-12 명수쌤 지시). 교과서 미지정이면 거르지 않는다.
   //    교과서에 매이지 않는 문항(어휘·어법·씨앗)은 book 이 없어 항상 남는다.
-  const engBook = allStudents.find((s) => s.id === studentId)?.engBook
+  // 🏫 학생 정보에 교과서를 안 적었으면 학교 표에서 찾는다(2026-10-28 명수쌤 «해당 학교를 입력하면 출판사 맞게»)
+  const stu = allStudents.find((s) => s.id === studentId)
+  const engBook = stu?.engBook ?? schoolBookFor('영어', stu?.school, stu?.grade)
   // 📗 영어 교과서별 승강제(2026-09-29): 학생 교과서가 정해져 있으면 공통 과정(eng-m1 …) 대신 그 교과서 과정으로 연다
   useEffect(() => {
     if (!engBook || typeId || params.get('course') || unitParam) return
@@ -221,7 +224,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     if (b) setCourse(b.id)
   }, [engBook, course])   // eslint-disable-line react-hooks/exhaustive-deps
   // 📘 국어 교과서별 과정(2026-09-30): 학생 국어 교과서가 정해져 있으면 공통 국어(kor-m1 …) 대신 그 교과서의 이번 학기 과정으로 연다
-  const korBook = allStudents.find((s) => s.id === studentId)?.korBook
+  const korBook = stu?.korBook ?? schoolBookFor('국어', stu?.school, stu?.grade)
   useEffect(() => {
     if (!korBook || typeId || params.get('course') || unitParam || !/^kor-[mh]\d$/.test(course)) return
     const k = korCourseFor(course, korBook, currentSem())
