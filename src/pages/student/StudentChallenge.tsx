@@ -6,7 +6,7 @@ import { useStore, uid } from '../../lib/store'
 import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, typeSubUnitId, type Curriculum } from '../../data/curriculum'
 import { SUBJECTS, type Subject } from '../../lib/subject'
 import { isSchoolCourse } from '../../data/schoolPub'
-import { POOL_COURSES } from '../../data/pool'
+import { POOL_COURSES, GEN_ONLY_COURSES } from '../../data/pool'
 import { CONCEPTS } from '../../data/concepts'
 import { wrongByType } from '../../lib/drill'
 import { ACHIEVEMENT_GRADES, achievementOf, type AchievementKey } from '../../lib/achievement'
@@ -60,7 +60,9 @@ export default function StudentChallenge() {
   const levelsHere = LEVELS.filter((l) => ofSubj(subj).some((c) => levelOf(c.grade) === l))
   const courses = useMemo(() => {
     const xs = ofSubj(subj).filter((c) => levelOf(c.grade) === level)
-    return [...xs.filter(mine), ...xs.filter((c) => !mine(c))]
+    const g = /^[초중고]\d/.exec(me.grade ?? '')?.[0] ?? '~'
+    const m = xs.filter(mine)
+    return [...m.filter((c) => c.grade.startsWith(g)), ...m.filter((c) => !c.grade.startsWith(g)), ...xs.filter((c) => !mine(c))]   // 우리 학교 · 내 학년이 맨 위
   }, [subj, level, me.school, me.grade])   // eslint-disable-line react-hooks/exhaustive-deps
   // 과목·학교급을 누르면 그 안에서 «우리 학교 교과서 · 내 학년» 과정부터 연다
   const pick = (s: Subject, l: Level) => {
@@ -239,7 +241,9 @@ export default function StudentChallenge() {
     }).filter(s => s.types.length > 0)
   }, [subs, recoOnly, recoIds, bookTypeIds, achSel, statMap, q])
 
-  const hasPool = (POOL_COURSES as readonly string[]).includes(courseId)
+  // 국어·영어·족보·시험대비 과정은 우리가 만든 gen-<과정>.json 만 있다 — 그것도 «문제 풀 있음»이다
+  //    (10/28 지후 학생 미리보기: 공통국어2 비상(박영민)에 문제가 있는데 «문제 풀 준비 중»이 떴다)
+  const hasPool = (POOL_COURSES as readonly string[]).includes(courseId) || GEN_ONLY_COURSES.includes(courseId)
   const loaded = !hasPool || [...byType.values()].some(arr => arr.length > 0)
 
   return (
