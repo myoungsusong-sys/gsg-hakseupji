@@ -9031,7 +9031,7 @@ export const EXAM_COURSES: ExamCourse[] = [
   "id": "ns-kr-h-com-b1",
   "grade": "고1",
   "subject": "국어",
-  "label": "내신 기출 · 공통국어 (미래엔·신유식)",
+  "label": "내신 기출 · 공통국어1 (미래엔·신유식)",
   "tree": [
    [
     "1단원",
@@ -9196,7 +9196,7 @@ export const EXAM_COURSES: ExamCourse[] = [
   "id": "ns-kr-h-com-b4",
   "grade": "고1",
   "subject": "국어",
-  "label": "내신 기출 · 공통국어 (창비·최원식)",
+  "label": "내신 기출 · 공통국어1 (창비·최원식)",
   "tree": [
    [
     "1단원",
@@ -9550,7 +9550,7 @@ export const EXAM_COURSES: ExamCourse[] = [
   "id": "ns-kr-h-com-b2",
   "grade": "고1",
   "subject": "국어",
-  "label": "내신 기출 · 공통국어 (비상·강호영)",
+  "label": "내신 기출 · 공통국어1 (비상·강호영)",
   "tree": [
    [
     "1단원",
@@ -9726,7 +9726,7 @@ export const EXAM_COURSES: ExamCourse[] = [
   "id": "ns-kr-h-com-b3",
   "grade": "고1",
   "subject": "국어",
-  "label": "내신 기출 · 공통국어 (비상·박영민)",
+  "label": "내신 기출 · 공통국어1 (비상·박영민)",
   "tree": [
    [
     "1단원",
@@ -9891,7 +9891,7 @@ export const EXAM_COURSES: ExamCourse[] = [
   "id": "ns-kr-h-com-b5",
   "grade": "고1",
   "subject": "국어",
-  "label": "내신 기출 · 공통국어 (천재·김수학)",
+  "label": "내신 기출 · 공통국어1 (천재·김수학)",
   "tree": [
    [
     "1단원",
