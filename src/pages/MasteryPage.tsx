@@ -17,6 +17,15 @@ import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQu
 type Level = '초등' | '중등' | '고등'
 const LEVELS: Level[] = ['초등', '중등', '고등']
 const levelOf = (g: string | undefined): Level => (g?.startsWith('초') ? '초등' : g?.startsWith('중') ? '중등' : '고등')
+
+// 📖 출판사 단추 — 국어·영어만(2026-10-28 명수쌤 «출판사 단추 만들어»).
+//    교과서·족보 과정은 book 칸(«비상(박영민)»), 내신 기출(ns-)은 이름 끝 괄호(«(천재·노미숙)»)에서 출판사 이름만 뗀다.
+//    출판사가 없는 과정(국어·영어 유형 체계, 시험대비 등)은 «공통»으로 묶는다.
+const PUB_SUBJECTS: string[] = ['국어', '영어']
+const pubOf = (c: { id: string; label: string; book?: string }): string => {
+  const raw = c.book ?? (c.id.startsWith('ns-') ? /\(([^)]+)\)\s*$/.exec(c.label)?.[1] : undefined)
+  return (raw && /^[^(·\s]+/.exec(raw)?.[0]) || '공통'
+}
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
 import { readSticky, writeSticky } from './student/common'
@@ -136,6 +145,21 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const [level, setLevel] = useState<Level>(() => levelOf(CURRICULA.find((x) => x.id === course)?.grade))
   useEffect(() => { const c = CURRICULA.find((x) => x.id === course); if (c) setLevel(levelOf(c.grade)) }, [course])
   const levelCourses = useMemo(() => courses.filter((c) => levelOf(c.grade) === level), [courses, level])
+  // 출판사 — 과목·학교급을 바꾸면 «전체»로 돌아간다
+  const pubOn = PUB_SUBJECTS.includes(subject)
+  const [pub, setPub] = useState('전체')
+  useEffect(() => { setPub('전체') }, [subject, level])
+  const pubs = useMemo(() => {
+    const m = new Map<string, number>()
+    for (const c of levelCourses) m.set(pubOf(c), (m.get(pubOf(c)) ?? 0) + 1)
+    return [...m.entries()].sort((a, b) => (a[0] === '공통' ? 1 : b[0] === '공통' ? -1 : a[0].localeCompare(b[0], 'ko')))
+  }, [levelCourses])
+  const pubCourses = useMemo(() => (pub === '전체' ? levelCourses : levelCourses.filter((c) => pubOf(c) === pub)), [levelCourses, pub])
+  const pickPub = (p: string) => {
+    setPub(p)
+    const list = p === '전체' ? levelCourses : levelCourses.filter((c) => pubOf(c) === p)
+    if (list.length && !list.some((c) => c.id === course)) { setCourse(list[0].id); setTypeId(null) }
+  }
   // 과목 단추 — 과목만 바꾸면 고른 과정(속값)이 앞 과목에 남아 목록이 엉뚱한 과목을 보여 줬다(10-28 실측: 국어를 눌렀는데 초등 수학 유형).
   //    그래서 그 과목의 «지금 학교급» 첫 과정으로 함께 옮긴다(그 학교급에 없으면 그 과목 첫 과정).
   const pickSubject = (sub: Subject) => {
@@ -564,9 +588,19 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
             )
           })}
         </div>
+        {pubOn && pubs.length > 1 && (
+          <div className="flex w-full flex-wrap gap-1.5" role="group" aria-label="출판사">
+            {[['전체', levelCourses.length] as [string, number], ...pubs].map(([p, n]) => (
+              <button key={p} type="button" onClick={() => pickPub(p)} aria-pressed={pub === p}
+                className={`rounded-md px-3 py-1 text-xs font-bold ${pub === p ? 'bg-pine-soft text-pine-dark ring-1 ring-pine' : 'border border-line bg-white text-ink2 hover:bg-paper2'}`}>
+                {p}<span className="ml-1 font-normal opacity-70">{n}</span>
+              </button>
+            ))}
+          </div>
+        )}
         <select value={course} onChange={(e) => { setCourse(e.target.value); setTypeId(null) }}
           className="rounded-lg border border-line px-3 py-2 text-sm">
-          {(levelCourses.length ? levelCourses : courses).map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
+          {((pubOn ? pubCourses : levelCourses).length ? (pubOn ? pubCourses : levelCourses) : courses).map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
         </select>
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="유형·소단원 검색"
           className="min-w-[10rem] flex-1 rounded-lg border border-line px-3 py-2 text-sm" />
