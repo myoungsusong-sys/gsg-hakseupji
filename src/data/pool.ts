@@ -147,7 +147,8 @@ export function loadPool(course: string): Promise<Problem[]> {
           if (g.ok) {
             const gen = (await g.json()) as Problem[]
             const seen = new Set(arr.map(p => p.id))
-            for (const q of gen) if (q && q.id && !seen.has(q.id)) arr.push({ ...q, custom: true, source: q.source || '자체 생성' })
+            // 🔴 2026-10-28 명수쌤 «족보닷컴 넣지 말고» — 출처 «족보닷컴»은 학생 결과·문제은행 화면에 보이므로 «내신 기출»로 바꿔 싣는다
+            for (const q of gen) if (q && q.id && !seen.has(q.id)) arr.push({ ...q, custom: true, source: (q.source || '자체 생성').replace(/족보닷컴/g, '내신 기출') })
           }
         } catch { /* 생성 파일이 없거나 깨져도 기본 풀은 그대로 */ }
         cache.set(course, arr)

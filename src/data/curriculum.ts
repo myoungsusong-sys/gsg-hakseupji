@@ -2876,7 +2876,12 @@ for (const b of ENGBOOK_COURSES) CURRICULA.push({ ...build(b.id, b.grade, `${b.g
 // 📘 국어 교과서별 과정 (2026-09-30) — 교과서 한 권(학기) = 과정 하나
 for (const b of KORBOOK_COURSES) CURRICULA.push({ ...build(b.id, b.grade, `${b.grade} 국어 · ${b.book} ${b.title}`, b.tree, '국어'), book: b.book })
 // 📒 족보닷컴 과정 (2026-10-25) — 교과서 한 권(학기) = 과정 하나. 학습지는 문항 id 로 자기 과정만 부른다(zbCoursesOf)
-for (const b of ZB_COURSES) CURRICULA.push({ ...buildReal(b.id, b.grade, `${b.grade} ${b.subject} · ${b.book} ${b.title}`, b.tree, b.subject), book: b.book })
+// 🔴 2026-10-28 명수쌤 «족보닷컴 넣지 말고» — 과정·단원·유형 이름에 «족보닷컴» 글자를 보이지 않는다.
+//    curriculum-zb.ts 는 zb_emit.py 가 자동 생성하므로(다시 만들면 되살아난다) 앱에 넣는 이 자리에서 지운다. 유형 id 는 그대로.
+const noZb = (s: string) => s.replace(/족보닷컴\s*/g, '').replace(/\s{2,}/g, ' ').trim()
+const noZbTree = (t: (typeof ZB_COURSES)[number]['tree']): (typeof ZB_COURSES)[number]['tree'] =>
+  t.map(([b, mids]) => [noZb(b), mids.map(([m, subs]) => [noZb(m), subs.map(([s, types]) => [noZb(s), types.map(([id, name]) => [id, noZb(name)] as [string, string])])])])
+for (const b of ZB_COURSES) CURRICULA.push({ ...buildReal(b.id, b.grade, noZb(`${b.grade} ${b.subject} · ${b.book} ${b.title}`), noZbTree(b.tree), b.subject), book: b.book })
 // 📝 시험대비 과정 (2026-10-27) — 시험대비 세트 한 세트 = 과정 하나(O·X / 기본개념 / 개념 / 심화). 맨 뒤에 붙여 학년 기본 과정 고르기에 끼지 않는다
 for (const b of EXAM_COURSES) CURRICULA.push(build(b.id, b.grade, b.label, b.tree, b.subject))
 
