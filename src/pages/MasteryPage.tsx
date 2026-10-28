@@ -10,6 +10,13 @@ import { newMastery, type MasteryState } from '../lib/mastery'
 import { todaySet } from '../lib/masterySet'
 import type { Problem } from '../types'
 import MasteryQueue, { typeNameOf, useWrongTypes } from '../components/MasteryQueue'
+
+// 🏫 학교급 단추 — 과목 단추 위(2026-10-28 명수쌤 «중등,고등 상위 단추만들어줘»).
+//    학년 글자가 «초»로 시작하면 초등, «중»이면 중등, 나머지(고1·고2·고3·공통수학1·대수…)는 고등.
+//    초등 단추는 그 과목에 초등 과정이 있을 때만 보인다(수학) — 빼면 초등 수학 승강제로 갈 길이 끊긴다.
+type Level = '초등' | '중등' | '고등'
+const LEVELS: Level[] = ['초등', '중등', '고등']
+const levelOf = (g: string | undefined): Level => (g?.startsWith('초') ? '초등' : g?.startsWith('중') ? '중등' : '고등')
 import { stateToStart, scopeLoaded, type WrongTypeRow } from '../lib/wrongTypes'
 import { filterByEngBook } from '../data/engBooks'
 import { readSticky, writeSticky } from './student/common'
@@ -125,6 +132,23 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     () => CURRICULA.filter((c) => (c.subject ?? '수학') === subject),
     [subject],
   )
+  // 학교급 — 지금 과정의 학년에서 따온다(링크로 들어온 과정도 그 학교급 단추가 켜진다)
+  const [level, setLevel] = useState<Level>(() => levelOf(CURRICULA.find((x) => x.id === course)?.grade))
+  useEffect(() => { const c = CURRICULA.find((x) => x.id === course); if (c) setLevel(levelOf(c.grade)) }, [course])
+  const levelCourses = useMemo(() => courses.filter((c) => levelOf(c.grade) === level), [courses, level])
+  // 과목 단추 — 과목만 바꾸면 고른 과정(속값)이 앞 과목에 남아 목록이 엉뚱한 과목을 보여 줬다(10-28 실측: 국어를 눌렀는데 초등 수학 유형).
+  //    그래서 그 과목의 «지금 학교급» 첫 과정으로 함께 옮긴다(그 학교급에 없으면 그 과목 첫 과정).
+  const pickSubject = (sub: Subject) => {
+    const list = CURRICULA.filter((c) => (c.subject ?? '수학') === sub)
+    const first = list.find((c) => levelOf(c.grade) === level) ?? list[0]
+    setSubject(sub)
+    if (first && first.id !== course) { setCourse(first.id); setTypeId(null) }
+  }
+  const pickLevel = (l: Level) => {
+    setLevel(l)
+    const first = courses.find((c) => levelOf(c.grade) === l)
+    if (first && levelOf(CURRICULA.find((x) => x.id === course)?.grade) !== l) { setCourse(first.id); setTypeId(null) }
+  }
   // 🔴 링크로 들어온 과정(예: 국어)이 지금 과목(수학)과 다르면 **과목을 먼저 맞춘다.**
   //    안 그러면 아래 효과가 「그 과목에 없는 과정」이라 보고 첫 과정으로 되돌려 버린다
   //    (2026-09-05 실물에서 발견 — 국어 링크가 초1-1 수학으로 튀었다).
@@ -144,7 +168,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     if (!cur && typeId) return
     if ((cur?.subject ?? '수학') !== subject) return      // 아직 과목이 안 맞았다 — 기다린다
     if (courses.length && !courses.some((c) => c.id === course)) {
-      setCourse(courses[0].id); setTypeId(null)
+      setCourse((courses.find((c) => levelOf(c.grade) === level) ?? courses[0]).id); setTypeId(null)
     }
   }, [courses, subject])   // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -517,13 +541,32 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       <div className="mt-4"><MasteryQueue studentId={studentId} onPick={pickFromQueue} /></div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <select value={subject} onChange={(e) => setSubject(e.target.value as Subject)}
-          className="rounded-lg border border-line px-3 py-2 text-sm font-bold">
-          {SUBJECTS.map((s) => <option key={s} value={s}>{s}</option>)}
-        </select>
+        {/* 📚 과목 단추 — 드롭다운 대신 한 번에 누르게(2026-10-28 명수쌤 «과목별 선택 단추를 만들어서 좀 편리하게»). 숫자 = 그 과목 과정 수 */}
+        <div className="flex w-full flex-wrap gap-1.5" role="group" aria-label="학교급">
+          {LEVELS.filter((l) => l !== '초등' || courses.some((c) => levelOf(c.grade) === '초등')).map((l) => {
+            const n = courses.filter((c) => levelOf(c.grade) === l).length
+            return (
+              <button key={l} type="button" onClick={() => pickLevel(l)} aria-pressed={level === l}
+                className={`rounded-lg px-5 py-2 text-sm font-black ${level === l ? 'bg-ink text-paper' : 'border border-line bg-white text-ink2 hover:bg-paper2'}`}>
+                {l}<span className="ml-1 text-xs font-normal opacity-70">{n}</span>
+              </button>
+            )
+          })}
+        </div>
+        <div className="flex w-full flex-wrap gap-1.5" role="group" aria-label="과목">
+          {SUBJECTS.map((s) => {
+            const n = CURRICULA.filter((c) => (c.subject ?? '수학') === s && levelOf(c.grade) === level).length
+            return (
+              <button key={s} type="button" onClick={() => pickSubject(s as Subject)} aria-pressed={subject === s}
+                className={`rounded-full px-4 py-1.5 text-sm font-bold ${subject === s ? 'bg-pine text-paper' : 'border border-line bg-white text-ink2 hover:bg-pine-soft'}`}>
+                {s}{n ? <span className="ml-1 text-xs font-normal opacity-70">{n}</span> : null}
+              </button>
+            )
+          })}
+        </div>
         <select value={course} onChange={(e) => { setCourse(e.target.value); setTypeId(null) }}
           className="rounded-lg border border-line px-3 py-2 text-sm">
-          {courses.map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
+          {(levelCourses.length ? levelCourses : courses).map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
         </select>
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="유형·소단원 검색"
           className="min-w-[10rem] flex-1 rounded-lg border border-line px-3 py-2 text-sm" />

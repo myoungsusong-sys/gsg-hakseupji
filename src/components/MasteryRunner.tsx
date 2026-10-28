@@ -9,6 +9,7 @@ import { ConceptVideoButton, useConceptVideo } from './student/ConceptVideo'
 import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
+import { subjectOfType } from '../data/curriculum'
 import { readSticky, writeSticky } from '../pages/student/common'
 import { useStore } from '../lib/store'
 import { dateKey } from '../lib/dates'
@@ -75,6 +76,9 @@ export default function MasteryRunner({
   const [penSound, setPenSound] = useState(() => pencil.soundOn())
   const [penPop, setPenPop] = useState(false)
   const [inks, setInks] = useState<Record<string, Stroke[]>>({})
+  // 📝 풀이 칸 — 계산이 없는 과목(국어·사회·역사·영어)은 문제 아래 빈 풀이 칸을 뺀다
+  //    (2026-10-28 명수쌤 «국어나 사회등은 풀이칸이 필요없지않아?»). 펜은 남긴다 — 지문에 밑줄·메모용.
+  const noWorkArea = ['국어', '사회', '역사', '영어'].includes(subjectOfType(typeId) ?? '수학')
   const [redos, setRedos] = useState<Record<string, Stroke[]>>({})
 
   // 개념 빈칸 (0층)
@@ -352,7 +356,7 @@ export default function MasteryRunner({
             {/* ✏️ 필기 도구줄 — 학습지 풀이 화면과 같은 단추(↶ ↷ 펜 지우개 🗑 + 펜 설정) */}
             <div className="mb-2 flex flex-wrap items-center gap-1.5">
               <span className="text-[11px] text-ink2">
-                {tool === 'none' ? '✏️ 펜을 누르면 문제 위·아래 칸에 풀이를 쓸 수 있어요' : tool === 'pen' ? '✏️ 쓰는 중 — 펜을 한 번 더 누르면 펜 설정' : '◻ 지우는 중'}
+                {tool === 'none' ? (noWorkArea ? '✏️ 펜을 누르면 문제 위에 밑줄·메모를 할 수 있어요' : '✏️ 펜을 누르면 문제 위·아래 칸에 풀이를 쓸 수 있어요') : tool === 'pen' ? '✏️ 쓰는 중 — 펜을 한 번 더 누르면 펜 설정' : '◻ 지우는 중'}
               </span>
               <div className="grow" />
               <div className="relative flex items-center gap-1.5">
@@ -425,9 +429,11 @@ export default function MasteryRunner({
               onCommit={pushStroke}>
               {/* 보기는 아래에서 **클릭 버튼**으로 직접 그린다 — 여기서 또 그리면 두 번 나온다 */}
               <ProblemContent p={current} hideChoices />
-              <div className="mt-3 flex h-72 items-start justify-end rounded-lg border border-dashed border-line/80 bg-paper2/20 p-2">
-                {myInk.length === 0 && <span className="text-[11px] text-ink2/60">풀이 칸</span>}
-              </div>
+              {!noWorkArea && (
+                <div className="mt-3 flex h-72 items-start justify-end rounded-lg border border-dashed border-line/80 bg-paper2/20 p-2">
+                  {myInk.length === 0 && <span className="text-[11px] text-ink2/60">풀이 칸</span>}
+                </div>
+              )}
             </InkCanvas>
             {isChoice && (
               <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
