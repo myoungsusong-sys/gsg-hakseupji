@@ -368,7 +368,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       <MasteryRunner
         key={typeId}
         typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId} course={course}
-        initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 2)}
+        initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 0)}
         onChange={(st: MasteryState) => {
           const logs = Array.isArray(st.log) ? st.log : []
           const prev = seenLog.current.get(typeId)
@@ -460,7 +460,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         <p className="text-xs text-ink2">{unit.path}</p>
         <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
         <p className="mt-2 text-sm text-ink2">
-          유형마다 개념 빈칸 → 기본 → 표준 → 심화 → 최상. 틀리면 한 단계 내려가 다시, 두 문제 연속 맞히면 올라가요.
+          유형마다 개념 강의·이론노트 → 개념 빈칸 → 기본 → 표준 → 심화 → 최상. 틀리면 개념 강의부터 다시, 두 문제 연속 맞히면 올라가요.
         </p>
         {!unitReady ? (
           <div className="mt-4 rounded-2xl border border-line bg-white p-6 text-center text-sm text-ink2">문제를 불러오는 중…</div>
@@ -530,8 +530,8 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
         </p>
       )}
       <p className="mt-1 text-sm text-ink2">
-        유형 하나를 개념 빈칸부터 최상 난이도까지 올려 붙인다.
-        틀리면 한 단계 내려가 다시 이해시키고, 연속 두 문제를 맞히면 올라간다.
+        유형 하나를 개념 강의부터 최상 난이도까지 올려 붙인다.
+        틀리면 개념 강의부터 다시 이해시키고, 연속 두 문제를 맞히면 올라간다.
       </p>
 
       {/* 📕 채점 단위 정복 — 이번 채점의 오답 유형만. 전체 목록은 숨긴다(「오답 문제 유형만」이 요구사항) */}

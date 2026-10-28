@@ -24,9 +24,10 @@ import { autoPickable } from './pickable'
  *   4층 심화2      — +2
  *
  * ## 오르내림 규칙 (실제 학습에서 검증된 형태로 단순하게)
+ *   · 시작은 **0층(개념 강의·이론노트 → 개념 빈칸)** 부터 (2026-10-29 명수쌤 «기본문제풀이부터 하는 게 아니라 개념강의부터 올라가는 게 맞다»)
  *   · 맞히면      → 한 층 위로. 단, **연속 2개**를 맞혀야 올라간다(찍어서 올라가는 것 방지)
- *   · 틀리면      → 한 층 아래로. 그 층에서 **다시 2개 연속**을 맞혀야 재도전
- *   · 1층에서 틀림 → **0층(개념)으로 내려간다.** 이것이 "개념 빈칸부터 다시"의 실체다
+ *   · 틀리면      → **어느 층이든 0층(개념 강의)으로** 돌아가 다시 올라온다
+ *                  (같은 날 «틀리면 앞단계가 아니라 개념강의부터 올라가게». 예전엔 한 층씩 내려갔다)
  *   · 4층에서 2연속 → **마스터**. 루프 종료
  *   · 같은 층에서 3번 틀리면 → 선생님 호출(혼자 뚫을 수 없는 지점이다. 붙잡아 두지 않는다)
  *
@@ -46,7 +47,7 @@ export const FLOOR_NAME: Record<Floor, string> = {
 }
 
 export const FLOOR_DESC: Record<Floor, string> = {
-  0: '개념 빈칸 — 무엇을 몰랐는지 먼저 확인합니다',
+  0: '개념 — 강의와 이론노트로 익히고 빈칸으로 확인합니다',
   1: '기본 — 한 단계 쉬운 문제로 감을 잡습니다',
   2: '표준 — 이 유형의 기준 문제입니다',
   3: '심화 — 한 단계 어려운 문제입니다',
@@ -83,6 +84,8 @@ export interface MasteryState {
   mastered: boolean
   /** 선생님 호출이 걸린 상태인가 */
   needsTeacher: boolean
+  /** 0층 개념 강의 영상을 끝까지 본 적이 있나 — 처음 한 번만 끝까지 보게 하고, 다시 내려왔을 땐 건너뛸 수 있다(2026-10-29 명수쌤 «처음만 끝까지») */
+  lecDone?: boolean
 }
 
 /**
@@ -110,7 +113,7 @@ export function normalizeMastery(raw: unknown, studentId: string, typeId: string
   }
 }
 
-export function newMastery(studentId: string, typeId: string, startFloor: Floor = 2): MasteryState {
+export function newMastery(studentId: string, typeId: string, startFloor: Floor = 0): MasteryState {
   return {
     studentId, typeId, floor: startFloor, streak: 0, missAtFloor: 0, missStreak: 0,
     servedIds: [], log: [], mastered: false, needsTeacher: false,
@@ -458,22 +461,17 @@ export function step(
       message: `${STUCK_LIMIT}번 연속으로 막혔습니다(${FLOOR_NAME[s.floor]} 단계). 선생님 설명이 필요합니다.` }
   }
 
-  if (s.floor <= 1) {
-    // 기본에서 틀렸다 = 개념이 안 잡힌 것. 여기가 "개념 빈칸부터 다시"의 자리다
-    s.floor = 0; s.missAtFloor = 0
-    return { next: s, event: '개념으로',
-      message: '기본 문제에서 막혔습니다. 개념부터 다시 확인하고 올라갑시다.' }
-  }
-
-  const down = clampFloor(s.floor - 1)
-  s.floor = down; s.missAtFloor = 0
-  return { next: s, event: '내려감',
-    message: `${FLOOR_NAME[down]} 단계로 내려갑니다. 여기서 ${UP_STREAK}문제를 맞히면 다시 올라갑니다.` }
+  // 🔴 2026-10-29 명수쌤 «틀리면 앞단계가 아니라 개념강의부터 올라가게» — 어느 층에서 틀려도 0층(개념 강의)으로
+  const from = s.floor
+  s.floor = 0; s.missAtFloor = 0
+  return { next: s, event: '개념으로',
+    message: `${FLOOR_NAME[from]} 문제에서 막혔습니다. 개념 강의부터 다시 보고 올라갑시다.` }
 }
 
 /** 개념 빈칸(0층)을 통과했을 때 — 1층으로 올린다 */
 export function passConcept(state: MasteryState): StepResult {
-  const s: MasteryState = { ...state, floor: 1, streak: 0, missAtFloor: 0, missStreak: 0 }
+  // 연속 오답(missStreak)은 여기서 지우지 않는다 — 틀릴 때마다 0층으로 오니(10/29) 여기서 지우면 «3번 연속 막히면 선생님 호출»이 영영 안 걸린다. 맞히면 지워진다
+  const s: MasteryState = { ...state, floor: 1, streak: 0, missAtFloor: 0 }
   return { next: s, event: '올라감', message: '개념을 확인했습니다. 기본 문제부터 다시 시작합니다.' }
 }
 

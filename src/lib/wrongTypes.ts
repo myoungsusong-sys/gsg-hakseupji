@@ -51,9 +51,10 @@ function diffNum(d: unknown): number {
   return 3
 }
 
-/** 틀린 문항 난이도 → 시작층. 쉬운 걸 틀렸으면 기본(1)부터, 표준·심화를 틀렸으면 표준(2)부터 */
-export function startFloorFor(minDiff: number): Floor {
-  return minDiff <= 2 ? 1 : 2
+/** 틀린 문항 난이도 → 시작층. 🔴 2026-10-29 명수쌤 «개념강의부터 올라가는 게 맞다» — 난이도와 상관없이 0층(개념 강의)부터.
+ *  (옛 규칙: 쉬운 걸 틀렸으면 기본(1)부터, 표준·심화를 틀렸으면 표준(2)부터) */
+export function startFloorFor(_minDiff: number): Floor {
+  return 0
 }
 
 /** 사다리를 정복한 시각(ISO). 마지막 오답보다 **먼저**였으면 강등 대상 */
@@ -159,13 +160,13 @@ export function wrongTypesOf(opts: {
     else status = '대기'
     rows.push({
       typeId, wrong: a.items.size + a.loose, lastAt: dateKey(a.lastRaw), sources: [...a.sources], workbookIds: [...a.books],
-      minDiff: a.minDiff, startFloor: status === '재정복' ? 3 : startFloorFor(a.minDiff), state: st, status,
+      minDiff: a.minDiff, startFloor: startFloorFor(a.minDiff), state: st, status,
     })
   }
   return rows.sort((x, y) => ORDER[x.status] - ORDER[y.status] || y.wrong - x.wrong || y.lastAt.localeCompare(x.lastAt))
 }
 
-/** 큐에서 사다리를 시작할 때 쓸 상태 — 재정복이면 강등(한 층 아래)으로 새로 시작, 진행중이면 그대로 */
+/** 큐에서 사다리를 시작할 때 쓸 상태 — 재정복이면 0층(개념 강의)부터 새로 시작, 진행중이면 그대로 */
 export function stateToStart(row: WrongTypeRow, studentId: string): MasteryState {
   if (row.state && row.status !== '재정복') return row.state
   return newMastery(studentId, row.typeId, row.startFloor)

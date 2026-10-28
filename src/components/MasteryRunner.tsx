@@ -6,6 +6,7 @@ import InkCanvas, { PEN_SIZES, PEN_COLORS, type Stroke } from './student/InkCanv
 import * as pencil from '../lib/pencilSound'
 import AskProblemButton from './student/AskProblemButton'
 import { ConceptVideoButton, useConceptVideo } from './student/ConceptVideo'
+import TypeLecture, { useTypeLecture } from './student/TypeLecture'
 import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
@@ -27,7 +28,7 @@ import {
  *
  * 학생은 **한 번에 한 문제**만 본다. 채점하면 즉시 오르내림이 일어나고,
  * 왜 올라갔는지·왜 내려왔는지를 문장으로 알려 준다.
- * 기본에서 막히면 **개념 빈칸**으로 내려가 이해를 확인한 뒤 다시 올라온다.
+ * 0층(개념 강의·이론노트 → 개념 빈칸)에서 시작하고, 어느 층에서 틀려도 0층으로 돌아가 다시 올라온다(2026-10-29).
  *
  * 채점은 학생이 스스로 「맞음/틀림」을 누르는 방식이다 —
  * 주관식 자동채점은 표기 흔들림(2/1 vs 2, ①/1)에 약해서 오판이 사고로 이어진다.
@@ -53,7 +54,7 @@ export default function MasteryRunner({
   course?: string
 }) {
   // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
-  const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 2))
+  const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 0))
   const [current, setCurrent] = useState<Problem | null>(null)
   const [picked, setPicked] = useState<number | null>(null)   // 객관식 선택
   const [input, setInput] = useState('')                      // 주관식 학생 답
@@ -90,6 +91,9 @@ export default function MasteryRunner({
   const [blankShown, setBlankShown] = useState(false)
   // 🎬 개념 영상(2026-10-17 명수쌤 «빈칸 개념 확인 옆에 [개념 영상 보기]») — 지금 개념카드 영상이 먼저, 없으면 이 유형의 다른 카드 영상
   const conceptVideo = useConceptVideo([blanks[blankIdx]?.conceptId, ...blanks.map((x) => x.conceptId)])
+  // 🎓 유형별 개념 강의(영상 + GPT 이론노트) — 0층에서 빈칸보다 먼저 (2026-10-29 명수쌤 «0단계가 강의와 지피티 이론노트 그다음 빈칸»)
+  const lecture = useTypeLecture(typeId)
+  const [lecStage, setLecStage] = useState<'lec' | 'blank'>('lec')
 
   // 🪜 오늘 몫 — 하루 문제 수에 닿으면 그날은 여기서 멈춘다(= 한 세트). 2026-10-06 명수쌤 지시.
   //    과목을 가리지 않고 합쳐 센다. 지금 유형은 store 에 저장되기 전 값이 정확하니 직접 세어 더한다.
@@ -116,7 +120,7 @@ export default function MasteryRunner({
   const curKey = studentId && studentId !== 'me' ? `${studentId}:ladder-cur:${typeId}` : null
   useEffect(() => {
     setPicked(null); setRevealed(false); setInput(''); setSel(''); setPartVals([]); setJudged(null)
-    if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); return }
+    if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); setLecStage('lec'); return }
     // 오늘 몫을 다 썼으면 다음 문제를 뽑지 않는다 — 뽑아 두면 servedIds 에 들어가 내일 그 문제를 잃는다
     if (cappedRef.current) { setCurrent(null); return }
     const kept = curKey ? readSticky<{ floor: number; n: number; pid: string }>(curKey) : undefined
@@ -262,6 +266,23 @@ export default function MasteryRunner({
   }
 
   // ── 0층: 개념 빈칸 ────────────────────────────────────────────────────
+  if (state.floor === 0 && lecture === undefined) {
+    return (
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+        <div className="py-10 text-center text-sm text-ink2">개념 강의를 불러오는 중…</div>
+      </Frame>
+    )
+  }
+  if (state.floor === 0 && lecture && lecStage === 'lec') {
+    return (
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+        {msg && <Banner event={event} msg={msg} />}
+        <TypeLecture lecture={lecture} watched={!!state.lecDone}
+          onWatched={() => setState((s) => (s.lecDone ? s : { ...s, lecDone: true }))}
+          onNext={() => setLecStage('blank')} />
+      </Frame>
+    )
+  }
   if (state.floor === 0) {
     const b: ConceptBlank | undefined = blanks[blankIdx]
     return (
