@@ -217,6 +217,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   // 🏫 학생 정보에 교과서를 안 적었으면 학교 표에서 찾는다(2026-10-28 명수쌤 «해당 학교를 입력하면 출판사 맞게»)
   const stu = allStudents.find((s) => s.id === studentId)
   const engBook = stu?.engBook ?? schoolBookFor('영어', stu?.school, stu?.grade)
+  const engCourse = (CURRICULA.find((c) => c.id === course)?.subject) === '영어'
   // 📗 영어 교과서별 승강제(2026-09-29): 학생 교과서가 정해져 있으면 공통 과정(eng-m1 …) 대신 그 교과서 과정으로 연다
   useEffect(() => {
     if (!engBook || typeId || params.get('course') || unitParam) return
@@ -235,11 +236,13 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   //    **풀던 문제를 새 문제로 바꾸고 입력하던 답을 지웠다**(2026-10-01 「승강제 풀다 처음으로」).
   const poolRef = useRef<{ key: string; arr: Problem[] }>({ key: '', arr: [] })
   const pool = useMemo(() => {
-    const next = typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engBook) : []
+    // 🔴 10/28 지후 학생 «이 유형은 아직 풀 문제가 없습니다» — 영어 교과서 거르기를 과목 가리지 않고 해서 국어 문항(book «비상(박영민)»)이
+    //    영어 교과서(NE능률)와 달라 전부 걸러졌다. 영어 과정에서만 거른다.
+    const next = typeId ? filterByEngBook(problems.filter((p) => p.typeId === typeId), engCourse ? engBook : undefined) : []
     const key = `${typeId}|${next.map((p) => p.id).join(',')}`
     if (key !== poolRef.current.key) poolRef.current = { key, arr: next }
     return poolRef.current.arr
-  }, [problems, typeId, engBook])
+  }, [problems, typeId, engBook, engCourse])
   // 기준 문항 = 학생이 방금 틀린 그 문제. 없으면 그 유형의 **표준**(중간 난이도).
   // 가장 쉬운 것을 기준으로 잡으면 기본과 표준이 똑같이 「하」가 되어 사다리가 뭉개진다(2026-09-05 실측).
   const base: Problem | null = useMemo(() => {
@@ -515,7 +518,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       <h1 className="text-lg font-bold text-ink">🪜 유형 마스터{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
       <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
       {/* 📗 걸러지고 있다는 걸 알려 준다 — 안 그러면 "왜 문제가 몇 개 없지?" 가 된다 */}
-      {engBook && (
+      {engBook && engCourse && (
         <p className="mt-1 text-xs font-bold text-pine-dark">
           📗 영어 교과서 <span className="rounded bg-pine-soft px-1.5 py-0.5">{engBook}</span> 문항만 나갑니다
           <span className="ml-1 font-normal text-ink2">(학생 정보에서 바꿀 수 있어요)</span>
