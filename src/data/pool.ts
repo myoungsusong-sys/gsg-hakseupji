@@ -151,6 +151,18 @@ export function loadPool(course: string): Promise<Problem[]> {
             for (const q of gen) if (q && q.id && !seen.has(q.id)) arr.push({ ...q, custom: true, source: (q.source || '자체 생성').replace(/족보닷컴/g, '내신 기출') })
           }
         } catch { /* 생성 파일이 없거나 깨져도 기본 풀은 그대로 */ }
+        // 🪜 승강제 쌍둥이(유사문항) 별도 파일 — 족보 과정(zb-)은 gen-<과정>.json 을 맥북에어 zb_emit.py 가 통째로 다시 써서
+        //    거기에 섞으면 지워진다. 그래서 gen-<과정>-twin.json 을 따로 두고 함께 읽는다(2026-10-28 명수쌤 «문제 부족하지 않게 채워줘» · «넣어»).
+        if (course.startsWith('zb-')) {
+          try {
+            const t = await fetch(`${import.meta.env.BASE_URL}gen-${course}-twin.json`)
+            if (t.ok) {
+              const tw = (await t.json()) as Problem[]
+              const seen = new Set(arr.map(p => p.id))
+              for (const q of tw) if (q && q.id && !seen.has(q.id)) arr.push({ ...q, custom: true, source: q.source || '자체 생성' })
+            }
+          } catch { /* 쌍둥이 파일이 없어도 그대로 */ }
+        }
         cache.set(course, arr)
         return arr
       })
