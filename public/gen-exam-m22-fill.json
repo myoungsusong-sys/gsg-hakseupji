@@ -1249,5 +1249,381 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-46aa394514",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "평행사변형 $ABCD$에서 $AB=11\\text{ cm}$, $BC=17\\text{ cm}$이다. 네 내각의 이등분선이 서로 만나서 이루는 사각형의 대각선의 길이는?",
+"choices": [
+"$4\\text{ cm}$",
+"$5\\text{ cm}$",
+"$6\\text{ cm}$",
+"$7\\text{ cm}$",
+"$8\\text{ cm}$"
+],
+"answer": "③",
+"solution": "평행사변형의 네 내각의 이등분선이 이루는 사각형은 직사각형이고, 그 대각선의 길이는 평행사변형의 서로 이웃한 두 변의 길이의 차와 같다. 따라서 대각선의 길이는 $17-11=6\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-474350d03e",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "주관식",
+"diff": 2,
+"body": "평행사변형 $ABCD$에서 $AB=14\\text{ cm}$이고 $BC>AB$이다. 네 내각의 이등분선이 이루는 사각형의 대각선의 길이가 $9\\text{ cm}$일 때, $BC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$23\\text{ cm}$",
+"solution": "네 내각의 이등분선이 이루는 사각형의 대각선은 이웃한 두 변의 길이의 차와 같다. $BC>AB$이므로 $BC-14=9$에서 $BC=23\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-11045f6407",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "평행사변형 $ABCD$에서 $AB=(3x+1)\\text{ cm}$, $BC=(x+13)\\text{ cm}$이고 $BC>AB$이다. 네 내각의 이등분선이 이루는 사각형의 대각선의 길이가 $4\\text{ cm}$일 때, $x$의 값은?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "③",
+"solution": "이등분선이 이루는 사각형의 대각선은 $BC-AB$와 같다. 따라서 $(x+13)-(3x+1)=4$이므로 $12-2x=4$, 즉 $x=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-2f56b9c4d0",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "평행사변형 $ABCD$의 둘레는 $50\\text{ cm}$이고 $AB>BC$이다. 네 내각의 이등분선이 이루는 사각형의 대각선의 길이가 $7\\text{ cm}$일 때, $AB$의 길이는?",
+"choices": [
+"$14\\text{ cm}$",
+"$15\\text{ cm}$",
+"$16\\text{ cm}$",
+"$17\\text{ cm}$",
+"$18\\text{ cm}$"
+],
+"answer": "③",
+"solution": "둘레가 $50\\text{ cm}$이므로 $AB+BC=25$이고, 이등분선으로 생긴 사각형의 대각선에 의해 $AB-BC=7$이다. 두 식을 더하면 $2AB=32$이므로 $AB=16\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-9e1139ca31",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "평행사변형 $ABCD$에서 $AB:BC=4:7$이다. 네 내각의 이등분선이 이루는 사각형의 대각선의 길이가 $12\\text{ cm}$일 때, 평행사변형 $ABCD$의 둘레는?",
+"choices": [
+"$72\\text{ cm}$",
+"$80\\text{ cm}$",
+"$88\\text{ cm}$",
+"$96\\text{ cm}$",
+"$104\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$AB=4k$, $BC=7k$로 놓으면 이등분선으로 생긴 사각형의 대각선은 $7k-4k=3k$이다. $3k=12$이므로 $k=4$이고, 둘레는 $2(16+28)=88\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-4705ea6e91",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "평행사변형 $ABCD$에서 $\\angle A=60^\\circ$, $AB=9\\text{ cm}$, $BC=19\\text{ cm}$이다. 네 내각의 이등분선이 이루는 사각형의 넓이는?",
+"choices": [
+"$20\\sqrt{3}\\text{ cm}^2$",
+"$25\\sqrt{3}\\text{ cm}^2$",
+"$30\\sqrt{3}\\text{ cm}^2$",
+"$50\\sqrt{3}\\text{ cm}^2$",
+"$100\\sqrt{3}\\text{ cm}^2$"
+],
+"answer": "②",
+"solution": "이등분선이 이루는 직사각형의 대각선은 $19-9=10\\text{ cm}$이다. 두 변의 길이는 각각 $10\\cos30^\\circ=5\\sqrt3\\text{ cm}$, $10\\sin30^\\circ=5\\text{ cm}$이므로 넓이는 $25\\sqrt3\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-440e4ff810",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "평행사변형 $ABCD$에서 $\\angle A=120^\\circ$이고, 서로 이웃한 두 변의 길이의 차는 $8\\text{ cm}$이다. 네 내각의 이등분선이 이루는 사각형의 둘레는?",
+"choices": [
+"$(4+4\\sqrt3)\\text{ cm}$",
+"$(8+4\\sqrt3)\\text{ cm}$",
+"$(8+8\\sqrt3)\\text{ cm}$",
+"$(16+8\\sqrt3)\\text{ cm}$",
+"$(16+16\\sqrt3)\\text{ cm}$"
+],
+"answer": "③",
+"solution": "이등분선이 이루는 직사각형의 대각선은 $8\\text{ cm}$이다. 그 두 변은 $8\\cos60^\\circ=4\\text{ cm}$와 $8\\sin60^\\circ=4\\sqrt3\\text{ cm}$이므로 둘레는 $2(4+4\\sqrt3)=8+8\\sqrt3\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d6c6756a7d",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "주관식",
+"diff": 4,
+"body": "평행사변형 $ABCD$에서 $\\angle A=90^\\circ$, $AB>BC$이고 둘레는 $52\\text{ cm}$이다. 네 내각의 이등분선이 이루는 사각형의 넓이가 $32\\text{ cm}^2$일 때, $AB$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$17\\text{ cm}$",
+"solution": "두 변의 길이의 차를 $d$라 하면 이등분선이 이루는 직사각형의 두 변은 모두 $d/\\sqrt2$이므로 넓이는 $d^2/2$이다. $d^2/2=32$에서 $d=8$이고, $AB+BC=26$, $AB-BC=8$이므로 $AB=17\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-23e07cdb22",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "평행사변형 $ABCD$의 둘레는 $56\\text{ cm}$이다. 네 내각의 이등분선이 이루는 사각형의 대각선의 길이는 $10\\text{ cm}$이고 넓이는 $18\\text{ cm}^2$이다. 평행사변형 $ABCD$의 넓이는?",
+"choices": [
+"$\\dfrac{171}{5}\\text{ cm}^2$",
+"$\\dfrac{1539}{50}\\text{ cm}^2$",
+"$\\dfrac{342}{5}\\text{ cm}^2$",
+"$\\dfrac{1539}{25}\\text{ cm}^2$",
+"$171\\text{ cm}^2$"
+],
+"answer": "④",
+"solution": "$AB+BC=28$, $|AB-BC|=10$이므로 $AB\\cdot BC=\\{28^2-10^2\\}/4=171$이다. $\\angle A=\\theta$라 하면 이등분선이 이루는 직사각형의 넓이는 $10^2\\sin\\theta/2$이므로 $18=50\\sin\\theta$에서 $\\sin\\theta=9/25$이다. 따라서 평행사변형의 넓이는 $171\\times9/25=1539/25\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d34c201fb2",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "주관식",
+"diff": 5,
+"body": "평행사변형 $ABCD$에서 $AB>BC$이다. 네 내각의 이등분선이 이루는 사각형의 넓이는 평행사변형 $ABCD$의 넓이의 $\\dfrac{1}{12}$이다. $AB:BC$를 가장 간단한 자연수의 비로 나타내시오.",
+"selfGrade": true,
+"answer": "$3:2$",
+"solution": "$AB=a$, $BC=b$, $\\angle A=\\theta$라 하면 두 넓이는 각각 $ab\\sin\\theta$, $\\dfrac{(a-b)^2\\sin\\theta}{2}$이다. 따라서 $\\dfrac{(a-b)^2}{2ab}=\\dfrac1{12}$이므로 $6(a-b)^2=ab$이다. $r=a/b$로 놓으면 $6r^2-13r+6=0$이고, $a>b$이므로 $r=3/2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-bb84c425b8",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "평행사변형 $ABCD$에서 $\\angle A=60^\\circ$, $AB>BC$이고 둘레는 $48\\text{ cm}$이다. 네 내각의 이등분선이 이루는 사각형의 넓이가 $16\\sqrt3\\text{ cm}^2$일 때, 평행사변형 $ABCD$의 두 대각선 중 긴 것의 길이는?",
+"choices": [
+"$4\\sqrt7\\text{ cm}$",
+"$8\\sqrt5\\text{ cm}$",
+"$8\\sqrt7\\text{ cm}$",
+"$12\\sqrt3\\text{ cm}$",
+"$16\\sqrt2\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$d=AB-BC$라 하면 이등분선이 이루는 직사각형의 넓이는 $d^2\\sin60^\\circ/2=d^2\\sqrt3/4$이다. 따라서 $d=8$이고, $AB+BC=24$이므로 $AB=16$, $BC=8$이다. 긴 대각선의 제곱은 $16^2+8^2+2\\cdot16\\cdot8\\cos60^\\circ=448$이므로 그 길이는 $8\\sqrt7\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-e8484c7111",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고 $\\angle B=73^\\circ$이다. $\\angle A$의 크기를 구하시오.",
+"choices": [
+"$32^\\circ$",
+"$34^\\circ$",
+"$36^\\circ$",
+"$38^\\circ$",
+"$40^\\circ$"
+],
+"answer": "②",
+"solution": "$AB=AC$이므로 두 밑각 $\\angle B$와 $\\angle C$의 크기는 같다. 따라서 $\\angle A=180^\\circ-73^\\circ-73^\\circ=34^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-1f4c4a3f0f",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "주관식",
+"diff": 2,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이다. 꼭짓점 $C$에서의 외각의 크기가 $117^\\circ$일 때, $\\angle A$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$54^\\circ$",
+"solution": "$\\angle C=180^\\circ-117^\\circ=63^\\circ$이다. $AB=AC$이므로 $\\angle B=\\angle C=63^\\circ$이고, 따라서 $\\angle A=54^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d49c3d9f15",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "이등변삼각형 $PQR$에서 $PQ=PR$이고 $\\angle P=52^\\circ$이다. $\\angle Q$의 크기를 구하시오.",
+"choices": [
+"$52^\\circ$",
+"$60^\\circ$",
+"$62^\\circ$",
+"$64^\\circ$",
+"$68^\\circ$"
+],
+"answer": "④",
+"solution": "$PQ=PR$이므로 $\\angle Q=\\angle R$이다. 따라서 $\\angle Q=(180^\\circ-52^\\circ)\\div2=64^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-6eac5bcd91",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "주관식",
+"diff": 3,
+"body": "이등변삼각형 $ABC$에서 $AB=AC=17$이고 $BC=16$이다. 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $D$라 할 때, 삼각형 $ABD$의 둘레를 구하시오.",
+"selfGrade": true,
+"answer": "$40$",
+"solution": "이등변삼각형의 꼭짓점에서 밑변에 내린 수선은 밑변을 이등분하므로 $BD=8$이다. 직각삼각형 $ABD$에서 $AD=\\sqrt{17^2-8^2}=15$이므로 둘레는 $17+8+15=40$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-ef0b969f7c",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고 $\\angle A:\\angle B=2:5$이다. $\\angle C$의 크기를 구하시오.",
+"choices": [
+"$60^\\circ$",
+"$65^\\circ$",
+"$70^\\circ$",
+"$75^\\circ$",
+"$80^\\circ$"
+],
+"answer": "④",
+"solution": "$\\angle B=\\angle C$이므로 세 각의 비는 $\\angle A:\\angle B:\\angle C=2:5:5$이다. 한 비의 크기는 $180^\\circ\\div12=15^\\circ$이므로 $\\angle C=75^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d1374c112a",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고 $\\angle A=44^\\circ$이다. 변 $AC$ 위의 점 $D$에 대하여 $BD=BC$일 때, $\\angle ABD$의 크기를 구하시오.",
+"choices": [
+"$20^\\circ$",
+"$22^\\circ$",
+"$24^\\circ$",
+"$26^\\circ$",
+"$28^\\circ$"
+],
+"answer": "③",
+"solution": "$\\angle ABC=\\angle BCA=(180^\\circ-44^\\circ)\\div2=68^\\circ$이다. $BD=BC$이므로 삼각형 $BCD$에서 $\\angle BCD=\\angle BDC=68^\\circ$이고, $\\angle DBC=44^\\circ$이므로 $\\angle ABD=68^\\circ-44^\\circ=24^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-1f25ec6168",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이다. 변 $AC$ 위의 점 $D$에 대하여 $BD=BC$이고 $\\angle ABD=18^\\circ$일 때, $\\angle A$의 크기를 구하시오.",
+"choices": [
+"$42^\\circ$",
+"$44^\\circ$",
+"$46^\\circ$",
+"$48^\\circ$",
+"$50^\\circ$"
+],
+"answer": "④",
+"solution": "$\\angle A=x$, $\\angle ABC=\\angle BCA=y$라 하면 $x+2y=180^\\circ$이다. $BD=BC$이므로 삼각형 $BCD$에서 $\\angle BCD=\\angle BDC=y$이고, 따라서 $\\angle DBC=180^\\circ-2y=x$이다. $y=x+18^\\circ$이므로 $x+2(x+18^\\circ)=180^\\circ$에서 $x=48^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-2720f7e63b",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "주관식",
+"diff": 4,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고, 변 $BC$ 위에 점 $D$가 있다. $AD=BD$이고 $\\angle CAD=30^\\circ$일 때, $\\angle BAC$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$80^\\circ$",
+"solution": "$\\angle ABC=\\angle ACB=x$라 하자. $AD=BD$이므로 삼각형 $ABD$에서 $\\angle DAB=\\angle ABD=x$이다. 따라서 $\\angle BAC=x+30^\\circ$이고, $(x+30^\\circ)+2x=180^\\circ$이므로 $\\angle BAC=80^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-8e0d6b2d2c",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고 $\\angle BAC=40^\\circ$이다. 변 $BC$를 $C$의 바깥쪽으로 연장한 직선 위에 점 $D$를 잡았더니 $CD=CA$였다. $\\angle BAD$의 크기를 구하시오.",
+"choices": [
+"$65^\\circ$",
+"$70^\\circ$",
+"$75^\\circ$",
+"$80^\\circ$",
+"$85^\\circ$"
+],
+"answer": "③",
+"solution": "$\\angle ACB=(180^\\circ-40^\\circ)\\div2=70^\\circ$이므로 $\\angle ACD=110^\\circ$이다. $CA=CD$이므로 $\\angle CAD=(180^\\circ-110^\\circ)\\div2=35^\\circ$이다. 따라서 $\\angle BAD=\\angle BAC+\\angle CAD=75^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-f45c7ced8d",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "주관식",
+"diff": 5,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고, 변 $AC$ 위에 점 $D$가 있다. $BC=BD$이고 $\\angle ABD=2\\angle BAD$일 때, $\\angle BAC$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{180}{7}^\\circ$",
+"solution": "$\\angle BAC=x$라 하면 $\\angle BAD=x$이고 두 밑각의 크기는 각각 $\\dfrac{180^\\circ-x}{2}$이다. $BC=BD$이므로 삼각형 $BCD$에서 $\\angle BCD=\\angle BDC$이고, 이에 따라 $\\angle DBC=x$이다. 따라서 $\\angle ABD=\\dfrac{180^\\circ-x}{2}-x=2x$이므로 $180^\\circ=7x$에서 $x=\\dfrac{180}{7}^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-bb2d13fbfc",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "이등변삼각형 $ABC$에서 $AB=AC$이고, 변 $BC$ 위에 점 $D$가 있다. $AD=BD$이고 $AC=CD$일 때, $\\angle BAC$의 크기를 구하시오.",
+"choices": [
+"$96^\\circ$",
+"$102^\\circ$",
+"$108^\\circ$",
+"$112^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③",
+"solution": "$\\angle ABC=\\angle ACB=x$라 하면 $AD=BD$이므로 $\\angle DAB=\\angle ABD=x$이고 $\\angle ADB=180^\\circ-2x$이다. $B,D,C$가 한 직선 위에 있으므로 $\\angle ADC=2x$이다. 한편 $AC=CD$이므로 $\\angle CAD=\\angle ADC=2x$이며, $\\angle BAC=x+2x=3x$이다. $3x+2x=180^\\circ$이므로 $x=36^\\circ$이고 $\\angle BAC=108^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
 }
 ]

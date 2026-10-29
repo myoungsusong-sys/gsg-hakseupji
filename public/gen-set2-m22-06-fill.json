@@ -1,0 +1,378 @@
+[
+{
+"id": "fill-cdd879100d",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 하자. $BC=22\\,\\mathrm{cm}$일 때, $DE$의 길이는?",
+"choices": [
+"$9\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$11\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$44\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "삼각형의 두 변의 중점을 연결한 선분의 길이는 나머지 한 변의 길이의 절반이다. 따라서 $DE=\\dfrac{1}{2}BC=11\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-40361dfaee",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 $PQR$에서 변 $PQ$, $PR$의 중점을 각각 $M$, $N$이라 하자. $MN=8.5\\,\\mathrm{cm}$일 때, $QR$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$17\\,\\mathrm{cm}$",
+"solution": "중점연결정리에 의하여 $MN=\\dfrac{1}{2}QR$이다. 따라서 $QR=2MN=17\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-d3c371eb36",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 2,
+"body": "세 변의 길이가 각각 $10\\,\\mathrm{cm}$, $14\\,\\mathrm{cm}$, $18\\,\\mathrm{cm}$인 삼각형 $ABC$가 있다. 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 할 때, 삼각형 $ADE$의 둘레의 길이는?",
+"choices": [
+"$18\\,\\mathrm{cm}$",
+"$19\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$",
+"$21\\,\\mathrm{cm}$",
+"$42\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "$AD$, $AE$, $DE$의 길이는 각각 $AB$, $AC$, $BC$의 길이의 절반이다. 따라서 삼각형 $ADE$의 둘레는 삼각형 $ABC$의 둘레의 절반이다. 구하는 둘레는 $\\dfrac{10+14+18}{2}=21\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-a4d6c9f82a",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 하자. $DE=(3x-2)\\,\\mathrm{cm}$, $BC=(8x-20)\\,\\mathrm{cm}$일 때, $BC$의 길이는?",
+"choices": [
+"$36\\,\\mathrm{cm}$",
+"$40\\,\\mathrm{cm}$",
+"$44\\,\\mathrm{cm}$",
+"$48\\,\\mathrm{cm}$",
+"$52\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "중점연결정리에 의하여 $BC=2DE$이므로 $8x-20=2(3x-2)$이다. 이를 풀면 $x=8$이다. 따라서 $BC=8\\times8-20=44\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-475f9a286e",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 세 변 $AB$, $BC$, $CA$의 중점을 각각 $D$, $E$, $F$라 하자. 삼각형 $DEF$의 둘레의 길이는 $27\\,\\mathrm{cm}$이고, $AB=18\\,\\mathrm{cm}$, $AC=14\\,\\mathrm{cm}$이다. $BC$의 길이는?",
+"choices": [
+"$18\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$",
+"$22\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$26\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "중점으로 이루어진 삼각형 $DEF$의 둘레는 삼각형 $ABC$의 둘레의 절반이다. 따라서 삼각형 $ABC$의 둘레는 $54\\,\\mathrm{cm}$이다. 그러므로 $BC=54-18-14=22\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-dc16bdb4a8",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $D$는 변 $AB$의 중점이다. 점 $D$를 지나 변 $BC$와 평행한 직선이 변 $AC$와 만나는 점을 $E$라 하자. $AE=(3x+1)\\,\\mathrm{cm}$, $EC=(5x-7)\\,\\mathrm{cm}$일 때, $AC$의 길이는?",
+"choices": [
+"$20\\,\\mathrm{cm}$",
+"$22\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$26\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "$D$가 $AB$의 중점이고 $DE\\parallel BC$이므로 $E$는 $AC$의 중점이다. 따라서 $3x+1=5x-7$에서 $x=4$이다. 그러므로 $AC=AE+EC=13+13=26\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-19edd61221",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 한다. 또 선분 $DB$, $EC$의 중점을 각각 $P$, $Q$라 하자. $PQ=21\\,\\mathrm{cm}$일 때, $DE$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "$AP=\\dfrac{3}{4}AB$, $AQ=\\dfrac{3}{4}AC$이므로 $PQ=\\dfrac{3}{4}BC$이다. 따라서 $BC=21\\times\\dfrac{4}{3}=28\\,\\mathrm{cm}$이다. $D$, $E$가 두 변의 중점이므로 $DE=\\dfrac{1}{2}BC=14\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-0d95590721",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "주관식",
+"diff": 4,
+"body": "볼록사각형 $ABCD$의 네 변 $AB$, $BC$, $CD$, $DA$의 중점을 각각 $E$, $F$, $G$, $H$라 하자. 두 대각선의 길이의 비가 $AC:BD=7:5$이고, 사각형 $EFGH$의 둘레의 길이가 $48\\,\\mathrm{cm}$일 때, $AC-BD$를 구하시오.",
+"selfGrade": true,
+"answer": "$8\\,\\mathrm{cm}$",
+"solution": "중점연결정리에 의하여 $EF=GH=\\dfrac{1}{2}AC$, $FG=HE=\\dfrac{1}{2}BD$이다. 따라서 사각형 $EFGH$의 둘레는 $AC+BD=48\\,\\mathrm{cm}$이다. $AC:BD=7:5$이므로 $AC=28\\,\\mathrm{cm}$, $BD=20\\,\\mathrm{cm}$이고, 그 차는 $8\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-ec121f7d85",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "주관식",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AB\\parallel CD$, $AB<CD$이고, 점 $M$, $N$은 각각 두 변 $AD$, $BC$의 중점이다. 대각선 $BD$, $AC$가 선분 $MN$과 만나는 점을 각각 $P$, $Q$라 하자. $MN=19\\,\\mathrm{cm}$, $PQ=4\\,\\mathrm{cm}$일 때, $AB\\times CD$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$345\\,\\mathrm{cm}^2$",
+"solution": "중점연결정리를 두 대각선에 적용하면 $MN=\\dfrac{AB+CD}{2}$이고, $PQ=\\dfrac{CD-AB}{2}$이다. 따라서 $AB+CD=38$, $CD-AB=8$이다. 두 식을 풀면 $AB=15\\,\\mathrm{cm}$, $CD=23\\,\\mathrm{cm}$이다. 그러므로 $AB\\times CD=15\\times23=345\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-7d01f00a35",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 하고, 선분 $DB$, $EC$의 중점을 각각 $F$, $G$라 하자. $DE+FG=35\\,\\mathrm{cm}$이고, 사각형 $DFGE$의 넓이가 $60\\,\\mathrm{cm}^2$일 때, 꼭짓점 $A$에서 변 $BC$에 내린 높이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{96}{7}\\,\\mathrm{cm}$",
+"solution": "$DE=\\dfrac{1}{2}BC$, $FG=\\dfrac{3}{4}BC$이므로 $\\dfrac{5}{4}BC=35$에서 $BC=28\\,\\mathrm{cm}$이다. 삼각형 $ADE$와 $AFG$의 넓이는 각각 삼각형 $ABC$의 넓이의 $\\dfrac{1}{4}$, $\\dfrac{9}{16}$이다. 따라서 사각형 $DFGE$의 넓이는 전체의 $\\dfrac{5}{16}$이므로 삼각형 $ABC$의 넓이는 $192\\,\\mathrm{cm}^2$이다. 높이를 $h$라 하면 $\\dfrac{1}{2}\\times28\\times h=192$이므로 $h=\\dfrac{96}{7}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-deeba08c7c",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "주관식",
+"diff": 5,
+"body": "볼록사각형 $ABCD$의 네 변 $AB$, $BC$, $CD$, $DA$의 중점을 각각 $E$, $F$, $G$, $H$라 하자. 사각형 $EFGH$가 둘레의 길이가 $34\\,\\mathrm{cm}$이고 넓이가 $60\\,\\mathrm{cm}^2$인 직사각형일 때, 두 대각선 $AC$, $BD$의 길이의 차를 구하시오.",
+"selfGrade": true,
+"answer": "$14\\,\\mathrm{cm}$",
+"solution": "직사각형 $EFGH$의 두 변의 길이를 $x$, $y$라 하면 $x+y=17$, $xy=60$이다. 따라서 $(x,y)=(5,12)$ 또는 $(12,5)$이다. 중점연결정리에 의해 이 두 변의 길이는 각각 $AC$, $BD$의 절반이므로 두 대각선의 길이는 $10\\,\\mathrm{cm}$와 $24\\,\\mathrm{cm}$이다. 따라서 두 대각선의 길이의 차는 $14\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-fd53b2d31f",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "서로 평행한 세 직선 $l$, $m$, $n$이 이 순서로 놓여 있다. 한 직선이 $l$, $m$, $n$과 만나는 점을 각각 $A$, $B$, $C$라 하고, 다른 한 직선이 만나는 점을 각각 $D$, $E$, $F$라 하자. $AB=6\\,\\mathrm{cm}$, $BC=9\\,\\mathrm{cm}$, $DE=8\\,\\mathrm{cm}$일 때, $EF$의 길이는?",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "평행선 사이의 선분의 길이의 비에 의하여 $AB:BC=DE:EF$이다. 따라서 $6:9=8:EF$이므로 $EF=12\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-23a3ecd3a8",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고, $DE\\parallel BC$이다. $AD:DB=3:2$이고 $AC=25\\,\\mathrm{cm}$일 때, $AE$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "$DE\\parallel BC$이므로 $AE:AC=AD:AB=3:5$이다. 따라서 $AE=25\\times\\frac35=15\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c8f803b767",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고, $AD=8\\,\\mathrm{cm}$, $BC=20\\,\\mathrm{cm}$이다. 변 $AB$, $DC$ 위의 점 $E$, $F$에 대하여 $EF\\parallel AD$이고 $AE:EB=1:3$일 때, $EF$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$11\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$13\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$"
+],
+"answer": "②",
+"solution": "평행선 사이의 선분의 길이의 비에 따라 $EF$는 $AD$에서 두 밑변의 길이 차의 $\\frac14$만큼 증가한 길이이다. 따라서 $EF=8+(20-8)\\times\\frac14=11\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-3f1de36b25",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "서로 평행한 네 직선 $l_1$, $l_2$, $l_3$, $l_4$가 이 순서로 놓여 있다. 한 직선이 이들과 만나는 점을 차례로 $A$, $B$, $C$, $D$라 하고, 다른 한 직선이 만나는 점을 차례로 $E$, $F$, $G$, $H$라 하자. $AB:BC=2:3$, $BC:CD=5:4$, $EH=74\\,\\mathrm{cm}$일 때, $FH$의 길이는?",
+"choices": [
+"$42\\,\\mathrm{cm}$",
+"$48\\,\\mathrm{cm}$",
+"$50\\,\\mathrm{cm}$",
+"$54\\,\\mathrm{cm}$",
+"$60\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "두 비에서 $BC$에 해당하는 수를 같게 하면 $AB:BC:CD=10:15:12$이다. 평행선 사이의 선분의 길이의 비에 의하여 $EF:FG:GH=10:15:12$이다. 따라서 $FH=74\\times\\frac{15+12}{10+15+12}=54\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-b0f8b81c87",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고, $DE\\parallel BC$이다. $AD=(x+1)\\,\\mathrm{cm}$, $DB=6\\,\\mathrm{cm}$, $AE=(x+4)\\,\\mathrm{cm}$, $EC=9\\,\\mathrm{cm}$이고 $BC=18\\,\\mathrm{cm}$일 때, $DE$의 길이는?",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "$DE\\parallel BC$이므로 $(x+1):6=(x+4):9$이다. 이를 풀면 $9x+9=6x+24$에서 $x=5$이다. 따라서 $AD:AB=6:12=1:2$이므로 $DE=18\\times\\frac12=9\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c5853ff5a7",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고, $AD=15\\,\\mathrm{cm}$, $BC=30\\,\\mathrm{cm}$이다. 변 $AB$, $DC$ 위의 점 $E$, $F$에 대하여 $EF\\parallel AD$, $AE:EB=3:2$이다. 선분 $EF$와 대각선 $AC$, $BD$의 교점을 각각 $G$, $H$라 할 때, $GH$의 길이는?",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "삼각형 $ABC$에서 $EG\\parallel BC$이므로 $EG=30\\times\\frac35=18\\,\\mathrm{cm}$이다. 삼각형 $BAD$에서 $EH\\parallel AD$이므로 $EH=15\\times\\frac25=6\\,\\mathrm{cm}$이다. 두 점 $G$, $H$는 $E$에서 $F$로 향하는 반직선 위에 있으므로 $GH=18-6=12\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-33b503569b",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "주관식",
+"diff": 4,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이다. 변 $AB$ 위의 점 $E$, $M$과 변 $DC$ 위의 점 $F$, $N$에 대하여 $AD\\parallel EF\\parallel MN\\parallel BC$이다. $AE:EB=1:3$, $AM:MB=2:1$이고, $EF=14\\,\\mathrm{cm}$, $MN=24\\,\\mathrm{cm}$일 때, $BC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$32\\,\\mathrm{cm}$",
+"solution": "$AD=a\\,\\mathrm{cm}$, $BC=b\\,\\mathrm{cm}$라 하면 평행선 사이의 선분의 길이의 비에 따라 $14=\\frac34a+\\frac14b$, $24=\\frac13a+\\frac23b$이다. 두 식을 정리하면 $3a+b=56$, $a+2b=72$이다. 이를 풀면 $a=8$, $b=32$이므로 $BC=32\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c85e21212c",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고, $AD=12\\,\\mathrm{cm}$, $BC=20\\,\\mathrm{cm}$이다. 두 대각선 $AC$, $BD$의 교점을 $O$라 하자. 점 $O$를 지나고 $AD$와 평행한 직선이 변 $AB$, $DC$와 만나는 점을 각각 $E$, $F$라 할 때, $EF$의 길이는?",
+"choices": [
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "삼각형 $AOD$와 $COB$는 닮음이므로 $AO:OC=AD:BC=3:5$이다. 삼각형 $ABC$에서 $EO\\parallel BC$이므로 $AE:AB=AO:AC=3:8$이다. 따라서 $EF=12+(20-12)\\times\\frac38=15\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c3c2845970",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 변 $AB$ 위에 점 $D$, $F$가 $A$, $D$, $F$, $B$의 순서로 놓여 있다. 점 $D$, $F$를 지나고 $BC$와 평행한 직선이 변 $AC$와 만나는 점을 각각 $E$, $G$라 하자. $AD:DF:FB=2:1:3$, $DE=8\\,\\mathrm{cm}$, $FG=12\\,\\mathrm{cm}$이고, 사각형 $DEGF$의 넓이가 $30\\,\\mathrm{cm}^2$일 때, 사각형 $FBCG$의 넓이는?",
+"choices": [
+"$108\\,\\mathrm{cm}^2$",
+"$126\\,\\mathrm{cm}^2$",
+"$144\\,\\mathrm{cm}^2$",
+"$162\\,\\mathrm{cm}^2$",
+"$180\\,\\mathrm{cm}^2$"
+],
+"answer": "④",
+"solution": "$AD:AB=2:6$이므로 $BC=8\\times3=24\\,\\mathrm{cm}$이다. $DE$와 $FG$ 사이의 높이를 $h\\,\\mathrm{cm}$라 하면 $30=\\frac{8+12}{2}h$에서 $h=3$이다. 평행선 사이의 높이의 비는 $DF:FB=1:3$이므로 $FG$와 $BC$ 사이의 높이는 $9\\,\\mathrm{cm}$이다. 따라서 사각형 $FBCG$의 넓이는 $\\frac{12+24}{2}\\times9=162\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-f7dd296d02",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이다. 변 $AB$ 위의 점 $E$, $M$과 변 $DC$ 위의 점 $F$, $N$에 대하여 $AD\\parallel EF\\parallel MN\\parallel BC$이고, $AE:EB=1:2$, $AM:MB=3:1$이다.\n\n선분 $EF$와 대각선 $AC$, $BD$의 교점을 각각 $P$, $Q$라 하고, 선분 $MN$과 대각선 $AC$, $BD$의 교점을 각각 $R$, $S$라 하자. 점들은 각각 $E$, $P$, $Q$, $F$의 순서와 $M$, $S$, $R$, $N$의 순서로 놓여 있다. $PQ=4\\,\\mathrm{cm}$, $SR=21\\,\\mathrm{cm}$이고, 사각형 $EMNF$의 넓이가 $305\\,\\mathrm{cm}^2$일 때, 사다리꼴 $ABCD$의 넓이는?",
+"choices": [
+"$600\\,\\mathrm{cm}^2$",
+"$660\\,\\mathrm{cm}^2$",
+"$720\\,\\mathrm{cm}^2$",
+"$780\\,\\mathrm{cm}^2$",
+"$840\\,\\mathrm{cm}^2$"
+],
+"answer": "③",
+"solution": "$AD=a\\,\\mathrm{cm}$, $BC=b\\,\\mathrm{cm}$라 하면 삼각형의 닮음과 교점의 순서에 의해 $PQ=\\frac{2a-b}{3}=4$, $SR=\\frac{3b-a}{4}=21$이다. 이를 풀면 $a=24$, $b=36$이므로 $EF=28\\,\\mathrm{cm}$, $MN=33\\,\\mathrm{cm}$이다. 사다리꼴 $ABCD$의 높이를 $h\\,\\mathrm{cm}$라 하면 $EF$와 $MN$ 사이의 높이는 $(\\frac34-\\frac13)h=\\frac5{12}h$이다. 따라서 $305=\\frac{28+33}{2}\\times\\frac5{12}h$에서 $h=24$이다. 구하는 넓이는 $\\frac{24+36}{2}\\times24=720\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-1e8656db3a",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "주관식",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고, 두 대각선 $AC$, $BD$의 교점은 $O$이다. 삼각형 $AOD$와 삼각형 $BOC$의 넓이의 비는 $4:9$이다.\n\n변 $AB$, $DC$의 중점을 각각 $M$, $N$이라 하고, 선분 $MN$과 대각선 $AC$, $BD$의 교점을 각각 $P$, $Q$라 하자. 점들은 $M$, $Q$, $P$, $N$의 순서로 놓여 있으며, $MN=3PQ+8\\,\\mathrm{cm}$이다. 점 $O$를 지나고 $AD$와 평행한 직선이 변 $AB$, $DC$와 만나는 점을 각각 $E$, $F$라 할 때, $EF$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{96}{5}\\,\\mathrm{cm}$",
+"solution": "삼각형 $AOD$와 $COB$는 닮음이고 넓이의 비가 $4:9$이므로 $AD:BC=AO:OC=2:3$이다. $AD=2k\\,\\mathrm{cm}$, $BC=3k\\,\\mathrm{cm}$라 하면 중점을 잇는 선분의 성질에 의해 $MN=\\frac52k\\,\\mathrm{cm}$이고, $MP=\\frac32k\\,\\mathrm{cm}$, $MQ=k\\,\\mathrm{cm}$이므로 $PQ=\\frac12k\\,\\mathrm{cm}$이다. 따라서 $\\frac52k=3\\times\\frac12k+8$에서 $k=8$이므로 $AD=16\\,\\mathrm{cm}$, $BC=24\\,\\mathrm{cm}$이다. 삼각형 $ABC$에서 $EO\\parallel BC$이므로 $AE:AB=AO:AC=2:5$이다. 따라서 $EF=16+(24-16)\\times\\frac25=\\frac{96}{5}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+}
+]

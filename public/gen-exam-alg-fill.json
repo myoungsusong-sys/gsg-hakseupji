@@ -4070,5 +4070,369 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-alg-u1m0s3t3",
 "custom": true
+},
+{
+"id": "fill-953e2834a6",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 2,
+"body": "부등식 $\\left(\\dfrac{1}{3}\\right)^{x^2-5x}\\geq\\left(\\dfrac{1}{3}\\right)^{2x-6}$을 만족시키는 모든 정수 $x$의 개수는?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "밑 $\\dfrac{1}{3}$은 $0$보다 크고 $1$보다 작으므로 지수의 대소가 반대이다. 따라서 $x^2-5x\\leq2x-6$, 즉 $(x-1)(x-6)\\leq0$이므로 $1\\leq x\\leq6$이다. 해당하는 정수는 $6$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-e9f18079f4",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 2,
+"body": "부등식 $(\\sqrt{5})^{3x-2}<25^{x+1}$을 만족시키는 가장 작은 정수 $x$는?",
+"choices": [
+"$-7$",
+"$-6$",
+"$-5$",
+"$-4$",
+"$-3$"
+],
+"answer": "③",
+"solution": "양변을 밑이 $5$인 거듭제곱으로 나타내면 $5^{\\frac{3x-2}{2}}<5^{2x+2}$이다. 따라서 $\\dfrac{3x-2}{2}<2x+2$에서 $x>-6$이므로 가장 작은 정수는 $-5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-8c5cf8921e",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 3,
+"body": "$-5\\leq x\\leq5$인 정수 $x$ 중에서 부등식 $\\left(\\dfrac{1}{2}\\right)^{x^2-2x-3}<8^{x-1}$을 만족시키는 것의 개수는?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "$8^{x-1}=\\left(\\dfrac{1}{2}\\right)^{-3x+3}$이고 밑이 $1$보다 작으므로 $x^2-2x-3>-3x+3$이다. 즉 $(x+3)(x-2)>0$이므로 $x<-3$ 또는 $x>2$이다. 주어진 범위에서 가능한 정수는 $-5,-4,3,4,5$의 $5$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-be45b3d90a",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 3,
+"body": "부등식 $27^{x-1}\\geq9^{2x+1}$을 만족시키는 가장 큰 정수 $x$는?",
+"choices": [
+"$-7$",
+"$-6$",
+"$-5$",
+"$-4$",
+"$-3$"
+],
+"answer": "③",
+"solution": "부등식을 $3^{3x-3}\\geq3^{4x+2}$로 바꿀 수 있다. 밑이 $1$보다 크므로 $3x-3\\geq4x+2$이고, 이에 따라 $x\\leq-5$이다. 가장 큰 정수는 $-5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-7621562f08",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 3,
+"body": "부등식 $\\left(\\dfrac{1}{4}\\right)^{x^2-3x}>2^{2x-8}$을 만족시키는 모든 정수 $x$의 개수는?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "좌변을 밑이 $2$인 거듭제곱으로 나타내면 $2^{-2x^2+6x}>2^{2x-8}$이다. 따라서 $x^2-2x-4<0$, 즉 $1-\\sqrt{5}<x<1+\\sqrt{5}$이다. 이를 만족시키는 정수는 $-1,0,1,2,3$의 $5$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-68497edcd1",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "주관식",
+"diff": 4,
+"body": "부등식 $2^{x^2-2ax+a+2}\\geq1$이 모든 실수 $x$에 대하여 성립하도록 하는 실수 $a$의 범위를 구하여라.",
+"selfGrade": true,
+"answer": "$-1\\leq a\\leq2$",
+"solution": "밑이 $1$보다 크므로 모든 실수 $x$에 대하여 $x^2-2ax+a+2\\geq0$이어야 한다. 이 이차식의 판별식이 $0$ 이하이어야 하므로 $4a^2-4(a+2)\\leq0$이다. 따라서 $(a+1)(a-2)\\leq0$에서 $-1\\leq a\\leq2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-e6ea3ef71b",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 4,
+"body": "정수 $m$에 대하여 부등식 $2^{x^2-(m+1)x+m}\\leq1$을 만족시키는 정수 $x$가 정확히 $4$개이다. 가능한 모든 $m$의 합은?",
+"choices": [
+"$-4$",
+"$-2$",
+"$0$",
+"$2$",
+"$4$"
+],
+"answer": "④",
+"solution": "주어진 부등식은 $(x-1)(x-m)\\leq0$과 같다. $m\\geq1$이면 정수해의 개수는 $m$이므로 $m=4$이고, $m\\leq1$이면 정수해의 개수는 $2-m$이므로 $m=-2$이다. 따라서 가능한 모든 $m$의 합은 $4+(-2)=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-93a8e0d54c",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 부등식을 동시에 만족시키는 모든 정수 $x$의 합은?\n\n$\\left(\\dfrac{1}{3}\\right)^{x^2-4x+3}\\geq1$, $\\quad 9^{x-2}>3^{1-x}$",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "④",
+"solution": "첫 번째 부등식에서 $(x-1)(x-3)\\leq0$이므로 $1\\leq x\\leq3$이다. 두 번째 부등식은 $2x-4>1-x$이므로 $x>\\dfrac{5}{3}$이다. 두 조건을 만족시키는 정수는 $2,3$이므로 그 합은 $5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-fcb26da218",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $x$에 대한 부등식 $\\left(\\dfrac{1}{2}\\right)^{x^2-2x}\\geq2^{|x-1|+k}$가 해를 갖도록 하는 실수 $k$의 최댓값을 구하여라.",
+"selfGrade": true,
+"answer": "$1$",
+"solution": "좌변을 밑이 $2$인 거듭제곱으로 나타내면 $1-(x-1)^2\\geq|x-1|+k$이다. 따라서 $k\\leq1-(x-1)^2-|x-1|$이고, 우변은 $x=1$일 때 최댓값 $1$을 갖는다. 그러므로 가능한 $k$의 최댓값은 $1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-85e9f735e0",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "주관식",
+"diff": 5,
+"body": "정수 $a$에 대하여 부등식 $\\left(\\dfrac{1}{2}\\right)^{(x-3)^2-4}\\geq2^{|x-3|+a}$를 만족시키는 정수 $x$가 정확히 $5$개이다. 가능한 모든 $a$의 합을 구하여라.",
+"selfGrade": true,
+"answer": "$-27$",
+"solution": "$y=x-3$으로 놓으면 부등식은 $y^2+|y|\\leq4-a$가 된다. 정수해가 정확히 $5$개이려면 $y=-2,-1,0,1,2$는 포함되고 $y=\\pm3$은 제외되어야 하므로 $6\\leq4-a<12$이다. 따라서 $-8<a\\leq-2$이고, 가능한 정수 $a$인 $-7,-6,-5,-4,-3,-2$의 합은 $-27$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-1a58d2faec",
+"typeId": "exam-alg-u0m1s6t2",
+"kind": "주관식",
+"diff": 5,
+"body": "부등식 $3^{x^2-6x+5}\\leq1$을 만족시키는 모든 정수 $x$에 대하여 부등식 $\\left(\\dfrac{1}{2}\\right)^{x^2-4x+a}\\geq4^{x-3}$이 성립한다. 이때 정수 $a$의 최댓값을 구하여라.",
+"selfGrade": true,
+"answer": "$-9$",
+"solution": "첫 번째 부등식에서 $(x-1)(x-5)\\leq0$이므로 가능한 정수 $x$는 $1,2,3,4,5$이다. 두 번째 부등식은 밑을 $\\dfrac{1}{2}$로 통일하면 $a\\leq-x^2+2x+6$이 된다. $x=1,2,3,4,5$에서 우변의 최솟값은 $x=5$일 때의 $-9$이므로 $a$의 최댓값은 $-9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s6t2",
+"custom": true
+},
+{
+"id": "fill-8b4c5d4ea4",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "객관식",
+"diff": 2,
+"body": "부등식 $\\log_{\\frac13}(x+2)\\geq\\log_{\\frac13}(10-x)$를 만족시키는 정수 $x$의 개수는?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "진수 조건에서 $-2<x<10$이다. 밑이 $0$과 $1$ 사이이므로 $x+2\\leq10-x$, 즉 $x\\leq4$이다. 따라서 정수 $x$는 $-1,0,1,2,3,4$의 $6$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-0a2318ece8",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "객관식",
+"diff": 2,
+"body": "부등식 $\\log_4(2x-1)<\\log_4(x+5)$의 해는?",
+"choices": [
+"$-5<x<6$",
+"$\\frac12<x<6$",
+"$\\frac12\\leq x<6$",
+"$x>6$",
+"$\\frac12<x\\leq6$"
+],
+"answer": "②",
+"solution": "진수 조건은 $2x-1>0$, $x+5>0$이므로 $x>\\frac12$이다. 밑이 $1$보다 크므로 $2x-1<x+5$에서 $x<6$을 얻는다. 따라서 해는 $\\frac12<x<6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-d03732e030",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "객관식",
+"diff": 3,
+"body": "부등식 $\\log_{x-1}(x+3)>\\log_{x-1}(9-x)$의 해는?",
+"choices": [
+"$1<x<3$",
+"$2<x<9$",
+"$1<x<2$ 또는 $2<x<3$",
+"$1<x<2$ 또는 $3<x<9$",
+"$1<x<3$ 또는 $3<x<9$"
+],
+"answer": "④",
+"solution": "밑과 진수 조건에서 $1<x<9$, $x\\ne2$이다. $1<x<2$에서는 밑이 $1$보다 작으므로 $x+3<9-x$를 풀어 이 구간 전체를 얻는다. $2<x<9$에서는 $x+3>9-x$이므로 $x>3$이다. 따라서 해는 $1<x<2$ 또는 $3<x<9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-eb73e01a9a",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "객관식",
+"diff": 3,
+"body": "부등식 $\\log_{\\frac12}(x^2-5x+6)\\geq\\log_{\\frac12}2$의 해는?",
+"choices": [
+"$1\\leq x\\leq4$",
+"$1\\leq x<2$ 또는 $3<x\\leq4$",
+"$1<x\\leq2$ 또는 $3\\leq x<4$",
+"$x\\leq1$ 또는 $x\\geq4$",
+"$2<x<3$"
+],
+"answer": "②",
+"solution": "밑이 $0$과 $1$ 사이이므로 진수 조건과 부등식을 합하면 $0<x^2-5x+6\\leq2$이다. $x^2-5x+6>0$에서 $x<2$ 또는 $x>3$이고, $x^2-5x+6\\leq2$에서 $1\\leq x\\leq4$이다. 두 조건의 공통 범위는 $1\\leq x<2$ 또는 $3<x\\leq4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-45d1d74e29",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "주관식",
+"diff": 3,
+"body": "닫힌구간 $[2,5]$의 모든 실수 $x$에 대하여 $\\log_2(x+a)$와 $\\log_2(3x-2)$가 정의되고, 부등식 $\\log_2(x+a)>\\log_2(3x-2)$가 성립하도록 하는 정수 $a$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$9$",
+"solution": "밑이 $1$보다 크므로 주어진 부등식은 $a>2x-2$와 같다. $2\\leq x\\leq5$에서 $2x-2$의 최댓값은 $8$이므로 $a>8$이어야 한다. 이 조건이면 두 진수도 모두 양수이므로 정수 $a$의 최솟값은 $9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-1ee442d0af",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "객관식",
+"diff": 4,
+"body": "부등식 $\\log_x(x^2-5x+7)\\geq\\log_x5$의 해는?",
+"choices": [
+"$0<x\\leq\\frac{5-\\sqrt{17}}2$ 또는 $1<x\\leq\\frac{5+\\sqrt{17}}2$",
+"$\\frac{5-\\sqrt{17}}2\\leq x\\leq\\frac{5+\\sqrt{17}}2$, $x\\ne1$",
+"$\\frac{5-\\sqrt{17}}2\\leq x<1$ 또는 $x\\geq\\frac{5+\\sqrt{17}}2$",
+"$0<x<1$ 또는 $x\\geq\\frac{5+\\sqrt{17}}2$",
+"$x\\geq\\frac{5+\\sqrt{17}}2$"
+],
+"answer": "③",
+"solution": "밑의 조건은 $x>0$, $x\\ne1$이고, $x^2-5x+7=(x-\\frac52)^2+\\frac34>0$이다. $0<x<1$에서는 $x^2-5x+7\\leq5$이므로 $\\frac{5-\\sqrt{17}}2\\leq x<1$이다. $x>1$에서는 $x^2-5x+7\\geq5$이므로 $x\\geq\\frac{5+\\sqrt{17}}2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-1e13e0b428",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "객관식",
+"diff": 4,
+"body": "부등식 $\\log_{(x-3)^2}(x-1)+\\log_{(x-3)^2}(7-x)\\geq\\log_{(x-3)^2}8$의 해는?",
+"choices": [
+"$2<x<3$ 또는 $4<x\\leq5$",
+"$2\\leq x<3$ 또는 $4\\leq x\\leq5$",
+"$1<x<2$ 또는 $5\\leq x<7$",
+"$2<x\\leq5$, $x\\ne3$",
+"$3<x<4$ 또는 $5\\leq x<7$"
+],
+"answer": "①",
+"solution": "정의 조건은 $1<x<7$이고 $x\\ne2,3,4$이다. 밑이 $1$보다 큰 $1<x<2$ 또는 $4<x<7$에서는 $(x-1)(7-x)\\geq8$, 즉 $3\\leq x\\leq5$이므로 $4<x\\leq5$를 얻는다. 밑이 $0$과 $1$ 사이인 $2<x<4$, $x\\ne3$에서는 $(x-1)(7-x)\\leq8$이므로 $2<x<3$을 얻는다. 따라서 해는 $2<x<3$ 또는 $4<x\\leq5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-4c53780434",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "주관식",
+"diff": 4,
+"body": "부등식 $(\\log_2 x)\\left(\\log_{\\frac12}\\frac{x}{8}\\right)\\geq2$의 해를 구하시오.",
+"selfGrade": true,
+"answer": "$2\\leq x\\leq4$",
+"solution": "진수 조건에서 $x>0$이고, $t=\\log_2x$로 놓으면 $\\log_{\\frac12}\\frac{x}{8}=3-t$이다. 따라서 $t(3-t)\\geq2$, 즉 $(t-1)(t-2)\\leq0$이므로 $1\\leq t\\leq2$이다. 밑이 $2>1$이므로 해는 $2\\leq x\\leq4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-db94cfea6a",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "주관식",
+"diff": 5,
+"body": "양의 실수 $a$에 대하여 부등식 $\\log_{\\frac12}(x-2a)\\geq\\log_{\\frac12}(4a-x)$를 만족시키는 정수 $x$가 정확히 $3$개가 되도록 하는 $a$의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac73\\leq a<\\frac52$ 또는 $\\frac83\\leq a<\\frac{10}3$ 또는 $\\frac72\\leq a<\\frac{11}3$",
+"solution": "진수 조건과 밑의 성질을 함께 적용하면 부등식의 해는 $2a<x\\leq3a$이다. 따라서 정수 해의 개수는 $\\lfloor3a\\rfloor-\\lfloor2a\\rfloor$이며, 여기서 $\\lfloor t\\rfloor$는 $t$ 이하의 최대 정수이다. $k=\\lfloor2a\\rfloor$로 놓으면 $\\frac{k}{2}\\leq a<\\frac{k+1}{2}$와 $\\frac{k+3}{3}\\leq a<\\frac{k+4}{3}$을 동시에 만족해야 하므로 가능한 $k$는 $4,5,6,7$이다. 각 경우의 공통 범위를 합하면 $\\frac73\\leq a<\\frac52$ 또는 $\\frac83\\leq a<\\frac{10}3$ 또는 $\\frac72\\leq a<\\frac{11}3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-bbec809a88",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "주관식",
+"diff": 5,
+"body": "$1<x<3$, $x\\ne2$인 모든 실수 $x$에 대하여 $\\log_{x-1}\\bigl((x-2)(x-a)+2\\bigr)$와 $\\log_{x-1}2$가 정의되고, 부등식 $\\log_{x-1}\\bigl((x-2)(x-a)+2\\bigr)\\geq\\log_{x-1}2$가 성립하도록 하는 실수 $a$의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$-1\\leq a\\leq1$",
+"solution": "$1<x<2$에서는 밑이 $1$보다 작으므로 $(x-2)(x-a)\\leq0$이어야 하며, 이 구간의 모든 $x$에서 성립할 조건은 $a\\leq1$이다. $2<x<3$에서는 $(x-2)(x-a)\\geq0$이어야 하므로 $a\\leq1$이면 충분하다. 한편 $a<-1$이면 $x$가 $1$보다 크면서 $1$에 충분히 가까울 때 진수 $(x-2)(x-a)+2$가 음수가 된다. $-1\\leq a\\leq1$이면 $1<x<2$에서 진수는 $x(x-1)+(a+1)(2-x)>0$이고, $2<x<3$에서는 $2$보다 크므로 구하는 범위는 $-1\\leq a\\leq1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
+},
+{
+"id": "fill-c166a61bda",
+"typeId": "exam-alg-u0m1s7t2",
+"kind": "주관식",
+"diff": 5,
+"body": "부등식 $\\log_{\\frac12}(x-a)>\\log_{\\frac12}(10-x)$를 만족시키는 정수 $x$가 정확히 $4$개가 되도록 하는 실수 $a$의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$a=0$ 또는 $1\\leq a<2$ 또는 $2<a<3$",
+"solution": "정의 조건과 부등식을 함께 풀면 해는 $a<x<\\frac{a+10}{2}$이며, 해가 존재하려면 $a<10$이다. $L=10-a>0$, $y=10-x$로 놓으면 정수 해의 개수는 $\\frac L2<y<L$인 정수의 개수와 같다. $n=\\lfloor L/2\\rfloor$로 놓을 때 정확히 $4$개의 정수가 존재할 조건은 $2n\\leq L<2n+2$와 $n+4<L\\leq n+5$이며, 가능한 $n$은 $3,4,5$이다. 따라서 $7<L<8$ 또는 $8<L\\leq9$ 또는 $L=10$이므로, 구하는 범위는 $a=0$ 또는 $1\\leq a<2$ 또는 $2<a<3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s7t2",
+"custom": true
 }
 ]

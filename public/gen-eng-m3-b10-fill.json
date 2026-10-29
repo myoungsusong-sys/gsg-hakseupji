@@ -1811,5 +1811,871 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b10-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-d62d851f65",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nA high-speed train made a loud noise whenever it went into a tunnel. An engineer noticed that a bird could dive into water quickly without making much noise. After studying the bird’s long and narrow beak, he used its shape to redesign the front of the train. The redesigned train became quieter and more efficient.",
+"choices": [
+"A Bird Looking for Food",
+"A Quieter Train Inspired by Nature",
+"The History of Train Tunnels",
+"Ways to Save Wild Birds",
+"Why Trains Need More Electricity"
+],
+"answer": "②",
+"solution": "기술자는 새의 부리 모양을 본떠 고속 열차의 소음 문제를 해결했다. 따라서 자연에서 얻은 아이디어로 더 조용한 열차를 만들었다는 ②가 글 전체를 가장 잘 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-247cb72068",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nAfter walking in the woods, George de Mestral found burrs attached to his clothes and his dog’s hair. He examined them closely and discovered that their needles had bent ends. This observation led him to develop two materials that held together firmly when pressed.",
+"choices": [
+"Walking with a dog is a good way to exercise.",
+"Burrs should be removed from the woods.",
+"New clothes must be made of natural materials.",
+"Careful observation of nature can lead to an invention.",
+"Testing an idea is less important than finding it."
+],
+"answer": "④",
+"solution": "George는 옷과 개의 털에 붙은 도꼬마리를 자세히 관찰한 뒤 새로운 잠금 도구를 개발했다. 자연에 대한 세심한 관찰이 발명으로 이어졌다는 ④가 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-16e4b5b5c2",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 글쓴이가 강조하는 바로 가장 알맞은 것은?\n\nPeople sometimes think that certain things in nature have no value. However, an unusual shape or action in nature may provide an answer to a human problem. To discover such an answer, we need to stay curious and ask why things happen.",
+"choices": [
+"Nature must remain completely unchanged.",
+"Every invention requires expensive materials.",
+"Curiosity can help us discover useful ideas in nature.",
+"Human problems are always caused by nature.",
+"Questions prevent people from making inventions."
+],
+"answer": "③",
+"solution": "글은 자연의 형태나 움직임이 인간의 문제를 해결할 실마리가 될 수 있다고 말한다. 이를 발견하려면 호기심을 가지고 질문해야 하므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d7b430b3a1",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nAn engineer had to reduce the loud sound made by a train entering a tunnel. While watching a bird enter the water, he became interested in the shape of its beak. He applied that shape to the train, and the new design reduced noise while improving the train’s performance.\n\nThe engineer solved the train’s (A) problem by applying a feature he had (B) in nature.",
+"choices": [
+"safety — ignored",
+"noise — observed",
+"speed — invented",
+"electricity — removed",
+"weight — tested"
+],
+"answer": "②",
+"solution": "기술자가 해결하려 한 것은 터널에 들어갈 때 발생하는 열차의 소음 문제이다. 해결책은 자연 속 새의 부리를 관찰하여 얻었으므로 (A)에는 noise, (B)에는 observed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-64f9a3b39b",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nGeorge de Mestral wondered why burrs remained on his clothes and his dog’s hair. A close examination showed him that the burr needles had small bent ends. After repeated testing, he made a fastener consisting of a needle-like material and a hairy material. It later came to be used for clothes, shoes, bags, games, and even objects in space.",
+"choices": [
+"From Sticking Burrs to a Useful Fastener",
+"How to Keep Dogs Clean in the Woods",
+"Popular Games Played in Space",
+"Why Burrs Are Harmful to Clothes",
+"Different Ways of Growing Forest Plants"
+],
+"answer": "①",
+"solution": "글은 도꼬마리가 달라붙는 원리를 관찰하여 유용한 잠금 도구를 발명한 과정을 설명한다. 발견의 계기와 발명품을 모두 포함한 ①이 가장 적절한 제목이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ab26161476",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 두 글의 공통된 주제로 가장 알맞은 것은?\n\n(A) An engineer changed the front of a noisy high-speed train after examining the long, narrow beak of a bird that entered water quietly.\n\n(B) George de Mestral created a strong and easy-to-use fastener after examining the bent ends of burr needles.",
+"choices": [
+"The negative effects of machines on animals",
+"The importance of making products look beautiful",
+"Solutions developed by copying useful features in nature",
+"The difficulties of traveling through forests and tunnels",
+"Inventions that failed because of insufficient testing"
+],
+"answer": "③",
+"solution": "두 글 모두 자연의 특징을 관찰한 뒤 그것을 인간의 기술에 적용한 사례이다. 새의 부리는 열차 설계에, 도꼬마리의 바늘은 잠금 도구에 활용되었으므로 공통 주제는 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f72c5f043f",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지를 가장 정확하게 나타낸 것은?\n\nThe noisy train and the burr fastener began with different problems. One engineer needed a way to reduce the sound made by a train, while another wanted to understand why burrs stuck so well. Neither solution came from simply looking at nature once. The engineers noticed a particular feature, studied how it worked, and then tested ways to apply it. Their results show that nature becomes a source of practical solutions when curiosity is followed by close observation and effort.",
+"choices": [
+"Natural objects can be used immediately without any testing.",
+"Curiosity alone is enough to complete a successful invention.",
+"Engineers should reproduce every feature found in nature.",
+"Practical inventions can result when curiosity, observation, and testing work together.",
+"The main purpose of observing nature is to protect plants and animals."
+],
+"answer": "④",
+"solution": "글은 단순히 자연을 바라보는 것만으로 발명이 완성되는 것은 아니라고 설명한다. 호기심을 바탕으로 특징을 관찰하고, 원리를 연구하며, 적용 방법을 시험하는 과정이 함께 필요하다. 이를 빠짐없이 담은 선지는 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7fc860a9aa",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 제목이 되도록 주어진 단어를 모두 한 번씩 사용하여 7단어의 영어 표현을 완성하시오.\n\nA train produced a disturbing sound when it entered a tunnel. An engineer found a clue in the long, narrow beak of a bird that moved into water quickly and quietly. By applying the beak’s shape to the front of the train, he succeeded in reducing the noise.\n\n[A / Bird / by / Inspired / Quiet / Train / a]",
+"selfGrade": true,
+"answer": "A Quiet Train Inspired by a Bird",
+"solution": "글의 중심은 새의 부리에서 아이디어를 얻어 소음이 적은 열차를 만든 것이다. 주어진 단어를 문법과 의미에 맞게 배열하면 ‘A Quiet Train Inspired by a Bird’가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-93a60d8a44",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 요약한 문장이 되도록 주어진 단어를 모두 한 번씩 사용하여 9단어의 영어 문장을 완성하시오.\n\nGeorge de Mestral did not simply remove the burrs from his clothes and his dog’s hair. He examined their bent needles, tested his idea many times, and finally developed a fastener that could be used in various ways.\n\n[Careful / observation / of / nature / can / lead / to / useful / inventions]",
+"selfGrade": true,
+"answer": "Careful observation of nature can lead to useful inventions.",
+"solution": "도꼬마리를 세심하게 관찰한 일이 유용한 발명으로 이어졌다는 내용이다. 주어진 단어를 문법적으로 배열하면 ‘Careful observation of nature can lead to useful inventions.’가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c03eba2f2f",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 사례의 공통된 교훈을 나타내도록 주어진 단어를 모두 한 번씩 사용하여 11단어의 영어 문장을 완성하시오. 문장은 Curiosity로 시작하고 problems로 끝나야 한다.\n\n• An engineer studied a bird’s beak and redesigned a noisy train.\n• George de Mestral studied burr needles and developed a useful fastener.\n\n[Curiosity / about / nature / and / careful / observation / can / help / us / solve / problems]",
+"selfGrade": true,
+"answer": "Curiosity about nature and careful observation can help us solve problems.",
+"solution": "두 사례 모두 자연에 대한 호기심과 세심한 관찰이 인간의 문제 해결로 이어졌음을 보여 준다. 시작어와 마지막 단어를 지키면서 모든 단어를 배열하면 제시된 문장이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-eb758dc472",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 약어의 뜻으로 알맞은 것을 고르시오.\n\nASAP",
+"choices": [
+"As simple as possible",
+"As soon as possible",
+"Always say a proverb",
+"A sentence and phrase",
+"Ask someone a problem"
+],
+"answer": "②",
+"solution": "ASAP는 각 단어의 첫 글자를 따서 만든 약어이다. 본문에서 ASAP는 ‘as soon as possible(가능한 한 빨리)’을 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-29c414f7c2",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 HAND를 바르게 풀어 쓴 것을 고르시오.",
+"choices": [
+"Have a new dream.",
+"Help anyone next door.",
+"Have a nice day.",
+"How about next day?",
+"Hope all never disappear."
+],
+"answer": "③",
+"solution": "HAND는 ‘Have a nice day.’의 각 단어 첫 글자를 연결한 약어이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a48aef9829",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 표현과 의미가 가장 가까운 것을 고르시오.\n\nPeople try to do things instead of just saying something.",
+"choices": [
+"because they say something",
+"before they say something",
+"without doing anything",
+"rather than just saying something",
+"as soon as they say something"
+],
+"answer": "④",
+"solution": "instead of는 ‘~ 대신에, ~하지 않고’라는 뜻이다. 문맥상 ‘그저 말하기보다는 행동하려고 한다’는 의미이므로 rather than이 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6e2004d6dd",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장에서 밑줄 친 them이 가리키는 대상을 고르시오.\n\nSome people have different opinions. To them, words speak louder than actions.",
+"choices": [
+"words of wisdom",
+"people who try to act",
+"some people with different opinions",
+"people influenced by acronyms",
+"others who do good things"
+],
+"answer": "③",
+"solution": "대명사 them은 앞에서 언급된 복수 명사를 가리킨다. 바로 앞의 some people은 행동보다 말의 영향력을 더 중요하게 생각하는 사람들이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bca1f27879",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 약어와 그 설명의 관계가 나머지와 다른 것을 고르시오.",
+"choices": [
+"ASAP — as soon as possible",
+"HAND — Have a nice day.",
+"ASAP — 각 단어의 첫 글자로 만들어진 말",
+"HAND — 상대방에게 좋은 하루를 보내라고 하는 말",
+"ASAP — 상대방의 안부를 묻는 말"
+],
+"answer": "⑤",
+"solution": "ASAP는 ‘가능한 한 빨리’라는 뜻으로, 상대방의 안부를 묻는 표현이 아니다. 나머지 선택지는 각 약어의 형태나 의미를 올바르게 설명한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-36a613527f",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 흐름에 맞게 문장을 배열한 것을 고르시오.\n\n(A) She says that they are destroying the language.\n(B) Jacob explains what ASAP and HAND mean.\n(C) Jacob's mother says that she cannot understand part of a message.\n(D) Jacob says that the acronyms are fun and easy to use.",
+"choices": [
+"(A)－(C)－(B)－(D)",
+"(B)－(C)－(D)－(A)",
+"(C)－(A)－(B)－(D)",
+"(C)－(B)－(A)－(D)",
+"(D)－(A)－(C)－(B)"
+],
+"answer": "④",
+"solution": "어머니가 메시지를 이해하지 못한다고 말한 뒤 Jacob이 약어의 뜻을 설명한다. 이어 어머니가 약어에 대한 부정적인 의견을 밝히고, Jacob이 자신의 긍정적인 의견을 말한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-55e81f9b87",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\n\nSome people emphasize actions, but others believe that words can influence people ________ good things.",
+"choices": [
+"do",
+"doing",
+"to do",
+"did",
+"to doing"
+],
+"answer": "③",
+"solution": "influence 뒤에는 ‘목적어＋to부정사’를 써서 ‘목적어가 ~하도록 영향을 주다’를 나타낼 수 있다. 따라서 influence people to do good things가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0753fdc6e1",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 일치하도록 주어진 말을 모두 사용하여 문장을 완성하시오. 필요하면 형태를 바꾸시오.\n\n‘내 생각에는 그 약어들은 재미있고 사용하기 쉽다.’\n\n(in / opinion / they / fun / easy / use / my)",
+"selfGrade": true,
+"answer": "In my opinion, they are fun and easy to use.",
+"solution": "‘내 생각에는’은 In my opinion으로 표현한다. ‘사용하기 쉽다’는 능동 형태의 의미를 지닌 ‘easy＋to부정사’ 구조를 사용하여 easy to use로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-44d3a386e0",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 같은 의미가 되도록 빈칸을 완성하시오.\n\nWhat you do is more important than what you say.\n= Actions ___________ ___________ ___________ ___________.",
+"selfGrade": true,
+"answer": "speak louder than words",
+"solution": "행동이 말보다 중요하다는 의미를 나타내는 속담은 Actions speak louder than words이다. louder than은 두 대상의 영향력을 비교하는 비교급 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-84599a5930",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "본문에 나타난 서로 다른 두 의견을 while을 사용한 한 문장으로 쓰시오. 다음 조건을 모두 충족하시오.\n\n① some people과 others를 각각 주어로 사용할 것\n② think를 사용할 것\n③ ‘행동이 말보다 중요하다’와 그 반대 의견을 모두 나타낼 것",
+"selfGrade": true,
+"answer": "Some people think actions speak louder than words, while others think words speak louder than actions.",
+"solution": "본문은 행동을 중시하는 의견과 말의 영향력을 중시하는 반대 의견을 제시한다. while로 두 절을 연결하고, 각 절에서 think 뒤에 서로 반대되는 어순의 속담을 배치해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3150ec90ac",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nPlease show me ________ you made.",
+"choices": [
+"that",
+"what",
+"who",
+"where",
+"when"
+],
+"answer": "②",
+"solution": "빈칸 뒤 made의 목적어가 없으며, 빈칸 앞에도 선행사가 없다. 따라서 선행사를 포함하여 ‘네가 만든 것’을 뜻하는 관계대명사 what이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2baa6cddda",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThis is the thing ________ I wanted to show you.",
+"choices": [
+"what",
+"where",
+"when",
+"that",
+"how"
+],
+"answer": "④",
+"solution": "빈칸 앞에 선행사 the thing이 있고, 뒤에는 show의 직접목적어가 빠져 있다. 따라서 목적격 관계대명사 that이 알맞으며, 선행사를 포함하는 what은 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cc226e7002",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸 (A), (B)에 들어갈 말을 바르게 짝 지은 것은?\n\n• (A)________ I learned from this experience was important.\n• The idea (B)________ Richard had helped people.\n\n선지는 (A)－(B)의 순서이다.",
+"choices": [
+"What－that",
+"That－what",
+"What－what",
+"Which－that",
+"That－which"
+],
+"answer": "①",
+"solution": "(A)는 뒤의 learned의 목적어가 없고 선행사도 없으므로 What이 알맞다. (B)는 선행사 The idea를 수식하며 had의 목적어 역할을 하는 관계대명사 that이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5bdd120a9b",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"This is what I wanted it.",
+"I remember the words what you said.",
+"That you made is useful.",
+"The thing what I need is here.",
+"What you told me was helpful."
+],
+"answer": "⑤",
+"solution": "⑤의 What은 선행사를 포함하며 told의 직접목적어 역할을 하므로 알맞다. ①은 what과 it의 목적어 역할이 중복되고, ②와 ④는 선행사가 있으므로 what 대신 that 또는 which를 써야 한다. ③은 선행사 없이 ‘네가 만든 것’을 나타내야 하므로 That을 What으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-208ec28932",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 대신 표시한 【 】 부분을 반드시 고쳐야 하는 문장은?",
+"choices": [
+"I understand 【what】 you mean.",
+"The lights 【that】 Richard made are useful.",
+"This is the idea 【what】 I wanted to explain.",
+"【What】 we need is a good idea.",
+"I like the thing 【that】 you made."
+],
+"answer": "③",
+"solution": "③은 선행사 the idea가 있으므로 what을 that 또는 which로 고쳐야 한다. 나머지 문장은 선행사의 유무와 관계대명사의 역할에 맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b26f1a9c4c",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말을 바르게 짝 지은 것은?\n\n• This is (A)________ Richard called “lion lights.”\n• The thing (B)________ he made can scare away lions.\n• His friends want to learn (C)________ he knows about the lights.\n\n선지는 (A)－(B)－(C)의 순서이다.",
+"choices": [
+"that－what－what",
+"what－that－what",
+"what－what－that",
+"that－that－what",
+"what－that－that"
+],
+"answer": "②",
+"solution": "(A)는 called의 목적어 역할을 하면서 선행사를 포함해야 하므로 what이 알맞다. (B)는 선행사 The thing이 있으므로 that을 쓴다. (C)는 knows의 목적어가 없고 선행사도 없으므로 what을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f9a621fcfa",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장만을 모두 고른 것은?\n\nㄱ. What Richard made is used to scare away lions.\nㄴ. The thing what he made is called “lion lights.”\nㄷ. This is exactly what we wanted it.\nㄹ. The idea that he had can make a difference in people's lives.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄷ, ㄹ",
+"ㄱ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "④",
+"solution": "ㄱ은 선행사 없이 What이 made의 목적어 역할을 하므로 옳고, ㄹ은 선행사 The idea 뒤에 목적격 관계대명사 that을 썼으므로 옳다. ㄴ은 선행사가 있으므로 what을 that 또는 which로 고쳐야 한다. ㄷ은 what이 wanted의 목적어 역할을 하므로 중복된 it을 삭제해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ee14d3af04",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장들의 어법을 검토한 내용으로 옳지 않은 것은?\n\n(A) I know that Richard made the lights.\n(B) I know what Richard made.\n(C) I know the thing what Richard made.\n(D) I know what Richard made it.",
+"choices": [
+"(A)의 that 뒤에는 목적어가 빠져 있으므로 that을 what으로 고쳐야 한다.",
+"(B)의 what은 ‘Richard가 만든 것’이라는 의미를 나타낸다.",
+"(C)는 what 앞에 선행사가 있으므로 what을 that으로 고칠 수 있다.",
+"(D)는 what과 it의 역할이 중복되므로 it을 삭제해야 한다.",
+"(B)의 what은 the thing that으로 바꾸어 쓸 수 있다."
+],
+"answer": "①",
+"solution": "(A)의 made에는 목적어 the lights가 있으므로 that 뒤는 완전한 절이다. 따라서 (A)의 that은 명사절을 이끄는 접속사로 알맞게 쓰였다. (B)~(D)에 대한 나머지 설명은 선행사의 유무와 목적어의 중복 여부를 바르게 판단했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ca351d7d3",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 오류가 정확히 세 곳 있다. 아래 조건에 맞게 고친 뒤 글 전체를 다시 쓰시오.\n\nRichard made that he called “lion lights.” The thing what he made is used to scare away lions. He teaches his friends what he knows it about the lights.\n\n[조건]\n• 관계대명사 두 개를 각각 알맞은 한 단어로 바꿀 것.\n• 불필요한 대명사 한 개를 삭제할 것.\n• 그 밖의 단어와 문장 순서는 바꾸지 말 것.",
+"selfGrade": true,
+"answer": "Richard made what he called “lion lights.” The thing that he made is used to scare away lions. He teaches his friends what he knows about the lights.",
+"solution": "첫 문장은 선행사가 없고 called의 목적어가 필요하므로 that을 what으로 고친다. 둘째 문장은 선행사 The thing이 있으므로 what을 that 또는 which로 고친다. 셋째 문장은 what이 knows의 목적어 역할을 하므로 중복된 it을 삭제한다. 따라서 정답의 that 대신 which를 쓴 답도 인정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9622cf27f8",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 【 】 부분 중 어법상 틀린 세 곳만 고친 뒤 글 전체를 다시 쓰시오.\n\nRichard realized 【that】 he could make a difference in people's lives. 【That】 he made was called “lion lights.” His friends learn 【the thing what】 he knows about the lights. He is proud of 【what he made it】.\n\n[조건]\n• 첫째 문장은 그대로 둘 것.\n• 둘째 문장은 표시된 단어를 다른 한 단어로 바꿀 것.\n• 셋째 문장은 표시된 세 단어를 한 단어로 바꿀 것.\n• 넷째 문장은 표시된 부분에서 불필요한 한 단어만 삭제할 것.",
+"selfGrade": true,
+"answer": "Richard realized that he could make a difference in people's lives. What he made was called “lion lights.” His friends learn what he knows about the lights. He is proud of what he made.",
+"solution": "첫 문장의 that은 완전한 절을 이끄는 접속사이므로 그대로 둔다. 둘째 문장은 made의 목적어가 없고 선행사도 없으므로 That을 What으로 고친다. 셋째 문장은 the thing what을 선행사를 포함하는 what으로 바꾼다. 넷째 문장은 what과 made의 목적어 역할이 중복되는 it을 삭제한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3d2022287c",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"Nobody were waiting outside the tower.",
+"The box was too heavy for Pascal to carry.",
+"Everybody in the room know the answer.",
+"Robin was enough brave to enter the tower.",
+"Something strange were moving in the woods."
+],
+"answer": "②",
+"solution": "「too＋형용사＋for＋목적격＋to부정사」의 형태가 바르게 쓰인 문장은 ②이다. nobody, everybody, something과 같은 부정대명사는 단수 취급하므로 각각 was, knows, was가 필요하다. ④는 brave enough의 어순으로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-95cfddbc11",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장 중 어법상 알맞은 것을 모두 골라 짝지은 것은?\n\n㉠ None of the doors were open.\n㉡ Everybody wants to help the people.\n㉢ Nobody were able to enter the tower.\n㉣ The wall was too high for Pascal climb.\n㉤ Something was moving behind the trees.",
+"choices": [
+"㉠, ㉡",
+"㉡, ㉢",
+"㉠, ㉡, ㉤",
+"㉠, ㉣, ㉤",
+"㉢, ㉣, ㉤"
+],
+"answer": "③",
+"solution": "㉠의 none은 뒤의 복수 명사 doors에 맞추어 were와 함께 쓸 수 있고, ㉡과 ㉤도 어법상 옳다. nobody는 단수 취급하므로 ㉢의 were는 was가 되어야 한다. ㉣에는 Pascal 뒤에 to가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8c096bc749",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A)~(C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPascal heard someone (A)[to call / calling] his name. The voice was too far away for him (B)[to recognize / recognizing], so Robin helped him (C)[find / finding] the speaker.",
+"choices": [
+"to call - to recognize - find",
+"to call - recognizing - finding",
+"calling - to recognize - find",
+"calling - recognizing - find",
+"calling - to recognize - finding"
+],
+"answer": "③",
+"solution": "지각동사 hear는 목적어 뒤에 현재분사를 둘 수 있으므로 calling이 알맞다. 「too＋형용사＋for＋목적격＋to부정사」에 따라 to recognize를 쓰며, 「help＋목적어＋동사원형」에 따라 find를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-762ec15708",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장 중 어법상 알맞은 것의 개수는?\n\n㉠ Robin saw a man to run toward the woods.\n㉡ Pascal heard birds singing in the trees.\n㉢ Robin helped Pascal carry the bags.\n㉣ The stone was too heavy for lift.\n㉤ The horse was strong enough to carry two people.\n㉥ Nobody were standing near the door.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "어법상 알맞은 문장은 ㉡, ㉢, ㉤으로 모두 3개이다. 지각동사 saw 뒤에는 목적어와 함께 동사원형 또는 현재분사가 와야 하고, ㉣에는 의미상 주어와 to부정사가 필요하다. nobody는 단수 취급하므로 ㉥에는 was를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-318ed8249e",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nPascal ①heard someone call his name and opened his eyes. He ②saw several soldiers riding toward him. The path was ③too narrow for the horses to pass through, so Robin ④helped him hide behind a tree. Fortunately, ⑤nobody were following them.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "nobody는 단수 취급하므로 were가 아니라 was를 써야 한다. hear와 see는 목적어 뒤에 동사원형 또는 현재분사를 취할 수 있고, 「too＋형용사＋for＋목적격＋to부정사」와 「help＋목적어＋동사원형」도 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-70e9372c1d",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 틀린 문장은?",
+"choices": [
+"Everyone in the house was ready to leave.",
+"Robin saw a soldier enter the tower.",
+"Pascal heard several men shouting outside.",
+"The path was too narrow for them to riding together.",
+"Robin helped Pascal count the soldiers."
+],
+"answer": "④",
+"solution": "「too＋형용사＋for＋목적격＋to부정사」의 구조이므로 riding을 ride로 고쳐야 한다. ②의 enter와 ③의 shouting은 모두 지각동사의 목적격보어로 가능하며, ⑤의 count도 help 뒤의 동사원형으로 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-16f17128a0",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ㉠~㉤의 수정안 중 어법상 수정할 필요가 없는 문장을 고친 것은?",
+"choices": [
+"Nobody were near the tower. → Nobody was near the tower.",
+"Pascal heard the soldiers to talk. → Pascal heard the soldiers talking.",
+"It was too dark that Pascal could see the door. → It was too dark for Pascal to see the door.",
+"Pascal helped Robin finding another path. → Pascal helped Robin find another path.",
+"None of the doors were locked. → None of the doors was locked."
+],
+"answer": "⑤",
+"solution": "None of the doors는 복수 명사 doors를 기준으로 were와 함께 쓸 수 있으므로 원래 문장이 옳다. 따라서 was로 고칠 필요가 없다. 나머지 수정안은 각각 주어와 동사의 수 일치, 지각동사, too-to 구문, help의 목적격보어를 바르게 고친 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8055f61f8f",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 뜻이 같도록 빈칸에 들어갈 문장을 완성하시오.\n\nThe wall was so high that Pascal could not climb it.\n= ________________________________.",
+"selfGrade": true,
+"answer": "The wall was too high for Pascal to climb.",
+"solution": "「so＋형용사＋that＋주어＋cannot」은 「too＋형용사＋for＋목적격＋to부정사」로 바꿀 수 있다. to climb의 목적어는 주절의 주어인 the wall이므로 climb 뒤에 it을 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-231b0876ae",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 (A)~(E)에서 어법상 알맞은 말을 골라 순서대로 쓰시오.\n\nNobody (A)[was / were] outside when Pascal heard horses (B)[to approach / approaching]. It was too dark for him (C)[see / to see] the riders clearly, but Robin helped him (D)[finding / find] a safe place where everybody (E)[was / were] able to hide.",
+"selfGrade": true,
+"answer": "was, approaching, to see, find, was",
+"solution": "nobody와 everybody는 단수 취급하므로 (A)와 (E)에는 was가 알맞다. hear의 목적격보어로 approaching을 쓰고, too-to 구문에는 to see를 쓴다. help의 목적격보어에는 동사원형 find가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c2d0855048",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 주어진 말을 모두 사용하여 문장을 완성하시오.\n\n로빈은 군인들이 소리치는 것을 들었고 파스칼이 달아나도록 도와주었지만, 길이 너무 좁아서 그들이 나란히 말을 탈 수 없었다.\n\n[Robin / heard / the soldiers / shouting / and / helped / Pascal / get away / but / the road / was / too narrow / for them / to ride / side by side]",
+"selfGrade": true,
+"answer": "Robin heard the soldiers shouting and helped Pascal get away, but the road was too narrow for them to ride side by side.",
+"solution": "hear는 「목적어＋현재분사」의 형태로 shouting을 목적격보어로 취한다. help 뒤에는 「목적어＋동사원형」을 써서 helped Pascal get away로 배열한다. 마지막에는 「too＋형용사＋for＋목적격＋to부정사」의 구조를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b2e578d8a6",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 단어와 영영풀이가 바르게 연결된 것만을 고른 것은?\n\nⓐ delicious: having a very pleasant taste\nⓑ huge: very small in size\nⓒ forgive: to stop being angry with someone for something they did wrong\nⓓ quietly: with little or no noise\nⓔ disappear: to become able to be seen",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "delicious는 ‘맛있는’, forgive는 ‘용서하다’, quietly는 ‘조용히’라는 뜻이므로 ⓐ, ⓒ, ⓓ가 알맞다. huge는 ‘매우 큰’, disappear는 ‘사라지다’라는 뜻이므로 ⓑ와 ⓔ는 잘못 연결되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c718980c76",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이 (A), (B)에 해당하는 단어를 바르게 연결한 것은?\n\n(A) willing to wait calmly without becoming angry\n(B) a tool used for preparing or eating food",
+"choices": [
+"patient — utensil",
+"boastful — utensil",
+"patient — argument",
+"polite — host",
+"boastful — argument"
+],
+"answer": "①",
+"solution": "(A)는 화내지 않고 차분하게 기다리는 성질을 나타내므로 patient가 알맞다. (B)는 음식을 준비하거나 먹을 때 사용하는 도구이므로 utensil이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-dbe563c77e",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 Ms. Disher와 손님들에 관한 글이다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nThe guests kept arguing, and listening to them was difficult for Ms. Disher. After leaving her home, she was away for hours. The guests searched for her and asked her to (A)________ them. They later understood that the taste of food did not depend on their choice of (B)________.",
+"choices": [
+"ignore — utensils",
+"forgive — arguments",
+"ignore — arguments",
+"join — hearts",
+"forgive — utensils"
+],
+"answer": "⑤",
+"solution": "손님들은 Ms. Disher를 찾아 자신들을 용서해 달라고 요청했으므로 (A)에는 forgive가 알맞다. 음식의 맛은 어떤 식사 도구를 선택하는지에 달려 있지 않다는 내용이므로 (B)에는 utensils가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c184f3af53",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어와 영영풀이가 바르게 연결된 것만을 고른 것은?\n\nⓐ host: a person who welcomes guests into their home\nⓑ modest: often talking proudly about one's own abilities\nⓒ ignore: to pay no attention to someone or something\nⓓ complete: having something important missing\nⓔ hurriedly: quickly because there is little time",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓓ"
+],
+"answer": "②",
+"solution": "host는 손님을 맞이하는 주인, ignore는 주의를 기울이지 않다, hurriedly는 서둘러라는 뜻이므로 ⓐ, ⓒ, ⓔ가 알맞다. ⓑ는 modest가 아니라 boastful에 가까운 풀이이며, complete는 필요한 것이 모두 갖추어진 상태를 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-26bd970f0b",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 문맥상 알맞은 말을 바르게 연결한 것은?\n\nThe guests were unwilling to (A)[give up / go back] during their argument. Ms. Disher found it difficult to remain (B)[patient / boastful] while listening. When the guests finally found her, they were sorry that they had (C)[ignored / forgiven] her.\n\n선지는 (A) — (B) — (C)의 순서이다.",
+"choices": [
+"go back — patient — ignored",
+"give up — boastful — forgiven",
+"give up — patient — ignored",
+"go back — boastful — ignored",
+"give up — patient — forgiven"
+],
+"answer": "③",
+"solution": "논쟁 중에 누구도 물러서려 하지 않았으므로 (A)는 give up이 알맞다. Ms. Disher가 유지하기 어려웠던 태도는 참을성 있는 태도이므로 (B)는 patient이다. 손님들은 그녀를 무시한 것을 사과했으므로 (C)는 ignored가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-329607b023",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에서 흐름상 알맞은 말을 바르게 연결한 것은?\n\nMs. Disher left in a hurry but made little noise. In other words, she left (A)[quietly / quite]. Once the guests noticed her absence, they felt that their dinner was not (B)[complete / delicious] without their host. They eventually apologized for being (C)[modest / boastful]. After that, they accepted different ways of eating, knowing that food could taste good (D)[regardless of / because of] which utensils were used.\n\n선지는 (A) — (B) — (C) — (D)의 순서이다.",
+"choices": [
+"quite — complete — boastful — regardless of",
+"quietly — delicious — boastful — regardless of",
+"quietly — complete — modest — because of",
+"quite — delicious — modest — because of",
+"quietly — complete — boastful — regardless of"
+],
+"answer": "⑤",
+"solution": "소리를 거의 내지 않고 떠났다는 뜻이므로 (A)는 quietly이며, 주인이 빠져 저녁 모임이 완전하지 않다는 뜻이므로 (B)는 complete이다. 손님들이 사과한 것은 자신들을 뽐낸 태도이므로 (C)는 boastful이다. 식사 도구의 종류와 관계없이 맛있을 수 있다는 의미이므로 (D)는 regardless of가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8e83f96db5",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 표현의 문맥상 의미를 영영풀이한 것으로 적절하지 않은 것만을 고른 것은? 밑줄은 【 】로 표시하였다.\n\nⓐ Ms. Disher was the 【host】 of the dinner.\n→ a person who is invited to someone else's home for a meal\n\nⓑ She tried to listen 【patiently】.\n→ calmly, without becoming annoyed while waiting or facing difficulty\n\nⓒ The guests asked her to 【forgive】 them.\n→ to stop being angry with them for what they had done wrong\n\nⓓ They were sorry for being 【boastful】.\n→ unwilling to speak proudly about their own abilities\n\nⓔ They learned to 【allow】 different ways of eating.\n→ to let something happen or let someone do something",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓔ",
+"ⓐ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓐ의 풀이는 초대받은 손님을 뜻하지만 host는 손님을 맞이하는 주인이다. ⓓ의 풀이는 자신을 자랑하지 않으려는 태도를 나타내지만 boastful은 자신을 뽐내는 태도를 뜻한다. 따라서 적절하지 않은 것은 ⓐ와 ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a473432daf",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 요약문에서 문맥상 잘못 쓰인 어휘 세 개를 찾아 바르게 고쳐 쓰시오.\n\nThe guests continued their argument, and Ms. Disher left hurriedly but quite. After they found her, they apologized for being modest and ignoring her. She accepted their apology. They then understood that food could be delicious because of which utensils they used; the choice of utensils did not matter.\n\n[조건]\n• quite, modest, because of 중 문맥상 잘못 쓰인 표현을 모두 고칠 것.\n• 첫 번째는 ‘소리를 거의 내지 않고’라는 뜻의 한 단어로, 두 번째는 ‘자신을 뽐내는’이라는 뜻의 한 단어로 고칠 것.\n• 세 번째는 regardless를 포함하는 두 단어의 표현으로 고칠 것.\n• 고친 표현만 글에 나오는 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "quietly, boastful, regardless of",
+"solution": "quite는 ‘꽤, 상당히’라는 뜻이므로 소리를 거의 내지 않고 떠났다는 문맥에 맞게 quietly로 고쳐야 한다. 사과의 대상은 겸손한 태도가 아니라 자신을 뽐낸 태도이므로 modest를 boastful로 바꾼다. 마지막 부분은 도구 선택이 중요하지 않다는 뜻이므로 원인을 나타내는 because of를 regardless of로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-61e4b4cd87",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 말을 [어휘 정보]에서 찾아 알맞은 형태로 쓰시오.\n\nAfter Ms. Disher had (A)________ from the dinner, the guests went looking for her. When they found her, they admitted that they had shown no (B)________ while arguing. They asked for her forgiveness, and she (C)________ them.\n\n[어휘 정보]\n• appear: to become able to be seen\n• patient: able to stay calm without becoming annoyed\n• forgive: to stop being angry with someone for something wrong they did\n\n[조건]\n• (A)는 첫 번째 표제어에 ‘반대 의미’를 만드는 접두사를 붙이고, 문장에 맞는 동사 형태로 쓸 것.\n• (B)는 두 번째 표제어를 ‘참을성’이라는 뜻의 명사로 바꿀 것.\n• (C)는 세 번째 표제어를 문장에 맞는 과거형으로 바꿀 것.\n• (A), (B), (C)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "disappeared, patience, forgave",
+"solution": "(A)는 저녁 모임에서 사라졌다는 의미이므로 appear에 dis-를 붙이고, had 뒤에 오는 과거분사 disappeared로 써야 한다. (B)는 ‘참을성’이라는 명사가 필요하므로 patient를 patience로 바꾼다. (C)는 Ms. Disher가 손님들을 용서한 과거의 일을 나타내므로 forgive의 과거형 forgave가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-92f32457d7",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A)~(D)를 [보기]의 표현으로 완성하시오.\n\nThe guests did not want to (A)________ their positions during the argument. Ms. Disher left, and they later found her under a tree. By apologizing, they admitted that they had been (B)________ rather than modest. She forgave them, and they returned to her home. From then on, they let one another eat in their own preferred ways. To put it another way, they came to (C)________ those differences and enjoy food (D)________ their choice of utensils.\n\n[보기]\ngive up / go back / boastful / patient / allow / ignore / because of / regardless of\n\n[조건]\n• 보기의 표현 중 네 개를 골라 각각 한 번만 사용할 것.\n• (C)는 ‘허용하다’라는 의미가 되도록 쓸 것.\n• 보기의 표현을 변형하지 말고, (A)~(D)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "give up, boastful, allow, regardless of",
+"solution": "논쟁에서 자기 입장을 포기하려 하지 않았다는 뜻이므로 (A)는 give up이다. modest와 대조되면서 사과의 이유가 되는 태도는 boastful이므로 (B)에 들어간다. 서로 다른 방식을 허용한다는 뜻에서 (C)는 allow이고, 도구 선택과 관계없이 음식을 즐긴다는 뜻에서 (D)는 regardless of이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
 }
 ]

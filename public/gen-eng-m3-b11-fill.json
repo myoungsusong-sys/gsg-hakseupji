@@ -128,5 +128,477 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-469ee001ab",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nHelen earned a chance to take part in the main baseball tryouts in Chicago. However, her fear of failure stopped her from going. She regretted that choice for the rest of her life and later advised her granddaughter to keep pursuing her dreams.",
+"choices": [
+"실패를 피하려면 도전할 기회를 신중히 선택해야 한다.",
+"운동선수는 매일 자신의 실력을 점검해야 한다.",
+"꿈을 이루기 위해서는 두려워도 기회를 놓치지 말아야 한다.",
+"중요한 결정을 내릴 때에는 가족의 허락을 받아야 한다.",
+"과거의 실패는 가능한 한 빨리 잊는 것이 좋다."
+],
+"answer": "③",
+"solution": "Helen은 실패가 두려워 중요한 도전에 나서지 않았고 이를 평생 후회했다. 따라서 두려움 때문에 꿈을 향한 기회를 놓치지 말아야 한다는 ③이 글의 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-21d94ceacb",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 제목으로 가장 알맞은 것은?\n\nInterviewer: Why did you apply for Mana Animation High School?\nSora: I have enjoyed drawing cartoons since childhood, and I hope to become a game designer.\nInterviewer: What ability does a game designer need most?\nSora: Imagination. It helps a designer build a completely new world in a game.",
+"choices": [
+"Sora's Dream and the Skill She Values",
+"How to Pass a Difficult Drawing Exam",
+"The History of Mana Animation High School",
+"Different Ways to Enjoy a Baseball Game",
+"Why Sora Gave Up Drawing Cartoons"
+],
+"answer": "①",
+"solution": "대화는 게임 디자이너가 되려는 Sora의 꿈과 그녀가 가장 중요하게 생각하는 능력을 다룬다. 이를 모두 포함한 제목은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ab0c5e7a3d",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 한 문장으로 요약한 것으로 가장 알맞은 것은?\n\nAlthough Helen was invited to the main tryouts after succeeding at the local tryouts, she stayed home because she was afraid that she would fail. Her decision became a lifelong regret.",
+"choices": [
+"Helen failed at the local tryouts but continued practicing.",
+"Helen lost an important letter before leaving for Chicago.",
+"Helen chose another sport after watching a baseball game.",
+"Helen missed a valuable chance because fear controlled her decision.",
+"Helen attended the main tryouts and regretted the result."
+],
+"answer": "④",
+"solution": "Helen에게는 본선 선발 시험에 참가할 기회가 있었지만 실패에 대한 두려움 때문에 가지 않았다. 두려움으로 소중한 기회를 놓쳤다는 ④가 핵심 내용을 정확히 요약한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-43feb359d7",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 주제로 가장 알맞은 것은?\n\nSora explains that her love of drawing cartoons led her to apply for an animation high school. Her future goal is not to become a cartoon artist but to design games. In her opinion, imagination is especially important because game designers must create worlds that have never existed before.",
+"choices": [
+"Sora가 만화 그리기에 흥미를 잃은 이유",
+"게임 디자이너라는 Sora의 진로와 필요한 핵심 능력",
+"애니메이션 고등학교의 다양한 입학시험",
+"만화가와 게임 디자이너의 수입 차이",
+"새로운 게임을 제작하는 구체적인 과정"
+],
+"answer": "②",
+"solution": "Sora는 자신의 희망 진로가 게임 디자이너라고 밝히고 상상력이 가장 중요하다고 설명한다. 따라서 진로와 필요한 능력을 함께 나타낸 ②가 주제이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2b661e92b7",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nA letter gave Helen the opportunity to join the main baseball tryouts in Chicago. As the date approached, however, her confidence disappeared. She finally stayed away from the tryouts and spent many years wishing that she had made a different choice. Her experience taught her that even an uncertain dream deserves to be pursued.",
+"choices": [
+"A Letter That Ended Helen's Interest in Baseball",
+"Why Winning Matters More Than Trying",
+"The Opportunity Helen Lost to Her Fear",
+"A Successful Journey to the Chicago Tryouts",
+"How Helen Became a Famous Baseball Player"
+],
+"answer": "③",
+"solution": "글의 중심은 편지 자체가 아니라 두려움 때문에 도전의 기회를 포기한 Helen의 선택과 후회이다. 이를 가장 포괄적으로 표현한 제목은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b628bf0879",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요약문 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nSora has long enjoyed drawing cartoons, but her actual career goal is to design games. She believes that a designer must use imagination to produce a game world unlike any existing one.\n\nSora wants to become a game designer rather than a cartoon artist, and she regards (A)________ as the key to creating (B)________ game worlds.",
+"choices": [
+"imagination — original",
+"confidence — familiar",
+"experience — ordinary",
+"patience — realistic",
+"courage — traditional"
+],
+"answer": "①",
+"solution": "Sora가 가장 중요하다고 본 능력은 imagination이며, 그 능력은 완전히 새로운 세계를 만드는 데 필요하다. 따라서 (A)에는 imagination, (B)에는 original이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2a49b5696d",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 핵심 내용과 일치하지 않는 것은?\n\nHelen was given an opportunity to attend important baseball tryouts, yet anxiety about failing kept her from taking it. She continued to regret her choice whenever she watched baseball. Drawing on that experience, she told her granddaughter that dreams should be followed even when success is not certain.",
+"choices": [
+"Helen에게는 더 큰 무대의 선발 시험에 참가할 기회가 있었다.",
+"Helen은 실패할 가능성을 걱정하여 도전을 포기했다.",
+"Helen은 야구를 볼 때 과거의 결정을 떠올리곤 했다.",
+"Helen은 성공이 확실한 꿈만 추구해야 한다고 조언했다.",
+"Helen의 조언은 자신의 오랜 후회에서 비롯되었다."
+],
+"answer": "④",
+"solution": "Helen은 모든 꿈은 성공 여부가 불확실하더라도 추구할 가치가 있다고 조언한다. 성공이 확실한 꿈만 좇아야 한다는 ④는 글의 핵심과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-71f19ef847",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 아래 조건에 맞게 영어 한 문장으로 쓰시오.\n\nHelen allowed her fear of failure to stop her from attending the main tryouts. She regretted losing that chance throughout her life and urged her granddaughter to continue going after her dreams.\n\n<조건>\n· 총 15단어로 쓸 것\n· regret, fear, miss, chase를 각각 한 번씩 사용할 것\n· 필요하면 주어진 단어의 형태를 바꿀 것",
+"selfGrade": true,
+"answer": "Helen's lifelong regret shows that fear can make us miss opportunities to chase our dreams.",
+"solution": "Helen의 평생에 걸친 후회는 두려움이 꿈을 좇을 기회를 놓치게 할 수 있음을 보여 준다. 제시된 네 단어를 모두 활용했으며 Helen's부터 dreams까지 정확히 15단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-800f2af32f",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 중심 내용을 아래 조건에 맞게 영어 한 문장으로 요약하시오.\n\nSora says that she wants to design games, not become a cartoon artist. When asked about the most important ability for that career, she chooses imagination since it allows a designer to create a completely new game world.\n\n<조건>\n· 총 10단어로 쓸 것\n· because를 반드시 사용할 것\n· Sora의 진로보다 그녀가 중요하게 여기는 능력에 초점을 둘 것",
+"selfGrade": true,
+"answer": "Sora values imagination because it enables entirely original game worlds.",
+"solution": "대화의 핵심은 Sora가 독창적인 게임 세계를 만들 수 있게 하는 상상력을 중시한다는 것이다. 제시된 문장은 because를 포함하며 Sora부터 worlds까지 정확히 10단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-44e402bdc9",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글을 통해 공통으로 이끌어 낼 수 있는 메시지로 가장 적절한 것은?\n\n(A) Helen had a chance to attend the main baseball tryouts, but fear prevented her from going. Her lasting regret led her to tell her granddaughter not to let valuable opportunities pass.\n\n(B) Sora has a clear goal of becoming a game designer. She also understands that imagination is necessary to create an entirely new world in a game.",
+"choices": [
+"꿈을 이루려면 목표에 필요한 태도나 능력을 알고 실제 도전으로 이어 가야 한다.",
+"진로를 결정한 뒤에는 다른 사람의 조언을 모두 거절해야 한다.",
+"예술 분야의 꿈은 운동 분야의 꿈보다 구체적으로 세우기 쉽다.",
+"타고난 재능이 충분하다면 기회를 놓쳐도 언제든 성공할 수 있다.",
+"실패를 한 번이라도 예상한다면 자신의 진로를 바꾸는 것이 현명하다."
+],
+"answer": "①",
+"solution": "(A)는 기회 앞에서 도전하는 태도의 중요성을, (B)는 목표와 그 목표에 필요한 능력을 아는 것의 중요성을 보여 준다. 두 글을 함께 포괄하는 메시지는 꿈을 구체적인 준비와 도전으로 이어 가야 한다는 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0f372d8094",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\n• The villagers ______ cows on the commons.\n• As more cows came, the number of cows began to ______.",
+"choices": [
+"raised ― rise",
+"raised ― raise",
+"rose ― rise",
+"rose ― raise",
+"rise ― raised"
+],
+"answer": "①",
+"solution": "목적어 cows를 기르는 것은 타동사 raise의 과거형 raised로 나타낸다. 수가 증가하는 것은 자동사 rise를 사용하므로 「raised ― rise」가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b7b0e4093c",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말을 영어로 가장 바르게 옮긴 것은?\n\n내가 그 마을 사람이라면, 그 규칙을 어기지 않을 텐데.",
+"choices": [
+"If I am the villager, I will not break the rule.",
+"If I were the villager, I would not break the rule.",
+"If I was the villager, I did not break the rule.",
+"If I were the villager, I will not break the rule.",
+"If I had been the villager, I would not break the rule."
+],
+"answer": "②",
+"solution": "현재 사실과 반대되거나 실현 가능성이 낮은 가정은 「If＋주어＋과거동사, 주어＋would＋동사원형」으로 표현한다. be동사는 주어와 관계없이 were를 쓰는 것이 원칙이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-182929326e",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 이용하여 빈칸을 완성하시오.\n\n소들이 충분한 풀을 찾는 것은 쉬웠다.\n→ It __________________________ enough grass. (easy, cows, find)",
+"selfGrade": true,
+"answer": "was easy for the cows to find",
+"solution": "과거의 일이므로 be동사는 was를 쓴다. 「It was easy for＋의미상 주어＋to부정사」의 어순에 맞추면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3e00747bb8",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"The villagers were raised cows.",
+"Everyone were allowed to use the commons.",
+"Each cow was easy to find enough grass.",
+"The farmer let another cow grazed there.",
+"It was possible for each cow to eat enough grass."
+],
+"answer": "⑤",
+"solution": "⑤는 「It was possible for＋의미상 주어＋to부정사」가 바르게 쓰였다. ①은 were를 삭제해야 하고, ②는 was, ③은 It was easy for each cow, ④는 graze로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-38009f53b6",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장 중 어법상 옳은 것만을 모두 고른 것은?\n\nⓐ The villagers were farmers and raised cows.\nⓑ Everyone were allowed to use the grassland.\nⓒ The farmer let his second cow graze on the commons.\nⓓ It was easy for each cows to find enough grass.\nⓔ If I were the farmer, I would follow the rule.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ는 raise의 과거형이, ⓒ는 「let＋목적어＋동사원형」이, ⓔ는 가정법 과거가 바르게 쓰였다. ⓑ의 were는 was로, ⓓ의 cows는 cow로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1e893d95af",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 모두 한 번씩 사용하여 문장을 완성하시오.\n\n각 가정이 소를 한 마리만 기르는 것은 중요했다.\n\n[It / was / important / for / each / family / to / have / only / one / cow]",
+"selfGrade": true,
+"answer": "It was important for each family to have only one cow.",
+"solution": "「~하는 것은 중요했다」는 「It was important to부정사」로 나타낸다. to부정사의 의미상 주어인 each family는 전치사 for 뒤에 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-552473b877",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장에서 어법상 잘못된 부분은?\n\nIf each farmer ①were allowed ②to bring another cow, it ③would be difficult ④of every cow ⑤to find enough grass to eat.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "형용사 difficult 뒤에서 to부정사의 의미상 주어를 나타낼 때는 「for＋목적격」을 쓴다. 따라서 「of every cow」를 「for every cow」로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bf7d3cac34",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 잘못된 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nIt were difficult of each cow finding enough grass to ate.",
+"selfGrade": true,
+"answer": "It was difficult for each cow to find enough grass to eat.",
+"solution": "가주어 구문은 「It was difficult for each cow to find」의 형태로 써야 한다. to 뒤에는 동사원형이 와야 하므로 finding은 find로, ate는 eat으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e20a94e905",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n내가 그 농부라면, 내 친구가 공용지에서 소를 한 마리 더 기르는 것은 위험할 수 있다고 말할 텐데.\n\n<조건>\n• 가정법 과거를 사용할 것\n• 「It＋형용사＋for＋의미상 주어＋to부정사」를 사용할 것\n• raise를 사용할 것",
+"selfGrade": true,
+"answer": "If I were the farmer, I would say that it could be dangerous for my friend to raise one more cow on the commons.",
+"solution": "현재 상황에 대한 가정은 「If I were the farmer, I would say」로 표현한다. that절에서는 가주어 it과 「for my friend to raise」를 사용하여 to부정사의 의미상 주어를 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d4432f7dda",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 의미가 같아지도록 빈칸에 들어갈 말을 고르시오.\n\nScientists estimate that the number of ants is about one million times the number of humans.\n→ Scientists estimate that there are about one million ants for __________ human.",
+"choices": [
+"every",
+"all",
+"both",
+"many",
+"much"
+],
+"answer": "①",
+"solution": "「every + 단수 명사」는 ‘모든 ~’ 또는 ‘~마다’라는 뜻이다. 사람 한 명당 개미가 약 백만 마리 있다는 뜻이므로 every가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0f81d80550",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것을 고르시오.\n\nAnts breathe through tiny holes in their bodies, not through lungs. An ant has a stomach for its own food and another for food that it shares.",
+"choices": [
+"Ants breathe through their stomachs.",
+"Ants use lungs to breathe underwater.",
+"Both stomachs hold food only for the ant itself.",
+"An ant keeps food for sharing in one of its stomachs.",
+"An ant has only one stomach."
+],
+"answer": "④",
+"solution": "개미는 자신을 위한 먹이와 나눌 먹이를 서로 다른 위에 저장한다. 따라서 위 하나에 나눌 먹이를 보관한다는 ④가 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-539fbaaf55",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 up to의 의미를 바르게 이해한 것을 고르시오.\n\nThe lives of some queen ants can last up to thirty years.",
+"choices": [
+"모든 여왕개미가 정확히 30년을 산다.",
+"일부 여왕개미는 30년까지 살 수 있다.",
+"일부 여왕개미는 적어도 30년 넘게 산다.",
+"대부분의 개미는 30년을 산다.",
+"여왕개미만 30년 이상을 산다."
+],
+"answer": "②",
+"solution": "up to는 수량이나 기간의 상한을 나타내어 ‘~까지’라는 뜻이다. some은 ‘일부’이므로 모든 여왕개미나 대부분의 개미에 관한 설명으로 바꾸면 안 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a4c3cbb84c",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 바르게 바꾸어 쓴 것을 고르시오.\n\nAn ant has a pair of stomachs. It keeps food for its own use in one and food for sharing in the other.",
+"choices": [
+"An ant has one stomach, which holds food for others.",
+"Each of an ant’s stomachs holds food only for itself.",
+"An ant shares all the food stored in both stomachs.",
+"One stomach holds food, while the other helps the ant breathe.",
+"Of an ant’s two stomachs, one stores food that the ant can share."
+],
+"answer": "⑤",
+"solution": "a pair of stomachs는 위가 두 개라는 뜻이고, the other는 그중 나머지 하나를 가리킨다. ⑤는 두 위 가운데 하나에 나눌 먹이를 저장한다는 내용을 정확하게 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6655413998",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 판단한 내용 중 옳은 것만을 모두 고른 것을 고르시오.\n\nAnts have no lungs; small openings in their bodies allow them to breathe. Most ants are able to swim and survive underwater for a full day. Certain ants can carry objects weighing fifty times as much as they do.\n\nㄱ. 개미는 폐가 없어도 숨을 쉴 수 있다.\nㄴ. 대부분의 개미는 물속에서 48시간 동안 살 수 있다.\nㄷ. 일부 개미는 자기 몸무게보다 무거운 물체를 옮길 수 있다.\nㄹ. 모든 개미는 자기 몸무게의 50배인 물체를 옮길 수 있다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "개미는 폐 대신 몸의 작은 구멍으로 호흡하므로 ㄱ이 옳다. a full day는 24시간이므로 ㄴ은 틀리고, certain ants는 일부 개미를 뜻하므로 ㄹ도 틀리다. 자기 몸무게의 50배인 물체는 자기보다 무거우므로 ㄷ은 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b869f16190",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 두 학생의 설명이 모두 글의 내용과 일치하도록 괄호 안 표현을 고쳐 쓰시오.\n\nSome queen ants may reach thirty years of age. Most ants can remain alive underwater for twenty-four hours.\n\n학생 가: (Every queen ant) may reach thirty years of age.\n학생 나: Most ants can remain alive underwater for (two full days).\n\n조건\n• 괄호 밖의 표현은 바꾸지 말 것.\n• 학생 가는 세 단어, 학생 나는 두 단어로 고칠 것.\n• 글에 사용된 어휘를 활용하되, 학생 나는 day의 알맞은 형태를 반드시 사용할 것.\n• 정답은 학생 가 / 학생 나의 순서로 쓸 것.",
+"selfGrade": true,
+"answer": "Some queen ants / one day",
+"solution": "일부 여왕개미에 관한 설명을 모든 여왕개미에 관한 설명으로 바꿀 수 없으므로 Some queen ants로 고친다. twenty-four hours는 하루이므로 two full days를 one day로 고친다. 두 표현은 각각 세 단어와 두 단어 조건을 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-51031bb97d",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 같은 뜻이 되도록 주어진 낱말을 모두 한 번씩 사용하여 빈칸을 완성하시오.\n\nAccording to scientists, humans are outnumbered by ants by about a million to one.\n→ Scientists say that __________.\n\n주어진 낱말\nas / million / humans / about / ants / there / many / a / as / times / are\n\n조건\n• 낱말을 추가하거나 형태를 바꾸지 말 것.\n• 빈칸에 들어갈 부분만 쓸 것.",
+"selfGrade": true,
+"answer": "there are about a million times as many ants as humans",
+"solution": "개미 수가 사람 수의 약 백만 배라는 수량 관계를 나타내야 한다. 셀 수 있는 명사의 수를 비교하므로 「배수 + as many + 복수 명사 + as」를 사용한다. 주어진 두 개의 as를 모두 사용하여 as many ants as humans를 구성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c3ebdd1234",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 요약문의 빈칸을 완성하시오.\n\nAn ant uses separate stomachs for different purposes. Food for the ant itself goes into one stomach; food that it can share goes into the other. It breathes through small body openings because it has no lungs.\n\n요약문\nAn ant has two stomachs, but __________.\n\n조건\n• 빈칸에는 ‘두 위 중 어느 것도 호흡에 사용되지 않는다’라는 뜻이 되도록 쓸 것.\n• neither, them, used, breathing을 모두 사용할 것.\n• 정확히 일곱 단어로 쓸 것.\n• 빈칸에 들어갈 부분만 쓸 것.",
+"selfGrade": true,
+"answer": "neither of them is used for breathing",
+"solution": "두 위 모두 먹이 저장에 쓰이고 호흡은 몸의 작은 구멍을 통해 이루어진다. ‘둘 중 어느 것도 ~하지 않는다’는 neither of them으로 나타내며, 여기서는 단수 동사 is를 사용한다. 「be used for + 동명사」를 적용하면 일곱 단어로 조건에 맞게 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-20243e869c",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용에 맞게 잘못된 영문 요약을 고쳐 쓰시오.\n\nThe objects that certain ants can carry may weigh fifty times as much as the ants themselves. A full day underwater is survivable for most ants.\n\n잘못된 요약\nAll ants can carry objects fifty times their own body weight, and most ants can survive underwater for two days.\n\n조건\n• All과 two만 각각 다른 한 단어로 바꿀 것.\n• 단수·복수 일치를 위해 필요한 명사 한 개도 고칠 것.\n• 총 세 단어만 고친 완전한 문장을 쓸 것.\n• 글의 certain ants는 Some ants로 바꾸어 표현할 것.",
+"selfGrade": true,
+"answer": "Some ants can carry objects fifty times their own body weight, and most ants can survive underwater for one day.",
+"solution": "자기 몸무게의 50배인 물체를 옮길 수 있다는 설명은 일부 개미에 해당하므로 All을 Some으로 고친다. a full day는 하루이므로 two를 one으로 바꾸고 days도 단수형 day로 고쳐야 한다. 따라서 정확히 세 단어를 고치면 글의 범위와 수량 관계가 모두 유지된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
 }
 ]

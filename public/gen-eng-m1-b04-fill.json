@@ -713,5 +713,171 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b04-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-2097bf1779",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 단어와 우리말 뜻의 연결이 바르지 않은 것은?",
+"choices": [
+"cliff — 절벽",
+"terrace — 테라스",
+"entrance fee — 입장료",
+"rental shop — 대여점",
+"explore — 기다리다"
+],
+"answer": "⑤",
+"solution": "explore는 ‘탐험하다, 둘러보다’라는 뜻이다. ‘기다리다’에 해당하는 표현은 wait이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-29ddb5aef4",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nG: What are Alex and his family going to do in Jeju-do?\nB: They __________________ the Olle trails.",
+"choices": [
+"are going to walk",
+"walked",
+"are walking yesterday",
+"going to walk",
+"are going walk"
+],
+"answer": "①",
+"solution": "앞으로 할 계획을 말하므로 ‘be going to＋동사원형’을 써야 한다. 주어가 They이므로 are going to walk가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d42778c44d",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "주어진 말에 이어질 대화의 순서로 가장 알맞은 것은?\n\nDo you have any plans for this summer?\n\n(A) Yes. It is my first trip there, so I’m very excited.\n(B) I’m going to Jeju-do with my family.\n(C) Great! Have you ever been there before?",
+"choices": [
+"(A)－(B)－(C)",
+"(B)－(A)－(C)",
+"(B)－(C)－(A)",
+"(C)－(A)－(B)",
+"(C)－(B)－(A)"
+],
+"answer": "③",
+"solution": "여름 계획을 묻는 말에 (B)로 여행 계획을 답한다. 이어서 제주도에 가 본 적이 있는지 묻는 (C)가 나오고, 처음 가는 여행이라고 답하는 (A)가 마지막에 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0628049121",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 알맞은 형태로 바꾸어 문장을 완성하시오.\n\nAmy는 라벤더 정원을 방문하기를 고대하고 있다.\nAmy is looking forward to __________ the Lavender Garden. (visit)",
+"selfGrade": true,
+"answer": "visiting",
+"solution": "look forward to에서 to는 전치사이므로 뒤에 동명사가 온다. 따라서 visit을 visiting으로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-98d8bf05c6",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nRonda stands on cliffs, (A)________ visitors can enjoy fantastic views. Its white buildings also look beautiful (B)________ the blue sky.",
+"choices": [
+"but — under",
+"so — against",
+"because — during",
+"or — between",
+"if — without"
+],
+"answer": "②",
+"solution": "론다가 절벽 위에 있기 때문에 멋진 경치를 볼 수 있다는 결과가 이어지므로 (A)에는 so가 알맞다. 흰 건물이 파란 하늘과 대비되어 아름답다는 뜻이므로 (B)에는 against가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f735c6a50f",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Minji and her family comes to Ronda yesterday.",
+"They are going visit the Ernest Hemingway Walk.",
+"Hemingway loved Ronda and spent many summers there.",
+"Amy is looking forward to visit the Lavender Garden.",
+"Alex going to ride a horse with his family."
+],
+"answer": "③",
+"solution": "③은 과거의 사실을 나타내는 loved와 spent가 병렬로 바르게 연결되어 있다. ①은 came, ②는 going to visit, ④는 visiting, ⑤는 is going to ride로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-77e05b4c1c",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장을 so를 사용하여 한 문장으로 쓰시오.\n\nPurple Island is not big. Amy is going to explore it by bicycle.",
+"selfGrade": true,
+"answer": "Purple Island is not big, so Amy is going to explore it by bicycle.",
+"solution": "앞 문장은 섬이 크지 않다는 이유이고, 뒤 문장은 그에 따른 결과이다. 결과를 연결하는 접속사 so를 두 절 사이에 쓰며, so 앞에는 쉼표를 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-931384a697",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nAmy is visiting Purple Island in Korea. The houses, buses, and bridges there are almost all purple. Because she was wearing a purple T-shirt, she entered the island without paying the entrance fee. She plans to travel around the small island by bicycle and is particularly excited about the Lavender Garden.",
+"choices": [
+"Purple is used for several kinds of things on the island.",
+"Amy did not have to pay to enter the island.",
+"The color of Amy’s clothes was related to free entrance.",
+"Amy plans to use a bicycle to look around the island.",
+"Amy has already finished visiting the Lavender Garden."
+],
+"answer": "⑤",
+"solution": "Amy는 라벤더 정원을 방문하기를 기대하고 있으므로 아직 방문을 마쳤다고 볼 수 없다. 따라서 이미 방문을 끝냈다는 ⑤가 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f7ce13922b",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 조건을 모두 만족하도록 Amy의 계획을 한 문장으로 쓰시오.\n\n조건\n• be going to를 사용할 것\n• explore와 by bicycle을 사용할 것\n• Purple Island를 목적어로 쓸 것",
+"selfGrade": true,
+"answer": "Amy is going to explore Purple Island by bicycle.",
+"solution": "미래의 계획은 ‘be going to＋동사원형’으로 나타낸다. 주어 Amy에 맞추어 is going to explore를 쓰고, 이동 수단은 by bicycle로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-79635e39ec",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 단어들을 모두 한 번씩 사용하여 어법에 맞는 문장을 완성하시오. 필요하면 쉼표를 추가하시오.\n\nRonda / on cliffs / the views / fantastic / is / so / are",
+"selfGrade": true,
+"answer": "Ronda is on cliffs, so the views are fantastic.",
+"solution": "첫 번째 절은 ‘Ronda＋is＋on cliffs’의 어순으로 만든다. 그 결과 경치가 훌륭하다는 두 번째 절을 so로 연결하며, 복수 주어 the views 뒤에는 are를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
 }
 ]
