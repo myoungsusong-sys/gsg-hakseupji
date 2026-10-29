@@ -1,0 +1,187 @@
+[
+{
+"id": "fill-e7ef31a7c0",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 [ ] 부분을 강조하여 바르게 바꿔 쓴 것은?\n\n[Mina] found the missing key.",
+"choices": [
+"It was Mina who found the missing key.",
+"It is Mina whom found the missing key.",
+"It was Mina which find the missing key.",
+"It was the missing key who Mina found.",
+"It did Mina that found the missing key."
+],
+"answer": "①",
+"solution": "사람인 주어 Mina를 강조하므로 「It was + 강조 대상 + who[that] + 나머지」의 형태를 사용한다. 원래 문장이 과거이므로 was와 found를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a2e4fd67e3",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 [ ] 부분을 강조하여 바르게 바꿔 쓴 것은?\n\nWe visited the science museum [on Friday].",
+"choices": [
+"It was the science museum that we visited on Friday.",
+"It was on Friday that we visited the science museum.",
+"It is on Friday when we visited the science museum.",
+"It was Friday who visited the science museum.",
+"It did on Friday that we visit the science museum."
+],
+"answer": "②",
+"solution": "시간을 나타내는 on Friday를 강조구문에서 It was 뒤에 놓는다. 따라서 「It was on Friday that + 주어 + 동사」의 어순인 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7a0fb1c278",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 [ ] 부분을 강조하여 바르게 바꿔 쓴 것은?\n\nDaniel repaired [the old bicycle] yesterday.",
+"choices": [
+"It was Daniel that repaired the old bicycle yesterday.",
+"It was yesterday that Daniel repaired the old bicycle.",
+"It was the old bicycle that Daniel repaired yesterday.",
+"It was the old bicycle that repaired Daniel yesterday.",
+"It is the old bicycle who Daniel repaired yesterday."
+],
+"answer": "③",
+"solution": "강조할 목적어 the old bicycle을 It was 뒤에 놓고, 그 뒤에는 「that + Daniel repaired yesterday」를 쓴다. ③만 강조 대상과 나머지 문장의 관계가 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-75fa0a4d3e",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 [ ] 부분을 강조한 문장으로 가장 적절한 것은?\n\nJoon sent the invitation [to Yuna].",
+"choices": [
+"It was Yuna who sent the invitation to Joon.",
+"It was the invitation that Joon sent to Yuna.",
+"It was to Yuna that Joon sent the invitation.",
+"It was Joon whom sent the invitation to Yuna.",
+"It was to Yuna that sent Joon the invitation."
+],
+"answer": "③",
+"solution": "전치사구 to Yuna 전체가 강조 대상이므로 이를 It was 바로 뒤에 둔다. 나머지는 「that Joon sent the invitation」의 완전한 어순으로 이어져야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-bf88ed94c3",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장의 [ ] 부분을 강조하는 문장으로 바꿔 쓰시오.\n\nThe students met their coach [at the bus stop].",
+"selfGrade": true,
+"answer": "It was at the bus stop that the students met their coach.",
+"solution": "장소를 나타내는 전치사구 at the bus stop을 It was 뒤로 옮긴다. 그 뒤에 that과 나머지 문장 the students met their coach를 차례로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ccab732548",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 원문과 강조구문의 관계가 올바른 것만을 고른 것은?\n\n원문: Eric borrowed my camera during lunch.\n\n(a) It was Eric who borrowed my camera during lunch.\n(b) It was my camera that Eric borrowed during lunch.\n(c) It was during lunch that Eric borrowed my camera.",
+"choices": [
+"(a)",
+"(b)",
+"(c)",
+"(a), (b)",
+"(a), (b), (c)"
+],
+"answer": "⑤",
+"solution": "(a)는 주어 Eric, (b)는 목적어 my camera, (c)는 시간 during lunch를 각각 강조한다. 세 문장 모두 원문의 의미와 시제를 유지한 올바른 강조구문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-63f063f617",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 것은?",
+"choices": [
+"It was my sister who chose this restaurant.",
+"It was in the kitchen that I found the note.",
+"It was these two players who were leading the team.",
+"It was my cousins that was preparing the food.",
+"It was the final question that Kevin could not answer."
+],
+"answer": "④",
+"solution": "④의 강조 대상 my cousins는 복수이며 원래 문장의 주어이므로 뒤의 동사는 were가 되어야 한다. 따라서 「It was my cousins that were preparing the food」로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1f6d143b50",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWe did not leave the café until the rain stopped.\n→ It ______ not until the rain stopped ______ we left the café.",
+"choices": [
+"is - who",
+"was - that",
+"was - what",
+"did - that",
+"were - which"
+],
+"answer": "②",
+"solution": "「It was not until A that B」는 ‘A가 되어서야 비로소 B했다’를 강조하는 구문이다. 원문이 과거이므로 was를 쓰고, 뒤 절 앞에는 that을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-eedd192d96",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장에서 [ ] 부분이 각각 강조되도록 바꿔 쓰시오.\n\n(1) [Ms. Park] showed us the painting.\n(2) Leo finished the report [before noon].",
+"selfGrade": true,
+"answer": "(1) It was Ms. Park who showed us the painting. (2) It was before noon that Leo finished the report.",
+"solution": "(1)은 사람인 주어를 강조하므로 Ms. Park 뒤에 who를 쓴다. (2)는 시간 표현 before noon을 It was 뒤에 두고 that 이하에 나머지 문장을 쓴다. 두 문장 모두 원문의 과거 시제를 유지해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-13710f3d5c",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 부분을 모두 고쳐, the blue umbrella가 강조되도록 문장 전체를 다시 쓰시오.\n\nIt was the blue umbrella which did Sora leave on the train.",
+"selfGrade": true,
+"answer": "It was the blue umbrella that Sora left on the train.",
+"solution": "강조구문의 that절은 일반적인 평서문 어순을 사용하므로 did Sora leave를 Sora left로 고쳐야 한다. 목적어 the blue umbrella가 이미 강조되어 있으므로 that절에는 이를 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-029dbd2a5f",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 장소와 시간을 각각 강조하는 두 문장을 쓰시오. 장소를 강조한 문장을 먼저 쓸 것.\n\nNari discovered the box under the stairs last Saturday.",
+"selfGrade": true,
+"answer": "It was under the stairs that Nari discovered the box last Saturday. It was last Saturday that Nari discovered the box under the stairs.",
+"solution": "첫 번째 문장에서는 장소인 under the stairs를 It was 뒤에 둔다. 두 번째 문장에서는 시간인 last Saturday를 강조 위치로 옮긴다. 각 문장의 that절에는 강조한 요소를 제외한 나머지 내용을 빠짐없이 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+}
+]

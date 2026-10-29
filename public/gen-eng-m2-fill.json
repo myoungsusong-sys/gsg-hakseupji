@@ -1,0 +1,193 @@
+[
+{
+"id": "fill-4dba8bd65b",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n나는 어디에서 표를 사야 할지 모른다.",
+"choices": [
+"I don't know where should I buy a ticket.",
+"I don't know where buying a ticket.",
+"I don't know where to buy a ticket.",
+"I don't know to buy where a ticket.",
+"I don't know where do I buy a ticket."
+],
+"answer": "③",
+"solution": "‘어디에서 ~해야 할지’는 「where＋to부정사」로 나타낸다. 따라서 ‘where to buy a ticket’이 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-e225ce5049",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n오늘 오후에 비가 온다면, 우리는 집에 머물 것이다.",
+"choices": [
+"If it rains this afternoon, we will stay home.",
+"If it will rain this afternoon, we stay home.",
+"If it rains this afternoon, we stayed home.",
+"If it rained this afternoon, we will stay home.",
+"If it will rain this afternoon, we will stayed home."
+],
+"answer": "①",
+"solution": "미래의 일을 나타내더라도 조건을 나타내는 if절에서는 현재 시제를 쓴다. 주절에는 「will＋동사원형」을 사용하므로 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-2273206fa9",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그녀는 그 기계를 사용하는 방법을 안다.",
+"choices": [
+"She knows how use the machine.",
+"She knows how to use the machine.",
+"She knows what to use the machine.",
+"She knows how does she use the machine.",
+"She knows to how use the machine."
+],
+"answer": "②",
+"solution": "‘~하는 방법’은 「how＋to부정사」로 표현할 수 있다. 따라서 ‘how to use the machine’이 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-f00cc22948",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그는 박물관에 가려면 어느 버스를 타야 할지 몰랐다.",
+"choices": [
+"He didn't know which bus should he take to the museum.",
+"He didn't know which bus taking to the museum.",
+"He didn't know what bus did he take to the museum.",
+"He didn't know which bus to take to the museum.",
+"He didn't know to take which bus to the museum."
+],
+"answer": "④",
+"solution": "‘어느 버스를 타야 할지’는 「which＋명사＋to부정사」로 나타낸다. 간접의문문의 어순인 ‘which bus to take’를 사용한 ④가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-2a6dd00b63",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 우리말을 영어로 바르게 옮긴 것은?",
+"choices": [
+"무엇을 가져가야 할지 모른다면, 선생님께 여쭤봐라. → If you don't know what to bring, ask your teacher.",
+"그가 늦는다면, 우리는 먼저 출발할 것이다. → If he will be late, we will leave first.",
+"너는 이 상자를 어떻게 옮겨야 할지 아니? → Do you know how should you move this box?",
+"그녀는 어느 책을 골라야 할지 결정했다. → She decided which book should she choose.",
+"내일 날씨가 좋다면, 우리는 자전거를 탔다. → If the weather is nice tomorrow, we rode our bikes."
+],
+"answer": "①",
+"solution": "‘무엇을 가져가야 할지’는 ‘what to bring’으로 표현하고, if절에는 현재 시제 ‘don't know’를 쓴다. 나머지는 의문사 뒤의 어순이나 if절과 주절의 시제가 잘못되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-b44a8a3044",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 가장 바르게 옮긴 것은?\n\n네가 언제 출발할지 결정하면, 나에게 알려 줘.",
+"choices": [
+"When you will decide when to leave, let me know.",
+"When you decide when should you leave, let me know.",
+"When you decide when to leave, let me know.",
+"When you decided when to leave, you will let me know.",
+"When you decide to when leave, let me know."
+],
+"answer": "③",
+"solution": "시간을 나타내는 when절에서는 미래의 의미라도 현재 시제 ‘decide’를 쓴다. ‘언제 출발할지’는 「when＋to부정사」인 ‘when to leave’로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-de82f0900e",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그녀는 그 상자를 어떻게 열어야 할지 몰랐지만, 나에게 도움을 요청하지 않았다.",
+"choices": [
+"She didn't know how to open the box, but she didn't ask me for help.",
+"She didn't know how did she open the box, but she didn't ask me to help.",
+"She didn't know how opening the box, but she doesn't ask me for help.",
+"She didn't know how should she open the box, but she didn't ask to me for help.",
+"She didn't know to open how the box, but she wasn't ask me for help."
+],
+"answer": "①",
+"solution": "‘어떻게 열어야 할지’는 ‘how to open’으로 나타낸다. ‘도움을 요청하다’는 ‘ask 사람 for help’이며, 두 사건 모두 과거이므로 ‘didn't’를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-02244bcb78",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 가장 바르게 옮긴 것은?\n\n그가 그 정보를 어디에서 얻을지 알아낸다면, 우리에게 말해 줄 것이다.",
+"choices": [
+"If he will find out where to get the information, he tells us.",
+"If he finds out where should he get the information, he will tell us.",
+"If he found out where to get the information, he will tell us.",
+"If he finds out to get where the information, he will tell us.",
+"If he finds out where to get the information, he will tell us."
+],
+"answer": "⑤",
+"solution": "조건을 나타내는 if절에는 현재 시제 ‘finds’를 쓰고, 주절에는 ‘will tell’을 쓴다. ‘어디에서 얻을지’는 ‘where to get’으로 표현하므로 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-131e847c7c",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 괄호 안의 단어를 모두 사용하여 영어로 쓰시오. 단, 필요한 경우 단어의 형태를 바꿀 수 있다.\n\n네가 어떤 과목을 선택해야 할지 모른다면, 부모님과 이야기해라.\n\n(choose, if, subject, talk)",
+"selfGrade": true,
+"answer": "If you don't know which subject to choose, talk with your parents.",
+"solution": "‘어떤 과목을 선택해야 할지’는 「which＋명사＋to부정사」를 사용하여 ‘which subject to choose’로 쓴다. 조건절에는 현재 시제 ‘don't know’를 쓰고, 주절은 명령문 ‘talk with your parents’로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-2668c6211d",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 영어로 쓰시오. 단, 「의문사＋to부정사」와 if를 반드시 각각 한 번씩 사용할 것.\n\n나는 이 문제가 다시 발생한다면 누구에게 연락해야 할지 모르겠다.",
+"selfGrade": true,
+"answer": "I don't know who to contact if this problem happens again.",
+"solution": "‘누구에게 연락해야 할지’는 ‘who to contact’로 나타낸다. 미래에 문제가 다시 발생한다는 의미이지만 조건을 나타내는 if절이므로 현재 시제 ‘happens’를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-500c044ad6",
+"typeId": "eng-m2-u3m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 밑줄 친 부분의 오류를 모두 고쳐 문장 전체를 쓰시오.\n\n그녀가 내일 시간이 있다면, 우리에게 어디에서 만나야 할지 말해 줄 것이다.\n\nIf she will have time tomorrow, she will tell us where should we meet.",
+"selfGrade": true,
+"answer": "If she has time tomorrow, she will tell us where to meet.",
+"solution": "조건을 나타내는 if절에서는 미래의 의미라도 ‘will have’가 아니라 현재형 ‘has’를 쓴다. ‘어디에서 만나야 할지’는 「where＋to부정사」를 사용하여 ‘where to meet’로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m0s0t1",
+"custom": true
+}
+]
