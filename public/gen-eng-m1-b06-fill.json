@@ -1014,5 +1014,126 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b06-u4m1s0t0",
 "custom": true
+},
+{
+"id": "fill-b664410184",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고 답할 수 있는 질문을 고르시오.\n\nAlicia: Are you working on your homework, Hajin?\nHajin: Yes. I’m writing about the job I want in the future.\nAlicia: What is your dream job?\nHajin: I want to play tennis and become a world champion.\nAlicia: That sounds great. I’m interested in AI, so I want to be a computer scientist.",
+"choices": [
+"When will Hajin finish his homework?",
+"Why does Hajin like tennis?",
+"What does Hajin want to be?",
+"Where does Alicia study AI?",
+"Who is Alicia’s favorite scientist?"
+],
+"answer": "③",
+"solution": "하진이는 테니스 선수가 되어 세계 선수권 대회에서 우승하고 싶다고 말한다. 따라서 하진이의 장래 희망을 묻는 ③은 대화의 내용으로 답할 수 있다. 나머지 질문에 필요한 정보는 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a56c2bd47c",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것을 고르시오.\n\nNoah had to talk about his future in class the next day, but he did not know what job he wanted. At home, he listened to his family members. His father had dreamed of traveling to the moon as an astronaut. Angela planned to design robots, and three-year-old Sophie wanted to become either a superhero or a bird. After hearing them, Noah felt even more worried.",
+"choices": [
+"Noah had already chosen his future job.",
+"Noah’s presentation took place that day.",
+"Noah’s father wanted to explore the sea.",
+"Angela wanted to make robots in the future.",
+"Sophie had only one dream job."
+],
+"answer": "④",
+"solution": "Angela는 미래에 로봇을 설계하는 사람이 되고 싶어 한다. 따라서 글의 내용과 일치하는 것은 ④이다. Noah는 직업을 정하지 못했고, Sophie에게는 두 가지 희망이 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-39c6de6455",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 (A)~(C)의 내용이 글과 일치하면 T, 일치하지 않으면 F를 쓸 때, 순서대로 바르게 연결된 것을 고르시오.\n\nNoah told his mother that he was worried because everyone except him seemed to have a dream job. Surprisingly, his mother said that she did not know her dream job, either. Noah could not understand this because she was an adult with a job. He then described her as kind, brave, and caring. His mother explained that becoming such a person had been her hope.\n\n(A) Noah believed that he was the only person without a dream job.\n(B) Noah’s mother said that having a job was the same as having a dream job.\n(C) Noah regarded his mother as a person who cared for others.",
+"choices": [
+"T-T-T",
+"T-F-T",
+"T-F-F",
+"F-T-F",
+"F-F-T"
+],
+"answer": "②",
+"solution": "Noah는 자신만 장래 희망 직업이 없다고 생각했으므로 (A)는 T이다. 어머니는 직업이 있지만 꿈의 직업은 모른다고 했으므로 (B)는 F이고, Noah는 어머니가 다른 사람들을 돌보는 사람이라고 생각하므로 (C)는 T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2af402b6d5",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 Noah가 발표의 방향을 바꾸게 된 계기로 가장 알맞은 것을 고르시오.\n\nAt first, Noah thought that a future presentation had to be about a particular job. While talking with his mother, however, he realized that she valued the kind of person she wanted to become. The following day, Noah spoke about helping other people, facing new experiences bravely, and becoming himself.",
+"choices": [
+"He learned that Sophie had changed her dream.",
+"He decided to choose the same job as his mother.",
+"He realized that a future dream can concern one’s character.",
+"He found that his teacher did not require a presentation.",
+"He became interested in traveling to the moon."
+],
+"answer": "③",
+"solution": "Noah는 처음에는 미래의 꿈을 특정 직업으로만 생각했다. 그러나 어머니와의 대화를 통해 ‘무슨 직업을 가질지’뿐 아니라 ‘어떤 사람이 될지’도 미래의 꿈이 될 수 있음을 깨달았다. 따라서 ③이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5aef0e4a78",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 바탕으로 추론한 내용으로 적절하지 않은 것을 고르시오.\n\nNoah became upset after each family member talked about a dream job. His mother later told him that even she did not know what her dream job was. Noah then listed the qualities he admired in her: she helped others, treated people kindly, and was not afraid. This conversation gave him a new idea for his class presentation. Instead of naming an occupation, he explained the qualities he wished to have.\n\n①~⑤ 중 글의 흐름과 Noah의 생각을 가장 부적절하게 이해한 것은?",
+"choices": [
+"Noah originally felt pressured by the idea of choosing a job.",
+"His mother’s words helped him view the future differently.",
+"Noah came to value personal qualities as part of a future dream.",
+"His final presentation focused on a way of living rather than an occupation.",
+"Noah concluded that thinking about a future job was completely meaningless."
+],
+"answer": "⑤",
+"solution": "Noah가 직업 대신 자신이 되고 싶은 사람의 모습을 발표한 것은 미래를 바라보는 관점이 넓어졌음을 뜻한다. 직업에 관해 생각하는 것 자체가 완전히 무의미하다고 결론 내린 것은 아니다. 따라서 지나치게 확대하여 해석한 ⑤가 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2d85fa4e25",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 질문에 대한 답을 영어로 쓰시오. 단, caring과 brave를 모두 사용하여 5단어로 쓸 것.\n\nNoah did not choose a job for his presentation. He said that he wished to help other people and try unfamiliar things without fear.\n\nQ. What kind of person does Noah want to be?",
+"selfGrade": true,
+"answer": "a caring and brave person",
+"solution": "다른 사람을 돕고 싶다는 말에서 caring을, 두려움 없이 새로운 것에 도전하고 싶다는 말에서 brave를 찾을 수 있다. 두 성격을 모두 포함하고 5단어 조건을 만족하는 답은 ‘a caring and brave person’이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ddefdb8c90",
+"typeId": "eng-m1-b06-u5m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 요약문의 두 빈칸에 들어갈 말을 본문에서 찾아 순서대로 쓰시오.\n\nNoah first asked himself what he wanted to be, but he could not name a job. After his conversation with his mother, he asked a different question: who he wanted to be. He then decided that he wanted to care for others, act bravely, and remain true to himself.\n\nNoah’s concern changed from choosing a future (A)__________ to deciding what kind of (B)__________ he wanted to become.",
+"selfGrade": true,
+"answer": "job, person",
+"solution": "처음 Noah의 고민은 미래의 특정 직업(job)을 고르는 것이었다. 어머니와 대화한 뒤에는 자신이 어떤 사람(person)이 될지를 생각하게 되었다. 따라서 빈칸에는 차례로 job과 person이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m4s0t0",
+"custom": true
 }
 ]

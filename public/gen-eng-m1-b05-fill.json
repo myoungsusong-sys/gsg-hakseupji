@@ -777,5 +777,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-36bc08aca7",
+"typeId": "eng-m1-b05-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"Amelia decided to visited Sokcho.",
+"Subin hopes seeing the sunrise.",
+"At the top, the view was beautifully.",
+"Subin and Amelia talked and laughed a lot.",
+"Every moment of the trip were wonderful."
+],
+"answer": "④",
+"solution": "④의 talked와 laughed는 과거의 일을 나타내며 두 동사가 올바르게 병렬 연결되어 있다. ①은 visit, ②는 to see, ③은 beautiful, ⑤는 was로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-523d5cf76c",
+"typeId": "eng-m1-b05-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "After lunch, Amelia and Subin (A)[visit / visited] the lighthouse. The stairs (B)[was / were] steep, but they walked up (C)[it / them].\n\n윗글의 괄호 (A)~(C)에서 어법상 알맞은 말을 바르게 연결한 것은?",
+"choices": [
+"(A) visit - (B) was - (C) it",
+"(A) visit - (B) were - (C) them",
+"(A) visited - (B) was - (C) them",
+"(A) visited - (B) were - (C) it",
+"(A) visited - (B) were - (C) them"
+],
+"answer": "⑤",
+"solution": "과거에 있었던 일이므로 (A)에는 visited가 알맞다. 복수 주어 The stairs에는 were가 쓰이며, 복수 명사 stairs를 가리키는 목적격 대명사는 them이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-43d9e421f3",
+"typeId": "eng-m1-b05-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 어색한 부분을 바르게 고치지 못한 것은?",
+"choices": [
+"Amelia wanted seeing the sunrise. → seeing을 to see로 고친다.",
+"Here are Amelia's travel diary. → are를 is로 고친다.",
+"Subin and Amelia was tired. → was를 were로 고친다.",
+"The view looked beautifully. → beautifully를 beauty로 고친다.",
+"Every moments of the trip was wonderful. → moments를 moment로 고친다."
+],
+"answer": "④",
+"solution": "looked는 상태를 나타내는 연결동사이므로 뒤에 형용사가 와야 한다. 따라서 beautifully를 beauty가 아니라 beautiful로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d7dbcb7be5",
+"typeId": "eng-m1-b05-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 다섯 부분을 찾아 바르게 고친 말을 글에 나온 순서대로 쓰시오.\n\nAmelia wanted seeing the sunrise, so she waked up very early. She ran to the beach with Subin. Slowly, the sky turned redness, and they made a wish. Every moments of the trip were wonderful.",
+"selfGrade": true,
+"answer": "to see, woke, red, moment, was",
+"solution": "want는 목적어로 to부정사를 취하며, wake의 과거형은 woke이다. turn 뒤에는 형용사 red가 와야 하고, every 뒤에는 단수 명사와 단수 동사인 moment와 was가 쓰인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5a23bd6a65",
+"typeId": "eng-m1-b05-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓕ에 주어진 단어를 어법에 맞는 형태로 바꾸어 순서대로 쓰시오.\n\nAmelia wanted ⓐ(see) the sunrise, so she ⓑ(wake) up early and ⓒ(run) to the beach with Subin. After lunch, they ⓓ(walk) up many steep stairs. The view ⓔ(be) beautiful, and Amelia ⓕ(take) many pictures.",
+"selfGrade": true,
+"answer": "to see, woke, ran, walked, was, took",
+"solution": "want 뒤에는 to부정사인 to see가 쓰인다. 나머지는 모두 과거의 여행을 나타내므로 woke, ran, walked, was, took의 과거형을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0a1d1e2479",
+"typeId": "eng-m1-b05-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓖ 중 어법상 고쳐야 하는 부분의 개수를 쓰시오.\n\nⓐ Amelia wanted to see the sunrise. ⓑ She and Subin putted up two tents near the beach. ⓒ They heard the waves in their tent. ⓓ To wake up early were difficult for Amelia. ⓔ The next morning, they ran to the beach. ⓕ At the top of the lighthouse, the view was beautifully. ⓖ Every moment of the trip were wonderful.",
+"selfGrade": true,
+"answer": "4",
+"solution": "고쳐야 하는 부분은 ⓑ, ⓓ, ⓕ, ⓖ이다. putted는 put, were는 was, beautifully는 beautiful로 고쳐야 하며, every moment가 단수이므로 마지막 were도 was로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u4m1s0t0",
+"custom": true
 }
 ]
