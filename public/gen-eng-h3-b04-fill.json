@@ -227,5 +227,246 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b04-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-f56032a54d",
+"typeId": "eng-h3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Getbol are a muddy environment exposed at low tide.",
+"Soil from the land have accumulated in the sea for thousands of years.",
+"Getbol is rich in nutrients because its soil includes organic matter.",
+"About 118 species of migratory birds visits Korea’s tidal flats every year.",
+"The four tidal flats was included on the UNESCO World Natural Heritage List."
+],
+"answer": "③",
+"solution": "③의 주어 Getbol은 단수이므로 동사 is가 알맞고, because절의 단수 주어 its soil에도 includes가 적절하다. ①은 are를 is로, ②는 have를 has로 고쳐야 한다. ④는 visits를 visit으로, ⑤는 was를 were로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0f03c6993e",
+"typeId": "eng-h3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Korean tidal flats (A)[knowing / known] as getbol provide a valuable habitat for many species. Getbol (B)[covers / is covered] by water at high tide. Soil from the land has accumulated in the sea for thousands of years, (C)[creating / created] thick tidal layers.",
+"choices": [
+"knowing — covers — creating",
+"knowing — is covered — created",
+"known — is covered — creating",
+"known — covers — created",
+"known — is covered — created"
+],
+"answer": "③",
+"solution": "Getbol은 ‘알려지는’ 대상이므로 과거분사 known이 알맞다. 밀물 때 물에 덮이므로 수동태 is covered를 써야 하며, 앞 문장 전체의 결과를 나타내는 분사구문에는 creating이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a8bd23fce2",
+"typeId": "eng-h3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 밑줄 친 부분이 어법상 옳지 않은 것은?",
+"choices": [
+"Data centers use electricity to run large servers.",
+"Storing countless email messages create carbon emissions.",
+"The servers generate large amounts of heat.",
+"A short phone-to-phone email has a carbon footprint.",
+"Email travels through an energy-consuming network, contributing to climate change."
+],
+"answer": "②",
+"solution": "②의 주어는 동명사구 Storing countless email messages이므로 단수로 취급한다. 따라서 동사 create를 creates로 고쳐야 한다. 나머지 문장의 동사 형태와 분사구문은 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-934f83a90c",
+"typeId": "eng-h3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nClimate change is causing extreme weather conditions, (A)[that / which] are becoming more frequent and intense. In 2019, Australia experienced one of its worst wildfires on record. The fires continued for months and (B)[burned / burning] millions of hectares of land. Approximately 30 percent of the koalas in the affected region are said to (C)[be killed / have been killed] in the fires.",
+"choices": [
+"that — burned — be killed",
+"which — burning — be killed",
+"that — burning — have been killed",
+"which — burned — be killed",
+"which — burned — have been killed"
+],
+"answer": "⑤",
+"solution": "쉼표 뒤의 계속적 용법 관계대명사에는 which를 써야 한다. continued와 병렬을 이루는 과거동사 burned가 알맞다. 코알라가 죽은 것은 현재의 판단보다 앞선 일이므로 완료 수동형 have been killed를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-019b0e83ad",
+"typeId": "eng-h3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe Korean tidal flats, ⓐknown as getbol, form a valuable coastal ecosystem. Soil from the land ⓑhas flowed into the sea and accumulated there for thousands of years. Because the soil ⓒinclude organic matter from plants and animals, getbol is rich in nutrients. It is home to many species, some of ⓓwhich globally threatened or near-threatened. Millions of migratory birds that ⓔtravel long distances use the tidal flats as a stopover. Without getbol, the birds would not have a place to rest and feed ⓕthem. Because of its ecological value, getbol ⓖwas added to the UNESCO World Natural Heritage List.",
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ",
+"ⓓ, ⓕ, ⓖ"
+],
+"answer": "③",
+"solution": "ⓒ의 주어 the soil은 단수이므로 include를 includes로 고쳐야 한다. ⓓ는 관계절에 동사가 없으므로 which are globally threatened가 되어야 한다. 새들이 자기 자신에게 먹이를 먹인다는 의미이므로 ⓕ의 them은 themselves가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca73dd0238",
+"typeId": "eng-h3-b04-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓘ 중 어법상 잘못된 네 부분을 찾아, 각각 바르게 고친 표현을 기호 순서대로 쓰시오.\n\nThe international community ⓐhas been seeking solutions to the climate crisis. The countries participating in the Paris Agreement accepted the fact ⓑwhat the increase in atmospheric carbon is a major cause of climate change. One key strategy is carbon neutrality, which ⓒinvolve balancing the amount of carbon emitted with the amount absorbed. To understand its importance, imagine that greenhouse gases ⓓemitting into the atmosphere are like water flowing into a bathtub. At the bottom is a drain ⓔthat lets the water out. If the tap ⓕcontinues to run, the water level rises, just as greenhouse gas emissions ⓖhave led to an increase in atmospheric carbon. If the water were not effectively drained, the bathtub ⓗwill overflow. Likewise, if emissions are not sufficiently reduced, atmospheric carbon ⓘwill continue to accumulate.",
+"selfGrade": true,
+"answer": "that, involves, emitted, would overflow",
+"solution": "ⓑ는 완전한 동격절을 이끄는 접속사 that으로 고쳐야 하며, ⓒ의 선행사 which가 단수인 carbon neutrality이므로 involves가 알맞다. 온실가스는 대기 중으로 ‘배출되는’ 대상이므로 ⓓ는 과거분사 emitted가 되어야 한다. ⓗ는 If절의 were와 호응하는 가정법 과거이므로 will overflow를 would overflow로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-57257f0081",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nA zero-waste store encourages customers to shop with less plastic. Instead of receiving plastic bags, customers (A)[bring / discard] their own containers. Products such as shampoo and soap are sold without packaging. This shopping practice helps (B)[reduce / increase] plastic waste. By choosing this kind of store, customers can take part in efforts to (C)[protect / damage] the environment.",
+"choices": [
+"bring — reduce — damage",
+"discard — increase — protect",
+"bring — reduce — protect",
+"discard — reduce — damage",
+"bring — increase — protect"
+],
+"answer": "③",
+"solution": "포장 없이 물건을 구매하려면 고객이 자신의 용기를 가져와야 하므로 (A)는 bring이다. 이러한 구매 방식은 플라스틱 쓰레기를 줄이고 환경을 보호하므로 (B)는 reduce, (C)는 protect가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-23798347b9",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nClimate change affects more than glaciers and polar bears. Extreme weather events are becoming more (A)[frequent / rare], and their effects are being felt around the world. To address this problem, countries have sought ways to (B)[limit / encourage] the rise in global temperature. Achieving carbon neutrality is one important strategy. It requires a (C)[balance / difference] between the amount of carbon released and the amount absorbed.",
+"choices": [
+"frequent — limit — balance",
+"rare — limit — difference",
+"frequent — encourage — difference",
+"rare — encourage — balance",
+"frequent — limit — difference"
+],
+"answer": "①",
+"solution": "기후 변화로 극한 기상 현상이 더 자주 발생한다는 흐름이므로 (A)는 frequent이다. 기온 상승은 억제해야 하며, 탄소 중립은 배출량과 흡수량 사이의 균형을 뜻하므로 (B)는 limit, (C)는 balance이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-28ccac356d",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nSending and storing emails requires energy. Data centers operate servers that (A)[store / erase] messages so that users can access them. Running these servers and cooling the heat they produce requires (B)[electricity / packaging]. Therefore, removing messages that are no longer needed can help us (C)[lower / raise] the environmental impact of email use.",
+"choices": [
+"erase — electricity — lower",
+"store — packaging — raise",
+"erase — packaging — lower",
+"store — electricity — raise",
+"store — electricity — lower"
+],
+"answer": "⑤",
+"solution": "사용자가 이메일에 접근할 수 있도록 서버는 메시지를 저장하므로 (A)는 store이다. 서버 가동과 냉각에는 전기가 필요하고, 불필요한 이메일 삭제는 환경 영향을 줄이는 데 도움이 되므로 (B)는 electricity, (C)는 lower이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-df5a967c03",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nThe former view of getbol as land of little value encouraged its conversion into farmland and urban areas. As tidal flats became smaller, biodiversity (A)[declined / recovered]. Their ability to store carbon, however, gives us a reason to reconsider that old view. Getbol can help (B)[offset / generate] carbon dioxide emissions by absorbing carbon dioxide. Recognizing this value, the government and environmental organizations seek to (C)[restrict / promote] unnecessary development.",
+"choices": [
+"recovered — offset — restrict",
+"declined — offset — restrict",
+"declined — generate — restrict",
+"recovered — generate — promote",
+"declined — offset — promote"
+],
+"answer": "②",
+"solution": "갯벌 면적 감소가 생물 다양성 손실로 이어졌으므로 (A)는 declined이다. 갯벌의 이산화 탄소 흡수는 배출량을 상쇄하는 역할을 하므로 (B)는 offset이다. 갯벌 보호를 위해 불필요한 개발을 제한한다는 흐름에서 (C)는 restrict가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-fdea864df7",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nThe bathtub comparison helps distinguish a reduction in carbon emissions from a reduction in atmospheric carbon. Turning down a tap does not necessarily make the water level fall: if water still enters faster than it leaves, the level keeps rising. Similarly, a smaller amount of carbon released each year may merely (A)[slow / reverse] the increase in atmospheric carbon. Carbon neutrality requires emissions to be (B)[matched / exceeded] by absorption, so that equal amounts enter and leave the atmosphere. Thus, reaching neutrality would (C)[halt / accelerate] further accumulation; it would not, by itself, remove the carbon already present.",
+"choices": [
+"reverse — matched — halt",
+"slow — exceeded — halt",
+"slow — matched — accelerate",
+"slow — matched — halt",
+"reverse — exceeded — accelerate"
+],
+"answer": "④",
+"solution": "배출량이 줄어도 유입량이 흡수량보다 많다면 대기 중 탄소는 계속 늘어나므로, 증가를 역전시키는 것이 아니라 늦춘다는 slow가 알맞다. 탄소 중립에서는 배출량과 흡수량이 같아야 하므로 (B)는 matched이다. 이 균형은 추가 축적을 멈추지만 기존 탄소를 그 자체로 제거하지는 않으므로 (C)는 halt이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0d5fb00d8a",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nAn email can appear harmless because the user sees a message on a screen rather than fuel being burned. Yet the absence of visible pollution should not be (A)[equated / contrasted] with the absence of an environmental cost. Messages depend on data centers, where energy is needed both to operate servers and to remove the heat those servers produce. Cooling therefore (B)[adds to / compensates for] the centers’ energy requirements: it uses electricity rather than supplying it. From this perspective, keeping every message regardless of its usefulness is (C)[inconsistent / compatible] with the effort to reduce unnecessary email storage and its associated carbon emissions.",
+"choices": [
+"equated — adds to — inconsistent",
+"contrasted — adds to — inconsistent",
+"equated — compensates for — compatible",
+"contrasted — compensates for — inconsistent",
+"equated — adds to — compatible"
+],
+"answer": "①",
+"solution": "눈에 보이는 오염이 없다는 것을 환경적 비용이 없다는 것과 동일시해서는 안 되므로 (A)는 equated이다. 냉각도 전기를 소비하므로 에너지 수요를 상쇄하는 것이 아니라 더한다는 adds to가 적절하다. 필요 여부와 관계없이 모든 이메일을 보관하는 행동은 불필요한 저장을 줄이려는 노력과 일치하지 않으므로 (C)는 inconsistent이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6dfe4e85ab",
+"typeId": "eng-h3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nThe history of getbol shows how a judgment about land can influence its treatment. When tidal flats were dismissed as useless, their conversion for farming and urbanization seemed easier to justify. Their capacity to store carbon now (A)[undermines / reinforces] that earlier judgment. Nevertheless, acknowledging their value does not undo the loss of tidal-flat area or biodiversity. Restrictions on unnecessary development serve a preventive purpose, whereas restoration addresses damage that has already occurred. The latter therefore (B)[complements / duplicates] the former: their functions differ, but both support protection. To assume that restrictions alone make restoration unnecessary would be to (C)[underestimate / overestimate] what preventing further damage can accomplish for an already damaged ecosystem.",
+"choices": [
+"reinforces — complements — overestimate",
+"undermines — duplicates — underestimate",
+"undermines — complements — overestimate",
+"reinforces — duplicates — overestimate",
+"undermines — complements — underestimate"
+],
+"answer": "③",
+"solution": "탄소 저장 능력은 갯벌이 쓸모없다는 과거의 판단을 약화하므로 (A)는 undermines이다. 개발 제한은 추가 훼손을 예방하고 복원은 기존 손상을 다루므로, 복원은 제한의 역할을 보완한다는 complements가 알맞다. 예방만으로 복원까지 불필요해진다고 보는 것은 예방이 달성할 수 있는 범위를 과대평가하는 것이므로 (C)는 overestimate이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m0s0t0",
+"custom": true
 }
 ]

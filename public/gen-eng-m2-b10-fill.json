@@ -336,5 +336,120 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b10-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-bb00b28d7e",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 표현의 의미로 가장 알맞은 것은?\n\nAfter looking at the screen for a long time, Jin decided to give her eyes a break.",
+"choices": [
+"눈을 크게 뜨다",
+"눈을 잠시 쉬게 하다",
+"눈을 자주 비비다",
+"화면을 가까이에서 보다",
+"시력을 정기적으로 검사하다"
+],
+"answer": "②",
+"solution": "‘give one’s eyes a break’는 눈이 쉴 수 있도록 잠시 화면을 보지 않는다는 뜻이다. 따라서 ‘눈을 잠시 쉬게 하다’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1343a76b5b",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 영어 단어와 우리말 뜻의 연결이 알맞지 않은 것은?",
+"choices": [
+"maximum ― 허용되는 가장 큰 양이나 수치",
+"harm ― 손상이나 해를 입히다",
+"forgetful ― 무언가를 자주 잊는",
+"rub ― 손으로 세게 누르며 문지르다",
+"block out ― 소리가 더 잘 들리게 하다"
+],
+"answer": "⑤",
+"solution": "‘block out’은 빛이나 소리 등이 들어오지 못하게 ‘차단하다’라는 뜻이다. 소리를 더 잘 들리게 한다는 ⑤의 설명은 반대 의미이므로 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-76a69553d0",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\n• Loud music can __________ your hearing.\n• Looking down at a phone can __________ stress on your neck.\n• You should __________ your phone at eye level.",
+"choices": [
+"harm ― increase ― hold",
+"rest ― block ― increase",
+"increase ― harm ― forget",
+"hold ― rest ― rub",
+"block ― hold ― harm"
+],
+"answer": "①",
+"solution": "큰 음악 소리는 청력을 ‘해칠(harm)’ 수 있고, 고개를 숙이는 자세는 목의 부담을 ‘증가시킬(increase)’ 수 있다. 휴대전화는 눈높이에 ‘들어야(hold)’ 하므로 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b53852ea27",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 표현을 바꾸어 쓴 것이 문장의 의미와 일치하지 않는 것은?",
+"choices": [
+"Jin is so into her smartphone. → Jin is very interested in her smartphone.",
+"Make sure the volume is below 60 percent. → Be certain that the volume is under 60 percent.",
+"Bailey waited for Jin all day. → Bailey spent the whole day waiting for Jin.",
+"Please take the earphones off. → Please continue wearing the earphones.",
+"Look far away during the break. → Direct your eyes toward something in the distance."
+],
+"answer": "④",
+"solution": "‘take the earphones off’는 이어폰을 ‘벗다’라는 뜻이다. ‘continue wearing the earphones’는 이어폰을 계속 착용하라는 의미이므로 원문과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-987c67533a",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 같은 의미가 되도록 빈칸에 들어갈 말을 순서대로 쓰시오.\n\nBe certain that you keep the volume under 60 percent of the highest level.\n= __________ __________ the volume is below 60 percent of the maximum.",
+"selfGrade": true,
+"answer": "Make sure",
+"solution": "‘be certain that’은 ‘반드시 ~하도록 하다’라는 의미로 ‘make sure’와 바꾸어 쓸 수 있다. ‘highest level’은 ‘maximum’, ‘under’는 ‘below’로 이미 바뀌어 있으므로 빈칸에는 ‘Make sure’가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c1bb7cd2aa",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 상황에 대한 답을 완전한 영어 문장으로 쓰시오.\n\nAt 4 p.m., Jin could not hear Bailey because of her earphones, and the sound coming from them was very loud.\n\nQ. Why did Bailey ask Jin to remove her earphones?\nA. Because the loud sounds ____________________________________________.",
+"selfGrade": true,
+"answer": "could harm her hearing",
+"solution": "Bailey는 이어폰에서 나오는 큰 소리가 Jin의 청력을 해칠 수 있다고 걱정했다. ‘~을 해칠 수 있다’는 ‘could harm’, ‘그녀의 청력’은 ‘her hearing’으로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-44c6ea8725",
+"typeId": "eng-m2-b10-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 의미가 같도록 주어진 단어를 모두 활용하여 문장을 완성하시오. 필요한 경우 단어의 형태를 바꿀 수 있다.\n\n스마트폰 없이도 너는 해야 할 일을 기억할 만큼 충분히 똑똑하다.\n\n(enough / remember / without)\n\nYou are ________________________________________________ your smartphone.",
+"selfGrade": true,
+"answer": "smart enough to remember what to do without",
+"solution": "‘형용사+enough+to부정사’는 ‘~할 만큼 충분히 …한’이라는 뜻이다. ‘해야 할 일’은 ‘what to do’, ‘스마트폰 없이’는 ‘without your smartphone’으로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m7s0t0",
+"custom": true
 }
 ]

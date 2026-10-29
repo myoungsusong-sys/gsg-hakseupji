@@ -240,5 +240,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b05-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-27e6629bbf",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nW: Your model airplane is amazing. Do you enjoy (A)[assemble / assembling] models?\nM: Yes. Putting the small pieces together (B)[helps / help] me forget everything else.\nW: I prefer spending time outdoors, but your hobby also looks interesting.\nM: I can help you (C)[to make / making] one if you want.",
+"choices": [
+"assemble - helps - to make",
+"assembling - helps - to make",
+"assembling - help - making",
+"assemble - help - to make",
+"assembling - helps - making"
+],
+"answer": "②",
+"solution": "enjoy는 목적어로 동명사를 취하므로 (A)는 assembling이 알맞다. 동명사구 Putting the small pieces together는 단수로 취급하므로 (B)는 helps를 쓰며, help의 목적격 보어로는 to부정사인 to make를 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d75db16566",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nEinstein began (A)[to learn / learn] sailing when he was eighteen. Although he was not highly skilled, he continued (B)[enjoying / enjoyed] the hobby throughout his life. Being on the water allowed him (C)[forget / to forget] his worries.",
+"choices": [
+"to learn - enjoying - to forget",
+"to learn - enjoyed - forget",
+"learn - enjoying - to forget",
+"learn - enjoyed - forget",
+"to learn - enjoying - forget"
+],
+"answer": "①",
+"solution": "begin은 목적어로 to부정사를 취할 수 있으므로 to learn이 알맞다. continue 뒤에는 동명사 enjoying을 쓸 수 있고, allow는 ‘allow＋목적어＋to부정사’의 구조이므로 to forget이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-01db174fd6",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe PCT (A)[stretch / stretches] across three states and seven national parks. Its varied landscapes give hikers a chance (B)[to experience / experiencing] both desert regions and mountain ranges. However, only a small percentage of those attempting a thru-hike (C)[succeed / succeeds] in finishing it.",
+"choices": [
+"stretch - to experience - succeed",
+"stretches - experiencing - succeeds",
+"stretches - to experience - succeed",
+"stretch - experiencing - succeeds",
+"stretches - to experience - succeeds"
+],
+"answer": "③",
+"solution": "주어 The PCT가 단수이므로 stretches가 알맞고, a chance 뒤에서는 to부정사가 chance를 수식한다. 마지막 문장의 주어는 a small percentage of those이므로 복수 동사 succeed가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-06f671b772",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nTolkien created Sindarin and Quenya, the former (A)[being / was] inspired by Welsh and the latter by Finnish and Latin. Because language creation required him to work alone, he wrote about the frustration (B)[experienced / experiencing] by people who shared his passion. Today, the Internet makes it possible for such people (C)[to find / finding] one another and work together.",
+"choices": [
+"being - experienced - to find",
+"was - experienced - finding",
+"being - experiencing - finding",
+"was - experiencing - to find",
+"being - experienced - finding"
+],
+"answer": "①",
+"solution": "(A)는 독립분사구문이므로 being이 알맞다. frustration은 사람들이 ‘겪는’ 대상이므로 과거분사 experienced가 수식해야 한다. ‘make it possible for＋목적어＋to부정사’ 구조에 따라 (C)는 to find가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5311e96d8a",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳지 않은 것의 개수는?\n\nPeople who ⓐtakes their hobbies seriously make meaningful efforts ⓑto improve their skills, take risks, and ⓒovercome hardships. Neither watching TV nor surfing online ⓓare generally regarded as a serious hobby because neither activity ⓔoffers a clear challenge or a way to improve oneself.",
+"choices": [
+"0개",
+"1개",
+"2개",
+"3개",
+"4개"
+],
+"answer": "③",
+"solution": "관계대명사 who의 선행사가 복수인 People이므로 ⓐtakes는 take로 고쳐야 한다. ‘neither A nor B’의 동사는 가까운 주어인 단수 동명사구 surfing online에 맞춰야 하므로 ⓓare는 is가 되어야 한다. 나머지는 병렬 구조와 수의 일치가 모두 적절하므로 오류는 2개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4c8f926ffb",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAlthough (A)[regarded / regarding] as a genius in physics, Einstein did not consider himself a skilled sailor. Neither his basic technique nor the apparent meaninglessness of his adventures (B)[prevented / were prevented] him from enjoying his time on the water. It was the complete relaxation he found there (C)[what / that] mattered most to him.",
+"choices": [
+"regarded - prevented - that",
+"regarded - were prevented - what",
+"regarding - prevented - that",
+"regarded - prevented - what",
+"regarding - were prevented - that"
+],
+"answer": "①",
+"solution": "(A)는 Einstein이 천재로 ‘여겨지는’ 관계이므로 과거분사 regarded가 알맞다. prevent는 ‘prevent＋목적어＋from＋동명사’로 쓰이며, 주어가 행위의 주체이므로 능동형 prevented가 적절하다. 마지막 문장은 ‘It was＋강조 대상＋that’ 강조 구문이므로 (C)는 that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true
 }
 ]

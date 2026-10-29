@@ -296,5 +296,183 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b07-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-e305091878",
+"typeId": "eng-h3-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAt the age of fifteen, Lazylegz (A)[introduced / was introduced] to breakdancing. He developed his own style (B)[by using / by use] his crutches as extensions of his arms. Later, he formed ILL-Abilities to encourage people of all abilities (C)[to pursue / pursuing] their passions.",
+"choices": [
+"introduced ― by using ― to pursue",
+"was introduced ― by use ― pursuing",
+"was introduced ― by using ― to pursue",
+"introduced ― by use ― pursuing",
+"was introduced ― by using ― pursuing"
+],
+"answer": "③",
+"solution": "Lazylegz는 브레이크댄스를 소개받은 대상이므로 수동태 was introduced가 적절하다. 전치사 by 뒤에는 동명사 using이 오며, encourage는 목적격 보어로 to부정사를 취하므로 to pursue가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4cb9b4ef34",
+"typeId": "eng-h3-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nAddario’s career changed greatly after she went to Afghanistan. Her photographs ①captured the courage and resilience of Afghan women. Her work has ②taken her to several regions ③torn by war. Although she ④was captured twice, she continued ⑤document the suffering caused by conflicts.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "continue는 목적어로 to부정사나 동명사를 취하므로 continued to document 또는 continued documenting로 써야 한다. 나머지 밑줄은 능동태, 과거분사, 수동태의 쓰임이 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b500eab74f",
+"typeId": "eng-h3-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Every graduate have the talent to succeed.",
+"Lazylegz became an advocate by bring people together.",
+"Addario photographed people caught in conflicts.",
+"The dancers were encouraged pursuing their passions.",
+"The past few years have been excited for Lazylegz."
+],
+"answer": "③",
+"solution": "③의 caught는 people이 분쟁에 휘말린 수동 관계이므로 적절한 과거분사이다. ①은 has, ②는 bringing, ④는 to pursue, ⑤는 exciting으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9510813559",
+"typeId": "eng-h3-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nThe speaker believes that nothing in life ①is valuable unless people take risks. When deciding ②what they want to do, students are often told ③to make sure that they have something safe to fall back on. However, the many failed experiments of Thomas Edison ④was part of his progress. The speaker therefore tells graduates that they should not fear that they will ⑤embarrass themselves.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "주어의 핵심어는 복수 명사 experiments이므로 동사는 were가 되어야 한다. what은 deciding의 목적어 역할과 뒤 절의 목적어 역할을 동시에 하며, tell은 목적격 보어로 to부정사를 취한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8e198a8e7c",
+"typeId": "eng-h3-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 알맞은 것을 모두 고른 것은?\n\nAddario has repeatedly risked her life to photograph those ⓐcaught in conflicts. Her work gained international recognition, ⓑserved as a stepping stone for later achievements. It also took her to regions ⓒtearing apart by war. She is now at a point ⓓwhere many of her friends are not. She believes that there is a reason ⓔwhy she is still here and that she must keep ⓕpush forward.",
+"choices": [
+"ⓐ, ⓒ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ는 those와 수동 관계인 caught, ⓓ는 선행사가 지점·단계의 의미인 point이므로 where, ⓔ는 reason을 수식하는 why가 적절하다. ⓑ는 serving, ⓒ는 torn, ⓕ는 pushing으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-97c3f73953",
+"typeId": "eng-h3-b07-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A)~(E)에서 어법상 알맞은 말을 골라 순서대로 쓰시오.\n\nWhen deciding (A)[that / what] path to follow, students are often advised (B)[keeping / to keep] something to fall back on. The speaker, however, says that a person who (C)[take / takes] no risks cannot gain anything valuable. Each failed attempt can (D)[regard / be regarded] as a step toward success. Therefore, graduates should accept failure even if it sometimes makes them (E)[embarrass / embarrass themselves].",
+"selfGrade": true,
+"answer": "what, to keep, takes, be regarded, embarrass themselves",
+"solution": "what은 deciding의 목적어이면서 뒤의 부정사에서 follow의 목적어 역할을 한다. advise는 목적격 보어로 to부정사를 취하고, 관계대명사 who의 선행사가 단수이므로 takes가 알맞다. 시도는 성공의 과정으로 여겨지는 대상이므로 be regarded를 쓰며, make 뒤에는 목적어와 원형부정사인 them embarrass themselves가 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d88d175444",
+"typeId": "eng-h3-b07-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 표시된 부분 중 어법상 어색한 것은?\n\nSome companies use dark patterns ①to influence consumers. Important details may ②be hidden from users. A company may make its cancellation link ③difficult to find. Users therefore need to examine the information ④carefully. They should remember ⑤what a company's interests may differ from their own.",
+"choices": [
+"① to influence",
+"② be hidden",
+"③ difficult",
+"④ carefully",
+"⑤ what"
+],
+"answer": "⑤",
+"solution": "remember 뒤에는 주어와 동사를 갖춘 완전한 절이 이어지므로 접속사 that을 써야 한다. what은 절 안에서 주어나 목적어 등의 역할을 해야 하므로 이 문장에 사용할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-44f292570d",
+"typeId": "eng-h3-b07-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 (A), (B)에 들어갈 말이 어법상 알맞게 짝지어진 것은?\n\nA message (A)[showing / shown] what most people do can influence a person's choice. Although people make the final decision themselves, they may (B)[have nudged / have been nudged] by the message.",
+"choices": [
+"(A) showing — (B) have nudged",
+"(A) showing — (B) have been nudged",
+"(A) shown — (B) have nudged",
+"(A) shown — (B) have been nudged",
+"(A) show — (B) have been nudged"
+],
+"answer": "②",
+"solution": "message가 사람들이 하는 행동을 보여 주는 주체이므로 능동의 현재분사 showing을 쓴다. 사람들은 메시지에 의해 영향을 받는 대상이므로 완료 수동형 have been nudged가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aa8e1d61a6",
+"typeId": "eng-h3-b07-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 짝지어진 것은?\n\nRoad markings can change how drivers judge their speed. Near a dangerous curve, the spaces between successive lines become progressively smaller, (A)[creating / created] the impression that a vehicle is accelerating. This impression encourages drivers approaching the curve (B)[to brake / braking]. The idea (C)[that / which] changes in visual design can influence behavior also underlies the use of painted three-dimensional crosswalks.",
+"choices": [
+"(A) creating — (B) braking — (C) that",
+"(A) created — (B) to brake — (C) which",
+"(A) creating — (B) to brake — (C) that",
+"(A) created — (B) braking — (C) that",
+"(A) creating — (B) to brake — (C) which"
+],
+"answer": "③",
+"solution": "앞 절의 상황이 가속하는 듯한 인상을 만들어 내므로 (A)에는 결과를 나타내는 현재분사 creating이 알맞다. encourage는 목적격 보어로 to부정사를 취하므로 (B)는 to brake이다. (C) 뒤는 완전한 절로 idea의 내용을 설명하므로 동격 접속사 that을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca167068d7",
+"typeId": "eng-h3-b07-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 틀린 부분을 모두 찾아 바르게 고쳐 쓰시오. 각 표시 부분 전체를 교체하되, 나머지 표현은 바꾸지 말고 글의 의미와 시제를 유지할 것. 정답은 '기호: 수정한 표현'의 형식으로 쓰시오.\n\nCompanies offering free trials argue that automatic renewal enables customers ⓐto continue using a service without interruption. Yet customers may receive no notice that their credit cards are about ⓑto charge, a practice often ⓒcaused them to face unexpected bills. Finding cancellation information can also be difficult: a company may make the link, even when it is included in a message, almost ⓓinvisibly. Small letters are difficult to read, as ⓔis gray text against a dark background. Consumers should therefore remain aware ⓕwhat the goals pursued by a company do not necessarily match their own.",
+"selfGrade": true,
+"answer": "ⓑ: to be charged; ⓒ: causing; ⓓ: invisible; ⓕ: that",
+"solution": "ⓑ는 신용 카드에 요금이 청구되는 수동 관계이므로 to be charged로 고친다. ⓒ는 a practice가 예상 밖의 청구를 겪게 하는 주체이므로 이를 능동으로 수식하는 causing이 알맞다. ⓓ는 make의 목적격 보어이므로 형용사 invisible이 필요하며, ⓕ 뒤에는 완전한 절이 이어지므로 that을 쓴다. ⓐ는 enable의 목적격 보어인 to부정사이고, ⓔ는 도치된 단수 주어 gray text에 일치하는 동사이므로 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true
 }
 ]

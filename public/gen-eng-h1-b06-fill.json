@@ -3294,5 +3294,223 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-bb0911a30a",
+"typeId": "eng-h1-b06-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 강연의 내용과 일치하는 것은?\n\nDr. Edward Wilson had difficulty finding the lecture room. Fortunately, a friendly student approached him and guided him there. This experience made him think about where human friendliness comes from and why it matters. To explore these questions, he began talking about Sparky, the dog he had as a child. Sparky reacted well to Wilson’s gestures while they played with a ball.",
+"choices": [
+"Dr. Wilson found the lecture room without anyone’s help.",
+"A student asked Dr. Wilson for directions to the lecture room.",
+"Dr. Wilson became curious about the origin and importance of friendliness.",
+"Sparky rarely understood Dr. Wilson’s gestures during play.",
+"Dr. Wilson first met Sparky in the lecture room."
+],
+"answer": "③",
+"solution": "학생의 도움을 받은 Wilson 박사는 친화성이 어디에서 비롯되고 왜 중요한지 생각하게 되었다. 따라서 강연 내용과 일치하는 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c000f155e7",
+"typeId": "eng-h1-b06-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nDr. Hare’s team studied cooperation in chimpanzees and bonobos. Two animals had to pull the opposite ends of a rope simultaneously to obtain food from a board. Chimpanzees cooperated when they were paired with familiar partners, but they usually failed with unfamiliar ones. Bonobos, however, solved the task regardless of their partners and were more willing to share the food.",
+"choices": [
+"What did the animals have to pull?",
+"Why did the researchers use a rope-pulling device?",
+"With whom could chimpanzees successfully cooperate?",
+"How did bonobos behave after obtaining the food?",
+"How many bonobos participated in the experiment?"
+],
+"answer": "⑤",
+"solution": "글에는 실험 장치와 목적, 침팬지의 협력 조건, 보노보의 음식 공유 행동이 제시되어 있다. 그러나 실험에 참여한 보노보의 수는 언급되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2d92a6fde4",
+"typeId": "eng-h1-b06-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 따르면, Homo sapiens가 Neanderthals보다 생존에 유리했을 가능성이 가장 큰 이유는?\n\nNeanderthals were intelligent and physically stronger than Homo sapiens. They could also make tools and use fire. Homo sapiens, however, generally formed larger communities where individuals cooperated and freely shared what they knew. These social qualities may have helped them respond successfully to environmental changes.",
+"choices": [
+"They had broader shoulders and stronger muscles.",
+"They avoided exchanging knowledge with others.",
+"They lived alone to escape competition.",
+"They benefited from cooperation in larger communities.",
+"They were the only group capable of making tools."
+],
+"answer": "④",
+"solution": "Homo sapiens는 더 큰 공동체에서 협력하고 지식을 자유롭게 교환했다. 이러한 사회적 특성이 환경 변화에 적응하는 데 이점을 주었으므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d59aa89d4c",
+"typeId": "eng-h1-b06-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화를 통해 추론할 수 있는 것으로 가장 적절한 것은?\n\nAndy: Brian still hasn’t completed his part of our group project, and the deadline is only two days away.\nMom: Why don’t you explain your concern to him?\nAndy: I’m afraid that might hurt our friendship.\nMom: You’ve been friends for a long time. He’ll probably understand you.\nAndy: All right. I’ll try talking to him.",
+"choices": [
+"Andy plans to finish Brian’s part without telling him.",
+"Andy cares about both the project and his friendship with Brian.",
+"Brian has already apologized for missing the deadline.",
+"Andy’s mother advises him to end his friendship with Brian.",
+"Andy has decided not to participate in the group project."
+],
+"answer": "②",
+"solution": "Andy는 Brian이 맡은 일을 하지 않아 걱정하면서도, 자신의 불만을 말하면 우정이 상할까 염려한다. 따라서 그는 과제의 완성과 Brian과의 우정을 모두 중요하게 생각한다고 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-893d52da20",
+"typeId": "eng-h1-b06-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용으로 보아 추론할 수 없는 것은?\n\nChimpanzees and bonobos are genetically similar but differ in their nature. In a cooperative task, chimpanzees worked successfully with partners they knew. With new partners, they generally failed; even when they succeeded, they kept the food rather than sharing it. Bonobos completed the task with any partner and shared the reward more readily. Experts believe that the cooperative and friendly nature of bonobos has contributed to their survival.",
+"choices": [
+"Genetic similarity does not necessarily lead to identical social behavior.",
+"Familiarity with a partner affected the chimpanzees’ cooperation.",
+"Bonobos showed greater flexibility in choosing cooperative partners.",
+"Friendliness may provide a species with an advantage in survival.",
+"Chimpanzees’ physical inferiority prevented them from completing the task."
+],
+"answer": "⑤",
+"solution": "글은 침팬지의 성공 여부가 상대에 대한 친숙함과 관련 있음을 보여 줄 뿐, 신체적 열등함을 실패 원인으로 제시하지 않는다. 나머지 선택지는 두 종의 행동 차이와 전문가의 설명을 통해 추론할 수 있으므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8881c84371",
+"typeId": "eng-h1-b06-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고, <보기>의 질문 중 글의 내용만으로 답할 수 있는 것의 개수는?\n\nNeanderthals and Homo sapiens lived during the same period until about 40,000 years ago. Neanderthals were intelligent, had powerful bodies, and knew how to make tools and fire. Nevertheless, Homo sapiens eventually survived and prospered. One explanation focuses on their larger communities, which encouraged cooperation and the open exchange of knowledge. These social differences may have improved their ability to adjust to a changing environment.\n\n<보기>\n(a) Until approximately when did the two groups coexist?\n(b) What physical features did Neanderthals have?\n(c) Who first taught Homo sapiens how to make fire?\n(d) How might large communities have benefited Homo sapiens?\n(e) In which exact region did Neanderthals become extinct?",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "(a)는 공존 시기, (b)는 Neanderthals의 강한 신체, (d)는 큰 공동체가 제공한 협력과 지식 교환의 이점으로 답할 수 있다. 불을 가르친 주체와 정확한 멸종 지역은 제시되지 않았으므로 답할 수 있는 질문은 총 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e99a13eb05",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 주어진 단어를 올바르게 배열하여 문장을 완성하시오.\n\n우리는 동물들에게 해를 끼칠 수 있는 위험 요소가 있는지 확인했다.\n\n[ any / checked / animals / there / if / hazards / harm / could / were / we / that ]",
+"selfGrade": true,
+"answer": "We checked if there were any hazards that could harm animals.",
+"solution": "‘~인지’를 나타내는 if절을 checked의 목적어로 사용한다. hazards를 선행사로 하고 주격 관계대명사 that이 이끄는 절이 이를 수식하도록 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2e81fc5258",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 빈칸에 들어갈 말을 <보기>의 단어를 모두 사용하여 쓰시오. 필요하면 형태를 바꿀 수 있다.\n\n이 훈련은 치료 중에 동물들이 경험하는 스트레스를 줄이는 데 도움이 된다.\n\nThis training ______________________________ during treatment.\n\n<보기> help, animals, stress, experience, reduce, the",
+"selfGrade": true,
+"answer": "helps reduce the stress animals experience",
+"solution": "help는 ‘help＋동사원형’의 구조로 사용할 수 있으므로 helps reduce가 된다. the stress 뒤에는 목적격 관계대명사가 생략된 animals experience가 이어져 stress를 수식한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1af204a80b",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 주어진 단어를 모두 사용하여 영작하시오.\n\n우리는 그 코끼리에게 달콤한 수박 한 조각을 보상으로 주었다.\n\n<보기> reward, the elephant, a sweet piece of watermelon, with",
+"selfGrade": true,
+"answer": "We rewarded the elephant with a sweet piece of watermelon.",
+"solution": "‘A에게 B를 보상으로 주다’는 reward A with B로 표현한다. 과거의 봉사 활동을 나타내므로 reward를 과거형 rewarded로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0fd66addad",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장을 <조건>에 맞게 한 문장으로 쓰시오.\n\nPolar bears live in the Arctic. Andean bears live in South America.\n\n<조건>\n• whereas를 사용할 것\n• 두 지역의 대조가 드러나게 할 것",
+"selfGrade": true,
+"answer": "Polar bears live in the Arctic, whereas Andean bears live in South America.",
+"solution": "서로 대조되는 두 사실은 접속사 whereas로 연결할 수 있다. whereas 앞에는 쉼표를 쓰고, 뒤에는 주어와 동사를 갖춘 완전한 절을 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-08a3a39a0e",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 빈칸에 들어갈 말을 <조건>에 맞게 쓰시오.\n\n꿀이 든 통나무 먹이통은 곰들의 자연스러운 호기심을 자극하고 곰들이 활동적인 상태를 유지하게 한다.\n\nThe honey-log feeders stimulate the bears’ natural curiosity and ______________________________.\n\n<조건>\n• keep을 이용한 5형식 구문을 사용할 것\n• 빈칸에 네 단어를 쓸 것",
+"selfGrade": true,
+"answer": "keep the bears active",
+"solution": "keep은 ‘keep＋목적어＋목적격보어’의 5형식으로 ‘목적어를 어떤 상태로 유지하다’라는 뜻을 나타낸다. 목적어는 the bears이고 상태를 나타내는 형용사 active가 목적격보어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9dc24ed2e7",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 사용하여 영작하시오. 필요하면 형태를 바꿀 수 있다.\n\n나는 인간의 활동이 어떻게 동물들에게 해를 끼치는지에 대해 깊이 생각하지 않을 수 없었다.\n\n<보기> cannot help, reflect on, human activities, how, harm, animals",
+"selfGrade": true,
+"answer": "I couldn’t help but reflect on how human activities harm animals.",
+"solution": "‘~하지 않을 수 없었다’는 couldn’t help but＋동사원형으로 표현한다. 전치사 on 뒤에는 ‘어떻게 인간의 활동이 동물들에게 해를 끼치는지’를 나타내는 간접의문문 how human activities harm animals를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a831cf1b71",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n동물들이 존중받을 권리를 지니고 태어난다고 유네스코가 선언한 이후로, 동물의 권리에는 진전이 이루어져 왔다.\n\n<조건>\n• since가 이끄는 부사절을 사용할 것\n• 주절에는 현재완료 수동태를 사용할 것\n• state, progress, animal rights를 반드시 사용할 것",
+"selfGrade": true,
+"answer": "Since UNESCO stated that animals are born with the right to be respected, progress has been made in animal rights.",
+"solution": "과거의 선언 이후 현재까지 이어진 변화를 나타내므로 since절에는 과거시제 stated를 쓴다. 주절은 현재완료 수동태 has been made를 사용하며, ‘존중받을 권리’는 the right to be respected로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-85a2bd0c72",
+"typeId": "eng-h1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 일치하도록 빈칸에 들어갈 말을 <조건>에 맞게 쓰시오.\n\n이빨이 약한 늙은 코끼리들을 위해, 우리는 그들이 평소에 먹는 사탕수수 대신 바나나를 잘게 썰었다.\n\n________________________________________.\n\n<조건>\n• 전치사 with를 사용하여 코끼리의 상태를 나타낼 것\n• 관계대명사 that을 사용할 것\n• instead of를 사용할 것\n• chop, bananas, sugarcane을 모두 사용할 것",
+"selfGrade": true,
+"answer": "For old elephants with weak teeth, we chopped bananas instead of the sugarcane that they usually eat.",
+"solution": "‘이빨이 약한’은 with weak teeth로 나타내어 old elephants를 수식한다. ‘~ 대신에’는 instead of를 사용하고, the sugarcane 뒤에는 목적격 관계대명사 that이 이끄는 절을 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m6s0t0",
+"custom": true
 }
 ]

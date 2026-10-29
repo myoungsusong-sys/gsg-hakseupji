@@ -349,5 +349,178 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b07-u3m2s0t0",
 "custom": true
+},
+{
+"id": "fill-cd98d585a8",
+"typeId": "eng-m2-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe Sitbag can become a chair. It __________ for elderly people who need to rest.",
+"choices": [
+"design",
+"designing",
+"is designed",
+"has designing",
+"is design"
+],
+"answer": "③",
+"solution": "주어 It은 Sitbag을 가리키며, Sitbag은 설계되는 대상이므로 수동태가 필요하다. 현재시제 수동태는 「am/is/are + 과거분사」이므로 is designed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5343052e02",
+"typeId": "eng-m2-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 (A), (B)에 들어갈 말이 바르게 연결된 것은?\n\nKelly's grandmother injured her leg. Since then, she (A)__________ difficulty (B)__________.\n\n선지는 (A) — (B)의 순서임.",
+"choices": [
+"has had — walking",
+"had — walk",
+"have had — walking",
+"has had — to walking",
+"has have — to walk"
+],
+"answer": "①",
+"solution": "Since then은 과거의 그때부터 현재까지 이어지는 상황을 나타내므로 현재완료 has had가 알맞다. 「have difficulty + 동명사」는 ‘~하는 데 어려움을 겪다’라는 뜻이므로 walking을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6dd6b7d8f4",
+"typeId": "eng-m2-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 (A), (B)에 들어갈 말이 바르게 연결된 것은?\n\nTed: Let's (A)__________ about the Wind Power, Thomas.\nThomas: It produces power from wind and charges a phone.\nTed: I'd like (B)__________ one for my bike.\n\n선지는 (A) — (B)의 순서임.",
+"choices": [
+"talking — to get",
+"talk — getting",
+"to talk — get",
+"talking — get",
+"talk — to get"
+],
+"answer": "⑤",
+"solution": "Let's 뒤에는 동사원형이 오므로 talk가 알맞다. ‘~하고 싶다’라는 뜻의 would like 뒤에는 to부정사가 오므로 to get을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-59e6ec3954",
+"typeId": "eng-m2-b07-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓕ에 주어진 동사를 문맥과 어법에 맞게 바꾸어 순서대로 쓰시오. 필요한 경우 조동사나 to를 추가하시오.\n\nMinji noticed a problem with dirty paint water. While her mother was ⓐ(throw) away used water filters, Minji got an idea. She decided ⓑ(use) those filters in art rooms. In her Green Art Box, dirty paint water ⓒ(clean) by old filters. By the end of the interviews, Ted can say, “So far, we ⓓ(see) creative inventions. These young inventors have ⓔ(focus) on problems and ⓕ(come) up with solutions.”",
+"selfGrade": true,
+"answer": "throwing, to use, is cleaned, have seen, focused, come",
+"solution": "ⓐ는 was와 함께 과거진행형을 이루므로 throwing, ⓑ는 decide 뒤이므로 to use가 알맞다. ⓒ는 물이 정화되는 대상이므로 현재시제 수동태 is cleaned를 쓴다. ⓓ는 So far에 맞는 현재완료 have seen이며, ⓔ와 ⓕ는 have에 병렬로 연결되는 과거분사 focused와 come이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d3ba7fe44c",
+"typeId": "eng-m2-b07-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 표시된 부분 중 어법상 틀린 것은 다섯 개이다. 틀린 부분만 바르게 고쳐 ⓐ~ⓗ의 순서대로 쓰시오. 단어를 추가하거나 삭제할 수 있으나, 제시된 동사를 다른 동사로 바꾸지 마시오.\n\nBefore Thomas made the Wind Power, his phone ⓐ[often ran] out of battery on long bike rides. He made a charger that uses wind ⓑ[making] power. When a rider ⓒ[turn] the small fan with wind, power is produced, and the phone ⓓ[is charge] by that power. After hearing about the charger, Ted says, “I'd like ⓔ[getting] one. Now, let's ⓕ[meet] Kelly. Her invention can ⓖ[turns] into a chair and help elderly people ⓗ[rest].”",
+"selfGrade": true,
+"answer": "to make, turns, is charged, to get, turn",
+"solution": "ⓑ는 바람을 사용하는 목적을 나타내므로 to make로 고친다. ⓒ는 주어 a rider가 단수이므로 turns, ⓓ는 수동태이므로 is charged가 알맞다. ⓔ는 would like 뒤이므로 to get, ⓖ는 조동사 can 뒤이므로 turn으로 고친다. ⓐ의 빈도부사 위치와 ⓕ의 Let's 뒤 동사원형, ⓗ의 help 뒤 동사원형은 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b2d9891652",
+"typeId": "eng-m2-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\n• Someone who cares about other people’s needs is (A).\n• Something that makes a difficult task easier is (B).\n• The expression “the (C)” refers to old people.",
+"choices": [
+"helpful — thoughtful — elderly",
+"thoughtful — helpful — elderly",
+"thoughtful — elderly — helpful",
+"elderly — helpful — thoughtful",
+"helpful — elderly — thoughtful"
+],
+"answer": "②",
+"solution": "다른 사람의 필요를 배려하는 사람은 thoughtful로, 어려운 일을 더 쉽게 해 주는 것은 helpful로 표현한다. the elderly는 ‘노인들’을 뜻하므로 순서대로 thoughtful, helpful, elderly가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-55b5f0d133",
+"typeId": "eng-m2-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 두 문장의 의미를 한 문장으로 바르게 나타낸 것은?\n\nI started riding a bike eight years ago. I still ride a bike.",
+"choices": [
+"I have ridden a bike since eight years.",
+"I rode a bike for eight years and then stopped.",
+"I have ride a bike for eight years.",
+"I have ridden a bike for eight years.",
+"I am riding a bike since eight years ago."
+],
+"answer": "④",
+"solution": "과거에 시작한 일이 현재까지 계속됨을 나타내므로 현재완료 have ridden을 사용한다. eight years는 기간이므로 전치사 for와 함께 쓴다. ②는 자전거 타기를 그만두었다는 의미를 덧붙여 원래 내용과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f9803c239c",
+"typeId": "eng-m2-b07-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음은 Thomas의 발명품에 관한 설명이다. 질문의 답이 완성되도록 (A), (B)에 들어갈 말을 쓰시오.\n\nThomas’s phone often had no battery power left during long bike rides. He invented a charger with a small fan. As he rides, the wind turns the fan to produce power for his phone.\n\nQ. What problem did Thomas have, and how does his invention make power?\nA. His phone often (A) during long rides. His invention (B).\n\n<조건>\n• (A)는 run, out, battery를 모두 사용하여 4단어로 쓸 것.\n• (B)는 use, wind, make, power를 모두 사용하여 5단어로 쓸 것.\n• 필요한 단어를 추가하고, 동사의 형태를 알맞게 바꿀 것.",
+"selfGrade": true,
+"answer": "(A) ran out of battery (B) uses wind to make power",
+"solution": "(A)는 ‘배터리가 다 떨어지다’라는 뜻의 run out of battery를 과거형으로 바꾼 ran out of battery이다. (B)는 발명품의 작동 원리를 설명하므로 현재형 uses와 목적을 나타내는 to make를 사용한다. 각 답은 각각 4단어와 5단어로 조건을 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-69cf5d7a5c",
+"typeId": "eng-m2-b07-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 질문과 의미가 같도록 두 문장을 완성하시오.\n\nWhat is Lucy planning to make for the invention fair?\n\n(1) What ____________________ for the invention fair?\n(2) What ____________________ for the invention fair?\n\n<조건>\n• 각 빈칸에 5단어씩 쓸 것.\n• (1)은 going을, (2)는 thinking을 반드시 사용할 것.\n• 두 문장 모두 주어로 Lucy를 쓰고, make를 알맞은 형태로 사용할 것.",
+"selfGrade": true,
+"answer": "(1) is Lucy going to make (2) is Lucy thinking of making",
+"solution": "계획을 묻는 be planning to는 be going to 또는 be thinking of를 이용하여 바꿔 쓸 수 있다. going to 뒤에는 동사원형 make를, 전치사 of 뒤에는 동명사 making을 쓴다. 의문문이므로 두 문장 모두 is를 주어 Lucy 앞에 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2b427a90d4",
+"typeId": "eng-m2-b07-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 내용을 바탕으로 우리말에 맞게 빈칸을 완성하시오.\n\nKelly’s grandmother injured her leg in a fall. After the injury, walking became difficult for her, and she often needed a rest. There were few benches on the streets. Kelly invented the Sitbag, a bag that changes into a chair.\n\n우리말: 할머니가 다리를 다친 뒤 걷는 데 어려움을 겪었기 때문에, Kelly는 의자로 변할 수 있는 가방을 만들었다.\n\nBecause her grandmother ____________________ after the leg injury, Kelly made a bag that ____________________.\n\n<조건>\n• 첫 번째 빈칸은 have, trouble, walk를 모두 사용하여 3단어로 쓸 것.\n• 두 번째 빈칸은 can, turn, chair를 모두 사용하여 5단어로 쓸 것.\n• 필요한 단어를 추가하고, 과거 상황에 맞게 형태를 바꿀 것.",
+"selfGrade": true,
+"answer": "had trouble walking / could turn into a chair",
+"solution": "‘걷는 데 어려움을 겪었다’는 have trouble -ing를 과거형으로 바꾸어 had trouble walking으로 쓴다. ‘의자로 변할 수 있었다’는 can의 과거형 could와 turn into를 사용하여 could turn into a chair로 표현한다. 첫 번째 빈칸은 3단어이고 두 번째 빈칸은 5단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8198ec02b0",
+"typeId": "eng-m2-b07-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 내용을 읽고 질문에 대한 답을 조건에 맞게 한 문장으로 완성하시오.\n\nMinji was concerned about dirty paint water from art class because it was harmful to the environment. When her mother was getting rid of old water filters, Minji realized that she could use them in art rooms. Her Green Art Box cleans dirty paint water with these filters.\n\nQ. What was Minji’s mother doing when Minji got the idea, and what are old water filters used for in the Green Art Box?\n\nA. Her mother ____________________, and old water filters ____________________ in the Green Art Box.\n\n<조건>\n• 첫 번째 빈칸은 throw away를 사용하여 당시 진행 중이던 일을 나타내는 6단어로 쓸 것.\n• 두 번째 빈칸은 use, clean, dirty paint water를 모두 사용하여 현재시제 수동태의 7단어로 쓸 것.\n• 필요한 단어를 추가하고, 주어진 단어의 형태를 알맞게 바꿀 것.",
+"selfGrade": true,
+"answer": "was throwing away old water filters / are used to clean dirty paint water",
+"solution": "아이디어가 떠올랐을 때 어머니가 하고 있던 일은 과거진행형 was throwing away로 나타낸다. 두 번째 빈칸에서는 복수 주어 old water filters가 사용되는 대상이므로 현재시제 수동태 are used를 쓴다. 여기에 목적을 나타내는 to clean dirty paint water를 연결하면 각각 6단어와 7단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u2m7s0t0",
+"custom": true
 }
 ]

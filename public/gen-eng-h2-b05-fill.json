@@ -1363,5 +1363,476 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-d6be76a2ae",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 모두 배열하여 문장을 완성하시오.\n\n나는 음악 천재는 아니었지만, 대부분의 사람들보다 더 뛰어났다.\n\n[wasn't / most / I / better / a / people / but / musical / than / was / genius / I]",
+"selfGrade": true,
+"answer": "I wasn't a musical genius, but I was better than most people.",
+"solution": "‘음악 천재가 아니었다’는 「I wasn't a musical genius」로 쓴다. 비교급 「better than」 뒤에 비교 대상인 「most people」을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-dfda5f76ff",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n성격 분류는 절대적이지도 영구적이지도 않다.\n\n<조건>\n• neither A nor B를 사용할 것\n• permanent, absolute, personality categorizations를 모두 사용할 것",
+"selfGrade": true,
+"answer": "Personality categorizations are neither absolute nor permanent.",
+"solution": "‘A도 B도 아닌’은 「neither A nor B」로 표현한다. 주어가 복수이므로 be동사는 「are」를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-036d3dea42",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 바르게 배열하시오.\n\n기회는 준비된 사람들에게만 찾아온다.\n\n[come / are / opportunities / prepared / only / those / to / who]",
+"selfGrade": true,
+"answer": "Opportunities only come to those who are prepared.",
+"solution": "「those who」는 ‘~하는 사람들’을 뜻한다. 선행사 「those」를 관계절 「who are prepared」가 수식하도록 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0b19d1e78f",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n나는 아무리 열심히 노력해도 계속 실패했다.\n\n<조건>\n• no matter how를 사용할 것\n• keep은 과거형으로 쓰고, 뒤에 동명사를 연결할 것",
+"selfGrade": true,
+"answer": "I kept failing no matter how hard I tried.",
+"solution": "‘계속 실패했다’는 「kept failing」으로 표현한다. ‘아무리 열심히 노력해도’는 양보의 의미를 나타내는 「no matter how hard I tried」로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-af9be96331",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장의 의미가 모두 드러나도록 한 문장으로 영작하시오.\n\nWhat will your answers be ten years from now?\nI bet you do not know.\n\n<조건>\n• 첫 번째 문장을 간접의문문으로 바꿀 것\n• I bet으로 시작할 것\n• 축약형을 사용하지 말 것",
+"selfGrade": true,
+"answer": "I bet you do not know what your answers will be ten years from now.",
+"solution": "의문문을 동사 「know」의 목적어로 넣을 때는 간접의문문의 어순을 사용한다. 따라서 「what will your answers be」가 아니라 「what your answers will be」로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ecaca350e1",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "‘liking gap’ 실험의 결과를 다음과 같이 나타낼 때, <조건>에 맞게 영작하시오.\n\n대부분의 참가자는 자신이 실제보다 더 나쁜 인상을 주었다고 믿었다.\n\n<조건>\n• 명사절을 이끄는 접속사 that을 사용할 것\n• 비교급 worse를 사용할 것\n• 비교 대상이 되는 절에서는 앞의 동사를 반복하지 않고 대동사 did를 사용할 것\n• 총 13단어로 쓸 것",
+"selfGrade": true,
+"answer": "Most participants believed that they made a worse impression than they actually did.",
+"solution": "「believed」의 목적어로 접속사 「that」이 이끄는 명사절을 사용한다. 비교절의 「did」는 앞에 나온 「made an impression」을 대신하며, 「actually」는 실제 결과와 참가자의 생각 사이의 차이를 강조한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6361b3115d",
+"typeId": "eng-h2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n나는 명성 없이도 평생 자신의 예술을 연마한 할아버지를 떠올렸고, 그와 같은 늙은 기타리스트가 되는 유일한 길은 계속 연주하는 것임을 깨달았다.\n\n<조건>\n• ‘평생 자신의 예술을 연마하며’의 의미가 되도록 현재분사 practicing을 사용할 것\n• realized 뒤에 접속사 that을 사용할 것\n• 「the only way to become A was to B」의 구조를 사용할 것\n• 총 31단어로 쓸 것",
+"selfGrade": true,
+"answer": "I thought of my grandfather, practicing his art his entire life even without fame, and realized that the only way to become an old guitarist like him was to keep playing.",
+"solution": "「practicing his art …」는 할아버지가 평생 한 행동을 덧붙여 설명하는 분사구문이다. 「realized that」 뒤에는 깨달은 내용을 완전한 절로 쓰고, ‘유일한 길’을 「the only way to become … was to keep playing」으로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7fabe3e76f",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nM: Jina, what are you planning to do when you finish school?\nW: I'd like to run a business that makes computer games. I'm interested in games, and I think I'm creative.\nM: How will you develop the knowledge you need?\nW: I'm considering a vocational program.\nM: You could also benefit from a formal education. Studying different subjects can give you ideas.\nW: That possibility hadn't occurred to me. I'll think about it.",
+"choices": [
+"Jina has already completed a vocational program.",
+"Jina plans to work as a teacher after graduation.",
+"Jina is considering a program to gain professional knowledge.",
+"The man advises Jina to study computer games exclusively.",
+"Jina refuses to consider the man's suggestion."
+],
+"answer": "③",
+"solution": "지나는 필요한 지식을 어떻게 기를 것인지 묻는 말에 직업 교육 프로그램을 고려하고 있다고 답한다. 따라서 전문 지식을 얻기 위한 프로그램을 고려 중이라는 ③이 대화의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b89390c609",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nSome people explain their failures by saying that their personality prevents them from doing certain things. However, personality types are not permanent labels. Think about the things you enjoyed and the future you imagined years ago. Your answers may be different today, and they may change again. Instead of allowing a personality category to restrict your possibilities, begin working toward the person you wish to become.",
+"choices": [
+"Some people connect their failures with their personality.",
+"Personality categories should determine which goals people pursue.",
+"People's interests can become different over time.",
+"People may imagine a different future as they grow.",
+"The writer encourages readers to work on who they want to become."
+],
+"answer": "②",
+"solution": "글은 성격 유형이 가능성을 제한하도록 두지 말고 원하는 사람이 되기 위해 노력하라고 권한다. 따라서 성격 범주가 추구할 목표를 결정해야 한다는 ②는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c636e79fd7",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nCax had cancer when she was fourteen, and her right leg was removed following surgery when she was sixteen. Accepting her changed body was difficult at first. Her family and friends helped her learn to appreciate it. At twenty-six, she shared a photograph revealing her leg online. Encouraging messages helped her recognize that her experience could give others hope.",
+"choices": [
+"How old was Cax when she developed cancer?",
+"Which leg did Cax lose?",
+"Who supported Cax as she learned to accept her body?",
+"What did Cax realize after receiving encouraging messages?",
+"Which social media service did Cax use to share her photograph?"
+],
+"answer": "⑤",
+"solution": "지문에는 발병 당시 나이, 잃은 다리, 도움을 준 사람들, 응원 메시지를 받은 뒤의 깨달음이 제시되어 있다. 그러나 사진을 올린 소셜 미디어 서비스의 이름은 나오지 않으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-feedf9ef29",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIn an experiment, students talked with a partner for five minutes to get acquainted. Afterward, each student reported how much they liked their partner and estimated how much their partner liked them. For most participants, the second judgment was too negative: their partners actually liked them more than they expected. Researchers called this difference the “liking gap.” The findings suggest that our guesses about other people's opinions can lead us to undervalue ourselves. Worrying about an imagined poor impression may therefore be unnecessary.",
+"choices": [
+"Participants generally underestimated how positively their partners felt about them.",
+"Researchers measured only how much students liked their partners.",
+"Most participants believed that their partners liked them more than they actually did.",
+"The term “liking gap” refers to a difference in the partners' conversation lengths.",
+"The experiment showed that most students disliked the people they met."
+],
+"answer": "①",
+"solution": "참가자 대부분은 상대방이 자신을 좋아하는 정도를 실제보다 낮게 예상했다. 따라서 상대방의 호감을 과소평가했다는 ①이 일치하며, ③은 실제 결과의 방향을 반대로 설명한 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f5d79bbb9d",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nWhen I turned thirteen, my grandfather, a classical guitarist, gave me a guitar and a picture of Picasso's The Old Guitarist. After his death, the picture stayed on my bedroom wall and reminded me of his devotion to music. Later, repeated failures made me consider abandoning my musical ambitions. Yet I remembered that my grandfather had continued playing throughout his life without becoming famous. I kept making music and sent recordings to many producers. Eventually, a producer wanted to work with me, and I obtained my first recording contract after twenty years of effort.",
+"choices": [
+"What presents did the speaker receive on the speaker's thirteenth birthday?",
+"Why did the speaker keep the picture on the bedroom wall?",
+"What made the speaker consider giving up music?",
+"How did the producer first become interested in the speaker's recordings?",
+"How long had the speaker worked before obtaining the first recording contract?"
+],
+"answer": "④",
+"solution": "화자가 여러 제작자에게 녹음물을 보냈고 마침내 함께 일하려는 제작자를 만났다는 사실은 제시되어 있다. 그러나 그 제작자가 어떤 경위나 이유로 녹음물에 처음 관심을 갖게 되었는지는 설명하지 않았으므로 ④에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-901a172a2d",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 Cax에 관해 추론할 수 있는 것은?\n\nAfter losing her right leg, Cax initially found it hard to accept her body. Support from people close to her helped her attitude change. Later, responses to a photograph she shared online made her aware that her story could encourage others. She then shared more of her life, including photographs featuring fashionable prosthetic covers, and discussed body positivity. Although she became a model and appeared on major fashion magazine covers, she described learning to love herself as an ongoing process with more obstacles ahead. She also took part in swimming, basketball, and mountain climbing, and completed the New York City Marathon using a wheelchair.",
+"choices": [
+"She believed that success in modeling had removed every obstacle to self-love.",
+"She stopped taking part in sports after becoming a model.",
+"She posted her first photograph because she already knew it would inspire many people.",
+"She considered public recognition more valuable than accepting her body.",
+"She could encourage others while still working toward greater self-acceptance."
+],
+"answer": "⑤",
+"solution": "Cax는 자신의 이야기가 다른 사람에게 용기를 줄 수 있음을 알게 되었지만, 자기 자신을 사랑하는 과정은 여전히 진행 중이라고 말했다. 따라서 자기 수용을 위해 계속 노력하면서도 타인에게 힘을 줄 수 있었다는 ⑤를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-bcd81a3a91",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 바탕으로 추론한 내용으로 가장 적절한 것은?\n\nPeople sometimes treat a personality type as an explanation for every weakness or failure. Once they place themselves in a category, they may refuse to attempt something because it seems unsuitable for that type. Yet such categories are not unchangeable facts about a person. Your favorite things and the future you hope for can differ from those of your younger self, and you cannot be certain what they will be years from now. The same possibility of change applies to you. When people remain predictable over time, their own choices help maintain that pattern. A personality label should therefore not set the boundaries of who you can become.",
+"choices": [
+"Knowing a person's current personality type makes that person's future choices certain.",
+"Continued consistency in behavior does not by itself prove that personality cannot change.",
+"People must abandon all their current interests before their personality can develop.",
+"A failure caused by weakness shows that a person belongs permanently to one category.",
+"Changes in people's dreams make their own choices irrelevant to personal development."
+],
+"answer": "②",
+"solution": "글은 사람들이 오랫동안 비슷한 모습을 보이는 데 자신의 선택도 작용한다고 설명한다. 따라서 행동이 계속 일관된다는 사실만으로 성격이 변화할 수 없다고 단정할 수는 없다. ②는 관찰되는 일관성과 성격의 고정성을 구분하여 글의 논지를 적절하게 추론한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6b012695b2",
+"typeId": "eng-h2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nAt school festivals, I received enough praise to believe music was my calling. College challenged that belief: some classmates were clearly more skilled, and repeated unsuccessful attempts in competitions left me discouraged. Even then, being asked to perform a song still brought me joy. A picture of The Old Guitarist reminded me of two things my grandfather had helped me understand. Picasso produced thousands of works, but public recognition reached only a small proportion of them. My grandfather himself spent his life playing the guitar without becoming famous. Remembering these things, I continued. For years, I played on little-known streets and wrote songs that attracted no recognition. After I had approached numerous producers with my recordings, one finally agreed to work with me, leading to a recording contract.",
+"choices": [
+"The speaker's confidence at school was later shaken by experiences in college.",
+"Discouragement over competition results existed alongside enjoyment of playing for others.",
+"The grandfather's lifelong playing depended on gaining the public recognition he sought.",
+"The speaker recalled that most of Picasso's works were not publicly recognized.",
+"The speaker had continued performing and writing songs before finding a willing producer."
+],
+"answer": "③",
+"solution": "할아버지는 유명해지지 않은 상태에서도 평생 기타 연주를 계속했으므로, 그의 지속적인 연주가 대중적 인정을 얻는 데 달려 있었다는 ③은 일치하지 않는다. ②는 대회 실패로 낙담하면서도 연주를 부탁받으면 기뻤다는 두 사실을 함께 반영한다. ⑤ 역시 공연과 작곡을 이어 온 노력이 제작자와의 만남에 앞섰다는 글의 순서에 부합한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a8e8893b42",
+"typeId": "eng-h2-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA system of underwater cameras ⓐ[helps / help] farmers check the condition of their fish. ⓑ[It / They] records changes in the fish’s weight and appearance. Information about each fish ⓒ[stores / is stored] in a health record so that farmers can use it to manage fish health.",
+"choices": [
+"helps – It – is stored",
+"help – It – is stored",
+"helps – They – stores",
+"help – They – is stored",
+"helps – It – stores"
+],
+"answer": "①",
+"solution": "ⓐ는 주어의 중심어가 단수 명사 system이므로 helps가 알맞고, ⓑ는 그 시스템을 가리키므로 It이 적절하다. ⓒ는 정보가 건강 기록에 저장되는 것이므로 수동태 is stored가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-98870cad9e",
+"typeId": "eng-h2-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nImages ⓐ[collecting / collected] by underwater cameras provide information about fish health. These images can ⓑ[use / be used] to identify fish that need attention. This helps farmers reduce their dependence on chemical treatments, ⓒ[which / in which] may damage the surrounding environment.",
+"choices": [
+"collecting – be used – which",
+"collected – use – which",
+"collected – be used – in which",
+"collected – be used – which",
+"collecting – use – in which"
+],
+"answer": "④",
+"solution": "ⓐ는 이미지가 카메라에 의해 수집되므로 과거분사 collected가 적절하고, ⓑ는 이미지가 활용되는 것이므로 be used가 알맞다. ⓒ는 뒤 절에서 주어 역할을 하며 chemical treatments를 설명하므로 관계대명사 which가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-07c1db1f8a",
+"typeId": "eng-h2-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOne of the benefits of AI in fish farming ⓐ[is / are] more precise feeding. Giving fish an appropriate amount of food ⓑ[reduces / reduce] waste and helps control costs. Farmers also need to consider the fact ⓒ[that / of] feeding accounts for a large part of their operating budget.",
+"choices": [
+"are – reduces – that",
+"is – reduces – that",
+"is – reduce – that",
+"are – reduce – of",
+"is – reduces – of"
+],
+"answer": "②",
+"solution": "ⓐ는 주어의 중심어가 One이므로 is가 알맞고, ⓑ는 동명사구 주어를 단수로 취급하므로 reduces가 적절하다. ⓒ 뒤에는 feeding을 주어로 하는 완전한 절이 이어지므로 fact의 내용을 설명하는 접속사 that이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dcd0c9dbf0",
+"typeId": "eng-h2-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAI can recognize behavior patterns ⓐ[that / what] indicate hunger in fish. By analyzing these patterns, farmers can decide ⓑ[when feeding / when to feed] the fish. The system can also check cage nets to prevent fish ⓒ[from escaping / to escape] and help protect the habitat around the farm.",
+"choices": [
+"that – when feeding – from escaping",
+"what – when to feed – from escaping",
+"that – when to feed – to escape",
+"what – when feeding – to escape",
+"that – when to feed – from escaping"
+],
+"answer": "⑤",
+"solution": "ⓐ는 선행사 behavior patterns가 있고 뒤 절에 주어가 없으므로 관계대명사 that이 알맞다. ⓑ는 ‘언제 먹이를 줄지’라는 의미의 「의문사＋to부정사」 형태인 when to feed가 적절하다. ⓒ는 「prevent＋목적어＋from -ing」 구문에 따라 from escaping이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b0657be94e",
+"typeId": "eng-h2-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFish are not the only focus of AI research in aquaculture. As a food resource, seaweed can be as ⓐ[a valuable resource / valuable a resource] as fish. Researchers are examining ways ⓑ[which / that] AI can support seaweed farming. Small robots working as a group can gather information, while larger robots can perform physical tasks. Families ⓒ[enjoying / enjoy] seafood meals may know little about the technology behind the food on their tables.",
+"choices": [
+"a valuable resource – that – enjoying",
+"valuable a resource – which – enjoying",
+"valuable a resource – that – enjoying",
+"a valuable resource – which – enjoy",
+"valuable a resource – that – enjoy"
+],
+"answer": "③",
+"solution": "ⓐ는 「as＋형용사＋a/an＋단수 명사＋as」 어순에 따라 valuable a resource가 알맞다. ⓑ는 ways를 선행사로 하여 ‘AI가 해조류 양식을 지원할 수 있는 방식’을 나타내므로 that이 적절하며, which를 쓰려면 in which가 되어야 한다. ⓒ는 문장의 본동사가 may know이므로 Families를 수식하는 현재분사 enjoying이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-70bed05827",
+"typeId": "eng-h2-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nLarge amounts of information from cameras and sensors ⓐ[helps] farmers understand changes in fish behavior. An AI system can identify unusual movements, ⓑ[which] may be related to changes in oxygen levels. It can also show farmers ⓒ[when to provide] food by recognizing signs of hunger. The fact ⓓ[of] feeding makes up a large share of operating costs explains the importance of precise feeding. Meanwhile, checking the nets helps keep fish from ⓔ[escaping]. The information gathered by the system can also ⓕ[be use] to monitor conditions around the cages.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓕ",
+"ⓐ, ⓓ, ⓔ",
+"ⓐ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓐ는 복수 주어 Large amounts of information에 맞추어 help로 고쳐야 한다. ⓓ는 뒤의 완전한 절이 fact의 내용을 설명하므로 of를 that으로 바꾸어야 한다. ⓕ는 정보가 활용된다는 수동의 의미이므로 be used로 고쳐야 한다. ⓑ의 계속적 용법의 which, ⓒ의 「의문사＋to부정사」, ⓔ의 「keep＋목적어＋from -ing」는 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e542e65c71",
+"typeId": "eng-h2-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nJogakbo is a traditional Korean wrapping cloth. Making a large square from small pieces of fabric (A)[require / requires] careful planning. The beauty of this craft has long (B)[appreciated / been appreciated]. Women who wished to save fabric found ways (C)[reuse / to reuse] the pieces left over from making clothes.",
+"choices": [
+"require — appreciated — reuse",
+"require — been appreciated — to reuse",
+"requires — been appreciated — to reuse",
+"requires — appreciated — to reuse",
+"requires — been appreciated — reuse"
+],
+"answer": "③",
+"solution": "동명사구 Making a large square from small pieces of fabric가 주어이므로 단수 동사 requires가 알맞다. 아름다움은 인정받는 대상이므로 현재완료 수동태인 has been appreciated를 써야 한다. ways 뒤에서는 ‘재사용할 방법’이라는 뜻을 나타내는 to reuse가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-beff94decb",
+"typeId": "eng-h2-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 표시된 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nStained-glass windows ⓐare made from small pieces of colored glass. The pieces ⓑassembling into large panels form images. During the Medieval period, religious buildings became larger ⓒto accommodate more people. The images on their windows helped people ⓓunderstand religious messages. These messages were useful to those ⓔwho could not read.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "유리 조각은 큰 패널로 조립되는 대상이므로 능동의 현재분사 assembling이 아니라 수동의 과거분사 assembled가 필요하다. 나머지는 각각 수동태, 목적을 나타내는 to부정사, help의 목적격 보어, 사람을 선행사로 하는 주격 관계대명사로 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3dbf2b4632",
+"typeId": "eng-h2-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Ndebele people are known for clothing (A)[decorated / decorating] with glass beads. An unmarried girl may wear an apron (B)[which / onto which] many beads have been sewn by hand. Beadwork also appears in many Native American cultures, (C)[expressing / expresses] cultural identity.",
+"choices": [
+"decorated — onto which — expressing",
+"decorating — onto which — expressing",
+"decorated — which — expressing",
+"decorated — onto which — expresses",
+"decorating — which — expresses"
+],
+"answer": "①",
+"solution": "옷은 구슬로 장식되는 대상이므로 과거분사 decorated가 알맞다. 구슬이 앞치마 위에 꿰매어졌다는 의미이며 관계절에 주어와 목적어가 필요하지 않으므로 onto which를 쓴다. 마지막에는 앞 절의 주어인 Beadwork의 부수적 동작을 나타내는 분사구문 expressing이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0049072853",
+"typeId": "eng-h2-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓖ 중 어법상 어색한 것을 모두 고른 것은?\n\nStitching together patches whose shapes and sizes differ ⓐrequires both skill and careful planning. Patchwork, the beauty of which ⓑhave long been appreciated in many cultures, turns small scraps into a larger work. Jogakbo, ⓒcreated during the Joseon dynasty, is one Korean example. The women ⓓwhich made these wrapping cloths sought to avoid wasting fabric. Scraps from a woman's wedding skirt and her family's clothes ⓔwere sometimes included in a single piece. Although the need to save fabric ⓕled to its creation, jogakbo developed into an activity ⓖwhich leftover cloth was transformed into something both useful and beautiful.",
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓓ, ⓖ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓑ는 관계절의 주어가 단수 명사 beauty이므로 have를 has로 고쳐야 하며, ⓓ는 선행사가 사람인 women이므로 which를 who 또는 that으로 고쳐야 한다. ⓖ의 뒤에는 완전한 절이 이어지므로 활동 안에서 천이 변화했다는 의미의 in which가 필요하다. ⓐ는 동명사구 주어에 일치하는 단수 동사이고, ⓒ는 수동 관계의 과거분사이며, ⓔ와 ⓕ도 각각 수 일치와 과거 시제에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-963cf83f58",
+"typeId": "eng-h2-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓖ 중 어법상 알맞은 것을 모두 고른 것은?\n\nSainte-Chapelle and the Nasir al-Mulk mosque have glass panels ⓐthrough which brilliantly colored light passes. The development of techniques for producing such windows ⓑwere rapid during the Medieval period, ⓒwhen religious buildings grew larger. Small pieces of glass ⓓassembling beside one another formed large windows. The images on these windows are known ⓔto have helped people who could not read. They conveyed religious messages ⓕin which those people might otherwise have been unable to understand. The glass pieces thus served both practical and artistic purposes, ⓖmaking the windows more than simple openings for light.",
+"choices": [
+"ⓐ, ⓑ, ⓔ, ⓖ",
+"ⓐ, ⓒ, ⓔ, ⓖ",
+"ⓑ, ⓒ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓓ, ⓖ",
+"ⓒ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ는 빛이 패널을 통과한다는 관계를, ⓒ는 중세라는 시간적 배경을 적절하게 나타낸다. ⓔ의 완료부정사는 현재 알려진 내용보다 앞선 과거의 일을 나타내며, ⓖ는 앞 절의 내용에 따른 결과를 나타내는 분사구문이다. ⓑ는 주어의 핵심이 단수 명사 development이므로 was로, ⓓ는 유리 조각이 조립되는 수동 관계이므로 assembled로 고쳐야 한다. ⓕ는 understand의 목적어 자리가 비어 있으므로 in which 대신 which 또는 that을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0d27541c5b",
+"typeId": "eng-h2-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓖ 중 어법상 어색한 것을 모두 고른 것은?\n\nAmong the Ndebele people, garments ⓐmaking with glass beads indicate stages in a woman's life. A square apron, one of the items an unmarried girl may wear, ⓑhas thousands of beads sewn onto it by hand. The apron ⓒwhich these beads are attached can therefore carry cultural meaning. Beadwork, together with other forms of traditional craft, ⓓexpresses cultural identity. In many Native American cultures, the desire ⓔto maintain a connection across generations is expressed through beadwork. Such work combines small objects into meaningful designs, ⓕreflects a sense of cultural continuity. The value of these objects lies partly in the cultural meanings ⓖthat their combinations communicate.",
+"choices": [
+"ⓐ, ⓑ, ⓔ",
+"ⓑ, ⓒ, ⓖ",
+"ⓐ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓖ",
+"ⓐ, ⓒ, ⓕ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 옷이 구슬로 만들어지는 수동 관계이므로 made로 고쳐야 한다. ⓒ는 attach A to B의 관계에서 전치사 to가 필요하므로 to which가 알맞고, ⓕ는 접속사 없이 이어진 동사이므로 reflecting으로 고쳐 분사구문을 만들어야 한다. ⓑ의 주어는 단수 apron이며, ⓓ도 together with 이하와 관계없이 Beadwork에 일치하므로 각각 has와 expresses가 적절하다. ⓔ는 desire를 수식하는 to부정사이고, ⓖ는 communicate의 목적어 역할을 하는 관계대명사이므로 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m1s0t0",
+"custom": true
 }
 ]

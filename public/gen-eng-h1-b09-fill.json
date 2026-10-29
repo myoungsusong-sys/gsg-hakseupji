@@ -3061,5 +3061,280 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u4m1s0t0",
 "custom": true
+},
+{
+"id": "fill-1f2da8c54e",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음은 서영의 장치에 관한 설명이다. 우리말과 일치하도록 <보기>의 단어를 배열하여 문장을 완성하시오.\n\n소형 컴퓨터 한 대가 그 센서에 연결되어 있다.\n→ ________________________________.\n\n<보기>\nconnected / a / the / computer / to / small / is / sensor\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것\n• 단어의 형태를 바꾸지 말 것",
+"selfGrade": true,
+"answer": "A small computer is connected to the sensor",
+"solution": "‘~에 연결되어 있다’는 수동태 표현인 be connected to로 나타낸다. 주어 A small computer 뒤에 is connected to를 쓰고 연결 대상을 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ea7d46522a",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문에 대한 답의 빈칸을 <조건>에 맞게 완성하시오.\n\nJia uses a writing assistant app for her speech script. The app checks her spelling and grammar and offers suggestions for corrections.\n\nQ. Why does Jia use the app?\n→ She uses it ________________________________.\n\n<조건>\n• ‘자신의 철자와 문법을 확인하기 위해’라는 뜻이 되게 쓸 것\n• to부정사를 사용할 것\n• check, her, spelling, grammar를 포함하여 6단어로 쓸 것",
+"selfGrade": true,
+"answer": "to check her spelling and grammar",
+"solution": "앱을 사용하는 목적을 묻고 있으므로 목적을 나타내는 to부정사를 쓴다. spelling과 grammar를 and로 연결하면 조건에 맞는 6단어의 표현이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8df049d964",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장의 의미가 같아지도록 빈칸을 완성하시오.\n\nUsers can locate obstacles when they touch the pins on Seoyoung’s device.\n→ By ____________________, users can locate obstacles.\n\n<조건>\n• touch, the, pins를 모두 사용할 것\n• 필요한 경우 단어의 형태를 바꿀 것\n• 빈칸에는 3단어로 쓸 것",
+"selfGrade": true,
+"answer": "touching the pins",
+"solution": "‘~함으로써’라는 방법은 by와 동명사를 이용하여 나타낸다. 전치사 by 뒤에서는 touch를 touching으로 바꾸어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5c0a7cbc0e",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장을 접속사 so that을 이용하여 한 문장으로 완성하시오.\n\nSeoyoung programmed the computer. She wanted each motor to be able to move a pin up and down.\n→ Seoyoung programmed the computer ________________________________.\n\n<조건>\n• ‘각각의 모터가 핀 하나를 위아래로 움직일 수 있도록’이라는 뜻을 나타낼 것\n• <보기>의 단어를 모두 한 번씩 사용할 것\n• can만 문맥에 맞게 변형할 것\n\n<보기>\nso / that / each / motor / can / move / a / pin / up / and / down",
+"selfGrade": true,
+"answer": "so that each motor could move a pin up and down",
+"solution": "목적을 나타내는 so that 뒤에는 주어와 동사를 갖춘 절이 온다. 주절의 programmed가 과거형이므로 can을 could로 바꾸고, each motor 뒤에 could move를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6992dd34b3",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글을 읽고, 우리말과 일치하도록 답변의 빈칸을 완성하시오.\n\nA writing assistant app examines spelling and grammar in a piece of writing. It then suggests corrections.\n\nQ. How does the app help with writing?\n→ It helps by ________________________________.\n(그것은 철자와 문법을 확인하고 수정 사항을 제안함으로써 도움을 준다.)\n\n<조건>\n• <보기>의 단어를 모두 사용할 것\n• check와 suggest는 어법에 맞게 변형할 것\n• and는 두 번 사용하고, 나머지 단어는 한 번씩 사용할 것\n\n<보기>\ncheck / spelling / and / grammar / suggest / corrections",
+"selfGrade": true,
+"answer": "checking spelling and grammar and suggesting corrections",
+"solution": "전치사 by 뒤에 오는 check는 동명사 checking으로 바꾼다. 두 가지 도움 방식을 병렬로 연결하므로 suggest 역시 suggesting으로 바꾸며, 첫 번째 and는 명사들을, 두 번째 and는 동명사구들을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-705a6a4cf8",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 질문의 내용을 모두 포함하도록 우리말에 맞게 문장을 완성하시오.\n\nWhere are obstacles?\nHow high are they?\n\n핀들은 장애물이 어디에 있으며 그것들이 얼마나 높은지를 보여 준다.\n→ The pins show ________________________________.\n\n<조건>\n• 두 질문을 각각 간접의문문으로 바꾸어 and로 연결할 것\n• 주어진 질문의 단어를 모두 한 번씩 사용할 것\n• and를 추가하고 대문자는 필요한 경우 소문자로 바꿀 것",
+"selfGrade": true,
+"answer": "where obstacles are and how high they are",
+"solution": "동사 show의 목적어로 쓰이는 간접의문문은 ‘의문사＋주어＋동사’의 어순을 따른다. 두 번째 질문의 how high는 함께 두고 they are를 이어 쓴 뒤, 두 절을 and로 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3d68b46ed3",
+"typeId": "eng-h1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 내용을 바탕으로, 우리말과 일치하는 영어 문장을 <조건>에 맞게 완성하시오.\n\nSeoyoung’s device has a sensor linked to a small computer. The sensor collects information about the space around the user. The device represents obstacles with pins, which the user can feel to determine their locations.\n\n컴퓨터에 연결된 그 센서는 사용자가 핀들을 만져서 장애물의 위치를 알아낼 수 있도록 정보를 수집한다.\n→ The sensor ________________________________.\n\n<조건>\n• <보기>의 단어를 모두 사용할 것\n• connect와 touch만 어법에 맞게 변형할 것\n• the는 세 번 사용하고, 나머지 단어는 한 번씩 사용할 것\n• sensor를 뒤에서 수식하는 분사구를 사용할 것\n• so that절과 ‘by＋동명사’를 사용할 것\n\n<보기>\nconnect / to / the / computer / gathers / information / so / that / user / can / locate / obstacles / by / touch / pins",
+"selfGrade": true,
+"answer": "connected to the computer gathers information so that the user can locate obstacles by touching the pins",
+"solution": "sensor와 connect는 수동 관계이므로 connected to the computer로 명사를 뒤에서 수식한다. 문장의 본동사는 gathers이며, 그 뒤에 목적을 나타내는 so that절을 연결한다. 장애물의 위치를 알아내는 방법은 by touching the pins로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fea6c5fcb4",
+"typeId": "eng-h1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 알맞은 것은?\n\nHaving different food preferences ______ natural because both biology and experience influence our tastes.",
+"choices": [
+"are",
+"is",
+"be",
+"being",
+"have"
+],
+"answer": "②",
+"solution": "주어 Having different food preferences는 동명사구이므로 단수로 취급한다. 따라서 현재형 be동사인 is가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d4348e19a0",
+"typeId": "eng-h1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Mint chocolate chip ice cream tastes differently to different people.",
+"Some foods seem strangely to people from other cultures.",
+"A familiar flavor can smell pleasantly to someone.",
+"The combination of mint and chocolate may taste pleasant.",
+"Food preferences can become differently over time."
+],
+"answer": "④",
+"solution": "④의 taste는 주격 보어로 형용사 pleasant를 취하므로 어법상 옳다. 나머지 문장도 각각 주격 보어 자리에 형용사가 필요하므로 differently는 different로, strangely는 strange로, pleasantly는 pleasant로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9753fdedc5",
+"typeId": "eng-h1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFood can connect people from different cultures. Some governments support cooperation by (A)[use / using] food in public campaigns. Such connections can also develop when each person (B)[shares / share] food with people from other countries. Restaurants (C)[serving / served] dishes from different parts of the world offer opportunities to experience other cultures.",
+"choices": [
+"use — shares — serving",
+"using — share — serving",
+"using — shares — served",
+"use — share — served",
+"using — shares — serving"
+],
+"answer": "⑤",
+"solution": "(A)는 전치사 by의 목적어 자리이므로 동명사 using이 알맞다. (B)는 단수 주어 each person에 맞추어 shares를 쓴다. (C)는 음식점이 음식을 제공하는 능동 관계이므로 현재분사 serving이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2b2410a8c3",
+"typeId": "eng-h1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓖ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe information ⓐ[that our tongues provide] is only part of our experience of food. Genetic differences help explain ⓑ[why some people are more sensitive to bitterness than others]. However, ⓒ[how bitter does a food taste to someone] does not always determine whether that person will like it. The fact ⓓ[what a person notices a strong bitter taste] does not mean that the person will always dislike the food. Even someone ⓔ[who finds celery bitter] may eventually enjoy eating it. Conversely, ⓕ[finding it less bitter than other people do] does not guarantee a liking for it. The smells of food also reach our noses, ⓖ[enable us to recognize different flavors].",
+"choices": [
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓓ, ⓖ",
+"ⓐ, ⓓ, ⓔ, ⓖ",
+"ⓑ, ⓒ, ⓕ, ⓖ"
+],
+"answer": "③",
+"solution": "ⓒ는 문장 전체의 주어로 쓰인 간접의문문이므로 how bitter a food tastes to someone으로 고쳐야 한다. ⓓ 뒤에는 완전한 절이 이어지므로 fact의 내용을 설명하는 동격의 접속사 that이 필요하다. ⓖ는 앞 절의 결과를 나타내는 분사구문이므로 enable을 enabling으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f418f09bf7",
+"typeId": "eng-h1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓖ 중 어법상 어색한 것을 모두 고른 것은?\n\nRepeated exposure can help children accept ⓐ[what they once refused to eat]. Yet the experiences ⓑ[that they have with food] can also affect their preferences for a long time. Even cilantro may become more acceptable through repeated exposure, with small amounts of it ⓒ[adding to a curry]. By contrast, a person ⓓ[confined to a hospital bed] may develop a dislike for miyeokguk after ⓔ[get served the soup too often]. A happy memory of ⓕ[a grandmother making sujeonggwa] can have the opposite effect. Such a memory may make the drink ⓖ[to seem especially appealing].",
+"choices": [
+"ⓒ, ⓔ, ⓖ",
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓔ, ⓖ",
+"ⓐ, ⓓ, ⓔ, ⓖ",
+"ⓑ, ⓒ, ⓓ, ⓕ"
+],
+"answer": "①",
+"solution": "ⓒ는 with의 목적어인 small amounts of it이 카레에 첨가되는 수동 관계이므로 adding을 added로 고쳐야 한다. ⓔ는 전치사 after 뒤에 쓰였으므로 get을 동명사 getting으로 고쳐야 한다. ⓖ는 사역동사 make의 목적격 보어이므로 to seem을 원형부정사 seem으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-86f5ae0d74",
+"typeId": "eng-h1-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nMaking pottery by hand ⓐ[takes / take] patience. In Sejnane, women use pieces of broken pottery to make the clay ⓑ[strong / strongly].",
+"choices": [
+"ⓐ takes — ⓑ strongly",
+"ⓐ take — ⓑ strong",
+"ⓐ takes — ⓑ strong",
+"ⓐ take — ⓑ strongly",
+"ⓐ taking — ⓑ strong"
+],
+"answer": "③",
+"solution": "동명사구 Making pottery by hand가 주어이므로 단수 동사 takes가 알맞다. make는 목적어의 상태를 나타내는 목적격보어로 형용사를 취하므로 strong을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d56f83a656",
+"typeId": "eng-h1-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nThe traditional fans ⓐ[are made / make] by hand. Kim uses a technique ⓑ[which / how] has been handed down in his family.",
+"choices": [
+"ⓐ are made — ⓑ which",
+"ⓐ make — ⓑ which",
+"ⓐ are made — ⓑ how",
+"ⓐ make — ⓑ how",
+"ⓐ are making — ⓑ which"
+],
+"answer": "①",
+"solution": "부채는 만들어지는 대상이므로 수동태 are made가 알맞다. 선행사 a technique을 수식하면서 뒤 절의 주어 역할을 하는 관계대명사 which가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4c501d49ae",
+"typeId": "eng-h1-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nKim begins by ⓐ[boiling / boiled] bamboo to soften it. After preparing the ribs, he spreads them out with glue ⓑ[applying / applied] to them. Paper is then attached to the ribs, and the finished fan may be ⓒ[decorate / decorated] by a painter.",
+"choices": [
+"ⓐ boiled — ⓑ applied — ⓒ decorated",
+"ⓐ boiling — ⓑ applying — ⓒ decorated",
+"ⓐ boiling — ⓑ applied — ⓒ decorate",
+"ⓐ boiled — ⓑ applying — ⓒ decorate",
+"ⓐ boiling — ⓑ applied — ⓒ decorated"
+],
+"answer": "⑤",
+"solution": "전치사 by 뒤에는 동명사 boiling이 와야 한다. 접착제는 발라지는 대상이므로 with 구문에서는 과거분사 applied를 쓴다. 부채 역시 화가에 의해 장식되는 대상이므로 may be 뒤에는 decorated가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2f492831d6",
+"typeId": "eng-h1-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 표시된 부분 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nIn Sejnane, women use traditional methods ⓐthat have a long history. They add broken pottery to the clay ⓑto make it stronger. The clay mixture ⓒis shaped by hand before firing. As cheap plastic and metal goods have become available, selling practical pottery has become ⓓmore difficult. This change has encouraged the women to think more ⓔcreative.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ는 동사 think를 수식하므로 형용사 creative를 부사 creatively로 고쳐야 한다. ⓐ의 관계대명사와 동사 수의 일치, ⓑ의 목적을 나타내는 to부정사, ⓒ의 수동태, ⓓ의 비교급은 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c591e06bc1",
+"typeId": "eng-h1-b09-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 부분 ⓐ~ⓗ 중 어법상 어색한 것을 모두 찾아 고치시오.\n\n조건: 표시된 단어만 각각 한 단어로 바꾸고, 어색한 부분의 기호와 고친 단어를 본문 순서대로 쓰시오.\n\nThe traditional technique ⓐwhich Kim uses has been handed down in his family. Making a folding fan through many steps that involve natural materials ⓑrequire patience and determination. When the framework is ready, the ribs are spread out with glue ⓒapplying to them. Kim then attaches paper to the ribs, ⓓfolds it for each rib. The finished fan may be left plain or ⓔdecorating by a painter. The skills that he hopes to preserve can ⓕbe taught to others. In Sejnane, women also follow methods that ⓖdates back thousands of years. Rim has learned that each part of the pottery-making process needs to be ⓗcompleted step by step.",
+"selfGrade": true,
+"answer": "ⓑ requires, ⓒ applied, ⓓ folding, ⓔ decorated, ⓖ date",
+"solution": "ⓑ는 긴 동명사구 Making a folding fan …의 서술어이므로 단수형 requires로 고친다. ⓒ는 접착제가 발라진 상태를 나타내므로 applied로, ⓓ는 종이를 붙이면서 접는 동작을 나타내는 분사구문이므로 folding으로 고친다. ⓔ는 be left plain과 수동태로 병렬 연결되므로 decorated가 필요하다. ⓖ는 관계대명사 that의 선행사가 복수 명사 methods이므로 date로 고치며, ⓐ, ⓕ, ⓗ는 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m1s0t0",
+"custom": true
 }
 ]

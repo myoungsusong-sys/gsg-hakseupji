@@ -2956,5 +2956,362 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-04e82a473d",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 배열하여 문장을 완성하시오.\n\n나는 궁금해하던 역사 드라마를 선택했다.\n\n<보기> curious / a historical drama / had been / I / that / about / chose",
+"selfGrade": true,
+"answer": "I chose a historical drama that I had been curious about.",
+"solution": "선행사 a historical drama를 관계대명사 that이 이끈 절이 수식한다. 과거에 선택하기 전부터 궁금해했던 것이므로 과거완료 had been curious를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5a39ffa841",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 주어진 단어를 알맞게 변형하여 쓰시오.\n\nBeing in the water was not as __________ as I had thought. (badly)",
+"selfGrade": true,
+"answer": "bad",
+"solution": "be동사 뒤에는 주어의 상태를 설명하는 형용사가 필요하다. 따라서 부사 badly를 형용사 bad로 바꾸어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-518f23c6a0",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 빈칸을 완성하시오.\n\n그 미용사는 내가 나에게 어울리는 더 짧은 머리 모양을 찾도록 도와주었다.\n\nThe stylist helped me __________ a shorter hairstyle that __________ me.",
+"selfGrade": true,
+"answer": "find, suited",
+"solution": "helped 뒤에는 목적어와 동사원형 find가 이어진다. 관계절의 주어 that이 단수이고 글의 시제가 과거이므로 suited를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-29b3c4fd66",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "두 문장의 의미가 같도록 <조건>에 맞게 한 문장으로 쓰시오.\n\nThe movie started. Then I became completely absorbed in the story, and nothing distracted me.\n\n<조건>\n• once와 「so ... that ~」 구문을 사용할 것\n• 15단어로 쓸 것",
+"selfGrade": true,
+"answer": "Once the movie started, I became so absorbed in the story that nothing distracted me.",
+"solution": "영화가 시작된 시점은 접속사 once로 나타낼 수 있다. 몰입한 정도와 그 결과는 so absorbed in the story that nothing distracted me로 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-57aabd4145",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 질문에 대한 답을 <조건>에 맞게 완성하시오.\n\nQ. What makes Janis Smith’s photographs unique?\n\n<조건>\n• what이 이끄는 명사절을 주어로 사용할 것\n• that절을 보어로 사용할 것\n• capture, human emotions, facial expressions를 모두 활용할 것\n\n→ ________________________________________________.",
+"selfGrade": true,
+"answer": "What makes her photographs unique is that they capture human emotions through facial expressions.",
+"solution": "‘그녀의 사진을 독특하게 만드는 것’은 What makes her photographs unique로 표현한다. 그 구체적인 내용은 that절을 사용하여 사람의 감정을 표정을 통해 포착한다고 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f03d022c79",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 <조건>에 맞게 영작하시오.\n\n그 경험은 내가 때때로 혼자 무언가를 하는 것을 즐긴다는 사실을 깨닫게 했다.\n\n<조건>\n• 「make＋목적어＋동사원형」을 사용할 것\n• 명사절 접속사 that과 동명사를 사용할 것\n• 12단어로 쓸 것",
+"selfGrade": true,
+"answer": "The experience made me realize that I sometimes enjoy doing things alone.",
+"solution": "‘내가 깨닫게 했다’는 사역동사 구문 made me realize로 표현한다. realize의 목적어로 that절을 쓰고, enjoy 뒤에는 동명사 doing을 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2949466d06",
+"typeId": "eng-h1-b02-u0m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어 및 표현을 모두 사용하여 영작하시오. 필요하면 형태를 바꿀 수 있다.\n\n나는 내 이마가 크다고 늘 생각했기 때문에, 이마로 관심을 끄는 것을 피하려고 여러 해 동안 같은 머리 모양을 유지해 왔다.\n\n<보기> because / always / think / forehead / large / keep / the same hairstyle / for years / avoid / draw attention to / it\n\n<조건>\n• because절과 주절에 각각 과거완료를 사용할 것\n• 「to avoid＋동명사」를 사용할 것",
+"selfGrade": true,
+"answer": "Because I had always thought my forehead was large, I had kept the same hairstyle for years to avoid drawing attention to it.",
+"solution": "과거의 특정 시점 이전부터 이어진 생각과 행동이므로 because절과 주절에 각각 had thought와 had kept를 쓴다. ‘관심을 끄는 것을 피하려고’는 목적을 나타내는 to avoid 뒤에 동명사 drawing을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9d0f7b3a4b",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nG: What did you learn about curb cuts?\nB: They are sloped sections between sidewalks and streets.\nG: Were they made for bicycle riders?\nB: No. They were first designed for wheelchair users, but cyclists and many other people also find them useful.\nG: So a design for people with disabilities can help a much wider group.\nB: Exactly. That is called the curb cut effect.",
+"choices": [
+"Curb cuts separate sidewalks from streets.",
+"Curb cuts were originally created for cyclists.",
+"Wheelchair users cannot use curb cuts safely.",
+"A feature designed for people with disabilities may benefit others.",
+"The curb cut effect describes a problem caused by sidewalk design."
+],
+"answer": "④",
+"solution": "대화에서는 휠체어 사용자를 위해 처음 설계된 경사로가 자전거 이용자 등 다른 사람들에게도 유용하다고 설명한다. 따라서 장애인을 위한 변화가 더 넓은 집단에 도움을 줄 수 있다는 ④가 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c676ffdefd",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nScreen readers turn written information on a website into spoken words. They are helpful to users with visual disabilities, but they cannot understand an image by themselves. An accessible website therefore adds alt text, a short explanation of the image. The program finds this explanation and reads it aloud.",
+"choices": [
+"Who can benefit from screen readers?",
+"What kind of information do screen readers speak aloud?",
+"Why is alt text added to an image?",
+"How does a screen reader deliver alt text to a user?",
+"Who invented the first screen-reading program?"
+],
+"answer": "⑤",
+"solution": "글에는 스크린 리더의 이용자, 기능, 한계와 대체 텍스트의 역할이 제시되어 있다. 그러나 최초의 스크린 리더를 발명한 사람이 누구인지는 언급되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f5bd8662f0",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nPeople whose hand movement is limited may find a mouse difficult to operate. They can instead move around an accessible website with a keyboard. The tab key, for example, lets them move between different parts of a page. This feature is also useful to people whose hands are injured for a short time.",
+"choices": [
+"Limited hand movement can make mouse use difficult.",
+"An accessible website can be navigated with a keyboard.",
+"The tab key can move a user to another part of a page.",
+"Keyboard navigation is useful only to people with permanent disabilities.",
+"A person with a temporary hand injury may benefit from keyboard navigation."
+],
+"answer": "④",
+"solution": "글은 키보드 탐색이 손의 움직임이 제한된 사용자뿐 아니라 일시적으로 손을 다친 사람에게도 유용하다고 말한다. 따라서 영구적인 장애가 있는 사람만 이용할 수 있다는 ④가 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4ae09aa080",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 추론할 수 있는 것은?\n\nThe direction in which people follow text is not the same everywhere. Western readers usually proceed from left to right, while readers in some Middle Eastern cultures proceed in the opposite direction. Japanese text may also run vertically. To serve users in different regions, some international websites rearrange elements such as their logos and search buttons according to the selected language.",
+"choices": [
+"Every culture uses only one direction for writing.",
+"A website's arrangement may reflect the way its users read.",
+"Vertical writing is commonly used in all Middle Eastern cultures.",
+"International websites always place their logos in the center.",
+"Changing a website's language affects its words but never its layout."
+],
+"answer": "②",
+"solution": "국제 웹사이트가 선택된 언어와 해당 지역의 읽기 방향에 맞추어 로고나 검색 버튼을 재배치한다고 했다. 따라서 웹사이트의 배열이 사용자의 읽기 방식과 관련될 수 있다는 ②를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a4e644da48",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nB: A curb cut is the lowered, sloping part that joins a sidewalk to a street.\nG: I use it whenever I ride my bicycle.\nB: Interestingly, it was first intended for people using wheelchairs.\nG: But now many people benefit from it.\nB: Yes. When a change for people with disabilities proves useful to others as well, we call it the curb cut effect.",
+"choices": [
+"What does a curb cut connect?",
+"Who were curb cuts first intended to help?",
+"When does the girl use curb cuts?",
+"What does the curb cut effect mean?",
+"In what year was the first curb cut installed?"
+],
+"answer": "⑤",
+"solution": "대화에서 경사로의 위치, 최초의 대상, 소녀의 이용 상황과 ‘curb cut effect’의 의미를 확인할 수 있다. 최초의 경사로가 설치된 연도는 제시되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6696960b97",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용으로 보아, 웹 접근성을 가장 잘 반영한 사례는?\n\nAn image may carry information that is necessary for understanding nearby text. A screen reader can speak written words aloud, but it cannot interpret the image itself. Accessible websites attach alt text—a concise verbal account of non-text content—so that the program can communicate the image's essential information to users with visual disabilities.",
+"choices": [
+"장식용 그림을 늘리고 모든 글자를 그림 파일로 바꾼다.",
+"사진 아래에 사진과 무관한 긴 광고 문구를 추가한다.",
+"이미지를 삭제한 뒤 그 자리를 빈칸으로 남겨 둔다.",
+"사진에 담긴 핵심 대상과 행동을 짧은 글로 설명한다.",
+"스크린 리더가 이미지를 직접 해석할 때까지 설명을 제공하지 않는다."
+],
+"answer": "④",
+"solution": "대체 텍스트는 비문자 정보의 핵심을 간단히 설명하여 스크린 리더가 이를 읽어 줄 수 있게 한다. 따라서 사진의 주요 대상과 행동을 짧게 적는 ④가 웹 접근성을 가장 잘 반영한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dba8f2c65b",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nFor users who cannot move their hands freely, operating a mouse may be challenging. On a keyboard-accessible site, links, buttons, and fields for entering information can all be reached without a mouse. Users may press the arrow, enter, space, or tab keys; the tab key moves the focus from one section of the page to the next. This navigation can assist both users with disabilities and users recovering from hand injuries.",
+"choices": [
+"What physical difficulty may make mouse use challenging?",
+"Which website elements can users reach through keyboard navigation?",
+"What does the tab key allow a user to do?",
+"Which two groups may benefit from this navigation method?",
+"Which of the listed keys do users press more often than all the others?"
+],
+"answer": "⑤",
+"solution": "글에는 키보드 탐색이 필요한 이유, 접근 가능한 요소, 탭 키의 기능과 도움을 받는 집단이 설명되어 있다. 여러 키의 종류는 제시되지만 각 키의 사용 빈도는 비교하지 않으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f2d7c38b31",
+"typeId": "eng-h1-b02-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nWeb layouts can change with reading conventions. In many Western cultures, text moves from left to right; in some Middle Eastern cultures, it moves from right to left. Japanese writing can be arranged from the top downward. Some worldwide websites respond to these differences by changing their format. For a right-to-left setting, for instance, the search control may appear on the left while the logo appears on the right.",
+"choices": [
+"문화에 따라 글을 읽는 방향이 달라질 수 있다.",
+"일부 중동 문화권에서는 오른쪽에서 왼쪽으로 글을 읽는다.",
+"일본의 글은 위에서 아래로 배열될 수 있다.",
+"일부 세계적 웹사이트는 지역의 읽기 관습을 고려해 형식을 조정한다.",
+"오른쪽에서 왼쪽으로 읽는 설정에서는 검색 버튼과 로고가 모두 오른쪽에 놓인다."
+],
+"answer": "⑤",
+"solution": "오른쪽에서 왼쪽으로 읽는 설정에서는 검색 버튼이 왼쪽에, 로고가 오른쪽에 놓일 수 있다고 했다. 두 요소가 모두 오른쪽에 배치된다는 ⑤는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-028af56c4d",
+"typeId": "eng-h1-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳지 않은 문장은?\n\n다음 문장들은 온라인 밴드 The Sam Lees의 활동에 관한 것이다.",
+"choices": [
+"The members were interested in different kinds of music.",
+"They hoped to play music together on the street someday.",
+"They used an app to talk with one another.",
+"They enjoyed to learn about one another’s musical tastes.",
+"Their different backgrounds helped them understand different perspectives."
+],
+"answer": "④",
+"solution": "enjoy는 목적어로 동명사를 취하므로 to learn을 learning으로 고쳐야 한다. 나머지는 각각 감정 표현, to부정사, 동명사 등의 쓰임이 어법에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-39bef07dc8",
+"typeId": "eng-h1-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nThe members formed an online band (A)[calling / called] The Sam Lees. Because they lived in different time zones, it was not easy for them (B)[find / to find] a suitable practice time.",
+"choices": [
+"(A) calling — (B) find",
+"(A) called — (B) to find",
+"(A) calling — (B) to find",
+"(A) called — (B) find",
+"(A) called — (B) finding"
+],
+"answer": "②",
+"solution": "밴드는 The Sam Lees라고 ‘불리는’ 대상이므로 수동의 의미를 나타내는 called가 알맞다. 두 번째 문장은 it이 가주어이고 to find 이하가 진주어이므로 to find를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-13b2376da6",
+"typeId": "eng-h1-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞은 것은?\n\nSingaporean Sam spent his birthday in the hospital. To make him smile, the other members prepared a recording of his favorite song. The song was (A)[singing / sung] by Korean Sam, whose singing made Singaporean Sam laugh. After his recovery, the members decided (B)[to create / creating] a song of their own. Although it attracted little attention online, the work (C)[which / what] they had completed together made them proud.",
+"choices": [
+"(A) singing — (B) to create — (C) which",
+"(A) sung — (B) creating — (C) what",
+"(A) sung — (B) to create — (C) what",
+"(A) singing — (B) creating — (C) which",
+"(A) sung — (B) to create — (C) which"
+],
+"answer": "⑤",
+"solution": "노래는 불리는 대상이므로 수동태 was sung이 알맞다. decide는 목적어로 to부정사를 취하므로 to create를 써야 한다. 마지막 빈칸에는 선행사 the work를 수식하면서 completed의 목적어 역할을 하는 관계대명사 which가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e037a28ffb",
+"typeId": "eng-h1-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞은 것은?\n\nWhile (A)[browsing / browsed] through the profiles of people named Sam Lee, Korean Sam discovered that some of them shared his interest in music. He contacted three of them, (B)[who / which] all agreed to form a virtual band with him. Later, problems with their video chat app made the members consider how (C)[they could combine / could they combine] their musical parts without playing at the same time.",
+"choices": [
+"(A) browsed — (B) who — (C) they could combine",
+"(A) browsing — (B) which — (C) they could combine",
+"(A) browsing — (B) who — (C) they could combine",
+"(A) browsing — (B) who — (C) could they combine",
+"(A) browsed — (B) which — (C) could they combine"
+],
+"answer": "③",
+"solution": "프로필을 살펴보는 주체가 주절의 주어 Korean Sam이므로 능동의 현재분사 browsing이 알맞다. three of them은 사람이므로 계속적 용법의 관계대명사 who를 쓴다. consider의 목적어인 간접의문문은 ‘의문사＋주어＋동사’의 어순이므로 they could combine이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9254071641",
+"typeId": "eng-h1-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 어법상 옳은 문장만을 있는 대로 고른 것은?\n\n<보기>\nⓐ What the members valued was the friendship they had developed through music.\nⓑ The song which they were proud of had been recording by the members themselves.\nⓒ When it came to adding their parts to a song, the members worked in sequence.\nⓓ Living in different time zones made difficult for the members to arrange a practice session.\nⓔ Never did Korean Sam expect that people sharing his name would become such close friends.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓐ의 What은 valued의 목적어를 포함하는 관계대명사이며, ⓒ의 to는 전치사이므로 adding이 알맞다. ⓔ는 부정어 Never가 문두에 나와 ‘did＋주어＋동사원형’으로 도치된 올바른 문장이다. ⓑ는 노래가 녹음되는 대상이므로 had been recorded로, ⓓ는 가목적어 it이 필요하므로 made it difficult로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-62d3c8a42c",
+"typeId": "eng-h1-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A)~(E)에 들어갈 말로 가장 알맞은 것은?\n\n(A)[Looking / Looked] through the profiles of other Sam Lees, I found several people with an interest in music. One of them was a Canadian drummer (B)[who / whose] real name was Samantha. Together with two other members, we formed a band and began making music online. Never (C)[we had imagined / had we imagined] that our names would lead to such a friendship. Our different musical tastes made it (D)[interesting / interested] to learn from one another. In the end, (E)[what / which] mattered most to us was the connection we had built.",
+"choices": [
+"(A) Looking — (B) whose — (C) had we imagined — (D) interesting — (E) what",
+"(A) Looked — (B) whose — (C) had we imagined — (D) interesting — (E) what",
+"(A) Looking — (B) who — (C) we had imagined — (D) interesting — (E) which",
+"(A) Looking — (B) whose — (C) had we imagined — (D) interested — (E) which",
+"(A) Looked — (B) who — (C) we had imagined — (D) interested — (E) what"
+],
+"answer": "①",
+"solution": "프로필을 살펴보는 주체가 I이므로 (A)는 Looking이며, 뒤의 real name과 소유 관계를 나타내는 (B)는 whose이다. (C)는 문두의 Never 때문에 조동사 had가 주어 앞으로 도치된 had we imagined가 알맞다. (D)는 진목적어인 to learn from one another가 흥미를 유발한다는 뜻이므로 interesting이다. (E)는 선행사 없이 ‘우리에게 가장 중요했던 것’을 뜻하는 명사절을 이끄므로 what이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m1s0t0",
+"custom": true
 }
 ]

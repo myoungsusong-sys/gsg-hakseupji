@@ -1642,5 +1642,522 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u4m1s0t0",
 "custom": true
+},
+{
+"id": "fill-2f7e90b89c",
+"typeId": "eng-m1-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 ⓐ~ⓒ에 들어갈 말로 알맞게 연결된 것은?\n\n• Everyone ⓐ[like / likes] the school garden.\n• The birds are ⓑ[take / taking] a dust bath now.\n• ⓒ[Do / Does] you like rock climbing?",
+"choices": [
+"ⓐ like ― ⓑ taking ― ⓒ Do",
+"ⓐ likes ― ⓑ take ― ⓒ Does",
+"ⓐ likes ― ⓑ taking ― ⓒ Do",
+"ⓐ like ― ⓑ take ― ⓒ Do",
+"ⓐ likes ― ⓑ taking ― ⓒ Does"
+],
+"answer": "③",
+"solution": "Everyone은 단수로 취급하므로 현재시제 동사는 likes가 알맞다. 현재진행형은 「be동사 + 동사원형-ing」이므로 taking을 쓴다. 주어가 you인 일반동사 의문문에는 Do를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a377e3443e",
+"typeId": "eng-m1-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ 중 어법상 어색한 문장을 모두 고른 것은?\n\nⓐ Everyone enjoy the poems of Yun Dong-ju.\nⓑ The students in the gym are climbing the wall.\nⓒ Does the student likes rock climbing?\nⓓ Let's reading the writer's works in the library.\nⓔ My classmates grow lettuce in the school garden.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓒ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓓ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 주어 Everyone이 단수이므로 enjoy를 enjoys로 고쳐야 한다. ⓒ는 Does 뒤에 동사원형이 와야 하므로 likes를 like로 고친다. ⓓ는 Let's 뒤에 동사원형을 써야 하므로 reading을 read로 고친다. ⓑ의 현재진행형과 ⓔ의 복수 주어에 따른 현재시제 동사 형태는 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6de4899efa",
+"typeId": "eng-m1-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장에서 표시한 부분을 고친 것으로 적절하지 않은 것은?\n\nⓐ Everyone in the garden [are] excited about the bibimbap party.\nⓑ The students [is] reading poems in the library now.\nⓒ [Does] the students enjoy rock climbing?\nⓓ Look at the birds. Can you see [they]?\nⓔ We are [pick] lettuce for the party now.",
+"choices": [
+"ⓐ are → is",
+"ⓑ is → are",
+"ⓒ Does → Do",
+"ⓓ they → their",
+"ⓔ pick → picking"
+],
+"answer": "④",
+"solution": "ⓓ는 동사 see의 목적어 자리이므로 they를 목적격 them으로 고쳐야 한다. Everyone은 단수이고 The students는 복수이므로 ⓐ와 ⓑ의 수정은 적절하다. ⓒ는 복수 주어에 맞게 Do를 쓰며, ⓔ는 현재진행형이므로 picking을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-daaa27f3e2",
+"typeId": "eng-m1-b10-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 괄호 안 두 단어 중 어법상 틀린 것 하나를 골라 바르게 고쳐 쓰시오. 각 문장에서는 한 단어만 고치며, 고친 단어만 ⓐ~ⓔ 순서대로 쓰시오.\n\nⓐ Everyone in the library (like / poems).\nⓑ The students (is / reading) the writer's works now.\nⓒ Does the student (enjoys / climbing) the wall?\nⓓ Let's (picking / lettuce) for the bibimbap party.\nⓔ We are (exciting / about) the party.",
+"selfGrade": true,
+"answer": "likes, are, enjoy, pick, excited",
+"solution": "ⓐ는 Everyone이 단수 주어이므로 like를 likes로, ⓑ는 복수 주어에 맞게 is를 are로 고친다. ⓒ는 Does 뒤의 동사를 원형 enjoy로 고쳐야 하며, enjoy의 목적어인 climbing은 올바르다. ⓓ는 Let's 뒤에 동사원형 pick을 쓴다. ⓔ는 우리가 신이 난 감정을 나타내므로 exciting을 excited로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e74dd7bb5d",
+"typeId": "eng-m1-b10-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 학교 활동에 관한 문장이다. 표시한 부분이 어법상 맞으면 그대로 쓰고, 틀리면 바른 형태로 고쳐 쓰시오. ⓐ~ⓕ의 답만 순서대로 쓰시오.\n\n• Everyone in the gym ⓐ[enjoy] rock climbing.\n• ⓑ[Does] everyone in the library like poems?\n• The students near the wall are ⓒ[climb] now.\n• The birds are in the garden. Look at ⓓ[them].\n• Let's ⓔ[growing] tomatoes and lettuce.\n• My classmates are ⓕ[exciting] about the bibimbap party.",
+"selfGrade": true,
+"answer": "enjoys, Does, climbing, them, grow, excited",
+"solution": "ⓐ는 단수 주어 Everyone에 맞게 enjoys로 고치고, ⓑ의 Does는 단수 주어 everyone에 알맞으므로 그대로 쓴다. ⓒ는 현재진행형을 이루도록 climbing으로 고친다. ⓓ의 them은 전치사 at 뒤의 목적격이므로 올바르다. ⓔ는 Let's 뒤의 동사원형 grow로, ⓕ는 사람의 감정을 나타내는 excited로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7182379907",
+"typeId": "eng-m1-b10-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "각 문장의 [ ] 안에서 어법상 틀린 단어를 하나씩 찾아 고치시오. 단어를 추가하거나 삭제하지 말고, 고친 단어만 ⓐ~ⓔ 순서대로 쓰시오.\n\nⓐ [Does everyone likes] the school garden?\nⓑ [The students are take] a dust bath처럼 보이는 행동을 하는 새들을 보고 있다. → 이 문장 대신 아래 영어 문장을 판단하시오.\nThe birds near the students [is taking] a dust bath.\nⓒ [Let's enjoying] the poems of Yun Dong-ju.\nⓓ The students are in the garden. [Do you see they]?\nⓔ [Everyone are excited] about the bibimbap party.",
+"selfGrade": true,
+"answer": "like, are, enjoy, them, is",
+"solution": "ⓐ는 Does 뒤에 동사원형을 써야 하므로 likes를 like로 고친다. ⓑ의 주어는 The birds이므로 is를 are로 고치며, near the students는 주어의 수를 바꾸지 않는다. ⓒ는 Let's 뒤에 동사원형 enjoy를 쓰고, ⓓ는 see의 목적어로 them을 쓴다. ⓔ는 Everyone이 단수이므로 are를 is로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e5529c8eba",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 것은?",
+"choices": [
+"An egg is bigger than an olive.",
+"An egg is more small than an avocado.",
+"There is many different egg dishes around the world.",
+"People in Bessières makes a giant omelet every year.",
+"You can fries some eggs in oil."
+],
+"answer": "①",
+"solution": "big의 비교급은 bigger이므로 ①이 옳다. ②는 smaller, ③은 are, ④는 make, ⑤는 fry로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1f00bb3cdb",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOne day, Napoleon and his army (A)[stayed / stays] near Bessières. Napoleon tried an omelet and enjoyed (B)[it / them] very much. These days, people in Bessières (C)[make / makes] a giant omelet every year.",
+"choices": [
+"(A) stayed - (B) them - (C) make",
+"(A) stays - (B) it - (C) make",
+"(A) stayed - (B) it - (C) makes",
+"(A) stayed - (B) it - (C) make",
+"(A) stays - (B) them - (C) makes"
+],
+"answer": "④",
+"solution": "과거를 나타내는 One day에 맞추어 stayed를 써야 한다. an omelet은 단수이므로 대명사 it으로 받고, 주어 people이 복수이므로 make가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5767daed47",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것의 개수는?\n\nAn egg ⓐhas a shell. It is ⓑmore big than an olive, but it is ⓒsmaller than an avocado. There ⓓis many different egg dishes around the world. To make an omelet, you beat some eggs and ⓔfries them in oil.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓑ는 bigger, ⓓ는 are, ⓔ는 fry로 고쳐야 한다. ⓐ는 단수 주어 An egg에, ⓒ는 비교 표현에 알맞으므로 어색한 것은 모두 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-af2f8d237e",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ를 고쳐 쓴 것 중 바르지 않은 것은?\n\nThe omelet ⓐare a popular egg dish. You ⓑcan makes it easily. You beat some eggs and ⓒfries them in oil. ⓓDo you want a more delicious omelet? Just ⓔadds cheese, vegetables, or meat.",
+"choices": [
+"ⓐ are → is",
+"ⓑ makes → make",
+"ⓒ fries → fry",
+"ⓓ Do → Are",
+"ⓔ adds → add"
+],
+"answer": "④",
+"solution": "일반동사 want의 의문문에는 Do가 필요하므로 ⓓ는 고칠 필요가 없다. 나머지는 각각 단수 주어, 조동사 뒤의 동사원형, 동사의 병렬 구조, 명령문의 동사원형에 맞게 고친 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-49d8dc4ba8",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓔ에 주어진 단어를 어법상 알맞은 형태로 바꾸어 순서대로 쓰시오.\n\nThere ⓐ(be) many different egg dishes around the world. An omelet ⓑ(be) a popular one. You can ⓒ(make) it easily: beat some eggs and ⓓ(fry) them in oil. If you add cheese, it will taste ⓔ(good).",
+"selfGrade": true,
+"answer": "are, is, make, fry, good",
+"solution": "many different egg dishes가 복수이므로 are, An omelet이 단수이므로 is를 쓴다. 조동사 can 뒤와 명령문의 병렬 구조에서는 동사원형 make와 fry를 쓰며, 감각동사 taste 뒤에는 형용사 good이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a7acd4be97",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 big과 small을 모두 사용하여 영어 문장을 완성하시오. 단, 두 단어는 각각 비교급으로 바꾸고 than을 두 번, but을 한 번 사용할 것.\n\n달걀은 올리브보다 크지만 아보카도보다 작다.",
+"selfGrade": true,
+"answer": "An egg is bigger than an olive, but it is smaller than an avocado.",
+"solution": "big과 small의 비교급은 각각 bigger와 smaller이다. 비교 대상 앞에 than을 쓰고, 서로 대조되는 두 내용을 but으로 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9d89b8365a",
+"typeId": "eng-m1-b10-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 한 문장으로 고쳐 쓰시오. 단, and를 사용하고, 반복되는 주어는 생략하며, 두 번째 문장의 the omelet은 알맞은 대명사로 바꿀 것.\n\nNapoleon tried an omelet from Bessières. Napoleon enjoyed the omelet very much.",
+"selfGrade": true,
+"answer": "Napoleon tried an omelet from Bessières and enjoyed it very much.",
+"solution": "두 문장의 주어와 시제가 같으므로 동사구를 and로 연결하고 두 번째 Napoleon은 생략한다. 앞에 나온 단수 명사 an omelet은 목적격 대명사 it으로 받는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-04bbbdfb5d",
+"typeId": "eng-m1-b10-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"The king did not shared the rice.",
+"Rani will gives rice to the people.",
+"The people was hungry.",
+"Rani had an idea about the rice.",
+"The king hear about Rani in the past."
+],
+"answer": "④",
+"solution": "④는 과거의 일을 나타내기 위해 have의 과거형 had를 바르게 사용했다. ①은 shared를 share로, ②는 gives를 give로 고쳐야 한다. ③은 people에 맞게 were를 쓰고, ⑤는 과거를 나타내므로 heard를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b63026509f",
+"typeId": "eng-m1-b10-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "라니의 지혜로움에 감탄하는 다음 문장의 빈칸에 들어갈 말로 알맞은 것은?\n\n__________ wise Rani is!",
+"choices": [
+"What",
+"How",
+"What a",
+"How a",
+"What an"
+],
+"answer": "②",
+"solution": "형용사 wise를 바로 뒤에 쓰는 감탄문은 「How＋형용사＋주어＋동사!」의 형태이다. 따라서 빈칸에는 How가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4673f94a21",
+"typeId": "eng-m1-b10-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 (A), (B)에 들어갈 말이 바르게 연결된 것은?\n\n(A) How __________ grains of rice will Rani receive?\n(B) The king will __________ some rice from Rani.",
+"choices": [
+"much — get",
+"many — gets",
+"much — gets",
+"many — got",
+"many — get"
+],
+"answer": "⑤",
+"solution": "grains는 셀 수 있는 명사의 복수형이므로 (A)에는 many가 알맞다. 조동사 will 뒤에는 동사원형을 써야 하므로 (B)에는 get이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2f450aded9",
+"typeId": "eng-m1-b10-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ의 문장에서 대괄호로 표시한 부분을 고친 것으로 적절하지 않은 것은?\n\nⓐ Long ago, the king [keep] rice for himself.\nⓑ The hungry people did not [had] enough rice.\nⓒ How [many] rice will the elephants carry?\nⓓ Rani will [shares] the rice with the people.\nⓔ [How] a kind girl Rani is!",
+"choices": [
+"ⓐ keep → kept",
+"ⓑ had → have",
+"ⓒ many → much",
+"ⓓ shares → shared",
+"ⓔ How → What"
+],
+"answer": "④",
+"solution": "조동사 will 뒤에는 동사원형이 와야 하므로 ⓓ의 shares는 share로 고쳐야 한다. 과거를 나타내는 ⓐ에는 kept를 쓰고, did not 뒤의 ⓑ에는 have를 쓴다. rice는 셀 수 없는 명사이므로 much가 알맞으며, 「a＋형용사＋명사」 앞에는 감탄사 What을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-90a818f608",
+"typeId": "eng-m1-b10-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 대괄호로 표시한 여덟 부분 중 어법상 틀린 부분 여섯 개를 찾아 바르게 고치시오.\n\nLong ago, the people ⓐ[was] hungry. The king ⓑ[did] not share his rice with them. Rani ⓒ[thinked] about a way to help the people.\n\nKing: ⓓ[What] honest you are, Rani!\nRani: I want one grain of rice today. Please double the rice each day.\nKing: How ⓔ[many] rice will you get on the last day?\nRani: My rice will ⓕ[be] for the hungry people. I will ⓖ[gave] some to you, too. Please don't ⓗ[are] greedy anymore.\n\n[조건]\n• 틀린 부분마다 대괄호 안의 단어를 다른 단어 한 개로 바꿀 것.\n• 바르게 고친 단어 여섯 개만 ⓐ~ⓗ의 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "were, thought, How, much, give, be",
+"solution": "ⓐ는 복수인 people을 받으므로 were가 알맞고, ⓒ는 think의 과거형 thought로 고친다. ⓓ는 형용사 honest 앞이므로 How를, ⓔ는 셀 수 없는 rice 앞이므로 much를 써야 한다. ⓖ는 will 뒤이므로 give를 쓰고, ⓗ는 부정 명령문 「don't＋동사원형」에 맞게 be로 고친다. ⓑ의 did와 ⓕ의 be는 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7e837d85a2",
+"typeId": "eng-m1-b10-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 왕과 라니의 이야기에 관한 문장이다. 대괄호로 표시한 부분 중 어법상 틀린 것을 모두 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nⓐ The king [heared] about Rani, but he did not [knew] her plan.\nⓑ How [many] rice will the elephants [carries] to Rani's house?\nⓒ [How] a wise girl [is Rani]!\n\n[조건]\n• ⓐ, ⓑ에서는 각 대괄호 안의 단어를 올바른 형태 또는 알맞은 다른 단어로 바꿀 것.\n• ⓒ에서는 첫 번째 대괄호 안의 단어를 바꾸고, 두 번째 대괄호 안의 두 단어는 순서만 바꿀 것.\n• 대괄호 밖의 단어와 문장 부호는 바꾸지 말 것.\n• 완성한 세 문장을 ⓐ, ⓑ, ⓒ 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "The king heard about Rani, but he did not know her plan.\nHow much rice will the elephants carry to Rani's house?\nWhat a wise girl Rani is!",
+"solution": "ⓐ에서 hear의 과거형은 heard이며, did not 뒤에는 동사원형 know를 쓴다. ⓑ에서 rice는 셀 수 없는 명사이므로 much가 필요하고, will과 함께 쓰이는 동사는 원형 carry로 고친다. ⓒ는 「What＋a＋형용사＋명사＋주어＋동사!」의 감탄문이므로 What a wise girl Rani is!가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-169589be6a",
+"typeId": "eng-m1-b10-u6m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화의 빈칸에 들어갈 말을 <보기>에서 골라 알맞은 형태로 쓰시오.\n\n<보기> taste / sound / spicy / loud\n\nA: How is the tteokbokki?\nB: It (1)________ ________. I need some water.\nA: Here you are.\nB: Thanks. And the music (2)________ ________. Please turn it down.\n\n조건: 현재시제로 쓰고, <보기>의 단어를 한 번씩 모두 사용할 것.",
+"selfGrade": true,
+"answer": "(1) tastes spicy (2) sounds loud",
+"solution": "떡볶이의 매운맛은 taste spicy로, 음악의 큰 소리는 sound loud로 나타낸다. 현재시제에서 주어 It과 the music은 모두 3인칭 단수이므로 동사에 -s를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f08913f2d4",
+"typeId": "eng-m1-b10-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장에서 ⓐ~ⓔ의 문맥상 뜻을 바르게 연결한 것만을 고른 것은?\n\nTo make an omelet, ⓐbeat the eggs and ⓑfry them in oil. You can ⓒadd cheese. The omelet will ⓓtaste better. Omelets are ⓔpopular in many countries.\n\nㄱ. ⓐ: 이기다\nㄴ. ⓑ: 기름에 부치다\nㄷ. ⓒ: 추가하다\nㄹ. ⓓ: 맛보다\nㅁ. ⓔ: 인기 있는",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "④",
+"solution": "beat는 이 문장에서 달걀을 ‘휘젓다’라는 뜻이다. taste better는 ‘더 좋은 맛이 나다’라는 뜻이므로 ‘맛보다’로 해석하지 않는다. 따라서 바르게 연결한 것은 ㄴ, ㄷ, ㅁ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-af44d70a02",
+"typeId": "eng-m1-b10-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "음식점에서 손님의 주문을 받으려는 상황이다. 다음 문장과 의미가 통하도록 빈칸을 완성한 것은?\n\nAre you ready to order?\n→ ________ I ________ your order?",
+"choices": [
+"Would — like",
+"May — take",
+"Do — want",
+"Are — taking",
+"How — about"
+],
+"answer": "②",
+"solution": "주문할 준비가 되었는지 묻는 말은 주문을 받아도 되는지 묻는 May I take your order?로 바꾸어 표현할 수 있다. Would like와 want를 넣으면 직원이 손님의 주문을 원하는지 묻는 부자연스러운 뜻이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d71217d907",
+"typeId": "eng-m1-b10-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAn omelet can be different from country to country. Spain has Tortilla de Patata, and ‘patata’ means ‘a potato.’ In Malaysia, people put chicken fried rice inside a thin omelet. This dish is called Nasi Goreng Pattaya. People in Indonesia and Singapore enjoy it, too.",
+"choices": [
+"How to Fry Chicken",
+"The Story of a French Town",
+"Different Omelets Around the World",
+"Why Eggs Have Shells",
+"A Festival for Spanish Potatoes"
+],
+"answer": "③",
+"solution": "글은 스페인과 말레이시아의 서로 다른 오믈렛을 소개하고 있다. 따라서 여러 나라의 오믈렛을 포괄하는 ‘세계의 다양한 오믈렛’이 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9b3175ffef",
+"typeId": "eng-m1-b10-u6m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 (1)~(4)에 들어갈 단어를 <보기>에서 골라 알맞은 형태로 쓰시오.\n\n<보기> add / beat / fry / taste\n\nAn omelet is easy to make. First, you (1)________ some eggs. Next, you (2)________ them in oil. For a more delicious omelet, (3)________ some cheese or vegetables. An omelet with these ingredients often (4)________ better.\n\n조건\n• <보기>의 단어를 한 번씩 모두 사용할 것.\n• 현재시제로 쓰되, (3)은 명령문이 되도록 할 것.\n• 정답은 (1)~(4)의 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "beat, fry, add, tastes",
+"solution": "달걀을 휘젓고 기름에 부치는 순서이므로 (1)은 beat, (2)는 fry이다. 재료를 추가하라는 명령문에서는 동사원형 add를 쓴다. 마지막 문장의 주어는 these ingredients가 아니라 단수인 An omelet이므로 tastes를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-41c7956ad0",
+"typeId": "eng-m1-b10-u6m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글 전체의 내용을 담은 제목을 완성하시오.\n\nNapoleon enjoyed an omelet in Bessières and wanted a very large one for his army the following day. Today, the town holds an omelet festival every year and makes a very large omelet for it.\n\nThere are also different ways to make omelets in different countries. Tortilla de Patata is a Spanish omelet. In Malaysia, a thin omelet wraps chicken fried rice. This dish, Nasi Goreng Pattaya, is popular in Indonesia and Singapore as well.\n\n제목: Omelets: A Town’s (1)________ and Different (2)________ Around the (3)________\n\n<보기> festival / ingredient / recipe / shell / world\n\n조건\n• <보기>에서 서로 다른 세 단어를 골라 쓸 것.\n• 필요한 경우 단어의 형태를 바꿀 것.\n• 각 답의 첫 글자는 대문자로 쓸 것.\n• 정답은 (1)~(3)의 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "Festival, Recipes, World",
+"solution": "첫 문단은 베시에르에서 해마다 열리는 오믈렛 축제를 설명하므로 (1)은 Festival이다. 둘째 문단은 나라별로 다른 오믈렛 조리법을 소개하므로 (2)는 복수형 Recipes가 알맞다. ‘세계 곳곳의’라는 뜻의 around the world를 완성하려면 (3)에 World를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-96bf03e107",
+"typeId": "eng-m1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nG: You don't look well. Is something wrong?\nB: Yes. My head hurts.\nG: Why don't you visit the First Aid Station?\nB: That's a good idea. I'll go now.\nG: I hope you get well soon.",
+"choices": [
+"남자아이는 배가 아프다고 말한다.",
+"여자아이는 남자아이에게 약을 건넨다.",
+"남자아이는 응급 처치소에 갈 생각이다.",
+"여자아이는 남자아이에게 집에 가라고 권한다.",
+"남자아이는 이미 응급 처치소에 다녀왔다."
+],
+"answer": "③",
+"solution": "남자아이는 응급 처치소에 가 보라는 제안을 듣고 지금 가겠다고 답했다. 따라서 대화의 내용과 일치하는 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8f52e2f087",
+"typeId": "eng-m1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nJunho: Can you help me choose a birthday gift for my mom? Her birthday is this Sunday.\nMinji: Sure. What would you like to buy?\nJunho: I'm not sure yet.\nKate: How about gloves? The weather is getting cold.\nJunho: She already has many pairs.\nMinji: What about a scarf, then?\nJunho: Good idea! There are lots of colors to choose from.\nKate: Which color does your mom like?\nJunho: Blue. I'll choose a scarf in that color.\nMinji: I hope she'll like your gift.",
+"choices": [
+"What is Junho choosing a gift for?",
+"Why does Kate suggest gloves?",
+"Why doesn't Junho choose gloves?",
+"Which color will Junho choose for the scarf?",
+"Where will Junho give his mom the gift?"
+],
+"answer": "⑤",
+"solution": "선물을 고르는 목적, 장갑을 제안한 이유와 선택하지 않은 이유, 선택할 목도리의 색은 대화에서 확인할 수 있다. 그러나 준호가 어머니께 선물을 드릴 장소는 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f8438c9571",
+"typeId": "eng-m1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 추론한 내용으로 가장 적절한 것은?\n\nHarry hoped to find many friends at his new school. When he introduced himself to the class, the students showed interest in his spines. Later, during lunch, Peter invited Harry to play soccer and sent the ball toward him. Harry jumped to catch it, but the ball lost its air. The students could no longer play, so they went inside. Harry stayed on the playground alone.",
+"choices": [
+"친구들은 Harry가 자기소개를 하기 전부터 그의 이름을 알고 있었다.",
+"Peter는 Harry의 가시를 보고도 그에게 함께 축구하자고 제안했다.",
+"Harry는 축구를 하기 싫어서 일부러 공의 바람을 빠지게 했다.",
+"친구들은 Harry를 혼자 남겨 두려고 축구를 시작했다.",
+"Harry는 운동장에 혼자 남은 뒤 친구를 사귀려던 생각을 버렸다."
+],
+"answer": "②",
+"solution": "학생들은 교실에서 Harry의 가시에 관심을 보였고, 이후 Peter는 Harry를 축구에 초대했다. 따라서 가시를 본 뒤에도 함께 놀자고 제안했다는 추론이 적절하다. 나머지는 글에 없는 사전 지식이나 의도, 이후의 생각을 단정한 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cae2d031c1",
+"typeId": "eng-m1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고, <보기>의 질문 중 글에 제시된 정보로 답할 수 있는 것만을 고른 것은?\n\nHarry saw Ruby on the school bus. The rabbit greeted him with a wave. As Harry tried to take the seat beside her, his spines hurt her. He apologized and moved to a seat at the back. Feeling sad and alone, he thought that no one liked him because of his spines.\nWeeks passed. On his birthday, Harry sat at the back of the classroom. The other students talked together and then went out, leaving him behind. He felt lonely.\n\n<보기>\nㄱ. What did Ruby do when she greeted Harry?\nㄴ. Did Ruby tell Harry to move to the back of the bus?\nㄷ. What did Harry believe was the reason no one liked him?\nㄹ. What were the students talking about on Harry's birthday?",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "Ruby가 손을 흔들었다는 사실과 Harry가 자신의 가시 때문에 아무도 자신을 좋아하지 않는다고 생각했다는 점은 제시되어 있다. Ruby가 뒤쪽 자리로 이동하라고 말했는지는 알 수 없으며, 생일날 학생들의 대화 내용도 제시되지 않았다. 따라서 답할 수 있는 질문은 ㄱ과 ㄷ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-90d5cfce22",
+"typeId": "eng-m1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 학생들이 나눈 의견 중, 글에 근거한 판단으로 적절한 것만을 고른 것은?\n\n(A) Harry was happy to begin life at his new school and wanted many friends. Peter asked him to join a soccer game. However, when Harry jumped toward the ball, it lost its air. The game ended, and the other students went inside.\n\n(B) On the bus, Ruby waved to Harry. He tried to sit beside her, but his spines hurt her. After saying sorry, he moved to the back. Harry believed that his spines made everyone dislike him.\n\n(C) On his birthday, the students went out of the classroom without him. Later, they asked him to come outside. They had sponge jackets on, and Ruby handed him a box containing a jacket. Harry was pleased with the gift. After he put it on, his classmates hugged him, and he no longer felt lonely.\n\n<보기>\nㄱ. Peter의 초대와 Ruby의 인사는 친구들이 Harry에게 먼저 다가간 사례이다.\nㄴ. (B)에 제시된 Harry의 생각만으로 친구들 모두의 실제 마음을 확인할 수 있다.\nㄷ. (C)에서 친구들이 먼저 나간 행동만 보고 Harry를 싫어한다고 판단하면, 이후의 행동을 충분히 고려하지 않은 것이다.\nㄹ. Harry가 외로움을 느끼지 않게 된 것은 친구들이 그의 가시가 사라진 것을 확인했기 때문이다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄷ"
+],
+"answer": "⑤",
+"solution": "Peter의 초대와 Ruby의 인사는 Harry에게 먼저 다가간 행동이므로 ㄱ은 적절하다. Harry 개인의 생각이 친구들 모두의 실제 마음을 증명하지는 않으며, 생일 선물과 포옹까지 고려하면 친구들이 먼저 나갔다는 이유만으로 그를 싫어한다고 판단할 수 없으므로 ㄷ도 적절하다. 가시가 사라졌다는 내용은 없으므로 ㄹ은 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9e0e13932e",
+"typeId": "eng-m1-b10-u7m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, <요약문>의 빈칸에 들어갈 말을 <조건>에 맞게 영어로 쓰시오.\n\nHarry was lonely after his classmates went out of the classroom on his birthday. Before long, however, they called him outside. The students were waiting in sponge jackets. Ruby gave him a box, and he found a jacket inside. Harry happily put on his present. His classmates hugged him, and a smile appeared on his face.\n\n<요약문>\nThe classmates' leaving made Harry feel lonely at first. However, their later actions showed that leaving the classroom did not mean that they ____________________.\n\n<조건>\n• 글 전체의 내용에 맞게 'Harry를 혼자 두고 싶어 했다'라는 뜻을 완성할 것.\n• 다음 단어를 모두 한 번씩 사용하여 5단어로 쓸 것.\n[Harry / alone / wanted / leave / to]",
+"selfGrade": true,
+"answer": "wanted to leave Harry alone",
+"solution": "친구들이 교실을 나갔을 때 Harry는 외로웠지만, 이후 친구들은 그를 밖으로 불러 선물을 주고 안아 주었다. 따라서 처음에 교실을 떠난 행동이 Harry를 혼자 두고 싶었다는 뜻은 아니었다. 빈칸에는 wanted to leave Harry alone이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m4s0t0",
+"custom": true
 }
 ]

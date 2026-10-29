@@ -2232,5 +2232,382 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u6m7s0t0",
 "custom": true
+},
+{
+"id": "fill-c9777696cd",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A)~(C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHelen (A)[used to play / was used to play] baseball when she was young. Sarah enjoys listening to Helen’s stories, (B)[which / that] bring the two closer together. Sarah believes (C)[what / that] every dream is worth chasing.",
+"choices": [
+"used to play — which — that",
+"used to play — that — what",
+"was used to play — which — what",
+"was used to play — that — that",
+"used to play — which — what"
+],
+"answer": "①",
+"solution": "‘과거에 ~하곤 했다’는 「used to＋동사원형」으로 나타낸다. 계속적 용법의 관계대명사로는 that을 쓸 수 없으므로 which가 알맞다. believes 뒤에는 완전한 절이 이어지므로 접속사 that을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e566d1ba97",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>에서 어법상 알맞은 문장의 개수는?\n\n<보기>\na. Helen must have enjoyed playing baseball.\nb. Sarah should listened more carefully to her grandmother.\nc. Chicago, which was far from Helen’s home, worried her.\nd. What connects Helen and Sarah are baseball.\ne. Helen spent many years regretting her decision.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "a의 「must have＋과거분사」, c의 계속적 용법의 which, e의 「spend＋시간＋동명사」는 모두 알맞다. b는 should have listened가 되어야 하고, d는 주어인 What절을 단수로 보아 is를 써야 한다. 따라서 알맞은 문장은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5f66e2f80c",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것끼리 짝지어진 것은?\n\nHelen, ⓐwho loved baseball, heard about the main tryouts. She was worried ⓑthat she might fail and also feared traveling alone to Chicago, ⓒthat was far from home. On the day of the tryouts, she was too afraid ⓓto go. Later, she often thought that she should have ⓔwent there.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ"
+],
+"answer": "③",
+"solution": "쉼표 뒤의 계속적 용법에서는 관계대명사 that을 쓸 수 없으므로 ⓒ는 which가 되어야 한다. 「should have＋과거분사」가 필요하므로 ⓔ의 went는 gone으로 고쳐야 한다. 나머지는 모두 어법상 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-82726cf22d",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"What Helen regretted most were missing the tryouts.",
+"Helen may have went to Chicago if she had not been afraid.",
+"The baseball stories, that Sarah hears repeatedly, connect them.",
+"The league was founded because many young men were fighting in World War II.",
+"Helen’s dreams were worth to chase even if she caught only a few of them."
+],
+"answer": "④",
+"solution": "④는 수동태 「was founded」와 접속사 because 뒤의 절이 모두 올바르게 쓰였다. ①은 was, ②는 gone, ③은 which, ⑤는 chasing으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a4e89b74cf",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 어법상 어색한 부분의 개수는?\n\nHelen used to working as a cook, and she still enjoys making delicious food. What connects her and Sarah most strongly are baseball. Helen’s stories, which Sarah loves, must have inspired her. Helen believes that every dream is worth chase, even if only a few dreams are achieved.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "used to working은 used to work로, What절 뒤의 are는 is로 고쳐야 한다. 또한 「be worth＋동명사」이므로 worth chase는 worth chasing이 되어야 한다. 따라서 어법상 어색한 부분은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ffccc37f24",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 의미가 같도록 주어진 말을 모두 사용하여 문장을 완성하시오. 단, 필요하면 단어의 형태를 바꿀 수 있다.\n\n그녀는 시카고에 갔어야 했지만, 실패할지도 모른다는 생각 때문에 너무 두려워서 갈 수 없었다.\n\n[go / Chicago / she / should / but / the thought / might / fail / too / afraid]",
+"selfGrade": true,
+"answer": "She should have gone to Chicago, but the thought that she might fail made her too afraid to go.",
+"solution": "과거에 하지 않은 일에 대한 후회는 「should have＋과거분사」로 나타내므로 should have gone을 쓴다. the thought의 구체적인 내용을 설명하는 동격의 that절을 사용한다. 「make＋목적어＋형용사」와 「too＋형용사＋to부정사」를 함께 배열하면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fce1e853f7",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 계속적 용법의 관계대명사를 사용하여 한 문장으로 쓰시오.\n\nHelen told Sarah stories about baseball. Sarah loved the stories very much.",
+"selfGrade": true,
+"answer": "Helen told Sarah stories about baseball, which Sarah loved very much.",
+"solution": "두 번째 문장의 the stories를 대신하면서 첫 문장 전체에 정보를 덧붙이도록 관계대명사 which를 사용한다. 계속적 용법이므로 which 앞에 쉼표를 쓰며, that은 사용할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d59da91005",
+"typeId": "eng-m3-b11-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 틀린 부분을 모두 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nWhat connect Helen and Sarah most strongly are baseball, that Helen must have love since she was young.",
+"selfGrade": true,
+"answer": "What connects Helen and Sarah most strongly is baseball, which Helen must have loved since she was young.",
+"solution": "What절 안의 주어가 단수이므로 connect를 connects로 쓰고, What절 전체도 단수 주어이므로 are를 is로 고친다. 쉼표 뒤의 계속적 용법에는 which를 써야 한다. 또한 「must have＋과거분사」에 따라 love는 loved가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8635df71ab",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"The boy sitting beside the tree is wearing a cap.",
+"I want to see the pictures painted by the children.",
+"The people waiting outside the pet shop look excited.",
+"The flowers growing in the garden smells sweet.",
+"The eggs laid by the queen need care."
+],
+"answer": "④",
+"solution": "④의 주어는 복수 명사 flowers이며, growing in the garden은 flowers를 수식하는 분사구이다. 따라서 주절의 동사 smells를 smell로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6d083241a5",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 괄호 안의 동사를 알맞은 분사 형태로 바꿀 때, 현재분사를 써야 하는 문장끼리 모두 묶인 것은?\n\na. The ants (carry) food are workers.\nb. The picture (paint) by the boy looks beautiful.\nc. The children (look) at the parrot are smiling.\nd. The eggs (lay) by the queen are in the colony.\ne. The bicycle (leave) beside the tree belongs to my brother.\nf. The boy (wear) a blue cap is feeding the parrot.",
+"choices": [
+"a, b, f",
+"a, c, f",
+"b, c, e",
+"b, d, e",
+"c, d, f"
+],
+"answer": "②",
+"solution": "a, c, f에서는 수식받는 명사가 각각 먹이를 나르고, 앵무새를 보고, 모자를 쓰는 동작의 주체이므로 carrying, looking, wearing을 쓴다. b, d, e에서는 수식받는 명사가 동작의 대상이므로 painted, laid, left를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6d45804b94",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 ⓐ~ⓔ 중 어법상 알맞은 문장끼리 짝지어진 것은?\n\nⓐ Our group has chosen ants for the science project.\nⓑ Ants are socially insects.\nⓒ The male is an ant what helps the queen produce eggs.\nⓓ Ants use a special chemical for communicating.\nⓔ Worker ants do jobs such as defending the colony and collected food.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ",
+"ⓐ, ⓓ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 현재완료 has chosen을, ⓓ는 전치사 for 뒤에 동명사 communicating을 바르게 사용했다. ⓑ의 socially는 명사 insects를 수식하는 social로, ⓒ의 what은 선행사 an ant를 받는 that 또는 which로 고쳐야 한다. ⓔ의 collected는 defending과 병렬을 이루도록 collecting으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6275a6c922",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 바르게 연결된 것은?\n\nThe residents (A)[living / lived] together in an ant colony have different roles. The queen lays eggs, and the male helps her produce them. (B)[What / That] worker ants do includes caring for eggs, defending the colony, and (C)[collect / collecting] food.",
+"choices": [
+"living — That — collecting",
+"lived — What — collect",
+"living — What — collecting",
+"lived — That — collecting",
+"living — What — collect"
+],
+"answer": "③",
+"solution": "주민들이 함께 사는 능동 관계이므로 (A)에는 living이 알맞다. (B)에는 선행사를 포함하여 ‘일개미들이 하는 것’을 뜻하는 What이 필요하다. (C)에는 caring, defending과 병렬을 이루는 collecting이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d35db00d47",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞은 문장의 개수는?\n\nⓐ The ants carrying food to the colony are workers.\nⓑ What the queen does throughout her life is lay eggs.\nⓒ Our group has chose insects for the project.\nⓓ Ants use a special chemical to communicating with one another.\nⓔ Worker ants care for eggs and defend the colony.\nⓕ The eggs laying by the queen are cared for by workers.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "어법상 알맞은 문장은 ⓐ, ⓑ, ⓔ의 세 개이다. ⓒ는 현재완료이므로 chose를 chosen으로, ⓓ는 to부정사이므로 communicating을 communicate로 고쳐야 한다. ⓕ의 eggs는 알을 낳는 동작의 대상이므로 laying을 laid로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-411bf01372",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 밑줄에 해당하는 【 】 부분을 고친 것으로 알맞은 것은?",
+"choices": [
+"The children 【inviting】 to the pet shop are excited.\n→ inviting을 invite로 고친다.",
+"The colony 【what】 has many residents is home to different types of ants.\n→ what을 who로 고친다.",
+"The male helps the queen 【producing】 eggs.\n→ producing을 produced로 고친다.",
+"【That】 we have learned about ants is interesting.\n→ That을 What으로 고친다.",
+"Workers do jobs such as collecting food and 【defend】 the colony.\n→ defend를 defended로 고친다."
+],
+"answer": "④",
+"solution": "④에서는 learned의 목적어가 빠져 있으므로 선행사를 포함하는 관계대명사 What이 필요하다. ①은 초대받은 아이들이므로 invited, ②는 선행사 The colony를 받으므로 which 또는 that이 알맞다. ③은 help의 목적격 보어로 produce 또는 to produce를, ⑤는 collecting과 병렬을 이루는 defending을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8290ac2a94",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 어법상 어색한 문장과 수정안이다. 제시된 수정만으로 문장 전체가 어법상 알맞아지는 것끼리 모두 묶인 것은?\n\nⓐ The ants collected food are workers.\n   → collected를 collecting으로 수정\nⓑ The eggs laying by the queen need care.\n   → laying을 laid로 수정\nⓒ What worker ants do are important for the colony.\n   → are를 is로 수정\nⓓ The male helps the queen producing eggs.\n   → producing을 produces로 수정\nⓔ Workers do jobs like caring for eggs, defending the colony, and collect food.\n   → collect를 collecting으로 수정\nⓕ Our group has chose ants for the project.\n   → chose를 choosing으로 수정",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓒ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓔ, ⓕ",
+"ⓐ, ⓑ, ⓒ, ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 능동 관계의 현재분사 collecting, ⓑ는 수동 관계의 과거분사 laid로 고치면 알맞다. ⓒ의 주어인 What절은 단수 취급하므로 is가 맞고, ⓔ는 전치사 like 뒤의 동명사들을 병렬로 연결해야 하므로 collecting이 맞다. ⓓ는 produce 또는 to produce로, ⓕ는 chosen으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-95e1945303",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓕ 중 어법상 어색한 문장끼리 모두 짝지어진 것은?\n\nⓐ The picture painted by the child wearing a cap is beautiful.\nⓑ What we have learned about ants helps us understand their lives.\nⓒ The ants that live together in a colony spends their lives doing different jobs.\nⓓ The eggs laid by the queen are cared for by worker ants.\nⓔ Worker ants do important jobs, like caring for eggs, defend the colony, and collecting food.\nⓕ The chemical that ants use helps them communicate.",
+"choices": [
+"ⓐ, ⓓ",
+"ⓒ, ⓔ",
+"ⓑ, ⓕ",
+"ⓒ, ⓕ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓒ에서 주절의 주어는 복수 명사 The ants이므로 spends를 spend로 고쳐야 한다. ⓔ에서는 like 뒤에 caring, defending, collecting이 병렬로 연결되어야 하므로 defend를 defending으로 고쳐야 한다. 나머지 문장들은 분사 수식, 관계대명사, 주어와 동사의 수 일치가 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ad9c3bd61f",
+"typeId": "eng-m3-b11-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 틀린 낱말이 정확히 5개 있다. 각 낱말을 알맞게 고친 뒤, 고친 낱말만 본문에 나오는 순서대로 쓰시오.\n\n[조건]\n• 낱말을 추가하거나 삭제하지 말 것.\n• 관계대명사를 고칠 때는 which를 사용할 것.\n\nOur group has chose ants for a science project. These insects are social and use a special chemical to communicating. They live in colonies what have many residents lived together. Female worker ants do jobs such as caring for eggs, defending the colony, and collected food.",
+"selfGrade": true,
+"answer": "chosen, communicate, which, living, collecting",
+"solution": "현재완료 has 뒤에는 과거분사 chosen이, 목적을 나타내는 to 뒤에는 동사원형 communicate가 필요하다. 선행사 colonies를 수식하는 관계절에는 조건에 따라 which를 쓰며, residents가 함께 사는 능동 관계이므로 lived를 living으로 고친다. 마지막으로 caring, defending과 병렬을 이루도록 collected를 collecting으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ae8c57276",
+"typeId": "eng-m3-b11-u3m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 배열하여 문장을 완성하시오.\n\n나는 이 시장에서 지역 음식을 살 수 있는지 궁금하다.\n\n<보기>\ncan / this / wonder / food / I / at / if / buy / market / local / I\n\n<조건>\n• 주어진 단어를 각각 한 번씩 모두 사용할 것\n• I wonder로 시작할 것",
+"selfGrade": true,
+"answer": "I wonder if I can buy local food at this market.",
+"solution": "‘~인지 궁금하다’는 I wonder if로 나타낸다. if가 이끄는 간접의문문은 ‘주어+동사’ 어순이므로 I can buy로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-7524a10f29",
+"typeId": "eng-m3-b11-u3m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장을 우리말의 뜻에 맞게 한 문장으로 연결하시오.\n\nI wonder. + Did Thai people trade goods on rivers in the past?\n\n나는 과거에 태국 사람들이 강에서 물건을 거래했는지 궁금하다.\n\n<조건>\n• I wonder whether로 시작할 것\n• 두 번째 문장의 내용을 빠짐없이 포함할 것\n• 필요한 경우 단어의 형태를 바꾸고 불필요한 단어는 삭제할 것",
+"selfGrade": true,
+"answer": "I wonder whether Thai people traded goods on rivers in the past.",
+"solution": "의문사가 없는 의문문을 간접의문문으로 연결할 때 whether를 사용할 수 있다. 의문문을 만드는 조동사 did를 없애고, 과거 시제를 유지하도록 trade를 traded로 바꾼다. whether 뒤에는 주어 Thai people과 동사 traded를 차례로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f57eb70465",
+"typeId": "eng-m3-b11-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 <보기>에서 필요한 표현만 골라 영작하시오.\n\n네덜란드에서는 국토의 약 3분의 1이 해수면보다 낮다.\n\n<보기>\nIn the Netherlands / about / one / three / third / thirds / of the land / is / are / below sea level\n\n<조건>\n• In the Netherlands로 시작할 것\n• 선택한 표현은 형태를 바꾸지 않고 각각 한 번씩만 사용할 것\n• 쉼표와 마침표를 포함하여 완전한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "In the Netherlands, about one third of the land is below sea level.",
+"solution": "분수 ‘3분의 1’은 one third로 쓰며, 분자가 1이므로 third에 복수형 어미를 붙이지 않는다. ‘분수+of+명사’가 주어일 때는 of 뒤의 명사에 맞추어 동사의 수를 결정한다. land는 셀 수 없는 명사이므로 is를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-634c2e8676",
+"typeId": "eng-m3-b11-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 주어진 표현을 모두 사용하여 영작하시오.\n\n그랜드 바자르는 방문객들이 터키의 전통 사탕을 살 수 있는 시장이다.\n\n<보기>\nthe Grand Bazaar / a market / visitors / traditional Turkish candy / buy / can / be\n\n<조건>\n• The Grand Bazaar로 시작할 것\n• 관계부사 where를 반드시 추가할 것\n• be만 알맞은 형태로 바꾸고, 나머지 표현은 그대로 사용할 것\n• where 외의 단어는 추가하지 말 것",
+"selfGrade": true,
+"answer": "The Grand Bazaar is a market where visitors can buy traditional Turkish candy.",
+"solution": "장소를 나타내는 선행사 a market 뒤에 관계부사 where를 사용한다. where 뒤에는 visitors can buy traditional Turkish candy라는 완전한 절이 온다. 주어 The Grand Bazaar가 단수이므로 be는 is로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-dd85b09f0d",
+"typeId": "eng-m3-b11-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 대한 답을 완성하시오.\n\nThai people once used rivers to trade goods. Later, road transportation became better, and many floating markets disappeared. Some floating markets have returned since the late 1960s, keeping the tradition alive.\n\nQ. Why did many floating markets disappear?\n→ They ________________________________________.\n\n<조건>\n• because of를 반드시 사용할 것\n• because of를 제외한 단어는 지문에서만 골라 사용할 것\n• 단어의 형태를 바꾸지 말 것\n• 빈칸에 들어갈 부분만 6단어로 쓸 것",
+"selfGrade": true,
+"answer": "disappeared because of better road transportation",
+"solution": "많은 수상 시장이 사라진 원인은 도로 교통이 더 좋아졌기 때문이다. because of 뒤에는 절이 아니라 명사구가 와야 하므로 better road transportation을 쓴다. disappeared를 포함하면 빈칸의 답은 총 6단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-5ae369b41b",
+"typeId": "eng-m3-b11-u3m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 주어진 표현을 배열하고 필요한 단어를 추가하여 영작하시오.\n\n나는 그 꽃 시장이 들어서 있는 건물이 축구장 120개보다 더 큰지 궁금하다.\n\n<보기>\nI / wonder / the building / the flower market / housed / bigger / than / 120 soccer fields\n\n<조건>\n• I wonder로 시작할 것\n• 주어진 표현을 각각 한 번씩 모두 사용하고, 형태는 바꾸지 말 것\n• whether와 where를 각각 한 번씩 추가할 것\n• 필요한 be동사를 추가하여 현재 시제로 쓸 것\n• 그 밖의 단어는 추가하지 말 것\n• 숫자 120을 한 단어로 계산하여 총 17단어로 쓸 것",
+"selfGrade": true,
+"answer": "I wonder whether the building where the flower market is housed is bigger than 120 soccer fields.",
+"solution": "wonder 뒤에 whether가 이끄는 간접의문문을 쓰고, 그 안에서는 ‘주어+동사’ 어순을 유지한다. the building을 수식하는 where절에서 ‘시장이 들어서 있다’는 the flower market is housed로 표현한다. whether절의 주어는 the building이므로 관계절이 끝난 뒤에 본동사 is가 한 번 더 필요하다. 완성된 문장은 총 17단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m5s0t0",
+"custom": true
 }
 ]

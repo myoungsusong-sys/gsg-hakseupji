@@ -2616,5 +2616,228 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b08-u0m4s0t0",
 "custom": true
+},
+{
+"id": "fill-ac627a5e60",
+"typeId": "eng-h1-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nEndorphins are called “feel-good” chemicals because they can make you (A)[feel / feeling] better and (B)[put / putting] you in a positive state of mind.",
+"choices": [
+"feel — put",
+"feel — putting",
+"feeling — put",
+"feeling — putting",
+"to feel — putting"
+],
+"answer": "①",
+"solution": "사역동사 make는 목적어 뒤에 동사원형을 목적격보어로 취하므로 (A)에는 feel이 알맞다. 조동사 can에 make와 put이 병렬로 연결되어 있으므로 (B)에도 동사원형 put이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6485cddf8d",
+"typeId": "eng-h1-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSerotonin is a brain chemical that (A)[plays / play] a key role in balancing our mood. It (B)[is made / makes] from the essential amino acid tryptophan. (C)[Eating / Eat] foods rich in tryptophan can boost our body’s ability to make serotonin.",
+"choices": [
+"play — is made — Eating",
+"plays — makes — Eat",
+"plays — is made — Eating",
+"play — makes — Eating",
+"plays — is made — Eat"
+],
+"answer": "③",
+"solution": "관계대명사 that의 선행사 a brain chemical이 단수이므로 (A)는 plays이다. 세로토닌은 트립토판으로 ‘만들어지므로’ (B)는 수동태 is made가 알맞고, 문장의 주어 자리에는 동명사 Eating이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0c6b268009",
+"typeId": "eng-h1-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOxytocin is called the “love hormone” (A)[because / because of] it promotes social bonding and trust. (B)[Spending / Spend] time with loved ones is a good way to raise oxytocin levels. Hugging a pet can increase oxytocin for both you (C)[and / or] your pet.",
+"choices": [
+"because of — Spending — and",
+"because — Spend — or",
+"because of — Spend — and",
+"because — Spending — and",
+"because — Spending — or"
+],
+"answer": "④",
+"solution": "뒤에 주어와 동사를 갖춘 절이 이어지므로 (A)는 접속사 because가 알맞다. 문장의 주어 역할을 해야 하므로 (B)는 동명사 Spending이고, both와 짝을 이루는 접속사는 and이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0ee7e7636f",
+"typeId": "eng-h1-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nChoosing foods higher in protein ⓐcan be a good way to increase dopamine levels naturally because dopamine ⓑcan only be made with the amino acid tyrosine, ⓒwhich is found in many proteins. Getting regular, high-quality sleep may also ⓓhelp keep dopamine levels balanced and ⓔhelping you feel more alert during the day.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "조동사 may 뒤에서 help keep과 help가 and로 병렬 연결되어야 한다. 따라서 ⓔ의 helping을 동사원형 help로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0a2488657a",
+"typeId": "eng-h1-b08-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ에는 각각 어법상 잘못된 부분이 하나씩 있다. 각 부분을 바르게 고쳐 쓰시오.\n\nⓐ Serotonin is made from the essential amino acid tryptophan, and which must enter our body through our diet. Therefore, ⓑ eating foods rich in tryptophan can boost our body’s natural ability making serotonin. Furthermore, ⓒ good habits like getting more sunshine and going on short walks does wonders for boosting serotonin levels.",
+"selfGrade": true,
+"answer": "ⓐ Serotonin is made from the essential amino acid tryptophan, which must enter our body through our diet. ⓑ eating foods rich in tryptophan can boost our body’s natural ability to make serotonin. ⓒ good habits like getting more sunshine and going on short walks do wonders for boosting serotonin levels.",
+"solution": "ⓐ에서는 접속사 and와 관계대명사 which를 함께 쓸 수 없으므로 and를 삭제한다. ⓑ의 ability는 일반적으로 to부정사를 수식어로 취하므로 making을 to make로 고친다. ⓒ의 주어는 복수 명사 good habits이므로 동사는 do가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c5e5b4d2ed",
+"typeId": "eng-h1-b08-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓒ의 어법상 잘못된 부분을 모두 바로잡아 문장 전체를 다시 쓰시오.\n\nⓐ We can certainly choose what should we do for ourselves.\nⓑ There are a lot that we can do to boost the happiness chemicals in our brains.\nⓒ This means us to have control of our own happiness.",
+"selfGrade": true,
+"answer": "ⓐ We can certainly choose what we should do for ourselves. ⓑ There is a lot that we can do to boost the happiness chemicals in our brains. ⓒ This means that we have control of our own happiness.",
+"solution": "ⓐ의 what절은 choose의 목적어인 간접의문문이므로 평서문 어순인 what we should do가 되어야 한다. ⓑ에서 수의 일치는 뒤의 do가 아니라 단수 표현 a lot에 맞추므로 There is가 알맞다. ⓒ의 mean은 이 문맥에서 ‘~을 의미하다’라는 뜻이므로 that절을 목적어로 취해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b975d2a4a4",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAchilles (A)[grew / was grown] up to be a great warrior and (B)[survived / surviving] many battles. However, a poisoned arrow struck his only weak spot, and this (C)[led / leading] to his death.",
+"choices": [
+"grew ― survived ― led",
+"grew ― surviving ― led",
+"was grown ― survived ― leading",
+"was grown ― surviving ― led",
+"grew ― survived ― leading"
+],
+"answer": "①",
+"solution": "‘grow up’은 ‘성장하다’라는 자동사 표현이므로 능동형 grew가 적절하다. (B)는 grew와 and로 연결된 과거동사 survived가 와야 하며, (C)는 주어 this의 서술어이므로 led가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b0f58f9498",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Trojans (A)[thought / were thought] that they had won the war, so they (B)[pulled / were pulled] the wooden horse into their city. However, the Greeks had (C)[hidden / hid] their soldiers inside it.",
+"choices": [
+"thought ― pulled ― hidden",
+"thought ― were pulled ― hid",
+"were thought ― pulled ― hidden",
+"were thought ― were pulled ― hid",
+"thought ― pulled ― hid"
+],
+"answer": "①",
+"solution": "트로이인들이 생각하고 말 안으로 목마를 끌어들인 것이므로 (A)와 (B)는 모두 능동태가 알맞다. 과거완료의 형태는 ‘had＋과거분사’이므로 hide의 과거분사 hidden을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-16148a169b",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe origins of these Greek idioms (A)[help / helps] learners understand their meanings. They also make it easier (B)[to remember / remembering] the expressions and figure out how to (C)[use / using] them.",
+"choices": [
+"helps ― to remember ― use",
+"help ― remembering ― use",
+"helps ― remembering ― using",
+"help ― to remember ― use",
+"help ― to remember ― using"
+],
+"answer": "④",
+"solution": "주어 The origins가 복수이므로 동사는 help가 알맞다. ‘make it＋형용사＋to부정사’ 구조와 ‘how to＋동사원형’ 구조에 따라 to remember와 use를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5ab9b48b00",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳지 않은 문장은?",
+"choices": [
+"The part of Achilles’ body touched by the magical water became indestructible.",
+"Paris shot an arrow at Achilles’ heel, which led to the warrior’s death.",
+"The Trojan War reached a point which neither side could win.",
+"The Greek soldiers opened the city gates to let their army enter.",
+"The idiom is used to describe a weakness hidden beneath apparent strength."
+],
+"answer": "③",
+"solution": "③의 선행사 a point 뒤 관계절은 완전한 문장 구조이므로 관계부사 역할을 하는 at which가 필요하다. 따라서 which를 at which로 고쳐야 한다. 나머지 문장들은 분사, 관계대명사, 목적의 to부정사가 모두 바르게 사용되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bad5ba7422",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhen Achilles’ mother lowered him into the River Styx, every part of his body (A)[that / what] the water reached (B)[became / was become] indestructible. His heel remained dry, however, because she held him (C)[by / with] it.",
+"choices": [
+"what ― became ― by",
+"that ― became ― by",
+"that ― was become ― with",
+"what ― was become ― by",
+"that ― became ― with"
+],
+"answer": "②",
+"solution": "(A) 앞에 선행사 every part가 있으므로 목적격 관계대명사 that이 알맞다. become은 여기서 ‘~이 되다’라는 자동사이므로 능동형 became를 쓰며, 신체 부위를 붙잡았다는 의미는 ‘hold＋사람＋by＋신체 부위’로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9cd31734ee",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 부분이 세 곳 있다. 세 곳을 모두 고쳐 전체를 다시 쓰시오.\n\nThe Trojans believed what the wooden horse was a gift from the Greeks. After the horse was brought into the city, the soldiers hiding inside it came out at night and opened the gates let the Greek army in. This is how the Greeks could won the war.",
+"selfGrade": true,
+"answer": "The Trojans believed that the wooden horse was a gift from the Greeks. After the horse was brought into the city, the soldiers hiding inside it came out at night and opened the gates to let the Greek army in. This is how the Greeks could win the war.",
+"solution": "believed의 목적어로 완전한 절이 이어지므로 what이 아니라 접속사 that을 써야 한다. 성문을 연 목적을 나타내므로 let을 목적의 to부정사인 to let으로 고친다. 조동사 could 뒤에는 동사원형이 와야 하므로 won을 win으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0fba35c71d",
+"typeId": "eng-h1-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 문장을 <조건>에 맞게 어법상 올바른 문장으로 고쳐 전체를 다시 쓰시오.\n\nHaving tried to untie the knot, it had become tighter for Alexander. What surprised everyone were that he cut it in half with his sword. Since then, the idiom has been used to describing a simple solution to a complex problem.\n\n<조건>\n· 첫 문장은 Alexander를 주절의 주어로 하고 find를 과거형으로 활용할 것.\n· 첫 문장에서 become은 과거완료형으로 쓸 것.\n· 둘째 문장은 주어와 동사의 수를 일치시킬 것.\n· 셋째 문장은 used to 뒤의 형태를 바로잡을 것.",
+"selfGrade": true,
+"answer": "Having tried to untie the knot, Alexander found that it had become tighter. What surprised everyone was that he cut it in half with his sword. Since then, the idiom has been used to describe a simple solution to a complex problem.",
+"solution": "분사구문의 의미상 주어는 주절의 주어와 일치해야 하므로 Alexander를 주어로 하여 ‘Alexander found that …’으로 고친다. What이 이끄는 명사절은 단수로 취급하므로 were가 아니라 was가 필요하다. ‘~하는 데 사용되다’는 ‘be used to＋동사원형’이므로 describing을 describe로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m1s0t0",
+"custom": true
 }
 ]

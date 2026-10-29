@@ -278,5 +278,113 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b06-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-befd3346e0",
+"typeId": "eng-h3-b06-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 ⓐ와 문맥상 의미가 가장 가까운 것은?\n\nA desk with adjustable height allows users to choose a comfortable position. People can lower or raise it to suit their needs, and they can even stand while working. This makes the desk ⓐsuitable for users with different preferences and abilities.",
+"choices": [
+"appropriate",
+"unnecessary",
+"identical",
+"unavailable",
+"ordinary"
+],
+"answer": "①",
+"solution": "suitable은 문맥상 ‘적합한’이라는 뜻으로, 책상이 다양한 사용자의 필요에 맞는다는 의미이다. 따라서 ‘적절한, 적합한’을 뜻하는 appropriate가 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-dcde4277d3",
+"typeId": "eng-h3-b06-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B)에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nCurb cuts help wheelchair users move through a city by (A)[removing / creating] barriers. They also benefit people carrying heavy loads. Similarly, automatic doors make public buildings easier to (B)[enter / avoid].",
+"choices": [
+"(A) creating — (B) enter",
+"(A) removing — (B) avoid",
+"(A) creating — (B) avoid",
+"(A) removing — (B) enter",
+"(A) keeping — (B) avoid"
+],
+"answer": "④",
+"solution": "경사로는 이동을 방해하는 장벽을 ‘제거하여’ 휠체어 사용자의 이동을 돕는다는 내용이므로 (A)에는 removing이 적절하다. 자동문 역시 공공 건물에 ‘들어가는’ 것을 쉽게 하므로 (B)에는 enter가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c603ab1e87",
+"typeId": "eng-h3-b06-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ⓐ~ⓔ에 대한 영영풀이 중 문맥상 적절한 것만을 모두 고른 것은?\n\nPlay spaces should ⓐfoster relationships among people of different ages. They should also offer ⓑsensory experiences and opportunities for physical activity. To achieve this, designers need to consider ⓒdiverse abilities rather than assume that everyone plays in the same way. Involving children with disabilities and their families can help designers ⓓacknowledge needs that a restrictive playground may fail to meet. Such participation is ⓔcrucial to creating spaces where everyone can enjoy play.\n\n<보기>\nⓐ foster: to encourage something to develop\nⓑ sensory: connected with the legal rights of a person\nⓒ diverse: having exactly the same features\nⓓ acknowledge: to recognize or accept that something exists\nⓔ crucial: extremely important",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "foster는 ‘발달을 촉진하다’, acknowledge는 ‘존재나 사실을 인정하다’, crucial은 ‘매우 중요한’이라는 뜻이므로 ⓐ, ⓓ, ⓔ가 적절하다. sensory는 신체의 감각과 관련된다는 뜻이며, diverse는 서로 다양하다는 뜻이다. 따라서 법적 권리로 설명한 ⓑ와 동일한 특징으로 설명한 ⓒ는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a3063fb10e",
+"typeId": "eng-h3-b06-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ에 대한 영영풀이 중 해당 문맥의 의미를 정확히 설명한 것만을 모두 고른 것은?\n\nUniversal design requires a ⓐflexible approach: a product should respond to differences among its users. A desk, for example, can ⓑaccommodate different needs by allowing its height to be changed. The same principle applies to the communication of ⓒcritical information. Restroom signs can ⓓindicate where travelers should go without requiring them to understand the local language. Using symbols together with audio cues provides different ways to ⓔaccess information.\n\n<보기>\nⓐ flexible: capable of changing to suit different conditions or needs\nⓑ accommodate: to provide a room in which someone can stay overnight\nⓒ critical: expressing an unfavorable judgment about someone or something\nⓓ indicate: to show or make something clear\nⓔ access: to obtain or make use of something",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓓ, ⓔ"
+],
+"answer": "⑤",
+"solution": "flexible은 다양한 필요에 맞게 바뀔 수 있다는 뜻이고, indicate와 access는 각각 ‘나타내다’와 ‘정보를 얻거나 이용하다’라는 뜻이므로 ⓐ, ⓓ, ⓔ가 적절하다. accommodate는 이 문맥에서 숙소를 제공한다는 의미가 아니라 사용자의 필요를 수용한다는 의미이다. critical 역시 비판적인 판단을 나타내는 것이 아니라 정보가 매우 중요함을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0227a3ec7b",
+"typeId": "eng-h3-b06-u0m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 논리적 흐름을 고려할 때, (A), (B), (C)에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nOffering everyone an identical way to play does not necessarily give everyone an equal opportunity to participate. When a playground assumes that every child can move in the same manner, a seemingly common arrangement can actually be (A)[restrictive / inclusive]. A sloping path, for instance, allows children who cannot walk to reach a hilltop that other children may scramble up to. The routes differ, but that difference supports a shared opportunity to play.\n\nA similar distinction matters when information is communicated. Making a message available in only one form may leave some users unable to understand it. Universal design therefore seeks (B)[uniformity / diversity] in the means of communication, without abandoning the aim of making essential information available to all. Its success depends on whether differences in users’ abilities are (C)[accommodated / eliminated] by the design, rather than on whether all users receive information in exactly the same way.",
+"choices": [
+"(A) inclusive — (B) diversity — (C) accommodated",
+"(A) restrictive — (B) uniformity — (C) accommodated",
+"(A) restrictive — (B) diversity — (C) accommodated",
+"(A) restrictive — (B) diversity — (C) eliminated",
+"(A) inclusive — (B) uniformity — (C) eliminated"
+],
+"answer": "③",
+"solution": "모든 아동에게 동일한 이동 능력을 전제하면 일부 아동의 참여가 제한되므로 (A)는 restrictive이다. 정보의 공통된 접근 가능성을 확보하려면 전달 수단은 다양해야 하므로 (B)는 diversity이다. 보편적 설계는 사용자의 능력 차이 자체를 없애는 것이 아니라 그 차이를 수용하는 것이므로 (C)는 accommodated가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-835717cec3",
+"typeId": "eng-h3-b06-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓔ 중 문맥상 부적절한 표현은 정확히 세 개이다. <보기>에서 각각을 바꿀 표현을 골라, 해당 기호의 순서대로 쓰시오.\n\n<조건>\n• <보기>의 표현은 형태를 바꾸지 않고 각각 한 번만 사용한다.\n• 기호나 설명 없이 정답 표현 세 개만 쉼표로 구분하여 쓴다.\n\nEqual access to information does not require a single method of presenting it. Although the essential message should remain consistent across different forms, the forms themselves need not be ⓐdiverse. Written notices, recognizable symbols, and spoken announcements offer different ways of understanding that message. Their purpose is to make important information available ⓑdepending on a person’s ability to use any one particular channel.\n\nIn an elevator, braille can help a passenger with a visual impairment ⓒselect a floor. An audio announcement can then ⓓcontradict that selection by stating the same floor number, and another announcement can tell the passenger when that floor has been reached. These features do not remove differences in sensory ability; they help ⓔaccommodate them.\n\n<보기>\nconfirm / regardless of / uniform / exclude / interpret / in response to",
+"selfGrade": true,
+"answer": "uniform, regardless of, confirm",
+"solution": "전달하는 핵심 내용은 일관되어야 하지만 전달 형식까지 같을 필요는 없으므로, need not be 뒤의 ⓐdiverse는 uniform으로 바꾸어야 한다. 특정 전달 수단을 이용할 수 있는 능력과 무관하게 정보에 접근하도록 해야 하므로 ⓑdepending on은 regardless of가 적절하다. 선택한 층과 같은 번호를 말하는 안내는 선택을 반박하는 것이 아니라 확인하므로 ⓓcontradict는 confirm으로 바꾸어야 한다. ⓒselect와 ⓔaccommodate는 각각 층을 선택하고 감각 능력의 차이를 수용한다는 의미로 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m0s0t0",
+"custom": true
 }
 ]

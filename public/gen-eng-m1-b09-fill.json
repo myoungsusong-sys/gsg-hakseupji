@@ -1163,5 +1163,178 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u3m7s0t0",
 "custom": true
+},
+{
+"id": "fill-92ca721bb1",
+"typeId": "eng-m1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Nari loves to diving in the beautiful sea.",
+"Let’s meet the workers and listening to their stories.",
+"Protecting wild animals are important.",
+"Eun hopes that her work can help the Earth.",
+"Araon is more stronger than other ships."
+],
+"answer": "④",
+"solution": "hope 뒤에는 접속사 that이 이끄는 절이 올 수 있고, 조동사 can 뒤에는 동사원형 help가 와야 하므로 ④가 옳다. ①은 dive, ②는 listen, ③은 is, ⑤는 stronger로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-37fd98cc59",
+"typeId": "eng-m1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nJihan takes care of sick wild animals and (A)[send / sends] them back to their homes. He often climbs the mountain (B)[look / to look] after wild animals. Protecting wild animals (C)[is / are] important, so we should (D)[keep / to keep] an eye on them.",
+"choices": [
+"send ― look ― are ― keep",
+"sends ― to look ― is ― keep",
+"sends ― look ― is ― to keep",
+"send ― to look ― are ― to keep",
+"sends ― to look ― are ― keep"
+],
+"answer": "②",
+"solution": "주어 Jihan이 3인칭 단수이므로 sends가 알맞고, 산에 오르는 목적을 나타내므로 to look을 쓴다. 동명사구 Protecting wild animals는 단수 취급하여 is가 오며, 조동사 should 뒤에는 동사원형 keep이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f6de2b4dbb",
+"typeId": "eng-m1-b09-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호에 주어진 단어를 어법상 알맞은 형태로 바꾸어 순서대로 쓰시오.\n\nLet’s ⓐ(meet) the people who work in nature and ⓑ(listen) to their stories. Nari loves diving and ⓒ(spend) time in the sea. Jihan thinks that protecting wild animals ⓓ(be) important. We should ⓔ(keep) an eye on the animals and their homes ⓕ(live) together.",
+"selfGrade": true,
+"answer": "meet, listen, spending, is, keep, to live",
+"solution": "Let’s 뒤에는 동사원형이 오고, and로 연결된 meet와 listen은 같은 형태를 써야 한다. loves 뒤의 diving과 병렬을 이루므로 spending이 알맞고, 동명사구 주어는 단수 취급하여 is를 쓴다. should 뒤에는 keep이, 목적을 나타내는 자리에는 to live가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1690bb760e",
+"typeId": "eng-m1-b09-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 어법상 잘못된 부분을 모두 고쳐 문장 전체를 다시 쓰시오.\n\nThe special ship Araon is strongest than other ships. It can breaks thick ice, and Eun hopes what her work can helps the Earth.",
+"selfGrade": true,
+"answer": "The special ship Araon is stronger than other ships. It can break thick ice, and Eun hopes that her work can help the Earth.",
+"solution": "than이 있으므로 비교급 stronger를 써야 한다. 조동사 can 뒤에는 동사원형 break와 help가 오며, hopes 뒤에서 완전한 절을 이끄는 접속사는 that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-26355df5b5",
+"typeId": "eng-m1-b09-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 부분이 네 곳 있다. 각 부분을 바르게 고친 말만 글에 나타난 순서대로 쓰시오.\n\nJihan take care of sick wild animals and sends them back to their homes. He thinks that protecting wild animals are important. He often climbs the mountain to looking after the animals. We should keeps an eye on them and their homes to live together.",
+"selfGrade": true,
+"answer": "takes, is, look, keep",
+"solution": "3인칭 단수 주어 Jihan에 맞게 take는 takes가 되어야 하고, 동명사구 주어 Protecting wild animals는 단수이므로 is를 쓴다. 목적을 나타내는 to부정사에서는 to look을 쓰며, 조동사 should 뒤에는 동사원형 keep이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-85afbb3f83",
+"typeId": "eng-m1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 Maria의 말을 바꾸어 쓴 것이다. 빈칸 ⓐ~ⓓ에 들어갈 말을 순서대로 바르게 짝지은 것은?\n\nI come ⓐ_______ Guatemala. Please look ⓑ_______ my worry doll. I tell her ⓒ_______ my worries. I am worried about the weather ⓓ_______ my camp day.",
+"choices": [
+"from — at — about — on",
+"from — at — for — in",
+"in — at — about — on",
+"from — for — about — in",
+"in — for — for — on"
+],
+"answer": "①",
+"solution": "출신을 나타내는 come from과 ‘~을 보다’라는 뜻의 look at을 사용한다. ‘그녀에게 내 걱정에 관해 말하다’는 tell her about my worries이다. 캠프에 가는 특정한 날 앞에는 전치사 on을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7a0e01e9b1",
+"typeId": "eng-m1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 표현의 문맥상 의미를 바르게 풀이한 것만을 모두 고른 것은?\n\n㉠ El cared for the plant throughout the summer.\n   → El은 여름 내내 그 식물을 돌보았다.\n㉡ The students reached for the pots.\n   → 학생들은 화분을 향해 손을 뻗었다.\n㉢ El felt like the little plant.\n   → El은 그 작은 식물을 좋아한다고 느꼈다.\n㉣ The plant would have flowers in time.\n   → 그 식물에는 시간이 지나면 꽃이 필 것이었다.\n㉤ The doll would take away Maria’s worries.\n   → 그 인형은 Maria에게 걱정을 가져다줄 것이었다.",
+"choices": [
+"㉠, ㉡, ㉢",
+"㉠, ㉣, ㉤",
+"㉡, ㉢, ㉣",
+"㉠, ㉡, ㉣",
+"㉡, ㉣, ㉤"
+],
+"answer": "④",
+"solution": "care for는 ‘돌보다’, reach for는 ‘~을 향해 손을 뻗다’, in time은 이 문맥에서 ‘시간이 지나면’이라는 뜻이므로 ㉠, ㉡, ㉣이 옳다. ㉢의 like는 ‘좋아하다’가 아니라 ‘~처럼’이라는 뜻으로, El이 자신을 작은 식물과 비슷하게 느꼈다는 의미이다. ㉤의 take away는 ‘없애다’라는 뜻이므로 걱정을 가져다준다는 풀이는 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-674de5452c",
+"typeId": "eng-m1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장을 조건에 맞게 바꾸어 쓴 것은?\n\nIn the spring, Jo was taller than El.\n\n[조건]\n• 원래 문장의 의미와 시제를 유지할 것.\n• El을 주어로 시작할 것.\n• short를 알맞은 형태로 바꾸어 사용할 것.",
+"choices": [
+"El is shorter than Jo in the spring.",
+"El was shorter than Jo in the spring.",
+"El was short than Jo in the spring.",
+"El was shorter than her in the spring.",
+"El was the shortest student in the spring."
+],
+"answer": "②",
+"solution": "Jo가 El보다 키가 컸다는 것은 El이 Jo보다 키가 작았다는 뜻이다. 따라서 주어를 El로 바꾸면 short의 비교급 shorter와 than Jo를 쓰고, 과거 시제 was를 유지해야 한다. ④의 her는 Jo를 명확히 나타내지 못하며, ⑤는 원문에 없는 최상급의 의미를 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-eed83853cc",
+"typeId": "eng-m1-b09-u4m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 각각 조건에 맞게 바꾸어 완전한 영어 문장으로 쓰시오.\n\n(1) In the spring, Jo was taller than El.\n(2) The other plants were larger than El’s plant.\n\n[조건]\n• 각 문장의 의미와 과거 시제를 유지할 것.\n• (1)은 El로 시작하고 short를, (2)는 El’s plant로 시작하고 small을 알맞은 형태로 사용할 것.\n• 비교 대상은 대명사로 바꾸지 말 것.\n• (1)의 시간 표현은 문장 끝에 쓸 것.",
+"selfGrade": true,
+"answer": "El was shorter than Jo in the spring.\nEl’s plant was smaller than the other plants.",
+"solution": "비교하는 두 대상의 위치를 바꾸면 taller는 shorter로, larger는 smaller로 바꾸어 같은 의미를 나타낼 수 있다. 두 문장 모두 과거 시제를 유지해야 한다. 특히 (2)는 주어가 복수인 The other plants에서 단수인 El’s plant로 바뀌므로 were가 아니라 was를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-649f0ce937",
+"typeId": "eng-m1-b09-u4m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 Maria의 말과 관련 표현을 정리한 것이다. 밑줄 대신 표시한 ⓐ~ⓔ 중 문맥상 잘못 쓰인 단어 세 개를 찾아, 각각 바른 단어로 고쳐 기호 순서대로 쓰시오.\n\nI am ⓐfrom Guatemala. I tell my doll ⓑfor my worries and keep her ⓒunder my pillow. I worry about the weather ⓓin my camp day.\n\n상대방에게 무슨 문제가 있는지 물을 때:\n“What’s the matter?” = “What’s ⓔworry?”\n\n[조건]\n• 각 표시의 단어를 한 단어로만 고칠 것.\n• 표시되지 않은 부분은 바꾸지 말 것.\n• 답은 ‘기호: 바른 단어’ 형식으로 쓸 것.",
+"selfGrade": true,
+"answer": "ⓑ: about, ⓓ: on, ⓔ: wrong",
+"solution": "tell A about B는 ‘A에게 B에 관해 말하다’라는 뜻이므로 ⓑ는 about으로 고친다. 캠프에 가는 특정한 날에는 on을 쓰므로 ⓓ를 고친다. What’s the matter?와 같은 뜻의 표현은 What’s wrong?이므로 ⓔ는 wrong이며, from과 under는 문맥에 맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1b29893df3",
+"typeId": "eng-m1-b09-u4m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 요약문과 제목의 빈칸 ⓐ~ⓓ를 완성하시오.\n\nEl took the pot that nobody else took. Its plant was smaller than all the other plants and had no flowers. El thought that she and the plant were alike. She planted it in her garden and cared for it throughout the summer. When Jo visited at the end of summer, the aster had flowers, and El was taller, too.\n\n[요약문]\nAt first, El’s plant was the ⓐ_______ plant of all. By the end of summer, El was ⓑ_______ than before, and her aster had flowers.\n\n[제목]\nGrowing Together: ⓒ_______ and Her ⓓ_______\n\n[조건]\n• ⓐ는 글에 쓰인 형용사를 찾아 최상급으로 바꾸어 쓸 것.\n• ⓑ~ⓓ는 글에서 각각 한 단어를 찾아 그대로 쓸 것. 단, 제목의 빈칸은 첫 글자를 대문자로 쓸 것.\n• ⓐ~ⓓ의 답을 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "smallest, taller, El, Aster",
+"solution": "El의 식물이 나머지 모든 식물보다 작았다는 것은 전체 중 가장 작았다는 뜻이므로 ⓐ는 smallest이다. 여름이 끝날 무렵 El은 이전보다 키가 커졌으므로 ⓑ는 taller이다. 글은 El과 그녀의 과꽃이 함께 성장하는 내용이므로 제목의 ⓒ와 ⓓ에는 El과 Aster가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m7s0t0",
+"custom": true
 }
 ]

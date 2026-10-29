@@ -1668,5 +1668,331 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b01-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-d99e703e7f",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 단어를 모두 배열하여 문장을 완성하시오.\n\nSystem 1은 우리의 의식적 통제 없이 작동한다.\n\n<보기> conscious / System 1 / our / works / control / without",
+"selfGrade": true,
+"answer": "System 1 works without our conscious control.",
+"solution": "‘~ 없이’는 전치사 without으로 나타낸다. without 뒤에 소유격 our와 형용사 conscious가 명사 control을 차례로 수식하도록 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b1adf9d9f6",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n호기심은 우리가 낯선 주제와 생각을 조사하도록 동기를 부여할 수 있다.\n\n<조건> • motivate와 investigate를 사용할 것 • ‘동사+목적어+to부정사’의 구조를 사용할 것 • 10단어로 쓸 것",
+"selfGrade": true,
+"answer": "Curiosity can motivate us to investigate unfamiliar topics and ideas.",
+"solution": "motivate는 ‘motivate+목적어+to부정사’의 형태로 ‘목적어가 ~하도록 동기를 부여하다’라는 뜻을 나타낸다. 따라서 motivate us 뒤에 to investigate를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ad0ed2aa7b",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리 뇌는 집중하거나 신중한 선택을 해야 할 때 이 시스템을 사용한다.\n\n<조건> • 접속사 when을 사용할 것 • focus와 careful choices를 포함할 것 • 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "Our brains use this system when we need to focus or make careful choices.",
+"solution": "‘~할 때’는 접속사 when이 이끄는 시간의 부사절로 표현한다. need to 뒤에서 focus와 make careful choices를 or로 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c76f83c121",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 <조건>에 맞게 빈칸을 완성하시오.\n\n그것이 바로 우리가 처음 떠오른 생각을 다시 검토하는 것이 중요한 이유이다.\n\nThat is ________________________________.\n\n<조건> • 관계부사 why를 사용할 것 • ‘가주어 it-진주어 to부정사’ 구문을 사용할 것 • 빈칸에 11단어로 쓸 것 • important, reconsider, initial thoughts를 사용할 것",
+"selfGrade": true,
+"answer": "why it is important for us to reconsider our initial thoughts",
+"solution": "선행사가 이유를 뜻하므로 관계부사 why를 사용한다. why 뒤에는 it is important for us to reconsider의 가주어·진주어 구조를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4fd50ba69c",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n사람들은 그 생각들이 결코 증명된 적이 없는데도 그것들을 사실이라고 받아들일 수 있다.\n\n<조건> • even though를 사용할 것 • ‘accept+목적어+to be’의 구조를 사용할 것 • prove는 현재완료 수동태로 나타낼 것 • 15단어로 쓸 것",
+"selfGrade": true,
+"answer": "People can accept the ideas to be true even though they have never been proven.",
+"solution": "‘~을 사실이라고 받아들이다’는 accept the ideas to be true로 표현한다. 생각들이 증명되는 대상이고 과거부터 현재까지 증명된 적이 없으므로 have never been proven이라는 현재완료 수동태를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-44ae9d574f",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n몇 초 동안 곰곰이 생각한 후 정답을 맞혔다면, 당신의 뇌는 System 2를 사용한 것이다.\n\n<조건> • if가 이끄는 조건절을 사용할 것 • after 다음에 동명사를 사용할 것 • 17단어로 쓸 것 • reflect는 필요에 따라 변형할 것",
+"selfGrade": true,
+"answer": "If you got the right answer after reflecting for a few seconds, your brain used System 2.",
+"solution": "조건절은 If you got the right answer로 시작한다. 전치사 after 뒤에는 동명사가 와야 하므로 reflect를 reflecting으로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-efe61991c8",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n호기심은 우리에게 낯선 주제와 생각을 조사하도록 동기를 부여하며, 더 깊은 사고 습관을 형성하는 토대가 될 수 있다.\n\n<조건> • Curiosity를 선행사로 하는 계속적 용법의 관계대명사를 사용할 것 • ‘motivate+목적어+to부정사’와 serve as를 사용할 것 • 20단어로 쓸 것",
+"selfGrade": true,
+"answer": "Curiosity, which motivates us to investigate unfamiliar topics and ideas, can serve as a foundation for building deeper thinking habits.",
+"solution": "Curiosity에 관한 부가 정보를 제시하므로 쉼표와 관계대명사 which를 사용하는 계속적 용법이 적절하다. ‘~의 토대가 되다’는 serve as a foundation for로 쓰며, 전치사 for 뒤에는 동명사 building을 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8a4e9aac39",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장이 같은 의미가 되도록 <조건>에 맞게 한 문장으로 바꾸시오.\n\nWhen we learn something new, new paths are created. Information can flow more efficiently through the paths.\n\n<조건> • 동명사구를 주어로 사용할 것 • ‘전치사+관계대명사’의 구조를 사용할 것 • create를 능동태로 사용할 것 • 13단어로 쓸 것",
+"selfGrade": true,
+"answer": "Learning something new creates new paths through which information can flow more efficiently.",
+"solution": "When절의 내용을 동명사구 Learning something new로 바꾸어 주어로 삼는다. 정보가 그 경로를 ‘통해’ 흐르므로 through which를 사용하여 paths를 수식한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c2fdbd734f",
+"typeId": "eng-h2-b01-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\nSystem 2로 깊이 생각하는 연습을 더 자주 할수록, 우리의 사고 습관은 더 균형 잡히게 될 것이다.\n\n<조건> • ‘the+비교급, the+비교급’ 구문을 사용할 것 • practice의 목적어로 동명사구를 사용할 것 • 18단어로 쓸 것",
+"selfGrade": true,
+"answer": "The more often we practice thinking deeply with System 2, the better balanced our thinking habits will become.",
+"solution": "두 변화가 비례함을 나타내므로 ‘the+비교급, the+비교급’ 구문을 사용한다. practice는 목적어로 동명사를 취하므로 practice thinking deeply로 쓰고, 두 번째 절은 the better balanced로 시작한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-221de97b40",
+"typeId": "eng-h2-b01-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nG: I helped some Spanish tourists find their hotel yesterday.\nB: It was very kind (A)[of / for] you to help them.\nG: I used a translation app. It is easy (B)[to use / using].\nB: How does it work?\nG: You speak into the phone, and the app translates (C)[what / that] you have said.",
+"choices": [
+"(A) of - (B) to use - (C) what",
+"(A) of - (B) using - (C) that",
+"(A) for - (B) to use - (C) what",
+"(A) for - (B) using - (C) what",
+"(A) of - (B) to use - (C) that"
+],
+"answer": "①",
+"solution": "사람의 성품을 평가하는 「It is 형용사 of 사람 to부정사」이므로 (A)는 of가 알맞다. 「easy to use」에서는 능동형 to use가 쓰이며, translates의 목적어 역할을 하는 선행사 포함 관계대명사 what이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-20de0636ce",
+"typeId": "eng-h2-b01-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAs a child in Damascus, Yusra's daily life (A)[centered / was centering] around swimming. By the age of nine, she could swim faster than many older swimmers. It was obvious (B)[that / what] she had great talent. She often watched Olympic swimming with her father, (C)[which / that] inspired her to dream of competing in the Olympics.",
+"choices": [
+"(A) centered - (B) that - (C) which",
+"(A) centered - (B) what - (C) that",
+"(A) was centering - (B) that - (C) which",
+"(A) was centering - (B) what - (C) that",
+"(A) centered - (B) what - (C) which"
+],
+"answer": "①",
+"solution": "「center around」는 ‘~을 중심으로 돌아가다’라는 뜻이므로 과거형 centered가 적절하다. 진주어가 완전한 절이므로 that을 쓰고, 앞 절 전체를 이어 설명하는 계속적 용법의 관계대명사는 which이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-93bad877c8",
+"typeId": "eng-h2-b01-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAfter arriving in Berlin, Yusra met Sven at a swimming club and asked (A)[if / what] he would coach her. When Sven saw her (B)[swim / swam], he quickly noticed her talent. With his guidance, she practiced day and night, (C)[hoping / hoped] that her hard work would bring good results.",
+"choices": [
+"(A) if - (B) swim - (C) hoping",
+"(A) if - (B) swam - (C) hoped",
+"(A) what - (B) swim - (C) hoping",
+"(A) what - (B) swam - (C) hoped",
+"(A) if - (B) swim - (C) hoped"
+],
+"answer": "①",
+"solution": "‘~인지’를 묻는 간접의문문에는 if를 쓴다. 지각동사 saw 뒤의 목적격보어로 동사원형 swim이 오며, 부가적인 동시 상황을 나타내는 분사구문에는 hoping이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-661c9abe0c",
+"typeId": "eng-h2-b01-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nThe Syrian civil war, ⓐwhich broke out in 2011, made ordinary activities such as ⓑgoing to school dangerous. Yusra continued to train until a bomb fell into the pool ⓒwhere she was practicing. Although the bomb did not explode, the incident was deeply ⓓhorrified. Yusra and Sara realized ⓔwhat they could not safely remain in Syria, so they decided ⓕto flee their country.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓕ",
+"ⓓ, ⓔ",
+"ⓓ, ⓕ"
+],
+"answer": "④",
+"solution": "사건이 사람에게 공포를 주는 것이므로 ⓓ horrified는 horrifying으로 고쳐야 한다. realized 뒤에는 문장 성분이 모두 갖추어진 절이 이어지므로 ⓔ what이 아니라 접속사 that이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bc054b9617",
+"typeId": "eng-h2-b01-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nIn Berlin, Yusra searched for a coach ⓐwho could help her develop her ability. At a swimming club, she met Sven and asked ⓑwhether could he become her coach. After he saw her ⓒswam, he immediately recognized her exceptional talent. His guidance enabled her ⓓto remain focused on her goal. She trained intensely, ⓔhoping that her efforts would eventually pay off, although there was no guarantee ⓕwhat her dream would come true.",
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓑ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "③",
+"solution": "간접의문문은 평서문 어순을 따르므로 ⓑ는 whether he could가 되어야 한다. 지각동사 saw 뒤에는 동사원형 swim이 필요하므로 ⓒ도 틀리며, 완전한 절을 이끄는 동격절의 접속사는 ⓕ what이 아니라 that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3ae9e471da",
+"typeId": "eng-h2-b01-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAfter completing her two races at the Games, Yusra left without a medal. Nevertheless, she was proud (A)[to make / to have made] history with her teammates. Later, a reporter asked (B)[whether she could / whether could she] make a statement. Yusra encouraged people to stay strong, saying, “If you (C)[keep / will keep] your goals before your eyes, you will do everything (D)[that / what] you can.”",
+"choices": [
+"(A) to make - (B) whether she could - (C) keep - (D) what",
+"(A) to have made - (B) whether could she - (C) keep - (D) that",
+"(A) to have made - (B) whether she could - (C) will keep - (D) that",
+"(A) to have made - (B) whether she could - (C) keep - (D) that",
+"(A) to make - (B) whether could she - (C) will keep - (D) what"
+],
+"answer": "④",
+"solution": "역사를 만든 일이 자랑스럽게 느낀 시점보다 앞서므로 완료부정사 to have made가 적절하다. 간접의문문은 whether she could의 어순을 쓰며, 조건절에서는 미래 대신 현재형 keep을 사용한다. 선행사 everything이 있으므로 관계대명사 that이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-30b0beed0e",
+"typeId": "eng-h2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nCreativity is part of everyday life. Paying close attention to common objects (A)[help / helps] us discover their hidden beauty. Artists can use this beauty to create something new. They observe familiar things carefully and (B)[change / changing] them into works of art.",
+"choices": [
+"(A) help — (B) change",
+"(A) helps — (B) changing",
+"(A) helps — (B) change",
+"(A) help — (B) changing",
+"(A) helping — (B) change"
+],
+"answer": "③",
+"solution": "동명사구 Paying close attention to common objects가 주어이므로 단수 동사 helps가 알맞다. 두 번째 문장에서는 observe와 change가 and로 연결되어 주어 They의 동사로 쓰인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-39738d7678",
+"typeId": "eng-h2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nHelga Stentzel makes animal forms from familiar materials. Her ability to observe things closely enables her (A)[create / to create] imaginative artwork. In Edible Creatures, she uses food (B)[that / what] can be found in an ordinary kitchen.",
+"choices": [
+"(A) create — (B) that",
+"(A) to create — (B) what",
+"(A) creating — (B) what",
+"(A) create — (B) what",
+"(A) to create — (B) that"
+],
+"answer": "⑤",
+"solution": "enable은 ‘enable + 목적어 + to부정사’의 형태로 쓰이므로 to create가 알맞다. food라는 선행사가 있고 관계사절에 주어가 없으므로 주격 관계대명사 that이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ce5150b439",
+"typeId": "eng-h2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 ⓐ~ⓔ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe Gardener presents vegetables in a bowl when ⓐseen in its usual position. Once the painting is turned upside down, however, the vegetables form a smiling face. Research on Arcimboldo’s reversible paintings ⓑhave shown that he painted the still lifes first. He then turned the paintings over and ⓒadjusting some details to produce faces. The result invites viewers to enjoy a visual game, ⓓwhich gives them pleasure. Each of these paintings ⓔreveals the artistic possibilities of ordinary objects.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ는 주어가 단수 취급하는 Research이므로 have를 has로 고쳐야 한다. ⓒ는 과거 동사 turned와 병렬을 이루므로 adjusting을 adjusted로 바꿔야 한다. ⓐ는 when it is seen에서 it is가 생략된 형태이고, ⓓ의 계속적 용법의 which와 ⓔ의 단수 동사 reveals도 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fc408f2842",
+"typeId": "eng-h2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nStentzel’s Clothesline Animals series, which grew out of an idea she had while hanging laundry, (A)[shows / show] how ordinary clothes can become art. A black sweatshirt and dark grey pants became a horse with the addition of clothespins and a dish towel. Viewers may look again to check (B)[what / that] they are seeing. The works in this series (C)[have created / have been created] using laundry and household objects.",
+"choices": [
+"(A) show — (B) what — (C) have been created",
+"(A) shows — (B) that — (C) have been created",
+"(A) shows — (B) what — (C) have created",
+"(A) shows — (B) what — (C) have been created",
+"(A) show — (B) that — (C) have created"
+],
+"answer": "④",
+"solution": "주어의 핵심어 series는 여기서 하나의 연작을 가리키므로 (A)에는 단수 동사 shows가 들어간다. (B)는 seeing의 목적어 역할까지 해야 하므로 선행사를 포함하는 관계대명사 what이 알맞다. (C)는 작품들이 만들어지는 대상이므로 현재완료 수동태 have been created가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-92c468e793",
+"typeId": "eng-h2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nResearch into Arcimboldo’s reversible works, along with X-ray examination, ⓐhas revealed how he developed his images. He first painted still lifes and then ⓑturn them upside down, making changes to form faces. Such changes produced a visual game for viewers, ⓒwhat added an interactive element to the paintings. His approach reminds us that familiar objects offer opportunities for creativity. We can use our imagination whenever we choose ⓓto. Observing the objects around us, even those that seem uninteresting, ⓔhave the potential to spark new ideas. ⓕTaking a careful look at ordinary things, and try to discover the possibilities hidden within them.",
+"choices": [
+"ⓐ, ⓑ, ⓒ, ⓕ",
+"ⓑ, ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ, ⓕ",
+"ⓐ, ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓑ는 painted와 병렬을 이루는 과거 동사 turned로, ⓒ는 앞 절의 내용을 이어 설명하는 계속적 용법의 관계대명사 which로 고쳐야 한다. ⓔ의 주어는 Observing으로 시작하는 동명사구이므로 have 대신 has가 필요하다. ⓕ는 뒤의 try와 연결되는 명령문이므로 Taking을 Take로 바꿔야 한다. ⓐ는 along with 이하에 영향을 받지 않고 주어 Research에 일치하며, ⓓ는 앞서 나온 use our imagination을 생략하고 to만 남긴 적절한 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m1s0t0",
+"custom": true
 }
 ]

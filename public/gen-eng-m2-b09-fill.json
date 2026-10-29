@@ -769,5 +769,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b09-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-017aa4787f",
+"typeId": "eng-m2-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 괄호 (A)~(C)에 들어갈 말이 바르게 연결된 것은?\n\n• Bob was the grandfather (A)[who / which] helped Bobby learn to walk.\n• Bobby wanted (B)[see / to see] Bob in the hospital.\n• Bobby had another block (C)[to put / put] on the tower.",
+"choices": [
+"who — see — to put",
+"which — to see — put",
+"who — to see — to put",
+"which — see — to put",
+"who — to see — put"
+],
+"answer": "③",
+"solution": "선행사 the grandfather가 사람이므로 주격 관계대명사 who가 알맞다. want는 to부정사를 목적어로 취하므로 to see를 쓰고, another block을 뒤에서 수식하여 ‘놓을 블록’이라는 뜻을 나타내려면 to put을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f12c0fa5c5",
+"typeId": "eng-m2-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 Bob과 Bobby에 관한 문장이다. 어법상 어색한 문장만을 모두 고른 것은?\n\nⓐ The blocks that Bobby used to build the tower were wooden.\nⓑ The hospital which Bob stayed in were far from Bobby’s home.\nⓒ Bobby wanted to know how to help Bob.\nⓓ Bob stayed in bed without to talk or move.\nⓔ Bobby’s father looked sadly when he told Bobby about Bob.\nⓕ Bob had taught Bobby to walk.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓒ, ⓓ, ⓕ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓑ의 주어는 단수인 The hospital이므로 were를 was로 고쳐야 한다. ⓓ에서는 전치사 without 뒤에 동명사를 써서 without talking or moving으로 고친다. ⓔ의 looked는 ‘~해 보였다’라는 뜻이므로 부사 sadly가 아니라 형용사 sad가 필요하다. 나머지 문장은 관계대명사, 의문사와 to부정사, teach의 목적격 보어가 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f1b19439b1",
+"typeId": "eng-m2-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 부분에 대한 수정으로 알맞지 않은 것은?\n\nBob was the grandfather who ⓐteach Bobby how to walk. Later, when Bob became ill, Bobby hoped ⓑwhat Bob would get better. After Bob returned home, Bobby used the wooden blocks ⓒbuilding a tower. Bob eventually began to move his fingers, but he did not know ⓓhow walking again. On a warm day, Bobby stood in front of Bob and ⓔhelp him take a step.",
+"choices": [
+"ⓐ teach → taught",
+"ⓑ what → which",
+"ⓒ building → to build",
+"ⓓ how walking → how to walk",
+"ⓔ help → helped"
+],
+"answer": "②",
+"solution": "ⓑ 뒤에는 주어와 동사를 갖춘 완전한 절이 오며, hoped의 목적어 역할을 하는 절을 이끄는 접속사 that이 필요하다. 따라서 what을 which로 바꾸는 것은 적절하지 않다. 나머지는 각각 과거 시제, 목적을 나타내는 to부정사, ‘의문사＋to부정사’, 과거 동사의 병렬 연결에 맞게 수정한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-778ba85d4b",
+"typeId": "eng-m2-b09-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 틀린 부분 네 개를 찾아 바르게 고치시오.\n\n[조건]\n• 표시된 부분만 고칠 것.\n• 단어를 추가하거나 삭제하지 말고, 각 부분의 단어 형태만 바꿀 것.\n• ‘기호: 고친 말’의 형식으로 기호 순서대로 쓸 것.\n\nBobby remembered the days when Bob ⓐheld his hands. After Bob became ill, Bobby wanted ⓑto build a tower with him again. Bob lay in bed without ⓒtalk or ⓓmove. Later, the sound that came from Bob’s mouth ⓔwere like a sneeze. Bobby felt ⓕhappily because he thought Bob would get better.",
+"selfGrade": true,
+"answer": "ⓒ: talking, ⓓ: moving, ⓔ: was, ⓕ: happy",
+"solution": "without 뒤에서 or로 연결된 두 동사는 모두 동명사 형태인 talking과 moving으로 써야 한다. ⓔ의 주어는 관계사절 안의 Bob이 아니라 단수 명사구 the sound이므로 was가 알맞다. felt는 여기서 감정을 나타내는 연결동사이므로 형용사 happy를 보어로 쓴다. ⓐ의 과거형 held와 ⓑ의 wanted 뒤에 쓰인 to build는 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0fdbccbeb0",
+"typeId": "eng-m2-b09-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 주어진 시작 부분에 이어 하나의 문장으로 합치시오.\n\nBob taught Bobby something. Bobby remembered it: how to walk.\n\n→ Bobby remembered ____________________.\n\n[조건]\n• ‘Bobby는 Bob이 자신에게 걷는 방법을 가르쳐 준 사람이었다는 것을 기억했다.’라는 뜻으로 쓸 것.\n• 빈칸에 that, who, how를 각각 한 번씩 이 순서대로 사용할 것.\n• the person을 포함하고, ‘자신에게’는 him으로 표현할 것.\n• taught와 was를 각각 한 번씩 사용할 것.\n• 빈칸에 들어갈 말만 쓸 것.",
+"selfGrade": true,
+"answer": "that Bob was the person who taught him how to walk",
+"solution": "remembered의 목적어가 되는 절은 접속사 that으로 시작한다. 사람이 선행사인 the person 뒤에는 주격 관계대명사 who를 쓰고, taught him으로 ‘그에게 가르쳐 주었다’를 표현한다. ‘걷는 방법’은 ‘의문사＋to부정사’ 구조인 how to walk로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-23da0069bd",
+"typeId": "eng-m2-b09-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 틀린 부분을 모두 고쳐 문장 전체를 다시 쓰시오.\n\nThe wooden blocks which Bobby was using was things to play, and he put them on top of one another without drop them.\n\n[조건]\n• 관계대명사 which와 관계사절은 그대로 유지할 것.\n• 기존 단어 중 두 단어의 형태를 각각 바꾸고, 전치사 한 단어만 추가할 것.\n• 단어를 삭제하거나 순서를 바꾸지 말 것.\n• ‘그 나무 블록들은 가지고 놀 물건들이었으며, Bobby는 블록들을 떨어뜨리지 않고 서로의 위에 올려놓았다.’라는 뜻이 되게 할 것.",
+"selfGrade": true,
+"answer": "The wooden blocks which Bobby was using were things to play with, and he put them on top of one another without dropping them.",
+"solution": "첫 절의 주어는 복수인 The wooden blocks이므로 관계사절 뒤의 was를 were로 고친다. ‘블록을 가지고 놀다’는 play with the blocks이므로 things를 수식하는 to부정사에도 with가 필요하다. 전치사 without 뒤의 drop은 동명사 dropping으로 바꾼다. 관계사절의 was는 단수 주어 Bobby와 호응하므로 그대로 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m1s0t0",
+"custom": true
 }
 ]

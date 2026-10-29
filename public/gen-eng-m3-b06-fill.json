@@ -1171,5 +1171,260 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u0m7s0t0",
 "custom": true
+},
+{
+"id": "fill-eca00f6b43",
+"typeId": "eng-m3-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 것끼리 짝지어진 것은?\n\n(A) I have been saving money for three months.\n(B) She has been knowing the rule since Monday.\n(C) We have been making a shopping list for an hour.\n(D) Jason have been using his allowance carefully.\n(E) Minji has been wanting the T-shirt for two weeks.",
+"choices": [
+"(A), (B)",
+"(A), (C)",
+"(B), (D)",
+"(C), (E)",
+"(D), (E)"
+],
+"answer": "②",
+"solution": "(A)와 (C)는 「have〔has〕 been＋-ing」의 형태가 올바르다. (B)와 (E)의 know와 want는 상태를 나타내므로 일반적으로 현재완료진행형으로 쓰지 않으며, (D)는 주어 Jason에 맞게 has를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4b40d6e452",
+"typeId": "eng-m3-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화 중 어법상 알맞은 것은?",
+"choices": [
+"A: I don't know what buy.  B: Make a shopping list first.",
+"A: Can you tell me how saving money?  B: Follow a tighter budget.",
+"A: Do you know where to donate these clothes?  B: Yes, I do.",
+"A: I wonder when should use my allowance.  B: Check your spending diary.",
+"A: Please tell me what to solving this problem.  B: Don't carry all your money."
+],
+"answer": "③",
+"solution": "「의문사＋to부정사」는 ‘어떻게〔무엇을·어디에서 등〕 ~할지’라는 뜻이며 의문사 뒤에 to와 동사원형을 쓴다. 따라서 where to donate가 쓰인 ③이 어법상 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d83a7e1b07",
+"typeId": "eng-m3-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMinji often buys things (A)[what / that] she does not need. She has difficulty (B)[following / to follow] her shopping list when something is on sale. (C)[To avoid / Avoiding] buying things on the spot, she should ask herself, “Do I really need this?” before she buys anything.",
+"choices": [
+"what - following - To avoid",
+"what - to follow - Avoiding",
+"that - following - To avoid",
+"that - to follow - Avoiding",
+"that - following - Avoiding"
+],
+"answer": "③",
+"solution": "(A)는 선행사 things를 수식하는 목적격 관계대명사가 필요하므로 that이 알맞다. 「have difficulty＋-ing」에 따라 (B)는 following이고, 목적을 나타내는 to부정사가 필요하므로 (C)는 To avoid이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-954676d118",
+"typeId": "eng-m3-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 대화의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것의 개수는?\n\nQ: I have difficulty ⓐsaving money. I have been ⓑtrying to save half of my allowance since last month, but I still do not have enough money for the concert ticket. I don't know ⓒhow should I change my spending habits.\nA: First, look at the things ⓓwhat you bought during the last few weeks. To save money faster, avoid ⓔto buy items that are not on your shopping list.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓒ는 간접의문문이므로 how I should change가 되어야 한다. ⓓ는 선행사 the things가 있으므로 what이 아니라 that 또는 which를, ⓔ는 avoid 뒤에 동명사가 와야 하므로 buying을 써야 한다. 따라서 어법상 어색한 부분은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5f4c0ab0bb",
+"typeId": "eng-m3-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 알맞은 문장을 모두 고른 것은?\n\n(A) Steve has been saving money to buy a concert ticket for two months.\n(B) Jason does not know how he should solve his allowance problem.\n(C) Minji bought two T-shirts which she did not need them.\n(D) By follow the 50%-40%-10% rule, you can manage your money better.\n(E) The problem is that she buys things even if they are not on her list.",
+"choices": [
+"(A), (B)",
+"(A), (C), (E)",
+"(A), (B), (E)",
+"(B), (C), (D)",
+"(B), (D), (E)"
+],
+"answer": "③",
+"solution": "(A)는 현재완료진행형과 목적의 to부정사가 바르게 쓰였고, (B)의 간접의문문과 (E)의 명사절 that도 알맞다. (C)는 관계대명사 which가 목적어 역할을 하므로 them을 삭제해야 하고, (D)는 전치사 By 뒤에 following을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-db87d70e5a",
+"typeId": "eng-m3-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ에 대한 판단으로 어법상 알맞은 것은?\n\nJason gets a weekly allowance, but he often uses it up early. He does not know ⓐwhat to deal with the problem. Dr. Money advises him ⓑnot to carry around all of his allowance. Jason should divide the money into days and carry only the amount ⓒwhich he needs each day.\n\nSteve, on the other hand, has been ⓓsaved money to go to a concert. To reach his goal faster, he needs to avoid ⓔspending too much of his allowance.",
+"choices": [
+"ⓐ는 what을 how로 고치면 알맞다.",
+"ⓑ는 not to carry를 to not carrying으로 고쳐야 한다.",
+"ⓒ는 which를 what으로 고쳐야 한다.",
+"ⓓ는 saved를 saving으로 고쳐도 어법상 어색하다.",
+"ⓔ는 spending을 to spend로 고쳐야 한다."
+],
+"answer": "①",
+"solution": "deal with에는 방법을 묻는 how가 어울리므로 ⓐ는 how to deal with the problem으로 고쳐야 한다. ⓑ는 「advise＋목적어＋not to부정사」, ⓒ는 목적격 관계대명사, ⓔ는 「avoid＋-ing」의 올바른 쓰임이다. ⓓ는 has been saving으로 고치면 올바른 현재완료진행형이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c54f7d46f2",
+"typeId": "eng-m3-b06-u6m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 밑줄 친 표현의 우리말 뜻으로 알맞지 않은 것은?",
+"choices": [
+"From now on, she will exercise every morning. (→ 지금부터)",
+"Online activities often leave a trace. (→ 흔적을 남기다)",
+"Nobody knows for sure what will happen. (→ 확실히 알다)",
+"Technology plays an important role in our lives. (→ 중요한 역할을 하다)",
+"Experts draw meaningful results from big data. (→ 의미 있는 결과를 끌어내다)"
+],
+"answer": "③",
+"solution": "for sure는 ‘확실히, 틀림없이’라는 뜻이다. 따라서 Nobody knows for sure는 ‘아무도 확실히 알지 못한다’라는 의미이므로 ③의 해석은 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c3a297d34b",
+"typeId": "eng-m3-b06-u6m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAs information technology develops, the amount of data is getting ________ greater than before.",
+"choices": [
+"very",
+"much",
+"many",
+"more",
+"most"
+],
+"answer": "②",
+"solution": "greater는 비교급이므로 비교급을 강조하는 much를 써야 한다. much greater는 ‘훨씬 더 많은’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-cf4a9f0546",
+"typeId": "eng-m3-b06-u6m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 표현의 의미와 쓰임이 모두 알맞은 것은?",
+"choices": [
+"The application will give you a number to unlock a bike with. — with는 ‘자전거와 함께’라는 뜻이다.",
+"As it was already late, we went home. — As는 ‘~이기 때문에’라는 뜻이다.",
+"Using various methods, experts analyze big data. — Using의 의미상 주어는 big data이다.",
+"The records of your purchases are part of big data. — purchases는 ‘판매’라는 뜻이다.",
+"Big data is likely to change our lives. — be likely to는 ‘~할 필요가 있다’라는 뜻이다."
+],
+"answer": "②",
+"solution": "②의 As는 이유를 나타내는 접속사로 ‘~이기 때문에’라는 뜻이다. ①의 with는 도구, ③의 Using의 의미상 주어는 experts이며, purchases는 ‘구매’, be likely to는 ‘~할 것 같다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e5dde8e67e",
+"typeId": "eng-m3-b06-u6m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 사용하여 문장을 완성하시오. 단, 필요한 단어 하나를 추가하고, 단어의 형태를 바꾸지 마시오.\n\n빅데이터가 우리 삶에서 더욱더 중요한 역할을 할 것 같다.\n\n<보기> big / likely / play / important / role / lives / data / our / is / a / in / to / more / and\n\n→ ________________________________________________.",
+"selfGrade": true,
+"answer": "Big data is likely to play a more and more important role in our lives",
+"solution": "‘~할 것 같다’는 be likely to, ‘중요한 역할을 하다’는 play an important role로 나타낸다. ‘더욱더’는 more and more를 사용하며, 보기에는 and가 하나뿐이므로 and 하나를 추가해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9447ce51cc",
+"typeId": "eng-m3-b06-u6m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장을 분사구문으로 바꿀 때 빈칸에 들어갈 말을 정확히 네 단어로 쓰시오.\n\nBecause experts do not simply collect data, they can draw meaningful results from it.\n→ ________________________________, experts can draw meaningful results from it.",
+"selfGrade": true,
+"answer": "Not simply collecting data",
+"solution": "부사절과 주절의 주어가 experts로 같으므로 접속사 Because와 부사절의 주어를 생략할 수 있다. 부정어 not은 분사 앞에 놓고 collect를 collecting으로 바꾸므로 Not simply collecting data가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-17a7a25661",
+"typeId": "eng-m3-b06-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "각 문장의 우리말 뜻에 맞게 빈칸을 완성할 때, ⓐ~ⓓ에 들어갈 철자를 순서대로 연결하여 만들 수 있는 단어는? (밑줄 하나는 철자 하나를 나타낸다.)\n\n• Let's ⓐ _ _ _ _ this problem together.\n  (이 문제를 함께 해결하자.)\n• Check your b ⓑ _ _ _ _ _ before spending money.\n  (돈을 쓰기 전에 잔액을 확인해라.)\n• Buying things you don't need is f o o ⓒ _ _ _.\n  (필요하지 않은 물건을 사는 것은 어리석다.)\n• Make a b u d g ⓓ _ before you go shopping.\n  (쇼핑하러 가기 전에 예산을 세워라.)",
+"choices": [
+"save",
+"sale",
+"same",
+"safe",
+"size"
+],
+"answer": "②",
+"solution": "각 빈칸에 들어갈 단어는 solve, balance, foolish, budget이다. 표시된 위치의 철자를 순서대로 연결하면 s, a, l, e이므로 sale이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-486ff73269",
+"typeId": "eng-m3-b06-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸 (A), (B)를 완성하시오.\n\nSteve는 자신이 가장 좋아하는 가수의 콘서트에 가기 위해 두 달 동안 계속 돈을 모아 오고 있다.\n→ Steve (A)__________ to go to his favorite singer's concert (B)__________.\n\n<조건>\n• (A)는 save를 활용하여 현재완료진행형 세 단어로 쓸 것.\n• (B)는 two months를 포함하여 세 단어로 쓸 것.\n• 줄임말을 쓰지 말 것.",
+"selfGrade": true,
+"answer": "(A) has been saving, (B) for two months",
+"solution": "과거부터 현재까지 계속되고 있는 행동은 현재완료진행형으로 나타낸다. 주어가 Steve이므로 has been saving을 쓰고, 두 달이라는 기간 앞에는 for를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bbd13b50ed",
+"typeId": "eng-m3-b06-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 상담 메모를 읽고 영문 상담 요약의 빈칸 (A)~(D)를 조건에 맞게 완성하시오.\n\n[상담 메모]\nSteve: 좋아하는 가수의 콘서트에 가려고 두 달 동안 계속 저축 중이지만, 아직 돈이 부족함. 무엇을 해야 할지 모름.\nJason: 매주 용돈을 받지만 주 초에 대부분 써 버림. 이 문제를 어떻게 해결해야 할지 모름.\nDr. Money의 조언: Steve는 더 엄격한 예산을 세워야 함. Jason은 하루에 필요한 돈만 가지고 다녀야 함.\n\n[영문 상담 요약]\nSteve (A)__________ for two months, but he still does not have enough money. He does not know (B)__________. Jason spends most of his allowance early in the week and does not know (C)__________. Dr. Money tells Jason to carry only (D)__________ for each day.\n\n<조건>\n• (A): save를 활용하여 현재완료진행형 세 단어로 쓸 것.\n• (B): what / do를 활용하여 「의문사＋to부정사」 세 단어로 쓸 것.\n• (C): how / solve / this problem을 활용하여 「의문사＋to부정사」 다섯 단어로 쓸 것.\n• (D): the money / he / need를 활용하여 목적격 관계대명사를 생략한 네 단어로 쓸 것.\n• 필요한 경우 어형을 바꾸되, 줄임말은 쓰지 말 것.",
+"selfGrade": true,
+"answer": "(A) has been saving, (B) what to do, (C) how to solve this problem, (D) the money he needs",
+"solution": "(A)는 두 달 전부터 현재까지 계속되는 저축을 나타내므로 has been saving이다. ‘무엇을 해야 할지’와 ‘어떻게 이 문제를 해결해야 할지’는 각각 what to do와 how to solve this problem으로 쓴다. (D)는 the money를 he needs가 뒤에서 수식하는 구조이며, 주어 he에 맞게 needs를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1f799e46bf",
+"typeId": "eng-m3-b06-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 설문 요약을 읽고, 이를 설명하는 문장의 빈칸 (A)~(C)를 조건에 맞게 완성하시오.\n\n[설문 요약]\n학생들에게 돈을 현명하게 사용하는지 물었더니 70%가 아니라고 답했다. 이 학생들에게 가장 큰 돈 고민을 물었다. 그중 60%는 용돈이 부족하다고 했고, 28%는 저축하는 데 어려움이 있다고 했다. 나머지 12%는 필요하지 않은 물건에 돈을 썼다고 했다.\n\n[설문 설명]\nMost of the students think (A)__________. Among those students, 28% say that (B)__________. Another 12% say that they spent money on things (C)__________.\n\n<조건>\n• (A)는 they / be / not / smart / with / they / money를 순서대로 활용하여 일곱 단어로 쓸 것.\n• (B)는 they / have / difficulty / save / money를 순서대로 활용하여 다섯 단어로 쓸 것.\n• (C)는 they / do / not / need를 순서대로 활용하여 네 단어로 쓸 것.\n• (A), (B)는 현재시제, (C)는 과거시제로 쓸 것.\n• 문맥과 문법에 맞게 필요한 단어의 형태를 바꾸고, 줄임말은 쓰지 말 것.",
+"selfGrade": true,
+"answer": "(A) they are not smart with their money, (B) they have difficulty saving money, (C) they did not need",
+"solution": "(A)의 첫 번째 they는 주어이므로 그대로 쓰고, money 앞의 두 번째 they는 소유격 their로 바꾼다. (B)는 have difficulty -ing 구문이므로 saving이 필요하다. (C)는 과거 부정문이므로 did not need로 쓰며, 이 절이 앞의 things를 수식한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m6s0t0",
+"custom": true
 }
 ]

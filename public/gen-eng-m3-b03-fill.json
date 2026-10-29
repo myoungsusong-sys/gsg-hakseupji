@@ -4570,5 +4570,191 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u7m4s0t0",
 "custom": true
+},
+{
+"id": "fill-65e332d87c",
+"typeId": "eng-m3-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "우리말과 같은 뜻이 되도록 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n김구는 일본에 맞서 싸우기 위해 한인애국단을 조직했다.\n\n(Kim Koo / against Japan / the Korean Patriotic Organization / formed / to fight)",
+"selfGrade": true,
+"answer": "Kim Koo formed the Korean Patriotic Organization to fight against Japan.",
+"solution": "과거의 일이므로 form을 과거형 formed로 쓴다. 목적은 ‘to fight against Japan’으로 나타내며, 목적어 뒤에 목적을 나타내는 to부정사를 배치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1cc7d50b29",
+"typeId": "eng-m3-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 괄호 안의 표현을 모두 사용하여 영작하시오.\n\n1932년에 김구는 일본 장군들을 암살할 계획을 세웠다.\n\n(make a plan, kill, Japanese generals)",
+"selfGrade": true,
+"answer": "In 1932, Kim Koo made a plan to kill Japanese generals.",
+"solution": "‘계획을 세웠다’는 과거형 made a plan으로 표현한다. ‘암살할 계획’은 명사 plan을 수식하는 to부정사 to kill로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b3b333c2cc",
+"typeId": "eng-m3-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장을 ‘so that’을 사용하여 한 문장으로 바꾸시오.\n\nKim Koo carried Yun's watch in his jacket. He did not want to forget Yun's sacrifice.",
+"selfGrade": true,
+"answer": "Kim Koo carried Yun's watch in his jacket so that he would not forget Yun's sacrifice.",
+"solution": "시계를 지니고 다닌 목적을 나타내므로 so that절을 사용한다. 주절이 과거시제이므로 목적절에는 would not forget을 쓰는 것이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0f17680027",
+"typeId": "eng-m3-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n독립운동이 온 나라에 퍼졌을 때, 김구는 상하이로 옮겨갔다.\n\n<조건>\n• When으로 시작할 것\n• 앞서 완료된 일을 과거완료시제로 나타낼 것\n• 정확히 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "When the independence movement had spread throughout the country, Kim Koo moved to Shanghai.",
+"solution": "독립운동이 퍼진 일이 김구가 이동한 일보다 먼저 일어났으므로 had spread를 사용한다. When을 포함하여 단어를 세면 모두 14단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c7c78b3da0",
+"typeId": "eng-m3-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n만약 신께서 김구에게 그의 두 번째 소원이 무엇인지 물으신다면, 그는 그것이 조국의 독립이라고 말할 것이다.\n\n<조건>\n• 가정법 과거와 간접의문문을 모두 사용할 것\n• 간접의문문의 어순에 유의할 것\n• that절을 포함하여 정확히 21단어로 쓸 것",
+"selfGrade": true,
+"answer": "If God asked Kim Koo what his second wish was, he would say that it was the independence of his country.",
+"solution": "현재 사실과 다른 가정을 나타내므로 ‘If＋주어＋과거동사, 주어＋would＋동사원형’을 사용한다. 간접의문문은 ‘what his second wish was’처럼 의문사 뒤에 주어와 동사를 쓰며, 전체 문장은 21단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-efc0f41414",
+"typeId": "eng-m3-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 내용을 <조건>에 맞게 두 문장의 영어로 쓰시오.\n\n김구는 일본 장군들을 암살할 계획을 세웠고, 윤봉길에게 그 임무를 수행하도록 지시했다. 그는 윤봉길의 희생을 잊지 않기 위해 윤봉길의 시계를 늘 재킷 안에 지니고 다녔다.\n\n<조건>\n• made a plan과 directed를 사용할 것\n• 첫 문장에 목적을 나타내는 to부정사를 두 번 사용할 것\n• 둘째 문장에는 so that과 would를 사용할 것",
+"selfGrade": true,
+"answer": "Kim Koo made a plan to kill Japanese generals and directed Yun Bonggil to carry out the mission. He always carried Yun's watch in his jacket so that he would not forget Yun's sacrifice.",
+"solution": "‘암살할 계획’은 made a plan to kill로, ‘임무를 수행하도록 지시했다’는 directed Yun Bonggil to carry out the mission으로 표현한다. 둘째 문장은 목적을 나타내는 so that절을 쓰고, 과거시제에 맞추어 would not forget을 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e3c10a9b92",
+"typeId": "eng-m3-b03-u3m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThink about your daily smartphone use. Do you feel uncomfortable when your phone is away from you? Do you look at SNS messages even when you are studying? Perhaps you want to spend less time on your phone but find it difficult. Ask yourself whether these things are true for you. Your answers can help you notice a problem with your smartphone use.",
+"choices": [
+"Find More Useful SNS Messages",
+"Choose a Smartphone for Your Studies",
+"Check Your Smartphone Habits",
+"Make Friends Through Your Smartphone",
+"Learn to Send Messages Faster"
+],
+"answer": "③",
+"solution": "글은 스마트폰이 없을 때의 느낌이나 공부 중 SNS를 확인하는 행동 등을 스스로 점검하도록 안내한다. 따라서 스마트폰 사용 습관을 확인하라는 의미의 ③이 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-58bef66c11",
+"typeId": "eng-m3-b03-u3m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nA short break from digital devices can bring good changes to your day. Away from digital noise, you may feel refreshed. Paying attention to your work can become easier, and fresh ideas may come to you. You can also have more time to be with other people.",
+"choices": [
+"디지털 기기를 잠시 멀리할 때 얻는 이점",
+"디지털 기기로 새로운 정보를 찾는 방법",
+"스마트폰 사용 시간을 줄이기 어려운 이유",
+"스마트폰 중독 여부를 확인하는 기준",
+"디지털 기기를 활용하여 사람들과 연락하는 방법"
+],
+"answer": "①",
+"solution": "글은 디지털 기기를 잠시 사용하지 않을 때 기분 전환, 집중력 향상, 새로운 생각, 타인과 함께할 시간 등의 이점을 제시한다. 이 내용을 포괄하는 주제는 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9e037fda8d",
+"typeId": "eng-m3-b03-u3m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 가장 잘 아우르는 제목은?\n\nTo change the way we use smartphones, we need rules we can follow. During study time, switch your phone off. Leave it outside the bathroom, and keep it away from your bedroom at night. Reduce the number of messages you post on SNS and spend more time playing outdoors without your phone. You can also turn off alerts so that you do not check your phone whenever it makes a sound.",
+"choices": [
+"Outdoor Activities You Can Enjoy with a Phone",
+"Why Smartphone Alerts Are Useful",
+"The Best Place to Keep Your Phone at Night",
+"How SNS Makes Our Lives More Interesting",
+"Everyday Rules for Wiser Smartphone Use"
+],
+"answer": "⑤",
+"solution": "공부할 때 전원을 끄기, 특정 장소에 스마트폰을 가져가지 않기, SNS 게시물과 알림을 줄이기 등 여러 실천 규칙을 제시한 글이다. ③은 밤에 스마트폰을 두는 장소라는 일부 내용만 다루므로, 전체 내용을 포괄하는 ⑤가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3d05d2aad1",
+"typeId": "eng-m3-b03-u3m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nSmartphones make many parts of our lives easier. This does not mean, however, that using them more is always better. Too much smartphone use can keep us from concentrating on our studies and may cause neck pain. We can begin with simple changes: use our phones for less time, turn off alerts, and leave our phones behind when we play outside. Digital detox is a break from digital devices for a period of time. It can help us become wiser users of these useful tools.",
+"choices": [
+"스마트폰은 생활을 편리하게 해 주므로 사용 시간을 제한할 필요가 없다.",
+"스마트폰의 편리함을 누리되 과도한 사용을 줄이고 잠시 멀리하는 습관을 가져야 한다.",
+"스마트폰 사용으로 생기는 문제를 해결하려면 앞으로 디지털 기기를 전혀 사용하지 않아야 한다.",
+"스마트폰 사용 시간보다 어떤 종류의 기기를 사용하는지가 더 중요하다.",
+"스마트폰 중독 문제는 목에 통증이 생긴 뒤에 해결해도 충분하다."
+],
+"answer": "②",
+"solution": "글은 스마트폰의 편리함을 인정하면서도 과도한 사용의 문제와 이를 줄이는 실천 방법을 설명한다. 따라서 편리함을 누리면서 사용을 조절하자는 ②가 요지이다. 디지털 디톡스는 일정 시간 기기를 멀리하는 것이므로 영구적인 사용 중단을 주장하는 ③은 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-948a13661b",
+"typeId": "eng-m3-b03-u3m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B)의 중심 내용을 각각 가장 적절하게 짝지은 것은?\n\n(A) Being addicted to a smartphone means that too much of your time goes into using it. Your attention may move away from your studies, and your neck may hurt. These problems show why you need to look carefully at your smartphone habits.\n\n(B) Try putting your smartphone aside for a while. During this break, you may find it easier to concentrate on your work. You may feel refreshed and think of something new. There may also be more time in your day to spend with other people.",
+"choices": [
+"(A) 스마트폰 중독이 발생하는 원인 / (B) 디지털 디톡스의 긍정적 효과",
+"(A) 스마트폰 과다 사용의 문제점 / (B) 디지털 디톡스의 실천 규칙",
+"(A) 스마트폰 중독을 진단하는 절차 / (B) 디지털 디톡스의 실천 규칙",
+"(A) 스마트폰 과다 사용의 문제점 / (B) 디지털 디톡스의 긍정적 효과",
+"(A) 스마트폰 중독을 진단하는 절차 / (B) 디지털 디톡스를 방해하는 요인"
+],
+"answer": "④",
+"solution": "(A)는 스마트폰 중독의 원인이 아니라 중독으로 나타나는 시간 낭비, 학업 집중의 어려움, 목 통증을 설명한다. (B)는 잠시 스마트폰을 내려놓으라는 제안으로 시작하지만, 중심 내용은 그 뒤에 제시되는 집중, 기분 전환, 새로운 생각, 타인과의 시간이라는 효과이다. 따라서 두 문단의 중심 내용을 정확히 짝지은 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-20546fac7b",
+"typeId": "eng-m3-b03-u3m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글 전체의 요지를 아래 조건에 맞게 영어 한 문장으로 요약하시오.\n\nA smartphone can be useful, but spending too much time on it may make studying difficult and cause pain in your neck. Giving up digital devices forever is not what digital detox means. It means taking a break from them for a while. You can put this idea into practice by turning your phone off during study time and keeping it out of your bedroom at night. Such breaks can help you focus, feel refreshed, and have more time with others. The aim is to become a wise smartphone user.\n\n<조건>\n• 아래의 어구를 모두 한 번씩 사용하여 한 문장을 완성할 것.\n• 어구를 추가하거나 형태를 바꾸지 말 것.\n• ‘스마트폰은 유용하지만’이라는 양보절로 시작할 것.\n• 문장 첫 글자는 대문자로 쓰고, 쉼표와 마침표를 사용할 것.\n\n<어구>\nby taking breaks from them / smartphones are useful / although / we should / to become wiser users / limit our use",
+"selfGrade": true,
+"answer": "Although smartphones are useful, we should limit our use by taking breaks from them to become wiser users.",
+"solution": "글의 요지는 스마트폰의 유용성을 인정하면서도 잠시 사용을 쉬는 방식으로 사용량을 조절하여 현명한 사용자가 되어야 한다는 것이다. 양보절은 Although smartphones are useful로, 주절은 we should limit our use로 구성한다. 이어서 by taking breaks from them으로 방법을, to become wiser users로 목적을 나타내면 글 전체의 요지를 요약할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m2s0t0",
+"custom": true
 }
 ]

@@ -874,5 +874,82 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b06-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-67bdf4d76e",
+"typeId": "eng-m2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ⓐ~ⓔ에 대한 문맥상 의미로 알맞지 않은 것은?\n\nManet and Monet had ⓐsimilar names. However, the ⓑfocus of their paintings was different. Manet painted people in ⓒeveryday life. Monet liked to watch ⓓnature and paint the same ⓔsubject repeatedly.\n\n① ⓐ: 비슷한\n② ⓑ: 초점, 중심 대상\n③ ⓒ: 일상생활\n④ ⓓ: 자연\n⑤ ⓔ: 교과목",
+"choices": [
+"ⓐ: 비슷한",
+"ⓑ: 초점, 중심 대상",
+"ⓒ: 일상생활",
+"ⓓ: 자연",
+"ⓔ: 교과목"
+],
+"answer": "⑤",
+"solution": "이 글에서 subject는 화가가 그림으로 그리는 ‘대상, 소재’를 뜻한다. ‘교과목’이라는 뜻도 있지만, 그림에 관해 설명하는 이 문맥에는 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-bf72a9271b",
+"typeId": "eng-m2-b06-u2m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화의 빈칸에 들어갈 문장을 <보기>의 말을 모두 한 번씩 사용하여 완성하시오. 문장 첫 글자는 대문자로 쓰시오.\n\nA: Why do you like yoga on rainy days?\nB: ______________________________\n\n<보기>\nindoors / because / yoga / can / I / practice",
+"selfGrade": true,
+"answer": "Because I can practice yoga indoors.",
+"solution": "Why로 이유를 물었으므로 Because로 시작하여 답한다. 이어서 ‘주어 + can + 동사원형’의 순서로 배열하면 ‘실내에서 요가를 할 수 있기 때문이다’라는 뜻이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ebcc1923c5",
+"typeId": "eng-m2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말을 바르게 짝지은 것은?\n\n• To (A) two people is to mistake one for the other.\n• To (B) something is to become aware of it.\n• If two things (C), they are not the same.\n\n       (A)          (B)          (C)\n① mix up      realize      differ\n② mix up      differ       realize\n③ realize     mix up       differ\n④ differ      realize      mix up\n⑤ realize     differ       mix up",
+"choices": [
+"mix up — realize — differ",
+"mix up — differ — realize",
+"realize — mix up — differ",
+"differ — realize — mix up",
+"realize — differ — mix up"
+],
+"answer": "①",
+"solution": "한 사람을 다른 사람으로 잘못 아는 것은 mix up에 해당한다. 어떤 사실을 알게 되는 것은 realize이고, 두 대상이 같지 않은 것은 differ이다. 따라서 빈칸에는 차례로 mix up, realize, differ가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a56b0e083e",
+"typeId": "eng-m2-b06-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 메모를 바탕으로 질문에 대한 답을 <조건>에 맞게 한 문장으로 쓰시오.\n\n[메모]\nManet: people in daily life\nMonet: landscapes and gardens\n\nQ. How was the focus of Monet’s paintings different from that of Manet’s paintings?\n\n<조건>\n• Unlike로 시작할 것.\n• <보기>의 말을 모두 한 번씩 사용할 것.\n• 필요한 곳에 쉼표와 마침표를 쓸 것.\n• focus는 과거형으로 바꾸고, 다른 말은 추가하거나 바꾸지 말 것.\n\n<보기>\nManet / Monet / unlike / focus / on / landscapes / and / gardens",
+"selfGrade": true,
+"answer": "Unlike Manet, Monet focused on landscapes and gardens.",
+"solution": "Unlike Manet은 ‘마네와 달리’라는 뜻으로 두 화가의 차이를 나타낸다. 모네가 초점을 맞춘 대상은 풍경과 정원이므로 Monet focused on landscapes and gardens로 연결한다. 조건에 따라 focus를 과거형 focused로 바꾸고, 문장 앞의 비교 표현 뒤에 쉼표를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7d5759f1ff",
+"typeId": "eng-m2-b06-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 정보를 읽고, 두 화가를 구별하는 방법을 요약한 문장의 빈칸을 <조건>에 맞게 완성하시오.\n\n[정보]\nManet’s paintings: dark colors and people\nMonet’s paintings: light colors and gardens\n\nPaying attention to colors and subjects ______________________________.\n\n<조건>\n• 빈칸은 ‘우리가 마네와 모네를 구별하는 데 도움이 된다’라는 뜻이 되어야 한다.\n• <보기>의 말을 모두 한 번씩 사용할 것.\n• help만 알맞은 형태로 바꾸고, 다른 말은 추가하거나 바꾸지 말 것.\n\n<보기>\napart / Manet / help / tell / and / us / Monet",
+"selfGrade": true,
+"answer": "helps us tell Manet and Monet apart",
+"solution": "‘마네와 모네를 구별하다’는 tell Manet and Monet apart로 표현한다. ‘우리가 ~하는 데 도움이 된다’는 help us tell로 연결한다. 주어인 Paying attention to colors and subjects는 동명사구로 단수 취급하므로 help를 helps로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u2m7s0t0",
+"custom": true
 }
 ]

@@ -1314,5 +1314,113 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b02-u4m4s0t0",
 "custom": true
+},
+{
+"id": "fill-f6a5a93994",
+"typeId": "eng-h2-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳지 않은 문장은?",
+"choices": [
+"Did you know that astronauts perform various experiments on the ISS?",
+"Growing lettuce in space is one example of such experiments.",
+"Astronauts had to prove that the lettuce was safe to eat.",
+"They must have excited to eat fresh lettuce in space.",
+"I am amazed at how far space farming has advanced."
+],
+"answer": "④",
+"solution": "조동사 must 뒤에서 과거의 상태를 추측할 때는 「must have p.p.」를 쓴다. 주어가 흥분한 상태였다는 뜻이므로 must have been excited로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6554b4f00f",
+"typeId": "eng-h2-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 밑줄 친 부분의 어법이 옳지 않은 것은?",
+"choices": [
+"Today’s mission ① required a spacewalk.",
+"We had to install ② the bases for the solar batteries.",
+"Scott and I went to an airlock ③ connected to the outside of the station.",
+"The blue Earth hovered overhead, ④ looked like it might crash down upon us.",
+"I finally ⑤ managed to install the battery bases."
+],
+"answer": "④",
+"solution": "④에서는 주절의 동사 hovered가 이미 있으므로 looked를 또 다른 서술동사로 사용할 수 없다. Earth의 모습을 부연하는 분사구문이 되도록 looking으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e1aea2575f",
+"typeId": "eng-h2-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳지 않은 것은?",
+"choices": [
+"I am sometimes confused about how my body is positioned.",
+"I can use any wall as if each were a floor.",
+"Zero gravity enables me not only to fly but also to lift huge objects.",
+"Zero gravity makes astronauts to lose muscle and bone density.",
+"I exercise every day as my colleagues do."
+],
+"answer": "④",
+"solution": "사역동사 make는 「make＋목적어＋동사원형」의 구조를 취한다. 따라서 to lose를 lose로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b33bc09254",
+"typeId": "eng-h2-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 밑줄 친 ⓐ~ⓕ 중 어법상 옳지 않은 것끼리 짝지어진 것은?\n\nB: Did you know ⓐthat astronauts carry out experiments on the International Space Station?\nG: Yes. A typical example ⓑare growing lettuce in space.\nB: They had to prove ⓒthat it was safe to eat even in a harsh environment.\nG: The astronauts ⓓmust have been thrilled to eat something fresh.\nB: We may soon see a day ⓔwhich astronauts can enjoy fresh ingredients in space.\nG: I’m amazed at ⓕhow far space farming has advanced.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓐ, ⓕ",
+"ⓑ, ⓔ",
+"ⓒ, ⓓ",
+"ⓓ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓑ의 주어 A typical example이 단수이므로 are를 is로 고쳐야 한다. ⓔ의 선행사 a day는 뒤 절에서 시간을 나타내므로 관계부사 when이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8150aaf1e0",
+"typeId": "eng-h2-b02-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳지 않은 것을 모두 고른 것은?\n\nOn the day of the spacewalk, the battery bases ⓐhad to be installed on the outside of the station. Scott and I went to an airlock, a room ⓑconnecting to the outside of the station. With the large blue Earth overhead, I forced ⓒmyself to focus on the task. Despite the safety cable, I thought that if my hand ⓓwould miss the handrail, I would fall into the dark void. After the task seemed to take forever, I finally managed ⓔinstalling the battery bases.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓑ는 airlock이 외부와 연결된 것이므로 connected가 알맞다. 조건을 나타내는 if절에서는 미래의 일이라도 현재형을 쓰므로 ⓓ는 missed가 아니라 misses로 고쳐야 하며, manage는 to부정사를 목적어로 취하므로 ⓔ는 to install이 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f09f09dec5",
+"typeId": "eng-h2-b02-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ를 어법에 맞게 고쳐 쓸 때, 고친 표현을 순서대로 쓰시오.\n\nWhen I wake up in zero gravity, I am sometimes confused about how my body ⓐpositioned. I can use any wall as if each ⓑwas a floor. This environment enables me not only ⓒflying but also to lift huge objects with one finger. However, it also makes astronauts ⓓto lose muscle and bone density. That is why I exercise every day as my colleagues ⓔare.",
+"selfGrade": true,
+"answer": "is positioned / were / to fly / lose / do",
+"solution": "몸은 위치가 정해지는 대상이므로 ⓐ에는 수동태가 필요하고, 가정의 의미를 나타내는 as if 뒤에는 ⓑ were를 쓴다. enable은 목적격보어로 to부정사를 취하고 not only와 but also는 병렬을 이루므로 ⓒ는 to fly가 알맞으며, 사역동사 make 뒤에는 ⓓ 동사원형이 온다. 마지막으로 exercise를 대신하는 대동사가 필요하므로 ⓔ는 do가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m1s0t0",
+"custom": true
 }
 ]

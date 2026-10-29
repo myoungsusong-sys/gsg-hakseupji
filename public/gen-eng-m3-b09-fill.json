@@ -2073,5 +2073,653 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u4m5s0t0",
 "custom": true
+},
+{
+"id": "fill-bb101abbdc",
+"typeId": "eng-m3-b09-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nThe writer had believed that her father wasted the family’s money on gambling. Later, however, she learned that he had secretly sent the money to independence fighters. He only pretended to be a gambler so that Japanese officers would not discover the truth.",
+"choices": [
+"the writer’s plan to join the independence movement",
+"the real reason the writer’s father acted like a gambler",
+"the Japanese officers’ efforts to help the writer’s family",
+"the writer’s memories of living with her husband",
+"the importance of saving money for a wedding"
+],
+"answer": "②",
+"solution": "아버지는 실제 도박꾼이 아니라 독립운동가들을 돕는 사실을 감추려고 도박꾼처럼 행동했다. 따라서 글의 중심 내용은 아버지가 도박꾼처럼 행동한 진짜 이유이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bfdfebcd9f",
+"typeId": "eng-m3-b09-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nNam Jahyun moved to Manchuria and worked for Korea’s independence. She established schools and taught women there. She was later imprisoned after trying to attack Japanese officers. The Korean government honored her work after her death.",
+"choices": [
+"Nam Jahyun’s Life for Korea’s Independence",
+"How to Build Successful Schools",
+"A Peaceful Trip to Manchuria",
+"Women Who Worked for Japanese Officers",
+"Nam Jahyun’s Life in Prison"
+],
+"answer": "①",
+"solution": "글은 남자현이 만주에서 교육 활동과 독립운동을 하고, 사후에 공로를 인정받은 삶을 소개한다. 따라서 그녀의 독립을 위한 삶을 나타낸 ①이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d7e65b1b50",
+"typeId": "eng-m3-b09-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nBefore the writer’s wedding, her father took the money that was supposed to be used for a new clothes chest. As a result, she had to take her aunt’s old chest to her husband’s house. She felt angry with her father and worried that other people would speak badly about her family.",
+"choices": [
+"The writer was pleased with her aunt’s wedding gift.",
+"The writer wanted to cancel her arranged marriage.",
+"The writer’s mother bought her an expensive chest.",
+"The loss of the chest money caused the writer shame and anger.",
+"The writer’s husband asked her father for more money."
+],
+"answer": "④",
+"solution": "새 옷장을 살 돈을 아버지가 가져가 글쓴이는 낡은 옷장을 가져가야 했다. 이 때문에 글쓴이는 아버지에게 화가 났으며 가족이 창피를 당할까 걱정했으므로 ④가 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-815209f198",
+"typeId": "eng-m3-b09-u2m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nTo the writer, her father had long been a man who brought hardship and shame to his family. A visit from his friend changed this belief. The money that seemed to have disappeared through gambling had actually supported independence fighters in Manchuria. What the writer had regarded as proof of her father’s selfishness was, in fact, part of his secret sacrifice.",
+"choices": [
+"A Daughter Who Became an Independence Fighter",
+"A Family’s Effort to Recover Lost Money",
+"A Painful Marriage Caused by an Old Tradition",
+"The Manchurian Fighters Who Revealed Their Plans",
+"A Disgraceful Past Reconsidered as a Noble Sacrifice"
+],
+"answer": "⑤",
+"solution": "글쓴이는 처음에 아버지의 행동을 가족에게 수치와 고통을 준 이기적인 행동으로 여겼다. 그러나 그 행동이 독립운동을 위한 희생이었다는 진실을 알게 되었으므로, 인식의 반전을 모두 담은 ⑤가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9486378600",
+"typeId": "eng-m3-b09-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말을 각각 한 단어의 영어로 쓰시오.\n\n(A) The writer’s father hid his support for independence fighters by making people believe that he was a gambler. Even his own family misunderstood him until the truth was revealed.\n\n(B) Nam Jahyun left her home for Manchuria, educated women, and risked her life while fighting for Korea’s independence. Her work was officially honored after her death.\n\nBoth people devoted themselves to Korean independence: the writer’s father did so (A) __________, whereas Nam Jahyun acted more (B) __________.",
+"selfGrade": true,
+"answer": "secretly, openly",
+"solution": "글쓴이의 아버지는 도박꾼으로 위장하여 독립운동 지원 사실을 숨겼으므로 secretly가 알맞다. 반면 남자현은 학교 설립, 여성 교육, 일본 순사 공격 시도 등 겉으로 드러나는 활동을 했으므로 openly가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a8ddec9a38",
+"typeId": "eng-m3-b09-u7m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 단어의 영영풀이가 알맞은 것은?",
+"choices": [
+"surface: the deepest part inside something",
+"crush: to open something that was folded",
+"researcher: a person who studies a subject carefully to discover new information",
+"shortcut: a route that takes more time than the usual route",
+"persistent: likely to stop trying when something is difficult"
+],
+"answer": "③",
+"solution": "researcher는 어떤 주제를 주의 깊게 연구하여 새로운 정보를 알아내는 사람을 뜻한다. 나머지 영영풀이는 각 단어의 실제 의미와 반대되거나 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3930e824aa",
+"typeId": "eng-m3-b09-u7m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 가장 알맞은 것은?\n\n• Does a faster way to travel through space really ________?\n• Some scientists think that wormholes may ________ in the universe.",
+"choices": [
+"detect",
+"exist",
+"crush",
+"fold",
+"achieve"
+],
+"answer": "②",
+"solution": "두 문장 모두 어떤 것이 실제로 있거나 존재하는지를 묻거나 나타낸다. ‘존재하다’라는 뜻의 exist가 두 빈칸에 공통으로 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6a25a126ee",
+"typeId": "eng-m3-b09-u7m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A), (B)에 들어갈 단어가 순서대로 올바르게 짝지어진 것은?\n\nFor the worm, the apple’s surface is as (A)________ as the universe. A wormhole in space may (B)________ two mouths connected by a throat.",
+"choices": [
+"stable ― create",
+"vast ― contain",
+"persistent ― detect",
+"hopeless ― fold",
+"outer ― achieve"
+],
+"answer": "②",
+"solution": "(A)에는 우주처럼 ‘매우 넓은’이라는 뜻의 vast가 알맞다. (B)에는 웜홀이 두 개의 입구를 ‘포함하다’라는 의미가 되어야 하므로 contain이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4284a7f761",
+"typeId": "eng-m3-b09-u7m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이와 문맥에 해당하는 영어 단어를 순서대로 쓰시오.\n\n(A) the outside or top layer of something: The worm moves across the apple’s ________.\n(B) a quicker way of getting somewhere: A wormhole can be regarded as a ________ through space.\n(C) an idea or set of ideas intended to explain something: Wormholes exist in ________ only.",
+"selfGrade": true,
+"answer": "surface, shortcut, theory",
+"solution": "(A)는 사물의 바깥쪽 층이므로 surface이고, (B)는 더 빠른 경로이므로 shortcut이다. (C)는 어떤 현상을 설명하기 위한 생각이나 생각의 체계를 뜻하므로 theory가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0f6c209640",
+"typeId": "eng-m3-b09-u7m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "괄호 안에 주어진 단어를 문맥과 문법에 맞는 형태로 바꾸어 빈칸에 쓰시오.\n\n(A) Something sweet is ________ by the worm. (detect)\n(B) The people who study wormholes carefully are called ________. (research)\n(C) With persistent ________ and research, we may learn more about wormholes. (explore)",
+"selfGrade": true,
+"answer": "detected, researchers, exploration",
+"solution": "(A)는 수동태이므로 detect의 과거분사 detected가 필요하다. (B)는 연구하는 사람들을 뜻하는 복수 명사 researchers가, (C)는 형용사 persistent의 수식을 받는 명사 exploration이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6aa0387cb0",
+"typeId": "eng-m3-b09-u7m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 요약문의 밑줄 친 세 표현을 문맥에 맞는 8과의 어휘로 고쳐 순서대로 쓰시오.\n\nBecause a wormhole is a _long route_, the worm chooses it to reach the other side quickly. Wormholes in space exist in _reality_, and the debate about them is _finished_.",
+"selfGrade": true,
+"answer": "shortcut, theory, ongoing",
+"solution": "웜홀은 목적지에 더 빨리 도달하게 하는 shortcut이므로 long route는 적절하지 않다. 우주의 웜홀은 theory에서만 존재하며, 이에 관한 논쟁은 끝난 것이 아니라 ongoing인 상태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4adf22ed85",
+"typeId": "eng-m3-b09-u4m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 짝지어진 두 표현의 의미 관계가 나머지와 다른 것은?",
+"choices": [
+"look into — investigate",
+"genuine — fake",
+"pass away — die",
+"employ — hire",
+"take care of — look after"
+],
+"answer": "②",
+"solution": "genuine은 ‘진짜의’, fake는 ‘가짜의’라는 뜻으로 서로 반의어이다. 나머지는 모두 의미가 같거나 비슷한 표현끼리 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-949fe88270",
+"typeId": "eng-m3-b09-u4m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어와 영영풀이의 연결이 적절하지 않은 것은?",
+"choices": [
+"confess: to admit that you have done something wrong",
+"spot: to see or notice someone or something",
+"mislead: to give someone a wrong idea about something",
+"escape: to keep someone from leaving a place",
+"awful: very bad or extremely unpleasant"
+],
+"answer": "④",
+"solution": "escape는 ‘탈출하다, 벗어나다’라는 뜻으로, 갇혀 있거나 위험한 장소에서 빠져나오는 것을 의미한다. ④의 풀이는 누군가가 어떤 장소를 떠나지 못하게 한다는 뜻이므로 escape의 의미와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7c1a7237d7",
+"typeId": "eng-m3-b09-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에 사용된 단어의 영영풀이로 볼 수 없는 것은? (단어의 활용형도 포함한다.)\n\nThe newspaper described an awful disaster at the zoo, but the report was false. It said that wild animals had escaped into the streets. Some readers panicked because they believed the report. Later, the newspaper confessed that it had invented the story.",
+"choices": [
+"to say or write what something is like",
+"to admit that you have done something wrong",
+"to provide evidence that helps show something is true",
+"to get away from a place where you are kept",
+"to suddenly become so frightened that you cannot think calmly"
+],
+"answer": "③",
+"solution": "①은 describe, ②는 confess, ④는 escape, ⑤는 panic의 영영풀이이며, 이 단어들은 글에 활용형으로 쓰였다. ③은 ‘뒷받침하다’라는 뜻의 support에 해당하지만, support는 글에 사용되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-80519391a8",
+"typeId": "eng-m3-b09-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 설명과 문장의 빈칸에 공통으로 들어갈 표현을 바르게 연결한 것은?\n\n(A) to invent a story or an explanation\nThe newspaper decided to ________ a story about animals escaping.\n\n(B) to examine something in order to find out more about it\nReaders should ________ the reasons behind a false report.\n\n(C) to happen\nThe events in the false report did not ________.",
+"choices": [
+"(A) make up / (B) look after / (C) take place",
+"(A) look into / (B) make up / (C) pass away",
+"(A) make up / (B) look into / (C) take place",
+"(A) take place / (B) look into / (C) make up",
+"(A) make up / (B) look into / (C) pass away"
+],
+"answer": "③",
+"solution": "이야기나 설명을 ‘지어내다’는 make up, 어떤 일을 ‘조사하다’는 look into로 표현한다. 사건이 ‘일어나다’는 take place이므로 세 조건을 모두 충족하는 것은 ③이다. look after는 ‘돌보다’, pass away는 ‘사망하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d94a579dbf",
+"typeId": "eng-m3-b09-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 문장의 빈칸에 공통으로 들어갈 한 단어를 쓰시오.\n\n[조건]\n• 첫 글자는 s이며, 총 7글자이다.\n• 모든 빈칸에 철자가 같은 기본형을 쓴다.\n\n(1) The verb ________ can mean “to provide evidence that helps show something is true.”\n(2) Before accepting a news story, check whether any facts ________ its claims.\n(3) A shocking headline alone does not ________ the claim that the reported event really happened.",
+"selfGrade": true,
+"answer": "support",
+"solution": "support는 근거나 증거로 어떤 주장이나 설명을 ‘뒷받침하다’라는 뜻이다. 세 문장 모두 증거가 주장을 뒷받침하는 의미를 요구하며, support는 s로 시작하는 7글자 단어라는 조건도 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-dcd68d2107",
+"typeId": "eng-m3-b09-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓒ에는 문법적으로 가능한 형태이지만 문맥상 잘못 선택된 단어가 쓰였다. 각 단어를 아래 영영풀이에 해당하는 단어로 바꾸어 쓰시오.\n\n[조건]\n• 영영풀이의 단어를 각각 한 번씩 사용한다.\n• 문장에 맞게 모두 과거형으로 쓴다.\n• ⓐ, ⓑ, ⓒ의 순서대로 답한다.\n\n[영영풀이]\n• to cause someone to believe something that is not true\n• to admit that you have done something wrong\n• to say or write what someone or something is like\n\nThe newspaper ⓐinvestigated the supposed escape of wild animals in its article, giving details about their actions. By presenting an invented event as real, it ⓑinformed readers and caused some of them to panic. Later, it ⓒdenied that it had invented the story, openly admitting what it had done.",
+"selfGrade": true,
+"answer": "described, misled, confessed",
+"solution": "ⓐ는 동물들의 행동을 구체적으로 ‘묘사했다’는 문맥이므로 described가 알맞다. ⓑ는 꾸며 낸 사건을 사실처럼 제시해 독자들을 ‘오도했다’는 뜻이므로 mislead의 과거형 misled가 필요하다. ⓒ는 자신들이 한 일을 공개적으로 인정했다는 내용이므로 ‘고백했다’라는 뜻의 confessed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f25f4e0c99",
+"typeId": "eng-m3-b09-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 말하고자 하는 바로 가장 적절한 것은?\n\nWhen you are upset with someone, think about how you begin your sentences. Saying “you” and talking about the other person's mistakes can lead to an argument. Try beginning with “I” and explaining your own feelings instead. This helps you express what is troubling you without blaming the other person.",
+"choices": [
+"다툼을 피하려면 자신의 감정을 숨겨야 한다.",
+"상대방의 잘못을 자세히 설명해야 한다.",
+"상대방을 비난하기보다 자신의 감정을 중심으로 말해야 한다.",
+"화가 났을 때는 상대방의 사과를 먼저 요구해야 한다.",
+"자신의 의견을 전달하려면 같은 말을 반복해야 한다."
+],
+"answer": "③",
+"solution": "글은 상대방의 잘못을 지적하는 대신 ‘I’로 문장을 시작하여 자신의 감정을 설명하라고 조언한다. 따라서 상대방을 비난하기보다 자신의 감정을 중심으로 말해야 한다는 ③이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b0e911c205",
+"typeId": "eng-m3-b09-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 핵심 내용을 제목으로 나타낼 때 가장 적절한 것은?\n\nYou may have something to say, but the other person may be busy. Wanting to hear your story does not always mean having time for it. Before starting a conversation, check whether the person is ready to listen. Choosing a suitable moment can help you communicate better.",
+"choices": [
+"Find the Right Moment to Talk",
+"Keep Your Stories Short",
+"Make More Time for Work",
+"Learn to Enjoy Being Alone",
+"Speak Clearly in Front of Others"
+],
+"answer": "①",
+"solution": "글은 상대방이 이야기를 듣고 싶어 하더라도 시간이 없을 수 있으므로 대화할 적절한 순간을 선택하라고 말한다. 따라서 ‘대화할 알맞은 순간을 찾아라’라는 뜻의 ①이 핵심 내용을 가장 잘 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5c5e7eedc8",
+"typeId": "eng-m3-b09-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글이 주로 다루는 내용은?\n\nPeople may feel uncomfortable when you tell them what to do. If you want someone to do something, pay attention to your words. Expressions with “could” or “please” can make your words sound like a polite request. You can still say what you want while showing respect for the other person's feelings.",
+"choices": [
+"the reasons people forget requests",
+"the importance of following orders",
+"the benefits of expressing anger",
+"the need to agree with your friends",
+"the way to ask for something politely"
+],
+"answer": "⑤",
+"solution": "글은 ‘could’나 ‘please’를 사용하면 상대방의 감정을 배려하면서 원하는 것을 정중하게 요청할 수 있다고 설명한다. 따라서 주제는 정중하게 요청하는 방법인 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8b52c5a460",
+"typeId": "eng-m3-b09-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글 전체를 포괄하는 제목으로 가장 적절한 것은?\n\nAn argument may begin with the way we express a feeling. An “I-message” helps us talk about our feelings instead of the other person's faults. A demand can also make someone feel uncomfortable. Using polite words allows us to turn it into a request. In both cases, we can express what we mean in a different way. Such changes can help prevent communication problems.",
+"choices": [
+"Why We Should Keep Unpleasant Feelings to Ourselves",
+"How Our Choice of Words Can Improve Communication",
+"The Best Way to Explain Other People's Faults",
+"Why Requests Should Always Be Accepted",
+"How to Solve Every Problem with an I-Message"
+],
+"answer": "②",
+"solution": "글은 ‘I-message’로 감정을 표현하는 방법과 명령을 정중한 요청으로 바꾸는 방법을 함께 제시한다. 두 방법을 포괄하는 제목은 말의 선택이 의사소통을 개선할 수 있다는 ②이다. ⑤는 한 가지 방법에만 초점을 맞추고 모든 문제를 해결한다고 과장한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bf0eb2af9b",
+"typeId": "eng-m3-b09-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 중심 생각을 가장 잘 정리한 것은?\n\nCalli wants to speak with her mother while her mother is getting ready for work. Her mother may be interested in what Calli has to say, but she has little time to listen. A polite question alone cannot give her mother more time. Calli needs to consider her mother's situation and choose a moment when she can listen. Successful communication depends on when we speak as well as how we speak.",
+"choices": [
+"대화를 시작하기 전에 이야기의 내용을 간단하게 줄여야 한다.",
+"부모는 자녀가 원할 때 하던 일을 멈추고 이야기를 들어야 한다.",
+"정중한 표현을 사용하면 상대방의 상황과 관계없이 대화할 수 있다.",
+"원활하게 소통하려면 말하는 방식과 대화 시점을 함께 고려해야 한다.",
+"상대방이 바쁘다는 것은 대화 내용에 관심이 없다는 뜻이다."
+],
+"answer": "④",
+"solution": "글은 정중한 질문만으로는 바쁜 상대방에게 들을 시간이 생기지 않는다고 설명한다. 따라서 표현 방식뿐 아니라 상대방이 들을 수 있는 시점도 고려해야 한다는 ④가 중심 생각이다. ⑤는 관심이 있어도 시간이 부족할 수 있다는 글의 내용과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8c875f2f96",
+"typeId": "eng-m3-b09-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 요약한 문장으로 가장 적절한 것은?\n\nAn “I-message” changes the focus of a conversation from another person's faults to the speaker's feelings. However, expressing feelings this way does not mean that the listener has time to listen. The speaker also needs to choose a suitable moment. Similarly, when asking someone to do something, the speaker can use polite expressions so that the words sound like a request rather than an order. The feeling or request can still be expressed; what changes is the way or the time it is expressed. These small choices can help solve communication problems and may even prevent them.",
+"choices": [
+"Communication can improve when speakers express their feelings politely, because polite words make it unnecessary to check whether listeners have time.",
+"Communication can improve when speakers choose a suitable moment and make their requests less clear to avoid making listeners uncomfortable.",
+"Communication can improve when speakers explain others' faults through I-messages and use polite requests at a suitable moment.",
+"Communication can improve when speakers adjust their words and timing so that listeners will always agree with their feelings and requests.",
+"Communication can improve when speakers express their feelings without blame, consider listeners' time, and make requests politely."
+],
+"answer": "⑤",
+"solution": "글의 핵심은 비난 대신 자신의 감정을 표현하고, 상대방이 들을 수 있는 시간을 선택하며, 정중하게 요청하는 것이므로 세 요소를 정확하게 통합한 ⑤가 정답이다. ①은 적절한 시점을 확인할 필요를 부정하고, ②는 요청을 불분명하게 하라는 내용을 덧붙인다. ③은 ‘I-message’의 초점을 상대방의 잘못으로 잘못 설명하며, ④는 원활한 소통이 상대방의 동의를 항상 보장한다고 과장한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-228bbdf90c",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"I left home early to arrive at school on time.",
+"She reads every day in order to improve her English.",
+"We opened the window so that we could get some fresh air.",
+"He saved money in order to he could buy a bicycle.",
+"They spoke quietly so that they would not wake the baby."
+],
+"answer": "④",
+"solution": "in order to 뒤에는 동사원형이 와야 하므로 주어와 동사가 있는 he could buy를 바로 쓸 수 없다. ④는 in order to buy 또는 in order that he could buy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-48cb248dc6",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장끼리 짝지어진 것은?\n\nⓐ Feel sleepy, I went to bed early.\nⓑ Walking to school, I met my friend.\nⓒ Not knowing the answer, she raised her hand to ask a question.\nⓓ Heard a strange sound, he stopped reading.\nⓔ Being hungry, we bought some bread.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "주절의 주어가 직접 하는 동작을 나타내는 분사구문에는 현재분사를 쓴다. 따라서 ⓐ의 Feel은 Feeling으로, ⓓ의 Heard는 Hearing으로 고쳐야 한다. ⓑ, ⓒ, ⓔ는 각각 현재분사, 부정 분사구문, Being을 사용한 올바른 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c137b10de7",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 주어진 문장을 분사구문으로 바꾼 것으로 어법상 어색한 것은?",
+"choices": [
+"Because she didn't recognize the voice, she asked who was speaking.\n→ Not recognizing the voice, she asked who was speaking.",
+"While I was waiting for the bus, I checked the time.\n→ Waiting for the bus, I checked the time.",
+"Although he felt nervous, he spoke clearly.\n→ Although feeling nervous, he spoke clearly.",
+"Because the letter was written in French, it was difficult for me to understand.\n→ Written in French, the letter was difficult for me to understand.",
+"Because she was praised by her teacher, she smiled happily.\n→ Praising by her teacher, she smiled happily."
+],
+"answer": "⑤",
+"solution": "⑤의 주어 she는 칭찬하는 사람이 아니라 칭찬받는 사람이므로 수동의 의미를 나타내야 한다. Praising by her teacher를 Being praised by her teacher 또는 Praised by her teacher로 고쳐야 한다. ③처럼 의미를 분명히 하기 위해 분사구문 앞에 접속사를 남길 수도 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-83b658bebd",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞은 문장끼리 짝지어진 것은?\n\nⓐ She moved closer so that she could hear the speaker better.\nⓑ He turned off the television in order to concentrate on his homework.\nⓒ I wrote down the address so that not forget it.\nⓓ We left quietly in order that we would not disturb anyone.\nⓔ She took a taxi in order to she could get there before noon.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓐ, ⓑ, ⓔ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "①",
+"solution": "목적을 나타내는 so that과 in order that 뒤에는 주어와 동사가 있는 절이 오고, in order to 뒤에는 동사원형이 온다. ⓒ는 so that I would not forget it 등으로 고쳐야 한다. ⓔ는 in order to get 또는 in order that she could get으로 고쳐야 하므로, 올바른 문장은 ⓐ, ⓑ, ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8202a2f873",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장들의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\n• (A)[Not knowing / Knowing not] which bus to take, I asked for help.\n• (B)[Surprising / Surprised] by the sudden noise, she dropped her pen.\n• He put on his glasses so that he (C)[could read / to read] the small letters.\n\n선지는 (A)－(B)－(C)의 순서이다.",
+"choices": [
+"Not knowing－Surprising－could read",
+"Knowing not－Surprised－could read",
+"Not knowing－Surprised－to read",
+"Knowing not－Surprising－to read",
+"Not knowing－Surprised－could read"
+],
+"answer": "⑤",
+"solution": "분사구문의 부정은 분사 앞에 not을 놓으므로 (A)는 Not knowing이다. 소음 때문에 놀란 상태를 나타내므로 (B)는 Surprised이며, 목적의 so that 뒤에는 절이 와야 하므로 (C)는 could read이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-601a2a128f",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 주어진 문장의 의미를 유지하여 바꿔 쓴 것이다. 어법상 알맞은 것끼리 짝지어진 것은?\n\nⓐ Because she had not been invited to the meeting, she stayed at home.\n→ Not having been invited to the meeting, she stayed at home.\n\nⓑ Because I didn't know his number, I couldn't call him.\n→ Not knew his number, I couldn't call him.\n\nⓒ He stood on a chair so that he could reach the top shelf.\n→ He stood on a chair in order that reach the top shelf.\n\nⓓ Although she was disappointed with the result, she thanked everyone.\n→ Although disappointed with the result, she thanked everyone.\n\nⓔ Because he had left his key at school, he couldn't open the door.\n→ Having left his key at school, he couldn't open the door.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ"
+],
+"answer": "③",
+"solution": "ⓐ는 주절보다 앞선 수동의 일을 부정하므로 Not having been invited가 알맞고, ⓔ도 앞선 일을 Having left로 올바르게 나타냈다. ⓓ는 Although being disappointed에서 being을 생략한 형태이다. ⓑ의 Not knew는 Not knowing으로, ⓒ의 in order that reach는 in order to reach 또는 in order that he could reach로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-378e473194",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 문장들의 밑줄 친 부분을 고치려고 한다. 각 문장 아래의 의미 조건을 충족하면서 어법상 알맞게 고친 것을 바르게 연결한 것은?\n\n(A) ⓐ[Having not been told] about the change, I went to the wrong room.\n조건: 변경 사항을 전달받지 못한 일이 잘못된 방에 간 일보다 먼저 일어났으며, 부정어는 분사구문 맨 앞에 둔다.\n\n(B) ⓑ[Writing] in simple English, the notice was easy for the students to understand.\n조건: 안내문은 쉬운 영어로 쓰인 대상이다.\n\n(C) She spoke slowly ⓒ[in order to everyone could understand her].\n조건: 모든 사람이 그녀의 말을 이해할 수 있도록 천천히 말했다는 목적을 나타낸다.\n\n선지는 ⓐ－ⓑ－ⓒ의 순서이다.",
+"choices": [
+"Not having told－Written－so that everyone could understand her",
+"Not having been told－Written－so that everyone could understand her",
+"Not being told－Writing－in order that everyone could understand her",
+"Not having been told－Written－in order to everyone understand her",
+"Not having been told－Having written－so that everyone could understand her"
+],
+"answer": "②",
+"solution": "(A)는 주절보다 앞선 수동의 일을 나타내면서 부정어를 맨 앞에 두어야 하므로 Not having been told가 알맞다. (B)는 안내문이 쓰인 대상이므로 Written을 써야 한다. (C)는 목적을 나타내는 so that 뒤에 everyone could understand her라는 절을 연결해야 하므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4640072906",
+"typeId": "eng-m3-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 문장을 하나의 문장으로 바꾸려고 한다. <조건>을 모두 만족하면서 어법상 알맞은 것은?\n\nBecause I had not been given enough time, I could not finish the report.\nI asked for another day so that I could check all the facts.\n\n<조건>\n• 첫 문장의 이유를 나타내는 절을 완료형 분사구문으로 바꿀 것.\n• 시간을 충분히 받지 못했다는 부정과 수동의 의미를 유지할 것.\n• 두 문장의 주절을 and로 연결할 것.\n• 둘째 문장의 목적을 나타내는 절을 in order to를 사용한 구로 바꿀 것.",
+"choices": [
+"Not having given enough time, I could not finish the report, and I asked for another day in order to check all the facts.",
+"Not being given enough time, I could not finish the report, and I asked for another day in order to check all the facts.",
+"Not having been given enough time, I could not finish the report, and I asked for another day in order to I could check all the facts.",
+"Not having been given enough time, I could not finish the report, and I asked for another day in order to check all the facts.",
+"Having been given enough time, I could not finish the report, and I asked for another day in order to check all the facts."
+],
+"answer": "④",
+"solution": "과거완료 수동태의 부정인 had not been given을 완료형 분사구문으로 바꾸면 Not having been given이 된다. 목적절은 주절과 주어가 같으므로 in order to check all the facts로 바꿀 수 있다. ①은 수동의 의미가 없고, ②는 완료형 조건을 충족하지 않으며, ③은 in order to 뒤에 절을 잘못 연결했고, ⑤는 부정의 의미가 빠져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5118b214d6",
+"typeId": "eng-m3-b09-u5m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 중심 내용으로 가장 알맞은 것은?\n\nJane: Dad, I have an important role in our school musical, but I often make mistakes during practice.\nDad: Your singing is good, Jane. Keep practicing. Each mistake can teach you something.\nJane: So making a mistake doesn't mean I can't do well?\nDad: Of course not. You can improve by learning from it.",
+"choices": [
+"실수를 통해 배우며 꾸준히 연습하는 것이 중요하다.",
+"자신에게 맞는 배역을 선택해야 공연을 즐길 수 있다.",
+"다른 사람의 노래를 듣는 것이 가장 좋은 연습 방법이다.",
+"중요한 배역을 맡으면 실수를 해서는 안 된다.",
+"학교 공연에서는 노래보다 연기가 더 중요하다."
+],
+"answer": "①",
+"solution": "아버지는 Jane에게 실수도 배움의 기회가 될 수 있으므로 계속 연습하라고 말한다. 따라서 대화의 중심 내용은 실수를 통해 배우며 꾸준히 연습하는 것이 중요하다는 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7f0a86504c",
+"typeId": "eng-m3-b09-u5m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nPuneet did not think that spending like a rich person meant buying expensive things. Instead, he used his money for things that could earn him more money later. He believed this was what his father had wanted to teach him.",
+"choices": [
+"The Joy of Buying Expensive Gifts",
+"Why Rich People Need Bigger Houses",
+"The Best Way to Share Family Wealth",
+"Using Money to Make It Grow",
+"Living Happily Without Any Money"
+],
+"answer": "④",
+"solution": "글은 Puneet이 비싼 물건을 사는 대신 더 많은 돈을 벌어 줄 수 있는 것에 돈을 썼다는 내용이다. 따라서 돈을 불리는 사용법을 나타내는 ④가 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-be877201d7",
+"typeId": "eng-m3-b09-u5m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nPuneet found meaning in his father's advice beyond the words themselves. A home in each city meant a friend's home where he could stay. A comfortable night's sleep came from working hard during the day. Hunger made an ordinary meal enjoyable. Spending like a wealthy person meant using money to earn more, rather than buying costly goods. In this way, Puneet put his father's advice into practice.",
+"choices": [
+"재산을 늘리려면 친구의 경제적 도움을 먼저 구해야 한다.",
+"조언에 담긴 뜻을 이해하여 생활 속에서 실천해야 한다.",
+"행복한 삶을 위해서는 일을 줄이고 충분히 쉬어야 한다.",
+"부모의 조언은 시대에 맞게 모두 새로운 내용으로 바꿔야 한다.",
+"생활이 어려울수록 좋은 음식과 편안한 잠자리를 우선해야 한다."
+],
+"answer": "②",
+"solution": "친구의 집에 머무는 일, 열심히 일한 뒤 편히 자는 일, 돈을 불리는 데 지출하는 일은 모두 아버지의 조언에 담긴 뜻을 실천한 사례이다. 따라서 개별 사례를 포괄하는 요지는 ②이다. ①은 친구 관계를 경제적 도움을 얻는 수단으로 한정하므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-055a098ce2",
+"typeId": "eng-m3-b09-u5m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nPuru believed he was doing exactly what his father had told him to do. He built houses in different cities and paid people to care for them while he was away. He also bought whatever he wanted because his father had told him to spend like a wealthy person. Yet he lost all his money. When he learned that Puneet had become even wealthier, he visited his brother to understand the difference.\n\n→ Although Puru thought he was following his father's advice, he became (A)________ and went to Puneet for an (B)________.\n\n※ 각 선지는 (A) — (B)의 순서임.",
+"choices": [
+"wealthy — explanation",
+"poor — invitation",
+"confident — apology",
+"wealthy — invitation",
+"poor — explanation"
+],
+"answer": "⑤",
+"solution": "Puru는 아버지의 조언을 따랐다고 생각했지만 결국 돈을 모두 잃었으므로 (A)에는 poor가 들어간다. 그는 자신과 동생의 결과가 다른 이유를 알고자 방문했으므로 (B)에는 explanation이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cc5b7cce52",
+"typeId": "eng-m3-b09-u5m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글 전체를 가장 잘 나타내는 제목은?\n\nBefore their father died, Puru and Puneet received advice about homes, sleep, food, and money. Later, Puru owned houses in different cities and spent freely on things he wanted, but he ended up with nothing. Puneet understood the same advice in another way. He stayed with friends, rested well after hard work, enjoyed simple food when hungry, and used money to earn more. After hearing his brother's explanation, Puru recognized his mistake and began a new life.",
+"choices": [
+"A Father's Wealth Divided Unequally",
+"Why Owning Houses Always Brings Wealth",
+"The Same Advice, Different Ways of Living",
+"Two Brothers Who Gave Up Their Father's Advice",
+"A New Life Made Possible by Expensive Things"
+],
+"answer": "③",
+"solution": "글은 같은 조언을 받은 두 형제가 이를 다르게 이해하고 실천하여 서로 다른 결과를 얻은 과정을 보여 준다. 따라서 조언의 공통점과 생활 방식의 차이를 함께 드러내는 ③이 가장 적절하다. 재산을 불공평하게 나누었다거나 두 형제가 모두 조언을 버렸다는 내용은 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m2s0t0",
+"custom": true
 }
 ]

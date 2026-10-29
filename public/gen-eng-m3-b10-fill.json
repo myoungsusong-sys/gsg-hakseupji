@@ -4585,5 +4585,317 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b10-u4m4s0t0",
 "custom": true
+},
+{
+"id": "fill-55ce179f32",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nCinder Edna worked all day for her stepmother and stepsisters. She later bought a nice dress with the money she earned herself. By the time she bought the dress, she ______ enough money.",
+"choices": [
+"earns",
+"has earned",
+"had earned",
+"was earning",
+"will earn"
+],
+"answer": "③",
+"solution": "드레스를 산 시점보다 돈을 번 일이 먼저 일어났다. 과거의 특정 시점보다 앞선 일을 나타내므로 과거완료인 had earned가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-45c45a47e8",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A) he가 가리키는 인물은?\n\nA fairy tried to help Prince Cinders, but she turned him into a huge monkey. When he met the princess, his appearance frightened her. Fortunately, he became a boy again at midnight. The princess believed that (A) he had protected her from the monkey.",
+"choices": [
+"Prince Cinders",
+"the fairy",
+"the princess",
+"one of his brothers",
+"the princess's brother"
+],
+"answer": "①",
+"solution": "자정에 원래 모습으로 돌아온 뒤 공주가 자신을 구했다고 오해한 인물은 Prince Cinders이다. 따라서 (A) he가 가리키는 인물은 Prince Cinders이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-780078a351",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 빈칸에 들어갈 문장들의 순서로 가장 적절한 것은?\n\nYura: It was interesting to compare the movie Aladdin with the original book.\n\n<빈칸>\n\nTony: I agree. Both of them have their own advantages.\n\nⓐ Yura: I preferred the book because it helped me understand the characters better.\nⓑ Tony: Then which one did you like better?\nⓒ Tony: I see. I preferred the movie because its story was easier to understand.\nⓓ Yura: That makes sense. Each version has a different strength.",
+"choices": [
+"ⓑ - ⓐ - ⓒ - ⓓ",
+"ⓑ - ⓒ - ⓐ - ⓓ",
+"ⓐ - ⓑ - ⓓ - ⓒ",
+"ⓒ - ⓐ - ⓑ - ⓓ",
+"ⓓ - ⓑ - ⓐ - ⓒ"
+],
+"answer": "①",
+"solution": "먼저 Tony가 영화와 책 중 어느 것을 더 좋아했는지 묻고, Yura가 책을 선택하며 이유를 말해야 한다. 이어 Tony가 자신의 의견을 제시하고 Yura가 두 작품의 장점을 인정하므로 ⓑ-ⓐ-ⓒ-ⓓ가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-76e27351f0",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "주어진 문장이 들어갈 위치로 가장 적절한 곳은?\n\nThe two characters, however, take different paths to the party.\n\nLike Cinderella, Cinder Edna works all day for her stepmother and stepsisters. ( ① ) Cinder Edna earns money and buys herself a nice dress. ( ② ) Next, she travels to the party by bus. ( ③ ) At the party, she meets Prince Rupert and falls in love with him. ( ④ ) They later live happily in a small house outside the palace. ( ⑤ )",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "①",
+"solution": "주어진 문장은 두 인물의 공통점에서 서로 다른 행동으로 내용이 전환됨을 나타낸다. Cinderella와의 공통점이 제시된 뒤 Cinder Edna만의 행동이 시작되는 ①에 들어가는 것이 가장 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-55d9f8cc01",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 요약문의 빈칸 (A)~(C)에 들어갈 말을 바르게 짝지은 것은?\n\nCinder Edna and Prince Cinders both present new versions of familiar fairy tales. Cinder Edna prepares for the party (A)________ by earning money and buying a dress. Prince Cinders, (B)________, receives help from a fairy, but the magic turns him into a monkey. After he becomes a boy again, the princess mistakenly believes that he saved (C)________ from the monkey.",
+"choices": [
+"herself - however - her",
+"himself - therefore - him",
+"herself - for example - him",
+"her - however - herself",
+"herself - because - her"
+],
+"answer": "①",
+"solution": "Cinder Edna가 스스로 준비하므로 재귀대명사 herself가 필요하다. 마법의 도움을 받는 Prince Cinders의 상황은 앞 내용과 대조되므로 however가 알맞고, 공주를 구했다고 믿는 것이므로 her가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3ebf8fa247",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 시간 관계가 분명히 드러나도록, 괄호 안의 말을 모두 사용하여 빈칸에 12단어의 영어 문장을 쓰시오.\n\nPrince Cinders changed back into a boy at midnight. After that, the princess misunderstood what had happened.\n\n→ ________________________________.\n\n(the princess / believe / that / Prince Cinders / save / her / from / the monkey)\n\n※ 필요하면 단어의 형태를 바꿀 것.",
+"selfGrade": true,
+"answer": "The princess believed that Prince Cinders had saved her from the monkey.",
+"solution": "공주가 믿은 것은 과거이고, Prince Cinders가 자신을 구했다고 생각한 일은 그보다 앞선 일이다. 따라서 believe는 believed로, save는 과거완료 had saved로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-aed883af8c",
+"typeId": "eng-m3-b10-u3m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 조건에 맞게 한 문장의 영어로 쓰시오.\n\n놀부는 흥부가 스스로 돈을 벌고 자립할 수 있도록 자신이 흥부를 돕지 않았다고 말했다.\n\n조건\n- said that과 so that을 모두 사용할 것\n- ‘스스로’는 on his own으로 표현할 것\n- 놀부가 말한 시점보다 돕지 않은 일이 먼저 일어났음을 나타낼 것",
+"selfGrade": true,
+"answer": "Nolbu said that he had not helped Heungbu so that Heungbu could make money on his own and become independent.",
+"solution": "놀부가 말하기 전에 흥부를 돕지 않았으므로 had not helped를 사용한다. 목적은 so that 뒤에 주어와 could를 써서 나타내며, 돈을 스스로 버는 것은 make money on his own으로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4245d6727a",
+"typeId": "eng-m3-b10-u7m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 밑줄 친 표현과 바꾸어 쓸 수 있는 것은?\n\nThe people hoped to get back the money taken from them.",
+"choices": [
+"recover",
+"calculate",
+"divide",
+"hide",
+"follow"
+],
+"answer": "①",
+"solution": "get back은 이 문장에서 빼앗긴 돈을 ‘되찾다’라는 뜻이다. recover가 ‘잃었던 것을 되찾다’라는 의미이므로 바꾸어 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-cee52a3297",
+"typeId": "eng-m3-b10-u7m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말이 바르게 연결된 것은?\n\nA fact that explains why something happens is a(n) (A). Something used to deal with a problem is a(n) (B). After the graph made the numbers clear, Pascal realized the (C) of graphs.",
+"choices": [
+"reason ― solution ― importance",
+"reason ― importance ― solution",
+"solution ― reason ― difficulty",
+"solution ― importance ― reason",
+"importance ― reason ― solution"
+],
+"answer": "①",
+"solution": "어떤 일이 일어난 까닭을 설명하는 것은 reason이고, 문제를 해결하는 방법은 solution이다. Pascal은 그래프가 수치를 이해하는 데 도움이 된다는 것을 알고 그래프의 importance를 깨달았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2dc5abf6aa",
+"typeId": "eng-m3-b10-u7m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 표현의 쓰임으로 알맞지 않은 것은?",
+"choices": [
+"The visitors entered the tower one by one.",
+"She stopped for a moment and looked at the graph again.",
+"We got off the train at the next station.",
+"He finally got back the bag that he had lost.",
+"During the debate, I ran for the weaker team because I agreed with them."
+],
+"answer": "⑤",
+"solution": "run for는 선거에서 ‘~에 출마하다’라는 뜻이므로 어떤 편을 지지한다는 문맥에 사용할 수 없다. 이 문장에서는 ‘~의 편이다’라는 뜻의 be on the side of를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5ad11dfa1a",
+"typeId": "eng-m3-b10-u7m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 단어와 영영풀이의 연결 중 알맞지 않은 것은?",
+"choices": [
+"adventure: an unusual and exciting experience",
+"greedy: wanting more than one needs or deserves",
+"save: to keep someone from danger or harm",
+"tax: to give part of one's income directly to poor people",
+"wave: to move one's hand to greet or signal to someone"
+],
+"answer": "④",
+"solution": "tax는 동사로 ‘정부가 사람이나 재산 등에 세금을 부과하다’라는 뜻이다. 소득의 일부를 가난한 사람들에게 직접 나누어 준다는 ④의 풀이는 share의 의미에 더 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8d746068df",
+"typeId": "eng-m3-b10-u7m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 주어진 단어가 문맥과 어법에 맞게 쓰인 문장을 모두 고른 것은?\n\nㄱ. His greed made him want more than his fair share.\nㄴ. Everyone knew the dangerous of standing near the soldiers.\nㄷ. Pascal understood the important of showing information clearly.\nㄹ. Traveling to an unfamiliar place can be a great adventure.\nㅁ. The teacher asked the class to repetition the key sentence.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ의 greed와 ㄹ의 adventure는 모두 문장에서 명사로 바르게 쓰였다. ㄴ은 dangerous를 danger로, ㄷ은 important를 importance로 고쳐야 한다. ㅁ에서는 동사가 필요하므로 repetition이 아니라 repeat를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2282886364",
+"typeId": "eng-m3-b10-u7m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "괄호 안의 단어를 문맥과 어법에 맞는 형태로 바꾸어 빈칸을 완성하시오. 답은 빈칸 순서대로 쓰시오.\n\n(1) It is too __________ to stand near the soldiers. (danger)\n(2) Pascal realized the __________ of graphs. (important)\n(3) The king wanted more money because of his __________. (greedy)\n(4) Pascal thought it was a great __________. (adventurous)",
+"selfGrade": true,
+"answer": "dangerous, importance, greed, adventure",
+"solution": "(1)은 보어로 형용사 dangerous가 필요하고, 나머지 빈칸에는 모두 명사가 필요하다. important의 명사는 importance, greedy의 명사는 greed, adventurous의 명사는 adventure이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-38386ca912",
+"typeId": "eng-m3-b10-u5m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 짝지어진 표현의 의미 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"chance : opportunity",
+"regret : feel sorry",
+"influence : affect",
+"hard : difficult",
+"remember : forget"
+],
+"answer": "⑤",
+"solution": "①~④는 서로 뜻이 같거나 비슷한 표현끼리 연결되어 있다. ⑤의 remember는 ‘기억하다’, forget은 ‘잊다’이므로 서로 반대되는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-92e6acc858",
+"typeId": "eng-m3-b10-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 의사 결정과 친구 관계에 관한 표현이다. 각 문맥에서 따옴표로 표시한 단어의 영영풀이가 알맞지 않은 것은?",
+"choices": [
+"‘regret’ a decision: to feel sorry about a choice you made",
+"‘grab’ a chance: to take an opportunity quickly",
+"find it ‘hard’ to stay in touch: to find it difficult to continue communicating",
+"‘miss’ an old friend: to fail to notice the friend when the friend is nearby",
+"‘disagree’ with an opinion: to think that an opinion is not right"
+],
+"answer": "④",
+"solution": "옛 친구를 miss한다는 것은 그 친구가 곁에 없어 그리움을 느낀다는 뜻이다. ④의 ‘가까이에 있는 친구를 알아차리지 못하다’는 해당 문맥의 의미와 맞지 않는다. 나머지는 각 표현의 문맥상 의미를 바르게 설명한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-99118b6194",
+"typeId": "eng-m3-b10-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문맥에서 ⓐ~ⓓ를 바꾸어 쓸 때, 원래 의미가 유지되는 것만을 모두 고른 것은?\n\n• ⓐa chance to become the team captain\n• ⓑa hard decision to make\n• ⓒregret taking too long to decide\n• ⓓdisagree with a friend's opinion\n\n<보기>\nㄱ. ⓐ chance → opportunity\nㄴ. ⓑ hard → firm\nㄷ. ⓒ regret → feel sorry about\nㄹ. ⓓ disagree → have the same opinion",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "chance는 ‘기회’이므로 opportunity로, regret은 ‘후회하다’이므로 feel sorry about으로 바꾸어 쓸 수 있다. 결정을 수식하는 hard는 ‘어려운’이라는 뜻이므로 ‘단단한’을 뜻하는 firm은 적절하지 않다. disagree는 의견이 다르다는 뜻이므로 have the same opinion과 의미가 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a00d4f081e",
+"typeId": "eng-m3-b10-u5m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 조건을 모두 만족하도록 빈칸에 들어갈 단어를 쓰시오.\n\n• <보기>에서 각 빈칸에 알맞은 단어를 골라 반드시 형태를 바꿀 것.\n• 같은 단어를 두 번 사용하지 않을 것.\n• ㉠~㉣의 답을 순서대로 쓸 것.\n\n<보기>\nimportant / decide / different / danger / nature\n\n㉠ the act of choosing what to do → a __________\n㉡ able or likely to cause harm → __________\n㉢ the quality of being valuable or having a strong effect → __________\n㉣ a way in which two people or things are not the same → a __________",
+"selfGrade": true,
+"answer": "decision, dangerous, importance, difference",
+"solution": "㉠은 선택하는 행위를 뜻하므로 decide의 명사형 decision이고, ㉡은 해를 끼칠 수 있다는 뜻이므로 danger의 형용사형 dangerous이다. ㉢은 중요하거나 가치 있는 성질을 뜻하므로 important의 명사형 importance이다. ㉣은 둘 사이의 다른 점을 뜻하므로 different의 명사형 difference이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e355b6a9bd",
+"typeId": "eng-m3-b10-u5m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 조건을 모두 만족하는 단어를 <보기>에서 골라 ㉠~㉣의 순서대로 쓰시오. 단어의 형태를 바꾸지 말고, 각 단어는 한 번만 사용하시오.\n\n<보기>\naffect / chance / decision / forget / hard / miss / regret / useless\n\n㉠ influence와 ‘영향을 미치다’라는 뜻을 공유하는 동사이다.\n㉡ useful과 품사가 같고 의미는 반대이다.\n㉢ ‘기억하다’의 반대말이 아니며, 떨어져 있는 친구를 그리워하는 마음을 나타내는 동사이다.\n㉣ ‘선택한 결과’를 가리키는 명사가 아니며, 이미 내린 선택을 안타깝게 여기는 마음을 나타내는 동사이다.",
+"selfGrade": true,
+"answer": "affect, useless, miss, regret",
+"solution": "㉠은 influence의 유의어 affect이고, ㉡은 useful과 반대 의미인 형용사 useless이다. ㉢은 ‘잊다’라는 뜻의 forget이 아니라 ‘그리워하다’라는 뜻의 miss이다. ㉣은 선택한 결과를 뜻하는 decision이 아니라 그 선택을 ‘후회하다’라는 뜻의 regret이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m0s0t0",
+"custom": true
 }
 ]

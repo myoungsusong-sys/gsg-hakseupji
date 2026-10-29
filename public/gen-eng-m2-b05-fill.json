@@ -444,5 +444,126 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b05-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-f1d5a70fdf",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화를 읽고 Jake에 관해 알 수 있는 것은?\n\nHana: Ms. Kwon’s class calendar is finally here. There are lots of activities.\nJake: Yes. I’m most excited about “Manito.”\nHana: Why do you like it?\nJake: Because it can help me become closer to my new classmates.\nHana: I like “Funny Socks Day” the most.\nJake: Then let’s wear cute animal socks together that day.\nHana: Great idea!",
+"choices": [
+"He made the class calendar himself.",
+"He wants to become closer to his new classmates.",
+"His favorite activity is Funny Socks Day.",
+"He does not like wearing animal socks.",
+"He thinks there are too few class activities."
+],
+"answer": "②",
+"solution": "Jake는 ‘Manito’ 활동을 통해 새 학급 친구들과 더 가까워질 수 있다고 말한다. 따라서 Jake가 새 친구들과 친해지고 싶어 한다는 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-07c7965cb0",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nB: Are you interested in the Green Farm Club, Heeju?\nG: Not really. Growing vegetables is not for me.\nB: Which club are you interested in, then?\nG: The Future Coders Club. I’m good with computers, and I’d like to improve my coding skills.\nB: When does the club meet?\nG: Every Wednesday. I’m really looking forward to its first meeting.",
+"choices": [
+"Heeju enjoys growing vegetables.",
+"Heeju has difficulty using computers.",
+"Heeju wants to develop her coding skills.",
+"The Future Coders Club meets on Fridays.",
+"Heeju is worried about the first club meeting."
+],
+"answer": "③",
+"solution": "Heeju는 컴퓨터를 잘 다루며 코딩 실력을 향상하고 싶어서 Future Coders Club에 관심을 보인다. 따라서 대화와 일치하는 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8fb536d284",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nStarting with a simple subject can make a conversation easier. You may mention the weather or ask about hobbies. After that, the conversation may naturally move to other enjoyable subjects. While the other person is speaking, look at the person, nod sometimes, and use short responses such as “Right” or “I see.”",
+"choices": [
+"What subjects can we use to begin a conversation?",
+"What can small talk lead to?",
+"How can we show that we are listening?",
+"What short responses can a listener use?",
+"Why do some students have different opinions?"
+],
+"answer": "⑤",
+"solution": "글에는 대화를 시작할 때의 소재, small talk의 효과, 적극적으로 듣는 방법이 제시되어 있다. 사람들이 서로 다른 의견을 갖는 이유는 설명하지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9d90e3e2c7",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하는 것만을 <보기>에서 모두 고른 것은?\n\nBody language can make what you say clearer and more powerful. For instance, you may lift your shoulders and hands when you mean that you do not know something. Facial expressions, such as raising your eyebrows or sticking out your lower lip, are also useful. However, gestures should be used in a suitable way.\n\n<보기>\nㄱ. 몸짓은 말의 의미를 더욱 분명하게 할 수 있다.\nㄴ. 모른다는 뜻을 나타낼 때 어깨와 손을 움직일 수 있다.\nㄷ. 표정은 메시지를 전달하는 데 도움이 되지 않는다.\nㄹ. 어떤 상황에서든 같은 몸짓을 사용하는 것이 좋다.",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "글에 따르면 적절한 몸짓은 메시지를 더 강하고 분명하게 하며, 모른다는 뜻으로 어깨와 손을 올릴 수 있다. 표정도 유용하고 몸짓은 상황에 알맞게 사용해야 하므로 ㄷ과 ㄹ은 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cae5f84a0c",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 통해 추론할 수 있는 것으로 가장 적절한 것은?\n\nDo not be afraid to share something about yourself. You might talk about an experience from your childhood, such as not being a fast runner when you were ten. If you open up first, the person talking with you may also begin to share personal experiences. As a result, your conversation can become more meaningful.",
+"choices": [
+"어린 시절의 경험은 다른 사람에게 숨겨야 한다.",
+"달리기를 잘하는 사람만 의미 있는 대화를 할 수 있다.",
+"자신의 경험을 먼저 나누면 상대방도 마음을 열 가능성이 있다.",
+"개인적인 경험을 말하면 대화는 반드시 곧 끝난다.",
+"의미 있는 대화를 위해서는 상대방의 의견에 반대해야 한다."
+],
+"answer": "③",
+"solution": "글은 자신에 관한 경험을 먼저 솔직하게 이야기하면 상대방도 자신의 이야기를 나눌 수 있다고 설명한다. 이러한 상호 개방이 더 의미 있는 대화로 이어지므로 ③이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a0bfa30b83",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 상대방과 의견이 다를 때 해야 할 행동을 우리말로 쓰시오.\n\nPeople do not always think in the same way. Even when you disagree, first recognize the other person’s idea and then explain that your own opinion is different. If you treat the other person’s idea respectfully, the other person will probably treat your idea in the same way.",
+"selfGrade": true,
+"answer": "상대방의 의견을 존중하면서 자신의 다른 의견을 말한다.",
+"solution": "의견이 다르더라도 상대방의 생각을 먼저 인정하고 존중해야 한다. 그 후 자신의 의견이 다르다는 점을 예의 있게 표현해야 하므로 제시된 답이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-590885b7c7",
+"typeId": "eng-m2-b05-u0m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 설명하는 두 행동이 공통적으로 가져올 수 있는 최종 결과를 우리말로 쓰시오.\n\nFirst, share an honest story about yourself so that the other person may also open up. Second, accept that people can have different ideas and respond to those ideas politely. Both actions can change the way people communicate with each other.",
+"selfGrade": true,
+"answer": "서로 존중하며 더 의미 있는 대화를 나눌 수 있다.",
+"solution": "자신을 솔직하게 드러내면 상대방도 마음을 열어 대화가 더 의미 있어질 수 있다. 또한 서로 다른 의견을 존중하면 상대방도 자신을 존중하므로, 두 행동은 존중을 바탕으로 한 의미 있는 대화로 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m4s0t0",
+"custom": true
 }
 ]

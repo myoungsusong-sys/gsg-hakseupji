@@ -2309,5 +2309,293 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-9a14ee45d3",
+"typeId": "eng-h2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe elevator company conducted a survey (A)[to discover / discovering] why its passengers were dissatisfied. The responses showed that the elevator’s slow speed (B)[was / were] the main problem. However, its speed could not (C)[improve / be improved] immediately because of technological limitations.",
+"choices": [
+"to discover ― was ― improve",
+"discovering ― were ― improve",
+"to discover ― was ― be improved",
+"discovering ― was ― be improved",
+"to discover ― were ― be improved"
+],
+"answer": "③",
+"solution": "목적을 나타내므로 (A)에는 to부정사 to discover가 적절하다. 주어 the elevator’s slow speed가 단수이므로 (B)는 was이며, 속도는 ‘개선되는’ 대상이므로 (C)는 수동태 be improved가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fb527c3656",
+"typeId": "eng-h2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nGropius allowed visitors ①to walk freely across the grass. As more people ②followed similar routes, footpaths naturally ③began to appear. He later used these paths ④as an outline for permanent pathways. His unusual method resulted in routes that ⑤was convenient and efficient.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "관계대명사 that의 선행사는 복수 명사 routes이므로 관계절의 동사도 복수형이어야 한다. 따라서 was를 were로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5123da12a8",
+"typeId": "eng-h2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA fast-food company discouraged its customers (A)[from eating / to eat] hamburgers too frequently. This unexpected strategy (B)[gave / giving] the company a positive image. Customers regarded it as a socially (C)[responsible / responsibly] company.",
+"choices": [
+"from eating ― gave ― responsible",
+"from eating ― giving ― responsibly",
+"to eat ― gave ― responsible",
+"to eat ― giving ― responsibly",
+"from eating ― gave ― responsibly"
+],
+"answer": "①",
+"solution": "discourage A from -ing의 구조에 따라 (A)는 from eating이 알맞다. 문장의 서술어 자리에는 과거형 gave가 필요하고, 명사 company를 수식하는 형용사 responsible이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e3a68266b",
+"typeId": "eng-h2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nThe fashion company argued that people should buy fewer clothes and use them for longer periods. Its campaign not only ①raised awareness of the environmental damage caused by fast fashion but also ②increased its sales. Many customers believed that the brand genuinely ③cared about the environment. This led more people ④choose its products, ⑤strengthening the company’s responsible image.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "lead는 ‘누구로 하여금 ~하게 하다’라는 의미로 lead＋목적어＋to부정사의 형태를 취한다. 따라서 choose를 to choose로 고쳐야 한다. ①과 ②는 not only A but also B로 병렬을 이루며, ⑤는 앞 문장의 결과를 나타내는 분사구문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a44d2c22da",
+"typeId": "eng-h2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nGropius had not yet decided how the pathways in the amusement park should be arranged. Inspired by an elderly couple’s grape-picking method, he had grass ⓐplanted in the areas intended for paths and allowed the visitors ⓑchoose their own routes. As they walked across the grass, paths of different widths ⓒwere formed naturally. The following year, he constructed permanent pathways along the routes ⓓthat the visitors had created. This method produced some of the most convenient routes and showed how effectively an architect could solve a problem by ⓔviewing it from an unfamiliar angle. It was an approach ⓕwhat challenged the usual role of an architect.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓕ",
+"ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "allow는 목적어 뒤에 to부정사를 취하므로 ⓑ의 choose는 to choose로 고쳐야 한다. ⓕ의 관계절에는 선행사 an approach를 수식하는 관계대명사 that 또는 which가 필요하므로 what은 쓸 수 없다. ⓐ는 have＋목적어＋과거분사, ⓒ는 수동태, ⓓ는 목적격 관계대명사, ⓔ는 전치사 by의 목적어인 동명사로 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca4c51530e",
+"typeId": "eng-h2-b08-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nEach pixel (A)[emits / is emitted] one of the three primary colors of light. When red and green pixels (B)[place / are placed] next to each other, people perceive (C)[them / themselves] as yellow.",
+"choices": [
+"emits ― place ― them",
+"emits ― are placed ― them",
+"is emitted ― place ― themselves",
+"is emitted ― are placed ― them",
+"emits ― are placed ― themselves"
+],
+"answer": "②",
+"solution": "Each pixel이 빛의 색을 방출하는 주체이므로 능동형 emits가 알맞다. 픽셀은 서로 나란히 놓이는 대상이므로 수동형 are placed를 써야 한다. perceive의 목적어는 red and green pixels를 가리키므로 them이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-896aa53745",
+"typeId": "eng-h2-b08-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSeurat kept (A)[studying / to study] color composition while creating his work. His scientific approach (B)[allowed / was allowed] him to analyze and revise the painting repeatedly. He arranged every dot (C)[purposeful / with purpose].",
+"choices": [
+"studying ― allowed ― with purpose",
+"studying ― was allowed ― purposeful",
+"to study ― allowed ― purposeful",
+"to study ― was allowed ― with purpose",
+"studying ― allowed ― purposeful"
+],
+"answer": "①",
+"solution": "keep은 목적어로 동명사를 취하므로 studying이 알맞다. ‘그의 접근법이 그로 하여금 가능하게 했다’라는 능동 관계이므로 allowed를 써야 한다. arranged를 수식하며 ‘의도를 가지고’라는 뜻을 나타내는 전치사구 with purpose가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dfe4669c6a",
+"typeId": "eng-h2-b08-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nWomen at the Well ⓐwas painted by Paul Signac. In the work, two individuals ⓑare drawing water from a well. Behind them are a lighthouse and boats in the ocean. Upon closer inspection, every object ⓒconsist of small colored dots. It is worth ⓓnoting that Signac placed separate dots of yellow, blue, and green next to each other. Later artists adopted the basic concept of dots and applied ⓔit to their own works.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "주어 every object는 단수이므로 동사도 단수형인 consists가 되어야 한다. 나머지는 수동태, 현재진행형, worth 뒤의 동명사, 단수 명사를 받는 대명사가 각각 올바르게 사용되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f34afd7e3f",
+"typeId": "eng-h2-b08-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn Seurat’s painting, the grass (A)[where / which] the shade falls is painted dark. If viewers inspect the work closely, they notice (B)[that / what] there are no boundary lines around the objects. The different colored dots forming the monkey’s body, when (C)[viewed / viewing] from a distance, blend in the viewer’s eyes to produce brown.",
+"choices": [
+"where ― what ― viewed",
+"where ― that ― viewed",
+"which ― that ― viewing",
+"where ― what ― viewing",
+"which ― what ― viewed"
+],
+"answer": "②",
+"solution": "관계절에서 the grass는 장소를 나타내고 뒤의 문장이 완전하므로 where가 적절하다. notice 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다. 점들은 관찰되는 대상이므로 수동의 의미를 나타내는 viewed를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e77f1b924e",
+"typeId": "eng-h2-b08-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 어색한 표현을 모두 찾아 바르게 고쳐 쓰시오.\n\nSeurat and Signac were influenced by the color theory that a French scientist ⓐhad been developed at the time. The central idea of Pointillism involves ⓑuse separate dots of individual colors. When numerous dots are placed next to each other and then ⓒviewing from a distance, they seem to blend in the viewer’s eyes. This effect enables viewers ⓓto perceive secondary colors. In a part of Seurat’s painting, the combination of different colored dots ⓔare used to produce brown. It is worth ⓕnoting that every dot was arranged with purpose. Later artists adopted the basic concept of dots and applied ⓖthem to their works.",
+"selfGrade": true,
+"answer": "ⓐ had developed, ⓑ using, ⓒ viewed, ⓔ is used, ⓖ it",
+"solution": "과학자가 색채 이론을 발전시킨 주체이므로 ⓐ는 능동형 had developed가 되어야 하며, 전치사 involves 뒤에는 동명사 using이 필요하다. dots는 관찰되는 대상이므로 ⓒ는 viewed가 알맞고, 주어 the combination이 단수이므로 ⓔ는 is used로 고쳐야 한다. ⓖ는 단수 명사 the basic concept를 받으므로 it이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5ceaafead8",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\n쇠라는 하나의 색을 나타내기 위해 서로 다른 색의 점들을 사용했다.\n\n<보기>\nused / to represent a single color / Seurat / dots of different colors\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것.\n• 목적을 나타내는 to부정사를 사용할 것.\n• 문장 끝에 마침표를 쓸 것.",
+"selfGrade": true,
+"answer": "Seurat used dots of different colors to represent a single color.",
+"solution": "주어 Seurat 다음에 동사 used와 목적어 dots of different colors를 배열한다. ‘하나의 색을 나타내기 위해’는 목적을 나타내는 to부정사구 to represent a single color로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4845b88427",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장을 <조건>에 맞게 한 문장으로 연결하시오.\n\nSome areas are painted dark. Shadows fall on these areas.\n\n<조건>\n• Some areas로 시작할 것.\n• 두 번째 문장을 ‘전치사 + 관계대명사’로 시작하는 관계절로 바꿀 것.\n• these areas를 관계대명사로 바꾸고, 나머지 단어는 모두 사용할 것.\n• 관계절은 선행사 바로 뒤에 쓰고 쉼표는 사용하지 말 것.",
+"selfGrade": true,
+"answer": "Some areas on which shadows fall are painted dark.",
+"solution": "두 번째 문장의 these areas는 첫 번째 문장의 Some areas를 가리킨다. fall on의 전치사 on을 관계대명사 앞으로 옮겨 on which shadows fall로 연결한다. 주어의 중심어가 복수인 areas이므로 are를 유지한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-39ba599806",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\n시냐크는 단순히 노란색과 파란색을 섞는 것으로 초록색을 만들지 않았다.\n\n<보기>\nby simply mixing / green / Signac / yellow and blue / did not create\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것.\n• ‘~함으로써’를 나타내는 ‘by + 동명사’를 사용할 것.\n• 문장 끝에 마침표를 쓸 것.",
+"selfGrade": true,
+"answer": "Signac did not create green by simply mixing yellow and blue.",
+"solution": "과거의 부정은 did not 뒤에 동사원형 create를 써서 나타낸다. ‘단순히 노란색과 파란색을 섞는 것으로’는 by simply mixing yellow and blue로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d9ce1f8d6c",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n시냐크가 서로 다른 색의 점들을 나란히 배치했다는 것은 주목할 가치가 있다.\n\n<보기>\nit / be / worth / note / that / Signac / place / dots of different colors / side by side\n\n<조건>\n• 형식주어 It과 명사절 접속사 that을 사용할 것.\n• worth 다음에는 동명사를 사용할 것.\n• ‘주목할 가치가 있다’는 현재시제로, 시냐크의 행동은 과거시제로 쓸 것.\n• 보기의 단어 및 어구를 모두 한 번씩 사용하되 필요하면 형태를 바꿀 것.",
+"selfGrade": true,
+"answer": "It is worth noting that Signac placed dots of different colors side by side.",
+"solution": "It is worth noting that ...에서 It은 형식주어이고 that절은 진주어이다. worth 뒤에는 동명사 noting을 쓰며, 시냐크가 점들을 배치한 행동은 과거이므로 placed로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b51cbfd5b0",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 <보기>를 활용하여 한 문장을 완성하시오.\n\n멀리서 보일 때, 원숭이의 몸에 있는 색깔 있는 점들은 광학적으로 합쳐져 갈색을 만들어 낸다.\n\n<보기>\nwhen / view / from a distance / the colored dots / on the monkey's body / optically merge / produce / brown\n\n<조건>\n• when으로 시작하는 ‘접속사 + 과거분사’ 구문을 사용할 것.\n• 결과를 나타내는 to부정사를 사용할 것.\n• 보기의 단어 및 어구를 모두 한 번씩 사용하되 필요하면 형태를 바꿀 것.\n• 필요한 단어는 추가할 수 있으며, 분사구문 뒤에 쉼표를 쓸 것.",
+"selfGrade": true,
+"answer": "When viewed from a distance, the colored dots on the monkey's body optically merge to produce brown.",
+"solution": "점들은 ‘보이는’ 대상이므로 수동의 의미를 지닌 과거분사 viewed를 사용한다. When they are viewed에서 주어와 be동사를 생략하면 When viewed가 된다. 합쳐진 결과로 갈색을 만들어 낸다는 의미는 to produce brown으로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-467c447a78",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장을 <조건>에 맞게 한 문장으로 연결하시오.\n\nSeurat used dots of several distinct colors in the painting. This adds vibrancy to the work.\n\n<조건>\n• 첫 번째 문장 전체를 선행사로 받는 계속적 용법의 관계대명사를 사용할 것.\n• 두 번째 문장의 This를 관계대명사로 바꾸고 나머지 단어는 그대로 사용할 것.\n• 관계대명사 앞에 쉼표를 쓸 것.",
+"selfGrade": true,
+"answer": "Seurat used dots of several distinct colors in the painting, which adds vibrancy to the work.",
+"solution": "두 번째 문장의 This는 앞 문장에 제시된 사실 전체를 가리킨다. 따라서 쉼표 뒤에 계속적 용법의 which를 사용하여 연결한다. which가 앞 문장 전체를 받으므로 단수 동사 adds를 유지한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-45abbe94ac",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n다빈치가 자신이 유명한 이유가 된 그림들을 창조한 것은 과학과 예술의 결합을 통해서였다.\n\n<보기>\nit / be / through / the combination of science and art / that / da Vinci / create / the paintings / for / which / he / be / famous\n\n<조건>\n• ‘It ~ that ...’ 강조구문으로 ‘과학과 예술의 결합을 통해서’를 강조할 것.\n• ‘그 자신이 유명한 이유가 된 그림들’은 ‘the paintings + 전치사 + 관계대명사’의 형태로 표현할 것.\n• 그림을 창조한 일과 강조구문의 be동사는 과거시제로, 유명하다는 사실은 현재시제로 쓸 것.\n• 보기의 단어 및 어구를 모두 한 번씩 사용하되 필요하면 형태를 바꿀 것.\n• 쉼표는 사용하지 말 것.",
+"selfGrade": true,
+"answer": "It was through the combination of science and art that da Vinci created the paintings for which he is famous.",
+"solution": "강조할 부사구 through the combination of science and art를 It was와 that 사이에 둔다. 그림을 창조한 일은 과거이므로 created를 쓴다. be famous for의 for를 관계대명사 앞으로 옮기면 the paintings for which he is famous가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4ae3dff8bc",
+"typeId": "eng-h2-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\n우리가 그림의 옆쪽에 있을 때조차도, 우리는 정면을 향하고 있는 눈이 우리를 보고 있다는 인식을 갖는다.\n\n<보기>\neven when we are / the eyes / that / we have the perception / are looking at us / which face straight ahead / to one side of the painting\n\n<조건>\n• Even when으로 문장을 시작할 것.\n• perception의 내용을 설명하는 동격의 접속사를 사용할 것.\n• ‘정면을 향하고 있는’은 the eyes를 설명하는 계속적 용법의 관계절로 표현할 것.\n• 모든 어구를 한 번씩 사용하고, 필요한 쉼표와 마침표를 넣을 것.\n• 문장 첫 글자만 필요에 따라 대문자로 바꿀 것.",
+"selfGrade": true,
+"answer": "Even when we are to one side of the painting, we have the perception that the eyes, which face straight ahead, are looking at us.",
+"solution": "Even when절을 문장 앞에 놓고 뒤에 주절을 연결한다. perception 뒤의 that절은 어떤 인식인지를 구체적으로 설명하는 동격절이다. which face straight ahead는 the eyes를 부가적으로 설명하므로 앞뒤에 쉼표를 쓰며, 동격절의 주어 the eyes에 맞춰 are looking을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m6s0t0",
+"custom": true
 }
 ]

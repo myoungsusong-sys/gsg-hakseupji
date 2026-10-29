@@ -3259,5 +3259,183 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b04-u6m6s0t0",
 "custom": true
+},
+{
+"id": "fill-ad1d5757fa",
+"typeId": "eng-h1-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"Octopuses can protect themselves by using objects around them.",
+"An octopus may use stones to block the entrance to its home.",
+"Scientists study octopuses to learn more about their abilities.",
+"Aquariums give octopuses toys to keep them busily.",
+"An octopus can change its appearance very quickly."
+],
+"answer": "④",
+"solution": "keep은 목적어의 상태를 나타내는 목적격 보어로 형용사를 취한다. 따라서 부사 busily를 형용사 busy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-894f1c4d44",
+"typeId": "eng-h1-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nOctopuses use objects around them to protect (A)[them / themselves]. Scientists believe (B)[that / what] this behavior shows their intelligence.",
+"choices": [
+"them – that",
+"themselves – what",
+"themselves – that",
+"them – what",
+"themselves – which"
+],
+"answer": "③",
+"solution": "보호하는 주체와 보호받는 대상이 모두 문어이므로 (A)에는 재귀대명사 themselves가 알맞다. (B) 뒤에는 주어, 동사, 목적어를 갖춘 완전한 절이 이어지므로 접속사 that을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3f5b0990fe",
+"typeId": "eng-h1-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(C)에 들어갈 말로 바르게 연결된 것은?\n\nAmong the similarities between humans and octopuses, one of the most surprising (A)[is / are] intelligence. An octopus facing a hunter has to determine (B)[which / that] pattern to use. Its ability to make such a choice suggests that it can use knowledge to survive. Meanwhile, an octopus (C)[presenting / presented] with a challenging puzzle may change color repeatedly.",
+"choices": [
+"is – that – presented",
+"are – which – presenting",
+"is – which – presenting",
+"are – that – presented",
+"is – which – presented"
+],
+"answer": "⑤",
+"solution": "(A)의 주어는 one이며 뒤에 similarities가 생략되어 있으므로 단수 동사 is가 알맞다. (B)는 ‘어떤 무늬를 사용할지’를 뜻하는 「의문사＋명사＋to부정사」 구성이므로 which가 필요하다. (C)는 문어가 퍼즐을 제시받는 수동 관계이므로 과거분사 presented가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8795f62b4a",
+"typeId": "eng-h1-b04-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 표시된 ⓐ~ⓕ 중 어법상 어색한 것은 네 개이다. 어색한 부분을 각각 한 단어로 고쳐, 기호 순서대로 고친 단어만 쉼표로 구분하여 쓰시오. 단어를 추가하거나 삭제하지 마시오.\n\nThe coconut shells ⓐcarried by some octopuses served as shelters. Moving with the shells made these animals more ⓑexposing to predators, but they accepted the risk to protect ⓒthem later. Scientists who ⓓobserving this behavior argued that it provided evidence of tool use. This example shows ⓔthat carrying objects for future protection can be useful, even when doing so ⓕrequire an immediate risk.",
+"selfGrade": true,
+"answer": "exposed, themselves, observed, requires",
+"solution": "ⓑ는 문어가 포식자에게 노출되는 수동 관계이므로 exposed가 알맞고, ⓒ는 보호하는 주체와 대상이 같으므로 themselves로 고친다. ⓓ는 관계절의 동사 자리이므로 과거형 observed가 필요하다. ⓕ의 주어 doing so는 동명사구이므로 단수 동사 requires를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b8e7d84bba",
+"typeId": "eng-h1-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThe Foldscope (A)[developed / was developed] by Manu Prakash and Jim Cybulski. Its parts (B)[cost / costs] less than one dollar. The two inventors wanted (C)[make / to make] science available to everyone.",
+"choices": [
+"developed — cost — to make",
+"was developed — costs — to make",
+"was developed — cost — to make",
+"developed — costs — make",
+"was developed — cost — make"
+],
+"answer": "③",
+"solution": "Foldscope는 개발된 대상이므로 (A)에는 수동태 was developed가 알맞다. (B)는 복수 주어 Its parts에 맞는 cost가 적절하다. want는 to부정사를 목적어로 취하므로 (C)는 to make이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bf6cda628f",
+"typeId": "eng-h1-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nPrakash discovered a microscope (A)[that / what] was not being used for malaria testing. There (B)[was / were] several reasons for this. Even workers with training felt (C)[nervous / nervously] when they used such a delicate and costly instrument.",
+"choices": [
+"that — were — nervous",
+"what — were — nervous",
+"that — was — nervously",
+"what — was — nervous",
+"that — were — nervously"
+],
+"answer": "①",
+"solution": "(A)는 선행사 a microscope를 수식하는 관계절의 주어 자리이므로 that이 적절하다. (B)는 뒤의 복수 명사 several reasons에 맞추어 were를 쓴다. (C)는 감각동사 felt의 주격보어이므로 형용사 nervous가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1b67085684",
+"typeId": "eng-h1-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nA boy in Malawi remembered (A)[seeing / to see] a windmill in a book. He gathered waste materials (B)[build / to build] one himself. The windmill he completed helped the villagers (C)[growing / grow] food again.",
+"choices": [
+"seeing — build — grow",
+"to see — to build — grow",
+"seeing — to build — growing",
+"to see — build — growing",
+"seeing — to build — grow"
+],
+"answer": "⑤",
+"solution": "과거에 풍차를 보았던 일을 기억한다는 뜻이므로 (A)는 seeing이다. (B)는 재료를 모은 목적을 나타내는 to부정사 to build가 적절하다. help의 목적격보어로 동사원형을 쓸 수 있으므로 (C)는 grow이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1ba3a8a926",
+"typeId": "eng-h1-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nIf the microscope (A)[had not been invented / were not invented], scientists might not have discovered bacteria. Yet the price of microscopes has limited access to them in some regions. It was a low-cost paper microscope (B)[what / that] Prakash and Cybulski offered as an answer to this problem. Their invention, which required less than a dollar in parts, (C)[provided / providing] powerful magnification.",
+"choices": [
+"were not invented — that — provided",
+"had not been invented — that — provided",
+"had not been invented — what — provided",
+"were not invented — what — providing",
+"had not been invented — that — providing"
+],
+"answer": "②",
+"solution": "과거 사실과 반대되는 상황을 가정하고 주절에 might have p.p.가 쓰였으므로 (A)는 had not been invented이다. (B)는 a low-cost paper microscope를 강조하는 It was ~ that 강조 구문의 that이다. (C)는 주어 Their invention의 서술어 자리이므로 과거형 provided가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-417a2c01d6",
+"typeId": "eng-h1-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 ⓐ~ⓔ로 표시한 부분 중 어법상 어색한 것을 모두 고른 것은?\n\nA worldwide volunteer community ⓐ[was formed] to make artificial hands and arms at low cost. Its website allows users ⓑ[to obtain design codes and creating their own artificial hands] with 3D printers. Resources and training ⓒ[are also provided] by the community. The efforts of scientists to extend the benefits of this technology to animals ⓓ[has led] to the design of artificial legs. These developments show how technology can help people who ⓔ[cannot afford to buy] traditional artificial limbs.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓓ",
+"ⓐ, ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓑ는 allows users 뒤에서 obtain과 create가 and로 병렬 연결되어야 하므로 creating을 create로 고쳐야 한다. ⓓ의 주어는 복수 명사 The efforts이며 of scientists와 to부정사구는 이를 수식하므로 has led를 have led로 고쳐야 한다. ⓐ와 ⓒ의 수동태, ⓔ의 afford to buy는 모두 어법상 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9043417f81",
+"typeId": "eng-h1-b04-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 ⓐ~ⓔ의 대괄호 안 표현 중 어법상 틀린 세 개를 찾아 각각 바르게 고치시오. 대괄호 밖의 표현은 바꾸지 말고, 원래의 의미를 유지할 것. 답은 기호 없이 ⓐ~ⓔ의 순서에 따라 고친 표현만 쉼표로 구분하여 쓰시오.\n\nThe Foldscope has helped identify fake antimalarial drugs. When ⓐ[crushing] into powder and examined through a Foldscope, genuine drugs show uniform particles. Scientific papers based on data collected with the Foldscope ⓑ[have been published]. If Prakash and Cybulski ⓒ[gave up] their idea before developing the Foldscope, these achievements could not have occurred. Instruments like this paper microscope, which brings science within more people's reach, ⓓ[is becoming] increasingly important. Prakash's aim has been ⓔ[to make] science accessible to everyone.",
+"selfGrade": true,
+"answer": "crushed, had given up, are becoming",
+"solution": "ⓐ는 주절의 주어 genuine drugs가 분쇄되는 대상이므로 수동의 의미를 나타내는 crushed로 고쳐야 한다. ⓒ는 could not have occurred와 함께 과거 사실의 반대를 가정하므로 had given up이 적절하다. ⓓ의 주어는 관계절 안의 단수 명사 microscope가 아니라 주절의 복수 명사 Instruments이므로 are becoming으로 고쳐야 한다. ⓑ는 복수 주어에 맞는 현재완료 수동태이며, ⓔ는 목표의 내용을 설명하는 to부정사 보어이므로 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u7m1s0t0",
+"custom": true
 }
 ]
