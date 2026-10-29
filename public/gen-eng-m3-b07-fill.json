@@ -1597,5 +1597,164 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u4m3s0t0",
 "custom": true
+},
+{
+"id": "fill-df4c133c9e",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 표현의 우리말 뜻이 알맞지 않은 것은?",
+"choices": [
+"inspiration: 영감",
+"column: 기둥",
+"peel: 껍질",
+"capture: 담아내다",
+"obvious: 부서지기 쉬운"
+],
+"answer": "⑤",
+"solution": "obvious는 ‘분명한, 명백한’이라는 뜻이다. ‘부서지기 쉬운, 섬세한’에 해당하는 단어는 delicate이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2282ce46e9",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 배열할 때, 일곱 번째에 오는 단어는?\n\n그 지붕은 내용물을 보호할 만큼 충분히 튼튼하다.\n\n<보기>\nits / enough / roof / protect / The / strong / contents / is / to",
+"choices": [
+"roof",
+"strong",
+"enough",
+"protect",
+"contents"
+],
+"answer": "④",
+"solution": "올바른 문장은 ‘The roof is strong enough to protect its contents.’이다. 일곱 번째 단어는 protect이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-93195678ba",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\n그 달걀은 깨지기 쉽지만 내용물을 보호할 만큼 충분히 튼튼하다.\n\nThe egg is delicate, yet (A)________ (B)________ protect its contents.",
+"choices": [
+"enough strong - to",
+"strong enough - to",
+"strongly enough - for",
+"too strong - to",
+"so strong - that"
+],
+"answer": "②",
+"solution": "‘~할 만큼 충분히 …한’은 ‘형용사＋enough＋to부정사’로 표현한다. 따라서 strong enough to가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-518da87fd4",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 건축물 또는 건축가와 실제 영감의 원천이 바르게 연결되지 않은 것은?",
+"choices": [
+"Antoni Gaudi - the shape of trees",
+"Jørn Utzon - the peels of an orange",
+"Zaha Hadid - the curved lines from nature",
+"the Sydney Opera House - the waves in the ocean",
+"Dongdaemun Design Plaza - the curved lines from nature"
+],
+"answer": "④",
+"solution": "많은 사람들은 시드니 오페라 하우스가 바다의 파도에서 영감을 받았다고 생각하지만, 실제 영감은 오렌지 껍질에서 왔다. 따라서 ④의 연결이 바르지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5cb0b85847",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 의미가 같도록 한 문장으로 연결한 것으로 가장 알맞은 것은?\n\nZaha Hadid took curved lines from nature. Her purpose was for city people to enjoy the lines.",
+"choices": [
+"Zaha Hadid took curved lines from nature so that city people enjoy them.",
+"Zaha Hadid took curved lines from nature so that city people could enjoying them.",
+"Zaha Hadid took curved lines from nature so that city people could enjoy them.",
+"Zaha Hadid took curved lines from nature because city people could enjoy them.",
+"Zaha Hadid took curved lines from nature enough for city people enjoy them."
+],
+"answer": "③",
+"solution": "목적을 나타낼 때 ‘so that＋주어＋could＋동사원형’을 사용할 수 있다. 과거 시제의 took과 호응하고 could 뒤에 동사원형 enjoy가 온 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0e8a835fe2",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장에서 밑줄 친 (A), (B)가 가리키는 것으로 가장 알맞은 것은?\n\nAn egg-shaped building can be found in London. (A)Such a building shows that nature can inspire architecture. Zaha Hadid also took curved lines from nature and used (B)them for city people.\n\n(A) — (B)의 순서로 고르시오.",
+"choices": [
+"an egg-shaped building - curved lines",
+"an egg-shaped building - city people",
+"the natural world - curved lines",
+"the contents of an egg - nature",
+"a building in Spain - architects"
+],
+"answer": "①",
+"solution": "Such a building은 바로 앞에 나온 ‘달걀 모양의 건물’을 가리킨다. them은 복수 명사인 curved lines를 대신한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-63c2f8bf3f",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Nature gives many artists ideas and inspire them.",
+"The egg is enough strong to protect its contents.",
+"The columns inside the church looks like trees.",
+"Many people thinks the building looks like a giant spaceship.",
+"The curved lines were taken from nature so that city people could enjoy them."
+],
+"answer": "⑤",
+"solution": "⑤는 수동태와 ‘so that＋주어＋could＋동사원형’이 모두 바르게 쓰였다. ①은 inspires, ②는 strong enough, ③은 look, ④는 think로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4dc295ce01",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 각 문장을 괄호 안의 표현을 사용하여 지시대로 바꾸시오.\n\n(a) Zaha Hadid used curved lines in the building. City people could enjoy them.\n→ 두 문장을 so that을 사용하여 한 문장으로 연결할 것.\n\n(b) I am not an architect, so I cannot design a nature-inspired building.\n→ If로 시작하고 were와 could를 사용하여 가정법 문장으로 바꿀 것.",
+"selfGrade": true,
+"answer": "Zaha Hadid used curved lines in the building so that city people could enjoy them. / If I were an architect, I could design a nature-inspired building.",
+"solution": "(a)는 목적을 나타내는 so that 뒤에 ‘주어＋could＋동사원형’을 쓴다. (b)는 현재 사실의 반대를 가정하므로 ‘If＋주어＋were, 주어＋could＋동사원형’의 형태를 사용한다. 두 문장 모두 동사 형태와 대명사 them에 유의해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-05bb30d94c",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에는 어법상 잘못된 곳이 세 군데 있다. 세 곳을 모두 고쳐 문장 전체를 다시 쓰시오.\n\nThe Sagrada Familia is one of the most famous church in the world, and its tall columns looks like tree.",
+"selfGrade": true,
+"answer": "The Sagrada Familia is one of the most famous churches in the world, and its tall columns look like trees.",
+"solution": "‘one of the＋최상급＋복수 명사’이므로 church를 churches로 고친다. 주어 its tall columns가 복수이므로 looks는 look이 되어야 한다. 여러 기둥이 나무들과 닮았다는 의미이므로 tree도 trees로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
 }
 ]

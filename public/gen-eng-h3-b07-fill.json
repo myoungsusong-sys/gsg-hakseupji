@@ -1,0 +1,167 @@
+[
+{
+"id": "fill-48e8a1496a",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA smartphone may send its user a reminder to move after the user has remained ________ for a certain period.",
+"choices": [
+"inactive",
+"energetic",
+"careful",
+"visible",
+"uninterrupted"
+],
+"answer": "①",
+"solution": "스마트폰은 사용자가 일정 시간 동안 움직이지 않았을 때 활동을 권하는 알림을 보낸다. 따라서 ‘활동하지 않는’이라는 뜻의 inactive가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2f02026fc6",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA nudge ________ leads people toward a desirable choice while allowing them to choose other options.",
+"choices": [
+"secretly",
+"gently",
+"violently",
+"accidentally",
+"completely"
+],
+"answer": "②",
+"solution": "넛지는 다른 선택을 금지하지 않으면서 바람직한 행동으로 부드럽게 유도하는 개입이다. 따라서 gently가 문맥상 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-34542f32dd",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nIn a hidden-information pattern, an unsubscribe link may be printed in tiny gray letters so that it is nearly ________.",
+"choices": [
+"invisible",
+"expensive",
+"automatic",
+"harmful",
+"available"
+],
+"answer": "①",
+"solution": "작고 흐린 글씨로 표시된 구독 취소 링크는 사용자가 알아보기 어렵다. 따라서 ‘거의 보이지 않는’이라는 의미의 invisible이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-61de3c3ee9",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nArtificial scarcity presents products or offers as extremely (A)________. This pressure tends to (B)________ consumers to make quick purchasing decisions.",
+"choices": [
+"limited – stimulate",
+"abundant – stimulate",
+"limited – prohibit",
+"ordinary – delay",
+"abundant – discourage"
+],
+"answer": "①",
+"solution": "인위적 희소성은 상품의 수량이나 이용 가능 시간 등이 제한된 것처럼 제시하는 방식이다. 이러한 압박은 소비자의 빠른 구매를 촉진하므로 limited와 stimulate의 연결이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f1a033738f",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nCompanies claim that automatic payment after a free trial lets customers use a service (A)________. However, because customers are not (B)________ before being charged, they may receive an (C)________ bill.",
+"choices": [
+"temporarily – interrupted – expected",
+"uninterruptedly – warned – unexpected",
+"automatically – protected – inexpensive",
+"uninterruptedly – charged – predictable",
+"temporarily – warned – unavoidable"
+],
+"answer": "②",
+"solution": "회사는 자동 결제가 서비스를 중단 없이 이용하게 해 준다고 주장한다. 그러나 결제 전 경고가 없으므로 이용자는 예상하지 못한 청구를 받을 수 있다. 따라서 uninterruptedly, warned, unexpected가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-35705f8a43",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nThe painted crosswalks appear to be (A)________ to approaching motorists. This visual effect makes drivers become more (B)________, thereby improving pedestrian (C)________.",
+"choices": [
+"roadblocks – cautious – safety",
+"shortcuts – careless – safety",
+"roadblocks – impatient – risk",
+"signals – careless – convenience",
+"shortcuts – cautious – risk"
+],
+"answer": "①",
+"solution": "3D 횡단보도의 선은 운전자에게 도로를 막는 장애물처럼 보인다. 이 효과로 운전자는 더 조심하게 되고 보행자의 안전은 높아진다. 따라서 roadblocks, cautious, safety가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a77aa58bd4",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nAs drivers approach the dangerous curve, the spaces between the painted lines gradually (A)________. This creates the impression that their cars are (B)________, so they apply the brakes. The design consequently led to a (C)________ in crashes.",
+"choices": [
+"widen – slowing down – surge",
+"narrow – speeding up – reduction",
+"narrow – slowing down – reduction",
+"widen – speeding up – reduction",
+"narrow – speeding up – surge"
+],
+"answer": "②",
+"solution": "곡선 구간에 가까워질수록 선 사이의 간격은 좁아진다. 운전자는 속도가 빨라지는 듯한 착각을 느껴 제동하고, 그 결과 사고가 감소한다. 따라서 narrow, speeding up, reduction이 올바른 연결이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9e8b5e0df2",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 문장의 빈칸 (A)~(D)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nUnlike a ban, a nudge (A)________ the freedom to select other options. Visual nudges may cause drivers to (B)________ even when no real obstacle exists. By contrast, dark patterns can make important options (C)________ because a company's interests do not always (D)________ those of its customers.",
+"choices": [
+"restricts – speed up – noticeable – differ from",
+"preserves – slow down – inconspicuous – coincide with",
+"eliminates – slow down – conspicuous – coincide with",
+"preserves – speed up – inconspicuous – differ from",
+"restricts – slow down – conspicuous – correspond with"
+],
+"answer": "②",
+"solution": "넛지는 다른 선택의 자유를 보존하며, 시각적 넛지는 운전자의 감속을 유도할 수 있다. 다크 패턴에서는 중요한 선택 사항이 눈에 잘 띄지 않게 제시된다. 또한 회사의 이익은 고객의 이익과 항상 일치하지 않으므로 preserves, slow down, inconspicuous, coincide with가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a0b8a0ce33",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 (A)~(E)는 모두 문맥상 부적절하다. 각 단어를 문맥에 맞게 고쳐 순서대로 쓰시오.\n\nUnlike a ban, a nudge (A)removes people's alternative choices. Artificial scarcity tends to (B)delay purchasing decisions by putting consumers under pressure. On the road near a dangerous curve, the spaces between painted lines become (C)wider, creating an illusion that a vehicle is (D)slowing down. This encourages drivers to brake and ultimately produces a (E)surge in crashes.",
+"selfGrade": true,
+"answer": "preserves, accelerate, narrower, speeding up, reduction",
+"solution": "넛지는 대안적 선택을 보존하고, 인위적 희소성은 구매 결정을 빠르게 한다. 도로의 선 간격은 점점 좁아져 운전자가 속도가 빨라진다고 느끼게 한다. 그 결과 제동이 유도되어 사고가 감소하므로 제시된 순서대로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+}
+]

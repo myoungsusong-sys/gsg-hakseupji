@@ -1222,5 +1222,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u3m4s0t0",
 "custom": true
+},
+{
+"id": "fill-abadca5d56",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 제목을 완성하도록 빈칸에 들어갈 말을 지문에서 찾아 두 단어로 쓰시오. (각 단어의 첫 철자는 대문자로 쓸 것)\n\nRichard noticed that lions stayed away when he walked around the cattle enclosure with a flashlight. Using this observation, he installed lights that flashed on and off around the enclosure. These moving lights kept his family’s cattle safe without harming the lions.\n\nThe Power of _____________ _____________",
+"selfGrade": true,
+"answer": "Moving Lights",
+"solution": "사자가 다가오지 않게 한 핵심 수단은 움직이는 불빛이다. 지문의 표현인 moving lights를 제목 형식에 맞게 첫 철자를 대문자로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7f0979ecfb",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 제목을 완성하도록 빈칸에 들어갈 말을 지문에서 찾아 두 단어로 쓰시오. (각 단어의 첫 철자는 대문자로 쓸 것)\n\nIn Laguna, dolphins drive groups of mullets toward the coast, and fishers cast their nets at the right moment. The fishers catch more fish, while the dolphins eat mullets escaping from the nets. This win-win partnership has continued for generations.\n\nA _____________ _____________ Between Dolphins and Fishers",
+"selfGrade": true,
+"answer": "Win-Win Partnership",
+"solution": "어부와 돌고래가 모두 이익을 얻는 관계이므로 글의 중심 표현은 win-win partnership이다. 제목에 들어가므로 두 단어의 첫 철자를 대문자로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-55e812db07",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nKilling coyotes does not necessarily reduce their population. It can break the social order of a coyote pack and allow more coyotes to breed. It may also lead to an excessive number of rodents and other small prey.",
+"choices": [
+"The Benefits of Raising Wild Animals",
+"The Risk of Destructive Control",
+"The History of Urban National Parks",
+"The Value of Farming with Animals",
+"The Migration of Small Prey"
+],
+"answer": "②",
+"solution": "글은 코요테를 죽이는 방식이 개체 수 증가나 생태계 문제를 일으킬 수 있음을 설명한다. 따라서 파괴적인 통제의 위험성을 나타낸 ②가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a4f9ece70e",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목을 완성할 때 빈칸에 들어갈 말로 가장 적절한 것은?\n\nFor more than 130 years, dolphins in Laguna have helped local fishers catch mullets. The dolphins benefit by eating fish that try to escape from the nets, and those taking part in this fishing are more likely to live longer.\n\nLaguna’s Long-Lasting Cooperation: Benefits for _____________ and _____________",
+"choices": [
+"Tourists — Residents",
+"Farmers — Cattle",
+"Fishers — Dolphins",
+"Coyotes — Rodents",
+"Lions — Neighbors"
+],
+"answer": "③",
+"solution": "글에서 협력으로 더 많은 물고기를 잡는 쪽은 fishers이고, 먹이와 생존상의 이익을 얻는 쪽은 dolphins이다. 따라서 두 주체를 올바르게 연결한 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-024b669ffb",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목을 완성할 때 빈칸에 들어갈 말로 가장 적절한 것은?\n\nRichard carefully watched how lions reacted to light. He then made bulbs around the cattle enclosure flicker at different times. His keen observation of animal behavior produced a creative approach that protected livestock without killing lions.\n\nFrom Keen _____________ to a Creative _____________",
+"choices": [
+"Behavior — Light",
+"Observation — Approach",
+"Enclosure — Animal",
+"Livestock — Neighbor",
+"Protection — Problem"
+],
+"answer": "②",
+"solution": "Richard의 세심한 관찰이 창의적인 대응 방식으로 이어졌다는 내용이다. 지문의 핵심 표현 keen observation과 creative approach를 연결한 ②가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c95480cbad",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 제목을 완성하도록 빈칸에 들어갈 말을 지문에서 찾아 두 단어로 쓰시오. (각 단어의 첫 철자는 대문자로 쓸 것)\n\nWild animals sometimes damage crops, property, or agricultural fields. Simply treating them as threats, however, can cause unintended consequences. Human safety and animal well-being should be considered together, so a balanced perspective is needed for peaceful coexistence.\n\nA _____________ _____________ for Living with Wild Animals",
+"selfGrade": true,
+"answer": "Balanced Perspective",
+"solution": "글은 인간의 안전과 동물의 복지를 함께 고려해야 한다고 주장한다. 이를 요약하는 지문의 표현은 balanced perspective이므로 첫 철자를 대문자로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6e1b26746a",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 제목을 완성하도록 빈칸에 들어갈 말을 지문에서 찾아 네 단어로 쓰시오. (각 단어의 첫 철자는 대문자로 쓸 것)\n\nA dominant pair normally limits breeding within a coyote pack. When people repeatedly kill coyotes, this social structure may be disrupted. More animals may then breed, resulting in increased populations rather than the reduction people expected.\n\nHow Destructive Control Affects _____________ _____________ and Produces _____________ _____________",
+"selfGrade": true,
+"answer": "Social Structure Increased Populations",
+"solution": "파괴적인 통제는 무리의 social structure를 무너뜨릴 수 있다. 그 결과 의도와 달리 increased populations가 나타날 수 있으므로 두 표현을 순서대로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0f5384e6ca",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목을 완성할 때 빈칸에 들어갈 말로 가장 적절한 것은?\n\nFishers in Laguna do not throw their nets at just any moment. They watch the dolphins and wait for a movement called a deep dive. When the dolphins make this movement and drive mullets toward the surface, the fishers cast their nets.\n\nA _____________ _____________: The Sign for Fishers to _____________ _____________",
+"choices": [
+"Deep Dive — Cast Nets",
+"Large Group — Catch Dolphins",
+"Wild Animal — Leave Laguna",
+"Long Study — Drive Mullets",
+"Fishing Net — Approach Shore"
+],
+"answer": "①",
+"solution": "어부들이 그물을 던지는 시점을 알려 주는 돌고래의 행동은 deep dive이다. 그 행동을 확인한 뒤 어부들이 cast their nets하므로 ①이 글의 인과관계를 정확히 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ade1015ab7",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 제목을 완성하도록 빈칸에 들어갈 말을 지문에서 찾아 네 단어로 쓰시오. (각 단어의 첫 철자는 대문자로 쓸 것)\n\nConflicts with wild animals cannot always be solved by removing them. People need a proper understanding of animal behavior and each species’ role in its natural habitat. Recognizing that humans and animals share the planet can lead to balance and harmony among living species.\n\nUnderstanding _____________ and the _____________ _____________: A Path to _____________",
+"selfGrade": true,
+"answer": "Behavior Natural Habitat Harmony",
+"solution": "글은 동물의 behavior와 natural habitat에서의 역할을 이해해야 한다고 강조한다. 이러한 이해가 궁극적으로 이끄는 상태는 harmony이므로 세 표현을 제목의 순서에 맞게 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
 }
 ]

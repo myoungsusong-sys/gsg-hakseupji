@@ -4754,5 +4754,566 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-alg-u1m0s2t3",
 "custom": true
+},
+{
+"id": "fill-bd16b44232",
+"typeId": "exam-alg-u1m0s6t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$0\\le x<2\\pi$일 때, 방정식 $2\\sin x-1=0$의 모든 해의 합을 구하시오.",
+"choices": [
+"$\\frac{\\pi}{2}$",
+"$\\frac{2\\pi}{3}$",
+"$\\pi$",
+"$\\frac{4\\pi}{3}$",
+"$\\frac{3\\pi}{2}$"
+],
+"answer": "③",
+"solution": "$\\sin x=\\frac12$이므로 주어진 범위에서 $x=\\frac{\\pi}{6},\\frac{5\\pi}{6}$이다. 따라서 모든 해의 합은 $\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s6t3",
+"custom": true
+},
+{
+"id": "fill-49e5bc0351",
+"typeId": "exam-alg-u1m0s6t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$0\\le x<\\pi$일 때, 방정식 $\\cos\\left(2x-\\frac{\\pi}{3}\\right)=0$의 모든 해의 합을 구하시오.",
+"choices": [
+"$\\frac{2\\pi}{3}$",
+"$\\frac{5\\pi}{6}$",
+"$\\pi$",
+"$\\frac{7\\pi}{6}$",
+"$\\frac{4\\pi}{3}$"
+],
+"answer": "⑤",
+"solution": "$2x-\\frac{\\pi}{3}=\\frac{\\pi}{2}+n\\pi$이므로 $x=\\frac{5\\pi}{12}+\\frac{n\\pi}{2}$이다. 주어진 범위의 해는 $\\frac{5\\pi}{12},\\frac{11\\pi}{12}$이므로 그 합은 $\\frac{4\\pi}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s6t3",
+"custom": true
+},
+{
+"id": "fill-31e2402ee3",
+"typeId": "exam-alg-u1m0s6t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$0\\le x<2\\pi$일 때, 부등식 $2\\cos x\\ge\\sqrt3$을 만족시키는 $x$의 범위를 구하시오.",
+"choices": [
+"$0\\le x\\le\\frac{\\pi}{6}$",
+"$0\\le x\\le\\frac{\\pi}{6}$ 또는 $\\frac{11\\pi}{6}\\le x<2\\pi$",
+"$\\frac{\\pi}{6}\\le x\\le\\frac{11\\pi}{6}$",
+"$\\frac{\\pi}{3}\\le x\\le\\frac{5\\pi}{3}$",
+"$0\\le x\\le\\frac{\\pi}{3}$ 또는 $\\frac{5\\pi}{3}\\le x<2\\pi$"
+],
+"answer": "②",
+"solution": "부등식은 $\\cos x\\ge\\frac{\\sqrt3}{2}$와 같다. 단위원에서 코사인 값이 $\\frac{\\sqrt3}{2}$ 이상인 범위를 찾으면 $0\\le x\\le\\frac{\\pi}{6}$ 또는 $\\frac{11\\pi}{6}\\le x<2\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s6t3",
+"custom": true
+},
+{
+"id": "fill-496887b3b9",
+"typeId": "exam-alg-u1m0s6t3",
+"kind": "객관식",
+"diff": 3,
+"body": "$0\\le x<2\\pi$일 때, 방정식 $2\\sin^2x-3\\sin x+1=0$의 모든 해의 합을 구하시오.",
+"choices": [
+"$\\pi$",
+"$\\frac{4\\pi}{3}$",
+"$\\frac{3\\pi}{2}$",
+"$\\frac{5\\pi}{3}$",
+"$2\\pi$"
+],
+"answer": "③",
+"solution": "주어진 방정식은 $(2\\sin x-1)(\\sin x-1)=0$으로 인수분해된다. 따라서 해는 $x=\\frac{\\pi}{6},\\frac{\\pi}{2},\\frac{5\\pi}{6}$이고, 그 합은 $\\frac{3\\pi}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s6t3",
+"custom": true
+},
+{
+"id": "fill-d31a0dfa7f",
+"typeId": "exam-alg-u1m0s6t3",
+"kind": "객관식",
+"diff": 3,
+"body": "$0\\le x<\\pi$일 때, 방정식 $\\tan\\left(2x-\\frac{\\pi}{6}\\right)=\\frac{1}{\\sqrt3}$의 모든 해의 합을 구하시오.",
+"choices": [
+"$\\frac{\\pi}{2}$",
+"$\\frac{2\\pi}{3}$",
+"$\\frac{5\\pi}{6}$",
+"$\\pi$",
+"$\\frac{7\\pi}{6}$"
+],
+"answer": "③",
+"solution": "$2x-\\frac{\\pi}{6}=\\frac{\\pi}{6}+n\\pi$이므로 $x=\\frac{\\pi}{6}+\\frac{n\\pi}{2}$이다. 주어진 범위의 해는 $\\frac{\\pi}{6},\\frac{2\\pi}{3}$이므로 그 합은 $\\frac{5\\pi}{6}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s6t3",
+"custom": true
+},
+{
+"id": "fill-3737cf3f14",
+"typeId": "exam-alg-u1m0s6t3",
+"kind": "객관식",
+"diff": 4,
+"body": "$0\\le x<2\\pi$일 때, 방정식 $\\cos 2x+\\sin x=0$의 모든 해의 합을 구하시오.",
+"choices": [
+"$\\frac{5\\pi}{2}$",
+"$3\\pi$",
+"$\\frac{7\\pi}{2}$",
+"$4\\pi$",
+"$\\frac{9\\pi}{2}$"
+],
+"answer": "③",
+"solution": "$\\cos 2x=1-2\\sin^2x$를 대입하면 $2\\sin^2x-\\sin x-1=0$이다. 이를 인수분해하면 $(2\\sin x+1)(\\sin x-1)=0$이므로 해는 $\\frac{\\pi}{2},\\frac{7\\pi}{6},\\frac{11\\pi}{6}$이다. 따라서 모든 해의 합은 $\\frac{7\\pi}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s6t3",
+"custom": true
+},
+{
+"id": "fill-1adf0cd043",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "함수 $y=3^{x-1}+b$의 그래프가 점 $(2,7)$을 지날 때, 이 그래프와 $y$축이 만나는 점의 $y$좌표는? (단, $b$는 상수이다.)",
+"choices": [
+"$\\frac{10}{3}$",
+"$\\frac{11}{3}$",
+"$4$",
+"$\\frac{13}{3}$",
+"$5$"
+],
+"answer": "④",
+"solution": "점 $(2,7)$을 지나므로 $7=3+b$에서 $b=4$이다. 따라서 $x=0$일 때 $y=3^{-1}+4=\\frac{13}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-594dc818c5",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "두 함수 $y=2^x$, $y=2^{-x}$의 그래프가 직선 $y=8$과 만나는 점을 각각 $A$, $B$라 하자. 선분 $AB$의 길이는?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$6$",
+"$8$"
+],
+"answer": "④",
+"solution": "$2^x=8$에서 $x=3$이고, $2^{-x}=8$에서 $x=-3$이다. 따라서 $A(3,8)$, $B(-3,8)$이므로 선분 $AB$의 길이는 $6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-8e8d324313",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 전체의 집합에서 정의된 함수 $y=9^x-6\\cdot3^x+11$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$2$",
+"solution": "$t=3^x$로 놓으면 $t>0$이고, $y=t^2-6t+11=(t-3)^2+2$이다. $t=3$은 가능한 값이므로 함수의 최솟값은 $2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-6ce50bccd0",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "두 함수 $f(x)=3^x+1$, $g(x)=\\log_3(x-1)$의 그래프가 직선 $y=-x+5$와 만나는 점을 각각 $P$, $Q$라 하자. 선분 $PQ$의 길이는?",
+"choices": [
+"$2\\sqrt{2}$",
+"$3\\sqrt{2}$",
+"$4\\sqrt{2}$",
+"$5\\sqrt{2}$",
+"$6\\sqrt{2}$"
+],
+"answer": "②",
+"solution": "$f(1)=4$이므로 $P=(1,4)$이며, 증가함수 $f(x)$와 감소하는 직선의 교점은 하나뿐이다. 두 함수는 서로 역함수이고 직선 $y=-x+5$는 직선 $y=x$에 대하여 대칭이므로 $Q=(4,1)$이다. 따라서 $PQ=\\sqrt{(4-1)^2+(1-4)^2}=3\\sqrt{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-09b79243fc",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "주관식",
+"diff": 3,
+"body": "함수 $y=9^x-a\\cdot3^x+b$가 $x=1$에서 최솟값 $-2$를 갖는다. 상수 $a$, $b$에 대하여 $ab$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$42$",
+"solution": "$t=3^x$로 놓으면 $t>0$이고, 주어진 함수는 $y=(t-\\frac{a}{2})^2+b-\\frac{a^2}{4}$이다. $x=1$, 즉 $t=3$에서 최솟값을 가지므로 $a=6$이다. 최솟값이 $b-9=-2$이므로 $b=7$이고, 따라서 $ab=42$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-c71500c955",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "두 함수 $y=a^x$, $y=a^{-x}$의 그래프가 직선 $y=k$와 만나는 점을 각각 $A$, $B$라 하고, 직선 $y=3k$와 만나는 점을 각각 $C$, $D$라 하자. $AB=2$, $CD=4$이고 사각형 $ABDC$의 넓이가 $18$일 때, $a+k$의 값은? (단, $a>1$, $k>1$이고, $A$, $C$는 제1사분면 위의 점이다.)",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "사각형 $ABDC$는 평행한 두 변의 길이가 $2$, $4$이고 높이가 $2k$인 사다리꼴이므로 $\\frac{2+4}{2}\\cdot2k=18$에서 $k=3$이다. 또한 $AB=2\\log_a k=2$이므로 $\\log_a3=1$에서 $a=3$이다. 따라서 $a+k=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-363c63cd22",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "주관식",
+"diff": 4,
+"body": "구간 $0\\le x\\le\\log_2 5$에서 함수 $y=4^x-2a\\cdot2^x+b$의 최솟값은 $-2$이고 최댓값은 $7$이다. 이 조건을 만족시키는 모든 순서쌍 $(a,b)$에 대하여 $ab$의 값의 합을 구하시오. (단, $a$, $b$는 실수이다.)",
+"selfGrade": true,
+"answer": "$60$",
+"solution": "$t=2^x$로 놓으면 $1\\le t\\le5$이고 $y=(t-a)^2+b-a^2$이다. $a<1$이면 최댓값과 최솟값의 차가 $24-8a>16$이고, $a>5$이면 그 차가 $8a-24>16$이므로 $1\\le a\\le5$이다. 따라서 $\\max\\{(1-a)^2,(5-a)^2\\}=7-(-2)=9$에서 $a=2$ 또는 $a=4$이다. 최솟값 조건 $b-a^2=-2$에 따라 $(a,b)=(2,2),(4,14)$이므로 구하는 합은 $4+56=60$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-14959d386d",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "두 함수 $y=a^x$, $y=a^{-x}$의 그래프가 직선 $y=k$와 만나는 점을 각각 $A$, $B$라 하고, 직선 $y=2k$와 만나는 점을 각각 $C$, $D$라 하자. 사각형 $ABDC$의 두 대각선 $AD$, $BC$가 서로 수직이고, 이 사각형의 넓이가 $9$일 때, $a^3+k$의 값은? (단, $a>1$, $k>1$이고, $A$, $C$는 제1사분면 위의 점이다.)",
+"choices": [
+"$15$",
+"$18$",
+"$21$",
+"$24$",
+"$27$"
+],
+"answer": "③",
+"solution": "$u=\\log_a k$, $v=\\log_a(2k)$로 놓으면 $A(u,k)$, $B(-u,k)$, $C(v,2k)$, $D(-v,2k)$이다. 두 대각선의 기울기는 각각 $-\\frac{k}{u+v}$, $\\frac{k}{u+v}$이므로 수직 조건에서 $u+v=k$이다. 사다리꼴의 넓이는 $(u+v)k=k^2=9$이므로 $k=3$이다. 따라서 $\\log_a18=u+v=3$에서 $a^3=18$이므로 $a^3+k=21$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-fc537c5bf4",
+"typeId": "exam-alg-u0m1s0t3",
+"kind": "주관식",
+"diff": 5,
+"body": "상수 $a>1$, $k>0$에 대하여 두 함수 $f(x)=a^{x-1}+1$, $g(x)=\\log_a(x-1)+1$의 그래프가 직선 $y=-x+k$와 제1사분면에서 만나는 점을 각각 $P$, $Q$라 하자. 선분 $PQ$의 길이가 $2\\sqrt{2}$이고 삼각형 $OPQ$의 넓이가 $8$이다. 이 조건을 만족시키는 서로 다른 모든 $a$의 값의 곱을 $T$라 할 때, $T^4$의 값을 구하시오. (단, $O$는 원점이다.)",
+"selfGrade": true,
+"answer": "$32$",
+"solution": "두 함수는 서로 역함수이고 직선 $y=-x+k$는 직선 $y=x$에 대하여 대칭이므로 $P=(u,v)$라 하면 $Q=(v,u)$이다. $PQ=\\sqrt{2}|u-v|=2\\sqrt{2}$에서 $|u-v|=2$이고, 삼각형의 넓이가 $\\frac12|u^2-v^2|=u+v=8$이므로 두 점의 좌표는 $(3,5)$, $(5,3)$이다. $P=(3,5)$이면 $a^2+1=5$에서 $a=2$이고, $P=(5,3)$이면 $a^4+1=3$에서 $a=\\sqrt[4]{2}$이며 두 경우 모두 조건을 만족한다. 따라서 $T=2\\sqrt[4]{2}$이므로 $T^4=32$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-534716bd57",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$\\left(16^{\\frac34}\\times 8^{-\\frac23}\\right)^2$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$4$",
+"$8$",
+"$16$"
+],
+"answer": "③",
+"solution": "$16^{\\frac34}=(2^4)^{\\frac34}=2^3=8$이고, $8^{-\\frac23}=(2^3)^{-\\frac23}=2^{-2}=\\frac14$이다. 따라서 주어진 식의 값은 $(8\\times\\frac14)^2=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-0a317ee9e9",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$a=3^{\\frac12}$일 때, $\\left(a+a^{-1}\\right)^2$의 값은?",
+"choices": [
+"$\\frac{10}{3}$",
+"$4$",
+"$\\frac{14}{3}$",
+"$\\frac{16}{3}$",
+"$6$"
+],
+"answer": "④",
+"solution": "$a^2=3$, $a^{-2}=\\frac13$이고 $aa^{-1}=1$이다. 따라서 $(a+a^{-1})^2=a^2+2+a^{-2}=3+2+\\frac13=\\frac{16}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-f9cae43301",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "객관식",
+"diff": 2,
+"body": "방정식 $x^6=81$의 양의 실근은?",
+"choices": [
+"$3^{\\frac13}$",
+"$3^{\\frac12}$",
+"$3^{\\frac23}$",
+"$3$",
+"$3^{\\frac43}$"
+],
+"answer": "③",
+"solution": "$81=3^4$이므로 양의 실근은 $81^{\\frac16}$이다. 지수법칙에 따라 $81^{\\frac16}=(3^4)^{\\frac16}=3^{\\frac23}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-50079de968",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 $x$가 $x=\\dfrac{3^{\\frac12}+3^{-\\frac12}}{2}$일 때, $\\left(x+\\sqrt{x^2-1}\\right)^4$의 값은?",
+"choices": [
+"$\\frac19$",
+"$\\frac13$",
+"$3$",
+"$9$",
+"$27$"
+],
+"answer": "④",
+"solution": "$a=3^{\\frac12}$로 놓으면 $x=\\frac{a+a^{-1}}2$이고 $x^2-1=\\frac{(a-a^{-1})^2}{4}$이다. $a>1$이므로 $\\sqrt{x^2-1}=\\frac{a-a^{-1}}2$이다. 따라서 $x+\\sqrt{x^2-1}=a$이므로 구하는 값은 $a^4=9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-1e349f0289",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "객관식",
+"diff": 3,
+"body": "자연수 $n$에 대하여 방정식 $x^n=-n^2+9n-18$의 서로 다른 실근의 개수를 $g(n)$이라 하자. $g(2)+g(3)+g(4)+g(5)+g(6)+g(7)$의 값은?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "우변은 $-(n-3)(n-6)$이므로 $n=2,7$일 때 음수, $n=3,6$일 때 $0$, $n=4,5$일 때 양수이다. 홀수 차수에서는 우변의 부호와 관계없이 실근이 하나이고, 짝수 차수에서는 우변이 양수, $0$, 음수일 때 실근이 각각 $2$개, $1$개, $0$개이다. 따라서 $g(2),g(3),g(4),g(5),g(6),g(7)$은 차례로 $0,1,2,1,1,1$이므로 합은 $6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-3f5cd100aa",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "주관식",
+"diff": 3,
+"body": "$a=2^{\\frac13}+2^{-\\frac13}$일 때, $a^3-3a$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac52$",
+"solution": "$u=2^{\\frac13}$, $v=2^{-\\frac13}$로 놓으면 $uv=1$이고 $a=u+v$이다. 따라서 $a^3=u^3+v^3+3uv(u+v)=2+\\frac12+3a$이다. 그러므로 $a^3-3a=\\frac52$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-3539524b82",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 $x$가 $x=\\dfrac{5^{\\frac14}+5^{-\\frac14}}{2}$일 때, $\\left(x-\\sqrt{x^2-1}\\right)^{-6}+\\left(x+\\sqrt{x^2-1}\\right)^{-6}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{126\\sqrt5}{25}$",
+"solution": "$a=5^{\\frac14}>1$로 놓으면 $\\sqrt{x^2-1}=\\frac{a-a^{-1}}2$이다. 따라서 $x-\\sqrt{x^2-1}=a^{-1}$이고 $x+\\sqrt{x^2-1}=a$이다. 주어진 식은 $(a^{-1})^{-6}+a^{-6}=a^6+a^{-6}=5^{\\frac32}+5^{-\\frac32}$이다. 그러므로 구하는 값은 $5\\sqrt5+\\frac{\\sqrt5}{25}=\\frac{126\\sqrt5}{25}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-668ea97bb2",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "객관식",
+"diff": 4,
+"body": "$1\\leq a\\leq10$인 자연수 $a$에 대하여 방정식 $x^4=(a-2)(a-6)$의 서로 다른 실근의 개수를 $g(a)$, 방정식 $x^6=(a-4)(a-8)$의 서로 다른 실근의 개수를 $h(a)$라 하자. $g(a)+h(a)=2$를 만족시키는 모든 $a$의 값의 합은?",
+"choices": [
+"$8$",
+"$9$",
+"$10$",
+"$11$",
+"$12$"
+],
+"answer": "③",
+"solution": "두 방정식 모두 짝수 차수이므로 우변이 양수, $0$, 음수일 때 서로 다른 실근의 개수는 각각 $2,1,0$이다. $g(a)$는 $a=1,7,8,9,10$에서 $2$, $a=2,6$에서 $1$, 나머지에서 $0$이다. $h(a)$는 $a=1,2,3,9,10$에서 $2$, $a=4,8$에서 $1$, 나머지에서 $0$이다. 따라서 $g(a)+h(a)=2$인 자연수는 $a=3,7$이므로 그 합은 $10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-623d69239f",
+"typeId": "exam-alg-u0m0s2t3",
+"kind": "주관식",
+"diff": 5,
+"body": "$20000$ 이하의 자연수 $n$ 중에서 $\\log n$의 소수 부분과 $\\log(64n)$의 소수 부분의 합이 $1$이 되는 모든 $n$의 값의 합을 구하시오. (단, $\\log$는 상용로그이고, 실수 $t$의 소수 부분은 $t-\\lfloor t\\rfloor$이며, 두 로그의 소수 부분은 모두 $0$이 아니다.)",
+"selfGrade": true,
+"answer": "$13875$",
+"solution": "$k=\\lfloor\\log n\\rfloor$, $l=\\lfloor\\log(64n)\\rfloor$로 놓으면 조건에 의해 $\\log(64n^2)=k+l+1$이므로 $64n^2=10^m$인 양의 정수 $m$이 존재한다. 왼쪽은 $(8n)^2$이므로 소인수분해의 유일성에 따라 $m$은 짝수이고, $m=2r$로 놓으면 $n=\\frac{10^r}{8}$이다. 이 값이 자연수가 되려면 $r\\geq3$이어야 하므로 $n=125\\times10^{r-3}$이며, 범위 안의 후보는 $125,1250,12500$이다. 이 후보들은 모두 두 로그의 소수 부분이 각각 $\\log\\frac54$와 $\\log8$이어서 둘 다 $0$이 아니고 그 합이 $\\log10=1$이므로 조건을 만족한다. 따라서 구하는 합은 $125+1250+12500=13875$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-d6f34137b2",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "객관식",
+"diff": 2,
+"body": "함수 $f(x)=a\\sin(bx)+d$ $(a>0,\\ b>0)$의 최댓값이 $7$, 최솟값이 $-1$이고 주기가 $\\frac{2\\pi}{3}$이다. $a+b+d$의 값은?",
+"choices": [
+"$8$",
+"$9$",
+"$10$",
+"$11$",
+"$12$"
+],
+"answer": "③",
+"solution": "최댓값과 최솟값에서 $a+d=7$, $-a+d=-1$이므로 $a=4$, $d=3$이다. 주기가 $\\frac{2\\pi}{b}=\\frac{2\\pi}{3}$이므로 $b=3$이다. 따라서 $a+b+d=10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-415adbc2c1",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "주관식",
+"diff": 2,
+"body": "함수 $f(x)=2\\sin^2x-4\\sin x+3$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $M+m$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$10$",
+"solution": "$t=\\sin x$라 놓으면 $-1\\le t\\le1$이고 $f(x)=2(t-1)^2+1$이다. 따라서 $t=-1$일 때 최댓값 $M=9$, $t=1$일 때 최솟값 $m=1$을 갖는다. 그러므로 $M+m=10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-80de9a9c8b",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$0\\le x\\le3$에서 방정식 $|\\sin(\\pi x)|=\\frac12$의 서로 다른 실근의 개수는?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "함수 $y=|\\sin(\\pi x)|$의 주기는 $1$이며, 각 구간 $(0,1)$, $(1,2)$, $(2,3)$에서 직선 $y=\\frac12$와 두 점에서 만난다. 정수인 $x$에서는 $|\\sin(\\pi x)|=0$이므로 추가되는 근은 없다. 따라서 서로 다른 실근의 개수는 $2\\times3=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-85564dfc62",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "주관식",
+"diff": 3,
+"body": "함수 $f(x)=a\\sin(bx+c)+d$ $(a>0,\\ b>0,\\ 0<c<\\frac\\pi2)$의 최댓값은 $6$, 최솟값은 $-2$이고 주기는 $\\pi$이다. $f(0)=4$이고 $c=k\\pi$일 때, $6(a+b+d+k)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$49$",
+"solution": "$a+d=6$, $-a+d=-2$에서 $a=4$, $d=2$이고, 주기 조건에서 $b=2$이다. $f(0)=4$이므로 $4\\sin c+2=4$, 즉 $\\sin c=\\frac12$이다. $0<c<\\frac\\pi2$이므로 $c=\\frac\\pi6$이고 $k=\\frac16$이다. 따라서 $6(a+b+d+k)=6(4+2+2+\\frac16)=49$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-1d46351962",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "객관식",
+"diff": 3,
+"body": "함수 $f(x)=2\\cos^2x+2\\sin(x+\\pi)+1$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $M+m$의 값은?",
+"choices": [
+"$\\frac32$",
+"$2$",
+"$\\frac52$",
+"$3$",
+"$\\frac72$"
+],
+"answer": "③",
+"solution": "$\\sin(x+\\pi)=-\\sin x$이므로 $t=\\sin x$라 놓으면 $f(x)=3-2t^2-2t=\\frac72-2(t+\\frac12)^2$이고 $-1\\le t\\le1$이다. 따라서 $t=-\\frac12$에서 최댓값 $M=\\frac72$를 갖는다. 양 끝값을 비교하면 $t=1$에서 최솟값 $m=-1$을 가지므로 $M+m=\\frac52$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-5d3d2e79bd",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "주관식",
+"diff": 3,
+"body": "방정식 $|\\sin(\\pi x)|=\\frac{x}{2}$의 서로 다른 실근의 개수를 구하시오.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$0\\le|\\sin(\\pi x)|\\le1$이므로 모든 실근은 $0\\le x\\le2$에 있고, $x=0$은 근이다. 각 구간 $(0,1)$, $(1,2)$에서 $y=|\\sin(\\pi x)|$는 위로 볼록한 하나의 아치 모양이므로 직선과 최대 두 점에서 만난다. $(0,1)$에서는 $x=\\frac12$에서 좌변이 우변보다 크고 $x=1$에서 작으므로 내부의 교점은 하나이며, $(1,2)$에서는 양 끝에서 좌변이 작고 $x=\\frac32$에서 크므로 교점이 두 개이다. 따라서 서로 다른 실근은 모두 $1+1+2=4$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-3833540917",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "주관식",
+"diff": 4,
+"body": "함수 $f(x)=a\\sin(bx+c)+d$ $(a>0,\\ b>0,\\ 0<c<\\pi)$가 다음 조건을 만족시킨다.\n\n(가) 최댓값은 $6$, 최솟값은 $-2$이다.\n(나) 최댓값을 갖게 하는 양수 $x$ 중 가장 작은 값은 $\\frac\\pi{12}$이다.\n(다) $x=\\frac\\pi{12}$ 이후 처음으로 최솟값을 갖는 곳은 $x=\\frac\\pi3$이다.\n\n$0\\le x\\le\\pi$에서 방정식 $f(x)=4$의 서로 다른 모든 실근의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{7\\pi}{3}$",
+"solution": "최댓값과 최솟값에서 $a=4$, $d=2$이고, 최대 지점에서 바로 다음 최소 지점까지의 거리는 반주기이므로 $\\frac\\pi b=\\frac\\pi3-\\frac\\pi{12}=\\frac\\pi4$에서 $b=4$이다. $f(\\frac\\pi{12})=6$과 $0<c<\\pi$를 이용하면 $c=\\frac\\pi6$이다. 따라서 $f(x)=4$는 $\\sin(4x+\\frac\\pi6)=\\frac12$이고, 주어진 구간에서 그 실근은 $0$, $\\frac\\pi6$, $\\frac\\pi2$, $\\frac{2\\pi}{3}$, $\\pi$이다. 이들의 합은 $\\frac{7\\pi}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-478d44c78d",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "객관식",
+"diff": 4,
+"body": "$-\\frac\\pi6\\le x\\le\\frac\\pi3$에서 함수 $f(x)=\\cos^2(x+\\frac\\pi2)-3\\cos^2x-2\\sin(x+\\pi)+2$의 최댓값을 $M$, 최솟값을 $m$이라 하자. $M+m$의 값은?",
+"choices": [
+"$\\sqrt3-\\frac54$",
+"$\\sqrt3-\\frac14$",
+"$\\sqrt3+\\frac14$",
+"$\\sqrt3+\\frac34$",
+"$\\sqrt3+\\frac54$"
+],
+"answer": "④",
+"solution": "삼각함수의 성질을 이용하여 정리하면 $f(x)=4\\sin^2x+2\\sin x-1$이다. 주어진 구간에서 $t=\\sin x$의 범위는 $-\\frac12\\le t\\le\\frac{\\sqrt3}{2}$이므로 $f(x)=4(t+\\frac14)^2-\\frac54$의 최솟값은 $m=-\\frac54$이다. 양 끝값은 각각 $-1$, $2+\\sqrt3$이므로 최댓값은 $M=2+\\sqrt3$이다. 따라서 $M+m=\\sqrt3+\\frac34$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
+},
+{
+"id": "fill-5abdde78de",
+"typeId": "exam-alg-u1m0s4t3",
+"kind": "객관식",
+"diff": 4,
+"body": "방정식 $|\\sin(\\pi x)|=\\frac{|x-1|}{4}$의 서로 다른 실근의 개수는?",
+"choices": [
+"$11$",
+"$13$",
+"$14$",
+"$15$",
+"$17$"
+],
+"answer": "④",
+"solution": "$u=x-1$로 치환하면 방정식은 $|\\sin(\\pi u)|=\\frac{|u|}{4}$이므로 근은 $u=0$을 기준으로 대칭이고 $|u|\\le4$이다. $u>0$에서 각 정수 사이의 그래프는 위로 볼록한 하나의 아치 모양이므로 직선 $y=\\frac u4$와 최대 두 점에서 만난다. $(0,1)$에서는 내부의 교점이 하나이고, $(1,2)$, $(2,3)$, $(3,4)$에서는 양 끝에서 곡선이 직선보다 아래에 있고 중점에서 위에 있으므로 교점이 각각 두 개이다. 따라서 양의 근은 $7$개이며, 음의 근 $7$개와 근 $u=0$을 포함하면 서로 다른 실근은 $15$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s4t3",
+"custom": true
 }
 ]

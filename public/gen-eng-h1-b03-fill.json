@@ -3527,5 +3527,406 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b03-u11m5s0t0",
 "custom": true
+},
+{
+"id": "fill-a56ef9e003",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nDr. Im made the restroom information ______ to anyone who needed it.",
+"choices": [
+"access",
+"accessible",
+"accessibly",
+"accessibility",
+"accessing"
+],
+"answer": "②",
+"solution": "「make＋목적어＋목적격보어」 구조에서 목적격보어는 목적어의 상태를 설명한다. 따라서 형용사 accessible이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-925f3cf035",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nBecause many community members took part, the mapping work ______ within only one month.",
+"choices": [
+"completed",
+"was completed",
+"has completing",
+"was completing",
+"to complete"
+],
+"answer": "②",
+"solution": "지도 제작 작업은 스스로 완료하는 주체가 아니라 완료되는 대상이다. 따라서 수동태인 was completed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-96a8eea77f",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nCommunity mapping is a community-driven process that ______ collective knowledge and technology.",
+"choices": [
+"utilize",
+"utilizes",
+"utilizing",
+"to utilize",
+"utilized"
+],
+"answer": "②",
+"solution": "관계대명사 that의 선행사는 단수 명사 process이다. 현재의 일반적인 특징을 나타내므로 단수 동사 utilizes가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-64c9483df0",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nCommunity mapping is a process ⓐ[where / which] residents jointly gather and display information about their area. Dr. Im created a restroom map and made it ⓑ[useful / usefully] to residents and visitors. The information on business names, addresses, accessibility, and operating hours ⓒ[shared / was shared] through the map.",
+"choices": [
+"where ― useful ― was shared",
+"where ― usefully ― shared",
+"which ― useful ― shared",
+"which ― usefully ― was shared",
+"where ― useful ― shared"
+],
+"answer": "①",
+"solution": "ⓐ 뒤가 완전한 절이므로 장소·상황을 나타내는 관계부사 where가 알맞다. ⓑ는 목적어 it의 상태를 설명하므로 형용사 useful이 필요하고, ⓒ의 information은 공유되는 대상이므로 was shared가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9533ea7e75",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nCommunity members ⓐwork together to gather essential details, and the collected information ⓑis displayed on an online map. Dr. Im's project made restroom information ⓒaccessibly to the public, which greatly ⓓimproved convenience. The project also showed how digital tools can ⓔbe used to address a local issue.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "「made＋목적어＋목적격보어」에서 목적격보어는 restroom information의 상태를 나타내야 한다. 따라서 부사 accessibly를 형용사 accessible로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7153cb4ee1",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 모두 고른 것은?\n\nCommunity mapping is a process ⓐwhere members cooperate to solve local problems. Dr. Im's map made restroom information ⓑaccessibly to everyone, and the mapping process ⓒwas completed through the participation of many community members. The map helped residents and visitors ⓓfinding restrooms in urgent situations. These examples demonstrate that community mapping can ⓔsave lives and make recovery faster.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓓ",
+"ⓑ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓑ는 목적어 information의 상태를 설명하므로 accessibly가 아니라 accessible이어야 한다. ⓓ는 「help＋목적어＋동사원형」 구조이므로 finding을 find로 고쳐야 한다. 나머지 표현은 문법적으로 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-45903eef83",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 밑줄 친 세 표현을 문맥과 어법에 맞게 고쳐 쓸 때, 고친 표현을 순서대로 쓰시오.\n\nThe restroom map, [developing] by Dr. Im, made essential information [easily access] to the public and [was improved] convenience for residents and visitors.",
+"selfGrade": true,
+"answer": "developed, easily accessible, improved",
+"solution": "지도는 Dr. Im에 의해 개발된 것이므로 과거분사 developed가 필요하다. 「make＋목적어＋목적격보어」에서는 부사 easily의 수식을 받는 형용사 accessible을 써야 한다. 또한 지도는 편의를 향상한 주체이므로 능동형 improved가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3bd7534e56",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 두 단어를 찾아 바르게 고친 단어만 순서대로 쓰시오.\n\nThe information gathered by community members were used to assess damage, locating shelters, and identify emergency care centers.",
+"selfGrade": true,
+"answer": "was, locate",
+"solution": "문장의 주어 information은 불가산 단수 명사이므로 were를 was로 고쳐야 한다. 또한 to assess, locate, and identify가 병렬 구조를 이루어야 하므로 locating은 locate가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f8beb8a07f",
+"typeId": "eng-h1-b03-u10m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 [A], [B], [C]를 어법상 알맞게 고친 표현을 순서대로 쓰시오.\n\nCommunity mapping is a process [A: which] members combine their knowledge and technology. What supports this process [B: are] active community participation, which allows information [C: to collect, visualize, and share] collaboratively.",
+"selfGrade": true,
+"answer": "where, is, to be collected, visualized, and shared",
+"solution": "[A] 뒤에 완전한 절이 이어지므로 관계부사 where가 알맞다. What이 이끄는 명사절은 단수로 취급하므로 [B]는 is가 되어야 한다. 정보는 수집·시각화·공유되는 대상이므로 [C]는 수동형을 사용해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m1s0t0",
+"custom": true
+},
+{
+"id": "fill-23618b1e06",
+"typeId": "eng-h1-b03-u0m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 proficient와 의미가 가장 가까운 것은?\n\nThe boy's older brother was a proficient table tennis player.",
+"choices": [
+"careless",
+"skilled",
+"nervous",
+"ordinary",
+"unwilling"
+],
+"answer": "②",
+"solution": "proficient는 어떤 일을 능숙하게 하는 상태를 뜻한다. 따라서 ‘숙련된’이라는 의미의 skilled가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7fc9d35631",
+"typeId": "eng-h1-b03-u0m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 decent의 의미로 가장 적절한 것은?\n\nAfter several unsuccessful attempts, the boy finally made a decent return.",
+"choices": [
+"실망스러운",
+"위험한",
+"상당히 괜찮은",
+"우연한",
+"느린"
+],
+"answer": "③",
+"solution": "소년은 계속 연습하면서 이전보다 나은 공을 받아치게 되었다. 이 문맥에서 decent는 ‘상당히 괜찮은’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-381063884c",
+"typeId": "eng-h1-b03-u0m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 적절한 것은?\n\nThe boy's mother suggested that he __________ a game against his older brother.",
+"choices": [
+"play",
+"plays",
+"played",
+"to play",
+"playing"
+],
+"answer": "①",
+"solution": "제안이나 요구를 나타내는 suggest 뒤의 that절에서는 ‘(should) + 동사원형’을 쓴다. 따라서 주어가 he이더라도 동사원형 play가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ffd82e8ca8",
+"typeId": "eng-h1-b03-u0m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 연결어로 가장 적절한 것은?\n\nThe boy was still losing to his father and his elbow hurt. __________, he picked up the ball and continued the game.",
+"choices": [
+"For example",
+"Therefore",
+"However",
+"Similarly",
+"Otherwise"
+],
+"answer": "③",
+"solution": "앞부분에는 소년이 지고 있고 팔꿈치도 아픈 상황이 제시된다. 그런데도 경기를 계속했으므로 역접을 나타내는 However가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0b754bdf4d",
+"typeId": "eng-h1-b03-u0m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장에서 어법상 틀린 부분을 고르시오.\n\nThe boy ①was hit on the elbow, but he ②continued to practice. Although his father ③kept winning, the boy learned from every attempt. His steady effort enabled him ④joining the regional team and eventually ⑤to reach the national finals.",
+"choices": [
+"① was hit",
+"② continued",
+"③ kept winning",
+"④ joining",
+"⑤ to reach"
+],
+"answer": "④",
+"solution": "enable은 ‘enable + 목적어 + to부정사’의 구조로 사용한다. 따라서 ④ joining은 to join으로 고쳐야 한다. ③의 keep은 동명사를 목적어로 취하므로 kept winning은 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-68129e5849",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\n(A)[Develop / Developing] resilience takes effort. It helps us deal with (B)[both / either] large and small difficulties.\n\n선지는 (A), (B)의 순서임.",
+"choices": [
+"Develop — both",
+"Developing — either",
+"Develop — either",
+"Developing — both",
+"Developed — either"
+],
+"answer": "④",
+"solution": "문장의 주어 자리에는 동명사 Developing이 알맞다. 뒤에 and가 있으므로 ‘A와 B 둘 다’를 나타내는 both A and B를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8e5820bd47",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nPeople with a fixed mindset may believe that they are not (A)[natural / naturally] talented. However, abilities can improve, and it takes effort (B)[to develop / developing] them.\n\n선지는 (A), (B)의 순서임.",
+"choices": [
+"natural — to develop",
+"naturally — to develop",
+"naturally — developing",
+"natural — developing",
+"naturally — develop"
+],
+"answer": "②",
+"solution": "형용사 talented를 수식하려면 부사 naturally가 필요하다. it takes effort to부정사 구문이므로 (B)에는 to develop이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c86bf17dcc",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nThe father suggests (A)[another / other] game, but the boy refuses. For the boy, avoiding a challenge seems easier than learning from it. Building resilience is like (B)[train / training] your muscles.\n\n선지는 (A), (B)의 순서임.",
+"choices": [
+"other — training",
+"another — train",
+"other — train",
+"others — training",
+"another — training"
+],
+"answer": "⑤",
+"solution": "단수 가산명사 game 앞에서 ‘또 한 번의’를 나타내려면 another를 써야 한다. like는 이 문장에서 전치사이므로 뒤에 동명사 training이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9e3b5d56e2",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 괄호 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nG: What is the difference between the two mindsets?\nB: It is about (A)[how / what] people understand their abilities.\nG: Do people with a growth mindset think effort matters?\nB: Yes. They hold the belief (B)[that / which] their abilities can improve through effort.\nG: Then (C)[accept / accepting] challenges can give them opportunities to learn.\n\n선지는 (A), (B), (C)의 순서임.",
+"choices": [
+"how — that — accepting",
+"what — that — accepting",
+"how — which — accepting",
+"how — that — accept",
+"what — which — accept"
+],
+"answer": "①",
+"solution": "people understand their abilities는 문장 성분이 갖추어진 절이므로 ‘어떻게’를 뜻하는 how가 알맞다. belief의 구체적인 내용을 설명하는 완전한 절 앞에는 동격의 접속사 that을 쓴다. 마지막 문장의 주어 자리에는 동명사 accepting이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9664e8b2db",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nDuring the game, the ball comes (A)[flying / fly] toward the boy. He fails to hit it and puts down his paddle, (B)[saying / says] that he wants to stop. His father suggests another game, but the boy thinks about (C)[avoid / avoiding] the challenge.\n\n선지는 (A), (B), (C)의 순서임.",
+"choices": [
+"fly — saying — avoiding",
+"flying — says — avoiding",
+"flying — saying — avoiding",
+"flying — saying — avoid",
+"fly — says — avoid"
+],
+"answer": "③",
+"solution": "comes flying은 공이 날아오는 동작을 나타낸다. 쉼표 뒤에는 주절의 주어 He가 동시에 하는 행동을 나타내는 분사구문 saying이 알맞다. 전치사 about 뒤에는 동명사 avoiding을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4f69eb95dd",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에 들어갈 말로 가장 알맞은 것은?\n\n(A)[Have / Having] resilience does not mean that you never feel upset. What matters is (B)[how / what] you respond to difficulties. People with a growth mindset view failure as a chance to learn, (C)[believing / believe] that effort can improve their abilities. Developing resilience is similar to training your muscles: it takes time (D)[to become / becoming] stronger.\n\n선지는 (A), (B), (C), (D)의 순서임.",
+"choices": [
+"Having — what — believing — to become",
+"Have — how — believing — to become",
+"Having — how — believe — to become",
+"Having — how — believing — to become",
+"Having — how — believing — becoming"
+],
+"answer": "④",
+"solution": "첫 문장의 주어에는 동명사 Having이 필요하며, respond to difficulties 앞에는 반응하는 방식을 나타내는 how가 알맞다. (C)는 주절의 주어 People을 의미상의 주어로 하는 분사구문이므로 believing을 쓴다. 마지막 문장은 it takes time to부정사 구문이므로 to become이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3719d481eb",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 대괄호로 표시된 일곱 표현 중 어법상 잘못된 것은 정확히 네 개이다. 잘못된 표현을 각각 한 단어로 고쳐, 글에 나오는 순서대로 쓰시오.\n\n[Have] resilience does not mean being free from stress. It means facing difficulties, [both] large and small, and continuing despite them. People with a growth mindset focus on [how] they can learn from failure. They do not assume that a person must be [natural] talented to improve. Instead, they hold the belief [which] effort can develop abilities. Building resilience is like [train] your muscles, and it requires [having] patience.\n\n※ 정답은 고친 단어 네 개만 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "Having, naturally, that, training",
+"solution": "문장 전체의 주어가 되어야 하므로 Have는 Having으로, 형용사 talented를 수식해야 하므로 natural은 naturally로 고친다. belief 뒤에는 그 내용을 설명하는 완전한 절이 있으므로 which를 동격의 접속사 that으로 고친다. 전치사 like 뒤의 train은 training으로 고치며, both A and B, 방법을 나타내는 how, requires의 목적어인 having은 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-480ad216fe",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 대괄호로 표시된 일곱 표현 중 어법상 잘못된 것은 정확히 네 개이다. 잘못된 표현을 각각 한 단어로 고쳐, 글에 나오는 순서대로 쓰시오.\n\nAs the ball comes [fly] across the net, the boy tries to hit it. After hurting his elbow, he puts his paddle down, [says] that he has had enough. His father later asks him to play [other] game. The boy refuses because he holds the belief [that] challenges should be avoided. His response shows [what] he deals with difficulty. A growth mindset, however, involves [seeing] failure as an opportunity and [accepting] challenges as part of learning.\n\n※ 정답은 고친 단어 네 개만 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "flying, saying, another, how",
+"solution": "공이 날아오는 모습을 나타내는 comes flying이 되어야 하며, 쉼표 뒤에서 주절에 부가적인 행동을 덧붙이는 says는 saying으로 고쳐야 한다. 단수 가산명사 game 앞에는 another가 알맞다. he deals with difficulty는 완전한 절이므로 what을 대처 방식을 나타내는 how로 고친다. 동격절을 이끄는 that과 involves의 목적어로 병렬 연결된 seeing, accepting은 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-78559d4b75",
+"typeId": "eng-h1-b03-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 대괄호로 표시된 일곱 표현 중 어법상 잘못된 것은 정확히 네 개이다. 잘못된 표현을 각각 한 단어로 고쳐, 글에 나오는 순서대로 쓰시오.\n\n[Develop] resilience takes time, just as building muscle does. Its value lies in [how] it helps people face difficulties, not in whether it removes every unpleasant feeling. People can experience [either] stress and anxiety while continuing to grow. Those with a growth mindset do not treat failure as proof that they lack talent. They keep the belief [which] abilities can improve through effort, [see] mistakes as chances to learn. This way of thinking encourages them to try [another] challenge instead of [avoiding] it.\n\n※ 정답은 고친 단어 네 개만 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "Developing, both, that, seeing",
+"solution": "첫 문장의 주어로 쓰인 Develop은 동명사 Developing으로 고치며, stress and anxiety를 연결하려면 either 대신 both를 써야 한다. belief의 내용을 설명하는 완전한 절 앞에는 which가 아니라 that이 필요하다. 접속사 없이 쉼표로 이어진 see는 주절의 주어 They를 의미상의 주어로 하는 seeing으로 고친다. 방법을 나타내는 how, 단수명사 앞의 another, 전치사구 instead of 뒤의 avoiding은 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m1s0t0",
+"custom": true
 }
 ]

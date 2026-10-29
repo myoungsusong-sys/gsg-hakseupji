@@ -802,5 +802,826 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-18b60efbe9",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nAt a concert, young musicians played a cello made from an oil tank, a violin made with forks, and a flute made from a water pipe. Although all the instruments were made from used materials, they produced beautiful music.",
+"choices": [
+"the difficulty of learning classical music",
+"the value of buying expensive instruments",
+"a concert performed with recycled instruments",
+"the correct way to separate household waste",
+"a comparison of three famous composers"
+],
+"answer": "③",
+"solution": "기름통, 포크, 수도관 등으로 만든 악기들이 아름다운 음악을 만들어 냈다는 내용이다. 따라서 재활용 악기로 연주한 음악회를 나타내는 ③이 주제로 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d3715984c0",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nFavio Chávez visited Cateura to take part in a recycling program. When he saw children living in a place full of garbage, he wanted to bring something hopeful into their lives. He therefore decided to share his love of music with them.",
+"choices": [
+"Bringing Music to the Children of Cateura",
+"Leaving Cateura for a Cleaner Town",
+"How to Become a Recycling Worker",
+"The History of Classical Music",
+"Children Who Refused to Play Music"
+],
+"answer": "①",
+"solution": "Favio Chávez가 카테우라의 아이들에게 긍정적인 변화를 주기 위해 음악을 나누기로 했다는 글이다. 이러한 중심 내용을 가장 잘 포괄하는 제목은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1827ef93ff",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nA visitor expected instruments made from garbage to sound unusual. However, once the performance began, the deep sound of the recycled cello surprised the visitor. Soon, the visitor became completely absorbed in the music.",
+"choices": [
+"Recycled instruments cannot produce a deep sound.",
+"The visitor was impressed by music played on recycled instruments.",
+"The musicians needed ordinary instruments for the concert.",
+"The visitor left because the performance sounded strange.",
+"The cello was less interesting than the other instruments."
+],
+"answer": "②",
+"solution": "글쓴이는 재활용 악기의 소리를 걱정했지만 실제 연주를 듣고 놀라 음악에 빠져들었다. 따라서 재활용 악기로 연주한 음악에 감명받았다는 ②가 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7c28b465b8",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nThe instruments on the stage did not look ordinary. An oil tank had become a cello, forks had been used for a violin, and a water pipe had been turned into a flute. Yet when the young musicians started playing, the audience heard rich and beautiful music rather than meaningless noise.",
+"choices": [
+"Young Musicians Afraid of the Stage",
+"From Thrown-Away Objects to Beautiful Music",
+"Why Classical Music Is Difficult to Understand",
+"A Recycling Program Without Children",
+"The Difference Between Cellos and Violins"
+],
+"answer": "②",
+"solution": "버려진 물건들이 악기로 바뀌어 풍부하고 아름다운 음악을 만들어 냈다는 내용이다. 소재와 결과를 함께 드러내는 ②가 글 전체를 가장 잘 포괄한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bd58ade1a2",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nFavio Chávez first came to Cateura for a recycling program. Seeing children surrounded by garbage made him wish to add hope to their lives. Since music was something he deeply loved, he chose to share it with the children, and this decision led to the creation of the orchestra.\n\nFavio's experience in Cateura encouraged him to use his love of (A)__________ to make a (B)__________ difference in the children's lives.",
+"choices": [
+"music ― positive",
+"garbage ― musical",
+"travel ― surprising",
+"recycling ― negative",
+"concerts ― expensive"
+],
+"answer": "①",
+"solution": "Favio가 사랑한 것은 music이며, 아이들의 삶에 긍정적인 것을 더하고자 했다. 따라서 글의 핵심 인과 관계를 정확히 요약한 조합은 music과 positive인 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7144086750",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nAt first, the concertgoer focused on what the instruments were made of and wondered whether they would sound strange. During the performance, however, the music itself became more important than the materials. The concertgoer was so deeply engaged that the oil tank, forks, and water pipe were no longer seen merely as garbage.",
+"choices": [
+"The appearance of an instrument always determines its sound.",
+"Only professionally made instruments can move an audience.",
+"Recycling is useful only when it reduces the amount of garbage.",
+"Powerful music can change how people view discarded materials.",
+"An audience should examine instruments before every concert."
+],
+"answer": "④",
+"solution": "글쓴이의 관심은 악기의 재료에서 음악 자체로 옮겨 가며, 버려진 물건에 대한 인식도 달라진다. 이를 일반화하여 표현한 ④가 글의 요지로 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-53838dc0b3",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 들어갈 말로 알맞은 것은?\n\n나는 이번 방학에 새로운 것을 배울 계획이다.\n→ I __________ something new this vacation.",
+"choices": [
+"am planning to learn",
+"planning to learning",
+"am planned to learn",
+"plan learning",
+"am planning learn"
+],
+"answer": "①",
+"solution": "‘~할 계획이다’는 「be planning to + 동사원형」으로 표현한다. 주어가 I이므로 be동사는 am을 쓰고, to 뒤에는 동사원형 learn이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8a8700ec29",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 사용하여 빈칸을 채우시오.\n\n나는 다른 사람들과 조화롭게 노래하는 것이 즐겁다고 생각한다.\n→ I think ______________________________ in harmony with others. (fun)",
+"selfGrade": true,
+"answer": "it is fun to sing",
+"solution": "「think (that) it is + 형용사 + to부정사」의 구조를 사용한다. it은 가주어이고, 실제 내용은 to sing 이하가 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8da11a439f",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA: Do you have any plans for this vacation?\nB: Yes. __________ the kalimba.",
+"choices": [
+"I forgot to learn",
+"I'm thinking of learning",
+"I'm off learning",
+"I found it learn",
+"I have learned to"
+],
+"answer": "②",
+"solution": "방학 계획을 묻는 말에 ‘칼림바를 배울까 생각 중이다’라고 답하는 흐름이 자연스럽다. 「be thinking of + 동명사」를 써야 하므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4a8422ef43",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 우리말을 영어로 옮긴 것으로 어법상 옳은 것은?\n\n너는 합창단에서 다른 사람들과 노래하는 것이 흥미롭다고 생각하니?",
+"choices": [
+"Do you think it interesting singing with others in the choir?",
+"Are you think it is interesting to sing with others in the choir?",
+"Do you think is it interesting to sing with others in the choir?",
+"Do you think it is interesting to sing with others in the choir?",
+"Do you think it is interesting sing with others in the choir?"
+],
+"answer": "④",
+"solution": "「Do you think + 주어 + 동사 …?」의 어순을 사용해야 하므로 think 뒤에는 it is가 온다. 또한 ‘노래하는 것’은 「to + 동사원형」인 to sing으로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dbf372d938",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 모두 사용하여 빈칸에 들어갈 말을 8단어로 쓰시오.\n\n나는 다른 사람들과 조화롭게 노래하는 것이 훌륭하다는 것을 알았다.\n→ I found _______________________________________________.\n(great, it, harmony, others)",
+"selfGrade": true,
+"answer": "it great to sing in harmony with others",
+"solution": "「find + 목적어 + 목적격보어」에 가목적어 it과 형용사 great를 사용한다. 실제 목적어 역할을 하는 to부정사 뒤에 「in harmony with others」를 이어 쓰면 총 8단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7498cd36de",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 빈칸에 들어갈 말을 바르게 배열한 것은?\n\nA: Where are you off to?\nB: I'm going to the music room. I have choir practice.\nA: Oh, right. I forgot __________.\n\n(joined / that / the choir / you / had)",
+"choices": [
+"that you had joined the choir",
+"you that had joined the choir",
+"that had you joined the choir",
+"you had that joined the choir",
+"that you joined had the choir"
+],
+"answer": "①",
+"solution": "forgot 뒤에는 「that + 주어 + 동사」 형태의 명사절이 올 수 있다. 합창단 가입이 잊은 시점보다 앞선 일이므로 과거완료 had joined를 사용한 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2dd6fe987b",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 빈칸에 들어갈 질문을 조건에 맞게 완성하시오.\n\nA: _______________________________________________?\nB: I'm thinking of learning the kalimba.\nA: That sounds interesting.\n\n조건\n· plan을 사용하되 필요한 경우 형태를 바꿀 것.\n· 의문사 what으로 시작할 것.\n· this vacation을 포함하여 총 8단어로 쓸 것.",
+"selfGrade": true,
+"answer": "What are you planning to learn this vacation",
+"solution": "대답에서 ‘칼림바를 배울까 생각 중’이라고 했으므로 무엇을 배울 계획인지 묻는 질문이 알맞다. 「What + be동사 + 주어 + planning to + 동사원형?」의 어순으로 쓰면 총 8단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e39577ef79",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 밑줄 친 우리말과 뜻이 같은 영어 단어를 고르시오.\n\n민수는 여러 번 실패한 뒤에도 ‘끈질긴’ 노력을 계속했다.",
+"choices": [
+"temporary",
+"ordinary",
+"persistent",
+"fresh",
+"special"
+],
+"answer": "③",
+"solution": "‘끈질긴, 끊임없이 계속되는’이라는 뜻의 단어는 persistent이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2c759ed3f6",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장과 같은 뜻을 나타내는 직설법 문장을 고르시오.\n\nIf Jina had enough time, she could join the club.",
+"choices": [
+"As Jina has enough time, she can join the club.",
+"As Jina doesn't have enough time, she can't join the club.",
+"As Jina didn't have enough time, she couldn't join the club.",
+"As Jina has enough time, she can't join the club.",
+"As Jina doesn't have enough time, she can join the club."
+],
+"answer": "②",
+"solution": "가정법 과거는 현재 사실과 반대되는 상황을 나타낸다. 따라서 실제로는 지나에게 충분한 시간이 없어서 동아리에 가입할 수 없다는 뜻이므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3318c8010c",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.\n\nI wish I had __________ an umbrella this morning.",
+"choices": [
+"take",
+"takes",
+"took",
+"taken",
+"taking"
+],
+"answer": "④",
+"solution": "과거의 일에 대한 아쉬움은 「I wish＋주어＋had＋과거분사」로 나타낸다. take의 과거분사는 taken이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-130fb380a9",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것을 고르시오.\n\n(A) Even after several failures, she made __________ attempts to solve the problem.\n(B) The discussion is still __________, so no final decision has been made.",
+"choices": [
+"persistent — ongoing",
+"ongoing — persistent",
+"temporary — ongoing",
+"persistent — ordinary",
+"ordinary — temporary"
+],
+"answer": "①",
+"solution": "(A)는 여러 번 실패한 뒤에도 시도를 계속했다는 내용이므로 persistent가 알맞다. (B)는 논의가 아직 진행 중이라는 뜻이므로 ongoing이 알맞아 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e448210fab",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 가정법 문장을 직설법으로 바르게 바꾼 것을 고르시오.\n\nIf Eric knew her phone number, he could call her now.",
+"choices": [
+"As Eric knows her phone number, he can call her now.",
+"As Eric didn't know her phone number, he couldn't call her then.",
+"As Eric doesn't know her phone number, he couldn't call her now.",
+"As Eric doesn't know her phone number, he can't call her now.",
+"As Eric hadn't known her phone number, he couldn't have called her."
+],
+"answer": "④",
+"solution": "가정법 과거의 knew와 could call은 현재 사실의 반대를 나타낸다. 실제 사실은 에릭이 전화번호를 모르며 지금 전화할 수 없다는 것이므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3d2194c57d",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것을 고르시오.\n\n• I wish I had __________ the blue jacket instead of the black one. (choose)\n• Kevin wishes he hadn't __________ all his money. (spend)\n• We wish we had __________ more time then. (have)",
+"choices": [
+"chose — spent — had",
+"chosen — spend — have",
+"chosen — spent — had",
+"chose — spend — had",
+"chosen — spent — have"
+],
+"answer": "③",
+"solution": "「wish＋had＋과거분사」에서는 각 동사를 과거분사형으로 써야 한다. choose, spend, have의 과거분사는 각각 chosen, spent, had이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-25da323e11",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오. 주어진 철자로 시작하고, 필요한 경우 문맥에 맞게 형태를 바꿀 것.\n\n(A) Her success came from her p__________ effort, even when the work was difficult.\n(그녀의 성공은 일이 어려울 때에도 계속된 끈질긴 노력에서 비롯되었다.)\n\n(B) The talks are still o__________, and the two sides have not reached a final decision.\n(회담은 아직 진행 중이며 양측은 최종 결정에 이르지 못했다.)",
+"selfGrade": true,
+"answer": "persistent, ongoing",
+"solution": "(A)는 어려움에도 계속되는 ‘끈질긴’ 노력을 뜻하므로 persistent가 알맞다. (B)는 회담이 아직 ‘진행 중인’ 상태이므로 ongoing을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3a8eb4ca97",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 가정법 문장을 같은 뜻의 직설법 문장으로 바꾸어 빈칸을 완성하시오.\n\nIf Sora were more careful, she could avoid such mistakes.\n→ As Sora __________ __________ careful, she __________ avoid such mistakes.",
+"selfGrade": true,
+"answer": "isn't more, can't",
+"solution": "가정법 과거는 현재 사실과 반대되는 내용을 나타낸다. 따라서 실제로는 소라가 더 주의 깊지 않아서 그러한 실수를 피할 수 없다는 뜻이다. 빈칸에는 isn't more와 can't가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f6ff0f051e",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오. 반드시 wish와 괄호 안의 동사를 사용할 것.\n\nI didn't save enough money, so I couldn't buy the bicycle then. (save)\n→ I __________ __________ __________ __________ enough money then.",
+"selfGrade": true,
+"answer": "wish I had saved",
+"solution": "이미 지나간 일에 대한 아쉬움이므로 「wish＋주어＋had＋과거분사」를 사용한다. save의 과거분사는 saved이므로 wish I had saved가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0caafe66cf",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 주제로 가장 알맞은 것은?\n\nM: What did you do in the space station?\nW: I watched many sunrises, ate space food, and grew vegetables.\nM: Was growing vegetables difficult?\nW: We used special bags because there was no gravity. The vegetables were fresh and tasty.",
+"choices": [
+"우주에서 볼 수 있는 일출의 색깔",
+"우주 정거장에서의 생활",
+"우주 식품을 만드는 방법",
+"지구에서 채소를 재배하는 이유",
+"특수 가방의 재료와 모양"
+],
+"answer": "②",
+"solution": "대화에서는 우주 정거장에서 본 일출, 먹은 음식, 재배한 채소를 두루 이야기한다. 따라서 대화 전체를 포괄하는 주제는 ‘우주 정거장에서의 생활’이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-510c7ebdbf",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nA worm on top of an apple wants to reach something sweet at the bottom. It can move along the outside of the apple, but that is a long way. If it goes through a wormhole, it can reach the bottom much faster. A wormhole in space could work in a similar way.",
+"choices": [
+"벌레는 사과의 단맛을 쉽게 감지하지 못한다.",
+"우주의 크기는 사과의 크기와 거의 같다.",
+"사과의 겉면을 따라가는 것이 언제나 안전하다.",
+"웜홀은 먼 곳으로 가는 지름길이 될 수 있다.",
+"우주에서는 위쪽과 아래쪽을 구분할 수 없다."
+],
+"answer": "④",
+"solution": "글은 사과 속 웜홀을 통과하는 벌레의 이동을 우주의 웜홀에 비유한다. 핵심은 웜홀이 먼 곳까지 빠르게 이동하게 하는 지름길이 될 수 있다는 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cbdcf6aba4",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nEinstein explained that space and time are connected as space-time. He also thought that space-time could be bent. Imagine two dots far apart on a flat sheet of paper. If the paper is folded until the dots meet, a hole can connect them directly. In a similar way, a wormhole may connect two distant parts of space.",
+"choices": [
+"Why Space Has No Gravity",
+"Folding Space to Connect Distant Places",
+"The Best Shape for a Spaceship",
+"How Einstein Grew Vegetables in Space",
+"Two Dots That Can Never Meet"
+],
+"answer": "②",
+"solution": "종이를 접어 멀리 떨어진 두 점을 연결하는 과정은 휘어진 시공간과 웜홀을 설명하기 위한 비유이다. 따라서 멀리 떨어진 공간을 연결한다는 내용을 담은 ②가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6903279087",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 한 문장으로 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nWormholes may allow us to reach extremely distant places quickly. However, scientists have not found an actual wormhole yet. Moreover, a wormhole might be so unstable that a spaceship entering it could be damaged.\n\nA wormhole could provide a (A)________ route through space, but using it is not yet (B)________.",
+"choices": [
+"slower - dangerous",
+"shorter - practical",
+"safer - theoretical",
+"longer - impossible",
+"wider - successful"
+],
+"answer": "②",
+"solution": "웜홀은 먼 곳에 빠르게 도달하게 하므로 더 짧은 경로가 될 수 있다. 그러나 실제 웜홀이 발견되지 않았고 불안정할 수 있으므로 아직 실용적이지 않다는 요약이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3623cdd720",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 제목으로 가장 알맞은 것은?\n\nSci Teen: If wormholes are shortcuts, can we travel through one soon?\nDr. Sci: We cannot be sure. They exist only in theory, and they may be very unstable.\nSci Teen: Then should we stop studying them?\nDr. Sci: No. People have achieved many things that once seemed impossible. Continued exploration and research may help us find a way.",
+"choices": [
+"Wormholes: Impossible Ideas We Must Forget",
+"Space Travel Without Any Scientific Research",
+"Wormholes: Difficulties and Continuing Possibilities",
+"The Proven Safety of Traveling Through Wormholes",
+"Why All Spaceships Are Broken in Space"
+],
+"answer": "③",
+"solution": "대화는 웜홀이 이론에만 존재하고 불안정하다는 어려움과, 연구를 계속하면 가능성이 있다는 희망을 함께 제시한다. 두 측면을 모두 포함하는 제목은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-19e0e086c4",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nOn a flat sheet of paper, two dots at opposite ends are far apart. Folding the paper can bring them together, and a hole through the folded paper can connect them. This does not prove that people can safely travel through a wormhole. It simply helps us understand how bending space-time could connect distant places.",
+"choices": [
+"종이를 접으면 실제 웜홀을 즉시 만들 수 있다.",
+"웜홀 여행의 안전성은 종이 실험으로 증명되었다.",
+"두 점 사이의 거리는 종이의 크기와 관계가 없다.",
+"종이를 접는 비유는 휘어진 시공간의 연결 원리를 이해하게 한다.",
+"시공간은 평평하므로 멀리 떨어진 곳을 연결할 수 없다."
+],
+"answer": "④",
+"solution": "종이와 두 점은 시공간이 휘어져 먼 곳들이 연결되는 원리를 쉽게 보여 주는 비유이다. 이 비유가 실제 웜홀 여행의 가능성이나 안전성을 증명하는 것은 아니므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8290862019",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 가장 잘 요약한 것은?\n\nLiving in a space station offers unusual experiences. An astronaut can see sunrises many times while the station moves around Earth. Astronauts can also eat vegetables grown there. Since there is no gravity, however, the vegetables must be grown in special bags that help their roots grow.\n\nThe passage mainly explains that living in a space station ________.",
+"choices": [
+"offers special experiences but requires special methods",
+"is possible only when astronauts avoid fresh food",
+"is mainly about watching Earth without eating",
+"makes it easier to grow vegetables than on Earth",
+"prevents astronauts from seeing more than one sunrise"
+],
+"answer": "①",
+"solution": "글은 여러 번의 일출과 직접 기른 채소라는 특별한 경험을 제시한다. 동시에 무중력 때문에 특수 가방이 필요하다고 설명하므로, 특별한 경험과 특별한 방법을 함께 나타낸 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-961dc603ff",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 요약문에서 빈칸 (A)~(C)에 들어갈 말을 본문의 내용에 맞게 각각 한 단어의 영어로 쓰시오. 첫 글자가 주어져 있다.\n\nSci Teen: A wormhole could take us to a place far away very quickly, right?\nDr. Sci: In theory, yes. Bending space-time could bring distant parts of space closer together.\nSci Teen: Then a wormhole would be a useful shortcut.\nDr. Sci: Possibly, but no actual wormhole has been found. We also do not know how to pass through one safely because it could be unstable.\n\nBy reducing the apparent (A)d________ between two places, a wormhole might serve as a (B)s________. However, wormhole travel remains (C)t________ and may not be safe.",
+"selfGrade": true,
+"answer": "distance, shortcut, theoretical",
+"solution": "휘어진 시공간은 두 장소 사이의 거리를 줄이는 것처럼 작용하므로 (A)는 distance이다. 웜홀은 빠른 이동 경로이므로 (B)는 shortcut이며, 아직 실제로 발견되지 않아 (C)는 theoretical이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bc6f6f5367",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 표현과 뜻이 가장 가까운 것은?\n\nThe father told his sons to [live by] his advice throughout their lives.",
+"choices": [
+"forget",
+"follow",
+"explain",
+"change",
+"question"
+],
+"answer": "②",
+"solution": "live by는 원칙이나 조언 등을 ‘따르며 살다’라는 뜻이다. 따라서 조언을 따르라는 문맥에서 follow로 바꾸어 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3438d226f6",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 대괄호 안 표현에 대한 우리말 뜻으로 알맞은 것은?\n\nPuru visited his brother to [find out] why their situations were different.",
+"choices": [
+"잊어버리다",
+"나누어 주다",
+"돌아오다",
+"알아내다",
+"정착하다"
+],
+"answer": "④",
+"solution": "find out은 ‘알아내다’라는 뜻이다. Puru는 자신과 형제의 처지가 다른 이유를 알아내려고 방문했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-32ea9e401d",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 대괄호 안 표현을 바꾸어 쓸 때, 문장의 의미가 가장 잘 유지되는 것은?\n\nPuneet greeted Puru [with open arms].",
+"choices": [
+"warmly",
+"secretly",
+"angrily",
+"carelessly",
+"unwillingly"
+],
+"answer": "①",
+"solution": "with open arms는 ‘두 팔 벌려, 진심으로 환영하며’라는 뜻이다. 따라서 ‘따뜻하게’라는 뜻의 warmly가 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3f8087c720",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "우리말과 일치하도록 괄호 안의 말을 활용하여 각 빈칸에 들어갈 표현을 쓰시오. 필요한 경우 단어의 형태를 바꾸시오.\n\n(1) 나는 어제 자전거를 수리받았다.\nI ______________________________ yesterday.\n(my bicycle / have / repair)\n\n(2) 너는 그들에게 상자를 옮기게 할 수 있다.\nYou can ______________________________.\n(the boxes / have / move / them)",
+"selfGrade": true,
+"answer": "(1) had my bicycle repaired (2) have them move the boxes",
+"solution": "사역동사 have 뒤에서 목적어가 동작을 받으면 목적격 보어로 과거분사를 쓴다. (1)은 자전거가 수리되는 관계이므로 had my bicycle repaired가 알맞다. (2)는 그들이 직접 상자를 옮기는 관계이므로 have them move the boxes가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8ea8edf3bf",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영작한 문장 중 어법과 의미가 모두 알맞은 것은?\n\n나는 그에게 그 창문을 청소하게 했지만, 그 문은 청소받지 않았다.",
+"choices": [
+"I had him cleaned the window, but I didn't have the door cleaned.",
+"I had him clean the window, but I didn't have the door clean.",
+"I had him to clean the window, but I didn't have the door cleaned.",
+"I had him clean the window, but I didn't had the door cleaned.",
+"I had him clean the window, but I didn't have the door cleaned."
+],
+"answer": "⑤",
+"solution": "him은 청소하는 주체이므로 have 뒤의 목적격 보어로 동사원형 clean을 쓴다. the door는 청소되는 대상이므로 과거분사 cleaned를 써야 한다. 또한 didn't 뒤에는 동사원형 have가 와야 하므로 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f710408e57",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 대한 답을 완성하시오.\n\nAfter their father died, Puru and Puneet each received a share of his wealth and settled in different cities. Five years later, Puru had spent all his money, although he had carefully followed his father's advice. Puneet, however, was richer than ever. Unable to understand what had gone wrong, Puru went to see his brother.\n\nQ. Why did Puru go to see Puneet?\n→ He wanted to ______________________________.\n\n[조건]\n• find out을 포함하여 7단어로 쓸 것.\n• ‘자신이 어디에서 잘못했는지 알아내다’라는 뜻이 되게 쓸 것.\n• 대명사의 시제와 어순은 위 답변 문장에 맞출 것.",
+"selfGrade": true,
+"answer": "find out where he had gone wrong",
+"solution": "Puru가 형제를 방문한 목적은 자신이 어디에서 잘못했는지 알아내는 것이었다. find out 뒤의 간접의문문은 ‘의문사＋주어＋동사’의 어순으로 쓴다. 방문하기 전에 있었던 잘못을 나타내므로 had gone wrong을 쓰며, 전체는 7단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-43ac46ec8c",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 각각 사역동사 have를 사용한 한 문장으로 바꾸시오.\n\n(1) I asked them to check the lights. They checked them.\n→ I ______________________________.\n\n(2) Someone checked the lights for me. I did not check them myself.\n→ I ______________________________.\n\n[조건]\n• 두 답 모두 과거시제로 쓸 것.\n• (1)은 them을 목적어로 쓰고, 빈칸에 5단어를 쓸 것.\n• (2)는 the lights를 목적어로 쓰고, 빈칸에 4단어를 쓸 것.\n• 두 답 모두 check를 알맞은 형태로 포함할 것.",
+"selfGrade": true,
+"answer": "(1) had them check the lights (2) had the lights checked",
+"solution": "(1)은 them이 점검하는 주체이므로 ‘had＋목적어＋동사원형’ 구조를 쓴다. (2)는 the lights가 점검되는 대상이므로 ‘had＋목적어＋과거분사’ 구조를 쓴다. 같은 점검 상황이라도 have 바로 뒤에 놓이는 목적어와 동작의 관계에 따라 check의 형태가 달라진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9c5bce39d8",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 일치하도록 주어진 단어를 모두 사용하여 한 문장을 완성하시오.\n\n나는 그들에게 상자들을 옮기게 하지 않았지만, 내 자전거는 수리받았다.\n\n[주어진 단어]\nI / have / them / move / the boxes / but / I / have / my bicycle / repair\n\n[조건]\n• 주어진 단어의 순서를 유지할 것.\n• 두 절 모두 과거시제로 쓰고, 첫 번째 절만 부정문으로 만들 것.\n• 필요한 경우 동사의 형태를 바꾸고, 부정문을 만드는 데 필요한 단어만 추가할 것.\n• 축약형을 쓰지 말 것.",
+"selfGrade": true,
+"answer": "I did not have them move the boxes, but I had my bicycle repaired.",
+"solution": "첫 번째 절은 과거 부정문이므로 did not 뒤에 have를 쓰며, them이 상자를 옮기는 주체이므로 move는 동사원형으로 유지한다. 두 번째 절에서는 my bicycle이 수리되는 대상이므로 repaired를 쓴다. 두 절의 have는 각각 부정문의 동사원형 have와 과거형 had로 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9496949ba5",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이에 해당하는 낱말로 알맞은 것은?\n\nthe amount of money that you must pay to buy something",
+"choices": [
+"gift",
+"price",
+"opinion",
+"effect",
+"furniture"
+],
+"answer": "②",
+"solution": "영영풀이는 ‘어떤 것을 사기 위해 지불해야 하는 돈의 액수’를 뜻한다. 이에 해당하는 낱말은 price(가격)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d32b2fcef6",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 immediately와 의미가 가장 가까운 것은?\n\nAfter buying the coat, Lisa immediately notices a problem with her pants.\n\n※ 밑줄 친 낱말: immediately",
+"choices": [
+"at last",
+"by chance",
+"in secret",
+"right away",
+"once again"
+],
+"answer": "④",
+"solution": "immediately는 ‘즉시, 곧바로’라는 뜻이다. 따라서 같은 의미의 표현인 right away로 바꾸어 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5357efdb4a",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 replace에 대한 뜻풀이로 알맞은 것은?\n\nDiderot decided to replace much of his furniture after receiving the gown.",
+"choices": [
+"기존의 것을 다른 것으로 바꾸다",
+"물건의 가격을 알아보다",
+"받은 선물을 돌려주다",
+"서로 다른 것을 비교하다",
+"물건을 한곳에 모아 두다"
+],
+"answer": "①",
+"solution": "replace는 ‘교체하다, 대신하다’라는 뜻이다. 이 문장에서는 디드로가 기존 가구를 다른 가구로 바꾸기로 했다는 의미로 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d5a945b785",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 두 문장의 의미가 같아지도록 빈칸에 들어갈 말로 알맞은 것은?\n\nBuying one new item can lead to additional purchases.\n= __________ one new item can lead to additional purchases.",
+"choices": [
+"Receiving",
+"Comparing",
+"Purchasing",
+"Mentioning",
+"Replacing"
+],
+"answer": "③",
+"solution": "buy와 purchase는 모두 ‘구매하다’라는 뜻이다. Buying과 같은 형태인 Purchasing을 넣으면 두 문장의 의미가 같아진다. Receiving은 ‘받는 것’이므로 돈을 주고 산다는 의미를 나타내지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3a9c4f0967",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nLisa wants her new coat, pants, and bag to look good together. She spends most of her money on new items to __________ her new look.",
+"choices": [
+"receive",
+"approach",
+"explain",
+"compare",
+"complete"
+],
+"answer": "⑤",
+"solution": "리사는 새 코트, 바지, 가방이 서로 어울리기를 바라며 새 물건에 돈을 쓴다. 따라서 새로운 차림을 ‘완성하다’라는 뜻의 complete가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5d6a41ef6a",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 discount를 가장 바르게 설명한 것은?\n\nThe salesperson offers Nathan a discount on the headphones. Nathan can buy them for less than the original price.\n\n※ 설명할 낱말: discount",
+"choices": [
+"money paid for bringing an item to a buyer",
+"a reduction in the usual price of an item",
+"a gift given to someone on a special day",
+"money returned when a buyer takes an item back",
+"the total amount of money a buyer has"
+],
+"answer": "②",
+"solution": "원래 가격보다 적은 돈으로 물건을 살 수 있게 한다는 문맥에서 discount는 ‘할인’을 뜻한다. 따라서 보통 가격을 낮추는 것을 설명한 ②가 알맞다. ④는 할인과 달리 물건을 반품할 때 돌려받는 돈을 설명한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-dd241f2a4b",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(C)에서 문맥상 알맞은 낱말을 바르게 연결한 것은?\n\nAn initial price can (A)[affect / replace] a shopper's opinion of a later price. After seeing the original price, Nathan considers the sale price a better deal. However, a price that is (B)[lower / higher] than the original one is not necessarily cheap. The first price acts as an anchor and keeps his thoughts (C)[fixed / unplanned] on that starting point.\n\n선지는 (A)－(B)－(C)의 순서이다.",
+"choices": [
+"replace－lower－fixed",
+"affect－higher－fixed",
+"affect－lower－unplanned",
+"affect－lower－fixed",
+"replace－higher－unplanned"
+],
+"answer": "④",
+"solution": "처음 본 가격은 나중 가격에 대한 생각에 ‘영향을 미치므로’ (A)는 affect이다. 원래 가격보다 ‘낮아도’ 반드시 저렴하지는 않으므로 (B)는 lower이다. 닻처럼 생각을 처음 가격에 ‘고정하는’ 것이므로 (C)는 fixed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-338f583baf",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 설명하는 anchor의 비유적 역할을 고려할 때, 이 낱말의 기본 의미에 대한 영영풀이로 가장 알맞은 것은?\n\nA shopper may continue to judge a sale price by the price seen first. This first price becomes an anchor: the shopper's thoughts remain tied to it even after a different price is presented.",
+"choices": [
+"a device used to find the direction in which a ship is traveling",
+"a machine that supplies power to move a ship forward",
+"a heavy object lowered to the bottom of the water to hold a ship in place",
+"a structure beside the water where people get on or off a ship",
+"a large piece of cloth that catches the wind to move a ship"
+],
+"answer": "③",
+"solution": "글에서 anchor는 소비자의 생각을 처음 가격에 묶어 두는 기준으로 쓰였다. 이러한 비유는 배를 한곳에 머물게 하는 ‘닻’의 기능에서 나온다. 따라서 물 밑으로 내려 배를 고정하는 무거운 물체를 설명한 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-55514ca52c",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 아래 두 영영풀이와 문장 (A), (B)를 모두 만족하는 낱말을 쓰시오.\n\nThe Diderot effect describes how buying a new item can result in further purchases. These purchases are unplanned: the buyer did not originally intend to buy the additional items.\n\n[영영풀이]\n• 동사: to buy something\n• 명사: something that you buy\n\n(A) A person may __________ more items because of the Diderot effect.\n(B) Each additional __________ may be something the person did not plan to buy.\n\n[조건]\n• 본문에 쓰인 낱말 하나를 찾아 형태를 바꿀 것.\n• (A), (B)에 공통으로 들어가는 한 단어를 쓸 것.",
+"selfGrade": true,
+"answer": "purchase",
+"solution": "본문의 purchases는 ‘구매한 물건들’ 또는 ‘구매들’을 뜻하며, 단수형은 purchase이다. purchase는 동사로 ‘구매하다’, 명사로 ‘구매한 물건’이라는 뜻을 모두 가진다. (A)는 may 뒤이므로 동사원형이, (B)는 Each additional 뒤이므로 단수 명사가 필요하여 두 빈칸 모두 purchase가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
 }
 ]

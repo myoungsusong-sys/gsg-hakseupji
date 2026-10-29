@@ -1,0 +1,173 @@
+[
+{
+"id": "fill-b3dd0601c1",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nAt Phillip Island, visitors watched little blue penguins return from the sea. To protect the birds, visitors had to remain (A)[quiet / noisy] while watching them. Camera flashes were not allowed because they might (B)[scare / please] the penguins. The penguins came back to their burrows to feed their young and (C)[rest / hunt] after fishing at sea.",
+"choices": [
+"quiet — scare — rest",
+"noisy — scare — rest",
+"quiet — please — rest",
+"quiet — scare — hunt",
+"noisy — please — hunt"
+],
+"answer": "①",
+"solution": "펭귄을 보호하며 관찰하려면 조용히 있어야 하므로 (A)에는 quiet가 적절하다. 카메라 플래시는 펭귄을 놀라게 할 수 있으므로 (B)는 scare이며, 바다에서 먹이를 잡고 돌아온 펭귄은 새끼에게 먹이를 주고 쉬므로 (C)는 rest이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-aee0c40bea",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nUluru's appearance made a strong impression on the traveler. The rock looked (A)[enormous / tiny], and its red surface stood out against the blue sky. Although its original color was gray, oxidation of the iron in it made it (B)[red / green]. Watching its changing colors at sunset became a (C)[wonderful / terrible] experience that the traveler remembered with admiration.",
+"choices": [
+"tiny — red — wonderful",
+"enormous — green — wonderful",
+"enormous — red — terrible",
+"tiny — green — terrible",
+"enormous — red — wonderful"
+],
+"answer": "⑤",
+"solution": "울루루의 거대한 크기에 감탄하는 내용이므로 (A)는 enormous이다. 철 성분의 산화로 붉어졌으므로 (B)는 red이고, 감탄하며 기억하는 일몰 경험이므로 (C)는 wonderful이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-42f29c78cb",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe traveler went snorkeling near Lady Elliot Island to get a (A)[closer / more distant] view of the coral reef. The reef's many colors made it look (B)[beautiful / unattractive]. Later, the traveler heard that coral bleaching was damaging parts of the Great Barrier Reef and hoped those areas would (C)[recover / worsen].",
+"choices": [
+"closer — unattractive — recover",
+"more distant — beautiful — recover",
+"closer — beautiful — recover",
+"closer — beautiful — worsen",
+"more distant — unattractive — worsen"
+],
+"answer": "③",
+"solution": "산호초를 더 가까이 보기 위해 스노클링을 했으므로 (A)는 closer이다. 다채로운 색채를 긍정적으로 묘사하므로 (B)는 beautiful이며, 백화 현상으로 손상된 지역에 바라는 것은 회복이므로 (C)는 recover이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2ec9558650",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe penguin jumpers displayed at the visitor center were more than attractive objects. Following an oil spill, they served a (A)[practical / purely decorative] purpose. By covering the penguins' bodies, they helped (B)[prevent / encourage] the birds from swallowing oil on their feathers. Learning about this use of clothing showed the traveler how (C)[inventive / indifferent] people had been in their efforts to protect the birds.",
+"choices": [
+"practical — encourage — inventive",
+"practical — prevent — inventive",
+"purely decorative — prevent — inventive",
+"practical — prevent — indifferent",
+"purely decorative — encourage — indifferent"
+],
+"answer": "②",
+"solution": "점퍼는 기름을 삼키지 않도록 돕는 실제 기능이 있었으므로 (A)는 practical, (B)는 prevent이다. 옷을 활용해 펭귄을 보호한 방식은 창의적인 노력을 보여 주므로 (C)는 inventive가 적절하다. indifferent는 ‘무관심한’이라는 뜻으로 보호하려는 노력과 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-34c331a384",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nDuring the Kakadu tour, Victor helped the visitors understand Aboriginal rock art. The images (A)[portrayed / erased] stories through figures such as a spirit making lightning and a hunter with a spear. An X-ray-style fish drawing revealed its (B)[internal / external] parts rather than merely its outline. This allowed viewers to identify which parts were (C)[edible / poisonous]—that is, suitable for eating.",
+"choices": [
+"portrayed — external — edible",
+"erased — internal — edible",
+"portrayed — internal — poisonous",
+"portrayed — internal — edible",
+"erased — external — poisonous"
+],
+"answer": "④",
+"solution": "암벽화는 원주민의 이야기를 그림으로 나타내므로 (A)는 portrayed이다. 엑스레이 양식은 물고기의 내부를 드러내므로 (B)는 internal이며, suitable for eating이라는 설명에 해당하는 (C)는 edible이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4da5bf5f44",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nSeeing many manta rays while snorkeling did not mean that their species was safe. Despite their (A)[abundance / scarcity] in the traveler's immediate view, they were endangered. Similarly, the colorful reef that impressed the traveler did not prove that the entire reef system was in good (B)[condition / danger]. The later news of bleaching elsewhere therefore gave the traveler reason for (C)[concern / relief], even after such a beautiful underwater experience.",
+"choices": [
+"abundance — condition — concern",
+"scarcity — condition — concern",
+"abundance — danger — concern",
+"abundance — condition — relief",
+"scarcity — danger — relief"
+],
+"answer": "①",
+"solution": "여행자가 눈앞에서 많은 만타가오리를 보았다는 국지적 상황을 나타내므로 (A)는 abundance이다. 일부 산호초가 아름답다는 사실만으로 전체 산호초의 상태가 좋다고 할 수는 없으므로 (B)는 condition이다. 다른 지역의 백화 현상은 안도보다 걱정을 불러일으키므로 (C)는 concern이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-06e0ab5a99",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nUluru's red appearance might lead a visitor to assume that red was its original color. The gray areas visible in some caves, however, (A)[challenge / support] that assumption. Its familiar redness resulted from iron reacting with oxygen, a process that occurred (B)[gradually / instantaneously] over time. The sunset presented a different kind of color change: the sequence of visible colors was (C)[dependent on / independent of] the sun's position and the strength of its light.",
+"choices": [
+"support — gradually — dependent on",
+"challenge — instantaneously — dependent on",
+"challenge — gradually — independent of",
+"support — instantaneously — independent of",
+"challenge — gradually — dependent on"
+],
+"answer": "⑤",
+"solution": "동굴에서 보이는 회색은 붉은색이 원래 색이었다는 추정에 의문을 제기하므로 (A)는 challenge이다. 산화가 시간에 걸쳐 일어났으므로 (B)는 gradually이다. 일몰 때 보이는 색의 변화는 태양의 위치와 빛의 세기에 따라 달라지므로 (C)는 dependent on이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9a189affff",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nAt Phillip Island, two forms of penguin protection served different purposes. The viewing platforms and the ban on photography placed limits on visitors. These limits were intended to (A)[minimize / intensify] the disturbance associated with human observation. The jumpers used after the oil spill, by contrast, addressed a danger already present on the birds themselves. Their value lay less in their visual appeal than in their ability to (B)[inhibit / facilitate] the swallowing of oil. Thus, the attractive display at the visitor center should not lead viewers to (C)[overlook / overstate] the protective function that had made the jumpers useful.",
+"choices": [
+"minimize — facilitate — overlook",
+"intensify — inhibit — overlook",
+"minimize — inhibit — overlook",
+"minimize — inhibit — overstate",
+"intensify — facilitate — overstate"
+],
+"answer": "③",
+"solution": "관람 제한의 목적은 인간의 관찰로 생기는 방해를 최소화하는 것이므로 (A)는 minimize이다. less in A than in B는 A보다 B에 가치가 있다는 뜻이며, 점퍼의 핵심 기능은 기름을 삼키는 것을 억제하는 것이므로 (B)는 inhibit이다. 매력적인 전시 모습 때문에 실제 보호 기능을 간과해서는 안 된다는 결론이므로 (C)는 overlook이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-69d8d3829b",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe traveler's observations of Uluru and the Great Barrier Reef illustrate why appearance requires interpretation. Uluru's gray cave surfaces did not contradict the explanation of its red exterior; they were (A)[consistent / incompatible] with the account that the rock had originally been gray before oxidation gave it its familiar color. At the reef, however, the impressive colors seen near Lady Elliot Island were insufficient to (B)[warrant / undermine] the conclusion that the entire reef system was healthy. Reports of bleaching elsewhere did not erase the beauty of the local scene, but they did (C)[qualify / reinforce] any broader claim of good health based on that scene alone.",
+"choices": [
+"consistent — undermine — qualify",
+"consistent — warrant — qualify",
+"incompatible — warrant — qualify",
+"consistent — warrant — reinforce",
+"incompatible — undermine — reinforce"
+],
+"answer": "②",
+"solution": "회색 동굴 표면은 울루루가 원래 회색이었다는 설명과 일치하므로 (A)는 consistent이다. 일부 지역의 아름다운 색만으로 전체 산호초가 건강하다는 결론을 정당화하기에는 불충분하므로 (B)는 warrant이다. 다른 지역의 백화 현상은 그러한 일반화의 범위를 제한하므로 (C)는 qualify이며, 여기서는 ‘자격을 주다’가 아니라 ‘단서를 달거나 한정하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+}
+]

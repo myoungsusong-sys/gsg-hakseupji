@@ -1,0 +1,155 @@
+[
+{
+"id": "fill-91a65cdde3",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nSome foods may help us prepare for a changing climate. Cacti can grow well even where there is little water, so they are (A)[valuable / useless] as a future crop. Seaweed contains plenty of vitamins and minerals, making it a (B)[nutritious / harmful] food. Insects also provide protein while using fewer resources than other protein sources. This makes them a more (C)[sustainable / wasteful] choice.",
+"choices": [
+"valuable — nutritious — sustainable",
+"valuable — harmful — sustainable",
+"useless — nutritious — sustainable",
+"valuable — nutritious — wasteful",
+"useless — harmful — wasteful"
+],
+"answer": "①",
+"solution": "물이 부족한 곳에서도 자라는 선인장은 미래 작물로서 가치가 있으므로 valuable이 알맞다. 비타민과 무기질이 풍부한 해조류에는 nutritious가, 생산에 더 적은 자원이 필요한 곤충에는 sustainable이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ac6d84ef24",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nEnset is an important food plant in Ethiopia. Its fruit should not be eaten because it is (A)[unsafe / nutritious]. However, people can turn its roots and stems into ingredients for bread. Many Ethiopians (B)[depend on / give up] enset as a source of food. Researchers believe that it could help (C)[feed / starve] more people as the world becomes warmer.",
+"choices": [
+"nutritious — depend on — feed",
+"unsafe — give up — feed",
+"unsafe — depend on — starve",
+"unsafe — depend on — feed",
+"nutritious — give up — starve"
+],
+"answer": "④",
+"solution": "먹어서는 안 되는 열매이므로 unsafe가 적절하다. 에티오피아 사람들이 식량으로 의존한다는 뜻의 depend on과, 더 많은 사람에게 식량을 공급한다는 뜻의 feed가 문맥에 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-99d1b40d38",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nLab-grown meat has benefits, but its production still raises questions. Producing it can (A)[require / save] a large amount of energy, which is one reason for criticism. Using renewable energy may help (B)[solve / worsen] this problem. In addition, some companies use plant-based culture media to (C)[replace / preserve] those made from animals.",
+"choices": [
+"save — solve — replace",
+"require — worsen — replace",
+"require — solve — preserve",
+"save — worsen — preserve",
+"require — solve — replace"
+],
+"answer": "⑤",
+"solution": "많은 에너지가 필요하다는 비판이므로 require가 알맞다. 재생 에너지는 문제를 해결하는 데 도움이 되므로 solve가, 식물성 배양액으로 동물성 배양액을 대체한다는 뜻으로 replace가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2723e83bf1",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nA food does not have to be familiar everywhere to have value for the future. Although enset remains largely (A)[unfamiliar / essential] outside Ethiopia, it supports many people within the country. Likewise, the value of cacti is not limited to their nutrients. Their ability to survive with little water makes them especially (B)[beneficial / unnecessary] as the climate changes. Insects offer another possibility: their relatively small demand for resources can (C)[lessen / intensify] the environmental burden of food production.",
+"choices": [
+"essential — beneficial — lessen",
+"unfamiliar — beneficial — lessen",
+"unfamiliar — unnecessary — lessen",
+"essential — unnecessary — intensify",
+"unfamiliar — beneficial — intensify"
+],
+"answer": "②",
+"solution": "엔셋은 에티오피아 밖에서는 잘 알려지지 않았으므로 unfamiliar이 알맞다. 적은 물로 생존하는 선인장의 특성은 기후 변화에 대응하는 데 유익하므로 beneficial이 적절하다. 곤충 생산의 적은 자원 수요는 환경 부담을 줄이므로 lessen이 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6978eb5601",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nLab-grown meat is sometimes criticized for its energy use. Nevertheless, conventional livestock farming produces (A)[greater / smaller] greenhouse gas emissions than the lab-grown meat industry. This comparison does not mean that concerns about lab-grown meat should be (B)[dismissed / emphasized] as unimportant. Its production still needs improvement. A simpler production process and renewable energy could help (C)[resolve / create] some of the difficulties already identified.",
+"choices": [
+"smaller — dismissed — resolve",
+"greater — emphasized — resolve",
+"greater — dismissed — resolve",
+"greater — dismissed — create",
+"smaller — emphasized — create"
+],
+"answer": "③",
+"solution": "전통적인 가축 사육의 온실가스 배출량이 더 많으므로 greater가 알맞다. 그렇다고 배양육에 관한 우려를 중요하지 않다고 일축해서는 안 된다는 뜻이므로 dismissed가 적절하다. 공정 단순화와 재생 에너지는 기존 문제를 해결하는 방안이므로 resolve가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2e48e51616",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe use of insects as food is not a recent invention. Their long history in various diets shows that they are an (A)[established / unfamiliar] source of protein in many cultures. Their nutritional value is accompanied by another advantage: producing them places a relatively (B)[modest / heavy] demand on land, water, and feed. Seaweed is also attracting interest. Its use as food is becoming less geographically (C)[restricted / widespread] as it grows more common beyond Korea, Japan, and China.",
+"choices": [
+"established — modest — restricted",
+"unfamiliar — modest — restricted",
+"established — heavy — restricted",
+"established — modest — widespread",
+"unfamiliar — heavy — widespread"
+],
+"answer": "①",
+"solution": "곤충은 여러 문화에서 오랫동안 먹어 왔으므로 established가 적절하다. 다른 단백질 공급원보다 자원이 적게 필요하므로 수요가 비교적 적다는 뜻의 modest가 알맞다. 해조류 섭취가 다른 지역으로 퍼지므로 지리적 제한이 줄어든다는 less restricted가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7e26beaf25",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 흐름에 맞게 빈칸 (A)~(E)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고, 형태를 바꾸지 마시오.\n\nThe fact that lab-grown meat production does not kill animals should not be taken to mean that it can (A)________ animal cruelty altogether. Cells are still obtained from animals, and animal-derived culture media have also raised concerns. An ethical process must therefore seek to (B)________ suffering rather than regard it as unavoidable. The environmental comparison requires similar care. Conventional livestock farming releases more greenhouse gases, but this does not (C)________ the claim that lab-grown meat production requires substantial energy. Such criticism need not (D)________ efforts to improve production: simpler processes and renewable energy may help (E)________ the concerns.\n\n<보기>\naddress / confirm / discourage / eliminate / intensify / minimize / overlook / preserve / refute / worsen",
+"selfGrade": true,
+"answer": "eliminate, minimize, refute, discourage, address",
+"solution": "동물을 죽이지 않는다는 사실만으로 학대를 완전히 없앤다고 할 수는 없으므로 (A)는 eliminate이며, 윤리적 생산이 추구해야 할 것은 고통의 최소화이므로 (B)는 minimize이다. 기존 축산업의 배출량이 더 많다는 사실은 배양육 생산에 상당한 에너지가 필요하다는 주장을 반박하지 못하므로 (C)는 refute이다. 비판이 개선 노력을 위축시킬 필요는 없고 개선책이 우려를 다룰 수 있다는 흐름이므로 (D)는 discourage, (E)는 address가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6f03ea01ce",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 흐름에 맞게 빈칸 (A)~(E)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고, 형태를 바꾸지 마시오.\n\nEnset illustrates why a crop's limited international recognition should not be confused with limited importance. Although it is (A)________ outside Ethiopia, it already provides food for many people there. Nor does its inedible fruit make the entire plant (B)________ as food: its stems and roots can be processed for bread. Cacti offer a different lesson. Their ability to grow under conditions that are far from (C)________ makes them valuable as the climate changes. Their usefulness is not (D)________ to providing nutrients; it also lies in their ability to thrive in dry environments. Thus, a harsh environment does not necessarily (E)________ successful crop growth, as cacti demonstrate.\n\n<보기>\nconfined / favorable / familiar / guarantee / irrelevant / nutritious / prevent / unknown / unsuitable / vulnerable",
+"selfGrade": true,
+"answer": "unknown, unsuitable, favorable, confined, prevent",
+"solution": "국제적 인지도가 낮다는 설명에 따라 (A)는 unknown이며, 열매를 먹을 수 없다고 식물 전체가 식용으로 부적합한 것은 아니므로 (B)는 unsuitable이다. 선인장은 생육에 유리하다고 보기 어려운 조건에서도 자라므로 (C)는 favorable이다. 유용성이 영양 공급에 한정되지 않는다는 뜻으로 (D)는 confined이며, 척박한 환경이 반드시 생장을 막지는 않는다는 뜻으로 (E)는 prevent가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-44197ba2fe",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 흐름에 맞게 빈칸 (A)~(E)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고, 형태를 바꾸지 마시오.\n\nCalling insects a future food should not (A)________ the fact that people in various cultures have eaten them for centuries. Their environmental appeal does not come from a need to (B)________ the resources used in production. On the contrary, compared with other protein sources, they require fewer resources, which helps (C)________ the environmental burden of our diets. Seaweed likewise combines nutritional value with another benefit: it is attracting attention for helping to (D)________ soil degradation. Its growing use beyond the countries where it is mostly eaten also shows that its geographical reach is beginning to (E)________.\n\n<보기>\naggravate / conceal / contract / expand / expose / increase / reduce / require / tackle / tolerate",
+"selfGrade": true,
+"answer": "conceal, increase, reduce, tackle, expand",
+"solution": "곤충을 미래 식량이라고 부르더라도 오랜 식용 역사가 가려져서는 안 된다는 뜻이므로 (A)는 conceal이다. 환경적 장점은 자원 사용을 늘리는 데서 나오는 것이 아니며 오히려 적은 자원 사용으로 부담을 줄이므로 (B)는 increase, (C)는 reduce이다. 해조류는 토양 황폐화에 대처하는 데 도움이 되므로 (D)는 tackle이며, 섭취 지역이 넓어지므로 (E)는 expand가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+}
+]

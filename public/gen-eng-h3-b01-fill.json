@@ -1,0 +1,173 @@
+[
+{
+"id": "fill-4377e6c3fe",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nScience is not an activity for professional researchers alone. Ordinary people can also (A)[contribute / object] to scientific progress. People who join research projects out of personal interest are called citizen scientists. Their curiosity can lead them to (B)[participate / hesitate] in scientific research, and their efforts can produce (C)[valuable / worthless] results.",
+"choices": [
+"contribute — participate — valuable",
+"object — participate — valuable",
+"contribute — hesitate — valuable",
+"object — hesitate — worthless",
+"contribute — participate — worthless"
+],
+"answer": "①",
+"solution": "일반인도 과학 발전에 기여하고 연구에 참여할 수 있다는 내용이므로 contribute와 participate가 알맞다. 이러한 노력의 긍정적인 결과를 나타내야 하므로 (C)에는 valuable이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6c0a3cae49",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nKevin Schawinski’s research involved putting galaxy images into groups based on their (A)[shape / price]. Although the images appeared similar, there were small differences between them. He therefore needed to examine the images (B)[individually / carelessly]. With so many images to examine, the task was (C)[time-consuming / instant].",
+"choices": [
+"price — individually — instant",
+"shape — carelessly — time-consuming",
+"price — carelessly — time-consuming",
+"shape — individually — time-consuming",
+"shape — individually — instant"
+],
+"answer": "④",
+"solution": "은하 이미지를 형태에 따라 분류하는 작업이므로 (A)는 shape이다. 미세한 차이를 확인하려면 이미지를 개별적으로 살펴야 하고 시간이 많이 걸리므로 individually와 time-consuming이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0bbf65a687",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe people who first discovered the phenomenon called STEVE were aurora chasers. Experts have (A)[recognized / denied] their contribution and agree that they deserve credit. Although several theories about STEVE exist, none has been firmly (B)[proven / forgotten]. Scientists and citizens continue to work (C)[together / separately] to understand it.",
+"choices": [
+"denied — proven — together",
+"recognized — proven — together",
+"recognized — forgotten — together",
+"denied — forgotten — separately",
+"recognized — proven — separately"
+],
+"answer": "②",
+"solution": "전문가들이 오로라 추적자들의 공로를 인정한다는 내용이므로 recognized가 적절하다. 이론들이 확실히 입증되지는 않았으며 과학자와 시민이 계속 협력하므로 proven과 together가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-697112c06d",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nGalaxy Zoo became widely known with the help of online media. Instead of (A)[restricting / expanding] public awareness of the project, this publicity drew increasing numbers of people to its website. Their participation made it possible to classify far more images than Schawinski could have managed (B)[alone / collectively]. The project thus demonstrated the (C)[limitations / potential] of public participation in scientific research.",
+"choices": [
+"expanding — alone — potential",
+"restricting — collectively — potential",
+"expanding — collectively — limitations",
+"restricting — alone — limitations",
+"restricting — alone — potential"
+],
+"answer": "⑤",
+"solution": "홍보로 더 많은 사람이 유입되었으므로 instead of 뒤에는 인지도 확대와 반대되는 restricting이 와야 한다. 참여자들의 공동 작업을 연구자 혼자 수행하는 경우와 비교하므로 alone이 적절하며, 이 사례가 보여 준 것은 시민 참여의 가능성이므로 potential이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-bf0cff48a7",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nIt is easy to picture science as a field (A)[accessible / exclusive] to trained professionals. The examples of citizen science, however, challenge that picture. A person’s lack of a science degree does not necessarily make that person (B)[capable / incapable] of helping research move forward. What matters is that ordinary people can use their interest in science to make a meaningful (C)[contribution / restriction].",
+"choices": [
+"accessible — incapable — contribution",
+"exclusive — capable — contribution",
+"exclusive — incapable — contribution",
+"accessible — capable — restriction",
+"exclusive — incapable — restriction"
+],
+"answer": "③",
+"solution": "시민 과학 사례가 반박하는 것은 과학이 전문가에게만 한정된다는 인식이므로 exclusive가 적절하다. does not necessarily와 연결하여 학위가 없다고 반드시 기여할 능력이 없는 것은 아니라는 뜻이 되어야 하므로 incapable이 들어가며, make a contribution은 ‘기여하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-35998d3962",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nZooniverse developed from Galaxy Zoo and offers projects across several scientific fields. Its range of subjects is therefore (A)[broad / narrow], extending beyond astronomy. The platform allows ordinary people to become (B)[participants / spectators] in research by contributing their efforts. Its growth supports the view that scientific work can benefit from greater public (C)[withdrawal / involvement].",
+"choices": [
+"broad — participants — involvement",
+"narrow — participants — involvement",
+"broad — spectators — involvement",
+"broad — participants — withdrawal",
+"narrow — spectators — withdrawal"
+],
+"answer": "①",
+"solution": "천문학 외의 여러 과학 분야도 다루므로 주제의 범위는 broad이다. 일반인이 직접 노력을 보태는 참여자가 된다는 뜻이므로 participants가 적절하고, 플랫폼의 성장은 대중의 참여를 뜻하는 involvement의 이점을 뒷받침한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-caea77a262",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nFor Schawinski, the difficulty was not that the galaxy images looked entirely unrelated. Rather, their apparent (A)[similarity / diversity] concealed slight differences in shape. A quick impression was therefore no substitute for (B)[superficial / individual] inspection. Although gathering many volunteers did not remove the need to examine the images, it made the enormous workload more (C)[manageable / demanding] than it would have been for one researcher working alone.",
+"choices": [
+"diversity — individual — manageable",
+"similarity — superficial — manageable",
+"diversity — superficial — demanding",
+"similarity — individual — manageable",
+"similarity — individual — demanding"
+],
+"answer": "④",
+"solution": "이미지들이 겉으로 비슷해 보여 미세한 형태 차이를 구별해야 했으므로 similarity와 individual이 적절하다. 자원봉사자의 참여가 이미지 확인 자체를 불필요하게 만든 것은 아니지만, 한 사람이 맡을 때보다 작업량을 감당하기 쉽게 했으므로 manageable이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-58d8790128",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nGiving the aurora chasers credit for discovering STEVE should not be confused with claiming that its mystery has been solved. Recognition of their contribution does not make the existing theories any less (A)[tentative / conclusive]. Nor does the continuing uncertainty make their discovery less (B)[significant / insignificant]. Had their observations been absent, the phenomenon might have escaped notice altogether. The fact that scientists still seek an explanation therefore calls for continued (C)[dismissal / collaboration] with citizens, whose role in the discovery experts have acknowledged.",
+"choices": [
+"conclusive — significant — collaboration",
+"tentative — significant — collaboration",
+"tentative — insignificant — collaboration",
+"conclusive — insignificant — dismissal",
+"tentative — significant — dismissal"
+],
+"answer": "②",
+"solution": "발견의 공로를 인정해도 기존 이론이 확정되는 것은 아니므로, 이론은 여전히 잠정적이라는 뜻의 tentative가 적절하다. 설명이 불확실하다고 발견의 중요성이 줄어드는 것은 아니라는 뜻이므로 significant가 들어간다. 시민들의 발견 기여를 바탕으로 협력을 지속해야 한다는 결론이므로 collaboration이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-05c52ed9ab",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe success of Galaxy Zoo gives little support to the assumption that progress in science must depend (A)[exclusively / partly] on professionals. This is not because classifying the images ceased to require careful attention, but because many citizens shared the task. Without their help, the time Schawinski would have needed to achieve comparable results would hardly have been (B)[negligible / considerable]. The case thus challenges any judgment that treats a lack of professional qualifications as sufficient reason to (C)[recognize / discount] a person’s possible contribution to science.",
+"choices": [
+"partly — negligible — discount",
+"exclusively — considerable — discount",
+"exclusively — negligible — recognize",
+"partly — considerable — recognize",
+"exclusively — negligible — discount"
+],
+"answer": "⑤",
+"solution": "시민들의 성과는 과학 발전이 오직 전문가에게만 의존해야 한다는 가정을 뒷받침하지 않으므로 exclusively가 적절하다. 시민의 도움이 없었다면 필요한 시간이 결코 적지 않았을 것이라는 뜻이므로 hardly와 연결되는 negligible이 알맞다. 마지막 문장은 전문 자격이 없다는 이유만으로 기여 가능성을 낮게 평가하는 판단을 반박하므로 discount가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+}
+]

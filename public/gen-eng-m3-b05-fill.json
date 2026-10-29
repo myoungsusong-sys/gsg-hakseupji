@@ -3288,5 +3288,151 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b05-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-7b18512b04",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nEva works as an architect. Her work focuses on saving energy at home. She designs houses that get energy from sources such as wind. These houses produce more energy than they need. Through her work, Eva helps people worry less about wasting energy in their homes.",
+"choices": [
+"ways to choose a comfortable room",
+"houses designed to save energy",
+"reasons for becoming a science teacher",
+"problems caused by strong winds",
+"the importance of watching less television"
+],
+"answer": "②",
+"solution": "글은 Eva가 설계하는 에너지 절약형 주택의 특징을 설명한다. 바람 등의 에너지원을 이용하고 필요한 양보다 많은 에너지를 생산하는 주택이 중심 내용이므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-755ac1afdb",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWhat would I like to do in the future? I would like to become a scientist and teach robots. Robots work with humans, so they must learn how to behave around us. I also hope to teach them human languages. My dream is to help robots communicate with people and get along with them.",
+"choices": [
+"Why Humans Must Learn Robot Languages",
+"A World Where Scientists Do Not Work",
+"The History of Robots in Our Homes",
+"My Dream of Teaching Robots",
+"How to Build a Robot by Yourself"
+],
+"answer": "④",
+"solution": "글쓴이는 로봇에게 행동 방식과 인간의 언어를 가르치는 과학자가 되고 싶다고 말한다. 이러한 장래 희망을 포괄하는 제목은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7c4dc71715",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nA robot may follow an order, but this does not mean that teaching it is always easy. Certain robots can be dangerous to handle. Scientists teach robots which actions are acceptable around people and which are not. Such teaching is necessary because robots need to live and work with humans.",
+"choices": [
+"로봇을 가르치는 일은 누구나 쉽게 할 수 있다.",
+"인간은 로봇의 명령에 따르는 법을 배워야 한다.",
+"로봇은 인간과 함께 살기 위한 행동을 배워야 한다.",
+"위험한 로봇은 인간의 언어를 배울 수 없다.",
+"과학자는 사람과 일하는 모든 로봇의 사용을 중단해야 한다."
+],
+"answer": "③",
+"solution": "로봇을 다루기 어렵다는 내용은 로봇 교육의 필요성을 뒷받침한다. 글의 핵심은 로봇이 사람과 함께 생활하고 일하기 위해 적절한 행동을 배워야 한다는 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f5bd5f83ef",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 쓴 목적으로 가장 알맞은 것은?\n\nMy name is Eva, and my job connects house design with energy saving. As a child, I often heard my parents remind me to switch off the television when I was not watching it. Their concern about wasted energy led me to dream of designing a different kind of home. To prepare for this work, I studied architecture and environmental engineering. Today, I design net-zero energy houses. They use alternative energy sources, including wind, and produce more energy than they consume. I would be happy to talk with anyone interested in this work.",
+"choices": [
+"to introduce her work and explain what led her to it",
+"to persuade her parents to study environmental engineering",
+"to compare the prices of different kinds of houses",
+"to explain the steps for turning wind into electricity",
+"to argue that television is the main cause of energy waste"
+],
+"answer": "①",
+"solution": "Eva는 어린 시절의 경험이 진로로 이어진 과정과 현재 설계하는 주택의 특징을 소개한다. 따라서 자신의 일과 그 일을 하게 된 계기를 알리려는 목적의 ①이 적절하다. 텔레비전과 풍력은 설명에 사용된 세부 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bd6374692c",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글 전체를 포괄하는 제목으로 가장 알맞은 것은?\n\nFor Eva, a childhood experience became the starting point of her career. Her parents were concerned about energy being wasted at home, and they reminded her not to leave an unwatched television on. Eva began to think about designing homes that would save energy. She later studied both architecture and environmental engineering. As an architect, she now designs houses powered by wind and other alternative energy sources. The houses produce more energy than they use. What began as a concern at home has become the focus of her work.",
+"choices": [
+"Wind Power: The Only Answer to Energy Waste",
+"Why Environmental Engineering Matters More Than Architecture",
+"Turning Off the TV: An Architect's Main Duty",
+"Net-Zero Houses: Homes That Need No Energy",
+"From a Childhood Concern to Designing Energy-Saving Homes"
+],
+"answer": "⑤",
+"solution": "글은 가정에서의 에너지 낭비에 대한 관심이 에너지 절약형 주택을 설계하는 직업으로 발전한 과정을 다룬다. 따라서 계기와 현재의 일을 함께 담은 ⑤가 글 전체를 포괄한다. ①의 유일한 해결책과 ④의 에너지가 전혀 필요 없는 집이라는 설명은 지문과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fa08272968",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nWhen I picture my future, I see myself helping robots form better relationships with humans. The growing number of robots working beside people makes this goal meaningful. Some people believe that robots are simple to teach because they follow instructions. However, following instructions does not make every robot safe to handle. Only a small number of scientists can safely deal with certain robots. Robots must learn what they may and may not do around humans. I also want to teach them human languages so that conversations between people and robots can become natural.",
+"choices": [
+"로봇이 명령에 따르기만 하면 인간과의 관계는 저절로 좋아진다.",
+"로봇과 인간의 원만한 관계를 위해 행동과 언어를 가르치는 과학자가 되고 싶다.",
+"로봇과 함께 일하는 사람이 늘고 있으므로 인간이 로봇의 언어를 배워야 한다.",
+"로봇 교육의 최종 목적은 인간의 도움 없이 모든 일을 처리하게 하는 것이다.",
+"일부 로봇을 다루기 어려우므로 과학자는 로봇의 언어 교육에만 집중해야 한다."
+],
+"answer": "②",
+"solution": "글쓴이의 장래 희망은 로봇에게 적절한 행동과 인간의 언어를 가르쳐 인간과 좋은 관계를 맺도록 돕는 것이다. ②는 이러한 목표와 교육 내용을 모두 포함한다. 로봇을 다루기 어렵다는 설명은 교육의 필요성을 뒷받침하며, 행동 교육을 포기하자는 뜻이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b18fbb39b0",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nEva's interest in energy-saving homes grew out of her parents' concern about energy waste. She wanted to do something about the problem through house design, so she studied architecture and environmental engineering. Her work now brings these fields together. She designs homes that use alternative sources of energy, such as wind. Although these homes still use energy, the amount they produce is greater than the amount they consume. Eva's work shows how her early interest developed into her career.\n\nEva turned a concern about energy waste into a career in house design, creating homes whose energy production (A) their energy use through the use of (B) energy sources.",
+"choices": [
+"(A) equals — (B) alternative",
+"(A) exceeds — (B) limited",
+"(A) falls below — (B) alternative",
+"(A) exceeds — (B) alternative",
+"(A) equals — (B) limited"
+],
+"answer": "④",
+"solution": "주택이 생산하는 에너지의 양이 소비하는 양보다 많으므로 (A)에는 ‘초과하다’라는 뜻의 exceeds가 들어간다. 풍력 등을 대체 에너지원으로 이용하므로 (B)에는 alternative가 적절하다. 따라서 두 내용을 모두 정확히 반영하는 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7aa21d01d4",
+"typeId": "eng-m3-b05-u6m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 핵심 내용을 요약한 문장을 완성하시오. (A)~(E)에 들어갈 말을 본문에서 각각 한 단어씩 찾아 쓰되, 단어의 형태를 바꾸지 마시오. 답은 (A)~(E)의 순서대로 쓰시오.\n\nEva's parents worried about the energy their family wasted. When she left the television on without watching it, they told her to turn it off. This experience gave her a goal: to reduce energy waste through the design of houses. She prepared for that goal by studying architecture as well as environmental engineering. Now an architect, Eva designs houses that obtain energy from wind and other alternative sources. These houses do consume energy, but they produce a greater amount. Her career connects a concern from childhood with the knowledge she gained through her studies.\n\nA childhood concern about energy (A) led Eva to combine architecture with environmental (B) and design houses that use (C) energy sources to (D) more energy than they (E).",
+"selfGrade": true,
+"answer": "waste, engineering, alternative, produce, consume",
+"solution": "어린 시절의 문제의식은 에너지 낭비이므로 (A)는 waste이며, 건축학과 함께 공부한 분야를 나타내는 (B)는 engineering이다. 주택의 에너지원은 alternative이고, 생산량이 소비량보다 많다는 관계에 따라 (D)와 (E)는 각각 produce와 consume이다. 경험, 학업, 주택의 특징을 연결하면서 생산과 소비의 방향을 정확히 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m3s0t0",
+"custom": true
 }
 ]

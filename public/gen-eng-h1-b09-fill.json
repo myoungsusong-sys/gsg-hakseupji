@@ -2181,5 +2181,176 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u7m6s0t0",
 "custom": true
+},
+{
+"id": "fill-b65c77c2b7",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nA navigation device developed by Seoyoung Jun helps people with visual disabilities learn about their surroundings. It collects information about nearby obstacles by sending out infrared light. The device then moves small pins to represent the obstacles. Users touch these pins to find out where objects are and how high they are.",
+"choices": [
+"The device gives directions through recorded voices.",
+"Users learn about obstacles by touching small pins.",
+"The device requires users to see infrared light.",
+"Users must move nearby objects before using the device.",
+"The device collects information by touching walls."
+],
+"answer": "②",
+"solution": "사용자는 작은 핀을 만져 장애물의 위치와 높이를 파악한다고 했다. 따라서 핀을 만져 장애물에 관한 정보를 얻는다는 ②가 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dee44d148f",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nSelf-driving cars use artificial intelligence to perform driving tasks. They could help people who have lost their sight travel from place to place. However, these cars need sensors, GPS, and computer programs to operate properly. A failure in these systems could threaten the safety of passengers and other road users.",
+"choices": [
+"What technology do self-driving cars use to perform driving tasks?",
+"Who could gain greater freedom to travel through self-driving cars?",
+"What systems do self-driving cars need to operate properly?",
+"How much does it cost to replace a self-driving car's sensors?",
+"Whose safety could be threatened by a system failure?"
+],
+"answer": "④",
+"solution": "글에는 자율주행차의 기술, 도움을 받을 수 있는 사람, 작동에 필요한 시스템과 고장 시 위험에 처하는 대상이 제시되어 있다. 센서 교체 비용은 언급되어 있지 않으므로 ④에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4b19122783",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nA student preparing for an English speech contest wrote an initial version of her script herself. She then entered the text into a writing assistant app. The app checked spelling and grammar and suggested corrections. After correcting errors with its help, she felt more confident about delivering her speech.",
+"choices": [
+"The student was preparing to take part in a speech contest.",
+"The student wrote the initial version of the script herself.",
+"The app examined spelling and grammar in the script.",
+"The student became more confident after correcting errors.",
+"The app created the initial version before the student began writing."
+],
+"answer": "⑤",
+"solution": "학생은 직접 초고를 작성한 뒤 앱에 글을 입력하여 도움을 받았다. 앱이 학생보다 먼저 초고를 만들었다는 ⑤는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1165b8ce63",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 마지막 문장에 이어질 내용으로 가장 적절한 것은?\n\nPeople with disabilities need access to community spaces, products, and services to participate fully in daily life. Yet barriers to such access have not disappeared. At an international science competition, two teenagers presented inventions designed to address this problem. The following examples show how their ideas could help make everyday activities more accessible.",
+"choices": [
+"An account of how one teenager's invention helps people with disabilities overcome a daily difficulty",
+"A list of rules that prevented teenagers from entering the international science competition",
+"An explanation of why community services are no longer necessary for people with disabilities",
+"A history of how international science competitions first began",
+"A discussion of why only people with disabilities should develop inventions for accessibility"
+],
+"answer": "①",
+"solution": "마지막 문장은 두 청소년의 발명품이 일상생활의 접근성을 어떻게 높이는지 사례를 제시하겠다고 예고한다. 따라서 그중 한 청소년의 발명품이 장애인의 일상 속 어려움을 해결하는 방식을 소개하는 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-58aee43b02",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 추론할 수 있는 것은?\n\nSeoyoung Jun once picked up her pencil holder while keeping one eye closed. This led her to question how people understand three-dimensional space. Through research, she learned that the brain can process spatial information even without vision. Since people who have lost their sight obtain such information mainly through touch, she developed a navigation device that communicates information about obstacles through movable pins.",
+"choices": [
+"Closing one eye prevents people from understanding the position of objects.",
+"Seoyoung's research showed that spatial information can be obtained only through sight.",
+"Seoyoung used touch as a way to make spatial information available to users without sight.",
+"The device was designed to restore the user's ability to see surrounding objects.",
+"The movement of the pins allows users to avoid collecting any spatial information."
+],
+"answer": "③",
+"solution": "서영은 시각 없이도 공간 정보를 처리할 수 있으며 시각장애인이 주로 촉각으로 그 정보를 얻는다는 점에 주목했다. 따라서 핀을 만지는 방식으로 공간 정보를 전달하도록 설계했다는 ③을 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f95987a398",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 가장 적절하게 이해한 사람은?\n\nSelf-driving cars could allow people to travel even when their age or physical ability makes driving difficult. They could also help avoid dangerous situations caused by drivers who use phones, fall asleep, or drink alcohol before driving. However, their operation depends on sensors, GPS, and computer programs. If these fail or are used for unintended purposes, people inside and outside the car could be endangered.",
+"choices": [
+"Student A: Anyone who cannot drive a conventional car would also be unable to benefit from a self-driving car.",
+"Student B: Preventing phone use by human drivers would remove every danger connected with self-driving cars.",
+"Student C: The risks described in the passage concern passengers alone.",
+"Student D: Self-driving cars may reduce dangers caused by human behavior while still having risks related to their systems.",
+"Student E: The passage states that self-driving cars operate independently of computer programs."
+],
+"answer": "④",
+"solution": "글은 자율주행차가 사람의 부주의로 생기는 위험을 줄일 가능성과 시스템 이상에 따른 위험을 함께 설명한다. 이 두 측면을 모두 반영한 Student D의 이해가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2e888f737c",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nSeoyoung's navigation device gathers three-dimensional information by sending out infrared light and receiving the reflected beam. A depth sensor works with a small computer, which controls motors connected to movable pins. When the sensor finds an obstacle in a scanned area, the relevant pin rises to a middle or high position according to the obstacle's height. Users examine the pins with their hands to understand the positions and heights of obstacles ahead. Seoyoung chose this method because people who have lost their sight obtain spatial information mainly through touch.",
+"choices": [
+"What allows the device to collect information about objects without physically touching them?",
+"What is the maximum distance at which the sensor can detect an obstacle?",
+"What determines whether a relevant pin rises to a middle or high position?",
+"How does the user obtain information after the device has detected an obstacle?",
+"Why did Seoyoung choose a method that communicates information through touch?"
+],
+"answer": "②",
+"solution": "적외선의 반사를 이용한 정보 수집, 핀의 높이를 결정하는 기준, 사용자의 정보 확인 방식과 촉각을 선택한 이유는 모두 설명되어 있다. 그러나 센서가 장애물을 감지할 수 있는 최대 거리는 제시되지 않았으므로 ②에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9dfc737f57",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 추론할 수 있는 내용으로 가장 적절한 것은?\n\nA major promise of self-driving cars is that independent travel would become possible for more people, including those who have lost their sight. Another expected benefit is avoiding situations caused by careless human drivers, such as falling asleep at the wheel. These benefits, however, do not remove the need to consider technological risks. The sensors, GPS, and computer programs on which the car depends could fail or be used in unintended ways. Such problems could endanger passengers as well as others on the road.",
+"choices": [
+"As long as a passenger stays awake, failures in the car's systems cannot threaten road safety.",
+"Allowing people with visual disabilities to travel requires removing the car's dependence on sensors.",
+"Since careless driving causes accidents, computer programs cannot create any danger.",
+"If no passenger is injured by a system failure, everyone outside the car must also be safe.",
+"Removing the need for a human driver does not by itself guarantee the safety of everyone on the road."
+],
+"answer": "⑤",
+"solution": "사람이 직접 운전할 필요가 줄어들어도 자율주행차가 의존하는 시스템의 고장이나 의도하지 않은 사용으로 위험이 생길 수 있다. 따라서 운전자로부터의 독립만으로 모든 도로 이용자의 안전이 보장되지는 않는다는 ⑤가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4d79b8edd9",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글을 바탕으로 한 판단 중 가장 적절한 것은?\n\n[A] Seoyoung Jun developed a navigation device for people with visual disabilities. It uses reflected infrared light to collect information about obstacles. A computer controls movable pins, and users feel the pins to understand the obstacles' positions and heights. The design draws on the fact that people without sight obtain spatial information mainly through touch.\n\n[B] Self-driving cars could help people with visual disabilities travel without driving themselves. They could also prevent dangerous situations associated with careless human driving. However, they rely on sensors, GPS, and computer programs. Failures or unintended uses of these systems could put passengers and other road users at risk.\n\n※ 글에 명시된 내용과 그로부터 타당하게 이끌어 낼 수 있는 내용만을 근거로 판단하시오.",
+"choices": [
+"Because both technologies could assist people without sight, their users must receive information through the same sense.",
+"Because [A] explains how users identify obstacles, it also establishes that the device can detect every obstacle at any distance.",
+"Both technologies could reduce barriers related to visual disability, but neither passage establishes that its technology guarantees safety in every situation.",
+"The system risks identified in [B] establish that the device in [A] depends on GPS and is exposed to exactly the same failures.",
+"Since [B] describes a car that drives itself, the device in [A] must also choose a route and move its user without the user's judgment."
+],
+"answer": "③",
+"solution": "두 기술 모두 시각장애인이 공간을 파악하거나 이동할 때 겪는 제약을 줄이는 데 도움을 줄 수 있다. 그러나 [A]는 작동 원리를 설명할 뿐 모든 상황의 안전을 보장하지 않으며, [B]는 오히려 기술적 위험을 명시한다. 공통된 지원 대상만으로 감각 전달 방식이나 작동 체계까지 같다고 볼 수 없고, [A]의 장치가 사용자를 스스로 이동시킨다는 근거도 없으므로 ③만 타당하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
 }
 ]

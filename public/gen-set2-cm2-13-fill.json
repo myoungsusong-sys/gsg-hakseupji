@@ -484,5 +484,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-13-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-ac1f4ad8d4",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$x\\ne2,-3$일 때, $\\dfrac{1}{(x-2)(x+3)}$을 부분분수로 바르게 분해한 것은?",
+"choices": [
+"$\\dfrac15\\left(\\dfrac1{x-2}+\\dfrac1{x+3}\\right)$",
+"$\\dfrac1{x-2}-\\dfrac1{x+3}$",
+"$\\dfrac15\\left(\\dfrac1{x+3}-\\dfrac1{x-2}\\right)$",
+"$\\dfrac15\\left(\\dfrac1{x-2}-\\dfrac1{x+3}\\right)$",
+"$5\\left(\\dfrac1{x-2}-\\dfrac1{x+3}\\right)$"
+],
+"answer": "④",
+"solution": "$\\dfrac1{x-2}-\\dfrac1{x+3}=\\dfrac5{(x-2)(x+3)}$이다. 따라서 양변에 $\\dfrac15$을 곱한 ④가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-2861a8fdb5",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 3,
+"body": "$x\\ne1,-2$일 때\n\n$\\dfrac{3x+1}{(x-1)(x+2)}=\\dfrac{A}{x-1}+\\dfrac{B}{x+2}$\n\n가 항상 성립하도록 하는 두 상수 $A$, $B$를 구하여라.",
+"selfGrade": true,
+"answer": "$A=\\dfrac43,\\ B=\\dfrac53$",
+"solution": "우변을 통분하면 분자는 $(A+B)x+2A-B$이다. 따라서 $A+B=3$, $2A-B=1$이므로 $A=\\dfrac43$, $B=\\dfrac53$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-f042ce3ed4",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 기약분수식인 것은?",
+"choices": [
+"$\\dfrac{x^2-4}{x-2}$",
+"$\\dfrac{x^2+x}{x}$",
+"$\\dfrac{x^2+1}{x+1}$",
+"$\\dfrac{x^2-1}{x+1}$",
+"$\\dfrac{x^2-3x+2}{x-1}$"
+],
+"answer": "③",
+"solution": "③의 분자 $x^2+1$과 분모 $x+1$은 공통인 인수를 갖지 않는다. 나머지 분수식은 각각 분자와 분모에 공통인 인수가 있으므로 약분할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-c16388cfa0",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "$x\\ne-1,3$일 때\n\n$\\dfrac{2x+7}{(x+1)(x-3)}=\\dfrac{A}{x+1}+\\dfrac{B}{x-3}$\n\n가 항상 성립한다. 이때 $AB$의 값은?",
+"choices": [
+"$-\\dfrac{65}{16}$",
+"$-\\dfrac{13}{16}$",
+"$\\dfrac5{16}$",
+"$\\dfrac{13}{4}$",
+"$\\dfrac{65}{16}$"
+],
+"answer": "①",
+"solution": "양변의 분자를 비교하면 $2x+7=A(x-3)+B(x+1)$이다. $x=-1$, $x=3$을 각각 대입하면 $A=-\\dfrac54$, $B=\\dfrac{13}{4}$이므로 $AB=-\\dfrac{65}{16}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-eca8447bc8",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 4,
+"body": "분수식\n\n$\\dfrac{x^2+kx+6}{x^2+x-6}$\n\n이 기약분수식이 아니도록 하는 모든 실수 $k$의 합을 구하여라.",
+"selfGrade": true,
+"answer": "$0$",
+"solution": "분모는 $(x-2)(x+3)$이므로 분자가 $x=2$ 또는 $x=-3$에서 $0$이어야 한다. 각각 대입하면 $k=-5$, $k=5$를 얻으므로 구하는 합은 $0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-3bd7bca26a",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "$x\\ne1,-2$일 때\n\n$\\dfrac{2x^2+x+4}{(x-1)(x+2)}=2+\\dfrac{A}{x-1}+\\dfrac{B}{x+2}$\n\n가 항상 성립한다. 이때 $A-B$의 값은?",
+"choices": [
+"$-\\dfrac{17}{3}$",
+"$-1$",
+"$\\dfrac13$",
+"$\\dfrac73$",
+"$\\dfrac{17}{3}$"
+],
+"answer": "⑤",
+"solution": "좌변에서 $2$를 빼면 $\\dfrac{-x+8}{(x-1)(x+2)}$이다. 따라서 $-x+8=A(x+2)+B(x-1)$이고, $A=\\dfrac73$, $B=-\\dfrac{10}{3}$이므로 $A-B=\\dfrac{17}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-7cc61f8fcd",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$x\\ne1,-2,3$일 때\n\n$\\dfrac{x^2+2x+5}{(x-1)(x+2)(x-3)}=\\dfrac{A}{x-1}+\\dfrac{B}{x+2}+\\dfrac{C}{x-3}$\n\n가 항상 성립한다. 이때 $A+B+C$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$1$",
+"solution": "양변에 분모를 곱한 뒤 $x=1,-2,3$을 차례로 대입한다. 그러면 $A=-\\dfrac43$, $B=\\dfrac13$, $C=2$를 얻으므로 $A+B+C=1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-381c2a39d0",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "분수식\n\n$\\dfrac{x^2+kx+2}{x^2-x-6}$\n\n이 기약분수식이 아니도록 하는 모든 실수 $k$의 합을 구하여라.",
+"selfGrade": true,
+"answer": "$-\\dfrac23$",
+"solution": "분모는 $(x-3)(x+2)$이므로 분자가 $x=3$ 또는 $x=-2$에서 $0$이어야 한다. $9+3k+2=0$에서 $k=-\\dfrac{11}{3}$, $4-2k+2=0$에서 $k=3$을 얻는다. 따라서 모든 $k$의 합은 $-\\dfrac{11}{3}+3=-\\dfrac23$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-b286eecabf",
+"typeId": "set2-cm2-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "양의 정수 $n$에 대하여\n\n$S_n=\\displaystyle\\sum_{k=1}^{n}\\dfrac1{k(k+2)}$\n\n라 하자. $S_n=\\dfrac{17}{30}$일 때, $n$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$\\dfrac1{k(k+2)}=\\dfrac12\\left(\\dfrac1k-\\dfrac1{k+2}\\right)$이므로 $S_n=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{n+1}-\\dfrac1{n+2}\\right)$이다. 이를 $\\dfrac{17}{30}$과 같게 놓으면 $11n^2-27n-68=0$, 즉 $(n-4)(11n+17)=0$이다. $n$은 양의 정수이므로 $n=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t1",
+"custom": true
 }
 ]

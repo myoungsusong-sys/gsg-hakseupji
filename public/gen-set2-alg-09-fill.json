@@ -1,0 +1,320 @@
+[
+{
+"id": "fill-85ee809c3f",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=5$, $\\overline{AC}=7$, $\\angle BAC=60^\\circ$일 때, $\\overline{BC}$의 길이는?",
+"choices": [
+"$\\sqrt{31}$",
+"$\\sqrt{39}$",
+"$6$",
+"$\\sqrt{51}$",
+"$8$"
+],
+"answer": "②",
+"solution": "코사인법칙에 의하여 $\\overline{BC}^2=5^2+7^2-2\\cdot5\\cdot7\\cos60^\\circ=39$이다. 따라서 $\\overline{BC}=\\sqrt{39}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-ceab36513c",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "세 변의 길이가 $\\overline{AB}=7$, $\\overline{BC}=8$, $\\overline{CA}=9$인 삼각형 $ABC$에서 가장 큰 내각의 코사인값은?",
+"choices": [
+"$-\\dfrac27$",
+"$-\\dfrac17$",
+"$\\dfrac17$",
+"$\\dfrac27$",
+"$\\dfrac37$"
+],
+"answer": "④",
+"solution": "가장 긴 변은 $CA$이므로 가장 큰 내각은 $\\angle B$이다. 코사인법칙에 의하여 $\\cos B=\\dfrac{7^2+8^2-9^2}{2\\cdot7\\cdot8}=\\dfrac27$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-e5a032b4d4",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6$, $\\overline{AC}=10$, $\\angle BAC=120^\\circ$일 때, $\\overline{BC}$의 길이는?",
+"choices": [
+"$10$",
+"$2\\sqrt{31}$",
+"$12$",
+"$14$",
+"$16$"
+],
+"answer": "④",
+"solution": "코사인법칙에 의하여 $\\overline{BC}^2=6^2+10^2-2\\cdot6\\cdot10\\cos120^\\circ=196$이다. 따라서 $\\overline{BC}=14$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-e7637f68d9",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "세 변의 길이가 $\\overline{AB}=7$, $\\overline{AC}=9$, $\\overline{BC}=8$인 삼각형 $ABC$의 넓이는?",
+"choices": [
+"$6\\sqrt5$",
+"$8\\sqrt5$",
+"$10\\sqrt5$",
+"$12\\sqrt5$",
+"$14\\sqrt5$"
+],
+"answer": "④",
+"solution": "코사인법칙에 의하여 $\\cos A=\\dfrac{7^2+9^2-8^2}{2\\cdot7\\cdot9}=\\dfrac{11}{21}$이므로 $\\sin A=\\dfrac{8\\sqrt5}{21}$이다. 따라서 넓이는 $\\dfrac12\\cdot7\\cdot9\\cdot\\dfrac{8\\sqrt5}{21}=12\\sqrt5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d475eba7c7",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=7$, $\\overline{AC}=9$, $\\overline{BC}=8$이다. 변 $BC$의 중점을 $M$이라 할 때, $\\overline{AM}$의 길이는?",
+"choices": [
+"$5$",
+"$6$",
+"$7$",
+"$2\\sqrt{13}$",
+"$8$"
+],
+"answer": "③",
+"solution": "중선의 길이에 관한 식을 적용하면 $AM^2=\\dfrac{2AB^2+2AC^2-BC^2}{4}$이다. 따라서 $AM^2=\\dfrac{2\\cdot49+2\\cdot81-64}{4}=49$이므로 $AM=7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-c4b7c41054",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 넓이가 $\\dfrac{35\\sqrt3}{4}$이고 $\\overline{AB}=5$, $\\overline{AC}=7$이다. $\\overline{BC}>10$일 때, $\\overline{BC}$의 길이는?",
+"choices": [
+"$\\sqrt{39}$",
+"$\\sqrt{74}$",
+"$2\\sqrt{21}$",
+"$\\sqrt{109}$",
+"$12$"
+],
+"answer": "④",
+"solution": "넓이 공식에서 $\\dfrac12\\cdot5\\cdot7\\sin A=\\dfrac{35\\sqrt3}{4}$이므로 $\\sin A=\\dfrac{\\sqrt3}{2}$이다. $BC>10$이므로 $A=120^\\circ$이고, 코사인법칙에 따라 $BC^2=25+49-70\\cos120^\\circ=109$이다. 따라서 $BC=\\sqrt{109}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-8d86751ffd",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6$, $\\overline{AC}=9$이다. 변 $BC$ 위의 점 $D$가 $\\overline{BD}:\\overline{DC}=2:1$을 만족하고 $\\overline{AD}=6$일 때, $\\cos\\angle BAC$의 값은?",
+"choices": [
+"$-\\dfrac13$",
+"$-\\dfrac16$",
+"$-\\dfrac1{12}$",
+"$\\dfrac1{12}$",
+"$\\dfrac16$"
+],
+"answer": "②",
+"solution": "$\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}+\\dfrac23\\overrightarrow{AC}$이다. 따라서 $AD^2=\\dfrac19AB^2+\\dfrac49AC^2+\\dfrac49AB\\cdot AC\\cos A=40+24\\cos A$이다. $AD=6$을 대입하면 $36=40+24\\cos A$이므로 $\\cos A=-\\dfrac16$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-dac86c1fcd",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{BC}=\\sqrt{29}$, $\\overline{CA}=8$, $\\cos\\angle BAC=\\dfrac34$이다.\n\n가능한 $\\overline{AB}$의 길이를 모두 구하고, 각각의 경우에 $\\angle ABC$가 예각인지 둔각인지 판정하시오. 또한 가능한 두 삼각형의 넓이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$\\overline{AB}=5$일 때 둔각, $\\overline{AB}=7$일 때 예각, 넓이의 합은 $12\\sqrt7$",
+"solution": "$AB=x$라 하면 코사인법칙에서 $29=64+x^2-12x$이므로 $(x-5)(x-7)=0$이다. $x=5$일 때 $\\cos B=-\\dfrac1{\\sqrt{29}}$이므로 둔각이고, $x=7$일 때 $\\cos B=\\dfrac1{\\sqrt{29}}$이므로 예각이다. $\\sin A=\\dfrac{\\sqrt7}{4}$이므로 두 삼각형의 넓이의 합은 $\\dfrac12\\cdot8\\cdot(5+7)\\cdot\\dfrac{\\sqrt7}{4}=12\\sqrt7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-4f9dcaa218",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "한 원에 내접하는 볼록사각형 $ABCD$에서 $\\overline{AB}=3$, $\\overline{BC}=4$, $\\overline{CD}=5$, $\\overline{DA}=6$이다. 두 대각선의 길이의 비 $\\dfrac{\\overline{BD}}{\\overline{AC}}$는?\n\n단, 원에 내접하는 사각형의 마주 보는 두 내각의 합은 $180^\\circ$임을 이용할 수 있다.",
+"choices": [
+"$\\dfrac{19}{21}$",
+"$\\dfrac{21}{19}$",
+"$\\dfrac{361}{441}$",
+"$\\dfrac{441}{361}$",
+"$\\dfrac{42}{19}$"
+],
+"answer": "②",
+"solution": "$BD=x$라 하고 $\\angle A+\\angle C=180^\\circ$를 이용하여 두 삼각형에 코사인법칙을 적용하면 $\\dfrac{45-x^2}{36}=-\\dfrac{41-x^2}{40}$이므로 $x^2=\\dfrac{819}{19}$이다. 같은 방법으로 $AC=y$라 하면 $\\dfrac{25-y^2}{24}=-\\dfrac{61-y^2}{60}$이므로 $y^2=\\dfrac{247}{7}$이다. 따라서 $\\left(\\dfrac{BD}{AC}\\right)^2=\\dfrac{441}{361}$이므로 $\\dfrac{BD}{AC}=\\dfrac{21}{19}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-e161826910",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=7$, $AC=4$, $\\angle A=60^\\circ$일 때, 삼각형 $ABC$의 넓이는?",
+"choices": [
+"$4\\sqrt3$",
+"$7\\sqrt3$",
+"$14\\sqrt3$",
+"$14$",
+"$28$"
+],
+"answer": "②",
+"solution": "삼각형의 넓이는 $\\dfrac12 AB\\cdot AC\\sin A$이다. 따라서 넓이는 $\\dfrac12\\times7\\times4\\times\\sin60^\\circ=7\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-37bf63888f",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=9$, $AC=6$이고 넓이가 $\\dfrac{27\\sqrt3}{2}$이다. $\\sin A$의 값은?",
+"choices": [
+"$\\dfrac12$",
+"$\\dfrac{\\sqrt2}{2}$",
+"$\\dfrac23$",
+"$\\dfrac{\\sqrt3}{2}$",
+"$1$"
+],
+"answer": "④",
+"solution": "넓이 공식에 따라 $\\dfrac12\\times9\\times6\\sin A=\\dfrac{27\\sqrt3}{2}$이다. 이를 정리하면 $\\sin A=\\dfrac{\\sqrt3}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-2e6cfa995a",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=5$, $AC=8$, $\\cos A=\\dfrac35$이다. 삼각형 $ABC$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$16$",
+"solution": "$0^\\circ<A<180^\\circ$이므로 $\\sin A=\\sqrt{1-\\left(\\dfrac35\\right)^2}=\\dfrac45$이다. 따라서 넓이는 $\\dfrac12\\times5\\times8\\times\\dfrac45=16$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-e690b15fa0",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $AB=7$, $AC=9$, $BC=8$일 때, 삼각형 $ABC$의 넓이는?",
+"choices": [
+"$8\\sqrt5$",
+"$10\\sqrt5$",
+"$12\\sqrt5$",
+"$14\\sqrt5$",
+"$16\\sqrt5$"
+],
+"answer": "③",
+"solution": "코사인법칙으로 $\\cos A=\\dfrac{7^2+9^2-8^2}{2\\times7\\times9}=\\dfrac{11}{21}$이다. 따라서 $\\sin A=\\dfrac{8\\sqrt5}{21}$이고, 넓이는 $\\dfrac12\\times7\\times9\\times\\dfrac{8\\sqrt5}{21}=12\\sqrt5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-67b27a951a",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $AB=12$, $AC=6$이고 넓이가 $18\\sqrt3$이다. $\\angle A$가 둔각일 때, $BC$의 길이는?",
+"choices": [
+"$6$",
+"$6\\sqrt3$",
+"$6\\sqrt5$",
+"$6\\sqrt7$",
+"$12\\sqrt2$"
+],
+"answer": "④",
+"solution": "넓이 공식으로 $36\\sin A=18\\sqrt3$이므로 $\\sin A=\\dfrac{\\sqrt3}{2}$이다. $\\angle A$가 둔각이므로 $\\cos A=-\\dfrac12$이고, 코사인법칙에 따라 $BC^2=12^2+6^2-2\\times12\\times6\\left(-\\dfrac12\\right)=252$이다. 따라서 $BC=6\\sqrt7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c7d910f6e5",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "볼록사각형 $ABCD$에서 두 꼭짓점 $B$, $D$는 대각선 $AC$의 서로 반대쪽에 있다. $AB=6$, $BC=8$, $AC=10$, $AD=CD=13$일 때, 사각형 $ABCD$의 넓이는?",
+"choices": [
+"$72$",
+"$78$",
+"$80$",
+"$84$",
+"$90$"
+],
+"answer": "④",
+"solution": "$6^2+8^2=10^2$이므로 삼각형 $ABC$의 넓이는 $\\dfrac12\\times6\\times8=24$이다. 삼각형 $ACD$는 밑변이 $10$인 이등변삼각형이고 높이는 $\\sqrt{13^2-5^2}=12$이므로 넓이는 $60$이다. 따라서 사각형의 넓이는 $24+60=84$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-21f35fd4f1",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $AB=10$, $AC=7$이고 넓이가 $21$이다. 가능한 $BC$의 길이를 모두 더한 값은?",
+"choices": [
+"$\\sqrt{37}+\\sqrt{261}$",
+"$\\sqrt{37}+3\\sqrt{29}$",
+"$\\sqrt{149}+2\\sqrt{29}$",
+"$2\\sqrt{37}+3\\sqrt{29}$",
+"$\\sqrt{261}+3\\sqrt{37}$"
+],
+"answer": "②",
+"solution": "넓이 공식으로 $35\\sin A=21$이므로 $\\sin A=\\dfrac35$이고, $\\cos A=\\pm\\dfrac45$이다. 코사인법칙에 따라 $BC^2=10^2+7^2-140\\cos A$이므로 $BC=\\sqrt{37}$ 또는 $3\\sqrt{29}$이다. 따라서 그 합은 $\\sqrt{37}+3\\sqrt{29}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-4211a8c7f3",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "주관식",
+"diff": 4,
+"body": "평행사변형 $ABCD$에서 $AB=3$, $AD=\\sqrt{17}$이고 두 대각선의 길이는 $AC=2BD$를 만족한다. 이 평행사변형의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{48}{5}$",
+"solution": "$BD=q$라 하면 평행사변형의 대각선 성질에 의해 $(2q)^2+q^2=2(3^2+17)=52$이므로 $q^2=\\dfrac{52}{5}$이다. 두 대각선 사이의 각을 $\\theta$라 하면 $(\\overrightarrow{AC})\\cdot(\\overrightarrow{BD})=AB^2-AD^2=-8$이므로 $\\cos\\theta=-\\dfrac5{13}$, $\\sin\\theta=\\dfrac{12}{13}$이다. 따라서 넓이는 $\\dfrac12\\cdot AC\\cdot BD\\sin\\theta=\\dfrac12\\cdot\\dfrac{104}{5}\\cdot\\dfrac{12}{13}=\\dfrac{48}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-59a660c7ab",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $AB=10$, $AC=6$이고 넓이가 $24$이다. $\\angle A$의 이등분선과 변 $BC$의 교점을 $D$라 하자.\n\n가능한 $BC$의 길이를 모두 구하고, 각 경우에 얻어지는 $AD^2$의 값들을 모두 더한 값을 구하시오. 풀이 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "$BC=8$ 또는 $4\\sqrt{13}$, $AD^2$의 합은 $\\dfrac{225}{4}$",
+"solution": "넓이 공식으로 $30\\sin A=24$이므로 $\\sin A=\\dfrac45$, $\\cos A=\\pm\\dfrac35$이고, 코사인법칙에서 $BC=8$ 또는 $4\\sqrt{13}$을 얻는다. 각의 이등분선의 길이 공식 $AD^2=AB\\cdot AC\\left(1-\\dfrac{BC^2}{(AB+AC)^2}\\right)$을 이용한다. $BC^2=64$, $208$을 각각 대입하면 $AD^2=45$, $\\dfrac{45}{4}$이다. 따라서 이들의 합은 $45+\\dfrac{45}{4}=\\dfrac{225}{4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+}
+]

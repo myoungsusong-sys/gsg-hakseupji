@@ -1574,5 +1574,401 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-e89bbf032c",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAlthough Gropius had completed nearly all the major facilities of an amusement park, he had not yet decided how to connect the attractions. No pathway plan he considered seemed satisfactory.",
+"choices": [
+"Gropius was dissatisfied with the design of the park’s attractions.",
+"Most of the park’s main facilities had not yet been built.",
+"Gropius had difficulty deciding on the layout of the pathways.",
+"The construction team refused to follow Gropius’s pathway plan.",
+"The amusement park already had permanent paths between its attractions."
+],
+"answer": "③",
+"solution": "그로피우스는 놀이공원의 주요 시설은 거의 완성했지만, 명소들을 연결할 통로의 설계를 결정하지 못했다. 따라서 통로의 배치를 정하는 데 어려움을 겪었다는 ③이 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-eec5346b16",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 거울을 설치한 결과로 가장 적절한 것은?\n\nA mirror was placed inside the elevator, but no change was made to its operating speed. Afterward, passengers paid less attention to how long the ride took and even felt that the elevator had become faster.",
+"choices": [
+"승객들이 엘리베이터 이용을 피하게 되었다.",
+"승객들이 엘리베이터가 더 빨라졌다고 느꼈다.",
+"엘리베이터의 실제 운행 속도가 높아졌다.",
+"승객들이 거울 때문에 더 답답함을 느꼈다.",
+"엘리베이터 내부 공간이 실제로 넓어졌다."
+],
+"answer": "②",
+"solution": "거울을 설치한 뒤에도 엘리베이터의 실제 속도는 바뀌지 않았다. 그러나 승객들은 이동 시간에 덜 주목하여 엘리베이터가 더 빨라졌다고 느꼈으므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-eb86a6f2b5",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nBen explains that doughnut shops used to be among the few businesses open late at night. Their owners gave remaining doughnuts to police officers working at that hour. As officers began stopping by more often, the shop owners felt safer from possible robbery.",
+"choices": [
+"일부 도넛 가게는 밤늦게까지 문을 열었다.",
+"가게 주인들은 남은 도넛을 경찰관들에게 제공했다.",
+"경찰관들은 도넛 가게를 이전보다 자주 방문했다.",
+"경찰관들의 방문은 가게의 안전에 도움이 되었다.",
+"가게 주인들은 경찰관들에게 도넛 값을 더 많이 받았다."
+],
+"answer": "⑤",
+"solution": "가게 주인들은 근무 중인 경찰관들에게 남은 도넛을 기부했다. 도넛 값을 더 많이 받았다는 내용은 없으므로 ⑤가 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8e77fb8df8",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 그로피우스가 놀이공원을 예정 시기보다 일찍 개장한 이유로 가장 적절한 것은?\n\nAfter returning from France, Gropius had grass planted where pathways might later be built. He then admitted visitors before the originally scheduled opening date. As they moved around the park, the routes they repeatedly chose gradually appeared on the grass.",
+"choices": [
+"방문객들이 직접 선택하는 이동 경로를 확인하기 위해",
+"완성된 영구 통로의 안전성을 검사하기 위해",
+"프랑스의 포도 농장을 공원 안에 재현하기 위해",
+"건설 인력의 부족을 방문객들로 보충하기 위해",
+"모든 통로의 폭을 동일하게 만들기 위해"
+],
+"answer": "①",
+"solution": "그로피우스는 방문객들이 잔디 위를 자유롭게 이동하도록 한 뒤 반복적으로 밟힌 자리를 관찰했다. 이는 방문객들이 실제로 선호하는 이동 경로를 알아보기 위한 것이므로 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-85bfc0dfc9",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 통해 추론할 수 있는 것은?\n\nAn elderly vineyard-owning couple could not harvest their grapes because of poor health. They therefore allowed travelers to pick as many grapes as they wished after leaving five francs in a roadside box. This kept the grapes from remaining on the vines too long while giving travelers a pleasant activity.",
+"choices": [
+"부부는 포도 판매를 완전히 중단하려 했다.",
+"여행객들은 포도를 따기 전에 부부의 허락을 직접 받아야 했다.",
+"부부의 방식은 농장의 문제와 고객의 즐거움을 함께 고려했다.",
+"부부는 건강을 회복한 뒤 모든 포도를 직접 수확했다.",
+"여행객들은 수확한 포도의 양에 따라 서로 다른 금액을 냈다."
+],
+"answer": "③",
+"solution": "부부의 방법은 포도가 지나치게 익는 문제를 줄이는 동시에 고객에게 포도 따기 경험을 제공했다. 따라서 농장과 고객 양쪽에 도움이 되는 방안이었다고 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1cd0680ef1",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 말하는 관점 전환의 효과로 가장 적절한 것은?\n\nWhen people remain trapped in familiar routines, they may fail to notice unusual ideas. Looking at a situation from another angle can make them question what they have taken for granted and discover a creative answer to a problem.",
+"choices": [
+"익숙한 가정을 의심하지 않도록 해 준다.",
+"모든 문제에 하나의 정해진 답만 적용하게 한다.",
+"새로운 생각보다 기존의 일상을 강화한다.",
+"문제를 이해하는 범위를 넓히고 창의적인 해결을 돕는다.",
+"복잡한 문제를 해결하려는 시도 자체를 줄인다."
+],
+"answer": "④",
+"solution": "다른 관점에서 상황을 보면 당연하게 여겼던 생각을 재검토하고 새로운 해결책을 찾을 수 있다. 그러므로 이해의 범위를 넓히고 창의적인 문제 해결을 돕는다는 ④가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d52ac80c7e",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 답을 알 수 없는 질문은?\n\nGropius borrowed an idea from a vineyard where customers harvested grapes for themselves. At his amusement park, he first covered the possible pathway areas with grass and let visitors move freely. The next year, he replaced the naturally formed tracks with permanent paths. Since the tracks reflected the visitors’ actual movement, the resulting routes were convenient and efficient. The design later received recognition at an international landscape architecture event in London.",
+"choices": [
+"What experience inspired Gropius’s pathway plan?",
+"What material first covered the areas intended for pathways?",
+"When did Gropius turn the tracks into permanent paths?",
+"Why were the completed routes convenient for visitors?",
+"How many visitors entered the park before the permanent paths were built?"
+],
+"answer": "⑤",
+"solution": "포도밭에서 얻은 발상, 잔디의 사용, 이듬해의 영구 통로 건설, 통로가 편리했던 이유는 모두 글에서 확인할 수 있다. 그러나 영구 통로가 생기기 전에 입장한 방문객의 수는 제시되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b03991e3cf",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 사례의 공통점으로 가장 적절한 것은?\n\n(A) An elevator-company employee stopped concentrating on mechanical speed and considered how passengers experienced the ride. A mirror then reduced their boredom and made the unchanged ride seem quicker.\n\n(B) Doughnut-shop owners gave leftover food to police officers on late-night duty. The officers visited more frequently, and their presence helped protect the shops.",
+"choices": [
+"비용이 많이 드는 장비로 기존 시설의 성능을 높였다.",
+"문제의 직접적인 원인만 제거하여 즉각적인 결과를 얻었다.",
+"상대방의 행동과 경험을 활용하는 간접적인 해결책을 찾았다.",
+"한쪽의 희생을 통해 다른 쪽만 이익을 얻도록 했다.",
+"전문가의 전통적인 해결 방식을 그대로 따랐다."
+],
+"answer": "③",
+"solution": "엘리베이터 사례는 승객의 주의와 시간 인식을, 도넛 가게 사례는 경찰관의 방문 행동을 활용했다. 두 사례 모두 문제 자체를 직접 바꾸기보다 다른 사람의 경험이나 행동을 고려한 간접적 해결책이라는 공통점이 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-65300202bf",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 직원이 문제를 해결한 핵심 원리를 영어 한 문장으로 쓰시오. 단, actual speed, attention, perception of time을 모두 활용할 것.\n\nPassengers complained that an elevator felt too slow. Instead of seeking another way to increase its mechanical speed, an employee installed a mirror. Watching themselves in it kept passengers occupied, and later they described the elevator as faster even though its operation had not changed.",
+"selfGrade": true,
+"answer": "She redirected passengers’ attention and sped up their perception of time without changing the elevator’s actual speed.",
+"solution": "거울은 엘리베이터의 실제 속도를 바꾼 것이 아니라 승객의 주의를 이동 시간에서 다른 곳으로 돌렸다. 그 결과 승객의 시간 인식이 빨라져 같은 운행 시간을 더 짧게 느꼈다. 제시된 세 표현을 모두 사용하여 이러한 인과관계를 한 문장으로 밝혀야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d26e63f895",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 표현과 의미가 가장 가까운 것을 고르시오.\n\nUpon closer inspection, all the objects in the picture are composed of small dots.",
+"choices": [
+"are covered with",
+"consist of",
+"are separated from",
+"are compared with",
+"are hidden by"
+],
+"answer": "②",
+"solution": "be composed of는 ‘~으로 구성되다’라는 뜻이다. consist of가 이와 같은 의미이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6453c97130",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 질문에 대한 답으로 가장 알맞은 것을 고르시오.\n\nWhich two primary colors of light are perceived as cyan when their pixels are put together?",
+"choices": [
+"Red and yellow",
+"Red and green",
+"Red and blue",
+"Blue and green",
+"Yellow and blue"
+],
+"answer": "④",
+"solution": "지문에 따르면 파란색 픽셀과 초록색 픽셀의 조합은 청록색(cyan)으로 인식된다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dc213902ac",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 한 단어를 지문에서 찾아 쓰시오.\n\nWhen we zoom in on the edge of the flower, we can see many square dots with ________ colors and tones.",
+"selfGrade": true,
+"answer": "distinct",
+"solution": "확대된 꽃의 가장자리를 보면 각각의 정사각형 점은 서로 뚜렷이 구별되는 색과 색조를 지닌다. 따라서 ‘뚜렷이 다른’이라는 뜻의 distinct가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0856124727",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 Seurat가 ‘과학적 예술가’로 알려진 이유를 가장 정확하게 나타낸 문장을 고르시오.",
+"choices": [
+"He painted only the objects that could be found in nature.",
+"He completed every painting within a short period of time.",
+"He created art by applying color theory to carefully arranged dots.",
+"He used boundary lines to separate every object clearly.",
+"He mixed all his paints before placing them on the canvas."
+],
+"answer": "③",
+"solution": "Seurat는 색채 이론을 활용하고 각각의 점을 목적과 의도에 따라 배치했다. 이러한 과학적인 제작 방식 때문에 그가 과학적 예술가로 불렸으므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5a3795d45c",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 문장을 고르시오.",
+"choices": [
+"The work named A Sunday Afternoon on the Island of La Grande Jatte was created by Seurat.",
+"The grass where the shade falls is painted dark.",
+"If you look closer, you will notice that there are no object boundary lines.",
+"The painting uses several colors of dots to represent one color, which adds vibrancy to it.",
+"Seurat kept studying color composition, analyzing it, and revise his work."
+],
+"answer": "⑤",
+"solution": "keep 뒤에서 studying과 analyzing이 병렬 구조를 이루므로 마지막 동사도 동명사인 revising이 되어야 한다. 따라서 revise가 쓰인 ⑤가 어법상 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f46cb6cf72",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 낱말 중 문맥상 적절하지 않은 것을 고르시오.\n\nIn Seurat’s work, areas under the shade are painted ①dark, while areas without shadow appear ②bright. This ③contrast is visually impressive. In addition, several distinct colors of dots represent a single color and ④reduce the painting’s vibrancy. When the work is viewed from far away, the colored dots ⑤merge in the viewer’s eyes.",
+"choices": [
+"① dark",
+"② bright",
+"③ contrast",
+"④ reduce",
+"⑤ merge"
+],
+"answer": "④",
+"solution": "서로 다른 색의 점을 사용하면 작품에 생동감이 더해진다는 것이 지문의 내용이다. 따라서 ‘감소시키다’라는 reduce는 문맥에 맞지 않으며 add 또는 increase와 같은 말이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6ccf6d3a1a",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 Signac의 색채 표현 방법을 요약한 것이다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nRather than mixing yellow and blue to paint the grass, Signac placed separate colored dots beside one another. He adjusted their (A) ________ to produce different (B) ________ of green.",
+"choices": [
+"positions ― objects",
+"proportions ― shades",
+"boundaries ― shapes",
+"directions ― contrasts",
+"amounts ― materials"
+],
+"answer": "②",
+"solution": "Signac는 노랑·파랑·초록 점이 차지하는 비율(proportions)을 바꾸었다. 이를 통해 다양한 녹색의 색조(shades)를 만들었으므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-50e4b5faa5",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 의미가 같도록 <보기>의 말을 모두 한 번씩 사용하여 영작하시오. 필요하면 대소문자를 바꾸되, 단어를 추가하거나 형태를 바꾸지 마시오.\n\n같은 양의 빨간색 픽셀과 초록색 픽셀이 서로 나란히 놓일 때에만, 보는 사람들은 그 결과로 나타나는 색을 노란색으로 인식할 수 있다.\n\n<보기>\nas / amounts / can / color / each / equal / green / only / other / perceive / pixels / placed / red / resulting / the / to / viewers / when / yellow / are / and / next",
+"selfGrade": true,
+"answer": "Only when equal amounts of red and green pixels are placed next to each other can viewers perceive the resulting color as yellow.",
+"solution": "‘~할 때에만’은 Only when으로 나타내며, 이를 문장 앞에 두면 주절에서 can과 주어 viewers가 도치된다. ‘서로 나란히’는 next to each other, ‘A를 B로 인식하다’는 perceive A as B로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0f3b35f583",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 글에서 찾아 쓰시오. (각 빈칸에 한 단어씩)\n\nA man noticed an enormous box outside the door. A picture on the box made him think that it contained a television. His wife explained that the package contained the bicycle she had ordered.\n\nQ. What made the man think a television had arrived?\n→ A __________ on the __________ made him think so.",
+"selfGrade": true,
+"answer": "picture box",
+"solution": "남자는 상자에 있는 그림 때문에 텔레비전이 도착했다고 생각했다. 따라서 빈칸에는 그림을 뜻하는 picture와 상자를 뜻하는 box가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0ffafc81af",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 글에서 찾아 쓰시오. (각 빈칸에 한 단어씩)\n\nSome doughnut shops stayed open until late at night. Their owners were worried about safety. They decided to give leftover doughnuts to police officers working at night.\n\nQ. What food did the owners decide to give away?\n→ They decided to give away __________ __________.",
+"selfGrade": true,
+"answer": "leftover doughnuts",
+"solution": "가게 주인들이 주기로 한 음식은 남은 도넛이다. 본문의 leftover doughnuts를 그대로 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6025d3e092",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 글에서 찾아 쓰시오. (각 빈칸에 한 단어씩)\n\nThe shop owners offered doughnuts to police officers on duty late at night. The officers could get the food without paying, and their visits helped protect the shops.\n\nQ. Which police officers were offered doughnuts?\n→ Those who were __________ __________ late at night.",
+"selfGrade": true,
+"answer": "on duty",
+"solution": "도넛을 제공받은 대상은 밤늦게 근무 중인 경찰관들이었다. on duty는 ‘근무 중인’이라는 뜻이므로 두 빈칸에 차례대로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2a84c2eb82",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화를 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 대화에서 찾아 쓰시오. (각 빈칸에 한 단어씩)\n\nA: Why would a bicycle company use a television picture on its packaging?\nB: It wanted delivery workers to handle the bicycles with greater care.\nA: So the picture was intended to influence the workers' behavior.\nB: Exactly. It was a clever packaging idea.\n\nQ. What did the company want delivery workers to do?\n→ It wanted them to __________ the bicycles with __________ __________.",
+"selfGrade": true,
+"answer": "handle greater care",
+"solution": "회사가 원한 행동은 배송 직원들이 자전거를 더욱 주의해서 다루는 것이었다. wanted them to 뒤에는 동사원형 handle을 쓰고, with 뒤에는 greater care를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4eb459065a",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글을 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 글에서 찾아 쓰시오. (각 빈칸에 한 단어씩)\n\nThe doughnut shop owners' plan helped both sides. Police officers received doughnuts for free. As the officers began visiting more often, the owners enjoyed greater safety at their shops.\n\nQ. What did each side gain from the plan?\n→ The officers received __________ for free, while the owners enjoyed __________ __________.",
+"selfGrade": true,
+"answer": "doughnuts greater safety",
+"solution": "경찰관들이 얻은 것은 무료 도넛이고, 가게 주인들이 얻은 것은 더 높은 안전성이었다. 두 집단의 이익을 구분하여 doughnuts와 greater safety를 각각 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d54d1d930e",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 글에서 찾아 쓰시오. (필요시 형태를 바꾸고, 각 빈칸에 한 단어씩)\n\nFew businesses remained open late at night, but some doughnut shops did. Their owners worried about possible robberies. To improve safety, they donated leftover doughnuts to police officers working at night. The officers consequently visited more frequently, making the shops safer.\n\nQ. How were the owners' action and the officers' response connected?\n→ The owners encouraged more frequent __________ from police officers by __________ __________ __________ to them.",
+"selfGrade": true,
+"answer": "visits donating leftover doughnuts",
+"solution": "가게 주인들이 남은 도넛을 기부하자 경찰관들의 방문이 잦아졌다. 첫 번째 빈칸에는 more frequent의 수식을 받는 복수명사 visits가 필요하므로 visited를 바꿔 쓴다. by 뒤에서는 donated를 동명사 donating으로 바꾸고, 기부한 대상인 leftover doughnuts를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6aa7b9b5a6",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 대화를 읽고, 질문의 답이 완성되도록 빈칸에 들어갈 말을 대화에서 찾아 쓰시오. (필요시 형태를 바꾸고, 각 빈칸에 한 단어씩)\n\nA: The picture on this package suggests that there is a television inside.\nB: Actually, it is the bicycle I ordered. The company uses television pictures on bicycle boxes.\nA: Why does it do that?\nB: To encourage delivery workers to treat the bicycles more carefully.\nA: Then let's open the package and check the bicycle's condition.\n\nQ. What distinction should be made between the picture and the contents, and what was the company's aim?\n→ The picture showed a __________, whereas the package contained a __________. The aim was to encourage more __________ __________ of bicycles by delivery workers.",
+"selfGrade": true,
+"answer": "television bicycle careful treatment",
+"solution": "상자의 그림이 나타내는 것은 television이지만 실제 내용물은 bicycle이다. 회사의 목적은 자전거를 더 조심스럽게 다루도록 하는 것이므로 carefully를 형용사 careful로, treat를 명사 treatment로 바꾼다. more careful treatment는 ‘더 조심스러운 취급’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
 }
 ]

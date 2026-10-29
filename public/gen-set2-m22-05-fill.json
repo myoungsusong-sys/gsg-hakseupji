@@ -1,0 +1,302 @@
+[
+{
+"id": "fill-2b051dc091",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "서로 닮은 두 오각형 $P$, $Q$에서 서로 대응하는 두 변의 길이가 각각 $6\\,\\mathrm{cm}$, $9\\,\\mathrm{cm}$이다. 오각형 $P$의 둘레의 길이가 $34\\,\\mathrm{cm}$일 때, 오각형 $Q$의 둘레의 길이는?",
+"choices": [
+"$45\\,\\mathrm{cm}$",
+"$48\\,\\mathrm{cm}$",
+"$51\\,\\mathrm{cm}$",
+"$54\\,\\mathrm{cm}$",
+"$57\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "오각형 $P$와 $Q$의 닮음비는 $6:9=2:3$이다. 둘레의 길이의 비도 $2:3$이므로 오각형 $Q$의 둘레의 길이는 $34\\times\\dfrac{3}{2}=51\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-17a77bb447",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "주관식",
+"diff": 2,
+"body": "서로 닮은 두 원기둥의 대응하는 길이의 비가 $2:3$이다. 작은 원기둥의 부피가 $128\\,\\mathrm{cm}^3$일 때, 큰 원기둥의 부피를 구하여라.",
+"selfGrade": true,
+"answer": "$432\\,\\mathrm{cm}^3$",
+"solution": "두 원기둥의 부피의 비는 닮음비의 세제곱인 $2^3:3^3=8:27$이다. 따라서 큰 원기둥의 부피는 $128\\times\\dfrac{27}{8}=432\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-cd5e6796ac",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "사다리꼴 $ABCD$에서 $AB\\parallel CD$이고, $AB=8\\,\\mathrm{cm}$, $CD=12\\,\\mathrm{cm}$이다. 두 대각선 $AC$, $BD$의 교점을 $O$라 할 때, $AC=25\\,\\mathrm{cm}$이다. 선분 $AO$의 길이는?",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "$\\triangle AOB$와 $\\triangle COD$는 닮은 삼각형이므로 $AO:OC=AB:CD=2:3$이다. $AO+OC=25\\,\\mathrm{cm}$이므로 $AO=25\\times\\dfrac{2}{5}=10\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-f9a9a35c07",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 두 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고, $DE\\parallel BC$이다. $AD:DB=3:2$이고 사각형 $DBCE$의 넓이가 $64\\,\\mathrm{cm}^2$일 때, 삼각형 $ADE$의 넓이는?",
+"choices": [
+"$24\\,\\mathrm{cm}^2$",
+"$32\\,\\mathrm{cm}^2$",
+"$36\\,\\mathrm{cm}^2$",
+"$40\\,\\mathrm{cm}^2$",
+"$48\\,\\mathrm{cm}^2$"
+],
+"answer": "③",
+"solution": "$AD:AB=3:5$이므로 $\\triangle ADE$와 $\\triangle ABC$의 넓이의 비는 $9:25$이다. 따라서 사각형 $DBCE$와 $\\triangle ABC$의 넓이의 비는 $16:25$이므로 $\\triangle ABC$의 넓이는 $100\\,\\mathrm{cm}^2$이다. 그러므로 $\\triangle ADE$의 넓이는 $100\\times\\dfrac{9}{25}=36\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-cbab06f248",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "서로 닮은 두 삼각기둥의 겉넓이의 비가 $25:49$이다. 큰 삼각기둥의 부피가 $686\\,\\mathrm{cm}^3$일 때, 작은 삼각기둥의 부피는?",
+"choices": [
+"$196\\,\\mathrm{cm}^3$",
+"$225\\,\\mathrm{cm}^3$",
+"$250\\,\\mathrm{cm}^3$",
+"$294\\,\\mathrm{cm}^3$",
+"$350\\,\\mathrm{cm}^3$"
+],
+"answer": "③",
+"solution": "겉넓이의 비가 $25:49=5^2:7^2$이므로 두 삼각기둥의 닮음비는 $5:7$이다. 부피의 비는 $5^3:7^3=125:343$이므로 작은 삼각기둥의 부피는 $686\\times\\dfrac{125}{343}=250\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-7b568e7bef",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "주관식",
+"diff": 3,
+"body": "꼭짓점이 아래를 향하도록 세운 원뿔 모양의 빈 물통에 일정한 부피의 물을 매분 넣는다. 물을 넣기 시작한 지 $18$분 후 물 표면의 넓이가 물통의 입구 넓이의 $\\dfrac{1}{4}$이 되었다. 물통을 가득 채우는 데 걸리는 시간을 구하여라.\n\n단, 물 표면은 항상 물통의 입구와 평행하고 물의 증발과 누수는 없다.",
+"selfGrade": true,
+"answer": "$144$분",
+"solution": "물 표면의 넓이가 입구 넓이의 $\\dfrac{1}{4}$이므로 물이 차 있는 원뿔과 물통의 닮음비는 $1:2$이다. 이때 물의 부피는 물통 부피의 $\\left(\\dfrac{1}{2}\\right)^3=\\dfrac{1}{8}$이므로 전체를 채우는 데 걸리는 시간은 $18\\times8=144$분이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-53d09f7912",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "꼭짓점이 아래를 향하도록 세운 원뿔 모양의 빈 물통에 일정한 부피의 물을 매분 넣고 있다. 물 표면의 넓이가 물통의 입구 넓이의 $\\dfrac{4}{25}$이 된 순간부터 $\\dfrac{9}{25}$이 된 순간까지 $38$분이 걸렸다. 물 표면의 넓이가 입구 넓이의 $\\dfrac{9}{25}$이 된 순간부터 물통을 가득 채울 때까지 걸리는 시간은?\n\n단, 물 표면은 항상 물통의 입구와 평행하고 물의 증발과 누수는 없다.",
+"choices": [
+"$152$분",
+"$180$분",
+"$190$분",
+"$196$분",
+"$212$분"
+],
+"answer": "④",
+"solution": "두 순간에 물이 차 있는 원뿔과 물통의 닮음비는 각각 $2:5$, $3:5$이므로 부피의 비는 각각 $8:125$, $27:125$이다. 물통 부피의 $\\dfrac{19}{125}$을 채우는 데 $38$분이 걸리므로 전체를 채우는 데에는 $250$분이 걸린다. 두 번째 순간 이후 남은 부피는 전체의 $\\dfrac{98}{125}$이므로 걸리는 시간은 $250\\times\\dfrac{98}{125}=196$분이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-962d67802c",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "사다리꼴 $ABCD$에서 $AB\\parallel CD$이고, $AB=9\\,\\mathrm{cm}$, $CD=18\\,\\mathrm{cm}$이다. 두 대각선의 교점을 $O$라 하고, 선분 $OC$ 위에 $OE:EC=1:2$가 되도록 점 $E$를 잡는다. 점 $E$를 지나고 $CD$에 평행한 직선이 선분 $OD$와 만나는 점을 $F$라 하자. 사다리꼴 $ABCD$의 넓이가 $162\\,\\mathrm{cm}^2$일 때, 사각형 $ECDF$의 넓이는?",
+"choices": [
+"$48\\,\\mathrm{cm}^2$",
+"$56\\,\\mathrm{cm}^2$",
+"$60\\,\\mathrm{cm}^2$",
+"$64\\,\\mathrm{cm}^2$",
+"$72\\,\\mathrm{cm}^2$"
+],
+"answer": "④",
+"solution": "$AB:CD=1:2$이므로 $\\triangle AOB$와 $\\triangle COD$의 닮음비는 $1:2$이고, $\\triangle COD$의 넓이는 사다리꼴 넓이의 $\\dfrac{2^2}{2^2-1^2}=\\dfrac{4}{3}$이 아니라 전체 높이를 이용하여 구해야 한다. 점 $O$에서 $CD$까지의 거리는 사다리꼴 높이의 $\\dfrac{2}{3}$이므로 $\\triangle COD$의 넓이는 전체 넓이의 $\\dfrac{4}{9}$인 $72\\,\\mathrm{cm}^2$이다. $OE:OC=1:3$이므로 $\\triangle OEF$의 넓이는 $72\\times\\dfrac{1}{9}=8\\,\\mathrm{cm}^2$이고, 따라서 사각형 $ECDF$의 넓이는 $72-8=64\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-afca7a3699",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "주관식",
+"diff": 5,
+"body": "서로 닮은 세 사각뿔 $A$, $B$, $C$가 작은 것부터 차례로 놓여 있다. 세 사각뿔의 서로 대응하는 밑면의 한 모서리의 길이는 차례로 같은 길이만큼 증가한다. 각 사각뿔의 겉넓이를 각각 $S_A$, $S_B$, $S_C$라 할 때\n$(S_B-S_A):(S_C-S_B)=7:9$\n이다. 사각뿔 $B$와 $A$의 부피의 차가 $296\\,\\mathrm{cm}^3$일 때, 사각뿔 $C$의 부피를 구하여라.",
+"selfGrade": true,
+"answer": "$1000\\,\\mathrm{cm}^3$",
+"solution": "대응하는 모서리의 길이를 각각 $x$, $x+d$, $x+2d$라 하면 겉넓이의 차의 비는 $(2xd+d^2):(2xd+3d^2)=7:9$이다. 이를 풀면 $x=3d$이므로 세 사각뿔의 닮음비는 $3:4:5$, 부피의 비는 $27:64:125$이다. 부피비의 $64-27=37$에 해당하는 부피가 $296\\,\\mathrm{cm}^3$이므로 사각뿔 $C$의 부피는 $296\\times\\dfrac{125}{37}=1000\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-8bef2d77a1",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 점 $A$로부터 변 $BC$에 내린 수선의 발을 $H$라 한다. $BH=8\\,\\mathrm{cm}$, $HC=18\\,\\mathrm{cm}$일 때, $AH$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$11\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$13\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "두 삼각형 $ABH$와 $CAH$는 두 쌍의 대응각의 크기가 각각 같으므로 AA 닮음이다. 따라서 $BH:AH=AH:HC$이므로 $AH^2=8\\times18=144$이다. 길이는 양수이므로 $AH=12\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-9691b9948d",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있다. $AD=4\\,\\mathrm{cm}$, $DB=8\\,\\mathrm{cm}$, $AE=6\\,\\mathrm{cm}$, $EC=2\\,\\mathrm{cm}$, $DE=7\\,\\mathrm{cm}$일 때, $BC$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "$AB=12\\,\\mathrm{cm}$, $AC=8\\,\\mathrm{cm}$이므로 $AD:AC=AE:AB=1:2$이다. 또 $\\angle DAE=\\angle CAB$이므로 $\\triangle ADE\\sim\\triangle ACB$이다(SAS 닮음). 따라서 $DE:CB=1:2$이므로 $BC=14\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-8e01832ab3",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 점 $A$로부터 변 $BC$에 내린 수선의 발을 $H$라 한다. $AB=10\\,\\mathrm{cm}$, $BC=25\\,\\mathrm{cm}$일 때, $BH$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$4\\,\\mathrm{cm}$",
+"solution": "두 삼각형 $ABH$와 $CBA$는 두 쌍의 대응각의 크기가 각각 같으므로 AA 닮음이다. 따라서 $BH:BA=BA:BC$이므로 $BH\\times25=10^2$이다. 그러므로 $BH=4\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-25c1773208",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "주관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있다. $AD=6\\,\\mathrm{cm}$, $DB=9\\,\\mathrm{cm}$, $AE=9\\,\\mathrm{cm}$, $EC=1\\,\\mathrm{cm}$이고, 사각형 $DBCE$의 둘레의 길이는 $42\\,\\mathrm{cm}$이다. $BC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$20\\,\\mathrm{cm}$",
+"solution": "$AB=15\\,\\mathrm{cm}$, $AC=10\\,\\mathrm{cm}$이므로 $AD:AC=AE:AB=3:5$이고, 그 끼인각이 같아 $\\triangle ADE\\sim\\triangle ACB$이다(SAS 닮음). 따라서 $DE:BC=3:5$이다. 사각형의 둘레에서 $DE+BC=42-9-1=32\\,\\mathrm{cm}$이므로 $BC=32\\times\\frac{5}{8}=20\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-cbb02ac194",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 모양의 종이 $ABC$에서 $AB=12\\,\\mathrm{cm}$, $AC=16\\,\\mathrm{cm}$, $BC=20\\,\\mathrm{cm}$이다. 꼭짓점 $B$가 꼭짓점 $C$에 포개어지도록 종이를 접었을 때, 접는 선과 변 $BC$, $AC$의 교점을 각각 $M$, $P$라 한다. $PM$의 길이는?",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$\\dfrac{25}{4}\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$\\dfrac{15}{2}\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "접는 선은 선분 $BC$의 수직이등분선이므로 $CM=10\\,\\mathrm{cm}$이고 $\\angle CMP=90^\\circ$이다. 두 삼각형 $CMP$와 $CAB$는 각 $C$가 공통이고 한 쌍의 직각이 같으므로 AA 닮음이다. 따라서 $PM:AB=CM:CA$이므로 $PM=12\\times\\frac{10}{16}=\\frac{15}{2}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-fe005e2bbd",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 점 $A$로부터 변 $BC$에 내린 수선의 발을 $H$라 한다. 삼각형 $ABH$와 삼각형 $AHC$의 넓이의 비가 $4:9$이고 $AH=6\\,\\mathrm{cm}$일 때, $BC$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$11\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$13\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "두 삼각형은 밑변을 각각 $BH$, $HC$로 볼 때 높이가 같으므로 $BH:HC=4:9$이다. $BH=4x\\,\\mathrm{cm}$, $HC=9x\\,\\mathrm{cm}$라 하면, $\\triangle ABH\\sim\\triangle CAH$에서 $AH^2=BH\\times HC$이므로 $36=36x^2$이다. $x>0$이므로 $x=1$이고, $BC=4+9=13\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c5510e1bcb",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 점 $A$로부터 변 $BC$에 내린 수선의 발을 $H$라 한다. 삼각형 $ABH$와 삼각형 $AHC$의 넓이의 비는 $16:9$이고, $AH=12\\,\\mathrm{cm}$이다. 점 $H$에서 변 $AB$에 내린 수선의 발을 $K$, 점 $K$에서 변 $BC$에 내린 수선의 발을 $L$이라 할 때, $KL$의 길이는?",
+"choices": [
+"$\\dfrac{108}{25}\\,\\mathrm{cm}$",
+"$\\dfrac{144}{25}\\,\\mathrm{cm}$",
+"$\\dfrac{192}{25}\\,\\mathrm{cm}$",
+"$\\dfrac{48}{5}\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "넓이의 비에서 $BH:HC=16:9$이고, $\\triangle ABH\\sim\\triangle CAH$에서 $AH^2=BH\\times HC$이므로 $BH=16\\,\\mathrm{cm}$, $HC=9\\,\\mathrm{cm}$이다. 따라서 $BC=25\\,\\mathrm{cm}$이고, $AB^2=BH\\times BC=400$이므로 $AB=20\\,\\mathrm{cm}$이다. $\\triangle BKH\\sim\\triangle BHA$이므로 $BK=\\frac{BH^2}{BA}=\\frac{64}{5}\\,\\mathrm{cm}$이다. 다시 $\\triangle BKL\\sim\\triangle BAH$이므로 $KL=AH\\times\\frac{BK}{BA}=12\\times\\frac{16}{25}=\\frac{192}{25}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-8e7e1bebf6",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있다. $AD=8\\,\\mathrm{cm}$, $DB=7\\,\\mathrm{cm}$, $AE=6\\,\\mathrm{cm}$, $EC=14\\,\\mathrm{cm}$이고, 사각형 $DBCE$의 둘레의 길이는 $56\\,\\mathrm{cm}$이다. 사각형 $DBCE$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$126\\,\\mathrm{cm}^2$",
+"solution": "$AB=15\\,\\mathrm{cm}$, $AC=20\\,\\mathrm{cm}$이므로 $AD:AC=AE:AB=2:5$이고, 그 끼인각이 같아 $\\triangle ADE\\sim\\triangle ACB$이다(SAS 닮음). 따라서 $DE:BC=2:5$이며, 둘레 조건에서 $DE+BC=56-7-14=35\\,\\mathrm{cm}$이므로 $DE=10\\,\\mathrm{cm}$이다. $6^2+8^2=10^2$이므로 삼각형 $ADE$는 $\\angle DAE=90^\\circ$인 직각삼각형이고, 그 넓이는 $\\frac12\\times8\\times6=24\\,\\mathrm{cm}^2$이다. 두 삼각형 $ADE$, $ABC$의 넓이의 비는 $4:25$이므로 사각형 $DBCE$의 넓이는 $24\\times\\frac{25-4}{4}=126\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-9f65acbbc3",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 모양의 종이 $ABC$에서 점 $A$로부터 변 $BC$에 내린 수선의 발을 $H$라 한다. 삼각형 $ABH$와 삼각형 $AHC$의 넓이의 비는 $9:25$이고, $AH=15\\,\\mathrm{cm}$이다. 꼭짓점 $B$가 꼭짓점 $C$에 포개어지도록 종이를 접었을 때, 접는 선과 변 $BC$, $AC$의 교점을 각각 $M$, $P$라 한다. $PM$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{51}{5}\\,\\mathrm{cm}$",
+"solution": "넓이의 비에서 $BH:HC=9:25$이고, $\\triangle ABH\\sim\\triangle CAH$에서 $AH^2=BH\\times HC$이므로 $BH=9\\,\\mathrm{cm}$, $HC=25\\,\\mathrm{cm}$이다. 따라서 $BC=34\\,\\mathrm{cm}$이며, $AB^2=BH\\times BC$, $AC^2=HC\\times BC$에서 $AB:AC=3:5$이다. 접는 선은 선분 $BC$의 수직이등분선이므로 $CM=17\\,\\mathrm{cm}$이고 $\\angle CMP=90^\\circ$이다. $\\triangle CMP\\sim\\triangle CAB$이므로 $PM:CM=AB:AC=3:5$이고, $PM=17\\times\\frac35=\\frac{51}{5}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+}
+]

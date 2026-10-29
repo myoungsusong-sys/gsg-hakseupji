@@ -1,0 +1,148 @@
+[
+{
+"id": "fill-b19c954542",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nIf you continually neglect your health, you may suffer from an upset stomach.",
+"choices": [
+"improve",
+"ignore",
+"examine",
+"protect",
+"restore"
+],
+"answer": "②",
+"solution": "neglect는 해야 할 일이나 돌봐야 할 대상을 ‘소홀히 하다, 방치하다’라는 뜻이다. 문맥상 건강을 돌보지 않는다는 의미이므로 ignore가 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f95c32cddd",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 밑줄 친 표현과 바꾸어 쓸 수 없는 것은?\n\nA: I often eat something just before going to bed.\nB: In my opinion, you should avoid eating that late.",
+"choices": [
+"I think you should avoid eating that late.",
+"In my view, you should avoid eating that late.",
+"The way I see it, you should avoid eating that late.",
+"From my point of view, you should avoid eating that late.",
+"It has been proven that you should avoid eating that late."
+],
+"answer": "⑤",
+"solution": "In my opinion은 개인의 의견을 제시하는 표현이다. ①~④는 모두 화자의 견해를 나타내지만, ⑤는 어떤 내용이 객관적으로 입증되었다는 뜻이므로 바꾸어 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f4f626c4ae",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문맥에 들어갈 말로 가장 알맞은 것은?\n\nYour body needs time to ______ food properly. If you go to sleep immediately after eating, you may experience indigestion.",
+"choices": [
+"digest",
+"neglect",
+"expose",
+"coin",
+"combat"
+],
+"answer": "①",
+"solution": "음식을 먹은 뒤 신체가 하는 작용과 indigestion이라는 단서에 주목해야 한다. digest는 ‘소화하다’라는 뜻이므로 문맥에 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-29cba0745a",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영 풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto invent a new word or expression that people have not used before",
+"choices": [
+"engage",
+"expose",
+"coin",
+"protect",
+"neglect"
+],
+"answer": "③",
+"solution": "새로운 단어나 표현을 만들어 내는 행위는 동사 coin으로 나타낸다. 따라서 주어진 영영 풀이에 해당하는 단어는 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9c7480542a",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 밑줄 친 문장과 의미가 가장 가까운 것은?\n\nA: Eating right before sleep can cause indigestion.\nB: Really? Then I will save this bread for tomorrow.\nA: Good. I'm glad I've convinced you.",
+"choices": [
+"I'm glad I have made you agree with me.",
+"I'm glad I have allowed you to eat the bread.",
+"I'm glad I have asked you for your opinion.",
+"I'm glad I have hidden the fact from you.",
+"I'm glad I have made you feel more worried."
+],
+"answer": "①",
+"solution": "convince는 근거나 설명을 통해 상대가 어떤 생각을 믿거나 받아들이게 한다는 뜻이다. 대화에서 B가 생각을 바꾸었으므로 ‘내 말에 동의하게 했다’는 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-84f937ec41",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nA regular walking partner can make it easier to maintain an exercise plan. Because you have promised to meet someone, you are less likely to (A)[cancel / complete] the planned walk. While walking, an enjoyable conversation may keep you from (B)[noticing / emphasizing] the effort required for exercise. Sharing the scenery with another person can also make the experience more (C)[engaging / tedious].",
+"choices": [
+"cancel — noticing — engaging",
+"cancel — emphasizing — tedious",
+"complete — noticing — engaging",
+"complete — emphasizing — tedious",
+"complete — noticing — tedious"
+],
+"answer": "①",
+"solution": "함께 걷기로 약속하면 상대를 실망시키고 싶지 않으므로 계획을 취소할 가능성이 작다는 흐름이다. 대화는 운동 중인 사실을 잘 의식하지 않게 하고, 주변 풍경을 함께 나누면 걷기가 더 흥미로워진다. 따라서 cancel, noticing, engaging의 연결이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7cb2ba69b5",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은?",
+"choices": [
+"The amount of exercise he gets is insufficient for maintaining an active lifestyle.",
+"Health experts recommend walking as a safe way to combat the problems caused by prolonged sitting.",
+"Scientists eliminated the expression “sitting disease” to describe the harmful effects of sitting too long.",
+"People who remain seated for long periods may be exposed to several health risks.",
+"The body may not digest a late-night meal properly before sleep."
+],
+"answer": "③",
+"solution": "새로운 현상을 설명하기 위해 표현을 ‘만들었다’는 문맥에는 coined가 적절하다. eliminated는 ‘제거했다’라는 뜻이므로 새로운 표현을 만들어 사용했다는 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f7ba8b5bd3",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A)~(E)에 문맥상 알맞은 영어 단어를 쓰시오. 단, 각 단어는 괄호 안에 제시된 철자로 시작해야 한다.\n\nA considerable number of teenagers do not get enough exercise, so their level of physical activity may be described as (A) i______. Researchers have (B) c______ a special expression for the health problems associated with prolonged sitting. The more time people remain seated, the more (C) e______ they become to various health risks. Walking is an accessible form of exercise that can (D) c______ these problems. Walking with a friend can make the activity more enjoyable and (E) e______.",
+"selfGrade": true,
+"answer": "insufficient / coined / exposed / combat / engaging",
+"solution": "운동량이 충분하지 않다는 뜻에는 insufficient가 알맞고, 표현을 새로 만들었다는 뜻에는 과거분사 coined가 필요하다. 위험에 노출된 상태는 exposed, 문제에 맞서 싸우는 것은 combat으로 나타낸다. 마지막 빈칸에는 걷기를 흥미롭고 몰입하게 만든다는 의미의 engaging이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+}
+]
