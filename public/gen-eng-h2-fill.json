@@ -692,5 +692,2245 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-u2m0s1t0",
 "custom": true
+},
+{
+"id": "fill-f5b5dd18b6",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 목적으로 가장 적절한 것은?\n\nBefore cleaning the blender, disconnect it from the power supply. Remove the container from the motor base and wash it with warm, soapy water. Never place the motor base in water. Make sure that every part is completely dry before putting the blender back together.",
+"choices": [
+"믹서기의 성능을 홍보하려고",
+"믹서기의 안전한 세척 방법을 안내하려고",
+"고장 난 믹서기의 교환을 요청하려고",
+"믹서기를 활용한 요리법을 소개하려고",
+"여러 종류의 믹서기를 비교하려고"
+],
+"answer": "②",
+"solution": "전원을 분리하고 부품을 세척하는 방법과 주의 사항을 단계적으로 설명하고 있다. 따라서 글의 목적은 믹서기의 안전한 세척 방법을 안내하는 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-b85afe3f50",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nWeekend Museum Assistant Needed\n\nWe are seeking a responsible person to welcome visitors, hand out maps, and answer basic questions about the exhibits.\n\n• Working days: Saturday and Sunday\n• Applicants must be at least 17 years old.\n• Previous work experience is not required.\n\nComplete the application form at the information desk by April 18.",
+"choices": [
+"a museum membership form",
+"a job advertisement",
+"an exhibition review",
+"a visitor's complaint",
+"a museum tour schedule"
+],
+"answer": "②",
+"solution": "모집 직무, 근무일, 지원 자격과 지원 방법이 제시되어 있다. 이는 박물관 보조 직원을 모집하는 구인 광고이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-ac2269d9dc",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 출처로 가장 적절한 것은?\n\nThis is a reminder that the two books currently checked out on your account are due on May 6. You may extend the loan period by signing in to your account, provided that no other reader has requested the books. Materials returned after the due date may result in a temporary suspension of borrowing privileges. If you have already returned the books, please disregard this message.",
+"choices": [
+"a publishing company's book catalog",
+"a reader's online book review",
+"a library's automated notification",
+"a newspaper report on public libraries",
+"a writer's invitation to a book discussion"
+],
+"answer": "③",
+"solution": "대출 도서의 반납 기한과 연장 방법, 연체 시 불이익을 특정 이용자에게 알리고 있다. 이미 반납했다면 메시지를 무시하라는 표현도 있으므로 도서관의 자동 알림에서 나온 글이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-3e93d42fc5",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nTo Whom It May Concern:\n\nDuring the three semesters in which I taught the applicant, I was consistently impressed by the way she responded to unexpected results in laboratory work. Instead of hiding mistakes, she examined each step and shared what she had learned with her classmates. She also volunteered to guide younger students during our after-school science activities. These qualities, along with her intellectual curiosity, convince me that she is well prepared for advanced study. I strongly support her application.\n\nSincerely,\nA Science Teacher",
+"choices": [
+"a student's personal statement",
+"a laboratory safety notice",
+"a teacher's letter of recommendation",
+"a report evaluating a science program",
+"a complaint about an admissions decision"
+],
+"answer": "③",
+"solution": "교사가 지원자를 가르친 경험을 근거로 학업 태도와 인성을 평가하고 지원을 지지하고 있다. 지원자가 자신을 소개하는 글이 아니라 제삼자가 자격을 보증하는 추천서이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-4fdc7bc9d4",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nAlthough contact with nature has often been associated with improved mood, its immediate effect on concentration requires further investigation. Seventy-two participants completed an attention test before and after spending 35 minutes either in a garden or beside a road with heavy traffic. The garden group showed a larger increase in test scores. Because the participants were drawn from a limited age group, the results should not be generalized without further research.",
+"choices": [
+"the abstract of a research paper",
+"an advertisement for a public garden",
+"a reporter's account of a traffic problem",
+"a personal reflection on outdoor exercise",
+"an instruction sheet for an attention test"
+],
+"answer": "①",
+"solution": "연구 배경, 참여자와 실험 절차, 결과 및 연구의 한계가 압축적으로 제시되어 있다. 개인적 경험이나 보도 중심의 글이 아니라 연구 논문의 내용을 요약한 초록이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-f1500bdb79",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 (A), (B) 글의 종류를 바르게 짝지은 것은?\n\n(A)\nThe applicant does not give up when an experiment produces an unexpected outcome. In my class, he repeatedly checked his procedures, identified possible causes, and explained his findings to other students. His honesty and persistence will make him a valuable member of any academic community. I am therefore pleased to support his application.\n\n(B)\nMy interest in science grew when I realized that an unsuccessful experiment could be more instructive than a successful one. By reviewing my own procedures and discussing errors with classmates, I learned to treat failure as evidence rather than defeat. I hope to continue developing this attitude through your university's science program.",
+"choices": [
+"(A) a recommendation letter — (B) a personal statement",
+"(A) a personal statement — (B) a recommendation letter",
+"(A) a research abstract — (B) a personal statement",
+"(A) a recommendation letter — (B) a laboratory report",
+"(A) a school news article — (B) a letter of complaint"
+],
+"answer": "①",
+"solution": "(A)는 제삼자가 지원자의 행동과 자질을 평가한 뒤 지원을 지지하므로 추천서이다. (B)는 지원자가 자신의 경험과 배운 점, 앞으로의 희망을 직접 서술하므로 자기소개서에 해당한다. 두 글 모두 실험 실패를 언급하지만 서술 주체와 목적이 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-f22b5d76a3",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 종류를 한글로 쓰시오.\n\nBrief contact with natural settings may restore attention, but previous findings have not fully established whether the effect depends on the type of setting. In the present study, participants completed the same concentration task before and after walking along one of two assigned routes. Performance improved more after the route through a park than after the route through a crowded commercial area. The absence of a group that did not take a walk limits the interpretation of these findings, and future studies should control for the possible effect of physical activity.",
+"selfGrade": true,
+"answer": "연구 논문 초록",
+"solution": "연구의 배경과 목적에 이어 실험 방법, 결과, 한계 및 후속 연구 방향이 간결하게 제시되어 있다. 이러한 구성은 연구 전체를 압축하여 소개하는 연구 논문 초록의 전형적인 특징이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-abe0241c8f",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 드러난 Anne의 심경 변화로 가장 적절한 것은?\n\nAnne was upset because her swimming records had not improved despite her continued effort. Her coach offered to help her practice more and encouraged her not to give up. Anne then decided to begin extra practice the following day, believing that she could improve.",
+"choices": [
+"discouraged → determined",
+"confused → embarrassed",
+"delighted → disappointed",
+"indifferent → frightened",
+"confident → regretful"
+],
+"answer": "①",
+"solution": "Anne은 노력해도 기록이 나아지지 않아 처음에는 낙담해 있다. 그러나 코치의 격려와 도움을 받아 추가 연습을 결심하므로 심경은 ‘discouraged’에서 ‘determined’로 변한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-90435ce7b6",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 드러난 Shackleton의 심경으로 가장 적절한 것은?\n\nThe men stranded on Elephant Island were finally found by a rescue ship. Every crew member survived the severe journey, and Shackleton informed his wife that he had brought them all through the ordeal without losing anyone.",
+"choices": [
+"jealous and dissatisfied",
+"calm and indifferent",
+"grateful and relieved",
+"ashamed and hesitant",
+"lonely and pessimistic"
+],
+"answer": "③",
+"solution": "혹독한 여정 끝에 선원 전원이 구조되었고 희생자도 없었다. 따라서 Shackleton은 안도하며 감사함을 느꼈을 것으로 보는 것이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-bfdeaff43a",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에 나타난 Framton의 심경 변화를 가장 적절하게 나타낸 것은?\n\nFramton continued describing his health problems, assuming that his hostess cared about them. Mrs. Sappleton showed little interest, but suddenly became cheerful when she noticed people approaching outside. Framton misunderstood the reason for her reaction and felt sorry for her. When he saw the niece staring through the open window in terror, however, he also began to feel a growing fear.",
+"choices": [
+"self-conscious → suspicious → furious",
+"confident → compassionate → terrified",
+"hopeful → disappointed → ashamed",
+"embarrassed → indifferent → relieved",
+"curious → sympathetic → delighted"
+],
+"answer": "②",
+"solution": "Framton은 자신의 질병 이야기에 상대가 관심이 있다고 믿고 거리낌 없이 말하므로 처음에는 비교적 자신감이 있다. 이어 여주인의 상태를 오해해 연민을 느끼고, 조카의 공포스러운 표정을 본 뒤에는 두려움에 빠진다. 따라서 ‘confident → compassionate → terrified’가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-5d17094107",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 ‘I’의 심경이 어떻게 변화하는지 <조건>에 맞게 영어로 쓰시오.\n\nAfter repeatedly losing music contests against more talented classmates, I came to doubt whether I could ever achieve my dream. Looking at The Old Guitarist reminded me that my grandfather had continued making music without seeking public recognition. I then understood that becoming a true musician required me to keep playing despite failure.\n\n<조건>\n1. ‘절망한’과 ‘다시 의욕을 얻은’의 의미를 나타내는 형용사를 차례로 쓸 것.\n2. 두 단어를 화살표(→)로 연결할 것.",
+"selfGrade": true,
+"answer": "hopeless → motivated",
+"solution": "반복되는 실패로 ‘I’는 꿈을 이루기 어렵다고 생각하며 희망을 잃는다. 그러나 할아버지의 삶을 떠올린 뒤 계속 음악을 해야 한다는 깨달음을 얻으므로 다시 의욕을 갖게 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-e19af64d56",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에 드러난 Bliksem의 심경 변화를 <조건>에 맞게 영어로 쓰시오.\n\nBliksem finished the race near the front but blamed himself because his accident had prevented the team from winning. He believed that greater caution on his part could have changed the result. Contrary to his expectation, Gabriel embraced him gently and expressed pride in what he had accomplished.\n\n<조건>\n1. 처음과 나중의 심경을 각각 한 단어로 쓸 것.\n2. 본문에 직접 제시되지 않은 심경을 문맥에서 추론할 것.\n3. 두 단어를 화살표(→)로 연결할 것.",
+"selfGrade": true,
+"answer": "guilty → surprised",
+"solution": "Bliksem은 자신의 사고 때문에 팀이 우승하지 못했다고 생각하므로 죄책감을 느낀다. 하지만 비난을 예상한 상황에서 Gabriel이 포옹하며 칭찬하자 놀라게 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-1b5652ec18",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에 나타난 소녀의 심경 변화를 <조건>에 맞게 영어로 쓰시오.\n\nA girl contacted the museum because her Canadian friends wanted an English tour. Learning that every regular English tour was full made her feel that their plan might fail. The staff member then explained that a separate program could be provided for a group of their size, allowing her to reserve the desired morning visit.\n\n<조건>\n1. 예약이 어렵다는 말을 들은 직후와 특별 프로그램이 가능하다는 말을 들은 직후의 심경을 쓸 것.\n2. 각각 한 단어의 형용사를 사용할 것.\n3. 두 단어를 화살표(→)로 연결할 것.",
+"selfGrade": true,
+"answer": "disappointed → delighted",
+"solution": "일반 영어 해설이 모두 예약되었다는 말을 들었을 때 소녀는 실망한다. 이후 일행을 위한 별도 프로그램을 예약할 수 있게 되자 크게 기뻐하므로 ‘disappointed → delighted’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-b0647f2210",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 전달하려는 핵심 생각을 가장 잘 나타낸 문장은?\n\nⓐ Suppose you need to walk from your school to a nearby library. ⓑ A map showing every window and garden along the way would contain plenty of information. ⓒ A useful map makes a journey easier by selecting the information necessary for finding the way. ⓓ Street names and a few important buildings can help you decide where to turn. ⓔ Details about the shapes of garden fences would only make the map harder to read.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "글은 길을 찾는 데 필요한 정보를 골라 제시해야 지도가 유용해진다고 설명한다. ⓒ는 이러한 중심 내용을 포괄하며, 나머지 문장들은 상황 제시나 구체적인 예에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-5a0b9318d0",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 문장 ⓐ~ⓔ 중 글 전체의 주제문으로 가장 알맞은 것은?\n\nⓐ A quiet moment with nothing interesting to do may offer an opportunity for creative thinking. ⓑ Imagine sitting on a bench while waiting for a friend, with your phone left in your bag. ⓒ At first, you may simply wish your friend would arrive sooner. ⓓ Then your thoughts may move freely from something you saw that morning to an idea for a story. ⓔ If you fill every empty moment with a video or a game, you give yourself fewer chances to experience this kind of wandering thought.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "친구를 기다리는 상황은 무료한 순간에 생각이 자유롭게 흐르며 새로운 아이디어가 떠오를 수 있음을 보여 준다. ⓐ가 이 내용을 일반화한 주제문이고, ⓔ는 그러한 기회를 줄이는 행동을 설명하는 보충 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-f855cb8909",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 사례와 설명을 포괄하는 중심 문장을 고르시오.\n\nⓐ Imagine choosing a notebook from a shelf filled with different colors, sizes, and cover designs. ⓑ A large selection seems helpful because it increases the chance that one notebook will match your preferences. ⓒ Yet after comparing many notebooks, you may buy one and continue wondering whether another would have been better. ⓓ You may even become tired of comparing them and leave the shop without buying anything. ⓔ An excess of options can therefore make choosing more burdensome and leave people less pleased with the result. The difficulty comes both from the work required to decide and from the alternatives that remain in your mind afterward.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "공책을 비교하다 지치거나 구매 후 다른 선택을 아쉬워하는 사례는 선택지가 지나치게 많을 때의 두 가지 문제를 보여 준다. ⓔ는 선택 과정의 부담과 선택 결과에 대한 만족도 저하를 모두 포괄하므로 주제문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-52760bc048",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 논지를 가장 포괄적으로 담고 있는 문장은?\n\nⓐ Adults who care about children may feel that removing difficulties is the surest way to help them. ⓑ Indeed, a challenge that goes far beyond a child's abilities can do harm, so the degree of difficulty matters. ⓒ Still, a manageable level of resistance can support development, making the removal of every obstacle an unhelpful goal. ⓓ The growth of muscles under physical demands illustrates why a complete absence of effort is not necessarily desirable. ⓔ In a similar way, trees exposed to wind develop stronger supporting structures than they would without that pressure. These examples do not make every hardship beneficial; they give us a reason to distinguish challenges that strengthen from demands that overwhelm.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "글은 감당할 수 있는 어려움이 발달을 돕지만 지나친 어려움은 해로울 수 있다는 구별을 강조한다. ⓒ는 적절한 저항의 긍정적 역할과 모든 장애물을 제거하려는 태도의 문제점을 함께 담는다. ⓑ는 과도한 어려움에 관한 제한 조건이며, ⓓ와 ⓔ는 중심 주장을 뒷받침하는 사례이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-143dbe93d7",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ 중 글 전체를 지배하는 중심 생각을 나타낸 것은?\n\nⓐ A translated joke may preserve every object and action mentioned in the original and still fail to amuse its readers. ⓑ What a translator must preserve is the meaning and intended response of a passage, even when doing so requires changes in its wording. ⓒ A polite request presents a related problem, since an expression that sounds respectful in one language may seem awkward in another. ⓓ In such a case, replacing the original phrase with a familiar local expression can help the request perform its intended function. ⓔ Poetry may demand similar adjustments when its sound and rhythm contribute to its effect. These changes require judgment: replacing words freely has little value unless the result continues to serve the purpose of the original passage.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "농담, 정중한 요청, 시는 모두 번역에서 표현 자체보다 의미와 의도된 반응을 보존해야 함을 보여 주는 사례이다. 따라서 표현의 변경을 허용하면서도 그 기준을 제시하는 ⓑ가 주제문이다. 마지막 문장은 자유로운 변경 자체가 목적은 아니라는 제한을 덧붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-4cd6787211",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 필자가 여러 설명을 통해 최종적으로 뒷받침하는 핵심 명제에 해당하는 문장을 고르시오.\n\nⓐ A student who cannot repeat a discussion exactly may take that failure as evidence that little has been learned. Yet imagine that the discussion involved several different situations, all illustrating the same principle. ⓑ Remembering the order in which the speakers talked would allow the student to reconstruct one feature of the event. ⓒ Remembering the examples in full would preserve still more of what happened, though it would not by itself show what connected them. ⓓ The constructive role of forgetting lies in allowing the loss of particular details to make a shared pattern more available for thought and use. ⓔ The student's later ability to apply the principle to an unfamiliar situation would reveal a kind of success that an exact account of the discussion might fail to demonstrate. This does not mean that every missing detail is helpful; it means that an incomplete record can coexist with, and sometimes support, an understanding that reaches beyond the original experience.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "글은 토론을 정확히 재현하는 능력과 여러 사례의 공통 원리를 이해하여 활용하는 능력을 구분한다. ⓓ는 세부 사항의 망각이 공통된 패턴을 파악하고 활용하는 데 기여할 수 있다는 전체 논지를 제시한다. ⓔ는 학생의 적용 능력이라는 특정 상황에서 그 논지를 확인하는 문장이므로 포괄성이 더 좁다. 마지막 문장은 모든 망각이 유익하다는 과도한 해석을 제한한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-35072139b4",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 논리적 흐름을 고려할 때, 글 전체의 주제문으로 가장 적절한 것은?\n\nⓐ A shortened explanation can be easy to read while still leaving its reader unable to understand the point. Merely reducing the number of details does not guarantee that the right details remain. ⓑ The success of simplification depends on whether its omissions allow the relationships needed for the reader's purpose to remain clear. ⓒ A diagram of a transport network, for instance, can change the apparent distances between stops while preserving the connections a traveler must follow. Its usefulness comes from keeping those connections accessible. ⓓ A summary can likewise remove individual examples while retaining the general idea that gives them their significance. However, if it removes the link between that idea and the explanation supporting it, its brevity becomes a weakness. ⓔ Adding some information back may therefore improve an explanation that has become too thin. What deserves to be removed cannot be decided by counting words or facts alone.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "글은 정보를 얼마나 많이 삭제했는지가 아니라 독자의 목적에 필요한 관계를 명확히 남겼는지가 단순화의 성패를 결정한다고 주장한다. ⓑ는 교통망 도식과 요약이라는 두 사례를 모두 포괄하는 기준을 제시한다. ⓐ는 문제 제기이고, ⓔ는 그 기준에 따라 필요한 정보를 복원할 수도 있다는 파생적 결론이므로 전체 주제문으로는 ⓑ가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-28746bf6e4",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nAfter a classmate practices a speech, you may want to help by saying, “Wonderful!” However, your classmate still needs to know which part deserves to stay. Did the opening question catch your attention? Did a clear explanation help you follow a difficult point? Mentioning these details gives the speaker something useful to work with. The same approach helps when something needs improvement. Instead of calling the speech boring, identify the part that was hard to follow and explain why. To help someone improve, describe a specific feature of the performance and how it affected you.",
+"choices": [
+"발표를 평가하기 전에 발표자의 연습 시간을 확인해야 한다.",
+"발표에 관한 피드백에는 구체적인 부분과 그것이 준 영향을 담아야 한다.",
+"발표자의 자신감을 높이기 위해 잘한 부분만 언급해야 한다.",
+"발표자는 청중에게 질문하는 방식으로 모든 발표를 시작해야 한다.",
+"친구의 발표를 평가할 때는 부족한 점부터 말해야 한다."
+],
+"answer": "②",
+"solution": "필자는 막연한 칭찬이나 평가만으로는 발표자가 무엇을 유지하거나 개선해야 하는지 알기 어렵다고 설명한다. 따라서 발표의 구체적인 부분과 그것이 청중에게 미친 영향을 알려 주어야 한다는 ②가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-7611780340",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주장으로 가장 적절한 것은?\n\nA school can provide excellent books and still fail to make students want to read. If students never have a say in what they read, even a good book may seem like another task to finish. Giving them some reading time with a book of their own choice can change this experience. One student may choose a story, while another picks a book about a favorite activity. Their choices need not be equally difficult. Interest can get them started and help them continue. Schools should therefore include regular opportunities for students to select and read books that appeal to them.",
+"choices": [
+"학교는 모든 학생에게 같은 수준의 책을 읽게 해야 한다.",
+"학생은 관심 있는 분야보다 낯선 분야의 책을 먼저 읽어야 한다.",
+"학교는 독서 습관을 기르기 위해 필독서의 수를 늘려야 한다.",
+"교사는 학생이 읽을 책을 정한 뒤 선택한 이유를 설명해야 한다.",
+"학교는 학생이 관심에 따라 책을 골라 읽을 기회를 정기적으로 제공해야 한다."
+],
+"answer": "⑤",
+"solution": "필자는 학생의 관심과 선택이 독서를 시작하고 지속하는 데 도움이 된다고 본다. 따라서 학생이 직접 선택한 책을 읽을 기회를 학교에서 정기적으로 마련해야 한다는 ⑤가 글의 주장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-1662e5321c",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 필자가 제안하는 바로 가장 적절한 것은?\n\nDuring a group discussion, a suggestion may receive immediate support because it comes from the team leader. A similar suggestion from a quiet member may attract little attention. It is reasonable to value a leader's experience, but that experience cannot settle whether a particular suggestion will work. Nor does someone's limited role make an observation useless. Before accepting or rejecting a proposal, a group should ask what reasons support it and whether it addresses the problem. Members can use their experience to examine those reasons, rather than allowing experience itself to serve as the answer. A person's position should not decide how carefully the group considers that person's contribution.",
+"choices": [
+"집단은 제안자의 지위에 관계없이 제안의 근거와 문제 해결 가능성을 검토해야 한다.",
+"집단의 지도자는 토론에서 자신의 의견을 가장 마지막에 제시해야 한다.",
+"집단은 경험이 부족한 구성원의 의견에 더 높은 가치를 부여해야 한다.",
+"집단의 구성원은 지도자의 제안에 동의한 뒤 세부 내용을 논의해야 한다.",
+"집단은 의견의 타당성보다 모든 구성원의 발언 횟수를 우선해야 한다."
+],
+"answer": "①",
+"solution": "필자는 경험을 제안의 근거를 검토하는 데 활용할 수는 있지만, 제안자의 지위 자체가 판단을 결정해서는 안 된다고 말한다. 핵심은 누가 말했는지가 아니라 제안의 근거와 문제 해결 가능성을 평가하라는 것이므로 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-cc90f1c2f8",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 필자가 주장하는 바로 가장 적절한 것은?\n\nThe convenience of digital directions makes it tempting to use them on every journey, including a walk through our own neighborhood. Accurate instructions get us to the destination, but arriving successfully does not necessarily mean we have learned the route. If each decision is supplied by a device, we have little reason to notice how one street connects to another. The answer is not to make every trip a test or to reject a useful tool. Instead, we should create occasional opportunities to make the decisions ourselves. On a familiar route, try putting the device away and using remembered landmarks. Directions can remain available when needed, while some ordinary journeys become chances to exercise our own ability to navigate.",
+"choices": [
+"길 안내의 정확도를 높이기 위해 익숙한 경로에서도 앱의 지시를 따라야 한다.",
+"길을 제대로 익히려면 목적지에 도착한 후 앱으로 이동 경로를 확인해야 한다.",
+"길 안내 도구를 필요할 때 활용하되 익숙한 경로에서는 때때로 직접 길을 판단해야 한다.",
+"길 찾기 능력을 기르려면 익숙한 경로보다 낯선 경로에서 앱 없이 이동해야 한다.",
+"주변 지형에 대한 기억이 충분해진 뒤에는 길 안내 도구의 사용을 중단해야 한다."
+],
+"answer": "③",
+"solution": "필자는 앱의 안내로 목적지에 도착하는 것과 경로를 스스로 익히는 것을 구분한다. 도구의 유용성은 인정하면서도 익숙한 길에서는 가끔 직접 판단하는 기회를 만들자고 주장하므로 ③이 적절하다. ④는 연습할 상황을 낯선 경로로 바꾸었고, ⑤는 도구의 사용을 중단해야 한다고 확대했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-2f98bc43a2",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 필자의 주장으로 가장 적절한 것은?\n\nAn attractive animal can give a conservation campaign a recognizable face. There is no reason to ignore the public interest such an image creates. The difficulty begins when the image also determines the limits of the work: success is then measured only by what happens to the featured animal. A forest species, however, needs more than protection of its own body. It needs food, living space, and the many organisms that support the forest. Some of those organisms will never appear on a poster, but that does not make them optional. Campaigns should use attention to a familiar animal as an entrance to protecting the ecological relationships on which it depends. Public appeal may guide the message; ecological dependence should guide the spending.",
+"choices": [
+"보전 사업의 성과는 홍보에 등장한 동물의 개체 수만으로 평가해야 한다.",
+"대중의 관심을 높이려면 생태계의 구성 요소를 각각 별도로 홍보해야 한다.",
+"생태계 보전을 위해서는 인기 있는 동물을 활용하는 홍보를 중단해야 한다.",
+"인기 동물이 모은 관심을 활용하되 보전 자원은 그 동물이 의존하는 생태계에 배분해야 한다.",
+"생태계 전체를 보호하기에 앞서 홍보 효과가 큰 동물의 보호를 완료해야 한다."
+],
+"answer": "④",
+"solution": "필자는 인기 동물을 활용한 홍보의 가치를 인정하지만, 실제 보전 활동과 지출은 생태적 의존 관계에 따라 이루어져야 한다고 주장한다. 따라서 대중의 관심을 생태계 전체의 보호로 연결하는 ④가 적절하다. ③은 홍보 자체를 부정하고, ⑤는 지문에 없는 보호의 선후 관계를 설정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-0c86d98720",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 필자가 동의할 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\nSuppose you can follow every sentence in your notes while the page is open. Before treating that ease as evidence of learning, remove the page and explain how the ideas fit together. A smooth reading experience can hide a dependence on the wording in front of you. Explanation exposes that dependence: you may remember a term but be unable to connect it to an example. Such a failure is useful only if it changes what you do next. Return to the relevant section, work out the missing connection, and attempt the explanation again. This does not make reading unnecessary; it gives further reading a purpose. Nor must another person be present. What matters is producing the explanation yourself and allowing its weaknesses to direct your next round of study.\n\n<보기>\nㄱ. 노트를 보며 막힘없이 읽을 수 있다는 사실만으로 학습이 충분하다고 판단해서는 안 된다.\nㄴ. 설명에서 드러난 약점은 이후 다시 읽을 부분과 학습 과제를 정하는 근거가 되어야 한다.\nㄷ. 설명을 시도한 뒤에는 노트를 다시 읽지 않고 기억만으로 부족한 연결을 해결해야 한다.\nㄹ. 실제 청자가 없더라도 스스로 설명을 구성하고 약점을 점검하는 학습은 가능하다.",
+"choices": [
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "②",
+"solution": "필자는 노트를 읽을 때의 수월함만으로 학습을 판단하지 말고, 직접 설명하면서 드러난 약점에 따라 후속 학습을 해야 한다고 주장하므로 ㄱ과 ㄴ은 옳다. 실제 청자가 없어도 된다고 했으므로 ㄹ도 옳다. 부족한 연결을 발견하면 관련 부분을 다시 읽으라고 했으므로 ㄷ은 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-bc750fc2e3",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 도출할 수 있는 필자의 피드백 원칙으로 가장 적절한 것은?\n\nSpecific feedback is sometimes misunderstood as a demand to list every noticeable detail. Yet a speaker who hears ten observations may be no better prepared to revise than one who hears only “Good work.” Detail becomes useful when it connects a choice the speaker made with a consequence the listener experienced. Even then, the connection must be handled carefully. “I lost track when the new term appeared without an explanation” reports a difficulty and identifies where it arose. “You do not understand your subject” turns that limited observation into a judgment about the person. The former gives the speaker a basis for deciding what to change; the latter goes beyond what the listener's experience establishes. Feedback should therefore be selective as well as concrete: offer observations that can guide another attempt, while keeping the scope of the conclusion within the scope of the evidence.",
+"choices": [
+"피드백의 정확성을 높이려면 관찰한 세부 사항을 빠짐없이 전달하고 수정 순서는 발표자에게 맡겨야 한다.",
+"피드백의 근거를 충분히 확보하려면 발표자의 이해 수준을 먼저 판정한 후 개별 표현의 문제를 설명해야 한다.",
+"피드백의 객관성을 유지하려면 청자가 경험한 효과를 제외하고 발표자의 행동만 기술해야 한다.",
+"피드백을 수정에 활용하게 하려면 청자의 경험을 바탕으로 발표자의 전반적인 능력까지 평가해야 한다.",
+"피드백은 수정에 도움이 되는 행동과 효과를 골라 연결하고 그 근거가 뒷받침하는 범위 안에서 판단해야 한다."
+],
+"answer": "⑤",
+"solution": "필자는 구체적인 관찰을 많이 나열하는 것만으로는 부족하며, 수정에 도움이 되는 행동과 그 효과를 연결해야 한다고 본다. 또한 특정 부분에서 겪은 어려움을 발표자 전체에 대한 평가로 확대해서는 안 된다고 강조한다. 따라서 정보의 선택, 행동과 효과의 연결, 판단 범위의 제한을 모두 반영한 ⑤가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-dd74eedb12",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 안내문의 내용과 일치하지 않는 것은?\n\nRiverside Spring Nature Tour\n\n• Dates: April 12–13\n• Tour Times: 10:00 a.m. and 1:00 p.m.\n• Fee: Adults 12,000 won / Students 8,000 won / Children under 6 free\n• Meeting Point: Riverside Visitor Center\n• Reservation: Book online by April 8.\n• Tours will be held even if it rains. Participants should bring raincoats.\n• Each tour lasts approximately 90 minutes.",
+"choices": [
+"행사는 이틀 동안 진행된다.",
+"투어는 하루에 두 차례 시작한다.",
+"학생의 참가비는 8,000원이다.",
+"비가 오면 투어가 취소된다.",
+"온라인 예약은 4월 8일까지 해야 한다."
+],
+"answer": "④",
+"solution": "안내문에는 비가 오더라도 투어를 진행한다고 되어 있다. 따라서 비가 오면 투어가 취소된다는 ④가 안내문의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-d6a3452bad",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 표의 내용과 일치하지 않는 것은?\n\nThe table below shows the number of students who visited the school library during one week.\n\n[Number of Library Visitors]\nDay | Monday | Tuesday | Wednesday | Thursday | Friday\nStudents | 120 | 145 | 110 | 160 | 155",
+"choices": [
+"화요일의 방문 학생 수는 월요일보다 25명 많았다.",
+"수요일의 방문 학생 수가 가장 적었다.",
+"목요일에서 금요일로 갈 때 방문 학생 수가 5명 감소했다.",
+"월요일과 수요일의 방문 학생 수를 합한 값은 화요일과 금요일을 합한 값보다 작았다.",
+"월요일과 비교하여 금요일의 방문 학생 수는 45명 증가했다."
+],
+"answer": "⑤",
+"solution": "금요일의 방문 학생 수 155명은 월요일의 120명보다 35명 많다. 45명 증가했다고 한 ⑤는 표의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-98ad91ac28",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 안내문의 내용과 일치하지 않는 것은?\n\n2026 City Nature Photography Contest\n\n• Theme: Nature in Our City\n• Eligibility: Students in grades 10 and 11\n• Submission: Submit one photograph through the online entry form.\n• Deadline: May 17 at 5:00 p.m.\n• Finalist Announcement: May 24 on the contest website\n• Exhibition: Finalists' photographs will be displayed from June 3 to June 14.\n• Entry Fee: Free\n\nBasic adjustments to brightness and cropping are allowed, but adding or removing objects is prohibited.",
+"choices": [
+"10학년과 11학년 학생이 참가할 수 있다.",
+"참가자는 사진 한 장을 온라인으로 제출해야 한다.",
+"사진의 밝기를 조절하거나 일부를 잘라 내는 것은 허용된다.",
+"본선 진출자는 전시가 시작되는 6월 3일에 발표된다.",
+"대회 참가비는 없다."
+],
+"answer": "④",
+"solution": "본선 진출자 발표일은 6월 3일이 아니라 5월 24일이다. 6월 3일은 본선 진출작 전시가 시작되는 날이므로 ④가 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-ba19e09236",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 표의 내용과 일치하는 것은?\n\nThe table below shows the number of students participating in four school clubs from 2023 to 2025.\n\n[Number of Club Members]\nClub | 2023 | 2024 | 2025\nDebate | 36 | 45 | 42\nScience | 28 | 42 | 49\nMusic | 44 | 40 | 50\nVolunteer | 32 | 48 | 48",
+"choices": [
+"토론 동아리의 회원 수는 조사한 해마다 증가했다.",
+"2023년부터 2025년까지 과학 동아리의 회원 수 증가 폭은 봉사 동아리보다 5명 컸다.",
+"2024년 네 동아리의 전체 회원 수는 2023년보다 30명 많았다.",
+"2024년 봉사 동아리의 회원 수는 2023년의 두 배였다.",
+"음악 동아리는 조사한 세 해 모두 회원 수가 가장 많았다."
+],
+"answer": "②",
+"solution": "과학 동아리는 28명에서 49명으로 21명 증가했고, 봉사 동아리는 32명에서 48명으로 16명 증가했다. 두 증가 폭의 차이는 5명이므로 ②가 표의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-d7a405b3b8",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 안내문의 내용과 일치하는 것은?\n\nWeston Arts Center: Weekend Photography Courses\n\nCourse | Day | Time | Fee\nPortrait Photography | Saturday | 9:00–11:00 | 55,000 won\nStreet Photography | Saturday | 10:30–12:30 | 50,000 won\nNight Photography | Friday | 19:00–21:00 | 65,000 won\nPhoto Editing | Sunday | 14:00–16:00 | 45,000 won\n\n• Register by August 20 and receive 10% off the course fees.\n• After the early-registration discount is applied, students taking two or more courses receive an additional 8,000 won off the total course fees.\n• Camera rental costs 10,000 won per course and is not subject to any discount.\n• Students may bring their own cameras.",
+"choices": [
+"인물 사진 수업과 거리 사진 수업은 시간이 전혀 겹치지 않는다.",
+"8월 20일까지 신청하면 카메라 대여료도 10% 할인된다.",
+"자신의 카메라를 가져오는 학생이 8월 20일까지 거리 사진과 사진 편집 수업을 신청하면 총 77,500원을 낸다.",
+"8월 20일 이후 인물 사진과 사진 편집 수업을 신청하면 수강료로 총 90,000원을 낸다.",
+"야간 사진 수업과 사진 편집 수업은 같은 요일에 진행된다."
+],
+"answer": "③",
+"solution": "거리 사진과 사진 편집 수업의 수강료 합계는 95,000원이며, 조기 등록 할인을 적용하면 85,500원이다. 여기서 두 과목 신청 할인 8,000원을 빼면 77,500원이므로 ③이 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-733cee0731",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 표의 내용과 일치하는 것만을 <보기>에서 있는 대로 고른 것은?\n\nThe table below shows the amount of recyclable waste collected from four apartment buildings during the first three months of 2026.\n\n[Recyclable Waste Collected (kg)]\nBuilding | January | February | March\nP | 48 | 40 | 36\nQ | 30 | 45 | 54\nR | 42 | 42 | 35\nS | 25 | 35 | 50\n\n<보기>\nㄱ. 1월에는 P가, 3월에는 Q가 가장 많은 양을 수거했다.\nㄴ. 네 건물의 수거량 합계는 1월에서 3월까지 매달 증가했다.\nㄷ. 1월과 3월을 비교했을 때 수거량이 가장 많이 증가한 건물은 S이다.\nㄹ. 2월과 3월의 수거량을 합하면 S가 Q보다 많다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "①",
+"solution": "월별 합계는 1월 145kg, 2월 162kg, 3월 175kg으로 계속 증가하며, 1월부터 3월까지 S의 증가량 25kg이 가장 크다. 또한 각 달의 최댓값은 1월 P, 3월 Q이므로 ㄱ, ㄴ, ㄷ은 옳다. Q의 2월과 3월 합계는 99kg으로 S의 85kg보다 많으므로 ㄹ은 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-c46b580204",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 안내문을 바탕으로 물음에 답하시오.\n\nBlue Island Ferry Tickets\n\nPassenger | One-way Fare\nAdult | 18,000 won\nTeenager | 12,000 won\nChild aged 6–12 | 8,000 won\nChild under 6 | Free\n\n• A round-trip ticket gives a 15% discount on passenger fares.\n• A group of five or more paying passengers receives an additional 10,000 won discount after the round-trip discount is applied.\n• Taking a bicycle costs 4,000 won per bicycle for each one-way trip. No discount applies to bicycle fees.\n• All members of a group must travel together to receive the group discount.\n\n성인 2명과 청소년 3명이 함께 왕복 승선권을 구매하고, 이들 중 2명이 각각 자전거 한 대를 왕복으로 운반한다. 일행이 지불해야 할 총금액을 쓰시오.",
+"selfGrade": true,
+"answer": "128,400원",
+"solution": "편도 승객 요금은 72,000원이므로 왕복 기본 요금은 144,000원이고, 15% 할인 후 122,400원이 된다. 유료 승객이 5명이므로 10,000원을 추가로 할인하면 승객 요금은 112,400원이다. 자전거 두 대의 왕복 운반료 16,000원을 더하면 총 128,400원이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-0320a9390f",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "글의 전개를 고려할 때, 주어진 문장이 들어갈 곳으로 가장 적절한 것은?\n\n[주어진 문장]\nThis change in travel distance is the key to understanding the warm colors of the evening sky.\n\nAlthough sunlight appears white, it contains all the colors of the rainbow. (가) When it enters the atmosphere, tiny gas molecules scatter its different colors in different amounts. (나) Short-wavelength blue light is scattered more strongly than long-wavelength red light. (다) This is why blue light seems to come from all parts of the sky during the day. (라) Near sunset, sunlight must pass through a much longer stretch of the atmosphere before reaching an observer. (마) Along that extended path, most of the blue light is scattered away, while more red and orange light continues toward the observer.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "⑤",
+"solution": "주어진 문장의 ‘This change in travel distance’는 바로 앞에서 설명한 해 질 무렵의 길어진 이동 거리를 가리킨다. 뒤에서는 그 긴 경로에서 파란빛이 흩어지는 과정을 구체적으로 설명하므로 (마)에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-1533f086e6",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 주어진 문장이 들어가기에 가장 알맞은 위치를 고르시오.\n\n[주어진 문장]\nThe group solves this imbalance by moving continuously instead of remaining in fixed positions.\n\nMale emperor penguins must protect their eggs through the Antarctic winter while the females feed at sea. (가) Because the males eat nothing and face extremely low temperatures and strong winds, they gather in enormous huddles. (나) Penguins near the center of a huddle receive more warmth from the surrounding birds. (다) Those at the outer edge, however, remain exposed to the freezing wind. (라) The birds at the edge gradually move inward, while penguins in the warmer center slowly shift outward. (마) Through this cooperative rotation, each bird spends some time in the warmer center and avoids staying at the edge for too long.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "④",
+"solution": "앞 문장까지는 무리의 중심과 가장자리 사이에 온도상의 불균형이 있음을 설명한다. 주어진 문장이 그 불균형의 해결 방식을 제시하고, 다음 문장이 펭귄들의 구체적인 이동을 설명하므로 (라)가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-2d86959ee5",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "글의 논리적 흐름에 비추어 주어진 문장이 들어갈 위치로 가장 적절한 것은?\n\n[주어진 문장]\nTo examine that belief properly, they would have needed to suggest a sequence that did not follow it.\n\nPeople commonly seek evidence that confirms an existing belief instead of looking for evidence that might reject it. (가) In an experiment, participants saw the sequence 6-8-10 and were asked to discover the rule governing it. (나) They were allowed to propose other sequences, and the researcher told them whether each one followed the rule. (다) Many participants formed the hypothesis that the numbers had to increase by two. (라) Instead, they offered examples such as 12-14-16, all of which the researcher accepted. (마) Their confidence increased, although the actual rule accepted any three numbers arranged in increasing order. Their search confirmed their first idea but never tested whether it was too narrow.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "④",
+"solution": "주어진 문장의 ‘that belief’는 바로 앞의 ‘2씩 증가해야 한다’는 가설을 가리킨다. 이어지는 ‘Instead’는 참가자들이 그 가설에 어긋나는 수열을 제시하지 않고 가설을 지지하는 예만 냈음을 나타내므로 (라)가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-bbb660130c",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 주어진 문장을 글의 가장 적절한 위치에 넣으시오.\n\n[주어진 문장]\nEconomists refer to the value of this lost alternative as opportunity cost.\n\nIt may appear that two countries have no reason to trade if one of them can produce every good more efficiently than the other. (가) That conclusion, however, considers only which country produces more with the same resources. (나) A meaningful comparison must also ask what each country gives up when it chooses to produce one good rather than another. (다) One country may sacrifice less of its other possible production when making a particular good, even if it is not the most efficient producer in absolute terms. (라) It can then specialize in that good, while the other country specializes where its own sacrifice is smaller. (마) By trading afterward, both countries can obtain more than they could through isolated production. This principle is known as comparative advantage.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "③",
+"solution": "주어진 문장의 ‘this lost alternative’는 앞 문장의 ‘생산을 선택할 때 포기하는 것’을 가리킨다. 뒤에서는 기회비용이 더 작은 재화에 특화하는 상황을 구체화하므로, 개념을 정의하는 문장은 (다)에 들어가는 것이 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-2265cc193e",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "문맥과 지시 관계를 고려할 때, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nTheir weaker recognition, therefore, reflected the removal of information they normally used, not a general failure of memory.\n\nCulture can influence the parts of a scene to which people direct their attention. In a study using animated underwater scenes, American and Japanese university students were asked to report what they had observed. (가) The American students usually mentioned a noticeable foreground object, such as a large fish, before describing anything else. (나) The Japanese students more often began with features of the setting and also reported relationships among objects. (다) Later, when the same fish appeared against an unfamiliar background, the Japanese students had more difficulty identifying it than the Americans did. (라) For the Japanese students, the surrounding background had been encoded as an important part of the original scene rather than as unimportant decoration. (마) The findings thus support the view that Western attention tends to emphasize separate objects, whereas East Asian attention tends to include objects together with their context.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "⑤",
+"solution": "주어진 문장의 ‘Their weaker recognition’은 일본 학생들이 물고기를 알아보는 데 더 어려움을 겪었다는 결과를 가리킨다. (라) 뒤의 문장이 배경 정보도 함께 부호화되었다는 이유를 제시하므로, ‘therefore’를 포함한 주어진 문장은 그 이유로부터 결론을 이끌어 내는 (마)에 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-c6634a698f",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 흐름상 주어진 문장이 들어갈 위치로 가장 적절한 것을 고르시오.\n\n[주어진 문장]\nA test can distinguish between rival explanations only when those explanations predict different outcomes.\n\nConfirming examples often feel persuasive even when they do little to prove that one explanation is correct. Participants in an experiment were shown the sequence 4-6-8 and tried to determine its rule. (가) Many assumed that the rule required an increase of two and then proposed sequences built in exactly that way. (나) Since the researcher accepted each proposal, the participants became increasingly certain of their hypothesis. (다) Their repeated examples nevertheless failed this requirement: both their narrow hypothesis and the broader rule ‘any three numbers in increasing order’ predicted that those examples would be accepted. (라) A sequence such as 2-9-31 would have separated the two explanations because it violated the participants’ hypothesis while satisfying the broader rule. (마) By avoiding such a test, the participants collected agreement without discovering which explanation was actually correct.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "③",
+"solution": "주어진 문장은 서로 다른 가설을 판별할 수 있는 검사의 일반 조건을 제시한다. 뒤의 ‘this requirement’가 바로 그 조건을 받아 참가자들의 반복 검사가 왜 부적절했는지 설명하므로 주어진 문장은 (다)에 들어가야 한다. 이후의 수열은 두 가설이 서로 다른 예측을 하게 만드는 검사의 구체적인 예이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-d49dcd8ec9",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 연결어로 가장 적절한 것은?\n\nA plastic bag weighs very little and usually costs little to produce. These features make it useful for carrying purchases home. ________, its usefulness to a shopper does not mean that it is harmless to nature. After being thrown away, it may remain in the environment for hundreds of years. If it reaches the sea, an animal may swallow it, mistaking it for something to eat.",
+"choices": [
+"① Therefore",
+"② However",
+"③ Similarly",
+"④ For example",
+"⑤ In other words"
+],
+"answer": "②",
+"solution": "빈칸 앞에서는 비닐봉지의 편리함을, 뒤에서는 환경에 미치는 해로움을 설명한다. 서로 대조되는 내용을 연결하므로 However가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-74983d4ebb",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 연결어의 짝으로 가장 적절한 것은?\n\nSomething that appears useless in a forest can still support life. (A)________, a dead tree lying on the ground can serve as a home for small creatures. It also supplies nutrients to the soil as it breaks down. Fallen branches in a stream can provide places for young fish to escape danger. (B)________, clearing away all these materials may damage the habitats that animals need.\n\n*nutrient: 영양분  *habitat: 서식지",
+"choices": [
+"① However – Therefore",
+"② For example – Nevertheless",
+"③ Therefore – Similarly",
+"④ In contrast – For example",
+"⑤ For example – Therefore"
+],
+"answer": "⑤",
+"solution": "(A) 뒤의 쓰러진 나무는 쓸모없어 보이는 것이 생명을 돕는다는 일반적 진술의 구체적인 사례이므로 For example이 적절하다. (B) 뒤에서는 앞서 설명한 생태적 기능을 근거로 이를 모두 제거하면 서식지가 훼손될 수 있다는 결과를 이끌어 내므로 Therefore가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-44b79e9530",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 3,
+"body": "글의 흐름을 고려할 때, 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nCalling both a bear and a ground squirrel “winter sleepers” may suggest that their bodies behave in the same way. (A)________, the shared label hides an important difference. During winter sleep, a ground squirrel's temperature may fall almost to the freezing point, and waking can take hours. A bear experiences a much smaller temperature change and can become alert relatively quickly when disturbed. (B)________, a sleeping bear should not be assumed to be unable to react to someone entering its den.\n\n*ground squirrel: 땅다람쥐  *den: 굴",
+"choices": [
+"① However – Therefore",
+"② However – For instance",
+"③ Similarly – Therefore",
+"④ For example – Nevertheless",
+"⑤ Therefore – In contrast"
+],
+"answer": "①",
+"solution": "(A) 앞의 동일할 것이라는 예상과 뒤의 실제 차이가 대조되므로 However가 적절하다. 곰이 비교적 빨리 깨어날 수 있다는 사실에서 굴에 들어온 사람에게 반응할 수 없다고 가정해서는 안 된다는 판단이 도출되므로 (B)에는 Therefore가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-fc4ff39d3c",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 논리적 흐름에 맞게 빈칸 (A), (B)를 완성한 것은?\n\nThe success of antibiotics can encourage the belief that taking them is a sensible response whenever someone feels ill. Their value against certain infections is undeniable. Their usefulness, (A)________, depends on what is causing the illness. A cold is caused by a virus, so an antibiotic cannot remove its cause. This does not mean that taking the drug has no consequences: its use can still allow resistant bacteria to survive and multiply. (B)________, using an antibiotic for a cold can add a risk without providing the benefit the patient expects.\n\n*antibiotic: 항생제  *resistant: 내성이 있는",
+"choices": [
+"① therefore – Nevertheless",
+"② for example – Consequently",
+"③ however – Similarly",
+"④ however – Consequently",
+"⑤ moreover – For example"
+],
+"answer": "④",
+"solution": "(A)에서는 항생제의 가치를 인정하면서도 그 유용성이 질병의 원인에 따라 달라진다는 제한을 제시하므로 however가 적절하다. (B) 뒤의 진술은 감기 치료 효과는 없지만 내성 위험은 높일 수 있다는 앞선 두 내용을 종합한 결론이므로 Consequently가 적절하다. (B) 바로 앞에 부정 표현이 있더라도 문장 전체의 논리 관계는 대조가 아니라 결과이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-7b59f71f85",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 연결어로 가장 적절한 것은?\n\nSuppose a student points to a heavily highlighted chapter as evidence of successful study. The bright lines certainly show which sentences the student has marked. They do not, (A)________, establish that those sentences have been understood. Marking can continue even when little thought is given to meaning. Adding still more color would leave this weakness unresolved. (B)________, the student could put the chapter aside and explain its central ideas from memory. That activity requires the student to produce an understanding rather than merely identify sentences on a page.",
+"choices": [
+"① therefore – Instead",
+"② however – Moreover",
+"③ however – Instead",
+"④ for example – Therefore",
+"⑤ similarly – Nevertheless"
+],
+"answer": "③",
+"solution": "(A)에서는 표시한 문장을 보여 준다는 사실과 그 문장을 이해했음을 입증하지는 못한다는 사실이 대조되므로 however가 적절하다. (B) 뒤의 기억하여 설명하기는 형광펜 표시를 더 하는 방법의 대안이므로 Instead가 적절하다. 학습 활동이 추가로 등장한다는 이유만으로 Moreover를 고르면 대안 제시라는 핵심 관계를 놓치게 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-f4493b4dc5",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 빈칸 (A), (B), (C)에 들어갈 말의 조합으로 가장 적절한 것은?\n\nA warning about a medicine is intended to support a patient's informed choice. It would therefore seem reasonable to regard the warning only as protection against harm. (A)________, the information itself can sometimes contribute to the discomfort it describes. Reports of headaches or tiredness from people given pills containing no active medicine illustrate this possibility: expecting a symptom may help bring it about. (B)________, the absence of an active drug does not necessarily mean the absence of an unpleasant experience. Yet withholding risk information would deny patients information they need for their decisions. (C)________, the proposed response is to change the presentation of that information, such as by drawing attention to how many patients avoid serious side effects.\n\n*active: 약효 성분이 있는  *withhold: 제공하지 않다",
+"choices": [
+"① Nevertheless – For example – Instead",
+"② Nevertheless – In other words – Instead",
+"③ Therefore – In other words – Moreover",
+"④ Nevertheless – In other words – Otherwise",
+"⑤ Therefore – For example – Otherwise"
+],
+"answer": "②",
+"solution": "(A)는 경고가 오직 해를 막아 준다는 예상에 반하는 내용을 도입하므로 Nevertheless가 적절하다. (B) 뒤는 약효 성분이 없는 약을 받은 사람도 불편을 경험할 수 있다는 앞선 사례의 의미를 바꾸어 설명하므로 In other words가 적절하다. (C)에서는 위험 정보를 숨기는 방식을 배제한 뒤 정보 제시 방식을 바꾸는 대안을 내놓으므로 Instead가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-4ab714a0f0",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 전개를 고려하여 빈칸 (A), (B), (C)에 들어갈 연결어의 짝을 고르시오.\n\nImagine that branches are removed from a stream because they interrupt the smooth movement of water. If an uninterrupted current is the only goal, that decision may appear successful. (A)________, the very interruption being eliminated can create calm spaces in which young fish hide. The apparent defect is therefore part of the habitat's value. (B)________, a log on the forest floor may seem to be merely the remains of a dead tree, while its decay returns nutrients to the ground and its structure shelters small animals. The stream and the forest thus raise the same question: what is lost when visible disorder is removed? (C)________, a plan to protect either habitat should be judged partly by the ecological functions it preserves, rather than solely by the tidy appearance it produces.\n\n*decay: 부패, 분해  *ecological: 생태적인",
+"choices": [
+"① Nevertheless – In contrast – Therefore",
+"② Therefore – Similarly – Nevertheless",
+"③ For example – In contrast – Moreover",
+"④ Nevertheless – Similarly – For example",
+"⑤ Nevertheless – Similarly – Therefore"
+],
+"answer": "⑤",
+"solution": "(A)에서는 물의 흐름을 방해하는 가지를 제거하는 것이 성공처럼 보인다는 판단에 대해, 그 방해 자체가 서식지에 도움이 된다는 반대 관점을 제시하므로 Nevertheless가 적절하다. (B)의 통나무 역시 겉으로는 불필요해 보이지만 생태적 기능이 있다는 점에서 앞의 가지와 같은 관계이므로 Similarly가 적절하다. (C) 뒤의 보호 계획 평가 기준은 두 사례를 종합하여 도출한 결론이므로 Therefore가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-c3a8f1cb3b",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 흐름에서 벗어나는 문장을 고르시오.\n\nWhat we see can shape the flavor we expect from food. ⓐ Before taking a bite, we may already have an idea of its taste because of its color. ⓑ If a drink has a color commonly associated with a particular fruit, we may expect that fruit's flavor. ⓒ This expectation can affect our judgment even when the drink actually has a different flavor. ⓓ Fruit is produced in many regions and can provide vitamins as part of our diet. ⓔ Even the color of the plate can influence how sweet a dessert seems to us. Our experience of flavor therefore depends partly on information received through our eyes.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "글의 중심 내용은 음식이나 그릇의 색이 맛에 대한 기대와 판단에 영향을 준다는 것이다. ⓓ는 과일의 생산 지역과 영양상의 가치를 설명하므로 시각 정보와 맛의 관계를 다루는 전체 흐름에서 벗어난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f8ee131144",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 중심 내용과 관련이 없는 문장을 고르시오.\n\nA bee that has found flowers can guide other bees without taking them there itself. ⓐ Back at the hive, it communicates the location through a repeated pattern of movement. ⓑ People have long valued honey and have used it for food as well as medicine. ⓒ The direction of the bee's forward movement gives information about where the flowers lie in relation to the sun. ⓓ The time spent shaking its body during that movement provides information about the distance. ⓔ Together, these signals tell the other bees both which way to travel and how far to go. The dance thus turns the discovery of one bee into useful information for others.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "이 글은 꿀벌이 춤으로 먹이의 방향과 거리를 전달하는 과정을 설명한다. ⓑ는 인간이 꿀을 이용해 온 방식에 관한 내용으로, 꿀벌 사이의 정보 전달이라는 중심 내용과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-435396bcdb",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용 전개와 관계없는 문장을 고르시오.\n\nClosing a textbook does not necessarily mean that the work of learning has ended. ⓐ During sleep, the brain continues to process information encountered while we were awake. ⓑ By repeating patterns of activity associated with recent experiences, it helps make those memories more lasting. ⓒ Reading quietly before going to sleep can be a useful way for someone to relax at bedtime. ⓓ Sleep can also allow connections among separate pieces of information to become clearer, sometimes helping with a problem that previously seemed difficult. ⓔ A student who gives up sleep to spend more time studying may therefore lose some of the benefit that those extra hours were intended to produce. Effective learning requires attention to what happens after study as well as during it.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "글은 공부가 끝난 뒤에도 수면 중 기억 강화와 정보 연결을 통해 학습이 이어진다는 내용이다. ⓒ는 독서가 잠자리에서 긴장을 푸는 데 도움이 된다는 내용으로, 수면이 학습에 기여하는 기능과는 관계가 없다. ⓒ를 제외하면 기억 강화에서 정보 간 연결로 수면의 학습 효과가 자연스럽게 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-eef79081f8",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 전체 논지와 어울리지 않는 문장을 고르시오.\n\nA group's final result can hide how much each member has actually contributed. ⓐ When individual effort disappears into a shared total, members may feel that working harder will bring them little personal recognition. ⓑ As a result, some may contribute less than they would if their own performance were clearly identifiable. ⓒ This helps explain why simply adding people to a task does not guarantee a matching increase in the group's output. ⓓ A useful response is to arrange the work so that each person's contribution can be recognized within the common result. ⓔ To present that result effectively, a group can organize its final report around a clear introduction, main section, and conclusion. Making individual effort visible addresses the reduced sense of responsibility that can develop when only the collective product is noticed.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "글의 논지는 집단의 결과 속에 개인의 기여가 드러나지 않으면 노력이 줄어들 수 있으므로 각자의 기여를 확인할 수 있게 해야 한다는 것이다. ⓔ는 ‘집단의 결과’라는 표현을 이어받지만, 실제로는 최종 보고서의 구성 방식으로 화제를 바꾼다. ⓔ를 제외하면 개인의 기여를 드러내는 방안과 그 효과를 설명하는 마지막 문장이 직접 연결된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e66b1d05e1",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 흐름상 불필요한 문장을 고르시오.\n\nA decision form can influence behavior even when every available option remains exactly the same. ⓐ In planning for retirement, an employee may first consider what kind of daily life would make the years after work satisfying. ⓑ Consider instead how participation in a retirement savings plan is arranged: workers may be included automatically or required to request membership. ⓒ In either arrangement, participation can remain voluntary, but only one makes saving the outcome of taking no action. ⓓ Since people often leave an existing selection unchanged, that difference can lead to different participation rates. ⓔ The influence comes from the starting position of the choice rather than from the removal of alternatives. Thus, preserving people's formal freedom to choose does not mean that the way the choice is presented has no effect.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "글은 선택지가 같고 선택의 자유가 유지되어도 기본 설정에 따라 행동이 달라질 수 있음을 설명한다. ⓐ는 은퇴 이후 원하는 생활에 대한 개인의 고민으로, 선택의 제시 방식이 참여율에 미치는 영향과는 관련이 없다. ⓑ의 ‘instead’는 도입문의 ‘선택지 자체’에서 ‘참여 방식’으로 관점을 옮기는 표현이므로 ⓐ 없이도 연결된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4cb14ec335",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 논리적 전개에서 벗어나는 문장을 고르시오.\n\nThe replacement of a scientific theory need not make every earlier use of it a mistake. ⓐ A theory may describe familiar conditions successfully while failing to account for observations beyond those conditions. ⓑ When a broader explanation becomes available, the earlier theory can therefore lose its claim to general coverage without losing all practical value. ⓒ Newton's account of motion, for instance, remains useful for ordinary engineering purposes, although relativity offers a fuller account that includes motion near the speed of light. ⓓ For students learning about motion, carrying out an experiment can provide an alternative to simply memorizing a statement from a textbook. ⓔ The important distinction is consequently between an explanation's being adequate within a certain range and its being the final description of nature. Scientific revision can preserve the former while rejecting the latter, allowing knowledge to become more comprehensive without treating every previous achievement as worthless.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "글은 과학 이론이 수정되더라도 일정한 조건에서 지니던 설명력과 실용적 가치까지 사라지는 것은 아니라는 논지를 전개한다. ⓓ는 운동과 실험이라는 과학 관련 소재를 유지하지만, 이론의 적용 범위에서 학생의 학습 방식으로 논점을 바꾼다. ⓓ를 제외하면 뉴턴 이론의 사례가 제한된 범위에서의 유효성과 최종적 진리의 구별로 자연스럽게 일반화된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f01681ff2f",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 전체 흐름과 관련 없는 문장을 고르시오.\n\nThe popularity of a preselected option should not automatically be treated as evidence that people actively prefer it. ⓐ If leaving a setting untouched produces one outcome while obtaining another requires action, the observed result reflects that difference as well as people's wishes. ⓑ Someone who accepts an automatic selection may strongly support it, but someone with no settled preference may arrive at exactly the same outcome. ⓒ Organ transplantation provides a related example of progress, since improvements in medical practice have made the operation safer over time. ⓓ A high rate of acceptance alone therefore cannot distinguish a deliberate endorsement from a decision simply left unexamined. ⓔ This uncertainty matters when a default is defended as serving users: its widespread acceptance does not by itself establish whose interests it actually serves. Evaluating such an arrangement requires attention to how the result was produced, rather than treating the result as a transparent expression of preference.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "글은 기본 설정이 높은 수용률을 보이더라도 이를 적극적인 선호나 사용자 이익의 증거로 곧바로 해석할 수는 없다는 내용이다. ⓒ는 ‘관련 사례’라는 표현으로 연결을 시도하지만, 장기 이식 수술의 안전성 향상은 기본 설정을 수용한 동기의 불확실성과 관계가 없다. ⓑ에서 서로 다른 동기가 같은 결과를 낳을 수 있음을 설명한 뒤 ⓓ에서 수용률만으로 그 동기를 구별할 수 없다고 추론하는 흐름이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-362c052d70",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nImagine that a group has prepared a presentation, but the time allowed for it is suddenly reduced. One member insists that they must follow the original plan and include every detail. Another suggests keeping the main points and removing less important examples. The second member is not giving up the group's goal. Instead, she is changing the way they reach it. A plan that worked under earlier conditions may no longer be useful when those conditions change. To succeed, the group needs to respond to the new situation. In this case, the ability that helps the group most is ________.",
+"choices": [
+"accuracy",
+"independence",
+"flexibility",
+"patience",
+"obedience"
+],
+"answer": "③",
+"solution": "발표 시간이 줄어든 상황에서 목표는 유지하되 계획을 바꾸는 능력을 설명하고 있다. 달라진 조건에 맞게 방법을 조정하는 능력은 flexibility(유연성)이므로 ③이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e7cbc88a02",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nConsider two teams whose members have similar abilities. In one team, members expect to be laughed at whenever they ask a basic question. They therefore remain silent even when they do not understand something. In the other team, members believe that others will listen respectfully and help them solve problems. They can admit uncertainty without worrying that it will be used against them. As a result, difficulties can be discussed before they become serious. The difference between the teams is not simply how much their members know. It is whether members have ________ in one another.",
+"choices": [
+"trust",
+"pride",
+"interest",
+"doubt",
+"disappointment"
+],
+"answer": "①",
+"solution": "두 번째 팀에서는 구성원들이 서로 존중하고 도와줄 것이라고 믿기 때문에 모르는 점이나 문제를 드러낼 수 있다. 따라서 팀 간의 차이를 만드는 것은 서로에 대한 trust(신뢰)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-72fd4d6414",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nSuppose someone says, “You finished early.” Spoken with a smile after a difficult task, these words may express admiration. Spoken while the speaker points to several unanswered questions, the same words may suggest that the work was careless. Nothing in the spelling of the sentence has changed. Yet a listener would not necessarily understand the two remarks in the same way. To decide what the speaker means, the listener must connect the sentence with the speaker's behavior and the situation surrounding it. A dictionary can explain the individual words, but it cannot by itself settle the meaning of the remark. That requires attention to ________.",
+"choices": [
+"grammar",
+"memory",
+"fluency",
+"context",
+"translation"
+],
+"answer": "④",
+"solution": "동일한 문장도 화자의 행동과 발화 상황에 따라 칭찬이나 부정적 평가로 이해될 수 있다. 따라서 낱말의 사전적 의미를 넘어 발화의 뜻을 결정하는 context(맥락)가 빈칸에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8ad1108bc3",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nImagine receiving a small present from a seller before you have shown any interest in the product. The seller says that you are free to leave, and you believe that the present creates no formal obligation. Even so, walking away may now feel less comfortable than it did a moment earlier. The product has not improved, its price has not fallen, and no other customer is competing to buy it. What has changed is your sense of the relationship: you have received something without yet returning anything. The seller's strategy therefore depends less on making the product desirable than on activating ________, a principle that can make an unrequested benefit feel like a debt.",
+"choices": [
+"scarcity",
+"reciprocity",
+"authority",
+"competition",
+"curiosity"
+],
+"answer": "②",
+"solution": "상품의 가치나 가격이 달라진 것이 아니라, 선물을 받은 사람이 무언가 되돌려줘야 한다고 느끼는 것이 핵심이다. 요청하지 않은 호의조차 빚처럼 느끼게 하는 원리는 reciprocity(상호성)이므로 ②가 적절하다. 희소성이나 경쟁은 지문에서 명시적으로 배제된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fa12f5f074",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nImagine a service that gives every user access to twice as many articles as before. Its managers might regard this increase as an obvious improvement. From the user's perspective, however, the gain is less certain. Access to additional articles does not provide additional hours in which to read them. If the time available remains fixed, each new article competes with the others for a share of it. The service can expand its collection, but it cannot expand the user's day. Consequently, as the supply of content grows, what becomes relatively ________ is the attention required to make use of it. The difficulty shifts from obtaining material to deciding which material deserves one's limited focus.",
+"choices": [
+"reliable",
+"profitable",
+"accessible",
+"abundant",
+"scarce"
+],
+"answer": "⑤",
+"solution": "읽을 수 있는 자료는 늘어나지만 이를 읽는 데 사용할 시간과 주의력은 그대로라는 대조가 핵심이다. 콘텐츠 공급량에 비해 이를 처리할 주의력은 상대적으로 scarce(희소한)해진다. abundant는 증가한 콘텐츠의 특성이므로 빈칸에 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f27ceb5ca8",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nSuppose two systems perform the same essential task equally well during ordinary operation. The first assigns the task to a single component; the second includes another component that can perform the task independently. If the original component never fails, the additional one contributes nothing to the output being measured. On that measure alone, removing it appears to be an improvement. But this judgment quietly assumes that ordinary operation is the only condition worth considering. Once failure is included in the comparison, the apparently useless component changes the result: the second system can continue where the first must stop. Its value comes neither from increasing normal output nor from performing a different task, but from preserving an existing function when its usual means is lost. What the narrower measure treats as waste is therefore the protective value of ________.\n\n*component: 구성 요소",
+"choices": [
+"precision",
+"specialization",
+"uniformity",
+"redundancy",
+"productivity"
+],
+"answer": "④",
+"solution": "추가 구성 요소는 평상시 생산량을 늘리거나 다른 일을 수행하지 않지만, 기존 요소가 고장 나면 같은 기능을 대신한다. 따라서 낭비처럼 보이는 중복이 기능 유지에 기여한다는 내용이므로 redundancy(중복성)가 정답이다. specialization은 역할의 분화를, uniformity는 요소들의 동일한 성질을 뜻하므로 대체 기능을 위한 중복이라는 핵심을 담지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fd1bbfca43",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\nA rule can remain unchanged while becoming less useful for the very purpose that originally justified it. Imagine a team that adopts a fixed order for discussing problems so that urgent matters receive attention first. While circumstances remain stable, repeating that order may serve the purpose well. If the relative urgency of the problems changes, however, preserving the sequence can begin to defeat the reason for having it. The team then faces a misleading choice only if it confuses loyalty to its aim with loyalty to its procedure. Revising the sequence need not indicate a weaker commitment; refusing to revise it may reveal one. What allows the aim to remain constant across changing conditions is ________: the capacity to alter the means in response to what fulfilling the aim now requires.",
+"choices": [
+"flexibility",
+"consistency",
+"efficiency",
+"conformity",
+"independence"
+],
+"answer": "①",
+"solution": "목적을 지키는 것과 기존 절차를 고수하는 것을 구분해야 한다. 상황이 바뀌면 같은 목적을 실현하기 위해 수단을 바꿀 수 있어야 하므로 flexibility(유연성)가 적절하다. consistency는 목적의 일관성이라는 측면에서 매력적인 오답이지만, 빈칸 뒤에서 정의하는 것은 변화에 대응하여 수단을 조정하는 능력이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d8eae5059f",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 판단할 때, 글의 내용으로 뒷받침되지 않는 것은?\n\nAn octopus does not depend on a single ability to survive. Its color-changing skin can make it difficult for an enemy to spot, while also helping it approach prey without being noticed. Its nervous system is unusual as well: more nerve cells are located in its arms than in its head. As a result, an arm can respond to what is nearby without waiting for instructions from the head. Learning is another part of the picture. Some octopuses kept in laboratories have learned how to open a jar to reach food. These abilities, however, do not mean that octopuses have long lives. For most of them, life lasts no more than a couple of years.",
+"choices": [
+"문어의 피부색 변화는 먹이를 잡는 데에도 도움이 될 수 있다.",
+"문어의 신경 세포는 팔보다 머리에 더 많이 분포한다.",
+"문어의 팔은 주변 환경에 독립적으로 반응할 수 있다.",
+"실험실에서 먹이가 든 병을 여는 방법을 학습한 문어가 있다.",
+"문어의 학습 능력이 뛰어나다고 해서 수명도 길다고 볼 수는 없다."
+],
+"answer": "②",
+"solution": "지문은 머리보다 팔에 더 많은 신경 세포가 있다고 설명한다. 따라서 신경 세포가 팔보다 머리에 더 많이 분포한다는 ②는 글의 내용으로 뒷받침되지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-d58601f5ac",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 바탕으로 이해한 내용 중 적절하지 않은 것은?\n\nA song may leave you unimpressed when you first hear it but become enjoyable after several more encounters. The mere exposure effect offers an explanation: familiarity itself can increase our liking for something. Understanding is not always necessary for this change. In research on this effect, people responded more positively to unfamiliar symbols they had encountered more often, although the symbols' meanings remained unknown to them. One explanation is that familiar information requires less effort to process, and people experience this ease as pleasant. Yet repetition is not a guarantee of lasting enjoyment. Beyond a certain point, hearing the same thing again may produce boredom instead of greater affection.",
+"choices": [
+"A person's first response to a song may differ from a later response.",
+"People can become more positive toward symbols whose meanings they do not know.",
+"Processing familiar information with less effort may contribute to liking it.",
+"Every additional exposure makes a familiar song more enjoyable.",
+"Repetition can eventually reduce a person's interest in something."
+],
+"answer": "④",
+"solution": "반복해서 접하면 친숙함 때문에 호감이 생길 수 있지만, 지나친 반복은 지루함을 일으킬 수 있다. 따라서 접할 때마다 반드시 더 즐거워진다는 ④는 추론할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-1a3152479b",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에 근거하여 추론한 것으로 적절하지 않은 것은?\n\nBefore standard time became common, a town could set its clocks by the sun rather than by the clocks of neighboring communities. Local noon arrived earlier in places farther east, so nearby towns did not necessarily agree on the time. Such differences caused little difficulty when travel was slow. Rail travel, however, required people to coordinate movements across many towns much more quickly. A timetable expressed in several local times was difficult to use and could threaten safety. Railroad companies in the United States and Canada responded by introducing shared time zones. Within each zone, towns followed one agreed time. This system made coordination easier by replacing many local clock settings with a common reference.",
+"choices": [
+"표준 시간대는 같은 구역에 속한 모든 마을에서 태양이 가장 높이 뜨는 순간을 일치시켰다.",
+"지역별 태양의 위치를 기준으로 시계를 맞추면 가까운 마을끼리도 시각이 달라질 수 있었다.",
+"이동 속도의 증가는 지역별 시각 차이를 해결해야 할 필요성을 높였다.",
+"철도 회사들은 여러 지역의 운행을 조정하기 위해 공통된 시간 기준을 도입했다.",
+"공유된 시간 기준의 도입은 열차 시간표를 이해하고 사용하는 데 도움이 되었을 것이다."
+],
+"answer": "①",
+"solution": "표준 시간대는 같은 구역의 시계가 공통된 시각을 표시하도록 만든 제도이다. 지역마다 다른 태양의 움직임 자체를 바꾼 것은 아니므로, 태양이 가장 높이 뜨는 순간까지 일치시켰다는 ①은 추론할 수 없다. 나머지는 지역별 시각 차이와 철도 운행의 조정 필요성에서 도출된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-b196dd1dee",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 설명으로부터 도출할 수 없는 판단은?\n\nThe value people place on an object can depend on whether they regard it as theirs. This tendency, called the endowment effect, can create a gap between the amount an owner demands and the amount a potential buyer offers, even when both are considering the same object. For the owner, selling involves giving something up; for the buyer, purchasing involves obtaining something not yet possessed. A free trial may shift a customer's perspective from the second position toward the first. If the product begins to feel like a personal possession, returning it may be experienced as a loss. The tendency is weaker among people who routinely trade goods for work. Thus, ownership can influence valuation, but the strength of that influence is not identical for everyone.",
+"choices": [
+"동일한 물건을 평가하더라도 소유 여부에 따라 제시하는 금액이 달라질 수 있다.",
+"무료 체험의 효과는 고객이 제품을 자신의 것처럼 느끼게 되는 과정과 관련될 수 있다.",
+"사용하지 않는 물건도 포기할 때 손실을 느낀다면 계속 보관하려 할 수 있다.",
+"직업적으로 물건을 거래하는 사람에게도 소유가 가치 평가에 영향을 줄 가능성은 남아 있다.",
+"무료 체험을 통해 제품에 대한 소유감을 느끼게 되었다면, 그 고객은 반드시 제품을 구매한다."
+],
+"answer": "⑤",
+"solution": "지문은 무료 체험으로 소유감이 생기면 제품을 반환하는 일을 손실로 느낄 수 있다고 설명한다. 그러나 그러한 느낌이 반드시 구매로 이어진다고 보장하지는 않으므로 ⑤는 추론할 수 없다. 또한 거래 경험이 많은 사람에게 소유 효과가 약하다는 말은 그 효과가 완전히 없다는 뜻은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-240130bba1",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 추론한 내용 중 근거가 부족한 것은?\n\nA remembered experience is not necessarily a record in which every moment receives equal weight. According to the peak-end rule, its most intense point and its final moments have a particularly strong influence on later judgment. Duration, by comparison, often contributes much less. This helps explain an apparently puzzling possibility: extending an unpleasant experience may make its memory less negative if the added portion is less unpleasant than what came before. The extra portion does not erase the discomfort already experienced, and it can even increase the total discomfort. Nevertheless, it changes the ending on which memory partly depends. For someone planning an activity, this suggests that improving its final stage may affect how participants later evaluate the whole experience.",
+"choices": [
+"An experience can become longer without being remembered more negatively.",
+"Adding a milder final stage can affect memory without removing earlier discomfort.",
+"If two experiences have equally unpleasant peaks, their different endings cannot affect later judgments.",
+"A more favorable memory does not necessarily indicate less total discomfort.",
+"Improving an activity's ending may influence later judgments of the activity as a whole."
+],
+"answer": "③",
+"solution": "절정과 마지막 순간이 모두 경험에 대한 평가에 큰 영향을 준다고 했으므로, 절정의 불쾌함이 같아도 끝나는 방식에 따라 평가는 달라질 수 있다. 따라서 마지막 부분의 차이가 판단에 영향을 줄 수 없다는 ③은 근거가 부족하다. 지문은 실제로 겪은 불편함의 총량과 나중에 떠올리는 경험의 평가가 서로 다를 수 있음을 강조한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-a917241300",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에 비추어 추론이 성립하지 않는 진술만을 <보기>에서 모두 고른 것은?\n\nLooking toward an event and becoming aware of it are different achievements. When attention is devoted to a demanding task, the brain may filter out visible information that does not seem relevant to that task. This is known as inattentional blindness. The missed information need not be hidden: an unexpected event can occur in the scene a person is watching and still escape awareness. Someone who reviews the scene later may be surprised by what was missed, because people often assume that seeing a scene means noticing its contents. The same limitation matters outside experiments. A driver absorbed in a phone conversation may fail to register a pedestrian directly ahead. Such a failure shows that the direction of a person's gaze alone cannot establish what entered conscious awareness.\n\n<보기>\nㄱ. 과제와 관련 없어 보이는 시각 정보는 시선이 향한 장면 안에 있어도 의식되지 않을 수 있다.\nㄴ. 나중에 장면을 다시 보고 누락을 깨달은 사람은 처음 볼 때도 그 대상을 의식적으로 알아차렸다고 볼 수 있다.\nㄷ. 보행자 쪽을 바라보았다는 사실만으로 운전자가 보행자의 존재를 인식했다고 단정할 수 없다.\nㄹ. 주어진 과제를 정확히 수행했다면, 그 장면에 나타난 예상 밖의 대상도 빠짐없이 인식했다고 볼 수 있다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "④",
+"solution": "ㄴ은 나중에 누락을 깨달았다는 사실을 처음부터 의식적으로 알아차렸다는 증거로 잘못 해석한 진술이다. ㄹ도 과제에 대한 집중과 장면 전체에 대한 인식을 동일시하지만, 지문에 따르면 과제에 집중할수록 무관해 보이는 정보를 놓칠 수 있다. ㄱ과 ㄷ은 시선의 방향만으로 의식적 인식을 보장할 수 없다는 설명에 부합하므로, 성립하지 않는 진술은 ㄴ과 ㄹ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-7ad78b7824",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 근거를 찾을 수 없는 진술만을 <보기>에서 모두 고른 것은?\n\nA product can become more attractive through familiarity, but familiarity is not the only source of increased value. The mere exposure effect concerns the tendency to like something more after repeated encounters, even without understanding it better. The endowment effect concerns the extra value people attach to something they regard as their own. A free trial could involve both processes: it provides repeated contact and may also produce a sense of possession. Consequently, greater liking after a trial would not, by itself, identify which process was responsible. The two effects also have different qualifications. Excessive exposure may cause boredom, whereas people who regularly trade goods tend to show a weaker ownership-related effect. Evidence that one effect is limited, therefore, does not automatically establish that the other is absent.\n\n<보기>\nㄱ. 무료 체험 후 호감이 높아졌다는 결과만으로는 친숙함과 소유감 중 무엇이 영향을 주었는지 특정하기 어렵다.\nㄴ. 반복 노출에 따른 호감 증가가 나타나려면 대상의 의미나 기능에 대한 이해가 반드시 깊어져야 한다.\nㄷ. 직업적 거래 경험이 소유 효과를 약화한다면, 그러한 경험은 반복 노출로 생기는 호감도 반드시 약화한다.\nㄹ. 반복 노출이 지루함을 유발한 경우에도, 그 사실만으로 소유감에 따른 가치 상승의 가능성까지 배제할 수는 없다.\nㅁ. 무료 체험이 반복 접촉과 소유감을 함께 유발한다면, 체험 후 호감 증가에서 두 효과가 기여한 정도는 서로 같다고 볼 수 있다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㅁ",
+"ㄴ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄴ은 이해가 깊어지지 않아도 단순 노출 효과가 나타날 수 있다는 설명에 어긋난다. ㄷ은 소유 효과에 관한 제한 조건을 단순 노출 효과에도 반드시 적용된다고 확대했으며, ㅁ은 두 과정이 함께 작용할 가능성을 두 효과의 기여도가 같다는 주장으로 바꾸었다. ㄱ과 ㄹ은 결과만으로 원인을 특정하거나 한 효과의 제한을 다른 효과의 부재로 단정할 수 없다는 설명에 부합하므로, 근거가 없는 진술은 ㄴ, ㄷ, ㅁ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-8bbfd05050",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe manager praised Jina for her ________ in solving the unexpected problem.",
+"choices": [
+"create",
+"creative",
+"creativity",
+"creatively",
+"creation"
+],
+"answer": "③",
+"solution": "소유격 her 뒤에는 명사가 와야 하며, ‘문제를 해결하는 창의성’이라는 의미가 필요하다. 따라서 creative의 명사형인 creativity가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-c739547329",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"approve – approval",
+"refuse – refusal",
+"recover – recovery",
+"strong – strength",
+"perform – performance"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 모두 동사와 그 명사형의 관계이다. ④의 strong은 형용사이고 strength는 그 명사형이므로 관계가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-ba22dd6189",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)의 각 괄호 안에서 문맥과 어법에 맞는 낱말로 가장 적절한 것은?\n\nDuring the debate, Sora spoke with great (A)[confident / confidence]. Her argument was clear and (B)[persuasion / persuasive], and she responded (C)[logical / logically] to every question.",
+"choices": [
+"confident – persuasion – logical",
+"confidence – persuasive – logically",
+"confidence – persuasion – logically",
+"confident – persuasive – logical",
+"confidence – persuasively – logically"
+],
+"answer": "②",
+"solution": "(A)는 전치사 with의 목적어이므로 명사 confidence가 필요하다. (B)는 주격보어 자리이므로 형용사 persuasive가, (C)는 동사 responded를 수식하므로 부사 logically가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-d66057de5c",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 (a)~(c)의 괄호 안 단어를 문맥에 맞는 형태로 바꿀 때, 바르게 짝지은 것은?\n\n(a) The engineers carefully examined the (rely) of the new safety system.\n(b) The new ranking system may (intense) competition among students.\n(c) Since the path was covered with ice, the hikers moved (caution).",
+"choices": [
+"reliance – intensive – caution",
+"reliability – intensify – cautiously",
+"reliable – intensity – cautious",
+"reliability – intensive – cautiously",
+"reliably – intensify – caution"
+],
+"answer": "②",
+"solution": "(a)는 관사 the 뒤에서 ‘신뢰성’을 뜻하는 명사 reliability가 필요하다. 조동사 may 뒤에는 동사원형 intensify가 오며, moved를 수식하는 (c)는 부사 cautiously가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-54658e0485",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nThere is growing (A)________ of the need to reduce waste. Some companies have responded by changing their packaging, but consumers should also examine products (B)________ before purchasing them. Such behavior can improve the long-term (C)________ of these efforts.\n\n(A) aware  (B) care  (C) effective",
+"choices": [
+"awareness – carefully – effectiveness",
+"awareness – careful – effect",
+"aware – carefully – effectiveness",
+"awareness – carelessly – effective",
+"awarely – careful – effectiveness"
+],
+"answer": "①",
+"solution": "(A)는 growing의 수식을 받는 명사 awareness가 적절하다. (B)는 동사 examine을 수식하므로 carefully가 필요하고, (C)는 형용사 long-term 뒤에 오는 명사 effectiveness가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-6aa1390a7a",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 문장 중, 밑줄 친 단어의 형태가 어법과 문맥에 맞는 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. The committee's _refusal_ to release the records raised public suspicion.\nㄴ. The two proposals are fundamentally _difference_ in their expected costs.\nㄷ. Her instructions were sufficiently _clarity_ for the first-time users.\nㄹ. Regular feedback can _strengthen_ employees' motivation to improve.\nㅁ. The rule was introduced in _response_ to growing safety concerns.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄹ",
+"ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄹ, ㅁ"
+],
+"answer": "⑤",
+"solution": "ㄱ의 refusal은 소유격 뒤의 명사, ㄹ의 strengthen은 조동사 뒤의 동사원형, ㅁ의 response는 전치사 in 뒤의 명사로 적절하다. ㄴ은 difference가 아니라 형용사 different가, ㄷ은 clarity가 아니라 형용사 clear가 필요하다. 따라서 옳은 것은 ㄱ, ㄹ, ㅁ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-2cab64839e",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 괄호 안 단어를 문맥과 어법에 맞게 바꾸어 빈칸을 완성하시오. 정답은 빈칸 순서대로 쓰시오.\n\nThe unexpected ________ (withdraw) of financial support made the original plan ________ (practice), so the design team decided to ________ (simple) the production process.",
+"selfGrade": true,
+"answer": "withdrawal, impractical, simplify",
+"solution": "첫 번째 빈칸은 형용사 unexpected의 수식을 받는 명사 withdrawal이 필요하다. 두 번째는 목적격보어 자리에서 ‘실행 불가능한’이라는 뜻의 형용사 impractical이 적절하다. 세 번째는 to 뒤의 동사원형 자리이므로 simplify를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-cebbe60046",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nAs droughts occur more often and populations increase, usable fresh water is becoming less ⓐ**available** in many regions. Desalination can help by ⓑ**removing** salt from seawater and producing water that cities can use. However, operating a desalination plant requires a great deal of ⓒ**energy**, so the water is often expensive to produce. The process also leaves behind brine with a very ⓓ**low** concentration of salt. If this waste is returned to the ocean without care, it may ⓔ**damage** marine life.\n\n*desalination: 담수화  *brine: 소금물",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "④",
+"solution": "담수화 과정에서 생기는 brine은 염분 농도가 매우 높은 소금물이다. 따라서 ⓓ의 low는 high로 바뀌어야 문맥에 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-af0e420292",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nOld urban structures do not always have to be torn down. Some cities have ⓐ**transformed** railway lines that are no longer used into green public spaces. The High Line, for instance, occupies a former elevated track in Manhattan. Although the track once stood ⓑ**neglected** and covered with weeds, it now draws many people and benefits nearby businesses. Projects of this kind are especially ⓒ**practical** in large cities because they provide parks without demanding additional land. Reusing an existing structure can also ⓓ**reduce** the waste created by demolition and ⓔ**intensify** the expense associated with removing it.",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "⑤",
+"solution": "기존 구조물을 재사용하면 철거할 때 생기는 폐기물뿐만 아니라 비용도 줄일 수 있다. 따라서 비용을 ‘증가시키다’라는 뜻의 ⓔ intensify는 reduce와 같은 의미의 표현으로 바뀌어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bd18890d3d",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nRemembering is not the simple ⓐ**retrieval** of a complete and unchanging record. A memory is assembled again whenever it is recalled, and missing details may be supplied by a person's expectations. Consequently, people who observed the same event may offer ⓑ**inconsistent** descriptions without intending to lie. Information encountered afterward can also become ⓒ**incorporated** into what a person believes was originally experienced. A witness's certainty may therefore feel highly ⓓ**persuasive**, but it does not necessarily ⓔ**undermine** the accuracy of the remembered event.",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "⑤",
+"solution": "글은 기억에 대한 확신이 강하더라도 그 기억의 정확성이 보장되지는 않는다고 설명한다. 따라서 확신이 정확성을 ‘약화한다’는 ⓔ undermine은 문맥에 맞지 않으며 guarantee 또는 confirm과 같은 말이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-507727c0f3",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nThe isolation of islands has allowed many unusual species to ⓐ**evolve**, yet it has also left them poorly prepared for newly introduced predators. Having developed in places without large hunters, some island animals possess few behaviors for ⓑ**defending** themselves. Thus, rats and cats carried to islands can prey easily on birds that live or nest on the ground. The arrival of such predators has ⓒ**accelerated** the decline of many native species, and some have disappeared entirely. Conservationists therefore try to ⓓ**retain** the invasive animals, after which native bird populations may begin to ⓔ**recover**.",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "④",
+"solution": "외래 포식자가 토착 조류의 감소를 초래하므로 보전 활동은 그 포식자를 섬에서 제거하는 방향으로 이루어진다. 따라서 ‘유지하다’라는 뜻의 ⓓ retain은 remove 또는 eliminate로 바뀌어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2d6d117e10",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nDesalination appears to offer a direct response to the growing ⓐ**shortage** of fresh water: seawater is widely available, and its salt can be removed. Yet the apparent simplicity of this solution can be ⓑ**misleading**. Producing usable water consumes considerable energy, thereby adding to its cost, while the remaining brine may threaten marine organisms if carelessly discharged. These limitations do not make desalination entirely ⓒ**worthless**, especially where cities already depend heavily on it. They do, however, suggest that it should not be regarded as a complete substitute for using current water supplies more ⓓ**efficiently**. Treating the technology as the sole answer would therefore reflect an ⓔ**acknowledgment** of both its benefits and its costs.\n\n*desalination: 담수화  *brine: 소금물",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "⑤",
+"solution": "글은 담수화의 장점과 한계를 함께 고려하여 기존 물을 효율적으로 사용하는 노력과 병행해야 한다고 주장한다. 담수화를 유일한 해결책으로 보는 것은 비용과 환경적 한계를 인정하는 태도가 아니라 무시하는 태도이므로, ⓔ acknowledgment는 neglect 또는 disregard와 같은 말로 바뀌어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3df593f218",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말 뜻에 맞는 영어 단어의 철자로 옳은 것은?\n\n성공",
+"choices": [
+"sucess",
+"succes",
+"success",
+"sucsess",
+"succese"
+],
+"answer": "③",
+"solution": "‘성공’을 뜻하는 명사는 success이다. c와 s가 각각 두 번 연속으로 쓰이므로 철자에 유의해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-44e72500c9",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\n\n우리는 최종 결정을 내리기 전에 시간이 더 필요하다.\nWe need more time before making a final ________.",
+"choices": [
+"invitation",
+"decision",
+"permission",
+"description",
+"attention"
+],
+"answer": "②",
+"solution": "‘결정’을 뜻하는 단어는 decision이다. make a decision은 ‘결정을 내리다’라는 뜻이므로 빈칸에는 decision이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-0f71a18421",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말 뜻에 맞는 영어 단어의 철자로 옳은 것은?\n\n기회",
+"choices": [
+"oppertunity",
+"opportunety",
+"oppotunity",
+"oportunity",
+"opportunity"
+],
+"answer": "⑤",
+"solution": "‘기회’를 뜻하는 명사는 opportunity이다. 첫 부분에 p가 두 번 쓰이고, 뒷부분은 -tunity로 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-fc8c19524b",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\n\n이 장치는 온도의 작은 변화에도 민감하다.\nThis device is ________ to even small changes in temperature.",
+"choices": [
+"sensible",
+"sensory",
+"senseless",
+"sensitive",
+"sensational"
+],
+"answer": "④",
+"solution": "‘~에 민감한’은 sensitive to로 표현하므로 정답은 sensitive이다. sensible은 ‘분별 있는’, sensory는 ‘감각의’, senseless는 ‘무의미한’, sensational은 ‘선풍적인’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-7d2eddfef6",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말 뜻에 맞는 영어 단어의 철자로 옳은 것은?\n\n책임",
+"choices": [
+"responsibility",
+"responsability",
+"responcibility",
+"responsibilty",
+"resposibility"
+],
+"answer": "①",
+"solution": "‘책임’을 뜻하는 명사는 responsibility이다. responsible의 끝부분 -ible이 명사형에서 -ibility로 바뀐다는 점에 유의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-07ff2394ab",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 할 때, 빈칸 (A), (B)에 들어갈 말로 알맞은 것은?\n\n나는 그녀의 침묵으로부터 그녀가 동의하지 않는다고 추론했지만, 그녀는 자신의 침묵이 동의를 암시한 것이라고 말했다.\nI (A)________ from her silence that she disagreed, but she said that her silence (B)________ agreement.",
+"choices": [
+"implied – inferred",
+"inferred – inferred",
+"implied – implied",
+"referred – implied",
+"inferred – implied"
+],
+"answer": "⑤",
+"solution": "단서를 바탕으로 의미를 ‘추론하다’는 infer이므로 (A)에는 과거형 inferred가 들어간다. 말이나 행동 등이 어떤 의미를 ‘암시하다’는 imply이므로 (B)에는 implied가 알맞다. 정보를 해석하는 사람의 행위와 단서가 의미를 드러내는 작용을 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-c22bf107e7",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 할 때, 빈칸 (A), (B)에 들어갈 말로 알맞은 것은?\n\n두 계획의 표면적인 유사성이 그 계획들 사이의 근본적인 차이를 가렸다.\nThe (A)________ similarities between the two plans (B)________ the fundamental differences between them.",
+"choices": [
+"superficial – clarified",
+"substantial – obscured",
+"superficial – obscured",
+"substantial – clarified",
+"superior – reinforced"
+],
+"answer": "③",
+"solution": "‘표면적인’은 superficial이며, substantial은 ‘상당한, 실질적인’이라는 뜻이므로 (A)에 적절하지 않다. 차이를 ‘가렸다’는 차이가 분명히 드러나지 않게 했다는 의미이므로 (B)에는 obscured가 들어간다. clarified는 ‘명확하게 했다’라는 뜻으로 주어진 우리말과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-03349ef709",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 굵게 표시한 단어의 우리말 뜻으로 가장 알맞은 것은?\n\nThe library's closure is **temporary**; it will open again soon.",
+"choices": [
+"영구적인",
+"불가피한",
+"일시적인",
+"정기적인",
+"예상하지 못한"
+],
+"answer": "③",
+"solution": "temporary는 ‘일시적인’이라는 뜻이다. 도서관이 곧 다시 문을 연다는 내용이므로 폐쇄가 잠시 동안만 지속됨을 알 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-aca179f966",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"abundant — 풍부한",
+"reluctant — 꺼리는",
+"abandon — 포기하다",
+"inevitable — 피할 수 있는",
+"obscure — 불분명한"
+],
+"answer": "④",
+"solution": "inevitable은 ‘불가피한, 피할 수 없는’이라는 뜻이다. 따라서 ‘피할 수 있는’으로 연결한 ④가 잘못되었으며, 나머지는 모두 올바른 연결이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4b6a6dbf25",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장에서 굵게 표시한 단어의 문맥상 의미로 가장 알맞은 것은?\n\nSimply recording complaints will not solve anything; we must **address** the causes of the problem.",
+"choices": [
+"주소를 적다",
+"다루다, 해결하려고 노력하다",
+"연설하다",
+"이름을 붙이다",
+"다른 곳으로 보내다"
+],
+"answer": "②",
+"solution": "불만을 기록하는 것만으로는 해결되지 않으므로 문제의 원인에 대응해야 한다는 문맥이다. address는 여기서 ‘다루다, 해결하려고 노력하다’라는 뜻이며, 이미 해결을 완료했다는 의미는 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-87bd4b2562",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 굵게 표시한 단어의 문맥상 의미가 바르지 않은 것은?",
+"choices": [
+"The hikers **observed** the movement of the clouds before leaving. → 관찰했다",
+"The company **charged** us for replacing the broken part. → 요금을 청구했다",
+"The manager **declined** to discuss the plan any further. → 거절했다",
+"The proposal may **appeal** to people who want a simpler solution. → 마음을 끌다",
+"The cause of the sudden change remained **obscure** even after the meeting. → 분명한"
+],
+"answer": "⑤",
+"solution": "⑤의 obscure는 회의 후에도 변화의 원인이 ‘불분명한’ 상태로 남았다는 뜻이다. ③의 decline은 뒤에 to부정사가 이어져 어떤 행동을 ‘거절하다’라는 의미로 쓰였다. 나머지 단어와 뜻의 연결도 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-245f89a1f6",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 굵게 표시한 단어에 해당하는 우리말 뜻을 바르게 짝지은 것은?\n\n(A) The researcher **observed** that the number of visitors fell whenever the delivery fee rose.\n(B) All visitors must **observe** the rule requiring silence in the reading room.",
+"choices": [
+"(A) 알아차렸다 — (B) 준수하다",
+"(A) 알아차렸다 — (B) 관찰하다",
+"(A) 준수했다 — (B) 준수하다",
+"(A) 준수했다 — (B) 관찰하다",
+"(A) 거절했다 — (B) 발표하다"
+],
+"answer": "①",
+"solution": "(A)의 observed는 that절에 제시된 변화의 양상을 ‘알아차렸다’라는 뜻이다. (B)에서는 규칙을 목적어로 취하므로 observe가 ‘준수하다’라는 의미로 쓰였다. 같은 단어라도 뒤에 이어지는 내용에 따라 뜻을 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d404c5274e",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 굵게 표시한 단어의 문맥상 의미가 바르게 짝지어진 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. The explanation seemed **sound** until a researcher pointed out a serious error in its reasoning. → 타당한\nㄴ. Although the final **bill** was lower than expected, the customer checked every charge. → 법안\nㄷ. The two sides accepted a **settlement** that ended their disagreement over the delivery fee. → 합의\nㄹ. The company **conducted** a survey before deciding whether to change its policy. → 수행했다\nㅁ. The report **accounted for** the increase in complaints by pointing to repeated delays. → 차지했다",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "⑤",
+"solution": "ㄱ의 sound는 추론이나 설명이 ‘타당한’, ㄷ의 settlement는 분쟁을 끝내는 ‘합의’, ㄹ의 conducted는 조사를 ‘수행했다’라는 뜻이다. ㄴ의 bill은 고객이 청구 항목을 확인하는 문맥이므로 ‘계산서’이다. ㅁ의 accounted for는 반복된 지연을 원인으로 제시하여 불만 증가를 ‘설명했다’라는 뜻이다. 따라서 올바른 연결은 ㄱ, ㄷ, ㄹ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1fc1de9d02",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 굵게 표시한 단어의 문맥상 의미가 바르게 짝지어진 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. The number of complaints **declined**, even though the company had not changed its policy. → 거절했다\nㄴ. Delivery fees **accounted for** nearly half of the total bill. → 차지했다\nㄷ. The manager **addressed** the visitors before inviting them to ask questions. → 주소를 적었다\nㄹ. The report's effect was **profound** rather than temporary: it changed how the company made decisions for years. → 지대한\nㅁ. Visitors who had carefully **observed** the rules were surprised when others ignored them. → 관찰한",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ",
+"ㄷ, ㅁ"
+],
+"answer": "③",
+"solution": "ㄴ의 accounted for는 전체 금액에서 일정 비율을 ‘차지했다’, ㄹ의 profound는 영향이 ‘지대한’이라는 뜻이다. ㄱ은 불만의 수가 주어이므로 declined가 ‘감소했다’라는 뜻으로 쓰였다. ㄷ의 addressed는 방문객들에게 ‘말을 했다, 연설했다’, ㅁ의 observed는 규칙을 ‘준수한’이라는 의미이다. 따라서 바르게 연결된 것은 ㄴ, ㄹ뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7b4c49765e",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 어법상 틀린 부분 한 곳을 찾아 고친 표현만 쓰시오.\n\nWe are looking forward to visit the library together.",
+"selfGrade": true,
+"answer": "visiting",
+"solution": "look forward to에서 to는 전치사이므로 뒤에 동명사가 와야 한다. 따라서 visit을 visiting으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-74ac386021",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 어법상 틀린 부분 한 곳을 찾아 고친 표현만 쓰시오.\n\nThe number of books that students borrow are increasing.",
+"selfGrade": true,
+"answer": "is",
+"solution": "문장의 주어는 The number of books이며, 중심어인 number는 단수이다. 따라서 are를 is로 고쳐야 하며, 관계절의 students borrow는 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-a885ed2769",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장에서 어법상 틀린 부분을 각각 한 곳씩 찾아 고치시오. 답은 (1), (2)의 순서대로 고친 표현만 쓰시오.\n\n(1) The teacher had us to return the books before lunch.\n(2) If we had arrived at the station earlier, we would catch the train yesterday.",
+"selfGrade": true,
+"answer": "(1) return (2) would have caught",
+"solution": "사역동사 have가 목적어와 능동 관계의 목적격보어를 취할 때는 동사원형을 사용하므로 to return을 return으로 고친다. 두 번째 문장은 과거에 실현되지 않은 일을 가정하므로 주절에 would have p.p.가 필요하다. 따라서 would catch를 would have caught로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-13cfd4be6b",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ 중 어법상 틀린 것을 두 개 찾아 고치시오. 답은 해당 기호와 고친 표현을 글에 나온 순서대로 쓰시오.\n\nOur teacher asked us to help organize the classroom library. Before we began, she had us ⓐcheck the books on each shelf. We removed damaged books and ⓑplacing the remaining ones in order. The number of books that needed new labels ⓒwere larger than we had expected. The students ⓓwho finished early helped the others. We are looking forward to ⓔusing the library again.",
+"selfGrade": true,
+"answer": "ⓑ placed, ⓒ was",
+"solution": "ⓑ는 과거동사 removed와 and로 연결되어 있으므로 placing을 placed로 고친다. ⓒ의 주어는 The number of books이며 중심어 number가 단수이므로 were를 was로 고친다. 사역동사 had 뒤의 check와 전치사 to 뒤의 using은 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-b401aa24fb",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ 중 어법상 틀린 것을 두 개 찾아 고치시오. 답은 해당 기호와 고친 표현을 글에 나온 순서대로 쓰시오.\n\nYesterday, I missed my train because I left home late. If I ⓐhad checked the time before leaving, I ⓑwould not miss that train. While waiting for the next one, I opened a book ⓒwhich I had borrowed it from the library. Reading it made the wait ⓓseem shorter. By the time the next train arrived, I ⓔhad finished the first chapter.",
+"selfGrade": true,
+"answer": "ⓑ would not have missed, ⓒ which I had borrowed",
+"solution": "이미 놓친 기차에 관한 과거의 반대 상황을 가정하므로 ⓑ는 would not have missed로 고친다. ⓒ에서는 목적격 관계대명사 which가 borrowed의 목적어 역할을 하므로 중복된 it을 삭제한다. made 뒤의 동사원형 seem과 과거의 도착 시점보다 앞선 완료를 나타내는 had finished는 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-699479270b",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분 세 곳을 찾아 고치시오. 답은 고친 표현만 글에 나온 순서대로 쓰시오.\n\nThe idea that most parts of the human brain remain unused are a widespread myth. Brain scans indicate that nearly every region is active at some time during the day. Even simple tasks that we perform without much thought requires several areas to work together. Although the brain accounts for only about two percent of body weight, it consumes about twenty percent of the body's energy. If most of this costly organ were useless, maintaining it would make little sense. Despite of the evidence, the myth continues to appeal to people who hope that hidden mental powers can be unlocked.",
+"selfGrade": true,
+"answer": "is; require; Despite",
+"solution": "첫 문장의 주어는 The idea이고 that절은 그 내용을 설명하므로 are를 is로 고친다. 세 번째 문장의 주어는 복수인 tasks이므로 requires를 require로 고친다. Despite는 전치사이므로 뒤에 of를 쓰지 않으며, 가정법 표현인 If most of this costly organ were useless는 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-708ac7e8e8",
+"typeId": "eng-h2-u2m0s2t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분 세 곳을 찾아 고치시오. 답은 고친 표현만 글에 나온 순서대로 쓰시오.\n\nThe role that bats play in helping plants reproduce are easy to overlook. Some bats feed on nectar and carries pollen between flowers, while many others eat insects that can damage crops. If these bats disappeared, farmers and plants would lose valuable helpers. Despite of their importance, bat populations have declined because of disease and habitat loss. Protecting the caves and forests where they live is therefore essential.",
+"selfGrade": true,
+"answer": "is; carry; Despite",
+"solution": "첫 문장의 중심 주어는 단수인 The role이므로 관계절 안의 bats에 이끌리지 않고 are를 is로 고친다. 두 번째 문장은 Some bats를 주어로 하여 feed와 carry가 병렬로 연결되어야 하므로 carries를 carry로 고친다. Despite 뒤에는 of가 필요 없으며, 마지막 문장은 동명사구가 주어이므로 is가 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-cfc1c6cb21",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nA smartphone allows us ⓐ<u>to contact</u> someone without waiting for a letter. However, a message on a screen ⓑ<u>do</u> not show every detail of a person's feelings. When we talk face to face, we can see expressions ⓒ<u>that</u> help us understand the speaker. We can also notice changes in the person's voice. These details ⓓ<u>are</u> useful when the subject is important. Therefore, it is sometimes better ⓔ<u>to put</u> the phone away and have a conversation in person.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ의 주어는 단수 명사구인 a message on a screen이므로 do를 does로 고쳐야 한다. ⓐ는 allow의 목적격 보어인 to부정사이며, ⓒ는 expressions를 수식하는 주격 관계대명사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-693fbea6b6",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nBusy streets require us ⓐ<u>to pay</u> attention to many things at once. By contrast, natural surroundings can give our tired minds a chance ⓑ<u>to rest</u>. A quiet park is a place ⓒ<u>where</u> we can enjoy this kind of break. ⓓ<u>Spend</u> some time among trees can help us feel less stressed. When you need a rest, consider ⓔ<u>leaving</u> your phone in your pocket and taking a short walk. You do not have to travel far to spend time in a natural setting.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓓ는 문장의 주어 역할을 해야 하므로 동사원형 Spend를 동명사 Spending으로 고쳐야 한다. ⓒ의 where는 장소를 나타내는 a place를 수식하며, ⓔ의 leaving은 동명사를 목적어로 취하는 consider 뒤에 올바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-5ac9b2a4cf",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nA new possession may seem exciting at first, but the pleasure it provides often ⓐ<u>becomes</u> weaker as it grows familiar. This change is related to the way our brains ⓑ<u>respond</u> to things around us. We pay attention to what is new, while familiar objects are more easily ⓒ<u>ignored</u>. Experiences, however, can become part of the stories ⓓ<u>that</u> we share with other people. When deciding how to use our money, we might choose experiences that allow us to meet others, exchange ideas, and ⓔ<u>creating</u> memories together.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ는 allow us to 뒤에서 meet, exchange와 병렬로 연결되므로 creating을 create로 고쳐야 한다. ⓒ는 objects가 무시되는 대상이므로 수동태에 쓰인 과거분사 ignored가 적절하다. ⓓ는 관계절 안에서 share의 목적어 역할을 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-78e2a7a655",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nPeople sometimes believe that having more products to choose from will make shopping easier. Yet a shopper may discover that the effort required to compare all the available alternatives ⓐ<u>being</u> greater than expected. Even after making a choice, the shopper may continue to imagine the advantages of the products ⓑ<u>left</u> behind. The more attractive those alternatives seem, the ⓒ<u>less satisfied</u> the shopper may feel. A smaller selection can reduce this difficulty, ⓓ<u>making</u> a decision easier to accept. This helps explain why customers are sometimes more willing ⓔ<u>to buy</u> when fewer products are offered.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ는 discover의 목적어인 that절의 서술어 자리이므로 being을 is로 고쳐야 한다. that절의 주어는 단수 명사인 the effort이며, required 이하가 이를 수식한다. ⓑ는 products를 수식하는 과거분사이고, ⓒ는 「the＋비교급, the＋비교급」 구문에 해당하며, ⓓ는 앞 내용의 결과를 나타내는 분사구문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-313cf70a56",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nAn unexpected result does not explain its own importance. It takes a careful observer ⓐ<u>to recognize</u> what the result might mean. Fleming's discovery illustrates this point. Instead of throwing away a dish ⓑ<u>contaminated</u> by mold, he examined it more closely. The bacteria near the mold ⓒ<u>had killed</u>, and this unusual condition attracted his attention. His response shows that an observation, even one made by chance, can lead to a discovery when it is carefully ⓓ<u>examined</u>. What matters is not simply encountering something unexpected but ⓔ<u>being</u> prepared to investigate it.\n\n*contaminate: 오염시키다",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ의 bacteria는 죽임을 당한 대상이므로 능동형 had killed를 수동형 had been killed로 고쳐야 한다. ⓑ의 contaminated는 a dish를 수식하는 과거분사이다. ⓔ의 being은 not simply A but B 구조에서 encountering과 병렬을 이룬다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-e33de5a36d",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nThe freedom to choose can become a burden when every alternative demands attention. What shoppers initially welcome is the opportunity ⓐ<u>to find</u> something that suits them. Once they begin comparing products, however, they may face a different problem: there are more possibilities than they can comfortably consider. It is the expectations created by the many alternatives, rather than the act of choosing itself, that ⓑ<u>makes</u> the final decision difficult to accept. Shoppers may keep thinking about what they could have selected, ⓒ<u>even if</u> the product they bought meets their needs. Thus, offering fewer choices may help them feel more satisfied with ⓓ<u>what</u> they select and more willing ⓔ<u>to make</u> a purchase.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ는 It is ... that 강조구문에서 강조된 복수 주어 the expectations에 호응해야 하므로 makes를 make로 고쳐야 한다. created by the many alternatives는 expectations를 수식하고, rather than 이하의 단수 명사구는 동사의 수를 결정하지 않는다. ⓓ의 what은 전치사 with의 목적어인 명사절을 이끌며, ⓔ는 앞의 more satisfied와 병렬로 연결된 more willing에 이어지는 to부정사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-a8f6493b5b",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 밑줄 친 ⓐ~ⓔ 가운데 어법상 틀린 부분을 고르시오.\n\nCorals depend on tiny algae living inside them, but warmer water can cause them ⓐ<u>to lose</u> these partners. The resulting bleaching threatens reefs and the many species ⓑ<u>whose</u> home they provide. Researchers are therefore exploring ways of helping damaged reefs recover. One approach that scientists studying damaged reefs believe ⓒ<u>offers</u> a chance of recovery is to grow young corals in underwater nurseries. The next step is to move the corals to damaged reefs and, once suitable locations have been selected, ⓓ<u>attaching</u> them there. However carefully these efforts are carried out, lasting success also depends on whether the causes of ocean warming ⓔ<u>are addressed</u>.\n\n*algae: 조류(藻類)  *bleaching: 백화 현상  *nursery: 양식장",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓓ는 to move와 and로 병렬 연결되므로 attaching을 attach로 고쳐야 하며, 접속사 뒤의 once절이 두 동사 사이에 삽입되어 있다. ⓒ의 offers는 관계대명사 that의 선행사인 One approach에 호응하므로 단수형이 적절하고, scientists studying damaged reefs believe는 삽입된 절이다. ⓑ의 whose는 species와 home의 소유 관계를 나타내며, ⓔ는 복수 주어 the causes에 호응하는 수동태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-edd7f77f0a",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵게 표시된 표현이 문맥에서 뜻하는 것으로 가장 적절한 것을 고르시오.\n\nImagine that you need a way to organize tasks for a group project. You decide to design your own system, spending several evenings choosing categories and arranging boxes. Before you finish, a teammate shows you a simple system that already does everything your group needs. You could use it immediately and spend the remaining time on the project itself. Creating your own system might be enjoyable, but it would not solve any additional problem. In this situation, you would be **building a second bridge where a safe crossing already exists**.",
+"choices": [
+"improving an existing method to meet a new need",
+"checking whether a familiar method is still reliable",
+"spending unnecessary effort making a solution that is already available",
+"preparing an alternative in case the current solution fails",
+"making a difficult task easier by sharing it with others"
+],
+"answer": "③",
+"solution": "이미 있는 체계가 모둠에 필요한 기능을 모두 제공하므로 새 체계를 만들어도 추가로 해결되는 문제는 없다. 따라서 안전한 통로가 있는데 다리를 또 짓는다는 표현은 이미 이용할 수 있는 해결책을 불필요하게 다시 만드는 것을 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-2708d42c3e",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 굵게 표시된 부분에 담긴 의미로 가장 적절한 것을 고르시오.\n\nSuppose a small business receives all its orders from a single customer. Working with that customer may be easy, but what happens if the customer stops buying? The business could suddenly have no income. Serving several customers requires more communication, yet losing one would not mean losing every order. A similar idea applies when you prepare for your future. Developing skills that can be used in different kinds of work gives you more choices if one opportunity disappears. It is safer when **your future has more than one leg to stand on**.",
+"choices": [
+"여러 대안을 마련하여 한 대상에 대한 의존에서 오는 위험을 줄이다",
+"가장 잘하는 분야에 모든 노력을 집중하여 경쟁력을 높이다",
+"주변 사람들에게 중요한 결정을 맡겨 부담을 나누다",
+"실패할 가능성이 있는 기회는 모두 피하다",
+"여러 일을 동시에 시작하여 가장 빠른 성과를 얻다"
+],
+"answer": "①",
+"solution": "글은 거래처 하나를 잃거나 특정 기회가 사라져도 다른 선택지가 남도록 준비하라고 말한다. 따라서 미래를 받치는 다리가 여럿이라는 것은 여러 대안을 확보해 한곳에 의존하는 위험을 줄인다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-4ffacda458",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 굵게 표시된 문장이 함축하는 의미로 가장 적절한 것을 고르시오.\n\nSuppose a team is preparing to offer a new service. During a review meeting, members discuss the title of the announcement and the order of its paragraphs. Yet the latest estimate shows that the team cannot afford to operate the service. Everyone has read the estimate. Each member hopes someone else will mention it, since doing so might upset the people who developed the plan. When the meeting ends, the announcement looks better, but the service is no closer to becoming possible. The team has carefully **painted the door while leaving the entrance blocked**.",
+"choices": [
+"The team has announced its service before checking customers' needs.",
+"The team has made a difficult problem easier by dividing it into small tasks.",
+"The team has delayed minor improvements to solve its financial problem first.",
+"The team has improved minor details while avoiding a known obstacle to progress.",
+"The team has mistaken disagreement about wording for opposition to the whole plan."
+],
+"answer": "④",
+"solution": "팀원들은 비용 부족이 서비스 운영을 막고 있음을 모두 알면서도 불편한 논의를 피하고 안내문의 세부 사항만 수정한다. 문을 칠하면서 입구를 막힌 채 두었다는 것은 핵심 장애물을 외면한 채 사소한 부분만 개선했다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-759f6b2fb0",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "문맥을 고려할 때, 다음 글의 굵게 표시된 부분을 가장 적절하게 해석한 것을 고르시오.\n\nA plan allows a team to coordinate its work because everyone can act on the same expectations. But agreement about a plan does not guarantee that those expectations remain accurate. Suppose a team discovers that a task requires much more time than its schedule allows. One response is to record only the stages that fit the original timetable and treat the remaining work as an exception. The reports may then suggest that the project is on schedule, although the unfinished work is growing. The schedule has stopped helping the team understand its progress and has become something the reports must protect. At that point, the team is **trimming the world to fit the page**. A useful plan should be revised when relevant evidence challenges its assumptions.",
+"choices": [
+"reducing unnecessary work so that the original schedule can be followed",
+"selectively representing actual progress so that it appears to match the plan",
+"simplifying a report while preserving the evidence needed to revise the plan",
+"changing the schedule to reflect the amount of work that remains",
+"setting aside the schedule because planning cannot help a team coordinate its work"
+],
+"answer": "②",
+"solution": "팀은 실제 진행 상황에 맞춰 일정을 고치는 대신 기존 일정에 들어맞는 단계만 기록하여 계획이 지켜지는 것처럼 보이게 한다. 따라서 해당 표현은 현실을 선택적으로 나타내어 계획과 일치하는 듯 보이도록 한다는 뜻이다. ③은 필요한 증거를 보존한다고 하지만, 글에서는 남은 작업을 예외로 처리하여 실제 상황을 제대로 드러내지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-804b54fe6f",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 굵게 표시된 표현이 나타내는 태도로 가장 적절한 것을 고르시오.\n\nPreparing for a career involves choosing what to learn before you know exactly how you will use it. A clear goal can guide that choice, but it should not prevent you from noticing changes in the work itself. Suppose the tasks you hoped to perform are becoming less common, while another kind of work increasingly requires abilities you have already developed. Studying longer for the original role may demonstrate determination without improving your prospects. Exploring the other role, however, need not mean that your earlier effort was wasted. It may allow you to use that effort in a different way. The sensible response is to **keep the compass in your hand, but loosen your grip on the route**. Your interests can still provide direction even when the steps you take must change.",
+"choices": [
+"waiting until changes become predictable before choosing any career direction",
+"following the original career route while increasing the time spent preparing",
+"choosing whichever occupation offers the greatest immediate reward",
+"abandoning previously developed abilities whenever a new role becomes available",
+"retaining a guiding interest while adjusting the career path to changing opportunities"
+],
+"answer": "⑤",
+"solution": "나침반은 진로의 방향을 잡아 주는 관심사를, 경로는 그 방향으로 나아가기 위한 구체적인 직업 선택과 준비 과정을 나타낸다. 따라서 관심사는 유지하되 변화하는 기회에 맞춰 진로의 경로를 조정하라는 의미이다. 기존 노력을 다른 역할에 활용할 수 있다고 했으므로 이전에 쌓은 능력을 버린다는 ④는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-bc463637c3",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 논지를 바탕으로 굵게 표시된 부분의 함축적 의미를 추론한 것으로 가장 적절한 것을 고르시오.\n\nExpertise affects more than the solutions people recommend; it can influence what they accept as an explanation. Consider a specialist in incentive design who is asked why members of a team are not sharing information. The specialist may begin by asking what rewards they receive for sharing it. That is a reasonable question, but it is not the only reasonable one: members may be uncertain about what others need or may not trust one another. If these possibilities receive attention only after they have been translated into questions about rewards, the specialist's method is already setting the limits of the inquiry. Even an invitation to discuss several possible explanations may change little if each explanation must first pass the same test. In such a discussion, **the answer has quietly written the entrance requirements for the question**. The problem is not that the specialist's method is useless, but that its usefulness has become a condition for recognizing the problem.",
+"choices": [
+"전문가는 여러 설명을 비교한 뒤 가장 증거가 풍부한 해결책을 선택한다.",
+"문제의 범위를 미리 제한하면 서로 다른 전문 방법을 공정하게 비교할 수 있다.",
+"선호하는 해결 방식에 들어맞는 설명만 검토 대상으로 인정하면서 문제를 규정한다.",
+"해결책에 대한 합의를 먼저 이루면 문제의 원인을 둘러싼 의견 차이가 해소된다.",
+"전문 방법의 한계를 발견한 뒤에도 실제 적용에 필요한 정보를 충분히 수집하지 않는다."
+],
+"answer": "③",
+"solution": "전문가는 보상이라는 틀로 바꿔 설명할 수 있는 가능성만 검토하면서 자신에게 익숙한 방법이 문제 탐색의 범위까지 정하게 한다. 따라서 해당 표현은 선호하는 해결 방식에 맞는 설명만 받아들이며 문제 자체를 규정한다는 뜻이다. 핵심은 여러 설명을 검토한 후 해결책을 선택하는 것이 아니라, 검토할 설명을 고르는 단계부터 특정 해결 방식이 작용한다는 데 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-a8ae4f5cf1",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 굵게 표시된 문장이 의미하는 바로 가장 적절한 것을 고르시오.\n\nHaving several options can create a sense of security, but the number of options is not always a good measure of protection. Imagine preparing for three different jobs. Their titles may differ, yet all three may depend on the continued use of the same method. If that method is no longer needed, the apparent alternatives could disappear together. The same reasoning applies to plans for an uncertain future. Two plans that share a central assumption do not necessarily protect you from each other's failure. This does not mean that every option must be entirely unrelated to the others. Rather, you should examine what would make each one fail and whether those causes overlap. Otherwise, **you have multiplied the doors without adding another way out**. Meaningful preparation concerns not only how many choices you can list, but also whether any remain available when a shared assumption proves false.",
+"choices": [
+"Keeping several alternatives has prevented you from preparing thoroughly enough for any one of them.",
+"Your apparent alternatives remain exposed to the same underlying cause of failure.",
+"Your options provide protection only if they share no skills or requirements whatsoever.",
+"You have replaced a dependable plan with several options whose individual outcomes are less certain.",
+"Increasing the number of alternatives has made it harder to identify the option most likely to succeed."
+],
+"answer": "②",
+"solution": "서로 다른 선택지라도 동일한 방법이나 핵심 가정에 의존하면 그 조건이 무너질 때 함께 사라질 수 있다. 따라서 문만 늘리고 다른 탈출로는 마련하지 못했다는 것은 겉으로는 대안이 여럿이지만 동일한 실패 원인에 여전히 노출되어 있다는 의미이다. 글은 모든 선택지가 완전히 무관할 필요는 없다고 명시하므로, 공통 요소가 전혀 없어야 한다는 ③은 지나친 해석이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-cecf919771",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 의미를 가장 정확하게 나타낸 우리말을 고르시오.\n\nWhat we need is not more time but a better study plan.",
+"choices": [
+"우리에게 더 많은 시간이 있어야 더 나은 학습 계획을 세울 수 있다.",
+"우리에게 필요한 것은 더 많은 시간이 아니라 더 나은 학습 계획이다.",
+"우리에게 필요한 것은 더 나은 학습 계획이 아니라 더 많은 시간이다.",
+"우리에게는 더 많은 시간도 더 나은 학습 계획도 필요하지 않다.",
+"우리에게 더 나은 학습 계획이 필요한 이유는 시간이 더 많기 때문이다."
+],
+"answer": "②",
+"solution": "What we need는 ‘우리에게 필요한 것’이라는 뜻으로 문장의 주어이다. not A but B는 ‘A가 아니라 B’라는 뜻이므로, 더 많은 시간이 아니라 더 나은 학습 계획이 필요하다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0ec5adbee3",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에 담긴 뜻으로 가장 알맞은 것을 고르시오.\n\nNot every book we read helps us understand ourselves.",
+"choices": [
+"우리가 읽는 책은 어느 것도 우리가 자신을 이해하는 데 도움이 되지 않는다.",
+"우리는 자신을 이해하는 데 도움이 되는 책만 읽는다.",
+"우리가 자신을 이해하려면 모든 책을 읽어야 한다.",
+"우리가 읽는 책이 모두 우리가 자신을 이해하는 데 도움이 되는 것은 아니다.",
+"우리가 읽지 않은 책은 모두 우리가 자신을 이해하는 데 도움이 된다."
+],
+"answer": "④",
+"solution": "Not every는 ‘모든 것이 다 ~인 것은 아니다’라는 부분 부정을 나타낸다. we read는 book을 수식하므로, 우리가 읽는 책 전부가 자신을 이해하는 데 도움이 되는 것은 아니라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-14b318eb11",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 시간적 선후 관계와 강조의 의미를 바르게 옮긴 것을 고르시오.\n\nOnly after she had read the final page did she understand why the book was so popular.",
+"choices": [
+"그녀는 마지막 페이지를 읽고 나서야 그 책이 왜 그렇게 인기 있는지 이해했다.",
+"그녀는 그 책이 왜 그렇게 인기 있는지 이해한 뒤에야 마지막 페이지를 읽었다.",
+"그녀는 마지막 페이지를 읽기도 전에 그 책이 왜 그렇게 인기 있는지 이해했다.",
+"그녀가 마지막 페이지를 읽은 유일한 이유는 그 책이 매우 인기 있었기 때문이다.",
+"그녀는 마지막 페이지를 읽었지만 그 책이 왜 그렇게 인기 있는지 이해하지 못했다."
+],
+"answer": "①",
+"solution": "Only after ~는 ‘~하고 나서야’라는 뜻이며, 문장 앞에 놓이면 주절에서 조동사와 주어가 도치된다. 마지막 페이지를 읽은 일이 먼저이고 책이 인기 있는 이유를 이해한 일이 나중이므로 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6c206d17c1",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 다섯 문장의 해석 중 수정이 필요한 것을 고르시오.",
+"choices": [
+"It is no use repeating the experiment without changing the plan. → 계획을 바꾸지 않고 실험을 반복해 봐야 소용없다.",
+"She cannot have finished the book in such a short time. → 그녀가 그렇게 짧은 시간에 그 책을 다 읽었을 리가 없다.",
+"You should have checked the results more carefully. → 너는 결과를 더 주의 깊게 확인했어야 했다.",
+"Hardly had the scientist begun to speak when the students stopped talking. → 과학자가 말을 시작하자마자 학생들은 이야기를 멈췄다.",
+"His explanation was nothing but an excuse for wasting time. → 그의 설명은 시간을 낭비한 것에 대한 변명이 결코 아니었다."
+],
+"answer": "⑤",
+"solution": "nothing but은 ‘오직 ~’, ‘~에 불과한’이라는 뜻이다. 따라서 ⑤는 ‘그의 설명은 시간을 낭비한 것에 대한 변명에 불과했다’로 옮겨야 한다. 나머지 선지는 무용함, 과거 사실에 대한 강한 부정적 추측, 과거의 당위, 두 사건의 연속을 각각 바르게 해석했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-738ba6fbeb",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 가정과 결과를 정확히 반영한 해석을 고르시오.\n\nHad it not been for your advice, I would have wasted much more time on the problem.",
+"choices": [
+"네 충고가 없다면 나는 그 문제에 훨씬 더 많은 시간을 낭비할 것이다.",
+"네 충고가 있었더라면 나는 그 문제에 훨씬 더 많은 시간을 낭비했을 것이다.",
+"네 충고가 없었더라면 나는 그 문제에 훨씬 더 많은 시간을 낭비했을 것이다.",
+"나는 그 문제에 훨씬 더 많은 시간을 낭비한 뒤에 네 충고를 구했어야 했다.",
+"네 충고가 없었는데도 나는 그 문제에 더 많은 시간을 낭비하지 않았다."
+],
+"answer": "③",
+"solution": "Had it not been for는 If it had not been for에서 if가 생략되어 도치된 표현으로, ‘~이 없었더라면’이라는 과거의 반대 가정을 나타낸다. would have wasted는 그 가정에 따른 과거의 결과를 나타내므로 ‘낭비했을 것이다’로 옮긴다. 현재의 가정으로 해석하거나 충고의 유무를 뒤집어 해석해서는 안 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b805ba4a31",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 영어 문장의 의미를 정확히 전달한 해석을 모두 고른 것을 고르시오.\n\n<보기>\nㄱ. Not all the students whose study plans had changed wasted their time.\n→ 학습 계획이 바뀌었던 학생들은 모두 시간을 낭비하지 않았다.\nㄴ. Little did she realize how much time she had wasted until she checked her study record.\n→ 그녀는 학습 기록을 확인하고 나서야 자신이 얼마나 많은 시간을 낭비했는지 깨달았다.\nㄷ. So difficult was the problem that even the students who had studied hard could not solve it.\n→ 그 문제가 너무 어려워서 열심히 공부했던 학생들조차 풀 수 없었다.\nㄹ. There is no telling whether the scientist's new theory will be accepted.\n→ 그 과학자의 새로운 이론이 받아들여질지 알 수 없다.\nㅁ. What matters is not whether the experiment failed but what we learned from it.\n→ 중요한 것은 우리가 실험에서 무엇을 배웠는지가 아니라 실험이 실패했는지 여부이다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ의 Not all은 부분 부정이므로 ‘학습 계획이 바뀌었던 학생들이 모두 시간을 낭비한 것은 아니다’로 해석해야 한다. ㄴ은 부정어 Little에 따른 도치와 until의 의미를, ㄷ은 so ~ that의 결과 의미를 바르게 옮겼다. ㄹ의 There is no telling은 ‘알 수 없다’라는 뜻이므로 올바르다. ㅁ은 not A but B의 관계를 거꾸로 옮겼으므로, 바르게 해석한 것은 ㄴ, ㄷ, ㄹ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7d68304cfe",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 영어 문장과 우리말 풀이를 검토할 때, 바르게 연결된 항목만 빠짐없이 묶은 것을 고르시오.\n\n<보기>\nㄱ. Had the students followed the advice, they would not have spent so much time on the problem.\n→ 학생들이 그 충고를 따랐더라면 그 문제에 그렇게 많은 시간을 쓰지는 않았을 것이다.\nㄴ. Only after the theory had been rejected did the scientist notice the mistake he should have corrected earlier.\n→ 그 과학자는 더 일찍 바로잡았어야 할 실수를 알아차린 뒤에야 자신의 이론이 거부당했다.\nㄷ. The scientist, whose explanation had seemed clear at first, cannot have expected so many questions.\n→ 처음에는 자신의 설명이 명확해 보였던 그 과학자는 그렇게 많은 질문을 예상했음이 틀림없다.\nㄹ. Were it not for the notes she took while reading, she would find it harder to explain the book.\n→ 그녀가 책을 읽으면서 적어 둔 메모가 없다면, 그녀는 그 책을 설명하는 것을 더 어렵게 여길 것이다.\nㅁ. Hardly had he realized that his plan was nothing but a waste of time when he began to change it.\n→ 그는 자신의 계획이 시간 낭비에 불과하다는 것을 깨닫자마자 그 계획을 바꾸기 시작했다.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "④",
+"solution": "ㄱ은 if가 생략된 가정법 과거완료로, 충고를 따르지 않았던 과거와 반대되는 상황을 바르게 해석했다. ㄴ은 이론이 거부당한 뒤에야 실수를 알아차렸다는 뜻이므로 사건의 순서가 뒤바뀌었고, ㄷ의 cannot have expected는 ‘예상했을 리가 없다’라는 뜻이다. ㄹ은 과거에 작성한 메모가 현재 없다고 가정하는 문장으로 올바르게 해석했다. ㅁ은 Hardly ~ when의 ‘~하자마자’와 nothing but의 ‘~에 불과한’을 모두 바르게 옮겼으므로 정답은 ㄱ, ㄹ, ㅁ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
 }
 ]

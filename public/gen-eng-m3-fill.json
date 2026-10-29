@@ -588,5 +588,639 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m0s5t1",
 "custom": true
+},
+{
+"id": "fill-640d85e34f",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nA plastic cup may be useful for only a short time, but it remains in the environment for many years. Some people think that throwing it into a recycling bin solves the problem. However, recycling also requires energy, and not every cup is recycled successfully. The better choice is to avoid creating the waste in the first place. When you buy a drink, ask for it in your reusable cup. Using the same cup many times is a simple way to protect the environment.",
+"choices": [
+"플라스틱 컵은 반드시 깨끗이 씻은 뒤 버려야 한다.",
+"음료를 살 때 일회용 컵 대신 개인 컵을 사용해야 한다.",
+"재활용에 필요한 에너지의 양을 줄여야 한다.",
+"차가운 음료는 플라스틱 컵에 담아야 한다.",
+"환경을 보호하려면 음료를 마시지 말아야 한다."
+],
+"answer": "②",
+"solution": "필자는 재활용만으로는 플라스틱 컵 문제를 완전히 해결하기 어렵다고 말한다. 따라서 처음부터 쓰레기가 생기지 않도록 음료를 개인 컵에 받아야 한다는 ②가 필자의 주장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-63c540c6d2",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nSome students cut their sleeping time when they have a lot to study. They may read more pages that night, but the next morning they often cannot remember the information clearly. Sleep gives the brain time to organize what it has learned. It also helps students pay attention and avoid simple mistakes. Before an important test, close your books at a reasonable time and give your brain the rest it needs.",
+"choices": [
+"시험 전에는 학습량보다 충분한 수면을 우선해야 한다.",
+"아침에 공부한 내용은 저녁에 모두 다시 읽어야 한다.",
+"어려운 시험을 앞두고는 평소보다 일찍 일어나야 한다.",
+"공부할 때는 쉬운 내용부터 암기해야 한다.",
+"시험 중에는 간단한 문제도 여러 번 풀어야 한다."
+],
+"answer": "①",
+"solution": "글은 수면이 학습 내용을 정리하고 실수를 줄이는 데 도움이 된다고 설명한다. 그러므로 시험 전에는 공부를 무리하게 이어 가기보다 충분히 자야 한다는 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-d9621beae0",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nIt is often faster for parents to finish a task themselves than to wait for their children to do it. For example, a parent can fold clothes more neatly or prepare a school bag more quickly. Yet speed and perfection should not be the main goals. When children take care of small tasks, they learn to plan, solve problems, and accept responsibility. Their first attempts may be slow or imperfect, but parents should be patient and let them keep trying.",
+"choices": [
+"부모는 자녀가 집안일을 빠르게 끝내도록 도와야 한다.",
+"자녀에게는 잘할 수 있는 일만 맡겨야 한다.",
+"부모는 결과가 서툴더라도 자녀가 스스로 일을 해 보게 해야 한다.",
+"가족 구성원은 모든 집안일을 똑같이 나누어야 한다.",
+"자녀의 학교 준비물은 부모가 미리 확인해야 한다."
+],
+"answer": "③",
+"solution": "필자는 속도나 완벽함보다 자녀가 직접 과제를 수행하며 책임감과 문제 해결력을 기르는 것이 중요하다고 본다. 따라서 결과가 미숙해도 스스로 계속 해 보게 해야 한다는 ③이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-e27cef46da",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nOnline posts can make an ordinary day seem disappointing. We see a friend's exciting trip or beautiful meal, but we do not see the long wait, the bad weather, or the quiet hours before and after the picture. This does not mean that people are trying to lie. Sharing one pleasant moment is natural. The problem begins when we mistake that selected moment for the person's whole life and use it as a standard for judging our own. We should look beyond the screen and value our lives without using such incomplete comparisons.",
+"choices": [
+"온라인에 사진을 올릴 때 불편했던 순간도 함께 공개해야 한다.",
+"다른 사람의 게시물을 거짓으로 판단하지 말아야 한다.",
+"평범한 일상보다 특별한 경험을 더 소중히 여겨야 한다.",
+"온라인에 선택적으로 제시된 모습을 삶 전체로 여기며 자신과 비교하지 말아야 한다.",
+"친구의 행복한 게시물에는 긍정적인 반응을 보여야 한다."
+],
+"answer": "④",
+"solution": "필자는 온라인 게시물이 거짓이라고 비난하는 것이 아니라, 일부 장면만 보여 준다는 점을 강조한다. 그런 제한된 모습을 타인의 삶 전체로 생각해 자신의 일상과 비교하지 말아야 한다는 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-db5ecba5e2",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nMany people reach for their phones as soon as nothing demands their attention. This habit feels harmless because each check lasts only a minute or two. Still, filling every quiet moment with new information leaves little room for the mind to follow its own thoughts. Unexpected connections often appear when attention is not directed at a screen or a task. Therefore, we do not need to remove phones from our lives, but we should sometimes resist the urge to use them and allow our minds to be unoccupied.",
+"choices": [
+"스마트폰으로 새로운 정보를 자주 확인해야 한다.",
+"집중력을 높이려면 한 가지 과제만 오래 수행해야 한다.",
+"창의적인 생각은 계획된 학습을 통해서만 얻을 수 있다.",
+"스마트폰을 생활에서 완전히 없애야 한다.",
+"생각이 자유롭게 이어지도록 일부 빈 시간을 스마트폰 없이 보내야 한다."
+],
+"answer": "⑤",
+"solution": "글은 스마트폰 자체를 없애자고 주장하지 않는다. 모든 빈 시간을 화면으로 채우지 않고 마음이 자유롭게 움직일 여유를 주어야 한다는 것이 핵심이므로 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-eb1fd34b19",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nTelling children that they are talented may sound like strong encouragement. However, such praise can quietly turn success into a test of identity: a difficult task is no longer just a challenge but a chance to discover that they may not be as talented as others think. As a result, they may protect that image by choosing easy work. Praise for effort is useful, but even that should not be given without thought. Adults should point to effective actions—trying a new method, correcting an error, or continuing after failure—so that children understand what they can do when they face the next challenge.",
+"choices": [
+"아이들이 자신감을 갖도록 타고난 능력을 반복해서 칭찬해야 한다.",
+"실패한 아이에게는 결과와 관계없이 노력했다는 말만 해 주어야 한다.",
+"칭찬할 때는 능력이나 막연한 노력보다 발전에 도움이 된 구체적인 행동에 주목해야 한다.",
+"아이의 자아상을 보호하려면 어려운 과제를 피하게 해야 한다.",
+"효과적인 학습 방법은 아이가 실패하기 전에 어른이 정해 주어야 한다."
+],
+"answer": "③",
+"solution": "필자는 능력 칭찬이 도전 회피를 낳을 수 있으며, 노력 칭찬도 막연해서는 안 된다고 말한다. 새로운 방법의 시도나 오류 수정처럼 성공에 기여한 구체적인 행동을 짚어 주어야 한다는 ③이 글의 주장을 가장 정확히 담고 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-53d79989e0",
+"typeId": "eng-m3-u0m0s2t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nA tired student may believe that one more hour with a textbook must lead to better results. The number of study hours, however, is not the same as the amount of learning. Without enough sleep, attention becomes weaker, careless errors increase, and recently learned information is not stored effectively. This does not mean that sleep can replace preparation; going to bed early after doing no work will not produce success. The point is that students should treat sleep as part of an effective study plan, not as time stolen from it.",
+"choices": [
+"학습 시간의 길이가 시험 결과를 결정하므로 가능한 한 오래 공부해야 한다.",
+"시험 준비가 부족한 학생은 수면으로 학습을 대신해야 한다.",
+"실수를 줄이려면 새로운 내용을 배우지 말고 복습만 해야 한다.",
+"수면을 공부와 경쟁하는 시간이 아니라 효과적인 학습 계획의 일부로 보아야 한다.",
+"피곤하더라도 계획한 학습량을 모두 마친 뒤 잠자리에 들어야 한다."
+],
+"answer": "④",
+"solution": "글은 충분한 수면이 필요하다고 하면서도 수면이 공부 자체를 대신할 수는 없다고 선을 긋는다. 핵심은 공부와 수면 중 하나만 선택하라는 것이 아니라, 수면을 효과적인 학습 계획에 포함하라는 것이므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-7cf7377936",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThis is the book that my brother gave me last month.",
+"choices": [
+"이것은 내가 지난달에 형에게 준 책이다.",
+"이것은 내 형이 지난달에 나에게 준 책이다.",
+"이 책은 지난달에 내 형이 산 것이다.",
+"내 형은 지난달에 이 책을 나에게 빌렸다.",
+"이것은 내가 지난달에 형과 함께 읽은 책이다."
+],
+"answer": "②",
+"solution": "that my brother gave me last month는 앞의 the book을 꾸미며 ‘내 형이 지난달에 나에게 준’이라는 뜻이다. 따라서 문장 전체의 올바른 해석은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e012537c5",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nMina has never ridden a horse before.",
+"choices": [
+"미나는 전에 말을 자주 탔다.",
+"미나는 전에 말을 타려고 한 적이 있다.",
+"미나는 전에 말을 탄 적이 한 번도 없다.",
+"미나는 말을 타기 전에는 긴장하지 않았다.",
+"미나는 앞으로 다시는 말을 타지 않을 것이다."
+],
+"answer": "③",
+"solution": "「have never＋과거분사」는 ‘지금까지 한 번도 ~한 적이 없다’라는 경험의 부정을 나타낸다. 따라서 ③이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f8624fd4a1",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe woman talking with our teacher is the scientist invited to our school.",
+"choices": [
+"우리 선생님과 이야기하고 있는 여성은 우리 학교에 초대된 과학자이다.",
+"우리 선생님은 그 여성에게 과학자를 학교로 초대해 달라고 말했다.",
+"우리 학교에 초대된 여성은 과학자와 우리 선생님에 관해 이야기하고 있다.",
+"과학자는 우리 학교에 초대된 선생님과 이야기하고 있는 여성이다.",
+"우리 선생님과 과학자는 그 여성을 학교로 초대하여 이야기를 나누었다."
+],
+"answer": "①",
+"solution": "talking with our teacher는 The woman을 꾸미는 현재분사구로 ‘우리 선생님과 이야기하고 있는’이라는 뜻이다. invited to our school은 the scientist를 꾸미는 과거분사구이므로 ‘우리 학교에 초대된 과학자’로 해석한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cda3401b21",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 영어 문장을 우리말로 옮긴 것이 바르지 않은 것은?",
+"choices": [
+"She has studied French for three years. → 그녀는 3년 전에 프랑스어를 공부했다.",
+"The students waiting in the hallway are in my class. → 복도에서 기다리고 있는 학생들은 우리 반 학생들이다.",
+"I wonder why he left the party early. → 나는 그가 왜 파티에서 일찍 떠났는지 궁금하다.",
+"If it rains tomorrow, we will stay home. → 내일 비가 오면 우리는 집에 있을 것이다.",
+"The cake made by my aunt was eaten by the children. → 이모가 만든 케이크는 아이들이 먹었다."
+],
+"answer": "①",
+"solution": "「has studied＋for three years」는 과거에 시작한 공부가 현재까지 3년 동안 이어졌다는 뜻이다. ①의 해석은 이를 단순히 3년 전의 일로 표현했으므로 바르지 않다. 나머지 문장들의 해석은 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-645d724311",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe bag found under the seat was returned to the woman waiting by the door.",
+"choices": [
+"좌석 밑에서 가방을 찾은 여성이 문 옆에서 그것을 돌려주었다.",
+"문 옆에서 발견된 가방은 좌석 밑에서 기다리던 여성에게 돌아갔다.",
+"좌석 밑에서 발견된 가방은 문 옆에서 기다리고 있던 여성에게 돌려졌다.",
+"문 옆에서 기다리던 여성은 좌석 밑에 가방을 돌려놓았다.",
+"좌석 밑에서 기다리던 여성에게 문 옆에서 발견한 가방을 돌려주었다."
+],
+"answer": "③",
+"solution": "found under the seat는 The bag을 꾸미므로 ‘좌석 밑에서 발견된 가방’이라는 뜻이다. waiting by the door는 the woman을 꾸며 ‘문 옆에서 기다리고 있던 여성’을 나타낸다. 또한 was returned는 수동태이므로 ‘돌려졌다’로 해석해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-928441e2e8",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 영어 문장이 뜻하는 바로 가장 알맞은 것은?\n\nIf he were not so busy, he would join us on the trip.",
+"choices": [
+"그는 지금 매우 바쁘기 때문에 우리와 여행을 함께하지 못한다.",
+"그는 바쁘지 않았지만 우리와 여행을 함께하지 않았다.",
+"그는 바쁜 일을 마치면 반드시 우리와 여행을 함께할 것이다.",
+"그가 여행에서 우리와 합류했을 때 우리는 매우 바빴다.",
+"그는 지금 바쁘지 않으므로 우리와 여행을 함께할 수 있다."
+],
+"answer": "①",
+"solution": "「If＋주어＋과거형, 주어＋would＋동사원형」은 현재 사실과 반대되는 상황을 가정하는 가정법 과거이다. 이 문장은 실제로는 그가 매우 바빠서 여행에 함께하지 못한다는 뜻을 함축한다. 따라서 ①이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fc4dc17d1e",
+"typeId": "eng-m3-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영어 문장을 우리말로 옮기시오.\n\nWhat surprised me most was the message sent by the student I helped last year.",
+"selfGrade": true,
+"answer": "나를 가장 놀라게 한 것은 내가 지난해에 도와준 학생이 보낸 메시지였다.",
+"solution": "What surprised me most는 ‘나를 가장 놀라게 한 것’이라는 뜻의 명사절로 문장의 주어이다. sent by the student는 the message를 꾸미고, I helped last year는 the student를 꾸민다. 각 수식 관계를 구분하여 전체 문장을 자연스럽게 해석해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-021f405936",
+"typeId": "eng-m3-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nDolphins show their intelligence in several ways. (A) They can understand many signals from their trainers. (B) They are able to remember the signals for a long time. (C) Some dolphins use sea sponges to protect their noses while searching for food. (D) Swimming in the ocean is a popular summer activity for many people. (E) Dolphins may even know that the image in a mirror is their own. These abilities are why scientists are interested in dolphin intelligence.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "글은 돌고래의 지능을 보여 주는 여러 능력에 관해 설명한다. 사람들의 여름철 해수욕을 언급한 (D)는 돌고래의 지능과 관계가 없으므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-01d8e75be8",
+"typeId": "eng-m3-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nA hanok has different features that make life comfortable throughout the year. (A) Its soil-and-wood walls help control the temperature inside. (B) During winter, ondol carries heat under the stone floor. (C) Pine trees remain green even when the weather becomes cold. (D) In summer, air can move through the wide wooden maru. (E) Hanji on the doors and windows allows air and soft sunlight to enter. In this way, a hanok works well in both hot and cold seasons.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "③",
+"solution": "이 글의 중심 내용은 한옥이 계절에 따라 실내를 쾌적하게 만드는 방식이다. 소나무가 겨울에도 푸르다는 (C)는 한옥의 구조나 기능과 무관하므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3a542821ba",
+"typeId": "eng-m3-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nMore trees can improve life in a city in several ways. (A) By taking in harmful gases and releasing oxygen, they make the air cleaner. (B) Their shade helps keep streets cooler on hot summer days. (C) Many people like to swim in the sea when they take a summer vacation. (D) Trees also provide places where birds can live. (E) Moreover, green spaces can help nearby residents feel calmer and less stressed. These benefits explain why trees are planted beside urban roads and in parks.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "③",
+"solution": "글은 도시의 나무가 공기, 기온, 새, 주민에게 주는 이점을 나열한다. 여름 휴가철의 해수욕을 다룬 (C)는 계절만 일부 관련될 뿐 도시 나무의 이점과는 관계가 없으므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0a4943b2f4",
+"typeId": "eng-m3-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nA honeybee's dance gives other bees useful information about a food source. (A) After discovering many flowers, the bee returns to its hive. (B) It then moves in a special pattern for the other bees. (C) Honey made from flowers can remain good for a remarkably long time. (D) The dance's direction tells the bees which way they should travel. (E) The length of the body-shaking movement shows how far away the flowers are. By understanding both parts of the dance, the bees can reach the food without wasting much time or energy.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "③",
+"solution": "글의 핵심은 꿀벌의 춤이 먹이의 방향과 거리를 전달하는 과정이다. (C)는 꽃과 꿀벌이라는 소재는 이어지지만, 꿀의 보관성에 관한 내용이어서 춤을 통한 정보 전달의 흐름에서 벗어난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d87c657ac1",
+"typeId": "eng-m3-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nVolunteer work can help a person understand and develop himself or herself. (A) Helping someone may cause the brain to release chemicals connected with happiness. (B) Volunteers can form friendships with people who have similar interests. (C) They may also practice useful abilities through activities such as teaching or cooking. (D) Some organizations sell cookies at community markets to collect money. (E) Experiences gained while volunteering can even provide clues about a suitable future career. Thus, volunteering can be a valuable opportunity for personal growth.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "이 글은 봉사 활동이 봉사자 자신의 행복, 인간관계, 능력 및 진로 탐색에 주는 도움을 설명한다. (D)는 봉사 단체의 모금 방법을 다루므로 개인적 성장이라는 중심 흐름과 관계가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1f43487e2a",
+"typeId": "eng-m3-u0m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nAnimals use different abilities to find food or manage energy when food is not easily available. (A) A bee that discovers flowers shares their location through a dance in the hive. (B) The direction and length of its movements provide information about where the flowers are. (C) Some dolphins cover their noses with sea sponges while looking for food. (D) Dolphins are also believed to recognize themselves when they look into a mirror. (E) A camel can use the fat in its hump as energy when finding food is difficult. Although these abilities are very different, each of them except one is directly connected with getting food or dealing with a lack of it.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "글은 여러 동물이 먹이를 찾거나 먹이가 부족할 때 에너지를 얻는 방법을 비교한다. (D)의 거울 속 자기 인식은 돌고래의 지능을 보여 주지만 먹이 획득이나 에너지 관리와는 직접적인 관계가 없으므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2fca02fd17",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 나머지 문장들의 내용을 포괄하는 주제문을 고르시오.\n\nⓐ Using your voice while reading can help you learn English in several ways. ⓑ As you say each word, you pay close attention to it. ⓒ Hearing the words also helps you keep them in your memory. ⓓ You can catch pronunciation mistakes by listening to yourself. ⓔ In addition, you become more familiar with the rhythm of English. Choose a short passage and read it aloud as part of your daily study.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "글은 소리 내어 읽기가 단어 기억, 발음 점검, 영어 리듬 익히기에 도움이 된다고 설명한다. 이 여러 장점을 모두 포괄하는 주제문은 ⓐ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-7284f8f4d0",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용을 가장 잘 정리하는 문장을 빈칸에 넣으시오.\n\nYour body has gone without food while you were asleep. A morning meal supplies the energy you need. With that energy, you can pay attention to your lessons and feel less tired. You may also be less likely to reach for unhealthy snacks before lunchtime. Your meal does not have to be difficult to prepare. Some fruit and milk can be a simple choice. ____________________",
+"choices": [
+"Preparing a morning meal always takes a long time.",
+"Students should eat snacks instead of a morning meal.",
+"Eating in the morning helps you get ready for the day.",
+"A large lunch is the best way to stay focused all morning.",
+"Fruit and milk are the only foods students need."
+],
+"answer": "③",
+"solution": "아침 식사가 에너지를 공급하고 수업 집중과 피로 감소에 도움이 된다는 내용이다. 따라서 아침 식사가 하루를 준비하는 데 도움이 된다는 ③이 글 전체를 정리한다. 과일과 우유는 간단한 식사의 예시일 뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-19ad8761e1",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ⓐ~ⓔ 중, 글쓴이의 경험에서 얻은 중심 생각을 나타내는 문장을 고르시오.\n\nⓐ On Saturday afternoon, I put my smartphone in a drawer for a while. ⓑ For the first few minutes, I wanted to take it out and check the screen. ⓒ Then I began talking with my brother and later enjoyed a book I had left unfinished. ⓓ That afternoon helped me realize that time away from a smartphone can make room for other enjoyable parts of life. ⓔ Now I leave my phone in the drawer during part of my free time. I use that time to read or talk with my family.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "스마트폰을 잠시 치운 뒤 가족과 대화하고 독서를 즐긴 경험을 통해 얻은 깨달음이 글의 핵심이다. ⓓ는 스마트폰에서 벗어나는 시간이 생활의 다른 즐거움을 누릴 여유를 준다는 중심 생각을 나타낸다. ⓒ와 ⓔ는 이를 뒷받침하는 경험과 행동이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-e0c3cbce41",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 첫머리에 들어갈 주제문으로 가장 적절한 것을 고르시오.\n\n____________________ A student may spend a whole afternoon practicing the piano and then leave it untouched for several days. Another student may practice for only a short time each day. The second schedule gives the student repeated chances to remember what was learned. It also makes practice less tiring and boring. A long free afternoon may seem useful, but waiting for one can keep you from practicing at all. A few minutes today can be the beginning of a better habit.",
+"choices": [
+"A long practice session is necessary before a daily habit can begin.",
+"Practicing regularly in small amounts is an effective way to develop a skill.",
+"The main purpose of practicing a skill is to avoid feeling bored.",
+"Students should decide how often to practice according to their talent.",
+"Practicing whenever a long afternoon is available is the best learning habit."
+],
+"answer": "②",
+"solution": "짧게라도 매일 연습하면 반복해서 기억할 기회를 얻고 피로와 지루함도 줄일 수 있다는 글이다. 따라서 규칙적인 소량의 연습이 기능 향상에 효과적이라는 ②가 주제문으로 적절하다. ③은 연습의 장점 하나를 연습의 주된 목적으로 바꾸어 제시한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-b9be8eb4dc",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ 중, 구체적인 설명들을 아우르는 주제문을 고르시오.\n\nⓐ A discussion about bees may begin with the fruit on our tables. ⓑ By moving pollen between flowers, bees help plants produce fruit and seeds. ⓒ Some farms even bring in beehives so that enough bees will visit their crops. ⓓ Beyond farms, wild plants helped by bees offer food and homes to other animals. ⓔ The importance of bees therefore reaches from the food we eat to the natural world around us. As bees lose flowers and suffer from pesticides, this connection gives us a reason to protect them.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "글은 벌이 농작물의 생산을 돕는 역할과 야생 식물 및 다른 동물의 생활을 돕는 역할을 함께 설명한다. ⓔ는 이 두 내용을 먹거리와 자연이라는 범위로 묶어 제시하므로 주제문이다. ⓑ는 중요한 설명이지만 다른 동물에 미치는 영향까지 포괄하지는 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-b304eb5361",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 논지 전개를 고려할 때, 빈칸에 들어갈 주제문으로 가장 적절한 것을 고르시오.\n\nA wrong answer can make a student wish that they had remained silent. It may seem safer to listen to others and speak only when there is no chance of being wrong. Yet a correct answer alone does not show us everything we need to learn. A mistake reveals a gap in our understanding, and noticing the correction can help us remember it. ____________________ The useful question after an error is not simply, “How can I hide this?” but “What can this teach me?”",
+"choices": [
+"Avoiding uncertain answers allows students to learn more from each lesson.",
+"Correct answers are less valuable than wrong answers in every learning situation.",
+"Mistakes should be treated as opportunities to identify and improve what we do not understand.",
+"The main value of mistakes is that they help students feel less ashamed in front of others.",
+"Students benefit from mistakes mainly by becoming more careful about when to speak."
+],
+"answer": "③",
+"solution": "글의 앞부분은 틀릴까 봐 침묵하려는 태도를 제시하지만, 이후에는 실수가 이해의 빈틈을 드러내고 교정 내용을 기억하게 돕는다고 설명한다. 따라서 실수를 부족한 이해를 확인하고 개선할 기회로 보자는 ③이 주제문이다. ④와 ⑤는 글의 중심을 학습에서 수치심이나 발언 시점의 문제로 옮겼고, ②는 정답과 오답의 가치를 지나치게 일반화했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-099f4241a1",
+"typeId": "eng-m3-u0m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓔ 중, 글 전체를 이끄는 주제문을 고르시오.\n\nⓐ A busy learner may measure a good practice session by how long it lasts. ⓑ A three-hour session can look more serious than a twelve-minute one, especially when the shorter session seems easy to fit into a day. ⓒ However, the value of a practice plan lies in whether it brings the learner back regularly, rather than simply in the length of one session. ⓓ Frequent repetition helps the learner remember earlier work, while shorter sessions are less likely to cause tiredness or boredom. ⓔ An impressive plan can therefore be difficult to carry out when it depends on finding a large amount of free time. Even a small amount of practice is useful when it becomes a daily habit.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "글은 한 번의 연습 시간이 길어 보이는 것보다 규칙적으로 연습하게 하는 계획이 중요하다고 주장한다. ⓒ가 이 판단 기준을 제시하고, ⓓ는 그 근거를, ⓔ는 긴 여유 시간에 의존하는 계획의 한계를 설명한다. ⓐ와 ⓑ는 글쓴이가 전환하려는 기존의 관점이므로 주제문이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-9c8a766003",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 도서 판매 안내문의 내용과 일치하는 것은?\n\nSchool Book Sale\n\n• Dates: October 14–16\n• Time: 9:00 a.m.–3:30 p.m.\n• Place: School Library, 3rd floor\n• All books are 20% off.\n• Payment: Cash only\n• Bring three old books and receive a free bookmark.\n• For more information, visit the library.",
+"choices": [
+"행사는 이틀 동안 열린다.",
+"행사 장소는 학교 도서관 2층이다.",
+"모든 책을 20% 할인된 가격으로 살 수 있다.",
+"책값은 현금이나 카드로 낼 수 있다.",
+"헌 책 한 권을 가져오면 무료 책갈피를 받는다."
+],
+"answer": "③",
+"solution": "안내문에 모든 책을 20% 할인한다고 제시되어 있으므로 ③이 일치한다. 행사는 3일 동안 도서관 3층에서 열리며, 현금으로만 결제할 수 있다. 무료 책갈피를 받으려면 헌 책 세 권을 가져와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-37c6579e16",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 수영 강좌 안내문을 읽고 잘못 이해한 것은?\n\nSwimming Class for Students\n\n• Period: August 10–28\n• Class days: Tuesdays and Thursdays\n• Time: 2:00 p.m.–3:20 p.m.\n• Place: Community Pool\n• Ages: 14–17\n• Fee: 55,000 won\n• Free swimming caps are provided.\n• Bring your swimsuit, towel, and goggles.\n• Sign up at the pool's front desk by August 6.",
+"choices": [
+"수업은 일주일에 두 번 진행된다.",
+"한 번의 수업은 80분 동안 진행된다.",
+"17세 학생도 수강할 수 있다.",
+"수영모는 무료로 제공된다.",
+"8월 10일까지 수영장 안내 데스크에서 신청하면 된다."
+],
+"answer": "⑤",
+"solution": "수강 신청 마감일은 수업 기간의 시작일인 8월 10일이 아니라 8월 6일이다. 수업은 화요일과 목요일에 오후 2시부터 3시 20분까지 진행된다. 참가 가능 연령은 14~17세이며 수영모는 무료로 제공된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-f8f13f4506",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 장기 자랑 안내문만으로 답할 수 없는 질문은?\n\nSchool Talent Show\n\n• Date: November 18\n• Time: 2:30 p.m.–4:30 p.m.\n• Place: School Auditorium\n• Participants: Students of this school only\n• Students may perform alone or in teams of up to four.\n• Each performance must be shorter than six minutes.\n• Apply at the student council room by November 4.\n• First prize: a 40,000 won gift card\n• Judges: two teachers and three student council members",
+"choices": [
+"Can a student perform without any teammates?",
+"How will the order of the performances be decided?",
+"Can a team perform for exactly six minutes?",
+"Where should students go to apply?",
+"How many students will serve as judges?"
+],
+"answer": "②",
+"solution": "공연 순서를 정하는 방법은 안내문에 제시되어 있지 않으므로 ②에는 답할 수 없다. 개인 참가가 가능하며, 공연은 6분 미만이어야 하므로 정확히 6분인 공연은 허용되지 않는다. 신청 장소는 학생회실이고 학생 심사위원은 세 명이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-ceb95cbd47",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 영어 캠프 일정표에 대한 설명으로 옳은 것은?\n\nEnglish Camp — Daily Schedule\n\n09:20–10:10  Speaking Practice — Room 102\n10:20–11:40  Project Class — Room 204\n11:40–12:30  Lunch — Cafeteria\n12:30–13:15  Movie English — Room 106\n13:25–14:35  Outdoor Activity — Playground\n14:45–15:15  Review & Diary Writing — Room 204\n\n• On rainy days, students play board games in Room 102 during the outdoor activity time.\n• On the last day, Project Class takes place in Room 106. All other classes follow the regular schedule.\n• Bring your own water bottle.",
+"choices": [
+"마지막 날 비가 오면 프로젝트 수업은 106호에서, 보드게임은 102호에서 한다.",
+"비가 오는 날에는 야외 활동 대신 하는 보드게임이 오후 2시 45분에 시작된다.",
+"점심시간은 영화 영어 수업 시간보다 10분 더 길다.",
+"마지막 날에는 프로젝트 수업과 복습 및 일기 쓰기를 모두 106호에서 한다.",
+"말하기 연습과 프로젝트 수업 사이의 쉬는 시간은 20분이다."
+],
+"answer": "①",
+"solution": "마지막 날에는 프로젝트 수업 장소만 106호로 바뀌고, 비가 오면 야외 활동 시간에 102호에서 보드게임을 하므로 ①이 옳다. 보드게임 시작 시각은 오후 1시 25분이며, 점심시간 50분은 영화 영어 수업 45분보다 5분 길다. 복습 및 일기 쓰기는 마지막 날에도 204호에서 진행하고, 말하기 연습 뒤 쉬는 시간은 10분이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-a144307901",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "객관식",
+"diff": 4,
+"body": "18세 학생이 42세 보호자, 12세 동생, 6세 동생과 일요일에 다음 과학관을 방문하려고 한다. 네 사람 모두 플라네타륨 쇼까지 관람할 때 내야 할 총금액은?\n\nScience Museum — Visitor Information\n\nAdmission\n• Adults (19 and over): 9,000 won\n• Teenagers (13–18): 6,000 won\n• Children (7–12): 4,000 won\n• Under 7: Free\n\nPlanetarium Show\n• 3,000 won per person\n• Free for children under 7\n\nDiscounts and Opening Days\n• On Sundays, children's admission tickets are half price. This discount is for ages 7–12 only.\n• The Sunday discount does not apply to show tickets.\n• Closed on Tuesdays.",
+"choices": [
+"23,000원",
+"24,500원",
+"28,000원",
+"26,000원",
+"29,000원"
+],
+"answer": "④",
+"solution": "18세는 청소년 요금 6,000원, 42세는 성인 요금 9,000원을 내며, 12세는 일요일 어린이 입장료 할인으로 2,000원을 낸다. 6세는 입장과 쇼 관람이 모두 무료이므로 입장료 합계는 17,000원이다. 쇼 요금은 나머지 세 사람에게 각각 3,000원씩 부과되므로 총금액은 26,000원이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-94819dd81d",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 동물 보호소 봉사 활동 안내문을 바탕으로 판단한 내용 중 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\nAnimal Shelter Volunteer Program\n\n• Every Sunday, 9:30 a.m.–1:00 p.m.\n• Volunteers must be aged 13 or older.\n• Volunteers under 15 must come with a parent. An older brother or sister cannot take the parent's place.\n• Tasks: walking dogs, cleaning cages, and feeding animals\n• A visit counts toward a certificate only if the volunteer stays for the full session.\n• Volunteers receive a certificate after four full sessions.\n• Apply by email by Thursday each week, even if you have joined before.\n• Bring your own lunch.\n\n<보기>\nㄱ. 14세 학생은 부모 대신 20세 언니와 함께 오면 참여할 수 있다.\nㄴ. 15세 학생은 부모 없이 참여할 수 있으며, 하루 전체 활동 시간은 3시간 30분이다.\nㄷ. 전체 시간 동안 참여한 날이 세 번이고 정오에 떠난 날이 한 번이면 확인서를 받을 수 있다.\nㄹ. 이전에 참여한 적이 있어도 다시 참여할 주의 목요일까지 이메일로 신청해야 한다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄹ"
+],
+"answer": "③",
+"solution": "15세는 부모 동반 대상인 15세 미만에 해당하지 않으며, 오전 9시 30분부터 오후 1시까지는 3시간 30분이므로 ㄴ은 옳다. 이전 참가자도 매주 목요일까지 신청해야 하므로 ㄹ도 옳다. 14세는 성인 형제자매가 아닌 부모와 동행해야 하므로 ㄱ은 틀리다. 정오에 떠난 날은 전체 시간을 채우지 못해 확인서 발급에 필요한 네 번에 포함되지 않으므로 ㄷ도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-ade169ee1b",
+"typeId": "eng-m3-u0m1s4t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 안내문에 따라 성인 2명, 청소년 3명, 어린이 3명, 7세 미만 아동 1명이 함께 과학관에 방문하여 모두 플라네타륨 쇼를 관람할 계획이었다. 여기에 16세 학생 1명이 추가되어 모두 함께 입장하고 쇼를 관람한다면, 일행 전체가 내는 총금액은 원래 계획보다 얼마 감소하는가? 숫자와 단위로 쓰시오.\n\nScience Museum — Group Visit Guide\n\nAdmission\n• Adults (19 and over): 9,000 won\n• Teenagers (13–18): 6,000 won\n• Children (7–12): 4,000 won\n• Under 7: Free\n\nGroup Discount\n• Groups of 10 or more receive 20% off all paid admission tickets.\n• Children under 7 count as group members, although their admission is free.\n• All group members must enter together.\n\nPlanetarium Show\n• 2,000 won per person; free for children under 7\n• No group discount on show tickets",
+"selfGrade": true,
+"answer": "2,800원",
+"solution": "원래 일행은 9명이므로 단체 할인이 없고, 입장료 48,000원과 8명의 쇼 요금 16,000원을 합해 64,000원을 낸다. 16세 학생이 추가되면 무료입장 아동을 포함하여 10명이 되므로 입장료 54,000원에 20% 할인이 적용되어 43,200원이 된다. 이때 쇼 요금은 9명의 18,000원이므로 총금액은 61,200원이다. 따라서 원래 계획보다 2,800원 감소한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s4t1",
+"custom": true
 }
 ]
