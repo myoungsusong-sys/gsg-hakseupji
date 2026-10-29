@@ -1,0 +1,2072 @@
+[
+{
+"id": "fill-f3995ad0b2",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "온도와 기체의 양이 일정할 때, 압력이 $1.5$ atm이고 부피가 $8$ L인 기체의 압력을 $4$ atm으로 높였다. 이때 기체의 부피는?",
+"choices": [
+"2 L",
+"3 L",
+"4 L",
+"6 L",
+"12 L"
+],
+"answer": "②",
+"solution": "온도와 기체의 양이 일정하므로 보일 법칙에 따라 $P_1V_1=P_2V_2$이다. 따라서 $1.5\\times8=4\\times V_2$이므로 $V_2=3$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-e8cb3384c9",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "압력과 기체의 양이 일정할 때, $-23\\,°C$에서 부피가 $5$ L인 기체를 $77\\,°C$까지 가열하였다. 이때 기체의 부피는?",
+"choices": [
+"3.5 L",
+"5 L",
+"6 L",
+"7 L",
+"10 L"
+],
+"answer": "④",
+"solution": "섭씨온도를 절대온도로 바꾸면 각각 $250$ K와 $350$ K이다. 샤를 법칙에 따라 $V_2=5\\times\\frac{350}{250}=7$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-9af278b100",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "온도와 압력이 일정할 때, 기체 $0.6$ mol의 부피가 $9$ L이다. 같은 조건에서 이 기체 $1.4$ mol의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "21 L",
+"solution": "온도와 압력이 일정하면 기체의 부피는 기체의 양에 비례한다. 따라서 $V_2=9\\times\\frac{1.4}{0.6}=21$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-66b993259b",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "온도가 일정한 실린더에 압력이 $2.4$ atm이고 부피가 $5$ L인 기체가 들어 있다. 피스톤을 눌러 부피를 $3$ L로 만들었을 때 기체의 압력은?",
+"choices": [
+"1.44 atm",
+"2.0 atm",
+"3.0 atm",
+"4.0 atm",
+"6.0 atm"
+],
+"answer": "④",
+"solution": "온도가 일정하므로 $P_1V_1=P_2V_2$를 적용한다. $2.4\\times5=P_2\\times3$이므로 $P_2=4.0$ atm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-223ee50558",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "주관식",
+"diff": 3,
+"body": "압력이 일정할 때, $17\\,°C$에서 부피가 $4.35$ L인 일정량의 기체를 $87\\,°C$까지 가열하였다. 가열한 뒤 기체의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "5.4 L",
+"solution": "$17\\,°C$와 $87\\,°C$는 각각 $290$ K와 $360$ K이다. 샤를 법칙을 적용하면 $V_2=4.35\\times\\frac{360}{290}=5.4$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-be1e5cb73d",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "온도와 압력이 일정한 용기에 기체 $1.2$ mol이 들어 있으며 그 부피는 $18$ L이다. 이 상태에서 기체 $0.4$ mol을 빼냈을 때 남은 기체의 부피는?",
+"choices": [
+"6 L",
+"9 L",
+"12 L",
+"14 L",
+"16 L"
+],
+"answer": "③",
+"solution": "기체를 빼낸 뒤 남은 양은 $1.2-0.4=0.8$ mol이다. 아보가드로 법칙에 따라 부피는 기체의 양에 비례하므로 $18\\times\\frac{0.8}{1.2}=12$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-3b1437318f",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "$300$ K에서 압력이 $1.2$ atm이고 부피가 $10$ L인 일정량의 기체가 있다. 먼저 온도를 일정하게 유지하며 부피를 $6$ L로 압축한 뒤, 압력을 일정하게 유지하며 온도를 $450$ K로 높였다. 최종 부피는?",
+"choices": [
+"4 L",
+"6 L",
+"7.5 L",
+"9 L",
+"15 L"
+],
+"answer": "④",
+"solution": "등온 압축 후 압력은 보일 법칙에 따라 $1.2\\times10=P\\times6$에서 $2$ atm이 된다. 이후 압력이 일정하므로 샤를 법칙을 적용하면 최종 부피는 $6\\times\\frac{450}{300}=9$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-70609fdead",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "서로 다른 기체 A와 B가 같은 온도와 압력에 놓여 있다. A의 부피는 $3$ L이고 B의 부피는 $7.5$ L일 때, A와 B의 분자 수의 비 $N_A:N_B$는?",
+"choices": [
+"$2:5$",
+"$3:5$",
+"$4:5$",
+"$5:2$",
+"$5:3$"
+],
+"answer": "①",
+"solution": "같은 온도와 압력에서는 아보가드로 법칙에 따라 분자 수가 부피에 비례한다. 따라서 $N_A:N_B=3:7.5=2:5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-49e17d0365",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "기체 법칙에 관한 설명으로 옳지 않은 것은?",
+"choices": [
+"온도와 기체의 양이 일정하면 압력과 부피의 곱은 일정하다.",
+"압력과 기체의 양이 일정하면 부피는 절대온도에 비례한다.",
+"온도와 압력이 일정하면 같은 부피의 기체에는 같은 수의 분자가 들어 있다.",
+"일정량의 기체를 $20\\,°C$에서 $40\\,°C$로 가열하면 압력이 일정할 때 부피가 정확히 2배가 된다.",
+"온도가 일정한 기체의 부피를 절반으로 줄이면 압력은 2배가 된다."
+],
+"answer": "④",
+"solution": "샤를 법칙에서 부피는 섭씨온도가 아니라 절대온도에 비례한다. $20\\,°C$와 $40\\,°C$는 각각 $293$ K와 $313$ K이므로 부피가 2배가 되지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-64b0a16621",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$300$ K, $1$ atm에서 $4$ L를 차지하는 기체가 있다. 먼저 온도와 압력을 일정하게 유지하면서 같은 기체를 더 넣어 기체의 양을 처음의 $1.5$배로 만들었다. 이어서 압력을 일정하게 유지하며 온도를 $450$ K로 높인 후, 마지막으로 온도를 일정하게 유지하며 압력을 $3$ atm으로 높였다. 최종 부피를 구하시오.",
+"selfGrade": true,
+"answer": "3 L",
+"solution": "기체의 양을 $1.5$배로 하면 아보가드로 법칙에 따라 부피는 $6$ L가 된다. 온도를 $300$ K에서 $450$ K로 높이면 부피는 $6\\times\\frac{450}{300}=9$ L가 된다. 마지막 등온 과정에서 압력이 $1$ atm에서 $3$ atm으로 변하므로 최종 부피는 $9\\times\\frac{1}{3}=3$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-d5a0f2ed1d",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "압력이 일정한 실린더에서 $250$ K인 기체 $0.8$ mol의 부피가 $6$ L이다. 기체를 더 넣어 전체 기체의 양을 $1.2$ mol로 만들고 온도를 변화시켰더니 부피가 $10.8$ L가 되었다. 이때 기체의 섭씨온도를 구하시오.",
+"selfGrade": true,
+"answer": "27 °C",
+"solution": "압력이 일정할 때 부피는 기체의 양과 절대온도의 곱에 비례하므로 $\\frac{6}{0.8\\times250}=\\frac{10.8}{1.2\\times T_2}$이다. 이를 풀면 $T_2=300$ K이다. 따라서 섭씨온도는 $300-273=27\\,°C$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-e26c6dc9ba",
+"typeId": "exam-mateng-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "어떤 기체가 처음에 $300$ K, $2$ atm에서 $6$ L를 차지한다. 이 기체의 일부를 빼내어 기체의 양을 처음의 $\\frac{3}{4}$로 줄이는 동시에 온도를 $450$ K, 압력을 $3$ atm으로 변화시켰다. 최종 부피를 구하시오.",
+"selfGrade": true,
+"answer": "4.5 L",
+"solution": "기체의 부피는 기체의 양과 절대온도에 비례하고 압력에 반비례한다. 따라서 $V_2=6\\times\\frac{3}{4}\\times\\frac{450}{300}\\times\\frac{2}{3}=4.5$ L이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-c0b0a78683",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "온도가 $47\\ ^\\circ\\mathrm{C}$이고 압력이 $1.23\\ \\mathrm{atm}$일 때, 이상 기체 $0.75\\ \\mathrm{mol}$의 부피는 얼마인가? (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"choices": [
+"$8.0\\ \\mathrm{L}$",
+"$12.0\\ \\mathrm{L}$",
+"$16.0\\ \\mathrm{L}$",
+"$19.7\\ \\mathrm{L}$",
+"$24.6\\ \\mathrm{L}$"
+],
+"answer": "③",
+"solution": "절대 온도는 $47+273=320\\ \\mathrm{K}$이다. $V=\\dfrac{nRT}{P}=\\dfrac{0.75\\times0.082\\times320}{1.23}=16.0\\ \\mathrm{L}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-16526100aa",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "$-23\\ ^\\circ\\mathrm{C}$, $2.46\\ \\mathrm{atm}$에서 부피가 $5.0\\ \\mathrm{L}$인 이상 기체의 양은 얼마인가? (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"choices": [
+"$0.20\\ \\mathrm{mol}$",
+"$0.40\\ \\mathrm{mol}$",
+"$0.60\\ \\mathrm{mol}$",
+"$0.80\\ \\mathrm{mol}$",
+"$1.00\\ \\mathrm{mol}$"
+],
+"answer": "③",
+"solution": "절대 온도는 $250\\ \\mathrm{K}$이다. $n=\\dfrac{PV}{RT}=\\dfrac{2.46\\times5.0}{0.082\\times250}=0.60\\ \\mathrm{mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-1f04d45c8c",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "$27\\ ^\\circ\\mathrm{C}$, $1.50\\ \\mathrm{atm}$에서 어떤 기체 $4.4\\ \\mathrm{g}$의 부피가 $1.64\\ \\mathrm{L}$이다. 이 기체의 몰 질량은 얼마인가? (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"choices": [
+"$16\\ \\mathrm{g/mol}$",
+"$28\\ \\mathrm{g/mol}$",
+"$32\\ \\mathrm{g/mol}$",
+"$44\\ \\mathrm{g/mol}$",
+"$64\\ \\mathrm{g/mol}$"
+],
+"answer": "④",
+"solution": "$n=\\dfrac{PV}{RT}=\\dfrac{1.50\\times1.64}{0.082\\times300}=0.10\\ \\mathrm{mol}$이다. 따라서 몰 질량은 $\\dfrac{4.4}{0.10}=44\\ \\mathrm{g/mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-26b18c2498",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "일정량의 이상 기체가 $27\\ ^\\circ\\mathrm{C}$, $1.20\\ \\mathrm{atm}$에서 $4.0\\ \\mathrm{L}$를 차지한다. 이 기체의 온도를 $127\\ ^\\circ\\mathrm{C}$, 압력을 $2.00\\ \\mathrm{atm}$으로 바꾸었을 때 부피는 얼마인가?",
+"choices": [
+"$2.0\\ \\mathrm{L}$",
+"$2.4\\ \\mathrm{L}$",
+"$3.0\\ \\mathrm{L}$",
+"$3.2\\ \\mathrm{L}$",
+"$4.8\\ \\mathrm{L}$"
+],
+"answer": "④",
+"solution": "기체의 양이 일정하므로 $\\dfrac{P_1V_1}{T_1}=\\dfrac{P_2V_2}{T_2}$가 성립한다. 따라서 $V_2=\\dfrac{1.20\\times4.0\\times400}{300\\times2.00}=3.2\\ \\mathrm{L}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-b7afff91c2",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "서로 반응하지 않는 조건에서 수소 기체 $2.0\\ \\mathrm{g}$과 산소 기체 $16.0\\ \\mathrm{g}$을 혼합하였다. 이 혼합 기체가 $27\\ ^\\circ\\mathrm{C}$에서 $12.3\\ \\mathrm{L}$를 차지할 때 전체 압력은 얼마인가? (수소와 산소의 몰 질량은 각각 $2.0\\ \\mathrm{g/mol}$, $32.0\\ \\mathrm{g/mol}$이고, $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$이다.)",
+"choices": [
+"$1.0\\ \\mathrm{atm}$",
+"$1.5\\ \\mathrm{atm}$",
+"$2.0\\ \\mathrm{atm}$",
+"$2.5\\ \\mathrm{atm}$",
+"$3.0\\ \\mathrm{atm}$"
+],
+"answer": "⑤",
+"solution": "수소와 산소의 양은 각각 $1.0\\ \\mathrm{mol}$, $0.50\\ \\mathrm{mol}$이므로 전체 기체의 양은 $1.50\\ \\mathrm{mol}$이다. $P=\\dfrac{nRT}{V}=\\dfrac{1.50\\times0.082\\times300}{12.3}=3.0\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-a3cd951f00",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "몰 질량이 $28\\ \\mathrm{g/mol}$인 이상 기체가 $27\\ ^\\circ\\mathrm{C}$, $2.46\\ \\mathrm{atm}$에서 $4.0\\ \\mathrm{L}$를 차지한다. 이 기체의 질량은 얼마인가? (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"choices": [
+"$2.8\\ \\mathrm{g}$",
+"$5.6\\ \\mathrm{g}$",
+"$8.4\\ \\mathrm{g}$",
+"$11.2\\ \\mathrm{g}$",
+"$14.0\\ \\mathrm{g}$"
+],
+"answer": "④",
+"solution": "$n=\\dfrac{PV}{RT}=\\dfrac{2.46\\times4.0}{0.082\\times300}=0.40\\ \\mathrm{mol}$이다. 따라서 기체의 질량은 $0.40\\times28=11.2\\ \\mathrm{g}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-1612295ca9",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "부피가 일정한 용기에 이상 기체가 들어 있으며, 처음 상태는 $27\\ ^\\circ\\mathrm{C}$, $3.0\\ \\mathrm{atm}$이다. 전체 기체 분자의 $20\\%$가 빠져나간 뒤 용기의 온도를 $77\\ ^\\circ\\mathrm{C}$로 높였을 때 기체의 압력은 얼마인가?",
+"choices": [
+"$2.4\\ \\mathrm{atm}$",
+"$2.8\\ \\mathrm{atm}$",
+"$3.0\\ \\mathrm{atm}$",
+"$3.5\\ \\mathrm{atm}$",
+"$4.2\\ \\mathrm{atm}$"
+],
+"answer": "②",
+"solution": "부피가 일정할 때 압력은 기체의 양과 절대 온도의 곱에 비례한다. 따라서 $P_2=3.0\\times0.80\\times\\dfrac{350}{300}=2.8\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-fd60bab5ed",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "어떤 이상 기체의 밀도는 $27\\ ^\\circ\\mathrm{C}$, $1.00\\ \\mathrm{atm}$에서 $1.30\\ \\mathrm{g/L}$이다. 같은 기체의 온도가 $127\\ ^\\circ\\mathrm{C}$, 압력이 $2.00\\ \\mathrm{atm}$일 때 밀도는 얼마인가?",
+"choices": [
+"$0.975\\ \\mathrm{g/L}$",
+"$1.30\\ \\mathrm{g/L}$",
+"$1.73\\ \\mathrm{g/L}$",
+"$1.95\\ \\mathrm{g/L}$",
+"$2.60\\ \\mathrm{g/L}$"
+],
+"answer": "④",
+"solution": "같은 기체의 밀도는 $\\dfrac{P}{T}$에 비례한다. 따라서 $d_2=1.30\\times\\dfrac{2.00}{1.00}\\times\\dfrac{300}{400}=1.95\\ \\mathrm{g/L}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-681d718614",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "탄소와 수소로 이루어진 기체 상태의 화합물은 실험식이 $\\mathrm{CH_2}$이다. 이 화합물 $0.70\\ \\mathrm{g}$이 $27\\ ^\\circ\\mathrm{C}$, $0.82\\ \\mathrm{atm}$에서 $0.375\\ \\mathrm{L}$를 차지할 때 분자식은 무엇인가? (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"choices": [
+"$\\mathrm{CH_2}$",
+"$\\mathrm{C_2H_4}$",
+"$\\mathrm{C_3H_6}$",
+"$\\mathrm{C_4H_8}$",
+"$\\mathrm{C_4H_{10}}$"
+],
+"answer": "④",
+"solution": "기체의 양은 $n=\\dfrac{0.82\\times0.375}{0.082\\times300}=0.0125\\ \\mathrm{mol}$이므로 몰 질량은 $56\\ \\mathrm{g/mol}$이다. 실험식량이 $14$이므로 분자식은 $(\\mathrm{CH_2})_4=\\mathrm{C_4H_8}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-20210332bb",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$27\\ ^\\circ\\mathrm{C}$에서 물 위로 포집한 어떤 기체의 부피는 $2.50\\ \\mathrm{L}$이고 전체 압력은 $1.025\\ \\mathrm{atm}$이다. 이때 물의 증기압은 $0.041\\ \\mathrm{atm}$이며, 포집된 기체에서 수증기를 제외한 기체의 질량은 $4.00\\ \\mathrm{g}$이다. 이 기체의 몰 질량을 구하시오. (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"selfGrade": true,
+"answer": "$40.0\\ \\mathrm{g/mol}$",
+"solution": "기체만의 압력은 $1.025-0.041=0.984\\ \\mathrm{atm}$이고, 기체의 양은 $n=\\dfrac{0.984\\times2.50}{0.082\\times300}=0.100\\ \\mathrm{mol}$이다. 따라서 몰 질량은 $\\dfrac{4.00}{0.100}=40.0\\ \\mathrm{g/mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-1ac32ed889",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "같은 강철 용기를 비운 후 기체 X와 Y를 각각 따로 채우는 실험을 하였다. 몰 질량이 $48\\ \\mathrm{g/mol}$인 기체 X를 $27\\ ^\\circ\\mathrm{C}$에서 채워 압력을 $1.50\\ \\mathrm{atm}$으로 만들었더니 용기의 질량이 $6.00\\ \\mathrm{g}$ 증가하였다. 기체를 모두 제거한 뒤 기체 Y를 $127\\ ^\\circ\\mathrm{C}$에서 채워 압력을 $2.00\\ \\mathrm{atm}$으로 만들었더니 용기의 질량이 $5.00\\ \\mathrm{g}$ 증가하였다. 기체 Y의 몰 질량을 구하시오.",
+"selfGrade": true,
+"answer": "$40.0\\ \\mathrm{g/mol}$",
+"solution": "두 실험에서 용기의 부피가 같으므로 $\\dfrac{m_XRT_X}{M_XP_X}=\\dfrac{m_YRT_Y}{M_YP_Y}$이다. 이를 정리하면 $M_Y=48\\times\\dfrac{5.00}{6.00}\\times\\dfrac{400}{300}\\times\\dfrac{1.50}{2.00}=40.0\\ \\mathrm{g/mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-f0a23ffbab",
+"typeId": "exam-mateng-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "부피가 $4.92\\ \\mathrm{L}$인 용기에 기체 X와 Y의 혼합물 $12.4\\ \\mathrm{g}$이 들어 있다. $27\\ ^\\circ\\mathrm{C}$에서 혼합 기체의 전체 압력은 $2.50\\ \\mathrm{atm}$이다. 기체 Y만 완전히 제거한 뒤 남은 기체 X의 질량은 $8.8\\ \\mathrm{g}$이었으며, 온도를 $127\\ ^\\circ\\mathrm{C}$로 높였을 때 압력은 $\\dfrac{4}{3}\\ \\mathrm{atm}$이었다. 기체 Y의 몰 질량을 구하시오. (기체 상수 $R=0.082\\ \\mathrm{atm\\cdot L/(mol\\cdot K)}$)",
+"selfGrade": true,
+"answer": "$12\\ \\mathrm{g/mol}$",
+"solution": "처음 혼합 기체의 전체 양은 $\\dfrac{2.50\\times4.92}{0.082\\times300}=0.50\\ \\mathrm{mol}$이고, 남은 X의 양은 $\\dfrac{(4/3)\\times4.92}{0.082\\times400}=0.20\\ \\mathrm{mol}$이다. 따라서 Y는 $0.30\\ \\mathrm{mol}$이고 질량은 $12.4-8.8=3.6\\ \\mathrm{g}$이므로, 몰 질량은 $\\dfrac{3.6}{0.30}=12\\ \\mathrm{g/mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-578d4fedda",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "서로 반응하지 않는 기체 A와 B가 섞인 혼합 기체에서 A와 B의 몰수는 각각 $0.30\\ \\mathrm{mol}$, $0.20\\ \\mathrm{mol}$이고 전체 압력은 $1.5\\ \\mathrm{atm}$이다. A의 부분 압력은?",
+"choices": [
+"$0.30\\ \\mathrm{atm}$",
+"$0.60\\ \\mathrm{atm}$",
+"$0.90\\ \\mathrm{atm}$",
+"$1.20\\ \\mathrm{atm}$",
+"$1.50\\ \\mathrm{atm}$"
+],
+"answer": "③",
+"solution": "A의 몰 분율은 $0.30/(0.30+0.20)=0.60$이다. 따라서 A의 부분 압력은 $1.5\\times0.60=0.90\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-0c677459d3",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "혼합 기체를 이루는 $\\mathrm{N_2}$, $\\mathrm{O_2}$, $\\mathrm{CO_2}$의 부분 압력이 각각 $0.55\\ \\mathrm{atm}$, $0.30\\ \\mathrm{atm}$, $0.15\\ \\mathrm{atm}$이다. 이 혼합 기체의 전체 압력은?",
+"choices": [
+"$0.40\\ \\mathrm{atm}$",
+"$0.55\\ \\mathrm{atm}$",
+"$0.85\\ \\mathrm{atm}$",
+"$1.00\\ \\mathrm{atm}$",
+"$1.15\\ \\mathrm{atm}$"
+],
+"answer": "④",
+"solution": "돌턴의 부분 압력 법칙에 따라 전체 압력은 각 성분 기체의 부분 압력의 합이다. 따라서 전체 압력은 $0.55+0.30+0.15=1.00\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-72c25485a0",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "주관식",
+"diff": 2,
+"body": "온도가 일정할 때, 기체 A가 $1.2\\ \\mathrm{atm}$으로 들어 있는 $2.0\\ \\mathrm{L}$ 용기와 기체 B가 $0.80\\ \\mathrm{atm}$으로 들어 있는 $3.0\\ \\mathrm{L}$ 용기를 연결하였다. 꼭지를 열어 두 기체를 섞었을 때 혼합 기체의 전체 압력을 구하시오. 단, 두 기체는 서로 반응하지 않으며 연결관의 부피는 무시한다.",
+"selfGrade": true,
+"answer": "$0.96\\ \\mathrm{atm}$",
+"solution": "온도가 일정하므로 혼합 후 전체 압력은 $(P_AV_A+P_BV_B)/(V_A+V_B)$로 구한다. 따라서 $(1.2\\times2.0+0.80\\times3.0)/5.0=0.96\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-04586fdcd8",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "일정한 온도에서 같은 용기에 들어 있는 기체 A와 B의 부분 압력이 각각 $0.80\\ \\mathrm{atm}$과 $1.20\\ \\mathrm{atm}$이다. A와 B의 몰수 비 $n_A:n_B$는?",
+"choices": [
+"$1:3$",
+"$1:2$",
+"$1:1$",
+"$2:3$",
+"$3:2$"
+],
+"answer": "④",
+"solution": "같은 용기에서 온도가 일정하면 각 기체의 부분 압력은 몰수에 비례한다. 따라서 $n_A:n_B=0.80:1.20=2:3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-8839d55a8b",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "일정한 온도와 부피에서 기체 A $0.15\\ \\mathrm{mol}$만 들어 있을 때 압력은 $0.60\\ \\mathrm{atm}$이었다. 같은 용기에 기체 B $0.35\\ \\mathrm{mol}$을 추가하였을 때 혼합 기체의 전체 압력은? 단, A와 B는 서로 반응하지 않는다.",
+"choices": [
+"$0.80\\ \\mathrm{atm}$",
+"$1.20\\ \\mathrm{atm}$",
+"$1.40\\ \\mathrm{atm}$",
+"$1.80\\ \\mathrm{atm}$",
+"$2.00\\ \\mathrm{atm}$"
+],
+"answer": "⑤",
+"solution": "온도와 부피가 일정하므로 압력은 전체 몰수에 비례한다. 전체 몰수는 $0.50\\ \\mathrm{mol}$이므로 전체 압력은 $0.60\\times(0.50/0.15)=2.00\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-23648c62a3",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\mathrm{O_2}$와 $\\mathrm{N_2}$의 혼합 기체를 물 위에서 포집하였더니 전체 압력이 $755\\ \\mathrm{mmHg}$이었다. 이때 수증기의 부분 압력은 $25\\ \\mathrm{mmHg}$이고, $\\mathrm{O_2}$의 부분 압력은 $146\\ \\mathrm{mmHg}$이다. 수증기를 제외한 혼합 기체에서 $\\mathrm{N_2}$의 몰 분율은?",
+"choices": [
+"$0.20$",
+"$0.40$",
+"$0.60$",
+"$0.80$",
+"$0.95$"
+],
+"answer": "④",
+"solution": "건조한 혼합 기체의 압력은 $755-25=730\\ \\mathrm{mmHg}$이고, $\\mathrm{N_2}$의 부분 압력은 $730-146=584\\ \\mathrm{mmHg}$이다. 따라서 $\\mathrm{N_2}$의 몰 분율은 $584/730=0.80$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-2d3eaff6c8",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "온도와 부피가 일정한 용기에 기체 A와 B가 몰수 비 $3:2$로 들어 있으며 전체 압력은 $2.50\\ \\mathrm{atm}$이다. 용기에서 A만 처음 몰수의 절반만큼 제거하였다. 제거 후 혼합 기체의 전체 압력과 B의 몰 분율을 옳게 짝 지은 것은?",
+"choices": [
+"$1.25\\ \\mathrm{atm},\\ 2/5$",
+"$1.50\\ \\mathrm{atm},\\ 1/2$",
+"$1.75\\ \\mathrm{atm},\\ 3/7$",
+"$1.75\\ \\mathrm{atm},\\ 4/7$",
+"$2.00\\ \\mathrm{atm},\\ 4/5$"
+],
+"answer": "④",
+"solution": "처음 A와 B의 부분 압력은 각각 $1.50\\ \\mathrm{atm}$과 $1.00\\ \\mathrm{atm}$이며, A의 절반을 제거하면 A의 부분 압력은 $0.75\\ \\mathrm{atm}$이 된다. 따라서 전체 압력은 $1.75\\ \\mathrm{atm}$이고 B의 몰 분율은 $1.00/1.75=4/7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-e44023706a",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "$300\\ \\mathrm{K}$에서 기체 A가 $2.0\\ \\mathrm{atm}$으로 들어 있는 $3.0\\ \\mathrm{L}$ 용기와 $400\\ \\mathrm{K}$에서 기체 B가 $1.5\\ \\mathrm{atm}$으로 들어 있는 $2.0\\ \\mathrm{L}$ 용기를 연결하였다. 꼭지를 연 후 전체 기체의 온도가 $350\\ \\mathrm{K}$가 되었을 때 전체 압력은? 단, 두 기체는 서로 반응하지 않으며 연결관의 부피는 무시한다.",
+"choices": [
+"$1.40\\ \\mathrm{atm}$",
+"$1.65\\ \\mathrm{atm}$",
+"$1.80\\ \\mathrm{atm}$",
+"$1.925\\ \\mathrm{atm}$",
+"$2.10\\ \\mathrm{atm}$"
+],
+"answer": "④",
+"solution": "각 기체의 몰수 합을 이용하면 $P_{\\mathrm{f}}V_{\\mathrm{f}}/T_{\\mathrm{f}}=P_AV_A/T_A+P_BV_B/T_B$이다. 따라서 $P_{\\mathrm{f}}=(350/5.0)\\{(2.0\\times3.0)/300+(1.5\\times2.0)/400\\}=1.925\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-7b53a67e63",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\mathrm{He}$, $\\mathrm{Ne}$, $\\mathrm{Ar}$로 이루어진 혼합 기체의 온도는 $300\\ \\mathrm{K}$, 전체 압력은 $2.46\\ \\mathrm{atm}$, 밀도는 $2.48\\ \\mathrm{g/L}$이다. $\\mathrm{He}$과 $\\mathrm{Ne}$의 부분 압력 비가 $1:2$일 때, $\\mathrm{Ar}$의 부분 압력은? 단, 원자량은 $\\mathrm{He}=4$, $\\mathrm{Ne}=20$, $\\mathrm{Ar}=40$이고 기체 상수는 $0.082\\ \\mathrm{L\\cdot atm/(mol\\cdot K)}$이다.",
+"choices": [
+"$0.492\\ \\mathrm{atm}$",
+"$0.738\\ \\mathrm{atm}$",
+"$0.820\\ \\mathrm{atm}$",
+"$0.984\\ \\mathrm{atm}$",
+"$1.230\\ \\mathrm{atm}$"
+],
+"answer": "④",
+"solution": "혼합 기체의 평균 몰 질량은 $M=dRT/P=2.48\\times0.082\\times300/2.46=24.8\\ \\mathrm{g/mol}$이다. He의 몰 분율을 $x$라 하면 Ne는 $2x$, Ar은 $1-3x$이므로 $4x+20(2x)+40(1-3x)=24.8$에서 $x=0.20$이다. 따라서 Ar의 몰 분율은 $0.40$이고 부분 압력은 $2.46\\times0.40=0.984\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-ddff8a9308",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$300\\ \\mathrm{K}$에서 기체 A가 압력 $P\\ \\mathrm{atm}$으로 들어 있는 $2.0\\ \\mathrm{L}$ 용기와 $450\\ \\mathrm{K}$에서 기체 B가 $3.0\\ \\mathrm{atm}$으로 들어 있는 $3.0\\ \\mathrm{L}$ 용기를 연결하였다. 꼭지를 연 후 전체 기체의 온도가 $360\\ \\mathrm{K}$, 전체 압력이 $2.4\\ \\mathrm{atm}$이 되었다. 이때 혼합 기체에서 A의 부분 압력을 구하시오. 단, 두 기체는 서로 반응하지 않으며 연결관의 부피는 무시한다.",
+"selfGrade": true,
+"answer": "$0.96\\ \\mathrm{atm}$",
+"solution": "전체 몰수 관계에서 $2.4\\times5.0/360=2.0P/300+3.0\\times3.0/450$이므로 $P=2.0\\ \\mathrm{atm}$이다. 혼합 후 A의 부분 압력은 $(2.0\\times2.0/300)\\times(360/5.0)=0.96\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-d85a084118",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$300\\ \\mathrm{K}$의 일정한 부피를 가진 용기에 서로 반응하지 않는 기체 A, B, C가 들어 있으며 전체 압력은 $4.2\\ \\mathrm{atm}$이다. 먼저 A만 모두 제거하였더니 압력이 $3.0\\ \\mathrm{atm}$이 되었고, 이어서 남아 있는 B의 절반을 제거하였더니 압력이 $2.1\\ \\mathrm{atm}$이 되었다. 이후 남은 혼합 기체를 처음 부피의 $2/3$로 압축하고 온도를 $400\\ \\mathrm{K}$로 높였을 때 C의 부분 압력을 구하시오.",
+"selfGrade": true,
+"answer": "$2.4\\ \\mathrm{atm}$",
+"solution": "A를 제거한 뒤 압력은 $p_B+p_C=3.0\\ \\mathrm{atm}$이고, B의 절반을 제거할 때 감소한 압력 $0.9\\ \\mathrm{atm}$은 처음 B의 부분 압력의 절반이므로 $p_B=1.8\\ \\mathrm{atm}$이다. 따라서 처음 C의 부분 압력은 $1.2\\ \\mathrm{atm}$이며, 압축과 가열 후에는 $1.2\\times(3/2)\\times(400/300)=2.4\\ \\mathrm{atm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-8f7a5138c2",
+"typeId": "exam-mateng-u0m0s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$27\\ ^\\circ\\mathrm{C}$에서 기체 A와 B의 혼합 기체를 물 위에서 포집하였더니 전체 압력은 $790\\ \\mathrm{mmHg}$이었다. 이 온도에서 수증기의 부분 압력은 $30\\ \\mathrm{mmHg}$이고, A와 B의 부분 압력 비는 $3:2$이다. 온도와 부피를 유지하면서 처음 건조한 혼합 기체의 전체 몰수의 절반에 해당하는 A를 추가한 뒤, 액체 상태의 물이 남아 있는 상태에서 온도를 유지하며 용기의 부피를 2배로 늘렸다. 최종 전체 압력을 구하시오.",
+"selfGrade": true,
+"answer": "$600\\ \\mathrm{mmHg}$",
+"solution": "처음 건조한 혼합 기체의 압력은 $790-30=760\\ \\mathrm{mmHg}$이며, 추가한 A의 몰수는 처음 건조 기체 전체 몰수의 절반이므로 A의 부분 압력 증가량은 $380\\ \\mathrm{mmHg}$이다. 부피를 늘리기 직전 건조 기체의 압력은 $1140\\ \\mathrm{mmHg}$이고, 부피가 2배가 되면 $570\\ \\mathrm{mmHg}$가 된다. 액체 물이 남아 있으므로 수증기압은 다시 $30\\ \\mathrm{mmHg}$를 유지하여 최종 전체 압력은 $600\\ \\mathrm{mmHg}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-b0086f3f65",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "액체 상태의 $HF$ 분자 사이에 작용하는 분자 간 상호작용을 빠짐없이 고른 것은?",
+"choices": [
+"분산력",
+"수소 결합",
+"분산력, 쌍극자·쌍극자 힘",
+"쌍극자·쌍극자 힘, 수소 결합",
+"분산력, 쌍극자·쌍극자 힘, 수소 결합"
+],
+"answer": "⑤",
+"solution": "$HF$는 극성 분자이므로 분산력과 쌍극자·쌍극자 힘이 작용한다. 또한 $H$가 $F$에 직접 결합해 있으므로 분자 사이에 수소 결합도 형성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-7dcb80cf3f",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "분자 간 상호작용에 대한 설명으로 옳은 것은?",
+"choices": [
+"무극성 분자 사이에는 어떠한 인력도 작용하지 않는다.",
+"분산력은 극성 분자 사이에서도 작용한다.",
+"쌍극자·쌍극자 힘은 무극성 분자 사이에만 작용한다.",
+"수소 원자를 포함한 모든 분자는 수소 결합을 한다.",
+"수소 결합은 분자 내부의 원자들을 결합시키는 힘이다."
+],
+"answer": "②",
+"solution": "분산력은 순간적으로 생긴 쌍극자에 의해 나타나므로 모든 분자 사이에 작용한다. 따라서 극성 분자 사이에도 분산력이 작용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-e94ae3177d",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "액체 상태의 $CH_3CH_2OH$에서 분자 사이에 작용하는 분산력, 쌍극자·쌍극자 힘, 수소 결합 중 일반적으로 가장 강한 상호작용의 이름을 쓰시오.",
+"selfGrade": true,
+"answer": "수소 결합",
+"solution": "$CH_3CH_2OH$에는 $O-H$ 결합이 있어 한 분자의 $H$와 다른 분자의 $O$ 사이에 수소 결합이 형성된다. 제시된 세 상호작용 중 일반적으로 수소 결합이 가장 강하다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-cce9fb7a47",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 분자 중 쌍극자·쌍극자 힘이 작용하는 극성 분자의 개수는?\n\n$CO_2$, $SO_2$, $CH_4$, $H_2S$, $CH_3Cl$\n\n단, $CO_2$는 직선형, $SO_2$와 $H_2S$는 굽은형, $CH_4$는 정사면체형이다.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "$CO_2$와 $CH_4$는 대칭적인 구조이므로 무극성 분자이다. $SO_2$, $H_2S$, $CH_3Cl$는 극성 분자이므로 쌍극자·쌍극자 힘이 작용하며, 그 개수는 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-4b1e67a4c1",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "분자 간 상호작용에 대한 설명으로 옳은 것만을 <보기>에서 고른 것은?\n\n<보기>\nㄱ. 액체 $CH_3OCH_3$에서는 분산력과 쌍극자·쌍극자 힘이 작용한다.\nㄴ. 액체 $CH_3NH_2$에서는 분산력, 쌍극자·쌍극자 힘, 수소 결합이 모두 작용한다.\nㄷ. $CCl_4$는 극성 결합을 가지므로 분자 사이에 쌍극자·쌍극자 힘이 작용한다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "$CH_3OCH_3$는 극성이지만 $O-H$ 결합이 없어 순물질에서 수소 결합을 하지 않으며, $CH_3NH_2$는 $N-H$ 결합이 있어 수소 결합을 한다. $CCl_4$는 결합은 극성이지만 분자 전체가 대칭이어서 무극성이므로 ㄷ은 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-dff0cecb69",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "분자 모양이 비슷한 다음 물질 중 분자 사이의 분산력이 가장 큰 것은?",
+"choices": [
+"$H_2$",
+"$F_2$",
+"$Cl_2$",
+"$I_2$",
+"$Br_2$"
+],
+"answer": "④",
+"solution": "분자 모양이 비슷하면 일반적으로 전자 수와 분자량이 클수록 전자 구름이 쉽게 변형되어 분산력이 커진다. 제시된 물질 중 $I_2$의 전자 수와 분자량이 가장 크다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-cf6aa3f57c",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 액체 상태에서 각 물질의 분자 사이에 작용하는 상호작용을 분류한 것이다. 옳게 분류된 물질의 개수는?\n\n(가) $CF_4$: 분산력\n(나) $HCHO$: 분산력, 쌍극자·쌍극자 힘\n(다) $CH_3OCH_3$: 분산력, 쌍극자·쌍극자 힘, 수소 결합\n(라) $CH_3NHCH_3$: 분산력, 쌍극자·쌍극자 힘, 수소 결합\n(마) $CH_3COOH$: 분산력, 쌍극자·쌍극자 힘, 수소 결합",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "④",
+"solution": "$CF_4$는 무극성이며, $HCHO$는 극성이지만 $O-H$ 결합이 없어 수소 결합을 하지 않는다. $CH_3OCH_3$도 $O-H$ 결합이 없으므로 순물질에서 수소 결합을 하지 않아 (다)만 틀렸고, 옳게 분류된 것은 4개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-e6d60a129d",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "서로 다른 두 물질을 섞었을 때, 두 물질의 분자 사이에 수소 결합이 형성되지 않는 것은?",
+"choices": [
+"$HF$와 $CH_3OCH_3$",
+"$NH_3$와 $CH_3OCH_3$",
+"$CH_3OH$와 $HCHO$",
+"$CH_3OCH_3$와 $HCHO$",
+"$H_2O$와 $CH_3NH_2$"
+],
+"answer": "④",
+"solution": "$CH_3OCH_3$와 $HCHO$의 $O$는 수소 결합을 받을 수 있지만, 두 분자 모두 $O-H$, $N-H$, $F-H$ 결합이 없어 수소 결합을 제공하지 못한다. 나머지 조합에는 수소 결합을 제공하는 분자와 받을 수 있는 분자가 함께 존재한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-be744acdd8",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "분자 간 상호작용에 대한 설명으로 옳은 것만을 <보기>에서 고른 것은?\n\n<보기>\nㄱ. 순물질에서 분자 사이에 수소 결합을 하는 분자는 극성 분자이다.\nㄴ. 무극성 분자로 이루어진 순물질에서는 제시된 세 상호작용 중 분산력만 작용한다.\nㄷ. 분자량이 더 큰 분자는 분자 구조와 관계없이 항상 더 강한 분산력을 갖는다.\nㄹ. 극성 분자 두 종류를 섞으면 두 종류의 분자 사이에 반드시 수소 결합이 형성된다.",
+"choices": [
+"ㄱ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "②",
+"solution": "수소 결합을 하는 $HF$, $H_2O$, $NH_3$ 등의 분자는 극성이며, 무극성 분자 사이에는 분산력이 작용한다. 분산력은 분자량뿐 아니라 분자 구조와 접촉 면적 등의 영향도 받고, 극성 분자라고 해서 반드시 수소 결합을 하는 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-e7c197b869",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$HF$, $NH_3$, $H_2O$, $CH_3OCH_3$, $CH_4$ 중 서로 다른 두 물질을 선택해 섞으려고 한다. 선택 순서를 구별하지 않을 때, 서로 다른 두 종류의 분자 사이에 수소 결합이 형성될 수 있는 조합은 모두 몇 개인지 구하시오.",
+"selfGrade": true,
+"answer": "6개",
+"solution": "$HF$, $NH_3$, $H_2O$는 수소 결합을 제공할 수 있고, $HF$, $NH_3$, $H_2O$, $CH_3OCH_3$는 수소 결합을 받을 수 있다. 따라서 앞의 네 물질 중 서로 다른 두 물질을 고른 모든 조합에서 수소 결합이 가능하므로 조합 수는 ${}_4C_2=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-1125b3f8ab",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "서로 다른 물질 $P$, $Q$, $R$, $S$는 각각 $CH_4$, $CH_3Cl$, $CH_3OCH_3$, $CH_3NH_2$ 중 하나이다. 다음 조건을 만족할 때 $P$, $Q$, $R$, $S$의 분자식을 각각 쓰시오.\n\n○ $P$의 분자 사이에는 제시된 세 상호작용 중 분산력만 작용한다.\n○ $Q$와 $R$의 분자 사이에는 각각 두 종류의 상호작용이 작용한다.\n○ $R$는 물 분자와 수소 결합을 형성할 수 있지만 $Q$는 물 분자와 수소 결합을 형성하지 않는다.\n○ $S$의 분자 사이에는 분산력, 쌍극자·쌍극자 힘, 수소 결합이 모두 작용한다.",
+"selfGrade": true,
+"answer": "$P=CH_4$, $Q=CH_3Cl$, $R=CH_3OCH_3$, $S=CH_3NH_2$",
+"solution": "무극성인 $CH_4$가 $P$이고, $N-H$ 결합이 있어 세 상호작용이 모두 작용하는 $CH_3NH_2$가 $S$이다. 남은 두 물질은 모두 극성이지만, 물과 수소 결합을 형성할 수 있는 $CH_3OCH_3$가 $R$이고 $CH_3Cl$가 $Q$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-b5e2bbe0bc",
+"typeId": "exam-mateng-u0m1s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "한 학생이 수소 결합의 조건을 ‘한 분자 안에 $H$와 $N$, $O$, $F$ 중 하나가 함께 있으면 그 물질의 분자 사이에 수소 결합이 형성된다.’라고 잘못 정리하였다. 이 조건을 ‘$H$가 $N$, $O$, $F$ 중 하나에 직접 결합해야 한다.’라고 바로잡을 때, 다음 물질 중 수소 결합 여부에 대한 분류가 바뀌는 물질은 모두 몇 개인지 구하시오.\n\n$CH_3OH$, $CH_3OCH_3$, $CH_3F$, $HCHO$, $NH_3$, $HCN$",
+"selfGrade": true,
+"answer": "4개",
+"solution": "$CH_3OH$과 $NH_3$는 각각 $O-H$, $N-H$ 결합이 있어 실제로 수소 결합을 한다. $CH_3OCH_3$, $CH_3F$, $HCHO$, $HCN$에서는 $H$가 모두 $C$에 결합해 있으므로 분류가 바뀌는 물질은 4개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s0t1",
+"custom": true
+},
+{
+"id": "fill-afb4595d45",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "밀폐 용기에 액체와 그 증기가 동적 평형을 이루고 있다. 이에 대한 설명으로 옳은 것은?",
+"choices": [
+"액체의 증발이 완전히 멈춘 상태이다.",
+"증기의 응축이 완전히 멈춘 상태이다.",
+"단위 시간당 증발하는 분자 수와 응축하는 분자 수가 같다.",
+"액체 분자와 기체 분자의 운동이 모두 멈춘 상태이다.",
+"시간이 지날수록 액체의 양이 계속 감소하는 상태이다."
+],
+"answer": "③",
+"solution": "동적 평형에서는 증발과 응축이 모두 계속 일어난다. 다만 단위 시간당 증발하는 분자 수와 응축하는 분자 수가 같아 액체와 증기의 양이 일정하게 유지된다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-c219903825",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "어떤 액체의 증기 압력은 $50\\,^{\\circ}\\mathrm{C}$에서 $240\\,\\mathrm{mmHg}$, $70\\,^{\\circ}\\mathrm{C}$에서 $460\\,\\mathrm{mmHg}$이다. 이 액체에 대한 설명으로 옳은 것은?",
+"choices": [
+"외부 압력이 $240\\,\\mathrm{mmHg}$이면 $50\\,^{\\circ}\\mathrm{C}$에서 끓는다.",
+"외부 압력이 $460\\,\\mathrm{mmHg}$이면 $50\\,^{\\circ}\\mathrm{C}$에서 끓는다.",
+"외부 압력이 $240\\,\\mathrm{mmHg}$이면 끓는점이 $70\\,^{\\circ}\\mathrm{C}$보다 높다.",
+"$50\\,^{\\circ}\\mathrm{C}$에서 액체의 양을 두 배로 하면 증기 압력은 $480\\,\\mathrm{mmHg}$가 된다.",
+"$70\\,^{\\circ}\\mathrm{C}$에서 외부 압력이 $500\\,\\mathrm{mmHg}$이면 액체가 끓는다."
+],
+"answer": "①",
+"solution": "액체는 증기 압력과 외부 압력이 같을 때 끓는다. $50\\,^{\\circ}\\mathrm{C}$에서 증기 압력이 $240\\,\\mathrm{mmHg}$이므로 외부 압력도 $240\\,\\mathrm{mmHg}$이면 끓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-4d877c0e81",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "높은 산에서 평지보다 물이 낮은 온도에서 끓는 주된 까닭은?",
+"choices": [
+"높은 산에서는 물의 분자 간 인력이 커지기 때문이다.",
+"높은 산에서는 물의 증기 압력이 모든 온도에서 작아지기 때문이다.",
+"높은 산에서는 외부 압력이 작아 물의 증기 압력이 더 낮은 온도에서 외부 압력과 같아지기 때문이다.",
+"높은 산에서는 물의 양이 빠르게 감소하여 증기 압력이 작아지기 때문이다.",
+"높은 산에서는 물의 기준 끓는점 자체가 변하기 때문이다."
+],
+"answer": "③",
+"solution": "고도가 높아지면 대기압, 즉 외부 압력이 작아진다. 따라서 물의 증기 압력이 외부 압력과 같아지는 온도가 낮아져 물의 끓는점이 내려간다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-e3782c999a",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "같은 온도에서 동일한 액체를 세 밀폐 용기 A, B, C에 넣어 충분한 시간이 지난 후 모두 액체와 증기가 함께 존재하였다. 액체의 양은 A가 B보다 많고, 용기의 부피는 B가 C보다 크다. 세 용기 속 증기 압력을 각각 $P_A$, $P_B$, $P_C$라고 할 때 옳은 것은?",
+"choices": [
+"$P_A>P_B>P_C$",
+"$P_A>P_B=P_C$",
+"$P_A=P_B>P_C$",
+"$P_A<P_B<P_C$",
+"$P_A=P_B=P_C$"
+],
+"answer": "⑤",
+"solution": "같은 액체가 같은 온도에서 액체와 증기의 동적 평형을 이루면 증기 압력은 일정하다. 액체가 남아 있는 한 액체의 양이나 용기의 부피가 달라도 평형 증기 압력은 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-8d8f340538",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$30\\,^{\\circ}\\mathrm{C}$에서 액체 A, B, C의 증기 압력은 각각 $280\\,\\mathrm{mmHg}$, $150\\,\\mathrm{mmHg}$, $70\\,\\mathrm{mmHg}$이다. 이에 대한 설명으로 옳은 것은?",
+"choices": [
+"분자 간 인력은 A가 가장 크다.",
+"기준 끓는점은 C가 가장 낮다.",
+"같은 조건에서 휘발성은 A가 가장 크다.",
+"외부 압력이 $150\\,\\mathrm{mmHg}$일 때 C는 $30\\,^{\\circ}\\mathrm{C}$에서 끓는다.",
+"온도를 높이면 A, B, C의 증기 압력 차이는 반드시 모두 $0$이 된다."
+],
+"answer": "③",
+"solution": "같은 온도에서 증기 압력이 큰 액체일수록 분자 간 인력이 작고 휘발성이 크다. A의 증기 압력이 가장 크므로 A의 휘발성이 가장 크고 기준 끓는점은 가장 낮다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-6af6098441",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "어떤 액체의 증기 압력 자료는 다음과 같다.\n\n$60\\,^{\\circ}\\mathrm{C}$: $260\\,\\mathrm{mmHg}$\n$75\\,^{\\circ}\\mathrm{C}$: $410\\,\\mathrm{mmHg}$\n$90\\,^{\\circ}\\mathrm{C}$: $620\\,\\mathrm{mmHg}$\n\n이에 대한 설명으로 옳은 것은?",
+"choices": [
+"외부 압력이 $260\\,\\mathrm{mmHg}$일 때 끓는점은 $75\\,^{\\circ}\\mathrm{C}$이다.",
+"외부 압력이 $410\\,\\mathrm{mmHg}$일 때 끓는점은 $75\\,^{\\circ}\\mathrm{C}$이다.",
+"외부 압력이 $500\\,\\mathrm{mmHg}$일 때 끓는점은 $90\\,^{\\circ}\\mathrm{C}$보다 높다.",
+"$90\\,^{\\circ}\\mathrm{C}$에서 외부 압력이 $700\\,\\mathrm{mmHg}$이면 액체가 끓는다.",
+"외부 압력이 증가할수록 이 액체의 끓는점은 낮아진다."
+],
+"answer": "②",
+"solution": "끓는점에서는 액체의 증기 압력과 외부 압력이 같다. $75\\,^{\\circ}\\mathrm{C}$에서 증기 압력이 $410\\,\\mathrm{mmHg}$이므로 외부 압력이 이 값일 때 끓는점은 $75\\,^{\\circ}\\mathrm{C}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-548a3cfeaa",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "피스톤이 달린 밀폐 용기에서 액체와 그 증기가 일정한 온도로 동적 평형을 이루고 있다. 액체가 충분히 남아 있는 상태에서 피스톤을 빠르게 눌러 용기의 부피를 줄인 뒤 같은 온도로 충분한 시간 동안 두었다. 이에 대한 설명으로 옳은 것은?",
+"choices": [
+"압축 직후부터 최종 상태까지 증기 압력은 계속 감소한다.",
+"최종 증기 압력은 압축 전 평형 증기 압력보다 크다.",
+"압축 직후 일부 증기가 응축되며, 최종 증기 압력은 압축 전과 같다.",
+"압축 후 액체가 모두 증발하므로 최종 증기 압력은 외부 압력과 같다.",
+"최종 상태에서는 증발만 일어나고 응축은 일어나지 않는다."
+],
+"answer": "③",
+"solution": "압축 직후에는 단위 부피당 증기 분자 수가 증가하므로 일부 증기가 액체로 응축된다. 온도가 같고 액체가 남아 있으므로 새 평형에 도달한 뒤의 증기 압력은 압축 전의 평형 증기 압력과 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-319af28335",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "어떤 액체의 증기 압력은 $70\\,^{\\circ}\\mathrm{C}$에서 $230\\,\\mathrm{mmHg}$, $80\\,^{\\circ}\\mathrm{C}$에서 $350\\,\\mathrm{mmHg}$, $90\\,^{\\circ}\\mathrm{C}$에서 $520\\,\\mathrm{mmHg}$이다. 다음 설명 중 옳은 것만을 고른 것은?\n\nㄱ. 외부 압력이 $300\\,\\mathrm{mmHg}$이면 끓는점은 $70\\,^{\\circ}\\mathrm{C}$와 $80\\,^{\\circ}\\mathrm{C}$ 사이이다.\nㄴ. $80\\,^{\\circ}\\mathrm{C}$에서 외부 압력이 $400\\,\\mathrm{mmHg}$이면 액체가 끓는다.\nㄷ. 외부 압력이 $520\\,\\mathrm{mmHg}$이면 끓는점은 $90\\,^{\\circ}\\mathrm{C}$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "외부 압력 $300\\,\\mathrm{mmHg}$은 $70\\,^{\\circ}\\mathrm{C}$와 $80\\,^{\\circ}\\mathrm{C}$의 증기 압력 사이이므로 ㄱ은 옳다. $80\\,^{\\circ}\\mathrm{C}$에서는 증기 압력이 외부 압력보다 작아 끓지 않으므로 ㄴ은 틀리고, $90\\,^{\\circ}\\mathrm{C}$에서 증기 압력이 $520\\,\\mathrm{mmHg}$이므로 ㄷ은 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-b3001f17c0",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "액체 A, B, C의 $60\\,^{\\circ}\\mathrm{C}$에서의 증기 압력은 각각 $520\\,\\mathrm{mmHg}$, $300\\,\\mathrm{mmHg}$, $180\\,\\mathrm{mmHg}$이다. 외부 압력이 $300\\,\\mathrm{mmHg}$일 때 이에 대한 설명으로 옳은 것은?",
+"choices": [
+"A의 끓는점은 $60\\,^{\\circ}\\mathrm{C}$보다 높다.",
+"B의 끓는점은 $60\\,^{\\circ}\\mathrm{C}$이다.",
+"C의 끓는점은 $60\\,^{\\circ}\\mathrm{C}$보다 낮다.",
+"분자 간 인력은 A가 가장 크다.",
+"기준 끓는점은 C가 가장 낮다."
+],
+"answer": "②",
+"solution": "B는 $60\\,^{\\circ}\\mathrm{C}$에서 증기 압력이 외부 압력과 같으므로 이 조건에서의 끓는점이 $60\\,^{\\circ}\\mathrm{C}$이다. A의 끓는점은 이보다 낮고 C의 끓는점은 이보다 높으며, 분자 간 인력과 기준 끓는점은 C가 가장 크다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-6eec9f8905",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$30\\,^{\\circ}\\mathrm{C}$에서 어떤 액체의 평형 증기 압력은 $240\\,\\mathrm{mmHg}$이고, 부피 $1.0\\,\\mathrm{L}$를 포화 증기로 채우는 데 필요한 액체의 질량은 $0.40\\,\\mathrm{g}$이다. 진공인 $2.0\\,\\mathrm{L}$ 밀폐 용기에 이 액체 $0.60\\,\\mathrm{g}$을 넣어 $30\\,^{\\circ}\\mathrm{C}$로 유지하였다. 이후 온도를 유지하면서 용기 부피를 $1.0\\,\\mathrm{L}$로 줄였다.\n\n처음 평형에 도달했을 때와 부피를 줄인 후 다시 평형에 도달했을 때의 압력을 차례대로 쓰시오. 단, 액체가 모두 기화한 불포화 증기의 압력은 같은 온도와 부피에서 증기의 질량에 비례한다.",
+"selfGrade": true,
+"answer": "$180\\,\\mathrm{mmHg},\\ 240\\,\\mathrm{mmHg}$",
+"solution": "$2.0\\,\\mathrm{L}$를 포화시키려면 $0.80\\,\\mathrm{g}$이 필요하지만 액체는 $0.60\\,\\mathrm{g}$뿐이므로 모두 기화하고, 압력은 $240\\times(0.60/0.80)=180\\,\\mathrm{mmHg}$이다. 부피를 $1.0\\,\\mathrm{L}$로 줄이면 포화에 필요한 질량은 $0.40\\,\\mathrm{g}$이므로 $0.20\\,\\mathrm{g}$이 응축된다. 액체와 증기가 공존하는 최종 압력은 평형 증기 압력인 $240\\,\\mathrm{mmHg}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-ff674049b3",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "액체 A와 B의 증기 압력 자료는 다음과 같다. 각 온도 구간에서 증기 압력은 온도에 따라 직선적으로 변한다고 가정한다.\n\nA: $50\\,^{\\circ}\\mathrm{C}$에서 $450\\,\\mathrm{mmHg}$, $60\\,^{\\circ}\\mathrm{C}$에서 $600\\,\\mathrm{mmHg}$\nB: $60\\,^{\\circ}\\mathrm{C}$에서 $420\\,\\mathrm{mmHg}$, $70\\,^{\\circ}\\mathrm{C}$에서 $600\\,\\mathrm{mmHg}$\n\nA를 외부 압력 $525\\,\\mathrm{mmHg}$에서 가열하여 끓기 시작하게 한 직후 외부 압력을 $600\\,\\mathrm{mmHg}$로 높였다. 한편 B는 외부 압력 $510\\,\\mathrm{mmHg}$에서 가열하였다. A가 압력 변화 후 다시 끓기 시작하는 온도와 B가 끓기 시작하는 온도의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$125\\,^{\\circ}\\mathrm{C}$",
+"solution": "A는 외부 압력이 $600\\,\\mathrm{mmHg}$로 높아진 뒤 증기 압력이 이 값에 도달하는 $60\\,^{\\circ}\\mathrm{C}$에서 다시 끓는다. B의 증기 압력은 $10\\,^{\\circ}\\mathrm{C}$ 상승할 때 $180\\,\\mathrm{mmHg}$ 증가하므로 $510\\,\\mathrm{mmHg}$에 도달하는 온도는 $65\\,^{\\circ}\\mathrm{C}$이다. 따라서 두 온도의 합은 $60+65=125\\,^{\\circ}\\mathrm{C}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-f44f1d502e",
+"typeId": "exam-mateng-u0m1s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "진공인 부피 $4.0\\,\\mathrm{L}$의 밀폐 용기에 액체 X $1.20\\,\\mathrm{g}$을 넣었다. X의 평형 증기 압력과 포화 증기를 만드는 데 필요한 질량은 다음과 같다.\n\n$20\\,^{\\circ}\\mathrm{C}$: 증기 압력 $100\\,\\mathrm{mmHg}$, 용기 $1.0\\,\\mathrm{L}$당 $0.20\\,\\mathrm{g}$\n$40\\,^{\\circ}\\mathrm{C}$: 증기 압력 $300\\,\\mathrm{mmHg}$, 용기 $1.0\\,\\mathrm{L}$당 $0.45\\,\\mathrm{g}$\n\n용기를 먼저 $20\\,^{\\circ}\\mathrm{C}$에서 평형에 도달시킨 뒤 $40\\,^{\\circ}\\mathrm{C}$로 가열하였다. 이어서 온도를 $40\\,^{\\circ}\\mathrm{C}$로 유지하며 용기 부피를 $2.0\\,\\mathrm{L}$로 줄이고 다시 평형에 도달시켰다. 최종 상태에서 남아 있는 액체의 질량과 용기 속 압력을 차례대로 쓰시오.",
+"selfGrade": true,
+"answer": "$0.30\\,\\mathrm{g},\\ 300\\,\\mathrm{mmHg}$",
+"solution": "$40\\,^{\\circ}\\mathrm{C}$에서 $4.0\\,\\mathrm{L}$를 포화시키려면 $1.80\\,\\mathrm{g}$이 필요하므로 가열 직후에는 X가 모두 기화한다. 부피를 $2.0\\,\\mathrm{L}$로 줄이면 포화 증기에 필요한 질량은 $0.45\\times2.0=0.90\\,\\mathrm{g}$이다. 따라서 $1.20-0.90=0.30\\,\\mathrm{g}$이 액체로 남고, 액체와 증기가 공존하므로 압력은 $300\\,\\mathrm{mmHg}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-87c1c87a79",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "1기압에서 순수한 물에 비휘발성, 비전해질 용질을 녹였을 때 나타나는 변화를 옳게 설명한 것은?",
+"choices": [
+"용액의 증기 압력과 끓는점이 모두 높아진다.",
+"용액의 증기 압력과 어는점이 모두 높아진다.",
+"용액의 끓는점과 어는점이 모두 낮아진다.",
+"용액의 끓는점은 높아지고 어는점은 낮아진다.",
+"용질의 종류와 관계없이 끓는점과 어는점이 모두 변하지 않는다."
+],
+"answer": "④",
+"solution": "비휘발성 용질을 녹이면 용매의 증기 압력이 낮아지므로 더 높은 온도에서 외부 압력과 같아져 끓는다. 따라서 끓는점은 높아지고 어는점은 낮아진다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-f02216d305",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "1기압에서 물의 몰랄 오름 상수는 $0.51$ °C·kg/mol, 몰랄 내림 상수는 $1.86$ °C·kg/mol이다. $0.80\\,m$ 설탕 수용액의 끓는점과 어는점을 순서대로 옳게 짝지은 것은?",
+"choices": [
+"100.408 °C, −1.488 °C",
+"100.800 °C, −1.860 °C",
+"100.408 °C, −0.930 °C",
+"100.255 °C, −1.488 °C",
+"101.488 °C, −0.408 °C"
+],
+"answer": "①",
+"solution": "끓는점 오름은 $0.51\\times0.80=0.408$ °C이고, 어는점 내림은 $1.86\\times0.80=1.488$ °C이다. 따라서 끓는점은 100.408 °C, 어는점은 −1.488 °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-aa756972f7",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "물 300 g에 포도당(분자량 180) 27 g을 녹였다. 물의 몰랄 내림 상수가 $1.86$ °C·kg/mol일 때, 이 수용액의 어는점은?",
+"choices": [
+"−0.093 °C",
+"−0.465 °C",
+"−0.930 °C",
+"−1.395 °C",
+"−1.860 °C"
+],
+"answer": "③",
+"solution": "포도당의 양은 $27/180=0.15$ mol이고 용매의 질량은 0.300 kg이므로 몰랄 농도는 $0.50\\,m$이다. 어는점 내림은 $1.86\\times0.50=0.930$ °C이므로 어는점은 −0.930 °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-9f499c96e0",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "물 200 g에 요소(분자량 60) 12 g을 녹인 용액을 A, 물 200 g에 포도당(분자량 180) 12 g을 녹인 용액을 B라고 하자. A와 B의 어는점 내림을 각각 $\\Delta T_A$, $\\Delta T_B$라고 할 때, $\\Delta T_A:\\Delta T_B$는?",
+"choices": [
+"1 : 3",
+"1 : 1",
+"2 : 1",
+"3 : 1",
+"9 : 1"
+],
+"answer": "④",
+"solution": "두 용액은 용매의 질량이 같으므로 어는점 내림의 비는 용질의 몰수비와 같다. 요소와 포도당의 몰수는 각각 0.20 mol, $1/15$ mol이므로 그 비는 $3:1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-2f28a207d1",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "물 200 g에 비휘발성, 비전해질 용질 9.0 g을 녹였더니 1기압에서 끓는점이 100.255 °C가 되었다. 물의 몰랄 오름 상수가 $0.51$ °C·kg/mol일 때, 용질의 분자량은?",
+"choices": [
+"45",
+"60",
+"72",
+"90",
+"180"
+],
+"answer": "④",
+"solution": "끓는점 오름이 0.255 °C이므로 몰랄 농도는 $0.255/0.51=0.50\\,m$이다. 물이 0.200 kg이므로 용질은 0.10 mol이고, 분자량은 $9.0/0.10=90$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-74e8094785",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "물 500 g에 요소(분자량 60) 15 g과 포도당(분자량 180) 45 g을 함께 녹였다. 두 용질은 모두 비휘발성, 비전해질이며, 물의 몰랄 오름 상수는 $0.51$ °C·kg/mol이다. 1기압에서 이 용액의 끓는점은?",
+"choices": [
+"100.255 °C",
+"100.340 °C",
+"100.510 °C",
+"100.765 °C",
+"101.020 °C"
+],
+"answer": "③",
+"solution": "요소와 포도당은 각각 0.25 mol이므로 전체 용질의 양은 0.50 mol이다. 몰랄 농도는 $0.50/0.500=1.00\\,m$이고 끓는점 오름은 0.51 °C이므로 끓는점은 100.510 °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-a5840274de",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "물 400 g에 요소(분자량 60) 12 g을 녹인 뒤, 용질은 손실되지 않도록 물만 100 g 증발시켰다. 물의 몰랄 내림 상수가 $1.86$ °C·kg/mol일 때, 남은 용액의 어는점은?",
+"choices": [
+"−0.620 °C",
+"−0.930 °C",
+"−1.116 °C",
+"−1.240 °C",
+"−1.860 °C"
+],
+"answer": "④",
+"solution": "요소는 0.20 mol이고, 증발 후 남은 물은 0.300 kg이다. 몰랄 농도는 $0.20/0.300=2/3\\,m$이므로 어는점 내림은 $1.86\\times2/3=1.24$ °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-39bda03198",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "물 400 g에 포도당(분자량 180) 36 g을 녹인 용액 A가 있다. 물 250 g에 설탕(분자량 342)을 녹여 A와 끓는점 오름이 같은 용액 B를 만들려고 한다. 두 용질이 모두 비휘발성, 비전해질일 때, B에 필요한 설탕의 질량은?",
+"choices": [
+"21.4 g",
+"34.2 g",
+"42.8 g",
+"68.4 g",
+"85.5 g"
+],
+"answer": "③",
+"solution": "A의 포도당은 0.20 mol이므로 몰랄 농도는 $0.20/0.400=0.50\\,m$이다. B도 $0.50\\,m$이어야 하므로 필요한 설탕은 $0.50\\times0.250=0.125$ mol이다. 따라서 설탕의 질량은 $0.125\\times342=42.75$ g으로 약 42.8 g이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-a5101bf901",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "물 200 g에 요소(분자량 60) 6.0 g을 녹인 용액 A와 물 300 g에 포도당(분자량 180) 18 g을 녹인 용액 B를 모두 섞었다. 두 용질은 비휘발성, 비전해질이고 물의 몰랄 내림 상수는 $1.86$ °C·kg/mol이다. 혼합 용액의 어는점은?",
+"choices": [
+"−0.372 °C",
+"−0.620 °C",
+"−0.744 °C",
+"−0.930 °C",
+"−1.116 °C"
+],
+"answer": "③",
+"solution": "요소와 포도당은 각각 0.10 mol이므로 전체 용질은 0.20 mol이고 전체 물은 0.500 kg이다. 혼합 용액의 몰랄 농도는 $0.40\\,m$이므로 어는점 내림은 $1.86\\times0.40=0.744$ °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-bfa170f2e1",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "물 600 g에 분자량이 120인 비휘발성, 비전해질 용질을 녹였더니 1기압에서 끓는점이 100.255 °C가 되었다. 이 용액에서 용질은 손실되지 않도록 물만 150 g 증발시켰다. 물의 몰랄 오름 상수와 몰랄 내림 상수는 각각 $0.51$ °C·kg/mol, $1.86$ °C·kg/mol이다.\n\n처음 녹인 용질의 질량과 물을 증발시킨 후 용액의 어는점을 순서대로 구하시오.",
+"selfGrade": true,
+"answer": "$36\\,\\mathrm{g},\\;-1.24\\,°\\mathrm{C}$",
+"solution": "처음 용액의 끓는점 오름이 0.255 °C이므로 몰랄 농도는 $0.50\\,m$이고, 용질은 $0.50\\times0.600=0.30$ mol이다. 따라서 용질의 질량은 $0.30\\times120=36$ g이다. 증발 후 물은 0.450 kg이므로 몰랄 농도는 $0.30/0.450=2/3\\,m$이고, 어는점은 $-(1.86\\times2/3)=-1.24$ °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-90058273ba",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "물 300 g에 요소(분자량 60) $x$ g을 녹인 용액 A와 물 200 g에 포도당(분자량 180) 18 g을 녹인 용액 B를 섞었더니 어는점이 −0.930 °C였다. 이후 용질은 손실되지 않도록 혼합 용액에서 물만 100 g 증발시켰다. 물의 몰랄 오름 상수와 몰랄 내림 상수는 각각 $0.51$ °C·kg/mol, $1.86$ °C·kg/mol이다.\n\n$x$와 물을 증발시킨 후 용액의 끓는점을 순서대로 구하시오.",
+"selfGrade": true,
+"answer": "$9.0\\,\\mathrm{g},\\;100.31875\\,°\\mathrm{C}$",
+"solution": "혼합 직후 몰랄 농도는 $0.930/1.86=0.50\\,m$이므로 전체 용질은 $0.50\\times0.500=0.25$ mol이다. 포도당이 0.10 mol이므로 요소는 0.15 mol이고 $x=0.15\\times60=9.0$ g이다. 증발 후 물은 0.400 kg이므로 몰랄 농도는 $0.25/0.400=0.625\\,m$이고, 끓는점은 $100+0.51\\times0.625=100.31875$ °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-1bc1b6e316",
+"typeId": "exam-mateng-u1m1s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "물 500 g에 비휘발성, 비전해질 용질 30 g을 녹였더니 어는점이 −0.558 °C였다. 이 용액을 충분히 잘 섞은 뒤 전체 용액의 정확히 5분의 1을 덜어 내고, 덜어 낸 용액에서 용질은 손실되지 않도록 물만 25 g 증발시켰다. 물의 몰랄 오름 상수와 몰랄 내림 상수는 각각 $0.51$ °C·kg/mol, $1.86$ °C·kg/mol이다.\n\n용질의 분자량과 물을 증발시킨 용액의 끓는점을 순서대로 구하시오.",
+"selfGrade": true,
+"answer": "$200,\\;100.204\\,°\\mathrm{C}$",
+"solution": "처음 용액의 몰랄 농도는 $0.558/1.86=0.30\\,m$이므로 용질은 $0.30\\times0.500=0.15$ mol이고 분자량은 $30/0.15=200$이다. 전체의 5분의 1에는 용질 0.03 mol과 물 100 g이 들어 있다. 물 25 g을 증발시키면 물이 0.075 kg 남으므로 몰랄 농도는 $0.03/0.075=0.40\\,m$이고, 끓는점은 $100+0.51\\times0.40=100.204$ °C이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-a193bf1a5f",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "비휘발성·비전해질 용질이 녹아 있는 묽은 용액의 삼투압에 대한 설명으로 옳은 것은?",
+"choices": [
+"절대 온도가 일정할 때 용액의 몰 농도가 3배가 되면 삼투압도 3배가 된다.",
+"몰 농도가 일정할 때 절대 온도가 높아지면 삼투압은 작아진다.",
+"같은 온도와 몰 농도에서는 용질의 몰 질량이 클수록 삼투압이 크다.",
+"삼투압은 용액의 부피에 비례하고 용질의 몰수와는 관계가 없다.",
+"온도를 섭씨온도로 나타내어야 $π=MRT$를 적용할 수 있다."
+],
+"answer": "①",
+"solution": "묽은 용액의 삼투압은 $π=MRT$로 나타낸다. 온도가 일정하면 삼투압은 용액의 몰 농도 $M$에 비례하므로 몰 농도가 3배가 되면 삼투압도 3배가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-3b60a208be",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "주관식",
+"diff": 2,
+"body": "27 °C에서 요소 6.0 g을 물에 녹여 500 mL의 수용액을 만들었다. 이 수용액의 삼투압을 구하시오. 단, 요소의 몰 질량은 60 g/mol이고, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"selfGrade": true,
+"answer": "$4.92$ atm",
+"solution": "요소의 양은 $6.0/60=0.10$ mol이므로 용액의 몰 농도는 $0.10/0.500=0.20$ M이다. 따라서 $π=MRT=0.20×0.082×300=4.92$ atm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-ad2a853b11",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "반투막을 사이에 두고 순수한 물과 설탕 수용액이 접해 있다. 설탕 수용액 쪽에 외부 압력을 가할 때 나타나는 현상에 대한 설명으로 옳은 것은?",
+"choices": [
+"압력을 가하지 않으면 물이 설탕 수용액에서 순수한 물 쪽으로 이동한다.",
+"외부 압력이 삼투압과 같으면 설탕 분자가 반투막을 통과한다.",
+"외부 압력이 삼투압과 같으면 용매의 알짜 이동이 멈춘다.",
+"외부 압력이 삼투압보다 크면 물이 순수한 물에서 설탕 수용액 쪽으로 이동한다.",
+"설탕 수용액의 삼투압은 온도와 관계없이 일정하다."
+],
+"answer": "③",
+"solution": "용액 쪽에 삼투압과 같은 크기의 압력을 가하면 삼투에 의한 용매의 이동과 압력에 의한 이동 경향이 균형을 이룬다. 따라서 반투막을 통한 용매의 알짜 이동이 멈춘다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-39c0b5f63e",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "300 K에서 반투막을 사이에 두고 0.10 M 포도당 수용액 A와 0.15 M 요소 수용액 B를 접촉시켰다. 두 용질은 반투막을 통과하지 않으며, 처음에는 양쪽에 같은 압력이 작용한다. 용매의 알짜 이동 방향과 이를 막기 위해 B에 추가로 가해야 할 최소 압력으로 옳은 것은? 단, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"choices": [
+"A에서 B로, $1.23$ atm",
+"A에서 B로, $3.69$ atm",
+"B에서 A로, $1.23$ atm",
+"B에서 A로, $2.46$ atm",
+"알짜 이동 없음, $0$ atm"
+],
+"answer": "①",
+"solution": "B의 몰 농도가 더 크므로 용매는 A에서 B로 이동한다. 두 용액의 삼투압 차는 $(0.15-0.10)×0.082×300=1.23$ atm이므로 B에 이만큼의 추가 압력을 가하면 이동을 막을 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-43b58c5c1a",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "주관식",
+"diff": 3,
+"body": "27 °C에서 비전해질 X 1.64 g을 물에 녹여 500 mL의 수용액을 만들었더니 삼투압이 0.246 atm이었다. X의 몰 질량을 구하시오. 단, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"selfGrade": true,
+"answer": "$328$ g/mol",
+"solution": "용질의 몰수는 $n=πV/(RT)=0.246×0.500/(0.082×300)=0.00500$ mol이다. 따라서 X의 몰 질량은 $1.64/0.00500=328$ g/mol이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-5a6a778618",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "17 °C에서 0.40 M 설탕 수용액 100 mL에 물을 넣어 전체 부피를 250 mL로 만들었다. 묽힌 용액의 삼투압은? 단, 설탕은 비전해질이고 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"choices": [
+"$1.52$ atm",
+"$2.38$ atm",
+"$3.80$ atm",
+"$5.95$ atm",
+"$9.51$ atm"
+],
+"answer": "③",
+"solution": "묽힌 용액의 몰 농도는 $0.40×100/250=0.16$ M이다. 따라서 $π=0.16×0.082×290=3.8048$ atm이므로 약 $3.80$ atm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-c879084e3e",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "27 °C에서 반투막으로 나뉜 U자관의 한쪽에는 순수한 물을, 다른 쪽에는 비전해질 0.020 mol이 녹아 있는 200 mL의 수용액을 넣었다. 삼투가 진행되어 평형에 도달했을 때 수용액의 부피는 250 mL였고, 수면 높이 차에 의한 압력은 1.97 atm이었다. 처음 수용액의 삼투압은? 단, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"choices": [
+"$1.64$ atm",
+"$1.97$ atm",
+"$2.05$ atm",
+"$2.46$ atm",
+"$3.08$ atm"
+],
+"answer": "④",
+"solution": "처음 수용액의 몰 농도는 $0.020/0.200=0.10$ M이다. 따라서 처음 삼투압은 $0.10×0.082×300=2.46$ atm이며, 평형에서의 1.97 atm은 물이 이동하여 묽어진 용액의 삼투압에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-a6b5763e6f",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "주관식",
+"diff": 4,
+"body": "27 °C에서 포도당 9.0 g과 요소 3.0 g을 함께 물에 녹여 500 mL의 수용액을 만들었다. 이 용액의 삼투압을 구하시오. 단, 두 용질은 비전해질이고, 포도당과 요소의 몰 질량은 각각 180 g/mol, 60 g/mol이며, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"selfGrade": true,
+"answer": "$4.92$ atm",
+"solution": "포도당과 요소의 양은 각각 $9.0/180=0.050$ mol, $3.0/60=0.050$ mol이므로 전체 용질 입자의 양은 0.100 mol이다. 전체 입자 몰 농도는 $0.100/0.500=0.200$ M이므로 삼투압은 $0.200×0.082×300=4.92$ atm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-83e1c49c60",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "27 °C에서 반투막을 사이에 두고 0.10 M 비전해질 수용액 A와 0.25 M 비전해질 수용액 B가 접해 있다. B에 작용하는 압력을 A보다 2.00 atm 크게 유지했을 때 용매의 알짜 이동에 대한 설명으로 옳은 것은? 단, 기체 상수는 $0.082$ L·atm/(mol·K)이고 부피 변화에 따른 농도 변화는 무시한다.",
+"choices": [
+"용매는 A에서 B로 이동하며, 이동을 막으려면 B의 압력을 현재보다 1.69 atm 더 높여야 한다.",
+"용매는 A에서 B로 이동하며, 이동을 막으려면 B의 압력을 현재보다 2.00 atm 더 높여야 한다.",
+"용매는 B에서 A로 이동하며, 이동을 막으려면 A의 압력을 1.69 atm 더 높여야 한다.",
+"B에 가한 압력이 삼투압 차보다 크므로 용매는 B에서 A로 이동한다.",
+"두 압력이 이미 평형을 이루므로 용매의 알짜 이동은 없다."
+],
+"answer": "①",
+"solution": "두 용액의 삼투압 차는 $(0.25-0.10)×0.082×300=3.69$ atm이며, 이는 용매를 A에서 B로 이동시키려는 경향을 만든다. B의 추가 압력 2.00 atm이 이를 일부 상쇄하므로 여전히 A에서 B로 이동하며, 이동을 막으려면 $3.69-2.00=1.69$ atm을 더 가해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-40bab0ffd5",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "27 °C에서 포도당 1.80 g과 비전해질 고분자 X 4.00 g을 물에 녹여 500 mL의 수용액을 만들었더니 삼투압이 0.5904 atm이었다. X의 몰 질량을 구하시오. 단, 포도당의 몰 질량은 180 g/mol이고, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"selfGrade": true,
+"answer": "$2000$ g/mol",
+"solution": "전체 용질의 몰수는 $πV/(RT)=0.5904×0.500/(0.082×300)=0.0120$ mol이다. 포도당은 $1.80/180=0.0100$ mol이므로 X는 0.0020 mol이다. 따라서 X의 몰 질량은 $4.00/0.0020=2000$ g/mol이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-195beb584d",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "27 °C에서 반투막을 사이에 두고 0.12 M 비전해질 수용액 A와 0.20 M 비전해질 수용액 B가 접해 있다. 처음에 A와 B에 각각 1.50 atm, 0.50 atm의 외부 압력을 가했으며, 각 용액의 농도와 부피는 일정하게 유지된다. 용매의 알짜 이동을 멈추게 하려면 B에 추가로 몇 atm의 압력을 더 가해야 하는가? 단, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"selfGrade": true,
+"answer": "$2.97$ atm",
+"solution": "알짜 이동이 없으려면 $P_A-π_A=P_B-π_B$를 만족해야 한다. $π_A=2.952$ atm, $π_B=4.920$ atm이므로 필요한 B의 전체 압력은 $1.50-2.952+4.920=3.468$ atm이다. 따라서 처음의 0.50 atm에서 추가해야 할 압력은 $3.468-0.50=2.968$ atm, 즉 약 $2.97$ atm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-0207b81aad",
+"typeId": "exam-mateng-u1m2s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "27 °C에서 반투막을 사이에 두고 0.150 M 포도당 수용액 A와 비전해질 X 3.28 g이 녹아 있는 200 mL의 수용액 B가 접해 있다. A와 B에 각각 1.00 atm, 2.23 atm의 외부 압력을 가했을 때 용매의 알짜 이동이 없었다. X의 몰 질량을 구하시오. 단, 반투막은 두 용질을 모두 통과시키지 않으며, 기체 상수는 $0.082$ L·atm/(mol·K)이다.",
+"selfGrade": true,
+"answer": "$82$ g/mol",
+"solution": "평형 조건에서 $P_B-P_A=π_B-π_A$이므로 $π_B=0.150×0.082×300+(2.23-1.00)=4.92$ atm이다. 따라서 B의 몰 농도는 $4.92/(0.082×300)=0.200$ M이고, X의 양은 $0.200×0.200=0.0400$ mol이다. X의 몰 질량은 $3.28/0.0400=82$ g/mol이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m2s0t1",
+"custom": true
+},
+{
+"id": "fill-716ddeeaea",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "액체 상태의 물이 증발하는 과정에 대한 설명으로 가장 적절한 것은?",
+"choices": [
+"물 분자를 이루는 산소 원자가 수소 원자로 바뀐다.",
+"물 분자 안의 O–H 공유 결합이 모두 끊어진다.",
+"물 분자가 수소 분자와 산소 분자로 분해된다.",
+"물 분자 사이의 인력을 극복하여 물 분자가 기체 상태로 이동한다.",
+"물 분자 사이에 새로운 공유 결합이 형성된다."
+],
+"answer": "④",
+"solution": "증발은 물 분자가 분자 사이의 인력을 극복하여 기체 상태로 이동하는 현상이다. 이 과정에서도 물 분자 안의 O–H 공유 결합은 유지되므로 물 분자 자체가 분해되지는 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-94e24facc4",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "1기압에서 질량이 같은 $1\\,^\\circ\\mathrm{C}$, $4\\,^\\circ\\mathrm{C}$, $12\\,^\\circ\\mathrm{C}$의 액체 상태 물을 각각 준비하였다. 세 물의 부피를 비교한 설명으로 옳은 것은?",
+"choices": [
+"$1\\,^\\circ\\mathrm{C}$ 물의 부피가 가장 작다.",
+"$4\\,^\\circ\\mathrm{C}$ 물의 부피가 가장 작다.",
+"$12\\,^\\circ\\mathrm{C}$ 물의 부피가 가장 작다.",
+"세 물의 부피는 모두 같다.",
+"온도가 높을수록 물의 부피가 반드시 작아진다."
+],
+"answer": "②",
+"solution": "1기압에서 액체 상태 물의 밀도는 약 $4\\,^\\circ\\mathrm{C}$에서 가장 크다. 부피는 질량을 밀도로 나눈 값이므로 질량이 같으면 밀도가 가장 큰 물의 부피가 가장 작다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-bb1abef2b6",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "질량이 각각 $50\\,\\mathrm{g}$인 물과 금속 조각에 같은 열량을 공급하였다. 물의 비열이 금속의 비열보다 클 때, 이에 대한 설명으로 옳은 것은? 단, 열손실과 상태 변화는 없다.",
+"choices": [
+"물의 온도 변화가 금속보다 작다.",
+"물의 온도 변화가 금속보다 크다.",
+"두 물질의 온도 변화는 반드시 같다.",
+"금속의 온도를 높이는 데에는 열이 필요하지 않다.",
+"물의 질량이 가열 전보다 증가한다."
+],
+"answer": "①",
+"solution": "물질이 흡수한 열량은 $Q=mc\\Delta T$이다. 같은 질량의 물질에 같은 열량을 공급하면 비열이 클수록 온도 변화가 작으므로 물의 온도 변화가 더 작다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-83a5e5554b",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "깨끗한 물 위에 가는 바늘을 조심스럽게 놓았더니 바늘이 떠 있었다. 여기에 소량의 세제를 넣자 바늘이 가라앉았다. 이 실험에 대한 설명으로 옳은 것만을 고른 것은? 단, 바늘의 밀도는 물보다 크다.\n\nㄱ. 처음에 바늘이 떠 있었던 현상에는 물의 표면 장력이 관여한다.\nㄴ. 세제를 넣으면 물의 표면 장력이 감소할 수 있다.\nㄷ. 바늘이 가라앉은 것은 세제에 의해 바늘의 질량이 갑자기 커졌기 때문이다.",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "물의 표면 장력은 물 분자 사이의 인력과 관련되며, 조심스럽게 놓은 가는 바늘을 지탱할 수 있다. 세제를 넣으면 표면 장력이 감소하여 바늘이 가라앉을 수 있다. 이를 바늘의 질량이 갑자기 증가했기 때문이라고 설명하는 것은 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-cae544f900",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "1기압에서 일정한 질량의 액체 상태 물을 $9\\,^\\circ\\mathrm{C}$에서 $4\\,^\\circ\\mathrm{C}$로, 다시 $1\\,^\\circ\\mathrm{C}$로 천천히 냉각하였다. 두 구간에서 나타나는 변화를 바르게 설명한 것은? 단, 증발은 무시한다.",
+"choices": [
+"두 구간 모두 부피가 감소한다.",
+"두 구간 모두 밀도가 감소한다.",
+"$9\\,^\\circ\\mathrm{C}$에서 $4\\,^\\circ\\mathrm{C}$로 냉각할 때 밀도가 감소한다.",
+"$4\\,^\\circ\\mathrm{C}$에서 $1\\,^\\circ\\mathrm{C}$로 냉각할 때 부피가 감소한다.",
+"$9\\,^\\circ\\mathrm{C}$에서 $4\\,^\\circ\\mathrm{C}$로 냉각할 때 부피가 감소하고, 이후에는 증가한다."
+],
+"answer": "⑤",
+"solution": "물은 $9\\,^\\circ\\mathrm{C}$에서 밀도가 가장 큰 약 $4\\,^\\circ\\mathrm{C}$까지 냉각되면 부피가 감소한다. 이후 $1\\,^\\circ\\mathrm{C}$까지 냉각되면 밀도가 감소하므로 같은 질량의 물이 차지하는 부피는 증가한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-377c1ddbe9",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "물 $120\\,\\mathrm{g}$의 온도를 $5\\,\\mathrm{K}$ 높이는 데 필요한 열량과 액체 A $80\\,\\mathrm{g}$의 온도를 $15\\,\\mathrm{K}$ 높이는 데 필요한 열량이 같았다. 액체 A의 비열은 물의 비열의 몇 배인가? 단, 열손실과 상태 변화는 없다.",
+"choices": [
+"$\\dfrac{1}{4}$배",
+"$\\dfrac{1}{2}$배",
+"$1$배",
+"$2$배",
+"$4$배"
+],
+"answer": "②",
+"solution": "물과 액체 A에 필요한 열량이 같으므로 $120c_{\\mathrm{물}}\\times5=80c_{\\mathrm{A}}\\times15$이다. 따라서 $c_{\\mathrm{A}}/c_{\\mathrm{물}}=600/1200=1/2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-6d66270c4d",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "1기압에서 얼음이 녹아 액체 상태의 물이 되는 과정에 대한 설명으로 옳은 것만을 고른 것은?\n\nㄱ. 물 분자 안의 O–H 공유 결합이 끊어져 물 분자의 수가 증가한다.\nㄴ. 얼음의 빈 공간이 많은 규칙적인 구조가 무너지면서 같은 질량이 차지하는 부피가 감소한다.\nㄷ. 녹은 물에서도 물 분자 사이에 수소 결합이 존재한다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "얼음이 녹을 때 물 분자 안의 O–H 공유 결합은 유지되므로 물 분자의 수는 증가하지 않는다. 얼음의 빈 공간이 많은 구조가 무너지면서 부피가 감소하지만, 액체 상태에서도 물 분자 사이의 수소 결합은 존재한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-d8af143ffc",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "가을에 전체 수온이 $7\\,^\\circ\\mathrm{C}$였던 깊은 담수 호수가 수면을 통해 서서히 열을 잃고 있다. 이 호수의 냉각 과정에 대한 설명으로 옳은 것만을 고른 것은? 단, 기압은 1기압이며 바람과 물의 유입은 무시한다.\n\nㄱ. 수면의 물이 $7\\,^\\circ\\mathrm{C}$에서 $5\\,^\\circ\\mathrm{C}$로 냉각되면 밀도가 증가하여 아래로 이동할 수 있다.\nㄴ. 수면의 물이 $4\\,^\\circ\\mathrm{C}$보다 낮은 온도로 냉각되면 밀도가 감소하여 위쪽에 머물기 쉽다.\nㄷ. 수면에 생긴 얼음은 액체 상태의 물보다 밀도가 커서 호수 바닥으로 가라앉는다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄷ"
+],
+"answer": "①",
+"solution": "물은 약 $4\\,^\\circ\\mathrm{C}$까지 냉각되는 동안 밀도가 증가하므로 수면에서 냉각된 물이 아래로 이동할 수 있다. 반면 $4\\,^\\circ\\mathrm{C}$보다 낮은 온도로 냉각되면 밀도가 감소하여 위쪽에 머물기 쉽다. 얼음은 액체 상태의 물보다 밀도가 작으므로 수면에 뜬다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-4ab3a3c03a",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "물의 성질에 관한 설명으로 옳은 것만을 고른 것은?\n\nㄱ. 같은 온도의 물에서는 시료의 질량이 두 배가 되면 비열도 두 배가 된다.\nㄴ. 같은 질량의 물과 액체 A에 같은 열량을 공급했을 때 물의 온도가 더 조금 상승했다면, 물의 비열이 더 크다.\nㄷ. 물방울이 표면적을 줄이는 모양을 이루려는 성질과 물의 높은 비열은 모두 물 분자 사이의 인력과 관련이 있다.\n\n단, 가열 과정에서 열손실과 상태 변화는 없다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "비열은 물질의 단위 질량당 온도를 높이는 데 필요한 열량이므로 시료의 질량이 달라져도 같은 조건에서 변하지 않는다. 같은 질량에 같은 열량을 공급했을 때 온도 상승이 작을수록 비열이 크다. 물의 표면 장력과 높은 비열은 모두 수소 결합을 비롯한 물 분자 사이의 인력과 관련이 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-65f93f1a80",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "물과 액체 A를 이용하여 다음 두 실험을 하였다.\n\n• 실험 I: 질량이 같은 물과 A에 각각 같은 열량을 공급하였더니 온도가 각각 $4\\,\\mathrm{K}$, $10\\,\\mathrm{K}$ 상승하였다.\n• 실험 II: 부피가 같은 물과 A에 각각 같은 열량을 공급하였더니 온도가 각각 $6\\,\\mathrm{K}$, $20\\,\\mathrm{K}$ 상승하였다.\n\n액체 A $200\\,\\mathrm{mL}$의 온도를 $18\\,\\mathrm{K}$ 높이는 데 필요한 열량을 $\\mathrm{J}$ 단위로 구하시오. 단, 물의 밀도는 $1.00\\,\\mathrm{g/mL}$, 비열은 $4.20\\,\\mathrm{J/(g\\cdot K)}$이고 두 액체의 밀도와 비열은 실험 범위에서 일정하다. 열손실과 상태 변화는 없다.",
+"selfGrade": true,
+"answer": "$4536\\,\\mathrm{J}$",
+"solution": "실험 I에서 $c_{\\mathrm{A}}/c_{\\mathrm{물}}=4/10$이므로 A의 비열은 $1.68\\,\\mathrm{J/(g\\cdot K)}$이다. 실험 II에서 $\\rho_{\\mathrm{물}}c_{\\mathrm{물}}\\times6=\\rho_{\\mathrm{A}}c_{\\mathrm{A}}\\times20$이므로 A의 밀도는 $0.75\\,\\mathrm{g/mL}$이다. 따라서 A $200\\,\\mathrm{mL}$의 질량은 $150\\,\\mathrm{g}$이며, 필요한 열량은 $Q=150\\times1.68\\times18=4536\\,\\mathrm{J}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-b5cb3253f9",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "1기압에서 $0\\,\\mathrm{^\\circ C}$의 얼음과 $0\\,\\mathrm{^\\circ C}$의 물을 합친 질량은 $190\\,\\mathrm{g}$이고, 얼음 자체의 부피와 물 자체의 부피를 더한 값은 $200\\,\\mathrm{mL}$이다. 이에 대한 설명으로 옳은 것만을 고른 것은? 단, 얼음과 물의 밀도는 각각 $0.90\\,\\mathrm{g/mL}$, $1.00\\,\\mathrm{g/mL}$로 계산하며, 상태 변화와 물질 손실은 없다.\n\nㄱ. 얼음과 액체 상태 물에 들어 있는 물 분자 수의 비는 $9:10$이다.\nㄴ. 얼음 자체의 부피와 액체 상태 물 자체의 부피는 같다.\nㄷ. 얼음에 들어 있는 물 분자 1개의 질량은 액체 상태 물에 들어 있는 물 분자 1개의 질량의 $0.90$배이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "얼음의 질량을 $x\\,\\mathrm{g}$이라 두면 $x/0.90+(190-x)/1.00=200$이므로 $x=90$이고 물의 질량은 $100\\,\\mathrm{g}$이다. 같은 물질이므로 분자 수의 비는 질량비와 같은 $9:10$이며, 각 부피는 모두 $100\\,\\mathrm{mL}$이다. 상태가 달라도 물 분자 1개의 질량은 같으므로 ㄷ은 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-f7e4863814",
+"typeId": "exam-mateng-u1m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 물의 성질에 대한 학생의 추론이다. 옳은 추론만을 고른 것은?\n\nㄱ. 같은 온도에서 물 $60\\,\\mathrm{g}$과 $180\\,\\mathrm{g}$의 비열은 같으므로, 두 시료의 온도를 각각 $10\\,\\mathrm{K}$ 높이는 데 필요한 열량도 같다.\nㄴ. 1기압에서 물 $1\\,\\mathrm{mL}$에 들어 있는 물 분자 수는 $4\\,\\mathrm{^\\circ C}$일 때가 $1\\,\\mathrm{^\\circ C}$일 때보다 많으므로, 물 분자 1개 자체의 질량도 $4\\,\\mathrm{^\\circ C}$일 때가 더 크다.\nㄷ. 얼음이 녹아도 물 분자 자체는 유지되므로, 녹은 물에서 수소 결합이 관찰된다는 사실은 수소 결합을 분자 사이의 인력으로 설명하는 것과 모순되지 않는다.\nㄹ. 물의 표면 장력이 감소하여 수면에 떠 있던 바늘이 가라앉더라도, 이 사실만으로 물의 비열이 감소했다고 결론 내릴 수는 없다.\n\n단, 가열할 때 열손실과 상태 변화는 없다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "④",
+"solution": "비열이 같더라도 필요한 열량은 질량에 비례하므로 $180\\,\\mathrm{g}$의 물에는 세 배의 열량이 필요하다. $4\\,\\mathrm{^\\circ C}$의 물은 밀도가 더 커서 같은 부피에 분자가 더 많이 들어 있지만, 분자 1개의 질량은 변하지 않는다. 액체 상태에서도 분자 사이의 수소 결합이 존재하므로 ㄷ은 옳다. 표면 장력의 변화만으로 비열의 변화까지 판단할 수 없으므로 ㄹ도 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m0s0t1",
+"custom": true
+},
+{
+"id": "fill-5415b69510",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "결정성 고체와 비결정성 고체에 대한 설명으로 옳은 것은?",
+"choices": [
+"결정성 고체에서는 구성 입자의 배열에 규칙성이 없다.",
+"비결정성 고체는 모두 금속 원자로 이루어져 있다.",
+"고체의 결정성 여부는 구성 원소의 종류만으로 결정된다.",
+"순수한 결정성 고체는 일정한 압력에서 녹는점이 일정하다.",
+"비결정성 고체는 가열해도 부드러워지지 않는다."
+],
+"answer": "④",
+"solution": "결정성 고체는 구성 입자가 규칙적으로 배열되어 있으며, 순수한 물질은 일정한 압력에서 녹는점이 일정하다. 비결정성 고체는 입자 배열에 장거리 규칙성이 없으며, 일반적으로 일정한 온도 범위에서 점차 부드러워진다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-15c97ad63e",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "서로 반대 전하를 띤 이온 사이의 정전기적 인력으로 이루어진 결정은?",
+"choices": [
+"고체 아르곤",
+"브로민화 나트륨",
+"구리",
+"고체 이산화 탄소",
+"다이아몬드"
+],
+"answer": "②",
+"solution": "브로민화 나트륨은 나트륨 이온과 브로민화 이온 사이의 정전기적 인력으로 이루어진 이온 결정이다. 구리는 금속 결정이고, 다이아몬드는 공유 결정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-2d26ba09f0",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "알루미늄 덩어리를 두드리면 얇은 판으로 펼 수 있고, 가늘게 뽑으면 전선으로 사용할 수 있다. 이러한 성질에 대한 설명으로 가장 적절한 것은?",
+"choices": [
+"힘을 받으면 알루미늄 원자가 새로운 종류의 원자로 바뀐다.",
+"알루미늄을 이루는 분자가 쉽게 분리되기 때문이다.",
+"금속 양이온이 고체 내부를 자유롭게 이동하기 때문이다.",
+"힘을 받으면 금속 결합이 모두 끊어져 액체가 되기 때문이다.",
+"입자층의 위치가 달라져도 자유 전자에 의한 금속 결합이 유지될 수 있기 때문이다."
+],
+"answer": "⑤",
+"solution": "금속은 입자층이 밀려 상대적인 위치가 달라져도 금속 양이온과 자유 전자 사이의 인력이 유지될 수 있다. 따라서 두드리면 얇게 펴지는 전성과 가늘게 뽑히는 연성을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-55ff768f31",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "순수한 고체 A를 조사한 결과는 다음과 같다. A에 대한 설명으로 옳은 것은?\n\n• 입자가 규칙적으로 배열되어 있다.\n• 고체 상태에서는 전기가 통하지 않는다.\n• 분해되지 않고 녹인 액체 상태에서는 전기가 통한다.\n• 물에 녹인 수용액에서도 전기가 통한다.",
+"choices": [
+"고체 상태에서 자유 전자가 이동한다.",
+"중성 분자 사이의 인력만으로 이루어진 결정이다.",
+"액체 상태에서 이동할 수 있는 이온이 존재한다.",
+"구성 입자의 배열이 불규칙한 비결정성 고체이다.",
+"고체에 힘을 가하면 금속처럼 쉽게 얇게 펴진다."
+],
+"answer": "③",
+"solution": "A는 고체에서는 전기가 통하지 않지만 용융액과 수용액에서는 전기가 통하므로 이온 결정의 특징을 나타낸다. 고체에서는 이온이 제자리에 묶여 있지만, 용융액과 수용액에서는 이온이 이동하여 전하를 운반한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-d7278a8ad8",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "나프탈렌 결정에 대한 설명으로 옳은 것만을 고른 것은?\n\nㄱ. 결정을 이루는 기본 입자는 분자이다.\nㄴ. 녹을 때 나프탈렌 분자 내부의 공유 결합이 모두 끊어진다.\nㄷ. 분자 사이에 작용하는 인력이 결정 형성에 관여한다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "나프탈렌은 분자들이 분자 사이의 인력으로 모여 이루어진 분자 결정이다. 녹을 때 분자들의 규칙적인 배열은 무너지지만, 분자 내부의 공유 결합이 모두 끊어지는 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-921261dd28",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다이아몬드와 흑연에 대한 설명으로 옳은 것은?",
+"choices": [
+"두 물질은 구성 원소가 같으므로 전기 전도성도 같다.",
+"두 물질은 모두 탄소 원자가 공유 결합으로 연결된 공유 결정이다.",
+"흑연은 전기가 통하므로 금속 결정으로 분류한다.",
+"다이아몬드는 독립된 탄소 분자들이 모여 이루어진 분자 결정이다.",
+"흑연에서 탄소 원자의 배열은 모든 방향으로 다이아몬드와 같다."
+],
+"answer": "②",
+"solution": "다이아몬드와 흑연은 모두 탄소 원자가 공유 결합으로 연결된 공유 결정이다. 그러나 원자의 배열과 결합 구조가 달라 성질이 다르며, 흑연에는 이동 가능한 전자가 있어 전기가 통한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-6fd9b88106",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "고체 A와 B에 대한 관찰 결과가 다음과 같다. 이에 대한 판단으로 옳은 것만을 고른 것은?\n\n• A: 순수한 물질이며, 일정한 압력에서 가열하면 일정한 온도에서 녹는다. 고체 상태에서 전기가 통하지 않는다.\n• B: 입자 배열에 장거리 규칙성이 없으며, 가열하면 일정한 온도 범위에서 점차 부드러워진다.\n\nㄱ. A가 이온 결정이라면, 분해되지 않고 녹인 액체에서는 전기가 통한다.\nㄴ. A는 고체에서 전기가 통하지 않으므로 반드시 분자 결정이다.\nㄷ. B는 비결정성 고체로 분류할 수 있다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ"
+],
+"answer": "⑤",
+"solution": "이온 결정은 녹으면 이온이 이동할 수 있으므로 전기가 통한다. 고체에서 전기가 통하지 않는 결정에는 이온 결정, 분자 결정, 다이아몬드와 같은 공유 결정이 있으므로 A를 분자 결정으로 단정할 수 없다. B는 입자 배열과 가열할 때의 특징으로 보아 비결정성 고체이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-f89b531239",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "세 고체 A, B, C는 각각 브로민화 칼륨, 은, 다이아몬드 중 하나이며 서로 다른 물질이다. 다음 관찰을 바탕으로 옳은 것만을 고른 것은?\n\n• A는 고체 상태에서 전기가 통하며, 두드리면 얇게 펴진다.\n• B와 C는 고체 상태에서 전기가 통하지 않는다.\n• B는 물에 잘 녹으며, 그 수용액에는 전기가 통한다.\n\nㄱ. A에서는 자유 전자가 전하를 운반한다.\nㄴ. B에서는 서로 반대 전하를 띤 이온 사이의 인력이 결정 형성에 관여한다.\nㄷ. C는 독립된 분자들이 규칙적으로 배열된 결정이다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ",
+"ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "①",
+"solution": "A는 전기 전도성과 전성을 나타내는 은이며, B는 물에 녹아 전기가 통하는 수용액을 만드는 브로민화 칼륨이다. 따라서 C는 다이아몬드이다. 다이아몬드는 독립된 분자로 이루어지지 않고 탄소 원자가 공유 결합으로 연속적으로 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-0e471ba023",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "이온 결정과 금속 결정에 힘을 가할 때의 성질을 비교한 설명이다. 옳은 것만을 고른 것은?\n\nㄱ. 이온 결정에서 입자층이 밀려 같은 부호의 이온들이 가까워지면 반발력이 작용하여 결정이 깨질 수 있다.\nㄴ. 금속 결정은 입자층이 밀려도 자유 전자와 금속 양이온 사이의 인력이 유지될 수 있다.\nㄷ. 이온 결정이 잘 깨진다는 사실은 이온 사이에 인력이 작용하지 않는다는 뜻이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "이온 결정은 입자층이 밀리면 같은 부호의 이온들이 가까워져 반발하므로 깨질 수 있다. 금속 결정은 입자층의 위치가 달라져도 자유 전자에 의한 결합이 유지될 수 있다. 이온 결정이 잘 깨지는 것은 이온 사이에 인력이 없어서가 아니라 힘을 받을 때 이온의 상대적인 위치가 달라지기 때문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-55e417874d",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "고체 A, B, C, D는 각각 브로민화 칼륨, 구리, 흑연, 나프탈렌 중 하나이며 서로 다른 물질이다. 다음 조건을 모두 만족할 때 A, B, C, D의 물질명을 순서대로 쓰시오.\n\n• 고체 상태에서 전기가 통하는 물질은 A와 C뿐이다.\n• B는 분해되지 않고 녹인 액체 상태에서 전기가 통한다.\n• C와 D를 이루는 원자들은 각각 공유 결합을 하고 있지만, 독립된 분자를 이루는 물질은 D뿐이다.",
+"selfGrade": true,
+"answer": "구리, 브로민화 칼륨, 흑연, 나프탈렌",
+"solution": "고체에서 전기가 통하는 A와 C는 구리와 흑연이다. 이 중 원자들이 공유 결합으로 연결된 C는 흑연이므로 A는 구리이다. 고체에서는 전기가 통하지 않지만 용융액에서는 전기가 통하는 B는 브로민화 칼륨이며, 독립된 분자로 이루어진 D는 나프탈렌이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-1ae067c7ab",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "학생이 고체의 성질을 근거로 다음과 같이 추론하였다. 제시된 정보만으로 반드시 옳다고 판단할 수 있는 추론의 기호를 모두 쓰시오. 각 물질은 순물질이며, 가열할 때 화학 반응이나 분해가 일어나지 않는다고 가정한다.\n\nㄱ. 고체 상태에서 전기가 통하는 결정이므로 금속 결정이다.\nㄴ. 독립된 분자들이 분자 사이의 인력으로 규칙적으로 배열되어 있으므로 분자 결정이다.\nㄷ. 일정한 압력에서 녹는점이 일정하므로 이온 결정이다.\nㄹ. 이온 결정이므로 녹이면 이동 가능한 이온이 생겨 전기가 통한다.\nㅁ. 구성 원소와 원자 수의 비가 같은 두 고체이므로 입자 배열의 규칙성도 같다.",
+"selfGrade": true,
+"answer": "ㄴ, ㄹ",
+"solution": "독립된 분자들이 분자 사이의 인력으로 규칙적으로 배열된 고체는 분자 결정이며, 이온 결정의 용융액에서는 이온의 이동으로 전기가 통한다. 흑연처럼 금속 결정이 아니면서 고체에서 전기가 통하는 경우가 있으므로 ㄱ은 성립하지 않는다. 일정한 녹는점만으로 결정의 결합 종류를 알 수 없고, 조성이 같아도 입자 배열은 다를 수 있으므로 ㄷ과 ㅁ도 성립하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-15fac077b6",
+"typeId": "exam-mateng-u0m2s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 주장을 모두 반박하려고 한다. 아래 후보 중 각 주장에 대한 반례를 하나씩 골라, 주장 1과 주장 2의 순서대로 쓰시오. 이어서 두 반례가 고체 상태에서 전하를 운반하는 입자의 종류를 공통으로 쓰시오.\n\n주장 1: 원자들이 공유 결합으로 연결된 공유 결정은 모두 고체 상태에서 전기가 통하지 않는다.\n주장 2: 고체 상태에서 전기가 통하는 결정은 모두 원자들이 공유 결합으로 연결된 공유 결정이다.\n\n후보: 염화 칼슘, 다이아몬드, 흑연, 고체 이산화 탄소, 철",
+"selfGrade": true,
+"answer": "흑연, 철, 전자",
+"solution": "흑연은 공유 결정이면서 이동 가능한 전자가 있어 전기가 통하므로 주장 1의 반례이다. 철은 금속 결정이면서 고체 상태에서 전기가 통하므로 주장 2의 반례이다. 두 물질 모두 고체 상태에서 전자가 전하를 운반하지만, 결정의 결합 구조는 서로 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u0m2s0t1",
+"custom": true
+},
+{
+"id": "fill-8b99bba4fd",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "비휘발성·비전해질 용질이 녹아 있는 용액의 증기 압력에 대한 설명으로 옳은 것은? 단, 온도는 일정하며 용액은 라울 법칙을 따른다.",
+"choices": [
+"용액의 증기 압력은 용질이 증발하여 나타내는 압력이다.",
+"용매의 몰 분율이 작을수록 용액의 증기 압력이 높다.",
+"용액의 증기 압력은 순수한 용매의 증기 압력보다 낮다.",
+"용액의 증기 압력은 순수한 용매의 증기 압력에 용질의 몰 분율을 곱한 값이다.",
+"용매의 양이 일정할 때 용질을 더 녹이면 용액의 증기 압력이 높아진다."
+],
+"answer": "③",
+"solution": "비휘발성 용질은 증발하지 않으므로 용액의 증기 압력은 용매의 증발에 의해 나타난다. 라울 법칙에 따라 $P=X_{용매}P^\\circ$이며, 용액에서 용매의 몰 분율은 1보다 작으므로 $P<P^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-3fa436a667",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "어떤 온도에서 순수한 물의 증기 압력은 $40\\,\\mathrm{mmHg}$이다. 물 $3.6\\,\\mathrm{mol}$에 비휘발성·비전해질 용질 $0.4\\,\\mathrm{mol}$을 녹인 수용액의 같은 온도에서의 증기 압력은? 단, 수용액은 라울 법칙을 따른다.",
+"choices": [
+"$4\\,\\mathrm{mmHg}$",
+"$16\\,\\mathrm{mmHg}$",
+"$32\\,\\mathrm{mmHg}$",
+"$36\\,\\mathrm{mmHg}$",
+"$40\\,\\mathrm{mmHg}$"
+],
+"answer": "④",
+"solution": "물의 몰 분율은 $3.6/(3.6+0.4)=0.9$이다. 따라서 용액의 증기 압력은 $P=0.9\\times40=36\\,\\mathrm{mmHg}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-c05113b012",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "같은 온도에서 순수한 용매의 증기 압력이 $P^\\circ$이고, 비휘발성·비전해질 용질을 녹인 용액의 증기 압력 내림이 $0.075P^\\circ$이다. 이 용액에서 용매의 몰 분율은? 단, 용액은 라울 법칙을 따른다.",
+"choices": [
+"$0.075$",
+"$0.925$",
+"$0.750$",
+"$0.850$",
+"$1.075$"
+],
+"answer": "②",
+"solution": "상대 증기 압력 내림 $\\Delta P/P^\\circ$는 용질의 몰 분율과 같으므로 용질의 몰 분율은 $0.075$이다. 용매와 용질의 몰 분율의 합은 1이므로 용매의 몰 분율은 $1-0.075=0.925$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-f7abbcea57",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "각각 물 $90\\,\\mathrm{g}$에 다음 용질을 녹여 수용액 A, B, C를 만들었다. 같은 온도에서 세 수용액의 증기 압력을 비교한 것으로 옳은 것은? 단, 용질은 모두 비휘발성·비전해질이고, 수용액은 라울 법칙을 따른다.\n\nA: 요소 $6\\,\\mathrm{g}$, 요소의 몰 질량 $60\\,\\mathrm{g/mol}$\nB: 포도당 $18\\,\\mathrm{g}$, 포도당의 몰 질량 $180\\,\\mathrm{g/mol}$\nC: 설탕 $17.1\\,\\mathrm{g}$, 설탕의 몰 질량 $342\\,\\mathrm{g/mol}$",
+"choices": [
+"$P_A<P_B<P_C$",
+"$P_C<P_A=P_B$",
+"$P_A=P_B<P_C$",
+"$P_A=P_B=P_C$",
+"$P_B<P_C<P_A$"
+],
+"answer": "③",
+"solution": "A, B, C에 녹아 있는 용질의 양은 각각 $0.10\\,\\mathrm{mol}$, $0.10\\,\\mathrm{mol}$, $0.05\\,\\mathrm{mol}$이다. 용매의 양이 같으므로 용질의 양이 같은 A와 B는 증기 압력이 같다. C는 용질의 몰 분율이 더 작아 증기 압력이 가장 높다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-4cd83f4d37",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "물 $2.7\\,\\mathrm{mol}$에 비휘발성·비전해질 용질 $0.3\\,\\mathrm{mol}$을 녹인 수용액에 물 $0.6\\,\\mathrm{mol}$을 추가하였다. 순수한 물의 증기 압력이 $30\\,\\mathrm{mmHg}$인 온도에서, 물을 추가한 후 수용액의 증기 압력은? 단, 물질의 손실은 없으며 수용액은 라울 법칙을 따른다.",
+"choices": [
+"$24.0\\,\\mathrm{mmHg}$",
+"$25.0\\,\\mathrm{mmHg}$",
+"$26.5\\,\\mathrm{mmHg}$",
+"$27.0\\,\\mathrm{mmHg}$",
+"$27.5\\,\\mathrm{mmHg}$"
+],
+"answer": "⑤",
+"solution": "물을 추가한 후 물의 양은 $3.3\\,\\mathrm{mol}$이고 용질의 양은 $0.3\\,\\mathrm{mol}$이다. 물의 몰 분율은 $3.3/3.6=11/12$이므로 증기 압력은 $30\\times11/12=27.5\\,\\mathrm{mmHg}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-cab1b34d42",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "물 $72\\,\\mathrm{g}$에 비휘발성·비전해질 용질 X $9\\,\\mathrm{g}$을 녹였다. 같은 온도에서 이 수용액의 증기 압력 내림이 순수한 물의 증기 압력의 $1/41$일 때, X의 몰 질량은? 단, 물의 몰 질량은 $18\\,\\mathrm{g/mol}$이고 수용액은 라울 법칙을 따른다.",
+"choices": [
+"$90\\,\\mathrm{g/mol}$",
+"$45\\,\\mathrm{g/mol}$",
+"$60\\,\\mathrm{g/mol}$",
+"$120\\,\\mathrm{g/mol}$",
+"$180\\,\\mathrm{g/mol}$"
+],
+"answer": "①",
+"solution": "물의 양은 $72/18=4\\,\\mathrm{mol}$이다. X의 양을 $n\\,\\mathrm{mol}$이라 하면 $n/(4+n)=1/41$이므로 $n=0.1$이다. 따라서 X의 몰 질량은 $9/0.1=90\\,\\mathrm{g/mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-52bd862a0b",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "같은 용매와 같은 비휘발성·비전해질 용질로 만든 용액 A, B의 조성이 다음과 같다. 두 용액을 모두 혼합한 용액의 증기 압력은? 단, 혼합 과정에서 물질의 손실은 없고, 측정 온도에서 순수한 용매의 증기 압력은 $65\\,\\mathrm{mmHg}$이며, 모든 용액은 라울 법칙을 따른다.\n\nA: 용매 $1.8\\,\\mathrm{mol}$, 용질 $0.2\\,\\mathrm{mol}$\nB: 용매 $3.6\\,\\mathrm{mol}$, 용질 $0.9\\,\\mathrm{mol}$",
+"choices": [
+"$52.0\\,\\mathrm{mmHg}$",
+"$54.0\\,\\mathrm{mmHg}$",
+"$55.25\\,\\mathrm{mmHg}$",
+"$58.5\\,\\mathrm{mmHg}$",
+"$60.0\\,\\mathrm{mmHg}$"
+],
+"answer": "②",
+"solution": "혼합 후 용매와 용질의 양은 각각 $5.4\\,\\mathrm{mol}$과 $1.1\\,\\mathrm{mol}$이다. 따라서 용매의 몰 분율은 $5.4/6.5$이고, 증기 압력은 $65\\times5.4/6.5=54.0\\,\\mathrm{mmHg}$이다. 혼합 용액의 증기 압력은 각 용액의 증기 압력을 단순히 산술 평균하여 구할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-e9d6846ab0",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "물 $180\\,\\mathrm{g}$에 비휘발성·비전해질 용질 $1.0\\,\\mathrm{mol}$을 녹인 수용액에서 물 $36\\,\\mathrm{g}$만 증발시켰다. 증발 전후 같은 온도에서 측정한 증기 압력 내림을 각각 $\\Delta P_1$, $\\Delta P_2$라 할 때, $\\Delta P_2/\\Delta P_1$은? 단, 물의 몰 질량은 $18\\,\\mathrm{g/mol}$이고, 용질의 석출은 없으며 수용액은 라울 법칙을 따른다.",
+"choices": [
+"$\\frac{9}{11}$",
+"$\\frac{4}{5}$",
+"$\\frac{5}{4}$",
+"$\\frac{11}{9}$",
+"$\\frac{11}{8}$"
+],
+"answer": "④",
+"solution": "물의 양은 증발 전 $10\\,\\mathrm{mol}$, 증발 후 $8\\,\\mathrm{mol}$이며 용질의 양은 일정하다. 따라서 증기 압력 내림은 각각 $\\Delta P_1=P^\\circ/11$, $\\Delta P_2=P^\\circ/9$이다. 두 값의 비는 $\\Delta P_2/\\Delta P_1=11/9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-2544f1b78e",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "같은 양의 물에 비휘발성·비전해질 용질 X와 Y를 각각 녹여 수용액 A, B를 만들었다. A에는 X를 $m\\,\\mathrm{g}$, B에는 Y를 $2m\\,\\mathrm{g}$ 녹였으며, Y의 몰 질량은 X의 3배이다. 같은 온도에서 A의 증기 압력 내림이 순수한 물의 증기 압력 $P^\\circ$의 $3/25$일 때, B의 증기 압력 내림은? 단, 두 수용액은 라울 법칙을 따른다.",
+"choices": [
+"$\\frac{2}{25}P^\\circ$",
+"$\\frac{3}{50}P^\\circ$",
+"$\\frac{1}{11}P^\\circ$",
+"$\\frac{2}{23}P^\\circ$",
+"$\\frac{1}{12}P^\\circ$"
+],
+"answer": "⑤",
+"solution": "A에서 용질의 몰 분율이 $3/25$이므로 물과 X의 몰수 비는 $22:3$이다. B에 녹인 Y의 몰수는 X의 $2/3$배이므로 물과 Y의 몰수 비는 $22:2$이다. 따라서 B의 용질 몰 분율은 $2/24=1/12$이고, 증기 압력 내림은 $P^\\circ/12$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-b0bd80a951",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "비휘발성·비전해질 용질 X가 녹아 있는 수용액의 증기 압력은 어떤 온도에서 $0.900P^\\circ$이었다. 이 수용액에 물 $18.0\\,\\mathrm{g}$을 추가하였더니 같은 온도에서 증기 압력이 $0.920P^\\circ$이 되었다. 처음 수용액에 들어 있던 물의 질량을 구하시오. 단, $P^\\circ$는 같은 온도에서 순수한 물의 증기 압력이고, 물의 몰 질량은 $18.0\\,\\mathrm{g/mol}$이다. 물질의 손실은 없으며 수용액은 라울 법칙을 따른다.",
+"selfGrade": true,
+"answer": "$64.8\\,\\mathrm{g}$",
+"solution": "처음 물과 X의 양을 각각 $a\\,\\mathrm{mol}$, $b\\,\\mathrm{mol}$이라 하면 $a/(a+b)=0.900$이므로 $a=9b$이다. 추가한 물은 $1.00\\,\\mathrm{mol}$이므로 $(a+1)/(a+b+1)=0.920$이다. 여기에 $a=9b$를 대입하면 $b=0.400$, $a=3.60$을 얻는다. 따라서 처음 물의 질량은 $3.60\\times18.0=64.8\\,\\mathrm{g}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-f446f64c51",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "비휘발성·비전해질 용질 X, Y를 이용하여 다음 두 수용액을 만들었다. 같은 온도에서 두 수용액의 증기 압력은 모두 $\\frac{50}{53}P^\\circ$이었다. X와 Y의 몰 질량을 순서대로 구하시오. 단, $P^\\circ$는 같은 온도에서 순수한 물의 증기 압력이고, 물의 몰 질량은 $18\\,\\mathrm{g/mol}$이다. 두 용질은 서로 반응하지 않으며 수용액은 라울 법칙을 따른다.\n\nA: 물 $90\\,\\mathrm{g}$에 X $12\\,\\mathrm{g}$과 Y $18\\,\\mathrm{g}$을 녹인 수용액\nB: 물 $90\\,\\mathrm{g}$에 X $24\\,\\mathrm{g}$과 Y $9\\,\\mathrm{g}$을 녹인 수용액",
+"selfGrade": true,
+"answer": "$120\\,\\mathrm{g/mol},\\ 90\\,\\mathrm{g/mol}$",
+"solution": "각 수용액에서 물은 $5\\,\\mathrm{mol}$이므로 전체 용질의 양을 $n\\,\\mathrm{mol}$이라 하면 $5/(5+n)=50/53$에서 $n=0.30$이다. A에 들어 있는 X와 Y의 양을 각각 $x\\,\\mathrm{mol}$, $y\\,\\mathrm{mol}$이라 하면 $x+y=0.30$, $2x+y/2=0.30$이다. 두 식을 풀면 $x=0.10$, $y=0.20$이다. 따라서 몰 질량은 X가 $12/0.10=120\\,\\mathrm{g/mol}$, Y가 $18/0.20=90\\,\\mathrm{g/mol}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+},
+{
+"id": "fill-251978d27b",
+"typeId": "exam-mateng-u1m1s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "물 $180\\,\\mathrm{g}$에 비휘발성·비전해질 용질 X를 녹인 수용액의 증기 압력이 $\\frac{25}{26}P^\\circ$이었다. 이 수용액에서 물 $36\\,\\mathrm{g}$만 증발시킨 다음 X $12\\,\\mathrm{g}$을 추가하여 모두 녹였더니, 같은 온도에서 증기 압력이 $\\frac{40}{43}P^\\circ$이 되었다. 처음 녹인 X의 질량과 X의 몰 질량을 순서대로 구하시오. 단, $P^\\circ$는 같은 온도에서 순수한 물의 증기 압력이고, 물의 몰 질량은 $18\\,\\mathrm{g/mol}$이다. 용질의 손실이나 석출은 없으며 수용액은 라울 법칙을 따른다.",
+"selfGrade": true,
+"answer": "$24\\,\\mathrm{g},\\ 60\\,\\mathrm{g/mol}$",
+"solution": "처음 물은 $10\\,\\mathrm{mol}$이므로 처음 X의 양을 $n\\,\\mathrm{mol}$이라 하면 $10/(10+n)=25/26$에서 $n=0.40$이다. 물을 증발시킨 후 물은 $8\\,\\mathrm{mol}$이며, 최종 X의 양을 $n'\\,\\mathrm{mol}$이라 하면 $8/(8+n')=40/43$에서 $n'=0.60$이다. 추가한 X $12\\,\\mathrm{g}$이 $0.20\\,\\mathrm{mol}$에 해당하므로 X의 몰 질량은 $60\\,\\mathrm{g/mol}$이다. 따라서 처음 녹인 X의 질량은 $0.40\\times60=24\\,\\mathrm{g}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-mateng-u1m1s0t1",
+"custom": true
+}
+]
