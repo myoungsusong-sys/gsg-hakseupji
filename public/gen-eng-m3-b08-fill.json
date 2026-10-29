@@ -1418,5 +1418,318 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b08-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-56378b47cc",
+"typeId": "eng-m3-b08-u6m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 표현과 우리말 뜻이 바르게 연결된 것은?",
+"choices": [
+"Watch your mouth. - 입을 크게 벌려.",
+"Give me a break. - 잠시 쉬어.",
+"Who knows? - 누가 그를 아니?",
+"I knew it. - 그럴 줄 알았어.",
+"Break a leg. - 다리를 다치지 않게 조심해."
+],
+"answer": "④",
+"solution": "‘I knew it.’은 예상했던 일이 실제로 일어났을 때 쓰는 표현으로 ‘그럴 줄 알았어.’라는 뜻이다. 나머지 선지는 영어 표현의 관용적인 의미와 우리말 뜻이 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4176d55024",
+"typeId": "eng-m3-b08-u6m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말을 영어로 가장 바르게 옮긴 것은?\n\n내가 비르발만큼 현명하다면, 그 질문에 대답할 수 있을 텐데.",
+"choices": [
+"If I am as wise as Birbal, I could answer the question.",
+"If I were as wise as Birbal, I could answer the question.",
+"If I were so wise than Birbal, I can answer the question.",
+"If I was wiser as Birbal, I could answer the question.",
+"If I were as wisely as Birbal, I could answer the question."
+],
+"answer": "②",
+"solution": "현재 사실과 반대되는 가정은 ‘If＋주어＋동사의 과거형, 주어＋could/would＋동사원형’으로 나타낸다. 또한 ‘비르발만큼 현명한’은 ‘as wise as Birbal’로 표현하므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b0a2470f35",
+"typeId": "eng-m3-b08-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"If Akbar were in Birbal's place, what will he do?",
+"If I were you, I will give the child some sweets.",
+"If the pot were wider, the pumpkin would come out easily.",
+"If Birbal has more time, he would answer the question.",
+"If the officials were wise, they can solve the problem."
+],
+"answer": "③",
+"solution": "가정법 과거의 주절에는 ‘would/could＋동사원형’을 쓰며, if절에는 동사의 과거형을 쓴다. ③은 ‘If＋주어＋were, 주어＋would＋동사원형’의 구조를 바르게 갖추었다. 나머지는 현재형이나 will, can을 잘못 사용했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9d35e68e6c",
+"typeId": "eng-m3-b08-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 가장 바르게 옮긴 것은?\n\n저는 왕으로부터 그 항아리를 조심해서 다루라는 요청을 받아 왔습니다.",
+"choices": [
+"I have asked by the king to handle the pot carefully.",
+"I have been asked by the king handling the pot carefully.",
+"I have been asked the king to handle carefully the pot.",
+"I have been asked by the king to handle the pot carefully.",
+"I was been asked by the king to handle the pot carefully."
+],
+"answer": "④",
+"solution": "‘요청을 받아 왔다’는 현재완료 수동태인 ‘have been asked’로 표현한다. ‘누구에게 어떤 일을 요청받다’는 ‘be asked by＋사람＋to부정사’의 어순을 쓰므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a1ec3a245b",
+"typeId": "eng-m3-b08-u6m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 현재 사실과 반대되는 의미가 되도록 한 문장의 가정법 과거 문장으로 쓰시오.\n\nI am not Birbal. Therefore, I cannot solve the king's strange question.\n\n→ If ________________________________________________.",
+"selfGrade": true,
+"answer": "If I were Birbal, I could solve the king's strange question.",
+"solution": "현재 사실은 ‘나는 비르발이 아니므로 그 질문을 해결할 수 없다’이다. 반대 상황을 가정하므로 if절에는 ‘were’를, 주절에는 ‘could＋동사원형’을 쓴다. 따라서 제시된 두 문장을 가정법 과거 한 문장으로 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-fcc2f8ad53",
+"typeId": "eng-m3-b08-u6m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 일치하도록 괄호 안의 말을 모두 사용하여 문장을 완성하시오. 단, 필요하면 형태를 바꾸고 단어를 추가할 수 있다.\n\n그 관리는 왕으로부터 지혜가 가득 든 항아리를 가져오라는 명을 받아 왔다.\n\n(the official, ask, the king, bring, a potful of wisdom)",
+"selfGrade": true,
+"answer": "The official has been asked by the king to bring a potful of wisdom.",
+"solution": "‘명을 받아 왔다’는 과거부터 현재까지 이어진 수동의 의미이므로 현재완료 수동태 ‘has been asked’를 사용한다. ‘왕으로부터’는 ‘by the king’, ‘가져오라고’는 ‘to bring’으로 표현한다. 주어가 3인칭 단수이므로 have가 아닌 has를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dbd2554d2f",
+"typeId": "eng-m3-b08-u5m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 배열하여 빈칸을 완성하시오.\n\n이곳은 우리가 수영했던 강이다.\n→ This is the river ____________________.\n\n<보기>\nswam / where / we\n\n<조건>\n• 주어진 단어를 각각 한 번씩 모두 사용할 것",
+"selfGrade": true,
+"answer": "where we swam",
+"solution": "선행사 the river가 장소를 나타내므로 관계부사 where를 사용한다. 관계부사 뒤에는 주어와 동사의 순서로 we swam을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-844abe0ac1",
+"typeId": "eng-m3-b08-u5m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장에서 어법상 잘못된 부분을 고쳐 문장 전체를 다시 쓰시오.\n\nPlease explain the way how you made this bread.\n\n<조건>\n• 관계부사 how를 반드시 사용할 것\n• 필요한 부분만 삭제하고, 나머지 단어의 순서를 바꾸지 말 것",
+"selfGrade": true,
+"answer": "Please explain how you made this bread.",
+"solution": "방법을 나타내는 the way와 관계부사 how는 함께 쓰지 않는다. 조건에서 how를 사용하도록 했으므로 the way를 삭제한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d1b664a9cb",
+"typeId": "eng-m3-b08-u5m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장을 주어진 시작 부분에 이어 같은 뜻의 한 문장으로 바꾸어 쓰시오.\n\nMost of the machines were very difficult to use. Da Vinci could not use them.\n\n→ Most of the machines ____________________.\n\n<조건>\n• ‘too ~ to ...’ 구문을 사용할 것\n• for da Vinci를 포함할 것\n• difficult와 use를 사용할 것\n• 빈칸에 들어갈 부분만 쓸 것",
+"selfGrade": true,
+"answer": "were too difficult for da Vinci to use.",
+"solution": "‘너무 어려워서 사용할 수 없었다’는 too difficult to use로 표현한다. 사용하는 사람이 다빈치임을 나타내기 위해 to부정사 앞에 for da Vinci를 넣는다. use의 목적어는 문장의 주어인 Most of the machines와 의미상 연결되므로 끝에 them을 덧붙이지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bd8e048c8e",
+"typeId": "eng-m3-b08-u5m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 각 빈칸을 완성하시오.\n\n(1) 나는 그가 나에게 빵을 주었던 날을 기억한다.\n→ I remember the day ____________________.\n<보기> he / me / gave / bread / when\n\n(2) 그녀에게 우리가 그 빵을 만든 방법을 말해 주어라.\n→ Tell her ____________________.\n<보기> made / we / how / the bread\n\n(3) 이곳은 내가 그 빵을 샀던 빵집이다.\n→ This is the bakery ____________________.\n<보기> bought / I / where / the bread / in\n\n<조건>\n• 각 빈칸에 관계부사를 사용할 것\n• (1), (2)는 보기의 표현을 각각 한 번씩 모두 사용할 것\n• (3)은 불필요한 단어 하나를 제외하고 나머지를 각각 한 번씩 사용할 것",
+"selfGrade": true,
+"answer": "(1) when he gave me bread (2) how we made the bread (3) where I bought the bread",
+"solution": "날짜를 나타내는 the day 뒤에는 when을 쓰고, 방법을 나타낼 때에는 how 뒤에 주어와 동사를 쓴다. 장소를 나타내는 the bakery 뒤에는 where가 알맞다. where 자체가 ‘그곳에서’라는 의미를 나타내므로 (3)의 in은 제외한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-63cb096135",
+"typeId": "eng-m3-b08-u5m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 다빈치와 그의 주방 기계에 관한 문장이다. 각 문장의 어법상 오류를 고쳐 문장 전체를 쓰시오.\n\n(1) Milan was the city which da Vinci began to work for Ludovico Sforza in the early 1480s.\n(2) The early 1480s were the years where da Vinci began to work for Ludovico Sforza in Milan.\n(3) Most of his kitchen machines were too difficult to use them.\n\n<조건>\n• (1), (2)는 각각 단어 하나만 다른 관계부사로 바꿀 것\n• (3)은 불필요한 단어 하나만 삭제할 것\n• 나머지 표현과 어순은 그대로 유지할 것",
+"selfGrade": true,
+"answer": "(1) Milan was the city where da Vinci began to work for Ludovico Sforza in the early 1480s. (2) The early 1480s were the years when da Vinci began to work for Ludovico Sforza in Milan. (3) Most of his kitchen machines were too difficult to use.",
+"solution": "(1)의 관계절에는 장소를 나타내는 부사어가 필요하므로 which를 where로 바꾼다. (2)는 선행사가 시간을 나타내는 the years이므로 where를 when으로 바꾼다. (3)에서 use의 목적어는 주어인 Most of his kitchen machines와 의미상 연결되므로 them을 삭제한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-fde9a5cc23",
+"typeId": "eng-m3-b08-u5m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 관계부사와 ‘too ~ to ...’ 구문을 모두 사용하여 한 문장으로 바꾸어 쓰시오.\n\nDa Vinci worked in a kitchen. Most of the machines were so difficult that he could not use them in that kitchen.\n\n→ Da Vinci worked in a kitchen ____________________.\n\n<조건>\n• 관계부사 where를 사용할 것\n• most of the machines를 그대로 사용할 것\n• to부정사의 의미상 주어를 for him으로 나타낼 것\n• that, could, them, there를 사용하지 말 것\n• 빈칸에 들어갈 부분만 쓸 것",
+"selfGrade": true,
+"answer": "where most of the machines were too difficult for him to use.",
+"solution": "두 번째 문장의 in that kitchen을 관계부사 where로 바꾸어 a kitchen을 수식하게 한다. ‘너무 어려워서 그가 사용할 수 없었다’는 were too difficult for him to use로 바꾼다. machines가 use의 의미상 목적어이므로 them을 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-48fe03d898",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nAkbar enjoyed having Birbal close to him because Birbal was quick to understand things. Once, Akbar asked his officials how to treat someone who had pulled his hair. The other officials wanted to punish that person. Birbal, however, suggested giving the person sweets. He explained that only Akbar's grandson could have done such a thing. Akbar said that Birbal was right and praised his wisdom.",
+"choices": [
+"the importance of sharing sweets",
+"the difficulties of raising a grandson",
+"Birbal's wisdom in understanding a situation",
+"Akbar's efforts to become a wise official",
+"the need to punish people who break rules"
+],
+"answer": "③",
+"solution": "다른 신하들은 처벌을 주장했지만 비르발은 머리카락을 잡아당길 수 있는 사람이 황제의 손자임을 알아차렸다. 따라서 상황을 정확히 이해한 비르발의 지혜가 글의 중심 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2adf06b485",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nA Persian official came to Akbar to ask for wisdom in a pot. Birbal placed pots over pumpkin flowers and let the pumpkins grow inside them. Weeks later, he gave the visitor a pot containing a large pumpkin. Its opening was too narrow for the pumpkin to pass through. Birbal asked that the pot be returned without being broken. His unusual answer impressed the visitor.",
+"choices": [
+"A Clever Reply to an Unusual Request",
+"A Visitor Who Taught Birbal to Grow Pumpkins",
+"The Best Way to Repair a Broken Pot",
+"Why Akbar Wanted to Visit Persia",
+"A King's Search for Delicious Food"
+],
+"answer": "①",
+"solution": "비르발은 항아리에 지혜를 담아 달라는 특이한 요구에 항아리 속에서 자란 호박으로 응답했다. 이처럼 기발한 방법으로 요구에 답한 내용 전체를 포괄하는 제목은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-513ab0f704",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 담긴 Jake의 중심 생각으로 가장 적절한 것은?\n\nDear Jaeha,\nOur graduation is getting close. Looking back, I remember our camping trip and the film we enjoyed together. Playing basketball after school was another happy part of our time together. Thank you for helping me become better at it. I wish we had spent more time together. Let's stay in touch after graduation.\nYour friend,\nJake",
+"choices": [
+"졸업 전에 새로운 운동을 함께 배우고 싶다.",
+"함께 본 영화의 아쉬운 점을 이야기하고 싶다.",
+"농구를 가르치는 일이 얼마나 힘든지 알리고 싶다.",
+"다음 캠핑 여행의 구체적인 일정을 정하고 싶다.",
+"함께한 추억에 감사하며 졸업 후에도 우정을 이어 가고 싶다."
+],
+"answer": "⑤",
+"solution": "Jake는 캠핑과 농구의 추억을 떠올리며 Jaeha에게 고마움을 전한다. 마지막에는 졸업 후에도 연락하자고 했으므로, 추억에 대한 감사와 우정의 지속을 함께 담은 ⑤가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a0aa921117",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nWhen Akbar said that someone had pulled his hair, his officials immediately called for punishment. Birbal gave a different answer: the person should receive sweets. At first, this sounded foolish to the others. However, Birbal had considered who could act that way toward the emperor. He concluded that it had to be Akbar's grandson, and Akbar confirmed his answer. Birbal's suggestion made sense once the identity of the person was understood.",
+"choices": [
+"A wise official should agree with the largest group.",
+"Understanding the situation can lead to a better judgment.",
+"Giving gifts is the best way to prevent every bad action.",
+"A person's actions should be judged without considering the situation.",
+"An unusual answer is valuable simply because it surprises people."
+],
+"answer": "②",
+"solution": "비르발의 답이 타당했던 이유는 단순히 독특해서가 아니라 행동한 사람과 상황을 정확하게 파악했기 때문이다. 따라서 상황에 대한 이해가 더 나은 판단으로 이어질 수 있다는 ②가 요지이다. ③은 특정 상황에서 나온 제안을 모든 잘못된 행동에 적용하여 지나치게 일반화한 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d751dc8fb8",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nThe Persian king wanted his official to bring back a pot filled with wisdom. An official at Akbar's court could not understand how this was possible, but Birbal accepted the request. He waited while pumpkins grew inside pots with narrow openings. When a pumpkin filled its pot, he presented it to the Persian visitor and asked for the pot to be returned unbroken. The visitor admired Birbal, and Akbar laughed with pleasure after learning how the pumpkin had grown inside.\n\n[요약문]\nBirbal used a (A)________ method to answer a request that seemed (B)________ to fulfill.",
+"choices": [
+"(A) careless — (B) easy",
+"(A) traditional — (B) necessary",
+"(A) dangerous — (B) pleasant",
+"(A) creative — (B) impossible",
+"(A) simple — (B) unimportant"
+],
+"answer": "④",
+"solution": "지혜를 항아리에 담는다는 요구는 신하에게 실현 불가능한 일처럼 보였다. 비르발은 항아리 안에서 호박을 자라게 하는 창의적인 방법으로 이에 답했으므로 creative와 impossible이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0ccebab8c1",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 일화를 함께 소개하는 글의 제목으로 가장 적절한 것은?\n\nIn one incident, Akbar asked what should happen to someone who had pulled his hair. While other officials demanded punishment, Birbal suggested sweets. He reasoned that the person must have been Akbar's grandson. His answer depended on recognizing who could behave so freely toward the emperor.\n\nIn another incident, a Persian visitor requested a pot filled with wisdom. Birbal grew a pumpkin inside a narrow-necked pot and presented it to him. He also asked that the pot be returned unbroken after its contents were removed. The pumpkin could not be taken out under that condition. Through this response, Birbal showed the wisdom the visitor had come to seek.",
+"choices": [
+"Birbal's Wisdom: Finding One Rule for Every Problem",
+"Birbal's Wisdom: Winning Others' Trust by Agreeing with Them",
+"Birbal's Wisdom: Seeing Beyond a Question's Surface",
+"Birbal's Wisdom: Proving That Every Request Can Be Fulfilled Literally",
+"Birbal's Wisdom: Turning Every Difficult Question into a Family Matter"
+],
+"answer": "③",
+"solution": "첫 일화에서 비르발은 처벌 여부라는 표면적인 질문을 넘어 행동한 사람의 정체를 추론한다. 두 번째 일화에서는 지혜를 물건처럼 담으려 하지 않고 기발한 응답 자체로 지혜를 보여 준다. 따라서 두 일화의 공통점을 포괄하는 제목은 ③이며, ④는 지혜를 실제 내용물로 담았다고 잘못 해석한 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-75bcff9372",
+"typeId": "eng-m3-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 요약한 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절한 것은?\n\nBirbal agreed to provide the Persian visitor with a pot of wisdom. Instead of trying to put a full-grown pumpkin through a narrow opening, he placed a pot over a pumpkin flower. The pumpkin then grew until it filled the pot. When Birbal handed over the pot, he asked the visitor to remove the wisdom and return the pot without damaging it. The visitor found a pumpkin inside and admired Birbal's wisdom. Later, Akbar understood that the pumpkin could not be removed while the pot remained whole. Thus, the response demonstrated Birbal's cleverness, although wisdom itself was not a physical object inside the pot.\n\n[요약문]\nBirbal made a pumpkin (A)________ the pot through growth, set a condition that made its removal (B)________, and showed wisdom through his (C)________ rather than through a literal object called wisdom.",
+"choices": [
+"(A) fill — (B) impossible — (C) method",
+"(A) enter — (B) possible — (C) patience",
+"(A) leave — (B) impossible — (C) request",
+"(A) fill — (B) possible — (C) method",
+"(A) enter — (B) unnecessary — (C) patience"
+],
+"answer": "①",
+"solution": "호박은 다 자란 상태로 입구를 통과한 것이 아니라 항아리 안에서 자라 항아리를 가득 채웠다. 항아리를 손상하지 말라는 조건 때문에 호박을 꺼내는 일은 불가능해졌다. 이때 지혜를 드러내는 것은 호박이라는 물체 자체가 아니라 비르발이 고안한 방법이므로 fill, impossible, method가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m3s0t0",
+"custom": true
 }
 ]

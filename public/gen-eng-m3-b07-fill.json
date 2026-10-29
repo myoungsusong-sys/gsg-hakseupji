@@ -2157,5 +2157,235 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u4m1s0t0",
 "custom": true
+},
+{
+"id": "fill-4bcd0bb081",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nTeam A discussed many possible ideas in detail. However, when only a little time remained, they had to build their tower in a hurry. The string became attached to the tape, and their work turned into a mess.",
+"choices": [
+"The Best Shape for a Strong Base",
+"Too Much Planning, Too Little Time",
+"How to Divide Team Roles",
+"A Tower That Stood by Itself",
+"The Importance of a Time Checker"
+],
+"answer": "②",
+"solution": "Team A는 여러 아이디어를 자세히 논의하느라 실제 제작 시간이 부족해졌다. 결국 서둘러 탑을 만들다가 문제가 생겼으므로 ②가 글의 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-266a898124",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nTeam B began building without spending much time making a plan. Their first tower was short, and their next one could not stand alone. They continued trying and finally completed the tower they wanted.",
+"choices": [
+"A detailed plan always guarantees success.",
+"A tower must have a triangle-shaped base.",
+"Repeated attempts can lead to success.",
+"Every team member should have the same role.",
+"A short tower is stronger than a tall tower."
+],
+"answer": "③",
+"solution": "Team B는 처음 두 번의 실패에도 멈추지 않고 계속 시도했다. 여러 번의 시도 끝에 원하는 탑을 완성했으므로 글의 요지는 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fc1c73c745",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nTeam C selected one useful idea and made it better together. The members agreed on a strong, triangle-shaped base and took different roles. By cooperating, they successfully completed a tall tower.",
+"choices": [
+"the value of working together",
+"the danger of building a tall tower",
+"the difficulty of cutting tape",
+"the need to reject every first idea",
+"the history of triangle-shaped buildings"
+],
+"answer": "①",
+"solution": "Team C는 하나의 아이디어를 함께 발전시키고 역할을 나누어 탑을 완성했다. 글의 중심 내용은 협력의 가치이므로 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a860cfb2fc",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 팀의 활동을 통해 공통으로 드러나는 내용으로 가장 알맞은 것은?\n\nTeam A carefully examined many ideas, but they used too much of their time for discussion. They began building at the last moment, and the string and tape became tangled.\n\nTeam B started making a tower almost immediately. Although its early towers had problems, the members kept trying until they made a tall and beautiful one.",
+"choices": [
+"Both teams succeeded because they chose the best idea first.",
+"The way a team uses its time can affect its work.",
+"Both teams failed because they did not assign individual roles.",
+"A beautiful tower is always unable to stand by itself.",
+"Discussing every idea is the only way to complete a tower."
+],
+"answer": "②",
+"solution": "Team A는 토의에 시간을 많이 써서 제작을 서둘렀고, Team B는 곧바로 제작하며 여러 번 시도했다. 두 팀의 차이는 시간을 사용하는 방식과 그에 따른 과정 및 결과이므로 ②가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ff15e86268",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nTeam C did not compare every idea to find a perfect one. The members chose a useful idea and added other members’ suggestions to it. They agreed on how to make the base and shared jobs such as checking the time and cutting the tape. Their cooperation resulted in a tall tower.\n\nTeam C focused on (A)________ an idea rather than finding a perfect one, and completed the tower by (B)________ responsibilities.",
+"choices": [
+"improving — sharing",
+"removing — avoiding",
+"copying — changing",
+"hiding — refusing",
+"forgetting — comparing"
+],
+"answer": "①",
+"solution": "Team C는 완벽한 아이디어를 고르는 대신 괜찮은 아이디어를 발전시켰으므로 (A)에는 improving이 적절하다. 또한 역할을 나누어 협력했으므로 (B)에는 sharing이 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-34d2ebba7f",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 핵심적인 차이를 주어진 조건에 맞게 영어로 요약하시오.\n\nTeam A spent a long time discussing its ideas and had to construct the tower hurriedly. Team B, however, began constructing early and learned from each unsuccessful tower until it achieved its goal.\n\n조건\n• ‘whereas’를 반드시 사용할 것\n• Team A와 Team B를 모두 언급할 것\n• 정확히 12단어의 완전한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "Team A kept planning, whereas Team B tried building the tower repeatedly.",
+"solution": "Team A는 계획과 토의에 많은 시간을 썼지만 Team B는 탑을 반복하여 만들었다. 제시된 답은 두 팀의 대조를 whereas로 나타낸 12단어의 완전한 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1decd08d2e",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 팀의 활동에서 얻을 수 있는 요지를 주어진 조건에 맞게 영어로 쓰시오.\n\nTeam A considered too many ideas for too long, so its members ran short of building time and faced a messy situation. Team B reached its goal after learning from several unsuccessful towers. Team C improved one useful idea, divided the work, and completed a tall tower together.\n\n조건\n• ‘overplanning’, ‘attempts’, ‘cooperation’을 모두 사용할 것\n• 정확히 11단어의 완전한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "Overplanning caused trouble, while repeated attempts and cooperation helped teams succeed.",
+"solution": "Team A의 지나친 계획은 문제를 일으킨 반면, Team B의 반복된 시도와 Team C의 협력은 성공에 도움이 되었다. 제시된 답은 세 팀에서 얻을 수 있는 요지를 11단어로 정확히 요약한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2b0d116477",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 말을 바르게 배열하여 문장을 완성하시오.\n\n혹등고래는 잠을 자는 동안 꼬리로 서 있다.\n\n[ stand / humpback whales / while / on their tails / they sleep ]",
+"selfGrade": true,
+"answer": "Humpback whales stand on their tails while they sleep.",
+"solution": "주어 Humpback whales 뒤에 동사 stand가 온다. ‘잠을 자는 동안’은 접속사 while을 사용하여 while they sleep로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-1f3e380668",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말을 가장 알맞게 영작한 것은?\n\n나는 흰돌고래가 배가 고플 때 무엇을 먹는지 궁금하다.",
+"choices": [
+"I wonder what does a beluga whale eat when it is hungry.",
+"I wonder what a beluga whale eats when it is hungry.",
+"I wonder what is a beluga whale eating when it is hungry.",
+"I wonder a beluga whale what eats when it is hungry.",
+"What a beluga whale eats when it is hungry I wonder?"
+],
+"answer": "②",
+"solution": "wonder 뒤의 간접의문문은 ‘의문사＋주어＋동사’의 어순을 사용한다. 주어 a beluga whale이 3인칭 단수이므로 동사는 eats가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-3dd2215aef",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 말을 모두 사용하여 영작하시오.\n\n가장 좋아하는 먹이가 조개인 그 작은 물고기를 보아라.\n\n<보기>\nat / whose / the / look / favorite / small / clams / fish / food / is",
+"selfGrade": true,
+"answer": "Look at the small fish whose favorite food is clams.",
+"solution": "명령문이므로 Look at으로 시작한다. ‘가장 좋아하는 먹이가 조개인’은 소유격 관계대명사 whose를 사용하여 whose favorite food is clams로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-3fec9f9556",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영작할 때 가장 알맞은 것은?\n\n나는 문어가 피부색을 바꿈으로써 어떻게 적들로부터 숨을 수 있는지 궁금하다.",
+"choices": [
+"I wonder how can the octopus hide from its enemies by changing its skin color.",
+"I wonder how the octopus can hides from its enemies by changing its skin color.",
+"I wonder how does the octopus hide from its enemies by changing its skin color.",
+"I wonder how the octopus can hide from its enemies by changing its skin color.",
+"I wonder how the octopus can hide its enemies by change its skin color."
+],
+"answer": "④",
+"solution": "간접의문문은 how 뒤에 ‘주어＋동사’의 어순이 와야 한다. 조동사 can 뒤에는 동사원형 hide가 오며, ‘피부색을 바꿈으로써’는 by changing its skin color로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-36be1283d2",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장이 같은 뜻이 되도록 빈칸을 완성하시오.\n\nClams usually hide under the sand, so they cannot be easily discovered.\n= ________________________________, they cannot be easily discovered.\n\n조건: Because로 시작하고, 주어진 문장에 있는 단어만 활용할 것.",
+"selfGrade": true,
+"answer": "Because clams usually hide under the sand",
+"solution": "원문의 so는 원인에 따른 결과를 연결한다. 원인을 나타내는 절을 Because로 시작하여 앞으로 옮기면 Because clams usually hide under the sand가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-9670cdc3ae",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 우리말을 영작한 것으로 알맞지 않은 것은?",
+"choices": [
+"뼈가 없기 때문에 문어는 바닷속에서 쉽게 움직일 수 있다. → Because it has no bones, an octopus can move around easily in the ocean.",
+"문어는 적을 만나면 검고 어두운 먹물을 내뿜고 헤엄쳐 달아난다. → When an octopus meets an enemy, it shoots out dark black ink and swims away.",
+"문어는 적들로부터 숨기 위해 피부색을 바꿀 수 있다. → An octopus can change the color of its skin to hide from its enemies.",
+"문어는 피가 파랗고 피부색을 바꿀 수 있다. → An octopus can change the color of its blue skin.",
+"문어가 가장 좋아하는 먹이는 작은 물고기이다. → The octopus's favorite food is small fish."
+],
+"answer": "④",
+"solution": "④의 우리말에서 파란 것은 문어의 피부가 아니라 피이다. 제시된 영어 문장은 blue가 skin을 수식하므로 ‘파란 피부의 색을 바꿀 수 있다’라는 다른 의미가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-323d2dcef4",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 조건에 맞게 한 문장으로 영작하시오.\n\n가장 좋아하는 먹이가 조개인 놀래기는 조개가 나타날 때까지 모래에 입김을 분다.\n\n조건\n(1) The tuskfish로 시작할 것.\n(2) whose와 until을 각각 한 번 사용할 것.\n(3) 필요하면 쉼표를 사용할 것.",
+"selfGrade": true,
+"answer": "The tuskfish, whose favorite food is clams, blows on the sand until a clam appears.",
+"solution": "The tuskfish에 대한 추가 설명은 소유격 관계대명사 whose를 이용해 나타낸다. ‘조개가 나타날 때까지’는 until a clam appears로 표현하며, 주어가 3인칭 단수이므로 blows를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
 }
 ]

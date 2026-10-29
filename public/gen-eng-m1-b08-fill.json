@@ -1285,5 +1285,133 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b08-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-becf09c21b",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영어 표현과 우리말 뜻의 연결이 어색한 것은?",
+"choices": [
+"care about: ~에 관심을 가지다",
+"come up with: ~을 생각해 내다",
+"stand for: ~을 상징하다",
+"thanks to: ~에도 불구하고",
+"put out: 불을 끄다"
+],
+"answer": "④",
+"solution": "‘thanks to’는 ‘~ 덕분에’라는 뜻이다. ‘~에도 불구하고’라는 뜻으로 연결한 ④가 어색하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0bbffbf0a7",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 표현을 <보기>에서 골라 알맞은 형태로 쓰시오.\n\n<보기> care about, stand for, throw away\n\n(1) The eleven trees ____________ the eleven soccer players.\n(2) We should not ____________ our old clothes too often.\n(3) Lesein ____________ the forests and the environment.",
+"selfGrade": true,
+"answer": "stand for, throw away, cares about",
+"solution": "(1)은 ‘상징하다’라는 뜻의 stand for가 알맞고, 주어가 복수이므로 원형을 쓴다. (2)는 ‘버리다’라는 뜻의 throw away가 should not 뒤에 원형으로 온다. (3)은 주어가 3인칭 단수이므로 care에 -s를 붙인 cares about이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-17c92155b4",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 (A)~(C)에 들어갈 말로 가장 적절한 것은?\n\nLesein enjoyed (A)________ soccer. He decided (B)________ a campaign for the forests and hoped (C)________ with famous soccer players someday.",
+"choices": [
+"(A) play － (B) starting － (C) playing",
+"(A) playing － (B) to start － (C) to play",
+"(A) to play － (B) starting － (C) play",
+"(A) playing － (B) start － (C) to playing",
+"(A) to playing － (B) to start － (C) play"
+],
+"answer": "②",
+"solution": "enjoy 뒤에는 동명사가 오므로 playing이 알맞다. decide와 hope 뒤에는 to부정사가 오므로 각각 to start와 to play를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-103c5bfcb3",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 들어갈 말로 가장 적절한 것은?\n\nDon’t forget to check the seller reviews.\n= ____________ the seller reviews.",
+"choices": [
+"Remember checking",
+"Remember to check",
+"Enjoy checking",
+"Decide to check",
+"Stop to check"
+],
+"answer": "②",
+"solution": "‘Don’t forget to＋동사원형’은 ‘~할 것을 잊지 마라’라는 뜻이다. 이는 ‘Remember to＋동사원형’으로 바꾸어 같은 의미를 나타낼 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8e5829c6a5",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 표현의 쓰임이 어색한 것은?",
+"choices": [
+"We should not ‘throw away’ clothes too often.",
+"The eleven trees ‘stand for’ the eleven players.",
+"Lesein ‘came up with’ an idea for the forests.",
+"The school planted many trees ‘thanks to’ the campaign.",
+"The small bird tried to ‘care about’ the forest fire."
+],
+"answer": "⑤",
+"solution": "산불을 끄려고 했다는 문맥에는 ‘put out the forest fire’가 알맞다. care about은 ‘~에 관심을 가지다, ~을 소중히 여기다’라는 뜻이므로 ⑤의 문맥에 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a69fe592c1",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 괄호 안의 지시대로 한 문장으로 완성하시오.\n\nHe likes playing soccer. He wants to protect the forests.\n(enjoy와 want를 각각 한 번씩 사용할 것)",
+"selfGrade": true,
+"answer": "He enjoys playing soccer and wants to protect the forests.",
+"solution": "‘~하는 것을 즐기다’는 enjoy 뒤에 동명사를 사용하여 enjoys playing으로 나타낸다. ‘~하고 싶다’는 want 뒤에 to부정사를 사용하여 wants to protect로 나타낸다. 주어가 He이므로 두 동사에 모두 -s가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a399076070",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nLesein enjoys to play soccer and decided starting a campaign.",
+"selfGrade": true,
+"answer": "Lesein enjoys playing soccer and decided to start a campaign.",
+"solution": "enjoy 뒤에는 동명사가 와야 하므로 to play를 playing으로 고친다. decide 뒤에는 to부정사가 와야 하므로 starting을 to start로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ebb85675cd",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 의미가 같도록 주어진 단어를 모두 사용하여 영작하시오. 단, 필요한 경우 단어의 형태를 바꿀 수 있다.\n\n‘중고 옷을 사기 전에 판매자 후기를 확인할 것을 잊지 마라.’\n\n<보기> before / buy / clothes / forget / review / seller / second-hand / check / you / to / not",
+"selfGrade": true,
+"answer": "Do not forget to check the seller reviews before you buy second-hand clothes.",
+"solution": "‘~할 것을 잊지 마라’는 Do not forget to＋동사원형으로 나타낸다. ‘~하기 전에’는 before 뒤에 주어와 동사를 갖춘 절을 쓸 수 있다. 따라서 before you buy second-hand clothes를 뒤에 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
 }
 ]

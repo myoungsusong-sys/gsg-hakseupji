@@ -3835,5 +3835,469 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b02-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-8f544619ea",
+"typeId": "eng-m3-b02-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nSeho and Yujin have different opinions about family size. Seho enjoyed the food when he ate out with his family last weekend. However, he dislikes having a large, noisy family because he has no privacy. He lives with his grandparents, his parents, and his two brothers. Yujin has no brothers or sisters and sometimes feels lonely. For this reason, she thinks having a large family can be a good thing.",
+"choices": [
+"How many brothers does Seho have?",
+"What did Seho think of the food?",
+"Why does Seho dislike having a large family?",
+"How often does Seho eat out with his family?",
+"Why does Yujin think having a large family can be good?"
+],
+"answer": "④",
+"solution": "지난 주말에 Seho가 가족과 외식했다는 사실은 나오지만, 외식을 얼마나 자주 하는지는 알 수 없다. 형제의 수, 음식에 대한 평가, 대가족을 싫어하는 이유는 모두 제시되어 있다. Yujin이 대가족을 긍정적으로 보는 이유도 외동으로서 가끔 외로움을 느끼기 때문이라고 설명되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4e55ad9228",
+"typeId": "eng-m3-b02-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 세 사람의 글을 바탕으로 추론한 내용으로 가장 적절한 것은?\n\nKamala: My family often annoys me, so I cannot always say that we get along well. Still, I love them. They supported me during my hardest times, remain beside me today, and will be there for me in the future.\n\nRachel: Sharing a room with my older sister used to be difficult because her feelings changed so quickly. Now I am a teenager, too, and I understand those feelings better. She is still a teenager, but her moods are becoming less changeable. When I get angry, she tries to help me. Understanding each other has brought us closer.\n\nMinsu: My older brother started university this year. Being the younger brother of someone who does so well at home and at school puts pressure on me. However, choosing clothes is difficult for him, so I help him with it. His thanks and respect for my fashion sense make me happy. Life with him is not difficult all the time.",
+"choices": [
+"Kamala’s love depends on her family’s promise to stop annoying her, while Rachel’s love grows through understanding.",
+"Rachel understands her sister better mainly because her sister is no longer a teenager, while Minsu feels happy when his ability is valued.",
+"Minsu’s help suggests that he wants to become better than his brother at everything, just as Rachel wants to control her sister’s feelings.",
+"All three suggest that family relationships become valuable only after the problems between family members have completely disappeared.",
+"All three find something positive in family life despite difficulties, but their positive feelings do not all come from the same experience."
+],
+"answer": "⑤",
+"solution": "Kamala는 가족의 지속적인 지지에서, Rachel은 서로에 대한 이해에서, Minsu는 자신의 장점에 대한 형의 인정에서 긍정적인 감정을 얻는다. 따라서 세 사람 모두 가족 관계의 어려움과 긍정적인 의미를 함께 경험하지만, 긍정적인 감정의 근거는 서로 다르다. 가족이 짜증 나게 하는 행동을 그만두겠다고 약속했다는 내용은 없으며, Rachel의 언니는 여전히 십 대이다. 또한 상대를 통제하거나 모든 면에서 앞서려 한다는 근거도 없고, 가족 간의 문제가 완전히 사라져야 관계가 소중해진다고 볼 수도 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7d37307a3e",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 것은?",
+"choices": [
+"The sale sign made the shoppers to hurry.",
+"Her words made me felt confident.",
+"Mina let Somin to use her phone.",
+"Inho helped Somin find the sneakers.",
+"Limited editions make we buy unnecessary things."
+],
+"answer": "④",
+"solution": "help는 목적어 뒤에 동사원형을 목적격 보어로 쓸 수 있으므로 ④가 옳다. make와 let도 목적어 뒤에 동사원형이 와야 하며, ⑤의 we는 목적격인 us로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b8e5cf4df9",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nSome shoppers buy what celebrities recommend. When they see a limited-sale sign, it can make them (A) [believe / to believe] that this is their only chance (B) [getting / to get] the product. As a result, they may think more about (C) [winning / to win] a race than choosing wisely.",
+"choices": [
+"believe - getting - winning",
+"believe - to get - winning",
+"believe - to get - to win",
+"to believe - getting - winning",
+"to believe - to get - to win"
+],
+"answer": "②",
+"solution": "사역동사 make는 목적어 뒤에 동사원형 believe를 취한다. chance 뒤에는 to부정사가 자연스럽고, 전치사 about 뒤에는 동명사 winning이 와야 하므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b3adfaecb8",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 어법상 옳은 문장끼리 모두 묶인 것은?\n\n<보기>\nⓐ What many shoppers need is different from what they want.\nⓑ Flash-sale signs make some people feel nervous.\nⓒ The new jacket looks beautifully on Mina.\nⓓ This is the product what Somin wanted to buy.\nⓔ The short sale let the shoppers bought things in a hurry.\nⓕ Spending wisely is more important than following every trend.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓕ",
+"ⓒ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓐ의 두 what절과 ⓑ의 make+목적어+동사원형, ⓕ의 동명사 병렬 구조는 모두 옳다. ⓒ는 beautifully를 beautiful로, ⓓ는 what을 that으로, ⓔ는 bought를 buy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-84603334ea",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장 중 어법상 옳은 문장의 개수는?\n\nⓐ What do you usually buy during a sale?\nⓑ Some teens purchase that their favorite stars use.\nⓒ A low price makes shoppers to feel excited.\nⓓ The displayed products look attractively.\nⓔ Shoppers should ask whether they really need the product.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "어법상 옳은 문장은 ⓐ와 ⓔ로 모두 2개이다. ⓑ의 that은 선행사를 포함하는 what으로, ⓒ의 to feel은 feel로, ⓓ의 attractively는 형용사 attractive로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c120ada9ad",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 잘못된 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nWhat the stars recommend make some teens to believe that buying the item is the best way to look popularly.",
+"selfGrade": true,
+"answer": "What the stars recommend makes some teens believe that buying the item is the best way to look popular.",
+"solution": "주어인 What the stars recommend는 하나의 명사절이므로 동사는 makes가 되어야 한다. make의 목적격 보어에는 동사원형 believe가 오고, 감각동사 look 뒤에는 형용사 popular가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-159706ecd2",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 어법상 옳은 문장끼리 모두 묶인 것은?\n\n<보기>\nⓐ What attracts some teens is not the quality but the celebrity's name.\nⓑ Sale signs make shoppers believe that there is little time left.\nⓒ The jacket that Mina wants looks nicely on her.\nⓓ It is the very product what Somin was looking for.\nⓔ Inho helped Somin grabbing the sneakers before the sale ended.\nⓕ Buying only what you need is wiser than following every sale sign.",
+"choices": [
+"ⓐ, ⓑ, ⓕ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ, ⓕ",
+"ⓐ, ⓑ, ⓓ, ⓕ"
+],
+"answer": "①",
+"solution": "ⓐ의 what절, ⓑ의 make 구문, ⓕ의 비교·병렬 구조는 모두 적절하다. ⓒ는 nicely를 nice로, ⓓ는 선행사가 있으므로 what을 that으로 고쳐야 한다. ⓔ의 grabbing은 grab 또는 to grab으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0191e7831f",
+"typeId": "eng-m3-b02-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 잘못된 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nWhen teens see what their favorite stars use, the products make them to feel that buying quickly is more important than to think carefully.",
+"selfGrade": true,
+"answer": "When teens see what their favorite stars use, the products make them feel that buying quickly is more important than thinking carefully.",
+"solution": "make의 목적격 보어에는 to부정사가 아니라 동사원형 feel이 와야 한다. 비교되는 buying quickly와 형태를 맞추기 위해 than 뒤의 to think도 동명사 thinking으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9a5d14dc29",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nDr. Don Schoendorfer worked as a biomedical engineer. In 2001, he established Free Wheelchair Mission, or FWM, to provide wheelchairs for people who could not afford them. His organization later worked with other groups and sent wheelchairs to people in more than 90 countries.",
+"choices": [
+"Dr. Schoendorfer established FWM before becoming an engineer.",
+"FWM sells expensive wheelchairs in over 90 countries.",
+"FWM was founded to help people in need of wheelchairs.",
+"Dr. Schoendorfer began FWM without help from any other group.",
+"FWM was established in 2017."
+],
+"answer": "③",
+"solution": "FWM은 휠체어를 살 형편이 되지 않는 사람들에게 휠체어를 제공하기 위해 설립되었다. 따라서 글의 내용과 일치하는 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4c9b4843c1",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고 답할 수 있는 질문은?\n\nNara asks Junha about his summer vacation. Junha says that he will join a Voluntour program in Cambodia. He explains that Voluntour means traveling and doing volunteer work at the same time. In Cambodia, he plans to teach children and take part in a campaign to preserve temples.",
+"choices": [
+"How long will Junha stay in Cambodia?",
+"Who will travel to Cambodia with Junha?",
+"What subjects will Junha teach the children?",
+"What volunteer activities will Junha do in Cambodia?",
+"How much will the Voluntour program cost?"
+],
+"answer": "④",
+"solution": "지문에는 준하가 아이들을 가르치고 사원 보존 캠페인에 참여할 것이라고 나와 있다. 따라서 봉사 활동의 종류를 묻는 ④에 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e62713fc57",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 통해 추론할 수 있는 것은?\n\nA wheelchair made by Dr. Schoendorfer was delivered to a teenage girl in India. Until then, she had spent all her life inside a small room. After receiving it, she was able to leave the room and move around without another person's help. Realizing this, she began to cry.",
+"choices": [
+"The girl was disappointed with the wheelchair.",
+"The wheelchair gave the girl greater freedom to move.",
+"The girl had often traveled alone before receiving it.",
+"The girl helped Dr. Schoendorfer build the wheelchair.",
+"The wheelchair was delivered after she became an adult."
+],
+"answer": "②",
+"solution": "소녀는 휠체어를 받은 뒤 다른 사람의 도움 없이 밖으로 나가 이동할 수 있게 되었다. 이를 통해 휠체어가 소녀에게 더 큰 이동의 자유를 주었다고 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-61a017095d",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 연표와 글의 내용이 일치하지 않는 것은?\n\n1979: Dr. Schoendorfer saw a woman crawling across a road in Morocco.\n2001: He founded FWM and began providing free wheelchairs.\n2017: FWM delivered its one-millionth wheelchair.\n2025: FWM planned to reach a total of two million wheelchairs.\n\nThe woman in Morocco could not use her legs because of an accident. The scene stayed in Dr. Schoendorfer's mind and later led him to consider helping people who needed wheelchairs.",
+"choices": [
+"The accident had caused the woman to lose the use of her legs.",
+"The scene in Morocco influenced Dr. Schoendorfer's later work.",
+"FWM began its work more than twenty years after the Morocco visit.",
+"FWM reached one million wheelchairs in 2017.",
+"FWM planned to deliver its first wheelchair in 2025."
+],
+"answer": "⑤",
+"solution": "FWM은 2001년에 휠체어 제공 활동을 시작했고, 2025년에는 누적 200만 대를 달성할 계획이었다. 따라서 2025년에 첫 휠체어를 제공할 계획이었다는 ⑤는 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-dd3a87b23a",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nDuring a trip to Morocco in 1979, Dr. Schoendorfer noticed a woman moving across a road by crawling. An accident had left her unable to use her legs, but the people nearby paid no attention to her. Years later, this memory encouraged him to investigate the situation of wheelchair users. He discovered that about 100 million people needed wheelchairs and that many of them could not buy one because of the high price.",
+"choices": [
+"What was the woman doing when Dr. Schoendorfer saw her?",
+"What had caused the woman's physical condition?",
+"How did the people around the woman react?",
+"Why were many people unable to purchase wheelchairs?",
+"How many days did Dr. Schoendorfer spend in Morocco?"
+],
+"answer": "⑤",
+"solution": "여성의 모습, 다리를 쓰지 못하게 된 원인, 주변 사람들의 반응과 휠체어를 사기 어려운 이유는 모두 확인할 수 있다. 그러나 모로코에 머문 기간은 제시되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-30d22a4815",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용으로 보아 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\nDr. Schoendorfer made the earliest one hundred wheelchairs himself. One went to a 16-year-old Indian girl who had always lived within a small room. The wheelchair enabled her to go outside on her own. FWM subsequently cooperated with groups sharing its purpose and provided wheelchairs in over 90 countries. By 2017, the number delivered had reached one million.\n\n<보기>\nㄱ. 인도 소녀는 휠체어를 받은 뒤 혼자 밖으로 나갈 수 있었다.\nㄴ. 최초의 휠체어 100대는 여러 협력 단체가 제작했다.\nㄷ. FWM은 뜻을 같이하는 단체들과 협력했다.\nㄹ. 2017년까지 전달된 휠체어는 90만 대보다 적었다.",
+"choices": [
+"ㄱ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "소녀는 휠체어를 이용해 혼자 밖으로 나갈 수 있었으므로 ㄱ은 옳고, FWM이 같은 목적을 가진 단체들과 협력했으므로 ㄷ도 옳다. 최초 100대는 Dr. Schoendorfer가 직접 만들었으며 2017년에는 이미 100만 대에 도달했으므로 ㄴ과 ㄹ은 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-023ee709c3",
+"typeId": "eng-m3-b02-u3m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, FWM이 두 번째 100만 대를 전달하는 데 걸리는 시간이 첫 번째 100만 대의 절반이라고 말할 수 있는 이유를 영어 한 문장으로 쓰시오.\n\nFWM began distributing wheelchairs in 2001 and delivered its one-millionth wheelchair in 2017. It then set a goal of delivering its two-millionth wheelchair by 2025.\n\n<조건>\n• 각각의 100만 대를 전달하는 데 걸리는 기간을 모두 밝힐 것\n• 접속사 but을 사용할 것",
+"selfGrade": true,
+"answer": "It took 16 years to deliver the first million wheelchairs, but the next million was planned to take only eight years.",
+"solution": "첫 번째 100만 대는 2001년부터 2017년까지이므로 16년이 걸렸다. 두 번째 100만 대는 2017년부터 2025년까지 8년이 걸릴 계획이며, 8년은 16년의 절반이다. 두 기간의 대조를 but으로 연결해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a469f439f4",
+"typeId": "eng-m3-b02-u4m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nsomething that is said or done as a reaction to something else",
+"choices": [
+"term",
+"spot",
+"response",
+"wave",
+"vibration"
+],
+"answer": "③",
+"solution": "어떤 것에 대한 반응으로 말하거나 행한 것을 뜻하는 단어는 response이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d57e65264b",
+"typeId": "eng-m3-b02-u4m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어와 영영풀이의 연결이 알맞지 않은 것은?",
+"choices": [
+"term: a word or phrase with a particular meaning",
+"spot: a particular place or area",
+"athlete: a person who is trained to compete in sports",
+"vibration: a continuous slight shaking movement",
+"response: a fixed or limited period of time"
+],
+"answer": "⑤",
+"solution": "a fixed or limited period of time은 term의 뜻이다. response는 어떤 것에 대한 반응으로 말하거나 행한 것을 의미하므로 ⑤의 연결이 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ecbb5c3b52",
+"typeId": "eng-m3-b02-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nAt the sweet spot, some waves have opposite effects and (A) each other. Therefore, (B) energy reaches the handle, and the hitter feels (C) vibrations.",
+"choices": [
+"cancel out — less — fewer",
+"cancel out — more — more",
+"increase — less — fewer",
+"increase — more — no",
+"respond to — less — more"
+],
+"answer": "①",
+"solution": "서로 반대되는 효과를 가진 파동은 서로 상쇄하므로 cancel out이 알맞다. 그 결과 손잡이에 전달되는 에너지가 줄고 진동도 더 적게 느껴지므로 less와 fewer가 이어져야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8624361c9c",
+"typeId": "eng-m3-b02-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장에서 밑줄 친 term의 의미를 바르게 설명한 것은?\n\n(A) ‘Sweet spot’ is a term used in sports.\n(B) The word can also refer to a fixed or limited term.",
+"choices": [
+"(A) 특정한 장소 — (B) 가벼운 진동",
+"(A) 전문적인 단어나 표현 — (B) 정해진 기간",
+"(A) 운동선수 — (B) 반응",
+"(A) 타격 동작 — (B) 파동의 세기",
+"(A) 공정한 판단 — (B) 정확한 의미"
+],
+"answer": "②",
+"solution": "(A)의 term은 특정한 의미로 사용되는 단어나 표현을 뜻한다. (B)에서는 고정되거나 제한된 기간이라는 의미이므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9130f49fce",
+"typeId": "eng-m3-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"Benjamin saw his mom to use a laundry tablet.",
+"Brooke watched Kayla to become upset.",
+"Benjamin felt a new idea to come to him.",
+"Brooke heard her friends to talk during the video chat.",
+"Benjamin saw his mom using a laundry tablet."
+],
+"answer": "⑤",
+"solution": "지각동사 see는 목적어 뒤에 동사원형이나 현재분사를 목적격보어로 취한다. 따라서 「saw his mom using」이 쓰인 ⑤가 올바르며, 나머지 문장의 「to＋동사원형」은 동사원형 또는 현재분사로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca1b7ac6d4",
+"typeId": "eng-m3-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 골라 바르게 연결한 것은?\n\nBenjamin saw his mom (A)[using / to use] a laundry tablet and (B)[got / getting] the idea for an all-in-one shampoo ball. He later showed his idea to chemistry experts, who (C)[liked / liking] it.",
+"choices": [
+"to use ― got ― liked",
+"using ― getting ― liked",
+"using ― got ― liked",
+"using ― got ― liking",
+"to use ― getting ― liking"
+],
+"answer": "③",
+"solution": "지각동사 saw의 목적격보어로 현재분사 using을 쓸 수 있다. saw와 and로 연결되어 문장의 서술어가 되는 과거형 got이 필요하고, 관계대명사 who 뒤에도 서술어인 liked가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-15e3752771",
+"typeId": "eng-m3-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말을 골라 바르게 연결한 것은?\n\nBrooke had a dog, Kayla, who (A)[was / were] suffering from separation anxiety. Brooke introduced her idea at Startup Weekend, (B)[which / where] people developed product ideas together. She was (C)[fortunate enough / enough fortunate] to work with designers and invented a device for lonely dogs (D)[leaving / left] at home.",
+"choices": [
+"were ― which ― enough fortunate ― leaving",
+"was ― which ― fortunate enough ― left",
+"was ― where ― enough fortunate ― leaving",
+"was ― where ― fortunate enough ― left",
+"were ― where ― fortunate enough ― left"
+],
+"answer": "④",
+"solution": "관계대명사절의 선행사 Kayla가 단수이므로 was가 알맞고, 완전한 문장이 이어지면서 장소를 나타내므로 where가 필요하다. 「형용사＋enough」의 어순을 써야 하며, 집에 남겨진 개들이라는 수동의 의미이므로 과거분사 left가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a7c37d2f75",
+"typeId": "eng-m3-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 올바른 것끼리 짝지어진 것은?\n\nBenjamin ⓐwere concerned about the plastic bottles people used every day. He ⓑkept asking himself how he could take a shower without them. One day, he ⓒsaw his mom using a laundry tablet and ⓓgot an idea for an all-in-one shampoo ball. He showed the idea to chemistry experts ⓔwhich liked it. They ⓕhelped him invent the product, but shampoo balls ⓖdoesn't make plastic waste.",
+"choices": [
+"ⓐ, ⓑ, ⓔ",
+"ⓑ, ⓒ, ⓖ",
+"ⓒ, ⓓ, ⓔ, ⓕ",
+"ⓑ, ⓒ, ⓓ, ⓕ",
+"ⓐ, ⓓ, ⓕ, ⓖ"
+],
+"answer": "④",
+"solution": "ⓐ는 단수 주어 Benjamin에 맞게 was가 되어야 하고, 사람인 experts를 받으므로 ⓔ의 which는 who로 고쳐야 한다. 복수 주어 shampoo balls 뒤에서는 don't를 써야 하므로 ⓖ도 틀리다. 따라서 올바른 것은 ⓑ, ⓒ, ⓓ, ⓕ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7c5556fb4c",
+"typeId": "eng-m3-b02-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중 어법상 틀린 것을 모두 찾아 기호와 바르게 고친 표현을 쓰시오.\n\nBrooke had a dog, Kayla, who ⓐwere suffering from separation anxiety. The dog became upset whenever she ⓑwas left alone, so Brooke ⓒwanted finding a way to connect with her. While Brooke was video chatting with her friends, an idea ⓓflashed across her mind. She wanted to video chat with Kayla and ⓔdelivering a snack while she was away. She said this ⓕto herself and introduced the idea at Startup Weekend, ⓖwhich people developed products together. Finally, she invented a device for lonely dogs ⓗleaving at home.",
+"selfGrade": true,
+"answer": "ⓐ was / ⓒ wanted to find / ⓔ deliver / ⓖ where / ⓗ left",
+"solution": "Kayla는 단수이므로 ⓐ는 was이고, want는 to부정사를 목적어로 취하므로 ⓒ는 wanted to find가 되어야 한다. video chat과 병렬로 연결되는 ⓔ는 deliver, 장소를 나타내는 관계부사 ⓖ는 where가 알맞다. 개들이 집에 남겨지는 수동의 의미이므로 ⓗ는 left로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7e144a2f42",
+"typeId": "eng-m3-b02-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 문장을 조건에 맞게 한 문장으로 쓰시오.\n\nBrooke finally invented a device.\nThe device was for lonely dogs that were left at home.\nShe said, “I find genuine satisfaction in being part of the solution.”\n\n조건\n· 「that were left」를 분사구문으로 축약할 것.\n· 직접화법을 간접화법으로 바꾸고 시제를 일치시킬 것.\n· and를 사용하여 한 문장으로 연결할 것.",
+"selfGrade": true,
+"answer": "Brooke finally invented a device for lonely dogs left at home and said that she found genuine satisfaction in being part of the solution.",
+"solution": "「dogs that were left at home」에서 「that were」를 생략하면 「dogs left at home」이 된다. 직접화법을 간접화법으로 바꾸면 said 뒤에 that을 쓰고, find를 과거형 found로 바꾸어 시제를 일치시켜야 한다. 두 내용을 and로 연결하면 제시된 문장이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m1s0t0",
+"custom": true
 }
 ]

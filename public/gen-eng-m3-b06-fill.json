@@ -1100,5 +1100,76 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u2m3s0t0",
 "custom": true
+},
+{
+"id": "fill-982295ccdb",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장을 하나의 문장으로 만들 때, 빈칸에 들어갈 알맞은 말을 쓰시오. (to부정사를 사용할 것)\n\n• I need some water.\n• I can drink the water.\n→ I need some water ____________________.",
+"selfGrade": true,
+"answer": "to drink",
+"solution": "명사 water를 뒤에서 꾸며 주는 형용사적 용법의 to부정사를 쓴다. ‘마실 물’이라는 뜻이므로 빈칸에는 to drink가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-04f155497b",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장을 하나로 연결할 때, 빈칸에 들어갈 말로 알맞은 것은?\n\n• I wonder.\n• Does he like taking pictures?\n→ I wonder ____________________.",
+"choices": [
+"if does he like taking pictures",
+"if he likes taking pictures",
+"that does he like taking pictures",
+"if he like taking pictures",
+"that he does likes taking pictures"
+],
+"answer": "②",
+"solution": "의문사가 없는 의문문을 간접의문문으로 바꿀 때는 if 또는 whether 뒤에 ‘주어＋동사’를 쓴다. 의문문을 만드는 does는 없애고, 주어 he에 맞게 동사를 likes로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6b4b297ad0",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 빈칸에 공통으로 들어갈 한 단어를 <보기>에서 골라 쓰시오.\n\n• My little brother is afraid to ride this bike because it is not __________ enough.\n• She hopes to get a __________ job and work there for many years.\n\n<보기>\ninspire, courage, stable, decision, pursue",
+"selfGrade": true,
+"answer": "stable",
+"solution": "첫 문장에는 자전거가 충분히 ‘안정적이지’ 않다는 의미가 필요하다. 두 번째 문장에서도 오랫동안 일할 수 있는 ‘안정적인’ 직업을 뜻하므로 공통으로 stable이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-93bf3d617f",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장을 하나의 문장으로 만들 때, 빈칸에 들어갈 알맞은 말을 쓰시오.\n\n• She needs a friend.\n• She can share her worries with the friend.\n→ She needs a friend ____________________.\n\n<조건>\n• to부정사를 사용할 것.\n• 빈칸에는 다섯 단어를 쓸 것.\n• her worries를 그대로 사용할 것.",
+"selfGrade": true,
+"answer": "to share her worries with",
+"solution": "a friend를 꾸미는 to부정사구를 만들어야 한다. share her worries with the friend에서 the friend가 앞의 a friend와 같으므로 이를 생략하되, 전치사 with는 남겨야 한다. 따라서 to share her worries with가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e440b78304",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장은 아래 두 문장의 의미를 합쳐 쓴 것이다. 밑줄 대신 표시한 [A], [B], [C]를 모두 바르게 고쳐 완성된 문장 전체를 쓰시오.\n\n• I wasn't sure. Did he need a chair?\n• He could sit on the chair.\n\n→ I wasn't sure [A: that] he [B: did need] a chair [C: to sit].\n\n<조건>\n• [A]에는 whether를 사용할 것.\n• [A], [B], [C] 이외의 부분은 바꾸지 말 것.\n• 강조의 뜻을 추가하지 말 것.",
+"selfGrade": true,
+"answer": "I wasn't sure whether he needed a chair to sit on.",
+"solution": "확신하지 못하는 내용이 의문사가 없는 의문문이므로 that을 whether로 바꾼다. 간접의문문에서는 의문문을 만드는 did를 없애고 동사를 과거형 needed로 쓴다. ‘그 의자에 앉다’는 sit on the chair이므로 chair를 꾸미는 to부정사구 끝에 on을 남겨야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
 }
 ]

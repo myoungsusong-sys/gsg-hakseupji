@@ -2916,5 +2916,132 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-907f221e98",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFor thousands of years, ondol (A)[has kept / kept] rooms warm by allowing heated air (B)[to travel / traveling] under the floor. The wide stones above the passage (C)[are heated / heat] by the hot air.",
+"choices": [
+"has kept — traveling — are heated",
+"kept — to travel — are heated",
+"has kept — to travel — are heated",
+"has kept — to travel — heat",
+"kept — traveling — heat"
+],
+"answer": "③",
+"solution": "현재까지 이어지는 기간을 나타내는 for thousands of years와 함께 현재완료 has kept를 쓴다. allow는 ‘allow+목적어+to부정사’의 구조를 취하며, 돌은 뜨거운 공기에 의해 데워지므로 수동태 are heated가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-90b1fe1b06",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe homi is a traditional farming tool (A)[that / what] gardeners can use for various tasks. In 2019, a video about the tool (B)[spread / spreads] rapidly online. It soon became one of the gardening tools that many people (C)[want / wants] to have.",
+"choices": [
+"what — spread — want",
+"that — spreads — wants",
+"what — spreads — want",
+"that — spread — wants",
+"that — spread — want"
+],
+"answer": "⑤",
+"solution": "선행사 a traditional farming tool이 있으므로 목적격 관계대명사 that이 필요하다. 과거 시점인 In 2019에 맞추어 spread를 쓰고, 관계절의 주어 many people이 복수이므로 want가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b2f1e7f9e0",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA homi performs several gardening tasks. Its thin blade is used (A)[for weeding / for weed], and its pointed end is used (B)[to dig / digging] the ground. Repeated hammering makes the tool (C)[stronger / more strongly].",
+"choices": [
+"for weed — to dig — stronger",
+"for weeding — to dig — stronger",
+"for weeding — digging — more strongly",
+"for weed — digging — stronger",
+"for weeding — to dig — more strongly"
+],
+"answer": "②",
+"solution": "전치사 for 뒤에는 동명사 weeding이 와야 하고, ‘~하는 데 사용되다’는 be used to부정사로 나타낼 수 있다. make의 목적격보어 자리에는 도구의 상태를 설명하는 형용사 비교급 stronger가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5229ef2a2a",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThere are many online videos (A)[praising / praise] the homi and (B)[showing / show] viewers how to use it. This attention has made the homi one of the best-selling gardening tools (C)[on / at] the world's largest online shopping site.",
+"choices": [
+"praise — showing — on",
+"praising — show — at",
+"praise — show — at",
+"praising — showing — on",
+"praising — show — on"
+],
+"answer": "④",
+"solution": "praising과 showing은 모두 videos를 뒤에서 수식하는 현재분사이며 and로 병렬 연결된다. 온라인 사이트나 플랫폼을 나타낼 때는 전치사 on을 쓰므로 on the shopping site가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9c871621b4",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Louvre conducted an experiment (A)[to see / seeing] whether hanji (B)[would be / will be] suitable for restoration. Because its fibers run both horizontally and vertically, hanji can better (C)[maintain / to maintain] its original size and shape.",
+"choices": [
+"to see — would be — maintain",
+"seeing — would be — maintain",
+"to see — will be — to maintain",
+"seeing — will be — maintain",
+"to see — would be — to maintain"
+],
+"answer": "①",
+"solution": "실험의 목적을 나타내므로 목적의 to부정사인 to see가 적절하다. 과거 동사 conducted에 이어지는 간접의문문에는 would be가 자연스럽고, 조동사 can 뒤에는 동사원형 maintain을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0afadbafff",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 ①~⑤ 중 문장의 전환이 어법상 알맞지 않은 것은?",
+"choices": [
+"Blacksmiths usually make the Korean homi by hand. → The Korean homi is usually handmade by blacksmiths.",
+"A Korean persuaded the head of the restoration team to examine his study. → A Korean persuaded the head of the restoration team into examining his study.",
+"The Louvre wanted to know whether hanji was suitable for restoration. → The Louvre wanted to know if hanji was suitable for restoration.",
+"Its woven structure prevents hanji from changing its shape easily. → Its woven structure prevents hanji to change its shape easily.",
+"Gardeners use the sharp point of a homi to dig the ground. → The sharp point of a homi is used to dig the ground."
+],
+"answer": "④",
+"solution": "prevent는 ‘prevent+목적어+from+-ing’의 형태를 취하므로 prevent hanji from changing이 맞다. prevent hanji to change로 전환할 수 없으므로 ④가 어법상 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f6fedd9b05",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말의 의미가 되도록 아래의 어법 조건을 각각 한 번씩 활용하여 세 문장을 영작하시오.\n\n① 루브르에서 일하던 한 한국인은 복원팀 책임자가 자신의 연구를 읽도록 설득했다.\n② 루브르는 한지가 복원에 적합할지를 알아보기 위해 실험을 실시했다.\n③ 박물관은 한지가 문화재 복원에 훌륭한 재료임을 알게 되었다.\n\n<어법 조건>\n· persuade A into -ing\n· whether가 이끄는 간접의문문\n· find+목적어+to be",
+"selfGrade": true,
+"answer": "A Korean working at the Louvre persuaded the head of the restoration team into reading his study. The Louvre carried out an experiment to determine whether hanji would be suitable for restoration. The museum found hanji to be an excellent material for restoring cultural assets.",
+"solution": "‘A가 ~하도록 설득하다’는 persuade A into -ing로 나타내며, 간접의문문은 whether 뒤에 주어와 동사를 차례로 쓴다. ‘목적어가 ~임을 알게 되다’에는 find+목적어+to be를 사용한다. material은 가산 명사로 쓰였으므로 an excellent material과 같이 관사를 붙여야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
 }
 ]

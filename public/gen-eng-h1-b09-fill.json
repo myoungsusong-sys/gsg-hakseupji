@@ -2729,5 +2729,337 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u6m6s0t0",
 "custom": true
+},
+{
+"id": "fill-eb98745d05",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 고르시오.\n\nA 3D depth sensor ⓐ[connected / connecting] to a small computer is the central part of Seoyoung’s navigation device.",
+"choices": [
+"connected",
+"connecting",
+"connect",
+"was connecting",
+"to connecting"
+],
+"answer": "①",
+"solution": "sensor는 컴퓨터에 ‘연결되는’ 대상이므로 수동의 의미가 필요하다. 따라서 과거분사 connected가 sensor를 뒤에서 수식해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-65a85d02f6",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 부분을 어법상 바르게 고친 것은?\n\nWhen the sensor finds an obstacle, one of the pins raises to show its height.",
+"choices": [
+"raises → rises",
+"finds → finding",
+"an obstacle → obstacles",
+"one → each",
+"to show → showing만 가능"
+],
+"answer": "①",
+"solution": "핀 자체가 위로 올라가는 것이므로 자동사 rise를 써야 한다. raises는 목적어를 필요로 하는 타동사이므로 rises로 고치는 것이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-20e7e3badf",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nSeoyoung realized ______ the brain could understand spatial information without depending entirely on vision.",
+"choices": [
+"that",
+"what",
+"which",
+"who",
+"where"
+],
+"answer": "①",
+"solution": "빈칸 뒤의 the brain could understand spatial information은 문장 성분이 모두 갖추어진 완전한 절이다. 따라서 realized의 목적절을 이끄는 접속사 that이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3252ccc2be",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ~ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nNand trained his app to identify important points on a signer’s hands. When gestures are recorded, the app matches them with words in ASL, which ⓐ[is / are] changed into text. The short delay from signing to ⓑ[translate / translation] allows the system to respond quickly. ⓒ[That / What] the app can do may improve communication between ASL speakers and people who do not know the language.",
+"choices": [
+"is — translate — That",
+"are — translation — What",
+"are — translate — What",
+"is — translation — That",
+"are — translation — That"
+],
+"answer": "②",
+"solution": "관계대명사 which의 선행사는 복수 명사 words이므로 are가 알맞다. 전치사 to 뒤에는 명사 translation이 와야 하며, 주어절에서 do의 목적어 역할까지 하는 What을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-acdd1b890f",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것을 고르시오.\n\nNand could not stop ①thinking about the sign-language translator. He eventually created an app ②based on artificial intelligence and taught it ③to recognize key points on a signer’s hands. The movements are matched with ASL words, ④which are then presented as text. This technology may help ASL speakers ⑤communicating with people who do not know the language.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "help는 ‘help＋목적어＋동사원형’ 또는 ‘help＋목적어＋to부정사’의 구조로 사용된다. 따라서 communicating은 communicate 또는 to communicate로 고쳐야 한다. 나머지 밑줄은 각각 동명사, 과거분사, 목적격 보어인 to부정사, 복수 선행사와 일치하는 관계절로 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e251c9c1ea",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nNand developed an app ⓐbasing on artificial intelligence to interpret ASL gestures. ⓑWhat he needed was a way to make the app recognize the important points ⓒthat appeared in the videos he recorded. After gestures are captured, they are matched with ASL words, which ⓓis turned into text. The delay from signing to ⓔtranslate is very short, so the technology could help ASL speakers ⓕcommunicate with more people.",
+"choices": [
+"ⓐ, ⓓ",
+"ⓐ, ⓔ",
+"ⓑ, ⓒ, ⓕ",
+"ⓐ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "앱은 인공지능에 ‘기반을 둔’ 것이므로 ⓐbasing은 based로 고쳐야 한다. ⓓwhich의 선행사는 복수인 ASL words이므로 is는 are가 되어야 하며, 전치사 to 뒤의 ⓔtranslate는 명사 translation으로 고쳐야 한다. ⓑ의 What은 주어절에서 needed의 목적어 역할을 하고, help 뒤의 ⓕcommunicate도 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1ca77d2a33",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 어법상 자연스럽도록 괄호 안의 말을 활용하여 (A)~(E)를 완성하시오. 필요한 경우 형태를 바꾸거나 말을 추가할 수 있다.\n\nSeoyoung programmed the computer to control nine motors (A) ________ (line) up in three rows so that each motor (B) ________ (move) a pin. The pins helped the user understand the positions of objects (C) ________ (lie) ahead.\n\n(D) ________ these teenagers’ inventions have in common (E) ________ their creative use of technology for people with disabilities.",
+"selfGrade": true,
+"answer": "lined / could move / lying / What / is",
+"solution": "(A)는 motors가 배열된 것이므로 과거분사 lined를 쓰고, 목적을 나타내는 so that절에는 could move가 알맞다. (C)는 objects와 능동 관계이므로 현재분사 lying을 쓴다. 마지막 문장은 불완전한 주어절을 이끄는 What과 주어 What절을 단수로 받는 is가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eed4a32e74",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "몬트리올 나무 프로젝트에 관한 다음 우리말과 일치하도록 <보기>의 어구를 배열하여 문장을 완성하시오.\n\n연구자들은 주민들에게 나무 사진을 제출해 달라고 요청했다.\n\n<보기>\nto submit / the residents / asked / photos of trees\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것\n• 어구를 추가하거나 변형하지 말 것\n• 빈칸에 들어갈 부분만 쓸 것\n\nThe researchers ______________________________.",
+"selfGrade": true,
+"answer": "asked the residents to submit photos of trees",
+"solution": "‘~에게 …해 달라고 요청하다’는 ask + 목적어 + to부정사로 표현한다. 따라서 asked 뒤에 the residents를 쓰고, to submit과 그 목적어인 photos of trees를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-719c9dc66d",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "참여형 지도 제작에 관한 다음 우리말과 일치하도록 <보기>의 어구를 배열하여 문장을 완성하시오.\n\n학생들은 자신들이 자주 이용하는 경로를 지도에 표시할 수 있다.\n\n<보기>\nthey frequently use / can mark / that / routes\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것\n• 어구를 추가하거나 변형하지 말 것\n• 빈칸에 들어갈 부분만 쓸 것\n\nStudents ______________________________ on a map.",
+"selfGrade": true,
+"answer": "can mark routes that they frequently use",
+"solution": "조동사 can 뒤에는 동사원형 mark를 쓰고 목적어 routes를 배치한다. routes를 수식하는 관계절은 that they frequently use이며, that은 use의 목적어 역할을 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1e8cd7292e",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장을 주어진 말로 시작하는 수동태 문장으로 바꾸시오.\n\nStudents can construct a map of safe routes to school.\n\n<조건>\n• 원문의 의미와 조동사를 유지할 것\n• 행위자를 나타내는 by students를 문장 끝에 쓸 것\n• 완성된 문장 전체를 쓸 것\n\nA map of safe routes to school ______________________________.",
+"selfGrade": true,
+"answer": "A map of safe routes to school can be constructed by students.",
+"solution": "능동태의 목적어인 A map of safe routes to school을 수동태의 주어로 옮긴다. 조동사가 있는 수동태는 can be + 과거분사이므로 can be constructed를 쓰고, 행위자는 by students로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5e4404d038",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "몬트리올 나무 프로젝트의 조사 결과에 관한 다음 우리말을 <보기>의 어구를 이용하여 영작하시오.\n\n공유지의 나무들은 사유지의 나무들보다 덜 다양한 것으로 밝혀졌다.\n\n<보기>\nless diverse / find / on private lands / to be / trees on public lands / than those\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것\n• find를 과거시제 수동태로 바꾸고, 나머지 어구는 변형하지 말 것\n• Trees on public lands로 시작하는 한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "Trees on public lands were found to be less diverse than those on private lands.",
+"solution": "‘~한 것으로 밝혀졌다’는 were found to be로 표현한다. ‘덜 다양한’은 less diverse이며, 비교 대상이 되는 복수명사 trees의 반복을 피하기 위해 than 뒤에 those를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-48b40ae86f",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "통학 경로를 표시하는 활동에 관한 다음 우리말과 일치하도록 <보기>의 어구를 배열하여 문장을 완성하시오.\n\n학생들은 자신들이 이용하는 경로에서 얼마나 안전하다고 느끼는지를 표시할 수 있다.\n\n<보기>\non the routes / feel / they use / safe / how / they\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것\n• 어구를 추가하거나 변형하지 말 것\n• how로 시작하는 간접의문문을 만들 것\n• 빈칸에 들어갈 부분만 쓸 것\n\nStudents can mark ______________________________.",
+"selfGrade": true,
+"answer": "how safe they feel on the routes they use",
+"solution": "‘얼마나 안전하다고 느끼는지’는 간접의문문이므로 how safe 다음에 주어 they와 동사 feel을 쓴다. they use는 목적격 관계대명사가 생략된 관계절로, 바로 앞의 the routes를 수식한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-73d5dc66ba",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "허리케인 샌디 피해 지역의 상황에 관한 다음 우리말과 일치하도록 <보기>의 어구를 배열하여 문장을 완성하시오.\n\n주민들은 때때로 주유소에서 기다렸지만, 결국 휘발유가 전혀 남아 있지 않다는 사실을 알게 되었을 뿐이었다.\n\n<보기>\nthat / no gasoline / learn / was left / only / to\n\n<조건>\n• 모든 어구를 한 번씩 사용할 것\n• 어구를 추가하거나 변형하지 말 것\n• 기대와 다른 결과를 나타내는 to부정사 표현을 사용할 것\n• 빈칸에 들어갈 부분만 쓸 것\n\nResidents sometimes waited at gas stations, ______________________________.",
+"selfGrade": true,
+"answer": "only to learn that no gasoline was left",
+"solution": "기대와 다른 결과를 나타낼 때는 only to + 동사원형을 사용하므로 only to learn으로 시작한다. learn의 목적어인 that절에는 주어 no gasoline과 ‘남아 있었다’를 뜻하는 was left를 차례로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9b4dd2f670",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "참여형 지도 제작 과정에 관한 다음 우리말을 <보기>의 단어와 어구를 이용하여 영작하시오.\n\n어떤 문제들이 제기되는지와 구성원들이 그것들을 어떻게 다루기로 결정하는지에 따라, 공동체 자체가 그 과정을 정의한다.\n\n<보기>\nthe community / define / the process / depending on / what issues / raise / and / how / the members / decide / deal with / them\n\n<조건>\n• The community로 시작하는 한 문장으로 쓸 것\n• 모든 단어와 어구를 한 번씩 사용하되, 필요한 경우 형태를 바꿀 것\n• 강조 용법의 재귀대명사, be동사, to만 각각 한 번 추가할 것\n• define과 decide는 현재시제로, raise는 현재시제 수동태로 쓸 것\n• 두 간접의문문을 and로 연결할 것",
+"selfGrade": true,
+"answer": "The community itself defines the process depending on what issues are raised and how the members decide to deal with them.",
+"solution": "주어 The community를 강조하는 itself를 바로 뒤에 쓰고, 단수 주어에 맞추어 defines를 사용한다. depending on 뒤에서 what issues는 주어이므로 what issues are raised로 쓰며, 두 번째 간접의문문은 how + 주어 + 동사의 어순을 따른다. decide는 to부정사를 목적어로 취하므로 decide to deal with them으로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-cd3d7987f8",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"Female mosquitoes need protein to develop their eggs.",
+"Mosquitoes can detect carbon dioxide from a distance.",
+"The chemicals in human sweat attract mosquitoes.",
+"A mosquito leaves an itchy bump after feeding.",
+"The wetland around Rome were a breeding ground for mosquitoes."
+],
+"answer": "⑤",
+"solution": "⑤의 주어는 단수 명사 The wetland이므로 were를 was로 고쳐야 한다. around Rome은 주어를 꾸미는 전치사구로, 동사의 수를 결정하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-84efceb8ca",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nⓐ[Using / Used] its mouthparts, a mosquito takes blood from a person. If human blood contained no protein, female mosquitoes ⓑ[will / would] have no reason to bite us for it.",
+"choices": [
+"ⓐ Used — ⓑ would",
+"ⓐ Using — ⓑ would",
+"ⓐ Using — ⓑ will",
+"ⓐ Used — ⓑ will",
+"ⓐ Use — ⓑ would"
+],
+"answer": "②",
+"solution": "모기가 자신의 입 부분을 사용하는 능동 관계이므로 분사구문에는 Using이 알맞다. 현재 사실과 반대되는 상황을 가정하는 가정법 과거이므로 주절에는 would를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6c166f2997",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ~ⓒ에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nCarbon dioxide, ⓐ[which / that] people release when breathing, helps mosquitoes locate them. Mosquitoes can also sense chemicals ⓑ[producing / produced] when people sweat. These signals help the insects find the people they will ⓒ[bite / bite them].",
+"choices": [
+"ⓐ which — ⓑ producing — ⓒ bite",
+"ⓐ that — ⓑ produced — ⓒ bite",
+"ⓐ which — ⓑ produced — ⓒ bite them",
+"ⓐ which — ⓑ produced — ⓒ bite",
+"ⓐ that — ⓑ producing — ⓒ bite them"
+],
+"answer": "④",
+"solution": "쉼표 뒤에서 선행사를 부연 설명하는 관계대명사로는 which를 써야 한다. 화학 물질은 생성되는 대상이므로 produced가 알맞다. the people 뒤에는 목적격 관계대명사가 생략되어 있으므로 bite의 목적어로 them을 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-edb74a8123",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 표시된 부분 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nThe mosquito is one of the insects ⓐthat have influenced human history. Rome ⓑwas surrounded by wetlands where mosquitoes could breed. Malaria is among the factors commonly ⓒciting to explain the Western Roman Empire’s fall. Mosquitoes spread the disease across the empire, ⓓreducing its population. Their influence shows ⓔthat nature can shape human history.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ에서 factors는 언급하는 주체가 아니라 언급되는 대상이므로 citing을 cited로 고쳐야 한다. ⓐ의 관계절은 복수 명사 insects를 수식하므로 have가 맞고, ⓓ의 reducing은 앞 절의 결과를 나타내는 분사구문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3972201b2e",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe Scottish attempt to establish a trading center in Panama provides an example of ⓐhow disease influenced history. The settlers reached Darien, ⓑwhere they hoped to carry out their plan. One reason ⓒwhich the settlement failed was the deadly disease the settlers faced. Before their arrival, almost none of them ⓓhad encountered the diseases that threatened them there. If their immune systems ⓔhad been stronger, fewer settlers might have died. The disaster suggests that mosquitoes may have ⓕaffecting the course of history more deeply than people once realized.",
+"choices": [
+"ⓑ, ⓒ",
+"ⓐ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓕ"
+],
+"answer": "⑤",
+"solution": "ⓒ 뒤의 the settlement failed는 완전한 절이므로 이유를 나타내는 관계부사 why 또는 for which가 필요하다. ⓕ는 조동사 뒤의 완료형 may have affected가 되어야 하므로 affecting을 affected로 고친다. ⓑ의 where, 과거의 도착보다 앞선 경험을 나타내는 ⓓ의 과거완료, 과거 사실의 반대를 가정하는 ⓔ의 had been은 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d79a7ba14b",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nⓐGuided by carbon dioxide and other signals, a female mosquito approaches a person. One of the signals ⓑthat attracts mosquitoes is the carbon dioxide people breathe out. The fact ⓒthat human blood contains protein explains why females seek it. If our blood lacked protein, they ⓓwould not need to obtain it from us. After a blood meal, the mosquito removes water from the blood ⓔshe has taken it. ⓕUsed the concentrated blood to develop her eggs, she later lays them on water.",
+"choices": [
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓔ, ⓕ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓑ, ⓕ",
+"ⓓ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓑ의 관계절은 복수 명사 signals를 수식하므로 attracts를 attract로 고쳐야 한다. ⓔ는 the blood를 선행사로 하는 목적격 관계대명사가 생략된 구조이므로 중복 목적어 it을 삭제한다. ⓕ는 주절의 주어 she가 혈액을 사용하는 능동 관계이므로 Used를 Using으로 고친다. ⓐ는 모기가 신호에 이끌리는 수동 관계이고, ⓒ는 동격절을 이끄는 that이며, ⓓ는 가정법 과거의 주절이므로 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
 }
 ]

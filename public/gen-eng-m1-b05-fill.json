@@ -528,5 +528,254 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-0ef5bc50d7",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "괄호 (A)~(C)에서 어법상 알맞은 말을 고른 것은?\n\nJina: I (A)[watch / watches] everything very carefully. I (B)[make / makes] big decisions during baseball games.\nWally: I have fun with everyone. Everyone (C)[love / loves] me!",
+"choices": [
+"(A) watch - (B) make - (C) loves",
+"(A) watch - (B) makes - (C) love",
+"(A) watches - (B) make - (C) loves",
+"(A) watches - (B) makes - (C) love",
+"(A) watches - (B) makes - (C) loves"
+],
+"answer": "①",
+"solution": "주어 I 뒤에는 동사원형 watch와 make를 쓴다. everyone은 단수로 취급하므로 현재시제 동사 love에 -s를 붙인 loves가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a446664e43",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "괄호 (A)~(C)에 주어진 동사의 알맞은 형태가 바르게 연결된 것은?\n\nYogi: I don't (A)(play) in baseball games. Look! A pitcher is (B)(throw) a baseball. I will (C)(catch) it.",
+"choices": [
+"(A) plays - (B) throwing - (C) catch",
+"(A) play - (B) throw - (C) catching",
+"(A) play - (B) throwing - (C) catch",
+"(A) playing - (B) throwing - (C) catches",
+"(A) play - (B) throws - (C) catching"
+],
+"answer": "③",
+"solution": "don't와 조동사 will 뒤에는 동사원형이 오므로 play와 catch가 알맞다. 현재진행형은 「be동사＋동사-ing」이므로 is throwing이 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a6cc45cce5",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "괄호 (A)~(C)에서 어법상 알맞은 말이 바르게 연결된 것은?\n\nHello, I'm Miso from Boram Middle School. They are not the players. (A)[Who are they / Who they are]?\nJina: My voice is very (B)[loud / loudly]. Everyone (C)[can hear / hear can] me.",
+"choices": [
+"(A) Who they are - (B) loud - (C) can hear",
+"(A) Who are they - (B) loudly - (C) can hear",
+"(A) Who are they - (B) loud - (C) can hear",
+"(A) Who are they - (B) loud - (C) hear can",
+"(A) Who they are - (B) loudly - (C) hear can"
+],
+"answer": "③",
+"solution": "의문사가 있는 be동사 의문문은 「의문사＋be동사＋주어」의 순서이므로 Who are they가 알맞다. be동사 뒤의 보어로는 형용사 loud를 쓰고, 조동사 can은 본동사 hear 앞에 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-57913fbebb",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "밑줄 친 ⓐ~ⓔ를 바르게 고치지 못한 것은?\n\nYogi: I ⓐdon't plays in baseball games. But ⓑpitchers needs me. They practice with me. ⓒLook! A pitcher is throwing a baseball. I ⓓwill catches it.\nWally: I have fun with everyone. Everyone ⓔlove me!",
+"choices": [
+"ⓐ don't plays → don't play",
+"ⓑ pitchers needs → pitchers need",
+"ⓒ Look → Looking",
+"ⓓ will catches → will catch",
+"ⓔ love → loves"
+],
+"answer": "③",
+"solution": "don't와 will 뒤에는 동사원형이 오므로 play와 catch로 고쳐야 한다. 복수 주어 pitchers에는 need를 쓰고, 단수 취급하는 everyone에는 loves를 쓴다. Look은 상대방의 주의를 끄는 명령문이므로 그대로 써야 하며 Looking으로 고치면 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-07d9d4a2d9",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "괄호 ⓐ~ⓖ에 주어진 단어를 어법상 알맞은 형태로 바꾸어 순서대로 쓰시오.\n\nJina: I ⓐ(watch) everything very ⓑ(careful). I ⓒ(make) big decisions during baseball games. Everyone can ⓓ(hear) me.\nYogi: ⓔ(look)! A pitcher is ⓕ(throw) a baseball.\nTeo: Who will ⓖ(hit) best in night games?",
+"selfGrade": true,
+"answer": "watch, carefully, make, hear, Look, throwing, hit",
+"solution": "일반적인 행동을 나타내고 주어가 I이므로 watch와 make를 쓴다. 동사 watch를 꾸미는 부사는 carefully이며, can과 will 뒤에는 동사원형 hear와 hit가 온다. 명령문에는 동사원형 Look을 쓰고, is 뒤에는 현재분사 throwing을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-423a986464",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 밑줄 친 부분에는 각각 어법상 오류가 하나씩 있다. ⓐ~ⓔ를 바르게 고쳐 순서대로 쓰시오.\n\nⓐWho they are?\nJina: I watch everything very ⓑcareful.\nYogi: The pitcher is ⓒwarm up with me.\nTeo: Who will ⓓhits best in night games?\nWally: The suit is very ⓔheavily.",
+"selfGrade": true,
+"answer": "Who are they?, carefully, warming up, hit, heavy",
+"solution": "be동사 의문문은 주어와 be동사의 위치를 바꾸므로 Who are they?가 된다. 동사를 꾸밀 때는 부사 carefully를 쓰고, 현재진행형에는 warming up을 쓴다. will 뒤에는 동사원형 hit가 오며, be동사 뒤에서 주어의 상태를 나타낼 때는 형용사 heavy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5ba8a70d27",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말과 같은 뜻이 되도록 괄호 안의 단어를 모두 사용하여 문장을 완성하시오. 필요한 경우 동사의 형태를 바꾸시오.\n\nⓐ 그들은 누구인가?\n(they / be / who)\n\nⓑ 모두가 내 말을 들을 수 있다.\n(me / everyone / hear / can)\n\nⓒ 그 투수는 나와 함께 몸을 풀고 있다.\n(up / the pitcher / warm / with me / be)",
+"selfGrade": true,
+"answer": "Who are they? / Everyone can hear me. / The pitcher is warming up with me.",
+"solution": "be동사 의문문은 「의문사＋be동사＋주어」의 어순을 따른다. 조동사 can 뒤에는 동사원형 hear를 놓는다. 진행 중인 동작은 「be동사＋동사-ing」로 나타내므로 is warming up을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ddc1f8b14d",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 빈칸에 들어갈 말이 순서대로 바르게 연결된 것은?\n\n• There _____ a forest close to Reena's village.\n• Hungry elephants can _____ food on the farms.",
+"choices": [
+"is — find",
+"are — find",
+"is — found",
+"are — found",
+"is — finds"
+],
+"answer": "①",
+"solution": "첫 문장은 뒤에 단수 명사 a forest가 있으므로 is가 알맞다. 둘째 문장은 조동사 can 뒤이므로 동사원형 find를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b789218c17",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음은 마을 사람들이 과거에 한 일을 설명한 것이다. 괄호 안의 동사를 알맞게 바꾼 것은?\n\nThe villagers (try) to stop the elephants and (make) loud sounds.",
+"choices": [
+"tryed — made",
+"tried — maked",
+"tryed — maked",
+"tried — made",
+"tries — makes"
+],
+"answer": "④",
+"solution": "과거에 한 일이므로 두 동사 모두 과거형으로 바꿔야 한다. try는 자음과 y로 끝나므로 tried가 되고, make의 과거형은 불규칙형인 made이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9daeb3aca1",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 부분을 고치려 한다. 수정 방법으로 적절하지 않은 것은?\n\nIn the past, the villagers ⓐtryed to keep the elephants away. The animals ⓑwas not afraid of the loud sounds. Reena asked the villagers not to hurt ⓒthey. After the villagers planted food near the forest, the plants ⓓgrowed fast. Today, the elephants ⓔdoesn't visit the village anymore.",
+"choices": [
+"ⓐ tryed → tried",
+"ⓑ was → were",
+"ⓒ they → their",
+"ⓓ growed → grew",
+"ⓔ doesn't → don't"
+],
+"answer": "③",
+"solution": "hurt의 목적어 자리에는 소유격 their가 아니라 목적격 them이 필요하다. 복수 주어에 맞는 were와 don't, 올바른 과거형 tried와 grew를 제시한 나머지 수정은 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6487faf1ee",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A)~(D)에 들어갈 말이 순서대로 바르게 연결된 것은?\n\nLong ago, hungry elephants visited Reena's village. They could not (A)[find / found] enough food in the forest. The villagers made loud sounds, but the elephants were not (B)[scared / scary]. Later, the villagers (C)[grew / growed] rice and bananas near the forest for the animals. Now, there (D)[is / are] no elephants coming to the village for food.",
+"choices": [
+"find — scared — growed — are",
+"found — scared — grew — are",
+"find — scary — grew — are",
+"find — scared — grew — is",
+"find — scared — grew — are"
+],
+"answer": "⑤",
+"solution": "could not 뒤에는 동사원형 find가 오며, 코끼리들이 두려움을 느끼지 않았다는 뜻이므로 scared가 알맞다. grow의 과거형은 grew이다. 마지막 문장은 복수 명사 elephants에 맞추어 are를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-33b5ae6429",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 Reena의 마을 이야기를 정리한 문장들이다. 어법상 옳은 문장만을 모두 고른 것은?\n\nㄱ. In the past, the elephants came to the farms and eat the villagers' food.\nㄴ. The villagers tried to stop the elephants, but the animals did not stay away.\nㄷ. Reena said to the villagers, “Not hurt the hungry animals!”\nㄹ. Today, the people and the elephants can live happily.\nㅁ. There is many animals in the forest near the village.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄴ, ㄷ",
+"ㄷ, ㅁ",
+"ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄴ은 과거형 tried와 did not 뒤의 동사원형 stay를 바르게 썼고, ㄹ도 can 뒤에 동사원형 live를 써서 옳다. ㄱ은 과거의 일을 나열하므로 eat를 ate로 고쳐야 한다. ㄷ은 부정 명령문이므로 Not을 Don't로, ㅁ은 복수 명사 many animals에 맞추어 is를 are로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e60c5b24ed",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 틀린 부분을 모두 찾아 바르게 고친 낱말만 표시 순서대로 쓰시오.\n\nIn the past, the villagers ⓐtryed different ways to stop the elephants. They ⓑmade loud sounds, but the elephants ⓒwas not afraid. The animals could not ⓓfound food in the forest, so they came to the farms and ⓔeated the fruit there. Now, the elephants do not ⓕvisit the village for food.",
+"selfGrade": true,
+"answer": "tried, were, find, ate",
+"solution": "ⓐ는 try의 과거형 tried로, ⓒ는 복수 주어 the elephants에 맞는 were로 고쳐야 한다. ⓓ는 could not 뒤이므로 동사원형 find가 알맞고, ⓔ는 eat의 과거형 ate가 알맞다. ⓑ made와 ⓕ visit은 각각 과거형과 do not 뒤의 동사원형으로 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4720e779fc",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 ⓐ~ⓔ에 들어갈 말을 조건에 맞게 순서대로 쓰시오.\n\nThe villagers once ⓐ_____ to drive the elephants away. They ⓑ_____ loud sounds, but the animals did not ⓒ_____ away. Reena said, “ⓓ_____ hurt the elephants.” Now, the people and the elephants can ⓔ_____ good neighbors.\n\n[조건]\n• ⓐ, ⓑ, ⓒ, ⓔ에는 각각 try, make, go, be를 문맥과 어법에 맞는 형태로 쓸 것.\n• ⓓ에는 ‘코끼리들을 해치지 마세요.’라는 뜻이 되도록 부정 명령문을 만드는 축약형을 쓸 것.\n• 각 빈칸에는 한 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "tried, made, go, Don't, be",
+"solution": "과거에 마을 사람들이 한 일이므로 ⓐ와 ⓑ에는 tried와 made가 들어간다. ⓒ는 did not 뒤이므로 과거형 went가 아닌 동사원형 go를 써야 한다. 부정 명령문은 Don't와 동사원형으로 만들며, can 뒤에는 동사원형 be가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a289b82413",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓖ 중 어법상 틀린 부분을 모두 찾아 바르게 고친 낱말만 표시 순서대로 쓰시오. 단, 글에 나타난 과거와 현재의 시간 구분을 유지하시오.\n\nReena lives near a forest, and there ⓐis many animals in it. In the past, elephants ⓑcame out of the forest to find food. The villagers planted rice and bananas for ⓒthey. The plants ⓓgrowed quickly, and the elephants ⓔliked the food. Today, the elephants ⓕdidn't come to the village anymore, and they can ⓖare happy near the forest.",
+"selfGrade": true,
+"answer": "are, them, grew, don't, be",
+"solution": "ⓐ는 복수 명사 many animals에 맞추어 are로, ⓒ는 전치사 for 뒤의 목적격 them으로 고쳐야 한다. ⓓ는 grow의 올바른 과거형 grew가 필요하다. ⓕ는 현재의 상황을 나타내므로 don't로, ⓖ는 can 뒤이므로 동사원형 be로 고쳐야 한다. ⓑ came과 ⓔ liked는 과거의 일을 나타내는 올바른 형태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
 }
 ]

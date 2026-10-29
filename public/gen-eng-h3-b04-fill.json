@@ -1,0 +1,231 @@
+[
+{
+"id": "fill-83d3db1f29",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n(A)[Watching / Watch] live sports is a common hobby. At a stadium, spectators can see fans (B)[cheering / cheered] enthusiastically for their team. Supporting the same team can make the fans (C)[feel / to feel] that they belong to a group.",
+"choices": [
+"Watching — cheering — feel",
+"Watching — cheered — to feel",
+"Watch — cheering — feel",
+"Watching — cheering — to feel",
+"Watch — cheered — to feel"
+],
+"answer": "①",
+"solution": "동명사 Watching은 문장의 주어로 쓰이며, see의 목적어인 fans와 능동 관계인 cheering이 알맞다. 사역동사 make는 목적격 보어로 동사원형을 취하므로 feel을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-33037a3699",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFans of a football team (A)[based / basing] in their city share a sense of belonging. They often gather at the stadium (B)[to support / supporting] the team. Their songs may be different from (C)[that / those] of the opposing team’s fans.",
+"choices": [
+"based — to support — those",
+"based — supporting — that",
+"basing — to support — those",
+"basing — supporting — that",
+"based — to support — that"
+],
+"answer": "①",
+"solution": "a football team은 도시에 기반을 둔 대상이므로 과거분사 based가 알맞다. 목적을 나타내는 to support가 필요하며, 복수 명사 songs를 대신하므로 복수 대명사 those를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6c11b82493",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nResearchers compared home matches with games played without crowds. They found (A)[that / what] the absence of cheering affected the home team’s performance. This finding helps us (B)[understand / understanding] the influence of fans and (C)[consider / considering] how to create a healthy fandom culture.",
+"choices": [
+"that — understand — consider",
+"what — understand — considering",
+"that — understanding — consider",
+"what — understanding — considering",
+"that — understand — considering"
+],
+"answer": "①",
+"solution": "found 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다. help의 목적격 보어로 동사원형 understand를 쓸 수 있고, and 뒤의 consider는 understand와 병렬을 이룬다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c6b3226e04",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nSports fandom can be explained from evolutionary and social psychological perspectives. In the past, belonging to a group ⓐwas important for survival because group members could cooperate with one another. This instinct may explain ⓑwhy modern people choose a team and remain loyal to it. In addition, optimal distinctiveness theory suggests that each individual ⓒhave two competing needs: inclusion and differentiation. Supporting a team allows fans ⓓto satisfy both needs, and team colors and songs make their feeling of uniqueness ⓔstronger.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "주어 each individual은 단수이므로 동사도 단수형 has가 되어야 한다. 나머지는 각각 주어·동사 수 일치, 관계부사절, allow의 목적격 보어, 목적격 보어의 비교급 용법에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7f24c99361",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 세 부분을 모두 어법에 맞게 고쳐 쓰시오. 답은 고친 표현을 글에 나온 순서대로 쉼표로 구분하여 쓸 것.\n\nThe researchers examined matches during a period ⓐwhich spectators could not enter the stadiums. Their analysis showed ⓑwhat the home team’s performance declined without the support of a crowd. The result suggests that fans should establish a healthy culture of fandom and ⓒseeking ways to influence society positively.",
+"selfGrade": true,
+"answer": "when, that, seek",
+"solution": "선행사 a period 뒤에는 그 기간을 나타내는 관계부사 when이 필요하다. showed 뒤의 절은 문장 성분이 완전하므로 접속사 that으로 이끌어야 한다. 또한 seek는 and 앞의 establish와 병렬을 이루어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0f527b2fd9",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 일치하도록 괄호 안의 단어를 모두 사용하여 영작하시오. 필요하면 단어의 형태를 바꾸되, given으로 시작할 것.\n\n스포츠 팬덤이 현대에 점점 더 보편화되고 있다는 점을 고려할 때, 팬들은 사회에 긍정적인 영향을 미칠 수 있는 응원 방식을 찾아야 한다.\n\n(given, common, become, sports fandom, fans, seek, ways, support, can, have, a positive influence, society)",
+"selfGrade": true,
+"answer": "Given that sports fandom has become increasingly common, fans should seek ways of supporting their teams that can have a positive influence on society.",
+"solution": "given that은 ‘~을 고려할 때’라는 뜻으로 뒤에 완전한 절을 이끈다. 현재까지의 변화를 나타내므로 has become을 쓰고, ways 뒤에는 전치사 of와 동명사 supporting을 연결할 수 있다. 관계대명사 that이 ways를 수식하며 can have의 주어 역할을 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b0ca2dffa7",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nFor our ancestors, belonging to a group was helpful for survival. A person living alone had to face difficulties without help, but group members could (A)[assist / avoid] one another. Working together on difficult tasks helped them build (B)[trust / doubt]. Therefore, membership in a community made their chances of survival (C)[higher / lower].",
+"choices": [
+"① assist — doubt — higher",
+"② avoid — trust — lower",
+"③ assist — trust — lower",
+"④ assist — trust — higher",
+"⑤ avoid — doubt — higher"
+],
+"answer": "④",
+"solution": "집단생활이 생존에 도움이 되는 이유를 설명하므로 구성원들은 서로 도울 수 있다는 assist가 적절하다. 공동 작업은 신뢰를 쌓게 하므로 trust가, 그 결과 생존 가능성이 높아지므로 higher가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d97a157936",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nA team's success can affect the feelings of its supporters. When the team wins, its fans often feel (A)[proud / ashamed]. Although they do not play in the game themselves, they connect themselves with the team's (B)[achievement / failure]. In this way, watching their team win can give them (C)[satisfaction / disappointment].",
+"choices": [
+"① proud — achievement — satisfaction",
+"② ashamed — achievement — satisfaction",
+"③ proud — failure — disappointment",
+"④ ashamed — failure — satisfaction",
+"⑤ proud — achievement — disappointment"
+],
+"answer": "①",
+"solution": "응원하는 팀의 성공을 자신의 성공처럼 느끼는 현상에 관한 글이다. 승리한 팀의 팬들이 느끼는 감정은 proud이고, 자신과 연결하는 것은 팀의 achievement이며, 이를 통해 얻는 감정은 satisfaction이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ed80d04c9f",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nCheering for a sports team can help people take their minds off everyday problems. When their team wins, their brains may release dopamine, which is associated with (A)[pleasure / fear]. A victory after many losses can be especially (B)[exciting / disappointing]. Cheering may also lead to the release of oxytocin, which helps people feel (C)[connected / isolated].",
+"choices": [
+"① pleasure — disappointing — connected",
+"② fear — exciting — isolated",
+"③ pleasure — exciting — isolated",
+"④ fear — disappointing — connected",
+"⑤ pleasure — exciting — connected"
+],
+"answer": "⑤",
+"solution": "도파민은 즐거움을 느끼게 하는 물질이므로 pleasure가 적절하다. 연패 후의 승리는 특히 신나는 일이므로 exciting이 알맞고, 옥시토신은 사람들 사이의 유대감에 기여하므로 connected가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8dcb2bc33c",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nOptimal distinctiveness theory explains why people may want both membership and uniqueness. Individuals wish to be (A)[accepted / excluded] by a group, yet they do not want to lose their sense of being different. Supporting a sports team can satisfy these seemingly (B)[opposing / identical] desires. Fans share a connection with supporters of the same team while remaining distinct from supporters of other teams. Team colors and songs make this distinction more noticeable and thus (C)[strengthen / weaken] their sense of uniqueness.",
+"choices": [
+"① accepted — identical — strengthen",
+"② accepted — opposing — strengthen",
+"③ excluded — opposing — strengthen",
+"④ accepted — opposing — weaken",
+"⑤ excluded — identical — weaken"
+],
+"answer": "②",
+"solution": "집단에 소속되고 싶다는 욕구를 나타내므로 accepted가 적절하다. 소속되려는 욕구와 차별화되려는 욕구는 서로 상반되므로 opposing이 알맞다. 팀의 색과 노래는 다른 팀 팬들과의 차이를 드러내 고유성을 강화하므로 strengthen이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f4699964c8",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nIt would be misleading to explain optimal distinctiveness as a desire to be different from everyone, including fellow supporters. What satisfies the need for inclusion is precisely the (A)[similarity / distance] between oneself and other fans of the same team. Nor does this shared identity necessarily eliminate uniqueness: the relevant comparison shifts from members within the group to people outside it. Thus, the apparent conflict between belonging and being different is (B)[reconciled / intensified] through group membership. Distinctive team colors serve this dual purpose; while uniting fellow fans, they make the boundary separating those fans from rival supporters less (C)[blurred / pronounced].",
+"choices": [
+"① similarity — intensified — blurred",
+"② distance — reconciled — blurred",
+"③ similarity — reconciled — blurred",
+"④ similarity — reconciled — pronounced",
+"⑤ distance — intensified — pronounced"
+],
+"answer": "③",
+"solution": "소속 욕구는 같은 팀 팬들과의 유사성을 통해 충족되므로 (A)는 similarity이다. 집단 내부에서는 소속감을, 외부 집단과의 비교에서는 차별성을 얻으므로 두 욕구의 충돌은 reconciled가 되어야 한다. 팀의 색은 집단 간 경계를 뚜렷하게 하므로 '덜 흐릿하게'라는 뜻의 less blurred가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7b2cd7616b",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nIn basking in reflected glory, the absence of a direct reward does not prevent a supporter from enjoying a team's victory. The satisfaction depends less on receiving a personal benefit than on (A)[association / competition] with those who have succeeded. Yet the same identification that allows the supporter to share in the team's glory can also make criticism difficult to dismiss. If the distinction between the team and the self becomes (B)[blurred / sharpened], an unfavorable remark about the players may be taken personally. Under such circumstances, the supporter may respond with hostility rather than (C)[resentment / detachment], treating an evaluation of the team as an attack on the self.",
+"choices": [
+"① association — blurred — detachment",
+"② competition — blurred — detachment",
+"③ association — sharpened — detachment",
+"④ association — blurred — resentment",
+"⑤ competition — sharpened — resentment"
+],
+"answer": "①",
+"solution": "반사된 영광 누리기는 성공한 대상과 자신을 연결하는 현상이므로 association이 적절하다. 팀에 대한 비판을 자신에 대한 공격으로 받아들이는 것은 팀과 자아의 구분이 흐려진 상태이므로 blurred가 알맞다. 마지막 문장은 적대적 반응과 대조되는 태도를 요구하므로, 분개를 뜻하는 resentment가 아니라 감정적으로 거리를 두는 태도인 detachment가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-678748438d",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 흐름에 맞게 빈칸 (A), (B), (C)에 들어갈 낱말을 <보기>에서 골라 순서대로 쓰시오. 각 낱말은 한 번만 사용하며, 형태를 바꾸지 마시오.\n\nFrom an evolutionary perspective, the value of community membership lay in what cooperation made possible. A task beyond one person's ability did not necessarily remain impossible when others offered help. Consequently, dependence on fellow members could function as a survival (A)________ rather than a weakness. This does not mean that membership alone made all tribes equally successful: tribes whose members were more closely allied were more likely to defeat those marked by weaker internal (B)________. The explanation of modern fandom builds on continuity with this past. It treats the impulse to seek a group as an (C)________ tendency, passed down from ancestors, rather than one originating in modern stadiums.\n\n<보기>\nadvantage / cohesion / inherited / liability / rivalry / acquired",
+"selfGrade": true,
+"answer": "advantage, cohesion, inherited",
+"solution": "혼자 해결할 수 없는 일을 협력으로 해결하므로 구성원에 대한 의존은 생존상의 약점이 아니라 이점인 advantage가 된다. 결속력이 강한 부족과 대비되는 것은 내부 결속력이 약한 부족이므로 (B)는 cohesion이다. 집단을 찾으려는 성향이 조상에게서 전해졌다는 설명이므로 (C)는 후천적으로 획득했다는 acquired가 아니라 inherited이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+}
+]

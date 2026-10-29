@@ -3579,5 +3579,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u6m5s0t0",
 "custom": true
+},
+{
+"id": "fill-35f4a6195c",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThe students think that their club room wall should be useful. They decide to put up a list of the club members so that they can learn one another’s names. They also want to post their plan for the school year so that they will not forget it.",
+"choices": [
+"how to decorate a classroom with pictures",
+"what information to put on the club room wall",
+"when to welcome new club members",
+"why students should make a school plan",
+"how to choose a leader for the club"
+],
+"answer": "②",
+"solution": "학생들은 동아리방 벽에 회원 명단과 한 해의 계획을 게시하려고 한다. 따라서 글의 주제는 동아리방 벽에 어떤 정보를 붙일지에 관한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-335143b5c0",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAt first, the empty lot was ugly and full of trash, and I did not want to work there. However, the people in the neighborhood cleaned the lot and planted flowers and vegetables. Two months later, it became a place where people could enjoy the flowers and talk together.",
+"choices": [
+"An Empty Lot Nobody Could Change",
+"The Best Way to Grow Vegetables Fast",
+"A Neighborhood Lot Gets a New Life",
+"Why I Refused to Join the Project",
+"Wild Plants That Filled Our Town"
+],
+"answer": "③",
+"solution": "글은 쓰레기로 가득했던 빈터가 이웃들의 노력으로 사람들이 함께 이용하는 정원으로 바뀐 과정을 다룬다. 이러한 변화를 포괄하는 제목은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-055694a93e",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 요지로 가장 알맞은 것은?\n\nSumi: There is too much trash at the bus stop. What can we do?\nJun: We can clean it and put a bench there.\nMiso: That will help the elderly. Let's put flower pots around the bench, too.\nSumi: Good. They will make the place more beautiful. Let's work together tomorrow.",
+"choices": [
+"The elderly should avoid using a dirty bus stop.",
+"The students will improve the bus stop in several ways.",
+"The town needs more bus stops for elderly people.",
+"The students disagree about when to begin the project.",
+"Flower pots are more useful than a bench at a bus stop."
+],
+"answer": "②",
+"solution": "학생들은 버스 정류장을 청소하고 벤치와 화분을 놓기로 한다. 즉, 여러 활동을 통해 버스 정류장을 더 나은 곳으로 만들려는 것이 대화의 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-85a2590e7e",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약한 것으로 가장 알맞은 것은?\n\nI did not believe that twenty people could turn the terrible empty lot into a garden. We did not even know where to begin, but Mr. Hernandez told us that we just had to start. He divided the lot into four parts and gave one part to each group. By the end of the day, we had filled many bags with waste, and the lot already looked much better.",
+"choices": [
+"The workers stopped because Mr. Hernandez gave them difficult jobs.",
+"The empty lot became worse because too many people worked there.",
+"The group made progress by dividing the large task and beginning the work.",
+"The narrator enjoyed the project from the moment the work began.",
+"The group finished planting all the flowers and vegetables in one day."
+],
+"answer": "③",
+"solution": "처음에는 일이 불가능해 보였지만, 빈터를 네 부분으로 나누어 일을 시작하자 눈에 띄는 성과가 나타났다. 따라서 큰일을 나누어 시작함으로써 진전이 생겼다는 ③이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8e85113b4b",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 제목을 주어진 조건에 맞게 영어로 완성하시오.\n\nThe lot across from Johnny’s Shop used to be ugly and dirty. After the neighborhood people cleaned it and planted seeds, flowers and vegetables grew there. People now meet in the garden to enjoy the view and talk together.\n\nFrom a Dirty Lot to __________________________\n\n<조건>\n1. 본문의 핵심적인 변화를 나타낼 것.\n2. garden과 everyone을 반드시 사용할 것.\n3. 총 4단어로 쓸 것.",
+"selfGrade": true,
+"answer": "a Garden for Everyone",
+"solution": "글의 핵심은 더러운 빈터가 모든 사람이 이용하는 정원으로 변했다는 것이다. 주어진 앞부분과 자연스럽게 이어지고 두 필수 단어를 포함하는 4단어 표현은 a Garden for Everyone이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3dfc4817ae",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 <조건>에 맞게 우리말로 쓰시오.\n\nThe first day of the neighborhood project was very hard. Still, the people continued to work on the empty lot every weekend. In time, flowers and vegetables grew, and the lot became a place where neighbors met and shared its results. Looking at the garden, I finally understood the value of what we had done together.\n\n<조건>\n1. ‘공동의 노력’과 ‘지역 사회’를 모두 포함할 것.\n2. 한 문장으로 쓸 것.",
+"selfGrade": true,
+"answer": "공동의 노력은 쓸모없던 빈터를 지역 사회 모두에게 가치 있는 공간으로 변화시킬 수 있다.",
+"solution": "글은 이웃들이 함께 노력하여 더러운 빈터를 꽃과 채소가 자라고 사람들이 만나는 정원으로 바꾼 과정을 보여 준다. 따라서 공동의 노력이 지역 사회를 위한 가치 있는 변화를 만든다는 내용이 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
 }
 ]

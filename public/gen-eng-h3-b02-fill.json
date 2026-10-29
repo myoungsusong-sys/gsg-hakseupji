@@ -404,5 +404,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b02-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-1dc021d704",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 말과 의미가 가장 가까운 것은?\n\nThe lyrics of The Message described the [harsh] realities of life in the ghetto.",
+"choices": [
+"ordinary",
+"severe",
+"hidden",
+"peaceful",
+"temporary"
+],
+"answer": "②",
+"solution": "harsh는 생활이나 현실 등이 ‘가혹한, 혹독한’이라는 뜻이다. 문맥상 severe가 가장 가까운 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-43bcab12ac",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 말과 의미가 가장 가까운 것은?\n\nEarly hip-hoppers developed a new culture despite their [limited] resources.",
+"choices": [
+"valuable",
+"natural",
+"various",
+"scarce",
+"traditional"
+],
+"answer": "④",
+"solution": "limited resources는 이용할 수 있는 자원이 충분하지 않았다는 의미이다. scarce는 ‘부족한, 희소한’이라는 뜻이므로 문맥에 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a9df61710b",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 단어의 의미로 가장 적절한 것은?\n\nWith its unique and growing [appeal], hip-hop continues to be a global phenomenon.",
+"choices": [
+"불평",
+"호소문",
+"매력",
+"갈등",
+"한계"
+],
+"answer": "③",
+"solution": "여기서 appeal은 사람들의 관심을 끄는 ‘매력’이라는 뜻이다. 힙합의 독특하고 커지는 매력으로 인해 그것이 세계적인 현상으로 이어진다는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b8d987d68b",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 부분을 바꾸어 쓸 때 가장 적절한 것은?\n\nFor rappers, the pioneers are heroes who [overcame hardship and injustice].",
+"choices": [
+"ignored every social problem",
+"surrendered to difficult conditions",
+"made their difficulties seem greater",
+"were defeated by unfair treatment",
+"successfully dealt with adversity and unfairness"
+],
+"answer": "⑤",
+"solution": "overcome은 어려움 등을 ‘극복하다’라는 뜻이며 hardship은 adversity, injustice는 unfairness로 바꾸어 쓸 수 있다. 따라서 원문의 의미를 유지하는 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c67ee79db8",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 The Message와 관련된 내용이다. 문맥상 밑줄 친 표현을 바꾸어 쓴 것으로 적절하지 않은 것은?\n\nThe appearance of The Message caused a significant shift in hip-hop. Its groundbreaking lyrics detailed harsh realities and confronted racial discrimination.",
+"choices": [
+"a significant shift → a minor change",
+"groundbreaking → highly innovative",
+"detailed → described fully",
+"harsh realities → severe conditions of life",
+"confronted → stood against"
+],
+"answer": "①",
+"solution": "significant shift는 ‘중대한 변화’이므로 minor change와는 의미가 반대이다. 나머지 표현들은 각각 문맥상 원래 표현과 유사한 의미를 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e057d9164c",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 요약문의 빈칸에 들어갈 말로 가장 적절하게 연결된 것은?\n\nA new attitude of respect gradually (A)________ in hip-hop. Rappers honored pioneers who had (B)________ hardship, and this respect expressed both self-worth and (C)________ for others.",
+"choices": [
+"disappeared - avoided - doubt",
+"formed - endured - esteem",
+"declined - created - fear",
+"changed - welcomed - anger",
+"failed - forgotten - criticism"
+],
+"answer": "②",
+"solution": "힙합에서는 존중의 태도가 형성되었으므로 formed가 적절하다. 선구자들은 고난을 견디고 극복했으며, 타인에 대한 존중을 나타냈으므로 endured와 esteem이 문맥에 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f74ef8a47f",
+"typeId": "eng-h3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 힙합 가사의 변화를 요약한 글이다. 빈칸 (A)~(D)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nEarly hip-hop lyrics mainly celebrated shared enjoyment at parties. The Message later marked a (A)________ change by (B)________ the grim conditions of ghetto life and (C)________ racial discrimination. Hip-hop also developed a tradition of honoring pioneers who created a new culture even with (D)________ resources.",
+"choices": [
+"negligible - portraying - challenging - plentiful",
+"decisive - concealing - supporting - scarce",
+"decisive - portraying - accepting - abundant",
+"decisive - portraying - challenging - scarce",
+"temporary - romanticizing - avoiding - sufficient"
+],
+"answer": "④",
+"solution": "The Message는 힙합 가사에 결정적인 변화를 가져와 빈민가의 암울한 현실을 묘사하고 인종 차별에 맞섰다. 또한 초기 선구자들은 부족한 자원에도 새로운 문화를 만들었으므로 decisive, portraying, challenging, scarce의 연결이 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m0s0t0",
+"custom": true
 }
 ]

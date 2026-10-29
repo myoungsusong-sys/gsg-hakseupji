@@ -304,5 +304,152 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-11-u0m0s0t3",
 "custom": true
+},
+{
+"id": "fill-af9b425acc",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "주관식",
+"diff": 3,
+"body": "집합 $A=\\{-1,0,1\\}$에서 정의된 두 함수 $f(x)=x^2+ax+b$, $g(x)=x^2+2x+3$이 서로 같은 함수일 때, $a+b$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$5$",
+"solution": "$f=g$이므로 $A$의 모든 원소에서 함수값이 같아야 한다. $x=0$을 대입하면 $b=3$이고, $x=1$을 대입하면 $1+a+b=6$이므로 $a=2$이다. 따라서 $a+b=5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-1166b2a9df",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체에서 세 함수 $f$, $g$, $h$가 각각\n$f(x)=2x-1$, $g(x)=x^2+3$, $h(x)=-x+4$\n로 주어질 때, $((h\\circ g)\\circ f)(1)$의 값은?",
+"choices": [
+"$-2$",
+"$-1$",
+"$0$",
+"$1$",
+"$2$"
+],
+"answer": "③",
+"solution": "합성함수의 결합법칙에 의해 $((h\\circ g)\\circ f)(1)=h(g(f(1)))$이다. $f(1)=1$, $g(1)=4$이므로 $h(4)=0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-946c36314b",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체에서 $f(x)=x+5$이고, $F_n$을 $f$를 $n$번 합성한 함수라고 하자. $F_7(-2)$의 값은?",
+"choices": [
+"$28$",
+"$30$",
+"$31$",
+"$33$",
+"$35$"
+],
+"answer": "④",
+"solution": "$f$를 한 번 합성할 때마다 함수값에 $5$가 더해지므로 $F_n(x)=x+5n$이다. 따라서 $F_7(-2)=-2+35=33$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-a348323cf0",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체에서 정의된 함수 $f$, $g$와 항등함수 $i$에 대하여 다음 함수와 항상 같은 것은?\n\n$((i\\circ g)\\circ i)\\circ(f\\circ i)$",
+"choices": [
+"$g\\circ f$",
+"$f\\circ g$",
+"$f\\circ f$",
+"$g\\circ g$",
+"$i$"
+],
+"answer": "①",
+"solution": "항등함수는 어느 함수와 합성해도 그 함수를 변화시키지 않으므로 $i\\circ g=g$, $f\\circ i=f$이다. 합성함수의 결합법칙을 적용하면 주어진 함수는 $g\\circ f$와 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-7399bce3bd",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 전체에서 $f(x)=2x-3$이고, $F_n$을 $f$를 $n$번 합성한 함수라고 하자. $F_4(5)$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$35$",
+"solution": "$f(x)-3=2(x-3)$이므로 합성을 한 번 할 때마다 $x-3$에 해당하는 값이 $2$배가 된다. 따라서 $F_n(x)=3+2^n(x-3)$이고, $F_4(5)=3+16\\times2=35$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-0f6bd67210",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체에서 두 함수 $f(x)=3x+a$, $g(x)=2x+b$가 $f\\circ g=g\\circ f$를 만족한다. $f(0)+g(0)=12$일 때, $ab$의 값은?",
+"choices": [
+"$16$",
+"$24$",
+"$28$",
+"$32$",
+"$36$"
+],
+"answer": "④",
+"solution": "$(f\\circ g)(x)=6x+3b+a$이고 $(g\\circ f)(x)=6x+2a+b$이다. 두 함수가 같으므로 $a=2b$이고, $a+b=12$이므로 $a=8$, $b=4$이다. 따라서 $ab=32$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-ae94645cdb",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 보기에서 옳은 명제를 모두 고른 것은?\n\nㄱ. $f:A\\to B$가 전사함수이고 $g,h:B\\to C$일 때, $g\\circ f=h\\circ f$이면 $g=h$이다.\nㄴ. $k:C\\to D$가 일대일함수이고 $g,h:B\\to C$일 때, $k\\circ g=k\\circ h$이면 $g=h$이다.\nㄷ. $f:A\\to B$가 전사함수이고 $p,q:E\\to A$일 때, $f\\circ p=f\\circ q$이면 $p=q$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "ㄱ에서 $f$가 전사함수이므로 $B$의 모든 원소에서 $g$와 $h$의 함수값이 같아져 ㄱ은 참이다. ㄴ에서는 $k$가 일대일함수이므로 $k(g(x))=k(h(x))$에서 $g(x)=h(x)$를 얻는다. 전사함수는 서로 다른 두 원소를 같은 원소에 대응시킬 수 있으므로 ㄷ은 거짓이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-d297435402",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 전체에서 $f(x)=ax+b$이고 $f(0)>0$이다. $f$를 $4$번 합성한 함수가 $F_4(x)=16x+15$일 때, $f$를 $5$번 합성한 함수 $F_5$에 대하여 $F_5(1)$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$63$",
+"solution": "$F_4$의 일차항 계수를 비교하면 $a^4=16$이므로 $a=2$ 또는 $a=-2$이다. $a=2$이면 $15b=15$에서 $b=1$이고, $a=-2$이면 $-5b=15$에서 $b=-3$이므로 $f(0)>0$에 의해 $f(x)=2x+1$이다. 따라서 $F_5(1)=2^5+(2^5-1)=63$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-754007f1ee",
+"typeId": "set2-cm2-11-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "집합 $X=\\{1,2,3,4\\}$에서 함수 $f:X\\to X$가\n\n$f(1)=f(2)=1$, $f(3)=f(4)=3$\n\n으로 정의되어 있다. 두 조건 $g\\circ f=f$, $f\\circ g=f$를 모두 만족하는 함수 $g:X\\to X$의 개수를 구하여라.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$g\\circ f=f$에서 $g(1)=1$, $g(3)=3$을 얻는다. $f\\circ g=f$이려면 $g(2)$는 $\\{1,2\\}$에서, $g(4)$는 $\\{3,4\\}$에서 각각 선택되어야 한다. 두 선택은 서로 독립이므로 함수 $g$의 개수는 $2\\times2=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t1",
+"custom": true
 }
 ]

@@ -635,5 +635,139 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b09-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-747293a1fb",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMalia (A)[is / are] a hula teacher. Have you (B)[hear / heard] of hula before? She wants (C)[tell / to tell] you about it.",
+"choices": [
+"is ― hear ― tell",
+"is ― heard ― to tell",
+"is ― heard ― tell",
+"are ― hear ― to tell",
+"are ― heard ― to tell"
+],
+"answer": "②",
+"solution": "주어 Malia는 3인칭 단수이므로 is가 알맞다. 현재완료 의문문 「Have you＋과거분사」에는 heard를 쓰고, want 뒤에는 to부정사 to tell이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2bdeb3b331",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n(A)[Bend / Bending] your knees a little. While you step to the side, (B)[move / moves] your hips naturally. Everyone (C)[is / are] welcome in the next class.",
+"choices": [
+"Bend ― move ― is",
+"Bend ― moves ― is",
+"Bend ― move ― are",
+"Bending ― move ― are",
+"Bending ― moves ― is"
+],
+"answer": "①",
+"solution": "동작을 지시하는 명령문은 동사원형 Bend와 move로 시작한다. Everyone은 형태상 복수처럼 보여도 단수 취급하므로 is가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-278c9413b0",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것은?\n\nNow it is time (A)________ hula. You need (B)________ your shoes and socks because hula is done barefoot. The hand gestures are so simple (C)________ you can remember them easily.",
+"choices": [
+"practice ― take off ― so",
+"to practice ― taking off ― that",
+"to practice ― to take off ― that",
+"practicing ― to take off ― which",
+"to practicing ― take off ― that"
+],
+"answer": "③",
+"solution": "「It is time to＋동사원형」에 따라 to practice를 쓰고, need 뒤에도 to부정사인 to take off를 쓴다. ‘너무 간단해서 기억할 수 있다’는 결과를 나타내므로 「so＋형용사＋that」 구문이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6b70b81773",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 부분이 어법상 틀린 것은?\n\n① Hula has been a part of Hawaiian life for a long time.\n② The early Hawaiians did not have a writing system.\n③ They used hula telling stories.\n④ Every hand gesture has a meaning.\n⑤ Everyone is welcome to the next class.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "‘훌라를 이야기 전달에 사용했다’는 의미이므로 목적을 나타내는 to부정사를 써야 한다. 따라서 telling을 to tell로 고쳐야 하며, 나머지 문장들은 주어와 동사의 수 및 시제가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-29ab3b619e",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "괄호 (A), (B), (C)의 동사를 어법에 맞게 바꾼 것으로 가장 알맞은 것은?\n\nHula has (A)(be) important to Hawaiian life for a long time. Before dancing, you need (B)(take) off your shoes and socks. A gesture for rain (C)(call) ua in Hawaiian.",
+"choices": [
+"been ― to take ― is called",
+"been ― take ― calls",
+"be ― to take ― is called",
+"was ― taking ― was called",
+"being ― to take ― calls"
+],
+"answer": "①",
+"solution": "현재완료 「has＋과거분사」이므로 be는 been이 된다. need 뒤에는 to take가 오며, 몸짓은 ua라고 ‘불리는’ 대상이므로 수동태 is called를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-da26d69bee",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 네 부분을 모두 어법에 맞게 고쳐 순서대로 쓰시오.\n\nHave you ⓐhear of hula before? The early Hawaiians used hula ⓑtelling stories. Every gesture ⓒhave a meaning, and the gesture for rain ⓓcalls ua in Hawaiian.\n\nⓐ __________, ⓑ __________, ⓒ __________, ⓓ __________",
+"selfGrade": true,
+"answer": "heard, to tell, has, is called",
+"solution": "「Have you＋과거분사」에는 heard가 필요하고, used hula 뒤에는 목적을 나타내는 to tell이 알맞다. Every gesture는 단수 주어이므로 has를 쓰며, 몸짓은 이름이 붙여지는 대상이므로 수동태 is called를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8d250b07c7",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말과 일치하도록 주어진 단어를 모두 활용하여 한 문장으로 쓰시오. 필요하면 단어의 형태를 바꿀 수 있다.\n\n‘비와 해를 나타내는 몸짓들은 매우 간단해서 너는 그것들을 쉽게 기억할 수 있다.’\n\n(the gestures for rain and the sun / simple / you / remember / easily)",
+"selfGrade": true,
+"answer": "The gestures for rain and the sun are so simple that you can remember them easily.",
+"solution": "‘매우 ~해서 …하다’라는 결과는 「so＋형용사＋that＋주어＋동사」로 나타낸다. 복수 주어 The gestures에 맞춰 be동사는 are를 쓰고, 조동사 can 뒤에는 동사원형 remember를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d9849453b6",
+"typeId": "eng-m2-b09-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 부분을 모두 고쳐 문장 전체를 다시 쓰시오.\n\nHula have been a part of Hawaiian life for a long time, and many stories has been passed down through its body movements.",
+"selfGrade": true,
+"answer": "Hula has been a part of Hawaiian life for a long time, and many stories have been passed down through its body movements.",
+"solution": "Hula는 단수 주어이므로 현재완료는 has been으로 써야 한다. 두 번째 절의 주어 many stories는 복수이고 이야기들이 전해지는 것이므로 현재완료 수동태 have been passed down이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u3m1s0t0",
+"custom": true
 }
 ]

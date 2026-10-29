@@ -2483,5 +2483,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b08-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-190b524b01",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "Regular exercise gives you more energy to try unfamiliar activities and handle difficult tasks. It also improves confidence and encourages a positive attitude. Its benefits, therefore, reach beyond physical strength.\n\n윗글에서 언급된 규칙적인 운동의 효과가 아닌 것은?",
+"choices": [
+"자신감을 높여 준다.",
+"긍정적인 태도를 길러 준다.",
+"어려운 과제에 도전할 힘을 준다.",
+"새로운 경험을 할 에너지를 준다.",
+"전자 기기를 사용하는 시간을 늘려 준다."
+],
+"answer": "⑤",
+"solution": "윗글은 규칙적인 운동이 에너지, 자신감, 긍정적인 태도를 높인다고 설명한다. 전자 기기 사용 시간의 증가는 운동의 효과로 언급되지 않았으므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-90e2304842",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "Luke enjoys chess, Emily goes surfing, Rajesh learns how to make robots, Yuto practices baseball, and Janice expresses various emotions on stage.\n\n윗글의 인물과 동아리 활동이 바르게 연결된 것은?",
+"choices": [
+"Luke ― surfing",
+"Emily ― baseball",
+"Rajesh ― robotics",
+"Yuto ― drama",
+"Janice ― chess"
+],
+"answer": "③",
+"solution": "Rajesh는 로봇 제작에 필요한 여러 분야를 배우는 로봇 동아리 회원이다. 따라서 인물과 활동이 바르게 연결된 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6c36b164d7",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "Digital devices can make teenagers’ lives richer, but depending on them too much may use up their mental energy. Putting the devices aside for a while can make it easier to focus on important matters. The time gained by reducing screen use can also be spent connecting with family, friends, and oneself.\n\n윗글의 내용과 일치하지 않는 것은?",
+"choices": [
+"디지털 기기가 삶에 도움이 된다면 사용하는 것은 괜찮다.",
+"지나친 기기 의존은 정신적 에너지를 소모할 수 있다.",
+"기기를 잠시 치우면 중요한 일에 집중하기가 쉬워질 수 있다.",
+"화면 사용을 줄여 얻은 시간을 가족과 함께 보낼 수 있다.",
+"생산성을 높이려면 여가 시간에도 계속 화면을 보아야 한다."
+],
+"answer": "⑤",
+"solution": "윗글은 화면에서 벗어나면 중요한 일에 더 잘 집중하고 생산성도 높일 수 있다는 취지이다. 계속 화면을 보아야 생산성이 높아진다는 ⑤는 글의 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0ad872ff84",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "Luke learned chess when he was in elementary school, and the game has remained an important part of his life. Hoping that more people will discover the pleasure of chess, he plans to organize a competition. In Hampton, chess matches take place every Friday after school.\n\n윗글을 읽고 답할 수 없는 질문은?",
+"choices": [
+"Luke는 언제 체스를 배웠는가?",
+"Luke에게 체스는 어떤 의미인가?",
+"Hampton의 체스 경기는 언제 열리는가?",
+"Luke는 왜 대회를 열려고 하는가?",
+"Luke는 대회 우승자에게 무엇을 줄 예정인가?"
+],
+"answer": "⑤",
+"solution": "체스를 배운 시기, 체스의 의미, 경기 시간, 대회를 계획한 이유는 모두 글에서 확인할 수 있다. 그러나 우승자에게 줄 상품이나 보상은 언급되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f969c36bbe",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "Janice enjoys performing before an audience and showing emotions such as happiness and sadness. She also thinks that getting the chance to become another person is a very special experience.\n\nJanice에 관해 윗글에서 추론할 수 있는 것으로 가장 적절한 것은?",
+"choices": [
+"무대에서 감정을 표현하는 일을 즐긴다.",
+"사람들 앞에 서는 것을 피하려 한다.",
+"로봇을 설계하는 활동을 특별하게 여긴다.",
+"지역 체육 대회를 위해 매일 연습한다.",
+"다른 인물을 연기하는 데 관심이 없다."
+],
+"answer": "①",
+"solution": "Janice는 관객 앞에서 기쁨과 슬픔을 비롯한 여러 감정을 표현하는 것을 즐긴다. 또한 다른 사람이 되어 보는 기회를 특별하게 여기므로 ①이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2e9d90b62a",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Emily feels fortunate to live in New South Wales, where she can visit the beach with her surfing club. Rajesh and his club members study electronics, programming, problem-solving, and design for robot building. Meanwhile, Yuto devotes his after-school time to getting ready for a major regional sports festival.\n\n윗글의 내용에 대한 이해로 가장 적절한 것은?",
+"choices": [
+"Emily와 Yuto는 모두 바다에서 하는 활동을 준비하고 있다.",
+"Rajesh와 Emily는 모두 대회 개최를 직접 계획하고 있다.",
+"Yuto는 정규 수업 시간에만 지역 행사를 준비하고 있다.",
+"세 사람은 서로 다른 방식으로 교외 활동에 참여하고 있다.",
+"Rajesh의 동아리는 로봇의 외형만 다루고 기술 분야는 배우지 않는다."
+],
+"answer": "④",
+"solution": "Emily는 서핑, Rajesh는 로봇 제작 학습, Yuto는 지역 체육 행사 준비에 참여한다. 활동의 종류와 방식은 서로 다르므로 ④가 적절하며, 나머지 선택지는 각 인물의 활동을 잘못 연결하거나 제한한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-589095ea43",
+"typeId": "eng-h1-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 교과서에 소개된 동아리 학생들에 관한 설명이다.\n\nㄱ. Luke는 자신이 좋아하는 활동의 즐거움을 다른 사람들에게 알리고 싶어 한다.\nㄴ. Emily는 자신의 거주 환경이 동아리 활동에 유리하다고 느낀다.\nㄷ. Rajesh는 로봇 제작에서 프로그래밍보다 디자인만 중요하다고 생각한다.\nㄹ. Yuto와 친구들은 지역 체육 행사를 기대하고 있다.\nㅁ. Janice는 다른 사람이 되어 보는 경험을 특별하게 여긴다.\n\n내용과 일치하는 설명만을 모두 고른 것은?",
+"choices": [
+"ㄱ, ㄴ",
+"ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄴ, ㄹ, ㅁ"
+],
+"answer": "⑤",
+"solution": "ㄱ, ㄴ, ㄹ, ㅁ은 각각 Luke, Emily, Yuto, Janice에 관한 글의 내용과 일치한다. Rajesh의 동아리는 디자인뿐 아니라 전자 공학, 프로그래밍, 문제 해결도 함께 배우므로 ㄷ은 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m4s0t0",
+"custom": true
 }
 ]

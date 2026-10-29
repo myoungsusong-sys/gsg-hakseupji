@@ -2092,5 +2092,241 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b01-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-ef80e1b2e1",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이가 의미하는 어휘로 알맞은 것은?\n\nto fall down suddenly, especially because something is weak or damaged",
+"choices": [
+"react",
+"collapse",
+"experience",
+"press",
+"arrive"
+],
+"answer": "②",
+"solution": "건물이나 구조물 등이 약해지거나 손상되어 갑자기 무너지는 것은 collapse이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4e56a82899",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe strong wind did not improve the fires. Instead, it made the situation even __________.",
+"choices": [
+"safer",
+"worse",
+"curious",
+"proper",
+"missing"
+],
+"answer": "②",
+"solution": "바람이 화재 상황을 개선하지 않았다는 내용 뒤에는 상황을 더 악화시켰다는 말이 자연스럽다. worse는 ‘더 나쁜’이라는 뜻이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-392764e54f",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe person did not move or answer, so there was no (A)__________. Meanwhile, several people in the fire area could not be found and were reported (B)__________.",
+"choices": [
+"reaction — safe",
+"confusion — proper",
+"reaction — missing",
+"experience — curious",
+"panic — violent"
+],
+"answer": "③",
+"solution": "움직이거나 대답하지 않았으므로 (A)에는 ‘반응’을 뜻하는 reaction이 들어간다. 찾을 수 없는 사람은 missing이라고 하므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-28397b15a0",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 어휘와 영영풀이의 연결이 올바르지 않은 것은?",
+"choices": [
+"collapse — to fall down suddenly",
+"confusion — a state of being unable to think clearly",
+"proper — correct or suitable for a situation",
+"curious — not able to be found",
+"violently — in a very strong and uncontrolled way"
+],
+"answer": "④",
+"solution": "curious는 ‘궁금한, 알고 싶어 하는’이라는 뜻이다. ‘찾을 수 없는’에 해당하는 어휘는 missing이므로 ④의 연결이 올바르지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-13ee3886ee",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 조건을 모두 만족하는 영단어를 쓰시오.\n\n• 명사이다.\n• ‘무슨 일이 일어나는지 분명히 이해하지 못하는 상태’를 뜻한다.\n• 지진이 심해지자 이 감정은 panic으로 바뀌었다.",
+"selfGrade": true,
+"answer": "confusion",
+"solution": "무슨 일이 일어나는지 이해하지 못해 혼란스러운 상태를 나타내는 명사는 confusion이다. 지진 상황에서 confusion이 panic으로 바뀌었다는 문맥에도 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-91964cf254",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 표현에 공통으로 사용된 어휘의 기본형을 쓰시오.\n\n• a mirror ________ into pieces\n• the glass covering the picture ________\n• hear something else ________",
+"selfGrade": true,
+"answer": "break",
+"solution": "세 표현은 모두 물건이 깨지는 상황을 나타내므로 공통 어휘는 break이다. 문장 구조와 시제에 따라 broke 또는 break로 형태가 달라질 수 있지만 기본형은 break이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2649b00055",
+"typeId": "eng-m3-b01-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "괄호 안의 단어를 문맥과 문법에 맞게 바꾸어 빈칸을 완성하시오. 답은 순서대로 영어로 쓰시오.\n\n(1) If there is no __________, call 119 for help. (react)\n(2) It was my first time __________ an earthquake. (experience)\n(3) I did not know what __________ was happening. (exact)",
+"selfGrade": true,
+"answer": "reaction, experiencing, exactly",
+"solution": "(1) no 뒤에는 명사 reaction이 필요하고, (2) first time 뒤에서는 experiencing이 쓰인다. (3) happening을 수식하려면 부사 exactly가 필요하므로 정답은 reaction, experiencing, exactly이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-227f72c761",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"The tickets can bought online.",
+"The artwork should not be touched.",
+"Her voice may be hear from here.",
+"The money will be give to you.",
+"The clothes cannot seen by everyone."
+],
+"answer": "②",
+"solution": "조동사가 있는 수동태는 ‘조동사＋be＋과거분사’ 형태이며, 부정어 not은 조동사 뒤에 쓴다. ②는 이 형태를 바르게 갖추었다. ①은 can be bought, ③은 may be heard, ④는 will be given, ⑤는 cannot be seen으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1909077bb1",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 능동태 문장을 수동태로 바꾼 것으로 가장 알맞은 것은?\n\nPeople should not touch this artwork.",
+"choices": [
+"This artwork should not touch by people.",
+"This artwork should be not touched by people.",
+"This artwork should not be touching by people.",
+"This artwork should not be touched by people.",
+"This artwork does not should be touched by people."
+],
+"answer": "④",
+"solution": "능동태의 목적어인 This artwork를 수동태의 주어로 쓴다. ‘should not＋동사원형’은 수동태에서 ‘should not be＋과거분사’가 되므로 ④가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-167d4ca96f",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 바르게 연결된 것은?\n\nLearning about different leadership styles was (A)[surprising / surprised] to me. A person can belong (B)[to / at] several groups. The situation of each group (C)[require / requires] a different leadership style.\n\n선지는 (A), (B), (C)의 순서이다.",
+"choices": [
+"surprised — to — requires",
+"surprising — at — requires",
+"surprising — to — require",
+"surprised — at — require",
+"surprising — to — requires"
+],
+"answer": "⑤",
+"solution": "주어가 놀라움을 느끼는 사람이 아니라 ‘다양한 리더십 유형에 관해 배우는 것’이므로 (A)에는 surprising이 알맞다. ‘~에 속하다’는 belong to로 표현한다. 마지막 문장의 주어는 단수 명사 The situation이므로 (C)에는 requires가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e4aafe689d",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음은 리더십에 관한 생각을 정리한 글이다. 괄호 안의 동사를 문맥과 어법에 맞게 바꾸어 ⓐ~ⓓ의 순서대로 쓰시오. 필요한 경우 단어를 추가하시오.\n\nBefore doing research online, I had never ⓐ(think) about different leadership styles. I learned that a friendly person can ⓑ(call) a leader, too. After ⓒ(read) about the styles, I became more confident. I now think I may ⓓ(elect) if my classmates want a green leader.",
+"selfGrade": true,
+"answer": "thought, be called, reading, be elected",
+"solution": "ⓐ는 had never 뒤에서 과거완료를 이루므로 think의 과거분사 thought가 필요하다. ⓑ와 ⓓ는 각각 ‘리더라고 불리다’와 ‘선출되다’라는 수동의 의미이므로 조동사 뒤에 be called와 be elected를 쓴다. ⓒ는 전치사 After 뒤에 오므로 동명사 reading으로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9089b0bec9",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓕ 중 어법상 알맞은 문장만을 모두 고른 것은?\n\nⓐ The qualities of a good leader is not always the same.\nⓑ A person who helps others get along can be called a leader.\nⓒ I was surprising to learn about different leadership styles.\nⓓ Each of the groups calls for a different leadership style.\nⓔ After reading about leadership, I discovered what I had some qualities of a green leader.\nⓕ A friendly student may not be elected class representative.",
+"choices": [
+"ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓕ",
+"ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "①",
+"solution": "ⓑ는 조동사가 있는 수동태가 바르고, ⓓ는 Each가 주어이므로 단수 동사 calls가 알맞으며, ⓕ는 ‘may not be＋과거분사’의 어순이 바르다. ⓐ는 주어가 복수인 The qualities이므로 is를 are로 고쳐야 한다. ⓒ는 사람이 놀라움을 느끼므로 surprised가 필요하다. ⓔ는 뒤에 완전한 절이 이어지므로 what을 that으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3bd3fca87c",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 어법상 틀린 문장을 고치는 활동이다. 제시된 부분만 고쳤을 때 문장 전체가 어법상 바르게 되는 수정안을 모두 고른 것은?\n\nⓐ The best leadership style can determined by the group's situation.\n   → can determined를 can be determined로 수정\n\nⓑ I have never think about the qualities of a leader.\n   → think를 thought로 수정\n\nⓒ Each group need a leader who help people get along.\n   → need를 needs로 수정\n\nⓓ I was surprised to discover what I had some leadership qualities.\n   → what을 that으로 수정\n\nⓔ A class representative may be not elected by every student.\n   → elected를 elect로 수정",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ, ⓓ",
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓒ, ⓓ"
+],
+"answer": "③",
+"solution": "ⓐ는 조동사가 있는 수동태, ⓑ는 현재완료의 형태를 바르게 고친 것이고, ⓓ는 완전한 절을 이끄는 접속사 that으로 바르게 고친 것이다. ⓒ는 need를 needs로 고쳐도 단수 선행사 a leader를 받는 who 뒤의 help를 helps로 고쳐야 하므로 오류가 남는다. ⓔ는 elected를 그대로 두고 may be not elected를 may not be elected로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8edcc7adfa",
+"typeId": "eng-m3-b01-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 틀린 부분은 바르게 고치고, 맞는 부분은 그대로 쓰시오. 답은 ⓐ~ⓕ의 순서대로 쓰되, 표시된 부분 이외의 단어는 바꾸지 마시오.\n\nI was ⓐ[surprising] to learn that leadership styles can differ. Each of the groups I belong to ⓑ[have] its own situation. A suitable leadership style should ⓒ[be chosen] for each group. After ⓓ[read] about the styles, I realized ⓔ[what] I had some qualities of a green leader. I also understood that a class representative might ⓕ[not elected] even with good leadership qualities.",
+"selfGrade": true,
+"answer": "surprised, has, be chosen, reading, that, not be elected",
+"solution": "ⓐ는 감정을 느끼는 사람이 주어이므로 surprised로 고치며, ⓑ는 주어의 중심어 Each에 맞추어 has로 고친다. ⓒ의 be chosen은 should 뒤에 쓰인 올바른 수동태이므로 그대로 둔다. ⓓ는 전치사 After 뒤의 동명사 reading으로, ⓔ는 완전한 절을 이끄는 that으로 고친다. ⓕ는 조동사가 있는 부정 수동태를 이루도록 not be elected로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m1s0t0",
+"custom": true
 }
 ]

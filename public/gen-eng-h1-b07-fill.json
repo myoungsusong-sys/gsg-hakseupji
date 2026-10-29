@@ -2556,5 +2556,265 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-9e140b20b1",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳지 않은 문장을 고르시오.",
+"choices": [
+"Being on the International Space Station is a unique experience.",
+"Astronauts live in microgravity, floating around instead of walking.",
+"Researchers work in conditions that are different from Earth’s.",
+"Many products manufacturing on Earth are affected by pressure and gravity.",
+"The quality of many products is influenced by temperature."
+],
+"answer": "④",
+"solution": "④의 products는 ‘지구에서 제조되는 제품’이라는 수동의 의미이므로 과거분사 manufactured의 수식을 받아야 한다. 따라서 manufacturing을 manufactured로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9e140b20b1",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳지 않은 문장을 고르시오.",
+"choices": [
+"Thousands of rockets and satellites have been launched into space.",
+"Most of them have worked as they have designed to.",
+"Some broken machines remain floating around in space.",
+"Objects left unattended in space are referred to as space junk.",
+"Each crash has the potential to generate more space junk."
+],
+"answer": "②",
+"solution": "로켓과 위성은 ‘설계된’ 대상이므로 as절에 수동태가 필요하다. 따라서 ②의 have designed는 were designed로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9e140b20b1",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳지 않은 문장을 고르시오.",
+"choices": [
+"The solar system is composed of many rocks.",
+"The smaller rocks in the solar system are called asteroids.",
+"The asteroid 16 Psyche is reported consisting mainly of precious metals.",
+"Water is expensive to transport into space due to its weight and volume.",
+"Having sufficient water in orbit would make space exploration easier."
+],
+"answer": "③",
+"solution": "‘~라고 알려져 있다’는 「be reported to＋동사원형」으로 표현한다. 따라서 ③의 consisting을 to consist로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-987a34f1b2",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것을 고르시오.\n\nDead satellites, used rocket parts, and small pieces of dirt (A) [is / are] in orbit. The presence of this space junk (B) [increase / increases] risks to space activities. Even a small piece of metal can harm satellites (C) [providing / provided] services across the world.",
+"choices": [
+"is - increase - providing",
+"are - increases - providing",
+"are - increase - provided",
+"is - increases - provided",
+"are - increases - provided"
+],
+"answer": "②",
+"solution": "(A)의 주어는 복수 명사들이므로 are가 알맞고, (B)의 주어 The presence는 단수이므로 increases가 알맞다. (C)는 위성들이 서비스를 ‘제공하는’ 능동 관계이므로 현재분사 providing이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3e2e5e6bac",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것을 고르시오.\n\nResearchers on the ISS conduct scientific research in conditions (A) [that / where] are different from Earth’s. The quality of products (B) [manufacturing / manufactured] on Earth can be influenced by gravity. For this reason, many manufacturers are interested in (C) [produce / producing] goods in space.",
+"choices": [
+"that - manufactured - producing",
+"that - manufacturing - produce",
+"where - manufactured - producing",
+"where - manufacturing - produce",
+"that - manufactured - produce"
+],
+"answer": "①",
+"solution": "(A) 뒤에 주어가 없으므로 주격 관계대명사 that이 필요하다. 제품은 지구에서 ‘제조되는’ 것이므로 manufactured가 알맞고, 전치사 in 뒤에는 동명사 producing이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-33193cde5f",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 (A)~(E) 중 어법상 틀린 세 곳을 찾아, 각각 바르게 고쳐 쓰시오.\n\nSpace provides special conditions (A) making it possible to manufacture new products. It is not unreasonable (B) imagining that a message could be sent from a device (C) equipping with semiconductors produced in space. Eventually, the space project may reach a point (D) which adventurous minds can travel safely beyond the solar system. Meanwhile, resources that have long remained beyond humanity’s reach (E) are becoming more accessible.",
+"selfGrade": true,
+"answer": "(B) to imagine, (C) equipped, (D) where",
+"solution": "「It is＋형용사＋to부정사」 구조이므로 (B)는 to imagine이 되어야 한다. 장치는 반도체를 ‘갖춘’ 대상이므로 (C)는 과거분사 equipped가 알맞다. 선행사 a point가 뒤 절에서 장소의 부사 역할을 하므로 (D)는 관계부사 where로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f7453b0005",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 옳은 문장을 고르시오.",
+"choices": [
+"From space explorers’ perspective, neither precious metals or rare mineral deposits are the most valuable resource.",
+"The water contained in asteroids seems to have overlooked because it is less exciting than gold.",
+"Water is expensive to transport it into space because of its weight and volume.",
+"Robots will be programmed to explore the surface and identify materials, and will be equipped for tasks such as drilling and collecting.",
+"No one knows for sure what will asteroid mining look like in the future."
+],
+"answer": "④",
+"solution": "④는 수동태 will be programmed와 will be equipped가 병렬로 연결된 올바른 문장이다. ①은 neither A nor B, ②는 seems to have been overlooked가 필요하며, ③의 it은 불필요하다. ⑤는 간접의문문이므로 what asteroid mining will look like의 어순이 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d1159cb8e4",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nDuring my visits, I watched the octopus (A)[moving / to move] through the sea. I wanted to understand her better, but it was difficult (B)[know / to know] everything about her just by watching.",
+"choices": [
+"(A) moving — (B) know",
+"(A) to move — (B) knowing",
+"(A) moving — (B) to know",
+"(A) to move — (B) know",
+"(A) to move — (B) to know"
+],
+"answer": "③",
+"solution": "지각동사 watched의 목적격 보어에는 현재분사 moving을 쓸 수 있지만 to move는 쓸 수 없다. 두 번째 문장은 it이 가주어이고 to know 이하가 진주어이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-056bbb8e31",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nArtificial leather made from oil (A)[requires / require] considerable energy to produce. Companies are therefore looking for materials that (B)[is / are] better for the environment.",
+"choices": [
+"(A) requires — (B) are",
+"(A) require — (B) is",
+"(A) requires — (B) is",
+"(A) require — (B) are",
+"(A) requiring — (B) are"
+],
+"answer": "①",
+"solution": "첫 문장의 주어는 단수 명사구 Artificial leather이므로 동사는 requires가 알맞다. 관계대명사 that의 선행사는 복수 명사 materials이므로 관계절의 동사는 are가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-de20943b48",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\n(A)[Seeing / Seen] the octopus catch a fish, I moved closer to her. However, she hid herself in seaweed. I became curious about the animal (B)[hiding / hidden] there and began visiting her regularly.",
+"choices": [
+"(A) Seen — (B) hiding",
+"(A) Seeing — (B) hid",
+"(A) Seen — (B) hidden",
+"(A) Seeing — (B) hiding",
+"(A) Saw — (B) hidden"
+],
+"answer": "④",
+"solution": "문장 주어 I가 문어의 사냥 장면을 직접 보므로 능동의 분사구문 Seeing이 알맞다. hiding there는 그곳에 숨어 있는 동물을 나타내는 현재분사구로 animal을 수식하므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4db0f9e50f",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nWhen I went back to the Cape of Good Hope, I remembered the years I (A)[had spent / have spent] there as a child. While diving, I found an octopus and wondered what I would discover if I (B)[continued / had continued] to observe her. One thing I later learned (C)[was / to be] that the animal was female.",
+"choices": [
+"(A) have spent — (B) continued — (C) was",
+"(A) had spent — (B) had continued — (C) was",
+"(A) had spent — (B) continued — (C) to be",
+"(A) have spent — (B) had continued — (C) to be",
+"(A) had spent — (B) continued — (C) was"
+],
+"answer": "⑤",
+"solution": "어린 시절을 보낸 것은 돌아가서 회상한 과거 시점보다 앞선 일이므로 had spent가 알맞다. 당시 관찰을 계속할 경우 앞으로 무엇을 발견할지 궁금해한 것이므로 조건절에는 continued를 쓴다. 마지막 문장은 One thing I later learned가 주어이므로 서술동사 was가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aec54487e7",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nCompanies have explored alternatives to oil-based leather, (A)[which / that] takes a long time to break down. A mushroom (B)[grown / was grown] using farming waste can be made into a leather-like sheet. The use of grape waste and mushrooms (C)[shows / show] that several materials can serve as alternatives.",
+"choices": [
+"(A) which — (B) was grown — (C) shows",
+"(A) which — (B) grown — (C) shows",
+"(A) that — (B) grown — (C) show",
+"(A) which — (B) grown — (C) show",
+"(A) that — (B) was grown — (C) shows"
+],
+"answer": "②",
+"solution": "쉼표 뒤에서 oil-based leather를 부연 설명하는 계속적 용법의 관계대명사로는 which를 쓴다. 두 번째 문장에는 이미 can be made라는 서술동사가 있으므로 mushroom을 수식하는 과거분사 grown이 필요하다. 마지막 문장의 주어 핵심어는 단수인 use이므로 shows가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b04fcfc51e",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nThe shark had injured the octopus before she returned to her den. When I visited her the following day, it was painful (A)[watching / to watching] her struggle. The fact that one of her arms was missing (B)[was / were] especially worrying because her arms served many purposes. Later, I noticed a small arm beginning to grow and realized that the wound (C)[had healed / has healed].",
+"choices": [
+"(A) watching — (B) were — (C) had healed",
+"(A) to watching — (B) was — (C) had healed",
+"(A) watching — (B) was — (C) has healed",
+"(A) watching — (B) was — (C) had healed",
+"(A) to watching — (B) were — (C) has healed"
+],
+"answer": "④",
+"solution": "it was painful watching her struggle에서 watching 이하는 고통스러웠던 행위를 나타내며, to watching은 이 구조에서 쓸 수 없다. 두 번째 판단 대상 문장의 주어는 The fact that 이하 전체이고 핵심어 fact가 단수이므로 was가 알맞다. 상처가 아문 것은 과거에 그것을 알아차린 시점보다 앞서므로 had healed를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6f3b08a3cc",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓔ를 바꾸어 쓴 것 중 어법에 맞지 않거나 문맥상 의미가 달라지는 것은?\n\nⓐI was surprised that the octopus's injured arm began to grow again. Watching her recover led me to think about my own life. I spent more time with my family, and my son joined me on dives. ⓑHis interest in the octopus was as great as mine. Later, ⓒafter she had mated, the octopus stayed inside her den. ⓓShe devoted herself to protecting her young. Looking back on the relationship, I realized that ⓔwithout those encounters, I could not have understood her life in that way.",
+"choices": [
+"ⓐ → To my surprise, the octopus's injured arm began to grow again.",
+"ⓑ → He was as interested in the octopus as I was.",
+"ⓒ → Having mated, the octopus stayed inside her den.",
+"ⓓ → She was devoted to protect her young.",
+"ⓔ → If I had not had those encounters, I could not have understood her life in that way."
+],
+"answer": "④",
+"solution": "be devoted to에서 to는 전치사이므로 뒤에는 동명사 protecting이 와야 하며, to protect로 바꾼 ④는 어법에 맞지 않는다. ③의 Having mated는 주절보다 앞선 일을 나타내며 분사구문의 의미상 주어도 the octopus로 일치한다. ⑤는 과거의 만남이 없었더라면 이해하지 못했을 것이라는 의미이므로 가정법 과거완료로 바꾸는 것이 적절하다. ①과 ②도 각각 놀라움을 나타내는 표현과 동등 비교의 의미를 올바르게 유지한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
 }
 ]

@@ -4227,5 +4227,348 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-5ed9c6d6d1",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이와 단어의 연결이 알맞지 않은 것은?",
+"choices": [
+"achieve: to succeed in doing something after trying hard",
+"afford: to have enough money to buy or do something",
+"remove: to take something away from a place",
+"pollute: to make water, air, or land cleaner",
+"failure: a lack of success"
+],
+"answer": "④",
+"solution": "pollute는 물, 공기, 땅 등을 ‘오염시키다’라는 뜻이다. 깨끗하게 만든다는 뜻의 영영풀이는 pollute와 반대되므로 ④가 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f8b81d0059",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 표현과 바꾸어 쓸 수 있는 것은?\n\nEaston shared the designs for his robotic hand for free.",
+"choices": [
+"without any cost",
+"at a high price",
+"after many failures",
+"with little effort",
+"for a short time"
+],
+"answer": "①",
+"solution": "for free는 ‘무료로, 비용을 받지 않고’라는 뜻이다. 따라서 without any cost로 바꾸어 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2d2a1b6b44",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 단어의 쓰임이 알맞지 않은 것은?",
+"choices": [
+"After many failures, he finally achieved his goal.",
+"The robotic hand was useful because it could open and close.",
+"The expensive machine cost more than she could afford.",
+"He removed the box by putting another box on top of it.",
+"She shared her designs with other people."
+],
+"answer": "④",
+"solution": "remove는 어떤 것을 있던 곳에서 ‘치우다, 제거하다’라는 뜻이다. 상자를 그 자리에 둔 채 다른 상자를 위에 올리는 행동은 remove의 의미에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0496a4e611",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말로 가장 적절한 것은?\n\nThe first robotic hand was too expensive for many people to (A) it. After repeated (B), Easton made a cheaper one and shared its designs at no (C).",
+"choices": [
+"afford ― failures ― cost",
+"achieve ― efforts ― matter",
+"afford ― successes ― price",
+"remove ― failures ― center",
+"pollute ― designs ― fee"
+],
+"answer": "①",
+"solution": "(A)에는 비싼 물건을 살 경제적 여유가 있다는 뜻의 afford가 적절하다. 여러 번의 실패 후에 완성했다는 흐름이므로 (B)는 failures이고, at no cost는 ‘무료로’라는 뜻이므로 (C)는 cost이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-80fba3033d",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 각 영영풀이에 해당하는 단어를 차례대로 쓰시오.\n\n(A) to have enough money to pay for something\n(B) to succeed in reaching a goal through effort\n(C) to take something away from where it is",
+"selfGrade": true,
+"answer": "afford, achieve, remove",
+"solution": "(A)는 비용을 낼 여유가 있다는 뜻이므로 afford이다. (B)는 노력하여 목표를 이루는 achieve이고, (C)는 어떤 것을 있던 곳에서 치우는 remove이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-224ba975a2",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 단어의 의미 관계에 대한 설명으로 옳은 것만을 모두 고른 것은?\n\n(a) useful과 useless는 서로 반대되는 의미이다.\n(b) afford와 cost는 문장에서 언제나 서로 바꾸어 쓸 수 있다.\n(c) failure는 success와 반대되는 의미로 쓰일 수 있다.\n(d) whether는 ‘~인지 아닌지’의 뜻일 때 if로 바꾸어 쓸 수 있다.",
+"choices": [
+"(a), (b)",
+"(a), (c)",
+"(b), (d)",
+"(a), (c), (d)",
+"(b), (c), (d)"
+],
+"answer": "④",
+"solution": "useful과 useless, failure와 success는 각각 반의 관계이므로 (a)와 (c)는 옳다. whether는 ‘~인지 아닌지’라는 의미의 명사절을 이끌 때 if로 바꿀 수 있으므로 (d)도 옳다. afford는 ‘살 여유가 있다’, cost는 ‘비용이 들다’이므로 서로 바꾸어 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-84d3e1b7e6",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 문맥상 잘못 쓰인 단어 두 개를 찾아 각각 알맞은 단어로 고쳐 쓰시오.\n\nThe robotic hand was so cheap that few people could afford it. Easton kept the designs secret so that others could use them for free.\n\n(잘못 쓰인 단어 → 고친 단어)의 형식으로 쓰시오.",
+"selfGrade": true,
+"answer": "cheap → expensive, secret → open",
+"solution": "사람들이 그 손을 살 여유가 없었다는 내용과 이어지려면 cheap이 아니라 expensive가 되어야 한다. 또한 다른 사람들이 설계를 무료로 이용하려면 설계를 비밀로 한 것이 아니라 공개된 상태로 두어야 하므로 secret을 open으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7a06dfbc32",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이에 해당하는 단어로 가장 적절한 것은?\n\nthings that are made to be sold",
+"choices": [
+"rates",
+"goods",
+"states",
+"differences",
+"services"
+],
+"answer": "②",
+"solution": "영영풀이는 ‘판매하기 위해 만들어진 물건들’을 뜻하므로 goods가 알맞다. rates는 비율, states는 주, differences는 차이점, services는 서비스를 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a29be0c524",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 두 단어의 의미 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"comfortable — uncomfortable",
+"positive — negative",
+"elderly — old",
+"agree — disagree",
+"polite — rude"
+],
+"answer": "③",
+"solution": "elderly와 old는 모두 나이가 많다는 뜻을 나타내는 유의어 관계이다. 나머지 네 쌍은 서로 반대되는 의미를 나타내는 반의어 관계이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7e6c499e91",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 [ ] 부분과 같은 의미로 쓰인 부분을 포함하는 문장만을 <보기>에서 고른 것은?\n\nI [used to] take a taxi to school, but I don't anymore.\n\n<보기>\nⓐ I am used to paying a sales tax.\nⓑ I used to feel uncomfortable about waving to older people.\nⓒ I am getting used to making speeches in public.\nⓓ I didn't use to check the price on the tag.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ",
+"ⓑ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓓ"
+],
+"answer": "④",
+"solution": "제시문의 used to는 지금과 대비되는 과거의 습관을 나타내며 ‘예전에는 ~하곤 했다’라는 뜻이다. ⓑ도 과거의 상태를 나타내고, ⓓ의 didn't use to는 그 부정형이다. ⓐ의 be used to와 ⓒ의 get used to는 각각 ‘~에 익숙하다’와 ‘~에 익숙해지다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-fae84fdfca",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에서 문맥상 알맞은 말을 바르게 연결한 것은?\n\nIn most American states, a sales tax is added when people buy goods. The amount paid is therefore (A)[higher / lower] than the price on the tag. Sales tax rates are not the same in every state; they (B)[differ / agree] from state to state. Another cultural difference is greeting older people by waving. This is considered (C)[rude / acceptable] in America. However, someone who is not used to it may feel (D)[uncomfortable / comfortable] at first.",
+"choices": [
+"higher — differ — acceptable — uncomfortable",
+"higher — agree — acceptable — uncomfortable",
+"lower — differ — acceptable — comfortable",
+"higher — differ — rude — comfortable",
+"lower — agree — rude — uncomfortable"
+],
+"answer": "①",
+"solution": "판매세가 추가되므로 실제 지불액은 가격표의 금액보다 higher이고, 세율은 주마다 differ한다. 미국에서 연장자에게 손을 흔드는 인사는 무례한 것으로 여겨지지 않으므로 acceptable이 알맞다. 이 인사에 익숙하지 않은 사람은 처음에 uncomfortable하게 느낄 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b8b5e73702",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 (A)~(D)에 들어갈 단어를 조건에 맞게 순서대로 쓰시오.\n\nSales tax rates (A)________ from state to state, so the rate is not the same everywhere. When sales tax is added, buyers pay (B)________ than the price on the tag. In America, waving to an elderly person is not considered (C)________. Even so, a person who is not used to this greeting may feel (D)________ at first.\n\n<조건>\n• (A): different와 같은 어근을 가진 동사를 쓸 것.\n• (B): less의 반의어를 쓸 것.\n• (C): polite의 반의어를 쓸 것.\n• (D): comfortable에 접두사를 붙여 만든 반의어를 쓸 것.\n• 각 빈칸에 한 단어씩 쓸 것.",
+"selfGrade": true,
+"answer": "differ, more, rude, uncomfortable",
+"solution": "(A)에는 복수 주어 rates의 서술어이면서 different와 어근을 공유하는 differ가 들어간다. 판매세가 더해지므로 (B)는 less의 반의어 more이다. (C)는 polite의 반의어 rude이며, 앞의 not과 결합하여 무례하지 않다는 뜻을 나타낸다. (D)는 comfortable에 부정을 나타내는 접두사 un-을 붙인 uncomfortable이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3bdd21fd50",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 단어를 대신할 표현과 글의 의미에 대한 설명이 모두 옳은 것은? ([ ]는 밑줄을 나타낸다.)\n\nSales tax rates [differ] by state. When sales tax is added, people pay more than the price on the tag. In America, waving to an [elderly] person is not regarded as rude. People who are not used to this greeting may feel uncomfortable at first.\n\n<보기>\nⓐ differ는 are different로 바꾸어 쓸 수 있다.\nⓑ elderly는 young으로 바꾸어 쓸 수 있다.\nⓒ more는 ‘가격표에 적힌 금액보다 적은 금액’을 나타낸다.\nⓓ not regarded as rude는 ‘무례하다고 여겨지지 않는’이라는 의미이다.\nⓔ are not used to는 ‘과거에는 ~하지 않았다’라는 의미이다.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓓ",
+"ⓑ, ⓔ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "differ와 are different는 모두 ‘다르다’라는 뜻이므로 ⓐ는 옳고, not regarded as rude는 ‘무례하다고 여겨지지 않는’이라는 뜻이므로 ⓓ도 옳다. elderly는 나이가 많다는 뜻이며, more는 비교 대상보다 많은 금액을 나타내므로 ⓑ와 ⓒ는 틀리다. are not used to는 ‘~에 익숙하지 않다’라는 뜻이므로 ⓔ도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7601d1c6a5",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nPop art started in America during the 1950s. Its name comes from the word “popular.” Pop artists wanted people to enjoy art easily. They chose familiar images from television, magazines, advertisements, and comic books. These images looked fresh to people when they appeared in art exhibitions.",
+"choices": [
+"팝 아트라는 이름은 ‘전통적인’이라는 뜻의 단어에서 나왔다.",
+"팝 아트 작가들은 사람들이 예술을 쉽게 즐기기를 바랐다.",
+"팝 아트는 미국에서 1940년대에 시작되었다.",
+"팝 아트 작가들은 대중매체의 이미지를 사용하지 않았다.",
+"사람들은 전시회에 등장한 친숙한 이미지에서 신선함을 느끼지 못했다."
+],
+"answer": "②",
+"solution": "팝 아트 작가들은 사람들이 예술을 쉽게 즐기기를 바랐다고 했다. 따라서 글의 내용과 일치하는 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cd8ebc6040",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nAndy Warhol, known as the King of Pop Art, got ideas for his art from magazines and stores. His works include images of the American actor Marilyn Monroe and soup cans. He produced many copies of his works to express the idea that art is part of everyday life.",
+"choices": [
+"What is Andy Warhol known as?",
+"Where did Warhol get ideas for his art?",
+"Which American actor appears in Warhol’s works?",
+"How much did a copy of Warhol’s work cost?",
+"Why did Warhol produce many copies of his works?"
+],
+"answer": "④",
+"solution": "글에는 워홀의 별칭, 소재를 얻은 곳, 작품에 등장하는 배우, 복사본을 만든 이유가 제시되어 있다. 그러나 작품 복사본의 가격은 언급되어 있지 않으므로 ④에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-eb1777fc9c",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nClaes Oldenburg brought familiar objects into art. His early sculptures were soft, and he worked with materials such as paper, plastic, and cloth. A toilet made from cloth is one example. He later created very large sculptures of ordinary objects, including an ice cream cone. To let everyone enjoy his art, he displayed works outdoors. He also sold his works in a shop that he operated within his studio.",
+"choices": [
+"Oldenburg는 친숙한 사물을 예술의 소재로 삼았다.",
+"Oldenburg의 초기 조각품에는 부드러운 재료가 사용되었다.",
+"Oldenburg는 거대한 일상용품 조각을 만든 뒤에 처음으로 부드러운 조각품을 만들기 시작했다.",
+"Oldenburg가 작품을 야외에 전시한 것은 누구나 예술을 즐기게 하려는 목적과 관련이 있다.",
+"Oldenburg는 자신의 작업실 안에서 작품을 판매하는 상점을 운영했다."
+],
+"answer": "③",
+"solution": "Oldenburg는 초기에 부드러운 조각품을 만들었고, 이후에 일상적인 사물을 거대한 조각품으로 만들었다. ③은 이러한 제작 순서를 반대로 설명하므로 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f392b15ee2",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 바탕으로 추론한 내용으로 가장 적절한 것은?\n\nPeople once considered art hard to understand. Pop artists used familiar images and bright colors to change this view. Roy Lichtenstein brought cartoons into large, colorful paintings and included speech balloons. At the time, people did not accept cartoons as a form of art, but he questioned that belief. His paintings helped bring high art and popular culture closer together. Pop art may appear ordinary, yet there is meaning in it.",
+"choices": [
+"팝 아트가 평범해 보인다는 것은 작품에 담긴 의미도 거의 없다는 뜻이다.",
+"Lichtenstein은 만화가 이미 예술로 널리 인정받고 있었기 때문에 만화를 선택했을 것이다.",
+"팝 아트는 친숙한 이미지를 작품에서 제거하여 예술이 어렵다는 인식을 바꾸려 했을 것이다.",
+"Lichtenstein이 대중문화와 고급 예술을 가깝게 만든 주된 방법은 작품의 복사본을 대량으로 제작하는 것이었을 것이다.",
+"Lichtenstein의 작품은 친숙한 대중문화도 예술이 될 수 있음을 보여 주어 예술에 대한 기존 생각을 바꾸는 데 도움이 되었을 것이다."
+],
+"answer": "⑤",
+"solution": "Lichtenstein은 만화를 예술로 인정하지 않던 당시의 생각에 의문을 제기하고 만화를 회화에 사용했다. 이는 대중문화와 고급 예술의 거리를 좁히는 행동이므로 ⑤를 추론할 수 있다. 복사본을 대량으로 제작했다는 내용은 이 글에서 Lichtenstein의 활동으로 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-02d1d06137",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <보기>의 판단을 검토할 때, 글에서 뒷받침되는 것만을 고른 것은?\n\nAndy Warhol took subjects from magazines and stores. By making many copies of works showing Marilyn Monroe or soup cans, he wanted to present art as something people encounter every day. Claes Oldenburg also chose ordinary subjects, but made sculptures. His early works used soft materials; later, he made huge versions of everyday objects. He placed works outdoors so that everyone could enjoy them. Roy Lichtenstein used cartoons and speech balloons in large paintings with lively colors. He challenged the belief that cartoons could not be art.\n\n<보기>\nㄱ. Warhol의 복사본 제작과 Oldenburg의 야외 전시는 방법은 다르지만, 각각 예술을 일상적인 것으로 보여 주거나 누구나 즐기게 하려는 목적과 관련된다.\nㄴ. Oldenburg와 Lichtenstein은 모두 작품의 크기와 관련된 특징이 언급되지만, 두 사람의 작품이 모두 조각품인 것은 아니다.\nㄷ. Warhol과 Lichtenstein이 대중에게 친숙한 소재를 사용했다는 점을 근거로, 두 사람이 작품의 복사본도 같은 방식으로 제작했다고 판단할 수 있다.\nㄹ. Lichtenstein이 만화를 예술에 사용했다는 사실은 당시 사람들이 이미 만화를 예술로 인정하고 있었음을 뒷받침한다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "①",
+"solution": "Warhol의 복사본 제작 목적과 Oldenburg의 야외 전시 목적을 각각 정확히 연결한 ㄱ은 타당하다. Oldenburg는 거대한 조각품을, Lichtenstein은 큰 회화를 만들었으므로 ㄴ도 타당하다. 친숙한 소재의 사용만으로 복사본 제작 방식까지 같다고 판단할 수 없으며, 당시에는 만화가 예술로 인정받지 못했으므로 ㄷ과 ㄹ은 뒷받침되지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b36b1533e5",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에 대한 질문과 답의 연결 중, 두 답이 모두 글의 정보만으로 뒷받침되는 것은?\n\nPop artists turned to popular culture because they wanted to make art fun and easy. Familiar images appeared in exhibitions and gave viewers a fresh experience. Warhol found subjects in magazines and stores. His repeated images expressed the idea that art belongs to everyday life. Oldenburg made soft sculptures before producing huge sculptures of ordinary things. He displayed works outside to allow everyone to enjoy them and ran a shop in his studio. Lichtenstein put cartoons into his paintings when cartoons were not accepted as art. His work helped reduce the distance between popular culture and high art.",
+"choices": [
+"Q: Why did Warhol repeat images? / A: To show that art belongs to daily life.\nQ: Why did Oldenburg run his shop? / A: To pay for his outdoor exhibitions.",
+"Q: Which came first in Oldenburg’s work, huge sculptures or soft ones? / A: Huge sculptures.\nQ: What did Lichtenstein’s work help do? / A: Bring popular culture and high art closer.",
+"Q: How did familiar images affect exhibition visitors? / A: They gave visitors a fresh experience.\nQ: How many works did Oldenburg sell? / A: He sold more sculptures than Warhol sold copies.",
+"Q: Did Lichtenstein follow the common view of cartoons at the time? / A: No, his use of cartoons challenged it.\nQ: What purpose did Oldenburg’s outdoor displays serve? / A: They allowed everyone to enjoy his art.",
+"Q: Why did pop artists turn to popular culture? / A: To make art fun and easy.\nQ: What did Warhol and Oldenburg both do in their studios? / A: They operated shops."
+],
+"answer": "④",
+"solution": "Lichtenstein은 만화가 예술로 인정받지 못하던 시기에 만화를 그림에 사용했고, Oldenburg는 누구나 예술을 즐기게 하려고 야외에 작품을 전시했다. 따라서 ④의 두 답은 모두 글에 근거한다. ①의 상점 운영 목적, ③의 판매량 비교, ⑤의 Warhol의 상점 운영은 제시되지 않았으며, ②는 조각품 제작 순서를 반대로 설명한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
 }
 ]

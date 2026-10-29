@@ -3206,5 +3206,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-e83530eaac",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 안에 들어갈 말로 어법상 가장 알맞은 것은?\n\nAn interesting opening sentence can make readers (     ) to discover what happens next.",
+"choices": [
+"wants",
+"want",
+"wanted",
+"to want",
+"wanting"
+],
+"answer": "②",
+"solution": "사역동사 make가 ‘~하게 하다’라는 뜻으로 쓰이면 목적격 보어로 동사원형이 온다. 따라서 make readers 뒤에는 want가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b6742bbade",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장을 한 문장으로 바르게 연결한 것은?\n\nPeter Pan takes the children to Neverland. They do not grow older there.",
+"choices": [
+"Peter Pan takes the children to Neverland, where they do not grow older.",
+"Peter Pan takes the children to Neverland, which they do not grow older.",
+"Peter Pan takes the children to Neverland, where do not grow older.",
+"Peter Pan takes the children to Neverland, in where they do not grow older.",
+"Peter Pan takes the children to Neverland, which they do not grow older there."
+],
+"answer": "①",
+"solution": "두 번째 문장의 there는 장소를 나타내므로 관계부사 where로 연결할 수 있다. where 뒤에는 주어와 동사가 갖추어진 절인 they do not grow older가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ec91367e5d",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 표현을 바르게 연결한 것은?\n\nIt is not always easy (A)[to create / create] an opening sentence that attracts readers. Writers often spend a great deal of time (B)[choose / choosing] the right words. People make first impressions, and books (C)[do / are] too.",
+"choices": [
+"to create — choose — do",
+"create — choosing — do",
+"to create — choosing — are",
+"create — choose — are",
+"to create — choosing — do"
+],
+"answer": "⑤",
+"solution": "(A)는 가주어 It에 대응하는 진주어이므로 to create가 알맞다. (B)는 ‘spend＋시간＋동명사’ 구조이므로 choosing을 써야 한다. (C)는 앞의 일반동사구 make first impressions를 대신하므로 do가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-927b46de90",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 표현을 바르게 연결한 것은?\n\nThe beginning of Holes tells readers (A)[that / what] Camp Green Lake has no lake. Stanley arrives at this place, which (B)[is located / locating] in a desert. The boys there are expected (C)[dig / to dig] holes each day.",
+"choices": [
+"what — is located — to dig",
+"that — locating — to dig",
+"that — is located — to dig",
+"what — locating — dig",
+"that — is located — dig"
+],
+"answer": "③",
+"solution": "(A) 뒤에는 완전한 절이 오므로 명사절 접속사 that이 알맞다. (B)는 ‘~에 위치해 있다’라는 뜻의 is located가 필요하다. (C)는 ‘be expected to＋동사원형’ 구조이므로 to dig가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-53b2ca663c",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 『1984』에 관한 설명이다. ⓐ~ⓔ 중 문장 전체가 어법상 옳은 것만을 모두 고른 것은?\n\nⓐ The fact that the clocks strike thirteen suggests that the world readers are entering is unfamiliar.\nⓑ Oceania is an imaginary country where is ruled by a government that tries to control everyone's life.\nⓒ A new language has been created to limit what people can think and express.\nⓓ As long as Big Brother being in power, the people he watches through television screens cannot be free.\nⓔ Winston hopes to find people to join him in fighting Big Brother, but he may give in and be controlled by the leader.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ의 관계절에는 주어가 없으므로 where를 주격 관계대명사 that 또는 which로 고쳐야 한다. ⓓ는 As long as가 이끄는 절에 정형동사가 필요하므로 being을 is로 고쳐야 한다. ⓐ의 두 that절과 목적격 관계대명사가 생략된 절, ⓒ의 수동태와 what절은 모두 올바르다. ⓔ의 to join은 people을 수식하고, may 뒤의 give와 be가 병렬로 연결되어 있으므로 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4fa1c6f1f1",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A)~(E)에 들어갈 표현을 바르게 연결한 것은?\n\nThe name Camp Green Lake may make readers (A)[imagine / to imagine] a place with water and trees. However, the opening of Holes makes it clear (B)[that / what] no lake exists there. The place (C)[which / in which] Stanley and the other boys are expected to dig holes is actually in a desert. Stanley has done nothing wrong, and (D)[what / that] he suspects is that the digging has another purpose. He wants to discover the truth about the place (E)[where / which] he has been sent.\n\n선지의 표현은 (A) — (B) — (C) — (D) — (E) 순서이다.",
+"choices": [
+"imagine — that — which — what — where",
+"to imagine — that — in which — what — where",
+"imagine — what — in which — that — which",
+"imagine — that — in which — what — where",
+"imagine — that — in which — that — which"
+],
+"answer": "④",
+"solution": "(A)는 사역동사 make의 목적격 보어이므로 동사원형 imagine이 알맞고, (B)는 가목적어 it에 대응하는 완전한 내용절을 이끄는 that이 알맞다. (C) 뒤의 절은 필수 성분이 갖추어져 있으므로 장소를 나타내는 in which가 필요하다. (D)는 suspects의 목적어 역할을 포함하면서 문장 전체의 주어가 되는 명사절을 이끄는 what이 알맞다. (E)는 ‘그 장소로 보내졌다’의 장소 관계를 나타내므로 where가 알맞으며, which를 쓰려면 sent 뒤에 to가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
 }
 ]

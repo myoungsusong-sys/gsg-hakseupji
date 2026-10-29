@@ -151,5 +151,132 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b06-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-3c277a034c",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Most of the taste tests has produced favorable responses.",
+"Many participants could not distinguish cultured meat from regular meat.",
+"The sale of lab-grown chicken have been approved in several places.",
+"More safety data must collected over a long period.",
+"The safety of cultured meat is expected improve with technology."
+],
+"answer": "②",
+"solution": "②의 조동사 could 뒤에는 동사원형 distinguish가 적절하게 쓰였다. ①은 has를 have로, ③은 have를 has로 고쳐야 하며, ④와 ⑤에는 각각 be와 to가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-837eb0b491",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPeople (A)[interested / interesting] in cultured meat often ask (B)[if / what] it is safe. More data must be collected over time (C)[to confirm / confirming] its safety.",
+"choices": [
+"interested — if — to confirm",
+"interesting — if — to confirm",
+"interested — what — confirming",
+"interesting — what — to confirm",
+"interested — if — confirming"
+],
+"answer": "①",
+"solution": "사람들이 배양육에 관심을 느끼는 것이므로 과거분사 interested가 적절하다. ‘안전한지’를 나타내는 if와 목적을 나타내는 to confirm을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f37d39b05e",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 표현으로 어법상 가장 적절한 것은?\n\nCultured meat can offer an eating experience similar to that of animal meat in a way that is __________ harmful to animals and the environment.",
+"choices": [
+"much less",
+"very less",
+"much fewer",
+"more little",
+"very fewer"
+],
+"answer": "①",
+"solution": "harmful의 비교급은 less harmful이며, 비교급을 강조할 때 much를 쓸 수 있다. fewer는 셀 수 있는 명사의 수가 적음을 나타내므로 harmful을 수식할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-43b9be561b",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe high production cost is a problem that needs (A)[to resolve / to be resolved]. Several food companies (B)[has / have] been searching for less expensive methods, so it may not be long before consumers can (C)[buy / buying] cultured meat in stores.",
+"choices": [
+"to resolve — has — buy",
+"to be resolved — has — buying",
+"to be resolved — have — buy",
+"to resolve — have — buying",
+"to be resolved — have — buying"
+],
+"answer": "③",
+"solution": "문제가 해결되는 대상이므로 수동형 to be resolved가 필요하다. 주어 Several food companies는 복수이므로 have가 적절하고, 조동사 can 뒤에는 동사원형 buy가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-472c061207",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nTwo major concerns ⓐhave pointed out about cultured meat. First, growing meat in a laboratory ⓑrequires considerable energy. Traditional livestock farming, however, ⓒemits more greenhouse gases than the cultured meat industry ⓓdoes. In addition, cell-extraction procedures ⓔmust be carried out ethically. Technological advances are expected ⓕreducing the problems associated with these procedures.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓕ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓓ, ⓕ"
+],
+"answer": "②",
+"solution": "우려가 ‘지적되는’ 것이므로 ⓐ는 have been pointed out이 되어야 한다. expect는 목적격 보어로 to부정사를 취하므로 ⓕ는 to reduce가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-00a4e8e66b",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nⓐWhat once belonged only to science fiction ⓑis now reaching dinner plates. ⓒWhatever strange cultured meat may seem, it offers advantages for ⓓreducing pollution and animal suffering. Dr. Perry’s team is seeking a cultivation environment that enables them ⓔcreate a better texture while ⓕusing less energy.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓓ, ⓕ",
+"ⓔ, ⓕ"
+],
+"answer": "③",
+"solution": "형용사 strange의 정도를 나타내는 양보절에는 Whatever가 아니라 However를 써야 한다. enable은 ‘enable＋목적어＋to부정사’의 구조를 취하므로 ⓔ는 to create로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2f6d952886",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 잘못된 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nLab-grown meat has become much cheaper than it was used to be, but its high price is an issue that needs to resolve, and several food companies has been working to find cheaper production methods, so consumers may soon can buy it in stores.",
+"selfGrade": true,
+"answer": "Lab-grown meat has become much cheaper than it used to be, but its high price is an issue that needs to be resolved, and several food companies have been working to find cheaper production methods, so consumers may soon be able to buy it in stores.",
+"solution": "과거의 상태를 나타내는 표현은 used to be이며, issue는 해결되는 대상이므로 needs to be resolved가 적절하다. 복수 주어 several food companies에는 have를 써야 한다. 조동사 may와 can을 연이어 쓸 수 없으므로 may soon be able to buy로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
 }
 ]
