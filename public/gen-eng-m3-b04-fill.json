@@ -1925,5 +1925,457 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-f43c68aad8",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 어법을 고려할 때, 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA: Eui Hyun Sin tried several sports after his accident and became especially interested in skiing.\nB: He even won Korea’s first gold medal at the 2018 Winter Paralympics.\nA: Right. That is ______ many people respect him.",
+"choices": [
+"what",
+"why",
+"where",
+"when",
+"who"
+],
+"answer": "②",
+"solution": "빈칸 뒤에는 많은 사람들이 그를 존경하는 이유에 해당하는 내용이 나온다. ‘That is why+주어+동사’는 ‘그것이 바로 ~한 이유이다’라는 뜻이므로 why가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b600744529",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 알맞은 것은?\n\nAlthough his legs were in bad condition, the runner kept ______ toward the tape.",
+"choices": [
+"going",
+"go",
+"to go",
+"went",
+"goes"
+],
+"answer": "①",
+"solution": "keep은 목적어로 동명사를 취하여 ‘계속 ~하다’라는 뜻을 나타낸다. 따라서 go의 동명사형인 going이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ed1313a83",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)~(E) 중, 어법상 어색한 것은?\n\n(A)The officials believed that no more runners would come. However, a volunteer suddenly shouted, (B)“There comes another runner!” (C)There was something wrong with the runner’s legs, but (D)he kept to run toward the finish line. Soon, (E)all eyes were on him.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "keep은 ‘계속 ~하다’라는 뜻일 때 뒤에 동명사를 취한다. 따라서 (D)의 kept to run은 kept running으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aab9a0727b",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThe tape had already been removed when someone cried, “Look! There (A)[comes / come] one more runner!” There (B)[was / were] something wrong with his legs, but he kept (C)[moving / to move] toward the finish line.",
+"choices": [
+"comes - were - moving",
+"comes - was - moving",
+"comes - was - to move",
+"come - were - moving",
+"come - was - to move"
+],
+"answer": "②",
+"solution": "도치된 문장의 주어 one more runner가 단수이므로 comes가 알맞다. something이 단수이므로 was를 쓰며, keep 뒤에는 동명사 moving이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fdcbccebb6",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에 있는 어법상 오류의 개수로 알맞은 것은?\n\nThere were something wrong with the runner’s legs. However, he kept going toward the finish line. The band started playing celebration music, and the volunteers cheers for him. At last, he ran through the tape and fell to the ground.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "something은 단수이므로 There were를 There was로 고쳐야 한다. 또한 과거의 사건을 서술하고 있으므로 cheers는 cheered가 되어야 하며, 나머지 표현은 어법상 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7233db4116",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"There come one more runner into the stadium.",
+"There was wrong something with the runner’s legs.",
+"The runner kept moving toward the finish line.",
+"The band started play celebration music.",
+"All eyes was on the last runner."
+],
+"answer": "③",
+"solution": "keep 뒤에 동명사 moving이 쓰인 ③이 어법상 옳다. ①은 comes, ②는 something wrong, ④는 playing 또는 to play, ⑤는 were로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dfa570f069",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 네 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nThere come another runner, and there was wrong something with his legs. Still, he kept to go toward the finish line and finally fall to the ground.",
+"selfGrade": true,
+"answer": "There comes another runner, and there was something wrong with his legs. Still, he kept going toward the finish line and finally fell to the ground.",
+"solution": "another runner가 단수이므로 come을 comes로 고치고, 형용사 wrong은 something 뒤에 놓는다. keep 뒤에는 동명사 going을 쓰며, 과거 사건을 나타내므로 fall은 fell로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-49be490f73",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 같은 의미가 되도록 한 문장으로 연결하시오. 반드시 why를 사용할 것.\n\nNot many people are good at skiing. Eui Hyun Sin is highly respected for his achievement.",
+"selfGrade": true,
+"answer": "Not many people are good at skiing, and that is why Eui Hyun Sin is highly respected for his achievement.",
+"solution": "앞 문장의 내용은 Eui Hyun Sin이 존경받는 이유를 뒷받침한다. ‘that is why+주어+동사’를 사용하고, 존경을 받는다는 의미는 수동태 is highly respected로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-196dcc1a6e",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 직접화법의 문장을 간접화법으로 바꾸어 빈칸을 완성하시오.\n\nThe officials said, “There will be no more runners coming.”\n→ The officials said that ______________________________.",
+"selfGrade": true,
+"answer": "there would be no more runners coming",
+"solution": "전달 동사 said가 과거이므로 직접화법의 will은 간접화법에서 would로 바뀐다. there be 구문의 어순과 ‘명사+runners+현재분사 coming’의 구조는 그대로 유지한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dc0f349433",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nEven a brief time in the sun can be helpful. You can expose your arms and hands to sunlight during a break or take a short walk. The important thing is to enjoy sunshine safely.",
+"choices": [
+"The Best Time for Mountain Biking",
+"Simple Ways to Enjoy Sunshine Safely",
+"Why People Should Stay Inside",
+"Different Kinds of Outdoor Sports",
+"How to Make a Lunch Plan"
+],
+"answer": "②",
+"solution": "글은 쉬는 시간이나 산책 중에 햇빛을 짧고 안전하게 즐기는 방법을 소개한다. 따라서 글 전체를 포괄하는 제목은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d0608605c7",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nI recently began mountain biking because I wanted to become healthier. My dad recommended the activity to me. It is good for my health and also has a positive effect on my mood, so I am thankful for his advice.",
+"choices": [
+"건강을 위해서는 혼자 운동 방법을 선택해야 한다.",
+"산악자전거는 건강과 기분에 긍정적인 영향을 줄 수 있다.",
+"운동을 시작하기 전에 기분을 먼저 바꾸어야 한다.",
+"아버지는 산악자전거를 그만두라고 조언했다.",
+"산악자전거보다 햇빛을 즐기는 것이 더 중요하다."
+],
+"answer": "②",
+"solution": "글쓴이는 건강을 위해 시작한 산악자전거가 건강과 기분 모두에 도움이 된다고 말한다. 아버지의 추천은 부가적인 내용이므로 중심 요지는 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ca08a710ed",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 한 문장으로 요약할 때 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA little sunshine can help both your mind and your body. You do not have to stay in the sun for a long time. Try to get some sunlight safely as part of your day.\n\n→ Getting a little sunshine every day can be (   ) for your mind and body.",
+"choices": [
+"harmful",
+"beneficial",
+"impossible",
+"unnecessary",
+"surprising"
+],
+"answer": "②",
+"solution": "지문은 적은 양의 햇빛도 몸과 마음에 도움이 된다고 설명한다. ‘도움이 되는’이라는 뜻의 beneficial이 문맥에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-da5a84d944",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nSunshine offers benefits to both the body and the mind. However, knowing its benefits is not enough. We should put that knowledge into practice by getting a small amount of sunlight safely. A break between lessons, lunchtime, or a brief walk can provide an opportunity to do this.",
+"choices": [
+"햇빛의 모든 장점을 과학적으로 분석해야 할 필요성",
+"수업 사이의 휴식 시간을 늘려야 하는 이유",
+"햇빛의 이점을 안전한 일상 실천으로 얻는 방법",
+"걷기 운동이 다른 모든 활동보다 효과적인 이유",
+"건강을 위해 야외에서 오랜 시간을 보내야 할 필요성"
+],
+"answer": "③",
+"solution": "첫 문장은 햇빛의 이점을 제시하지만, 글의 중심은 이를 일상에서 안전하게 얻는 방법에 있다. 특히 짧은 휴식이나 산책을 활용하라고 권하므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9521f9b475",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 가장 잘 요약한 것은?\n\nWanting to improve my health, I took up mountain biking after my dad recommended it. I later realized that the activity could affect not only my physical condition but also my mood. His suggestion therefore meant a great deal to me.",
+"choices": [
+"The writer began biking against Dad's advice but soon regretted it.",
+"Dad chose mountain biking because the writer was already an expert.",
+"The writer values Dad's suggestion because biking benefits health and mood.",
+"The writer believes emotional health is unrelated to physical activity.",
+"Dad became thankful after the writer recommended mountain biking to him."
+],
+"answer": "③",
+"solution": "글쓴이는 아버지의 제안으로 산악자전거를 시작했고, 그것이 건강과 기분에 모두 도움이 된다는 점을 깨달았다. 이러한 인과관계를 정확히 담은 요약은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-79018fc538",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 글의 공통된 주제로 가장 알맞은 것은?\n\n(A) The writer started mountain biking for better health and found that it could also change the writer's mood.\n\n(B) A small amount of sunshine can benefit both the mind and the body when it is enjoyed safely.",
+"choices": [
+"건강에 좋은 활동은 반드시 가족의 권유로 시작해야 한다.",
+"신체 활동은 햇빛을 완전히 피한 상태에서 해야 한다.",
+"산악자전거와 햇빛은 오직 신체 건강에만 영향을 준다.",
+"일상에서 실천할 수 있는 활동은 몸과 기분에 도움을 줄 수 있다.",
+"기분을 바꾸려면 장시간의 강도 높은 운동이 필요하다."
+],
+"answer": "④",
+"solution": "(A)는 산악자전거가 건강과 기분에 미치는 영향을, (B)는 햇빛이 몸과 마음에 주는 이점을 다룬다. 두 글 모두 일상적 실천이 신체와 정서에 도움이 될 수 있다는 공통점을 지닌다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f5a1d0654e",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지가 되도록 주어진 낱말을 모두 한 번씩 사용하여 정확히 12단어의 문장을 완성하시오. 낱말의 형태를 바꾸거나 새로운 낱말을 추가하지 마시오.\n\nA small amount of sunshine each day is good for your physical and emotional condition. It should be enjoyed in a safe way.\n\n[a / safely / both / sunshine / every / enjoying / benefits / day / little / mind / body / and]",
+"selfGrade": true,
+"answer": "Enjoying a little sunshine safely every day benefits both mind and body.",
+"solution": "핵심 내용은 적은 양의 햇빛을 매일 안전하게 즐기면 몸과 마음에 도움이 된다는 것이다. 동명사구를 주어로 배열하고 benefits를 서술어로 사용하면 12단어의 문장이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-559b11a287",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 글쓴이가 아버지에게 고마워하는 이유가 드러나도록 주어진 낱말을 모두 한 번씩 사용하여 정확히 14단어의 문장을 완성하시오.\n\nThe writer began mountain biking following Dad's recommendation. The activity helps the writer stay healthy and can also affect the writer's mood.\n\n[changes / writer / suggesting / mood / Dad / mountain / thanks / health / for / biking / and / The / which / supports]",
+"selfGrade": true,
+"answer": "The writer thanks Dad for suggesting mountain biking, which supports health and changes mood.",
+"solution": "글쓴이가 감사하는 이유는 아버지가 건강과 기분에 도움이 되는 산악자전거를 권했기 때문이다. ‘thanks A for -ing’ 구조와 which가 이끄는 관계절을 사용해 14단어로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e50e281ac8",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 영어 한 문장으로 쓰시오. 아래 제시어를 모두 활용하되, 필요하면 형태를 바꾸고 관사와 전치사를 추가할 수 있다. 답은 정확히 14단어로 작성하시오.\n\nYou can gain the positive effects of sunshine without spending a long time in it. Make a short and safe period of sunlight part of each day, since it is helpful to your mind as well as your body.\n\n[brief / safe / expose / sunshine / each day / benefit / mind / body / health]",
+"selfGrade": true,
+"answer": "Brief, safe exposure to sunshine each day can benefit both mental and physical health.",
+"solution": "글의 핵심은 매일 짧고 안전하게 햇빛을 쬐면 정신적·신체적 건강에 도움이 된다는 것이다. expose를 exposure로, mind와 body를 각각 mental과 physical로 바꾸어 정확히 14단어로 요약한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-444de17d12",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"Jane runs as fast than Tom.",
+"Jane runs as faster as Tom.",
+"Jane runs as fast as Tom.",
+"Jane runs so fast than Tom.",
+"Jane runs as fastest as Tom."
+],
+"answer": "③",
+"solution": "동등 비교는 「as + 형용사·부사의 원급 + as」로 나타낸다. 동사 runs를 수식하는 부사 fast의 원급을 쓴 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aabce40f6e",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 알맞은 것은?\n\n________ was difficult for him to accept the lower price.",
+"choices": [
+"That",
+"It",
+"What",
+"Which",
+"There"
+],
+"answer": "②",
+"solution": "진주어인 to accept the lower price를 문장 뒤에 두었으므로 주어 자리에는 가주어 It이 필요하다. for him은 to부정사의 의미상 주어를 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1faeb0cfe6",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ⓐ~ⓔ 중 어법상 어색한 것끼리 짝지어진 것은?\n\nHe ⓐtook a picture of his old bike and ⓑputs it on an online market. He was ⓒexcited about the new bike he wanted to buy ⓓit. However, he received no texts, and his heart began ⓔto sink.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓐ, ⓔ",
+"ⓑ, ⓒ",
+"ⓓ, ⓔ",
+"ⓑ, ⓓ"
+],
+"answer": "⑤",
+"solution": "ⓑ는 took과 and로 연결되어 과거의 행동을 나타내므로 posted가 아니라 주어진 동사 put의 과거형인 put으로 고쳐야 한다. ⓓ는 관계절에서 선행사 the new bike를 가리키는 목적어를 중복해서 쓴 것이므로 삭제해야 한다. 따라서 어색한 것은 ⓑ와 ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5c6e7b19d1",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ 중 어법상 알맞은 문장만을 모두 고른 것은?\n\nⓐ Jane tried to run as fast as she could.\nⓑ He ate as many food as his brother did.\nⓒ The desk is not as expensive as the chair.\nⓓ He finished his work as quick as possible.\nⓔ He swims as well as his brother.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ는 「as + 부사의 원급 + as + 주어 + can」의 과거형이고, ⓒ는 동등 비교의 부정형이므로 알맞다. ⓔ도 swims를 수식하는 부사 well을 사용하여 알맞다. ⓑ의 food는 셀 수 없는 명사이므로 many를 much로, ⓓ의 quick은 finished를 수식해야 하므로 quickly로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-88f501855f",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 바르게 연결된 것은?\n\n(A)________ was not easy for him to sell his old bike at a lower price. Still, he wanted to get the money as quickly as he could. When he saw the buyer (B)________ away with the bike, he felt (C)________ sad and proud of himself.\n\n각 선지는 (A) — (B) — (C)의 순서이다.",
+"choices": [
+"It — ride — both",
+"That — ride — both",
+"It — to ride — both",
+"It — ride — either",
+"That — to ride — either"
+],
+"answer": "①",
+"solution": "(A)는 뒤에 있는 to부정사구를 진주어로 받는 가주어 It이 알맞다. (B)는 「see + 목적어 + 동사원형」 구조이므로 ride가 알맞다. (C)는 sad와 proud를 and로 연결하므로 both를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4e29c7dbc",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 표시 부분 ⓐ~ⓔ 중 어법상 어색한 것은?\n\nHe ⓐ[took a photo of his bike and posted it online]. The bike ⓑ[he planned to buy] made him excited. However, ⓒ[it was hard to get a reply]. He checked his post ⓓ[as often as he could]. As other people added new posts, his heart ⓔ[began to sank].",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ의 to는 to부정사를 만드는 요소이므로 뒤에 동사원형 sink가 와야 한다. ⓐ는 과거동사 두 개의 병렬 연결, ⓑ는 목적격 관계대명사의 생략, ⓒ는 가주어 구문, ⓓ는 동등 비교 구문으로 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1876e1e895",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓕ를 어법에 맞게 고치려고 한다. 제시된 수정 방법 중 옳은 것만을 모두 고른 것은?\n\nⓐ That was hard for him to accept the lower price.\n→ That을 It으로 바꾼다.\n\nⓑ He was both excited and proud of himself.\n→ both를 either로 바꾼다.\n\nⓒ He took a photo and post it on an online market.\n→ post를 posted로 바꾼다.\n\nⓓ He checked his post as often as he could.\n→ often을 more often으로 바꾼다.\n\nⓔ The bike he wanted to buy it was shiny.\n→ it을 삭제한다.\n\nⓕ He was sad to see his old bike go.\n→ go를 to go로 바꾼다.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓔ, ⓕ",
+"ⓑ, ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ는 가주어 It으로, ⓒ는 took과 시제를 맞춘 posted로 고쳐야 한다. ⓔ에서는 선행사 The bike와 목적어 it이 중복되므로 it을 삭제해야 한다. ⓑ의 both A and B, ⓓ의 원급 비교, ⓕ의 지각동사 구문은 이미 알맞으므로 제시된 대로 고치면 틀리게 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-43783b4a5d",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 (A)~(F) 중 어법상 틀린 부분 네 곳을 찾아 고치시오. 고친 표현만 (A)~(F)의 순서에 따라 쉼표로 구분하여 쓰시오.\n\nHe took a picture of his bike and (A)[posted] it online. He was (B)[exciting] about the new bike he planned to buy. He checked the number of hits (C)[as often than] he could. However, (D)[that] was difficult for him to get a reply. Later, he sold his bike and saw the buyer (E)[to ride] away. He felt (F)[both] happy and sad.\n\n※ (B)는 excite에서 파생된 알맞은 분사 한 단어로, (C)는 as를 두 번 사용한 세 단어로 고칠 것.\n※ (D)는 가주어 한 단어로 고치고, (E)는 불필요한 한 단어를 삭제할 것.",
+"selfGrade": true,
+"answer": "excited, as often as, it, ride",
+"solution": "감정을 느끼는 사람의 상태를 나타내는 (B)는 excited로, 동등 비교를 나타내는 (C)는 as often as로 고친다. (D)는 진주어 to get a reply를 받는 가주어 it이 되어야 한다. (E)는 「see + 목적어 + 동사원형」 구조이므로 to를 삭제하여 ride로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
 }
 ]

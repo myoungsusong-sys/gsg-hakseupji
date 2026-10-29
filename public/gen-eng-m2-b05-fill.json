@@ -258,5 +258,57 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b05-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-4cdc7e59e7",
+"typeId": "eng-m2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말을 <보기>의 단어를 차례대로 사용하여 6단어로 영작하시오.\n\nG: I like playing board games after school.\nB: Me, too. Which board game do you like best?\nG: Chess. It is very challenging.\nB: _______________________________ together?\nG: Sure. That sounds great.\n\n<보기> why / we / chess",
+"selfGrade": true,
+"answer": "Why don’t we play chess together",
+"solution": "상대방에게 함께 체스를 하자고 제안하는 내용이므로 ‘Why don’t we＋동사원형?’을 사용한다. <보기>의 단어를 차례대로 배열하면 ‘Why don’t we play chess together’가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f0a210114d",
+"typeId": "eng-m2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n나는 체스를 가장 좋아한다. 왜냐하면 그것은 매우 도전적이기 때문이다.\n\n<조건>\n• like, because를 모두 사용할 것\n• 9단어로 쓸 것",
+"selfGrade": true,
+"answer": "I like chess best because it is very challenging",
+"solution": "‘가장 좋아하다’는 ‘like＋목적어＋best’로 표현한다. 이유를 나타내는 because 뒤에는 ‘it is very challenging’을 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-709a3e6df1",
+"typeId": "eng-m2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장이 자연스러운 대화가 되도록 주어진 단어를 모두 사용하여 빈칸을 완성하시오.\n\nB: ______________________________________, Surin?\nG: I play board games with my friends.\n\n<보기> usually / free / what / time / do / your / in / do / you",
+"selfGrade": true,
+"answer": "What do you usually do in your free time",
+"solution": "여가 시간에 주로 하는 일을 묻는 의문문이 필요하다. ‘What do you usually do’ 뒤에 전치사구 ‘in your free time’을 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-cf0a63bd05",
+"typeId": "eng-m2-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 의미가 자연스럽게 이어지도록 <보기>의 단어를 모두 사용하여 문장을 완성하시오.\n\nTalking with other students may make you nervous. However, remember that ________________________________________.\n\n<보기> not / good / easy / conversation / having / is / a",
+"selfGrade": true,
+"answer": "having a good conversation is not easy",
+"solution": "문장의 주어로 동명사구 ‘having a good conversation’을 만든다. 그 뒤에 ‘is not easy’를 배열하여 좋은 대화를 나누는 것이 쉽지 않다는 뜻을 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m6s0t0",
+"custom": true
 }
 ]

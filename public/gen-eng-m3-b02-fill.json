@@ -2893,5 +2893,571 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b02-u5m3s0t0",
 "custom": true
+},
+{
+"id": "fill-4e06f67a9e",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nJina decided to ______ the pottery class because she wanted to learn how to make a vase.",
+"choices": [
+"run away from",
+"sign up for",
+"look after",
+"cry out",
+"pass from"
+],
+"answer": "②",
+"solution": "도예 수업을 배우기 위해 등록했다는 내용이므로 ‘~을 신청하다’라는 뜻의 sign up for가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7a8bd63e8e",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 밑줄 친 표현의 의미로 가장 알맞은 것은?\n\nWe could see a small boat moving slowly in the distance.",
+"choices": [
+"바로 옆에서",
+"물속에서",
+"먼 곳에서",
+"빠른 속도로",
+"반대 방향으로"
+],
+"answer": "③",
+"solution": "in the distance는 ‘멀리서, 먼 곳에’라는 뜻이다. 따라서 작은 배가 먼 곳에서 천천히 움직이고 있었다는 의미가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-844652e9f0",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto escape from a place or a dangerous situation",
+"choices": [
+"return",
+"produce",
+"present",
+"beg",
+"run away"
+],
+"answer": "⑤",
+"solution": "‘어떤 장소나 위험한 상황에서 달아나다’라는 뜻의 표현은 run away이다. return은 ‘돌아오다’라는 뜻이므로 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-70c694d8aa",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 밑줄 친 표현의 쓰임이 어색한 것은?",
+"choices": [
+"My sister signed up for an art class yesterday.",
+"I exercise regularly to get into shape.",
+"The frightened dog ran away from the loud noise.",
+"Can you look for my little brother while I buy some food?",
+"We saw a bright light twinkling in the distance."
+],
+"answer": "④",
+"solution": "④는 음식을 사는 동안 남동생을 ‘돌봐 달라’는 의미이므로 look after를 써야 한다. look for는 ‘~을 찾다’라는 뜻이어서 문맥에 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3f5242e255",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어와 영영풀이의 연결이 바르지 않은 것은?",
+"choices": [
+"beg ― to ask for something in an anxious or urgent way",
+"produce ― to make or create something",
+"creative ― having new and imaginative ideas",
+"threaten ― to say that one may hurt or punish someone",
+"present ― to hide something so that nobody can see it"
+],
+"answer": "⑤",
+"solution": "present는 동사로 쓰일 때 작품이나 물건 등을 ‘제시하다, 보여 주다’라는 뜻이다. ‘아무도 볼 수 없도록 숨기다’라는 영영풀이는 hide에 해당하므로 ⑤의 연결이 바르지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6e8d95e078",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 present가 주어진 문장의 present와 같은 의미로 쓰인 것은?\n\nAll the potters presented their finest work to the officer.",
+"choices": [
+"I received a special present on my birthday.",
+"No one was present when the door opened.",
+"The scientist presented the results to the group.",
+"We should focus on the present, not the past.",
+"The present building will be replaced next year."
+],
+"answer": "③",
+"solution": "주어진 문장의 presented는 작품을 ‘제시했다’라는 뜻의 동사이다. ③의 presented도 연구 결과를 사람들에게 ‘제시했다’는 의미로 쓰였다. 나머지는 명사 또는 형용사로 쓰인 present이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d40f1a6851",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe special skill had (A)______ from one generation to the next. The potter worked hard to (B)______ a new vase and finally (C)______ it to the officer.",
+"choices": [
+"passed ― produce ― presented",
+"looked ― threaten ― produced",
+"passed ― present ― ran away",
+"returned ― produce ― begged",
+"signed ― cut ― threatened"
+],
+"answer": "①",
+"solution": "기술이 세대에서 다음 세대로 ‘전해졌다’는 의미에는 passed가 알맞고, 꽃병을 ‘만들다’에는 produce가 알맞다. 완성된 꽃병을 관리에게 ‘제시했다’는 의미에는 presented가 들어가므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d706c4ea34",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이를 참고하여 빈칸 (A)~(C)에 알맞은 단어를 문맥에 맞는 형태로 쓰시오.\n\n• produce: to make or create something\n• creative: having new and imaginative ideas\n• present: to show or offer something formally\n\nThe potter (A)______ several vases. Among them, he selected the most (B)______ one and (C)______ it to the officer.",
+"selfGrade": true,
+"answer": "produced, creative, presented",
+"solution": "(A)는 여러 꽃병을 ‘만들었다’는 과거의 일이므로 produced가 알맞다. (B)는 one을 꾸며 주는 형용사 creative가 필요하며, (C)는 관리에게 그것을 ‘제시했다’는 뜻이므로 presented를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f9906026f3",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말과 같은 뜻이 되도록 빈칸 (A)~(C)에 알맞은 표현을 쓰시오.\n\n수진이는 건강한 몸을 만들기 위해 체육관에 등록했고, 운동하는 동안 이모에게 어린 동생을 돌봐 달라고 부탁했다.\n\nSujin (A)______ the gym to (B)______. She asked her aunt to (C)______ her little brother while she exercised.",
+"selfGrade": true,
+"answer": "signed up for, get into shape, look after",
+"solution": "‘~에 등록하다’는 sign up for이며 과거 문맥이므로 signed up for를 쓴다. ‘건강한 몸을 만들다’는 get into shape, ‘~을 돌보다’는 look after이므로 각 빈칸에 해당 표현을 순서대로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-046e800792",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "밑줄 친 표현의 의미로 가장 알맞은 것을 고르시오.\n\nJunha has difficulty making his display board because he is all thumbs.",
+"choices": [
+"그는 손재주가 좋다.",
+"그는 몹시 피곤하다.",
+"그는 손재주가 없다.",
+"그는 아이디어가 부족하다.",
+"그는 혼자 일하기를 좋아한다."
+],
+"answer": "③",
+"solution": "‘be all thumbs’는 손재주가 없거나 손으로 하는 일에 서툴다는 뜻이다. 따라서 전시판을 만드는 데 어려움을 겪는다는 문맥에 알맞은 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c0c7c6cdb1",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nA: I cannot see the sample clearly.\nB: ____________________ I can show you how to clean the slide.\nA: Thanks. That would be nice.",
+"choices": [
+"Can I give you a hand?",
+"How much food do you want?",
+"Why did you leave the dog alone?",
+"Did you finish the display board?",
+"Would you like to enter the contest?"
+],
+"answer": "①",
+"solution": "B는 슬라이드를 닦는 방법을 알려 주겠다고 하므로 먼저 도움을 제안하는 말이 필요하다. ‘Can I give you a hand?’는 ‘내가 도와줄까?’라는 뜻이므로 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-83a6e1672a",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말과 의미가 일치하는 문장을 고르시오.\n\n우리는 다 먹을 수 있는 만큼만 음식을 받을 수 있다.",
+"choices": [
+"We can finish as much food as we receive only.",
+"We can receive only as much food as we can finish.",
+"We can receive food because we cannot finish it.",
+"We can finish only more food than we receive.",
+"We can receive as many food as we want to finish."
+],
+"answer": "②",
+"solution": "‘다 먹을 수 있는 만큼의 음식’은 ‘as much food as we can finish’로 표현한다. ‘food’는 셀 수 없는 명사이므로 ‘many food’는 쓸 수 없으며, ‘only’의 위치까지 적절한 문장은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4f91e8a636",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 내용과 일치하는 것을 고르시오.\n\nB: The sample does not look clear through the slide.\nG: First, wipe the slide with this soft cloth. Then turn on the light and check the view again.\nB: Okay. Thank you for your help.",
+"choices": [
+"The boy asks how to make a lunch tray.",
+"The girl advises the boy to turn off the light first.",
+"The boy can already see his sample clearly.",
+"The girl tells the boy to clean the slide with a soft cloth.",
+"The girl asks the boy to add music to a video."
+],
+"answer": "④",
+"solution": "소녀는 부드러운 천으로 슬라이드를 닦은 뒤 불을 켜라고 조언한다. 따라서 대화의 내용과 일치하는 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ee20f968b7",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장을 고르시오.",
+"choices": [
+"Kayla became very upset whenever she left alone.",
+"Brooke wanted connecting with Kayla while she was away.",
+"Brooke came up with an idea while she was video chatting.",
+"Brooke invented a device for lonely dogs leave at home.",
+"Brooke said what she found satisfaction in helping lonely dogs."
+],
+"answer": "③",
+"solution": "③은 ‘while+주어+과거진행형’의 구조가 올바르다. ①은 ‘was left’, ②는 ‘wanted to connect’, ④는 ‘dogs left at home’, ⑤는 ‘said that’으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5294acbd25",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 가장 바르게 영작한 것을 고르시오.\n\n브룩은 디자이너 팀과 함께 일할 수 있을 만큼 운이 좋았다.",
+"choices": [
+"Brooke was enough fortunate working with a team of designers.",
+"Brooke was fortunate enough to work with a team of designers.",
+"Brooke was so fortunate enough that she worked with a team of designers.",
+"Brooke was fortunate to enough work with a team of designers.",
+"Brooke was enough fortunately to work with a team of designers."
+],
+"answer": "②",
+"solution": "‘~할 만큼 충분히 …한’은 ‘형용사+enough+to부정사’로 나타낸다. 따라서 ‘fortunate enough to work’의 어순을 사용한 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a49e8707a8",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nIn nineteenth-century America, people tried several ways to make popcorn. Some put corn seeds on hot ashes and picked out the popped pieces. Others cooked corn with fat or butter in a pan. People also used a wire box with a long wooden handle over an open fire. Making popcorn was an exciting activity for them.",
+"choices": [
+"팝콘을 신선하게 보관하는 방법",
+"미국인들이 팝콘을 만들던 여러 방법",
+"팝콘에 버터를 넣지 않았던 이유",
+"옥수수를 재배하기에 알맞은 장소",
+"팝콘이 다른 간식보다 건강에 좋은 이유"
+],
+"answer": "②",
+"solution": "글은 뜨거운 재, 팬, 긴 손잡이가 달린 철망 상자를 이용해 팝콘을 만들던 방법들을 소개한다. 따라서 글의 주제는 미국인들이 팝콘을 만들던 여러 방법이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-dac4637512",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nIn ancient China, popping corn was connected with people's hopes for the future. People popped corn to tell fortunes for the next year. They also used it to tell fortunes about their daughters' future marriage. For these people, popping corn was a way to learn about what might happen.",
+"choices": [
+"How to Grow Corn",
+"The First Electric Popcorn Popper",
+"A Snack for Movie Lovers",
+"Popping Corn to Tell Fortunes",
+"Cooking Corn with Butter"
+],
+"answer": "④",
+"solution": "글은 고대 중국 사람들이 다가오는 해와 딸의 혼인에 관한 운세를 알아보려고 옥수수를 튀겼다는 내용이다. 따라서 점을 보기 위해 옥수수를 튀긴다는 뜻의 ④가 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-148ff69d4b",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 중심 내용으로 가장 알맞은 것은?\n\nPopcorn was enjoyed in different parts of the world. Native Americans were not the only people who enjoyed it. People in China, Sumatra, and India also made popcorn long before Columbus arrived in the West Indies. The history of popcorn includes people from many places.",
+"choices": [
+"여러 지역의 사람들이 오래전부터 팝콘을 만들어 즐겼다.",
+"콜럼버스가 중국에 팝콘을 처음 소개했다.",
+"팝콘은 아메리카 원주민만 즐기던 음식이었다.",
+"모든 지역에서 팝콘을 만드는 방법은 같았다.",
+"팝콘은 전기 기계가 발명된 뒤에야 알려졌다."
+],
+"answer": "①",
+"solution": "글은 아메리카 원주민뿐 아니라 중국, 수마트라, 인도 사람들도 오래전부터 팝콘을 만들었다고 설명한다. 특정 지역에 한정되지 않은 팝콘의 역사를 포괄하는 ①이 중심 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-db538edce4",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 가장 잘 요약한 것은?\n\nIn ancient China, people popped corn to find out about the coming year and their daughters' future marriage. During the Song Dynasty, they invented large popping machines shaped like pots. Street poppers still use machines of this kind today. Thus, the history of popcorn in China includes both a use connected with people's lives and a type of machine that has lasted.",
+"choices": [
+"중국의 팝콘 기계는 딸의 혼인에 관한 점을 보기 위해서만 사용되었다.",
+"중국에서는 송나라 이전에 팝콘을 만드는 방법이 알려지지 않았다.",
+"중국의 길거리 팝콘 장수들은 고대의 팝콘 제조 방식을 모두 버렸다.",
+"중국의 팝콘 문화는 기계보다 재배 기술을 중심으로 발전했다.",
+"중국에서는 팝콘으로 운세를 보았으며, 송나라 때 발명된 형태의 기계가 오늘날에도 쓰인다."
+],
+"answer": "⑤",
+"solution": "앞부분은 팝콘으로 운세를 보던 풍습을, 뒷부분은 송나라 때 발명된 솥 모양 기계의 지속적인 사용을 설명한다. 두 내용을 모두 포함하면서 용도를 지나치게 제한하지 않는 ⑤가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-245659cfed",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글 전체를 아우르는 제목으로 가장 알맞은 것은?\n\nA pan with fat or butter was one way Americans made popcorn in the nineteenth century. Hot ashes offered another way. A wire box with a long wooden handle became a more popular choice for cooking popcorn over a fire. Later, Charles Cretors invented a fancy popcorn popper, and various poppers appeared in theaters and parks. An electric popper for home use followed. Poppers were so much in demand that even middle school students made them in clubs.",
+"choices": [
+"School Clubs: The Beginning of Popcorn History",
+"Why Butter Changed the Taste of Popcorn",
+"From Simple Cooking Methods to Various Popcorn Poppers",
+"How Movie Theaters Invented the First Popcorn Popper",
+"Electric Poppers: The Only Popular Way to Make Popcorn"
+],
+"answer": "③",
+"solution": "글은 재나 팬을 이용한 간단한 제조 방법에서 여러 팝콘 기계와 가정용 전기 기계로 이어지는 흐름을 다룬다. 따라서 제조 방법과 기계의 변화를 함께 담은 ③이 적절하다. 학교 동아리나 영화관은 전체 흐름을 뒷받침하는 일부 사례이므로 제목의 중심으로 삼기 어렵다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6d6c71da71",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThe history of popcorn includes more than the invention of modern poppers. People in China, Sumatra, and India made popcorn before Columbus arrived in the West Indies. In ancient China, popping corn was used to tell fortunes. In nineteenth-century America, people enjoyed trying different ways of popping corn, such as using hot ashes or a pan. Later, various popcorn machines appeared. These machines are one part of a longer story involving different places, purposes, and methods.",
+"choices": [
+"팝콘의 역사는 가정용 전기 기계의 발명과 함께 시작되었다.",
+"팝콘의 역사는 기계의 발명뿐 아니라 여러 지역의 용도와 제조 방법까지 포함한다.",
+"팝콘 제조 기술은 중국에서 미국으로 전해지면서 발전했다.",
+"팝콘은 점을 보는 용도가 사라진 후에야 간식으로 인기를 얻었다.",
+"팝콘 기계의 발전을 이해하려면 발명가들의 생애를 중심으로 살펴야 한다."
+],
+"answer": "②",
+"solution": "글은 현대 팝콘 기계가 긴 팝콘 역사의 일부분임을 강조하며 지역, 용도, 제조 방법을 함께 소개한다. 따라서 이 요소들을 포괄하는 ②가 요지이다. 중국에서 미국으로 기술이 전해졌다는 경로나 점을 보는 용도가 사라졌다는 내용은 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f92e55a7ca",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 전체 내용을 요약하도록 (A)~(C)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고 형태를 바꾸지 마시오.\n\nIn nineteenth-century America, corn was popped on hot ashes, cooked with fat or butter in a pan, or heated in a wire box over a fire. The wire box was a more popular choice, but the story did not end there. Charles Cretors invented a fancy popper, and different poppers later appeared in theaters and parks. An electric popper for the home was also invented. Demand was high enough for middle school students to make poppers in clubs. The club activity was one sign of this demand, rather than the starting point of popcorn making.\n\n<요약문>\nThe passage traces changes in popcorn-making (A)________ and the development of poppers; students' club activities show the (B)________ of these machines, rather than their (C)________.\n\n<보기>\norigin / ingredients / popularity / methods / danger / flavor",
+"selfGrade": true,
+"answer": "methods, popularity, origin",
+"solution": "뜨거운 재, 팬, 철망 상자는 팝콘 제조 방법의 사례이므로 (A)에는 methods가 들어간다. 학생들의 기계 제작은 수요가 높았음을 보여 주므로 (B)는 popularity이다. 동아리 활동을 팝콘 기계의 시작으로 해석해서는 안 되므로 (C)는 origin이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ef8ea47ffb",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 글을 함께 요약하도록 (A)~(C)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고 형태를 바꾸지 마시오.\n\n(A)\nLong before Columbus arrived in the West Indies, people in China, Sumatra, and India made popcorn. Native Americans were therefore not the only people with a history of enjoying it. These examples show that popcorn's early history includes several parts of the world.\n\n(B)\nAmericans in the nineteenth century tried hot ashes, pans, and wire boxes to pop corn. Later, various poppers appeared in theaters and parks, and an electric popper was invented for home use. This account follows changes in making popcorn, but it does not explain how popcorn first traveled from one region to another.\n\n<요약문>\nTogether, the passages describe the geographical (A)________ of popcorn's early history and changes in its (B)________ methods, without identifying the (C)________ by which it moved between regions.\n\n<보기>\ncooking / route / popularity / range / selling / reason",
+"selfGrade": true,
+"answer": "range, cooking, route",
+"solution": "(A) 글은 여러 지역의 오래된 팝콘 역사를 제시하므로 첫 번째 빈칸에는 지리적 범위를 뜻하는 range가 들어간다. (B) 글은 팝콘을 만드는 방법의 변화를 설명하므로 두 번째 빈칸은 cooking이다. 두 글 모두 지역 간 전파 경로를 밝히지는 않으므로 마지막 빈칸은 route이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9975cb2710",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nAfter the robbers threw the vases down the cliff, Tree-ear found them broken. However, one piece still showed a flower and leaves made by his master. Tree-ear decided to carry this piece to Songdo. Although he was hungry and tired, he reached the palace and presented it to the royal officer.",
+"choices": [
+"The importance of finding an easy road",
+"A boy’s effort to complete his task despite trouble",
+"The danger of making large vases",
+"A royal officer’s interest in traveling",
+"A potter’s wish to keep his work secret"
+],
+"answer": "②",
+"solution": "Tree-ear는 도자기가 깨진 뒤에도 남은 조각을 가지고 송도에 도착하여 맡은 일을 이어 간다. 따라서 어려움에도 자신의 임무를 완수하려는 소년의 노력이 글의 주제이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4ef8a4c990",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWhen Tree-ear returned to Julpo, Min was happy about the royal officer’s decision. Seeing Tree-ear again made him even happier. Min told the boy to bring large logs for his own potter’s wheel. He also gave him the name Hyeong-pil, which shared a character with the name of Min’s dead son. Tree-ear began to imagine the beautiful vase he would make.",
+"choices": [
+"The Secret of the Royal Palace",
+"Why Min Stopped Making Pottery",
+"A Journey to Find a Lost Vase",
+"A New Name and a New Beginning",
+"How to Choose the Best Logs"
+],
+"answer": "④",
+"solution": "자신만의 물레와 새로운 이름을 얻게 된 Tree-ear가 앞으로 만들 도자기를 꿈꾸는 내용이다. 새로운 이름과 삶의 시작을 함께 나타내는 ④가 글 전체를 가장 잘 아우른다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d02be7f3dc",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThe vases could no longer be presented to the royal officer as complete works. Still, Tree-ear noticed that a piece of pottery held part of Min’s flower design. He took it to the palace because it could show what his master was able to do. The officer admired the inlay work on the piece and decided that Min could make pottery for the king.",
+"choices": [
+"작품의 크기가 클수록 제작자의 실력을 인정받기 쉽다.",
+"깨진 작품은 원래 모습으로 복원해야 가치를 인정받는다.",
+"작품의 일부만으로도 제작자의 뛰어난 솜씨가 드러날 수 있다.",
+"작품의 가치는 그것을 운반한 사람의 신분에 따라 달라진다.",
+"새로운 무늬를 만드는 것보다 작품을 안전하게 보관하는 일이 중요하다."
+],
+"answer": "③",
+"solution": "Tree-ear가 가져간 것은 완성된 도자기가 아니라 꽃무늬가 남아 있는 조각이었다. 그런데도 관리가 민 영감의 상감 솜씨를 인정했으므로, 작품의 일부도 제작자의 실력을 보여 줄 수 있다는 것이 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-06463ed96c",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAt the foot of the cliff, Tree-ear feared returning to Min with both vases broken. Then he saw a palm-sized piece with some of the inlaid design still on it. This gave him a reason to continue toward Songdo. He finally showed the piece to the royal officer, who praised Min’s work and offered him the chance to work for the king.",
+"choices": [
+"A Broken Piece Opens a Door",
+"A Perfect Vase Returns Home",
+"A Royal Officer Learns to Make Pottery",
+"Two Robbers Discover a Valuable Treasure",
+"A Long Journey Ends Without Hope"
+],
+"answer": "①",
+"solution": "깨진 도자기 조각은 Tree-ear가 여정을 계속하게 하고, 결국 민 영감이 왕을 위해 일할 기회를 얻는 계기가 된다. 따라서 조각이 새로운 기회를 열어 준다는 뜻의 ①이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-34fb953440",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nMin welcomed Tree-ear back with greater pleasure than he showed at the good news from Songdo. The boy reminded him of his dead son. Min then spoke of a potter’s wheel that would belong to Tree-ear and began calling him Hyeong-pil. The new name connected the boy with Min’s son, Hyeong-gu. With this name and the promise of his own wheel, Tree-ear looked forward to making a beautiful vase.",
+"choices": [
+"The steps needed to build a potter’s wheel",
+"The royal officer’s reasons for choosing Min",
+"Tree-ear’s wish to forget his life in Julpo",
+"Min’s sadness about losing his pottery",
+"Tree-ear’s acceptance as family and his hope for making pottery"
+],
+"answer": "⑤",
+"solution": "새 이름은 Tree-ear가 민 영감의 가족으로 받아들여짐을 보여 주고, 자신의 물레는 도자기를 만들 미래와 연결된다. ⑤는 가족으로의 수용과 도공으로서의 희망이라는 두 핵심 내용을 모두 포함한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ae7e8718c6",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글 전체의 내용을 가장 잘 요약한 것은?\n\nThe robbers left Tree-ear with two broken vases, but a piece bearing Min’s inlay work remained. Tree-ear carried it to Songdo, where the royal officer recognized Min’s skill and said that he could work for the king. Tree-ear brought this news back to Julpo. Min, however, was even happier to see the boy himself. He arranged for Tree-ear to have his own potter’s wheel and gave him a name linked to his dead son’s name. Tree-ear now dreamed of the vase he would make.",
+"choices": [
+"Tree-ear’s journey shows that royal praise matters more than personal relationships.",
+"Tree-ear brings Min recognition, and Min welcomes him into a family and a future in pottery.",
+"Min rewards Tree-ear mainly because the boy has proved that he is already a skilled potter.",
+"The royal officer gives Tree-ear a new name and a chance to make pottery for the king.",
+"Min’s greatest happiness comes from learning that his two vases have arrived safely."
+],
+"answer": "②",
+"solution": "앞부분은 Tree-ear가 가져간 조각을 통해 민 영감의 실력이 인정받는 과정이고, 뒷부분은 Tree-ear가 가족으로 받아들여지고 도자기를 만들 미래를 얻는 과정이다. ②만 이 두 내용을 정확히 연결한다. ③은 Tree-ear 자신의 도자기 제작 실력이 입증되었다고 잘못 설명하며, ④와 ⑤도 각각 행동의 주체와 도자기의 상태가 지문과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0ff30c7f28",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 요약한 문장의 빈칸 (A)~(C)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고 형태를 바꾸지 마시오.\n\nWhen Tree-ear found the two vases broken below the cliff, he could no longer deliver them as planned. Yet a small piece still carried part of Min’s inlaid flower and leaves. Instead of returning immediately, he continued to Songdo with it. At the palace, the officer admired the work visible on the piece and said that Min could work for the king. The piece had not become a whole vase again. What changed was that Min’s ability could now be judged through what remained.\n\n<보기>\nrestoration / determination / evidence / ownership / recognition / imitation\n\n요약: Tree-ear’s (A)________ brought the surviving (B)________ of Min’s skill to the palace, leading to royal (C)________ without the restoration of the vases.",
+"selfGrade": true,
+"answer": "determination, evidence, recognition",
+"solution": "도자기가 깨져도 여정을 계속한 행동은 determination(의지)에 해당하고, 민 영감의 솜씨를 보여 주는 조각은 evidence(증거)에 해당한다. 그 증거를 본 관리가 왕을 위해 일할 기회를 준 것은 recognition(인정)이다. 도자기의 복원 없이도 실력이 인정되었다는 관계를 파악해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ae2dc3b85d",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 중심 내용을 요약한 문장의 빈칸 (A)~(C)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고 형태를 바꾸지 마시오.\n\nThe message from Songdo pleased Min, but Tree-ear’s return pleased him more. Looking at the boy, Min was reminded of his dead son. He told Tree-ear to bring logs large enough for a potter’s wheel of his own. Min also chose the name Hyeong-pil for him, sharing a character with Hyeong-gu, his dead son’s name. As Tree-ear went up the mountain path, his thoughts turned to the beautiful vase he hoped to make. The wheel and the name pointed to different but connected parts of his new life.\n\n<보기>\nwealth / belonging / competition / opportunity / independence / hope\n\n요약: The new name gives Tree-ear a sense of (A)________ within Min’s family, while his own wheel represents an (B)________ to make pottery; together, they support his (C)________ for the future.",
+"selfGrade": true,
+"answer": "belonging, opportunity, hope",
+"solution": "죽은 아들의 이름과 한 글자를 공유하는 새 이름은 가족 안에서의 belonging(소속감)을 나타낸다. 자신의 물레는 도자기를 만들 opportunity(기회)를, 앞으로 만들 꽃병에 대한 꿈은 hope(희망)를 나타낸다. 물레를 가족에게서 벗어나는 independence(독립)의 상징으로 해석하면 글의 흐름과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8e4d3630a3",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글 전체의 주제를 요약한 문장의 빈칸 (A)~(D)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오. 각 단어는 한 번만 사용하고 형태를 바꾸지 마시오.\n\nTree-ear reached Songdo with only a fragment of the pottery he had been carrying. The robbers had destroyed the vases, but they had not destroyed every sign of Min’s skill. The royal officer saw the inlaid design on the fragment and decided that Min could work for the king. Back in Julpo, Min welcomed both the news and the boy, taking greater pleasure in the boy’s return. He spoke of Tree-ear’s own potter’s wheel and gave him a name connected to his dead son. Thus, the royal officer’s response to the fragment and Min’s response to Tree-ear brought different kinds of change: one concerned Min’s work, while the other concerned the boy’s place in Min’s life and the pottery he hoped to create.\n\n<보기>\nacceptance / damage / skill / fame / appearance / promise / obedience / competition\n\n요약: The fragment’s (A)________ does not hide Min’s (B)________, which earns royal approval; meanwhile, Tree-ear gains both (C)________ as family and the (D)________ of a future in pottery.",
+"selfGrade": true,
+"answer": "damage, skill, acceptance, promise",
+"solution": "앞부분은 도자기의 damage(손상)에도 민 영감의 skill(솜씨)이 드러나 왕실의 인정을 받는 내용이다. 뒷부분은 Tree-ear가 가족으로 acceptance(수용)를 얻고, 자신의 물레를 통해 도자기를 만들 미래의 promise(가능성)를 얻는 내용이다. 민 영감이 얻는 직업적 인정과 Tree-ear가 얻는 가족 관계 및 미래를 구별하여 글 전체를 통합해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
 }
 ]

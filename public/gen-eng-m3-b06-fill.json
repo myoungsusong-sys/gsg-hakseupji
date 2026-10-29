@@ -548,5 +548,88 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u7m2s0t0",
 "custom": true
+},
+{
+"id": "fill-17302b365e",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nJessica ate chicken soup so that she could get well.\n= Jessica ate chicken soup __________ well.",
+"choices": [
+"get",
+"to get",
+"getting",
+"got",
+"to getting"
+],
+"answer": "②",
+"solution": "‘so that 주어 can/could + 동사원형’은 목적을 나타내는 ‘to + 동사원형’으로 바꿀 수 있다. 따라서 ‘to get’이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5e75c684b2",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장을 to부정사를 이용하여 같은 의미로 바꾸어 쓰시오.\n\nSimon drinks tea so that he can enjoy madeleines.\n→ Simon drinks tea __________ __________ madeleines.",
+"selfGrade": true,
+"answer": "to enjoy",
+"solution": "두 절의 주어가 모두 Simon이므로 목적을 나타내는 to부정사로 바꿀 수 있다. ‘so that he can enjoy’는 ‘to enjoy’가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ba22b0b7e8",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 표현의 우리말 뜻으로 알맞지 않은 것은?",
+"choices": [
+"comfort food: 마음을 편안하게 해 주는 음식",
+"stressed out: 스트레스가 쌓인",
+"right out of the oven: 오븐에서 갓 나온",
+"differ around the world: 전 세계에 똑같이 존재하는",
+"be filled with a sweet smell: 달콤한 향으로 가득 차다"
+],
+"answer": "④",
+"solution": "‘differ’는 ‘다르다’라는 뜻이므로 ‘differ around the world’는 ‘세계 곳곳마다 다르다’라는 의미이다. ‘전 세계에 똑같이 존재하는’은 반대 의미이므로 ④가 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-45da2cfd9b",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장과 의미가 같은 것은?\n\nMaria eats cassava chips so that she can feel good again.",
+"choices": [
+"Maria eats cassava chips, but she does not feel good.",
+"Maria eats cassava chips to feel good again.",
+"Maria feels good before she eats cassava chips.",
+"Maria eats cassava chips because they feel stressed out.",
+"Maria wants the cassava chips to feel good again."
+],
+"answer": "②",
+"solution": "주어진 문장의 ‘so that she can feel’은 ‘다시 기분이 좋아지기 위해서’라는 목적을 나타낸다. 이를 ‘to feel’로 바르게 바꾼 것은 ②이다. ⑤에서는 to부정사의 의미상 주체가 cassava chips처럼 해석되어 의미가 달라진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-456e5d9552",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장이 같은 의미가 되도록 빈칸을 완성하시오. 각 빈칸에는 한 단어만 쓰고, 문장 전체를 답으로 쓸 것.\n\nWhenever Maria is stressed out, she eats cassava chips. Then she feels good again.\n= Maria eats cassava chips __________ __________ good again __________ __________ she is stressed out.",
+"selfGrade": true,
+"answer": "Maria eats cassava chips to feel good again every time she is stressed out.",
+"solution": "‘기분이 다시 좋아지기 위해’는 목적의 to부정사인 ‘to feel good again’으로 나타낸다. ‘whenever’는 ‘every time + 주어 + 동사’로 바꿀 수 있다. 두 표현을 문맥에 맞게 배열하면 제시된 답이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
 }
 ]

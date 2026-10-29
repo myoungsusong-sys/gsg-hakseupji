@@ -918,5 +918,133 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-09f986dc32",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA: Do you have any plans for next week?\nB: ____________________\nA: What are you going to do there?\nB: I’m going to try French food.",
+"choices": [
+"The food court is next to the toy store.",
+"I’m going to go to the French Music Festival.",
+"The sandwiches were fresh and tasty.",
+"Go up to the second floor.",
+"The festival is over."
+],
+"answer": "②",
+"solution": "빈칸 앞에서는 다음 주의 계획을 묻고, 뒤에서는 그곳에서 무엇을 할 것인지 묻는다. 따라서 프랑스 음악 축제에 갈 예정이라고 답하는 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-177128d3d5",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 각 문장에서 표시한 낱말의 뜻으로 알맞지 않은 것은?",
+"choices": [
+"The sandwiches were ⓐtasty. — ⓐ: 맛있는",
+"We will ⓑleave the fair soon. — ⓑ: 떠나다",
+"The pumpkin was ⓒhuge. — ⓒ: 아주 작은",
+"I want to ⓓenter the contest. — ⓓ: 참가하다",
+"The salmon was ⓔfresh. — ⓔ: 신선한"
+],
+"answer": "③",
+"solution": "huge는 ‘거대한, 아주 큰’이라는 뜻이다. 따라서 ‘아주 작은’으로 풀이한 ③이 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dfd248c6f1",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 질문을 길을 묻는 다른 표현으로 바꾸려고 한다. 주어진 낱말을 모두 한 번씩 사용하여 문장을 완성하시오. 문장 첫 글자는 대문자로 쓰고 물음표를 붙이시오.\n\nWhere is the toy store?\n\n[낱말]\nget / the / can / store / I / to / How / toy",
+"selfGrade": true,
+"answer": "How can I get to the toy store?",
+"solution": "목적지로 가는 길은 ‘How can I get to + 장소?’로 물을 수 있다. get to 뒤에 목적지인 the toy store를 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5d76997bfb",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 빈칸 (A), (B)에 들어갈 말을 바르게 짝지은 것은?\n\nA: Do you have any plans (A)________ this weekend?\nB: Yes. I’m going to listen to different kinds (B)________ French music at the festival.",
+"choices": [
+"(A) for — (B) of",
+"(A) for — (B) to",
+"(A) to — (B) of",
+"(A) about — (B) for",
+"(A) of — (B) about"
+],
+"answer": "①",
+"solution": "특정 기간의 계획을 물을 때는 ‘have any plans for + 기간’을 쓴다. ‘여러 종류의’는 different kinds of이므로 (A)에는 for, (B)에는 of가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7164839b4e",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장과 그 의미를 설명한 내용이 일치하는 것은?",
+"choices": [
+"Do you have any plans for Sunday? — 일요일에 세운 계획이 무엇이었는지 묻는다.",
+"How can I get to the food court? — 푸드 코트에 무엇이 있는지 묻는다.",
+"The festival is until September 23. — 축제가 9월 23일에 시작한다는 뜻이다.",
+"The toy store is next to the food court. — 장난감 가게가 푸드 코트 바로 옆에 있다는 뜻이다.",
+"I’m going to try French food. — 프랑스 음식을 이미 먹어 보았다는 뜻이다."
+],
+"answer": "④",
+"solution": "next to는 ‘~ 바로 옆에’라는 뜻이므로 ④의 설명이 일치한다. ①은 일요일의 계획 유무, ②는 가는 길을 묻고, ③은 축제의 종료 시점을 나타낸다. ⑤는 앞으로 프랑스 음식을 먹어 볼 계획을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a829fa7ceb",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 상황에 모두 알맞도록, 빈칸에 공통으로 들어갈 영어 낱말 하나를 쓰시오.\n\n(1) ‘박람회에서 샌드위치를 먹었다’라는 뜻이다.\nWe ________ sandwiches at the fair.\n\n(2) ‘즐거운 시간을 보냈다’라는 뜻이다.\nWe ________ a great time.",
+"selfGrade": true,
+"answer": "had",
+"solution": "have는 음식과 함께 쓰이면 ‘먹다’, a great time과 함께 쓰이면 ‘즐거운 시간을 보내다’라는 뜻이다. 두 문장 모두 과거의 일을 나타내므로 have의 과거형 had가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-24dd70afaa",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 조건에 맞게 한 문장으로 영작하시오.\n\n‘나는 그 축제에서 여러 종류의 프랑스 음악을 들을 예정이다.’\n\n[조건]\n• 다음 어구를 모두 한 번씩 사용하고 형태를 바꾸지 말 것.\n• 필요한 곳에 to를 정확히 두 번 추가할 것.\n• 문장 첫 글자는 대문자로 쓰고 마침표를 붙일 것.\n\n[어구]\nat the festival / French music / I / listen / different kinds of / am going",
+"selfGrade": true,
+"answer": "I am going to listen to different kinds of French music at the festival.",
+"solution": "예정은 ‘be going to + 동사원형’으로 나타내므로 am going 뒤에 to listen을 연결한다. ‘음악을 듣다’는 listen to music이므로 listen 뒤에도 to가 필요하다. different kinds of French music은 ‘여러 종류의 프랑스 음악’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-55ffbfc7ed",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 두 빈칸에 공통으로 들어갈 낱말을 기본형으로 쓰시오.\n\nAt home, I ________ vegetables. At the fair, I learned that crops get about twenty hours of sunlight a day during summer. With so much sunlight, the crops ________ bigger and sweeter.\n\n[조건]\n• 첫 번째 빈칸에서는 ‘기르다’라는 뜻일 것.\n• 두 번째 빈칸에서는 ‘자라다’라는 뜻일 것.\n• 두 빈칸에 철자가 같은 낱말을 쓸 것.",
+"selfGrade": true,
+"answer": "grow",
+"solution": "grow는 뒤에 기르는 대상이 오면 ‘~을 기르다, 재배하다’라는 뜻으로 쓰인다. 작물이 주어이고 bigger and sweeter가 뒤따르면 작물 자체가 ‘더 크고 달게 자라다’라는 뜻이 된다. 따라서 두 빈칸에는 모두 grow가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
 }
 ]

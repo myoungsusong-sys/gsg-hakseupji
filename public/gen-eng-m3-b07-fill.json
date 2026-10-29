@@ -1291,5 +1291,311 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-c0bbb25428",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nMinsu spent time volunteering at Dream Library. He read English stories aloud to children and organized books on the shelves. Moving the heavy books was tiring, but he was pleased with the neat shelves. He thought the experience was enjoyable and meaningful.",
+"choices": [
+"도서관에서는 무거운 책을 옮기면 안 된다.",
+"영어책을 잘 읽으려면 성우의 도움이 필요하다.",
+"민수는 도서관 봉사 활동에서 보람을 느꼈다.",
+"민수는 힘든 일을 피하기 위해 자주 쉬었다.",
+"도서관의 책은 주제에 따라 분류해야 한다."
+],
+"answer": "③",
+"solution": "민수는 아이들에게 책을 읽어 주고 책장을 정리하면서 힘들기도 했지만 즐거움과 보람을 느꼈다. 따라서 봉사 활동에 대한 민수의 긍정적인 소감을 나타낸 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-454ca48c9c",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nA volunteer is asked to read a book aloud in a recording room. The recording will be used for people who cannot see the printed words. Before the volunteer begins, the manager reminds him to speak at a slow speed and pronounce every word clearly.",
+"choices": [
+"How to Become a Famous Actor",
+"A Quiet Day at the Library",
+"Rules for Borrowing a Book",
+"Recording a Book for the Blind",
+"Choosing a Book for Children"
+],
+"answer": "④",
+"solution": "글은 시각 장애인을 위한 책을 녹음하는 봉사 활동을 설명한다. 천천히 또렷하게 읽으라는 주의 사항까지 포함하는 ④가 글 전체를 가장 잘 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a7686e70b4",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 목적으로 가장 알맞은 것은?\n\nPAINT A BRIGHTER NEIGHBORHOOD!\n\nThe wall in our neighborhood needs your help. Volunteers will first take down old posters and cover unwanted writing with white paint. After that, they can add their own pictures to the wall. If you enjoy painting and want to improve the neighborhood, take part in this project.",
+"choices": [
+"새 미술 재료의 장점을 홍보하려고",
+"벽화 봉사 활동의 참가자를 모집하려고",
+"낡은 벽을 철거해야 하는 이유를 설명하려고",
+"미술 동아리의 정기 전시회를 안내하려고",
+"벽에 그림을 그릴 때의 위험성을 경고하려고"
+],
+"answer": "②",
+"solution": "이 글은 낡은 벽을 정리하고 그림을 그릴 봉사자를 찾고 있다. 활동 내용과 참가 대상이 제시되어 있으므로 목적은 벽화 봉사 활동 참가자 모집이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9cd9d7f220",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 한 문장으로 요약한 것으로 가장 알맞은 것은?\n\nDuring a visit to a mural village in Yeosu, Homin noticed that wall paintings made an old neighborhood look brighter. The experience gave him an idea for his school art club. He shared the idea with the club members, and they searched online for a teen volunteer project. They applied for a neighborhood wall-painting project and were chosen to participate.",
+"choices": [
+"호민은 여수에서 가장 유명한 벽화를 찾아 사진을 찍었다.",
+"호민은 낡은 동네를 떠나 새로운 미술 동아리에 가입했다.",
+"미술 동아리 회원들은 인터넷에서 벽화 사진만 감상했다.",
+"호민은 동아리 회원들에게 여수 여행을 함께 가자고 제안했다.",
+"호민의 벽화 마을 방문은 미술 동아리의 봉사 참여로 이어졌다."
+],
+"answer": "⑤",
+"solution": "글의 중심 흐름은 벽화 마을 방문, 봉사 아이디어 제안, 프로젝트 지원과 선정이다. 이 인과 관계를 빠짐없이 압축한 ⑤가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a4fd6df30b",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nHomin was taking a picture in front of a wall painting in Yeosu when he began thinking about his own neighborhood. Because he was a member of the school art club, he believed that the club could use art in a helpful way. His fellow members welcomed the idea. Soon, they found an online volunteer opportunity, sent in an application, and received good news.",
+"choices": [
+"Why Homin Gave Up Taking Pictures",
+"The Difficult Rules of a School Art Club",
+"A Picture That Led to a Volunteer Project",
+"How to Find the Best Tourist Place in Yeosu",
+"An Art Club's Plan to Hold a Photo Exhibition"
+],
+"answer": "③",
+"solution": "사진을 찍던 경험이 호민에게 봉사 아이디어를 주었고, 그 생각은 실제 프로젝트 지원으로 발전했다. 이러한 글의 전체 전개를 함축한 제목은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fe369e0c63",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 필자가 말하고자 하는 바로 가장 알맞은 것은?\n\nAt Dream Library, Minsu read English books to young children and tried to make the stories sound lively. He was also asked to put books back on the shelves. The books were heavy, so the work was not always easy. Still, when he saw the shelves in order, he felt proud and regarded the day as a rewarding experience.",
+"choices": [
+"봉사자는 자신이 좋아하는 일만 선택해야 한다.",
+"도서관 봉사는 체력이 좋은 사람에게만 적합하다.",
+"책을 정리하는 일은 책을 읽어 주는 일보다 중요하다.",
+"봉사 활동은 힘든 점이 있어도 보람을 줄 수 있다.",
+"영어책은 어린이보다 성인을 위해 읽어 주어야 한다."
+],
+"answer": "④",
+"solution": "민수는 무거운 책 때문에 힘들었지만 정돈된 책장을 보며 자부심과 보람을 느꼈다. 글은 어려움과 긍정적인 결과를 함께 강조하므로 ④가 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-be3c7f08fb",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nWall paintings can give an old neighborhood a fresh and cheerful appearance. After seeing this in Yeosu, Homin brought a volunteer idea to his school art club. The members agreed with him and applied for a teen project they had discovered online. Later, they learned that their club could take part in the project.\n\nAfter recognizing the positive effect of wall paintings, Homin (A) that his club join a neighborhood project, and the club was finally (B) to participate.",
+"choices": [
+"denied — warned",
+"suggested — selected",
+"forgot — trained",
+"prevented — refused",
+"proved — photographed"
+],
+"answer": "②",
+"solution": "호민은 미술 동아리에 벽화 봉사 참여를 제안했고, 동아리는 프로젝트 참가 대상으로 선정되었다. 따라서 (A)에는 suggested, (B)에는 selected가 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3d82933ba0",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nTony uses his voice to record a book for people who cannot see. At a library, Minsu reads English stories to children and helps arrange heavy books. Homin, a member of his school art club, suggests applying for a project that will improve a neighborhood with wall paintings. Their tasks are quite different, but each person uses what he can do to help others.",
+"choices": [
+"One Perfect Skill Every Volunteer Must Have",
+"Different Talents, One Purpose: Helping Others",
+"Why Art Is More Valuable Than Reading",
+"Three Ways to Become a School Club Leader",
+"The Problems Caused by Difficult Volunteer Work"
+],
+"answer": "②",
+"solution": "세 인물은 목소리, 도서관 활동, 미술이라는 서로 다른 방식으로 다른 사람을 돕는다. 각 활동의 차이보다 공통된 봉사 목적을 포괄하는 ②가 가장 적절한 제목이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cfea2862e8",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 ‘재능’과 ‘자원봉사’를 모두 사용하여 우리말 한 문장으로 쓰시오.\n\nOne volunteer reads slowly and clearly while recording a book for the blind. Another reads stories to children and organizes books at a library. Homin and his art club seek an opportunity to make their neighborhood brighter through wall paintings. These activities do not require the same ability, but all of them begin with a willingness to use one's ability for other people.",
+"selfGrade": true,
+"answer": "자원봉사는 각자의 재능을 활용하여 다양한 방식으로 다른 사람과 지역사회를 돕는 활동이다.",
+"solution": "글은 서로 다른 능력이 책 녹음, 도서관 활동, 벽화 프로젝트 등의 봉사로 이어질 수 있음을 보여 준다. 따라서 ‘재능의 활용’과 ‘다양한 방식의 도움’을 중심으로 요지를 작성해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3413aa05eb",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "Favio hoped to give us music lessons. However, our town had very few instruments and could not buy new ones. He suggested making instruments from objects found at the landfill. Nicholas brought this idea to life by changing oil drums into violins and water pipes into flutes.\n\n위 글의 주제로 가장 적절한 것은?",
+"choices": [
+"새 악기를 올바르게 관리하는 방법",
+"연주하기 쉬운 악기의 공통적인 특징",
+"버려진 물건을 활용한 악기 부족 문제의 해결",
+"음악가와 환경 교육자가 하는 일의 차이",
+"공연에 알맞은 곡을 고를 때의 주의점"
+],
+"answer": "③",
+"solution": "마을에는 악기가 부족했고 새 악기를 살 수도 없었다. Favio와 Nicholas는 매립지의 물건으로 악기를 만들어 이 문제를 해결했으므로 ③이 글의 주제이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ee3f522fd7",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "At first, we could neither play our instruments nor read music. Favio continued to teach us patiently, and little by little we learned to make sounds. Our first piece was short and did not sound right, but it was more meaningful to us than any other music. It filled our hearts with hope, so we began practicing together every day.\n\n위 글의 요지로 가장 적절한 것은?",
+"choices": [
+"정확한 연주를 위해서는 처음부터 어려운 곡을 선택해야 한다.",
+"서툰 첫 연주도 희망과 꾸준한 연습의 계기가 될 수 있다.",
+"악보를 읽는 능력은 악기를 연주하는 능력보다 중요하다.",
+"여럿이 연주하려면 개인 연습을 먼저 끝내야 한다.",
+"음악의 아름다움은 연주곡의 길이에 따라 결정된다."
+],
+"answer": "②",
+"solution": "우리의 첫 연주는 짧고 음정도 맞지 않았지만 새로운 희망을 주었다. 그 희망이 매일 연습하는 계기가 되었으므로 ②가 글의 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-86f09b6f78",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "Favio was both a musician and an environmental educator. He wanted to teach us music, but there were not enough instruments in our town, and we could not afford to purchase more. He proposed using materials from the landfill. Nicholas made the proposal possible by producing violins from oil drums and flutes from water pipes.\n\n다음 요약문의 빈칸 (A), (B)에 들어갈 말을 각각 본문에서 찾아 쓰시오.\n\nSince the town could not purchase more (A)__________, Favio and Nicholas used landfill materials to make (B)__________.",
+"selfGrade": true,
+"answer": "instruments, violins and flutes",
+"solution": "(A)에는 마을이 더 구입할 수 없었던 대상인 instruments가 들어간다. Nicholas가 기름통과 수도관으로 만든 것은 각각 violins와 flutes이므로 (B)는 violins and flutes이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-26a2f3d133",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "We knew nothing about playing instruments or reading notes when Favio began teaching us. After patient, step-by-step lessons, we finally played our first piece. Its sounds were often wrong, yet we regarded it as beautiful because it awakened hope in us. We then met for practice each day, and later Favio announced that we would perform in a real concert.\n\n위 글의 제목으로 가장 적절한 것은?",
+"choices": [
+"Why Reading Music Must Come Before Playing",
+"An Out-of-Tune Beginning That Led Us to Hope",
+"The Difficult Choice of a Concert Program",
+"How to Correct Every Mistake in One Lesson",
+"A Beautiful Performance Without Any Practice"
+],
+"answer": "②",
+"solution": "글은 서툴고 음정이 맞지 않았던 첫 연주가 희망과 매일의 연습, 실제 공연으로 이어진 과정을 보여 준다. 이러한 변화의 출발점과 결과를 모두 담은 제목은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4d5ed2498f",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Favio wished to teach us music, but the small number of instruments made this difficult. Buying additional ones was impossible for us. Favio therefore thought of creating instruments with objects from the landfill, and Nicholas had the talent needed to carry out that plan.\n\n다음은 위 글의 요약이다. 빈칸 (A), (B)에 들어갈 내용으로 가장 적절한 것은?\n\nFavio's idea began with (A) and was realized through (B).",
+"choices": [
+"(A) the lack of instruments — (B) Nicholas's ability to make them from landfill objects",
+"(A) the difficulty of reading music — (B) Favio's daily concert practice",
+"(A) the high price of oil drums — (B) Nicholas's environmental lessons",
+"(A) the members' refusal to learn — (B) the purchase of new instruments",
+"(A) the failure of a concert — (B) Favio's ability to repair water pipes"
+],
+"answer": "①",
+"solution": "Favio의 생각은 악기가 부족하고 새 악기를 살 수 없다는 문제에서 출발했다. Nicholas가 매립지의 물건으로 악기를 만들 수 있었기 때문에 그 생각이 실현되었으므로 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6918224c30",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "Our town did not have enough musical instruments, and purchasing new ones was beyond our means. Favio responded by suggesting that useful instruments could be created from objects at the landfill. Nicholas then turned the suggestion into reality.\n\n위 글의 요지를 다음 조건에 맞게 영어 한 문장으로 쓰시오.\n\n<조건>\n- creativity, lack, instruments를 모두 사용할 것\n- 12~18개의 단어로 쓸 것",
+"selfGrade": true,
+"answer": "Creativity overcame the lack of instruments by turning objects from the landfill into musical instruments.",
+"solution": "글의 핵심은 창의적인 생각으로 악기 부족 문제를 해결했다는 것이다. 제시된 세 단어를 모두 사용했으며 총 15단어이므로 조건을 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2f2b332e64",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Our first piece lasted only a short time, and many of its sounds were not correct. Nevertheless, it was deeply meaningful to us because it planted new hope in our hearts. After that experience, we came together for practice each day.\n\n위 글을 다음 조건에 맞게 영어 한 문장으로 요약하시오.\n\n<조건>\n- Although로 시작할 것\n- out of tune과 led를 사용할 것\n- 18~22개의 단어로 쓸 것",
+"selfGrade": true,
+"answer": "Although their first piece was short and out of tune, it gave them new hope and led them to practice every day.",
+"solution": "첫 연주의 부족함과 그 연주가 가져온 긍정적인 변화를 양보 관계로 연결해야 한다. 제시된 표현을 모두 사용했으며 총 22단어로 조건에 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-92e9bed8d7",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "With no money for additional instruments, we used instruments made from objects collected at the landfill. Favio patiently helped us learn how to play and read music. Our early sounds were poor, but hope encouraged us to practice daily. At last, we stood onstage for a real concert, overwhelmed with happiness as the audience applauded.\n\n위 글의 제목을 다음 조건에 맞게 영어로 쓰시오.\n\n<조건>\n- From A to B의 형식을 사용할 것\n- landfill objects와 real concert의 의미를 모두 포함할 것\n- 8~12개의 단어로 쓸 것",
+"selfGrade": true,
+"answer": "From Landfill Objects to the Joy of a Real Concert",
+"solution": "글은 매립지의 물건으로 만든 악기에서 출발하여 실제 공연의 기쁨에 이르는 과정을 다룬다. 답은 From A to B 형식이며 두 핵심 내용을 포함하고 총 10단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e012687775",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Few instruments were available, and buying new ones was not an option. Favio's creative suggestion and Nicholas's skill allowed discarded objects to become instruments. Although we initially knew neither how to play nor how to read music, patient teaching helped us improve. Our imperfect first piece gave us hope, and continued practice eventually took us to a real concert.\n\n위 글의 주제를 한국어 한 문장으로 쓰시오. 단, ‘악기 부족의 해결 방법’, ‘꾸준한 연습’, ‘희망과 공연’의 세 내용을 모두 포함하시오.",
+"selfGrade": true,
+"answer": "버려진 물건으로 악기 부족을 해결한 우리는 꾸준히 연습하며 희망을 얻었고 마침내 실제 공연을 하게 되었다.",
+"solution": "글의 전개는 버려진 물건을 이용한 악기 제작, 인내심 있는 학습과 꾸준한 연습, 희망과 실제 공연으로 이어진다. 답은 이 세 단계의 인과 관계를 한 문장에 모두 포함한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
 }
 ]

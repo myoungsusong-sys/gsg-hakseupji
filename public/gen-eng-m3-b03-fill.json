@@ -3011,5 +3011,622 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-442cc31c5d",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 괄호 (A), (B), (C)에서 문맥상 알맞은 말을 바르게 연결한 것은?\n\nAmy: You look (A) [nervous / relaxed] before the dance practice.\nMinsu: Yes. I keep making mistakes with the rhythm.\nAmy: Take a deep breath. You need to feel more (B) [worried / relaxed].\nMinsu: Thanks. I really (C) [appreciate / regret] your help.\n\n       (A)        (B)         (C)",
+"choices": [
+"nervous — worried — appreciate",
+"nervous — relaxed — appreciate",
+"relaxed — worried — regret",
+"relaxed — relaxed — regret",
+"nervous — worried — regret"
+],
+"answer": "②",
+"solution": "민수는 실수를 걱정하고 있으므로 (A)에는 nervous가 알맞다. Amy는 긴장을 풀라고 조언하므로 (B)는 relaxed이고, 도움에 고마움을 나타내므로 (C)는 appreciate이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e7aca51a85",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 두 단어의 관계가 나머지와 다른 것은?",
+"choices": [
+"thoughtful : considerate",
+"hurt : wound",
+"nervous : anxious",
+"important : necessary",
+"include : exclude"
+],
+"answer": "⑤",
+"solution": "①~④는 문맥에 따라 의미가 서로 비슷한 단어들의 관계이다. include는 ‘포함하다’, exclude는 ‘제외하다’라는 뜻이므로 서로 반대되는 관계이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4c7805dcac",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이와 예문에 공통으로 알맞은 단어는?\n\n• in a way that was not planned or intended\n• I __________ hurt my hand while practicing.",
+"choices": [
+"carefully",
+"necessarily",
+"accidentally",
+"intentionally",
+"thoughtfully"
+],
+"answer": "③",
+"solution": "‘계획하거나 의도하지 않은 방식으로’라는 영영풀이는 accidentally를 뜻한다. 손을 다친 것이 의도하지 않은 일이므로 예문에도 accidentally가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0d90bf9281",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A)~(D)에 들어갈 말로 가장 알맞은 것은?\n\nMinsu was (A) __________ about the dance contest, so Amy gave him some advice. She told him that it was (B) __________ to stay calm and get into the rhythm. Her advice was (C) __________, and Minsu said that he truly (D) __________ it.\n\n       (A)        (B)          (C)          (D)",
+"choices": [
+"nervous — necessary — helpful — appreciated",
+"relaxed — difficult — worried — regretted",
+"nervous — unnecessary — helpful — refused",
+"worried — important — difficult — excluded",
+"relaxed — necessary — nervous — appreciated"
+],
+"answer": "①",
+"solution": "대회를 앞두고 조언을 받는 상황이므로 (A)는 nervous가 자연스럽다. 침착함은 necessary하고 조언은 helpful하며, 그 조언에 감사했다는 의미의 appreciated가 이어져야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8c7f88f1d7",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>의 단어 관계와 같은 것은?\n\n<보기> accidentally : intentionally",
+"choices": [
+"thoughtful : considerate",
+"hurt : wound",
+"nervous : relaxed",
+"borrow : lend",
+"important : necessary"
+],
+"answer": "③",
+"solution": "accidentally와 intentionally는 ‘우연히’와 ‘의도적으로’라는 반의어 관계이다. nervous와 relaxed도 ‘긴장한’과 ‘편안한’이라는 반의어 관계이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ae06a1e04b",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 단어의 영영풀이로 적절하지 않은 것은?\n\nAmy's advice was very thoughtful and helpful. It included a necessary tip: Minsu should stay relaxed before the contest.",
+"choices": [
+"thoughtful: kind and showing that you care about others",
+"helpful: useful and making something easier",
+"include: to have something as a part of a whole",
+"necessary: needed for a particular purpose",
+"relaxed: anxious or afraid about something"
+],
+"answer": "⑤",
+"solution": "relaxed는 ‘편안하고 걱정하지 않는’이라는 의미이다. ‘무언가를 걱정하거나 두려워하는’이라는 ⑤의 풀이는 nervous에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ef796f1488",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 영영풀이와 문맥을 모두 만족하는 단어를 각각 쓰시오.\n\n(A) feeling worried or afraid about something\n(B) calm and not worried\n\nBefore the contest, Minsu was (A) __________, but Amy's advice helped him become (B) __________.\n\n※ 두 단어를 지문에 알맞은 형태로 쓰되, ‘(A) - (B)’의 형식으로 답할 것.",
+"selfGrade": true,
+"answer": "nervous - relaxed",
+"solution": "(A)의 영영풀이는 nervous, (B)의 영영풀이는 relaxed를 뜻한다. 대회 전에는 긴장했지만 조언을 받은 뒤 편안해졌다는 대조적인 흐름에도 두 단어가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c0f8321549",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 밑줄 친 단어와 의미상 어울리지 않는 한 단어를 찾아, 문맥에 알맞은 단어로 고쳐 쓰시오.\n\nAmy was considerate and gave Minsu useful advice, but Minsu said, “I really regret your thoughtful help.”\n\n※ 고쳐 쓴 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "appreciate",
+"solution": "considerate, useful, thoughtful은 모두 Amy의 도움을 긍정적으로 설명한다. 따라서 도움을 ‘후회한다’는 regret은 문맥에 맞지 않으며, ‘고맙게 여기다’라는 뜻의 appreciate로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a568254409",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 빈칸에 공통으로 들어갈 수 있는 단어를 쓰시오.\n\n• The contest rules __________ every dancer in the final group.\n• This list does not __________ people who refused to join.\n\n※ 두 문장에 같은 형태로 들어갈 한 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "include",
+"solution": "첫 문장은 대회 규칙의 대상에 모든 무용수가 ‘포함된다’는 의미이다. 두 번째 문장은 참여를 거절한 사람들을 명단에 ‘포함하지 않는다’는 의미이므로 두 빈칸 모두 include가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-839af5dc12",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 알맞은 문장을 모두 고른 것은?\n\nⓐ The more carefully you plan, the fewer mistakes you will make.\nⓑ The higher the mountain is, the coldest the air becomes.\nⓒ The faster he ran, the sooner he reached the finish line.\nⓓ The more cheaper the ticket is, the more people will buy it.\nⓔ The farther we traveled from downtown, the quieter it became.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓔ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "‘the+비교급, the+비교급’의 형태를 올바르게 사용한 것은 ⓐ, ⓒ, ⓔ이다. ⓑ의 coldest는 colder로, ⓓ의 more cheaper는 cheaper로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-79a4c20d6c",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n• The more exercise you get, (A)[the healthier / the healthiest] you become.\n• The more she practiced, the more confidently she (B)[speaks / spoke].\n• The less sunlight the plant received, (C)[the weak / the weaker] it became.",
+"choices": [
+"the healthier ― spoke ― the weaker",
+"the healthier ― speaks ― the weaker",
+"the healthier ― spoke ― the weak",
+"the healthiest ― spoke ― the weaker",
+"the healthiest ― speaks ― the weak"
+],
+"answer": "①",
+"solution": "비례 비교 구문에서는 양쪽에 ‘the+비교급’을 사용하므로 (A)는 the healthier, (C)는 the weaker가 알맞다. 두 번째 문장은 practiced가 과거형이므로 (B)에도 spoke를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f84dee1ab8",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 알맞은 문장을 모두 고른 것은?\n\nⓐ Spring is the season when flowers begin to bloom.\nⓑ This is the library where I studied at last night.\nⓒ I remember the day on which we first met.\nⓓ Can you tell me the reason why the door is closed?\nⓔ Please explain the way how this machine works.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓔ",
+"ⓐ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ의 when, ⓒ의 on which, ⓓ의 why는 각각 선행사와 알맞게 연결된다. ⓑ에서는 where와 at을 함께 쓸 수 없고, ⓔ에서는 the way와 how를 함께 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca553c0692",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞지 않은 문장은?",
+"choices": [
+"The longer we waited, the more impatient we became.",
+"This is the room in which the meeting was held.",
+"The less sugar you add, the healthier the drink becomes.",
+"I remember the day where we moved into this house.",
+"That is the reason why the window was left open."
+],
+"answer": "④",
+"solution": "④의 선행사 the day는 시간을 나타내므로 관계부사 when이나 ‘on which’로 이어야 한다. where는 장소를 나타내는 선행사와 함께 쓰므로 이 문장에는 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8f1a2de92c",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 의미를 유지하면서 ‘the+비교급, the+비교급’ 구문으로 바르게 바꾼 것은?\n\nAs the price of the notebook falls, more students buy it.",
+"choices": [
+"The cheaper notebook becomes, more students buy it.",
+"The more cheap the notebook becomes, the more students buy it.",
+"The cheaper the notebook becomes, the more students buy it.",
+"The cheaper the notebook becomes, the most students buy it.",
+"The cheapest the notebook becomes, the more students buy it."
+],
+"answer": "③",
+"solution": "‘공책이 더 저렴해질수록 더 많은 학생이 그것을 산다’는 의미이므로 양쪽 모두 ‘the+비교급’의 형태가 필요하다. cheap의 비교급은 cheaper이고, many의 비교급은 more이므로 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-62f58a3059",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞은 문장을 모두 고른 것은?\n\nⓐ The more carefully you listen, the easier the directions are to follow.\nⓑ The park where we met in was crowded.\nⓒ I like the way in which she explains ideas.\nⓓ The later it gets, the quieter the streets become.\nⓔ This is the reason which I called you.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ와 ⓓ는 ‘the+비교급, the+비교급’ 구문이고, ⓒ의 ‘the way in which’도 올바른 표현이다. ⓑ에서는 where와 in이 중복되며, ⓔ의 which는 이유를 나타내는 why 또는 for which로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ba0f1ae705",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 어법에 맞게 고쳐 문장 전체를 쓰시오. 단, 각 문장에서 불필요한 단어 하나만 삭제할 것.\n\n(1) The farther the station is, the more earlier we have to leave.\n(2) This is the library where the students studied in.",
+"selfGrade": true,
+"answer": "(1) The farther the station is, the earlier we have to leave. (2) This is the library where the students studied.",
+"solution": "(1)에서는 비교급 earlier 앞에 more를 중복해서 쓸 수 없으므로 more를 삭제한다. (2)에서는 관계부사 where가 ‘in the library’의 의미를 포함하므로 문장 끝의 in을 삭제해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e4b624447d",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 단어를 모두 한 번씩 사용하여 어법상 올바른 문장을 완성하시오. 문장은 This로 시작하고, 필요한 문장 부호는 추가할 수 있다.\n\nThis / is / the / gym / where / we / exercise / and / the / more / regularly / we / exercise / the / healthier / we / become",
+"selfGrade": true,
+"answer": "This is the gym where we exercise, and the more regularly we exercise, the healthier we become.",
+"solution": "장소를 나타내는 선행사 the gym 뒤에는 관계부사 where가 이어진다. 뒤 절은 ‘더 규칙적으로 운동할수록 더 건강해진다’는 뜻이므로 ‘the more regularly, the healthier’의 비례 비교 구문으로 배열해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-24e06eac37",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장을 판단하여 ‘어법상 옳은 문장의 기호 / ⓒ에서 바꿀 말 / ⓓ에서 바꿀 말 / ⓔ에서 삭제할 말’의 순서로 쓰시오.\n\nⓐ The less time you have, the more carefully you must plan.\nⓑ This is the café where we talked about the project.\nⓒ The harder the question is, the more difficultly it is to answer.\nⓓ I cannot remember the day where I first saw the picture.\nⓔ She showed me the way how she organized her notes.",
+"selfGrade": true,
+"answer": "ⓐ, ⓑ / difficult / when / how",
+"solution": "ⓐ와 ⓑ는 어법상 옳다. ⓒ에서는 be동사의 보어가 필요하므로 부사 difficultly를 형용사 difficult로 고치고, ⓓ에서는 시간을 나타내는 the day에 맞게 where를 when으로 고쳐야 한다. ⓔ에서는 the way와 how를 함께 쓸 수 없으므로 how를 삭제한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-36dc293f98",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"The pop art is worth to see.",
+"Warhol’s works are worth seeing.",
+"The sculptures are worth see again.",
+"This work worth looking at.",
+"The soup cans were worth to paint."
+],
+"answer": "②",
+"solution": "‘~할 가치가 있다’는 「be worth + 동명사(-ing)」로 표현한다. 주어 Warhol’s works가 복수이므로 are worth seeing이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5384c2f0a4",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nOldenburg’s soft sculptures ________ of cloth, plastic, and paper.",
+"choices": [
+"made",
+"was made",
+"were made",
+"were making",
+"is made"
+],
+"answer": "③",
+"solution": "조각품들이 여러 재료로 ‘만들어진’ 것이므로 수동태가 필요하다. 주어 sculptures가 복수이고 과거의 일이므로 were made가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5d0de6d2b6",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장 중 어법상 어색한 것끼리 바르게 짝지어진 것은?\n\nⓐ Andy Warhol is called the King of Pop Art.\nⓑ One of his famous work is made up of pictures of Marilyn Monroe.\nⓒ Another work shows cans of soup.\nⓓ Oldenburg’s soft sculptures were made of various soft materials.\nⓔ Oldenburg wanted everyone enjoyed his art.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓐ, ⓓ",
+"ⓑ, ⓓ",
+"ⓑ, ⓔ",
+"ⓒ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓑ의 「one of + 복수 명사」에 따라 work를 works로 고쳐야 한다. ⓔ의 want는 「want + 목적어 + to부정사」 구조이므로 enjoyed를 to enjoy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5bb1adba6b",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "괄호 (A)~(C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAndy Warhol (A)[called / is called] the King of Pop Art. One of his works (B)[shows / show] cans of soup. Many copies of his works (C)[were made / was made] by him.",
+"choices": [
+"called - shows - were made",
+"called - show - was made",
+"is called - shows - were made",
+"is called - show - were made",
+"is called - shows - was made"
+],
+"answer": "③",
+"solution": "워홀은 ‘불리는’ 사람이므로 (A)는 수동태 is called가 알맞다. 「one of + 복수 명사」가 주어일 때 중심어 one은 단수이므로 shows를 쓰고, 주어 copies는 복수이므로 were made를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d916486ab9",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 부분을 포함한 문장을 모두 고르면?\n\nⓐ Andy Warhol is called the King of Pop Art. ⓑ One of his famous works, which are made up of pictures of Marilyn Monroe, is well known. ⓒ He made many copies of his works. ⓓ Oldenburg created soft sculptures that was made of cloth and other soft materials. ⓔ Wanting everyone to enjoy his art, he set up his works in outdoor places.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓑ의 비제한적 관계절은 단수인 One of his famous works 전체를 부연하므로 are를 is로 고쳐야 한다. ⓓ에서는 관계대명사 that의 선행사가 복수인 soft sculptures이므로 was made가 아니라 were made가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-469ba8c942",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞은 문장의 개수는?\n\nⓐ Warhol is called the King of Pop Art.\nⓑ One of his works are made up of repeated pictures.\nⓒ Oldenburg’s soft sculptures were made of cloth, plastic, and paper.\nⓓ After creating soft sculptures, huge works were made by Oldenburg.\nⓔ Oldenburg ran a store inside his studio to sell his works.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "어법상 알맞은 문장은 ⓐ, ⓒ, ⓔ로 모두 3개이다. ⓑ는 are를 is로 고쳐야 하며, ⓓ는 분사구문의 의미상 주어가 Oldenburg가 되도록 주절의 주어를 Oldenburg로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9e6225e119",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 부분을 포함한 문장을 모두 고르면?\n\nⓐ Pop artists believed that art should be easy and that anyone could create and enjoy it. ⓑ Andy Warhol, who found his subjects in magazines and stores, is called the King of Pop Art. ⓒ One of famous works by Warhol is made up of pictures of Marilyn Monroe. ⓓ The soft sculptures Oldenburg created were made of various soft materials. ⓔ Wanting everyone to enjoy his art, his works were set up in outdoor places by him.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓓ",
+"ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓒ의 famous works 앞에는 소유격 his가 필요하므로 One of his famous works가 되어야 한다. ⓔ의 분사구문에서 원하는 주체는 his works가 아니라 Oldenburg이므로 주절의 주어를 Oldenburg로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-accff30391",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 모든 어법상 오류를 고쳐 문장 전체를 쓰시오. 단, 문장을 Wanting으로 시작하고 set up을 능동태로 사용할 것.\n\nWanting everyone to enjoyed his art, huge sculptures of daily items was set up in outdoor places by Oldenburg.",
+"selfGrade": true,
+"answer": "Wanting everyone to enjoy his art, Oldenburg set up huge sculptures of daily items in outdoor places.",
+"solution": "「want + 목적어 + to부정사」 구조이므로 enjoyed를 enjoy로 고쳐야 한다. 분사구문 Wanting의 의미상 주어가 Oldenburg가 되도록 주절을 Oldenburg set up의 능동태로 구성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bb875b05f6",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 오류 두 곳을 고쳐 문장 전체를 쓰시오.\n\nOne of Warhol’s famous works are worth to see because it is made up of pictures of Marilyn Monroe.",
+"selfGrade": true,
+"answer": "One of Warhol’s famous works is worth seeing because it is made up of pictures of Marilyn Monroe.",
+"solution": "「one of + 복수 명사」의 중심어는 one이므로 동사는 단수형 is를 써야 한다. 또한 worth 뒤에는 to부정사가 아니라 동명사가 오므로 to see를 seeing으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8b5679a823",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nKim Koo devoted much of his life to Korea’s independence from Japanese rule. During the 1900s, he built schools to help young people receive an education. After the independence movement spread across Korea in 1919, he went to Shanghai. He joined the Government of the Republic of Korea there and eventually became its president.",
+"choices": [
+"The development of schools in Shanghai",
+"Kim Koo’s life and work for Korea",
+"The history of Japanese education",
+"Popular places to visit in China",
+"The daily lives of Korean students"
+],
+"answer": "②",
+"solution": "글은 김구의 교육 활동, 상하이 이동, 정부 참여를 중심으로 그의 삶을 소개한다. 따라서 글 전체를 포괄하는 주제는 ‘김구의 삶과 한국을 위한 활동’이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c14a0eb5c9",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용을 요약한 문장의 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nHelping his country was an important part of Kim Koo’s life. He worked for Korea’s freedom from Japanese rule. He also supported the education of young people by establishing schools in the 1900s. In 1919, he moved to Shanghai and became a member of the Government of the Republic of Korea. He later served as its president.\n\nKim Koo worked for Korea’s (A) and helped young people through (B).",
+"choices": [
+"education — travel",
+"culture — trade",
+"freedom — sports",
+"independence — education",
+"government — tourism"
+],
+"answer": "④",
+"solution": "김구는 한국의 독립을 위해 활동했으며 학교를 세워 청년들의 교육을 도왔다. 따라서 (A)에는 independence, (B)에는 education이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-177ae2e9ae",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nA visit to the Kim Koo Museum in Hyochang Park gave our history club a chance to learn about Kim Koo. A white statue stood at the museum entrance. Kim Koo established schools for young people in the 1900s and devoted much of his life to Korean independence. In 1919, he went to Shanghai, where he joined the Government of the Republic of Korea. He later became its president.",
+"choices": [
+"How to Plan a History Club Trip",
+"White Statues in Korean Parks",
+"Meeting a National Hero Through a Museum Visit",
+"Why Shanghai Became a Popular Travel Destination",
+"The Changes in Korean School Buildings"
+],
+"answer": "③",
+"solution": "박물관 방문은 김구의 삶과 활동을 소개하는 계기가 된다. 따라서 방문 경험과 중심 인물인 김구를 함께 드러내는 ③이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-77b16fc837",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nSchools and a government may seem like very different subjects, but both appear in the story of Kim Koo’s life. In the 1900s, he established schools to educate young people. In 1919, after the independence movement spread throughout Korea, he moved to Shanghai. There, he joined the Government of the Republic of Korea and later became its president. These are important parts of the life of a national hero who devoted himself to Korean independence.",
+"choices": [
+"Education: The Only Way Kim Koo Served Korea",
+"Shanghai: Where Korea’s Independence Was Completed",
+"A President’s Plan to Build Schools in Shanghai",
+"The Independence Movement That Began with One School",
+"Kim Koo’s Service to Korea Through Education and Government"
+],
+"answer": "⑤",
+"solution": "글은 학교 설립과 정부 활동을 함께 제시하며 한국을 위해 헌신한 김구의 삶을 설명한다. ①은 활동을 교육에만 한정하고, ②~④는 글에 없는 사실이나 인과 관계를 포함하므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-85e9b10902",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nKim Koo’s life included work in both education and government. He helped young people learn by building schools during the 1900s. When the independence movement spread across Korea in 1919, he moved to Shanghai. He joined the Government of the Republic of Korea there and eventually became its president. His lifelong efforts for Korea’s independence made him a great national hero.\n\nKim Koo, remembered for his efforts toward Korea’s (A), contributed to young people’s education and later took a leading role in its (B) in Shanghai.",
+"choices": [
+"independence — government",
+"education — independence movement",
+"independence — school system",
+"government — education",
+"education — government"
+],
+"answer": "①",
+"solution": "김구가 평생 힘쓴 목표는 한국의 독립이며, 상하이에서 나중에 지도자의 역할을 맡은 곳은 대한민국 정부이다. 학교를 세운 활동은 교육에 대한 기여로 별도로 요약되어 있으므로 (B)에 school system을 넣을 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9132c303ed",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nAt the entrance to the Kim Koo Museum, our history club saw a white statue of Kim Koo. The visit was an opportunity to look beyond the statue and learn about his life. He helped educate young people by establishing schools and spent much of his life working for Korea’s independence. After moving to Shanghai in 1919, he joined the Government of the Republic of Korea and later became its president.",
+"choices": [
+"역사를 공부할 때에는 인물의 활동보다 동상의 모습을 먼저 살펴야 한다.",
+"김구의 가장 중요한 업적은 상하이에 청년들을 위한 학교를 세운 것이다.",
+"역사 동아리의 주된 목적은 공원과 박물관의 시설을 비교하는 것이다.",
+"박물관 방문을 통해 교육과 독립을 위해 힘쓴 김구의 삶을 이해할 수 있다.",
+"김구의 정부 활동은 그가 한국의 독립보다 개인의 성공을 중시했음을 보여 준다."
+],
+"answer": "④",
+"solution": "동상을 본 경험에서 출발하지만 글의 중심은 김구의 교육 활동과 독립을 위한 헌신이다. 따라서 박물관 방문을 통해 그의 삶을 이해한다는 ④가 글의 요지를 가장 잘 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-378cd85f0a",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nTo describe Kim Koo only as a president would leave out an important part of his life. Before taking that position, he had helped young people receive an education by establishing schools in the 1900s. He moved to Shanghai in 1919, joined the Government of the Republic of Korea, and later became its president. His government service belongs in a larger account of a national hero who devoted much of his life to Korea’s independence.",
+"choices": [
+"The Presidency as the Explanation for All of Kim Koo’s Work",
+"School Building as Kim Koo’s Most Important Achievement",
+"Beyond a Presidential Title: Kim Koo’s Work for His Country",
+"From Education to Government: Why Kim Koo Changed His Goal",
+"Before Shanghai: The Complete Story of Kim Koo’s Service"
+],
+"answer": "③",
+"solution": "글은 대통령이라는 직책만으로 김구의 삶을 설명하면 교육 활동과 독립을 위한 헌신을 충분히 담을 수 없다고 말한다. 따라서 직책을 넘어 그의 활동 전반을 살펴보는 ③이 적절하다. ④는 활동의 변화가 목표의 변화를 뜻한다고 해석하지만, 글에는 그러한 내용이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-de4af76dcc",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 핵심 내용을 가장 적절하게 요약한 것은?\n\nKim Koo’s move to Shanghai in 1919 was an important event, but his work for Korea cannot be understood through that event alone. In the 1900s, he had already helped educate young people by founding schools. After reaching Shanghai, he joined the Government of the Republic of Korea and later served as its president. His educational work and government service are both parts of the life of a man who devoted himself to Korea’s independence.",
+"choices": [
+"Kim Koo’s move to Shanghai marked the beginning of all his work for Korea, including his efforts to educate young people.",
+"Kim Koo’s educational work explains why he moved to Shanghai and became president of the Government of the Republic of Korea.",
+"Kim Koo’s government service deserves greater attention than his educational work when considering his contribution to Korea.",
+"Kim Koo’s career shows that building schools was a necessary step for anyone who wished to lead the Korean government.",
+"Kim Koo’s school building and later government service should be considered together when understanding his life of dedication to Korea."
+],
+"answer": "⑤",
+"solution": "글은 상하이로 이동한 사건 하나에만 주목하지 말고, 그 이전의 교육 활동과 이후의 정부 활동을 함께 이해해야 한다고 강조한다. ⑤가 이러한 중심 내용을 모두 담는다. 나머지 선지는 활동의 시작 시점, 인과 관계, 중요도의 비교 또는 일반적인 필수 조건을 글의 근거 없이 제시한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
 }
 ]
