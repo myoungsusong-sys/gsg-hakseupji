@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import type { Problem } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
@@ -74,6 +74,13 @@ export default function StudentChallenge() {
     setSubj(s); setLevel(lv)
     if (best) setCourseId(best.id)
   }
+  // 🏫 시험 일정 화면 [국어 문제 풀기] → /student/challenge?subject=국어 (2026-10-29 명수쌤 «단추 넣어» — 범위를 넣고도 풀 곳을 못 찾았다)
+  //    들어오자마자 그 과목·내 학교급의 «우리 학교 · 내 학년» 과정을 연다
+  const [params] = useSearchParams()
+  useEffect(() => {
+    const s = params.get('subject')
+    if (s && (SUBJECTS as readonly string[]).includes(s)) pick(s as Subject, levelOf(me.grade))
+  }, [])   // eslint-disable-line react-hooks/exhaustive-deps
   const [recoOnly, setRecoOnly] = useState(false)
   const [query, setQuery] = useState('')
   // 교재·교과서 선택 / 성취도 선택 (매쓰플랫 챌린지 필터 동일)

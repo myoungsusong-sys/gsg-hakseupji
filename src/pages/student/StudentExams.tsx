@@ -4,6 +4,7 @@ import { useStudentSelf, usePreview, PREVIEW_LOCK_TITLE } from './common'
 import { useStore } from '../../lib/store'
 import { todayKey } from '../../lib/dates'
 import { dDayLabel, dayLabel, examPhase, examState, examTasks, examsOfStudent, examStart } from '../../lib/exam'
+import { groupOf } from '../../lib/schoolReview'
 import ExamForm from '../../components/ExamForm'
 import type { SchoolExam } from '../../types'
 
@@ -82,6 +83,10 @@ export default function StudentExams() {
                   <li key={i} className="flex flex-wrap items-center gap-2">
                     <b className="w-16 shrink-0 truncate">{t.subject}</b><span className="min-w-0 grow">{t.text}</span>
                     {t.link && <Link to={t.link} className="text-xs font-bold text-pine hover:underline">{t.linkLabel} →</Link>}
+                    {/* 국어 — 범위만 적고 풀 곳을 못 찾아서(2026-10-29) 챌린지 «우리 학교» 국어 과정으로 바로 */}
+                    {groupOf(t.subject) === '국어' && (
+                      <Link to="/student/challenge?subject=국어" className="rounded-lg bg-pine px-2.5 py-1 text-xs font-black text-paper hover:brightness-110">국어 문제 풀기 →</Link>
+                    )}
                   </li>
                 ))}
               </ul>
