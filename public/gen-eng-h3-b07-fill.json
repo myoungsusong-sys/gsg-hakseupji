@@ -163,5 +163,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b07-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-3180cd6a57",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 표현과 의미가 가장 가까운 것은?\n\nBeing ⓐgood at assembling model airplanes means having the ability to put their parts together skillfully.",
+"choices": [
+"afraid of",
+"skilled at",
+"unfamiliar with",
+"bored with",
+"curious about"
+],
+"answer": "②",
+"solution": "good at은 어떤 일을 잘하거나 그 일에 능숙하다는 뜻이다. 따라서 ‘~에 능숙한’을 뜻하는 skilled at이 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e878272286",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA failed experiment does not necessarily end the search for success. It can become a __________ toward a successful result.",
+"choices": [
+"distraction",
+"conflict",
+"burden",
+"stepping stone",
+"limit"
+],
+"answer": "④",
+"solution": "실패한 실험도 성공적인 결과를 향해 나아가는 데 도움이 될 수 있다는 내용이다. 따라서 발전이나 성공의 발판을 뜻하는 stepping stone이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8442774d62",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 낱말에 대한 영영풀이로 가장 적절한 것은?\n\nAddario understood the danger, but she showed ⓐcourage by continuing her work in areas affected by war.",
+"choices": [
+"the ability to face danger despite feeling afraid",
+"the wish to receive attention from other people",
+"the habit of avoiding unfamiliar experiences",
+"the feeling of being satisfied with an easy task",
+"the ability to remember past events clearly"
+],
+"answer": "①",
+"solution": "courage는 위험하거나 두려운 상황에 맞서는 용기를 뜻한다. 두려움을 느끼면서도 위험에 맞서는 능력이라는 ①의 풀이가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d867145108",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nWhen people become deeply involved in an activity they love, they may hardly notice time passing. Their attention remains (A)[focused / divided], and unrelated things are less likely to (B)[distract / absorb] them.",
+"choices": [
+"focused — absorb",
+"divided — distract",
+"divided — absorb",
+"divided — discourage",
+"focused — distract"
+],
+"answer": "⑤",
+"solution": "좋아하는 활동에 깊이 몰두하면 시간이 흐르는 것도 잘 알아차리지 못한다는 내용이다. 따라서 주의는 ‘집중된’ 상태로 유지되고, 관련 없는 것들은 주의를 ‘흐트러뜨리기’ 어렵다는 흐름이 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-92a5806f5d",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 부분을 바꾸어 쓸 수 없는 것은?\n\nFor someone with a talent for assembling model airplanes, ⓐearning a living from that interest would be appealing.",
+"choices": [
+"making a living through that interest",
+"supporting oneself financially through that interest",
+"developing that interest without receiving any income",
+"earning money to live on through that interest",
+"doing work related to that interest to support oneself"
+],
+"answer": "③",
+"solution": "earning a living은 생활에 필요한 돈을 번다는 뜻이다. ③은 수입을 전혀 얻지 않고 관심 분야를 발전시킨다는 의미이므로 생계를 유지한다는 의미를 담고 있지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1c1d99b9aa",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 낱말에 대한 문맥상 영영풀이로 적절하지 않은 것은?\n\nAddario’s photographs ⓐcaptured the suffering of people affected by war. Her work received international ⓑrecognition and helped her career develop. Although she herself had been ⓒcaptured, she continued to ⓓdocument conflicts. She felt a responsibility to ⓔcover events that mattered to her generation.",
+"choices": [
+"ⓐ: to express or show something successfully in an image",
+"ⓑ: respect or approval received because of one's work",
+"ⓒ: to take a person prisoner",
+"ⓓ: to provide written instructions for preventing an event",
+"ⓔ: to report on an event as a journalist"
+],
+"answer": "④",
+"solution": "document는 이 문맥에서 분쟁의 상황을 기록한다는 뜻이다. 사건을 예방하기 위한 지침을 제공한다는 ④의 풀이는 적절하지 않다. captured는 목적어와 문맥에 따라 사진에 담는 것과 사람을 붙잡는 것을 각각 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3eb4fbe1ec",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nAddario’s experience suggests that courage does not depend on being free from danger. Having been taken prisoner, she knew that she was far from (A)[immune / vulnerable] to the risks of war. Yet her awareness of those risks did not mean that she was (B)[deterred / encouraged] from continuing her work. Her determination reflected the belief that recording the suffering of people caught in conflict was anything but (C)[insignificant / meaningful].",
+"choices": [
+"vulnerable — deterred — insignificant",
+"immune — encouraged — insignificant",
+"immune — deterred — meaningful",
+"immune — deterred — insignificant",
+"vulnerable — encouraged — meaningful"
+],
+"answer": "④",
+"solution": "far from은 ‘결코 ~이 아닌’이라는 뜻이므로, 위험에서 자유롭지 않았다는 의미가 되려면 (A)에 immune이 들어가야 한다. 위험을 알면서도 일을 계속했다는 흐름이므로 ‘계속하는 것을 단념하게 된 것은 아니었다’라는 의미의 deterred가 적절하다. anything but은 ‘결코 ~이 아닌’이라는 뜻이므로, 고통을 기록하는 일이 중요하다고 믿었다는 의미를 나타내려면 (C)에 insignificant가 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
 }
 ]

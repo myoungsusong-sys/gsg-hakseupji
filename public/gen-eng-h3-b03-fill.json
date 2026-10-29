@@ -169,5 +169,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b03-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-cd9e723a86",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"I watched the sea turtles swam near the coral reef.",
+"The beautiful coral reefs was visible under the water.",
+"Many manta rays were gliding elegantly through the water.",
+"It was the tropical fish what impressed me most.",
+"The water around the island looked beautifully."
+],
+"answer": "③",
+"solution": "③의 「were gliding」은 과거진행형으로 주어인 복수 명사와 알맞게 호응한다. ①은 「swim」 또는 「swimming」, ②는 「were」, ④는 「that」, ⑤는 형용사 「beautiful」로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cd9e723a86",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"One drawing what Victor introduced showed the inside of a fish.",
+"Kakadu has been home to Aboriginal people for over 40,000 years.",
+"Victor explained us that the drawings contained Aboriginal stories.",
+"The saltwater crocodiles in the region grows up to six meters long.",
+"Seeing the crocodiles at close range were an unforgettable experience."
+],
+"answer": "②",
+"solution": "②의 「has been」은 과거부터 현재까지 이어지는 상태를 나타내며 단수 주어 Kakadu와도 호응한다. ①은 「that」, ③은 「explained to us」, ④는 「grow」, ⑤는 「was」가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f79f41f1d6",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nSeeing Uluru at sunset (A)[was / were] the highlight of the visit. Its colors (B)[changed / changing] from red to deep orange as the sun sank. I found it impossible (C)[describe / to describe] the beauty in words.",
+"choices": [
+"was ― changing ― describe",
+"were ― changed ― to describe",
+"was ― changed ― describe",
+"was ― changed ― to describe",
+"were ― changing ― to describe"
+],
+"answer": "④",
+"solution": "동명사구 「Seeing Uluru at sunset」은 단수로 취급하므로 (A)는 was이다. 문장의 서술어가 필요하므로 (B)는 changed이고, 「find it impossible to do」 구조에 따라 (C)는 to describe가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6d8567e97c",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nAs the plane neared Lady Elliot Island, the Great Barrier Reef came into view, (A)[stretching / stretched] toward the horizon. In the water, several manta rays could be seen (B)[glided / gliding] gracefully. It was the colorful coral reef (C)[what / that] held my attention the longest.",
+"choices": [
+"stretched ― glided ― what",
+"stretching ― glided ― that",
+"stretched ― gliding ― that",
+"stretching ― gliding ― what",
+"stretching ― gliding ― that"
+],
+"answer": "⑤",
+"solution": "(A)는 능동적으로 뻗어 있는 산호초를 설명하므로 stretching이 알맞다. 지각동사의 수동태 뒤에서는 현재분사 gliding을 쓰며, 「It was ~ that ...」 강조 구문이므로 (C)는 that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f43e515a05",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 부분이 어법상 옳지 않은 것은?",
+"choices": [
+"The sea appeared blue and green, depending on its depth and the coral formations below.",
+"Endless patches of white sand added to the breathtaking scenery.",
+"It was the coral reef that impressed the traveler most that day.",
+"Many parts of the Great Barrier Reef suffers from coral bleaching.",
+"The traveler hoped that the damaged reef would recover soon."
+],
+"answer": "④",
+"solution": "④의 주어는 복수 명사구 「Many parts of the Great Barrier Reef」이므로 동사도 복수형 suffer를 써야 한다. 나머지 문장에서는 분사구문, 수 일치, 강조 구문 및 목적절이 모두 적절하게 사용되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b3046df0ad",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThere are several regions (A)[which / where] travelers can visit to see the Great Barrier Reef. Lady Elliot Island, (B)[which / where] beautiful coral reefs and manta rays can be observed, lies in its southern region. From the plane, the traveler saw the reef (C)[stretching / stretched] across the sea. He later learned about coral bleaching, (D)[what / which] turns affected parts of the reef white.",
+"choices": [
+"where ― which ― stretched ― what",
+"which ― where ― stretching ― which",
+"which ― which ― stretched ― which",
+"where ― where ― stretching ― what",
+"which ― where ― stretched ― what"
+],
+"answer": "②",
+"solution": "(A)는 visit의 목적어 역할을 하므로 관계대명사 which가 필요하고, (B)는 완전한 절이 이어지므로 관계부사 where가 알맞다. 「see＋목적어＋현재분사」에 따라 (C)는 stretching이며, 선행 내용인 coral bleaching을 부연하는 (D)는 which이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-19c9594167",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 문장은?",
+"choices": [
+"Led by Victor, the visitors learned about Aboriginal culture in Kakadu.",
+"Victor introduced rock art sites depicting Aboriginal stories to the visitors.",
+"One of the drawings showed the insides of a fish in an X-ray style.",
+"Other drawings included a spirit creating lightning and a hunter holding a spear.",
+"While crossing the Yellow River, more than thirty crocodiles were spotted by the visitors."
+],
+"answer": "⑤",
+"solution": "⑤의 「While crossing the Yellow River」의 의미상 주체는 visitors이지만 주절의 주어는 crocodiles이므로 잘못된 분사구문이다. 「While the visitors were crossing the Yellow River」와 같이 고쳐야 의미상 주어가 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
 }
 ]

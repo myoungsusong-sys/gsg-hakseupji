@@ -169,5 +169,151 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b01-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-d52140633b",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nScience (A)[belongs / is belonged] to ordinary people as well as professional researchers. People without science degrees can help by (B)[classifying / classify] images of galaxies. Their work can make valuable (C)[contribution / contributions] to scientific research.",
+"choices": [
+"belongs — classify — contributions",
+"is belonged — classifying — contributions",
+"belongs — classifying — contributions",
+"belongs — classifying — contribution",
+"is belonged — classify — contribution"
+],
+"answer": "③",
+"solution": "belong은 자동사이므로 수동태로 쓰지 않는다. 전치사 by 뒤에는 동명사 classifying이 와야 한다. 셀 수 있는 명사 contribution이 관사 없이 쓰였으므로 복수형 contributions가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-11d7407119",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nGalaxy Zoo used a tutorial (A)[that / what] introduced the project to new visitors. The instructions helped them (B)[understand / understanding] how to classify galaxies. After some practice, they were able (C)[identify / to identify] features in the images.",
+"choices": [
+"that — understanding — to identify",
+"what — understand — to identify",
+"that — understand — identify",
+"what — understanding — identify",
+"that — understand — to identify"
+],
+"answer": "⑤",
+"solution": "선행사 a tutorial을 수식하며 관계절의 주어 역할을 하는 that이 적절하다. help는 목적격 보어로 동사원형을 취할 수 있으므로 understand가 맞다. ‘~할 수 있다’는 be able to 구문이므로 to identify를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e15bf055f7",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nSchawinski found the task of sorting galaxy images (A)[dull / dully]. Each image had to be examined (B)[careful / carefully] because the galaxies differed slightly in shape. He needed help from people (C)[who / which] were willing to take part.",
+"choices": [
+"dull — carefully — who",
+"dully — carefully — who",
+"dull — careful — which",
+"dully — careful — who",
+"dull — carefully — which"
+],
+"answer": "①",
+"solution": "목적어 the task의 상태를 설명하는 목적격 보어에는 형용사 dull이 적절하다. examined를 수식하려면 부사 carefully가 필요하다. 선행사가 사람인 people이므로 주격 관계대명사는 who가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4cfd52be9a",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nWhen Schawinski discussed his difficulty with Lintott, Lintott recommended that he (A)[seek / sought] assistance online. They eventually created Galaxy Zoo, a project (B)[allowing / allowed] ordinary people to help classify galaxies. Its design remained (C)[simple / simply] so that visitors could begin participating easily.",
+"choices": [
+"sought — allowing — simple",
+"seek — allowed — simple",
+"seek — allowing — simply",
+"seek — allowing — simple",
+"sought — allowed — simply"
+],
+"answer": "④",
+"solution": "권고를 나타내는 recommended의 that절에서는 ‘should + 동사원형’의 should가 생략될 수 있으므로 seek가 적절하다. project가 사람들이 참여하도록 허용하는 능동 관계이므로 allowing을 쓴다. remained의 주격 보어에는 형용사 simple이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-68eada1e43",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nThe volunteers (A)[involved / involving] in Galaxy Zoo did not need professional qualifications. They could choose scientific activities (B)[which / in which] they were interested and contribute by examining galaxy images. The project enabled people to spend their time observing galaxies and (C)[recording / to record] their features.",
+"choices": [
+"involving — in which — recording",
+"involved — in which — recording",
+"involved — which — recording",
+"involved — in which — to record",
+"involving — which — to record"
+],
+"answer": "②",
+"solution": "volunteers가 프로젝트에 관여된 관계이므로 과거분사 involved가 적절하다. be interested in의 전치사 in이 필요하므로 in which를 선택한다. spend time -ing 구문에서 observing과 병렬을 이루는 recording이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-326c4ac830",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nDuring the first year and a half of Galaxy Zoo, volunteers produced an enormous number of classifications. If it (A)[were not / had not been] for their assistance during that period, Schawinski could not have completed so much work. The project later developed into Zooniverse, one of the online (B)[platform / platforms] that offer ordinary people opportunities (C)[participating / to participate] in scientific research.",
+"choices": [
+"were not — platforms — to participate",
+"had not been — platform — to participate",
+"had not been — platforms — participating",
+"were not — platform — participating",
+"had not been — platforms — to participate"
+],
+"answer": "⑤",
+"solution": "과거의 도움을 받지 못했을 상황을 가정하므로 가정법 과거완료 had not been이 필요하다. ‘one of + 복수명사’ 구조이므로 platforms가 맞다. opportunities의 구체적인 내용을 설명하는 to부정사 to participate가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-de9fc58d00",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nVisitors to Galaxy Zoo were given instructions about the features (A)[what / that] they should look for in a galaxy image. The website made it possible for people with little training (B)[to classify / classifying] galaxies. Without the volunteers who joined the project, the same amount of work would (C)[take / have taken] Schawinski decades to finish on his own.",
+"choices": [
+"that — to classify — have taken",
+"what — to classify — have taken",
+"that — classifying — have taken",
+"that — to classify — take",
+"what — classifying — take"
+],
+"answer": "①",
+"solution": "선행사 the features가 있고 관계절에서 look for의 목적어가 빠져 있으므로 that이 적절하다. made it possible에서 it은 가목적어이고 to classify 이하가 진목적어이다. 실제로 참여했던 자원봉사자들이 없었을 과거 상황을 가정하므로 would have taken을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8b5fa464cc",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 틀린 것을 모두 찾아 바르게 고치시오. 각 표시 부분만 고치되, 글의 의미와 나머지 표현은 유지하시오. 답은 표시 순서대로 ‘기호 수정한 표현’의 형태로 쓰시오.\n\nFor citizen scientists ⓐinvolving in Galaxy Zoo, a science degree was not a requirement. When Schawinski needed help with galaxy classification, Lintott recommended that he ⓑsought assistance through the Internet. The website they created was kept ⓒsimply enough for new visitors to use. It offered an opportunity for people to contribute to a field ⓓin which they were interested. If the volunteers ⓔhad not participated during the project's first year and a half, Schawinski could not have classified so many images in that period. The contributions made by ordinary people ⓕdevoted their time to the project showed the value of citizen science.",
+"selfGrade": true,
+"answer": "ⓐ involved, ⓑ seek, ⓒ simple, ⓕ devoting",
+"solution": "ⓐ는 시민 과학자들이 프로젝트에 관여된 관계이므로 involved로 고치고, ⓑ는 권고를 나타내는 that절의 동사이므로 seek로 고친다. ⓒ는 수동태 was kept에서 주어의 상태를 설명하는 형용사 simple이 필요하다. ⓕ는 ordinary people을 뒤에서 수식하면서 시간을 바치는 능동 관계를 나타내야 하므로 devoting으로 고친다. ⓓ는 be interested in에 필요한 전치사를 포함한 관계사이고, ⓔ는 과거 사실에 반대되는 가정법 과거완료이므로 둘 다 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
 }
 ]

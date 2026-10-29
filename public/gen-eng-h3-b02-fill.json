@@ -1,0 +1,408 @@
+[
+{
+"id": "fill-621b441195",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nConsumers can enjoy a wider range of choices through various subscription services.",
+"choices": [
+"limited",
+"broader",
+"cheaper",
+"similar",
+"necessary"
+],
+"answer": "②",
+"solution": "‘a wider range of choices’는 ‘더 폭넓은 선택의 범위’를 뜻한다. 따라서 wider와 의미가 가장 가까운 broader가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9db43edf35",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nUsing social media is ________ for showing potential customers your photographs in today’s world.",
+"choices": [
+"essential",
+"excessive",
+"temporary",
+"uniform",
+"financial"
+],
+"answer": "①",
+"solution": "오늘날 잠재 고객에게 사진을 보여 주는 데 소셜 미디어가 중요하다는 내용이다. ‘필수적인’을 뜻하는 essential이 문맥에 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9285cf0e8a",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPaying for several services every month may cause financial ________ for consumers.",
+"choices": [
+"loyalty",
+"strain",
+"access",
+"diversity",
+"preference"
+],
+"answer": "②",
+"solution": "여러 구독료가 누적되면 소비자에게 재정적 부담이 생길 수 있다. financial strain은 ‘재정적 부담’을 의미한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e4786ba0a4",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것은?\n\nSubscription services can provide consumers with ①access to content without ownership. Companies try to offer ②lasting value so that customers will continue using their services. A wide variety of options allows consumers to ③personalize their experiences. However, signing up for too many similar services may lead to ④overconsumption. Therefore, consumers should ⑤maintain subscriptions that they no longer need.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "불필요한 구독은 계속 유지하는 것이 아니라 취소해야 한다. 따라서 maintain은 문맥에 맞지 않으며 cancel 등으로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-43805e195e",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nMany consumers prefer access to products and content to their permanent possession. This preference makes subscription services (A)________ to them. In addition, the variety of available plans enables users to select services that (B)________ their individual tastes. Nevertheless, consumers must review their contracts regularly because small monthly payments can (C)________ into a considerable financial burden.\n\n        (A)              (B)              (C)",
+"choices": [
+"attractive — fit — add up",
+"attractive — reject — break down",
+"unappealing — fit — add up",
+"temporary — ignore — stand out",
+"unappealing — address — turn down"
+],
+"answer": "①",
+"solution": "소유보다 이용을 선호하는 소비자에게 구독 서비스는 attractive하다. 개인의 취향에 ‘맞는’ 것은 fit이며, 소액의 구독료가 누적되는 것은 add up으로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7084897a1e",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 빈칸에 공통으로 들어갈 한 단어를 쓰시오.\n\n• Consumers may ________ unnecessary subscriptions after reviewing their monthly costs.\n• The company decided to ________ a service that did not provide lasting value.",
+"selfGrade": true,
+"answer": "cancel",
+"solution": "두 문장 모두 더 이상 필요하거나 가치가 없는 구독 서비스를 ‘취소하다’라는 의미가 필요하다. 목적어가 subscriptions와 a service이므로 공통으로 쓸 수 있는 동사는 cancel이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-aaceff77ff",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 문장에서 밑줄 친 낱말의 문맥상 의미가 나머지와 다른 하나는?\n\n① Customers can access new content through a regular subscription.\n② A streaming plan gives users access to a large amount of music.\n③ Subscribers have access to updates without buying a new product each time.\n④ Flexible contracts allow consumers to access services according to their needs.\n⑤ The company tried to access stable revenue by building customer loyalty.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "①~④의 access는 모두 콘텐츠나 서비스를 ‘이용하다’라는 뜻으로 자연스럽다. ⑤에서는 안정적인 수익을 ‘얻다’라는 의미가 필요하므로 access가 아니라 obtain이나 secure 등이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-419594b510",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 단어를 본문에서 찾아 각각 한 단어로 쓰시오.\n\nA subscription service that analyzes each customer’s skin condition does not follow a uniform purchasing process. Instead, it offers (A)________ recommendations suited to individual concerns. This example shows how subscription services satisfy consumers’ demand for diversity and (B)________.\n\n※ 두 단어를 ‘(A) 단어 — (B) 단어’의 형식으로 쓸 것.",
+"selfGrade": true,
+"answer": "specialized — customization",
+"solution": "개별 피부 고민에 맞춘 추천은 specialized recommendations로 표현할 수 있다. 소비자가 자신의 취향과 상태에 맞게 경험을 구성하는 것은 customization이므로 두 번째 빈칸에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a1b62b11d9",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHip-hop culture includes several forms of expression, such as music, dance, and art. Buildings no longer in use ⓐ[were used / used] as places for block parties. These parties helped young people ⓑ[express / expressing] themselves through music and dance.",
+"choices": [
+"ⓐ were used — ⓑ expressing",
+"ⓐ were used — ⓑ express",
+"ⓐ used — ⓑ express",
+"ⓐ used — ⓑ expressing",
+"ⓐ were used — ⓑ expressed"
+],
+"answer": "②",
+"solution": "건물은 파티 장소로 ‘사용된’ 대상이므로 ⓐ에는 수동태 were used가 알맞다. help는 목적격 보어로 동사원형이나 to부정사를 취하므로 ⓑ에는 express가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0b106fba15",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKool Herc was a DJ ⓐ[who / which] helped shape hip-hop music. At his parties, dancers formed circles and ⓑ[showed / showing] their individual skills during the break.",
+"choices": [
+"ⓐ which — ⓑ showed",
+"ⓐ who — ⓑ showing",
+"ⓐ which — ⓑ showing",
+"ⓐ who — ⓑ showed",
+"ⓐ who — ⓑ show"
+],
+"answer": "④",
+"solution": "ⓐ는 사람인 a DJ를 선행사로 하는 주격 관계대명사이므로 who가 알맞다. ⓑ는 과거동사 formed와 and로 병렬 연결되어 있으므로 showed를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aac5a53bb3",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nRhyme can make a rap more appealing to listeners. A pattern of repeated sounds ⓐ[helps / help] a song maintain its beat. Rappers can use rhyme to make their voices ⓑ[stronger / strongly].",
+"choices": [
+"ⓐ helps — ⓑ stronger",
+"ⓐ help — ⓑ strongly",
+"ⓐ helps — ⓑ strongly",
+"ⓐ help — ⓑ stronger",
+"ⓐ helping — ⓑ stronger"
+],
+"answer": "①",
+"solution": "ⓐ의 주어는 repeated sounds가 아니라 단수 명사 A pattern이므로 helps가 알맞다. ⓑ는 목적어 their voices의 상태를 설명하는 목적격 보어이므로 형용사의 비교급 stronger가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8dbc534fcb",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBy ⓐ[use / using] two turntables, Kool Herc could move between two copies of one record. This allowed him ⓑ[to extend / extending] the drum section. Dancers enjoyed the longer break, ⓒ[which / who] gave them more time to display their skills.",
+"choices": [
+"ⓐ use — ⓑ to extend — ⓒ which",
+"ⓐ using — ⓑ extending — ⓒ which",
+"ⓐ using — ⓑ to extend — ⓒ who",
+"ⓐ use — ⓑ extending — ⓒ who",
+"ⓐ using — ⓑ to extend — ⓒ which"
+],
+"answer": "⑤",
+"solution": "전치사 By 뒤의 ⓐ에는 동명사 using이 들어간다. allow는 목적격 보어로 to부정사를 취하므로 ⓑ에는 to extend가 알맞다. ⓒ는 사물인 the longer break를 받는 계속적 용법의 관계대명사이므로 which를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9ddfa1d309",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAs DJing and rhythmic shouting became difficult to handle together, DJs asked friends to address the audience. The friends ⓐ[invited / inviting] to do this took on the role of MC. Their task was to excite the crowd and ⓑ[keep / keeping] people involved. In this way, MCing ⓒ[became / becoming] a separate role.",
+"choices": [
+"ⓐ inviting — ⓑ keep — ⓒ became",
+"ⓐ invited — ⓑ keeping — ⓒ became",
+"ⓐ invited — ⓑ keep — ⓒ became",
+"ⓐ invited — ⓑ keep — ⓒ becoming",
+"ⓐ inviting — ⓑ keeping — ⓒ becoming"
+],
+"answer": "③",
+"solution": "친구들은 그 역할을 하도록 ‘요청받은’ 사람들이므로 ⓐ에는 수동 의미의 과거분사 invited가 알맞다. ⓑ는 to excite와 병렬을 이루며 to가 생략된 형태이므로 keep을 쓴다. 마지막 문장에는 주어 MCing의 서술어가 필요하므로 ⓒ에는 became이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-38fc6fa6e3",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nEarly hip-hoppers created a culture with the limited resources ⓐ[available / availably] to them. Many rappers admire these pioneers, ⓑ[who / which] faced hardship and injustice. The value of respecting both oneself and others cannot be explained ⓒ[clearly enough / enough clearly].",
+"choices": [
+"ⓐ available — ⓑ which — ⓒ clearly enough",
+"ⓐ available — ⓑ who — ⓒ clearly enough",
+"ⓐ availably — ⓑ who — ⓒ clearly enough",
+"ⓐ available — ⓑ who — ⓒ enough clearly",
+"ⓐ availably — ⓑ which — ⓒ enough clearly"
+],
+"answer": "②",
+"solution": "ⓐ는 resources를 뒤에서 수식하며 ‘이용 가능한’이라는 뜻을 나타내므로 형용사 available이 알맞다. ⓑ는 사람인 these pioneers를 선행사로 하므로 who가 적절하다. enough가 부사 clearly를 수식할 때는 그 뒤에 놓이므로 ⓒ에는 clearly enough가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5287333491",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓓ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAlthough its exact origin remains uncertain, the expression hip-hop is believed ⓐ[to have been / to have] first used at a block party. The MC jokingly reminded a friend ⓑ[that / which] his freedom was coming to an end because he was about to enter the army. Phrases ⓒ[containing / contained] the expression later became common in rap. One album that included such phrases ⓓ[was / were] Rapper’s Delight, released in 1979.",
+"choices": [
+"ⓐ to have — ⓑ that — ⓒ containing — ⓓ was",
+"ⓐ to have been — ⓑ which — ⓒ containing — ⓓ was",
+"ⓐ to have been — ⓑ that — ⓒ contained — ⓓ were",
+"ⓐ to have been — ⓑ that — ⓒ containing — ⓓ was",
+"ⓐ to have been — ⓑ that — ⓒ containing — ⓓ were"
+],
+"answer": "④",
+"solution": "ⓐ는 현재의 믿음보다 앞선 시점에 그 표현이 ‘사용되었다’는 뜻이므로 완료 수동 부정사 to have been이 필요하다. ⓑ 뒤에는 완전한 절이 이어지므로 내용을 연결하는 접속사 that이 알맞다. ⓒ는 구절들이 그 표현을 ‘포함하는’ 능동 관계이므로 containing을 쓴다. ⓓ의 주어는 관계절 속 phrases가 아니라 단수인 One album이므로 was가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-20fd4f632c",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓓ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKool Herc extended the break by switching between copies of the same record. No longer ⓐ[did dancers have / dancers had] to stop when a record ended. The circles of dancers that formed during the break ⓑ[were / was] part of a developing dance culture. Hip-hop also offered a means to express personal experiences, challenge injustice, and ⓒ[remain / remaining] connected to others through music. Its role in turning conflict into cultural expression cannot be stressed ⓓ[strongly enough / enough strongly].",
+"choices": [
+"ⓐ did dancers have — ⓑ were — ⓒ remain — ⓓ strongly enough",
+"ⓐ dancers had — ⓑ were — ⓒ remain — ⓓ strongly enough",
+"ⓐ did dancers have — ⓑ was — ⓒ remain — ⓓ strongly enough",
+"ⓐ did dancers have — ⓑ were — ⓒ remaining — ⓓ strongly enough",
+"ⓐ dancers had — ⓑ were — ⓒ remaining — ⓓ enough strongly"
+],
+"answer": "①",
+"solution": "부정의 의미를 지닌 No longer가 문두에 있으므로 ⓐ에는 조동사가 주어 앞에 오는 did dancers have가 알맞다. ⓑ의 주어는 복수 명사 The circles이므로 were를 써야 한다. ⓒ는 to express, challenge와 병렬을 이루므로 remain이 적절하다. 부사 strongly를 수식하는 enough는 뒤에 놓이므로 ⓓ에는 strongly enough가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b268e593d5",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nJiyun watches online lectures about subjects she finds (A)[interesting / interested]. She reviews her lessons (B)[using / used] a video lecture service. This service helps her learn about (C)[whatever / however] interests her.",
+"choices": [
+"interesting — using — whatever",
+"interested — using — whatever",
+"interesting — used — whatever",
+"interesting — using — however",
+"interested — used — however"
+],
+"answer": "①",
+"solution": "주제가 흥미를 유발한다는 뜻이므로 (A)에는 interesting이 알맞다. Jiyun이 서비스를 이용하는 능동 관계이므로 (B)는 using이다. (C)는 전치사 about의 목적어인 명사절을 이끌고 절 안에서 interests의 주어 역할을 하는 whatever가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3a557362c5",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOnline platforms make subscription services easy to use. Customers can add a service when (A)[needed / needing] and pay only for (B)[what / which] they actually use. If they want to switch to another device model, they can (C)[be / do] so through the platform.",
+"choices": [
+"needing — what — do",
+"needed — which — do",
+"needed — what — do",
+"needed — what — be",
+"needing — which — be"
+],
+"answer": "③",
+"solution": "(A)는 when a service is needed에서 주어와 be동사가 생략된 수동 표현이므로 needed가 맞다. (B)는 선행사를 포함하며 use의 목적어 역할을 하는 what이 알맞다. (C)는 앞의 switch to another device model을 대신하는 do so를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-27d3f75c5b",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe range of services that customers can receive through subscriptions (A)[has / have] expanded beyond milk and newspapers. Companies now focus on (B)[providing / being provided] customers with value over time. Customers, in turn, can spend more time (C)[enjoying / to enjoy] content chosen to match their interests.",
+"choices": [
+"have — providing — enjoying",
+"has — being provided — enjoying",
+"has — providing — to enjoy",
+"has — providing — enjoying",
+"have — being provided — to enjoy"
+],
+"answer": "④",
+"solution": "(A)의 주어는 services나 customers가 아니라 단수 명사구 The range of services이므로 has가 맞다. 회사가 고객에게 가치를 제공하는 능동 관계이고 전치사 on 뒤이므로 (B)는 providing이다. (C)는 spend time -ing 구문에 따라 enjoying을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bdd37e00a8",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n(A)[Be / To be] sure, subscriptions are now used in many industries, but the business model itself has a long history. Customers can choose (B)[whatever / however] they find useful from the services available. Companies try to keep those customers by offering new content and (C)[providing / provide] regular updates.",
+"choices": [
+"Be — whatever — providing",
+"To be — whatever — providing",
+"To be — however — providing",
+"To be — whatever — provide",
+"Be — however — provide"
+],
+"answer": "②",
+"solution": "(A)는 ‘물론, 확실히’라는 뜻의 독립부정사 표현 To be sure가 알맞다. (B)는 choose의 목적어인 명사절을 이끌면서 find의 목적어도 담당하므로 whatever가 맞다. (C)는 전치사 by 뒤의 offering과 병렬을 이루므로 providing을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-06db62d6e4",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe value of subscription services that offer customers personalized choices and regular updates (A)[depend / depends] on the continuing benefits they provide. Rather than paying for a product only once, customers make regular payments for access to (B)[whatever / however] they find valuable. Additional services can be selected when (C)[needing / needed], allowing customers to adjust their spending.",
+"choices": [
+"depends — however — needed",
+"depend — whatever — needed",
+"depends — whatever — needing",
+"depend — however — needing",
+"depends — whatever — needed"
+],
+"answer": "⑤",
+"solution": "(A)는 긴 관계절 속의 복수 명사들과 관계없이 주어의 핵심인 단수 명사 value에 일치시켜 depends를 써야 한다. (B)는 전치사 to의 목적어인 명사절을 이끌고 find의 목적어 역할을 하는 whatever가 알맞다. (C)는 when additional services are needed에서 주어와 be동사가 생략된 수동 표현이므로 needed가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1272ac6416",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA subscription service gives Jiyun access to lectures on subjects that she finds (A)[interested / interesting]. What she enjoys about the service is reviewing familiar material and (B)[exploring / explores] topics beyond her schoolwork. If she decides to change the services included in her subscription, the online platform makes it easy for her to (C)[be / do] so.",
+"choices": [
+"interesting — exploring — do",
+"interested — exploring — do",
+"interesting — explores — do",
+"interesting — exploring — be",
+"interested — explores — be"
+],
+"answer": "①",
+"solution": "(A)는 find의 목적어인 subjects를 설명하며 그 주제들이 흥미를 유발한다는 뜻이므로 interesting이 맞다. (B)는 주어인 What she enjoys에 동사를 일치시키는 자리가 아니라 보어 reviewing familiar material과 병렬을 이루는 자리이므로 exploring이 알맞다. (C)는 앞의 change the services included in her subscription을 대신하는 do so를 사용해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+}
+]

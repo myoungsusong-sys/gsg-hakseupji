@@ -1217,5 +1217,309 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b04-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-e2e35c9dac",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThe names of generations have different backgrounds. Baby boomers received their name because many babies were born during their birth period. The timing of this population growth was different in Korea and the United States, so the two countries do not use exactly the same birth years for this generation. Generation X got its name from a book by Douglas Coupland. Generation Y followed Generation X and is also known as the millennial generation. This additional name refers to its members becoming adults around the beginning of the new millennium. Generation Z came after Generation Y.",
+"choices": [
+"Baby boomers were named after a period of unusually few births.",
+"Korea and the United States use identical birth periods for baby boomers.",
+"Generation X received its name from a book.",
+"Millennials are another name for members of Generation Z.",
+"Generation Y came before Generation X."
+],
+"answer": "③",
+"solution": "지문에서는 X세대의 이름이 Douglas Coupland의 책에서 유래했다고 설명하므로 ③이 일치한다. 베이비붐 세대는 높은 출생률에서 이름이 유래했으며, 밀레니얼 세대는 Y세대를 가리킨다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0f2dd23989",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고, 질문에 대한 답으로 가장 적절한 것은?\n\nM: Was the visit to the doughnut shop with Jimin enjoyable?\nW: The wait was frustrating, but I enjoyed being with her.\nM: She told me she was happy to have gone there with you.\nW: Really? She was so eager to try something popular on social media.\nM: We also enjoyed searching for good bingsu places when we were younger.\nW: That's true. Joining her in something she liked helped me understand her better.\n\nQ. What did the mother gain from the visit?",
+"choices": [
+"A chance to understand her daughter better",
+"A plan to open a popular dessert shop",
+"A reason to stop visiting shops with her daughter",
+"A new way to avoid waiting at popular shops",
+"A promise that her daughter would give up following trends"
+],
+"answer": "①",
+"solution": "어머니는 딸이 좋아하는 활동을 함께하면서 딸을 더 잘 이해하게 되었다고 말한다. 따라서 방문을 통해 얻은 것을 묻는 질문에는 ①이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1db4103ddd",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nPeople's attitudes can change as they move through different stages of life. This is called the life cycle effect. Experiences such as leaving the family home, getting married, and becoming a parent can influence what people value. People may remember being eager to explore and enjoy greater freedom when they were young. Marriage often brings a stronger sense of responsibility, while parenthood can make people more careful about taking risks. Thus, an attitude observed among young people does not necessarily remain unchanged throughout their lives.",
+"choices": [
+"Different life stages can bring changes in people's attitudes.",
+"Leaving the family home can influence people's values.",
+"People may have a stronger desire for freedom when they are young.",
+"Marriage can be followed by a greater sense of responsibility.",
+"Becoming a parent generally makes people more willing to take risks."
+],
+"answer": "⑤",
+"solution": "지문에서는 부모가 되면 위험을 감수하는 데 더 신중해질 수 있다고 설명한다. 따라서 자녀가 생기면 대체로 위험을 더 기꺼이 감수한다는 ⑤는 글의 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-031b2d77ce",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nThe cohort effect explains how experiences shared early in life can shape the characteristics of a generation. People born around the same period encounter similar social, political, and economic conditions. These experiences can influence their beliefs and priorities. For example, Korean members of Generation X faced serious uncertainty about employment during the financial crisis when they were young adults. This experience may help explain why they place importance on their children's job security. Generation Z, meanwhile, grew up with smartphones. Its members are familiar with turning to social media for information and advice, although their skill with digital media does not necessarily mean that they have strong social skills.",
+"choices": [
+"What kinds of conditions can shape a generation's beliefs?",
+"How many members of Generation X lost their jobs during the financial crisis?",
+"What concern may help explain Generation X's emphasis on their children's job security?",
+"What device was part of Generation Z's environment while growing up?",
+"Where are members of Generation Z accustomed to seeking information?"
+],
+"answer": "②",
+"solution": "지문은 X세대가 금융 위기 당시 고용 불안을 겪었다고 설명하지만, 일자리를 잃은 사람의 수는 제시하지 않는다. 나머지 질문의 답은 세대가 경험한 환경, 고용 불안, 스마트폰, 소셜 미디어에 관한 설명에서 찾을 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-87525dccb6",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 추론할 수 있는 것으로 가장 적절한 것은?\n\nWhen millennials began their working lives, others often viewed them as insufficiently devoted to their employers. That image did not remain fixed. With age and greater familiarity with their responsibilities, millennials increasingly came to be seen as hardworking employees. The change is relevant to the life cycle effect: people's attitudes and behavior can develop as they pass through different life stages. A strong desire for freedom may therefore tell us something about being young, rather than reveal a permanent quality of one particular generation.",
+"choices": [
+"Employees' behavior remains the same once they enter the workplace.",
+"Millennials became less familiar with their responsibilities as they grew older.",
+"A desire for freedom proves that a generation will always avoid responsibility.",
+"An early judgment of young employees may fail to describe them at a later life stage.",
+"The workplace example shows that birth year alone determines commitment to an employer."
+],
+"answer": "④",
+"solution": "밀레니얼 세대는 직장 생활 초기에는 헌신이 부족하다는 평가를 받았으나, 나이가 들고 역할에 익숙해지면서 성실한 근로자로 인식되었다. 따라서 젊은 직원에 대한 초기 평가가 이후 생애 단계의 모습까지 설명하지는 못할 수 있다는 ④를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1a23dc69ec",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 바탕으로 한 이해로 적절하지 않은 것은?\n\nBoth the cohort effect and the life cycle effect help explain people's attitudes, but they focus on different influences. The cohort effect concerns the environments people share while growing up. For Korean Generation X, employment insecurity during the financial crisis may have contributed to the importance they attach to secure jobs for their children. The life cycle effect concerns changes associated with stages of life. People who once welcomed adventure may become more cautious after becoming parents. The changing image of millennials at work provides another illustration: as they grew older and became accustomed to their roles, they were increasingly regarded as diligent. These explanations suggest that a person's apparent generational characteristics should be considered alongside both early experiences and the stage of life the person has reached.",
+"choices": [
+"Shared experiences during youth can help explain differences in priorities between generations.",
+"A concern about children's employment may be connected to a generation's earlier economic experiences.",
+"Greater caution after parenthood proves that shared experiences during youth have no influence on values.",
+"Changes in the assessment of millennials at work can be understood in relation to their life stages.",
+"Similar attitudes may require consideration of more than one kind of influence."
+],
+"answer": "③",
+"solution": "부모가 된 뒤 신중해지는 현상은 생애 주기 효과의 사례이며, 이것이 청년기에 공유한 경험의 영향을 부정하는 근거가 되지는 않는다. 글은 두 효과를 함께 고려해야 한다고 설명하므로, 한 효과를 근거로 다른 효과의 영향을 전면 부정한 ③이 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8a33ae5315",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화에서 추론할 수 있는 것으로 가장 적절한 것은?\n\nW: I found the wait at the doughnut shop irritating. Jimin, however, was eager to try what she had seen on social media.\nM: Her enthusiasm reminds me of our search for the best bingsu when we were younger.\nW: I hadn't connected the two. We did visit different places for that.\nM: She also told me that going with you made the visit special to her.\nW: I enjoyed our time together, too. Taking part in her interest helped me see things from her point of view.\nM: Then the outing gave you something beyond the doughnuts.\nW: Yes. Although I disliked the wait, I was glad we had spent that time together.",
+"choices": [
+"The mother's dislike of waiting can coexist with her appreciation of the time spent with Jimin.",
+"The father's comparison shows that he considers every interest of the two generations identical.",
+"Jimin valued the visit solely because she could try a popular product.",
+"The mother came to understand Jimin because Jimin abandoned her own interest.",
+"The parents' earlier search for bingsu suggests that interest in popular desserts began with Jimin's generation."
+],
+"answer": "①",
+"solution": "어머니는 기다리는 일에는 짜증을 느꼈지만, 딸과 시간을 보내고 딸의 관점을 이해한 일은 긍정적으로 평가한다. 따라서 기다림에 대한 불만과 함께한 시간에 대한 만족이 동시에 존재할 수 있다는 ①이 적절하다. 아버지의 회상은 세대 간 관심의 유사성을 보여 주지만, 모든 관심이 동일하다는 뜻은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-898ecde2a1",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고, 학생의 해석에 대한 평가로 가장 적절한 것은?\n\nGenerations are commonly grouped by birth year, yet a generational label alone does not fully explain an individual's attitudes. Shared conditions during youth can shape a group's values: growing up with smartphones, for instance, helps explain Generation Z's familiarity with digital media. At the same time, values and behavior can shift with major life events. People may become more responsible after marriage or less willing to take risks after having children. Millennials also came to be viewed as more diligent at work as they aged and settled into their roles. Their earlier reputation for seeking freedom should therefore be considered in relation to youth, rather than automatically treated as an enduring quality of everyone in the generation.\n\n학생의 해석: “밀레니얼 세대에 대한 평가가 달라졌으므로, 세대를 구분할 때 사용하는 출생 연도도 생애 단계가 바뀔 때마다 함께 달라져야 한다.”",
+"choices": [
+"It is supported because generations are classified according to people's current attitudes.",
+"It is supported because marriage moves individuals into a different birth-year group.",
+"It is supported because becoming diligent is the condition for membership in the millennial generation.",
+"It is unsupported because the passage says that attitudes cannot change within a generation.",
+"It is unsupported because a change in attitudes does not imply a change in the birth years used to classify a generation."
+],
+"answer": "⑤",
+"solution": "글은 출생 연도를 기준으로 한 세대 구분과 생애 단계에 따른 태도 변화를 구별한다. 밀레니얼 세대에 대한 평가가 달라졌다는 사실은 태도와 행동의 변화를 보여 줄 뿐, 세대 분류에 사용하는 출생 연도가 달라져야 함을 뜻하지 않는다. 따라서 학생의 해석이 두 기준을 혼동했다고 평가한 ⑤가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9368fe1a2a",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nFor travelers interested in history and nature, the Romantic Road is a route (A)[that / what] offers both. If you are planning a visit, (B)[remember / remembering] to enjoy the journey itself. You might also consider (C)[visiting / to visit] the cities along the road.",
+"choices": [
+"that — remember — visiting",
+"that — remembering — visiting",
+"what — remember — visiting",
+"what — remembering — to visit",
+"that — remember — to visit"
+],
+"answer": "①",
+"solution": "(A)는 선행사 a route를 수식하면서 관계절의 주어 역할을 하는 관계대명사 that이 알맞다. (B)는 명령문이므로 동사원형 remember를 써야 한다. (C)는 consider가 동명사를 목적어로 취하므로 visiting이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-10014a1d0d",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThe Romantic Road was rebuilt after (A)[destroying / being destroyed] in World War II. Travelers can explore the cities along it (B)[during / while] their trip. In Rothenburg, they can use a wooden hammer (C)[to break / break] the hard crust of a Schneeball.",
+"choices": [
+"destroying — during — to break",
+"being destroyed — while — to break",
+"being destroyed — during — to break",
+"destroying — while — break",
+"being destroyed — during — break"
+],
+"answer": "③",
+"solution": "(A)는 도로가 파괴된 것이므로 수동형 동명사 being destroyed가 알맞다. (B)는 명사구 their trip 앞이므로 전치사 during을 써야 한다. (C)는 나무망치를 사용하는 목적을 나타내므로 to break가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8044fd451a",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nWhen (A)[visiting / visit] Rothenburg, you can try a Schneeball. This pastry, (B)[which / whose] name refers to a snowball, has a hard crust. If you also have a chance to enjoy the Mozart festival in Würzburg, you can count yourself (C)[lucky / luckily].",
+"choices": [
+"visiting — which — lucky",
+"visit — whose — luckily",
+"visit — which — lucky",
+"visiting — whose — luckily",
+"visiting — whose — lucky"
+],
+"answer": "⑤",
+"solution": "(A)는 When you are visiting에서 주어와 be동사가 생략된 형태이므로 visiting이 알맞다. (B)는 뒤의 명사 name과 소유 관계를 나타내므로 whose를 써야 한다. (C)는 목적어 yourself의 상태를 설명하는 목적격 보어이므로 형용사 lucky가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-73d6355b79",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nIn Würzburg, visitors can listen to Mozart's music (A)[performed / performing] by excellent orchestras. The music in the streets, the markets in the squares, and the reflections of the buildings on the river (B)[combine / combining] to make the visit memorable. If you are interested in this experience, consider (C)[to include / including] Würzburg in your travel plans.",
+"choices": [
+"performed — combining — including",
+"performed — combine — including",
+"performing — combine — including",
+"performed — combine — to include",
+"performing — combining — to include"
+],
+"answer": "②",
+"solution": "(A)는 music이 연주되는 대상이므로 수동의 의미를 나타내는 과거분사 performed가 알맞다. (B)는 세 명사구가 and로 연결된 주어의 서술어이므로 현재형 동사 combine이 필요하다. (C)는 consider의 목적어이므로 동명사 including을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-901a34e431",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThe road and the neighboring cities were reconstructed after (A)[being damaged / damaging] during the war. Today, visitors can enjoy scenery (B)[what / that] makes a journey along the Romantic Road special. They can also learn about the history of the area while (C)[traveling / travel] from one city to another.",
+"choices": [
+"being damaged — what — traveling",
+"damaging — that — traveling",
+"being damaged — that — travel",
+"being damaged — that — traveling",
+"damaging — what — travel"
+],
+"answer": "④",
+"solution": "(A)는 도로와 도시들이 피해를 입은 것이므로 수동형 being damaged가 알맞다. (B)는 선행사 scenery가 있고 관계절에서 주어가 필요하므로 that을 써야 한다. (C)는 while they are traveling에서 주어와 be동사가 생략된 형태이므로 traveling이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8ac3298bd7",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ㄱ~ㅁ 중 어법상 옳은 문장만을 있는 대로 고른 것은?\n\nㄱ. After being destroyed during World War II, the Romantic Road and the cities around it were rebuilt.\nㄴ. The Romantic Road, what offers travelers opportunities to experience history and nature, attracts visitors from around the world.\nㄷ. Travelers who are interested in both culture and scenery should consider exploring the Romantic Road.\nㄹ. Mozart's music, which performed by orchestras during the festival, can be enjoyed in Würzburg.\nㅁ. While traveling along the Romantic Road, visitors can stop in Rothenburg to try a Schneeball.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㅁ",
+"ㄱ, ㄷ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ, ㅁ"
+],
+"answer": "③",
+"solution": "ㄱ은 주절의 주어가 파괴된 대상이므로 being destroyed가 적절하고, ㄷ은 consider 뒤에 동명사 exploring을 써서 옳다. ㅁ도 While visitors are traveling에서 주어와 be동사가 생략된 올바른 표현이다. ㄴ은 선행사가 있는 계속적 용법이므로 what을 which로 고쳐야 한다. ㄹ은 음악이 연주되는 것이므로 which is performed 또는 performed로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-91a6f456f9",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ㄱ~ㅁ 중 어법상 옳은 문장만을 있는 대로 고른 것은?\n\nㄱ. The Schneeball, whose name means a snowball in English, is a pastry that visitors can try in Rothenburg.\nㄴ. When look for something sweet in Rothenburg, travelers can choose from several Schneeball flavors.\nㄷ. If you can hear Mozart's music while exploring Würzburg, count yourself lucky to be there.\nㄹ. The music performed in the streets, the markets that fill the squares, and the buildings reflected in the river combining to create a memorable scene.\nㅁ. Whatever flavor you choose, you will need a wooden hammer to break through the pastry's crust.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ의 whose는 the Schneeball과 name의 소유 관계를 나타내며, ㄷ의 lucky는 yourself를 설명하는 목적격 보어이므로 옳다. ㅁ의 Whatever flavor you choose는 양보의 부사절이고, to break는 망치를 사용하는 목적을 나타내므로 적절하다. ㄴ은 When looking for 또는 When they look for로 고쳐야 한다. ㄹ은 길게 수식된 세 명사구가 주어이고 주절의 동사가 없으므로 combining을 combine으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1c2e1d484f",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ㄱ~ㅁ 중 어법상 옳은 문장만을 있는 대로 고른 것은?\n\nㄱ. The Romantic Road offers experiences what travelers interested in history and nature can enjoy.\nㄴ. During exploring the cities along the Romantic Road, visitors can learn about the area's history.\nㄷ. The pastry whose name means a snowball has a crust that visitors use a wooden hammer to break.\nㄹ. The music performed by orchestras and the performances offered in the streets combining to make Würzburg's Mozart festival special.\nㅁ. Remember that the music heard in Würzburg's streets is part of the experience that visitors can enjoy while traveling along the Romantic Road.",
+"choices": [
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄷ, ㄹ, ㅁ",
+"ㄷ, ㅁ"
+],
+"answer": "⑤",
+"solution": "ㄷ의 whose는 pastry와 name의 소유 관계를 나타내고, that은 관계절 안의 to break의 목적어 역할을 하므로 옳다. ㅁ은 Remember로 시작하는 명령문이며 heard의 수동 수식과 while traveling의 생략 구문도 적절하다. ㄱ은 선행사 experiences가 있으므로 what을 that 또는 which로, ㄴ은 During을 While로 고쳐야 한다. ㄹ은 and로 연결된 두 명사구의 서술어가 필요하므로 combining을 combine으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
 }
 ]

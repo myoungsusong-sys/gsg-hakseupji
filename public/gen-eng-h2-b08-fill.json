@@ -1970,5 +1970,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-20bf10fc7a",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThree guests from Switzerland, Singapore, and Italy (A)[is / are] in the studio today. They have come (B)[share / to share] unusual laws from their countries, and each guest (C)[explain / explains] the background of one law.",
+"choices": [
+"(A) is - (B) share - (C) explain",
+"(A) are - (B) share - (C) explains",
+"(A) is - (B) to share - (C) explains",
+"(A) are - (B) to share - (C) explains",
+"(A) are - (B) to share - (C) explain"
+],
+"answer": "④",
+"solution": "주어 Three guests가 복수이므로 (A)는 are가 알맞다. 목적을 나타내는 to부정사가 필요하고, each guest는 단수이므로 각각 to share와 explains를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d7c6a2265e",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSwiss law requires certain social animals (A)[to keep / to be kept] in pairs. Keeping only one rabbit or guinea pig (B)[is / are] illegal because an animal left alone may (C)[feel / feels] lonely.",
+"choices": [
+"(A) to be kept - (B) is - (C) feel",
+"(A) to keep - (B) is - (C) feels",
+"(A) to be kept - (B) are - (C) feel",
+"(A) to keep - (B) are - (C) feels",
+"(A) to be kept - (B) is - (C) feels"
+],
+"answer": "①",
+"solution": "동물은 보관되는 대상이므로 수동형 to be kept가 필요하다. 동명사구 Keeping only one rabbit or guinea pig는 단수 취급하며, 조동사 may 뒤에는 동사원형 feel이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-de3fffe60e",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nCultures with high uncertainty avoidance (A)[prefers / prefer] clear rules because unexpected events (B)[make / makes] people uncomfortable. They establish guidelines (C)[to prevent / preventing] uncertain situations from arising.",
+"choices": [
+"(A) prefers - (B) make - (C) preventing",
+"(A) prefer - (B) makes - (C) to prevent",
+"(A) prefers - (B) makes - (C) to prevent",
+"(A) prefer - (B) make - (C) preventing",
+"(A) prefer - (B) make - (C) to prevent"
+],
+"answer": "⑤",
+"solution": "주어 Cultures와 unexpected events가 모두 복수이므로 prefer와 make가 알맞다. 지침을 세우는 목적을 나타내므로 to prevent를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-241227d34b",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nGeert Hofstede was a psychologist (A)[who / what] organized invisible cultural features into categories. One category explains how well people in a culture (B)[tolerate / tolerates] unexpected events. Another concerns temporal orientation, which affects the value people place (C)[on / in] present or future outcomes.",
+"choices": [
+"(A) what - (B) tolerate - (C) on",
+"(A) who - (B) tolerates - (C) in",
+"(A) who - (B) tolerate - (C) on",
+"(A) what - (B) tolerates - (C) on",
+"(A) who - (B) tolerate - (C) in"
+],
+"answer": "③",
+"solution": "선행사가 사람인 a psychologist이므로 주격 관계대명사 who가 필요하다. 주어 people은 복수이므로 tolerate를 쓰며, ‘~에 가치를 두다’는 place value on으로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a872ec67cc",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThose with short-term orientation pay close attention to (A)[what / that] is happening now and (B)[place / places] greater emphasis on immediate results. In contrast, people with long-term orientation are willing (C)[to delay / delaying] such results.",
+"choices": [
+"(A) that - (B) place - (C) to delay",
+"(A) what - (B) place - (C) to delay",
+"(A) what - (B) places - (C) delaying",
+"(A) that - (B) places - (C) to delay",
+"(A) what - (B) place - (C) delaying"
+],
+"answer": "②",
+"solution": "(A)에는 선행사를 포함하면서 is의 주어 역할을 하는 what이 필요하다. 주어 Those가 복수이므로 place를 쓰고, be willing 다음에는 to부정사 to delay가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e98f4a10a5",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nSome cultural traits, ⓐsuch as the language people use, are readily visible, whereas others, ⓑincluding what a society values, remain hidden. ⓒThe categories Hofstede proposed help explain how cultures respond to uncertainty. A culture with high uncertainty avoidance tends to establish strict guidelines so that unfamiliar events ⓓcan be prevented from occurring, while cultures with low uncertainty avoidance are likely to accept ⓔwhat are different.",
+"choices": [
+"ⓐ such as the language people use",
+"ⓑ including what a society values",
+"ⓒ The categories Hofstede proposed",
+"ⓓ can be prevented from occurring",
+"ⓔ what are different"
+],
+"answer": "⑤",
+"solution": "what은 여기서 ‘다른 것’을 뜻하는 단수 개념이므로 what is different가 되어야 한다. things that are different로 고칠 수도 있다. 나머지 부분은 관계사 생략, 수동태 및 전치사 사용이 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ba21196d5",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Swiss government made it necessary for group-living animals (A)[to be kept / being kept] in pairs. Matilde replaced one of her guinea pigs after the other died. Had she failed to do so, she (B)[would have been / would be] fined. Switzerland is also described as the only European country (C)[requiring / required] every dog to be microchipped and registered.",
+"choices": [
+"(A) being kept - (B) would be - (C) requiring",
+"(A) to be kept - (B) would be - (C) required",
+"(A) being kept - (B) would have been - (C) required",
+"(A) to be kept - (B) would have been - (C) requiring",
+"(A) to be kept - (B) would have been - (C) required"
+],
+"answer": "④",
+"solution": "‘동물들이 사육되도록’이라는 수동의 의미이므로 to be kept가 알맞다. Had she failed는 If she had failed의 도치형이므로 결과절에는 would have been fined가 온다. country를 능동적으로 수식하는 현재분사 requiring도 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
 }
 ]

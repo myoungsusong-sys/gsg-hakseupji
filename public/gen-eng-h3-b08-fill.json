@@ -144,5 +144,139 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-ff51fa05ff",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA smartphone and a good pair of shoes (A)[is / are] useful for a music walk. Energetic songs can motivate you (B)[walk / to walk] harder, and you can let the rhythm (C)[leads / lead] your steps.",
+"choices": [
+"is — walk — leads",
+"are — walk — lead",
+"are — to walk — lead",
+"is — to walk — leads",
+"are — to walk — leads"
+],
+"answer": "③",
+"solution": "주어가 A smartphone and a good pair of shoes로 복수이므로 (A)는 are가 알맞다. motivate는 목적어 뒤에 to부정사를 취하고, 사역동사 let 뒤에는 동사원형이 오므로 각각 to walk와 lead를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-92be4af10d",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWalking (A)[has / have] a positive effect on creativity. In one study, people who walked produced more creative ideas than those who remained (B)[seated / seating]. This benefit is one reason to make daily walks (C)[enjoyable / enjoyably].",
+"choices": [
+"has — seated — enjoyable",
+"has — seating — enjoyably",
+"have — seated — enjoyable",
+"have — seating — enjoyably",
+"has — seated — enjoyably"
+],
+"answer": "①",
+"solution": "동명사 Walking은 단수 취급하므로 has가 적절하다. remain의 주격보어로는 상태를 나타내는 seated가, make의 목적격보어로는 형용사 enjoyable이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5d73386235",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBy (A)[setting / to set] a weekly step goal, you can make your walking challenge more specific. You may add steps while (B)[brushing / brushed] your teeth and get your friends (C)[to join / joined] the challenge.",
+"choices": [
+"to set — brushing — joined",
+"setting — brushed — to join",
+"to set — brushed — joined",
+"setting — brushing — to join",
+"setting — brushed — joined"
+],
+"answer": "④",
+"solution": "전치사 By 뒤에는 동명사 setting이 와야 한다. while 뒤에는 주어와 be동사가 생략된 brushing이 적절하며, get은 ‘get+목적어+to부정사’의 형태로 쓰인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8607a6ef15",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중 어법상 알맞은 것은?\n\nResearch shows that walking ⓐhave a positive effect on creativity. Participants who stayed ⓑsitting during the experiment produced fewer creative ideas than those who walked. Steve Jobs also developed ideas while ⓒwalk. ⓓThough its physical and creative benefits, students may find it difficult to make time for walking. A simple challenge can make it ⓔenjoyably.",
+"choices": [
+"ⓐ have",
+"ⓑ sitting",
+"ⓒ walk",
+"ⓓ Though",
+"ⓔ enjoyably"
+],
+"answer": "②",
+"solution": "stay는 보어로 현재분사 sitting을 취할 수 있으므로 ⓑ는 어법상 알맞다. ⓐ는 has, ⓒ는 walking, ⓓ는 Despite, ⓔ는 enjoyable로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b663b93ab5",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhat a music walk requires (A)[is / are] only a few simple items. Take earphones (B)[in case / in case of] other walkers are bothered by your music. You can also prepare a playlist containing energetic songs that motivate you (C)[walking / to walk] at a faster pace.",
+"choices": [
+"are — in case — walking",
+"is — in case of — to walk",
+"are — in case of — walking",
+"are — in case — to walk",
+"is — in case — to walk"
+],
+"answer": "⑤",
+"solution": "주어인 What a music walk requires는 하나의 명사절이므로 단수동사 is가 온다. 뒤에 완전한 절이 이어지므로 in case가 필요하며, motivate는 ‘목적어+to부정사’를 목적격보어로 취한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c218c6b8bc",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ를 모두 어법에 맞게 고쳐 쓰시오.\n\nThe number of ⓐstep you take each day can be recorded with an app. Walking ⓑhave also been found to improve creativity, and Steve Jobs often developed ideas while ⓒwalk. ⓓDespite of these benefits, some students may not make time for it. Therefore, it is helpful to make walking ⓔenjoyably or to choose songs that motivate listeners ⓕwalking harder.",
+"selfGrade": true,
+"answer": "ⓐ steps, ⓑ has, ⓒ walking, ⓓ Despite, ⓔ enjoyable, ⓕ to walk",
+"solution": "the number of 뒤의 가산명사는 복수형 steps로 쓰고, 동명사 주어 Walking에는 단수동사 has를 쓴다. while 뒤에서 주어와 be동사가 생략되었으므로 walking이 알맞으며, Despite는 of 없이 명사구를 목적어로 취한다. make의 목적격보어에는 형용사 enjoyable을 쓰고, motivate는 목적어 뒤에 to부정사를 취한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-af0c5ff2da",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 의미가 되도록 두 문장을 하나의 문장으로 합쳐 쓰시오. 단, in case와 motivate를 각각 한 번 사용해야 한다.\n\nOther people may be disturbed by your music, so bring earphones. Select energetic songs because they will encourage you to walk harder.",
+"selfGrade": true,
+"answer": "Bring earphones in case other people are disturbed by your music, and select energetic songs that will motivate you to walk harder.",
+"solution": "‘다른 사람들이 방해받을 가능성에 대비하여’라는 의미는 in case 뒤에 완전한 절을 이어 표현한다. energetic songs를 선행사로 하는 관계대명사절을 만들고, motivate 뒤에는 ‘목적어+to부정사’를 사용해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fe87229cfc",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장을 어법에 맞게 다시 쓰시오. 분사구문의 의미상 주어가 주절의 주어와 일치하게 하고, by 뒤의 세 동작이 병렬 구조가 되게 할 것.\n\nUsing a smartphone app, your daily steps can be recorded, and the challenge can be completed by walking during lunch, to take the stairs, or walked in place while brush your teeth.",
+"selfGrade": true,
+"answer": "Using a smartphone app, you can record your daily steps and take part in the challenge by walking during lunch, taking the stairs, or walking in place while brushing your teeth.",
+"solution": "Using의 의미상 주체가 사람이므로 주절의 주어를 you로 바꾸어야 한다. 전치사 by 뒤의 세 동작은 walking, taking, walking의 동명사 형태로 병렬을 이루어야 한다. while 뒤에서는 you are가 생략된 것으로 보아 brushing을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
 }
 ]
