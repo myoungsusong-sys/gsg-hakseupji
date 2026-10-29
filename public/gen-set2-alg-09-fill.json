@@ -316,5 +316,222 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-09-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-712a04d88e",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "두 변의 길이가 각각 $9$, $12$이고 그 끼인각의 크기가 $30^\\circ$인 삼각형의 넓이는?",
+"choices": [
+"$18$",
+"$24$",
+"$27$",
+"$36$",
+"$54$"
+],
+"answer": "③",
+"solution": "삼각형의 넓이는 $\\dfrac12ab\\sin C$이다. 따라서 넓이는 $\\dfrac12\\times9\\times12\\times\\sin30^\\circ=27$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-405d6e897d",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 3,
+"body": "세 변의 길이가 $13$, $14$, $15$인 삼각형의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$84$",
+"solution": "반둘레는 $s=\\dfrac{13+14+15}{2}=21$이다. 헤론의 공식에 따라 넓이는 $\\sqrt{21(21-13)(21-14)(21-15)}=\\sqrt{21\\times8\\times7\\times6}=84$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-41857fee95",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "어떤 볼록사각형의 두 대각선의 길이가 각각 $8$, $15$이고, 두 대각선이 이루는 각 중 하나의 크기가 $60^\\circ$이다. 이 사각형의 넓이는?",
+"choices": [
+"$15\\sqrt3$",
+"$20\\sqrt3$",
+"$30\\sqrt3$",
+"$40\\sqrt3$",
+"$60\\sqrt3$"
+],
+"answer": "③",
+"solution": "두 대각선의 길이를 $p$, $q$, 두 대각선이 이루는 각을 $\\theta$라 하면 사각형의 넓이는 $\\dfrac12pq\\sin\\theta$이다. 따라서 넓이는 $\\dfrac12\\times8\\times15\\times\\sin60^\\circ=30\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-22bd17f270",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 4,
+"body": "두 변의 길이가 각각 $x$, $x+2$이고 그 끼인각의 크기가 $30^\\circ$인 삼각형의 넓이가 $12$이다. 양수 $x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$6$",
+"solution": "넓이 조건에서 $\\dfrac12x(x+2)\\sin30^\\circ=12$이므로 $x(x+2)=48$이다. $x^2+2x-48=(x-6)(x+8)=0$이고 $x>0$이므로 $x=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-a970013dfd",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "두 변의 길이가 모두 $10$인 이등변삼각형의 밑변의 길이를 $x$라 하자. 이 삼각형의 넓이가 $48$이 되도록 하는 모든 $x$의 값의 합은?",
+"choices": [
+"$24$",
+"$26$",
+"$28$",
+"$30$",
+"$32$"
+],
+"answer": "③",
+"solution": "밑변을 이등분하면 높이는 $\\sqrt{100-\\dfrac{x^2}{4}}$이므로 넓이는 $\\dfrac{x}{4}\\sqrt{400-x^2}$이다. 이를 $48$과 같게 놓고 제곱하면 $x^4-400x^2+36864=0$이므로 $x^2=144$ 또는 $256$이다. 따라서 가능한 밑변은 $12$, $16$이고 그 합은 $28$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-cc1585c465",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 4,
+"body": "어떤 볼록사각형의 두 대각선의 길이의 비가 $2:3$이고, 두 대각선이 이루는 각 중 하나의 크기가 $30^\\circ$이다. 이 사각형의 넓이가 $27$일 때, 두 대각선의 길이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$15\\sqrt2$",
+"solution": "두 대각선의 길이를 $2t$, $3t$라 하면 넓이는 $\\dfrac12\\cdot2t\\cdot3t\\cdot\\sin30^\\circ=\\dfrac32t^2$이다. 따라서 $\\dfrac32t^2=27$에서 $t=3\\sqrt2$이므로 두 대각선의 길이의 합은 $5t=15\\sqrt2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-335e540e40",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "세 변의 길이가 각각 $x$, $x+1$, $x+2$인 삼각형의 넓이가 $6\\sqrt6$이다. 이 삼각형의 둘레를 구하시오. 단, $x>1$이다.",
+"selfGrade": true,
+"answer": "$18$",
+"solution": "반둘레는 $s=\\dfrac{3(x+1)}2$이므로 헤론의 공식에서 넓이의 제곱은 $\\dfrac{3(x+1)^2(x+3)(x-1)}{16}$이다. 이를 $(6\\sqrt6)^2=216$과 같게 하면 $(x+1)^2(x+3)(x-1)=1152$이고, $x>1$에서 좌변은 증가하므로 $x=5$가 유일한 해이다. 따라서 둘레는 $5+6+7=18$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-ef2c3d79f7",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $AB=10$, $AC=14$이고 넓이가 $35$이다. 이 조건을 만족하는 모든 삼각형에 대하여 $BC^2$의 값을 각각 구했을 때, 그 값들의 합은?",
+"choices": [
+"$296$",
+"$420$",
+"$560$",
+"$592$",
+"$700$"
+],
+"answer": "④",
+"solution": "$35=\\dfrac12\\times10\\times14\\sin A$이므로 $\\sin A=\\dfrac12$이고, $A$는 $30^\\circ$ 또는 $150^\\circ$이다. 코사인법칙에 따라 $BC^2=296-280\\cos A$이므로 두 값은 $296-140\\sqrt3$, $296+140\\sqrt3$이다. 따라서 그 합은 $592$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-67d15b54d4",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $AB=13$, $AC=15$, $BC=14$이다. 선분 $BC$ 위의 점 $D$가 $\\triangle ABD$의 넓이와 $\\triangle ACD$의 넓이의 비를 $3:4$로 나눌 때, 선분 $AD$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\sqrt{145}$",
+"solution": "두 삼각형은 꼭짓점 $A$에서 직선 $BC$에 내린 높이가 같으므로 $BD:DC=3:4$이고, $BC=14$에서 $BD=6$이다. 헤론의 공식으로 $\\triangle ABC$의 넓이는 $84$이므로 $A$에서 $BC$에 내린 높이는 $12$이다. 그 수선의 발을 $H$라 하면 $AB=13$에서 $BH=5$이고 $HD=1$이므로 $AD=\\sqrt{12^2+1^2}=\\sqrt{145}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-37e479cb9f",
+"typeId": "set2-alg-09-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\triangle ABC$에서 $b=7$, $c=9$, $A=60^\\circ$일 때, 변 $a$의 길이는?",
+"choices": [
+"$\\sqrt{43}$",
+"$\\sqrt{58}$",
+"$\\sqrt{67}$",
+"$\\sqrt{76}$",
+"$8$"
+],
+"answer": "③",
+"solution": "코사인법칙에 따라 $a^2=b^2+c^2-2bc\\cos A$이다. 따라서 $a^2=7^2+9^2-2\\cdot7\\cdot9\\cdot\\frac12=67$이므로 $a=\\sqrt{67}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-5b377c5a6c",
+"typeId": "set2-alg-09-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\triangle ABC$에서 $a=7$, $b=5$, $c=8$일 때, 각 $A$의 크기는?",
+"choices": [
+"$30^\\circ$",
+"$45^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③",
+"solution": "코사인법칙에서 $\\cos A=\\frac{b^2+c^2-a^2}{2bc}$이다. 따라서 $\\cos A=\\frac{25+64-49}{2\\cdot5\\cdot8}=\\frac12$이므로 $A=60^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-edbd18241c",
+"typeId": "set2-alg-09-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "세 변의 길이가 각각 $x$, $x+1$, $x+2$인 삼각형에서 가장 긴 변의 대각이 $120^\\circ$이다. 양수 $x$의 값은?",
+"choices": [
+"$1$",
+"$\\frac32$",
+"$2$",
+"$\\frac52$",
+"$3$"
+],
+"answer": "②",
+"solution": "가장 긴 변은 $x+2$이므로 코사인법칙을 적용하면 $(x+2)^2=x^2+(x+1)^2-2x(x+1)\\cos120^\\circ$이다. 이를 정리하면 $2x^2-x-3=0$, 즉 $(2x-3)(x+1)=0$이다. $x>0$이므로 $x=\\frac32$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-0064e2b0d2",
+"typeId": "set2-alg-09-u0m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "세 변의 길이가 $7$, $11$, $n$인 삼각형의 세 내각이 모두 예각이 되도록 하는 자연수 $n$의 개수는?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "삼각형의 성립 조건에서 $4<n<18$이다. $n\\leq11$일 때에는 $11^2<7^2+n^2$이어야 하므로 $n\\geq9$이고, $n>11$일 때에는 $n^2<7^2+11^2=170$이므로 $n\\leq13$이다. 따라서 가능한 $n$은 $9,10,11,12,13$의 $5$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t1",
+"custom": true
 }
 ]

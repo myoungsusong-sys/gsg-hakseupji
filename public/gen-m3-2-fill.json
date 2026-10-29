@@ -1,0 +1,92 @@
+[
+{
+"id": "fill-ad7f9f6807",
+"typeId": "20567",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 내접원이 변 $BC$와 접하는 점을 $E$라 하자. 변 $BC$와 두 변 $AB$, $AC$의 연장선에 접하는 방접원이 변 $BC$와 접하는 점을 $Q$라 한다. 삼각형 $ABC$의 둘레가 $54\\mathrm{\\,cm}$이고 $AB=22\\mathrm{\\,cm}$, $AC=17\\mathrm{\\,cm}$일 때, $EQ$의 길이는?",
+"choices": [
+"$3\\mathrm{\\,cm}$",
+"$4\\mathrm{\\,cm}$",
+"$5\\mathrm{\\,cm}$",
+"$6\\mathrm{\\,cm}$",
+"$7\\mathrm{\\,cm}$"
+],
+"answer": "③",
+"solution": "삼각형의 반둘레는 $27\\mathrm{\\,cm}$이고, $BC=54-22-17=15\\mathrm{\\,cm}$이다. 한 점에서 원에 그은 두 접선의 길이는 같으므로 $BE=27-17=10\\mathrm{\\,cm}$, $BQ=27-22=5\\mathrm{\\,cm}$이다. 따라서 $EQ=|BE-BQ|=5\\mathrm{\\,cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-8633954bc6",
+"typeId": "20567",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 내접원과 꼭짓점 $A$에 대한 방접원이 변 $BC$와 접하는 점을 각각 $E$, $Q$라 하자. 이 방접원은 변 $BC$와 두 변 $AB$, $AC$의 연장선에 접한다. 점들이 $B$, $Q$, $E$, $C$의 순서로 놓이고 $BQ:QE=2:3$이다. $BC=21\\mathrm{\\,cm}$이고 삼각형 $ABC$의 둘레가 $56\\mathrm{\\,cm}$일 때, $AB$의 길이는?",
+"choices": [
+"$19\\mathrm{\\,cm}$",
+"$20\\mathrm{\\,cm}$",
+"$21\\mathrm{\\,cm}$",
+"$22\\mathrm{\\,cm}$",
+"$23\\mathrm{\\,cm}$"
+],
+"answer": "④",
+"solution": "한 점에서 그은 두 접선의 길이가 같다는 성질에 의해 $BQ=CE$이다. $BQ=2x\\mathrm{\\,cm}$, $QE=3x\\mathrm{\\,cm}$로 놓으면 $BC=2x+3x+2x=21$이므로 $x=3$이다. 반둘레가 $28\\mathrm{\\,cm}$이고 $BQ=28\\mathrm{\\,cm}-AB=6\\mathrm{\\,cm}$이므로 $AB=22\\mathrm{\\,cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-034c5ae4df",
+"typeId": "20567",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 내접원이 변 $BC$와 접하는 점을 $E$라 하자. 변 $BC$와 두 변 $AB$, $AC$의 연장선에 접하는 방접원이 $AB$를 $B$ 쪽으로 연장한 직선과 접하는 점을 $P$라 한다. $BE:EC=3:2$, $AB=20\\mathrm{\\,cm}$이고, $AP$의 길이는 $BC$의 길이의 $2$배보다 $4\\mathrm{\\,cm}$ 짧다. $AC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$17\\mathrm{\\,cm}$",
+"solution": "$BE=3x\\mathrm{\\,cm}$, $EC=2x\\mathrm{\\,cm}$로 놓으면 $BC=5x\\mathrm{\\,cm}$이다. 반둘레를 $s\\mathrm{\\,cm}$라 하면 방접원의 접선 길이로부터 $AP=s\\mathrm{\\,cm}$이므로 $s=10x-4$이다. 내접원의 접선 길이로부터 $EC=s\\mathrm{\\,cm}-AB$이므로 $2x=10x-4-20$에서 $x=3$, $s=26$이다. 따라서 $AC=s\\mathrm{\\,cm}-BE=26-9=17\\mathrm{\\,cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-45ce360e92",
+"typeId": "20567",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$의 내접원과 꼭짓점 $A$에 대한 방접원이 변 $BC$와 접하는 점을 각각 $E$, $Q$라 하자. 이 방접원은 $AB$를 $B$ 쪽으로 연장한 직선과 점 $P$에서 접한다. $AP=25\\mathrm{\\,cm}$, $EQ=5\\mathrm{\\,cm}$이고, $AB$의 길이는 $BC$의 길이의 $2$배보다 $10\\mathrm{\\,cm}$ 짧다. 가능한 모든 $BC$의 길이를 구하고, 그 길이들의 곱을 답하시오.",
+"selfGrade": true,
+"answer": "$195\\mathrm{\\,cm}^{2}$",
+"solution": "$AP$는 삼각형의 반둘레와 같으므로 둘레는 $50\\mathrm{\\,cm}$이다. $BC=a\\mathrm{\\,cm}$로 놓으면 $AB=(2a-10)\\mathrm{\\,cm}$, $AC=(60-3a)\\mathrm{\\,cm}$이다. 접선의 길이 관계에서 $BE=25\\mathrm{\\,cm}-AC$, $BQ=25\\mathrm{\\,cm}-AB$이므로 $EQ=|AB-AC|=|5a-70|\\mathrm{\\,cm}$이다. 따라서 $|5a-70|=5$에서 $a=13$ 또는 $15$이고, 각각의 세 변의 길이 $(13,16,21)$, $(15,20,15)$는 모두 삼각형의 성립 조건을 만족한다. 구하는 곱은 $13\\times15=195\\mathrm{\\,cm}^{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-f8f6e054f8",
+"typeId": "20567",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$의 내접원과 꼭짓점 $A$에 대한 방접원이 변 $BC$와 접하는 점을 각각 $E$, $Q$라 하자. 이 방접원은 $AB$를 $B$ 쪽으로 연장한 직선과 점 $P$에서 접한다. $AP=27\\mathrm{\\,cm}$, $EQ=8\\mathrm{\\,cm}$이고, 세 변의 길이는 모두 $\\mathrm{cm}$ 단위로 자연수이다. $BC$가 세 변 중 가장 길 때, $AB\\times AC$의 최댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$240\\mathrm{\\,cm}^{2}$",
+"solution": "반둘레가 $27\\mathrm{\\,cm}$이므로 둘레는 $54\\mathrm{\\,cm}$이고, 접선의 길이 관계에 의해 $|AB-AC|=EQ=8\\mathrm{\\,cm}$이다. $BC=a\\mathrm{\\,cm}$로 놓으면 나머지 두 변의 길이는 순서에 관계없이 $(31-\\frac a2)\\mathrm{\\,cm}$, $(23-\\frac a2)\\mathrm{\\,cm}$이므로 $a$는 짝수이다. 삼각형의 성립 조건에서 $a<27$이고, $BC$가 가장 길다는 조건에서 $a\\geq31-\\frac a2$이므로 가능한 $a$는 $22$, $24$, $26$이다. 이때 $AB\\times AC$는 각각 $240\\mathrm{\\,cm}^{2}$, $209\\mathrm{\\,cm}^{2}$, $180\\mathrm{\\,cm}^{2}$이므로 최댓값은 $240\\mathrm{\\,cm}^{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-868f3ef77f",
+"typeId": "20567",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 다음 세 점 $Q$, $T$, $F$를 정한다.\n\n• 변 $BC$와 두 변 $AB$, $AC$의 연장선에 접하는 방접원의 $BC$ 위의 접점을 $Q$라 한다.\n• 변 $AC$와 두 변 $BA$, $BC$의 연장선에 접하는 방접원의 $AC$ 위의 접점을 $T$라 한다.\n• 삼각형 $ABC$의 내접원의 $AC$ 위의 접점을 $F$라 한다.\n\n$BQ:QC=2:3$, $AT:TC=4:5$, $FT=2\\mathrm{\\,cm}$일 때, 삼각형 $ABC$의 둘레를 구하시오.",
+"selfGrade": true,
+"answer": "$60\\mathrm{\\,cm}$",
+"solution": "반둘레를 $s$라 하면 접선의 길이 관계에 의해 $BQ=AT=s-AB$, $QC=s-AC$, $TC=AF=s-BC$이다. $BQ:QC=2:3$, $AT:TC=4:5$이므로 $BQ=AT=4x\\mathrm{\\,cm}$, $QC=6x\\mathrm{\\,cm}$, $TC=AF=5x\\mathrm{\\,cm}$로 놓을 수 있다. 따라서 $FT=|AF-AT|=x\\mathrm{\\,cm}=2\\mathrm{\\,cm}$이므로 $x=2$이다. $BC=10x\\mathrm{\\,cm}$, $AC=9x\\mathrm{\\,cm}$이고 $s=BC+TC=15x\\mathrm{\\,cm}$이므로 둘레는 $2s=60\\mathrm{\\,cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+}
+]
