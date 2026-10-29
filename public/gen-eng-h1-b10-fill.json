@@ -2539,5 +2539,278 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-6e85608ea9",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSustainable travel means that tourism can (A)[maintain / be maintained] without harming natural and cultural environments. Its environmental factor focuses on (B)[reduce / reducing] the negative impact of travel. This includes minimizing plastic waste and not (C)[disturb / disturbing] wild animals.",
+"choices": [
+"maintain ― reduce ― disturb",
+"maintain ― reducing ― disturbing",
+"be maintained ― reduce ― disturbing",
+"be maintained ― reducing ― disturbing",
+"be maintained ― reducing ― disturb"
+],
+"answer": "④",
+"solution": "관광은 ‘유지되는’ 대상이므로 조동사 뒤에 수동태 be maintained가 필요하다. 전치사 on과 병렬 구조의 not 뒤에는 각각 동명사 reducing과 disturbing이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e108021567",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nDatanla Waterfall is a good place for canyoning (A)[because / because of] it has a naturally rocky environment. During water rappelling, travelers move down a cliff, (B)[relying on / rely on] a rope. The natural slides are as enjoyable as those (C)[made / making] artificially at water parks.",
+"choices": [
+"because ― relying on ― made",
+"because ― rely on ― made",
+"because of ― relying on ― made",
+"because ― relying on ― making",
+"because of ― rely on ― making"
+],
+"answer": "①",
+"solution": "뒤에 주어와 동사가 있는 절이 이어지므로 because가 필요하다. 주절의 동작을 부연하는 현재분사 relying on과 수동의 의미로 those를 수식하는 과거분사 made가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-122daace29",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSustainable travelers try to find a way (A)[that / which] tourism can continue without damaging the environment. They consider the pollution (B)[caused / causing] by travel and examine how tourism (C)[affects / affecting] local people and businesses.",
+"choices": [
+"that ― caused ― affects",
+"that ― causing ― affecting",
+"which ― caused ― affects",
+"which ― causing ― affects",
+"that ― caused ― affecting"
+],
+"answer": "①",
+"solution": "‘관광이 지속될 수 있는 방식’이라는 의미이므로 관계부사 역할을 하는 that이 알맞다. pollution은 오염을 ‘일으키는’ 것이 아니라 여행에 의해 ‘발생한’ 것이므로 caused를 쓰며, 간접의문문 안에는 서술동사 affects가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ae817d561",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nTravelers should respect local customs and (A)[adjust / adjusting] accordingly. They can support local businesses by (B)[book / booking] a local guide or staying in local guest houses. In this way, their money can positively (C)[contribute / contributing] to the local economy.",
+"choices": [
+"adjust ― book ― contribute",
+"adjusting ― booking ― contribute",
+"adjust ― booking ― contributing",
+"adjust ― booking ― contribute",
+"adjusting ― book ― contributing"
+],
+"answer": "④",
+"solution": "조동사 should에 연결된 respect와 병렬을 이루므로 adjust가 알맞다. 전치사 by 뒤에는 동명사 booking이 필요하고, 조동사 can 뒤에는 동사원형 contribute를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8e39148430",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nTravelers need to consider the pollution ① caused by travel and how it ② affects nature. The environmental factor focuses on ③ reducing the harmful impact of tourism. This includes minimizing waste and not ④ disturb wild animals. Travelers also ⑤ should respect the customs of local communities.",
+"choices": [
+"① caused",
+"② affects",
+"③ reducing",
+"④ disturb",
+"⑤ should respect"
+],
+"answer": "④",
+"solution": "includes의 목적어로 minimizing과 not disturbing이 병렬을 이루어야 한다. 따라서 ④의 disturb를 동명사 disturbing으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-57fa7281f5",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nWhile ① moving quickly down a cable, visitors can see Datanla Waterfall ② pouring over a rocky cliff. The natural water slide is as enjoyable as the ones ③ making artificially at water parks. During water rappelling, travelers descend the cliff, ④ relying on a rope, while the ⑤ falling water may spin them around.",
+"choices": [
+"① moving",
+"② pouring",
+"③ making",
+"④ relying",
+"⑤ falling"
+],
+"answer": "③",
+"solution": "인공 물 미끄럼틀은 누군가에 의해 ‘만들어진’ 것이므로 수동 관계를 나타내는 과거분사가 필요하다. 따라서 ③ making을 made로 고쳐야 하며, 나머지 현재분사들은 각각 주체의 능동적이거나 진행 중인 동작을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bab2b2fc85",
+"typeId": "eng-h1-b10-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 글의 괄호 안에서 어법상 알맞은 표현을 골라 (A)~(E)의 순서대로 쓰시오.\n\n(가) Sustainable travel allows tourism to (A)[maintain / be maintained] without harming natural and cultural environments. Its environmental factor focuses on (B)[reduce / reducing] negative impacts. Travelers should respect local traditions and (C)[adjust / adjusting] accordingly. They can use their money to positively (D)[contribute / contributing] to the local economy.\n\n(나) At the end of the trip information, travelers may find a place (E)[where / that] catches their interest.",
+"selfGrade": true,
+"answer": "be maintained, reducing, adjust, contribute, that",
+"solution": "tourism은 유지되는 대상이므로 (A)는 수동태가 되고, 전치사 on 뒤인 (B)에는 동명사가 필요하다. (C)는 respect와, (D)는 조동사 can 뒤의 use와 각각 동사원형 구조를 이룬다. (E)의 관계사는 뒤 절에서 catches의 주어 역할을 해야 하므로 that이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-281d9b76dc",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMemory foam (A)[absorbs / is absorbed] shock when pressure is applied. It also (B)[changes / change] its shape to fit an astronaut’s body and gradually returns to its original form after the pressure (C)[is removed / removes].",
+"choices": [
+"absorbs — changes — is removed",
+"absorbs — change — removes",
+"is absorbed — changes — is removed",
+"is absorbed — change — removes",
+"absorbs — changes — removes"
+],
+"answer": "①",
+"solution": "Memory foam이 충격을 흡수하는 주체이므로 능동형 absorbs가 알맞다. 주어 It이 3인칭 단수이므로 changes를 쓰며, 압력은 제거되는 대상이므로 수동태 is removed가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8c41d7e41d",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 부분 중 어법상 옳은 것은?\n\nScientists needed an effective system to keep crops fresh in a spacecraft.",
+"choices": [
+"Scientists needed an effective system keeping crops freshly.",
+"Scientists needed an effective system to keeping crops fresh.",
+"Scientists needed an effective system to keep crops fresh.",
+"Scientists needed an effective system kept crops fresh.",
+"Scientists needed an effective system keep crops freshly."
+],
+"answer": "③",
+"solution": "시스템을 개발한 목적을 나타내므로 to부정사 to keep이 알맞다. keep은 목적격보어로 형용사를 취하므로 부사 freshly가 아니라 형용사 fresh를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0601867a68",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nNASA scientists realized that wastewater could be reused after harmful bacteria ______ from it.",
+"choices": [
+"removed",
+"were removed",
+"removing",
+"were removing",
+"had removing"
+],
+"answer": "②",
+"solution": "harmful bacteria는 제거하는 주체가 아니라 제거되는 대상이다. after절에는 주어와 서술어가 필요하므로 수동태 were removed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-34a010bf81",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Memory foam can adapts to the shape of an astronaut’s body.",
+"Ethylene causes fruits decay more rapidly.",
+"The air purification system was designed to remove ethylene.",
+"A private company obtained a license and commercializing the system.",
+"The cartridges did not need to replaced frequently."
+],
+"answer": "③",
+"solution": "③의 be designed to부정사는 ‘~하도록 설계되다’라는 올바른 구조이다. ①은 adapt, ②는 to decay, ④는 commercialized, ⑤는 to be replaced로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-11a4a9884d",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBecause exchanging the air in a spacecraft was impossible, a purification system had to (A)[develop / be developed]. The system removed ethylene and other unwanted substances from the air. A private company recognized its potential and (B)[obtained / obtaining] a license (C)[to commercialize / commercializing] the technology.",
+"choices": [
+"develop — obtained — to commercialize",
+"be developed — obtaining — to commercialize",
+"be developed — obtained — commercializing",
+"develop — obtaining — commercializing",
+"be developed — obtained — to commercialize"
+],
+"answer": "⑤",
+"solution": "정화 시스템은 개발되는 대상이므로 had to be developed가 알맞다. recognized와 obtained는 and로 연결된 병렬 구조이며, 면허의 목적을 나타내는 to commercialize가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-96849f9e43",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 어법상 틀린 부분의 개수는?\n\nMemory foam, first developing for astronauts, absorbs shock effectively. When pressure exerts on the material, it changes its shape and supports the astronaut’s body. After the pressure is lifted, the foam returns to its original form. Because of this behavior, it calls “memory foam.” Since being introduced for public use, it has been used in beds and sofas.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "developing은 우주비행사를 위해 ‘개발된’이라는 수동 의미이므로 developed로 고쳐야 한다. pressure는 가해지는 대상이므로 exerts를 is exerted로, memory foam은 그렇게 불리는 대상이므로 calls를 is called로 고쳐야 한다. 따라서 틀린 부분은 총 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e7c5e6360",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A)~(D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhile (A)[considering / considered] how to provide clean water during long missions, NASA scientists realized that (B)[loading / loaded] enough water onto a spacecraft was impractical. They concluded that wastewater could be reused after harmful bacteria (C)[had been removed / had removed]. Continued research produced a system whose cartridges did not need (D)[to replace / to be replaced] frequently.",
+"choices": [
+"considering — loading — had been removed — to be replaced",
+"considering — loaded — had removed — to be replaced",
+"considered — loading — had been removed — to replace",
+"considering — loading — had removed — to replace",
+"considered — loaded — had been removed — to be replaced"
+],
+"answer": "①",
+"solution": "while절의 생략된 주어인 NASA scientists가 고려하는 주체이므로 considering이 알맞고, 문장의 주어 역할을 하는 동명사 loading이 필요하다. bacteria는 제거되는 대상이므로 had been removed를 쓰며, cartridges 역시 교체되는 대상이므로 to be replaced가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-419913f0b3",
+"typeId": "eng-h1-b10-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 안에 주어진 동사를 문맥과 어법에 맞는 형태로 각각 쓰시오. 정답은 순서대로 쉼표로 구분하여 쓸 것.\n\nAnother everyday item (develop) from space technology is the air purifier. As crops grew in a spacecraft, ethylene was produced and caused fruits to decay faster. Because it was impossible for the polluted air (exchange) with clean air, scientists created a system (remove) ethylene. A private company (recognize) the value of the technology and obtained a license to commercialize it.",
+"selfGrade": true,
+"answer": "developed, to be exchanged, to remove, recognized",
+"solution": "첫 번째 빈칸은 item을 수동의 의미로 수식하므로 과거분사 developed가 필요하다. 공기는 교환되는 대상이므로 for 목적어 뒤에 수동형 to be exchanged를 쓰고, 시스템을 만든 목적은 to remove로 나타낸다. 마지막 빈칸은 and 뒤의 obtained와 병렬을 이루는 과거형 recognized가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m1s0t0",
+"custom": true
 }
 ]

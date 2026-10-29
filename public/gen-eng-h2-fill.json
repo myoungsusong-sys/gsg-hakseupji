@@ -436,5 +436,261 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-u2m0s0t0",
 "custom": true
+},
+{
+"id": "fill-d23336183b",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nThe musician played on unfamiliar streets and wrote songs that received little attention. Still, he continued practicing because his grandfather had shown him that an artist could love his work even without fame. Looking back after signing a record deal, he realized that <u>the unnoticed years had not been wasted</u>.",
+"choices": [
+"His years of practice helped prepare him for a later opportunity.",
+"He regretted performing for people who did not recognize him.",
+"His grandfather advised him to stop seeking a record deal.",
+"He became successful without making any continuous effort.",
+"His unknown songs were more valuable than his later recordings."
+],
+"answer": "①",
+"solution": "주인공은 주목받지 못하는 동안에도 계속 연주하고 곡을 썼으며, 이러한 준비를 바탕으로 음반 계약의 기회를 잡았다. 따라서 밑줄 친 부분은 그동안의 연습이 헛되지 않고 성공을 위한 준비가 되었다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-dc22c79c12",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nArcimboldo’s The Gardener looks like vegetables in a bowl when it is viewed in one direction. After the painting is turned upside down, however, the same objects form a smiling face. Through this change, <u>the viewer is invited to do more than simply look at the painting</u>.",
+"choices": [
+"The viewer must study the painter’s entire life.",
+"The viewer takes an active part by changing how the work is viewed.",
+"The viewer is expected to repaint some of the vegetables.",
+"The viewer should compare the work with Picasso’s paintings.",
+"The viewer needs to identify every vegetable in the bowl."
+],
+"answer": "②",
+"solution": "그림을 뒤집어 보아야 정물화가 얼굴로 변하는 효과를 경험할 수 있다. 즉, 감상자가 관람 방식에 직접 변화를 주며 작품을 능동적으로 감상한다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-7466ef88df",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nAfter short conversations, students reported how much they liked their partners and guessed how their partners felt about them. Most students believed that they had made a less favorable impression than they actually had. The result suggests that <u>we may be better received than we imagine</u>.",
+"choices": [
+"Other people may like us more than we expect.",
+"First impressions are always negative and inaccurate.",
+"People usually hide their dislike during a conversation.",
+"Students cannot judge whether they like their partners.",
+"A longer conversation necessarily creates a better impression."
+],
+"answer": "①",
+"solution": "실험 참가자들은 상대방이 실제로 평가한 것보다 자신이 덜 호감을 얻었다고 예상했다. 따라서 밑줄 친 부분은 다른 사람들이 우리를 우리가 생각하는 것보다 더 긍정적으로 볼 수 있다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-80d7174d1e",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nOn the return trip from the space station, the astronauts entered Earth’s atmosphere at great speed. Friction produced extreme heat, flaming pieces passed the window, and the capsule was pulled violently when its parachute opened. For them, <u>Earth’s protection came with a price</u>.",
+"choices": [
+"The atmosphere protected the astronauts from feeling gravity.",
+"The astronauts had to leave their damaged capsule in space.",
+"The atmosphere blocked all objects from returning safely to Earth.",
+"The layer that protects Earth also made the astronauts’ descent dangerous.",
+"The parachute protected Earth by burning up space debris."
+],
+"answer": "④",
+"solution": "대기는 우주 물체가 지상으로 떨어지는 것을 막아 지구를 보호하지만, 귀환하는 우주선에는 강한 마찰열을 발생시킨다. 따라서 지구의 보호 장치인 대기를 통과하려면 우주인들이 위험하고 힘든 과정을 견뎌야 한다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-bd002f07bf",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nPeople tried to reduce the coyote population by killing many of the animals. Yet coyotes breed quickly, and removing dominant pairs can destroy the pack structure that limits breeding. The loss of coyotes may also increase the number of rodents and other small prey. Thus, <u>a simple solution can disturb more than its intended target</u>.",
+"choices": [
+"Removing rodents is the only effective way to control coyotes.",
+"A control method aimed at coyotes can produce wider and unexpected ecological effects.",
+"Coyote populations decrease whenever their social structure is broken.",
+"Nature immediately returns to its former state after human intervention.",
+"Killing dominant pairs prevents the remaining coyotes from breeding."
+],
+"answer": "②",
+"solution": "코요테를 죽이는 방법은 무리의 번식 통제 구조를 깨뜨려 오히려 개체 수를 늘릴 수 있다. 또한 먹잇감의 과잉 증가까지 일으킬 수 있으므로, 특정 종을 겨냥한 조치가 생태계 전반에 예상 밖의 영향을 준다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-3897dec69f",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nIn an experiment, students generally underestimated how much their conversation partners liked them. This difference was called the “liking gap.” Such mistaken judgments can influence later behavior: a person who assumes that others reacted negatively may hesitate to show confidence or pursue new possibilities. In this sense, <u>the gap is not merely in perception; it can become a limit on action</u>.",
+"choices": [
+"A negative first impression cannot be corrected through later action.",
+"People should act confidently even when others clearly dislike them.",
+"Misjudging others’ favorable responses may discourage people from using their potential.",
+"The difference between two people’s personalities prevents meaningful conversation.",
+"People’s actions matter more when their pessimistic predictions are proven correct."
+],
+"answer": "③",
+"solution": "좋아요 격차는 타인의 실제 평가와 자신이 예상한 평가 사이의 차이이다. 자신이 부정적으로 평가받았다고 잘못 믿으면 자신감을 잃고 가능성을 추구하지 않을 수 있으므로, 인식의 오류가 실제 행동까지 제한한다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-6a257f01dd",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nX-ray examinations suggest that Arcimboldo first painted ordinary still lifes and then made adjustments after turning them upside down. In The Gardener, vegetables become a face only when the work is viewed from the opposite direction. As a result, <u>the painting withholds one of its identities until the viewer changes position</u>.",
+"choices": [
+"The painting loses its original subject whenever it is moved.",
+"The painter’s intention can be discovered only through an X-ray examination.",
+"The work has no fixed meaning because every viewer sees a different object.",
+"One aspect of the work becomes visible only through the viewer’s active change in perspective.",
+"The hidden face appears after experts restore the vegetables to their first positions."
+],
+"answer": "④",
+"solution": "The Gardener는 평상시에는 채소 정물화이지만 뒤집으면 얼굴로 보인다. 따라서 작품의 또 다른 모습은 감상자가 시각적 관점을 능동적으로 바꿀 때 드러난다는 의미이다. 단순히 사람마다 자의적으로 다르게 해석한다는 뜻은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-dc6034813a",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분이 의미하는 바로 가장 알맞은 것은?\n\nFor years, the guitarist performed on unknown streets, practiced his art, and sent recordings to numerous producers. Eventually, one producer wanted to work with him, and he signed a record deal. Reflecting on this experience, he said, <u>Opportunity did not replace the long journey; it revealed what the journey had prepared him to do</u>.",
+"choices": [
+"His sudden success made all of his earlier difficulties irrelevant.",
+"The producer’s offer allowed him to succeed despite being unprepared.",
+"His long effort enabled him to make use of the opportunity when it arrived.",
+"The difficult journey ended only after he stopped sending his recordings.",
+"His earlier performances became meaningful because they were already famous."
+],
+"answer": "③",
+"solution": "음반 제작자의 제안은 우연히 찾아온 기회였지만, 주인공은 오랜 연주와 창작을 통해 그 기회를 받아들일 준비를 해 왔다. 밑줄 친 부분은 기회 자체가 노력의 과정을 대신한 것이 아니라, 지속적인 노력이 기회를 활용할 수 있게 했다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-b2ad680160",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n레모네이드 판매를 통해 우리는 경제에 관한 중요한 교훈을 배웠다.\n\n<보기>\nlearned / through selling lemonade / an important lesson / We / about economics",
+"selfGrade": true,
+"answer": "We learned an important lesson about economics through selling lemonade.",
+"solution": "주어 We 뒤에 동사 learned와 목적어 an important lesson을 배열한다. about economics는 lesson을 수식하고, through selling lemonade는 배움의 수단을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-e3863439ca",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n나는 점심을 먹은 후에 오래된 기타를 연주하기 시작했다.\n\n<보기>\nafter lunch / my old guitar / I / to play / began",
+"selfGrade": true,
+"answer": "I began to play my old guitar after lunch.",
+"solution": "주어 I와 동사 began 뒤에 목적어 역할을 하는 to play my old guitar를 배열한다. 시간을 나타내는 after lunch는 문장 끝에 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-b62306ee86",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n일상적인 물건의 그림자는 예술의 일부가 될 수 있다.\n\n<보기>\npart / can / everyday objects / of art / The shadows of / become",
+"selfGrade": true,
+"answer": "The shadows of everyday objects can become part of art.",
+"solution": "The shadows of everyday objects가 주어이고 can become이 서술어이다. become 뒤에는 보어인 part of art를 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-4e3a191c4a",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 내용을 나타내는 제목을 <보기>의 단어 및 표현을 배열하여 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것.\n\n사람의 가치관과 태도는 결혼이나 출산 같은 중요한 사건을 겪으면서 달라질 수 있다. 따라서 특정 태도를 어느 한 세대만의 특징이라고 단정하기는 어렵다.\n\n제목의 의미: 삶의 주요 사건이 사람들의 가치관과 태도에 영향을 미치는 방식\n\n<보기>\nPeople’s Values / Affect / How / and Attitudes / Major Life Events",
+"selfGrade": true,
+"answer": "How Major Life Events Affect People’s Values and Attitudes",
+"solution": "‘~하는 방식’을 나타내는 How 뒤에는 주어 Major Life Events와 동사 Affect를 배열한다. People’s Values and Attitudes는 Affect의 목적어로, Values와 Attitudes가 and로 연결된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-2f5e658622",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n우리가 레모네이드를 팔면서 번 돈은 어린이 보호 시설을 돕는 데 사용되었다.\n\n<보기>\nwas used / we earned / a children’s home / The money / to help / by selling lemonade / that",
+"selfGrade": true,
+"answer": "The money that we earned by selling lemonade was used to help a children’s home.",
+"solution": "The money 뒤에 목적격 관계대명사 that이 이끄는 절을 연결한다. 관계절은 that we earned by selling lemonade이며, 문장의 주된 서술어는 was used이다. to help a children’s home은 돈이 사용된 목적을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-3931effed3",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n휴대 전화 없이 시간을 보내는 것은 내가 기타 연주에 집중하도록 도와주었다.\n\n<보기>\nhelped / on playing / Spending time / me / the guitar / without my phone / focus",
+"selfGrade": true,
+"answer": "Spending time without my phone helped me focus on playing the guitar.",
+"solution": "동명사구 Spending time without my phone이 문장의 주어이다. help는 목적어 뒤에 동사원형을 쓸 수 있으므로 helped me focus로 배열한다. focus on 뒤에는 동명사구 playing the guitar가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-591e6a3271",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n한 사람이 속한 세대가 아니라, 그 사람이 겪는 삶의 사건들이 그 사람의 태도를 바꿀 수 있다.\n\n<보기>\ncan change / the generation / It is / that / a person experiences / the life events / their attitudes / the person belongs to / rather than",
+"selfGrade": true,
+"answer": "It is the life events a person experiences rather than the generation the person belongs to that can change their attitudes.",
+"solution": "It is ~ that ... 강조 구문에서 강조되는 주어는 the life events이다. a person experiences는 life events를, the person belongs to는 generation을 각각 수식한다. rather than은 두 명사구를 연결하며, 강조 구문의 that 뒤에 can change their attitudes를 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-ebcda4763c",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 일치하도록 <보기>의 단어 및 표현을 배열하여 영어 문장을 완성하시오. 각 항목은 한 번씩만 사용하고, 변형하거나 추가하지 말 것. 문장 끝에 마침표를 쓸 것.\n\n그림자 그림에 대한 반응이 너무나 긍정적이어서 그 예술가는 날마다 새로운 그림을 만들기로 결심했다.\n\n<보기>\nthat / to create / So positive / the artist / every day / were / decided / to the shadow drawing / a new picture / the reactions",
+"selfGrade": true,
+"answer": "So positive were the reactions to the shadow drawing that the artist decided to create a new picture every day.",
+"solution": "‘너무 ~해서 …하다’를 나타내는 so ~ that 구문에서 So positive가 문장 앞으로 이동하면 주어와 동사가 도치된다. 따라서 were the reactions 순서로 배열하고, to the shadow drawing을 reactions 뒤에 연결한다. that절에서는 decided 뒤에 to create를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
 }
 ]

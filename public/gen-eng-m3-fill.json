@@ -189,5 +189,252 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m3s1t1",
 "custom": true
+},
+{
+"id": "fill-31cc69f5c9",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\n\nReading can help her create interesting stories, while daily practice can improve her drawing.\n\nJisu is worried that she cannot become an animator because she is not good at drawing. (①) Mr. Kim explains that an animator needs more than excellent drawing skills. (②) An animator also has to tell a good story through pictures. (③) He suggests two activities that Jisu can do regularly. (④) By following this advice, she can develop both skills step by step. (⑤) Jisu thanks him and decides to keep trying.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "주어진 문장의 ‘두 가지 활동’은 독서와 그림 연습이므로, 이를 소개하는 문장 뒤에 들어가야 한다. 또한 뒤의 ‘both skills’는 이야기 구성 능력과 그림 실력을 가리키므로 ④가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-f2b0ed94dc",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\n\nTony then asks whether there is anything special he should remember.\n\nTony arrives to do volunteer work and asks what his task is. (①) The woman gives him a book and tells him to record himself reading it for blind people. (②) Tony says that he understands the task. (③) The woman shows him where the recording room is. (④) She answers that he should read every sentence slowly and clearly. (⑤) Tony promises to do his best.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "주어진 문장은 Tony가 주의 사항을 질문하는 내용이다. 바로 뒤의 ‘She answers’가 그 질문에 대한 대답이므로 질문은 ④에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-b2b2ef2594",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\n\nThat is exactly why those scenes are the best part of the movie for her.\n\nAmy shows Ted a poster for an SF movie about a hero who saves the Earth. (①) Ted says that the story sounds exciting. (②) Amy explains that SF is her favorite type of movie. (③) She especially enjoys scenes created with computer technology because they look both fantastic and real. (④) Ted becomes interested and suggests seeing the movie together that weekend. (⑤) Amy gladly agrees.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "‘those scenes’는 바로 앞에서 언급한 컴퓨터 기술로 만든 장면들을 가리킨다. 또한 주어진 문장은 Amy가 그 장면들을 좋아하는 이유를 정리하므로 ④에 들어가는 것이 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-d042ed79e6",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\n\nHis answer makes Jina want to hear more about the teacher rather than about the subject itself.\n\nJina asks Jiho how his first day of third grade was. (①) Jiho replies that he likes both his teachers and his new classmates. (②) When Jina asks about his homeroom teacher, Jiho says that Mr. Kim teaches math. (③) He adds that Mr. Kim is humorous and has already shared some entertaining stories about math. (④) Jina asks Jiho to describe Mr. Kim in greater detail. (⑤) Jiho begins telling her another story about him.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "주어진 문장의 ‘His answer’는 Mr. Kim이 유머러스하고 재미있는 이야기를 했다는 Jiho의 대답을 가리킨다. 그 결과 Jina가 선생님에 관해 더 묻는 흐름이 이어지므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-69a9d4d97e",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\n\nIn a single reply, he corrects both her narrow view of the job and her belief that her present weakness cannot be overcome.\n\nJisu believes that being an animator is only about drawing well. (①) Since her drawing is not good enough now, she also thinks that becoming an animator may be impossible for her. (②) She shares both worries with Mr. Kim. (③) He explains that animators need good stories as well as pictures and that regular practice can improve her drawing. (④) Jisu realizes that she can prepare for the job by reading many books and practicing every day. (⑤) She decides not to give up her dream.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "주어진 문장의 ‘both’는 애니메이터에게 그림만 중요하다는 생각과 현재 그림을 못 그리면 꿈을 이룰 수 없다는 생각을 가리킨다. Mr. Kim의 대답이 두 오해를 모두 바로잡은 직후인 ④에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-faae639342",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용으로 미루어 알 수 없는 것은?\n\nPopeye is a famous cartoon character who becomes very strong after eating spinach. As the cartoon gained popularity in the United States during the 1930s, many children started eating spinach. Crystal City, Texas, is well known for spinach and has a statue of Popeye. Real spinach cannot make people as powerful as Popeye, but it contains many nutrients.",
+"choices": [
+"뽀빠이는 시금치를 먹으면 힘이 강해지는 만화 인물이다.",
+"시금치에는 우리 몸에 필요한 영양소가 다양하게 들어 있다.",
+"뽀빠이의 인기는 아이들의 식생활에 영향을 주었다.",
+"Crystal시에서는 뽀빠이의 모습을 본뜬 조형물을 볼 수 있다.",
+"뽀빠이가 인기를 얻기 전에는 미국에서 아무도 시금치를 먹지 않았다."
+],
+"answer": "⑤",
+"solution": "뽀빠이의 인기가 높아지면서 많은 아이들이 시금치를 먹기 시작했다는 내용은 있다. 그러나 그전에 미국에서 아무도 시금치를 먹지 않았다는 것은 알 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-56066404b3",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 판단할 때, 근거가 없는 것은?\n\nA newspaper once confused Alfred Nobel with his brother and announced Alfred's death. Alfred read the report himself. It made him worry that people would remember him for making dangerous things used in war. He hoped to leave a better memory of himself, so he gave money to establish the Nobel Prize. Today, the prize is more closely connected with his name than dynamite is.",
+"choices": [
+"노벨은 자신이 죽었다는 잘못된 보도를 직접 읽었다.",
+"노벨은 상을 받을 사람들을 모두 직접 골랐다.",
+"노벨은 사람들이 자신을 어떻게 기억할지 고민했다.",
+"노벨이 돈을 기부한 일은 그가 남기고 싶었던 이미지와 관련이 있다.",
+"오늘날 노벨이라는 이름은 다이너마이트보다 노벨상을 더 떠올리게 한다."
+],
+"answer": "②",
+"solution": "글에는 노벨이 자신의 이미지를 고민한 뒤 상을 만들기 위해 돈을 기부했다는 내용이 제시되어 있다. 그러나 그가 수상자들을 직접 선정했는지는 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-4af3bbf92a",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 바탕으로 알 수 없는 내용은?\n\nWhen the shaking ended, we were told to leave the building by the stairs. My mother asked my father if he was safe. He explained that he had been driving home when the earthquake began and had stopped his car immediately. Outside, we saw cars damaged by pieces of buildings. We moved to an open area because more pieces might fall.",
+"choices": [
+"가족은 흔들림이 끝난 뒤 건물 밖으로 나가라는 말을 들었다.",
+"어머니는 아버지의 안전을 걱정했다.",
+"아버지는 지진이 시작되었을 때 운전 중이었다.",
+"가족이 밖으로 나왔을 때 아버지는 이미 집에 도착해 있었다.",
+"가족은 건물에서 떨어지는 조각을 피하려고 탁 트인 곳으로 이동했다."
+],
+"answer": "④",
+"solution": "아버지가 귀가하던 중 차를 즉시 세웠다는 사실은 알 수 있다. 그러나 가족이 건물 밖으로 나왔을 때 아버지가 집에 도착했는지는 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-cfb6fdb69b",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 관련하여 추론할 수 없는 것은?\n\nStudents study foreign languages for different reasons. For some, it is a school requirement; for others, it is an enjoyable activity.\n\nOwen: I support a soccer team from Spain. I would like to understand my favorite players when they are interviewed, but my Spanish is not good enough.\n\nJulie: Regular practice helps. My phone now shows information in Spanish, and I use Spanish when I write shopping lists.\n\nInho: First, get comfortable with the sounds of Spanish. Watching movies can help. If the speech is too fast, begin with movies made for children.",
+"choices": [
+"외국어 공부를 즐거운 활동으로 여기는 학생들도 있다.",
+"Owen에게는 좋아하는 선수들의 인터뷰를 이해하고 싶은 동기가 있다.",
+"Julie는 일상생활 속에서 스페인어를 접할 기회를 만들고 있다.",
+"Owen은 학교의 필수 과제를 마치려고 선수들의 인터뷰를 이해하려 한다.",
+"Inho는 말의 속도가 부담스러운 학습자에게 어린이 영화를 제안한다."
+],
+"answer": "④",
+"solution": "학교의 요구 때문에 외국어를 공부하는 학생들이 있다는 것은 일반적인 설명이다. Owen이 밝힌 동기는 좋아하는 선수들의 인터뷰를 이해하는 것이므로, 이를 학교 과제와 연결할 근거는 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-c125a42dbc",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 이끌어 낼 수 있는 판단으로 적절하지 않은 것은?\n\nA cartoon helped make spinach popular among American children. Popeye, who gets extraordinary strength from spinach, became popular during the 1930s. Crystal City in Texas, a city famous for spinach, even put up a statue of him.\n\nSpinach is useful outside the kitchen, too. As it takes in water from the ground, other substances enter the plant as well. Scientists have used this ability to help locate hidden bombs. They attach sensors to the leaves of specially prepared spinach plants. If material from bombs is absorbed by the plants, the sensors produce light.",
+"choices": [
+"A fictional character influenced what some children chose to eat.",
+"The statue connects a character known for eating spinach with a city known for spinach.",
+"The brightness of the sensors tells scientists exactly how many bombs are underground.",
+"The substances that cause a response can come from below ground, although the sensors are on the leaves.",
+"The scientists' method makes use of something spinach takes in along with water."
+],
+"answer": "③",
+"solution": "센서는 시금치가 폭탄에서 나온 물질을 흡수하면 빛을 낸다고 설명되어 있다. 빛의 밝기로 폭탄의 정확한 개수를 알 수 있다는 내용이나 이를 뒷받침하는 근거는 없다. 나머지는 만화의 영향과 시금치를 이용한 탐지 원리를 바꾸어 표현한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-c240305830",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 여러 정보를 종합할 때, 추론할 수 없는 것은?\n\nOnly after the shaking had stopped did we hear the order to use the stairs and leave the building. My father, who had stopped his car while driving home, told my mother that he was safe. He was using the radio to learn about the situation.\n\nWe went downstairs and found that falling parts of buildings had damaged cars. To stay away from further falling pieces, we headed for an open area. I had practiced what to do in earthquakes many times at school, yet I had never expected to face one myself. The fear of that night stayed with me. Since then, I have treated the drills more seriously because another earthquake could happen at any time.",
+"choices": [
+"The narrator's experience changed the importance the narrator placed on earthquake drills.",
+"The father's immediate safety and his efforts to learn about the situation are both mentioned.",
+"The family considered the danger of falling objects even after leaving the building.",
+"The narrator's earlier school drills had removed the fear felt during the actual earthquake.",
+"The order to leave came after the shaking ended, and the family followed a route using stairs."
+],
+"answer": "④",
+"solution": "글쓴이는 학교에서 여러 차례 훈련했지만 실제 지진에서는 두려움을 느꼈고, 그 기억도 오래 남았다고 했다. 따라서 이전의 훈련이 실제 지진에서 느낀 두려움을 없애 주었다고 추론할 수 없다. 훈련의 중요성을 더 크게 받아들이게 된 것은 실제 지진을 겪은 뒤의 변화이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-84917d9fb9",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 시간 관계와 인과 관계를 함께 고려할 때, 뒷받침되지 않는 것은?\n\nIn 1888, the death of Ludvig Nobel led a French newspaper to publish an incorrect report saying that his brother Alfred had died. Reading how the newspaper described him, Alfred became concerned about being remembered for objects that brought danger to the world through war. He wished instead to leave a memory connected with improving the world.\n\nAlfred provided money for the establishment of the Nobel Prize in 1895. He died the following year, aged 63. The prize initially had five award categories; another category joined them in 1968. These days, his name brings the prize to mind more readily than dynamite. His story connects a concern about public memory with an action that helped change that memory.",
+"choices": [
+"Seven years separated the mistaken death report from Alfred's donation for the prize.",
+"Alfred's brother died before the donation, while Alfred himself died after it.",
+"The additional award category appeared seventy-two years after Alfred's death.",
+"The later association of Alfred's name with the prize is consistent with the kind of memory he hoped to leave.",
+"Before the mistaken report appeared, Alfred had already decided to use his money to establish the prize."
+],
+"answer": "⑤",
+"solution": "잘못된 보도를 읽기 전에 노벨이 이미 상을 설립하기로 결정했다는 근거는 없다. 글은 오히려 보도를 읽고 자신의 이미지에 대해 고민한 일을 기부의 배경으로 제시한다. 1888년부터 1895년까지는 7년이며, 사망한 1896년부터 여섯 번째 부문이 추가된 1968년까지는 72년이므로 ①과 ③도 성립한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-714e026825",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에 제시된 발언의 범위를 고려할 때, 추론의 근거가 부족한 것은?\n\nLearning a foreign language may be required at school, but it can also be something students do for pleasure. Learners have various ways of working toward their goals.\n\nOwen: Being a fan of a Spanish soccer team makes me want to understand interviews with the players I like. My Spanish is still too limited for that. What could help me improve?\n\nJulie: Make practice part of every day. I changed my phone's language setting to Spanish. Even my shopping lists are written in Spanish now.\n\nInho: Becoming familiar with how the language sounds should come first. Watch Spanish movies regularly. When you cannot keep up with the speech, children's movies are a good place to start.",
+"choices": [
+"Julie's examples suggest that ordinary activities can provide opportunities for language practice.",
+"Owen's comments show that he has greater difficulty understanding spoken Spanish than written Spanish.",
+"Inho's advice suggests that learners can work on familiarity with Spanish sounds before they can follow fast speech.",
+"The general mention of school requirements does not establish that such a requirement is Owen's reason for studying Spanish.",
+"Although Julie and Inho suggest different activities, each offers a way to bring Spanish into a learner's regular routine."
+],
+"answer": "②",
+"solution": "Owen은 선수들의 인터뷰를 이해하기에 자신의 스페인어 실력이 부족하다고 말했을 뿐, 읽기 능력은 언급하지 않았다. 따라서 듣기를 읽기보다 더 어려워한다고 비교할 수 없다. Julie의 일상 속 연습과 Inho의 규칙적인 영화 시청 제안은 각각 지속적으로 스페인어를 접하는 방법으로 볼 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
 }
 ]

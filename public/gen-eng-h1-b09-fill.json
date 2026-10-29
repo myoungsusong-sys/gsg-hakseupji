@@ -2352,5 +2352,382 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u5m4s0t0",
 "custom": true
+},
+{
+"id": "fill-6d3b7cfc5c",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nHummingbirds drink sweet ______ from flowers as their main source of energy.",
+"choices": [
+"nectar",
+"saliva",
+"blood",
+"carbon dioxide",
+"wetland"
+],
+"answer": "①",
+"solution": "벌새가 꽃에서 마시는 달콤한 액체는 nectar(꿀)이다. 지문에서 이는 벌새의 주된 에너지원으로 설명된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e6baf4983b",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nBecause the mosquito repeatedly escaped, Tom had to keep ______ for it.",
+"choices": [
+"look",
+"looked",
+"looking",
+"to looking",
+"to be looked"
+],
+"answer": "③",
+"solution": "keep은 ‘계속 ~하다’라는 뜻일 때 동명사를 목적어로 취한다. 따라서 keep looking이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1113cc68ee",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 밑줄 친 말과 의미가 가장 가까운 것은?\n\nMosquitoes are highly sensitive to the carbon dioxide that people breathe out.",
+"choices": [
+"able to notice",
+"unlikely to follow",
+"ready to produce",
+"afraid of releasing",
+"unable to detect"
+],
+"answer": "①",
+"solution": "be sensitive to는 ‘~을 민감하게 감지하다’라는 의미이다. 따라서 able to notice가 문맥상 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6904de0192",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "주어진 문장들을 의미가 자연스럽게 이어지도록 배열한 것은?\n\n(A) In doing so, it carries pollen from one flower to another.\n(B) A hummingbird may visit hundreds of flowers in a single day.\n(C) As a result, it helps pollinate many flowers.",
+"choices": [
+"(A)－(C)－(B)",
+"(B)－(A)－(C)",
+"(B)－(C)－(A)",
+"(C)－(A)－(B)",
+"(C)－(B)－(A)"
+],
+"answer": "②",
+"solution": "먼저 벌새가 수백 송이의 꽃을 방문한다는 내용이 제시되어야 한다. In doing so는 그 행동을, As a result는 그 결과인 수분을 가리키므로 (B)－(A)－(C)가 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4c3ff75815",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 내용과 어법이 모두 알맞은 문장은?",
+"choices": [
+"Mosquitoes has killed more people than any other single cause.",
+"Mosquitoes have been killed more people throughout history.",
+"Mosquitoes have killed more people than any other single cause.",
+"Mosquitoes have killed fewer people than sharks and lions.",
+"Mosquitoes killing nearly half of all humans who have ever lived."
+],
+"answer": "③",
+"solution": "복수 주어 Mosquitoes에는 have가 쓰이며, 모기가 사람을 죽인 것이므로 능동태 have killed가 적절하다. 내용상으로도 모기는 역사상 다른 어떤 단일 원인보다 많은 사람을 죽인 것으로 추정된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6c303dac3e",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸에 들어갈 표현으로 가장 알맞은 것은?\n\nAlong with invasions, economic troubles, and corruption, malaria also ______ the fall of the Western Roman Empire.",
+"choices": [
+"contributed to",
+"resulted from",
+"protected from",
+"depended on",
+"looked for"
+],
+"answer": "①",
+"solution": "contribute to는 ‘~의 원인이 되다, ~에 기여하다’라는 뜻이다. 말라리아도 서로마 제국의 몰락에 영향을 주었다는 내용이므로 contributed to가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6c92b534f0",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nBees can have difficulty pollinating flowers in rainy weather, (A) hummingbirds can continue doing so. (B) visiting hundreds of flowers each day, hummingbirds transfer pollen and allow certain rainforest plants (C).",
+"choices": [
+"but ― By ― to grow",
+"because ― By ― grow",
+"but ― During ― growing",
+"so ― Despite ― to grow",
+"although ― Through ― grow"
+],
+"answer": "①",
+"solution": "벌과 벌새의 차이를 나타내므로 (A)에는 역접의 but이 필요하다. ‘수백 송이의 꽃을 방문함으로써’는 By visiting으로 나타내며, allow의 목적격보어에는 to부정사가 오므로 to grow가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f02b1763e9",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 요약문의 빈칸에 들어갈 말을 글에서 찾아 순서대로 쓰시오. (각 빈칸에 한 단어씩 쓸 것)\n\nAccording to Timothy Winegard, the mosquito is humanity’s greatest natural predator. It passes on deadly diseases such as malaria and yellow fever. More than a million people worldwide die from these diseases each year. Winegard estimates that mosquitoes have killed about fifty-two billion people throughout history—more than any other single cause.\n\nWinegard considers the mosquito the greatest natural (A) because the deadly (B) it spreads have (C) more humans than any other single (D).\n\n답: (A) (B) (C) (D)",
+"selfGrade": true,
+"answer": "predator diseases killed cause",
+"solution": "모기는 인류의 가장 강력한 천적이며 치명적인 질병을 옮긴다. 해당 질병으로 인한 사망자가 다른 어떤 단일 원인보다 많다는 내용에 따라 predator, diseases, killed, cause를 차례로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5faccdb0c7",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 표현과 의미가 가장 가까운 것을 고르시오.\n\nWhile brainstorming, Nand and his friends came up with an idea for a sign-language translation app.",
+"choices": [
+"gave up",
+"thought of",
+"waited for",
+"tested out",
+"disagreed with"
+],
+"answer": "②",
+"solution": "‘come up with’는 아이디어나 해결책 등을 ‘생각해 내다’라는 뜻이다. 따라서 ‘thought of’가 문맥상 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-badc3ddf7c",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\n\nNand created a translation app ____________ on artificial intelligence.",
+"choices": [
+"base",
+"based",
+"basing",
+"to base",
+"was based"
+],
+"answer": "②",
+"solution": "‘be based on’은 ‘~에 기반을 두다’라는 뜻이다. 여기서는 과거분사구가 앞의 명사 app을 수식하므로 ‘based’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-719ac961e4",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 표현의 의미로 가장 적절한 것을 고르시오.\n\nWhenever Nand was stuck, he slept on the problem, and this strategy paid off.",
+"choices": [
+"돈이 많이 들었다",
+"문제를 더 복잡하게 만들었다",
+"좋은 결과를 가져왔다",
+"계획을 포기하게 했다",
+"시간을 낭비하게 했다"
+],
+"answer": "③",
+"solution": "‘pay off’는 노력이나 방법이 성공하여 ‘좋은 결과를 가져오다’라는 의미이다. 잠을 자며 해결책을 숙고한 일이 실제 해결에 도움이 되었다는 문맥이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5a4c912100",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "Nand의 앱이 작동하는 과정을 바르게 배열한 것을 고르시오.\n\n(A) The translated text is read aloud.\n(B) The camera captures the user’s gestures.\n(C) The movements are connected with ASL words.\n(D) The ASL words are changed into text.",
+"choices": [
+"(A)－(B)－(D)－(C)",
+"(B)－(A)－(C)－(D)",
+"(B)－(C)－(D)－(A)",
+"(C)－(B)－(A)－(D)",
+"(D)－(C)－(B)－(A)"
+],
+"answer": "③",
+"solution": "먼저 카메라가 몸짓을 포착하고, 알고리즘이 그 움직임을 ASL 단어와 연결한다. 이어 단어가 문자로 바뀐 뒤 음성으로 출력되므로 순서는 (B)－(C)－(D)－(A)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-783bd8c7d5",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\n\nA: What can the museum’s AR docent program do?\nB: After a visitor scans a painting, it can display the artwork in three dimensions and provide ____________ by a digital version of its artist.",
+"choices": [
+"a translation",
+"a narration",
+"an exhibition",
+"a postcard",
+"an emotion"
+],
+"answer": "②",
+"solution": "AR 도슨트 프로그램은 그림의 3D 버전을 보여 주고, 화가의 디지털 버전이 제공하는 해설을 들려준다. ‘해설’에 해당하는 단어는 ‘narration’이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-aa680b2ca1",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말로 가장 적절한 것을 고르시오.\n\nSelf-driving technology is becoming increasingly (A)____________. A person who cannot see may (B)____________ on such a car for transportation. However, a technical breakdown could put road users at (C)____________.",
+"choices": [
+"accessible－rely－risk",
+"accurate－focus－freedom",
+"accessible－capture－security",
+"unintended－rely－ability",
+"careless－depend－advantage"
+],
+"answer": "①",
+"solution": "상용화 가능성이 커지고 있다는 내용에는 ‘accessible’이 알맞고, ‘~에 의존하다’는 ‘rely on’으로 표현한다. ‘위험에 처하게 하다’는 ‘put ~ at risk’이므로 세 번째 빈칸에는 ‘risk’가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1fc4760c09",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "Nand의 앱이 번역 결과를 만들어 내는 과정을 설명한 다음 문장의 빈칸에 지문에 나온 단어를 활용하여 쓰시오. 필요한 경우 형태를 바꾸되, 각 빈칸에는 한 단어만 쓸 것.\n\nThe camera first ____________ the signer’s gestures. An algorithm then ____________ the movements with ASL words, which are ____________ into text and finally ____________ aloud.",
+"selfGrade": true,
+"answer": "captures matches turned spoken",
+"solution": "카메라가 몸짓을 ‘포착하므로’ 첫 번째 빈칸에는 ‘captures’가 들어간다. 알고리즘은 움직임을 ASL 단어와 ‘연결하고’, 그 단어들은 문자로 ‘바뀐’ 뒤 소리 내어 ‘말해진다’. 따라서 차례대로 ‘captures, matches, turned, spoken’이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-35ec8a7e37",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "자율주행 자동차의 장점과 우려를 요약한 다음 문장의 빈칸에 괄호 안 단어를 알맞은 형태로 바꾸어 쓰시오. 각 빈칸에는 한 단어만 쓸 것.\n\nSelf-driving cars may overcome mobility (A)____________ related to age or ability and reduce accidents arising from human (B)____________. However, their complete (C)____________ on technology creates a concern: if the system is used for (D)____________ purposes, road users may be (E)____________.\n\n(A) LIMIT  (B) CARELESS  (C) DEPEND  (D) INTEND  (E) DANGER",
+"selfGrade": true,
+"answer": "limitations carelessness dependence unintended endangered",
+"solution": "(A)는 이동의 ‘제약들’이므로 복수 명사 ‘limitations’, (B)는 인간의 ‘부주의’이므로 명사 ‘carelessness’가 알맞다. (C)는 전치사 on과 함께 쓰이는 명사 ‘dependence’, (D)는 ‘의도되지 않은’이라는 뜻의 ‘unintended’가 필요하다. (E)는 수동태 may be 뒤에 과거분사 ‘endangered’를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0d820909ac",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 내용을 요약한 문장의 빈칸 (A), (B)에 들어갈 말을 본문에서 찾아 각각 한 단어로 쓰시오.\n\nThe tongue sends basic taste information to the brain. Babies generally welcome sweetness but dislike bitterness. Since a bitter taste may signal poison, avoiding it can help protect the body.\n\n요약문: Babies tend to prefer (A)________ over (B)________, which may warn them of poison.",
+"selfGrade": true,
+"answer": "(A) sweetness (B) bitterness",
+"solution": "아기들은 일반적으로 단맛을 좋아하고 쓴맛을 싫어한다는 내용이다. 따라서 선호하는 맛인 sweetness가 (A)에, 독의 존재를 알릴 수 있는 맛인 bitterness가 (B)에 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-211ad195a1",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 내용을 요약한 문장의 빈칸 (A), (B)에 들어갈 말을 본문에서 찾아 각각 한 단어로 쓰시오.\n\nFood can bring people from different countries together. Food diplomacy uses meals to encourage cooperation and peace. It can take place at an official dinner or when ordinary people enjoy food from another culture.\n\n요약문: Through food diplomacy, both governments and ordinary people can use food to support (A)________ and (B)________.\n\n<조건>\n• 본문에 나온 순서대로 쓸 것",
+"selfGrade": true,
+"answer": "(A) cooperation (B) peace",
+"solution": "글에서는 음식 외교가 협력과 평화를 장려하기 위해 음식을 활용한다고 설명한다. 본문에 나온 순서에 따라 cooperation과 peace를 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-64775dd5b7",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 내용을 바탕으로, 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\nPeople do not always dislike the same foods throughout their lives. Someone who dislikes cilantro may gradually accept it after trying small amounts repeatedly.\n\n우리말: 반복적인 노출은 사람들이 고수를 견디는 법을 배우도록 도울 수 있다.\n\n<보기>\nlearn to tolerate cilantro / can help / repeated exposure / people\n\n<조건>\n• 모든 어구를 한 번씩 그대로 사용할 것\n• 문장의 첫 글자는 대문자로 쓰고 마침표를 붙일 것",
+"selfGrade": true,
+"answer": "Repeated exposure can help people learn to tolerate cilantro.",
+"solution": "주어 Repeated exposure 뒤에 동사구 can help를 배열한다. help는 목적어 people 뒤에 동사원형 learn을 취할 수 있으므로 learn to tolerate cilantro를 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9bc14f940c",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 바탕으로, 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\nThe ingredients available in a region help shape its food culture. Yet people from the same cultural background do not necessarily enjoy the same foods. Culture alone cannot fully explain an individual's preferences.\n\n우리말: 우리는 한 사람의 음식 선호를 오직 그 사람의 문화적 배경만을 근거로 예측할 수 없다.\n\n<보기>\nsolely on the basis of / food preferences / we cannot predict / their cultural background / a person's\n\n<조건>\n• 모든 어구를 한 번씩 그대로 사용할 것\n• 문장의 첫 글자는 대문자로 쓰고 마침표를 붙일 것",
+"selfGrade": true,
+"answer": "We cannot predict a person's food preferences solely on the basis of their cultural background.",
+"solution": "predict의 목적어는 a person's food preferences이다. ‘오직 ~만을 근거로’라는 의미의 solely on the basis of 뒤에 their cultural background를 연결한다. their는 앞의 a person을 가리킨다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ce04da35a4",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 바탕으로, 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\nTaste signals from the tongue provide only part of our experience of food. Smells also reach the nose while we chew, helping us recognize different flavors.\n\n우리말: 향미를 음미하기 위해, 우리는 우리의 혀뿐만 아니라 더 중요하게는 우리의 코에도 의존한다.\n\n<보기>\non our noses / to appreciate flavors / but more importantly / depend / we / not just on our tongues\n\n<조건>\n• 모든 어구를 한 번씩 그대로 사용할 것\n• to부정사구로 문장을 시작할 것\n• 문장의 첫 글자는 대문자로 쓰고 필요한 문장부호를 붙일 것",
+"selfGrade": true,
+"answer": "To appreciate flavors, we depend not just on our tongues but more importantly on our noses.",
+"solution": "목적을 나타내는 To appreciate flavors를 문장 앞에 놓는다. depend on의 구조를 바탕으로 not just A but B가 on our tongues와 on our noses를 연결하도록 배열한다. more importantly는 코의 역할이 더 중요함을 강조한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-921f564026",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 내용을 바탕으로, 우리말과 일치하도록 <보기>의 어구를 배열하여 한 문장을 완성하시오.\n\nWhen we chew food, smells move from the mouth toward the nose. This movement helps us recognize a variety of flavors that the tongue alone cannot fully identify.\n\n우리말: 우리가 씹을 때, 음식 냄새는 우리의 입에서 코로 이동하며, 그 결과 우리가 여러 향미를 구별할 수 있게 한다.\n\n<보기>\nallowing / to our noses / as we chew / food smells / many flavors / travel / us to distinguish / from our mouths\n\n<조건>\n• 모든 어구를 한 번씩 그대로 사용할 것\n• as로 시작하는 부사절을 문장 맨 앞에 둘 것\n• allowing으로 시작하는 분사구문을 문장 끝에 사용하여 앞 절의 결과를 나타낼 것\n• 문장의 첫 글자는 대문자로 쓰고 필요한 문장부호를 붙일 것",
+"selfGrade": true,
+"answer": "As we chew, food smells travel from our mouths to our noses, allowing us to distinguish many flavors.",
+"solution": "시간을 나타내는 As we chew 뒤에 주절 food smells travel을 놓는다. 이동 경로는 from our mouths to our noses로 나타낸다. 앞 절의 결과를 덧붙이는 allowing 분사구문에서는 allow의 목적어 us 뒤에 to distinguish many flavors가 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e7f384ef3f",
+"typeId": "eng-h1-b09-u6m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 요약한 문장의 빈칸 (A)~(D)에 들어갈 말을 본문에서 찾아 각각 한 단어로 쓰시오.\n\nA certain gene can increase a person's sensitivity to the smell of cilantro, making it seem soapy. Nevertheless, repeated exposure to cilantro can help a person build tolerance. Adding small amounts to curry is one way to become more accepting of it. Food preferences can therefore reflect biology without being fixed for life.\n\n요약문: Although a gene may increase (A)________ to cilantro's smell, repeated (B)________ can build (C)________, suggesting that food (D)________ are not necessarily permanent.\n\n<조건>\n• 본문에 사용된 단어의 형태를 바꾸지 말 것",
+"selfGrade": true,
+"answer": "(A) sensitivity (B) exposure (C) tolerance (D) preferences",
+"solution": "유전자가 높일 수 있는 것은 고수 냄새에 대한 민감성이므로 (A)는 sensitivity이다. 반복적인 노출을 통해 내성을 기를 수 있으므로 (B)는 exposure, (C)는 tolerance이다. 이러한 변화 가능성이 보여 주는 결론은 음식 선호가 영구적으로 고정되지는 않는다는 것이므로 (D)는 preferences이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m6s0t0",
+"custom": true
 }
 ]

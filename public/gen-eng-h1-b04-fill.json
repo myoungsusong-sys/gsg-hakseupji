@@ -2807,5 +2807,265 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b04-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-356cdc24e0",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"AI-generated artworks has appeared in many galleries.",
+"The portrait was create with an algorithm.",
+"The sale helped AI artworks becoming widely accepted.",
+"Since 2022, more AI-generated artworks have been exhibited.",
+"The art group produced the portrait used a large data bank."
+],
+"answer": "④",
+"solution": "‘Since 2022’는 과거부터 현재까지 이어지는 기간을 나타내므로 현재완료가 적절하다. 복수 주어인 artworks와 수동의 의미를 모두 충족하는 ‘have been exhibited’가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-09c0b2443f",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 적절한 것은?\n\nThe successful sale helped AI art ______ more accepted in the traditional art world.",
+"choices": [
+"become",
+"became",
+"becoming",
+"to becoming",
+"becomes"
+],
+"answer": "①",
+"solution": "「help+목적어+동사원형」의 구조이므로 become이 적절하다. 따라서 ‘AI 예술이 더 인정받도록 도왔다’라는 뜻이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-36c063d277",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 적절한 것은?\n\nSome people oppose AI-generated art because ______ can use the data of human art without respecting copyright.",
+"choices": [
+"it",
+"they",
+"them",
+"its",
+"itself"
+],
+"answer": "①",
+"solution": "빈칸은 단수 표현인 AI-generated art를 대신하면서 절의 주어 역할을 해야 한다. 따라서 주격 대명사 it이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1a3678d789",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA portrait (A)[created / creating] by AI attracted great attention in 2018. An art group produced it, (B)[using / used] an algorithm and a large collection of portraits. Its sale helped AI artworks (C)[become / becoming] more familiar to the traditional art world.",
+"choices": [
+"created ― using ― become",
+"created ― used ― becoming",
+"creating ― using ― become",
+"creating ― used ― becoming",
+"created ― using ― becoming"
+],
+"answer": "①",
+"solution": "초상화는 AI에 의해 만들어진 대상이므로 과거분사 created가 적절하다. 주절의 부가 동작은 using으로 나타내며, help의 목적격보어 자리에는 동사원형 become이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-02f97aadac",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nCurrent copyright law (A)[applies / apply] to human beings rather than machines. However, (B)[it / that] is sometimes difficult to determine who (C)[undertook / to undertake] the arrangements for an AI-generated artwork.",
+"choices": [
+"applies ― it ― undertook",
+"applies ― that ― undertook",
+"apply ― it ― undertook",
+"apply ― that ― to undertake",
+"applies ― it ― to undertake"
+],
+"answer": "①",
+"solution": "주어 Current copyright law가 단수이므로 applies가 알맞다. 「It is difficult to＋동사원형」에서 it은 가주어이고, who가 이끄는 간접의문문에는 완전한 서술어 undertook이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1dc9d684d8",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nOn March 13, 2016, experts gathered to inspect a newly presented portrait. What appeared to be a work of Rembrandt ①was examined with great care. Engineers later revealed that the portrait ②had been produced by an AI system. The experts had the engineers ③to present evidence of the production process. A video showed the system studying Rembrandt’s works and creating a figure ④facing to the right. The unexpected truth left the experts ⑤stunned.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "사역동사 have는 「have+목적어+동사원형」의 구조로 사용된다. 따라서 ‘had the engineers to present’의 to present를 present로 고쳐야 한다. 나머지는 주어·시제·분사 관계가 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6d36f19fc9",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 네 부분을 찾아 고친 뒤, 문장 전체를 바르게 쓰시오.\n\nMore and more companies asks for legal protection of artworks creating by AI programs, while current law apply to humans rather than machines, and it is unclear whether the author is the person who funded the project, doing the coding, or input a prompt.",
+"selfGrade": true,
+"answer": "More and more companies ask for legal protection of artworks created by AI programs, while current law applies to humans rather than machines, and it is unclear whether the author is the person who funded the project, did the coding, or input a prompt.",
+"solution": "복수 주어 companies에는 ask가, 단수 주어 current law에는 applies가 필요하다. artworks는 AI 프로그램에 의해 만들어지므로 creating을 created로 고쳐야 한다. funded, did, input이 병렬을 이루어야 하므로 doing은 did가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-68e769755d",
+"typeId": "eng-h1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 틀린 문장은?",
+"choices": [
+"What the experts believed to be a genuine Rembrandt turned out to have been created by AI.",
+"The portrait was examined carefully so that its origin could be confirmed.",
+"The engineers had their AI system analyze data from 346 works.",
+"The order required the figure to wear a hat, have facial hair, and facing to the right.",
+"What stunned the experts was that AI had produced what seemed to be a genuine work."
+],
+"answer": "④",
+"solution": "require의 목적격보어인 to wear에 have와 face가 병렬로 연결되어야 한다. 따라서 ‘to wear a hat, have facial hair, and face to the right’로 고쳐야 한다. 나머지 문장에서는 완료부정사, 사역동사, 관계절 및 명사절의 구조가 올바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e52520864",
+"typeId": "eng-h1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nA stone (A)[known / knowing] as a hunger stone can become visible during a drought. It carries a message (B)[that / what] warns people about difficult times. Such messages encourage people (C)[being / to be] ready for water shortages.",
+"choices": [
+"known — what — being",
+"known — that — to be",
+"knowing — that — being",
+"knowing — what — to be",
+"known — that — being"
+],
+"answer": "②",
+"solution": "돌이 특정 이름으로 ‘알려진’ 것이므로 (A)에는 수동의 의미를 나타내는 known이 알맞다. (B)에는 선행사 a message를 수식하면서 관계절의 주어 역할을 하는 that이 필요하다. encourage는 목적격 보어로 to부정사를 취하므로 (C)는 to be이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-33304a74b1",
+"typeId": "eng-h1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nA (A)[shortening / shortened] passage from Dry introduces a girl (B)[who / which] faces a serious drought. Her story makes readers think about the problems (C)[contributing / contribute] to water shortages.",
+"choices": [
+"shortening — who — contributing",
+"shortened — which — contributing",
+"shortened — who — contribute",
+"shortened — who — contributing",
+"shortening — which — contribute"
+],
+"answer": "④",
+"solution": "분량이 ‘축약된’ 지문이라는 뜻이므로 (A)에는 shortened가 알맞다. (B)는 사람인 a girl을 선행사로 하는 주격 관계대명사 who이다. (C)에는 problems를 뒤에서 수식하며 능동의 의미를 나타내는 현재분사 contributing이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-138ceb14ef",
+"typeId": "eng-h1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nPeople have grown (A)[tired / tiring] of the word drought. In Dry, Alyssa discovers that her family has no running water. At the store, she realizes that (B)[what / that] she needs can also be found in the form of ice. A man helps her and Garrett by (C)[pushing / push] their heavy cart.",
+"choices": [
+"tired — what — pushing",
+"tired — that — push",
+"tiring — what — push",
+"tiring — that — pushing",
+"tired — what — push"
+],
+"answer": "①",
+"solution": "사람들이 싫증을 느끼는 상태이므로 (A)에는 tired가 알맞다. (B)는 선행사 없이 ‘그녀에게 필요한 것’을 뜻하며 needs의 목적어 역할도 하는 what이다. 전치사 by 뒤에는 동명사가 와야 하므로 (C)는 pushing이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-473ff35fa7",
+"typeId": "eng-h1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nThe stones (A)[knowing / known] as hunger stones usually lie beneath river water. When falling water levels reveal them, their inscriptions offer a record of (B)[what / that] people experienced during earlier droughts. Because drought can reduce harvests and leave people hungry, these words urge those who may face similar hardships (C)[preparing / to prepare] for them.",
+"choices": [
+"known — that — to prepare",
+"knowing — what — preparing",
+"known — what — to prepare",
+"known — what — preparing",
+"knowing — that — to prepare"
+],
+"answer": "③",
+"solution": "(A)는 stones가 특정 이름으로 불린다는 수동 관계이므로 known이다. (B)는 전치사 of의 목적어인 명사절을 이끌면서 experienced의 목적어 역할도 해야 하므로 what이 알맞다. (C)는 목적어 those와 이를 수식하는 관계절 뒤에 놓인 목적격 보어로, urge가 요구하는 to부정사 to prepare가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9add2acada",
+"typeId": "eng-h1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nAlyssa finds Garrett, (A)[that / whom] she asks to help her collect ice. Her choice attracts the attention of other shoppers, who begin taking ice as well. A man approaches their heavily loaded cart and starts helping without (B)[grabbing / grab] anything except its handle. The scene occurs in a story about a drought, but the factors (C)[contribute / contributing] to real water shortages remain a concern.",
+"choices": [
+"that — grabbing — contributing",
+"whom — grabbing — contributing",
+"whom — grab — contribute",
+"that — grab — contributing",
+"whom — grabbing — contribute"
+],
+"answer": "②",
+"solution": "(A)는 계속적 용법의 관계절에서 asks의 목적어 역할을 하므로 whom이며, that은 이 용법에 쓸 수 없다. (B)는 전치사 without 뒤에 있으므로 동명사 grabbing이 필요하다. 마지막 문장의 본동사는 remain이므로 (C)에는 factors를 수식하는 현재분사 contributing이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0d86d1740f",
+"typeId": "eng-h1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nGarrett, (A)[whom / that] Alyssa expects to help her collect ice, initially questions why they need ice instead of water. As she explains her choice, the two continue loading their cart. The cart, with one bag of ice (B)[piling / piled] on top of another, eventually becomes extremely hard to move. The man who notices their difficulty takes its handle before (C)[receiving / receive] an answer to his offer of help. His kindness leads Alyssa to think about returning the favor.",
+"choices": [
+"whom — piling — receiving",
+"that — piled — receiving",
+"whom — piled — receive",
+"whom — piled — receiving",
+"that — piling — receive"
+],
+"answer": "④",
+"solution": "(A)는 쉼표로 분리된 관계절에서 expects의 목적어이자 to help의 의미상 주어 역할을 하므로 whom이 알맞다. (B)에서 one bag of ice는 다른 얼음 봉지 위에 ‘쌓이는’ 대상이므로 piled를 써야 한다. (C)는 전치사 before 뒤에 오는 동명사 receiving이며, 문장의 본동사 takes와 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u5m1s0t0",
+"custom": true
 }
 ]

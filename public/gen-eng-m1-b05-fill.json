@@ -375,5 +375,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u3m2s0t0",
 "custom": true
+},
+{
+"id": "fill-64296afd14",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A)~(C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n• Somi's school bag (A)[have / has] drumsticks in it.\n• The songs of her school band (B)[is / are] great.\n• Blue is Mariam's favorite color. It is (C)[her / she] favorite color.",
+"choices": [
+"have — are — her",
+"has — is — her",
+"has — are — she",
+"has — are — her",
+"have — is — she"
+],
+"answer": "④",
+"solution": "첫 문장의 주어는 단수인 Somi's school bag이므로 has가 알맞다. 두 번째 문장의 주어는 복수인 The songs이므로 are를 쓴다. favorite color 앞에는 소유격 her가 필요하므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-76acca7afb",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말이 바르게 연결된 것은?\n\n• Mariam ________(A) in Dubai.\n• People in Luca's country ________(B) rugby.\n• Luca ________(C) on his school's rugby team.",
+"choices": [
+"live — loves — is",
+"lives — love — is",
+"lives — loves — are",
+"live — love — are",
+"lives — love — are"
+],
+"answer": "②",
+"solution": "Mariam은 3인칭 단수 주어이므로 lives를 쓴다. People은 복수 취급하므로 love가 알맞다. Luca는 단수 주어이므로 be동사는 is를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1197ed5ed6",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Mariam live in Dubai.",
+"Somi and Luca is middle school students.",
+"Luca have a rugby ball in his school bag.",
+"Blue is Mariam favorite color.",
+"The sunlight in Dubai is very strong."
+],
+"answer": "⑤",
+"solution": "⑤의 주어 The sunlight는 단수 취급하므로 is가 알맞다. ①은 live를 lives로, ②는 is를 are로, ③은 have를 has로 고쳐야 한다. ④는 favorite color 앞에서 소유를 나타내도록 Mariam을 Mariam's로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-436176991d",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 어법상 옳은 문장만을 모두 고른 것은?\n\n<보기>\n㉠ The people in Luca's country loves rugby.\n㉡ The drumsticks in Somi's school bag are hers.\n㉢ Mariam's school have a special rule.\n㉣ Somi plays the drums in her school band.",
+"choices": [
+"㉠, ㉡",
+"㉠, ㉢",
+"㉡, ㉣",
+"㉡, ㉢, ㉣",
+"㉠, ㉢, ㉣"
+],
+"answer": "③",
+"solution": "㉡은 복수 주어 The drumsticks에 are가 쓰였고, hers는 ‘그녀의 것’이라는 뜻으로 알맞다. ㉣은 3인칭 단수 주어 Somi에 plays가 쓰여 옳다. ㉠은 loves를 love로, ㉢은 have를 has로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-869194b2e1",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 괄호 (A)~(D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n• The songs that Somi and her band play (A)[is / are] great.\n• Mariam (B)[lives / lives in] Dubai.\n• The school that Mariam goes to (C)[have / has] a special rule.\n• Luca plays rugby very well. Rugby is popular in (D)[he / his] country.",
+"choices": [
+"are — lives in — has — his",
+"is — lives in — has — his",
+"are — lives — has — his",
+"are — lives in — have — his",
+"are — lives in — has — he"
+],
+"answer": "①",
+"solution": "(A)는 주어의 중심이 복수 명사 songs이므로 are가 알맞다. (B)는 도시 이름 앞에 전치사 in이 필요하므로 lives in을 고른다. (C)는 단수 주어 The school에 맞는 has를, (D)는 명사 country를 꾸미는 소유격 his를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-47fd856ca6",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 주어진 우리말에 맞게 영어 문장을 완성한 것이다. 어법상 옳게 완성한 것만을 모두 고른 것은?\n\n㉠ 마리암의 모자는 파란색이다.\n→ Mariam's hat is blue.\n㉡ 소미와 그녀의 밴드는 K-pop 노래를 연주한다.\n→ Somi and her band plays K-pop songs.\n㉢ 루카는 학교 럭비팀에 속해 있다.\n→ Luca are on his school's rugby team.\n㉣ 두바이의 햇빛은 매우 강하다.\n→ The sunlight in Dubai is very strong.\n㉤ 마리암은 가방 안에 모자가 있다.\n→ Mariam has a hat in her bag.",
+"choices": [
+"㉠, ㉡, ㉣",
+"㉠, ㉢, ㉤",
+"㉡, ㉣, ㉤",
+"㉠, ㉣, ㉤",
+"㉢, ㉣, ㉤"
+],
+"answer": "④",
+"solution": "㉠과 ㉣은 각각 단수 주어 hat과 sunlight에 is가 쓰여 옳고, ㉤은 Mariam에 has가 쓰여 옳다. ㉡은 Somi and her band가 복수 주어이므로 plays를 play로 고쳐야 한다. ㉢은 Luca가 단수 주어이므로 are를 is로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b29fef8cb6",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 ⓐ~ⓕ 중 어법상 틀린 것만 찾아 바르게 고치시오.\n\n• The songs of Somi's school band ⓐis great.\n• Somi ⓑplay the drums in the band.\n• Mariam ⓒlives in Dubai.\n• Blue is ⓓshe favorite color.\n• The people in Luca's country ⓔloves rugby.\n• Luca ⓕhas a rugby ball in his school bag.\n\n<조건>\n• 표시된 부분만 판단할 것.\n• 틀린 부분을 고친 낱말만 ⓐ~ⓕ의 순서대로 쓸 것.\n• 각 낱말은 쉼표로 구분할 것.",
+"selfGrade": true,
+"answer": "are, plays, her, love",
+"solution": "ⓐ는 복수 주어 The songs에 맞게 are로, ⓑ는 3인칭 단수 주어 Somi에 맞게 plays로 고친다. ⓓ는 명사 favorite color 앞이므로 소유격 her가 필요하고, ⓔ는 복수 주어 The people에 맞게 love로 고친다. ⓒ의 lives와 ⓕ의 has는 각각 3인칭 단수 주어에 맞는 형태이므로 그대로 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-413a0c4691",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화에서 ⓐ~ⓖ 중 어법상 틀린 것만 찾아 바르게 고치시오.\n\nMariam: ⓐMy favorite color is blue. I ⓑlive Dubai. My school ⓒhave a special rule.\nLuca: I ⓓam on the school rugby team. People in my country ⓔloves rugby.\nSomi: My school band ⓕplays K-pop songs. The songs ⓖis great.\n\n<조건>\n• 표시된 부분만 고칠 것.\n• 원래의 뜻을 유지하며, 필요한 경우 전치사를 추가할 것.\n• 고친 표현만 ⓐ~ⓖ의 순서대로 쓰고, 각 표현은 쉼표로 구분할 것.",
+"selfGrade": true,
+"answer": "live in, has, love, are",
+"solution": "ⓑ는 장소 이름 Dubai 앞에 전치사 in이 필요하므로 live in으로 고친다. ⓒ는 단수 주어 My school에 맞게 has로, ⓔ는 복수 주어 People에 맞게 love로 고친다. ⓖ는 복수 주어 The songs에 맞게 are로 고치며, ⓐ·ⓓ·ⓕ는 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ae632e8f6b",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 <조건>에 맞게 각각 다시 쓰시오.\n\n(A) I have drumsticks in my school bag.\n(B) We are on the school rugby team.\n\n<조건>\n• (A)는 Somi의 말이다. 주어 I를 Somi로 바꾸고, 동사와 소유격도 알맞게 바꿀 것.\n• (B)는 Luca가 자신을 포함한 팀원들을 가리키며 한 말이다. 주어 We를 Luca로 바꾸고, 동사도 알맞게 바꿀 것.\n• 그 밖의 표현은 바꾸지 말 것.\n• 완성한 (A), (B) 문장을 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "Somi has drumsticks in her school bag. Luca is on the school rugby team.",
+"solution": "(A)의 주어를 I에서 Somi로 바꾸면 3인칭 단수가 되므로 have를 has로 바꾼다. 가방의 주인도 Somi를 가리키도록 my를 her로 바꿔야 한다. (B)는 복수 주어 We가 단수 주어 Luca로 바뀌므로 are를 is로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
 }
 ]

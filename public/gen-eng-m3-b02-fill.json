@@ -3459,5 +3459,381 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b02-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-9bf8444f8b",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말을 바르게 영작한 것은?\n\n찰스 크리터스가 가장 멋진 팝콘 기계를 발명한 것은 바로 1893년이었다.",
+"choices": [
+"It was Charles Cretors that in 1893 invented the fanciest popcorn popper.",
+"It is in 1893 that Charles Cretors invented the fanciest popcorn popper.",
+"It was in 1893 that Charles Cretors invented the fanciest popcorn popper.",
+"It was in 1893 who Charles Cretors invented the fanciest popcorn popper.",
+"It was 1893 that Charles Cretors was invented the fanciest popcorn popper."
+],
+"answer": "③",
+"solution": "과거의 특정 시점을 강조하므로 「It was + 강조 부분 + that ...」을 사용한다. 발명의 주체가 Charles Cretors이므로 invented를 능동태로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d356c29920",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 모두 사용하여 영작하시오.\n\n고대 중국 사람들은 딸들의 미래 결혼에 관해 알아보기 위해 옥수수를 튀겼다.\n\n<조건>\n• people, ancient, pop, learn, daughter, marriage를 사용할 것\n• 필요시 단어를 변형할 것\n• 총 13단어로 쓸 것",
+"selfGrade": true,
+"answer": "People in ancient China popped corn to learn about their daughters' future marriage.",
+"solution": "과거의 일이므로 pop을 popped로 바꾸고, 목적은 「to learn」으로 나타낸다. 여러 딸의 소유를 나타내므로 daughters'와 같이 복수 소유격을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-04f96ca972",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 조건에 맞게 영작하시오.\n\n미국인들은 옥수수를 튀기는 여러 방법이 흥미롭다고 생각했다.\n\n<조건>\n• Americans, think, ways, pop, interesting을 모두 사용할 것\n• 「주어 + 동사 + 목적어 + 목적격보어」의 구조로 쓸 것\n• 총 8단어로 쓸 것",
+"selfGrade": true,
+"answer": "Americans thought various ways of popping corn interesting.",
+"solution": "「think + 목적어 + 형용사」는 ‘목적어가 형용사하다고 생각하다’라는 뜻이다. 전치사 of 뒤에서는 pop을 동명사 popping으로 바꾸어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4969d7ce33",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말의 밑줄 친 의미가 강조되도록 영작하시오.\n\n팝콘 기계를 학교 동아리에서 만들기까지 한 사람들은 바로 ‘중학생들’이었다.\n\n<조건>\n• It, that, even, popper를 사용할 것\n• 총 12단어로 쓸 것",
+"selfGrade": true,
+"answer": "It was middle school students that even made poppers in school clubs.",
+"solution": "사람인 middle school students를 강조하므로 「It was + 강조 대상 + that ...」의 강조 구문을 사용한다. 여러 기계를 뜻하므로 popper는 복수형 poppers로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-82e1a09480",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 <보기>의 어구를 모두 사용하여 영작할 때, 여섯 번째에 오는 것은?\n\n아메리카 원주민들이 팝콘을 사용한 것은 또한 장식을 위해서였다.\n\n<보기>\nused / for decoration / Native Americans / that / popcorn / also / was / It\n\n<조건>\n• 「It was ~ that ...」 강조 구문을 사용할 것\n• 문장 첫 글자의 대문자는 고려하지 않는다.",
+"choices": [
+"for decoration",
+"that",
+"Native Americans",
+"used",
+"popcorn"
+],
+"answer": "③",
+"solution": "완성 문장은 「It was also for decoration that Native Americans used popcorn.」이다. 어구 단위로 배열하면 Native Americans가 여섯 번째에 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-7b9d1c7acf",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 조건에 맞게 영작하시오.\n\n중국 사람들이 큰 솥 모양의 팝콘 기계들을 발명한 것은 바로 송나라 때였다.\n\n<조건>\n• It, Song Dynasty, invent, large, pot-shaped, popping machine을 모두 사용할 것\n• 「It was ~ that ...」 강조 구문을 사용할 것\n• 필요시 단어를 변형할 것\n• 총 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "It was in the Song Dynasty that Chinese people invented large pot-shaped popping machines.",
+"solution": "송나라 때라는 시간 정보를 강조하므로 「It was in the Song Dynasty that ...」으로 시작한다. 과거의 발명이므로 invent를 invented로 바꾸고, 여러 기계를 뜻하도록 machines를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-3f7a10faa9",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 조건에 맞게 영작하시오.\n\n그들은 팝콘 장식을 착용했을 때 튀기는 정령들에 의해 보호받을 것이라고 믿었다.\n\n<조건>\n• believe, protect, pop, wear를 모두 사용할 것\n• 필요시 단어를 변형할 것\n• 총 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "They believed that they would be protected by popping spirits when wearing popcorn decorations.",
+"solution": "과거 시점에서 미래의 일을 믿었다는 의미이므로 believed 뒤에 would를 사용한다. ‘보호받다’는 수동태 「be protected by」로 나타내며, when 뒤에서는 「주어 + be동사」를 생략해 when wearing으로 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bc7a94849f",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 것은?",
+"choices": [
+"When we reached the theater, the movie has already begun.",
+"Jiwon had finished the report before the teacher collected it.",
+"I realized that I have left my umbrella on the bus.",
+"The students had been tired because they study all night.",
+"The package has arrived before I called the office."
+],
+"answer": "②",
+"solution": "보고서를 끝낸 일이 선생님이 걷은 일보다 먼저 일어났으므로 과거완료 had finished가 알맞다. 나머지는 과거의 두 사건을 나타낼 때 현재완료를 썼거나 과거완료의 형태를 잘못 사용했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4f4e565708",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 것끼리 짝지어진 것은?\n\n<보기>\nⓐ Feeling hungry, Yuna made a sandwich.\nⓑ Written the email, I turned off the computer.\nⓒ Surprised by the news, he could not say anything.\nⓓ The concert has ended when we arrived.\nⓔ She discovered that someone had opened the window.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓓ",
+"ⓐ, ⓒ, ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 주어 Yuna가 배고픔을 느끼는 능동 관계이고, ⓒ는 주어 he가 소식에 놀란 수동 관계이므로 옳다. ⓔ에서는 창문을 연 일이 발견한 일보다 먼저이므로 과거완료 had opened가 알맞다. ⓑ는 Having written으로, ⓓ는 had ended로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-87ee40cfa9",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAfter Sora (A)[had packed / has packed] all the boxes, she called the delivery office. (B)[Surprised / Surprising] by the quick response, she thanked the staff. The boxes (C)[were delivered / delivered] the following morning.",
+"choices": [
+"had packed — Surprised — were delivered",
+"had packed — Surprising — delivered",
+"has packed — Surprised — were delivered",
+"has packed — Surprising — delivered",
+"had packed — Surprised — delivered"
+],
+"answer": "①",
+"solution": "짐을 싼 일이 전화한 일보다 먼저이므로 (A)는 had packed가 알맞다. Sora는 빠른 응대에 놀란 대상이므로 (B)는 과거분사 Surprised를 쓴다. 상자는 배달되는 대상이므로 (C)는 수동태 were delivered가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c5dcfa9cb9",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>에서 어법상 옳은 문장의 개수는?\n\n<보기>\nⓐ Having finishing her homework, Nari went for a walk.\nⓑ The bus had already left when we reached the stop.\nⓒ Designed for young children, the chair is light and safe.\nⓓ The boy sitting by the window was reading a novel.\nⓔ I found that the package had been delivered before noon.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "④",
+"solution": "ⓑ, ⓒ, ⓓ, ⓔ는 모두 어법상 옳으므로 정답은 4개이다. ⓐ의 Having 뒤에는 과거분사 finished가 와야 하므로 Having finished로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8b939bf772",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 옳은 것끼리 짝지어진 것은?\n\nThe inventor wanted to create a wheelchair ⓐthat was both light and strong. He selected bicycle wheels instead of wheels ⓑmaking especially for wheelchairs. Some friends thought that he ⓒhad gone too far, but his wife, ⓓwho supported his goal, encouraged him to keep ⓔcontinue. At last, he completed a chair that could be built and ⓕdelivered at a low cost.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓓ, ⓕ",
+"ⓑ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓐ의 that은 선행사 a wheelchair를 수식하고, ⓓ의 who는 사람인 his wife를 보충 설명하므로 옳다. ⓒ의 had gone은 생각한 시점보다 앞선 일을 나타내며, ⓕ의 delivered는 be built와 병렬을 이룬다. ⓑ는 made, ⓔ는 continuing으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7f84101acf",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 괄호 안 동사를 문맥과 어법에 맞게 바꾸어 빈칸을 완성하시오. 정답은 빈칸 순서대로 쓰시오.\n\nBy the time the volunteers arrived, the workers __________ the steel frame. __________ from easily accessible parts, the wheelchair could __________ at a low cost and __________ to distant areas.\n\n(complete / make / build / deliver)",
+"selfGrade": true,
+"answer": "had completed / Made / be built / delivered",
+"solution": "틀을 완성한 일이 자원봉사자들이 도착한 일보다 먼저이므로 had completed를 쓴다. 휠체어는 부품으로 만들어지는 대상이므로 Made가 알맞고, 조동사 could 뒤에서는 수동태 be built가 필요하다. delivered는 be에 함께 연결되어 be built and delivered의 병렬 구조를 이룬다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a28a0db6d0",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장을 주어진 조건에 맞게 한 문장으로 바꾸어 쓰시오.\n\nBecause the wheelchair had been made from accessible parts, it could be repaired easily.\n\n<조건>\n• Because절을 생략하고 완료형 분사구문을 사용할 것.\n• 의미와 시제를 바꾸지 말 것.",
+"selfGrade": true,
+"answer": "Having been made from accessible parts, the wheelchair could be repaired easily.",
+"solution": "부사절의 주어 the wheelchair와 주절의 주어가 같으므로 부사절의 주어를 생략할 수 있다. 휠체어는 부품으로 만들어진 대상이므로 수동형을 쓰며, 만들어진 일이 수리될 수 있었던 상태보다 앞서므로 완료 수동 분사구문 Having been made를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4869ac0dcf",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 설명한 아메리카 원주민들의 놀이 방식으로 알맞은 것은?\n\nFor Native Americans, corn was both food and a source of fun. They put corn seeds on stones heated over a fire. As the seeds popped, they opened into shapes like white flowers. People played a game in which they caught these pieces of popcorn and ate them. Popcorn also served another purpose: teenage girls used it to decorate their clothes.",
+"choices": [
+"옥수수 알갱이로 옷을 장식한 뒤 서로 바꾸어 입었다.",
+"불 위에서 달군 돌을 던지고 받았다.",
+"옥수수 알갱이가 하얗게 변하기 전에 모았다.",
+"꽃처럼 터진 팝콘을 받아서 먹었다.",
+"흰 꽃을 모아 옥수수 모양으로 만들었다."
+],
+"answer": "④",
+"solution": "원주민들은 옥수수 알갱이가 터져 꽃 같은 모양이 되면 이를 받아서 먹는 놀이를 했다. 옷을 장식하는 것은 팝콘의 또 다른 용도이며, 글에서 설명한 놀이 방식은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8dd3621e62",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 나타난 송나라 시대 팝콘 기계에 대한 설명으로 알맞은 것은?\n\nPopcorn was enjoyed in China, Sumatra, and India before Columbus reached the West Indies. People in ancient China used popping corn to learn about the coming year's fortune and their daughters' future marriages. During the Song Dynasty, the Chinese developed big popping machines shaped like pots. Street sellers continue to use machines of this kind today.",
+"choices": [
+"인도 사람들이 처음 개발했다.",
+"커다란 항아리와 비슷한 모양이었다.",
+"작은 꽃처럼 생겼다.",
+"가정에서만 사용하는 기계였다.",
+"오늘날에는 사용되지 않는다."
+],
+"answer": "②",
+"solution": "송나라 시대에 중국인들이 개발한 팝콘 기계는 커다란 항아리 모양이었다. 오늘날에도 거리의 팝콘 판매자들이 이러한 형태의 기계를 사용한다고 했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ade9938989",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn nineteenth-century America, people made popcorn in different ways. Some stirred corn seeds in hot ashes and collected the popped pieces. Other people heated corn with fat or butter in a pan. Charles Cretors invented a fancy popcorn popper in 1893. Later, various poppers appeared in movie theaters and parks. An electric model for home use was invented in 1925.",
+"choices": [
+"일부 사람들은 뜨거운 재를 이용해 팝콘을 만들었다.",
+"옥수수를 지방이나 버터와 함께 팬에 넣어 조리하기도 했다.",
+"Charles Cretors는 1893년에 팝콘 기계를 발명했다.",
+"영화관과 공원에서도 여러 종류의 팝콘 기계를 볼 수 있었다.",
+"가정용 전기 팝콘 기계는 1893년에 발명되었다."
+],
+"answer": "⑤",
+"solution": "가정용 전기 팝콘 기계가 발명된 해는 1925년이다. 1893년은 Charles Cretors가 화려한 팝콘 기계를 발명한 해이므로 두 정보를 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e25e279528",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글만으로 답할 수 없는 질문은?\n\nLong before Columbus reached the West Indies, popcorn was already made in China, Sumatra, and India. In ancient China, popping corn was a way to tell fortunes about the next year and daughters' future marriages. The Song Dynasty saw the invention of large machines that looked like pots and were used for popping corn. Machines of this type are still used by people selling popcorn on the streets.",
+"choices": [
+"What material were the large popping machines made of?",
+"Which three places made popcorn before Columbus reached the West Indies?",
+"What did people in ancient China try to learn about their daughters?",
+"What did the machines invented during the Song Dynasty look like?",
+"Who still uses machines of this type today?"
+],
+"answer": "①",
+"solution": "글에는 팝콘을 만들었던 지역, 점을 친 대상, 기계의 형태와 현재 사용자가 제시되어 있다. 그러나 기계를 어떤 재료로 만들었는지는 설명되어 있지 않으므로 ①에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-61610e48af",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 바르게 이해한 내용만을 <보기>에서 있는 대로 고른 것은?\n\nNative Americans liked eating corn and playing a game with it. They heated corn seeds on hot stones above a fire, then caught and ate the flower-shaped popcorn. They also used popcorn as decoration. Teenage girls decorated their clothes with it, while the Aztecs made corn ornaments for statues of the rain god. To the Aztecs, popcorn stood for good health and goodwill. They believed that wearing popcorn ornaments would bring protection from popping spirits.\n\n<보기>\nㄱ. 아메리카 원주민들에게 옥수수는 먹거리이면서 놀이에 쓰이는 것이기도 했다.\nㄴ. 아메리카 원주민의 십 대 소녀들은 비의 신 조각상에 걸 옷을 팝콘으로 장식했다.\nㄷ. 아즈텍족은 팝콘 장식품을 착용하면 정령의 보호를 받을 것이라고 믿었다.\nㄹ. 글쓴이는 팝콘 장식품이 실제로 착용자를 보호한다는 사실을 확인했다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄱ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "옥수수를 먹고 놀이에도 이용했다는 ㄱ과, 장식품을 착용하면 보호받는다고 믿었다는 ㄷ이 옳다. ㄴ은 소녀들의 옷 장식과 아즈텍족의 조각상 장식을 섞은 설명이다. ㄹ도 글에 제시된 사람들의 믿음을 실제로 확인된 사실로 바꾸었으므로 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-347b1c16f7",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 근거로 판단한 것으로 가장 적절한 것은?\n\nAmericans in the nineteenth century enjoyed several methods of making popcorn. One method involved stirring corn seeds in hot ashes and taking out the popped pieces. Another involved cooking corn with fat or butter in a pan. A wire box with a long wooden handle, held over an open fire, offered a more popular method. After Charles Cretors invented his fancy popper in 1893, different kinds of poppers soon appeared in theaters and parks. A home electric popper followed in 1925. Demand for poppers was high, and even middle school students made them in school clubs.",
+"choices": [
+"긴 나무 손잡이가 달린 철사 상자는 가정용 전기 기계가 발명된 뒤에야 사용되었다.",
+"19세기 미국인들은 팝콘을 만들 때 모두 지방이나 버터를 사용했다.",
+"팝콘 기계의 수요가 높았으므로 모든 중학교에서 기계 제작을 가르쳤다고 볼 수 있다.",
+"불을 이용한 여러 조리법이 있었으며, 이후 가정에서 쓰는 전기 기계도 등장했다.",
+"Charles Cretors가 발명한 기계는 영화관과 공원에서만 사용하도록 만들어졌다."
+],
+"answer": "④",
+"solution": "글은 재, 팬, 철사 상자 등을 이용한 조리법을 소개한 뒤 1925년에 가정용 전기 기계가 발명되었다고 설명하므로 ④가 적절하다. 철사 상자는 전기 기계보다 앞서 소개되며, 지방이나 버터를 사용한 것은 일부 사람들의 방식이다. 일부 중학생의 제작 사례를 모든 학교의 교육으로 확대하거나, 기계가 발견된 장소를 사용 목적의 제한으로 해석할 수는 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ba6abd87bc",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에 근거할 때, <보기>의 질문 중 답할 수 있는 것만을 있는 대로 고른 것은?\n\nPopcorn had several roles among Native Americans. They enjoyed catching and eating corn that had popped on hot stones over a fire. Teenage girls also put popped corn on their clothes as decoration. The Aztecs created corn ornaments for statues of the rain god. They regarded popcorn as a sign of good health and goodwill, and believed that popping spirits would protect people wearing popcorn ornaments.\n\nPopcorn was also made in China, Sumatra, and India before Columbus reached the West Indies. Ancient Chinese people popped corn to tell fortunes concerning the coming year and their daughters' future marriages. In the Song Dynasty, they developed large pot-shaped popping machines. Street popcorn sellers still use this type of machine.\n\n<보기>\nㄱ. What did the Aztecs believe would protect people wearing popcorn ornaments?\nㄴ. On what occasions did Native American teenage girls wear clothes decorated with popcorn?\nㄷ. How did ancient Chinese people decide whether popped corn predicted a happy marriage?\nㄹ. Which came first: popcorn making in India or Columbus's arrival in the West Indies?\nㅁ. Who uses the type of popping machine developed during the Song Dynasty today?",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄷ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ은 팝콘을 터뜨리는 정령, ㄹ은 인도에서 팝콘을 만든 일이 먼저라는 내용, ㅁ은 오늘날 거리의 팝콘 판매자라는 정보로 답할 수 있다. ㄴ은 소녀들이 장식한 옷을 어떤 때에 입었는지 묻지만 글에는 그 상황이 없다. ㄷ 역시 혼사를 점쳤다는 목적만 제시되었을 뿐, 팝콘의 상태를 해석하는 구체적인 방법은 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7790d4d244",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글을 읽고 추론한 내용 중 글의 근거를 벗어나지 않은 것만을 <보기>에서 있는 대로 고른 것은?\n\n(A)\nFor Native Americans, popcorn provided food, amusement, and decoration. Teenage girls decorated clothes with it, and the Aztecs made corn ornaments for statues of the rain god. The Aztecs associated popcorn with good health and goodwill. They also believed that people wearing popcorn ornaments would receive protection from popping spirits. In ancient China, popping corn served a different purpose: people used it to tell fortunes about the coming year and their daughters' future marriages.\n\n(B)\nIn nineteenth-century America, corn was popped in hot ashes or cooked with fat or butter in pans. A more popular method used a wire box with a long wooden handle over an open fire. Charles Cretors invented a fancy popper in 1893, and various poppers soon appeared in theaters and parks. An electric popper intended for home use was invented in 1925. Poppers were in great demand; even middle school students built them in school clubs.\n\n<보기>\nㄱ. 팝콘에 특별한 의미를 부여한 사례는 아즈텍족과 고대 중국인 모두에게서 찾을 수 있다.\nㄴ. (A)의 아즈텍족과 고대 중국인들은 모두 팝콘 장식품을 몸에 착용하는 방법으로 미래의 일을 알아보았다.\nㄷ. (B)에 제시된 두 발명의 순서를 보면, Charles Cretors의 발명이 가정용 전기 기계의 발명보다 앞선다.\nㄹ. (B)에서 가정용 전기 기계가 발명되었다는 사실은 그 후 불을 사용하는 팝콘 조리법이 사라졌음을 뜻한다.\nㅁ. (A)는 팝콘의 쓰임새를 여러 측면에서 보여 주며, (B)는 팝콘을 만드는 방법과 기계에 관한 정보를 제시한다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄴ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㅁ"
+],
+"answer": "⑤",
+"solution": "아즈텍족은 팝콘에 상징적 의미를 부여했고 고대 중국인들은 점을 치는 데 이용했으므로 ㄱ이 옳으며, 1893년과 1925년을 비교하면 ㄷ도 옳다. (A)는 음식·놀이·장식·점술 등의 쓰임새를, (B)는 조리법과 기계를 다루므로 ㅁ도 타당하다. ㄴ은 서로 다른 집단의 행동과 목적을 결합한 설명이며, ㄹ처럼 새 기계의 발명만으로 기존 조리법이 사라졌다고 추론할 수는 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
 }
 ]

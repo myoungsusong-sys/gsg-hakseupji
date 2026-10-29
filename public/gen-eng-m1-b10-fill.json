@@ -1168,5 +1168,254 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u7m6s0t0",
 "custom": true
+},
+{
+"id": "fill-cbf99c8098",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 말을 고른 것은?\n\nDon’t ⓐ(worry / worried) about my green face. Henri Matisse wanted ⓑ(express / to express) his emotions with bright colors.",
+"choices": [
+"worry - express",
+"worry - to express",
+"worried - express",
+"worried - to express",
+"worrying - expressing"
+],
+"answer": "②",
+"solution": "부정 명령문 「Don’t＋동사원형」에 따라 ⓐ에는 worry가 알맞다. want는 목적어로 to부정사를 취하므로 ⓑ에는 to express가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3dddf66369",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 괄호 안에 들어갈 말이 바르게 연결된 것은?\n\nMatisse ⓐ(create) the snail in a unique way. Look around the gallery and ⓑ(explore) his world of art!",
+"choices": [
+"creates - explored",
+"created - explored",
+"created - explore",
+"creating - explore",
+"to create - exploring"
+],
+"answer": "③",
+"solution": "달팽이 작품을 만든 일은 과거의 일이므로 ⓐ에는 created가 알맞다. ⓑ는 Look과 and로 연결된 명령문의 동사이므로 동사원형 explore를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6b39eba255",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nAmélie asks us to ①look at her. Her face ②is not actually green. Matisse ③wanted expressing his emotions with bright and wild colors. Although people did not like his style at first, he ④kept his own style and finally ⑤became famous.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "want 뒤에는 동명사가 아니라 to부정사가 목적어로 와야 한다. 따라서 ③의 wanted expressing을 wanted to express로 고쳐야 한다. 나머지는 문장의 시제와 구조에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5536329519",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 빈칸에 들어갈 말을 바르게 연결한 것은?\n\nDo you think ⓐ________ Amélie looks strange? The shapes ⓑ________ a snail shell. Matisse painted paper and ⓒ________ out the shapes with scissors.",
+"choices": [
+"that - look - cuts",
+"which - look like - cut",
+"that - look like - cut",
+"which - look - cut",
+"that - look like - cutting"
+],
+"answer": "③",
+"solution": "think 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다. ‘달팽이 껍데기처럼 보이다’는 look like로 표현한다. painted와 같은 과거 시제의 동사가 필요하므로 cut의 과거형인 cut이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-165d3a7ee2",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장의 개수는?\n\nⓐ Don’t worry about my face.\nⓑ Why did Matisse painted her face green?\nⓒ He wanted to express his emotions.\nⓓ People didn’t liked his painting style at first.\nⓔ Trace the shapes with your finger.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓐ와 ⓔ는 동사원형을 사용한 올바른 명령문이고, ⓒ도 「want＋to부정사」의 올바른 형태이다. ⓑ는 paint, ⓓ는 like로 고쳐야 하므로 옳은 문장은 모두 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a21e87677a",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 두 단어를 찾아 각각 올바른 형태로 고쳐 쓰시오. 단, 글에 나타난 순서대로 쓸 것.\n\nMatisse color Amélie’s face green because he wanted expressing his emotions with bright and wild colors.\n\n정답: __________, __________",
+"selfGrade": true,
+"answer": "colored, to express",
+"solution": "마티스가 얼굴을 초록색으로 칠한 것은 과거의 일이므로 color를 colored로 고쳐야 한다. want 뒤에는 to부정사가 와야 하므로 expressing은 to express가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c53e256862",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 괄호 안의 말을 사용하여 의미가 같도록 한 문장으로 완성하시오.\n\nDo you think? ＋ I am strange. (that)\n\n→ ________________________________________",
+"selfGrade": true,
+"answer": "Do you think that I am strange?",
+"solution": "think의 목적어 역할을 하는 절을 만들기 위해 접속사 that을 사용한다. that 뒤에는 「주어＋동사」의 완전한 문장인 I am strange가 이어져야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca084f1129",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 안에 주어진 동사를 문맥과 어법에 맞게 바꾸어 쓰시오. 단, 글에 나타난 순서대로 쓸 것.\n\nTo find the snail, first ⓐ(start) from the green shape and then ⓑ(trace) the other shapes. Matisse ⓒ(paint) paper, ⓓ(cut) out shapes, and ⓔ(put) them together.\n\n정답: ⓐ __________, ⓑ __________, ⓒ __________, ⓓ __________, ⓔ __________",
+"selfGrade": true,
+"answer": "start, trace, painted, cut, put",
+"solution": "ⓐ와 ⓑ는 달팽이를 찾는 방법을 지시하는 명령문이므로 동사원형을 쓴다. ⓒ~ⓔ는 마티스가 작품을 만든 과거의 과정을 나타내므로 과거형이 필요하다. cut과 put은 현재형과 과거형의 형태가 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8e99126a69",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 설명의 빈칸에 들어갈 낱말로 가장 알맞은 것은?\n\n백성들이 굶주리는데도 자신의 쌀을 나누어 주지 않는 왕의 성격은 ________라고 표현할 수 있다.",
+"choices": [
+"honest",
+"empty",
+"greedy",
+"hungry",
+"wise"
+],
+"answer": "③",
+"solution": "greedy는 ‘욕심이 많은’이라는 뜻이다. 굶주린 백성들에게 쌀을 나누어 주지 않는 왕의 성격을 나타내기에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-afd0ac73d9",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "우리말과 뜻이 같도록 빈칸에 들어갈 표현을 <보기>에서 골라 쓰시오.\n\n<보기>\nfor a while / in trouble / in surprise\n\n왕은 마지막 날 필요한 코끼리의 수를 듣고 자신이 곤경에 처했음을 깨달았다.\n→ The king realized that he was __________.",
+"selfGrade": true,
+"answer": "in trouble",
+"solution": "‘곤경에 처한’은 in trouble로 표현한다. for a while은 ‘잠시’, in surprise는 ‘놀라서’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-945b737476",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 라니와 왕의 이야기에서 사용된 낱말과 그 뜻이다. 연결이 어색한 것은?",
+"choices": [
+"collect — 모으다",
+"reward — 보상하다",
+"enough — 충분한",
+"grain — 곡물의 낟알",
+"honest — 현명한"
+],
+"answer": "⑤",
+"solution": "honest는 ‘정직한’이라는 뜻이다. ‘현명한’에 해당하는 낱말은 wise이므로 ⑤의 연결이 어색하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a54387a9ec",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 상황에 대한 영어 표현의 설명으로 옳은 것은?\n\n라니는 모은 쌀을 왕에게 돌려주겠다고 했다. 왕에게 보상을 요청할 때는 다음 날마다 쌀을 두 배로 늘려 달라고 했다.",
+"choices": [
+"give back은 ‘나누어 주다’라는 뜻이다.",
+"double은 ‘두 배로 하다’라는 뜻이다.",
+"each day는 ‘마지막 날에’라는 뜻이다.",
+"ask for는 ‘~을 운반하다’라는 뜻이다.",
+"the next day는 ‘그날보다 하루 전’이라는 뜻이다."
+],
+"answer": "②",
+"solution": "double은 수나 양을 ‘두 배로 하다’라는 뜻이다. give back은 ‘돌려주다’, each day는 ‘매일’, ask for는 ‘요청하다’, the next day는 ‘그다음 날’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-656aa64440",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 내용을 읽고, 질문의 대답을 완성하시오. 빈칸에는 한 단어씩 쓰고, 빈칸에 들어갈 말만 순서대로 쓰시오.\n\n라니는 떨어지는 쌀을 보고 잠시 생각한 뒤 쌀을 모았다. 라니는 그 쌀이 자신의 것이 아니므로 왕에게 돌려주겠다고 말했다.\n\nQ. What did Rani do before collecting the rice, and what did she say she would do with it?\nA. She ______ ______ ______ ______. She said she would ______ it ______ to the king.\n\n<조건>\n• 첫 문장에는 think를 알맞은 형태로 사용할 것.\n• 둘째 문장에는 give를 사용할 것.",
+"selfGrade": true,
+"answer": "thought for a while give back",
+"solution": "‘잠시 생각했다’는 think의 과거형 thought와 for a while을 이용하여 표현한다. ‘그것을 돌려주다’는 give it back이므로 둘째 문장의 빈칸에는 give와 back이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-406de59490",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 요약문의 ⓐ~ⓒ에 들어갈 표현을 바르게 연결한 것은?\n\nThe king thought the rice on day 10 was just ⓐ________. On day 24, the servant said the amount was ⓑ________ eight million grains. The servant also said the king's storehouse would be ⓒ________ on the last day.",
+"choices": [
+"ⓐ a handful / ⓑ more than / ⓒ empty",
+"ⓐ a handful / ⓑ less than / ⓒ empty",
+"ⓐ a grain / ⓑ more than / ⓒ empty",
+"ⓐ a handful / ⓑ more than / ⓒ enough",
+"ⓐ a grain / ⓑ less than / ⓒ enough"
+],
+"answer": "①",
+"solution": "왕은 열흘째의 쌀을 ‘한 줌’으로 여겼으므로 ⓐ에는 a handful이 들어간다. 스물나흘째의 쌀은 800만 낟알보다 많으므로 ⓑ에는 more than이 알맞다. 마지막 날에는 왕의 창고가 비게 되므로 ⓒ에는 empty가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-697294e8fe",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 내용을 읽고, 질문의 대답을 완성하시오. 빈칸에는 한 단어씩 쓰고, 빈칸에 들어갈 말만 순서대로 쓰시오.\n\n왕의 백성들은 굶주렸지만 왕은 쌀을 나누어 주지 않았다. 반면 라니는 마지막 날 받은 쌀을 굶주린 사람들과 나누고, 왕에게도 일부를 나누어 주겠다고 했다.\n\nQ. How were the king's actions different from Rani's plan?\nA. The king did not ______ his rice ______ his people, but Rani planned to share hers with the ______ ______ and give ______ ______ ______ ______ to the king, too.\n\n<조건>\n• ‘일부’는 some of로 표현할 것.\n• 마지막 네 칸에는 ‘그 쌀의 일부’라는 뜻이 되도록 쓸 것.",
+"selfGrade": true,
+"answer": "share with hungry people some of the rice",
+"solution": "‘A를 B와 나누다’는 share A with B로 표현하므로 첫 두 빈칸에는 share와 with가 들어간다. ‘굶주린 사람들’은 hungry people이며, ‘그 쌀의 일부’는 some of the rice로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
 }
 ]

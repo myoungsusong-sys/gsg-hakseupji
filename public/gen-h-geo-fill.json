@@ -1,0 +1,258 @@
+[
+{
+"id": "fill-2bd4ebd3e2",
+"typeId": "19597",
+"kind": "주관식",
+"diff": 2,
+"body": "기상 관측 기구가 점 $A(1,2,3)$에서 점 $B(3,5,9)$를 향해 직선으로 이동한다. 이동 경로인 직선 $AB$와 $xy$평면이 이루는 각의 크기를 $\\theta$라 할 때, $\\cos\\theta$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{\\sqrt{13}}{7}$",
+"solution": "직선 $AB$의 방향벡터는 $(2,3,6)$이고 그 크기는 $7$이다. 이 벡터를 $xy$평면에 정사영한 벡터의 크기는 $\\sqrt{2^2+3^2}=\\sqrt{13}$이므로 $\\cos\\theta=\\frac{\\sqrt{13}}{7}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-fe55c54776",
+"typeId": "19597",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 $2$인 원형 태양 전지판이 $xy$평면과 평행하게 놓여 있다. 이 전지판을 평면 $3x+4z=0$ 위로 정사영한 도형의 넓이는?",
+"choices": [
+"$\\frac{8}{5}\\pi$",
+"$\\frac{12}{5}\\pi$",
+"$\\frac{16}{5}\\pi$",
+"$\\frac{18}{5}\\pi$",
+"$4\\pi$"
+],
+"answer": "③",
+"solution": "$xy$평면과 주어진 평면의 법선벡터는 각각 $(0,0,1)$, $(3,0,4)$이다. 두 평면이 이루는 각의 코사인은 $\\frac{4}{5}$이므로 정사영의 넓이는 $\\pi\\cdot2^2\\cdot\\frac45=\\frac{16}{5}\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-f6322e499a",
+"typeId": "19597",
+"kind": "객관식",
+"diff": 2,
+"body": "해양 탐사 장비의 네 센서가 점 $O(0,0,0)$, $A(2,0,0)$, $B(0,3,0)$, $C(0,0,4)$에 설치되어 있다. 네 센서를 꼭짓점으로 하는 사면체 $OABC$의 부피는?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$6$",
+"$8$"
+],
+"answer": "③",
+"solution": "세 선분 $OA$, $OB$, $OC$는 서로 수직이고 각각의 길이는 $2$, $3$, $4$이다. 따라서 사면체의 부피는 $\\frac16\\cdot2\\cdot3\\cdot4=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-4c5190b62d",
+"typeId": "19597",
+"kind": "주관식",
+"diff": 3,
+"body": "입자가 점 $A(1,0,0)$에서 점 $B(3,1,2)$를 향해 직선으로 이동한다. 직선 $AB$와 평면 $2x-y+2z=5$가 이루는 각의 크기를 $\\theta$라 할 때, $\\cos\\theta$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{4\\sqrt{2}}{9}$",
+"solution": "직선의 방향벡터와 평면의 법선벡터는 각각 $(2,1,2)$, $(2,-1,2)$이고 두 벡터의 크기는 모두 $3$이다. 따라서 $\\sin\\theta=\\frac{|(2,1,2)\\cdot(2,-1,2)|}{3\\cdot3}=\\frac79$이다. 그러므로 $\\cos\\theta=\\sqrt{1-\\frac{49}{81}}=\\frac{4\\sqrt2}{9}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-5657f66ebf",
+"typeId": "19597",
+"kind": "객관식",
+"diff": 3,
+"body": "분자의 입체 구조를 나타내는 네 점이 $A(a,a,b)$, $B(-a,-a,b)$, $C(a,-a,-b)$, $D(-a,a,-b)$이다. 두 양수 $a$, $b$가 $a+b=4$를 만족할 때, 사면체 $ABCD$의 부피의 최댓값은?",
+"choices": [
+"$\\frac{512}{27}$",
+"$\\frac{640}{27}$",
+"$\\frac{2048}{81}$",
+"$\\frac{256}{9}$",
+"$\\frac{1024}{27}$"
+],
+"answer": "③",
+"solution": "세 벡터 $\\overrightarrow{AB}$, $\\overrightarrow{AC}$, $\\overrightarrow{AD}$의 스칼라 삼중곱을 이용하면 부피는 $V=\\frac83a^2b$이다. $b=4-a$이므로 $a^2b=a^2(4-a)$는 $a=\\frac83$, $b=\\frac43$일 때 최대이다. 따라서 최대 부피는 $\\frac83\\cdot\\frac{64}{9}\\cdot\\frac43=\\frac{2048}{81}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-bb22884968",
+"typeId": "19597",
+"kind": "주관식",
+"diff": 5,
+"body": "의료 영상 장치에서 각각 $xy$평면, $yz$평면, $zx$평면 위에 놓인 반지름의 길이가 $2$, $3$, $1$인 세 원판을 한 평면 $\\alpha$ 위로 정사영하였다. 세 정사영의 넓이의 비가 이 순서대로 $4:3:2$이고, 평면 $\\alpha$의 단위법선벡터의 세 성분은 모두 양수이다.\n\n삼각형의 세 꼭짓점이 $O(0,0,0)$, $P(1,2,0)$, $Q(0,1,2)$일 때, 삼각형 $OPQ$를 평면 $\\alpha$ 위로 정사영한 도형의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{5}{2\\sqrt{46}}$",
+"solution": "평면 $\\alpha$의 단위법선벡터를 $(n_x,n_y,n_z)$라 하면 세 원판의 정사영 넓이는 각각 $4\\pi n_z$, $9\\pi n_x$, $\\pi n_y$이다. 주어진 비에서 $(n_x,n_y,n_z)=\\frac1{\\sqrt{46}}(1,6,3)$을 얻는다. $\\overrightarrow{OP}\\times\\overrightarrow{OQ}=(4,-2,1)$이므로 정사영 넓이는 $\\frac12\\left|\\frac{(4,-2,1)\\cdot(1,6,3)}{\\sqrt{46}}\\right|=\\frac{5}{2\\sqrt{46}}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-65281b5536",
+"typeId": "19597",
+"kind": "객관식",
+"diff": 5,
+"body": "결정 구조의 네 원자를 나타내는 점이 $A(a,a,b)$, $B(-a,-a,b)$, $C(a,-a,-b)$, $D(-a,a,-b)$이다. 양수 $a$, $b$가 $2a^2+b^2=18$을 만족할 때, 사면체 $ABCD$의 부피의 최댓값은?",
+"choices": [
+"$12\\sqrt6$",
+"$14\\sqrt6$",
+"$16\\sqrt6$",
+"$18\\sqrt6$",
+"$24\\sqrt6$"
+],
+"answer": "③",
+"solution": "사면체의 부피는 스칼라 삼중곱에 의해 $V=\\frac83a^2b$이다. $a^4b^2=(a^2)(a^2)(b^2)$이고 $a^2+a^2+b^2=18$이므로 산술평균과 기하평균의 관계에 따라 $a^2=b^2=6$일 때 최대이다. 따라서 $V_{\\max}=\\frac83\\cdot6\\cdot\\sqrt6=16\\sqrt6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-f6b32706e3",
+"typeId": "19597",
+"kind": "주관식",
+"diff": 5,
+"body": "중심이 원점이고 반지름의 길이가 $1$인 세 원형 센서가 각각 $xy$평면, $yz$평면, $zx$평면 위에 놓여 있다. 방향벡터가 $(1,1,1)$인 원점을 지나는 직선 $l$을 포함하는 평면 $\\alpha$ 위로 세 센서를 각각 정사영한다.\n\n세 정사영의 넓이의 합의 최댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{2\\sqrt6}{3}\\pi$",
+"solution": "평면 $\\alpha$의 단위법선벡터를 $(p,q,r)$라 하면 $p+q+r=0$, $p^2+q^2+r^2=1$이고 정사영 넓이의 합은 $\\pi(|p|+|q|+|r|)$이다. 두 성분이 음이 아닌 경우를 $p,q\\geq0$, $r=-(p+q)$로 두면 그 합은 $2\\pi(p+q)$이다. $p^2+q^2+(p+q)^2=1$에서 $p+q$의 최댓값은 $\\sqrt{\\frac23}$이므로 구하는 최댓값은 $\\frac{2\\sqrt6}{3}\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19597",
+"custom": true
+},
+{
+"id": "fill-0ecfb243e3",
+"typeId": "19574",
+"kind": "객관식",
+"diff": 2,
+"body": "한 모서리의 길이가 $4$인 정육면체 $ABCD-EFGH$에서 점 $E$, $F$, $G$, $H$는 각각 점 $A$, $B$, $C$, $D$의 바로 위에 있다. 선분 $FG$의 중점을 $M$이라 할 때, 직선 $FH$와 직선 $DM$이 이루는 예각의 크기를 $\\theta$라 하자. $\\cos\\theta$의 값은?",
+"choices": [
+"$\\frac{1}{2}$",
+"$\\frac{\\sqrt{3}}{3}$",
+"$\\frac{\\sqrt{2}}{2}$",
+"$\\frac{\\sqrt{3}}{2}$",
+"$\\frac{2\\sqrt{2}}{3}$"
+],
+"answer": "③",
+"solution": "$A=(0,0,0)$, $B=(4,0,0)$, $D=(0,4,0)$, $E=(0,0,4)$로 놓으면 $M=(4,2,4)$, $F=(4,0,4)$, $H=(0,4,4)$이다. 두 직선의 방향벡터로 $\\overrightarrow{FH}=(-4,4,0)$, $\\overrightarrow{DM}=(4,-2,4)$를 택하면 내적의 절댓값은 $24$이다. 따라서 $\\cos\\theta=\\frac{24}{(4\\sqrt{2})(6)}=\\frac{\\sqrt{2}}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-37d7e302d6",
+"typeId": "19574",
+"kind": "객관식",
+"diff": 2,
+"body": "직육면체 $ABCD-EFGH$에서 점 $E$, $F$, $G$, $H$는 각각 점 $A$, $B$, $C$, $D$의 바로 위에 있다. $AB=3$, $BC=4$, $AE=12$이고, 직선 $AG$와 평면 $ABCD$가 이루는 각의 크기를 $\\theta$라 할 때, $\\cos\\theta$의 값은?",
+"choices": [
+"$\\frac{3}{13}$",
+"$\\frac{4}{13}$",
+"$\\frac{5}{13}$",
+"$\\frac{12}{13}$",
+"$\\frac{5}{12}$"
+],
+"answer": "③",
+"solution": "직선 $AG$의 평면 $ABCD$ 위로의 정사영은 선분 $AC$이고, $AC=\\sqrt{3^2+4^2}=5$이다. 또한 $AG=\\sqrt{AC^2+CG^2}=\\sqrt{5^2+12^2}=13$이므로 $\\cos\\theta=\\frac{AC}{AG}=\\frac{5}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-bc4e3da300",
+"typeId": "19574",
+"kind": "주관식",
+"diff": 3,
+"body": "밑면 $ABCD$가 정사각형이고 그 넓이가 $126$인 사각뿔 $O-ABCD$가 있다. 네 삼각형 $OAB$, $OBC$, $OCD$, $ODA$의 무게중심을 차례로 $A_1$, $B_1$, $C_1$, $D_1$이라 하자.\n\n사각뿔 $O-A_1B_1C_1D_1$에서도 같은 방법으로 네 옆면의 무게중심을 $A_2$, $B_2$, $C_2$, $D_2$라 한다. 이 과정을 반복하여 얻은 사각형 $A_nB_nC_nD_n$의 넓이를 $S_n$이라 할 때, $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^{n}S_k$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$36$",
+"solution": "삼각형의 무게중심의 위치벡터를 이용하면 사각형 $A_1B_1C_1D_1$은 정사각형이고, 그 넓이는 밑면 넓이의 $\\frac{2}{9}$이다. 같은 관계가 매 단계 반복되므로 $S_n=126\\left(\\frac{2}{9}\\right)^n$이다. 따라서 구하는 합은 $126\\cdot\\frac{\\frac{2}{9}}{1-\\frac{2}{9}}=36$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-42b399a744",
+"typeId": "19574",
+"kind": "객관식",
+"diff": 3,
+"body": "정사면체 $ABCD$에서 모서리 $AB$의 중점을 $M$, 모서리 $CD$의 중점을 $N$이라 하자. 직선 $CM$과 직선 $AN$이 이루는 예각의 크기를 $\\theta$라 할 때, $\\cos\\theta$의 값은?",
+"choices": [
+"$\\frac{1}{3}$",
+"$\\frac{1}{2}$",
+"$\\frac{\\sqrt{3}}{3}$",
+"$\\frac{2}{3}$",
+"$\\frac{\\sqrt{2}}{2}$"
+],
+"answer": "④",
+"solution": "정사면체의 네 꼭짓점을 각각 $A=(1,1,1)$, $B=(1,-1,-1)$, $C=(-1,1,-1)$, $D=(-1,-1,1)$로 놓을 수 있다. 이때 $M=(1,0,0)$, $N=(-1,0,0)$이므로 방향벡터는 $\\overrightarrow{CM}=(2,-1,1)$, $\\overrightarrow{AN}=(-2,-1,-1)$이다. 따라서 $\\cos\\theta=\\frac{|\\overrightarrow{CM}\\cdot\\overrightarrow{AN}|}{|\\overrightarrow{CM}||\\overrightarrow{AN}|}=\\frac{4}{6}=\\frac{2}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-935be03cce",
+"typeId": "19574",
+"kind": "객관식",
+"diff": 4,
+"body": "정사면체 $ABCD$의 모서리 $AC$ 위의 점 $M$과 모서리 $AD$ 위의 점 $N$이 각각 $AM:MC=1:2$, $AN:ND=2:1$을 만족한다. 직선 $BM$과 직선 $CN$이 이루는 예각의 크기를 $\\theta$라 할 때, $\\cos\\theta$의 값은?",
+"choices": [
+"$\\frac{1}{7}$",
+"$\\frac{1}{10}$",
+"$\\frac{1}{12}$",
+"$\\frac{1}{14}$",
+"$\\frac{1}{16}$"
+],
+"answer": "④",
+"solution": "$A=(1,1,1)$, $B=(1,-1,-1)$, $C=(-1,1,-1)$, $D=(-1,-1,1)$로 놓으면 $M=(\\frac{1}{3},1,\\frac{1}{3})$, $N=(-\\frac{1}{3},-\\frac{1}{3},1)$이다. 이에 따라 $|\\overrightarrow{BM}\\cdot\\overrightarrow{CN}|=\\frac{4}{9}$이고 $|\\overrightarrow{BM}|=|\\overrightarrow{CN}|=\\frac{2\\sqrt{14}}{3}$이다. 따라서 $\\cos\\theta=\\frac{4/9}{56/9}=\\frac{1}{14}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-98ffd3aa3e",
+"typeId": "19574",
+"kind": "주관식",
+"diff": 5,
+"body": "정사면체 $ABCD$에서 모서리 $AC$의 중점을 $M$이라 하고, 모서리 $AD$의 내부에 점 $N$을 잡는다. 직선 $BM$과 직선 $CN$이 이루는 예각의 크기를 $\\theta$라 할 때 $\\cos\\theta=\\frac{1}{\\sqrt{21}}$이다.\n\n$AN:ND=m:n$이고 $m$, $n$이 서로소인 자연수일 때, $m+n$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$3$",
+"solution": "$A=(1,1,1)$, $B=(1,-1,-1)$, $C=(-1,1,-1)$, $D=(-1,-1,1)$로 놓고 $\\frac{AN}{AD}=s$라 하자. 방향벡터의 내적을 계산하면 $\\cos\\theta=\\frac{s}{2\\sqrt{3(s^2-s+1)}}$이다. 이를 $\\frac{1}{\\sqrt{21}}$과 같게 두면 $3s^2+4s-4=0$이고, $0<s<1$인 해는 $s=\\frac{2}{3}$이다. 따라서 $AN:ND=2:1$이므로 $m+n=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-a6a5004f73",
+"typeId": "19574",
+"kind": "주관식",
+"diff": 5,
+"body": "사면체 $ABCD$에서 점 $P$는 모서리 $AB$를 $AP:PB=1:2$로 내분하고, 점 $Q$와 점 $S$는 각각 모서리 $CD$와 $BD$의 중점이다. 모서리 $AC$의 내부에 있는 점 $R$에 대하여 두 직선 $PQ$, $RS$가 한 점에서 만난다.\n\n$AR:RC$를 가장 간단한 자연수의 비로 나타내어라.",
+"selfGrade": true,
+"answer": "$1:2$",
+"solution": "$A=(0,0,0)$, $B=(1,0,0)$, $C=(0,1,0)$, $D=(0,0,1)$로 놓고 $R=(0,t,0)$이라 하자. 두 직선이 만나려면 네 점 $P$, $Q$, $R$, $S$가 한 평면 위에 있어야 하므로 세 벡터로 만든 행렬식이 $0$이어야 하며, 이를 계산하면 $\\frac{1}{12}-\\frac{t}{4}=0$이다. 따라서 $t=\\frac{1}{3}$이고 $AR:RC=1:2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+},
+{
+"id": "fill-324753b029",
+"typeId": "19574",
+"kind": "주관식",
+"diff": 5,
+"body": "직육면체 $ABCD-EFGH$에서 점 $E$, $F$, $G$, $H$는 각각 점 $A$, $B$, $C$, $D$의 바로 위에 있고, $AB=BC=6$, $AE=9$이다. 모서리 $CG$ 위의 점 $M$에 대하여 직선 $AM$이 평면 $BDE$에 수직이다.\n\n직선 $AM$과 평면 $BDE$의 교점을 $N$이라 하자. $AN:NM=p:q$이고 $p$, $q$가 서로소인 자연수일 때, $p+q$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$22$",
+"solution": "$A=(0,0,0)$, $B=(6,0,0)$, $D=(0,6,0)$, $E=(0,0,9)$로 놓고 $M=(6,6,t)$라 하자. $\\overrightarrow{AM}$이 평면 $BDE$의 두 방향벡터에 모두 수직이라는 조건에서 $t=4$를 얻고, 평면 $BDE$의 방정식은 $3x+3y+2z=18$이다. 직선 $AM$ 위의 점을 $(6\\lambda,6\\lambda,4\\lambda)$로 나타내어 평면의 방정식에 대입하면 $\\lambda=\\frac{9}{22}$이다. 따라서 $AN:NM=9:13$이므로 $p+q=22$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19574",
+"custom": true
+}
+]

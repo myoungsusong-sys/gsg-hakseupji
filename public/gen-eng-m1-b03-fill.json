@@ -674,5 +674,133 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-a0097709f4",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe dondurma becomes very long when the seller pulls it because it is sticky and __________.",
+"choices": [
+"creamy",
+"natural",
+"stretchy",
+"popular",
+"spicy"
+],
+"answer": "③",
+"solution": "돈두르마는 쫀득하고 잘 늘어나는 아이스크림이다. ‘늘어나는’이라는 뜻의 stretchy가 문맥에 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-080b395512",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "두 문장의 의미가 같도록 괄호 안의 단어를 이용하여 빈칸을 완성하시오.\n\nBlue Lake is deeper than Green Lake.\n= Green Lake ________________________________ Blue Lake. (shallow)",
+"selfGrade": true,
+"answer": "is shallower than",
+"solution": "Blue Lake가 더 깊다는 것은 Green Lake가 더 얕다는 뜻이다. shallow의 비교급은 끝에 -er를 붙인 shallower이므로 is shallower than을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b736bc90de",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장과 의미가 같은 것은?\n\nMina plans to make paletas at home this Saturday.",
+"choices": [
+"Mina made paletas at home this Saturday.",
+"Mina has to make paletas at home this Saturday.",
+"Mina does not want to make paletas at home this Saturday.",
+"Mina is going to make paletas at home this Saturday.",
+"Mina is making paletas at home every Saturday."
+],
+"answer": "④",
+"solution": "plan to는 ‘~할 계획이다’라는 뜻이다. 미래의 계획을 나타내는 「be going to＋동사원형」으로 바꾸면 is going to make가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d54b0b7a0c",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 두 문장의 의미가 서로 다른 것은?",
+"choices": [
+"My bag is heavier than yours. = Your bag is lighter than mine.",
+"Judy is taller than Eric. = Eric is shorter than Judy.",
+"Gelato is more delicious than dondurma. = Dondurma is more delicious than gelato.",
+"This river is wider than that stream. = That stream is narrower than this river.",
+"A train is faster than a bus. = A bus is slower than a train."
+],
+"answer": "③",
+"solution": "Gelato가 dondurma보다 더 맛있다는 문장을 반대로 나타내려면 Dondurma is less delicious than gelato라고 해야 한다. ③의 두 번째 문장은 맛있는 정도의 관계를 뒤바꾸었으므로 의미가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-beab026a01",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThere are many flavors at the gelato truck. Some are fruit flavors, and __________ are chocolate or coffee flavors.",
+"choices": [
+"it",
+"one",
+"other",
+"others",
+"the other"
+],
+"answer": "④",
+"solution": "「some＋복수명사, others」는 ‘일부는 …하고, 다른 일부는 …하다’라는 뜻이다. 빈칸은 복수 명사인 flavors를 대신하므로 복수 대명사 others가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c006561278",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n\n수진은 이번 주말에 팔레타를 만들 예정이다. 그녀의 팔레타는 내 것보다 더 클 예정이다.\n\n(make, be, large, than, mine)",
+"selfGrade": true,
+"answer": "Sujin is going to make a paleta this weekend. Her paleta is going to be larger than mine.",
+"solution": "예정은 「be going to＋동사원형」으로 나타내므로 첫 문장에는 is going to make를 쓴다. 두 번째 문장에서는 be동사를 원형으로 쓰고 large의 비교급 larger 뒤에 than mine을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e084189ee9",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장을 아래 조건에 맞게 두 문장으로 바꾸어 쓰시오.\n\nKevin plans to buy a smaller cup than mine.\n\n조건:\n• 첫 문장에는 be going to를 사용할 것.\n• 두 번째 문장은 My cup으로 시작하고 large를 사용할 것.\n• 의미가 달라지지 않게 할 것.",
+"selfGrade": true,
+"answer": "Kevin is going to buy a cup. My cup is larger than Kevin's.",
+"solution": "plans to buy는 is going to buy로 바꿀 수 있다. Kevin이 살 컵이 내 컵보다 작다는 관계를 반대로 나타내면 내 컵이 Kevin의 것보다 크므로 My cup is larger than Kevin's가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9dc6160802",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "교과서 5과 브이로그의 내용과 일치하도록 빈칸을 완성하시오.\n\nThe speaker thought gelato was more delicious than dondurma and paleta.\n= She thought dondurma and paleta were (A) __________ __________ __________ gelato.\n\nTurkish people eat dondurma in different ways. Some use a knife and fork, while (B) __________ __________ __________ __________ __________ __________.\n\n(A)와 (B)에 들어갈 말을 순서대로 쓰시오.",
+"selfGrade": true,
+"answer": "less delicious than / others eat it like a sandwich",
+"solution": "gelato가 나머지 두 아이스크림보다 더 맛있다는 것은 나머지 두 아이스크림이 gelato보다 덜 맛있다는 뜻이므로 less delicious than을 쓴다. 「some ..., others ...」의 구조에 따라 (B)에는 others eat it like a sandwich가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
 }
 ]

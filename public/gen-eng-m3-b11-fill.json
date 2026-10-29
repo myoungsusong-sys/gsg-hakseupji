@@ -1197,5 +1197,266 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u7m6s0t0",
 "custom": true
+},
+{
+"id": "fill-7d7d9b5efb",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 단어의 우리말 뜻으로 가장 알맞은 것은?\n\nwholesale",
+"choices": [
+"소매의",
+"전통적인",
+"도매의",
+"상상할 수 있는",
+"효과적인"
+],
+"answer": "③",
+"solution": "‘wholesale’은 상품을 대량으로 거래하는 ‘도매의’라는 뜻이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9f87e1269f",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe Grand Bazaar ________ over 250,000 visitors every day.",
+"choices": [
+"attracts",
+"means",
+"ships",
+"wonders",
+"grows"
+],
+"answer": "①",
+"solution": "그랜드 바자르에 매일 25만 명이 넘는 방문객이 찾아온다는 의미가 되어야 한다. ‘attract’는 ‘끌어들이다, 마음을 끌다’라는 뜻이며 주어가 3인칭 단수이므로 attracts가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ef9a1755f6",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장을 관계부사 where를 사용하여 한 문장으로 합칠 때, 빈칸에 들어갈 한 단어를 쓰시오.\n\nThe Grand Bazaar is a market. People can buy almost any imaginable item there.\n→ The Grand Bazaar is a market ________ people can buy almost any imaginable item.",
+"selfGrade": true,
+"answer": "where",
+"solution": "선행사 a market은 장소를 나타내고, 뒤 문장의 there가 그 장소를 가리킨다. 따라서 장소를 나타내는 관계부사 where가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-16e367eeb8",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"I wonder whether can you buy flowers at the market.",
+"I wonder whether you can buy flowers at the market.",
+"I wonder whether you could bought flowers at the market.",
+"I wonder whether do you buy flowers at the market.",
+"I wonder whether you buying flowers at the market."
+],
+"answer": "②",
+"solution": "wonder 뒤의 간접의문문은 ‘whether＋주어＋동사’의 어순을 따른다. 따라서 ‘whether you can buy’가 쓰인 ②가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1174c2bf0e",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장을 관계부사를 이용하여 한 문장으로 만드는 과정의 빈칸 (A)~(C)에 들어갈 말을 각각 한 단어로 쓰시오.\n\nI remember the year. The Grand Bazaar was built in that year.\n→ I remember the year (A)________ (B)________ the Grand Bazaar was built.\n→ I remember the year (C)________ the Grand Bazaar was built.",
+"selfGrade": true,
+"answer": "in, which, when",
+"solution": "연도를 나타내는 the year는 전치사 in과 함께 쓰이므로 먼저 in which로 연결할 수 있다. ‘전치사＋관계대명사’인 in which는 시간의 관계부사 when으로 바꿀 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1b4c0a8150",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳은 것은?\n\nThe Netherlands means “low lands,” and about a third of the country ①sit below sea level. The Dutch built up the land, and one effective way ②use it was to grow flowers. The Aalsmeer Flower Market is a place ③which thousands of flower-filled carts are moved. Around 20 million flowers are traded and ④shipped every day. Visitors may wonder ⑤can they buy just a few flowers there.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "flowers는 거래되고 배송되는 대상이므로 ‘are traded and shipped’와 같이 병렬 수동태로 쓰는 것이 옳다. ①은 sits, ②는 to use, ③은 where 또는 in which, ⑤는 whether they can의 형태가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e7b19bd775",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 상황에 맞게 괄호 안의 표현을 모두 사용하여 문장을 완성하시오. 필요하면 동사의 형태를 바꿀 수 있다.\n\nLeah knows that visitors cannot purchase a small number of flowers at the Aalsmeer Flower Market. She is curious about the reason.\n\nLeah wonders ________________________________________.\n\n(why, just a few flowers, visitors, cannot, buy, at the market)",
+"selfGrade": true,
+"answer": "why visitors cannot buy just a few flowers at the market",
+"solution": "wonder 뒤에는 의문사절이 목적어로 오며 ‘의문사＋주어＋동사’의 간접의문문 어순을 사용한다. 따라서 why 다음에 주어 visitors와 동사구 cannot buy를 차례로 배열해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ec9d7f4ce1",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nPeople may choose different forms of literature. Some enjoy poems, while others prefer plays, novels, or cartoons. Whichever form they choose, literature helps them meet ideas from other times and imagine lives and places beyond their everyday experience.",
+"choices": [
+"문학 작품을 쓰기 위해 필요한 재능",
+"문학이 독자에게 더 넓은 경험을 제공하는 방식",
+"시와 소설의 형식상 차이",
+"옛 작가의 작품을 읽기 어려운 이유",
+"사람들이 만화를 가장 좋아하는 까닭"
+],
+"answer": "②",
+"solution": "여러 문학 형식에 대한 선호는 다르지만, 문학은 독자가 일상 너머의 생각과 삶을 경험하도록 돕는다는 내용이다. 따라서 글의 주제로는 ②가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-dc00d036b8",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nDong-ju went to Japan with his cousin to continue his studies. After his cousin was arrested for joining an independence movement, Dong-ju was arrested as well. Both men died in prison, and Korea gained independence only a few months after Dong-ju's death.",
+"choices": [
+"A Poet Who Died Before Korea's Independence",
+"Two Students Who Returned Home Safely",
+"The Beginning of a Peaceful School Life",
+"A Cousin Who Became a Japanese Police Officer",
+"Korea's Independence Before Dong-ju's Arrest"
+],
+"answer": "①",
+"solution": "글은 독립운동과 관련하여 체포된 동주가 감옥에서 숨지고, 몇 달 뒤 조국이 독립한 일을 다룬다. 이러한 비극적 생애를 가장 잘 드러내는 제목은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c106e6397c",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nA reader does not have to remain inside the small world of personal experience. Through literature, the reader can encounter the thoughts of writers from the distant past and imagine being another person in an unfamiliar place.",
+"choices": [
+"독자는 오래된 작품을 피해야 한다.",
+"문학은 실제 경험만을 정확히 기록해야 한다.",
+"좋은 독자는 한 종류의 문학만 선택해야 한다.",
+"문학은 독자가 자신의 경험 범위를 넓히게 한다.",
+"작가의 생각은 시대가 지나면 이해할 수 없다."
+],
+"answer": "④",
+"solution": "글은 문학을 통해 과거 작가의 생각을 만나고 다른 사람이나 장소를 상상할 수 있다고 설명한다. 즉, 문학이 개인의 제한된 경험을 확장한다는 ④가 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7ebea7eb90",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nDong-ju had chosen a title for his book long before it appeared. After his death, Jeong Byeong-uk delivered the poems to Dong-ju's brother, and the poetry book was finally published. Although the poet could no longer speak for himself, his poems continued to shine in the hearts of readers of every age.",
+"choices": [
+"Dong-ju가 일본에서 공부하게 된 경제적 이유",
+"Jeong Byeong-uk이 직접 쓴 시의 문학적 가치",
+"사후에 출판되어 오래도록 사랑받는 Dong-ju의 시",
+"Dong-ju의 책 제목이 독자들에게 잊힌 과정",
+"시보다 소설을 선호하게 된 독자들의 변화"
+],
+"answer": "③",
+"solution": "핵심은 동주가 세상을 떠난 뒤 그의 시집이 출판되었고, 그 시들이 계속 독자들의 사랑을 받는다는 것이다. 전달자나 책 제목은 이를 뒷받침하는 세부 내용이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6fe79c273a",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸에 들어갈 말로 가장 적절한 것은?\n\nReaders do not always agree about the best kind of literature. One reader may choose a play, and another may enjoy a poem or a cartoon. Yet every kind of literature can take readers beyond their familiar surroundings and introduce them to lives they have never experienced.\n\nAlthough readers' literary preferences may ________, the ability of literature to widen their world is ________.",
+"choices": [
+"disappear — harmful",
+"differ — shared",
+"continue — limited",
+"improve — accidental",
+"matter — unknown"
+],
+"answer": "②",
+"solution": "앞부분은 독자마다 선호하는 문학의 종류가 다르다는 내용이므로 첫 빈칸에는 differ가 적절하다. 그러나 모든 문학이 독자의 세계를 넓힌다는 공통점이 있으므로 두 번째 빈칸에는 shared가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5c0e7b8fcc",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목과 요지를 가장 적절하게 연결한 것은?\n\nPlays, poems, novels, and cartoons differ in form, so people may not make the same choice among them. These differences, however, are less important than what all literature makes possible. By reading, we can listen to voices from long ago, step outside our usual lives, and mentally visit worlds unavailable to us in daily life.\n\n제목 / 요지",
+"choices": [
+"Choosing the Only Valuable Literary Form / 시는 다른 문학 형식보다 가치가 높다.",
+"Why Old Writers Are Difficult to Understand / 과거 작가의 생각은 현대 독자에게 도움이 되지 않는다.",
+"Different Forms, One Expanding Power / 문학의 형식은 다양하지만 모두 독자의 세계를 확장한다.",
+"Leaving Literature Behind / 직접 경험을 쌓기 위해서는 문학에서 벗어나야 한다.",
+"The Limits of Imagination / 문학은 독자를 현실의 익숙한 장소에 머물게 한다."
+],
+"answer": "③",
+"solution": "글은 문학의 형식과 개인의 선호가 다양하다는 사실을 인정한 뒤, 모든 문학이 독자의 세계를 넓힌다는 공통 기능을 강조한다. 제목과 요지를 모두 정확히 나타낸 것은 ③뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-621bc03e38",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 아래와 같이 요약하려 한다. 빈칸 (A)~(C)에 들어갈 말을 본문에서 찾아 각각 한 단어의 영어로 쓰시오.\n\nDong-ju and his cousin were arrested after becoming connected with an independence movement. They later died in prison because of the harsh treatment they received. Korea achieved independence only a few months afterward. Several years later, Dong-ju's poems were published and began a new life among readers.\n\nAlthough Dong-ju died in (A)________ before Korea gained (B)________, the later publication of his (C)________ allowed his voice to live on.",
+"selfGrade": true,
+"answer": "prison, independence, poems",
+"solution": "동주는 감옥에서 숨졌으므로 (A)는 prison이고, 그 뒤 한국이 얻은 것은 independence이다. 사후에 출판되어 그의 목소리를 이어 준 것은 그의 poems이므로 (C)에는 poems가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d0a7816633",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 가장 잘 요약한 것은?\n\nDong-ju's life ended in prison shortly before his country became independent. This might have caused his hopes and words to disappear from public memory. Instead, his poems were later brought to his brother and published under a title Dong-ju had considered years earlier. The poet did not live to see the book, but readers of different generations have continued to keep his poems in their hearts.",
+"choices": [
+"Dong-ju는 생전에 시집을 출판하여 즉시 모든 세대의 인정을 받았다.",
+"Dong-ju의 죽음으로 그의 작품과 그가 정한 제목은 완전히 사라졌다.",
+"한국의 독립은 Dong-ju가 일본으로 유학을 떠나기 전에 이루어졌다.",
+"Dong-ju는 투옥 생활을 기록하기 위해 감옥에서 처음 시를 쓰기 시작했다.",
+"Dong-ju는 시집 출판을 보지 못했지만 그의 시는 사후에 전해져 계속 사랑받았다."
+],
+"answer": "⑤",
+"solution": "글은 동주가 시집 출판 전에 세상을 떠났지만, 그의 시가 전달·출판되어 여러 세대의 독자에게 남았다는 흐름을 강조한다. 죽음 이후에도 작품의 생명력이 이어졌다는 역설까지 포함한 ⑤가 가장 완전한 요약이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
 }
 ]

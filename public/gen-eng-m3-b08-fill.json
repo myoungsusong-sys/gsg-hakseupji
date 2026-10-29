@@ -1156,5 +1156,267 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b08-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-39a9bbb5ea",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nDa Vinci wanted to prepare food faster and more easily while working in Sforza’s kitchen. Therefore, he designed machines for jobs such as crushing vegetables and pulling spaghetti. His ideas were creative, but many of the machines were too large or complicated to use.",
+"choices": [
+"Da Vinci’s Successful Career as a Musician",
+"Creative but Impractical Kitchen Machines",
+"The Most Popular Food in Milan",
+"Sforza’s Plan for a Church Painting",
+"Simple Ways to Learn Cooking"
+],
+"answer": "②",
+"solution": "다 빈치는 요리를 더 쉽고 빠르게 하려고 창의적인 기계들을 만들었다. 그러나 그 기계들은 너무 크거나 사용하기 어려웠으므로 ②가 글의 핵심을 가장 잘 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-068240014c",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nWhen da Vinci began working for Ludovico Sforza, he performed several different roles. Among them was the job of managing the kitchen. This pleased him because it gave him an opportunity to follow his strong interest in cooking. He went beyond making unusual dishes and tried to improve the way food was prepared.",
+"choices": [
+"Da Vinci regarded every role given by Sforza as a burden.",
+"Da Vinci used his kitchen role to continue and develop his interest in cooking.",
+"Sforza employed da Vinci only because of his cooking ability.",
+"Da Vinci stopped creating dishes after becoming an engineer.",
+"Da Vinci believed that painting was more useful than cooking."
+],
+"answer": "②",
+"solution": "글은 다 빈치가 주방을 맡게 된 것을 기뻐했고, 이를 통해 요리에 대한 관심을 계속 발전시켰다고 설명한다. 여러 역할 자체보다 주방에서 요리에 대한 열정을 추구했다는 점이 중심이므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7df86e11b1",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 주제로 가장 알맞은 것은?\n\nMan: Was everything all right with your meal?\nWoman: The bread and salad were fine, but I didn’t enjoy the steak. It was too rare.\nMan: I’m sorry. Shall I replace it?\nWoman: No, thank you. I have to leave now.\nMan: Then you won’t be charged for the steak. We’ll serve you better on your next visit.",
+"choices": [
+"a customer’s complaint and the waiter’s response",
+"a waiter’s recommendation of a popular steak",
+"a customer’s request for fresh bread and salad",
+"a restaurant’s method of preparing rare steak",
+"a waiter’s refusal to correct a problem"
+],
+"answer": "①",
+"solution": "여자는 스테이크가 너무 덜 익었다며 불만을 나타냈다. 종업원은 사과하고 스테이크 값을 받지 않겠다고 대응했으므로 대화의 주제는 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-81bcbb34c5",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nSforza asked da Vinci to paint a scene of Jesus’ last supper on a church wall. Because da Vinci was deeply interested in food, he accepted the task with pleasure. He then cooked many kinds of food while deciding what should appear on the table in the painting. As this continued for more than a year, the church people complained that the painting remained unfinished.",
+"choices": [
+"Why the Church People Delayed the Project",
+"How Sforza Learned to Cook Various Dishes",
+"Da Vinci’s Food Research and the Delayed Painting",
+"Why Da Vinci Refused to Paint a Church Wall",
+"The Church People’s Interest in Kitchen Machines"
+],
+"answer": "③",
+"solution": "다 빈치는 그림 속 식탁에 놓을 음식을 정하려고 여러 음식을 요리하는 데 오랜 시간을 보냈다. 그 결과 그림의 완성이 늦어졌다는 내용이므로 ③이 가장 적절한 제목이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-93cee0da9e",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 글을 통해 공통적으로 알 수 있는 내용으로 가장 적절한 것은?\n\n(A) Da Vinci was pleased to manage Sforza’s kitchen because he loved cooking. Wanting to prepare food more efficiently, he designed several new devices. Although they were original, many were too large or difficult to operate.\n\n(B) For a church painting requested by Sforza, da Vinci spent more than a year cooking various foods to choose what to place on the table. The church people became upset because the painting was still incomplete.",
+"choices": [
+"Da Vinci’s interest in cooking influenced more than one area of his work.",
+"Da Vinci completed every task quickly with the help of his machines.",
+"Sforza prevented da Vinci from working in the kitchen.",
+"Da Vinci’s cooking always brought satisfaction to other people.",
+"The church people asked da Vinci to invent cooking devices."
+],
+"answer": "①",
+"solution": "(A)에서는 요리에 대한 관심이 주방 기계의 발명으로 이어지고, (B)에서는 그림 제작 과정에까지 영향을 준다. 두 경우의 결과가 모두 성공적이었던 것은 아니므로 ②와 ④는 적절하지 않으며, 공통된 내용은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8ef31bf919",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 영어 단어를 차례대로 쓰시오.\n\n• Da Vinci designed devices because he wanted to cook faster and more easily.\n• He also cooked various foods for a long time while deciding what to include in his church painting.\n\nDa Vinci’s (A)__________ for cooking did not remain a private interest; it (B)__________ both his kitchen inventions and his work on the painting.\n\n조건: (A)는 본문에 제시된 다 빈치의 요리에 대한 강한 관심을 나타내는 명사이고, (B)는 ‘영향을 주었다’라는 뜻의 과거형 동사이다.",
+"selfGrade": true,
+"answer": "passion, influenced",
+"solution": "두 내용 모두 다 빈치의 요리에 대한 열정이 다른 작업으로 이어졌음을 보여 준다. (A)에는 강한 관심을 뜻하는 passion이, (B)에는 발명과 그림 작업에 영향을 주었다는 의미의 influenced가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-aedab1af71",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 가장 잘 나타내는 영어 제목을 주어진 단어를 모두 사용하여 완성하시오.\n\nDa Vinci created cooking machines while managing Sforza’s kitchen. Later, his interest in food led him to spend a great deal of time choosing food for a church painting.\n\n제목: How ________________________________________\n\n조건: cooking / connected / Da Vinci’s / inventions / and / painting을 각각 한 번씩만 사용하고, 필요한 경우 대문자로 바꾸시오.",
+"selfGrade": true,
+"answer": "How Cooking Connected Da Vinci’s Inventions and Painting",
+"solution": "글은 요리에 대한 관심을 매개로 주방 발명품과 그림 작업을 연결하고 있다. 의문사형 제목의 어순과 주어진 단어를 모두 고려하면 ‘How Cooking Connected Da Vinci’s Inventions and Painting’이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-41e3da3916",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 교회 사람들이 불평한 이유를 조건에 맞게 한 문장으로 요약하시오.\n\nDa Vinci cooked many kinds of food to determine what should be shown on the table in his painting. After more than a year, however, the painting was not yet complete. The people from the church complained about this situation to Sforza.\n\n조건:\n• They complained because로 시작할 것.\n• spent, over a year, in the kitchen, instead of, finishing을 모두 사용할 것.\n• 총 17단어로 쓸 것.",
+"selfGrade": true,
+"answer": "They complained because he had spent over a year in the kitchen instead of finishing the painting.",
+"solution": "교회 사람들은 다 빈치가 그림을 완성하지 않고 1년 넘게 주방에서 시간을 보냈기 때문에 불평했다. 제시된 표현을 문법에 맞게 배열하면 정답 문장이 되며, 축약하지 않고 세면 총 17단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a4d72d14cb",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 표현과 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"as a cook: 요리사로서",
+"take charge of the kitchen: 주방을 책임지다",
+"a few carrot slices: 당근 몇 조각",
+"be used to big servings: 많은 양에 익숙하다",
+"as a result: 예를 들어"
+],
+"answer": "⑤",
+"solution": "as a result는 ‘그 결과’라는 뜻으로, 앞선 일의 결과를 나타낸다. ‘예를 들어’에 해당하는 표현은 for example이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a01371e318",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장을 관계부사를 이용하여 한 문장으로 만들 때, 빈칸에 들어갈 한 단어를 쓰시오.\n\nThis is the kitchen. + I made the jam there.\n→ This is the kitchen __________ I made the jam.",
+"selfGrade": true,
+"answer": "where",
+"solution": "선행사 the kitchen이 장소를 나타내고, 뒤에는 주어·동사·목적어가 갖추어진 절이 이어진다. 장소를 나타내는 there를 대신하여 두 문장을 연결하는 관계부사 where가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7409faec1a",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 문장은?",
+"choices": [
+"I remember the day when we changed the menu.",
+"This is the restaurant where I worked as a cook.",
+"That is the river where we learned to swim in.",
+"Do you remember the day when we made the jam?",
+"This is the kitchen where we prepared the dishes."
+],
+"answer": "③",
+"solution": "관계부사 where는 장소를 나타내는 전치사의 의미를 포함한다. 따라서 ③에서는 문장 끝의 in을 삭제해야 하며, 나머지 문장에서는 when과 where가 각각 시간과 장소를 알맞게 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2f781fd0b0",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장과 의미가 같도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThis dish is more artistic than any other dish on the menu.\n→ This is __________ on the menu.",
+"choices": [
+"an artistic dish",
+"the most artistic dish",
+"the more artistic dish",
+"the most artistic dishes",
+"a dish more artistic than this one"
+],
+"answer": "②",
+"solution": "‘비교급 + than any other + 단수 명사’는 같은 범위의 다른 모든 대상보다 더하다는 뜻으로 최상급의 의미를 나타낸다. artistic의 최상급은 most artistic이므로 the most artistic dish가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6d017cdd1b",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 의미를 모두 바르게 이해한 것은?\n\n(A) The dish had a few carrot slices.\n(B) The customers were used to dishes with big servings of meat.",
+"choices": [
+"(A)에는 당근 조각이 전혀 없었고, (B)의 손님들은 고기가 많이 담긴 요리에 익숙했다.",
+"(A)에는 당근 조각이 몇 개 있었고, (B)의 손님들은 고기가 많이 담긴 요리를 만드는 일을 맡았다.",
+"(A)에는 당근 조각이 거의 없었고, (B)의 손님들은 과거에만 고기를 먹었다.",
+"(A)에는 당근 조각이 몇 개 있었고, (B)의 손님들은 고기가 많이 담긴 요리에 익숙했다.",
+"(A)에는 당근 조각이 충분히 많았고, (B)의 손님들은 고기가 많이 담긴 요리에 익숙해지기를 원했다."
+],
+"answer": "④",
+"solution": "a few는 셀 수 있는 명사의 복수형 앞에서 ‘몇 개의’라는 뜻으로 쓰이며, ‘거의 없는’이라는 뜻의 few와 구별해야 한다. be used to는 뒤에 명사가 오면 ‘~에 익숙하다’라는 뜻이므로 두 문장의 의미를 모두 바르게 설명한 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-86734fdd8c",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 네 문장을 두 개의 관계부사절이 포함된 한 문장으로 완성하시오.\n\n• I remember the day.\n• We made jam on that day.\n• This is the kitchen.\n• We made it in the kitchen.\n\n→ I remember the day (A)__________, and this is the kitchen (B)__________.\n\n조건:\n• (A)는 when, (B)는 where로 시작할 것.\n• 주어진 문장의 시제와 대명사를 유지할 것.\n• (A), (B)에 들어갈 말을 순서대로 쓰시오.",
+"selfGrade": true,
+"answer": "when we made jam, where we made it",
+"solution": "the day는 시간을 나타내므로 on that day를 when으로 바꾸어 연결한다. the kitchen은 장소를 나타내므로 in the kitchen을 where로 바꾸어 연결한다. 관계부사 뒤에는 각각 we made jam과 we made it이 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8fc49bf32e",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장과 의미가 같도록 (A), (B)를 완성하시오.\n\nThis jam is better than any other jam I have ever had.\n\n(A) This is the __________ I have ever had.\n(B) This jam is __________ all the other jams I have ever had.\n\n조건:\n• (A)는 두 단어, (B)는 두 단어로 쓸 것.\n• (A)에는 최상급, (B)에는 비교급을 사용할 것.\n• (A), (B)에 들어갈 말을 순서대로 쓰시오.",
+"selfGrade": true,
+"answer": "best jam, better than",
+"solution": "better than any other jam은 다른 어떤 잼보다 더 좋다는 뜻이므로 최상급 best를 이용하여 best jam으로 바꿀 수 있다. 비교 대상인 나머지 잼 전체를 all the other jams로 나타낼 때는 better than을 그대로 사용한다. any other 뒤의 단수 명사와 all the other 뒤의 복수 명사를 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4bc547e6f9",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 밑줄에 해당하는 대괄호 부분에는 각각 한 군데씩 어법상 오류가 있다. 조건에 맞게 고친 뒤, 수정한 부분을 (A)~(C)의 순서대로 쓰시오.\n\n(A) This is the restaurant [when we had dinner].\n(B) I remember the day [where we changed the menu].\n(C) This dish is more artistic [than any other dishes on the menu].\n\n조건:\n• (A), (B)는 관계부사 한 단어만 바꿀 것.\n• (C)는 명사 한 단어만 바꿀 것.\n• 각 대괄호 부분 전체를 고쳐 쓸 것.",
+"selfGrade": true,
+"answer": "where we had dinner, when we changed the menu, than any other dish on the menu",
+"solution": "장소를 나타내는 the restaurant 뒤에는 where, 시간을 나타내는 the day 뒤에는 when을 사용한다. ‘비교급 + than any other + 단수 명사’는 최상급의 의미를 나타내는 표현이므로 dishes를 dish로 고쳐야 한다. 각 부분에서 지정된 한 단어만 바꾸면 조건에 맞는 문장이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
 }
 ]

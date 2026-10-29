@@ -1756,5 +1756,406 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u5m7s0t0",
 "custom": true
+},
+{
+"id": "fill-e088c7dfe7",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 영어 표현과 우리말 뜻의 관계가 바르지 않은 것은?",
+"choices": [
+"pick up: 집어 들다",
+"brush off: 털어 내다",
+"stand for: 의미하다",
+"belong to: ~에게 속하다",
+"end up: 출발하다"
+],
+"answer": "⑤",
+"solution": "‘end up’은 여러 과정을 거친 뒤 ‘결국 ~하게 되다’라는 뜻이다. ‘출발하다’에 해당하는 표현은 ‘start’ 또는 ‘leave’이므로 ⑤가 바르지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-31c09f2ccc",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말을 영어로 가장 바르게 옮긴 것은?\n\nStanley는 KB가 무엇을 의미하는지 궁금했다.",
+"choices": [
+"Stanley wondered what did KB stand for.",
+"Stanley wondered what KB stood for.",
+"Stanley wondered what was KB standing for.",
+"Stanley wondered what did KB stood for.",
+"Stanley wondered what for KB stood."
+],
+"answer": "②",
+"solution": "간접의문문은 ‘의문사+주어+동사’의 어순을 사용한다. 주절의 동사가 과거형인 wondered이므로 간접의문문의 동사도 stood로 쓰는 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-21561e5697",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 두 문장에서 since의 의미를 바르게 구분한 것은?\n\n(A) Since Stanley found a shiny object, his heart beat faster.\n(B) Stanley had become stronger since he began digging holes.",
+"choices": [
+"(A) 이유 ― (B) 이유",
+"(A) 이유 ― (B) 시간",
+"(A) 시간 ― (B) 이유",
+"(A) 시간 ― (B) 시간",
+"(A) 조건 ― (B) 시간"
+],
+"answer": "②",
+"solution": "(A)의 since는 심장이 더 빨리 뛴 이유를 나타내므로 ‘~이기 때문에’라는 뜻이다. (B)의 since는 구멍을 파기 시작한 때부터의 기간을 나타내므로 ‘~한 이후로’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f0ebf29993",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 들어갈 말을 바르게 짝지은 것은?\n\nStanley가 구멍을 더 많이 팔수록, 그는 구멍 하나를 끝내는 데 더 적은 시간이 걸렸다.\n\nThe more holes Stanley dug, ________ time ________ him to finish one hole.",
+"choices": [
+"the less ― it took",
+"the fewer ― it took",
+"the less ― did it take",
+"less ― it was taken",
+"the fewer ― he took"
+],
+"answer": "①",
+"solution": "‘~할수록 더욱 …하다’는 ‘The+비교급, the+비교급’으로 나타낸다. time은 셀 수 없는 명사이므로 fewer가 아니라 less를 쓰며, ‘시간이 걸리다’는 ‘it takes 사람 시간’의 구조를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ccd24dd01c",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 밑줄 친 부분 중 어법상 바르지 않은 것을 모두 고친 것은?\n\nUnfortunately ⓐfor Stanley, the sneakers belonged ⓑwith Clyde Livingstone. The police asked ⓒhim why he was running, and Stanley eventually ended ⓓat Camp Green Lake.",
+"choices": [
+"ⓐ to → for, ⓑ with → for",
+"ⓑ with → to, ⓓ at → up at",
+"ⓑ with → to, ⓒ him → to him",
+"ⓐ for → to, ⓒ him → he",
+"ⓒ him → to him, ⓓ at → up in"
+],
+"answer": "②",
+"solution": "‘~에게 속하다’는 ‘belong to’이므로 ⓑ의 with를 to로 고쳐야 한다. 또한 ‘결국 어떤 장소에 있게 되다’는 ‘end up at+장소’로 나타내므로 ⓓ를 up at으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c6ecf0eaff",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 우리말 문장을 since를 사용하여 영어로 완성하시오. 단, (1)의 since는 이유, (2)의 since는 시간을 나타내야 한다.\n\n(1) 반짝이는 물체를 발견했기 때문에 Stanley의 심장은 더 빨리 뛰었다.\n(2) Stanley가 구멍을 파기 시작한 이후로 그는 더 강해졌다.",
+"selfGrade": true,
+"answer": "(1) Since Stanley found a shiny object, his heart beat faster. (2) Stanley has become stronger since he began digging holes.",
+"solution": "(1)은 원인과 결과의 관계이므로 문장 앞에 ‘Since+주어+과거동사’를 쓴다. (2)는 과거부터 현재까지의 변화를 나타내므로 주절에는 현재완료를, since절에는 과거시제를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bd0e798ffd",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 ‘The+비교급, the+비교급’ 구문을 사용하여 한 문장으로 쓰시오.\n\nStanley dug more. He became stronger.",
+"selfGrade": true,
+"answer": "The more Stanley dug, the stronger he became.",
+"solution": "두 문장이 비례하여 변하는 관계이므로 ‘The+비교급, the+비교급’ 구문을 사용한다. 동작의 증가에는 ‘the more Stanley dug’를, 상태의 변화에는 ‘the stronger he became’을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e7d1cf6114",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 부분을 모두 고쳐 문장 전체를 다시 쓰시오.\n\nThe police asked Stanley why was he running, and they wanted to know who did the sneakers belong to.",
+"selfGrade": true,
+"answer": "The police asked Stanley why he was running, and they wanted to know who the sneakers belonged to.",
+"solution": "asked와 wanted to know 뒤에는 모두 간접의문문이 이어지므로 ‘의문사+주어+동사’의 어순을 사용한다. 따라서 ‘why was he’를 ‘why he was’로, ‘who did the sneakers belong to’를 ‘who the sneakers belonged to’로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f60e58b51a",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nInside the Sagrada Familia, the tall columns resemble trees. Antoni Gaudi borrowed this natural shape to fill the church with the beauty of the outdoors.",
+"choices": [
+"교회 내부에 자연의 아름다움을 담은 건축",
+"오래된 교회를 안전하게 보수하는 방법",
+"나무를 보호하기 위한 예술가들의 노력",
+"스페인에서 가장 높은 나무의 특징",
+"교회에서 지켜야 할 관람 예절"
+],
+"answer": "①",
+"solution": "가우디가 나무의 형태를 기둥에 활용하여 자연의 아름다움을 교회 안에 표현했다는 내용이다. 따라서 글의 주제는 자연의 아름다움을 담은 건축이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-90af99a86b",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nThe roof of the Sydney Opera House reminds many people of ocean waves or a boat. Its architect, Jørn Utzon, however, developed the design from the form of orange peels. He did not simply copy the fruit but combined its shape with his imagination.",
+"choices": [
+"A Boat That Became a Concert Hall",
+"An Orange behind a Famous Roof",
+"How to Grow the Perfect Orange",
+"The Long History of Sailing in Australia",
+"Why Architects Avoid Curved Shapes"
+],
+"answer": "②",
+"solution": "글은 시드니 오페라 하우스의 지붕이 오렌지 껍질의 형태에서 착안되었다는 사실을 설명한다. 파도나 배는 사람들이 떠올리는 모습일 뿐 실제 영감의 원천이 아니므로 ②가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e2dc79c866",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nDongdaemun Design Plaza is sometimes compared to a huge spaceship. Zaha Hadid, however, used curved lines found in nature when she designed it. Through those lines, people living in the city can experience forms from the natural world.",
+"choices": [
+"도시의 건물은 모두 직선으로 설계해야 한다.",
+"우주선의 형태는 자연의 곡선보다 아름답다.",
+"건축가는 유명 관광지를 그대로 모방해야 한다.",
+"자연에서 가져온 곡선은 도시 건축에 아름다움을 더할 수 있다.",
+"도시 사람들은 자연보다 우주에 더 많은 관심을 보인다."
+],
+"answer": "④",
+"solution": "글의 중심은 동대문디자인플라자의 겉모습 자체가 아니라 자연의 곡선이 건축에 활용되었다는 점이다. 이를 통해 도시 사람들도 자연의 형태를 경험할 수 있으므로 ④가 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5706850fd2",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nArchitects can obtain ideas from nature in different ways. Gaudi made the columns of the Sagrada Familia look like trees, so the source of his idea is easy to recognize. Utzon changed the form of orange peels through his imagination when designing the Sydney Opera House. Hadid also brought natural curves into the middle of Seoul through Dongdaemun Design Plaza. Although the results look different, all three buildings bring elements of nature into urban spaces.",
+"choices": [
+"Three Architects Who Rejected Natural Forms",
+"Why Modern Cities Need Fewer Tourist Attractions",
+"Different Ways Nature Takes Shape in Architecture",
+"The Competition to Build the World’s Largest Building",
+"Traditional Materials Used in Famous Churches"
+],
+"answer": "③",
+"solution": "세 건축물은 서로 다른 방식으로 나무, 오렌지 껍질, 자연의 곡선을 디자인에 반영했다. 공통적으로 자연이 건축적 영감이 되었다는 내용이므로 ③이 가장 포괄적인 제목이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-002832468c",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nNature does not always appear in architecture in an easily recognizable form. The tree-like columns of the Sagrada Familia clearly reveal Gaudi’s source. In contrast, people often mistake the roof of the Sydney Opera House for waves or a sailing boat because Utzon creatively changed the form of orange peels.\n\nNatural inspiration may be (A) in some buildings, while in others it is transformed by an architect’s (B).",
+"choices": [
+"obvious — imagination",
+"harmful — experience",
+"traditional — mistake",
+"unnecessary — popularity",
+"hidden — rules"
+],
+"answer": "①",
+"solution": "사그라다 파밀리아에서는 자연의 원천이 분명히 드러나지만, 시드니 오페라 하우스에서는 오렌지 껍질의 형태가 창의적으로 변형되었다. 따라서 (A)에는 obvious, (B)에는 imagination이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b92ddc14cc",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 제목을 아래 조건에 맞게 완성하시오.\n\nThe Sagrada Familia reflects the forms of trees, and the Sydney Opera House developed from the shape of orange peels. Dongdaemun Design Plaza also uses curved lines from the natural world. These examples show that architects can turn natural forms into a variety of creative buildings.\n\n조건\n1. nature, inspires, architectural, designs를 모두 한 번씩 사용할 것.\n2. 총 5단어로 쓸 것.\n3. 제목의 첫 단어와 고유 명사를 제외하고 불필요하게 대문자로 쓰지 말 것.\n\nHow __________________________________",
+"selfGrade": true,
+"answer": "How nature inspires architectural designs",
+"solution": "세 건축물의 공통점은 자연의 형태가 건축 디자인에 영감을 주었다는 것이다. 제시된 네 단어를 모두 사용하고 첫 단어 How를 포함하면 총 5단어의 제목이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c8f5645da3",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 아래 조건에 맞는 한 문장의 영어로 쓰시오.\n\nArtists often find ideas in the world around them because natural forms are visually pleasing. Architects have used trees, orange peels, and curved natural lines to create buildings in Spain, Australia, and Korea. In this way, structures in urban spaces can contain the beauty of the natural world.\n\n조건\n1. architecture, connect, beauty, nature, cities를 각각 한 번씩 사용할 것.\n2. 필요한 경우 주어진 단어의 형태를 바꿀 것.\n3. 총 8단어로 쓸 것.",
+"selfGrade": true,
+"answer": "Architecture connects the beauty of nature with cities.",
+"solution": "글은 건축이 자연의 아름다움을 도시 공간에 담아낸다는 점을 강조한다. connect는 주어 Architecture에 맞추어 connects로 바꾸어야 하며, 제시된 문장은 마침표를 제외하고 총 8단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-aae282d527",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nA man (A)[named / naming] Nicholas helped make musical instruments. Water pipes were (B)[turning / turned] into flutes. The orchestra members spent time (C)[practicing / practice] together every day.",
+"choices": [
+"named — turning — practicing",
+"naming — turned — practice",
+"naming — turning — practicing",
+"named — turned — practicing",
+"named — turned — practice"
+],
+"answer": "④",
+"solution": "사람이 특정 이름으로 불린다는 뜻이므로 과거분사 named가 알맞다. 수도관이 플루트로 바뀌는 수동 관계이므로 were turned를 쓴다. ‘~하는 데 시간을 보내다’는 spend time -ing이므로 practicing이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7ce3b1694b",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 ⓐ~ⓔ 중 어법상 옳은 문장으로만 묶인 것은?\n\nⓐ Buying new instruments was too expensive for the members.\nⓑ The instruments in the town was few in number.\nⓒ Nicholas was able to make violins out of oil drums.\nⓓ The first piece of music what the members played was short.\nⓔ The members could not afford buying new instruments.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓓ",
+"ⓐ, ⓒ",
+"ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ는 동명사구 주어에 단수 동사 was를 썼고, ⓒ는 be able to 뒤에 동사원형 make를 써서 옳다. ⓑ는 복수 주어 instruments에 맞게 was를 were로 고쳐야 한다. ⓓ의 what은 that 또는 which로, ⓔ의 buying은 to buy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a7d7c01656",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳지 않은 것은?",
+"choices": [
+"Andrea plays the violin in an orchestra that uses instruments made from discarded objects.",
+"The instruments were making from objects that came from a landfill.",
+"Favio taught the members how to play their instruments.",
+"The members began to practice together after they felt new hope.",
+"The audience is giving the orchestra a big hand."
+],
+"answer": "②",
+"solution": "②의 악기들은 물건들로 ‘만들어진’ 것이므로 수동태가 필요하다. 따라서 were making을 were made로 고쳐야 한다. 나머지 문장에는 관계대명사, 의문사와 to부정사 등의 형태가 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a4b649724c",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 옳은 문장으로만 묶인 것은?\n\nⓐ The music that the members first played was mostly out of tune.\nⓑ The instruments that Nicholas made was used by the members.\nⓒ At first, the members did not know how read music.\nⓓ A man named Nicholas helped turn Favio's idea into real instruments.\nⓔ The first piece what they played gave them new hope.\nⓕ After gaining hope, the members spent time practicing every day.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓔ",
+"ⓐ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓐ는 단수 취급하는 music에 was가 호응하며, ⓓ의 named와 ⓕ의 spent time practicing도 옳다. ⓑ의 주어는 복수 명사 instruments이므로 was를 were로 고쳐야 한다. ⓒ는 how to read로, ⓔ는 선행사 piece가 있으므로 what을 that 또는 which로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-84d3da13e7",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 어법상 잘못된 문장을 고친 것이다. 수정 후에도 어법상 오류가 남아 있는 것은?",
+"choices": [
+"The members were not able to reading music.\n→ The members were not able to read music.",
+"The violins making from oil drums were used by the members.\n→ The violins made from oil drums were used by the members.",
+"Nobody in the orchestra know how to play an instrument at first.\n→ Nobody in the orchestra knew how to play an instrument at first.",
+"The first music what they played was special to them.\n→ The first music that they played was special to them.",
+"The instruments that Nicholas make was used by the orchestra.\n→ The instruments that Nicholas made was used by the orchestra."
+],
+"answer": "⑤",
+"solution": "⑤는 관계절의 동사 make를 made로 고쳤지만, 주절의 수 일치 오류가 남아 있다. 주절의 주어는 복수 명사 instruments이므로 was used를 were used로 고쳐야 한다. 나머지 선택지는 수정 후 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-474e0970d4",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓖ 중 어법상 옳지 않은 문장의 개수는?\n\nⓐ Each of the instruments that Nicholas made were used by the orchestra.\nⓑ At first, the members did not know how music should be read.\nⓒ Oil drums were turned into violins by Nicholas.\nⓓ The first piece of music that the members played were short.\nⓔ Favio told the members that they were going to give a concert.\nⓕ The instruments make from landfill objects are used to play music.\nⓖ Everyone watching the concert is giving the members a big hand.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "어법상 옳지 않은 문장은 ⓐ, ⓓ, ⓕ로 총 3개이다. ⓐ는 Each가 주어의 핵심이므로 were를 was로, ⓓ는 단수 명사 piece가 주어의 핵심이므로 were를 was로 고쳐야 한다. ⓕ는 악기와 만들다의 관계가 수동이므로 make를 made로 고쳐야 한다. ⓑ의 간접의문문과 ⓖ의 everyone에 호응하는 is는 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ba3c6eb489",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓖ 중 어법상 옳은 문장을 빠짐없이 고른 것은?\n\nⓐ The violins that Nicholas made from oil drums were used by the orchestra.\nⓑ Andrea, who plays the violin, is a member of the Recycled Orchestra.\nⓒ The man naming Nicholas was able to put Favio's idea into practice.\nⓓ The concert that the members had prepared for has just ended.\nⓔ In the beginning, none of the members knew how reading music.\nⓕ The first music that the members played was mostly out of tune.\nⓖ The members could not afford to buying the instruments they needed.",
+"choices": [
+"ⓐ, ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓓ, ⓕ",
+"ⓑ, ⓓ, ⓔ, ⓕ",
+"ⓐ, ⓑ, ⓕ, ⓖ",
+"ⓑ, ⓒ, ⓔ, ⓖ"
+],
+"answer": "①",
+"solution": "ⓐ, ⓑ, ⓓ, ⓕ는 관계절과 주절의 구조 및 동사 형태가 모두 옳다. 특히 ⓓ는 단수 주어 concert에 has가, ⓕ는 셀 수 없는 명사 music에 was가 호응한다. ⓒ의 naming은 named로, ⓔ의 how reading은 how to read로 고쳐야 한다. ⓖ는 afford to 뒤에 동사원형이 필요하므로 buying을 buy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aa3b0f6f0b",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓕ 중 어법상 옳은 문장의 기호만 알파벳 순서대로 쓰시오.\n\nⓐ What Nicholas made from water pipes were flutes.\nⓑ The members did not know how could they read music.\nⓒ The instruments that were made from landfill objects was used in the concert.\nⓓ The first piece that the members played made them feel hopeful.\nⓔ Favio wanted the members learning how to play musical instruments.\nⓕ The orchestra members, who had practiced together, were given a big hand by the audience.\n\n답안 형식: ⓐ, ⓑ",
+"selfGrade": true,
+"answer": "ⓐ, ⓓ, ⓕ",
+"solution": "ⓐ의 what절은 ‘니콜라스가 수도관으로 만든 것들’을 뜻하며, 복수인 flutes를 보어로 받아 were를 쓸 수 있다. ⓓ는 사역동사 made 뒤에 목적어와 동사원형 feel이, ⓕ는 복수 주어 members 뒤에 수동태 were given이 바르게 쓰였다. ⓑ의 간접의문문은 how they could read music으로, ⓒ의 was는 were로 고쳐야 한다. ⓔ는 want의 목적격 보어로 to부정사를 써야 하므로 learning을 to learn으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
 }
 ]

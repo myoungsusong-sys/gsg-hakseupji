@@ -336,5 +336,261 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b06-u3m5s0t0",
 "custom": true
+},
+{
+"id": "fill-8c720a2b75",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"What do you wants in your school survival kit?",
+"Somin look in the mirror every time.",
+"Jiwon holds the stress ball tightly.",
+"An eraser erase Mike's mistakes.",
+"Let's makes our own survival kits."
+],
+"answer": "③",
+"solution": "주어 Jiwon은 3인칭 단수이므로 동사 hold에 -s를 붙인 holds가 알맞다. ①은 want, ②는 looks, ④는 erases, ⑤는 make로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dd44e0d23f",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 괄호 안에서 어법상 알맞은 말을 고른 것으로 바르게 연결된 것은?\n\nMs. Seo: (A)[Do / Does] you want a school survival kit?\nSomin (B)[look / looks] in the mirror and says, \"Just be you!\"\nMs. Seo: Let's (C)[make / makes] your own survival kit.",
+"choices": [
+"Do ― look ― make",
+"Do ― look ― makes",
+"Do ― looks ― make",
+"Does ― looks ― make",
+"Does ― looks ― makes"
+],
+"answer": "③",
+"solution": "의문문의 주어가 you이므로 (A)는 Do가 알맞다. 주어 Somin은 3인칭 단수이므로 (B)는 looks이고, Let's 뒤에는 동사원형이 오므로 (C)는 make이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1bae77aacf",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 알맞은 것만 짝지어진 것은?\n\nMs. Seo asks, \"ⓐWhat do you want in your school survival kit?\"\nSomin ⓑsay that she wants a mirror. Jiwon ⓒholds a stress ball tightly, but his stress ⓓgo away. Mike's eraser ⓔerases his mistakes. Emily's feelings ⓕgets hurt sometimes.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓔ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓐ는 「Do＋주어＋동사원형」의 의문문이고, ⓒ와 ⓔ는 각각 3인칭 단수 주어에 맞는 동사이므로 알맞다. ⓑ는 says, ⓓ는 goes, ⓕ는 get으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-afad03de90",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "괄호 안의 주어에 맞게 동사를 어법상 알맞은 형태로 쓰시오.\n\nSomin (A)(look) in the mirror and (B)(say), \"Just be you!\"\nJiwon (C)(hold) the stress ball tightly, and his stress (D)(go) away.\nMike's eraser (E)(erase) his mistakes.\n\n(A) ______  (B) ______  (C) ______  (D) ______  (E) ______",
+"selfGrade": true,
+"answer": "(A) looks (B) says (C) holds (D) goes (E) erases",
+"solution": "Somin, Jiwon, his stress, Mike's eraser는 모두 3인칭 단수 주어이다. 따라서 각 동사에 -s 또는 -es를 붙여 looks, says, holds, goes, erases로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8cc4070368",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 틀린 부분이 없는 문장은?",
+"choices": [
+"What do Ms. Seo want the students to make?",
+"Somin says to herself, \"Just are you!\"",
+"Jiwon hold a stress ball, and his stress goes away.",
+"Mike's eraser erases his mistakes, and he starts all over again.",
+"Let's making our own school survival kits."
+],
+"answer": "④",
+"solution": "④의 주어와 동사는 각각 Mike's eraser–erases, he–starts로 올바르게 호응한다. ①은 does, ②는 be, ③은 holds, ⑤는 make로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9fc06ca7a9",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 밑줄 친 동사는 모두 어법상 잘못되었다. 알맞은 형태로 고쳐 순서대로 쓰시오.\n\nMs. Seo: What ⓐdoes you want in your kit?\nSomin: I want a mirror. I say, \"Just ⓑare you!\"\nJiwon: I hold a stress ball. Then my stress ⓒgo away.\nMike: My eraser ⓓerase my mistakes.\nMs. Seo: Now make your own kit. Let's ⓔhas a great year!\n\nⓐ ______  ⓑ ______  ⓒ ______  ⓓ ______  ⓔ ______",
+"selfGrade": true,
+"answer": "ⓐ do ⓑ be ⓒ goes ⓓ erases ⓔ have",
+"solution": "주어 you의 의문문에는 do를 쓰고, 명령문에는 동사원형 be를 쓴다. my stress와 my eraser는 3인칭 단수이므로 goes와 erases가 알맞으며, Let's 뒤에는 동사원형 have가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-04630bad15",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 일치하도록 주어진 단어를 모두 사용하여 문장을 완성하시오. 필요한 경우 동사의 형태를 바꾸고, 문장 부호도 알맞게 쓸 것.\n\n(1) 여러분은 학교 생존 키트에 무엇을 원하나요?\n(what / do / want / you / in your school survival kit)\n\n(2) 그것은 마이크의 실수를 지운다.\n(it / erase / Mike's mistakes)\n\n(3) 멋진 한 해를 보내자.\n(let's / have / a great year)",
+"selfGrade": true,
+"answer": "(1) What do you want in your school survival kit? (2) It erases Mike's mistakes. (3) Let's have a great year.",
+"solution": "(1)은 「의문사＋do＋주어＋동사원형」의 어순으로 배열한다. (2)는 주어 It이 3인칭 단수이므로 erases를 쓰고, (3)은 Let's 뒤에 동사원형 have를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3b89e7bdc8",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 한 학생이 괄호 안 동사의 형태를 완성한 결과이다. 학생이 틀리게 쓴 것의 기호와 바른 형태를 모두 쓰시오.\n\nMs. Seo: What (A)do you want in your kit?\nSomin (B)looks in the mirror and (C)say, \"Just be you!\"\nJiwon (D)hold the stress ball, and his stress (E)goes away.\nMike's eraser (F)erases his mistakes.\nEmily's feelings (G)get hurt sometimes.\nMs. Seo: (H)Make your own kit. Let's (I)has a great year!",
+"selfGrade": true,
+"answer": "(C) says (D) holds (I) have",
+"solution": "Somin과 Jiwon은 3인칭 단수 주어이므로 (C)는 says, (D)는 holds가 되어야 한다. Let's 뒤에는 동사원형이 와야 하므로 (I)는 have가 알맞고, 나머지 형태는 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1c0b168a46",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 표현의 뜻으로 가장 알맞은 것은?\n\nJihun’s alarm clock is going off.",
+"choices": [
+"멈추고 있다",
+"고장 나고 있다",
+"울리고 있다",
+"떨어지고 있다",
+"사라지고 있다"
+],
+"answer": "③",
+"solution": "‘go off’는 알람이나 경보 장치가 주어일 때 ‘울리다’라는 뜻이다. 따라서 문장은 ‘지훈이의 알람시계가 울리고 있다’라는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7f9a5b631e",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 계획표의 내용을 현재진행형을 사용하여 한 문장으로 쓰시오.\n\nDad: clean the bathroom\nI: cook brunch\n\n→ Dad ______________________________, and I ______________________________.",
+"selfGrade": true,
+"answer": "Dad is cleaning the bathroom, and I am cooking brunch.",
+"solution": "현재진행형은 ‘주어+be동사+동사-ing’로 나타낸다. Dad에는 is를, I에는 am을 쓰며 clean과 cook에는 각각 -ing를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6632e641dd",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"It is rain outside now.",
+"Loud music are coming from the smartphone.",
+"My sisters is playing with the dog.",
+"Jihun looks out the window and checks the weather.",
+"Minjun pick up his tablet before school."
+],
+"answer": "④",
+"solution": "④는 3인칭 단수 주어 Jihun에 맞게 looks와 checks를 사용한 올바른 문장이다. ①은 raining, ②는 is, ③은 are, ⑤는 picks로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-af6a141e6f",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 영어 표현과 우리말 뜻의 연결이 적절하지 않은 것은?",
+"choices": [
+"get up — 잠자리에서 일어나다",
+"check the weather — 날씨를 확인하다",
+"grab an umbrella — 우산을 얼른 챙겨 들다",
+"get ready for school — 학교 갈 준비를 하다",
+"pick up a tablet — 태블릿을 내려놓다"
+],
+"answer": "⑤",
+"solution": "‘pick up’은 물건을 ‘집어 들다’라는 뜻이다. 따라서 ⑤의 ‘내려놓다’는 문맥에 맞지 않으며, 나머지는 모두 적절하게 연결되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bec735d2ea",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "괄호 안의 동사를 알맞게 바꾸어 문장을 완성하시오.\n\nIt is Saturday morning. Dad (clean) the bathroom, my sisters (play) with the dog, and I (cook) brunch now.",
+"selfGrade": true,
+"answer": "It is Saturday morning. Dad is cleaning the bathroom, my sisters are playing with the dog, and I am cooking brunch now.",
+"solution": "now가 있으므로 현재 진행 중인 동작을 나타내는 현재진행형을 써야 한다. Dad에는 is, 복수인 my sisters에는 are, I에는 am을 사용하고 각 동사에 -ing를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-400abc6ad7",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 문장 중 밑줄 친 it이 특정 사물을 가리키지 않는 문장만을 모두 고른 것은?\n\n(A) It is morning.\n(B) It is raining outside.\n(C) Minjun picks up his tablet. It is light.\n(D) “What’s the weather like?” “It is sunny.”",
+"choices": [
+"(A), (B)",
+"(A), (C)",
+"(B), (D)",
+"(A), (B), (D)",
+"(A), (B), (C), (D)"
+],
+"answer": "④",
+"solution": "(A)의 it은 시간을, (B)와 (D)의 it은 날씨를 나타내는 비인칭 주어로 특정 사물을 가리키지 않는다. (C)의 It은 앞 문장의 his tablet을 가리키는 대명사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f19c8468bf",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 지금 일어나고 있는 장면을 설명한 글이다. 시간 표현은 그대로 두고, 모든 동작은 현재진행형으로 고쳐 전체 문장을 다시 쓰시오.\n\nIt are morning. Jihun look out the window and check the weather. It raining. Loud hip-hop music come from Minjun’s smartphone.",
+"selfGrade": true,
+"answer": "It is morning. Jihun is looking out the window and checking the weather. It is raining. Loud hip-hop music is coming from Minjun’s smartphone.",
+"solution": "시간을 나타내는 첫 문장은 ‘It is morning’으로 고친다. 지금 진행 중인 동작에는 ‘be동사+동사-ing’를 사용하므로 is looking, checking, is raining, is coming이 알맞다. 하나의 주어에 두 동작이 이어질 때 두 번째 be동사는 생략할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-18a01743b0",
+"typeId": "eng-m1-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 조건에 맞게 지훈과 민준이 날씨를 확인하는 방법의 차이를 영어 한 문장으로 쓰시오.\n\n조건\n· 접속사 but을 사용할 것\n· ‘~함으로써’의 뜻을 나타내는 ‘by+동사-ing’를 각각 사용할 것\n· 두 번째 절에서는 the weather를 대명사 it으로 바꿀 것",
+"selfGrade": true,
+"answer": "Jihun checks the weather by looking out the window, but Minjun checks it by asking AI Joe.",
+"solution": "‘~함으로써’는 ‘by+동사-ing’로 표현하므로 by looking과 by asking을 사용한다. 두 번째 절의 it은 앞에서 언급한 the weather를 가리킨다. 각 주어가 3인칭 단수이므로 동사는 checks가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u1m6s0t0",
+"custom": true
 }
 ]

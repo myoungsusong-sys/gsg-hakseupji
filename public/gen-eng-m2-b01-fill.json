@@ -297,5 +297,57 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b01-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-5a83588f05",
+"typeId": "eng-m2-b01-u2m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 <보기>의 단어를 모두 한 번씩 사용하여 배열하시오.\n\n지예는 작가가 되는 것을 기대하고 있다.\n\n<보기>\na / forward / Jiye / writer / looking / becoming / is / to\n\n→ ________________________________________.",
+"selfGrade": true,
+"answer": "Jiye is looking forward to becoming a writer.",
+"solution": "‘~하는 것을 기대하다’는 look forward to로 나타낸다. 여기서 to는 전치사이므로 뒤에 동명사 becoming을 쓰며, 주어 Jiye에 맞게 is looking으로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7ba6a77d1b",
+"typeId": "eng-m2-b01-u2m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화의 우리말을 <보기>의 표현을 모두 한 번씩 사용하여 영작하시오.\n\nMinji: Jeongho will help me at my booth.\nJeongho: 아마 민규도 우리를 도울 거야.\nMinji: Great! I'll ask him.\n\n<보기>\nhelp / too / Maybe / us / will / Mingyu\n\n<조건>\n• Maybe로 시작할 것\n• ‘~도’의 뜻을 나타내는 too는 문장 끝에 쓸 것",
+"selfGrade": true,
+"answer": "Maybe Mingyu will help us, too.",
+"solution": "가능성을 나타내는 Maybe를 문장 맨 앞에 놓고 ‘주어 + will + 동사원형’의 순서로 배열한다. help 뒤에는 목적격 us를 쓰고, too는 조건에 따라 문장 끝에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d5d2327f49",
+"typeId": "eng-m2-b01-u2m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 바탕으로 주어진 우리말을 한 문장으로 영작하시오.\n\nJiye received good advice from her teacher. She hopes to make her dream of becoming a writer come true.\n\n선생님에게 좋은 조언을 받은 그 학생은 자신의 꿈을 이루는 것을 기대하고 있다.\n\n<조건>\n• The student로 시작할 것\n• 주격 관계대명사 who를 사용할 것\n• receive, look, achieve를 모두 문맥에 맞게 변형하여 사용할 것\n• ‘~하는 것을 기대하다’를 나타내는 표현을 사용할 것\n• 총 16단어로 쓸 것",
+"selfGrade": true,
+"answer": "The student who received good advice from her teacher is looking forward to achieving her dream.",
+"solution": "‘선생님에게 좋은 조언을 받은’은 who received good advice from her teacher로 써서 The student를 수식한다. 문장의 주어가 단수이므로 is looking을 쓰고, 전치사 to 뒤에는 동명사 achieving을 놓는다. 관계절의 과거시제와 주절의 현재진행형을 구분하면 총 16단어의 문장이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-10e79b5ada",
+"typeId": "eng-m2-b01-u2m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 내용을 읽고 우리말과 일치하도록 <보기>의 표현을 모두 한 번씩 사용하여 한 문장으로 쓰시오.\n\nMr. Park is the school's security officer. He checks the school for dangerous situations. His work allows students to feel safe and concentrate on their studies.\n\n위험한 상황을 점검하는 그 보안 담당자는 학생들이 학교에서 안전하다고 느끼고 공부에 집중하도록 이끈다.\n\n<보기>\nlead / the security officer / feel safe / who / at school / students / dangerous situations / focus on / check for / and / studying / to\n\n<조건>\n• the security officer로 시작하고 첫 글자는 대문자로 쓸 것\n• 필요한 경우 단어의 형태를 바꿀 것\n• 주격 관계대명사가 이끄는 절을 포함할 것\n• lead를 이용하여 ‘~가 …하도록 이끌다’를 나타낼 것\n• 총 19단어로 쓸 것",
+"selfGrade": true,
+"answer": "The security officer who checks for dangerous situations leads students to feel safe and focus on studying at school.",
+"solution": "단수 선행사 The security officer를 수식하는 관계절은 who checks for dangerous situations이다. 주절에서는 leads students to 뒤에 feel과 focus를 and로 병렬 연결한다. focus on의 on은 전치사이므로 뒤에 studying을 쓰며, 완성된 문장은 총 19단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m6s0t0",
+"custom": true
 }
 ]

@@ -414,5 +414,114 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b06-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-2637b15a55",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nThe water is still cold. Please ________ it to make hot tea.",
+"choices": [
+"share",
+"visit",
+"boil",
+"remember",
+"wrap"
+],
+"answer": "③",
+"solution": "뜨거운 차를 만들기 위해 차가운 물에 해야 할 행동은 ‘끓이다’이다. 따라서 빈칸에는 boil이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5b771797bc",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 단어를 <보기>에서 골라 순서대로 쓰시오. 단, 각 단어는 한 번씩만 사용하시오.\n\n<보기> traditional, gather, celebrate\n\n(1) Let's ________ in front of the library at three.\n(2) We will ________ your birthday with a cake.\n(3) This restaurant serves ________ Korean food.",
+"selfGrade": true,
+"answer": "gather, celebrate, traditional",
+"solution": "(1)은 도서관 앞에 ‘모이다’라는 뜻이므로 gather가 알맞다. (2)는 생일을 ‘축하하다’라는 뜻이므로 celebrate가 들어간다. (3)은 한국의 ‘전통적인’ 음식을 뜻하므로 traditional이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9efaa36915",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 밑줄 친 표현의 의미로 가장 알맞은 것을 고르시오.\n\nMateo introduces Día de Muertos, a Mexican holiday in November. Families come together to remember family members who passed away. They take flowers, photos, and food to their graves.\n\n밑줄 친 표현: passed away",
+"choices": [
+"멀리 이사한",
+"잠에서 깨어난",
+"선물을 나누어 준",
+"세상을 떠난",
+"함께 모인"
+],
+"answer": "④",
+"solution": "가족들이 그들을 기억하며 무덤을 방문한다는 내용에서 의미를 파악할 수 있다. passed away는 ‘세상을 떠났다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3c5e2f9a4c",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문의 대답을 완성하시오. 각 빈칸에는 글에 나온 한 단어를 쓰시오.\n\nAhmed introduces Sham El-Nessim, an Egyptian festival. Egyptians spend the day outdoors and have traditional food on picnics. Fesikh is the most important food at this festival, but Ahmed likes colorful eggs best.\n\nQ. Are the festival's most important food and Ahmed's favorite food the same?\nA. No. The most important food is (1)________, while his favorite food is (2)________ (3)________.\n\n(1)~(3)의 답을 순서대로 쓰시오.",
+"selfGrade": true,
+"answer": "fesikh, colorful, eggs",
+"solution": "축제에서 가장 중요한 음식은 fesikh이지만, Ahmed가 가장 좋아하는 음식은 colorful eggs이다. 축제의 대표 음식과 개인이 선호하는 음식을 구별해야 한다. 문장 중간에 들어가는 음식 이름이므로 fesikh은 소문자로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-54ba29d74e",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 대한 대답으로 가장 알맞은 것을 고르시오.\n\nAt Quebec's spring festivals, people enjoy maple syrup. They make the syrup by boiling sap collected from maple trees. They also pour the hot syrup onto snow and wrap it around a stick to make maple candy.\n\nQ. Why do people boil the sap?",
+"choices": [
+"To collect snow for the festival.",
+"To make maple syrup from it.",
+"To wrap a stick in snow.",
+"To get sap from maple candy.",
+"To make the maple trees grow."
+],
+"answer": "②",
+"solution": "글에서는 단풍나무에서 얻은 수액을 끓여 메이플 시럽을 만든다고 했다. 따라서 수액을 끓이는 목적을 나타내는 To make maple syrup from it.이 정답이다. 눈 위에 시럽을 붓는 것은 시럽을 만든 다음 사탕을 만드는 과정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-573878097a",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 요약문의 빈칸을 완성하시오.\n\nIn Quebec, people collect sap from maple trees. Boiling the sap turns it into maple syrup. They can then make maple candy by pouring the hot syrup onto snow and wrapping it around a stick.\n\n[요약문]\nPeople boil (1)________ to make (2)________. They then pour (3)________ onto snow to make (4)________.\n\n<보기> sap / maple syrup / hot syrup / maple candy\n\n[조건]\n• <보기>의 표현을 각각 한 번씩 사용하시오.\n• (1)~(4)의 답을 순서대로 쓰시오.",
+"selfGrade": true,
+"answer": "sap, maple syrup, hot syrup, maple candy",
+"solution": "먼저 수액인 sap을 끓여 maple syrup을 만든다. 그다음 뜨거운 시럽인 hot syrup을 눈 위에 부어 maple candy를 만든다. 두 단계에서 각각 재료와 결과물이 무엇인지 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9bc7eb5b56",
+"typeId": "eng-m2-b06-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 질문에 대한 대답을 완성하시오.\n\nDuring Día de Muertos, families in Mexico remember relatives who have died. They bring photos, flowers, and traditional food to the graves. Sugar skulls and pan de muerto are shared with family and friends. Pan de muerto is bread for the dead, while sugar skulls are usually decorations.\n\nQ. What are pan de muerto and sugar skulls, respectively?\nA. Pan de muerto is (1)________________, while sugar skulls are usually (2)________________.\n\n[조건]\n• (1)은 글에 나온 연속된 네 단어로 쓰시오.\n• (2)는 글에 나온 한 단어로 쓰시오.\n• (1), (2)의 답을 순서대로 쓰시오.",
+"selfGrade": true,
+"answer": "bread for the dead, decorations",
+"solution": "pan de muerto는 죽은 사람들을 위한 빵이므로 (1)은 bread for the dead이다. sugar skulls는 보통 장식으로 사용되므로 (2)는 decorations이다. 두 대상을 가족이나 친구와 나눈다는 공통점과 각각의 설명을 구별해 읽어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m7s0t0",
+"custom": true
 }
 ]

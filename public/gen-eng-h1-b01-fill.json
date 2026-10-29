@@ -2457,5 +2457,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b01-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-6d8c26e680",
+"typeId": "eng-h1-b01-u1m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화의 ⓐ~ⓓ 중 어법상 어색한 것을 한 개 찾아 기호를 쓰고, 해당 표현을 바르게 고쳐 쓰시오.\n\nW: I think ⓐthat my cell phone is missing.\nM: Would you like ⓑto use my phone?\nW: Thanks. I also want to know ⓒwhere is the information center.\nM: You can ask for directions at the gift shop.\nW: I'll do that. Thank you for ⓓhelping me.",
+"selfGrade": true,
+"answer": "ⓒ where the information center is",
+"solution": "동사 know의 목적어로 쓰인 간접의문문은 「의문사＋주어＋동사」의 어순을 따른다. 따라서 where is the information center를 where the information center is로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c6e6392e3f",
+"typeId": "eng-h1-b01-u1m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 ⓐ~ⓓ 중 어법상 어색한 것을 한 개 찾아 기호를 쓰고, 밑줄 친 단어를 같은 동사의 알맞은 분사형으로 고쳐 쓰시오. 단, 첫 문장은 ‘나의 조부모님은 내 계획을 듣고 기뻐하셨다’라는 의미가 되어야 한다.\n\nMy grandparents were ⓐpleasing to hear about my plan. I suggested ⓑbuilding a larger greenhouse with money from investors. We could thank the investors by ⓒsending them our jam. My grandparents liked the idea of ⓓgrowing more strawberries.",
+"selfGrade": true,
+"answer": "ⓐ pleased",
+"solution": "조부모님이 기쁨을 느끼는 대상이므로 감정을 나타내는 과거분사 pleased가 알맞다. pleasing은 다른 사람에게 기쁨을 주는 성질을 나타내므로 제시된 우리말 의미에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cc6ba6197a",
+"typeId": "eng-h1-b01-u1m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 안내문의 ⓐ~ⓓ 중 어법상 어색한 것을 한 개 찾아 기호를 쓰고, 해당 단어만 바르게 고쳐 쓰시오.\n\nBefore ⓐstarting a funding campaign, plan your production schedule. Think about the time needed ⓑto produce your rewards. ⓒSetting your funding goal after checking all the costs. Your goal should be large enough ⓓto cover those costs.",
+"selfGrade": true,
+"answer": "ⓒ Set",
+"solution": "ⓒ가 포함된 문장은 주어 없이 독자에게 행동을 지시하는 명령문이다. 명령문은 동사원형으로 시작하므로 Setting을 Set으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-150368b532",
+"typeId": "eng-h1-b01-u1m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화의 ⓐ~ⓔ 중 어법상 어색한 것을 두 개 찾아 기호를 쓰고, 해당 표현을 바르게 고쳐 쓰시오. 단, ⓔ를 고칠 경우 밑줄 친 표현의 단어 하나만 바꾸시오.\n\nG: What are you reading?\nB: A report from an animal shelter. It says that some pets ⓐare abandon when their owners take vacations.\nG: That's awful. People should understand ⓑthat pets need care.\nB: I agree. I adopted my dog from a shelter, and some of my friends ⓒhave done the same.\nG: It's good ⓓto hear that. Such actions can ⓔhelp to making a difference.",
+"selfGrade": true,
+"answer": "ⓐ are abandoned; ⓔ help to make",
+"solution": "반려동물은 주인에 의해 버려지는 대상이므로 「be동사＋과거분사」의 수동태인 are abandoned가 필요하다. help는 to부정사를 목적어로 취할 수 있으므로, 단어 하나만 바꾸라는 조건에 따라 making을 make로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-db7317591c",
+"typeId": "eng-h1-b01-u1m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 ⓐ~ⓔ 중 어법상 어색한 것을 두 개 찾아 기호를 쓰고, 해당 표현을 바르게 고쳐 쓰시오. 단, ⓐ는 한 단어로 고치고, ⓓ는 주어진 단어를 모두 사용하여 어순만 바꾸시오.\n\nⓐThat I liked most about Wicked was its message about friendship. The musical also shows the importance of ⓑaccepting differences. Its story focuses on two characters ⓒfrom The Wizard of Oz. After watching it, I thought about ⓓhow did the characters become friends. The musical gave me a chance ⓔto think about getting to know oneself.",
+"selfGrade": true,
+"answer": "ⓐ What; ⓓ how the characters did become friends",
+"solution": "첫 문장의 주어절에는 liked의 목적어가 없으므로, 선행사를 포함하며 목적어 역할도 하는 관계대명사 What이 필요하다. ⓓ는 전치사 about의 목적어로 쓰인 간접의문문이므로 주어를 동사 앞에 놓아야 한다. 주어진 단어를 모두 사용해야 하므로 did를 강조의 조동사로 남긴 how the characters did become friends가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ac3b37a874",
+"typeId": "eng-h1-b01-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓗ 중 어법상 어색한 것을 세 개 찾아 기호를 쓰고, 해당 표현을 바르게 고쳐 쓰시오. 단, ⓐ는 단어 하나를 추가하고, ⓓ는 간접의문문의 일반적인 어순에 맞게 고치며, ⓗ는 현재완료 시제로 고치시오.\n\nOnce our application ⓐhad accepted, I began preparing a video to introduce our project. ⓑWhat I wanted investors to understand was that my grandparents used natural ingredients. I included scenes of them ⓒmaking jam and explained ⓓwhere would the new greenhouse be built. Before I posted the video, I ⓔhad checked it carefully. Investors could then learn about the project without ⓕvisiting the farm. The first investor committed to ⓖsupporting us. Our campaign is still running, and so far we ⓗhad received money from investors.",
+"selfGrade": true,
+"answer": "ⓐ had been accepted; ⓓ where the new greenhouse would be built; ⓗ have received",
+"solution": "신청서는 승인되는 대상이므로 과거완료 수동태인 had been accepted가 필요하다. explained의 목적어인 간접의문문은 「의문사＋주어＋동사」의 어순이므로 where the new greenhouse would be built로 고친다. 현재도 진행 중인 모금 활동의 지금까지의 성과를 나타내므로 so far와 함께 현재완료 have received를 써야 한다. committed to의 to는 전치사이므로 supporting은 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u1m2s0t0",
+"custom": true
 }
 ]

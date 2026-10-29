@@ -652,5 +652,133 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b03-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-d316171744",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영어 표현과 우리말 뜻의 연결이 어색한 것은?",
+"choices": [
+"stick forward — 앞으로 나오다",
+"hang off the edge — 가장자리 밖으로 늘어뜨리다",
+"from side to side — 좌우로",
+"look down at — ~을 내려다보다",
+"sit up straight — 몸을 앞으로 숙이다"
+],
+"answer": "⑤",
+"solution": "sit up straight는 ‘허리를 펴고 똑바로 앉다’라는 뜻이다. ‘몸을 앞으로 숙이다’라는 뜻으로 연결한 ⑤가 어색하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b8ebd9b495",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말을 <보기>에서 골라 문맥과 어법에 맞는 형태로 쓰시오.\n\n<보기> keep / lean / relax\n\n(1) This simple exercise will help __________ your neck muscles.\n(2) You should __________ both feet on the floor while sitting.\n(3) During the stretch, I __________ my head backward slowly.",
+"selfGrade": true,
+"answer": "relax, keep, leaned",
+"solution": "help 다음에는 동사원형 relax를 쓸 수 있고, 조동사 should 다음에도 동사원형 keep이 온다. (3)은 동작이 이미 이루어진 상황이므로 lean의 과거형 leaned가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-24dcdac107",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 밑줄 친 부분과 쓰임이 같은 것은?\n\nBend your arms <u>to make a W shape</u>.",
+"choices": [
+"I need a cushion to sit on.",
+"She stood up to stretch her back.",
+"He had something cold to drink.",
+"I was glad to hear the good news.",
+"Minho was the first student to arrive."
+],
+"answer": "②",
+"solution": "제시문의 to make는 팔을 구부리는 목적을 나타내는 부사적 용법이다. ②의 to stretch도 ‘등을 스트레칭하기 위해’라는 목적을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b8c696519c",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 (A)~(D)에 들어갈 말로 가장 알맞은 것은?\n\nGood habits keep your neck (A)__________. A bedtime stretch can make you (B)__________ better, but doing it too long may make you (C)__________ dizzy. Bend your arms (D)__________ a W shape.",
+"choices": [
+"health — feeling — to feel — making",
+"healthy — to feel — feeling — make",
+"healthily — feel — to feel — to make",
+"healthy — feel — feel — to make",
+"health — to feel — feel — make"
+],
+"answer": "④",
+"solution": "keep와 make는 목적어 뒤에 형용사 또는 동사원형을 목적격 보어로 취할 수 있다. 따라서 healthy, feel, feel이 알맞고, 팔을 구부리는 목적을 나타내므로 마지막에는 to make가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5847761585",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 주어진 표현을 모두 활용하여 영작하시오.\n\n50분마다 스트레칭하는 것은 목을 건강하고 튼튼하게 유지할 수 있다.\n\n<조건>\n• stretching으로 문장을 시작할 것\n• every 50 minutes, keep, healthy and strong을 모두 사용할 것",
+"selfGrade": true,
+"answer": "Stretching every 50 minutes can keep your neck healthy and strong.",
+"solution": "동명사구 Stretching every 50 minutes가 문장의 주어이다. keep은 ‘keep＋목적어＋형용사’의 구조로 쓰이므로 your neck 뒤에 healthy and strong을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-cd64bafa55",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 표현을 모두 사용하여 한 문장으로 쓰시오. 필요한 대문자와 문장 부호를 사용할 것.\n\n어지러움을 느낄 수 있으므로 머리를 60초 넘게 침대 밖으로 늘어뜨리지 마라.\n\n<보기>\nbecause / do not / feel / for more than 60 seconds / hang off / it / let / make / may / the bed / your head / you",
+"selfGrade": true,
+"answer": "Do not let your head hang off the bed for more than 60 seconds because it may make you feel dizzy.",
+"solution": "let은 ‘let＋목적어＋동사원형’으로 쓰이므로 let your head hang off의 어순이 된다. make도 목적어 뒤에 동사원형을 취하므로 make you feel dizzy로 쓰며, because 이하에는 그 이유를 제시한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dc3272eaa6",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Let your head to hang off the edge slowly.",
+"This exercise helps your neck and back relax.",
+"Keep both of your feet to be on the floor.",
+"Doing the stretch too long can make you to feel dizzy.",
+"Bend your arms for make the shape of a W."
+],
+"answer": "②",
+"solution": "help는 ‘help＋목적어＋동사원형’의 형태로 쓸 수 있으므로 ②가 옳다. let과 make 뒤에는 to 없는 동사원형이 와야 하며, 목적을 나타낼 때에는 for make가 아니라 to make를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-544203a4f2",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 부분을 모두 고쳐 완전한 한 문장으로 쓰시오.\n\nWhen you will sit for a long time, keeping your back straight and don't looked down at your phone.",
+"selfGrade": true,
+"answer": "When you sit for a long time, keep your back straight and don't look down at your phone.",
+"solution": "시간을 나타내는 when절에서는 미래의 의미라도 현재형 sit을 사용한다. 주절은 명령문이므로 keep을 쓰고, 등위접속사 and 뒤에도 명령형 don't look을 병렬로 연결해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
 }
 ]

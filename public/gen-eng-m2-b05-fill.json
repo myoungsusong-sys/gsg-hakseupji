@@ -310,5 +310,139 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b05-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-4d97d43a11",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nDo you have trouble (A)[start / starting] conversations? (B)[Have / Having] a good conversation is not easy. Here (C)[is / are] some tips to have a good conversation.",
+"choices": [
+"start - Have - is",
+"start - Having - are",
+"starting - Have - are",
+"starting - Having - is",
+"starting - Having - are"
+],
+"answer": "⑤",
+"solution": "have trouble 뒤에는 동명사가 오므로 (A)는 starting이다. 문장의 주어 역할을 하는 동명사 Having이 알맞고, some tips가 복수이므로 (C)는 are가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e98587aa73",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nBegin conversations with an easy topic. You can talk about the weather or hobbies. Small talk can lead to ①other fun topics. Don't just sit still and listen. ②Actively listen and make eye contact with the speaker. ③Nod your head from time to time. These things will show ④that you're really listening. Then the other person can answer ⑤easy.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "⑤에서는 동사 answer를 꾸며야 하므로 형용사 easy가 아니라 부사 easily가 필요하다. 나머지 표현은 모두 문맥과 어법에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-396cd8dd65",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Do you have trouble to start conversations?",
+"Having a good conversation are not easy.",
+"Here is some tips to have a good conversation.",
+"Actively listen and make eye contact with the speaker.",
+"Small talk can lead to another fun topics."
+],
+"answer": "④",
+"solution": "④에서 Actively는 동사 listen을 꾸미는 부사이며, 명령문의 형태도 알맞다. ①은 starting, ②는 is, ③은 are, ⑤는 other fun topics로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-657994a76c",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분을 바르게 고친 것으로 적절하지 않은 것은?\n\nWhen you ①talk to other students, do you get nervous? ②Starting a good conversation are not easy. But don't worry. Here ③is some tips. ④Begin conversations with an easy topic and listen ⑤active.",
+"choices": [
+"① talk → talking",
+"② are → is",
+"③ is → are",
+"④ Begin → 그대로 둔다",
+"⑤ active → actively"
+],
+"answer": "①",
+"solution": "when이 이끄는 절에는 주어 you와 동사 talk가 필요하므로 원래 표현이 옳다. 따라서 talk를 talking으로 고치는 것은 적절하지 않으며, 나머지 수정은 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-56a0850257",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 괄호 안에 주어진 말을 어법상 알맞은 형태로 바꾸어 빈칸을 완성하시오.\n\nDon't just sit still and listen. ________ (active) listen. Make eye contact with the speaker. ________ (nod) your head from time to time.",
+"selfGrade": true,
+"answer": "Actively, Nod",
+"solution": "첫 번째 빈칸에서는 동사 listen을 꾸미므로 부사 Actively가 필요하다. 두 번째 문장은 명령문이므로 동사원형 Nod로 시작해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-140d884572",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분의 개수는?\n\nDo you get nervous when you talking to other students? Do you have trouble to start conversations? Having a good conversation are not easy. But don't worry. Here is some tips to have a good conversation. Begin with an easy topic and listen actively. These things will show what you're really listening.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "⑤",
+"solution": "talking은 talk로, to start는 starting으로, are는 is로, Here is는 Here are로 고쳐야 한다. 또한 show 뒤의 what은 완전한 절을 이끄는 that으로 고쳐야 하므로 어색한 부분은 모두 5개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-97244e9cfa",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 잘못된 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nHave a good conversation is not easily, but don't worried. Here is some tips to have a good conversation.",
+"selfGrade": true,
+"answer": "Having a good conversation is not easy, but don't worry. Here are some tips to have a good conversation.",
+"solution": "문장의 주어가 되도록 Have를 Having으로 바꾸고, be동사 뒤에는 형용사 easy를 쓴다. 부정 명령문에는 동사원형 worry가 필요하며, 뒤의 복수 주어 some tips에 맞추어 Here are를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e0341f769",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 조건에 맞게 두 문장을 영작하시오.\n\n너는 다른 학생들과 이야기할 때 긴장하니? 너는 대화를 시작하는 데 어려움이 있니?\n\n<조건>\n• 첫 번째 문장에 when과 talk를 사용할 것\n• 두 번째 문장에 have trouble과 start를 사용할 것\n• 필요한 경우 단어의 형태를 바꿀 것",
+"selfGrade": true,
+"answer": "Do you get nervous when you talk to other students? Do you have trouble starting conversations?",
+"solution": "when절에는 주어 you 뒤에 동사원형 talk를 쓴다. have trouble 뒤에는 동명사가 와야 하므로 start를 starting으로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
 }
 ]

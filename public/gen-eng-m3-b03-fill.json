@@ -3628,5 +3628,604 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u4m3s0t0",
 "custom": true
+},
+{
+"id": "fill-bafc30fca6",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\n the power or skill needed to do something",
+"choices": [
+"beauty",
+"ability",
+"culture",
+"subject",
+"society"
+],
+"answer": "②",
+"solution": "어떤 일을 하는 데 필요한 힘이나 기술을 뜻하는 단어는 ability이다. beauty는 ‘아름다움’, culture는 ‘문화’를 의미한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-749e4f9bfb",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI have seen this symbol many times, so it looks __________ to me.",
+"choices": [
+"proper",
+"familiar",
+"confused",
+"unnecessary",
+"important"
+],
+"answer": "②",
+"solution": "여러 번 보았으므로 자신에게 ‘익숙해 보인다’는 내용이 자연스럽다. familiar는 ‘익숙한, 낯익은’이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-fbb09c05db",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 영영풀이와 단어의 연결이 옳지 않은 것은?",
+"choices": [
+"rival — a person whom you compete against",
+"nickname — an informal name given to a person",
+"symbol — something that represents another thing",
+"ability — a topic that is discussed or studied",
+"view — what you can see from a particular place"
+],
+"answer": "④",
+"solution": "‘토론하거나 공부하는 주제’는 subject의 영영풀이이다. ability는 어떤 일을 할 수 있는 ‘능력’을 뜻하므로 ④의 연결이 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c694140cae",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말이 순서대로 알맞게 짝지어진 것은?\n\nThe directions were not clear, so I became (A)__________. Then my teacher showed me the (B)__________ way to do the activity.",
+"choices": [
+"familiar — unnecessary",
+"confused — proper",
+"proper — confused",
+"unnecessary — familiar",
+"important — unnecessary"
+],
+"answer": "②",
+"solution": "안내가 명확하지 않았으므로 (A)에는 ‘혼란스러운’이라는 뜻의 confused가 알맞다. 선생님이 활동을 하는 ‘적절한 방법’을 보여 주었으므로 (B)에는 proper가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c70ddc6d10",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이 (A)~(C)에 해당하는 단어를 바르게 연결한 것은?\n\n(A) to become known or reach more people or places\n(B) to use time doing something\n(C) to admire someone because of their qualities or achievements",
+"choices": [
+"spread — spend — respect",
+"spend — spread — respect",
+"spread — respect — spend",
+"respect — spend — spread",
+"spend — respect — spread"
+],
+"answer": "①",
+"solution": "(A)는 ‘퍼지다’라는 뜻의 spread, (B)는 ‘시간을 보내다’라는 뜻의 spend에 해당한다. (C)는 사람의 자질이나 업적을 높이 평가하여 ‘존경하다’라는 뜻의 respect이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-14ea6879a4",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸에 들어갈 말의 영영풀이로 가장 알맞은 것은?\n\nKim Koo formed a(n) __________ in 1931. Lee Bongchang and Yun Bonggil joined it.",
+"choices": [
+"a task that someone is sent to do",
+"a public display of objects for people to look at",
+"a group of people who work together for a particular purpose",
+"a model of a person or an animal made of stone or metal",
+"the people who control and manage a country"
+],
+"answer": "③",
+"solution": "뒤 문장에서 이봉창과 윤봉길이 가입했다고 했으므로 빈칸에는 ‘조직’을 뜻하는 organization이 알맞다. ③은 특정한 목적을 위해 함께 일하는 사람들의 집단을 뜻하므로 organization의 영영풀이이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9cc51df71a",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어를 대신할 말로 알맞지 않은 것은? (밑줄은 [ ]로 표시함.)\n\n① Kim Koo [formed] the organization. → started\n② The independence movement [spread] throughout the country. → reached more places\n③ The organization was [secret]. → known to everyone\n④ Kim Koo [directed] Yun to carry out the mission. → instructed\n⑤ Kim Koo [later] became president. → after that",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "secret은 ‘비밀의’라는 뜻으로, 소수만 알고 다른 사람들에게는 알려지지 않은 상태를 나타낸다. 따라서 ‘모두에게 알려진’이라는 뜻의 known to everyone으로 바꾸면 의미가 반대가 된다. 나머지는 각각의 문맥에서 바꾸어 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0fefc738d3",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 (A)~(C)의 빈칸에 들어갈 말을 바르게 연결한 것은?\n\n• Kim Koo fought against Japanese (A)__________ to achieve Korea's independence.\n• The museum has an (B)__________ hall displaying things about his life.\n• Yun Bonggil was directed to carry out a (C)__________.\n\n(A), (B), (C)에 들어갈 말은 각각 다음 뜻을 가진다.\n(A) control over a country or its people\n(B) a public display of objects\n(C) an important task that someone is given to do",
+"choices": [
+"rule — organization — mission",
+"republic — exhibition — government",
+"government — organization — independence",
+"rule — exhibition — mission",
+"republic — exhibition — independence"
+],
+"answer": "④",
+"solution": "(A)는 한 나라나 국민에 대한 ‘지배’를 뜻하므로 rule이 알맞다. (B)는 물건을 공개적으로 보여 주는 ‘전시’를 뜻하는 exhibition이고, (C)는 수행하도록 주어진 ‘임무’를 뜻하는 mission이다. 따라서 문맥과 영영풀이를 모두 만족하는 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-69ee3d1c82",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어와 영영풀이가 바르게 연결된 것만을 모두 고른 것은?\n\nㄱ. statue — a model of a person or an animal made of stone or metal\nㄴ. national — existing in nature and not made by people\nㄷ. independence — freedom from another country's political control\nㄹ. lately — at a time after the time being mentioned\nㅁ. patriotic — showing strong love and support for one's country",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㅁ"
+],
+"answer": "②",
+"solution": "statue는 ‘조각상’, independence는 ‘독립’, patriotic은 ‘애국적인’이라는 뜻으로 영영풀이가 알맞다. ㄴ의 풀이는 natural에 해당하며, national은 ‘국가의’라는 뜻이다. ㄹ의 풀이는 later에 해당하고, lately는 ‘최근에’라는 뜻이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-88930c85c7",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 문맥상 잘못 쓰인 낱말 세 개를 찾아 각각 바르게 고쳐 쓰시오.\n\nKim Koo is remembered as a natural hero of Korea. At the museum entrance, visitors can see his white state. He joined the Government of the Republic of Korea in Shanghai and lately became its president.\n\n<조건>\n• 문장 구조와 나머지 낱말은 바꾸지 말 것.\n• 고친 낱말 세 개만 글에 나오는 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "national, statue, later",
+"solution": "‘국가적 영웅’이라는 의미이므로 natural을 national로 고쳐야 한다. 박물관 입구의 흰 ‘조각상’은 statue이므로 state를 statue로 바꾼다. 과거의 한 사건 이후를 나타내므로 ‘최근에’라는 뜻의 lately 대신 later를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9a171d71f2",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이에 해당하는 낱말을 이용하여 (A)~(C)를 완성하시오.\n\n• independence: political freedom from another country's control\n• patriotic: showing great love and support for one's country\n• secret: known only to a small number of people\n\nKim Koo worked for the (A)__________ of Korea. He formed an organization whose activities were kept (B)__________. Its name, the Korean (C)__________ Organization, shows its love for the country.\n\n<조건>\n• 제시된 세 낱말을 각각 한 번씩 사용할 것.\n• 필요한 경우 첫 글자를 대문자로 바꿀 것.\n• (A), (B), (C)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "independence, secret, Patriotic",
+"solution": "(A)는 한국의 ‘독립’을 위해 일했다는 뜻이므로 independence가 들어간다. (B)는 활동이 ‘비밀로’ 유지되었다는 문맥이므로 secret이 알맞다. (C)는 단체 이름의 일부이므로 patriotic의 첫 글자를 대문자로 바꾸어 Patriotic으로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-24b2e13e14",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이에 해당하는 하나의 동사를 찾아 두 문장의 빈칸을 각각 알맞은 형태로 완성하시오.\n\n[영영풀이]\nto reach more people or places, or to make something reach more people or places\n\n(A) In 1919, the independence movement __________ throughout Korea.\n(B) The independence movement had __________ throughout the country before Kim Koo moved to Shanghai.\n\n<조건>\n• 두 빈칸에는 동일한 동사의 알맞은 형태를 쓸 것.\n• (A)는 과거형, (B)는 과거분사형으로 쓸 것.\n• (A), (B)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "spread, spread",
+"solution": "영영풀이는 사람이나 장소에 널리 ‘퍼지다, 퍼뜨리다’라는 뜻의 spread를 설명한다. spread는 원형·과거형·과거분사형이 모두 spread로 같다. 따라서 단순과거 문장의 (A)와 had 뒤의 (B)에 모두 spread를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-527e650360",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 <보기>에서 어법상 알맞은 문장끼리 짝지어진 것은?\n\n<보기>\n(A) Kim Koo had formed the organization before he made a plan in 1932.\n(B) Kim Koo had became its president after he joined the government.\n(C) The independence movement had spread throughout Korea when he moved to Shanghai.\n(D) Have the history club visited the Kim Koo Museum last week?",
+"choices": [
+"(A), (B)",
+"(A), (C)",
+"(B), (C)",
+"(B), (D)",
+"(C), (D)"
+],
+"answer": "②",
+"solution": "(A)는 1931년에 단체를 결성한 일이 1932년에 계획을 세운 일보다 먼저이므로 과거완료가 적절하다. (C)도 독립운동이 전국에 퍼진 일이 상하이로 이동한 일보다 앞서므로 had spread가 알맞다. (B)의 became와 (D)의 Did가 각각 올바른 형태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fcf3213d02",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B)에 주어진 단어의 형태가 알맞게 연결된 것은?\n\nThe Korean Patriotic Organization (A)(form) by Kim Koo in 1931. Lee Bongchang and Yun Bonggil (B)(belong) to this organization.",
+"choices": [
+"formed — belonged",
+"formed — were belonged",
+"was formed — belonged",
+"was formed — were belonged",
+"was forming — belonged to"
+],
+"answer": "③",
+"solution": "단체는 김구에 의해 결성된 대상이므로 (A)에는 수동태 was formed가 알맞다. belong은 수동태로 쓰지 않는 자동사이므로 (B)에는 과거형 belonged가 와야 한다. 뒤에 to가 이미 있으므로 belonged to의 to를 중복해서 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c2c7d341cc",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 어법상 알맞은 문장만을 모두 고른 것은?\n\n<보기>\n(A) By 1932, Kim Koo had formed the Korean Patriotic Organization.\n(B) Yun Bonggil was directed carry out the mission.\n(C) Lee Bongchang and Yun Bonggil belonged to the organization.\n(D) Kim Koo spent most of his life to fight for Korea's independence.\n(E) Schools were built to educate young people.",
+"choices": [
+"(A), (B), (C)",
+"(A), (C), (D)",
+"(A), (C), (E)",
+"(B), (D), (E)",
+"(C), (D), (E)"
+],
+"answer": "③",
+"solution": "(A)는 1932년 이전의 완료를 나타내는 과거완료가 적절하고, (C)의 belong to도 바르게 쓰였다. (E)의 to educate는 학교를 세운 목적을 나타낸다. (B)는 was directed to carry out, (D)는 spent most of his life fighting으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9cc526c664",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(C)에 주어진 단어를 알맞게 바꾼 것으로 가장 적절한 것은?\n\nBefore Kim Koo (A)(move) to Shanghai in 1919, the independence movement (B)(spread) throughout Korea. After arriving in Shanghai, he joined the Government of the Republic of Korea and later (C)(become) its president.",
+"choices": [
+"had moved — spread — had become",
+"moved — had spread — became",
+"moved — has spread — became",
+"had moved — had spread — becomes",
+"was moved — was spread — became"
+],
+"answer": "②",
+"solution": "(A)는 1919년에 일어난 과거의 사건이므로 moved가 알맞다. 독립운동이 퍼진 것은 상하이로 이동하기 전이므로 (B)는 과거완료 had spread를 쓴다. 이후 대통령이 된 것도 과거의 일이므로 (C)는 became가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9862a85169",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장과 의미가 같고 어법상 올바른 것은?\n\nKing Jeongjo ordered Jeong Yakyong to direct the building process of Suwon Hwaseong.",
+"choices": [
+"Jeong Yakyong ordered King Jeongjo to direct the building process.",
+"Jeong Yakyong was ordered King Jeongjo to direct the building process.",
+"Jeong Yakyong was ordered by King Jeongjo direct the building process.",
+"Jeong Yakyong was ordered by King Jeongjo to direct the building process.",
+"Jeong Yakyong was ordered to be directed the building process by King Jeongjo."
+],
+"answer": "④",
+"solution": "능동문의 목적어 Jeong Yakyong을 수동문의 주어로 바꾸고 was ordered를 사용해야 한다. order는 수동태에서도 뒤에 to부정사가 이어지므로 to direct가 필요하다. 따라서 ④가 의미와 어법을 모두 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0cc52ac13f",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 두 부분을 모두 고쳐 문장 전체를 쓰시오.\n\nBy the time Kim Koo made a plan in 1932, he formed the Korean Patriotic Organization, and he directed Yun Bonggil carry out the mission.",
+"selfGrade": true,
+"answer": "By the time Kim Koo made a plan in 1932, he had formed the Korean Patriotic Organization, and he directed Yun Bonggil to carry out the mission.",
+"solution": "단체를 결성한 것은 1932년에 계획을 세운 것보다 앞선 일이므로 formed를 had formed로 고쳐야 한다. 또한 direct는 ‘direct＋목적어＋to부정사’의 구조로 쓰이므로 carry out 앞에 to가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-09fb2030c9",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A)~(D)에 주어진 단어를 문맥과 어법에 맞게 바꾸어 순서대로 쓰시오.\n\nKim Koo spent most of his life (A)(fight) for Korea's independence. He helped educate young people by (B)(build) schools. After the independence movement (C)(spread) throughout Korea, he moved to Shanghai. Later, as the leader of the Korean Patriotic Organization, he directed Yun Bonggil (D)(carry out) the mission.",
+"selfGrade": true,
+"answer": "fighting, building, had spread, to carry out",
+"solution": "spend time 뒤와 전치사 by 뒤에는 동명사가 오므로 fighting과 building이 알맞다. 독립운동이 퍼진 일이 상하이로 이동한 일보다 앞서므로 had spread를 쓴다. ‘지시하다’라는 뜻의 direct는 목적어 뒤에 to부정사를 취한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c0f530f752",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 <보기>에서 어법상 알맞은 문장의 개수를 숫자로 쓰시오.\n\n<보기>\n(A) Kim Koo spent most of his life fighting for Korea's independence.\n(B) He helped educate young people by to build schools.\n(C) The independence movement had spread throughout Korea before he moved to Shanghai.\n(D) Lee Bongchang and Yun Bonggil were belonged to the organization.\n(E) The Korean Patriotic Organization was formed to fight against Japan.\n(F) Kim Koo directed Yun Bonggil carrying out the mission.\n(G) Bora is looking forward to visiting the Yun Dongju Museum.",
+"selfGrade": true,
+"answer": "4",
+"solution": "어법상 알맞은 문장은 (A), (C), (E), (G)로 모두 4개이다. (B)는 by building, (D)는 belonged to, (F)는 directed Yun Bonggil to carry out으로 고쳐야 한다. 전치사 to가 포함된 look forward to 뒤에는 동명사 visiting이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-87b6b4f18b",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nTrying new technology before other people is important to Bryan. His dream house shows this interest. Its door opens by recognizing his face. The furniture gives him advice about clothes after checking the weather. A mirror provides information about his health, and a robot does the cleaning and cooking. These are the things Bryan wants in his future home.",
+"choices": [
+"A Guide to Choosing Healthy Food",
+"A Dream Home Filled with New Technology",
+"The Best Clothes for Different Seasons",
+"A Family That Enjoys Cooking Together",
+"The History of Robots in Our Homes"
+],
+"answer": "②",
+"solution": "글은 새로운 기술을 좋아하는 Bryan이 꿈꾸는 집을 설명한다. 문, 가구, 거울, 로봇의 기능은 모두 집에 적용된 신기술의 예이므로, 이를 포괄하는 ②가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-52523f8067",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nFor Misun, nothing matters more than her family. She imagines a home where they can feel comfortable and safe. A sign at the gate shows their family picture. Inside, a large living room gives them space to sing and play board games. Outside, a big picnic table in the garden is a place for family picnics and barbecues.",
+"choices": [
+"the importance of eating meals outdoors",
+"ways to design a beautiful garden",
+"the rules of family board games",
+"a dream house centered on family life",
+"the advantages of having a large house"
+],
+"answer": "④",
+"solution": "가족사진, 거실에서의 놀이, 정원에서의 식사는 모두 가족 중심의 생활을 보여 준다. 집의 크기나 정원 자체보다 가족이 편안하게 함께 지내는 집이 핵심이므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5be7ac54f1",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 가장 잘 요약한 것은?\n\nWalking among trees makes me feel happy, so I picture my future home in the countryside. I want flowers and trees to fill a large garden. In the morning, I hope to hear birds singing as I wake up. I would also love to keep many pets and spend time playing with them. That is the home I dream of.",
+"choices": [
+"The writer wants a country home where nature and pets are part of daily life.",
+"The writer wants to travel to forests to learn how to look after wild birds.",
+"The writer thinks everyone should move to the countryside to raise animals.",
+"The writer explains why growing flowers is more enjoyable than keeping pets.",
+"The writer describes how living in the countryside has improved personal health."
+],
+"answer": "①",
+"solution": "시골집, 꽃과 나무가 있는 정원, 새소리, 반려동물은 자연과 함께하는 생활이라는 공통된 내용으로 연결된다. ①은 이를 모두 포괄하며, 나머지 선지는 글에 없는 목적이나 경험, 비교를 포함한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c3a6bd7c15",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 글을 함께 소개하는 글의 제목으로 가장 알맞은 것은?\n\n(A) Misun wants her home to be a safe and comfortable place for her family. She pictures a family photo on the sign at the gate, a living room for games and singing, and a garden for family barbecues.\n\n(B) Bryan enjoys being among the first to try new technology. He pictures a door that knows his face, furniture that suggests clothes for the weather, and a mirror that checks his health. A robot takes care of cleaning and cooking.",
+"choices": [
+"Why Every Family Needs a Household Robot",
+"Outdoor Activities Make a Perfect Home",
+"The Most Important Feature of a House: Its Size",
+"Two Dream Homes Designed for Family Games",
+"Dream Homes That Show What Their Owners Value"
+],
+"answer": "⑤",
+"solution": "Misun의 집에는 가족을 중시하는 마음이, Bryan의 집에는 새로운 기술에 대한 관심이 드러난다. ⑤는 두 사람의 서로 다른 집을 가치관이라는 공통 기준으로 묶어 준다. ④는 Misun의 집에만 해당하는 활동을 두 집 모두의 특징으로 확대했으므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e86f37e849",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 필자가 전달하려는 중심 생각으로 가장 알맞은 것은?\n\nWhat makes a dream house special? For Misun, a living room matters because her family can play games and sing together there. For Bryan, a door is special because it recognizes his face and opens by itself. Someone who loves nature may dream of a garden full of trees and mornings filled with birdsong. These different wishes suggest that a dream house becomes meaningful through what its owner cares about.",
+"choices": [
+"People should choose the most advanced technology for their dream houses.",
+"A garden is the one feature that can satisfy every person's needs.",
+"A dream house gains its meaning by reflecting its owner's interests and values.",
+"Sharing a house requires people to give up their personal interests.",
+"Family activities are more important than technology or nature in every home."
+],
+"answer": "③",
+"solution": "거실, 자동문, 정원은 각각 가족, 신기술, 자연을 중시하는 마음을 보여 주는 예시이다. 필자는 이러한 차이를 바탕으로 꿈의 집이 주인이 소중히 여기는 것을 반영할 때 의미를 갖는다고 말한다. 특정 요소가 모든 사람에게 가장 중요하다고 주장하는 선지는 글의 취지와 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4d23121e1f",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 글의 공통된 중심 생각을 나타내도록 요약문의 빈칸을 완성하시오.\n\n(A) Misun imagines her family feeling safe and comfortable at home. Her large living room is a place for singing and board games, while the garden provides space for family picnics and barbecues.\n\n(B) Bryan imagines new technology throughout his home. His door recognizes him, his furniture advises him about clothes, and his mirror gives him health information. His robot cooks and cleans.\n\n[요약문]\nTheir dream houses have different features, but both houses __________.\n\n[조건]\n• 아래 낱말을 각각 한 번씩 모두 사용할 것.\n• 낱말의 형태를 바꾸거나 다른 낱말을 추가하지 말 것.\n• 빈칸에 들어갈 부분만 쓸 것.\n\n[낱말]\nwhat / owners / reflect / their / value",
+"selfGrade": true,
+"answer": "reflect what their owners value",
+"solution": "Misun에게 중요한 것은 가족의 생활이고, Bryan에게 중요한 것은 새로운 기술이다. 따라서 두 집의 공통점은 같은 시설을 갖추었다는 것이 아니라 각 주인이 소중히 여기는 것을 반영한다는 점이다. 이를 주어진 낱말로 표현하면 reflect what their owners value가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-028db264d3",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 중심 내용을 요약한 문장의 빈칸을 조건에 맞게 완성하시오.\n\nA sign showing Misun's family picture stands at the gate of her dream home. Her living room is large enough for family games and singing, and her garden has a table for family picnics. In another dream home, flowers and trees fill a garden, birdsong welcomes the morning, and pets are there to play with. Both homes have gardens, but the gardens belong to different dreams: one centers on family life, and the other on a love of nature.\n\n[요약문]\nAlthough both dream homes include gardens, the first focuses on __________.\n\n[조건]\n• 아래 표현을 각각 한 번씩 모두 사용할 것.\n• 표현 내부의 낱말 순서와 형태를 바꾸지 말 것.\n• 별도의 낱말이나 문장부호를 추가하지 말 것.\n• 빈칸에 들어갈 부분만 쓸 것.\n\n[표현]\nwhile / nature / family life / focuses on / the second",
+"selfGrade": true,
+"answer": "family life while the second focuses on nature",
+"solution": "두 집에 모두 정원이 있다는 공통점만으로는 글의 핵심을 충분히 요약할 수 없다. 첫 번째 집은 가족이 함께하는 생활에, 두 번째 집은 자연과 함께하는 생활에 초점을 둔다는 차이를 포함해야 한다. while을 사용하여 이 두 중심 내용을 대조하면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-835f1c971f",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 제시된 제목이 글의 중심 내용을 충분히 담지 못하는 이유를 조건에 맞게 완성하시오.\n\n[제목] A Door That Recognizes Its Owner\n\nBryan likes trying new technology before others do. In his dream home, a door recognizes his face and lets him in. Furniture checks the weather to help him choose clothes, and a bathroom mirror provides information about his weight and health. A robot handles cooking and cleaning. The door is one example of the technology Bryan imagines throughout his home.\n\n[제목 검토문]\nThe title is too narrow because the passage mainly describes __________.\n\n[조건]\n• 아래 표현 중 중심 내용에 필요한 네 개를 골라 각각 한 번씩 사용할 것.\n• 표현 내부의 낱말 순서와 형태를 바꾸지 말 것.\n• 별도의 낱말이나 문장부호를 추가하지 말 것.\n• 빈칸에 들어갈 부분만 쓸 것.\n\n[표현]\na dream home / with / new technology / many kinds of / only one / a family picture",
+"selfGrade": true,
+"answer": "a dream home with many kinds of new technology",
+"solution": "제시된 제목은 얼굴을 인식하는 문이라는 한 가지 사례에만 초점을 맞춘다. 글 전체는 가구, 거울, 로봇까지 포함하여 다양한 신기술이 적용된 꿈의 집을 설명한다. 따라서 중심 내용을 나타내려면 a dream home with many kinds of new technology로 완성해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a2ca79d990",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nEveryone makes mistakes. However, a mistake does not have to end a good relationship. When you hurt someone, say you are sorry without waiting. Your words should also show that you truly care about the person's feelings. A quick and sincere apology can help you keep a good relationship.",
+"choices": [
+"실수를 하지 않는 사람들의 공통점",
+"좋은 관계를 지키는 신속하고 진심 어린 사과",
+"친구의 잘못을 찾아내는 방법",
+"자신의 감정을 솔직하게 표현하는 즐거움",
+"새로운 친구를 사귀기 위한 다양한 활동"
+],
+"answer": "②",
+"solution": "글은 실수로 상대에게 상처를 주었을 때 신속하고 진심 어린 사과를 해야 한다고 말한다. 이러한 사과가 좋은 관계를 지키는 데 도움이 된다는 것이 중심 내용이므로 ②가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a854d403c2",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nBeing close to someone does not mean that you never need to apologize. Your family members have feelings, too. When you do something wrong, you should say you are sorry even to the people closest to you. Small mistakes can cause deep hurt if you keep ignoring their feelings.",
+"choices": [
+"Why Small Mistakes Never Matter",
+"The Best Way to Make New Friends",
+"How to Hide Your Hurt Feelings",
+"Close People Need Apologies, Too",
+"Why Family Members Always Forgive"
+],
+"answer": "④",
+"solution": "가까운 사이라고 해서 사과할 필요가 없어지는 것은 아니라는 내용이다. 가족을 포함하여 가까운 사람에게도 사과해야 한다는 뜻의 ④가 제목으로 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2e329efddc",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nJune fell after tripping over a backpack. Mike laughed, took a photo of her, and shared it on an SNS. When June became upset, he removed the photo and said he was sorry, but he was still laughing. June felt even worse. Removing the photo did not make his apology sincere. An apology should show respect for the other person and care for that person's feelings.",
+"choices": [
+"잘못의 결과를 바로잡는 것과 함께 상대의 감정을 배려하며 진심으로 사과해야 한다.",
+"친구가 화를 내면 자신의 행동이 재미있었던 이유를 설명해야 한다.",
+"사과의 진심은 상대의 감정보다 사과할 때 사용하는 단어의 수에 달려 있다.",
+"온라인에서 생긴 갈등은 게시물을 삭제하는 것만으로 충분히 해결된다.",
+"친구에게 사과할 때는 웃으면서 분위기를 즐겁게 만드는 것이 가장 중요하다."
+],
+"answer": "①",
+"solution": "Mike는 사진을 삭제했지만 웃으면서 사과하여 June에게 더 큰 상처를 주었다. 글의 핵심은 잘못을 수습하는 행동에 더해 상대의 감정을 존중하는 진심 어린 사과가 필요하다는 것이므로 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-fe247f9bfd",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nKate accidentally bumped into Hojun in the cafeteria, and food fell onto his jacket. She said nothing, which upset him. Hojun would not have minded so much if she had apologized immediately. Saying sorry without delay shows that you care about the other person and accept responsibility for what you did.\n\n요약문: After hurting someone by accident, you should apologize (A)________ to show consideration and (B)________.",
+"choices": [
+"slowly — confidence",
+"publicly — friendship",
+"repeatedly — surprise",
+"casually — patience",
+"promptly — responsibility"
+],
+"answer": "⑤",
+"solution": "글은 실수로 상대에게 피해를 주었을 때 지체하지 않고 사과해야 한다고 설명한다. 신속한 사과는 배려와 책임감을 보여 주므로, '신속하게'라는 뜻의 promptly와 '책임'이라는 뜻의 responsibility가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c4d347d081",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글 전체의 내용을 가장 잘 아우르는 제목은?\n\nAn apology needs more than the words “I'm sorry.” Mike removed June's photo from an SNS, but his laughter made his apology seem careless. June needed to feel that he respected her feelings. Timing matters as well. After Kate accidentally spilled food on Hojun's jacket by bumping into him, her silence upset him. An immediate apology could have helped. The same care is needed at home. Sunmin did not apologize for losing her sister's favorite book because they were sisters. However, being close does not protect people from hurt. A proper apology requires sincerity, a quick response, and care for people close to us.",
+"choices": [
+"Act Quickly: Timing Is All an Apology Needs",
+"Fix the Damage, and Words Become Unnecessary",
+"Apologize Sincerely and Promptly, Even to Those Closest to You",
+"Save Your Apologies for People Outside Your Family",
+"Say Sorry Often, Whatever Your Attitude May Be"
+],
+"answer": "③",
+"solution": "글은 사과의 진정성, 신속성, 가까운 사람에게도 사과해야 할 필요성을 함께 다룬다. ③만 이 세 내용을 모두 포함하며, ①은 신속성만으로 충분하다고 하므로 글의 취지와 다르다. 나머지 선지도 진심 어린 말과 태도 또는 가족에 대한 사과의 필요성을 부정하므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-01ae964f31",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글 전체의 요지를 요약문의 빈칸에 영어로 쓰시오.\n\nMike said he was sorry after sharing a photo of June falling, yet his laughter made June feel more hurt. Kate accidentally bumped into Hojun and got food on his jacket, but she remained silent when an apology was needed. Sunmin lost her sister's favorite book and thought that being sisters made an apology unnecessary. These cases show different problems with apologies. Our words must express real care, we should not delay them, and we must not use a close relationship as a reason to avoid them.\n\n요약문: A proper apology should be ______________________________.\n\n<조건>\n• 다음 표현을 모두 한 번씩 사용하여 빈칸을 완성할 것: sincere / prompt / necessary / even between people who are close\n• 표현을 위에 제시된 순서대로 사용할 것.\n• 연결어 and를 정확히 두 번 추가하고, 그 밖의 단어는 추가하지 말 것.\n• 완성한 빈칸 부분만 쓸 것.",
+"selfGrade": true,
+"answer": "sincere and prompt and necessary even between people who are close",
+"solution": "Mike의 사례는 진정성, Kate의 사례는 신속성, Sunmin의 사례는 가까운 사이에서도 사과가 필요하다는 점을 보여 준다. 따라서 요약문에는 세 요소가 모두 포함되어야 한다. 주어진 표현의 순서를 지키고 and를 두 번 넣으면 제시된 답이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5d32d6dc33",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 핵심을 요약할 때, 빈칸 (A)~(C)에 들어갈 말을 <보기>에서 골라 순서대로 쓰시오.\n\nSaying sorry does not always make the hurt disappear. Mike deleted the photo he had shared, but he laughed while apologizing to June. His words failed to show that he cared about her feelings. An apology must also come when it is needed. Kate's silence after getting food on Hojun's jacket left him upset. Nor should closeness be an excuse for silence. After Sunmin lost her sister's favorite book, she did not apologize because they were sisters. Yet people can be hurt more easily by those close to them, and small mistakes without apologies can become deep emotional wounds.\n\n요약문: The value of an apology depends on its (A)________ and timing. Moreover, the need for an apology does not disappear with (B)________, because repeated mistakes without apologies can cause emotional (C)________.\n\n<보기>\ncloseness / confidence / distance / forgiveness / humor / sincerity / wounds\n\n<조건>\n• 각 빈칸에 한 단어씩 쓸 것.\n• 답은 (A), (B), (C)의 순서로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "sincerity, closeness, wounds",
+"solution": "사진을 삭제하고 사과했어도 웃는 태도가 상처를 키웠으므로 (A)는 sincerity이다. 가까운 관계라고 사과의 필요성이 없어지지는 않으므로 (B)는 closeness이다. 사과하지 않은 작은 실수들이 깊은 정서적 상처로 이어질 수 있으므로 (C)는 wounds이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
 }
 ]
