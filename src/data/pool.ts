@@ -163,6 +163,16 @@ export function loadPool(course: string): Promise<Problem[]> {
             }
           } catch { /* 쌍둥이 파일이 없어도 그대로 */ }
         }
+        // 🪜 승강제 빈틈 채우기(유사 문항) — 모든 과정 공통 gen-<과정>-fill.json. 문항이 모자라거나 층이 3개 미만인 유형을
+        //    매쓰플랫·족보·exam4you 등 기존 문항을 기준으로 새로 지어 검산한 것만 싣는다(2026-10-29 명수쌤 «빈틈없이 채워줘»).
+        try {
+          const f = await fetch(`${import.meta.env.BASE_URL}gen-${course}-fill.json`)
+          if (f.ok) {
+            const fl = (await f.json()) as Problem[]
+            const seen = new Set(arr.map(p => p.id))
+            for (const q of fl) if (q && q.id && !seen.has(q.id)) arr.push({ ...q, custom: true, source: q.source || '유사 문항' })
+          }
+        } catch { /* 채우기 파일이 없어도 그대로 */ }
         cache.set(course, arr)
         return arr
       })
