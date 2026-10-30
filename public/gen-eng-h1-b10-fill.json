@@ -3914,5 +3914,309 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-caabe5294d",
+"typeId": "eng-h1-b10-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThe first case is about a student named Hajun. On the first day of school, Hajun's homeroom teacher introduced several school clubs. At that time, Hajun didn't have a particular preference for any of them. He thought that any indoor club would be okay since he was not an outdoor person. Can you guess what happened on the day of choice? He joined the soccer club. What made him choose soccer?\nWell, a few days before submitting his application, he heard that the soccer club was so popular that half of his classmates were applying for it. This made him think that the soccer club was something special. With this in mind, he signed up for the soccer club just because others did so. However, after he had joined the club, he realized that soccer was not for him. In the end, he regretted his decision.",
+"choices": [
+"Hajun had already chosen a club before the first day of school.",
+"Hajun considered himself an outdoor person.",
+"Hajun heard that half of his classmates were applying for the soccer club.",
+"Hajun joined the soccer club because he loved playing soccer.",
+"Hajun was satisfied with his decision after joining the club."
+],
+"answer": "③",
+"solution": "하준은 신청서를 내기 며칠 전에 반 친구의 절반이 축구부에 지원한다는 말을 들었으므로 ③이 글의 내용과 일치한다. 하준은 처음에 특별히 마음에 둔 동아리가 없었고(①), 자신이 야외 활동을 좋아하는 사람이 아니라고 생각했다(②). 축구부에 들어간 것은 다른 사람들이 지원했기 때문이며(④), 결국 자신의 결정을 후회했다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8d4be5f22b",
+"typeId": "eng-h1-b10-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nNow, let's look at another case, one about Yubin. One day, Yubin told me about her first science quiz. Science was the subject that she struggled with the most. Since she wanted to get a good grade, she made a thorough study plan for herself. Yet, every time she tried to concentrate on science, she found herself doing other things instead. For instance, she cleaned her desk or texted her friends. These activities distracted her from studying, and in the end, she got a bad grade. She was frustrated that she continuously engaged in behaviors unhelpful for accomplishing her task.",
+"choices": [
+"What subject did Yubin find the most difficult?",
+"What did Yubin make to get a good grade?",
+"What did Yubin do instead of studying science?",
+"How long did Yubin study for her science quiz?",
+"How did Yubin feel about her behavior?"
+],
+"answer": "④",
+"solution": "유빈이 과학 퀴즈를 위해 얼마나 오래 공부했는지는 글에 나오지 않으므로 ④에는 답할 수 없다. 가장 어려워한 과목은 과학이고(①), 좋은 성적을 받으려고 꼼꼼한 학습 계획을 세웠다(②). 공부 대신 책상을 치우거나 친구에게 문자를 보냈고(③), 자신의 행동에 좌절감을 느꼈다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4c30b00056",
+"typeId": "eng-h1-b10-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nHave you ever heard of the \"Eiffel Tower Effect?\" When the Eiffel Tower was first built, the iron tower was very different from all the other architecture in Paris, which was mainly made of stone. Many local people disliked the tower and complained that it would ruin the beauty of Paris. Nevertheless, as the locals became familiar with the tower due to exposure, they became more and more fond of it, referring to it as the Tower of Love. This effect, also called the \"Mere Exposure Effect,\" is found with people, too. Psychologist Robert Zajonc and his colleagues showed university students pictures of several faces. Some pictures were shown 25 times while others were shown only once or twice. Then, the students were shown a picture and asked to express how much they liked that person. The students liked the people they had seen more often better than those they had seen less frequently. This shows that the more we are exposed to something, the more favorably we view it.",
+"choices": [
+"When it was first built, the Eiffel Tower looked quite unlike most other buildings in Paris.",
+"Repeated exposure gradually changed the locals' negative attitude toward the tower.",
+"Robert Zajonc carried out the experiment with his colleagues.",
+"In the experiment, every picture was shown to the students the same number of times.",
+"The experiment suggests that frequent exposure leads people to view something more positively."
+],
+"answer": "④",
+"solution": "실험에서 어떤 사진은 25번 보여 주었고 어떤 사진은 한두 번만 보여 주었으므로, 모든 사진을 같은 횟수만큼 보여 주었다는 ④는 글의 내용과 일치하지 않는다. 철로 만든 에펠탑은 주로 돌로 지어진 파리의 다른 건축물과 매우 달랐고(①), 처음에 탑을 싫어하던 주민들은 자주 보면서 점점 좋아하게 되었다(②). 실험은 Zajonc와 동료들이 함께 했고(③), 많이 노출될수록 더 호의적으로 본다는 결론이 나온다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2075669d32",
+"typeId": "eng-h1-b10-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것만을 <보기>에서 있는 대로 고른 것은?\n\nWhen people do not have the confidence to perform tasks well, they are likely to create obstacles to success. This type of behavior is referred to as \"self-handicapping.\" Self-handicapping enables people to make excuses for their poor performances. These excuses prevent the poor result from lowering their self-esteem. This might work in the short term. However, be careful! It could lead to repeated failures in certain tasks that you are not confident in doing.\nIf you are self-handicapping, it might be because you consider the results more important than the process. Focusing more on the process than the outcome may ease the pressure to perform well. Accordingly, you may feel more encouraged to try to do the challenging tasks. This can eventually stop your self-handicapping.\n\n<보기>\n(a) Self-handicapping can keep people's self-esteem from being lowered by poor results.\n(b) Self-handicapping is helpful in the long run because it removes obstacles to success.\n(c) People who self-handicap may value outcomes more than the process.\n(d) Focusing on the result rather than the process can reduce the pressure to perform well.\n(e) Feeling less pressure may make people more willing to attempt challenging tasks.",
+"choices": [
+"(a), (b)",
+"(a), (c), (e)",
+"(b), (d)",
+"(c), (d), (e)",
+"(a), (c), (d), (e)"
+],
+"answer": "②",
+"solution": "핑계를 대면 나쁜 결과 때문에 자존감이 낮아지지 않으므로 (a)는 맞고, 결과를 과정보다 중요하게 여겨서 셀프 핸디캐핑을 할 수 있으므로 (c)도 맞다. 부담이 줄면 어려운 일에 도전할 마음이 더 생기므로 (e)도 맞다. (b)는 틀렸다. 셀프 핸디캐핑은 단기적으로만 효과가 있을 수 있고, 성공을 막는 장애물을 오히려 스스로 만든다. (d)도 틀렸다. 부담을 덜어 주는 것은 결과가 아니라 과정에 집중하는 것이어서 원문과 반대로 서술되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-86b6ea7820",
+"typeId": "eng-h1-b10-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nHave you ever heard of the \"Eiffel Tower Effect?\" When the Eiffel Tower was first built, the iron tower was very different from all the other architecture in Paris, which was mainly made of stone. Many local people disliked the tower and complained that it would ruin the beauty of Paris. Nevertheless, as the locals became familiar with the tower due to exposure, they became more and more fond of it, referring to it as the Tower of Love.",
+"choices": [
+"the reasons Paris chose iron for the Eiffel Tower",
+"how the locals' feelings about the Eiffel Tower changed over time",
+"the beauty of the stone architecture in Paris",
+"why tourists from around the world love the Eiffel Tower",
+"the difficulties of building a tall tower in Paris"
+],
+"answer": "②",
+"solution": "처음에는 에펠탑을 싫어하던 파리 시민들이 탑에 자주 노출되면서 점점 좋아하게 되어 'Tower of Love'라고 부르게 되었다는 내용이다. 따라서 주제는 에펠탑에 대한 시민들의 감정 변화인 ②이다. ①·③·⑤는 글에서 다루지 않았고, ④는 관광객 이야기가 아니라 지역 주민(locals)의 이야기이므로 맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0ddca6873e",
+"typeId": "eng-h1-b10-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nNow, let's look at another case, one about Yubin. One day, Yubin told me about her first science quiz. Science was the subject that she struggled with the most. Since she wanted to get a good grade, she made a thorough study plan for herself. Yet, every time she tried to concentrate on science, she found herself doing other things instead. For instance, she cleaned her desk or texted her friends. These activities distracted her from studying, and in the end, she got a bad grade. She was frustrated that she continuously engaged in behaviors unhelpful for accomplishing her task.",
+"choices": [
+"How Yubin Made a Perfect Study Plan",
+"Science: The Hardest Subject for Every Student",
+"Yubin's Behaviors That Got in the Way of Her Goal",
+"Cleaning Your Desk Helps You Concentrate Better",
+"Texting Friends: A Good Way to Relieve Study Stress"
+],
+"answer": "③",
+"solution": "유빈이는 좋은 성적을 받으려고 계획까지 세웠지만, 책상 청소나 문자 보내기처럼 과제에 도움이 되지 않는 행동을 계속하다가 결국 나쁜 성적을 받았다. 따라서 목표를 방해한 유빈이의 행동을 다룬 ③이 제목으로 알맞다. ①은 계획을 세웠다는 세부 내용일 뿐이고, ④·⑤는 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a0202d5a99",
+"typeId": "eng-h1-b10-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nIf you are self-handicapping, it might be because you consider the results more important than the process. Focusing more on the process than the outcome may ease the pressure to perform well. Accordingly, you may feel more encouraged to try to do the challenging tasks. This can eventually stop your self-handicapping.",
+"choices": [
+"결과를 중시해야 어려운 과제에 도전할 동기가 생긴다.",
+"결과보다 과정에 집중하면 부담이 줄어 셀프 핸디캐핑을 멈출 수 있다.",
+"잘해야 한다는 압박감은 과제를 끝까지 해내는 데 도움이 된다.",
+"어려운 과제보다 쉬운 과제부터 해결하는 것이 바람직하다.",
+"셀프 핸디캐핑은 단기적으로 자존감을 지키는 데 효과적이다."
+],
+"answer": "②",
+"solution": "결과보다 과정에 집중하면 잘해야 한다는 압박감이 줄고, 그 덕분에 어려운 과제에 도전할 용기가 생겨 결국 셀프 핸디캐핑을 멈출 수 있다는 내용이다. 따라서 요지는 ②이다. ①은 글과 반대되는 내용이고, ⑤는 교과서의 다른 단락 내용이어서 이 글의 요지가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9fa11d51fe",
+"typeId": "eng-h1-b10-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nThe first case is about a student named Hajun. On the first day of school, Hajun's homeroom teacher introduced several school clubs. At that time, Hajun didn't have a particular preference for any of them. He thought that any indoor club would be okay since he was not an outdoor person. Can you guess what happened on the day of choice? He joined the soccer club. What made him choose soccer? Well, a few days before submitting his application, he heard that the soccer club was so popular that half of his classmates were applying for it. This made him think that the soccer club was something special. With this in mind, he signed up for the soccer club just because others did so. However, after he had joined the club, he realized that soccer was not for him. In the end, he regretted his decision.\n\n→ Hajun joined the soccer club simply because it was (A)__________ among his classmates, but he (B)__________ his choice because soccer did not suit him.\n\n     (A)          (B)",
+"choices": [
+"popular …… regretted",
+"special …… enjoyed",
+"unpopular …… regretted",
+"popular …… celebrated",
+"indoor …… changed"
+],
+"answer": "①",
+"solution": "하준이는 반 친구 절반이 지원할 만큼 축구부가 인기 있다(popular)는 말을 듣고 남들을 따라 가입했다. 하지만 축구가 자신에게 맞지 않는다는 것을 깨닫고 결국 그 결정을 후회했다(regretted). 따라서 정답은 ①이다. ②의 special은 본문에 나오는 낱말이지만, (B)의 enjoyed가 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bbf02f7729",
+"typeId": "eng-h1-b10-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nHave you ever heard of the \"Eiffel Tower Effect?\" When the Eiffel Tower was first built, the iron tower was very different from all the other architecture in Paris, which was mainly made of stone. Many local people disliked the tower and complained that it would ruin the beauty of Paris. Nevertheless, as the locals became familiar with the tower due to exposure, they became more and more fond of it, referring to it as the Tower of Love. This effect, also called the \"Mere Exposure Effect,\" is found with people, too. Psychologist Robert Zajonc and his colleagues showed university students pictures of several faces. Some pictures were shown 25 times while others were shown only once or twice. Then, the students were shown a picture and asked to express how much they liked that person. The students liked the people they had seen more often better than those they had seen less frequently.\n\n→ As shown in both the Parisians' attitude toward the Eiffel Tower and Zajonc's experiment, repeated (A)__________ to something tends to make people feel more (B)__________ toward it.\n\n     (A)          (B)",
+"choices": [
+"exposure …… favorable",
+"exposure …… indifferent",
+"explanation …… favorable",
+"criticism …… hostile",
+"contact …… hostile"
+],
+"answer": "①",
+"solution": "파리 시민들은 에펠탑에 자주 노출되면서 탑을 좋아하게 되었고, 자이언스의 실험에서도 학생들은 더 자주 본 사람을 더 좋아했다. 따라서 반복된 노출(exposure)이 더 호의적인(favorable) 감정을 만든다는 ①이 정답이다. ②는 (A)는 맞지만 감정이 무관심해진다는 (B)가 틀렸고, ⑤의 contact는 (A)에 들어갈 만하지만 hostile이 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a43a790f8f",
+"typeId": "eng-h1-b10-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWhen people do not have the confidence to perform tasks well, they are likely to create obstacles to success. This type of behavior is referred to as \"self-handicapping.\" Self-handicapping enables people to make excuses for their poor performances. These excuses prevent the poor result from lowering their self-esteem. This might work in the short term. However, be careful! It could lead to repeated failures in certain tasks that you are not confident in doing.\nIf you are self-handicapping, it might be because you consider the results more important than the process. Focusing more on the process than the outcome may ease the pressure to perform well. Accordingly, you may feel more encouraged to try to do the challenging tasks. This can eventually stop your self-handicapping.",
+"choices": [
+"Self-Handicapping: A Smart Way to Protect Your Self-Esteem",
+"Why Results Matter More Than the Process",
+"From Excuses to Effort: Understanding and Overcoming Self-Handicapping",
+"The Pressure to Perform Well: A Key to Success",
+"How to Make Good Excuses for Poor Performance"
+],
+"answer": "③",
+"solution": "첫 단락은 셀프 핸디캐핑의 뜻과 그것이 반복된 실패로 이어질 수 있는 위험을, 둘째 단락은 과정에 집중해 셀프 핸디캐핑을 극복하는 방법을 설명한다. 두 단락을 모두 아우르는 ③이 제목으로 알맞다. ①은 단기적으로만 효과가 있다는 부분만 부각하고 '조심하라'는 경고를 놓친 함정이다. ②·④는 글의 주장과 반대이고, ⑤는 변명을 권하는 내용이어서 맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-506b206560",
+"typeId": "eng-h1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nDrones are aircraft that can fly without a pilot. They were first developed for military purposes in the U.K., and the first one was called Queen Bee. Later, the U.S. made their own version and named it \"Drone\" after male, worker bees. Since then, the term \"drone\" has represented all unmanned flying vehicles. Today, drones carry out difficult tasks instead of people: they deliver essential items to remote areas, rescue people injured in extreme places, and put out fires in hazardous locations where there is a risk of explosion. They also help farmers manage their crops more efficiently and monitor our natural environment by keeping track of endangered species and marine life in real time.",
+"choices": [
+"The term \"drone\" has come to represent all unmanned flying vehicles.",
+"Drones can rescue people injured in extreme places.",
+"Drones help farmers manage their crops more efficiently.",
+"Drones can keep track of endangered species and marine life in real time.",
+"Drones are mainly used because they cost less than hiring human pilots."
+],
+"answer": "⑤",
+"solution": "지문은 드론이 사람 대신 어려운 일을 수행하고 농업·환경 감시 등에 쓰인다고만 설명하며, ①~④는 모두 본문에 명시되어 있다. ⑤의 '사람 조종사를 고용하는 것보다 비용이 적게 들어서 주로 사용된다'는 내용은 본문에 전혀 언급되지 않은 사실이다. 따라서 일치하지 않는 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-167b2b9a11",
+"typeId": "eng-h1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nMemory foam was initially developed to minimize the effects of the force of gravity on astronauts during takeoff and landing. It absorbs shock by changing its shape in reaction to pressure, and it can change its shape to match the body shape of an astronaut. Once the pressure is lifted, memory foam gradually returns to its original shape, as if it remembered its original form. Because of this characteristic, it is called \"memory\" foam. Since it was first introduced into the public domain, it has been used in many products such as beds and sofas.",
+"choices": [
+"Memory foam was first developed to reduce the effects of gravity on astronauts during takeoff and landing.",
+"Memory foam absorbs shock by changing its shape in reaction to pressure.",
+"Memory foam can change its shape to match an astronaut's body shape.",
+"Memory foam is now used in products such as beds and sofas.",
+"Once pressure is applied, memory foam keeps its new shape permanently."
+],
+"answer": "⑤",
+"solution": "본문은 압력이 사라지면(the pressure is lifted) 메모리폼이 서서히 원래 모양으로 돌아간다고 설명한다. 따라서 '압력이 가해지면 새 모양을 영구히 유지한다'는 ⑤는 본문과 정반대로 일치하지 않는다. ①~④는 모두 본문에 그대로 제시되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4076dd23e3",
+"typeId": "eng-h1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nToday's water purifier also originated from space technology. While planning a human space exploration program, NASA scientists realized that it was impossible to load a sufficient amount of clean water into a spacecraft. Then they came up with the idea that wastewater could be recycled once harmful bacteria were removed, so they developed a water purification system that could kill off bacteria. Continued research led to a better system that used cartridges for longer missions that did not need to be replaced frequently. This technique was developed over several decades and then marketed for domestic use.",
+"choices": [
+"NASA scientists realized it was impossible to load enough clean water into a spacecraft.",
+"The idea came that wastewater could be recycled after harmful bacteria were removed.",
+"The improved system used cartridges that did not need to be replaced frequently.",
+"The water purifying technique was eventually marketed for home use.",
+"NASA gave up the water purification project before it was ever used on Earth."
+],
+"answer": "⑤",
+"solution": "마지막 문장에서 이 정수 기술이 수십 년에 걸쳐 개발된 뒤 가정용으로 상용화되었다고 했으므로, 'NASA가 지구에서 쓰이기 전에 프로젝트를 포기했다'는 ⑤는 본문과 어긋난다. ①~④는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d37f768daf",
+"typeId": "eng-h1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nThe wireless headset was devised after an unexpected incident NASA experienced. The second manned spacecraft launched by the U.S. completed its mission and landed in the Atlantic Ocean, and the command pilot was waiting for the recovery team. Unexpectedly, the capsule started to leak, and water flooded into the cabin before the team arrived. The pilot had to escape, abandoning all of the spacecraft's radio communications equipment, which prevented him from communicating with the recovery team. After this accident, NASA and a partner company developed helmets equipped with a radio system. Later, wireless headsets using this system were introduced to the world, and these days Bluetooth technology has been incorporated into them.",
+"choices": [
+"What incident led NASA to develop the wireless headset?",
+"Where did the second manned spacecraft land after its mission?",
+"Why was the pilot unable to communicate with the recovery team?",
+"How many people were on the recovery team that rescued the pilot?",
+"What technology has recently been incorporated into wireless headsets?"
+],
+"answer": "④",
+"solution": "①은 캡슐 누수 사고, ②는 대서양, ③은 무선 통신 장비를 버리고 탈출했기 때문, ⑤는 블루투스로 본문에서 모두 답할 수 있다. 그러나 구조팀의 인원 수는 본문에 전혀 언급되지 않으므로 ④는 답할 수 없는 질문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9be2f26832",
+"typeId": "eng-h1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nG: Mike, how's your preparation for the presentation going?\nB: I need some help with the slides. Are you good at designing slides?\nG: Sure. Is the title Global Positioning System?\nB: Yes. I want to show that GPS originated from space technology.\nG: Then why don't you put the title with an image of a car in the center? Cars use GPS the most.\nB: Great idea.\nG: And I think the top of the background should be black with a spacecraft.\nB: Nice. I want to put an image of the Earth at the bottom of the background.\nG: That's a good idea.",
+"choices": [
+"Mike needs help with designing the slides for his presentation.",
+"The title of Mike's presentation is Global Positioning System.",
+"Mike wants to show that GPS originated from space technology.",
+"The girl suggests placing the title with a car image in the center.",
+"Mike suggests putting a spacecraft at the bottom of the background."
+],
+"answer": "⑤",
+"solution": "대화에서 우주선(spacecraft)은 소녀가 배경의 위쪽(top)에 넣자고 제안했고, 마이크는 배경 아래쪽(bottom)에 지구 이미지를 넣고 싶어 했다. 따라서 '마이크가 배경 아래쪽에 우주선을 넣자고 제안했다'는 ⑤는 대화 내용과 일치하지 않는다. ①~④는 대화에 그대로 드러난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ef39e32c50",
+"typeId": "eng-h1-b10-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAnother everyday item developed from space technology is the air purifier. A reliable source of food was vital for survival in space, so astronauts had to cultivate crops in the spacecraft. However, there was a major obstacle: when plants grow, ethylene gas is produced, which accelerates the aging of plants and the decaying of fruits. Since it was impossible to exchange gas for clean air while in space, scientists developed an air purification system to remove the gas. Although the goal was to eliminate ethylene, the system could get rid of other unwanted things from the air, too. A private company recognized the potential of the system and obtained a license to develop and commercialize it.",
+"choices": [
+"Astronauts had to grow crops inside the spacecraft to secure a reliable source of fresh food.",
+"Ethylene gas, produced as plants grow, speeds up the aging of plants and the decaying of fruits.",
+"Because gas could not be exchanged for clean air in space, scientists created an air purification system.",
+"Though designed to eliminate ethylene, the system could also remove other unwanted things from the air.",
+"A private company built the air purification system from scratch and then sold its license to NASA."
+],
+"answer": "⑤",
+"solution": "본문에서는 한 민간 기업이 이미 개발된 공기 정화 시스템의 잠재력을 '알아보고(recognized)' 그것을 개발·상용화할 수 있는 '라이선스를 획득했다(obtained a license)'고 했다. 따라서 기업이 시스템을 처음부터 직접 만들어 NASA에 라이선스를 팔았다는 ⑤는 주체와 방향이 뒤바뀐 서술로 일치하지 않는다. ①~④는 모두 본문과 부합한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u7m4s0t0",
+"custom": true
 }
 ]

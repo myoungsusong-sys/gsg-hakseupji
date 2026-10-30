@@ -2979,5 +2979,242 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b01-u4m0s0t0",
 "custom": true
+},
+{
+"id": "fill-75d6d72070",
+"typeId": "eng-m3-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 한 번씩 배열하여 빈칸을 완성하시오.\n\nB 그룹은 책에 들어갈 그림을 그리는 일을 맡는다.\n→ Group B ______________________________ for the book.\n\n<보기>\nof / making / charge / is / drawings / in",
+"selfGrade": true,
+"answer": "is in charge of making drawings",
+"solution": "‘~을 맡다’는 be in charge of로 표현한다. 전치사 of 뒤에는 동명사가 와야 하므로 making drawings를 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f460796710",
+"typeId": "eng-m3-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 한 번씩 배열하여 빈칸을 완성하시오.\n\n그 한국 이야기는 영어로 번역될 수 있다.\n→ The Korean story ______________________________.\n\n<보기>\nEnglish / translated / can / into / be",
+"selfGrade": true,
+"answer": "can be translated into English",
+"solution": "‘~될 수 있다’는 조동사가 있는 수동태인 can be＋과거분사로 나타낸다. ‘영어로 번역되다’는 be translated into English이므로 can be translated into English로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0c253820da",
+"typeId": "eng-m3-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n그 한국 이야기가 영어로 번역되었는지 아닌지 내게 알려 줘.\n\n<보기>\nlet / me / know / whether / or / not / the / Korean / story / translate / into / English\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것.\n• translate를 알맞은 형태로 바꾸고, 필요한 단어를 한 개만 추가할 것.\n• whether 바로 뒤에 or not을 쓸 것.\n• 번역 여부를 나타내는 절은 과거시제로 쓸 것.",
+"selfGrade": true,
+"answer": "Let me know whether or not the Korean story was translated into English.",
+"solution": "‘~인지 아닌지’는 whether or not으로 나타내며, 그 뒤에는 ‘주어＋동사’의 어순이 온다. 이야기는 번역되는 대상이므로 translate를 translated로 바꾸고 was를 추가하여 과거시제 수동태를 만든다. ‘내게 알려 줘’는 Let me know로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-906fea4cf4",
+"typeId": "eng-m3-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 한 번씩 사용하여 빈칸을 완성하시오.\n\n그 책들이 아이들에게 보내진다면, 나는 아이들이 그것들을 즐길 것이라고 믿어 의심치 않는다.\n→ If the books ______________________________, I ______________________________.\n\n<보기>\nto / send / the / children / have / no / doubt / that / the / children / will / enjoy / them\n\n<조건>\n• send만 알맞은 형태로 바꾸고, 필요한 단어를 한 개만 추가할 것.\n• 각 빈칸에 들어갈 부분을 순서대로 쓰고, 두 답은 세미콜론(;)으로 구분할 것.",
+"selfGrade": true,
+"answer": "are sent to the children; have no doubt that the children will enjoy them",
+"solution": "조건을 나타내는 if절에서는 미래의 일도 현재시제로 표현한다. 책들이 보내지는 것이므로 send를 sent로 바꾸고 are를 추가하여 are sent를 만든다. ‘~라고 믿어 의심치 않는다’는 have no doubt that으로 표현하며, 뒤에는 the children will enjoy them을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-79670c507c",
+"typeId": "eng-m3-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 여러 리더십 유형에 관한 글을 읽은 사람이 깨달은 내용이다. 두 문장의 의미를 유지하면서 <조건>에 맞게 한 문장으로 쓰시오.\n\nI discovered something. Different situations call for different leadership styles.\n\n우리말: 내가 발견한 것은 서로 다른 상황이 서로 다른 리더십 유형을 필요로 한다는 것이었다.\n\n<조건>\n• What으로 시작하고 관계대명사 what과 접속사 that을 각각 한 번 사용할 것.\n• something은 사용하지 않을 것.\n• 나머지 제시된 단어는 모두 그대로 한 번씩 사용할 것. 단, 문장 첫 글자의 대소문자는 바꿀 수 있음.\n• what과 that 외에 was만 한 번 추가할 것.",
+"selfGrade": true,
+"answer": "What I discovered was that different situations call for different leadership styles.",
+"solution": "‘내가 발견한 것’은 선행사를 포함하는 관계대명사 what을 이용하여 What I discovered로 표현한다. 이 명사절 전체가 주어이므로 뒤에 was를 연결한다. 발견한 내용은 접속사 that이 이끄는 절로 나타내며, call for는 ‘~을 필요로 하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-cceda9ec0b",
+"typeId": "eng-m3-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 다른 나라의 아이들에게 보낼 그림책을 만드는 프로젝트에 관한 문장이다. 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n우리가 아이들에게 보낼 것은 영어로 읽힐 수 있는 그림책이다.\n\n<보기>\nwhat / we / will / send / to / the / children / is / a / picture / book / can / read / in / English\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것.\n• read는 필요한 경우 알맞은 형태로 바꿀 것.\n• 필요한 단어를 정확히 두 개 추가하되, 그중 하나는 관계대명사 that일 것.\n• What으로 시작하고, picture book 바로 뒤에 that이 이끄는 절을 연결할 것.",
+"selfGrade": true,
+"answer": "What we will send to the children is a picture book that can be read in English.",
+"solution": "‘우리가 아이들에게 보낼 것’은 What we will send to the children이라는 명사절로 표현한다. picture book을 꾸미는 관계대명사 that 뒤에는 ‘읽힐 수 있다’를 뜻하는 can be read가 와야 한다. 따라서 추가할 두 단어는 that과 be이며, read는 과거분사도 철자가 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c16339c0bb",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nI have a friend who always makes people laugh. When I feel sad, he tells me funny stories. Last week, I failed my math test and felt terrible. He drew a funny cartoon of me and showed it to me. I laughed so hard that I forgot about the test. Everyone wants to be with him because he has a great sense of humor.",
+"choices": [
+"수학 시험을 잘 보는 방법",
+"유머 감각이 뛰어난 친구",
+"만화를 잘 그리는 비결",
+"시험에 떨어진 친구를 위로하는 말",
+"슬플 때 혼자 있어야 하는 이유"
+],
+"answer": "②",
+"solution": "글쓴이는 늘 사람들을 웃게 하는 친구를 소개하고, 시험을 망쳤을 때 그 친구 덕분에 웃었던 일을 예로 듭니다. 마지막 문장 'he has a great sense of humor'가 글의 중심 내용이므로 주제는 ②입니다. ①, ③은 글에 나온 낱말만 빌린 선지입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d2997cdd5d",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nLast month, I bought a new backpack. It has many big pockets, so I can carry my books, a water bottle, and even my lunch box. It also has a special pocket that keeps my phone safe. The backpack is very light, so my shoulders don't hurt anymore. It is the best thing that I have ever bought.",
+"choices": [
+"My Favorite Backpack",
+"How to Make a Backpack",
+"Why Phones Are Dangerous",
+"The Heaviest Bag in the World",
+"Tips for Packing a Lunch"
+],
+"answer": "①",
+"solution": "글 전체가 새로 산 가방의 좋은 점(큰 주머니, 휴대 전화 주머니, 가벼움)을 설명합니다. 마지막 문장에서 이 가방을 지금까지 산 것 중 최고라고 말하므로 제목은 ①입니다. 글에서는 가방이 가볍다고 했으므로 ④는 내용과 반대입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bed33e647c",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nLast Sunday, my family planned to visit my grandmother in Busan. Our train was at 9 o'clock, but I spent too much time getting ready. When we arrived at the station at 9:10, the train had already left. We had to wait two hours for the next train. I felt very sorry to my family. Since then, I have always checked the time and left home early.",
+"choices": [
+"기차 여행은 가족과 함께 가는 것이 좋다.",
+"약속 시간에 늦지 않도록 미리 준비해야 한다.",
+"할머니 댁에는 자주 찾아가야 한다.",
+"외출 준비는 천천히 꼼꼼하게 하는 것이 좋다.",
+"기차를 놓치면 다음 기차를 기다리면 된다."
+],
+"answer": "②",
+"solution": "글쓴이는 준비하느라 늦어 기차를 놓친 경험을 이야기합니다. 그 뒤로 늘 시간을 확인하고 일찍 나선다고 했으므로 요지는 ②입니다. ④는 글쓴이가 반성한 행동과 반대되는 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-66beda187f",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nLast summer, I volunteered at an animal shelter. I thought it would be easy and fun, but it wasn't. Every day, I had to clean cages and wash big, dirty dogs. I often went home very tired. Then one day, an old dog which I had taken care of for weeks went to a new home. Its new family thanked me for looking after it so well. At that moment, I realized that even my small help could make a big difference.",
+"choices": [
+"How to Wash a Big Dog",
+"An Old Dog's New Home",
+"Small Help Can Make a Big Difference",
+"Volunteering: Always Easy and Fun",
+"Choosing the Right Pet for Your Family"
+],
+"answer": "③",
+"solution": "글의 핵심은 마지막 문장에서 글쓴이가 깨달은 점, 즉 작은 도움도 큰 변화를 만들 수 있다는 것이므로 정답은 ③입니다. ②는 그 깨달음의 계기가 된 일부 사건일 뿐이어서 글 전체의 제목이 될 수 없습니다. 글쓴이는 봉사가 쉽지 않았다고 했으므로 ④는 내용과 반대입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f9c210acae",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nI used to keep my phone next to me while I studied. Whenever a message came, I stopped studying and answered it right away. I thought it took only a few seconds, but it was hard to focus again. One day, I decided to turn off all the alarms on my phone during study time. At first, I was worried that I might miss something important. However, I soon found that I could finish my homework much faster. Now I check my messages only after I finish studying.",
+"choices": [
+"친구의 메시지에는 바로 답하는 것이 예의다.",
+"스마트폰은 학생에게 전혀 필요 없는 물건이다.",
+"공부할 때 휴대 전화 알림을 끄면 집중하는 데 도움이 된다.",
+"숙제는 가능한 한 빨리 끝내는 것이 가장 중요하다.",
+"중요한 연락을 놓치지 않도록 휴대 전화를 늘 곁에 두어야 한다."
+],
+"answer": "③",
+"solution": "글쓴이는 공부하는 동안 알림을 껐더니 숙제를 훨씬 빨리 끝낼 수 있었다고 말하므로 요지는 ③입니다. 글쓴이는 공부가 끝난 뒤 메시지를 확인하므로, 휴대 전화가 전혀 필요 없다는 ②는 지나친 일반화입니다. ⑤는 글쓴이가 처음에 했던 걱정일 뿐 결론이 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-138028c1d2",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nSince I was little, I had been afraid of speaking in front of people. My face turned red, and my voice shook. This year, my teacher asked me to join the school drama club. I wanted to say no, but I decided to try. At first, I forgot my lines many times. However, I practiced every day, and I stood on the stage again and again. At the end of the year, I played the main role in our school play. Now I am not afraid anymore.\n\n→ By (A)______ the fear again and again, the writer (B)______ confidence.",
+"choices": [
+"(A) avoiding – (B) lost",
+"(A) avoiding – (B) gained",
+"(A) facing – (B) lost",
+"(A) facing – (B) gained",
+"(A) hiding – (B) gained"
+],
+"answer": "④",
+"solution": "글쓴이는 두려움을 피하지 않고 거듭 무대에 섰으므로 (A)에는 facing이 알맞습니다. 결국 주인공을 맡고 더는 두렵지 않다고 했으므로 (B)에는 gained가 들어갑니다. 'I wanted to say no'만 보고 avoiding을 고르는 함정에 주의해야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-73ceddb382",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지가 되도록 <보기>의 단어를 모두 한 번씩만 써서 영어 문장을 완성하시오. (대소문자와 문장 부호를 맞출 것)\n\nWhen I cleaned my room last weekend, I found an old box. In it, there was a toy robot which my dad had given me on my seventh birthday. It was broken, and it was not expensive at all. But when I held it, I remembered the happy day that I had spent with my dad. I realized that some things are special not because of their price but because of the memories in them.\n\n<보기> are / hold / memories / special / that / things\n<우리말> 추억을 담고 있는 물건들은 특별하다.",
+"selfGrade": true,
+"answer": "Things that hold memories are special.",
+"solution": "글쓴이는 비싸지 않은 낡은 로봇 장난감이 아빠와의 추억 때문에 특별하다는 것을 깨달았습니다. 따라서 요지는 '추억을 담고 있는 물건은 특별하다'입니다. 주격 관계대명사 that이 이끄는 절(that hold memories)이 선행사 Things를 뒤에서 꾸미고, 동사는 복수 주어에 맞춰 are를 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a6a378acb0",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 한 문장으로 나타낼 때, 빈칸 (A), (B)에 들어갈 알맞은 말을 본문에서 찾아 각각 한 단어로 쓰시오.\n\nMy grandfather had never used a computer before he turned seventy. He always said, 'I'm too old. It's too late for me to learn new things.' Last year, I offered to teach him. At first, he made a lot of mistakes, and he often wanted to give up. But he practiced every evening. Now he sends me emails and makes video calls to my family every weekend. He says that learning something new made him feel young again.\n\n→ It is never too (A)______ to (B)______ something new.",
+"selfGrade": true,
+"answer": "(A) late (B) learn",
+"solution": "할아버지는 일흔이 넘어서야 컴퓨터를 처음 배웠지만 꾸준히 연습해 이메일과 영상 통화를 할 수 있게 되었습니다. 그러므로 요지는 '새로운 것을 배우기에 너무 늦은 때는 없다'입니다. 할아버지가 처음에 한 말 'It's too late for me to learn new things.'에서 late와 learn을 찾아 쓰면 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a6d2a815e1",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 내용과 어법이 모두 알맞은 것은?\n\nBefore my family left for a week-long trip, my mom told me to ask someone to water my plant. I said, 'Okay,' but I forgot about it. When we came back home, the plant had already died. I felt terrible because it was a gift from my best friend. I learned that I should take care of the things that I am responsible for.",
+"choices": [
+"When the writer came back home, the plant had already died because the writer had forgotten to ask someone to water it.",
+"When the writer came back home, the plant had already died because the writer's mom had forgotten to water it.",
+"When the writer had come back home, the plant already died because the writer forgot to water it.",
+"When the writer came back home, the plant had already grew well because a friend had watered it.",
+"When the writer comes back home, the plant has already died because the writer has forgotten to water it."
+],
+"answer": "①",
+"solution": "식물이 죽은 일과 물 줄 사람을 부탁하는 것을 잊은 일은 집에 돌아온 시점보다 먼저 일어났으므로 과거완료(had died, had forgotten)를 써야 합니다. 따라서 내용과 어법이 모두 맞는 것은 ①입니다. ②는 잊은 사람이 엄마라고 해서 내용이 틀립니다. ③은 과거완료와 과거의 위치가 뒤바뀌었고, ④는 had grew라는 어법 오류와 내용 오류가 함께 있으며, ⑤는 지나간 일을 현재·현재완료 시제로 써서 틀렸습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
 }
 ]

@@ -2131,5 +2131,571 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b02-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-c1d98b9060",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "Ronald Mace에 관한 다음 글의 내용과 일치하는 것은?\n\nIs it impossible to build an environment where everyone can use products and facilities conveniently and without limitations? It was Ronald Mace who sought the answer to this question. He contracted polio at the age of nine and spent the rest of his life in a wheelchair. When studying architecture at university, he struggled to access some campus facilities due to inaccessible building designs. This experience later inspired him to invent the term universal design, which refers to design for all. As an architect and product designer, he pursued a world in which all products and environments were designed to be artistic and usable to the greatest extent possible by everyone, regardless of their age, size, disability, nationality, or language.",
+"choices": [
+"태어날 때부터 휠체어를 사용했다.",
+"대학에서 의학을 전공했다.",
+"대학 시절, 접근하기 어려운 건물 설계 때문에 일부 캠퍼스 시설을 이용하는 데 어려움을 겪었다.",
+"universal design이라는 용어를 다른 건축가에게서 빌려 와 사용했다.",
+"특정 연령과 국적의 사람들만을 위한 디자인을 추구했다."
+],
+"answer": "③",
+"solution": "글에 따르면 Mace는 대학에서 건축을 공부할 때 접근하기 어려운 건물 설계 때문에 일부 캠퍼스 시설을 이용하는 데 어려움을 겪었으므로 ③이 일치한다. 그는 아홉 살에 소아마비에 걸린 뒤 휠체어를 사용했고(①), 전공은 건축이었다(②). universal design이라는 용어는 그가 직접 만들었고(④), 나이·체격·장애·국적·언어와 관계없이 모든 사람을 위한 디자인을 추구했다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5c6464e845",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nB: Hi, Jina. Can you hold the door for me, please?\nG: Hey, Minsu! Sure. Here, come on in.\nB: Thank you. Getting into this building is really tough because of the stairs and the heavy doors.\nG: I know how you feel. The school should replace them with automatic doors.\nB: Right. When my hands are full, I always need help opening the door.\nG: They’d also be helpful for people who use wheelchairs or crutches.\nB: I’ll talk to the school administration office about this.\nG: Don’t forget to ask about the stairs in front of the building as well.\nB: That’s right. Ramps should be installed for people to reach the entrance easily.",
+"choices": [
+"What makes getting into the building tough for Minsu?",
+"What does Jina think the school should replace the doors with?",
+"Who else would find automatic doors helpful, according to Jina?",
+"When will the school install ramps at the entrance?",
+"Where will Minsu talk about the problem?"
+],
+"answer": "④",
+"solution": "대화에서는 경사로가 설치되어야 한다고만 말할 뿐, 학교가 언제 경사로를 설치할지는 나오지 않으므로 ④에는 답할 수 없다. ①은 계단과 무거운 문, ②는 자동문, ③은 휠체어나 목발을 사용하는 사람들, ⑤는 학교 행정실로 각각 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-64cc89da8f",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nUniversal design is not only applied in modern architecture but also extends to transportation systems. For instance, buses have been designed with a floor closer to ground level to ease access for all passengers. Handles of various lengths are provided, another method by which universal design is implemented to accommodate passengers’ different heights. Subway maps have also been designed for color-blind individuals to clearly distinguish between subway lines by adjusting the color and the brightness and by varying the thickness of lines that have similar colors. Additionally, the use of pictograms can be seen frequently. Signs indicating the locations of subway or train stations assist international travelers who may not be familiar with the local language.",
+"choices": [
+"버스는 모든 승객이 쉽게 탈 수 있도록 바닥이 지면에 더 가깝게 설계되었다.",
+"버스 손잡이는 모든 승객을 위해 같은 길이로 통일되었다.",
+"지하철 노선도는 색맹인 사람들을 위해 색과 밝기를 조정했다.",
+"비슷한 색의 지하철 노선은 선의 굵기를 달리해 구분한다.",
+"픽토그램 표지판은 현지 언어에 익숙하지 않은 해외 여행객을 돕는다."
+],
+"answer": "②",
+"solution": "글에서는 승객들의 서로 다른 키에 맞추기 위해 다양한 길이의 손잡이(Handles of various lengths)를 제공한다고 했다. 따라서 손잡이를 같은 길이로 통일했다는 ②는 글의 내용과 반대이다. 나머지 선지는 모두 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-185b960a78",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAccording to the principles of universal design, the design must be able to be used equitably, flexibly, simply, and intuitively by a wide variety of people. In addition, it should be cognitively accessible and minimize users’ physical efforts. Finally, it requires the providing of sufficient space for all users while reducing potential hazards and adverse consequences from accidental or unintended actions. A key feature of universal design is that this is not a special requirement only for the benefit of a minority of the population. If an environment is accessible, usable, convenient, and a pleasure to use, everyone in the community benefits.\nHow has universal design been incorporated into modern architecture? One of the most representative examples of universal design being used to improve accessibility is the ramps installed in front of buildings. Ramps, not stairs, are necessary for people with disabilities who use wheelchairs, and they are also beneficial for parents pushing strollers and the elderly.",
+"choices": [
+"Universal design should be usable by a wide variety of people in a simple and intuitive way.",
+"Universal design aims to reduce the physical effort that users need to make.",
+"Universal design is not a special requirement that benefits only a minority of people.",
+"Ramps in front of buildings are a representative example of universal design improving accessibility.",
+"Ramps are mainly helpful for wheelchair users and offer little benefit to parents with strollers."
+],
+"answer": "⑤",
+"solution": "글에서는 경사로가 휠체어 사용자에게 필요할 뿐 아니라 유모차를 미는 부모와 노인에게도 도움이 된다(also beneficial)고 했다. 따라서 유모차를 미는 부모에게는 별 도움이 되지 않는다는 ⑤는 일치하지 않는다. ①~④는 각각 유니버설 디자인의 원칙, 신체적 노력 최소화, 소수만을 위한 것이 아니라는 핵심 특징, 경사로가 대표 사례라는 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0436a5f880",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nHave you heard, “Hello, guys; let’s get started,” at the beginning of a meeting? Could that make some feel less included? Inclusive language is a respectful way of communication by selecting words that avoid bias, prejudice, and discrimination. Saying, “Hello, everyone,” instead of, “Hello, guys,” demonstrates inclusivity, reduces potential barriers, and enhances everyone’s sense of belonging. Inclusive language promotes equality, respect, and diversity, inviting all people to participate in society. For example, replacing conventional terms with racial implications like “blacklist” and “whitelist” with neutral alternatives such as “deny list” and “allow list” enhances inclusivity. Similarly, using gender-neutral terms like “parent” and “guardian” instead of “mom” and “dad” helps break down biases and acknowledges diverse family structures. Moreover, it is crucial to be aware of everyday phrases that could be considered insensitive toward individuals with medical conditions. For instance, using “missed opportunity” instead of “blind spot” or “ridiculous” rather than “crazy” demonstrates more thoughtful communication.",
+"choices": [
+"Who first created the term “inclusive language”?",
+"What can saying “Hello, everyone” do compared to saying “Hello, guys”?",
+"What neutral alternatives can replace “blacklist” and “whitelist”?",
+"What gender-neutral terms can be used instead of “mom” and “dad”?",
+"What expression can be used instead of “crazy”?"
+],
+"answer": "①",
+"solution": "글에는 ‘inclusive language’라는 용어를 누가 처음 만들었는지가 나오지 않으므로 ①에는 답할 수 없다. ②는 포용성을 보여 주고 장벽을 줄이며 소속감을 높인다는 내용, ③은 “deny list”와 “allow list”, ④는 “parent”와 “guardian”, ⑤는 “ridiculous”로 각각 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6b30367ff7",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하는 것은?\n\nWhile universal design has been utilized in architecture and transportation systems for some time, a newer application is in the fashion industry. Clothing designed with universal design integrates stretchable and breathable materials, enhancing comfort and mobility. Other features include the use of magnets and Velcro in place of buttons, making it easier to put on and take off clothing. It also incorporates traits like stretchy waistbands and adjustable sleeves to allow individuals with disabilities to dress independently. This type of clothing is also beneficial for pregnant women, older adults who may experience mobility issues, and individuals with temporary injuries or medical conditions.\nYou may find it surprising that universal design can be found in more parts of society than you thought. However, enough has not been done to accommodate everyone yet.",
+"choices": [
+"Universal design was used in the fashion industry before it was applied to architecture.",
+"Universal design clothing uses buttons instead of magnets and Velcro.",
+"Stretchy waistbands and adjustable sleeves help people with disabilities dress on their own.",
+"Universal design clothing is designed only for people with permanent disabilities.",
+"The writer believes enough has already been done to accommodate everyone."
+],
+"answer": "③",
+"solution": "늘어나는 허리 밴드와 조절 가능한 소매가 장애가 있는 사람들이 혼자 옷을 입을 수 있게 해 준다고 했으므로 ③이 일치한다. 패션은 건축·교통보다 나중에 적용된 분야이고(①), 단추 대신 자석과 벨크로를 사용한다(②). 임산부, 노인, 일시적 부상자에게도 도움이 되며(④), 필자는 아직 충분한 노력이 이루어지지 않았다고 말한다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2552a97a66",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nDid you know that one out of every ten people in the world is left-handed? They face challenges in a society designed for right-handed individuals. It is inconvenient for them to use some right-handed products such as scissors, cameras, and computer mice. The world we live in is designed to be an environment suitable for what is considered “normal” for the majority of people, and it is filled with objects that are easy for them to use. Thus, those who do not belong to that category have no choice but to live with discomfort. In other words, a minority of people with physical differences, such as the left-handed, the disabled, and the elderly, either endure inconvenience or deliberately seek objects designed especially for them, which are often difficult to find.\nIs it impossible to build an environment where everyone can use products and facilities conveniently and without limitations? It was Ronald Mace who sought the answer to this question. He contracted polio at the age of nine and spent the rest of his life in a wheelchair. When studying architecture at university, he struggled to access some campus facilities due to inaccessible building designs. This experience later inspired him to invent the term universal design, which refers to design for all. As an architect and product designer, he pursued a world in which all products and environments were designed to be artistic and usable to the greatest extent possible by everyone, regardless of their age, size, disability, nationality, or language.",
+"choices": [
+"About ten percent of the world’s population is left-handed.",
+"Most objects in our world are made to suit what the majority regards as “normal.”",
+"Products designed especially for people with physical differences are often hard to find.",
+"Ronald Mace came up with the term universal design while he was being treated for polio as a child.",
+"Mace hoped that products and environments would be not only usable but also artistic for everyone."
+],
+"answer": "④",
+"solution": "Mace가 universal design이라는 용어를 만든 계기는 대학에서 건축을 공부하며 캠퍼스 시설 이용에 어려움을 겪은 경험이었고, 그 일은 ‘나중에(later)’ 이루어졌다. 따라서 어린 시절 소아마비 치료를 받던 중에 용어를 만들었다는 ④는 일치하지 않는다. ①은 ‘one out of every ten’을 ‘10퍼센트’로 바꿔 말한 것이고, ②·③·⑤도 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0e6d7e83e3",
+"typeId": "eng-h2-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 있는 질문만을 <보기>에서 있는 대로 고른 것은?\n\nAnother example is automatic doors. They are invaluable for those who rely on assistive devices such as wheelchairs and crutches. They also provide convenience for adults who have their hands full and children who are not tall enough to open the doors themselves. A further example is tactile paving. These textured surfaces, often found on sidewalks, steps, and crosswalks, assist visually impaired individuals by guiding them through urban spaces.\n\n<보기>\n(a) Who benefits from automatic doors besides people who rely on assistive devices?\n(b) Where can tactile paving often be found?\n(c) When were automatic doors first installed in buildings?\n(d) How does tactile paving help visually impaired people?\n(e) What materials are used to make tactile paving?",
+"choices": [
+"(a), (b)",
+"(a), (b), (d)",
+"(a), (c), (e)",
+"(b), (d), (e)",
+"(b), (c), (d), (e)"
+],
+"answer": "②",
+"solution": "(a)는 손이 가득 찬 어른과 문을 열기에 키가 작은 아이들, (b)는 보도·계단·횡단보도, (d)는 도시 공간에서 길을 안내해 준다는 내용으로 답할 수 있다. (c) 자동문이 처음 설치된 시기는 글에 나오지 않는다. (e) 글에서는 점자 블록을 ‘textured surfaces(표면이 울퉁불퉁한 바닥)’라고만 했을 뿐 재료는 밝히지 않았으므로 답할 수 없다. 따라서 정답은 (a), (b), (d)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-330092d01f",
+"typeId": "eng-h2-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBeth: The stock market is an official place (A)[which / where] you can buy and sell shares in a company. Many people believe (B)[that / what] investing is a good way to build wealth. However, it is important (C)[remembering / to remember] that there is always a risk of loss and debt.",
+"choices": [
+"where – that – to remember",
+"which – that – remembering",
+"where – what – to remember",
+"which – what – remembering",
+"where – that – remembering"
+],
+"answer": "①",
+"solution": "선행사 place가 장소이고 뒤에 완전한 절이 오므로 관계부사 where가 알맞다. believe 뒤에 완전한 절을 이끄는 접속사는 that이다. 'it is important' 뒤의 진주어 자리에는 to부정사 to remember가 와야 한다. 따라서 정답은 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-56d1e66ac4",
+"typeId": "eng-h2-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것은?\n\nNeil: Thank you for ⓐtuning in. We ⓑhave been talking about the world of stocks. Investing ⓒis challenging, but it can also be rewarding. I think many people ⓓfind the stock market confusing. I bet all our listeners ⓔhas asked themselves the same question.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ의 주어 all our listeners는 복수이므로 동사는 has가 아니라 have가 되어야 한다. ⓐ는 전치사 for의 목적어인 동명사, ⓑ는 현재완료진행형, ⓒ는 동명사 주어에 대한 단수 동사 is, ⓓ는 복수 주어 people에 맞는 동사로 모두 올바르다. 따라서 어색한 것은 ⑤.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aa2358e1cb",
+"typeId": "eng-h2-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBeth: Let's imagine a small company (A)[produces / producing] innovative sneakers. There are (B)[so / such] many investors interested in it. When the company (C)[lists / is listed] on the stock market, individuals can buy shares and become partial owners.",
+"choices": [
+"producing – so – is listed",
+"produces – so – lists",
+"producing – such – is listed",
+"produces – such – lists",
+"producing – so – lists"
+],
+"answer": "①",
+"solution": "(A)는 a company를 뒤에서 수식하는 분사구로, 회사가 '생산하는' 능동 관계이므로 현재분사 producing이 알맞다. (B)는 복수명사 investors를 수식하므로 'so many'가 맞고 'such many'는 쓸 수 없다. (C)는 회사가 '상장되는' 수동 관계이므로 is listed가 되어야 한다. 따라서 정답은 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ccb5aebb39",
+"typeId": "eng-h2-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBeth: A bear market is a stock market situation (A)[which / in which] stock values decline. Factors like low GDP growth and rising unemployment are (B)[possible / possibly] conditions for a bear market. In difficult economic situations, investors have negative views, which may lead them (C)[to sell / selling] their stocks.",
+"choices": [
+"which – possible – to sell",
+"in which – possibly – selling",
+"in which – possible – to sell",
+"which – possibly – selling",
+"in which – possible – selling"
+],
+"answer": "③",
+"solution": "(A)는 뒤에 완전한 절(stock values decline)이 오므로 '전치사+관계대명사'인 in which가 알맞다. (B)는 명사 conditions를 수식하는 자리이므로 형용사 possible이 와야 한다. (C)는 'lead+목적어+to부정사' 구문이므로 to sell이 맞다. 따라서 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3d536c529c",
+"typeId": "eng-h2-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nBeth: The more successful a business ⓐis, the more people ⓑwill buy its stocks. As demand for the stocks increases, ⓒso the stock price does. Companies are also under the influence of various market factors ⓓaffecting the price. For example, if the price of rubber ⓔwill rise, a shoe company may have to pay more to import it.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓐ, ⓔ",
+"ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ는 '~도 또한 그렇다'의 뜻으로 'so+동사+주어'의 도치 어순이어야 하므로 so does the stock price가 되어야 한다. ⓔ는 조건을 나타내는 if절이므로 미래 대신 현재시제 rises를 써야 한다. ⓐ(the 비교급 구문의 동사), ⓑ(주절의 미래), ⓓ(factors를 수식하는 현재분사)는 모두 올바르다. 따라서 어색한 것은 ⓒ, ⓔ로 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-454b32b432",
+"typeId": "eng-h2-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ를 아래와 같이 전환할 때, 어법상 알맞지 않은 것은?\n\nBeth: In purchasing such stocks, investors ⓐnot only pursue their financial goals but also contribute to building a more sustainable system. As demand for the stocks increases, ⓑso does the stock price. Companies are under the influence of market factors ⓒaffecting the price. If a company performs disappointingly, its stock price falls, ⓓleading to a decline in value. The stock market is important because it provides companies with the money ⓔthey need to grow.",
+"choices": [
+"ⓐ: contribute to building a more sustainable system as well as pursue their financial goals",
+"ⓑ: the stock price increases, too",
+"ⓒ: which affect the price",
+"ⓓ: which leads to a decline in value",
+"ⓔ: what they need to grow"
+],
+"answer": "⑤",
+"solution": "ⓔ는 선행사 the money가 있으므로 관계대명사 what은 쓸 수 없고 that(또는 which)만 가능하므로 'what they need to grow'로의 전환은 틀렸다. ⓐ는 'not only A but also B'를 'B as well as A'로 바르게 전환했고, ⓑ는 도치문의 의미를 그대로 풀어 썼으며, ⓒ는 복수 선행사 factors에 맞는 복수 동사 affect를 썼고, ⓓ는 앞 절 전체를 받는 계속적 용법 which leads로 바르게 전환했다. 따라서 알맞지 않은 것은 ⑤.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e95d798394",
+"typeId": "eng-h2-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nBeth: Let's start with the concept of a stock. A stock is a partial share of ownership in a company. When you buy a stock, you get a portion of the company's ownership. To put it simply, owning one stock is like having a slice of the company's pie.\nNeil: Does that mean stockholders themselves can actively participate in the management of the company?\nBeth: Not exactly, Neil. Management is generally carried out by professional managers. However, companies hold stockholder meetings to seek the opinions of major stockholders when they make important decisions.",
+"choices": [
+"A stock is a partial share of ownership in a company.",
+"Buying a stock gives you a portion of the company's ownership.",
+"Owning one stock is compared to having a slice of the company's pie.",
+"A company's management is usually handled by professional managers.",
+"Stockholders personally take charge of running the company every day."
+],
+"answer": "⑤",
+"solution": "지문에서 경영은 일반적으로 전문 경영인이 맡는다고 했으므로 주주가 직접 매일 회사를 운영한다는 ⑤는 일치하지 않는다. ①②③은 주식의 개념 설명과, ④는 경영 주체 설명과 일치한다. 회사는 중요한 결정 시 주요 주주의 의견을 듣기 위해 주주 총회를 열 뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dc43ac81db",
+"typeId": "eng-h2-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nA bull market is a rising stock market situation in which economic conditions are favorable to investors. These include high employment rates, GDP increases, and other positive economic indicators. In a bull market, investors increase their stock purchases and maintain their investments. In contrast, a bear market implies a decline in stock values. It occurs when economic conditions are not favorable, and most stocks experience decreases in value. Factors like low GDP growth, rising unemployment, and low wages are possible conditions for a bear market. In difficult economic situations, investors frequently have negative views of the stock market, which may lead them to sell their stocks.",
+"choices": [
+"In a bull market, economic conditions are favorable to investors.",
+"High employment rates and GDP increases are signs of a bull market.",
+"In a bear market, most stocks experience decreases in value.",
+"Low GDP growth and rising unemployment can bring about a bear market.",
+"During a bear market, investors increase their stock purchases and hold on to their investments."
+],
+"answer": "⑤",
+"solution": "약세장(bear market)에서는 투자자들이 주식 시장을 부정적으로 보고 주식을 '파는' 경향이 있다. 주식 구매를 늘리고 투자를 유지하는 것은 강세장(bull market)의 특징이므로 ⑤가 일치하지 않는다. ①②는 강세장, ③④는 약세장 설명과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c59a6d8a34",
+"typeId": "eng-h2-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nG: Hey, have you ever bought anything from a resale market?\nB: Yeah. I got a great deal on some limited-release sneakers through an online resale market. I'm happy with buying from resale platforms because I was able to get such unique sneakers at a reasonable price.\nG: I've tried shopping on those sites, but I'm worried about the condition and the quality of the used products.\nB: I understand. But the sneakers I got were in excellent condition. Just make sure to choose a resale platform with high ratings and check the seller's reputation and product pictures before purchasing anything.\nG: Right. Thank you for your advice.",
+"choices": [
+"The boy bought limited-release sneakers through an online resale market.",
+"The boy got the sneakers at a reasonable price.",
+"The girl has never shopped on resale sites before.",
+"The sneakers the boy bought were in excellent condition.",
+"The boy advises checking the seller's reputation and product pictures before buying."
+],
+"answer": "③",
+"solution": "소녀는 \"I've tried shopping on those sites\"라고 말해 재판매 사이트에서 쇼핑해 본 적이 있다고 했으므로, 한 번도 이용한 적이 없다는 ③은 일치하지 않는다. ①②④⑤는 소년의 구매 경험과 조언 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-bc291cafe1",
+"typeId": "eng-h2-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nBeth: The stock market is very important for companies because it can provide them with the money they need to grow and expand. Let's imagine that a small group of people start a footwear company that produces innovative sneakers. The founders are confident that their products will be popular with consumers, but they do not have enough funds to grow the business. So they decide to put the newly formed company on the stock market. When a company is listed on the stock market, individuals or organizations that believe in the company's bright future can buy shares and become partial owners of the company. This process makes it easy for the footwear company to raise the funds it needs to grow its business. As the business grows, the stock value rises, and the stockholders' profits increase.",
+"choices": [
+"Why is the stock market important for companies?",
+"What does the footwear company produce?",
+"What were the founders lacking despite their confidence in the products?",
+"How much money did the footwear company raise after being listed?",
+"Who becomes a partial owner when a company is listed on the stock market?"
+],
+"answer": "④",
+"solution": "지문은 회사가 상장되면 자금을 쉽게 조달할 수 있다고만 말할 뿐, 신발 회사가 실제로 얼마의 자금을 모았는지는 언급하지 않으므로 ④는 답할 수 없다. ①은 성장·확장 자금 제공, ②는 혁신적 운동화, ③은 사업 성장 자금 부족, ⑤는 주식을 산 개인·기관이 부분 소유자가 된다는 내용으로 모두 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a65eb88e0f",
+"typeId": "eng-h2-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nBeth: Investors may be concerned about a company's leadership or reputation. Nowadays, more and more people are starting to support companies that prioritize public values such as business transparency, environmental friendliness, and social justice. In purchasing such stocks, they not only pursue their financial goals but also contribute to building a more sustainable economic system that benefits the entire society. All these variables can cause daily changes in stock prices in the stock market.",
+"choices": [
+"Investors may take a company's leadership or reputation into account.",
+"An increasing number of people support companies that value public values like social justice.",
+"Buying stocks of companies with public values can help build a more sustainable economic system.",
+"People who buy such stocks give up their own financial goals for the sake of society.",
+"Various factors can lead to daily changes in stock prices."
+],
+"answer": "④",
+"solution": "지문에서 공적 가치를 중시하는 기업의 주식을 사는 사람들은 재정적 목표를 '추구하면서 동시에(not only ~ but also)' 지속 가능한 경제에 기여한다고 했다. 따라서 재정적 목표를 포기한다는 ④는 일치하지 않는다. ①②③⑤는 각각 리더십·평판 고려, 공적 가치 기업 지지 증가, 지속 가능한 경제 기여, 주가의 일일 변동 요인과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-abf6fff59f",
+"typeId": "eng-h2-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nWhen a company wants to grow but does not have enough money, it can sell small parts of itself to the public. By listing itself on the stock market, the company allows people who believe in its future to buy shares and become partial owners. In return, the company receives the funds it needs to expand its business. As the company grows and earns more, the value of its shares rises, and the people who bought them share in the profit.",
+"choices": [
+"how a company raises funds by listing on the stock market",
+"reasons why new companies fail to attract any investors",
+"the process of choosing a good professional manager",
+"risks of borrowing money from a bank to grow a business",
+"how stockholders take part in daily company management"
+],
+"answer": "①",
+"solution": "글은 회사가 자금이 부족할 때 주식 시장에 상장하여 사람들에게 주식을 팔아 성장 자금을 마련하는 과정을 설명한다. 투자자는 부분 소유자가 되고 회사가 성장하면 함께 이익을 얻는다. 따라서 주제는 '회사가 주식 시장 상장을 통해 자금을 마련하는 방법'인 ①이다. ③·⑤는 글의 핵심이 아닌 지엽적 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0420e922a2",
+"typeId": "eng-h2-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nThe mood of the stock market can change greatly over time. When the economy is strong and people feel hopeful, they buy more shares and prices keep climbing. On the other hand, when the economy weakens and people lose confidence, they sell their shares and prices fall. Knowing which mood the market is in helps investors decide when to buy or sell.",
+"choices": [
+"The History of the World's Largest Stock Exchanges",
+"Rising and Falling Moods That Move the Stock Market",
+"Simple Tricks to Always Make a Profit on Stocks",
+"Why Teenagers Should Avoid Buying Any Shares",
+"The Daily Life of a Professional Fund Manager"
+],
+"answer": "②",
+"solution": "글은 경제 상황과 사람들의 심리에 따라 주식 시장 분위기가 오르기도 내리기도 한다는 내용을 다룬다. 상승·하락이라는 두 흐름이 핵심이므로 제목은 ②가 가장 알맞다. ③·④는 글에 근거가 없고 ①·⑤는 지문과 무관하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ae0347880c",
+"typeId": "eng-h2-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 알맞은 것은?\n\nMany people think that putting money into stocks is a quick and easy way to get rich. In reality, the market goes up and down all the time, so there is always a chance of losing money. Before you invest, you should study the companies carefully, keep up with news about them, and only risk what you can afford to lose. Being careful and well informed matters far more than being lucky.",
+"choices": [
+"투자할 때는 신중함과 정보 습득이 무엇보다 중요하다.",
+"주식은 누구나 쉽게 부자가 될 수 있는 방법이다.",
+"은행 예금이 주식보다 항상 더 많은 이익을 준다.",
+"운이 좋으면 손해 없이 큰돈을 벌 수 있다.",
+"뉴스를 보지 않아도 좋은 회사를 고를 수 있다."
+],
+"answer": "①",
+"solution": "글은 주식 투자가 쉬운 돈벌이라는 생각과 달리 늘 손실 위험이 있으므로, 회사를 공부하고 정보를 챙기며 감당할 수 있는 돈만 투자하라고 조언한다. 마지막 문장에서 '운보다 신중함과 정보가 더 중요하다'고 못 박으므로 요지는 ①이다. ②·④는 글이 반박하는 통념이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2d511af1f1",
+"typeId": "eng-h2-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nThe price of a stock moves according to supply and demand. When a company does well, more people want to own a piece of it, so they rush to buy its shares. As this demand grows, the price goes up. But if a company performs poorly, people lose interest, the demand falls, and the price drops.\n\n[요약문]\nA stock's price depends on supply and demand. When a company succeeds, demand (A)________ and the price goes up; when it performs poorly, demand falls and the price (B)________.",
+"choices": [
+"rises – declines",
+"rises – climbs",
+"falls – declines",
+"falls – climbs",
+"stays – declines"
+],
+"answer": "①",
+"solution": "회사가 잘되면 수요가 '증가(rises)'하여 가격이 오르고, 실적이 나쁘면 수요가 줄어 가격이 '하락(declines)'한다. 따라서 (A)는 rises, (B)는 declines인 ①이 정답이다. ②·④의 climbs는 가격 상승을 뜻해 문맥과 반대다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-230ec09dcc",
+"typeId": "eng-h2-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 알맞은 것은?\n\nA stock is a small share of ownership in a company. When you buy one, you own a tiny part of that business, much like owning a single slice of a large pie. However, owning a share does not mean you run the company. Daily decisions are made by professional managers. Still, companies hold meetings to hear the opinions of their major shareholders when important decisions must be made.",
+"choices": [
+"what a stock is and the limited role of shareholders",
+"the daily duties of a company's professional managers",
+"the best strategies for buying many different stocks",
+"the reasons companies hold shareholder meetings every day",
+"how to calculate the total value of a company's pie"
+],
+"answer": "①",
+"solution": "글은 주식이 회사 소유권의 일부라는 정의와 함께, 주주가 경영을 직접 하지는 않지만 중요한 결정 때 의견을 묻는다는 제한된 역할을 설명한다. 따라서 주제는 '주식의 정의와 주주의 제한된 역할'인 ①이다. ④는 매일 회의를 연다고 과장해 글과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ed4ba2c80e",
+"typeId": "eng-h2-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nA stock's price is shaped by far more than how well a company sells its products. Market factors such as the cost of raw materials, new production technology, and workers' wages all play a part. For example, if the price of rubber rises, a shoe maker must pay more to produce sneakers, which pushes up prices and may hurt sales. These days, investors also care about a company's values, choosing to support businesses that are honest, protect the environment, and treat society fairly.",
+"choices": [
+"Why Rubber Prices Decide the Future of Shoe Makers",
+"The Many Forces That Shape a Company's Stock Price",
+"A Simple Guide to Building an Eco-friendly Company",
+"Step-by-step Methods for Selling Sneakers Abroad",
+"The One Golden Rule Every Investor Must Always Follow"
+],
+"answer": "②",
+"solution": "글은 원자재 값·생산 기술·임금 같은 시장 요인에 더해 기업의 가치관까지 주가에 영향을 준다는 여러 요인을 폭넓게 다룬다. 따라서 제목은 '주가를 움직이는 다양한 요인'인 ②가 알맞다. ①은 고무·신발이라는 예시 하나에 치우친 함정 선지이고, ③은 본문의 한 부분(가치관)만 확대한 오답이며 ④·⑤는 글에 근거가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fdfddba714",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 뜻이 같도록 < > 안의 단어를 바르게 배열하시오.\n\nNow I’m getting better at remembering where I am when I first wake up, but I’m still often confused about how my body is positioned. In the dark and without gravity, my inner ear just takes a random guess as to my position, and sometimes I wake up convinced that I’m upside down. Of course, it’s actually my brain readjusting to an environment where height and weight lose their meaning. (A)나는 어떤 벽이든 마치 각각이 바닥인 것처럼 똑같이 사용할 수 있다. Everything has zero weight.\n\n< each / any wall / I / a floor / use / were / can / as if / equally >\n\n______________________________________________.",
+"selfGrade": true,
+"answer": "I can use any wall equally as if each were a floor.",
+"solution": "‘마치 ~인 것처럼’은 현재 사실과 반대되는 일을 가정하는 ‘as if + 주어 + 동사의 과거형’으로 나타냅니다. 가정법 과거이므로 be동사는 주어와 상관없이 were를 씁니다. 부사 equally는 목적어 any wall 뒤에 둡니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5a34f5dcdf",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 뜻이 같도록 < > 안의 단어 및 어구를 바르게 배열하시오.\n\nDay 100 The Descent to Earth\nMother Earth didn’t exactly welcome us back with open arms. (A)지구의 대기는 우주로부터 들어오는 물체들에 저항력이 있다. Any object will create enough friction simply to burn up from the heat.\n\n< entering / is / objects / Earth’s atmosphere / to / resistant / from space >\n\n______________________________________________.",
+"selfGrade": true,
+"answer": "Earth’s atmosphere is resistant to objects entering from space.",
+"solution": "‘~에 저항력이 있다’는 be resistant to로 나타냅니다. ‘우주로부터 들어오는 물체들’은 현재분사구 entering from space가 objects를 뒤에서 꾸미는 형태입니다. 물체가 스스로 들어오는 능동의 관계이므로 현재분사 entering을 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3a68130388",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 뜻이 같도록 <조건>에 맞게 < > 안의 단어 및 어구를 바르게 배열하시오.\n\nIt’s hard to describe how heavy everything felt in those first few minutes after landing. (A)내 팔은 끔찍하게 무겁게 느껴졌고, 내 다리도 그랬다. Getting used to gravity, which I missed in space, will take quite a long time. The important thing is I’m home.\n\n<조건> • ‘so + 동사 + 주어’ 구문을 사용할 것 • 단어를 추가하거나 빼지 말 것\n\n< so / my arms / heavy / did / felt / my legs / terribly / and >\n\n______________________________________________.",
+"selfGrade": true,
+"answer": "My arms felt terribly heavy, and so did my legs.",
+"solution": "‘감각동사 felt + 형용사 보어 heavy’ 앞에 부사 terribly를 넣어 앞 절을 만듭니다. ‘~도 그렇다’는 ‘so + 동사 + 주어’ 도치로 나타냅니다. 앞 절의 동사가 일반동사의 과거형 felt이므로 대동사 did를 써서 so did my legs가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fa096c5880",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 <조건>에 맞게 영작하여 문장을 완성하시오.\n\nThe large blue dome of Earth hovered overhead, looking like it was ready to come crashing down upon us. (A)나 자신이 그 작업에 집중하도록 억지로 만들면서, 나는 내 안전줄의 고리를 에어록 바로 바깥의 고리에 고정했다. We moved along the handrail to the edge of the station.\n\n<조건> • 분사구문을 사용할 것 • ‘force + 목적어 + to부정사’ 구문을 사용할 것 • <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것) • 각 빈칸에 한 단어씩 쓸 것\n<보기> force, myself, focus on, the task, secure, the hook, safety cable, a ring\n\n_____ _____ _____ _____ _____ _____ _____, _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ just outside the airlock.",
+"selfGrade": true,
+"answer": "Forcing myself to focus on the task, I secured the hook of my safety cable to a ring",
+"solution": "주절의 주어 I와 같은 주어를 생략하고, 동시동작을 나타내는 분사구문 Forcing ~으로 시작합니다. 주어와 목적어가 같으므로 재귀대명사 myself를 쓰고, ‘force + 목적어 + to부정사’에 따라 to focus on the task를 이어 씁니다. 주절은 ‘secure A to B(A를 B에 고정하다)’ 구조로 동사를 과거형 secured로 바꿉니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c924ef4e8b",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 <조건>에 맞게 영작하여 문장을 완성하시오.\n\nGetting used to gravity, which I missed in space, will take quite a long time. The important thing is I’m home. I can smell the grass and feel the wind and the rain! (A)나는 이것들이 얼마나 마법 같은지를 내 남은 평생 동안 기억할 것이다.\n\n<조건> • 간접의문문을 사용할 것 • <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것) • 앞에 주어진 어구를 제외하고 12단어로 쓸 것\n<보기> remember, how, magical, these things, be, for, the rest, life\n\nI’ll ______________________________________________.",
+"selfGrade": true,
+"answer": "remember how magical these things are for the rest of my life",
+"solution": "remember의 목적어로 쓰인 간접의문문은 ‘의문사 + 주어 + 동사’ 순서이고, how가 형용사를 수식하므로 how magical 뒤에 these things are를 씁니다. 주어가 복수이므로 be는 are로 바꿉니다. ‘남은 평생 동안’은 for the rest of my life이며, 이렇게 쓰면 정확히 12단어입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a05dfcbca4",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 <조건>에 맞게 영작하여 문장을 완성하시오.\n\nIt’s hard to describe how heavy everything felt in those first few minutes after landing. My arms felt terribly heavy, and so did my legs. (A)우주에서 내가 그리워했던 중력에 익숙해지는 것은 꽤 오랜 시간이 걸릴 것이다. The important thing is I’m home.\n\n<조건> • 동명사구 주어를 사용할 것 • 계속적 용법의 관계대명사를 사용할 것 • <보기>의 단어 및 표현을 모두 사용할 것 (필요시 변형할 것) • 각 빈칸에 한 단어씩 쓸 것\n<보기> get, use, to, gravity, which, miss, in space, take, quite, long, time\n\n_____ _____ _____ _____, _____ _____ _____ _____ _____, _____ _____ _____ _____ _____ _____.",
+"selfGrade": true,
+"answer": "Getting used to gravity, which I missed in space, will take quite a long time",
+"solution": "‘~에 익숙해지다’는 ‘get used to + (동)명사’이고, 문장의 주어가 되도록 동명사 Getting used to gravity로 바꿉니다. 이때 ‘used to + 동사원형(~하곤 했다)’과 헷갈리지 않도록 주의합니다. 콤마 사이에는 계속적 용법의 관계대명사절 which I missed in space를 넣습니다. 동명사 주어는 단수 취급하며, 어순은 ‘quite + a + 형용사 + 명사’이므로 will take quite a long time이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4e470c6fa9",
+"typeId": "eng-h2-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 <조건>에 맞게 영작하여 문장을 완성하시오.\n\nMother Earth didn’t exactly welcome us back with open arms. Earth’s atmosphere is resistant to objects entering from space. Any object will create enough friction simply to burn up from the heat. (A)이것은, 그렇지 않으면 지구 위로 비처럼 쏟아져 내릴 궤도 잔해로부터 지구를 보호한다. But it also meant we had to survive a fall through the atmosphere that created temperatures up to 1650 degrees Celsius.\n\n<조건> • ‘protect A from B’ 구문을 사용할 것 • 주격 관계대명사 that을 사용할 것 • 가정의 의미를 나타내는 조동사와 otherwise를 사용할 것 • <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것) • 각 빈칸에 한 단어씩 쓸 것\n<보기> protect, the planet, from, the orbital debris, that, would, otherwise, rain down, on it\n\nThis _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ _____.",
+"selfGrade": true,
+"answer": "protects the planet from the orbital debris that would otherwise rain down on it",
+"solution": "주어 This가 3인칭 단수이고 일반적인 사실을 말하므로 protect는 protects로 씁니다. ‘protect A from B’ 구문에 따라 the planet from the orbital debris로 이어 쓰고, 선행사 the orbital debris를 주격 관계대명사 that절이 꾸밉니다. ‘그렇지 않으면 ~할 것이다’는 대기가 없다고 가정한 내용이므로 ‘would + otherwise + 동사원형’ 순서로 써서 would otherwise rain down on it이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m6s0t0",
+"custom": true
 }
 ]

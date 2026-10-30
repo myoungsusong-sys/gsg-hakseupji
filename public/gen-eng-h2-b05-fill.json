@@ -2134,5 +2134,195 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-4407a1d4bf",
+"typeId": "eng-h2-b05-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nSamoa is an island country in the South Pacific. It is made up of two main islands, Upolu and Savai'i. The country enjoys warm tropical weather all year round and is famous for its beautiful beaches and waterfalls. In fact, it helped inspire the directors of the 2016 movie Moana. The traditional Samoan house, the fale, has a round thatched roof held up by wooden columns, and it has no walls. Because it is open on all sides, air moves freely and keeps the inside cool, and strong winds can pass right through it.",
+"choices": [
+"사모아는 세 개의 주요 섬으로 이루어져 있다.",
+"사모아는 계절에 따라 기온 차이가 크다.",
+"팔레는 돌기둥이 둥근 지붕을 받치고 있다.",
+"팔레는 강한 바람을 막기 위해 두꺼운 벽을 갖추고 있다.",
+"영화 Moana의 감독들은 사모아에서 영감을 얻었다."
+],
+"answer": "⑤",
+"solution": "글에서 사모아가 2016년 영화 Moana의 감독들에게 영감을 주었다(helped inspire the directors)고 했으므로 ⑤가 일치한다. 사모아의 주요 섬은 Upolu와 Savai'i 두 개이고, 일 년 내내 따뜻한 열대 기후이다. 팔레는 나무 기둥(wooden columns)이 지붕을 받치고 벽이 없어서 강풍이 그대로 통과한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c0579537bc",
+"typeId": "eng-h2-b05-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nM: Excuse me, what is this vase with two spouts?\nW: It's a wedding vase from New Mexico.\nM: Why does it have two spouts?\nW: Each spout stands for one of two separate lives, and the bridge on top shows that they are joined together.\nM: So the couple uses it at their wedding?\nW: Yes. The bride and groom take turns drinking from it, each from a different spout. They usually drink tea.\nM: Is there anything they should be careful about?\nW: People say they shouldn't spill any tea if they want a happy life together.",
+"choices": [
+"Where is the wedding vase from?",
+"What do the two spouts represent?",
+"What do the bride and groom usually drink from the vase?",
+"Who made the wedding vase?",
+"What should the couple avoid doing to have a happy life?"
+],
+"answer": "④",
+"solution": "대화에는 웨딩 화병의 출처(뉴멕시코), 두 주둥이의 의미(두 개의 분리된 삶), 마시는 음료(주로 차), 피해야 할 행동(차를 흘리지 않기)이 모두 나온다. 하지만 화병을 누가 만들었는지는 언급되지 않으므로 ④에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6c92ca12ec",
+"typeId": "eng-h2-b05-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nW: Is that a gat in this picture?\nM: Yes. It's a traditional Korean hat made of horsehair.\nW: What about the hat next to it? It looks almost the same.\nM: That's a paeraengi. It looks like a gat, but it's made of bamboo strips.\nW: Did women wear them, too?\nM: Not usually. Back then, it was mostly men who wore hats like these.",
+"choices": [
+"갓은 말총으로 만들어졌다.",
+"갓과 패랭이는 같은 재료로 만들어졌다.",
+"패랭이는 대나무 조각으로 만들어졌다.",
+"갓과 패랭이는 생김새가 비슷하다.",
+"옛날에 여성들은 대개 이런 모자를 쓰지 않았다."
+],
+"answer": "②",
+"solution": "갓은 말총(horsehair)으로, 패랭이는 대나무 조각(bamboo strips)으로 만들었으므로 둘의 재료가 같다는 ②는 대화와 일치하지 않는다. 남자가 두 모자는 생김새가 비슷하지만 재료가 다르다고 설명한다. 또한 당시에는 주로 남성이 이런 모자를 썼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-78217442ab",
+"typeId": "eng-h2-b05-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nStained-glass windows are large windows made by putting together pieces of colored glass. Visitors to the Sainte-Chapelle in Paris and the Nasir al-Mulk mosque in Shiraz, Iran, are amazed by the brightly colored light that shines through these windows. In Europe and the Middle East, stained-glass techniques developed rapidly during the Medieval period because religious buildings grew larger to hold more worshipers. Using small pieces of glass was practical for building, and it also made it possible to tell stories. At that time, most people could not read, so the pictures on the windows helped them understand religious messages.",
+"choices": [
+"Who designed the stained-glass windows of the Sainte-Chapelle?",
+"Why did stained-glass techniques develop rapidly in the Medieval period?",
+"How many pieces of glass are needed to make one stained-glass window?",
+"When was the Nasir al-Mulk mosque built?",
+"How much did it cost to make stained-glass windows in the Medieval period?"
+],
+"answer": "②",
+"solution": "글에서 중세에 종교 건물이 더 많은 신자를 수용하기 위해 커졌기 때문에 스테인드글라스 기술이 빠르게 발전했다고 했으므로 ②에는 답할 수 있다. 설계자, 유리 조각의 개수, 모스크의 건립 시기, 제작 비용은 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1cdd717fc3",
+"typeId": "eng-h2-b05-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nBeads are small decorative objects with a hole so that they can be threaded, and they have been found in all cultures throughout history. Beadwork can be as simple as a bracelet made of a few beads on one string, or as large as beaded bags, clothing, or wall-hangings. Beads from the Stone Age show that beadwork has a long history; people back then strung bones, shells, or rocks to wear around their necks. Over time, beadwork came to be used as a form of personal expression, a sign of social class, or a charm against bad luck. The Ndebele tribe of South Africa is famous for detailed dresses made of glass beads, and the designs show the different stages of a woman's life. For example, an unmarried girl may wear a square apron, while a married woman may wear a five-paneled apron with beaded necklaces and a beaded cape.",
+"choices": [
+"구슬 공예는 불운을 막는 부적으로 쓰이기도 했다.",
+"구슬 공예는 일부 문화권에서만 발달해 왔다.",
+"석기 시대 사람들은 유리구슬을 꿰어 목걸이를 만들었다.",
+"은데벨레족의 구슬 장식 디자인은 사회 계층에 따라 달라진다.",
+"결혼한 은데벨레족 여성은 정사각형 앞치마를 입는다."
+],
+"answer": "①",
+"solution": "구슬 공예가 불운을 막는 부적(a charm against bad luck)으로도 쓰였다고 했으므로 ①이 일치한다. 구슬은 모든 문화권에서 발견되었고, 석기 시대 사람들은 뼈·조개껍데기·돌을 꿰었다. 은데벨레족의 디자인은 사회 계층이 아니라 여성의 생애 단계를 나타낸다. 정사각형 앞치마는 미혼 소녀가 입는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-19962a834e",
+"typeId": "eng-h2-b05-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nPatchwork is a kind of needlework in which scraps of fabric are sewn together into a larger piece of art. Koreans are proud of their own style of patchwork, jogakbo. Created during the Joseon dynasty, jogakbo is a traditional wrapping cloth made by stitching small pieces of fabric into a large square or rectangle. Frugal women, who did not want to waste any fabric, found ways to reuse it. A finished piece often told the life story of its maker, as it contained scraps from her wedding skirt, her husband's shirt, and her children's clothes. Making jogakbo required artistic sensitivity, a high level of skill, careful planning, and long hours of stitching. Its harmonious combinations of patches have been compared to the modern abstract paintings of Piet Mondrian and Paul Klee.",
+"choices": [
+"Jogakbo is a traditional Korean wrapping cloth that was created during the Joseon dynasty.",
+"Women made jogakbo because they did not want to waste any fabric.",
+"Jogakbo could be made quickly without much planning because the patches were arranged randomly.",
+"A piece of jogakbo could show the life story of the woman who made it.",
+"Jogakbo has been compared to the works of modern abstract painters."
+],
+"answer": "③",
+"solution": "글에서 조각보를 만들려면 예술적 감각, 높은 기술, 세심한 계획, 오랜 바느질 시간이 필요하다고 했다. 따라서 계획 없이 빠르게 만들 수 있었다는 ③은 글과 일치하지 않는다. 나머지 선지는 조선 시대의 보자기, 천을 아끼려는 마음, 만든 사람의 삶의 이야기, 몬드리안·클레와의 비교라는 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ac7706138e",
+"typeId": "eng-h2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA woman with a brightly decorated prosthetic leg (A)[proud / proudly] walked the runway at a major fashion show. She was Mama Cax, a model and influencer (B)[who / which] inspired many people. At first, Cax was depressed and struggled (C)[accepting / to accept] her new body, but with the support of her family and friends, she learned to love it.\n\n(A)          (B)          (C)",
+"choices": [
+"① proud – who – accepting",
+"② proudly – who – to accept",
+"③ proud – which – to accept",
+"④ proudly – which – accepting",
+"⑤ proudly – who – accepting"
+],
+"answer": "②",
+"solution": "(A) 동사 walked를 수식하므로 부사 proudly가 맞다. (B) 선행사가 사람(a model and influencer)이므로 관계대명사 who가 적절하다. (C) struggle은 to부정사를 목적어로 취해 '~하려고 애쓰다'를 나타내므로 to accept가 맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-655414528d",
+"typeId": "eng-h2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nI'm a guidance counselor at the local college. I also have a social media channel (A)[which / where] I give advice to young students like you. In fact, most people believe they make a worse impression than they actually (B)[do / are]. Researchers performed an experiment (C)[which / where] students were paired up for five-minute ice breaking conversations.\n\n(A)          (B)          (C)",
+"choices": [
+"① which – do – which",
+"② where – do – where",
+"③ which – are – where",
+"④ where – are – which",
+"⑤ where – do – which"
+],
+"answer": "②",
+"solution": "(A) 뒤에 완전한 절(I give advice)이 이어지고 선행사가 장소 개념(channel)이므로 관계부사 where가 맞다. (B) 일반동사 make를 대신하는 대동사이므로 do가 적절하다. (C) 뒤에 완전한 절(students were paired up)이 오므로 관계부사 where가 맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-51c9678246",
+"typeId": "eng-h2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nI'm visiting you today not to perform but (A)[to talk / talking] to you about my life as a musician. My grandfather was a classical guitarist, and on my 13th birthday, he gave me a picture and a new guitar. After he passed away, I (B)[hung it up / hung up it] in my room as a reminder of his love for music. I'd like to tell you a hopeful story and give some insight into the hard work (C)[that / what] I had to put in.\n\n(A)          (B)          (C)",
+"choices": [
+"① to talk – hung it up – that",
+"② talking – hung up it – what",
+"③ to talk – hung up it – that",
+"④ talking – hung it up – what",
+"⑤ to talk – hung it up – what"
+],
+"answer": "①",
+"solution": "(A) 'not A but B' 구문에서 to perform과 병렬을 이루므로 to talk가 맞다. (B) 「동사+부사」의 구동사는 목적어가 대명사일 때 동사와 부사 사이에 넣으므로 hung it up이 적절하다. (C) 선행사 the hard work가 있고 뒤 절에 목적어가 빠져 있으므로 관계대명사 that이 맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d949f1adc6",
+"typeId": "eng-h2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nDuring New York Fashion Week 2018, a woman with a brightly decorated prosthetic leg proudly ⓐwalked the runway at a major fashion show. She was Mama Cax, who ⓑdiagnosed with cancer at age 14 and lost her right leg at 16 after surgery. One day when she was 26, Cax posted a picture on social media ⓒshowing her leg. After receiving messages of support, she began ⓓto use social media to share more about her life. She proudly posted pictures of herself ⓔwore stylish prosthetic covers and spoke out about body positivity and fashion. Sadly, her journey was cut short in 2019. Although she is no longer with us, her journey will remain in our hearts, ⓕinspire us to overcome limitations and find our own paths to success.",
+"choices": [
+"① ⓐ, ⓒ",
+"② ⓑ, ⓔ",
+"③ ⓒ, ⓓ, ⓕ",
+"④ ⓑ, ⓔ, ⓕ",
+"⑤ ⓑ, ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓑ는 Cax가 암 진단을 '받은' 것이므로 수동태 was diagnosed가 되어야 한다. ⓔ는 pictures of herself를 수식하는 분사 자리로 능동의 의미이므로 wearing이 되어야 한다. ⓕ는 앞 절을 부연하는 분사구문이므로 inspiring이 되어야 한다. ⓐ(능동 walked), ⓒ(picture를 수식하는 현재분사 showing), ⓓ(begin + to부정사)는 모두 옳으므로 어색한 것은 ⓑ, ⓔ, ⓕ로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m1s0t0",
+"custom": true
 }
 ]

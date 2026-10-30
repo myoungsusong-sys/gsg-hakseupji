@@ -3391,5 +3391,292 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u7m2s0t0",
 "custom": true
+},
+{
+"id": "fill-10d798fbfd",
+"typeId": "eng-m3-b07-u3m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 두 단어의 관계가 나머지와 다른 하나는?",
+"choices": [
+"hunger – hungry",
+"thirst – thirsty",
+"fortune – fortunate",
+"decision – decide",
+"difference – different"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 모두 ‘명사－형용사’의 관계이다. ④의 decision은 명사이고 decide는 동사이므로 두 단어의 관계가 나머지와 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c4d55b91fb",
+"typeId": "eng-m3-b07-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어 또는 표현과 영영 풀이가 바르게 연결된 것은?",
+"choices": [
+"assign: to allow someone to choose any group",
+"brush off: to cover something completely with dirt",
+"stand for: to represent or mean something",
+"day off: a day when a person has to do extra work",
+"object: a living person who performs a particular action"
+],
+"answer": "③",
+"solution": "stand for는 글자나 기호 등이 어떤 것을 ‘나타내다, 의미하다’라는 뜻이다. assign은 특정 임무나 집단에 배정하는 것이고, brush off는 묻은 것을 털어 내는 것을 뜻한다. day off는 쉬는 날이며 object는 보거나 만질 수 있는 사물을 가리킨다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f45b3825da",
+"typeId": "eng-m3-b07-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nRapunzel finally chose to make her own (A)________. Meanwhile, Stanley was taken to Camp Green Lake because the sneakers he carried (B)________ a famous baseball player. As he continued digging holes, he became (C)________ than before.",
+"choices": [
+"decisions – belonged to – stronger",
+"mistakes – stood for – stronger",
+"decisions – belonged to – exhausted",
+"characters – came from – wider",
+"mistakes – were assigned to – faster"
+],
+"answer": "①",
+"solution": "Rapunzel은 자신의 결정을 내리기로 했으므로 decisions가 알맞다. 운동화는 유명 야구 선수의 것이었으므로 belonged to가 들어간다. Stanley는 계속 땅을 파면서 이전보다 더 강해졌으므로 stronger가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-59c840ace8",
+"typeId": "eng-m3-b07-u3m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 <보기>의 단어를 각각 한 번씩 사용하여 빈칸에 알맞은 형태로 쓰시오.\n\n<보기> fortune, exhaust, decision, strong\n\n(A) ________, Stanley was stopped by the police while carrying the sneakers.\n(B) After digging in the hot sand for hours, Stanley felt completely ________.\n(C) Rapunzel made an important ________ about her own life.\n(D) Digging a hole every day made Stanley ________ than he had been before.",
+"selfGrade": true,
+"answer": "(A) Unfortunately (B) exhausted (C) decision (D) stronger",
+"solution": "(A)는 문장 전체를 수식하며 불운한 상황을 나타내므로 Unfortunately가 된다. (B)는 감정을 나타내는 형용사 exhausted, (C)는 관사 an 뒤에 오는 명사 decision이 알맞다. (D)는 than이 있으므로 strong의 비교급 stronger를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1eb55b2e6a",
+"typeId": "eng-m3-b07-u3m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영 풀이와 문맥을 모두 만족하도록 빈칸에 들어갈 4과의 단어 또는 표현을 쓰시오. 필요한 경우 형태를 바꿀 것.\n\n(A) to remove dust or dirt from something: Stanley carefully ________ the dirt from the gold tube.\n(B) to send someone to a particular group or place: Stanley was ________ to Group D.\n(C) to represent or mean: Stanley wondered what the letters KB ________.\n(D) to make a regular movement or sound: His heart ________ faster when he found the tube.",
+"selfGrade": true,
+"answer": "(A) brushed off (B) assigned (C) stood for (D) beat",
+"solution": "(A)는 흙을 털어 냈다는 과거의 행동이므로 brushed off가 알맞다. (B)는 수동태이므로 assigned, (C)는 과거 문맥이므로 stood for를 쓴다. beat는 과거형도 beat이므로 (D)에는 beat가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5ea333652b",
+"typeId": "eng-m3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이에 해당하며 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n to stay alive despite danger or difficulty\n\n• Bees cannot __________ without a suitable environment.\n• Flowers help bees __________ by providing what they need.",
+"choices": [
+"produce",
+"disappear",
+"cause",
+"survive",
+"provide"
+],
+"answer": "④",
+"solution": "영영풀이는 ‘위험이나 어려움에도 살아남다’라는 뜻이므로 survive에 해당한다. 두 문장에서도 벌이 적절한 환경이나 꽃의 도움으로 살아남는다는 의미가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ab39c466b3",
+"typeId": "eng-m3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ에 대한 문맥상 영영풀이로 알맞지 않은 것은?\n\nChanges in the climate make it difficult for bees to ⓐsurvive. Farmers also use ⓑharmful chemicals on their ⓒcrops. These chemicals can kill bees. Planting flowers can ⓓprovide bees with a better environment. Trees can also help ⓔslow down global warming.",
+"choices": [
+"① survive: to continue living when conditions are difficult",
+"② harmful: likely to hurt living things or damage something",
+"③ crop: a plant grown by people, especially as food",
+"④ provide: to create something through a natural process",
+"⑤ slow down: to make something happen less quickly"
+],
+"answer": "④",
+"solution": "provide는 문맥에서 벌에게 더 좋은 환경을 ‘제공하다’라는 뜻이다. ④의 ‘자연적인 과정을 통해 무언가를 만들어 내다’는 produce에 해당하는 풀이이다. 나머지 풀이는 각각 문맥 속 어휘의 의미와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c5917be1d2",
+"typeId": "eng-m3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 말과 ⓐ의 문맥상 영영풀이가 모두 알맞게 연결된 것은?\n\nBees move (A)__________ between flowers. This helps the flowers make seeds. Moving it is part of the ⓐprocess of pollination. Bees therefore help plants (B)__________ crops such as strawberries.\n\n각 선지는 ‘(A) / (B) / ⓐ의 영영풀이’ 순서이다.",
+"choices": [
+"① pollen / provide / a number of steps that lead to a result",
+"② honey / produce / a number of steps that lead to a result",
+"③ pollen / produce / a number of steps that lead to a result",
+"④ pollen / produce / the final thing obtained after all the steps",
+"⑤ honey / provide / the final thing obtained after all the steps"
+],
+"answer": "③",
+"solution": "꽃 사이로 옮겨져 씨앗을 만드는 데 도움을 주는 것은 pollen이다. 작물을 ‘생산하다’에는 produce가 알맞으며, provide는 ‘제공하다’라는 뜻이다. process는 결과 자체가 아니라 결과에 이르기까지의 과정이나 일련의 단계를 뜻하므로 세 조건을 모두 만족하는 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-36c591e374",
+"typeId": "eng-m3-b07-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이 (가)~(라)에 해당하는 단어를 <보기>에서 찾으시오. 그중 아래 글의 빈칸 (A)~(C)에 필요한 단어만 골라 순서대로 쓰시오.\n\n<보기>\nproduce / harmful / provide / survive / cause\n\n(가) to supply someone with something that is needed\n(나) to bring a new thing into existence or make it grow\n(다) to make an event or a change happen\n(라) able or likely to damage someone or something\n\nChanges in the climate can (A)__________ problems for bees. Farmers' chemicals can be (B)__________ to bees, too. To help bees, we can plant flowers that (C)__________ them with a suitable environment.\n\n조건\n• 각 빈칸에 한 단어씩 쓰시오.\n• 영영풀이와 문맥을 모두 만족해야 한다.\n• 단어의 형태를 바꾸지 마시오.",
+"selfGrade": true,
+"answer": "cause, harmful, provide",
+"solution": "(A)는 문제를 ‘일으키다’라는 뜻이므로 (다)에 해당하는 cause가 알맞다. (B)는 벌에게 해로울 수 있다는 의미이므로 (라)의 harmful이다. (C)는 벌에게 적절한 환경을 ‘제공하다’라는 의미이며 provide A with B의 형태를 이루므로 (가)의 provide가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6b1ba9668c",
+"typeId": "eng-m3-b07-u7m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어의 영영풀이와 예문의 쓰임이 모두 알맞은 것은?",
+"choices": [
+"normal: expected to happen at a particular time — The train is normal at noon.",
+"merchant: a person who buys and sells products in large amounts — The newspaper called Nobel a merchant of death.",
+"contribute: to flow accidentally over the edge of a container — His invention contributed onto the floor.",
+"disappointed: pleased because something happened as expected — Nobel was disappointed with the good news.",
+"regret: to feel proud of something that one has done — He regretted his great achievement."
+],
+"answer": "②",
+"solution": "merchant는 ‘물건을 대량으로 사고파는 사람’을 뜻하며, 예문에서도 ‘죽음의 상인’이라는 의미로 알맞게 사용되었다. ①은 due, ③은 spill의 풀이에 가깝고, ④와 ⑤의 영영풀이는 각각 실제 의미와 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7999b71972",
+"typeId": "eng-m3-b07-u7m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 안 단어를 문맥에 맞는 형태로 바꾼 것으로 알맞은 것은?\n\nIn 1888, a French newspaper ⓐ(mistake) reported Alfred Nobel’s death. The article focused on one of his many ⓑ(invent) and described him as the merchant of death. Nobel was deeply ⓒ(disappoint), so he decided to contribute to the world. He wanted to be ⓓ(remember) as a person who made the world better. ⓔ(original), the Nobel Prize had only five awards.",
+"choices": [
+"ⓐ mistaken ― ⓑ inventions ― ⓒ disappointing ― ⓓ remembered ― ⓔ Originally",
+"ⓐ mistakenly ― ⓑ inventors ― ⓒ disappointed ― ⓓ remembering ― ⓔ Original",
+"ⓐ mistakenly ― ⓑ inventions ― ⓒ disappointing ― ⓓ remembered ― ⓔ Originally",
+"ⓐ mistakenly ― ⓑ inventions ― ⓒ disappointed ― ⓓ remembered ― ⓔ Originally",
+"ⓐ mistaking ― ⓑ invention ― ⓒ disappointed ― ⓓ remember ― ⓔ Originally"
+],
+"answer": "④",
+"solution": "동사 reported를 수식하는 부사 mistakenly, 「one of＋복수 명사」에 맞는 inventions가 필요하다. 사람의 감정은 disappointed로 나타내며, 수동태 to be remembered와 문장 전체를 수식하는 부사 Originally가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d8c1276a0c",
+"typeId": "eng-m3-b07-u7m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이에 해당하는 단어를 이용하여 빈칸에 문맥과 어법에 맞는 형태로 쓰시오. (순서대로 쓸 것)\n\nⓐ to flow accidentally over the edge of a container\nⓑ something that has been created for the first time\nⓒ in a way that is wrong because of an error\nⓓ to keep a person or event in your mind\n\n(1) Nobel’s coffee __________ all over his desk.\n(2) Dynamite was one of his many __________.\n(3) The newspaper __________ reported that Nobel had died.\n(4) Nobel wanted to be __________ as a person who made the world better.",
+"selfGrade": true,
+"answer": "spilled, inventions, mistakenly, remembered",
+"solution": "각 영영풀이의 기본 단어는 spill, invention, mistakenly, remember이다. (1)은 과거형 spilled, (2)는 「one of＋복수 명사」에 따른 inventions가 필요하다. (4)는 「~로 기억되다」라는 수동의 의미이므로 remembered로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c476eebf9e",
+"typeId": "eng-m3-b07-u7m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 단어들은 모두 문맥상 알맞지 않다. 각 단어를 8과의 어휘로 고쳐 순서대로 쓰시오.\n\nWhile Nobel was reading the newspaper, a ①merchant caught his eye. Surprised by the report of his death, he dropped his cup, and the coffee ②contributed all over his desk. The article ③spilled him as the inventor of dangerous objects for war. After reading it, Nobel decided to ④describe to the world. He hoped to be ⑤regretted as a person who made the world better.",
+"selfGrade": true,
+"answer": "headline, spilled, described, contribute, remembered",
+"solution": "신문에서 눈에 띈 것은 headline이고, 커피가 쏟아졌으므로 spilled가 알맞다. 기사가 그를 특정한 인물로 묘사했으므로 described, 세상에 기여한다는 뜻에는 contribute를 쓴다. 마지막은 ‘기억되다’라는 수동의 의미이므로 remembered가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-81035035dc",
+"typeId": "eng-m3-b07-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ의 영영풀이로 알맞지 않은 것은?\n\nFavio Chávez was a ⓐtalented music teacher. When he came to Cateura, he had great ⓑpatience as he taught the poor children how to play. The children were so ⓒthrilled to make music for the first time. For them, learning music together was a long ⓓjourney. They even learned how to ⓔrecycle old objects from the landfill into musical instruments.",
+"choices": [
+"ⓐ talented: having a natural ability to do something well",
+"ⓑ patience: the ability to stay calm and accept a delay without complaining",
+"ⓒ thrilled: very excited and pleased",
+"ⓓ journey: an act of traveling from one place to another",
+"ⓔ recycle: to throw away things that are no longer useful"
+],
+"answer": "⑤",
+"solution": "recycle는 '이미 쓴 것에서 새로운 것을 만들다(to make something new from something that has been used before)'라는 뜻입니다. ⑤의 '더 이상 쓸모없는 것을 버리다'는 오히려 recycle와 반대되는 뜻이므로 영영풀이가 알맞지 않습니다. 나머지 ⓐ~ⓓ는 모두 바른 풀이입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-734da4f35b",
+"typeId": "eng-m3-b07-u4m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 단어와 영영풀이가 바르게 짝지어진 것의 개수는?\n\nⓐ mostly – mainly, generally\nⓑ cheek – either side of the face below the eyes\nⓒ joy – a feeling of great sadness\nⓓ huge – very small in size or amount\nⓔ violinist – a person who plays the violin\nⓕ educator – a person who teaches or educates",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "ⓐ, ⓑ, ⓔ, ⓕ는 바르게 짝지어졌습니다. ⓒ joy는 '큰 행복감(great happiness)'이지 슬픔(sadness)이 아니고, ⓓ huge는 '매우 큰(very large)'이므로 very small은 틀립니다. 따라서 바르게 짝지어진 것은 4개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a2e470d7a7",
+"typeId": "eng-m3-b07-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이에 해당하는 단어를 괄호 안의 첫 글자로 시작하도록 쓰시오.\n\n(1) the ability to stay calm and accept a delay without complaining (p___________)\n(2) to make something new from something that has been used before (r__________)\n(1) _____________________________________________________\n(2) _____________________________________________________",
+"selfGrade": true,
+"answer": "patience, recycle",
+"solution": "(1) '불평 없이 차분하게 지연을 받아들이는 능력'은 patience(인내심)입니다. (2) '이미 사용된 것으로부터 새로운 것을 만드는 것'은 recycle(재활용하다)입니다. 각 영영풀이의 핵심 어구와 제시된 첫 글자를 단서로 삼으면 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7a17e73765",
+"typeId": "eng-m3-b07-u4m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸에 들어갈 단어의 영영풀이로 알맞은 것은?\n\nAfter years of hard work, the members of the Recycled Orchestra finally finished their first concert. Everyone stood up and gave them a big hand. Tears of ____________ were rolling down their cheeks.",
+"choices": [
+"a long and often difficult trip from one place to another",
+"a feeling of great happiness",
+"the ability to stay calm and wait without getting angry",
+"a group of musicians playing many different musical instruments",
+"an area where waste is buried under the ground"
+],
+"answer": "②",
+"solution": "'Tears of ____ were rolling down their cheeks(눈물이 뺨을 타고 흘러내렸다)'와 콘서트를 성공적으로 마친 상황을 보면 빈칸에는 joy(기쁨)가 들어가야 합니다. joy의 영영풀이는 '큰 행복감(a feeling of great happiness)'이므로 ②가 정답입니다. 나머지는 각각 journey, patience, orchestra, landfill의 풀이입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m0s0t0",
+"custom": true
 }
 ]

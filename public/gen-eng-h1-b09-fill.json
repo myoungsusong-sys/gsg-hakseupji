@@ -3414,5 +3414,551 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-72703e8ced",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영풀이에 해당하는 낱말로 가장 알맞은 것은?\n\nto accept or bear something unpleasant without complaining",
+"choices": [
+"indicate",
+"tolerate",
+"polarize",
+"adapt",
+"expose"
+],
+"answer": "②",
+"solution": "‘불쾌한 것을 불평 없이 받아들이거나 견디다’라는 뜻이므로 tolerate(참다, 견디다)가 알맞다. 교과서 본문의 ‘people who hate cilantro may be able to learn to tolerate it’에 쓰인 낱말이다. indicate는 ‘나타내다’, adapt는 ‘적응하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-48147c6af3",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nFor one, babies like sweet tastes, not bitter ones, since bitterness can indicate poison. Not liking bitter things is, in a sense, a natural defense __________.",
+"choices": [
+"destiny",
+"exposure",
+"mechanism",
+"preference",
+"cuisine"
+],
+"answer": "③",
+"solution": "쓴맛은 독을 나타낼 수 있어서 쓴 것을 싫어하는 것은 일종의 ‘자연적 방어 기제(defense mechanism)’라는 뜻이다. 따라서 mechanism(기제, 메커니즘)이 알맞다. destiny는 ‘운명’, exposure는 ‘노출’, cuisine은 ‘요리(법)’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c52b318b95",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글에서 주어진 영영풀이에 해당하는 낱말을 찾아 쓰시오.\n\nShe says that kids are particularly adaptable when it comes to learning to like new foods. Research has shown that after tasting a food eight or ten times, children will become more accepting of it.\n\n〈영영풀이〉 able to change easily to fit new situations",
+"selfGrade": true,
+"answer": "adaptable",
+"solution": "‘새로운 상황에 맞게 쉽게 변할 수 있는’이라는 뜻의 낱말은 adaptable(적응력이 있는)이다. 아이들이 새로운 음식을 좋아하게 되는 데 특히 적응을 잘한다는 문맥에 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-016dbe8f32",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?\n\nFirst of all, we need to be clear about the role of the tongue. The information our tongues send to our brains is very (A)[simple / complex]. We generally like sweetness and hate bitterness, and the biological reasons for that are deeply rooted in our brains. For one, babies like sweet tastes, not bitter ones, since bitterness can (B)[indicate / prevent] poison. Due to genetic differences, some people may be more (C)[sensitive / sensible] than others to bitterness.",
+"choices": [
+"simple – indicate – sensitive",
+"simple – prevent – sensible",
+"complex – indicate – sensitive",
+"complex – prevent – sensitive",
+"simple – indicate – sensible"
+],
+"answer": "①",
+"solution": "(A) 단맛은 좋아하고 쓴맛은 싫어한다는 단순한 정보이므로 simple이 알맞다. (B) 쓴맛이 독을 ‘나타낼’ 수 있으므로 indicate가 알맞다. (C) 쓴맛에 더 ‘민감한’이라는 뜻이므로 sensitive가 맞고, sensible은 ‘분별 있는’이라는 뜻이라 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-72a905189c",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 〈보기〉의 단어를 모두 사용하여 문장을 완성하시오. (필요시 변형 가능, 단어 추가 가능)\n\n아이들은 새로운 음식을 좋아하게 되는 것에 관해서라면 특히 적응을 잘한다.\n\n〈보기〉 kids / particularly / adaptable / come / learn / like / new foods\n\n→ ________________________________________.",
+"selfGrade": true,
+"answer": "Kids are particularly adaptable when it comes to learning to like new foods",
+"solution": "‘~에 관해서라면’은 when it comes to로 쓰는데, 여기서 to는 전치사라서 뒤에 동명사 learning이 온다. ‘좋아하게 되다’는 learn to like로 쓴다. 주어가 3인칭 단수 it이므로 come은 comes로 바꿔야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e6b72d51ec",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 낱말과 영영풀이가 바르게 연결되지 않은 것은?",
+"choices": [
+"cuisine: a particular style of cooking, often of a country or region",
+"polarizing: causing people to share the same opinion",
+"exposure: the state of experiencing something or being in contact with it",
+"destiny: what will happen to someone in the future, which cannot be changed",
+"tolerance: the ability to accept or bear something unpleasant"
+],
+"answer": "②",
+"solution": "polarizing은 ‘(의견을) 양극화시키는’이라는 뜻으로, 사람들의 의견을 극명하게 둘로 나누는 것을 말한다. 본문에서 고수는 열성 팬과 싫어하는 사람이 많은 polarizing food로 소개된다. ‘같은 의견을 갖게 하는’이라는 풀이는 정반대이므로 ②가 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8a45b814ac",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nFor Isabella, such food is cilantro, the green leaves ①common in the cuisines of Thailand, Mexico, Morocco, and many other countries. Even though her family is from Thailand, Isabella ②hates meeting other people who don’t like cilantro since they don’t make her feel so ③odd or weird. Cilantro is one of those ④polarizing foods with lots of fans and haters, which often include mushrooms, olives, and blue cheese, among others. “Love it” or “hate it” is pretty ⑤clear for these foods.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "②",
+"solution": "Isabella는 고수를 싫어해서, 고수를 싫어하는 다른 사람을 만나면 자신이 이상하다고 느끼지 않게 된다. 따라서 그런 사람을 만나는 것을 ‘좋아한다’가 문맥에 맞으므로 ② hates를 loves로 고쳐야 한다. ⑤ clear는 좋고 싫음이 분명하다는 뜻으로 알맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e37e5c7892",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 〈조건〉에 맞게 영작하시오.\n\n당신이 쓴맛에 얼마나 민감한지가 당신이 특정한 종류의 음식을 좋아하는지 아닌지와 항상 관련이 있는 것은 아니다.\n\n〈조건〉\n1. 간접의문문 두 개를 사용할 것 (how, whether or not)\n2. sensitive, bitterness, relate, certain type을 반드시 사용할 것\n3. 부분부정 표현을 사용하고, 현재시제로 쓸 것\n\n→ ________________________________________.",
+"selfGrade": true,
+"answer": "How sensitive you are to bitterness doesn’t always relate to whether or not you like a certain type of food",
+"solution": "주어는 간접의문문 ‘how+형용사+주어+동사’ 어순으로 How sensitive you are to bitterness라고 쓰며, 명사절 주어는 단수 취급하므로 doesn’t를 쓴다. ‘항상 ~인 것은 아니다’라는 부분부정은 not always로 나타낸다. relate to 뒤에는 전치사의 목적어로 whether or not you like a certain type of food가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0a68a7eb18",
+"typeId": "eng-h1-b09-u6m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 문맥상 쓰임이 적절하지 않은 낱말 두 개를 찾아 바르게 고쳐 쓰시오. (‘틀린 낱말 → 고친 낱말’ 형식으로 쓸 것)\n\nCan we learn to like a food we’ve long disliked? “Your biology is not your destiny. When you’re open to different foods, you learn to like what you eat,” answers Julie Mennella, a researcher from the Monell Chemical Senses Center. She says that kids are particularly adaptable when it comes to learning to like new foods. Research has shown that after tasting a food eight or ten times, children will become less accepting of it. Similarly, even people who hate cilantro may be able to learn to tolerate it or even like it. Over time and through exposure, they can build up tolerance to cilantro, by adding a large amount in a curry, for example.",
+"selfGrade": true,
+"answer": "less → more, large → small",
+"solution": "이 글의 요지는 음식을 반복해서 접하면 좋아하게 될 수 있다는 것이다. 따라서 음식을 여러 번 맛본 아이들은 그 음식을 ‘더(more)’ 잘 받아들이게 된다고 해야 한다. 또한 고수에 대한 내성을 점차 기르려면 카레에 ‘소량(small amount)’을 넣는 것이 문맥에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c190fabff2",
+"typeId": "eng-h1-b09-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThere isn't just one reason for, nor one method of, carrying out community mapping. The process is defined by the community itself, depending on what issues are raised and how the community members decide to deal with them. The most important thing in the process is that you have to work with others. Remember that, by its very nature, community mapping is a collective experience.",
+"choices": [
+"various tools used in community mapping",
+"community mapping as a basically collaborative process",
+"the need for a single standard method of mapping",
+"ways to raise community issues more effectively",
+"the role of individual experiences in mapping"
+],
+"answer": "②",
+"solution": "글은 커뮤니티 매핑에 정해진 이유나 방법은 없다고 말한다. 그 과정에서 가장 중요한 것은 다른 사람들과 함께 일하는 것이며, 커뮤니티 매핑은 본질적으로 집단적인 경험이라고 강조한다. 따라서 주제는 ②이다. ③은 '한 가지 방법만 있는 것은 아니다'라는 본문 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cae9a0662c",
+"typeId": "eng-h1-b09-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nMapping can also rally community members around the assets of their community such as libraries, community centers, and parks. Heritage and cultural attractions, like landmarks, museums, and public artworks, are also good sources for community mapping. Through marking assets on a map, people become aware of the strengths and resources of their own community and build a strong bond with it. Also, these maps can provide valuable data to be used for tourism or urban design.",
+"choices": [
+"지도 제작은 관광 산업을 발전시키는 가장 효과적인 수단이다.",
+"공동체의 자산을 지도에 표시하면 공동체의 강점을 알게 되고 유대감이 강해진다.",
+"지역 사회는 도서관과 공원 같은 공공시설을 더 많이 지어야 한다.",
+"문화유산은 지도보다 박물관을 통해 알리는 것이 더 효과적이다.",
+"도시 설계에는 전문가가 수집한 자료만 사용해야 한다."
+],
+"answer": "②",
+"solution": "글의 핵심 문장은 'Through marking assets on a map, people become aware of the strengths and resources of their own community and build a strong bond with it.'이다. 공동체의 자산을 지도에 표시하면 공동체의 강점과 자원을 인식하고 유대감을 쌓게 된다는 내용이므로 ②가 요지이다. ①은 관광을 부수적인 활용처로만 언급한 것을 지나치게 확대한 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-54dca552ab",
+"typeId": "eng-h1-b09-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe researchers participating in the Montreal Tree Project asked residents and public institutions around Concordia University for help. The researchers asked them to photograph the bark and leaves of the trees on their properties and submit the photos to the project's website for analysis. The project is now complete, and they say the results show the importance of having a diverse tree population in a city.\nTrees on private lands were found to be more diverse than those on public lands. The two groups of trees served different purposes, too. Trees on private lands served functions such as providing fruit, flowers, or beauty, and those on public lands provided shade, regulated temperature, and fought air pollution.\nHutt-Taylor, one of the researchers, says that diversity of trees can make a forest more adaptable to events like climate change.",
+"choices": [
+"How to Photograph Trees for Scientific Research",
+"Why Public Trees Are More Useful Than Private Ones",
+"Diverse Trees, Stronger Urban Forests",
+"The Threat of Climate Change to Native Trees",
+"Concordia University's Plan to Plant More Trees"
+],
+"answer": "③",
+"solution": "몬트리올 나무 프로젝트의 결과는 도시에서 나무 개체군이 다양하다는 것이 중요하다는 점을 보여 주었다. 또한 나무의 다양성은 숲이 기후 변화에 더 잘 적응하게 한다고 했으므로 제목은 ③이다. ②는 사유지와 공유지의 나무가 '다른 기능'을 한다는 내용을 '더 유용하다'는 우열 비교로 바꾼 함정이다. ⑤는 본문에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cc11e4bbb0",
+"typeId": "eng-h1-b09-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nIn the middle of a major disaster, community mapping can prove to be a very effective and important tool. The first responders to a disaster are often ordinary citizens. They can use maps to create and update data on health facilities, shelters, or even public roads. When community members work together at the time of a disaster, the gathered information can be based on actual needs rather than guesses. This is particularly critical when every second counts.\nFor example, community mapping helped deal with the impact of Hurricane Sandy, one of the most destructive hurricanes to hit the United States. One of its main effects was energy failures. Residents in affected areas would wait for hours in line at gas stations, sometimes only to learn that they were out of gasoline. In response to this problem, a group of high school students in New Jersey worked together to create an online community map, publishing information on open gas stations with available fuel. The students gathered information from personal observations, calls to local gas stations, and updates from other social media users. The live data streams filled a significant community information gap.\n\n→ During a disaster, community mapping allows ordinary citizens to share information based on (A)________ needs, as seen when students in New Jersey (B)________ an information gap about fuel after Hurricane Sandy.\n\n     (A)          (B)",
+"choices": [
+"expected …… filled",
+"actual …… widened",
+"actual …… filled",
+"expected …… created",
+"official …… filled"
+],
+"answer": "③",
+"solution": "본문은 재난 시 공동체 구성원들이 함께 모은 정보가 추측이 아닌 실제 필요(actual needs)에 근거한다고 설명하므로 (A)에는 actual이 알맞다. 뉴저지 고등학생들이 만든 실시간 지도는 공동체의 정보 공백을 '메웠다'(filled a significant community information gap)고 했으므로 (B)에는 filled가 들어간다. 학생들이 지도를 '만들었다(create)'는 표현에 이끌려 created를 고르면 '정보 공백을 만들었다'는 반대 의미가 된다. expected는 guesses와 비슷한 말이므로 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bb745c9990",
+"typeId": "eng-h1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nMapping can also rally community members around the assets of their community such as libraries, community centers, and parks. Heritage and cultural attractions, like landmarks, museums, and public artworks, are also good sources for community mapping. Through marking assets on a map, people become aware of the strengths and resources of their own community and build a strong bond with it. Also, these maps can provide valuable data to use for tourism or urban design.",
+"choices": [
+"Libraries, community centers, and parks can be examples of community assets used in mapping.",
+"Landmarks, museums, and public artworks can serve as good sources for community mapping.",
+"Marking assets on a map helps people recognize the strengths and resources of their own community.",
+"The resulting maps can offer valuable data for tourism or urban design.",
+"Community mapping weakens the bond between residents and their own community."
+],
+"answer": "⑤",
+"solution": "지문에서 사람들은 지도에 자산을 표시하며 자기 지역과 '강한 유대를 형성한다(build a strong bond)'고 했다. 따라서 유대를 약화시킨다는 ⑤는 본문과 정반대로 일치하지 않는다. 나머지 ①~④는 도서관·공원 등 자산, 명소 활용, 강점 인식, 관광·도시 설계용 데이터 제공과 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9eac1566f0",
+"typeId": "eng-h1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nIn the middle of a major disaster, community mapping can prove to be a very effective and important tool. The first responders to a disaster are often ordinary citizens. One of Hurricane Sandy's main effects was energy failures. In response, a group of high school students in New Jersey worked together to create an online community map, publishing information on open gas stations with available fuel. The students gathered information from personal observations, calls to local gas stations, and updates from other social media users.",
+"choices": [
+"During a major disaster, community mapping can be an effective and important tool.",
+"Ordinary citizens are often the first responders to a disaster.",
+"One of Hurricane Sandy's main effects was energy failures.",
+"A group of high school students in New Jersey made an online map about open gas stations.",
+"The students collected information only from official government reports."
+],
+"answer": "⑤",
+"solution": "학생들은 개인적 관찰, 주유소에 건 전화, 다른 소셜 미디어 사용자들의 업데이트에서 정보를 모았다고 했다. 따라서 '공식 정부 보고서에서만' 정보를 모았다는 ⑤는 일치하지 않는다. ①~④는 재난 시 지도의 유용성, 일반 시민이 초기 대응자라는 점, 정전 피해, 뉴저지 고등학생들의 지도 제작과 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4139ef6901",
+"typeId": "eng-h1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "위 대화를 읽고 답할 수 없는 질문은?\n\nW: You look exhausted today. What's wrong?\nM: I've been having trouble falling asleep for the past two weeks.\nW: Have you tried using a community map app to find a quiet park? A short evening walk might help.\nM: That sounds nice. How did you find out about those parks?\nW: I checked the reviews that local residents posted on the map app. Sunset Park got the most positive comments for evening walks.\nM: Great. I'll go there after dinner tomorrow.",
+"choices": [
+"How long has the man had trouble sleeping?",
+"What does the woman recommend to help the man sleep better?",
+"How did the woman learn about the parks?",
+"Which park received the most positive comments for evening walks?",
+"How many residents posted reviews on the map app?"
+],
+"answer": "⑤",
+"solution": "남자는 2주 동안 잠들기 어려웠고(①), 여자는 지도 앱으로 조용한 공원을 찾아 저녁 산책을 권했으며(②), 지역 주민들의 후기를 확인했고(③), Sunset Park가 가장 긍정적인 평을 받았다(④)고 대화에 나온다. 그러나 후기를 남긴 주민의 '수'는 언급되지 않았으므로 ⑤는 대화만으로 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8633e52436",
+"typeId": "eng-h1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 가장 잘 이해한 사람끼리 짝지어진 것은?\n\nA community mapping project doesn't have to be ambitious in scale. If the idea of mapping overwhelms you, start small. Although it may seem that you know all about the routes to school, students have different information from one another due to different experiences. How about making a map with your classmates? Each of you can trace routes that you frequently use and mark how comfortable or safe you feel on those routes. With group participation and feedback, an informative visual map of safe routes to school can be constructed. You can provide the map to local district officials to help identify school safety problems. The most important thing in the process is that you have to work with others; community mapping is a collective experience.\n\n∎Emma: A community mapping project must always be large and ambitious from the start.\n∎David: Students can mark how safe or comfortable they feel on the routes they often use.\n∎Olivia: The finished map can be handed to local district officials to help find school safety problems.\n∎Noah: Since everyone already knows every route to school, the map adds hardly any new information.\n∎Mia: Community mapping is best carried out alone to keep the process simple.",
+"choices": [
+"Emma, Noah",
+"David, Olivia",
+"David, Mia",
+"Olivia, Noah",
+"Emma, Mia"
+],
+"answer": "②",
+"solution": "David는 자주 쓰는 길에 안전·편안함 정도를 표시한다는 내용, Olivia는 완성된 지도를 지역 관계자에게 제공해 학교 안전 문제를 찾는다는 내용과 일치한다. Emma(항상 크고 야심차야 함)는 'start small'과, Noah(모두가 길을 다 알아 새 정보가 없음)는 경험 차이로 정보가 다르다는 내용과, Mia(혼자 하는 게 최선)는 '남들과 함께해야 한다'는 핵심과 어긋난다. 따라서 바르게 이해한 사람은 David와 Olivia이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f4248577fc",
+"typeId": "eng-h1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe first art piece is a photograph by Benjamin Von Wong. His artworks rally people around environmental actions. In the photo, titled Turn Off the Plastic Tap, he tries to highlight the fact that a huge amount of plastic enters the ocean every minute. He says, \"You can't order a product online without having it delivered in plastic packaging. Dependence on plastic is built into the supply chain, so it is increasingly difficult for individual consumers to escape it. Of course, you can choose not to purchase products containing plastic, but that only goes so far. I think it is important for you to inform your friends and family of the issue because at the end of the day, companies and governments can't ignore the interest of the consumers. At the same time, we also need to pressure governments and corporations to do the right thing.\"",
+"choices": [
+"Benjamin Von Wong's artworks encourage people to take environmental actions.",
+"The photograph points out that a large amount of plastic enters the ocean every minute.",
+"Benjamin says it is nearly impossible to avoid plastic packaging for online orders.",
+"Benjamin believes informing friends and family of the issue makes no difference.",
+"Benjamin thinks we need to pressure governments and corporations to act rightly."
+],
+"answer": "④",
+"solution": "벤저민은 손님이 문제를 친구와 가족에게 알리는 것이 중요하다고 말한다. 결국 기업과 정부가 소비자의 관심을 무시할 수 없기 때문이다. 따라서 '알려도 소용없다'는 ④는 본문과 반대이므로 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0928e806a8",
+"typeId": "eng-h1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하는 것은?\n\nW: The weather has been strange lately, hasn't it?\nM: You're right. I've heard that it's snowing in areas where it's never snowed before.\nW: Oh, I'm sure that it's a sign of climate change.\nM: That's worrying. Is there anything we can do to help slow down climate change?\nW: How about starting with small things? For example, bring your own cup everywhere you go. That'll reduce the use of plastic.",
+"choices": [
+"The man thinks the weather has been completely normal lately.",
+"The woman doubts that climate change is really happening.",
+"The man asks whether there is a way to slow down climate change.",
+"The woman recommends making large-scale changes first.",
+"The woman suggests buying more plastic products to stay convenient."
+],
+"answer": "③",
+"solution": "남자는 \"Is there anything we can do to help slow down climate change?\"라고 기후 변화를 늦출 방법이 있는지 묻는다. 따라서 ③이 일치한다. 남자는 날씨가 이상하다는 데 동의하고, 여자는 기후 변화의 신호라고 확신하며 작은 일부터 시작하자고 하므로 나머지는 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-fd54c93aaa",
+"typeId": "eng-h1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe next piece, titled Forget Me Not, is Jenny Kendler's personal love letter to the sea. She covered an old boom box with various shells, which took her a year to collect. The boom box plays something you may regard as calming ocean sounds. They are actually what she recorded as she had one of her baby teeth dissolve in acid. She wanted us to think of what sea creatures might go through one day if we continue burning fossil fuels carelessly. As the ocean absorbs more and more carbon dioxide, it becomes more and more acidic. Under this condition, the hard shells of many marine species will dissolve. Kendler says, \"I wanted to inspire people to raise their own awareness about what they can actually do as individuals, but at the same time, I hoped to encourage collective action and collective responsibility. One thing that art can do really well is to help us imagine how the world might be otherwise. Certainly, we can't get to a different place if we can't imagine it.\"",
+"choices": [
+"Kendler spent a year collecting the shells that cover the boom box.",
+"The calming ocean sounds are actually a recording of her baby tooth dissolving in acid.",
+"As the ocean absorbs more carbon dioxide, it grows more acidic.",
+"Kendler wanted to encourage only individual action, not collective responsibility.",
+"Kendler believes we cannot reach a different place unless we can imagine it."
+],
+"answer": "④",
+"solution": "켄들러는 개인으로서 할 수 있는 일에 대한 인식을 높이도록 영감을 주고 싶었던 '동시에(at the same time)' 집단적 행동과 집단적 책임도 북돋우고 싶었다고 말한다. 따라서 '개인 행동만' 원했다는 ④는 본문과 어긋나 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-63a89dc8e5",
+"typeId": "eng-h1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 가장 바르게 이해한 사람은?\n\nThe piece below, titled Homestead, is a painting by Jon Ching. Most of his work, including this painting, is a celebration of nature and a quiet appeal to humans to appreciate the world around them. \"I believe we've separated ourselves from nature and no longer see how we fit in. Instead of helping nature thrive, we are simply consuming it,\" says Ching. One cannot help but smile at his paintings, which are rich in color and tenderness. One of the fun aspects of his work is how he blends the features of one life form with those of another. \"I find it necessary to express a silver lining rather than just reflect on what's wrong. I want to show that everything is connected and that protecting nature is actually protecting us. My call to action is to remember the magic and wonder of this planet.\"",
+"choices": [
+"Mina: Ching believes humans are still fully connected to nature.",
+"Jun: Ching only wants to point out what is wrong with the world.",
+"Sora: Ching enjoys blending the features of different life forms in his paintings.",
+"Tae: Ching thinks protecting nature has nothing to do with protecting humans.",
+"Bin: Ching's paintings are dark and almost without color."
+],
+"answer": "③",
+"solution": "본문은 Ching 작품의 재미있는 면 하나가 한 생명체의 특징을 다른 생명체의 특징과 섞는 방식(blends the features)이라고 한다. 따라서 ③이 옳다. Ching은 인간이 자연과 분리되었다고 보고(①×), 잘못된 것만 비추기보다 희망을 표현하려 하며(②×), 자연 보호가 곧 인간 보호라고 하고(④×), 색채가 풍부하다(⑤×).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-939b448e21",
+"typeId": "eng-h1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn the middle of a major disaster, community mapping can prove to be a very effective tool. The first responders to a disaster (A)[is / are] often ordinary citizens. They can use maps to create and update data on health facilities, shelters, or even public roads. This is particularly critical when every second (B)[count / counts]. For example, community mapping helped (C)[deal / dealing] with the impact of Hurricane Sandy, one of the most destructive hurricanes to hit the United States.",
+"choices": [
+"(A) is - (B) counts - (C) dealing",
+"(A) are - (B) count - (C) deal",
+"(A) are - (B) counts - (C) deal",
+"(A) are - (B) counts - (C) dealing",
+"(A) is - (B) count - (C) deal"
+],
+"answer": "③",
+"solution": "(A) 주어 The first responders가 복수이므로 are가 맞다. (B) every second는 단수 취급하므로 counts가 맞다. (C) 「help + (to)동사원형」 구조이므로 준사역 성격의 동사 뒤에는 원형 deal을 쓴다. 따라서 are - counts - deal인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b9bedefb64",
+"typeId": "eng-h1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것은?\n\nEveryone ⓐhas unique experiences, but many people remain isolated and disconnected from ⓑwhat goes on outside their lives. Community mapping helps people ⓒto look outside of themselves. Community mapping is a collective process. It enables members of a community ⓓmapping details of the places where they live and other places they know about. Community mapping is also a unique and valuable tool as it can ⓔbe used in diverse ways.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓐ Everyone은 단수 취급하므로 has가 맞다. ⓑ 선행사를 포함한 관계대명사 what이 from의 목적어절을 이끌어 적절하다. ⓒ help는 목적격보어로 to부정사/원형 둘 다 가능해 to look이 맞다. ⓔ 주어가 동작의 대상이므로 수동태 be used가 맞다. ⓓ 「enable + 목적어 + to부정사」 구조이므로 mapping을 to map으로 고쳐야 한다. 따라서 정답은 ④.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1684f8ac59",
+"typeId": "eng-h1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWith group participation and feedback, an informative visual map of safe routes to school can (A)[construct / be constructed]. You can provide the map to local district officials to help (B)[identify / identifying] school safety problems. There isn't just one reason for carrying out community mapping. The process is defined by the community itself, depending on (C)[what / which] issues are raised and how the community members decide to deal with them.",
+"choices": [
+"(A) construct - (B) identify - (C) what",
+"(A) be constructed - (B) identify - (C) what",
+"(A) be constructed - (B) identifying - (C) which",
+"(A) be constructed - (B) identify - (C) which",
+"(A) construct - (B) identifying - (C) what"
+],
+"answer": "②",
+"solution": "(A) 지도(map)는 '구성되는' 대상이므로 수동태 be constructed가 맞다. (B) 「help + (to)동사원형」이므로 원형 identify가 맞다. (C) 뒤에 바로 명사 issues가 오고 '어떤 문제가 제기되는지'라는 의미이므로 명사를 수식하는 의문형용사 what이 적절하다. 따라서 be constructed - identify - what인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d65610dd3a",
+"typeId": "eng-h1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nEveryone has unique experiences, but many people ⓐremain isolated and disconnected from what goes on outside their lives. Community mapping helps people look outside of themselves, connect with other members of their communities, and ⓑsharing valuable experiences. Community mapping is a collective process. It enables members of a community to map details of the places ⓒwhere they live and other places ⓓwhich they know about. Community mapping is also a unique and valuable tool ⓔas it can be used in diverse ways. It is a process ⓕwhat anyone can take part in.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓑ, ⓕ",
+"ⓒ, ⓕ",
+"ⓓ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓐ remain은 '~한 상태로 남다'의 동사로 적절하다. ⓒ where는 '장소'를 선행사로 하는 관계부사로 뒤 문장이 완전해 맞다. ⓓ which는 about의 목적어가 빠진 불완전한 절을 이끌어 적절하다. ⓔ as는 '~이므로'의 접속사로 맞다. ⓑ는 look, connect와 병렬 구조이므로 sharing을 share로 고쳐야 한다. ⓕ는 선행사 process를 수식하는 관계사절이므로 what을 that(which)으로 고쳐야 한다. 따라서 ⓑ, ⓕ인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-407f15cf10",
+"typeId": "eng-h1-b09-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nA couple of weeks later, the class was given another speech assignment. I didn't want to drop the ball like the first time. This time, I practiced delivering the speech. I stood in front of the mirror every day for a week and went over all the things I wanted to say. I used cue cards which contained key phrases about important facts. I rehearsed how I would stand, how I would make eye contact with the audience, and even when I would pause. I felt nervous again when the big day finally arrived. But when the teacher called my name, I noticed that my nerves had actually calmed down a bit. Although my voice trembled from time to time, I managed to get my whole message across. When I was done, I felt so proud of myself that I barely noticed how loudly everyone was clapping for me!",
+"choices": [
+"The writer felt completely confident and not nervous at all on the day of the second speech.",
+"The writer prepared for the speech by practicing in front of a mirror for a week.",
+"The writer gave up on the speech because he was too nervous to continue.",
+"The writer's voice stayed perfectly calm and never trembled during the speech.",
+"Everyone stayed silent and did not clap after the writer finished his speech."
+],
+"answer": "②",
+"solution": "글쓴이는 거울 앞에서 일주일 동안 매일 연습했다고 했으므로 ②가 일치한다. 큰 날이 되자 다시 긴장했다고 했으므로 ①은 틀리며, 목소리가 가끔 떨렸다고 했으므로 ④도 틀리다. 끝까지 메시지를 전달했고 사람들이 크게 박수를 쳤다고 했으므로 ③, ⑤도 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-393f53a785",
+"typeId": "eng-h1-b09-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nI was sweating as I walked up to the front of the class. My heart was racing so fast that I thought it might fly out of my chest. I could feel my face turning red. I didn't know where to look. I blanked out. I just stood there silently. Ms. Harper tried to help me out. \"Start by telling us a bit about your grandmother, Logan.\" I spoke about what kind of work my grandmother used to do, but I quickly ran out of words to say. Then Ms. Harper said, \"How about telling us a bit about why you admire her so much?\" I barely managed to share a short story about her. After that, I just rushed to my seat and put my head in my hands. I knew I had messed up.",
+"choices": [
+"Logan was very nervous and his heart was racing as he went to the front.",
+"Logan delivered his whole speech smoothly and confidently without any help.",
+"Ms. Harper suggested that Logan begin by talking about his grandmother.",
+"Logan spoke about the kind of work his grandmother used to do.",
+"After the speech, Logan rushed to his seat and put his head in his hands."
+],
+"answer": "②",
+"solution": "글쓴이는 머릿속이 하얘져 말없이 서 있었고 Ms. Harper의 도움을 받았으므로 ②는 일치하지 않는다. 긴장과 심장이 뛴 것(①), 할머니로 시작하라는 제안(③), 할머니가 하던 일을 말한 것(④), 자리로 돌아가 머리를 감싼 것(⑤)은 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-53dfc3059a",
+"typeId": "eng-h1-b09-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nGood listeners can help speakers by creating a positive communication climate. As a listener, you should listen carefully and look for something in the speech that interests you. Even if you are not excited about the topic, you may pick up some techniques that will be useful when it is your time to speak. When you discuss or evaluate others' speeches, be constructive and helpful. That is an attitude you will appreciate when others comment on your speech. Listening well is as important as speaking well. Fortunately, anyone can become a better listener. Just remember the Golden Rule of Listening: Listen to others as you would want them to listen to you.",
+"choices": [
+"Good listeners create a negative atmosphere that makes speakers uncomfortable.",
+"Listeners can pick up useful techniques even from a topic they are not excited about.",
+"Listening skills cannot be improved no matter how much a person practices.",
+"Listening well is clearly less important than speaking well.",
+"When evaluating others' speeches, listeners should be critical and harsh."
+],
+"answer": "②",
+"solution": "주제에 흥미가 없더라도 자기 차례에 유용한 기술을 얻을 수 있다고 했으므로 ②가 일치한다. 좋은 청자는 긍정적 분위기를 만들고(①은 반대), 누구나 더 나은 청자가 될 수 있으며(③은 반대), 듣기는 말하기만큼 중요하고(④는 반대), 평가 시 건설적이고 도움이 되어야 한다(⑤는 반대)고 했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f3c90e892d",
+"typeId": "eng-h1-b09-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe next day, I met Ms. Harper after school to talk about the speech. I said, \"I'm embarrassed about the speech. I must have looked like a fool. I know I could have done better.\" \"It is quite all right to fall short of your own expectations as long as you learn something from it,\" she said in a warm voice. \"What was bothering you the most while you prepared for the speech?\" \"I was afraid the other students would laugh at me if my speech wasn't good enough.\" She replied, \"You certainly can't control what others think about your speech. That means you should be focusing on the one thing you can control — how you give your speech.\" That woke me up from the depths of despair. Of course, that was it! I really should have focused on my performance.",
+"choices": [
+"The writer felt disappointed because he thought he had not given a good speech.",
+"Ms. Harper told the writer that falling short of his expectations is acceptable if he learns from it.",
+"The writer's biggest worry had been that his classmates might laugh at his speech.",
+"Ms. Harper advised the writer that he could control how his classmates would judge his speech.",
+"The writer realized he should have concentrated on how he delivered his speech."
+],
+"answer": "④",
+"solution": "Ms. Harper는 다른 사람이 어떻게 생각하는지는 통제할 수 없고, 통제할 수 있는 것은 '말하는 방식'뿐이라고 했으므로 ④는 일치하지 않는다. 글쓴이의 실망감(①), 기대에 못 미쳐도 배우면 괜찮다는 말(②), 비웃음에 대한 두려움(③), 자신의 수행에 집중했어야 한다는 깨달음(⑤)은 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-242e6dfce9",
+"typeId": "eng-h1-b09-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 통해 추론할 수 있는 내용으로 가장 적절한 것은?\n\n\"The assignment is to write a speech about someone who you admire. It could be a historical figure, a celebrity, or even someone you personally know in your life,\" Ms. Harper told the class. My classmates began brainstorming a list of people they might pick — mostly athletes, singers, and actors. However, I knew right away who my speech was going to be about. Grandma is the person I admire the most. Writing a speech about her would be a piece of cake.",
+"choices": [
+"The writer found it hard to decide whom he should write about.",
+"Most of the writer's classmates wanted to write about their own family members.",
+"The writer expected that the writing task would be easy for him.",
+"The assignment allowed students to write only about famous historical figures.",
+"The writer admired a world-famous celebrity more than anyone else."
+],
+"answer": "③",
+"solution": "글쓴이는 할머니에 대해 쓰는 것이 'a piece of cake(식은 죽 먹기)'라고 했으므로 그 과제가 쉬울 것이라고 기대했음을 추론할 수 있어 ③이 적절하다. 글쓴이는 곧바로 대상을 정했으므로 ①은 틀리고, 반 친구들은 주로 운동선수·가수·배우를 떠올렸으므로 ②는 틀리다. 과제는 유명인뿐 아니라 개인적으로 아는 사람도 가능했으므로 ④도 틀리며, 글쓴이가 가장 존경하는 사람은 할머니이므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m4s0t0",
+"custom": true
 }
 ]

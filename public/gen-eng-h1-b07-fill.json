@@ -3237,5 +3237,832 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-f6252c8677",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 부분이 어법상 어색하면 바르게 고쳐 쓰시오.\n\nThe robots will be ⓐprogram to explore the asteroid's surface and identify target materials.",
+"selfGrade": true,
+"answer": "ⓐ program → programmed",
+"solution": "「will be + 과거분사」의 수동태 구조이므로 동사원형 program이 아니라 과거분사 programmed가 되어야 합니다. 로봇이 '프로그래밍되는' 대상이므로 수동태가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-fae2b10ef8",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 부분이 어법상 어색하면 바르게 고쳐 쓰시오.\n\nRobots exploring the asteroid will be ⓐequipping for tasks such as drilling and transporting.",
+"selfGrade": true,
+"answer": "ⓐ equipping → equipped",
+"solution": "로봇이 작업을 위해 '장비를 갖추게 되는' 수동의 의미이고 「be equipped for ~」가 올바른 형태이므로 will be equipping이 아니라 will be equipped가 되어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ca92327962",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 부분이 어법상 어색하면 바르게 고쳐 쓰시오.\n\nSince the 1950s, thousands of satellites ⓐhas been launched into space.",
+"selfGrade": true,
+"answer": "ⓐ has → have",
+"solution": "주어 thousands of satellites는 복수이므로 단수동사 has가 아니라 복수동사 have가 와야 합니다. 「have been launched」로 현재완료 수동태를 완성합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0e3fde539c",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 하나 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nDead satellites and used rocket parts ⓐleaving unattended in space are collectively called space junk. These objects ⓑmove at very high speed. Even a small piece can harm satellites ⓒthat provide services across the world. Space junk ⓓis increasing the risks to astronauts. Without efforts to remove it, space travel ⓔwould be extremely dangerous.",
+"selfGrade": true,
+"answer": "ⓐ leaving → left",
+"solution": "위성과 로켓 부품은 우주에 '방치되는' 대상이므로 능동의 현재분사 leaving이 아니라 과거분사 left가 되어야 합니다(objects (which are) left unattended). ⓑ는 복수주어, ⓒ는 satellites에 수일치한 복수동사, ⓓ는 단수주어 Space junk, ⓔ는 현재 사실의 반대를 나타내는 가정법 과거로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-492db7a5cd",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 하나 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nOn Earth, creating good conditions for manufacturing ⓐrequires a lot of energy. In space, those conditions ⓑoccur naturally. Products that ⓒare required a uniform quality, like cosmetics, would be easier to mix without gravity. Fabrics could ⓓbe tested for their ability to protect against solar radiation. Semiconductors could be produced with ⓔfewer faults.",
+"selfGrade": true,
+"answer": "ⓒ are required → require",
+"solution": "주격 관계대명사절의 동사로, products가 균일한 품질을 '필요로 하는' 능동의 의미이므로 수동태 are required가 아니라 능동 require가 되어야 합니다. ⓐ는 동명사 주어에 대한 단수동사, ⓑ는 복수주어 those conditions, ⓓ는 수동태, ⓔ는 셀 수 있는 명사 faults를 수식하는 fewer로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-dda0b6369a",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 하나 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nSpace junk ⓐincreases the risks to astronauts. Each crash ⓑhas the potential to create more junk. Without active efforts to remove it, traveling in space ⓒwould have been very dangerous. Scientists are ⓓtrying to develop better ways ⓔto clean up space.",
+"selfGrade": true,
+"answer": "ⓒ would have been → would be",
+"solution": "현재의 사실과 반대되는 상황을 가정하는 가정법 과거이므로 「would + 동사원형」이 되어야 합니다. 따라서 would have been이 아니라 would be가 맞습니다. ⓐ는 단수주어 Space junk, ⓑ는 Each crash(단수), ⓓ는 진행형, ⓔ는 ways를 수식하는 to부정사로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b448c1017c",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nRobots will be sent to asteroids to dig for target materials. They will be ⓐprogrammed to explore the surface and ⓑidentify materials, and be ⓒequipping for tasks such as drilling and collecting. They may work independently or ⓓbe controlled remotely from Earth. These types of robots have ⓔyet to be developed since the technology is still young. The materials that they collect ⓕis sent back toward Earth.",
+"selfGrade": true,
+"answer": "ⓒ equipping → equipped / ⓕ is → are",
+"solution": "ⓒ는 로봇이 작업을 위해 '장비를 갖추게 되는' 수동태로 be equipped for가 맞으므로 equipping을 equipped로 고쳐야 합니다. ⓕ는 주어 The materials가 복수이므로 단수동사 is가 아니라 are sent가 되어야 합니다. ⓐⓑ는 to explore와 (to) identify가 병렬을 이루며, ⓓ는 or 뒤의 병렬 수동태, ⓔ는 「have yet to+동사원형(아직 ~하지 않았다)」으로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d893ae45da",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nSince the beginning of the space age, thousands of rockets ⓐhave been launched into space. Most have functioned as they ⓑwere designed to, but some machines have broken down and ⓒremain floating around in space. Dead satellites and rocket parts ⓓleaving unattended are called space junk. They move so fast that even a small piece can harm satellites ⓔthat provides services worldwide. Each crash can ⓕgenerate more space junk.",
+"selfGrade": true,
+"answer": "ⓓ leaving → left / ⓔ that provides → that provide",
+"solution": "ⓓ는 위성과 부품이 '방치되는' 대상이므로 현재분사 leaving이 아니라 과거분사 left가 되어야 합니다. ⓔ는 선행사가 복수명사 satellites이므로 관계대명사절의 동사가 provides가 아니라 provide가 되어야 합니다. ⓐ는 복수주어에 맞춘 현재완료 수동태, ⓑ는 수동태, ⓒ는 「remain+-ing」, ⓕ는 조동사 뒤 동사원형으로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0b9cb91b47",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nCreating good conditions for manufacturing on Earth ⓐrequires a lot of energy, but those conditions occur naturally in space. Products that ⓑare required a uniform quality, like cosmetics, would be ⓒeasier to mix without gravity. Getting away from the atmosphere could also ⓓbenefit the testing of products. Fabrics could be tested for their ability ⓔprotecting against solar radiation.",
+"selfGrade": true,
+"answer": "ⓑ are required → require / ⓔ protecting → to protect",
+"solution": "ⓑ는 products가 균일한 품질을 '필요로 하는' 능동의 의미이므로 수동태 are required가 아니라 require가 되어야 합니다. ⓔ는 명사 ability를 뒤에서 수식하는 자리로 「ability to+동사원형」이 맞으므로 protecting이 아니라 to protect가 되어야 합니다. ⓐ는 동명사 주어에 대한 단수동사, ⓒ는 비교급 보어, ⓓ는 조동사 뒤 동사원형으로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6e93f5db43",
+"typeId": "eng-h1-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 세 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nSpace technology has advanced greatly, and the cost of running a space program seems to have decreased significantly since ambitious entrepreneurs ⓐhave joined the adventure. The conditions in space ⓑopen up the possibility of manufacturing newer and better products. Materials like 3D printed skin or muscle ⓒbenefit from low pressure and gravity. Semiconductors could be produced with ⓓfewer faults. It's not unreasonable to imagine sending a message from a device ⓔequipping with semiconductors made in space. The space project will eventually reach a point ⓕwhich adventurous minds can travel to distant stars. The resources ⓖrequire to drive economic activity are becoming much more reachable.",
+"selfGrade": true,
+"answer": "ⓔ equipping → equipped / ⓕ which → where (또는 at which) / ⓖ require → required",
+"solution": "ⓔ는 device가 반도체를 '갖춘' 수동의 의미이므로 「equipped with」이 되어야 하며 equipping을 equipped로 고칩니다. ⓕ는 선행사 a point가 관계사절에서 부사(장소·상황)로 쓰여 뒤 문장이 완전하므로 관계대명사 which가 아니라 관계부사 where(또는 at which)가 되어야 합니다. ⓖ는 주어 The resources를 수식하는 분사 자리로, 자원이 경제 활동을 구동하는 데 '요구되는' 수동의 의미이므로 require가 아니라 과거분사 required가 되어야 합니다. ⓐ는 since절의 현재완료, ⓑ는 복수주어 The conditions, ⓒ는 복수주어 Materials, ⓓ는 fewer+복수명사로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6237de1adf",
+"typeId": "eng-h1-b07-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nM: Hey, have you signed up for any clubs?\nW: No, I haven’t signed up for anything yet.\nM: Really? I thought you were looking forward to joining a club.\nW: I was, but none of the clubs caught my eye. In fact, I’m thinking of starting my own club.\nM: What do you have in mind?\nW: I want to start a marine biology club since that’s what I want to study in college.\nM: That sounds like a great way to meet people who share your interests.\nW: Right. I’d like to organize regular trips to the sea with club members to learn about the marine life there.\nM: I was thinking of joining the hiking club, but I will sign up for yours instead!",
+"choices": [
+"여자는 이미 동아리 두 곳에 가입했다.",
+"여자는 대학에서 해양 생물학을 공부하고 싶어 한다.",
+"남자는 처음에 과학 동아리에 가입하려고 했다.",
+"여자는 동아리 회원들과 정기적으로 박물관을 방문할 계획이다.",
+"남자는 여자가 만들 동아리에 가입하지 않기로 했다."
+],
+"answer": "②",
+"solution": "여자는 대학에서 공부하고 싶은 분야가 해양 생물학이라서 해양 생물학 동아리를 만들고 싶다고 했으므로 ②가 일치한다. 여자는 아직 어떤 동아리에도 가입하지 않았고(①), 남자가 처음에 생각한 동아리는 등산 동아리이다(③). 여자가 계획한 활동은 박물관 방문이 아니라 바다로 가는 정기 여행이며(④), 남자는 여자의 동아리에 가입하겠다고 했다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f7024d5bff",
+"typeId": "eng-h1-b07-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 통해 알 수 있는 것은?\n\nW: I can’t believe they put chicken back on the menu. I’m getting tired of chicken.\nM: I feel the same way. I don’t think many students want to eat chicken every other day.\nW: Is there any way we can tell the school what we want?\nM: Yes. We can vote for food we want on the school website.\nW: Oh, let me check… You’re right. There’s a link and a QR code.\nM: Yeah. They allow you to vote on the food choices on next month’s menu.\nW: Great. I’m definitely going to vote myself. Can we share the QR code with our friends?\nM: Yes, we can. We can access the voting page through the code.\nW: Cool. Our friends will love to participate in the voting. I’m going to share it on my social media right away.\nM: I’ll do that too. I hope next month we’ll have more options than chicken.",
+"choices": [
+"다음 달 메뉴에 치킨이 나오는 횟수",
+"투표가 마감되는 날짜",
+"학생들이 먹고 싶은 음식에 투표할 수 있는 곳",
+"여자가 가장 좋아하는 음식",
+"남자가 투표에서 고른 음식"
+],
+"answer": "③",
+"solution": "남자가 “We can vote for food we want on the school website.”라고 했으므로 학교 웹사이트에서 투표할 수 있다는 것을 알 수 있다. 치킨이 나오는 횟수, 투표 마감 날짜, 여자가 가장 좋아하는 음식, 남자가 고른 음식은 대화에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-bafe80b57f",
+"typeId": "eng-h1-b07-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nNahyeon Kim Class of 2024: In high school, everyone told me how talented an artist I was, so I dreamed of becoming an illustrator. In university, though, everyone seemed much more talented than me, and they all worked so hard that I felt small in comparison. I thought about giving up my dream of becoming an artist. Then one day, I happened to see a drawing I had won an award for from middle school on the kitchen wall. I was embarrassed because it wasn’t very good.",
+"choices": [
+"나현은 고등학교 때 그림에 재능이 있다는 말을 들었다.",
+"나현은 고등학교 때 일러스트레이터가 되기를 꿈꿨다.",
+"대학에서 나현은 다른 학생들에 비해 자신이 작게 느껴졌다.",
+"나현은 부엌 벽에서 중학교 때 상을 받은 그림을 우연히 보았다.",
+"나현은 그 그림을 보고 자랑스러움을 느꼈다."
+],
+"answer": "⑤",
+"solution": "나현은 중학교 때 상을 받은 그림이 그다지 잘 그린 그림이 아니어서 부끄러웠다(I was embarrassed)고 했다. 따라서 자랑스러움을 느꼈다는 ⑤는 글의 내용과 맞지 않는다. 나머지 선지는 모두 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-072f60b045",
+"typeId": "eng-h1-b07-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nAbigail Princeton Class of 2022: As I worked through my second year into my third in college, I had more troubles balancing school and personal life. I would get excited, anxious, worried, and bored all at once and then separately. I would get exhausted when I had to write a report for my courses, mediate a disaster between friends, and respond to the comments on my online journal. I was drowning in a sea of responsibilities, concerns, and anxieties, and that was when I read an article with a simple insight.\nThe article advised me to draw two big circles, with myself in the center. The smaller circle is my circle of influence, and I have direct control over the things inside it: what I eat and drink, how I behave, or what I do after school. The bigger circle is called my circle of concern: things I worry about but have no direct control over. … Now, I only put my mental and physical energy into my circle of influence: eating healthy, staying in shape, and working hard.",
+"choices": [
+"When did Abigail have more troubles balancing school and personal life?",
+"What grade did Abigail get on her report for her courses?",
+"What did the article advise Abigail to draw?",
+"What is the bigger circle called?",
+"What does Abigail put her mental and physical energy into now?"
+],
+"answer": "②",
+"solution": "Abigail이 보고서를 써야 해서 지쳤다는 내용은 있지만, 그 보고서로 어떤 점수를 받았는지는 글에 나오지 않으므로 ②에는 답할 수 없다. ①은 대학 2학년에서 3학년으로 넘어갈 때, ③은 두 개의 큰 원, ④는 circle of concern, ⑤는 circle of influence(건강하게 먹기, 몸매 유지하기, 열심히 노력하기)로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b735cec6b7",
+"typeId": "eng-h1-b07-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nCharlie\nOne possible benefit of a “Dislike” button is that it would let people disagree with or be unhappy with a post without having to say something bad about it. This could help make conversations on social media platforms more open, honest, and respectful. A “Dislike” button could also help figure out what users like or find useful. By letting people express what they don’t like about a post, content creators can get useful feedback and learn what their audience likes and doesn’t like.\n\nJimin\nThe “Dislike” button can definitely be a useful tool to measure online engagement, but there are more negative effects than the positive. The presence of “Dislike” buttons and other negative replies illustrates how unfriendly social media can be. Many businesses directly ask for “5-star” ratings because anything less may actually hurt their reputation. A “Dislike” button encourages users to take advantage of the system rather than provide an honest opinion. While it may be useful for creators, it can also be harmful to both them and everyone else.",
+"choices": [
+"Charlie thinks a “Dislike” button would make people say more bad things about posts.",
+"Charlie believes a “Dislike” button gives content creators no useful feedback.",
+"Jimin says many businesses ask their customers for “1-star” ratings.",
+"Jimin admits that a “Dislike” button can be useful for measuring online engagement.",
+"Jimin thinks a “Dislike” button harms only content creators, not other users."
+],
+"answer": "④",
+"solution": "Jimin은 “The ‘Dislike’ button can definitely be a useful tool to measure online engagement”라고 하며 장점을 인정한 뒤 부정적 효과가 더 크다고 주장하므로 ④가 일치한다. Charlie는 나쁜 말을 하지 않고도 반대 의견을 표현할 수 있다고 했고(①), 창작자가 유용한 피드백을 얻을 수 있다고 했다(②). 기업들이 요청하는 것은 ‘5-star’ 평점이며(③), Jimin은 이 버튼이 창작자와 다른 모든 사람에게 해로울 수 있다고 했다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-adc0b82cea",
+"typeId": "eng-h1-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nYou grab a juicy hamburger, and of course you want some fries on the side. But what do you dip them in? Many people reach for ketchup without thinking twice. For others, though, ketchup is far from the only choice. Some prefer mayonnaise, some like chili sauce, and a few even enjoy their fries with steak sauce. A pairing that looks completely normal to one person can look strange to another. The truth is that there is no single \"right\" sauce — it all comes down to personal taste.",
+"choices": [
+"the health risks of eating too many fries",
+"why ketchup is better than other sauces",
+"the history of the modern hamburger",
+"how different people pair sauces with fries by taste",
+"tips for cooking crispy fries at home"
+],
+"answer": "④",
+"solution": "글은 감자튀김에 곁들이는 소스가 사람마다 다르며 '옳은' 소스가 따로 없고 개인의 입맛에 달렸다고 말한다. 따라서 주제는 사람마다 취향에 따라 소스를 짝짓는다는 ④가 알맞다. ①②③⑤는 글의 핵심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a09f7fb61f",
+"typeId": "eng-h1-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nIn Thailand, one of the best-loved desserts is warm, sticky rice served with slices of fresh mango and a drizzle of coconut milk. At first, mixing rice with fruit might sound a little odd, but this dish proves how well they go together. Rice is one of the most widely eaten grains in the world, so it is not really surprising that it can be matched with sweet, nutritious fruit. What seems unusual at first can turn out to be a perfectly delicious match.",
+"choices": [
+"A Surprisingly Perfect Match: Rice and Fruit",
+"How to Grow Mangoes in Thailand",
+"The Most Expensive Desserts in Asia",
+"Why Rice Should Only Be a Main Dish",
+"The Dangers of Eating Too Much Sugar"
+],
+"answer": "①",
+"solution": "글은 쌀과 과일(망고)의 조합이 처음엔 이상해 보여도 아주 잘 어울린다는 점을 강조한다. 따라서 제목으로는 쌀과 과일의 뜻밖의 완벽한 조합을 뜻하는 ①이 알맞다. 나머지는 글에서 다루지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f455e0c19b",
+"typeId": "eng-h1-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nWhen people hear the word \"curry,\" they may picture very different dishes. Some think of a spicy plate from an Indian restaurant, while others imagine a milder sauce poured over white rice. That is because curry comes in many flavors, and the recipes change depending on where you are in the world. Japanese curry, for example, looks and tastes quite different from Indian curry, even though the two share the same origin.",
+"choices": [
+"the reason curry is the spiciest food in the world",
+"the many different versions of curry around the world",
+"how to make authentic Indian curry at home",
+"why Japanese food is more popular than Indian food",
+"the health benefits of eating spicy dishes"
+],
+"answer": "②",
+"solution": "글은 지역에 따라 조리법과 맛이 달라 카레가 다양한 형태로 존재한다는 점을 설명한다. 인도 카레와 일본 카레를 예로 들어 그 차이를 보여 준다. 따라서 주제는 세계 곳곳의 다양한 카레를 뜻하는 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fefdb00760",
+"typeId": "eng-h1-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nWhat kind of snack is nutritious, full of energy, and simple to make? This is the genius of peanut butter and banana sandwiches. Never could anyone have predicted that the sweet taste of bananas coupled with salty, nutty peanut butter would become an American comfort food. This sandwich can be a healthy choice for breakfast or lunch because its combination of protein and fiber helps you feel full, while the carbohydrates provide sustained energy. The best thing about this sandwich is that the ingredients are readily available and affordable.\nSome people, however, like to take things to another level. Imagine a regular peanut butter and banana sandwich, and then add fried bacon to it. It has been said that the famous singer Elvis Presley loved this sandwich, which is why it's called \"The Elvis.\" Even though you may not want to eat the Elvis every day, there are many fans of this unconventional combination.\n\nThe peanut butter and banana sandwich is a simple yet (A)__________ snack whose sweet-and-salty taste made it a beloved comfort food, and some even push it (B)__________ by adding bacon in a version known as \"The Elvis.\"\n\n(A)                 (B)\n① nutritious — closer to tradition\n② wholesome — one step further\n③ expensive — back to basics\n④ ordinary — out of fashion\n⑤ bland — to its limits",
+"choices": [
+"nutritious — closer to tradition",
+"wholesome — one step further",
+"expensive — back to basics",
+"ordinary — out of fashion",
+"bland — to its limits"
+],
+"answer": "②",
+"solution": "(A)에는 땅콩버터-바나나 샌드위치가 영양가 있고 건강한 간식이라는 글의 내용에 맞는 'wholesome(건강에 좋은)'이 알맞다. (B)에는 베이컨을 더해 한 단계 더 나아간다는 'take things to another level'을 요약한 'one step further'가 알맞다. ③의 expensive, ⑤의 bland는 재료가 싸고 맛이 좋다는 글과 어긋나고, ①④의 (B)도 '더 나아간다'는 의미와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1b77a1f15e",
+"typeId": "eng-h1-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 제목으로 알맞은 것은?\n\nSome people love this combination, while others can't seem to stand it. It can even cause quite heated arguments. If you haven't guessed already, it's the tasty or nasty — depending on your taste — ham and pineapple pizza. The man who created this pizza was neither Italian nor Hawaiian. A Greek immigrant from Canada, Sam Panopoulos did not want to stick to the usual ingredients on pizzas, like pepperoni and mushrooms. He spread canned pineapple and sliced ham onto a pizza and called it \"the Hawaiian\" because that's what was written on the pineapple can. Little did he know that he had created a classic combination. Even now, in the U.S. and U.K., no pizza menu seems complete without it. In Italy, however, most people find pineapple on pizza distasteful. The combination is not that odd, though. Pineapple and ham is not the only fruit and meat pairing in kitchens around the world. In France, duck is paired with a sweet orange sauce, and American Thanksgiving turkey would not be complete without cranberry sauce.",
+"choices": [
+"The Secret Recipe Behind the Perfect Pizza",
+"A Loved-and-Hated Classic: Why Hawaiian Pizza Still Divides Us",
+"How a Greek Immigrant Became a World-Famous Chef",
+"Italian Traditions That Shaped Modern Pizza",
+"Why Fruit Should Never Be Put on Any Pizza"
+],
+"answer": "②",
+"solution": "글은 하와이안 피자가 누군가에겐 사랑받고 누군가에겐 거부당하며 논쟁을 일으키지만, 과일과 고기의 조합이 사실 그리 이상한 것은 아니라는 점을 다룬다. 따라서 '사랑받으면서도 미움받는 고전, 왜 여전히 의견이 갈리는가'를 담은 ②가 제목으로 알맞다. ③은 세부 정보, ④⑤는 글의 요지(조합이 이상하지 않다)와 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-22a8f9b745",
+"typeId": "eng-h1-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nI'm a high school student, and K-pop is my escape. After a long day of classes and exams, I put on my headphones and watch my favorite group's performances. Dancing along with their videos helps me forget my stress for a while. My friends and I even share our favorite stages online. For me, K-pop is more than just music — it is a way to relax and recharge after busy school days.",
+"choices": [
+"the role of K-pop in relieving school-related stress",
+"tips for becoming a professional K-pop dancer",
+"how to make new friends through social media",
+"the importance of regular exercise for students",
+"difficulties of balancing study and hobbies"
+],
+"answer": "①",
+"solution": "글쓴이는 수업과 시험으로 지친 하루 끝에 K-pop 공연을 보고 춤추며 스트레스를 잊는다고 말한다. 마지막 문장에서 K-pop이 바쁜 학교생활 뒤 휴식하고 재충전하는 방법이라고 요약한다. 따라서 주제는 '학업 스트레스 해소에서 K-pop이 하는 역할'인 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4a8d209622",
+"typeId": "eng-h1-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 알맞은 것은?\n\nThese days, you can order almost any food with just a few taps on your phone. In Korea, delivery service is available for every kind of food imaginable, from hot soup to desserts. Food arrives at your door in less than an hour, so you don't have to leave home or wait in line at a restaurant. This fast and convenient service has become a part of everyday life for many Koreans.",
+"choices": [
+"The History of Naengmyeon Delivery",
+"Why Restaurant Food Tastes Better",
+"The Convenience of Modern Food Delivery in Korea",
+"Healthy Eating Habits for Busy People",
+"How to Cook Korean Dishes at Home"
+],
+"answer": "③",
+"solution": "글은 요즘 한국에서는 거의 모든 음식을 휴대폰으로 주문해 한 시간 안에 집에서 받을 수 있다는 점을 설명한다. 식당에 가거나 줄 서지 않아도 되는 빠르고 편리한 배달 서비스가 일상이 되었다는 내용이다. 따라서 제목은 '현대 한국 음식 배달의 편리함'인 ③이 알맞다. ①은 과거 역사로 글의 초점과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-73b029a3c9",
+"typeId": "eng-h1-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nWatching K-dramas has changed the way I see the world. Through the stories, I learned about Korean family values, respect for elders, and the special meaning of sharing food. These themes felt familiar to me even though I am not Korean. The more I watched, the more I wanted to understand the culture behind the dramas. K-drama has become a window through which I discover Korean culture.",
+"choices": [
+"K-drama as a window to learn about Korean culture",
+"the acting skills of famous Korean actors",
+"the best K-dramas to watch for beginners",
+"differences between Korean and foreign families",
+"reasons why K-dramas have sad endings"
+],
+"answer": "①",
+"solution": "글쓴이는 K-드라마를 통해 한국의 가족 가치, 어른 공경, 음식을 나누는 의미 등을 배웠다고 말한다. 마지막 문장에서 K-드라마가 한국 문화를 발견하는 '창'이 되었다고 직접 정리한다. 따라서 주제는 '한국 문화를 배우는 창으로서의 K-드라마'인 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0809a939f7",
+"typeId": "eng-h1-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 알맞은 것은?\n\nOver the past decade, interest in learning Korean has grown rapidly around the world. Many fans say that K-pop and K-drama first led them to the language. They want to understand song lyrics and drama lines without relying on subtitles. As a result, Korean language classes at universities abroad have seen a sharp rise in enrollment. What began as simple entertainment has turned into a serious desire to learn.",
+"choices": [
+"the growing interest in learning Korean driven by K-culture",
+"the difficulty of learning Korean grammar",
+"methods universities use to teach foreign languages",
+"the economic value of the Korean entertainment industry",
+"the history of Korean language education abroad"
+],
+"answer": "①",
+"solution": "글은 K-pop과 K-드라마가 많은 팬을 한국어 학습으로 이끌었고, 그 결과 해외 대학의 한국어 수강 신청이 급증했다고 설명한다. 오락으로 시작된 것이 진지한 학습 욕구로 바뀌었다는 흐름이다. 따라서 주제는 'K-문화가 이끈 한국어 학습에 대한 높아지는 관심'인 ①이 알맞다. ④ 산업의 경제적 가치, ⑤ 교육의 역사는 글의 초점이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fd7bc4375f",
+"typeId": "eng-h1-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nWhen I first discovered K-pop, I only liked the catchy beats and the colorful music videos. At that time, I didn't care about the meaning of the songs at all. However, as I kept listening, I became curious about what the singers were actually saying. I started looking up translations and even began studying Korean on my own. Now, understanding the lyrics makes the music far more meaningful to me, and learning the language has become one of my greatest joys.\n\nAt first, the writer was drawn to K-pop only by its sound and visuals and was (A)______________ to the meaning of the lyrics, but over time she grew curious, began studying Korean, and now finds learning the language deeply (B)______________.",
+"choices": [
+"(A) attentive … (B) boring",
+"(A) indifferent … (B) rewarding",
+"(A) sensitive … (B) tiring",
+"(A) opposed … (B) disappointing",
+"(A) devoted … (B) frustrating"
+],
+"answer": "②",
+"solution": "처음에 글쓴이는 비트와 영상만 좋아했고 가사의 의미에는 '전혀 신경 쓰지 않았다(didn't care at all)'고 했으므로 (A)에는 '무관심한(indifferent)'이 알맞다. 지금은 한국어 배우기가 '가장 큰 즐거움 중 하나'라고 했으므로 (B)에는 '보람 있는(rewarding)'이 알맞다. 따라서 ②가 정답이다. ① attentive(주의 깊은), ⑤ devoted(헌신적인)는 (A)와 반대이고, boring·tiring·disappointing·frustrating은 (B)의 긍정적 의미와 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1e6efb0bca",
+"typeId": "eng-h1-b07-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nOver the last 20 years, South Korean pop culture has become increasingly popular not only in Korea, but also around the world. The popularity of K-drama and K-pop has impacted other aspects of K-culture, including an increased interest in learning the Korean language. According to the Modern Language Association, U.S. college student enrollment in Korean language classes rose 78% from 2009 to 2016 and, between 2016 and 2021, it continued to show an increase of 38.3%. In the U.K., the number of higher education students taking Korean classes steadily increased from 2012 to 2018, as reported by the University Council of Modern Languages. This phenomenon shows that cultural products are being consumed outside of Korea with more people wanting to join in the experience.",
+"choices": [
+"South Korean pop culture has become popular around the world over the last 20 years.",
+"The popularity of K-drama and K-pop has led to more interest in learning Korean.",
+"U.S. college student enrollment in Korean language classes rose 78% from 2009 to 2016.",
+"In the U.K., fewer higher education students took Korean classes from 2012 to 2018.",
+"More people outside Korea want to join in the experience of Korean cultural products."
+],
+"answer": "④",
+"solution": "글에서는 영국에서 한국어 수업을 듣는 고등교육 학생 수가 2012년부터 2018년까지 꾸준히 증가했다(steadily increased)고 했습니다. 따라서 수가 줄었다(fewer)고 한 ④는 글의 내용과 반대입니다. 나머지 선지는 모두 글의 내용과 일치합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-116336c7e8",
+"typeId": "eng-h1-b07-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nM: Is this Hwaseong Fortress?\nW: Yes, Ravi. It’s a UNESCO World Heritage Site. King Jeongjo of the Joseon dynasty built it to honor his father.\nM: Wow, he must have really loved his father.\nW: Well, he actually lost his father when he was just eleven, so he probably really missed his father.\nM: How sad. It reminds me of the Taj Mahal in India.\nW: The Taj Mahal? Why?\nM: Emperor Shah Jahan built it to honor his wife, who died while giving birth to their child.\nW: Wow, I didn’t know that. That’s quite a story.",
+"choices": [
+"Ravi explains that Hwaseong Fortress is a UNESCO World Heritage Site.",
+"King Jeongjo built Hwaseong Fortress to honor his mother.",
+"King Jeongjo lost his father when he was eleven years old.",
+"Hwaseong Fortress reminds the woman of the Taj Mahal.",
+"Emperor Shah Jahan built the Taj Mahal to honor his son."
+],
+"answer": "③",
+"solution": "여자가 정조는 겨우 열한 살 때 아버지를 잃었다(he lost his father when he was just eleven)고 말하므로 ③이 일치합니다. 화성이 유네스코 세계유산이라고 설명한 사람은 Ravi가 아니라 여자이고(①), 정조는 어머니가 아닌 아버지를 기리려고 화성을 지었습니다(②). 타지마할을 떠올린 사람은 Ravi이며(④), 샤 자한은 아들이 아니라 아내를 기리려고 타지마할을 지었습니다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8d50e08ad9",
+"typeId": "eng-h1-b07-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 있는 질문만을 <보기>에서 있는 대로 고른 것은?\n\nMy name is Anna Valera. I am from the Philippines, and I am a big fan of K-drama. My first encounter was about 4 years ago, when I was 15. I came across a Korean drama on the Internet, and it captured my imagination. Everything about Korea was completely new to me at the time, so every show kept my attention from start to finish. Since I was watching so much TV, my parents put limits on what I could and couldn’t watch, but the funny thing is, they are fans now too. At first, I was attracted to the stylish fashion of the actors. Eventually, I slowly became attracted to the dramas with emotionally charged storylines pulling on my heartstrings. Also, the familiar cultural themes made it easy for me to engage with the story — the emphasis on family, respect for elders, and the central role of food as an expression of love.\n\n<보기>\n(a) How old was Anna when she first encountered K-drama?\n(b) What was the title of the first Korean drama Anna watched on the Internet?\n(c) What did Anna’s parents do because she was watching so much TV?\n(d) How many Korean dramas has Anna watched so far?\n(e) What familiar cultural themes helped Anna engage with the stories?",
+"choices": [
+"(a), (b)",
+"(a), (c), (e)",
+"(b), (c), (d)",
+"(b), (d), (e)",
+"(a), (c), (d), (e)"
+],
+"answer": "②",
+"solution": "(a)는 'when I was 15'에서 15살이라고 답할 수 있습니다. (c)는 부모님이 시청 내용을 제한했다(put limits on what I could and couldn’t watch)는 내용으로, (e)는 가족 중시, 어른 공경, 사랑의 표현으로서의 음식이라는 내용으로 답할 수 있습니다. (b) 처음 본 드라마의 제목과 (d) 지금까지 본 드라마의 편수는 글에 나오지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ceb4e2bb1c",
+"typeId": "eng-h1-b07-u5m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용과 일치하는 것만을 <보기>에서 골라 그 개수를 고르면?\n\nWatching different shows sparked my desire to try the various Korean foods that I saw in K-drama. Luckily, there is a Korean grocery in my town, so I can buy the ingredients and experiment with Korean dishes at home. Also, I have a Korean neighbor who gives me some useful tips on Korean cooking. I practice Korean with her, and I’m planning to enroll in an online Korean class next semester. I believe that my favorite shows will be even more enjoyable as my Korean improves. Getting hooked on K-drama opened up a new world for me. I have become more cosmopolitan and appreciative of different cultures. More importantly, it has given me a new goal in life, which is to travel to Korea. I want to explore the locations from my favorite shows, eat the local food, and enjoy an authentic Korean experience.\n\n<보기>\n(a) The writer’s interest in Korean food first came from a Korean neighbor.\n(b) The writer has to go to another town to buy ingredients for Korean dishes.\n(c) The writer is currently taking an online Korean class.\n(d) The writer expects that improving Korean will make favorite shows more enjoyable.\n(e) Traveling to Korea has become the writer’s new goal in life.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "한국 음식에 대한 관심은 이웃이 아니라 K-드라마를 보면서 생겼으므로 (a)는 틀립니다. 필자가 사는 동네에 한국 식료품점이 있으므로 (b)도 틀리고, 온라인 한국어 수업은 다음 학기에 등록할 계획일 뿐이므로 (c)도 틀립니다. 한국어 실력이 늘수록 좋아하는 드라마가 더 재미있어질 것이라는 (d)와 한국 여행이 새로운 인생 목표라는 (e)만 일치하므로 정답은 2개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-35a31e2648",
+"typeId": "eng-h1-b07-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nM: Hi, Sora. How was your weekend?\nW: Hi, Tom. It was wonderful! I visited an art museum and drew some pictures there.\nM: I didn't know you liked art.\nW: Yes, I love drawing, especially landscapes. How about you?\nM: I'm not good at drawing, but I enjoy cooking. I made pasta for my family on Sunday.\nW: That sounds delicious! Can you teach me someday?\nM: Sure. Why don't we cook together next weekend?\nW: Great idea!",
+"choices": [
+"Sora visited an art museum over the weekend.",
+"Sora enjoys drawing, especially landscapes.",
+"Tom is good at drawing.",
+"Tom made pasta for his family on Sunday.",
+"Tom and Sora will cook together next weekend."
+],
+"answer": "③",
+"solution": "Tom은 \"I'm not good at drawing\"이라고 말했으므로 그림을 잘 그린다는 ③은 대화 내용과 반대된다. ①은 미술관 방문, ②는 풍경화를 좋아한다는 말, ④는 일요일에 파스타를 만들었다는 말, ⑤는 다음 주말에 함께 요리하자는 제안과 일치한다. 따라서 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3d44dd5165",
+"typeId": "eng-h1-b07-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nW: Welcome, everyone! Today's special guest is Mr. Carter, a professional baker. Hello, Mr. Carter!\nM: Hello. Thanks for having me.\nW: Could you tell us what you do?\nM: I bake bread and cakes for a local bakery every morning.\nW: How early do you start your work?\nM: I usually start at four in the morning.\nW: Wow, that's really early! What skills do you need to become a baker?\nM: You need patience and a good sense of taste. Also, you should be careful with time because baking requires exact timing.",
+"choices": [
+"What does Mr. Carter do?",
+"When does Mr. Carter start his work?",
+"What skills are needed to become a baker?",
+"Where is Mr. Carter's bakery located?",
+"What does Mr. Carter bake every morning?"
+],
+"answer": "④",
+"solution": "Mr. Carter는 \"a local bakery\"에서 일한다고만 했을 뿐 그 빵집이 어디에 있는지는 말하지 않았으므로 ④는 답할 수 없다. ①은 빵과 케이크를 굽는다, ②는 새벽 네 시, ③은 인내심·미각·시간 관리, ⑤는 빵과 케이크라고 각각 답할 수 있다. 따라서 답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-98bd94c459",
+"typeId": "eng-h1-b07-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nDiscover Yourself\nBegin your career map by taking a blank piece of paper and drawing some dots on it. These dots represent who you are at this moment, so make as many dots as you can. Write one or two words to describe one aspect of yourself next to each dot. Awards, certificates, and school subjects are great starting points. You can also think about your past and present achievements, interests, and strengths. Parents, teachers, friends, and others you trust can also provide insight into you that you may not have noticed.",
+"choices": [
+"You begin your career map with a blank piece of paper.",
+"Each dot represents one aspect of who you are now.",
+"You should make as few dots as possible to keep it simple.",
+"Awards and school subjects can be good starting points.",
+"People you trust can help you notice things about yourself."
+],
+"answer": "③",
+"solution": "글은 \"make as many dots as you can\"이라며 점을 가능한 한 많이 그리라고 했으므로, 점을 최대한 적게 그리라는 ③은 글과 반대된다. ①·②·④·⑤는 각각 빈 종이에서 시작, 점은 현재의 자신을 나타냄, 상·교과목이 좋은 출발점, 신뢰하는 사람들의 도움과 일치한다. 따라서 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c896ee9713",
+"typeId": "eng-h1-b07-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nFill in the Gaps\nTo reach your goal, you need to fill in the gaps between the dots to create a path toward your goal. You can plan paths by researching what essential skills, training or education, or type of personality you may need to achieve a particular goal. Talking to or shadowing successful people is a great way to learn about a specific profession. As you fill in each gap with a new dot, you can decide what to do next. Each path is unique and has different challenges.\nTake the Next Steps\nNow, instead of aimlessly trying random things, you can look at your map to see what to do next. Deciding which gap to fill is up to you, but your map should show you that whatever you choose, you will be moving toward your goal. There is no need to rush. Take your time filling the gaps. Since you've designed your own map, each gap you fill and dot you make \"levels you up.\"",
+"choices": [
+"To plan a path, you can research the skills, training, and personality a goal requires.",
+"Observing or talking with successful people helps you learn about a profession.",
+"Your map decides which gap you must fill next, so the choice is not yours.",
+"Even though each path differs, filling any gap still moves you toward your goal.",
+"Because you designed the map yourself, each dot and filled gap \"levels you up.\""
+],
+"answer": "③",
+"solution": "글은 \"Deciding which gap to fill is up to you\"라며 어느 빈틈을 채울지는 스스로 정한다고 했으므로, 지도가 그것을 정하고 선택권이 없다는 ③은 글과 반대된다. 지도는 어떤 선택을 하든 목표로 나아가게 해 준다고 했을 뿐이다(④와 일치). ①·②·⑤는 기술·훈련·성격 조사, 성공한 사람 관찰, 스스로 만든 지도가 자신을 성장시킨다는 내용과 일치한다. 따라서 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a00082c88a",
+"typeId": "eng-h1-b07-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nM: Mom, I have to write about a job for homework. Can I write about your job?\nW: Sure. I'm a veterinarian, so I take care of sick animals.\nM: What kinds of animals do you treat?\nW: Mostly dogs and cats, but sometimes rabbits too.\nM: When is the busiest time at your clinic?\nW: Usually on weekends, because many owners bring their pets then.\nM: What do I need to do to become a veterinarian?\nW: You need to study hard in biology and get a degree in veterinary medicine. You also need to love animals.",
+"choices": [
+"What kinds of animals does the mother usually treat?",
+"On what days is the clinic the busiest?",
+"What should one study to become a veterinarian?",
+"How many years has the mother worked as a veterinarian?",
+"For what purpose is the son writing about a job?"
+],
+"answer": "④",
+"solution": "어머니가 수의사로 몇 년을 일했는지는 대화에 전혀 언급되지 않았으므로 ④는 답할 수 없다. ①은 주로 개와 고양이(가끔 토끼), ②는 주말, ③은 생물학 공부와 수의학 학위, ⑤는 학교 숙제로 직업에 대해 쓴다고 각각 답할 수 있다. 따라서 답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dddb4b4365",
+"typeId": "eng-h1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSince I was watching so much TV, my parents put limits on (A)[what / that] I could and couldn't watch, but the funny thing is, they are fans now too. At first, I was (B)[attracting / attracted] to the stylish fashion of the actors. Eventually, I slowly became attracted to the dramas with emotionally charged storylines pulling on my heartstrings. Also, the familiar cultural themes made it (C)[easy / easily] for me to engage with the story.\n\n(A) — (B) — (C)",
+"choices": [
+"what — attracting — easy",
+"what — attracted — easy",
+"what — attracted — easily",
+"that — attracted — easily",
+"that — attracting — easy"
+],
+"answer": "②",
+"solution": "(A) 전치사 on의 목적어 역할을 하면서 뒤에 watch의 목적어가 빠진 불완전한 절이 오므로, 선행사를 포함한 관계대명사 what이 알맞다. (B) 주어 I가 패션에 '끌린' 것이므로 수동의 의미인 과거분사 attracted가 알맞다. (C) 5형식 make it(가목적어) + 목적격 보어 구조이므로 보어 자리에는 부사가 아닌 형용사 easy가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d24262a1d2",
+"typeId": "eng-h1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nTo be honest, I do not particularly enjoy (A)[to study / studying], but learning Korean is different. My desire to try to connect with my favorite artists in their language (B)[is / are] a huge motivation for me. Learning Korean is a slow process, but the feeling (C)[that / what] I get when my favorite artist responds to me is fantastic.\n\n(A) — (B) — (C)",
+"choices": [
+"to study — is — what",
+"to study — are — that",
+"studying — are — what",
+"studying — is — that",
+"studying — is — what"
+],
+"answer": "④",
+"solution": "(A) enjoy는 동명사만 목적어로 취하므로 studying이 알맞다. (B) 주어의 핵심은 단수 명사 My desire이고 to try ~ language는 수식어구이므로 단수 동사 is가 알맞다. (C) 앞에 선행사 the feeling이 있고 뒤에 get의 목적어가 빠진 절이 이어지므로 관계대명사 that이 알맞으며, 선행사를 포함하는 what은 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fa331c5a05",
+"typeId": "eng-h1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nM: Good morning, Sarah. We're excited to hear about the mug ①which you designed for K-drama fans. What inspired you ②to create it?\nW: Most people love to drink something ③while watched TV. So I wanted to design a special mug for fellow fans.\nM: Great. Tell us about the design.\nW: The mug ④is decorated with a famous scene from a popular K-drama.\nM: I see. And the handle looks quite special. Can you tell us more about it?\nW: Sure. It's inspired by goreum, a hanbok bow.\nM: ⑤What a wonderful combination of tradition and creativity!",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "③ 사람들이 TV를 '보는' 것이므로 능동의 의미인 현재분사를 써서 while watching TV가 되어야 한다. ① 선행사 the mug를 받는 목적격 관계대명사 which는 알맞고, ② inspire+목적어+to부정사 구조도 알맞다. ④ 머그잔이 장면으로 '장식된' 것이므로 수동태가 맞고, ⑤ 'What+a+형용사+명사!' 감탄문 어순도 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-582ecde1d4",
+"typeId": "eng-h1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 어색한 것의 개수는?\n\nA late Joseon dynasty scholar describes in his book the delivery process of hyojonggaeng (soup ⓐeaten with the early morning bells), which ⓑwas popular in the 1800s. He reports that famous gukbap restaurants in Namhansanseong, Gyeonggi-do, would prepare hyojonggaeng with meat, mushrooms, and other vegetables, boil it, put it in a pot, and ⓒdelivering it to wealthy homes in Seoul early in the morning. The hyojonggaeng remained ⓓwarmly, ⓔhaving been delivered tightly wrapped in cotton. This can be thought of as the first \"early morning delivery\" in Korea, ⓕwhich has gained wide popularity in recent years. These days, delivery service is available for every kind of food imaginable, with options ⓖranging from hamburgers to steak and even desserts. You don't have to go to a restaurant since food can ⓗdeliver right to your home in less than an hour.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓒ would 뒤에서 prepare, boil, put과 병렬을 이루므로 동사원형 deliver가 되어야 한다. ⓓ remain은 형용사를 보어로 취하는 2형식 동사이므로 warm이 되어야 한다. ⓗ 음식이 '배달되는' 것이므로 수동태 be delivered가 되어야 한다. ⓐ 수동의 의미인 과거분사, ⓔ 주절보다 앞선 시점을 나타내는 완료형 수동 분사구문, ⓕ 계속적 용법의 which, ⓖ 'with+명사+현재분사' 구문은 모두 알맞으므로 어색한 것은 3개다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e0168a1c3e",
+"typeId": "eng-h1-b07-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 틀린 것 3개를 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nThe history of food delivery in Korea goes back ⓐmuch further than one might imagine. The earliest food ⓑdelivering on record is naengmyeon in the Joseon era. In his book, the scholar Yunseok Hwang (1729-1791) mentions ⓒthat he ordered naengmyeon for lunch with his colleagues on the day after the state examination in July 1768. It appears that naengmyeon, a summer dish ⓓenjoyed in the royal court, had gained popularity among noblemen, ⓔled to the introduction of delivery services. In Yuwon Lee's book, it is recorded ⓕthat King Sunjo (1790-1834) of Joseon ordered his servants ⓖbuy naengmyeon and bring it back to the palace so that he could eat it while ⓗlooking at the moon.",
+"selfGrade": true,
+"answer": "ⓑ delivering → delivered, ⓔ led → leading, ⓖ buy → to buy",
+"solution": "ⓑ 음식이 '배달된' 것이므로 food를 뒤에서 꾸미는 과거분사 delivered가 되어야 한다. ⓔ 접속사 없이 동사 두 개(had gained, led)가 이어질 수 없으므로, 결과를 나타내는 분사구문 leading이 되어야 한다. ⓖ order는 '목적어+to부정사'를 취하므로 to buy가 되어야 한다(뒤의 bring은 to에 병렬 연결된다). ⓐ 비교급 강조 much, ⓒ·ⓕ 명사절 접속사 that, ⓓ 과거분사 enjoyed, ⓗ 접속사 뒤의 분사구문 looking은 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dad281e535",
+"typeId": "eng-h1-b07-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe color blue can produce a calming effect. Even during his days in Paris and New York, Kim Whanki never forgot his Korean identity. The blue sky and blue seas (A)[reminded / were reminded] him of Sinan, his home in Korea, which inspired him to create paintings (B)[filling / filled] with various shades of blue. His use of blue was an expression of (C)[what / how] much he missed the place he grew up in.",
+"choices": [
+"reminded – filling – what",
+"reminded – filled – how",
+"were reminded – filled – how",
+"were reminded – filling – what",
+"reminded – filled – what"
+],
+"answer": "②",
+"solution": "(A) 바로 뒤에 목적어 him이 있으므로 능동태 reminded가 알맞다(remind A of B). (B) 그림이 다양한 색조의 파란색으로 '채워진' 것이므로 수동의 의미를 나타내는 과거분사 filled가 알맞다. (C) 뒤에 much가 이어져 '얼마나 많이'라는 정도를 나타내므로 how가 알맞다. what은 much와 함께 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f90d1a09b3",
+"typeId": "eng-h1-b07-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것은?\n\nVan Gogh used yellow ⓐto express joy, but Edward Hopper’s use of yellow ⓑexpresses loneliness. Hopper lived in New York City for nearly six decades, and he created paintings ⓒdepicting urban scenes that showed how even familiar surroundings could cause the viewer ⓓfeel a sense of loneliness. Hopper’s Nighthawks is a good example of this. There are four people in the same diner, but they’re clearly not together. The bright yellow walls ⓔcreate a dramatic contrast to the darkness outside.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "cause는 목적격 보어로 to부정사를 쓰므로(cause+목적어+to-V) ⓓ feel은 to feel로 고쳐야 한다. ⓐ는 목적을 나타내는 to부정사이고, ⓑ는 주어의 중심이 단수 use이므로 expresses가 맞다. ⓒ는 paintings를 꾸미는 현재분사, ⓔ는 복수 주어 walls에 맞춘 create로 모두 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-97f8a2f4ed",
+"typeId": "eng-h1-b07-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nManners of the past demanded that the mouth be carefully controlled, and a small mouth was considered beautiful. Big smiles (A)[viewed / were viewed] as silly or mean. That’s why a serious expression was common in most painted portraits, both in the East and West.\nThe spread of cameras and camera companies’ advertising campaigns changed the trend. Early photographers were not very good at (B)[get / getting] people to relax in front of the camera, so they were not satisfied with their photos. To popularize cameras, the companies tried to change this by launching advertising campaigns (C)[what / that] associated photography with celebration.",
+"choices": [
+"viewed – get – what",
+"viewed – getting – that",
+"were viewed – get – that",
+"were viewed – getting – that",
+"were viewed – getting – what"
+],
+"answer": "④",
+"solution": "(A) 큰 미소가 어리석거나 못된 것으로 '여겨진' 것이므로 수동태 were viewed가 알맞다. (B) 전치사 at 뒤에는 동명사가 와야 하므로 getting이 알맞다. (C) 선행사 advertising campaigns를 꾸미고 뒤에 주어가 빠진 절이 이어지므로 주격 관계대명사 that이 알맞다. what은 선행사를 포함하므로 선행사 뒤에 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bcd549e593",
+"typeId": "eng-h1-b07-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nOur last color is red, ⓐwhich is often associated with life and energy. R.C. Gorman, ⓑknown as the Picasso of Native American art, may have felt the same way when he created Navajo Velvet. The painting depicts a woman ⓒsitting on the ground, deep in thought. Her figure in a red dress ⓓresemble a huge mountain against the background of the deep, starry blue night, ⓔsuggesting the relationship between her and nature. Sometimes red is used to express the beauty of nature. Claude Monet’s Autumn Effect at Argenteuil shows how the artist celebrated beautiful autumn moments. The bright reds in the painting ⓕsymbolizes the amazing and transformative power of nature.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓔ",
+"ⓒ, ⓓ",
+"ⓓ, ⓕ",
+"ⓔ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓓ 주어는 단수 Her figure이므로(in a red dress는 수식어구) resembles로 고쳐야 한다. ⓕ 주어는 복수 The bright reds이므로(in the painting은 수식어구) symbolize로 고쳐야 한다. ⓐ는 계속적 용법의 관계대명사, ⓑ는 '~로 알려진'이라는 뜻의 과거분사, ⓒ는 a woman을 꾸미는 현재분사, ⓔ는 능동의 분사구문으로 모두 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bebbd71b40",
+"typeId": "eng-h1-b07-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nVincent van Gogh spent his later years in Arles, a French city known for its bright and intense sunlight. There he felt great energy and the joy of life, and he expressed these feelings through bright yellow. Of the more than 900 paintings he made during his short life, around 300 are mostly yellow. His series of paintings called Sunflowers includes some of his most famous and recognizable works.",
+"choices": [
+"how van Gogh's illness damaged his eyesight",
+"van Gogh's use of yellow to express the joy of life",
+"the long history of the French city of Arles",
+"practical techniques for painting sunflowers",
+"the friendship between van Gogh and other artists"
+],
+"answer": "②",
+"solution": "글은 반 고흐가 아를에서 느낀 생기와 삶의 기쁨을 밝은 노란색으로 표현했고, 그의 작품 상당수가 노란색 중심이라는 점을 설명한다. 따라서 '삶의 기쁨을 표현하기 위한 반 고흐의 노란색 사용'이 주제다. ①의 질환이나 시력은 언급되지 않았고, ③·④·⑤는 지엽적이거나 글에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2e9292c6c6",
+"typeId": "eng-h1-b07-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nEven while he was living in Paris and New York, Kim Whanki never forgot that he was Korean. The blue skies and blue seas of Sinan, his hometown, stayed in his memory and led him to paint with many shades of blue. In his work Tranquility, countless blue dots bring up images of the sea and the sky. He said he painted each dot while thinking of friends and loved ones back home.",
+"choices": [
+"the calming effect of living near the sea",
+"how Kim Whanki expressed his longing for home through blue",
+"the difference between life in Paris and life in New York",
+"why modern artists prefer bright primary colors",
+"step-by-step techniques for painting with dots"
+],
+"answer": "②",
+"solution": "김환기가 고향 신안의 푸른 하늘과 바다를 기억하며 여러 푸른색으로 그림을 그렸고, 점 하나하나를 고향의 사람들을 생각하며 찍었다는 내용이다. 따라서 '파란색을 통한 고향에 대한 그리움의 표현'이 주제다. 나머지는 글에 없거나 부분적 소재에 불과하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c3fc51cb96",
+"typeId": "eng-h1-b07-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 알맞은 것은?\n\nUnlike van Gogh, who used yellow to show joy, Edward Hopper used yellow to express loneliness. He painted many city scenes of New York, where he lived for almost sixty years, showing how even familiar places could make people feel alone. In Nighthawks, four people sit in the same diner, yet they clearly seem to have no connection with one another. The bright yellow walls stand out against the dark street outside, emphasizing how people can feel apart even while sharing the same space.",
+"choices": [
+"Yellow: The Brightest Color in All of Modern Art",
+"Edward Hopper's Happy Early Years in New York City",
+"Finding Urban Loneliness Through Hopper's Yellow",
+"How the Diner Became a Popular Subject in Painting",
+"The Close Friendship Between van Gogh and Hopper"
+],
+"answer": "③",
+"solution": "호퍼가 노란색을 외로움을 드러내는 데 사용했고, Nighthawks에서 같은 공간에 있으면서도 단절된 사람들을 밝은 노란 벽으로 강조했다는 내용이다. 따라서 '호퍼의 노란색을 통한 도시의 외로움'이 제목으로 알맞다. ②는 '행복한'이 글과 반대이고, ①·④·⑤는 글의 핵심이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-daba6ff5a2",
+"typeId": "eng-h1-b07-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 주제로 알맞은 것은?\n\nRed is often associated with life and energy. R.C. Gorman, sometimes called the Picasso of Native American art, seems to have felt this in Navajo Velvet, which depicts a woman in a red dress sitting in deep thought. Against the deep, starry blue night, her figure resembles a huge mountain, suggesting her relationship with nature. Red can also express the beauty of nature. In Claude Monet's Autumn Effect at Argenteuil, the bright reds capture the dramatic moment when a forest turns bright red and is reflected on the surface of the river, celebrating the amazing and transformative power of nature.",
+"choices": [
+"the personal life backgrounds of Gorman and Monet",
+"how red expresses different aspects of nature in Gorman's and Monet's works",
+"the technical similarities between Navajo Velvet and Autumn Effect at Argenteuil",
+"the contrast between red and blue in modern landscape painting",
+"why red is the most emotional of all the primary colors"
+],
+"answer": "②",
+"solution": "글은 고먼의 작품에서 붉은색이 인물과 자연의 '관계'를, 모네의 작품에서 붉은색이 자연의 '아름다움과 변화의 힘'을 드러낸다고 설명한다. 즉 두 화가의 작품에서 붉은색이 자연의 서로 다른 면을 표현한다는 것이 주제다. ①은 언급되지 않았고, ③은 '기법의 유사성'이라는 근거가 없으며, ④의 붉은색 대 파란색 대비나 ⑤의 과장된 일반화는 글의 요지가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u6m3s0t0",
+"custom": true
 }
 ]

@@ -671,5 +671,82 @@
 "source": "유사 문항",
 "twinGroup": "tw-20661",
 "custom": true
+},
+{
+"id": "fill-0446e909a0",
+"typeId": "20850",
+"kind": "주관식",
+"diff": 2,
+"body": "어떤 그릇에 물을 넣을 때, 물의 깊이가 $x\\mathrm{cm}$이면 담긴 물의 부피가\n$$V(x)=\\frac{9^x-3^x}{\\ln 3}\\mathrm{cm}^3$$이다. 물의 깊이가 $1\\mathrm{cm}$일 때 수면의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$15\\mathrm{cm}^2$",
+"solution": "깊이가 $x$일 때 수면의 넓이는 $V'(x)$이다. $V'(x)=2\\cdot9^x-3^x$이므로 $V'(1)=18-3=15$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20850",
+"custom": true
+},
+{
+"id": "fill-0d3e4e3cf3",
+"typeId": "20850",
+"kind": "객관식",
+"diff": 2,
+"body": "어떤 그릇에 물을 깊이가 $x\\mathrm{cm}$가 되도록 넣었을 때, 담긴 물의 부피는\n$$V(x)=(x^3+3x^2)\\mathrm{cm}^3$$이다. 물의 깊이가 $2\\mathrm{cm}$일 때 수면의 넓이는?",
+"choices": [
+"$18\\mathrm{cm}^2$",
+"$20\\mathrm{cm}^2$",
+"$22\\mathrm{cm}^2$",
+"$24\\mathrm{cm}^2$",
+"$26\\mathrm{cm}^2$"
+],
+"answer": "④",
+"solution": "수면의 넓이는 부피 함수의 도함수이므로 $V'(x)=3x^2+6x$이다. 따라서 $V'(2)=12+12=24$이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20850",
+"custom": true
+},
+{
+"id": "fill-f780358c01",
+"typeId": "20850",
+"kind": "객관식",
+"diff": 2,
+"body": "어떤 그릇에 물을 깊이가 $x\\mathrm{cm}$가 되도록 넣었을 때, 담긴 물의 부피는\n$$V(x)=\\frac{2^{x+1}-2}{\\ln 2}\\mathrm{cm}^3$$이다. 수면의 넓이가 $16\\mathrm{cm}^2$일 때 물의 깊이는?",
+"choices": [
+"$1\\mathrm{cm}$",
+"$2\\mathrm{cm}$",
+"$3\\mathrm{cm}$",
+"$4\\mathrm{cm}$",
+"$5\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "수면의 넓이는 $V'(x)=2^{x+1}$이다. $2^{x+1}=16=2^4$이므로 $x=3$이고, 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20850",
+"custom": true
+},
+{
+"id": "fill-151b551c84",
+"typeId": "20850",
+"kind": "주관식",
+"diff": 5,
+"body": "어떤 그릇에 담긴 물의 깊이가 $x\\mathrm{cm}$일 때 수면의 넓이 $A(x)$가\n$$A(x)=(2^x-a)^2+b\\quad(a>1,\\ b>0)$$이다. $A(1)=A(3)$이고 수면의 넓이의 최솟값이 $9\\mathrm{cm}^2$일 때, 물의 깊이가 $1\\mathrm{cm}$에서 $3\\mathrm{cm}$로 증가하는 동안 추가로 들어간 물의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$\\left(68-\\frac{30}{\\ln 2}\\right)\\mathrm{cm}^3$",
+"solution": "$(2-a)^2=(8-a)^2$에서 $a=5$이고, $2^x=5$일 때 최솟값이 $b$이므로 $b=9$이다. 따라서 $A(x)=4^x-10\\cdot2^x+34$이다. 구하는 부피는 $\\int_1^3A(x)\\,dx=\\frac{60}{\\ln4}-\\frac{60}{\\ln2}+68=68-\\frac{30}{\\ln2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20850",
+"custom": true
+},
+{
+"id": "fill-9232cb76d3",
+"typeId": "20850",
+"kind": "주관식",
+"diff": 5,
+"body": "어떤 그릇의 바닥에서부터 높이 $x\\mathrm{cm}$인 지점의 수평 단면의 넓이가\n$$A(x)=(x^2+ax+b)\\mathrm{cm}^2$$이다. $A(0)=2A(2)$이고, 물을 깊이 $1\\mathrm{cm}$까지 넣었을 때 물의 부피가 $\\frac{19}{3}\\mathrm{cm}^3$이다. 이 그릇에 물이 $15\\mathrm{cm}^3$만큼 담겨 있을 때 물의 깊이를 구하시오.",
+"selfGrade": true,
+"answer": "$3\\mathrm{cm}$",
+"solution": "$A(0)=2A(2)$에서 $b=-8-4a$이고, $\\int_0^1A(x)\\,dx=\\frac{19}{3}$에서 $\\frac13+\\frac a2+b=\\frac{19}{3}$이므로 $a=-4$, $b=8$이다. 따라서 깊이가 $h$일 때 부피는 $\\frac{h^3}{3}-2h^2+8h$이다. 이를 $15$와 같게 놓으면 $(h-3)(h^2-3h+15)=0$이고 이차식은 실근이 없으므로 $h=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20850",
+"custom": true
 }
 ]

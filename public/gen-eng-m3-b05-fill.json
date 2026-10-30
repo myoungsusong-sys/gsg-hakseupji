@@ -5766,5 +5766,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b05-u5m0s0t0",
 "custom": true
+},
+{
+"id": "fill-69c34245a5",
+"typeId": "eng-m3-b05-u7m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 주어진 <조건>에 알맞게 영작하시오.\n\n이제 네가 진실을 말할 때이다.\n\n<조건>\n• 'It's time+가정법' 구문을 사용할 것\n• tell을 사용할 것 (필요시 변형할 것)\n• 총 6단어로 영작할 것",
+"selfGrade": true,
+"answer": "It's time you told the truth.",
+"solution": "'이제 ~할 때이다'는 'It's time+주어+동사의 과거형(가정법 과거)' 구문으로 나타낸다. 주어는 you이므로 tell을 과거형 told로 바꾼다. It's를 한 단어로 보아 It's/time/you/told/the/truth로 총 6단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6aaf138667",
+"typeId": "eng-m3-b05-u7m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <보기>의 단어를 사용하여 총 8단어로 알맞게 영작하시오.\n\n나는 그 가게가 문을 열었는지 확실하지 않다.\n\n<보기>\nI'm, sure, whether, the, shop, open (필요시 단어를 추가·변형할 것)",
+"selfGrade": true,
+"answer": "I'm not sure whether the shop is open.",
+"solution": "'~인지 아닌지 확실하지 않다'는 'I'm not sure whether[if]+주어+동사'로 쓴다. '확실하지 않다'이므로 not을 넣고, 명사절 접속사 whether 뒤에 the shop is open을 둔다. I'm/not/sure/whether/the/shop/is/open으로 총 8단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1a18a02cdb",
+"typeId": "eng-m3-b05-u7m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <보기>의 단어를 사용하여 총 9단어로 알맞게 영작하시오.\n\n너는 내일 아침에 일찍 일어나기로 되어 있다.\n\n<보기>\nsupposed, get, early, tomorrow (필요시 단어를 추가·변형할 것)",
+"selfGrade": true,
+"answer": "You are supposed to get up early tomorrow morning.",
+"solution": "'~하기로 되어 있다'는 'be supposed to+동사원형'으로 나타낸다. 주어 You에 맞춰 are supposed to를 쓰고, '일어나다'는 get up으로 표현한다. You/are/supposed/to/get/up/early/tomorrow/morning으로 총 9단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ddf0524a31",
+"typeId": "eng-m3-b05-u7m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 주어진 <조건>에 알맞게 영작하시오.\n\n이제 네가 너 자신의 꿈을 좇기 시작할 때이다.\n\n<조건>\n• 'It's time+가정법' 구문을 사용할 것\n• to부정사를 사용할 것\n• <보기>의 단어를 사용할 것 (필요시 변형할 것)\n• 총 9단어로 영작할 것\n\n<보기>\nstart, follow, own, dream",
+"selfGrade": true,
+"answer": "It's time you started to follow your own dream.",
+"solution": "'이제 ~할 때이다'는 'It's time+주어+과거형(가정법)'이므로 start를 started로 바꾼다. '좇기 시작하다'를 'started to follow'로 연결해 to부정사를 쓴다. '너 자신의 꿈'은 your own dream이다. It's/time/you/started/to/follow/your/own/dream으로 총 9단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-27693116b4",
+"typeId": "eng-m3-b05-u7m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <보기>의 단어를 사용하여 총 11단어로 알맞게 영작하시오.\n\n나는 그들이 나의 계획을 받아들일지를 확신할 수 없었다.\n\n<보기>\nsure, accept, plan, would, could, whether, my",
+"selfGrade": true,
+"answer": "I could not be sure whether they would accept my plan.",
+"solution": "'확신할 수 없었다'는 could not be sure로, '~인지(아닌지)'는 명사절 접속사 whether[if]로 연결한다. 주절이 과거(could)이므로 종속절도 시제를 일치시켜 will이 아닌 would를 쓴다. I/could/not/be/sure/whether/they/would/accept/my/plan으로 총 11단어이며, whether 대신 if를 써도 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c178dfa414",
+"typeId": "eng-m3-b05-u7m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <보기>의 단어를 사용하여 총 11단어로 알맞게 영작하시오.\n\n너는 가능한 한 빨리 그 보고서를 제출하기로 되어 있다.\n\n<보기>\nsupposed, submit, report, possible, as",
+"selfGrade": true,
+"answer": "You are supposed to submit the report as soon as possible.",
+"solution": "'~하기로 되어 있다'는 'be supposed to+동사원형'이고, '가능한 한 빨리'는 as soon as possible이다. 주어 You에 맞춰 are supposed to submit로 쓰고 목적어 the report를 둔 뒤 as soon as possible을 붙인다. You/are/supposed/to/submit/the/report/as/soon/as/possible로 총 11단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m6s0t0",
+"custom": true
 }
 ]

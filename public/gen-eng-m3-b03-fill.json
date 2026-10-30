@@ -5113,5 +5113,253 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-191527aac7",
+"typeId": "eng-m3-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것끼리 짝지어진 것은?\n\nHi, students! When you wake up in the morning, what is the first thing ⓐthat you do? Do you read SNS postings on your smartphone? Imagine your smartphone is not near you. How do you feel? Students, please check items on the list that ⓑare true for you.\n(....중간 생략...)\nSmartphone addiction causes you ⓒspending too much time on your smartphone. Also, you cannot focus on your studies and may have a pain in your neck.\n(....중간 생략...)\nDigital detox will also help you ⓓspend more time with others. Living without a smartphone, however, is not easy. So it is necessary ⓔof you to set some rules for using your smartphone.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓒ, ⓔ",
+"ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓒ는 「cause+목적어+to부정사」 구조이므로 spending이 아니라 to spend가 되어야 한다. ⓔ는 necessary처럼 사람의 성격을 나타내지 않는 형용사 뒤에서는 의미상 주어를 「for+목적격」으로 쓰므로 of you가 아니라 for you가 되어야 한다. ⓐ는 the first thing을 꾸미는 목적격 관계대명사이고, ⓑ는 선행사 items가 복수이므로 are가 맞다. ⓓ는 help가 목적격보어로 동사원형을 쓸 수 있으므로 spend가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1fdc8875c6",
+"typeId": "eng-m3-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 알맞은 문장의 개수는?\n\nⓐ If I didn't have a smartphone, I would spend more time with my friends.\nⓑ It was kind of him to help me with my homework.\nⓒ If she were not addicted to her smartphone, she can focus on her studies.\nⓓ Too much noise caused me feel tired.\nⓔ I often check SNS postings during I'm studying.\nⓕ It is not easy for us to live without smartphones.\nⓖ If I knew his phone number, I would call him right now.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "어법상 알맞은 문장은 ⓐ, ⓑ, ⓕ, ⓖ로 모두 4개이다. ⓒ는 가정법 과거이므로 주절에 조동사의 과거형을 써서 can을 could로 고쳐야 한다. ⓓ는 「cause+목적어+to부정사」이므로 feel을 to feel로 고쳐야 한다. ⓔ는 뒤에 「주어+동사」로 이루어진 절이 오므로 전치사 during이 아니라 접속사 while을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b039e9e90d",
+"typeId": "eng-m3-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBy Yerim, Yongmin, and Hojin\n• We will turn off our smartphones (A)[during / while] we are studying.\n• We will not take our smartphones into the bathroom.\n• We will keep our smartphones out of the bedroom and not (B)[use / using] them at night.\n\nBy Jina, Hosung, and Minsu\n• More Time for Outside Activities - We will spend more time (C)[to play / playing] outside without our smartphones.\n• Fewer SNS Messages - We will post (D)[fewer / less] SNS messages on our smartphones.\n\n     (A)        (B)       (C)          (D)",
+"choices": [
+"during – use – playing – fewer",
+"while – using – playing – fewer",
+"while – use – to play – fewer",
+"while – use – playing – fewer",
+"while – use – playing – less"
+],
+"answer": "④",
+"solution": "(A) 뒤에 절(we are studying)이 오므로 접속사 while을 쓴다. (B) 조동사 will에 keep과 함께 병렬로 연결되므로 동사원형 use를 쓴다. (C) 「spend+시간+-ing」 구문이므로 playing을 쓴다. (D) messages는 셀 수 있는 명사의 복수형이므로 fewer를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-05804eb17f",
+"typeId": "eng-m3-b03-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분을 2개 찾아 바르게 고쳐 쓰시오.\n\nSmartphone addiction causes you to spend too much time on your smartphone. Also, you cannot focus on your studies and may have a pain in your neck. Then now is the time for you to start digital detox. Digital detox means staying away from digital devices, such as smartphones and computers, for a while.\nDigital detox will help you a lot. You can enjoy freedom from the noisy digital world. You can focus more on your work. Sometimes you can feel refreshing and have new, creative ideas. Digital detox will also help you spend more time with others.\nLiving without a smartphone, however, is not easy. So it is necessary for you set some rules for using your smartphone.",
+"selfGrade": true,
+"answer": "refreshing → refreshed, set → to set",
+"solution": "주어 you가 상쾌한 감정을 느끼는 것이므로 감정을 느끼는 쪽을 나타내는 과거분사 refreshed를 써야 한다. 「It is+형용사+for+목적격+to부정사」 구문이므로 for you 뒤에 to set이 와야 한다. causes you to spend, means staying, help you spend는 모두 어법상 맞으므로 고치면 안 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4fa44a453e",
+"typeId": "eng-m3-b03-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nSmartphone addiction causes you to spend too much time on your smartphone. Also, you cannot focus on your studies and may have a pain in your neck. Then now is the time for you to start digital detox. Digital detox means staying away from digital devices, such as smartphones and computers, for a while.",
+"choices": [
+"① 스마트폰 중독은 스마트폰에 너무 많은 시간을 쓰게 만든다.",
+"② 스마트폰 중독이 되면 공부에 집중할 수 없다.",
+"③ 스마트폰 중독으로 목에 통증이 생길 수 있다.",
+"④ 디지털 디톡스는 스마트폰이나 컴퓨터 같은 디지털 기기를 영원히 완전히 없애는 것을 의미한다.",
+"⑤ 디지털 디톡스는 디지털 기기로부터 떨어져 있는 것을 뜻한다."
+],
+"answer": "④",
+"solution": "본문은 디지털 디톡스를 'staying away ... for a while(잠시 동안 떨어져 있는 것)'로 정의한다. ④는 '영원히 완전히 없애는 것'이라고 했으므로 'for a while(잠시 동안)'과 어긋나 일치하지 않는다. 나머지 ①②③⑤는 모두 본문에 그대로 제시된 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4c7f043bb0",
+"typeId": "eng-m3-b03-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nG: Minji, what are you doing?\nB: I'm uploading some photos I took with Dojin at the park today.\nG: Did you ask Dojin if you could post them online?\nB: No, but I think it's okay because they look nice.\nG: You're not supposed to post someone's pictures without asking.\nB: Oh, you're right. I'll text Dojin and ask right now.",
+"choices": [
+"① What is Minji doing now?",
+"② Where did Minji take the photos?",
+"③ Did Minji ask Dojin before uploading the photos?",
+"④ How many photos did Minji take with Dojin?",
+"⑤ What will Minji do right after the conversation?"
+],
+"answer": "④",
+"solution": "①은 사진을 올리는 중(uploading photos), ②는 공원(at the park), ③은 묻지 않음(No), ⑤는 Dojin에게 문자로 물어볼 것으로 모두 대화에서 확인된다. ④ 사진을 몇 장 찍었는지는 대화에 전혀 언급되지 않아 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6f79fda7a8",
+"typeId": "eng-m3-b03-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 통해 글쓴이가 학생들에게 궁극적으로 바라는 것으로 가장 알맞은 것은?\n\nLiving without a smartphone, however, is not easy. So, it is necessary for you to set some rules for using your smartphone. You then need to follow the rules. If we had no smartphones, our lives would be more difficult, but too much use of smartphones is dangerous. With digital detox, you can become a wise smartphone user.",
+"choices": [
+"① 스마트폰을 당장 버리고 다시는 사용하지 않기를 바란다.",
+"② 스마트폰 사용 규칙을 정해 지키며 현명한 사용자가 되기를 바란다.",
+"③ 스마트폰 없이 사는 것이 쉽다는 것을 깨닫기를 바란다.",
+"④ 친구들과 더 많은 SNS 메시지를 주고받기를 바란다.",
+"⑤ 최신 스마트폰으로 바꿔 더 편리하게 사용하기를 바란다."
+],
+"answer": "②",
+"solution": "글쓴이는 스마트폰 없이 사는 것이 쉽지 않다고 인정하면서도 과도한 사용은 위험하므로 규칙을 정해(set some rules) 지키라고 한다. 마지막 문장 'you can become a wise smartphone user'에서 최종 목표가 현명한 사용자가 되는 것임이 드러나므로 ②가 알맞다. ①은 스마트폰을 완전히 버리라는 뜻이 아니므로 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4255cad02f",
+"typeId": "eng-m3-b03-u3m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영 풀이에 해당하는 낱말을 본문에서 찾아 쓰시오.\n\nSmartphone ( A ) causes you to spend too much time on your smartphone. Also, you cannot focus on your studies and may have a pain in your neck.\n\n[영영 풀이] the state of not being able to stop using or doing something that is harmful\n\n→ 빈칸 (A)에 들어갈 한 단어를 쓰시오.",
+"selfGrade": true,
+"answer": "addiction",
+"solution": "'something을 멈출 수 없는 해로운 상태'는 '중독'을 뜻하며, 본문에서 스마트폰에 대해 반복적으로 쓰인 단어는 addiction이다. 'Smartphone addiction'이라는 표현으로 본문에 그대로 제시되어 있으므로 정답은 addiction이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bbc2750f4c",
+"typeId": "eng-m3-b03-u3m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 아래 질문에 본문에 나온 영어 표현으로 답하시오.\n\nDigital detox will help you a lot, but living without a smartphone is not easy. So, it is necessary for you to set some rules for using your smartphone. You then need to follow the rules.\n\n[질문] According to the writer, what is it necessary for you to do before using your smartphone?\n\n→ 본문에서 연속된 세 단어로 답하시오.",
+"selfGrade": true,
+"answer": "set some rules",
+"solution": "질문은 스마트폰을 사용하기 전에 해야 할 필요가 있는 일을 묻는다. 본문 'it is necessary for you to set some rules for using your smartphone'에서 핵심은 '규칙을 정하는 것'이므로, 연속된 세 단어 set some rules가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f4c9724609",
+"typeId": "eng-m3-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "밑줄 친 ⓐ~ⓔ 중 가리키는 대상이 나머지 넷과 다른 것은?\n\nNew Zealand is a place of natural beauty. ⓐIt has many beautiful lakes and waterfalls. Because of ⓑits natural beauty, many famous movies have been made there. ⓒIt is also known as the land of kiwi fruit. People say that ⓓit is one of the most beautiful countries in the world. The kiwi is a native bird of this country, and ⓔit cannot fly.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓐ, ⓑ, ⓒ, ⓓ는 모두 앞에서 소개한 나라 New Zealand(뉴질랜드)를 가리킨다. 그러나 ⓔit은 바로 앞에 나온 the kiwi, 즉 뉴질랜드의 토종 새를 가리키므로 가리키는 대상이 다르다. 따라서 답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-b4a1623b65",
+"typeId": "eng-m3-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸에 들어갈 말로 알맞은 것은?\n\nThe haka may look scary because haka dancers shout and move their bodies wildly. ____________, New Zealanders also do the haka at happy events such as weddings today. It is not always a war dance.",
+"choices": [
+"Therefore",
+"However",
+"For example",
+"In addition",
+"Finally"
+],
+"answer": "②",
+"solution": "앞 문장은 하카가 무섭게 보인다는 내용이고, 빈칸 뒤 문장은 결혼식 같은 즐거운 행사에서도 한다는 상반된 내용이다. 따라서 '역접'을 나타내는 However가 알맞다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-27b4745e7f",
+"typeId": "eng-m3-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 알맞은 곳은?\n\nNew Zealand has two main islands, the South Island and the North Island.\n\nNew Zealand is a place of natural beauty. ( ① ) It has many beautiful lakes and waterfalls. ( ② ) In the South Island, there are mountains that are covered with snow all year round. ( ③ ) You will be amazed by the fantastic views. ( ④ ) In the North Island, there are many hot springs, lakes, and areas with green grass. ( ⑤ )",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "②",
+"solution": "주어진 문장은 뉴질랜드에 남섬과 북섬이라는 두 개의 주요 섬이 있음을 처음 소개하는 내용이다. 이 문장이 들어가야 뒤에 이어지는 'In the South Island', 'In the North Island'의 언급이 자연스럽게 연결된다. 따라서 ②가 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-25f9d60ec8",
+"typeId": "eng-m3-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "글의 빈칸 (A), (B), (C)에 들어갈 말로 알맞게 연결된 것은?\n\nWhen you hear the word kiwi, what comes to your mind? Maybe a fruit, (A)____________ in New Zealand the word kiwi has a couple of meanings. First, kiwi is the name of a delicious, green fruit. A lot of kiwi fruit is grown there, (B)____________ New Zealand is known as the land of kiwi fruit. (C)____________, kiwi is a nickname for people from New Zealand.",
+"choices": [
+"(A) but  (B) so  (C) Also",
+"(A) and  (B) so  (C) However",
+"(A) but  (B) but  (C) Also",
+"(A) and  (B) because  (C) Also",
+"(A) but  (B) so  (C) However"
+],
+"answer": "①",
+"solution": "(A)는 '과일일 수도 있지만 사실 여러 뜻이 있다'는 역접이므로 but. (B)는 '키위 과일이 많이 재배되어서 과일의 나라로 알려졌다'는 인과이므로 결과를 이끄는 so. (C)는 또 다른 뜻을 덧붙이는 첨가이므로 Also가 알맞다. 따라서 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-0d9131a78c",
+"typeId": "eng-m3-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "주어진 문장에 이어질 (A), (B), (C)를 글의 흐름에 맞게 바르게 배열한 것은?\n\nKiwi is also the name of one of New Zealand's native birds.\n\n(A) Today, New Zealanders are sometimes called Kiwis throughout the world.\n(B) Also, kiwi is a nickname for people from New Zealand.\n(C) The kiwi is special to New Zealanders because it is the symbol of the nation.",
+"choices": [
+"(A) - (B) - (C)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+"answer": "⑤",
+"solution": "먼저 주어진 문장이 '새'로서의 키위를 소개하므로, 그 새가 특별한 이유를 설명하는 (C)가 바로 이어진다. 이어 Also로 또 다른 뜻인 '사람의 별명'을 덧붙이는 (B)가 오고, 마지막으로 그 결과 오늘날 뉴질랜드 사람들이 Kiwis로 불린다는 (A)로 마무리된다. 따라서 (C)-(B)-(A), 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m5s0t0",
+"custom": true
 }
 ]

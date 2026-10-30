@@ -2398,5 +2398,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b08-u6m0s0t0",
 "custom": true
+},
+{
+"id": "fill-4b1eeae6b9",
+"typeId": "eng-m3-b08-u5m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 두 단어의 관계가 나머지와 다른 하나는?",
+"choices": [
+"crush : press",
+"scare : frighten",
+"pursue : chase",
+"appreciate : value",
+"innovative : ordinary"
+],
+"answer": "⑤",
+"solution": "①~④는 서로 비슷한 뜻을 가진 유의어 관계이다. crush는 '으깨다/누르다', scare는 '겁주다', pursue는 '추구하다/뒤쫓다', appreciate는 '진가를 알아보다/높이 평가하다'로 각각의 짝과 유의어이다. 그러나 ⑤의 innovative(혁신적인)와 ordinary(평범한)는 서로 반대 뜻의 반의어 관계이므로 나머지와 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1b17c7ad22",
+"typeId": "eng-m3-b08-u5m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지와 다른 것은?",
+"choices": [
+"invent - inventor",
+"science - scientist",
+"paint - painter",
+"cook - cooker",
+"music - musician"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 모두 '어떤 일을 하는 사람'을 나타내는 관계이다(발명가, 과학자, 화가, 음악가). 그러나 ④의 cooker는 '요리하는 사람'이 아니라 '요리 기구(가스레인지 등)'를 뜻하므로 '요리하는 사람'은 cook이다. 따라서 ④만 사람이 아닌 사물을 나타내 관계가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-54e2d1fe89",
+"typeId": "eng-m3-b08-u5m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이가 설명하는 단어로 가장 알맞은 것은?\n\na piece of equipment that is made or used for a particular purpose",
+"choices": [
+"device",
+"tank",
+"slice",
+"role",
+"sign"
+],
+"answer": "①",
+"solution": "'특정한 목적을 위해 만들어지거나 쓰이는 장비 한 가지'는 device(장치, 기구)에 대한 설명이다. tank는 '(액체·기체를 담는) 통', slice는 '얇게 썬 조각', role은 '역할', sign은 '표지판/간판'을 뜻하므로 풀이에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d7da164a8e",
+"typeId": "eng-m3-b08-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어의 쓰임이 적절한 것끼리 짝지어진 것은?\n\nⓐ Da Vinci was put in charge of the kitchen in Milan.\nⓑ The machine was so innovative that everyone had already seen it many times.\nⓒ He had a great passion for cooking and never gave up.\nⓓ The device was too big to move, so it was very convenient to use.\nⓔ The frogs were scared away, so they happily stayed in the water tank.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ는 '주방을 책임지게 되었다'로 in charge of의 쓰임이 자연스럽고, ⓒ는 '요리에 대한 열정'으로 passion의 쓰임이 적절하다. ⓑ는 '혁신적'이라면서 '모두가 이미 여러 번 보았다'는 모순이고, ⓓ는 '너무 커서 옮길 수 없다'면서 '쓰기 매우 편리하다'가 모순이며, ⓔ는 '겁먹고 쫓겨났다'면서 '행복하게 머물렀다'가 모순이다. 따라서 적절한 것은 ⓐ, ⓒ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-149e50d054",
+"typeId": "eng-m3-b08-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nDa Vinci did not stop at cooking creative dishes. He wanted to cook much more quickly and easily. Thus, he (A)[invented / destroyed] several machines for the kitchen. He created a device that could (B)[crush / decorate] vegetables and pull spaghetti. Surely, they were all very innovative, but most of them were too big or too difficult to (C)[use / sell].\n\n     (A)              (B)              (C)",
+"choices": [
+"invented - crush - use",
+"destroyed - crush - use",
+"invented - decorate - use",
+"invented - crush - sell",
+"destroyed - decorate - sell"
+],
+"answer": "①",
+"solution": "(A) 더 빠르고 쉽게 요리하려고 기계를 '만들어낸(invented)' 것이 자연스럽다. (B) 채소를 '으깨고(crush)' 스파게티를 뽑는 장치이므로 crush가 맞다. (C) 바로 뒤에 기계들이 너무 크거나 '쓰기(use)' 어려웠다는 흐름이므로 use가 알맞다. 따라서 invented - crush - use인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a46d2f087e",
+"typeId": "eng-m3-b08-u5m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에 쓰인 단어의 영영풀이가 아닌 것은?\n\nIn the early 1480s, da Vinci began to work for Ludovico Sforza in Milan. He was given many different roles, such as a musician, a painter, and an engineer. He was also put in charge of the kitchen, and he was happy to pursue his passion for cooking. He created machines that could crush vegetables, and he even made a device that could scare frogs away from the water tank. They were all very innovative, but most of them were too big to use.",
+"choices": [
+"the particular position or function that someone has",
+"a person who is trained to design or build machines",
+"using new methods or ideas",
+"to press something so hard that it is damaged or broken",
+"a feeling of great happiness and joy"
+],
+"answer": "⑤",
+"solution": "①은 role(역할), ②는 engineer(기술자), ③은 innovative(혁신적인), ④는 crush(으깨다)의 영영풀이로 모두 윗글에 쓰인 단어를 바르게 설명한다. 윗글의 passion은 '무언가에 대한 매우 강한 열정/감정'을 뜻하므로 ⑤의 '커다란 행복과 기쁨의 감정'은 passion의 풀이가 아니다. 따라서 윗글 단어의 영영풀이가 아닌 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m0s0t0",
+"custom": true
 }
 ]

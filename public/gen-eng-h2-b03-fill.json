@@ -1666,5 +1666,284 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b03-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-9a523e4f22",
+"typeId": "eng-h2-b03-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhales are amazing creatures. They are enormous and live (A)[incredible / incredibly] long lives. The largest blue whales can grow as long as 30 meters and weigh over 200 tons, and some whales (B)[have known / have been known] to live for more than 100 years. These giants (C)[do / does] extremely beneficial things for the environment throughout their long lives and even after death.\n\n(A)          (B)          (C)",
+"choices": [
+"incredible – have been known – do",
+"incredibly – have known – does",
+"incredibly – have been known – do",
+"incredible – have known – does",
+"incredibly – have been known – does"
+],
+"answer": "③",
+"solution": "(A)는 형용사 long을 꾸미므로 부사 incredibly가 와야 한다. (B)의 고래들은 '~하는 것으로 알려진' 대상이므로 수동태 have been known to가 맞다. (C)의 주어 These giants는 복수이므로 동사 do를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0862d1fc49",
+"typeId": "eng-h2-b03-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOoho is a thin, edible bag (A)[made / making] from seaweed. When filled with water, it looks like a small water ball. Since the bag itself is edible, runners can simply eat the whole thing. If they don't want to, they can just bite it, drink the water inside, and then (B)[throw / throwing] the bag away. The best part? The bag will naturally break down. In other words, there is no plastic waste (C)[left / leaving] behind.\n\n(A)          (B)          (C)",
+"choices": [
+"made – throwing – left",
+"made – throw – left",
+"making – throw – leaving",
+"making – throwing – left",
+"made – throw – leaving"
+],
+"answer": "②",
+"solution": "(A)의 bag은 해초로 '만들어지는' 것이므로 과거분사 made가 알맞다. (B)는 조동사 can 뒤의 bite, drink와 and로 병렬 연결되므로 동사원형 throw를 쓴다. (C)의 plastic waste는 '남겨지는' 것이므로 과거분사 left가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dadee27fc7",
+"typeId": "eng-h2-b03-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThese creatures, called phytoplankton, may look tiny and insignificant, but when taken together, they play a significant role in reducing CO₂. They absorb about 40% of the carbon in the atmosphere and (A)[produce / producing] about 50% of the atmosphere's oxygen. They do this through photosynthesis, a process (B)[what / that] creates energy using carbon, water, and light. As whales swim back down to feed at the ocean's bottom, their movements stir up the water and bring nutrients down to the creatures (C)[lived / living] below.\n*phytoplankton 식물성 플랑크톤\n\n(A)          (B)          (C)",
+"choices": [
+"produce – what – living",
+"producing – that – lived",
+"produce – that – lived",
+"producing – what – living",
+"produce – that – living"
+],
+"answer": "⑤",
+"solution": "(A)는 주어 They의 동사 absorb와 and로 병렬 연결되므로 produce가 알맞다. (B)는 선행사 a process를 꾸미는 주격 관계대명사 자리이므로 that을 쓴다. what은 선행사를 포함하므로 여기서는 쓸 수 없다. (C)의 creatures는 아래에서 '사는' 주체이고 live는 자동사이므로 현재분사 living이 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dd1350b4ee",
+"typeId": "eng-h2-b03-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nWhales spread nutrients in the ocean not only vertically but also horizontally through a process ①called the great whale conveyor belt. These giant mammals migrate over long distances at certain times of the year. For example, in the summer, humpback whales tend to stay near Alaska, ②where the water is cold but rich in nutrients and prey for them ③to feed on. As winter approaches, they travel up to 4,800 kilometers to breed in the warm waters near Hawaii. Nutrients are relatively scarce in warm waters, ④which make it difficult for phytoplankton to survive. Fortunately, when the whales arrive in Hawaii after eating their fill in Alaska, they release a large amount of nutrient-rich waste. These nutrients support the life of many marine animals and, importantly, encourage the growth of phytoplankton even in warm waters. The spread of phytoplankton leads to ⑤increased carbon absorption throughout the entire ocean.\n*phytoplankton 식물성 플랑크톤",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "④의 계속적 용법 which는 앞 절 전체(따뜻한 물에는 영양분이 부족하다는 사실)를 받으므로 단수 취급해 makes로 고쳐야 한다. ①은 '~라고 불리는' 과정이므로 과거분사가 맞고, ②는 장소 Alaska 뒤에 완전한 절이 오므로 관계부사 where가 맞다. ③은 prey를 꾸미는 형용사적 용법의 to부정사이고, ⑤는 '증가된' 흡수량을 뜻하는 과거분사이므로 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-45caf3b6f6",
+"typeId": "eng-h2-b03-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 3개 찾아 기호를 쓰고 바르게 고치시오. (단, 한 단어로 고칠 것)\n\nMoreover, after they die, whales sink to the ocean floor with all the CO₂ ⓐwhat they absorbed during their lives. Their bodies then become food and habitats for deep-sea creatures. This process ⓑis called a whale fall. Whale falls permanently bury about 145,000 tons of CO₂ under the sea every year. This achievement is basically ⓒwhat expensive carbon capture technologies aim to do — capture carbon and then store it underground.\nIn addition to their direct absorption and burial of CO₂ through whale falls, whales also make a significant indirect contribution to ⓓreduce CO₂ through an act called a whale pump. This refers to the vertical movements of whales that ⓔhelps circulate nutrients across different depths of the ocean.\n*carbon capture 탄소 포집",
+"selfGrade": true,
+"answer": "ⓐ what → that(which), ⓓ reduce → reducing, ⓔ helps → help",
+"solution": "ⓐ는 선행사 all the CO₂가 있고 뒤 절에 absorbed의 목적어가 빠져 있으므로 what이 아니라 목적격 관계대명사 that(which)를 써야 한다. ⓓ의 contribution to에서 to는 전치사이므로 동명사 reducing이 와야 한다. ⓔ의 선행사 the vertical movements는 복수이므로 동사는 help여야 한다. ⓑ는 과정이 '불리는' 것이므로 수동태가 맞고, ⓒ는 선행사가 없고 뒤 절에 do의 목적어가 빠져 있으므로 what이 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-320ff74bcd",
+"typeId": "eng-h2-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSocial media can be a positive part of your life if you use it wisely. (A)[Setting / Set] limits on your daily usage is one helpful habit. Also, remember that the number of likes (B)[that / what] you receive does not reflect your true value. If you feel envious of others, use that feeling as motivation (C)[what / that] helps you grow.",
+"choices": [
+"Setting … that … what",
+"Set … what … that",
+"Setting … that … that",
+"Set … that … what",
+"Setting … what … that"
+],
+"answer": "③",
+"solution": "(A)는 문장의 주어 자리이므로 동명사 Setting이 알맞다. (B)는 선행사 the number of likes가 있고 뒤 절에 목적어가 빠져 있으므로 관계대명사 that이 알맞다(what은 선행사를 포함). (C)는 선행사 motivation을 수식하며 뒤 절에 주어가 빠져 있으므로 관계대명사 that이 알맞다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0935211957",
+"typeId": "eng-h2-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nCathy is a gamer who (A)[share / shares] her gameplays online. She was shocked to learn (B)[what / that] the background music in the game had a copyright claim. To avoid such issues, creators should check (C)[whether / what] any of their components are copyrighted.",
+"choices": [
+"share … that … whether",
+"shares … what … whether",
+"shares … that … what",
+"shares … that … whether",
+"share … what … what"
+],
+"answer": "④",
+"solution": "(A)의 주격 관계대명사 who의 선행사는 단수 a gamer(Cathy)이므로 동사는 shares가 알맞다. (B)는 뒤에 완전한 절이 오고 learn의 목적어가 되는 명사절이므로 접속사 that이 알맞다. (C)는 '~인지'의 뜻으로 완전한 절을 이끄는 명사절 접속사 whether가 알맞다. 따라서 ④이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-418d20b244",
+"typeId": "eng-h2-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIt is important to protect your personal information online. Choose complex passwords (A)[that / what] include a mix of letters and numbers. Also, adjust (B)[who / how] can see your posts and personal information. Finally, be careful when (C)[sharing / shared] personal details with online friends.",
+"choices": [
+"that … who … sharing",
+"what … who … shared",
+"that … how … sharing",
+"that … who … shared",
+"what … how … sharing"
+],
+"answer": "①",
+"solution": "(A)는 선행사 passwords를 수식하며 뒤 절에 주어가 없으므로 주격 관계대명사 that이 알맞다. (B)는 '누가 볼 수 있는지'의 뜻으로 뒤 동사 can see의 주어 역할을 하는 who가 알맞다. (C)는 접속사 when 뒤에서 '당신이 공유하는'의 능동 의미이고 분사구문이므로 현재분사 sharing이 알맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4b7461b240",
+"typeId": "eng-h2-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSocial media is a big part of Min's life. Lately, however, she began to be concerned about her activity. She even feels disappointed when she sees her friends' posts (A)[receiving / received] more likes than hers. In fact, many people place excessive value on the number of likes (B)[that / what] they get on their posts. Comparing their own posts with more popular ones can make them feel (C)[inferior / inferiorly].",
+"choices": [
+"received … that … inferior",
+"receiving … what … inferiorly",
+"receiving … that … inferior",
+"received … what … inferiorly",
+"receiving … that … inferiorly"
+],
+"answer": "③",
+"solution": "(A)는 posts가 좋아요를 '받는' 능동 관계이므로 현재분사 receiving이 알맞다. (B)는 선행사 the number of likes가 있고 뒤 절에 get의 목적어가 빠져 있으므로 관계대명사 that이 알맞다. (C)는 지각·상태 동사 feel의 보어 자리이므로 형용사 inferior가 알맞다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d4f2b9f3cf",
+"typeId": "eng-h2-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nTo stay away from filter bubbles, it is important to regularly check ⓐwhether you are trapped inside one. ⓑManaging your personal information is another key to avoiding them. ⓒWhenever you go online, your activities are saved as cookies on your computer. This way, you can reduce the amount of personal data ⓓwhat you unconsciously share as you visit websites. Take action now and open ⓔyourself up to new ideas.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓓ는 선행사 the amount of personal data가 있고 뒤 절에 share의 목적어가 빠져 있으므로 what을 관계대명사 that으로 고쳐야 한다. ⓐ는 '~인지'를 뜻하는 명사절 접속사 whether, ⓑ는 주어 역할의 동명사, ⓒ는 '~할 때마다'의 Whenever, ⓔ는 주어 you와 일치하는 재귀대명사로 모두 어법상 옳다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-71dae1187f",
+"typeId": "eng-h2-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMany elderly people have difficulty (A)[using / to use] kiosks, so I'd really like to help them. There's a program at the community center (B)[where / which] you can volunteer to help them. As a volunteer, you would teach senior citizens how to order food and (C)[check / checking] in for flights using kiosks.",
+"choices": [
+"(A) using (B) where (C) check",
+"(A) using (B) which (C) checking",
+"(A) to use (B) where (C) check",
+"(A) using (B) which (C) check",
+"(A) to use (B) which (C) checking"
+],
+"answer": "①",
+"solution": "(A) 'have difficulty -ing(~하는 데 어려움을 겪다)' 관용 표현이므로 using이 맞다. (B) 뒤에 'you can volunteer to help them'이라는 성분이 빠지지 않은 완전한 절이 오고 선행사가 장소(program)이므로 관계부사 where가 맞다. (C) 'order'와 and로 연결되는 병렬 구조이므로 동사원형 check가 맞다. 따라서 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fce2120016",
+"typeId": "eng-h2-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA common misconception is (A)[what / that] only highly trained experts can participate in research. However, with the help of citizen scientists, this job can (B)[complete / be completed] in just a few months. Due to global warming, the timing of seasonal cycles (C)[is / are] changing.",
+"choices": [
+"(A) that (B) complete (C) is",
+"(A) what (B) be completed (C) are",
+"(A) that (B) be completed (C) is",
+"(A) that (B) be completed (C) are",
+"(A) what (B) complete (C) is"
+],
+"answer": "③",
+"solution": "(A) 뒤에 성분이 빠지지 않은 완전한 절이 오고 be동사의 보어가 되는 명사절이므로 접속사 that이 맞다. (B) 주어 this job이 '완료되는' 대상이므로 수동태 be completed가 맞다. (C) 주어의 핵이 단수 명사 the timing이므로 is가 맞다. 따라서 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e5d42b32f",
+"typeId": "eng-h2-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe problem is that it is impossible for them (A)[to keep / keeping] track of every single plant in the country. Project Budburst can be easily (B)[accessing / accessed] anywhere you have an internet connection. You first go through a simple tutorial (C)[that / what] helps you understand what to look for.",
+"choices": [
+"(A) to keep (B) accessing (C) that",
+"(A) keeping (B) accessed (C) that",
+"(A) to keep (B) accessed (C) what",
+"(A) to keep (B) accessed (C) that",
+"(A) keeping (B) accessing (C) what"
+],
+"answer": "④",
+"solution": "(A) 'it is impossible for ~ to부정사' 구문의 진주어 자리이므로 to keep이 맞다. (B) 주어 Project Budburst가 '접속되는' 대상이므로 수동태 accessed가 맞다. (C) 선행사 a simple tutorial을 수식하고 뒤에 주어가 빠진 불완전한 절이 오므로 주격 관계대명사 that이 맞다. 따라서 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2668f95800",
+"typeId": "eng-h2-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것을 모두 고른 것은?\n\nNASA has more than three million photos of Earth ⓐtaken from space. Many of the photos are difficult ⓑto use because they lack labels for common features. With such a vast amount of data, it can be challenging for scientists ⓒsearching for specific features. The data ⓓgathered from Feature Hunter ⓔplay a crucial role in training and improving machine learning models.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓐ, ⓔ",
+"ⓒ, ⓓ"
+],
+"answer": "③",
+"solution": "ⓐ는 photos를 수식하는 과거분사(taken)로 옳고, ⓑ는 'difficult to use' 형용사+to부정사로 옳으며, ⓓ는 The data를 수식하는 과거분사(gathered)로 옳다. ⓒ는 'it is challenging for ~ to부정사' 구문이므로 searching이 아니라 to search여야 하고, ⓔ는 주어의 핵이 단수 취급되는 The data이므로 play가 아니라 plays여야 한다. 따라서 틀린 것은 ⓒ와 ⓔ, 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-98a961fac5",
+"typeId": "eng-h2-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ를 어법에 맞게 고친 것으로 적절하지 않은 것은?\n\nAs a Feature Hunter participant, you begin by viewing images and ⓐidentifies features. The data ⓑgathering from Feature Hunter plays a crucial role in improving machine learning models. Machine learning requires large sets of training data ⓒto producing accurate results. It's amazing ⓓwhat people from different countries can work together on this project. If you select Yes, this will bring you to a page ⓔon which you will be asked to identify the feature's location.",
+"choices": [
+"ⓐ: identifies → identifying",
+"ⓑ: gathering → gathered",
+"ⓒ: to producing → to produce",
+"ⓓ: what → that",
+"ⓔ: on which → which"
+],
+"answer": "⑤",
+"solution": "ⓐ는 viewing과 and로 병렬 연결되므로 identifying으로 고치는 것이 옳고, ⓑ는 The data가 '수집되는' 대상이므로 과거분사 gathered로 고치는 것이 옳으며, ⓒ는 목적을 나타내는 to부정사이므로 to produce로 고치는 것이 옳다. ⓓ는 뒤에 완전한 절이 오는 명사절이므로 what → that이 옳다. 그러나 ⓔ는 뒤에 'you will be asked to identify the location'이라는 완전한 절이 오고 선행사가 장소(a page)이므로 'on which'가 이미 옳다. 이를 which로 고치면 틀리므로 적절하지 않은 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m1s0t0",
+"custom": true
 }
 ]

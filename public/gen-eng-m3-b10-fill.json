@@ -5464,5 +5464,279 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b10-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-2b6414f125",
+"typeId": "eng-m3-b10-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것을 고르면?\n\nA hanok is a traditional Korean house. If you stayed in a hanok, you would sleep on the floor because there are no beds. Hanok houses are mostly built with natural materials such as wood, stone, straw, paper, and earth. In the cold winter, the warm ondol floors heat your body. The doors in hanok are covered with thin paper. They help keep you cool in summer.",
+"choices": [
+"In a hanok, there are many comfortable beds.",
+"The ondol floors cool your body in summer.",
+"A hanok is mostly built with natural materials.",
+"The doors in a hanok are made of thick wood.",
+"People cannot sleep on the floor in a hanok."
+],
+"answer": "③",
+"solution": "한옥은 나무·돌·짚·종이·흙 같은 자연 재료로 지어진다고 했으므로 ③이 일치한다. 침대가 없어 바닥에서 잔다고 했으니 ①·⑤는 틀리고, 온돌은 겨울에 몸을 데워 주므로 ②도 틀리다. 문은 얇은 종이로 덮여 있으므로 ④도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-21a31e2b90",
+"typeId": "eng-m3-b10-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것을 고르면?\n\nIf I lived in a tulou, a huge round house in Fujian, China, I would always have friends at home to play with. In a tulou, there are usually three to five floors. The first floor is used for cooking and eating. And people store food and tools on the second floor. My bedroom would be on the third or fourth floor. Some large tulou can house up to 50 families. They work together and share many things.",
+"choices": [
+"A tulou is a square house in China.",
+"People sleep on the first floor of a tulou.",
+"The first floor of a tulou is used for cooking and eating.",
+"Only one family can live in one tulou.",
+"People in a tulou rarely share anything."
+],
+"answer": "③",
+"solution": "토루의 1층은 요리와 식사를 위해 쓰인다고 했으므로 ③이 일치한다. 토루는 둥근 집이므로 ①이 틀리고, 침실은 3·4층에 있으므로 ②도 틀리다. 큰 토루는 최대 50가구가 살 수 있으므로 ④, 함께 일하고 많은 것을 나눈다고 했으므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1b0c351011",
+"typeId": "eng-m3-b10-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것을 고르면?\n\nIf I lived in Venice, I would take a gondola to school every morning. Venice has 118 small islands. On weekends, I would travel from island to island by a vaporetto, a water bus. Venice is known as the \"floating city.\" The old Venetians decided to live there to keep themselves safe from invaders. So they installed more than 10 million wooden poles in the ground.",
+"choices": [
+"Venice has 118 large islands.",
+"A vaporetto is a kind of gondola.",
+"Venice is known as the \"floating city.\"",
+"Old Venetians lived on the water to enjoy fishing.",
+"People in Venice installed stone poles in the ground."
+],
+"answer": "③",
+"solution": "베니스는 '떠 있는 도시'로 알려져 있다고 했으므로 ③이 일치한다. 섬 118개는 '작은' 섬이므로 ①이 틀리고, 바포레토는 수상 버스이므로 ②도 틀리다. 옛 베니스인들은 침략자로부터 안전하기 위해 그곳에 살았고, 10만 개가 넘는 '나무' 기둥을 박았으므로 ④·⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-73af6554f3",
+"typeId": "eng-m3-b10-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것을 고르면?\n\nIf I lived in a pueblo, I would climb up a ladder to enter my house. There's a hidden opening on top of the house. If unwelcome visitors appeared, I would pull the ladder up to stop them from entering. The thick walls are made of earth, straw, and water. They would keep me cool in summer and warm in winter. The house has a flat roof. I would sometimes sleep up on the roof under the moon and stars.",
+"choices": [
+"People climb up a ladder to enter a pueblo.",
+"There is a hidden opening on top of a pueblo.",
+"The thick walls are made of earth, straw, and water.",
+"The thick walls keep people warm in summer and cool in winter.",
+"People can sleep on the flat roof of a pueblo."
+],
+"answer": "④",
+"solution": "두꺼운 벽은 여름에는 시원하게, 겨울에는 따뜻하게 해 준다고 했는데 ④는 계절을 바꿔 서술했으므로 일치하지 않는다. 사다리로 들어가고(①), 꼭대기에 숨겨진 구멍이 있으며(②), 벽은 흙·짚·물로 만들어지고(③), 평평한 지붕에서 잠들기도 한다(⑤)는 모두 글과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-7abafe2f4e",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 단어와 영영풀이가 바르게 연결되지 않은 것은?",
+"choices": [
+"fence: a structure that surrounds an area of land to keep animals in or out",
+"raise: to take care of animals or children until they are grown",
+"realize: to understand or become aware of something",
+"prevent: to allow something to happen freely",
+"community: the people who live in the same area or town"
+],
+"answer": "④",
+"solution": "prevent는 '막다, 예방하다'라는 뜻이므로 영영풀이는 to stop something from happening이어야 한다. ④의 풀이는 '어떤 일이 자유롭게 일어나도록 허락하다'라는 뜻으로 prevent와 반대된다. 나머지 단어는 모두 영영풀이와 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c48d3803b3",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• Farmers want to ______ their cows from the lions.\n• We should ______ wild animals and their homes.",
+"choices": [
+"ignore",
+"protect",
+"complain",
+"invent",
+"discover"
+],
+"answer": "②",
+"solution": "첫 번째 문장은 '농부들은 사자들로부터 소를 보호하고 싶어 한다', 두 번째 문장은 '우리는 야생 동물과 그들의 서식지를 보호해야 한다'라는 뜻이다. 'protect A from B(B로부터 A를 보호하다)'의 쓰임을 알면 풀 수 있으므로 protect가 알맞다. ignore(무시하다), complain(불평하다), invent(발명하다), discover(발견하다)는 두 문장 모두에 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6f5d6ece30",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 단어의 쓰임이 문맥상 어색한 것은?",
+"choices": [
+"The lions were <u>afraid</u> of the moving light.",
+"I <u>came up with</u> a great idea to solve the problem.",
+"Thanks to the <u>scholarship</u>, she could go to a great school.",
+"He <u>ignored</u> the problem, so he solved it quickly.",
+"My small idea <u>made a difference</u> in people's lives."
+],
+"answer": "④",
+"solution": "ignore는 '무시하다'라는 뜻이다. 문제를 무시했는데 그 결과 문제를 빨리 해결했다는 것은 앞뒤 내용이 맞지 않는다. 문맥상 ignored 자리에는 '문제에 주의를 기울였다'와 같은 뜻의 말이 와야 한다. 나머지는 모두 문맥에 맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c35f0ea1cb",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 (A)~(C)의 영영풀이에 해당하는 단어를 순서대로 바르게 짝지은 것은?\n\n(A) to stop something from happening or someone from doing something\n(B) a small device that you press to turn electricity on or off\n(C) damaged and not working properly",
+"choices": [
+"protect – switch – broken",
+"prevent – battery – broken",
+"prevent – switch – broken",
+"prevent – switch – electronic",
+"ignore – sign – broken"
+],
+"answer": "③",
+"solution": "(A)는 '막다, 예방하다'라는 뜻의 prevent이다. 비슷해 보이는 protect는 '보호하다'라는 뜻이다. (B)는 전기를 켜고 끄기 위해 누르는 장치인 switch이며, battery는 전기를 저장하는 장치라서 맞지 않는다. (C)는 '고장 난'이라는 뜻의 broken이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-193472e1e8",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것의 개수는?\n\na. Lions are afraid ______ a moving light. — of\nb. I came ______ with a new idea. — up\nc. Richard's lights are used to scare ______ elephants. — from\nd. He has set ______ lights at seven homes. — on\ne. ______ to my work, I got a scholarship. — Thanks",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "a는 be afraid of(~을 두려워하다), b는 come up with(~을 생각해 내다), e는 thanks to(~ 덕분에)이므로 바르게 짝지어졌다. c는 '쫓아 버리다'라는 뜻의 scare away가 되어야 하므로 from은 틀렸다. d는 '설치하다'라는 뜻의 set up이 되어야 하므로 on은 틀렸다. 따라서 바른 것은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-81f7dd6499",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 단어의 영영풀이를 <보기>에서 골라 바르게 짝지은 것은?\n\nThe southern part of the park does not have a fence, so wild animals like lions move out of the park freely. They kill the animals that farmers are raising. As a result, farmers try to kill the lions because they want to (A)______ their animals.\n\nOne morning, I woke up and saw our cow lie on the ground. It was dead, and I felt so bad. At first, I thought I couldn't do anything because I was only eleven. Then I realized I shouldn't (B)______ the problem. I really wanted to help the people in my town in the same situation.\n\n<보기>\nⓐ to pay no attention to someone or something\nⓑ to keep someone or something safe from harm or injury\nⓒ to learn or find out something surprising\nⓓ to stop something from happening\nⓔ to say or write that you are unhappy about something",
+"choices": [
+"(A) ⓑ – (B) ⓐ",
+"(A) ⓓ – (B) ⓐ",
+"(A) ⓑ – (B) ⓒ",
+"(A) ⓓ – (B) ⓔ",
+"(A) ⓑ – (B) ⓔ"
+],
+"answer": "①",
+"solution": "(A)는 농부들이 자신의 가축을 '보호하고' 싶어 한다는 내용이므로 protect가 들어가고, 영영풀이는 ⓑ이다. ⓓ(prevent)는 동물을 목적어로 삼아 '보호하다'라는 뜻을 만들 수 없다. (B)는 어리지만 그 문제를 '무시하면' 안 된다는 것을 깨달았다는 내용이므로 ignore가 들어가고, 영영풀이는 ⓐ이다. ⓔ(complain)는 목적어 앞에 about이 필요하고, 문맥에도 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3e24173435",
+"typeId": "eng-m3-b10-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, (1)~(4)의 영영풀이에 해당하는 단어를 글에서 찾아 각각 한 단어의 원형으로 쓰시오.\n\nOne night, I was walking around the cows with a light, and the lions didn't come. I discovered that lions were afraid of a moving light. So I came up with an idea. I decided to invent lights that move electronically. … Since then, I have set up lights at seven homes in my community. … From this experience, I realized that I could make a difference in people's lives even though I am just a young boy. … Thanks to my work, I got a scholarship to a great school in Kenya.\n\n(1) to understand or become aware of something\n(2) to produce or design something that has not existed before\n(3) the people who live in the same area or town\n(4) an amount of money that is given by a school or an organization to help pay for a student's education",
+"selfGrade": true,
+"answer": "(1) realize (2) invent (3) community (4) scholarship",
+"solution": "(1)은 '깨닫다'라는 뜻이므로 realized의 원형 realize가 답이다. 글 속의 discovered(발견하다)는 '놀라운 것을 알아내다'라는 뜻이라 함정이다. (2)는 '발명하다'라는 뜻의 invent이다. came up with는 두 단어 이상이어서 조건에 맞지 않는다. (3)은 '지역 사회'라는 뜻의 community, (4)는 '장학금'이라는 뜻의 scholarship이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-36256c4aea",
+"typeId": "eng-m3-b10-u5m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 밑줄 친 ⓐ~ⓔ의 우리말을 영작한 것으로 알맞지 않은 것은?\n\nB: ⓐ민주야, 우리는 새 기타가 필요해, but ⓑ우리는 그것을 살 충분한 돈이 없어.\nG: ⓒ돈을 모으기 위해 콘서트를 여는 것에 대해 어떻게 생각해? We can introduce our new song, too.\nB: ⓓ정말 멋진 생각이야! It'll be like ‘Killing two birds with one stone.’\nG: That's right. ⓔ우리의 콘서트를 위해 먼저 포스터를 만들자.\nB: Okay.",
+"choices": [
+"ⓐ: Minju, we need a new guitar",
+"ⓑ: we don't have enough money for one",
+"ⓒ: What do you think of having a concert to raise money?",
+"ⓓ: How a great idea!",
+"ⓔ: Let's first make a poster for our concert."
+],
+"answer": "④",
+"solution": "‘정말 ~한 …구나!’라는 감탄문에서 뒤에 ‘a + 형용사 + 명사’가 오면 How가 아니라 What을 써야 한다. 그래서 ⓓ는 What a great idea!가 되어야 한다. 의견을 묻는 What do you think of ~ing?, 제안하는 Let's ~ 표현은 모두 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d73bd0e9b0",
+"typeId": "eng-m3-b10-u5m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n그들에게는, 행동보다 더 큰 소리를 내는 것은 바로 말이다.\n\nTo them, ( that / words / speak / it / is ) louder than actions.",
+"selfGrade": true,
+"answer": "To them, it is words that speak louder than actions.",
+"solution": "‘바로 ~이다’는 It is ~ that 강조구문으로 나타낸다. 강조하려는 말인 words를 It is와 that 사이에 넣는다. 그리고 that 뒤에는 문장의 나머지 부분(speak louder than actions)을 이어 쓴다. 강조되는 words가 복수이므로 동사는 speak를 그대로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-a53da9a54d",
+"typeId": "eng-m3-b10-u5m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nLook before you leap:\n결정을 내리기 전에 당신 앞에 있는 것을 확인하라.\n\nI totally agree. We should always be careful before we decide to do something. Then we'll be happy with the results of our decisions.\nPosted by Suzi Kang\n\n<조건>\n• 관계대명사 what을 이용할 것\n• 전치사 before 뒤에 동명사를 쓸 것\n• 아래 단어를 이용하여 총 11단어로 쓸 것 (필요시 어형 변화 가능)\ncheck, front, before, make, decision",
+"selfGrade": true,
+"answer": "Check what is in front of you before making a decision.",
+"solution": "‘당신 앞에 있는 것’은 선행사를 포함한 관계대명사 what을 써서 what is in front of you로 나타낸다. 명령문이므로 동사원형 Check로 시작한다. 전치사 before 뒤에는 동명사가 와야 하므로 make를 making으로 바꾼다. 단어 수는 총 11개다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4102b7c3d5",
+"typeId": "eng-m3-b10-u5m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 <조건>에 맞게 영작하시오.\n\nI don't agree. Opportunities don't come often. If there is a chance, we should grab it. Or, it will be too late. (A)내가 학교 하키 팀의 주장이 되어 달라고 요청받은 것은 바로 작년이었다. However, I took too much time to decide, so another friend became the captain. Now, I regret it. As the saying goes, ‘Strike while the iron is hot.’\nPosted by Brian Pearson\n\n<조건>\n• ‘It ~ that’ 강조구문을 이용하여 last year를 강조할 것\n• 수동태를 이용할 것\n• 아래 단어를 이용하여 총 17단어로 쓸 것 (필요시 어형 변화 가능)\nask, captain, school hockey team",
+"selfGrade": true,
+"answer": "It was last year that I was asked to be the captain of the school hockey team.",
+"solution": "강조하려는 대상인 last year를 It과 that 사이에 둔다. 과거의 일이므로 is가 아니라 was를 쓴다. ‘요청받았다’는 수동태 was asked로 쓰고, 그 뒤에 to부정사 to be the captain of the school hockey team을 이어 쓴다. It is를 쓰거나 능동태 asked를 쓰는 함정에 주의해야 한다. 단어 수는 총 17개다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2bd0899676",
+"typeId": "eng-m3-b10-u5m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 2개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nI disagree with your opinion. I ⓐwas really close with my neighbor, Jenny. She was from America and we liked the same basketball team. We spent a lot of time ⓑwatch games together. Then her family moved away three years ago. I ⓒhaven't seen her since, but I still remember the times we had. I miss her more and more as time goes by. It is the quality of time ⓓwhat makes people ⓔremember each other.\nPosted by Jaeha Park",
+"selfGrade": true,
+"answer": "ⓑ watching, ⓓ that",
+"solution": "‘~하는 데 시간을 보내다’는 spend + 시간 + 동사ing로 쓰므로 ⓑ watch는 watching이 되어야 한다. ⓓ는 It is ~ that 강조구문의 that 자리이므로 what을 that으로 고쳐야 한다. ⓒ는 since와 함께 쓴 현재완료로 바르다. ⓔ는 사역동사 make의 목적격 보어로 동사원형이 왔으므로 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m5s0t0",
+"custom": true
 }
 ]

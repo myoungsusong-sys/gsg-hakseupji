@@ -5659,5 +5659,209 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u2m0s1t0",
 "custom": true
+},
+{
+"id": "fill-1f1a304854",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "점 I가 $\\triangle ABC$의 내심일 때, 점 I에서 세 꼭짓점 A, B, C까지의 거리는 서로 같다. 즉 $\\overline{IA}=\\overline{IB}=\\overline{IC}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "내심은 세 내각의 이등분선의 교점이므로 내심에서 같은 것은 세 '변'까지의 거리입니다. 세 꼭짓점까지의 거리가 같은 점은 외심입니다. 따라서 틀린 문장입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-5ba20093ac",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$에서 $\\angle A=70^\\circ$이고 점 I가 $\\triangle ABC$의 내심일 때, $\\angle BIC=140^\\circ$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "내심 I에 대하여 $\\angle BIC=90^\\circ+\\frac{1}{2}\\angle A$입니다. 따라서 $\\angle BIC=90^\\circ+35^\\circ=125^\\circ$입니다. $140^\\circ$는 외심 O에서의 $\\angle BOC=2\\angle A$로 계산한 값이므로 틀린 문장입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-a7432093b1",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "둔각삼각형의 외심은 삼각형의 외부에 있지만, 둔각삼각형의 내심은 항상 삼각형의 내부에 있다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "내심은 세 내각의 이등분선의 교점이고, 각의 이등분선은 늘 삼각형 내부를 지납니다. 따라서 삼각형의 종류와 상관없이 내심은 항상 삼각형의 내부에 있습니다. 둔각삼각형의 외심은 외부에 있으므로 옳은 문장입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-8f63f29691",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "점 I가 $\\triangle ABC$의 내심일 때, 다음 중 옳지 않은 것은?",
+"choices": [
+"$\\angle IAB=\\angle IAC$",
+"점 I에서 세 변 AB, BC, CA까지의 거리는 모두 같다.",
+"$\\overline{IA}=\\overline{IB}=\\overline{IC}$",
+"$\\angle IBA=\\angle IBC$",
+"$(\\triangle IAB\\text{의 넓이}):(\\triangle IBC\\text{의 넓이})=\\overline{AB}:\\overline{BC}$"
+],
+"answer": "③",
+"solution": "내심은 세 내각의 이등분선의 교점이므로 ①, ④는 옳고, 세 변까지의 거리가 같으므로 ②도 옳습니다. 두 삼각형의 높이가 모두 내접원의 반지름 $r$이므로 넓이의 비는 밑변의 비와 같아 ⑤도 옳습니다. 세 꼭짓점까지의 거리가 같은 점은 외심이므로 ③이 옳지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-20d88aa463",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\angle C=90^\\circ$이고 $\\overline{BC}=6$, $\\overline{CA}=8$, $\\overline{AB}=10$인 직각삼각형 ABC의 내심을 I라 할 때, 다음 중 옳은 것은?",
+"choices": [
+"$\\triangle ABC$의 넓이는 48이다.",
+"$\\triangle ABC$의 둘레의 길이는 26이다.",
+"내접원의 반지름의 길이는 2이다.",
+"내접원의 반지름의 길이는 4이다.",
+"내심 I는 빗변 AB의 중점이다."
+],
+"answer": "③",
+"solution": "넓이는 $\\frac{1}{2}\\times6\\times8=24$이고 둘레의 길이는 $6+8+10=24$입니다. $24=\\frac{1}{2}\\times r\\times24$에서 $r=2$이므로 ③이 옳습니다. 빗변의 중점은 직각삼각형의 외심이므로 ⑤는 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-a88b8dd208",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\triangle ABC$에서 $\\angle A=80^\\circ$이고 점 I가 $\\triangle ABC$의 내심일 때, 다음 중 옳지 않은 것은?",
+"choices": [
+"$\\angle BIC=130^\\circ$",
+"$\\angle IBC+\\angle ICB=50^\\circ$",
+"$\\angle IAB=40^\\circ$",
+"항상 $\\angle IBC=\\angle ICB$이다.",
+"내심 I는 $\\triangle ABC$의 내부에 있다."
+],
+"answer": "④",
+"solution": "$\\angle B+\\angle C=100^\\circ$이므로 $\\angle IBC+\\angle ICB=50^\\circ$이고, $\\angle BIC=180^\\circ-50^\\circ=130^\\circ$입니다. 또 $\\angle IAB=\\frac{1}{2}\\times80^\\circ=40^\\circ$입니다. $\\angle IBC=\\angle ICB$는 $\\angle B=\\angle C$일 때만 성립하므로 ④가 옳지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-8bee1757c6",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기> 중 옳은 것을 모두 고른 것은?\n\n<보기>\nㄱ. 이등변삼각형의 외심과 내심은 모두 꼭지각의 이등분선 위에 있다.\nㄴ. 직각삼각형의 내심은 빗변의 중점이다.\nㄷ. 예각삼각형 ABC의 내심을 I, 외심을 O라 하면 $\\angle BIC=90^\\circ+\\frac{1}{2}\\angle A$, $\\angle BOC=2\\angle A$이다.\nㄹ. 삼각형의 내심에서 세 꼭짓점까지의 거리는 모두 같다.",
+"choices": [
+"ㄱ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "이등변삼각형에서 꼭지각의 이등분선은 밑변의 수직이등분선과 같으므로 외심과 내심이 모두 그 위에 있어 ㄱ은 옳습니다. 빗변의 중점은 외심이므로 ㄴ은 틀리고, ㄷ은 내심과 외심의 각에 대한 성질이므로 옳습니다. 세 꼭짓점까지의 거리가 같은 점은 외심이므로 ㄹ은 틀립니다. 따라서 옳은 것은 ㄱ, ㄷ입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-f770852885",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\overline{AB}=7$, $\\overline{BC}=8$, $\\overline{CA}=9$인 $\\triangle ABC$의 내접원이 세 변 AB, BC, CA와 만나는 점을 각각 D, E, F라 할 때, 다음 <보기> 중 옳은 것을 모두 고른 것은?\n\n<보기>\nㄱ. $\\overline{AD}=\\overline{AF}$\nㄴ. $\\overline{BD}=3$\nㄷ. $\\overline{CE}=6$\nㄹ. $\\triangle ABC$의 둘레의 길이는 24이다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "④",
+"solution": "원 밖의 한 점에서 그은 두 접선의 길이는 같으므로 ㄱ은 옳습니다. $\\overline{AD}=x$로 놓으면 $\\overline{BD}=\\overline{BE}=7-x$, $\\overline{CF}=\\overline{CE}=9-x$이고 $(7-x)+(9-x)=8$에서 $x=4$입니다. 따라서 $\\overline{BD}=3$, $\\overline{CE}=5$이므로 ㄴ은 옳고 ㄷ은 틀립니다. 둘레의 길이는 $7+8+9=24$이므로 ㄹ도 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-9b8f8f84b8",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\overline{AB}=10$, $\\overline{BC}=9$, $\\overline{CA}=8$인 $\\triangle ABC$의 내심 I를 지나고 변 BC에 평행한 직선이 두 변 AB, AC와 만나는 점을 각각 D, E라 하자. 다음 중 옳은 것의 개수는?\n\nㄱ. $\\overline{DB}=\\overline{DI}$\nㄴ. $\\overline{EI}=\\overline{EC}$\nㄷ. $\\overline{DE}=\\overline{BC}$\nㄹ. $\\triangle ADE$의 둘레의 길이는 18이다.\nㅁ. $\\triangle ADE$의 둘레의 길이는 27이다.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "$\\angle DBI=\\angle IBC=\\angle DIB$(엇각)이므로 $\\triangle DBI$는 이등변삼각형이 되어 $\\overline{DB}=\\overline{DI}$이고, 같은 방법으로 $\\overline{EI}=\\overline{EC}$입니다. 따라서 $\\overline{DE}=\\overline{DB}+\\overline{EC}$이므로 ㄷ은 반드시 성립하지는 않습니다. $\\triangle ADE$의 둘레의 길이는 $\\overline{AB}+\\overline{AC}=18$이므로 ㄹ은 옳고 ㅁ은 틀립니다. 옳은 것은 ㄱ, ㄴ, ㄹ의 3개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-8f69d16950",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "$\\angle C=90^\\circ$이고 $\\overline{AC}=5$, $\\overline{BC}=12$, $\\overline{AB}=13$인 직각삼각형 ABC의 내심을 I, 외심을 O라 할 때, 다음 <보기> 중 옳은 것을 모두 고른 것은?\n\n<보기>\nㄱ. 내접원의 반지름의 길이는 2이다.\nㄴ. 외접원의 반지름의 길이는 $\\frac{13}{2}$이다.\nㄷ. $\\triangle IAB$의 넓이는 12이다.\nㄹ. (내접원의 넓이) : (외접원의 넓이) $=4:13$\nㅁ. $\\angle AIB=135^\\circ$",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㅁ",
+"ㄱ, ㄴ, ㅁ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ, ㅁ"
+],
+"answer": "③",
+"solution": "넓이는 $\\frac{1}{2}\\times5\\times12=30$, 둘레는 30이므로 $30=\\frac{1}{2}\\times r\\times30$에서 $r=2$입니다. 외심은 빗변의 중점이므로 외접원의 반지름은 $\\frac{13}{2}$입니다. $\\triangle IAB=\\frac{1}{2}\\times13\\times2=13$이므로 ㄷ은 틀리고, 넓이의 비는 $4\\pi:\\frac{169}{4}\\pi=16:169$이므로 ㄹ도 틀립니다. $\\angle AIB=90^\\circ+\\frac{1}{2}\\times90^\\circ=135^\\circ$이므로 옳은 것은 ㄱ, ㄴ, ㅁ입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-276ee660e8",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\triangle ABC$에서 $\\angle A:\\angle B:\\angle C=2:3:4$이고, 점 I는 $\\triangle ABC$의 내심, 점 O는 $\\triangle ABC$의 외심이다. 다음 중 옳은 것의 개수를 구하시오.\n\nㄱ. $\\angle BIC=110^\\circ$\nㄴ. $\\angle BOC=80^\\circ$\nㄷ. $\\angle AIC=120^\\circ$\nㄹ. $\\angle IAB+\\angle IBC+\\angle ICA=90^\\circ$\nㅁ. $\\angle AIB=140^\\circ$\nㅂ. $\\angle OBC=\\angle IBC$",
+"selfGrade": true,
+"answer": "4",
+"solution": "세 각은 $\\angle A=40^\\circ$, $\\angle B=60^\\circ$, $\\angle C=80^\\circ$이고 예각삼각형이므로 외심은 내부에 있습니다. $\\angle BIC=90^\\circ+20^\\circ=110^\\circ$, $\\angle BOC=2\\times40^\\circ=80^\\circ$, $\\angle AIC=90^\\circ+30^\\circ=120^\\circ$, $20^\\circ+30^\\circ+40^\\circ=90^\\circ$이므로 ㄱ, ㄴ, ㄷ, ㄹ은 옳습니다. $\\angle AIB=90^\\circ+40^\\circ=130^\\circ$이고, $\\angle OBC=\\frac{180^\\circ-80^\\circ}{2}=50^\\circ$, $\\angle IBC=30^\\circ$이므로 ㅁ, ㅂ은 틀립니다. 따라서 옳은 것은 4개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
+},
+{
+"id": "fill-e22fddd573",
+"typeId": "exam-m22-u0m1s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "$\\overline{AB}=13$, $\\overline{BC}=14$, $\\overline{CA}=15$이고 넓이가 84인 $\\triangle ABC$의 내심을 I라 하자. 내접원이 변 BC와 만나는 점을 D라 하고, 점 I를 지나고 변 BC에 평행한 직선이 두 변 AB, AC와 만나는 점을 각각 P, Q라 할 때, 다음 <보기> 중 옳은 것을 모두 고른 것은?\n\n<보기>\nㄱ. 내접원의 반지름의 길이는 4이다.\nㄴ. $\\overline{BD}=6$\nㄷ. $(\\triangle IBC\\text{의 넓이}):(\\triangle ICA\\text{의 넓이})=14:15$\nㄹ. $\\triangle APQ$의 둘레의 길이는 29이다.\nㅁ. $\\overline{IA}=\\overline{IB}$",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ, ㅁ"
+],
+"answer": "③",
+"solution": "둘레가 42이므로 $84=\\frac{1}{2}\\times r\\times42$에서 $r=4$입니다. 접선의 길이를 이용하면 $\\overline{BD}=\\frac{13+14-15}{2}=6$이고, 두 삼각형의 높이가 모두 $r$이므로 넓이의 비는 $14:15$입니다. $\\triangle APQ$의 둘레의 길이는 $\\overline{AB}+\\overline{AC}=28$이므로 ㄹ은 틀리고, 내심에서 꼭짓점까지의 거리는 일반적으로 같지 않으므로 ㅁ도 틀립니다. 따라서 옳은 것은 ㄱ, ㄴ, ㄷ입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s1t0",
+"custom": true
 }
 ]

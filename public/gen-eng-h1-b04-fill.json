@@ -3554,5 +3554,553 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b04-u0m5s0t0",
 "custom": true
+},
+{
+"id": "fill-9a36a0d493",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 had discovered를 어법에 맞게 고쳐 쓰시오.\n\nAn unknown painting that seemed to be a work of Rembrandt had discovered in 2016.",
+"selfGrade": true,
+"answer": "had been discovered",
+"solution": "그림(painting)은 사람에 의해 '발견되는' 대상이므로 수동의 의미가 필요하다. 따라서 과거완료 능동형 had discovered를 과거완료 수동형 had been discovered로 고쳐야 한다. 「had + p.p.」에 be동사를 넣어 「had been + p.p.」로 만든다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b48b4e5155",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 offer를 어법에 맞게 고쳐 쓰시오.\n\nThe experts requested them offer some evidence.",
+"selfGrade": true,
+"answer": "to offer",
+"solution": "request는 「request + 목적어 + to부정사」 형태로 목적격 보어 자리에 to부정사를 취하는 동사이다. 따라서 동사원형 offer를 to offer로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a6de8e1898",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 that을 어법에 맞게 고쳐 쓰시오.\n\nThe AI program produced that seemed to be a genuine Rembrandt.",
+"selfGrade": true,
+"answer": "what",
+"solution": "동사 produced의 목적어 역할을 하면서 뒤 절의 주어가 비어 있는 선행사 없는 관계대명사가 필요하다. 선행사를 포함하는 관계대명사 what이 '~하는 것'의 의미로 쓰여야 하므로 that을 what으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-362f978789",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장에서 밑줄 친 that을 어법에 맞게 고쳐 쓰시오.\n\nLet us look at the mechanism of AI creativity, that is programmed to work in a similar way to human creativity.",
+"selfGrade": true,
+"answer": "which",
+"solution": "콤마(,) 뒤에서 앞 명사(AI creativity)를 부연 설명하는 계속적 용법이다. 관계대명사 that은 콤마를 동반한 계속적 용법으로 쓸 수 없으므로 which로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b1ddb454c3",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장에서 밑줄 친 is를 어법에 맞게 고쳐 쓰시오.\n\nThis does not mean that an AI system becomes an artist in the same way that a human is.",
+"selfGrade": true,
+"answer": "does",
+"solution": "앞에 나온 일반동사 becomes(an artist가 '된다')를 대신하는 대동사가 필요하다. 일반동사를 대신할 때는 be동사가 아니라 do동사를 쓰므로, 주어 a human(3인칭 단수·현재)에 맞추어 is를 does로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-50e618747c",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장에서 밑줄 친 discover를 어법에 맞게 고쳐 쓰시오.\n\nThis learning process enables a machine discover distinct patterns from numerous data.",
+"selfGrade": true,
+"answer": "to discover",
+"solution": "enable은 「enable + 목적어 + to부정사」 구조로, 목적격 보어 자리에 to부정사를 취한다. 따라서 동사원형 discover를 to discover로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a94b011c03",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nThe AI program learned ⓐto imitate Rembrandt's style by ⓑexamine data from his 346 works. It was then ⓒgiven an order and produced a portrait ⓓwhat seemed to be genuine. The experts, ⓔwho recognized the vivid style, were stunned.",
+"selfGrade": true,
+"answer": "ⓑ examine → examining, ⓓ what → that(또는 which)",
+"solution": "ⓑ 전치사 by 뒤에는 명사 상당어구가 와야 하므로 동명사 examining으로 고친다. ⓓ 앞에 선행사 a portrait가 있으므로 선행사를 포함하는 what은 쓸 수 없고, 주격 관계대명사 that(또는 which)으로 고쳐야 한다. ⓐ는 learn to부정사, ⓒ는 was given 수동태, ⓔ는 계속적 용법의 who로 모두 어법에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2eca54bc8a",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nHuman artistic creativity, ⓐwhich raises ethical questions, ⓑare not yet thoroughly understood and cannot simply ⓒbe compared with any AI system. Even so, we have AI techniques ⓓthat are able ⓔimitate human creative activities.",
+"selfGrade": true,
+"answer": "ⓑ are → is, ⓔ imitate → to imitate",
+"solution": "ⓑ 문장의 주어는 단수명사 Human artistic creativity이므로 동사를 단수형 is로 고쳐야 한다(사이의 which절에 현혹되지 않아야 함). ⓔ be able to 뒤에는 to부정사가 와야 하므로 imitate를 to imitate로 고친다. ⓐ 계속적 용법 which, ⓒ 조동사+수동태 be compared, ⓓ 주격 관계대명사 that은 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-87b9138fb7",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nOn March 13, 2016, an unknown painting that seemed to be a work of Rembrandt ⓐdiscovered. Experts from all over the world ⓑgathered to view it, and they ⓒrequested the engineers offer some evidence. The engineers, ⓓwho had developed the AI, immediately ⓔpresented a video.",
+"selfGrade": true,
+"answer": "ⓐ discovered → was discovered, ⓒ offer → to offer",
+"solution": "ⓐ 그림은 '발견되는' 대상이고 이 문장의 본동사가 필요하므로 수동태 was discovered로 고쳐야 한다(discovered만 쓰면 본동사가 없는 비문이 된다). ⓒ request는 「request + 목적어 + to부정사」를 취하므로 offer를 to offer로 고친다. ⓑ 자동사 gathered, ⓓ 계속적 용법 who, ⓔ 능동형 presented는 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-909e660c11",
+"typeId": "eng-h1-b04-u3m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 세 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오. (어색한 부분만 고칠 것)\n\nAI creativity is programmed to work in a similar way to human creativity. Think of neural networks. It ⓐmakes a machine \"think,\" distinguish, and create in a similar way to a human brain. The machine doesn't simply follow human orders but ⓑlearns by itself, ⓒwhich is done through a branch of machine learning ⓓcalling deep learning. This learning process enables a machine ⓔdiscover distinct patterns from numerous data ⓕwhat are collected from many sources.",
+"selfGrade": true,
+"answer": "ⓓ calling → called, ⓔ discover → to discover, ⓕ what → that(또는 which)",
+"solution": "ⓓ '딥러닝이라고 불리는'의 수동 의미이므로 현재분사 calling을 과거분사 called로 고친다. ⓔ enable은 「enable + 목적어 + to부정사」 구조이므로 discover를 to discover로 고친다. ⓕ 앞에 선행사 numerous data가 있으므로 선행사를 포함하는 what은 쓸 수 없고 주격 관계대명사 that(또는 which)으로 고쳐야 한다. ⓐ 사역동사가 아닌 일반동사 make의 3인칭 단수 makes, ⓑ 대등한 learns, ⓒ 앞 절 전체를 받는 계속적 용법 which는 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-fc607870cb",
+"typeId": "eng-h1-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nFirst, start small. Don't try to do too much, too quickly. A habit is formed through repetition, so make the change easier to repeat. Second, make your goal specific. Don't say, \"I'll meditate regularly.\" Say, \"I'll meditate for five minutes each day.\" This works even better if you combine your new habit with an existing one. Third, make it attractive. Pair your new change with what you love. Fourth, track your progress. Mark a calendar with an X every time you finish something. Fifth, be flexible. Forming a new habit takes time. If you find that your progress has stopped for any reason, just pick up where you left off.",
+"choices": [
+"the history of meditation",
+"reasons why old habits are hard to break",
+"how to choose calming music",
+"practical tips for forming a new habit",
+"the dangers of setting specific goals"
+],
+"answer": "④",
+"solution": "글은 First부터 Fifth까지 새 습관을 들이는 방법(작게 시작하기, 구체적인 목표 세우기, 매력적으로 만들기, 진행 상황 기록하기, 유연하게 하기)을 차례로 설명한다. 따라서 주제는 ④ '새 습관을 형성하기 위한 실용적인 방법'이다. 명상과 음악은 예시로만 나오고, ⑤는 구체적인 목표를 세우라는 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e51ebd9e45",
+"typeId": "eng-h1-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 알맞은 것은?\n\nDear subscribers, will you try writing your morning pages, too? You never know what creative energy or ideas you have until you start exploring. Don't be a perfectionist, though. If you miss a few days, simply open your notebook and start again! The ultimate aim is to improve your mental health and help you lead a happier, more creative life.",
+"choices": [
+"모닝 페이지는 하루도 빠짐없이 완벽하게 써야 효과가 있다.",
+"모닝 페이지를 시작해 보고, 며칠 빠지더라도 다시 이어 가면 된다.",
+"창의적인 재능이 있는 사람만 모닝 페이지를 쓸 수 있다.",
+"모닝 페이지는 구독자들과 함께 공유해야 한다.",
+"정신 건강을 위해서는 글쓰기보다 휴식이 더 중요하다."
+],
+"answer": "②",
+"solution": "글쓴이는 구독자들에게 모닝 페이지를 써 보라고 권하면서, 완벽주의자가 되지 말고 며칠을 빠뜨려도 다시 시작하면 된다고 말한다. 따라서 요지는 ②이다. ①은 'Don't be a perfectionist'와 반대되고, ③·④·⑤는 글에 나오지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c3a11556a5",
+"typeId": "eng-h1-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nNow, let's listen to Yuna, a high school junior:\nWhen I started this exercise last year, I simply wrote random thoughts like this: I'm sleepy. A slight headache's starting. I need to finish the math assignment today … I don't know what more to write now. But soon I found I had deeper and deeper thoughts. Now, I normally start by writing about today's tasks or worries. After that, I write about my dreams and how to move towards them. I often come up with great plans and a clear sense of purpose to start the day. Most importantly, I'm much happier than before.",
+"choices": [
+"How to Finish Math Assignments Quickly",
+"Why Teenagers Feel Sleepy in the Morning",
+"The Difficulty of Filling Three Pages Every Day",
+"Sharing Your Worries with Others",
+"From Random Thoughts to a Clear Sense of Purpose"
+],
+"answer": "⑤",
+"solution": "유나는 처음에 두서없는 생각만 적었지만, 점점 생각이 깊어져 이제는 꿈과 그 꿈을 이루는 방법을 쓰며 분명한 목적의식을 갖게 되었다. 따라서 제목은 ⑤ '두서없는 생각에서 분명한 목적의식으로'가 알맞다. ①·②는 초기 글의 사소한 내용만 다루고, ③은 글의 일부만 보고 고른 오답이며, ④는 글에 나오지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9bca861637",
+"typeId": "eng-h1-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 알맞은 것은?\n\nDavid, a chef and kitchen manager, who has been writing morning pages for two years, says:\nMy job tends to be very stressful. When I started writing morning pages, I just wrote a lot of complaints about my hard life. Later, I began to ask questions, like \"What would make my life easier today?\" \"How can I improve my recipes?\" Sometimes, I keep asking questions until I reach a sort of \"click moment.\" It feels like a door opening to great ideas. Nowadays, I feel less stressed, enjoy my job more, and am more productive.",
+"choices": [
+"Simply writing down complaints removes all stress.",
+"Asking yourself questions in morning pages can lead to new ideas and a better life.",
+"Chefs cannot avoid stress in their jobs.",
+"To improve recipes, chefs should get advice from others.",
+"Morning pages work only if you write them for over two years."
+],
+"answer": "②",
+"solution": "데이비드는 처음에 불평만 적었지만, 스스로에게 질문을 던지기 시작하면서 '깨달음의 순간'에 이르러 좋은 아이디어를 얻었다. 그 결과 스트레스가 줄고 일을 더 즐기며 생산성도 높아졌다. 따라서 요지는 ②이다. 상황이 나아진 것은 불평을 적어서가 아니라 질문을 던졌기 때문이므로 ①은 틀리고, ⑤의 '2년'은 데이비드가 글을 써 온 기간일 뿐 효과가 나타나는 조건이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a64dbe09d4",
+"typeId": "eng-h1-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n\nLike Yuna, I started this journaling during my first year of high school. At that time, I felt lost, stressed, and unsure about the future. Releasing my feelings onto paper every morning helped relieve my emotional tension. I gained more inner peace, which improved my schoolwork performance. Answering many questions showed me what kind of person I was and what my needs, values, passions, and talents were. More importantly, I came to know what I truly wanted! I remembered my childhood dreams of being a writer, songwriter, and radio host. Gradually, vague ideas became clear plans. Years later, here I am, a successful podcaster and vlogger! My morning pages, which I still write every day, have given me the drive and ideas to achieve these aims.\n\n→ Writing morning pages allowed the writer to (A)________ emotional tension and to (B)________ what he or she truly wanted, which turned vague ideas into real achievements.\n\n    (A)        (B)",
+"choices": [
+"increase …… discover",
+"ease …… hide",
+"ease …… discover",
+"ignore …… forget",
+"increase …… forget"
+],
+"answer": "③",
+"solution": "글쓴이는 매일 아침 감정을 종이에 쏟아내며 정서적 긴장을 덜었고(relieve → ease), 질문에 답하면서 자신이 진정으로 원하는 것을 알게 되었다(came to know → discover). 그 결과 막연한 생각이 분명한 계획이 되었고, 결국 꿈을 이루었다. 따라서 (A)에는 ease, (B)에는 discover가 들어간 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8feff58595",
+"typeId": "eng-h1-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThese days, everyone accesses the news through the Internet or social media, and often selectively takes the information that suits their tastes or beliefs. However, consistently encountering similar perspectives without considering alternative views can lead you to be trapped in an \"echo chamber.\" An echo chamber refers to an enclosed space where sound doesn't leak out and returns as an echo. This can distort your understanding of reality, and limit your ability to think critically and engage in meaningful debates. Worse still, an echo chamber may foster social division, making collaboration on common issues challenging. To avoid falling into this trap, you must actively seek diverse sources of information and engage with people who have different views.",
+"choices": [
+"Many people today tend to pick out information that matches their own tastes or beliefs.",
+"An echo chamber is compared to an enclosed space where sound bounces back as an echo.",
+"An echo chamber can distort one's view of reality and weaken critical thinking.",
+"An echo chamber makes it easier for people to work together on shared problems.",
+"Seeking varied sources and meeting people with different views helps one avoid an echo chamber."
+],
+"answer": "④",
+"solution": "에코 체임버는 사회적 분열을 조장하여 공동 문제에 대한 협력을 '어렵게(challenging)' 만든다고 했으므로, 협력을 쉽게 한다는 ④는 글과 반대된다. 나머지 ①②③⑤는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6322980b54",
+"typeId": "eng-h1-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nWhile scrolling through her social media one day, Gina was astonished when she saw the news headline, \"The Heundeulbawi in Seoraksan National Park Has Fallen.\" Gina immediately shared the shocking story with her close friends. Later, during the morning news on TV, a reporter standing next to the undamaged Heundeulbawi said, \"Today's Internet stories of the Heundeulbawi being damaged were fake.\" Gina was embarrassed by the fact that she had spread the fake news.",
+"choices": [
+"Gina came across the news headline while scrolling through her social media.",
+"Gina shared the shocking story with her close friends right away.",
+"A TV reporter stood next to the Heundeulbawi, which had not been damaged.",
+"The reporter confirmed on TV that the Heundeulbawi had truly collapsed.",
+"Gina felt embarrassed because she had spread the fake news."
+],
+"answer": "④",
+"solution": "기자는 손상되지 않은 흔들바위 옆에서 인터넷 기사가 '가짜(fake)'였다고 말했으므로, 바위가 실제로 무너졌다고 확인했다는 ④는 글과 일치하지 않는다. ①②③⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0e74617b04",
+"typeId": "eng-h1-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nFake news is a deliberate attempt to manipulate people by spreading inaccurate information. It is very common for fake news to spread during states of emergency. For example, after an earthquake measuring 6.5 struck Ambon, Indonesia, in September 2019, thousands of residents did not return to their homes and were still in shelters for two weeks. This was because of fake news stories on social media that another earthquake followed by a tsunami was about to strike. Many displaced people were so anxious about aftershocks that the government had to announce that the information was fake.",
+"choices": [
+"Fake news is an intentional effort to control people through false information.",
+"Fake news often spreads widely in emergency situations.",
+"After the 2019 Ambon earthquake, thousands of residents stayed in shelters for two weeks.",
+"People stayed in shelters because of online rumors about another earthquake and a tsunami.",
+"The residents quickly went back home because they trusted official reports over the rumors."
+],
+"answer": "⑤",
+"solution": "주민들은 여진에 대한 불안 때문에 2주간 집으로 돌아가지 못했고, 결국 정부가 그 정보가 가짜라고 발표해야 했다. 따라서 공식 발표를 믿고 빨리 귀가했다는 ⑤는 글과 일치하지 않는다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-59f284f23b",
+"typeId": "eng-h1-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nFake news on social media spreads significantly farther and faster than true stories. A study by the Massachusetts Institute of Technology in the US has shown that fake news spreads online 6 times faster than real news on average. One explanation is that people like new and provocative things. When information is astonishing, people not only feel that it is surprising, but they also want to share the stimulating news with others. Also, fake news goes viral because people in their daily lives tend to think simply and effortlessly. It is more likely for them to believe new information without any proof, instead of critically examining it.",
+"choices": [
+"An MIT study found that fake news spreads online about 6 times faster than real news on average.",
+"People are attracted to new and provocative content.",
+"When information is astonishing, people want to pass the stimulating news on to others.",
+"People in their daily lives tend to think carefully and with great effort.",
+"People are likely to believe new information without any proof rather than examining it critically."
+],
+"answer": "④",
+"solution": "본문은 사람들이 일상에서 '단순하고 수월하게(simply and effortlessly)' 생각하는 경향이 있다고 했으므로, 신중하고 큰 노력을 들여 생각한다는 ④는 글과 반대된다. ①②③⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e0381538e7",
+"typeId": "eng-h1-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nWith so much information on the Internet, how can you make sure that fake news does not mislead you? First, read beyond the provocative headlines. They can be so stimulating to get more clicks that you may click on them accidentally. So don't just read the headlines, but read the text carefully. Second, don't read the news at face value. Exercise critical thinking skills to judge the news. Third, examine your biases. Finally, check the credibility of the source. You should examine who wrote the news story and what the intent was behind writing the news story.",
+"choices": [
+"What should you do besides reading the provocative headlines?",
+"Why can provocative headlines be dangerous to readers?",
+"What kind of skills should you use to judge the news?",
+"How many news sources must you compare to confirm a story's credibility?",
+"What should you examine to check the credibility of a source?"
+],
+"answer": "④",
+"solution": "본문은 출처의 신뢰성을 확인하라고만 할 뿐, 비교해야 할 출처의 '개수'는 전혀 언급하지 않으므로 ④는 답할 수 없다. ①은 본문(제목 너머의 본문을 꼼꼼히 읽기), ②는 클릭을 유도해 실수로 누르게 함, ③은 비판적 사고력, ⑤는 작성자와 작성 의도 확인으로 모두 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b974e2aaa8",
+"typeId": "eng-h1-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nPeople are inclined to believe information that fits their prejudices or experiences even when not true. In this process, people easily fall into the trap of \"confirmation bias.\" That is, they selectively accept news in a way that only confirms their beliefs and ignore news that doesn't support them. During election season, for example, people tend to blindly believe any news describing their favored candidates in a positive way, while unconsciously believing news that reports something negative about other candidates.",
+"choices": [
+"People tend to accept news selectively in a way that reinforces the beliefs they already hold.",
+"People are inclined to ignore news that fails to support their beliefs.",
+"Even untrue information is likely to be believed if it matches a person's prejudices or experiences.",
+"During elections, voters carefully and objectively evaluate news about their favored candidates before believing it.",
+"Confirmation bias leads people to unconsciously accept negative news about rival candidates."
+],
+"answer": "④",
+"solution": "선거철에 사람들은 자신이 지지하는 후보에 대한 긍정적 뉴스를 '맹목적으로(blindly)' 믿는다고 했으므로, 신중하고 객관적으로 따져 본다는 ④는 글과 반대된다. ①②③은 확증 편향에 대한 설명과 일치하며, ⑤도 다른 후보에 대한 부정적 뉴스를 무의식적으로 믿는다는 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6651c5168e",
+"typeId": "eng-h1-b04-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nB: Clara, you look a bit stressed. What are you concerned about?\nG: David, it’s the exams next week and I have a packed schedule.\nB: I understand. You know, managing stress is crucial in situations like yours. It’s important to find ways to handle mental pressure and maintain balance.\nG: I know, but I’m not sure where to start.\nB: Well, how about creating a study plan? It can help reduce stress by providing a sense of control and direction.\nG: Oh, I see your point.\nB: Getting regular exercise can also help. It can help you sleep well and enhance your overall mental health. If you manage your stress well, you can stay physically and mentally healthy.\nG: You’re right. I’ll give it a try.\nB: You can do it! Don’t worry too much.\nG: Thanks for your advice!",
+"choices": [
+"Clara has her exams this week.",
+"David tells Clara to stop studying for a while.",
+"David says a study plan can give a sense of control and direction.",
+"Clara already knows exactly where to start.",
+"David says exercise is helpful only for physical health."
+],
+"answer": "③",
+"solution": "David는 공부 계획을 세우면 통제감과 방향감을 주어 스트레스를 줄일 수 있다고 말하므로 ③이 일치한다. 시험은 다음 주이고(①), David는 공부를 멈추라고 하지 않았다(②). Clara는 어디서부터 시작해야 할지 모르겠다고 했고(④), 운동은 숙면과 전반적인 정신 건강에도 도움이 된다고 했다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8154c1e06c",
+"typeId": "eng-h1-b04-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThis week’s topic in the City Wellness Center Newsletter is resilience, or “the power to overcome.” Julia Hone, a famous doctor, tells us how we can overcome hard times by developing our inner strength.\nNo life is free from problems. Whatever life path we choose, we all experience adversity. This can take the form of illness, accidents, failure in exams, family and relationship issues, or other stresses. To cope, we all need the ability to overcome difficulties, which is known as resilience. Resilience means springing back, just like a bouncy ball after hitting the ground. If you are resilient, you can bounce back and recover quickly from the hard times you experience. Furthermore, you learn and grow from adversity. So, resilience is the ability to handle, recover from, and benefit from difficult life events.",
+"choices": [
+"Julia Hone is a famous athlete.",
+"Some people can live a life without any problems.",
+"Failure in exams is not considered a form of adversity.",
+"Resilience is compared to a bouncy ball that springs back.",
+"Resilience only means recovering from hard times, not learning from them."
+],
+"answer": "④",
+"solution": "글에서 회복 탄력성을 땅에 부딪힌 뒤 다시 튀어 오르는 탱탱볼에 비유하므로 ④가 일치한다. Julia Hone은 의사이고(①), 문제없는 삶은 없다고 했다(②). 시험 실패도 역경의 한 형태로 제시되며(③), 역경으로부터 배우고 성장하는 것도 회복 탄력성에 포함된다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8d59cfbf09",
+"typeId": "eng-h1-b04-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThird, be connected. Allow yourself to ask for help from people whom you can trust, such as friends, family members, or counselors. Talking about your issues with someone can help you see your situation with more clarity and respond to it with more strength. Good communication helps resilience. This is the reason why resilient people tend to create good support networks.",
+"choices": [
+"Counselors are one example of people we can ask for help.",
+"The writer advises us to handle our problems alone.",
+"Talking about our issues makes our situation more confusing.",
+"Good communication makes resilience weaker.",
+"Resilient people tend to avoid building support networks."
+],
+"answer": "①",
+"solution": "글에서는 믿을 수 있는 사람의 예로 친구, 가족과 함께 상담사(counselors)를 들고 있으므로 ①이 일치한다. 글쓴이는 도움을 청하라고 했고(②), 고민을 이야기하면 상황을 더 분명하게 볼 수 있다고 했다(③). 좋은 의사소통은 회복 탄력성을 돕고(④), 회복 탄력성이 있는 사람들은 좋은 지지망을 만드는 경향이 있다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-33dd561f50",
+"typeId": "eng-h1-b04-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOur mindset, or way of thinking, affects our ability to deal with life’s challenges. Psychologists say there are two main mindsets: “fixed” and “growth.”\nFor people with a fixed mindset, failure just shows that their intelligence, abilities, and talents are limited. They may think, for example, “I’ve never been good at writing. I’ll never be a good writer.” (A)______________, they stay in their comfort zone, where they won’t be challenged. They tend to reject even constructive criticism. Also, other people’s success makes them feel defeated and lose confidence.\n(B)______________, people with a growth mindset accept life’s challenges. For them, failure is an opportunity. They may think, for example, “I can still learn and practice writing skills until I can write a great story.” They can learn from criticism, ask for advice, and be inspired by other people’s success. A growth mindset empowers people to feel more comfortable about their imperfections and overcome crises or mistakes more easily.\nExperts say that we can develop a growth mindset through practice. Whenever you feel “It’s impossible. I’d rather give up,” why don’t you train yourself to say, “I still want to try. I can learn how to make it possible”?",
+"choices": [
+"Psychologists divide mindsets into two main types.",
+"People with a fixed mindset tend to stay in their comfort zone.",
+"People with a growth mindset see failure as an opportunity.",
+"Experts believe a growth mindset can be developed through practice.",
+"People with a fixed mindset are inspired by other people’s success."
+],
+"answer": "⑤",
+"solution": "고정 마인드셋을 가진 사람들은 다른 사람의 성공을 보면 패배감을 느끼고 자신감을 잃는다고 했으므로 ⑤가 일치하지 않는다. 다른 사람의 성공에서 영감을 얻는 것은 성장 마인드셋을 가진 사람들의 특징이다. 나머지 선지는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-121b6a4ed6",
+"typeId": "eng-h1-b04-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 있는 질문은?\n\nThere are countless stories of successful people who not only survived adversity but used it as a stepping stone to growth. Fairy tale writer Hans Andersen said that his childhood poverty, the early loss of his father, and his experience of being disrespected were the sources for his most popular stories. “The hardship was a real blessing that inspired me to write stories like The Little Match Girl, The Snow Queen, and The Ugly Duckling.” Athlete Aimee Mullins also saw her challenges as an opportunity. She was born with a medical condition that resulted in losing both legs beneath the knee to surgery. She competed against athletes without disabilities in a national competition and participated in the Paralympics in 1996. Her career also includes modeling, acting, and public speaking. She says her physical condition is not a disability but the very thing that opened the door for her amazing potential. Both people succeeded not “despite” adversity but thanks to it. This is the real bouncing back.",
+"choices": [
+"How many brothers and sisters did Hans Andersen have?",
+"What careers does Aimee Mullins have besides being an athlete?",
+"How old was Hans Andersen when he wrote The Ugly Duckling?",
+"How many medals did Aimee Mullins win at the Paralympics?",
+"Why did Hans Andersen’s family become poor?"
+],
+"answer": "②",
+"solution": "Aimee Mullins의 경력에는 모델, 연기, 대중 연설이 포함된다고 했으므로 ②에는 답할 수 있다. Andersen의 형제 수(①), 『미운 오리 새끼』를 쓴 나이(③), Mullins의 패럴림픽 메달 수(④), Andersen의 집안이 가난해진 이유(⑤)는 본문에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5701044fb6",
+"typeId": "eng-h1-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSecond, have “me time,” that is, personal time to look after yourself. Take a break and be in the present moment, neither (A)[regret / regretting] the past nor worrying about the future. Walk, meditate, write, draw, listen to music, or exercise. If you don’t know where (B)[to start / starting], the STOP technique can be a great meditative technique. It works like this.\nStop whatever you are doing.\nTake a few deep breaths.\nObserve your emotions and thoughts as they are, not (C)[judged / judging] them as good or bad.\n\n(A) － (B) － (C)",
+"choices": [
+"regret － to start － judged",
+"regretting － to start － judging",
+"regretting － starting － judging",
+"regret － starting － judging",
+"regretting － to start － judged"
+],
+"answer": "②",
+"solution": "(A) neither A nor B 구문에서 뒤의 worrying과 형태를 맞춰야 하므로 regretting이 알맞다. (B) '의문사+to부정사'가 know의 목적어 역할을 하므로 where to start가 알맞다. (C) 뒤에 목적어 them이 있으므로 능동 관계를 나타내는 현재분사 judging이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f78962a968",
+"typeId": "eng-h1-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThis week’s topic in the City Wellness Center Newsletter is resilience, or “the power to overcome.” Julia Hone, a famous doctor, tells us (A)[what / how] we can deal with difficult times by cultivating our inner strength.\nNo life is free from problems. (B)[However / Whatever] life path we choose, we all experience adversity. This can take the form of illness, accidents, failure in exams, family and relationship issues, or other stresses. To cope, we all need the ability to overcome difficulties, (C)[that / which] is known as resilience.\n\n(A) － (B) － (C)",
+"choices": [
+"what － However － that",
+"what － Whatever － which",
+"how － However － which",
+"how － Whatever － that",
+"how － Whatever － which"
+],
+"answer": "⑤",
+"solution": "(A) 뒤에 주어·동사·목적어를 다 갖춘 완전한 절(we can deal with difficult times)이 오므로 의문사 how가 알맞다. what은 뒤에 불완전한 절이 올 때 쓴다. (B) 바로 뒤에 명사 life path가 이어지므로 복합관계형용사 Whatever(어떤 ~을 …하더라도)가 알맞다. However는 뒤에 형용사나 부사가 온다. (C) 콤마 뒤 계속적 용법에는 that을 쓸 수 없으므로 which가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1f24ccabe8",
+"typeId": "eng-h1-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nThere are countless stories of successful people who not only survived adversity but ⓐused it as a stepping stone to growth. Fairy tale writer Hans Andersen said that his childhood poverty, the early loss of his father, and his experience of ⓑbeing disrespected were the sources for his most popular stories. Athlete Aimee Mullins also saw her challenges as an opportunity. She was born with a medical condition that resulted in ⓒlose both legs beneath the knee to surgery. She competed against athletes without disabilities in a national competition and participated in the Paralympics in 1996. Her career also ⓓincludes modeling, acting, and public speaking. She says her physical condition is not a disability but the very thing that ⓔopened the door for her amazing potential.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ 전치사 in 뒤에는 동명사가 와야 하므로 lose를 losing으로 고쳐야 한다. ⓐ는 not only A but (also) B 구문에서 survived와 형태가 같은 과거동사이다. ⓑ는 전치사 of 뒤에 수동형 동명사가 온 것이다. ⓓ는 단수 주어 Her career에 수를 맞춘 것이고, ⓔ는 선행사 the very thing을 받는 관계사절의 동사로 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fea67f6ed1",
+"typeId": "eng-h1-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nOur mindset, or way of thinking, ⓐaffects our ability to deal with life’s challenges. Psychologists say there are two main mindsets: “fixed” and “growth.”\nFor people with a fixed mindset, failure just shows ⓑthat their intelligence, abilities, and talents are limited. They may think, for example, “I’ve never been good at writing. I’ll never be a good writer.” Therefore, they stay in their comfort zone, where they won’t ⓒbe challenged. They tend to reject even constructive criticism. Also, other people’s success makes them feel defeated and ⓓlost confidence.\n(중략)\nExperts say that we can develop a growth mindset through practice. Whenever you feel “It’s impossible. I’d rather give up,” why don’t you train yourself ⓔto say, “I still want to try. I can learn how to make it possible”?",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓓ 사역동사 makes의 목적격 보어 feel과 and로 대등하게 연결되어야 하므로 원형부정사 lose가 알맞다. ⓐ는 주어 Our mindset(단수)에 수를 맞춘 것이다. ⓑ는 뒤에 완전한 절이 오므로 명사절 접속사 that이 바르다. ⓒ는 그들이 '도전받는' 수동 관계이고, ⓔ는 train+목적어+to부정사 구조이므로 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0bf0f44566",
+"typeId": "eng-h1-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 틀린 것의 개수는?\n\nSecond, have “me time,” that is, personal time ⓐto look after yourself. Take a break and be in the present moment, neither regretting the past nor ⓑworry about the future. Walk, meditate, write, draw, listen to music, or exercise. If you don’t know where to start, the STOP technique can be a great meditative technique. It works like this.\nStop ⓒwhatever you are doing.\nTake a few deep breaths.\nObserve your emotions and thoughts ⓓas they are, not judging them as good or bad.\nProceed with ⓔwhich you were doing. Or start something different based on what you observed.\nNow go forward with your life.\nThird, be connected. Allow yourself to ask for help from people ⓕwhom you can trust, such as friends, family members, or counselors. Talking about your issues with someone can help you ⓖseeing your situation with more clarity and respond to it with more strength. Good communication ⓗhelp resilience.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "④",
+"solution": "틀린 것은 ⓑ, ⓔ, ⓖ, ⓗ로 모두 4개이다. ⓑ는 neither A nor B 구문에서 regretting과 형태를 맞춰 worrying이 되어야 한다. ⓔ는 선행사가 없고 뒤의 doing의 목적어가 빠진 불완전한 절이므로 which를 what으로 고쳐야 한다. ⓖ는 help+목적어 뒤에 원형부정사나 to부정사가 와야 하므로 see 또는 to see가 되어야 하고, ⓗ는 단수 주어 Good communication에 맞춰 helps가 되어야 한다. ⓐ(형용사적 용법 to부정사), ⓒ(복합관계대명사), ⓓ(접속사 as), ⓕ(목적격 관계대명사)는 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c794d4f02f",
+"typeId": "eng-h1-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 틀린 것을 모두 골라 짝지은 것은?\n\nYou might think “Hey, these are exceptional people.” However, we are all born with the potential for resilience. Just like these people, we all can develop the strength ⓐto quickly recover from a crisis ⓑwhat could otherwise cause lasting damage to our mental health. The good news is that resilience is like a muscle. You can build it up through practice, by developing thoughts, behaviors, and habits that ⓒallows you to recover from painful or stressful events. Here ⓓare three basic strategies to build up this “resilience muscle.”\nFirst, accept and respect adversity as a natural part of life. This doesn’t mean ⓔbeing passive, but understanding that some changes in life can cause suffering or stress. Then, instead of feeling ⓕsingled out and thinking, “Why me?”, you can face whatever happens and focus on what you can change, not what you can’t. Embracing challenges and unexpected obstacles in your life ⓖhelp you confront them as a learning process.",
+"choices": [
+"ⓑ, ⓒ, ⓖ",
+"ⓑ, ⓓ, ⓖ",
+"ⓑ, ⓒ",
+"ⓒ, ⓔ, ⓖ",
+"ⓐ, ⓑ, ⓒ, ⓖ"
+],
+"answer": "①",
+"solution": "ⓑ는 선행사 a crisis를 받는 주격 관계대명사 자리이므로 that(또는 which)이 되어야 한다. ⓒ는 선행사 thoughts, behaviors, and habits가 복수이므로 allow가 되어야 하고, ⓖ는 주어가 동명사구 Embracing ~ life(단수)이므로 helps(또는 can help)가 되어야 한다. ⓐ는 to와 동사원형 사이에 부사가 들어간 to부정사로 바르다. ⓓ는 Here 도치 구문에서 복수 주어 three basic strategies에 맞춘 것이고, ⓔ는 mean+동명사, ⓕ는 '선택되는' 수동 의미의 과거분사로 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m1s0t0",
+"custom": true
 }
 ]

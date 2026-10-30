@@ -3664,5 +3664,640 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u4m4s0t0",
 "custom": true
+},
+{
+"id": "fill-180ca8a87f",
+"typeId": "eng-h1-b06-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 <보기>의 단어를 알맞게 배열하여 빈칸을 완성하시오. (단, 필요시 변형할 것 / 각 빈칸에 한 단어씩 쓸 것)\n\nW: Good evening, everyone. Welcome to the show! … First, please turn off or silence any electronic devices including mobile phones, because these devices can distract the performers and the audience. Also, please keep in mind that 여러분은 공연 중에 사진을 찍거나 영상을 녹화하는 것이 허용되지 않습니다.\n\n<보기> allow, to, photographs, not, are, take\n\nAlso, please keep in mind that you ____________ ____________ ____________ ____________ ____________ ____________ or make video recordings during the performance.",
+"selfGrade": true,
+"answer": "are not allowed to take photographs",
+"solution": "'~하는 것이 허용되지 않다'는 수동태 be not allowed to부정사로 나타낸다. 주어가 you이므로 be동사는 are를 쓰고, not은 be동사 뒤에 둔다. allow는 과거분사 allowed로 바꾸고, to 뒤에 동사원형 take와 목적어 photographs를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-398ef61aa6",
+"typeId": "eng-h1-b06-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸에 들어갈 알맞은 말을 글에서 찾아 쓰시오. (각 빈칸에 한 단어씩 쓸 것)\n\nThe first artist we’re going to examine is Bill Traylor. Traylor was born into slavery in the U.S. in 1853 and spent his early life working on a cotton farm in Alabama. Although he became a free man after the American Civil War, he still had to face racial discrimination, working for very low wages on the farm. … It wasn’t until he was 85 years old and became too ill to work that he turned to drawing to express his life experiences. … Using simple shapes and colors, Traylor captured complex moments in American history from slavery to freedom. As a result, he’s now considered an important figure in American folk art.\n\n→ Although Bill Traylor faced racial ____________ even after becoming a free man, he expressed his life ____________ through drawing and became an important figure in American ____________ art.",
+"selfGrade": true,
+"answer": "discrimination experiences folk",
+"solution": "Traylor는 자유인이 된 뒤에도 인종 차별(racial discrimination)을 겪었다. 85세가 되어서야 자신의 인생 경험(life experiences)을 표현하려고 그림을 시작했다. 그 결과 지금은 미국 민속 예술(American folk art)의 중요한 인물로 여겨진다. 따라서 빈칸에는 discrimination, experiences, folk가 순서대로 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a1282e5eeb",
+"typeId": "eng-h1-b06-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 빈칸에 들어갈 알맞은 말을 글에서 찾아 쓰시오. (각 빈칸에 한 단어씩 쓸 것)\n\nIf you have ever been to an art museum, you may have encountered docents and curators. While these two roles may appear similar, they actually have quite different responsibilities, requiring different skills. … They are usually volunteers who have a passion for art and enjoy sharing their knowledge. To carry out their responsibilities effectively, docents need specialized training in presentation and communication skills. On the other hand, curators are professionals who design and organize exhibitions, and the word curator comes from a Latin word which means “to take care of.” … Curators are typically employed by museums and are expected to possess advanced degrees in art history, museum studies, or a related field.\n\n→ Docents are usually ____________ with a passion for art, whereas curators are ____________ who are typically employed by museums.",
+"selfGrade": true,
+"answer": "volunteers professionals",
+"solution": "글에서 도슨트는 보통 예술에 열정을 가진 자원봉사자(volunteers)라고 했다. 반면 큐레이터는 전시회를 기획하고 구성하는 전문가(professionals)이며 보통 박물관에 고용된다고 했다. 두 빈칸 모두 복수 주어에 맞춰 복수형으로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4d82d72ea0",
+"typeId": "eng-h1-b06-u6m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nThanks to her mother’s encouragement, she was able to take advantage of these opportunities. 결혼한 후에도, Ancher는 기혼 여성은 오로지 집안일에만 집중해야 한다는 사회적 압박에 반대하면서 그림 그리기를 고집했다. Ancher differed from other artists of that era, who depicted women as still life subjects.\n\n<조건>\n• 전치사 뒤에는 동명사를 사용할 것\n• 동시동작을 나타내는 분사구문을 사용할 것\n• <보기>의 단어를 모두 사용하되 필요시 변형할 것\n• 각 빈칸에 한 단어씩 쓸 것\n\n<보기> get, marry, persist, in, paint, object, to\n\nEven after ____________ ____________, Ancher ____________ ____________ ____________, ____________ ____________ the social pressure that married women were to solely focus on household duties.",
+"selfGrade": true,
+"answer": "getting married persisted in painting objecting to",
+"solution": "전치사 after 뒤에는 동명사 getting married를 쓴다. '~을 고집하다'는 persist in이고, 전치사 in 뒤에도 동명사 painting이 온다. 과거 시제이므로 persisted로 바꾼다. '~에 반대하면서'는 동시동작의 분사구문 objecting to로 나타낸다. 여기서 to는 전치사이므로 뒤에 명사구 the social pressure가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-567b01b781",
+"typeId": "eng-h1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nHello, everyone! Welcome to live social media shopping for teenagers! I’m Emma. Today, I’d like to show you one of our best-sellers, the GREEN PLUS skin-care set, which includes a facial wash and cream! Lots of teenagers have oily but sensitive skin. If you have similar issues, our all-natural products are better for your skin than the chemical-based ones commonly found in stores. That’s because our products contain natural ingredients and vitamins. As you can see, more than 90 percent of our customers are satisfied with our products and have felt the difference. The GREEN PLUS skin-care set usually sells for 40 dollars. But, order now and you can receive the entire set for only 30 dollars.",
+"choices": [
+"Emma는 성인을 대상으로 하는 쇼핑 방송을 진행하고 있다.",
+"GREEN PLUS 세트에는 세안제와 크림이 들어 있다.",
+"GREEN PLUS 제품은 화학 성분을 기반으로 만들어졌다.",
+"고객의 절반 정도만 제품에 만족하고 있다.",
+"지금 주문하면 세트를 40달러에 살 수 있다."
+],
+"answer": "②",
+"solution": "글에서 GREEN PLUS 세트에 facial wash와 cream이 들어 있다고 했으므로 ②가 일치한다. 방송은 teenagers 대상이고(①), 제품은 all-natural이며(③), 고객의 90% 이상이 만족한다(④). 평소 가격이 40달러이고 지금 주문하면 30달러이므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6e0fb2068a",
+"typeId": "eng-h1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nAnother common type of dark pattern is known as “hidden fees.” This design suddenly adds extra fees at the last step of the ordering process. On the final page, consumers are surprised to discover additional charges, such as shipping or processing fees, which the seller has added to increase the final cost of the order.",
+"choices": [
+"‘hidden fees’는 흔한 다크 패턴의 한 종류이다.",
+"추가 요금은 주문 과정의 마지막 단계에서 갑자기 붙는다.",
+"소비자는 마지막 페이지에서 추가 요금을 발견하고 놀란다.",
+"추가 요금의 예로 배송비나 처리 수수료가 있다.",
+"판매자는 최종 주문 금액을 줄이기 위해 요금을 조정한다."
+],
+"answer": "⑤",
+"solution": "판매자가 추가 요금을 붙이는 목적은 최종 주문 금액을 늘리기(to increase the final cost) 위해서이다. 따라서 ‘줄이기 위해’라고 한 ⑤가 글의 내용과 일치하지 않는다. 나머지는 모두 글에 나온 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2cf25d0adb",
+"typeId": "eng-h1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 아래 질문에 대한 답으로 가장 알맞은 것은?\n\nA widely used dark pattern is the practice of “forced continuity,” which requires users to pay a membership fee after a free trial ends. Companies deliberately avoid informing users about the end of the free trial period or make the cancellation process complicated. As a result, users have to pay membership fees even if they no longer want to use the service.\n\nQ: Under “forced continuity,” when do users have to pay a membership fee?",
+"choices": [
+"Before they sign up for the service.",
+"After a free trial ends.",
+"When they request a refund for an order.",
+"At the last step of the ordering process.",
+"Only when they want to keep their benefits."
+],
+"answer": "②",
+"solution": "첫 문장에서 forced continuity는 무료 체험이 끝난 뒤(after a free trial ends) 회원비를 내게 만드는 것이라고 했다. 따라서 답은 ②이다. ④는 hidden fees, ③·⑤는 confirm-shaming과 관련된 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dfa798a93e",
+"typeId": "eng-h1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nHave you ever bought something online after seeing a message such as “Hurry! One item left!” even though you didn’t intend to buy it? Or have you ever felt rushed into making a purchase because of a limited-time offer? If you have, then you may have fallen prey to a dark pattern. Dark patterns are manipulative designs on websites and applications that trick users into making unintended decisions. These deceptive practices often have consequences that cause financial damages to the users.",
+"choices": [
+"A message like “Hurry! One item left!” can lead people to buy something they did not plan to buy.",
+"A limited-time offer may make people feel pressured to make a purchase quickly.",
+"Dark patterns can be found on both websites and applications.",
+"Dark patterns are designed to guide users toward the choices they originally planned to make.",
+"Deceptive designs on websites and apps often result in users losing money."
+],
+"answer": "④",
+"solution": "다크 패턴은 사용자가 의도하지 않은 결정(unintended decisions)을 하도록 속이는 디자인이다. 따라서 원래 계획했던 선택으로 이끈다고 한 ④가 글의 내용과 반대이다. ⑤는 financial damages를 바꿔 쓴 표현이므로 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1bf4e3ded5",
+"typeId": "eng-h1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nEditorial cartoons are a type of visual art that employs humor and exaggeration to challenge conventional thinking about social, political, or cultural issues. Despite their humorous appearance, their true purpose is to promote discussion about socially significant issues. To achieve this, cartoonists often emphasize or exaggerate unique physical features of characters, including public or political figures, to create humor. Symbols are also used to represent important concepts or ideas. For instance, a dollar sign may signify money, a wall could represent division, and a snake probably relates to deception. Captions, groups of words written on or below pictures, further clarify the cartoonist’s message. A notable example is Clifford Berryman’s skillful use of characters and captions to convey the emotions of the three U.S. presidential candidates in 1912. This highlights the contrast between their external confidence and their actual anxiety.",
+"choices": [
+"What is the true purpose of editorial cartoons?",
+"What might a wall represent in an editorial cartoon?",
+"What are captions in editorial cartoons?",
+"In which year were the presidential candidates in Clifford Berryman’s cartoon running for office?",
+"Which of the three presidential candidates won the 1912 election?"
+],
+"answer": "⑤",
+"solution": "①은 사회적으로 중요한 문제에 대한 토론을 이끌어 내는 것, ②는 division(분열), ③은 그림 위나 아래에 쓰인 글, ④는 1912년이라고 글에서 답할 수 있다. 하지만 세 후보 중 누가 당선되었는지는 글에 나오지 않으므로 답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-381eee0613",
+"typeId": "eng-h1-b06-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nDark patterns, in contrast, not only manipulate customers to act against their intentions, but they can also lead to financial losses and personal data leaks. To tackle this problem, extensive research across various websites and applications is being conducted to document the prevalence of dark patterns and come up with solutions. In addition to research, governments are actively discussing how to regulate these deceptive design patterns. The EU’s Digital Service Act, which banned dark patterns on online platforms in 2022, is a good example of such regulation in this area. Such regulations are expected to increase, limiting companies’ deceptive marketing practices in the digital market. However, regulations alone may not be sufficient. As individuals, we should take steps to combat dark patterns and be responsible for our online shopping behavior.",
+"choices": [
+"Dark patterns can cause financial losses, but they have nothing to do with personal data.",
+"Governments have already finished discussing how to regulate dark patterns.",
+"The EU’s Digital Service Act banned dark patterns on online platforms in 2022.",
+"Regulations are expected to decrease as companies change their marketing practices.",
+"Government regulations alone are enough to protect consumers from dark patterns."
+],
+"answer": "③",
+"solution": "EU의 Digital Service Act가 2022년에 온라인 플랫폼의 다크 패턴을 금지했다고 했으므로 ③이 일치한다. 다크 패턴은 개인 정보 유출로도 이어질 수 있고(①), 정부는 아직 활발히 논의하는 중이다(②). 규제는 늘어날 것으로 예상되며(④), 규제만으로는 충분하지 않을 수 있다고 했으므로(⑤) 나머지는 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c4f7510172",
+"typeId": "eng-h1-b06-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nRecycled coffee grounds have a wide range of uses, including coffee logs, fabrics for clothing and shoes, and reusable cups. Coffee logs generate more heat and burn for a longer time than wood. Fabric made from coffee grounds absorbs sweat, dries quickly, and provides UV protection. Reusable cups from coffee grounds not only have a visually appealing appearance but also preserve the taste of the coffee.",
+"choices": [
+"Coffee grounds can be recycled into coffee logs, fabrics, and reusable cups.",
+"Coffee logs burn for a shorter time than wood.",
+"Fabric made from coffee grounds dries quickly.",
+"Fabric made from coffee grounds provides UV protection.",
+"Reusable cups from coffee grounds preserve the taste of the coffee."
+],
+"answer": "②",
+"solution": "본문에서 커피 로그(coffee logs)는 나무보다 더 많은 열을 내고 더 오래 탄다(burn for a longer time)고 했다. 따라서 '나무보다 더 짧게 탄다'는 ②는 본문과 반대이므로 일치하지 않는다. 나머지는 모두 본문에 그대로 언급되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-65fc6764cb",
+"typeId": "eng-h1-b06-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nG: Hey, Noah. Have you heard about World Bee Day?\nB: No, I haven't. What's that?\nG: It's a special day celebrated every year on May 20th. The United Nations created the day to recognize the essential roles that bees play in maintaining our ecosystem.\nB: But I read somewhere that bees are endangered.\nG: Unfortunately, that's true. The decreasing number of bees is a serious problem, especially because about a third of the world's food production depends on them.\nB: I'm worried about what will happen if the bee population continues to decrease.\nG: Me, too. Let's just hope that people become more aware of the problem thanks to World Bee Day.",
+"choices": [
+"World Bee Day is celebrated on May 20th every year.",
+"The United Nations created World Bee Day.",
+"About a third of the world's food production depends on bees.",
+"The number of bees is increasing these days.",
+"The girl hopes people will become more aware of the problem."
+],
+"answer": "④",
+"solution": "대화에서 소녀는 '벌의 수가 줄어드는 것(the decreasing number of bees)'이 심각한 문제라고 말한다. 따라서 '벌의 수가 증가하고 있다'는 ④는 본문과 반대이므로 일치하지 않는다. 나머지 선지는 모두 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4bb70f2fc8",
+"typeId": "eng-h1-b06-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nDid you know that you can grow mushrooms at home using spent coffee grounds? First, mix 80 percent coffee grounds with 20 percent mushroom spawn. Then, wash a milk container and make four small holes in the sides. Fill the container about two-thirds full of the mixture and close it tightly. Next, find a warm and dark place with a temperature between 18 and 25°C, and place the container there for two to four weeks until the mixture turns completely white. To keep the mixture from drying out, spray it with water twice a day. When the mushrooms grow tall, they are ready to be picked.",
+"choices": [
+"Mix 80 percent coffee grounds with 20 percent mushroom spawn.",
+"Make four small holes in the sides of the milk container.",
+"Place the container in a cool and bright place.",
+"Spray the mixture with water twice a day.",
+"Pick the mushrooms when they grow tall."
+],
+"answer": "③",
+"solution": "본문에서는 용기를 '따뜻하고 어두운 곳(a warm and dark place)'에 두라고 했다. 따라서 '시원하고 밝은 곳에 둔다'는 ③은 본문과 반대이므로 일치하지 않는다. 나머지 선지는 모두 본문의 과정과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-68126ae193",
+"typeId": "eng-h1-b06-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAn example of a circular economy occurs when a chain of coffee shops collaborates with an organization to collect spent coffee grounds from its shops. These grounds are processed to remove impurities and dried out. The resulting SCGs are sold to fertilizer companies, where they are transformed into organic fertilizer. This fertilizer is later sold back to the coffee shop chain. The chain provides the fertilizer to local eco-friendly farmers, who then sell their produce back to the chain. The farm produce can be used to create various food items, such as rice chips and dried sweet potatoes, which are sold in the chain's coffee shops.",
+"choices": [
+"A coffee shop chain works with an organization to collect spent coffee grounds.",
+"The collected grounds are processed to remove impurities and dried out.",
+"Fertilizer companies transform the SCGs into organic fertilizer.",
+"Local eco-friendly farmers buy the organic fertilizer directly from the fertilizer companies.",
+"The farmers' produce is used to make items such as rice chips and dried sweet potatoes."
+],
+"answer": "④",
+"solution": "본문에서 비료는 비료 회사 → 커피 체인점으로 되팔리고, 그 체인점(The chain)이 농부들에게 비료를 제공한다(provides the fertilizer). 따라서 농부가 비료 회사로부터 직접 비료를 산다는 ④는 흐름과 다르므로 일치하지 않는다. 나머지는 모두 순환 경제의 과정과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-aca1c7b779",
+"typeId": "eng-h1-b06-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe famous German musician Johann Sebastian Bach once said, \"Without my morning coffee, I'm just like a dried-up piece of goat.\" Today this sentiment is shared by many, with coffee shops springing up on almost every street corner. According to the International Coffee Organization (ICO), approximately 10 million tons of coffee was consumed worldwide between 2020 and 2021, and Koreans consumed 150,780 tons of coffee. This means that every Korean adult drank an average of one cup of coffee every day throughout the year. Clearly, coffee is not just a drink but a daily necessity.",
+"choices": [
+"Bach said he felt like a dried-up piece of goat without his morning coffee.",
+"Coffee shops are springing up on almost every street corner.",
+"About 10 million tons of coffee was consumed worldwide between 2020 and 2021.",
+"Koreans consumed 150,780 tons of coffee during that period.",
+"Every Korean adult drank an average of one cup of coffee per week."
+],
+"answer": "⑤",
+"solution": "본문에 따르면 한국 성인은 일 년 내내 '하루에(every day)' 평균 한 잔의 커피를 마셨다고 했다. 따라서 '일주일에 한 잔'이라고 한 ⑤는 본문과 다르므로 일치하지 않는다. 나머지 선지는 모두 본문에 제시된 수치·내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-84d3aaf205",
+"typeId": "eng-h1-b06-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 있는 질문으로 가장 적절하지 않은 것은?\n\nRecycled coffee grounds have a wide range of uses, including coffee logs, fabrics for clothing and shoes, and reusable cups. Fabric made from coffee grounds absorbs sweat, dries quickly, and provides UV protection. Korea has shown a growing interest in recycling spent coffee grounds in recent years. The government is taking steps toward the creation of a sustainable recycling system in the coffee industry, while companies are dedicating themselves to researching and developing new uses for coffee waste. With continued efforts, the recycling of used coffee grounds is expected to increase.",
+"choices": [
+"What products can be made by recycling coffee grounds?",
+"What are the benefits of fabric made from coffee grounds?",
+"How is the Korean government supporting coffee grounds recycling?",
+"How much does it cost to recycle coffee grounds at home?",
+"What is expected to happen to coffee grounds recycling in the future?"
+],
+"answer": "④",
+"solution": "본문은 재활용 제품의 종류, 섬유의 장점, 한국 정부·기업의 노력, 재활용의 미래 전망은 언급하지만, 가정에서 커피박을 재활용하는 '비용'에 대해서는 전혀 언급하지 않는다. 따라서 답할 수 없는 질문은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4adcdd9e53",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nJuly 29, Monday\nOur club arrived at the Free Animals sanctuary. Jane, the staff member in charge of animal care, welcomed us with a big smile and gave us a tour of the facility. It was amazing to see bears and elephants moving freely in a large field. Our tasks for the day included cleaning the shelter and preparing food for the animals. While cleaning the habitats, we checked if there were any hazards that could harm the animals. Then, we helped prepare the food by cutting up fruits and vegetables and dividing them into several large baskets. For old elephants with weak teeth, we chopped bananas instead of the sugarcane that they usually eat. Spending the whole day helping out with the animals was an incredible experience for me.",
+"choices": [
+"a rewarding first day of helping out with animals at a sanctuary",
+"the best scientific methods for training rescued wild animals",
+"the difficulty of feeding elderly elephants with weak teeth",
+"various reasons why animal sanctuaries always need more money",
+"the many dangers that threaten animals living in the wild"
+],
+"answer": "①",
+"solution": "글쓴이는 동아리와 함께 보호구역에 도착해 시설을 둘러보고 서식지 청소와 먹이 준비를 도우며 하루를 보낸 경험을 서술하고 있다. 마지막 문장에서 이 모든 것이 incredible experience였다고 밝히므로, 보람찬 첫날의 봉사 경험이 전체 글의 주제이다. 나머지 선지들은 글에 일부 언급되거나 전혀 다루지 않은 세부 내용이므로 주제가 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-88efa9bdaf",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 담화의 제목으로 알맞은 것은?\n\nG: Hello, everyone! I'm Kelly. Are you thinking of adopting a hamster? Today, I'd like to share what I've learned from raising my hamster. First of all, it's important to understand that hamsters are quite sensitive. While many people think that taking care of hamsters is easy, they actually require a lot of special attention. For example, hamsters are active at night and sleep during the day, so it's crucial to provide a quiet environment during the day. Also, their living areas need to be cleaned regularly, and they should be provided with fresh food and water every day. Keep these tips in mind and take responsibility for your hamster's care.",
+"choices": [
+"Why Hamsters Make the Easiest Pets to Raise",
+"Things to Keep in Mind Before Adopting a Hamster",
+"How to Train a Hamster to Recognize Its Name",
+"The Busy Night Life of a Wide-Awake Hamster",
+"Simple Steps for Cleaning a Hamster's Cage"
+],
+"answer": "②",
+"solution": "화자는 햄스터를 입양하려는 사람들에게 햄스터가 예민하다는 점, 낮에는 조용한 환경이 필요하다는 점, 규칙적인 청소와 매일의 먹이·물 제공이 필요하다는 점 등 키우기 전에 알아 두어야 할 사항을 설명하고 있다. 따라서 제목은 입양 전 유의 사항을 담은 ②가 적절하다. ①은 쉽다는 통념을 반박하는 글의 내용과 반대이며, 나머지는 세부 정보에 불과하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-dee13e0592",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nToday, we did something special for Ben and Lily. These two baby bears were rescued after they had been raised illegally in a tiny cage on a farm for many years. To help the bears restore their natural instincts, we carried out some special activities known as \"behavioral enrichment.\" For example, we made honey-log feeders for the bears. First, we made several holes in a log and filled them with honey. Then, we hung the honey-log feeders on trees near the bears' habitat. As bears are intelligent and curious creatures, they can become bored and stressed when lacking mental and physical stimulation. The honey-log feeders stimulate their natural curiosity and keep them as active as they would be in the wild.",
+"choices": [
+"the natural diet that wild bears eat in the forest",
+"special activities that help rescued bears recover their natural instincts",
+"how to safely capture bears that live on illegal farms",
+"an intelligence test designed for curious baby bears",
+"the process of building comfortable cages for captive animals"
+],
+"answer": "②",
+"solution": "글은 불법 사육되다 구조된 아기 곰들의 본능을 되살리기 위해 'behavioral enrichment'라는 특별 활동(꿀 통나무 급식기)을 한 내용을 설명한다. 이 활동이 곰의 호기심을 자극해 야생에서처럼 활동적으로 지내게 돕는다고 했으므로 주제는 ②이다. 꿀은 예시일 뿐이고 포획·우리 제작·지능 검사는 글에 없거나 핵심이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3d58052a28",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nOn the last day, we were called to the rescue center due to a sudden emergency. Some dehydrated birds had fallen out of the sky in the city and were brought to the center. Following the veterinarian's guidance, we provided water to the birds while the vets treated their broken wings and legs. It was shocking that this type of accident happens every year since the high temperatures dry up water sources in the city. Caring for the birds, I couldn't help but reflect on the impact of human activities on climate change and how it harms animals. From this experience, I learned the importance of treating animals with respect and care. I also came to realize that humans are just another kind of animal and share the Earth with all other living creatures.",
+"choices": [
+"인간도 하나의 동물로서 모든 생명체를 존중하며 지구를 함께 나누어야 한다.",
+"기후 변화를 막기 위해서는 국가 간의 국제적 협력이 가장 시급하다.",
+"도시의 야생 조류는 사람의 손길이 닿지 않는 곳에서 보호되어야 한다.",
+"자원봉사는 누구나 평생에 한 번쯤 경험해 볼 만한 뜻깊은 활동이다.",
+"탈수된 새를 살리는 데에는 수의사의 전문적인 치료가 가장 중요하다."
+],
+"answer": "①",
+"solution": "글쓴이는 탈수된 새를 돌보며 인간 활동이 기후 변화를 통해 동물에게 해를 끼친다는 점을 성찰하고, 동물을 존중과 돌봄으로 대해야 하며 인간도 지구를 공유하는 하나의 동물임을 깨달았다고 말한다. 따라서 글 전체를 관통하는 요지는 ①이다. ②③⑤는 글에 부분적으로 등장하는 소재이거나 핵심 메시지가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-80f375b0a0",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nThis morning, we had the opportunity to learn about animal treatment thanks to Molly, an elderly elephant. After spending 25 years carrying tourists along rough roads, she developed a twisted spine and foot pain. In order to support Jane in taking care of Molly's foot, we took part in positive reinforcement training, which involves using rewards to encourage desirable behaviors. When I gently touched her foot with a pole and called out, \"foot,\" she lifted it. We then rewarded her with a sweet piece of watermelon. This training helps reduce the stress that animals experience during controlled situations, such as treatment or a health examination.\n\n→ By using rewards to (A)__________ desirable behaviors, positive reinforcement training helped Molly feel (B)__________ stress while receiving treatment for her foot.",
+"choices": [
+"(A) encourage …… (B) less",
+"(A) punish …… (B) less",
+"(A) encourage …… (B) more",
+"(A) prevent …… (B) less",
+"(A) discourage …… (B) more"
+],
+"answer": "①",
+"solution": "긍정 강화 훈련은 보상을 사용해 바람직한 행동을 '장려(encourage)'하는 것이므로 (A)에는 encourage가 들어간다. 또한 이 훈련은 치료 같은 상황에서 동물이 겪는 스트레스를 줄여 준다고 했으므로 (B)에는 less가 적절하다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fc73583be3",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nOn the last day, we were called to the rescue center due to a sudden emergency. Some dehydrated birds had fallen out of the sky in the city and were brought to the center. Following the veterinarian's guidance, we provided water to the birds while the vets treated their broken wings and legs and injected them with vitamins for a speedy recovery. It was shocking that this type of accident happens every year since the high temperatures dry up water sources in the city. Caring for the birds, I couldn't help but reflect on the impact of human activities on climate change and how it harms animals. From this experience, I learned the importance of treating animals with respect and care. I also came to realize that humans are just another kind of animal and share the Earth with all other living creatures.",
+"choices": [
+"An Emergency Rescue of Birds Falling from the City Sky",
+"Why High Temperatures Threaten City Birds Every Summer",
+"A Volunteer's Deepened Respect for Animals as Fellow Creatures",
+"The Key Role of Vitamins in a Bird's Speedy Recovery",
+"How Climate Change Is Drying Up Urban Water Sources"
+],
+"answer": "③",
+"solution": "글의 앞부분은 탈수된 새 구조라는 사건을 전하지만, 글쓴이는 이를 계기로 인간 활동과 기후 변화, 그리고 동물을 존중과 돌봄으로 대해야 함을 깨닫고 인간도 지구를 공유하는 하나의 동물임을 성찰하며 글을 마무리한다. 따라서 글 전체를 아우르는 제목은 동물 존중에 대한 깨달음을 담은 ③이다. ①②④⑤는 모두 글의 일부 사실에만 초점을 맞춘 함정 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-406675a969",
+"typeId": "eng-h1-b06-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThis morning, we had the opportunity to learn about animal treatment thanks to Molly, an elderly elephant. After spending 25 years carrying tourists along rough roads, she developed a twisted spine and foot pain. In order to support Jane in taking care of Molly's foot, we took part in positive reinforcement training, which involves using rewards to encourage desirable behaviors. When I gently touched her foot with a pole and called out, \"foot,\" she lifted it. We then rewarded her with a sweet piece of watermelon, her favorite fruit. This training helps reduce the stress that animals experience during controlled situations, such as treatment or a health examination. The good news is Molly seems to be adapting well, and I expect her to get better soon.",
+"choices": [
+"the serious physical injuries elephants suffer after years of hard labor",
+"positive reinforcement training that eases a sick elephant's stress during treatment",
+"the ethical problems of using captive elephants to carry tourists",
+"how rewards can be used to teach elephants fun tricks for shows",
+"the various health examinations regularly given to captive elephants"
+],
+"answer": "②",
+"solution": "글은 다리를 다친 노령 코끼리 Molly의 치료를 돕기 위해 보상을 활용하는 긍정 강화 훈련에 참여했고, 이 훈련이 치료 상황에서 동물의 스트레스를 줄여 준다는 점을 설명한다. 따라서 주제는 ②이다. ①③⑤는 글에 언급되긴 하나 중심 내용이 아니며, ④는 보상의 목적을 '쇼를 위한 묘기'로 왜곡한 함정 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8a47166e82",
+"typeId": "eng-h1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThis morning, we had the opportunity (A)[learn / to learn] about animal treatment thanks to Molly, an elderly elephant. After spending 25 years (B)[carried / carrying] tourists along rough roads, she (C)[developed / developing] a twisted spine and foot pain. When I gently touched her foot with a pole and called out, \"foot,\" she lifted it.",
+"choices": [
+"(A) learn - (B) carrying - (C) developing",
+"(A) learn - (B) carried - (C) developed",
+"(A) to learn - (B) carried - (C) developing",
+"(A) to learn - (B) carrying - (C) developing",
+"(A) to learn - (B) carrying - (C) developed"
+],
+"answer": "⑤",
+"solution": "(A) opportunity 뒤에서 명사를 수식하는 형용사적 용법이므로 to learn이 맞다. (B) 주어 she가 투어객을 '태우는' 능동 관계이므로 현재분사 carrying이 맞다. (C) 문장의 본동사 자리이고 과거 사실이므로 developed가 맞다. 따라서 to learn - carrying - developed인 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ed2ca524b5",
+"typeId": "eng-h1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn the last day, we were called to the rescue center due to a sudden emergency. Some dehydrated birds had fallen out of the sky in the city and (A)[brought / were brought] to the center. Following the veterinarian's guidance, we provided water to the birds while the vets (B)[treating / treated] their broken wings and legs and injected them with vitamins. It was shocking (C)[that / what] this type of accident happens every year.",
+"choices": [
+"(A) brought - (B) treated - (C) that",
+"(A) were brought - (B) treated - (C) that",
+"(A) were brought - (B) treating - (C) what",
+"(A) brought - (B) treated - (C) what",
+"(A) were brought - (B) treated - (C) what"
+],
+"answer": "②",
+"solution": "(A) 새들이 센터로 '옮겨진' 것이므로 수동태 were brought가 맞고, 앞의 had fallen과 and로 연결된다. (B) while절의 본동사이고 등위접속사 and로 injected와 병렬되므로 과거형 treated가 맞다. (C) 뒤에 완전한 절(accident happens)이 오므로 접속사 that이 맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5026a338fc",
+"typeId": "eng-h1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBears are a fascinating group of animals with eight species, all (A)[living / lived] in very different habitats around the world. Brown bears in Eurasia, Sun bears in Southeast Asia, and Asiatic black bears in Asia are often (B)[hunted / hunting] and kept illegally for their bile, (C)[which / what] is sold at a high price for traditional Asian medicine.",
+"choices": [
+"(A) living - (B) hunted - (C) which",
+"(A) living - (B) hunting - (C) what",
+"(A) lived - (B) hunted - (C) which",
+"(A) living - (B) hunted - (C) what",
+"(A) lived - (B) hunting - (C) which"
+],
+"answer": "①",
+"solution": "(A) species가 서식하는 능동 관계를 나타내는 분사구문이므로 현재분사 living이 맞다. (B) 곰들이 '사냥당하는' 수동 의미이고 뒤의 kept와 병렬되므로 hunted가 맞다. (C) 앞에 선행사 their bile가 있고 뒤 문장에 주어가 없으므로 관계대명사 which가 맞다(what은 선행사와 함께 쓸 수 없음). 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-93292dba12",
+"typeId": "eng-h1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nBears are a fascinating group of animals with eight species, all ⓐliving in very different habitats around the world. These bears should have the freedom ⓑto live, but they are often killed when they come into contact with humans. Brown bears, Sun bears, and Asiatic black bears in Asia are often ⓒhunting and kept illegally for their bile, which ⓓare sold at a high price for traditional Asian medicine. Governments and animal welfare organizations make persistent attempts to find these farms and rescue the bears, ⓔallowing them to live in bear sanctuaries. However, some animals are still not fully protected outside the law, and ⓕneeds more of our attention and care.",
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓒ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ",
+"ⓐ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ는 곰이 사냥당하는 수동 관계이고 뒤의 kept와 병렬되므로 hunting이 아니라 hunted가 되어야 한다. ⓓ의 선행사 their bile는 단수이므로 are가 아니라 is sold가 맞다. ⓕ의 주어는 복수 some animals이므로 needs가 아니라 need가 되어야 한다. ⓐ(분사), ⓑ(freedom to V), ⓔ(분사구문)는 모두 옳으므로 어색한 것은 ⓒ, ⓓ, ⓕ인 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-81012d2f25",
+"typeId": "eng-h1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓕ 중, 어법상 알맞은 것을 모두 골라 짝지은 것은?\n\nSaying goodbye to the animals and staff, I felt grateful for the opportunity ⓐvolunteer. From this experience, I learned the importance of ⓑtreating animals with respect and care. I also came to realize ⓒthat humans are just another kind of animal and share the Earth with all other living creatures. ⓓImprove animal welfare, I'll work hard with Care for Animals members. This training helps ⓔreduce the stress ⓕwhat animals experience during controlled situations.",
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓕ",
+"ⓑ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓐ는 the opportunity를 수식하는 형용사적 용법이므로 to volunteer가 되어야 해서 틀렸다. ⓓ는 '~하기 위해'라는 목적을 나타내므로 To improve가 되어야 해서 틀렸다. ⓕ는 앞에 선행사 the stress가 있고 experience의 목적어가 없으므로 that(또는 which)이 되어야 해서 틀렸다. 옳은 것은 ⓑ(the importance of+동명사), ⓒ(realize that+완전절), ⓔ(help+(to)동사원형)이므로 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cb606843b6",
+"typeId": "eng-h1-b06-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓓ 중 어법상 틀린 것을 모두 찾아 그 기호를 쓰고, 해당 단어를 바르게 고쳐 쓰시오.\n\nTo help the bears restore their natural instincts, we carried out some special activities ⓐknowing as \"behavioral enrichment.\" As bears are intelligent and curious creatures, they can become ⓑbored and stressed when ⓒlacking mental and physical stimulation. The honey-log feeders stimulate their natural curiosity and keep them as ⓓactively as they would be in the wild.",
+"selfGrade": true,
+"answer": "ⓐ knowing → known, ⓓ actively → active",
+"solution": "ⓐ는 '~로 알려진 활동들'이라는 수동 의미로 명사를 수식하므로 현재분사 knowing이 아니라 과거분사 known이 되어야 한다. ⓓ는 keep+목적어+보어 구조에서 목적격보어 자리이므로 부사 actively가 아니라 형용사 active가 되어야 한다. ⓑ(감정을 느끼는 사람/동물 수식의 과거분사 bored)와 ⓒ(접속사 생략 분사구문 when lacking)는 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-11cc955c0e",
+"typeId": "eng-h1-b06-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 Anna Ancher에 관한 내용과 일치하지 않는 것은?\n\nNow let's take a look at Anna Ancher, a famous painter from Denmark. When observing her paintings, you may notice a common theme — they all feature female figures. Born in Skagen, Denmark, in 1859, she later moved to Copenhagen to attend a private painting school. After that, she even studied abroad in Paris, which was unusual for women at the time. Thanks to her mother's encouragement, she was able to take advantage of these opportunities. Even after getting married, Ancher persisted in painting, objecting to the social pressure that married women were to solely focus on household duties. She also skillfully explored light and color, contributing to the rich Impressionist movement in Denmark.",
+"choices": [
+"그녀의 그림들은 공통적으로 여성 인물을 다룬다.",
+"1859년 덴마크 스카겐에서 태어나 후에 코펜하겐으로 이주해 사립 미술 학교에 다녔다.",
+"당시 여성으로서는 드물게 파리에서 유학했으며, 이는 어머니의 격려 덕분에 가능했다.",
+"결혼한 뒤에는 사회적 압력을 받아들여 집안일에만 전념하였다.",
+"빛과 색을 능숙하게 탐구하여 덴마크의 인상주의 운동에 기여했다."
+],
+"answer": "④",
+"solution": "본문에서 Ancher는 결혼 후에도 그림 그리기를 계속했으며(persisted in painting), 기혼 여성이 집안일에만 전념해야 한다는 사회적 압력에 '반대했다(objecting)'고 나온다. 따라서 압력을 받아들여 집안일에만 전념했다는 ④는 본문과 반대되므로 일치하지 않는다. 나머지는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a032e51b9a",
+"typeId": "eng-h1-b06-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 Maud Lewis에 관한 내용과 일치하지 않는 것은?\n\nMaud Lewis was a renowned artist known for her heart-warming paintings. Born in a small Canadian town in 1903, Lewis suffered from physical weaknesses such as distorted shoulders and fingers. To make a living, she began to paint and sell Christmas cards. When her parents passed away, Lewis went to live with her aunt in Digby, Nova Scotia, where she met her future husband, Everett Lewis. Although her physical limitations confined her to a small cottage, her talent and imagination were both limitless. As her paintings gradually gained popularity, her story inspired many people and was later made into books and movies.",
+"choices": [
+"1903년 캐나다의 작은 마을에서 태어났으며 뒤틀린 어깨와 손가락 같은 신체적 약점을 겪었다.",
+"생계를 꾸리기 위해 크리스마스 카드를 그려 파는 일을 시작했다.",
+"부모가 세상을 떠난 뒤 디그비에서 이모와 함께 살게 되었고 그곳에서 미래의 남편을 만났다.",
+"신체적 한계로 작은 오두막에 갇혀 지냈지만 재능과 상상력은 무한했다.",
+"그녀의 그림은 끝내 대중의 인기를 얻지 못했고 책이나 영화로도 만들어지지 못했다."
+],
+"answer": "⑤",
+"solution": "본문에 그녀의 그림이 점차 인기를 얻었고(gained popularity) 그녀의 이야기가 책과 영화로 만들어졌다(made into books and movies)고 나온다. 따라서 인기를 얻지 못했고 책·영화로도 만들어지지 못했다는 ⑤는 본문과 정반대이므로 일치하지 않는다. 나머지 선지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-263f14ff4e",
+"typeId": "eng-h1-b06-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nW: Hey, Daniel. How was your tour of Gyeongbokgung Palace?\nM: It was amazing! I was completely captivated by the traditional Korean-style coloring of the buildings.\nW: Ah, you're talking about dancheong, right? The pattern uses blue, white, red, black, and yellow colors in combination.\nM: Yes, exactly! The guide explained that dancheong is not only used for decoration but also protects the buildings from bad weather and insects.\nW: Did you also see the changing of the guard ceremony?\nM: I did. It was really fascinating to see the guards dressed in traditional clothes. It reminded me of a similar ceremony at Buckingham Palace.\nW: So, what are your plans for the rest of your time in Korea?\nM: I really liked Gyeongbokgung Palace, so I'm thinking about going to see some other Korean palaces.",
+"choices": [
+"Daniel은 경복궁 건물의 전통 한국식 색 조합에 완전히 매료되었다.",
+"단청의 문양은 파랑, 하양, 빨강, 검정, 노랑을 조합하여 사용한다.",
+"단청은 장식용으로 쓰일 뿐만 아니라 나쁜 날씨와 곤충으로부터 건물을 보호한다.",
+"Daniel은 수문장 교대식을 보지 못해 아쉬워했다.",
+"Daniel은 경복궁이 무척 마음에 들어 다른 한국 궁궐도 방문할 생각이다."
+],
+"answer": "④",
+"solution": "대화에서 수문장 교대식을 보았느냐는 질문에 Daniel은 'I did.'라고 답하며 전통 복장을 한 수문장들을 보는 것이 매우 흥미로웠다고 말한다. 따라서 교대식을 보지 못했다는 ④는 대화 내용과 일치하지 않는다. 나머지는 모두 대화와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2ed2b1ee78",
+"typeId": "eng-h1-b06-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 Bill Traylor에 관한 내용과 일치하지 않는 것은?\n\nTraylor was born into slavery in the U.S. in 1853 and spent his early life working on a cotton farm in Alabama. Although he became a free man after the American Civil War, he still had to face racial discrimination, working for very low wages on the farm. Later, when he was around 70 years old, Traylor moved to the city of Montgomery, Alabama, where he found a job in a factory. It wasn't until he was 85 years old and became too ill to work that he turned to drawing to express his life experiences. Traylor had a strong fear of dogs because they had often been used on farms to watch and hunt slaves. Using simple shapes and colors, Traylor captured complex moments in American history from slavery to freedom. As a result, he's now considered an important figure in American folk art.",
+"choices": [
+"1853년 노예로 태어나 앨라배마의 목화 농장에서 일하며 어린 시절을 보냈다.",
+"남북 전쟁 후 자유인이 되었지만 여전히 인종 차별에 직면해 매우 낮은 임금을 받으며 일했다.",
+"약 70세 무렵 몽고메리로 이주했고 그곳의 목화 농장에서 일자리를 얻었다.",
+"노예를 감시하고 사냥하는 데 개가 자주 이용되었기 때문에 그는 개에 대한 강한 두려움을 지녔다.",
+"단순한 형태와 색으로 노예제에서 자유에 이르는 미국 역사의 복잡한 순간들을 포착했다."
+],
+"answer": "③",
+"solution": "본문에 70세 무렵 몽고메리로 이주한 뒤 '공장(factory)'에서 일자리를 얻었다고 나온다. 따라서 '목화 농장에서 일자리를 얻었다'는 ③은 본문과 다르므로 일치하지 않는다. 목화 농장은 그의 어린 시절과 자유인이 된 뒤의 저임금 노동과 관련된 장소이며, 이주 후의 직장은 공장이라는 점을 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-42bfea64fa",
+"typeId": "eng-h1-b06-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nWith the word docent coming from a Latin word meaning \"to teach,\" docents are guides who lead museum tours and provide information about the artworks and artists featured in an exhibition. They are usually volunteers who have a passion for art and enjoy sharing their knowledge. To carry out their responsibilities effectively, docents need specialized training in presentation and communication skills. On the other hand, curators are professionals who design and organize exhibitions, with the word curator coming from a Latin word meaning \"to take care of.\" Curators determine the main theme of each exhibition, select artworks that fit with the theme, and arrange them in an engaging way. Even with their distinct roles, both docents and curators share a common goal: enriching every visitor's experience.",
+"choices": [
+"docent라는 단어는 '가르치다'를 뜻하는 라틴어에서 유래했다.",
+"도슨트는 보통 예술에 열정을 지닌 자원봉사자들이다.",
+"curator라는 단어는 '돌보다'를 뜻하는 라틴어에서 유래했다.",
+"큐레이터는 전시의 주제를 정하고 그 주제에 맞는 작품을 골라 매력적으로 배치한다.",
+"도슨트와 큐레이터는 서로 다른 목표를 추구하며 공유하는 공통점이 없다."
+],
+"answer": "⑤",
+"solution": "마지막 문장에서 도슨트와 큐레이터는 역할은 다르지만 '모든 방문객의 경험을 풍부하게 한다는 공통의 목표(a common goal: enriching every visitor's experience)'를 공유한다고 나온다. 따라서 공유하는 공통점이 없다는 ⑤는 본문과 반대되므로 일치하지 않는다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a37c70142b",
+"typeId": "eng-h1-b06-u6m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 Anna Ancher에 관해 답할 수 없는 질문은?\n\nNow let's take a look at Anna Ancher, a famous painter from Denmark. When observing her paintings, you may notice a common theme — they all feature female figures. Born in Skagen, Denmark, in 1859, she later moved to Copenhagen to attend a private painting school. After that, she even studied abroad in Paris, which was unusual for women at the time. Thanks to her mother's encouragement, she was able to take advantage of these opportunities. Even after getting married, Ancher persisted in painting, objecting to the social pressure that married women were to solely focus on household duties. Ancher differed from other artists of that era, who depicted women as still life subjects. In contrast, she showcased them as active participants in everyday tasks, as seen in her works The Maid in the Kitchen and Sewing Fisherman's Wife. In her painting Sunlight in the Blue Room, the reflection of the sunlight on the blue wall is stunningly portrayed.",
+"choices": [
+"In which city and country, and in what year, was Ancher born?",
+"What social pressure did Ancher object to even after getting married?",
+"How did Ancher's portrayal of women differ from that of other artists of her era?",
+"Which painting school in Paris did Ancher graduate from?",
+"What is stunningly portrayed in her painting Sunlight in the Blue Room?"
+],
+"answer": "④",
+"solution": "본문은 Ancher가 코펜하겐의 사립 미술 학교에 다닌 뒤 파리에서 '유학했다(studied abroad in Paris)'고만 밝힐 뿐, 파리의 어느 학교를 졸업했는지는 언급하지 않는다. 따라서 ④는 본문으로 답할 수 없다. 나머지는 각각 출생지·연도(①), 반대한 사회적 압력(②), 다른 화가들과의 차이(③), Sunlight in the Blue Room의 묘사(⑤)로 본문에서 답을 찾을 수 있다. 사립 학교는 코펜하겐에 있었다는 점을 혼동하지 않도록 주의해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m4s0t0",
+"custom": true
 }
 ]

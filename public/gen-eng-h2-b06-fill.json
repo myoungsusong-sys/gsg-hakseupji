@@ -2016,5 +2016,246 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b06-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-b4ea791c3d",
+"typeId": "eng-h2-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe founders of an online eyewear company, for instance, couldn’t understand why it was so hard (A)[find / to find] an affordable pair of glasses. They thought the problem was interesting, so they (B)[conducted / were conducted] some research. They found that just one company dominated 80% of the market. As a result, they created a company that no one expected to thrive. Instead of depending on only physical stores where customers could try the eyeglasses on directly, they created a business where you could simply order (C)[inexpensive / inexpensively], high-quality eyewear online.",
+"choices": [
+"find – conducted – inexpensive",
+"to find – conducted – inexpensive",
+"to find – were conducted – inexpensively",
+"find – were conducted – inexpensive",
+"to find – conducted – inexpensively"
+],
+"answer": "②",
+"solution": "(A) 가주어 it의 진주어 자리이므로 to부정사 to find가 알맞다. (B) 주어 they가 연구를 직접 수행했고 뒤에 목적어 some research가 있으므로 능동태 conducted가 알맞다. (C) 명사 eyewear를 꾸미는 자리이므로 형용사 inexpensive가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e186349ade",
+"typeId": "eng-h2-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIf you want to have good ideas, you must have numerous ideas. Traditionally, people follow the saying that they prefer “quality over quantity.” However, in the case of ideas, quantity and quality are equally (A)[important / importantly]. Highly creative individuals (B)[do / does] not actually produce better ideas than average ones. Instead, they produce more ideas. Their increased idea output means that they are more likely (C)[to hit / hitting] on something brilliant.",
+"choices": [
+"important – do – to hit",
+"important – does – hitting",
+"importantly – do – to hit",
+"importantly – does – to hit",
+"important – do – hitting"
+],
+"answer": "①",
+"solution": "(A) be동사 are의 보어 자리이므로 형용사 important가 알맞다. (B) 주어 Highly creative individuals가 복수이므로 do가 알맞다. (C) be likely 뒤에는 to부정사가 오므로 to hit가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cd800d2966",
+"typeId": "eng-h2-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe hallmark of originality (A)[is / are] rejecting the default and finding out if a better option exists. Your ability to do things differently, to question and refine the way things work is (B)[what / that] makes you creative and different. Your Internet browser is a pain? Change it! You don’t like the system? Say so! Most people won’t take any risk. They’ll just stick with what they know, (C)[thinking / thought] it’ll be good enough. But if you think that you can change things, then your originality and your creativity could make a big difference in the end.",
+"choices": [
+"is – what – thinking",
+"are – what – thought",
+"is – that – thinking",
+"are – that – thinking",
+"is – what – thought"
+],
+"answer": "①",
+"solution": "(A) 주어의 핵심은 단수 명사 The hallmark이고 of originality는 수식어이므로 is가 알맞다. (B) 앞에 선행사가 없고 뒤 절에 주어가 빠져 있으므로 선행사를 포함한 관계대명사 what이 알맞다. (C) 의미상 주어 They가 '생각하는' 능동 관계이므로 현재분사 thinking으로 시작하는 분사구문이 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aa7bda8b64",
+"typeId": "eng-h2-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nThe online eyewear company has, without a doubt, ⓐbeen successful. It was voted as the most innovative business by a world-leading business magazine. The company grew ⓑto be worth more than a billion dollars. Anyone could have ⓒnoticed the problem with expensive glasses in stores, but it took courageous pioneers to find the answers. Rules and systems are made by people. This means they can ⓓchange by people as well. It’s a good idea ⓔto challenge the defaults.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓓ의 주어 they(= rules and systems)는 사람에 의해 '바뀌는' 대상이고 뒤에 by people이 있으므로 수동태 be changed로 고쳐야 한다. ⓐ는 현재완료 has been, ⓑ는 grow to be(~이 되다), ⓒ는 could have p.p.(~했을 수도 있었다), ⓔ는 가주어 It의 진주어인 to부정사로 모두 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4815176dc",
+"typeId": "eng-h2-b06-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 틀린 것을 세 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nInstead, what seems to hold them back ⓐis their way of learning. All the time a gifted child spends ⓑmemorizing Mozart is time he can’t spend learning how ⓒcompose music himself. All the time an extremely intelligent child spends studying for university tests is time she can’t spend learning how to think independently. In summary, these children tend to spend all of their time memorizing old ideas and skills but very little time ⓓcoming up with new ideas or skills. This, unfortunately, is ⓔthat most education encourages students to do.\nAccording to many researchers, the skills that make someone a child prodigy simply ⓕisn’t the same skills that make an adult genius.",
+"selfGrade": true,
+"answer": "ⓒ compose → to compose, ⓔ that → what, ⓕ isn’t → aren’t",
+"solution": "ⓒ '의문사 + to부정사' 구문이므로 how to compose로 고쳐야 한다. ⓔ 앞에 선행사가 없고 뒤 절에 do의 목적어가 빠져 있으므로 관계대명사 what이 와야 한다. ⓕ 주어가 복수 명사 the skills이고 that ~ prodigy는 수식어이므로 aren’t가 알맞다. ⓐ는 what절 주어를 받는 단수 동사, ⓑ와 ⓓ는 'spend + 시간 + -ing' 구문으로 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-67cf6b734b",
+"typeId": "eng-h2-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMany soccer teams now use a smart vest (A)[that / what] tracks each player's movement during a match. The device, which players wear under their jerseys, (B)[record / records] the total distance run on the field. After the game, coaches check the data (C)[collect / collected] by the vest to plan better training.",
+"choices": [
+"that / record / collected",
+"that / records / collected",
+"what / records / collect",
+"that / records / collect",
+"what / record / collected"
+],
+"answer": "②",
+"solution": "(A)는 앞의 명사 a smart vest를 꾸미는 주격 관계대명사가 필요하므로 선행사가 있는 that이 맞다(what은 선행사를 쓸 수 없음). (B)의 주어는 단수 The device이므로 단수 동사 records가 옳다. (C)의 the data는 조끼에 '의해 수집되는' 대상이므로 수동의 의미를 갖는 과거분사 collected가 맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cf260c47fb",
+"typeId": "eng-h2-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nVAR was first used in a game (A)[which / where] referees could review video replays. To check every goal, each goal line (B)[have / has] seven cameras installed around it. After the match, fans finally learned (C)[what / that] the ball had completely crossed the line.",
+"choices": [
+"which / have / that",
+"where / has / what",
+"where / has / that",
+"where / have / that",
+"which / has / what"
+],
+"answer": "③",
+"solution": "(A) 뒤의 절(referees could review video replays)이 빠진 성분 없이 완전하므로 관계부사 where가 맞다(which는 주어·목적어 자리가 비어야 함). (B)의 주어는 단수 each goal line이므로 has가 옳다. (C) 뒤에 완전한 절이 이어지며 '~라는 것'을 목적어로 받으므로 접속사 that이 맞다(what은 불완전한 절을 이끎). 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dfb10eba89",
+"typeId": "eng-h2-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nConnected ball technology (A)[measure / measures] every physical touch during a game. It helps referees find the player (B)[who / which] actually scored the goal. The exact moment of contact is also (C)[record / recorded] in a graph for everyone to see.",
+"choices": [
+"measures / who / recorded",
+"measure / who / recorded",
+"measures / which / record",
+"measures / who / record",
+"measure / which / recorded"
+],
+"answer": "①",
+"solution": "(A)의 주어는 단수 Connected ball technology이므로 단수 동사 measures가 맞다. (B)의 선행사가 사람(the player)이므로 who가 옳다(which는 사물에 쓰임). (C)의 주어 The exact moment of contact은 그래프에 '기록되는' 대상이므로 수동태를 이루는 과거분사 recorded가 맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-889922d6e0",
+"typeId": "eng-h2-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHe made bricks by mixing clay, a locally available material, with 10% cement. This mixture ⓐ[help / helps] keep classrooms cool during hot weather. Additionally, he used bricks with holes in them to make the ceiling and built a high roof using a contemporary architectural system ⓑ[let / to let] hot air ⓒ[escape / to escape]. The large overhanging roof provides shade and protects the clay bricks from heavy rain.\n\nⓐ  ⓑ  ⓒ",
+"choices": [
+"① help  to let  escape",
+"② helps  let  escape",
+"③ helps  to let  to escape",
+"④ helps  to let  escape",
+"⑤ help  letting  to escape"
+],
+"answer": "④",
+"solution": "ⓐ 주어 This mixture가 단수이므로 helps가 맞습니다. ⓑ '~하기 위해'라는 목적을 나타내는 to부정사 to let이 옳습니다. ⓒ 사역동사 let은 목적어 뒤에 동사원형을 쓰므로 escape가 맞습니다. 따라서 helps / to let / escape인 ④가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3c9a592362",
+"typeId": "eng-h2-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFrancis Kéré, a winner of the Pritzker Prize, ⓐ[was / were] born in Burkina Faso, one of the poorest countries in Africa. When he was seven, he had ⓑ[move / to move] 13 km away to attend school. Even though he became a globally recognized architect in Germany, he ⓒ[has / have] not forgotten his roots.\n\nⓐ  ⓑ  ⓒ",
+"choices": [
+"① was  move  has",
+"② was  to move  have",
+"③ were  to move  has",
+"④ was  to move  has",
+"⑤ were  move  have"
+],
+"answer": "④",
+"solution": "ⓐ 주어 Francis Kéré가 단수이므로 was born이 맞습니다. ⓑ 'have to(~해야 했다)'의 과거형으로 had to move가 옳습니다. ⓒ 주어가 3인칭 단수 he이므로 현재완료 has not forgotten이 맞습니다. 따라서 was / to move / has인 ④가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3d5eb5482b",
+"typeId": "eng-h2-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nZaha Hadid was the first woman ⓐ[ever winning / to ever win] the Pritzker Prize in 2004. Her architectural style ⓑ[was / were] characterized by flowing, curved forms and a departure from traditional geometry. Her notable works ⓒ[include / includes] the Vitra Fire Station in Germany and the Guangzhou Opera House in China.\n\nⓐ  ⓑ  ⓒ",
+"choices": [
+"① ever winning  was  includes",
+"② to ever win  were  include",
+"③ to ever win  was  include",
+"④ to ever win  was  includes",
+"⑤ ever winning  were  include"
+],
+"answer": "③",
+"solution": "ⓐ 'the first woman to+동사원형(~한 최초의 여성)' 형태이므로 to ever win이 맞습니다. ⓑ 주어 Her architectural style이 단수이므로 was가 옳습니다. ⓒ 주어 Her notable works가 복수이므로 include가 맞습니다. 따라서 to ever win / was / include인 ③이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b4a9004311",
+"typeId": "eng-h2-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOver time Kéré's work has expanded well beyond Africa. His works outside of Africa are ⓐ[influenced / influencing] by his experiences in Gando. Drawing inspiration from his hometown, ⓑ[which / where] locals would gather to work, converse, and study beneath the shade of trees, he modeled his design after a large tree. The pavilion's roof, resembling the wide branches of a tree, ⓒ[include / includes] a transparent layer that allows sunlight to spread into the pavilion below.\n\nⓐ  ⓑ  ⓒ",
+"choices": [
+"① influencing  which  includes",
+"② influenced  where  include",
+"③ influenced  which  includes",
+"④ influenced  where  includes",
+"⑤ influencing  where  include"
+],
+"answer": "④",
+"solution": "ⓐ 주어 His works가 영향을 '받는' 대상이고 by가 이어지므로 수동태 influenced가 맞습니다. ⓑ 뒤에 완전한 절이 오고 선행사가 장소(hometown)이므로 관계부사 where가 옳습니다. ⓒ 주어 The pavilion's roof가 단수이므로 includes가 맞습니다. 따라서 influenced / where / includes인 ④가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c42dd9b1ac",
+"typeId": "eng-h2-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nⓐLocated in Burkina Faso's third largest city, the Lycée Schorge Secondary School is comprised of nine distinct modules. These modules house a collection of classrooms and offices, all ⓑcentered around a main public courtyard. First of all, he built the walls of the building using bricks ⓒmade from readily available stone in the region. As with many other buildings, an overhanging roof protects the brick walls from the harsh African sun while also ⓓfacilitating air circulation below. The school is surrounded by a screen made from fast-growing local eucalyptus trees. It also creates casual spaces ⓔwhich students can gather as they wait for their classes to begin.",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ의 which 뒤 'students can gather ~'는 빠진 성분이 없는 완전한 절이고 선행사가 장소(casual spaces)이므로 관계대명사 which가 아니라 관계부사 where를 써야 합니다. ⓐ Located, ⓑ centered, ⓒ made는 각각 주어·명사를 수식하는 과거분사로 옳고, ⓓ facilitating은 'while (also) + 분사' 구문으로 옳습니다. 따라서 틀린 것은 ⑤ ⓔ입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m1s0t0",
+"custom": true
 }
 ]

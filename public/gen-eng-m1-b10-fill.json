@@ -3077,5 +3077,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u5m3s0t0",
 "custom": true
+},
+{
+"id": "fill-c0e5aedb4a",
+"typeId": "eng-m1-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 ⓐ~ⓗ 중, 어법상 옳은 것의 개수는?\n\nHi, I ⓐam Colin. I am cotton candy. I ⓑsmiles a lot. I also enjoy conversations with my friends. During conversations, I ⓒlisten to them well. My friend Junho always ⓓshare his worries with me. He ⓔlikes my sweet and kind words.\nHello, my name ⓕare Greg. I am glass. Glass ⓖshows everything clearly. My friends ⓗread my thoughts easily. That is me!",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "④",
+"solution": "옳은 것은 ⓐ am(주어 I), ⓒ listen(주어 I), ⓔ likes(주어 He), ⓖ shows(주어 Glass), ⓗ read(주어 My friends, 복수)로 모두 5개입니다. 틀린 것은 셋입니다. ⓑ는 주어가 I이므로 smile로 고칩니다. ⓓ는 주어 My friend Junho가 3인칭 단수이므로 shares로 고칩니다. ⓕ는 주어 my name이 단수이므로 is로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0d04145330",
+"typeId": "eng-m1-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장을 모두 고른 것은?\n\nⓐ Honeybees works well together.\nⓑ Please choose one thing around you.\nⓒ Junho and Colin is good friends.\nⓓ My face shows my feelings.\nⓔ Sometimes I lie, but it never work.\nⓕ Hani do her best for her team.\nⓖ Introduce yourself with it.",
+"choices": [
+"ⓐ, ⓓ",
+"ⓑ, ⓓ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓔ, ⓕ",
+"ⓑ, ⓓ, ⓕ, ⓖ"
+],
+"answer": "③",
+"solution": "ⓑ와 ⓖ는 명령문이라 동사원형으로 시작하므로 옳습니다. ⓓ는 주어 My face가 3인칭 단수라 shows가 옳습니다. ⓐ는 주어가 복수이므로 work, ⓒ는 주어가 복수(Junho and Colin)이므로 are로 고쳐야 합니다. ⓔ는 주어 it이 3인칭 단수이므로 works, ⓕ는 주어 Hani가 3인칭 단수이므로 does로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5d62afa7ff",
+"typeId": "eng-m1-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 (A)~(E)의 각 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\n\nHi, I (A)[am / is] Hani. I am a honeybee. Honeybees (B)[work / works] well together. Just like them, I (C)[work / works] in harmony with others. I am on the school soccer team. I (D)[do / does] my best for my team, and I (E)[am / is] happy as a member of my team!",
+"choices": [
+"am – works – work – do – am",
+"am – work – works – does – am",
+"is – work – work – do – is",
+"am – work – work – do – am",
+"am – work – work – does – is"
+],
+"answer": "④",
+"solution": "(A)와 (E)는 주어가 I이므로 am을 씁니다. (B)는 주어 Honeybees가 복수이므로 동사원형 work를 씁니다. (C)와 (D)는 주어가 I이므로 3인칭 단수 -s를 붙이지 않고 work, do를 씁니다. 따라서 am – work – work – do – am입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-810093517f",
+"typeId": "eng-m1-b10-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "윗글에서 어법상 틀린 부분을 3개 찾아 바르게 고쳐 쓰시오.\n\nHello, my name is Greg. I am glass. Glass show everything clearly. Like glass, my face shows my feelings. So, I is a bad liar. Sometimes I lie, but it never works. My friends reads my thoughts easily. That is me!\n\n(1) ________ → ________\n(2) ________ → ________\n(3) ________ → ________",
+"selfGrade": true,
+"answer": "show → shows, is → am, reads → read",
+"solution": "Glass는 3인칭 단수 주어이므로 show를 shows로 고칩니다. 주어가 I이면 be동사는 am이어야 하므로 is를 am으로 고칩니다. My friends는 복수 주어라 일반동사에 -s를 붙이지 않으므로 reads를 read로 고칩니다. 나머지 my name is, my face shows, it never works는 모두 옳은 표현입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3fa8baab30",
+"typeId": "eng-m1-b10-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 Colin이 자신을 소개한 글을 다른 사람이 Colin을 소개하는 글로 바꾼 것이다. 괄호 ⓐ~ⓔ에 주어진 동사를 어법상 알맞은 형태로 각각 쓰시오.\n\n<Colin의 글>\nHi, I am Colin. I am cotton candy. I smile a lot. I also enjoy conversations with my friends. During conversations, I listen to them well.\n\n<바꾼 글>\nThis is Colin. He ⓐ(be) cotton candy. He ⓑ(smile) a lot. He also ⓒ(enjoy) conversations with his friends. During conversations, he ⓓ(listen) to them well. His friend Junho always ⓔ(share) his worries with him.\n\nⓐ______, ⓑ______, ⓒ______, ⓓ______, ⓔ______",
+"selfGrade": true,
+"answer": "ⓐ is ⓑ smiles ⓒ enjoys ⓓ listens ⓔ shares",
+"solution": "주어가 I에서 3인칭 단수 He로 바뀌므로 be동사는 is로 바꿉니다. 일반동사에는 모두 -s를 붙여 smiles, enjoys, listens로 씁니다. ⓔ의 주어 His friend Junho도 3인칭 단수이므로 shares를 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-121829921d",
+"typeId": "eng-m1-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓖ에 대한 설명으로 옳은 것을 <보기>에서 모두 고른 것은?\n\nHello, everyone. I ⓐam Ms. Lee, your English teacher. Please ⓑchooses one thing around you. Then ⓒintroduce yourself with it.\nHi, I am Hani. I am a honeybee. Honeybees ⓓworks well together. Just like them, I ⓔwork in harmony with others. I ⓕam on the school soccer team. I ⓖdoes my best for my team.\n\n<보기>\n(가) ⓐ는 주어가 I이므로 am이 알맞다.\n(나) ⓑ는 명령문이므로 동사원형 choose로 고쳐야 한다.\n(다) ⓒ는 주어가 생략된 문장이므로 introduces로 고쳐야 한다.\n(라) ⓓ는 주어 Honeybees가 복수이므로 work로 고쳐야 한다.\n(마) ⓖ는 Hani가 3인칭 단수이므로 does가 알맞다.",
+"choices": [
+"(가), (나)",
+"(가), (다), (라)",
+"(가), (나), (라)",
+"(나), (라), (마)",
+"(가), (나), (라), (마)"
+],
+"answer": "③",
+"solution": "(가) 주어 I에는 am을 쓰므로 맞는 설명입니다. (나) Please로 시작하는 명령문에는 동사원형을 쓰므로 choose로 고친다는 설명이 맞습니다. (라) 복수 주어 Honeybees 뒤에는 work를 쓰므로 맞는 설명입니다. (다)는 틀렸습니다. ⓒ는 명령문이라 동사원형 introduce가 그대로 맞습니다. (마)도 틀렸습니다. ⓖ의 주어는 Hani가 아니라 I이므로 do로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u0m1s0t0",
+"custom": true
 }
 ]

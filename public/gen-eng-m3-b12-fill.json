@@ -4730,5 +4730,88 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u2m5s0t0",
 "custom": true
+},
+{
+"id": "fill-bb0203be6b",
+"typeId": "eng-m3-b12-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어와 영영풀이가 바르게 짝지어지지 않은 것은?",
+"choices": [
+"filter – a device that removes unwanted substances from a liquid that passes through it",
+"pour – to make a liquid flow out of a container",
+"publisher – a person who writes stories, novels, or poems",
+"seed – a small hard part of a plant from which a new plant can grow",
+"necessary – needed in order to do something or to get a result"
+],
+"answer": "③",
+"solution": "publisher는 책을 쓰는 사람(작가)이 아니라 책을 인쇄해 펴내는 사람이나 회사(a person or company that prints and sells books)를 뜻한다. ③의 풀이는 writer에 해당하므로 함정이다. 나머지 풀이는 모두 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-04cdc3210e",
+"typeId": "eng-m3-b12-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어의 쓰임이 문맥상 어색한 것은?",
+"choices": [
+"Simply <u>tear</u> out a page and use it as a filter.",
+"As the water goes through the page, it <u>changes</u> into clean water.",
+"He <u>tore</u> some hot water into the cup to make tea.",
+"The book has tiny <u>seeds</u> in each page.",
+"The company does not <u>print</u> this book anymore."
+],
+"answer": "③",
+"solution": "tear(-tore-torn)는 '찢다'라는 뜻이라서 물을 컵에 담는 상황에는 쓸 수 없다. 액체를 '붓다'는 pour를 써서 poured라고 해야 한다. 나머지는 모두 문맥에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-cfa4f18f8e",
+"typeId": "eng-m3-b12-u5m0s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 영영풀이를 참고하여 각 빈칸에 알맞은 말을 쓰시오. (단, 필요하면 형태를 바꿀 것)\n\n• to damage paper or cloth by pulling it hard\n• to make or grow something naturally\n\n(A) Yesterday my little brother __________ the poster on the wall by mistake.\n(B) This plant __________ many beautiful flowers every spring.",
+"selfGrade": true,
+"answer": "(A) tore (B) produces",
+"solution": "첫 번째 풀이는 tear(찢다), 두 번째 풀이는 produce(만들어 내다, 피우다)이다. (A)는 Yesterday가 있으니 과거형 tore로 써야 한다. (B)는 주어가 3인칭 단수이고 매년 되풀이되는 일이므로 produces로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6c533fbc5c",
+"typeId": "eng-m3-b12-u5m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 (A)~(E)의 영영풀이로 옳은 것은 <보기>에 몇 개 있는가?\n\nThe Drinkable Book gives people the information and the tools (A)<u>necessary</u> to make clean drinking water. You just (B)<u>tear</u> out a page and (C)<u>pour</u> dirty water on it. The page works as a (D)<u>filter</u>, so the water changes into clean water. The Tree-Book-Tree was made by a small children's book (E)<u>publisher</u> in Argentina.\n\n<보기>\n(a) (A): needed for a purpose\n(b) (B): to pull something such as paper apart into pieces\n(c) (C): to make a liquid flow out of a container\n(d) (D): a device that adds dirt to water passing through it\n(e) (E): a person or company that sells books in a shop",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "(a), (b), (c)는 맞는 풀이다. (d)의 filter는 지나가는 물에서 불순물을 '없애는(removes)' 장치이지 더하는 장치가 아니다. (e)의 publisher는 책을 인쇄해 펴내는 사람이나 회사이고, 가게에서 책을 파는 사람은 bookseller다. 따라서 옳은 풀이는 3개다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8ac9d9cf4f",
+"typeId": "eng-m3-b12-u5m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이에 해당하는 단어를 찾아 각 빈칸에 쓰시오. (단, 문맥에 맞게 형태를 바꿀 것)\n\n• an illness which affects a person, animal, or plant\n• a small hard part of a plant from which a new plant can grow\n• to give something to someone because they need it or want it\n\n(A) This amazing book saves the lives of many children from __________ that come from dirty water.\n(B) It is these tiny __________ that change the book into a tree.\n(C) This tiny book __________ both the information and the tools necessary to make clean drinking water.",
+"selfGrade": true,
+"answer": "(A) diseases (B) seeds (C) provides",
+"solution": "세 영영풀이는 차례대로 disease, seed, provide를 뜻한다. (A)는 관계대명사 that 뒤의 동사가 come이므로 선행사가 복수인 diseases여야 한다. (B)는 these와 동사 change를 보면 복수형 seeds가 맞다. (C)는 주어 This tiny book이 3인칭 단수이고 현재 시제이므로 provides로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m0s0t0",
+"custom": true
 }
 ]

@@ -2027,5 +2027,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u5m3s0t0",
 "custom": true
+},
+{
+"id": "fill-d1d0606d30",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하시오.\n\n나는 언젠가 너에게 이 편지를 보낼 것이다.\n(this letter / send / will / you / I)\n\n→ _______________________________ some day.",
+"selfGrade": true,
+"answer": "I will send you this letter",
+"solution": "'~에게 …을 보내다'는 4형식 「send + 간접목적어(you) + 직접목적어(this letter)」의 어순으로 쓴다. 미래를 나타내는 조동사 will은 동사원형 send 앞에 온다. 따라서 I will send you this letter some day.가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4cab893e1d",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화의 흐름에 맞도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nA: I went to a basketball game yesterday.\nB: Cool! ____________________________?\nA: The Tigers. They're my favorite team.\n\n(you / which / cheer / did / for / team)",
+"selfGrade": true,
+"answer": "Which team did you cheer for",
+"solution": "대답이 특정 팀 이름이므로 '어느 팀을 응원했니?'라고 묻는 문장이 알맞다. 「Which + 명사」를 문장 맨 앞에 두고, 과거시제 의문문이므로 did + 주어 + 동사원형 순서로 쓴다. 전치사 for는 문장 끝에 남는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-a39953c082",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화의 빈칸에 들어갈 말을 <보기>의 표현을 사용하여 4단어로 영작하시오.\n\nB: Mina, what did you do last Saturday?\nG: I went to a concert with my friends.\nB: _______________________________?\nG: It was really exciting. We sang a lot.\n\n<보기> the concert",
+"selfGrade": true,
+"answer": "How was the concert?",
+"solution": "G가 It was really exciting.이라고 공연에 대한 느낌을 말하므로 빈칸은 '그 공연은 어땠니?'라고 묻는 말이다. 과거의 일에 대한 감상을 물을 때는 「How was + 명사?」를 쓴다. 따라서 How was the concert?로 4단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f5b059e3a8",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 2개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nOne day after class, Mrs. Granger called Nick. She said, \"Frindle is not a real word. You and your classmates should stop ⓐto use it.\" Nick said, \"I know ⓑthat you're not happy. I'm really sorry, but it's too late. Everyone ⓒis using it now.\" Mrs. Granger took out a letter. She said, \"I wrote this letter ⓓfor you. But I'm not going to ⓔgive you it today.\"",
+"selfGrade": true,
+"answer": "ⓐ using, ⓔ give it to you",
+"solution": "stop 뒤에 to부정사가 오면 '~하기 위해 멈추다'라는 뜻이 되므로, '사용하는 것을 멈추다'라는 뜻이 되도록 동명사 using으로 고쳐야 한다. 직접목적어가 대명사 it일 때는 4형식(give you it)으로 쓸 수 없으므로 3형식 give it to you로 고친다. ⓑ는 명사절 접속사 that, ⓒ는 단수 주어 Everyone에 맞춘 is, ⓓ는 '~을 위해'를 뜻하는 for로 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2cf7295109",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 질문에 알맞은 대답이 되도록 <조건>에 맞게 빈칸을 완성하시오.\n\nNick couldn't believe his eyes. On that page, he found the word frindle!\nDear Nick,\nCongratulations! Frindle is now a real word. I was on your side from the beginning. But every good story needs a \"bad guy.\" I played that role. I hope that you understand...\n\nQ. What did Mrs. Granger tell Nick in her letter about her real feeling?\n\n<조건>\n• 본문의 문장을 활용하되, 인칭과 시제를 알맞게 바꿀 것\n• 명사절 접속사 that 뒤를 완성할 것\n• 각 빈칸에 한 단어씩 쓸 것\n\n→ She told him that ________ ________ ________ ________ ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "she was on his side from the beginning",
+"solution": "편지의 I was on your side from the beginning.을 Mrs. Granger의 입장에서 전달하는 문장으로 바꾼다. 글쓴이 I는 she로, 받는 사람 your는 Nick을 가리키는 his로 바꾼다. 과거의 일이므로 was를 그대로 쓰며, 빈칸 8개에 she / was / on / his / side / from / the / beginning이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f349631f21",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 질문에 알맞은 대답이 되도록 <조건>에 맞게 빈칸을 완성하시오.\n\nTime passed and Nick graduated. He forgot about frindle. When he turned 21, he received a package from Mrs. Granger. It had a pen, a letter, and a dictionary. There was a note on the dictionary.\n\"See page 541.\"\nNick couldn't believe his eyes. On that page, he found the word frindle!\n\nQ. Why couldn't Nick believe his eyes?\n\n<조건>\n• find를 알맞은 형태로 바꾸어 쓸 것\n• the word, page 541을 사용할 것\n• 각 빈칸에 한 단어씩 쓸 것\n\n→ Because ________ ________ ________ ________ ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "he found the word frindle on page 541",
+"solution": "Nick은 사전의 541쪽에서 frindle이라는 단어를 발견하고 믿을 수 없었다. 과거의 일이므로 find의 과거형 found를 쓰고, '그 단어 frindle'은 the word frindle로 동격 표현을 쓴다. '541쪽에서'는 전치사 on을 써서 on page 541로 나타내며, 모두 8단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
 }
 ]

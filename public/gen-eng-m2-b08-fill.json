@@ -301,5 +301,286 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b08-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-f1bfeb44e0",
+"typeId": "eng-m2-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nAnimals have helped and (A)[protected / protect] humans for thousands of years. In Ireland, people hold a festival for wild goats every year. One story explains its beginning. In the 17th century, a goat ran toward a village while the English army (B)[was attacking / has attacked] Ireland. The villagers saw the goat and realized that danger was coming. Today, people crown a goat (C)[to express / express] their thanks.",
+"choices": [
+"protected — has attacked — to express",
+"protect — was attacking — express",
+"protected — was attacking — to express",
+"protect — has attacked — to express",
+"protected — was attacking — express"
+],
+"answer": "③",
+"solution": "첫 문장은 have를 공유하는 helped와 protected가 병렬로 연결된 현재완료 문장이다. 17세기에 군대가 공격하고 있던 상황은 과거진행형 was attacking으로 나타낸다. 염소에게 왕관을 씌우는 목적을 나타내므로 to express가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9de497af24",
+"typeId": "eng-m2-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 부분에 대한 수정으로 적절하지 않은 것은?\n\nDogs have been part of Nepalese culture ⓐduring hundreds of years. People in Nepal ⓑbelieves that dogs help the god of death and ⓒguides souls to heaven. At the dog festival, people give dogs food and flower necklaces. They put red marks on the dogs’ foreheads to wish ⓓit good luck. They also bow to the dogs ⓔshow their love and thanks.",
+"choices": [
+"ⓐ during → for",
+"ⓑ believes → believe",
+"ⓒ guides → guide",
+"ⓓ it → themselves",
+"ⓔ show → to show"
+],
+"answer": "④",
+"solution": "행운을 빌어 주는 대상은 개들이므로 ⓓ는 them으로 고쳐야 한다. themselves를 쓰면 사람들 자신에게 행운을 빈다는 의미가 되어 문맥에 맞지 않는다. 기간 앞에는 for를 쓰고, 복수 주어 People과 dogs에 맞춰 believe와 guide를 쓰며, 목적은 to show로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ff3b3fdd88",
+"typeId": "eng-m2-b08-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓖ 중 어법상 틀린 부분은 정확히 다섯 개이다. 틀린 부분의 기호와 바르게 고친 표현을 글에 나온 순서대로 쓰시오. 단, 표시된 부분만 고치고 원래 의미를 유지할 것.\n\nIn Nepal, dogs ⓐhave been important in the culture ⓑsince hundreds of years. The Nepalese believe that dogs ⓒare helpers of the god of death and ⓓguides souls to heaven. The dog festival ⓔtake place in October or November. People give dogs flower necklaces and food. They also bow to ⓕit ⓖshow their love and thanks.",
+"selfGrade": true,
+"answer": "ⓑ for, ⓓ guide, ⓔ takes, ⓕ them, ⓖ to show",
+"solution": "hundreds of years는 기간이므로 since를 for로 고치며, dogs에 연결되는 동사는 guide가 되어야 한다. 단수 주어 The dog festival에는 takes가 알맞고, 개들을 가리키는 목적격 대명사는 them이다. 고개 숙여 인사하는 목적을 나타내려면 to show를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8873ecd153",
+"typeId": "eng-m2-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 옳은 부분만을 모두 고른 것은?\n\nThere ⓐare one story about why people in Killorglin celebrate wild goats. In the 17th century, the English army ⓑwas attacking Ireland when they came across some wild goats. Most of the goats ran toward the mountains, but one goat ⓒhas run toward the village. After seeing the goat, the villagers were able to prepare and ⓓprotect themselves. Since then, people in Killorglin ⓔhave celebrated wild goats at a festival. During the festival, they give a goat food and ⓕtaking good care of it.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓕ",
+"ⓓ, ⓔ, ⓕ"
+],
+"answer": "③",
+"solution": "과거에 진행 중이던 공격을 나타내는 ⓑ와 be able to 뒤에서 prepare와 병렬로 연결된 ⓓ는 옳다. ⓔ는 Since then과 함께 과거부터 현재까지 이어진 일을 나타내는 현재완료이므로 옳다. ⓐ는 is, ⓒ는 ran, ⓕ는 take로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-48091a3d7a",
+"typeId": "eng-m2-b08-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말에 맞게 괄호 안의 동사를 알맞은 형태로 바꾸어 ⓐ~ⓔ에 쓰시오. 단, 현재까지 이어지는 일에는 현재완료를, 과거에 진행 중이던 일에는 과거진행형을 쓰고, 각 빈칸에 필요한 단어를 모두 쓸 것.\n\n(1) 동물들은 수천 년 동안 인간을 돕고 보호해 왔다.\nAnimals have ⓐ(help) and ⓑ(protect) humans for thousands of years.\n\n(2) 영국군이 아일랜드를 공격하고 있을 때, 한 염소가 마을을 향해 달려갔다.\nWhile the English army ⓒ(attack) Ireland, one goat ⓓ(run) toward the village.\n\n(3) 네팔 사람들은 개들에게 감사를 표현하기 위해 고개 숙여 인사한다.\nPeople in Nepal bow to dogs ⓔ(express) their thanks.",
+"selfGrade": true,
+"answer": "ⓐ helped, ⓑ protected, ⓒ was attacking, ⓓ ran, ⓔ to express",
+"solution": "첫 문장의 have는 두 동사에 공통으로 걸리므로 helped와 protected를 쓴다. 공격이 진행 중이던 배경은 was attacking으로, 그때 일어난 염소의 행동은 과거형 ran으로 나타낸다. 마지막 문장에서는 인사하는 목적을 나타내는 to express가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f22de0c692",
+"typeId": "eng-m2-b08-u3m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 밑줄 친 단어의 문맥상 뜻으로 가장 알맞은 것은?\n\nI hope that the school will find new [roles] for the cafeteria workers.",
+"choices": [
+"휴식 시간",
+"새로운 업무",
+"작업복",
+"로봇 기계",
+"급식 메뉴"
+],
+"answer": "②",
+"solution": "‘role’은 사람이 맡은 ‘역할, 업무’를 뜻한다. 학교가 급식실 직원들에게 새로운 업무를 찾아 주기를 바란다는 내용이므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-89c8a6443d",
+"typeId": "eng-m2-b08-u3m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 영어 표현과 그 뜻풀이가 바르게 연결되지 않은 것은?",
+"choices": [
+"search for: try to find",
+"in time: before it is too late",
+"change one’s mind: decide differently",
+"in return: without expecting anything",
+"take care of: look after"
+],
+"answer": "④",
+"solution": "‘in return’은 ‘그 대가로, 보답으로’라는 뜻이다. ‘아무것도 기대하지 않고’라는 뜻의 ‘without expecting anything’과는 의미가 다르므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-70f89672b6",
+"typeId": "eng-m2-b08-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 주어진 표현을 모두 사용하여 한 문장으로 바꾸어 쓰시오.\n\nRobbie saw that a huge machine was rushing toward Gloria. He immediately ran toward her and saved her.\n\n(as soon as / see + 목적어 + -ing / just in time)",
+"selfGrade": true,
+"answer": "As soon as Robbie saw a huge machine rushing toward Gloria, he ran toward her and saved her just in time.",
+"solution": "‘~하자마자’는 ‘as soon as’를 사용하고, ‘기계가 돌진하는 것을 보았다’는 ‘see + 목적어 + -ing’ 구조로 나타낸다. ‘just in time’은 ‘아슬아슬하게 때맞추어’라는 뜻으로 문장 끝에 배치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-43326dbb35",
+"typeId": "eng-m2-b08-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 문장을 ‘so ~ that ...’과 ‘neither A nor B’를 모두 사용하여 한 문장으로 바꾸어 쓰시오.\n\nGloria was very sad after Robbie was returned to the factory. A new pet could not make her smile. A trip to New York could not make her smile, either.",
+"selfGrade": true,
+"answer": "Gloria was so sad that neither a new pet nor a trip to New York could make her smile.",
+"solution": "‘매우 슬퍼서 …할 수 없었다’는 ‘so sad that ...’으로 연결한다. 두 대상 모두 그녀를 웃게 하지 못했으므로 ‘neither A nor B’를 쓰며, ‘make + 목적어 + 동사원형’에 따라 ‘make her smile’로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-20c5109bc9",
+"typeId": "eng-m2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nFirst aid can stop an accident from (A)[become / becoming] more serious. Yunho and his classmates (B)[was / were] watering plants when a bee (C)[stung / stinged] him. If you (D)[know / will know] basic first aid, you will be able to help people in need.",
+"choices": [
+"become — were — stung — know",
+"becoming — was — stung — know",
+"becoming — were — stinged — know",
+"becoming — were — stung — know",
+"becoming — were — stung — will know"
+],
+"answer": "④",
+"solution": "stop A from 뒤에는 동명사가 오므로 becoming이 알맞다. Yunho and his classmates는 복수 주어이므로 were를 쓰며, sting의 과거형은 stung이다. 미래의 일을 나타내더라도 조건의 if절에는 현재형 know를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1913fe3120",
+"typeId": "eng-m2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 각 문장의 어색한 부분을 고친 것 중 옳지 않은 것은? 대괄호는 고칠 부분을 나타낸다.",
+"choices": [
+"The fingers that touched the hot pan [was] red. → were",
+"Yunho was [watered] the plants with his classmates. → watering",
+"Katie tried [make] an apple pie for her family. → to make",
+"If Seojun [will arrive] late, Mr. Kim will be angry. → arrives",
+"The students [which] ran and screamed were in the garden. → whose"
+],
+"answer": "⑤",
+"solution": "⑤는 선행사 The students가 사람이고 관계대명사가 절 안에서 주어 역할을 하므로 which를 who 또는 that으로 고쳐야 한다. 소유격 관계대명사 whose 뒤에는 수식할 명사가 필요하므로 whose ran은 어법상 옳지 않다. 나머지는 각각 수 일치, 과거진행형, try의 목적어, 조건절의 시제에 맞게 고쳤다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-48c6c060fd",
+"typeId": "eng-m2-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것끼리만 묶인 것은?\n\nⓐ[Learning] basic first aid is useful for helping others. It can prevent a situation from ⓑ[getting] worse. Katie was making an apple pie ⓒ[for] her family. The fingers that touched the hot pan ⓓ[was] red and started to hurt. In another accident, Seojun was talking with Leah when the bell ⓔ[ringed]. If students ⓕ[will be] late for class, Mr. Kim will be angry.",
+"choices": [
+"ⓐ, ⓓ, ⓕ",
+"ⓑ, ⓒ, ⓔ",
+"ⓓ, ⓔ, ⓕ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓓ의 주어는 복수 명사 The fingers이므로 was를 were로 고쳐야 한다. ⓔ는 ring의 과거형인 rang이 알맞고, ⓕ는 조건절이므로 will be 대신 are를 써야 한다. ⓐ의 동명사 주어, ⓑ의 전치사 뒤 동명사, ⓒ의 수혜자를 나타내는 for는 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-68352e6267",
+"typeId": "eng-m2-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓖ 중 어법상 어색한 부분 다섯 개를 찾아 바르게 고치시오. 각 부분은 한 단어로 고치고, 나머지 표현은 바꾸지 마시오. 답은 기호 순서대로 '기호 수정한 단어'의 형태로 쓰시오.\n\nⓐ[Know] basic first aid is useful. People who ⓑ[is] in need may need your help. Yunho and his classmates were ⓒ[watering] plants when a bee ⓓ[stinged] him. He tried to ⓔ[remove] the stinger with his fingers. First aid can stop a situation from ⓕ[get] worse. If you ⓖ[will] have basic first aid skills, you can help others.\n\n※ ⓖ는 불필요한 한 단어를 삭제하되, 답에는 '삭제'라고 쓰시오.",
+"selfGrade": true,
+"answer": "ⓐ Knowing, ⓑ are, ⓓ stung, ⓕ getting, ⓖ 삭제",
+"solution": "ⓐ는 주어 역할을 하도록 동명사 Knowing으로, ⓑ는 선행사 People에 맞추어 are로 고친다. ⓓ는 sting의 불규칙 과거형 stung으로, ⓕ는 전치사 from 뒤의 동명사 getting으로 고친다. ⓖ의 if절에서는 미래의 조건도 현재시제로 나타내므로 will을 삭제한다. were watering과 tried to remove는 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fe13b5c612",
+"typeId": "eng-m2-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓕ에 주어진 동사를 문맥과 어법에 맞게 바꾸어 쓰시오. 각 빈칸에는 한 단어만 쓰며, ⓐ와 ⓕ에는 동명사, ⓑ에는 과거진행형을 완성하는 형태를 쓰시오.\n\nⓐ(Learn) first aid can help us deal with accidents. Seojun was ⓑ(talk) with Leah when the bell ⓒ(ring). Later, he felt pain when he ⓓ(land) after jumping down the stairs. If someone ⓔ(have) basic first aid skills, that person will be able to help others. Such skills can stop situations from ⓕ(get) worse.\n\nⓐ → ⓑ → ⓒ → ⓓ → ⓔ → ⓕ 순서로 쓰시오.",
+"selfGrade": true,
+"answer": "Learning, talking, rang, landed, has, getting",
+"solution": "ⓐ는 동명사 주어 Learning이고, ⓑ는 was와 함께 과거진행형을 이루는 talking이다. ⓒ와 ⓓ는 과거에 일어난 사건이므로 각각 rang과 landed를 쓴다. ⓔ는 조건절의 단수 주어 someone에 맞는 현재형 has이고, ⓕ는 전치사 from 뒤에 오는 getting이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f62b271695",
+"typeId": "eng-m2-b08-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 대괄호로 표시된 일곱 부분 중 어법상 어색한 부분 네 개를 찾아 바르게 고치시오. 각 부분은 한 단어로 고치고, 나머지 표현은 바꾸지 마시오. 답은 기호 순서대로 '기호 수정한 단어'의 형태로 쓰시오.\n\nKatie ⓐ[were] making an apple pie for her family. When she opened the oven, a pleasant smell ⓑ[filled] the kitchen. She grabbed the hot pan, and her fingers ⓒ[that] touched it turned red and ⓓ[start] to hurt. Knowing first aid ⓔ[help] people deal with accidents. It is useful for people who ⓕ[are] in need and can stop situations from ⓖ[become] worse.",
+"selfGrade": true,
+"answer": "ⓐ was, ⓓ started, ⓔ helps, ⓖ becoming",
+"solution": "ⓐ는 단수 주어 Katie에 맞추어 was로 고치며, ⓓ는 turned와 and로 연결된 과거시제 동사이므로 started가 알맞다. ⓔ의 주어 Knowing first aid는 동명사구이므로 단수 취급하여 helps를 쓴다. ⓖ는 전치사 from 뒤에 있으므로 동명사 becoming으로 고친다. ⓒ의 that은 fingers를 수식하는 주격 관계대명사로 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aa03976b73",
+"typeId": "eng-m2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 빈칸에 들어갈 말이 바르게 연결된 것은?\n\n• Robbie was good at ______ himself during the game.\n• He let Gloria ______ the game.",
+"choices": [
+"hide — win",
+"hiding — to win",
+"hiding — win",
+"to hide — winning",
+"hide — to win"
+],
+"answer": "③",
+"solution": "전치사 at 뒤에 동사가 오면 동명사 형태인 hiding을 써야 한다. 사역동사 let의 목적격 보어로는 동사원형을 쓰므로 두 번째 빈칸에는 win이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-61cef9c0ea",
+"typeId": "eng-m2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 괄호 안에서 어법상 알맞은 말을 바르게 연결한 것은?\n\n• Gloria's parents decided (sending / to send) Robbie back to the factory.\n• A trip to New York could not make Gloria (feel / to feel) happy.",
+"choices": [
+"sending — feel",
+"to send — to feel",
+"sending — to feel",
+"to send — feel",
+"to send — feeling"
+],
+"answer": "④",
+"solution": "decide는 to부정사를 목적어로 취하므로 to send가 알맞다. 사역동사 make 뒤에서 목적어 Gloria의 행동이나 상태를 나타내는 동사는 원형인 feel로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m1s0t0",
+"custom": true
 }
 ]
