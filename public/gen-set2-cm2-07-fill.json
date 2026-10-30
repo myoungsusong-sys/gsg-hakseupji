@@ -1400,5 +1400,133 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-07-u0m0s0t2",
 "custom": true
+},
+{
+"id": "fill-94e60327d5",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "전체집합 $U=\\{1,2,3,\\ldots,12\\}$에서 두 조건\n$p$: $x$는 $24$의 양의 약수이다.\n$q$: $(x-2)(x-7)<0$\n의 진리집합을 각각 $P$, $Q$라 하자. 조건 ‘$\\sim p$ 또는 $q$’의 진리집합에 속하는 모든 원소의 합은?",
+"choices": [
+"$50$",
+"$52$",
+"$55$",
+"$58$",
+"$61$"
+],
+"answer": "③",
+"solution": "$P=\\{1,2,3,4,6,8,12\\}$이고 $Q=\\{3,4,5,6\\}$이다. $P^c\\cup Q=\\{3,4,5,6,7,9,10,11\\}$이므로 모든 원소의 합은 $55$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-0d50c5b09c",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "전체집합이 실수 전체일 때, 두 조건\n$p$: $a-3<x<a+4$\n$q$: $-2\\le x\\le3$\n에 대하여 명제 $q\\to p$가 참이 되도록 하는 실수 $a$의 범위는?",
+"choices": [
+"$-1\\le a\\le1$",
+"$-1<a<1$",
+"$-1\\le a<1$",
+"$-1<a\\le1$",
+"$-2<a<2$"
+],
+"answer": "②",
+"solution": "$q\\to p$가 참이려면 $[-2,3]\\subset(a-3,a+4)$이어야 한다. 따라서 $a-3<-2$이고 $3<a+4$이므로 $-1<a<1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-283c3fb294",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "전체집합이 실수 전체일 때, 두 조건\n$p$: $(x-2)(x-5)\\le0$\n$q$: $|x-a|<4$\n에 대하여 명제 $p\\to q$가 참이 되도록 하는 실수 $a$의 범위는?",
+"choices": [
+"$1\\le a\\le6$",
+"$1<a<6$",
+"$1\\le a<6$",
+"$1<a\\le6$",
+"$-2<a<9$"
+],
+"answer": "②",
+"solution": "$p$의 진리집합은 $[2,5]$이고 $q$의 진리집합은 $(a-4,a+4)$이다. $[2,5]\\subset(a-4,a+4)$이므로 $a-4<2$이고 $5<a+4$이다. 따라서 $1<a<6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-4e4a0b43de",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "주관식",
+"diff": 4,
+"body": "전체집합 $U=\\{1,2,3,\\ldots,15\\}$에서 두 조건\n$p$: $x$는 $36$의 양의 약수이다.\n$q$: $x\\le a$\n를 생각하자. $1\\le a\\le15$인 정수 $a$에 대하여 조건 $p\\to q$의 진리집합의 원소의 개수가 $12$가 되도록 하는 모든 $a$의 합을 구하여라.",
+"selfGrade": true,
+"answer": "$9$",
+"solution": "$U$에서 $p$의 진리집합은 $P=\\{1,2,3,4,6,9,12\\}$이다. $p\\to q$가 거짓인 원소는 $P$ 중 $a$보다 큰 원소이므로, 그 개수가 $15-12=3$이어야 한다. $a=4,5$일 때 그 원소들이 $6,9,12$이므로 구하는 합은 $4+5=9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-e532400b7a",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "전체집합이 실수 전체일 때, 두 조건\n$p$: $a-1\\le x\\le a+2$\n$q$: $(x+2)(x-4)\\ge0$\n에 대하여 명제 $p\\to q$가 참이 되도록 하는 실수 $a$의 범위는?",
+"choices": [
+"$a<-4$ 또는 $a>5$",
+"$a\\le-4$ 또는 $a\\ge5$",
+"$a\\le-3$ 또는 $a\\ge4$",
+"$-4\\le a\\le5$",
+"$a<-3$ 또는 $a>4$"
+],
+"answer": "②",
+"solution": "$q$의 진리집합은 $(-\\infty,-2]\\cup[4,\\infty)$이다. 하나의 구간인 $[a-1,a+2]$가 이 집합에 포함되려면 $a+2\\le-2$이거나 $a-1\\ge4$이어야 한다. 따라서 $a\\le-4$ 또는 $a\\ge5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-cbd5a0b228",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "원소의 개수가 $20$인 전체집합 $U$에서 두 조건 $p$, $q$의 진리집합을 각각 $P$, $Q$라 하자. $|P\\cup Q|=15$이고, 조건 $p\\to q$와 $q\\to p$의 진리집합의 원소의 개수가 각각 $14$, $17$일 때, $|P|\\times|Q|$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$108$",
+"solution": "$p\\to q$가 거짓인 원소는 $P\\setminus Q$의 원소이므로 $|P\\setminus Q|=20-14=6$이다. 마찬가지로 $|Q\\setminus P|=20-17=3$이므로 $|P\\cap Q|=15-6-3=6$이다. 따라서 $|P|=12$, $|Q|=9$이므로 $|P|\\times|Q|=108$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-367d52548e",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "전체집합이 실수 전체일 때, 두 조건\n$p$: $|x-a|\\le3$\n$q$: $x\\le-2$ 또는 $x>6$\n을 생각하자. 조건 $p\\to q$의 진리집합이 정확히 $(-\\infty,-2]\\cup(4,\\infty)$가 되도록 하는 실수 $a$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$1$",
+"solution": "$p\\to q$가 거짓인 부분은 $p$가 참이고 $q$가 거짓인 부분이므로 $[a-3,a+3]\\cap(-2,6]$이다. 주어진 진리집합의 여집합은 $(-2,4]$이므로 이 교집합이 $(-2,4]$와 같아야 한다. 오른쪽 끝점에서 $a+3=4$이므로 $a=1$이고, 이때 실제로 교집합은 $[-2,4]\\cap(-2,6]=(-2,4]$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-aa992dbc1c",
+"typeId": "set2-cm2-07-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "전체집합이 실수 전체일 때, 정수 $a$, $b$에 대한 세 조건\n$p$: $a\\le x<b$\n$q$: $-3<x\\le4$\n$r$: $-1\\le x<2$\n를 생각하자. $a<b$이고 두 명제 $p\\to q$, $r\\to p$가 모두 참이 되도록 하는 모든 순서쌍 $(a,b)$에 대하여 $b-a$의 값을 모두 더한 결과를 구하여라.",
+"selfGrade": true,
+"answer": "$27$",
+"solution": "$r\\to p$에서 $[-1,2)\\subset[a,b)$이므로 $a\\le-1$, $b\\ge2$이다. $p\\to q$에서 $[a,b)\\subset(-3,4]$이므로 $a>-3$, $b\\le4$이다. 따라서 $a=-2,-1$이고 $b=2,3,4$이므로, 모든 $b-a$의 합은 $(4+5+6)+(3+4+5)=27$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-07-u0m0s1t2",
+"custom": true
 }
 ]

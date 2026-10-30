@@ -1,0 +1,104 @@
+[
+{
+"id": "fill-21982487ee",
+"typeId": "set2-m22-07-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 변 $BC$의 중점을 $D$, 무게중심을 $G$라 하자. $AG=(3x+2)\\,\\mathrm{cm}$, $GD=(x+4)\\,\\mathrm{cm}$일 때, 중선 $AD$의 길이는?",
+"choices": [
+"$20\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$",
+"$30\\,\\mathrm{cm}$",
+"$36\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "무게중심은 중선을 꼭짓점으로부터 $2:1$로 나누므로 $3x+2=2(x+4)$이다. 이를 풀면 $x=6$이므로 $GD=10\\,\\mathrm{cm}$이다. 따라서 $AD=3GD=30\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-b9e4cc0dbd",
+"typeId": "set2-m22-07-u0m0s0t3",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 변 $CA$의 중점을 $E$, 무게중심을 $G$라 하자. 삼각형 $AGE$의 넓이가 $8\\,\\mathrm{cm}^2$일 때, 삼각형 $ABC$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$48\\,\\mathrm{cm}^2$",
+"solution": "점 $G$는 중선 $BE$ 위에 있고 $GE:BE=1:3$이므로, 삼각형 $AGE$의 넓이는 삼각형 $ABE$의 넓이의 $\\frac13$이다. 또한 $E$는 변 $CA$의 중점이므로 삼각형 $ABE$의 넓이는 삼각형 $ABC$의 넓이의 $\\frac12$이다. 따라서 삼각형 $ABC$의 넓이는 $8\\times3\\times2=48\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-7daaf477ea",
+"typeId": "set2-m22-07-u0m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 변 $BC$의 중점을 $D$, 무게중심을 $G$라 하자. 점 $G$를 지나 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $P$, $Q$라 한다. $BD=15\\,\\mathrm{cm}$일 때, 선분 $PQ$의 길이는?",
+"choices": [
+"$15\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$25\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "$D$는 변 $BC$의 중점이므로 $BC=30\\,\\mathrm{cm}$이다. 무게중심의 성질에 의해 $AG:AD=2:3$이고, $PQ\\parallel BC$이므로 삼각형 $APQ$와 삼각형 $ABC$의 닮음비는 $2:3$이다. 따라서 $PQ=30\\times\\frac23=20\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-17c8cce5b1",
+"typeId": "set2-m22-07-u0m0s0t3",
+"kind": "주관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 무게중심을 $G$라 하자. 점 $G$를 지나 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $M$, $N$이라 한다. 사각형 $MBCN$의 넓이가 $50\\,\\mathrm{cm}^2$일 때, 삼각형 $AMN$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$40\\,\\mathrm{cm}^2$",
+"solution": "변 $BC$의 중점을 $D$라 하면 $AG:AD=2:3$이므로, 삼각형 $AMN$과 삼각형 $ABC$의 닮음비는 $2:3$이다. 따라서 두 삼각형의 넓이의 비는 $4:9$이므로, 삼각형 $AMN$과 사각형 $MBCN$의 넓이의 비는 $4:5$이다. 구하는 넓이는 $50\\times\\frac45=40\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-657a46c123",
+"typeId": "set2-m22-07-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 변 $BC$의 중점을 $D$, 무게중심을 $G$라 하고, 삼각형 $GBC$의 무게중심을 $H$라 하자. $GH=8\\,\\mathrm{cm}$일 때, 선분 $AH$의 길이는?",
+"choices": [
+"$20\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$",
+"$32\\,\\mathrm{cm}$",
+"$36\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "$H$는 삼각형 $GBC$의 중선 $GD$ 위에 있고 $GH:HD=2:1$이므로 $HD=4\\,\\mathrm{cm}$, $GD=12\\,\\mathrm{cm}$이다. 삼각형 $ABC$의 무게중심이 $G$이므로 $AG=2GD=24\\,\\mathrm{cm}$이다. 점들은 $A$, $G$, $H$, $D$의 순서로 놓이므로 $AH=AG+GH=32\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-43d681331b",
+"typeId": "set2-m22-07-u0m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 변 $AB$의 중점을 $D$, 무게중심을 $G$라 하고, 삼각형 $ABG$의 무게중심을 $H$라 하자. 삼각형 $ABH$의 넓이가 $8\\,\\mathrm{cm}^2$일 때, 삼각형 $BCH$의 넓이는?",
+"choices": [
+"$24\\,\\mathrm{cm}^2$",
+"$28\\,\\mathrm{cm}^2$",
+"$32\\,\\mathrm{cm}^2$",
+"$36\\,\\mathrm{cm}^2$",
+"$40\\,\\mathrm{cm}^2$"
+],
+"answer": "③",
+"solution": "무게중심의 성질에 의해 $DG=\\frac13DC$, $DH=\\frac13DG=\\frac19DC$이므로 $CH=\\frac89CD$이다. 삼각형 $ABH$와 삼각형 $ABC$는 밑변 $AB$가 같고 높이의 비가 $DH:DC=1:9$이므로, 삼각형 $ABC$의 넓이는 $72\\,\\mathrm{cm}^2$이다. 따라서 삼각형 $BCD$의 넓이는 $36\\,\\mathrm{cm}^2$이다. 삼각형 $BCH$와 삼각형 $BCD$는 직선 $CD$ 위의 밑변에 대한 높이가 같으므로, 구하는 넓이는 $36\\times\\frac89=32\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-07-u0m0s0t3",
+"custom": true
+}
+]
