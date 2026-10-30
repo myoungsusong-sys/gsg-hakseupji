@@ -5257,5 +5257,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-17632",
 "custom": true
+},
+{
+"id": "fill-9d3ec7d8f3",
+"typeId": "17527",
+"kind": "주관식",
+"diff": 1,
+"body": "세 변의 길이가 각각 $6\\text{ cm}$, $8\\text{ cm}$, $10\\text{ cm}$인 직각삼각형 종이가 $2$장 있습니다. 길이가 $8\\text{ cm}$인 변끼리 붙여 예각삼각형을 만들었습니다. 종이를 겹치지 않게 붙였을 때, 만들어진 예각삼각형의 세 변의 길이의 합은 몇 $\\text{cm}$인가요?",
+"selfGrade": true,
+"answer": "$32\\text{ cm}$",
+"solution": "붙인 변은 만들어진 삼각형의 둘레에 포함되지 않습니다. 바깥쪽에는 길이가 $6\\text{ cm}$인 변과 $10\\text{ cm}$인 변이 각각 $2$개씩 있습니다. 따라서 세 변의 길이의 합은 $6+6+10+10=32\\text{ (cm)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17527",
+"custom": true
+},
+{
+"id": "fill-34e2bb8e4c",
+"typeId": "17527",
+"kind": "주관식",
+"diff": 1,
+"body": "세 변의 길이가 각각 $8\\text{ cm}$, $15\\text{ cm}$, $17\\text{ cm}$인 직각삼각형 종이가 $2$장 있습니다. 길이가 $8\\text{ cm}$인 변끼리 붙여 둔각삼각형을 만들었습니다. 종이를 겹치지 않게 붙였을 때, 만들어진 둔각삼각형의 세 변의 길이의 합은 몇 $\\text{cm}$인가요?",
+"selfGrade": true,
+"answer": "$64\\text{ cm}$",
+"solution": "길이가 $15\\text{ cm}$인 두 변이 이어져 만들어진 삼각형의 한 변이 됩니다. 나머지 두 변의 길이는 각각 $17\\text{ cm}$입니다. 따라서 세 변의 길이의 합은 $15+15+17+17=64\\text{ (cm)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17527",
+"custom": true
+},
+{
+"id": "fill-cffddc738e",
+"typeId": "17527",
+"kind": "주관식",
+"diff": 1,
+"body": "세 변의 길이가 각각 $5\\text{ cm}$, $12\\text{ cm}$, $13\\text{ cm}$인 직각삼각형 종이가 $2$장 있습니다. 길이가 $12\\text{ cm}$인 변끼리 붙여 예각삼각형을 만들었습니다. 종이를 겹치지 않게 붙였을 때, 만들어진 예각삼각형의 세 변의 길이의 합은 몇 $\\text{cm}$인가요?",
+"selfGrade": true,
+"answer": "$36\\text{ cm}$",
+"solution": "길이가 $5\\text{ cm}$인 두 변이 이어져 만들어진 삼각형의 한 변이 됩니다. 나머지 두 변의 길이는 각각 $13\\text{ cm}$입니다. 따라서 세 변의 길이의 합은 $5+5+13+13=36\\text{ (cm)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17527",
+"custom": true
 }
 ]

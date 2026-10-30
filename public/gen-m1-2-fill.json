@@ -1818,5 +1818,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-17793",
 "custom": true
+},
+{
+"id": "fill-583e9d52ca",
+"typeId": "17841",
+"kind": "주관식",
+"diff": 1,
+"body": "가로, 세로, 높이가 각각 $6\\text{ cm}$, $4\\text{ cm}$, $5\\text{ cm}$인 직육면체가 있다. 가로와 세로의 길이가 각각 $6\\text{ cm}$, $4\\text{ cm}$인 면 전체를 밑면으로 하고, 그 맞은편 면 위의 한 점을 꼭짓점으로 하는 각뿔의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$40\\text{ cm}^3$",
+"solution": "각뿔의 밑넓이는 $6\\times4=24\\text{ cm}^2$이고, 높이는 두 맞은편 면 사이의 거리인 $5\\text{ cm}$이다. 따라서 부피는 $\\dfrac{1}{3}\\times24\\times5=40\\text{ cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17841",
+"custom": true
+},
+{
+"id": "fill-71073aa93c",
+"typeId": "17841",
+"kind": "객관식",
+"diff": 1,
+"body": "한 모서리의 길이가 $3\\text{ cm}$인 정육면체가 있다. 아랫면 전체를 밑면으로 하고 윗면의 중심을 꼭짓점으로 하는 사각뿔의 부피는?",
+"choices": [
+"$3\\text{ cm}^3$",
+"$6\\text{ cm}^3$",
+"$9\\text{ cm}^3$",
+"$18\\text{ cm}^3$",
+"$27\\text{ cm}^3$"
+],
+"answer": "③",
+"solution": "사각뿔의 밑넓이는 $3\\times3=9\\text{ cm}^2$이고 높이는 $3\\text{ cm}$이다. 따라서 부피는 $\\dfrac{1}{3}\\times9\\times3=9\\text{ cm}^3$이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17841",
+"custom": true
+},
+{
+"id": "fill-fe74f6b045",
+"typeId": "17841",
+"kind": "주관식",
+"diff": 1,
+"body": "밑면이 가로 $7\\text{ cm}$, 세로 $3\\text{ cm}$인 직사각형이고 높이가 $6\\text{ cm}$인 직육면체가 있다. 직육면체의 밑면 전체를 밑면으로 하고 윗면 위의 한 점을 꼭짓점으로 하는 각뿔의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$42\\text{ cm}^3$",
+"solution": "각뿔의 밑넓이는 $7\\times3=21\\text{ cm}^2$이고 높이는 $6\\text{ cm}$이다. 따라서 각뿔의 부피는 $\\dfrac{1}{3}\\times21\\times6=42\\text{ cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17841",
+"custom": true
+},
+{
+"id": "fill-700f48d5bb",
+"typeId": "17841",
+"kind": "객관식",
+"diff": 2,
+"body": "가로, 세로, 높이가 각각 $9\\text{ cm}$, $4\\text{ cm}$, $6\\text{ cm}$인 직육면체가 있다. 크기가 $4\\text{ cm}\\times6\\text{ cm}$인 한 면을 대각선으로 나누어 생기는 삼각형 하나를 밑면으로 하고, 그 맞은편 면 위의 한 점을 꼭짓점으로 하는 삼각뿔의 부피는?",
+"choices": [
+"$24\\text{ cm}^3$",
+"$30\\text{ cm}^3$",
+"$36\\text{ cm}^3$",
+"$54\\text{ cm}^3$",
+"$72\\text{ cm}^3$"
+],
+"answer": "③",
+"solution": "밑면인 삼각형의 넓이는 $\\dfrac{1}{2}\\times4\\times6=12\\text{ cm}^2$이다. 이 면과 맞은편 면 사이의 거리는 $9\\text{ cm}$이므로 삼각뿔의 높이는 $9\\text{ cm}$이다. 따라서 부피는 $\\dfrac{1}{3}\\times12\\times9=36\\text{ cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17841",
+"custom": true
+},
+{
+"id": "fill-9c5e1ca827",
+"typeId": "17841",
+"kind": "주관식",
+"diff": 2,
+"body": "한 모서리의 길이가 $6\\text{ cm}$인 정육면체의 한 꼭짓점을 $P$라 하자. 꼭짓점 $P$에서 만나는 세 모서리의 다른 끝점을 각각 $Q$, $R$, $S$라 할 때, 네 점 $P$, $Q$, $R$, $S$를 꼭짓점으로 하는 삼각뿔의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$36\\text{ cm}^3$",
+"solution": "삼각형 $PQR$은 두 직각변의 길이가 각각 $6\\text{ cm}$이므로 넓이는 $\\dfrac{1}{2}\\times6\\times6=18\\text{ cm}^2$이다. 점 $S$에서 평면 $PQR$까지의 거리는 $6\\text{ cm}$이다. 따라서 삼각뿔의 부피는 $\\dfrac{1}{3}\\times18\\times6=36\\text{ cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17841",
+"custom": true
+},
+{
+"id": "fill-ed2e952b72",
+"typeId": "17841",
+"kind": "객관식",
+"diff": 2,
+"body": "직육면체의 아랫면인 직사각형 $ABCD$의 두 변의 길이는 $AB=8\\text{ cm}$, $AD=6\\text{ cm}$이고, 직육면체의 높이는 $5\\text{ cm}$이다. 점 $M$은 변 $AB$의 중점이다. 삼각형 $AMD$를 밑면으로 하고 윗면 위의 한 점을 꼭짓점으로 하는 삼각뿔의 부피는?",
+"choices": [
+"$10\\text{ cm}^3$",
+"$20\\text{ cm}^3$",
+"$30\\text{ cm}^3$",
+"$40\\text{ cm}^3$",
+"$60\\text{ cm}^3$"
+],
+"answer": "②",
+"solution": "점 $M$은 $AB$의 중점이므로 $AM=4\\text{ cm}$이고, 삼각형 $AMD$의 넓이는 $\\dfrac{1}{2}\\times4\\times6=12\\text{ cm}^2$이다. 삼각뿔의 높이는 직육면체의 높이인 $5\\text{ cm}$이다. 따라서 부피는 $\\dfrac{1}{3}\\times12\\times5=20\\text{ cm}^3$이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17841",
+"custom": true
 }
 ]

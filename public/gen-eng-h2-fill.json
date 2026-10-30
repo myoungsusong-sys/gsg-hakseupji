@@ -3384,5 +3384,252 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-u0m3s1t0",
 "custom": true
+},
+{
+"id": "fill-799224d949",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nMany students do not ask questions in class even when they do not understand something. They worry that their question might sound silly or that their classmates might laugh at them. So they stay quiet and hope to figure it out later. However, small gaps in understanding can grow into big problems as the lessons continue. Besides, if one student is confused, others are probably confused too, so one question can help the whole class. Teachers also welcome questions because questions show them which parts need more explanation. Therefore, students should not be afraid to ask questions in class when they do not understand something.",
+"choices": [
+"교사는 수업 내용을 천천히 설명해야 한다.",
+"학생들은 수업 시간에 모르는 것이 있으면 주저하지 말고 질문해야 한다.",
+"학생들은 수업 전에 반드시 예습을 해야 한다.",
+"수업 중에 친구의 질문을 비웃어서는 안 된다.",
+"이해하지 못한 내용은 수업이 끝난 후 혼자 복습해야 한다."
+],
+"answer": "②",
+"solution": "마지막 문장의 'students should not be afraid to ask questions in class when they do not understand something'에서 필자의 주장이 직접 드러난다. 이해의 작은 빈틈이 큰 문제로 커질 수 있고, 질문 하나가 반 전체에 도움이 되며, 교사도 질문을 반긴다는 내용은 모두 이 주장의 근거이다. ④는 글에 나온 소재를 이용한 오답이고, ⑤는 필자가 문제로 지적한 행동(나중에 혼자 해결하려 함)이므로 답이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-2c3aca4260",
+"typeId": "eng-h2-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nIn many homes, family members sit at the same table for dinner but hardly talk to one another. Instead, each person is busy looking at a phone, checking messages or watching videos. They are together in body, but their minds are somewhere else. Mealtime is one of the few chances a busy family has to share the events of the day and listen to each other. If we let our phones take that time away, we may slowly lose touch with the people closest to us. Messages and videos can wait for thirty minutes. So during family meals, we should put our phones away and focus on talking with each other.",
+"choices": [
+"청소년의 휴대 전화 사용 시간을 하루 30분으로 제한해야 한다.",
+"가족끼리는 하루에 한 번 이상 함께 식사해야 한다.",
+"가족 식사 시간에는 휴대 전화를 치우고 서로 대화하는 데 집중해야 한다.",
+"바쁜 부모는 자녀의 하루 일과를 자주 확인해야 한다.",
+"식사 중에는 말을 줄이고 음식에 집중해야 한다."
+],
+"answer": "③",
+"solution": "글의 마지막 문장 'during family meals, we should put our phones away and focus on talking with each other'가 필자의 주장이다. 앞부분은 가족이 함께 식사하면서도 각자 휴대 전화만 보는 문제 상황을 보여 주고, 식사 시간이 하루 일을 나누는 소중한 기회라는 근거를 제시한다. ①의 '30분'은 메시지가 기다릴 수 있는 시간이라는 뜻이지 사용 시간 제한이 아니며, ②와 ④는 글에서 주장하지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-bc7a83651e",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 ⓐ~ⓔ 중, 글 전체의 중심 내용을 담은 주제문으로 가장 적절한 것은?\n\nⓐ Walking every day is one of the simplest ways to keep both the body and the mind healthy. ⓑ A short walk after meals helps the body digest food and keeps blood sugar steady. ⓒ Walking outdoors also lets us breathe fresh air and enjoy sunlight, which lifts our mood. ⓓ Because it needs no special equipment or training, almost anyone can start walking today. ⓔ Some people even solve difficult problems while walking, since the steady movement frees their thoughts.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ는 '매일 걷기는 몸과 마음을 건강하게 하는 가장 간단한 방법'이라는 글 전체를 아우르는 일반적 진술이다. ⓑ~ⓔ는 소화, 기분, 편리함, 창의적 사고 등 걷기의 구체적 이점으로, 모두 ⓐ를 뒷받침하는 세부 내용이다. 따라서 중심 내용을 담은 주제문은 ⓐ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-80097b290b",
+"typeId": "eng-h2-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 ⓐ~ⓔ 중, 글 전체의 중심 내용을 담은 주제문으로 가장 적절한 것은?\n\nⓐ Many parents read picture books to their young children before bedtime. ⓑ When children hear new words again and again, they slowly learn what the words mean. ⓒ They also learn how sentences are built and how stories begin and end. ⓓ Sharing a book is a warm moment that brings parents and children closer. ⓔ In short, reading aloud to children is a simple habit that greatly helps them grow as language learners.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 도입 상황이고 ⓑ~ⓓ는 소리 내어 책을 읽어 줄 때 아이가 얻는 구체적 효과들이다. ⓔ는 'In short'로 시작하며 '소리 내어 읽어 주기가 아이의 언어 발달을 크게 돕는 습관'이라는 글 전체의 요지를 요약한다. 따라서 주제문은 ⓔ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-bef10b20dd",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nYou're Invited to Hana's Birthday Party!\n\nCome and celebrate Hana's 17th birthday with us!\n\nDate: Saturday, May 18\nTime: 6:00 p.m. – 9:00 p.m.\nPlace: Hana's house, 24 Maple Street\n\nThere will be pizza, cake, music, and fun games. Please let Hana know by May 15 if you can come. You can call or text her at 010-1234-5678.\n\nWe hope to see you there!",
+"choices": [
+"a news report",
+"a restaurant menu",
+"a weather forecast",
+"a party invitation",
+"a letter of apology"
+],
+"answer": "④",
+"solution": "제목에서 'You're Invited'라고 하며 생일 파티에 오라고 초대하고 있다. 날짜·시간·장소를 알려 주고 참석 여부를 5월 15일까지 알려 달라고 한다. 따라서 이 글은 파티 초대장(a party invitation)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-c92a176136",
+"typeId": "eng-h2-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nLOST DOG\n\nHave you seen our dog, Coco?\n\nCoco is a small white dog with brown ears. She is three years old and wears a red collar. She was last seen near Sunny Park on Oak Street on Sunday afternoon, October 5.\n\nCoco is very friendly, but she may be scared and run away. If you see her, please do not chase her. Just call us at 010-9876-5432.\n\nWe miss her very much. A reward will be given to anyone who helps us find her.",
+"choices": [
+"an advertisement for pet food",
+"a lost pet notice",
+"a personal diary",
+"a movie review",
+"a thank-you letter"
+],
+"answer": "②",
+"solution": "제목이 'LOST DOG'이고, 잃어버린 개의 생김새, 마지막으로 본 장소와 시간, 연락처를 알려 주고 있다. 찾아 주는 사람에게 사례하겠다는 내용도 있다. 따라서 이 글은 잃어버린 반려동물을 찾는 안내문(a lost pet notice)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-603d8ea1df",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에 드러난 Mina의 심경 변화로 가장 적절한 것은?\n\nMina stood at the starting line of her first school marathon, her hands shaking. \"What if I come in last?\" she thought. \"Everyone will be watching me.\" Her heart was pounding and she could barely breathe. But as the race began, she kept running step by step. When she finally crossed the finish line in the middle of the group, her friends ran to her with big smiles. \"You did it, Mina!\" they shouted. A huge smile spread across her face. She had finished her very first race, and she felt wonderful.",
+"choices": [
+"nervous → proud",
+"bored → angry",
+"happy → sad",
+"calm → frightened",
+"curious → disappointed"
+],
+"answer": "①",
+"solution": "출발선에서 Mina는 손을 떨고 심장이 뛰며 꼴찌를 걱정하는 긴장(nervous) 상태다. 완주한 뒤 친구들의 응원 속에 환하게 웃으며 wonderful하다고 느끼므로 자랑스러운(proud) 심경으로 바뀐다. 따라서 ‘nervous → proud’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-b8568f5ff2",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에 드러난 ‘I’의 심경 변화로 가장 적절한 것은?\n\nWhen I opened the box my grandmother sent me, I was puzzled. Inside was an old, worn notebook with a plain brown cover. \"Why would she send me this?\" I wondered, turning it over in my hands. Then I opened it and saw page after page filled with her handwriting — stories about her childhood, little drawings, and even a letter addressed to me. My eyes filled with tears. It was the most precious gift I had ever received, and I felt so grateful for her love.",
+"choices": [
+"excited → bored",
+"confused → touched",
+"angry → calm",
+"afraid → relieved",
+"proud → jealous"
+],
+"answer": "②",
+"solution": "‘I’는 처음에 낡은 공책을 왜 보냈는지 몰라 puzzled, wondered하며 혼란스러워한다(confused). 할머니의 손글씨와 편지를 보고 눈물이 고이며 감사함을 느끼므로 감동받은(touched) 심경으로 변한다. 따라서 ‘confused → touched’가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-5075b40384",
+"typeId": "eng-h2-u0m0s5t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화에 드러난 소년(B)의 심경 변화로 가장 적절한 것은?\n\nB: Mom, I can't find my science project anywhere! I searched my whole room and it's gone!\nW: Calm down. When did you see it last?\nB: Last night on my desk. The presentation is in an hour and I worked on it for two weeks. What am I going to do?\nW: Did you check the living room table? I think I saw a poster board there this morning.\nB: Oh... let me look. Wait — here it is! It was right next to the sofa the whole time. Thank goodness! I was so worried for nothing.",
+"choices": [
+"joyful → angry",
+"curious → bored",
+"panicked → relieved",
+"confident → nervous",
+"sad → jealous"
+],
+"answer": "③",
+"solution": "소년은 두 주 동안 준비한 과제를 찾지 못해 어쩔 줄 몰라 하며 당황한(panicked) 상태다. 거실에서 과제를 발견한 뒤 ‘Thank goodness!’라며 안도하므로 relieved로 바뀐다. 따라서 ‘panicked → relieved’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-2c029bcd14",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nDogs have an extraordinary sense of smell. ⓐ A dog's nose has far more smell receptors than a human nose, which allows it to detect scents that people cannot. ⓑ Thanks to this ability, dogs are often trained to find missing people or hidden objects. ⓒ Many dogs enjoy playing with a ball in the park on weekends. ⓓ Some dogs can even smell certain illnesses in the human body before doctors notice them. ⓔ For these reasons, dogs are used in many places, such as airports and rescue sites. In short, a dog's powerful nose makes it a valuable helper for people.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "글 전체는 개의 뛰어난 후각과 그것이 사람에게 어떻게 도움이 되는지를 설명한다. ⓐⓑⓓⓔ는 모두 후각 능력과 그 활용을 다룬다. 그러나 ⓒ는 개가 주말에 공원에서 공을 가지고 노는 것을 좋아한다는 내용으로, 후각이라는 중심 소재와 관련이 없다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ad4d826b81",
+"typeId": "eng-h2-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nGreen plants are able to make their own food. ⓐ Using sunlight, they turn water and carbon dioxide into sugar inside their leaves. ⓑ This process, called photosynthesis, also releases oxygen into the air. ⓒ The sugar gives the plant the energy it needs to grow and stay healthy. ⓓ Many people enjoy growing colorful flowers in their gardens on weekends. ⓔ Because animals cannot make food in this way, they depend on plants for the energy they need. For this reason, plants are the starting point of food for almost all living things.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "글 전체는 녹색 식물이 광합성으로 스스로 양분을 만든다는 것과 그 의미를 설명한다. ⓐⓑⓒⓔ는 모두 광합성 과정과 그 결과를 다룬다. 그러나 ⓓ는 사람들이 주말에 정원에서 꽃 가꾸기를 즐긴다는 내용으로, 광합성이라는 중심 내용과 무관하다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b174de3411",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 추론할 수 «없는» 것은?\n\nCamels are well known for their ability to survive in the desert. Many people believe that a camel's hump is full of water, but it actually stores fat. When food is hard to find, the camel's body can use this fat for energy. Camels can also go for days without drinking, and when they finally find water, they can drink a huge amount in just a few minutes. Their bodies are built for desert life in other ways, too. Long eyelashes protect their eyes from blowing sand, and they can close their nostrils during sandstorms. Their wide, flat feet keep them from sinking into the soft sand as they walk.",
+"choices": [
+"낙타의 혹에는 물이 아니라 지방이 저장되어 있다.",
+"낙타는 먹이가 부족할 때 혹의 지방을 에너지로 쓸 수 있다.",
+"낙타는 물을 찾으면 오랜 시간에 걸쳐 조금씩 나누어 마신다.",
+"낙타의 긴 속눈썹은 날리는 모래로부터 눈을 보호한다.",
+"낙타의 넓고 평평한 발은 모래에 빠지지 않고 걷는 데 도움이 된다."
+],
+"answer": "③",
+"solution": "글에서는 낙타가 물을 찾으면 몇 분 만에 엄청난 양을 마실 수 있다(drink a huge amount in just a few minutes)고 했습니다. 따라서 오랜 시간에 걸쳐 조금씩 마신다는 ③은 글의 내용과 반대이므로 추론할 수 없습니다. 나머지 선지는 혹의 지방 저장, 지방의 에너지 사용, 속눈썹의 역할, 넓은 발의 기능을 각각 그대로 옮긴 것입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-d65e2a260c",
+"typeId": "eng-h2-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 추론할 수 «없는» 것은?\n\nHoneybees have a surprising way of sharing information. When a worker bee finds a good source of food, she returns to the hive and performs a special movement called the waggle dance. The direction of the dance tells the other bees which way to fly in relation to the sun, and the length of the waggle shows how far away the food is. The Austrian scientist Karl von Frisch studied this behavior for many years, and in 1973 he received a Nobel Prize for his work. Thanks to the dance, the other bees can fly straight to the flowers without searching on their own.",
+"choices": [
+"Bees use the dance to tell other bees where food can be found.",
+"The position of the sun helps bees understand which way to fly to the food.",
+"Bees can learn how far away the food is from the length of the waggle.",
+"Karl von Frisch's research on bees was recognized with a Nobel Prize.",
+"Bees that watch the dance still have to search for the flowers by themselves."
+],
+"answer": "⑤",
+"solution": "글의 마지막 문장에서 춤 덕분에 다른 벌들은 스스로 찾아다니지 않고(without searching on their own) 꽃으로 곧장 날아갈 수 있다고 했습니다. 따라서 춤을 본 벌도 직접 꽃을 찾아야 한다는 ⑤는 글의 내용과 반대이므로 추론할 수 없습니다. ①~④는 춤의 목적, 태양을 기준으로 한 방향, 꼬리 흔들기 길이로 나타내는 거리, 폰 프리슈의 노벨상 수상을 각각 정확히 반영합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s3t0",
+"custom": true
 }
 ]

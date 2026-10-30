@@ -1640,5 +1640,94 @@
 "source": "유사 문항",
 "twinGroup": "tw-19414",
 "custom": true
+},
+{
+"id": "fill-3241ec47a6",
+"typeId": "9833",
+"kind": "객관식",
+"diff": 4,
+"body": "연속확률변수 $X$의 확률밀도함수가 양수 $k$에 대하여 다음과 같다.\n\n$f(x)=\\begin{cases}kx& (0\\le x<2)\\\\k(6-x)& (2\\le x\\le6)\\\\0& (\\text{그 밖의 경우})\\end{cases}$\n\n$0<t<4$인 실수 $t$가 $\\mathrm{P}(X\\le t)=\\mathrm{P}(t\\le X\\le4)$를 만족할 때, $\\mathrm{P}(t-1\\le X\\le t+1)$의 값은?",
+"choices": [
+"$\\dfrac{12\\sqrt3-17}{10}$",
+"$\\dfrac{12\\sqrt3-16}{10}$",
+"$\\dfrac{12\\sqrt3-15}{10}$",
+"$\\dfrac{12\\sqrt3-14}{10}$",
+"$\\dfrac{12\\sqrt3-13}{10}$"
+],
+"answer": "③",
+"solution": "확률밀도함수의 그래프와 $x$축 사이의 전체 넓이가 $1$이므로 $2k+8k=1$에서 $k=\\dfrac1{10}$이다. 주어진 조건에서 $\\mathrm{P}(X\\le t)=\\dfrac12\\mathrm{P}(X\\le4)=\\dfrac25$이고, $\\mathrm{P}(X\\le2)=\\dfrac15$이므로 $t>2$이다. 따라서 $1-\\dfrac{(6-t)^2}{20}=\\dfrac25$에서 $t=6-2\\sqrt3$이며, $0<t-1<2<t+1<6$이다. 그러므로 구하는 확률은 $1-\\dfrac{(5-t)^2}{20}-\\dfrac{(t-1)^2}{20}=\\dfrac{12\\sqrt3-15}{10}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9833",
+"custom": true
+},
+{
+"id": "fill-5772b79616",
+"typeId": "19426",
+"kind": "객관식",
+"diff": 1,
+"body": "확률변수 $X$가 정규분포 $\\mathrm{N}(8,3^2)$을 따른다. 두 확률 $a=\\mathrm{P}(X\\ge 11)$, $b=\\mathrm{P}(X\\le 2)$에 대한 설명으로 옳은 것은?",
+"choices": [
+"$a=b$",
+"$a<b$",
+"$a>b$",
+"$a+b=1$",
+"$a=\\dfrac12$"
+],
+"answer": "③",
+"solution": "$Z=\\dfrac{X-8}{3}$으로 놓으면 $a=\\mathrm{P}(Z\\ge 1)$, $b=\\mathrm{P}(Z\\le -2)$이다. 표준정규분포의 대칭성에 의해 $b=\\mathrm{P}(Z\\ge 2)$이므로 $a>b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19426",
+"custom": true
+},
+{
+"id": "fill-c0996dd21d",
+"typeId": "19426",
+"kind": "객관식",
+"diff": 1,
+"body": "두 확률변수 $X$, $Y$가 각각 정규분포 $\\mathrm{N}(6,2^2)$, $\\mathrm{N}(12,4^2)$을 따른다. $a=\\mathrm{P}(4\\le X\\le 8)$, $b=\\mathrm{P}(8\\le Y\\le 16)$일 때, 옳은 것은?",
+"choices": [
+"$a<b$",
+"$a=b$",
+"$a>b$",
+"$a=2b$",
+"$b=2a$"
+],
+"answer": "②",
+"solution": "$X$를 표준화하면 $a=\\mathrm{P}(-1\\le Z\\le 1)$이다. $Y$를 표준화해도 $b=\\mathrm{P}(-1\\le Z\\le 1)$이므로 $a=b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19426",
+"custom": true
+},
+{
+"id": "fill-0e0c4a39fe",
+"typeId": "19426",
+"kind": "객관식",
+"diff": 1,
+"body": "확률변수 $X$가 정규분포 $\\mathrm{N}(20,5^2)$을 따른다. 다음 세 확률의 대소 관계로 옳은 것은?\n\n$a=\\mathrm{P}(X\\ge 25)$, $b=\\mathrm{P}(X\\le 20)$, $c=\\mathrm{P}(X\\le 10)$",
+"choices": [
+"$a<b<c$",
+"$b<c<a$",
+"$c<b<a$",
+"$c<a<b$",
+"$a<c<b$"
+],
+"answer": "④",
+"solution": "표준화하면 $a=\\mathrm{P}(Z\\ge 1)$, $b=\\mathrm{P}(Z\\le 0)=\\dfrac12$, $c=\\mathrm{P}(Z\\le -2)$이다. 대칭성에 의해 $c=\\mathrm{P}(Z\\ge 2)<\\mathrm{P}(Z\\ge 1)=a$이고, $a<\\dfrac12=b$이다. 따라서 $c<a<b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19426",
+"custom": true
+},
+{
+"id": "fill-165cbfd603",
+"typeId": "19426",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $t$에 대하여 두 확률변수 $X$, $Y$가 각각 정규분포 $\\mathrm{N}(2t^2-10,2^2)$, $\\mathrm{N}(2t,2^2)$을 따르고, 확률변수 $Z$는 표준정규분포를 따른다. 세 확률을\n\n$a=\\mathrm{P}(-2\\le X\\le 2)$,\n$b=\\mathrm{P}(-2\\le Y\\le 2)$,\n$c=\\mathrm{P}(0\\le Z\\le 2)$\n\n라 하자. $a<b<c$가 성립하도록 하는 모든 실수 $t$의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$t\\in\\left(-\\infty,-\\dfrac{1+\\sqrt{21}}2\\right)\\cup\\left(\\dfrac{1-\\sqrt{21}}2,-1\\right)\\cup\\left(1,\\dfrac{\\sqrt{21}-1}2\\right)\\cup\\left(\\dfrac{1+\\sqrt{21}}2,\\infty\\right)$",
+"solution": "표준정규분포에서 길이가 같은 구간에 속할 확률은 구간의 중심이 $0$에서 멀어질수록 작아진다. 표준화한 $a$, $b$, $c$의 구간은 모두 길이가 $2$이고 중심은 각각 $5-t^2$, $-t$, $1$이므로, 주어진 조건은 $|t^2-5|>|t|>1$과 동치이다. $u=|t|$로 놓으면 $u>1$이고, $|u^2-5|>u$에서 $u^2-5>u$ 또는 $u^2-5<-u$를 얻는다. 이를 풀면 $1<u<\\dfrac{\\sqrt{21}-1}{2}$ 또는 $u>\\dfrac{1+\\sqrt{21}}{2}$이다. 따라서 $t<-\\dfrac{1+\\sqrt{21}}2$, $\\dfrac{1-\\sqrt{21}}2<t<-1$, $1<t<\\dfrac{\\sqrt{21}-1}2$, $t>\\dfrac{1+\\sqrt{21}}2$ 중 하나가 성립해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-19426",
+"custom": true
 }
 ]

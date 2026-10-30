@@ -11462,5 +11462,24 @@
 "source": "유사 문항",
 "twinGroup": "tw-kor-m1-u0m1s2t1",
 "custom": true
+},
+{
+"id": "fill-d67f123c4c",
+"typeId": "kor-m1-u2m1s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 접사가 어근에 붙어 만들어진 «파생어»는?",
+"choices": [
+"① 손발",
+"② 밤낮",
+"③ 풋사과",
+"④ 책가방",
+"⑤ 봄비"
+],
+"answer": "③",
+"solution": "파생어는 어근에 접사가 붙어 만들어진 단어이다. '풋사과'는 어근 '사과'에 접두사 '풋-'이 붙어 만들어진 파생어이다. 나머지는 모두 두 어근이 결합하여 만들어진 합성어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-kor-m1-u2m1s1t1",
+"custom": true
 }
 ]

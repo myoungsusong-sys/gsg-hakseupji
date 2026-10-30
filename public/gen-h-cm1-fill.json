@@ -1776,5 +1776,293 @@
 "source": "유사 문항",
 "twinGroup": "tw-16350",
 "custom": true
+},
+{
+"id": "fill-d21ba760b9",
+"typeId": "16331",
+"kind": "주관식",
+"diff": 1,
+"body": "$[x]$는 $x$를 소수점 아래 첫째 자리에서 반올림한 정수를 나타낸다. 예를 들어 $[3.7]=4$이다. 부등식 $0<[x]\\le 2$의 해를 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac12\\le x<\\dfrac52$",
+"solution": "$[x]$는 정수이므로 $[x]=1$ 또는 $[x]=2$이다. 각각의 경우 $\\dfrac12\\le x<\\dfrac32$, $\\dfrac32\\le x<\\dfrac52$이므로 해는 $\\dfrac12\\le x<\\dfrac52$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16331",
+"custom": true
+},
+{
+"id": "fill-f126e1e76e",
+"typeId": "16331",
+"kind": "객관식",
+"diff": 1,
+"body": "$[x]$는 $x$보다 크지 않은 최대의 정수이다. 부등식 $|[x]-4|<1$의 해는?",
+"choices": [
+"$2\\le x<3$",
+"$3<x<5$",
+"$3\\le x<4$",
+"$4\\le x<5$",
+"$4<x\\le 5$"
+],
+"answer": "④",
+"solution": "$|[x]-4|<1$에서 $3<[x]<5$이다. $[x]$는 정수이므로 $[x]=4$이고, 따라서 해는 $4\\le x<5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16331",
+"custom": true
+},
+{
+"id": "fill-7de2695c04",
+"typeId": "16331",
+"kind": "객관식",
+"diff": 1,
+"body": "$[x]$는 $x$보다 크지 않은 최대의 정수이다. 부등식 $\\left|\\left[\\dfrac{x}{2}\\right]-1\\right|<1$을 만족시키는 정수 $x$의 개수는?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "②",
+"solution": "$\\left[\\dfrac{x}{2}\\right]$는 정수이므로 주어진 부등식에서 $\\left[\\dfrac{x}{2}\\right]=1$이다. 따라서 $1\\le\\dfrac{x}{2}<2$이므로 $2\\le x<4$이다. 이를 만족시키는 정수는 $2$, $3$의 $2$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16331",
+"custom": true
+},
+{
+"id": "fill-2d3e3d4880",
+"typeId": "16356",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 연립부등식의 해를 구하시오.\n$\\begin{cases}x^2-4x\\le 0\\\\[x]^2-3[x]+2\\le 0\\end{cases}$\n(단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"choices": [
+"$0\\le x<2$",
+"$1\\le x<2$",
+"$1\\le x<3$",
+"$1<x\\le 3$",
+"$2\\le x\\le 4$"
+],
+"answer": "③",
+"solution": "첫째 부등식의 해는 $0\\le x\\le 4$이다. 둘째 부등식을 인수분해하면 $([x]-1)([x]-2)\\le 0$이므로 $[x]=1$ 또는 $[x]=2$이다. 따라서 두 부등식을 동시에 만족하는 해는 $1\\le x<3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-7f7d6ca11d",
+"typeId": "16356",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 연립부등식을 만족하는 정수 $x$의 개수를 구하시오.\n$\\begin{cases}x^2-3x-4\\le 0\\\\0\\le [x-1]\\le 2\\end{cases}$\n(단, $[t]$는 $t$보다 크지 않은 최대의 정수이다.)",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "③",
+"solution": "첫째 부등식을 풀면 $-1\\le x\\le 4$이다. 둘째 부등식은 $0\\le x-1<3$, 즉 $1\\le x<4$와 동치이다. 따라서 정수 $x$는 $1,2,3$으로 모두 $3$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-f2529bd038",
+"typeId": "16356",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 연립부등식의 해를 구하시오.\n$\\begin{cases}x^2-2x-3<0\\\\[x]^2\\le 0\\end{cases}$\n(단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"selfGrade": true,
+"answer": "$0\\le x<1$",
+"solution": "첫째 부등식을 풀면 $-1<x<3$이다. 둘째 부등식에서 $[x]=0$이므로 $0\\le x<1$이다. 따라서 연립부등식의 해는 $0\\le x<1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-480e3e5a39",
+"typeId": "16356",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 연립부등식의 해를 구하시오.\n$\\begin{cases}x^2-2x<0\\\\4x^2-8[x]x+3<0\\end{cases}$\n(단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"choices": [
+"$0<x<\\dfrac12$",
+"$\\dfrac12<x<1$",
+"$1<x<\\dfrac32$",
+"$1\\le x<\\dfrac32$",
+"$\\dfrac32<x<2$"
+],
+"answer": "④",
+"solution": "첫째 부등식에서 $0<x<2$이므로 $[x]=0$ 또는 $[x]=1$이다. $0<x<1$에서는 둘째 부등식이 $4x^2+3<0$이 되어 해가 없다. $1\\le x<2$에서는 $4x^2-8x+3=(2x-1)(2x-3)<0$이므로 $1\\le x<\\frac32$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-f08d455feb",
+"typeId": "16356",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 연립부등식의 해를 구하시오.\n$\\begin{cases}x^2-5x+4\\le 0\\\\[2x-5]^2\\le 1\\end{cases}$\n(단, $[t]$는 $t$보다 크지 않은 최대의 정수이다.)",
+"selfGrade": true,
+"answer": "$2\\le x<\\dfrac72$",
+"solution": "첫째 부등식의 해는 $1\\le x\\le 4$이다. 둘째 부등식에서 정수 $[2x-5]$는 $-1,0,1$ 중 하나이므로 $-1\\le 2x-5<2$이다. 이를 풀어 첫째 부등식의 해와 공통부분을 구하면 $2\\le x<\\frac72$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-a065ec4b87",
+"typeId": "16356",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 $a,b,c$에 대하여 $a\\ne 0$이고, 연립조건\n$\\begin{cases}x^2-x-12\\le 0\\\\a[x]^2+b[x]+c=0\\end{cases}$\n을 만족하는 모든 실수 $x$의 범위가 $-2\\le x<-1$ 또는 $1\\le x<2$이다. 이때 $\\dfrac ca-2\\dfrac ba$의 값을 구하시오.\n(단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"selfGrade": true,
+"answer": "$-4$",
+"solution": "첫째 부등식의 해는 $-3\\le x\\le 4$이고, 주어진 해의 범위에서 $[x]$의 값은 각각 $-2,1$이다. 따라서 이차방정식 $at^2+bt+c=0$의 두 근은 $-2,1$이므로 근과 계수의 관계에 따라 $\\frac ba=1$, $\\frac ca=-2$이다. 그러므로 $\\frac ca-2\\frac ba=-2-2=-4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-b08c78f2d0",
+"typeId": "16356",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $a,b$에 대하여 다음 연립부등식의 해집합을 $S$라 하자.\n$\\begin{cases}x^2-6x+5<0\\\\x^2-2[x]x+a[x]+b\\le 0\\end{cases}$\n집합 $S$가 다음 조건을 모두 만족할 때, $4a-4b$의 값을 구하시오.\n\n(가) $S\\cap[1,2)$와 $S\\cap[3,4)$는 각각 길이가 $0$보다 크고 $1$보다 작은 하나의 구간이며, 두 구간의 길이는 같다.\n(나) $S$를 이루는 서로 겹치지 않는 구간들의 길이의 합은 $2$이다.\n\n단, $[x]$는 $x$보다 크지 않은 최대의 정수이고, 구간의 길이는 양 끝값의 차로 정의한다.",
+"selfGrade": true,
+"answer": "$29$",
+"solution": "첫째 부등식에서 $1<x<5$이고, $[x]=k$, $x=k+t$로 놓으면 둘째 부등식은 $t^2\\le k^2-ak-b$가 된다. 조건 (가)의 두 구간의 공통 길이를 $\\ell\\,(0<\\ell<1)$이라 하면 $1-a-b=9-3a-b=\\ell^2$이므로 $a=4$, $b=-3-\\ell^2$이다. 이때 $k=2$에서는 우변이 $\\ell^2-1<0$이므로 해가 없고, $k=4$에서는 우변이 $\\ell^2+3>1$이므로 $[4,5)$ 전체가 해에 포함된다. 따라서 조건 (나)에서 $2\\ell+1=2$이므로 $\\ell=\\frac12$이고, $b=-\\frac{13}{4}$이다. 그러므로 $4a-4b=16+13=29$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16356",
+"custom": true
+},
+{
+"id": "fill-4dec3ff304",
+"typeId": "16352",
+"kind": "주관식",
+"diff": 1,
+"body": "실수 $x, y$가 $(x-2)^2+(y+1)^2=16$을 만족할 때, $y$의 최댓값과 최솟값을 각각 구하시오.",
+"selfGrade": true,
+"answer": "$3,\\ -5$",
+"solution": "$(x-2)^2\\geq 0$이므로 $(y+1)^2\\leq 16$에서 $-5\\leq y\\leq 3$이다. $x=2$일 때 양 끝값을 모두 가질 수 있으므로 최댓값은 $3$, 최솟값은 $-5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-464c3bf119",
+"typeId": "16352",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 $x$에 대하여 $\\dfrac{5}{x^2+4}$의 최댓값은?",
+"choices": [
+"$\\dfrac{1}{4}$",
+"$1$",
+"$\\dfrac{5}{4}$",
+"$\\dfrac{5}{2}$",
+"$5$"
+],
+"answer": "③",
+"solution": "$x^2+4\\geq 4$이므로 $\\dfrac{5}{x^2+4}\\leq\\dfrac{5}{4}$이다. $x=0$일 때 등호가 성립하므로 최댓값은 $\\dfrac{5}{4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-70cfd68ff6",
+"typeId": "16352",
+"kind": "주관식",
+"diff": 1,
+"body": "실수 $x, y$가 $x^2+y^2=10$을 만족할 때, $xy$의 최댓값과 최솟값을 각각 구하시오.",
+"selfGrade": true,
+"answer": "$5,\\ -5$",
+"solution": "$(x-y)^2=10-2xy\\geq 0$과 $(x+y)^2=10+2xy\\geq 0$에서 $-5\\leq xy\\leq 5$이다. $x=y=\\sqrt{5}$일 때 $xy=5$이고, $x=\\sqrt{5},\\ y=-\\sqrt{5}$일 때 $xy=-5$이므로 최댓값은 $5$, 최솟값은 $-5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-b50cd055c9",
+"typeId": "16352",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 $x$에 대하여 $\\dfrac{2x+1}{x^2-2x+3}$의 최댓값을 $M$, 최솟값을 $m$이라 하자. $M-m$의 값은?",
+"choices": [
+"$\\dfrac{\\sqrt{13}}{2}$",
+"$2$",
+"$\\dfrac{\\sqrt{17}}{2}$",
+"$\\sqrt{5}$",
+"$\\dfrac{5}{2}$"
+],
+"answer": "③",
+"solution": "$t=\\dfrac{2x+1}{x^2-2x+3}$이라 놓으면 $tx^2-(2t+2)x+3t-1=0$이다. $t\\neq 0$일 때 이 이차방정식이 실근을 가질 조건은 판별식에 의해 $-8t^2+12t+4\\geq 0$, 즉 $\\dfrac{3-\\sqrt{17}}{4}\\leq t\\leq\\dfrac{3+\\sqrt{17}}{4}$이다. $t=0$도 $x=-\\dfrac12$에서 가능하고 양 끝값도 실제로 가지므로 $M-m=\\dfrac{\\sqrt{17}}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-967760ed50",
+"typeId": "16352",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 $x, y$가 $x^2-4xy+5y^2=8$, $x\\geq y$를 만족한다. $x+y$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $M-m$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$4\\sqrt{5}+4$",
+"solution": "$t=x+y$, $r=x-y$라 놓으면 $r\\geq 0$이고 $5r^2-4tr+t^2=16$이다. 이를 $5\\left(r-\\dfrac{2t}{5}\\right)^2+\\dfrac{t^2}{5}=16$으로 정리하면 $t\\leq 4\\sqrt{5}$이며, $t=4\\sqrt{5}$, $r=\\dfrac{8\\sqrt{5}}{5}$일 때 등호가 성립한다. 한편 $t<0$이면 $5r^2-4tr\\geq 0$이므로 $t^2\\leq 16$이고, $t\\geq 0$인 경우까지 합하면 항상 $t\\geq-4$이다. $t=-4$, $r=0$도 조건을 만족하므로 $M-m=4\\sqrt{5}+4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-6911381edc",
+"typeId": "16352",
+"kind": "객관식",
+"diff": 4,
+"body": "세 실수 $x, y, z$가 $x+y+z=5$, $xy+yz+zx=7$을 만족한다. $xy$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $M-m$의 값은?",
+"choices": [
+"$\\dfrac{121}{36}$",
+"$\\dfrac{25}{6}$",
+"$\\dfrac{169}{36}$",
+"$\\dfrac{49}{9}$",
+"$\\dfrac{61}{9}$"
+],
+"answer": "③",
+"solution": "$x+y=5-z$, $xy=z^2-5z+7$이므로 실수 $x, y$가 존재할 조건은 $(5-z)^2-4(z^2-5z+7)\\geq 0$이다. 이를 풀면 $\\dfrac13\\leq z\\leq 3$이고, 이 구간의 모든 $z$에 대하여 조건을 만족하는 실수 $x, y$가 존재한다. $xy=\\left(z-\\dfrac52\\right)^2+\\dfrac34$이므로 최솟값은 $\\dfrac34$이고, 최댓값은 $z=\\dfrac13$일 때의 $\\dfrac{49}{9}$이다. 따라서 $M-m=\\dfrac{49}{9}-\\dfrac34=\\dfrac{169}{36}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-d58f6da4d8",
+"typeId": "16352",
+"kind": "객관식",
+"diff": 5,
+"body": "음이 아닌 세 실수 $x, y, z$가 $x+y+z=5$, $xy+yz+zx=4$를 만족한다. $x+2y+3z$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $Mm$의 값은?",
+"choices": [
+"$72$",
+"$80$",
+"$84$",
+"$90$",
+"$96$"
+],
+"answer": "③",
+"solution": "$xz=4-y(5-y)=(y-1)(y-4)\\geq 0$이고 $0\\leq y\\leq 5$이므로 $0\\leq y\\leq 1$ 또는 $4\\leq y\\leq 5$이다. 또한 $(z-x)^2=(5-y)^2-4xz=9+10y-3y^2$이다. $0\\leq y\\leq 1$에서는 $16-(9+10y-3y^2)=(1-y)(7-3y)\\geq 0$이고, $4\\leq y\\leq 5$에서는 $9+10y-3y^2=1-(y-4)(3y+2)\\leq 1$이므로 항상 $|z-x|\\leq 4$이다. 따라서 $x+2y+3z=10+(z-x)$의 범위는 $6$ 이상 $14$ 이하이다. $(x,y,z)=(4,1,0)$과 $(0,1,4)$에서 각각 양 끝값을 가지므로 $Mm=14\\times 6=84$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
+},
+{
+"id": "fill-79dc46f737",
+"typeId": "16352",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $a$에 대하여 실수 $x$에서 정의된 식 $\\dfrac{x^2+ax+2}{x^2+2x+2}$의 최댓값을 $M$, 최솟값을 $m$이라 하자. $a$가 모든 실수 값을 가질 때, $M^2+m^2$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{4}{3}$",
+"solution": "$t=\\dfrac{x^2+ax+2}{x^2+2x+2}$라 놓으면 $(t-1)x^2+(2t-a)x+2t-2=0$이다. $a\\neq 2$일 때 $t\\neq 1$에서의 실근 조건은 $-4t^2+(16-4a)t+a^2-8\\geq 0$이고, $t=1$도 $x=0$에서 가능하므로 $M, m$은 이 이차식의 두 근이다. 따라서 근과 계수의 관계에 의해 $M+m=4-a$, $Mm=\\dfrac{8-a^2}{4}$이므로 $M^2+m^2=\\dfrac32\\left(a-\\dfrac83\\right)^2+\\dfrac43$이다. $a=2$일 때는 주어진 식이 항상 $1$이어서 $M^2+m^2=2$이고, $a=\\dfrac83$일 때 $\\dfrac43$을 가지므로 구하는 최솟값은 $\\dfrac43$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16352",
+"custom": true
 }
 ]

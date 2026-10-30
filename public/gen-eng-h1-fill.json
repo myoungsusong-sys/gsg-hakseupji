@@ -1844,5 +1844,347 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u0m0s5t1",
 "custom": true
+},
+{
+"id": "fill-8d6b3dd0b9",
+"typeId": "eng-h1-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문의 내용과 일치하지 «않는» 것은?\n\nGreenfield High School Book Fair\n\n• Date: November 12 – November 14\n• Time: 10:00 a.m. – 4:00 p.m.\n• Place: School gym\n• All books are 20% off.\n• Each student can buy up to five books.\n• Bring your student ID to get a free bookmark.\n• All money from the fair will be used to buy new books for the school library.",
+"choices": [
+"행사는 3일 동안 열린다.",
+"행사 장소는 학교 체육관이다.",
+"모든 책은 20% 할인된 가격에 판매된다.",
+"학생 한 명당 책을 최대 열 권까지 살 수 있다.",
+"학생증을 가져오면 책갈피를 무료로 받는다."
+],
+"answer": "④",
+"solution": "안내문에 'Each student can buy up to five books.'라고 되어 있으므로 학생 한 명이 살 수 있는 책은 최대 다섯 권이다. 따라서 최대 열 권까지 살 수 있다는 ④는 안내문과 일치하지 않는다. 행사는 11월 12일부터 14일까지 3일 동안 열리고, 장소는 체육관, 20% 할인, 학생증을 내면 책갈피 무료 증정이므로 나머지 선지는 모두 안내문과 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-ec97b1640a",
+"typeId": "eng-h1-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문의 내용과 일치하는 것은?\n\nWeekend Cooking Class for Teens\n\n• When: Every Saturday in December, 2:00 p.m. – 4:00 p.m.\n• Where: Maple Community Center, Room 201\n• Who: Students aged 13 to 18\n• Fee: 15,000 won per class (all ingredients included)\n• What to bring: an apron\n• How to sign up: Visit the front desk of the center.\n※ Each class is limited to 12 students.",
+"choices": [
+"강좌는 매주 일요일에 열린다.",
+"강좌는 한 번에 2시간 동안 진행된다.",
+"재료비는 수강료와 별도로 내야 한다.",
+"앞치마는 센터에서 무료로 빌려준다.",
+"신청은 온라인으로만 할 수 있다."
+],
+"answer": "②",
+"solution": "강좌 시간이 오후 2시부터 4시까지이므로 한 번에 2시간 동안 진행된다. 따라서 ②가 안내문과 일치한다. 강좌는 일요일이 아니라 토요일에 열리고, 재료비는 수강료에 포함되어 있다(all ingredients included). 앞치마는 수강생이 직접 가져와야 하며, 신청은 센터 안내 데스크에서 직접 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-c02194b104",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 추론할 수 «없는» 것은?\n\nEmperor penguins live in Antarctica, one of the coldest places on Earth. To survive the freezing winter, they huddle together in large groups. The birds on the outside of the group block the icy wind, keeping those in the center warm. The penguins take turns, so no single bird has to stay in the cold too long. Emperor penguins also have a thick layer of fat and tightly packed feathers that keep heat in. Fathers, not mothers, keep the eggs warm. After the female lays an egg, she goes to the sea to find food, and the male holds the egg on his feet under a warm flap of skin for about two months.",
+"choices": [
+"황제펭귄은 추위를 견디기 위해 무리를 지어 모인다.",
+"무리 바깥쪽에 있는 펭귄들은 찬 바람을 막아 준다.",
+"펭귄들은 자리를 바꿔 가며 추운 바깥쪽을 나눠 맡는다.",
+"암컷이 바다에 가 있는 동안 수컷이 알을 품는다.",
+"황제펭귄은 깃털이 없어 지방층만으로 체온을 유지한다."
+],
+"answer": "⑤",
+"solution": "글에 황제펭귄은 두꺼운 지방층과 '촘촘한 깃털(tightly packed feathers)'로 열을 가둔다고 나오므로, 깃털이 없다는 ⑤는 글과 어긋나 추론할 수 없다. 나머지 ①~④는 무리 짓기, 바깥쪽 펭귄의 바람막이 역할, 교대, 수컷의 알 품기에 관한 서술에서 그대로 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-087bca72f2",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 추론할 수 «없는» 것은?\n\nCamels live in hot, dry deserts. Many people think a camel's hump is full of water, but it is actually full of fat. When food is hard to find, the camel's body breaks down this fat for energy. A camel can also go for many days without drinking, and when it finally reaches water, it can drink a huge amount in just a few minutes. Its long eyelashes and its ability to close its nostrils protect its eyes and nose from blowing sand. Thick pads on its feet keep it from sinking into the soft sand. Thanks to these features, camels have been used to carry people and goods across deserts for thousands of years.",
+"choices": [
+"낙타의 혹에는 물이 아니라 지방이 들어 있다.",
+"낙타는 먹이가 부족할 때 혹의 지방을 에너지로 쓴다.",
+"낙타는 며칠 동안 물을 마시지 않고도 지낼 수 있다.",
+"긴 속눈썹은 날리는 모래로부터 눈을 보호해 준다.",
+"낙타는 모래에 쉽게 빠져 사막을 건너는 데 적합하지 않다."
+],
+"answer": "⑤",
+"solution": "글에 발바닥의 두꺼운 패드가 부드러운 모래에 빠지지 않게 해 주며, 그런 특징 덕분에 수천 년간 사막을 건너는 데 이용되어 왔다고 했으므로 ⑤는 글과 어긋나 추론할 수 없다. 혹이 지방으로 차 있다는 점(①), 먹이가 부족할 때 지방을 쓰는 것(②), 며칠간 물 없이 지내는 것(③), 긴 속눈썹의 보호 기능(④)은 모두 본문에서 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-413635f113",
+"typeId": "eng-h1-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA single ant is tiny and weak, but a group of ants can do amazing things. Working together, thousands of ants build huge nests and carry pieces of food many times heavier than their own bodies. Each ant does only a small part, yet the whole colony succeeds. People are often the same. In a soccer game, no single player can win alone; the team wins when everyone passes the ball and helps one another. A heavy box that one person cannot lift becomes light when several friends lift it together. In both nature and human life, __________ allows small and weak individuals to achieve big things.",
+"choices": [
+"cooperation",
+"silence",
+"speed",
+"luck",
+"fear"
+],
+"answer": "①",
+"solution": "개미 무리와 축구팀, 무거운 상자를 함께 드는 예시는 모두 '함께 힘을 모으는 것'의 힘을 보여 준다. 마지막 문장도 작고 약한 개체들이 큰일을 이룬다고 했으므로 빈칸에는 '협력(cooperation)'이 들어가야 한다. silence(침묵), speed(속도), luck(운), fear(두려움)는 글의 내용과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-de03faea68",
+"typeId": "eng-h1-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWhen we first try something new, we are usually not good at it. A child who begins to ride a bike falls down again and again. A pianist who plays the same piece every day slowly makes fewer and fewer mistakes. A basketball player who shoots the ball a hundred times a day will one day make the shot without even thinking. The more we repeat an action, the easier and more natural it becomes. Nobody is born an expert; skills are built little by little, day after day. In almost every field, __________ is the key to getting better.",
+"choices": [
+"practice",
+"money",
+"anger",
+"luck",
+"sleep"
+],
+"answer": "①",
+"solution": "자전거, 피아노, 농구 모두 '반복해서 할수록' 실력이 는다는 예시이다. '행동을 반복할수록 쉬워진다'와 '조금씩 매일 쌓인다'는 설명으로 보아 빈칸에는 '연습(practice)'이 알맞다. money(돈), anger(분노), luck(운), sleep(잠)은 글이 말하는 실력 향상의 비결과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3f19ea0c05",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nFor instance, you could study for 25 minutes and then rest for 5 minutes.\n\nMany students believe that studying for hours without stopping is the best way to learn. ( A ) However, our brains cannot stay focused for a long time without rest. ( B ) If you keep studying when you are tired, you may read the same page again and again without understanding it. ( C ) That is why it is a good idea to take short breaks while you study. ( D ) During those five minutes, you can stretch, drink some water, or look out the window. ( E ) After a short rest, you will feel refreshed and be able to concentrate again. In the end, short breaks can help you study more effectively, not less.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "주어진 문장은 For instance로 시작하므로, 앞에는 이 문장이 예로 드는 조언이 와야 한다. 그 조언은 공부하는 동안 짧은 휴식을 하라는 내용이다. 또 (D) 뒤의 those five minutes는 주어진 문장의 rest for 5 minutes를 가리킨다. 따라서 주어진 문장은 짧은 휴식을 권하는 문장과 쉬는 5분 동안 할 일을 말하는 문장 사이인 (D)에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-65eefa6c55",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThen, when the bee flies to another flower, some of this pollen rubs off onto that flower.\n\nBees are small insects, but they play a big role in nature. ( A ) While a bee is drinking nectar from a flower, tiny grains of pollen stick to its hairy body. ( B ) This process helps flowers produce seeds and fruit. ( C ) In fact, many of the fruits and vegetables we eat need bees to grow. ( D ) For this reason, farmers sometimes bring beehives to their fields. ( E ) So the next time you see a bee, remember that it is working hard for all of us.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "②",
+"solution": "주어진 문장의 this pollen은 앞 문장에 나온 벌의 몸에 붙은 꽃가루(pollen)를 가리킨다. 그리고 Then은 꽃가루가 몸에 붙은 다음 단계를 나타낸다. (B) 뒤의 This process는 꽃가루가 몸에 붙었다가 다른 꽃에 묻는 전체 과정을 가리킨다. 따라서 주어진 문장은 (B)에 들어가야 흐름이 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-be82808e31",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nAs a result, ice is lighter than the same amount of liquid water, so it floats.\n\nMost substances take up less space when they change from a liquid to a solid. ( A ) Water, however, is different. ( B ) When water freezes, its molecules arrange themselves in a pattern that takes up more space, so the water expands. ( C ) This unusual property is very important for life on Earth. ( D ) In winter, ice forms on the surface of lakes and rivers and acts like a blanket, keeping the water below from freezing. ( E ) Thanks to this, fish and other water animals can survive even in very cold weather.",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "③",
+"solution": "주어진 문장은 As a result로 시작하므로, 앞에는 그 원인이 와야 한다. 원인은 물이 얼 때 부피가 늘어난다는 내용이다. 또 (D)에서 얼음이 호수 표면에 생긴다는 내용이 나오려면, 그 전에 얼음이 물에 뜬다는 사실이 먼저 나와야 한다. 따라서 주어진 문장은 물의 팽창을 설명한 문장 뒤, 이 특성의 중요성을 말하는 문장 앞인 (C)에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-354867386f",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nDo you want to keep your school bag clean and organized? Try our new Easy Pencil Case! It has three pockets for your pens, pencils, and erasers. It is small, light, and easy to carry. You can choose from four different colors. Buy one today and get a 10% discount!",
+"choices": [
+"① diary",
+"② news article",
+"③ advertisement",
+"④ biography",
+"⑤ book review"
+],
+"answer": "③",
+"solution": "이 글은 필통의 특징과 장점을 소개하며 구매를 권유하고 있다. 특히 'Buy one today'와 'get a 10% discount'라는 표현은 상품 구매를 유도하는 광고의 전형적인 특징이다. 따라서 글의 종류로 가장 적절한 것은 ③ advertisement(광고)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-692174a2af",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nMonday, September 7\n\nToday was a really happy day. My English teacher gave us a short speaking test. I was very nervous because I usually feel shy when I speak English. However, I practiced a lot last night, so I did well on the test. My teacher smiled and said, 'Good job!' I felt so proud of myself. I want to study harder and do even better next time.",
+"choices": [
+"① 학교 행사 안내문",
+"② 영어 학습 교재의 광고",
+"③ 신문의 교육 관련 기사",
+"④ 개인의 일기장",
+"⑤ 학교 급식 안내표"
+],
+"answer": "④",
+"solution": "글의 첫 부분에 날짜가 적혀 있고, 글쓴이가 하루 동안 겪은 일과 자신의 감정을 기록하고 있다. 특히 'I was very nervous'와 'I felt so proud of myself'는 개인적인 감정을 나타내는 표현이다. 따라서 이 글이 실리기에 가장 적절한 곳은 ④ 개인의 일기장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-31f2e09944",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nWhen I was learning to ride a bike, I fell down again and again. Each time, my knees hurt and I wanted to give up. My father, however, kept saying, \"Falling is just part of learning.\" He told me that every child who can ride a bike today has **fallen many times before**. So instead of being afraid of falling, I began to see each fall as one more step toward success. After a week, I was finally able to ride all the way to the park by myself. Now, whenever I try something new and fail, I remember my father's words. Mistakes are not the end; they are how we learn.",
+"choices": [
+"실패는 배우는 과정의 자연스러운 일부라는 것",
+"넘어지면 크게 다칠 수 있다는 것",
+"자전거를 타는 것은 매우 위험하다는 것",
+"혼자서는 아무것도 배울 수 없다는 것",
+"아버지의 말을 믿어서는 안 된다는 것"
+],
+"answer": "①",
+"solution": "넘어지는 것을 배움의 일부로 보라는 아버지의 말과, 넘어짐을 성공으로 가는 한 걸음으로 받아들였다는 내용이 핵심이다. 글 전체가 실수는 끝이 아니라 배우는 방법이라고 말하고 있다. 따라서 굵은 글씨는 실패가 배움의 자연스러운 과정이라는 뜻이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-e252850984",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nMy grandmother grows vegetables in her small garden. One spring, I asked her why she did not simply buy them at the store, which would be much faster. She smiled and said, \"Good things take time.\" She explained that a plant needs many days of sun, water, and care before it is ready to eat. If you pull it up too early, you get nothing. The same is true for learning a language or building a friendship. You cannot rush them. When I feel impatient about my studies, I think of her garden and remember that **you cannot pull up a plant to make it grow faster**. Real growth happens slowly, one day at a time.",
+"choices": [
+"좋은 결과에는 시간과 꾸준함이 필요하다는 것",
+"식물은 물을 주지 않아도 자란다는 것",
+"채소는 가게에서 사는 것이 더 낫다는 것",
+"공부는 빨리 끝낼수록 좋다는 것",
+"할머니의 정원은 너무 작다는 것"
+],
+"answer": "①",
+"solution": "할머니는 좋은 것에는 시간이 걸린다며 식물을 억지로 빨리 자라게 할 수 없다고 말한다. 이는 언어 학습이나 우정처럼 진짜 성장은 하루하루 천천히 이루어진다는 비유이다. 따라서 굵은 글씨는 좋은 결과에는 시간과 꾸준함이 필요하다는 뜻이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-fa0c483efb",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nRegular exercise is good for both the body and the mind. When we exercise, our heart becomes ⓐ**stronger** and pumps blood more efficiently. Exercise also helps us ⓑ**gain** weight by burning calories. In addition, physical activity can ⓒ**improve** our mood because the brain releases chemicals that make us feel happy. People who exercise regularly often find that they ⓓ**sleep** better at night. Many people say they are too busy to exercise, but you do not need a lot of time. Even a short walk every day can make a ⓔ**big** difference in your health.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ 바로 뒤에 '칼로리를 태움으로써(by burning calories)'라는 말이 이어지므로, 운동은 체중을 늘리는 것이 아니라 조절하도록 돕는다고 해야 문맥에 맞습니다. 따라서 gain(늘리다)을 control(조절하다)이나 lose(줄이다)로 고쳐야 합니다. 나머지 낱말은 모두 운동의 좋은 점을 설명하는 흐름에 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-143fe6530d",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nBreakfast is often called the most important meal of the day. After a long night without food, your body needs energy to start the day. A healthy breakfast ⓐ**provides** the fuel your brain needs to focus. Students who eat breakfast tend to ⓑ**concentrate** better in class and remember more of what they learn. On the other hand, students who ⓒ**skip** breakfast often feel hungry and tired before lunch. They may also eat too many snacks later in the day. A good breakfast does not have to be ⓓ**simple**; a piece of fruit, some bread, and a glass of milk are enough. So tomorrow morning, don't ⓔ**forget** to eat breakfast before you leave home.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "세미콜론 뒤에 '과일 한 조각, 빵 약간, 우유 한 잔이면 충분하다'는 예가 나오므로, 좋은 아침 식사가 복잡할 필요는 없다는 내용이 되어야 합니다. 따라서 simple(간단한)을 complicated(복잡한)로 고쳐야 합니다. ⓒ skip(거르다)은 아침을 먹지 않아 배고프고 피곤하다는 내용과 맞으므로 알맞은 쓰임입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2a0883dc46",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe harder you study, the better your grades will be.",
+"choices": [
+"너는 성적이 좋기 때문에 더 열심히 공부할 것이다.",
+"열심히 공부하더라도 성적이 좋아지지는 않을 것이다.",
+"공부를 더 열심히 할수록 성적이 더 좋아질 것이다.",
+"성적을 올리기 위해 공부를 열심히 해야만 했다.",
+"공부를 열심히 하는 것보다 좋은 성적을 받는 것이 중요하다."
+],
+"answer": "③",
+"solution": "'The + 비교급, the + 비교급'은 '~하면 할수록 더욱 …하다'라는 뜻이다. 'The harder you study'는 '더 열심히 공부할수록', 'the better your grades will be'는 '성적이 더 좋아질 것이다'로 해석한다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0756b87ba0",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe girl is too young to drive a car.",
+"choices": [
+"그 소녀는 자동차를 운전하기에 너무 어리다.",
+"그 소녀는 어리지만 자동차를 운전할 수 있다.",
+"그 소녀는 자동차를 운전할 만큼 나이가 많다.",
+"그 소녀는 자동차를 운전하기 위해 일찍 일어난다.",
+"그 소녀는 어렸을 때 자동차를 운전했다."
+],
+"answer": "①",
+"solution": "'too + 형용사 + to부정사'는 '너무 ~해서 …할 수 없다'라는 의미이다. 따라서 주어진 문장은 '그 소녀는 너무 어려서 자동차를 운전할 수 없다'라는 뜻이다. 이와 같은 의미를 나타낸 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8bd217fcfa",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 영어 문장과 우리말 해석이 바르게 짝지어진 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. It was not until the meeting ended that he checked his messages.\n    → 그는 회의가 끝나고 나서야 비로소 메시지를 확인했다.\nㄴ. She is the last person to break a promise.\n    → 그녀는 약속을 가장 마지막에 어기는 사람이다.\nㄷ. Had I left home earlier, I would not have missed the bus.\n    → 내가 집에서 더 일찍 출발했더라면 버스를 놓치지 않았을 텐데.\nㄹ. The more carefully you listen, the less you will understand.\n    → 주의 깊게 들을수록 더 많이 이해하게 될 것이다.\nㅁ. I could not help smiling when I heard the good news.\n    → 나는 좋은 소식을 들었을 때 미소 짓지 않을 수 없었다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ의 'It was not until ~ that ...'은 '~하고 나서야 비로소 …하다'라는 뜻이므로 올바른 해석이다. ㄴ의 'the last person to ...'는 '결코 …할 사람이 아닌'이라는 뜻이고, ㄹ의 'the less'는 '더 적게'라는 뜻이므로 두 해석 모두 틀렸다. ㄷ은 가정법 과거완료에서 if가 생략된 도치 구문으로 과거 사실과 반대되는 상황을 나타내며, ㅁ의 'cannot help -ing'는 '~하지 않을 수 없다'라는 뜻이다. 따라서 올바른 해석은 ㄱ, ㄷ, ㅁ으로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true
 }
 ]

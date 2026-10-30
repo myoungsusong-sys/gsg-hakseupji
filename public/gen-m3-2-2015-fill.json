@@ -451,5 +451,95 @@
 "source": "유사 문항",
 "twinGroup": "tw-7118",
 "custom": true
+},
+{
+"id": "fill-37e15a7d64",
+"typeId": "7102",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$가 있다. $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에 그리고, $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그렸다. 두 작은 반원에서 큰 반원의 바깥에 있는 두 부분의 넓이의 합을 $S$라 하자.\n\n$AB=7\\,\\mathrm{cm}$, $AC=10\\,\\mathrm{cm}$일 때, $S$는?",
+"choices": [
+"$17\\,\\mathrm{cm}^2$",
+"$28\\,\\mathrm{cm}^2$",
+"$35\\,\\mathrm{cm}^2$",
+"$49\\,\\mathrm{cm}^2$",
+"$70\\,\\mathrm{cm}^2$"
+],
+"answer": "③",
+"solution": "피타고라스 정리에 의해 두 작은 반원의 넓이의 합은 큰 반원의 넓이와 같다. 양쪽에서 공통인 두 활꼴의 넓이를 빼면 $S$는 삼각형 $ABC$의 넓이와 같으므로, $S=\\frac12\\times7\\times10=35\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7102",
+"custom": true
+},
+{
+"id": "fill-39972556d3",
+"typeId": "7102",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에, $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그렸다. 두 작은 반원에서 큰 반원의 바깥에 있는 두 부분의 넓이의 합이 $45\\,\\mathrm{cm}^2$이다.\n\n$AB=9\\,\\mathrm{cm}$일 때, $AC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$10\\,\\mathrm{cm}$",
+"solution": "히포크라테스의 초승달의 성질에 의해 주어진 두 부분의 넓이의 합은 삼각형 $ABC$의 넓이와 같다. 따라서 $\\frac12\\times9\\times AC=45$이므로 $AC=10\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7102",
+"custom": true
+},
+{
+"id": "fill-e8a195209a",
+"typeId": "7102",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$, $AB=AC$인 직각이등변삼각형 $ABC$의 빗변의 길이는 $12\\,\\mathrm{cm}$이다. $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에 그리고, $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그렸다.\n\n두 작은 반원에서 큰 반원의 바깥에 있는 두 부분의 넓이의 합은?",
+"choices": [
+"$18\\,\\mathrm{cm}^2$",
+"$24\\,\\mathrm{cm}^2$",
+"$30\\,\\mathrm{cm}^2$",
+"$36\\,\\mathrm{cm}^2$",
+"$72\\,\\mathrm{cm}^2$"
+],
+"answer": "④",
+"solution": "$AB=AC=x$라 하면 피타고라스 정리에 의해 $2x^2=12^2$이므로 $x^2=72$이다. 구하는 넓이는 삼각형 $ABC$의 넓이와 같으므로 $\\frac12x^2=36\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7102",
+"custom": true
+},
+{
+"id": "fill-9e03579dc6",
+"typeId": "7102",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에, $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그렸다. 두 작은 반원에서 큰 반원의 바깥에 있는 두 부분의 넓이의 합은 $48\\,\\mathrm{cm}^2$이다.\n\n$AB+AC=20\\,\\mathrm{cm}$이고 $AB<AC$이다. 선분 $BC$ 위의 점 $P$가 $BP:PC=1:2$를 만족할 때, $AP$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{20}{3}\\,\\mathrm{cm}$",
+"solution": "주어진 넓이의 합은 삼각형의 넓이이므로 $AB\\cdot AC=96$이고, $AB+AC=20$, $AB<AC$에서 $AB=8$, $AC=12$이다. 따라서 $BC^2=208$이다. 점 $A$에서 $BC$에 내린 수선의 발을 $H$라 하면 직각삼각형의 닮음에 의해 $BH=AB^2/BC=64/BC$이다. $BP=BC/3$이므로 $AP^2=AH^2+(BH-BP)^2=AB^2-2BH\\cdot BP+BP^2=64-\\frac{128}{3}+\\frac{208}{9}=\\frac{400}{9}$이다. 따라서 $AP=\\frac{20}{3}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7102",
+"custom": true
+},
+{
+"id": "fill-96a0e3bc4a",
+"typeId": "7102",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에, $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그렸다. $AB$를 지름으로 하는 반원에서 큰 반원의 바깥에 있는 부분의 넓이를 $L_1$, $AC$를 지름으로 하는 반원에서 큰 반원의 바깥에 있는 부분의 넓이를 $L_2$라 하자.\n\n점 $A$에서 $BC$에 내린 수선의 발을 $H$라 할 때, $BH:HC=1:3$이고 $L_1+L_2=18\\sqrt{3}\\,\\mathrm{cm}^2$이다. $L_2$를 구하시오.",
+"selfGrade": true,
+"answer": "$\\left(9\\sqrt{3}+\\frac{3\\pi}{2}\\right)\\,\\mathrm{cm}^2$",
+"solution": "직각삼각형의 닮음에 의해 $AB^2:AC^2=BH:HC=1:3$이므로 $AB=x$, $AC=\\sqrt{3}x$라 놓으면 $\\frac{\\sqrt{3}}2x^2=18\\sqrt{3}$에서 $AB=6$, $AC=6\\sqrt{3}$, $BC=12$이다. $BC$의 중점을 $O$라 하면 $OA=OB=6=AB$이므로 삼각형 $AOB$는 정삼각형이고 $\\angle AOC=120^\\circ$이다. 따라서 큰 반원에서 현 $AC$와 호 $AC$ 사이의 활꼴의 넓이는 $\\frac{120}{360}\\pi\\times6^2-\\frac12\\times6\\times3\\sqrt{3}=12\\pi-9\\sqrt{3}$이다. $AC$를 지름으로 하는 반원의 넓이는 $\\frac{\\pi(6\\sqrt{3})^2}{8}=\\frac{27\\pi}{2}$이므로 $L_2=\\frac{27\\pi}{2}-(12\\pi-9\\sqrt{3})=9\\sqrt{3}+\\frac{3\\pi}{2}\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7102",
+"custom": true
+},
+{
+"id": "fill-ebe84cdcdb",
+"typeId": "7102",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에, $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그렸다. 두 작은 반원에서 큰 반원의 바깥에 있는 두 부분의 넓이의 합은 $24\\,\\mathrm{cm}^2$이다.\n\n선분 $BC$ 위의 점 $P$가 $BP:PC=1:2$를 만족하고, $AP=\\frac{4\\sqrt{13}}3\\,\\mathrm{cm}$이며 $AB<AC$이다. 가능한 모든 $BC$의 길이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$(10+4\\sqrt{10})\\,\\mathrm{cm}$",
+"solution": "주어진 넓이에서 $AB\\cdot AC=48$이고, $BC^2=t$, $AB^2=u$라 놓으면 $AC^2=t-u$이므로 $u(t-u)=2304$이다. 점 $A$에서 $BC$에 내린 수선의 발을 $H$라 하면 $BH=u/BC$이므로 $AP^2=AB^2-2BH\\cdot BP+BP^2=\\frac{u}{3}+\\frac{t}{9}=\\frac{208}{9}$에서 $u=(208-t)/3$이다. 이를 대입하면 $(208-t)(4t-208)=20736$, 즉 $(t-100)(t-160)=0$이다. $t=100$일 때 $(AB,AC)=(6,8)$이고, $t=160$일 때 $(AB,AC)=(4,12)$이므로 두 경우 모두 모든 조건을 만족한다. 따라서 가능한 $BC$는 $10\\,\\mathrm{cm}$와 $4\\sqrt{10}\\,\\mathrm{cm}$이고, 그 합은 $(10+4\\sqrt{10})\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7102",
+"custom": true
 }
 ]

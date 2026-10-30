@@ -8385,5 +8385,95 @@
 "source": "유사 문항",
 "twinGroup": "tw-20129",
 "custom": true
+},
+{
+"id": "fill-502a15e284",
+"typeId": "20152",
+"kind": "주관식",
+"diff": 1,
+"body": "밑면의 가로가 $4\\text{ cm}$, 세로가 $3\\text{ cm}$이고 높이가 $2\\text{ cm}$인 직육면체가 있습니다. 밑면과 수직인 네 면의 넓이의 합은 몇 $\\text{cm}^2$인가요?",
+"selfGrade": true,
+"answer": "28 cm²",
+"solution": "밑면과 수직인 면은 넓이가 $4\\times2=8\\text{ cm}^2$인 면 2개와 $3\\times2=6\\text{ cm}^2$인 면 2개입니다. 따라서 넓이의 합은 $8\\times2+6\\times2=28\\text{ cm}^2$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20152",
+"custom": true
+},
+{
+"id": "fill-5759411311",
+"typeId": "20152",
+"kind": "주관식",
+"diff": 1,
+"body": "밑면이 한 변의 길이가 $3\\text{ cm}$인 정사각형이고 높이가 $5\\text{ cm}$인 직육면체 모양의 상자가 있습니다. 밑면과 수직인 네 면의 넓이의 합은 몇 $\\text{cm}^2$인가요?",
+"selfGrade": true,
+"answer": "60 cm²",
+"solution": "밑면과 수직인 네 면은 모두 가로가 $3\\text{ cm}$, 세로가 $5\\text{ cm}$인 직사각형입니다. 따라서 넓이의 합은 $3\\times5\\times4=60\\text{ cm}^2$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20152",
+"custom": true
+},
+{
+"id": "fill-6e64d3c7d1",
+"typeId": "20152",
+"kind": "주관식",
+"diff": 1,
+"body": "가로가 $7\\text{ cm}$, 세로가 $4\\text{ cm}$, 높이가 $3\\text{ cm}$인 직육면체가 있습니다. 밑면과 수직인 모서리의 길이의 합은 몇 $\\text{cm}$인가요?",
+"selfGrade": true,
+"answer": "12 cm",
+"solution": "밑면과 수직인 모서리는 모두 4개이며, 각 모서리의 길이는 높이와 같은 $3\\text{ cm}$입니다. 따라서 길이의 합은 $3\\times4=12\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20152",
+"custom": true
+},
+{
+"id": "fill-f6dabd7f30",
+"typeId": "20032",
+"kind": "객관식",
+"diff": 1,
+"body": "가로가 $8\\text{ cm}$, 세로가 $5\\text{ cm}$인 직사각형은 선대칭도형이면서 점대칭도형입니다. 이 직사각형의 대칭축은 모두 몇 개입니까?",
+"choices": [
+"$1$개",
+"$2$개",
+"$3$개",
+"$4$개",
+"$5$개"
+],
+"answer": "②",
+"solution": "직사각형에서 서로 마주 보는 두 변의 가운데 점을 잇는 직선은 대칭축입니다. 가로 방향과 세로 방향으로 각각 하나씩 있으므로 대칭축은 모두 $2$개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20032",
+"custom": true
+},
+{
+"id": "fill-a791f1e4fd",
+"typeId": "20032",
+"kind": "주관식",
+"diff": 1,
+"body": "한 변의 길이가 $7\\text{ cm}$인 정사각형은 선대칭도형이면서 점대칭도형입니다. 이 정사각형의 대칭축은 모두 몇 개입니까?",
+"selfGrade": true,
+"answer": "4개",
+"solution": "정사각형은 두 대각선을 따라 접으면 각각 완전히 겹칩니다. 서로 마주 보는 두 변의 가운데 점을 잇는 두 직선도 대칭축입니다. 따라서 대칭축은 모두 $4$개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20032",
+"custom": true
+},
+{
+"id": "fill-1e8753bd91",
+"typeId": "20032",
+"kind": "객관식",
+"diff": 1,
+"body": "가로가 $10\\text{ cm}$, 세로가 $6\\text{ cm}$인 직사각형은 선대칭도형이면서 점대칭도형입니다. 이 직사각형의 대칭의 중심은 어느 점입니까?",
+"choices": [
+"왼쪽 위 꼭짓점",
+"오른쪽 아래 꼭짓점",
+"위쪽 변의 가운데 점",
+"왼쪽 변의 가운데 점",
+"두 대각선이 만나는 점"
+],
+"answer": "⑤",
+"solution": "점대칭도형을 대칭의 중심을 중심으로 $180^\\circ$ 돌리면 처음 도형과 완전히 겹칩니다. 직사각형은 두 대각선이 만나는 점을 중심으로 $180^\\circ$ 돌리면 완전히 겹치므로 이 점이 대칭의 중심입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20032",
+"custom": true
 }
 ]
