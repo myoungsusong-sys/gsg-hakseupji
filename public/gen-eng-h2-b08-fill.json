@@ -4099,5 +4099,210 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u3m2s0t0",
 "custom": true
+},
+{
+"id": "fill-7962f21796",
+"typeId": "eng-h2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 하나 찾아 바르게 고쳐 쓰시오.\n\nHe became fascinating with the art of producing beautiful handwriting, also known as calligraphy, and decided to attend a calligraphy class.\n\n_______________ → _______________",
+"selfGrade": true,
+"answer": "fascinating → fascinated",
+"solution": "주어 He가 서예에 매료된 것이므로 감정을 느끼는 쪽에 맞는 과거분사를 써야 합니다. 현재분사 fascinating은 '매료시키는'이라는 뜻이라 주어와 맞지 않습니다. 따라서 became fascinated with(~에 매료되었다)로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1f0550d955",
+"typeId": "eng-h2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 하나 찾아 바르게 고쳐 쓰시오.\n\nAllowing yourself the opportunity to experience a variety of things are not a waste of time.\n\n_______________ → _______________",
+"selfGrade": true,
+"answer": "are → is",
+"solution": "문장의 주어는 동명사구 Allowing yourself the opportunity to experience a variety of things입니다. 동명사구 주어는 단수 취급하므로 동사도 단수형이어야 합니다. 바로 앞의 복수명사 things에 맞춰 are로 쓰면 안 되고, is로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c6ab8d573d",
+"typeId": "eng-h2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 하나 찾아 바르게 고쳐 쓰시오.\n\nEvery time my interest changed, I was worried about that I was going to become in the future.\n\n_______________ → _______________",
+"selfGrade": true,
+"answer": "that → what",
+"solution": "전치사 about의 목적어 자리에 오는 명사절인데, 절 안에서 become의 보어가 빠진 불완전한 구조입니다. 접속사 that은 전치사의 목적어로 쓸 수 없고 뒤에 완전한 절이 와야 합니다. 따라서 선행사를 포함하는 관계대명사 what으로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d7b9f99d33",
+"typeId": "eng-h2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 어색한 것을 네 개 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nI currently work as a magazine editor. As you can see, my preferences have changed over the years as I was exposed to new experiences. Every time my interest changed, I was worried about ⓐwhat I was going to become in the future. Do you also have similar concerns? Changes in your interests and preferences ⓑis completely natural. Try to accept this process and keep an open mind. Exploring new things can sometimes lead to valuable experiences ⓒwhich will help shape your future. I myself tried many different things before I finally ⓓbecame an editor because I enjoyed writing. Thanks to these many interests, I can write articles about math and science, speak ⓔconfident in front of an audience, and relieve my stress by ⓕswim.\nAllowing yourself the opportunity ⓖexperiencing a variety of things is not a waste of time. Your school days are a time of self-discovery and personal growth. As you spend each day wisely, you will be able to figure out ⓗwhat kind of person you are and what you enjoy doing. Do not attempt to define yourself in just one way as you undergo this process. Be flexible. Remember that your potential is limitless.\n\n기호 수정 전 수정 후\n(1) ( ) _______________ → _______________\n(2) ( ) _______________ → _______________\n(3) ( ) _______________ → _______________\n(4) ( ) _______________ → _______________",
+"selfGrade": true,
+"answer": "ⓑ is → are / ⓔ confident → confidently / ⓕ swim → swimming / ⓖ experiencing → to experience",
+"solution": "ⓑ 주어의 중심 명사가 복수명사 Changes이므로 동사는 are가 되어야 합니다(in your interests ~는 수식어구입니다). ⓔ 동사 speak를 꾸미는 자리이므로 형용사 confident가 아니라 부사 confidently를 씁니다. ⓕ 전치사 by 뒤에는 동명사가 와야 하므로 swimming으로 고치고, ⓖ opportunity는 to부정사의 수식을 받아 '~할 기회'를 나타내므로 to experience로 고칩니다. ⓐ(전치사의 목적어 역할을 하면서 불완전한 절을 이끄는 what), ⓒ(experiences를 선행사로 하는 주격 관계대명사), ⓓ(과거 시제), ⓗ(의문사 what이 이끄는 간접의문문)는 모두 어법상 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a02de537ad",
+"typeId": "eng-h2-b08-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nThe Camargue functions as a natural sponge, ______ and gradually releasing surface water such as rain and floodwater.",
+"choices": [
+"absorbing",
+"breeding",
+"cooling",
+"polluting",
+"destroying"
+],
+"answer": "①",
+"solution": "지문에서 Camargue는 천연 스펀지처럼 물을 '흡수하고(absorbing)' 서서히 방출한다고 했다. release(방출하다)와 짝을 이루는 반대 개념인 absorb(흡수하다)가 들어가야 자연스럽다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4a6da2b046",
+"typeId": "eng-h2-b08-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어 adapted의 우리말 뜻으로 알맞은 것을 고르시오.\n\nThe Camargue horses have lived in a unique environment for thousands of years and have adapted to its salty wetlands.",
+"choices": [
+"적응했다",
+"사라졌다",
+"오염시켰다",
+"소비했다",
+"방출했다"
+],
+"answer": "①",
+"solution": "adapt는 '적응하다'라는 뜻으로, 말들이 짠 습지 환경에 오랜 세월 적응해 왔다는 의미이다. 나머지 선지는 각각 disappear, contaminate, consume, release에 해당한다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5f52b2f0d9",
+"typeId": "eng-h2-b08-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 해당하는 영어 단어로 알맞은 것을 고르시오.\n\n멸종 위기에 처한",
+"choices": [
+"endangered",
+"exotic",
+"historic",
+"remarkable",
+"aesthetic"
+],
+"answer": "①",
+"solution": "'멸종 위기에 처한'은 endangered이며, 지문에서 습지가 endangered species(멸종 위기종)의 서식지를 제공한다고 했다. exotic(이국적인), historic(역사적인), remarkable(놀라운), aesthetic(미적인)은 뜻이 다르다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8b316418ce",
+"typeId": "eng-h2-b08-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중, 어법상 어색한 것을 하나 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nChen: In Singapore, there ⓐis a famous law about chewing gum. Chewing gum sales and imports ⓑis prohibited in the nation, and violators ⓒface fines of up to 2,000 Singapore dollars.\n\n<기호> <알맞게 고친 표현>\n_______ → ______________________________",
+"selfGrade": true,
+"answer": "ⓑ → are",
+"solution": "ⓑ의 주어는 'Chewing gum sales and imports'로, and로 묶인 복수 주어입니다. 그래서 be동사도 복수형 are를 써야 합니다. ⓐ는 뒤에 오는 진짜 주어 a famous law가 단수라서 is가 맞습니다. ⓒ는 주어 violators가 복수라서 face가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-899a454c93",
+"typeId": "eng-h2-b08-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중, 어법상 어색한 것을 하나 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nSophia: In addition, people are not allowed ⓐto go into the city's iconic Trevi Fountain. Although you may be tempted ⓑto dip your toes into the cool fountain water on a hot summer day, it is illegal ⓒdo so.\n\n<기호> <알맞게 고친 표현>\n_______ → ______________________________",
+"selfGrade": true,
+"answer": "ⓒ → to do so",
+"solution": "ⓒ가 있는 문장은 가주어 it과 진주어 구문입니다. 진주어 자리에는 동사원형 do가 아니라 to부정사 to do so가 와야 합니다. ⓐ는 'be allowed to부정사', ⓑ는 'be tempted to부정사' 구조라서 둘 다 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1a070d2155",
+"typeId": "eng-h2-b08-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓓ 중, 어법상 어색한 것을 하나 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nSophia: To symbolize their love forever, many couples ⓐcarve their names on locks and attach them to a bridge. However, as the weight of the locks ⓑincreases the pressure on bridges, they are no longer ⓒpermitted. Even the existing ones ⓓhave removed since 2012.\n\n<기호> <알맞게 고친 표현>\n_______ → ______________________________",
+"selfGrade": true,
+"answer": "ⓓ → have been removed",
+"solution": "ⓓ의 주어 the existing ones(= 이미 달려 있던 자물쇠들)는 스스로 치우는 것이 아니라 치워지는 대상입니다. 그래서 현재완료 수동태 have been removed로 고쳐야 합니다. ⓑ는 주어가 단수 the weight라서 increases가 맞습니다. ⓒ는 자물쇠가 허용되는 대상이라서 수동태 are permitted가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0500eb052b",
+"typeId": "eng-h2-b08-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 가장 알맞은 것은?\n\nto officially order someone not to do something, or to say that something is not allowed",
+"choices": [
+"permit",
+"forbid",
+"protect",
+"visit",
+"symbolize"
+],
+"answer": "②",
+"solution": "'공식적으로 하지 못하게 명령하거나 허용되지 않는다고 말하다'라는 뜻풀이에 해당하는 단어는 '금지하다'를 뜻하는 forbid이다. permit은 '허락하다'로 반대 의미이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-00a1850b62",
+"typeId": "eng-h2-b08-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nSitting on the famous steps is not allowed, so it is _______________ to do so and you may have to pay a fine.",
+"choices": [
+"legal",
+"free",
+"safe",
+"illegal",
+"popular"
+],
+"answer": "④",
+"solution": "'허용되지 않아서 벌금을 내야 할 수도 있다'는 내용이므로 빈칸에는 '불법의'를 뜻하는 illegal이 들어가야 자연스럽다. legal(합법적인)은 문맥과 반대되므로 적절하지 않다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3ab3c9db6b",
+"typeId": "eng-h2-b08-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어와 의미가 가장 가까운 것은?\n\nSwitzerland is very concerned about the welfare of both humans and animals.",
+"choices": [
+"well-being",
+"danger",
+"trade",
+"weight",
+"pressure"
+],
+"answer": "①",
+"solution": "welfare는 '복지, 안녕'을 뜻하므로 '행복, 안녕'을 의미하는 well-being과 가장 가깝다. danger(위험), trade(거래) 등은 관련이 없다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m7s0t0",
+"custom": true
 }
 ]

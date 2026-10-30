@@ -9168,5 +9168,470 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b03-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-cb16d95a5e",
+"typeId": "eng-h1-b03-u6m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nTrisha Prabhu, a young computer scientist from the U.S., is fighting cyberbullying with her innovative application ReThink. ReThink is a virtual keyboard that uses artificial intelligence to detect potentially hurtful text messages before they are sent and prompts young people to pause and reconsider their words. When a user types a message containing potentially offensive language, such as \"I hate you,\" ReThink prompts: \"Hold on! Are you sure you want to say that?\"",
+"choices": [
+"ReThink는 종이로 만든 설문지이다.",
+"ReThink는 인공지능을 사용하는 가상 키보드이다.",
+"Trisha는 사이버 폭력을 지지한다.",
+"ReThink는 공격적인 메시지를 자동으로 삭제한다.",
+"Trisha는 미국 출신의 요리사이다."
+],
+"answer": "②",
+"solution": "지문에서 ReThink는 인공지능(artificial intelligence)을 사용하는 가상 키보드(virtual keyboard)라고 명시되어 있으므로 ②가 정답이다. Trisha는 미국 출신의 컴퓨터 과학자이며 사이버 폭력에 맞서 싸우고 있으므로 ③, ⑤는 틀리다. ReThink는 메시지를 삭제하는 것이 아니라 다시 생각하도록 권유하므로 ④도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6af459bbf3",
+"typeId": "eng-h1-b03-u6m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nJohn Michael Stagliano is a young social activist from the U.S. who founded Home Again in 2016. It is a nonprofit organization that offers furniture and household essentials to families and individuals transitioning from homelessness to stable housing. John's journey began in 2015. At the age of twelve, he volunteered at a local shelter where people in need were staying.",
+"choices": [
+"John은 미국 출신의 젊은 사회 운동가이다.",
+"Home Again은 2016년에 설립되었다.",
+"Home Again은 비영리 단체이다.",
+"John은 열두 살 때 지역 쉼터에서 자원봉사를 했다.",
+"Home Again은 가정에 음식과 의약품만을 제공한다."
+],
+"answer": "⑤",
+"solution": "지문에서 Home Again은 가구(furniture)와 생활필수품(household essentials)을 제공한다고 했으므로, 음식과 의약품만 제공한다는 ⑤가 일치하지 않는다. John은 미국 출신 사회 운동가로 2016년 Home Again을 설립했고, 열두 살 때 지역 쉼터에서 자원봉사를 했으므로 나머지는 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e05c614501",
+"typeId": "eng-h1-b03-u6m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글에 따르면, Trisha가 ReThink를 만든 계기로 알맞은 것은?\n\nIn 2014, when Trisha was just thirteen years old, she read the tragic news of a twelve-year-old girl who had been cyberbullied for over a year and a half. Shocked at the story, she decided to prevent cyberbullying by using technology and created ReThink.",
+"choices": [
+"학교 과학 대회에서 상을 받기 위해",
+"사이버 폭력을 당한 한 소녀의 비극적인 소식을 접하고",
+"부모님의 권유로 프로그래밍을 배우기 위해",
+"게임을 더 빠르게 만들기 위해",
+"유명한 과학자가 되고 싶어서"
+],
+"answer": "②",
+"solution": "지문에서 Trisha는 2014년 열세 살 때 1년 반 넘게 사이버 폭력을 당한 열두 살 소녀의 비극적 소식을 읽고 충격을 받아 기술로 사이버 폭력을 막기로 결심해 ReThink를 만들었다고 했으므로 ②가 정답이다. 나머지 선지는 지문에 언급되지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0c027793c1",
+"typeId": "eng-h1-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nReThink prompts young people pause and reconsider their words before they send hurtful messages.",
+"selfGrade": true,
+"answer": "pause → to pause",
+"solution": "prompt는 5형식 동사로 'prompt+목적어+to부정사' 형태를 취해 '~가 …하도록 유도하다'라는 뜻을 나타냅니다. 따라서 목적격 보어 pause는 to pause가 되어야 합니다. and 뒤의 reconsider는 to pause와 병렬이므로 to를 생략한 형태로 쓸 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0c025c08bf",
+"typeId": "eng-h1-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nThe shelter (which / where) John volunteered had many residents in need.",
+"selfGrade": true,
+"answer": "where",
+"solution": "관계사 뒤의 절 'John volunteered'는 주어와 동사를 모두 갖춘 완전한 문장입니다. 선행사 The shelter가 장소이고 뒤에 완전한 절이 오므로 관계부사 where(= at which)를 써야 합니다. which는 관계대명사라서 뒤에 주어나 목적어가 빠진 불완전한 절이 와야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a7ce7e783f",
+"typeId": "eng-h1-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 괄호 안의 단어를 어법에 맞게 고쳐 쓰시오.\n\n(Shock) at the tragic news, Trisha decided to prevent cyberbullying by using technology.",
+"selfGrade": true,
+"answer": "Shocked",
+"solution": "콤마 앞부분은 분사구문이며, 생략된 주어는 주절의 주어 Trisha입니다. Trisha는 소식에 '충격을 받은' 쪽이므로 수동의 의미를 나타내는 과거분사 Shocked를 써야 합니다. 원래 형태는 As she was shocked at the tragic news에서 접속사와 주어, being을 생략한 것입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-870f0fc050",
+"typeId": "eng-h1-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 괄호 안의 동사를 문맥과 어법에 맞게 고쳐 빈칸에 쓰시오. (단, 현재완료 시제를 유지할 것)\n\n(1) ReThink has ______________ (use) by schools and organizations worldwide.\n(2) ReThink has successfully ______________ (raise) awareness on cyberbullying.",
+"selfGrade": true,
+"answer": "(1) been used (2) raised",
+"solution": "(1) ReThink는 학교와 단체에 의해 '사용되는' 대상이고 뒤에 by가 이어지므로 현재완료 수동태 has been used가 되어야 합니다. (2) ReThink가 인식을 '높인' 주체이고 뒤에 목적어 awareness가 있으므로 능동태 has raised가 되어야 합니다. 목적어가 있는데 수동태 been raised로 쓰지 않도록 주의해야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bdeb4818ba",
+"typeId": "eng-h1-b03-u6m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 어색한 것을 세 개 찾아 기호를 쓰고, 바르게 고쳐 쓰시오.\n\nJohn Michael Stagliano founded Home Again, a nonprofit organization ⓐwhich provides furniture and household essentials to families ⓑtransitioned from homelessness to stable housing. When he was twelve, John volunteered at a local shelter, ⓒwhere he learned that many residents faced difficulties in ⓓfurnish their new homes. ⓔRealizing this, he decided to do something for them. He asked his family, friends, and neighbors for donations, and soon donations began to rush in. This allowed John ⓕhelp more people get settled. He found that a simple couch could have a great impact on people ⓖwho had lived in their cars or in shelters.\n\n기호 / 어색한 표현 / 알맞은 표현\n(1) (   ) _______________ → _______________\n(2) (   ) _______________ → _______________\n(3) (   ) _______________ → _______________",
+"selfGrade": true,
+"answer": "ⓑ transitioned → transitioning, ⓓ furnish → furnishing, ⓕ help → to help",
+"solution": "ⓑ 가족들은 노숙 상태에서 안정된 주거로 스스로 '옮겨 가는' 주체이므로 능동의 현재분사 transitioning이 맞습니다. ⓓ 전치사 in 뒤에는 동명사가 와야 하므로 furnishing으로 고쳐야 합니다. ⓕ allow는 'allow+목적어+to부정사' 형태를 취하므로 to help가 되어야 합니다. ⓒ는 콤마 뒤 계속적 용법의 관계부사로 뒤에 완전한 절이 와서 맞고, ⓔ는 주어 he가 '깨달은' 주체이므로 능동 분사구문으로 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7119b6f94a",
+"typeId": "eng-h1-b03-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화를 읽고 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nG: Who are change-makers?\nB: They are people who take action to solve important problems and make a positive impact on society.\nG: I see. They make the world a better place.\n\nChange-makers are people who make a positive __________ on society.",
+"choices": [
+"impact",
+"problem",
+"question",
+"mistake",
+"danger"
+],
+"answer": "①",
+"solution": "대화에서 change-makers는 중요한 문제를 해결하기 위해 행동하고 사회에 긍정적인 영향을 미치는 사람들이라고 설명한다. 'make a positive impact on ~'은 '~에 긍정적인 영향을 미치다'라는 뜻이다. 따라서 빈칸에 들어갈 알맞은 단어는 ① impact이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c78969fa14",
+"typeId": "eng-h1-b03-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화를 읽고 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nG: What did Gitanjali Rao invent?\nB: She invented a device that detects harmful materials in water, particularly lead.\nG: That's amazing!\n\nGitanjali Rao invented a device to detect harmful materials in __________.",
+"choices": [
+"air",
+"food",
+"water",
+"soil",
+"clothes"
+],
+"answer": "③",
+"solution": "대화에서 Gitanjali Rao는 물속의 유해 물질, 특히 납을 검출하는 장치를 발명했다고 설명한다. 'harmful materials in water'는 '물속의 유해 물질'이라는 뜻이다. 따라서 빈칸에는 ③ water가 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b4978706b4",
+"typeId": "eng-h1-b03-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화를 읽고 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nG: What is Be My Eyes?\nB: It's an application that connects blind people with sighted volunteers through live video calls.\nG: That sounds like a meaningful application!\n\nBe My Eyes connects blind people with sighted volunteers through live __________ calls.",
+"choices": [
+"phone",
+"voice",
+"text",
+"video",
+"message"
+],
+"answer": "④",
+"solution": "대화에서 Be My Eyes는 시각장애인과 시각장애가 없는 자원봉사자를 실시간 영상 통화로 연결하는 애플리케이션이라고 설명한다. 'live video calls'는 '실시간 영상 통화'를 의미한다. 따라서 빈칸에 들어갈 알맞은 단어는 ④ video이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2d58b337f4",
+"typeId": "eng-h1-b03-u10m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAnother notable example occurred during the 2010 Haiti earthquake. Immediately after the disaster, volunteers and organizers from the OpenStreetMap community quickly employed satellite images to create maps of the affected area within 48 hours. This collaborative effort went beyond just creating a digital base map; it played a crucial role in assessing damage, locating shelter locations, and identifying emergency care centers.",
+"choices": [
+"지진이 일어나고 몇 주가 지난 뒤에 지도 제작이 시작되었다.",
+"자원봉사자들은 위성 사진을 활용해 지도를 만들었다.",
+"피해 지역 지도는 일주일 만에 완성되었다.",
+"정부 기관만 지도 제작에 참여했다.",
+"완성된 지도는 피해 규모를 평가하는 데 쓰이지 않았다."
+],
+"answer": "②",
+"solution": "본문에 'employed satellite images to create maps'라고 나오므로 ②가 일치한다. 지도 제작은 재난 직후(Immediately after the disaster)에 시작되었으므로 ①은 틀리고, 지도는 48시간 안에 완성되었으므로 ③도 틀리다. 지도는 OpenStreetMap 커뮤니티의 자원봉사자와 조직자들이 만들었으므로 ④가 틀리고, 피해 평가(assessing damage)에 중요한 역할을 했으므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3532372fd3",
+"typeId": "eng-h1-b03-u10m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 Dr. Im의 지도를 만들 때 수집한 정보로 언급되지 않은 것은?\n\nOne notable example is Dr. Wansoo Im's New York Restrooms project. Dr. Im developed an interactive map of every restroom in New York City and made it accessible to everyone. Using online maps, he carefully identified and marked the locations of public restrooms. It involved gathering essential details, including business names, addresses, accessibility information, and operating hours.",
+"choices": [
+"업체 이름",
+"주소",
+"접근성 정보",
+"운영 시간",
+"이용 요금"
+],
+"answer": "⑤",
+"solution": "본문은 수집한 정보로 business names, addresses, accessibility information, operating hours 네 가지를 든다. 이용 요금은 언급되지 않으므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6022af7ccb",
+"typeId": "eng-h1-b03-u10m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 설명하는 community mapping과 일치하지 않는 것은?\n\nCommunity mapping is a collaborative process in which community members create maps to address local issues by using online map services and various tools. It empowers individuals within a community to collaboratively collect, visualize, and share information with the goal of improving the quality of life in a community.",
+"choices": [
+"지역 사회 구성원들이 직접 지도를 만든다.",
+"지역 문제를 해결하려는 목적이 있다.",
+"온라인 지도 서비스와 다양한 도구를 활용한다.",
+"전문가 한 명이 혼자 정보를 수집하고 공유한다.",
+"지역 사회의 삶의 질을 높이는 것을 목표로 한다."
+],
+"answer": "④",
+"solution": "community mapping은 구성원들이 함께(collaborative, collaboratively) 정보를 수집하고 시각화해 공유하는 과정이다. 따라서 전문가 한 명이 혼자 한다는 ④는 글의 내용과 맞지 않는다. 나머지 선지는 모두 본문에 그대로 나오는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m4s0t0",
+"custom": true
+},
+{
+"id": "fill-767da02fb1",
+"typeId": "eng-h1-b03-u10m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것은?\n\nOne notable example is Dr. Wansoo Im's New York Restrooms project. Dr. Im developed an interactive map of every restroom in New York City and made it accessible to everyone. Using online maps, he carefully identified and marked the locations of public restrooms. Remarkably, this mapping process was completed in just one month thanks to the active involvement of numerous community members. It involved gathering essential details, including business names, addresses, accessibility information, and operating hours. This effort significantly improved convenience for both residents and visitors in the city, especially in emergency situations.\nAnother notable example occurred during the 2010 Haiti earthquake. Immediately after the disaster, volunteers and organizers from the OpenStreetMap community quickly employed satellite images to create maps of the affected area within 48 hours. This collaborative effort went beyond just creating a digital base map; it played a crucial role in assessing damage, locating shelter locations, and identifying emergency care centers.",
+"choices": [
+"Dr. Im completed the restroom map by himself in one month.",
+"The OpenStreetMap community finished the maps of Haiti in about a month.",
+"The maps of Haiti served only as a digital base map.",
+"The restroom map made the city more convenient for both residents and visitors, especially in emergencies.",
+"The mapping in Haiti began several weeks after the earthquake."
+],
+"answer": "④",
+"solution": "본문의 'significantly improved convenience for both residents and visitors in the city, especially in emergency situations'와 일치하므로 정답은 ④이다. ①은 많은 지역 사회 구성원이 적극적으로 참여한 덕분에 완성되었다는 내용과 어긋난다. ②는 뉴욕 프로젝트의 '한 달'과 아이티의 '48시간'을 바꿔 놓은 함정이다. ③은 'went beyond just creating a digital base map'과 반대이고, ⑤는 'Immediately after the disaster'와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4bdc9fbe03",
+"typeId": "eng-h1-b03-u8m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 Katherine Johnson에 관한 내용으로 일치하지 <u>않는</u> 것은?",
+"choices": [
+"1918년 미국 West Virginia에서 태어났다.",
+"네 자녀 중 막내였다.",
+"어린 시절부터 수학 신동이었다.",
+"열다섯 살에 흑인 대학에 입학했다.",
+"교사 생활을 시작했을 때 교직 외에도 다양한 직업 선택지가 있었다."
+],
+"answer": "⑤",
+"solution": "지문에 따르면 당시 그녀가 택할 수 있는 직업은 교직이 유일했다(teaching was the only option available to her)고 했으므로 ⑤는 일치하지 않는다. 나머지 ①~④는 출생, 막내, 수학 신동, 15세 대학 입학 등 지문 내용과 그대로 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a534d8c83f",
+"typeId": "eng-h1-b03-u8m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "John Glenn의 궤도 비행과 관련하여 윗글의 내용과 일치하는 것은?",
+"choices": [
+"NASA의 전자 컴퓨터는 계산에서 단 한 번의 오류도 내지 않았다.",
+"Glenn은 컴퓨터의 정확성에 대해 전혀 걱정하지 않았다.",
+"Katherine은 연필과 계산자(slide rule)만으로 계산을 검토했다.",
+"Katherine은 계산을 검토하는 데 한 달이 걸렸다.",
+"Glenn은 결국 지구 궤도를 도는 데 실패했다."
+],
+"answer": "③",
+"solution": "지문에서 Katherine은 연필과 계산자(a pencil and a slide rule)만 사용해 계산을 검토했다고 했으므로 ③이 일치한다. 컴퓨터는 사소한 오류를 많이 냈고(①×), Glenn은 정확성을 걱정했으며(②×), 검토에는 하루 반나절이 걸렸고(④×), Glenn은 미국 최초로 지구 궤도를 도는 데 성공했다(⑤×).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e88c67c809",
+"typeId": "eng-h1-b03-u8m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 Katherine Johnson의 생애에 관한 내용으로 일치하는 것은?",
+"choices": [
+"1986년에 NASA에서 은퇴했다.",
+"은퇴 후 남자아이들을 위한 과학 교육에 헌신했다.",
+"2015년에 NASA가 그녀의 이름을 딴 건물을 지었다.",
+"2020년에 90세의 나이로 세상을 떠났다.",
+"Apollo 11은 1969년에 두 사람을 달에 보냈다."
+],
+"answer": "①",
+"solution": "지문에 따르면 Katherine은 NASA에서 33년간 근무한 뒤 1986년에 은퇴했으므로 ①이 일치한다. 은퇴 후에는 흑인 소녀들의 STEM 교육을 위해 헌신했고(②×), 그녀의 이름을 딴 건물은 2017년에 지어졌으며(③×), 101세로 사망했고(④×), Apollo 11은 세 사람을 달에 보냈다(⑤×).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m4s0t0",
+"custom": true
+},
+{
+"id": "fill-22da5e412f",
+"typeId": "eng-h1-b03-u11m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분의 우리말 뜻으로 가장 알맞은 것은?\n\nPaul goes out onto a road to save small-mouthed frogs called maengkkongi, an endangered species in Korea.",
+"choices": [
+"몸집이 큰 종",
+"멸종 위기에 처한 종",
+"새로 발견된 종",
+"빠르게 번식하는 종",
+"바다에서만 사는 종"
+],
+"answer": "②",
+"solution": "endangered species는 '멸종 위기에 처한 종'을 뜻한다. 본문에서 맹꽁이가 한국에서 보호가 필요한 멸종 위기종임을 설명하고 있으므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u11m5s0t0",
+"custom": true
+},
+{
+"id": "fill-6af953e054",
+"typeId": "eng-h1-b03-u11m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nnot allowed by the law",
+"choices": [
+"legal",
+"illegal",
+"possible",
+"careful",
+"natural"
+],
+"answer": "②",
+"solution": "'법으로 허용되지 않는'이라는 뜻은 illegal(불법의)이다. 본문에서 허가 없이 멸종 위기종을 포획하는 것은 illegal하다고 했으므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u11m5s0t0",
+"custom": true
+},
+{
+"id": "fill-94d6f558cf",
+"typeId": "eng-h1-b03-u11m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nTo protect the frogs, fences and small puddles need to be built near their ____________. (서식지)",
+"choices": [
+"hospital",
+"surface",
+"habitat",
+"measure",
+"reality"
+],
+"answer": "③",
+"solution": "'서식지'에 해당하는 단어는 habitat이다. 본문에서 맹꽁이를 보호하기 위해 서식지 근처에 울타리와 작은 웅덩이를 만들어야 한다고 했으므로 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u11m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f2d48ccba4",
+"typeId": "eng-h1-b03-u10m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 주어진 단어를 바르게 배열하여 영어 문장을 완성하시오.\n\n커뮤니티 매핑은 협력적인 과정이다.\n\n<보기>\nis / mapping / a collaborative process / Community\n\n<조건>\n• <보기>의 단어 및 표현을 모두 한 번씩 사용할 것.\n• 문장 첫 글자는 대문자로 쓸 것.\n• 완전한 영어 문장으로 쓸 것.",
+"selfGrade": true,
+"answer": "Community mapping is a collaborative process.",
+"solution": "주어는 Community mapping이고 동사는 is이다. 보어인 a collaborative process는 '협력적인 과정'이라는 뜻이다. 따라서 주어+동사+보어의 순서로 배열하면 Community mapping is a collaborative process.가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6382c85304",
+"typeId": "eng-h1-b03-u10m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 주어진 단어를 바르게 배열하여 영어 문장을 완성하시오.\n\n지역 사회 구성원들은 지도를 만든다.\n\n<보기>\ncreate / community members / maps\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것.\n• 주어와 동사의 수를 일치시킬 것.\n• 문장 첫 글자는 대문자로 쓸 것.\n• 완전한 영어 문장으로 쓸 것.",
+"selfGrade": true,
+"answer": "Community members create maps.",
+"solution": "주어인 Community members는 '지역 사회 구성원들'이라는 뜻의 복수 명사구이다. 따라서 동사는 3인칭 단수형이 아닌 원형 create를 사용한다. 목적어 maps를 동사 뒤에 놓으면 Community members create maps.가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d6cb36e1e1",
+"typeId": "eng-h1-b03-u10m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 주어진 단어를 바르게 배열하여 영어 문장을 완성하시오.\n\n그것은 지역 문제를 해결하기 위한 것이다.\n\n<보기>\nto / local issues / It / is / address\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것.\n• 목적을 나타내는 to부정사를 사용할 것.\n• 문장 첫 글자는 대문자로 쓸 것.\n• 완전한 영어 문장으로 쓸 것.",
+"selfGrade": true,
+"answer": "It is to address local issues.",
+"solution": "주어 It 뒤에 동사 is를 놓는다. '지역 문제를 해결하기 위해'라는 목적의 의미는 to부정사인 to address로 표현할 수 있다. local issues는 address의 목적어이므로 It is to address local issues.가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m6s0t0",
+"custom": true
+},
+{
+"id": "fill-75215f3f6f",
+"typeId": "eng-h1-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nEat Seasonally and Locally\n\nEat food ingredients that are in season and grown in your region. This choice not only offers tastier and healthier options but also reduces CO₂ emissions associated with __________.\n\n① transportation\n② education\n③ communication\n④ entertainment\n⑤ decoration",
+"choices": [
+"① transportation",
+"② education",
+"③ communication",
+"④ entertainment",
+"⑤ decoration"
+],
+"answer": "①",
+"solution": "제철에 생산되고 가까운 지역에서 재배된 식재료를 선택하면 식품을 먼 거리까지 운송할 필요가 줄어든다. 따라서 운송과 관련된 이산화탄소 배출량을 줄일 수 있으므로 transportation(운송)이 가장 적절하다. 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-938aa26d09",
+"typeId": "eng-h1-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nCook Smart\n\nAdopt intelligent cooking techniques. Begin by cutting ingredients into smaller pieces to make cooking times shorter. Put a lid on the pan while cooking, which reduces cooking time by up to 40 percent. __________, try to cook larger quantities at once to increase pan efficiency.\n\n① However\n② In addition\n③ Instead\n④ Nevertheless\n⑤ On the contrary",
+"choices": [
+"① However",
+"② In addition",
+"③ Instead",
+"④ Nevertheless",
+"⑤ On the contrary"
+],
+"answer": "②",
+"solution": "앞부분에서는 재료를 작게 자르고 냄비에 뚜껑을 덮어 조리 시간을 줄이는 방법을 설명한다. 빈칸 뒤에서는 한 번에 많은 양을 조리하여 효율을 높이는 방법을 추가로 제시한다. 따라서 추가 정보를 나타내는 In addition(게다가)이 가장 적절하다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-76832b0ba5",
+"typeId": "eng-h1-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nGet Creative\n\nRepurpose remaining food creatively. Instead of wasting food that remains after a meal, transform it into soups, sandwiches, salads, or anything else you can imagine. This practice reduces __________ and conserves valuable resources.\n\n① cooking time\n② food waste\n③ food prices\n④ kitchen space\n⑤ transportation costs",
+"choices": [
+"① cooking time",
+"② food waste",
+"③ food prices",
+"④ kitchen space",
+"⑤ transportation costs"
+],
+"answer": "②",
+"solution": "글에서는 식사 후 남은 음식을 버리지 않고 수프, 샌드위치, 샐러드 등으로 다시 활용할 것을 권장한다. 이러한 실천은 음식물 쓰레기를 줄이고 소중한 자원을 절약하는 데 도움이 된다. 따라서 빈칸에는 food waste(음식물 쓰레기)가 가장 적절하다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u5m5s0t0",
+"custom": true
 }
 ]

@@ -3544,5 +3544,191 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b02-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-eec72ff545",
+"typeId": "eng-h2-b02-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nthe quality of including all kinds of people and making everyone feel welcome and accepted",
+"choices": [
+"inclusivity",
+"prejudice",
+"discrimination",
+"mobility",
+"flexibility"
+],
+"answer": "①",
+"solution": "영영풀이는 '모든 사람을 포함하고 누구나 환영받고 받아들여진다고 느끼게 하는 성질'이라는 뜻으로, inclusivity(포용성)에 해당한다. prejudice는 '편견', discrimination은 '차별', mobility는 '이동성', flexibility는 '유연성'이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d617b9d64e",
+"typeId": "eng-h2-b02-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"bias – 편견, 편향",
+"enhance – 향상시키다, 높이다",
+"breathable – 통기성이 있는",
+"adjustable – 조절 가능한",
+"temporary – 영구적인"
+],
+"answer": "⑤",
+"solution": "temporary는 '일시적인, 임시의'라는 뜻이다. 본문에서도 individuals with temporary injuries(일시적인 부상을 입은 사람들)로 쓰였다. '영구적인'은 permanent이므로 ⑤의 짝이 잘못되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c5c3dbb045",
+"typeId": "eng-h2-b02-u0m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 단어를 쓰시오. (주어진 철자로 시작하고, '소속감'의 의미가 되도록 쓸 것)\n\nSaying, \"Hello, everyone,\" instead of, \"Hello, guys,\" demonstrates inclusivity, reduces potential barriers, and enhances everyone's sense of b__________.",
+"selfGrade": true,
+"answer": "belonging",
+"solution": "sense of belonging은 '소속감'이라는 뜻이다. \"Hello, guys\" 대신 \"Hello, everyone\"이라고 말하면 모두가 자신도 포함된다고 느끼게 되므로, 모든 사람의 소속감이 높아진다는 내용이 된다. 따라서 빈칸에는 belonging이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a63fb1311e",
+"typeId": "eng-h2-b02-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\nBeth: Okay, let's start with the concept of a stock. (A)주식은 회사 소유권의 부분적인 몫이다. When you buy a stock, you get a portion of the company's ownership.\n\n<보기> share, a stock, ownership, of, is, a partial, in a company\n\n→ ________________________________________________.",
+"selfGrade": true,
+"answer": "A stock is a partial share of ownership in a company",
+"solution": "주어 'a stock(주식)' 뒤에 be동사 is를 쓰고, 보어 'a partial share(부분적인 몫)'를 이어서 쓴다. '~의 소유권'은 'of ownership'으로 share 뒤에서 수식하고, '회사의'는 'in a company'로 마지막에 둔다. 따라서 A stock is a partial share of ownership in a company가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1fc929de85",
+"typeId": "eng-h2-b02-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\nBeth: A stock is a partial share of ownership in a company. (A)여러분이 주식을 살 때, 여러분은 회사 소유권의 일부를 얻게 됩니다. To put it simply, owning one stock is like having a slice of the company's pie.\n\n<보기> a portion, you, get, of, the company's ownership\n\n→ When you buy a stock, ________________________________________________.",
+"selfGrade": true,
+"answer": "you get a portion of the company's ownership",
+"solution": "주절은 '주어(you) + 동사(get) + 목적어(a portion)' 순서로 쓴다. '회사 소유권의'는 전치사 of를 써서 'of the company's ownership'으로 a portion 뒤에 붙인다. 따라서 you get a portion of the company's ownership가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7c9b5ea4b8",
+"typeId": "eng-h2-b02-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\nNeil: Does that mean stockholders themselves can actively participate in the management of the company?\nBeth: Not exactly, Neil. (A)경영은 일반적으로 전문 경영인들에 의해 수행됩니다.\n\n<보기> by, is, carried out, generally, professional managers\n\n→ Management ________________________________________________.",
+"selfGrade": true,
+"answer": "is generally carried out by professional managers",
+"solution": "경영이 '수행되는' 것이므로 수동태 'be동사 + p.p.(is carried out)'를 쓴다. 빈도·정도 부사 generally는 be동사 뒤, 과거분사 앞에 둔다. 행위자 '전문 경영인들에 의해'는 'by professional managers'로 문장 끝에 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-78f711630b",
+"typeId": "eng-h2-b02-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중, 어법상 어색한 것을 하나 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nSweeping melts the ice and makes the stone ⓐmove faster. On the other hand, if not enough ice melts, the stone ⓑstops before reaching the target. The amount of ice melting ⓒdepend on the sweeping speed and pressure.\n\n기호 수정 전 수정 후\n( ) _______________ → _______________",
+"selfGrade": true,
+"answer": "ⓒ depend → depends",
+"solution": "ⓒ 문장의 주어는 The amount of ice melting이고, 핵심 주어는 단수 명사 The amount이므로 동사도 단수형 depends가 되어야 합니다. ⓐ는 사역동사 make의 목적격보어라서 동사원형 move가 맞습니다. ⓑ는 if절과 짝을 이루는 주절의 동사이고 주어 the stone이 단수이므로 stops가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-32c72f8ff1",
+"typeId": "eng-h2-b02-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중, 어법상 어색한 것을 하나 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nIn 2010, Liverpool ⓐunderwent a change in ownership. The new owner of the club demanded that the club ⓑform a new data team. The new team ⓒincluding a physicist from Cambridge, a nuclear scientist from Harvard, and a former chess champion.\n\n기호 수정 전 수정 후\n( ) _______________ → _______________",
+"selfGrade": true,
+"answer": "ⓒ including → included",
+"solution": "ⓒ 문장에는 The new team이라는 주어 뒤에 본동사가 없으므로, 분사 including을 과거시제 동사 included로 고쳐야 합니다. ⓐ는 2010년이라는 과거 시점에 맞는 과거형 동사입니다. ⓑ는 요구를 나타내는 동사 demand 뒤 that절이므로 (should) 동사원형 form이 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-026f92b7d5",
+"typeId": "eng-h2-b02-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중, 어법상 어색한 것을 하나 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nTo identify the most effective technique, the Korean team designed a sweeping measurement device. The device ⓐconsisted of infrared cameras and sensors ⓑattaching to the players' bodies, shoes, and brooms. Through the device and motion-capture screens, foot pressure values and other data ⓒwere obtained for analysis.\n\n기호 수정 전 수정 후\n( ) _______________ → _______________",
+"selfGrade": true,
+"answer": "ⓑ attaching → attached",
+"solution": "ⓑ 센서는 선수들의 몸, 신발, 브룸에 '부착되는' 대상이므로 수동의 의미를 가진 과거분사 attached로 고쳐야 합니다. 이 과거분사가 sensors를 뒤에서 꾸밉니다. ⓐ consist of는 수동태로 쓰지 않는 자동사구라서 consisted of가 맞습니다. ⓒ는 자료가 '얻어지는' 것이고 주어가 복수이므로 수동태 were obtained가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3c80cb95ee",
+"typeId": "eng-h2-b02-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 가장 적절한 것은?\n\nthe force that pulls objects toward the center of the Earth",
+"choices": [
+"friction",
+"gravity",
+"atmosphere",
+"debris",
+"descent"
+],
+"answer": "②",
+"solution": "지구 중심 쪽으로 물체를 끌어당기는 힘은 '중력(gravity)'이다. 우주비행사가 착륙 후 팔다리가 무겁게 느껴진 것도 이 중력 때문이다. friction은 마찰, atmosphere는 대기, debris는 잔해, descent는 하강을 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-42c4f36b17",
+"typeId": "eng-h2-b02-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 적절한 것은?\n\nAs the capsule entered the atmosphere, any object created enough _______ to burn up from the heat.",
+"choices": [
+"gravity",
+"silence",
+"friction",
+"delight",
+"maintenance"
+],
+"answer": "③",
+"solution": "대기로 들어오는 물체가 열로 타버릴 만큼 생기는 것은 '마찰(friction)'이다. 지문에서 마찰열로 물체가 타오른다고 설명했다. 나머지 중력, 침묵, 기쁨, 유지보수는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8265c09fdc",
+"typeId": "eng-h2-b02-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어와 의미가 가장 가까운 것은?\n\nHaving green plants in space is a delight!",
+"choices": [
+"danger",
+"pleasure",
+"problem",
+"mistake",
+"duty"
+],
+"answer": "②",
+"solution": "delight는 '큰 기쁨, 즐거움'을 뜻하므로 pleasure와 의미가 가장 가깝다. 우주에서 초록 식물을 기르는 것이 즐거움이라는 문맥이다. danger(위험), problem(문제), mistake(실수), duty(의무)는 반대되거나 무관한 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m7s0t0",
+"custom": true
 }
 ]

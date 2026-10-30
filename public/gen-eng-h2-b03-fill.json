@@ -3220,5 +3220,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b03-u3m2s0t0",
 "custom": true
+},
+{
+"id": "fill-f4735e8012",
+"typeId": "eng-h2-b03-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n새로운 것을 만들어 내는 것은 쉽지 않다.\n\n( is / something / easy / creating / not / new )\n\n→ ____________________________________________.",
+"selfGrade": true,
+"answer": "Creating something new is not easy.",
+"solution": "동명사구 'Creating something new'(새로운 것을 만들어 내는 것)가 문장의 주어입니다. -thing으로 끝나는 대명사는 형용사가 뒤에서 꾸미므로 'something new' 순서로 씁니다. 그 뒤에 동사 is와 not easy를 차례로 놓습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-809857aeff",
+"typeId": "eng-h2-b03-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 고대 로마인들에게 'genius'가 무엇을 의미했는지 본문에서 찾아 6단어의 영어로 쓰시오.\n\nI did some research on this issue and found that ancient Romans understood \"genius\" differently from how we see it today. To them, \"genius\" didn't refer to a particularly gifted person but rather a divine assistant spirit of creativity. They believed that geniuses lived in the walls of artists' homes and would come out and help them with their work.\n\n→ ____________________________________________",
+"selfGrade": true,
+"answer": "a divine assistant spirit of creativity",
+"solution": "'not A but rather B'(A가 아니라 오히려 B) 구문에서 로마인들이 생각한 genius의 의미는 B에 들어 있습니다. 'a particularly gifted person'(특별히 재능 있는 사람)은 부정된 내용입니다. 따라서 정답은 'a divine assistant spirit of creativity'(창의성을 돕는 신성한 영혼)이며, 6단어입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a1ac158840",
+"typeId": "eng-h2-b03-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n그들의 genius도 작품의 질에 책임이 있었다.\n\n( the work / their genius / responsible / also / was / for / the quality of )\n\n→ ____________________________________________.",
+"selfGrade": true,
+"answer": "Their genius was also responsible for the quality of the work.",
+"solution": "'~에 책임이 있다'는 'be responsible for'로 나타냅니다. 빈도·첨가를 나타내는 부사 also는 be동사 뒤에 놓으므로 'was also responsible for'가 됩니다. 마지막으로 for의 목적어인 'the quality of the work'를 붙이면 문장이 완성됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0a47136823",
+"typeId": "eng-h2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"profit — 이익",
+"customer — 손님",
+"donation — 기부",
+"discount — 할인",
+"resist — 수리하다"
+],
+"answer": "⑤",
+"solution": "resist는 '저항하다, 참다'라는 뜻이다. ⑤의 '수리하다'는 repair에 해당하므로 잘못 짝지어졌다. 지문에서 'Who could resist a cool, sweet lemonade'는 '시원하고 달콤한 레모네이드를 누가 참을 수 있겠는가'의 의미로 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-53c53dd1a9",
+"typeId": "eng-h2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nWe designed posters and fliers to ____________ more customers to our lemonade stand.",
+"choices": [
+"attract",
+"forget",
+"close",
+"lose",
+"waste"
+],
+"answer": "①",
+"solution": "'더 많은 손님을 레모네이드 가판대로 끌어들이기 위해'라는 문맥이므로 '끌어들이다, 유인하다'를 뜻하는 attract가 알맞다. 지문의 'marketing strategies to attract more customers'와 같은 쓰임이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a65d76b8c2",
+"typeId": "eng-h2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어와 의미가 가장 비슷한 것은?\n\nWe offered customers free refills if they posted a photo on their social media accounts.",
+"choices": [
+"free of charge",
+"very expensive",
+"difficult",
+"dangerous",
+"boring"
+],
+"answer": "①",
+"solution": "free는 '무료의, 공짜의'라는 뜻이므로 'free of charge(무료의)'와 의미가 가장 가깝다. 지문에서 'free refills(무료 리필)'와 같은 의미로 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m7s0t0",
+"custom": true
 }
 ]

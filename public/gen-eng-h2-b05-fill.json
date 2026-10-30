@@ -2908,5 +2908,171 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u3m7s0t0",
 "custom": true
+},
+{
+"id": "fill-3638576931",
+"typeId": "eng-h2-b05-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nFrugal women did not want to waste any fabric and found ways to reuse it.",
+"choices": [
+"wasteful",
+"thrifty",
+"wealthy",
+"careless",
+"generous"
+],
+"answer": "②",
+"solution": "frugal은 '검소한, 절약하는'이라는 뜻으로, 천을 낭비하지 않고 재사용하려는 여성들을 묘사한다. 보기 중 이와 가장 가까운 뜻을 가진 단어는 '절약하는'을 의미하는 thrifty이다. wasteful(낭비하는), generous(관대한)는 반대 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-129655c6a1",
+"typeId": "eng-h2-b05-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nSince most people were ____________ at that time, the images on the stained-glass windows helped them understand religious messages instead of reading them.",
+"choices": [
+"illiterate",
+"educated",
+"religious",
+"practical",
+"wealthy"
+],
+"answer": "①",
+"solution": "글을 읽지 못했기 때문에 글자 대신 그림으로 종교적 메시지를 이해했다는 내용이다. 따라서 '글을 읽지 못하는'이라는 뜻의 illiterate가 알맞다. educated(교육받은)는 문맥과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6408209516",
+"typeId": "eng-h2-b05-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이가 설명하는 단어로 가장 적절한 것은?\n\nto make someone feel very surprised or impressed",
+"choices": [
+"amaze",
+"assemble",
+"accommodate",
+"waste",
+"apologize"
+],
+"answer": "①",
+"solution": "'누군가를 매우 놀라게 하거나 감탄하게 하다'라는 뜻풀이에 해당하는 단어는 amaze(놀라게 하다)이다. 본문에서 스테인드글라스 창문이 방문객들을 놀라게 한다(amaze)고 쓰였다. assemble은 '조립하다', accommodate는 '수용하다'의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c233d10256",
+"typeId": "eng-h2-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 ( ) 안에 주어진 동사를 어법에 맞는 형태로 고쳐 쓰시오.\n\nCreated during the Joseon dynasty, jogakbo is a type of traditional wrapping cloth (make) by stitching small pieces of fabric into a large square or rectangle.",
+"selfGrade": true,
+"answer": "made",
+"solution": "이 문장에는 이미 본동사 is가 있으므로 빈칸에 동사를 또 쓸 수 없고, 앞의 명사 cloth를 꾸미는 분사가 와야 합니다. 보자기는 사람이 '만드는' 것이 아니라 '만들어지는' 대상이므로 수동의 의미를 지닌 과거분사 made가 알맞습니다. which[that] is made에서 「관계대명사+be동사」가 생략된 형태로 볼 수도 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-334b414f3e",
+"typeId": "eng-h2-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 한 군데 찾아 바르게 고쳐 쓰시오.\n\nStitching such random patches into a perfect square or rectangle require artistic sensitivity, a high level of skill, careful planning, and long hours stitching.",
+"selfGrade": true,
+"answer": "require → requires",
+"solution": "이 문장의 주어는 동명사구 Stitching such random patches into a perfect square or rectangle입니다. 동명사구 주어는 단수로 취급하므로 동사도 단수형인 requires가 되어야 합니다. 동사 바로 앞의 rectangle이나 patches를 주어로 착각하지 않도록 주의해야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4b3fa6db34",
+"typeId": "eng-h2-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 관계대명사를 한 단어로 쓰시오.\n\nPatchwork, ________ beauty has long been appreciated in many cultures across the globe, is a type of needlework that involves sewing scraps of fabric together to create a larger piece of art.",
+"selfGrade": true,
+"answer": "whose",
+"solution": "빈칸 뒤의 명사 beauty는 앞에 나온 Patchwork의 아름다움, 즉 Patchwork's beauty라는 소유 관계를 나타냅니다. 바로 뒤에 무관사 명사가 오면서 소유의 의미를 나타내는 관계대명사는 whose입니다. 이 관계사절은 콤마로 둘러싸인 계속적 용법으로 쓰였으므로 that은 쓸 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-723641d463",
+"typeId": "eng-h2-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 세 개 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nThroughout the ages and across all cultures, there ⓐhas been small decorative objects with a hole for threading called beads. In its simplest form, beadwork can involve ⓑthreading a few beads together on a single string to make a simple bracelet or necklace. Beadwork is ancient, ⓒevidenced by the findings of beads dating back to the Stone Age. Back then, people strung bones, shells, or rocks together to hang around their neck. As cultures and societies evolved over time, beadwork became a form of personal expression, a symbol of social class, or even a talisman to drive away bad luck. Interestingly, some regions have particularly rich traditions. The Ndebele tribe of South Africa, for example, ⓓis famed for intricate dresses ⓔmaking of glass beads. Different designs serve as a means of ⓕmarking different developmental stages of a woman's life. An unmarried girl may wear a square apron ⓖonto that thousands of glass beads were hand-sewn, while a married woman might wear a five-paneled apron, along with beaded necklaces and a beaded cape.\n\n<기호> <알맞게 고친 표현>\n(1) _________ → ________________\n(2) _________ → ________________\n(3) _________ → ________________",
+"selfGrade": true,
+"answer": "ⓐ have been ⓔ made ⓖ onto which",
+"solution": "ⓐ「there+be동사」 구문에서는 뒤에 오는 실제 주어 small decorative objects가 복수이므로 have been으로 고쳐야 합니다. ⓔ 드레스는 유리구슬로 '만들어진' 것이므로 수동의 의미를 지닌 과거분사 made가 알맞습니다. ⓖ 관계대명사 that은 전치사 바로 뒤에 올 수 없으므로 onto which로 고쳐야 합니다. 함정 선지도 살펴보면, ⓓ는 삽입구 for example을 걷어 내면 단수 주어 The Ndebele tribe와 수가 일치하고, ⓒ는 앞 절 전체를 보충 설명하는 분사구문(수동)으로 쓰였으며, ⓑ와 ⓕ는 각각 involve와 전치사 of의 목적어로 쓰인 동명사이므로 모두 어법상 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c7a1415e58",
+"typeId": "eng-h2-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nTo help visitors interact with artworks and artists in a novel, engaging way, many museums are adopting technology to enrich the experience of museum-goers. The Van Gogh Museum in Amsterdam allows visitors to virtually touch objects and interact with the characters inside, immersing themselves in the artworks. Some museums are even personalizing services, as natural language processing techniques can be implemented into chatbots. The chatbot of the British Museum of London explains details not only about the exhibits but also about the facilities and venues, in a dozen different languages.",
+"choices": [
+"반 고흐 미술관은 런던에 있다.",
+"반 고흐 미술관에서는 방문객이 가상으로 작품 속 사물을 만질 수 있다.",
+"대영 박물관의 챗봇은 전시품에 대해서만 설명한다.",
+"대영 박물관의 챗봇은 영어로만 안내한다.",
+"많은 박물관이 기술 사용을 줄이고 있다."
+],
+"answer": "②",
+"solution": "본문에 반 고흐 미술관이 방문객에게 가상으로 사물을 만지고(virtually touch objects) 작품 속 인물과 상호작용하게 해 준다고 나오므로 ②가 일치한다. 반 고흐 미술관은 런던이 아니라 암스테르담에 있으므로 ①은 틀리다. 대영 박물관 챗봇은 전시품뿐 아니라 시설과 장소에 대해서도, 그것도 십여 개 언어로 설명하므로 ③과 ④도 틀리다. 박물관들은 기술을 도입하고(adopting) 있으므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-94d3ed506c",
+"typeId": "eng-h2-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThe system can also tell farmers exactly when to feed the fish by identifying patterns of behavior that an individual fish or the school exhibits when they are hungry. This is how farmers can accurately determine optimal feeding times and amounts. The right amount of food at the right time minimizes cost, reduces waste and pollution, and maximizes fish growth rates. Given the fact that feeding constitutes more than 50% of a fish farm’s operational budget, this precise feeding approach will ultimately contribute to a more affordable supply of fish for consumers as well as efficient and sustainable aquaculture operations in general.",
+"choices": [
+"AI 시스템은 물고기가 배고플 때 보이는 행동 패턴을 파악한다.",
+"알맞은 때에 알맞은 양의 먹이를 주면 비용이 최소화된다.",
+"정확한 먹이 공급은 쓰레기와 오염을 줄여 준다.",
+"먹이 비용은 양식장 운영 예산의 절반에 미치지 못한다.",
+"정밀한 먹이 공급은 소비자에게 더 저렴한 생선을 공급하는 데 기여한다."
+],
+"answer": "④",
+"solution": "본문에 먹이 공급이 양식장 운영 예산의 50% 이상(more than 50%)을 차지한다고 나오므로, 절반에 못 미친다고 한 ④가 일치하지 않는다. ①은 identifying patterns of behavior ... when they are hungry와, ②와 ③은 minimizes cost, reduces waste and pollution과 일치한다. ⑤도 a more affordable supply of fish for consumers와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cd85a82304",
+"typeId": "eng-h2-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nPersonalized services will continue to be an important part of a museum visitor’s experience. Based on an analysis of visitors’ background and past behavior, including the artworks, websites, or social media sites they’ve viewed or given a “like” to online, deep learning systems can predict and recommend artworks they would most likely be interested in. The National Museum of Singapore conducted a study in 2017 on developing a deep learning engine that can track a visitor’s gaze, identify what interests them, recommend personalized tours, and show them virtual objects on top of real-world exhibits, often giving participatory quizzes and games that suit their interests.",
+"choices": [
+"What is the name of the deep learning engine?",
+"How many visitors took part in the study?",
+"How much money did the study cost?",
+"Who led the study at the National Museum of Singapore?",
+"When did the National Museum of Singapore conduct a study on a deep learning engine?"
+],
+"answer": "⑤",
+"solution": "본문에 싱가포르 국립 박물관이 2017년(in 2017)에 딥 러닝 엔진 개발 연구를 진행했다고 나오므로 ⑤에 답할 수 있다. 엔진의 이름, 연구 참여 인원, 연구 비용, 연구 책임자는 본문에 나오지 않으므로 ①~④에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m4s0t0",
+"custom": true
 }
 ]

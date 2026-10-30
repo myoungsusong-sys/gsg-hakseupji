@@ -11300,5 +11300,286 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-cal-u0m0s2t1",
 "custom": true
+},
+{
+"id": "fill-4c6c9b32f4",
+"typeId": "exam-cal-u0m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)$ 에 대하여 극한 $\\lim_{x\\to a} f(x)$ 의 값이 존재하려면 $x=a$ 에서 함수 $f(x)$ 가 반드시 정의되어 있어야 한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "$\\lim_{x\\to a} f(x)$ 는 $x$ 가 $a$ 가 아니면서 $a$ 에 한없이 가까워질 때 $f(x)$ 가 어떤 값에 가까워지는지를 뜻하므로, $x=a$ 에서의 함숫값과는 관계가 없습니다. 예를 들어 $f(x)=\\dfrac{x^2-1}{x-1}$ 은 $x=1$ 에서 정의되지 않습니다. 하지만 $x\\neq1$ 일 때 $f(x)=x+1$ 이므로 $\\lim_{x\\to1} f(x)=2$ 로 극한값이 존재합니다. 따라서 주어진 문장은 틀렸습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8858e3ed37",
+"typeId": "exam-cal-u0m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)$ 에서 $x=a$ 에서의 좌극한 $\\lim_{x\\to a-}f(x)$ 와 우극한 $\\lim_{x\\to a+}f(x)$ 가 서로 다르면, $x=a$ 에서의 극한 $\\lim_{x\\to a}f(x)$ 는 존재하지 않는다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$x=a$ 에서 극한값이 존재하기 위한 필요충분조건은 좌극한과 우극한이 모두 존재하고 그 값이 서로 같은 것이다. 따라서 좌극한과 우극한이 서로 다르면 극한값은 존재하지 않는다. 그러므로 주어진 설명은 옳으므로 답은 O이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-5e813e79c3",
+"typeId": "exam-cal-u0m0s3t0",
+"kind": "주관식",
+"diff": 1,
+"body": "두 함수 $f(x)$, $g(x)$에 대하여 $\\lim\\limits_{x\\to a}f(x)=\\alpha$, $\\lim\\limits_{x\\to a}g(x)=\\beta$ (단, $\\beta\\neq 0$)일 때, $\\lim\\limits_{x\\to a}\\dfrac{f(x)}{g(x)}=\\dfrac{\\alpha}{\\beta}$ 이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "함수의 극한에 대한 성질(몫의 극한)에 따르면, 두 함수가 각각 극한값 $\\alpha$, $\\beta$를 가지고 분모의 극한값 $\\beta$가 $0$이 아닐 때 몫의 극한값은 각 극한값의 몫 $\\dfrac{\\alpha}{\\beta}$와 같다. 따라서 주어진 설명은 옳으므로 정답은 O이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s3t0",
+"custom": true
+},
+{
+"id": "fill-792a726974",
+"typeId": "exam-cal-u0m1s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=\\begin{cases} x+1 & (x<2) \\\\ x-3 & (x\\ge 2) \\end{cases}$ 와 함수 $g(x)=x+k$ 에 대하여, 함수 $f(x)g(x)$ 가 실수 전체의 집합에서 연속일 때, 상수 $k$ 의 값은?",
+"choices": [
+"$-3$",
+"$-2$",
+"$-1$",
+"$1$",
+"$2$"
+],
+"answer": "②",
+"solution": "$f(x)g(x)$ 는 $x\\ne 2$ 에서 연속이므로 $x=2$ 에서만 연속이면 됩니다. $\\lim_{x\\to2-}f(x)g(x)=3(2+k)$ 이고 $\\lim_{x\\to2+}f(x)g(x)=f(2)g(2)=-(2+k)$ 입니다. $3(2+k)=-(2+k)$ 에서 $2+k=0$ 이므로 $k=-2$ 입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-17f071b862",
+"typeId": "exam-cal-u0m1s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)=\\begin{cases} \\dfrac{x^2+x-6}{x-2} & (x\\ne 2) \\\\ a & (x=2) \\end{cases}$ 가 실수 전체의 집합에서 연속이 되도록 하는 상수 $a$ 의 값을 구하시오.",
+"selfGrade": true,
+"answer": "5",
+"solution": "$x\\ne2$ 일 때 $\\dfrac{x^2+x-6}{x-2}=\\dfrac{(x-2)(x+3)}{x-2}=x+3$ 입니다. 따라서 $\\lim_{x\\to2}f(x)=5$ 입니다. $x=2$ 에서 연속이려면 $f(2)=a=5$ 이어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-77c635130b",
+"typeId": "exam-cal-u0m1s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=\\begin{cases} 1 & (x\\ge 0) \\\\ -1 & (x<0) \\end{cases}$ 와 이차함수 $g(x)=x^2+2x+b$ 에 대하여, 함수 $f(x)g(x)$ 가 실수 전체의 집합에서 연속일 때, $g(2)$ 의 값은? (단, $b$ 는 상수)",
+"choices": [
+"$0$",
+"$4$",
+"$6$",
+"$8$",
+"$10$"
+],
+"answer": "④",
+"solution": "$f(x)g(x)$ 는 $x\\ne0$ 에서 연속이므로 $x=0$ 에서만 확인하면 됩니다. $\\lim_{x\\to0-}f(x)g(x)=-b$ 이고 $\\lim_{x\\to0+}f(x)g(x)=f(0)g(0)=b$ 이므로 $-b=b$ 에서 $b=0$ 입니다. 따라서 $g(x)=x^2+2x$ 이고 $g(2)=4+4=8$ 입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-cbaa8469e7",
+"typeId": "exam-cal-u0m1s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=x^3+x-3$에 대하여 사잇값 정리에 의해 방정식 $f(x)=0$의 실근이 반드시 존재하는 구간은?",
+"choices": [
+"$(-2,\\,-1)$",
+"$(-1,\\,0)$",
+"$(0,\\,1)$",
+"$(1,\\,2)$",
+"$(2,\\,3)$"
+],
+"answer": "④",
+"solution": "$f(x)$는 다항함수이므로 모든 실수에서 연속이다. $f(-2)=-13$, $f(-1)=-5$, $f(0)=-3$, $f(1)=-1$, $f(2)=7$, $f(3)=27$이다. 양 끝 함숫값의 부호가 다른 구간은 $f(1)f(2)<0$인 $(1,\\,2)$뿐이다. 따라서 사잇값 정리에 의해 이 구간에 실근이 적어도 하나 존재한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s3t3",
+"custom": true
+},
+{
+"id": "fill-978adf456b",
+"typeId": "exam-cal-u0m1s3t3",
+"kind": "주관식",
+"diff": 1,
+"body": "실수 전체의 집합에서 연속인 함수 $f(x)$에 대하여 $f(0)=2$, $f(1)=-1$, $f(2)=3$, $f(3)=1$, $f(4)=-2$일 때, 방정식 $f(x)=0$은 열린구간 $(0,\\,4)$에서 적어도 몇 개의 실근을 갖는가?",
+"selfGrade": true,
+"answer": "3",
+"solution": "$f(0)f(1)<0$, $f(1)f(2)<0$, $f(3)f(4)<0$이다. $f(x)$가 연속이므로 사잇값 정리에 의해 구간 $(0,1)$, $(1,2)$, $(3,4)$에 각각 적어도 하나의 실근이 있다. 한편 $f(2)f(3)>0$이므로 구간 $(2,3)$에서는 실근이 있다고 보장할 수 없다. 따라서 실근은 적어도 $3$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s3t3",
+"custom": true
+},
+{
+"id": "fill-755964e705",
+"typeId": "exam-cal-u0m1s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=x^2-2x+k$에 대하여 방정식 $f(x)=0$이 열린구간 $(1,\\,3)$에서 실근을 갖기 위해 $f(1)f(3)<0$이어야 한다. 이 조건을 만족시키는 정수 $k$의 개수는?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "③",
+"solution": "$f(1)=k-1$, $f(3)=k+3$이므로 $f(1)f(3)=(k-1)(k+3)<0$이고, 이를 풀면 $-3<k<1$이다. 이때 $f(x)$는 연속이므로 사잇값 정리에 의해 $(1,3)$에서 실근을 갖는다. 또한 $f(x)$는 $x>1$에서 증가하므로 이 조건은 실근을 갖기 위한 필요충분조건이다. 따라서 정수 $k$는 $-2,\\,-1,\\,0$의 $3$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s3t3",
+"custom": true
+},
+{
+"id": "fill-77f3fc83ce",
+"typeId": "exam-cal-u1m0s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다항식 $x^3 + ax + b$ 가 $(x-1)^2$ 으로 나누어떨어질 때, 상수 $a, b$ 에 대하여 $a - b$ 의 값은?",
+"choices": [
+"$-7$",
+"$-5$",
+"$-3$",
+"$1$",
+"$5$"
+],
+"answer": "②",
+"solution": "$f(x) = x^3 + ax + b$ 라 하면, $f(x)$ 가 $(x-1)^2$ 으로 나누어떨어지므로 $f(1) = 0$, $f'(1) = 0$ 이다. $f'(x) = 3x^2 + a$ 이므로 $f'(1) = 3 + a = 0$ 에서 $a = -3$ 이다. $f(1) = 1 + a + b = 0$ 에서 $b = 2$ 이므로 $a - b = -5$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s3t3",
+"custom": true
+},
+{
+"id": "fill-3db684725c",
+"typeId": "exam-cal-u1m0s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "이차함수 $f(x) = x^2 + ax + b$ 가 임의의 실수 $x$ 에 대하여 다음 관계식을 만족시킨다.\n\n$2f(x) - xf'(x) = 6$\n\n이때 $f(2)$ 의 값은? (단, $a, b$ 는 상수)",
+"choices": [
+"$3$",
+"$5$",
+"$7$",
+"$9$",
+"$11$"
+],
+"answer": "③",
+"solution": "$f'(x) = 2x + a$ 이므로 $2f(x) - xf'(x) = 2x^2 + 2ax + 2b - 2x^2 - ax = ax + 2b$ 이다. 이 식이 모든 실수 $x$ 에 대하여 $6$ 과 같으므로 $a = 0$, $2b = 6$ 에서 $b = 3$ 이다. 따라서 $f(x) = x^2 + 3$ 이고 $f(2) = 7$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s3t3",
+"custom": true
+},
+{
+"id": "fill-13b8af0ecc",
+"typeId": "exam-cal-u1m0s3t3",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x) = (x^2 + 1)(2x - 3)$ 에 대하여 $f'(2)$ 의 값을 구하시오.",
+"selfGrade": true,
+"answer": "14",
+"solution": "곱의 미분법에 의해 $f'(x) = 2x(2x - 3) + (x^2 + 1) \\cdot 2$ 이다. 따라서 $f'(2) = 4 \\cdot 1 + 5 \\cdot 2 = 14$ 이다. 전개하여 $f(x) = 2x^3 - 3x^2 + 2x - 3$, $f'(x) = 6x^2 - 6x + 2$ 로 계산해도 $f'(2) = 14$ 로 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s3t3",
+"custom": true
+},
+{
+"id": "fill-c54da400eb",
+"typeId": "exam-cal-u0m1s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 함수 중 실수 전체의 집합에서 연속인 것은?",
+"choices": [
+"$\\dfrac{1}{x}$",
+"$\\dfrac{2}{x-1}$",
+"$x^2-3x+1$",
+"$\\dfrac{x}{x+2}$",
+"$\\dfrac{x-1}{x-3}$"
+],
+"answer": "③",
+"solution": "다항함수는 모든 실수에서 연속이다. ③ $x^2-3x+1$은 다항함수이므로 실수 전체에서 연속이다. 나머지 ①②④⑤는 유리함수로 각각 $x=0,\\,1,\\,-2,\\,3$에서 분모가 $0$이 되어 불연속이다. 따라서 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-fa82d141bf",
+"typeId": "exam-cal-u0m1s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체의 집합에서 연속인 함수 $f(x)$가 모든 실수 $x$에 대하여 $(x^2-1)f(x)=x^3-2x^2+ax+b$ 를 만족시킨다. 두 상수 $a$, $b$에 대하여 $f(1)$의 값은?",
+"choices": [
+"$-2$",
+"$-1$",
+"$0$",
+"$1$",
+"$2$"
+],
+"answer": "②",
+"solution": "$f(x)$가 $x=1$, $x=-1$에서 연속이려면 좌변이 각각 $0$이 되므로 우변도 $0$이어야 한다. $x=1$ 대입: $1-2+a+b=0\\Rightarrow a+b=1$, $x=-1$ 대입: $-1-2-a+b=0\\Rightarrow b-a=3$. 따라서 $a=-1,\\,b=2$이고 우변은 $x^3-2x^2-x+2=(x^2-1)(x-2)$이다. 그러므로 $f(x)=x-2$이고 $f(1)=1-2=-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m1s1t1",
+"custom": true
+},
+{
+"id": "fill-f9cac88b96",
+"typeId": "exam-cal-u1m1s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x) = -x^2 + 6x$ 에 대하여 닫힌구간 $[1, 5]$에서 롤의 정리를 만족시키는 실수 $c$의 값은?",
+"choices": [
+"$\\frac{3}{2}$",
+"$2$",
+"$\\frac{5}{2}$",
+"$3$",
+"$\\frac{7}{2}$"
+],
+"answer": "④",
+"solution": "$f(x)$는 닫힌구간 $[1, 5]$에서 연속이고 열린구간 $(1, 5)$에서 미분가능하며, $f(1) = 5$, $f(5) = -25 + 30 = 5$이므로 $f(1) = f(5)$이다. 따라서 롤의 정리에 의해 $f'(c) = 0$인 $c$가 열린구간 $(1, 5)$에 적어도 하나 존재한다. $f'(x) = -2x + 6$이므로 $-2c + 6 = 0$에서 $c = 3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m1s2t3",
+"custom": true
+},
+{
+"id": "fill-158f82f67c",
+"typeId": "exam-cal-u1m1s2t3",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x) = x^2 - x$ 에 대하여 닫힌구간 $[0, 3]$에서 평균값 정리를 만족시키는 실수 $c$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{3}{2}$",
+"solution": "$f(x)$는 닫힌구간 $[0, 3]$에서 연속이고 열린구간 $(0, 3)$에서 미분가능하므로 평균값 정리에 의해 $\\frac{f(3) - f(0)}{3 - 0} = f'(c)$인 $c$가 열린구간 $(0, 3)$에 존재한다. $f(3) = 6$, $f(0) = 0$이므로 좌변은 $\\frac{6}{3} = 2$이다. $f'(x) = 2x - 1$이므로 $2c - 1 = 2$에서 $c = \\frac{3}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m1s2t3",
+"custom": true
+},
+{
+"id": "fill-436cd424bd",
+"typeId": "exam-cal-u1m1s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x) = x^3$ 에 대하여 닫힌구간 $[0, 3]$에서 평균값 정리를 만족시키는 실수 $c$의 값은?",
+"choices": [
+"$1$",
+"$\\sqrt{2}$",
+"$\\sqrt{3}$",
+"$2$",
+"$\\sqrt{5}$"
+],
+"answer": "③",
+"solution": "$f(x)$는 닫힌구간 $[0, 3]$에서 연속이고 열린구간 $(0, 3)$에서 미분가능하므로 평균값 정리에 의해 $\\frac{f(3) - f(0)}{3 - 0} = f'(c)$인 $c$가 열린구간 $(0, 3)$에 존재한다. $\\frac{27 - 0}{3} = 9$이고 $f'(x) = 3x^2$이므로 $3c^2 = 9$, 즉 $c^2 = 3$이다. $0 < c < 3$이므로 $c = \\sqrt{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m1s2t3",
+"custom": true
 }
 ]
