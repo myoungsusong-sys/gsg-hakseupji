@@ -3915,5 +3915,47 @@
 "twinGroup": "tw-19854",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-65b0cde5f7",
+"typeId": "19702",
+"kind": "주관식",
+"diff": 4,
+"body": "순환소수 $1.\\overline{7}$의 양의 제곱근을 $A$, $0.69\\overline{4}$의 음의 제곱근을 $B$, $0.02\\overline{7}$의 양의 제곱근을 $C$라 할 때, 다음 수의 제곱근을 근호를 사용하지 않고 나타내시오.\n\n$\\displaystyle \\frac{A^2+2AB+B^2}{C^2(A^2-2AB+B^2)}$",
+"selfGrade": true,
+"answer": "$\\displaystyle \\pm\\frac{18}{13}$",
+"solution": "순환소수를 분수로 나타내면 $1.\\overline{7}=\\frac{17-1}{9}=\\frac{16}{9}$, $0.69\\overline{4}=\\frac{694-69}{900}=\\frac{25}{36}$, $0.02\\overline{7}=\\frac{27-2}{900}=\\frac{1}{36}$이다. 각 제곱근의 부호에 유의하면 $A=\\frac43$, $B=-\\frac56$, $C=\\frac16$이다. 따라서 $A+B=\\frac12$, $A-B=\\frac{13}{6}$이므로 주어진 수는 $\\frac{(A+B)^2}{C^2(A-B)^2}=\\frac{1/4}{(1/36)(169/36)}=\\frac{324}{169}=\\left(\\frac{18}{13}\\right)^2$이다. 그러므로 구하는 제곱근은 $\\pm\\frac{18}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19702",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e7414ba9a7",
+"typeId": "19702",
+"kind": "주관식",
+"diff": 4,
+"body": "$100$ 이하의 자연수 $n$에 대하여 두 수 $\\displaystyle\\frac{n}{72}$와 $\\displaystyle\\frac{130-n}{98}$의 제곱근이 모두 유리수이다. 이 조건을 만족하는 모든 $n$에 대하여 $\\displaystyle\\frac{n}{72}$의 양의 제곱근을 각각 구한 뒤, 그 합을 근호를 사용하지 않고 나타내시오.",
+"selfGrade": true,
+"answer": "$2$",
+"solution": "$\\frac{n}{72}=\\frac{2n}{12^2}$, $\\frac{130-n}{98}=\\frac{2(130-n)}{14^2}$이므로 두 수의 제곱근이 모두 유리수이려면 $2n$과 $2(130-n)$이 모두 자연수의 제곱이어야 한다. 이는 자연수의 제곱근이 유리수이면 자연수라는 성질에 따른 것이다. 또한 짝수인 제곱수는 짝수의 제곱이므로 $2n=(2a)^2$, $2(130-n)=(2b)^2$인 자연수 $a$, $b$가 존재한다. 따라서 $n=2a^2$, $130-n=2b^2$이고, 두 식을 더하면 $a^2+b^2=65$이다. $1\\le n\\le100$에서 $1\\le a\\le7$이다. $a=1,2,3,4,5,6,7$일 때 $65-a^2$의 값은 차례로 $64,61,56,49,40,29,16$이고, 이 중 제곱수는 $64,49,16$이다. 따라서 가능한 $(a,b)$는 $(1,8)$, $(4,7)$, $(7,4)$이며, 이에 대응하는 $n$은 $2,32,98$이다. 이 값들은 모두 주어진 조건을 만족한다. $\\frac{n}{72}=\\frac{a^2}{36}$의 양의 제곱근은 $\\frac a6$이므로 구하는 합은 $\\frac16+\\frac46+\\frac76=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19702",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-19ebbabdbb",
+"typeId": "19702",
+"kind": "주관식",
+"diff": 4,
+"body": "두 양수 $x$, $y$에 대하여 $A$는 $x$의 제곱근 중 하나이고, $B$는 $y$의 제곱근 중 하나이다. 다음 두 조건을 만족할 때, $\\displaystyle\\frac{x}{y}+\\frac{y}{x}-2$의 제곱근을 근호를 사용하지 않고 나타내시오.\n\n$\\displaystyle A+B=-\\frac13,\\qquad x-y=-\\frac79$",
+"selfGrade": true,
+"answer": "$\\displaystyle\\pm\\frac7{12}$",
+"solution": "$A^2=x$, $B^2=y$이므로 $(A-B)(A+B)=A^2-B^2=x-y=-\\frac79$이다. 여기에 $A+B=-\\frac13$을 대입하면 $A-B=\\left(-\\frac79\\right)\\div\\left(-\\frac13\\right)=\\frac73$이다. 두 식 $A+B=-\\frac13$, $A-B=\\frac73$을 더하면 $2A=2$이므로 $A=1$이고, $B=-\\frac13-1=-\\frac43$이다. 따라서 $x=A^2=1$, $y=B^2=\\frac{16}{9}$이다. 주어진 수는 $\\frac9{16}+\\frac{16}{9}-2=\\frac{81+256-288}{144}=\\frac{49}{144}=\\left(\\frac7{12}\\right)^2$이므로 구하는 제곱근은 $\\pm\\frac7{12}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19702",
+"custom": true,
+"rv": 1
 }
 ]

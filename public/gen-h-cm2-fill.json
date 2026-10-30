@@ -3810,5 +3810,53 @@
 "twinGroup": "tw-16554",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-a68bfb9ad9",
+"typeId": "16548",
+"kind": "주관식",
+"diff": 2,
+"body": "양수 $x$에 대하여 $\\dfrac{(x+2)(x+8)}{x}$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "18",
+"solution": "주어진 식을 전개하면 $\\dfrac{(x+2)(x+8)}{x}=x+\\dfrac{16}{x}+10$이다. 산술평균과 기하평균의 관계에 의하여 $x+\\dfrac{16}{x}\\ge 8$이고 등호는 $x=4$일 때 성립하므로, 구하는 최솟값은 $18$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16548",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d793239e03",
+"typeId": "16548",
+"kind": "객관식",
+"diff": 2,
+"body": "두 양수 $a$, $b$에 대하여 $\\dfrac{(3a+b)^2}{ab}$의 최솟값은?",
+"choices": [
+"$6$",
+"$8$",
+"$9$",
+"$12$",
+"$16$"
+],
+"answer": "④",
+"solution": "주어진 식을 전개하면 $\\dfrac{(3a+b)^2}{ab}=\\dfrac{9a}{b}+\\dfrac{b}{a}+6$이다. 두 양수 $\\dfrac{9a}{b}$, $\\dfrac{b}{a}$에 산술평균과 기하평균의 관계를 적용하면 $\\dfrac{9a}{b}+\\dfrac{b}{a}\\ge 2\\sqrt{\\dfrac{9a}{b}\\cdot\\dfrac{b}{a}}=6$이다. 따라서 주어진 식의 값은 $12$ 이상이다. 등호는 $\\dfrac{9a}{b}=\\dfrac{b}{a}$, 즉 $b=3a$일 때 성립한다. 이를 만족하는 양수 $a$, $b$가 존재하므로 최솟값은 $12$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16548",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-dc26516ca7",
+"typeId": "16548",
+"kind": "주관식",
+"diff": 2,
+"body": "두 양수 $a$, $b$가 $a+b=10$을 만족할 때, $(a+1)(b+3)$의 최댓값을 구하시오.",
+"selfGrade": true,
+"answer": "49",
+"solution": "두 양수 $a+1$, $b+3$의 합은 $14$이므로, 산술평균과 기하평균의 관계에 의하여 $(a+1)(b+3)\\le\\left(\\dfrac{14}{2}\\right)^2=49$이다. 등호는 $a+1=b+3$, 즉 $a=6$, $b=4$일 때 성립한다. 이 값들은 주어진 조건을 만족하므로 최댓값은 $49$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16548",
+"custom": true,
+"rv": 1
 }
 ]

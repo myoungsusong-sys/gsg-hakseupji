@@ -3575,5 +3575,107 @@
 "twinGroup": "tw-16250",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-518090bf02",
+"typeId": "16049",
+"kind": "객관식",
+"diff": 1,
+"body": "$x+y=3$일 때, $x^2+xy$를 간단히 한 식은?",
+"choices": [
+"$3y$",
+"$3x$",
+"$x+3$",
+"$3x^2$",
+"$9x$"
+],
+"answer": "②",
+"solution": "$x^2+xy$에서 공통인수 $x$를 묶으면 $x(x+y)$이다. 여기에 $x+y=3$을 대입하면 $3x$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16049",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-64dd2a724b",
+"typeId": "16049",
+"kind": "주관식",
+"diff": 1,
+"body": "$a-b=4$일 때, $a^2-ab$를 $a$에 관한 식으로 나타내시오.",
+"selfGrade": true,
+"answer": "$4a$",
+"solution": "$a^2-ab$를 인수분해하면 $a(a-b)$이다. 따라서 $a-b=4$를 대입하면 $4a$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16049",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5a01aefa47",
+"typeId": "16049",
+"kind": "객관식",
+"diff": 1,
+"body": "$x-y=5$일 때, $x^2-y^2$와 같은 식은?",
+"choices": [
+"$5xy$",
+"$25(x+y)$",
+"$5(x-y)$",
+"$5(x+y)$",
+"$x+y+5$"
+],
+"answer": "④",
+"solution": "합차공식으로 인수분해하면 $x^2-y^2=(x-y)(x+y)$이다. $x-y=5$이므로 주어진 식은 $5(x+y)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16049",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ff863fa714",
+"typeId": "16049",
+"kind": "주관식",
+"diff": 3,
+"body": "세 실수 $a$, $b$, $c$가 $a+b=3$, $a+c=4$를 만족한다. $(a+b+c)(ab+bc+ca)-abc=60$일 때, $b+c$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$5$",
+"solution": "$ab+bc+ca=a(b+c)+bc$이므로\n$(a+b+c)(ab+bc+ca)-abc$\n$=a(a+b+c)(b+c)+bc(a+b+c)-abc$\n$=(b+c)\\{a(a+b+c)+bc\\}$\n$=(b+c)(a^2+ab+ac+bc)$\n$=(b+c)(a+b)(a+c)$이다.\n따라서 주어진 조건을 대입하면 $3\\times4\\times(b+c)=60$이므로 $b+c=5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16049",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-433bdfd3f2",
+"typeId": "16049",
+"kind": "주관식",
+"diff": 2,
+"body": "$a-2b+c=3$, $3a-2b-c=5$일 때, $b^2-c^2$을 $a$에 관한 식으로 나타내시오.",
+"selfGrade": true,
+"answer": "$-2a+3$",
+"solution": "두 식을 더하면 $4a-4b=8$이므로 $b=a-2$이다. 둘째 식에서 첫째 식을 빼면 $2a-2c=2$이므로 $c=a-1$이다. 따라서 $b^2-c^2=(b-c)(b+c)=(-1)(2a-3)=-2a+3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16049",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b24aa445e3",
+"typeId": "16049",
+"kind": "객관식",
+"diff": 2,
+"body": "$3x-y-z=0$일 때, $3x^2-xy-z^2$과 같은 식은?",
+"choices": [
+"$z(x-z)$",
+"$z(x+z)$",
+"$x(z-x)$",
+"$y(x-z)$",
+"$3z(x-z)$"
+],
+"answer": "①",
+"solution": "주어진 조건에서 $3x-y=z$이다. 따라서 $3x^2-xy-z^2=x(3x-y)-z^2=xz-z^2$이다. 이를 인수분해하면 $z(x-z)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16049",
+"custom": true,
+"rv": 1
 }
 ]

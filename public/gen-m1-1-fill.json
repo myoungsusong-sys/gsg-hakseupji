@@ -6552,5 +6552,127 @@
 "twinGroup": "tw-15251",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-3334919841",
+"typeId": "15299",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 등식에서 사용된 계산 법칙은 무엇인가?\n\n$(-11)\\times\\frac{3}{8}=\\frac{3}{8}\\times(-11)$",
+"choices": [
+"덧셈의 교환법칙",
+"덧셈의 결합법칙",
+"곱셈의 교환법칙",
+"곱셈의 결합법칙",
+"분배법칙"
+],
+"answer": "③",
+"solution": "곱하는 두 수의 위치를 서로 바꾸었다. 따라서 사용된 법칙은 곱셈의 교환법칙이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4aec1f853c",
+"typeId": "15299",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 등식에서 사용된 곱셈의 계산 법칙을 쓰시오.\n\n$\\{(-7)\\times(+9)\\}\\times(-2)=(-7)\\times\\{(+9)\\times(-2)\\}$",
+"selfGrade": true,
+"answer": "곱셈의 결합법칙",
+"solution": "곱하는 수들의 순서는 그대로이고 먼저 계산하도록 묶은 부분만 달라졌다. 따라서 곱셈의 결합법칙이 사용되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3d6ad56212",
+"typeId": "15299",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 곱셈의 교환법칙을 사용한 등식은 어느 것인가?",
+"choices": [
+"$(-3)+(+8)=(+8)+(-3)$",
+"$\\{(-3)\\times(+8)\\}\\times(+5)=(-3)\\times\\{(+8)\\times(+5)\\}$",
+"$(-3)\\times\\{(+8)+(+5)\\}=(-3)\\times(+8)+(-3)\\times(+5)$",
+"$(-3)\\times(+8)=(+8)\\times(-3)$",
+"$\\{(-3)+(+8)\\}+(+5)=(-3)+\\{(+8)+(+5)\\}$"
+],
+"answer": "④",
+"solution": "곱셈의 교환법칙은 곱하는 두 수의 위치를 바꾸어도 곱이 같다는 법칙이다. 이에 해당하는 등식은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e4f7833d12",
+"typeId": "15299",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 계산 과정의 ㉠~㉣ 중 곱셈의 교환법칙이 사용된 곳을 모두 고른 것은? (단, 괄호 안의 곱 전체를 하나의 수로 볼 수 있다.)\n\n$\\left\\{\\left(-\\frac{3}{7}\\right)\\times\\frac{14}{5}\\right\\}\\times\\left(-\\frac{5}{6}\\right)\\times4$\n$\\overset{\\text{㉠}}{=}\\left(-\\frac{5}{6}\\right)\\times\\left\\{\\left(-\\frac{3}{7}\\right)\\times\\frac{14}{5}\\right\\}\\times4$\n$\\overset{\\text{㉡}}{=}\\left\\{\\left(-\\frac{5}{6}\\right)\\times\\left(-\\frac{3}{7}\\right)\\right\\}\\times\\frac{14}{5}\\times4$\n$\\overset{\\text{㉢}}{=}\\left\\{\\left(-\\frac{5}{6}\\right)\\times\\left(-\\frac{3}{7}\\right)\\right\\}\\times\\left(\\frac{14}{5}\\times4\\right)$\n$\\overset{\\text{㉣}}{=}\\left\\{\\left(-\\frac{3}{7}\\right)\\times\\left(-\\frac{5}{6}\\right)\\right\\}\\times\\left(\\frac{14}{5}\\times4\\right)$",
+"choices": [
+"㉠, ㉡",
+"㉠, ㉣",
+"㉡, ㉢",
+"㉡, ㉣",
+"㉢, ㉣"
+],
+"answer": "②",
+"solution": "㉠에서는 $\\left(-\\frac{3}{7}\\right)\\times\\frac{14}{5}$를 하나의 수로 보고 이 수와 $-\\frac{5}{6}$의 위치를 바꾸었으므로 곱셈의 교환법칙을 사용하였다. ㉡과 ㉢에서는 곱하는 수의 순서를 바꾸지 않고 묶음만 바꾸었으므로 곱셈의 결합법칙을 사용하였다. ㉣에서는 첫 번째 묶음 안의 두 수의 위치를 바꾸었으므로 곱셈의 교환법칙을 사용하였다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ba551e467b",
+"typeId": "15299",
+"kind": "주관식",
+"diff": 3,
+"body": "네 수 $a=-\\frac{7}{12}$, $b=\\frac{9}{5}$, $c=-\\frac{8}{3}$, $d=\\frac{5}{7}$에 대하여 다음 순서대로 식을 변형하려고 한다.\n\n$\\{(a\\times b)\\times c\\}\\times d$\n$\\longrightarrow\\{a\\times(b\\times c)\\}\\times d$\n$\\longrightarrow\\{a\\times(c\\times b)\\}\\times d$\n$\\longrightarrow\\{(a\\times c)\\times b\\}\\times d$\n$\\longrightarrow(a\\times c)\\times(b\\times d)$\n$\\longrightarrow(c\\times a)\\times(d\\times b)$\n\n식의 변형에는 다음 두 법칙만 사용할 수 있다.\n• 교환법칙 한 번은 식의 한 부분에서 $X\\times Y$를 $Y\\times X$로 바꾸는 것이다.\n• 결합법칙 한 번은 식의 한 부분에서 $(X\\times Y)\\times Z$를 $X\\times(Y\\times Z)$로 바꾸거나 그 반대로 바꾸는 것이다.\n이때 $X,Y,Z$는 문자 하나 또는 괄호로 묶인 곱 전체이다. 식을 변형하는 동안에는 수를 계산하거나 문자를 다른 식으로 바꾸지 않는다.\n\n각 화살표에서 두 법칙의 사용 횟수의 합이 최소가 되도록 변형한다. 모든 화살표에서 사용한 교환법칙의 총횟수를 $m$, 결합법칙의 총횟수를 $n$, 원래 식의 값을 $P$라 할 때, $m,n,P$의 값을 차례대로 쓰시오.",
+"selfGrade": true,
+"answer": "$3,\\ 3,\\ 2$",
+"solution": "첫째 화살표에서는 $(a\\times b)\\times c$를 $a\\times(b\\times c)$로 바꾸므로 결합법칙을 한 번 사용한다. 둘째 화살표에서는 $b,c$의 위치를 바꾸므로 교환법칙을 한 번 사용한다. 셋째와 넷째 화살표에서는 각각 묶음만 바꾸므로 결합법칙을 한 번씩 사용한다. 이 네 변형은 출발식과 도착식이 서로 다르고 각각 한 번의 적용으로 가능하므로 최소 사용 횟수는 각각 1이다.\n마지막 화살표에서는 $a\\times c$와 $b\\times d$ 안의 순서를 각각 바꾸면 되므로 교환법칙 두 번으로 가능하다. 교환법칙 한 번으로는 두 묶음 안의 순서를 동시에 바꿀 수 없고, 결합법칙은 수의 순서를 바꾸지 못하므로 한 번의 적용으로는 불가능하다. 따라서 마지막 변형에는 교환법칙이 최소 두 번 필요하다.\n그러므로 $m=1+2=3$, $n=1+1+1=3$이다.\n또한 곱셈의 교환법칙과 결합법칙을 이용하면\n$P=(a\\times c)\\times(b\\times d)=\\left\\{\\left(-\\frac{7}{12}\\right)\\times\\left(-\\frac{8}{3}\\right)\\right\\}\\times\\left(\\frac{9}{5}\\times\\frac{5}{7}\\right)=\\frac{14}{9}\\times\\frac{9}{7}=2$이다.\n따라서 $m,n,P$의 값은 차례대로 $3,3,2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4aec982326",
+"typeId": "15299",
+"kind": "주관식",
+"diff": 3,
+"body": "네 수 $a=-\\frac{9}{10}$, $b=\\frac{5}{3}$, $c=-\\frac{4}{7}$, $d=-7$에 대하여 식 $(a\\times b)\\times(c\\times d)$를 $(d\\times c)\\times(b\\times a)$로 바꾸려고 한다.\n\n식을 변형하는 동안에는 다음 규칙을 모두 지켜야 한다.\n• 교환법칙만 사용할 수 있다.\n• 교환법칙 한 번으로 식의 한 부분에 있는 $X\\times Y$를 $Y\\times X$로 바꿀 수 있다. 이때 $X,Y$는 문자 하나 또는 괄호로 묶인 곱 전체이다.\n• 수를 계산하거나 문자를 다른 식으로 바꾸거나 괄호를 생략할 수 없다.\n\n필요한 교환법칙의 최소 사용 횟수를 구하고, 원래 식의 값을 계산하여 차례대로 쓰시오.",
+"selfGrade": true,
+"answer": "$3,\\ -6$",
+"solution": "먼저 두 묶음 전체의 위치를 바꾸면 $(c\\times d)\\times(a\\times b)$가 된다. 이어서 각 묶음 안의 두 문자의 위치를 한 번씩 바꾸면 $(d\\times c)\\times(b\\times a)$가 된다. 따라서 교환법칙 세 번으로 목표 식을 만들 수 있다.\n결합법칙을 사용할 수 없으므로 처음의 두 묶음에 속한 문자는 바뀌지 않는다. 목표 식을 만들려면 두 묶음 전체의 위치, $a,b$의 위치, $c,d$의 위치를 각각 바꾸어야 한다. 한 번의 교환으로는 이 세 가지 중 하나만 바꿀 수 있으므로 최소 세 번이 필요하다.\n원래 식의 값은\n$\\left\\{\\left(-\\frac{9}{10}\\right)\\times\\frac{5}{3}\\right\\}\\times\\left\\{\\left(-\\frac{4}{7}\\right)\\times(-7)\\right\\}=\\left(-\\frac{3}{2}\\right)\\times4=-6$이다.\n따라서 답은 차례대로 $3,-6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0d82a3a9d7",
+"typeId": "15299",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>에서 옳은 설명을 모두 고른 것은?\n\n단, $a,b,c,d$는 서로 다른 수를 나타내는 문자이다. 법칙을 '한 번' 사용한다는 것은 식의 한 부분에 해당 법칙을 한 번 적용한다는 뜻이며, 괄호로 묶인 곱 전체를 하나의 수로 볼 수 있다. 식을 변형하는 동안에는 수를 직접 계산하거나 문자를 다른 식으로 바꾸거나 괄호를 생략하지 않는다.\n\n<보기>\nㄱ. $(a\\times b)\\times(c\\times d)$를 $(c\\times d)\\times(a\\times b)$로 바꾸는 데에는 교환법칙 한 번이면 충분하다.\nㄴ. $\\{(a\\times b)\\times c\\}\\times d$를 $a\\times\\{b\\times(c\\times d)\\}$로 바꾸는 데에는 결합법칙 한 번이면 충분하다.\nㄷ. $a\\times\\{(b\\times c)\\times d\\}$를 $a\\times\\{b\\times(d\\times c)\\}$로 바꾸는 데에는 결합법칙과 교환법칙을 각각 한 번씩 사용하면 된다.\nㄹ. $(a\\times b)\\times(c\\times d)$를 $(a\\times c)\\times(b\\times d)$로 바꾸는 데에는 결합법칙만 반복하여 사용해도 된다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ"
+],
+"answer": "②",
+"solution": "ㄱ. $a\\times b$와 $c\\times d$를 각각 하나의 수로 보고 두 수의 위치를 바꾸면 되므로 옳다.\nㄴ. 처음 식에서 결합법칙을 한 번 적용하면 $(a\\times b)\\times(c\\times d)$ 또는 $\\{a\\times(b\\times c)\\}\\times d$가 된다. 어느 쪽도 목표 식이 아니므로 한 번으로는 불가능하다. 한편 $\\{(a\\times b)\\times c\\}\\times d\\longrightarrow(a\\times b)\\times(c\\times d)\\longrightarrow a\\times\\{b\\times(c\\times d)\\}$와 같이 두 번이면 가능하다. 따라서 옳지 않다.\nㄷ. 결합법칙을 한 번 사용하여 $a\\times\\{b\\times(c\\times d)\\}$로 바꾼 다음, 교환법칙을 한 번 사용하여 $c\\times d$를 $d\\times c$로 바꾸면 된다. 따라서 옳다.\nㄹ. 결합법칙은 묶음만 바꾸므로 문자의 순서를 바꾸지 못한다. 목표 식에서는 $b,c$의 순서가 바뀌므로 결합법칙만으로는 만들 수 없다. 따라서 옳지 않다.\n옳은 설명은 ㄱ, ㄷ이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15299",
+"custom": true,
+"rv": 1
 }
 ]
