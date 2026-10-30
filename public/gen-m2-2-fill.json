@@ -190,5 +190,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-18758",
 "custom": true
+},
+{
+"id": "fill-9e14b0190f",
+"typeId": "18808",
+"kind": "주관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고, $AD=10$ cm, $BC=18$ cm이다. 변 $AB$, $CD$의 중점을 각각 $E$, $F$라 하고, $EF$와 대각선 $BD$, $AC$의 교점을 각각 $P$, $Q$라 할 때, $PQ$의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$4$ cm",
+"solution": "$E$, $F$가 두 변의 중점이므로 $PQ=\\dfrac{|BC-AD|}{2}$이다. 따라서 $PQ=\\dfrac{18-10}{2}=4$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-1808dd280a",
+"typeId": "18808",
+"kind": "객관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고, $AD=21$ cm, $BC=12$ cm이다. 변 $AB$ 위의 점 $E$가 $AE:EB=1:2$를 만족하고, 점 $E$를 지나 두 밑변에 평행한 직선이 $CD$, $BD$, $AC$와 만나는 점을 각각 $F$, $P$, $Q$라 할 때, $PQ$의 길이는?",
+"choices": [
+"$7$ cm",
+"$8$ cm",
+"$9$ cm",
+"$10$ cm",
+"$11$ cm"
+],
+"answer": "④",
+"solution": "$AE:EB=1:2$이므로 $PQ=\\dfrac{|2AD-BC|}{3}$이다. 따라서 $PQ=\\dfrac{|42-12|}{3}=10$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-51c378a9e0",
+"typeId": "18808",
+"kind": "객관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$, $AD=12$ cm, $BC=15$ cm이다. 두 대각선 위의 점 $P$, $Q$가 각각 $P\\in BD$, $Q\\in AC$이고 $PQ\\parallel AD$이다. $BP:PD=1:2$일 때, $PQ$의 길이는?",
+"choices": [
+"$5$ cm",
+"$6$ cm",
+"$7$ cm",
+"$8$ cm",
+"$9$ cm"
+],
+"answer": "②",
+"solution": "$PQ\\parallel AD\\parallel BC$이므로 $CQ:QA=BP:PD=1:2$이다. 따라서 $PQ=\\dfrac{|1\\times AD-2\\times BC|}{3}=\\dfrac{|12-30|}{3}=6$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-0acbef017f",
+"typeId": "18808",
+"kind": "객관식",
+"diff": 2,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$, $AD=18$ cm, $BC=30$ cm이다. 변 $AB$ 위의 점 $E$가 $AE:EB=1:2$를 만족하고, 점 $E$를 지나 두 밑변에 평행한 직선이 $CD$, $BD$, $AC$와 만나는 점을 각각 $F$, $P$, $Q$라 할 때, $PQ$의 길이는?",
+"choices": [
+"$1$ cm",
+"$2$ cm",
+"$3$ cm",
+"$4$ cm",
+"$5$ cm"
+],
+"answer": "②",
+"solution": "$AE:EB=1:2$이므로 대각선 사이의 거리는 $PQ=\\dfrac{|2AD-BC|}{3}$이다. 따라서 $PQ=\\dfrac{|36-30|}{3}=2$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-e038c5d191",
+"typeId": "18808",
+"kind": "주관식",
+"diff": 2,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$, $AD=15$ cm, $BC=25$ cm이다. $P$는 대각선 $BD$ 위의 점이고, $P$를 지나 두 밑변에 평행한 직선이 대각선 $AC$와 만나는 점을 $Q$라 하자. $BP:PD=2:3$일 때, $PQ$의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$9$ cm",
+"solution": "$PQ\\parallel AD\\parallel BC$이므로 $CQ:QA=BP:PD=2:3$이다. 따라서 $PQ=\\dfrac{|2AD-3BC|}{5}=\\dfrac{|30-75|}{5}=9$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-0dd1f1368d",
+"typeId": "18808",
+"kind": "객관식",
+"diff": 2,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD=14$ cm이다. 변 $AB$ 위의 점 $E$가 $AE:EB=2:3$을 만족하며, 점 $E$를 지나 두 밑변에 평행한 직선이 $CD$, $BD$, $AC$와 만나는 점을 각각 $F$, $P$, $Q$라 하자. 점의 순서가 $E$-$Q$-$P$-$F$이고 $PQ=2$ cm일 때, $BC$의 길이는?",
+"choices": [
+"$12$ cm",
+"$14$ cm",
+"$16$ cm",
+"$18$ cm",
+"$20$ cm"
+],
+"answer": "③",
+"solution": "점의 순서가 $E$-$Q$-$P$-$F$이므로 $PQ=\\dfrac{3AD-2BC}{5}$이다. $2=\\dfrac{42-2BC}{5}$에서 $2BC=32$이므로 $BC=16$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-c998cc4a32",
+"typeId": "18808",
+"kind": "주관식",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD+BC=50$ cm이다. 변 $AB$ 위의 점 $E$가 $AE:EB=2:3$을 만족하고, $E$를 지나 두 밑변에 평행한 직선이 $CD$, $BD$, $AC$와 만나는 점을 각각 $F$, $P$, $Q$라 하자. 점의 순서가 $E$-$Q$-$P$-$F$이고 $PQ=4$ cm이다.\n\n또한 변 $AB$ 위의 점 $G$가 $AG:GB=3:2$를 만족하고, $G$를 지나 두 밑변에 평행한 직선이 두 대각선 $BD$, $AC$와 만나는 점을 각각 $R$, $S$라 할 때, $RS$의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$6$ cm",
+"solution": "$AD=a$, $BC=b$라 하면 $a+b=50$이고, 첫 번째 평행선에서 $\\dfrac{3a-2b}{5}=4$이므로 $3a-2b=20$이다. 두 식을 풀면 $a=24$, $b=26$이다. 따라서 $RS=\\dfrac{|2a-3b|}{5}=\\dfrac{|48-78|}{5}=6$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-806df9a4fe",
+"typeId": "18808",
+"kind": "주관식",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD+BC=45$ cm이다. 변 $AB$ 위의 점 $E$가 $AE:EB=1:2$를 만족하며, 점 $E$를 지나 두 밑변에 평행한 직선이 $CD$, $BD$, $AC$와 만나는 점을 각각 $F$, $P$, $Q$라 하자. 점의 순서가 $E$-$Q$-$P$-$F$이고 $EP:PQ=4:1$일 때, $BC$의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$27$ cm",
+"solution": "$AD=a$, $BC=b$라 하면 $EP=\\dfrac{2a}{3}$이고 $PQ=\\dfrac{2a-b}{3}$이다. $EP:PQ=4:1$이므로 $2a:(2a-b)=4:1$에서 $2b=3a$를 얻는다. $a+b=45$와 함께 풀면 $a=18$, $b=27$이므로 $BC=27$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
+},
+{
+"id": "fill-e93a3744a1",
+"typeId": "18808",
+"kind": "주관식",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD+BC=54$ cm이다. 변 $AB$ 위에 $AE:EB=1:2$인 점 $E$와 $AG:GB=2:1$인 점 $G$를 잡는다. $E$, $G$를 지나 두 밑변에 평행한 직선이 $CD$와 만나는 점을 각각 $F$, $H$라 하자.\n\n$EF$가 대각선 $BD$, $AC$와 만나는 점을 각각 $P_1$, $Q_1$이라 하고, $GH$가 두 대각선과 만나는 점을 각각 $P_2$, $Q_2$라 하자. 점의 순서가 각각 $E$-$Q_1$-$P_1$-$F$, $G$-$P_2$-$Q_2$-$H$이고 $P_2Q_2=2P_1Q_1$일 때, $AD\\times BC$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$720$",
+"solution": "$AD=a$, $BC=b$라 하면 $P_1Q_1=\\dfrac{2a-b}{3}$이고 $P_2Q_2=\\dfrac{2b-a}{3}$이다. 따라서 $2b-a=2(2a-b)$이므로 $4b=5a$이다. $a+b=54$와 함께 풀면 $a=24$, $b=30$이므로 $AD\\times BC=24\\times30=720$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18808",
+"custom": true
 }
 ]

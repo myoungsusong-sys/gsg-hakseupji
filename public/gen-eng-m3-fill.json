@@ -1450,5 +1450,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m2s1t0",
 "custom": true
+},
+{
+"id": "fill-c5ce48e803",
+"typeId": "eng-m3-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글의 밑줄 친 (A)가 함축하는 의미로 가장 적절한 것은?\n\nTom and his sister were playing soccer in the living room. Suddenly, the ball hit the vase and it broke into pieces. Their mother came in and looked at the broken vase. She said, \"(A)How many times do I have to tell you?\"",
+"choices": [
+"엄마는 꽃병을 새로 사고 싶어 한다.",
+"엄마는 아이들에게 축구를 가르치고 싶어 한다.",
+"엄마는 집 안에서 공놀이하지 말라고 여러 번 말했었다.",
+"엄마는 꽃병이 깨진 것을 모르고 있다.",
+"엄마는 아이들과 함께 놀고 싶어 한다."
+],
+"answer": "③",
+"solution": "'몇 번이나 말해야 하니?'는 같은 말을 이미 여러 번 했다는 뜻이다. 아이들이 거실에서 공놀이를 하다 꽃병을 깬 상황이므로, 엄마가 전에도 집 안에서 공놀이하지 말라고 거듭 말했음을 함축한다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-7f07e3e9ea",
+"typeId": "eng-m3-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글의 밑줄 친 (A)가 함축하는 의미로 가장 적절한 것은?\n\nIt was Mina's first day at the new school. She didn't know anyone and sat alone at lunch. A girl named Sora came and sat next to her. Sora smiled and said, \"(A)Can I sit here? Let's eat together.\"",
+"choices": [
+"소라는 미나와 친구가 되고 싶어 한다.",
+"소라는 미나에게 화가 나 있다.",
+"소라는 앉을 자리가 없어서 곤란해한다.",
+"소라는 미나를 전부터 싫어했다.",
+"소라는 점심을 먹고 싶지 않다."
+],
+"answer": "①",
+"solution": "혼자 앉아 있던 미나에게 소라가 웃으며 다가와 '같이 먹자'고 말한 상황이다. 미소와 함께 함께 먹자고 제안하는 것은 미나와 가까워지고 싶은 마음을 담고 있다. 따라서 (A)는 친구가 되고 싶다는 뜻을 함축하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-5284a1762b",
+"typeId": "eng-m3-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글의 밑줄 친 (A)가 함축하는 의미로 가장 적절한 것은?\n\nJake studied very hard for the math test all week. When he got his paper back, it had a big red 100 on it. He jumped up and shouted, \"(A)Yes! All my hard work paid off!\"",
+"choices": [
+"제이크는 시험을 망쳐서 속상하다.",
+"제이크는 열심히 공부한 보람이 있어 기쁘다.",
+"제이크는 수학을 싫어한다.",
+"제이크는 시험이 너무 어려웠다고 생각한다.",
+"제이크는 더 이상 공부하고 싶지 않다."
+],
+"answer": "②",
+"solution": "일주일 내내 열심히 공부한 제이크가 100점을 받고 뛰어오르며 외친 말이다. 'paid off'는 노력이 결실을 맺었다는 뜻이므로, (A)는 공부한 보람이 있어 기뻐하는 마음을 함축한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m3s1t1",
+"custom": true
 }
 ]

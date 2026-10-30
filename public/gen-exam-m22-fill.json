@@ -6408,5 +6408,401 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-557eead499",
+"typeId": "exam-m22-u0m1s2t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 삼각형의 외심과 내심에 대한 설명으로 옳지 않은 것은?",
+"choices": [
+"삼각형의 외심은 세 변의 수직이등분선의 교점이다.",
+"삼각형의 내심은 세 내각의 이등분선의 교점이다.",
+"삼각형의 외심에서 세 꼭짓점에 이르는 거리는 모두 같다.",
+"삼각형의 내심에서 세 변에 이르는 거리는 모두 같다.",
+"둔각삼각형의 외심은 삼각형의 내부에 있다."
+],
+"answer": "⑤",
+"solution": "외심은 세 변의 수직이등분선의 교점이고, 외심에서 세 꼭짓점까지의 거리는 모두 같습니다. 내심은 세 내각의 이등분선의 교점이고, 내심에서 세 변까지의 거리는 모두 같습니다. 둔각삼각형의 외심은 삼각형의 외부에 있으므로 ⑤가 옳지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t0",
+"custom": true
+},
+{
+"id": "fill-e43adb41c5",
+"typeId": "exam-m22-u0m1s2t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 <보기> 중 삼각형의 외심과 내심에 대한 설명으로 옳은 것을 모두 고른 것은?\n\n<보기>\nㄱ. 직각삼각형의 외심은 빗변의 중점이다.\nㄴ. 정삼각형의 외심과 내심은 일치한다.\nㄷ. 모든 삼각형의 내심은 삼각형의 내부에 있다.\nㄹ. 이등변삼각형의 외심과 내심은 항상 일치한다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "④",
+"solution": "직각삼각형의 외심은 빗변의 중점이므로 ㄱ은 옳습니다. 정삼각형은 외심과 내심이 일치하고, 내심은 어떤 삼각형에서든 항상 내부에 있으므로 ㄴ, ㄷ도 옳습니다. 이등변삼각형의 외심과 내심은 꼭지각의 이등분선 위에 있지만 정삼각형이 아니면 일치하지 않으므로 ㄹ은 옳지 않습니다. 따라서 옳은 것은 ㄱ, ㄴ, ㄷ입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t0",
+"custom": true
+},
+{
+"id": "fill-c1cd35f7ec",
+"typeId": "exam-m22-u0m1s2t0",
+"kind": "객관식",
+"diff": 1,
+"body": "점 $O$와 점 $I$는 각각 $\\triangle ABC$의 외심과 내심이다. 다음 중 항상 옳은 것은?",
+"choices": [
+"$\\overline{OA}=\\overline{OB}=\\overline{OC}$",
+"$\\overline{IA}=\\overline{IB}=\\overline{IC}$",
+"$\\angle OAB=\\angle OAC$",
+"점 $I$는 $\\triangle ABC$의 외접원의 중심이다.",
+"점 $O$에서 세 변에 이르는 거리는 모두 같다."
+],
+"answer": "①",
+"solution": "외심 $O$는 외접원의 중심이므로 세 꼭짓점까지의 거리가 같아 $\\overline{OA}=\\overline{OB}=\\overline{OC}$입니다. 세 변까지의 거리가 같은 점은 내심 $I$이고, 세 꼭짓점까지의 거리가 같은 점은 외심 $O$이므로 ②, ⑤는 옳지 않습니다. 각을 이등분하는 것은 $\\overline{IA}$이므로 ③은 항상 성립하지 않고, 점 $I$는 내접원의 중심이므로 ④도 옳지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t0",
+"custom": true
+},
+{
+"id": "fill-acffa68b58",
+"typeId": "exam-m22-u0m0s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle XOY$의 이등분선 위의 한 점 $P$에서 두 변 $OX$, $OY$에 내린 수선의 발을 각각 $A$, $B$라 하자. $\\overline{OP}=10\\,\\text{cm}$, $\\overline{PA}=6\\,\\text{cm}$, $\\overline{OA}=8\\,\\text{cm}$일 때, $\\overline{OB}$의 길이는?",
+"choices": [
+"$6\\,\\text{cm}$",
+"$7\\,\\text{cm}$",
+"$8\\,\\text{cm}$",
+"$9\\,\\text{cm}$",
+"$10\\,\\text{cm}$"
+],
+"answer": "③",
+"solution": "$\\triangle POA$와 $\\triangle POB$에서 $\\angle PAO=\\angle PBO=90^\\circ$이고, $\\overline{OP}$는 공통이며, $\\angle POA=\\angle POB$입니다. 따라서 두 삼각형은 RHA 합동입니다. 그러므로 $\\overline{OB}=\\overline{OA}=8\\,\\text{cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-c7b8f237b1",
+"typeId": "exam-m22-u0m0s3t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\angle C=90^\\circ$인 직각삼각형 $ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하자. $\\overline{CD}=3\\,\\text{cm}$, $\\overline{AB}=10\\,\\text{cm}$일 때, $\\triangle ABD$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$15\\,\\text{cm}^2$",
+"solution": "점 $D$에서 $\\overline{AB}$에 내린 수선의 발을 $E$라 합니다. 점 $D$는 $\\angle A$의 이등분선 위에 있으므로 두 변 $AB$, $AC$까지의 거리가 같습니다. 따라서 $\\overline{DE}=\\overline{DC}=3\\,\\text{cm}$입니다. 그러므로 $\\triangle ABD=\\frac{1}{2}\\times 10\\times 3=15\\,(\\text{cm}^2)$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-87eb37a272",
+"typeId": "exam-m22-u0m0s3t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\angle XOY=70^\\circ$이다. $\\angle XOY$의 내부의 한 점 $P$에서 두 변 $OX$, $OY$에 내린 수선의 발을 각각 $A$, $B$라 하자. $\\overline{PA}=\\overline{PB}=6\\,\\text{cm}$일 때, $\\angle POA$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$35^\\circ$",
+"solution": "$\\triangle POA$와 $\\triangle POB$에서 $\\angle PAO=\\angle PBO=90^\\circ$이고, $\\overline{OP}$는 공통이며, $\\overline{PA}=\\overline{PB}$입니다. 따라서 두 삼각형은 RHS 합동입니다. 그러므로 $\\overline{OP}$는 $\\angle XOY$의 이등분선이고, $\\angle POA=\\frac{1}{2}\\times 70^\\circ=35^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-5215e7544b",
+"typeId": "exam-m22-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle B=50^\\circ$, $\\angle C=50^\\circ$이고 $\\overline{AB}=7\\,\\text{cm}$일 때, $\\overline{AC}$의 길이를 구하시오.\n\n(단, 단위는 cm 로 쓰시오.)",
+"selfGrade": true,
+"answer": "7 cm",
+"solution": "$\\angle B=\\angle C$이므로 $\\triangle ABC$는 두 내각의 크기가 같은 이등변삼각형입니다. 크기가 같은 두 각의 대변인 $\\overline{AC}$와 $\\overline{AB}$의 길이가 같습니다. 따라서 $\\overline{AC}=\\overline{AB}=7\\,\\text{cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-dcb191e161",
+"typeId": "exam-m22-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 두 내각의 크기가 다음과 같을 때, $\\triangle ABC$가 이등변삼각형인 것은?",
+"choices": [
+"$\\angle A=40^\\circ,\\ \\angle B=60^\\circ$",
+"$\\angle A=50^\\circ,\\ \\angle B=80^\\circ$",
+"$\\angle A=30^\\circ,\\ \\angle B=70^\\circ$",
+"$\\angle A=90^\\circ,\\ \\angle B=50^\\circ$",
+"$\\angle A=100^\\circ,\\ \\angle B=30^\\circ$"
+],
+"answer": "②",
+"solution": "나머지 한 각 $\\angle C$를 구해 보면 ① $80^\\circ$, ② $50^\\circ$, ③ $80^\\circ$, ④ $40^\\circ$, ⑤ $50^\\circ$입니다. 두 내각의 크기가 같은 것은 ②뿐입니다($\\angle A=\\angle C=50^\\circ$). 따라서 이등변삼각형인 것은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-a637a325af",
+"typeId": "exam-m22-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $\\angle A=70^\\circ$이고, 꼭짓점 $C$에서의 외각의 크기가 $140^\\circ$이면 $\\overline{BC}=\\overline{AC}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "삼각형의 한 외각의 크기는 이웃하지 않는 두 내각의 크기의 합과 같으므로 $\\angle A+\\angle B=140^\\circ$입니다. 따라서 $\\angle B=140^\\circ-70^\\circ=70^\\circ$이므로 $\\angle A=\\angle B$입니다. 두 각의 대변의 길이가 같으므로 $\\overline{BC}=\\overline{AC}$이고, 이 문장은 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-b2b8c564ca",
+"typeId": "exam-m22-u0m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\overline{AB}=\\overline{AC}$이고 $\\angle A=36^\\circ$인 이등변삼각형 $ABC$가 있다. $\\angle B$의 이등분선이 $\\overline{AC}$와 만나는 점을 $D$라 하고, $\\overline{BC}=5\\,\\text{cm}$일 때, 다음 중 옳지 않은 것은?",
+"choices": [
+"$\\angle DBC=36^\\circ$",
+"$\\triangle ABD$는 이등변삼각형이다.",
+"$\\overline{BD}=5\\,\\text{cm}$",
+"$\\overline{AD}=5\\,\\text{cm}$",
+"$\\angle ADB=72^\\circ$"
+],
+"answer": "⑤",
+"solution": "$\\angle B=\\angle C=(180^\\circ-36^\\circ)\\div2=72^\\circ$이므로 $\\angle ABD=\\angle DBC=36^\\circ$입니다(①). $\\angle A=\\angle ABD=36^\\circ$이므로 $\\triangle ABD$는 $\\overline{DA}=\\overline{DB}$인 이등변삼각형입니다(②). $\\triangle DBC$에서 $\\angle BDC=180^\\circ-36^\\circ-72^\\circ=72^\\circ=\\angle C$이므로 $\\overline{BD}=\\overline{BC}=5\\,\\text{cm}$이고, 따라서 $\\overline{AD}=5\\,\\text{cm}$입니다(③, ④). 그런데 $\\angle ADB=180^\\circ-72^\\circ=108^\\circ$이므로 옳지 않은 것은 ⑤입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-5e16907034",
+"typeId": "exam-m22-u0m1s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 삼각형의 외심과 내심에 대한 설명으로 옳은 것은?",
+"choices": [
+"삼각형의 외심에서 세 변에 이르는 거리는 모두 같다.",
+"삼각형의 내심은 세 변의 수직이등분선의 교점이다.",
+"삼각형의 외심에서 세 꼭짓점에 이르는 거리는 모두 같다.",
+"둔각삼각형의 외심은 항상 삼각형의 내부에 있다.",
+"삼각형의 내심은 세 꼭짓점을 지나는 원의 중심이다."
+],
+"answer": "③",
+"solution": "외심은 세 변의 수직이등분선의 교점으로, 세 꼭짓점에 이르는 거리가 모두 같으므로 ③이 옳다. 세 변에 이르는 거리가 같은 것은 내심(①은 틀림), 세 변의 수직이등분선의 교점은 외심이므로 ②도 틀리다. 둔각삼각형의 외심은 삼각형의 외부에 있어 ④도 틀리고, 세 꼭짓점을 지나는 원(외접원)의 중심은 외심이므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t1",
+"custom": true
+},
+{
+"id": "fill-5a6549990e",
+"typeId": "exam-m22-u0m1s2t1",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 설명에서 □에 알맞은 말을 쓰시오.\n\n삼각형의 외심은 세 변의 □의 교점이다.",
+"selfGrade": true,
+"answer": "수직이등분선",
+"solution": "삼각형의 외심은 세 변의 수직이등분선이 만나는 점이며, 이 점에서 세 꼭짓점에 이르는 거리가 모두 같다. 따라서 □에 알맞은 말은 수직이등분선이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t1",
+"custom": true
+},
+{
+"id": "fill-48a5348ef8",
+"typeId": "exam-m22-u0m1s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 삼각형의 외심과 내심에 대한 설명으로 옳지 않은 것은?",
+"choices": [
+"삼각형의 내심은 항상 삼각형의 내부에 있다.",
+"삼각형의 외심은 세 변의 수직이등분선의 교점이다.",
+"직각삼각형의 외심은 빗변의 중점에 있다.",
+"삼각형의 내심은 세 변의 수직이등분선의 교점이다.",
+"삼각형의 외심에서 세 꼭짓점에 이르는 거리는 모두 같다."
+],
+"answer": "④",
+"solution": "내심은 세 내각의 이등분선의 교점이므로, 세 변의 수직이등분선의 교점이라고 한 ④가 옳지 않다. 수직이등분선의 교점은 외심이다. 내심은 항상 삼각형 내부에 있고(①), 직각삼각형의 외심은 빗변의 중점(③), 외심에서 세 꼭짓점까지의 거리는 같으므로(⑤) 나머지는 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t1",
+"custom": true
+},
+{
+"id": "fill-f682816c25",
+"typeId": "exam-m22-u2m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "닮은 두 평면도형에서 대응하는 각의 크기는 서로 같다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "한 도형을 일정한 비율로 확대 또는 축소하면 각의 크기는 변하지 않는다. 따라서 닮은 두 도형에서 대응하는 각의 크기는 항상 서로 같다. 그러므로 옳은 설명이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t3",
+"custom": true
+},
+{
+"id": "fill-4d990abe90",
+"typeId": "exam-m22-u2m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "모양과 크기가 모두 같아 서로 합동인 두 도형의 닮음비는 ( ) 이다.\n\n( )에 들어갈 비를 가장 간단한 자연수의 비로 입력하세요.",
+"selfGrade": true,
+"answer": "1:1",
+"solution": "서로 합동인 두 도형은 대응하는 변의 길이가 모두 같으므로, 대응변의 길이의 비인 닮음비는 $1:1$ 이다. 즉 합동은 닮음비가 $1:1$ 인 특별한 닮음이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t3",
+"custom": true
+},
+{
+"id": "fill-914300e473",
+"typeId": "exam-m22-u2m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "반지름의 길이가 서로 다른 두 원은 항상 서로 닮은 도형이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "한 원을 반지름의 비만큼 확대하거나 축소하면 다른 원과 완전히 포개어진다. 따라서 크기에 관계없이 두 원은 언제나 서로 닮은 도형이다. 그러므로 옳은 설명이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t3",
+"custom": true
+},
+{
+"id": "fill-aea091d923",
+"typeId": "exam-m22-u1m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "사각형 $\\mathrm{ABCD}$에서 두 대각선의 교점을 $\\mathrm{O}$라 할 때, 다음 중 사각형 $\\mathrm{ABCD}$가 평행사변형이 되는 것은?",
+"choices": [
+"$\\overline{\\mathrm{AB}}=4\\,\\mathrm{cm}$, $\\overline{\\mathrm{BC}}=4\\,\\mathrm{cm}$, $\\overline{\\mathrm{CD}}=5\\,\\mathrm{cm}$, $\\overline{\\mathrm{DA}}=5\\,\\mathrm{cm}$",
+"$\\angle \\mathrm{A}=110^\\circ$, $\\angle \\mathrm{B}=70^\\circ$, $\\angle \\mathrm{C}=110^\\circ$",
+"$\\overline{\\mathrm{AB}}\\parallel\\overline{\\mathrm{DC}}$, $\\overline{\\mathrm{AD}}=\\overline{\\mathrm{BC}}=6\\,\\mathrm{cm}$",
+"$\\overline{\\mathrm{OA}}=\\overline{\\mathrm{OB}}=3\\,\\mathrm{cm}$, $\\overline{\\mathrm{OC}}=\\overline{\\mathrm{OD}}=5\\,\\mathrm{cm}$",
+"$\\overline{\\mathrm{AB}}=\\overline{\\mathrm{DC}}=7\\,\\mathrm{cm}$, $\\overline{\\mathrm{AD}}\\parallel\\overline{\\mathrm{BC}}$"
+],
+"answer": "②",
+"solution": "②에서 사각형의 내각의 합은 $360^\\circ$이므로 $\\angle \\mathrm{D}=360^\\circ-(110^\\circ+70^\\circ+110^\\circ)=70^\\circ$입니다. 그러면 $\\angle \\mathrm{A}=\\angle \\mathrm{C}$, $\\angle \\mathrm{B}=\\angle \\mathrm{D}$로 두 쌍의 대각의 크기가 각각 같으므로 평행사변형입니다. ①은 이웃한 변끼리 길이가 같고, ③과 ⑤는 한 쌍의 대변은 평행하지만 다른 한 쌍의 대변은 길이만 같으며, ④는 두 대각선이 서로를 이등분하지 않으므로 평행사변형이 되지 않을 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s1t3",
+"custom": true
+},
+{
+"id": "fill-0ab30df2e0",
+"typeId": "exam-m22-u1m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "사각형 $\\mathrm{ABCD}$에서 두 대각선의 교점을 $\\mathrm{O}$라 하자. $\\overline{\\mathrm{OA}}=2x+1$, $\\overline{\\mathrm{OC}}=x+4$, $\\overline{\\mathrm{OB}}=3y-2$, $\\overline{\\mathrm{OD}}=y+6$일 때, 사각형 $\\mathrm{ABCD}$가 평행사변형이 되도록 하는 $x+y$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "7",
+"solution": "두 대각선이 서로를 이등분하면 평행사변형이 되므로 $\\overline{\\mathrm{OA}}=\\overline{\\mathrm{OC}}$, $\\overline{\\mathrm{OB}}=\\overline{\\mathrm{OD}}$이어야 합니다. $2x+1=x+4$에서 $x=3$이고, $3y-2=y+6$에서 $y=4$입니다. 따라서 $x+y=7$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s1t3",
+"custom": true
+},
+{
+"id": "fill-018f7530c3",
+"typeId": "exam-m22-u1m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "사각형 $\\mathrm{ABCD}$에서 $\\overline{\\mathrm{AB}}\\parallel\\overline{\\mathrm{DC}}$이고 $\\overline{\\mathrm{AB}}=6\\,\\mathrm{cm}$이다. 다음 중 어느 조건을 더하면 사각형 $\\mathrm{ABCD}$가 항상 평행사변형이 되는가?",
+"choices": [
+"$\\overline{\\mathrm{AD}}=6\\,\\mathrm{cm}$",
+"$\\overline{\\mathrm{DC}}=6\\,\\mathrm{cm}$",
+"$\\angle \\mathrm{A}=\\angle \\mathrm{B}$",
+"$\\overline{\\mathrm{BC}}=6\\,\\mathrm{cm}$",
+"$\\overline{\\mathrm{AC}}=\\overline{\\mathrm{BD}}$"
+],
+"answer": "②",
+"solution": "한 쌍의 대변이 평행하고 그 길이가 같으면 평행사변형이 됩니다. $\\overline{\\mathrm{AB}}\\parallel\\overline{\\mathrm{DC}}$이므로 $\\overline{\\mathrm{DC}}=\\overline{\\mathrm{AB}}=6\\,\\mathrm{cm}$를 더하면 평행사변형이 됩니다. ①과 ④는 이웃한 변의 길이에 대한 조건이고, ③과 ⑤는 등변사다리꼴에서도 성립하므로 항상 평행사변형이 된다고 할 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s1t3",
+"custom": true
+},
+{
+"id": "fill-12bccedd1f",
+"typeId": "exam-m22-u0m1s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 삼각형의 외심과 내심에 대한 설명으로 옳은 것은?",
+"choices": [
+"삼각형의 내심은 세 변의 수직이등분선의 교점이다.",
+"삼각형의 외심에서 세 변에 이르는 거리는 모두 같다.",
+"삼각형의 외심은 항상 삼각형의 내부에 있다.",
+"삼각형의 내심은 세 내각의 이등분선의 교점이다.",
+"둔각삼각형의 내심은 삼각형의 외부에 있다."
+],
+"answer": "④",
+"solution": "내심은 세 내각의 이등분선의 교점이므로 ④가 옳다. ①은 외심의 성질이고, ②는 외심이 세 꼭짓점에 이르는 거리가 같으므로 틀렸다. 외심은 둔각삼각형에서는 외부에 있으므로 ③도 틀리고, 내심은 어떤 삼각형에서도 항상 내부에 있으므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t3",
+"custom": true
+},
+{
+"id": "fill-df32349c7f",
+"typeId": "exam-m22-u0m1s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 빗변 $\\overline{AB} = 18\\mathrm{cm}$이다. 점 $O$가 $\\triangle ABC$의 외심일 때, 외접원의 반지름의 길이는?",
+"choices": [
+"$8\\mathrm{cm}$",
+"$9\\mathrm{cm}$",
+"$10\\mathrm{cm}$",
+"$12\\mathrm{cm}$",
+"$18\\mathrm{cm}$"
+],
+"answer": "②",
+"solution": "직각삼각형의 외심은 빗변의 중점에 있고, 외접원의 반지름은 빗변의 길이의 절반과 같다. 따라서 $R = \\frac{1}{2}\\times 18 = 9(\\mathrm{cm})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t3",
+"custom": true
+},
+{
+"id": "fill-31bc7542ef",
+"typeId": "exam-m22-u0m1s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "점 $I$가 $\\triangle ABC$의 내심이고 $\\angle A = 50^\\circ$일 때, $\\angle BIC$의 크기는?",
+"choices": [
+"$110^\\circ$",
+"$115^\\circ$",
+"$120^\\circ$",
+"$125^\\circ$",
+"$130^\\circ$"
+],
+"answer": "②",
+"solution": "내심에 대하여 $\\angle BIC = 90^\\circ + \\frac{1}{2}\\angle A$가 성립한다. 따라서 $\\angle BIC = 90^\\circ + \\frac{1}{2}\\times 50^\\circ = 90^\\circ + 25^\\circ = 115^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t3",
+"custom": true
+},
+{
+"id": "fill-e83de49fc6",
+"typeId": "exam-m22-u0m1s2t3",
+"kind": "객관식",
+"diff": 2,
+"body": "점 $O$와 점 $I$는 각각 $\\triangle ABC$의 외심과 내심이다. $\\angle BOC = 156^\\circ$일 때, $\\angle BIC$의 크기는?",
+"choices": [
+"$126^\\circ$",
+"$129^\\circ$",
+"$132^\\circ$",
+"$135^\\circ$",
+"$138^\\circ$"
+],
+"answer": "②",
+"solution": "외심에 대하여 $\\angle BOC = 2\\angle A$이므로 $\\angle A = \\frac{156^\\circ}{2} = 78^\\circ$이다. 내심에 대하여 $\\angle BIC = 90^\\circ + \\frac{1}{2}\\angle A = 90^\\circ + 39^\\circ = 129^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t3",
+"custom": true
+},
+{
+"id": "fill-704c9ad248",
+"typeId": "exam-m22-u0m1s2t3",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\triangle ABC$에서 세 내각의 크기가 $\\angle A = 40^\\circ$, $\\angle B = 76^\\circ$, $\\angle C = 64^\\circ$이다. 점 $O$와 점 $I$가 각각 $\\triangle ABC$의 외심과 내심일 때, $\\angle OBI$의 크기를 구하여라. (단, 세 내각이 모두 예각이므로 외심 $O$는 삼각형의 내부에 있다.)",
+"selfGrade": true,
+"answer": "$12^\\circ$",
+"solution": "외심에서 $\\triangle OBC$는 $\\overline{OB}=\\overline{OC}$인 이등변삼각형이고 $\\angle BOC = 2\\angle A = 80^\\circ$이므로 $\\angle OBC = \\frac{180^\\circ - 80^\\circ}{2} = 50^\\circ$이다. 또 내심 $I$는 $\\angle B$의 이등분선 위에 있으므로 $\\angle IBC = \\frac{1}{2}\\angle B = 38^\\circ$이다. 두 반직선 $BO$, $BI$는 모두 $\\angle B$의 내부에 있고 $\\angle OBC > \\angle IBC$이므로 $\\angle OBI = \\angle OBC - \\angle IBC = 50^\\circ - 38^\\circ = 12^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t3",
+"custom": true
 }
 ]

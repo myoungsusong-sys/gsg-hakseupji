@@ -2214,5 +2214,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-66d494e609",
+"typeId": "eng-m1-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nIt is my birthday today. My friends come to my house. There is a big cake on the table. We sing a song together and dance. Everyone is smiling. \"Happy birthday!\" they say. I am so happy.",
+"choices": [
+"sad",
+"scary",
+"cheerful",
+"tired",
+"boring"
+],
+"answer": "③",
+"solution": "친구들이 생일을 축하해 주고 모두 웃으며 노래하고 춤추는 즐겁고 밝은 장면입니다. 'smiling', 'Happy birthday', 'so happy' 같은 표현에서 기쁘고 명랑한 분위기를 알 수 있습니다. 따라서 cheerful(명랑한)이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-0596b5b2de",
+"typeId": "eng-m1-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nIt is late at night. I am alone at home. Suddenly, I hear a strange sound. The lights go out. It is very dark. My heart beats fast. I am afraid.",
+"choices": [
+"happy",
+"scary",
+"funny",
+"peaceful",
+"exciting"
+],
+"answer": "②",
+"solution": "밤에 혼자 집에 있는데 이상한 소리가 나고 불이 꺼져 어두워지는 상황입니다. 'strange sound', 'dark', 'heart beats fast', 'afraid' 같은 표현에서 무섭고 두려운 분위기임을 알 수 있습니다. 따라서 scary(무서운)가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-a425f69c15",
+"typeId": "eng-m1-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nIt is Sunday morning. The sky is blue. Birds are singing in the garden. My family is having breakfast together. We talk and smile. Everything is quiet and warm.",
+"choices": [
+"angry",
+"sad",
+"scary",
+"peaceful",
+"busy"
+],
+"answer": "④",
+"solution": "파란 하늘, 새들의 노래, 가족이 함께 조용히 아침을 먹는 장면입니다. 'quiet', 'warm', 'birds singing' 같은 표현에서 평화롭고 따뜻한 분위기를 알 수 있습니다. 따라서 peaceful(평화로운)이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s5t1",
+"custom": true
 }
 ]

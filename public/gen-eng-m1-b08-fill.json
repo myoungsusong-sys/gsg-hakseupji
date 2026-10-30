@@ -3699,5 +3699,197 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b08-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-c945b9a1e5",
+"typeId": "eng-m1-b08-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말 뜻에 알맞은 영어 단어(표현)는?\n\n**끓이다**",
+"choices": [
+"fry",
+"add",
+"boil",
+"share",
+"mix"
+],
+"answer": "③",
+"solution": "'끓이다'는 물 등을 뜨겁게 데워 끓이는 것을 뜻하는 boil이다. fry는 '튀기다/기름에 굽다', add는 '더하다', share는 '나누다/함께 쓰다', mix는 '섞다'이므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-976109170a",
+"typeId": "eng-m1-b08-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영어 단어(표현)의 우리말 뜻으로 알맞은 것은?\n\n**hungry**",
+"choices": [
+"매운",
+"배고픈",
+"맛있는",
+"소금",
+"다시"
+],
+"answer": "②",
+"solution": "hungry는 '배고픈'이라는 뜻의 형용사이다. '매운'은 spicy/hot, '맛있는'은 delicious/tasty, '소금'은 salt, '다시'는 again이므로 답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-86edc6422a",
+"typeId": "eng-m1-b08-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nto cook food in hot oil",
+"choices": [
+"stir",
+"boil",
+"fry",
+"add",
+"share"
+],
+"answer": "③",
+"solution": "'뜨거운 기름에 음식을 요리하다'는 fry(튀기다)의 설명이다. stir는 '젓다', boil은 '끓이다', add는 '더하다', share는 '나누다'이므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c25c04e0d7",
+"typeId": "eng-m1-b08-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 짝지어진 단어의 관계가 <보기>와 같은 것은?\n\n<보기> delicious - tasty",
+"choices": [
+"turn on - turn off",
+"cook - chef",
+"boil - fry",
+"hot - spicy",
+"many - stir"
+],
+"answer": "④",
+"solution": "<보기>의 delicious - tasty는 '맛있는'이라는 비슷한 뜻을 가진 유의어 관계이다. ①은 반대말, ②는 '요리하다-요리사'(행위-사람), ③은 서로 다른 요리 방법, ⑤는 관계없는 단어이다. '매운'이라는 비슷한 뜻을 가진 ④ hot - spicy가 답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-50f2a3f808",
+"typeId": "eng-m1-b08-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기1>의 영영풀이에 해당하는 단어를 <보기2>의 빈칸에 알맞게 연결한 것은?\n\n<보기1>\nA: to cook something in very hot water\nB: a special power to do things that cannot really happen\nC: to give a part of something to others\nD: powder made from wheat, used to make bread or noodles\n<보기2>\nⓐ Dad will ______ the noodles for five minutes.\nⓑ Let's ______ this pizza with everyone.\nⓒ In the story, the fairy uses ______ to help people.\nⓓ You need some ______ to bake the cookies.\n\nA - B - C - D",
+"choices": [
+"ⓐ - ⓑ - ⓒ - ⓓ",
+"ⓐ - ⓒ - ⓑ - ⓓ",
+"ⓑ - ⓐ - ⓓ - ⓒ",
+"ⓒ - ⓐ - ⓓ - ⓑ",
+"ⓓ - ⓒ - ⓑ - ⓐ"
+],
+"answer": "②",
+"solution": "A(끓이다 boil)는 면을 끓이는 ⓐ, B(마법 magic)는 요정이 사용하는 ⓒ, C(나누다 share)는 피자를 함께 나누는 ⓑ, D(밀가루 flour)는 쿠키를 굽는 데 필요한 ⓓ에 알맞다. 따라서 A-B-C-D 순서는 ⓐ-ⓒ-ⓑ-ⓓ이므로 답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-65aa3c7e98",
+"typeId": "eng-m1-b08-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "W: Welcome! Would you like to try our curry?\nB: Yes, ⓐcan I have one chicken curry?\nW: Sure. ⓑWould you like some rice, too?\nB: ⓒYes, please.\nW: ⓓHere you are.\nB: ⓔThank you. It smells great!\n\n위 대화의 밑줄 친 ⓐ~ⓔ와 바꾸어 쓸 수 없는 것은?",
+"choices": [
+"ⓐ: can I get one chicken curry",
+"ⓑ: Do you want some rice, too",
+"ⓒ: No, thanks",
+"ⓓ: Here you go",
+"ⓔ: Thanks"
+],
+"answer": "③",
+"solution": "ⓒ Yes, please는 밥을 달라는 긍정의 답인데, No, thanks로 바꾸면 거절이 되어 뜻이 정반대로 바뀐다. 나머지 ①②④⑤는 같은 뜻의 자연스러운 표현이므로 바꾸어 쓸 수 있다. 따라서 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-cb472ae0e4",
+"typeId": "eng-m1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 동사를 알맞은 형태로 바꿔 쓰시오.\n\nYejun (play) soccer with his friends after school.",
+"selfGrade": true,
+"answer": "plays",
+"solution": "주어 Yejun은 3인칭 단수입니다. 현재시제에서 주어가 3인칭 단수이면 일반동사 뒤에 -s를 붙입니다. 따라서 play는 plays로 바꿔 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-280b104015",
+"typeId": "eng-m1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 전체 문장을 바르게 고쳐 쓰시오.\n\nI loves desserts.",
+"selfGrade": true,
+"answer": "I love desserts.",
+"solution": "주어 I는 1인칭입니다. 현재시제에서 주어가 3인칭 단수가 아니면 일반동사에 -s를 붙이지 않고 동사원형을 씁니다. 따라서 loves를 love로 고쳐 I love desserts.로 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a0ca0e1839",
+"typeId": "eng-m1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 괄호 안에 주어진 동사를 알맞은 형태로 바꿔 쓰시오.\n\nJian (A)(have) two good friends at her new school. They are Yejun and Mia. They (B)(follow) each other on social media.\n\n(A) ________  (B) ________",
+"selfGrade": true,
+"answer": "(A) has (B) follow",
+"solution": "(A)의 주어 Jian은 3인칭 단수이므로 have는 has로 바꿔야 합니다. have의 3인칭 단수형은 haves가 아니라 has라는 점에 주의합니다. (B)의 주어 They는 복수이므로 동사원형 follow를 그대로 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e9de80b1fb",
+"typeId": "eng-m1-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nI eated pizza for lunch yesterday.\n(밑줄: eated)",
+"selfGrade": true,
+"answer": "ate",
+"solution": "eat의 과거형은 불규칙 변화로 ate입니다. yesterday가 있으므로 과거 시제가 맞습니다. eated는 틀린 형태이므로 ate로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7a1ded75cd",
+"typeId": "eng-m1-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nTom will plays soccer after school.\n(밑줄: plays)",
+"selfGrade": true,
+"answer": "play",
+"solution": "조동사 will 뒤에는 동사원형이 와야 합니다. 주어가 Tom이라도 will 다음에는 plays가 아니라 play를 써야 합니다. 따라서 plays를 play로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-71c8e69ce6",
+"typeId": "eng-m1-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nLisa not will come to the party.\n(밑줄: not will)",
+"selfGrade": true,
+"answer": "will not",
+"solution": "will의 부정은 「will + not」 순서로 씁니다. not will은 어순이 틀렸으므로 will not(= won't)으로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u3m2s0t0",
+"custom": true
 }
 ]

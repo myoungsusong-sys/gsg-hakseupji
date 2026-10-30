@@ -1815,5 +1815,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b04-u3m3s0t0",
 "custom": true
+},
+{
+"id": "fill-d11f59f088",
+"typeId": "eng-m2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nThe warm soup made me (comfortable / comfortably).",
+"selfGrade": true,
+"answer": "comfortable",
+"solution": "「make + 목적어 + 목적격 보어」 구문에서는 목적격 보어 자리에 형용사가 와야 합니다. 부사 comfortably는 보어가 될 수 없습니다. 따라서 형용사 comfortable이 알맞으며, '따뜻한 수프가 나를 편안하게 만들었다.'라는 뜻이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3ce4fe277c",
+"typeId": "eng-m2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 오늘 해야 할 숙제가 많다.\n→ I have a lot of homework ________________________ today. (do, to)",
+"selfGrade": true,
+"answer": "to do",
+"solution": "'해야 할 숙제'처럼 명사를 뒤에서 꾸며 줄 때는 to부정사의 형용사적 용법을 씁니다. 「명사 + to + 동사원형」 순서이므로 homework 뒤에 to do를 씁니다. 완성된 문장은 I have a lot of homework to do today.입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a6857bd98c",
+"typeId": "eng-m2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThere are no chairs to sit in the room.",
+"selfGrade": true,
+"answer": "to sit → to sit on",
+"solution": "to부정사가 앞의 명사를 꾸밀 때 동사가 자동사이면 전치사가 필요합니다. '의자 위에 앉다'는 sit on a chair이므로 chairs to sit on이라고 써야 합니다. 따라서 to sit을 to sit on으로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m2s0t0",
+"custom": true
 }
 ]

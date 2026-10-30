@@ -3915,5 +3915,233 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-u2m0s3t0",
 "custom": true
+},
+{
+"id": "fill-52dfff65c9",
+"typeId": "eng-h3-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nThe early morning sun shone softly over the quiet lake. A gentle breeze moved through the trees, and birds sang sweetly in the distance. Mia sat on a wooden bench, breathing in the fresh air. The water was perfectly still, and everything around her felt calm and relaxed.",
+"choices": [
+"① calm and peaceful",
+"② noisy and chaotic",
+"③ scary and tense",
+"④ sad and gloomy",
+"⑤ busy and urgent"
+],
+"answer": "①",
+"solution": "부드러운 아침 햇살, 잔잔한 호수, 산들바람, 새소리 같은 표현이 고요하고 평화로운 느낌을 준다. 마지막 문장도 'calm and relaxed'로 직접 분위기를 드러낸다. 따라서 분위기는 ① calm and peaceful 이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-ff0c1aaa08",
+"typeId": "eng-h3-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nLate at night, Jake walked into the old, empty house alone. The floor creaked under his feet, and a cold wind blew through the broken windows. Suddenly, he heard a strange sound coming from the dark hallway. His heart pounded, and his hands began to shake.",
+"choices": [
+"① cheerful and lively",
+"② peaceful and relaxing",
+"③ warm and cozy",
+"④ scary and frightening",
+"⑤ boring and dull"
+],
+"answer": "④",
+"solution": "늦은 밤 혼자 들어간 낡고 텅 빈 집, 삐걱거리는 바닥, 차가운 바람, 어두운 복도의 이상한 소리, 두근거리는 심장 같은 표현이 모두 무섭고 공포스러운 분위기를 만든다. 따라서 ④ scary and frightening 이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-320cea5b38",
+"typeId": "eng-h3-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nColorful balloons filled the room, and happy music played loudly. Everyone cheered and laughed as Sora blew out the candles on her birthday cake. Her friends sang together and danced around the table. It was a bright and wonderful party.",
+"choices": [
+"① lonely and sad",
+"② calm and quiet",
+"③ joyful and festive",
+"④ tense and urgent",
+"⑤ gloomy and dark"
+],
+"answer": "③",
+"solution": "알록달록한 풍선, 신나는 음악, 환호와 웃음, 생일 케이크, 함께 노래하고 춤추는 장면이 즐겁고 축제 같은 분위기를 나타낸다. 마지막 문장의 'bright and wonderful party'도 이를 뒷받침한다. 따라서 ③ joyful and festive 가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-6a1403af30",
+"typeId": "eng-h3-u0m0s5t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에 드러난 'Picasso'의 심경 변화로 가장 적절한 것은?\n\nWhenever Picasso went to Arias's barbershop, the other customers let him go first. Picasso did not like this, because the others had to wait longer because of him. Noticing this, Arias offered to cut Picasso's hair at Picasso's house. Picasso gladly said yes. After that, he could get his hair cut without worrying about other people.",
+"choices": [
+"uneasy → relieved",
+"excited → bored",
+"proud → ashamed",
+"calm → angry",
+"happy → lonely"
+],
+"answer": "①",
+"solution": "처음에 Picasso는 다른 손님들이 자기 때문에 더 오래 기다리는 상황을 좋아하지 않았으므로 불편한(uneasy) 심경이다. Arias가 집으로 와서 머리를 잘라 주겠다고 하자 기꺼이 받아들였고, 이제 다른 사람을 신경 쓰지 않게 되었으므로 안도한(relieved) 심경으로 바뀌었다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-4535f2111f",
+"typeId": "eng-h3-u0m0s5t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에 드러난 'Picasso'의 심경 변화로 가장 적절한 것은?\n\nAt Arias's barbershop, the other customers always let Picasso be served before them. This made Picasso feel uncomfortable. Later, Arias and Picasso became close friends. Picasso often visited Arias's home and enjoyed Spanish dishes made by Arias's mother. He once said to Arias, \"When you're here, I feel like I'm back in Spain.\"",
+"choices": [
+"기쁜 → 슬픈",
+"지루한 → 화난",
+"불편한 → 편안한",
+"편안한 → 불안한",
+"자랑스러운 → 부끄러운"
+],
+"answer": "③",
+"solution": "글의 앞부분에서 Picasso는 다른 손님들이 자신에게 순서를 양보하는 상황 때문에 불편함(uncomfortable)을 느꼈다. 뒷부분에서는 Arias와 친구가 되어 그의 집에서 스페인 음식을 즐기고 고향 스페인에 돌아온 것 같다고 말하므로 편안한 심경이다. 따라서 '불편한 → 편안한'인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-1db693993e",
+"typeId": "eng-h3-u0m0s5t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에 드러난 'Picasso'의 심경 변화로 가장 적절한 것은?\n\nPicasso felt uncomfortable at Arias's barbershop because other customers had to wait longer for him. So Arias asked if Picasso would like to get haircuts at home, and Picasso happily accepted. Arias never charged him any money. In return, Picasso gave him sketches and paintings as a gift of friendship. When they had dinner together, they would talk for hours.",
+"choices": [
+"calm → nervous",
+"grateful → jealous",
+"hopeful → disappointed",
+"uncomfortable → pleased",
+"excited → regretful"
+],
+"answer": "④",
+"solution": "첫 문장에서 Picasso가 이발소에서 불편함(uncomfortable)을 느꼈다고 직접 나온다. 이후 집에서 머리를 자르자는 제안을 기쁘게(happily) 받아들이고, 우정의 선물을 주고받으며 몇 시간씩 대화를 나누므로 기쁘고 만족스러운(pleased) 심경으로 바뀌었다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-a805623bf7",
+"typeId": "eng-h3-u0m3s2t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ①~⑤ 중에서 가리키는 대상이 나머지 넷과 다른 것은?\n\nMany people who help study STEVE are not professional scientists. ①They are citizen scientists — ordinary people who want to help advance science in areas that they are interested in. ②They may not have science degrees or long, white lab coats. However, ③they are still capable of making valuable contributions to science. Professional scientists often work together with ④them to solve mysteries. In fact, ⑤they have acknowledged that ordinary people deserve the credit for discovering STEVE.",
+"choices": [
+"① They",
+"② They",
+"③ they",
+"④ them",
+"⑤ they"
+],
+"answer": "⑤",
+"solution": "①~④는 모두 과학 연구를 돕는 일반인, 즉 citizen scientists를 가리킨다. ⑤는 바로 앞 문장의 Professional scientists를 가리키며, 일반인이 STEVE 발견의 공로를 인정받아야 한다고 인정한 주체이다. 따라서 가리키는 대상이 다른 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s2t0",
+"custom": true
+},
+{
+"id": "fill-7e4a3e39ce",
+"typeId": "eng-h3-u0m3s2t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ①~⑤ 중에서 가리키는 대상이 나머지 넷과 다른 것은?\n\nSTEVE is a mysterious phenomenon in the night sky. A group of aurora chasers first discovered ①it. If it had not been for ②them, ③it might have remained unnoticed forever. There are many interesting theories about ④it, but none of them have been proven for certain. Scientists and citizens continue to collaborate, and they are learning more about ⑤it every day.",
+"choices": [
+"① it",
+"② them",
+"③ it",
+"④ it",
+"⑤ it"
+],
+"answer": "②",
+"solution": "①, ③, ④, ⑤의 it은 모두 밤하늘의 신비한 현상인 STEVE를 가리킨다. ②의 them은 STEVE를 처음 발견한 a group of aurora chasers를 가리킨다. 따라서 가리키는 대상이 다른 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s2t0",
+"custom": true
+},
+{
+"id": "fill-40c2c7c73a",
+"typeId": "eng-h3-u0m3s2t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ①~⑤ 중에서 가리키는 대상이 나머지 넷과 다른 것은?\n\nThe dedicated members of an aurora chasers group first discovered STEVE. Experts studied the phenomenon, and ①they acknowledged that the aurora chasers deserve the credit for the discovery. In honor of ②them, the name \"Steve\" has been kept. If it had not been for ③them, STEVE might have remained unnoticed forever. ④They are not professional scientists, but ⑤they have made a valuable contribution to science.",
+"choices": [
+"① they",
+"② them",
+"③ them",
+"④ They",
+"⑤ they"
+],
+"answer": "①",
+"solution": "①의 they는 같은 문장 앞부분의 Experts를 가리키며, 이들이 오로라 추적자들의 공로를 인정했다는 의미이다. ②~⑤는 모두 STEVE를 처음 발견한 오로라 추적자 그룹의 회원들(the aurora chasers)을 가리킨다. 따라서 가리키는 대상이 다른 것은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s2t0",
+"custom": true
+},
+{
+"id": "fill-d6f9599e5c",
+"typeId": "eng-h3-u0m3s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 (A)가 의미하는 바로 가장 적절한 것은?\n\nWhen a behavior gives us a pleasant feeling, our brain remembers it and wants to do it again. This is why (A)what is rewarded is repeated. If finishing your homework makes you feel proud, you will likely sit down and study again the next day. Rewards work like signals that tell us, \"Do this one more time.\"",
+"choices": [
+"벌을 받은 행동은 금세 사라진다.",
+"보상을 주는 행동은 다시 하게 된다.",
+"어려운 행동일수록 기억에 오래 남는다.",
+"자주 반복한 행동은 반드시 보상을 가져온다.",
+"즐거운 감정은 우리의 행동과 아무 관련이 없다."
+],
+"answer": "②",
+"solution": "밑줄 친 문장 앞에서 즐거운 감정을 주는 행동을 뇌가 기억해 다시 하고 싶어 한다고 했고, 뒤에서는 뿌듯함을 느낀 공부를 다음 날 또 하게 된다는 예를 든다. 따라서 '보상받은 것은 반복된다'는 말은 보상(만족감)을 주는 행동을 다시 하게 된다는 뜻이다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-8e2baee3ae",
+"typeId": "eng-h3-u0m3s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 (A)가 의미하는 바로 가장 적절한 것은?\n\nA habit tracker is a tool that helps you follow a habit. For example, you can decide, \"After I finish my daily workout, I'll record it in my workout journal.\" Writing it down lets you see how far you have come. (A)This simple act becomes a reward in itself, because knowing that you are making progress feels good and keeps you going.",
+"choices": [
+"매일 운동 시간을 조금씩 늘리는 것",
+"운동 일지에 기록을 남기는 것",
+"새로운 운동 종목을 배우는 것",
+"친구와 함께 운동하러 가는 것",
+"힘들 때 운동을 하루 쉬는 것"
+],
+"answer": "②",
+"solution": "바로 앞 문장에서 운동을 마친 뒤 운동 일지에 기록한다는 예를 들고, 'Writing it down'으로 그 행동을 다시 가리킨다. 따라서 (A) '이 간단한 행동'은 진행 상황을 일지에 적어 두는 것을 의미한다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-24411a7c1c",
+"typeId": "eng-h3-u0m3s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 (A)가 의미하는 바로 가장 적절한 것은?\n\nEvery habit has four parts: cue, craving, response, and reward. The cue starts it, the craving makes you want it, the response is the action, and the reward is the good feeling at the end. (A)The smoother this loop runs, the more easily a habit sticks.",
+"choices": [
+"네 단계가 자연스럽게 이어질수록 습관이 더 쉽게 자리 잡는다.",
+"보상이 클수록 습관을 바꾸기가 더 어려워진다.",
+"신호가 사라지면 습관은 즉시 끝나 버린다.",
+"네 단계 중 한 가지만 있어도 습관이 완성된다.",
+"노력을 많이 할수록 습관은 더 빨리 사라진다."
+],
+"answer": "①",
+"solution": "앞 문장에서 습관은 신호·열망·반응·보상의 네 단계로 이루어진다고 설명했고, 밑줄 문장은 이 네 단계(loop)가 매끄럽게 돌아갈수록 습관이 쉽게 굳어진다는 뜻이다. 따라서 네 단계가 자연스럽게 이어질수록 습관이 더 잘 자리 잡는다는 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t0",
+"custom": true
 }
 ]
