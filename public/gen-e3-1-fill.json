@@ -8661,5 +8661,59 @@
 "twinGroup": "tw-15744",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-9d3c2ccd20",
+"typeId": "9705",
+"kind": "주관식",
+"diff": 1,
+"body": "민지는 길이가 $15\\text{ cm}$인 색연필과 길이가 $142\\text{ mm}$인 연필을 가지고 있습니다. 더 긴 것은 무엇입니까?",
+"selfGrade": true,
+"answer": "색연필",
+"solution": "$15\\text{ cm}=150\\text{ mm}$입니다. $150\\text{ mm}>142\\text{ mm}$이므로 색연필이 더 깁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-9705",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4ab3941d25",
+"typeId": "9705",
+"kind": "객관식",
+"diff": 2,
+"body": "길이가 가장 짧은 물건은 어느 것입니까?",
+"choices": [
+"$9\\text{ cm}$인 지우개",
+"$95\\text{ mm}$인 풀",
+"$10\\text{ cm}$인 가위",
+"$102\\text{ mm}$인 크레파스",
+"$11\\text{ cm}$인 자"
+],
+"answer": "①",
+"solution": "각 물건의 길이를 밀리미터로 나타내면 $9\\text{ cm}=90\\text{ mm}$, $10\\text{ cm}=100\\text{ mm}$, $11\\text{ cm}=110\\text{ mm}$입니다. 따라서 다섯 물건의 길이는 차례대로 $90\\text{ mm}$, $95\\text{ mm}$, $100\\text{ mm}$, $102\\text{ mm}$, $110\\text{ mm}$이므로 길이가 가장 짧은 물건은 ① 지우개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-9705",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b29ba42232",
+"typeId": "9705",
+"kind": "객관식",
+"diff": 2,
+"body": "수아는 길이가 $12\\text{ cm}$보다 긴 리본을 고르려고 합니다. 수아가 골라야 하는 리본은 어느 것입니까?",
+"choices": [
+"$108\\text{ mm}$",
+"$11\\text{ cm}$",
+"$115\\text{ mm}$",
+"$121\\text{ mm}$",
+"$12\\text{ cm}$"
+],
+"answer": "④",
+"solution": "$12\\text{ cm}=120\\text{ mm}$입니다. $108\\text{ mm}$, $11\\text{ cm}=110\\text{ mm}$, $115\\text{ mm}$는 모두 $120\\text{ mm}$보다 짧고, $12\\text{ cm}$는 기준과 길이가 같습니다. $120\\text{ mm}$보다 긴 것은 $121\\text{ mm}$이므로 정답은 ④입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-9705",
+"custom": true,
+"rv": 1
 }
 ]

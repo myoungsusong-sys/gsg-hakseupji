@@ -810,5 +810,121 @@
 "twinGroup": "tw-7104",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-9fd3650362",
+"typeId": "7050",
+"kind": "객관식",
+"diff": 1,
+"body": "선분 $AB$를 지름으로 하는 원 위에 두 점 $A$, $B$와 다른 점 $C$가 있다. $AB=10\\text{ cm}$, $AC=6\\text{ cm}$일 때, $\\sin(\\angle ABC)$의 값은?",
+"choices": [
+"$\\frac{3}{10}$",
+"$\\frac{3}{5}$",
+"$\\frac{3}{4}$",
+"$\\frac{4}{5}$",
+"$\\frac{5}{3}$"
+],
+"answer": "②",
+"solution": "지름 $AB$에 대한 원주각은 직각이므로 $\\angle ACB=90^\\circ$이다. 따라서 $\\sin(\\angle ABC)=\\frac{AC}{AB}=\\frac{6}{10}=\\frac{3}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e7a98fa4af",
+"typeId": "7050",
+"kind": "주관식",
+"diff": 1,
+"body": "반지름의 길이가 $13\\text{ cm}$인 원에서 선분 $AB$는 지름이다. 원 위의 점 $C$에 대하여 $BC=10\\text{ cm}$일 때, $\\cos(\\angle ABC)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{5}{13}$",
+"solution": "지름의 길이는 $AB=26\\text{ cm}$이고, $\\angle ACB=90^\\circ$이다. 따라서 $\\cos(\\angle ABC)=\\frac{BC}{AB}=\\frac{10}{26}=\\frac{5}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3010f5c19d",
+"typeId": "7050",
+"kind": "객관식",
+"diff": 2,
+"body": "길이가 $17\\text{ cm}$인 선분 $AB$를 지름으로 하는 원 위에 점 $C$가 있다. $AC=8\\text{ cm}$일 때, $\\tan(\\angle BAC)$의 값은?",
+"choices": [
+"$\\frac{8}{17}$",
+"$\\frac{15}{17}$",
+"$\\frac{8}{15}$",
+"$\\frac{17}{8}$",
+"$\\frac{15}{8}$"
+],
+"answer": "⑤",
+"solution": "지름 $AB$에 대한 원주각은 직각이므로 $\\angle ACB=90^\\circ$이다. 피타고라스 정리에 의해 $BC=\\sqrt{17^2-8^2}=15\\text{ cm}$이다. 따라서 $\\tan(\\angle BAC)=\\frac{BC}{AC}=\\frac{15}{8}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-69e024acc7",
+"typeId": "7050",
+"kind": "주관식",
+"diff": 3,
+"body": "반지름의 길이가 $13\\text{ cm}$인 원에 내접하는 이등변삼각형 $ABC$에서 $AB=AC$, $BC=24\\text{ cm}$이다. $\\angle BAC$가 예각일 때, $\\sin(\\angle BAC)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{12}{13}$",
+"solution": "점 $B$에서 그은 지름의 다른 끝점을 $D$라 하면 $BD=26\\text{ cm}$이고 $\\angle BCD=90^\\circ$이다. $\\angle BAC$가 예각이므로 점 $A$와 점 $D$는 현 $BC$의 같은 쪽에 있어, 같은 호에 대한 원주각인 $\\angle BDC$와 $\\angle BAC$는 같다. 따라서 $\\sin(\\angle BAC)=\\frac{BC}{BD}=\\frac{24}{26}=\\frac{12}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-da7b50e3a7",
+"typeId": "7050",
+"kind": "객관식",
+"diff": 3,
+"body": "반지름의 길이가 $15\\text{ cm}$인 원 위에 세 점 $A$, $B$, $C$가 있다. $BC=18\\text{ cm}$이고 $\\angle BAC$가 예각일 때, $\\tan(\\angle BAC)$의 값은?",
+"choices": [
+"$\\frac{3}{5}$",
+"$\\frac{3}{4}$",
+"$\\frac{4}{5}$",
+"$\\frac{4}{3}$",
+"$\\frac{5}{3}$"
+],
+"answer": "②",
+"solution": "점 $B$에서 그은 지름의 다른 끝점을 $D$라 하면 $BD=30\\text{ cm}$이고 $\\angle BCD=90^\\circ$이다. 점 $A$와 점 $D$는 현 $BC$의 같은 쪽에 있으므로 $\\angle BAC=\\angle BDC$이다. 피타고라스 정리에 의해 $CD=\\sqrt{30^2-18^2}=24\\text{ cm}$이다. 따라서 $\\tan(\\angle BAC)=\\frac{BC}{CD}=\\frac{18}{24}=\\frac{3}{4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d64d168caa",
+"typeId": "7050",
+"kind": "주관식",
+"diff": 3,
+"body": "선분 $AB$가 지름인 원 위에 점 $C$가 있다. $AB=17\\text{ cm}$이고 삼각형 $ABC$의 둘레의 길이는 $40\\text{ cm}$이다. $BC>AC$일 때, $\\cos(\\angle ABC)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{15}{17}$",
+"solution": "지름에 대한 원주각이므로 $\\angle ACB=90^\\circ$이며, $AC+BC=23$, $AC^2+BC^2=289$이다. 따라서 $2AC\\cdot BC=23^2-289=240$이므로 $(BC-AC)^2=289-240=49$이다. $BC>AC$이므로 $BC-AC=7$이고, 이를 $AC+BC=23$과 함께 풀면 $BC=15\\text{ cm}$이다. 따라서 $\\cos(\\angle ABC)=\\frac{BC}{AB}=\\frac{15}{17}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f303a84677",
+"typeId": "7050",
+"kind": "주관식",
+"diff": 4,
+"body": "중심이 $O$인 원에 서로 평행한 두 현 $BC$, $DE$가 있다. 두 현의 중점을 각각 $M$, $N$이라 할 때, 점 $N$은 선분 $OM$의 내부에 있다. 점 $B$와 점 $D$는 직선 $OM$의 같은 쪽에 있으며, $BC=10\\text{ cm}$, $DE=26\\text{ cm}$, $BD=10\\text{ cm}$이다. 직선 $OM$과 원의 두 교점 중 $O$를 사이에 두고 $M$과 반대쪽에 있는 점을 $A$라 하자. $\\tan(\\angle BAC)$의 값을 구하고, 풀이 과정을 쓰시오.",
+"selfGrade": true,
+"answer": "$\\frac{1}{3}$",
+"solution": "이하 길이의 단위는 cm이다. 중심에서 현의 중점에 이은 선분은 현에 수직이므로 $OM\\perp BC$, $ON\\perp DE$이고, $BM=5$, $DN=13$이다. 점 $B$에서 직선 $DE$에 내린 수선의 발을 $H$라 하면 $HN=BM=5$, $BH=MN$이다. 점 $B$와 점 $D$가 직선 $OM$의 같은 쪽에 있으므로 $H$는 선분 $DN$ 위에 있고, $DH=13-5=8$이다. 직각삼각형 $BDH$에서 $MN=BH=\\sqrt{10^2-8^2}=6$이다. $ON=x$라 놓으면 $OM=x+6$이다. 원의 반지름의 길이를 $R$라 할 때, 직각삼각형 $ODN$, $OBM$에서 $R^2=x^2+13^2=(x+6)^2+5^2$이다. 이를 정리하면 $12x=108$이므로 $x=9$, $R^2=250$이다. 점 $B$를 한 끝점으로 하는 지름의 다른 끝점을 $P$라 하면 $BP^2=4R^2=1000$이다. 지름에 대한 원주각은 직각이므로 $\\angle BCP=90^\\circ$이고, $CP=\\sqrt{BP^2-BC^2}=\\sqrt{1000-100}=30$이다. 점 $A$와 점 $P$는 직선 $BC$의 같은 쪽에 있으므로 같은 호 $BC$에 대한 원주각인 $\\angle BAC$와 $\\angle BPC$는 같다. 따라서 $\\tan(\\angle BAC)=\\tan(\\angle BPC)=\\frac{BC}{CP}=\\frac{10}{30}=\\frac{1}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7050",
+"custom": true,
+"rv": 1
 }
 ]

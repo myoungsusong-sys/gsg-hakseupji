@@ -5475,5 +5475,181 @@
 "twinGroup": "tw-20627",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-a3bb24abcd",
+"typeId": "20774",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=4\\sin 2x$가 구간 $0<x<\\frac{\\pi}{2}$에서 극댓값을 갖는 $x$의 값은?",
+"choices": [
+"$\\frac{\\pi}{12}$",
+"$\\frac{\\pi}{8}$",
+"$\\frac{\\pi}{6}$",
+"$\\frac{\\pi}{4}$",
+"$\\frac{\\pi}{3}$"
+],
+"answer": "④",
+"solution": "$f'(x)=8\\cos 2x$이므로 주어진 구간에서 $f'(x)=0$인 값은 $x=\\frac{\\pi}{4}$이다. 이 점을 지날 때 $f'(x)$의 부호가 양에서 음으로 바뀌므로 $x=\\frac{\\pi}{4}$에서 극댓값을 갖는다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-364c7126f3",
+"typeId": "20774",
+"kind": "주관식",
+"diff": 1,
+"body": "곡선 $y=-3\\cos 2x$의 구간 $0<x<\\frac{\\pi}{2}$에 있는 변곡점의 좌표를 구하시오.",
+"selfGrade": true,
+"answer": "$\\left(\\frac{\\pi}{4},0\\right)$",
+"solution": "$y''=12\\cos 2x$이므로 주어진 구간에서 $y''=0$인 값은 $x=\\frac{\\pi}{4}$이다. 이 점을 지날 때 $y''$의 부호가 양에서 음으로 바뀌고, 이때 $y=0$이므로 변곡점은 $\\left(\\frac{\\pi}{4},0\\right)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-14cb68d767",
+"typeId": "20774",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=2x+\\sin x$의 구간 $-\\pi<x<\\pi$에서의 증가와 감소에 대한 설명으로 옳은 것은?",
+"choices": [
+"구간 전체에서 증가한다.",
+"구간 전체에서 감소한다.",
+"$(-\\pi,0)$에서 증가하고 $(0,\\pi)$에서 감소한다.",
+"$(-\\pi,0)$에서 감소하고 $(0,\\pi)$에서 증가한다.",
+"$\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$에서 감소한다."
+],
+"answer": "①",
+"solution": "$f'(x)=2+\\cos x$이고 $\\cos x\\geq -1$이므로 $f'(x)\\geq 1>0$이다. 따라서 함수 $f(x)$는 주어진 구간 전체에서 증가한다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3408bd2048",
+"typeId": "20774",
+"kind": "객관식",
+"diff": 2,
+"body": "함수 $f(x)=x+\\cos x$에 대하여 구간 $0<x<2\\pi$에서 옳은 설명만을 보기에서 있는 대로 고른 것은?\n\nㄱ. 구간 전체에서 증가한다.\nㄴ. 극값을 갖는 점은 $1$개이다.\nㄷ. 그래프의 변곡점은 $2$개이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "$f'(x)=1-\\sin x\\geq 0$이고 등호는 $x=\\frac{\\pi}{2}$에서만 성립하므로 구간 전체에서 증가하여 ㄱ은 참이다. $x=\\frac{\\pi}{2}$의 양쪽에서 도함수의 부호가 모두 양이므로 극값은 없으며 ㄴ은 거짓이다. $f''(x)=-\\cos x$의 부호가 $x=\\frac{\\pi}{2},\\frac{3\\pi}{2}$에서 각각 바뀌므로 변곡점은 $2$개이고 ㄷ은 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1fa39f650d",
+"typeId": "20774",
+"kind": "주관식",
+"diff": 2,
+"body": "곡선 $y=\\sin^2 2x$의 구간 $0<x<\\frac{\\pi}{2}$에 있는 두 변곡점을 각각 $A$, $B$라 하자. 선분 $AB$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{\\pi}{4}$",
+"solution": "$y'=2\\sin 4x$, $y''=8\\cos 4x$이므로 주어진 구간에서 이계도함수의 부호가 바뀌는 값은 $x=\\frac{\\pi}{8},\\frac{3\\pi}{8}$이다. 두 변곡점의 $y$좌표는 모두 $\\frac12$이다. 따라서 선분 $AB$의 길이는 $\\frac{3\\pi}{8}-\\frac{\\pi}{8}=\\frac{\\pi}{4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8f229ad497",
+"typeId": "20774",
+"kind": "주관식",
+"diff": 4,
+"body": "양수 $a$에 대하여 함수 $f(x)=\\sin x-a\\sin 2x$가 구간 $-\\pi<x<\\pi$에서 극값을 갖는 점이 정확히 $2$개이고, 그래프의 변곡점이 정확히 $3$개가 되도록 하는 $a$의 값의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac18<a\\leq\\frac12$",
+"solution": "$f'(x)=\\cos x-2a\\cos 2x$이므로 $t=\\cos x$로 놓으면 $f'(x)=0$은 $P(t)=4at^2-t-2a=0$과 같다. $P(-1)=2a+1>0$, $P(0)=-2a<0$이므로 음의 근은 $(-1,0)$에 있다. 또한 두 근의 곱이 음수이고 $P(1)=2a-1$이므로 양의 근은 $0<a<\\frac12$일 때 $1$보다 크고, $a=\\frac12$일 때 $1$이며, $a>\\frac12$일 때 $(0,1)$에 있다.\n$(-1,1)$에 있는 각 근에 대응하는 $x$는 주어진 구간에서 각각 $2$개이다. 이 점들에서는 $\\cos x$가 해당 근을 지나고 $P(t)$의 부호가 바뀌므로 $f'(x)$의 부호도 바뀐다. 한편 $a=\\frac12$일 때에는 $f'(x)=(1-\\cos x)(2\\cos x+1)$이므로 $x=0$의 양쪽에서 $f'(x)>0$이다. 따라서 $x=0$에서는 극값을 갖지 않는다. 결국 극값을 갖는 점이 정확히 $2$개이기 위한 조건은 $0<a\\leq\\frac12$이다.\n다음으로 $f''(x)=\\sin x(8a\\cos x-1)$이다. $0<a\\leq\\frac18$이면 $x\\ne0$에서 $8a\\cos x-1<0$이므로 $f''(x)$의 부호는 $x=0$에서만 바뀐다. 따라서 변곡점은 $1$개이다.\n$a>\\frac18$이면 $\\cos x=\\frac{1}{8a}$를 만족하는 $x$가 $(-\\pi,0)$과 $(0,\\pi)$에 각각 하나씩 있다. 이 두 점에서는 $\\sin x\\ne0$이고 $8a\\cos x-1$의 부호가 바뀐다. 또한 $x=0$ 근처에서는 $8a\\cos x-1>0$이고 $\\sin x$의 부호가 바뀐다. 따라서 변곡점은 정확히 $3$개이다.\n두 조건을 함께 만족시키는 범위는 $\\boxed{\\frac18<a\\leq\\frac12}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e4a1b010bb",
+"typeId": "20774",
+"kind": "주관식",
+"diff": 4,
+"body": "양수 $a$에 대하여 함수 $f(x)=e^{ax}\\cos 2x$를 구간 $-\\frac{\\pi}{4}<x<\\frac{\\pi}{4}$에서 정의한다. 이 함수가 극댓값을 갖는 점의 $x$좌표를 $p$, 그래프의 변곡점의 $x$좌표를 $q$라 하자. $q=\\frac{p}{2}$일 때, 함수 $f(x)$의 극댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac12 e^{\\pi/\\sqrt3}$",
+"solution": "$f'(x)=e^{ax}(a\\cos 2x-2\\sin 2x)$이고 주어진 구간에서 $\\cos 2x>0$이므로, 유일한 극대점의 $x$좌표 $p$는 $\\tan 2p=\\frac a2$, $0<p<\\frac{\\pi}{4}$를 만족한다. 또한 $f''(x)=e^{ax}\\{(a^2-4)\\cos 2x-4a\\sin 2x\\}$이므로 유일한 변곡점의 $x$좌표 $q$는 $\\tan 2q=\\frac{a^2-4}{4a}$를 만족한다. $\\theta=2p$로 놓으면 $a=2\\tan\\theta$이므로 $\\tan 2q=\\tan(2\\theta-\\frac{\\pi}{2})$이고, 두 각이 모두 $(-\\frac{\\pi}{2},\\frac{\\pi}{2})$에 있으므로 $q=2p-\\frac{\\pi}{4}$이다. 따라서 $q=\\frac p2$에서 $p=\\frac{\\pi}{6}$, $a=2\\sqrt3$을 얻는다. 극댓값은 $f(\\frac{\\pi}{6})=\\frac12 e^{\\pi/\\sqrt3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20774",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a796802dc3",
+"typeId": "20835",
+"kind": "객관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 좌표평면의 두 점 $(0,0)$, $(2,0)$을 잇는 선분을 $n$등분하는 점을 양 끝점을 포함하여 왼쪽부터 차례로 $P_0,P_1,\\ldots,P_n$이라 하자. 점 $P_k$를 지나고 $y$축에 평행한 직선이 직선 $y=x+1$과 만나는 점을 $Q_k$라 할 때, $\\displaystyle \\lim_{n\\to\\infty}\\frac{2}{n}\\sum_{k=1}^{n}\\overline{P_kQ_k}$의 값은?",
+"choices": [
+"$\\frac{3}{2}$",
+"$2$",
+"$3$",
+"$4$",
+"$6$"
+],
+"answer": "④",
+"solution": "점 $P_k$의 좌표는 $\\left(\\frac{2k}{n},0\\right)$이다. $x_k=\\frac{2k}{n}$이라 하면 $0\\le x_k\\le 2$에서 $x_k+1>0$이므로 $\\overline{P_kQ_k}=x_k+1$이다. 등분한 구간의 길이가 $\\frac{2}{n}$이므로 정적분과 급수의 합 사이의 관계에 의하여 주어진 극한은 $\\displaystyle \\int_0^2(x+1)\\,dx=\\left[\\frac{x^2}{2}+x\\right]_0^2=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20835",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1496ab844d",
+"typeId": "20835",
+"kind": "객관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 두 점 $A_k\\left(\\frac{k}{n},0\\right)$, $B_k\\left(\\frac{k}{n},e^{k/n}\\right)$을 잡는다$(k=1,2,\\ldots,n)$. 선분 $A_kB_k$를 한 변으로 하고, 이 변에 수직인 변의 길이가 $\\frac{1}{n}$인 직사각형의 넓이를 $S_k$라 하자. $\\displaystyle \\lim_{n\\to\\infty}\\sum_{k=1}^{n}S_k$의 값은?",
+"choices": [
+"$0$",
+"$1$",
+"$e-1$",
+"$e$",
+"$e^2-1$"
+],
+"answer": "③",
+"solution": "선분 $A_kB_k$의 길이는 $e^{k/n}$이므로 $S_k=\\frac{1}{n}e^{k/n}$이다. $\\frac{k}{n}$은 구간 $[0,1]$을 $n$등분한 각 소구간의 오른쪽 끝점이고, 각 소구간의 길이는 $\\frac{1}{n}$이다. 따라서 정적분과 급수의 합 사이의 관계에 의하여 주어진 극한은 $\\displaystyle \\int_0^1e^x\\,dx=[e^x]_0^1=e-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20835",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7fe6069003",
+"typeId": "20835",
+"kind": "객관식",
+"diff": 1,
+"body": "자연수 $n$과 $k=1,2,\\ldots,n$에 대하여 $x_k=\\frac{k}{n}$이라 하자. 세 점 $O(0,0)$, $A_k(x_k,0)$, $B_k(x_k,2x_k)$를 꼭짓점으로 하는 삼각형의 넓이를 $T_k$라 할 때, $\\displaystyle \\lim_{n\\to\\infty}\\frac{1}{n}\\sum_{k=1}^{n}T_k$의 값은?",
+"choices": [
+"$\\frac{1}{6}$",
+"$\\frac{1}{4}$",
+"$\\frac{1}{2}$",
+"$\\frac{1}{3}$",
+"$\\frac{2}{3}$"
+],
+"answer": "④",
+"solution": "삼각형 $OA_kB_k$의 밑변의 길이는 $x_k$, 높이는 $2x_k$이므로 $T_k=\\frac{1}{2}\\cdot x_k\\cdot 2x_k=x_k^2$이다. 따라서 주어진 극한은 $\\displaystyle \\int_0^1x^2\\,dx=\\left[\\frac{x^3}{3}\\right]_0^1=\\frac{1}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20835",
+"custom": true,
+"rv": 1
 }
 ]

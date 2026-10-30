@@ -1998,5 +1998,113 @@
 "twinGroup": "tw-20607",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-0af95c2109",
+"typeId": "20538",
+"kind": "객관식",
+"diff": 1,
+"body": "길이가 $6\\,\\mathrm{m}$인 사다리를 수평인 바닥과 수직인 벽에 기대어 놓았다. 사다리가 바닥과 이루는 각의 크기가 $30^\\circ$일 때, 사다리의 윗부분이 벽에 닿는 지점의 바닥으로부터의 높이는? (단, 사다리의 두께는 생각하지 않는다.)",
+"choices": [
+"$2\\,\\mathrm{m}$",
+"$3\\,\\mathrm{m}$",
+"$2\\sqrt{3}\\,\\mathrm{m}$",
+"$3\\sqrt{3}\\,\\mathrm{m}$",
+"$6\\,\\mathrm{m}$"
+],
+"answer": "②",
+"solution": "구하는 높이를 $h\\,\\mathrm{m}$라 하면 사다리를 빗변으로 하는 직각삼각형에서 $\\sin 30^\\circ=\\frac{h}{6}$이다. 따라서 $h=6\\times\\frac{1}{2}=3$이므로 높이는 $3\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20538",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7767b1e82d",
+"typeId": "20538",
+"kind": "객관식",
+"diff": 1,
+"body": "길이가 $10\\,\\mathrm{m}$인 곧은 운반용 경사로가 수평인 지면과 $60^\\circ$의 각을 이룬다. 경사로의 양 끝점 사이의 수평거리는?",
+"choices": [
+"$5\\sqrt{3}\\,\\mathrm{m}$",
+"$10\\,\\mathrm{m}$",
+"$10\\sqrt{3}\\,\\mathrm{m}$",
+"$5\\,\\mathrm{m}$",
+"$20\\,\\mathrm{m}$"
+],
+"answer": "④",
+"solution": "양 끝점 사이의 수평거리를 $x\\,\\mathrm{m}$라 하면 $\\cos 60^\\circ=\\frac{x}{10}$이다. 따라서 $x=10\\times\\frac{1}{2}=5$이므로 수평거리는 $5\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20538",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-cfa1a64a4e",
+"typeId": "20538",
+"kind": "주관식",
+"diff": 1,
+"body": "수평인 운동장에 수직으로 세운 깃대의 그림자 길이가 $4\\,\\mathrm{m}$이다. 햇빛이 지면과 이루는 각의 크기가 $45^\\circ$일 때, 깃대의 높이를 구하시오.",
+"selfGrade": true,
+"answer": "$4\\,\\mathrm{m}$",
+"solution": "깃대의 높이를 $h\\,\\mathrm{m}$라 하면 깃대와 그림자가 이루는 직각삼각형에서 $\\tan 45^\\circ=\\frac{h}{4}$이다. 따라서 $h=4\\times1=4$이므로 깃대의 높이는 $4\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20538",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-42f3cc858f",
+"typeId": "20538",
+"kind": "객관식",
+"diff": 2,
+"body": "수평인 지면에서 연을 날리고 있다. 지면으로부터 $1\\,\\mathrm{m}$ 높이에 있는 손에서 연까지의 실의 길이는 $12\\,\\mathrm{m}$이고, 팽팽한 실은 수평선과 $60^\\circ$의 각을 이룬다. 지면으로부터 연까지의 높이는? (단, 실은 곧은 선분으로 보고 연의 크기는 생각하지 않는다.)",
+"choices": [
+"$(1+6\\sqrt{3})\\,\\mathrm{m}$",
+"$6\\sqrt{3}\\,\\mathrm{m}$",
+"$7\\,\\mathrm{m}$",
+"$(1+4\\sqrt{3})\\,\\mathrm{m}$",
+"$(1+12\\sqrt{3})\\,\\mathrm{m}$"
+],
+"answer": "①",
+"solution": "손과 연의 높이 차를 $h\\,\\mathrm{m}$라 하면, 실을 빗변으로 하는 직각삼각형에서 $\\sin 60^\\circ=\\frac{h}{12}$이다. 따라서 $h=12\\times\\frac{\\sqrt{3}}{2}=6\\sqrt{3}$이다. 손은 지면으로부터 $1\\,\\mathrm{m}$ 높이에 있으므로 지면으로부터 연까지의 높이는 $(1+6\\sqrt{3})\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20538",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3d556ecfb3",
+"typeId": "20538",
+"kind": "객관식",
+"diff": 2,
+"body": "수평인 지면 위에 있는 전망대의 수직 기둥 꼭대기에서 지면의 한 지점까지 곧은 지지선을 연결하였다. 지지선의 길이는 $8\\,\\mathrm{m}$이고 지면과 이루는 각의 크기는 $60^\\circ$이다. 전망대의 바닥이 지면으로부터 $2\\,\\mathrm{m}$ 높이에 있을 때, 전망대 바닥에서 기둥 꼭대기까지의 높이는?",
+"choices": [
+"$2\\,\\mathrm{m}$",
+"$(4\\sqrt{3}+2)\\,\\mathrm{m}$",
+"$4\\sqrt{3}\\,\\mathrm{m}$",
+"$(8\\sqrt{3}-2)\\,\\mathrm{m}$",
+"$(4\\sqrt{3}-2)\\,\\mathrm{m}$"
+],
+"answer": "⑤",
+"solution": "지면에서 기둥 꼭대기까지의 높이는 $8\\sin 60^\\circ=4\\sqrt{3}\\,\\mathrm{m}$이다. 전망대 바닥은 지면보다 $2\\,\\mathrm{m}$ 높으므로 구하는 높이는 $(4\\sqrt{3}-2)\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20538",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c867f28ab3",
+"typeId": "20538",
+"kind": "주관식",
+"diff": 2,
+"body": "수평인 지면 위에 수직으로 서 있는 건물에서 수평거리로 $12\\,\\mathrm{m}$ 떨어진 지점에 민수가 서 있다. 민수의 눈높이는 지면으로부터 $1.5\\,\\mathrm{m}$이고, 눈에서 건물 꼭대기를 올려다본 각의 크기는 수평선을 기준으로 $45^\\circ$이다. 건물의 높이를 구하시오.",
+"selfGrade": true,
+"answer": "$13.5\\,\\mathrm{m}$",
+"solution": "민수의 눈과 건물 꼭대기의 높이 차는 $12\\tan 45^\\circ=12\\,\\mathrm{m}$이다. 여기에 눈높이 $1.5\\,\\mathrm{m}$를 더하면 건물의 높이는 $13.5\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20538",
+"custom": true,
+"rv": 1
 }
 ]
