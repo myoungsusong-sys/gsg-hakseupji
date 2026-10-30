@@ -1,0 +1,92 @@
+[
+{
+"id": "set2-m32-02-adv-001",
+"typeId": "set2-m32-02-u0m0s0t3",
+"twinGroup": "tw-set2-m32-02-u0m0s0t3",
+"diff": 4,
+"body": "수평한 땅 위에 수직으로 선 건물의 옥상에 안테나가 수직으로 설치되어 있다. 건물의 밑부분을 $B$, 옥상의 안테나 밑부분을 $R$, 안테나 꼭대기를 $T$라 하자.\n\n지면 위의 세 점 $P$, $Q$, $B$는 이 순서로 한 직선 위에 있고, $\\overline{PQ}=12\\,\\mathrm{m}$이다. 눈높이가 $1.5\\,\\mathrm{m}$인 관찰자가 $P$와 $Q$에서 $T$를 올려본각은 각각 $30^\\circ$, $60^\\circ$였다. 또한 $Q$에서 $R$을 올려본각은 $45^\\circ$였다.\n\n안테나의 길이 $\\overline{RT}$는?",
+"solution": "첫째, $\\overline{QB}=x\\,\\mathrm{m}$, 관찰자의 눈에서 $T$까지의 높이 차를 $h\\,\\mathrm{m}$라 하자. 두 관측 지점의 눈높이가 같으므로 탄젠트의 뜻에 따라\n$h=x\\tan60^\\circ=\\sqrt{3}x$,\n$h=(x+12)\\tan30^\\circ=\\dfrac{x+12}{\\sqrt{3}}$이다.\n\n따라서\n$3x=x+12$,\n$x=6$, $h=6\\sqrt{3}$이다.\n\n둘째, $Q$에서 옥상까지의 높이 차는\n$6\\tan45^\\circ=6\\,\\mathrm{m}$이다.\n\n셋째, 안테나의 길이는 두 높이 차의 차이므로\n$\\overline{RT}=(6\\sqrt{3}-6)\\,\\mathrm{m}$이다.\n두 높이에 같은 눈높이가 더해지므로, 안테나의 길이를 구할 때에는 눈높이가 소거된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$(6\\sqrt{3}-3)\\,\\mathrm{m}$",
+"$\\left(6\\sqrt{3}-\\dfrac{15}{2}\\right)\\,\\mathrm{m}$",
+"$(6\\sqrt{3}-6)\\,\\mathrm{m}$",
+"$6\\sqrt{3}\\,\\mathrm{m}$",
+"$(12\\sqrt{3}-6)\\,\\mathrm{m}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-02-adv-002",
+"typeId": "set2-m32-02-u0m0s0t3",
+"twinGroup": "tw-set2-m32-02-u0m0s0t3",
+"diff": 5,
+"body": "양쪽 강둑이 서로 평행한 직선인 강이 있다. 한쪽 강둑 위의 세 점 $A$, $B$, $C$는 이 순서로 놓여 있고,\n$\\overline{AB}=12\\,\\mathrm{m}$, $\\overline{BC}=6\\,\\mathrm{m}$이다.\n\n맞은편 강둑 위의 나무 밑동을 $T$라 할 때,\n$\\angle BAT=120^\\circ$, $\\angle ABT=30^\\circ$이다. 모든 점은 같은 수평면 위에 있다고 한다.\n\n$C$에서 $T$까지 팽팽하게 연결한 직선 모양의 줄의 길이는? 단, 줄의 굵기와 처짐은 무시한다.",
+"solution": "첫째, $T$에서 직선 $AB$에 내린 수선의 발을 $H$라 하자. $\\angle BAT=120^\\circ$이므로 $H$는 $A$를 지나 $B$의 반대쪽으로 뻗은 연장선 위에 있다.\n\n$\\overline{AH}=x\\,\\mathrm{m}$, $\\overline{TH}=w\\,\\mathrm{m}$라 하면 $\\angle HAT=60^\\circ$이므로\n$w=x\\tan60^\\circ=\\sqrt{3}x$이다.\n\n둘째, $\\overline{BH}=(x+12)\\,\\mathrm{m}$이고 $\\angle HBT=30^\\circ$이므로\n$w=(x+12)\\tan30^\\circ=\\dfrac{x+12}{\\sqrt{3}}$이다.\n\n따라서\n$3x=x+12$,\n$x=6$, $w=6\\sqrt{3}$이다.\n\n셋째, 점의 순서가 $H$, $A$, $B$, $C$이므로\n$\\overline{CH}=6+12+6=24\\,\\mathrm{m}$이다.\n\n직각삼각형 $CHT$에 피타고라스 정리를 적용하면\n$\\overline{CT}^{\\,2}=24^2+(6\\sqrt{3})^2=684$이다.\n\n따라서 줄의 길이는 $6\\sqrt{19}\\,\\mathrm{m}$이다. 강의 폭인 $\\overline{TH}$와 줄의 길이인 $\\overline{CT}$를 구별해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$6\\sqrt{7}\\,\\mathrm{m}$",
+"$12\\sqrt{3}\\,\\mathrm{m}$",
+"$6\\sqrt{13}\\,\\mathrm{m}$",
+"$6\\sqrt{19}\\,\\mathrm{m}$",
+"$24\\,\\mathrm{m}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-02-adv-003",
+"typeId": "set2-m32-02-u0m0s0t3",
+"twinGroup": "tw-set2-m32-02-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 모양의 땅 $ABC$에서\n$\\overline{AB}=18\\,\\mathrm{m}$, $\\overline{AC}=12\\,\\mathrm{m}$, $\\angle BAC=120^\\circ$이다.\n\n점 $A$에서 변 $BC$가 놓인 직선까지의 수직거리를 측량하려고 한다. 다음 두 값을 구하고, 수선의 발의 위치와 삼각형의 넓이를 이용한 풀이 과정을 서술하시오.\n\n⑴ 변 $BC$의 길이\n\n⑵ 점 $A$에서 직선 $BC$까지의 수직거리",
+"solution": "첫째, $C$에서 직선 $AB$에 내린 수선의 발을 $H$라 하자. $\\angle BAC=120^\\circ$이므로 $H$는 $A$를 지나 $B$의 반대쪽으로 뻗은 연장선 위에 있다.\n\n$\\angle CAH=60^\\circ$이므로\n$\\overline{AH}=12\\cos60^\\circ=6\\,\\mathrm{m}$,\n$\\overline{CH}=12\\sin60^\\circ=6\\sqrt{3}\\,\\mathrm{m}$이다.\n\n둘째, $\\overline{BH}=\\overline{BA}+\\overline{AH}=24\\,\\mathrm{m}$이다. 직각삼각형 $BHC$에서 피타고라스 정리를 적용하면\n$\\overline{BC}^{\\,2}=24^2+(6\\sqrt{3})^2=684$이다.\n\n따라서 $\\overline{BC}=6\\sqrt{19}\\,\\mathrm{m}$이다.\n\n셋째, 삼각형 $ABC$의 넓이는 밑변과 그에 대한 높이를 이용하여\n$\\dfrac12\\times18\\times6\\sqrt{3}=54\\sqrt{3}\\,\\mathrm{m}^2$이다.\n\n점 $A$에서 직선 $BC$까지의 수직거리를 $d\\,\\mathrm{m}$라 하면\n$\\dfrac12\\times6\\sqrt{19}\\times d=54\\sqrt{3}$이다.\n\n따라서\n$d=\\dfrac{18\\sqrt{3}}{\\sqrt{19}}=\\dfrac{18\\sqrt{57}}{19}$이다.\n\n[채점 기준]\n수선의 발의 위치를 설명하고 $\\overline{AH}$, $\\overline{CH}$를 구하면 $3$점.\n피타고라스 정리로 $\\overline{BC}$를 구하면 $3$점.\n삼각형의 넓이를 구하면 $2$점.\n밑변을 바꾸어 수직거리를 구하면 $2$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "주관식",
+"answer": "⑴ $6\\sqrt{19}\\,\\mathrm{m}$, ⑵ $\\dfrac{18\\sqrt{57}}{19}\\,\\mathrm{m}$",
+"selfGrade": true
+},
+{
+"id": "set2-m32-02-adv-004",
+"typeId": "set2-m32-02-u0m0s1t3",
+"twinGroup": "tw-set2-m32-02-u0m0s1t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서\n$\\overline{AB}=24\\,\\mathrm{cm}$, $\\angle CAB=30^\\circ$, $\\angle ABC=45^\\circ$이다.\n\n변 $AC$ 위에 $\\overline{AD}=8\\,\\mathrm{cm}$인 점 $D$를, 변 $AB$ 위에 $\\overline{AE}=6\\,\\mathrm{cm}$인 점 $E$를 잡는다.\n\n삼각형 $ABC$에서 삼각형 $ADE$를 제외한 사각형 $EBCD$의 넓이는?",
+"solution": "첫째, $C$에서 변 $AB$에 내린 수선의 발을 $H$라 하고, $\\overline{CH}=h\\,\\mathrm{cm}$라 하자. 두 밑각이 예각이므로 $H$는 선분 $AB$ 안에 있다.\n\n직각삼각형 $ACH$, $BCH$에서 탄젠트의 뜻에 따라\n$\\overline{AH}=\\dfrac{h}{\\tan30^\\circ}=\\sqrt{3}h$,\n$\\overline{BH}=\\dfrac{h}{\\tan45^\\circ}=h$이다.\n\n둘째, $\\overline{AH}+\\overline{HB}=\\overline{AB}$이므로\n$(\\sqrt{3}+1)h=24$이다.\n\n따라서\n$h=\\dfrac{24}{\\sqrt{3}+1}=12(\\sqrt{3}-1)$이고, 삼각형 $ABC$의 넓이는\n$\\dfrac12\\times24\\times12(\\sqrt{3}-1)=144(\\sqrt{3}-1)\\,\\mathrm{cm}^2$이다.\n\n셋째, $\\angle DAE=30^\\circ$이므로 두 변과 끼인각을 이용하면 삼각형 $ADE$의 넓이는\n$\\dfrac12\\times8\\times6\\times\\sin30^\\circ=12\\,\\mathrm{cm}^2$이다.\n\n따라서 구하는 넓이는\n$144(\\sqrt{3}-1)-12=144\\sqrt{3}-156\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$(144\\sqrt{3}-168)\\,\\mathrm{cm}^2$",
+"$(144\\sqrt{3}-156)\\,\\mathrm{cm}^2$",
+"$(72\\sqrt{3}-84)\\,\\mathrm{cm}^2$",
+"$(144\\sqrt{3}-144)\\,\\mathrm{cm}^2$",
+"$(144\\sqrt{3}-132)\\,\\mathrm{cm}^2$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-02-adv-005",
+"typeId": "set2-m32-02-u0m0s1t3",
+"twinGroup": "tw-set2-m32-02-u0m0s1t3",
+"diff": 5,
+"body": "평행사변형 모양의 정원 $ABCD$에서\n$\\overline{AD}=10\\,\\mathrm{m}$, $\\angle DAB=120^\\circ$, 대각선 $\\overline{BD}=10\\sqrt{7}\\,\\mathrm{m}$이다.\n\n변 $AB$ 위에 $\\overline{AE}=6\\,\\mathrm{m}$인 점 $E$를, 변 $AD$ 위에 $\\overline{AF}=4\\,\\mathrm{m}$인 점 $F$를 잡는다. 삼각형 $AEF$에는 화단을 만들고, 나머지 부분에는 잔디를 심으려고 한다.\n\n잔디를 심을 부분인 오각형 $EBCDF$의 넓이를 구하고, 풀이 과정을 서술하시오.",
+"solution": "첫째, $D$에서 직선 $AB$에 내린 수선의 발을 $H$라 하자. $\\angle DAB=120^\\circ$이므로 $H$는 $A$를 지나 $B$의 반대쪽으로 뻗은 연장선 위에 있다.\n\n$\\angle DAH=60^\\circ$이므로\n$\\overline{AH}=10\\cos60^\\circ=5\\,\\mathrm{m}$,\n$\\overline{DH}=10\\sin60^\\circ=5\\sqrt{3}\\,\\mathrm{m}$이다.\n\n둘째, $\\overline{AB}=x\\,\\mathrm{m}$라 하면 $\\overline{BH}=(x+5)\\,\\mathrm{m}$이다. 직각삼각형 $BHD$에서 피타고라스 정리에 따라\n$(x+5)^2+(5\\sqrt{3})^2=(10\\sqrt{7})^2$이다.\n\n따라서\n$(x+5)^2=625$이다.\n$x+5>0$이므로 $x+5=25$, 즉 $x=20$이다.\n\n셋째, 평행사변형의 넓이는 밑변과 높이의 곱이므로\n$20\\times5\\sqrt{3}=100\\sqrt{3}\\,\\mathrm{m}^2$이다.\n\n넷째, $F$에서 직선 $AB$까지의 거리는\n$4\\sin60^\\circ=2\\sqrt{3}\\,\\mathrm{m}$이다. 따라서 삼각형 $AEF$의 넓이는\n$\\dfrac12\\times6\\times2\\sqrt{3}=6\\sqrt{3}\\,\\mathrm{m}^2$이다.\n\n구하는 넓이는\n$100\\sqrt{3}-6\\sqrt{3}=94\\sqrt{3}\\,\\mathrm{m}^2$이다.\n\n[채점 기준]\n수선의 발의 위치를 설명하고 $\\overline{AH}$, $\\overline{DH}$를 구하면 $3$점.\n피타고라스 정리로 $\\overline{AB}$를 구하면 $3$점.\n평행사변형과 삼각형 $AEF$의 넓이를 각각 구하면 $2$점.\n잔디를 심을 부분의 넓이를 구하면 $2$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "주관식",
+"answer": "$94\\sqrt{3}\\,\\mathrm{m}^2$",
+"selfGrade": true
+},
+{
+"id": "set2-m32-02-adv-006",
+"typeId": "set2-m32-02-u0m0s1t3",
+"twinGroup": "tw-set2-m32-02-u0m0s1t3",
+"diff": 5,
+"body": "오목하지 않은 사각형 모양의 땅 $ABCD$를 측량하였다. 네 꼭짓점은 같은 수평면 위에 있고, $B$와 $D$는 대각선 $AC$가 놓인 직선의 서로 반대쪽에 있다.\n\n측량 결과는 다음과 같다.\n\n| 측량 항목 | 결과 |\n|---|---|\n| $\\angle BAC$ | $30^\\circ$ |\n| $\\angle BCA$ | $60^\\circ$ |\n| $\\angle CAD$ | $120^\\circ$ |\n| $\\overline{AD}$ | $12\\,\\mathrm{m}$ |\n| $\\overline{BD}$ | $12\\sqrt{7}\\,\\mathrm{m}$ |\n\n대각선 $AC$의 길이를 직접 측정하지 않고 이 땅의 넓이를 구하려고 한다. 사각형 $ABCD$의 넓이를 구하시오.",
+"solution": "첫째, $B$에서 직선 $AC$에 내린 수선의 발을 $H$라 하고, $\\overline{BH}=h\\,\\mathrm{m}$라 하자. 두 밑각이 예각이므로 $H$는 선분 $AC$ 안에 있다.\n\n탄젠트의 뜻에 따라\n$\\overline{AH}=\\dfrac{h}{\\tan30^\\circ}=\\sqrt{3}h$,\n$\\overline{HC}=\\dfrac{h}{\\tan60^\\circ}=\\dfrac{h}{\\sqrt{3}}$이다.\n\n따라서\n$\\overline{AC}=\\dfrac{4h}{\\sqrt{3}}\\,\\mathrm{m}$이다.\n\n둘째, $D$에서 직선 $AC$에 내린 수선의 발을 $G$라 하자. $\\angle CAD=120^\\circ$이므로 $G$는 $A$를 지나 $C$의 반대쪽으로 뻗은 연장선 위에 있다.\n\n$\\angle DAG=60^\\circ$이므로\n$\\overline{AG}=12\\cos60^\\circ=6\\,\\mathrm{m}$,\n$\\overline{DG}=12\\sin60^\\circ=6\\sqrt{3}\\,\\mathrm{m}$이다.\n\n셋째, 선분 $BD$를 빗변으로 하고 두 변이 각각 직선 $AC$와 평행하거나 수직인 직각삼각형을 만든다. 이 직각삼각형의 두 직각변의 길이는\n$(\\sqrt{3}h+6)\\,\\mathrm{m}$, $(h+6\\sqrt{3})\\,\\mathrm{m}$이다.\n특히 $B$와 $D$가 직선 $AC$의 반대쪽에 있으므로 두 높이를 더해야 한다.\n\n피타고라스 정리에 따라\n$(\\sqrt{3}h+6)^2+(h+6\\sqrt{3})^2=(12\\sqrt{7})^2$이다.\n\n정리하면\n$4h^2+24\\sqrt{3}h+144=1008$,\n$h^2+6\\sqrt{3}h-216=0$,\n$(h-6\\sqrt{3})(h+12\\sqrt{3})=0$이다.\n\n$h>0$이므로 $h=6\\sqrt{3}$이고,\n$\\overline{AC}=\\dfrac{4\\times6\\sqrt{3}}{\\sqrt{3}}=24\\,\\mathrm{m}$이다.\n\n넷째, 대각선 $AC$로 나눈 두 삼각형의 넓이를 더하면\n$\\dfrac12\\times24\\times(6\\sqrt{3}+6\\sqrt{3})=144\\sqrt{3}\\,\\mathrm{m}^2$이다.\n\n따라서 사각형 $ABCD$의 넓이는 $144\\sqrt{3}\\,\\mathrm{m}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "주관식",
+"answer": "$144\\sqrt{3}\\,\\mathrm{m}^2$",
+"selfGrade": true
+}
+]

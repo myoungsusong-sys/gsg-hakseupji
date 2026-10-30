@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-m32-02-con-001",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 1,
+"body": "직각삼각형 $\\mathrm{ABC}$에서 $\\angle C=90^\\circ$, $\\angle A=30^\\circ$, $\\overline{AC}=9\\,\\mathrm{cm}$이다. $\\overline{BC}$의 길이는?",
+"solution": "기준각 $\\angle A$에 대하여 $\\overline{AC}$는 인접변이고 $\\overline{BC}$는 대변이므로 탄젠트를 이용한다.\n$\\tan30^\\circ=\\dfrac{\\overline{BC}}{9}=\\dfrac{1}{\\sqrt{3}}$\n따라서 $\\overline{BC}=\\dfrac{9}{\\sqrt{3}}=3\\sqrt{3}\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{9}{2}\\,\\mathrm{cm}$",
+"$3\\sqrt{3}\\,\\mathrm{cm}$",
+"$6\\sqrt{3}\\,\\mathrm{cm}$",
+"$\\dfrac{9\\sqrt{3}}{2}\\,\\mathrm{cm}$",
+"$9\\sqrt{3}\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-02-con-002",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $\\mathrm{ABC}$에서 $\\overline{AB}=11\\,\\mathrm{cm}$, $\\overline{AC}=6\\,\\mathrm{cm}$, $\\angle A=60^\\circ$이다. $\\overline{BC}$의 길이는?",
+"solution": "점 $\\mathrm{C}$에서 선분 $\\overline{AB}$에 내린 수선의 발을 $\\mathrm{H}$라 하자.\n직각삼각형 $\\mathrm{ACH}$에서\n$\\overline{AH}=6\\cos60^\\circ=3\\,\\mathrm{cm}$,\n$\\overline{CH}=6\\sin60^\\circ=3\\sqrt{3}\\,\\mathrm{cm}$이다.\n따라서 $\\overline{BH}=11-3=8\\,\\mathrm{cm}$이다.\n직각삼각형 $\\mathrm{BCH}$에 피타고라스 정리를 적용하면\n$\\overline{BC}^{\\,2}=8^2+(3\\sqrt{3})^2=91$이다.\n길이는 양수이므로 $\\overline{BC}=\\sqrt{91}\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{37}\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$3\\sqrt{11}\\,\\mathrm{cm}$",
+"$\\sqrt{91}\\,\\mathrm{cm}$",
+"$2\\sqrt{37}\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-02-con-003",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 2,
+"body": "수평한 땅 위에 수직으로 선 나무가 있다. 나무 밑동에서 수평거리 $8\\sqrt{3}\\,\\mathrm{m}$인 지점에서 나무 꼭대기를 올려본각이 $30^\\circ$였다. 관찰자의 눈높이가 $1.6\\,\\mathrm{m}$일 때, 나무의 높이는?",
+"solution": "관찰자의 눈에서 나무까지 수평선을 그으면, 수평거리와 눈에서 꼭대기까지의 높이 차로 직각삼각형이 만들어진다.\n높이 차를 $h\\,\\mathrm{m}$라 하면\n$h=8\\sqrt{3}\\tan30^\\circ=8$이다.\n나무 전체 높이는 높이 차에 눈높이를 더한 값이므로\n$8+1.6=9.6\\,\\mathrm{m}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$8\\,\\mathrm{m}$",
+"$6.4\\,\\mathrm{m}$",
+"$(4\\sqrt{3}+1.6)\\,\\mathrm{m}$",
+"$25.6\\,\\mathrm{m}$",
+"$9.6\\,\\mathrm{m}$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-m32-02-con-004",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $\\mathrm{ABC}$에서 $\\overline{AB}=24\\,\\mathrm{cm}$, $\\angle A=30^\\circ$, $\\angle B=45^\\circ$이다. 점 $\\mathrm{C}$에서 선분 $\\overline{AB}$에 내린 수선의 발을 $\\mathrm{H}$라 할 때, 높이 $\\overline{CH}$를 구하고 풀이 과정을 서술하시오.",
+"solution": "높이 $\\overline{CH}=h\\,\\mathrm{cm}$라 하자.\n직각삼각형 $\\mathrm{ACH}$에서\n$\\tan30^\\circ=\\dfrac{h}{\\overline{AH}}$이므로 $\\overline{AH}=\\sqrt{3}h\\,\\mathrm{cm}$이다.\n직각삼각형 $\\mathrm{BCH}$에서\n$\\tan45^\\circ=\\dfrac{h}{\\overline{BH}}$이므로 $\\overline{BH}=h\\,\\mathrm{cm}$이다.\n수선의 발 $\\mathrm{H}$가 선분 $\\overline{AB}$ 위에 있으므로\n$\\sqrt{3}h+h=24$이다.\n따라서\n$h=\\dfrac{24}{\\sqrt{3}+1}=\\dfrac{24(\\sqrt{3}-1)}{2}=12(\\sqrt{3}-1)$이다.\n그러므로 높이는 $12(\\sqrt{3}-1)\\,\\mathrm{cm}$이다.\n[채점 기준]\n양쪽 직각삼각형에서 탄젠트를 이용하여 $\\overline{AH}$와 $\\overline{BH}$를 높이로 나타내기: $2$점\n밑변의 길이를 이용하여 $\\sqrt{3}h+h=24$ 세우기: $1$점\n방정식을 풀어 높이를 단위와 함께 구하기: $2$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "주관식",
+"answer": "$12(\\sqrt{3}-1)\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "set2-m32-02-con-005",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 1,
+"body": "삼각형 $\\mathrm{ABC}$에서 $\\overline{AB}=10\\,\\mathrm{cm}$, $\\overline{AC}=6\\,\\mathrm{cm}$, $\\angle A=120^\\circ$이다. 이 삼각형의 넓이는?",
+"solution": "점 $\\mathrm{C}$에서 직선 $\\mathrm{AB}$에 내린 수선의 발을 $\\mathrm{H}$라 하면, $\\mathrm{H}$는 선분 $\\overline{AB}$를 점 $\\mathrm{A}$ 쪽으로 연장한 부분에 있다.\n$\\angle CAH=180^\\circ-120^\\circ=60^\\circ$이므로\n$\\overline{CH}=6\\sin60^\\circ=3\\sqrt{3}\\,\\mathrm{cm}$이다.\n삼각형의 넓이는 밑변과 높이의 곱의 절반이므로\n$\\dfrac{1}{2}\\times10\\times3\\sqrt{3}=15\\sqrt{3}\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$15\\,\\mathrm{cm}^2$",
+"$30\\,\\mathrm{cm}^2$",
+"$15\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$30\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$60\\sqrt{3}\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-02-con-006",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 2,
+"body": "삼각형 $\\mathrm{ABC}$의 넓이가 $30\\sqrt{3}\\,\\mathrm{cm}^2$이고, $\\overline{AB}=12\\,\\mathrm{cm}$, $\\angle A=60^\\circ$이다. $\\overline{AC}$의 길이는?",
+"solution": "선분 $\\overline{AB}$를 밑변으로 하는 높이를 $h\\,\\mathrm{cm}$라 하면\n$\\dfrac{1}{2}\\times12\\times h=30\\sqrt{3}$이므로 $h=5\\sqrt{3}$이다.\n점 $\\mathrm{C}$에서 선분 $\\overline{AB}$에 수선을 내리면\n$h=\\overline{AC}\\sin60^\\circ$이다.\n따라서\n$\\overline{AC}=\\dfrac{5\\sqrt{3}}{\\sin60^\\circ}=\\dfrac{5\\sqrt{3}}{\\frac{\\sqrt{3}}{2}}=10\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$10\\sqrt{3}\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$",
+"$20\\sqrt{3}\\,\\mathrm{cm}$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m32-02-con-007",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 2,
+"body": "평행사변형 $\\mathrm{ABCD}$에서 $\\overline{AB}=9\\,\\mathrm{cm}$, $\\overline{AD}=8\\,\\mathrm{cm}$, $\\angle DAB=60^\\circ$이다. 선분 $\\overline{AB}$를 밑변으로 하는 높이를 $h$, 평행사변형의 넓이를 $S$라 할 때, $h$와 $S$를 바르게 짝 지은 것은?",
+"solution": "점 $\\mathrm{D}$에서 선분 $\\overline{AB}$에 내린 수선의 발을 $\\mathrm{H}$라 하자.\n직각삼각형 $\\mathrm{ADH}$에서 높이는\n$h=8\\sin60^\\circ=4\\sqrt{3}\\,\\mathrm{cm}$이다.\n평행사변형의 넓이는 밑변과 높이의 곱이므로\n$S=9\\times4\\sqrt{3}=36\\sqrt{3}\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$h=4\\,\\mathrm{cm}$, $S=36\\,\\mathrm{cm}^2$",
+"$h=4\\sqrt{3}\\,\\mathrm{cm}$, $S=18\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$h=\\dfrac{9\\sqrt{3}}{2}\\,\\mathrm{cm}$, $S=\\dfrac{81\\sqrt{3}}{2}\\,\\mathrm{cm}^2$",
+"$h=8\\sqrt{3}\\,\\mathrm{cm}$, $S=72\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$h=4\\sqrt{3}\\,\\mathrm{cm}$, $S=36\\sqrt{3}\\,\\mathrm{cm}^2$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-m32-02-con-008",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 2,
+"body": "오목하지 않은 사각형 $\\mathrm{ABCD}$에서 대각선 $\\overline{AC}$의 길이는 $10\\,\\mathrm{cm}$이다. $\\overline{AB}=6\\,\\mathrm{cm}$, $\\overline{CD}=8\\,\\mathrm{cm}$, $\\angle BAC=30^\\circ$, $\\angle ACD=60^\\circ$일 때, 사각형 $\\mathrm{ABCD}$의 넓이는?",
+"solution": "대각선 $\\overline{AC}$를 그으면 사각형은 두 삼각형 $\\mathrm{ABC}$와 $\\mathrm{ACD}$로 나뉜다.\n삼각형 $\\mathrm{ABC}$에서 밑변 $\\overline{AC}$에 대한 높이는\n$6\\sin30^\\circ=3\\,\\mathrm{cm}$이므로 넓이는\n$\\dfrac{1}{2}\\times10\\times3=15\\,\\mathrm{cm}^2$이다.\n삼각형 $\\mathrm{ACD}$에서 밑변 $\\overline{AC}$에 대한 높이는\n$8\\sin60^\\circ=4\\sqrt{3}\\,\\mathrm{cm}$이므로 넓이는\n$\\dfrac{1}{2}\\times10\\times4\\sqrt{3}=20\\sqrt{3}\\,\\mathrm{cm}^2$이다.\n따라서 사각형의 넓이는 두 삼각형의 넓이의 합인\n$(15+20\\sqrt{3})\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$(15+40\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$(15+20\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$(30+20\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$(30+40\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$35\\sqrt{3}\\,\\mathrm{cm}^2$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-02-con-009",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=14\\,\\mathrm{cm}$, $\\overline{AC}=10\\,\\mathrm{cm}$, $\\angle BAC=60^\\circ$이다. 꼭짓점 $C$에서 변 $AB$에 내린 수선의 발을 $H$라 할 때, 높이 $\\overline{CH}$의 길이는?",
+"solution": "첫째, 직각삼각형 $ACH$에서 빗변은 $AC$이고, $\\angle CAH$의 대변은 $CH$이다.\n둘째, 사인의 뜻에 따라 $\\sin60^\\circ=\\dfrac{\\overline{CH}}{10}$이다.\n따라서 $\\overline{CH}=10\\times\\dfrac{\\sqrt{3}}{2}=5\\sqrt{3}\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$5\\,\\mathrm{cm}$",
+"$5\\sqrt{2}\\,\\mathrm{cm}$",
+"$5\\sqrt{3}\\,\\mathrm{cm}$",
+"$7\\sqrt{3}\\,\\mathrm{cm}$",
+"$10\\sqrt{3}\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-02-con-010",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=9\\,\\mathrm{cm}$, $\\overline{AC}=8\\,\\mathrm{cm}$, $\\angle BAC=30^\\circ$일 때, 삼각형 $ABC$의 넓이는?",
+"solution": "첫째, 주어진 각은 길이를 아는 두 변 $AB$, $AC$의 끼인각이다.\n둘째, 삼각형의 넓이는 두 변의 길이의 곱에 끼인각의 사인과 $\\dfrac12$을 곱하여 구한다.\n따라서 넓이는 $\\dfrac12\\times9\\times8\\times\\sin30^\\circ=18\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$18\\,\\mathrm{cm}^2$",
+"$18\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$36\\,\\mathrm{cm}^2$",
+"$36\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$72\\,\\mathrm{cm}^2$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m32-02-con-011",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=9\\,\\mathrm{cm}$, $\\overline{AC}=6\\,\\mathrm{cm}$, $\\angle BAC=120^\\circ$이다. 변 $BC$의 길이는?\n[[그림:/figs/set2-m32-02/con011.png]]",
+"solution": "첫째, 꼭짓점 $C$에서 직선 $AB$에 수선 $CH$를 그으면, 수선의 발 $H$는 변 $AB$를 점 $A$ 쪽으로 연장한 부분에 있다.\n$\\angle CAH=180^\\circ-120^\\circ=60^\\circ$이므로\n$\\overline{AH}=6\\cos60^\\circ=3\\,\\mathrm{cm}$,\n$\\overline{CH}=6\\sin60^\\circ=3\\sqrt{3}\\,\\mathrm{cm}$이다.\n둘째, 점의 순서가 $H$, $A$, $B$이므로 $\\overline{BH}=3+9=12\\,\\mathrm{cm}$이다.\n셋째, 직각삼각형 $BCH$에 피타고라스 정리를 적용하면\n$\\overline{BC}^{\\,2}=12^2+(3\\sqrt{3})^2=171$이다.\n따라서 $\\overline{BC}=3\\sqrt{19}\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$3\\sqrt{7}\\,\\mathrm{cm}$",
+"$3\\sqrt{13}\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$3\\sqrt{19}\\,\\mathrm{cm}$",
+"$3\\sqrt{21}\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-02-con-012",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=12\\,\\mathrm{cm}$, $\\overline{AC}=10\\,\\mathrm{cm}$, $\\angle BAC=150^\\circ$이다. 변 $AB$를 밑변으로 생각할 때, 삼각형 $ABC$의 넓이는?",
+"solution": "첫째, 꼭짓점 $C$에서 직선 $AB$에 내린 수선의 발을 $H$라 하면, 점 $H$는 변 $AB$를 점 $A$ 쪽으로 연장한 부분에 있다.\n둘째, $\\angle CAH=180^\\circ-150^\\circ=30^\\circ$이므로 높이는\n$\\overline{CH}=10\\sin30^\\circ=5\\,\\mathrm{cm}$이다.\n셋째, 삼각형의 넓이는 밑변과 높이의 곱의 절반이므로\n$\\dfrac12\\times12\\times5=30\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$15\\,\\mathrm{cm}^2$",
+"$30\\,\\mathrm{cm}^2$",
+"$30\\sqrt{3}\\,\\mathrm{cm}^2$",
+"$60\\,\\mathrm{cm}^2$",
+"$60\\sqrt{3}\\,\\mathrm{cm}^2$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-02-con-013",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 2,
+"body": "평행사변형 $ABCD$에서 $\\overline{AB}=12\\,\\mathrm{cm}$, $\\angle DAB=60^\\circ$이고, 넓이는 $36\\sqrt{3}\\,\\mathrm{cm}^2$이다. 변 $AD$의 길이는?",
+"solution": "첫째, 평행사변형의 넓이는 이웃한 두 변의 길이의 곱에 끼인각의 사인을 곱한 값이다.\n둘째, 변 $AD$의 길이를 $x\\,\\mathrm{cm}$라 하면\n$12x\\sin60^\\circ=36\\sqrt{3}$이다.\n따라서 $6\\sqrt{3}x=36\\sqrt{3}$에서 $x=6$이다.\n즉, $\\overline{AD}=6\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$3\\,\\mathrm{cm}$",
+"$3\\sqrt{3}\\,\\mathrm{cm}$",
+"$6\\sqrt{3}\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m32-02-con-014",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 2,
+"body": "그림과 같이 오목하지 않은 사각형 $ABCD$에서 $\\overline{AC}=10\\,\\mathrm{cm}$, $\\overline{AB}=8\\,\\mathrm{cm}$, $\\overline{AD}=6\\,\\mathrm{cm}$이다. $\\angle BAC=30^\\circ$, $\\angle CAD=60^\\circ$일 때, 사각형 $ABCD$의 넓이는?\n[[그림:/figs/set2-m32-02/con014.png]]",
+"solution": "첫째, 대각선 $AC$를 기준으로 사각형을 삼각형 $ABC$와 삼각형 $ACD$로 나눈다.\n둘째, 삼각형 $ABC$의 넓이는\n$\\dfrac12\\times10\\times8\\times\\sin30^\\circ=20\\,\\mathrm{cm}^2$이다.\n셋째, 삼각형 $ACD$의 넓이는\n$\\dfrac12\\times10\\times6\\times\\sin60^\\circ=15\\sqrt{3}\\,\\mathrm{cm}^2$이다.\n따라서 사각형 $ABCD$의 넓이는 두 삼각형의 넓이의 합인 $(20+15\\sqrt{3})\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$50\\,\\mathrm{cm}^2$",
+"$(20+30\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$(40+15\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$(40+30\\sqrt{3})\\,\\mathrm{cm}^2$",
+"$(20+15\\sqrt{3})\\,\\mathrm{cm}^2$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-m32-02-con-015",
+"typeId": "set2-m32-02-u0m0s0t2",
+"twinGroup": "tw-set2-m32-02-u0m0s0t2",
+"diff": 2,
+"body": "그림과 같이 오목하지 않은 사각형 $ABCD$에서 $\\overline{AC}=8\\,\\mathrm{cm}$, $\\overline{AB}=6\\,\\mathrm{cm}$, $\\angle BAC=30^\\circ$, $\\angle CAD=90^\\circ$이다. 사각형 $ABCD$의 넓이가 $48\\,\\mathrm{cm}^2$일 때, 변 $AD$의 길이는?\n[[그림:/figs/set2-m32-02/con015.png]]",
+"solution": "첫째, 삼각형 $ABC$의 넓이는\n$\\dfrac12\\times8\\times6\\times\\sin30^\\circ=12\\,\\mathrm{cm}^2$이다.\n둘째, 사각형의 넓이는 두 삼각형의 넓이의 합이므로 삼각형 $ACD$의 넓이는 $48-12=36\\,\\mathrm{cm}^2$이다.\n셋째, $\\angle CAD=90^\\circ$이므로 삼각형 $ACD$에서 밑변을 $AC$로 잡으면 높이는 $AD$이다.\n따라서 $\\dfrac12\\times8\\times\\overline{AD}=36$에서 $\\overline{AD}=9\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "객관식",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-02-con-016",
+"typeId": "set2-m32-02-u0m0s1t2",
+"twinGroup": "tw-set2-m32-02-u0m0s1t2",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=12\\,\\mathrm{cm}$, $\\angle CAB=45^\\circ$, $\\angle CBA=60^\\circ$이다. 꼭짓점 $C$에서 변 $AB$에 수선을 내려 삼각형 $ABC$의 넓이를 구하고, 그 풀이 과정을 서술하시오.\n[[그림:/figs/set2-m32-02/con016.png]]",
+"solution": "첫째, 꼭짓점 $C$에서 변 $AB$에 내린 수선의 발을 $H$라 하고, $\\overline{CH}=h\\,\\mathrm{cm}$라 하자. 두 밑각이 예각이므로 점 $H$는 선분 $AB$ 위에 있다.\n둘째, 두 직각삼각형에서 탄젠트의 뜻을 이용하면\n$\\tan45^\\circ=\\dfrac{\\overline{CH}}{\\overline{AH}}$이므로 $\\overline{AH}=h\\,\\mathrm{cm}$이고,\n$\\tan60^\\circ=\\dfrac{\\overline{CH}}{\\overline{BH}}$이므로 $\\overline{BH}=\\dfrac{h}{\\sqrt{3}}\\,\\mathrm{cm}$이다.\n셋째, $\\overline{AH}+\\overline{BH}=\\overline{AB}$이므로\n$h+\\dfrac{h}{\\sqrt{3}}=12$이다.\n이를 풀면 $h=\\dfrac{12\\sqrt{3}}{\\sqrt{3}+1}=18-6\\sqrt{3}$이다.\n따라서 삼각형 $ABC$의 넓이는\n$\\dfrac12\\times12\\times(18-6\\sqrt{3})=108-36\\sqrt{3}\\,\\mathrm{cm}^2$이다.\n[채점 기준]\n수선을 긋고 탄젠트를 이용하여 밑변의 두 부분을 높이로 나타내기: $2$점\n밑변의 길이 관계로 방정식을 세우고 높이를 구하기: $2$점\n삼각형의 넓이를 구하고 단위를 바르게 쓰기: $1$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 02 삼각비의 활용",
+"kind": "주관식",
+"answer": "$(108-36\\sqrt{3})\\,\\mathrm{cm}^2$",
+"selfGrade": true
+}
+]

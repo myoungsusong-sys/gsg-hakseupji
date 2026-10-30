@@ -1,0 +1,278 @@
+[
+{
+"id": "set2-m22-08-con-001",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 1,
+"body": "직각삼각형의 세 변을 각각 한 변으로 하는 정사각형을 만들었다. 빗변에 붙인 정사각형의 넓이가 $289\\,\\mathrm{cm}^2$이고, 나머지 두 정사각형 중 하나의 넓이가 $64\\,\\mathrm{cm}^2$일 때, 다른 정사각형의 넓이는?",
+"solution": "빗변에 붙인 정사각형의 넓이는 다른 두 정사각형의 넓이의 합과 같다.\n따라서 구하는 넓이는\n$289-64=225\\,(\\mathrm{cm}^2)$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$15\\,\\mathrm{cm}^2$",
+"$161\\,\\mathrm{cm}^2$",
+"$225\\,\\mathrm{cm}^2$",
+"$289\\,\\mathrm{cm}^2$",
+"$353\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-con-002",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 2,
+"body": "두 직각삼각형 $\\triangle ABC$와 $\\triangle ACD$가 변 $\\overline{AC}$를 공유한다. $\\angle ABC=\\angle ACD=90^\\circ$이고, $\\overline{AB}=12\\,\\mathrm{cm}$, $\\overline{BC}=16\\,\\mathrm{cm}$, $\\overline{CD}=21\\,\\mathrm{cm}$일 때, $\\overline{AD}$의 길이는?",
+"solution": "$\\triangle ABC$에서 빗변은 $\\overline{AC}$이므로 피타고라스 정리에 의하여\n$\\overline{AC}^{\\,2}=12^2+16^2=400$\n이다. 따라서 $\\overline{AC}=20\\,\\mathrm{cm}$이다.\n\n$\\triangle ACD$에서 빗변은 $\\overline{AD}$이므로\n$\\overline{AD}^{\\,2}=20^2+21^2=841$\n이다. 길이는 양수이므로 $\\overline{AD}=29\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$20\\,\\mathrm{cm}$",
+"$25\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$",
+"$29\\,\\mathrm{cm}$",
+"$41\\,\\mathrm{cm}$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-08-con-003",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 2,
+"body": "〈보기〉는 네 삼각형의 세 변의 길이를 나타낸 것이다. 직각삼각형인 것을 모두 고른 것은?\n〈보기〉\nㄱ. $9\\,\\mathrm{cm}$, $12\\,\\mathrm{cm}$, $16\\,\\mathrm{cm}$\nㄴ. $12\\,\\mathrm{cm}$, $16\\,\\mathrm{cm}$, $20\\,\\mathrm{cm}$\nㄷ. $10\\,\\mathrm{cm}$, $24\\,\\mathrm{cm}$, $26\\,\\mathrm{cm}$\nㄹ. $8\\,\\mathrm{cm}$, $14\\,\\mathrm{cm}$, $17\\,\\mathrm{cm}$",
+"solution": "가장 긴 변의 제곱이 나머지 두 변의 제곱의 합과 같은지 확인한다.\n\nㄱ. $9^2+12^2=225\\ne256=16^2$이므로 직각삼각형이 아니다.\n\nㄴ. $12^2+16^2=400=20^2$이므로 직각삼각형이다.\n\nㄷ. $10^2+24^2=676=26^2$이므로 직각삼각형이다.\n\nㄹ. $8^2+14^2=260\\ne289=17^2$이므로 직각삼각형이 아니다.\n\n따라서 직각삼각형인 것은 ㄴ, ㄷ이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-con-004",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 2,
+"body": "정사각형 $ABCD$의 변 $\\overline{AB}$, $\\overline{BC}$, $\\overline{CD}$, $\\overline{DA}$ 위에 각각 점 $P$, $Q$, $R$, $S$를 잡았다. 각 변은 다음과 같이 나뉜다.\n$\\overline{AP}=\\overline{BQ}=\\overline{CR}=\\overline{DS}=a$,\n$\\overline{PB}=\\overline{QC}=\\overline{RD}=\\overline{SA}=b$이다.\n\n네 모서리의 직각삼각형은 모두 합동이고, 빗변의 길이는 $c$이다. 사각형 $PQRS$가 정사각형인 이유를 설명하고, 정사각형 $ABCD$의 넓이를 두 방법으로 나타내어 $a^2+b^2=c^2$임을 설명하시오.",
+"solution": "네 직각삼각형이 합동이므로 사각형 $PQRS$의 네 변의 길이는 모두 $c$이다.\n\n점 $P$에서 $\\angle APS$와 $\\angle BPQ$는 합동인 직각삼각형의 서로 다른 두 예각이므로 그 합은 $90^\\circ$이다. 따라서\n$\\angle SPQ=180^\\circ-90^\\circ=90^\\circ$\n이다. 다른 세 각도 같은 방법으로 직각임을 알 수 있으므로 사각형 $PQRS$는 정사각형이다.\n\n큰 정사각형의 한 변의 길이는 $a+b$이므로 넓이는 $(a+b)^2$이다. 또 네 직각삼각형과 가운데 정사각형의 넓이를 더하면\n$4\\times\\dfrac{ab}{2}+c^2$\n이다.\n\n따라서\n$(a+b)^2=4\\times\\dfrac{ab}{2}+c^2$,\n$a^2+2ab+b^2=2ab+c^2$\n이므로 $a^2+b^2=c^2$이다.\n\n[채점 기준]\n- 네 변의 길이가 같고 네 각이 직각임을 설명: $2$점\n- 큰 정사각형의 넓이를 두 방법으로 나타내어 등식 세우기: $2$점\n- 등식을 정리하여 $a^2+b^2=c^2$ 도출: $1$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "주관식",
+"answer": "사각형 $PQRS$는 네 변의 길이가 모두 $c$이고 네 각이 모두 직각인 정사각형이며, $(a+b)^2=4\\times\\dfrac{ab}{2}+c^2$에서 $a^2+b^2=c^2$이다.",
+"selfGrade": true
+},
+{
+"id": "set2-m22-08-con-005",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 2,
+"body": "직사각형 $ABCD$에서 $\\overline{AB}=14\\,\\mathrm{cm}$, $\\overline{BC}=48\\,\\mathrm{cm}$이다. 두 대각선의 교점을 $O$라 할 때, $\\overline{AO}$의 길이는?",
+"solution": "직각삼각형 $\\triangle ABC$에서 피타고라스 정리에 의하여\n$\\overline{AC}^{\\,2}=14^2+48^2=2500$\n이다. 따라서 $\\overline{AC}=50\\,\\mathrm{cm}$이다.\n\n직사각형의 두 대각선은 서로를 이등분하므로\n$\\overline{AO}=\\dfrac{50}{2}=25\\,(\\mathrm{cm})$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$12\\,\\mathrm{cm}$",
+"$24\\,\\mathrm{cm}$",
+"$25\\,\\mathrm{cm}$",
+"$31\\,\\mathrm{cm}$",
+"$50\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-con-006",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 2,
+"body": "$\\overline{AB}=\\overline{AC}=25\\,\\mathrm{cm}$, $\\overline{BC}=14\\,\\mathrm{cm}$인 이등변삼각형 $ABC$의 넓이는?",
+"solution": "점 $A$에서 밑변 $\\overline{BC}$에 내린 수선의 발을 $H$라 하자. 이등변삼각형의 꼭짓점에서 밑변에 내린 수선은 밑변을 이등분하므로\n$\\overline{BH}=\\dfrac{14}{2}=7\\,(\\mathrm{cm})$\n이다.\n\n직각삼각형 $\\triangle ABH$에서\n$\\overline{AH}^{\\,2}=25^2-7^2=576$\n이므로 높이는 $24\\,\\mathrm{cm}$이다.\n\n따라서 삼각형의 넓이는\n$\\dfrac{1}{2}\\times14\\times24=168\\,(\\mathrm{cm}^2)$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$84\\,\\mathrm{cm}^2$",
+"$168\\,\\mathrm{cm}^2$",
+"$175\\,\\mathrm{cm}^2$",
+"$336\\,\\mathrm{cm}^2$",
+"$350\\,\\mathrm{cm}^2$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m22-08-con-007",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 2,
+"body": "좌표평면 위의 두 점 $A(-4,\\,3)$, $B(8,\\,-2)$ 사이의 거리는?",
+"solution": "점 $H(8,\\,3)$을 잡으면 $\\overline{AH}$는 가로선 위에, $\\overline{BH}$는 세로선 위에 있으므로 $\\angle AHB=90^\\circ$이다.\n\n가로 길이는\n$\\overline{AH}=8-(-4)=12$,\n세로 길이는\n$\\overline{BH}=3-(-2)=5$\n이다.\n\n피타고라스 정리에 의하여\n$\\overline{AB}^{\\,2}=12^2+5^2=169$\n이므로 두 점 사이의 거리는 $13$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{41}$",
+"$\\sqrt{145}$",
+"$13$",
+"$17$",
+"$169$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-con-008",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 3,
+"body": "사다리꼴 $ABCD$에서 $\\overline{AB}\\parallel\\overline{DC}$이고, $\\angle A=\\angle D=90^\\circ$이다. $\\overline{AB}=26\\,\\mathrm{cm}$, $\\overline{DC}=11\\,\\mathrm{cm}$, $\\overline{BC}=25\\,\\mathrm{cm}$일 때, 이 사다리꼴의 넓이는?",
+"solution": "점 $C$에서 $\\overline{AB}$에 내린 수선의 발을 $H$라 하자. 사각형 $AHCD$가 직사각형이므로\n$\\overline{AH}=\\overline{DC}=11\\,\\mathrm{cm}$\n이다. 따라서\n$\\overline{BH}=26-11=15\\,(\\mathrm{cm})$\n이다.\n\n직각삼각형 $\\triangle BCH$에서 피타고라스 정리에 의하여\n$\\overline{CH}^{\\,2}=25^2-15^2=400$\n이므로 사다리꼴의 높이는 $20\\,\\mathrm{cm}$이다.\n\n따라서 사다리꼴의 넓이는\n$\\dfrac{(26+11)\\times20}{2}=370\\,(\\mathrm{cm}^2)$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$277.5\\,\\mathrm{cm}^2$",
+"$370\\,\\mathrm{cm}^2$",
+"$462.5\\,\\mathrm{cm}^2$",
+"$520\\,\\mathrm{cm}^2$",
+"$740\\,\\mathrm{cm}^2$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m22-08-con-009",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$의 세 변을 각각 한 변으로 하는 정사각형을 그렸다. 빗변에 붙인 정사각형의 넓이가 $400\\,\\mathrm{cm}^2$이고, 변 $\\overline{AB}$에 붙인 정사각형의 넓이가 $144\\,\\mathrm{cm}^2$일 때, 변 $\\overline{AC}$에 붙인 정사각형의 넓이는?",
+"solution": "직각의 맞은편 변인 $\\overline{BC}$가 빗변이다.\n피타고라스 정리에 따라 두 직각변에 붙인 정사각형의 넓이의 합은 빗변에 붙인 정사각형의 넓이와 같다.\n따라서 구하는 넓이는\n$400-144=256\\,\\mathrm{cm}^2$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$16\\,\\mathrm{cm}^2$",
+"$112\\,\\mathrm{cm}^2$",
+"$128\\,\\mathrm{cm}^2$",
+"$256\\,\\mathrm{cm}^2$",
+"$544\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-08-con-010",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 2,
+"body": "세 변의 길이가 각각 $20\\,\\mathrm{cm}$, $21\\,\\mathrm{cm}$, $29\\,\\mathrm{cm}$인 삼각형의 넓이는?",
+"solution": "가장 긴 변의 길이는 $29\\,\\mathrm{cm}$이다.\n$20^2+21^2=400+441=841=29^2$\n이므로 피타고라스 정리의 역에 따라 직각삼각형이다.\n길이가 각각 $20\\,\\mathrm{cm}$, $21\\,\\mathrm{cm}$인 두 변이 직각을 이루므로 넓이는\n$\\dfrac{1}{2}\\times20\\times21=210\\,\\mathrm{cm}^2$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$210\\,\\mathrm{cm}^2$",
+"$290\\,\\mathrm{cm}^2$",
+"$304.5\\,\\mathrm{cm}^2$",
+"$420\\,\\mathrm{cm}^2$",
+"$609\\,\\mathrm{cm}^2$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m22-08-con-011",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 2,
+"body": "세 변의 길이가 각각 $8\\,\\mathrm{cm}$, $10\\,\\mathrm{cm}$, $x\\,\\mathrm{cm}$인 직각삼각형이 있다. 가능한 $x^2$의 값을 모두 바르게 짝 지은 것은?",
+"solution": "빗변은 세 변 중 가장 길므로 길이가 $8\\,\\mathrm{cm}$인 변은 빗변이 될 수 없다.\n\n길이가 $10\\,\\mathrm{cm}$인 변이 빗변이면\n$8^2+x^2=10^2$\n이므로\n$x^2=100-64=36$\n이다.\n\n길이가 $x\\,\\mathrm{cm}$인 변이 빗변이면\n$x^2=8^2+10^2=164$\n이다.\n\n두 경우 모두 실제로 직각삼각형을 이루므로 가능한 값은 $36$, $164$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$4,\\ 324$",
+"$36,\\ 100$",
+"$64,\\ 164$",
+"$100,\\ 164$",
+"$36,\\ 164$"
+],
+"answer": "⑤"
+},
+{
+"id": "set2-m22-08-con-012",
+"typeId": "set2-m22-08-u0m0s0t2",
+"twinGroup": "tw-set2-m22-08-u0m0s0t2",
+"diff": 2,
+"body": "선분 $\\overline{AC}$의 양쪽에 두 직각삼각형 $ABC$, $ACD$가 있다. $\\angle BAC=\\angle CAD=90^\\circ$이고, $\\overline{AB}=12\\,\\mathrm{cm}$, $\\overline{BC}=20\\,\\mathrm{cm}$, $\\overline{AD}=30\\,\\mathrm{cm}$일 때, $\\overline{CD}$의 길이는?",
+"solution": "직각삼각형 $ABC$에서 빗변은 $\\overline{BC}$이다. 피타고라스 정리에 따라\n$\\overline{AC}^{\\,2}=20^2-12^2=256$\n이므로\n$\\overline{AC}=16\\,\\mathrm{cm}$\n이다.\n\n직각삼각형 $ACD$에서는 $\\overline{CD}$가 빗변이므로\n$\\overline{CD}^{\\,2}=16^2+30^2=1156=34^2$\n이다.\n따라서 $\\overline{CD}=34\\,\\mathrm{cm}$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$14\\,\\mathrm{cm}$",
+"$20\\,\\mathrm{cm}$",
+"$34\\,\\mathrm{cm}$",
+"$46\\,\\mathrm{cm}$",
+"$1156\\,\\mathrm{cm}$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-con-013",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 2,
+"body": "직사각형 $ABCD$의 두 대각선의 교점을 $O$라 하자. $\\overline{AB}=16\\,\\mathrm{cm}$, $\\overline{BC}=30\\,\\mathrm{cm}$일 때, $\\overline{BO}$의 길이는?",
+"solution": "직각삼각형 $ABC$에서 피타고라스 정리를 적용하면\n$\\overline{AC}^{\\,2}=16^2+30^2=1156=34^2$\n이므로\n$\\overline{AC}=34\\,\\mathrm{cm}$\n이다.\n\n직사각형의 두 대각선은 길이가 같고 서로를 이등분하므로\n$\\overline{BO}=\\dfrac{\\overline{BD}}{2}=\\dfrac{\\overline{AC}}{2}=17\\,\\mathrm{cm}$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$7\\,\\mathrm{cm}$",
+"$17\\,\\mathrm{cm}$",
+"$23\\,\\mathrm{cm}$",
+"$34\\,\\mathrm{cm}$",
+"$46\\,\\mathrm{cm}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m22-08-con-014",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 2,
+"body": "$\\overline{AB}=\\overline{AC}=17\\,\\mathrm{cm}$, $\\overline{BC}=16\\,\\mathrm{cm}$인 이등변삼각형 $ABC$의 넓이는?",
+"solution": "꼭짓점 $A$에서 밑변 $\\overline{BC}$에 내린 수선의 발을 $H$라 하자.\n이등변삼각형의 꼭짓점에서 밑변에 내린 수선은 밑변을 이등분하므로\n$\\overline{BH}=\\dfrac{16}{2}=8\\,\\mathrm{cm}$\n이다.\n\n직각삼각형 $ABH$에서\n$\\overline{AH}^{\\,2}=17^2-8^2=225$\n이므로 높이는\n$\\overline{AH}=15\\,\\mathrm{cm}$\n이다.\n\n따라서 삼각형 $ABC$의 넓이는\n$\\dfrac{1}{2}\\times16\\times15=120\\,\\mathrm{cm}^2$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$64\\,\\mathrm{cm}^2$",
+"$128\\,\\mathrm{cm}^2$",
+"$136\\,\\mathrm{cm}^2$",
+"$120\\,\\mathrm{cm}^2$",
+"$240\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-08-con-015",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 2,
+"body": "좌표평면 위의 두 점 $A(-5,\\,3)$, $B(7,\\,-2)$ 사이의 거리는?",
+"solution": "점 $H(7,\\,3)$을 잡으면 $\\overline{AH}$는 수평이고 $\\overline{BH}$는 수직이므로 삼각형 $AHB$는 직각삼각형이다.\n두 직각변의 길이는 각각\n$\\overline{AH}=7-(-5)=12$,\n$\\overline{BH}=3-(-2)=5$\n이다.\n\n피타고라스 정리에 따라\n$\\overline{AB}^{\\,2}=12^2+5^2=169$\n이므로 두 점 사이의 거리는\n$\\overline{AB}=13$\n이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{29}$",
+"$\\sqrt{145}$",
+"$13$",
+"$17$",
+"$169$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-con-016",
+"typeId": "set2-m22-08-u0m0s1t2",
+"twinGroup": "tw-set2-m22-08-u0m0s1t2",
+"diff": 3,
+"body": "직사각형 모양의 종이 $ABCD$에서 $\\overline{AB}=10\\,\\mathrm{cm}$, $\\overline{AD}=6\\,\\mathrm{cm}$이다. 꼭짓점 $B$가 꼭짓점 $D$에 겹치도록 접었을 때, 접는 선과 선분 $\\overline{AB}$의 교점을 $P$라 하자. $\\overline{AP}$의 길이를 구하고, 접어서 같아지는 두 선분을 이용하여 풀이 과정을 서술하시오.",
+"solution": "접는 선 위의 점 $P$는 접어도 움직이지 않고, 점 $B$는 점 $D$에 겹친다. 따라서\n$\\overline{PB}=\\overline{PD}$\n이다.\n\n$\\overline{AP}=x\\,\\mathrm{cm}$라 하면\n$\\overline{PB}=\\overline{PD}=(10-x)\\,\\mathrm{cm}$\n이다.\n\n$\\angle PAD=90^\\circ$이므로 직각삼각형 $APD$에서 피타고라스 정리를 적용하면\n$x^2+6^2=(10-x)^2$\n이다.\n\n이를 정리하면\n$x^2+36=100-20x+x^2$,\n$20x=64$,\n$x=\\dfrac{16}{5}$\n이다.\n\n따라서 $\\overline{AP}=\\dfrac{16}{5}\\,\\mathrm{cm}$이다.\n\n[채점 기준]\n- 접기에 의해 $\\overline{PB}=\\overline{PD}$임을 설명함: $1$점\n- $\\overline{AP}=x\\,\\mathrm{cm}$로 놓고 $x^2+6^2=(10-x)^2$을 세움: $2$점\n- 방정식을 풀어 $\\overline{AP}=\\dfrac{16}{5}\\,\\mathrm{cm}$를 구함: $2$점",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "주관식",
+"answer": "$\\dfrac{16}{5}\\,\\mathrm{cm}$",
+"selfGrade": true
+}
+]

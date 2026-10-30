@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-m32-01-adv-001",
+"typeId": "set2-m32-01-u0m0s0t3",
+"twinGroup": "tw-set2-m32-01-u0m0s0t3",
+"diff": 5,
+"body": "원점 $O$를 중심으로 하고 반지름이 $r$인 제일사분면의 사분원 위에 두 점 $P(a,b)$, $Q(b,a)$가 있다. 단, $a>b>0$이고, $\\tan\\angle P O A=\\dfrac{3}{4}$이다. 여기서 $A(r,0)$이다.\n\n두 반직선 $OP$, $OQ$가 직선 $x=r$과 만나는 점을 각각 $T$, $U$라 하자. $\\overline{PT}+\\overline{QU}=33$일 때, $\\overline{TU}$의 길이를 구하시오.",
+"solution": "첫째, 기준각에 대한 대변과 인접변의 비가 $3:4$이므로 피타고라스 정리에 의해\n$a:b:r=4:3:5$이다. 따라서\n$a=\\dfrac{4r}{5}$, $b=\\dfrac{3r}{5}$이다.\n\n둘째, 직각삼각형의 닮음을 이용하면\n$\\dfrac{\\overline{OT}}{\\overline{OP}}=\\dfrac{r}{a}=\\dfrac{5}{4}$,\n$\\dfrac{\\overline{OU}}{\\overline{OQ}}=\\dfrac{r}{b}=\\dfrac{5}{3}$이다.\n두 점 $T$, $U$는 각각 사분원 바깥에 있으므로\n$\\overline{PT}=\\dfrac{5r}{4}-r=\\dfrac{r}{4}$,\n$\\overline{QU}=\\dfrac{5r}{3}-r=\\dfrac{2r}{3}$이다.\n\n셋째, 주어진 조건에서\n$\\dfrac{r}{4}+\\dfrac{2r}{3}=33$이므로 $r=36$이다.\n또한\n$\\overline{AT}=r\\cdot\\dfrac{3}{4}$,\n$\\overline{AU}=r\\cdot\\dfrac{4}{3}$이므로\n$\\overline{TU}=36\\left(\\dfrac{4}{3}-\\dfrac{3}{4}\\right)=21$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 01 삼각비",
+"kind": "객관식",
+"choices": [
+"$9$",
+"$12$",
+"$21$",
+"$33$",
+"$44$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m32-01-adv-002",
+"typeId": "set2-m32-01-u0m0s0t3",
+"twinGroup": "tw-set2-m32-01-u0m0s0t3",
+"diff": 4,
+"body": "원점 $O$를 중심으로 하고 반지름이 $r$인 제일사분면의 사분원 위에 점 $P$가 있다. 점 $P$에서 가로축에 내린 수선의 발을 $H$라 하고, $Q(r,0)$을 지나는 세로선과 반직선 $OP$의 교점을 $T$라 하자.\n\n다음 조건을 모두 만족시킨다.\n$\\overline{OH}+\\overline{PH}=28$, $\\overline{QT}:\\overline{PH}=5:3$\n\n반지름 $r$과 $\\overline{QT}$의 길이를 구하고, 다음 주장이 옳은지 삼각형의 닮음을 이용하여 설명하시오.\n\n“기준각 $\\angle POH$를 그대로 유지하면서 반지름을 두 배로 늘리면 $\\overline{QT}$와 $\\tan\\angle POH$가 모두 두 배가 된다.”",
+"solution": "첫째, 두 직각삼각형 $OHP$, $OQT$는 한 예각이 같으므로 닮음이다. 따라서\n$\\dfrac{\\overline{OQ}}{\\overline{OH}}=\\dfrac{\\overline{QT}}{\\overline{PH}}=\\dfrac{5}{3}$이다.\n$\\overline{OQ}=r$이므로 $\\overline{OH}=\\dfrac{3r}{5}$이다.\n\n둘째, 피타고라스 정리에 의해\n$\\overline{PH}=\\sqrt{r^2-\\left(\\dfrac{3r}{5}\\right)^2}=\\dfrac{4r}{5}$이다.\n따라서\n$\\dfrac{3r}{5}+\\dfrac{4r}{5}=28$에서 $r=20$이다.\n그러므로\n$\\overline{QT}=\\dfrac{5}{3}\\overline{PH}=\\dfrac{5}{3}\\times16=\\dfrac{80}{3}$이다.\n\n셋째, 기준각을 유지하며 반지름을 두 배로 늘리면 닮음비가 $1:2$이므로 $\\overline{OQ}$와 $\\overline{QT}$가 모두 두 배가 된다.\n그러나\n$\\tan\\angle POH=\\dfrac{\\overline{QT}}{\\overline{OQ}}=\\dfrac{4}{3}$은 분자와 분모가 함께 두 배가 되어 변하지 않는다. 따라서 주장은 옳지 않다.\n\n[채점 기준]\n닮음을 이용하여 $\\overline{OH}=\\dfrac{3r}{5}$를 구하면 $2$점, 피타고라스 정리와 길이의 합으로 $r$을 구하면 $3$점, $\\overline{QT}$를 구하면 $2$점, 닮음비와 삼각비를 구별하여 주장의 오류를 설명하면 $3$점. 총 $10$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 01 삼각비",
+"kind": "주관식",
+"answer": "$r=20$, $\\overline{QT}=\\dfrac{80}{3}$, 주장은 옳지 않다.",
+"selfGrade": true
+},
+{
+"id": "set2-m32-01-adv-003",
+"typeId": "set2-m32-01-u0m0s1t3",
+"twinGroup": "tw-set2-m32-01-u0m0s1t3",
+"diff": 5,
+"body": "$\\angle ABC=90^\\circ$, $\\angle BAC=30^\\circ$, $\\overline{AC}=12$인 직각삼각형 $ABC$가 있다. 선분 $AB$ 위의 점 $D$를 $\\angle BCD=45^\\circ$가 되도록 잡았다.\n\n점 $D$에서 선분 $AC$에 내린 수선의 발을 $E$라 할 때, $\\tan\\angle ACD$의 값은?",
+"solution": "첫째, 직각삼각형 $ABC$에서 특수각의 삼각비를 이용하면\n$\\overline{BC}=12\\sin30^\\circ=6$,\n$\\overline{AB}=12\\cos30^\\circ=6\\sqrt{3}$이다.\n\n둘째, 직각삼각형 $CBD$는 $\\angle BCD=45^\\circ$이므로 직각이등변삼각형이다.\n따라서 $\\overline{BD}=\\overline{BC}=6$이고,\n$\\overline{AD}=6\\sqrt{3}-6$이다.\n\n셋째, 직각삼각형 $ADE$에서\n$\\overline{DE}=\\overline{AD}\\sin30^\\circ=3\\sqrt{3}-3$,\n$\\overline{AE}=\\overline{AD}\\cos30^\\circ=9-3\\sqrt{3}$이다.\n따라서\n$\\overline{CE}=12-(9-3\\sqrt{3})=3+3\\sqrt{3}$이다.\n\n마지막으로, $\\angle ECD=\\angle ACD$이므로 직각삼각형 $CDE$에서\n$\\tan\\angle ACD=\\dfrac{\\overline{DE}}{\\overline{CE}} =\\dfrac{\\sqrt{3}-1}{\\sqrt{3}+1} =2-\\sqrt{3}$이다.\n기준각의 인접변은 $\\overline{CD}$가 아니라 $\\overline{CE}$임에 주의한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 01 삼각비",
+"kind": "객관식",
+"choices": [
+"$\\dfrac{\\sqrt{3}}{3}$",
+"$2-\\sqrt{3}$",
+"$\\dfrac{\\sqrt{3}-1}{2}$",
+"$\\sqrt{3}-1$",
+"$2+\\sqrt{3}$"
+],
+"answer": "②"
+},
+{
+"id": "set2-m32-01-adv-004",
+"typeId": "set2-m32-01-u0m0s1t3",
+"twinGroup": "tw-set2-m32-01-u0m0s1t3",
+"diff": 5,
+"body": "원점 $O$를 중심으로 하고 반지름이 $r$인 제일사분면의 사분원 위에 두 점 $P$, $Q$가 있다. 가로축의 양의 방향과 반직선 $OP$, $OQ$가 이루는 각은 각각 $30^\\circ$, $60^\\circ$이다.\n\n두 반직선 $OP$, $OQ$가 직선 $y=r$과 만나는 점을 각각 $M$, $N$이라 하자.\n$\\overline{PM}+\\overline{QN}=8\\sqrt{3}$일 때, $\\overline{PQ}$의 길이를 구하시오. 반지름을 구하는 과정과 두 점의 가로좌표 및 세로좌표의 차를 이용하는 과정을 모두 서술하시오.",
+"solution": "첫째, 점 $M$, $N$의 세로좌표가 모두 $r$이므로\n$\\sin30^\\circ=\\dfrac{r}{\\overline{OM}}$,\n$\\sin60^\\circ=\\dfrac{r}{\\overline{ON}}$이다.\n따라서\n$\\overline{OM}=2r$, $\\overline{ON}=\\dfrac{2r}{\\sqrt{3}}$이다.\n\n둘째, $\\overline{OP}=\\overline{OQ}=r$이고 $M$, $N$은 사분원 바깥에 있으므로\n$\\overline{PM}=r$,\n$\\overline{QN}=\\dfrac{2r}{\\sqrt{3}}-r$이다.\n주어진 조건에서\n$r+\\left(\\dfrac{2r}{\\sqrt{3}}-r\\right)=8\\sqrt{3}$이므로 $r=12$이다.\n\n셋째, 사분원 위의 점의 좌표와 특수각의 삼각비를 이용하면\n$P(6\\sqrt{3},6)$, $Q(6,6\\sqrt{3})$이다.\n두 점의 가로좌표의 차와 세로좌표의 차는 모두 $6\\sqrt{3}-6$이다.\n\n따라서 두 점을 잇는 선분을 빗변으로 하는 직각삼각형에 피타고라스 정리를 적용하면\n$\\overline{PQ} =\\sqrt{(6\\sqrt{3}-6)^2+(6\\sqrt{3}-6)^2} =6(\\sqrt{6}-\\sqrt{2})$이다.\n\n[채점 기준]\n특수각의 삼각비로 $\\overline{OM}$, $\\overline{ON}$을 나타내면 $2$점, 주어진 길이의 합으로 $r=12$를 구하면 $3$점, 두 점의 좌표와 좌표의 차를 구하면 $3$점, 피타고라스 정리로 $\\overline{PQ}$를 구하면 $2$점. 총 $10$점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 01 삼각비",
+"kind": "주관식",
+"answer": "$6(\\sqrt{6}-\\sqrt{2})$",
+"selfGrade": true
+},
+{
+"id": "set2-m32-01-adv-005",
+"typeId": "set2-m32-01-u0m0s2t3",
+"twinGroup": "tw-set2-m32-01-u0m0s2t3",
+"diff": 4,
+"body": "예각 $\\theta$에 대하여 $\\sin\\theta=\\dfrac{3}{5}$이다. 다음은 삼각비의 값을 소수 다섯째 자리에서 반올림하여 나타낸 표의 일부이다.\n\n| 각 | 사인 | 코사인 | 탄젠트 |\n|---|---|---|---|\n| $35^\\circ$ | $0.5736$ | $0.8192$ | $0.7002$ |\n| $36^\\circ$ | $0.5878$ | $0.8090$ | $0.7265$ |\n| $37^\\circ$ | $0.6018$ | $0.7986$ | $0.7536$ |\n\n다음 다섯 수를 작은 것부터 차례대로 나열한 것은?\n\n$A=\\tan\\theta$, $B=\\sin(90^\\circ-\\theta)$, $C=\\cos53^\\circ$, $D=\\tan36^\\circ$, $E=\\sin53^\\circ$",
+"solution": "첫째, $\\sin\\theta=\\dfrac{3}{5}$이므로 대변과 빗변의 길이를 각각 $3$, $5$로 잡으면 인접변의 길이는 $4$이다.\n따라서\n$A=\\tan\\theta=\\dfrac{3}{4}=0.75$,\n$B=\\sin(90^\\circ-\\theta)=\\cos\\theta=\\dfrac{4}{5}=0.8$이다.\n\n둘째, 합이 $90^\\circ$인 두 예각의 사인과 코사인은 서로 같으므로\n$C=\\cos53^\\circ=\\sin37^\\circ\\approx0.6018$,\n$E=\\sin53^\\circ=\\cos37^\\circ\\approx0.7986$이다.\n또한 표에서 $D=\\tan36^\\circ\\approx0.7265$이다.\n\n셋째, 표에 제시된 값의 반올림 오차를 고려해도\n$0.6018$, $0.7265$, $0.75$, $0.7986$, $0.8$의 대소 관계는 바뀌지 않는다.\n따라서 $C<D<A<E<B$이다.\n\n서로 다른 종류의 삼각비는 각의 크기만으로 비교할 수 없으므로, 먼저 같은 종류로 바꾸거나 값을 구해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 01 삼각비",
+"kind": "객관식",
+"choices": [
+"$C<D<A<E<B$",
+"$C<A<D<E<B$",
+"$C<D<A<B<E$",
+"$E<D<A<C<B$",
+"$C<D<B<E<A$"
+],
+"answer": "①"
+},
+{
+"id": "set2-m32-01-adv-006",
+"typeId": "set2-m32-01-u0m0s2t3",
+"twinGroup": "tw-set2-m32-01-u0m0s2t3",
+"diff": 5,
+"body": "어떤 장치가 원점 $O$를 중심으로 하는 제일사분면의 사분원 위의 점 $P$를 다음 규칙에 따라 기록한다.\n〈보기〉\nㄱ. 반지름 $r$은 자연수이다.\nㄴ. 가로축의 양의 방향과 반직선 $OP$가 이루는 각 $\\theta$는 $35^\\circ$, $36^\\circ$, $37^\\circ$ 중 하나이다.\nㄷ. 점 $P$의 가로좌표와 세로좌표를 각각 소수 첫째 자리에서 반올림하여 정수로 기록한다.\n\n장치에 기록된 점의 좌표는 $(65,47)$이었다. 아래 표를 이용하여 반지름과 각을 결정한 뒤, 반직선 $OP$와 직선 $x=r$의 교점을 $T$라 할 때 점 $T$의 세로좌표를 구하시오. 계산에는 표의 값을 그대로 사용하고, 답은 소수 둘째 자리에서 반올림하시오.\n\n| 각 | 사인 | 코사인 | 탄젠트 |\n|---|---|---|---|\n| $35^\\circ$ | $0.5736$ | $0.8192$ | $0.7002$ |\n| $36^\\circ$ | $0.5878$ | $0.8090$ | $0.7265$ |\n| $37^\\circ$ | $0.6018$ | $0.7986$ | $0.7536$ |\n\n표의 값은 실제 삼각비를 소수 다섯째 자리에서 반올림한 값이다.",
+"solution": "첫째, 반올림하기 전 점 $P$의 좌표를 $(x,y)$라 하면\n$64.5\\le x<65.5$, $46.5\\le y<47.5$이다.\n피타고라스 정리에 의해 $r^2=x^2+y^2$이므로\n$64.5^2+46.5^2\\le r^2<65.5^2+47.5^2$,\n즉 $6322.5\\le r^2<6546.5$이다.\n\n$79^2=6241$, $80^2=6400$, $81^2=6561$이고 $r$은 자연수이므로 $r=80$이다.\n\n둘째, 표를 이용하여 반지름이 $80$일 때의 좌표를 계산하면 다음과 같다.\n\n| 각 | 가로좌표의 근삿값 | 세로좌표의 근삿값 | 정수로 반올림한 좌표 |\n|---|---|---|---|\n| $35^\\circ$ | $65.536$ | $45.888$ | $(66,46)$ |\n| $36^\\circ$ | $64.720$ | $47.024$ | $(65,47)$ |\n| $37^\\circ$ | $63.888$ | $48.144$ | $(64,48)$ |\n\n표의 반올림 오차가 각 좌표에 미치는 영향은 최대 $80\\times0.00005=0.004$이므로 위 정수 기록은 바뀌지 않는다.\n따라서 $\\theta=36^\\circ$이다.\n\n셋째, 점 $T$의 가로좌표가 $r$이므로 세로좌표는 $r\\tan\\theta$이다.\n따라서 구하는 값은\n$80\\times0.7265=58.12\\approx58.1$이다.\n점 $P$의 세로좌표인 $r\\sin\\theta$와 구별해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중3-2 수학 01 삼각비",
+"kind": "객관식",
+"choices": [
+"$46.1$",
+"$47.0$",
+"$56.0$",
+"$58.1$",
+"$60.3$"
+],
+"answer": "④"
+}
+]

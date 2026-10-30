@@ -1,0 +1,98 @@
+[
+{
+"id": "set2-m22-08-adv-001",
+"typeId": "set2-m22-08-u0m0s0t3",
+"twinGroup": "tw-set2-m22-08-u0m0s0t3",
+"diff": 4,
+"body": "$\\angle BAC=90^\\circ$인 직각삼각형 $ABC$에서 점 $D$는 변 $\\overline{AB}$의 중점이고, 점 $E$는 변 $\\overline{AC}$ 위에 있으며 $\\overline{AE}=\\dfrac{1}{3}\\overline{AC}$이다. 선분 $\\overline{BC}$를 한 변으로 하는 정사각형의 넓이는 $225\\,\\mathrm{cm}^2$, 선분 $\\overline{BE}$를 한 변으로 하는 정사각형의 넓이는 $153\\,\\mathrm{cm}^2$이다. 선분 $\\overline{CD}$를 한 변으로 하는 정사각형의 넓이는?\n[[그림:/figs/set2-m22-08/adv001.png]]",
+"solution": "단계 1. 정사각형의 넓이는 한 변의 길이의 제곱이므로\n$\\overline{BC}^{\\,2}=225$, $\\overline{BE}^{\\,2}=153$이다.\n\n단계 2. 두 직각삼각형 $ABC$, $ABE$에 피타고라스 정리를 적용하면\n$\\overline{AB}^{\\,2}+\\overline{AC}^{\\,2}=225$,\n$\\overline{AB}^{\\,2}+\\dfrac{1}{9}\\overline{AC}^{\\,2}=153$이다.\n두 식을 빼면\n$\\dfrac{8}{9}\\overline{AC}^{\\,2}=72$이므로\n$\\overline{AC}^{\\,2}=81$, $\\overline{AB}^{\\,2}=144$이다.\n\n단계 3. 점 $D$는 변 $\\overline{AB}$의 중점이므로\n$\\overline{AD}^{\\,2}=\\dfrac{1}{4}\\overline{AB}^{\\,2}=36$이다.\n직각삼각형 $ACD$에서\n$\\overline{CD}^{\\,2}=81+36=117$이다.\n따라서 구하는 넓이는 $117\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$72\\,\\mathrm{cm}^2$",
+"$81\\,\\mathrm{cm}^2$",
+"$117\\,\\mathrm{cm}^2$",
+"$153\\,\\mathrm{cm}^2$",
+"$189\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-adv-002",
+"typeId": "set2-m22-08-u0m0s0t3",
+"twinGroup": "tw-set2-m22-08-u0m0s0t3",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=13\\,\\mathrm{cm}$, $\\overline{AC}=20\\,\\mathrm{cm}$, $\\overline{BC}=21\\,\\mathrm{cm}$이다. 점 $A$에서 변 $\\overline{BC}$에 내린 수선의 발을 $H$라 하자. 점 $P$는 선분 $\\overline{AH}$의 내부에 있고 $\\overline{BP}=\\sqrt{61}\\,\\mathrm{cm}$이다.\n\n[[그림:/figs/set2-m22-08/adv002.png]]\n삼각형 $BPC$의 넓이를 구하고, 풀이 과정을 서술하시오. 단, 점 $H$는 선분 $\\overline{BC}$의 내부에 있다.",
+"solution": "단계 1. $\\overline{BH}=x\\,\\mathrm{cm}$, $\\overline{AH}=h\\,\\mathrm{cm}$라 하면 $\\overline{HC}=(21-x)\\,\\mathrm{cm}$이다.\n직각삼각형 $ABH$, $ACH$에서\n$h^2=169-x^2$,\n$h^2=400-(21-x)^2$이다.\n\n단계 2. 공통인 높이의 제곱을 같게 놓으면\n$169-x^2=400-(21-x)^2$이다.\n이를 정리하면 $42x=210$이므로 $x=5$이다.\n따라서 $h^2=169-25=144$이므로 $\\overline{AH}=12\\,\\mathrm{cm}$이다.\n\n단계 3. 직각삼각형 $BPH$에서\n$\\overline{PH}^{\\,2}=\\overline{BP}^{\\,2}-\\overline{BH}^{\\,2}=61-25=36$이다.\n길이는 양수이므로 $\\overline{PH}=6\\,\\mathrm{cm}$이다.\n\n단계 4. 삼각형 $BPC$에서 밑변을 $\\overline{BC}$로 잡으면 높이는 $\\overline{PH}$이다.\n따라서 넓이는\n$\\dfrac{1}{2}\\times21\\times6=63\\,\\mathrm{cm}^2$이다.\n\n[채점 기준]\n공통인 높이를 이용하여 두 식을 세우면 2점, $\\overline{BH}=5\\,\\mathrm{cm}$를 구하면 1점, $\\overline{PH}=6\\,\\mathrm{cm}$를 구하면 2점, 넓이를 단위와 함께 바르게 구하면 1점. 총 6점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "주관식",
+"answer": "$63\\,\\mathrm{cm}^2$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-08-adv-003",
+"typeId": "set2-m22-08-u0m0s0t3",
+"twinGroup": "tw-set2-m22-08-u0m0s0t3",
+"diff": 4,
+"body": "직사각형 $ABCD$의 내부에 점 $P$가 있다. $\\overline{AB}=25\\,\\mathrm{cm}$이고\n$\\overline{PA}=15\\,\\mathrm{cm}$,\n$\\overline{PC}=8\\sqrt{5}\\,\\mathrm{cm}$,\n$\\overline{PD}=\\sqrt{145}\\,\\mathrm{cm}$일 때, 삼각형 $PAB$의 넓이는?\n\n단, 그림에 보이는 각의 크기를 직각이라고 가정하지 않는다.\n[[그림:/figs/set2-m22-08/adv003.png]]",
+"solution": "단계 1. 점 $P$에서 네 변에 수선을 그어 가로 방향의 두 길이를 각각 $x$, $y$, 세로 방향의 두 길이를 각각 $u$, $v$라 하자. 피타고라스 정리에 의해\n$\\overline{PA}^{\\,2}=x^2+u^2$,\n$\\overline{PB}^{\\,2}=y^2+u^2$,\n$\\overline{PC}^{\\,2}=y^2+v^2$,\n$\\overline{PD}^{\\,2}=x^2+v^2$이다.\n\n단계 2. 따라서\n$\\overline{PA}^{\\,2}+\\overline{PC}^{\\,2} =\\overline{PB}^{\\,2}+\\overline{PD}^{\\,2}$이므로\n$\\overline{PB}^{\\,2}=225+320-145=400$이다.\n즉, $\\overline{PB}=20\\,\\mathrm{cm}$이다.\n\n단계 3. 삼각형 $PAB$의 세 변 중 가장 긴 변은 $\\overline{AB}$이고,\n$15^2+20^2=25^2$이다.\n피타고라스 정리의 역에 의해 $\\angle APB=90^\\circ$이다.\n\n단계 4. 따라서 삼각형 $PAB$의 넓이는\n$\\dfrac{1}{2}\\times15\\times20=150\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$100\\,\\mathrm{cm}^2$",
+"$120\\,\\mathrm{cm}^2$",
+"$150\\,\\mathrm{cm}^2$",
+"$200\\,\\mathrm{cm}^2$",
+"$250\\,\\mathrm{cm}^2$"
+],
+"answer": "③"
+},
+{
+"id": "set2-m22-08-adv-004",
+"typeId": "set2-m22-08-u0m0s1t3",
+"twinGroup": "tw-set2-m22-08-u0m0s1t3",
+"diff": 5,
+"body": "사다리꼴 $ABCD$에서 $\\overline{AB}\\parallel\\overline{DC}$이고,\n$\\overline{AB}=30\\,\\mathrm{cm}$,\n$\\overline{DC}=16\\,\\mathrm{cm}$,\n$\\overline{AD}=13\\,\\mathrm{cm}$,\n$\\overline{BC}=15\\,\\mathrm{cm}$이다.\n\n점 $D$, $C$에서 변 $\\overline{AB}$에 내린 수선의 발은 모두 선분 $\\overline{AB}$의 내부에 있다. 두 대각선 $\\overline{AC}$, $\\overline{BD}$를 각각 한 변으로 하는 두 정사각형의 넓이의 합은?\n[[그림:/figs/set2-m22-08/adv004.png]]",
+"solution": "단계 1. 점 $D$, $C$에서 변 $\\overline{AB}$에 내린 수선의 발을 각각 $E$, $F$라 하자.\n$\\overline{AE}=x\\,\\mathrm{cm}$, 높이를 $h\\,\\mathrm{cm}$라 하면\n$\\overline{EF}=16\\,\\mathrm{cm}$이므로\n$\\overline{FB}=(14-x)\\,\\mathrm{cm}$이다.\n\n단계 2. 직각삼각형 $AED$, $BFC$에서\n$x^2+h^2=169$,\n$(14-x)^2+h^2=225$이다.\n두 식을 빼면\n$196-28x=56$이므로 $x=5$이다.\n따라서 $h^2=169-25=144$이다.\n\n단계 3. $\\overline{AF}=5+16=21\\,\\mathrm{cm}$,\n$\\overline{BE}=30-5=25\\,\\mathrm{cm}$이므로\n$\\overline{AC}^{\\,2}=21^2+144=585$,\n$\\overline{BD}^{\\,2}=25^2+144=769$이다.\n\n단계 4. 구하는 두 정사각형의 넓이의 합은\n$585+769=1354\\,\\mathrm{cm}^2$이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$1066\\,\\mathrm{cm}^2$",
+"$1210\\,\\mathrm{cm}^2$",
+"$1312\\,\\mathrm{cm}^2$",
+"$1354\\,\\mathrm{cm}^2$",
+"$1410\\,\\mathrm{cm}^2$"
+],
+"answer": "④"
+},
+{
+"id": "set2-m22-08-adv-005",
+"typeId": "set2-m22-08-u0m0s1t3",
+"twinGroup": "tw-set2-m22-08-u0m0s1t3",
+"diff": 5,
+"body": "$\\overline{AB}=20\\,\\mathrm{cm}$, $\\overline{AD}=15\\,\\mathrm{cm}$인 직사각형 모양의 종이 $ABCD$를 꼭짓점 $B$가 꼭짓점 $D$에 겹치도록 접었다. 접는 선은 변 $\\overline{AB}$, $\\overline{CD}$와 각각 점 $P$, $Q$에서 만난다.\n\n[[그림:/figs/set2-m22-08/adv005.png]]\n선분 $\\overline{PQ}$의 길이를 구하고, 접는 선 위의 점에서 성립하는 길이 관계를 이용하여 풀이 과정을 서술하시오.",
+"solution": "단계 1. 접는 선 위의 점은 접기 전의 점과 그 대응점까지의 거리가 같으므로\n$\\overline{PB}=\\overline{PD}$,\n$\\overline{QB}=\\overline{QD}$이다.\n\n단계 2. $\\overline{AP}=x\\,\\mathrm{cm}$라 하면\n$\\overline{PB}=(20-x)\\,\\mathrm{cm}$이다.\n직각삼각형 $APD$에서\n$x^2+15^2=(20-x)^2$이므로\n$40x=175$이다.\n따라서 $\\overline{AP}=\\dfrac{35}{8}\\,\\mathrm{cm}$이다.\n\n단계 3. $\\overline{DQ}=y\\,\\mathrm{cm}$라 하면\n$\\overline{CQ}=(20-y)\\,\\mathrm{cm}$이다.\n직각삼각형 $BCQ$에서\n$(20-y)^2+15^2=y^2$이므로\n$40y=625$이다.\n따라서 $\\overline{DQ}=\\dfrac{125}{8}\\,\\mathrm{cm}$이다.\n\n단계 4. 두 점 $P$, $Q$ 사이의 가로 방향 길이는\n$\\dfrac{125}{8}-\\dfrac{35}{8}=\\dfrac{45}{4}\\,\\mathrm{cm}$이고, 세로 방향 길이는 $15\\,\\mathrm{cm}$이다.\n따라서\n$\\overline{PQ}^{\\,2}=\\left(\\dfrac{45}{4}\\right)^2+15^2 =\\dfrac{5625}{16}$이므로\n$\\overline{PQ}=\\dfrac{75}{4}\\,\\mathrm{cm}$이다.\n\n[채점 기준]\n접는 선 위의 점에서 성립하는 두 등식을 쓰면 1점, $\\overline{AP}$를 구하면 1점, $\\overline{DQ}$를 구하면 1점, 가로 방향 길이를 바르게 구하면 1점, 피타고라스 정리를 적용하여 최종 길이를 구하면 2점. 총 6점.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "주관식",
+"answer": "$\\dfrac{75}{4}\\,\\mathrm{cm}$",
+"selfGrade": true
+},
+{
+"id": "set2-m22-08-adv-006",
+"typeId": "set2-m22-08-u0m0s1t3",
+"twinGroup": "tw-set2-m22-08-u0m0s1t3",
+"diff": 5,
+"body": "세 모서리의 길이가 각각 $5\\,\\mathrm{cm}$, $7\\,\\mathrm{cm}$, $9\\,\\mathrm{cm}$인 직육면체 모양의 상자가 있다. 서로 마주 보는 두 꼭짓점에 있는 출발점과 도착점을 상자의 겉면을 따라 끈으로 연결하려고 한다.\n\n끈을 놓는 방법은 서로 이웃한 두 면을 지나는 다음 세 가지 방식으로 제한한다. 각 방식에서 두 면을 평면에 펼치면 아래 표의 직사각형이 되고, 출발점과 도착점은 그 직사각형의 한 대각선의 양 끝점에 놓인다.\n\n| 방식 | 펼친 직사각형의 가로 | 펼친 직사각형의 세로 |\n|---|---|---|\n| 가 | $(5+7)\\,\\mathrm{cm}$ | $9\\,\\mathrm{cm}$ |\n| 나 | $(5+9)\\,\\mathrm{cm}$ | $7\\,\\mathrm{cm}$ |\n| 다 | $(7+9)\\,\\mathrm{cm}$ | $5\\,\\mathrm{cm}$ |\n\n각 방식에서 끈을 가장 짧게 놓았을 때, 세 방식 중 필요한 끈의 길이의 최솟값은? 단, 끈의 두께와 매듭에 필요한 길이는 생각하지 않는다.",
+"solution": "단계 1. 두 면을 평면에 펼치면 각 방식에서 가장 짧은 경로는 출발점과 도착점을 잇는 직선이다. 따라서 펼친 직사각형의 대각선의 길이를 구한다.\n\n단계 2. 세 방식에서 필요한 최소 길이를 각각 $a\\,\\mathrm{cm}$, $b\\,\\mathrm{cm}$, $c\\,\\mathrm{cm}$라 하면 피타고라스 정리에 의해\n$a^2=(5+7)^2+9^2=225$,\n$b^2=(5+9)^2+7^2=245$,\n$c^2=(7+9)^2+5^2=281$이다.\n\n단계 3. 길이는 모두 양수이므로 제곱이 가장 작은 $a$가 가장 짧다.\n$a=15$이므로 구하는 최솟값은 $15\\,\\mathrm{cm}$이다.\n\n상자 내부를 곧게 통과하는 선분의 길이를 구하면 겉면을 따라간다는 조건을 만족하지 못한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 수업세트 · 중2-2 수학 08 피타고라스 정리",
+"kind": "객관식",
+"choices": [
+"$\\sqrt{155}\\,\\mathrm{cm}$",
+"$\\sqrt{193}\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$",
+"$\\sqrt{245}\\,\\mathrm{cm}$",
+"$\\sqrt{281}\\,\\mathrm{cm}$"
+],
+"answer": "③"
+}
+]
