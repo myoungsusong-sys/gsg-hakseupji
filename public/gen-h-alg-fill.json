@@ -4288,5 +4288,167 @@
 "twinGroup": "tw-18356",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-67bcdcd74c",
+"typeId": "18481",
+"kind": "객관식",
+"diff": 1,
+"body": "$[\\log 70]$의 값은? (단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"choices": [
+"$0$",
+"$1$",
+"$2$",
+"$3$",
+"$4$"
+],
+"answer": "②",
+"solution": "$10<70<100$이므로 $1<\\log 70<2$이다. 따라서 $[\\log 70]=1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18481",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4a8a56c187",
+"typeId": "18481",
+"kind": "객관식",
+"diff": 1,
+"body": "$[\\log 0.04]$의 값은? (단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"choices": [
+"$-3$",
+"$-2$",
+"$-1$",
+"$0$",
+"$1$"
+],
+"answer": "②",
+"solution": "$0.01<0.04<0.1$이므로 $-2<\\log 0.04<-1$이다. 따라서 $[\\log 0.04]=-2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18481",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8c9fe7ca94",
+"typeId": "18481",
+"kind": "객관식",
+"diff": 1,
+"body": "$x=\\log 8+\\log 125$일 때, $[x]$의 값은? (단, $[x]$는 $x$보다 크지 않은 최대의 정수이다.)",
+"choices": [
+"$-1$",
+"$0$",
+"$1$",
+"$2$",
+"$3$"
+],
+"answer": "⑤",
+"solution": "로그의 성질에 의하여 $x=\\log(8\\times125)=\\log1000=3$이다. 따라서 $[x]=[3]=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18481",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0f83151c81",
+"typeId": "18237",
+"kind": "객관식",
+"diff": 1,
+"body": "$x>0$, $y>0$이고 $x+y=16$일 때, $\\log_2x+\\log_2y$의 최댓값은?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "$\\log_2x+\\log_2y=\\log_2(xy)$이다. 산술평균과 기하평균의 관계에 의해 $xy\\leq\\left(\\frac{x+y}{2}\\right)^2=64$이므로 최댓값은 $\\log_2 64=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18237",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2c90805c6e",
+"typeId": "18237",
+"kind": "객관식",
+"diff": 1,
+"body": "$0<x<10$일 때, 함수 $f(x)=\\log_5x+\\log_5(10-x)$의 최댓값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "②",
+"solution": "$f(x)=\\log_5\\{x(10-x)\\}$이다. 산술평균과 기하평균의 관계에 의해 $x(10-x)\\leq\\left(\\frac{x+10-x}{2}\\right)^2=25$이므로 최댓값은 $\\log_5 25=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18237",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-25610dd540",
+"typeId": "18237",
+"kind": "객관식",
+"diff": 1,
+"body": "$x>0$일 때, 함수 $f(x)=\\log_2\\left(x+\\frac{4}{x}\\right)$의 최솟값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "②",
+"solution": "산술평균과 기하평균의 관계에 의해 $x+\\frac{4}{x}\\geq2\\sqrt{x\\cdot\\frac{4}{x}}=4$이다. 밑이 $2$인 로그함수는 증가함수이므로 최솟값은 $\\log_2 4=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18237",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2f199482a3",
+"typeId": "18237",
+"kind": "주관식",
+"diff": 4,
+"body": "$1<x<16$일 때, 방정식\n\n$\\log_2(4x)+\\log_x16=k$\n\n가 서로 다른 두 실근을 갖도록 하는 실수 $k$의 범위를 구하여라.",
+"selfGrade": true,
+"answer": "$6<k<7$",
+"solution": "$t=\\log_2x$로 놓으면 $0<t<4$이고, $x=2^t$이므로 서로 다른 $x$와 서로 다른 $t$가 일대일로 대응한다. 또한 $\\log_2(4x)=2+t$, $\\log_x16=\\frac{4}{t}$이므로 주어진 방정식은 $2+t+\\frac{4}{t}=k$가 된다. $g(t)=t+\\frac{4}{t}$라 하면 $g(t)$는 $(0,2]$에서 감소하고 $[2,4)$에서 증가한다. 또한 산술평균과 기하평균의 관계에 의해 $g(t)\\geq4$이고, 등호는 $t=2$일 때 성립한다. 한편 $0<t<2$에서 $g(t)$의 값의 범위는 $(4,\\infty)$이고, $2<t<4$에서의 값의 범위는 $(4,5)$이다. 따라서 $2+g(t)=k$가 두 구간에서 각각 한 개의 해를 가지려면 $4<k-2<5$이어야 한다. 그러므로 구하는 범위는 $6<k<7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18237",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-74990b9ca4",
+"typeId": "18237",
+"kind": "주관식",
+"diff": 3,
+"body": "$x>1$, $y>1$이고\n\n$\\log_2x+2\\log_2y=12$\n\n일 때, $\\log_2(\\log_2x)+2\\log_2(\\log_2y)$의 최댓값을 구하여라.",
+"selfGrade": true,
+"answer": "$6$",
+"solution": "$a=\\log_2x$, $b=\\log_2y$로 놓으면 $a>0$, $b>0$이고 $a+2b=12$이다. 산술평균과 기하평균의 관계에 의해 $\\frac{a+b+b}{3}\\geq\\sqrt[3]{ab^2}$이므로 $ab^2\\leq\\left(\\frac{a+2b}{3}\\right)^3=64$이다. 등호는 $a=b=4$일 때 성립하며, 이때 주어진 조건도 만족한다. 한편 $\\log_2a+2\\log_2b=\\log_2(ab^2)$이고 밑이 $2$인 로그함수는 증가함수이므로 구하는 최댓값은 $\\log_2 64=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18237",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-90324b4fe3",
+"typeId": "18237",
+"kind": "주관식",
+"diff": 4,
+"body": "양수 $a$에 대하여 $1<x\\leq8$에서 함수\n\n$f(x)=\\log_2(4x)+\\log_x(2^a)$\n\n의 최솟값이 $9$이다. $a$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$12$",
+"solution": "$t=\\log_2x$로 놓으면 $0<t\\leq3$이고 $f(x)=2+t+\\frac{a}{t}$이다. 먼저 $0<a\\leq9$이면 $0<\\sqrt a\\leq3$이므로 산술평균과 기하평균의 관계에 의해 $t+\\frac{a}{t}\\geq2\\sqrt a$이고, 등호는 $t=\\sqrt a$일 때 성립한다. 따라서 최솟값은 $2+2\\sqrt a$이다. 이를 $9$와 같다고 하면 $a=\\frac{49}{4}$인데, 이는 $a\\leq9$에 어긋난다. 다음으로 $a>9$라 하자. $0<s<t\\leq3$일 때 $\\left(t+\\frac{a}{t}\\right)-\\left(s+\\frac{a}{s}\\right)=(t-s)\\left(1-\\frac{a}{st}\\right)<0$이므로 $t+\\frac{a}{t}$는 $0<t\\leq3$에서 감소한다. 따라서 $t=3$일 때 최솟값 $2+3+\\frac{a}{3}=5+\\frac{a}{3}$을 갖는다. $5+\\frac{a}{3}=9$에서 $a=12$이고, 이는 $a>9$를 만족한다. 그러므로 $a=12$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18237",
+"custom": true,
+"rv": 1
 }
 ]
