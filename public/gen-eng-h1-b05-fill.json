@@ -4057,5 +4057,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u6m1s0t0",
 "custom": true
+},
+{
+"id": "fill-063ed0b2f6",
+"typeId": "eng-h1-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것을 두 개 골라 기호를 쓰고 바르게 고쳐 쓰시오.\n\nTypically, clocks strike from one to twelve times. But George Orwell’s well-known novel, 1984, opens with the clocks ⓐstriking thirteen times. In a normal world, a clock striking thirteen ⓑare out of the ordinary. But in this mysterious place, it doesn’t seem ⓒto be unusual. Not just one clock but all clocks strike thirteen here. What’s more, the number thirteen is often ⓓassociated with bad luck in Western cultures. In this way, Orwell hints to the readers that they are about to enter a world ⓔwhere is dark and unfamiliar.\n\n(1) 기호: ______ → ____________\n(2) 기호: ______ → ____________",
+"selfGrade": true,
+"answer": "ⓑ → is, ⓔ → that(또는 which)",
+"solution": "ⓑ의 주어는 a clock(단수)이고 striking thirteen은 주어를 꾸미는 현재분사구이므로 동사는 is로 써야 한다. ⓔ 뒤에는 주어가 빠진 불완전한 절(is dark and unfamiliar)이 이어지므로 관계부사 where가 아니라 주격 관계대명사 that이나 which를 써야 한다. ⓐ는 'with+목적어+분사' 구문이고, ⓒ는 'seem+to부정사', ⓓ는 'be associated with'이므로 모두 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2072f7842a",
+"typeId": "eng-h1-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것을 두 개 골라 기호를 쓰고 바르게 고쳐 쓰시오.\n\nThe story takes place in an imaginary country that ⓐis called Oceania in the year 1984. The government tries to control everyone’s life. It has even created a new language ⓑlimit people’s thoughts and expressions. Big Brother, the leader of Oceania, watches everything ⓒthat goes on through television screens. As long as Big Brother ⓓwill be in power, the people of Oceania will never be free. The main character, Winston Smith, does not agree with ⓔwhat the government is doing.\n\n(1) 기호: ______ → ____________\n(2) 기호: ______ → ____________",
+"selfGrade": true,
+"answer": "ⓑ → to limit, ⓓ → is",
+"solution": "ⓑ는 이미 문장에 동사(has created)가 있으므로 '~하기 위해'라는 목적의 뜻을 나타내는 to부정사 to limit으로 고쳐야 한다. ⓓ의 as long as는 조건을 나타내는 부사절을 이끌기 때문에, 미래의 일이라도 현재시제 is를 쓴다. ⓐ는 나라가 '불리는' 것이므로 수동태가 맞고, ⓒ는 everything을 꾸미는 주격 관계대명사, ⓔ는 선행사를 포함한 관계대명사 what이므로 모두 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d7cd67762e",
+"typeId": "eng-h1-b05-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 틀린 것을 모두 골라 기호를 쓰고 바르게 고쳐 쓰시오. (단, 틀린 것의 개수는 제시하지 않음)\n\nGeorge Orwell’s well-known novel, 1984, opens with the clocks ⓐstrike thirteen times. In this mysterious place, it doesn’t seem ⓑto be unusual. Not just one clock but all clocks ⓒstrike thirteen here. What’s more, the number thirteen is often ⓓassociated with bad luck in Western cultures. The story takes place in an imaginary country that ⓔcalled Oceania in the year 1984. Big Brother, the leader of Oceania, watches everything ⓕthat goes on through television screens. The main character, Winston Smith, wants to fight against Big Brother, but he can’t do it by himself. Will Winston find others ⓖjoined him? Or will he give in and ⓗbe controlled by Big Brother like the rest of the people?\n\n기호 → 고친 표현: ________________________________________",
+"selfGrade": true,
+"answer": "ⓐ → striking, ⓔ → is called, ⓖ → to join",
+"solution": "ⓐ는 'with+목적어+분사' 구문이고 시계가 '치는' 능동의 관계이므로 현재분사 striking으로 고쳐야 한다. ⓔ는 나라가 Oceania라고 '불리는' 것이므로 수동태 is called로, ⓖ는 '그와 함께할' 다른 사람들이라는 뜻으로 others를 꾸며야 하므로 to부정사 to join으로 고쳐야 한다. ⓒ는 'not just A but B'에서 동사의 수를 B(all clocks)에 맞추므로 복수 동사 strike가 맞다. ⓗ는 조동사 will에 give in과 함께 병렬로 이어지는 수동태 be controlled이므로 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m2s0t0",
+"custom": true
 }
 ]

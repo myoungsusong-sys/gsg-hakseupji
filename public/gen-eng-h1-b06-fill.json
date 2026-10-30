@@ -4489,5 +4489,271 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-f4a138e491",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nAI-powered neural implants have shown great promise in medicine. For example, they can treat brain disorders such as Parkinson's disease by electrically stimulating specific regions of the brain at just the right time. Paralyzed patients can also walk again with the help of a \"digital bridge\" connecting implants placed in the brain and spine; when the patients think about moving their legs, AI reads their brain signals and delivers them to the legs. In a similar way, people who have lost an arm can control an artificial arm through the same mechanism.",
+"choices": [
+"the medical uses of AI-powered neural implants",
+"the high cost of building neural implant devices",
+"the history of treatments for Parkinson's disease",
+"the ethical problems caused by brain implants",
+"the difficulty of designing artificial arms and legs"
+],
+"answer": "①",
+"solution": "글은 파킨슨병 치료, 마비 환자의 보행 회복, 인공팔 조작 등 AI 신경 임플란트가 의료 분야에서 실제로 쓰이는 사례를 나열하고 있다. 따라서 주제는 '의료적 활용'이다. 비용·역사·윤리·설계 어려움은 이 글에서 다루지 않았으므로 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a24b483dc8",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nArtificial limbs have a long history. A wooden toe was found on an Egyptian mummy from around 950 B.C., and in the 16th century a German knight known as Götz of the Iron Hand wore an iron arm with spring-operated fingers. The World Wars greatly increased the demand for artificial limbs and led to remarkable advances in the technology. Today, thanks to robotics and artificial intelligence, users can make complex movements and even control their artificial limbs with their thoughts.",
+"choices": [
+"The Long Journey of Artificial Limbs: From Ancient Times to AI",
+"Why Artificial Limbs Can Never Replace Real Limbs",
+"Famous Soldiers Who Changed the World Wars",
+"The Secret Life of Ancient Egyptian Mummies",
+"How to Build an Iron Arm with Spring Fingers"
+],
+"answer": "①",
+"solution": "글은 고대 이집트의 나무 발가락부터 16세기 철제 팔, 세계대전기의 발전, 오늘날 AI 결합까지 인공 사지의 발전 과정을 시간 순으로 설명한다. 따라서 '고대부터 AI까지의 인공 사지 여정'이 제목으로 적절하다. 나머지는 지문 일부 소재만 과장한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8e924b4bce",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nSome futurists predict that AI-powered neural implants will become commercially available in the next 20 to 30 years and greatly change our everyday lives. With software installed in our brains, we might be able to play games, type social media messages, and stream music simply by thinking. Memory-enhancing implants could even let us capture, save, and share our favorite moments like a social media feed.",
+"choices": [
+"AI 신경 임플란트는 미래에 우리의 일상생활을 크게 바꿀 것이다.",
+"AI 신경 임플란트는 심각한 프라이버시 침해를 일으킬 것이다.",
+"AI 신경 임플란트는 의료 분야에서만 사용되어야 한다.",
+"AI 신경 임플란트는 결코 상용화되지 못할 것이다.",
+"AI 신경 임플란트는 사회 불평등을 줄이는 데 기여한다."
+],
+"answer": "①",
+"solution": "글은 신경 임플란트가 20~30년 안에 상용화되어 게임·메시지·음악·기억 공유 등 일상을 크게 바꿀 것이라는 미래 전망을 제시한다. 따라서 요지는 '미래의 일상 변화'이다. 프라이버시·불평등은 다른 단락의 내용이며 이 글의 요지는 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2a013646f7",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nBefore we can fully welcome the era of AI-powered neural implants, several difficult issues must be solved. First, relying too much on technology may raise confusion about what it really means to be human and blur the line between humans and machines. Second, hackers or organizations could access our personal thoughts and emotions without permission through connected implants. Finally, because the technology is expensive, it may not be available to everyone, which could widen the gap between those who can afford it and those who cannot.",
+"choices": [
+"Ethical and Social Challenges We Must Solve for Neural Implants",
+"Neural Implants: The Perfect Solution to Human Problems",
+"How Hackers Steal Money Through Brain Technology",
+"The Medical Miracles Created by AI Neural Implants",
+"Ways to Lower the Price of AI-powered Neural Implants"
+],
+"answer": "①",
+"solution": "글은 인간 정체성의 혼란, 프라이버시 침해, 비용으로 인한 사회 불평등 등 신경 임플란트가 가져올 윤리적·사회적 문제들을 열거한다. 따라서 '해결해야 할 윤리적·사회적 과제'가 제목으로 알맞다. ②④는 긍정적 측면만, ③⑤는 지엽적 내용만 담아 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ae3d53d117",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nAI-powered neural implants are already helping patients in many ways. They treat brain disorders like Parkinson's disease, help paralyzed people walk again through a \"digital bridge,\" and let people who have lost an arm control an artificial one. In each case, AI reads the user's brain signals and turns them into real movement.\n\n→ AI-powered neural implants bring great (A)__________ to medicine, allowing patients to move again by using only their (B)__________.",
+"choices": [
+"benefits … thoughts",
+"dangers … muscles",
+"benefits … emotions",
+"limits … thoughts",
+"dangers … memories"
+],
+"answer": "①",
+"solution": "글은 신경 임플란트가 여러 환자를 돕는 '이로운' 의료 효과(A: benefits)를 설명하며, 환자가 '생각(B: thoughts)'만으로 움직임을 되찾는다고 했다. 'AI reads the user's brain signals'가 생각으로 움직인다는 근거다. 위험·한계나 감정·근육·기억은 본문과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-43ae8f019e",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 목적으로 가장 알맞은 것은?\n\nArtificial limbs have improved enormously over time. In ancient Egypt a simple wooden toe helped a person walk, and a 16th-century knight used an iron hand to hold his weapon. After the World Wars, injured soldiers' needs pushed the technology forward, and one soldier even returned to Major League Baseball with an artificial leg. Today, robotics and AI allow users to make complex movements and control their limbs with their thoughts, giving people with limb loss the freedom to live better lives.",
+"choices": [
+"인공 사지의 발전 과정과 그것이 사람들의 삶을 어떻게 향상시키는지 보여 주려고",
+"고대와 현대의 인공 사지를 재료 면에서 비교하려고",
+"세계대전이 인공 사지 수요에 미친 부정적 영향을 경고하려고",
+"야구 선수 Bert Shepard의 생애를 자세히 소개하려고",
+"인공 사지 제작의 구체적인 기계적 원리를 설명하려고"
+],
+"answer": "①",
+"solution": "글은 고대부터 현대 AI 결합까지 인공 사지의 발전을 시간 순으로 보여 주고, 마지막에 그것이 사람들의 삶을 더 낫게 한다고 마무리한다. 따라서 '발전 과정과 삶의 향상'을 보여 주는 것이 목적이다. ②③④⑤는 지문 일부 소재만 확대한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8724b79d4a",
+"typeId": "eng-h1-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nAI-powered neural implants would not only treat disease but also change the very way our brains work. In the future, the role of the brain would shift from learning and storing information to processing the vast amounts of data provided by the implants. Instead of simply memorizing facts, we would be able to download knowledge directly, use our creativity to interpret it, and generate entirely new ideas. In this way, human thinking itself may be transformed.",
+"choices": [
+"how neural implants may transform the way the human brain works",
+"the medical process of treating brain disease with implants",
+"the privacy risks of downloading knowledge into the brain",
+"why memorizing information is still better than downloading it",
+"the high cost that prevents implants from reaching everyone"
+],
+"answer": "①",
+"solution": "글은 임플란트가 뇌의 역할을 '학습·저장'에서 '데이터 처리'로 바꾸어 인간의 사고방식 자체를 변화시킨다는 점을 설명한다. 따라서 주제는 '뇌 작동 방식의 변화'이다. ②는 첫 문장의 'treat disease'만 보고 고르기 쉬운 함정이고, ③⑤는 본문에 없는 다른 단락의 소재이며, ④는 글의 취지와 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cd0affc253",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nThe first artist we're going to examine is Bill Traylor. Traylor was born into slavery in the U.S. in 1853 and spent his early life working on a cotton farm in Alabama. Although he became a free man after the American Civil War, he still had to face racial discrimination, working for very low wages on the farm. It wasn't until he was 85 years old and became too ill to work that he turned to drawing to express his life experiences. Using simple shapes and colors, Traylor captured complex moments in American history from slavery to freedom. As a result, he's now considered an important figure in American folk art.",
+"choices": [
+"the painting techniques Traylor used to draw dogs",
+"the hardships in Bill Traylor's life and his achievement as a folk artist",
+"the history of slavery on cotton farms in Alabama",
+"the effects of the American Civil War on Southern farmers",
+"the economic difficulties of African Americans in Montgomery"
+],
+"answer": "②",
+"solution": "글은 노예로 태어나 차별을 겪은 Bill Traylor가 85세에 그림을 시작해 미국 민속예술의 중요한 인물이 되었다는 삶과 성취를 소개한다. 따라서 주제는 ②이다. 개·농장·전쟁 등은 세부 내용일 뿐 글 전체의 주제가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5f364c72e7",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 목적으로 알맞은 것은?\n\nNext, we have Maud Lewis, a renowned artist known for her heart-warming paintings. Born in a small Canadian town in 1903, Lewis suffered from physical weaknesses such as distorted shoulders and fingers. To make a living, she began to paint and sell Christmas cards. She often depicted the Digby landscapes in paintings such as Edge of Digby Harbor, using a mixture of bright, vivid oil paints and simple forms. Although her physical limitations confined her to a small cottage, her talent and imagination were both limitless. Maud Lewis expressed her love for the world through her paintings and became an iconic figure in Canadian folk art.",
+"choices": [
+"to explain how to make and sell Christmas cards",
+"to describe the geography and climate of Digby",
+"to introduce the life and artwork of Maud Lewis",
+"to compare oil painting with other painting styles",
+"to review books and movies about Canadian artists"
+],
+"answer": "③",
+"solution": "글은 Maud Lewis의 출생, 신체적 어려움, 그림 활동과 작품, 그리고 캐나다 민속예술의 상징적 인물이 된 과정을 소개한다. 즉 그의 삶과 작품을 알리는 것이 목적이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b283547c14",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 요지로 알맞은 것은?\n\nWhile docents and curators may appear similar, they actually have quite different responsibilities. Docents are guides who lead museum tours and provide information about the artworks and artists in an exhibition. They are usually volunteers who enjoy sharing their knowledge. Curators, on the other hand, are professionals who design and organize exhibitions, determine the main theme, and select artworks that fit that theme. Despite their distinct roles, both docents and curators share a common goal: enriching every visitor's experience.",
+"choices": [
+"Docents and curators both need advanced degrees in art history.",
+"Museums rely more on curators than on docents.",
+"Docents and curators have different roles but share one goal.",
+"The work of a curator is more creative than that of a docent.",
+"Both docents and curators are usually unpaid volunteers."
+],
+"answer": "③",
+"solution": "글은 도슨트와 큐레이터의 역할이 서로 다르지만, 관람객의 경험을 풍부하게 한다는 공통의 목표를 가진다고 말한다. 따라서 요지는 ③이다. 학위·급여·우열 비교는 본문과 맞지 않거나 일부 세부 정보일 뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-394faefa45",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 알맞은 것은?\n\nLet's take a look at Anna Ancher, a famous painter from Denmark. When observing her paintings, you may notice a common theme — they all feature female figures. Born in Skagen in 1859, she later studied at a painting school in Copenhagen and even studied abroad in Paris, which was unusual for women at the time. Even after getting married, Ancher persisted in painting, objecting to the social pressure that married women were to focus solely on household duties. Unlike other artists of that era, who depicted women as still life subjects, she showcased them as active participants in everyday tasks, as seen in The Maid in the Kitchen. Ancher challenged the conventional roles of women and displayed her exceptional artistic talent.",
+"choices": [
+"Anna Ancher: A Painter Who Broke With Tradition to Portray Women",
+"The Decline of Still Life Painting in 19th-Century Denmark",
+"Paris: The New Center of Women's Art Education",
+"Household Duties and the Lives of Married Danish Women",
+"The Importance of Family Wealth for Famous Painters"
+],
+"answer": "①",
+"solution": "글은 Ancher가 당시 관습에 맞서 여성을 정물이 아닌 일상 속 능동적 존재로 그려 전통을 깼음을 강조한다. 이 핵심을 가장 잘 담은 제목은 ①이다. ②③④는 본문 세부어를 이용한 함정이고, ⑤는 언급되지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-259eb56b41",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 제목으로 알맞은 것은?\n\nThe first artist we're going to examine is Bill Traylor. Traylor was born into slavery in 1853 and spent his early life working on a cotton farm in Alabama. Although he became a free man after the American Civil War, he still had to face racial discrimination, working for very low wages. Later, around 70, he moved to Montgomery, where he found a job in a factory. It wasn't until he was 85 and became too ill to work that he turned to drawing. Mean Dog expresses his fear of dogs, which had been used on farms to hunt slaves, while Woman with Purse portrays the free lives of African Americans he observed on the streets. Using simple shapes and colors, Traylor captured complex moments in American history from slavery to freedom, and he's now considered an important figure in American folk art.",
+"choices": [
+"Bill Traylor: From Slavery to a Master of American Folk Art",
+"The Role of Dogs in Southern American Farm Life",
+"Bill Traylor's Fight Against Harsh Factory Conditions",
+"American Folk Art: A Movement Born in Montgomery",
+"The Civil War and the End of Racial Discrimination"
+],
+"answer": "①",
+"solution": "글 전체는 노예에서 자유인이 된 Traylor가 고난을 겪고도 그림으로 미국 역사를 담아내어 민속예술의 거장이 된 과정을 다룬다. 이를 포괄하는 제목은 ①이다. ②는 개, ③은 공장, ④는 Montgomery·folk art, ⑤는 남북전쟁이라는 세부어를 이용한 함정 선지다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c263771647",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nNext, we have Maud Lewis, a renowned artist known for her heart-warming paintings. Born in Canada in 1903, Lewis suffered from physical weaknesses such as distorted shoulders and fingers. Although her physical limitations confined her to a small cottage, her talent and imagination were both limitless. Using a mixture of bright, vivid oil paints and simple forms, she generated an original, innovative style, creating a magical quality like that of a fairy tale. As her paintings gradually gained popularity, her story inspired many people and was later made into books and movies, and she became an iconic figure in Canadian folk art.\n\n→ Despite physical weaknesses that (A)____________ her movement, Maud Lewis created warm, bright paintings in a unique style, and through her inspiring life story and works she became a(n) (B)____________ figure in Canadian folk art.",
+"choices": [
+"(A) restricted … (B) iconic",
+"(A) widened … (B) minor",
+"(A) improved … (B) forgotten",
+"(A) limited … (B) unknown",
+"(A) ignored … (B) controversial"
+],
+"answer": "①",
+"solution": "신체적 약점이 움직임을 '제한했다(restricted)'는 흐름이 자연스럽고, 마지막에 캐나다 민속예술의 '상징적(iconic)' 인물이 되었다고 했으므로 (A)restricted, (B)iconic이 맞다. 따라서 정답은 ①이다. ④는 (A)는 맞지만 (B)unknown이 본문과 반대라서 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f16cdb95dc",
+"typeId": "eng-h1-b06-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 주제로 알맞은 것은?\n\nLet's take a look at Anna Ancher, a famous painter from Denmark. Born in Skagen in 1859, she moved to Copenhagen to attend a painting school and even studied abroad in Paris, which was unusual for women at the time. Thanks to her mother's encouragement, she was able to take advantage of these opportunities. Even after getting married, Ancher persisted in painting, objecting to the social pressure that married women were to focus solely on household duties. Unlike other artists of that era, who depicted women as still life subjects, she showcased them as active participants in everyday tasks. She also skillfully explored light and color, contributing to the Impressionist movement in Denmark. Ancher challenged the conventional roles of women and displayed her exceptional artistic talent.",
+"choices": [
+"the way French painters influenced Danish Impressionism",
+"the social pressures that forced married women to stop painting",
+"how Anna Ancher defied women's traditional roles and showed her artistic talent",
+"the reasons women were rarely allowed to study art abroad in the 1800s",
+"the rise and fall of the Impressionist movement in Denmark"
+],
+"answer": "③",
+"solution": "글은 Ancher가 결혼 후에도 그림을 이어가며 여성에 대한 관습적 역할에 맞서고, 여성을 능동적 존재로 그리며 뛰어난 예술적 재능을 보였음을 중심으로 서술한다. 따라서 주제는 ③이다. ①②④⑤는 본문에 나온 소재(파리·사회적 압력·해외 유학·인상주의)를 이용한 함정 선지다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m3s0t0",
+"custom": true
 }
 ]

@@ -691,5 +691,260 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b08-u3m5s0t0",
 "custom": true
+},
+{
+"id": "fill-ce166414f2",
+"typeId": "eng-m2-b08-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nIn Nepal, dogs have been an important part of the culture for hundreds of years. The Nepalese believe that dogs are helpers of the god of death and guide souls to heaven. Because of this belief, Nepal has a special day to celebrate dogs. This dog festival usually takes place in October or November. On this day, people give dogs flower necklaces and delicious food. They also put a red mark on dogs' foreheads and even bow to dogs to show them love and thanks.",
+"choices": [
+"the duty of the god of death in Nepal",
+"the festival that honors dogs in Nepal",
+"various ways to raise dogs in Nepal",
+"the long history of Nepalese religion",
+"the kinds of food that dogs like most"
+],
+"answer": "②",
+"solution": "글 전체가 네팔에서 개를 기념하기 위해 여는 특별한 축제와 그날 사람들이 개에게 하는 행동을 설명하고 있다. 죽음의 신이나 종교의 역사가 아니라 '개를 기리는 축제'가 중심 소재이므로 주제는 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ae468b8fe0",
+"typeId": "eng-m2-b08-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 알맞은 것은?\n\nWhen the English army was attacking Ireland in the 17th century, they came across a group of wild goats in a field. Most of the goats ran away to the mountains, but one goat ran toward the village. When the villagers saw the tired and scared goat, they realized that danger was coming. Thanks to the goat, the villagers were able to prepare and protect themselves.",
+"choices": [
+"Killorglin: The City of Many Goats",
+"A Wild Goat That Saved a Village",
+"How to Raise Wild Goats Safely",
+"The Long War Between England and Ireland",
+"Dangerous Wild Animals Living in Ireland"
+],
+"answer": "②",
+"solution": "마을로 달려온 한 염소 덕분에 마을 사람들이 위험을 알아채고 대비해 스스로를 지킬 수 있었다는 내용이다. 글의 핵심은 '마을을 구한 야생 염소'이므로 제목으로는 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fb59719ca9",
+"typeId": "eng-m2-b08-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 요지로 알맞은 것은?\n\nSome animals have been our friends for thousands of years. They have helped and protected us. To celebrate these animal friends, people in Ireland and Nepal hold special festivals every year. These festivals show a strong bond between humans and animals.",
+"choices": [
+"People hold festivals to thank their animal friends.",
+"Wild animals in Ireland and Nepal are dangerous.",
+"Animals need to be protected from humans.",
+"Dogs and goats make the best house pets.",
+"People should stop holding animal festivals."
+],
+"answer": "①",
+"solution": "오랫동안 인간을 돕고 지켜 준 동물 친구들을 기념하기 위해 아일랜드와 네팔에서 매년 축제를 연다는 내용이다. 인간과 동물의 유대를 보여 주는 '감사의 축제'가 요지이므로 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cb093d2775",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe hot tea made me ______.",
+"choices": [
+"happy",
+"happily",
+"to happy",
+"happiness",
+"happening"
+],
+"answer": "①",
+"solution": "「make+목적어+목적격보어」에서 목적격보어 자리에는 형용사가 온다. 부사 happily나 명사 happiness는 올 수 없으므로 형용사 happy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-826f8148bd",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI need a chair to sit ______.",
+"choices": [
+"on",
+"of",
+"as",
+"from",
+"없음(전치사 불필요)"
+],
+"answer": "①",
+"solution": "'앉을 의자'는 원래 sit on the chair이므로, to부정사가 chair를 수식할 때 전치사 on을 반드시 남겨야 한다. 따라서 to sit on이 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-738efcbed9",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nThe warm blanket will keep you (warm / warmly).",
+"selfGrade": true,
+"answer": "warm",
+"solution": "「keep+목적어+목적격보어」 구문으로, 목적격보어 자리에는 부사 warmly가 아니라 형용사 warm이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ee3bd6ad95",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"The movie made us excitedly.",
+"She needs a pen to write.",
+"He has many friends to play with.",
+"The news made them sadly.",
+"I want a house to live."
+],
+"answer": "③",
+"solution": "③ '함께 놀 친구'는 play with a friend이므로 to play with가 옳다. ①은 excited, ④는 sad(형용사), ②는 to write with, ⑤는 to live in이 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3c40085a5c",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 어색한 것은?",
+"choices": [
+"This soup keeps me warm.",
+"She has some paper to write on.",
+"The story made the kids bored.",
+"He is looking for a pencil to write.",
+"I have something to tell you."
+],
+"answer": "④",
+"solution": "④는 '쓸 연필'이므로 write with a pencil의 관계에서 전치사 with가 필요하다. 따라서 to write with가 되어야 한다. 나머지는 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6152d0bc51",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친(=굵은) to부정사 뒤에 전치사가 필요하지 않은 것은?",
+"choices": [
+"a chair to sit",
+"a house to live",
+"a friend to talk",
+"a problem to discuss",
+"a pen to write"
+],
+"answer": "④",
+"solution": "discuss는 타동사라서 전치사 없이 바로 목적어를 취한다(discuss a problem). 나머지는 각각 sit on, live in, talk to(with), write with처럼 전치사가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f605d7db4d",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 틀린 문장은?",
+"choices": [
+"The long trip made us tired.",
+"Please keep the door open.",
+"Her words made me angrily.",
+"I bought a book to read.",
+"We have a lot of work to do."
+],
+"answer": "③",
+"solution": "「make+목적어+목적격보어」에서 보어는 형용사여야 하므로, 부사 angrily가 아니라 형용사 angry가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2d9afe444e",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장의 개수는?\n\nⓐ The movie made me sleepy.\nⓑ Can you keep the soup warmly?\nⓒ I need a sheet of paper to write on.\nⓓ She has many topics to discuss about.\nⓔ He has no house to live.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "옳은 문장은 ⓐ, ⓒ 두 개다. ⓑ는 warm, ⓓ는 discuss(타동사라 about 삭제), ⓔ는 to live in으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c632f73f21",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 밑줄 친 부분 중 어색한 것 두 개를 찾아 기호를 쓰고 어색한 부분을 바르게 고쳐 쓰시오.\n\n(A) The good news made us happy. (B) Please keep your hands cleanly. (C) The teacher made the class quiet. (D) I'm looking for a friend to play. (E) She has a lot of homework to finish.\n(1) ____ : ____________\n(2) ____ : ____________",
+"selfGrade": true,
+"answer": "(B) : clean / (D) : to play with",
+"solution": "(B)는 「keep+목적어+형용사」이므로 부사 cleanly를 형용사 clean으로 고친다. (D)는 '함께 놀 친구'이므로 play with a friend의 관계에서 to play with가 되어야 한다. 나머지는 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f8b4986ff4",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말과 같도록 주어진 단어를 바르게 배열하시오. (단, 전치사 한 단어를 추가할 것)\n\n나는 함께 이야기할 친구가 필요하다.\n(a friend / need / to / I / talk)",
+"selfGrade": true,
+"answer": "I need a friend to talk with.",
+"solution": "'함께 이야기할 친구'는 talk with a friend의 관계이므로, to talk 뒤에 전치사 with(또는 to)를 추가해 to talk with가 되어야 한다. (I need a friend to talk to.도 정답)",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6866ea2b1a",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 중 어법상 틀린 문장을 모두 찾아 기호를 쓰고, 틀린 부분을 바르게 고쳐 쓰시오.\n\nⓐ The heavy bag made my shoulders sore.\nⓑ We need some water to drink.\nⓒ Keep the room cool in summer, please.\nⓓ He gave me a nice house to live.\nⓔ The sad movie made her sadly.",
+"selfGrade": true,
+"answer": "ⓓ : to live in / ⓔ : sad",
+"solution": "ⓓ는 '살 집'이므로 live in a house의 관계에서 to live in이 되어야 한다. ⓔ는 「make+목적어+형용사」이므로 부사 sadly가 아니라 형용사 sad가 되어야 한다. ⓑ의 drink는 타동사라 전치사가 없어도 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-501a8fe92c",
+"typeId": "eng-m2-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분을 두 군데 찾아 바르게 고쳐 쓰시오.\n\nMy little brother was sick yesterday. The warm soup made him well, and a soft blanket kept him warmly. He wanted a book to read and some paper to draw, so I brought them to him.",
+"selfGrade": true,
+"answer": "warmly → warm / to draw → to draw on",
+"solution": "「keep+목적어+형용사」이므로 부사 warmly를 형용사 warm으로 고친다. '그림 그릴 종이'는 draw on paper의 관계이므로 paper to draw on이 되어야 한다. made him well과 a book to read는 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m2s0t0",
+"custom": true
 }
 ]

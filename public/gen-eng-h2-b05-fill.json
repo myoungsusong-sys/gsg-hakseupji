@@ -2510,5 +2510,113 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-a6e07e8998",
+"typeId": "eng-h2-b05-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nTraditionally, fishers went out to sea with fishing nets or long lines on boats to catch fish. They took advantage of their experience gained through trial and error, through observation, and through knowledge passed down from previous generations. With wild fish stocks gradually declining due to overfishing and the changing climate, more fishers are turning to farming instead of casting nets or lines. In fact, according to a UN report, about 49% of the fish consumed worldwide in 2020 came from fish farms, not from the wild. This figure is expected to continue to grow, increasing to 62% by 2030. With the arrival of smart fish farming technology driven by artificial intelligence (AI), fish farmers are able to provide healthy, affordable seafood to families everywhere.",
+"choices": [
+"the history of traditional fishing tools",
+"the shift from traditional fishing to fish farming",
+"the dangers of overfishing to ocean animals",
+"ways to pass down fishing knowledge to the next generation",
+"the decrease in the global consumption of seafood"
+],
+"answer": "②",
+"solution": "글은 전통적인 어업 방식을 소개한 뒤, 야생 어류 자원이 줄면서 어부들이 양식업으로 옮겨 가고 있다고 설명한다. 양식 어류의 비율이 늘고 있다는 UN 통계와 AI 기반 스마트 양식 기술도 이 흐름을 뒷받침한다. 따라서 주제는 ② '전통 어업에서 양식업으로의 전환'이다. ③은 원인 하나에 불과하고, ⑤는 본문 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ca724d83dd",
+"typeId": "eng-h2-b05-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 요지로 가장 알맞은 것은?\n\nA computer system with deep learning capabilities is able to track and record fish behavior better than humans can, especially when the system is trained with enough relevant data. It can distinguish and identify one fish from another and diagnose whether a small speck is dirt or sea lice, and this information is entered into the fish's health record. In a sense, the fish farm is monitored by an AI doctor on duty 24/7. Farmers can then determine when they should take action, such as when to separate an abnormal group from the rest or spread out the fish population to reduce density, without resorting to harsh chemical treatments, which can harm the fish, the environment, and even the consumer. In addition, all this data from cameras and sensors can be utilized for various applications and purposes.",
+"choices": [
+"화학 처리는 물고기 질병을 치료하는 가장 확실한 방법이다.",
+"인공지능은 양식장에서 사람의 역할을 완전히 대체할 것이다.",
+"물고기의 밀도를 높이면 양식장의 생산성이 커진다.",
+"딥러닝 시스템은 물고기를 감시·기록하여 양식업자의 관리 결정을 돕는다.",
+"양식장에서 모은 데이터는 한 가지 목적으로만 활용되어야 한다."
+],
+"answer": "④",
+"solution": "딥러닝 시스템이 물고기의 행동을 추적·기록하고 질병 여부를 진단해, 양식업자가 언제 조치할지 판단하도록 돕는다는 것이 글의 핵심이다. ①은 본문이 화학 처리의 해로움을 지적하므로 틀리다. ③은 본문의 '밀도를 줄인다(reduce density)'와 반대이고, ⑤는 '다양한 용도(various applications and purposes)'에 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8e7e8d7085",
+"typeId": "eng-h2-b05-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nMuseums are said to be places where time is transformed into space. Maybe that's why people visit them, to learn and be inspired in new ways. Accordingly, museums are adopting new techniques and technologies to meet the diverse demands of visitors.\nTo help visitors interact with artworks and artists in a novel, engaging way, many museums are adopting technology to enhance the experience of museum-goers. The Van Gogh Museum in Amsterdam allows visitors to virtually touch objects and interact with the characters inside, immersing themselves in the artworks.",
+"choices": [
+"Why Museums Ban Touching Artworks",
+"The History of the Van Gogh Museum",
+"Technology Making Museum Visits More Engaging",
+"How to Become a Famous Museum Artist",
+"Museums Losing Visitors to Online Art"
+],
+"answer": "③",
+"solution": "박물관들이 관람객의 다양한 요구를 충족하려고 새로운 기술을 도입해 관람 경험을 높이고 있다는 것이 글의 중심 내용이다. 반 고흐 박물관의 가상 체험은 그 예시일 뿐이므로 ②는 지엽적이다. ①은 '가상으로 만질 수 있다'는 내용과 반대이고, ④와 ⑤는 본문에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bcac840aa7",
+"typeId": "eng-h2-b05-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nThe system can also tell farmers exactly when to feed the fish by identifying patterns of behavior that an individual fish or the school exhibits when they are hungry. This is how farmers can accurately determine optimal feeding times and amounts. The right amount of food at the right time minimizes cost, reduces waste and pollution, and maximizes fish growth rates. Given the fact that feeding constitutes more than 50% of a fish farm's operational budget, this precise feeding approach will ultimately contribute to a more affordable supply of fish for consumers as well as efficient and sustainable aquaculture operations in general.",
+"choices": [
+"How AI-Based Precise Feeding Benefits Fish Farms and Consumers",
+"Why Fish Farmers Should Feed Fish More Often",
+"The Rising Cost of Fish Feed in Aquaculture",
+"Hungry Fish: Patterns That Humans Can Easily Notice",
+"Reducing Pollution by Releasing Farmed Fish into the Wild"
+],
+"answer": "①",
+"solution": "시스템이 배고픈 물고기의 행동 패턴을 찾아 가장 알맞은 급여 시기와 양을 알려 주고, 그 결과 비용·낭비·오염은 줄고 성장률은 높아진다는 내용이다. 이 방식은 소비자에게 더 저렴한 어류를, 양식업에는 효율성과 지속 가능성을 가져다준다. ③은 '사료비가 운영 예산의 50% 이상'이라는 세부 내용만 이용한 오답이고, ②는 '적정량'을 강조하는 본문과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9563104ffc",
+"typeId": "eng-h2-b05-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nSome museums are even personalizing services, as natural language processing techniques can be implemented into chatbots. The chatbot of the British Museum of London explains details not only about the exhibits but also about the facilities and venues, in a dozen different languages.\nPersonalized services will continue to be an important part of a museum visitor's experience. Based on an analysis of a visitor's background and past behavior, including the artworks, websites, or social media sites they've viewed or given a “like” to online, deep learning systems can predict and recommend artworks they would most likely be interested in. The National Museum of Singapore conducted a study in 2017 on developing a deep learning engine that can track a visitor's gaze, identify what interests them, recommend personalized tours, and show them virtual objects on top of real-world exhibits, often giving interactive quizzes and games that suit their interests.\n\n→ Museums are using AI technologies such as chatbots and deep learning systems to provide   (A)   services that reflect each visitor's   (B)  .\n\n     (A)          (B)",
+"choices": [
+"standardized …… interests",
+"personalized …… ages",
+"limited …… backgrounds",
+"free …… complaints",
+"personalized …… interests"
+],
+"answer": "⑤",
+"solution": "챗봇과 딥러닝 시스템은 관람객의 배경과 과거 행동을 분석해 관심 있을 만한 작품과 투어를 추천하는 '개인 맞춤형(personalized)' 서비스를 제공한다. 그러므로 (A)는 personalized, (B)는 interests가 알맞다. ①의 standardized는 '개인 맞춤'과 반대되는 뜻이다. ③의 backgrounds는 분석 대상으로는 언급되지만 (A)의 limited가 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7427e5587c",
+"typeId": "eng-h2-b05-u3m3s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "윗글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말을 지문에서 찾아 각각 한 단어로 쓰시오.\n\nAI continues to advance in aquaculture to extend beyond caged fish. In particular, smart fish farming technologies can be applied to seaweed farming. Seaweed is as valuable a source of food as fish. It's also a source of fuel and an important ingredient for cosmetics, fertilizers, and other medicinal and industrial products. As such, ongoing research is exploring various ways AI can help in the seaweed industry, including the use of autonomous underwater vehicles (AUVs) and swarm robotics. Using cameras and sensors, AUVs can do many of the analytical and diagnostic tasks on seaweed farms. Swarm robots, or many small robots working together, can swim in and around seaweed farms to collect data and then make decisions on how to deal with problems that arise. Single larger robots or even humans may be available to take care of the physical labor from removing harmful weeds to harvesting; however, swarm robots may be more efficient and cost-effective.\n\n→ Smart fish farming technologies are now being applied to   (A)   farming, where AUVs and   (B)   robots can collect data and deal with problems, possibly more efficiently than humans.",
+"selfGrade": true,
+"answer": "(A) seaweed (B) swarm",
+"solution": "글은 AI 기술이 가두리 어류를 넘어 해조류(seaweed) 양식에도 적용되고 있다고 설명한다. AUV는 분석·진단 작업을 맡고, 여러 작은 로봇이 함께 움직이는 군집 로봇(swarm robots)은 데이터를 모아 문제를 처리한다. 군집 로봇은 사람이나 대형 로봇 한 대보다 더 효율적이고 비용 효과적일 수 있다. 따라서 (A)는 seaweed, (B)는 swarm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m3s0t0",
+"custom": true
 }
 ]

@@ -3939,5 +3939,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u6m0s0t0",
 "custom": true
+},
+{
+"id": "fill-8958a0ae35",
+"typeId": "eng-m3-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 괄호 안에서 어법상 알맞은 말을 골라 쓰시오.\n\nHoney is a truly wonderful food. It is good for our health and tastes (great / greatly).",
+"selfGrade": true,
+"answer": "great",
+"solution": "taste는 감각을 나타내는 연결동사(감각동사)로, 뒤에는 부사가 아니라 형용사가 와서 주어의 상태를 설명한다. 따라서 greatly가 아니라 great가 알맞다. '맛이 좋다'라는 뜻으로 taste great가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ae9458f08f",
+"typeId": "eng-m3-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 괄호 안에서 어법상 알맞은 말을 골라 쓰시오.\n\nBees help produce many crops such as apples and strawberries. These crops cannot (produce / be produced) by themselves.",
+"selfGrade": true,
+"answer": "be produced",
+"solution": "주어인 These crops는 '생산되는' 대상이므로 수동태가 필요하다. 조동사 cannot 뒤에는 「be + 과거분사」 형태가 와야 하므로 be produced가 알맞다. produce를 쓰면 작물이 스스로 무언가를 생산한다는 어색한 능동의 뜻이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-005765a117",
+"typeId": "eng-m3-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 괄호 안에서 어법상 알맞은 말을 골라 쓰시오.\n\nWhy are bees disappearing? One of the (reason / reasons) is climate change.",
+"selfGrade": true,
+"answer": "reasons",
+"solution": "「one of the + 복수명사」는 '~들 중 하나'라는 뜻으로, 뒤에는 반드시 복수명사가 와야 한다. 따라서 reason이 아니라 reasons가 알맞다. 동사는 핵심 주어 One에 맞춰 단수 is를 쓴 것이 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9f27f01e14",
+"typeId": "eng-m3-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글에서 어법상 어색한 부분을 한 군데 찾아 바르게 고쳐 쓰시오.\n\nGlobal warming has brought extremely hot and cold weather. Bees cannot survive in this conditions.\n\n어색한 표현 _____________ → 고친 표현 _____________",
+"selfGrade": true,
+"answer": "this → these",
+"solution": "지시형용사 this는 단수명사를 꾸미지만, 뒤의 conditions는 복수명사이다. 따라서 복수명사를 꾸미는 these로 고쳐 these conditions가 되어야 한다. '이러한 (여러) 조건들 속에서'라는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cabcc4b8a5",
+"typeId": "eng-m3-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글에서 어법상 어색한 곳을 두 군데 찾아 각각 바르게 고쳐 쓰시오. (본문에 쓰인 순서대로 쓸 것)\n\nAbout a third of the bee population die every year. This is really sad because bees are very helpful to humans. For example, honey is a wonderful food that tastes greatly and lasts almost forever.\n\n(1) _____________ → _____________\n(2) _____________ → _____________",
+"selfGrade": true,
+"answer": "(1) die → dies (2) greatly → great",
+"solution": "(1) 주어의 핵심은 「a third of the bee population(개체 수의 1/3)」으로 부분을 나타내는 표현의 수는 of 뒤의 명사 population(단수)에 일치시키므로 동사도 단수형 dies가 되어야 한다. 뒤의 bees에 끌려 die로 쓰지 않도록 주의한다. (2) taste는 연결동사(감각동사)여서 뒤에 형용사가 와야 하므로 greatly가 아니라 great가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8820c4bde2",
+"typeId": "eng-m3-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분을 세 군데 찾아쓰고, 각각 알맞게 고쳐 쓰시오. (본문에 쓰인 순서대로 쓸 것)\n\nBees are one of the most important insect on Earth. They help produce many crops, such as apples and strawberries. However, these crops cannot produced without the help of bees. In fact, bees are not only helpful to plants also to humans.\n\n어색한 표현           알맞게 고친 표현\n(1) _______________ → _______________\n(2) _______________ → _______________\n(3) _______________ → _______________",
+"selfGrade": true,
+"answer": "(1) insect → insects (2) produced → be produced (3) also → but also",
+"solution": "(1) 「one of the + 최상급 + 복수명사」 구조이므로 insect를 복수형 insects로 고쳐야 한다. (2) 주어 these crops는 '생산되는' 대상이므로 조동사 뒤에 수동태 「be + 과거분사」가 와야 하여 cannot produced를 cannot be produced로 고친다. (3) 'A뿐만 아니라 B도'를 뜻하는 상관접속사는 「not only A but also B」이므로 also를 but also로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u1m2s0t0",
+"custom": true
 }
 ]

@@ -3735,5 +3735,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b01-u2m3s0t0",
 "custom": true
+},
+{
+"id": "fill-b64a49253e",
+"typeId": "eng-h1-b01-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe first step in managing your anger is recognizing the physical signs of your body. These signs include an increased heart rate, a flushed face, and the clenching of your fists. You can notice these signs in advance. When you notice them, take action right away. For example, you could take a short break to organize your thoughts, or you could end a conversation before it becomes too intense.",
+"choices": [
+"Anger produces physical signs in your body.",
+"A faster heartbeat can be a physical sign of anger.",
+"Recognizing the physical signs of anger is the first step in managing it.",
+"You cannot notice the physical signs of anger until after you lose your temper.",
+"Taking a short break is one way to take action when you feel angry."
+],
+"answer": "④",
+"solution": "본문은 분노의 신체 신호를 '미리(in advance)' 알아챌 수 있다고 했으므로, 화를 낸 뒤에야 알 수 있다는 ④는 일치하지 않는다. 나머지 선지는 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-46babce1e7",
+"typeId": "eng-h1-b01-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAfter working hard all day long, a boy would go up to the top of a hill and look across at another hill. On this far hill stood a house with windows of gold and diamond. The windows shone brightly at sunset, but after a while, the light disappeared. The boy supposed that the people in the house closed the shutters because it was dinnertime.",
+"choices": [
+"The boy climbed the hill after a day of hard work.",
+"The house with the golden windows stood on a far hill.",
+"The windows of the house shone at sunset.",
+"The boy believed the shutters were closed at dinnertime.",
+"The boy went inside the house to look at the windows."
+],
+"answer": "⑤",
+"solution": "본문에서 소년은 먼 언덕의 집을 '바라보기만' 했을 뿐 집 안에 들어갔다는 내용은 없다. 따라서 ⑤가 일치하지 않는다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-39555bf39a",
+"typeId": "eng-h1-b01-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글을 읽고 답할 수 있는 질문은?\n\nAs a teen, you may feel like an adult, but your brain is still growing. In your brain, there is a part that is responsible for solving problems and controlling your emotions. In your teen years, this part is still in development. At the same time, your body is flowing with hormones, which significantly affects your mood. The combination of these factors intensifies your strong emotions.",
+"choices": [
+"How long does it take for a teenager's brain to fully develop?",
+"What part of the brain is responsible for controlling emotions and solving problems?",
+"How many hormones flow through a teenager's body?",
+"Where do teenagers usually express their anger?",
+"Why do adults have fewer emotions than teenagers?"
+],
+"answer": "②",
+"solution": "본문은 뇌의 한 부분이 '문제 해결과 감정 조절'을 담당한다고 밝혔으므로 ②는 답할 수 있다. 나머지는 본문에 근거가 없어 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-136bac8ba2",
+"typeId": "eng-h1-b01-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것은?\n\nA woman came to the door, looked kindly at the boy, and asked him what he wanted. \"I saw the golden windows from the top of our hill,\" he said, \"and I came to see them, but now they are only glass.\" The woman shook her head and laughed. \"We are poor farming people,\" she said, \"and are not likely to have windows made of gold; but glass is better to see through.\" She told the boy to sit down on the step, brought him a snack, and called her daughter, a girl of his own age.",
+"choices": [
+"The woman was angry that the boy had come to her house.",
+"The boy found that the windows were actually made of gold up close.",
+"The woman explained that clear glass is better for seeing through than gold.",
+"The boy refused the snack and left the house immediately.",
+"The woman's daughter was much older than the boy."
+],
+"answer": "③",
+"solution": "여인은 유리가 '들여다보기에 더 좋다(glass is better to see through)'고 말했으므로 ③이 일치한다. 여인은 소년을 친절히 대했고(①✗), 창은 투명한 유리였으며(②✗), 소년은 간식을 받았고(④✗), 딸은 소년과 '같은 나이(a girl of his own age)'였다(⑤✗).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ff9a1329da",
+"typeId": "eng-h1-b01-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nThe boy's father said, \"You have been a good boy and have earned a holiday. Take the day off, but try to learn something important.\" The boy thanked his father and kissed his mother; then he took a piece of bread, and left to find the house with the golden windows. His bare feet made marks in the white sand. Before long, he felt hungry, so he sat down by a stream to eat his bread and drink the clear water. He scattered the remaining pieces of bread for the birds, as his mother had taught him to do, and went on his way.",
+"choices": [
+"Why did the boy receive a holiday from his father?",
+"What did the boy take with him when he left home?",
+"Where did the boy stop to eat and drink?",
+"What did the boy do with the leftover pieces of bread?",
+"How many birds came to eat the bread the boy scattered?"
+],
+"answer": "⑤",
+"solution": "본문에 새들이 몇 마리 왔는지는 나오지 않으므로 ⑤는 답할 수 없다. ①은 '착한 아이여서(earned a holiday)', ②는 '빵 한 조각', ③은 '시냇가', ④는 '새들에게 뿌렸다'로 모두 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ac9ad86b62",
+"typeId": "eng-h1-b01-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 요지로 가장 알맞은 것은?\n\nAnger is a feeling, but behavior is a choice. In some cases, simple strategies may not be enough, so you may need to find proper coping skills for your personal situation. Explore various strategies to discover what is best for you, such as taking a walk, drawing a picture, or writing down your thoughts. You can also try to find possible solutions to a problem and compare the advantages and disadvantages of each one. By managing your anger properly, you can be the boss of your feelings, not the other way around.",
+"choices": [
+"You should avoid feeling anger at all times.",
+"Anger is always caused by problems you cannot solve.",
+"Expressing anger physically is the healthiest coping skill.",
+"By finding and using the right coping skills, you can take control of your anger.",
+"Everyone should use the same strategy to deal with anger."
+],
+"answer": "④",
+"solution": "본문은 자신에게 맞는 적절한 대처 기술을 찾아 분노를 조절하면 감정의 주인이 될 수 있다고 말하므로 ④가 요지다. 분노 자체를 없애라거나(①), 모두 같은 방법을 쓰라는(⑤) 내용은 없고, 사람마다 최선의 방법을 탐색하라고 했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u0m4s0t0",
+"custom": true
 }
 ]

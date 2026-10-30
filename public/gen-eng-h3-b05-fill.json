@@ -544,5 +544,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b05-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-ed7939fcf4",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nIn 2010, the Deepwater Horizon platform in the Gulf of Mexico exploded and leaked a large amount of oil into the sea. One way to deal with such oil pollution is bioremediation, a method that relies on bacteria. Some bacteria that naturally live in the ocean can break down oil. When an oil spill happens, these bacteria are drawn to the oil and start to multiply. As they grow, they release enzymes that break oil down into carbon dioxide and water. Although the process may take weeks or months, it is more environmentally friendly than traditional methods that use harmful chemicals.",
+"choices": [
+"① The Deepwater Horizon explosion in 2010 caused a large oil leak into the Gulf of Mexico.",
+"② Bioremediation is a cleanup method that makes use of bacteria.",
+"③ Some bacteria living in the ocean are naturally able to break down oil.",
+"④ During bioremediation, bacteria release enzymes that turn oil into carbon dioxide and water.",
+"⑤ Bioremediation cleans up oil spills faster than traditional methods that use chemicals."
+],
+"answer": "⑤",
+"solution": "지문은 생물정화 과정이 몇 주에서 몇 달이 걸릴 수 있다고 했으므로 전통적 방법보다 '빠르다'는 ⑤는 일치하지 않는다. 오히려 지문은 화학약품을 쓰는 방법보다 더 '친환경적'이라고 말할 뿐 속도가 빠르다고 하지 않았다. 나머지 ①~④는 지문에 그대로 언급되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9379e84505",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nEvery sporting event affects the environment. For example, a long-track speed skating competition can only take place if the ice of a 400-meter oval track is frozen to a thickness of 3 to 5 cm. While the competition is on, refrigeration systems keep the track frozen, and the temperature, humidity, and air quality inside the stadium must be maintained. In addition, employees, athletes, and spectators travel to and from the stadium, often from other cities or even from abroad. In fact, more than 25% of the emissions from the 2018 PyeongChang Winter Olympics are estimated to have come from fan travel and accommodations.",
+"choices": [
+"① Every sporting event has some effect on the environment.",
+"② A long-track speed skating race requires an oval track with ice 3 to 5 cm thick.",
+"③ Special refrigeration systems are used to keep the track frozen during the competition.",
+"④ Spectators at the event travel only from nearby cities within the same country.",
+"⑤ Over a quarter of the emissions from the 2018 PyeongChang Winter Olympics are thought to be due to fan travel and lodging."
+],
+"answer": "④",
+"solution": "지문은 관중과 선수들이 다른 도시뿐 아니라 해외(abroad)에서도 이동한다고 했으므로, '같은 나라 안 가까운 도시에서만' 온다는 ④는 일치하지 않는다. ①②③⑤는 트랙 두께, 냉각 시스템, 25% 배기가스 수치 등 지문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5a43364912",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nM: Can you pass me one of those cotton bags?\nW: Sure. You like them because they're reusable, right?\nM: Yes, they're better for the environment than disposable plastic bags.\nW: Actually, I read that reusable bags are only effective if you use them more than 7,100 times.\nM: Really? Is that a lot?\nW: Yes. You'd have to use the same bag every day for about 20 years.\nM: Then should I just go back to plastic bags?\nW: Not at all. Just use your reusable bags as often as you can.\nM: Okay. I'll keep using mine until they wear out.",
+"choices": [
+"① The man prefers cotton bags because they can be used again and again.",
+"② The woman says reusable bags are only effective if used more than 7,100 times.",
+"③ Using a reusable bag every day for about 20 years would reach that number of uses.",
+"④ The woman advises the man to go back to disposable plastic bags.",
+"⑤ The man decides to keep using his reusable bags until they wear out."
+],
+"answer": "④",
+"solution": "여자는 남자가 'plastic bags로 돌아가야 하냐'고 묻자 'Not at all'이라며 재사용 봉투를 가능한 자주 쓰라고 했으므로, 일회용 봉투로 돌아가라고 조언했다는 ④는 일치하지 않는다. 나머지 선지는 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a530b72d00",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nMany Olympic Games have tried to reduce their environmental impact. The Olympic Village built for the 2000 Sydney Summer Olympics became the world's largest solar-powered suburb. The 2002 Salt Lake City Winter Olympics used a new energy recycling system that used the curling hall's air conditioning unit to heat the showers and bathrooms in the venue. For the 2010 Vancouver Winter Olympics, the Olympic speed-skating venue was built with salvaged timber. At the 2020 Tokyo Summer Olympics, electricity was generated with hydrogen instead of fossil fuel, supplying power for many buildings in the Olympic Village.",
+"choices": [
+"① The Olympic Village for the 2000 Sydney Games became the world's largest solar-powered suburb.",
+"② The 2002 Salt Lake City Games reused heat from the curling hall's air conditioning unit to warm showers and bathrooms.",
+"③ The speed-skating venue for the 2010 Vancouver Games was built using salvaged timber.",
+"④ At the 2020 Tokyo Games, electricity was produced from fossil fuels rather than hydrogen.",
+"⑤ Several Olympic Games have made efforts to lower their impact on the environment."
+],
+"answer": "④",
+"solution": "지문은 2020 도쿄 올림픽에서 화석 연료 대신 수소로 전기를 생산했다고 했으므로, 수소가 아닌 화석 연료로 전기를 만들었다는 ④는 정반대로 서술되어 일치하지 않는다. ①②③⑤는 각 대회의 친환경 사례와 그대로 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a649d89143",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nThe Aral Sea is located in Central Asia, between Uzbekistan and Kazakhstan. Its name means \"sea of islands\" in Kazakh. It is not actually a sea but a saltwater lake that was once the world's fourth-largest lake. Sadly, by 2007 it had shrunk to only 10% of its original size because of the dams and canals built for cotton farming. This decline damaged local water resources and changed the local climate, leading to longer summers and more dry days.",
+"choices": [
+"① Where is the Aral Sea located?",
+"② What does the name of the Aral Sea mean in Kazakh?",
+"③ By 2007, what fraction of its original size had the Aral Sea shrunk to?",
+"④ Why were the dams and canals near the Aral Sea built?",
+"⑤ How long will it take for the Aral Sea to return to its original size?"
+],
+"answer": "⑤",
+"solution": "지문에는 아랄해가 원래 크기로 회복되는 데 걸리는 시간이 전혀 언급되지 않으므로 ⑤는 답할 수 없다. ①은 중앙아시아, ②는 '섬들의 바다', ③은 10%, ④는 목화 재배를 위한 댐·운하 건설로 각각 지문에서 답을 찾을 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1c3affdf61",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThanks to its popularity, sports is a powerful tool for raising awareness about environmental responsibility. The sports industry influences billions of people who take part in sports as spectators, athletes, or organizers. Research has found that fans are receptive to environmental initiatives organized at sporting events, and many are willing to change their lifestyle habits accordingly. The social status of athletes can also have a strong effect; high-profile athletes and coaches can act as ambassadors to foster environmental consciousness among fans, especially young people who look up to them.",
+"choices": [
+"① Because of its popularity, sports can be a strong tool for raising environmental awareness.",
+"② The sports industry has an influence on billions of people connected to sports.",
+"③ According to research, fans tend to reject environmental initiatives held at sporting events.",
+"④ Many fans are willing to change their lifestyle habits for the environment.",
+"⑤ Well-known athletes can help spread environmental awareness, especially among young fans."
+],
+"answer": "③",
+"solution": "지문은 팬들이 스포츠 행사에서 열리는 환경 캠페인에 수용적(receptive)이라고 했으므로, 팬들이 그것을 거부하는 경향이 있다는 ③은 일치하지 않는다. ①②④⑤는 스포츠의 영향력, 팬들의 생활습관 변화 의지, 유명 선수의 역할 등 지문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true
 }
 ]

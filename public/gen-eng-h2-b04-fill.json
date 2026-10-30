@@ -2458,5 +2458,342 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b04-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-21312e73f4",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nSatellites are used in many fields, including communication, navigation, weather forecasting, and Earth observation. Satellite data support TV signals, internet connections, and telephone calls. Navigation satellites send signals to GPS so that people can find their locations. Satellites also collect data on weather to provide forecasts, and they take high-resolution images that are useful for observing the Earth.",
+"choices": [
+"the various fields in which satellites and satellite data are used",
+"the technical process of building and launching satellites",
+"the economic cost of operating navigation satellites",
+"the environmental problems caused by old satellites",
+"the history of early space exploration programs"
+],
+"answer": "①",
+"solution": "글은 통신·항법·기상 예보·지구 관측 등 위성이 여러 분야에서 쓰인다는 사례를 나열하고 있습니다. 따라서 '위성과 위성 데이터가 쓰이는 다양한 분야'가 주제입니다. 제작 과정, 비용, 환경 문제, 탐사 역사는 언급되지 않았으므로 ①이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b05506e3b5",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 알맞은 것은?\n\nThe growing number of satellites in orbit has caused serious problems. About half of the satellites are no longer used, but they keep orbiting the Earth at high speeds and sometimes crash into other satellites. These collisions have created up to one million pieces of space debris, which can damage working satellites and threaten future space missions.",
+"choices": [
+"Space Debris: A Growing Threat from Satellites in Orbit",
+"How Satellites Help Us Explore Deep Space",
+"The Benefits of Launching More Satellites",
+"New Technologies That Clean Up Space",
+"Why Satellites Are So Expensive to Build"
+],
+"answer": "①",
+"solution": "사용하지 않는 위성이 충돌해 최대 100만 개의 우주 쓰레기를 만들고, 이것이 작동 중인 위성과 미래 임무를 위협한다는 내용입니다. 즉 위성이 만든 우주 쓰레기 문제를 다루므로 제목은 ①이 적절합니다. 탐사·이점·청소 기술·비용은 글의 중심 내용이 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e75a5b8806",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 요지로 알맞은 것은?\n\nIn agriculture, satellites are useful for improving crop management and production. They monitor the health of crops and predict crop yields during the harvest season. Farmers can use this information to decide when to plant and when to harvest, which helps them increase their production.",
+"choices": [
+"Satellites help improve crop management and production in agriculture.",
+"Satellites are mainly used to predict natural disasters on farms.",
+"Farming without satellite technology is now almost impossible.",
+"Satellites are too expensive for most farmers to use.",
+"Weather forecasting is the most important use of satellites."
+],
+"answer": "①",
+"solution": "위성이 농작물의 상태를 관찰하고 수확량을 예측해 농부가 재배·수확 시기를 정하는 데 도움을 주어 생산을 늘린다는 내용입니다. 따라서 요지는 ①입니다. 재난 예측·비용·기상 예보는 이 글의 핵심이 아니며 ③은 지나친 일반화입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ad9d8191b6",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 알맞은 것은?\n\nNASA named its first Moon project the Apollo Program after Apollo, the Greek god of the Sun. Through this project, Neil Armstrong became the first person to walk on the Moon in 1969. More than 50 years later, NASA began the Artemis Program, named after Apollo's twin sister, to land the first woman and the first person of color on the Moon. After exploring the Moon, NASA is also preparing to send the first astronauts to Mars.",
+"choices": [
+"NASA's lunar exploration programs named after figures from Greek mythology",
+"the scientific reasons why NASA decided to return to the Moon",
+"the technical differences between the Apollo and Artemis rockets",
+"the influence of Greek mythology on modern Western culture",
+"the dangers astronauts face when traveling to Mars"
+],
+"answer": "①",
+"solution": "그리스 신화의 아폴로와 그 쌍둥이 누이 아르테미스의 이름을 딴 NASA의 달 탐사 프로그램(Apollo, Artemis)과 이후 화성 계획을 소개하고 있습니다. 따라서 '신화 속 인물의 이름을 딴 NASA의 달 탐사 프로그램'이 주제입니다. 과학적 이유나 로켓의 기술적 차이, 신화의 문화적 영향, 화성 위험은 중심 내용이 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-18ed045929",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nSatellites are used in various fields, such as communication, navigation, weather forecasting, and Earth observation. Satellite data support TV signals and telephone calls, and navigation satellites help people find their locations through GPS. Satellites also provide weather forecasts and take high-resolution images for observing the Earth.\n\n→ Satellites work in (A)__________ fields, and the data they collect turn into (B)__________ information that people can use in their daily lives.",
+"choices": [
+"(A) various  (B) useful",
+"(A) various  (B) useless",
+"(A) limited  (B) useful",
+"(A) limited  (B) useless",
+"(A) various  (B) costly"
+],
+"answer": "①",
+"solution": "글은 위성이 통신·항법·기상·관측 등 '다양한(various)' 분야에서 쓰이고, 그 데이터가 일상에 쓸모 있는 '유용한(useful)' 정보로 바뀐다는 내용입니다. 따라서 (A)는 various, (B)는 useful인 ①이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e54c79d462",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 목적으로 알맞은 것은?\n\nSeveral satellites have been launched in Korea, each with a specific purpose. KITSAT-1, launched in 1992, was used for scientific research and experiments. KOREASAT-1, launched in 1995, was Korea's first communication satellite. Later, COMS was launched to monitor the weather and the oceans, and Anasis 2 was launched for military surveillance. In 2023, NEXTSAT-2 was launched using Nuri, a domestically developed rocket.",
+"choices": [
+"to introduce the satellites Korea has launched and the purpose of each one",
+"to compare Korea's satellite technology with that of other countries",
+"to explain the economic benefits of Korea's space industry",
+"to persuade readers to support the development of Nuri",
+"to warn readers about the dangers of launching satellites"
+],
+"answer": "①",
+"solution": "KITSAT-1, KOREASAT-1, COMS, Anasis 2, NEXTSAT-2 등 한국이 발사한 위성들과 각각의 용도를 차례로 소개하는 글입니다. 따라서 목적은 ①입니다. 다른 나라와의 비교, 경제적 이점, 설득, 경고는 나타나 있지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3a5a8d0814",
+"typeId": "eng-h2-b04-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 제목으로 알맞은 것은?\n\nFor years, people have looked up at the sky and wondered about the mysteries of the world beyond. This curiosity led humans to explore the universe. Since the launch of the first artificial satellite, Sputnik 1, in 1957, space exploration has grown rapidly. Satellites now play a vital role in space science, and their development has opened up a new era of space travel and research.",
+"choices": [
+"The Vital Role of Satellites in Advancing Space Science",
+"Sputnik 1: The Satellite That Won the Space Race",
+"How Human Curiosity Gave Birth to Modern Technology",
+"The Difficulties of Launching the First Artificial Satellite",
+"Space Travel: A Dream That May Never Come True"
+],
+"answer": "①",
+"solution": "글은 Sputnik 1 발사 이후 위성이 우주 과학에서 중요한 역할을 하며 우주여행과 연구의 새 시대를 열었다는 점을 강조합니다. 따라서 제목은 ①입니다. ②는 Sputnik에만 초점을 둔 지엽적 선지, ③은 지나치게 포괄적, ④·⑤는 글에 없는 내용이라 오답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2677c181b5",
+"typeId": "eng-h2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOn August 1, 1914, Ernest Shackleton left London on the ship Endurance with 27 men and 69 dogs, hoping to cross the Antarctic continent. The crew members were full of excitement, but when their ship got stuck in thick pack ice on January 18, 1915, their joy quickly turned to fear.",
+"choices": [
+"Shackleton's goal was to cross the Antarctic continent.",
+"The Endurance carried both people and dogs when it left London.",
+"The crew members felt excited at the beginning of the voyage.",
+"The ship became trapped in the pack ice during the summer of 1914.",
+"The crew's mood changed from excitement to fear once the ship got stuck."
+],
+"answer": "④",
+"solution": "지문에서 배가 두꺼운 유빙에 갇힌 날짜는 1915년 1월 18일로 명시되어 있다. 따라서 '1914년 여름에 갇혔다'는 ④는 사실과 다르다. 나머지 선지는 출항 날짜, 인원과 개의 수, 대원들의 설렘과 두려움으로의 감정 변화와 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a4b718e188",
+"typeId": "eng-h2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe 28 men were now isolated on drifting ice hundreds of miles from land, with no ship, no means of communication with the outside world, and limited supplies. Shackleton established daily routines for his men, who performed tasks such as hunting for food and making improvements to the three lifeboats rescued from the sunken ship. The crew also sang songs, celebrated their crew members' birthdays, and even played football matches on the ice. Even so, at night the men had to take turns watching for any ice breaking beneath their feet.",
+"choices": [
+"The 28 men were stranded on drifting ice far from land.",
+"They had limited supplies and no way to contact the outside world.",
+"The men were not allowed to enjoy any leisure activities on the ice.",
+"The crew worked on improving the three lifeboats saved from the sunken ship.",
+"At night the men took turns watching for ice breaking beneath them."
+],
+"answer": "③",
+"solution": "대원들은 노래를 부르고 생일을 축하하며 얼음 위에서 축구 경기까지 했다고 나오므로, 여가 활동이 전혀 허용되지 않았다는 ③은 지문과 일치하지 않는다. 나머지 선지는 고립 상황, 보급품 부족, 구명보트 수리, 야간 교대 감시와 모두 들어맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c4f7103626",
+"typeId": "eng-h2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nClementine Hunter, born in 1886, was an African-American painter known for her depictions of life on a cotton farm. When she was about five years old, she received her first education at a local school, but did not have the opportunity to learn to read and write. In the mid-1920s, Hunter worked as a housekeeper and showed a talent for making clothes and dolls. It was around age 50 that she began her journey as an artist. In 1955, she became the first African-American artist to have her own exhibition at the New Orleans Museum of Art.",
+"choices": [
+"Clementine Hunter was born in 1886.",
+"She was known for painting scenes of life on a cotton farm.",
+"As a child at the local school, she learned how to read and write.",
+"In the mid-1920s she worked as a housekeeper.",
+"In 1955 she held her own exhibition at the New Orleans Museum of Art."
+],
+"answer": "③",
+"solution": "헌터는 다섯 살 무렵 지역 학교에서 첫 교육을 받았지만 읽기와 쓰기를 배울 기회는 갖지 못했다고 했으므로, 글을 읽고 쓰는 법을 배웠다는 ③은 지문과 일치하지 않는다. 출생 연도, 목화 농장 그림, 가정부 일, 1955년 개인전은 모두 사실과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d5905e099d",
+"typeId": "eng-h2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOn August 30, 1916, the crew members on Elephant Island spotted a ship. Upon hearing the news of the rescue ship's arrival, everyone rushed out of camp. \"Are you alright?\" Shackleton called out. \"All well!\" came the reply. All 28 men on the island were rescued alive and safe. After 634 days of drifting in the Antarctic, the crew had finally reached the end of their long and harsh journey. \"I have done it,\" Shackleton wrote to his wife. \"Not a life lost, and we have been through hell.\"",
+"choices": [
+"On August 30, 1916, the men on Elephant Island saw a ship approaching.",
+"When Shackleton asked whether they were alright, the crew answered that all was well.",
+"Every one of the 28 men survived the expedition.",
+"The crew had drifted in the Antarctic for less than a year before being rescued.",
+"In his letter to his wife, Shackleton stressed that not a single life had been lost."
+],
+"answer": "④",
+"solution": "대원들은 634일, 즉 1년을 훨씬 넘는 기간 동안 남극에서 표류한 뒤 구조되었으므로 '1년이 채 안 되는 기간'이라는 ④는 일치하지 않는다. 28명 전원이 생존했고 Shackleton이 아내에게 한 명의 희생도 없었다고 쓴 내용은 ③·⑤와 그대로 들어맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-70a57acf5a",
+"typeId": "eng-h2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nShackleton and the four crew members finally reached South Georgia Island on May 10. Still, their struggle was not over yet. The whaling station was located on the other side of a mountain range, so they had to cross the rocky mountains on foot. They stopped to rest for a while, and the exhausted men fell asleep right away. Shackleton woke them up after only a five-minute nap, which saved them from freezing to death. When they arrived at the whaling station, Shackleton hurried to arrange for a rescue ship, the Yelcho, to be sent to Elephant Island.",
+"choices": [
+"When did Shackleton and his men reach South Georgia Island?",
+"Where was the whaling station located in relation to the mountain range?",
+"How many crew members died while crossing the mountains?",
+"How long did the men sleep before Shackleton woke them up?",
+"What was the name of the rescue ship sent to Elephant Island?"
+],
+"answer": "③",
+"solution": "지문은 산을 넘는 동안 사망한 대원의 수에 대해 전혀 언급하지 않으므로 ③은 답할 수 없다. 도착 날짜(5월 10일), 포경 기지의 위치(산맥 반대편), 수면 시간(5분), 구조선 이름(Yelcho)은 모두 본문에 제시되어 있어 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-96a678d39c",
+"typeId": "eng-h2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nA Swiss psychologist, Carl Jung, is credited with coining the term \"a wounded healer.\" Wounded healers are people whose painful experiences enable them to help others. They are good listeners and view all experiences as opportunities to understand others' hardships. People who go through suffering do not always become healers. It is those who overcome suffering who can become wounded healers, and they can evolve into \"wounded leaders.\" Their leadership style is characterized by the ability to embrace the uncomfortable but necessary process of healing: accepting different perspectives and focusing on personal development while pursuing their goals.",
+"choices": [
+"Carl Jung is recognized for introducing the term \"a wounded healer.\"",
+"Wounded healers tend to be good listeners who treat experiences as chances to understand others' hardships.",
+"It is those who overcome suffering, not merely those who go through it, who can become wounded healers.",
+"Wounded leaders avoid uncomfortable experiences and concentrate solely on reaching their goals.",
+"Wounded healers are people whose painful experiences allow them to help others."
+],
+"answer": "④",
+"solution": "상처 입은 리더들은 불편하지만 필수적인 치유 과정을 '포용하며' 다양한 관점을 받아들이고 개인적 성장에 집중한다고 했으므로, 불편한 경험을 피하고 목표 달성에만 몰두한다는 ④는 본문과 반대된다. Jung의 용어 창안, 경청하는 태도, 고통을 극복한 사람만이 치유자가 된다는 내용은 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-57825350f6",
+"typeId": "eng-h2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nLittle they knew the journey ahead would be one of the most challenging adventures in history.",
+"selfGrade": true,
+"answer": "Little did they know",
+"solution": "Little, Never, Hardly 같은 부정어(구)가 문장 맨 앞에 오면 주어와 (조동사)동사가 도치된다. 일반동사 과거시제이므로 did를 써서 「Little + did + 주어 + 동사원형」 형태인 Little did they know로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9c74ed446b",
+"typeId": "eng-h2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안 동사를 문맥과 어법에 맞는 형태로 고쳐 쓰시오.\n\nEach man was given a sleeping bag and (assign) to one of five tents.",
+"selfGrade": true,
+"answer": "assigned",
+"solution": "각 대원이 '배정된' 것이므로 수동태가 필요하다. 앞의 was given과 등위접속사 and로 연결되어 was를 공유하므로 과거분사 assigned만 쓰면 was assigned가 되어 '배정되었다'라는 수동의 뜻이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5b120da677",
+"typeId": "eng-h2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nSome nights, they had to move their camp to a more secure area which the ice was less likely to break.",
+"selfGrade": true,
+"answer": "where (또는 in which)",
+"solution": "which 뒤에 「the ice was less likely to break」라는 완전한 절이 왔으므로 관계대명사 which는 쓸 수 없다. 선행사 area가 장소이고 뒤 절이 완전하므로 관계부사 where, 또는 「전치사+관계대명사」인 in which로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-348c1f126f",
+"typeId": "eng-h2-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nShackleton and his men had to abandon their ship and ①set up camp on the floating ice. Each man ②was giving a sleeping bag for the long winter. The camping mats were not waterproof, so they were constantly ③wet. Worst of all, the floating ice ④on which they were camped began ⑤cracking beneath them.",
+"choices": [
+"① set up",
+"② was giving",
+"③ wet",
+"④ on which",
+"⑤ cracking"
+],
+"answer": "②",
+"solution": "각 대원이 침낭을 '받은' 것이므로 수동태 was given이 되어야 한다. was giving은 능동 진행형이라 '각 대원이 침낭을 주고 있었다'라는 어색한 뜻이 된다. ①은 조동사 had to 뒤의 동사원형, ③은 be동사 뒤 형용사 보어, ④는 '전치사+관계대명사'로 뒤 절이 완전하므로 옳고, ⑤는 began 뒤의 동명사로 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0ee71ca871",
+"typeId": "eng-h2-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nOn August 1, 1914, Shackleton departed London with 27 men and 69 dogs. Little ①did they know the journey would be so dangerous. When the ship ②got stuck in thick pack ice, their joy turned to fear. Shackleton ③yielded the better sleeping bags to other crew members and chose to stay with the more troublesome characters. Some nights, they had to pick up their tents, ④moved their camp to a more secure area for everyone's ⑤safety.",
+"choices": [
+"① did they know",
+"② got stuck",
+"③ yielded",
+"④ moved",
+"⑤ safety"
+],
+"answer": "④",
+"solution": "문장의 본동사는 had to pick up이고, '천막을 챙겨 캠프를 옮기면서'라는 동시동작을 나타내야 하므로 분사구문 moving이 되어야 한다. moved를 쓰면 접속사 없이 본동사가 두 개가 되어 틀린다. ①은 부정어 Little이 앞에 와서 생긴 올바른 도치, ②는 'get+과거분사'로 '갇히게 되다', ③은 과거동사, ⑤는 소유격 뒤 명사로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ecba17b87f",
+"typeId": "eng-h2-b04-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 세 개 찾아 기호를 쓰고, 알맞게 고쳐 쓰시오.\n\nAfter abandoning their ship, Shackleton and his men ⓐwere forced to live on the floating ice. Never ⓑthey had faced such a harsh environment before. Each man ⓒwas given a sleeping bag, and the crew shivered in the severe cold. The camping mats, ⓓwhich were not waterproof, kept them constantly wet. Shackleton walked around the camp ⓔinspecting the ice for everyone's safety. He moved the tents to a more secure area ⓕwhich the ice was less likely to break. Worst of all, many of the men ⓖsuffering from frostbite.\n\n<기호> <알맞게 고친 표현>\n(1) ______ → ___________________________\n(2) ______ → ___________________________\n(3) ______ → ___________________________",
+"selfGrade": true,
+"answer": "ⓑ had they faced  ⓕ where[in which]  ⓖ suffered",
+"solution": "ⓑ는 부정어 Never가 문두에 와서 주어와 조동사가 도치되어야 하므로 had they faced로 고친다. ⓕ는 뒤에 완전한 절이 왔고 선행사가 장소(area)이므로 관계부사 where 또는 in which로 고쳐야 한다. ⓖ는 문장의 본동사가 없으므로 현재분사 suffering을 과거동사 suffered로 바꿔야 한다. ⓐ(수동태 be forced to), ⓒ(수동태 was given), ⓓ(계속적 용법 관계대명사 which), ⓔ(분사구문 inspecting)는 모두 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m2s0t0",
+"custom": true
 }
 ]

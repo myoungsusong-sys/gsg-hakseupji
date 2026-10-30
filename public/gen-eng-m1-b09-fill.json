@@ -2661,5 +2661,88 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u5m7s0t0",
 "custom": true
+},
+{
+"id": "fill-cf4981dfab",
+"typeId": "eng-m1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 답할 수 <없는> 질문을 고르시오.\n\nHi! I'm Brian. This is Dream and Draw, and my club members make webtoons. Mina is writing a story, and I am drawing pictures. I use a painting app for my pictures. With this app, I can use many kinds of brushes and colors. My club members will post our new webtoons on our social media site this Friday.\nWelcome to my club, New Voice. I'm Hayun. My club members sing songs and perform together. My club is practicing for a global music project now. We will make a music video with Melodia, a singing club in Singapore.",
+"choices": [
+"What do Brian's club members make?",
+"What is Mina doing now?",
+"How many members are there in New Voice?",
+"What country is the club Melodia in?",
+"What will New Voice and Melodia make together?"
+],
+"answer": "③",
+"solution": "③ New Voice의 회원 수는 본문에 전혀 나와 있지 않아 답할 수 없습니다. ①은 webtoons, ②는 writing a story, ④는 Singapore, ⑤는 a music video로 모두 본문에서 답을 찾을 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d5416fbdf0",
+"typeId": "eng-m1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하는 것을 <보기>에서 모두 골라 바르게 짝지은 것을 고르시오.\n\nDo you like robots? I'm Yeji from the robot club, We Makers. My club members learn programming and build robots. Right now, we are testing our robots. This is Jake's spider robot. Watch out! His robot is running away!\n\n<보기>\nⓐ Yeji is a member of the robot club We Makers.\nⓑ The club members are building robots right now.\nⓒ Jake's robot is a spider robot.\nⓓ The club members learn programming.\nⓔ Jake's spider robot is not moving at all.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓔ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ Yeji는 We Makers 소속(참), ⓒ Jake의 로봇은 거미 로봇(참), ⓓ 회원들은 프로그래밍을 배움(참)으로 일치합니다. ⓑ는 지금은 로봇을 '만드는 중'이 아니라 '테스트 중(testing)'이므로 불일치, ⓔ는 로봇이 '도망치고 있다(running away)'고 했으므로 '전혀 움직이지 않는다'는 불일치입니다. 따라서 ②가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f41ecf3d76",
+"typeId": "eng-m1-b09-u1m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 아래 질문에 대한 답을 본문 내용을 바탕으로 완전한 영어 문장 하나로 쓰시오.\n\nWelcome to my club, New Voice. I'm Hayun. My club members sing songs and perform together. My club is practicing for a global music project now. We will make a music video with Melodia, a singing club in Singapore. Melodia and New Voice are not in the same country, but we can create one beautiful sound.\n\nQuestion: Though New Voice and Melodia are not in the same country, what can they create together?",
+"selfGrade": true,
+"answer": "They can create one beautiful sound.",
+"solution": "본문 마지막 문장에서 '같은 나라에 있지는 않지만 하나의 아름다운 소리를 만들 수 있다(we can create one beautiful sound)'고 했습니다. 질문의 주어가 New Voice and Melodia이므로 we를 They로 바꾸어 완전한 문장으로 답합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-085cebd4e8",
+"typeId": "eng-m1-b09-u1m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 아래 두 질문에 각각 <현재진행형>을 사용하여 완전한 영어 문장으로 답하시오.\n\nDo you like robots? I'm Yeji from the robot club, We Makers. My club members learn programming and build robots. Right now, we are testing our robots. This is Jake's spider robot. Watch out! His robot is running away!\n\n(1) What are the members of We Makers doing right now?\n(2) What is happening to Jake's spider robot?",
+"selfGrade": true,
+"answer": "(1) They are testing their robots. (2) His (Jake's) spider robot is running away.",
+"solution": "본문에서 'Right now, we are testing our robots'라고 했으므로 (1)은 They are testing their robots로 답합니다. 'His robot is running away'라고 했으므로 (2)는 His(Jake's) spider robot is running away로 씁니다. 두 문장 모두 'be동사 + -ing' 형태의 현재진행형을 지켜야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d81a105c2f",
+"typeId": "eng-m1-b09-u1m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 내용과 일치하는 것을 고르시오.\n\nDo you like robots? I'm Yeji from the robot club, We Makers. My club members learn programming and build robots. Right now, we are testing our robots.\nHi! I'm Brian. This is Dream and Draw, and my club members make webtoons. Mina is writing a story, and I am drawing pictures. I use a painting app for my pictures. With this app, I can use many kinds of brushes and colors. My club members will post our new webtoons on our social media site this Friday.\nWelcome to my club, New Voice. I'm Hayun. My club members sing songs and perform together. We will make a music video with Melodia, a singing club in Singapore. Melodia and New Voice are not in the same country, but we can create one beautiful sound.",
+"choices": [
+"People can read Dream and Draw's new webtoons before this Friday.",
+"Yeji's club members have already finished testing their robots.",
+"Brian can use only one kind of brush with his painting app.",
+"New Voice and Melodia are in different countries.",
+"Mina draws pictures and Brian writes a story."
+],
+"answer": "④",
+"solution": "④ 본문에서 Melodia는 싱가포르의 동아리이고 New Voice와 같은 나라에 있지 않다고 했으므로 일치합니다. ①은 이번 금요일에 '게시할 예정'이라 그 전에 읽을 수 없고, ②는 지금 '테스트 중'이라 끝내지 않았으며, ③은 'many kinds of brushes and colors'라 했으므로 틀립니다. ⑤는 Mina가 이야기를 쓰고 Brian이 그림을 그리므로 역할이 뒤바뀌어 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m4s0t0",
+"custom": true
 }
 ]

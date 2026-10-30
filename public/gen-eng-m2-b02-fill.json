@@ -1609,5 +1609,57 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b02-u3m4s0t0",
 "custom": true
+},
+{
+"id": "fill-fd93f29ef7",
+"typeId": "eng-m2-b02-u0m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 중 어법상 어색한 문장 하나를 찾아 기호를 쓰고, 바르게 고쳐 쓰시오.\n\n(A) I need a chair to sit on.\n(B) She thinks that English is fun.\n(C) We have no time to waste.\n(D) Give me something cold to drink.\n(E) I have many friends to play.\n\n기호: ________ 틀린 표현: ____________ → 옳은 표현: ____________",
+"selfGrade": true,
+"answer": "(E) : to play → to play with",
+"solution": "to부정사가 앞의 명사를 꾸미고, 그 명사가 의미상 전치사의 목적어일 때는 전치사를 빠뜨리면 안 된다. 'play with friends(친구들과 놀다)'이므로 friends to play with로 써야 한다. (A)는 sit on a chair이므로 on이 바르게 쓰였고, (D)는 '-thing+형용사+to부정사' 어순을 지켰다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f9a304ae7c",
+"typeId": "eng-m2-b02-u0m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 중 어법상 어색한 문장 두 개를 찾아 기호를 쓰고, 바르게 고쳐 쓰시오.\n\n(A) I have a lot of homework to do tonight.\n(B) Would you like cold something to drink?\n(C) Everyone knows the earth goes around the sun.\n(D) There is nothing to worry about.\n(E) They are looking for a house to live.\n\n기호 틀린 표현 옳은 표현\n(1) ________ : ____________ → ____________\n(2) ________ : ____________ → ____________",
+"selfGrade": true,
+"answer": "(B) : cold something → something cold / (E) : to live → to live in",
+"solution": "-thing으로 끝나는 대명사는 형용사가 뒤에서 꾸미므로 'something cold to drink'의 어순이 되어야 한다. 'live in a house'이므로 a house to live in처럼 전치사 in이 필요하다. (A)의 do homework는 전치사가 필요 없고, (C)는 목적어절을 이끄는 접속사 that이 생략된 올바른 문장이다. (D)는 worry about이므로 about이 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6d48fdf880",
+"typeId": "eng-m2-b02-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분 세 개를 찾아 바르게 고쳐 쓰시오.\n\nLast week, I started at a new school. I was nervous because I had no friends to talk. During lunch, a girl came to me and asked, \"Do you want something to eat?\" She gave me a sandwich. I thought that she was very kind. Now we are best friends. We always find interesting something to do after school. I also learned which a small act of kindness can change someone's day.\n\n(1) ____________ → ____________\n(2) ____________ → ____________\n(3) ____________ → ____________",
+"selfGrade": true,
+"answer": "(1) to talk → to talk to(with) (2) interesting something → something interesting (3) which → that",
+"solution": "talk to(with) friends의 관계이므로 friends to talk 뒤에 전치사 to나 with가 있어야 한다. -thing으로 끝나는 대명사는 형용사가 뒤에서 꾸미므로 something interesting to do로 고친다. learned의 목적어 역할을 하는 명사절은 접속사 that이 이끌어야 하므로 which를 that으로 고친다. 'something to eat'와 'I thought that ~'은 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d0c03c98e4",
+"typeId": "eng-m2-b02-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n(1) 나는 그녀가 글을 쓸 펜을 필요로 한다고 생각했다.\n(2) 그녀는 걱정할 것이 아무것도 없다고 말했다.\n\n<조건>\n• 접속사 that을 생략하지 말 것\n• to부정사를 반드시 사용할 것\n• (1)은 think, need, pen, write를, (2)는 say, there, nothing, worry를 활용하되 필요하면 형태를 바꿀 것\n• (1)은 10단어, (2)는 9단어로 쓸 것\n\n(1) ______________________________________________\n(2) ______________________________________________",
+"selfGrade": true,
+"answer": "(1) I thought that she needed a pen to write with. (2) She said that there was nothing to worry about.",
+"solution": "두 문장 모두 주절이 과거(thought, said)이므로 that절의 동사도 시제를 일치시켜 needed, was로 써야 한다. (1)은 write with a pen의 관계이므로 a pen to write with로 쓰고 전치사 with를 빠뜨리면 안 된다. (2)는 worry about nothing의 관계이므로 nothing to worry about으로 쓴다. 단어 수 조건이 있으므로 전치사가 빠지면 단어 수도 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u0m2s0t0",
+"custom": true
 }
 ]

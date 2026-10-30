@@ -178,5 +178,248 @@
 "source": "유사 문항",
 "twinGroup": "tw-17786",
 "custom": true
+},
+{
+"id": "fill-2252faac3d",
+"typeId": "17884",
+"kind": "객관식",
+"diff": 2,
+"body": "두 독서 동아리 가, 나의 회원 수는 각각 $24$명, $36$명이다. 이 중 지난달에 책을 $3$권 이상 읽은 회원 수는 각각 $8$명, $9$명이다. 책을 $3$권 이상 읽은 회원의 상대도수의 비를 가, 나의 순서로 구하시오.",
+"choices": [
+"$2:3$",
+"$3:4$",
+"$1:1$",
+"$4:3$",
+"$3:2$"
+],
+"answer": "④",
+"solution": "책을 $3$권 이상 읽은 회원의 상대도수는 가 동아리가 $\\frac{8}{24}=\\frac{1}{3}$, 나 동아리가 $\\frac{9}{36}=\\frac{1}{4}$이다. 따라서 구하는 비는 $\\frac{1}{3}:\\frac{1}{4}=4:3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17884",
+"custom": true
+},
+{
+"id": "fill-8798225d3f",
+"typeId": "17884",
+"kind": "주관식",
+"diff": 2,
+"body": "두 도서관 가, 나에서 하루 동안 대출된 책의 총권수의 비는 $7:5$이고, 그중 과학 도서의 대출 권수의 비는 $14:15$이다. 전체 대출 도서에 대한 과학 도서의 상대도수의 비를 가, 나의 순서로 구하시오.",
+"selfGrade": true,
+"answer": "$2:3$",
+"solution": "두 도서관의 전체 대출 권수를 각각 $7a$, $5a$, 과학 도서의 대출 권수를 각각 $14b$, $15b$라 하자. 과학 도서의 상대도수의 비는 $\\frac{14b}{7a}:\\frac{15b}{5a}=2:3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17884",
+"custom": true
+},
+{
+"id": "fill-0bf22d05cb",
+"typeId": "17884",
+"kind": "객관식",
+"diff": 2,
+"body": "두 반 가, 나의 학생 $40$명, $60$명을 대상으로 희망하는 체험 활동을 조사하였다. 요리 체험을 선택한 학생이 가 반에서 $10$명, 나 반에서 $18$명일 때, 요리 체험을 선택한 학생의 상대도수의 비를 가, 나의 순서로 구하시오.",
+"choices": [
+"$2:3$",
+"$5:6$",
+"$1:1$",
+"$6:5$",
+"$3:2$"
+],
+"answer": "②",
+"solution": "요리 체험을 선택한 학생의 상대도수는 가 반이 $\\frac{10}{40}=\\frac{1}{4}$, 나 반이 $\\frac{18}{60}=\\frac{3}{10}$이다. 따라서 구하는 비는 $\\frac{1}{4}:\\frac{3}{10}=5:6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17884",
+"custom": true
+},
+{
+"id": "fill-4cbfee331c",
+"typeId": "17884",
+"kind": "주관식",
+"diff": 3,
+"body": "두 지역 가, 나의 설문 조사 참여자에게 주로 이용하는 교통수단을 물었다. 가 지역의 전체 참여자 수는 나 지역의 $\\frac{4}{3}$배이고, 버스를 선택한 참여자 수의 비는 가, 나의 순서로 $7:6$이다. 버스를 선택한 참여자의 상대도수의 비를 가, 나의 순서로 구하시오.",
+"selfGrade": true,
+"answer": "$7:8$",
+"solution": "전체 참여자 수의 비는 가, 나의 순서로 $4:3$이다. 전체 참여자 수를 각각 $4a$, $3a$, 버스를 선택한 참여자 수를 각각 $7b$, $6b$라 하면, 상대도수의 비는 $\\frac{7b}{4a}:\\frac{6b}{3a}=7:8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17884",
+"custom": true
+},
+{
+"id": "fill-0f086e9ff5",
+"typeId": "17884",
+"kind": "객관식",
+"diff": 3,
+"body": "두 수영 강좌 가, 나의 수강생 수는 각각 $72$명, $90$명이다. 수강생들의 수영 경력을 조사하여 같은 계급으로 도수분포표를 만들었더니, 경력이 $1$년 이상 $2$년 미만인 계급의 도수의 비가 가, 나의 순서로 $6:5$였다. 이 계급의 상대도수의 비를 가, 나의 순서로 구하시오.",
+"choices": [
+"$4:3$",
+"$6:5$",
+"$5:6$",
+"$2:3$",
+"$3:2$"
+],
+"answer": "⑤",
+"solution": "해당 계급의 도수를 가 강좌에서 $6a$명, 나 강좌에서 $5a$명이라 하자. 이 계급의 상대도수의 비는 $\\frac{6a}{72}:\\frac{5a}{90}=\\frac{1}{12}:\\frac{1}{18}=3:2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17884",
+"custom": true
+},
+{
+"id": "fill-2f76d5515a",
+"typeId": "17884",
+"kind": "주관식",
+"diff": 3,
+"body": "가 모둠은 남학생 $18$명과 여학생 $12$명으로, 나 모둠은 남학생 $20$명과 여학생 $25$명으로 이루어져 있다. 두 모둠의 모든 학생에게 좋아하는 운동을 하나씩 고르게 하였더니, 배드민턴을 고른 학생 수의 비는 가, 나의 순서로 $4:5$였다. 배드민턴을 고른 학생의 상대도수의 비를 가, 나의 순서로 구하시오.",
+"selfGrade": true,
+"answer": "$6:5$",
+"solution": "전체 학생 수는 가 모둠이 $18+12=30$명, 나 모둠이 $20+25=45$명이다. 배드민턴을 고른 학생 수를 각각 $4a$명, $5a$명이라 하면, 상대도수의 비는 $\\frac{4a}{30}:\\frac{5a}{45}=6:5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17884",
+"custom": true
+},
+{
+"id": "fill-0384b2444e",
+"typeId": "17794",
+"kind": "객관식",
+"diff": 1,
+"body": "원 $O$의 지름 $AB$의 연장선 위에 점 $E$가 있고, 점들은 $A,O,B,E$의 순서로 놓여 있다. 점 $E$에서 그은 직선이 원과 만나는 두 점을 가까운 점부터 $D,C$라 하자. $\\overline{OD}=\\overline{DE}$이고 작은 호 $BD$의 길이가 $3\\text{ cm}$일 때, 작은 호 $AC$의 길이는?",
+"choices": [
+"$6\\text{ cm}$",
+"$7\\text{ cm}$",
+"$8\\text{ cm}$",
+"$9\\text{ cm}$",
+"$10\\text{ cm}$"
+],
+"answer": "④",
+"solution": "$\\angle OED=\\theta$라 하면 이등변삼각형 $ODE$에서 $\\angle BOD=\\theta$이다. $\\angle ODC=2\\theta$이고 $OC=OD$이므로 $\\angle COD=180^\\circ-4\\theta$, 따라서 $\\angle AOC=3\\theta$이다. 같은 원에서 호의 길이는 중심각의 크기에 정비례하므로 작은 호 $AC$의 길이는 $3\\times3=9\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-b26359500c",
+"typeId": "17794",
+"kind": "객관식",
+"diff": 1,
+"body": "원 $O$의 지름 $AB$를 점 $B$ 쪽으로 연장하여 점 $P$를 잡았다. 점 $P$를 지나는 직선이 원과 만나는 점은 $P$에서 가까운 순서대로 $D,C$이다. $\\overline{OD}=\\overline{DP}$이고 작은 호 $AC$의 길이가 $18\\text{ cm}$일 때, 작은 호 $BD$의 길이는?",
+"choices": [
+"$4\\text{ cm}$",
+"$6\\text{ cm}$",
+"$8\\text{ cm}$",
+"$12\\text{ cm}$",
+"$54\\text{ cm}$"
+],
+"answer": "②",
+"solution": "$\\angle OPD=\\theta$라 하면 $OD=DP$이므로 $\\angle BOD=\\theta$이고 $\\angle ODC=2\\theta$이다. $OC=OD$를 이용하면 $\\angle COD=180^\\circ-4\\theta$이므로 $\\angle AOC=3\\theta$이다. 따라서 작은 호 $BD$의 길이는 $18\\div3=6\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-dfd201fbf8",
+"typeId": "17794",
+"kind": "객관식",
+"diff": 1,
+"body": "둘레의 길이가 $48\\text{ cm}$인 원 $O$에서 지름 $AB$의 연장선 위에 점 $E$를 $A,O,B,E$의 순서로 잡았다. 점 $E$를 지나는 직선과 원의 교점을 $E$에서 가까운 순서대로 $D,C$라 하자. $\\overline{OD}=\\overline{DE}$, $\\angle OED=15^\\circ$일 때, 작은 호 $BD$의 길이는?",
+"choices": [
+"$1\\text{ cm}$",
+"$3\\text{ cm}$",
+"$4\\text{ cm}$",
+"$6\\text{ cm}$",
+"$2\\text{ cm}$"
+],
+"answer": "⑤",
+"solution": "삼각형 $ODE$는 $OD=DE$인 이등변삼각형이므로 $\\angle DOE=15^\\circ$이다. 반직선 $OB$와 $OE$가 같으므로 $\\angle BOD=15^\\circ$이다. 따라서 작은 호 $BD$의 길이는 $48\\times\\frac{15}{360}=2\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-94c7d3e5d4",
+"typeId": "17794",
+"kind": "객관식",
+"diff": 2,
+"body": "원 $O$의 지름 $AB$를 점 $B$ 쪽으로 연장한 직선 위에 점 $E$가 있다. 점 $E$를 지나는 직선이 원과 만나는 두 점을 가까운 점부터 $D,C$라 하자. $\\overline{OD}=\\overline{DE}$, $\\angle OED=28^\\circ$이고 작은 호 $BD$의 길이가 $7\\text{ cm}$일 때, 작은 호 $CD$의 길이는?",
+"choices": [
+"$15\\text{ cm}$",
+"$16\\text{ cm}$",
+"$17\\text{ cm}$",
+"$18\\text{ cm}$",
+"$19\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$OD=DE$이므로 $\\angle BOD=28^\\circ$이고 $\\angle ODC=56^\\circ$이다. $OC=OD$이므로 $\\angle COD=180^\\circ-56^\\circ\\times2=68^\\circ$이다. 따라서 작은 호 $CD$의 길이는 $7\\times\\frac{68}{28}=17\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-f794c1a924",
+"typeId": "17794",
+"kind": "주관식",
+"diff": 2,
+"body": "원 $O$의 지름 $AB$의 연장선 위에 점 $P$가 있고, 점들은 $A,O,B,P$의 순서로 놓여 있다. 점 $P$를 지나는 직선과 원의 교점을 가까운 점부터 $D,C$라 하자. $\\overline{OD}=\\overline{DP}$, $\\angle AOC=72^\\circ$이고 작은 호 $BD$의 길이가 $6\\text{ cm}$일 때, 작은 호 $CD$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$21\\text{ cm}$",
+"solution": "$\\angle OPD=\\theta$라 하면 두 이등변삼각형 $ODP$, $OCD$에서 $\\angle BOD=\\theta$, $\\angle COD=180^\\circ-4\\theta$를 얻는다. 따라서 $\\angle AOC=3\\theta=72^\\circ$이므로 $\\theta=24^\\circ$이고 $\\angle COD=84^\\circ$이다. 작은 호 $CD$의 길이는 $6\\times\\frac{84}{24}=21\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-16b1b49878",
+"typeId": "17794",
+"kind": "객관식",
+"diff": 2,
+"body": "둘레의 길이가 $84\\text{ cm}$인 원 $O$의 지름 $AB$를 점 $B$ 쪽으로 연장하여 점 $E$를 잡았다. 점 $E$를 지나는 직선이 원과 만나는 점은 가까운 순서대로 $D,C$이다. $\\overline{OD}=\\overline{DE}$이고 작은 호 $AC$의 길이가 $21\\text{ cm}$일 때, 작은 호 $CD$의 길이는?",
+"choices": [
+"$14\\text{ cm}$",
+"$16\\text{ cm}$",
+"$18\\text{ cm}$",
+"$21\\text{ cm}$",
+"$28\\text{ cm}$"
+],
+"answer": "①",
+"solution": "작은 호 $AC$의 중심각은 $360^\\circ\\times\\frac{21}{84}=90^\\circ$이다. $OD=DE$와 $OC=OD$를 이용하면 $\\angle AOC=3\\angle BOD$이므로 $\\angle BOD=30^\\circ$이다. 따라서 $\\angle COD=180^\\circ-90^\\circ-30^\\circ=60^\\circ$이고, 작은 호 $CD$의 길이는 $84\\times\\frac{60}{360}=14\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-112d7514e0",
+"typeId": "17794",
+"kind": "주관식",
+"diff": 5,
+"body": "원 $O$의 지름 $AB$의 연장선 위에 점 $P$를 $A,O,B,P$의 순서로 잡았다. 점 $P$를 지나는 직선과 원의 교점을 가까운 점부터 $D,C$라 하고, $\\overline{OD}=\\overline{DP}$라 하자. 작은 호 $AC$, $CD$, $BD$에 각각 대응하는 세 부채꼴의 둘레의 길이를 모두 더하면 $(120+20\\pi)\\text{ cm}$이다. 작은 호 $AC$는 작은 호 $CD$보다 $8\\pi\\text{ cm}$만큼 길다. 작은 호 $BD$의 길이를 구하고, 풀이 과정을 쓰시오. (부채꼴의 둘레는 두 반지름과 호의 길이의 합이다.)",
+"selfGrade": true,
+"answer": "$4\\pi\\text{ cm}$",
+"solution": "$\\angle OPD=\\theta$라 하면 $OD=DP$, $OC=OD$에서 $\\angle BOD=\\theta$, $\\angle COD=180^\\circ-4\\theta$, $\\angle AOC=3\\theta$이므로 작은 호 $AC$의 길이는 작은 호 $BD$의 길이의 $3$배이다. 반지름을 $r\\text{ cm}$라 하면 세 호가 반원을 이루므로 세 부채꼴의 둘레의 합은 $(6r+\\pi r)\\text{ cm}$이다. 따라서 $(6+\\pi)r=120+20\\pi$에서 $r=20$이다. 작은 호 $BD$의 길이를 $x\\text{ cm}$라 하면 작은 호 $AC$, $CD$의 길이는 각각 $3x\\text{ cm}$, $(20\\pi-4x)\\text{ cm}$이다. $3x-(20\\pi-4x)=8\\pi$에서 $x=4\\pi$이므로 구하는 길이는 $4\\pi\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-8aead20af4",
+"typeId": "17794",
+"kind": "주관식",
+"diff": 5,
+"body": "원 $O$의 지름 $AB$를 점 $B$ 쪽으로 연장하여 점 $E$를 잡았다. 점 $E$를 지나는 직선이 원과 만나는 두 점을 가까운 점부터 $D,C$라 하고, $\\overline{OD}=\\overline{DE}$라 하자. 작은 호 $AC$에 대응하는 부채꼴의 둘레는 작은 호 $CD$에 대응하는 부채꼴의 둘레보다 $4\\pi\\text{ cm}$만큼 길다. 또한 작은 호 $AC$의 길이와 작은 호 $CD$의 길이의 $2$배를 더하면 $28\\pi\\text{ cm}$이다. 점 $C$에서 점 $D$까지의 두 호 중 긴 호의 길이를 구하고, 풀이 과정을 쓰시오.",
+"selfGrade": true,
+"answer": "$40\\pi\\text{ cm}$",
+"solution": "두 부채꼴의 반지름이 같으므로 작은 호 $AC$는 작은 호 $CD$보다 $4\\pi\\text{ cm}$만큼 길다. 작은 호 $CD$의 길이를 $y\\text{ cm}$라 하면 $(y+4\\pi)+2y=28\\pi$이므로 작은 호 $CD$, $AC$의 길이는 각각 $8\\pi\\text{ cm}$, $12\\pi\\text{ cm}$이다. $\\angle OED=\\theta$라 놓고 $OD=DE$, $OC=OD$를 이용하면 $\\angle BOD=\\theta$, $\\angle AOC=3\\theta$이므로 작은 호 $BD$의 길이는 $4\\pi\\text{ cm}$이다. 세 작은 호가 반원을 이루므로 원의 둘레는 $2(12\\pi+8\\pi+4\\pi)=48\\pi\\text{ cm}$이다. 따라서 긴 호 $CD$의 길이는 $48\\pi-8\\pi=40\\pi\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
+},
+{
+"id": "fill-5fc491e5af",
+"typeId": "17794",
+"kind": "주관식",
+"diff": 5,
+"body": "원 $O$의 지름 $AB$의 연장선 위에 점 $P$가 있고, 점들은 $A,O,B,P$의 순서로 놓여 있다. 점 $P$를 지나는 직선과 원의 교점을 가까운 점부터 $D,C$라 하고, $\\overline{OD}=\\overline{DP}$라 하자. 작은 호 $AC$와 작은 호 $CD$에 각각 대응하는 두 부채꼴의 둘레의 합은 $(72+16\\pi)\\text{ cm}$이다. 작은 호 $CD$는 작은 호 $AC$보다 $4\\pi\\text{ cm}$만큼 길다. 점 $C$에서 점 $D$까지의 두 호 중 긴 호의 길이를 구하고, 풀이 과정을 쓰시오.",
+"selfGrade": true,
+"answer": "$26\\pi\\text{ cm}$",
+"solution": "$OD=DP$, $OC=OD$를 이용하면 $\\angle AOC=3\\angle BOD$이므로, 작은 호 $BD$의 길이를 $x\\text{ cm}$라 할 때 작은 호 $AC$, $CD$의 길이는 각각 $3x\\text{ cm}$, $(3x+4\\pi)\\text{ cm}$이다. 반지름을 $r\\text{ cm}$라 하면 세 호가 반원을 이루므로 $\\pi r=7x+4\\pi$이고, 두 부채꼴의 둘레의 합에서 $4r+6x+4\\pi=72+16\\pi$를 얻는다. $x=\\frac{\\pi r-4\\pi}{7}$을 대입하여 정리하면 $(28+6\\pi)r=504+108\\pi$이므로 $r=18$이다. 따라서 $x=2\\pi$이고 작은 호 $CD$의 길이는 $10\\pi\\text{ cm}$이다. 구하는 긴 호의 길이는 $2\\pi\\times18-10\\pi=26\\pi\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17794",
+"custom": true
 }
 ]

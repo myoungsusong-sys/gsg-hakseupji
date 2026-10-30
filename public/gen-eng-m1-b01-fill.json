@@ -3553,5 +3553,70 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b01-u6m4s0t0",
 "custom": true
+},
+{
+"id": "fill-8ffa80af61",
+"typeId": "eng-m1-b01-u6m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThe good news made my parents happily.",
+"selfGrade": true,
+"answer": "happily → happy",
+"solution": "「make + 목적어 + 목적격 보어」 구조에서 목적격 보어 자리에는 부사가 아니라 형용사가 와야 한다. '부모님을 행복하게 만들었다'라는 뜻이므로 부사 happily를 형용사 happy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-96fbd9ac93",
+"typeId": "eng-m1-b01-u6m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 (A)~(E) 중 어법상 어색한 문장 두 개를 찾아 기호를 쓰고, 어색한 부분을 바르게 고쳐 쓰시오.\n\n(A) The warm milk made the baby sleepy.\n(B) I believe what he is telling the truth.\n(C) The sad movie made us sadly.\n(D) We know he is a good soccer player.\n(E) His jokes always make the class fun.\n\n(1) ______ : ____________\n(2) ______ : ____________",
+"selfGrade": true,
+"answer": "(B) : what → that, (C) : sadly → sad",
+"solution": "(B)에서 believe의 목적어 역할을 하는 명사절은 접속사 that이 이끌어야 하므로 what을 that으로 고친다. (C)에서 make의 목적격 보어 자리에는 형용사가 와야 하므로 sadly를 sad로 고친다. (D)는 목적어절을 이끄는 접속사 that이 생략된 문장이고, (E)의 fun은 형용사로 쓰였으므로 둘 다 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4a34b7bc26",
+"typeId": "eng-m1-b01-u6m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오. (필요하면 단어의 형태를 바꿀 것)\n\n(1) 그 소식은 그녀를 매우 기쁘게 만들었다.\n(the news, make, her, very, happily)\n→ ________________________________\n\n(2) 나는 네가 그 시험에 통과할 거라고 생각한다.\n(think, that, you, pass, will, the test, I)\n→ ________________________________",
+"selfGrade": true,
+"answer": "(1) The news made her very happy. (2) I think that you will pass the test.",
+"solution": "(1)은 과거의 일이므로 make를 made로 바꾸고, 「make + 목적어 + 형용사」 구조에 맞게 happily를 형용사 happy로 바꾼다. (2)는 think 뒤에 목적어 역할을 하는 「that + 주어 + 동사」 명사절을 써서 I think that you will pass the test.로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7a2103b72d",
+"typeId": "eng-m1-b01-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓕ 중 어법상 틀린 문장을 모두 찾아 기호를 쓰고, 틀린 부분을 바르게 고쳐 쓰시오.\n\nⓐ Too much homework makes students tired.\nⓑ I hope that you will enjoy the trip.\nⓒ The loud music made me nervously.\nⓓ My mom thinks that I am honest.\nⓔ Did you know which Tom moved to Busan?\nⓕ He made his room cleanly before dinner.",
+"selfGrade": true,
+"answer": "ⓒ nervously → nervous, ⓔ which → that, ⓕ cleanly → clean",
+"solution": "ⓒ와 ⓕ는 「make + 목적어 + 목적격 보어」 구조이므로 부사 nervously, cleanly를 형용사 nervous, clean으로 고쳐야 한다. ⓔ는 know의 목적어가 되는 완전한 문장을 이끄는 자리이므로 which가 아니라 접속사 that을 써야 한다. ⓐ의 tired는 형용사, ⓑ와 ⓓ는 that절을 바르게 쓴 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-73a646c036",
+"typeId": "eng-m1-b01-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 어법상 틀린 부분 두 군데를 찾아 〈보기〉와 같이 바르게 고쳐 쓰시오.\n\nLast weekend, I watched a soccer game with my dad. Our team won the game, and the result made us very excitedly. My dad said what it was the best game of the year. I think that sports make people close to each other. I hope our team will win the next game, too.\n\n〈보기〉 틀린 낱말 → 고친 낱말\n\n(1) ____________ → ____________\n(2) ____________ → ____________",
+"selfGrade": true,
+"answer": "(1) excitedly → excited (2) what → that",
+"solution": "made us 뒤의 목적격 보어 자리에는 형용사가 와야 하므로 excitedly를 excited로 고친다. said 뒤에는 목적어 역할을 하는 완전한 문장(it was the best game ~)이 이어지므로 what이 아니라 접속사 that을 써야 한다. make people close의 close는 형용사로 바르게 쓰였고, I hope our team ~은 접속사 that이 생략된 올바른 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m2s0t0",
+"custom": true
 }
 ]

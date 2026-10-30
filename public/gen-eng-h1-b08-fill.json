@@ -3605,5 +3605,152 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b08-u3m4s0t0",
 "custom": true
+},
+{
+"id": "fill-1aabc4b860",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThese days, many teenagers spend too much time ________ at smartphones and computer screens.",
+"choices": [
+"① stare",
+"② stares",
+"③ staring",
+"④ to stare",
+"⑤ stared"
+],
+"answer": "③",
+"solution": "'spend+시간+-ing'는 '~하는 데 시간을 보내다'라는 뜻의 구문이다. 그래서 빈칸에는 동명사 staring이 와야 한다. to stare나 동사원형 stare는 이 구문에 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cffd2dbba4",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안 동사를 어법에 맞게 고쳐 쓰시오.\n\nSome even ________ (stay) up late playing computer games and watching videos.",
+"selfGrade": true,
+"answer": "stay",
+"solution": "주어 Some은 앞 문장의 many teenagers를 가리키므로 복수다. 현재 시제이고 주어가 복수이므로 동사원형 stay를 쓴다. stays는 3인칭 단수 주어에만 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-60d9c804a5",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nTo make ________ easier to focus on important things, set aside your devices for some time.",
+"choices": [
+"① it",
+"② that",
+"③ this",
+"④ what",
+"⑤ them"
+],
+"answer": "①",
+"solution": "'make+목적어+형용사+to부정사' 구문에서는 to부정사구가 진짜 목적어다. 진짜 목적어가 길면 목적어 자리에 가목적어 it을 두고 to부정사구를 뒤로 보낸다. 가목적어로 쓸 수 있는 것은 it뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9de9844404",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nYou can use your newly found time ①to connect with friends, family, and yourself. You might be ②surprised at ③how much more productive you ④can be when not ⑤gluing to a screen.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "when not 뒤에는 you are가 생략되어 있다. 사람이 화면에 '붙어 있는' 것이므로 수동의 뜻을 나타내는 과거분사 glued가 맞다. ①은 목적을 나타내는 to부정사로 맞다. ②는 사람이 놀라는 것이므로 surprised가 맞다. ③은 be동사의 보어로 형용사 productive를 쓴 것이므로 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a5c557ca3d",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"① Many teenagers spend too much time to stare at screens.",
+"② Some even stays up late playing computer games.",
+"③ This is fine as long as these devices enrich your life.",
+"④ Excessive reliance on technology can exhausts your mental energy.",
+"⑤ You might be surprising at how much more productive you can be."
+],
+"answer": "③",
+"solution": "③은 복수 주어 these devices에 맞게 enrich를 썼으므로 옳다. ①은 'spend+시간+-ing' 구문이므로 to stare를 staring으로 고쳐야 한다. ②는 주어가 복수이므로 stays를 stay로 고쳐야 한다. ④는 조동사 뒤에는 동사원형이 오므로 exhausts를 exhaust로, ⑤는 주어가 놀라는 것이므로 surprising을 surprised로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d09d388b10",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하여 빈칸을 완성하시오.\n\n중요한 일에 집중하는 것을 더 쉽게 만들기 위해, 한동안 기기를 치워 두어라.\n→ To ______________________ on important things, set aside your devices for some time.\n(easier / focus / it / make / to)",
+"selfGrade": true,
+"answer": "make it easier to focus",
+"solution": "'make+가목적어 it+목적격보어(형용사)+진목적어(to부정사)' 어순으로 배열한다. 진짜 목적어 to focus on important things가 길기 때문에 it을 목적어 자리에 두고 to부정사구를 뒤로 보낸 것이다. 문장 맨 앞의 To는 '~하기 위해'라는 목적의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bb93ef5983",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 세 개 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nThese days, many teenagers spend too much time ⓐto stare at smartphones and computer screens. Some even stay up late ⓑplaying computer games and ⓒwatch videos. This is fine as long as these devices ⓓenrich your life. However, excessive reliance on technology can ⓔexhaust your mental energy. To make it easier ⓕfocusing on important things, set aside your devices for some time.\n\n(기호) (어색한 표현) → (알맞은 표현)\n(1) ____ : ________ → ________\n(2) ____ : ________ → ________\n(3) ____ : ________ → ________",
+"selfGrade": true,
+"answer": "ⓐ to stare → staring, ⓒ watch → watching, ⓕ focusing → to focus",
+"solution": "ⓐ는 'spend+시간+-ing' 구문이므로 staring으로 고친다. ⓒ는 '~하면서'를 뜻하는 분사구문 playing과 and로 나란히 이어지므로 같은 형태인 watching으로 고친다. ⓕ는 가목적어 it에 대응하는 진목적어 자리이므로 to부정사 to focus로 고친다. ⓓ는 복수 주어 these devices에 맞는 동사이고, ⓔ는 조동사 can 뒤의 동사원형이므로 둘 다 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6bb20a0688",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 틀린 부분을 모두 찾아 고쳐 문장 전체를 다시 쓰시오. (단, 틀린 부분만 고칠 것)\n\nFor example, it's a good idea to finish surf the Internet, watching videos, and send instant messages during the week and turning everything off on the weekends.",
+"selfGrade": true,
+"answer": "For example, it's a good idea to finish surfing the Internet, watching videos, and sending instant messages during the week and (to) turn everything off on the weekends.",
+"solution": "finish는 동명사를 목적어로 취하는 동사다. 그래서 finish의 목적어 세 개(surf, watching, send)를 모두 동명사 surfing, watching, sending으로 맞춰야 한다. turning은 finish의 목적어가 아니다. 가주어 it에 대응하는 진주어 to finish와 and로 이어지는 병렬 요소이므로 (to) turn으로 고쳐야 한다. 이때 반복되는 to는 생략할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-eb77fddf52",
+"typeId": "eng-h1-b08-u0m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 옳은 것의 개수는?\n\nTo make ⓐit easier to focus on important things, set aside your devices for some time. For example, it's a good idea to finish ⓑsurfing the Internet, watching videos, and ⓒsend instant messages during the week and ⓓturn everything off on the weekends. You can use your newly found time ⓔto connect with friends, family, and ⓕyourself. You might be surprised at ⓖhow much more productive you can be when not ⓗgluing to a screen.",
+"choices": [
+"① 3개",
+"② 4개",
+"③ 5개",
+"④ 6개",
+"⑤ 7개"
+],
+"answer": "④",
+"solution": "옳은 것은 ⓐ, ⓑ, ⓓ, ⓔ, ⓕ, ⓖ로 6개다. ⓐ는 가목적어 it이고, ⓑ는 finish의 목적어인 동명사, ⓓ는 to finish와 병렬을 이루며 to가 생략된 동사원형이다. ⓔ는 목적을 나타내는 to부정사, ⓕ는 주어 you와 같은 대상을 가리키는 재귀대명사, ⓖ는 be동사의 보어로 형용사를 쓴 것이므로 모두 맞다. ⓒ는 surfing, watching과 병렬이므로 sending으로, ⓗ는 수동의 뜻이므로 glued로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u0m2s0t0",
+"custom": true
 }
 ]

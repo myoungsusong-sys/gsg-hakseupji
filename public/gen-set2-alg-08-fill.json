@@ -126,5 +126,152 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-08-u0m0s0t3",
 "custom": true
+},
+{
+"id": "fill-f3b14d54b8",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $\\mathrm{ABC}$에서 $A=45^\\circ$, $B=60^\\circ$, $a=4$일 때, $b$의 값은?",
+"choices": [
+"$2\\sqrt2$",
+"$2\\sqrt3$",
+"$2\\sqrt6$",
+"$4\\sqrt2$",
+"$4\\sqrt3$"
+],
+"answer": "③",
+"solution": "사인법칙에 의해 $\\dfrac{4}{\\sin45^\\circ}=\\dfrac{b}{\\sin60^\\circ}$이다. 따라서 $b=\\dfrac{4\\cdot\\frac{\\sqrt3}{2}}{\\frac{\\sqrt2}{2}}=\\dfrac{4\\sqrt3}{\\sqrt2}=2\\sqrt6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-d61085028d",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 3,
+"body": "삼각형 $\\mathrm{ABC}$에서 $A=120^\\circ$, $a=6$일 때, 삼각형 $\\mathrm{ABC}$의 외접원의 반지름의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$2\\sqrt3$",
+"solution": "사인법칙에 의해 $\\dfrac{a}{\\sin A}=2R$이므로 $2R=\\dfrac{6}{\\sin120^\\circ}=\\dfrac{6}{\\frac{\\sqrt3}{2}}=4\\sqrt3$이다. 따라서 $R=2\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-0850d50077",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $\\mathrm{ABC}$에서 $A:B:C=1:1:4$일 때, $a:b:c$는?",
+"choices": [
+"$1:1:2$",
+"$1:1:\\sqrt3$",
+"$1:1:4$",
+"$1:\\sqrt3:2$",
+"$\\sqrt3:\\sqrt3:1$"
+],
+"answer": "②",
+"solution": "$A+B+C=180^\\circ$이므로 $A=30^\\circ$, $B=30^\\circ$, $C=120^\\circ$이다. 사인법칙에 의해 $a:b:c=\\sin A:\\sin B:\\sin C=\\dfrac12:\\dfrac12:\\dfrac{\\sqrt3}{2}=1:1:\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-1bbdf15fee",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "반지름의 길이가 $3$인 원에 내접하는 삼각형 $\\mathrm{ABC}$에서 $C=60^\\circ$이고 $\\sin A+\\sin B=\\dfrac32$일 때, 삼각형 $\\mathrm{ABC}$의 둘레의 길이는?",
+"choices": [
+"$9$",
+"$3+3\\sqrt3$",
+"$9+\\sqrt3$",
+"$9+3\\sqrt3$",
+"$12+3\\sqrt3$"
+],
+"answer": "④",
+"solution": "외접원의 반지름이 $R=3$이므로 사인법칙에 의해 $a=6\\sin A$, $b=6\\sin B$, $c=6\\sin C$이다. 따라서 $a+b=6(\\sin A+\\sin B)=6\\cdot\\dfrac32=9$이고, $c=6\\sin60^\\circ=3\\sqrt3$이다. 그러므로 둘레의 길이는 $9+3\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-29678af7d0",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 4,
+"body": "외접원의 넓이가 $25\\pi$인 삼각형 $\\mathrm{ABC}$에서 $\\sin A:\\sin B:\\sin C=3:4:5$일 때, 삼각형 $\\mathrm{ABC}$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$24$",
+"solution": "외접원의 넓이가 $25\\pi$이므로 $R=5$이다. 사인법칙에 의해 $a:b:c=\\sin A:\\sin B:\\sin C=3:4:5$이므로 $a=3k$, $b=4k$, $c=5k$로 놓으면 $a^2+b^2=c^2$이 되어 $C=90^\\circ$인 직각삼각형이다. 빗변이 외접원의 지름이므로 $5k=10$에서 $k=2$이고, 넓이는 $\\dfrac12\\cdot6\\cdot8=24$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-34a47b84ee",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $\\mathrm{ABC}$에서 $\\sin^2A+\\sin^2B=\\sin^2C$가 성립할 때, 이 삼각형은 어떤 삼각형인가?",
+"choices": [
+"$a=b$인 이등변삼각형",
+"$A=90^\\circ$인 직각삼각형",
+"$B=90^\\circ$인 직각삼각형",
+"$C=90^\\circ$인 직각삼각형",
+"정삼각형"
+],
+"answer": "④",
+"solution": "외접원의 반지름을 $R$라 하면 사인법칙에 의해 $\\sin A=\\dfrac{a}{2R}$, $\\sin B=\\dfrac{b}{2R}$, $\\sin C=\\dfrac{c}{2R}$이다. 이를 주어진 식에 대입하면 $\\dfrac{a^2}{4R^2}+\\dfrac{b^2}{4R^2}=\\dfrac{c^2}{4R^2}$, 곧 $a^2+b^2=c^2$이다. 따라서 이 삼각형은 $C=90^\\circ$인 직각삼각형이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-5343eb1ca5",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $\\mathrm{ABC}$에서 $(\\sin A+\\sin B):(\\sin B+\\sin C):(\\sin C+\\sin A)=5:6:7$일 때, $\\dfrac{\\sin A+\\sin C}{\\sin B}$의 값을 구하시오. (단, 풀이 과정을 서술하시오.)",
+"selfGrade": true,
+"answer": "$\\dfrac72$",
+"solution": "사인법칙에 의해 $\\sin A:\\sin B:\\sin C=a:b:c$이므로 $(a+b):(b+c):(c+a)=5:6:7$이다. $a+b=5k$, $b+c=6k$, $c+a=7k$로 놓고 세 식을 모두 더하면 $a+b+c=9k$이므로 $a=3k$, $b=2k$, $c=4k$이다. 따라서 $\\sin A:\\sin B:\\sin C=3:2:4$이고, $\\dfrac{\\sin A+\\sin C}{\\sin B}=\\dfrac{3+4}{2}=\\dfrac72$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-901b0111e7",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "삼각형 $\\mathrm{ABC}$에서 $A=30^\\circ$, $b=8$이다. 이 조건을 만족시키는 삼각형 $\\mathrm{ABC}$가 서로 다른 두 개 존재하도록 하는 자연수 $a$의 개수는?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "②",
+"solution": "사인법칙에 의해 $\\sin B=\\dfrac{b\\sin A}{a}=\\dfrac{4}{a}$이다. 삼각형이 두 개이려면 $\\sin B<1$이어서 $B$가 예각과 둔각 두 값을 가지고, 둔각인 $B$도 $A+B<180^\\circ$를 만족해야 한다. 이 조건은 $a<b$일 때 성립하므로 $4<a<8$이다. $a=4$이면 $B=90^\\circ$ 하나뿐이고, $a=8$이면 $B=30^\\circ$ 하나뿐이다. 따라서 자연수 $a$는 $5,6,7$의 $3$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-e1d73a276d",
+"typeId": "set2-alg-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $\\mathrm{ABC}$에서 $A=30^\\circ$, $a=2$, $b=2\\sqrt3$일 때, 가능한 모든 $c$의 값의 합을 구하시오. (단, 풀이 과정을 서술하시오.)",
+"selfGrade": true,
+"answer": "$6$",
+"solution": "사인법칙에 의해 $\\sin B=\\dfrac{2\\sqrt3\\cdot\\frac12}{2}=\\dfrac{\\sqrt3}{2}$이므로 $B=60^\\circ$ 또는 $B=120^\\circ$이고, 두 경우 모두 $A+B<180^\\circ$이다. $B=60^\\circ$이면 $C=90^\\circ$이므로 $c=\\dfrac{2\\sin90^\\circ}{\\sin30^\\circ}=4$이다. $B=120^\\circ$이면 $C=30^\\circ$이므로 $c=\\dfrac{2\\sin30^\\circ}{\\sin30^\\circ}=2$이다. 따라서 가능한 $c$의 값의 합은 $4+2=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-08-u0m0s0t1",
+"custom": true
 }
 ]

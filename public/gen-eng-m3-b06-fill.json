@@ -2192,5 +2192,89 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-9da5fcd9cb",
+"typeId": "eng-m3-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <보기>의 단어 및 표현을 사용하여 현재완료 진행형으로 알맞게 영작하시오. (필요시 형태를 변형할 것)\n\n나는 두 시간 동안 나의 용돈을 세고 있는 중이다.\n\n<보기>\ncount, my allowance, for, two hours",
+"selfGrade": true,
+"answer": "I have been counting my allowance for two hours.",
+"solution": "과거의 한 시점부터 지금까지 계속 진행 중인 동작이므로 현재완료 진행형 「have/has + been + -ing」를 쓴다. 주어가 I이므로 have been counting이 된다. 'for two hours'로 기간을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f7104f1ed5",
+"typeId": "eng-m3-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <보기>의 단어를 사용하여 '의문사+to부정사'로 알맞게 영작하시오. (총 7단어)\n\n나는 무엇을 먼저 사야 할지 모르겠다.\n\n<보기>\nknow, buy, what, first",
+"selfGrade": true,
+"answer": "I don't know what to buy first.",
+"solution": "'무엇을 ~해야 할지'는 '의문사(what)+to부정사'로 나타내어 what to buy가 된다. 「I don't know + 의문사+to부정사」 형태로 쓰고 끝에 first를 붙여 7단어로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bbd05b602b",
+"typeId": "eng-m3-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 들어갈 알맞은 말을 <조건>에 맞게 완성하시오.\n\n그들은 지난주부터 돈을 모으고 있는 중이다.\n→ They ______________ money since last week.\n\n<조건>\n• 현재완료 진행형을 사용할 것\n• save를 사용하되 필요시 변형할 것",
+"selfGrade": true,
+"answer": "have been saving",
+"solution": "'since last week(지난주부터)'은 과거의 한 시점부터 지금까지 계속됨을 나타내므로 현재완료 진행형을 쓴다. 주어가 They이므로 「have been + -ing」 형태인 have been saving이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-64fcd5d4f3",
+"typeId": "eng-m3-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 밑줄 친 (A), (B)의 우리말을 <조건>에 맞게 각각 영작하시오.\n\nMina: I get a weekly allowance, but I always run out of money. (A)나는 어떻게 돈을 아껴야 할지 모르겠어.\nDr. Money: Let's see. (B)너는 새 자전거를 사기 위해 지난 세 달 동안 저축해 오고 있구나, but you still spend too much. You need a tighter budget.\n\n<조건>\n• (A)는 '의문사+to부정사'를 사용하여 7단어로 쓸 것\n• (B)는 현재완료 진행형을 사용하여 14단어로 쓸 것\n• <보기>의 단어를 사용하되 필요시 변형할 것\n<보기>\n(A) know, save\n(B) save, buy, the last, three, bike",
+"selfGrade": true,
+"answer": "(A) I don't know how to save money. (B) You have been saving to buy a new bike for the last three months.",
+"solution": "(A) '어떻게 ~해야 할지'는 '의문사(how)+to부정사'로 how to save이고, 「I don't know + how to save money」로 7단어가 된다. (B) 과거 세 달 전부터 지금까지 계속 저축 중이므로 현재완료 진행형 have been saving을 쓰고, 목적은 to부정사(to buy a new bike), 기간은 for the last three months로 나타내어 14단어로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-30978618f0",
+"typeId": "eng-m3-b06-u3m5s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 우리말을 알맞게 영작한 것은?\n\nHow smart are you with your money? These are the results of a survey of 250 students at Green Middle School. We first asked students \"Are you smart with your money?\" As Graph 1 shows, 30% answered \"Yes\" while 70% answered \"No.\" 그 다음에 우리는 '예'라고 대답한 학생들에게 그들이 그들의 돈에 대해 얼마나 똑똑한지 물었다. Our survey shows that managing money is not easy for most students.",
+"choices": [
+"We then asked the students how smart are they with their money who answered \"Yes\".",
+"We then asked how smart they are with their money the students who answered \"Yes\".",
+"We then asked the students who answered \"Yes\" how smart they are with their money.",
+"We then asked the students who answered \"Yes\" how smart are they with their money.",
+"We then asked about how smart are they with their money to the students who answered \"Yes\"."
+],
+"answer": "③",
+"solution": "ask의 직접목적어인 간접의문문은 '의문사(구)+주어+동사' 어순이어야 하므로 how smart they are가 맞다(의문문 어순 are they는 틀림 → ①④⑤ 제거). 또한 수식받는 명사 the students 바로 뒤에 관계절 who answered \"Yes\"가 와야 자연스러우므로(②는 목적어 어순이 뒤섞임) 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-cc3ee39138",
+"typeId": "eng-m3-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n나는 새 노트북을 사기 위해 다섯 달 동안 나의 용돈을 저축해 오고 있다.\n\n<조건>\n• 현재완료 진행형을 사용할 것\n• <보기>의 단어를 차례대로 사용하되 필요시 형태를 변형할 것\n• 총 14단어로 쓸 것\n<보기>\nsave, allowance, five, to, laptop",
+"selfGrade": true,
+"answer": "I have been saving my allowance for five months to buy a new laptop.",
+"solution": "다섯 달 전부터 지금까지 계속 진행 중인 동작이므로 현재완료 진행형 have been saving을 쓴다. 목적어는 my allowance, 기간은 for five months, 목적은 to부정사(to buy a new laptop)로 나타내어 <보기> 순서대로 배열하면 14단어로 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u3m5s0t0",
+"custom": true
 }
 ]

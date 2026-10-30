@@ -3296,5 +3296,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b01-u2m4s0t0",
 "custom": true
+},
+{
+"id": "fill-3150caa729",
+"typeId": "eng-h2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nHelga Stentzel is a visual artist who uses everyday items to create playful visual illusions. Her unique style is known as \"household surrealism.\" She is perhaps best known for her Clothesline Animals series. The idea for the series came to her while she was hanging her laundry. With just some colorful clothespins and a dish towel, she turned her black sweatshirt and dark grey pants into a horse. She also created other animals, such as a brown cow standing on some hills and a zebra crossing the desert.",
+"choices": [
+"Stentzel은 값비싼 미술 재료를 사용해 작품을 만든다.",
+"Stentzel은 설거지를 하다가 Clothesline Animals 시리즈의 영감을 얻었다.",
+"Stentzel의 독특한 스타일은 \"household surrealism\"이라고 불린다.",
+"말 작품은 흰색 스웨트셔츠와 회색 바지로 만들어졌다.",
+"Clothesline Animals 시리즈에는 사막을 건너는 기린이 있다."
+],
+"answer": "③",
+"solution": "글에서 Stentzel의 독특한 스타일을 \"household surrealism\"이라고 부른다고 했으므로 ③이 일치합니다. 그녀는 값비싼 재료가 아니라 일상 물건을 쓰고(①), 영감은 설거지가 아니라 빨래를 널다가 얻었습니다(②). 말은 검은색 스웨트셔츠와 짙은 회색 바지로 만들었고(④), 사막을 건너는 동물은 기린이 아니라 얼룩말입니다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cd3b146ee6",
+"typeId": "eng-h2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nAs a content creator, I always need fresh ideas, so I was excited to read about an interesting experiment. A researcher wanted to find out how walking affects creativity. In the study, participants had to think of as many different ways to use everyday objects as they could. For instance, a car key could be used as a bottle opener. The people who took the test while walking on a treadmill came up with almost twice as many ideas as those who took it while sitting. So, the next time you need to be creative, I suggest you take a walk.",
+"choices": [
+"연구자는 걷기가 창의성에 미치는 영향을 알아보고자 했다.",
+"참가자들은 일상적인 물건의 다양한 용도를 생각해 내야 했다.",
+"자동차 열쇠를 병따개로 쓰는 것이 예시로 제시되었다.",
+"참가자들은 야외 공원을 걸으면서 시험을 보았다.",
+"글쓴이는 창의성이 필요할 때 산책할 것을 제안한다."
+],
+"answer": "④",
+"solution": "참가자들은 야외 공원이 아니라 러닝머신(treadmill) 위를 걸으면서 시험을 보았으므로 ④는 글의 내용과 일치하지 않습니다. 나머지 선지는 연구 목적, 과제 내용, 예시(병따개), 글쓴이의 제안을 각각 맞게 옮긴 것입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-fdb71fae34",
+"typeId": "eng-h2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nG: Sean, what are you up to?\nB: I'm doing a daily creative challenge. You do something creative every day, like writing a poem, playing a musical instrument, or crafting something.\nG: Cool! What's your challenge?\nB: It's a drawing challenge. I've been drawing different things every day for a month.\nG: I want to try one, too. Do you have any advice?\nB: I suggest you start with something simple. If it's too complicated, you may not be able to finish it every day.\nG: Hmm... I'm not sure what to choose.\nB: How about a photo challenge? You can easily take a picture with your phone every day.",
+"choices": [
+"What kind of challenge is Sean doing?",
+"How long has Sean been doing his challenge?",
+"What does Sean advise the girl to start with?",
+"What challenge does Sean suggest to the girl?",
+"What did Sean draw on the first day of his challenge?"
+],
+"answer": "⑤",
+"solution": "대화에는 Sean이 한 달 동안 매일 다른 것을 그려 왔다는 말만 있을 뿐, 첫날 무엇을 그렸는지는 나오지 않으므로 ⑤에는 답할 수 없습니다. ①은 drawing challenge, ②는 한 달, ③은 간단한 것으로 시작하라는 조언, ④는 photo challenge로 답할 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-98b63c808f",
+"typeId": "eng-h2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nBelieve it or not, the two paintings show the same person, Holy Roman Emperor Rudolf II. The one on the left is a standard portrait that you might see in a gallery or an art book. The one on the right, Vertumnus, is very unconventional. It was created by Giuseppe Arcimboldo, an Italian painter of the 16th century. In this work, fruits, flowers, and vegetables are put together like puzzle pieces to form a human head. A cherry and a mulberry become the dark eyes, and an apple and a peach serve as the pink cheeks. Vertumnus is representative of Arcimboldo's signature style of \"composite portraits,\" and he made many other portraits like it using plants, animals, and other objects.",
+"choices": [
+"The person depicted in Vertumnus is Rudolf II.",
+"Arcimboldo created only one composite portrait in his whole career.",
+"Arcimboldo was an Italian painter who lived in the 16th century.",
+"An apple and a peach were used to show the cheeks in Vertumnus.",
+"In Vertumnus, natural items are arranged like the pieces of a puzzle."
+],
+"answer": "②",
+"solution": "글 마지막에서 Arcimboldo가 식물, 동물, 기타 사물로 이와 비슷한 초상화를 많이 만들었다고 했으므로 composite portrait를 하나만 만들었다는 ②는 일치하지 않습니다. ①, ③, ④, ⑤는 각각 그림 속 인물, 화가의 국적과 시대, 볼의 표현, 퍼즐식 배열에 관한 본문 내용과 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-79e7f644a6",
+"typeId": "eng-h2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 가장 잘 이해한 사람은?\n\nThe Gardener is one of Arcimboldo's \"reversible\" paintings. Viewed normally, it is just an ordinary still life of vegetables in a bowl. When it is turned upside down, however, it magically becomes a smiling face. According to experts who studied his reversible works, Arcimboldo first painted them as still lifes, then turned them upside down and made some adjustments to create faces. X-ray examination showed that he sometimes changed the positions of some fruits and vegetables. He probably made his paintings reversible to add an interactive element, which makes viewers feel as if they are playing a visual game. His innovative approach inspired many later artists, including Pablo Picasso and Salvador Dalí.",
+"choices": [
+"Mina: When viewed normally, The Gardener shows a smiling face.",
+"Tom: Arcimboldo painted faces first and then changed them into still lifes.",
+"Chris: Viewers usually feel bored when they look at reversible paintings.",
+"Emma: Arcimboldo's approach to art was inspired by Pablo Picasso.",
+"Yuna: X-ray examination revealed that Arcimboldo sometimes moved some fruits and vegetables."
+],
+"answer": "⑤",
+"solution": "X-ray 검사로 Arcimboldo가 일부 과일과 채소의 위치를 바꾸기도 했다는 사실이 드러났으므로 Yuna(⑤)가 글을 바르게 이해했습니다. 그림은 똑바로 보면 정물화이고 뒤집어야 웃는 얼굴이 되며(①), 정물화를 먼저 그린 뒤 얼굴로 바꾸었습니다(②). 관람객은 시각적 게임을 하는 듯한 즐거움을 느끼고(③), 피카소는 Arcimboldo에게 영감을 준 사람이 아니라 그에게서 영감을 받은 후대 화가입니다(④).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c881684413",
+"typeId": "eng-h2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIn her series Edible Creatures, Helga Stentzel arranges food items found in any kitchen to make cute animals. The main characters are Brad Pet and Crunchie, two puppies made of sliced bread and lettuce respectively. Stentzel says the idea for Crunchie came to her while she was putting together a salad for her family. She believes her secret is her active observation skills. When she was a child, she would stare at the patterns in the wood of her bed, trying to find animal shapes. Even today, she admits, she looks at things longer than is acceptable in society.",
+"choices": [
+"Stentzel thinks her active observation skills are the key to her creativity.",
+"Brad Pet is a puppy that was made of lettuce.",
+"Stentzel thought of Crunchie while she was eating at a restaurant.",
+"As a child, Stentzel looked for animal shapes in the clouds in the sky.",
+"Stentzel says she no longer stares at things for a long time."
+],
+"answer": "①",
+"solution": "Stentzel은 자신의 비결이 적극적인 관찰력이라고 말하므로 ①이 일치합니다. Brad Pet은 상추가 아니라 식빵으로 만들었고(②), Crunchie는 식당에서 먹다가가 아니라 가족을 위해 샐러드를 만들다가 떠올렸습니다(③). 어린 시절에는 구름이 아니라 침대 나뭇결 무늬에서 동물 모양을 찾았고(④), 지금도 사회에서 용인되는 것보다 오래 사물을 바라본다고 했습니다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m4s0t0",
+"custom": true
 }
 ]

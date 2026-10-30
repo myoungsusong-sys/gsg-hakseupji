@@ -3546,5 +3546,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u0m4s0t0",
 "custom": true
+},
+{
+"id": "fill-9d9d191925",
+"typeId": "eng-h2-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nEmployees of the elevator company conducted a customer survey in order to find out why the passengers were so unhappy. The results of the questionnaire showed that it was the elevator’s slow speed that was causing dissatisfaction. The trip from one floor to the next took nearly fifteen seconds. The employees also discovered that passengers thought the elevator was much slower than it actually was because passengers had nothing to do. During the slow ride, some passengers complained and said they felt trapped. Even though the employees identified speed as the main source of dissatisfaction, it was not something that could be improved immediately due to technological limitations.",
+"choices": [
+"the history of tall buildings in New York",
+"the main cause of passengers’ dissatisfaction with the elevator",
+"the technology used to increase the speed of elevators",
+"the benefits of installing mirrors inside elevators",
+"the way employees designed a customer questionnaire"
+],
+"answer": "②",
+"solution": "직원들이 설문 조사를 해 보니 승객 불만의 원인은 엘리베이터의 느린 속도였고, 할 일이 없어서 실제보다 더 느리게 느껴졌다는 것이 글의 중심 내용이다. 따라서 주제는 ②이다. ④의 거울 설치는 이 단락에 나오지 않고, ③은 기술적 한계 때문에 속도를 바로 높일 수 없었다는 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-000e377f17",
+"typeId": "eng-h2-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nOne day, Gropius took a trip to France. The place he went to was famous for its vineyards. Farmers were selling grapes along the road near each vineyard. Then, one far ahead caught his eye because there was no one selling grapes but only a box by the side of the road. It turned out that the elderly couple who owned the vineyard were in poor health and could not pick the grapes themselves. Instead, they let people pick as many grapes as they wanted as long as they put five francs in the box. The couple not only prevented their grapes from becoming too ripe by permitting grape picking, but they also provided an enjoyable experience for their customers.",
+"choices": [
+"포도는 너무 익기 전에 반드시 수확해야 한다.",
+"노부부는 손님이 포도를 직접 따게 하여 수확 문제를 해결하고 즐거운 경험도 제공했다.",
+"프랑스 농부들은 길가에서 포도를 파는 방식을 가장 선호한다.",
+"주인 없이 물건을 팔면 손해를 보기 쉽다.",
+"건강이 나쁜 농부는 포도 농사를 그만두어야 한다."
+],
+"answer": "②",
+"solution": "건강이 나빠 포도를 직접 딸 수 없던 노부부가 5프랑만 상자에 넣으면 손님이 원하는 만큼 포도를 따게 했다. 그 결과 포도가 너무 익는 것을 막았고 손님에게도 즐거운 경험을 주었다는 것이 요지이므로 정답은 ②이다. ①은 세부 내용을 지나치게 일반화했고, ④·⑤는 글에 없는 주장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1bd02fd890",
+"typeId": "eng-h2-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nHave you ever come across an advertisement that actually encourages customers not to buy a product? It does not seem to make sense, but there are instances where companies have successfully used this somewhat odd approach. For example, there was a fast-food company that was concerned about public criticism on negative health effects due to the high fat content of fast food. Instead of trying to dispute the public criticism and claim their food was healthy, the company tried something different. They discouraged customers from eating fast food, like hamburgers, too often. Unexpectedly, this approach had an interesting effect. The company gained a positive image as being socially responsible, attracting more customers.",
+"choices": [
+"How Fast Food Became Healthier",
+"Disputing Public Criticism with Facts",
+"A Surprising Way to Gain a Responsible Image",
+"Why People Should Never Eat Hamburgers",
+"The High Fat Content of Popular Foods"
+],
+"answer": "③",
+"solution": "패스트푸드 회사는 비판에 반박하는 대신 햄버거를 너무 자주 먹지 말라고 권했고, 그 결과 오히려 사회적 책임감 있는 이미지를 얻어 고객이 늘었다. 따라서 '책임감 있는 이미지를 얻는 놀라운 방법'인 ③이 제목으로 알맞다. ②는 회사가 하지 않은 행동이고, ④의 'never'는 '너무 자주 먹지 말라'는 본문과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ecfee9ea6f",
+"typeId": "eng-h2-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nThen, one day, one employee of the elevator company began to look at the problem from a different perspective. She thought about it from a passenger’s point of view. She thought that what mattered was not speed but discomfort and boredom. She asked herself what could be done in this case. After many days of searching for a solution, she proposed installing a mirror inside the elevator. She believed that it could make the elevator appear larger, reducing the feeling of being trapped. Also, she believed that people could relieve boredom by looking in the mirror.\nOn a survey done after the mirror was installed, passengers commented on how much faster the new elevator was, even though the speed was exactly the same. Passengers stopped paying attention to the speed of the elevator because they were looking in the mirror.\n\n<요약문>\nBy looking at the problem from a passenger’s (A)______, an employee solved the elevator problem not by increasing its actual speed but by changing how passengers (B)______ time.\n\n      (A)              (B)",
+"choices": [
+"complaint ······ perceived",
+"viewpoint ······ measured",
+"viewpoint ······ perceived",
+"budget ······ wasted",
+"experience ······ saved"
+],
+"answer": "③",
+"solution": "직원은 승객의 관점(point of view)에서 문제를 보았으므로 (A)에는 viewpoint가 알맞다. 실제 속도는 그대로였는데 승객들은 거울을 보느라 엘리베이터가 더 빠르다고 느꼈다. 즉 시간을 '인식하는' 방식이 바뀐 것이므로 (B)에는 perceived가 들어간다. 승객이 시간을 실제로 재거나(measured) 아낀(saved) 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ab186e1932",
+"typeId": "eng-h2-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nIn places where people repeatedly walked, small footpaths started to form on the grass. The shapes of the paths were not unified, with some wide and some narrow, because they were formed naturally by visitors. The following year, Gropius used the grass pathways as an outline on which he built permanent pathways, resulting in the most convenient and efficient routes. This pathway design was later chosen as the best road design at the 1971 International Landscape Architecture Symposium in London.\nIt was contrary to common sense to allow people to walk on newly sprouted grass because it could damage the grass. Moreover, it was unprecedented for an architect to let people do the designing. Nonetheless, Gropius gained insight into creating ideal pathways by thinking outside the box.",
+"choices": [
+"the importance of protecting newly sprouted grass",
+"the reasons visitors preferred narrow footpaths",
+"the history of the International Landscape Architecture Symposium",
+"an unconventional approach that led to ideal pathways",
+"the difficulty of building permanent pathways in amusement parks"
+],
+"answer": "④",
+"solution": "그로피우스는 상식과 달리 방문객이 새로 돋은 잔디 위를 걷게 했다. 그렇게 생긴 길을 바탕으로 가장 편리하고 효율적인 길을 만들었으므로, 주제는 '틀에서 벗어난 접근이 이상적인 길로 이어졌다'는 ④이다. ①은 상식으로 언급된 내용일 뿐 중심 내용이 아니고, ③은 세부 사항에 불과하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8311227e43",
+"typeId": "eng-h2-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nHave you ever come across an advertisement that actually encourages customers not to buy a product? It does not seem to make sense, but there are instances where companies have successfully used this somewhat odd approach. In the world of fashion, there was a rising concern about buying clothes and throwing them away quickly. This type of fast fashion trend has a destructive impact on the environment because excessive production of clothes produces a massive amount of waste. Surprisingly, one fashion company started to persuade people not to buy their clothes. They argued that people should consume less and far more slowly. This unconventional marketing strategy not only raised awareness about the harmful effects of fast fashion on the environment, but also increased the company’s sales. People thought that this brand really cared about the environment, and they started to buy more of this company’s products.",
+"choices": [
+"소비를 줄이자고 설득하는 전략이 오히려 기업의 신뢰와 매출을 높일 수 있다.",
+"패스트 패션은 환경에 해로우므로 법으로 금지해야 한다.",
+"기업은 광고에서 제품의 장점을 최대한 강조해야 한다.",
+"환경을 생각하는 소비자는 옷을 전혀 사지 않아야 한다.",
+"옷을 자주 사고 버리는 것은 의류 회사의 매출을 높이는 가장 좋은 방법이다."
+],
+"answer": "①",
+"solution": "한 의류 회사는 자기 회사 옷을 사지 말고 덜, 더 천천히 소비하라고 설득했다. 그 결과 사람들은 이 브랜드가 환경을 진심으로 생각한다고 여겨 오히려 제품을 더 많이 샀으므로 요지는 ①이다. ②의 법적 금지는 본문에 없고, ④는 '덜, 더 천천히 소비하라'는 주장을 '전혀 사지 말라'로 과장했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m3s0t0",
+"custom": true
 }
 ]

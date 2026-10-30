@@ -536,5 +536,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-16641",
 "custom": true
+},
+{
+"id": "fill-e8f6864301",
+"typeId": "16609",
+"kind": "객관식",
+"diff": 1,
+"body": "세 실수 $x,y,z$가 $xyz≠0$이고\n\n$x/2=y/5=z/7$\n\n을 만족할 때, $(3x-y+z)/(x+y+z)$의 값은?",
+"choices": [
+"$2/7$",
+"$3/7$",
+"$5/7$",
+"$4/7$",
+"$6/7$"
+],
+"answer": "④",
+"solution": "공통값을 $t$라 하면 $x=2t$, $y=5t$, $z=7t$이다. 이를 주어진 식에 대입하면 $(6t-5t+7t)/(2t+5t+7t)=4/7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-93df831487",
+"typeId": "16609",
+"kind": "객관식",
+"diff": 1,
+"body": "세 양의 실수 $x,y,z$가\n\n$x/4=y/3=z/8$\n\n을 만족할 때, $x:y:z$는?",
+"choices": [
+"$3:4:8$",
+"$4:3:8$",
+"$4:8:3$",
+"$8:3:4$",
+"$8:4:3$"
+],
+"answer": "②",
+"solution": "공통값을 $t$라 하면 $x=4t$, $y=3t$, $z=8t$이다. 따라서 $x:y:z=4:3:8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-b7b321aa18",
+"typeId": "16609",
+"kind": "주관식",
+"diff": 1,
+"body": "세 양의 실수 $x,y,z$가\n\n$x/3=y/4=z/6$, $x+y+z=52$\n\n를 만족할 때, $z$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "24",
+"solution": "공통값을 $t$라 하면 $x=3t$, $y=4t$, $z=6t$이다. $13t=52$이므로 $t=4$이고, 따라서 $z=24$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-e1cd893d13",
+"typeId": "16609",
+"kind": "주관식",
+"diff": 4,
+"body": "세 실수 $x,y,z$가 $xyz≠0$이고\n\n$(x+y)/5=(y+z)/7=(z+x)/8$\n\n을 만족한다. $(x^2+y^2+z^2)/(xy+yz+zx)=p/q$라 할 때, 서로소인 두 양의 정수 $p,q$에 대하여 $p+q$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "69",
+"solution": "공통값을 $t$라 하면 $x+y=5t$, $y+z=7t$, $z+x=8t$이므로 $x=3t$, $y=2t$, $z=5t$이다. 따라서 주어진 값은 $(9+4+25)/(6+10+15)=38/31$이므로 $p+q=69$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-33d86ce65a",
+"typeId": "16609",
+"kind": "객관식",
+"diff": 4,
+"body": "세 양의 실수 $x,y,z$가\n\n$x(y+z)/16=y(z+x)/21=z(x+y)/25$\n\n를 만족할 때, $x:y:z$는?",
+"choices": [
+"$2:3:4$",
+"$2:3:5$",
+"$3:4:5$",
+"$3:5:7$",
+"$4:5:6$"
+],
+"answer": "②",
+"solution": "공통값을 $t$라 하고 $A=xy$, $B=yz$, $C=zx$라 하면 $A+C=16t$, $A+B=21t$, $B+C=25t$이다. 이를 풀면 $A=6t$, $B=15t$, $C=10t$이므로 $y/z=A/C=3/5$, $y/x=B/C=3/2$이다. 따라서 $x:y:z=2:3:5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-698156a89e",
+"typeId": "16609",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 $a,b,c$와 상수 $k$가 $abc≠0$, $k≠0$이고\n\n$(a+b)/4=(2b-c)/3=(c+3a)/7=(5a-2b+4c)/k$\n\n를 만족할 때, $k$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "10",
+"solution": "공통값을 $t$라 하면 $a+b=4t$, $2b-c=3t$, $c+3a=7t$이다. 앞의 두 식에서 $b=4t-a$, $c=5t-2a$이고, 세 번째 식에 대입하면 $a=2t$, $b=2t$, $c=t$이다. 따라서 $5a-2b+4c=10t$이므로 $k=10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-56df62a933",
+"typeId": "16609",
+"kind": "객관식",
+"diff": 5,
+"body": "세 실수 $x,y,z$가 $xyz≠0$이고\n\n$(x+y)/6=(y+z)/9=(z+x)/11$\n\n을 만족할 때, 다음 식의 값은?\n\n$\\frac{(x+y+z)(xy+yz+zx)}{x^3+y^3+z^3-3xyz}$",
+"choices": [
+"$19/50$",
+"$31/19$",
+"$50/19$",
+"$69/50$",
+"$69/19$"
+],
+"answer": "③",
+"solution": "공통값을 $t$라 하면 $x=4t$, $y=2t$, $z=7t$이다. $x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)$를 이용하면 주어진 식은 $(xy+yz+zx)/(x^2+y^2+z^2-xy-yz-zx)$이다. 따라서 그 값은 $50/(69-50)=50/19$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-99120f6dc7",
+"typeId": "16609",
+"kind": "주관식",
+"diff": 5,
+"body": "세 실수 $x,y,z$가 $xyz≠0$이고\n\n$(2x-y)/3=(y+z)/4=(3z-x)/5$\n\n를 만족한다. $(x+y+z)^2/(xy+yz+zx)=p/q$라 할 때, 서로소인 두 양의 정수 $p,q$에 대하여 $p+q$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "2571",
+"solution": "공통값을 $t$라 두고 세 식을 연립하면 $x=16t/7$, $y=11t/7$, $z=17t/7$이므로 $x:y:z=16:11:17$이다. 따라서 주어진 값은 $44^2/(16·11+11·17+17·16)=1936/635$이다. 두 수는 서로소이므로 $p+q=1936+635=2571$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
+},
+{
+"id": "fill-071448fad6",
+"typeId": "16609",
+"kind": "주관식",
+"diff": 5,
+"body": "세 양의 실수 $x,y,z$와 실수 $k$가\n\n$x/(k+1)=y/(2k-1)=z/(k^2+1)$, $x+y=z$\n\n를 만족할 때, $k$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$(3+\\sqrt{5})/2$",
+"solution": "공통값을 $t$라 하면 $x=(k+1)t$, $y=(2k-1)t$, $z=(k^2+1)t$이다. $x+y=z$에서 $k^2-3k+1=0$이므로 $k=(3±\\sqrt{5})/2$이다. 작은 근에서는 $2k-1<0$이 되어 $x,y,z$가 모두 양수일 수 없으므로 $k=(3+\\sqrt{5})/2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16609",
+"custom": true
 }
 ]

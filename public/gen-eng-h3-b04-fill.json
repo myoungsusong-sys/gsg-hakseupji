@@ -658,5 +658,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b04-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-842764e396",
+"typeId": "eng-h3-b04-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nPlaying sports is one of the most common hobbies, but people also love to watch live sports games. If you go to any sports stadium, you will be able to find fans cheering wildly, crying with joy. In the case of football, some famous matches are accompanied by extreme fans, whose overly aggressive support of their team sometimes leads to confrontations with fans from opposition teams. If someone’s joy, sadness, and even anger emerge from the love of their team, what makes them so loyal? What does it mean for an individual to be a sports fan? And would their passion and cheering actually influence the performance of their team? These questions can be addressed from both an evolutionary and a social psychological perspective.",
+"choices": [
+"사람들은 스포츠를 직접 하는 것보다 경기를 관람하는 것을 더 좋아한다.",
+"열광적으로 응원하는 팬은 일부 경기장에서만 볼 수 있다.",
+"일부 유명한 축구 경기에서는 극단적인 팬들이 상대 팀 팬들과 충돌하기도 한다.",
+"팬들의 응원이 팀의 경기력에 영향을 준다는 사실이 이미 밝혀졌다고 말한다.",
+"스포츠 팬덤에 관한 질문은 사회심리학적 관점으로만 다룰 수 있다."
+],
+"answer": "③",
+"solution": "글에서 일부 유명한 축구 경기에는 극단적인 팬들이 있고, 이들의 지나치게 공격적인 응원이 상대 팀 팬들과의 충돌로 이어지기도 한다고 했으므로 ③이 일치한다. ①은 둘을 비교하지 않았고, ②는 'any sports stadium'과 맞지 않는다. ④는 질문으로만 제시되었을 뿐이며, ⑤는 진화론적 관점과 사회심리학적 관점을 모두 언급했으므로 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-910599dcae",
+"typeId": "eng-h3-b04-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nB: No way! Seriously?\nG: What’s the matter, James?\nB: I can’t believe it. I tried to buy a ticket online for the musical Mozart in Love, but all the tickets sold out in seconds!\nG: Oh, that happens a lot. Is this the first time you have tried to buy a ticket for a musical?\nB: Yes, it is. My aunt took me to this musical last year, and I’ve been in love with it ever since. I thought I would definitely get a seat.\nG: Well, there might be a way to get a ticket.\nB: How is that possible?\nG: You should keep checking the booking app to see if there are any cancellations. I got my ticket that way.\nB: That makes me feel better. Thank you very much, Jisu!",
+"choices": [
+"James는 온라인으로 뮤지컬 표를 사려고 했다.",
+"뮤지컬 표는 몇 초 만에 모두 팔렸다.",
+"James는 작년에 이모와 함께 그 뮤지컬을 보았다.",
+"James는 이전에도 여러 번 뮤지컬 표를 사 본 경험이 있다.",
+"Jisu는 예매 앱에서 취소표를 확인하는 방법으로 표를 구한 적이 있다."
+],
+"answer": "④",
+"solution": "Jisu가 뮤지컬 표를 사 보는 것이 처음이냐고 묻자 James는 'Yes, it is.'라고 답했으므로 ④는 대화 내용과 맞지 않는다. 나머지는 모두 대화에 나온 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-96a0a30441",
+"typeId": "eng-h3-b04-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn the past, being a fan of a Korean pop idol typically meant waving colored balloons at concerts and sending gifts. Most fans, often teenagers, admired their idols from a distance. However, over the past three decades, the K-pop fandom culture has evolved dramatically with the development of digital technology. Today, fans actively engage themselves in communication with their idols through social media platforms. They can provide feedback and suggestions, which can have a beneficial influence on their idols. When they see some positive changes in their idols, they feel rewarded for their contribution. In addition to this change in their attitudes and roles, today’s fans express their affection in different ways. Instead of showering their idols with material gifts, they organize fundraising and volunteer activities in the name of their idols.",
+"choices": [
+"과거에는 콘서트에서 색깔 풍선을 흔드는 것이 아이돌 팬 활동의 전형적인 모습이었다.",
+"과거의 팬들은 대부분 아이돌과 직접 소통하며 가까운 관계를 맺었다.",
+"K-pop 팬덤 문화는 디지털 기술의 발달과 함께 크게 변화했다.",
+"오늘날 팬들은 소셜 미디어를 통해 아이돌에게 피드백과 제안을 할 수 있다.",
+"오늘날 팬들은 아이돌의 이름으로 모금 활동과 봉사 활동을 한다."
+],
+"answer": "②",
+"solution": "과거의 팬들은 대부분 아이돌을 멀리서 동경했다(admired their idols from a distance)고 했으므로 ②는 글의 내용과 맞지 않는다. 아이돌과 적극적으로 소통하는 것은 오늘날 팬들의 모습이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-76668c3f98",
+"typeId": "eng-h3-b04-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nSupporting a team passionately can help people forget about their daily life challenges. It can also have positive effects on our brains. For instance, when you cheer for a team and your team wins the game, your brain may release dopamine. Dopamine, a chemical known as the “happy hormone,” makes you feel pleasure when you reach a goal. If you have pursued the goal for a long time, the effect is greater. So it is a particular thrill when a team achieves victory following a series of back-to-back losses. While you are cheering, your brain may also release oxytocin, a hormone that contributes to feelings of bonding between people.",
+"choices": [
+"How long does the effect of dopamine last after a team’s victory?",
+"What can supporting a team passionately help people forget?",
+"What is dopamine commonly known as?",
+"Under what condition is the effect of dopamine greater?",
+"Which hormone that contributes to feelings of bonding may be released while you are cheering?"
+],
+"answer": "①",
+"solution": "도파민의 효과가 얼마나 오래 지속되는지는 글에 나오지 않으므로 ①에는 답할 수 없다. ②는 일상의 어려움(daily life challenges), ③은 ‘happy hormone’, ④는 목표를 오랫동안 추구해 왔을 때, ⑤는 옥시토신(oxytocin)으로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-baf8904f34",
+"typeId": "eng-h3-b04-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThere are also two social psychological theories that might explain why we cheer for a sports team: optimal distinctiveness and basking in reflected glory. Though it may be human nature to form a group and feel a sense of belonging to that group, being a fan of a sports team is different from just having friends. Optimal distinctiveness theory states that everyone has a need for inclusion and differentiation. That is, individuals want to be included somewhere, but they also want to be different and unique. These two basic but competing needs can be satisfied through group membership. Sports team supporters are one such group. For example, if you are a fan of a football team based in your city, you can satisfy your need for inclusion by supporting the same team with other in-group members. This can also make you feel unique because your team’s fans are different from the fans of other teams. This feeling of uniqueness is reinforced by sports teams’ deliberate use of their team colors and songs.",
+"choices": [
+"Being a fan of a sports team is basically the same as just having friends.",
+"Basking in reflected glory is the only social psychological theory that explains why we cheer for a team.",
+"According to optimal distinctiveness theory, people need either inclusion or differentiation, but never both.",
+"Sports teams avoid using distinctive colors and songs so as not to weaken fans’ sense of belonging.",
+"Supporting a local football team together with other in-group members can satisfy a fan’s need for inclusion."
+],
+"answer": "⑤",
+"solution": "자기 도시를 연고로 하는 축구팀을 다른 내집단 구성원과 함께 응원함으로써 소속 욕구를 충족할 수 있다고 했으므로 ⑤가 일치한다. ①은 'different from just having friends'와 반대이고, ②는 이론이 두 가지라고 한 것과 어긋난다. ③은 두 욕구를 모두 가진다고 한 것과 맞지 않고, ④는 팀들이 색과 노래를 의도적으로 사용해 독특함을 강화한다는 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3b76800326",
+"typeId": "eng-h3-b04-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nSports fandom brings benefits not only to individual fans but also to the performance of sports teams. When a team competes in their home stadium, their fans gather to watch the game. Typically, the cheers from the home team’s fans are louder than those from the visiting team’s supporters. This dynamic has an impact on the performance of the home team, as confirmed by a study in 2021. The study examined the relationship between cheering and goals scored in matches. It compared home matches in an Italian football league from 2013 to 2019 with matches during the pandemic when crowds were banned from entering stadiums. It was found that the home team’s performance decreased by eight percent on average without crowds. This means that cheering helps the team’s performance to some extent, although it may not be the determining factor.",
+"choices": [
+"The cheers of visiting supporters are generally louder than those of home fans.",
+"The study compared Italian league matches from 2013 to 2019 with matches held in other countries during the pandemic.",
+"When spectators were not allowed in stadiums, home teams performed worse on average.",
+"The study proved that cheering is the decisive factor in determining a team’s victory.",
+"Home teams’ performance improved by eight percent when there were no spectators."
+],
+"answer": "③",
+"solution": "관중의 경기장 입장이 금지된 팬데믹 기간에 홈팀의 경기력이 평균 8퍼센트 떨어졌다고 했으므로 ③이 일치한다. ①은 홈 팬의 함성이 더 크다는 내용과 반대이고, ②는 같은 이탈리아 리그의 팬데믹 기간 경기와 비교한 것이므로 틀리다. ④는 응원이 결정적 요인은 아닐 수 있다고 한 것과 맞지 않고, ⑤는 경기력이 '감소'했다는 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m3s0t0",
+"custom": true
 }
 ]

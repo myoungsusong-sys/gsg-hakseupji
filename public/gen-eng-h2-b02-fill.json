@@ -3320,5 +3320,165 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b02-u4m3s0t0",
 "custom": true
+},
+{
+"id": "fill-c2e9b926f4",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nSince the market constantly <u>fluctuates</u>, there is a risk of loss and debt.",
+"choices": [
+"grows steadily",
+"stays the same",
+"changes up and down",
+"closes suddenly",
+"becomes official"
+],
+"answer": "③",
+"solution": "fluctuate는 '(가격·수치 등이) 오르내리다, 변동하다'라는 뜻입니다. 주식 시장이 계속 변동하기 때문에 손실과 빚의 위험이 있다는 문맥이므로 'changes up and down'이 가장 가깝습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-aa1f2d3f67",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 말로 알맞은 것은?\n\nan official place where people can easily buy or sell stocks in a company",
+"choices": [
+"debt",
+"stock exchange",
+"profit",
+"risk tolerance",
+"wealth"
+],
+"answer": "②",
+"solution": "Beth는 주식을 살 수 있는 공식적인 장소를 stock exchange(증권 거래소) 또는 stock market이라고 소개했습니다. 따라서 정답은 ② stock exchange입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-614a3e273d",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 단어를 주어진 철자로 시작하여 쓰시오.\n\nInvesting can be a powerful tool for building w__________, but it's essential to approach it with knowledge and caution.\n(투자는 부를 쌓는 강력한 도구가 될 수 있지만, 지식과 신중함을 가지고 접근하는 것이 필수적이다.)",
+"selfGrade": true,
+"answer": "wealth",
+"solution": "'부를 쌓다'는 build wealth로 표현합니다. 전치사 for 뒤에 동명사 building이 쓰였고, 그 목적어 자리에 wealth(부)가 들어갑니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f49dfee4b9",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 단어와 영영풀이의 연결이 바르지 않은 것은?",
+"choices": [
+"profit: money that is gained from business or investment",
+"debt: money that you owe to someone",
+"caution: care that is taken to avoid danger or mistakes",
+"wealth: a large amount of money or valuable things",
+"invest: to spend money carelessly on things you do not need"
+],
+"answer": "⑤",
+"solution": "invest는 '이익을 얻기 위해 돈을 투자하다'라는 뜻입니다. ⑤의 풀이는 '필요 없는 것에 돈을 함부로 쓰다'라는 뜻이어서 invest의 뜻과 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ba24d9d82f",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분에 대한 설명으로 옳지 않은 것은?\n\nYou can buy stocks through an official place called a stock exchange, ⓐ<u>where</u> you can easily buy or sell stocks in a company. You might think investing in stocks is an easy way ⓑ<u>to make</u> a profit. … ⓒ<u>Investing</u> in stocks is challenging! … Always remember to do your research, stay informed about ⓓ<u>the companies you invest in</u>, and be mindful of your risk tolerance. … ⓔ<u>If</u> you found this episode helpful, please share it with any friends.",
+"choices": [
+"ⓐ: 장소를 나타내는 관계부사로, in which로 바꿔 쓸 수 있다.",
+"ⓑ: 앞의 명사 an easy way를 꾸미는 to부정사의 형용사적 용법이다.",
+"ⓒ: 동명사 주어이므로 단수 동사 is가 쓰였다.",
+"ⓓ: companies 뒤에 목적격 관계대명사 that[which]가 생략되었다.",
+"ⓔ: 현재 사실의 반대를 가정하는 가정법 과거의 if절이다."
+],
+"answer": "⑤",
+"solution": "ⓔ는 가정법이 아닙니다. '이 에피소드가 도움이 되었다면'이라는 뜻으로 과거의 실제 일을 조건으로 나타내는 직설법 조건절이고, 주절도 명령문(please share)입니다. 나머지 설명은 모두 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-96222ce7a4",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 영영풀이에 해당하는 단어를 아래 문장에서 찾아 쓰시오.\n\ncare that is taken in order to avoid danger or mistakes\n\nInvesting can be a powerful tool for building wealth, but it's essential to approach it with knowledge and caution.",
+"selfGrade": true,
+"answer": "caution",
+"solution": "'위험이나 실수를 피하려고 기울이는 주의'는 caution(신중함, 조심)입니다. 이 문장에서 caution은 knowledge와 함께 with의 목적어로 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1f025f762a",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 틀린 문장은?",
+"choices": [
+"You can buy stocks through an official place called a stock exchange, where you can easily buy or sell stocks.",
+"If you are investing, you must be prepared to lose money.",
+"Always remember to stay informed about the companies which you invest.",
+"Since the market constantly fluctuates, there is a risk of loss and debt.",
+"Please share this episode with any friends who might be interested in learning more about economics."
+],
+"answer": "③",
+"solution": "invest는 '~에 투자하다'의 뜻일 때 전치사 in이 필요합니다(invest in the companies). 그런데 ③에서는 관계절 끝에 in이 빠져 'which you invest in' 또는 'in which you invest'로 고쳐야 합니다. ①의 where는 장소 선행사를 받는 관계부사이고, ⑤의 who는 friends를 받는 주격 관계대명사로 모두 바르게 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1d6860c40f",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어를 모두 사용하여 문장을 완성하시오. (단, 한 단어는 어법에 맞게 형태를 바꿀 것)\n\n일반적으로, 당신의 관심을 끄는 무언가에 투자하는 것이 현명할 것이다.\n\n<보기> smart / invest / would / something / it / to / you / be / in / that / interest\n\nGenerally, ______________________________________.",
+"selfGrade": true,
+"answer": "it would be smart to invest in something that interests you",
+"solution": "가주어 it과 진주어 to부정사(to invest in ~)를 써서 'it would be smart to invest in ~'으로 씁니다. 주격 관계대명사 that의 선행사 something이 단수이므로 동사 interest는 interests로 바꿔야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6c627d88ae",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 질문에 대한 답을 아래와 같이 쓸 때, 빈칸에 들어갈 알맞은 말을 글에서 찾아 쓰시오. (단, 필요하면 대명사를 알맞게 바꿀 것)\n\nBeth: You might think investing in stocks is an easy way to make a profit. But if you are investing, you must be prepared to lose money. … Generally, it would be smart to invest in something that interests you, such as a company behind some products you are into. Always remember to do your research, stay informed about the companies you invest in, and be mindful of your risk tolerance.\n\n(1) What should people be ready for when they invest in stocks?\n→ They should be ready to ______________.\n(2) Besides doing research, what two things should investors always remember?\n→ They should stay informed about ______________________ and be mindful of ______________________.",
+"selfGrade": true,
+"answer": "(1) lose money (2) the companies they invest in / their risk tolerance",
+"solution": "(1) Beth는 투자를 한다면 돈을 잃을 각오를 해야 한다(must be prepared to lose money)고 말했습니다. (2) 조사하기 외에 기억해야 할 두 가지는 투자하는 회사에 대해 계속 알아 두는 것과 자신의 위험 감내 수준에 유의하는 것입니다. 이때 주어가 They이므로 you와 your를 they와 their로 바꿔야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8edcc77a3e",
+"typeId": "eng-h2-b02-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 <조건>에 맞게 영어 문장을 쓰시오.\n\n투자는 부를 쌓는 강력한 도구가 될 수 있지만, 지식과 신중함을 가지고 그것에 접근하는 것이 필수적이다.\n\n<조건>\n• 동명사 주어로 문장을 시작할 것\n• 가주어 it과 진주어 to부정사를 사용하되, it is는 줄여 쓰지 말 것\n• powerful, tool, building, essential, approach, caution을 반드시 포함할 것\n• 총 20단어로 쓸 것",
+"selfGrade": true,
+"answer": "Investing can be a powerful tool for building wealth, but it is essential to approach it with knowledge and caution.",
+"solution": "앞 절은 동명사 주어 Investing으로 시작하고, '부를 쌓는 도구'는 'a tool for building wealth'로 씁니다. 뒤 절은 가주어 it과 진주어 to approach를 써서 'it is essential to approach it with knowledge and caution'으로 완성합니다. it is를 줄여 쓰지 않으면 모두 20단어가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u1m7s0t0",
+"custom": true
 }
 ]

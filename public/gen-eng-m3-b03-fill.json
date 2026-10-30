@@ -5515,5 +5515,50 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-543d74f65f",
+"typeId": "eng-m3-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장과 의미가 같도록 <조건>에 맞게 문장을 완성하시오.\n\nI'm sorry that my brother is not tall enough to ride the roller coaster.\n\n<조건>\n· 반드시 wish를 사용할 것\n· 주어진 문장의 단어를 활용할 것\n· 총 12단어로 쓸 것\n\n→ I ________________________________________.",
+"selfGrade": true,
+"answer": "I wish my brother were tall enough to ride the roller coaster.",
+"solution": "현재 사실과 반대되는 소망은 「I wish+주어+동사의 과거형」인 가정법 과거로 나타냅니다. 원래 문장이 부정(is not)이므로 가정법 문장은 긍정으로 바꿉니다. 가정법 과거에서 be동사는 주어와 상관없이 주로 were를 쓰므로 my brother were가 됩니다. 'I wish my brother were tall enough to ride the roller coaster.'는 모두 12단어로 조건에 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9246a2770f",
+"typeId": "eng-m3-b03-u8m6s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 두 문장의 의미가 같도록 바르게 바꿔 쓴 것의 개수는?\n\n(a) I'm sorry that I am not good at math.\n　→ I wish I were good at math.\n(b) I'm sorry that I can't fly like a bird.\n　→ I wish I could fly like a bird.\n(c) I'm sorry that my dad works on weekends.\n　→ I wish my dad worked on weekends.\n(d) I'm sorry that I don't have a pet.\n　→ I wish I have a pet.\n(e) I'm sorry that you live far from me.\n　→ I wish you didn't live far from me.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "가정법 과거는 「I wish+주어+동사의 과거형」으로 쓰고, 원래 문장과 긍정·부정을 반대로 바꿔야 합니다. (c)는 아빠가 주말에 일하는 것이 유감이라는 뜻이므로 I wish my dad didn't work on weekends.가 되어야 합니다. (d)는 동사가 현재형 have로 남아 있으므로 had로 고쳐야 합니다. 바르게 바꾼 것은 (a), (b), (e)의 3개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-01ba42e9f9",
+"typeId": "eng-m3-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분 2개를 찾아 바르게 고쳐 쓰시오.\n\nMy best friend moved to another city last month. I miss him a lot. I wish he lives near my house. Then we could play soccer together after school. I also wish I have more free time to visit him, but I'm too busy these days.\n\n(1) ________ → ________\n(2) ________ → ________",
+"selfGrade": true,
+"answer": "(1) lives → lived (2) have → had",
+"solution": "현재 이룰 수 없는 소망은 I wish 뒤에 동사의 과거형을 쓰는 가정법 과거로 나타냅니다. 따라서 I wish he lives는 I wish he lived로, I wish I have는 I wish I had로 고쳐야 합니다. Then we could play는 가정법 과거의 결과를 나타내는 「조동사 과거형+동사원형」이므로 맞는 표현입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m6s0t0",
+"custom": true
 }
 ]
