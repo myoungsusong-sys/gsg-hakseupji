@@ -4813,5 +4813,234 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u5m0s0t0",
 "custom": true
+},
+{
+"id": "fill-ae86426d1b",
+"typeId": "eng-m3-b12-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 어색한 것은?",
+"choices": [
+"Katherine showed a talent in math, so her manager recognized her <u>ability</u>.",
+"They dreamed of becoming space <u>experts</u> at NASA.",
+"She had <u>courage</u>, so she was too afraid to talk to the manager about the problem.",
+"The chef has so many things to do <u>other than</u> cooking.",
+"It's a <u>tough</u> job, but I love what I do."
+],
+"answer": "③",
+"solution": "courage는 '용기'라는 뜻이므로 '너무 두려워서 매니저에게 말할 수 없었다'는 내용과 앞뒤가 맞지 않는다. 문맥에 맞으려면 courage 대신 fear(두려움)를 써야 한다. 나머지는 모두 문맥에 맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-28ab17baeb",
+"typeId": "eng-m3-b12-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>의 두 단어의 관계와 같은 것은?\n\n<보기> courage - courageous",
+"choices": [
+"difficult - difficulty",
+"judge - judgement",
+"danger - dangerous",
+"permit - permission",
+"proud - pride"
+],
+"answer": "③",
+"solution": "<보기>는 '명사 - 형용사' 관계이고, 같은 관계는 ③ danger(명사) - dangerous(형용사)뿐이다. ①과 ⑤는 '형용사 - 명사'로 순서가 반대이고, ②와 ④는 '동사 - 명사' 관계이다. 앞뒤 순서를 끝까지 확인해야 하는 문항이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-234a94b039",
+"typeId": "eng-m3-b12-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)의 각 괄호 안에서 문맥상 알맞은 말로 바르게 짝지어진 것은?\n\nIt was a movie about three African-American women who worked at NASA. They began their career in the 1960s as \"human computers.\" However, they dreamed of becoming space experts at NASA and tried hard to (A)[get over / give up] difficulties. Katherine Johnson was one of the three \"hidden figures\" in this movie. She worked hard and showed a talent in math, and her manager Al Harrison (B)[recognized / ignored] her ability. … I was glad that she had (C)[courage / fear] to talk to the manager about the problem. This made Al Harrison break down the \"Colored Ladies Room\" sign.",
+"choices": [
+"get over - recognized - courage",
+"get over - ignored - courage",
+"give up - recognized - fear",
+"give up - ignored - courage",
+"get over - recognized - fear"
+],
+"answer": "①",
+"solution": "(A) 우주 전문가를 꿈꾸며 열심히 노력했으므로 어려움을 '극복하다(get over)'가 알맞다. (B) 열심히 일하고 수학에 재능을 보였으므로 매니저가 그 능력을 '인정했다(recognized)'가 알맞다. (C) 매니저에게 문제를 말해서 표지판을 부수게 만들었으므로 '용기(courage)'가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-efc303fefc",
+"typeId": "eng-m3-b12-u3m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 figures와 같은 의미로 쓰인 것은?\n\nKatherine Johnson was one of the three \"hidden <u>figures</u>\" in this movie. She worked hard and showed a talent in math.",
+"choices": [
+"The sales <u>figures</u> for this year are higher than last year's.",
+"She drew some <u>figures</u> like circles and triangles on the paper.",
+"She is a famous <u>figure</u> in the world of sports.",
+"I couldn't <u>figure</u> out the answer to the math problem.",
+"Please write the <u>figure</u> 7 on the board."
+],
+"answer": "③",
+"solution": "본문의 figures는 '(중요한) 인물'이라는 뜻으로, 영화 제목 Hidden Figures는 '숨겨진 인물들'을 뜻한다. ③의 figure도 '스포츠계의 유명 인물'이라는 뜻으로 쓰였다. ①과 ⑤는 '수치·숫자', ②는 '도형', ④의 figure out은 '알아내다'라는 동사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1730792f38",
+"typeId": "eng-m3-b12-u3m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 알맞은 단어를 <영영풀이>를 참고하여 쓰시오. (단, 주어진 철자로 시작하고, 필요하면 어형을 바꿀 것)\n\nKatherine Johnson worked hard and showed a talent in math, and her manager Al Harrison (A) r__________ her (B) a__________. … I was glad that she had (C) c__________ to talk to the manager about the problem.\n\n<영영풀이>\n(A) to accept and show that you value someone's skill or work\n(B) the skill or power to do something\n(C) the quality of being brave when you are facing a difficult or dangerous situation",
+"selfGrade": true,
+"answer": "(A) recognized (B) ability (C) courage",
+"solution": "(A) '누군가의 기술이나 업적을 인정하다'라는 뜻은 recognize이고, 앞의 showed와 시제를 맞춰 과거형 recognized로 써야 한다. (B) '무언가를 할 수 있는 기술이나 힘'은 ability이다. (C) '어렵거나 위험한 상황에 맞설 때의 용감함'은 courage이다. recognize를 원형 그대로 쓰면 틀린다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f087bf6e80",
+"typeId": "eng-m3-b12-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 것은?",
+"choices": [
+"Do you know where is the station?",
+"I wonder what does she want.",
+"Can you tell me when the movie starts?",
+"Please tell me who are you.",
+"I don't know how old is he."
+],
+"answer": "③",
+"solution": "간접의문문은 「의문사 + 주어 + 동사」 어순을 지켜야 하며, 의문사가 이끄는 절 안에서는 do/does/did를 쓰지 않고 본동사에 수·시제를 반영한다. ③은 when the movie starts로 올바른 어순이다. ①은 where the station is, ②는 what she wants, ④는 who you are, ⑤는 how old he is로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0d9c798086",
+"typeId": "eng-m3-b12-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nXD is not a word. It's an emoticon, (A)[which / what] is a group of letters or symbols (B)[using / used] to represent a facial expression. By using various laughing marks, we can show our friends (C)[how much we care / how much do we care] for them.",
+"choices": [
+"which - used - how much we care",
+"what - used - how much we care",
+"which - using - how much do we care",
+"which - used - how much do we care",
+"what - using - how much we care"
+],
+"answer": "①",
+"solution": "(A) 앞에 콤마가 있고 선행사 an emoticon을 보충 설명하는 계속적 용법의 관계대명사이므로 which가 맞고, what은 선행사를 가질 수 없어 틀리다. (B) symbols가 '사용되는' 대상이므로 수동의 과거분사 used가 알맞다. (C) show의 목적어로 쓰인 간접의문문이므로 「how much + 주어 + 동사」인 how much we care가 맞고 do를 쓰면 안 된다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-09e119c429",
+"typeId": "eng-m3-b12-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 알맞은 것끼리 짝지어진 것은?\n\nⓐLots of laughing emojis are available to use online, so people can express their laughter in ⓑvarious way. Some emojis have grown bigger, and some even ⓒhave grown funnier. Some emojis move or ⓓmaking laughing sounds. By using them, we can show our friends ⓔhow much do we care for them. ⓕLaugh, and your friends will laugh with you.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ는 「be available to + 동사원형」으로 올바르고, ⓒ는 현재완료, ⓕ는 「명령문, and ~」 구문으로 모두 맞다. ⓑ는 various 뒤에 복수명사가 와야 하므로 ways, ⓓ는 move or make로 병렬이 되어야 하므로 make, ⓔ는 간접의문문이므로 how much we care로 고쳐야 한다. 따라서 어법상 옳은 것은 ⓐ, ⓒ, ⓕ로 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-28498dbdd9",
+"typeId": "eng-m3-b12-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 바르게 배열하여 문장을 완성하시오.\n\n너는 그 그림이 얼마나 유명한지 아니?\n( is / know / famous / do / how / the picture / you )",
+"selfGrade": true,
+"answer": "Do you know how famous the picture is?",
+"solution": "의문사 의문문이 의문문의 목적어로 들어가는 간접의문문 문제이다. 전체는 의문문 Do you know ~?로 시작하고, know의 목적어 자리에 들어가는 간접의문문은 「how famous + 주어 + 동사」 어순이 되어 how famous the picture is가 된다. 따라서 Do you know how famous the picture is?로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4797abcecc",
+"typeId": "eng-m3-b12-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 어색한 부분 두 곳을 찾아 바르게 고쳐 쓰시오.\n\nROFL, who means \"Rolling On the Floor Laughing,\" have become popular because it can be typed quickly.",
+"selfGrade": true,
+"answer": "who → which, have → has",
+"solution": "ROFL은 사람이 아닌 사물(약어)이므로 계속적 용법의 관계대명사는 who가 아니라 which를 써야 한다. 또한 주어 ROFL은 단수이므로 동사는 have become이 아니라 has become으로 수를 일치시켜야 한다. 따라서 who → which, have → has로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8720b959a3",
+"typeId": "eng-m3-b12-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어와 영영풀이가 바르게 짝지어진 것은?",
+"choices": [
+"float: to make larger in amount or number",
+"cheer: a shout of joy or support",
+"expert: different from what is normal",
+"ceremony: careful study of something to discover new facts",
+"humor: a formal public event with special traditions"
+],
+"answer": "②",
+"solution": "cheer는 '환호, 응원의 외침'이므로 ②의 풀이가 정확하다. ①은 increase(늘리다), ③은 unusual(평범하지 않은), ④는 research(연구), ⑤는 ceremony(의식)의 풀이로 모두 단어와 맞지 않는다. float는 '(공중·물 위에) 뜨다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-66e830af7c",
+"typeId": "eng-m3-b12-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 밑줄 친 단어의 영영풀이가 옳은 것만 있는 대로 고른 것은?\n\n<보기>\n• He is a well-known expert in robotics.\n→ ⓐ a person with a high level of knowledge or skill in a particular area\n• They used a magnet to lift the metal.\n→ ⓑ a piece of metal that can attract iron\n• The balloon began to float in the air.\n→ ⓒ to sink to the bottom of water\n• She won an award for her painting.\n→ ⓓ a prize given to someone for an achievement\n• He studied economics at university.\n→ ⓔ different from what is normal\n• We gave a loud cheer for the team.\n→ ⓕ a shout of joy or support",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ, ⓕ",
+"ⓐ, ⓒ, ⓓ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ expert, ⓑ magnet, ⓓ award, ⓕ cheer의 풀이는 모두 옳다. ⓒ float는 '(물 위·공중에) 뜨다'인데 '가라앉다(sink)'로 잘못 풀이했고, ⓔ economics는 '경제학'인데 unusual(평범하지 않은)의 뜻으로 잘못 풀이했다. 따라서 옳은 것은 ⓐ, ⓑ, ⓓ, ⓕ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-34e85600d9",
+"typeId": "eng-m3-b12-u2m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 밑줄 친 단어의 영영풀이가 바르게 짝지어진 것은?",
+"choices": [
+"research: the act of studying something carefully to discover new facts",
+"honor: to make someone feel ashamed in front of other people",
+"accept: to refuse to take something that is offered to you",
+"brave: feeling very afraid of danger or difficulty",
+"increase: to make something smaller in size or amount"
+],
+"answer": "①",
+"solution": "research는 '새로운 사실을 발견하기 위해 무언가를 주의 깊게 연구하는 일'이므로 ①이 옳다. ②honor는 '존경·영예'로 '창피를 주다'와 반대, ③accept는 '받아들이다'로 '거절하다'와 반대, ④brave는 '용감한'으로 '두려워하는'과 반대, ⑤increase는 '늘리다'로 '작게 만들다(decrease)'와 반대의 풀이이다. 모두 뜻이 정반대로 제시된 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m0s0t0",
+"custom": true
 }
 ]

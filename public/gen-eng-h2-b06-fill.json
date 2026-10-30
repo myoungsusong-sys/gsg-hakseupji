@@ -2257,5 +2257,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b06-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-8e9964b861",
+"typeId": "eng-h2-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWe sometimes meet remarkable individuals (A)[who / which] sacrifice (B)[them / themselves] for those in need. Often (C)[called / calling] the angel with blue eyes, Sister Carla devoted her life to caring for patients with Hansen's disease in the remote village of Hoam.\n\n(A)          (B)          (C)",
+"choices": [
+"① who ― them ― called",
+"② who ― themselves ― called",
+"③ who ― themselves ― calling",
+"④ which ― themselves ― called",
+"⑤ which ― them ― calling"
+],
+"answer": "②",
+"solution": "(A) 선행사가 사람(individuals)이고 뒤에 동사가 바로 오므로 주격 관계대명사 who가 알맞다. (B) 주어와 목적어가 individuals로 같으므로 재귀대명사 themselves가 옳다. (C) Sister Carla는 '불린' 대상이므로 수동의 의미를 가진 과거분사 called가 알맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a933e904ac",
+"typeId": "eng-h2-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSister Carla's extraordinary life reminds us that we all can make a difference. As she said, (A)[be / being] respectful, caring, and supportive towards others can improve our society. When you live only for the benefit of yourself, your joy and happiness become that (B)[very / much] smaller. We should open our hearts and help those (C)[who / which] need help most.\n\n(A)          (B)          (C)",
+"choices": [
+"① being ― much ― who",
+"② be ― much ― who",
+"③ being ― very ― who",
+"④ being ― much ― which",
+"⑤ be ― very ― which"
+],
+"answer": "①",
+"solution": "(A) 문장의 주어 역할을 하면서 뒤의 단수 동사 can improve와 연결되려면 동명사 being이 알맞다. (B) 비교급 smaller를 강조하는 부사로는 very가 아니라 much가 쓰인다. (C) 선행사가 사람(those)이므로 주격 관계대명사 who가 옳다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-54ca4103b5",
+"typeId": "eng-h2-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAdopt-a-tree is a volunteer activity that helps keep trees beautiful and clean. Planting trees (A)[is / are] important, but it is also important to take good care of the trees once (B)[planted / planting]. The Seoul Green Trust, a non-profit foundation (C)[dedicated / dedicating] to expanding and preserving green spaces, organizes an annual event on Arbor Day.\n\n(A)          (B)          (C)",
+"choices": [
+"① is ― planted ― dedicated",
+"② is ― planting ― dedicated",
+"③ is ― planted ― dedicating",
+"④ are ― planted ― dedicated",
+"⑤ are ― planting ― dedicating"
+],
+"answer": "①",
+"solution": "(A) 주어가 동명사구 Planting trees(단수 취급)이므로 단수 동사 is가 알맞다. (B) 나무는 '심어지는' 대상이므로 once (they are) planted의 수동 의미인 과거분사 planted가 옳다. (C) 'be dedicated to(~에 헌신하다)' 구문으로 foundation이 헌신되는 대상이므로 과거분사 dedicated가 알맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-02d1ef3373",
+"typeId": "eng-h2-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nWe sometimes meet remarkable individuals ⓐwho sacrifice themselves for those in need. Often ⓑcalling the angel with blue eyes, Sister Carla devoted her life to ⓒcaring for patients with Hansen's disease. She came to Korea in 1968 after hearing about many war orphans and Hansen's patients. Back then, people excluded Hansen's patients from the general public due to various prejudices. For Sister Carla, however, Hansen's patients were equally noble human beings. She accepted the pain of those patients as ⓓtheir own, and wanted to help them in as many ways as she ⓔcould.",
+"choices": [
+"① ⓐ, ⓒ",
+"② ⓑ, ⓓ",
+"③ ⓒ, ⓔ",
+"④ ⓐ, ⓑ, ⓓ",
+"⑤ ⓑ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ Sister Carla는 '천사라고 불린' 대상이므로 수동의 과거분사 called가 되어야 하는데 calling으로 쓰여 어색하다. ⓓ 환자들의 고통을 'Sister Carla 자신의 것'으로 받아들였다는 의미이므로 her own이 되어야 하는데 their own으로 쓰여 어색하다. ⓐ는 사람 선행사의 주격 관계대명사 who, ⓒ는 'devote ~ to + 동명사'의 caring, ⓔ는 'as ~ as she could' 구문으로 모두 옳다. 따라서 어색한 것은 ⓑ, ⓓ로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m1s0t0",
+"custom": true
 }
 ]

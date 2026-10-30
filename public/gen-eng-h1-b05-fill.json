@@ -3506,5 +3506,556 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u5m4s0t0",
 "custom": true
+},
+{
+"id": "fill-ed7ebed937",
+"typeId": "eng-h1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nJason\nOne evening, I went to a convenience store ①to buy some snacks. No one was at the counter, so I thought the clerk ②were working in the back. The telephone started ③ringing, but no one came to answer it. I felt something was wrong. I looked over the counter and saw the clerk ④lying on the floor. I immediately called 911 and explained the situation. The operator asked me ⑤to perform CPR on the clerk until the paramedics arrived.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "②",
+"solution": "주어 the clerk는 3인칭 단수이므로 과거진행형은 were working이 아니라 was working이 되어야 한다. ①은 '~하기 위해'를 뜻하는 to부정사의 부사적 용법이다. ③ start는 동명사와 to부정사를 모두 목적어로 취한다. ④는 지각동사 saw의 목적격 보어로 쓰인 현재분사이고, ⑤는 'ask+목적어+to부정사' 구조로 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-02bb7bd113",
+"typeId": "eng-h1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nYuna\nEver since I was young, I ①have admired great public speakers. I hoped ②to inspire and move audiences like them someday. But every time I had a chance to speak in front of people, I would get ③scared. I didn't want to make a fool of ④me. This fear kept me behind the stage rather than on it. That's why I never ⑤entered the annual speech contest at my school.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "make a fool of의 목적어가 주어 I와 같은 사람이므로 재귀대명사 myself를 써야 한다. ①은 ever since와 함께 쓰여 과거부터 지금까지 이어지는 일을 나타내는 현재완료이다. ② hope는 to부정사를 목적어로 취한다. ③ scared는 'get+형용사'에서 감정을 느끼는 주체를 나타낸다. ⑤ enter는 타동사이므로 전치사 없이 목적어를 바로 받는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f6375e94a9",
+"typeId": "eng-h1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nOlivia\nI was about ①to take the lead in the race when I suddenly felt a pain in my knee. I fell to the ground and had to ②be carried off the track. At first, I didn't think ③much of the injury. I thought I would get better soon. But the test results from the hospital were not ④hopeful. The doctors said my knee injury would prevent me ⑤to run again.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "'A가 ~하지 못하게 막다'는 'prevent A from -ing'로 쓰므로 to run을 from running으로 고쳐야 한다. ①은 '막 ~하려던 참이다'라는 뜻의 be about to 구문이다. ②는 내가 들려 나간 것이므로 수동태가 맞다. ③은 think much of(~을 대단하게 여기다)의 much이고, ④는 be동사 were의 보어로 쓰인 형용사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7d59d84f06",
+"typeId": "eng-h1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것의 개수는?\n\nOlivia\nEvery night, I had flashbacks of my injury. I could not watch sports anymore because it was just too ⓐpainful. So I shut out everything ⓑrelated to sports from my life. Two years ⓒwere passed and I was still trying to get used to my ordinary high school life without sports. Then one day, I came across an interesting university major ⓓcalling sports medicine. It deals with the treatment and prevention of sports injuries. A light bulb went on in my head. This was my chance to stop ⓔto run away from my problems and fears. So I made up my mind and ⓕapplied to this major.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓒ pass는 '(시간이) 흐르다'라는 뜻의 자동사라서 수동태로 쓸 수 없으므로 passed로 고친다. ⓓ 전공이 sports medicine이라고 '불리는' 것이므로 과거분사 called가 맞다. ⓔ 문맥상 '도망치는 것을 그만두다'라는 뜻이므로 stop 뒤에 동명사 running을 써야 한다. ⓐ는 be동사의 보어로 쓰인 형용사, ⓑ는 everything을 꾸미는 과거분사, ⓕ는 made와 병렬을 이루는 과거형이므로 모두 맞다. 따라서 어색한 것은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cf10c467f5",
+"typeId": "eng-h1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 알맞은 것을 모두 골라 짝지은 것은?\n\nYuna\nI really wanted to, but I just didn't have enough courage. Last year, however, ⓐwas my final chance before ⓑgraduate from high school. When I saw the poster on the class board, my mind began ⓒto fill with thoughts of the school speech contest. I heard a voice ⓓgrowing louder in my head, ⓔsaid \"Go for it!\" I decided ⓕsigning up for the contest. To make a long story short, I did it.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓓ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ는 Last year가 문장의 주어이고 그 동사가 was이므로 맞다(부사구로 착각하기 쉬운 함정이다). ⓒ begin은 to부정사를 목적어로 취할 수 있고, ⓓ는 지각동사 heard의 목적격 보어로 쓰인 현재분사이다. ⓑ 전치사 before 뒤에는 동명사 graduating이 와야 하고, ⓔ 목소리가 '말하면서' 커지는 능동 관계이므로 분사구문 saying이 되어야 한다. ⓕ decide는 to부정사를 목적어로 취하므로 to sign up으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dcf7da8dbc",
+"typeId": "eng-h1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhat does it mean to be brave? There is no single definition, but everyone is brave in their own way. Here are three young people (A)[sharing / shared] their bravest moments in life.\n\nJason\n... I immediately called 911 and explained the situation. The operator asked me to perform CPR on the clerk (B)[until / by] the paramedics arrived. I was scared, but I remembered learning CPR at school. I started to push down on his chest, hoping that I was doing it right. A few minutes later, the paramedics rushed in and took over the situation. Luckily, the clerk regained consciousness. After (C)[putting / put] the clerk in the ambulance, the paramedics said \"Thank you for being brave. You did a wonderful job.\"\n\n(A) (B) (C)",
+"choices": [
+"sharing - until - putting",
+"sharing - by - putting",
+"shared - until - put",
+"shared - by - putting",
+"sharing - until - put"
+],
+"answer": "①",
+"solution": "(A) 문장의 동사는 are이고, 세 명의 젊은이가 경험을 '공유하는' 능동 관계이므로 three young people을 꾸미는 현재분사 sharing이 맞다. (B) 뒤에 '주어+동사'로 된 절이 오고 '~할 때까지 계속'이라는 뜻이므로 접속사 until을 쓴다. by는 전치사라서 절을 이끌 수 없다. (C) 전치사 After의 목적어 자리이므로 동명사 putting이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-86e8fb6aba",
+"typeId": "eng-h1-b05-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhen I went outside, I was (A)[greeting / greeted] by the camp supervisor, Henry. At the conservancy, several impalas were (B)[waiting / waited] to welcome us. The camp house was (C)[making / made] of stone and olive wood.\n\n(A)          (B)          (C)",
+"choices": [
+"① greeting – waiting – made",
+"② greeted – waiting – made",
+"③ greeted – waited – made",
+"④ greeted – waiting – making",
+"⑤ greeting – waited – making"
+],
+"answer": "②",
+"solution": "(A) 주어 I가 인사를 '받는' 대상이므로 수동태 be동사 뒤에는 과거분사 greeted가 맞다. (B) impalas가 스스로 '기다리는' 능동 동작이고 진행을 나타내므로 were waiting이 옳다. (C) '~로 만들어지다'는 be made of로 쓰는 수동 표현이므로 made가 맞다. 따라서 greeted – waiting – made인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7b03886729",
+"typeId": "eng-h1-b05-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAt the National Museum, I became (A)[amazing / amazed] by the rich heritage of Kenya. The pattern of spots on a giraffe (B)[is / are] unique, just like the human fingerprint. We headed to the Kigio Wildlife Conservancy (C)[which / where] we would begin our volunteer work.\n\n(A)          (B)          (C)",
+"choices": [
+"① amazing – is – where",
+"② amazed – is – which",
+"③ amazed – is – where",
+"④ amazed – are – where",
+"⑤ amazing – are – which"
+],
+"answer": "③",
+"solution": "(A) 주어 I가 '놀라움을 느끼는' 감정의 주체이므로 과거분사 amazed가 맞다(became amazed by ~). (B) 주어의 핵은 The pattern(단수)이고 on a giraffe는 수식어구이므로 단수동사 is가 옳다. (C) 뒤에 we would begin our volunteer work라는 완전한 절이 오고 선행사가 장소(Conservancy)이므로 관계부사 where가 맞다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b42cf2cde8",
+"typeId": "eng-h1-b05-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 모두 골라 바르게 짝지은 것은?\n\nToday my group drove out to the field ⓐto search for illegal animal traps. Some traps were ⓑhiding in the bushes and others were attached to fences. Every time we found a trap, we ⓒwere saving the life of an animal. For dinner, we had chapati, ⓓwhich is one of the most popular Kenyan dishes. ⓔWatch the stars while listening to the sounds of wild animals in the distance was such an unreal experience.",
+"choices": [
+"① ⓐ, ⓑ",
+"② ⓑ, ⓒ",
+"③ ⓑ, ⓔ",
+"④ ⓐ, ⓓ",
+"⑤ ⓒ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ는 '~하기 위해'라는 목적을 나타내는 부사적 용법의 to부정사로 적절하다. ⓑ traps는 사람이 '숨겨 둔' 대상이므로 수동이 되어야 하여 hiding을 hidden으로 고쳐야 어색하다. ⓒ는 과거 반복 상황을 나타내는 과거진행으로 문제없다. ⓓ는 선행사 chapati를 보충 설명하는 계속적 용법의 which로 옳다. ⓔ는 문장의 주어 자리이므로 동사원형 Watch가 아니라 동명사 Watching이어야 한다. 따라서 어색한 것은 ⓑ와 ⓔ, 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-58cd037722",
+"typeId": "eng-h1-b05-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAt first glance, this painting looks like nothing more than a simple portrait of a woman in a white cap. For a long time, no one imagined that anything else lay beneath it. However, when the National Galleries of Scotland examined the work with an X-ray in 2022, they found a hidden self-portrait of Vincent van Gogh on the back of the canvas. Because he was poor, Van Gogh often reused his canvases, painting on both sides to save money. Thanks to modern technology, the world was finally able to see this hidden face.",
+"choices": [
+"Why Van Gogh Painted on Both Sides of His Canvases",
+"A Hidden Van Gogh Revealed by X-Ray Technology",
+"The Woman in the White Cap: Van Gogh's Muse",
+"How the National Galleries of Scotland Was Founded",
+"The Financial Struggles of Vincent van Gogh"
+],
+"answer": "②",
+"solution": "글은 평범해 보이던 그림을 X선으로 조사해 반 고흐의 숨은 자화상을 발견했다는 내용이 중심입니다. 기술(X선)이 숨겨진 그림을 드러냈다는 점이 핵심이므로 제목은 ②가 알맞습니다. ①⑤는 본문에 언급되지만 세부 사항일 뿐이고, ③④는 중심 내용이 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-efe07bde2f",
+"typeId": "eng-h1-b05-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nRembrandt's masterpiece The Night Watch was cut on all four sides in 1715 so that it would fit on a wall in Amsterdam's town hall. For over three centuries, the missing parts were lost. Recently, however, a museum used artificial intelligence to bring them back. The AI program learned Rembrandt's painting style and studied a copy of the original work made before it was trimmed. Then it recreated the missing pieces, which were placed around the painting. For the first time in three hundred years, people can see The Night Watch as Rembrandt first intended.",
+"choices": [
+"The Dangers of Trusting AI with Famous Artworks",
+"AI Brings the Complete Night Watch Back to Life",
+"Why Rembrandt Left The Night Watch Unfinished",
+"The History of Amsterdam's Town Hall",
+"How Museums Choose Which Paintings to Display"
+],
+"answer": "②",
+"solution": "잘려 사라졌던 「야경」의 부분을 AI가 화가의 화풍과 원작 사본을 학습해 복원했다는 내용입니다. 인공지능이 그림을 원래 모습으로 되살렸다는 것이 요지이므로 ②가 맞습니다. ①은 글의 긍정적 태도와 반대이고, ③은 사실과 다르며 ④⑤는 지엽적입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-407c4b14d3",
+"typeId": "eng-h1-b05-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nUsing scientific analysis, researchers studied the layers of Leonardo da Vinci's Lady with an Ermine. They found that the first version had no animal at all — just a woman alone. In a later version, a small gray ermine appeared, and in the final version the ermine grew larger and turned white. No one knows exactly why Da Vinci added the animal. Perhaps he wished to honor his patron, or perhaps he simply wanted the work to look more special. Whatever the reason, it is clear that even a great master changed his painting again and again.",
+"choices": [
+"the symbolic meaning of ermines in Renaissance art",
+"the identity of the woman in Lady with an Ermine",
+"the stages in which Da Vinci repeatedly revised his painting",
+"the scientific tools used to clean old paintings",
+"the friendship between Da Vinci and his patron"
+],
+"answer": "③",
+"solution": "그림을 세 단계(동물 없음 → 작은 회색 담비 → 커지고 흰색으로 변함)로 나누어 다빈치가 여러 번 수정했음을 설명하는 글입니다. 따라서 주제는 반복 수정의 단계인 ③입니다. 담비를 더한 이유는 '아무도 모른다'고 했으므로 ①⑤는 주제가 될 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bebb52a1d2",
+"typeId": "eng-h1-b05-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nFor centuries, people believed that a painting was exactly what it appeared to be. We admired its colors, shapes, and the visible beauty an artist chose to show. Today, however, science tells a different story. X-rays have uncovered a self-portrait of Van Gogh hidden behind another work, analysis of layers has shown how Da Vinci reshaped Lady with an Ermine over and over, and artificial intelligence has restored the missing parts of Rembrandt's The Night Watch. In each case, tools that once seemed to have nothing to do with art have let us see beyond the surface. Science, far from being the enemy of art, has become a new way of understanding it.",
+"choices": [
+"scientific errors that have damaged famous paintings",
+"the rivalry between modern scientists and classical artists",
+"how science uncovers hidden truths and deepens our understanding of art",
+"the reasons great artists chose to hide messages in their works",
+"the growing market value of paintings analyzed by new technology"
+],
+"answer": "③",
+"solution": "반 고흐·다빈치·렘브란트의 세 사례를 묶어, 예술과 무관해 보이던 과학이 표면 너머의 사실을 드러내고 예술에 대한 이해를 넓혀 준다는 것이 글 전체의 주제입니다. 따라서 ③이 알맞습니다. ④는 '화가가 의도적으로 메시지를 숨겼다'는 뜻이라 글(과학이 드러낸다)과 다르고, ①②는 글의 우호적 결론(과학은 예술의 적이 아니다)과 어긋나며 ⑤는 언급이 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f2865d3141",
+"typeId": "eng-h1-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nImagine you walk into a store to buy a backpack. The first backpack you see costs $120, but you had planned to spend no more than $60. A little later, you find a similar backpack priced at $80. Even though $80 is still more than you wanted to pay, it now feels like a reasonable price. This happens because the first price you saw works as an anchor, shaping how you judge the prices that follow. Stores often rely on this anchoring effect to make their products seem more affordable.",
+"choices": [
+"The shopper had planned to spend no more than $60 on a backpack.",
+"The first backpack the shopper saw was priced at $120.",
+"The second backpack cost $80, which was still above the shopper's budget.",
+"The shopper felt that the $80 backpack was unreasonably expensive.",
+"The first price acts as an anchor that affects later price judgments."
+],
+"answer": "④",
+"solution": "글에서 $80 가방은 예산을 넘지만 ‘이제는 합리적인 가격처럼 느껴진다(feels like a reasonable price)’고 했다. 따라서 ‘지나치게 비싸게 느꼈다’는 ④는 본문과 반대이므로 일치하지 않는다. 나머지 선지는 본문의 금액·예산·앵커 설명과 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-40e735547b",
+"typeId": "eng-h1-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn a subway station in Stockholm, the ordinary staircase was transformed into a giant musical keyboard. Each step plays a musical note when someone steps on it. Thanks to this playful change, the number of people who chose the stairs instead of the escalator rose by 66 percent. Many commuters who usually rode the escalator started climbing the stairs out of curiosity. This idea is based on nudge theory, which shows how small changes in the environment can guide people's behavior in a positive direction.",
+"choices": [
+"The staircase in the Stockholm station was turned into a musical keyboard.",
+"Each step produces a musical note when someone steps on it.",
+"The number of people taking the stairs increased by 66 percent.",
+"People who usually took the escalator began using the stairs out of curiosity.",
+"Nudge theory forces people to change their behavior through strict rules."
+],
+"answer": "⑤",
+"solution": "넛지 이론은 ‘환경의 작은 변화(small changes)’가 사람의 행동을 긍정적인 방향으로 ‘이끈다(guide)’고 설명한다. 강한 규칙으로 ‘강제한다(force, strict rules)’는 ⑤는 본문과 어긋나므로 일치하지 않는다. ①~④는 계단 개조·음표·66% 증가·호기심 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a0086adfba",
+"typeId": "eng-h1-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nMany companies take advantage of the endowment effect in their marketing. For instance, streaming services often give customers a free trial. Once people use the service, they begin to feel as if they own it, even though the trial is only temporary. As a result, they value it more and are willing to pay to keep using it. A free-return policy works in a similar way. A store may allow you to return a product within 30 days for a full refund. This sounds like a safe deal, but once you own the item, you are unlikely to actually return it.",
+"choices": [
+"Companies use the endowment effect as a marketing strategy.",
+"During a free trial, customers start to feel a sense of ownership.",
+"Customers who use a free trial tend to value the service more.",
+"A free-return policy usually makes customers return items more often.",
+"A store may offer a full refund if a product is returned within 30 days."
+],
+"answer": "④",
+"solution": "본문은 무료 반품 정책이 있어도 일단 소유하면 ‘실제로 반품할 가능성이 낮다(unlikely to return)’고 했다. 따라서 반품을 ‘더 자주 하게 만든다’는 ④는 본문과 반대이므로 일치하지 않는다. 나머지는 무료 체험·소유감·가치 상승·30일 환불 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f59c26a5cf",
+"typeId": "eng-h1-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn an experiment, one group of students received a coffee mug, while a second group received a chocolate bar. Both groups were told they were free to exchange their items. A third group was given nothing and was asked to choose between a chocolate bar and a coffee mug. This third group showed no clear preference—about half picked the mug and half picked the chocolate bar. Based on this, researchers expected that roughly half of the first two groups would also want to trade. Surprisingly, only about 10 percent actually chose to exchange their items. People simply value things more once they own them.",
+"choices": [
+"Students in the first group were given a coffee mug, and those in the second group a chocolate bar.",
+"Both the first and second groups were allowed to trade their items if they wanted.",
+"The third group clearly preferred the coffee mug over the chocolate bar.",
+"Researchers had expected about half of the first two groups to trade.",
+"In reality, only about 10 percent of the students traded their items."
+],
+"answer": "③",
+"solution": "세 번째 그룹은 ‘뚜렷한 선호가 없었고(no clear preference)’ 절반씩 머그와 초콜릿을 골랐다. 따라서 머그를 ‘분명히 더 선호했다’는 ③은 본문과 일치하지 않는다. 지급 품목·교환 허용·예상치 절반·실제 10%는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-63fcb2d6ab",
+"typeId": "eng-h1-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nIn 2010, Steve Jobs introduced the tablet computer. During his presentation, he told the audience, “We're going to price it under a thousand dollars,” and most people assumed this meant $999. He then spent time explaining the tablet's features and why it was worth buying. Finally, he announced, “The pricing starts not at $999, but at just $499.” The audience cheered, and the tablet suddenly felt affordable. By placing the $999 figure in people's minds first, Jobs made the $499 price seem far cheaper. This is the anchoring effect, which works because people tend to rely on the first piece of information they receive.",
+"choices": [
+"In what year did Steve Jobs introduce the tablet computer?",
+"What price did most people assume when Jobs said “under a thousand dollars”?",
+"What was the actual starting price that Jobs announced for the tablet?",
+"How many tablets were sold after Jobs's presentation?",
+"Why does the anchoring effect work on people?"
+],
+"answer": "④",
+"solution": "본문에는 출시 연도(2010), 사람들이 예상한 금액($999), 실제 시작 가격($499), 앵커링 효과가 작동하는 이유(첫 정보에 의존)가 모두 제시되어 있다. 그러나 발표 후 ‘판매된 태블릿 수량’은 언급되지 않으므로 ④는 답할 수 없는 질문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5bad7c6f0a",
+"typeId": "eng-h1-b05-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nLook at two pairs of sneakers. Both are sold for $50, but the way their prices are shown is different. The first pair simply has a $50 tag. The second pair shows an original price of $80 crossed out, with $50 marked as the sale price. Even though the two pairs cost exactly the same, people are more strongly drawn to the second pair. This is because the crossed-out original price serves as an anchor, making the $50 price look like a much better deal. For this reason, many stores use price anchoring to encourage customers to buy.",
+"choices": [
+"The two pairs of sneakers are sold at the same price of $50.",
+"Only the second pair displays a crossed-out original price of $80.",
+"People are more attracted to the first pair because it looks cheaper.",
+"The crossed-out original price works as an anchor that makes the sale price seem more attractive.",
+"Many stores use price anchoring to encourage purchases."
+],
+"answer": "③",
+"solution": "두 신발은 모두 $50로 가격이 같지만, 사람들은 할인 표시가 된 ‘두 번째’ 신발에 더 끌린다고 했다. 따라서 ‘첫 번째가 더 싸 보여서 더 끌린다’는 ③은 본문과 반대이므로 일치하지 않는다. 가격 동일·$80 취소선·앵커 작용·가게의 전략은 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1559cd7174",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nOlivia\nI dreamed of being an Olympic track and field athlete. My room was full of medals and awards from races I had competed in. During the national 100-meter championship race, however, my Olympic dreams came to a sudden end. I was about to take the lead in the race when I suddenly felt a pain in my knee. I fell to the ground and had to be carried off the track. At first, I didn't think much of the injury. I thought I would get better soon. But the test results from the hospital were not hopeful. The doctors said my knee injury would prevent me from running again. Every night, I had flashbacks of my injury. I could not watch sports anymore because it was just too painful. So I shut out everything related to sports from my life. Two years passed and I was still trying to get used to my ordinary high school life without sports. Then one day, I came across an interesting university major called sports medicine. It deals with the treatment and prevention of sports injuries. A light bulb went on in my head. This was my chance to stop running away from my problems and fears. So I made up my mind and applied to this major. Today, thanks to my brave decision, I am studying to be a star on the sidelines instead of on the playing field.",
+"choices": [
+"Olivia won a gold medal at the national 100-meter championship.",
+"Olivia's knee injury put an end to her dream of becoming an Olympic athlete.",
+"Olivia fully recovered from her injury after two years of treatment.",
+"Olivia kept watching sports to cheer herself up after the injury.",
+"Olivia chose physical education as her university major to become a coach."
+],
+"answer": "②",
+"solution": "본문에서 무릎 부상으로 올림픽의 꿈이 갑자기 끝났다고 했으므로 ②가 일치한다. 100m 대회에서 메달을 땄다는 내용은 없고, 의사는 다시 달릴 수 없을 것이라 했으므로 ①③은 틀리다. 부상 후 스포츠를 볼 수 없었고 전공은 sports medicine이므로 ④⑤도 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fe114053ba",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nJason\nOne evening, I went to a convenience store to buy some snacks. No one was at the counter, so I thought the clerk was working in the back. The telephone started ringing, but no one came to answer it. I felt something was wrong. I looked over the counter and saw the clerk lying on the floor. I immediately called 911 and explained the situation. The operator asked me to perform CPR on the clerk until the paramedics arrived. I was scared, but I remembered learning CPR at school. I started to push down on his chest, hoping that I was doing it right. A few minutes later, the paramedics rushed in and took over the situation. Luckily, the clerk regained consciousness. After putting the clerk in the ambulance, the paramedics said \"Thank you for being brave. You did a wonderful job.\" It felt great to help save someone's life!",
+"choices": [
+"Jason visited the store to meet the clerk he knew well.",
+"The clerk quickly answered the ringing telephone.",
+"Jason performed CPR on the clerk as the operator instructed.",
+"Jason had never learned how to perform CPR before.",
+"The clerk unfortunately did not regain consciousness."
+],
+"answer": "③",
+"solution": "전화를 받는 사람이 없었고 Jason이 간식을 사러 간 것이므로 ①②는 틀리다. 그는 학교에서 배운 CPR을 기억해 교환원의 요청대로 흉부를 눌렀으므로 ③이 일치하고 ④는 틀리다. 점원은 의식을 되찾았으므로 ⑤도 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9fd50ce060",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nYuna\nEver since I was young, I have admired great public speakers. I hoped to inspire and move audiences like them someday. But every time I had a chance to speak in front of people, I would get scared. I didn't want to make a fool of myself. This fear kept me behind the stage rather than on it. That's why I never entered the annual speech contest at my school. I really wanted to, but I just didn't have enough courage. Last year, however, was my final chance before graduating from high school. When I saw the poster on the class board, my mind began to fill with thoughts of the school speech contest. I heard a voice growing louder in my head, saying \"Go for it!\" I decided to sign up for the contest. To make a long story short, I did it. I delivered my speech to the entire school. How did I do? Honestly, I don't remember much from the contest because I was so nervous. But my act of courage taught me a valuable lesson: I can do anything that I put my mind to.",
+"choices": [
+"Yuna had admired great public speakers since she was young.",
+"For years Yuna avoided the school speech contest because of fear.",
+"Last year was Yuna's last chance to enter the contest before graduating.",
+"Yuna remembered her speech clearly because she stayed perfectly calm.",
+"Yuna learned that she could accomplish anything she set her mind to."
+],
+"answer": "④",
+"solution": "Yuna는 너무 긴장해서 대회에 대한 기억이 많이 나지 않는다고 했으므로 ④는 본문과 일치하지 않는다. 어릴 때부터 연설가를 동경했고, 두려움 때문에 여러 해 대회에 나가지 못했으며, 작년이 마지막 기회였고, 마음먹으면 무엇이든 할 수 있다는 교훈을 얻었으므로 ①②③⑤는 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-831df49dd0",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nJason\nOne evening, I went to a convenience store to buy some snacks. No one was at the counter, so I thought the clerk was working in the back. The telephone started ringing, but no one came to answer it. I felt something was wrong. I looked over the counter and saw the clerk lying on the floor. I immediately called 911 and explained the situation. The operator asked me to perform CPR on the clerk until the paramedics arrived. I was scared, but I remembered learning CPR at school. I started to push down on his chest, hoping that I was doing it right. A few minutes later, the paramedics rushed in and took over the situation. Luckily, the clerk regained consciousness. After putting the clerk in the ambulance, the paramedics said \"Thank you for being brave. You did a wonderful job.\" It felt great to help save someone's life!",
+"choices": [
+"Why did Jason go to the convenience store?",
+"What made Jason feel that something was wrong?",
+"How many days did the clerk have to stay in the hospital?",
+"What did the operator ask Jason to do?",
+"How did Jason feel after helping save someone's life?"
+],
+"answer": "③",
+"solution": "Jason이 점원을 구급차에 태운 뒤의 입원 기간은 본문에 전혀 언급되지 않으므로 ③은 답할 수 없다. 간식을 사러 갔고(①), 전화를 아무도 받지 않아 이상함을 느꼈으며(②), 교환원이 CPR을 요청했고(④), 마지막에 뿌듯함을 느꼈다(⑤)는 내용은 본문에서 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2a5371d834",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOlivia\nI dreamed of being an Olympic track and field athlete. My room was full of medals and awards from races I had competed in. During the national 100-meter championship race, however, my Olympic dreams came to a sudden end. I was about to take the lead in the race when I suddenly felt a pain in my knee. I fell to the ground and had to be carried off the track. At first, I didn't think much of the injury. I thought I would get better soon. But the test results from the hospital were not hopeful. The doctors said my knee injury would prevent me from running again. Every night, I had flashbacks of my injury. I could not watch sports anymore because it was just too painful. So I shut out everything related to sports from my life. Two years passed and I was still trying to get used to my ordinary high school life without sports. Then one day, I came across an interesting university major called sports medicine. It deals with the treatment and prevention of sports injuries. A light bulb went on in my head. This was my chance to stop running away from my problems and fears. So I made up my mind and applied to this major. Today, thanks to my brave decision, I am studying to be a star on the sidelines instead of on the playing field.",
+"choices": [
+"Olivia's room was filled with medals and awards from the races she ran.",
+"Olivia felt a pain in her knee just as she was about to take the lead.",
+"The doctors told Olivia that she would be able to run again after proper treatment.",
+"One day Olivia came across a university major called sports medicine.",
+"Olivia is now studying to shine on the sidelines rather than as an athlete."
+],
+"answer": "③",
+"solution": "의사들은 무릎 부상 때문에 다시 달릴 수 없을 것(prevent me from running again)이라고 말했으므로, 치료 후 다시 달릴 수 있다고 한 ③은 본문과 일치하지 않는다. 나머지 ①②④⑤는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-834985da0f",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글(Olivia, Jason)의 내용과 일치하지 않는 것은?\n\nOlivia\nI dreamed of being an Olympic track and field athlete. My room was full of medals and awards from races I had competed in. During the national 100-meter championship race, however, my Olympic dreams came to a sudden end. I was about to take the lead in the race when I suddenly felt a pain in my knee. I fell to the ground and had to be carried off the track. At first, I didn't think much of the injury. I thought I would get better soon. But the test results from the hospital were not hopeful. The doctors said my knee injury would prevent me from running again.\n\nJason\nOne evening, I went to a convenience store to buy some snacks. No one was at the counter, so I thought the clerk was working in the back. The telephone started ringing, but no one came to answer it. I felt something was wrong. I looked over the counter and saw the clerk lying on the floor. I immediately called 911 and explained the situation. The operator asked me to perform CPR on the clerk until the paramedics arrived. I was scared, but I remembered learning CPR at school. I started to push down on his chest, hoping that I was doing it right. Luckily, the clerk regained consciousness.",
+"choices": [
+"Olivia initially underestimated how serious her knee injury was.",
+"The hospital results gave Olivia little hope about her recovery.",
+"Jason assumed the clerk was in the back because no one was at the counter.",
+"Jason stayed confident and calm while he was performing CPR on the clerk.",
+"Both Olivia and Jason went through a distressing moment that is described in each story."
+],
+"answer": "④",
+"solution": "Jason은 두려웠지만(I was scared) 제대로 하고 있기를 바라며 CPR을 했으므로, 침착하고 자신 있었다는 ④는 일치하지 않는다. Olivia는 처음에 부상을 대수롭지 않게 여겼고(①) 병원 결과가 희망적이지 않았으며(②), Jason은 카운터가 비어 점원이 뒤에 있다고 생각했다(③). 두 사람 모두 힘든 순간을 겪었다는 ⑤도 본문과 부합한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-95f3d47b90",
+"typeId": "eng-h1-b05-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 통해 Yuna에 대해 추론할 수 있는 내용으로 가장 적절한 것은?\n\nYuna\nEver since I was young, I have admired great public speakers. I hoped to inspire and move audiences like them someday. But every time I had a chance to speak in front of people, I would get scared. I didn't want to make a fool of myself. This fear kept me behind the stage rather than on it. That's why I never entered the annual speech contest at my school. I really wanted to, but I just didn't have enough courage. Last year, however, was my final chance before graduating from high school. When I saw the poster on the class board, my mind began to fill with thoughts of the school speech contest. I heard a voice growing louder in my head, saying \"Go for it!\" I decided to sign up for the contest. To make a long story short, I did it. I delivered my speech to the entire school. How did I do? Honestly, I don't remember much from the contest because I was so nervous. But my act of courage taught me a valuable lesson: I can do anything that I put my mind to.",
+"choices": [
+"Yuna had won several school speech contests before last year.",
+"Yuna's fear of speaking in public disappeared completely during the contest.",
+"For Yuna, the courage to try mattered more than how well she actually performed.",
+"Yuna decided to stop speaking in public after she graduated from high school.",
+"Yuna entered the contest only because her teacher strongly pushed her to do so."
+],
+"answer": "③",
+"solution": "Yuna는 대회 내용을 잘 기억하지 못할 만큼 긴장했지만 '용기를 낸 행동'에서 값진 교훈을 얻었다고 했으므로, 성과보다 도전한 용기를 중시했다는 ③이 가장 적절한 추론이다. 그녀는 한 번도 대회에 나간 적이 없었고(①), 여전히 긴장했으며(②), 스스로 신청했고(⑤), 이후 포기했다는 근거는 없다(④).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cb594d48aa",
+"typeId": "eng-h1-b05-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSocial media algorithms play a big role in our lives. They decide which content (A)[shows / is shown] to us. Algorithms also show us stories related to topics (B)[what / that] we've clicked on. They allow us to spend less time (C)[to search / searching] for the information we need.\n\n(A)          (B)          (C)",
+"choices": [
+"① is shown  /  that  /  searching",
+"② is shown  /  what  /  searching",
+"③ is shown  /  that  /  to search",
+"④ shows  /  that  /  searching",
+"⑤ shows  /  what  /  to search"
+],
+"answer": "①",
+"solution": "(A) content가 보여지는 대상이므로 수동태 is shown이 맞다. (B) 선행사 topics가 clicked on의 목적어이므로 관계대명사 that(목적격)을 쓴다. 선행사가 있으므로 what은 쓸 수 없다. (C) 'spend+시간+-ing(동명사)' 구문이므로 searching이 맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5fcd69314e",
+"typeId": "eng-h1-b05-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAlgorithms remember the brands we looked at in the past. They prevent us from discovering information (A)[that / what] offers a different point of view. This causes us (B)[to have / having] information bias. It is a bad idea (C)[depending / to depend] on social media for all of our information.\n\n(A)          (B)          (C)",
+"choices": [
+"① that  /  to have  /  to depend",
+"② what  /  to have  /  depending",
+"③ that  /  having  /  to depend",
+"④ what  /  having  /  depending",
+"⑤ that  /  to have  /  depending"
+],
+"answer": "①",
+"solution": "(A) 선행사 information을 수식하며 뒤에 동사 offers의 주어가 빠져 있으므로 주격 관계대명사 that을 쓴다(선행사가 있어 what 불가). (B) 'cause+목적어+to부정사' 구문이므로 to have가 맞다. (C) 'It is a bad idea to부정사'의 가주어-진주어 구문이므로 to depend가 맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0e101d9a2e",
+"typeId": "eng-h1-b05-u6m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThere is a lot of information available on social media. If algorithms (A)[do not / did not] exist, we would have a harder time searching for what we want. Fake news spreads rapidly through algorithms and (B)[impact / impacts] our society. Sometimes it feels like algorithms know us better than we (C)[do / are].\n\n(A)          (B)          (C)",
+"choices": [
+"① did not  /  impacts  /  do",
+"② did not  /  impact  /  do",
+"③ do not  /  impacts  /  are",
+"④ did not  /  impacts  /  are",
+"⑤ do not  /  impact  /  do"
+],
+"answer": "①",
+"solution": "(A) 주절이 would have인 현재 사실의 반대를 가정하는 가정법 과거이므로 if절에 did not exist를 쓴다. (B) 주어 Fake news가 단수 취급되므로 impacts가 맞다. (C) 앞의 일반동사 know를 대신하는 대동사가 필요하므로 do를 쓴다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u6m1s0t0",
+"custom": true
 }
 ]

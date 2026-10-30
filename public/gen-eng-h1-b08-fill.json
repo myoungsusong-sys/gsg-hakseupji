@@ -3345,5 +3345,265 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b08-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-e24626496c",
+"typeId": "eng-h1-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하는 것은?\n\nW: Suho, what's up? It seems you have the blues today.\nB: What? Can you say that again?\nW: I said, \"You have the blues.\"\nB: Well, what does \"having the blues\" mean?\nW: It means that you look depressed. Is something bothering you?\nB: Oh, I see. Yes. I deleted the science homework file that I was working on by mistake. I'm so upset.\nW: That's terrible. You spent a lot of time on your project. I'm so sorry to hear that.\nB: Yeah, I'm really feeling down about it.",
+"choices": [
+"① Suho is happy because he finished his science project.",
+"② The woman used \"have the blues\" to say that Suho looked depressed.",
+"③ Suho asked the woman to help him with his science homework.",
+"④ Suho lost his homework file because his computer broke down.",
+"⑤ The woman didn't know the meaning of \"having the blues.\""
+],
+"answer": "②",
+"solution": "여자는 'have the blues'가 '우울해 보인다(look depressed)'는 뜻이라고 설명하므로 ②가 일치한다. 수호는 과제 파일을 실수로 지워서 속상해하고 있으므로 ①, ④는 틀리다. 수호가 숙제를 도와 달라고 한 적은 없고(③), 관용어의 뜻을 몰랐던 사람은 여자가 아니라 수호이다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3e90b3f328",
+"typeId": "eng-h1-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 광고의 내용과 일치하지 않는 것은?\n\nWhen you're struggling to communicate while traveling, it can be frustrating, right? Even if you've repeated \"Can you say that again?\" several times and still find English hard to understand, give our app Silver Lining Talk a try. Just like the shining sun of hope on a cloudy day, it will be your best friend when you need it the most. It can translate multiple languages and make it easy to understand various cultural expressions. Install it now!",
+"choices": [
+"① It is for people who have trouble communicating while traveling.",
+"② The app is compared to the shining sun on a cloudy day.",
+"③ The app can translate only one language.",
+"④ The app helps users understand various cultural expressions.",
+"⑤ The ad encourages readers to install the app."
+],
+"answer": "③",
+"solution": "광고에서 이 앱은 'multiple languages(여러 언어)'를 번역할 수 있다고 했으므로, 한 가지 언어만 번역한다는 ③이 일치하지 않는다. 나머지 선지는 모두 광고 내용과 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-7638ac53ce",
+"typeId": "eng-h1-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 있는 질문은?\n\nGreek legend tells of the Gordian Knot, which was tied by a king named Gordius. The knot was so complex that no one was able to untie it. A prophet said whoever could untie the knot would become the ruler of Asia. For hundreds of years, people unsuccessfully tried to untie the knot. Then, Alexander the Great came along. He tried to untie it, and it just got tighter. After thinking for a while, he drew his sword and cut the knot in half! Everyone was shocked because that was not what they had expected. He explained, \"It doesn't matter how the knot was untied. The important thing is that it's undone.\" From that day on, the idiom \"cutting the Gordian knot\" has been commonly used to describe a simple solution to a complex problem.",
+"choices": [
+"① What was the Gordian Knot made of?",
+"② Where was the Gordian Knot kept?",
+"③ Who tied the Gordian Knot?",
+"④ How many people tried to untie the knot before Alexander?",
+"⑤ How many minutes did Alexander think before he cut the knot?"
+],
+"answer": "③",
+"solution": "글의 첫 문장에서 매듭은 Gordius라는 왕이 묶었다고 했으므로 ③에는 답할 수 있다. 매듭의 재료(①), 보관 장소(②), 시도한 사람 수(④)는 글에 나오지 않는다. ⑤는 'After thinking for a while'이라고만 했을 뿐 몇 분인지는 알 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8d61a9e1fd",
+"typeId": "eng-h1-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것은?\n\nHave a pig!\nWhen your German friend says \"Have a pig!\" to you, it's a way of wishing you good luck. The saying dates back to the Middle Ages, when farmers who could raise many pigs were considered wealthy. Therefore, as New Year's Eve approaches, people in Germany give each other candies in a pig shape as a way to wish each other good luck in the coming year.\n\nTo ride an elephant to catch a grasshopper\nIn Thailand, when people say \"You're riding an elephant to catch a grasshopper,\" they mean that you're putting in a tremendous amount of effort for a very small reward. It's quite simple to understand. Imagine trying to catch a tiny grasshopper by riding a massive elephant — it's a huge effort for a tiny result.\n\nTo feed the donkey sponge cake\nIn Portugal, there's a saying: \"Don't feed the donkey sponge cake.\" This expression emphasizes the idea of not giving valuable things to those who don't appreciate or deserve them. It's pretty simple — donkeys are perfectly happy with carrots and sugar, so there's no need to give them your sponge cake!\n\nTo let a frog out of your mouth\nIn Finland, if you say the wrong thing, you're \"letting a frog out of your mouth\"! That makes sense since spitting a frog at someone is generally a bad idea. Finland is considered one of the greenest countries on earth, so it should be no surprise that the Finns enjoy nature idioms.",
+"choices": [
+"① In the Middle Ages, farmers who raised many pigs were considered poor.",
+"② Germans give each other pig-shaped candies as Christmas approaches.",
+"③ The Thai idiom describes putting in little effort for a big reward.",
+"④ The Portuguese saying advises against giving valuable things to those who don't appreciate them.",
+"⑤ The Finns enjoy nature idioms because there are many frogs in Finland."
+],
+"answer": "④",
+"solution": "포르투갈 속담은 가치를 알아보지 못하거나 받을 자격이 없는 이에게 귀한 것을 주지 말라는 뜻이므로 ④가 일치한다. 중세에 돼지를 많이 키운 농부는 부유하다고 여겨졌다(①). 돼지 모양 사탕은 크리스마스가 아니라 New Year's Eve가 다가올 때 주고받는다(②). 태국 속담은 작은 보상을 위해 엄청난 노력을 들인다는 뜻이라 ③은 내용이 거꾸로다. 핀란드 사람들이 자연 관용어를 즐기는 이유는 개구리가 많아서가 아니라 핀란드가 가장 푸른 나라 중 하나로 여겨지기 때문이다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-40a64ac48d",
+"typeId": "eng-h1-b08-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nWalking around the area we were staying in, I couldn’t help but notice several signs along the streets that read, “TO LET.” At first, I assumed that these signs were missing the letter “I”, and that the UK was incredibly toilet friendly. I excitedly shared my thoughts with my brother, mentioning that it seemed like London had many public restrooms. He explained that “TO LET” actually means “for rent” in British English. It was one of the funny moments that left us all laughing!",
+"choices": [
+"the high cost of renting a house in London",
+"a funny misunderstanding of a British English sign",
+"the large number of public restrooms in London",
+"spelling differences between British and American English",
+"the importance of asking locals for help when traveling"
+],
+"answer": "②",
+"solution": "글쓴이는 거리 표지판의 “TO LET”을 ‘TOILET’에서 I가 빠진 것으로 착각했지만, 실제로는 영국 영어에서 ‘임대’를 뜻한다는 것을 알고 함께 웃었다. 따라서 주제는 ‘영국 영어 표지판에 대한 재미있는 오해’인 ②이다. ③은 글쓴이가 착각해서 한 생각일 뿐이고, ①④⑤는 글에서 다루지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7bf3de9c2f",
+"typeId": "eng-h1-b08-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nNo vacation lasts forever, and I eventually had to return to Korea. I enjoyed every aspect of my London trip. What I liked most about London was the variety. From exploring the historical bookstore to experiencing the magic of musical theater, there was something for everyone in my family to enjoy. London has truly captured our hearts, and I can’t wait to visit more of London’s most interesting places.",
+"choices": [
+"여행 기간이 짧을수록 여행의 즐거움은 더 커진다.",
+"런던에 가면 역사적인 서점을 반드시 방문해야 한다.",
+"즐길 거리가 다양했던 런던 여행에 가족 모두가 만족했다.",
+"가족 여행에서는 구성원 각자의 취향을 맞추기 어렵다.",
+"뮤지컬 관람은 외국어 실력을 키우는 데 도움이 된다."
+],
+"answer": "③",
+"solution": "글쓴이는 런던의 가장 좋았던 점으로 ‘다양성(variety)’을 꼽으면서 가족 모두가 즐길 거리가 있었다고 말한다. 또 런던이 마음을 사로잡았다며 다시 방문하고 싶다고 했으므로 요지는 ③이다. ②는 예시로 든 세부 내용이고, ④는 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ed79314403",
+"typeId": "eng-h1-b08-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nToday was a special day dedicated to my parents. We decided to drop by one of the oldest and most stunning bookstores in London, known for its classic charm. My dad loves books, and it was a place which he had always wanted to explore. We were not disappointed. It was built during the Edwardian era and had three floors made of wood. The best part was how much natural light flooded in, making it even more beautiful. This place was heaven for my dad. His eyes shone with delight as he looked through the shelves. My dad purchased a biography of Churchill for himself and cotton bags, well-known among Londoners, for our entire family.",
+"choices": [
+"A Dream Visit to a Historic Bookstore for Dad",
+"Why Londoners Love Cotton Bags",
+"The Life of Churchill: A Must-Read Biography",
+"Edwardian Architecture in Modern London",
+"How to Design a Bookstore with Natural Light"
+],
+"answer": "①",
+"solution": "책을 좋아하는 아빠가 오래전부터 가 보고 싶어 했던 런던의 오래된 서점을 방문했고, 그곳이 아빠에게는 ‘천국’ 같은 곳이었다는 것이 글의 중심 내용이다. 따라서 제목은 ①이 알맞다. ②③④⑤는 글에 나오는 세부 정보(에코백, 처칠 전기, 에드워드 시대, 자연광)만 따로 떼어 낸 것이어서 글 전체를 대표하지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-067d32dc14",
+"typeId": "eng-h1-b08-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nIf the morning had been for my dad and his books, the later half of the day was about my mom’s love for afternoon tea. Stepping into the tea room, I felt a bit uneasy due to the elegant atmosphere. However, this feeling quickly faded away when we were presented with a generous pot of tea and a three-level stand filled with delicious treats. I used to think that having afternoon tea was an expensive, unnecessary luxury. However, enjoying afternoon tea with my family at such an elegant place made me feel like a noble lady. Moreover, being able to share stories with my family made the experience truly meaningful.\n\n→ Enjoying afternoon tea with family not only removed the writer’s initial (A)________ but also changed the writer’s (B)________ that it was a wasteful luxury.\n\n     (A)          (B)",
+"choices": [
+"discomfort …… belief",
+"excitement …… belief",
+"discomfort …… hope",
+"satisfaction …… idea",
+"uneasiness …… memory"
+],
+"answer": "①",
+"solution": "글쓴이는 처음에 우아한 분위기 때문에 불편함(uneasy)을 느꼈지만 그 감정은 곧 사라졌으므로 (A)에는 discomfort가 알맞다. 또 애프터눈 티를 비싸고 불필요한 사치라고 ‘생각했던(used to think)’ 것이 바뀌었으므로 (B)에는 belief가 알맞다. ⑤의 uneasiness는 (A)에 맞지만 memory는 ‘~라는 생각’을 나타낼 수 없고, ③의 hope도 마찬가지로 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-60dfe69cdf",
+"typeId": "eng-h1-b08-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nNext, we explored the Greek Parthenon temple and its sculptures. While the temple itself is a copy, some stones and many statues were actually brought from Greece. The statues made of smooth white marble were elegant and beautiful.\nAfter a coffee break at the Queen Elizabeth II court under the beautiful roof, we stopped by the Chinese Gallery on our way to the Korean Gallery. The ancient Chinese warriors, all riding clay horses, were fascinating. When we stepped into the Korean Gallery, my attention was immediately captured by a sarangbang. Seeing the sarangbang made from trees taken from Korea surprised and delighted me. As I looked around, a sense of pride filled me to see people from different countries appreciating Korean arts and crafts, such as the moon jar. A visit to the British Museum was indeed a journey through time and across the continents.",
+"choices": [
+"영국박물관의 유물 상당수는 원래의 나라로 돌려보내야 한다.",
+"영국박물관 관람은 여러 시대와 대륙의 문화를 경험하는 여정이었다.",
+"영국박물관에서 가장 인상적인 전시물은 한국관의 달항아리였다.",
+"파르테논 신전 조각상은 복제품이어서 기대보다 감동이 덜했다.",
+"외국인들이 한국 공예품을 감상하는 모습을 보고 한국 문화를 더 알려야겠다고 느꼈다."
+],
+"answer": "②",
+"solution": "글쓴이는 그리스관, 중국관, 한국관을 차례로 둘러본 뒤 영국박물관 방문이 ‘시간과 대륙을 가로지르는 여정’이었다고 정리하므로 요지는 ②이다. ③은 한국관에서 가장 먼저 눈길을 끈 것이 사랑방이었으므로 틀렸다. ④는 복제품인 것은 신전 건물이고 조각상은 실제 그리스에서 가져온 것이어서 틀렸다. ⑤는 글쓴이가 느낀 것이 ‘자부심’이지 ‘알려야 할 필요성’이 아니므로 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4ecb8f2aae",
+"typeId": "eng-h1-b08-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWhere did this English tradition come from? It has a charming history that started in the late 19th century. Back then, the upper classes in England had different eating habits from what we have today. They had a light breakfast and a late dinner, leaving a big gap between meals, which made people feel quite hungry and tired by the late afternoon. Sometime around 1840, Anna Russell, the 7th Duchess of Bedford, complained of a “sinking feeling” and requested that some light food and a pot of tea be brought to her private living quarters to help with her afternoon hunger. This light food probably included bread, butter, and perhaps biscuits. The idea proved so successful that it soon became routine, and the duchess decided to invite a few of her friends to her private rooms for tea in the afternoon. A new social event in which the invited guests would have an opportunity to meet friends, catch up on the latest news, and discuss recent events was born.",
+"choices": [
+"A Duchess’s Afternoon Snack That Became a Social Event",
+"The Unusual Eating Habits of the English Upper Class",
+"The Health Benefits of Drinking Tea in the Afternoon",
+"How Afternoon Tea Spread to Every Class in England",
+"Bread, Butter, and Biscuits: The Original Afternoon Tea Menu"
+],
+"answer": "①",
+"solution": "글은 식사 사이의 긴 공백 때문에 생긴 공작부인의 오후 간식이 일상이 되었고, 이것이 친구들을 초대하는 새로운 사교 행사로 발전했다는 기원을 설명하므로 제목은 ①이 알맞다. ②는 배경 설명일 뿐이고 ⑤는 세부 정보이다. ④는 모든 계층으로 퍼졌다는 내용이 글에 없어서 함정이고, ③도 언급되지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-783d22c126",
+"typeId": "eng-h1-b08-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nEver since I was in the musical club in my middle school, I've loved to watch musicals. I was thrilled to watch the original cast version of my favorite musical in its hometown of London. I could not take my eyes off of the magical sets and elaborate costumes. The powerful voices of two leading ladies in particular were out of this world! Sadly, my English wasn't good enough to follow some parts of the musical, and I couldn't always enjoy a laugh with others. However, it was still a really great experience.",
+"choices": [
+"Where did the writer watch her favorite musical?",
+"Since when has the writer enjoyed watching musicals?",
+"What impressed the writer most about the performers?",
+"How much did the writer pay for the musical ticket?",
+"Why couldn't the writer always laugh with others during the musical?"
+],
+"answer": "④",
+"solution": "글은 공연을 본 곳(London), 뮤지컬을 좋아하게 된 시점(중학교 뮤지컬 동아리 때부터), 가장 인상 깊었던 점(두 주연 여배우의 힘 있는 목소리), 함께 웃지 못한 이유(영어 실력이 부족해 일부를 따라가지 못함)를 모두 말한다. 그러나 뮤지컬 표의 가격에 대한 언급은 전혀 없으므로 ④는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a5671c64a2",
+"typeId": "eng-h1-b08-u3m4s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nSometime around 1840, Anna Russell, the 7th Duchess of Bedford, complained of a \"sinking feeling\" and requested that some light food and a pot of tea be brought to her private living quarters to help with her afternoon hunger. This light food probably included bread, butter, and perhaps biscuits. The idea proved so successful that it soon became routine, and the duchess decided to invite a few of her friends to her private rooms for tea in the afternoon. A new social event in which the invited guests would have an opportunity to meet friends, catch up on the latest news, and discuss recent events was born. While it might not be as common today, it still holds a special place in the hearts of those who appreciate its elegant charm.",
+"selfGrade": true,
+"answer": "③",
+"solution": "글에서 공작부인의 습관(light food와 차)이 성공을 거둬 일상이 되자 비로소 친구들을 초대했다고 했다. 즉 사교 행사로 번지기 '전에' 친구를 초대한 것이며, '영국 전역에 퍼진 뒤에' 초대했다는 ③은 글과 어긋난다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-20ff6239d8",
+"typeId": "eng-h1-b08-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nWalking around the area we were staying in, I couldn't help but notice several signs along the streets that read, \"TO LET.\" At first, I assumed that these signs were missing the letter \"I\", and that the UK was incredibly toilet friendly. I excitedly shared my thoughts with my brother, mentioning that it seemed like London had many public restrooms. He explained that \"TO LET\" actually means \"for rent\" in British English. It was one of the funny moments that left us all laughing!",
+"choices": [
+"The writer saw several \"TO LET\" signs while walking around the area where they were staying.",
+"At first, the writer believed the signs meant there were many public toilets in London.",
+"The writer thought the signs were missing the letter \"I.\"",
+"The writer's brother was amused but refused to explain the real meaning of the signs.",
+"In British English, \"TO LET\" actually means \"for rent.\""
+],
+"answer": "④",
+"solution": "글에서 오빠(형)는 \"TO LET\"이 영국 영어로 \"임대(for rent)\"를 뜻한다고 '설명해 주었다'. 따라서 설명하기를 거부했다는 ④는 글과 일치하지 않는다. 나머지 선지는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-49961cf18e",
+"typeId": "eng-h1-b08-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nToday was a special day dedicated to my parents. We decided to drop by one of the oldest and most stunning bookstores in London, known for its classic charm. My dad loves books, and it was a place he had always wanted to explore. We were not disappointed. It was built during the Edwardian era and had three floors made of wood. The best part was how much natural light flooded in, making it even more beautiful. My dad purchased a biography of Churchill for himself and cotton bags, well-known among Londoners, for our entire family.",
+"choices": [
+"When was the bookstore built?",
+"What did the writer's dad buy for himself?",
+"How many floors did the bookstore have?",
+"How much did the cotton bags cost?",
+"What was the bookstore known for?"
+],
+"answer": "④",
+"solution": "글은 서점이 지어진 시기(에드워드 시대), 아빠가 자신을 위해 산 것(처칠 전기), 서점의 층수(세 층), 서점이 유명한 이유(고전적인 매력)를 모두 밝힌다. 그러나 가족을 위해 산 코튼 가방의 '가격'은 언급되지 않으므로 ④는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b08-u3m4s0t0",
+"custom": true
 }
 ]

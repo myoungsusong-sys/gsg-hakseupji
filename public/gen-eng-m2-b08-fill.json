@@ -582,5 +582,114 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b08-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-52020ef4c5",
+"typeId": "eng-m2-b08-u1m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nThis morning, Katie was making an apple pie for her family. When she opened the oven, a delicious smell filled the kitchen. In excitement, she grabbed the pan with her bare hands. “Ouch!” Her fingers that touched the hot pan turned red and started to hurt.\nFirst Aid Skills",
+"choices": [
+"The Joy of Baking an Apple Pie",
+"A Small Mistake That Caused a Burn",
+"Delicious Smells Fill Katie’s Kitchen",
+"Never Open a Hot Oven at Home",
+"How to Bake a Perfect Apple Pie"
+],
+"answer": "②",
+"solution": "글은 Katie가 맨손으로 뜨거운 팬을 잡아 손가락에 화상을 입는 사고를 다룬다. 핵심은 '부주의한 행동이 화상이라는 사고로 이어졌다'는 점이므로 ②가 제목으로 알맞다. ①③④⑤는 베이킹의 즐거움·냄새·오븐 사용법 등 글의 중심 내용인 '화상 사고'를 담지 못해 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ddd104b84c",
+"typeId": "eng-m2-b08-u1m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 요지로 가장 알맞은 것은?\n\nAccidents can happen anytime, anywhere. However, knowing first aid can stop situations from getting worse. If you have basic first aid skills, you can help yourself and others who are in need.\nFirst Aid Skills",
+"choices": [
+"Accidents rarely happen if we are careful enough.",
+"First aid is useful only for trained medical workers.",
+"Basic first aid knowledge keeps a bad situation from getting worse.",
+"Staying away from dangerous places is the best way to be safe.",
+"Helping others matters more than helping ourselves in an emergency."
+],
+"answer": "③",
+"solution": "글은 사고는 언제 어디서나 일어날 수 있지만 기본적인 응급처치를 알면 상황이 악화되는 것을 막을 수 있다고 말한다. 따라서 요지는 ③이다. ①은 '주의하면 사고가 드물다'는 본문에 없는 내용, ②는 '전문가만 유용'하다는 왜곡, ④⑤는 지엽적이거나 본문이 말하지 않은 비교이므로 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bc155ac118",
+"typeId": "eng-m2-b08-u1m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "위 대화의 제목으로 가장 알맞은 것은?\n\nW: 911. What’s your emergency?\nB: Help! My friend fell, and she can’t walk.\nW: Stay calm. What happened?\nB: We were hiking, and she slipped on something. She says her leg hurts a lot. I think she broke her leg.\nW: Alright. Keep her still and don’t move her leg.\nB: Okay, she’s lying down and staying still.\nW: We’re sending help right away. Stay with her and keep her calm.\nB: I will. Please hurry!\nW: Help is on the way. You’re doing great.",
+"choices": [
+"Enjoy Hiking in Safe Places",
+"A Quick Call for Help After a Fall",
+"The Best Hiking Trails to Visit",
+"How to Carry an Injured Friend Down a Mountain",
+"Why You Should Never Hike Alone"
+],
+"answer": "②",
+"solution": "대화는 등산 중 친구가 미끄러져 다치자 소년이 911에 전화해 도움을 요청하는 상황이다. 중심 내용은 '사고 후 도움을 요청하는 긴급 전화'이므로 제목은 ②가 알맞다. ①③⑤는 등산 안전·명소·단독 산행 경고 등 본문에 없는 내용이고, ④는 '직접 옮기기'로 본문의 '움직이지 말고 그대로 두라'는 지시와 반대여서 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e396510fe3",
+"typeId": "eng-m2-b08-u3m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화를 읽고 <조건>에 따라 소라의 고민을 완성하시오.\n\nMinho: Sora, you look tired. What's wrong?\nSora: I stayed up late last night. I'm very sleepy, so I can't focus in class.\n\n<조건>\n· 'so – that' 구문을 사용할 것\n· can과 대화문의 단어를 사용하되 필요시 변형할 것\n· 각 빈칸에 한 단어씩 쓸 것\n\n→ I ____________ ____________ ____________ ____________ ____________ ____________ ____________ in class.",
+"selfGrade": true,
+"answer": "am so sleepy that I can't[cannot] focus",
+"solution": "'너무 ~해서 …할 수 없다'는 「so+형용사+that+주어+can't+동사원형」으로 나타낸다. 대화의 very sleepy를 so sleepy로 바꾸고, 결과는 that 뒤에 I can't focus로 쓴다. 주어가 I이므로 be동사는 am을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-97d4ebba34",
+"typeId": "eng-m2-b08-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 아래 질문에 대한 알맞은 대답이 되도록 주어진 <조건>에 맞게 빈칸을 완성하시오.\n\nMr. Weston did not agree with her. He thought that Robbie was a great help to Gloria and the family.\nAfter a long talk, however, they decided to return Robbie to the factory. When Gloria found that Robbie was gone, she cried, \"He is a person just like you and me, and he is my friend! Bring him back!\" Gloria's smile was gone. Even a new pet and a trip to New York did not help. Nothing could make her smile.\n\nQ. How did Gloria feel after her parents sent Robbie back to the factory?\n\n<조건>\n· find, make를 사용할 것 (필요시 변형할 것)\n· 시제에 주의할 것\n· 각 빈칸에 한 단어씩 쓸 것\n\n→ Gloria became very sad when she ____________ ____________ ____________ ____________ ____________, and nothing, not even a new pet or a trip to New York, ____________ ____________ ____________ ____________.",
+"selfGrade": true,
+"answer": "found that Robbie was gone / could make her smile",
+"solution": "Gloria가 Robbie가 사라진 것을 알게 된 것은 과거의 일이므로 find를 과거형 found로 바꾸고, 다섯 칸에 맞게 that Robbie was gone을 이어 쓴다. 본문의 마지막 문장 Nothing could make her smile.에서 사역동사 make는 목적격보어로 동사원형(smile)을 쓴다. to smile이나 smiling으로 쓰면 틀린다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-841fb7a60a",
+"typeId": "eng-m2-b08-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 가족이 한 말을 보고 로봇 Bomi에게 시킨 일을 <조건>에 맞게 완성하시오.\n\nMina: My room is so messy. I don't have time to clean it.\nGrandpa: I want to read the newspaper, but my eyes are too tired.\nJunho: Bomi, you worked hard today. You can charge your battery now.\n\n<조건>\n· 괄호에 주어진 사역동사를 과거시제로 쓸 것\n· 각 문장에 Bomi를 사용할 것\n· <보기>에서 알맞은 단어를 골라 쓰고, 대명사는 문장에 맞게 바꿀 것\n\n<보기> read, clean, charge\n\n(1) Mina ______________________________________. (have)\n(2) Grandpa ___________________________________ to him. (have)\n(3) Junho ______________________________________. (let)",
+"selfGrade": true,
+"answer": "(1) had Bomi clean her room (2) had Bomi read the newspaper (3) let Bomi charge its battery",
+"solution": "사역동사 have와 let은 「사역동사+목적어+동사원형」 형태로 쓰고, 과거시제이므로 had와 let(과거형도 let)을 쓴다. (1)에서 Mina의 방이므로 my room을 her room으로 바꾼다. (3)에서 Junho가 말한 your battery는 로봇 Bomi의 배터리이므로 its battery로 바꿔야 한다. 이 부분이 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-a7b0800a36",
+"typeId": "eng-m2-b08-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 대화를 읽고 아래 질문에 대한 알맞은 대답이 되도록 주어진 <조건>에 맞게 빈칸을 완성하시오.\n\nG: Do you know we have a robot in the cafeteria?\nB: Our school got a robot? What kind of work does it do there?\nG: It makes sandwiches really fast.\nB: That's cool. How do you feel about using the robot in the cafeteria?\nG: I think it's great because it can make the sandwich line move faster. We don't have to wait too long.\nB: It's nice, but I'm worried about the cafeteria workers. They might lose their jobs.\nG: Good point. I hope that the school will find new roles for the workers.\nB: I hope so, too.\n\nQ. What do the speakers think about the robot in the cafeteria?\n\n<조건>\n· worry, lose를 사용할 것 (필요시 변형할 것)\n· 대화문의 표현을 활용할 것\n· 각 빈칸에 한 단어씩 쓸 것\n\n→ The girl thinks using the robot is great because students ____________ ____________ ____________ ____________ ____________ ____________, but the boy ____________ ____________ ____________ the cafeteria workers because they ____________ ____________ ____________ ____________. Both of them hope that the school will ____________ ____________ ____________ ____________ the workers.",
+"selfGrade": true,
+"answer": "don't have to wait too long / is worried about / might lose their jobs / find new roles for",
+"solution": "소녀는 줄이 빨리 줄어 오래 기다릴 필요가 없다고 했으므로 don't have to wait too long을 쓴다. worry는 '걱정하다'는 뜻의 be worried about으로 바꾸고, 주어가 the boy이므로 be동사는 is를 쓴다. 노동자들이 일자리를 잃을 수도 있다는 걱정은 might lose their jobs로, 두 사람이 함께 바라는 내용은 find new roles for로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u3m5s0t0",
+"custom": true
 }
 ]

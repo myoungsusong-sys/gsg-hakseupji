@@ -2697,5 +2697,628 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b02-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-cc61f506d9",
+"typeId": "eng-h2-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe successful use of sports analytics was not limited to the curling team. The Korean women's archery team had dominated the sport for decades. However, the team turned to sports analytics to maintain its edge over its rivals in preparation for the 2020 Tokyo Olympics. The team developed a system to monitor players' heart rates by using advanced visual computing technology to convert facial color variations into heart rates. This data was used for psychological training to help players maintain stable heart rates during crucial moments. The team also created an AI coach that helped adjust shooting form. The team managers requested that the AI coach edit training videos of the players to assist with practical analysis. Players and coaches used the edited videos to analyze the players' usual habits or weaknesses. The active use of data analysis by the Korean women's archery team handed them their ninth Olympic gold medal in a row in Tokyo.",
+"choices": [
+"The History of Archery as an Olympic Sport",
+"How Data Analysis Helped Korean Archers Keep Winning",
+"Why Heart Rates Rise During Crucial Moments",
+"AI Coaches Replacing Human Coaches in Archery",
+"The Growing Rivalry Between Korean and Foreign Archery Teams"
+],
+"answer": "②",
+"solution": "한국 여자 양궁팀은 정상의 자리를 지키려고 심박수 측정 시스템과 AI 코치 같은 데이터 분석을 도입했고, 그 결과 올림픽 9연속 금메달을 따냈다는 내용이다. 따라서 '데이터 분석이 한국 양궁 선수들의 연승을 어떻게 도왔는가'가 제목으로 알맞다. ③은 세부 내용의 일부일 뿐이고, ④의 'AI 코치가 인간 코치를 대체한다'는 내용은 글에 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d28c05a719",
+"typeId": "eng-h2-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nFollowing its debut at the Winter Olympic Games of 2014, the Korean women's curling team recognized the need to enhance its sweeping technique. Sweeping melts the ice and makes the stone move faster. If too much ice melts, however, the stone moves too fast and misses the target. On the other hand, if not enough ice melts, the stone stops before reaching the target. The amount of ice melting depends on the sweeping speed and pressure. Applying too much pressure slows down the sweeping speed, and focusing only on speed makes it hard to transfer enough force to the broom. Finding the right balance between speed and pressure is important to melt the right amount of ice.",
+"choices": [
+"컬링에서는 얼음을 많이 녹일수록 스톤이 목표에 정확히 도달한다.",
+"스위핑할 때 속도와 압력의 균형을 잘 맞춰야 얼음을 알맞게 녹일 수 있다.",
+"스위핑에서는 속도보다 압력에 집중하는 것이 더 효과적이다.",
+"올림픽에 처음 출전한 경험은 선수들의 기술 향상에 큰 도움이 된다.",
+"컬링 스톤의 속도는 얼음이 녹는 양과 관계가 없다."
+],
+"answer": "②",
+"solution": "얼음이 너무 많이 녹아도, 너무 적게 녹아도 스톤이 목표에서 벗어나므로, 마지막 문장처럼 속도와 압력 사이의 균형을 찾는 것이 중요하다는 것이 이 글의 요지이다. ①과 ⑤는 글의 내용과 반대이다. ③은 한쪽에만 집중하면 문제가 생긴다는 글의 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8b5f137f35",
+"typeId": "eng-h2-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThe data team of the Liverpool Football Club started to apply data analysis in key areas of club management, including player recruitment, injury prevention, and strategy during the game. The team analyzed large amounts of data to recruit players who fit the team's style of play. In training, they collected data on players' movement patterns, heart rates, and vital signs by using GPS trackers and sensors to prevent injuries. During games, they used live data to make tactical decisions such as substitutions and formations.",
+"choices": [
+"ways Liverpool's data team used data in various areas of the club",
+"the importance of GPS trackers in professional soccer matches",
+"reasons why players' heart rates change during training",
+"the history of tactical formations in modern soccer",
+"difficulties of recruiting players with limited funds"
+],
+"answer": "①",
+"solution": "첫 문장에서 데이터 분석을 선수 영입, 부상 예방, 경기 중 전략에 적용했다고 밝힌 뒤, 나머지 문장에서 각 영역의 활용 방법을 하나씩 설명한다. 따라서 '리버풀 데이터팀이 구단의 여러 영역에서 데이터를 활용한 방법'이 주제이다. ②와 ③은 부상 예방 부분의 세부 내용에 그친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ba3fc1cbe2",
+"typeId": "eng-h2-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nIn soccer, the Liverpool Football Club of the English Premier League is similar to the Oakland Athletics in baseball. In 2010, Liverpool underwent a change in ownership. While data analysis was already prevailing in the Premier League at that time, the new owner of the club, who also owned a baseball team in the United States, aimed to push data analysis in soccer to new heights. So he demanded that the club form a new data team.\nThe new team included a physicist from Cambridge, a nuclear scientist from Harvard, and a former chess champion. What they had in common was significant expertise in data. The team started to apply data analysis in key areas of club management, including player recruitment, injury prevention, and strategy during the game. (…) The data team was praised for its efforts when the Liverpool Football Club won the league championship for the first time in 30 years in 2020.\n\n→ Under its new owner, Liverpool formed a data team with great (A)__________ in data, and the team's use of data analysis in club management (B)__________ to the club's first league title in 30 years.",
+"choices": [
+"(A) expertise …… (B) contributed",
+"(A) experience …… (B) objected",
+"(A) indifference …… (B) led",
+"(A) expertise …… (B) objected",
+"(A) ignorance …… (B) contributed"
+],
+"answer": "①",
+"solution": "데이터팀 구성원들의 공통점은 'significant expertise in data'였으므로 (A)에는 expertise(전문 지식)가 알맞다. 데이터팀은 리버풀의 30년 만의 리그 우승에 대한 공로로 칭찬받았으므로 (B)에는 contributed (to)(~에 기여했다)가 알맞다. indifference(무관심), ignorance(무지)는 글의 내용과 반대이고, objected (to)(반대했다)는 흐름에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f378f1c3ec",
+"typeId": "eng-h2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThe Oakland Athletics were a Major League Baseball team with a small budget and limited funds. Because of this, it was hard for them to attract talented players. However, in 2002, they surprised the professional sports industry by winning 20 games in a row. The secret behind their success was sabermetrics, a statistical model used for making decisions in baseball.",
+"choices": [
+"The Oakland Athletics did not have much money to spend.",
+"Their limited funds made it difficult to attract talented players.",
+"In 2002, the team won 20 consecutive games.",
+"The professional sports industry had expected the team's success in advance.",
+"Sabermetrics is a statistical model used for decision-making in baseball."
+],
+"answer": "④",
+"solution": "본문은 2002년 20연승이 프로 스포츠계를 '놀라게 했다(surprised/shocked)'고 했으므로, 그 성공을 미리 '예상했다'는 ④는 반대되는 내용이다. ①②③⑤는 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-198973bfc5",
+"typeId": "eng-h2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nTo find the most effective sweeping technique, the Korean curling team designed a special measurement device. The device was made up of infrared cameras and sensors attached to the players' bodies, shoes, and brooms. Using the device, the team obtained foot pressure values and other data for analysis. After studying the data, they concluded that speed was more economical than strength for sweeping. This use of data analysis helped the team win a silver medal at the 2018 Pyeongchang Winter Olympics.",
+"choices": [
+"The Korean team built a device to discover the best sweeping technique.",
+"Sensors were attached to the players' bodies as well as their shoes and brooms.",
+"Foot pressure values were among the data gathered for analysis.",
+"The team found that using strength was more economical than increasing speed.",
+"Data analysis contributed to the team's silver medal at the 2018 Pyeongchang Olympics."
+],
+"answer": "④",
+"solution": "본문은 스위핑에서 '힘보다 속도(speed)가 더 경제적'이라고 결론 내렸으므로, '힘이 속도보다 경제적'이라고 뒤바꾼 ④가 일치하지 않는다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3f6497502b",
+"typeId": "eng-h2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nA baseball has 108 double stitches, which create raised lines called seams. The seams help pitchers grip the ball and add more spin when they throw it. A spinning ball changes direction in the air because of the air pressure around it, an effect known as the Magnus effect. As for the bat, its length must be less than 106.8 cm, and the diameter of its thickest part must be less than 7 cm. If a batter hits the ball about 5-10 cm from the end of the bat, the ball flies the farthest. This spot is called the \"sweet spot.\"",
+"choices": [
+"How many double stitches does a baseball have?",
+"What effect causes a spinning ball to change direction in the air?",
+"What is the maximum allowed length of a baseball bat?",
+"How much does a regulation baseball weigh?",
+"How far from the end of the bat is the sweet spot located?"
+],
+"answer": "④",
+"solution": "① 108개, ② 마그누스 효과, ③ 106.8cm 미만, ⑤ 끝에서 5~10cm 지점으로 모두 본문에서 답을 찾을 수 있다. 그러나 공의 '무게'에 대한 언급은 전혀 없으므로 ④는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a32c727e40",
+"typeId": "eng-h2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nIn 2010, the Liverpool Football Club went through a change in ownership. The new owner, who also owned a baseball team in the United States, wanted to raise data analysis in soccer to a new level, so he demanded that the club form a new data team. The team included a physicist from Cambridge, a nuclear scientist from Harvard, and a former chess champion, all of whom had great expertise in data. They applied data analysis to player recruitment, injury prevention, and in-game strategy. During training, they used GPS trackers and sensors to collect data on players' movements, heart rates, and vital signs. The club won the league championship in 2020, its first in 30 years.",
+"choices": [
+"In what year did Liverpool's ownership change?",
+"What did the members of the new data team have in common?",
+"In which areas of club management was data analysis applied?",
+"What tools were used to collect players' data during training?",
+"How much salary did the new owner pay the data team members?"
+],
+"answer": "⑤",
+"solution": "① 2010년, ② 데이터에 대한 전문성, ③ 선수 영입·부상 예방·경기 중 전략, ④ GPS 추적기와 센서로 모두 본문에서 확인된다. 그러나 데이터 팀에게 지급한 '급여'는 본문에 전혀 나오지 않으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c521625260",
+"typeId": "eng-h2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 추론한 내용으로 가장 적절한 것은?\n\nIn soccer, players use numbers and other information to predict what might happen during penalty kicks. They analyze how the opposing team's players performed in the past, learning whether they scored or missed. Kickers also study the goalkeeper's previous movements to find patterns. For example, if the data shows that a goalkeeper often dives low to the left, the kicker may decide to aim high to the right to increase the chance of scoring.",
+"choices": [
+"Analyzing data is useless when a kicker faces a goalkeeper for the first time.",
+"A kicker is likely to aim the ball toward the direction the goalkeeper tends to avoid.",
+"Goalkeepers always dive low to the left during penalty kicks.",
+"Players rely only on their own past records, not on their opponents'.",
+"The more a kicker ignores the data, the more likely he is to score."
+],
+"answer": "②",
+"solution": "골키퍼가 자주 왼쪽 아래로 몸을 날리면 키커는 반대인 오른쪽 위로 찬다는 예시에서, 키커는 골키퍼가 가지 않는(피하는) 방향을 노린다는 것을 추론할 수 있으므로 ②가 적절하다. ③은 'often'을 'always'로 과장했고, ④⑤와 ①은 데이터 활용 취지에 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-19aa637b53",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nKing Jeongjo's procession in 1795 had a special purpose. That year was his mother's sixtieth birthday, which had a special meaning in the Joseon Dynasty. Also, his father's tomb was near Hwaseong Haenggung, so the king planned to hold a memorial service there to honor his late father. By putting these two events together, King Jeongjo showed everyone how much his family meant to him.",
+"choices": [
+"popular ways to celebrate birthdays today",
+"the long history of royal tombs in Joseon",
+"King Jeongjo's respect for his family shown through the procession",
+"the role of musicians in royal ceremonies",
+"the difficulty of traveling long distances in the past"
+],
+"answer": "③",
+"solution": "어머니의 회갑과 아버지를 위한 제사라는 두 행사를 합쳐서 가족이 얼마나 소중한지 보여 주었다는 내용이다. 그래서 주제는 '행차로 드러난 정조의 가족 존중'인 ③이다. ①은 오늘날 이야기라 글과 관계가 없다. ②, ④, ⑤는 글에 나오지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-11f4bd9abc",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 알맞은 것은?\n\nWhile Hwaseong Fortress was being built, King Jeongjo treated the workers well. They received fair wages and were given breaks during bad weather. They were even paid when they were sick. Back then, ordinary people were usually required to work on public projects without getting paid, so this was very unusual.",
+"choices": [
+"화성 건설에는 동양과 서양의 건축 기술이 함께 쓰였다.",
+"정조는 화성 건설에 참여한 노동자들을 공정하게 대우했다.",
+"당시 백성이 공공사업에 무보수로 일하는 것은 당연한 의무였다.",
+"나쁜 날씨 때문에 화성 공사가 자주 늦어졌다.",
+"일할 사람이 부족해서 화성 공사 기간이 길어졌다."
+],
+"answer": "②",
+"solution": "공정한 임금, 궂은 날씨의 휴식, 아플 때의 임금 지급처럼 노동자를 잘 대우한 사례를 차례로 든 글이다. 따라서 요지는 ②이다. ③은 당시 관행을 설명하는 배경일 뿐 필자가 하려는 말이 아니다. ①, ④, ⑤는 이 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8c4a6fe795",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nKing Jeongjo made detailed records of the procession and the construction of Hwaseong Fortress. When the fortress was damaged during wartime, these records became very useful. At first, people at UNESCO were not sure whether the restored fortress was authentic. However, after they compared translated documents with the restored fortress, they agreed that it had been restored just the way it was meant to be.",
+"choices": [
+"Why Wars Destroy Cultural Heritage",
+"How UNESCO Translates Old Documents",
+"The Military Power of the Joseon Dynasty",
+"Records That Brought a Fortress Back to Life",
+"The Life of King Jeongjo's Mother"
+],
+"answer": "④",
+"solution": "정조가 남긴 자세한 기록 덕분에 전쟁으로 훼손된 화성을 원래대로 복원했고, 그 진정성까지 인정받았다는 내용이다. 그러니 제목은 '요새를 되살린 기록'인 ④가 알맞다. ②는 '번역된 문서'라는 표현만 따온 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-34e62cd7e6",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 알맞은 것은?\n\nDuring the procession, King Jeongjo gave common people a chance to meet him and share their concerns. This was especially meaningful for those who couldn't read or write, because they had no other way to tell the king what was on their minds. The procession also opened the door to government jobs. At that time, exams to hire officials were held only every three years. By adding special exams during the procession, the king gave more people a shot at joining the government, which made it more diverse.",
+"choices": [
+"the difficulty of passing government exams in Joseon",
+"how the procession brought the king and government closer to ordinary people",
+"the reasons many people in Joseon could not read or write",
+"the king's plan to reduce the number of government officials",
+"the role of soldiers in protecting the king during the procession"
+],
+"answer": "②",
+"solution": "앞부분은 백성이 왕을 직접 만나 걱정을 말할 기회를, 뒷부분은 특별 시험으로 관직의 문을 넓힌 일을 다룬다. 두 내용을 모두 담은 ②가 주제이다. ①과 ③은 글에 나온 낱말(exams, read or write)을 이용한 부분적 오답이다. ④는 관리를 더 뽑았다는 글의 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b9cfd6d40d",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nKing Jeongjo hoped to make Hwaseong the new capital, away from the political chaos in Hanyang. He wanted it to be a self-sufficient city with a strong military, farming, and trade. He gathered the best talents, such as Jeong Yakyong, and let them use the finest architectural techniques of the East and the West. He also treated the workers fairly, so workers from all over the country rushed to join. As a result, the construction, which was expected to take about ten years, was completed within three years.\n\n→ King Jeongjo's (A)________ plans for Hwaseong and his fair treatment of workers led to the fortress being finished much (B)________ than expected.\n\n   (A)          (B)",
+"choices": [
+"modest ― faster",
+"careless ― sooner",
+"ambitious ― faster",
+"ambitious ― later",
+"secret ― slower"
+],
+"answer": "③",
+"solution": "정조는 화성을 자급자족하는 새 수도로 만들려는 큰 계획을 세웠으므로 (A)에는 ambitious(야심 찬)가 들어간다. 10년 예상 공사가 3년 안에 끝났으므로 (B)에는 faster가 알맞다. ④의 later는 결과와 반대이다. ①의 modest와 ②의 careless는 계획의 성격과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f3fbc2ca98",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nIn the past, Koreans built two main types of fortresses. A sanseong was built on a mountain, so defenders could fight from higher ground and push back enemies with fewer soldiers. However, living there was not practical because there was little farmland. An eupseong was built on flat land and was the center of daily life, but in times of war, people had to move to a nearby sanseong for safety. Suwon Hwaseong combined the strengths of both. Built along the slopes of Paldalsan Mountain, it had strong defenses and also served as a center for agriculture, commerce, and housing.",
+"choices": [
+"Why Mountain Fortresses Were Better Than Flat-land Ones",
+"The Daily Life of Farmers Living Outside Eupseong",
+"Famous Battles Fought at Mountain Fortresses",
+"Suwon Hwaseong: The Best of Two Fortress Styles",
+"How to Visit UNESCO Heritage Sites in Korea"
+],
+"answer": "④",
+"solution": "산성과 읍성의 장단점을 차례로 설명한 뒤, 수원 화성이 두 양식의 장점을 합쳤다는 결론으로 끝나는 글이다. 따라서 제목은 ④이다. ①은 산성에도 단점이 있다는 글의 내용과 맞지 않는다. ②와 ③은 글에 없거나 아주 작은 부분만 다룬다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-07a4fc9395",
+"typeId": "eng-h2-b02-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nOn February 9, 1795, a huge procession left Changdeokgung Palace. More than 2,000 soldiers, hundreds of horse riders, and 50 musicians marched with King Jeongjo and his mother, and they even crossed the Hangang River on a bridge made of 36 boats. But this was not just about putting on a show. The trip took place around his mother's sixtieth birthday, and the king also planned a memorial service for his late father, whose tomb was near Hwaseong Haenggung. At the same time, the king wore armor and sat on a horse while his soldiers marched in perfect order, as if to say, \"We're ready to protect our land.\"",
+"choices": [
+"the technique used to build a bridge of boats on the Hangang River",
+"how King Jeongjo honored his late father with a memorial service",
+"a royal event that carried both personal and political meaning",
+"the king's attempt to show off his wealth through a fancy parade",
+"the military training soldiers received before the procession"
+],
+"answer": "③",
+"solution": "행차의 규모를 소개한 뒤, 이 행차가 단순한 볼거리가 아니었다고 말한다. 가족에 대한 공경이라는 개인적 의미와 조선의 힘을 과시하는 정치적 의미가 함께 있었다는 것이다. 그래서 두 목적을 모두 담은 ③이 주제이다. ②는 두 목적 가운데 하나만 다룬 함정이고, ④는 'not just about putting on a show'와 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-169027fafc",
+"typeId": "eng-h2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nHello, listeners. Today, I'd like to share some great ways to enjoy our community's culture. First, attend local cultural events such as festivals, concerts, and exhibitions. Through these events, you can experience the living traditions and customs of our community. Next, visit museums, art galleries, and historical sites. They hold the key to understanding our past by displaying works that reflect our unique heritage. In these ways, you can discover the richness and beauty of our community's culture.",
+"choices": [
+"Attending festivals and concerts lets people experience the community's living traditions.",
+"Museums and historical sites display works that reflect the community's unique heritage.",
+"The speaker recommends reading history books at home as the best way to learn the culture.",
+"Visiting historical sites helps people understand their community's past.",
+"The speaker's suggested ways help people find the richness and beauty of the local culture."
+],
+"answer": "③",
+"solution": "글쓴이는 문화를 경험하는 방법으로 축제·공연·전시 참여와 박물관·미술관·유적지 방문을 제시했다. 집에서 역사책을 읽는 것을 가장 좋은 방법으로 추천한다는 언급은 전혀 없으므로 ③이 일치하지 않는다. 나머지는 모두 본문에 근거한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8552070722",
+"typeId": "eng-h2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nKing Jeongjo set up a chance during the procession for common people to meet him and share their concerns. This was especially a big deal for those who couldn't read or write. They had no other way to tell the king what was on their minds, so this was a direct line to him. Through the procession, King Jeongjo also made government more accessible. At that time, the government held exams to hire officials every three years, so there weren't many chances available. He added special exams during the procession, giving more people a shot at joining the government.",
+"choices": [
+"The procession gave common people a chance to meet the king directly.",
+"People who couldn't read or write especially benefited from this opportunity.",
+"Officials were usually hired through exams held every three years.",
+"King Jeongjo reduced the number of government exams during the procession.",
+"The special exams allowed more people to join the government."
+],
+"answer": "④",
+"solution": "본문에 따르면 정조는 행차 때 특별 시험을 '추가로' 치러 더 많은 사람에게 기회를 주었다. 시험 수를 줄였다는 ④는 본문과 반대되므로 일치하지 않는다. 나머지는 모두 본문에 명시되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1e02a52f9b",
+"typeId": "eng-h2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nBack on February 9, 1795, something remarkable happened in front of Changdeokgung Palace, where King Jeongjo lived. A large crowd gathered to witness a very special procession. More than 2,000 soldiers, hundreds of horse riders, and many important officials marched alongside the king and his mother, with 50 musicians playing traditional instruments. When they crossed a bridge made of 36 boats on the Hangang River, it turned heads. Lasting four days and covering 68 kilometers, the procession made a round trip to Hwaseong Haenggung.",
+"choices": [
+"When did the procession take place?",
+"About how many soldiers took part in the procession?",
+"How was the bridge across the Hangang River made?",
+"How many days did the procession last?",
+"What kinds of traditional instruments did the 50 musicians play?"
+],
+"answer": "⑤",
+"solution": "날짜(1795년 2월 9일), 군사 수(2,000명 이상), 다리(배 36척), 기간(4일)은 모두 본문에서 확인된다. 그러나 50명의 악사가 '어떤' 전통 악기를 연주했는지는 언급되지 않으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a14bef559a",
+"typeId": "eng-h2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nSuwon Hwaseong blends two Korean styles: the mountain fortress, or sanseong, and the flat-land fortress, or eupseong. The sanseong served as the final defense against invaders by using Korea's mountainous landscape. Defenders could fight from higher ground and push back enemies with fewer soldiers. However, living in the sanseong was not practical because of scarce farmland and poor living conditions. So during peaceful times, people lived in and around the eupseong, which had low walls and housed administrative buildings, learning centers, and training grounds. Common people, mainly farmers, lived outside these walls. In times of war, they withdrew to the nearby sanseong for safety.",
+"choices": [
+"The sanseong used the mountainous landscape as a defensive advantage.",
+"Defenders in the sanseong could push back enemies with fewer soldiers.",
+"Living in the sanseong was difficult because of limited farmland.",
+"During peaceful times, farmers lived inside the walls of the eupseong.",
+"In times of war, common people moved to the sanseong for safety."
+],
+"answer": "④",
+"solution": "본문은 평상시 일반 백성(주로 농민)이 읍성 '성벽 밖'에 살았다고 했다. 성벽 안에 살았다는 ④는 이와 반대이므로 일치하지 않는다. 나머지 선지는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-22478e2966",
+"typeId": "eng-h2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nWhy did the procession happen? The first thing King Jeongjo had in mind was to show respect to his family. It happened around his mother's sixtieth birthday. In the Joseon Dynasty, just like today, turning 60 had a special meaning. His father's tomb was near Hwaseong Haenggung, and he planned to hold a memorial service to honor his late father. By combining the two events, he was telling everyone how much family meant to him. But there's more. King Jeongjo was also making a statement about the Joseon Dynasty's strength. He dressed like a military leader, wearing armor and sitting on a horse with his soldiers marching in perfect order.",
+"choices": [
+"Showing respect to his family was King Jeongjo's first purpose for the procession.",
+"Turning 60 held a special meaning in the Joseon Dynasty.",
+"King Jeongjo held the memorial service because his mother's tomb was near Hwaseong Haenggung.",
+"By combining the two events, the king showed how much family meant to him.",
+"The king wore armor to display the strength of the Joseon Dynasty."
+],
+"answer": "③",
+"solution": "화성 행궁 근처에 있던 것은 어머니가 아니라 '아버지'의 묘이며, 추모 행사도 돌아가신 아버지를 기리기 위한 것이었다. 따라서 어머니의 묘 때문이라고 한 ③이 일치하지 않는다. 나머지는 모두 본문에 근거한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-176966ccd4",
+"typeId": "eng-h2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nKing Jeongjo made sure everything was documented by creating records for the procession and the construction of Hwaseong Fortress. These construction records were especially a lifesaver when the fortress was damaged during wartime. They were also part of the reason UNESCO recognized Hwaseong as a World Heritage Site. At first, the people at UNESCO were a bit unsure about recognizing Hwaseong Fortress; they weren't totally convinced it was authentic. But after checking the translated documents and comparing them with the restored fortress, they finally agreed that the fortress had been restored just the way it was meant to be.",
+"choices": [
+"What records did King Jeongjo create?",
+"When were the construction records especially useful?",
+"Why were the UNESCO people unsure at first?",
+"How did UNESCO finally confirm the fortress's authenticity?",
+"How many years did it take to restore Hwaseong Fortress after the war?"
+],
+"answer": "⑤",
+"solution": "정조가 만든 기록(행차·축성), 기록이 유용했던 시점(전란으로 성이 손상됐을 때), 유네스코가 처음 주저한 이유(진정성에 확신이 없었음), 진정성 확인 방법(번역 문서 대조)은 모두 본문에서 답할 수 있다. 그러나 복원에 걸린 '기간(연수)'은 언급되지 않으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-22417d8942",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 같은 뜻이 되도록 <보기>의 어구를 바르게 배열하시오.\n\nWhy did all of this happen? The first thing King Jeongjo had in mind was to show respect to his family. It happened around his mother’s sixtieth birthday. Back in the Joseon Dynasty, just like today, turning 60 years old had a special meaning. And his father’s tomb was near Hwaseong Haenggung. (A)그는 돌아가신 아버지를 기리기 위해 추도식을 열 계획이었다.\n\n<보기> to honor, a memorial service, he, his late father, was, to hold, planning\n\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "He was planning to hold a memorial service to honor his late father.",
+"solution": "'~할 계획이었다'는 과거진행형 was planning 뒤에 to부정사 to hold를 붙여 나타낸다. 목적어 a memorial service 다음에 '~하기 위해'라는 목적을 나타내는 부사적 용법 to honor his late father를 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-94bd64c804",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 (A)의 우리말과 같은 뜻이 되도록 <보기>의 어구를 바르게 배열하여 문장을 완성하시오.\n\nThere’s more to King Jeongjo’s story. He treated his people well during the construction of the fortress. They received fair wages and breaks during bad weather and were even paid when they were sick, something that was unheard of at that time. Back then, ordinary people were typically required to work on public projects without getting paid. (A)사람들이 정조의 계획을 알게 되자, 전국 각지에서 일꾼들이 서둘러 모여들었다.\n\n<보기> in a rush, workers, the country, came together, from all over\n\n→ Once people got wind of King Jeongjo’s plan, ______________________________________________.",
+"selfGrade": true,
+"answer": "workers from all over the country came together in a rush",
+"solution": "주어 workers 뒤에 출신을 나타내는 전치사구 from all over the country를 붙여 주어를 꾸민다. 그 뒤에 동사 came together와 방식을 나타내는 부사구 in a rush를 순서대로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8eb1c83ff0",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문에 대한 답을 완성하시오. (단, 지문에서 연속된 단어를 찾아 쓰되, 각 빈칸에 한 단어씩 쓸 것)\n\nHistorically, the sanseong served as the final defense against invaders by utilizing Korea’s mountainous landscape to its advantage. Defenders could fight from higher ground and effectively push back enemies with fewer soldiers. A famous example of this advantage was the battle at Haengjusanseong during the Japanese invasion of Korea in the late 16th century.\nLiving in the sanseong was not practical due to scarce farmland and poor living conditions though. So during peaceful times, people lived in and around the eupseong, such as Naganeupseong and Haemieupseong.\n\nQ: Why didn’t people live in the sanseong during peaceful times?\nA: Because it had (1)__________ farmland and (2)__________ __________ __________.",
+"selfGrade": true,
+"answer": "(1) scarce (2) poor living conditions",
+"solution": "본문의 'Living in the sanseong was not practical due to scarce farmland and poor living conditions'에서 근거를 찾는다. 평화로운 시기에 산성에 살지 않은 이유는 농지가 부족하고(scarce) 생활 여건이 열악했기(poor living conditions) 때문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2adc05f7bc",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 아래와 같이 쓸 때, 주어진 <조건>에 알맞게 문장을 완성하시오.\n\nBut wait. There’s more. King Jeongjo was also making a statement about the Joseon Dynasty’s strength. (A)그는 갑옷을 입고 말에 탄 채, 군 지휘관처럼 차려입었다. He was really serious about making the Joseon Dynasty a powerful and successful kingdom.\n\n<조건>\n• 분사구문을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> sit on, a horse, wear, armor, dress up, like, a military leader\n\n→ He ________ ________ ________ ________ ________ ________, ________ ________ and ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "dressed up like a military leader, wearing armor and sitting on a horse",
+"solution": "주절은 과거시제 동사 dressed up 뒤에 like a military leader를 붙여 쓴다. 갑옷을 입고 말에 탄 것은 주절과 동시에 일어난 동작이므로 분사구문 wearing armor와 sitting on a horse로 나타내고, 두 분사구문을 and로 잇는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-cebdd63834",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 아래와 같이 쓸 때, 주어진 <조건>에 알맞게 문장을 완성하시오.\n\nAnd here’s the cherry on top: through the procession, King Jeongjo made government more accessible. During that time, the government used to hold exams to hire officials every three years. So, there weren’t many chances available. (A)그는 행차 중에 특별 시험을 추가하여, 더 많은 사람들에게 정부에 들어갈 기회를 주었다. This move was innovative back then and made the government more diverse.\n\n<조건>\n• 분사구문과 동명사를 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> join, give, special exams, a shot at, add, more people, the government\n\n→ He ________ ________ ________ during the procession, ________ ________ ________ ________ ________ ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "added special exams, giving more people a shot at joining the government",
+"solution": "주절은 과거시제 He added special exams로 쓴다. 그 결과로 기회를 준 것은 분사구문 giving을 써서 '4형식(give+간접목적어+직접목적어)' 구조로 나타낸다. 전치사 at 뒤에는 동명사가 와야 하므로 join을 joining으로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d1b5de7369",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 아래와 같이 쓸 때, 주어진 <조건>에 알맞게 문장을 완성하시오.\n\nAnd among the records of the procession, there are these amazing paintings. One painting, Hwaneo Haengryeoldo, doesn’t just feature the king’s crew, but it also shows ordinary people watching along the road. (A)그것은 그 당시의 일반적인 미술과는 다른 시각인데, 그 미술은 중요한 인물들에게만 초점을 맞추었다.\n\n<조건>\n• 관계대명사의 계속적 용법을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> important figures, only, take, the usual art, focus on, different, which\n\n→ It’s a ________ ________ from ________ ________ ________ of that time, ________ ________ ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "different take from the usual art of that time, which only focused on important figures",
+"solution": "'다른 시각'은 a different take로 쓰고, '~와는'은 from the usual art of that time으로 쓴다. 선행사 the usual art를 보충 설명하므로 콤마 뒤에 계속적 용법 관계대명사 which를 쓴다. 과거의 일이므로 focus on을 과거형 focused on으로 바꾸고, 부사 only는 동사 앞에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4bea3c96c7",
+"typeId": "eng-h2-b02-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 아래와 같이 쓸 때, 주어진 <조건>에 알맞게 문장을 완성하시오.\n\nLet’s go back to the procession. The procession wasn’t just some fancy show for ordinary people. It was actually a way for them to get up close and personal with the king. (A)정조는 행차 동안 일반 백성들이 그를 만나고 그들의 걱정을 나눌 기회를 마련했다. This was a big deal, especially for those who couldn’t read or write.\n\n<조건>\n• 형용사적 용법의 to부정사와 그 의미상 주어를 사용할 것\n• <보기>의 단어를 모두 사용하되, 필요시 변형하고 필요한 단어를 추가할 것\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> concerns, meet, for, set up, common people, chance, share\n\n→ King Jeongjo ________ ________ a ________ during the procession ________ ________ ________ ________ ________ ________ and ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "set up chance for common people to meet him to share their concerns",
+"solution": "과거의 일이므로 set up(과거형 set up)을 쓰고, 목적어 a chance를 둔다. chance를 꾸미는 형용사적 용법 to부정사의 의미상 주어는 'for+목적격'으로 나타내므로 for common people to meet him을 쓴다. and 뒤에는 병렬 구조로 to share their concerns를 쓴다. 완성 문장은 King Jeongjo set up a chance during the procession for common people to meet him and to share their concerns.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3d4fc89483",
+"typeId": "eng-h2-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nMy day on the station begins around six in the morning. My personal space is only about the size of a phone booth, so I check my new emails and brush my teeth while I am still inside my sleeping bag. Because everything floats here, there is no good way to spit, so I just swallow the toothpaste with a sip of water from a straw. After that, I look over the daily schedule that the flight control team on Earth has prepared for me, since every single minute of my day is planned by them. My work is mostly made up of scientific experiments and taking care of the station, and the one I enjoy most is growing basil from seeds and filming it every day.",
+"choices": [
+"① A Typical Day and a Beloved Task of an Astronaut",
+"② The Difficulty of Brushing Teeth Without Gravity",
+"③ How the Earth Team Fully Controls the Station",
+"④ Scientific Methods for Growing Basil in Space",
+"⑤ The Surprisingly Small Living Space on the ISS"
+],
+"answer": "①",
+"solution": "글은 우주 정거장에서 글쓴이가 아침에 일어나 이메일 확인, 양치, 일정 점검, 실험·정비로 이어지는 하루 일과를 소개하고, 가장 좋아하는 일로 바질 기르기를 언급한다. 즉 '우주 비행사의 전형적인 하루와 가장 좋아하는 일'이 전체 내용을 포괄하므로 제목은 ①이 적절하다. ②③④⑤는 글의 한 부분만 다루거나 지엽적이어서 제목이 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8df01fcf12",
+"typeId": "eng-h2-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nOur mission today was a spacewalk, one of the most dangerous jobs on the ISS. After putting on our spacesuits in the airlock, Scott and I floated out into space to install the bases for some new solar batteries. The endless dark void in front of me made panic rise inside me, and I kept thinking that I would fall forever if my hand ever missed the handrail. Still, I forced myself to concentrate on the task and finally managed to finish it. When I turned my head, the bright blue Earth was shining there in the middle of the darkness, and its beauty was simply beyond description.",
+"choices": [
+"① the technical steps of installing solar batteries",
+"② a dangerous spacewalk and the writer's awe at Earth",
+"③ the correct way to wear a spacesuit in an airlock",
+"④ the long training astronauts need before missions",
+"⑤ the scientific causes of panic inside a vacuum"
+],
+"answer": "②",
+"solution": "글쓴이는 위험한 우주 유영 임무 중 공포를 느끼면서도 임무를 완수하고, 어둠 속에서 빛나는 지구의 아름다움에 감탄한다. 따라서 '위험한 우주 유영과 지구의 아름다움에 대한 경외'를 담은 ②가 주제다. 나머지 선지는 글에 나온 소재이지만 글 전체를 아우르는 주제가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b5e7ffc07c",
+"typeId": "eng-h2-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nWhen I first wake up, I am often unsure of how my body is lying, because in the dark and without gravity my inner ear simply takes a random guess at my position. Sometimes I even wake up convinced that I am upside down. In this environment height and weight lose their meaning, so I can treat any wall as a floor and lift a huge object with a single finger as if I were a superhero. However, life without gravity is not all fun. Zero gravity makes astronauts lose muscle and bone density very fast, so I have to exercise for 150 minutes every day, just as my colleagues do.",
+"choices": [
+"① specific exercises that build muscle and bone",
+"② the writer's confusion caused only by darkness",
+"③ life in zero gravity and the effort to adapt to it",
+"④ how the human inner ear senses body position",
+"⑤ the difference between a floor and a wall in space"
+],
+"answer": "③",
+"solution": "글은 무중력 환경에서 몸의 위치를 혼동하는 일, 벽을 바닥처럼 쓰고 물건을 쉽게 드는 일, 그리고 근육·골밀도 손실을 막기 위한 운동까지 무중력 생활과 그에 대한 적응을 전반적으로 다룬다. 따라서 주제는 ③이다. ①④⑤는 세부 내용, ②는 '어둠'으로만 한정해 범위가 좁다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-765563f74b",
+"typeId": "eng-h2-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nThe ISS is the ninth space station in which humans have lived, and astronauts have occupied it without a break since 2000. As big as a football field, it is made of many sections, such as experiment modules, habitation modules, and solar battery panels. What makes it truly special is that it was assembled out in space by fifteen different nations over about two decades. Thousands of people who spoke different languages and used different engineering standards worked together to put it into orbit and keep it running. This is why many astronauts believe the ISS will stand forever as proof of what people can accomplish when they join their efforts and skills together.",
+"choices": [
+"① The Various Modules That Make Up the ISS",
+"② Fifteen Nations and Their Different Technologies",
+"③ The ISS: Living Proof of Human Cooperation and Skill",
+"④ A Long History of Space Stations Since the Year 2000",
+"⑤ Why Assembling a Station in Space Is So Difficult"
+],
+"answer": "③",
+"solution": "글은 ISS가 15개국의 수많은 사람들이 서로 다른 언어와 공학 기준을 넘어 협력해 만든 결과물이며, 인류의 협력과 기술의 증거로 남을 것이라는 점을 강조한다. 따라서 '인류의 협력과 기술의 증거'를 담은 ③이 제목으로 가장 알맞다. ①②⑤는 글의 일부 소재일 뿐이고 ④는 글의 핵심인 '협력'을 담지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fb9a20dd65",
+"typeId": "eng-h2-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 요지로 가장 알맞은 것은?\n\nMother Earth did not welcome us back gently. Because the atmosphere resists any object coming from space, falling through it created temperatures as high as 1,650 degrees Celsius. As our capsule heated up and orange and purple flaming pieces flew past the blackened window, we dropped faster than the speed of sound, until a parachute suddenly caught us and swung us wildly down to the ground. In those first minutes after landing, my arms and legs felt terribly heavy, and getting used to gravity again will take a long time. Yet none of that mattered. I was finally home, able to smell the grass and feel the wind and the rain, and I will remember how magical these simple things are for the rest of my life.",
+"choices": [
+"① 지구의 대기권은 외부 물체로부터 지구를 보호한다.",
+"② 무중력에서 다시 중력에 적응하는 데에는 오랜 시간이 걸린다.",
+"③ 우주 비행사는 착륙 직후 극심한 신체적 고통을 겪는다.",
+"④ 힘겨운 귀환 과정에도 불구하고 집에 돌아온 기쁨은 무엇과도 바꿀 수 없다.",
+"⑤ 낙하산은 캡슐을 안전하게 지상으로 내려 주는 핵심 장치다."
+],
+"answer": "④",
+"solution": "글쓴이는 극심한 열과 무거워진 몸 등 고통스러운 대기권 재진입 과정을 서술하지만, 결국 '그 무엇도 중요하지 않았다. 나는 마침내 집에 왔다'며 지구에 돌아온 기쁨을 강조한다. 따라서 요지는 ④이다. ①②③⑤는 모두 세부 내용에 해당할 뿐 글이 전하려는 핵심은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1a8702b1a8",
+"typeId": "eng-h2-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nI'll go back to Earth tomorrow. If leaving Earth was frightening and uncomfortable, coming back down is one of the most dangerous and physically harsh things an astronaut ever does. Back on Earth, I know I will miss many things from the station — the satisfaction of finishing a hard experiment or a spacewalk, and, above all, my basil plants, whose leaves have grown into a thick little forest. All the same, I will never forget how fortunate we are to have that wonderful blue planet as our home.\n\n→ Although the writer admits that returning to Earth is extremely (A)__________ and feels sad about leaving behind the rewarding work and the plants on the station, in the end the writer expresses deep (B)__________ for being able to call such a beautiful planet home.",
+"choices": [
+"① comfortable  —  regret",
+"② perilous  —  gratitude",
+"③ boring  —  indifference",
+"④ exciting  —  anxiety",
+"⑤ ordinary  —  appreciation"
+],
+"answer": "②",
+"solution": "글쓴이는 지구로의 귀환이 '가장 위험하고 신체적으로 혹독한(dangerous and physically harsh)' 일이라고 말하므로 (A)에는 perilous가 알맞다. 또한 정거장의 일과 식물을 그리워하면서도 결국 아름다운 지구를 집으로 가진 것에 대한 감사를 표하므로 (B)에는 gratitude가 들어간다. 따라서 정답은 ②이다. ⑤의 appreciation은 (B)로 가능해 보이지만 (A)의 ordinary가 '위험하고 혹독한'과 반대되어 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m3s0t0",
+"custom": true
 }
 ]

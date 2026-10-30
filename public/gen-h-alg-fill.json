@@ -472,5 +472,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-18204",
 "custom": true
+},
+{
+"id": "fill-3b48d244bb",
+"typeId": "18315",
+"kind": "객관식",
+"diff": 2,
+"body": "세 수 $A=\\sin\\frac{\\pi}{9}$, $B=\\sin\\frac{5\\pi}{18}$, $C=\\sin\\frac{4\\pi}{9}$의 대소 관계로 옳은 것은?",
+"choices": [
+"$A<B<C$",
+"$A<C<B$",
+"$B<A<C$",
+"$B<C<A$",
+"$C<B<A$"
+],
+"answer": "①",
+"solution": "$0<\\frac{\\pi}{9}<\\frac{5\\pi}{18}<\\frac{4\\pi}{9}<\\frac{\\pi}{2}$이다. 함수 $y=\\sin x$는 $0<x<\\frac{\\pi}{2}$에서 증가하므로 $A<B<C$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18315",
+"custom": true
+},
+{
+"id": "fill-1b2a364491",
+"typeId": "18315",
+"kind": "객관식",
+"diff": 2,
+"body": "세 수 $A=\\cos\\frac{\\pi}{8}$, $B=\\cos\\frac{3\\pi}{8}$, $C=\\cos\\frac{5\\pi}{8}$의 대소 관계로 옳은 것은?",
+"choices": [
+"$A<B<C$",
+"$A<C<B$",
+"$B<C<A$",
+"$C<A<B$",
+"$C<B<A$"
+],
+"answer": "⑤",
+"solution": "$0<\\frac{\\pi}{8}<\\frac{3\\pi}{8}<\\frac{5\\pi}{8}<\\pi$이다. 함수 $y=\\cos x$는 $0<x<\\pi$에서 감소하므로 $C<B<A$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18315",
+"custom": true
+},
+{
+"id": "fill-759df64aec",
+"typeId": "18315",
+"kind": "객관식",
+"diff": 2,
+"body": "세 수 $\\sin\\frac{\\pi}{6}$, $\\cos\\frac{\\pi}{6}$, $\\tan\\frac{\\pi}{6}$의 대소 관계로 옳은 것은?",
+"choices": [
+"$\\sin\\frac{\\pi}{6}<\\cos\\frac{\\pi}{6}<\\tan\\frac{\\pi}{6}$",
+"$\\sin\\frac{\\pi}{6}<\\tan\\frac{\\pi}{6}<\\cos\\frac{\\pi}{6}$",
+"$\\cos\\frac{\\pi}{6}<\\sin\\frac{\\pi}{6}<\\tan\\frac{\\pi}{6}$",
+"$\\tan\\frac{\\pi}{6}<\\sin\\frac{\\pi}{6}<\\cos\\frac{\\pi}{6}$",
+"$\\tan\\frac{\\pi}{6}<\\cos\\frac{\\pi}{6}<\\sin\\frac{\\pi}{6}$"
+],
+"answer": "②",
+"solution": "$\\sin\\frac{\\pi}{6}=\\frac12$, $\\tan\\frac{\\pi}{6}=\\frac{1}{\\sqrt3}$, $\\cos\\frac{\\pi}{6}=\\frac{\\sqrt3}{2}$이다. $\\frac12<\\frac{1}{\\sqrt3}<\\frac{\\sqrt3}{2}$이므로 주어진 대소 관계가 성립한다.",
+"source": "유사 문항",
+"twinGroup": "tw-18315",
+"custom": true
+},
+{
+"id": "fill-5a1e8c1d60",
+"typeId": "18315",
+"kind": "객관식",
+"diff": 5,
+"body": "네 수 $P=\\tan\\frac{7\\pi}{10}$, $Q=\\sin\\frac{17\\pi}{12}$, $R=\\cos\\frac{8\\pi}{9}$, $S=\\sin\\frac{11\\pi}{10}$의 대소 관계로 옳은 것은?",
+"choices": [
+"$P<Q<R<S$",
+"$P<R<Q<S$",
+"$Q<P<R<S$",
+"$Q<R<P<S$",
+"$S<R<Q<P$"
+],
+"answer": "①",
+"solution": "$P=-\\tan\\frac{3\\pi}{10}<-1$이고, $Q=-\\cos\\frac{\\pi}{12}$, $R=-\\cos\\frac{\\pi}{9}$, $S=-\\sin\\frac{\\pi}{10}=-\\cos\\frac{2\\pi}{5}$이다. $0<\\frac{\\pi}{12}<\\frac{\\pi}{9}<\\frac{2\\pi}{5}<\\frac{\\pi}{2}$에서 코사인함수는 감소하므로 $Q<R<S$이다. $Q$, $R$, $S$는 모두 $-1$보다 크므로 $P<Q<R<S$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18315",
+"custom": true
+},
+{
+"id": "fill-3c170e0a10",
+"typeId": "18315",
+"kind": "주관식",
+"diff": 5,
+"body": "$0<x<\\frac{\\pi}{4}$이고 $x\\ne\\frac{\\pi}{8},\\frac{\\pi}{6}$일 때, 네 수\n\n$A=\\sin x,\\quad B=\\cos x,\\quad C=\\sin 2x,\\quad D=\\cos 2x$\n\n의 대소 관계를 $x$의 범위에 따라 각각 나타내시오.",
+"selfGrade": true,
+"answer": "$0<x<\\frac{\\pi}{8}$일 때 $A<C<D<B$, $\\frac{\\pi}{8}<x<\\frac{\\pi}{6}$일 때 $A<D<C<B$, $\\frac{\\pi}{6}<x<\\frac{\\pi}{4}$일 때 $D<A<B<C$",
+"solution": "$A<B$와 $A<C$, $D<B$는 주어진 범위에서 항상 성립한다. $C=D$가 되는 경계는 $2x=\\frac{\\pi}{4}$, 즉 $x=\\frac{\\pi}{8}$이다. 또한 $A=D$와 $B=C$는 모두 $x=\\frac{\\pi}{6}$에서 성립한다. 이 두 경계를 기준으로 각 함수의 증가와 감소를 적용하면 제시한 세 가지 대소 관계를 얻는다.",
+"source": "유사 문항",
+"twinGroup": "tw-18315",
+"custom": true
+},
+{
+"id": "fill-1d78380a14",
+"typeId": "18315",
+"kind": "주관식",
+"diff": 5,
+"body": "$0<x<y<\\frac{\\pi}{2}$이고 $x+y=\\frac{\\pi}{2}$일 때, 두 수\n\n$A=x\\sin x+y\\sin y,\\quad B=x\\cos x+y\\cos y$\n\n의 대소 관계를 나타내시오.",
+"selfGrade": true,
+"answer": "$A>B$",
+"solution": "$x+y=\\frac{\\pi}{2}$이므로 $\\cos x=\\sin y$, $\\cos y=\\sin x$이다. 따라서 $A-B=(y-x)(\\sin y-\\sin x)$로 정리된다. $x<y$이고 사인함수는 $0<x<\\frac{\\pi}{2}$에서 증가하므로 두 인수가 모두 양수이고, 따라서 $A>B$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18315",
+"custom": true
 }
 ]

@@ -3960,5 +3960,556 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u0m4s0t0",
 "custom": true
+},
+{
+"id": "fill-5a3c490436",
+"typeId": "eng-h1-b09-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nI visited the clog factory near the windmills. The shop owner showed me how clogs (A)[are made / are making] from a single block of wood. I was really (B)[interesting / interested] in the whole process. Wearing a pair of clogs, which I had never tried before, (C)[was / were] a completely new experience for me.",
+"choices": [
+"are made / interesting / was",
+"are made / interested / was",
+"are making / interested / were",
+"are made / interested / were",
+"are making / interesting / was"
+],
+"answer": "②",
+"solution": "(A)는 나막신이 '만들어지는' 것이므로 수동태 are made가 맞다. (B)는 사람이 느끼는 감정이므로 과거분사형 형용사 interested가 맞다. (C)의 주어는 동명사구 Wearing a pair of clogs로 단수 취급하므로 was가 맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-01f7b932cd",
+"typeId": "eng-h1-b09-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nVolendam was a pretty fishing village (A)[which / where] I could enjoy fresh seafood. The harbor was dotted with boats. I rented a bike (B)[explore / to explore] the village. At a restaurant, I ordered kibbeling, one of the most popular (C)[dish / dishes] in the Netherlands.",
+"choices": [
+"which / explore / dishes",
+"where / to explore / dish",
+"where / to explore / dishes",
+"which / to explore / dishes",
+"where / explore / dishes"
+],
+"answer": "③",
+"solution": "(A)는 뒤에 완전한 절이 오고 선행사가 장소(village)이므로 관계부사 where가 맞다. (B)는 '~하기 위해'라는 목적을 나타내는 to부정사 to explore가 맞다. (C)는 'one of the + 최상급 + 복수명사' 구조이므로 dishes가 맞다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-62ac9f45cd",
+"typeId": "eng-h1-b09-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Van Gogh Museum was the place I was really excited (A)[visiting / to visit]. The exhibits were (B)[arranging / arranged] to show how the artist's style had changed over time. Overall, seeing the artworks in person (C)[was / were] a very powerful experience.",
+"choices": [
+"visiting / arranged / was",
+"to visit / arranging / was",
+"to visit / arranged / were",
+"to visit / arranged / was",
+"visiting / arranging / were"
+],
+"answer": "④",
+"solution": "(A)는 'be excited to do(~하게 되어 신이 나다)' 구조이므로 to visit이 맞다. (B)는 전시물이 '배열되는' 것이므로 수동태 arranged가 맞다. (C)의 주어는 동명사구 seeing the artworks in person으로 단수 취급하므로 was가 맞다. 따라서 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b385234040",
+"typeId": "eng-h1-b09-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것은?\n\nThere was an old bookcase on the second floor. Behind ⓐit was a secret space ⓑwhere Anne and her family hid for over two years. The narrow passages gave me a better understanding of ⓒwhat life must have been like back then. After the visit, I took a canal cruise. The canal houses I saw along the way had mostly ⓓbeen built during the Dutch Golden Age. Taking the cruise ⓔwere a great way to see the city.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ의 주어는 동명사구 Taking the cruise로 단수 취급하므로 were가 아니라 was가 되어야 한다. ⓐ는 the bookcase를 받는 대명사, ⓑ는 장소 선행사 뒤 완전한 절을 이끄는 관계부사 where, ⓒ는 전치사 of의 목적어 역할을 하는 명사절 what, ⓓ는 과거완료 수동태 had been built로 모두 어법상 옳다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-218b873424",
+"typeId": "eng-h1-b09-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nYeot is an old Korean treat that is said to date back more than 1,000 years. Long ago, only the rich could enjoy it, but today everyone can eat it, and it is still popular. Mr. Kim from Chungju learned how to make yeot from his father and grandfather, and his family has been making it in the traditional way for 140 years.",
+"choices": [
+"The Modern Factory Production of Yeot",
+"Yeot: A Traditional Korean Treat with a Long History",
+"Why Yeot Is No Longer Popular Today",
+"New Recipes for Making Yeot at Home",
+"The Decline of Korean Family Businesses"
+],
+"answer": "②",
+"solution": "글은 1,000년이 넘는 역사를 지닌 전통 간식 yeot과, 이를 140년간 전통 방식으로 만들어 온 Mr. Kim의 가문을 소개한다. 핵심은 '오래된 전통 간식 yeot과 그 역사'이므로 ②가 제목으로 알맞다. 공장 생산(①), 인기 하락(③), 가정식 신규 레시피(④)는 본문과 반대되거나 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-60d06b6d9e",
+"typeId": "eng-h1-b09-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 알맞은 것은?\n\nIn Aranmula, a village in India, mirrors are made entirely of metal. In an ordinary glass mirror, light must pass through the glass before it is reflected off the metal coating on the back. The Aranmula mirror, however, reflects light directly on its metal surface. For this reason, it shows a clearer and more accurate image than a typical glass mirror.",
+"choices": [
+"the long history of mirror making in India",
+"the reason the Aranmula mirror gives a clearer reflection than a glass mirror",
+"how to coat the back of a glass mirror with metal",
+"the difficulty of selling handmade metal mirrors",
+"the training process of young mirror makers in Aranmula"
+],
+"answer": "②",
+"solution": "유리 거울은 빛이 유리를 통과한 뒤 뒷면 금속에서 반사되지만, Aranmula 거울은 금속 표면에서 바로 빛을 반사해 더 정확한 상을 보여 준다고 설명한다. 즉 더 선명하게 비치는 '이유'가 중심 내용이므로 ②가 주제이다. 역사(①), 판매(④), 교육 과정(⑤)은 본문에 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-62069d2f69",
+"typeId": "eng-h1-b09-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThe pottery craft in Sejnane is tough, and young people tend to avoid it. Yet Rim says the work has made her a more patient person. Because every step must be done slowly and by hand, she has learned to take her time. To her, this is a valuable life lesson that she cherishes.",
+"choices": [
+"Traditional crafts should be replaced by faster methods.",
+"Young people are naturally drawn to difficult handicrafts.",
+"A slow, demanding craft can teach valuable lessons such as patience.",
+"Pottery is the most profitable craft in Sejnane.",
+"Machines make pottery better than people do."
+],
+"answer": "③",
+"solution": "힘들고 느린 작업이지만 Rim은 그 과정에서 인내심을 배웠고 이를 소중한 삶의 교훈으로 여긴다고 말한다. 따라서 '느리고 고된 공예가 인내 같은 교훈을 준다'는 ③이 요지이다. ①②⑤는 본문과 반대이고, 수익성(④)은 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-76a116bcf2",
+"typeId": "eng-h1-b09-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞은 것은?\n\nIn Jeonju, Korea, Kim Dong-sik makes hapjukseons in the old way. Making one fan involves about 150 manual steps and takes four to five days. Kim says you need a lot of patience and determination to make a fan. He sticks to the traditional method so that the perfect traditional skills can be taught and carried into the future.\n\n→ Because making a hapjukseon requires about 150 manual steps over several days, the work demands great (A)__________. Kim keeps making fans in the old way so that the traditional skills can be (B)__________ to future generations.",
+"choices": [
+"(A) speed  (B) sold",
+"(A) patience  (B) passed down",
+"(A) patience  (B) forgotten",
+"(A) money  (B) taught",
+"(A) luck  (B) hidden"
+],
+"answer": "②",
+"solution": "본문에서 부채 하나를 만드는 데 많은 '인내와 끈기(patience and determination)'가 필요하다고 했으므로 (A)는 patience가 알맞다. 또한 전통 기법이 미래로 '전수되기(carried into the future)'를 바란다고 했으므로 (B)는 passed down이 알맞다. (A)에 patience가 들어간 ③은 (B)가 forgotten(잊히다)이라 본문과 정반대이므로 함정이다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a00a1c77e6",
+"typeId": "eng-h1-b09-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIs there any food you don’t like, while many others just can’t stop loving it? For Isabella, such food is cilantro, the green leaves common in the cuisines of Thailand, Mexico, Morocco, and many other countries. Even though her family is from Thailand, Isabella loves meeting other people who don’t like cilantro since they don’t make her feel so odd or weird. Cilantro is one of those polarizing foods with lots of fans and haters, which often include mushrooms, olives, and blue cheese, among others. “Love it” or “hate it” is pretty clear for these foods, but there could be many reasons behind the preference. Let us talk about three of them.",
+"choices": [
+"Isabella의 가족은 멕시코 출신이다.",
+"고수는 태국 요리에서는 거의 쓰이지 않는다.",
+"Isabella는 고수를 싫어하는 사람들을 만나면 자신이 덜 이상하게 느껴진다.",
+"버섯, 올리브, 블루치즈는 누구나 좋아하는 음식의 예로 제시된다.",
+"글쓴이는 음식 선호의 이유를 다섯 가지 소개하겠다고 한다."
+],
+"answer": "③",
+"solution": "Isabella는 고수를 싫어하는 사람들이 자신을 이상하게 느끼게 하지 않아서 그들을 만나는 것을 좋아한다고 했으므로 ③이 글의 내용과 일치한다. Isabella의 가족은 태국 출신이고(①), 고수는 태국 요리에 흔히 쓰인다(②). 버섯, 올리브, 블루치즈는 호불호가 갈리는 음식의 예이고(④), 글쓴이가 소개하겠다고 한 이유는 세 가지다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ee2fc3eb1b",
+"typeId": "eng-h1-b09-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nFood preferences vary across cultures, too. Every culture may have something that is considered disagreeable in other cultures. Durian fruit from Southeast Asia or American sweet potato pie topped with marshmallows may seem distasteful to people not familiar with them. In fact, food preferences in different parts of the world have a lot to do with what is available or essential: for instance, beans in Mexico, okra in India, and fermented shark in Iceland. Of course, we cannot predict food preferences solely on the basis of a person’s cultural background, as Isabella’s case showed with cilantro.\nIt is not surprising that our food preferences are as varied as the foods we eat. Some of the preferences are biological, and some are learned. Given this, is it any wonder that all sorts of foods have both fans and haters?",
+"choices": [
+"모든 문화에는 다른 문화에서 불쾌하게 여겨지는 음식이 있을 수 있다.",
+"마시멜로를 얹은 고구마 파이는 익숙하지 않은 사람들에게 맛없어 보일 수 있다.",
+"지역별 음식 선호는 그 지역에서 구할 수 있거나 꼭 필요한 것과 관련이 깊다.",
+"아이슬란드의 오크라는 지역별 음식 선호를 보여 주는 예로 제시된다.",
+"음식 선호 중 일부는 생물학적이고 일부는 학습된 것이다."
+],
+"answer": "④",
+"solution": "글에서 오크라는 인도(India)의 예이고, 아이슬란드의 예는 삭힌 상어(fermented shark)이므로 ④가 일치하지 않는다. 나머지 선지는 각각 'Every culture may have something…disagreeable', 'sweet potato pie…may seem distasteful', 'have a lot to do with what is available or essential', 'Some of the preferences are biological, and some are learned'와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3413438297",
+"typeId": "eng-h1-b09-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nFirst of all, we need to be clear about the role of the tongue. The information our tongues send to our brains is very simple. We generally like sweetness and hate bitterness, and the biological reasons for that are deeply rooted in our brains. For one, babies like sweet tastes, not bitter ones, since bitterness can indicate poison. Not liking bitter things is, in a sense, a natural defense mechanism. Due to genetic differences, some people may be more sensitive than others to bitterness. Interestingly, how sensitive you are to bitterness doesn’t always relate to whether or not you like a certain type of food. For example, the fact that someone thinks celery is more bitter than other people find it does not necessarily mean the person can’t grow to like it. Likewise, even if you find it to be less bitter than others do, you may still hate it.",
+"choices": [
+"Why do babies dislike bitter tastes?",
+"What makes some people more sensitive to bitterness than others?",
+"What kind of taste do we generally like?",
+"Which vegetable is used as an example in the passage?",
+"Which specific gene makes people more sensitive to bitterness?"
+],
+"answer": "⑤",
+"solution": "글에는 유전적 차이(genetic differences) 때문에 쓴맛에 더 민감한 사람이 있다는 내용만 있고, 어떤 유전자인지는 나오지 않으므로 ⑤에는 답할 수 없다. ①은 쓴맛이 독을 뜻할 수 있어서, ②는 유전적 차이 때문에, ③은 단맛, ④는 셀러리(celery)로 답할 수 있다. ②와 ⑤처럼 비슷해 보이는 질문을 구별하는 것이 핵심이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-12a1c1ba6f",
+"typeId": "eng-h1-b09-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하는 것은?\n\nThe information our tongues convey does not, however, paint a full picture of the world of tastes. There are also flavors, a wider spectrum of sensations which we get from food. To appreciate flavors such as chocolate, vanilla, blue cheese, and cilantro, we need not just our tongues, but more importantly our noses. As we chew food, its smells make their way to the back of our noses from inside our mouths, enabling us to distinguish between many flavors. Some scientists discovered that individuals with a certain gene are more sensitive to the smell of cilantro. These people are likely to say it has a soapy flavor.",
+"choices": [
+"The tongue alone gives us a complete picture of the world of tastes.",
+"Flavors are a narrower range of sensations than what the tongue detects.",
+"To enjoy flavors like vanilla, our noses play a more important role than our tongues.",
+"While we chew, the smells of food reach the front of our noses from outside our mouths.",
+"People with a certain gene are less sensitive to the smell of cilantro."
+],
+"answer": "③",
+"solution": "'we need not just our tongues, but more importantly our noses'에서 풍미를 느끼는 데는 코가 더 중요하다고 했으므로 ③이 일치한다. 혀만으로는 맛의 세계를 다 설명하지 못하고(①), 풍미는 더 넓은(wider) 범위의 감각이다(②). 냄새는 입 안에서 코 뒤쪽으로 가고(④), 특정 유전자를 가진 사람은 고수 냄새에 더 민감하다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-01d80d422d",
+"typeId": "eng-h1-b09-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "대화의 내용과 일치하지 않는 것은?\n\nM: There are so many flavors to choose from. Oh, they are offering two flavors at a discount.\nW: Hmm, I prefer strawberry to mint chocolate chip.\nM: Between the two, I’d go for mint chocolate chip.\nW: All right, but don’t you think mint chocolate chip ice cream tastes like toothpaste?\nM: I used to feel that way, too, but, over time I began to enjoy it.\nW: Really? Has your taste changed?\nM: Believe it or not, it has. Now, I enjoy the fascinating combination of the bitterness of chocolate with the cooling sensation of mint.\nW: Come to think of it, I had a similar experience with Hawaiian pizza.\nM: But that’s your favorite pizza! Didn’t you always like it?\nW: No. Before, I couldn’t understand why some people enjoyed putting warm pineapple on pizza, but now I like it more than any other pizza.\nM: I know what you mean. Our tastes can really change over time.",
+"choices": [
+"The store is offering two flavors at a discount.",
+"The woman likes strawberry better than mint chocolate chip.",
+"The man once thought mint chocolate chip tasted like toothpaste.",
+"The woman has always loved Hawaiian pizza.",
+"The man enjoys the mix of chocolate’s bitterness and mint’s cooling sensation."
+],
+"answer": "④",
+"solution": "남자가 하와이안 피자를 늘 좋아하지 않았느냐고 묻자 여자는 'No.'라고 답하며, 예전에는 피자에 따뜻한 파인애플을 올리는 것을 이해하지 못했다고 말한다. 따라서 ④가 일치하지 않는다. ③은 'I used to feel that way, too'에서, ⑤는 'the fascinating combination of the bitterness of chocolate with the cooling sensation of mint'에서 확인할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-097c29e915",
+"typeId": "eng-h1-b09-u6m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것을 <보기>에서 모두 고르면 몇 개인가?\n\nCan we learn to like a food we’ve long disliked? “Your biology is not your destiny. When you’re open to different foods, you learn to like what you eat,” answers Julie Mennella, a researcher from the Monell Chemical Senses Center. She says that kids are particularly adaptable when it comes to learning to like new foods. Research has shown that after tasting a food eight or ten times, children will become more accepting of it. Similarly, even people who hate cilantro may be able to learn to tolerate it or even like it. Over time and through exposure, they can build up tolerance to cilantro, by adding a small amount in a curry, for example.\nWhile preferences can be changed, usually after a few trials, significant experiences with foods — especially those you had when you were young — can have a lasting effect. Suppose you are hospitalized. Confined to a bed, you get served miyeokguk too many times. Then, you could avoid the food for a long time. In contrast, associations with good memories can make you like some foods. For example, you might love sujeonggwa simply because of a warm, happy memory of your grandmother making it.\n\n<보기>\n(a) Julie Mennella는 생물학적 특성이 음식 선호를 결정짓는 운명이라고 말한다.\n(b) 연구에 따르면 아이들은 한 음식을 여덟 번에서 열 번 맛본 후 그 음식을 더 잘 받아들이게 된다.\n(c) 고수를 싫어하는 사람은 카레에 고수를 듬뿍 넣어 먹어야 고수에 대한 내성을 기를 수 있다.\n(d) 입원 중 미역국을 너무 자주 먹으면 오랫동안 미역국을 피하게 될 수 있다.\n(e) 할머니가 수정과를 만들어 주던 따뜻한 기억 때문에 수정과를 싫어하게 될 수 있다.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "(b)와 (d)만 글의 내용과 일치하므로 정답은 2개다. (a)는 'Your biology is not your destiny.'와 반대이고, (c)는 듬뿍이 아니라 '적은 양(a small amount)'을 넣는다고 했으므로 틀리다. (e)는 좋은 기억 때문에 수정과를 '좋아하게' 될 수 있다는 내용을 거꾸로 바꾼 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9792ce1d62",
+"typeId": "eng-h1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nThe first artwork is a photograph by Benjamin Von Wong, titled Turn Off the Plastic Tap. Through it, he wants people to realize how much plastic flows into the ocean every single minute. He points out that plastic is everywhere in our daily lives—our online orders arrive wrapped in it, and even our clothes contain it. Because plastic is built into the supply chain, he argues, it is not enough for individuals simply to stop buying plastic products. Instead, he urges us to tell our friends and families about the problem and to pressure companies and governments to do the right thing.",
+"choices": [
+"the recycling process of ocean plastic waste",
+"how online shopping increases plastic packaging",
+"the health risks of plastic to marine animals",
+"Von Wong's photography techniques for surreal images",
+"Von Wong's artwork urging action against plastic pollution"
+],
+"answer": "⑤",
+"solution": "글은 Benjamin Von Wong의 사진 작품 Turn Off the Plastic Tap을 소개하며, 바다로 흘러드는 플라스틱 문제를 알리고 사람들의 행동을 촉구한다는 내용이다. 플라스틱 포장이나 옷은 문제의 심각성을 보여주는 예시일 뿐 글의 중심은 아니다. 따라서 '플라스틱 오염에 맞선 행동을 촉구하는 작품'인 ⑤가 주제로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c795c90ed2",
+"typeId": "eng-h1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 알맞은 것은?\n\nHomestead is a painting by Jon Ching that celebrates nature and quietly asks people to appreciate the world around them. Ching believes that humans have separated themselves from nature and now only consume it instead of helping it thrive. His colorful, tender paintings often blend the features of one life form with those of another, suggesting that all living things are connected. He hopes his work reminds us that protecting nature is, in fact, protecting ourselves.",
+"choices": [
+"The History of Nature Painting",
+"Blending Animal Features Just for Fun",
+"Why Bright Colors Make Art Beautiful",
+"Protect Nature, and You Protect Yourself",
+"The Life and Career of Artist Jon Ching"
+],
+"answer": "④",
+"solution": "Jon Ching의 그림 Homestead는 자연을 찬미하며 모든 것이 연결되어 있으므로 자연을 보호하는 것이 곧 우리를 보호하는 것이라는 메시지를 전한다. 생물의 특징을 섞거나 색감이 풍부하다는 점은 세부 내용일 뿐이다. 따라서 글의 중심 메시지를 담은 ④가 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4165cf0c64",
+"typeId": "eng-h1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 알맞은 것은?\n\nForget Me Not is Jenny Kendler's personal love letter to the sea. She spent an entire year gathering shells to cover an old boom box. The device plays what sounds like peaceful ocean waves, but the sounds are actually recordings she made as one of her baby teeth dissolved in acid. Through this, Kendler asks us to imagine what sea creatures might go through if we keep burning fossil fuels carelessly. As the ocean absorbs more carbon dioxide, it grows more acidic, and in such water the hard shells of many marine species will dissolve. She believes that art can help people imagine a different world and take both individual and collective responsibility.",
+"choices": [
+"A Year Spent Collecting Beautiful Seashells",
+"The Relaxing Sounds of Rolling Ocean Waves",
+"Art That Speaks Up for a Threatened Sea",
+"How Carbon Dioxide Dissolves in Seawater",
+"The Curious Science of Losing a Baby Tooth"
+],
+"answer": "③",
+"solution": "글은 Jenny Kendler의 작품 Forget Me Not을 통해 화석 연료 사용으로 바다가 산성화되어 해양 생물이 위협받는 현실을 알리고, 예술이 사람들의 인식과 행동을 이끌 수 있음을 말한다. 조개 수집, 파도 소리, 이산화탄소, 젖니는 메시지를 전하기 위한 소재일 뿐이다. 따라서 위협받는 바다를 대변하는 예술이라는 ③이 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9b5692a0da",
+"typeId": "eng-h1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 알맞은 것은?\n\nIn 2018, the street artist Banksy painted a new work on a garage wall in Port Talbot, Wales. From one angle it shows a child happily catching snowflakes in his mouth, but from another angle the \"snow\" turns out to be ash from a burning dumpster. A local resident had asked Banksy to call attention to the town's dust, which came from a nearby steel plant and put children's health at risk. Because children breathe faster than adults, they take in more pollutants, and the WHO reports that most of the world's children breathe toxic air every day. Banksy had carried environmental messages before, such as a 2010 piece in Detroit showing a child beside the words \"I remember when all this was trees.\"",
+"choices": [
+"the causes of dust pollution in the town of Port Talbot",
+"the WHO's global plan to reduce children's air pollution",
+"how snowflakes form in cold industrial areas",
+"Banksy's artworks raising awareness of environmental harm",
+"the secret daily life of a well-known street artist"
+],
+"answer": "④",
+"solution": "글은 Banksy가 Port Talbot과 Detroit에서 만든 작품들을 통해 대기 오염과 환경 파괴 문제를 사람들에게 알린다는 점을 설명한다. 먼지 문제나 WHO 통계, 눈송이 장면은 작품의 환경 메시지를 뒷받침하는 세부 내용일 뿐이다. 따라서 '환경 문제에 대한 인식을 높이는 Banksy의 예술'인 ④가 주제로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-07d27ddbe4",
+"typeId": "eng-h1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용을 다음과 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nBenjamin Von Wong's photograph Turn Off the Plastic Tap shows how much plastic enters the ocean every minute. Von Wong explains that plastic is everywhere: it wraps the products we order online and is woven into the clothes we wear. Since plastic is built into the supply chain, he says, a single consumer finds it harder and harder to opt out, and refusing to buy plastic products only goes so far. That is why he asks us to spread the word to friends and family and to pressure companies and governments to act.\n\n→ Von Wong's photograph reveals the scale of ocean plastic pollution and argues that, because plastic is deeply (A)______ into the supply chain, individual choices alone are not enough; real change also requires (B)______ action that pushes companies and governments to change.",
+"choices": [
+"(A) built  (B) collective",
+"(A) removed  (B) individual",
+"(A) built  (B) personal",
+"(A) added  (B) isolated",
+"(A) hidden  (B) collective"
+],
+"answer": "①",
+"solution": "글은 플라스틱이 공급망에 깊이 '내재되어(built into)' 있어 개인의 선택만으로는 한계가 있으며, 기업과 정부를 움직이는 '집단적(collective)' 행동이 필요하다는 점을 강조한다. 따라서 (A)에는 built, (B)에는 collective가 들어가야 하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e8f65a1853",
+"typeId": "eng-h1-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe first art piece is a photograph by Benjamin Von Wong. His artworks rally people around environmental actions. In the photo, titled Turn Off the Plastic Tap, he highlights the fact (A)[that / what] a huge amount of plastic enters the ocean every minute. He says, “You can’t order a product online without having it (B)[deliver / delivered] in plastic packaging. Of course, you can choose not to purchase products (C)[contained / containing] plastic, but that only goes so far.”",
+"choices": [
+"that - delivered - containing",
+"what - delivered - containing",
+"that - deliver - contained",
+"that - delivered - contained",
+"what - deliver - containing"
+],
+"answer": "①",
+"solution": "(A)는 the fact와 동격을 이루는 완전한 절을 이끄는 접속사 that이 알맞다(what은 불완전한 절을 이끎). (B)는 「have+목적어+p.p.」의 수동 관계이므로 delivered가 알맞다. (C)는 products를 능동으로 수식하는 현재분사 containing이 알맞다(products가 plastic을 '포함하는' 능동 관계). 따라서 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-270aaa39e2",
+"typeId": "eng-h1-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nG: Hey, did you watch the live stream of young environmental activists’ speeches at the UN yesterday? They were ①amazing!\nB: Yes, I did. It was great ②to see young people voicing their opinions on climate change.\nG: How about encouraging our classmates ③joining us? More people means more ideas.\nB: Good idea. We can come up with some ideas ④that will make our city more eco-friendly.\nG: I’m sure that more and more teenagers will start ⑤expressing their own ideas.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "「encourage+목적어+to부정사」 구조이므로 ③ joining은 to join이 되어야 한다. ① 연설(사물)이 '놀라움을 주는' 능동 의미이므로 amazing이 맞고, ② 가주어 It에 대한 진주어 to see, ④ 선행사 ideas를 받는 주격 관계대명사 that, ⑤ start는 동명사·to부정사를 모두 목적어로 취하므로 expressing은 옳다. 따라서 어색한 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b5dc1bc342",
+"typeId": "eng-h1-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nG: I was wondering if you could help me ①find some volunteer work for the city.\nM: What about joining the Urban Garden campaign?\nG: That sounds ②interested. Could you tell me more about it?\nM: It’s a campaign ③in which local students come together to create small gardens in urban spaces. It helps make the city ④greener.\nG: That’s a great way ⑤to support our community.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "②",
+"solution": "주어(That=캠페인, 사물)가 '흥미를 주는' 능동 의미이므로 ② interested는 interesting이 되어야 한다. ① help는 목적격보어로 원형부정사(또는 to부정사)를 취하므로 find가 맞고, ③ 뒤에 완전한 절이 오므로 「전치사+관계대명사」 in which, ④ 「make+목적어+형용사」의 비교급 greener, ⑤ way를 수식하는 to부정사 to support는 옳다. 따라서 어색한 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-39f4a02b36",
+"typeId": "eng-h1-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nThe piece below, titled Homestead, is a painting by Jon Ching. One cannot help but ①smile at his paintings, which ②are rich in color and tenderness. One of the fun aspects of his work ③is how he blends the features of one life form with ④that of another. I want to show that everything is connected and that protecting nature is actually ⑤protecting us.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "④는 앞의 복수명사 the features를 대신하므로 that이 아니라 those가 되어야 한다. ① 「cannot help but+동사원형」이므로 smile이 맞고, ② 선행사 paintings(복수)를 받는 which이므로 are, ③ 주어의 핵이 One이므로 단수동사 is, ⑤ be동사 뒤 진행형 보어 protecting은 옳다. 따라서 어색한 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-91221a0130",
+"typeId": "eng-h1-b09-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSecretive street artist Banksy was asked by Gary Owen to create art that would highlight Port Talbot’s dust problem. Owen believed (A)[what / that] the area’s children were facing serious health risks by playing in the dust coming from the local steel plant. According to the WHO, about 93% of the world’s children under 15 (B)[breathe / breathes] in toxic air every day. His 2010 artwork showed a child with a can of red paint and the words, “I remember the time (C)[when / which] all this was trees.”",
+"choices": [
+"what - breathe - when",
+"that - breathes - which",
+"that - breathe - which",
+"that - breathe - when",
+"what - breathes - when"
+],
+"answer": "④",
+"solution": "(A)는 believed의 목적어로 완전한 절을 이끄는 접속사 that이 알맞다(what은 불완전한 절을 이끎). (B)의 실질적 주어는 복수명사 children이므로 복수동사 breathe가 알맞다. (C)는 선행사가 the time(시간)이고 뒤에 완전한 절이 오므로 관계부사 when이 알맞다. 따라서 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-78f2fe61e0",
+"typeId": "eng-h1-b09-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nI used cue cards ①which contained key phrases about important facts. I rehearsed how I ②would stand and how I would make eye contact with the audience. When the teacher called my name, I noticed that my nerves ③had calmed down a bit. I walked up to the front of the class and ④looked out into the audience. My heart began ⑤race, and I took a deep breath.",
+"choices": [
+"①which contained",
+"②would stand",
+"③had calmed down",
+"④looked out",
+"⑤race"
+],
+"answer": "⑤",
+"solution": "begin은 목적어로 to부정사나 동명사를 취하므로 began race는 began to race(또는 began racing)로 고쳐야 합니다. ①은 선행사 cue cards를 받는 주격 관계대명사, ③은 긴장이 가라앉은 것이 알아챈 시점보다 앞선 일이라 과거완료가 맞고, ④ looked out도 과거시제로 적절합니다. 따라서 답은 ⑤입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-319ff91f55",
+"typeId": "eng-h1-b09-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A)~(C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSo this time, I practiced delivering the speech. I spent a week (A)[to imagine / imagining] every detail of my speech. When my heart began to race, I took a deep breath to calm (B)[down it / it down]. While my voice trembled from time to time, I managed (C)[getting / to get] my whole message across.",
+"choices": [
+"① imagining - it down - to get",
+"② to imagine - it down - to get",
+"③ imagining - down it - getting",
+"④ to imagine - down it - to get",
+"⑤ imagining - it down - getting"
+],
+"answer": "①",
+"solution": "(A) spend+시간+-ing 구문이므로 imagining이 맞습니다. (B) 「동사+부사」 구동사의 목적어가 대명사(it)일 때는 반드시 동사와 부사 사이에 오므로 calm it down이 맞습니다. (C) manage는 to부정사를 목적어로 취하므로 to get이 맞습니다. 따라서 답은 ①입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-776c9dba41",
+"typeId": "eng-h1-b09-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A)~(C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA couple of weeks later, the class (A)[gave / was given] another speech assignment. As I stood up, I could feel my face (B)[to turn / turning] red. After I rushed to my seat, I knew (C)[that / what] I had messed up again.",
+"choices": [
+"① gave - turning - that",
+"② was given - turning - that",
+"③ was given - to turn - what",
+"④ gave - to turn - that",
+"⑤ was given - turning - what"
+],
+"answer": "②",
+"solution": "(A) the class는 과제를 '받는' 대상이므로 수동태 was given이 맞습니다. (B) 지각동사 feel은 목적격보어로 원형이나 현재분사를 쓰는데, 얼굴이 붉어지는 진행의 의미이므로 turning이 적절합니다. (C) knew의 목적어로 뒤 절이 완전하므로 접속사 that이 맞습니다. 따라서 답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9b55063770",
+"typeId": "eng-h1-b09-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ를 아래와 같이 전환할 때, 어법상 알맞지 않은 것은?\n\nMs. Harper said, \"You certainly can't control ⓐwhat others think about your speech. That means you should be focusing on the one thing ⓑyou can control.\" Her words reminded me of myself. ⓒI was too shy to raise my hand in class even when I knew the answer. ⓓI had spent the previous week imagining how my classmates would react. Still, ⓔit is quite all right to fall short of your own expectations as long as you learn something from it.\n\n① ⓐ what others think about your speech\n= the thing which others think about your speech\n② ⓑ the one thing you can control\n= the one thing which you can control\n③ ⓒ I was too shy to raise my hand in class even when I knew the answer.\n= I was so shy that I could raise my hand in class even when I knew the answer.\n④ ⓓ I had spent the previous week imagining how my classmates would react.\n= For the whole previous week, I kept imagining how my classmates would react.\n⑤ ⓔ it is quite all right to fall short of your own expectations\n= to fall short of your own expectations is quite all right",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "「too+형용사+to부정사」는 '너무 ~해서 …할 수 없다'는 부정의 의미이므로, so~that 구문으로 바꾸면 so shy that I couldn't raise my hand가 되어야 합니다. ③은 could로 바꿔 긍정이 되었으므로 의미가 반대로 뒤집혀 알맞지 않습니다. ①·② 관계사 전환, ④ 의미 동일한 과거 반복 표현, ⑤ 가주어 it을 진주어로 되돌린 전환은 모두 적절합니다. 따라서 답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-20124968a6",
+"typeId": "eng-h1-b09-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 바르게 짝지은 것은?\n\nGood listeners can help ⓐcreating a positive communication climate. As a listener, you should look for something ⓑinterested you in the speech. You may pick up some techniques ⓒthat will be useful when it is your time to speak. Now imagine you are giving a presentation. A student in the front row is texting on his cell phone. Two students in the corner ⓓare laughing over something they are holding. Another student ⓔseems working on her homework. Finally, here is a student who ⓕis ready to listen.",
+"choices": [
+"① ⓐ, ⓑ, ⓒ",
+"② ⓐ, ⓑ, ⓔ",
+"③ ⓐ, ⓓ, ⓕ",
+"④ ⓑ, ⓒ, ⓔ",
+"⑤ ⓒ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ 준사역동사 help는 목적어로 동사원형(또는 to부정사)을 취하므로 creating이 아니라 create가 맞습니다. ⓑ something을 뒤에서 수식하며 '당신의 흥미를 끄는'의 능동 의미이므로 현재분사 interesting이어야 합니다. ⓔ seem은 to부정사를 보어로 취하므로 seems to be working이 되어야 합니다. ⓒ 주격 관계대명사 that, ⓓ 복수주어(Two students)에 맞춘 are, ⓕ who is ready는 모두 올바릅니다. 따라서 어색한 것은 ⓐ, ⓑ, ⓔ로 답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u0m1s0t0",
+"custom": true
 }
 ]

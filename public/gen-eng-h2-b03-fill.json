@@ -1945,5 +1945,423 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b03-u5m1s0t0",
 "custom": true
+},
+{
+"id": "fill-779332c245",
+"typeId": "eng-h2-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nUp until the 1936 Olympics, swimmers (A)[used / were used] an open turn. They touched the wall with one or two hands first, turned to the side, and pushed off from the wall by bending their legs. However, open turns had the critical disadvantage of (B)[disrupt / disrupting] the swimmers' flow and speed. This problem (C)[resolved / was resolved] by an American high school student named Al Vande Weghe.\n\n(A) – (B) – (C)",
+"choices": [
+"used – disrupt – resolved",
+"were used – disrupting – was resolved",
+"used – disrupting – was resolved",
+"used – disrupting – resolved",
+"were used – disrupt – resolved"
+],
+"answer": "③",
+"solution": "(A) 수영 선수들이 오픈 턴을 '사용했다'는 뜻이고 뒤에 목적어 an open turn이 있으므로 능동태 used가 맞다. (B)는 전치사 of의 목적어 자리이므로 동명사 disrupting이 와야 한다. (C) 주어 This problem은 해결하는 주체가 아니라 '해결된' 대상이고 뒤에 by가 이어지므로 수동태 was resolved가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-40a8afefa0",
+"typeId": "eng-h2-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nDick Fosbury practiced the major high jump techniques, such as the scissors and the straddle, for the Olympics when he was in high school. He soon realized, however, that these techniques were challenging for him because he didn't have the strength or speed they (A)[required / were required]. Then he found that when he went over the bar backward and landed headfirst, he could jump (B)[high / higher] than anyone on his team. As an engineering major, he later explained that arching the body backward (C)[keep / keeps] the jumper's center of gravity low to the ground.\n\n(A) – (B) – (C)",
+"choices": [
+"required – higher – keeps",
+"required – high – keep",
+"were required – higher – keep",
+"were required – high – keeps",
+"required – higher – keep"
+],
+"answer": "①",
+"solution": "(A) 목적격 관계대명사가 생략된 관계절로, 선행사 the strength or speed가 required의 목적어이고 they(기술들)가 그것을 '요구하는' 주체이므로 능동태 required가 맞다. (B) 뒤에 than이 있으므로 비교급 higher가 와야 한다. (C) 동명사구 arching the body backward가 주어이므로 단수 취급해 keeps를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-281bdc9188",
+"typeId": "eng-h2-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSki jumping is one of the most spectacular winter Olympic (A)[event / events]. The skiers jump from the height of 90 meters, which is as high as a 30-story apartment building. Most of the skiers are able (B)[staying / to stay] in the air for about five to seven seconds. While they are in the air, they are (C)[influenced / influencing] by \"lift,\" an upward force that is produced by air on a fast-moving object.\n\n(A) – (B) – (C)",
+"choices": [
+"event – to stay – influenced",
+"events – staying – influenced",
+"event – staying – influencing",
+"events – to stay – influenced",
+"events – to stay – influencing"
+],
+"answer": "④",
+"solution": "(A) 'one of the + 최상급 + 복수명사' 구문이므로 복수형 events가 맞다. (B) be able 뒤에는 to부정사가 오므로 to stay가 맞다. (C) 선수들은 양력의 영향을 '받는' 대상이고 뒤에 by가 이어지므로 be동사와 함께 수동태를 이루는 과거분사 influenced가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f15b158df3",
+"typeId": "eng-h2-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOctopuses living in trees or a bird speaking two languages — which one do you think is fake news? To identify fake news, we can apply three criteria. First, check the source. The tree octopus story is from a website whose domain ends with “.net,” which means it’s a private site. On the other hand, the bird story is posted on official newspaper sites. Second, evaluate the evidence that supports the story. The tree octopus website claims that tree octopuses are endangered because wealthy people have bought them for fashion. That doesn’t look or sound reasonable. Meanwhile, the bird story presents studies that provide evidence of parrots speaking more than two languages. Lastly, check if other sources are covering the same story. There are no additional news stories or further research about the tree octopuses. However, there is more research on the language abilities of parrots.",
+"choices": [
+"Three criteria can be used to tell whether a story is fake news.",
+"The tree octopus story comes from a private website rather than an official news source.",
+"The bird story about parrots is posted on official newspaper sites.",
+"There is additional research that supports the existence of tree octopuses.",
+"There is more research dealing with the language abilities of parrots."
+],
+"answer": "④",
+"solution": "본문은 나무문어에 대해서는 추가 기사나 연구가 전혀 없다(There are no additional news stories or further research)고 했으므로, 그 존재를 뒷받침하는 추가 연구가 있다는 ④는 일치하지 않는다. ①②③⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-20cdc79561",
+"typeId": "eng-h2-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nB: Mom, I’m hungry. Can we order fried chicken from a delivery service?\nW: Good idea. Which place are you thinking of?\nB: I feel like trying a new restaurant from the delivery app. How about one of these two?\nW: Oh, Chicken Heaven has a perfect five-star rating.\nB: Should we order from them?\nW: Wait. Only eight people have rated the restaurant. Besides, more than half of the five-star ratings came from the same person.\nB: In that case, it seems Mama’s Chicken would be the better choice. Its average rating is slightly lower, but a lot more people have given them a rating.\nW: Right. Most of them have left nice comments, too.",
+"choices": [
+"The boy wants to order from a restaurant he has not tried before.",
+"Chicken Heaven has been rated by only eight people.",
+"More than half of Chicken Heaven’s five-star ratings came from a single person.",
+"Mama’s Chicken has a higher average rating than Chicken Heaven.",
+"Most of the comments left for Mama’s Chicken are positive."
+],
+"answer": "④",
+"solution": "Mama’s Chicken은 평균 평점이 Chicken Heaven보다 '조금 낮다(slightly lower)'고 했으므로, 더 높다는 ④는 일치하지 않는다. 나머지는 모두 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c55adb0190",
+"typeId": "eng-h2-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOnline shops and social media platforms use algorithms to “filter” out content for you based on your past purchases, likes, and search history. To stay away from filter bubbles, it is important to regularly check whether you are already trapped inside one. One way to do this is by performing searches on your favorite online platforms after logging out. Compare the search results and recommendations with what you usually see when you are logged in. Managing your personal information is another key to avoiding filter bubbles. Whenever you go online, your activities are saved as cookies on your computer. Websites can collect them based on your consent. You can remove or limit your consent on the websites or delete the cookies on your computer on a regular basis. This way, you can reduce the amount of personal data that you unconsciously share as you visit websites.",
+"choices": [
+"Algorithms filter content for users based on their past purchases, likes, and search history.",
+"Searching after logging out and comparing the results can help you detect a filter bubble.",
+"Cookies saved on your computer keep a record of your online activities.",
+"Websites are allowed to collect your cookies when they have your consent.",
+"Deleting cookies on a regular basis increases the amount of personal data you share online."
+],
+"answer": "⑤",
+"solution": "본문은 동의를 제한하거나 쿠키를 지우면 공유되는 개인 정보의 양을 '줄일 수 있다(reduce)'고 했으므로, 늘어난다는 ⑤는 일치하지 않는다. ①~④는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f57b90c99b",
+"typeId": "eng-h2-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nTo make social media a positive part of your daily life, it is important to use it mindfully with some guidelines. First, don’t let social media consume all your time and attention. A quick and easy way to do this is to set limits on your usage or take regular breaks from social media. Second, keep in mind that social media is a tool to network with others, not a platform for competition. When you start to feel unpopular or inferior, remember that what you see online presents only the highlights of other people’s lives and does not reflect their entire story. If you still feel envious, use that emotion as motivation that helps you with your personal growth.",
+"choices": [
+"What is one easy way to keep social media from consuming all your time?",
+"What does what we see online usually present about other people’s lives?",
+"How can we turn the feeling of envy into something positive?",
+"How many hours a day should people be allowed to use social media?",
+"What should we remember when we begin to feel inferior online?"
+],
+"answer": "④",
+"solution": "본문은 사용 시간에 제한을 두거나 휴식을 가지라고 권할 뿐, 하루에 몇 시간을 써야 하는지 구체적인 시간은 제시하지 않으므로 ④는 답할 수 없다. ①(한도 설정·휴식), ②(남의 삶의 하이라이트만 보여 줌), ③(성장의 동기로 활용), ⑤(온라인은 전체가 아닌 일부만 보여 준다는 점을 기억)는 모두 본문으로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6c04ae1300",
+"typeId": "eng-h2-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nSki jumping is one of the most spectacular winter Olympic events. While skiers are in the air, they are influenced by \"lift,\" an upward force produced by air on a fast-moving object. When the force of lift is balanced with the force of gravity, the skiers can fly for long distances. The key factors for them to increase lift and jumping distance are increasing their speed, spreading out their bodies and skis, and adjusting their body angle.",
+"choices": [
+"the physical factors that enable ski jumpers to fly longer distances",
+"the dangers ski jumpers face when they land at high speeds",
+"the long history of ski jumping as a winter Olympic event",
+"the scoring rules used to judge ski jumping competitions",
+"the daily training methods required to become an Olympic skier"
+],
+"answer": "①",
+"solution": "글은 공중의 스키 점프 선수에게 작용하는 '양력'과 중력의 균형, 그리고 양력과 비거리를 늘리는 핵심 요소(속도, 몸·스키 펼치기, 각도 조절)를 설명한다. 따라서 선수가 더 멀리 날게 하는 물리적 요인이 주제이다. 위험·역사·채점·훈련은 지문에서 다루지 않았으므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2778de20fc",
+"typeId": "eng-h2-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 알맞은 것은?\n\nUp until the 1936 Olympics, swimmers used an open turn. They touched the wall and turned to the side, but this method disrupted their flow and speed. An American high school student named Al Vande Weghe solved this problem. He would make a forward roll to change direction and then kick against the wall to speed ahead. This flip turn allowed him to maintain as much of his speed and momentum as possible, and it is now the standard in freestyle and backstroke races.",
+"choices": [
+"A Swimmer's New Turn That Became the Standard",
+"The Strict Rules of Olympic Swimming Races",
+"Why Open Turns Are Still Popular Among Swimmers",
+"The Great Difficulty of Learning the Backstroke",
+"Famous Swimmers Who Won Several Olympic Gold Medals"
+],
+"answer": "①",
+"solution": "오픈 턴의 단점을 해결하기 위해 Al Vande Weghe가 플립 턴을 고안했고, 그것이 오늘날 자유형·배영의 표준이 되었다는 내용이다. 따라서 '표준이 된 새로운 턴'이 제목으로 적절하다. 규칙·오픈 턴 인기·배영 난이도·유명 선수는 글의 중심이 아니므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f6d064f5fb",
+"typeId": "eng-h2-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 요지로 알맞은 것은?\n\nIn high school, Dick Fosbury practiced the major high jump techniques, such as the scissors and the straddle. However, he soon realized that these techniques were challenging for him because he didn't have the strength or speed they require. Then he found that when he went over the bar backward and landed headfirst, he could jump higher than anyone on his team.",
+"choices": [
+"Fosbury overcame his physical limitations by finding a new jumping technique.",
+"Only athletes with great strength and speed can succeed in the high jump.",
+"Traditional techniques are always more reliable than newly invented ones.",
+"High jumpers must first master the scissors and the straddle perfectly.",
+"Winning a medal depends mostly on luck rather than on effort."
+],
+"answer": "①",
+"solution": "Fosbury는 힘과 속도가 부족해 기존 기술이 어려웠지만, 뒤로 넘는 새로운 방식을 찾아 더 높이 뛰게 되었다. 즉 신체적 한계를 새로운 기술로 극복했다는 것이 요지이다. 나머지 선지는 글의 내용과 반대이거나 근거가 없으므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9ff07b0045",
+"typeId": "eng-h2-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 알맞은 것은?\n\nIn the beginning, most skiers simply stood upright throughout their jump. Later, this upright style was replaced by the Kongsberger style, in which the upper body was bent at the hips, with the arms extended forward and the skis parallel. This technique doubled the average jumping distance. Then, in 1985, Swedish jumper Jan Boklöv introduced the V style, positioning the skis into a \"V\" shape. This increased the surface area and created more lift, leading to even greater jumping distances. Although it was ridiculed at first, by 1992 all Olympic medalists were using it.",
+"choices": [
+"The Step-by-Step Evolution of Ski Jumping Styles",
+"The Scientific Meaning of Lift and Gravity in Sports",
+"How Wind Tunnel Tests on Skis Are Carried Out",
+"The Hidden Dangers of Changing an Athlete's Technique",
+"Jan Boklöv's Difficult Life as a Professional Ski Jumper"
+],
+"answer": "①",
+"solution": "글은 직립 자세 → Kongsberger 스타일 → V 스타일로 이어지는 스키 점프 자세의 발전 과정을 시간 순으로 서술한다. 따라서 '점프 자세의 단계적 발전'이 제목으로 가장 적절하다. 양력의 과학적 정의, 풍동 실험 방법, 기술 변경의 위험, 보클뢰브의 생애는 글 전체를 아우르지 못하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8e77615d92",
+"typeId": "eng-h2-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 다음과 같이 요약할 때, 빈칸 ⓐ, ⓑ에 들어갈 말로 알맞게 연결된 것은?\n\nAs an engineering major, Dick Fosbury later explained that arching the body backward keeps the jumper's center of gravity low to the ground. The lower the center of gravity, the less energy required to successfully jump over the bar. Another advantage is that with this technique, there is less chance that the jumper's arms or legs will hit the bar and knock it down.\n\n→ By arching his body backward, Fosbury kept his center of gravity ⓐ__________, which required ⓑ__________ energy to clear the bar.\n\nⓐ          ⓑ",
+"choices": [
+"high ― more",
+"high ― less",
+"low ― less",
+"low ― more",
+"balanced ― equal"
+],
+"answer": "③",
+"solution": "지문은 몸을 뒤로 젖히면 무게 중심이 낮아지고(low), 무게 중심이 낮을수록 바를 넘는 데 필요한 에너지가 더 적어진다(less)고 설명한다. 따라서 ⓐ는 low, ⓑ는 less가 알맞으므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-eadd12582c",
+"typeId": "eng-h2-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 요지로 알맞은 것은?\n\nWhile practicing the backstroke, Al Vande Weghe realized that his legs were too heavy for an open turn, which caused him to slow down. To overcome this drawback, he devised a technique now known as the flip turn. His willingness to take a risk and keep experimenting paid off, and using this technique, he won a silver medal in the 1936 Olympics.",
+"choices": [
+"A willingness to experiment and take risks can lead to valuable innovation.",
+"Physical weakness always prevents an athlete from winning a medal.",
+"Following established methods is the safest path to athletic success.",
+"Natural talent matters far more than practice in competitive swimming.",
+"Olympic medals are decided mainly by the quality of a swimmer's equipment."
+],
+"answer": "①",
+"solution": "Al Vande Weghe는 자신의 약점을 극복하려 위험을 감수하고 실험을 계속한 끝에 플립 턴을 고안해 메달을 땄다. 즉 도전과 실험 정신이 가치 있는 혁신으로 이어진다는 것이 요지이다. 신체적 약점·전통 고수·재능·장비를 강조한 나머지 선지는 글의 취지와 맞지 않으므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-53c851b2f4",
+"typeId": "eng-h2-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 주어진 글에 이어질 순서로 알맞은 것은?\n\nHow It Works\nAs a Feature Hunter participant, you will be provided with a collection of images and asked to identify specific features.\n(A) You then examine the displayed image and determine whether the feature you are looking for is visible.\n(B) You begin by selecting the kind of feature you want to search for, such as islands, volcanoes, or cities.\n(C) If you can see the feature in the image, select the Yes option, which will bring you to a page where you identify the feature's location by moving and resizing the boxes around it.",
+"choices": [
+"① (A)-(C)-(B)",
+"② (B)-(A)-(C)",
+"③ (B)-(C)-(A)",
+"④ (C)-(A)-(B)",
+"⑤ (C)-(B)-(A)"
+],
+"answer": "②",
+"solution": "주어진 글에서 참가자가 이미지를 받고 특징을 찾는다고 했으므로, 먼저 어떤 종류의 특징을 찾을지 '고르는' (B)가 와야 한다. 이어서 이미지를 살펴 그 특징이 보이는지 판단하는 (A)가 오고, 보일 경우 Yes를 눌러 위치를 표시하는 (C)로 마무리된다. 따라서 (B)-(A)-(C) 순서가 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-fbac347cb7",
+"typeId": "eng-h2-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nMost flowers bloom in spring, and many leaves change color in autumn. Due to global warming, however, the timing of seasonal cycles is changing. Scientists have been trying to find out how and where these cycles are changing. The problem is that it is impossible for them to keep track of every single plant in the country. This is where ____________ comes in. Project Budburst is a program that engages citizens across the nation to observe and record details about nearby plants.",
+"choices": [
+"① global warming",
+"② modern technology",
+"③ citizen science",
+"④ seasonal cycles",
+"⑤ expert analysis"
+],
+"answer": "③",
+"solution": "과학자들만으로는 나라 안 모든 식물을 추적하는 것이 불가능하다는 문제를 제시한 뒤, 그 해결책으로 시민들이 참여하는 Project Budburst를 소개하고 있다. 전문가가 아닌 일반 시민이 관찰·기록에 참여하는 것이므로 빈칸에는 '시민 과학(citizen science)'이 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-ae5be350d3",
+"typeId": "eng-h2-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA common misconception in science is that only highly trained experts can participate in research and data analysis. ____________, with the right opportunity, anyone can become a scientist, and yes, that means even you! Dealing with a vast amount of data can take scientists decades, but with the help of citizen scientists, this job can be completed in just a few years or months.",
+"choices": [
+"① Therefore",
+"② However",
+"③ For example",
+"④ In addition",
+"⑤ As a result"
+],
+"answer": "②",
+"solution": "앞 문장은 '잘 훈련된 전문가만 연구에 참여할 수 있다'는 흔한 오해를 말하고, 뒤 문장은 '누구나 과학자가 될 수 있다'며 이를 반박한다. 서로 상반된 내용을 이으므로 역접 연결어 However가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-b0700e4336",
+"typeId": "eng-h2-b03-u5m5s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nThe information on the project's website can be used as educational material by educators as well. By collecting and utilizing real-world data, participants can both improve their science (A)____________ and help tackle significant environmental questions. Moreover, the project is a fun and (B)____________ outdoor activity for participants of all ages.\n\n(A)                 (B)",
+"choices": [
+"① literacy ― tedious",
+"② ignorance ― rewarding",
+"③ literacy ― rewarding",
+"④ ignorance ― tedious",
+"⑤ literacy ― exhausting"
+],
+"answer": "③",
+"solution": "실제 데이터를 모으고 활용함으로써 참가자들이 과학적 소양을 '향상시킨다'는 긍정적 맥락이므로 (A)에는 ignorance(무지)가 아니라 literacy(소양)가 맞다. 또한 'fun and ~'로 이어지는 야외 활동의 긍정적 평가이므로 (B)에는 tedious(지루한)·exhausting(지치게 하는)이 아닌 rewarding(보람 있는)이 알맞다. 따라서 literacy ― rewarding이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-6264d03810",
+"typeId": "eng-h2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe first step we took was to decide what to sell. Some of the ideas (A)[that / what] we discussed included cotton candy, corn dogs, and lemonade. Once we decided on lemonade, we were able to find a simple recipe online. It would make about 1.5 liters of lemonade, (B)[which / what] could be sold as five cups. After (C)[trying / tried] out different variations of the recipe on friends and family, we decided on the final recipe.",
+"choices": [
+"① what / which / tried",
+"② that / what / tried",
+"③ that / which / trying",
+"④ what / what / trying",
+"⑤ that / which / tried"
+],
+"answer": "③",
+"solution": "(A) 선행사 the ideas가 있고 discussed의 목적어 역할을 하므로 관계대명사 that이 맞다. what은 선행사를 포함하므로 틀리다. (B) 선행사 lemonade를 받으며 콤마 뒤 계속적 용법이므로 which가 맞고, what은 선행사와 함께 쓸 수 없다. (C) 전치사 After 뒤에는 동명사가 와야 하므로 trying이 맞다. 따라서 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9150135881",
+"typeId": "eng-h2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe main goal of setting up the lemonade stand was to make enough profit for a donation. (A)[To maximize / Maximize] our profit, we needed to decrease our costs and increase our revenue. Developing marketing strategies to attract more customers (B)[was / were] the most enjoyable part. We also planned to install a photo zone and give coupons to customers (C)[who / which] posted photos with the tag \"#sweetsuccess.\"",
+"choices": [
+"① Maximize / were / which",
+"② To maximize / was / who",
+"③ To maximize / were / who",
+"④ Maximize / was / who",
+"⑤ To maximize / was / which"
+],
+"answer": "②",
+"solution": "(A) '~하기 위해'라는 목적을 나타내는 부사적 용법의 to부정사가 필요하므로 To maximize가 맞다. 동사원형 Maximize로는 문장을 시작할 수 없다. (B) 주어가 동명사구 Developing marketing strategies이므로 단수 취급하여 was가 맞다. (C) 선행사 customers가 사람이므로 관계대명사 who가 맞다. 따라서 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a10afbb19b",
+"typeId": "eng-h2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nB: I really want a smartwatch, but I'm always short on money. How can I manage my money better?\nG: If I (A)[were / was] you, I'd create a budget first. Try (B)[using / to use] a money app to keep track of your expenses.\nB: That makes sense. Do you have any other advice?\nG: Well, if you need extra cash, consider (C)[selling / to sell] items you no longer use.",
+"choices": [
+"① was / using / to sell",
+"② were / to use / selling",
+"③ was / using / to sell",
+"④ were / using / selling",
+"⑤ was / using / selling"
+],
+"answer": "④",
+"solution": "(A) 현재 사실의 반대를 가정하는 가정법 과거이므로 be동사는 주어와 상관없이 were를 쓴다. (B) 'Try -ing'는 '시험 삼아 ~해 보다'라는 뜻으로 뒤에 동명사 using이 와야 한다. (C) consider는 동명사를 목적어로 취하므로 selling이 맞다. 따라서 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f45166ced7",
+"typeId": "eng-h2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHigh school is not only (A)[where / what] we study different subjects but also where we learn about life. In this newsletter, I would like to share the story of how (B)[we participated / did we participate] in our community's international food festival. When we decided on lemonade, we also found out that no other stand (C)[had / has] signed up to sell drinks, so lemonade seemed to be the natural choice.",
+"choices": [
+"① what / we participated / had",
+"② where / did we participate / had",
+"③ where / we participated / has",
+"④ where / we participated / had",
+"⑤ what / did we participate / has"
+],
+"answer": "④",
+"solution": "(A) 뒤에 'study + 목적어(subjects)'로 완전한 절이 오므로 관계부사 where가 맞다. what은 불완전한 절을 이끈다. (B) how가 이끄는 간접의문문이므로 '의문사+주어+동사' 어순인 we participated가 맞다. (C) 과거시제 found out보다 먼저 일어난 일을 나타내므로 과거완료 had가 맞다. 따라서 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bbbcbb9223",
+"typeId": "eng-h2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nNow that we had found out how to minimize costs, we needed to decide on a reasonable price. First, we inquired about the previous year's drink prices, and the organizer told us that soft drinks (A)[had been sold / had sold] for $1.50 per cup. We thought we could reasonably sell lemonade to half of the people (B)[attending / attend] the festival, so we aimed to sell 400 cups. In addition to the cost of $280 (C)[required / was required] to make 400 cups, we also had to factor in the $6 we needed for posters and fliers.",
+"choices": [
+"① had been sold / attending / required",
+"② had sold / attend / was required",
+"③ had been sold / attend / required",
+"④ had been sold / attending / was required",
+"⑤ had sold / attending / required"
+],
+"answer": "①",
+"solution": "(A) 음료(soft drinks)는 '팔리는' 대상이므로 과거완료 수동태 had been sold가 맞다. (B) the people을 뒤에서 수식하는 현재분사구가 필요하며 사람들이 '참석하는' 능동 관계이므로 attending이 맞다. (C) the cost of $280을 뒤에서 수식하는 과거분사 required가 맞다. was required로 쓰면 접속사 없이 본동사가 두 개가 되어 틀리다. 따라서 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m1s0t0",
+"custom": true
 }
 ]

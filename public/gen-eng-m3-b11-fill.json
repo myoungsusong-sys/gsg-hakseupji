@@ -3351,5 +3351,222 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-8d26ba78c9",
+"typeId": "eng-m3-b11-u2m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 주어진 문장을 <조건>에 맞게 바꿔 쓰시오.\n\nHe was so stressed that he could not sleep.\n\n<조건>\n• too ~ to 구문을 활용할 것\n• 두 문장의 의미가 일치하도록 할 것",
+"selfGrade": true,
+"answer": "He was too stressed to sleep.",
+"solution": "「so + 형용사 + that + 주어 + can't ~」은 「too + 형용사 + to부정사」로 바꿔 쓸 수 있다. 부정의 의미는 too ~ to 안에 이미 들어 있으므로 not을 다시 쓰지 않는다. stressed를 그대로 두고 could not sleep을 to sleep으로 바꾸면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-8d22b6db87",
+"typeId": "eng-m3-b11-u2m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 바르게 영작한 것은?\n\n그녀는 그 일을 끝낼 수 있을 만큼 충분히 집중했다.",
+"choices": [
+"She was enough focused to finish the work.",
+"She was enough to focused finish the work.",
+"She was focused enough to finish the work.",
+"She was focused to finish enough the work.",
+"She was enough focused finish to the work."
+],
+"answer": "③",
+"solution": "「형용사/부사 + enough + to부정사」 순서로 써서 '~할 만큼 충분히 …하다'를 나타낸다. enough는 형용사 focused 뒤에 와야 하므로 focused enough to finish가 올바르다. enough가 형용사 앞에 오거나 to부정사 어순이 틀린 나머지는 모두 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-6ab645d103",
+"typeId": "eng-m3-b11-u2m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장을 <조건>에 맞게 한 문장으로 바꿔 쓰시오.\n\n• He started to look for a job two years ago.\n• He is still looking for a job.\n\n<조건>\n• 현재완료진행 시제(have been -ing)의 완전한 문장으로 쓸 것\n• for 또는 since를 사용할 것",
+"selfGrade": true,
+"answer": "He has been looking for a job for two years.",
+"solution": "과거에 시작해 지금까지 계속되는 동작은 현재완료진행 「has/have been + -ing」으로 나타낸다. 주어가 He이므로 has been looking을 쓰고, '2년 동안'은 for two years로 표현한다. since two years ago 대신 since 2024처럼 시점을 쓰면 since로도 가능하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-acb1a0c7ee",
+"typeId": "eng-m3-b11-u2m5s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 바르게 영작한 것은?\n\n나의 삼촌은 얼마 동안 일자리를 찾아오고 있다.",
+"choices": [
+"My uncle looks for a job for some time.",
+"My uncle is looking for a job for some time.",
+"My uncle has looked for a job some time ago.",
+"My uncle has been looking for a job for some time.",
+"My uncle have been looking for a job for some time."
+],
+"answer": "④",
+"solution": "'얼마 동안 ~해 오고 있다'는 과거부터 현재까지 계속되는 동작이므로 현재완료진행 has been -ing을 쓴다. ①은 현재시제, ②는 현재진행이라 '계속'의 의미가 부족하고, ③은 완료+ago가 어법상 충돌한다. ⑤는 주어가 3인칭 단수 My uncle인데 have를 써서 수 일치가 틀렸다. 따라서 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-1fc93a7562",
+"typeId": "eng-m3-b11-u2m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장을 <조건>에 맞게 서로 다른 두 문장으로 바꿔 쓰시오.\n\nThe scene was very scary. I couldn't watch it.\n\n<조건>\n• (1)은 so ~ that 구문, (2)는 too ~ to 구문을 사용할 것\n• 두 문장의 의미가 서로 같도록 할 것\n\n(1) ______________________________________\n(2) ______________________________________",
+"selfGrade": true,
+"answer": "(1) The scene was so scary that I couldn't watch it. (2) The scene was too scary to watch.",
+"solution": "'너무 무서워서 볼 수 없었다'는 so ~ that … can't와 too ~ to로 모두 나타낼 수 있다. (1)은 「so + scary + that + 주어 + couldn't watch it」으로 쓴다. (2)의 too ~ to에는 부정의 뜻이 이미 들어 있으므로 not을 쓰지 않고, 목적어 it이 주어와 같으므로 to watch 뒤에 it을 반복하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f0c3c50214",
+"typeId": "eng-m3-b11-u2m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 밑줄 친 우리말 ⓐ를 <조건>에 맞게 영작하시오.\n\nWhen my friends stress me out, I watch horror movies. Good horror movies are so scary that I scream a lot. I guess that ⓐ목청껏 소리 지르는 것이 내가 기분이 나아지도록 도와준다.\n\n<조건>\n• 동명사(-ing)로 시작하는 주어를 쓸 것\n• help + 목적어 + 동사원형 형태를 사용할 것\n• 'at the top of my lungs'를 포함할 것",
+"selfGrade": true,
+"answer": "Screaming at the top of my lungs helps me feel better.",
+"solution": "'소리 지르는 것'은 동명사 주어 Screaming으로 쓰고, 동명사 주어는 단수 취급하므로 동사는 helps가 된다. 'at the top of my lungs(목청껏)'를 주어 뒤에 붙인다. help는 목적어 다음에 동사원형이 오므로 helps me feel better로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-e392946eff",
+"typeId": "eng-m3-b11-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 영영풀이 중 어색한 것의 개수는?\n\n(a) eruption: the act of a volcano sending out lava, ash, and gas\n(b) resident: a person who visits a place for a short time\n(c) crop: a plant such as rice or wheat that farmers grow\n(d) scenery: the natural features of an area, such as mountains and fields\n(e) threaten: to be likely to harm or destroy something\n(f) landslide: a sudden shaking of the ground",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "(b)의 resident는 '특정한 곳에 사는 사람(someone who lives in a particular place)'인데, 보기의 풀이는 '잠시 방문하는 사람'이라 맞지 않습니다. (f)의 풀이 'a sudden shaking of the ground'는 earthquake에 해당하고, landslide는 '산비탈에서 흙과 바위가 무너져 내리는 것(산사태)'입니다. 나머지 (a), (c), (d), (e)는 바르므로 어색한 것은 2개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1ce60b30fe",
+"typeId": "eng-m3-b11-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어의 쓰임이 어색한 것은?",
+"choices": [
+"The government <u>issued</u> a warning about the heavy rain.",
+"Too much <u>rainfall</u> can cause floods and landslides.",
+"A strong earthquake <u>occurred</u> the old buildings in the city.",
+"Wear a mask to <u>prevent</u> the dust from getting into your lungs.",
+"The volcano erupted, and hot <u>ash</u> covered the nearby town."
+],
+"answer": "③",
+"solution": "occur는 '(일이) 일어나다, 발생하다'라는 뜻의 자동사라서 목적어(the old buildings)를 가질 수 없습니다. 의미상 '건물을 파괴했다'라는 뜻이 되도록 destroyed를 써야 합니다. ①의 issue a warning(경고를 발령하다)과 ④의 prevent A from -ing(A가 ~하는 것을 막다)는 모두 바른 쓰임입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-54978172a8",
+"typeId": "eng-m3-b11-u6m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 (A), (B), (C)의 각 네모 안에서 어법과 문맥에 맞는 말로 가장 적절한 것은?\n\n(A) The heavy rain [occurred / destroyed] many crops in the village.\n(B) Strong winds [prevented / protected] the plane from landing safely.\n(C) Scientists say that the volcano is still [active / actively].",
+"choices": [
+"occurred – prevented – active",
+"destroyed – protected – active",
+"destroyed – prevented – actively",
+"destroyed – prevented – active",
+"occurred – protected – actively"
+],
+"answer": "④",
+"solution": "(A) 목적어 many crops가 있으므로 자동사 occur가 아니라 타동사 destroy(파괴하다)가 와야 합니다. (B) 'A가 ~하지 못하게 막다'는 prevent A from -ing로 씁니다. protect A from은 'A를 ~로부터 보호하다'라는 뜻이라 문맥에 맞지 않습니다. (C) be동사 is 뒤에는 보어가 필요하므로 부사 actively가 아니라 형용사 active(활동 중인)를 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a8578d25b0",
+"typeId": "eng-m3-b11-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이에 해당하는 단어를 주어진 철자로 시작하여 빈칸에 쓰시오. (필요하면 형태를 바꿀 것)\n\n(1) to take place\n   → A big earthquake o__________ in the city last night.\n(2) the movement of cars, ships, or aircraft\n   → When the volcano erupted, the ash in the sky stopped air t__________, so no planes could fly.",
+"selfGrade": true,
+"answer": "(1) occurred (2) traffic",
+"solution": "(1) 'to take place(일어나다)'에 해당하는 단어는 occur입니다. last night가 있으므로 과거형 occurred로 써야 하며, r을 한 번 더 쓰는 것에 주의해야 합니다. (2) '자동차·배·항공기의 이동'은 traffic이고, air traffic은 '항공 교통'이라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-bbb61f5e99",
+"typeId": "eng-m3-b11-u6m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 밑줄 친 단어의 쓰임이 바른 것끼리 바르게 묶은 것은?\n\n<보기>\n(a) The flood did a lot of <u>harm</u> to the village.\n(b) The fire <u>destroyed</u> in the forest overnight.\n(c) The <u>soil</u> near a volcano is good for farming.\n(d) The typhoon <u>occurred</u> heavy damage to the area.\n(e) Volcanic ash can <u>disturb</u> usual weather patterns.",
+"choices": [
+"(a), (b)",
+"(a), (c), (e)",
+"(b), (d)",
+"(c), (d), (e)",
+"(a), (c), (d), (e)"
+],
+"answer": "②",
+"solution": "(a)의 do harm to(~에 해를 끼치다), (c)의 soil(토양), (e)의 disturb(방해하다, 어지럽히다)는 모두 바르게 쓰였습니다. (b)의 destroy는 타동사이므로 전치사 in 없이 'The fire destroyed the forest'처럼 목적어를 바로 써야 합니다. (d)의 occur는 목적어를 가질 수 없는 자동사이므로 caused로 바꿔야 합니다. 따라서 바른 것은 (a), (c), (e)입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f53279d25c",
+"typeId": "eng-m3-b11-u5m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어의 영영 풀이가 바르지 못한 것은?",
+"choices": [
+"resource: a supply of something useful that a person or country can use",
+"fairly: in a way that is reasonable and just",
+"disappear: to come into sight and become visible",
+"harsh: unpleasant, severe, or difficult to deal with",
+"additional: more than what is already present; extra"
+],
+"answer": "③",
+"solution": "disappear는 '사라지다', 즉 보이지 않게 되는 것을 뜻한다. ③의 풀이 'to come into sight and become visible(보이게 되다)'은 오히려 appear(나타나다)의 뜻이므로 바르지 못하다. 나머지 resource, fairly, harsh, additional의 풀이는 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ce35ff33c8",
+"typeId": "eng-m3-b11-u5m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "위 글의 밑줄 친 ⓐ~ⓔ와 바꾸어 쓸 수 있는 말로 적절하지 않은 것은?\n\nSome secretly brought one more cow to the commons, while others brought even more to the grassland. They thought that there would be enough grass for the ⓐadditional cows. The number of cows grew quickly. The grass on the commons began to ⓑdisappear, and it became harder for the cows to find grass. Things were ⓒharsh for the villagers; many of the cows died. At last, the grass came back. Now it was able to ⓓsupport only one cow per family. The villagers learned that it is important for everyone to ⓔvalue the resources and use them fairly.",
+"choices": [
+"ⓐ additional → extra",
+"ⓑ disappear → vanish",
+"ⓒ harsh → severe",
+"ⓓ support → cheer for",
+"ⓔ value → treasure"
+],
+"answer": "④",
+"solution": "여기서 support는 '(생계를) 부양하다, 유지하다'의 뜻으로 소 한 마리를 먹여 살린다는 의미이므로 sustain, feed로 바꿀 수 있다. cheer for는 '응원하다'라는 다른 뜻이어서 문맥에 맞지 않는다. additional→extra, disappear→vanish, harsh→severe, value→treasure는 모두 같은 뜻으로 교체가 가능하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m0s0t0",
+"custom": true
 }
 ]

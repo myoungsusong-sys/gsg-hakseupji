@@ -3337,5 +3337,214 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u2m4s0t0",
 "custom": true
+},
+{
+"id": "fill-8e931df43d",
+"typeId": "eng-h2-b08-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nG: Yesterday, I watched a documentary series introducing unique laws around the world.\nB: Sounds interesting.\nG: It was. One episode introduced laws that protect domestic musicians.\nB: How do the laws protect them?\nG: For example, Canada regulates songs played on its radio stations.\nB: Really? Could you explain more?\nG: Canadian radio stations are not supposed to play foreign songs for more than 65% of the broadcasting time.\nB: That’s a good way to protect the domestic music industry. I’d like to watch the documentary, too.\nG: I’ll send you the link.\nB: Thank you.",
+"choices": [
+"소년은 어제 세계의 독특한 법에 관한 다큐멘터리를 보았다.",
+"다큐멘터리의 한 회차는 외국 음악가를 보호하는 법을 소개했다.",
+"캐나다 라디오 방송국은 방송 시간의 65%를 넘겨서 외국 노래를 틀면 안 된다.",
+"소녀는 그 다큐멘터리가 지루했다고 말한다.",
+"소년이 소녀에게 다큐멘터리 링크를 보내 주기로 했다."
+],
+"answer": "③",
+"solution": "소녀는 캐나다 라디오 방송국이 방송 시간의 65%를 넘겨서 외국 노래를 틀면 안 된다고 말하므로 ③이 일치합니다. 다큐멘터리를 본 사람은 소녀이고(①), 보호 대상은 국내(domestic) 음악가입니다(②). 소녀는 다큐멘터리가 흥미로웠다고 했고(④), 링크를 보내 주는 사람도 소녀입니다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-08eeb236a6",
+"typeId": "eng-h2-b08-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nMatilde: Sure. Switzerland is very concerned about the welfare of not only humans, but also animals. In fact, it is one of the world’s most animal-friendly countries, earning the support of many animal lovers. In 2008, the Swiss government made it mandatory for social animals that usually live in groups, such as goldfish, rabbits, or guinea pigs, to be raised in pairs. In other words, it is illegal to own and raise just one goldfish, one rabbit, or one guinea pig. This law recognizes that social animals will experience loneliness if left alone and considers this to be a case of animal abuse. In my case, I raised two guinea pigs when I was young. When one of them died, I had to get another one. Otherwise, I would have been fined.",
+"choices": [
+"스위스는 사람뿐 아니라 동물의 복지에도 관심이 많다.",
+"스위스 정부는 2008년에 사회적 동물을 쌍으로 기르도록 의무화했다.",
+"스위스에서는 토끼를 한 마리만 기르는 것이 불법이다.",
+"Matilde는 어렸을 때 기니피그를 한 마리만 길렀다.",
+"Matilde는 기니피그 한 마리가 죽자 다른 한 마리를 새로 들여야 했다."
+],
+"answer": "④",
+"solution": "Matilde는 'I raised two guinea pigs when I was young.'이라고 했으므로 어렸을 때 기니피그를 두 마리 길렀습니다. 따라서 '한 마리만 길렀다'는 ④가 일치하지 않습니다. 나머지 선지는 모두 글의 내용과 같습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ae65d3d374",
+"typeId": "eng-h2-b08-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nChen: In Singapore, there is a famous law about chewing gum. Chewing gum sales and imports are prohibited in the nation, and violators face fines of up to 2,000 Singapore dollars. Although the law itself is quite well-known internationally, I imagine that the reason behind it is not. Singapore was a small nation with limited resources when it gained independence. The nation’s prime minister at the time came up with strategies to boost national prosperity, one of which was to transform the nation into an “oasis” for tourists in Asia. In order to accomplish this, he emphasized cleanliness and orderliness, which resulted in the establishment of the gum ban in 1992.",
+"choices": [
+"싱가포르에서는 껌의 판매와 수입이 금지되어 있다.",
+"껌 관련 법을 어기면 최대 2,000 싱가포르 달러의 벌금을 낸다.",
+"껌 금지법은 1992년에 만들어졌다.",
+"당시 총리는 싱가포르를 아시아 관광객들의 '오아시스'로 만들고자 했다.",
+"싱가포르는 독립 당시 자원이 풍부한 큰 나라였다."
+],
+"answer": "⑤",
+"solution": "글에서는 싱가포르가 독립 당시 'a small nation with limited resources', 즉 자원이 부족한 작은 나라였다고 합니다. 따라서 ⑤가 일치하지 않습니다. ①~④는 각각 판매·수입 금지, 최대 2,000 싱가포르 달러의 벌금, 1992년 제정, 관광 '오아시스' 전략과 일치합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-aa1515d50f",
+"typeId": "eng-h2-b08-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nSophia: As you know, people from all over the world visit Rome, the capital of Italy. Unfortunately, some tourists’ actions caused severe damage to the city’s historical monuments. So, the city had to establish a number of laws to protect its numerous historical sites. One of them was to forbid adding a lock to any bridge in Rome. You may have heard that to symbolize their love forever, many couples carve their names on locks and attach them to a bridge. However, as the weight of the locks increases the pressure on bridges, they are no longer permitted. Even the existing ones have been removed since 2012. This law was also introduced in Venice so that locks could no longer damage the famous Rialto Bridge. In addition, people are not allowed to go into the city’s iconic Trevi Fountain. Although you may be tempted to dip your toes into the cool fountain water on a hot summer day, it is illegal to do so. Sitting on Rome’s famed Spanish Steps has also been banned since 2019. If you don’t follow this law, you are made to pay a fine ranging from €250 to €450. All of these laws are committed to protecting the city’s historical monuments.",
+"choices": [
+"Why are locks no longer permitted on bridges in Rome?",
+"What do many couples carve on locks before attaching them to a bridge?",
+"Which famous bridge in Venice is protected by the same law?",
+"How many locks have been removed from Rome’s bridges since 2012?",
+"Since when has sitting on the Spanish Steps been banned?"
+],
+"answer": "④",
+"solution": "글에는 2012년부터 기존 자물쇠도 제거되었다는 내용만 있고, 몇 개가 제거되었는지는 나오지 않습니다. 따라서 ④는 답할 수 없습니다. ①은 자물쇠의 무게가 다리에 압력을 더하기 때문, ②는 연인들의 이름, ③은 Rialto Bridge, ⑤는 2019년으로 답할 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-fe67b77242",
+"typeId": "eng-h2-b08-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAll cultures are different from one another. They have their unique characteristics. While some of the features are visible, such as what language people use or how they dress, others are quite hidden, like what people value. A psychologist named Geert Hofstede became interested in cataloging these invisible cultural features, and he came up with a number of categories. According to him, a cultural difference can be found regarding uncertainty avoidance. Uncertainty avoidance refers to how well people of a certain culture tolerate the unexpected. Cultures with high uncertainty avoidance are uncomfortable with unexpected or unknown events. Thus, they tend to have strict standards and guidelines to prevent uncertain things from happening. On the other hand, cultures with low uncertainty avoidance are more open to the unknown and show more acceptance to things that are different. This is why these cultures tend to impose fewer regulations. Another feature that distinguishes cultures is their orientation of temporal horizon, or how they relate to time. Cultures with short-term orientation emphasize the present over the future. Since they are more focused on what is happening now, they place more stress on having immediate outcomes. However, cultures with long-term orientation value the future over the present. In these cultures, people are likely to delay short-term results in favor of long-term ones.",
+"choices": [
+"Hofstede focused on cataloging visible cultural features such as language and clothing.",
+"Cultures with high uncertainty avoidance tend to impose fewer regulations.",
+"Cultures with low uncertainty avoidance show more acceptance of things that are different.",
+"In short-term oriented cultures, people are likely to give up immediate outcomes for future ones.",
+"Cultures with long-term orientation emphasize the present over the future."
+],
+"answer": "③",
+"solution": "불확실성 회피가 낮은 문화는 미지의 것에 더 열려 있고 다른 것을 더 잘 받아들인다고 했으므로 ③이 일치합니다. Hofstede는 보이지 않는(invisible) 문화적 특징에 관심을 두었고(①), 규제가 적은 것은 불확실성 회피가 낮은 문화입니다(②). 단기 결과를 미루는 것은 장기 지향 문화이고(④), 장기 지향 문화는 현재보다 미래를 중시합니다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b7a1128b7a",
+"typeId": "eng-h2-b08-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "위 담화를 읽고 답할 수 있는 질문은?\n\nW: Our society is built upon a number of rules. These rules dictate certain behaviors, and without them, our society would be in complete disorder. For example, you’re not supposed to take other people’s property without permission. Also, you are not allowed to cross the street at a red light. These kinds of laws are universally applied in most countries, regardless of their culture. However, there are some laws that only exist in certain countries. In many cases, these unique laws are deeply connected to the country’s cultural contexts. If you want to know more about them, don’t miss tonight’s show, Amazing World at 9 p.m. Our guest members from three different countries, Switzerland, Singapore, and Italy will talk about interesting laws in their countries and how they came about.",
+"choices": [
+"Which law from Switzerland will be introduced on the show?",
+"What time does the show Amazing World start tonight?",
+"What is the name of the host of Amazing World?",
+"How many laws will each guest member introduce?",
+"Why are traffic laws stricter in some countries than in others?"
+],
+"answer": "②",
+"solution": "담화에서 'tonight’s show, Amazing World at 9 p.m.'이라고 했으므로 ②는 '오후 9시'라고 답할 수 있습니다. 스위스의 구체적인 법(①), 진행자의 이름(③), 게스트 한 명이 소개할 법의 개수(④), 나라별로 교통법의 엄격함이 다른 이유(⑤)는 담화에 나오지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3c3417f585",
+"typeId": "eng-h2-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nOne summer day, I was watching an Olympic swimming event on TV. The gold medalist looked fantastic, and I wanted to be just like him. I asked my parents if I could learn to swim. They approved and said, “Yes.” Swimming was difficult at first, but after a year, I became a good swimmer. One day, my coach suggested that I enter a competition. He also advised me that for good results I should build muscle strength through weight training. The training was demanding, leaving me exhausted at times.",
+"choices": [
+"The writer watched the swimming event on a cold winter day.",
+"The writer started swimming without the parents’ permission.",
+"Swimming felt easy to the writer from the very beginning.",
+"The coach suggested that the writer take part in a competition.",
+"The weight training was light and never made the writer tired."
+],
+"answer": "④",
+"solution": "코치가 대회 참가를 제안했다는 내용이 본문에 그대로 있으므로 ④가 일치합니다. 사건은 여름날(summer)이고, 부모님이 허락(approved)했으며, 처음에는 수영이 어려웠고(difficult at first), 웨이트 트레이닝은 힘들었으므로(demanding, exhausted) ①②③⑤는 모두 본문과 어긋납니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-678c911e12",
+"typeId": "eng-h2-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOne day, I saw a poster advertising the city’s landscape design contest. After doing some research on the Internet, I discovered that landscape designing involves arranging and decorating outdoor spaces. I found out that I had to be good at math and science in order to become a landscape architect. This is because landscape architects must calculate the dimensions and slopes of land as well as thoroughly examine environmental factors such as soil, air, and climate. I was not good at either subject at the time, so I decided to put more effort into studying them.",
+"choices": [
+"The writer’s interest began after seeing a poster about a landscape design contest.",
+"Landscape designing involves arranging and decorating outdoor spaces.",
+"Landscape architects must examine factors such as soil, air, and climate.",
+"At that time the writer was already skilled in both math and science.",
+"The writer decided to study math and science harder."
+],
+"answer": "④",
+"solution": "본문에서 글쓴이는 당시 두 과목 모두 잘하지 못했다(I was not good at either subject at the time)고 했으므로 ④가 일치하지 않습니다. 포스터로 관심이 생긴 점, 조경 디자인의 정의, 환경 요소 검토, 더 공부하기로 한 결심은 모두 본문과 일치합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-46946d96e9",
+"typeId": "eng-h2-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nG: Hi, Junho. What are you thinking about?\nB: I am having trouble choosing my career path. I am good at science, but I like drawing.\nG: Are you struggling between what you’re good at and what you like?\nB: Yes, I am.\nG: You are not the only one. I feel the same way. I want to follow my passion but I’m not sure if I should.\nB: What should we do?\nG: Well, how about seeing the school counselor? A friend of mine found their advice to be really helpful.\nB: Great idea. Then we should make an appointment with him.",
+"choices": [
+"Junho is good at science but enjoys drawing.",
+"The girl says she feels the same way as Junho.",
+"The girl wants to follow her passion but is not sure about it.",
+"Junho refuses the idea of visiting the school counselor.",
+"The girl’s friend found the counselor’s advice helpful."
+],
+"answer": "④",
+"solution": "준호는 상담 교사를 만나자는 제안에 “Great idea.”라며 찬성하고 약속을 잡자고 했으므로 ④가 일치하지 않습니다. 과학을 잘하고 그림을 좋아하는 점, 소녀도 같은 기분이라는 점, 열정을 따르고 싶지만 확신이 없는 점, 친구가 조언을 도움이 되었다고 한 점은 모두 대화와 일치합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9d2d49abdf",
+"typeId": "eng-h2-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 있는 질문은?\n\nHi, everyone. My name is Minji Song, and I am the editor of an online teen magazine, Teens Today. I am honored to have been asked to give a talk. Many of our high school student subscribers send me messages with concerns about their future. So today, I will talk about the value of experiences in making a better future. For this talk, I asked my old friends to write down stories about what they experienced when they were younger.",
+"choices": [
+"How many subscribers does Teens Today have?",
+"Why did Minji Song decide to become an editor?",
+"What will Minji Song talk about in today’s talk?",
+"When was the magazine Teens Today first launched?",
+"How did Minji Song’s old friends feel while writing their stories?"
+],
+"answer": "③",
+"solution": "본문에 오늘 강연 주제가 “the value of experiences in making a better future”라고 분명히 나와 있으므로 ③은 답할 수 있습니다. 구독자 수, 편집자가 된 이유, 잡지 창간 시기, 친구들이 글을 쓸 때의 감정은 본문에 언급되지 않아 답할 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ad67f67eb7",
+"typeId": "eng-h2-b08-u0m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAllowing yourself the opportunity to experience a variety of things is not a waste of time. Your school days are a time of self-discovery and personal growth. As you spend each day wisely, you will be able to figure out what kind of person you are and what you enjoy doing. Do not attempt to define yourself in just one way as you undergo this process. Be flexible. Remember that your potential is limitless.",
+"choices": [
+"Experiencing a variety of things is a meaningful rather than wasteful use of time.",
+"School days are described as a period of self-discovery and personal growth.",
+"Using each day thoughtfully helps one discover both who one is and what one enjoys.",
+"The writer recommends settling on a single, fixed definition of oneself as early as possible.",
+"The writer urges readers to believe that their potential has no limits."
+],
+"answer": "④",
+"solution": "글쓴이는 “Do not attempt to define yourself in just one way”라며 자신을 한 가지로 규정하지 말고 유연하라고 했으므로, 한 가지로 일찍 규정하라는 ④는 본문과 정반대여서 일치하지 않습니다. 다양한 경험이 시간 낭비가 아니라는 점, 학창 시절이 자기 발견과 성장의 시기라는 점, 하루를 현명하게 쓰면 자신과 흥미를 알게 된다는 점, 잠재력이 무한하다(limitless)는 점은 모두 본문과 일치합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m4s0t0",
+"custom": true
 }
 ]

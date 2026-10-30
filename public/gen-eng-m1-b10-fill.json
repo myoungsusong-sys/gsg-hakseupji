@@ -3427,5 +3427,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u6m4s0t0",
 "custom": true
+},
+{
+"id": "fill-0dcd7a6103",
+"typeId": "eng-m1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn the school bus, Harry found Ruby, the friendly rabbit. “Hi, Harry!” Ruby waved at him. Harry went (A)[sit / to sit] next to Ruby. “Ouch!” Harry’s spines hurt Ruby. “Oh, I’m sorry, Ruby.” Harry went to the back seat. He was alone again. “Nobody (B)[like / likes] me because of these spines.” Harry felt really sad.",
+"choices": [
+"sit - like",
+"sit - likes",
+"to sit - like",
+"to sit - likes",
+"to sit - liked"
+],
+"answer": "④",
+"solution": "(A) ‘go to+동사원형’으로 ‘~하러 가다’라는 목적을 나타내므로 to sit이 알맞습니다. (B) 주어 Nobody는 단수 취급하고 현재 시제이므로 동사에 -s를 붙여 likes가 되어야 합니다. 따라서 to sit - likes인 ④가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-64f8227275",
+"typeId": "eng-m1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것끼리 짝지어진 것은?\n\nA few weeks later, it was Harry’s birthday. Soon, his classmates called Harry. “Harry, come out!” When Harry went outside, his classmates were ⓐwaiting for him. They were wearing sponge jackets. “Happy birthday, Harry!” Ruby gave a box ⓑhim. Harry was ⓒsurprising. Harry gladly opened the box and ⓓlooked inside. There ⓔwere a jacket for Harry. Then all the classmates ⓕhugged Harry.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓕ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓑ는 ‘give+사물+to+사람’ 구조이므로 him을 to him으로 고쳐야 합니다. ⓒ는 주어(Harry)가 감정을 느끼는 대상이므로 surprising을 과거분사 surprised로 바꿔야 합니다. ⓔ는 뒤의 주어 a jacket이 단수이므로 were를 was로 고쳐야 합니다. ⓐ(과거진행 waiting), ⓓ(과거형 looked), ⓕ(과거형 hugged)는 모두 올바르므로 어색한 것은 ⓑ, ⓒ, ⓔ인 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-380645f412",
+"typeId": "eng-m1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ를 바르게 고친 것 중, 알맞지 않은 것은?\n\nHarry was very ⓐexciting. It was his first day at a new school. He wanted ⓑmaking a lot of friends. When he ⓒentered into the classroom, everyone ⓓlooked at him. They looked at his spines curiously. Later he thought, ‘Nobody ⓔlike me because of these spines.’",
+"choices": [
+"ⓐ: exciting → excited",
+"ⓑ: making → to make",
+"ⓒ: entered into → entered",
+"ⓓ: looked → looking",
+"ⓔ: like → likes"
+],
+"answer": "④",
+"solution": "ⓐ는 감정을 느끼는 주어이므로 excited, ⓑ는 ‘want to+동사원형’이므로 to make, ⓒ enter는 타동사라 전치사 없이 entered, ⓔ 주어 Nobody는 단수이므로 likes로 고치는 것이 모두 옳습니다. 그러나 ⓓ ‘everyone looked at him’은 과거 시제로 이미 올바른 표현이므로 looking으로 고치면 안 됩니다. 따라서 바르게 고치지 못한 것은 ④입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2b076a9de5",
+"typeId": "eng-m1-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 밑줄 친 ⓐ~ⓕ 중 어법상 옳은 것의 개수는?\n\nHarry was very ⓐexcited. It was his first day at a new school. He wanted ⓑmaking a lot of friends. When he ⓒentered into the classroom, everyone looked at him. At lunchtime, his classmates were ⓓplaying soccer. The ball went flat. “Let’s ⓔgoing inside.” Harry thought, ‘Nobody ⓕlikes me because of these spines.’",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓐ excited(감정을 느끼는 주어), ⓓ were playing(과거진행), ⓕ Nobody likes(단수 주어)는 어법상 옳습니다. 반면 ⓑ는 ‘want to make’가 되어야 하고, ⓒ enter는 타동사라 into 없이 entered, ⓔ는 ‘Let’s+동사원형’이므로 go가 되어야 하므로 틀립니다. 따라서 옳은 것은 ⓐ, ⓓ, ⓕ 세 개로 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u7m1s0t0",
+"custom": true
 }
 ]

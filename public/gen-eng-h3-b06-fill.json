@@ -481,5 +481,100 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b06-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-f817536a8d",
+"typeId": "eng-h3-b06-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nHost: Does lab-grown meat taste like real meat?\nDr. Perry: Yes, indeed. Most of the original taste tests have yielded positive reviews. Many taste testers were unable to taste a difference between lab-grown and regular meat. Some of them even guessed incorrectly which sample was lab-grown.\nHost: I see, but why do we need lab-grown meat when we already have plant-based meat?\nDr. Perry: Plant-based meat has come a long way, but some people still feel that it does not quite match the taste, texture, and overall eating experience of real animal meat. Lab-grown meat can provide people with a product that is biologically identical to real meat in a way that's much less harmful to the planet and animals.",
+"choices": [
+"Most of the original taste tests produced negative reviews of lab-grown meat.",
+"Every taste tester correctly identified which sample was lab-grown.",
+"Some people feel that plant-based meat does not fully match real meat in taste and texture.",
+"Dr. Perry says that plant-based meat has made little progress so far.",
+"Lab-grown meat is biologically different from real animal meat."
+],
+"answer": "③",
+"solution": "Dr. Perry는 일부 사람들이 식물성 고기가 실제 고기의 맛, 식감, 전반적인 먹는 경험에 아직 미치지 못한다고 느낀다고 말하므로 ③이 일치한다. ①은 초기 시식 결과 대부분이 긍정적이었다는 내용과 반대이고, ②는 일부 시식자가 배양육을 잘못 골랐다는 내용과 맞지 않는다. ④는 'has come a long way(많이 발전했다)'와 반대이고, ⑤는 'biologically identical'과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-10c5620ca2",
+"typeId": "eng-h3-b06-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 담화를 읽고 답할 수 없는 질문은?\n\nM: Hello, everyone! Welcome to Jamey's Kitchen. As more people get interested in healthy eating, it seems that we are all looking for simple ways to eat fresh vegetables. So today, I'm going to share my all-purpose recipe for salad dressing that can turn your plain vegetables into a tasty salad. It is super easy to make at home. Get a bowl. Put in 4 tablespoons of olive oil, 2 tablespoons of vinegar, a tablespoon of fresh lemon juice, and a tablespoon of either honey or maple syrup. Add a little salt and pepper. Then stir it all up until it's well mixed. Now you have your own delicious homemade dressing! Pour it over some fresh vegetables and there you go! You can add beans or cheese if you like. I hope you all try it out! Thank you.",
+"choices": [
+"Why are people looking for simple ways to eat fresh vegetables?",
+"How many tablespoons of olive oil are needed for the dressing?",
+"What can be used instead of honey in the dressing?",
+"How long can the homemade dressing be kept in the refrigerator?",
+"What can be added to the salad if you like?"
+],
+"answer": "④",
+"solution": "담화에는 드레싱을 냉장고에 얼마나 오래 보관할 수 있는지에 대한 언급이 없으므로 ④는 답할 수 없다. ①은 건강한 식생활에 대한 관심 증가, ②는 4큰술, ③은 메이플 시럽, ⑤는 콩이나 치즈로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-78e0cbf41c",
+"typeId": "eng-h3-b06-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAs our planet faces increasing environmental challenges and climate change, there is growing interest in eco-friendly foods that have less impact on the environment. The following foods eaten in various regions of the world are gaining attention as sustainable foods for the future.\nFalse Bananas\nEthiopia, noted for its coffee cultivation, is also a region where the promising future crop enset prevails. Enset, also known as \"false banana,\" is a close relative of the banana. The fruit of the plant isn't safe to eat, but the stems and roots can be processed and used to make bread. Approximately 20 million people rely on this plant for food in Ethiopia, but it is almost unknown outside of the country. Scientists anticipate that this crop has the potential to feed more than 100 million people in a warming world, establishing itself as a new fundamental food for the future.",
+"choices": [
+"Environmental challenges and climate change have increased interest in foods with less environmental impact.",
+"Enset is widely known and consumed in many countries outside Ethiopia.",
+"Although the fruit of enset is not safe to eat, its stems and roots can be made into bread.",
+"About 20 million people in Ethiopia depend on enset as a food source.",
+"Scientists believe enset could feed over 100 million people in a warming world."
+],
+"answer": "②",
+"solution": "본문에서 엔셋은 에티오피아 밖에서는 거의 알려지지 않았다(almost unknown outside of the country)고 했으므로 ②는 일치하지 않는다. ①은 도입부, ③은 열매는 먹을 수 없지만 줄기와 뿌리로 빵을 만든다는 내용, ④는 약 2천만 명이 의존한다는 내용, ⑤는 과학자들의 전망과 각각 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-89db26d1dd",
+"typeId": "eng-h3-b06-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nHost: Very well. I think people interested in the idea of lab-grown meat will also wonder if it's safe.\nDr. Perry: Lab-grown chicken was first approved in Singapore in 2020, and more recently, the U.S. Food and Drug Administration and the U.S. Department of Agriculture have also approved the sale of lab-grown chicken. These facts demonstrate that lab-grown meat is probably safe. It's hoped that the safety of cultured meat will improve with the development of technology. Of course, as with all food products, we will need to collect more data over a long period of time to ensure its safety.",
+"choices": [
+"How many restaurants in Singapore currently serve lab-grown chicken?",
+"In which country was lab-grown chicken first approved?",
+"Which U.S. organizations approved the sale of lab-grown chicken?",
+"What is expected to improve the safety of cultured meat?",
+"What is still needed to ensure the safety of lab-grown meat?"
+],
+"answer": "①",
+"solution": "싱가포르에서 배양 닭고기가 처음 승인되었다는 내용은 있지만, 현재 그것을 판매하는 식당 수에 대한 정보는 없으므로 ①은 답할 수 없다. ②는 싱가포르, ③은 미국 식품의약국(FDA)과 농무부(USDA), ④는 기술의 발전, ⑤는 장기간에 걸친 더 많은 데이터 수집으로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fac3985640",
+"typeId": "eng-h3-b06-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하는 것은?\n\nCacti\nNative to the deserts of both North and South America, cacti are a fundamental food in Latin American communities, where the flat pads are often stirred and served with eggs or in salads and tacos. There are over 1,500 species of cacti, and many of them are safe to eat. Cacti are rich in fiber, vitamins, and other nutrients. Cacti's ability to thrive in dry and harsh environments makes them a crucial crop in the face of climate change.\nInsects\nInsects have been a traditional source of protein in many cultures for centuries. People have been enjoying seasoned, roasted insects for a long time in Mexico, and many African countries incorporate insects into soups. Also, insects are a popular street food in some Asian countries. Insects are high in protein, vitamins, and minerals. In contrast to other protein sources, they also require significantly less land, water, and food to produce, which diminishes the environmental footprint of our diets.",
+"choices": [
+"Cacti are native to the deserts of Africa and Asia.",
+"Only a few of the more than 1,500 species of cacti are safe to eat.",
+"Insects have only recently begun to be used as a source of protein.",
+"Producing insects requires more land and water than other protein sources.",
+"In Mexico, people have long enjoyed seasoned, roasted insects."
+],
+"answer": "⑤",
+"solution": "멕시코에서는 오랫동안 양념해서 구운 곤충을 즐겨 왔다고 했으므로 ⑤가 일치한다. ①은 남북아메리카 사막이 원산지라는 내용과 다르고, ②는 많은(many) 종을 먹을 수 있다는 내용과 다르다. ③은 수 세기 동안 전통적인 단백질 공급원이었다는 내용과, ④는 훨씬 적은 땅과 물이 필요하다는 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m3s0t0",
+"custom": true
 }
 ]

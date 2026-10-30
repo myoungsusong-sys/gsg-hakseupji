@@ -2512,5 +2512,164 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b08-u5m0s0t0",
 "custom": true
+},
+{
+"id": "fill-0d91019a6e",
+"typeId": "eng-m3-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 어색한 것은?",
+"choices": [
+"The girl dancing on the stage is my cousin.",
+"Be careful. Don't touch the broken window.",
+"I have a friend called Minho.",
+"The boy played soccer over there is my brother Jiho.",
+"He does like spicy food."
+],
+"answer": "④",
+"solution": "④에서 소년은 축구를 '하는' 주체이므로 능동·진행의 의미인 현재분사 playing을 써서 The boy playing soccer over there가 되어야 한다. ①은 '춤추는' 소녀이므로 현재분사 dancing, ②는 '깨진' 창문이므로 과거분사 broken, ③은 '~라고 불리는' 친구이므로 과거분사 called로 모두 알맞다. ⑤의 does는 동사 like를 강조하는 조동사로 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2b2e0c8d99",
+"typeId": "eng-m3-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것끼리 짝지어진 것은?\n\nIn 1940, the Royal Air Force defeated German fighters during World War II by ⓐuse a radar system. The British government wanted to keep this technology a secret, so it published an article in the newspaper. The article ⓑprinted in the newspaper said that British pilots improved their night vision because they ate a lot of carrots. Everybody believed the story and began ⓒto eat a lot more carrots than before. Can we really improve night vision by eating lots of carrots? Not really, but carrots contain a lot of vitamin A, ⓓwhat does keep our eyes ⓔhealthy.",
+"choices": [
+"ⓐ, ⓓ",
+"ⓐ, ⓔ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ는 전치사 by 뒤이므로 동명사 using이 되어야 하고, ⓓ는 앞의 vitamin A를 받는 계속적 용법의 관계대명사가 필요하므로 which로 고쳐야 한다(what은 계속적 용법으로 쓸 수 없다). ⓑ는 '인쇄된' 기사이므로 과거분사 printed가 맞고, ⓒ의 began은 to부정사와 동명사를 모두 목적어로 취한다. ⓔ는 「keep+목적어+형용사」 구조라서 형용사 healthy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4326033400",
+"typeId": "eng-m3-b08-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분 네 곳을 찾아 바르게 고치시오. (단, 밑줄은 제시하지 않음)\n\nPopeye is a world-famous cartoon character. He gets his super power by eating spinach. When Popeye became popular in the 1930s in the United States, a lot of children began eating spinach. Crystal City in Texas, which calls the spinach capital of the world, even built a statue of Popeye. Although eating spinach will not give us super powers, spinach does has a lot of nutrients. It is actually considered one of the ten healthiest foods on the planet.\nSpinach can use in a surprising way. When it absorbs water, spinach also absorbs many other things from the soil. Some scientists have used this characteristic of spinach to find bombs hiding in the ground. They make special spinach plants with sensors on their leaves. When these plants soak up traces from bombs, the sensors light up.\n\n어색한 부분      바르게 고친 형태\n(1) __________ → __________\n(2) __________ → __________\n(3) __________ → __________\n(4) __________ → __________",
+"selfGrade": true,
+"answer": "calls → is called, has → have, can use → can be used, hiding → hidden",
+"solution": "Crystal City는 '세계의 시금치 수도라고 불리는' 것이므로 수동태 which is called가 되어야 한다. 강조의 조동사 does 뒤에는 동사원형 have가 와야 한다. 시금치는 '사용되는' 대상이므로 조동사 뒤 수동태 can be used로 고쳐야 하고, 폭탄은 땅속에 '숨겨진' 것이므로 과거분사 hidden이 명사 bombs를 수식해야 한다. began eating, Although eating, is considered는 모두 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4a9561bc36",
+"typeId": "eng-m3-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 (A)~(H) 중, 어법상 알맞은 문장의 개수는?\n\n(A) In 1820, a man named Robert Johnson wanted to prove that tomatoes were safe to eat.\n(B) He ate a basket of tomatoes in front of many people watched him.\n(C) We are no longer afraid of tomatoes, but some insects are still scared of them.\n(D) Place a bowl of crushing tomatoes in a corner of your room.\n(E) Carrots contain a lot of vitamin A, which does keep our eyes healthy.\n(F) Crystal City in Texas, that is called the spinach capital of the world, even built a statue of Popeye.\n(G) Can you tell me why did Popeye eat spinach?\n(H) Some scientists have used spinach to find bombs hidden in the ground.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "알맞은 문장은 (A), (C), (E), (H)로 4개다. (B)는 사람들이 그를 '지켜보는' 것이므로 watching, (D)는 '으깨진' 토마토이므로 crushed가 되어야 한다. (F)는 콤마 뒤 계속적 용법에 that을 쓸 수 없으므로 which로 고쳐야 하고, (G)는 간접의문문이라서 「의문사+주어+동사」 어순인 why Popeye ate spinach가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-63dfa51647",
+"typeId": "eng-m3-b08-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞은 문장의 개수는?\n\nⓐ If I were in your place, I would give him sweets.\nⓑ Birbal is the man whose wisdom surprised the Persian official.\nⓒ I know a girl whose is good at drawing.\nⓓ If I have a pot like that, I would show it to my friends.\nⓔ I wish there were a man as wise as Birbal in our country.\nⓕ Look at the pot whose size are as big as the pumpkin.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓐ, ⓑ, ⓔ가 맞는 문장이다. ⓒ의 whose 뒤에는 명사가 와야 하므로 whose는 who로 고쳐야 한다. ⓓ는 주절이 would show인 가정법 과거이므로 have를 had로 고쳐야 한다. ⓕ는 동사가 whose 뒤의 명사 size에 수를 맞춰야 하므로 are를 is로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3baf96a36f",
+"typeId": "eng-m3-b08-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것끼리 짝지어진 것은?\n\nThe Persian official looked inside the pot and ⓔbecame speechless. He thanked Birbal and left for his country.\nPersian official: It would be great if there ⓑwere a man as wise as Birbal in our country.\nAfter the Persian official left, Akbar asked Birbal ⓐthat was inside the pot.\nBirbal: Here is the other pot. You can see for yourself.\nAkbar looked inside the other pot and found a pumpkin just as big as the pot.\nAkbar: I see! The pumpkin can’t be taken out without ⓒbreaking the pot.\nBirbal: I put the pots over pumpkin flowers and waited until the pumpkins grew ⓓas bigger as the pots.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓐ, ⓓ",
+"ⓑ, ⓒ",
+"ⓑ, ⓔ",
+"ⓒ, ⓓ"
+],
+"answer": "②",
+"solution": "ⓐ는 asked의 목적어 역할을 하면서 was inside의 주어도 되어야 하므로 선행사를 포함한 관계대명사 what으로 고쳐야 한다. ⓓ의 'as ~ as' 원급 비교에는 원급이 들어가야 하므로 bigger를 big으로 고쳐야 한다. ⓑ는 가정법 과거이므로 주어가 단수(a man)여도 were를 쓰고, ⓒ는 전치사 without 뒤이므로 동명사 breaking을 쓴다. ⓔ의 became speechless도 어법에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e4f08dd29",
+"typeId": "eng-m3-b08-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 알맞은 문장끼리 짝지어진 것은?\n\n(A) The person whose pulled your hair must be your grandson.\n(B) Akbar had an official whose answers were always wise.\n(C) If Birbal were not near Akbar, Akbar would feel sad.\n(D) If the pot were bigger, the pumpkin could be taken out without break the pot.\n(E) I wish I had someone as wise as Birbal near me.\n(F) If I were the Persian official, I will thank Birbal.",
+"choices": [
+"(A), (C)",
+"(B), (D)",
+"(B), (C), (E)",
+"(B), (E), (F)",
+"(C), (D), (E), (F)"
+],
+"answer": "③",
+"solution": "(B)는 whose 뒤에 명사 answers와 그에 맞는 복수 동사 were가 왔으므로 맞다. (C)와 (E)는 가정법 과거와 'I wish+가정법 과거'를 바르게 쓴 문장이다. (A)는 관계사 뒤에 명사 없이 동사가 바로 오므로 whose를 주격 who로 고쳐야 한다. (D)는 전치사 without 뒤이므로 break를 breaking으로, (F)는 가정법 과거의 주절이므로 will을 would로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e671790ffc",
+"typeId": "eng-m3-b08-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것 두 개를 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nTo test his officials’ wisdom, Akbar often ⓐasked them strange questions. One day, he came up with an interesting question.\nAkbar: Someone pulled a hair from my head today. What should I do to him?\nAkbar turned to Birbal.\nAkbar: What would you do if you ⓑwas in my place, Birbal?\nBirbal: If I were you, I would ⓒgive him sweets.\nAkbar: What made you ⓓto say so?\nBirbal: The person ⓔwho pulled your hair must be your grandson. No one else could do such a thing.\nAkbar: You are indeed correct, Birbal. I’m so glad to have someone as ⓕwise as you near me.",
+"selfGrade": true,
+"answer": "ⓑ was → were, ⓓ to say → say",
+"solution": "ⓑ는 현재 사실과 반대되는 상황을 가정하는 가정법 과거이고 주절에 would do가 있으므로 be동사는 were로 써야 한다. ⓓ는 사역동사 make의 목적격 보어이므로 to 없이 동사원형 say를 써야 한다. ⓔ는 선행사가 사람(The person)이고 바로 뒤에 동사가 오므로 주격 관계대명사 who가 맞고, ⓕ는 'as+원급+as'이므로 wise가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-69e066601e",
+"typeId": "eng-m3-b08-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 문장의 [ ] 부분을 고친 것 중 바르게 고친 것은?\n\n(단, [ ] 부분이 어법상 어색한 경우에만 고친 것으로 본다.)",
+"choices": [
+"The person [whose] pulled your hair must be your grandson. → whom",
+"If there [was] a man as wise as Birbal, we would be happy. → is",
+"The pumpkin can’t be taken out without [break] the pot. → to break",
+"Akbar looked at the pot whose neck [were] narrow. → was",
+"If I were you, I [will give] him sweets. → would have given"
+],
+"answer": "④",
+"solution": "④는 whose 뒤의 명사 neck이 단수이므로 were를 was로 고친 것이 맞다. ①은 뒤에 동사가 바로 오는 주어 자리이므로 whom이 아니라 who로 고쳐야 한다. ②는 주절이 would be인 가정법 과거이므로 is가 아니라 were로 고쳐야 한다. ③은 전치사 뒤이므로 동명사 breaking으로, ⑤는 if절이 가정법 과거(were)이므로 would give로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m1s0t0",
+"custom": true
 }
 ]

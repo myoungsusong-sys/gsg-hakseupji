@@ -3199,5 +3199,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u5m1s0t0",
 "custom": true
+},
+{
+"id": "fill-3eddee6127",
+"typeId": "eng-m1-b07-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말이 되도록 <보기>의 단어를 알맞게 배열하시오.\n\n<보기> cooking / in / I'm / interested\n\nM: What are you good at?\nW: Well, ______________________________________.\nM: Oh, then you should visit the cook's section over there.\nW: Great idea! Let's go.",
+"selfGrade": true,
+"answer": "I'm interested in cooking",
+"solution": "「be interested in + 동명사」는 '~하는 것에 관심이 있다'라는 뜻이다. 전치사 in 뒤에는 동명사 cooking이 와야 하므로 I'm interested in cooking으로 배열한다. 뒤에 요리사 코너 이야기가 이어지므로 의미도 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e9da5a3dcc",
+"typeId": "eng-m1-b07-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 빈칸 (1)~(3)에 <보기>의 단어를 알맞은 형태로 바꿔 쓰시오.\n\n<보기> dance, practice, sing\n\nI love music. I enjoy (1)____________ to K-pop songs. I keep (2)____________ every day, and I never give up (3)____________.\n\n(1) ____________\n(2) ____________\n(3) ____________",
+"selfGrade": true,
+"answer": "(1) dancing (2) practicing (3) singing",
+"solution": "enjoy, keep, give up는 모두 뒤에 동명사(-ing)를 목적어로 취하는 동사이다. 따라서 dance→dancing, practice→practicing, sing→singing으로 바꾼다. practice는 e를 빼고 -ing를 붙이는 점에 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-42d13a15d8",
+"typeId": "eng-m1-b07-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 질문에 대한 대답이 되도록 괄호 안의 단어를 사용하여 빈칸을 완성하시오.\n\n<조건> 각각 2단어로 쓸 것\n\n(1) Q: How does the cake taste?\n    A: It ____________________. (sweet)\n\n(2) Q: How does the baby look?\n    A: She ____________________. (happy)",
+"selfGrade": true,
+"answer": "(1) tastes sweet (2) looks happy",
+"solution": "감각동사 taste, look은 뒤에 형용사가 와서 '~한 맛이 나다/~해 보이다'라는 뜻을 나타낸다. 주어가 각각 3인칭 단수 It, She이므로 taste→tastes, look→looks로 쓰고 뒤에 형용사 sweet, happy를 그대로 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2a18267f92",
+"typeId": "eng-m1-b07-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "윗글을 읽고 질문에 대한 알맞은 대답이 되도록 <조건>에 맞게 빈칸을 완성하시오.\n\nMinwoo coded the game. He put all the parts together. Sounds, characters, and a story were in the game. Our game looked and sounded good.\n\n<조건>\n• 다음 단어를 반드시 포함하되, 필요시 변형할 것 : look, sound, good\n• 빈칸을 4단어로 쓸 것\n\nQ. What was the game like after Minwoo finished coding it?\n→ It ____________________________________________.",
+"selfGrade": true,
+"answer": "looked and sounded good",
+"solution": "본문의 'Our game looked and sounded good.'를 근거로 답한다. 과거의 상태이므로 감각동사를 과거형 looked, sounded로 쓰고 두 동사를 and로 연결한 뒤 형용사 good을 붙인다. 'looked and sounded good'은 정확히 4단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-64a17629c7",
+"typeId": "eng-m1-b07-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 대화의 밑줄 친 (A), (B)의 우리말에 맞도록 주어진 단어를 사용하여 영작하시오. (필요시 변형하거나 단어를 추가할 것)\n\nM: My role model is a famous game maker.\nW: Cool! (A)너는 어떤 종류의 게임을 만들고 싶니?\nM: I want to make adventure games.\nW: That sounds fun. (B)나는 네 게임을 다시 해 보고 싶어.\n\n(A) ______________________________________? (what / kind / game / make / want)\n(B) ____________________________________ again. (want / play / your game)",
+"selfGrade": true,
+"answer": "(A) What kind of game do you want to make ? (B) I want to play your game",
+"solution": "'어떤 종류의 ~'는 「What kind of + 명사」로 시작하고, 일반동사 의문문이므로 do you를 넣어 What kind of game do you want to make?로 쓴다. (B)는 '~하고 싶다'를 「want to + 동사원형」으로 나타내어 I want to play your game 뒤에 again을 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-17c03a449c",
+"typeId": "eng-m1-b07-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "윗글을 읽고 아래 요약문의 빈칸 (1)~(4)에 들어갈 말을 괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\n\nHi! I'm Hyunsu. Last summer, my friends and I made our own adventure game. We worked together as a team. Sumin played the game many times. Then she shared her ideas. She said, \"I enjoyed playing the game. But it ends too soon. It needs one more stage.\" So we added an ice lake stage.\n\n[요약] Hyunsu and his friends enjoyed (1)____________ (make) their own game as a team. Sumin finished (2)____________ (test) it. She suggested (3)____________ (add) one more stage, so they kept (4)____________ (work) on it.\n\n(1) ____________\n(2) ____________\n(3) ____________\n(4) ____________",
+"selfGrade": true,
+"answer": "(1) making (2) testing (3) adding (4) working",
+"solution": "enjoy, finish, suggest, keep는 모두 목적어로 동명사(-ing)를 취하는 동사이다. 따라서 make→making, test→testing, add→adding, work→working으로 바꾼다. make는 e를 빼고 -ing를 붙이는 점에 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m6s0t0",
+"custom": true
 }
 ]

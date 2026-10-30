@@ -1152,5 +1152,178 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b06-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-6a80507546",
+"typeId": "eng-m2-b06-u0m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nHow can I get a dog?\nYesterday, I ran into a friend who was walking her dog. The dog's name is Gamja, and she's so cute! I want a dog, too, but my parents won't allow it. What should I do?\ncute_puppy\n↳ Re: Be responsible.\nHaving a dog is a big responsibility. You need to feed and walk your dog every day. You always have to clean up after the dog. You also have to wash your dog regularly. Can you do these things on your own? Think about it. When you're truly ready, tell your parents. Good luck!\nwise_owl",
+"choices": [
+"wise_owl은 개를 기르는 것이 큰 책임이라고 말한다.",
+"wise_owl에 따르면 개에게 매일 먹이를 주고 산책을 시켜야 한다.",
+"wise_owl은 개를 씻기는 일은 부모님께 부탁하면 된다고 말한다.",
+"wise_owl은 cute_puppy에게 그 일들을 혼자 할 수 있는지 생각해 보라고 한다.",
+"wise_owl은 정말 준비가 되었을 때 부모님께 말씀드리라고 한다."
+],
+"answer": "③",
+"solution": "wise_owl은 'You also have to wash your dog regularly.'라고 했으므로 개는 주인이 직접 규칙적으로 씻겨야 합니다. 또 'Can you do these things on your own?'이라고 물으며 스스로 할 수 있는지 생각해 보라고 했습니다. 따라서 부모님께 부탁하면 된다는 ③은 글의 내용과 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ad60e740a8",
+"typeId": "eng-m2-b06-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 있는 질문은?\n\nWhich club should I choose?\nI can't decide on a school club. Last year, I was on the dance team. This year, I want to try something new. Actually, I'm interested in coding. However, all of my friends will stay on the dance team. What should I do?\njumping_cat\n↳ Re: Stay with your friends.\nClub activities are all about spending time with your friends. You'll have so much fun with your friends on the dance team. Imagine dancing together at the school festival! Those moments will make good memories.\ndancing_cow\n↳ Re: Try something different!\nYou should try something that interests you. Who knows? You might learn coding and create a fun app. Maybe your friends will use your app. Just follow your heart, and don't worry about anything else.\ncoding_bear",
+"choices": [
+"When will the school festival be held?",
+"What kind of app did coding_bear create?",
+"Why does dancing_cow think jumping_cat should stay on the dance team?",
+"Which club did jumping_cat finally choose?",
+"How many friends does jumping_cat have on the dance team?"
+],
+"answer": "③",
+"solution": "dancing_cow는 동아리 활동은 친구들과 시간을 보내는 것이고, 친구들과 즐겁게 지내며 좋은 추억을 만들 수 있다고 그 이유를 밝혔으므로 ③에는 답할 수 있습니다. 학교 축제 날짜(①), coding_bear가 만든 앱(②), jumping_cat이 최종적으로 고른 동아리(④), 댄스 팀 친구의 수(⑤)는 글에 나오지 않습니다. 특히 ②는 coding_bear가 jumping_cat이 앱을 만들 수도 있다고 말한 것일 뿐이라 함정입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2fb8455b8a",
+"typeId": "eng-m2-b06-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 질문에 답한 것으로 알맞지 않은 것은?\n\nHow can I get a dog?\nYesterday, I ran into a friend who was walking her dog. The dog's name is Gamja, and she's so cute! I want a dog, too, but my parents won't allow it. What should I do?\ncute_puppy\n↳ Re: Dogs are so cute!\nI think everybody loves cute puppies. Why don't you share some cute dog videos and pictures with your parents? Maybe they'll open up to the idea. You can also invite your friend and Gamja to your home. Spending time together may move your parents' hearts!\nsweet_fox\n↳ Re: Be responsible.\nHaving a dog is a big responsibility. You need to feed and walk your dog every day. You always have to clean up after the dog. You also have to wash your dog regularly. Can you do these things on your own? Think about it. When you're truly ready, tell your parents. Good luck!\nwise_owl",
+"choices": [
+"Q: Who was walking Gamja when cute_puppy ran into her?\n   A: Cute_puppy's friend was.",
+"Q: What is cute_puppy's problem?\n   A: His/Her parents won't allow him/her to have a dog.",
+"Q: According to sweet_fox, what may move cute_puppy's parents' hearts?\n   A: Spending time together with the friend and Gamja may.",
+"Q: According to wise_owl, what does a dog owner have to do every day?\n   A: He/She has to wash the dog every day.",
+"Q: When does wise_owl tell cute_puppy to talk to his/her parents?\n   A: When he/she is truly ready."
+],
+"answer": "④",
+"solution": "wise_owl은 매일 해야 하는 일로 먹이 주기와 산책시키기(feed and walk your dog every day)를 들었습니다. 개를 씻기는 일은 'regularly(규칙적으로)' 해야 한다고 했으므로 ④의 대답은 글과 맞지 않습니다. 나머지 대답은 모두 본문 내용과 일치합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d61bd32931",
+"typeId": "eng-m2-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 알맞은 것끼리 짝지어진 것은?\n\nSuddenly, you remember that your mom asked you ⓐto call her. When you pick up your smartphone, you were going to ask your mom ⓑbuy new shoes for you. But you keep ⓒwatching many short videos. Wait, you forgot ⓓcalling her two hours ago! If you do not want to have popcorn brain, you need ⓔto make some changes.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ는 「ask+목적어+to부정사」로 to call이 맞다. ⓑ는 같은 구문이므로 buy가 아니라 to buy여야 하므로 틀리다. ⓒ는 「keep+동명사」로 watching이 맞다. ⓓ는 '전화할 것을 잊다'라는 앞으로의 일이므로 forgot to call이어야 하여 calling은 틀리다. ⓔ는 「need+to부정사」로 to make가 맞다. 따라서 알맞은 것은 ⓐ, ⓒ, ⓔ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bf7c251211",
+"typeId": "eng-m2-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSmartphones are useful, but (A)[Use / Using] them too much can hurt your brain. It is important (B)[cut / to cut] down on screen time. If this story (C)[feel / feels] like yours, you may have popcorn brain.",
+"choices": [
+"Use / cut / feel",
+"Using / to cut / feels",
+"Using / cut / feels",
+"Use / to cut / feel",
+"Using / to cut / feel"
+],
+"answer": "②",
+"solution": "(A)는 문장의 주어 자리이므로 동명사 Using이 알맞다. (B)는 가주어 It에 대응하는 진주어 자리이므로 to cut이 알맞다. (C)의 주어 this story는 3인칭 단수이므로 feels가 알맞다. 따라서 Using / to cut / feels이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-19733788f2",
+"typeId": "eng-m2-b06-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분 두 곳을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nHere ⓐis some tips for you. Put away your phone and leave ⓑit in another room when you need to focus. Also, people with popcorn brain have trouble ⓒto pay attention, so try to read a book.",
+"selfGrade": true,
+"answer": "ⓐ is → are, ⓒ to pay → paying",
+"solution": "ⓐ는 뒤에 복수 주어 some tips가 도치된 형태이므로 is를 are로 고쳐야 한다. ⓒ는 「have trouble+동명사」 구문이므로 to pay를 paying으로 고쳐야 한다. ⓑ의 it은 단수 명사 your phone을 받으므로 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ce82240276",
+"typeId": "eng-m2-b06-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ, ⓑ에 주어진 동사를 어법상 알맞은 형태로 각각 쓰시오.\n\nNowadays, people can only ⓐ(concentrate) for 47 seconds. However, in 2004, people were able ⓑ(focus) on one thing for 2.5 minutes.\n\nⓐ______________, ⓑ______________",
+"selfGrade": true,
+"answer": "ⓐ concentrate ⓑ to focus",
+"solution": "ⓐ는 조동사 can 뒤이므로 동사원형 concentrate를 쓴다. ⓑ는 「be able to+동사원형」 구문이므로 to focus를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-24fab0ffb0",
+"typeId": "eng-m2-b06-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 모두 사용하여 빈칸을 완성하시오. (필요시 형태를 바꿀 것)\n\n스마트폰을 너무 많이 사용하는 것은 당신의 뇌를 해칠 수 있다.\n\n→ ______________________ can hurt your brain. (use, smartphones, too much)",
+"selfGrade": true,
+"answer": "Using smartphones too much",
+"solution": "'~하는 것은'이라는 주어 역할을 하려면 동사 use를 동명사 Using으로 바꾸어야 한다. 「동명사+목적어(smartphones)+too much」 순으로 배열하여 Using smartphones too much가 문장의 주어가 되게 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-491703d6bc",
+"typeId": "eng-m2-b06-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 표현을 모두 사용하여 문장을 완성하시오. (필요하면 형태를 바꾸고, to부정사를 활용하며, 「~, 의사는 …」 어순을 지킬 것)\n\n나는 밤에 잠드는 데 어려움을 겪기 때문에, 의사는 나에게 10시 이후에 스마트폰을 사용하지 말라고 충고했다.\n\n( have trouble / fall / advise / not / use )\n\n→ ________________________________________________",
+"selfGrade": true,
+"answer": "Because I have trouble falling asleep at night, the doctor advised me not to use my smartphone after 10 p.m.",
+"solution": "'~하는 데 어려움을 겪다'는 have trouble -ing 이므로 fall을 falling으로 바꿔 have trouble falling asleep으로 씁니다. 'advise+목적어+to부정사'에서 부정은 to 앞에 not을 붙이므로 advised me not to use가 됩니다. 이유를 나타내는 Because절이 앞에 오도록 어순을 지켜 두 구조를 결합합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-42234a13d3",
+"typeId": "eng-m2-b06-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 각 대화의 내용을 한 문장으로 바꿔 쓸 때, 빈칸에 알맞은 말을 쓰시오. (각 빈칸에 한 단어씩 쓸 것)\n\n(1) Mom: Henry, stop using your smartphone after 10 p.m.\n    Henry: Okay, Mom.\n→ Henry's mom told ________ ________ ________ using his smartphone after 10 p.m.\n\n(2) Doctor: Don't eat too many sweets.\n    Amy: I see.\n→ The doctor advised Amy ________ ________ ________ too many sweets.",
+"selfGrade": true,
+"answer": "(1) him to stop (2) not to eat",
+"solution": "'tell+목적어+to부정사' 구조이므로 Henry를 him으로 받고 명령 동사 stop을 to stop으로 바꿔 told him to stop이 됩니다. (2) 부정 명령은 'advise+목적어+not to부정사'로 나타내므로 advised Amy not to eat too many sweets가 됩니다. 두 문장 모두 목적격 보어로 to부정사를 쓰는 점이 핵심입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-cd4f9f5d0a",
+"typeId": "eng-m2-b06-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영 뜻풀이를 참고하여, 글의 흐름에 맞게 각 빈칸에 알맞은 단어를 주어진 철자로 시작하도록 쓰시오.\n\nPeople with popcorn brain cannot (1)c________ on one thing for a long time, and they have trouble (2)p________ attention. Smartphones are useful, but using them too much can hurt our brain, so it is important to (3)c________ down on screen time.\n\n[뜻풀이]\n(1) to give all your attention to one thing\n(2) (pay) to listen to or watch something carefully\n(3) (cut) to use less of something",
+"selfGrade": true,
+"answer": "(1) concentrate (2) paying (3) cut",
+"solution": "(1) '한 가지에 모든 주의를 기울이다'는 concentrate on이므로 concentrate입니다. (2) have trouble 뒤에는 동명사가 오므로 pay를 paying으로 바꿔 paying attention이 됩니다. (3) '~을 줄이다'는 cut down on이므로 cut을 넣습니다. 세 표현 모두 본문의 popcorn brain 관련 핵심 어휘입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u3m6s0t0",
+"custom": true
 }
 ]

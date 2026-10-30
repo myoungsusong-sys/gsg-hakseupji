@@ -468,5 +468,195 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b04-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-52e5c58870",
+"typeId": "eng-h3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nFrom an evolutionary point of view, our love for sports teams can be traced back to our ancient ancestors. Long ago, people lived in small groups, and belonging to a group was essential for survival. By working together, group members could complete tasks that were impossible to do alone, such as hunting large animals. This cooperation created trust and strong bonds among them, and groups with a strong sense of unity were more likely to survive than isolated individuals. Over time, the instinct to belong to a group was passed down to modern people. Today, this same instinct may explain why we choose a sports team and stay loyal to it.",
+"choices": [
+"the kinds of animals that ancient people hunted together",
+"how modern sports teams build unity among their players",
+"the evolutionary origin of our loyalty to sports teams",
+"the dangers that isolated individuals faced in ancient times",
+"why cooperation is necessary in modern workplaces"
+],
+"answer": "③",
+"solution": "글은 고대 조상들이 집단에 속하는 것이 생존에 필수적이었고, 그 집단 소속 본능이 현대인에게 전해져 스포츠 팀에 대한 충성심을 설명한다고 말한다. 즉 스포츠 팀 충성심의 진화적 기원을 다루므로 ③이 주제이다. ①②④는 세부 소재일 뿐 전체를 포괄하지 못하고, ⑤는 글에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-dd69d2582a",
+"typeId": "eng-h3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nHave you ever wondered whether fans' cheering really helps their team? A study conducted in 2021 tried to answer this question. The researchers looked at an Italian football league and compared normal matches, when fans filled the stands, with matches played during the pandemic, when fans were not allowed inside the stadium. The results were striking. Without the support of the crowd, the home team's performance dropped by about eight percent on average. This suggests that the cheering of fans can actually give the home team a real boost, although it is not the only factor that decides the outcome of a match.",
+"choices": [
+"Why Italian Football Became So Popular",
+"Does Fan Cheering Really Help the Home Team?",
+"The Best Ways to Fill Empty Stadium Seats",
+"How the Pandemic Changed Sports Forever",
+"The Official Rules That Decide a Match Winner"
+],
+"answer": "②",
+"solution": "2021년 연구를 통해 관중의 응원이 홈팀 성적을 약 8% 높인다는 것을 보여 주며, 응원이 홈팀에 실제로 도움이 되는지를 다룬다. 따라서 ②가 제목으로 알맞다. ①③④⑤는 글의 핵심인 '응원과 홈팀 성적의 관계'를 담지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3f077f730f",
+"typeId": "eng-h3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nWhy do fans feel so happy when their favorite team wins, even though they did not play in the game themselves? Psychologists explain this with an idea called \"basking in reflected glory.\" It means that people can feel successful by connecting themselves to the success of others they feel close to. When their team wins, fans feel proud, as if they had won the game too. Even though the victory brings them no direct reward, simply watching the game and sharing the moment gives them great satisfaction. This is one reason why people remain so devoted to their teams.",
+"choices": [
+"reasons fans feel proud and satisfied when their team wins",
+"the direct financial rewards of supporting a winning team",
+"how athletes prepare to achieve victory in important games",
+"ways to become a more active member of a sports community",
+"the dangers of being too devoted to a single sports team"
+],
+"answer": "①",
+"solution": "글은 '반사된 영광 누리기(basking in reflected glory)' 개념으로, 팬이 직접 경기하지 않아도 팀의 승리에 자신을 연결해 자부심과 만족을 느끼는 이유를 설명한다. 따라서 ①이 주제이다. ②는 직접 보상이 없다는 본문과 모순되고, ③④⑤는 글의 초점과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8a1eb1402e",
+"typeId": "eng-h3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 아래와 같이 요약할 때, 빈칸 ㉠~㉢에 들어갈 말로 알맞게 연결된 것은?\n\nIn the past, K-pop fans, mostly teenagers, showed their love by waving balloons at concerts and giving presents to their idols. They usually admired their stars from a distance. Over the past three decades, however, digital technology has completely changed fandom culture. Now fans communicate directly with their idols on social media, offering feedback and suggestions that can positively influence them. When their idols change for the better, fans feel rewarded. Fans also show their affection in new ways. Rather than sending expensive gifts, they organize fundraising and volunteer events in their idols' names, such as donating to children's charities. These efforts improve their idols' image and spread the value of sharing. In short, fans are no longer simple consumers but active participants who make the fandom experience richer and more meaningful.\n\nWith the help of digital technology, K-pop fans have ㉠________ from passive consumers into active ㉡________ who not only interact directly with their idols but also express their love through ㉢________ activities such as charity and volunteering.",
+"choices": [
+"㉠ transformed — ㉡ participants — ㉢ meaningful",
+"㉠ transformed — ㉡ spectators — ㉢ commercial",
+"㉠ declined — ㉡ participants — ㉢ meaningful",
+"㉠ transformed — ㉡ participants — ㉢ commercial",
+"㉠ declined — ㉡ spectators — ㉢ meaningful"
+],
+"answer": "①",
+"solution": "팬이 수동적 소비자에서 능동적 참여자로 '변화(transformed)'했고, 소셜 미디어로 아이돌과 소통하는 '참여자(participants)'가 되었으며, 기부·봉사 같은 '의미 있는(meaningful)' 활동으로 애정을 표현한다. 따라서 ①이 알맞다. declined는 본문과 반대이고, spectators·commercial은 '능동적 참여'와 '물질적 선물 대신 봉사'라는 내용과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5c0d502450",
+"typeId": "eng-h3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nAnother theory that helps explain sports fandom is called optimal distinctiveness. According to this theory, every person has two needs at the same time: the need to belong to a group and the need to feel different and unique. These two needs seem to compete with each other, but supporting a sports team can satisfy both. By cheering for the same team as other fans, you feel included in a group. At the same time, because your team is different from other teams, you also feel special and unique. Teams strengthen this feeling by deliberately using their own colors and songs. In this way, being a sports fan meets two basic human needs at once.",
+"choices": [
+"the history of team colors and songs in professional sports",
+"how sports teams design their uniforms to attract new fans",
+"how supporting a team satisfies both the need to belong and the need to be unique",
+"the differences between having close friends and joining a large group",
+"why some fans value winning more than their team's identity"
+],
+"answer": "③",
+"solution": "글은 최적 변별성(optimal distinctiveness) 이론으로, 스포츠 팀을 응원하는 것이 소속되고 싶은 욕구와 특별해지고 싶은 욕구라는 상반된 두 욕구를 동시에 충족한다고 설명한다. 따라서 ③이 주제이다. ①②는 팀 색과 노래라는 세부 사항일 뿐이고, ④⑤는 본문의 핵심이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-be39c0eb57",
+"typeId": "eng-h3-b04-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nEmail is one of the most widely used forms of communication today. Even the simple act of checking your inbox has an environmental impact, because email travels through an energy-consuming network. Storing countless email messages in data centers creates carbon emissions. These data centers use electricity to run their servers and to cool down the heat they generate, so they consume a significant amount of fossil fuels. A short phone-to-phone email has a carbon footprint of 0.2g of CO₂, while a long email that takes about ten minutes to write and three minutes to read on a computer has a footprint of 17g of CO₂. So, deleting unnecessary email messages can help save the Earth.",
+"choices": [
+"Email is among the most commonly used means of communication nowadays.",
+"Even checking your inbox can affect the environment because email runs through an energy-consuming network.",
+"Data centers consume a large amount of fossil fuels to power and cool their servers.",
+"A long email written and read on a computer leaves a smaller carbon footprint than a short phone-to-phone email.",
+"Deleting unnecessary email messages can be a way to help protect the Earth."
+],
+"answer": "④",
+"solution": "지문에서 짧은 휴대폰 간 이메일은 0.2g, 컴퓨터로 쓰고 읽는 긴 이메일은 17g의 CO₂를 배출한다고 했다. 따라서 긴 이메일이 짧은 이메일보다 탄소 발자국이 '더 작다'고 한 ④는 지문과 반대이다. 나머지 선지는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9345e00957",
+"typeId": "eng-h3-b04-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nA notable example of blue carbon is found in tidal flats around the ocean. Research conducted in 2021 revealed that getbol in Korea stores approximately 13 million tons of carbon and absorbs over 260,000 tons of carbon dioxide each year. This means that getbol alone can offset the carbon dioxide emissions produced by 110,000 cars in a year. The carbon absorption rate of marine ecosystems is about 50 times faster than that of land ecosystems. Scientists worldwide are continuing to explore the capabilities of tidal flats with the goal of having them officially recognized as blue carbon.",
+"choices": [
+"Tidal flats around the ocean are a notable instance of blue carbon.",
+"A 2021 study found that Korean getbol holds about 13 million tons of carbon and takes in more than 260,000 tons of CO₂ each year.",
+"Getbol by itself can cancel out the yearly CO₂ emissions of 110,000 cars.",
+"Researchers across the world keep studying tidal flats to have them formally recognized as blue carbon.",
+"The carbon absorption rate of marine ecosystems is roughly 50 times slower than that of land ecosystems."
+],
+"answer": "⑤",
+"solution": "지문은 해양 생태계의 탄소 흡수 속도가 육상 생태계보다 약 50배 '더 빠르다(faster)'고 했다. 따라서 '약 50배 더 느리다(slower)'고 한 ⑤가 본문과 정반대이다. 나머지 선지는 모두 본문의 수치·내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8a05d428ea",
+"typeId": "eng-h3-b04-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nWhen people think of a changing climate, images of melting glaciers and polar bears losing their habitat often come to mind. But this is only one aspect of the problem. Climate change is causing extreme weather conditions, which have become more frequent and intense worldwide. Heatwaves, droughts, floods, and wildfires are affecting countries around the world. In the autumn of 2019, Australia was hit by one of the worst wildfires on record. Over six months, the wildfires burned about 10 million hectares of land and killed hundreds of millions of animals. Approximately 30 percent of the koalas in the region are said to have been killed due to the fires.",
+"choices": [
+"Melting glaciers and polar bears losing their habitat are commonly associated with climate change.",
+"Extreme weather events have grown more frequent and more intense across the world.",
+"The 2019 Australian wildfires lasted about six months and burned roughly 10 million hectares of land.",
+"Around 30 percent of the koalas in the affected region were reportedly killed by the fires.",
+"The autumn 2019 wildfires in Australia were among the mildest the country had ever experienced."
+],
+"answer": "⑤",
+"solution": "지문은 2019년 가을 호주 산불이 '기록상 최악(one of the worst on record)'의 산불 중 하나였다고 했다. 따라서 '가장 약한(mildest) 산불'이라고 한 ⑤는 본문과 정반대이다. 나머지 선지는 지속 기간, 피해 면적, 코알라 피해 비율 등 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-296c4ecbeb",
+"typeId": "eng-h3-b04-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nB: Mina, our club's beach cleanup is this Saturday. Let's check everything one more time.\nG: Sure, Jiho.\nB: Did you upload the event notice to our class website?\nG: Yes, I did it yesterday. I hope lots of members sign up.\nB: Me too. How about the trash bags? Are there enough?\nG: I picked up forty biodegradable bags last week.\nB: That should be plenty. We also need tongs for picking up litter, right?\nG: Oh, right. I'll buy them at the store tomorrow.\nB: Make sure to get enough for everyone.\nG: Got it. Let's hope it doesn't rain.",
+"choices": [
+"Jiho and Mina are going over their preparations for the upcoming beach cleanup.",
+"Mina posted the event notice on the class website the day before.",
+"Mina obtained forty biodegradable trash bags the previous week.",
+"Jiho and Mina agree that they still need tongs for picking up litter.",
+"Mina intends to order the tongs online later today."
+],
+"answer": "⑤",
+"solution": "미나는 집게(tongs)를 '내일 가게에서 사겠다(I'll buy them at the store tomorrow)'고 했다. 따라서 '오늘 온라인으로 주문하겠다'고 한 ⑤는 구입 방법(온라인)과 시점(오늘)이 모두 대화와 다르다. 나머지 선지는 공지 업로드 시점, 봉투 수량 등 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0699d74b76",
+"typeId": "eng-h3-b04-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nGetbol in Korea was once considered useless muddy land, so much of it has been reclaimed for farming and urbanization. This has led to a decline in the area of tidal flats, causing a loss of biodiversity. To prevent further damage to the marine ecosystem, both the government and environmental organizations have been making efforts to protect the tidal flats by regulating unnecessary development. Without further efforts to restore getbol, we would fail to preserve this valuable ecosystem for future generations.",
+"choices": [
+"Why was much of getbol reclaimed in the past?",
+"What did the reclamation of getbol result in?",
+"Who has been making efforts to protect the tidal flats?",
+"By how many square kilometers has the area of getbol decreased over the past decade?",
+"What might happen if no further efforts are made to restore getbol?"
+],
+"answer": "④",
+"solution": "본문은 갯벌 매립 이유(농업·도시화), 매립 결과(면적 감소와 생물다양성 손실), 보호 주체(정부와 환경 단체), 복원 노력이 없을 때의 결과(미래 세대를 위한 보존 실패)는 모두 밝히고 있다. 그러나 지난 10년간 갯벌 면적이 '몇 제곱킬로미터' 줄었는지 구체적 수치는 언급하지 않았으므로 ④는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u1m3s0t0",
+"custom": true
 }
 ]

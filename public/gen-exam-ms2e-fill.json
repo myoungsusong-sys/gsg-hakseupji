@@ -6010,5 +6010,145 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-ms2e-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-7c47f911b6",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "어떤 저항에 $9\\mathrm{\\;V}$의 전압을 걸어 주었더니 $300\\mathrm{\\;mA}$의 전류가 흘렀다. 이 저항의 크기는?",
+"choices": [
+"$0.03\\mathrm{\\;\\Omega}$",
+"$3\\mathrm{\\;\\Omega}$",
+"$30\\mathrm{\\;\\Omega}$",
+"$270\\mathrm{\\;\\Omega}$",
+"$2700\\mathrm{\\;\\Omega}$"
+],
+"answer": "③",
+"solution": "옴의 법칙 $R=\\dfrac{V}{I}$를 이용한다. 이때 전류의 단위를 A로 바꾸면 $300\\mathrm{\\;mA}=0.3\\mathrm{\\;A}$이다. 따라서 $R=\\dfrac{9\\mathrm{\\;V}}{0.3\\mathrm{\\;A}}=30\\mathrm{\\;\\Omega}$이다. 전류를 mA 그대로 넣어 $0.03\\mathrm{\\;\\Omega}$으로 계산하지 않도록 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-3d87799b77",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "어떤 니크롬선에 $4\\mathrm{\\;V}$의 전압을 걸었더니 $0.2\\mathrm{\\;A}$의 전류가 흘렀다. 같은 니크롬선에 $10\\mathrm{\\;V}$의 전압을 걸어 줄 때 흐르는 전류의 세기는? (단, 온도는 일정하다.)",
+"choices": [
+"$0.2\\mathrm{\\;A}$",
+"$0.5\\mathrm{\\;A}$",
+"$0.8\\mathrm{\\;A}$",
+"$2\\mathrm{\\;A}$",
+"$5\\mathrm{\\;A}$"
+],
+"answer": "②",
+"solution": "먼저 니크롬선의 저항을 구하면 $R=\\dfrac{4\\mathrm{\\;V}}{0.2\\mathrm{\\;A}}=20\\mathrm{\\;\\Omega}$이다. 같은 니크롬선이므로 저항은 변하지 않는다. 따라서 $10\\mathrm{\\;V}$를 걸 때의 전류는 $I=\\dfrac{10\\mathrm{\\;V}}{20\\mathrm{\\;\\Omega}}=0.5\\mathrm{\\;A}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-030d0424b3",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "어떤 니크롬선에 $6\\mathrm{\\;V}$의 전압을 걸었더니 $400\\mathrm{\\;mA}$의 전류가 흘렀다. 이 니크롬선과 재질·굵기가 같고 길이만 2배인 니크롬선에 $12\\mathrm{\\;V}$의 전압을 걸어 줄 때 흐르는 전류의 세기는? (단, 온도는 일정하다.)",
+"choices": [
+"$100\\mathrm{\\;mA}$",
+"$200\\mathrm{\\;mA}$",
+"$400\\mathrm{\\;mA}$",
+"$800\\mathrm{\\;mA}$",
+"$1600\\mathrm{\\;mA}$"
+],
+"answer": "③",
+"solution": "처음 니크롬선의 저항은 $R=\\dfrac{6\\mathrm{\\;V}}{0.4\\mathrm{\\;A}}=15\\mathrm{\\;\\Omega}$이다. 저항은 길이에 비례하므로 길이가 2배인 니크롬선의 저항은 $30\\mathrm{\\;\\Omega}$이 된다. 따라서 $I=\\dfrac{12\\mathrm{\\;V}}{30\\mathrm{\\;\\Omega}}=0.4\\mathrm{\\;A}=400\\mathrm{\\;mA}$로, 전압과 저항이 모두 2배가 되어 전류는 그대로이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-d320f41f06",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "표는 저항 (가), (나), (다)에 걸리는 전압, 흐르는 전류의 세기, 저항의 크기를 나타낸 것이다.\n\n| 저항 | 전압 | 전류의 세기 | 저항의 크기 |\n|---|---|---|---|\n| (가) | $24\\mathrm{\\;V}$ | ㉠ | $60\\mathrm{\\;\\Omega}$ |\n| (나) | ㉡ | $500\\mathrm{\\;mA}$ | $16\\mathrm{\\;\\Omega}$ |\n| (다) | $20\\mathrm{\\;V}$ | $250\\mathrm{\\;mA}$ | ㉢ |\n\n㉠, ㉡, ㉢에 들어갈 알맞은 값을 바르게 짝지은 것은?",
+"choices": [
+"㉠ $0.4\\mathrm{\\;A}$  ㉡ $8\\mathrm{\\;V}$  ㉢ $80\\mathrm{\\;\\Omega}$",
+"㉠ $0.4\\mathrm{\\;A}$  ㉡ $8\\mathrm{\\;V}$  ㉢ $5\\mathrm{\\;\\Omega}$",
+"㉠ $4\\mathrm{\\;A}$  ㉡ $8\\mathrm{\\;V}$  ㉢ $80\\mathrm{\\;\\Omega}$",
+"㉠ $0.4\\mathrm{\\;A}$  ㉡ $32\\mathrm{\\;V}$  ㉢ $80\\mathrm{\\;\\Omega}$",
+"㉠ $4\\mathrm{\\;A}$  ㉡ $32\\mathrm{\\;V}$  ㉢ $5\\mathrm{\\;\\Omega}$"
+],
+"answer": "①",
+"solution": "옴의 법칙을 각 저항에 적용한다. (가): $I=\\dfrac{V}{R}=\\dfrac{24}{60}=0.4\\mathrm{\\;A}$. (나): $V=IR=0.5\\mathrm{\\;A}\\times16\\mathrm{\\;\\Omega}=8\\mathrm{\\;V}$. (다): $R=\\dfrac{V}{I}=\\dfrac{20}{0.25}=80\\mathrm{\\;\\Omega}$. 따라서 ㉠ $0.4\\mathrm{\\;A}$, ㉡ $8\\mathrm{\\;V}$, ㉢ $80\\mathrm{\\;\\Omega}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-5eb556db68",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "표는 굵기가 같은 두 니크롬선 A, B에 걸어 준 전압과 흐르는 전류의 세기를 측정한 결과이다. 이에 대한 설명으로 옳은 것은? (단, 온도는 일정하다.)\n\n| 전압 | A에 흐르는 전류 | B에 흐르는 전류 |\n|---|---|---|\n| $2\\mathrm{\\;V}$ | $0.5\\mathrm{\\;A}$ | $0.2\\mathrm{\\;A}$ |\n| $4\\mathrm{\\;V}$ | $1.0\\mathrm{\\;A}$ | $0.4\\mathrm{\\;A}$ |",
+"choices": [
+"A의 저항은 $2\\mathrm{\\;\\Omega}$이다.",
+"B의 저항은 $10\\mathrm{\\;\\Omega}$이다.",
+"같은 전압을 걸 때 B에 흐르는 전류가 A보다 크다.",
+"저항의 크기는 A가 B보다 크다.",
+"굵기가 같다면 길이가 더 긴 것은 A이다."
+],
+"answer": "②",
+"solution": "각 니크롬선의 저항은 $R=\\dfrac{V}{I}$로 일정하게 구해진다. A는 $\\dfrac{2}{0.5}=4\\mathrm{\\;\\Omega}$, B는 $\\dfrac{2}{0.2}=10\\mathrm{\\;\\Omega}$이다. 따라서 B의 저항이 더 크고(②가 옳음, ④는 틀림), 같은 전압에서는 저항이 작은 A에 더 큰 전류가 흐른다(③ 틀림). 굵기가 같을 때 저항이 큰 B가 더 길다(⑤ 틀림).",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-3c379056d6",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "굵기가 같은 두 니크롬선 A, B가 있다. A의 길이는 $10\\mathrm{\\;cm}$, B의 길이는 $30\\mathrm{\\;cm}$이며, 두 니크롬선은 재질이 같다. A에 $5\\mathrm{\\;V}$의 전압을 걸었더니 $250\\mathrm{\\;mA}$의 전류가 흘렀다. (단, 온도는 일정하다.)\n\n(1) 니크롬선 A의 저항은 몇 $\\mathrm{\\Omega}$인지 구하는 과정과 함께 쓰시오.\n(2) 니크롬선 B에 A와 같은 세기인 $250\\mathrm{\\;mA}$의 전류를 흐르게 하려면 몇 $\\mathrm{V}$의 전압을 걸어야 하는지 구하는 과정과 함께 쓰시오.",
+"selfGrade": true,
+"answer": "(1) $20\\mathrm{\\;\\Omega}$, (2) $15\\mathrm{\\;V}$",
+"solution": "(1) $250\\mathrm{\\;mA}=0.25\\mathrm{\\;A}$이므로 $R_A=\\dfrac{5\\mathrm{\\;V}}{0.25\\mathrm{\\;A}}=20\\mathrm{\\;\\Omega}$이다. (2) 저항은 길이에 비례하므로 길이가 3배인 B의 저항은 $R_B=3\\times20=60\\mathrm{\\;\\Omega}$이다. $0.25\\mathrm{\\;A}$를 흐르게 하려면 $V=IR=0.25\\mathrm{\\;A}\\times60\\mathrm{\\;\\Omega}=15\\mathrm{\\;V}$를 걸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-5addc83417",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "재질과 굵기가 같은 두 니크롬선 A, B가 있다. A의 길이는 $20\\mathrm{\\;cm}$, B의 길이는 $5\\mathrm{\\;cm}$이다. A에 $8\\mathrm{\\;V}$의 전압을 걸었을 때와 B에 어떤 전압을 걸었을 때, 두 니크롬선에 흐르는 전류의 세기가 $400\\mathrm{\\;mA}$로 서로 같았다. B에 걸어 준 전압은? (단, 온도는 일정하다.)",
+"choices": [
+"$1\\mathrm{\\;V}$",
+"$2\\mathrm{\\;V}$",
+"$4\\mathrm{\\;V}$",
+"$8\\mathrm{\\;V}$",
+"$32\\mathrm{\\;V}$"
+],
+"answer": "②",
+"solution": "A의 저항은 $R_A=\\dfrac{8\\mathrm{\\;V}}{0.4\\mathrm{\\;A}}=20\\mathrm{\\;\\Omega}$이다. 저항은 길이에 비례하고 B는 A의 $\\dfrac{1}{4}$ 길이이므로 $R_B=20\\times\\dfrac{1}{4}=5\\mathrm{\\;\\Omega}$이다. B에 $400\\mathrm{\\;mA}=0.4\\mathrm{\\;A}$를 흐르게 하는 전압은 $V=IR=0.4\\mathrm{\\;A}\\times5\\mathrm{\\;\\Omega}=2\\mathrm{\\;V}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
+},
+{
+"id": "fill-c55b9cf953",
+"typeId": "exam-ms2e-u0m1s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "표는 재질과 굵기가 같고 길이만 다른 세 니크롬선 A, B, C를 나타낸 것이다. A에 $6\\mathrm{\\;V}$의 전압을 걸었더니 $600\\mathrm{\\;mA}$의 전류가 흘렀다. (단, 온도는 일정하다.)\n\n| 니크롬선 | A | B | C |\n|---|---|---|---|\n| 길이 | $10\\mathrm{\\;cm}$ | $20\\mathrm{\\;cm}$ | $40\\mathrm{\\;cm}$ |\n\n(1) 세 니크롬선에 각각 $6\\mathrm{\\;V}$의 같은 전압을 걸어 줄 때, A, B, C에 흐르는 전류의 세기를 부등호로 비교하고 그 까닭을 서술하시오.\n(2) 니크롬선 C에 $600\\mathrm{\\;mA}$의 전류를 흐르게 하려면 몇 $\\mathrm{V}$의 전압을 걸어야 하는지 구하는 과정과 함께 쓰시오.",
+"selfGrade": true,
+"answer": "(1) A > B > C, (2) $24\\mathrm{\\;V}$",
+"solution": "A의 저항은 $R_A=\\dfrac{6\\mathrm{\\;V}}{0.6\\mathrm{\\;A}}=10\\mathrm{\\;\\Omega}$이다. (1) 저항은 길이에 비례하여 $R_A<R_B<R_C$이고, 같은 전압에서 전류는 저항에 반비례하므로 전류의 세기는 A > B > C이다. (2) C의 저항은 A의 4배인 $40\\mathrm{\\;\\Omega}$이므로, $600\\mathrm{\\;mA}=0.6\\mathrm{\\;A}$를 흐르게 하려면 $V=IR=0.6\\mathrm{\\;A}\\times40\\mathrm{\\;\\Omega}=24\\mathrm{\\;V}$를 걸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-ms2e-u0m1s0t2",
+"custom": true
 }
 ]

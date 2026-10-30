@@ -2061,5 +2061,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-u0m0s3t1",
 "custom": true
+},
+{
+"id": "fill-038f117525",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 적절하지 않은 것은?\n\n① The sun is very _hot_ in summer.\n② I _wear_ a warm coat in winter.\n③ My brother _listens_ to music every evening.\n④ We _buy_ a movie at the theater.\n⑤ She _writes_ a letter to her friend.",
+"choices": [
+"The sun is very _hot_ in summer.",
+"I _wear_ a warm coat in winter.",
+"My brother _listens_ to music every evening.",
+"We _buy_ a movie at the theater.",
+"She _writes_ a letter to her friend."
+],
+"answer": "④",
+"solution": "영화관에서는 영화를 '보다(watch/see)'라고 해야 자연스럽다. 'buy a movie'는 문맥에 맞지 않으므로 watch가 와야 한다. 나머지 밑줄 친 낱말은 모두 문맥에 알맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1b6627f4a9",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 적절하지 않은 것은?\n\n① Birds can _fly_ in the sky.\n② Fish can _swim_ in the water.\n③ The baby _cries_ when she is hungry.\n④ Please _close_ the door quietly.\n⑤ I _drink_ a sandwich for lunch.",
+"choices": [
+"Birds can _fly_ in the sky.",
+"Fish can _swim_ in the water.",
+"The baby _cries_ when she is hungry.",
+"Please _close_ the door quietly.",
+"I _drink_ a sandwich for lunch."
+],
+"answer": "⑤",
+"solution": "샌드위치는 '마시는(drink)' 것이 아니라 '먹는(eat)' 것이므로 drink는 문맥상 어색하다. eat a sandwich가 되어야 한다. 나머지 밑줄 친 낱말은 모두 알맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-740d8a4e12",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 적절하지 않은 것은?\n\n① My mom _cooks_ dinner for us.\n② We _clean_ our classroom every day.\n③ He _teaches_ math at school.\n④ The students _sleep_ hard for the test.\n⑤ I _wash_ my hands before lunch.",
+"choices": [
+"My mom _cooks_ dinner for us.",
+"We _clean_ our classroom every day.",
+"He _teaches_ math at school.",
+"The students _sleep_ hard for the test.",
+"I _wash_ my hands before lunch."
+],
+"answer": "④",
+"solution": "시험을 위해서는 '열심히 잔다(sleep hard)'가 아니라 '열심히 공부한다(study hard)'가 자연스럽다. 따라서 sleep은 문맥에 맞지 않으며 study가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a7cc18f98b",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 적절하지 않은 것은?\n\n① He was _nervous_ before the big exam.\n② The movie was boring, so everyone felt _excited_.\n③ She felt _proud_ when she won the prize.\n④ I was _scared_ of the big dog.\n⑤ They were _tired_ after the long trip.",
+"choices": [
+"He was _nervous_ before the big exam.",
+"The movie was boring, so everyone felt _excited_.",
+"She felt _proud_ when she won the prize.",
+"I was _scared_ of the big dog.",
+"They were _tired_ after the long trip."
+],
+"answer": "②",
+"solution": "영화가 지루했다(boring)면 사람들은 '신나는(excited)' 것이 아니라 '지루함을 느낀(bored)' 것이 자연스럽다. 앞뒤 문맥이 상반되므로 excited는 적절하지 않고 bored가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a2e48845aa",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 적절하지 않은 것은?\n\n① He _borrowed_ a book from the library and will return it.\n② She _lent_ me her umbrella because it was raining.\n③ Can you _borrow_ me your pencil? I forgot mine.\n④ I _returned_ the book to my teacher.\n⑤ They _shared_ the pizza with their friends.",
+"choices": [
+"He _borrowed_ a book from the library and will return it.",
+"She _lent_ me her umbrella because it was raining.",
+"Can you _borrow_ me your pencil? I forgot mine.",
+"I _returned_ the book to my teacher.",
+"They _shared_ the pizza with their friends."
+],
+"answer": "③",
+"solution": "borrow는 '빌리다', lend는 '빌려주다'이다. ③은 상대방에게 연필을 '빌려줄' 수 있는지 묻는 문맥이므로 borrow가 아니라 lend(Can you lend me ~?)가 와야 한다. 나머지는 모두 알맞게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e8a684cac5",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 적절하지 않은 것은?\n\n① The weather is nice, so let's go _outside_.\n② It is raining hard, so take your _umbrella_.\n③ It is very cold, so turn _off_ the heater.\n④ The room is dark, so turn _on_ the light.\n⑤ The music is too loud, so turn it _down_.",
+"choices": [
+"The weather is nice, so let's go _outside_.",
+"It is raining hard, so take your _umbrella_.",
+"It is very cold, so turn _off_ the heater.",
+"The room is dark, so turn _on_ the light.",
+"The music is too loud, so turn it _down_."
+],
+"answer": "③",
+"solution": "날씨가 매우 추우면 난방기를 '끄는(turn off)' 것이 아니라 '켜야(turn on)' 자연스럽다. 앞 절과 모순되므로 off는 적절하지 않고 on이 와야 한다. 나머지는 모두 문맥에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ec6a946f45",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 문맥상 낱말의 쓰임이 적절하지 않은 것을 하나 찾아, 알맞은 낱말로 고쳐 쓰시오.\n\nLast Sunday, our family went to the beach. The weather was sunny and warm. We swam in the sea and built a sand castle. For lunch, we ate sandwiches and drank juice. On the way home, we were very tired but happy. It was a boring day!",
+"selfGrade": true,
+"answer": "boring → wonderful",
+"solution": "글 전체가 즐거운 하루를 묘사하고 있고 마지막 문장도 happy와 이어지므로 '지루한(boring)'은 문맥에 맞지 않는다. wonderful(또는 great, nice 등 긍정적인 낱말)로 고쳐야 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-36481493b1",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 문맥상 낱말의 쓰임이 적절하지 않은 것을 하나 찾아, 알맞은 낱말로 고쳐 쓰시오.\n\nMy best friend Mina is very kind. She always helps other people. Yesterday, I lost my wallet at school. Mina helped me look for it everywhere. Finally, we found it under a chair. I was so angry at her for helping me.",
+"selfGrade": true,
+"answer": "angry → thankful",
+"solution": "미나가 지갑 찾는 것을 도와준 상황이므로 화자가 '화난(angry)' 것은 문맥에 어긋난다. thankful(또는 grateful) 등 고마움을 나타내는 낱말로 고쳐야 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bfb12cca73",
+"typeId": "eng-m1-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 문맥상 낱말의 쓰임이 적절하지 않은 것을 하나 찾아, 알맞은 낱말로 고쳐 쓰시오.\n\nHealthy habits are important. We should eat a lot of vegetables and fruits. We should also sleep enough every night. Exercise makes our body strong. If we want to stay healthy, we should enjoy junk food like hamburgers and candies every day.",
+"selfGrade": true,
+"answer": "enjoy → avoid",
+"solution": "건강을 지키려면 햄버거나 사탕 같은 정크푸드는 '즐기는(enjoy)' 것이 아니라 '피해야(avoid)' 한다. 글의 주제(건강한 습관)와 모순되므로 enjoy는 적절하지 않고 avoid로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s0t0",
+"custom": true
 }
 ]

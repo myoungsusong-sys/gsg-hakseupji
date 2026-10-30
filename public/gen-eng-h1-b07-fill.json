@@ -4064,5 +4064,113 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u6m3s0t0",
 "custom": true
+},
+{
+"id": "fill-419ea7bf90",
+"typeId": "eng-h1-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nDiscover Yourself\nIt’s hard to climb a mountain without preparation, and designing a career path ①requires preparation too. Begin your career map by taking a blank piece of paper and ②draw some dots on it. These dots will be a representation of ③who you are at this moment in time, so make as many dots ④as you can. Write one or two words ⑤to describe one aspect of yourself next to each dot.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "②",
+"solution": "전치사 by의 목적어로 taking과 drawing이 and로 나란히 이어지는 병렬 구조입니다. 그래서 ② draw는 drawing으로 고쳐야 합니다. ①은 동명사 주어(designing)가 단수라서 requires가 맞고, ③은 '여러분이 누구인지'를 뜻하는 간접의문문 who you are가 맞습니다. ④ as many ~ as you can과 ⑤ 형용사적 용법의 to부정사도 어법상 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1746503583",
+"typeId": "eng-h1-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nExamine Your Resources\nNow, take a step back and look at your dots. A good idea at this stage is to start categorizing your dots. Do you see any patterns ①emerging? For example, you might have several dots that highlight scientific skills or maybe some dots that ②point to creativity. These patterns may point to something ③that is meaningful to you. Another perspective is to look at what is missing from your map, ④what you can call “gaps.” At ⑤such a young age, you probably don’t have certain skills.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "콤마 뒤에서 앞의 내용을 보충 설명하는 계속적 용법에는 관계대명사 what을 쓸 수 없습니다. call의 목적어가 빠진 불완전한 절이므로 ④는 which로 고쳐야 합니다. ①은 지각동사 see의 목적격 보어 자리라 현재분사 emerging이 맞습니다. ②는 선행사 dots가 복수라서 point가, ③은 선행사 something이 단수라서 that is가 맞고, ⑤는 'such+a+형용사+명사' 어순이 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fc48a74142",
+"typeId": "eng-h1-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n“What do you want to do in the future?” Parents and teachers ask students this question all the time. But how many students actually know (A)[what / that] they want to do in the future? Many students are either unsure of what they know or (B)[confused / confusing] about how to find the right career. The following may help students (C)[discover / discovering] a new way to look at themselves and design a path for their future.",
+"choices": [
+"confusing – discover – what",
+"confused – discovering – what",
+"what – confused – discover",
+"confusing – discovering – that",
+"confused – discover – that"
+],
+"answer": "③",
+"solution": "(A)는 뒤에 do의 목적어가 빠진 불완전한 절이 오고 know의 목적어 역할을 하므로 what이 맞습니다. (B)는 학생들이 혼란을 '느끼는' 것이라서 과거분사 confused가 맞습니다. (C)는 'help+목적어+(to)동사원형' 구조이고 뒤의 design과 병렬이므로 discover가 맞습니다. 따라서 답은 what – confused – discover입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1a7bac66b9",
+"typeId": "eng-h1-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓗ 중, 어법상 어색한 것의 개수는?\n\nFill in the Gaps\nTo reach your goal of ⓐbecoming a musician, you need to fill in the gaps between the dots to create a path toward your goal. Do you need to work on voice techniques or set up a personal website to promote ⓑyou first? You can plan other paths by researching what essential skills, training or education, or type of personality you may need to achieve a particular goal. Talking to or shadowing people considered to be successful ⓒare a great way to learn about a specific profession too. As you fill in each gap with a new dot, you can decide ⓓwhat to do next.\nTake the Next Steps\nNow, instead of aimlessly ⓔtrying random things, you can look at your map to see what to do next. Just look for a gap to fill. Deciding which gap to fill is up to you, but your dot map should show you ⓕthat whatever you choose, you will be moving toward your goal. There is no need ⓖrushing anything though. Take your time ⓗfilling the gaps.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓑ는 to promote의 의미상 주어와 목적어가 같은 you이므로 재귀대명사 yourself로 고쳐야 합니다. ⓒ는 주어가 동명사구(Talking to or shadowing ~)라서 단수 취급하므로 is로 고쳐야 합니다. ⓖ는 'There is no need to부정사' 구문이므로 to rush로 고쳐야 합니다. ⓐ(전치사 of+동명사), ⓓ(what to do), ⓔ(전치사 of+동명사), ⓕ(명사절 접속사 that), ⓗ(take one's time -ing)는 모두 맞아서 어색한 것은 3개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0cd30c0b8a",
+"typeId": "eng-h1-b07-u4m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것 2개를 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nSet Up Goals\nBy comparing your strengths and weaknesses, or the dots and the gaps, your map should show you ⓐwhat you possess and what you need to work on. Now, think of a long-term goal, like ⓑbecoming a musician. Your goal doesn’t have to ⓒbe realistic; remember that the purpose of having the goal clearly ⓓwriting is to map out a way to get there. Understanding where you want to go ⓔare an important step, so the next step is ⓕlaying out a plan to push on to that goal.",
+"selfGrade": true,
+"answer": "ⓓ writing → written, ⓔ are → is",
+"solution": "ⓓ는 'have+목적어+목적격 보어' 구조로, 목표(the goal)가 '쓰이는' 수동 관계라서 과거분사 written으로 고쳐야 합니다. ⓔ는 주어가 동명사구 Understanding where you want to go라서 단수 동사 is로 고쳐야 합니다. ⓐ는 show의 직접목적어인 관계대명사 what절, ⓑ는 전치사 like 뒤의 동명사, ⓒ는 have to 뒤의 동사원형, ⓕ는 be동사의 보어인 동명사라서 모두 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c4c2bbb9dd",
+"typeId": "eng-h1-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nMYTH: Selecting what’s “hot” at the moment is desirable.\nFACT: No one can predict the future.\nNew career fields and jobs emerge every year as society, technology, and economic trends change. Therefore, it is not advised ⓐto select a major or pursue a career just because ⓑit’s popular now. Those qualities ⓒare more important than any current trend that may disappear soon.\nMYTH: If X is happy in a particular field, I will be happy, too.\nFACT: You are not X.\nEven if X is someone ⓓwhom you have a lot in common, what works for that X may not necessarily work for you. If someone you know has a career ⓔthat interests you, get more details about the career in terms of the job description and the skills ⓕrequiring.\nMYTH: If I wait long enough, luck will eventually lead me to the right career.\nFACT: Preparation is the key to success.\nIt is unlikely that you will just “fall into” the job ⓖwhat will perfectly match your skills and interests.",
+"choices": [
+"ⓑ, ⓓ, ⓕ",
+"ⓒ, ⓓ, ⓖ",
+"ⓓ, ⓔ, ⓕ, ⓖ",
+"ⓑ, ⓔ, ⓖ",
+"ⓓ, ⓕ, ⓖ"
+],
+"answer": "⑤",
+"solution": "ⓓ는 have a lot in common with someone에서 온 표현이므로 전치사를 살린 with whom으로 고쳐야 합니다. ⓕ는 기술이 '요구되는' 수동 관계라서 과거분사 required로 고쳐야 하고, ⓖ는 선행사 the job이 있으므로 what이 아닌 관계대명사 that(또는 which)으로 고쳐야 합니다. ⓐ는 가주어 it의 진주어 to부정사, ⓑ는 it is의 축약형, ⓒ는 복수 주어 Those qualities에 맞는 are, ⓔ는 단수 선행사 a career에 맞는 interests라서 모두 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u4m1s0t0",
+"custom": true
 }
 ]

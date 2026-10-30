@@ -2324,5 +2324,191 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-8e13e3440f",
+"typeId": "eng-h2-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nA “fale” is a traditional Samoan house, with round-shaped thatched huts, supported by wood columns, but with no walls. The architecture of fale is very well-suited to the Samoan tropical climate. Its open-sided structure not only allows air to circulate freely, keeping the space cool, but also allows strong winds to pass through, enabling it to withstand extreme weather. The unique structure of the fale mirrors the Samoan people’s values of openness and community. Its open structure allows people to come and go freely, creating a sense of belonging.",
+"choices": [
+"ways to build a fale using wood and thatch",
+"the structure of the fale and the Samoan values it reflects",
+"reasons why Samoans are moving into modern houses",
+"effects of the tropical climate on Samoan farming",
+"the history of traditional houses across the South Pacific"
+],
+"answer": "②",
+"solution": "글은 벽이 없는 사모아 전통 가옥 fale의 구조가 열대 기후에 알맞다는 점을 설명한다. 이어서 그 구조가 개방성과 공동체를 중시하는 사모아인의 가치관을 반영한다고 말한다. 따라서 주제는 ②이다. ①은 건축 방법, ③~⑤는 글에 나오지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8d0488f06f",
+"typeId": "eng-h2-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nSamoa is a Polynesian island country, consisting of two main islands (Upolu and Savai’i), located in the South Pacific. It is known for its year-round warm tropical weather, stunning beaches, and gorgeous waterfalls. Samoa even served as one of the sources of inspiration for the directors of the movie Moana released in 2016. It is a stunning island country which preserves its traditions, history, and distinct way of life.",
+"choices": [
+"The Making of the Movie Moana",
+"How Upolu and Savai’i Became One Country",
+"The Dangers of Living on a Tropical Island",
+"Samoa: A Beautiful Island Country That Keeps Its Traditions",
+"How Tourism Changed Samoa’s Traditional Way of Life"
+],
+"answer": "④",
+"solution": "글은 사모아의 위치와 아름다운 자연환경을 소개한 뒤, 사모아가 전통과 역사, 고유한 생활 방식을 지키는 나라라고 정리한다. 따라서 제목은 ④가 알맞다. ①은 일부 세부 내용에 불과하고, ②, ③, ⑤는 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4da873fa23",
+"typeId": "eng-h2-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 담화의 요지로 가장 알맞은 것은?\n\nW: Hi, everyone! I’m Lou Lopez from France. As a foreigner living in Korea, I’ve been constantly impressed by two things. Refillable side dishes! In France, we usually order one main dish or course and that’s it. But in Korea, every meal comes with a variety of side dishes. And most of them are refilled for free! Safe environment! In France, it’s important to keep an eye on your things. But, in Korea, people sometimes leave their belongings on the table when they go to the bathroom at cafes. No one takes them!",
+"choices": [
+"The speaker has been impressed by Korea’s free refillable side dishes and its safe environment.",
+"French restaurants usually serve more side dishes than Korean restaurants.",
+"Foreigners in Korea should keep an eye on their belongings at cafes.",
+"Korean meals are less satisfying than French meals because they have no main course.",
+"The speaker misses the food and culture of France while living in Korea."
+],
+"answer": "①",
+"solution": "화자는 한국에 살면서 깊은 인상을 받은 두 가지로 무료로 리필되는 다양한 반찬과 안전한 환경을 소개한다. 따라서 요지는 ①이다. ②, ④는 담화 내용과 맞지 않고, ③은 화자가 프랑스에 대해 한 말이다. ⑤는 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0b7a926db1",
+"typeId": "eng-h2-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nInterestingly, some regions have particularly rich traditions. The Ndebele tribe of South Africa, for example, is famed for intricate dresses made of glass beads. Different designs serve as a means of marking different developmental stages of a woman’s life. An unmarried girl may wear a square apron onto which thousands of glass beads were hand-sewn, while a married woman might wear a five-paneled apron, along with beaded necklaces and a beaded cape. Similarly, beadwork is an essential aspect of many Native American cultures. Beadwork powerfully expresses cultural identity, reflecting a sense of continuity across generations.\n\n→ In some regions, beadwork is used to (A)__________ the stages of a woman’s life and to express cultural (B)__________ that continues across generations.\n\n     (A)          (B)",
+"choices": [
+"decorate …… diversity",
+"hide …… identity",
+"mark …… change",
+"celebrate …… conflict",
+"mark …… identity"
+],
+"answer": "⑤",
+"solution": "은데벨레족은 서로 다른 구슬 디자인으로 여성의 인생 단계를 구분하므로 (A)에는 mark가 알맞다. 아메리카 원주민 문화에서 구슬 공예는 문화적 정체성을 드러내고 세대 간 연속성을 보여 주므로 (B)에는 identity가 알맞다. 따라서 정답은 ⑤이다. ③의 change는 글의 '세대를 잇는 연속성'과 반대되는 말이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1e65bc876c",
+"typeId": "eng-h2-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nMaking a stained-glass window is a process in which intricacy is required. It involves creating durable glass sheets and staining them, cutting them into desired shapes, and assembling them into prepared designs. Each step requires expert craftspeople working together. Though originally used in religious structures, stained-glass windows found their way into a variety of modern buildings, including residential homes. These little pieces are now recognized worldwide as an important form of creative art, whose splendor wouldn’t have been acknowledged without the glass artists’ desire for beauty sparked by a practical need.",
+"choices": [
+"the religious meaning of colors in stained glass",
+"reasons why glass artists stopped working on churches",
+"the intricate making process of stained glass and its recognition as creative art",
+"cheap materials used for windows in modern homes",
+"competition among craftspeople in the glass industry"
+],
+"answer": "③",
+"solution": "글은 숙련된 장인들이 협력하는 스테인드글라스의 정교한 제작 과정을 설명한다. 이어서 스테인드글라스가 종교 건축물을 넘어 다양한 건물로 퍼졌고, 지금은 중요한 창작 예술로 인정받는다고 말한다. 따라서 주제는 ③이다. ①, ②, ④, ⑤는 글에 없거나 글과 맞지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-41534a6b85",
+"typeId": "eng-h2-b05-u1m3s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 알맞은 말을 윗글에서 찾아 각각 한 단어로 쓰시오.\n\nSamoa and American Samoa are different countries, even though they are next to each other in the South Pacific Ocean. Although these two countries used to be in the same time zone, the situation completely changed in 2011. On December 29, 2011, Samoans skipped December 30, and went straight to December 31, jumping 24 hours into the future. This happened because the Samoan government decided to switch sides of the International Date Line. This was to align the time with New Zealand, Australia, and other Asian countries, to improve their business transactions. Samoa is now on the opposite side of the International Date Line from American Samoa. They are just half an hour apart by flight, but there is a 24-hour time difference between them.\n\n→ In 2011, Samoa switched sides of the International Date Line to improve its business (A)__________ with nearby countries, which created a 24-hour time (B)__________ between Samoa and American Samoa.",
+"selfGrade": true,
+"answer": "(A) transactions (B) difference",
+"solution": "사모아 정부는 뉴질랜드, 호주 등과 시간을 맞춰 사업 거래를 개선하려고 날짜 변경선의 반대편으로 옮겼다. 그래서 (A)에는 transactions가 들어간다. 그 결과 이웃한 아메리칸사모아와 24시간의 시차가 생겼으므로 (B)에는 difference가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7068f7c5ea",
+"typeId": "eng-h2-b05-u2m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 2022년에 서울에서 155마리의 멧돼지가 포획되었다고 추정되었다.\n\n<조건>\n• 가주어 It과 명사절 접속사 that을 사용할 것\n• 과거시제 수동태를 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n<보기> estimate, capture, 155 wild boars, in Seoul, in 2022\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "It was estimated that 155 wild boars were captured in Seoul in 2022",
+"solution": "'~라고 추정되었다'는 가주어 It과 진주어 that절로 'It was estimated that ~'로 쓴다. '포획되었다'는 과거시제 수동태 were captured로 나타낸다. 주어가 155 wild boars로 복수이므로 was가 아니라 were를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f3e4e1843b",
+"typeId": "eng-h2-b05-u2m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 동물을 기르고 번식시키는 것은 항상 인간 역사의 중요한 부분이었다.\n\n<조건>\n• 동명사(동명사구)를 주어로 사용할 것\n• 현재완료 시제를 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n<보기> raise, breed, animals, a vital part, always, human history\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "Raising and breeding animals has always been a vital part of human history",
+"solution": "주어가 '기르고 번식시키는 것'이므로 동명사 Raising and breeding으로 시작한다. 동명사(구) 주어는 단수 취급하므로 현재완료는 has been을 쓴다. always는 has와 been 사이에 넣어 has always been이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5139286d22",
+"typeId": "eng-h2-b05-u2m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 어떤 돌고래들은 그들(숭어들)을 해안 쪽으로 모는데, 그곳에서 어부들이 그물로 그들을 잡을 준비가 되어 있다.\n\n<조건>\n• 관계부사 where를 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n<보기> some dolphins, drive, the coast, fishers, stand ready, catch, their nets, towards\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "Some dolphins drive them towards the coast, where fishers stand ready to catch them with their nets",
+"solution": "장소 the coast를 선행사로 받는 관계부사 where로 뒤 절을 이어 쓴다. '~할 준비가 되어 있다'는 stand ready to catch로, '그물로'는 with their nets로 표현한다. '몰다'는 drive ~ towards the coast로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b8bcd8a70e",
+"typeId": "eng-h2-b05-u2m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 우리는 인간과 동물 둘 다 이 소중한 행성의 일시적인 거주자들이라는 사실을 인정해야 한다.\n\n<조건>\n• 동격 접속사 that을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n<보기> acknowledge, the fact, both humans and animals, temporary tenants, should, this precious planet\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "We should acknowledge the fact that both humans and animals are temporary tenants of this precious planet",
+"solution": "the fact 뒤에 그 내용을 설명하는 동격 접속사 that절을 붙인다. that절의 주어는 both humans and animals로 복수이므로 동사는 are를 쓰고, 보어는 temporary tenants of this precious planet로 연결한다. '~해야 한다'는 should acknowledge로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f58301d946",
+"typeId": "eng-h2-b05-u2m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 왜 큰 도시들에 그렇게 많은 동물들이 있는지 설명하는 것은 어렵다.\n\n<조건>\n• 가주어 It을 사용할 것\n• 간접의문문을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n<보기> difficult, explain, why, there, so many animals, big cities\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "It is difficult to explain why there are so many animals in big cities",
+"solution": "'~하는 것은 어렵다'는 가주어 It과 진주어 to부정사로 'It is difficult to explain ~'으로 쓴다. explain의 목적어로 오는 의문문은 간접의문문이므로 '의문사 + 주어 + 동사' 어순인 why there are로 쓴다. 의문문 어순 Why are there로 쓰지 않도록 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f33be58318",
+"typeId": "eng-h2-b05-u2m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 많은 도시들은 생물학적으로 비옥하고 생산적인 땅 위에 지어지는데, 그것은 인간들뿐만 아니라 다른 생물들에게도 매력적이다.\n\n<조건>\n• 계속적 용법의 관계대명사 which를 사용할 것\n• 'not only ~ but ... as well' 구문을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n<보기> build, biologically fertile and productive land areas, attractive, humans, other creatures, not only\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "Many cities are built on biologically fertile and productive land areas, which are attractive not only to humans but to other creatures as well",
+"solution": "앞 문장 전체 상황(비옥한 땅)을 선행사로 받아 콤마 뒤에 계속적 용법 관계대명사 which로 이어 쓴다. '지어지다'는 수동태 are built로, '~에게 매력적인'은 be attractive to로 쓴다. '인간뿐 아니라 다른 생물에게도'는 not only to humans but to other creatures as well로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m6s0t0",
+"custom": true
 }
 ]

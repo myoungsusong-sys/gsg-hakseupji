@@ -1183,5 +1183,113 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b01-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-87a8ee8e01",
+"typeId": "eng-m2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것의 개수는?\n\nNow, let's look at some questions. Here's an interesting one.\nsleepy: I have so much homework on weekdays that I can't sleep enough. So, I sleep more on weekends. Is this okay?\nTrying to sleep a lot during weekends may help. But you should try to keep a regular sleep schedule. Changing sleep patterns too often may lead to health problems.\nAnother interesting question was asked by morning412.\nmorning412: How much sleep do we need?\nIn a study, researchers found that teenagers need 8 to 10 hours of sleep each night. However, the quality of sleep matters, too.\nHere is a simple tip for having a deep sleep: Put your phone down 30 minutes to an hour before you go to bed.\n\n<보기>\n(a) Sleepy sleeps less on weekends than on weekdays.\n(b) The writer says that sleeping a lot on weekends may be helpful.\n(c) Changing sleep patterns too often can be bad for your health.\n(d) According to a study, teenagers need at least 10 hours of sleep each night.\n(e) The writer advises putting your phone down at least 30 minutes before going to bed.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "(a) sleepy는 주중에 숙제 때문에 잠을 충분히 못 자서 주말에 더 많이 잔다고 했으므로 일치하지 않는다. (d) 연구에서 십 대에게 필요한 잠은 매일 밤 8~10시간이므로 '최소 10시간'은 틀린 내용이다. (b), (c), (e)는 본문과 일치하므로 일치하는 것은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-069cab743a",
+"typeId": "eng-m2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 있는 질문을 모두 고른 것은?\n\nSleep is so important that you can't live without it. When you sleep, your body repairs your cells and muscles. So, if you don't get enough sleep, you can get sick.\nSleep is important for your physical health. And it is also important for your memory. While you sleep, your brain clears memories that are not needed. This makes space for new memories. Imagine keeping every detail of your experiences in your memory. It would be like a room with unnecessary items everywhere.\nsweetdream: During sleep, the brain works like a cleaner.\nSweetdream made a good point. Yes, unnecessary memories are cleaned up by your brain while you sleep.\n\n<보기>\n(a) What does your body repair while you sleep?\n(b) How many hours of sleep do adults need?\n(c) What does clearing unnecessary memories make space for?\n(d) What does sweetdream compare the brain to?\n(e) What kind of food helps us sleep well?",
+"choices": [
+"(a), (b)",
+"(a), (c)",
+"(b), (e)",
+"(a), (c), (d)",
+"(c), (d), (e)"
+],
+"answer": "④",
+"solution": "(a)는 cells and muscles, (c)는 new memories, (d)는 a cleaner로 본문에서 답을 찾을 수 있다. (b) 어른에게 필요한 수면 시간과 (e) 잠에 도움이 되는 음식은 본문에 나오지 않는다. 따라서 답은 (a), (c), (d)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ac26b140d2",
+"typeId": "eng-m2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "위 대화의 내용에 대한 질문과 대답이 바르게 짝지어지지 않은 것은?\n\nB: Good morning, Ms. Kang. I'm not feeling well.\nW: What's wrong?\nB: I have a bad stomachache. It hurt so much when I woke up this morning.\nW: What did you eat last night?\nB: I ate spicy noodles late at night.\nW: Spicy food can sometimes cause stomach pain. Eating late is also not good.\nB: I see. What should I do?\nW: Drinking warm water will be helpful. You should take this medicine, too.\nB: Okay, I will. Thank you, Ms. Kang.\nW: You're welcome. Don't forget to tell your teacher if your stomach still hurts.",
+"choices": [
+"Q: What is the boy's problem? — A: He has a bad stomachache.",
+"Q: When did his stomach hurt so much? — A: When he woke up this morning.",
+"Q: What did the boy eat late at night? — A: He ate spicy noodles.",
+"Q: What does Ms. Kang say will be helpful? — A: Drinking warm water.",
+"Q: Who should the boy tell if his stomach still hurts? — A: He should tell Ms. Kang."
+],
+"answer": "⑤",
+"solution": "Ms. Kang은 배가 계속 아프면 '선생님(your teacher)'에게 말하라고 했다. 대화 상대인 Ms. Kang에게 말하라고 한 것이 아니므로 ⑤의 대답이 틀렸다. 나머지는 모두 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2e52e50df2",
+"typeId": "eng-m2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용을 바르게 이해한 사람끼리 짝지은 것은?\n\nWhile you sleep, your brain clears memories that are not needed. This makes space for new memories.\nsweetdream: During sleep, the brain works like a cleaner.\nSweetdream made a good point. Now, let's look at some questions. Here's an interesting one.\nsleepy: I have so much homework on weekdays that I can't sleep enough. So, I sleep more on weekends. Is this okay?\nTrying to sleep a lot during weekends may help. But you should try to keep a regular sleep schedule. Changing sleep patterns too often may lead to health problems.\nAnother interesting question was asked by morning412.\nmorning412: How much sleep do we need?\nIn a study, researchers found that teenagers need 8 to 10 hours of sleep each night. However, the quality of sleep matters, too.\nHere is a simple tip for having a deep sleep: Put your phone down 30 minutes to an hour before you go to bed. Looking at videos or messages keeps your brain active. So, if you bring your phone to bed, you may have trouble falling asleep.\n\n<보기>\n지민: 잠을 자는 동안 뇌가 필요 없는 기억을 지워서 새로운 기억이 들어갈 공간을 만들어.\n서준: 주말에 몰아서 자는 건 전혀 도움이 안 된다고 했어.\n하은: 십 대는 매일 밤 8~10시간을 자야 하고, 잠의 질도 중요해.\n도윤: 자기 직전까지 휴대 전화로 영상을 보면 뇌가 쉬어서 깊이 잘 수 있어.\n수아: 수면 패턴을 너무 자주 바꾸면 건강 문제로 이어질 수 있어.",
+"choices": [
+"지민, 서준",
+"지민, 하은",
+"서준, 도윤",
+"지민, 하은, 수아",
+"하은, 도윤, 수아"
+],
+"answer": "④",
+"solution": "서준: 글쓴이는 주말에 많이 자는 것이 도움이 될 수도 있다(may help)고 했으므로 틀렸다. 도윤: 영상이나 메시지를 보면 뇌가 활발해져서 잠들기 어려워진다고 했으므로 틀렸다. 지민, 하은, 수아의 말은 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-75098a7a95",
+"typeId": "eng-m2-b01-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "두 대화 (A), (B)의 내용과 일치하지 않는 것은?\n\n(A)\nB: Good morning, Ms. Kang. I'm not feeling well.\nW: What's wrong?\nB: I have a bad stomachache. It hurt so much when I woke up this morning.\nW: What did you eat last night?\nB: I ate spicy noodles late at night.\nW: Spicy food can sometimes cause stomach pain. Eating late is also not good.\nB: I see. What should I do?\nW: Drinking warm water will be helpful. You should take this medicine, too.\nB: Okay, I will. Thank you, Ms. Kang.\n\n(B)\n(ringing)\nG: Hello?\nB: Hi, Tina. It's Brian. You didn't come to school today. What's wrong?\nG: Hey, Brian. I have a bad cold. I keep coughing and have a runny nose.\nB: I'm sorry to hear that. You should see a doctor.\nG: I already did. And I got some medicine.\nB: Good. Don't forget to take the medicine on time.\nG: Okay. Thank you for calling, Brian.",
+"choices": [
+"Both the boy in (A) and Tina in (B) are not feeling well.",
+"The boy in (A) ate spicy noodles late at night before his stomach hurt.",
+"Both Ms. Kang and Brian say something about taking medicine.",
+"Tina hasn't seen a doctor yet, so Brian tells her to see one.",
+"Tina keeps coughing and has a runny nose."
+],
+"answer": "④",
+"solution": "Brian이 의사에게 가 보라고 하자 Tina는 이미 다녀왔다(I already did)고 답했다. 따라서 Tina가 아직 의사에게 가지 않았다는 ④는 일치하지 않는다. ③은 Ms. Kang의 'You should take this medicine'과 Brian의 'Don't forget to take the medicine on time'으로 확인할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-50d1a6f26e",
+"typeId": "eng-m2-b01-u3m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 질문에 대한 답을 <조건>에 맞게 영어로 쓰시오.\n\nAnother interesting question was asked by morning412.\nmorning412: How much sleep do we need?\nIn a study, researchers found that teenagers need 8 to 10 hours of sleep each night. However, the quality of sleep matters, too.\nHere is a simple tip for having a deep sleep: Put your phone down 30 minutes to an hour before you go to bed. Looking at videos or messages keeps your brain active. So, if you bring your phone to bed, you may have trouble falling asleep.\n\nQ: Why may you have trouble falling asleep if you bring your phone to bed?\n\n<조건>\n• Because로 시작할 것\n• 동사 keep과 형용사 active를 사용할 것\n• 본문 내용을 바탕으로 완전한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "Because looking at videos or messages keeps your brain active.",
+"solution": "본문에서 휴대 전화로 영상이나 메시지를 보면 뇌가 활발한 상태로 유지된다고 했고, 그래서 잠들기 어려울 수 있다고 했다. 이유를 묻는 질문이므로 Because로 시작한다. 동명사구 주어(looking at videos or messages)는 단수 취급하므로 keeps를 쓴다. 'keep + 목적어 + 형용사' 구조로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m4s0t0",
+"custom": true
 }
 ]

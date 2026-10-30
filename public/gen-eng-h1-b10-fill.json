@@ -4218,5 +4218,157 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u7m4s0t0",
 "custom": true
+},
+{
+"id": "fill-452b01be1d",
+"typeId": "eng-h1-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nCoral reefs are crucial ecosystems that protect both marine life and people living near the sea. Coral reefs provide shelter to an abundance of marine life, such as fish and underwater plants. Because of the diversity of life found in coral reefs, they are often called \"the rainforests of the sea.\" Nearly one quarter of all known marine species depend on coral reefs for survival — they hide themselves from predators, find food, reproduce, and raise their young in coral reefs.",
+"choices": [
+"Coral reefs protect marine life but not people living near the sea.",
+"Coral reefs are called \"the rainforests of the sea\" because of their bright colors.",
+"About half of all known marine species depend on coral reefs for survival.",
+"Some marine species raise their young in coral reefs.",
+"Coral reefs provide shelter only to fish."
+],
+"answer": "④",
+"solution": "마지막 문장에 해양 생물들이 산호초에서 포식자를 피해 숨고, 먹이를 찾고, 번식하고, 새끼를 기른다(raise their young)고 나와 있으므로 ④가 글의 내용과 맞는다. ①은 산호초가 바닷가 근처에 사는 사람들도 보호한다는 내용과 어긋나고, ②는 별명의 이유가 색깔이 아니라 생물의 다양성(diversity of life)이다. ③은 절반이 아니라 약 4분의 1(one quarter)이며, ⑤는 물고기뿐 아니라 수중 식물에게도 서식처를 준다는 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-07ce5a75b1",
+"typeId": "eng-h1-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nA lot of people may be unfamiliar with the fact that there are forests in the sea, but the sea has forests, too. Sea forests are formed by marine plants, and numerous marine animals live there with them. That is, sea forests are habitats for underwater creatures and the leading contributors to creating a healthy marine ecosystem. However, uncontrolled human actions and climate change have threatened marine plants and the other creatures that live on them. So the Korean government designated May 10th every year as \"Marine Gardening Day,\" the first in the world. It is meant to raise awareness of the seriousness of ocean pollution and the importance of creating sea forests. Accordingly, many organizations contribute to protecting and reinforcing the ecosystem in damaged ocean areas by planting marine plants. On a smaller scale, groups of people pick up trash along the coast on this day.",
+"choices": [
+"What are sea forests formed by?",
+"What has threatened marine plants and other sea creatures?",
+"Which country was the first to designate Marine Gardening Day?",
+"How many organizations plant marine plants on Marine Gardening Day?",
+"What do groups of people do along the coast on Marine Gardening Day?"
+],
+"answer": "④",
+"solution": "글에는 'many organizations'가 해양 식물을 심는다고만 나와 있고, 단체가 몇 개인지는 나오지 않으므로 ④에는 답할 수 없다. ①은 해양 식물(marine plants), ②는 무분별한 인간 활동과 기후 변화, ③은 한국(the Korean government, the first in the world), ⑤는 해안을 따라 쓰레기 줍기로 각각 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c95fb7eae8",
+"typeId": "eng-h1-b10-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용과 일치하는 것을 <보기>에서 모두 고른 것은?\n\nIn recent years, advanced technologies have been put in place to save coral reefs by monitoring, protecting, and restoring them in quick and efficient ways. Researchers from Florida introduced a soft jellyfish-like robot to monitor coral reefs without damaging their delicate bodies. In addition, an Australian research team invented an intelligent underwater robot to protect coral reefs from a dangerous species of starfish. The robot uses a camera and computerized vision system to scan the reefs and identify this starfish. When it encounters one, the robot uses a foldable arm to inject some toxic salt into the starfish and eliminate it. Meanwhile, 3D printing systems have been proposed in Hong Kong as one way to restore coral reef structures. The 3D printer creates artificial support for corals. An example is a block made of mud that lies on the floor of the ocean. It is shaped in a way that allows corals to attach to it and grow easily.\n\n<보기>\na. The jellyfish-like robot was introduced to observe coral reefs without harming them.\nb. The Australian robot was designed to protect a dangerous species of starfish from coral reefs.\nc. The Australian robot recognizes the starfish by using a camera and a computerized vision system.\nd. Researchers from Florida have already used 3D printing systems to restore coral reef structures.\ne. The block created by the 3D printer is made of mud and helps corals attach to it and grow.",
+"choices": [
+"a, b",
+"a, c, e",
+"b, d",
+"c, d, e",
+"a, c, d, e"
+],
+"answer": "②",
+"solution": "a는 플로리다 연구진이 산호초의 연약한 몸체를 손상하지 않고 관찰하려고 해파리 모양 로봇을 도입했다는 내용과 맞는다. c는 카메라와 컴퓨터 시각 시스템으로 불가사리를 식별한다는 내용과 맞고, e는 진흙으로 만든 블록에 산호가 쉽게 붙어 자랄 수 있다는 내용과 맞는다. b는 보호 대상이 거꾸로 되어 있다(불가사리로부터 산호초를 보호함). d는 3D 프린팅 시스템이 플로리다가 아니라 홍콩에서, 그것도 이미 사용된 것이 아니라 제안된(proposed) 것이므로 틀렸다. 따라서 정답은 a, c, e이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-bdb6edd3d7",
+"typeId": "eng-h1-b10-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nNow, look at The Connoisseur, created in 1962. In the painting, an abstract art piece is hung on the wall and a gentleman is looking at it. The man is painted realistically in Rockwell's typical style, but the abstract art piece shows splashes of paint in a variety of colors. After World War II, art critics fascinated by abstract art devalued Rockwell's realistic style. In response, Rockwell decided to paint his own abstract painting. He used the drip technique, which was used by modernist artists at that time. By combining these different styles in one art piece, Rockwell highlighted his identity as a painter as well as an illustrator. In addition, we can see the man only from the rear. Rockwell left the interpretation of the gentleman's reaction to us.",
+"choices": [
+"The Connoisseur was created in 1962 and shows a gentleman looking at an abstract painting on the wall.",
+"The abstract art piece is depicted with splashes of paint in various colors.",
+"We are shown the gentleman's face clearly from the front of the painting.",
+"Rockwell used the drip technique, which modernist artists used at that time.",
+"Rockwell left it up to viewers to interpret the gentleman's reaction."
+],
+"answer": "③",
+"solution": "본문은 'we can see the man only from the rear'라고 하여 신사를 뒤에서만 볼 수 있다고 했다. 따라서 얼굴을 정면에서 뚜렷이 볼 수 있다는 ③은 글과 일치하지 않는다. 나머지 선지는 제작 연도, 추상화 묘사, 드립 기법, 해석을 관람객에게 맡긴 점 등 본문과 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8f0aecacf5",
+"typeId": "eng-h1-b10-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nB: Jenny, do you happen to know Marc Chagall?\nG: Of course. He is one of the most famous artists in the world.\nB: I watched a TV program last week that introduced him and his paintings.\nG: What was your impression of the paintings?\nB: The colors were so beautiful and vivid that I couldn't take my eyes off them.\nG: You know what? He is also famous for his book illustrations and stained glass art.\nB: Really? I'm curious what they look like.\nG: I have a photo book of his art. If you want, I can lend it to you.\nB: Thank you.",
+"choices": [
+"The boy got to know Chagall's paintings through a newspaper article.",
+"Chagall is famous only for his oil paintings.",
+"The boy was not impressed by the colors in Chagall's paintings.",
+"The girl offers to lend the boy her photo book of Chagall's art.",
+"The girl has never heard of Marc Chagall before."
+],
+"answer": "④",
+"solution": "대화 마지막에서 소녀는 'I have a photo book of his art. If you want, I can lend it to you.'라고 하며 책을 빌려주겠다고 제안하므로 ④가 일치한다. 소년은 TV 프로그램으로 그림을 알게 되었고(①×), 샤갈은 책 삽화와 스테인드글라스로도 유명하며(②×), 소년은 색채에 깊은 인상을 받았고(③×), 소녀는 샤갈을 이미 잘 알고 있다(⑤×).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f204fa763a",
+"typeId": "eng-h1-b10-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nIn a broad sense, digital art refers to any type of art that is created and displayed with the aid of digital devices. This artistic format emerged with the evolutionary progress in digital media and computers a few decades ago. There are many types of art that use digital technology. For instance, music can be recorded and then changed with the aid of digital devices, or music can be made only with computer software. Some movies are both created and edited digitally. Additionally, art museums offer exhibitions displaying famous paintings of the world on big digital screens.",
+"choices": [
+"What does digital art refer to in a broad sense?",
+"When did this artistic format emerge?",
+"How can music be involved in digital art?",
+"What do art museums display on big digital screens?",
+"Who created the very first digital artwork in history?"
+],
+"answer": "⑤",
+"solution": "본문에는 디지털 아트의 정의, 등장 시기(a few decades ago), 음악·영화·미술관 전시 등 구체적 예시가 제시되어 ①~④는 모두 답할 수 있다. 그러나 최초의 디지털 아트 작품을 누가 만들었는지는 언급되지 않으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b098c0d5dd",
+"typeId": "eng-h1-b10-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nMany of Rockwell's works about everyday life are quite tender. An example is Doctor and the Doll, produced in 1929. The little girl, who seems to be about four or five years old, is facing the old man while holding up a doll. The man is wearing a black suit, and there is a doctor's bag under the chair. The girl has already put the doll's dress under her arm because she wants to get her doll examined by the doctor. The doctor is going along with her wish and is pretending to listen to the doll's heart. He is treating her and her doll carefully. This work helps us appreciate the innocence of children. The girl's cuteness and the doctor's kindness evoke a feeling of warmth, bringing tender smiles to viewers' faces.",
+"choices": [
+"Doctor and the Doll, produced in 1929, is one of Rockwell's tender works about everyday life.",
+"The little girl appears to be about four or five years old and is holding up a doll.",
+"There is a doctor's bag placed under the chair, and the man is dressed in a black suit.",
+"The doctor refuses the girl's wish and ignores her by turning away from the doll.",
+"The girl's cuteness and the doctor's kindness create a warm feeling for viewers."
+],
+"answer": "④",
+"solution": "본문은 의사가 'going along with her wish'하며 인형의 심장 소리를 듣는 척하고 소녀와 인형을 조심스럽게 대한다고 했다. 따라서 소녀의 바람을 거절하고 외면한다는 ④는 글과 반대이다. 제작 연도, 소녀의 나이와 인형, 의사 가방과 검은 양복, 따뜻한 분위기는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2cfb699122",
+"typeId": "eng-h1-b10-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThis was painted in 1964. Along the street walks a little African American girl wearing a pure white dress and guarded by people wearing armbands. A tomato, perhaps thrown at her, is smashed on the ground while juice stains the wall above. The redness of the tomato easily captures the viewers' attention. The title of this work is The Problem We All Live With. It describes segregation and racism in the U.S. This work was inspired by Ruby Bridges' historic walk. Ruby was the first African American child to enter an elementary school for white children in New Orleans. On her first day of school, she walked past an angry crowd protesting her enrollment. The historical background made this painting an important symbol of the Civil Rights Movement in the U.S.",
+"choices": [
+"The painting was created in 1964 and depicts an African American girl in a pure white dress.",
+"The people wearing armbands threw tomatoes at the girl to protest her enrollment.",
+"The redness of the smashed tomato easily draws the viewers' attention.",
+"Ruby Bridges was the first African American child to enter a white children's elementary school in New Orleans.",
+"The painting became an important symbol of the Civil Rights Movement in the U.S."
+],
+"answer": "②",
+"solution": "본문에서 완장을 찬 사람들은 소녀를 '보호하는(guarded)' 역할이며, 토마토는 (아마도) 성난 군중이 던진 것이다. 따라서 완장을 찬 사람들이 토마토를 던졌다는 ②는 글과 일치하지 않는다. 제작 연도와 흰 드레스, 토마토의 붉은색, 루비 브리지스에 관한 설명, 민권 운동의 상징이 된 점은 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u5m4s0t0",
+"custom": true
 }
 ]

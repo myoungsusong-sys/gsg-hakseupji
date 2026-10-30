@@ -3734,5 +3734,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-93fc50f90d",
+"typeId": "eng-m3-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"If I have a time machine, I would go to the future.",
+"She was sitting on the bench with her legs crossing.",
+"If he were here, he could help us with the project.",
+"He ran to the bus stop with his dog follows him.",
+"If we can fly, we would visit the moon."
+],
+"answer": "③",
+"solution": "가정법 과거는 'If+주어+동사의 과거형(be동사는 were), 주어+조동사 과거형+동사원형' 형태이므로 ③이 올바르다. ①은 have → had, ⑤는 can → could로 고쳐야 한다. ②는 다리가 '꼬아진' 수동 관계이므로 with her legs crossed가 맞다. ④는 'with+목적어+분사' 구문이므로 follows → following으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a9e8ee8b73",
+"typeId": "eng-m3-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것의 개수는?\n\nSci Teen: Is there such a shortcut in the universe?\nDr. Sci: According to some researchers, yes. Einstein figured out that space and time are ⓐconnecting, and he called it space-time. He thought that space-time could actually ⓑbe bent. When it is bent, parts that are far away from each other ⓒis suddenly closer. To understand this, take a sheet of paper and make a small dot at the top of the paper and another at the bottom of the paper. On a flat sheet of paper, the dots are far away from one another. Now, take the paper and fold it with the dots ⓓmatched up. Punch a hole in the paper and the dots will be instantly connected. Like this, wormholes in space may contain two mouths, with a throat ⓔconnected the two.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓐ 공간과 시간은 '연결된' 것이므로 수동의 의미인 connected가 맞다. ⓒ 주어가 복수 명사 parts이므로 are로 고쳐야 한다. ⓔ 목구멍이 두 입구를 '연결하는' 능동 관계이고 뒤에 목적어 the two가 있으므로 connecting이 맞다. ⓑ 시공간이 '구부려지는' 것이므로 be bent, ⓓ 점들이 '맞춰지는' 것이므로 matched는 바르다. 따라서 틀린 것은 ⓐ, ⓒ, ⓔ로 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-68c9a6fe9a",
+"typeId": "eng-m3-b09-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳은 것끼리 짝지어진 것은?\n\nSci Teen: Hi, science fans. Today, we’re going to talk about space travel. As we all know, there is nothing faster than light in the universe. So, if we ⓐtraveled at the speed of light, we should be able to get to another planet in the blink of an eye, right?\nDr. Sci: That would be nice, but space is ⓑso vast that it is not possible. In the movie, Passengers, a spaceship headed to a different planet ⓒtravel at one-half the speed of light. But the passengers sleep for 120 years because it ⓓis expected to take that much time to get to a different planet.\nSci Teen: 120 years? Wow, that’s a long time! Is there a faster way to travel through space?\nDr. Sci: Well, in order to answer that question, I’d like you to think about this apple for a second. Imagine a worm is on this apple. It detects something sweet at the bottom and ⓔwant to move from the top to the bottom.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ, ⓔ",
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ 주절에 should be able to가 쓰인 가정법 과거 문장이므로 traveled가 맞고, ⓑ 'so+형용사+that' 구문도 바르다. ⓓ 그만큼의 시간이 걸릴 것으로 '예상되는' 것이므로 수동태 is expected가 맞다. ⓒ 주어가 단수인 a spaceship(headed to a different planet는 수식어)이므로 travels로 고쳐야 하고, ⓔ는 detects와 병렬을 이루며 주어가 It이므로 wants가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a09a851933",
+"typeId": "eng-m3-b09-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 단어의 영영풀이가 어색한 것은?",
+"choices": [
+"① express: to show what you think or feel",
+"② prevent: to stop something from happening",
+"③ demand: to ask for something in a firm way",
+"④ concentrate: to give all your attention to something",
+"⑤ careless: giving careful attention to what you are doing"
+],
+"answer": "⑤",
+"solution": "careless는 '부주의한'이라는 뜻으로, 하는 일에 충분한 주의를 기울이지 '않는'(not paying enough attention) 상태를 가리킨다. ⑤의 풀이는 오히려 careful의 뜻이므로 어색하다. 나머지 express, prevent, demand, concentrate의 풀이는 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a126464103",
+"typeId": "eng-m3-b09-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ와 바꾸어 쓰기에 가장 알맞은 것은?\n\nWhen you are angry, try to use an \"I-message.\" An I-message helps you focus on your own feelings instead of ⓐblaming the other person. For example, say \"I feel hurt\" rather than \"You are always wrong.\"",
+"choices": [
+"① pointing the finger at",
+"② keeping an eye on",
+"③ getting cold feet about",
+"④ cutting off",
+"⑤ breaking the ice with"
+],
+"answer": "①",
+"solution": "blame은 '~의 탓으로 돌리다, 비난하다'라는 뜻이고, 관용 표현 point the finger at도 '~에게 책임을 돌리다, 비난하다'라는 같은 의미이다. keep an eye on(지켜보다), get cold feet(겁먹다), cut off(말을 끊다), break the ice(어색함을 깨다)는 모두 뜻이 다르므로 답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a09a851933",
+"typeId": "eng-m3-b09-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어의 영영풀이가 어색한 것은?",
+"choices": [
+"① careless: done or said without enough thought",
+"② preview: to look at something after it is completely finished",
+"③ demand: a firm request for something",
+"④ prevent: to stop something from happening",
+"⑤ concentrate: to give all your attention to one thing"
+],
+"answer": "②",
+"solution": "preview는 어떤 것이 '일반에 공개되기 전에' 미리 보는 것을 뜻한다. ②는 'after it is completely finished(완전히 끝난 뒤에)'라고 되어 있어 before(미리)의 의미와 반대되므로 어색하다. 나머지 careless, demand, prevent, concentrate의 풀이는 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f16741b648",
+"typeId": "eng-m3-b09-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 빈칸에 주어진 동사를 알맞은 명사형으로 바꾸어 쓰시오. (철자와 형태에 유의할 것)\n\n(1) They had a serious __________ about money last night. (argue)\n(2) Good __________ is the key to a healthy relationship. (communicate)",
+"selfGrade": true,
+"answer": "(1) argument (2) communication",
+"solution": "advise→advice처럼 동사를 명사형으로 바꾸는 문제이다. argue의 명사형은 argument로, e가 빠지고 -ment가 붙는 철자에 주의해야 한다. communicate의 명사형은 끝의 e를 빼고 -ion을 붙인 communication이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6678fde24a",
+"typeId": "eng-m3-b09-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이가 설명하는 단어를, 주어진 첫 글자로 시작하여 쓰시오.\n\n(1) to disagree with someone, often angrily, by using words: a__________\n(2) not giving enough attention to what you are doing: c__________",
+"selfGrade": true,
+"answer": "(1) argue (2) careless",
+"solution": "(1) 말로, 종종 화를 내며 의견이 맞서는 것은 argue(언쟁하다)이다. (2) 하는 일에 충분한 주의를 기울이지 않는 것은 careless(부주의한)이다. 각각 제시된 첫 글자 a-, c-와 영영풀이가 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2195e467c0",
+"typeId": "eng-m3-b09-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영어 문장을 완성하시오.\n\n우리말: 내가 가장 아끼는 이어폰이 없어져서 나는 정말 속상해.\n\n<조건>\n1. \"I\"로 시작하는 I-message로 쓸 것\n2. upset, because, lost 를 반드시 포함할 것",
+"selfGrade": true,
+"answer": "I'm really upset because my favorite earphones are lost.",
+"solution": "상대를 탓하는 \"You-message\" 대신 자신의 감정에 초점을 맞추는 I-message로 써야 한다. 주어 I로 시작하고, '속상한'이라는 감정은 upset, 이유는 because, '없어졌다'는 are lost로 표현한다. 따라서 I'm really upset because my favorite earphones are lost.가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u0m0s0t0",
+"custom": true
 }
 ]

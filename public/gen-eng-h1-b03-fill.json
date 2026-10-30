@@ -7292,5 +7292,400 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b03-u10m5s0t0",
 "custom": true
+},
+{
+"id": "fill-a59da9447f",
+"typeId": "eng-h1-b03-u1m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 (A) 다음에 이어질 순서로 알맞은 것은?\n\n(A) Mina, a Vincent van Gogh exhibition just opened downtown. Do you want to go with me this weekend?\n(B) Great! Let's meet at the subway station entrance at ten.\n(C) Sure, Tom. I've always wanted to see his paintings in person. When should we go?\n(D) How about Saturday morning? I heard it's less crowded then.\n(E) Saturday morning sounds perfect. Where should we meet?",
+"choices": [
+"(C)-(D)-(B)-(E)",
+"(C)-(D)-(E)-(B)",
+"(C)-(E)-(D)-(B)",
+"(D)-(C)-(E)-(B)",
+"(D)-(E)-(C)-(B)"
+],
+"answer": "②",
+"solution": "(A)에서 Tom이 전시회에 함께 가자고 제안하므로, 수락하며 언제 갈지 묻는 (C)가 이어진다. 이어 토요일 아침을 제안하는 (D), 그것에 동의하며 만날 장소를 묻는 (E), 역 입구에서 만나자고 답하는 (B) 순서가 자연스럽다. 따라서 (C)-(D)-(E)-(B)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-fa7922910a",
+"typeId": "eng-h1-b03-u1m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nHenri Matisse really liked the city of Nice in France. Nice is known for its beautiful beach and pleasant weather. Matisse lived there for thirty-seven years and used the city's bright colors and light to make his art special. For Matisse, Nice was not just a place to live but a source of ________________.",
+"choices": [
+"inspiration",
+"confusion",
+"boredom",
+"fear",
+"sadness"
+],
+"answer": "①",
+"solution": "마티스가 니스의 밝은 색과 빛을 활용해 자신의 작품을 특별하게 만들었다는 내용이므로, 도시가 그에게 작품의 '영감(inspiration)'의 원천이었음을 알 수 있다. 나머지 혼란·지루함·두려움·슬픔은 긍정적 맥락과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-e9cadd4228",
+"typeId": "eng-h1-b03-u1m5s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nColors created by artificial light can affect our bodies in different ways. Blue and white light energize us, but they can also disturb sleep patterns by lowering levels of melatonin, a chemical made in the brain that regulates sleep-wake cycles. In fact, the brain is most sensitive to blue light. In contrast, exposure to red light in the evening can improve sleep by increasing the release of melatonin. Therefore, if you want to sleep well at night, it is better to ________________ in the evening.",
+"choices": [
+"avoid blue and white light",
+"get more exposure to blue light",
+"turn on bright white lights",
+"keep melatonin levels low",
+"stay under sunlight as long as possible"
+],
+"answer": "①",
+"solution": "파란색·흰색 빛은 멜라토닌 수치를 낮춰 수면을 방해하고 뇌가 파란빛에 가장 민감하다고 했으므로, 잘 자려면 저녁에 파란색·흰색 빛을 피하는 것이 좋다. 멜라토닌을 늘려야 수면에 도움이 되므로 ④는 반대이고, 햇빛·밝은 빛은 수면과 무관하거나 방해가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4a995a2a02",
+"typeId": "eng-h1-b03-u1m5s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ가 가리키는 것으로 알맞게 연결되지 않은 것은?\n\nVincent painted Café Terrace at Night in 1888. ⓐIt shows a café lit by warm yellow light at night. He created ⓑit while sitting outside the café at night. Most painters did their night scenes from memory, so ⓒthey used a lot of black paint. Vincent, however, believed that night scenes contained diverse and vibrant colors, and ⓓthis made his painting special. Even today, there is still a café at the site, and ⓔit was painted yellow to look like the café in the painting.",
+"choices": [
+"ⓐ: the painting Café Terrace at Night",
+"ⓑ: the painting Café Terrace at Night",
+"ⓒ: most painters",
+"ⓓ: the belief that night scenes contained vibrant colors",
+"ⓔ: the painting Café Terrace at Night"
+],
+"answer": "⑤",
+"solution": "ⓔit은 '오늘날 그 장소에 여전히 남아 있는 카페'를 가리키며, 그것이 그림 속 카페처럼 노랗게 칠해졌다는 내용이다. 따라서 ⓔ를 그림(Café Terrace at Night)으로 연결한 ⑤가 알맞지 않다. ⓐⓑ는 그림, ⓒ는 대부분의 화가들, ⓓ는 밤 풍경에 색이 풍부하다는 믿음을 가리킨다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bff14c56a7",
+"typeId": "eng-h1-b03-u8m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nInclusive language is an important tool for recognizing diversity and promoting equal opportunities. For example, using the term \"mail carrier\" instead of \"mailman\" or \"mailwoman\" shows that people of any gender can deliver the mail. Such small changes help build a welcoming society where every person feels respected.",
+"choices": [
+"the difficulty of learning gender-neutral words",
+"the role of inclusive language in creating a fair society",
+"the history of the English word \"mail carrier\"",
+"ways to improve communication skills at work",
+"the importance of choosing an easy job"
+],
+"answer": "②",
+"solution": "글은 포용적 언어가 다양성을 인정하고 평등한 기회를 촉진하는 중요한 도구임을 설명한다. '우편배달원(mail carrier)' 같은 중립적 표현의 예를 들어 작은 변화가 모두가 존중받는 사회를 만든다고 말한다. 따라서 주제는 포용적 언어가 공정한 사회를 만드는 역할이다. 정답은 ②.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a2f935d535",
+"typeId": "eng-h1-b03-u8m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nKatherine Johnson was a math prodigy from early childhood. She later recalled, \"I counted everything — the steps to the road, the steps up to church, the number of dishes, spoons, and forks I washed.\" She could not wait to get to high school to take algebra and geometry. From a very young age, numbers filled her everyday life.",
+"choices": [
+"A Shy Girl Who Disliked Numbers",
+"A Math Lover from Her Earliest Days",
+"The Hard Life of a Large Family",
+"How to Become a Famous Astronaut",
+"A Teacher Who Changed Katherine's Life"
+],
+"answer": "②",
+"solution": "글은 캐서린이 어릴 때부터 수학 신동이었고 모든 것을 세며 대수와 기하를 배우고 싶어 했다는 내용을 담고 있다. 즉 어린 시절부터 수를 사랑한 아이라는 점이 핵심이다. 따라서 제목으로는 ②가 알맞다. 숫자를 싫어했다는 ①은 글과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m3s0t0",
+"custom": true
+},
+{
+"id": "fill-aec58de641",
+"typeId": "eng-h1-b03-u8m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 요지로 가장 알맞은 것은?\n\nIn early 1962, NASA used an electronic computer to calculate the path of John Glenn's spaceship, but it made many small errors. Worried about the accuracy, Glenn asked Katherine Johnson to check the numbers by hand. He said, \"If she says the numbers are good, I'm good to go.\" Using only a pencil and a slide rule, Katherine checked the calculations and confirmed them.",
+"choices": [
+"전자 컴퓨터는 사람보다 항상 정확하다.",
+"캐서린의 손 계산은 컴퓨터보다 더 신뢰받았다.",
+"존 글렌은 우주 비행을 포기하려 했다.",
+"캐서린은 연필과 계산자를 싫어했다.",
+"NASA는 1962년에 처음으로 컴퓨터를 도입했다."
+],
+"answer": "②",
+"solution": "전자 컴퓨터가 많은 오차를 냈기에 글렌은 캐서린에게 손으로 검산해 달라고 부탁했고, 그녀의 계산이 좋다면 가겠다고 말했다. 이는 그녀의 손 계산이 컴퓨터보다 더 신뢰받았음을 보여 준다. 따라서 요지는 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1480602a3f",
+"typeId": "eng-h1-b03-u8m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nWhen Katherine joined NASA's elite space research division, she was the only black female member of the staff. The important research meetings were held only among white staff members. When she asked to attend, her male colleagues said that \"the girls\" did not usually go. Katherine asked, \"Is there a law that says I can't go?\" The embarrassed workers had no choice but to let her in. By asking a question no one had ever asked, she ended a discriminatory custom.",
+"choices": [
+"Katherine's Failure to Join the Research Meetings",
+"A Simple Question That Broke a Discriminatory Custom",
+"Why NASA Needed More Electronic Computers",
+"The Warm Friendship Between Katherine and Her Colleagues",
+"Katherine's Decision to Leave NASA Early"
+],
+"answer": "②",
+"solution": "캐서린은 백인들만 참석하던 회의에 '법으로 금지되어 있느냐'는 질문을 던져 참석 허락을 얻어 냈고, 아무도 하지 않던 질문으로 차별적 관행을 끝냈다. 글의 핵심은 한 번의 용감한 질문이 차별적 관행을 깨뜨렸다는 것이다. 따라서 제목은 ②가 알맞다. 회의 참석에 실패했다는 ①은 글과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8fcb11b84e",
+"typeId": "eng-h1-b03-u8m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 아래와 같이 한 문장으로 요약할 때, 빈칸 ⓐ, ⓑ에 들어갈 말로 알맞게 연결된 것은?\n\nIt was not until 1953 that Katherine found a job at a NASA field center. There she worked as one of the \"Black computers\" and endured discrimination, including being called \"girl\" despite being a professional woman. Later, in the elite research division, the important meetings were held only among white staff members. When she asked to attend, she was told that \"the girls\" did not usually go. By refusing to accept this, she eventually became the first woman in her division to be credited as an author of a research paper.\n\n→ Although Katherine made great ⓐ______ to the space program while facing discrimination, she won recognition by boldly ⓑ______ unfair customs.\n\nⓐ / ⓑ",
+"choices": [
+"contributions / questioning",
+"mistakes / accepting",
+"contributions / ignoring",
+"efforts / following",
+"mistakes / questioning"
+],
+"answer": "①",
+"solution": "캐서린은 차별 속에서도 우주 프로그램에 큰 '기여(contributions)'를 했고, 불공정한 관행에 '의문을 제기함(questioning)'으로써 인정을 받았다. 따라서 ⓐ에는 contributions, ⓑ에는 questioning이 들어가야 한다. 정답은 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7760826ede",
+"typeId": "eng-h1-b03-u8m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nAnother form of inclusive language, called person-first language, encourages us to put the individual before any single defining characteristic. For example, instead of saying \"blind person,\" we can say \"person with blindness.\" This small change highlights each person's unique identity and dignity, rather than reducing someone to just one unusual feature.",
+"choices": [
+"a method of teaching people with blindness",
+"reasons why some words are hard to pronounce",
+"the purpose and value of person-first language",
+"the difference between reading and speaking",
+"how to describe an unusual characteristic in detail"
+],
+"answer": "③",
+"solution": "글은 사람 우선 언어가 어떤 특성보다 개인을 먼저 두도록 하며, '맹인'보다 '시각 장애가 있는 사람'이라는 표현이 개인의 고유한 정체성과 존엄을 드러낸다고 설명한다. 즉 사람 우선 언어의 목적과 가치가 주제이다. 따라서 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m3s0t0",
+"custom": true
+},
+{
+"id": "fill-66b6a13894",
+"typeId": "eng-h1-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nIn Mumbai, India's busiest city, a lunch delivery service is run by dedicated workers called dabbawalas. Every morning, they pick up lunch boxes from homes by 9:00 a.m. and bring them to the nearest train station. Each box is placed on the correct train and reaches offices by 12:30 p.m. The empty boxes are collected by 5:00 p.m. and returned to their original homes. About 5,000 dabbawalas handle around 400,000 deliveries a day with a 99.99% success rate.",
+"choices": [
+"Dabbawalas are dedicated workers who run a lunch delivery service in Mumbai.",
+"Lunch boxes are collected from homes by 9:00 a.m. and taken to the nearest train station.",
+"Each lunch box is placed on the right train and arrives at offices by 12:30 p.m.",
+"The empty boxes are gathered by 5:00 p.m. and returned home along a different, faster route.",
+"About 5,000 dabbawalas make around 400,000 deliveries a day with a 99.99% success rate."
+],
+"answer": "④",
+"solution": "지문은 빈 도시락이 오후 5시까지 모아져 '원래의 집으로' 되돌아간다고만 했을 뿐, 더 빠른 다른 경로로 돌아간다고 하지 않았다(기준 글에서는 같은 경로를 역순으로 이용). 따라서 '다르고 더 빠른 경로'라고 한 ④가 일치하지 않는다. 나머지 ①·②·③·⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8ef234170b",
+"typeId": "eng-h1-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nB: Lunch is on me today, so order anything you like.\nG: Thank you! There are so many choices. Could you recommend something?\nB: You should definitely try naengmyeon, the cold Korean noodles. It's one of my favorites.\nG: Cold noodles? In China we usually eat hot noodles, so I've never had cold noodles before.\nB: It might sound strange, but you'll find it quite satisfying. The noodles are chewy and the broth is rich. What's interesting is that Koreans eat it no matter the season, even in winter.\nG: That's interesting. Okay, I'll give it a try.",
+"choices": [
+"The boy offers to pay for lunch and tells the girl to order anything she likes.",
+"The girl asks the boy to recommend something from the menu.",
+"The boy recommends naengmyeon, saying it is one of his favorites.",
+"The girl says that in China she usually eats hot noodles and has never tried cold noodles.",
+"The boy explains that Koreans eat naengmyeon only in summer because it is a cold dish."
+],
+"answer": "⑤",
+"solution": "남학생은 냉면이 찬 음식이지만 한국인은 계절에 상관없이, 심지어 겨울에도 먹는다고 말했다. 따라서 '여름에만 먹는다'고 한 ⑤가 대화 내용과 일치하지 않는다. ①~④는 모두 대화에서 확인되는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ebdef4bc70",
+"typeId": "eng-h1-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 내용과 일치하지 않는 것은?\n\nM (Interviewer): I'm on the streets of Seoul, asking Koreans what they'd recommend to foreign tourists.\nStudent 1: I recommend visiting Korean local markets. They offer a genuine cultural experience by showing the daily lives of locals, and you can try various street foods and traditional snacks.\nStudent 2: I suggest four-cut photos. It's an easy way to experience Korean play culture, and if you pick a frame featuring K-pop stars, you can take photos as if you were with them.\nStudent 3: I recommend bingsu. It perfectly represents Korean dessert culture, and with various toppings like tiramisu and seasonal fruits, it's quite accessible to foreigners.",
+"choices": [
+"The interviewer is asking Koreans on the streets of Seoul for recommendations for foreign tourists.",
+"Student 1 recommends local markets because they show the daily lives of locals.",
+"At local markets, visitors can try various Korean street foods and traditional snacks.",
+"Student 2 recommends four-cut photos and mentions frames featuring K-pop stars.",
+"Student 3 recommends bingsu because it is cheap and sold only in winter."
+],
+"answer": "⑤",
+"solution": "3번 학생은 빙수가 한국 디저트 문화를 잘 보여 주며 티라미수·제철 과일 등 다양한 토핑이 있어 외국인이 즐기기 쉽다고 했을 뿐, 가격이 싸다거나 겨울에만 판다고 하지 않았다. 따라서 ⑤가 대화와 일치하지 않는다. 나머지 선지는 모두 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-30a89e11a9",
+"typeId": "eng-h1-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nIn 1992, taekbae service, an express home delivery service, was introduced. On the first day, there were just two deliveries. Now, millions of items are delivered daily, and on average a South Korean uses taekbae sixty-five times per year. It was the development of digital and information technology that enabled this remarkable growth. Logistics automation, GPS maps, and mobile applications have extended the range and scale of delivery services while keeping prices reasonable. A rule of thumb for taekbae is next-day delivery, but now more items arrive on the same day, and customers can even choose a specific date and time.",
+"choices": [
+"In what year was taekbae service introduced?",
+"How many deliveries were there on the first day of the service?",
+"On average, how many times a year does a South Korean use taekbae?",
+"What technologies helped extend the range and scale of delivery services?",
+"How much did a single taekbae delivery cost in 1992?"
+],
+"answer": "⑤",
+"solution": "지문은 도입 연도(1992년), 첫날 배달 건수(2건), 연평균 이용 횟수(65회), 범위·규모를 넓힌 기술(물류 자동화·GPS 지도·모바일 앱)은 밝히지만, 1992년 택배 1건의 요금은 언급하지 않는다. 따라서 답할 수 없는 질문은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2509932044",
+"typeId": "eng-h1-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAfter Korea's liberation, the country was divided, and then came the Korean War (1950–1953). During this period, Korea's delivery system collapsed. It was in the 1960s that delivery services grew again thanks to urbanization. As the economy developed, people flocked to urban areas where labor became concentrated, which boosted the demand for delivery. Deliveries of newspapers and milk quickly became popular. In the late 1980s and 1990s, caterers delivered homemade lunches in cloth bags to urban offices and returned later to collect the empty dishes. The delivery area grew rapidly.",
+"choices": [
+"Korea's delivery system collapsed during the national division and the Korean War.",
+"Delivery services grew again in the 1960s thanks to urbanization.",
+"As the economy developed, people gathered in cities, which increased the demand for deliveries.",
+"Deliveries of newspapers and milk became popular during this period.",
+"In the late 1980s and 1990s, caterers delivered homemade lunches to residential homes and did not return to collect the dishes."
+],
+"answer": "⑤",
+"solution": "1980년대 후반~1990년대에 음식 공급업자들은 가정집이 아니라 '도시의 사무실'로 도시락을 배달했고, 이후 다시 와서 빈 그릇을 수거했다. 따라서 가정집에 배달하고 그릇을 수거하지 않았다고 한 ⑤가 본문과 일치하지 않는다. 나머지는 모두 지문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-460143a278",
+"typeId": "eng-h1-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하는 것은?\n\nIn 1768, the scholar Hwang Yun-seok wrote a diary entry after taking the gwageo exam, noting that he and his friends had ordered a delivery of naengmyeon for lunch. His diary is the first historical document indicating that Koreans have been delivering food for at least two and a half centuries. During the Joseon period, specialized people called jeonin delivered letters for a fee. Because there was no modern address system, letters were delivered by name and place of residence, so a jeonin had to know the local areas very well. During the Japanese colonial period, Seoul's streets were filled with \"messengers,\" most of whom worked for a company called Yongdalsa. This messenger service was unique to Korea and was based on a culture of mutual trust and a hunger for speed.",
+"choices": [
+"Hwang Yun-seok's 1768 diary is the first historical record showing that Koreans delivered food centuries ago.",
+"Jeonin during the Joseon period mainly delivered parcels and goods rather than letters.",
+"Jeonin did not need to know local areas because a modern address system already existed.",
+"Most messengers during the Japanese colonial period worked independently without any company.",
+"The Korean messenger service was common in many countries and had nothing to do with trust."
+],
+"answer": "①",
+"solution": "황윤석의 1768년 일기는 한국인이 적어도 2세기 반 전부터 음식을 배달해 왔음을 보여 주는 최초의 역사 기록이므로 ①이 일치한다. 전인은 편지를 배달했고(②), 현대식 주소 체계가 없어 지역을 잘 알아야 했으며(③), 대부분 용달사 소속이었고(④), 메신저 서비스는 한국 고유의 상호 신뢰 문화에 기반했으므로(⑤) 나머지는 모두 본문과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-049f357ec5",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화를 읽고, 아래 질문에 대한 답을 <조건>에 알맞게 완성하시오.\n\nB: Hey, have you heard about Rosa Parks before?\nG: Yeah, I remember learning about her in history class. Wasn't she the person who refused to give up her seat to a white passenger on a bus?\nB: That's correct. Her action led to the bus boycott in Montgomery, Alabama, in the U.S.\n\n<조건>\n• 지문에서 찾아 그대로 쓸 것\n• 앞에 주어진 어구를 제외하고 8단어로 쓸 것\n\nQ. What did Rosa Parks refuse to do?\n→ She refused to ________________________________.",
+"selfGrade": true,
+"answer": "give up her seat to a white passenger",
+"solution": "G의 말 'Wasn't she the person who refused to give up her seat to a white passenger on a bus?'에서 답을 찾을 수 있다. 앞에 refused to가 주어져 있으므로 그 뒤의 'give up her seat to a white passenger'를 쓰면 정확히 8단어가 된다. 'on a bus'까지 쓰면 11단어가 되어 조건에 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-91ab7c900d",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\n1953년이 되어서야 Katherine은 버지니아에 있는 NASA 현장 센터에서 일자리를 구했다.\n\n<보기> until / that / not / was / it / 1953 / found / Katherine\n\n→ ______________________________________ a job at a NASA field center in Virginia.",
+"selfGrade": true,
+"answer": "It was not until 1953 that Katherine found",
+"solution": "'~하고 나서야 비로소 …하다'는 'It was not until ~ that …' 구문으로 쓴다. not until 뒤에 시점 1953을 쓰고, that 뒤에 주어 Katherine과 동사 found를 차례로 쓴다. 따라서 'It was not until 1953 that Katherine found'가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-be97e5529c",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\n당황한 남자 직원들은 그녀를 들여보낼 수밖에 없었다.\n\n<보기> let / choice / to / had / in / no / her / but\n\n→ The embarrassed male workers ______________________________________.",
+"selfGrade": true,
+"answer": "had no choice but to let her in",
+"solution": "'~할 수밖에 없다'는 'have no choice but to + 동사원형'으로 쓴다. 과거이므로 had를 쓰고, 'let+목적어+in(~을 들여보내다)' 어순에 따라 let her in으로 마무리한다. 따라서 'had no choice but to let her in'이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-47744c51a0",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화를 읽고, 아래 질문에 대한 답을 <조건>에 알맞게 완성하시오.\n\nG: Hey, I saw the film Hidden Figures, and it was inspiring.\nB: What does \"hidden figures\" mean?\nG: It refers to people who made significant contributions but were not recognized.\nB: Who are some examples?\nG: Well, the movie I mentioned is about three African-American women at NASA in the 1950s. While they accomplished much, their contributions were often overlooked. They're perfect examples of hidden figures.\n\n<조건>\n• 지문에서 찾아 그대로 쓸 것\n• 앞에 주어진 어구를 제외하고 5단어로 쓸 것\n\nQ. Why does the girl call the three women perfect examples of hidden figures?\n→ Because although they accomplished much, ________________________________.",
+"selfGrade": true,
+"answer": "their contributions were often overlooked",
+"solution": "G가 'While they accomplished much, their contributions were often overlooked.'라고 말한 직후 이들을 hidden figures의 완벽한 예라고 한다. 앞부분 'although they accomplished much'가 이미 주어져 있으므로 주절 'their contributions were often overlooked'(5단어)를 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a3d277dbde",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 알맞게 영작하여 문장을 완성하시오.\n\n그녀의 엄청난 기여에도 불구하고, 중요한 연구 회의들은 백인 직원들 사이에서만 열렸다.\n\n<조건>\n• 수동태를 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n\n<보기> despite, hold, enormous, contribution, among, white staff members, only\n\n→ ____________ her ____________ ____________, the important research meetings ____________ ____________ ____________ ____________ ____________ ____________ ____________.",
+"selfGrade": true,
+"answer": "Despite enormous contributions were held only among white staff members",
+"solution": "'~에도 불구하고'는 전치사 despite 뒤에 명사구 'her enormous contributions'를 쓴다. 회의가 '열린' 것이므로 hold를 과거 수동태 were held로 바꾼다. 그 뒤에 'only among white staff members'를 쓰면 빈칸 7개가 모두 채워진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ed6bd7a739",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 알맞게 영작하여 문장을 완성하시오.\n\n이 겉보기에 사소한 변화는 성별에 관계없이 모든 사람의 능력을 인정하려는 더 폭넓은 헌신을 반영한다.\n\n<조건>\n• 전치사 to 뒤에 동명사를 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n\n<보기> seem, minor, extensive, commitment, acknowledge, ability, regardless of\n\n→ This ____________ ____________ change reflects a more ____________ ____________ ____________ ____________ the ____________ of every person, ____________ ____________ his or her gender.",
+"selfGrade": true,
+"answer": "seemingly minor extensive commitment to acknowledging ability regardless of",
+"solution": "'겉보기에 사소한'은 부사 seemingly가 형용사 minor를 꾸미는 형태로 쓴다. commitment to의 to는 전치사이므로 그 뒤에는 동명사 acknowledging을 써야 한다. '~에 관계없이'는 regardless of로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-64555b9f9c",
+"typeId": "eng-h1-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 알맞게 영작하여 문장을 완성하시오.\n\n그것(전자 컴퓨터)의 정확성을 걱정했던 Glenn은 Katherine Johnson에게 그 기계의 수치를 손으로 재확인해 달라고 요청했다.\n\n<조건>\n• 계속적 용법의 관계대명사를 사용할 것\n• 5형식 구문을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것 (필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n\n<보기> concern, accuracy, ask, double-check, figures, by hand\n\n→ Glenn, ____________ ____________ ____________ about its ____________, ____________ Katherine Johnson ____________ ____________ the machine's ____________ ____________ ____________.",
+"selfGrade": true,
+"answer": "who was concerned accuracy asked to double-check figures by hand",
+"solution": "선행사 Glenn이 사람이고 콤마 뒤에 이어지므로 계속적 용법의 관계대명사는 who를 쓴다(that은 쓸 수 없다). '~을 걱정하다'는 be concerned about이므로 who was concerned가 된다. 5형식 'ask+목적어+to부정사'에 따라 asked Katherine Johnson to double-check로 쓴다. ask를 과거형으로 바꾸고 to를 빠뜨리지 않는 것이 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u8m6s0t0",
+"custom": true
 }
 ]

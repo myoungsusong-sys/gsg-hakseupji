@@ -5361,5 +5361,159 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u5m5s0t0",
 "custom": true
+},
+{
+"id": "fill-35c37c3fa7",
+"typeId": "eng-m3-b03-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nIn America, people often greet each other by waving. Waving to an older person is not regarded as rude. When you come to America, you may feel uncomfortable about it at first, but why don't you try it? You can wave to and smile at an elderly man walking on the street. He may wave back.",
+"choices": [
+"미국의 판매세 제도",
+"미국에서 손을 흔들어 인사하는 문화",
+"노인을 공경하는 올바른 방법",
+"부정의문문에 대답하는 방법",
+"미국 거리에서 볼 수 있는 풍경"
+],
+"answer": "②",
+"solution": "글은 미국에서는 사람들이 손을 흔들며 인사하고, 나이 든 사람에게 손을 흔드는 것도 무례하지 않다고 설명한다. 따라서 주제는 '미국에서 손을 흔들어 인사하는 문화'이다. ③은 글에 나온 elderly man이라는 낱말만 이용한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-febfbb6732",
+"typeId": "eng-m3-b03-u1m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nHi! My name is Kim Minhee. I have been living in America for three years. Since my family moved here, I have experienced many cultural differences between Korea and America. I would like to share some of them with you.\nHere in America, in most states, people pay a tax when they buy goods. It is called a sales tax. So when you buy goods in America, you usually need to pay more than the price on the tag.\nIn America, people often greet each other by waving. Waving to an older person is not regarded as rude.\nAmericans often ask negative questions, such as \"Aren't you coming?\" In response to negative questions, you should answer \"No,\" if you don't like it, and \"Yes,\" if you like it.\nWhich cultural difference is most surprising to you? I have been learning about cultural differences since I came to America. Some surprised me at first, but now I am getting used to them.\n\n<요약문>\nThrough her own experiences, Minhee explains how life in America (A)__________ from life in Korea, and she says that she is gradually (B)__________ to these differences.",
+"choices": [
+"differs ― adjusting",
+"differs ― objecting",
+"comes ― adjusting",
+"suffers ― returning",
+"benefits ― objecting"
+],
+"answer": "①",
+"solution": "민희는 판매세, 손을 흔드는 인사, 부정의문문에 답하는 법을 예로 들어 미국 생활이 한국과 어떻게 다른지 소개하므로 (A)에는 differs (from)가 알맞다. 마지막 문장의 'now I am getting used to them'을 바꿔 쓰면 '점점 적응하고 있다'이므로 (B)에는 adjusting (to)이 들어간다. objecting은 '반대하는'이라는 뜻이고, comes from은 '~에서 나오다'라는 뜻이라 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6f73f8b72c",
+"typeId": "eng-m3-b03-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 <요약문>의 빈칸 (A)~(C)에 알맞은 말을 쓰시오. (단, (A)는 본문에서 찾아 한 단어로, (B)는 두 단어로, (C)는 한 단어로 쓸 것)\n\nAndy: Minhee, try this apple pie.\nMinhee: No, thanks. I don't want to.\nAndy: Why not? Don't you like apple pie?\nMinhee: Yes.\nAndy: Then, try some. It's delicious.\nMinhee: No. I just said I don't like apple pie.\nAndy: What?\n\nAmericans often ask negative questions, such as \"Aren't you coming?\" and \"Didn't you go to the hospital?\" It can be difficult to answer negative questions correctly. In response to negative questions, such as \"Don't you like apple pie?\" you should answer \"No,\" if you don't like it. And you should answer \"Yes,\" if you like it. These answers are the same as the answers to positive questions, such as \"Do you like apple pie?\"\n\n<요약문>\nIn English, the answer to a negative question is the same as the answer to a(n) (A)__________ question. Minhee answered \"Yes\" to Andy's question although she (B)__________ apple pie. She should have answered \"(C)__________.\"",
+"selfGrade": true,
+"answer": "(A) positive (B) didn't like (C) No",
+"solution": "본문은 부정의문문에 대한 대답이 긍정의문문에 대한 대답과 같다고 설명하므로 (A)는 positive이다. 민희는 사과파이를 좋아하지 않았는데도 우리말 습관대로 'Yes'라고 답했으므로, 과거 시제에 맞춰 (B)는 didn't like가 된다. 좋아하지 않을 때는 'No'라고 답해야 하므로 (C)는 No이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-90d5123e4d",
+"typeId": "eng-m3-b03-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 <조건>에 맞게 한 문장의 영어로 쓰시오.\n\nThere are many interesting festivals around the world. Among them, I'd like to attend Holi. People in India have been celebrating this festival for many years. Holi is held in March. I think that if I go, I'll experience a lot of things. First, there are people throwing colored powder and water at each other. It will be fantastic! Second, I want to dance with other people on the street. I'll also taste traditional Holi dishes. It's going to be very exciting. I can't wait for the day!\n\n<조건>\n• the writer, look forward to, attend, Holi를 모두 사용할 것 (필요하면 형태를 바꿀 것)\n• 현재진행형으로 쓸 것\n• 8단어로 쓸 것",
+"selfGrade": true,
+"answer": "The writer is looking forward to attending Holi.",
+"solution": "글쓴이는 홀리 축제에서 겪을 일을 기대하며 'I can't wait for the day!'라고 말하므로, 요지는 '글쓴이는 홀리 축제에 참가하기를 고대하고 있다'이다. 현재진행형이므로 is looking forward to로 쓴다. 이때 to는 전치사이므로 뒤에 동명사 attending을 써야 하고, attend로 쓰면 틀린다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4fc38beb56",
+"typeId": "eng-m3-b03-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용과 일치하는 것끼리 바르게 짝지은 것은?\n\nWhen June tripped over a backpack and fell, Mike found it funny and laughed. He took a picture and uploaded it on an SNS. June saw the picture and became angry. Mike said, with a laugh, \"Sorry, June!\" and deleted it. After that, June felt even more hurt because of Mike's insincere apology. June didn't like how Mike had acted. Mike seemed to think it was nothing serious.\nWhat did you learn from this case? Yes. You guessed right. You should be sincere when you apologize. Apologizing is necessary to build good friendships.\nHere is another case. While Kate was hurrying across the cafeteria, she accidentally bumped into Hojun. Some food on Hojun's tray fell on his jacket. Kate didn't apologize. Hojun felt bad. He thought, 'Why doesn't she say something? It would be nothing if she apologized right now.'\nThis case shows that when an apology is necessary, you should apologize at once. A quick apology shows that you are thoughtful and take responsibility for your action.\n\n(a) Mike uploaded the picture of June before she got angry.\n(b) Mike deleted the picture without saying a word to June.\n(c) June felt better after Mike deleted the picture.\n(d) Hojun thought it would be nothing if Kate apologized right away.\n(e) According to the writer, a quick apology shows that you take responsibility for your action.",
+"choices": [
+"(a), (b)",
+"(a), (d), (e)",
+"(b), (c), (e)",
+"(c), (d)",
+"(a), (c), (d), (e)"
+],
+"answer": "②",
+"solution": "Mike가 사진을 올린 뒤 June이 그것을 보고 화가 났으므로 (a)는 일치한다. Mike는 웃으며 \"Sorry, June!\"이라고 말한 뒤 사진을 지웠으므로 (b)는 일치하지 않고, June은 그 뒤 오히려 더 상처를 받았으므로 (c)도 일치하지 않는다. (d)는 Hojun의 생각과, (e)는 글쓴이의 주장과 일치한다. 따라서 정답은 (a), (d), (e)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2ad2010c0d",
+"typeId": "eng-m3-b03-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 답할 수 있는 질문의 개수는?\n\nFinally, apologies are necessary among family members and loved ones, too. One day, Sunmin borrowed her sister's favorite book. Later, she lost it. Sunmin didn't apologize because she thought it was not important. She thought, 'We're sisters, after all.' Sunmin's sister disliked how Sunmin treated her. How could her own sister ignore her feelings?\nPeople need to apologize when they do something wrong. This includes family members and the people who are close to you. People get hurt more easily when the hurt comes from a family member or a friend. We may think that they will let it go because they are close to us. Remember, however, that small mistakes and no apology add up to big emotional wounds.\n\n(a) What did Sunmin lose?\n(b) Why didn't Sunmin apologize to her sister?\n(c) On what day did Sunmin borrow the book?\n(d) What can add up to big emotional wounds?\n(e) How did Sunmin's sister find out that the book was lost?",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "(a) 언니의 가장 좋아하는 책을 잃어버렸다고 나와 있고, (b) 그것이 중요하지 않다고 생각했기 때문이라고 나와 있다. (d) 작은 실수와 사과하지 않는 것이 쌓여 큰 감정의 상처가 된다고 나와 있다. (c)는 'One day'라고만 되어 있어 정확한 날을 알 수 없고, (e) 동생이 책을 잃어버린 사실을 어떻게 알았는지는 글에 나오지 않는다. 따라서 답할 수 있는 질문은 (a), (b), (d) 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2984b0ed2f",
+"typeId": "eng-m3-b03-u6m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 글의 내용을 바탕으로 아래 문장의 빈칸 (A), (B)에 알맞은 말을 쓰시오.\n\nHere is another case. While Kate was hurrying across the cafeteria, she accidentally bumped into Hojun. Some food on Hojun's tray fell on his jacket. Kate didn't apologize. Hojun felt bad. He thought, 'Why doesn't she say something? It would be nothing if she apologized right now.'\nThis case shows that when an apology is necessary, you should apologize at once. A quick apology shows that you are thoughtful and take responsibility for your action. All you need to do is to say, \"I'm sorry.\" Then, the hurt friend will think nothing of it and laugh it off.\n\nIf Kate had said \"I'm sorry\" to Hojun at once, Hojun would have (A)__________ (4단어) and (B)__________ (3단어).\n\n<조건>\n· 본문에서 찾아 쓰되, 어법에 맞게 형태를 바꿀 것\n· 괄호 안의 단어 수를 지킬 것",
+"selfGrade": true,
+"answer": "(A) thought nothing of it (B) laughed it off",
+"solution": "글쓴이는 바로 사과하면 상처받은 친구가 'think nothing of it and laugh it off'(대수롭지 않게 여기고 웃어넘긴다)라고 말한다. 주어진 문장은 'If+had p.p., would have p.p.' 형태의 가정법 과거완료이므로 빈칸에는 과거분사가 와야 한다. 따라서 (A)는 thought nothing of it, (B)는 laughed it off로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-22574beaae",
+"typeId": "eng-m3-b03-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화를 읽고 ‘형용사+to부정사’ 구문을 사용하여 주어진 문장을 완성하시오.\n\nCathy: You look happy today. What happened?\nJames: I won first prize in the English contest.\n→ James is ______________________________________.",
+"selfGrade": true,
+"answer": "happy to win first prize in the English contest",
+"solution": "감정을 나타내는 형용사 뒤에 to부정사를 써서 그 감정의 원인을 밝히는 구문이다. James가 기쁜(happy) 이유는 영어 대회에서 1등을 했기 때문이므로 happy 뒤에 to win first prize in the English contest를 이어 쓴다. 'be동사(is) + 형용사(happy) + to부정사'의 어순에 유의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-84032bf0e7",
+"typeId": "eng-m3-b03-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 관계대명사의 계속적 용법을 사용하여 빈칸을 완성하시오.\n\n나는 삼촌이 한 분 계시는데, 그분은 뉴질랜드에 사신다.\n→ I have an uncle, ____________________________________.",
+"selfGrade": true,
+"answer": "who lives in New Zealand",
+"solution": "선행사(an uncle)에 대한 부가 정보를 덧붙이는 계속적 용법이므로 콤마 뒤에 관계대명사를 쓴다. 선행사가 사람이고 관계사절 안에서 주어 역할을 하므로 who를 쓴다. 선행사가 3인칭 단수(uncle)이고 현재 사실이므로 동사는 lives로 쓴다. 계속적 용법에서는 that을 쓸 수 없음에 유의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-43399b5013",
+"typeId": "eng-m3-b03-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "First, kiwi is the name of a delicious, green fruit. ⓐ뉴질랜드에서는 많은 키위 과일이 재배되는데, 그래서 그 나라는 키위 과일의 땅으로 알려져 있다. Kiwi is also the name of one of New Zealand's native birds.\n\n위 글의 밑줄 친 ⓐ의 우리말을 <조건>에 맞게 영작하시오.\n\n<조건>\n• 수동태를 두 번 사용할 것\n• 관계대명사의 계속적 용법을 사용하여 한 문장으로 쓸 것\n• <보기>의 단어를 사용하되 필요시 변형 또는 추가하여 총 19단어로 쓸 것\n<보기>\ngrow, know, which, as, a lot of, kiwi fruit, the land of kiwi fruit, New Zealand",
+"selfGrade": true,
+"answer": "A lot of kiwi fruit is grown in New Zealand, which is known as the land of kiwi fruit",
+"solution": "'많은 키위 과일이 재배된다'는 수동태 is grown으로, '~로 알려져 있다'는 be known as의 수동태 is known as로 쓴다. 앞 절 전체 또는 New Zealand에 정보를 덧붙이는 계속적 용법이므로 콤마 뒤에 which를 써서 한 문장으로 연결한다. kiwi fruit는 셀 수 없는 명사로 취급되어 동사는 단수(is grown)로 받는다. 전체 단어 수가 19개인지 확인한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m6s0t0",
+"custom": true
 }
 ]

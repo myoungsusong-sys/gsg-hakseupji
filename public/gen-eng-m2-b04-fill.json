@@ -1580,5 +1580,240 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b04-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-6109191bb5",
+"typeId": "eng-m2-b04-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 단어와 영영풀이가 바르게 짝지어지지 않은 것은?",
+"choices": [
+"explode: to burst suddenly and violently",
+"notice: to see or become aware of something",
+"solution: a way to solve a problem",
+"disappointing: making you feel happy because something is better than you expected",
+"correct: to make something right by fixing its mistakes"
+],
+"answer": "④",
+"solution": "disappointing은 '실망스러운'이라는 뜻으로, 기대보다 좋지 못해 실망하게 만든다는 의미이다. ④의 풀이는 '기대보다 좋아서 기쁘게 하는'이라는 반대 의미이므로 알맞지 않다. 나머지 풀이는 각각 explode(폭발하다), notice(알아차리다), solution(해결책), correct(바로잡다)의 뜻을 바르게 설명한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-729cf05931",
+"typeId": "eng-m2-b04-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"In those days, many horses killed for food.",
+"The first webcam was invented to watching a coffee pot.",
+"At that time, people have to retyped the whole page.",
+"The camera took pictures of the coffee pot, and they could be seen on the local network.",
+"Drais's bicycle was had two wooden wheels but no pedals."
+],
+"answer": "④",
+"solution": "④는 사진이 '보여지는' 것이므로 조동사 뒤 수동태 could be seen이 바르게 쓰였다. ①은 말이 '죽임을 당한' 것이므로 were killed, ②는 목적을 나타내는 to부정사이므로 to watch로 고쳐야 한다. ③은 과거의 일이며 to 뒤에는 동사원형이 와야 하므로 had to retype, ⑤는 have가 '가지다'라는 뜻의 능동이므로 had로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c033e77d96",
+"typeId": "eng-m2-b04-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n<조건>\n· (1)은 수동태를 사용하고, 괄호 안의 단어를 활용할 것\n· (2)는 have to를 알맞은 형태로 사용하고, 괄호 안의 단어를 활용할 것\n· 필요하면 단어의 형태를 바꿀 것\n\n(1) 최초의 자전거는 1817년에 독일에서 Karl von Drais에 의해 발명되었다. (first bicycle, invent)\n→ ________________________________________\n(2) 그 두 연구원은 빈 커피포트까지 실망스러운 걸음을 여러 번 해야만 했다. (two researchers, make, disappoint, trip)\n→ ________________________________________",
+"selfGrade": true,
+"answer": "(1) The first bicycle was invented by Karl von Drais in Germany in 1817. (2) The two researchers had to make many disappointing trips to the empty coffee pot.",
+"solution": "(1) 자전거가 '발명된' 것이므로 「be동사 + 과거분사 + by 행위자」 형태의 수동태를 쓰고, 과거이므로 was invented로 쓴다. (2) '~해야만 했다'는 과거의 의무이므로 had to 뒤에 동사원형 make를 쓴다. '실망스러운'은 걸음이 실망감을 주는 것이므로 disappointing으로 쓰고, trip은 '여러 번'에 맞게 복수형 trips로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5b35ec3605",
+"typeId": "eng-m2-b04-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고치시오.\n\nWhiteout ⓐinvented by Bette Graham. In 1956, Graham ⓑwas working at a bank in Texas, USA. At that time, people ⓒhad to retype the whole page when they made even a small mistake. Graham was a bad typist, so she needed a solution. One day, Graham saw some window painters. When they made a mistake, they corrected it by simply ⓓpaint over it. The next day, she made her own white paint and used it to correct her typing mistakes. Surprisingly, nobody ⓔwas noticed! Soon, everybody at the bank began ⓕusing it.",
+"selfGrade": true,
+"answer": "ⓐ → was invented, ⓓ → painting, ⓔ → noticed",
+"solution": "ⓐ Whiteout은 '발명된' 대상이므로 수동태 was invented로 고쳐야 한다. ⓓ 전치사 by 뒤에는 동명사가 와야 하므로 painting으로 고친다. ⓔ nobody는 무언가를 '알아차린' 주체이므로 능동태 noticed로 고쳐야 한다. ⓑ 과거진행형, ⓒ 과거의 의무 had to + 동사원형, ⓕ begin + 동명사는 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f6b7d092de",
+"typeId": "eng-m2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nJAN 20\nMany dolphins get sick or even die because of plastic waste and fishing nets, so cleaning up beaches is important. There was a beach cleanup party today, and I took part in it. Cleaning up the beach was not easy, but I enjoyed it. Oh, I saw Aunt Sumi there. She is also a member of Dolphin Lovers. What a small world!",
+"choices": [
+"Plastic waste and fishing nets can harm dolphins.",
+"Cleaning up beaches is helpful for protecting dolphins.",
+"Inho found cleaning up the beach easy and simple.",
+"Inho enjoyed the beach cleanup party.",
+"Aunt Sumi is also a member of Dolphin Lovers."
+],
+"answer": "③",
+"solution": "본문에서 'Cleaning up the beach was not easy, but I enjoyed it.'라고 했으므로 해변 청소가 쉬웠다는 ③은 글의 내용과 일치하지 않는다. 나머지 선지는 모두 본문에서 직접 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-94500e0ba3",
+"typeId": "eng-m2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nJAN 5\nI grew up in Jeju-do, so I had many chances to see dolphins. Then, I learned that many dolphins are in danger. Some are even endangered. I thought I should do something. So, I searched the Internet and found an NGO, Dolphin Lovers. It does various activities such as cleaning up beaches and helping dolphins. After some thought, I joined it today.",
+"choices": [
+"Where did Inho grow up?",
+"Why did Inho think he should do something?",
+"How did Inho find Dolphin Lovers?",
+"How much does it cost to join Dolphin Lovers?",
+"What kinds of activities does Dolphin Lovers do?"
+],
+"answer": "④",
+"solution": "본문에 Dolphin Lovers 가입 비용에 관한 내용은 전혀 없으므로 ④는 답할 수 없다. ①은 Jeju-do, ②는 돌고래가 위험에 처해서, ③은 인터넷 검색, ⑤는 해변 청소와 돌고래 돕기로 모두 본문에서 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-10a60b3c49",
+"typeId": "eng-m2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nFEB 14\nThis afternoon, I took part in a training class for Halla and Olle, two dolphins in an aquarium in Jeju-do. The latest project of Dolphin Lovers is to return them to the sea. For this, Halla and Olle first need to learn some skills. They will need them to survive in the wild. I really wanted to be part of the project. Luckily, I got the chance. I just ran some errands in the training class today, but the experience made me so excited.",
+"choices": [
+"Where is the aquarium that Halla and Olle live in?",
+"What is the latest project of Dolphin Lovers?",
+"Why do Halla and Olle need to learn some skills?",
+"What did Inho actually do in the training class?",
+"How many skills did Halla and Olle learn in the class today?"
+],
+"answer": "⑤",
+"solution": "본문은 한라와 올레가 생존 기술을 배워야 한다고만 말할 뿐, 오늘 몇 가지 기술을 배웠는지는 밝히지 않으므로 ⑤는 답할 수 없다. ①은 Jeju-do, ②는 바다로 돌려보내기, ③은 야생에서 살아남기 위해, ④는 심부름(ran some errands)으로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1d40f9b3a1",
+"typeId": "eng-m2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nAPR 22\nToday, Halla and Olle went back to the sea. There was a small ceremony, and all the members of Dolphin Lovers were there. The ceremony made us quite emotional. In fact, I cried a little. Now I cannot see Halla and Olle anymore! However, I was very happy at the same time. After 10 years of hard life in an aquarium, now all the sea is their home. “Live freely and happily ever after!” I shouted and waved goodbye to them.",
+"choices": [
+"Inho felt both sad and happy at the ceremony.",
+"Halla and Olle had spent about ten years in the aquarium.",
+"All the members of Dolphin Lovers attended the ceremony.",
+"Inho was happy mainly because he could still see the dolphins.",
+"Inho believes the whole sea is now the dolphins’ home."
+],
+"answer": "④",
+"solution": "인호는 이제 한라와 올레를 더 이상 볼 수 없다고 했고, 10년간의 힘든 수족관 생활을 끝내고 온 바다가 그들의 집이 되었기에 행복했다. 따라서 '여전히 돌고래들을 볼 수 있어서 행복했다'는 ④는 본문과 반대된다. 나머지는 모두 본문에서 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9ec0ee4628",
+"typeId": "eng-m2-b04-u0m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용과 일치하면 T, 일치하지 않으면 F라고 할 때, 표시가 알맞지 않은 것은?\n\nJAN 5\nI grew up in Jeju-do ... I learned that many dolphins are in danger. ... I searched the Internet and found an NGO, Dolphin Lovers. ... I joined it today.\nJAN 20\n... cleaning up beaches is important. There was a beach cleanup party today, and I took part in it. ... I saw Aunt Sumi there. She is also a member of Dolphin Lovers.\nFEB 14\n... I took part in a training class for Halla and Olle ... The latest project of Dolphin Lovers is to return them to the sea. ... I just ran some errands in the training class today ...\nAPR 22\nToday, Halla and Olle went back to the sea. There was a small ceremony, and all the members of Dolphin Lovers were there. ... I cried a little. Now I cannot see Halla and Olle anymore! However, I was very happy at the same time.",
+"choices": [
+"On January 5, Inho joined Dolphin Lovers after learning that many dolphins are in danger. (T)",
+"On January 20, Inho cleaned up a beach and met Aunt Sumi, another member of the NGO. (T)",
+"On February 14, Inho personally taught Halla and Olle the skills they needed. (F)",
+"On April 22, Halla and Olle returned to the sea after a long, hard life in the aquarium. (T)",
+"Inho regretted joining Dolphin Lovers because he can no longer see Halla and Olle. (T)"
+],
+"answer": "⑤",
+"solution": "⑤의 내용은 본문과 일치하지 않으므로 F로 표시해야 하는데 T로 잘못 표시되어 있다. 인호는 돌고래를 더 이상 볼 수 없어 슬펐지만 동시에 매우 행복했으며, 가입을 후회했다는 내용은 전혀 없다. ①~④는 모두 표시가 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e415198fef",
+"typeId": "eng-m2-b04-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nYuna: That’s the hottest dress on social media now. Lots of people are wearing it. I have to get that dress, too!\nWait, Yuna! You only want the dress because you saw it again and again on social media. It isn’t just you. There are a lot of people who fall for a viral marketing strategy. Why?\nInformation about a product can spread quickly and widely on the Internet, just like a “virus.” If a product becomes hot on social media, people naturally want to have it. Yuna, just remember that a popular product isn’t always right for you.",
+"choices": [
+"How to Become Popular on Social Media",
+"Popular Products Are Always the Best",
+"Don’t Fall for Viral Marketing",
+"Why Do Viruses Spread So Quickly?",
+"Buy the Hottest Dress Before It’s Gone!"
+],
+"answer": "③",
+"solution": "글쓴이는 SNS에서 여러 번 본 옷을 사려는 유나에게 바이럴 마케팅 전략에 속지 말고, 인기 있는 제품이 늘 자신에게 맞는 것은 아니라는 점을 기억하라고 조언한다. 따라서 제목으로는 ③ ‘바이럴 마케팅에 속지 마라’가 알맞다. ②는 글의 마지막 문장과 반대되는 내용이고, ④의 virus는 정보가 퍼지는 방식을 비유한 말일 뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-941aced989",
+"typeId": "eng-m2-b04-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nJunho: What? The sale ends in two hours? If I don’t buy the sneakers now, I will have to buy them at a higher price.\nStop, Junho! You’re buying the sneakers just because you don’t want to miss the sale. You’re falling for a hunger marketing strategy.\nIf people can buy a product only for a limited time, they often feel “hungry” for it and want to buy it. About missing the sale, don’t worry, Junho. You’ll soon see a similar sale again.",
+"choices": [
+"why people want to buy things in a limited-time sale and why they shouldn’t hurry",
+"why companies lower their prices during a sale",
+"the best time of the year to buy sneakers",
+"the reason sales happen only once a year",
+"ways to buy sneakers at a lower price online"
+],
+"answer": "①",
+"solution": "제품을 한정된 시간에만 살 수 있으면 사람들이 그것을 ‘갈망’하게 되어 사고 싶어 한다는 헝거 마케팅의 원리를 설명한다. 그런 다음 곧 비슷한 세일을 또 보게 될 테니 서두르지 말라고 조언한다. 따라서 이 두 내용을 모두 담은 ①이 주제다. ④는 ‘곧 비슷한 세일을 또 본다’는 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d1a871c4b0",
+"typeId": "eng-m2-b04-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nSomi: I’m looking for a lipstick for my mom.\nSalesperson: How about this?\nSomi: Expensive! I thought I could buy a lipstick for 30 dollars.\nSalesperson: This is also popular.\nSomi: That’s better!\nHold on, Somi! Your budget is 30 dollars, but you are buying a 40-dollar lipstick. The 40-dollar lipstick sounds cheap only because the salesperson showed you a 50-dollar lipstick first. This is an example of the anchoring effect.\nUsually, the first piece of information becomes an “anchor” and influences the shopper’s decision. In your case, the 50-dollar lipstick was the anchor. Somi, don’t just rely on the first piece of information that is given to you.",
+"choices": [
+"Always buy the cheapest product in the store.",
+"Salespeople usually show you the best product first.",
+"Expensive products are better than cheap ones.",
+"Don’t let the first information you get decide what you buy.",
+"Popular products are worth more than their price."
+],
+"answer": "④",
+"solution": "판매원이 50달러짜리 립스틱을 먼저 보여 주었기 때문에 40달러짜리가 싸게 느껴졌다. 이처럼 처음 받은 정보가 ‘닻’이 되어 구매 결정에 영향을 주는 것을 앵커링 효과라고 한다. 글쓴이는 처음 받은 정보에만 의존하지 말라고 조언하므로 요지는 ④다. ①처럼 가장 싼 것을 사라는 말은 글에 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bb0e607c14",
+"typeId": "eng-m2-b04-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문단으로 요약하려고 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nHunger Marketing\nJunho: What? The sale ends in two hours? If I don’t buy the sneakers now, I will have to buy them at a higher price.\nStop, Junho! You’re buying the sneakers just because you don’t want to miss the sale. You’re falling for a hunger marketing strategy.\nIf people can buy a product only for a limited time, they often feel “hungry” for it and want to buy it. About missing the sale, don’t worry, Junho. You’ll soon see a similar sale again.\nViral Marketing\nYuna: That’s the hottest dress on social media now. Lots of people are wearing it. I have to get that dress, too!\nWait, Yuna! You only want the dress because you saw it again and again on social media. It isn’t just you. There are a lot of people who fall for a viral marketing strategy. Why?\nInformation about a product can spread quickly and widely on the Internet, just like a “virus.” If a product becomes hot on social media, people naturally want to have it. Yuna, just remember that a popular product isn’t always right for you.\nAnchoring Effect\nSomi: I’m looking for a lipstick for my mom.\nSalesperson: How about this?\nSomi: Expensive! I thought I could buy a lipstick for 30 dollars.\nSalesperson: This is also popular.\nSomi: That’s better!\nHold on, Somi! Your budget is 30 dollars, but you are buying a 40-dollar lipstick. The 40-dollar lipstick sounds cheap only because the salesperson showed you a 50-dollar lipstick first. This is an example of the anchoring effect.\nUsually, the first piece of information becomes an “anchor” and influences the shopper’s decision. In your case, the 50-dollar lipstick was the anchor. Somi, don’t just rely on the first piece of information that is given to you.\n\n[Summary]\nJunho, Yuna, and Somi wanted to buy things because of marketing strategies: a sale for a (A)________ time, a dress that everyone was wearing on social media, and a lipstick that seemed cheap because of the “(B)________,” the first price Somi saw. The writer tells them that wise shoppers don’t let these strategies (C)________ their decisions.\n\n   (A)        (B)        (C)",
+"choices": [
+"long — anchor — influence",
+"limited — virus — influence",
+"limited — anchor — influence",
+"limited — anchor — share",
+"long — virus — share"
+],
+"answer": "③",
+"solution": "(A) 준호는 정해진 시간에만 열리는 세일 때문에 운동화를 사려 했으므로 limited가 알맞다. (B) 소미에게 처음 보여 준 50달러짜리 립스틱이 ‘닻(anchor)’이 되어 40달러짜리가 싸게 느껴졌으므로 anchor가 들어간다. ‘virus’는 바이럴 마케팅에서 정보가 퍼지는 방식을 비유한 말이라 맞지 않는다. (C) 글쓴이는 마케팅 전략에 쉽게 영향받지 말라고 조언하므로 influence가 알맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m3s0t0",
+"custom": true
 }
 ]

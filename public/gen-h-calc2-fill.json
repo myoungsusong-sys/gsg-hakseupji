@@ -1254,5 +1254,280 @@
 "source": "유사 문항",
 "twinGroup": "tw-20775",
 "custom": true
+},
+{
+"id": "fill-8dfc9c0fdb",
+"typeId": "20667",
+"kind": "객관식",
+"diff": 2,
+"body": "실수 $q$에 대하여 급수 $\\sum_{n=1}^{\\infty}q^n$이 수렴한다. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $|q|<1$이다.\nㄴ. 급수 $\\sum_{n=1}^{\\infty}q^{2n}$은 수렴한다.\nㄷ. $\\sum_{n=1}^{\\infty}q^n=\\frac{1}{1-q}$이다.",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "주어진 등비급수가 수렴하므로 $|q|<1$이고, 따라서 $|q^2|<1$이므로 $\\sum q^{2n}$도 수렴한다. 한편 $\\sum_{n=1}^{\\infty}q^n=\\frac{q}{1-q}$이므로 ㄷ은 옳지 않다. 따라서 옳은 것은 ㄱ, ㄴ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20667",
+"custom": true
+},
+{
+"id": "fill-9fc599a4ee",
+"typeId": "20667",
+"kind": "객관식",
+"diff": 2,
+"body": "두 수열 $\\{a_n\\}$, $\\{b_n\\}$이 $a_n=2\\left(\\frac12\\right)^{n-1}$, $b_n=-\\frac32\\left(-\\frac12\\right)^{n-1}$을 만족한다. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\sum_{n=1}^{\\infty}(a_n+b_n)=3$이다.\nㄴ. $\\sum_{n=1}^{\\infty}a_nb_n=-\\frac{12}{5}$이다.\nㄷ. 급수 $\\sum_{n=1}^{\\infty}\\frac{a_n}{b_n}$은 수렴한다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "$\\sum a_n=4$, $\\sum b_n=-1$이므로 $\\sum(a_n+b_n)=3$이다. 수열 $\\{a_nb_n\\}$의 첫째항은 $-3$, 공비는 $-\\frac14$이므로 그 합은 $\\frac{-3}{1+1/4}=-\\frac{12}{5}$이다. 한편 $\\frac{a_n}{b_n}$의 공비는 $-1$이므로 급수는 발산한다.",
+"source": "유사 문항",
+"twinGroup": "tw-20667",
+"custom": true
+},
+{
+"id": "fill-977ce36c46",
+"typeId": "20667",
+"kind": "객관식",
+"diff": 2,
+"body": "실수 $x$에 대하여 $A=\\sum_{n=1}^{\\infty}\\left(\\frac{x-1}{2}\\right)^n$, $B=\\sum_{n=1}^{\\infty}\\left(\\frac{x+1}{4}\\right)^n$이라 하자. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. 두 급수 $A$, $B$가 모두 수렴하기 위한 필요충분조건은 $-1<x<3$이다.\nㄴ. $x=0$이면 $A+B=0$이다.\nㄷ. $x=2$이면 $B=3A$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "두 급수의 수렴 조건은 각각 $-1<x<3$, $-5<x<3$이므로 공통 범위는 $-1<x<3$이다. $x=0$일 때 $A=-\\frac13$, $B=\\frac13$이고, $x=2$일 때 $A=1$, $B=3$이다. 따라서 ㄱ, ㄴ, ㄷ이 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-20667",
+"custom": true
+},
+{
+"id": "fill-7d5bead4ae",
+"typeId": "20667",
+"kind": "객관식",
+"diff": 5,
+"body": "실수 $x$에 대하여 급수 $\\sum_{n=1}^{\\infty}\\{x^n-(2x-1)^n\\}$이 수렴한다고 하자. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $0<x\\leq1$이다.\nㄴ. $0<x<1$이면 $\\sum_{n=1}^{\\infty}\\{x^n-(2x-1)^n\\}=\\frac{1}{2(1-x)}$이다.\nㄷ. 주어진 급수의 합은 항상 양수이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "두 공비의 절댓값이 모두 $1$보다 작은 경우에는 $0<x<1$이고, $x=1$일 때에는 모든 항이 $0$이므로 급수가 수렴한다. $0<x<1$에서 급수의 합은 $\\frac{x}{1-x}-\\frac{2x-1}{2-2x}=\\frac{1}{2(1-x)}$이다. 그러나 $x=1$에서는 급수의 합이 $0$이므로 ㄷ은 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-20667",
+"custom": true
+},
+{
+"id": "fill-31b3012739",
+"typeId": "20667",
+"kind": "객관식",
+"diff": 5,
+"body": "실수 $x$에 대하여 급수 $\\sum_{n=1}^{\\infty}\\{(x-1)^n-(x^2-1)^n\\}$이 수렴한다고 하자. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. 주어진 급수가 수렴하기 위한 필요충분조건은 $0\\leq x<\\sqrt2$이다.\nㄴ. 주어진 급수의 합이 $0$이기 위한 필요충분조건은 $x=0$ 또는 $x=1$이다.\nㄷ. 주어진 급수의 합이 음수이면 $1<x<\\sqrt2$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ"
+],
+"answer": "④",
+"solution": "두 등비급수가 각각 수렴하는 범위는 $0<x<\\sqrt2$이고, $x=0$에서는 두 항이 서로 같아 원래 급수의 각 항이 $0$이므로 수렴한다. $0<x<\\sqrt2$에서 급수의 합은 $\\frac{x(1-x)}{(2-x)(2-x^2)}$이다. 분모가 양수이므로 합은 $x=1$에서 $0$이고, $1<x<\\sqrt2$에서 음수이며, $x=0$에서도 합이 $0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20667",
+"custom": true
+},
+{
+"id": "fill-7dc772b7fb",
+"typeId": "20667",
+"kind": "객관식",
+"diff": 5,
+"body": "첫째항이 모두 $0$이 아닌 두 등비수열 $\\{a_n\\}$, $\\{b_n\\}$의 공비를 각각 $r$, $s$라 하자. 세 급수가 모두 수렴하고\n$\\sum_{n=1}^{\\infty}a_n=2$, $\\sum_{n=1}^{\\infty}b_n=3$, $\\sum_{n=1}^{\\infty}a_nb_n=6$\n일 때, 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $rs\\leq0$이다.\nㄴ. $r+s<0$이다.\nㄷ. $r=s$이기 위한 필요충분조건은 $r=s=0$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "$a_1=2(1-r)$, $b_1=3(1-s)$이므로 곱으로 이루어진 등비급수의 합에서 $\\frac{6(1-r)(1-s)}{1-rs}=6$을 얻고, 따라서 $r+s=2rs$이다. $|r|<1$, $|s|<1$에서 이 등식이 성립하려면 $rs\\leq0$이고, $r=s$이면 $2r=2r^2$이므로 $r=s=0$이다. 실제로 $r=s=0$도 조건을 만족하지만 이때 $r+s=0$이므로 ㄴ은 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-20667",
+"custom": true
+},
+{
+"id": "fill-961718481b",
+"typeId": "20832",
+"kind": "객관식",
+"diff": 4,
+"body": "구분구적법을 이용하여 극한값 $\\displaystyle \\lim_{n\\to\\infty}\\frac{1}{n^3}\\sum_{k=1}^{n}|(3k-n)(3k-2n)|$을 구하면?",
+"choices": [
+"$\\dfrac{1}{2}$",
+"$\\dfrac{5}{9}$",
+"$\\dfrac{11}{18}$",
+"$\\dfrac{2}{3}$",
+"$\\dfrac{13}{18}$"
+],
+"answer": "③",
+"solution": "주어진 극한은 $\\displaystyle \\int_0^1|(3x-1)(3x-2)|\\,dx$이다. 다항식 $(3x-1)(3x-2)$는 $\\frac13<x<\\frac23$에서만 음수이다. 따라서 구하는 값은 $\\displaystyle \\int_0^1(9x^2-9x+2)\\,dx-2\\int_{1/3}^{2/3}(9x^2-9x+2)\\,dx=\\frac12-2\\left(-\\frac1{18}\\right)=\\frac{11}{18}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20832",
+"custom": true
+},
+{
+"id": "fill-7349a8ca2d",
+"typeId": "20832",
+"kind": "주관식",
+"diff": 4,
+"body": "밑면의 한 변의 길이가 $4$이고 높이가 $6$인 정사각뿔이 있다. 밑면의 중심을 중심으로 하고 각 변이 밑면의 변과 평행한, 한 변의 길이가 $1$인 정사각형을 밑면 위에 그린다. 이 정사각형을 밑면에 수직인 방향으로 무한히 평행이동하여 생기는 기둥 모양의 영역과 정사각뿔이 겹치는 부분을 모두 제거한다. 구분구적법을 이용하여 남은 입체의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$27$",
+"solution": "밑면에서 높이가 $z$인 단면은 한 변의 길이가 $4-\\frac23z$인 정사각형이다. 이 길이가 $1$이 되는 높이는 $z=\\frac92$이므로 남은 입체의 단면적은 $0\\le z\\le\\frac92$에서 $\\left(4-\\frac23z\\right)^2-1$이고, 그 위에서는 $0$이다. 높이 구간을 등분한 기둥들의 부피의 합에 극한을 취하면 $\\displaystyle V=\\int_0^{9/2}\\left\\{\\left(4-\\frac23z\\right)^2-1\\right\\}\\,dz=\\left[15z-\\frac83z^2+\\frac4{27}z^3\\right]_0^{9/2}=27$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20832",
+"custom": true
+},
+{
+"id": "fill-fc15249b12",
+"typeId": "20832",
+"kind": "객관식",
+"diff": 4,
+"body": "자연수 $k$에 대하여 $A_k=1^2+2^2+\\cdots+k^2$이라 하자. 구분구적법을 이용하여 $\\displaystyle \\lim_{n\\to\\infty}\\frac{A_{n+1}+A_{n+2}+\\cdots+A_{2n}}{n^4}$의 값을 구하면?",
+"choices": [
+"$\\dfrac{3}{4}$",
+"$1$",
+"$\\dfrac{7}{6}$",
+"$\\dfrac{5}{4}$",
+"$\\dfrac{3}{2}$"
+],
+"answer": "④",
+"solution": "$A_k=\\frac{k(k+1)(2k+1)}6=\\frac13k^3+\\frac12k^2+\\frac16k$이다. 따라서 주어진 식에서 $k^2$항과 $k$항이 만드는 합은 각각 $n^4$으로 나누었을 때 $0$으로 수렴한다. 구하는 극한은 $\\displaystyle \\frac13\\lim_{n\\to\\infty}\\frac1n\\sum_{k=n+1}^{2n}\\left(\\frac{k}{n}\\right)^3=\\frac13\\int_1^2x^3\\,dx=\\frac54$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20832",
+"custom": true
+},
+{
+"id": "fill-415510e23d",
+"typeId": "20832",
+"kind": "주관식",
+"diff": 5,
+"body": "$0<a<1$인 실수 $a$가 다음 조건을 만족한다.\n\n$\\displaystyle \\lim_{n\\to\\infty}\\frac1{n^3}\\sum_{k=1}^{n}k|k-an|=\\frac18$\n\n이 조건을 만족하는 모든 실수 $a$의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{1+\\sqrt{21}}4$",
+"solution": "구분구적법에 의해 주어진 극한은 $\\displaystyle \\int_0^1x|x-a|\\,dx$이다. 이를 $x=a$에서 나누어 계산하면 $\\displaystyle \\int_0^a x(a-x)\\,dx+\\int_a^1x(x-a)\\,dx=\\frac{a^3}{3}-\\frac a2+\\frac13$이다. 따라서 $8a^3-12a+5=(2a-1)(4a^2+2a-5)=0$이다. 이 중 $0<a<1$인 해는 $\\frac12$, $\\frac{-1+\\sqrt{21}}4$이므로 그 합은 $\\frac{1+\\sqrt{21}}4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20832",
+"custom": true
+},
+{
+"id": "fill-9c65a287e6",
+"typeId": "20832",
+"kind": "주관식",
+"diff": 5,
+"body": "최고차항의 계수가 $1$인 이차함수 $f(x)$가 다음 두 조건을 만족한다.\n\n$\\displaystyle \\lim_{n\\to\\infty}\\frac1n\\sum_{k=1}^{n}f\\left(\\frac{k}{n}\\right)=0$\n\n$\\displaystyle \\lim_{n\\to\\infty}\\frac1{n^2}\\sum_{k=1}^{n}k f\\left(\\frac{k}{n}\\right)=0$\n\n이때 $\\displaystyle \\lim_{n\\to\\infty}\\frac1n\\sum_{k=1}^{n}\\left|f\\left(\\frac{k}{n}\\right)\\right|$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{\\sqrt3}{27}$",
+"solution": "$f(x)=x^2+px+q$라 놓으면 두 조건은 $\\int_0^1f(x)\\,dx=0$, $\\int_0^1xf(x)\\,dx=0$이므로 $\\frac13+\\frac p2+q=0$, $\\frac14+\\frac p3+\\frac q2=0$이다. 이를 풀면 $p=-1$, $q=\\frac16$이므로 $f(x)=\\left(x-\\frac12\\right)^2-\\frac1{12}$이고, 두 근은 $\\alpha=\\frac{3-\\sqrt3}{6}$, $\\beta=\\frac{3+\\sqrt3}{6}$이다. $f(x)$는 두 근 사이에서만 음수이고 $\\int_0^1f(x)\\,dx=0$이므로 구하는 극한은 $\\displaystyle \\int_0^1|f(x)|\\,dx=-2\\int_\\alpha^\\beta f(x)\\,dx$이다. $t=x-\\frac12$로 치환하여 계산하면 $\\displaystyle -2\\int_{-\\sqrt3/6}^{\\sqrt3/6}\\left(t^2-\\frac1{12}\\right)dt=\\frac{\\sqrt3}{27}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20832",
+"custom": true
+},
+{
+"id": "fill-93f2e4c553",
+"typeId": "20832",
+"kind": "주관식",
+"diff": 5,
+"body": "자연수 $n$에 대하여 $x_k=\\frac{3k^2}{n^2}$ $(k=0,1,\\ldots,n)$으로 놓고, 다음과 같이 두 합을 정의한다.\n\n$\\displaystyle L_n=\\sum_{k=1}^{n}x_{k-1}^{\\,2}(x_k-x_{k-1}),\\qquad U_n=\\sum_{k=1}^{n}x_k^{\\,2}(x_k-x_{k-1})$\n\n구분구적법을 이용하여 $\\displaystyle \\lim_{n\\to\\infty}\\frac{n(U_n-L_n)}{U_n+L_n}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{12}{5}$",
+"solution": "분할의 최대 너비가 $\\frac{3(2n-1)}{n^2}\\to0$이므로 $L_n$, $U_n$은 모두 $\\displaystyle \\int_0^3x^2\\,dx=9$로 수렴한다. 한편 $\\displaystyle U_n-L_n=\\sum_{k=1}^{n}(x_k-x_{k-1})^2(x_k+x_{k-1})=\\frac{27}{n^6}\\sum_{k=1}^{n}(2k-1)^2\\{k^2+(k-1)^2\\}$이다. 따라서 $\\displaystyle \\lim_{n\\to\\infty}n(U_n-L_n)=27\\lim_{n\\to\\infty}\\frac1n\\sum_{k=1}^{n}\\left(\\frac{2k-1}{n}\\right)^2\\left\\{\\left(\\frac{k}{n}\\right)^2+\\left(\\frac{k-1}{n}\\right)^2\\right\\}=27\\int_0^1 8t^4\\,dt=\\frac{216}{5}$이다. 구하는 값은 $\\displaystyle \\frac{216/5}{18}=\\frac{12}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20832",
+"custom": true
+},
+{
+"id": "fill-bc7176cf62",
+"typeId": "20671",
+"kind": "객관식",
+"diff": 2,
+"body": "수열 $\\{a_n\\}$의 일반항 $a_n$을 $2^n$을 $7$로 나눈 나머지로 정의한다. 급수 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{a_n}{4^n}$의 합은?",
+"choices": [
+"$\\dfrac59$",
+"$\\dfrac23$",
+"$\\dfrac34$",
+"$\\dfrac79$",
+"$\\dfrac89$"
+],
+"answer": "④",
+"solution": "$2^n$을 $7$로 나눈 나머지는 $2,4,1$이 반복된다. 따라서 급수의 합은 $\\displaystyle\\frac{\\frac24+\\frac4{4^2}+\\frac1{4^3}}{1-\\frac1{4^3}}=\\frac{49}{63}=\\frac79$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20671",
+"custom": true
+},
+{
+"id": "fill-1dde4e7ec0",
+"typeId": "20671",
+"kind": "주관식",
+"diff": 2,
+"body": "수열 $\\{a_n\\}$을 다음과 같이 정의한다.\n\n$a_1=3$, $a_{n+1}$은 $a_n+4$를 $6$으로 나눈 나머지이다. $(n=1,2,3,\\ldots)$\n\n$\\displaystyle\\sum_{n=1}^{\\infty}\\frac{a_n}{2^n}=\\frac qp$일 때, $p+q$의 값을 구하시오. (단, $p,q$는 서로소인 자연수이다.)",
+"selfGrade": true,
+"answer": "26",
+"solution": "주어진 점화식에 따라 $a_n$은 $3,1,5$가 반복된다. 따라서 급수의 합은 $\\displaystyle\\frac{\\frac32+\\frac1{2^2}+\\frac5{2^3}}{1-\\frac1{2^3}}=\\frac{19}{7}$이다. 그러므로 $p+q=7+19=26$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20671",
+"custom": true
+},
+{
+"id": "fill-1e30e1decd",
+"typeId": "20671",
+"kind": "주관식",
+"diff": 5,
+"body": "자연수 $n$에 대하여 $3^n$을 $7$로 나눈 나머지를 $a_n$이라 하자.\n\n$\\displaystyle\\sum_{n=1}^{\\infty}\\frac{a_{n^2}}{\\{3+(-1)^n\\}^{n}}=\\frac qp$일 때, $p+q$의 값을 구하시오. (단, $p,q$는 서로소인 자연수이다.)",
+"selfGrade": true,
+"answer": "4978",
+"solution": "$a_n$은 $3,2,6,4,5,1$이 반복되며, $n^2$을 $6$으로 나눈 나머지를 이용하면 $a_{n^2}$은 $3,4,6,4,3,1$이 반복된다. 홀수 번째 항들의 합은 $\\displaystyle\\frac{\\frac32+\\frac6{2^3}+\\frac3{2^5}}{1-\\frac1{2^6}}=\\frac{50}{21}$이고, 짝수 번째 항들의 합은 $\\displaystyle\\frac{\\frac4{4^2}+\\frac4{4^4}+\\frac1{4^6}}{1-\\frac1{4^6}}=\\frac{121}{455}$이다. 따라서 전체 합은 $\\displaystyle\\frac{50}{21}+\\frac{121}{455}=\\frac{3613}{1365}$이며 이 분수는 기약분수이다. 그러므로 $p+q=1365+3613=4978$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20671",
+"custom": true
+},
+{
+"id": "fill-e03e39cf89",
+"typeId": "20671",
+"kind": "주관식",
+"diff": 5,
+"body": "수열 $\\{a_n\\}$에서 $a_1$은 $0$ 이상 $9$ 이하의 정수이고, $a_{n+1}$은 $a_n^2+1$을 $10$으로 나눈 나머지이다. 이 수열이\n\n$\\displaystyle 6<\\sum_{n=1}^{\\infty}\\frac{a_n}{2^n}<\\frac{13}{2}$\n\n를 만족시킬 때, $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{a_na_{n+2}}{2^n}=\\frac qp$이다. $p+q$의 값을 구하시오. (단, $p,q$는 서로소인 자연수이다.)",
+"selfGrade": true,
+"answer": "1969",
+"solution": "초항이 $t$일 때 $\\displaystyle S_t=\\sum_{n=1}^{\\infty}\\frac{a_n}{2^n}$이라 하면, 나머지의 순환 $0\\to1\\to2\\to5\\to6\\to7\\to0$과 $\\displaystyle S_t=\\frac{t+S_{(t^2+1)\\text{을 }10\\text{으로 나눈 나머지}}}{2}$를 이용할 수 있다. 이에 따라 $(S_0,S_1,\\ldots,S_9)=\\displaystyle\\frac1{63}(71,142,221,130,254,316,317,256,410,394)$이므로 주어진 부등식을 만족시키는 초항은 $a_1=9$이다. 이때 수열은 $9,2,5,6,7,0,1,2,\\ldots$이고, $a_na_{n+2}$는 첫 항 $45$ 이후 $12,35,0,7,0,5$가 반복된다. 따라서 구하는 급수의 합은 $\\displaystyle\\frac{45}{2}+\\frac{\\frac{12}{2^2}+\\frac{35}{2^3}+\\frac7{2^5}+\\frac5{2^7}}{1-\\frac1{2^6}}=\\frac{1906}{63}$이다. 그러므로 $p+q=63+1906=1969$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20671",
+"custom": true
+},
+{
+"id": "fill-c6af1a73d5",
+"typeId": "20671",
+"kind": "주관식",
+"diff": 5,
+"body": "자연수 $n$에 대하여 자연수\n\n$7^{n(2n-1)}+7^{n(2n+1)}$\n\n의 일의 자리의 숫자를 $a_n$이라 하자. $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{a_n}{2^n}=\\frac qp$일 때, $p+q$의 값을 구하시오. (단, $p,q$는 서로소인 자연수이다.)",
+"selfGrade": true,
+"answer": "49",
+"solution": "$7$의 거듭제곱의 일의 자리의 숫자는 지수를 $4$로 나눈 나머지에 따라 결정되며, 차례로 $7,9,3,1$이 반복된다. $n$을 $4$로 나눈 나머지가 $1,2,3,0$일 때 두 거듭제곱의 일의 자리의 숫자의 합은 각각 $10,18,10,2$이므로, $a_n$은 $0,8,0,2$가 반복된다. 따라서 급수의 합은 $\\displaystyle\\frac{\\frac8{2^2}+\\frac2{2^4}}{1-\\frac1{2^4}}=\\frac{34}{15}$이다. 그러므로 $p+q=15+34=49$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20671",
+"custom": true
 }
 ]

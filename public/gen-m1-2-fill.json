@@ -1,0 +1,182 @@
+[
+{
+"id": "fill-d61f0d69e3",
+"typeId": "17773",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\angle B$와 $\\angle C$의 외각의 이등분선의 교점을 $D$라 하자. $\\angle A=84^\\circ$일 때, $\\angle BDC$의 크기는?",
+"choices": [
+"$42^\\circ$",
+"$48^\\circ$",
+"$54^\\circ$",
+"$96^\\circ$",
+"$132^\\circ$"
+],
+"answer": "②",
+"solution": "$\\angle DBC=\\dfrac{180^\\circ-\\angle B}{2}$, $\\angle DCB=\\dfrac{180^\\circ-\\angle C}{2}$이다. 삼각형 $BDC$의 내각의 크기의 합을 이용하면 $\\angle BDC=\\dfrac{\\angle B+\\angle C}{2}=\\dfrac{180^\\circ-84^\\circ}{2}=48^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17773",
+"custom": true
+},
+{
+"id": "fill-ee8f2751af",
+"typeId": "17773",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 $PQR$에서 $\\angle Q$와 $\\angle R$의 외각의 이등분선이 점 $S$에서 만난다. $\\angle QSR=57^\\circ$일 때, $\\angle P$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$66^\\circ$",
+"solution": "삼각형 $QSR$의 내각의 크기의 합으로부터 $\\angle QSR=90^\\circ-\\dfrac{\\angle P}{2}$이다. 따라서 $57^\\circ=90^\\circ-\\dfrac{\\angle P}{2}$이므로 $\\angle P=66^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17773",
+"custom": true
+},
+{
+"id": "fill-8e21d3b6da",
+"typeId": "17773",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $\\angle B=62^\\circ$, $\\angle C=46^\\circ$이다. $\\angle B$와 $\\angle C$의 외각의 이등분선의 교점을 $T$라 할 때, $\\angle BTC$의 크기는?",
+"choices": [
+"$36^\\circ$",
+"$54^\\circ$",
+"$62^\\circ$",
+"$72^\\circ$",
+"$108^\\circ$"
+],
+"answer": "②",
+"solution": "$\\angle TBC=\\dfrac{180^\\circ-62^\\circ}{2}=59^\\circ$이고, $\\angle TCB=\\dfrac{180^\\circ-46^\\circ}{2}=67^\\circ$이다. 따라서 삼각형 $BTC$에서 $\\angle BTC=180^\\circ-59^\\circ-67^\\circ=54^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17773",
+"custom": true
+},
+{
+"id": "fill-8777b95e75",
+"typeId": "17773",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\angle B$와 $\\angle C$의 외각의 이등분선의 교점을 $D$라 하자. 삼각형 $BCD$에서 $\\angle DBC$와 $\\angle BCD$의 외각의 이등분선의 교점을 $E$라 하자. 점 $D$는 직선 $BC$에 대하여 점 $A$와 반대쪽에 있고, 점 $E$는 점 $A$와 같은 쪽에 있다.\n\n$\\angle BEC=\\angle BAC$, $\\angle ABC=\\angle BCA+32^\\circ$일 때, $\\angle ABE$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$12^\\circ$",
+"solution": "$\\angle BAC=a$라 하면 $\\angle BDC=90^\\circ-\\dfrac a2$이고, $\\angle BEC=90^\\circ-\\dfrac{\\angle BDC}{2}=45^\\circ+\\dfrac a4$이다. 따라서 $a=45^\\circ+\\dfrac a4$에서 $a=60^\\circ$이다. $\\angle ABC+\\angle BCA=120^\\circ$, $\\angle ABC-\\angle BCA=32^\\circ$이므로 $\\angle ABC=76^\\circ$, $\\angle BCA=44^\\circ$이다. 이때 $\\angle DBC=52^\\circ$이므로 $\\angle CBE=\\dfrac{180^\\circ-52^\\circ}{2}=64^\\circ$이다. 점 $A$와 $E$가 직선 $BC$의 같은 쪽에 있으므로 $\\angle ABE=76^\\circ-64^\\circ=12^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17773",
+"custom": true
+},
+{
+"id": "fill-8362bb3ca3",
+"typeId": "17773",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\angle B$와 $\\angle C$의 외각의 이등분선의 교점을 $D$라 하자. 삼각형 $ACD$에서 꼭짓점 $A$와 $C$의 외각의 이등분선의 교점을 $P$라 하자.\n\n$\\angle ABC:\\angle BCA=3:2$이고 $\\angle APC=2\\angle BDC-2^\\circ$일 때, $\\angle DAP$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$65^\\circ$",
+"solution": "$\\angle BAC=a$, $\\angle ABC=b$, $\\angle BCA=c$라 하면 $\\angle BDC=90^\\circ-\\dfrac a2$이다. 점 $D$는 $\\angle BAC$의 내각의 이등분선 위에 있으므로 $\\angle DAC=\\dfrac a2$이고, 삼각형 $ACD$에서 $\\angle ADC=\\dfrac b2$이다. 따라서 $\\angle APC=90^\\circ-\\dfrac b4$이므로 주어진 조건에서 $90^\\circ-\\dfrac b4=2\\left(90^\\circ-\\dfrac a2\\right)-2^\\circ$, 즉 $4a-b=352^\\circ$이다. 이를 $b:c=3:2$, $a+b+c=180^\\circ$와 함께 풀면 $a=100^\\circ$, $b=48^\\circ$, $c=32^\\circ$이다. 그러므로 $\\angle DAC=50^\\circ$이고, $AP$는 그 외각의 이등분선이므로 $\\angle DAP=\\dfrac{180^\\circ-50^\\circ}{2}=65^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17773",
+"custom": true
+},
+{
+"id": "fill-4b32f9e748",
+"typeId": "17773",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\angle B$와 $\\angle C$의 외각의 이등분선의 교점을 $D$라 하자. 삼각형 $BCD$에서 $\\angle DBC$와 $\\angle BCD$의 외각의 이등분선의 교점을 $E$라 하자. 점 $D$는 직선 $BC$에 대하여 점 $A$와 반대쪽에 있고, 점 $E$는 점 $A$와 같은 쪽에 있다.\n\n$\\angle BAC=2\\angle BCA$이고 $\\angle ABE=9^\\circ$일 때, 가능한 $\\angle BAC$의 크기를 모두 구하여 그 합을 구하시오.",
+"selfGrade": true,
+"answer": "$160^\\circ$",
+"solution": "$\\angle ABC=b$라 하면 $\\angle DBC=90^\\circ-\\dfrac b2$이므로 $\\angle CBE=\\dfrac{180^\\circ-\\angle DBC}{2}=45^\\circ+\\dfrac b4$이다. 점 $A$와 $E$가 직선 $BC$의 같은 쪽에 있으므로 $\\angle ABE=\\left|b-\\left(45^\\circ+\\dfrac b4\\right)\\right|=9^\\circ$이다. 따라서 $\\dfrac{3b}{4}-45^\\circ=9^\\circ$ 또는 $-9^\\circ$이므로 $b=72^\\circ$ 또는 $48^\\circ$이다. $\\angle BAC=2\\angle BCA$이므로 $\\angle BAC=\\dfrac23(180^\\circ-b)$에서 가능한 크기는 각각 $72^\\circ$, $88^\\circ$이다. 두 경우 모두 삼각형의 조건을 만족하므로 구하는 합은 $72^\\circ+88^\\circ=160^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17773",
+"custom": true
+},
+{
+"id": "fill-87755c9746",
+"typeId": "17786",
+"kind": "객관식",
+"diff": 2,
+"body": "정사각형 $ABCD$의 꼭짓점은 둘레를 따라 차례로 놓여 있다. 변 $AB$를 한 변으로 하고 정사각형의 바깥쪽에 놓이는 정삼각형 $ABP$를 만들었다. $D$와 $P$를 이었을 때, $\\angle ADP$의 크기는?",
+"choices": [
+"$10^\\circ$",
+"$15^\\circ$",
+"$20^\\circ$",
+"$25^\\circ$",
+"$30^\\circ$"
+],
+"answer": "②",
+"solution": "정사각형과 정삼각형의 성질에 따라 $AD=AB=AP$이므로 삼각형 $ADP$는 이등변삼각형이다. 정삼각형이 정사각형의 바깥쪽에 있으므로 $\\angle DAP=90^\\circ+60^\\circ=150^\\circ$이다. 따라서 $\\angle ADP=(180^\\circ-150^\\circ)\\div2=15^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17786",
+"custom": true
+},
+{
+"id": "fill-9a64b176c3",
+"typeId": "17786",
+"kind": "객관식",
+"diff": 2,
+"body": "정삼각형 $ABC$의 변 $BC$를 한 변으로 하는 정사각형 $BCDE$를 만든다. 정사각형의 꼭짓점은 둘레를 따라 $B$, $C$, $D$, $E$의 순서이고, $A$와 정사각형의 내부는 직선 $BC$의 서로 반대쪽에 있다. $\\angle ABE$의 크기는?",
+"choices": [
+"$90^\\circ$",
+"$105^\\circ$",
+"$120^\\circ$",
+"$135^\\circ$",
+"$150^\\circ$"
+],
+"answer": "⑤",
+"solution": "정삼각형의 한 내각의 크기는 $60^\\circ$이므로 $\\angle ABC=60^\\circ$이다. 정사각형의 한 내각의 크기는 $90^\\circ$이고, $A$와 $E$는 직선 $BC$의 서로 반대쪽에 있다. 따라서 $\\angle ABE=60^\\circ+90^\\circ=150^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17786",
+"custom": true
+},
+{
+"id": "fill-034a96cd42",
+"typeId": "17786",
+"kind": "주관식",
+"diff": 2,
+"body": "정사각형 $ABCD$의 꼭짓점은 둘레를 따라 차례로 놓여 있다. 변 $AB$를 한 변으로 하여 정사각형의 바깥쪽에 정삼각형 $ABP$를 만들고, 대각선 $AC$를 그었다. $\\angle PAC$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$105^\\circ$",
+"solution": "삼각형 $ABC$에서 $AB=BC$이고 $\\angle ABC=90^\\circ$이므로 $\\angle BAC=45^\\circ$이다. 정삼각형 $ABP$에서 $\\angle PAB=60^\\circ$이고, $P$와 $C$는 직선 $AB$의 서로 반대쪽에 있다. 따라서 $\\angle PAC=60^\\circ+45^\\circ=105^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17786",
+"custom": true
+},
+{
+"id": "fill-2451ea0eec",
+"typeId": "17786",
+"kind": "주관식",
+"diff": 5,
+"body": "정사각형 $ABCD$의 꼭짓점은 둘레를 따라 차례로 놓여 있다. 변 $AB$를 한 변으로 하는 정삼각형 $ABP$는 정사각형의 안쪽에, 변 $AD$를 한 변으로 하는 정삼각형 $ADQ$는 정사각형의 바깥쪽에 만든다. $D$와 $P$, $P$와 $Q$를 각각 이었을 때, $\\angle DPQ$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$30^\\circ$",
+"solution": "$AD=AP$이고 $\\angle DAP=90^\\circ-60^\\circ=30^\\circ$이므로 $\\angle DPA=75^\\circ$이다. 또한 $AP=AQ$이고 $\\angle PAQ=30^\\circ+60^\\circ=90^\\circ$이므로 $\\angle APQ=45^\\circ$이다. 반직선 $PQ$는 $\\angle DPA$의 내부에 있으므로 $\\angle DPQ=75^\\circ-45^\\circ=30^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17786",
+"custom": true
+},
+{
+"id": "fill-7667d5e615",
+"typeId": "17786",
+"kind": "주관식",
+"diff": 5,
+"body": "정사각형 $ABCD$의 꼭짓점은 둘레를 따라 차례로 놓여 있다. 변 $AB$와 변 $BC$를 각각 한 변으로 하여 정사각형의 바깥쪽에 정삼각형 $ABP$와 정삼각형 $BCQ$를 만든다. 선분 $DP$와 직선 $BQ$의 교점을 $T$라 할 때, $\\angle PTQ$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$105^\\circ$",
+"solution": "$AD=AP$이고 $\\angle DAP=150^\\circ$이므로 $\\angle ADP=15^\\circ$이다. 선분 $DP$와 변 $AB$의 교점을 $R$라 하면, 삼각형 $ADR$에서 $\\angle ARD=75^\\circ$이므로 맞꼭지각인 $\\angle BRT$도 $75^\\circ$이다. $\\angle ABQ=150^\\circ$이고 $T$는 반직선 $BQ$의 반대쪽 연장선 위에 있으므로 $\\angle RBT=30^\\circ$이다. 따라서 삼각형 $BRT$에서 $\\angle RTB=75^\\circ$이다. 반직선 $TP$와 $TR$는 서로 반대 방향이고 반직선 $TQ$와 $TB$는 일치하므로 $\\angle PTQ=180^\\circ-75^\\circ=105^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17786",
+"custom": true
+},
+{
+"id": "fill-97c7821bd6",
+"typeId": "17786",
+"kind": "주관식",
+"diff": 5,
+"body": "정사각형 $ABCD$의 꼭짓점은 둘레를 따라 차례로 놓여 있고, 변 $BC$를 한 변으로 하는 정삼각형 $BCP$가 정사각형의 안쪽에 있다. 반직선 $BP$ 위에서 $P$를 지난 곳에 $PE=PD$가 되도록 점 $E$를 잡는다. $A$, $D$, $E$를 연결할 때, $\\angle ADE$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$52.5^\\circ$",
+"solution": "$CD=CP$이고 $\\angle PCD=30^\\circ$이므로 $\\angle PDC=\\angle CPD=75^\\circ$이며, $\\angle PDA=15^\\circ$이다. 따라서 $\\angle BPD=60^\\circ+75^\\circ=135^\\circ$이고, $B$, $P$, $E$가 이 순서로 한 직선 위에 있으므로 $\\angle DPE=45^\\circ$이다. $PD=PE$이므로 이등변삼각형 $DPE$에서 $\\angle PDE=(180^\\circ-45^\\circ)\\div2=67.5^\\circ$이다. 반직선 $DA$는 $\\angle PDE$의 내부에 있으므로 $\\angle ADE=67.5^\\circ-15^\\circ=52.5^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17786",
+"custom": true
+}
+]

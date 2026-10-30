@@ -556,5 +556,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b03-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-60b860bc67",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nOur first destination was Phillip Island, which is just a two-hour drive from Melbourne and is famous for its \"penguin parade.\" This unique parade features little blue penguins, measuring only 35 to 42 centimeters in height. When we arrived at the beach, we were guided to carefully designed viewing platforms. We were also prohibited from taking photos, as bright lights and sudden flashes could frighten the penguins. The penguin parade took place in the evening when the penguins returned from the ocean to the shore. The penguins leave their burrows early in the morning, spend the day fishing, and then come home to feed their young and rest.",
+"choices": [
+"Phillip Island is about a two-hour flight away from Melbourne.",
+"Little blue penguins are between 35 and 42 centimeters tall.",
+"Visitors were allowed to take photos of the penguins freely.",
+"The penguins came back to the shore early in the morning.",
+"The penguins spent the entire day resting in their burrows."
+],
+"answer": "②",
+"solution": "작은 푸른 펭귄은 키가 35~42cm라고 했으므로 ②가 일치한다. 필립섬은 멜버른에서 차로 두 시간 거리(①은 비행기), 밝은 빛이 펭귄을 놀라게 해 사진 촬영이 금지되었고(③), 펭귄은 저녁에 해변으로 돌아오며(④), 낮에는 물고기를 잡으며 보낸다(⑤)고 했으므로 나머지는 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3ce52817ea",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOur final destination was Uluru, the largest rock in the world. I had longed to see it in person ever since I came across a picture of it a few years ago. From a distance, it looked like a huge red dome, providing an amazing contrast against the clear blue sky. The next day, we walked around its 10-kilometer base. My uncle informed me that Uluru was naturally gray, but that its iron content had oxidized over time, giving it its iconic red color. The highlight of our visit was the sunset, when the colors transformed from red to deep orange and then to purple as the sun sank below the horizon.",
+"choices": [
+"Uluru is the largest rock in the world.",
+"From a distance, Uluru looked like a huge red dome against the blue sky.",
+"The writer and his group walked around Uluru's 10-kilometer base.",
+"Uluru was originally red but gradually turned gray as its iron oxidized.",
+"At sunset, Uluru's colors changed from red to orange and then to purple."
+],
+"answer": "④",
+"solution": "우루루는 원래 회색이었으나 철분이 산화되어 상징적인 붉은색을 띠게 되었다고 했다. ④는 색의 변화 방향을 뒤바꾼 것이므로 일치하지 않는다. 나머지 ①②③⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d2b09fa0ec",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOne of the sites I was most excited about was the Great Barrier Reef, the world's largest coral reef system. I chose to explore Lady Elliot Island in the southern region, which is known for its beautiful coral reefs and manta rays. As our plane approached land, I spotted the reef stretching as far as I could see. As I wanted to explore the coral reef more closely, I went snorkeling. The first sight that greeted me in the water was manta rays. Even though they are endangered, I witnessed many of them gliding through the water. My uncle later informed me that many parts of the reef, especially in the northern region, suffer from coral bleaching, which turns the reef white.",
+"choices": [
+"The Great Barrier Reef is the world's largest coral reef system.",
+"The writer explored Lady Elliot Island in the northern region of the reef.",
+"The writer went snorkeling to see the coral reef more closely.",
+"Although manta rays are endangered, the writer saw many of them.",
+"The northern region of the reef suffers from coral bleaching."
+],
+"answer": "②",
+"solution": "글쓴이는 '남쪽(southern) 지역'의 Lady Elliot Island를 택해 탐험했다. ②는 이를 '북쪽'으로 바꾸었으므로 일치하지 않는다. 특히 산호 백화 현상이 심한 곳이 북쪽 지역이라는 ⑤와 혼동하지 않도록 주의한다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c16dae0590",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 바로 뒤에 이어질 내용으로 가장 알맞은 것은?\n\nThis past summer, I had the remarkable opportunity to spend a month in Australia. My uncle, a wildlife biologist conducting research on Australian animals, invited me to join him on an ecotour. Upon arriving in Melbourne, I was greeted by the chilly air, a sharp contrast to the humid heat I had left behind in Korea. My trip to Australia was filled with visits to remarkable places and encounters with incredible nature. I will share four of the most memorable destinations from my journey.",
+"choices": [
+"detailed accounts of the four most memorable places the writer visited in Australia",
+"the reasons why the writer's uncle became a wildlife biologist in Australia",
+"the long preparations the writer made before leaving Korea for Australia",
+"the difficulties the writer faced because of Australia's chilly weather",
+"advice on how to plan an affordable month-long ecotour in Australia"
+],
+"answer": "①",
+"solution": "마지막 문장에서 여정 중 '가장 기억에 남는 네 곳(four of the most memorable destinations)'을 나누겠다고 예고했다. 따라서 바로 뒤에는 그 네 장소에 관한 구체적인 이야기가 이어지는 것이 자연스럽다. ②③④⑤는 본문이 예고한 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a042d531d2",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nKakadu National Park is the largest national park in northern Australia. The landscape resembled an ocean filled with green eucalyptus trees. Perhaps the only drawback was that, being in a remote region, we had no Wi-Fi connection. One of the highlights of our visit was our tour led by Victor, an Aboriginal guide. He explained that Kakadu has been home to Aboriginal people for over 40,000 years. He also introduced us to rock art sites depicting Aboriginal stories. One drawing was done in an X-ray style, illustrating the insides of a fish to show which parts were edible. Kakadu is also famous for its saltwater crocodiles, as there are around 10,000 living in the region. They are the largest of all crocodile species and grow up to six meters long.",
+"choices": [
+"Kakadu is the largest national park in northern Australia.",
+"Because of its remote location, the park had no Wi-Fi connection.",
+"Victor said Kakadu had been home to Aboriginal people for over 4,000 years.",
+"An X-ray-style drawing showed which parts of a fish were edible.",
+"Saltwater crocodiles are the largest of all crocodile species."
+],
+"answer": "③",
+"solution": "Victor는 카카두가 4만 년(over 40,000 years) 넘게 원주민의 터전이었다고 설명했다. ③은 이를 '4천 년(4,000 years)'으로 바꾼 숫자 함정이므로 일치하지 않는다. 나머지 ①②④⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9b0b40b7ad",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용으로 보아, Salar de Uyuni가 '세계에서 가장 큰 거울'이 되는 이유로 가장 알맞은 것은?\n\nLocated in South America, Salar de Uyuni is the largest salt flat in the world. One of the highlights is taking incredible photos on the mirror-like salt flat. In the wet season, the flat is covered with a thin layer of water, which makes it the world's largest mirror. Don't worry about capturing the perfect shot, as our guides are highly skilled photographers. You'll also explore other natural wonders including the Laguna Colorada, a red lake filled with flamingos. At the end of the day, you can relax in comfort at a hotel made entirely of salt.",
+"choices": [
+"Because a thin layer of water covers the flat during the wet season.",
+"Because the salt on the flat shines brightly under the strong sun.",
+"Because the skilled guides polish the surface of the salt flat.",
+"Because the red lake reflects the flamingos onto the flat.",
+"Because the hotel made of salt stands in the middle of the flat."
+],
+"answer": "①",
+"solution": "본문에서 우기(wet season)에 소금 평원이 얇은 물층으로 덮여 세계에서 가장 큰 거울이 된다고 했으므로 ①이 정답이다. 밝은 햇빛·가이드·붉은 호수·소금 호텔은 모두 거울이 되는 원인과는 관련이 없는 함정 선지다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true
 }
 ]

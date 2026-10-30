@@ -1476,5 +1476,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b02-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-7e6c437197",
+"typeId": "eng-m2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nB: Did you hear about our summer vacation? It's going to be three months long!\nG: Really? That sounds strange. Where did you hear that?\nB: I saw a post on social media last night. Everyone's sharing it, and my friends are so happy about it.\nG: Hmm, I can't believe it. There's no information about a long summer vacation on the school website.\nB: But I'm still not sure.\nG: Then, why don't we ask our homeroom teacher?\nB: Oh, that's a good idea! Let's go to the teacher's office tomorrow!",
+"choices": [
+"① Where did the boy see the post about the long summer vacation?",
+"② How long will the summer vacation be according to the post?",
+"③ How did the boy's friends feel about the news?",
+"④ Who will the boy and the girl ask to check the news?",
+"⑤ How many students shared the post on social media?"
+],
+"answer": "⑤",
+"solution": "①은 소셜 미디어(social media), ②는 세 달(three months), ③은 신이 난(happy/so happy), ④는 담임 선생님(homeroom teacher)으로 모두 본문에서 답할 수 있다. ⑤는 'Everyone's sharing it'이라고만 했을 뿐 몇 명이 공유했는지 구체적인 수는 나와 있지 않으므로 답할 수 없다. 따라서 정답은 ⑤.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2467a0403c",
+"typeId": "eng-m2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nGrong and Acky searched online with their smartphones and found many photos of chocolate burgers and fries from social media sites. They uploaded the images to a reverse image search engine and found that the photos were originally from a food fair. Someone stole them to fool people. They then asked the cafeteria manager, Mr. Aristo, through the live chat. He said there was no chocolate on the menu, and that he hears similar stories every year around this time. The two found out that many similar stories celebrate Spring Joke Day, and most of them come from humor websites.",
+"choices": [
+"① Grong과 Acky는 스마트폰으로 온라인을 검색한다.",
+"② 초콜릿 음식 사진들은 본래 음식 박람회에서 나온 것이다.",
+"③ Mr. Aristo는 매년 이맘때 비슷한 이야기를 듣는다고 말한다.",
+"④ 비슷한 가짜 이야기들은 대부분 뉴스 웹사이트에서 나온다.",
+"⑤ 다음 주는 '봄 장난의 날'이 될 것이다."
+],
+"answer": "④",
+"solution": "본문에서 비슷한 가짜 이야기들은 대부분 유머 웹사이트(humor websites)에서 나온다고 했으므로, '뉴스 웹사이트'라고 한 ④는 일치하지 않는다. ①·②·③·⑤는 모두 본문 내용과 일치한다. 따라서 정답은 ④.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d79a0f08f8",
+"typeId": "eng-m2-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nAcky: Where did this rumor start?\nGrong: This type of news usually has an online source. Look, here are many photos of chocolate burgers and fries from social media sites.\nAcky: We need to be careful — social media is not always reliable. Are those photos real?\nGrong: Let's upload the images to a reverse image search engine and find their original source.\nAcky: Ah, these photos are from a food fair! Someone who stole them is trying to fool us!\nGrong: The news seems fake. Let's ask the cafeteria manager through the live chat.\nAcky: Hello, Mr. Aristo. Are the rumors about a chocolate menu for next week true?\nMr. Aristo: No, there's no chocolate on our menu next week. But every year around this time, I hear stories like this.",
+"choices": [
+"① Where do the chocolate food photos originally come from?",
+"② Through what method does Acky ask Mr. Aristo about the rumor?",
+"③ Why did someone steal and upload the chocolate food photos?",
+"④ What is the real cafeteria menu situation for next week?",
+"⑤ When did Mr. Aristo first begin to hear these yearly rumors?"
+],
+"answer": "⑤",
+"solution": "①은 음식 박람회(food fair), ②는 실시간 채팅(live chat), ③은 사람들을 속이기 위해(to fool us), ④는 다음 주 메뉴에 초콜릿이 없다는 것으로 모두 본문에서 답할 수 있다. ⑤는 Mr. Aristo가 '매년 이맘때 이런 이야기를 듣는다'고만 했을 뿐 언제 처음 듣기 시작했는지는 나와 있지 않으므로 답할 수 없다. 따라서 정답은 ⑤.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-523ad7e019",
+"typeId": "eng-m2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nEunji: We are now at the Gangneung Central Market. This is a traditional market that sells many kinds of delicious food. We ordered ongsimi and makguksu. Ongsimi is hot soup with potato balls and makguksu is cold buckwheat noodles.\nRebecca: Paul, which do you prefer, ongsimi or makguksu?\nPaul: I prefer ongsimi. The potato balls are chewy and delicious. They also look cute.\nRebecca: I like makguksu. The noodles are spicy and tasty.\nEunji: Do you want to try sundubu ice cream for dessert? Sundubu is soft tofu.\nPaul: You mean the ice cream is made from soft tofu?\nEunji: Yes. I believe it was invented by people in the Gangneung area.\nRebecca: I'm so excited to try it!",
+"choices": [
+"The market is a traditional one that sells many kinds of tasty food.",
+"Paul thinks the potato balls both taste good and look cute.",
+"Rebecca describes the makguksu noodles as spicy and tasty.",
+"The sundubu ice cream is believed to have first been made in the Gangneung area.",
+"Rebecca ordered ongsimi because she wanted something warm to eat."
+],
+"answer": "⑤",
+"solution": "본문에서 그들은 ongsimi와 makguksu를 함께 주문했고('We ordered...'), Rebecca는 makguksu를 좋아한다고 말했다. Rebecca가 따뜻한 것을 원해서 ongsimi를 주문했다는 내용은 없으므로 ⑤가 일치하지 않는다. ①②③④는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-7c7e3e2b0e",
+"typeId": "eng-m2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것은?\n\nEunji: Okay everyone, we are at the Danoje Festival. It is celebrated the day of Dano. People in the past wished for a good harvest on this day after planting rice. Interesting events are taking place here.\nPaul: Look! Two men are trying to bring each other to the ground. What are they playing?\nEunji: They are playing traditional Korean wrestling. It is called ssireum.\nRebecca: I want to wash my hair in changpo water after we watch ssireum. I heard it will make our hair shiny.\nEunji: That's true. Changpo is a traditional herb. In the past, people believed that it kept bad luck away!\nPaul: Sounds wonderful!\nEunji: We are walking on Anmok Beach. Can you hear the waves and music from the cafes?",
+"choices": [
+"The Danoje Festival is held to celebrate a good harvest that has already finished.",
+"In ssireum, two players try to throw each other down to the ground.",
+"Washing hair in changpo water was believed to bring good luck.",
+"Changpo is a kind of food that people eat during the Dano holiday.",
+"At Anmok Beach, only the sound of the waves can be heard."
+],
+"answer": "②",
+"solution": "ssireum은 두 사람이 상대를 땅으로 넘어뜨리려는 전통 씨름이므로 ②가 일치한다. ①은 이미 끝난 수확이 아니라 좋은 수확을 '기원'한 것이고, ③ changpo는 나쁜 운을 막는다고 믿었으며(머리는 윤기 나게 함), ④ changpo는 음식이 아니라 약초(herb), ⑤ 아목 해변에서는 파도 소리와 카페 음악을 함께 들을 수 있으므로 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-efe2eaa59a",
+"typeId": "eng-m2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "위 대화의 내용과 일치하는 것은?\n\nW: I'm excited to go to Busan next week! We need to start planning our trip.\nB: Sounds great, Mom! What should we do first?\nW: Why don't we visit Haeundae?\nB: That's a good idea. I heard that it has a nice beach and lots of things to enjoy like busking.\nW: Yes, right. How about food? Anything in mind?\nB: Let's try some famous local dishes in Busan. I've heard about dwaejigukbap and milmyeon.\nW: Oh, what are they?\nB: Dwaejigukbap is pork soup with rice and milmyeon is a cold noodle dish.\nW: I prefer hot soup.\nB: Me, too! I'm excited to experience all these new things with you!",
+"choices": [
+"The boy and his mom will leave for Busan the same day as the talk.",
+"Haeundae is the first place they decide to visit on the trip.",
+"The boy has already eaten both dwaejigukbap and milmyeon before.",
+"Between the two local dishes, both of them would likely choose milmyeon.",
+"Mom explains to the boy what dwaejigukbap and milmyeon are."
+],
+"answer": "②",
+"solution": "엄마가 Haeundae를 먼저 제안하고 아들이 동의하므로 ②가 일치한다. ① 여행은 next week이고, ③ 아들은 두 음식에 대해 '들어봤을' 뿐 먹어본 적이 없으며, ⑤ 음식을 설명한 사람은 엄마가 아니라 아들이다. ④는 두 사람 모두 'hot soup'을 선호한다고 했으므로 차가운 면 milmyeon이 아니라 뜨거운 국 dwaejigukbap을 고를 가능성이 높아 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c58b59c1e3",
+"typeId": "eng-m2-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nEunji: We are now at the Gangneung Central Market. This is a traditional market that sells many kinds of delicious food. We ordered ongsimi and makguksu. Ongsimi is hot soup with potato balls and makguksu is cold buckwheat noodles.\nRebecca: Paul, which do you prefer, ongsimi or makguksu?\nPaul: I prefer ongsimi. The potato balls are chewy and delicious. They also look cute.\nRebecca: I like makguksu. The noodles are spicy and tasty.\nEunji: Do you want to try sundubu ice cream for dessert? Sundubu is soft tofu.\nPaul: You mean the ice cream is made from soft tofu?\nEunji: Yes. I believe it was invented by people in the Gangneung area.",
+"choices": [
+"What kind of food does the Gangneung Central Market sell?",
+"Which dish is served cold, ongsimi or makguksu?",
+"What reasons does Paul give for preferring ongsimi?",
+"What is the sundubu ice cream made from?",
+"When did people in Gangneung first invent the sundubu ice cream?"
+],
+"answer": "⑤",
+"solution": "① 다양한 맛있는 음식, ② makguksu(차가운 메밀국수), ③ 쫄깃하고 맛있으며 귀엽게 생겨서, ④ 순두부(soft tofu)로 만든다는 답을 모두 본문에서 찾을 수 있다. 그러나 순두부 아이스크림을 '언제' 처음 만들었는지에 대한 시점은 글에 나와 있지 않으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m4s0t0",
+"custom": true
 }
 ]

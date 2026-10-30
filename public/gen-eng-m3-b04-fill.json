@@ -4963,5 +4963,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u2m3s0t0",
 "custom": true
+},
+{
+"id": "fill-e8e5fd6a9b",
+"typeId": "eng-m3-b04-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIn Finland, where it is very cold in winter, people have a special drink when they catch a cold. It is a cup of onion milk. They put chopped onion in milk and boil it over low heat for half an hour. This simple drink is said to be good for a cold.\nWhile people in Korea and Finland look for drinks when sick, many people in America want a bowl of chicken soup. It is usually made with chicken and vegetables, but the recipe is different from one family to another. Salt and pepper can be added before eating. People in America believe that a bowl of warm chicken soup is great for a sore throat and a stuffy nose.",
+"choices": [
+"People in Finland boil chopped onion in milk over high heat for half an hour.",
+"Onion milk is a special drink that people in Finland drink only in winter.",
+"Unlike people in Korea and Finland, many people in America want food, not a drink, when they are sick.",
+"In America, salt and pepper are always added while the chicken soup is boiling.",
+"Every family in America makes chicken soup with the same recipe."
+],
+"answer": "③",
+"solution": "글에서 한국과 핀란드 사람들은 아플 때 마실 것을 찾지만, 미국 사람들은 많이들 치킨 수프 한 그릇을 원한다고 했으므로 ③이 맞습니다. ①은 'high heat'가 아니라 약한 불(low heat)이 맞고, ②의 '겨울에만 마신다'는 말은 글에 없습니다. ④는 소금과 후추를 '먹기 전에 넣을 수 있다(can be added before eating)'고 했으니 '끓이는 동안 항상'은 틀렸고, ⑤는 조리법이 가정마다 다르다고 했으므로 틀렸습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5d38aa3714",
+"typeId": "eng-m3-b04-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용과 일치하는 것을 〈보기〉에서 모두 고른 것은?\n\nWhat do you do when you catch a cold? Of course, you want to stay warm, so maybe you put on more clothes. Some people like to drink hot tea. Ginger tea is something people in Korea often drink. With its special taste, it warms your body and helps reduce the pain in your throat. What do people drink or eat in other countries when they catch a cold? Let's find out.\nIn Finland, where it is very cold in winter, people have a special drink when they catch a cold. It is a cup of onion milk. They put chopped onion in milk and boil it over low heat for half an hour. This simple drink is said to be good for a cold.\nWhile people in Korea and Finland look for drinks when sick, many people in America want a bowl of chicken soup. It is usually made with chicken and vegetables, but the recipe is different from one family to another. Salt and pepper can be added before eating. People in America believe that a bowl of warm chicken soup is great for a sore throat and a stuffy nose.\nIn Russia and in Eastern Europe, when people get sick, they eat a dessert called gogol-mogol. It is made with eggs and honey. Some people add chocolate, butter, lemon juice, or milk to make it taste better. It looks like thick yogurt. People often drink a cup of warm gogol-mogol when they have a sore throat. Gogol-mogol is not only good for people with a cold but also popular as a dessert for healthy people. When served as a dessert, it is usually served cold or at room temperature.\n\n〈보기〉\n(a) Ginger tea warms your body and helps reduce the pain in your throat.\n(b) To make onion milk, people in Finland put a whole onion in milk.\n(c) People in America believe warm chicken soup is good for a stuffy nose.\n(d) Nothing but eggs and honey can be put in gogol-mogol.\n(e) People with a sore throat often drink gogol-mogol cold.\n(f) Gogol-mogol looks like thick yogurt.",
+"choices": [
+"(a), (b), (e)",
+"(a), (c), (f)",
+"(b), (d), (f)",
+"(c), (d), (e)",
+"(a), (c), (e), (f)"
+],
+"answer": "②",
+"solution": "(a)는 생강차가 몸을 따뜻하게 하고 목 통증을 줄여 준다고 한 부분과, (c)는 미국 사람들이 따뜻한 치킨 수프가 코막힘에 좋다고 믿는다는 부분과, (f)는 고골모골이 걸쭉한 요거트처럼 보인다는 부분과 일치합니다. (b)는 통양파가 아니라 잘게 썬 양파(chopped onion)를 넣고, (d)는 맛을 좋게 하려고 초콜릿, 버터, 레몬즙, 우유를 넣기도 한다고 했으므로 틀렸습니다. (e)는 목이 아플 때 '따뜻한(warm)' 고골모골을 마신다고 했으니 틀렸고, 차갑게 내는 것은 후식일 때입니다. 따라서 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ff44cd7b01",
+"typeId": "eng-m3-b04-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 대화를 읽고 답할 수 없는 질문은?\n\nM: Good afternoon. A table for two?\nB: Yes.\nM: This way please. Here is the menu. I'll be back in a few minutes and take your order.\nB: Okay. Thank you.\nG: I don't know much about Korean food. Could you recommend something?\nB: Well, I'd recommend Bibimbap.\nG: I'm sorry. Could you say that again, please?\nB: Bi-bim-bap. It's made with lots of vegetables, beef and an egg over rice. It's tasty and it's also good for your health.\nG: That sounds great. I'll try it.\nB: It's served with a spicy red pepper sauce. Is that okay?\nG: No problem. I like spicy food.\n(G=Sophie, B=Hajun)",
+"choices": [
+"How many people does the man take to the table?",
+"What does Sophie ask Hajun to do?",
+"What is Bibimbap made with?",
+"How long will it take for Bibimbap to be served?",
+"Why is the spicy red pepper sauce okay for Sophie?"
+],
+"answer": "④",
+"solution": "남자가 몇 분 뒤에 돌아오겠다고 한 것은 '주문을 받으러(take your order)' 오겠다는 뜻일 뿐입니다. 비빔밥이 나오기까지 걸리는 시간은 대화에 나오지 않으므로 ④는 답할 수 없습니다. ①은 두 명(A table for two), ②는 음식을 추천해 달라고 한 것, ③은 채소·소고기·달걀·밥, ⑤는 Sophie가 매운 음식을 좋아하기 때문이라고 답할 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b73834953b",
+"typeId": "eng-m3-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸 ⓐ, ⓑ, ⓒ에 공통으로 들어갈 말로 알맞은 것은?\n\n• The rain ⓐ__________ falls heavily shows a lot of stress.\n• Someone ⓑ__________ draws no umbrella has no means to deal with problems.\n• The clouds ⓒ__________ mean problems waiting to happen make the drawing look dark.",
+"choices": [
+"who",
+"which",
+"that",
+"what",
+"whose"
+],
+"answer": "③",
+"solution": "ⓐ와 ⓒ의 선행사(The rain, The clouds)는 사물이므로 which/that이 가능하고, ⓑ의 선행사(Someone)는 사람이므로 who/that이 가능하다. 세 빈칸에 공통으로 쓸 수 있는 관계대명사는 사람·사물 모두에 쓰이는 that뿐이다. who는 ⓐⓒ에, which는 ⓑ에 쓸 수 없으므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6373a1e309",
+"typeId": "eng-m3-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "주어진 문장에 이어질 글의 순서로 가장 알맞은 것은?\n\nA picture is often closely related to what you're feeling in your mind.\n\n(A) Therefore, you can find out other people's feelings if you pay careful attention to their drawings.\n(B) When you draw a picture, it shows your feelings.\n(C) In other words, your various feelings can be expressed through pictures.",
+"choices": [
+"(A) - (B) - (C)",
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (B) - (A)"
+],
+"answer": "④",
+"solution": "주어진 문장은 '그림이 마음속 감정과 관련 있다'는 주제문이다. 이를 구체적으로 설명하는 (B)'그림을 그리면 감정이 드러난다'가 먼저 오고, In other words로 이를 바꿔 말한 (C)가 이어진다. 마지막으로 Therefore로 결론을 내리는 (A)가 와야 자연스럽다. 따라서 (B)-(C)-(A)인 ④가 답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8f3471ef3f",
+"typeId": "eng-m3-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "밑줄 친 ⓐ~ⓔ 중 가리키는 대상이 나머지 넷과 다른 것은?\n\nThe rain shows the stress ⓐthe person who drew the picture is under. A big umbrella shows that ⓑthe drawer has a lot of plans. If there's no umbrella, ⓒhe or she does not have any means to deal with difficult situations. Someone who draws a person without a face does not want to draw ⓓother people's attention to himself or herself; ⓔthis person hides from them.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓐ the person who drew the picture, ⓑ the drawer, ⓒ he or she, ⓔ this person은 모두 '그림을 그린 사람(the drawer)'을 가리킨다. 그러나 ⓓ other people은 그림을 그린 사람이 주의를 끌고 싶지 않은 '다른 사람들'을 뜻하므로 가리키는 대상이 다르다. 따라서 답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4febc54b04",
+"typeId": "eng-m3-b04-u4m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe details in the drawing have to do with the drawer's attitude under stress. Someone who draws the person on the right side of the paper is ready to meet the future. On the other hand, someone who draws the person on the left side may be worried about things that have happened in the past. This shows that the __________ you place the figure reflects your attitude toward time.",
+"choices": [
+"moment when",
+"reason why",
+"spot where",
+"manner in which",
+"friend who"
+],
+"answer": "③",
+"solution": "빈칸 뒤 내용은 인물을 종이의 '오른쪽/왼쪽', 즉 어떤 '위치(장소)'에 그리느냐에 관한 것이다. 따라서 장소를 선행사로 받는 관계부사 where가 포함된 ③ spot where가 알맞다. 시간(moment when)·이유(reason why)·방법(manner in which)은 문맥과 맞지 않으므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m4s0t0",
+"custom": true
 }
 ]

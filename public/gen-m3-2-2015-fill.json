@@ -1,0 +1,149 @@
+[
+{
+"id": "fill-599600a75f",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 2,
+"body": "두 원 $O$, $O'$가 두 점 $A$, $B$에서 만난다. $OA=12\\text{ cm}$, $O'A=16\\text{ cm}$이고 $∠OAO'=90^\\circ$일 때, 공통현 $AB$의 길이는?",
+"choices": [
+"$\\frac{72}{5}\\text{ cm}$",
+"$18\\text{ cm}$",
+"$\\frac{96}{5}\\text{ cm}$",
+"$20\\text{ cm}$",
+"$24\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$OO'=\\sqrt{12^2+16^2}=20$이고, 직각삼각형 $OAO'$에서 빗변에 내린 높이의 길이는 $\\frac{12\\times16}{20}=\\frac{48}{5}$이다. 공통현은 중심을 잇는 직선에 의해 이등분되므로 $AB=2\\times\\frac{48}{5}=\\frac{96}{5}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-83fe9e440a",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 모두 $10\\text{ cm}$인 두 원이 두 점 $A$, $B$에서 만나고, 두 원의 중심 사이의 거리는 $12\\text{ cm}$이다. 공통현 $AB$의 길이는?",
+"choices": [
+"$12\\text{ cm}$",
+"$16\\text{ cm}$",
+"$18\\text{ cm}$",
+"$20\\text{ cm}$",
+"$24\\text{ cm}$"
+],
+"answer": "②",
+"solution": "두 원의 반지름이 같으므로 공통현과 두 중심을 잇는 선분의 교점은 두 중심의 중점이다. 공통현의 절반은 $\\sqrt{10^2-6^2}=8\\text{ cm}$이므로 $AB=16\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-498ef5db46",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 2,
+"body": "두 원 $O_1$, $O_2$의 공통현을 $AB$라 하고, 직선 $O_1O_2$와 $AB$의 교점을 $M$이라 하자. $O_1A=15\\text{ cm}$, $O_1M=9\\text{ cm}$일 때, 공통현 $AB$의 길이는?",
+"choices": [
+"$18\\text{ cm}$",
+"$20\\text{ cm}$",
+"$22\\text{ cm}$",
+"$24\\text{ cm}$",
+"$30\\text{ cm}$"
+],
+"answer": "④",
+"solution": "두 원의 중심을 잇는 직선은 공통현을 수직이등분하므로 $AM\\perp O_1M$이고 $AM=BM$이다. $AM=\\sqrt{15^2-9^2}=12\\text{ cm}$이므로 $AB=24\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-7481aaff5f",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 3,
+"body": "반지름의 길이가 각각 $17\\text{ cm}$, $10\\text{ cm}$인 두 원의 중심 사이의 거리가 $21\\text{ cm}$이다. 두 원의 공통현의 길이는?",
+"choices": [
+"$12\\text{ cm}$",
+"$14\\text{ cm}$",
+"$16\\text{ cm}$",
+"$18\\text{ cm}$",
+"$20\\text{ cm}$"
+],
+"answer": "③",
+"solution": "반지름이 $17\\text{ cm}$인 원의 중심에서 공통현까지의 거리를 $x$라 하면 $x=\\frac{21^2+17^2-10^2}{2\\times21}=15$이다. 공통현의 절반은 $\\sqrt{17^2-15^2}=8\\text{ cm}$이므로 공통현의 길이는 $16\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-49f9b4f552",
+"typeId": "7088",
+"kind": "주관식",
+"diff": 3,
+"body": "두 원 $O$, $O'$가 두 점 $A$, $B$에서 만난다. $OO'=25\\text{ cm}$, $OA=15\\text{ cm}$이고 $∠OAO'=90^\\circ$일 때, 공통현 $AB$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$24\\text{ cm}$",
+"solution": "직각삼각형 $OAO'$에서 $O'A=\\sqrt{25^2-15^2}=20\\text{ cm}$이다. 점 $A$에서 $OO'$에 내린 높이는 $\\frac{15\\times20}{25}=12\\text{ cm}$이고, 이는 공통현의 절반이므로 $AB=24\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-a7abc41326",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 3,
+"body": "반지름의 길이가 각각 $25\\text{ cm}$, $29\\text{ cm}$인 두 원이 두 점에서 만나고, 두 원의 중심 사이의 거리는 $36\\text{ cm}$이다. 두 원의 공통현의 길이는?",
+"choices": [
+"$30\\text{ cm}$",
+"$36\\text{ cm}$",
+"$38\\text{ cm}$",
+"$40\\text{ cm}$",
+"$50\\text{ cm}$"
+],
+"answer": "④",
+"solution": "반지름이 $25\\text{ cm}$인 원의 중심에서 공통현까지의 거리는 $\\frac{36^2+25^2-29^2}{2\\times36}=15\\text{ cm}$이다. 공통현의 절반은 $\\sqrt{25^2-15^2}=20\\text{ cm}$이므로 그 길이는 $40\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-0f61a29cc2",
+"typeId": "7088",
+"kind": "주관식",
+"diff": 5,
+"body": "두 원 $O$, $O'$의 공통현 $AB$와 선분 $OO'$의 교점을 $M$이라 하자. $∠OAO'=90^\\circ$, $OM:MO'=4:9$이고 $AB=24\\text{ cm}$일 때, $OO'$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$26\\text{ cm}$",
+"solution": "$AM=\\frac{AB}{2}=12\\text{ cm}$이고, 직각삼각형 $OAO'$에서 $AM$은 빗변 $OO'$에 내린 높이이다. $OM=4k$, $MO'=9k$라 하면 높이의 성질에 의해 $12^2=(4k)(9k)$이므로 $k=2$이다. 따라서 $OO'=4k+9k=26\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-efccd2c72e",
+"typeId": "7088",
+"kind": "주관식",
+"diff": 5,
+"body": "두 원 $O$, $O'$가 두 점 $A$, $B$에서 만나고 $∠OAO'=90^\\circ$이다. $OO'=25\\text{ cm}$이고 공통현 $AB$의 길이가 $24\\text{ cm}$일 때, 두 원의 반지름의 길이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$35\\text{ cm}$",
+"solution": "공통현과 $OO'$의 교점을 $M$이라 하면 $AM=12\\text{ cm}$이고, $OM+MO'=25$이다. 높이의 성질에서 $OM\\cdot MO'=AM^2=144$이므로 $OM$, $MO'$는 각각 $9$, $16$이다. 따라서 $OA=\\sqrt{25\\times9}=15$, $O'A=\\sqrt{25\\times16}=20$이므로 반지름의 합은 $35\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-f30809afdc",
+"typeId": "7088",
+"kind": "주관식",
+"diff": 5,
+"body": "반지름의 길이가 각각 $25\\text{ cm}$, $17\\text{ cm}$인 두 원의 공통현의 길이가 $30\\text{ cm}$이다. 두 원의 중심 사이의 거리로 가능한 모든 값의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$40\\text{ cm}$",
+"solution": "공통현의 절반은 $15\\text{ cm}$이므로 각 중심에서 공통현까지의 거리는 각각 $\\sqrt{25^2-15^2}=20\\text{ cm}$, $\\sqrt{17^2-15^2}=8\\text{ cm}$이다. 두 중심이 공통현의 같은 쪽에 있으면 중심 사이의 거리는 $20-8=12\\text{ cm}$이고, 서로 반대쪽에 있으면 $20+8=28\\text{ cm}$이다. 따라서 가능한 모든 값의 합은 $12+28=40\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+}
+]

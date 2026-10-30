@@ -3216,5 +3216,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b01-u7m3s0t0",
 "custom": true
+},
+{
+"id": "fill-e3328f18b9",
+"typeId": "eng-m3-b01-u0m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "When you learn a new language, listening to music in that language is a great help. You can learn many new words from the songs. Read the lyrics while you listen, and try to memorize the words. In this way, you will become familiar with the language quickly.\n\n위 글의 주제로 알맞은 것은?",
+"choices": [
+"노래를 즐겁게 부르는 방법",
+"음악을 통해 언어를 배우는 방법",
+"좋은 노래 가사를 고르는 기준",
+"외국어 시험을 준비하는 방법",
+"새로운 언어를 배워야 하는 이유"
+],
+"answer": "②",
+"solution": "글 전체가 그 언어로 된 음악을 들으며 가사를 읽고 단어를 외우는 '음악을 통한 언어 학습'을 설명하고 있다. 따라서 주제로 가장 알맞은 것은 ②이다. 나머지 선지는 글에서 다루지 않거나 지엽적인 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cb7efe1b15",
+"typeId": "eng-m3-b01-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "Here are some easy ways to learn a new language at home. First, listen to music in that language and read the lyrics. It is a fun way to learn new words. Second, read children's books. Since the stories are simple, you can guess the meaning of new words easily. Third, write the new words you learn in a notebook and use them often. If you keep doing these things every day, your language skills will get better.\n\n위 글의 제목으로 알맞은 것은?",
+"choices": [
+"The Best Songs for Children",
+"Easy Ways To Learn a Language at Home",
+"Why Reading Books Is Important",
+"How To Write a Good Story in English",
+"The Difficulty of Learning a Foreign Language"
+],
+"answer": "②",
+"solution": "집에서 혼자 언어를 배우는 여러 방법(음악과 가사, 동화책, 단어 노트)을 차례로 소개하는 글이다. 따라서 제목은 ②가 알맞다. ①③④는 글에 쓰인 소재의 일부일 뿐이고, ⑤는 꾸준히 하면 나아진다는 글의 긍정적 취지와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bfafd72933",
+"typeId": "eng-m3-b01-u0m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "There are many tips for learning a language, but not every tip works for everyone. Some people learn best by listening, and others learn best by writing. So, instead of following every tip, find the way that is right for you. When you learn in your own way, studying becomes more fun and you can keep going.\n\n위 글의 요지로 알맞은 것은?",
+"choices": [
+"가능한 한 많은 학습법을 모두 시도해라.",
+"듣기보다 쓰기를 먼저 연습해라.",
+"자신에게 맞는 학습법을 찾아라.",
+"친구와 함께 공부하면 더 효과적이다.",
+"매일 꾸준히 공부하는 것이 가장 중요하다."
+],
+"answer": "③",
+"solution": "모든 조언이 모두에게 맞는 것은 아니므로 자신에게 맞는 방법을 찾아 자기 방식대로 배우라는 것이 글의 핵심이다. 따라서 요지는 ③이다. ①은 글의 주장과 반대되고, ⑤는 그럴듯하지만 이 글에서는 언급되지 않은 함정 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e724c4d982",
+"typeId": "eng-m3-b01-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "I want to learn Chinese, but studying alone is boring. How can I keep studying? - Mina, 15\nYou should find friends who are also learning Chinese and study together. In my group, we motivate one another, so I never give up. - Jiho, 16\nTry to enjoy the language. I watch Chinese movies and listen to Chinese songs every day. When learning is fun, you can keep doing it for a long time. - Sora, 15\n\n다음과 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 바르게 짝지어진 것은?\n\nMina has trouble studying Chinese alone. Jiho suggests studying with friends because they can (A)______ one another. Sora suggests enjoying the language so that she can (B)______ studying for a long time.",
+"choices": [
+"motivate — keep",
+"motivate — stop",
+"interrupt — keep",
+"follow — stop",
+"follow — keep"
+],
+"answer": "①",
+"solution": "지호는 친구와 함께 공부하면 서로 '동기를 부여한다(motivate)'고 했고, 소라는 언어를 즐기면 오래 '계속할(keep)' 수 있다고 했다. 따라서 (A)에는 motivate, (B)에는 keep이 들어가 ①이 정답이다. stop, interrupt, follow는 본문의 흐름과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-95d1c5a070",
+"typeId": "eng-m3-b01-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "Learning a new language is hard at first, and many people give up early. But every language feels difficult in the beginning. The key is not to stop. If you listen, read, and write a little every day, the language will slowly become part of your life. One day, you will understand things that once looked impossible. So don't be afraid of mistakes — keep going, and a whole new world will open up to you.\n\n위 글의 제목으로 알맞은 것은?",
+"choices": [
+"Mistakes That Language Learners Make",
+"Don't Give Up — Keep Learning Every Day",
+"The Fastest Way To Speak Like a Native",
+"Why Children Learn Languages So Easily",
+"The Best Apps for Studying a Language"
+],
+"answer": "②",
+"solution": "처음에는 어렵고 많은 사람이 포기하지만, 매일 조금씩 꾸준히 하면 결국 해낼 수 있으니 포기하지 말라는 글이다. 따라서 제목은 ②가 가장 알맞다. ①은 본문에 쓰인 단어(mistakes)를 이용한 함정이고, ③④⑤는 글에 전혀 언급되지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8df68aae6c",
+"typeId": "eng-m3-b01-u6m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 괄호 안의 조건대로 영작할 때, 6번째로 올 단어로 알맞은 것은? (단, if를 첫 번째 단어로 할 것)\n\n만약 내가 자율주행차를 가지고 있다면, 나는 운전할 필요가 없을 텐데.\n\n(단어: a / car / drive / had / I / if / need / not / self-driving / to / would)",
+"choices": [
+"had",
+"self-driving",
+"car",
+"would",
+"drive"
+],
+"answer": "③",
+"solution": "가정법 과거이므로 「If I had a self-driving car, I would not need to drive.」가 된다. 어순은 If(1) I(2) had(3) a(4) self-driving(5) car(6)…이므로 6번째 단어는 car이다. self-driving은 하이픈으로 이어진 한 단어로 센다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m6s0t0",
+"custom": true
 }
 ]

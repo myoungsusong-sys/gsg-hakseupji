@@ -4112,5 +4112,740 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-639bb9341c",
+"typeId": "eng-h1-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\n“To grow into a better version of ourselves, we should not stay as we are.” That was the first thing our teacher said to us on the first day of school. She wanted us ①starting the semester by ②pushing ourselves out of our comfort zones and learning more about ourselves. To help us ③do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was ④trying something new for each one. She told us that we should ⑤share our experiences with our classmates when we finished the challenges.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "①",
+"solution": "want는 목적어 뒤에 목적격 보어로 to부정사를 쓰므로 ①은 to start로 고쳐야 한다. ② 전치사 by 뒤에는 동명사 pushing이 온다. ③ help는 목적격 보어로 동사원형을 쓸 수 있으므로 do가 맞다. ④ be동사 뒤 보어 자리의 동명사 trying, ⑤ 조동사 should 뒤의 동사원형 share는 모두 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d45951ca74",
+"typeId": "eng-h1-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThese days, I tend (A)(watching / to watch) movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy.\n(중략)\nAt first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely (B)(absorbing / absorbed) in the story. It was so (C)(satisfying / satisfied) just to focus on the movie itself. There was nothing to distract me!\n\n(A) — (B) — (C)",
+"choices": [
+"watching — absorbed — satisfied",
+"watching — absorbing — satisfying",
+"to watch — absorbing — satisfied",
+"to watch — absorbed — satisfying",
+"to watch — absorbed — satisfied"
+],
+"answer": "④",
+"solution": "(A) tend는 to부정사를 목적어로 써서 ‘~하는 경향이 있다’는 뜻이 되므로 to watch가 알맞다. (B) 주어 I가 이야기에 ‘몰두하게 된’ 것이므로 과거분사 absorbed를 쓴다. (C) 가주어 It이 가리키는 영화에 집중하는 것이 ‘만족감을 주는’ 것이므로 현재분사 satisfying이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-59f7839374",
+"typeId": "eng-h1-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nEver since I was a child, I’ve always been afraid of water. So I have never enjoyed water activities or felt comfortable while ①doing them. For the second challenge, I decided to try ②to overcome this discomfort.\nHowever, I wasn’t sure what to do at first. One day, I came across a video clip of my cousin ③surfing at an indoor pool on social media. It looked fun, and I liked the fact ④that it took place in a shallow pool, not in the ocean. I messaged my cousin about it. She assured me that it wasn’t too hard, so I signed up for a beginner course.\nAt the beginning of the lesson, it was hard just to stand up on the board. After some help from the instructor, however, I learned how to balance properly and even managed ⑤surfing a few waves!",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "manage는 to부정사를 목적어로 써서 ‘간신히 ~해내다’라는 뜻이 되므로 ⑤는 to surf로 고쳐야 한다. ① 접속사 while 뒤에서 주어와 be동사(I was)가 생략된 분사구문 형태라 doing이 맞다. ② try to 동사원형은 ‘~하려고 노력하다’라는 뜻이다. ③ my cousin을 뒤에서 꾸미는 현재분사 surfing은 맞고, ④ that은 the fact의 내용을 설명하는 동격의 접속사다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4b4038a55d",
+"typeId": "eng-h1-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nSomething had to be done to deal with the loss of Melbourne's trees. In 2012, the city government announced its Urban Forest Strategy plan. It set the ambitious goal of planting more than 3,000 trees every year for the next twenty years. The plan also involved the creation of an online map called the Urban Forest Visual. This interactive map shows the location of every single tree in the city's parks and along its roads. It uses colors and symbols to indicate each tree's age and genus.",
+"choices": [
+"The Urban Forest Strategy plan was announced in 2010.",
+"The plan aims to plant more than 3,000 trees every year for twenty years.",
+"The Urban Forest Visual is a printed paper map handed out to residents.",
+"The map shows the price of every single tree in the city.",
+"The plan was carried out without using any online tools."
+],
+"answer": "②",
+"solution": "글에서 Urban Forest Strategy plan은 2012년에 발표되었고(①은 2010년이라 오답), 향후 20년 동안 매년 3,000그루 이상의 나무를 심는 것을 목표로 한다고 했으므로 ②가 일치한다. 지도는 온라인 대화형(interactive) 지도이므로 ③은 틀리고, 지도는 나무의 나이와 속(genus)을 색과 기호로 보여줄 뿐 가격 정보는 없어 ④도 오답이다. 온라인 지도를 만들었으므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ecc7720e9d",
+"typeId": "eng-h1-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nThe story behind these emails begins with Melbourne's Urban Forest Strategy plan, a response to Australia's millennium drought. This drought lasted from the late 1990s to 2010. By the time it ended, 40 percent of the city's 77,000 trees were in a state of declining health. The loss of canopy cover is a major threat to urban environments because it raises temperatures. Higher temperatures in cities can be dangerous for residents, as they increase the risk of heat exhaustion.",
+"choices": [
+"When did Australia's millennium drought end?",
+"What percentage of Melbourne's trees were in declining health after the drought?",
+"Why is the loss of canopy cover a major threat to urban environments?",
+"How many trees did Melbourne plant to replace the ones it had lost?",
+"What risk can higher temperatures in cities increase for residents?"
+],
+"answer": "④",
+"solution": "가뭄은 2010년에 끝났고(①), 전체 77,000그루 중 40%가 건강 악화 상태였으며(②), 캐노피 손실은 기온을 높여 위협이 되고(③), 높은 기온은 열사병 위험을 높인다(⑤)고 하여 모두 글에서 답할 수 있다. 그러나 잃은 나무를 대체하기 위해 몇 그루를 심었는지는 이 글에 언급이 없으므로 ④는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-665d570504",
+"typeId": "eng-h1-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nDear Tree,\nWhenever I walk past you, your beautiful leaves bring a smile to my face. Whenever I stop in front of you and take a deep breath of fresh air, I appreciate the oxygen that you produce. By the way, I noticed that a family of birds has made a nest in your branches. It's so kind of you to provide them with a home. I hope that more people realize how important you and all the other trees are to the environment. Have a nice day!\nBelieve it or not, trees in Melbourne, Australia receive emails like this all the time.",
+"choices": [
+"The writer smiles when walking past the tree's leaves.",
+"The writer appreciates the oxygen that the tree produces.",
+"The writer noticed that a family of birds built a nest in the tree.",
+"The writer blames the tree for letting the birds damage its branches.",
+"Trees in Melbourne receive emails like this all the time."
+],
+"answer": "④",
+"solution": "글쓴이는 나뭇잎을 보며 미소 짓고(①), 나무가 만드는 산소에 감사하며(②), 가지에 새 둥지가 생긴 것을 발견하고(③), 멜버른의 나무들이 이런 이메일을 늘 받는다(⑤)고 하여 모두 일치한다. 글쓴이는 나무가 새에게 보금자리를 제공한 것을 'so kind'라고 칭찬했을 뿐 가지가 손상되었다고 나무를 탓하지 않았으므로 ④가 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4f7efbb6ca",
+"typeId": "eng-h1-b02-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nLocally, the tree mail phenomenon, which started from the Urban Forest Strategy, has inspired many Melbourne residents to offer their own ideas about building an environmentally friendly urban environment. Some have even volunteered to measure trees and monitor animals for nature programs in the city. Meanwhile, the Urban Forest Strategy's tree planting project has remained on track, and canopy cover is predicted to increase from 23 percent in 2012 to 40 percent by the year 2040. As a result, residents will be happier and healthier as they move toward a greener future.",
+"choices": [
+"The tree mail phenomenon inspired residents to share ideas for an eco-friendly city.",
+"Some residents volunteered to measure trees and monitor animals for nature programs.",
+"Canopy cover is predicted to rise from 23 percent in 2012 to 40 percent by 2040.",
+"The tree planting project was stopped halfway because of another drought.",
+"A greener future is expected to make residents happier and healthier."
+],
+"answer": "④",
+"solution": "tree mail 현상이 주민들의 친환경 아이디어 제시를 이끌었고(①), 일부는 나무 측정·동물 관찰에 자원봉사했으며(②), 캐노피는 2012년 23%에서 2040년 40%로 증가할 것으로 예측되고(③), 더 푸른 미래로 주민들이 더 행복·건강해진다(⑤)고 하여 모두 일치한다. 그러나 나무 심기 프로젝트는 'remained on track(순조롭게 진행 중)'이라 했으므로, 또 다른 가뭄으로 중단되었다는 ④는 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-73a019b067",
+"typeId": "eng-h1-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIn the 19th century, the Industrial Revolution caused a sharp rise in factory production in the United States. As the demand for workers grew, many new positions were filled by children. By 1900, about twenty percent of all children in the United States were employed, and some of those working in factories were only four years old. Factory owners preferred child workers for several reasons. For example, children could be paid less than adult workers, and they were also less likely to go on strike.",
+"choices": [
+"The Industrial Revolution caused factory production in the U.S. to drop sharply.",
+"By 1900, all children in the United States were employed in factories.",
+"Every child working in a factory was at least ten years old.",
+"Factory owners paid children more than they paid adult workers.",
+"One reason owners hired children was that they were less likely to go on strike."
+],
+"answer": "⑤",
+"solution": "산업혁명으로 공장 생산이 '급증'했고 1900년에 전체 아동의 '약 20%'가 고용되었으며, 일부는 겨우 네 살이었다. 공장주가 아이를 선호한 이유로 임금이 적고 '파업할 가능성이 낮다'는 점이 제시된다. 따라서 ⑤가 일치한다. ①②③④는 본문과 반대이거나 사실과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2f272e0ebf",
+"typeId": "eng-h1-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nNoah: These days, more and more teenagers get their news from social media instead of newspapers or TV.\nMia: I like that change. Social media makes it faster and easier to find and share news.\nRyan: I agree it's convenient, but people often share stories without checking whether they're true, so false information can spread quickly.\nEmma: Exactly. That's why I still trust traditional news sources more. We shouldn't pass along news online before making sure it is accurate.",
+"choices": [
+"Noah says teenagers increasingly get news from social media rather than newspapers or TV.",
+"Mia thinks social media has made finding and sharing news faster and easier.",
+"Ryan argues that social media is too slow for sharing news quickly.",
+"Ryan is worried that false information can spread quickly on social media.",
+"Emma trusts traditional news sources and warns against sharing unverified news online."
+],
+"answer": "③",
+"solution": "Ryan은 소셜미디어가 '편리하다(convenient)'는 점에는 동의하면서 '거짓 정보가 빠르게 퍼진다'는 부정적 면을 지적한다. 속도가 느리다고 말한 적은 없으므로 ③이 일치하지 않는다. 나머지 선지는 각 화자의 말과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-904ba38e8f",
+"typeId": "eng-h1-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn the 1880s, industry began to grow rapidly along the Cuyahoga River in the city of Cleveland. This industrial growth provided steady jobs to people in the area. Meanwhile, steel mills and factories started dumping large amounts of waste into the river. Although the river became polluted, most people simply regarded this as a sign of the area's economic success. In June 1969, the polluted river caught fire, but few people in Cleveland cared. This was because fires had been recorded on the Cuyahoga more than ten times before, and some of them had been much worse.",
+"choices": [
+"Industry grew rapidly along the Cuyahoga River in the 1880s.",
+"The industrial growth provided steady jobs to people in the area.",
+"Steel mills and factories dumped large amounts of waste into the river.",
+"Most people saw the polluted river as a serious warning and demanded immediate change.",
+"The 1969 fire drew little attention because earlier fires had been worse."
+],
+"answer": "④",
+"solution": "본문에서 대부분의 사람들은 오염된 강을 '그 지역 경제 성공의 신호'로 여겼고 1969년 화재에도 관심이 거의 없었다. 따라서 '심각한 경고로 보고 즉각적 변화를 요구했다'는 ④는 일치하지 않는다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e525bb79c2",
+"typeId": "eng-h1-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nLewis Hine, a teacher and photographer, wanted to reveal how cruel the child labor system was. So he quit his teaching job and started to work for the National Child Labor Committee as an investigative photographer. He gained access to factories by pretending to have different jobs like insurance agent or fire inspector. Once inside, he would photograph the children working there. He would also ask their names and ages and record information about their living and working conditions. From 1908 to 1912, he secretly gathered information and took photographs to expose factory owners who were taking advantage of helpless children.",
+"choices": [
+"What job did Lewis Hine have before working for the National Child Labor Committee?",
+"For what organization did Hine work as an investigative photographer?",
+"How did Hine manage to get inside the factories?",
+"During which years did Hine secretly gather information and take photographs?",
+"How many children in total did Hine photograph during his investigation?"
+],
+"answer": "⑤",
+"solution": "본문에 Hine이 원래 교사(①)였고, National Child Labor Committee에서 일했으며(②), 보험 설계사·화재 조사관 등으로 위장해 들어갔고(③), 1908년부터 1912년까지 활동한(④) 사실이 나온다. 그러나 그가 '총 몇 명의 아이를 촬영했는지'는 언급되지 않으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f3b84d619c",
+"typeId": "eng-h1-b02-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 가장 바르게 이해한 사람은?\n\nThe 1969 Cuyahoga River fire soon became famous, thanks to an article published in Time magazine that year. The article featured a shocking photograph of flames and smoke rising from the river. However, this was not a photograph of the 1969 fire, which was put out so quickly that nobody took a picture of it. In fact, it was a picture of a much worse fire that had occurred on the river several years earlier. Still, the image had a great impact on people. More and more Americans became aware of the need to protect the environment, and the shocking image sparked public anger about water pollution. As a result, the fire became a symbol of pollution, and a national environmental event held on April 22, 1970 later became known as the first Earth Day.",
+"choices": [
+"Jisu: The photograph in Time magazine was an actual picture of the 1969 fire.",
+"Minho: The 1969 fire was photographed because it kept burning for a long time.",
+"Yuna: The famous photograph actually showed an earlier, more serious fire on the river.",
+"Sora: The image had almost no effect on how Americans viewed water pollution.",
+"Dohun: The first Earth Day was held several years before the 1969 fire."
+],
+"answer": "③",
+"solution": "Time지의 충격적 사진은 1969년 화재가 아니라 '몇 년 전에 일어난 더 심각한 화재'를 찍은 것이다. 따라서 ③이 옳다. 1969년 화재는 빨리 진화되어 사진이 없고(①② 오답), 그 이미지가 큰 영향을 주었으며(④ 오답), 지구의 날 행사는 1969년 '이후'인 1970년에 열렸다(⑤ 오답).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a451238e60",
+"typeId": "eng-h1-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 제목으로 알맞은 것은?\n\nWe tried to practice once a week through a video chat app, but it wasn't easy. We all lived in different time zones, so finding a time that suited everyone was hard. The app also had audio problems that made us out of sync. Instead of giving up, we came up with a new idea. We decided to build our songs one part at a time, as if in a virtual music factory. First I played the melody on my keyboard and sent it to Singaporean Sam. He added his singing and passed it on to American Sam, who put in his guitar part. Finally, Samantha completed the song with her drums.",
+"choices": [
+"① Giving Up Our Dream of a Band",
+"② A Clever Way to Make Music from Afar",
+"③ The Best Time Zone for Online Practice",
+"④ How to Fix Audio Problems in Video Apps",
+"⑤ Learning to Play the Keyboard Online"
+],
+"answer": "②",
+"solution": "시차와 음질 문제로 함께 연습하기 어려웠지만 포기하지 않고 각자 자기 파트를 차례로 녹음해 노래를 완성하는 '가상 음악 공장' 방식을 고안했다는 글이다. 멀리 떨어진 멤버들이 음악을 만들어 낸 영리한 방법을 담고 있으므로 제목으로는 ②가 가장 알맞다. ③④⑤는 글의 세부 소재일 뿐이고 ①은 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-fff7d25528",
+"typeId": "eng-h1-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 알맞은 것은?\n\nWhen I searched \"Sam Lee\" on a social media website, I was amazed to find so many people with that name all over the world. Just for fun, I sent friend requests to several of them, and many accepted. As I looked through their profiles, I noticed that a number of these Sam Lees loved music. One was a Singaporean who enjoyed singing, another was a Canadian drummer, and another was an American guitarist. People who had nothing in common but a name turned out to share the same passion.",
+"choices": [
+"① the difficulty of finding real friends online",
+"② how a common last name became popular worldwide",
+"③ strangers who share the same name and a love of music",
+"④ the best way to search for musicians on social media",
+"⑤ why so many people around the world are named Sam Lee"
+],
+"answer": "③",
+"solution": "'Sam Lee'라는 같은 이름을 가진 세계 각지의 사람들이 음악이라는 공통의 관심사를 가지고 있었다는 내용이다. 따라서 주제로는 '같은 이름과 음악을 향한 사랑을 공유하는 낯선 이들'인 ③이 알맞다. 나머지는 글에 언급되지 않았거나 세부 정보에 불과하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-46f0832ec5",
+"typeId": "eng-h1-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 요지로 알맞은 것은?\n\nHaving a large number of friends is not always the best thing. True friendships are built over time, usually with the people you see most often. Such friends know the real you and let you be yourself. Rather than always chasing after new friends, it is wiser to think about how to treasure the ones you already have. What matters in friendship is not how many friends you have, but how much they mean to you.",
+"choices": [
+"① 새로운 친구를 많이 사귀는 것이 가장 중요하다.",
+"② 친구와 자주 연락해야 관계가 오래 유지된다.",
+"③ 친구의 수보다 친구의 소중함에 집중해야 한다.",
+"④ 가까운 친구일수록 서로의 비밀을 지켜 줘야 한다.",
+"⑤ 오랜 시간을 함께 보내야 진정한 친구가 될 수 있다."
+],
+"answer": "③",
+"solution": "친구가 많다고 늘 좋은 것은 아니며, 새 친구를 쫓기보다 이미 있는 친구를 소중히 여겨야 한다고 말한다. 마지막 문장에서 중요한 것은 친구의 '수'가 아니라 그들이 주는 '의미'라고 못 박고 있으므로 요지는 ③이다. ⑤는 세부 내용일 뿐 글 전체의 주장이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-aec8b5fd86",
+"typeId": "eng-h1-b02-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 아래와 같이 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nWhen it came to choosing songs, the members of our band took turns. Because each of us prefers a different genre and comes from a different culture, we all ended up learning a lot about various kinds of music. Building each song part by part was not always easy, but it was interesting and a lot of fun. Through this process, we grew closer and discovered music we had never known before.\n\nSince the band members came from different cultures and (A)__________ different genres, taking turns to choose songs helped them (B)__________ many new kinds of music while growing closer.",
+"choices": [
+"① avoided – ignore",
+"② enjoyed – discover",
+"③ disliked – reject",
+"④ created – forget",
+"⑤ shared – avoid"
+],
+"answer": "②",
+"solution": "각 멤버가 서로 다른 문화 출신이고 서로 다른 장르를 '좋아했기(enjoyed)' 때문에, 돌아가며 곡을 고르는 과정에서 새로운 음악을 많이 '발견하게(discover)' 되었다는 흐름이다. 따라서 (A)-(B)는 enjoyed–discover인 ②가 알맞다. 나머지는 글의 긍정적 결과와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-40a252decf",
+"typeId": "eng-h1-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nAlthough the new residents would have to pay for these renovations, the government’s plan soon attracted many applicants. Apparently, it was not just the idea of one-euro apartments that people found attractive. They were also excited by the opportunity to use their creativity to improve the building.\nIn the end, 42 new families moved into Wallisblok. The government’s bold plan was a success. The residents transformed the old, worn-out building into 42 unique apartments with a community garden and rooftop terrace. The surrounding area soon began to improve as well. Today, Wallisblok is one of the most desirable places to live in Rotterdam.",
+"choices": [
+"정부의 대담한 계획은 주민들의 수리비 부담 때문에 실패로 끝났다.",
+"싼 가격뿐 아니라 창의성을 발휘할 기회가 주민들의 참여를 이끌어 건물과 지역이 되살아났다.",
+"낡은 건물은 허물고 새로 짓는 것이 가장 효율적인 해결책이다.",
+"공동 정원과 옥상 테라스는 아파트의 가치를 결정하는 가장 중요한 요소이다.",
+"로테르담에는 새로 이사 오는 가족을 위한 주택이 부족하다."
+],
+"answer": "②",
+"solution": "사람들은 1유로라는 가격뿐 아니라 창의성을 발휘해 건물을 개선할 기회에도 끌렸고, 그 결과 42가구가 낡은 건물을 개성 있는 아파트로 바꾸고 주변 지역까지 좋아졌다는 내용이므로 ②가 요지이다. ①은 계획이 성공했다는 본문과 반대이고, ④는 세부 내용일 뿐이다. ③·⑤는 본문에 나오지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7ac8ba6c9a",
+"typeId": "eng-h1-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe architects created a small community that includes creative workspaces, studios, meeting rooms, cultural spaces, and even a café, all by upcycling the boats. Then, to connect the boats, wooden paths were built. In addition, special plants that purify polluted soil were planted across the site. Today, some people come to De Ceuvel to test new sustainable technologies such as bio-filters and water reuse systems. Many others come to experience this successful revitalization project in person.\nDe Ceuvel is now known as one of the most active playgrounds for innovative green technology in all of Amsterdam. At the end of the lease, the project will also leave behind a more valuable piece of land for the next people who use it.",
+"choices": [
+"Old Boats: The Future of Ocean Travel",
+"Why Cafés Are Popular in Amsterdam",
+"The High Cost of Cleaning Polluted Soil",
+"De Ceuvel: From Polluted Shipyard to Green Innovation Hub",
+"How to Build Strong Foundations on Oily Mud"
+],
+"answer": "④",
+"solution": "건축가들이 낡은 배를 업사이클링해 작은 공동체를 만들고 오염된 땅을 정화하는 식물을 심어, De Ceuvel이 암스테르담에서 친환경 기술이 가장 활발하게 시도되는 곳이 되었다는 내용이다. 따라서 ④ '오염된 조선소에서 친환경 혁신의 중심지로'가 제목으로 알맞다. ①·②·③은 본문에 없거나 일부 낱말만 가져온 오답이고, ⑤는 진흙 위에 기초를 세울 수 없었다는 사실과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-eb3e68c07b",
+"typeId": "eng-h1-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nIn the early 20th century, there was an area in the northern part of Amsterdam that was full of shipyards and factories. Over time, the shipyards closed down, and the work once done at the factories was moved abroad. As a result, the area was left abandoned and polluted for years.\nWanting to do something to improve the area, the city purchased an abandoned shipyard called De Ceuvel. However, city officials did not know what to do with it. So they turned to the public for help by asking for plans that would achieve two primary goals. First, the plan had to include a method to clean up the land and turn it into a sustainable development. Second, it had to suggest a way to transform the site into a creative workspace.",
+"choices": [
+"버려지고 오염된 지역을 개선하려고 시가 시민들에게 계획을 요청한 과정",
+"20세기 초 암스테르담 조선업이 발전해 온 과정",
+"공장의 해외 이전이 네덜란드 경제에 미친 영향",
+"시 공무원들이 일하는 방식의 문제점",
+"창의적인 작업 공간을 설계하는 원리"
+],
+"answer": "①",
+"solution": "조선소와 공장이 사라진 뒤 버려지고 오염된 지역을 개선하려고, 시가 De Ceuvel을 사들이고 두 가지 목표를 이룰 계획을 시민들에게 요청했다는 내용이므로 ①이 주제이다. ②·③은 글 앞부분의 배경 설명만 키운 오답이다. ④·⑤는 본문에서 다루지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-361ec92b88",
+"typeId": "eng-h1-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nFor years, the neighborhood was known for its high crime rates. Many apartments in Wallisblok were abandoned and then taken over by people who lived in them illegally. At first, the local government thought that the best solution was simply to tear the building down and build a new one in its place. However, having a limited budget, the government was unable to do so and had to come up with a new plan. The plan was to sell the empty apartments for one euro each. The only condition was that people who bought these apartments needed to renovate them.\nAlthough the new residents would have to pay for these renovations, the government’s plan soon attracted many applicants. Apparently, it was not just the idea of one-euro apartments that people found attractive. They were also excited by the opportunity to use their creativity to improve the building.\nIn the end, 42 new families moved into Wallisblok. The government’s bold plan was a success. The residents transformed the old, worn-out building into 42 unique apartments with a community garden and rooftop terrace. The surrounding area soon began to improve as well. Today, Wallisblok is one of the most desirable places to live in Rotterdam.\n\n→ Because it could not afford a new building, the government sold empty apartments for one euro on the condition that buyers would (A)_______ them, and the residents’ creativity turned Wallisblok into a(n) (B)_______ place to live.\n\n   (A)            (B)",
+"choices": [
+"demolish …… desirable",
+"renovate …… dangerous",
+"renovate …… desirable",
+"rent …… crowded",
+"abandon …… unpleasant"
+],
+"answer": "③",
+"solution": "정부는 예산이 부족해 건물을 새로 지을 수 없었으므로, 아파트를 1유로에 팔면서 구매자가 직접 수리해야 한다는 조건을 붙였다. 따라서 (A)에는 renovate가 들어간다. 주민들의 창의성 덕분에 Wallisblok은 로테르담에서 가장 살고 싶은 곳 중 하나가 되었으므로 (B)에는 desirable이 알맞다. ①의 demolish(철거하다)는 정부가 포기한 처음 방안이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8beacd555f",
+"typeId": "eng-h1-b02-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nDuring World War II, there was a group of people who risked everything to protect priceless works of art from ruin. In 1943, around 345 people from 14 different Allied nations* came together to form the Monuments, Fine Arts, and Archives (MFAA) program. They were not trained soldiers but scholars and experts of various kinds, such as professors, historians, and architects. These brave men and women volunteered to protect Europe's cultural heritage and became known as the \"Monuments Men.\"\n*Allied nations (1, 2차 세계대전 때의) 연합국",
+"choices": [
+"전쟁 중에는 예술 작품 보호보다 군사 작전이 우선되어야 한다.",
+"연합국 군인들은 예술 작품을 보호하기 위해 특수 훈련을 받았다.",
+"다양한 분야의 전문가들이 유럽의 문화유산을 지키기 위해 자원하여 모뉴먼츠 맨이 되었다.",
+"제2차 세계대전 중 많은 학자들이 전쟁을 피해 유럽을 떠났다.",
+"1943년에 14개 연합국이 모여 새로운 군사 동맹을 결성했다."
+],
+"answer": "③",
+"solution": "이 글은 교수, 역사가, 건축가 등 여러 분야의 전문가들이 MFAA 프로그램을 만들고, 유럽의 문화유산을 지키는 일에 자원해 '모뉴먼츠 맨'으로 알려지게 되었다는 내용이다. 이들은 훈련받은 군인이 아니었다고 했으므로 ②는 글과 맞지 않는다. ⑤처럼 군사 동맹을 맺었다는 내용도 글에 없다. 따라서 요지는 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c080f10f0c",
+"typeId": "eng-h1-b02-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nDid you know that there are over 7,000 languages currently being used around the world? Most of these languages are spoken by very small groups of people, and half of them could disappear within the next generation. This would be a great loss because language plays a big role in connecting people's identity to their culture. This is why some organizations work to preserve them. For example, a nonprofit organization called Wikitongues has set the goal of preserving all languages that are in danger of being lost. The organization works to achieve this by recording videos of individuals speaking these languages and making mother-tongue resources more accessible.",
+"choices": [
+"How Languages Shape National Borders",
+"Saving Endangered Languages Before They Disappear",
+"Why Everyone Should Learn a Second Language",
+"The History of the World's 7,000 Languages",
+"Making Videos: A New Hobby for Language Learners"
+],
+"answer": "②",
+"solution": "이 글은 많은 언어가 다음 세대 안에 사라질 위기에 있으며, Wikitongues 같은 단체가 이런 언어를 보존하려고 노력한다는 내용이다. 따라서 제목으로는 '사라지기 전에 소멸 위기 언어 구하기'가 알맞다. ④는 7,000이라는 숫자만 따온 오답이고, ⑤는 영상 녹화라는 세부 내용만 따온 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cef06062c2",
+"typeId": "eng-h1-b02-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nOne of the largest collections of stolen items was hidden in the salt mines of Altaussee, Austria. Upon discovering its location, some of the Monuments Men rushed to the mines. They hoped to recover everything before it was too late.\nMeanwhile, the Nazi leader who was in charge of the area tried to destroy everything by setting off large explosives inside the mines. This could have been disastrous. Luckily, some local miners found the explosives in the mines and came up with a plan to protect their livelihood. They secretly removed the large explosives and put smaller ones at the entrances. Once they went off, the Nazi leader believed that everything was destroyed. However, while the small explosions sealed off the entrances, they left the rest of the mines and the works of art unharmed.",
+"choices": [
+"How the Nazis Built Secret Mines in Austria",
+"The Miners' Clever Plan That Saved Hidden Treasures",
+"A Failed Attempt to Find the Altaussee Salt Mines",
+"The Monuments Men's Explosion Plan Against the Nazis",
+"Why Salt Mines Were the Best Place to Store Art"
+],
+"answer": "②",
+"solution": "나치 지도자가 대형 폭발물로 광산을 파괴하려 했지만, 지역 광부들이 폭발물을 몰래 작은 것으로 바꿔 입구만 막히게 했다. 그 덕분에 광산 안의 예술 작품들은 무사할 수 있었다는 것이 글의 중심 내용이다. ④는 폭발물 계획을 세운 주체를 모뉴먼츠 맨으로 바꾼 함정이다. ⑤처럼 소금 광산이 최적의 보관 장소였던 이유는 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0e94faf050",
+"typeId": "eng-h1-b02-u6m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThe efforts of the Monuments Men did not end with the war. For several years, they continued the work of recovering cultural treasures and identifying where they had been stolen from. In the end, the Monuments Men returned more than five million works of art and objects of cultural importance to their places of origin.\nNot everything that was stolen by the Nazis has been found, but what the Monuments Men accomplished is truly amazing. Without this determined group, the search for stolen works of art might never have begun. In addition, countless historical and cultural landmarks would have been lost forever due to the destruction of war. It is worth remembering the Monuments Men's contribution to the preservation of cultural heritage. Thanks to their efforts, many incredible cultural sites and works of art have survived and can still be appreciated to this day.",
+"choices": [
+"나치가 약탈한 예술 작품은 결국 모두 원래 장소로 돌아갔다.",
+"문화유산 보존에 기여한 모뉴먼츠 맨의 업적은 기억할 가치가 있다.",
+"전쟁이 끝난 뒤에는 문화재 복원보다 도시 재건이 우선이다.",
+"예술 작품을 제대로 감상하려면 작품의 출처를 알아야 한다.",
+"전쟁으로 사라진 랜드마크는 다시는 복원될 수 없다."
+],
+"answer": "②",
+"solution": "필자는 모뉴먼츠 맨이 전쟁 후에도 수백만 점의 문화재를 되찾아 돌려보냈다고 말한다. 그리고 'It is worth remembering ~' 문장으로 이들의 공헌을 기억할 가치가 있다고 강조한다. ①은 'Not everything ... has been found'와 맞지 않는다. ⑤는 가정법 문장의 내용을 지나치게 일반화한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6a892b101e",
+"typeId": "eng-h1-b02-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nThe Monuments Men thought that it would take about one year to transport everything they found to a safe location. However, because control of the area was going to change at the end of the war, they would have access to the mines for just two months. With insufficient packing supplies and only a few trucks, the transporting mission seemed impossible. Not only that, but food was in short supply. Even without eating proper meals, they worked up to twenty hours a day. They used coats and gas masks as packing materials and did everything they could to accomplish this vital mission in time.\nIn the end, the Monuments Men succeeded in rescuing thousands of stolen works of art, including important pieces such as Jan van Eyck's Adoration of the Mystic Lamb, Johannes Vermeer's The Astronomer, and Michelangelo's Madonna of Bruges.\n\n→ Although the Monuments Men faced (A)__________ circumstances such as limited time and a lack of supplies and food, their (B)__________ efforts led to the successful rescue of thousands of stolen artworks.\n\n   (A)            (B)",
+"choices": [
+"favorable …… tireless",
+"difficult …… half-hearted",
+"harsh …… devoted",
+"comfortable …… careless",
+"challenging …… limited"
+],
+"answer": "③",
+"solution": "모뉴먼츠 맨에게는 두 달이라는 짧은 시간만 있었고, 포장재와 트럭, 식량도 모자랐다. 그러므로 (A)에는 '혹독한(harsh)' 상황이 알맞다. 그런데도 그들은 하루 최대 20시간씩 일하며 최선을 다했으므로, (B)에는 '헌신적인(devoted)'이 알맞다. ②와 ⑤는 (A)는 맞지만 (B)가 글의 내용과 반대이고, ①은 (B)는 맞지만 (A)가 틀린 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cb17e01974",
+"typeId": "eng-h1-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nWould you like to contribute to research and make a difference in the world? Join Eco Trackers to participate in environmental citizen science projects! Scientists need data, but it’s hard for them to collect the information they need alone. Our website allows people from around the world to collect data while they work together on research projects. Do you enjoy hiking? Help scientists study air quality by taking photographs from the tops of mountains. How about gardening? Try growing crops in your community garden and check your area’s soil quality. You can even help scientists while looking at the stars! Just record light pollution by reporting how visible stars are. Come and join Eco Trackers today!",
+"choices": [
+"과학자들은 혼자서도 필요한 자료를 충분히 모을 수 있다.",
+"일상적인 활동을 통해 누구나 환경 연구에 참여할 수 있다.",
+"등산은 대기 질을 개선하는 가장 효과적인 방법이다.",
+"지역 공동체 정원은 토양 오염의 주요 원인이다.",
+"별을 관찰하려면 전문적인 장비가 반드시 필요하다."
+],
+"answer": "②",
+"solution": "이 글은 등산, 정원 가꾸기, 별 관찰 같은 일상 활동으로 과학자들의 환경 연구용 자료 수집을 도울 수 있다며 Eco Trackers 참여를 권하고 있다. 따라서 요지는 ②이다. ①은 과학자 혼자서는 자료를 모으기 어렵다는 본문 내용과 반대이고, ③~⑤는 본문에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2cb1752c63",
+"typeId": "eng-h1-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nElves have been an important part of Iceland’s folk culture and myths for centuries, and most Icelanders like to imagine that elves exist among them. Icelanders’ interest in these imaginary beings gives them an emotional connection to nature. In Icelandic culture, it is important for people to respect and protect rocks and hills because they are homes for elves. Therefore, people think twice about digging up the country’s beautiful natural landscapes. Also, plans for the construction of roads, factories, and bridges are sometimes changed. Thanks to the elves of Iceland, nature is being protected!",
+"choices": [
+"아이슬란드 사람들은 요정의 존재를 과학적으로 증명했다.",
+"아이슬란드의 도로 건설은 자연을 크게 훼손해 왔다.",
+"요정에 대한 믿음이 아이슬란드의 자연 보호에 기여한다.",
+"아이슬란드의 요정 신화는 최근에 새로 만들어졌다.",
+"아이슬란드 사람들은 바위와 언덕을 관광 자원으로 개발한다."
+],
+"answer": "③",
+"solution": "아이슬란드 사람들은 바위와 언덕을 요정의 집으로 여겨 존중하고 보호하며, 이 때문에 건설 계획이 바뀌기도 한다. 마지막 문장 ‘Thanks to the elves of Iceland, nature is being protected!’가 요지를 담고 있으므로 정답은 ③이다. ①, ④는 본문 내용과 맞지 않고, ②, ⑤는 본문에서 다루지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5b4cfa68c0",
+"typeId": "eng-h1-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nMeanwhile, the Urban Forest Strategy’s tree planting project has remained on track, and canopy cover is predicted to increase from 23 percent in 2012 to 40 percent by the year 2040. Melbourne’s urban forest strategy will help keep the city cool. It will also allow residents to interact with nature and engage in outdoor activities every day. As a result, residents will be happier and healthier as they move toward a greener future.",
+"choices": [
+"Why Melbourne Stopped Planting Trees",
+"The Causes of Australia’s Long Drought",
+"How to Write an Email to a Tree",
+"The Dangers of Outdoor Activities in Summer",
+"A Greener and Healthier Future for Melbourne"
+],
+"answer": "⑤",
+"solution": "나무 심기 사업이 계획대로 진행되어 수관 피복률이 늘어나면, 도시가 시원해지고 주민들이 더 행복하고 건강해질 것이라는 내용이다. 따라서 제목으로는 ⑤가 알맞다. ①은 사업이 순조롭게 진행 중(on track)이라는 내용과 반대이고, ②~④는 이 글의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7a8dec2c48",
+"typeId": "eng-h1-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe story behind these emails begins with Melbourne’s Urban Forest Strategy plan, a response to Australia’s millennium drought. This drought lasted from the late 1990s to 2010. By the time it ended, 40 percent of the city’s 77,000 trees were in a state of declining health. Furthermore, the overall number of trees was decreasing.\nAs a result, the amount of shade provided by trees within the city, also known as canopy cover, decreased. The loss of canopy cover is a major threat to urban environments because it raises temperatures. Higher temperatures in cities can be dangerous for residents, as they increase the risk of heat exhaustion*. They also lead to a rise in the use of air conditioning. This speeds up climate change by increasing energy consumption and greenhouse gas emissions.\n*heat exhaustion 열사병",
+"choices": [
+"Ways to Treat Heat Exhaustion in Cities",
+"Melbourne’s Goal of Planting 3,000 Trees a Year",
+"How Air Conditioning Reduces Greenhouse Gases",
+"A Long Drought and the Loss of Melbourne’s Shade",
+"The Popularity of Emails Sent to Trees"
+],
+"answer": "④",
+"solution": "이 글은 밀레니엄 가뭄으로 멜버른의 나무가 병들고 줄어 수관 피복(그늘)이 감소했고, 그 결과 기온 상승과 같은 문제가 생겼다는 내용이다. 따라서 제목은 ④가 알맞다. ②는 이 글 다음에 나오는 대책 내용이고, ③은 냉방이 온실가스 배출을 늘린다는 본문과 반대이며, ①과 ⑤는 중심 내용에서 벗어난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5a6e4967d6",
+"typeId": "eng-h1-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nAfter the map was posted online, something unexpected happened. The trees started receiving thousands of emails, but many of them were not reports about damage or poor health. Instead, they were love letters, poems, greetings, and messages expressing appreciation for the trees. The tree mail phenomenon quickly spread, and people all over the world started sending messages.\nThe global popularity of the tree mail phenomenon reminds us that we are all connected to nature, and we are all involved in building a more sustainable world. Without collective action from people across the globe, we would have little hope of saving our planet for future generations.\n\n→ Although the tree emails were expected to be used for (A)________ problems with trees, people around the world sent messages of (B)________ to the trees, which shows that we are all connected to nature.",
+"choices": [
+"reporting …… affection",
+"planting …… complaint",
+"reporting …… anger",
+"cutting …… affection",
+"measuring …… fear"
+],
+"answer": "①",
+"solution": "이메일은 원래 나무의 손상이나 건강 문제를 ‘보고하는’(reporting) 용도로 예상되었지만, 실제로는 연애편지, 시, 감사의 메시지 같은 ‘애정’(affection)을 담은 글이 쏟아졌다. 따라서 정답은 ①이다. ③의 anger와 ⑤의 fear는 감사와 사랑을 표현했다는 본문과 맞지 않고, ②와 ④의 (A)는 이메일의 원래 용도가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f6f8eb35ed",
+"typeId": "eng-h1-b02-u2m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nSomething had to be done to deal with the loss of Melbourne’s trees. In 2012, the city government announced its Urban Forest Strategy plan. It set the ambitious goal of planting more than 3,000 trees every year for the next twenty years. The plan also involved the creation of an online map called the Urban Forest Visual.\nThis interactive map shows the location of every single tree in the city’s parks and along its roads. It uses colors and symbols to indicate each tree’s age and genus. Also, users can click on a tree to find out its species and even send it an email. At first, the “Email this tree” function had a specific purpose. It was designed to allow people to easily inform council workers about trees that were damaged or in poor health.",
+"choices": [
+"reasons why Melbourne’s trees were losing their health",
+"Melbourne’s plan to plant trees and create a tree map",
+"the dangers of sending emails to council workers",
+"the history of tree species in Australia’s parks",
+"ways citizens can volunteer to measure trees"
+],
+"answer": "②",
+"solution": "멜버른시가 나무 감소에 대응해 해마다 3,000그루 이상의 나무를 심는 도시 숲 전략을 발표하고, 그 일환으로 온라인 나무 지도인 Urban Forest Visual을 만든 내용이다. 따라서 주제는 ②이다. ①은 이 글 앞부분(가뭄)에서 다루는 내용이고, ⑤는 이후 글의 내용이며, ③과 ④는 본문과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-43c6671929",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nHost: That’s really amazing! Thank you for your time, Dr. Chibanda. Now let’s hear from one of the grandmothers who volunteer for the program. Can you introduce yourself and tell us how you got involved with the Friendship Bench program?\nGrandma Moyo: Hello, my name is Judith Moyo, but people call me Grandma Moyo. I’m 76 years old, and I have been volunteering for the Friendship Bench program for about eight years. I joined the program because many people in my community struggle with mental health problems, and I wanted to do something about it. I knew that I could help heal their wounded hearts by supporting them.",
+"choices": [
+"① the health problems that many elderly people suffer from",
+"② how to become a psychiatrist after retiring",
+"③ why Grandma Moyo started volunteering for the Friendship Bench program",
+"④ the history of mental health problems in Zimbabwe",
+"⑤ the difficulties of volunteering at an old age"
+],
+"answer": "③",
+"solution": "Grandma Moyo는 자기를 소개하고, 지역 사람들이 정신 건강 문제로 힘들어해서 무언가 하고 싶었기 때문에 프로그램에 참여했다고 말한다. 그러므로 주제는 ③ '그녀가 우정 벤치 프로그램에서 봉사를 시작한 이유'이다. ①, ④, ⑤는 글에 나오지 않는 내용이고, ②는 정신과 의사인 Dr. Chibanda와 헷갈리게 만든 선지다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4ffdbbee41",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nHost: That’s interesting! What happens after patients complete their sessions with the grandmothers?\nDr. Chibanda: When the sessions with the grandmothers are over, patients are encouraged to join a community support group made up of former patients of the program. The members of these groups can easily relate to and support one another. This is because most of them come from the same community and have experienced similar struggles.\nHost: That sounds like a great way to continue the support and build a sense of community.",
+"choices": [
+"① How to Find a Good Psychiatrist",
+"② Support Groups: Continuing Care Through Shared Experiences",
+"③ Why Patients Stop Visiting the Friendship Benches",
+"④ Training Sessions for Grandmother Counselors",
+"⑤ Online Apps Designed for Former Patients"
+],
+"answer": "②",
+"solution": "할머니들과의 상담이 끝난 환자들은 예전 환자들로 이루어진 지역 사회 지원 모임에 참여하게 된다. 같은 지역 출신이고 비슷한 어려움을 겪었기 때문에 서로 공감하고 도울 수 있다는 내용이다. 따라서 제목은 ②가 알맞다. ⑤의 앱은 이 지문에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-56023eac0c",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nHost: That’s very kind of you. Can you tell us about your experience as a grandmother for the Friendship Bench program?\nGrandma Moyo: It’s been wonderful. Seeking help for mental health problems is nothing to be ashamed of. I’ve seen how it can make a difference in people’s lives. One patient of mine, a nineteen-year-old girl, was going through a difficult time after her mom passed away. I counseled her and helped her begin her recovery journey. Now her life is back on track, and she has even started her own business! Cases like this make me so proud to be part of the program. It is such a rewarding experience to help people make positive changes in their lives.",
+"choices": [
+"① 정신 건강 문제로 도움을 구하는 것은 부끄러운 일이므로 신중해야 한다.",
+"② 가족을 잃은 슬픔은 시간이 지나면 저절로 치유된다.",
+"③ 젊은이들은 창업을 통해 어려움을 극복해야 한다.",
+"④ 사람들이 삶에서 긍정적인 변화를 이루도록 돕는 것은 보람 있는 일이다.",
+"⑤ 상담은 전문 의사만이 효과적으로 할 수 있다."
+],
+"answer": "④",
+"solution": "Grandma Moyo는 자신이 상담한 19세 소녀가 회복한 사례를 들고, 마지막 문장에서 사람들이 긍정적인 변화를 만들도록 돕는 것이 정말 보람 있는 경험이라고 말한다. 따라서 요지는 ④이다. ①은 '부끄러워할 일이 아니다'라는 본문 내용과 반대이고, ③은 사례의 세부 내용을 지나치게 일반화한 선지다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1f45224f7e",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nHost: Oh, so that was the beginning of it. Could you explain to us how the Friendship Bench program works?\nDr. Chibanda: Certainly. The program was created as a way to provide accessible mental health services. It offers talk therapy sessions to people dealing with issues such as depression or anxiety. The sessions are free and are provided by respected elderly women from the community. These women, called “grandmothers,” volunteer to sit with patients at the benches, listen to their stories, and provide them with emotional support.\nHost: What a wonderful idea! How did these amazing grandmothers become a part of your program?\nDr. Chibanda: Grandmothers were chosen for our program because they are deeply connected to the community. Moreover, they have all the qualities of a counselor, such as excellent listening skills, empathy, and the ability to engage in meaningful discussions. They are also very reliable, which is important for our efforts to support mental health.\n\n[요약]\nThe Friendship Bench program provides free talk therapy, and grandmothers were selected for it because they have strong (A)__________ with the community and the (B)__________ needed to be good counselors.\n\n    (A)          (B)",
+"choices": [
+"① connections — costs",
+"② conflicts — qualities",
+"③ differences — skills",
+"④ distances — degrees",
+"⑤ connections — qualities"
+],
+"answer": "⑤",
+"solution": "할머니들은 지역 사회와 깊이 연결되어 있고(deeply connected to the community), 경청 능력과 공감 능력 같은 상담자의 자질(all the qualities of a counselor)을 모두 갖추어서 선발되었다. 따라서 (A)에는 connections, (B)에는 qualities가 들어간다. ③의 skills는 (B)에 들어갈 수 있지만 (A)의 differences가 본문과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-7b8bddc078",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nHost: On today’s show, we are going to learn about special park benches in Zimbabwe called Friendship Benches. We have two special guests. First, please welcome the founder of the Friendship Bench program, Dr. Dixon Chibanda. Can you tell us what inspired you to come up with the program?\nDr. Chibanda: Sure. The idea came from an experience I had as a psychiatrist. One of my patients had become severely depressed. However, she couldn’t get help because she was unable to afford the bus ride to the hospital. This shocked me, as I had never considered such a problem before. In fact, it is difficult for many people in Zimbabwe to pay for transportation and receive medical treatment. Furthermore, there has been a lack of psychiatrists in the country for many years. When the Friendship Bench program started in 2006, there were only eleven psychiatrists serving Zimbabwe’s population of over twelve million people. I needed to find a way to bring psychiatry into the community.",
+"choices": [
+"① the problems that led Dr. Chibanda to bring psychiatry into the community",
+"② the reasons why bus fares in Zimbabwe have increased",
+"③ the history of psychiatric hospitals in Zimbabwe",
+"④ the daily life of a psychiatrist working at a city hospital",
+"⑤ the ways patients can overcome depression on their own"
+],
+"answer": "①",
+"solution": "Dr. Chibanda는 교통비를 낼 수 없어 치료를 받지 못한 환자를 겪으면서 짐바브웨의 교통비 부담과 정신과 의사 부족 문제를 깨달았다. 그래서 정신 의학을 지역 사회로 가져갈 방법이 필요했다고 말한다. 따라서 주제는 ①이다. ②는 버스비라는 세부 소재만 따로 떼어 낸 선지이고, ③~⑤는 본문에 근거가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1a0a9f36b4",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 알맞은 말을 본문에서 찾아 각각 한 단어로 쓰시오.\n\nHost: That’s interesting! What happens after patients complete their sessions with the grandmothers?\nDr. Chibanda: When the sessions with the grandmothers are over, patients are encouraged to join a community support group made up of former patients of the program. The members of these groups can easily relate to and support one another. This is because most of them come from the same community and have experienced similar struggles.\nHost: That sounds like a great way to continue the support and build a sense of community. And the program has been incredibly successful, right?\nDr. Chibanda: That’s correct. In 2022, we provided face-to-face counseling to about 90,000 patients in Zimbabwe. Now, Friendship Benches are available in more than twenty different regions around the country. Our vision is for everyone to have a Friendship Bench within walking distance, and we are working hard to make it happen. We’ve also started expanding the program, and we now offer online counseling through an app. This has helped us reach even more people.\n\n[요약]\nAfter their sessions, patients can join community support groups of former patients who have experienced similar (A)__________. The program has grown greatly, and it now offers (B)__________ counseling through an app to reach more people.",
+"selfGrade": true,
+"answer": "(A) struggles (B) online",
+"solution": "지원 모임의 구성원들은 같은 지역 출신이고 비슷한 어려움(similar struggles)을 겪었기 때문에 서로 공감할 수 있다. 또 프로그램을 확장해 앱으로 온라인 상담(online counseling)을 제공하면서 더 많은 사람에게 닿게 되었다. 따라서 (A)는 struggles, (B)는 online이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a241b50e42",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nHost: That’s interesting! What happens after patients complete their sessions with the grandmothers?\nDr. Chibanda: When the sessions with the grandmothers are over, patients are encouraged to join a community support group made up of former patients of the program. The members of these groups can easily relate to and support one another. This is because most of them come from the same community and have experienced similar struggles.\nHost: That sounds like a great way to continue the support and build a sense of community. And the program has been incredibly successful, right?\nDr. Chibanda: That’s correct. In 2022, we provided face-to-face counseling to about 90,000 patients in Zimbabwe. Now, Friendship Benches are available in more than twenty different regions around the country. Our vision is for everyone to have a Friendship Bench within walking distance, and we are working hard to make it happen. We’ve also started expanding the program, and we now offer online counseling through an app. This has helped us reach even more people.",
+"choices": [
+"① From One Bench to the World: The Program’s Global Expansion",
+"② How Former Patients Become Grandmother Counselors",
+"③ An App That Has Replaced Face-to-Face Counseling",
+"④ Ongoing Support and Growing Reach of the Friendship Bench",
+"⑤ Why Zimbabwe Lacks Enough Mental Health Services"
+],
+"answer": "④",
+"solution": "글의 앞부분은 상담이 끝난 뒤 지원 모임을 통해 도움이 이어진다는 내용이고, 뒷부분은 국내 20여 개 지역으로의 확대와 온라인 상담 같은 프로그램의 성장을 다룬다. 이 두 내용을 모두 담은 ④가 제목으로 알맞다. ①은 확대 범위가 '나라 안(around the country)'인데 '전 세계'로 바꾼 함정이다. ③은 앱이 대면 상담을 '대체했다'고 왜곡했는데, 본문에서 앱은 대면 상담에 더해진 것이다. ②는 지원 모임 구성원(former patients)과 상담자(grandmothers)를 섞어 놓은 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-89bdabdb19",
+"typeId": "eng-h1-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nHost: That’s very kind of you. Can you tell us about your experience as a grandmother for the Friendship Bench program?\nGrandma Moyo: It’s been wonderful. Seeking help for mental health problems is nothing to be ashamed of. I’ve seen how it can make a difference in people’s lives. One patient of mine, a nineteen-year-old girl, was going through a difficult time after her mom passed away. I counseled her and helped her begin her recovery journey. Now her life is back on track, and she has even started her own business! Cases like this make me so proud to be part of the program. It is such a rewarding experience to help people make positive changes in their lives.\nHost: Thanks for sharing your experiences with us today, Grandma Moyo. It’s truly inspiring to see the influence that the Friendship Bench program has had. And it’s all thanks to the hard work of people like you and Dr. Chibanda.\n\n[요약]\nGrandma Moyo says people should not feel (A)__________ about seeking help for mental health problems, and she finds her work (B)__________ because she can see patients like a young girl recover and make positive changes in their lives.\n\n    (A)          (B)",
+"choices": [
+"① proud — rewarding",
+"② ashamed — rewarding",
+"③ ashamed — stressful",
+"④ confident — meaningless",
+"⑤ worried — difficult"
+],
+"answer": "②",
+"solution": "'Seeking help for mental health problems is nothing to be ashamed of.'에 따르면 사람들은 도움을 구하는 것을 부끄러워할(ashamed) 필요가 없다. 또 마지막 문장에서 사람들을 돕는 것이 보람 있는(rewarding) 경험이라고 했으므로 답은 ②이다. ①의 proud는 본문에 나오는 단어지만, 프로그램의 일원인 것에 대한 Moyo 자신의 감정이라서 (A)의 의미와 맞지 않는 함정이다. ③은 (A)는 맞지만 (B)가 본문 내용과 반대다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m3s0t0",
+"custom": true
 }
 ]

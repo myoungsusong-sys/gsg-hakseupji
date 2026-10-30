@@ -4299,5 +4299,195 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u6m4s0t0",
 "custom": true
+},
+{
+"id": "fill-f0921695b7",
+"typeId": "eng-h1-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe world's widespread love of coffee comes at a substantial environmental cost, as the extraction process (A)[generates / generating] significant waste. Only 0.2 percent of a coffee bean (B)[is / are] used to make coffee, with the remaining 99.8 percent disposed of as waste. So, what happens to all the waste from the coffee extraction process? Spent coffee grounds (SCGs) are classified as general waste and (C)[send / sent] to landfills.",
+"choices": [
+"generates – is – sent",
+"generates – are – send",
+"generating – is – sent",
+"generating – are – send",
+"generates – are – sent"
+],
+"answer": "①",
+"solution": "(A) 접속사 as가 이끄는 절에 주어 the extraction process만 있고 동사가 없으므로 단수 동사 generates가 알맞다. (B) 'percent of + 명사'는 of 뒤 명사에 수를 맞추는데, a coffee bean이 단수이므로 is가 알맞다. (C) and 앞의 are classified와 병렬을 이루는 수동태 (are) sent가 되어야 하므로 과거분사 sent가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-17e68e25fd",
+"typeId": "eng-h1-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nDid you know that you can grow tasty mushrooms right in your home using spent coffee grounds? Coffee grounds (A)[contain / contains] the perfect nutrients for growing mushrooms. Here is a step-by-step guide to help you (B)[get / getting] started. (…) When this happens, move the container to a bright area with indirect sunlight and cut the top off. To keep the mixture from (C)[dry / drying] out, spray it with water twice a day.",
+"choices": [
+"contains – get – dry",
+"contain – getting – drying",
+"contain – get – drying",
+"contains – getting – dry",
+"contain – get – dry"
+],
+"answer": "③",
+"solution": "(A) 주어 Coffee grounds가 복수이므로 복수 동사 contain이 알맞다. (B) help는 목적격 보어로 동사원형이나 to부정사를 쓰므로 get이 알맞고 getting은 쓸 수 없다. (C) 'keep A from -ing(A가 ~하지 못하게 하다)'에서 전치사 from 뒤에는 동명사가 와야 하므로 drying이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-856d1c69f8",
+"typeId": "eng-h1-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAn example of a circular economy in action occurs when a chain of coffee shops collaborates with an organization to collect spent coffee grounds from its shops. These grounds are processed to remove impurities and (A)[dried / drying] out. The resulting SCGs are sold to fertilizer companies, (B)[which / where] they are transformed into organic fertilizer. This fertilizer is later sold back to the coffee shop chain. The chain provides the fertilizer to local eco-friendly farmers, who then sell their produce back to the chain. The farm produce can be used to create various food items, such as rice chips and dried sweet potatoes, which (C)[is / are] sold in the chain's coffee shops.",
+"choices": [
+"dried – which – are",
+"dried – where – are",
+"drying – where – is",
+"drying – which – are",
+"dried – which – is"
+],
+"answer": "②",
+"solution": "(A) and 앞의 are processed와 병렬을 이루는 수동태 (are) dried out이어야 하므로 dried가 알맞다. (B) 뒤에 they are transformed라는 완전한 절이 오고 선행사 fertilizer companies가 장소를 나타내므로 관계부사 where가 알맞다. (C) 관계대명사 which의 선행사는 various food items(복수)이므로 are가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-61b53e1131",
+"typeId": "eng-h1-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것은?\n\nRecycled coffee grounds ⓐhave a wide range of uses, including coffee logs, fabrics for clothing and shoes, and reusable cups. Coffee logs, for instance, generate more heat and burn for a longer time than wood. Fabric ⓑmade from coffee grounds absorbs sweat, ⓒdries quickly, and provides UV protection. Reusable cups from coffee grounds not only have a visually appealing appearance but also preserve the taste of the coffee.\nKorea has shown a growing interest in recycling spent coffee grounds in recent years. The government is taking steps toward the creation of a sustainable recycling system in the coffee industry, while companies are dedicating ⓓthemselves to researching and developing new uses for coffee waste. By recycling materials such as coffee waste, individuals can also help protect the environment. With continued efforts, the recycling of used coffee grounds is expected to increase, ⓔencouraged more sustainable methods of enjoying coffee for years to come.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓔ 뒤에 목적어 more sustainable methods가 있고, 앞 절의 내용이 더 지속 가능한 방법을 '장려하는' 능동 관계이므로 분사구문은 현재분사 encouraging이 되어야 한다. ⓐ 주어 Recycled coffee grounds가 복수라서 have가 맞고, ⓑ 직물이 '만들어지는' 것이므로 과거분사 made가 맞다. ⓒ absorbs, provides와 병렬이므로 dries가 맞고, ⓓ 주어 companies와 목적어가 같으므로 재귀대명사 themselves가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-084e67e1e2",
+"typeId": "eng-h1-b06-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nB: Kate, what's on your mind? You look a bit (A)[concerned / concerning].\nG: I'm just looking at a graph of the sea level. Here, take a look.\nB: Hmm, it seems to be rising steadily but with some ups and downs.\nG: Yes, the rising sea level is becoming a problem. I'm especially worried about the people in Tuvalu in the South Pacific Ocean.\nB: What do you mean?\nG: Well, if the sea level (B)[continues / will continue] to rise, most of their land may disappear into the sea within a hundred years.\nB: Oh, really? I suppose if their land is lost, they'll lose their culture and traditions as well as their homes.\nG: Exactly. It's a shame that the rising sea level is mostly due to human activities.\nB: You're right. We should be alert to the potential dangers and (C)[take / taking] appropriate action.",
+"choices": [
+"concerning – continues – take",
+"concerned – will continue – taking",
+"concerning – will continue – take",
+"concerned – continues – take",
+"concerned – continues – taking"
+],
+"answer": "④",
+"solution": "(A) 감정을 느끼는 주체가 주어 You이므로 과거분사 concerned가 알맞다. (B) 조건을 나타내는 부사절(if절)에서는 미래의 일도 현재시제로 쓰므로 continues가 알맞다. (C) 조동사 should 뒤에서 be와 and로 병렬 연결되므로 동사원형 take가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e2f7673c97",
+"typeId": "eng-h1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSound travels as waves, (A)[that / which] spread out in all directions from a vibrating object. When these waves reach our ears, three small bones in the middle ear (B)[make / makes] the vibrations stronger. These stronger vibrations finally become signals, allowing us (C)[understand / to understand] the sound.\n\n(A)          (B)          (C)",
+"choices": [
+"that / make / to understand",
+"which / make / understand",
+"that / makes / understand",
+"which / make / to understand",
+"which / makes / to understand"
+],
+"answer": "④",
+"solution": "(A) 콤마 뒤의 계속적 용법 관계대명사 자리이므로 that은 쓸 수 없고 which가 맞다. (B) 주어 three small bones가 복수이므로 동사는 make가 되어야 한다. (C) 「allow + 목적어 + to부정사」 구조이므로 to understand가 맞다. 따라서 which / make / to understand인 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ea83f37083",
+"typeId": "eng-h1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것은?\n\nInside the headphones ⓐare microphones and noise-cancelling circuitry. The microphones pick up sounds from the outside, and the circuitry analyzes ⓑthem to produce opposite sound waves. This technology is ⓒuseful because it cancels out unwanted noise. However, it is not easy ⓓeliminating external noise completely. The technology works best for predictable sounds ⓔthat occur regularly.",
+"choices": [
+"ⓐare",
+"ⓑthem",
+"ⓒuseful",
+"ⓓeliminating",
+"ⓔthat"
+],
+"answer": "④",
+"solution": "ⓓ는 가주어 it에 대한 진주어 자리로 「it is not easy + to부정사」 구조이므로 eliminating이 아니라 to eliminate가 되어야 한다. ⓐ는 장소 부사구가 문두로 나와 주어·동사가 도치된 형태로 옳고, ⓑ them, ⓒ 형용사 보어 useful, ⓔ 복수 선행사를 받는 that occur는 모두 어법상 알맞다. 따라서 어색한 것은 ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c6f49bff91",
+"typeId": "eng-h1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFrances Gabe was an amazing American woman (A)[who / which] invented a self-cleaning house, and she actually lived in it. A network of tubes and sprayers released soapy water all over the house, and then the system automatically washed away the dirty water. I wish I (B)[can / could] live in that house. Then I would never (C)[have / having] to clean my room!\n\n(A)          (B)          (C)",
+"choices": [
+"who / can / have",
+"who / could / have",
+"who / could / having",
+"which / could / have",
+"which / can / having"
+],
+"answer": "②",
+"solution": "(A) 선행사가 사람(woman)이므로 which가 아니라 who를 써야 한다. (B) 「I wish + 가정법 과거」로 현재 사실의 반대를 소망하므로 can이 아니라 could가 맞다. (C) 조동사 would 다음에는 동사원형이 오므로 having이 아니라 have(have to clean)가 되어야 한다. 따라서 who / could / have인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bb6ce16a94",
+"typeId": "eng-h1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nThe outer ear gathers sound waves and directs them into the ear canal. The waves then reach the eardrum ⓐlocating in the middle ear. When the eardrum vibrates, these vibrations ⓑare transmitted to three small bones. These bones make the vibrations stronger and ⓒpassing them to the inner ear. Inside the inner ear ⓓare tiny hair cells, ⓔwhich generate electrical signals that travel to the brain.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ는 eardrum이 '위치되어 있는' 수동 의미이므로 locating이 아니라 과거분사 located가 되어야 한다. ⓒ는 앞의 동사 make와 and로 병렬 연결되므로 passing이 아니라 pass가 되어야 한다. ⓑ(vibrations가 전달되는 수동태 are transmitted), ⓓ(장소 부사구 도치 are tiny hair cells), ⓔ(계속적 용법 which)는 모두 옳다. 따라서 어색한 것은 ⓐ, ⓒ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-66085d40be",
+"typeId": "eng-h1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe vibrations of a sound source cause the air to vibrate and the sound to travel as waves, similar to the ripples (B)[created / creating] in a lake when you throw a stone. Sound waves can interfere with each other when they meet. Constructive interference occurs when the peaks of two waves overlap, (A)[resulting / resulted] in a louder sound. Destructive interference is (C)[what / which] noise-cancelling headphones use to produce a quieter sound.\n\n(A)          (B)          (C)",
+"choices": [
+"resulting / created / what",
+"resulting / creating / which",
+"resulted / created / what",
+"resulting / created / which",
+"resulted / creating / what"
+],
+"answer": "①",
+"solution": "(A)는 'which results in ~'의 의미인 분사구문으로 능동 관계이므로 resulting이 맞다. (B)는 ripples가 '만들어진' 수동 의미이므로 과거분사 created가 되어야 한다. (C)는 선행사가 없고 뒤의 use의 목적어가 빠진 명사절이므로 which가 아니라 what이 맞다. 따라서 resulting / created / what인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m1s0t0",
+"custom": true
 }
 ]

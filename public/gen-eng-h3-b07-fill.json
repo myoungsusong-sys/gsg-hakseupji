@@ -474,5 +474,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b07-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-71d949c537",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nA nudge is an intervention that gently guides individuals toward a desired action, without forbidding any options. For instance, if a school wants to reduce the amount of sugary drinks that students consume, making the drinks less visible than bottled water counts as a nudge. In contrast, banning sugary drinks completely is not a nudge, since it removes students' options entirely. Smartphones also use nudges: they send notifications telling users that it is time to move after the users have been inactive for a set amount of time.",
+"choices": [
+"① A nudge leads people toward a desired action without forbidding their options.",
+"② Making sugary drinks less visible than bottled water is given as an example of a nudge.",
+"③ Banning sugary drinks altogether is presented as an example of a nudge.",
+"④ Smartphones can nudge users by sending notifications telling them to move.",
+"⑤ The notifications are sent after a user has been inactive for a certain period of time."
+],
+"answer": "③",
+"solution": "지문은 금지(완전히 못 마시게 하는 것)는 선택지를 없애므로 넛지가 '아니다'라고 분명히 말한다. 따라서 금지를 넛지의 예로 제시했다는 ③은 글의 내용과 반대다. 나머지 ①②④⑤는 모두 본문에 그대로 나온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5efafb22e2",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nB: I'm going to volunteer to make see-through soap for children in need.\nG: See-through soap? Why is it made see-through?\nB: There's a small toy inside, and you can see it through the soap. To get the toy out, children have to wash their hands with it again and again.\nG: That's clever. So it leads children to wash their hands regularly. It's a good example of a nudge.\nB: Right. According to a report, the soap not only helped reduce diseases but also helped children develop hand-washing habits.\nG: I hope more people start using it.\nB: Me too.",
+"choices": [
+"① The boy plans to volunteer to make see-through soap for children in need.",
+"② A toy is placed inside the soap so that it can be seen from the outside.",
+"③ Children have to wash their hands repeatedly in order to get the toy out.",
+"④ The girl regards the see-through soap as a good example of a nudge.",
+"⑤ According to a report, the soap reduced diseases but failed to form hand-washing habits."
+],
+"answer": "⑤",
+"solution": "남학생은 보고서를 인용하며 비누가 질병을 줄였을 뿐 아니라 손 씻는 습관을 기르는 데도 도움을 주었다고 말한다. 따라서 습관 형성에 실패했다는 ⑤는 대화 내용과 반대다. ①~④는 모두 대화에 그대로 드러난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8f24dcc37d",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nDark patterns are design elements or processes that companies use to manipulate consumer behavior. They come in many forms; some are harmless, while others are misleading. One common example is forced continuity. When you sign up for a free trial of a streaming service, your credit card may be charged automatically as soon as the trial ends. Companies claim that this lets users keep using the service without interruption, but users often receive no warning and end up being billed unexpectedly.",
+"choices": [
+"① Dark patterns are used by companies to influence how consumers behave.",
+"② Not all dark patterns are misleading; some of them are harmless.",
+"③ In forced continuity, a user's card can be charged automatically when a free trial ends.",
+"④ Companies claim that forced continuity allows uninterrupted use of their service.",
+"⑤ Users are always clearly warned before their cards are charged after a free trial."
+],
+"answer": "⑤",
+"solution": "지문은 사용자들이 '경고를 받지 못한 채(no warning)' 예상치 못하게 청구된다고 했다. 따라서 항상 분명히 경고받는다는 ⑤는 글과 정반대다. ①~④는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b7aca5f720",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nChanges in visual designs can strongly affect how people behave on streets. In Ahmedabad, India, two artists painted a 3D crosswalk on several roads. To drivers, the painted lines looked like roadblocks, which made them slow down without braking too suddenly. The idea later spread to other countries. In a similar way, traffic engineers in Chicago painted a series of lines across the road before a dangerous curve on North Lake Shore Drive in 2006. As the road nears the curve, the gaps between the lines become smaller and smaller, giving drivers the illusion that they are speeding up. This prompts them to step on the brakes.",
+"choices": [
+"① Where did two artists paint a 3D crosswalk?",
+"② Why did the painted 3D crosswalk make drivers slow down?",
+"③ When did Chicago paint a series of lines before the dangerous curve on North Lake Shore Drive?",
+"④ What illusion do the gapped lines in Chicago give to drivers?",
+"⑤ By how much did crashes at the North Lake Shore Drive curve decrease after the lines were painted?"
+],
+"answer": "⑤",
+"solution": "①은 Ahmedabad, ②는 '도로 장애물처럼 보여서', ③은 2006년, ④는 '속도를 내고 있다는 착각'으로 모두 본문에서 답을 찾을 수 있다. 그러나 사고 감소 수치(퍼센트)는 지문에 제시되지 않았으므로 ⑤는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-da44b83d1f",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nA default is an option that applies if the chooser does nothing. The chooser is still free to opt out of the default. Defaults are effective at nudging people toward more desirable behaviors, because people have a strong desire to stick with what they already have, since making a change requires a conscious effort. Setting greener choices as defaults can automatically nudge people into more sustainable behaviors. In 2008, Rutgers University made double-sided printing the default setting for all its printers in order to reduce paper waste. Thanks to this simple change, the university saved about 62 million sheets of paper in about three years.",
+"choices": [
+"① A default is an option that takes effect when the chooser does nothing.",
+"② Once a default is set, the chooser can no longer opt out of it.",
+"③ Defaults work partly because people tend to keep what they already have.",
+"④ Rutgers University set double-sided printing as the default to reduce paper waste.",
+"⑤ Rutgers saved about 62 million sheets of paper in about three years."
+],
+"answer": "②",
+"solution": "지문은 선택자가 기본값에서 '벗어날 자유가 있다(free to opt out)'고 분명히 말한다. 따라서 더 이상 벗어날 수 없다는 ②는 글과 반대다. ①③④⑤는 모두 본문에 그대로 제시되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6e4d69e375",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nNudging people into making good choices does not always go as planned. In a study of household energy conservation, researchers gave residents information about their neighbors' average energy use. As expected, households that had consumed more energy than the average reduced their use afterward. However, households with low energy consumption increased their use after learning that they had used less energy than their neighbors. Later, the researchers added a smiley face to the information sent to those who used less energy than the average, and this neutralized the opposite effect.",
+"choices": [
+"① Residents were given information about how much energy their neighbors used on average.",
+"② Households that had used more energy than the average reduced their consumption afterward.",
+"③ Households that had used less energy than the average reduced their use even further after getting the information.",
+"④ Adding a smiley face helped remove the unwanted increase in energy use.",
+"⑤ Nudging does not always produce the results that were intended."
+],
+"answer": "③",
+"solution": "에너지를 평균보다 적게 쓰던 가구는 정보를 받은 뒤 사용량을 '늘렸다(increased).' 따라서 더 줄였다는 ③은 글과 반대다. 나머지 선택지는 모두 연구 결과와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true
 }
 ]
