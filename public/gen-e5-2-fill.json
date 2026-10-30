@@ -10669,5 +10669,107 @@
 "twinGroup": "tw-20045",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-fd78c4956c",
+"typeId": "20094",
+"kind": "주관식",
+"diff": 1,
+"body": "두 수에 대하여 다음과 같이 약속합니다. $2.4\\star3$의 값을 구하세요.\n\n$a\\star b=a\\times b+1$",
+"selfGrade": true,
+"answer": "8.2",
+"solution": "약속에 따라 두 수를 곱한 값에 $1$을 더합니다. $2.4\\star3=2.4\\times3+1=7.2+1=8.2$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20094",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5e18535482",
+"typeId": "20094",
+"kind": "객관식",
+"diff": 1,
+"body": "두 수에 대하여 다음과 같이 약속합니다.\n$a\\diamond b=a\\times b+2$\n$0.6\\diamond5$의 값은 얼마입니까?",
+"choices": [
+"$2.3$",
+"$3$",
+"$5$",
+"$6$",
+"$7.6$"
+],
+"answer": "③",
+"solution": "약속에 따라 두 수를 곱한 값에 2를 더합니다. $0.6\\times5=3$이므로 $0.6\\diamond5=3+2=5$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20094",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-bf60f644e8",
+"typeId": "20094",
+"kind": "주관식",
+"diff": 1,
+"body": "기호 $\\triangle$를 다음과 같이 사용합니다. $1.2\\triangle4$의 값을 구하세요.\n\n$a\\triangle b=a\\times b-0.5$",
+"selfGrade": true,
+"answer": "4.3",
+"solution": "약속에 따라 $1.2$와 $4$를 곱한 뒤 $0.5$를 뺍니다. $1.2\\triangle4=4.8-0.5=4.3$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20094",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b1362fb512",
+"typeId": "20094",
+"kind": "객관식",
+"diff": 2,
+"body": "두 수에 대하여 다음과 같이 약속합니다.\n$a\\square b=a\\times b+0.6$\n$1.4\\square2.5$의 값은 얼마입니까?",
+"choices": [
+"$0.95$",
+"$3.5$",
+"$3.56$",
+"$4.1$",
+"$4.5$"
+],
+"answer": "④",
+"solution": "먼저 $1.4\\times2.5=3.5$를 계산합니다. 약속에 따라 0.6을 더하면 $1.4\\square2.5=3.5+0.6=4.1$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20094",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1ec36d5bb0",
+"typeId": "20094",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 약속에 따라 $0.4\\star(3\\star2)$의 값을 구하세요.\n\n$a\\star b=a\\times b+1$",
+"selfGrade": true,
+"answer": "3.8",
+"solution": "괄호 안을 먼저 계산하면 $3\\star2=3\\times2+1=7$입니다. 따라서 $0.4\\star7=0.4\\times7+1=2.8+1=3.8$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20094",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-36487697fa",
+"typeId": "20094",
+"kind": "객관식",
+"diff": 2,
+"body": "두 수에 대하여 다음과 같이 약속합니다.\n$a\\diamond b=a\\times b+0.4$\n$0.6\\diamond\\boxed{\\phantom{0}}=2.8$일 때, 빈칸 안에 알맞은 수는 어느 것입니까?",
+"choices": [
+"$0.4$",
+"$1.44$",
+"$2.4$",
+"$4$",
+"$40$"
+],
+"answer": "④",
+"solution": "약속에 따라 $0.6\\times\\boxed{\\phantom{0}}+0.4=2.8$입니다. 따라서 $0.6\\times\\boxed{\\phantom{0}}=2.8-0.4=2.4$입니다. $0.6\\times4=2.4$이므로 빈칸 안에 알맞은 수는 4입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20094",
+"custom": true,
+"rv": 1
 }
 ]

@@ -8830,5 +8830,101 @@
 "twinGroup": "tw-17430",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-30d0b983fd",
+"typeId": "17423",
+"kind": "주관식",
+"diff": 1,
+"body": "물병에 물이 $900\\,\\mathrm{mL}$ 들어 있습니다. 이 중 $400\\,\\mathrm{mL}$를 마셨습니다. 물병에 남아 있는 물은 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "$500\\,\\mathrm{mL}$",
+"solution": "처음 들어 있던 물의 양에서 마신 물의 양을 뺍니다. $900-400=500$이므로 남아 있는 물은 $500\\,\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17423",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f4b7e6307e",
+"typeId": "17423",
+"kind": "객관식",
+"diff": 1,
+"body": "통에 식혜가 $8\\,\\mathrm{L}$ 들어 있습니다. 식혜를 $3\\,\\mathrm{L}$ 덜어 냈습니다. 통에 남아 있는 식혜의 양은 얼마인가요?",
+"choices": [
+"$3\\,\\mathrm{L}$",
+"$4\\,\\mathrm{L}$",
+"$5\\,\\mathrm{L}$",
+"$6\\,\\mathrm{L}$",
+"$7\\,\\mathrm{L}$"
+],
+"answer": "③",
+"solution": "처음 들어 있던 식혜의 양에서 덜어 낸 양을 뺍니다. $8-3=5$이므로 통에 남아 있는 식혜의 양은 $5\\,\\mathrm{L}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17423",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-22a4706697",
+"typeId": "17423",
+"kind": "주관식",
+"diff": 1,
+"body": "계량컵에 우유가 $750\\,\\mathrm{mL}$ 들어 있습니다. 빵을 만드는 데 우유 $250\\,\\mathrm{mL}$를 사용했습니다. 계량컵에 남아 있는 우유는 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "$500\\,\\mathrm{mL}$",
+"solution": "계량컵에 있던 우유의 양에서 사용한 양을 뺍니다. $750-250=500$이므로 남아 있는 우유는 $500\\,\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17423",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ae6c3cc916",
+"typeId": "17423",
+"kind": "주관식",
+"diff": 2,
+"body": "주전자에 보리차가 $3\\,\\mathrm{L}\\;200\\,\\mathrm{mL}$ 들어 있습니다. 이 중 $700\\,\\mathrm{mL}$를 컵에 따랐습니다. 주전자에 남아 있는 보리차는 몇 $\\mathrm{L}$ 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "$2\\,\\mathrm{L}\\;500\\,\\mathrm{mL}$",
+"solution": "$3\\,\\mathrm{L}\\;200\\,\\mathrm{mL}$는 $3200\\,\\mathrm{mL}$입니다. 남아 있는 보리차는 $3200-700=2500\\,\\mathrm{mL}$입니다. 따라서 $2\\,\\mathrm{L}\\;500\\,\\mathrm{mL}$가 남아 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17423",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-91a347ce24",
+"typeId": "17423",
+"kind": "객관식",
+"diff": 2,
+"body": "통에 사과주스가 $1500\\,\\mathrm{mL}$ 들어 있습니다. 통에 있는 사과주스를 한 컵에 $250\\,\\mathrm{mL}$씩 따라 $2$컵을 마셨습니다. 통에 남아 있는 사과주스의 양은 얼마인가요?",
+"choices": [
+"$500\\,\\mathrm{mL}$",
+"$750\\,\\mathrm{mL}$",
+"$1000\\,\\mathrm{mL}$",
+"$1250\\,\\mathrm{mL}$",
+"$1500\\,\\mathrm{mL}$"
+],
+"answer": "③",
+"solution": "한 컵에 $250\\,\\mathrm{mL}$씩 $2$컵을 마셨으므로 마신 사과주스의 양은 $250+250=500\\,\\mathrm{mL}$입니다. 처음 들어 있던 양에서 마신 양을 빼면 $1500-500=1000\\,\\mathrm{mL}$입니다. 따라서 통에 남아 있는 사과주스의 양은 $1000\\,\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17423",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e92edf7e43",
+"typeId": "17423",
+"kind": "주관식",
+"diff": 2,
+"body": "빈 물통에 물 $600\\,\\mathrm{mL}$와 $800\\,\\mathrm{mL}$를 모두 부었습니다. 그중 $500\\,\\mathrm{mL}$를 화분에 주었습니다. 물통에 남아 있는 물은 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "$900\\,\\mathrm{mL}$",
+"solution": "물통에 부은 물의 양은 모두 $600+800=1400\\,\\mathrm{mL}$입니다. 여기에서 화분에 준 물의 양을 빼면 $1400-500=900\\,\\mathrm{mL}$가 남습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17423",
+"custom": true,
+"rv": 1
 }
 ]
