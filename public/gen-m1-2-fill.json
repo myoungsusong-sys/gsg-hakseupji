@@ -2361,5 +2361,39 @@
 "source": "유사 문항",
 "twinGroup": "tw-17772",
 "custom": true
+},
+{
+"id": "fill-df69855360",
+"typeId": "17706",
+"kind": "객관식",
+"diff": 1,
+"body": "직선 $l$ 위의 서로 다른 두 점 $A$, $B$와 직선 $l$ 밖의 점 $P$가 있고, $\\angle PAB=52^\\circ$이다. 직선 $AP$를 기준으로 점 $B$와 반대쪽에 점 $Q$를 잡아 직선 $PQ$가 직선 $l$과 평행하도록 작도하려고 한다. 엇각의 성질을 이용할 때, $\\angle APQ$의 크기는?",
+"choices": [
+"$26^\\circ$",
+"$38^\\circ$",
+"$52^\\circ$",
+"$104^\\circ$",
+"$128^\\circ$"
+],
+"answer": "③",
+"solution": "$\\angle PAB$와 $\\angle APQ$는 두 직선 $l$, $PQ$를 직선 $AP$가 가로지를 때 생기는 엇각이다. 엇각의 크기가 같으면 두 직선은 평행하므로 $\\angle APQ=52^\\circ$로 작도하면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-17706",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-beb1d5b121",
+"typeId": "17706",
+"kind": "주관식",
+"diff": 4,
+"body": "직선 $l$ 위의 서로 다른 두 점 $A$, $B$와 직선 $l$ 밖의 점 $P$가 있고, $\\angle PAB$는 예각이다. 다음 순서로 작도하였다.\n\n(가) $0<r<\\overline{AP}$인 길이 $r$을 정한다. 중심이 $A$이고 반지름이 $r$인 원과 반직선 $AP$, $AB$의 교점을 각각 $C$, $D$라 한다.\n(나) 중심이 $P$이고 반지름이 $r$인 원과 반직선 $PA$의 교점을 $E$라 한다. 이 원 위에서 $\\overline{EF}=\\overline{CD}$이고, 직선 $AP$를 기준으로 점 $B$와 반대쪽에 있는 점 $F$를 잡아 직선 $PF$를 긋는다.\n(다) $\\angle PAB$의 이등분선인 반직선 $AX$를 긋고, 다시 $\\angle XAB$의 이등분선인 반직선 $AZ$를 긋는다.\n(라) $\\angle APF$의 이등분선인 반직선 $PY$를 긋고, 다시 $\\angle APY$의 이등분선인 반직선 $PW$를 긋는다.\n\n$\\angle PAZ=(2x+3)^\\circ$, $\\angle APW=(x-7)^\\circ$일 때, 두 직선 $AZ$, $PW$가 이루는 각 중 둔각의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$146^\\circ$",
+"solution": "$\\overline{AC}=\\overline{PE}=r$, $\\overline{AD}=\\overline{PF}=r$, $\\overline{CD}=\\overline{EF}$이므로 $\\triangle ACD\\equiv\\triangle PEF$이다(SSS 합동). 따라서 $\\angle PAB=\\angle APF$이다. 점 $B$와 점 $F$가 직선 $AP$의 서로 반대쪽에 있으므로 이 두 각은 엇각이고, $l\\parallel PF$이다.\n\n$\\angle PAB=\\angle APF=\\theta^\\circ$라 하자. 두 번의 각의 이등분에 의해 $\\angle ZAB=\\frac14\\theta^\\circ$이므로 $\\angle PAZ=\\frac34\\theta^\\circ$이고, $\\angle APW=\\frac14\\theta^\\circ$이다. 따라서 $2x+3=3(x-7)$이므로 $x=24$이다. 이에 따라 $\\angle APW=17^\\circ$, $\\angle PAZ=51^\\circ$, $\\angle APF=68^\\circ$이다.\n\n점 $P$를 지나고 직선 $AZ$와 평행한 직선 위에, 직선 $AP$를 기준으로 점 $B$와 반대쪽에 있는 점 $H$를 잡는다. 평행선의 엇각의 크기는 같으므로 $\\angle APH=\\angle PAZ=51^\\circ$이다. 반직선 $PH$와 $PW$는 직선 $AP$의 같은 쪽에 있고 $\\angle APW<\\angle APH$이므로, 반직선 $PW$는 $\\angle APH$의 내부에 있다. 따라서 $\\angle WPH=51^\\circ-17^\\circ=34^\\circ$이다.\n\n$AZ\\parallel PH$이므로 두 직선 $AZ$, $PW$가 이루는 예각의 크기는 $34^\\circ$이다. 따라서 구하는 둔각의 크기는 $180^\\circ-34^\\circ=146^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17706",
+"custom": true,
+"rv": 1
 }
 ]

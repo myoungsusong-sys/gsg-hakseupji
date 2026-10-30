@@ -1870,5 +1870,25 @@
 "source": "유사 문항",
 "twinGroup": "tw-20602",
 "custom": true
+},
+{
+"id": "fill-2781d14381",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 1,
+"body": "서로 다른 두 원의 공통현을 $AB$라 하자. 두 원의 중심을 잇는 직선과 $AB$의 교점을 $M$이라 할 때, $AM=4\\text{ cm}$이다. 공통현 $AB$의 길이는?",
+"choices": [
+"$4\\text{ cm}$",
+"$6\\text{ cm}$",
+"$8\\text{ cm}$",
+"$10\\text{ cm}$",
+"$12\\text{ cm}$"
+],
+"answer": "③",
+"solution": "두 원의 중심을 잇는 직선은 공통현 $AB$를 수직이등분하므로 $AM=BM=4\\text{ cm}$이다. 따라서 $AB=AM+BM=8\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true,
+"rv": 1
 }
 ]

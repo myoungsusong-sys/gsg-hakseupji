@@ -694,5 +694,121 @@
 "source": "유사 문항",
 "twinGroup": "tw-7133",
 "custom": true
+},
+{
+"id": "fill-173ea7f2a4",
+"typeId": "7104",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$의 변 $BC$에 접하는 방접원이 변 $AB$를 $B$ 쪽으로 연장한 직선과 점 $P$에서, 변 $BC$와 점 $Q$에서 접한다. $BP=4\\text{ cm}$일 때, $BQ$의 길이는?",
+"choices": [
+"$2\\text{ cm}$",
+"$3\\text{ cm}$",
+"$4\\text{ cm}$",
+"$5\\text{ cm}$",
+"$8\\text{ cm}$"
+],
+"answer": "③",
+"solution": "점 $B$에서 방접원에 그은 두 접선의 접점은 $P$, $Q$이다. 한 점에서 원에 그은 두 접선의 길이는 같으므로 $BQ=BP=4\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3505befcea",
+"typeId": "7104",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=7\\text{ cm}$, $AC=9\\text{ cm}$, $BC=10\\text{ cm}$이다. 변 $BC$에 접하는 방접원이 변 $AB$를 $B$ 쪽으로 연장한 반직선과 점 $P$에서 접할 때, $AP$의 길이는?",
+"choices": [
+"$10\\text{ cm}$",
+"$11\\text{ cm}$",
+"$12\\text{ cm}$",
+"$13\\text{ cm}$",
+"$14\\text{ cm}$"
+],
+"answer": "④",
+"solution": "방접원이 변 $BC$와 접하는 점을 $Q$, 변 $AC$를 $C$ 쪽으로 연장한 반직선과 접하는 점을 $R$라 하자. 한 점에서 원에 그은 두 접선의 길이는 같으므로 $BP=BQ$, $CR=CQ$, $AP=AR$이다. 따라서 $2AP=AP+AR=(AB+BP)+(AC+CR)=AB+AC+BQ+CQ=AB+AC+BC=26$이므로 $AP=13\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b9f47dbd34",
+"typeId": "7104",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$의 변 $BC$에 접하는 방접원이 변 $AB$를 $B$ 쪽으로 연장한 직선과 점 $P$에서, 변 $BC$와 점 $Q$에서 접한다. $BC=14\\text{ cm}$, $BP=6\\text{ cm}$일 때, $CQ$의 길이는?",
+"choices": [
+"$6\\text{ cm}$",
+"$8\\text{ cm}$",
+"$10\\text{ cm}$",
+"$14\\text{ cm}$",
+"$20\\text{ cm}$"
+],
+"answer": "②",
+"solution": "한 점에서 원에 그은 두 접선의 길이가 같으므로 $BQ=BP=6\\text{ cm}$이다. 점 $Q$는 변 $BC$ 위에 있으므로 $CQ=BC-BQ=14-6=8\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-53535e0884",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 내접원과 변 $BC$에 접하는 방접원이 변 $BC$ 위의 한 점 $T$에서 서로 외접한다. 내접원의 반지름이 $2\\text{ cm}$, 방접원의 반지름이 $18\\text{ cm}$일 때, 삼각형 $ABC$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$27\\text{ cm}$",
+"solution": "내접원과 방접원의 중심을 각각 $O$, $O'$라 하자. 내접원이 변 $AB$, $AC$와 접하는 점을 각각 $D$, $F$, 방접원이 두 변을 각각 $B$, $C$ 쪽으로 연장한 반직선과 접하는 점을 각각 $U$, $V$라 하자. $AD=AF=x$, $BT=u$, $CT=v$라 놓으면 접선의 길이 관계에 의해 $BD=BU=u$, $CF=CV=v$이다. 따라서 $AU=x+2u$, $AV=x+2v$이고, $AU=AV$이므로 $u=v$이다. 이에 따라 $AB=AC$이고 $T$는 $BC$의 중점이다. 두 원의 반지름 $OT$, $O'T$는 모두 $BC$에 수직이므로 $A$, $O$, $T$, $O'$는 이 순서로 한 직선 위에 있다. 직각삼각형 $AOD$와 $AO'U$는 닮음이므로 $AO:AO'=OD:O'U=2:18=1:9$이다. 또한 $AO'-AO=OO'=2+18=20$이므로 $AO=\\frac52$이다. 피타고라스 정리에 의해 $AD=\\sqrt{(\\frac52)^2-2^2}=\\frac32$이고, 위의 닮음에서 $AU=9AD=\\frac{27}{2}$이다. 한편 $2AU=AU+AV=AB+AC+BU+CV=AB+AC+BT+CT=AB+AC+BC$이므로 삼각형의 둘레는 $27\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6da4726503",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\angle A=90^\\circ$인 삼각형 $ABC$에서 내접원과 변 $BC$에 접하는 방접원이 변 $BC$와 접하는 점을 각각 $E$, $Q$라 하자. 방접원이 변 $AB$를 $B$ 쪽으로 연장한 반직선과 접하는 점을 $P$라 할 때, $AP=30\\text{ cm}$, $EQ=5\\text{ cm}$이다. 삼각형 $ABC$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$150\\text{ cm}^2$",
+"solution": "삼각형의 반둘레를 $s$라 하고, 방접원이 변 $AC$를 $C$ 쪽으로 연장한 반직선과 접하는 점을 $R$라 하자. 접선의 길이 관계에 의해 $AP=AR$, $BP=BQ$, $CR=CQ$이므로 $2AP=AB+AC+BQ+CQ=AB+AC+BC=2s$이다. 따라서 $s=30$이다. 내접원이 변 $AB$, $AC$와 접하는 점을 각각 $D$, $F$라 하면 $AD=AF$, $BD=BE$, $CF=CE$이므로 $AB+BC-AC=2BE$이다. 따라서 $BE=s-AC$이고, $BQ=BP=AP-AB=s-AB$이다. 두 점 $E$, $Q$가 모두 변 $BC$ 위에 있으므로 $EQ=|BQ-BE|=|AB-AC|=5$이다. $AB+AC=t$라 놓으면 $BC=60-t$이고, $AB^2+AC^2=\\frac{(AB+AC)^2+(AB-AC)^2}{2}=\\frac{t^2+25}{2}$이다. 피타고라스 정리에 의해 $(60-t)^2=\\frac{t^2+25}{2}$이므로 $t^2-240t+7175=0$, 즉 $(t-35)(t-205)=0$이다. $BC=60-t>0$이므로 $t=35$이다. 두 직각변의 길이는 합이 $35$, 차가 $5$이므로 각각 $15\\text{ cm}$, $20\\text{ cm}$이다. 따라서 삼각형의 넓이는 $\\frac12\\times15\\times20=150\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e3826a62b8",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 내접원의 중심을 $I$, 변 $BC$에 접하는 방접원의 중심을 $J$라 하자. 두 원은 변 $BC$ 위의 한 점에서 서로 외접한다. 내접원의 반지름과 중심이 $J$인 방접원의 반지름의 비가 $4:9$이고 $IJ=26\\text{ cm}$일 때, 변 $AC$와 두 변 $AB$, $BC$의 연장선에 접하는 방접원의 반지름을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{144}{5}\\text{ cm}$",
+"solution": "두 원이 외접하므로 두 반지름의 합은 $IJ=26\\text{ cm}$이다. 따라서 내접원의 반지름은 $8\\text{ cm}$, 중심이 $J$인 방접원의 반지름은 $18\\text{ cm}$이다. 두 원의 공통 접점을 $T$, 내접원이 변 $AB$, $AC$와 접하는 점을 각각 $D$, $F$, 중심이 $J$인 방접원이 두 변의 연장선과 접하는 점을 각각 $U$, $V$라 하자. $AD=AF=x$, $BT=u$, $CT=v$라 놓으면 접선의 길이 관계에 의해 $BD=BU=u$, $CF=CV=v$이다. 따라서 $AU=x+2u$, $AV=x+2v$이고, $AU=AV$이므로 $u=v$이다. 이에 따라 $AB=AC$이고 $T$는 $BC$의 중점이다. 또한 $IT$, $JT$는 $BC$에 수직이므로 $A$, $I$, $T$, $J$는 이 순서로 한 직선 위에 있다. 직각삼각형 $AID$와 $AJU$는 닮음이므로 $AI:AJ=ID:JU=8:18=4:9$이다. $AJ-AI=IJ=26$이므로 $AI=\\frac{104}{5}$이고, $AT=AI+IT=\\frac{104}{5}+8=\\frac{144}{5}$이다. 이제 변 $AC$에 접하는 방접원의 중심을 $K$, 반지름을 $\\rho$라 하고, $BT=CT=t$, $AB=AC=l$이라 하자. 이 방접원의 중심 $K$는 직선 $AC$에 대하여 점 $B$와 반대쪽에 있으므로 삼각형 $ABC$의 넓이 $S$는 $S=[KAB]+[KBC]-[KAC]$이다. 여기서 $[XYZ]$는 삼각형 $XYZ$의 넓이를 뜻한다. 점 $K$에서 세 변을 포함하는 직선까지의 거리가 모두 $\\rho$이므로 $S=\\frac12\\rho l+\\frac12\\rho(2t)-\\frac12\\rho l=\\rho t$이다. 한편 $S=\\frac12\\times2t\\times AT=tAT$이므로 $\\rho=AT=\\frac{144}{5}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9f7daabb1c",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 내접원과 변 $BC$에 접하는 방접원이 변 $BC$와 접하는 점을 각각 $E$, $Q$라 하자. 점 $B$, $E$, $Q$, $C$는 이 순서로 놓여 있고 $BE:EQ=2:1$이다. 방접원이 변 $AB$를 $B$ 쪽으로 연장한 반직선과 접하는 점을 $P$라 할 때, $AP=27\\text{ cm}$이고 $AB-BC=3\\text{ cm}$이다. 이 방접원의 반지름을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{9\\sqrt6}{2}\\text{ cm}$",
+"solution": "삼각형의 반둘레를 $s$라 하고, 방접원이 변 $AC$를 $C$ 쪽으로 연장한 반직선과 접하는 점을 $R$라 하자. 접선의 길이 관계에 의해 $AP=AR$, $BP=BQ$, $CR=CQ$이므로 $2AP=AB+AC+BQ+CQ=AB+AC+BC=2s$이다. 따라서 $s=27$이다. 내접원이 변 $AB$, $AC$와 접하는 점을 각각 $D$, $F$라 하면 $AD=AF$, $BD=BE$, $CF=CE$이므로 $AB+BC-AC=2BE$, 즉 $BE=s-AC$이다. 또한 $BQ=BP=AP-AB=s-AB$이다. $BE=2k$, $EQ=k$로 놓으면 $BQ=3k$이므로 $AC=27-2k$, $AB=27-3k$이다. 따라서 $BC=2s-AB-AC=5k$이고, $AB-BC=3$에서 $27-8k=3$이므로 $k=3$이다. 이에 따라 $AB=18$, $AC=21$, $BC=15$이다. $A$에서 직선 $BC$에 내린 수선의 발을 $H$라 하자. 만약 $H$가 $B$ 또는 $B$ 바깥쪽에 있으면 피타고라스 정리에 의해 $AC^2-AB^2\\ge BC^2$이어야 하지만, 실제로는 $21^2-18^2=117<225=15^2$이다. 또한 $H$가 $C$ 또는 $C$ 바깥쪽에 있으면 $AB>AC$이어야 하므로 모순이다. 따라서 $H$는 변 $BC$의 내부에 있다. $BH=y$라 놓으면 $y^2+AH^2=18^2$, $(15-y)^2+AH^2=21^2$이다. 두 식을 빼면 $225-30y=117$이므로 $y=\\frac{18}{5}$이고, $AH=\\sqrt{18^2-(\\frac{18}{5})^2}=\\frac{36\\sqrt6}{5}$이다. 따라서 삼각형 $ABC$의 넓이는 $S=\\frac12\\times15\\times\\frac{36\\sqrt6}{5}=54\\sqrt6$이다. 방접원의 중심을 $J$, 반지름을 $r$라 하면 삼각형 $ABJ$, $ACJ$의 넓이의 합에서 삼각형 $BCJ$의 넓이를 뺀 값이 $S$이므로 $S=\\frac12r(AB+AC-BC)=\\frac12r(18+21-15)=12r$이다. 따라서 $r=\\frac{9\\sqrt6}{2}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
 }
 ]
