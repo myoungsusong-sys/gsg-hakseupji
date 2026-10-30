@@ -541,5 +541,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-7102",
 "custom": true
+},
+{
+"id": "fill-2032e3c4bc",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 1,
+"body": "서로 다른 두 원 $O$, $O'$의 공통현을 $AB$라 하고, 두 중심을 연결한 직선과 $AB$의 교점을 $M$이라 하자. $AM=3\\,\\mathrm{cm}$일 때, 공통현 $AB$의 길이는?",
+"choices": [
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "두 원의 중심을 연결한 직선은 공통현을 수직이등분하므로 $AM=BM$이다. 따라서 $AB=2AM=2\\times3=6\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-c71bebd3de",
+"typeId": "7088",
+"kind": "객관식",
+"diff": 1,
+"body": "서로 다른 두 원 $O$, $O'$가 두 점 $A$, $B$에서 만난다. 두 중심을 연결한 직선과 공통현 $AB$의 교점을 $M$이라 하자. 원 $O$의 반지름이 $5\\,\\mathrm{cm}$이고 $OM=4\\,\\mathrm{cm}$일 때, $AB$의 길이는?",
+"choices": [
+"$3\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "두 중심을 연결한 직선은 공통현을 수직이등분하므로 $OM\\perp AB$이고 $AM=BM$이다. 직각삼각형 $OMA$에서 $AM=\\sqrt{5^2-4^2}=3\\,\\mathrm{cm}$이다. 따라서 $AB=2AM=6\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-f12e361f2e",
+"typeId": "7088",
+"kind": "주관식",
+"diff": 1,
+"body": "서로 다른 두 원 $O$, $O'$의 공통현 $AB$의 길이는 $8\\,\\mathrm{cm}$이다. 두 중심을 연결한 직선과 $AB$의 교점을 $M$이라 하자. 원 $O$의 반지름이 $5\\,\\mathrm{cm}$일 때, $OM$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$3\\,\\mathrm{cm}$",
+"solution": "두 중심을 연결한 직선은 공통현을 수직이등분하므로 $AM=\\frac{8}{2}=4\\,\\mathrm{cm}$이고 $OM\\perp AB$이다. 직각삼각형 $OMA$에서 피타고라스 정리에 의해 $OM=\\sqrt{5^2-4^2}=3\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7088",
+"custom": true
+},
+{
+"id": "fill-198272be43",
+"typeId": "7133",
+"kind": "객관식",
+"diff": 1,
+"body": "반지름의 길이가 $5\\,\\mathrm{cm}$인 구를 중심에서 $3\\,\\mathrm{cm}$ 떨어진 평면으로 잘랐다. 단면인 원의 반지름의 길이는?",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$3\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "구의 중심과 단면인 원의 중심을 이은 선분은 단면에 수직이다. 단면인 원의 반지름을 $r\\,\\mathrm{cm}$라 하면 피타고라스 정리에 의해 $r^2+3^2=5^2$이다. 따라서 $r=4$이므로 구하는 길이는 $4\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7133",
+"custom": true
+},
+{
+"id": "fill-ef62265721",
+"typeId": "7133",
+"kind": "주관식",
+"diff": 1,
+"body": "구를 중심에서 $5\\,\\mathrm{cm}$ 떨어진 평면으로 잘랐더니 반지름의 길이가 $12\\,\\mathrm{cm}$인 원이 생겼다. 이 구의 반지름의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$13\\,\\mathrm{cm}$",
+"solution": "구의 반지름을 $R\\,\\mathrm{cm}$라 하면 구의 중심, 단면인 원의 중심, 단면의 둘레 위의 한 점을 연결하여 직각삼각형을 만들 수 있다. 피타고라스 정리에 의해 $R^2=5^2+12^2=169$이다. 따라서 구의 반지름의 길이는 $13\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7133",
+"custom": true
+},
+{
+"id": "fill-daf16b0a28",
+"typeId": "7133",
+"kind": "객관식",
+"diff": 1,
+"body": "반지름의 길이가 $17\\,\\mathrm{cm}$인 구를 평면으로 잘랐더니 반지름의 길이가 $15\\,\\mathrm{cm}$인 원이 생겼다. 구의 중심과 이 평면 사이의 거리는?",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "구의 중심에서 자른 평면에 내린 수선의 발은 단면인 원의 중심이다. 구하는 거리를 $d\\,\\mathrm{cm}$라 하면 $d^2+15^2=17^2$이므로 $d^2=64$이다. 따라서 구하는 거리는 $8\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7133",
+"custom": true
+},
+{
+"id": "fill-04802934d5",
+"typeId": "7133",
+"kind": "객관식",
+"diff": 2,
+"body": "구의 중심에서 $8\\,\\mathrm{cm}$ 떨어진 평면으로 구를 잘랐다. 단면인 원의 둘레의 길이가 $12\\pi\\,\\mathrm{cm}$일 때, 이 구의 반지름의 길이는?",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "단면인 원의 반지름을 $r\\,\\mathrm{cm}$라 하면 $2\\pi r=12\\pi$이므로 $r=6$이다. 구의 반지름을 $R\\,\\mathrm{cm}$라 하면 피타고라스 정리에 의해 $R^2=8^2+6^2=100$이다. 따라서 구의 반지름의 길이는 $10\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7133",
+"custom": true
+},
+{
+"id": "fill-8c354fceb7",
+"typeId": "7133",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 $10\\,\\mathrm{cm}$인 구를 중심에서 $6\\,\\mathrm{cm}$ 떨어진 평면으로 잘랐다. 단면인 원의 둘레의 길이는?",
+"choices": [
+"$8\\pi\\,\\mathrm{cm}$",
+"$12\\pi\\,\\mathrm{cm}$",
+"$16\\pi\\,\\mathrm{cm}$",
+"$20\\pi\\,\\mathrm{cm}$",
+"$32\\pi\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "단면인 원의 반지름을 $r\\,\\mathrm{cm}$라 하면 $r^2=10^2-6^2=64$이므로 $r=8$이다. 따라서 단면인 원의 둘레의 길이는 $2\\pi\\times8=16\\pi\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7133",
+"custom": true
+},
+{
+"id": "fill-7a3bb26537",
+"typeId": "7133",
+"kind": "주관식",
+"diff": 2,
+"body": "밑면의 반지름의 길이가 $6\\,\\mathrm{cm}$, 높이가 $8\\,\\mathrm{cm}$, 모선의 길이가 $10\\,\\mathrm{cm}$인 원뿔이 있다. 이 원뿔의 밑면과 옆면에 모두 접하도록 구를 내접시켰다. 내접한 구의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$36\\pi\\,\\mathrm{cm}^3$",
+"solution": "원뿔의 꼭짓점과 밑면의 중심을 지나는 평면으로 자르면 밑변의 길이가 $12\\,\\mathrm{cm}$, 높이가 $8\\,\\mathrm{cm}$, 두 변의 길이가 각각 $10\\,\\mathrm{cm}$인 이등변삼각형과 그 내접원이 생긴다. 내접원의 반지름을 $r\\,\\mathrm{cm}$라 하고 내심과 세 꼭짓점을 연결하여 넓이를 구하면 $\\frac12\\times12\\times8=\\frac12\\times(12+10+10)r$이다. 따라서 구의 반지름은 $3\\,\\mathrm{cm}$이다. 구의 부피는 $\\frac43\\pi\\times3^3=36\\pi\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7133",
+"custom": true
 }
 ]

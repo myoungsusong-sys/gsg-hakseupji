@@ -4573,5 +4573,126 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b01-u6m7s0t0",
 "custom": true
+},
+{
+"id": "fill-960e2d5609",
+"typeId": "eng-m1-b01-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nHis paintings show his unique style.",
+"choices": [
+"비슷한",
+"독특한",
+"충분한",
+"개인적인",
+"밝은"
+],
+"answer": "②",
+"solution": "unique는 '독특한, 고유한'이라는 뜻입니다. 이 문장은 '그의 그림들은 그의 독특한 스타일을 보여 준다.'라는 뜻입니다. ① similar(비슷한), ③ enough(충분한), ④ personal(개인적인), ⑤ bright(밝은)와 헷갈리지 않도록 주의합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-432efb9641",
+"typeId": "eng-m1-b01-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 풀이가 뜻하는 단어로 알맞은 것은?\n\na photo of yourself that you take with your phone or camera",
+"choices": [
+"self-portrait",
+"selfie",
+"model",
+"painter",
+"exhibition"
+],
+"answer": "②",
+"solution": "'휴대 전화나 카메라로 직접 찍은 자기 자신의 사진'은 selfie(셀피)입니다. self-portrait는 화가가 자기 자신을 그린 그림(자화상)이므로 사진과는 다릅니다. 나머지 model(모델), painter(화가), exhibition(전시회)은 풀이와 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-77b07e0597",
+"typeId": "eng-m1-b01-u4m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 재귀대명사를 쓰시오.\n\n그녀는 거울 속의 자기 자신을 보았다.\n→ She looked at ______________ in the mirror.",
+"selfGrade": true,
+"answer": "herself",
+"solution": "주어 She와 목적어가 같은 사람이므로 목적어 자리에 재귀대명사를 씁니다. she의 재귀대명사는 herself입니다. her를 쓰면 주어가 아닌 다른 여자를 가리키게 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-39dfcf2ddb",
+"typeId": "eng-m1-b01-u4m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 올바른 문장끼리 짝지은 것은?\n\n(a) People enjoy taking selfies.\n(b) Tom, introduce you to your classmates.\n(c) Painting a self-portrait take some time.\n(d) Long ago, people painted pictures of themselves.\n(e) We can do it quick with our camera at any time.",
+"choices": [
+"(a), (b)",
+"(a), (d)",
+"(b), (c)",
+"(c), (e)",
+"(a), (d), (e)"
+],
+"answer": "②",
+"solution": "(a) enjoy는 동명사를 목적어로 쓰므로 taking이 맞고, (d) 주어 people이 자기 자신을 그린 것이므로 themselves가 맞습니다. (b) 명령문에서 생략된 주어 you가 자기 자신을 소개하는 것이므로 you가 아니라 yourself를 써야 합니다. (c) 동명사구 주어는 단수 취급하므로 take를 takes로 고쳐야 하고, (e) 동사 do를 꾸미므로 형용사 quick이 아니라 부사 quickly를 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-45e599328f",
+"typeId": "eng-m1-b01-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nPueng learned the 24 letters of Hangeul, and she is able ________ any Korean word now.",
+"choices": [
+"read",
+"reads",
+"reading",
+"to read",
+"to reading"
+],
+"answer": "④",
+"solution": "'~할 수 있다'라는 뜻의 be able 뒤에는 to부정사(to+동사원형)가 와야 합니다. 그래서 빈칸에는 to read가 알맞습니다. to 뒤에 -ing 형태를 쓰거나 to 없이 동사만 쓰면 어법에 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e0d93aff09",
+"typeId": "eng-m1-b01-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"People are enjoying fun activities at the festival.",
+"They look very happy and excited today.",
+"Anna was interested in use Hangeul in her designs.",
+"Hangeul is easy to learn for many foreigners.",
+"I'm going to interview three Hangeul lovers today."
+],
+"answer": "③",
+"solution": "be interested in의 in은 전치사이므로, 뒤에 동사가 올 때는 동명사(-ing) 형태로 써야 한다. 따라서 ③의 use를 using으로 고쳐야 한다. ① 현재진행형(be동사 + -ing)으로 어법에 맞다. ② look(감각동사) 뒤에 보어로 형용사 happy, excited가 와서 어법에 맞다. ④ 형용사 easy를 to부정사 to learn이 수식하는 형태로 어법에 맞다. ⑤ be going to 뒤에 동사원형 interview가 와서 어법에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4b37841f0",
+"typeId": "eng-m1-b01-u5m1s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nI like Hangeul (because / because of) it is easy to learn.\n\n→ ______________",
+"selfGrade": true,
+"answer": "because",
+"solution": "괄호 뒤에 주어(it)와 동사(is)가 있는 절이 이어지므로 접속사 because를 써야 합니다. because of는 전치사구라서 뒤에 명사(구)만 올 수 있습니다. 따라서 because가 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u5m1s0t0",
+"custom": true
 }
 ]
