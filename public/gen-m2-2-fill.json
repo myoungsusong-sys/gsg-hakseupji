@@ -3341,5 +3341,47 @@
 "twinGroup": "tw-18769",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-37646fddc9",
+"typeId": "18695",
+"kind": "주관식",
+"diff": 3,
+"body": "$AD\\parallel BC$, $AD<BC$인 등변사다리꼴 $ABCD$에서 $\\angle ABC=60^\\circ$이다. $\\angle ABC$의 이등분선이 변 $AD$와 만나는 점을 $F$, $\\angle BCD$의 이등분선이 변 $AD$와 만나는 점을 $G$라 하자. 네 점이 변 $AD$ 위에 $A$, $G$, $F$, $D$의 순서로 놓이고, $FG=4\\text{ cm}$이다. 사각형 $ABCD$의 둘레의 길이가 $90\\text{ cm}$일 때, 변 $BC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$38\\text{ cm}$",
+"solution": "$A$를 지나 $CD$와 평행한 직선이 변 $BC$와 만나는 점을 $E$라 하자. 사각형 $AECD$는 평행사변형이므로 $AE=CD$, $EC=AD$이다. 등변사다리꼴에서 $AB=CD$이므로 삼각형 $ABE$는 이등변삼각형이다. $\\angle ABE=60^\\circ$이므로 삼각형 $ABE$는 정삼각형이다. $AB=CD=x$, $AD=y$라 하면 $BE=x$이므로 $BC=x+y$이다. 한편, $\\angle ABF=\\angle AFB=30^\\circ$이므로 $AF=AB=x$이다. 마찬가지로 $DG=CD=x$이다. 점의 순서가 $A$, $G$, $F$, $D$이므로 $FG=AF+DG-AD=2x-y=4$이다. 둘레의 조건에서 $3x+2y=90$이다. 두 식을 연립하면 $x=14$, $y=24$이므로 $BC=x+y=38\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18695",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-64ca058c68",
+"typeId": "18695",
+"kind": "주관식",
+"diff": 4,
+"body": "$AD\\parallel BC$, $AD<BC$인 등변사다리꼴 $ABCD$에서 $\\angle ABC=60^\\circ$이고, 둘레의 길이는 $60\\text{ cm}$이다. $A$를 지나 $CD$와 평행한 직선이 변 $BC$와 만나는 점을 $E$라 하자. $\\angle DAB$와 $\\angle ADC$의 이등분선이 사각형 내부에서 만나는 점을 $O$라 할 때, $O$는 선분 $AE$ 위에 있고 $AO:OE=3:5$이다. 삼각형 $BOC$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$50\\text{ cm}$",
+"solution": "사각형 $AECD$는 평행사변형이므로 $AE=CD$, $EC=AD$이다. $AB=CD$이고 $\\angle ABE=60^\\circ$이므로 삼각형 $ABE$는 정삼각형이다. $AB=CD=x$, $AD=y$라 하면 $AE=BE=x$, $BC=x+y$이다. $\\angle DAB=\\angle ADC=120^\\circ$이고 $AO$, $DO$는 각각 이 각의 이등분선이므로 $\\angle OAD=\\angle ADO=60^\\circ$이다. 따라서 삼각형 $AOD$는 정삼각형이고 $AO=AD=y$이다. $O$가 선분 $AE$ 위에 있으므로 $OE=x-y$이다. 따라서 $y:(x-y)=3:5$에서 $y=3x/8$이다. 둘레의 조건 $3x+2y=60$에 대입하면 $x=16$, $y=6$이다. 따라서 $BC=22$, $OE=10$이다. $A$, $O$에서 직선 $BC$에 내린 수선의 발을 각각 $M$, $H$라 하자. 정삼각형 $ABE$에서 $BM=EM=8$이다. 직각삼각형 $EOH$와 $EAM$은 닮음이므로 $EH=EM\\times EO/EA=8\\times10/16=5$이다. 따라서 $BH=BE-EH=16-5=11$이다. 피타고라스 정리에 의해 $OH^2=OE^2-EH^2=100-25=75$이고, $BO^2=BH^2+OH^2=121+75=196$이므로 $BO=14$이다. $OA=OD$이므로 $O$는 $AD$의 수직이등분선 위에 있다. 등변사다리꼴에서 두 밑변의 수직이등분선은 일치하므로 $CO=BO=14$이다. 따라서 삼각형 $BOC$의 둘레의 길이는 $14+14+22=50\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18695",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-10260e3fae",
+"typeId": "18695",
+"kind": "주관식",
+"diff": 4,
+"body": "$AD\\parallel BC$, $AD<BC$인 등변사다리꼴 $ABCD$에서 $AD:AB:BC=3:5:9$이다. 반직선 $BA$와 반직선 $CD$가 만나는 점을 $P$, 두 대각선 $AC$와 $BD$가 만나는 점을 $O$라 하자. $PO=9\\text{ cm}$일 때, 사각형 $ABCD$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$66\\text{ cm}$",
+"solution": "$AD=3x$, $AB=CD=5x$, $BC=9x$라 하자. $A$를 지나 $CD$와 평행한 직선이 변 $BC$와 만나는 점을 $E$라 하면, 사각형 $AECD$는 평행사변형이므로 $AE=5x$, $EC=3x$이다. 따라서 삼각형 $ABE$는 $AB=AE=5x$, $BE=6x$인 이등변삼각형이다. $A$에서 $BE$에 내린 수선의 발을 $H$라 하면 $BH=3x$이다. 피타고라스 정리에 의해 $AH^2=(5x)^2-(3x)^2=16x^2$이므로 사다리꼴의 높이는 $AH=4x$이다. $AD\\parallel BC$이므로 삼각형 $PAD$와 $PBC$는 닮음이고, 닮음비는 $AD:BC=1:3$이다. 따라서 $P$에서 직선 $AD$, $BC$까지의 거리를 각각 $p$, $q$라 하면 $p:q=1:3$이다. $q-p=4x$이므로 $p=2x$이다. 또한 삼각형 $AOD$와 $COB$는 닮음이고 닮음비가 $1:3$이므로, $O$에서 두 밑변까지의 거리의 비도 $1:3$이다. 두 거리의 합이 $4x$이므로 $O$에서 $AD$까지의 거리는 $x$이다. 등변사다리꼴의 대칭성에 의해 $P$와 $O$는 두 밑변의 공통 수직이등분선 위에 있다. $P$와 $O$는 직선 $AD$의 서로 반대쪽에 있으므로 $PO=2x+x=3x$이다. 따라서 $3x=9$에서 $x=3$이다. 구하는 둘레의 길이는 $(3+5+9+5)x=22\\times3=66\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18695",
+"custom": true,
+"rv": 1
 }
 ]

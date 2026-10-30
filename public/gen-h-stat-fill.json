@@ -4209,5 +4209,47 @@
 "twinGroup": "tw-19419",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-f3e84c6231",
+"typeId": "19397",
+"kind": "주관식",
+"diff": 4,
+"body": "확률변수 $X$의 확률질량함수가\n$\\mathrm{P}(X=x)=\\dfrac{c}{x(x+1)}\\quad(x=1,2,\\ldots,8)$\n이다. $\\mathrm{P}(t\\le X\\le 2t)=\\dfrac{3}{16}$을 만족시키는 양수 $t$의 값의 범위를 구하시오. (단, $c$는 상수이다.)",
+"selfGrade": true,
+"answer": "$1<t<\\dfrac32$ 또는 $\\dfrac52\\le t<3$",
+"solution": "확률의 총합이 $1$이므로\n$1=c\\sum_{x=1}^{8}\\left(\\dfrac1x-\\dfrac1{x+1}\\right)=\\dfrac89c$에서 $c=\\dfrac98$이다.\n$0<t<\\dfrac12$이면 해당 확률은 $0$, $\\dfrac12\\le t<1$이면 $\\mathrm{P}(X=1)=\\dfrac9{16}$, $t=1$이면 $\\mathrm{P}(1\\le X\\le2)=\\dfrac34$이다. 따라서 $0<t\\le1$에서는 조건을 만족시키지 않는다.\n$t>3$이면 $\\mathrm{P}(t\\le X\\le2t)\\le\\mathrm{P}(4\\le X\\le8)=\\dfrac98\\left(\\dfrac14-\\dfrac19\\right)=\\dfrac5{32}<\\dfrac3{16}$이므로 조건을 만족시키지 않는다.\n$1<t\\le3$에서는 다음과 같이 나눈다.\n① $1<t<\\dfrac32$: $X=2$이므로 확률은 $\\dfrac3{16}$이다.\n② $\\dfrac32\\le t<2$: $X=2,3$이므로 확률은 $\\dfrac9{32}$이다.\n③ $t=2$: $X=2,3,4$이므로 확률은 $\\dfrac{27}{80}$이다.\n④ $2<t<\\dfrac52$: $X=3,4$이므로 확률은 $\\dfrac3{20}$이다.\n⑤ $\\dfrac52\\le t<3$: $X=3,4,5$이므로 확률은 $\\dfrac3{16}$이다.\n⑥ $t=3$: $X=3,4,5,6$이므로 확률은 $\\dfrac3{14}$이다.\n따라서 구하는 범위는 $1<t<\\dfrac32$ 또는 $\\dfrac52\\le t<3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19397",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-af3d83a392",
+"typeId": "19397",
+"kind": "주관식",
+"diff": 3,
+"body": "확률변수 $X$의 확률질량함수가\n$\\mathrm{P}(X=x)=c(x-a)^2\\quad(x=-3,-2,-1,0,1,2,3)$\n이고, $\\mathrm{P}(-1\\le X\\le1)=\\dfrac27$이다. $\\mathrm{P}(a-3\\le X\\le a)$의 값을 구하시오. (단, $a$와 $c$는 양의 상수이다.)",
+"selfGrade": true,
+"answer": "$\\dfrac{23-6\\sqrt6}{70}$",
+"solution": "확률의 총합이 $1$이므로\n$1=c\\sum_{x=-3}^{3}(x-a)^2=c(28+7a^2)$이다.\n또한 $\\mathrm{P}(-1\\le X\\le1)=c\\{(-1-a)^2+a^2+(1-a)^2\\}=c(2+3a^2)=\\dfrac27$이다.\n두 식에서 $7(2+3a^2)=2(28+7a^2)$이므로 $a^2=6$이다. $a>0$이므로 $a=\\sqrt6$이고, $c=\\dfrac1{70}$이다.\n$2<a<3$이므로 $-1<a-3<0$이다. 따라서 $a-3\\le X\\le a$를 만족시키는 $X$의 값은 $0,1,2$이다.\n구하는 확률은\n$\\dfrac1{70}\\{a^2+(1-a)^2+(2-a)^2\\}=\\dfrac{3a^2-6a+5}{70}=\\dfrac{23-6\\sqrt6}{70}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19397",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-05a67b9d09",
+"typeId": "19397",
+"kind": "주관식",
+"diff": 4,
+"body": "자연수 $n$에 대하여 확률변수 $X$의 확률질량함수가\n$\\mathrm{P}(X=x)=\\dfrac{c}{(x+3)(x+4)}\\quad(x=1,2,\\ldots,n)$\n이다. $1\\le m<n$인 자연수 $m$이 존재하여\n$\\mathrm{P}(1\\le X\\le m)=\\mathrm{P}(m+1\\le X\\le n)$\n을 만족시킬 때, $\\mathrm{P}(2\\le X\\le m+1)$이 가질 수 있는 최댓값을 구하시오. (단, $c$는 양의 상수이다.)",
+"selfGrade": true,
+"answer": "$\\dfrac7{20}$",
+"solution": "$\\dfrac1{(x+3)(x+4)}=\\dfrac1{x+3}-\\dfrac1{x+4}$이고 $c>0$이므로, 주어진 확률의 등식에서\n$\\dfrac14-\\dfrac1{m+4}=\\dfrac1{m+4}-\\dfrac1{n+4}$이다.\n따라서 $\\dfrac1{n+4}=\\dfrac{4-m}{4(m+4)}>0$이므로 $m<4$이다. $m$은 자연수이므로 $m=1,2,3$이다.\n$n+4=\\dfrac{4(m+4)}{4-m}$에 대입하면 $m=1$일 때 $n=\\dfrac83$, $m=2$일 때 $n=8$, $m=3$일 때 $n=24$이다. $n$은 자연수이고 $m<n$이므로 가능한 $(m,n)$은 $(2,8)$, $(3,24)$뿐이다.\n확률의 총합에서 $c\\left(\\dfrac14-\\dfrac1{n+4}\\right)=1$이므로 두 경우의 $c$는 각각 $6$, $\\dfrac{14}{3}$이다.\n한편 $\\mathrm{P}(2\\le X\\le m+1)=c\\left(\\dfrac15-\\dfrac1{m+5}\\right)$이다.\n$(m,n)=(2,8)$일 때는 $6\\left(\\dfrac15-\\dfrac17\\right)=\\dfrac{12}{35}$이고, $(m,n)=(3,24)$일 때는 $\\dfrac{14}{3}\\left(\\dfrac15-\\dfrac18\\right)=\\dfrac7{20}$이다.\n$\\dfrac7{20}-\\dfrac{12}{35}=\\dfrac1{140}>0$이므로 최댓값은 $\\dfrac7{20}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19397",
+"custom": true,
+"rv": 1
 }
 ]
