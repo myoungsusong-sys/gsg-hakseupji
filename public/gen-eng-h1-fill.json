@@ -2186,5 +2186,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-7826229132",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nWalking every day is a simple way to stay healthy. ⓐ Walking helps keep our heart strong and improves our physical health. ⓑ It can also reduce stress and make us feel happier. ⓒ We do not need expensive equipment to enjoy walking. ⓓ Many people buy new smartphones because they have better cameras. ⓔ Walking with family or friends can make exercise more enjoyable. Therefore, walking is a good activity for both our body and mind.",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "④",
+"solution": "이 글은 걷기 운동이 신체와 정신 건강에 주는 이점과 걷기의 편리함을 설명하고 있다. ⓐ, ⓑ, ⓒ, ⓔ는 모두 걷기 운동의 장점과 관련된 내용이다. 반면 ⓓ는 사람들이 카메라 성능이 좋은 새 스마트폰을 구매하는 이유를 설명하므로 글의 전체 흐름과 관계가 없다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-36bf2dc46b",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nCoral reefs are very important to ocean life and people. ⓐ Many kinds of fish and other sea animals live around coral reefs. ⓑ Coral reefs provide safe places for these animals to hide and find food. ⓒ They also help protect beaches from strong waves. ⓓ Some people enjoy watching movies about space and astronauts. ⓔ In addition, coral reefs attract tourists and help local people earn money. For these reasons, protecting coral reefs is important for both nature and human communities.",
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+],
+"answer": "④",
+"solution": "이 글의 중심 내용은 산호초가 해양 생물과 사람들에게 주는 다양한 이점이다. ⓐ와 ⓑ는 해양 생물의 서식지로서의 역할을, ⓒ는 해안 보호 기능을, ⓔ는 관광을 통한 경제적 이점을 설명한다. 그러나 ⓓ는 우주와 우주비행사에 관한 영화를 즐겨 보는 사람들에 대한 내용이므로 산호초의 중요성과 관계가 없다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true
 }
 ]

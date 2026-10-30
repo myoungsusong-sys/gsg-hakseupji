@@ -8287,5 +8287,89 @@
 "source": "유사 문항",
 "twinGroup": "tw-9837",
 "custom": true
+},
+{
+"id": "fill-e15885d768",
+"typeId": "17425",
+"kind": "객관식",
+"diff": 1,
+"body": "들이가 $300\\,\\mathrm{mL}$인 컵에 물을 가득 담아 빈 물통에 $2$번 부었더니 물통이 가득 찼습니다. 물통의 들이는 몇 $\\mathrm{mL}$입니까?",
+"choices": [
+"$400\\,\\mathrm{mL}$",
+"$500\\,\\mathrm{mL}$",
+"$600\\,\\mathrm{mL}$",
+"$700\\,\\mathrm{mL}$",
+"$800\\,\\mathrm{mL}$"
+],
+"answer": "③",
+"solution": "컵 한 번에 담긴 물은 $300\\,\\mathrm{mL}$입니다. 따라서 물통의 들이는 $300+300=600\\,\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-edc8605634",
+"typeId": "17425",
+"kind": "주관식",
+"diff": 1,
+"body": "물이 가득 들어 있는 물병에서 들이가 $200\\,\\mathrm{mL}$인 컵에 물을 가득 담아 한 번 덜어 냈습니다. 물병에 남은 물이 $500\\,\\mathrm{mL}$라면 물병의 들이는 몇 $\\mathrm{mL}$입니까?",
+"selfGrade": true,
+"answer": "$700\\,\\mathrm{mL}$",
+"solution": "물병의 들이는 덜어 낸 물의 양과 남은 물의 양을 더하면 구할 수 있습니다. 따라서 물병의 들이는 $200+500=700\\,\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-c5953f8685",
+"typeId": "17425",
+"kind": "주관식",
+"diff": 1,
+"body": "주스가 $400\\,\\mathrm{mL}$ 들어 있는 큰 병에 작은 병의 주스를 가득 담아 한 번 더 부었습니다. 큰 병에 들어 있는 주스가 $600\\,\\mathrm{mL}$가 되었다면 작은 병의 들이는 몇 $\\mathrm{mL}$입니까?",
+"selfGrade": true,
+"answer": "$200\\,\\mathrm{mL}$",
+"solution": "작은 병의 들이는 더 부은 주스의 양과 같습니다. 따라서 작은 병의 들이는 $600-400=200\\,\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-c1468e28d3",
+"typeId": "17424",
+"kind": "주관식",
+"diff": 1,
+"body": "물뿌리개에 있던 물 중 $300\\,\\mathrm{mL}$를 화단에 주었더니 $500\\,\\mathrm{mL}$가 남았습니다. 처음 물뿌리개에 있던 물은 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "800 mL",
+"solution": "처음 물의 양은 화단에 준 물의 양과 남은 물의 양을 더하면 됩니다. 따라서 처음 물의 양은 $300+500=800\\,(\\mathrm{mL})$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17424",
+"custom": true
+},
+{
+"id": "fill-7e7d62cf83",
+"typeId": "17424",
+"kind": "주관식",
+"diff": 1,
+"body": "통에 있던 오렌지주스 중 $200\\,\\mathrm{mL}$를 컵에 따랐더니 통에 $400\\,\\mathrm{mL}$가 남았습니다. 처음 통에 있던 오렌지주스는 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "600 mL",
+"solution": "처음 주스의 양은 컵에 따른 양과 통에 남은 양을 더하면 됩니다. 따라서 처음 주스의 양은 $200+400=600\\,(\\mathrm{mL})$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17424",
+"custom": true
+},
+{
+"id": "fill-7afd899f97",
+"typeId": "17424",
+"kind": "주관식",
+"diff": 1,
+"body": "냄비에 있던 국 중 $600\\,\\mathrm{mL}$를 그릇에 덜었더니 냄비에 $300\\,\\mathrm{mL}$가 남았습니다. 처음 냄비에 있던 국은 몇 $\\mathrm{mL}$인가요?",
+"selfGrade": true,
+"answer": "900 mL",
+"solution": "처음 국의 양은 그릇에 던 양과 냄비에 남은 양을 더하면 됩니다. 따라서 처음 국의 양은 $600+300=900\\,(\\mathrm{mL})$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17424",
+"custom": true
 }
 ]

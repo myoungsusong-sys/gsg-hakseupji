@@ -3631,5 +3631,480 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-u0m1s3t0",
 "custom": true
+},
+{
+"id": "fill-2cbbccd50f",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nMany people think that being a good communicator simply means speaking well. However, communication is a two-way process. When a friend tells you about a problem, often the best thing you can do is to stay quiet and pay full attention. Look at the person, avoid interrupting, and ask questions to show that you understand. People who feel truly heard tend to trust you more and share more of their thoughts. Sometimes they even find answers to their own problems just by talking them through. In short, good communication begins not with talking but with ________.",
+"choices": [
+"writing",
+"listening",
+"arguing",
+"reading",
+"teaching"
+],
+"answer": "②",
+"solution": "이 글은 좋은 의사소통이 말을 잘하는 것보다 상대의 말에 집중하는 데서 시작한다고 말한다. 조용히 주의를 기울이기, 말을 끊지 않기, 이해했음을 보여 주는 질문하기는 모두 '듣기'에 해당하는 행동이다. 빈칸 앞의 'not with talking but with'도 talking과 대조되는 말을 요구한다. 따라서 정답은 ② listening(듣기)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-40fae0faee",
+"typeId": "eng-h2-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA farmer who plants seeds cannot pull on the young plants to make them grow faster. Doing so would only damage their roots. Instead, the farmer waters them, removes the weeds, and waits. Learning a new skill works in much the same way. When you start to learn a musical instrument or a foreign language, your progress may seem very slow at first, and many people give up after a few weeks. Those who keep practicing day after day, however, eventually see their efforts pay off. Real growth takes time, so the key to success is ________.",
+"choices": [
+"speed",
+"luck",
+"patience",
+"talent",
+"money"
+],
+"answer": "③",
+"solution": "농부는 싹을 억지로 잡아당기지 않고 기다리며, 새로운 기술을 배울 때도 처음에는 느려 보이더라도 꾸준히 연습하는 사람이 결국 성과를 얻는다는 내용이다. 빈칸 바로 앞의 'Real growth takes time'이 결정적인 단서이다. 서두르지 않고 꾸준히 기다리는 태도를 가리키므로 정답은 ③ patience(인내)이다. speed는 글의 내용과 반대되고, talent는 글에서 다루지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ff74e2e2c3",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nExercise is good for more than just the body; it also helps the mind. ________, people who go for a short walk during a busy day often find it easier to concentrate on their work and feel less stressed afterward.",
+"choices": [
+"① However",
+"② For example",
+"③ Therefore",
+"④ In contrast",
+"⑤ Instead"
+],
+"answer": "②",
+"solution": "빈칸 앞은 운동이 몸뿐 아니라 마음에도 좋다는 일반적 진술이고, 뒤 문장은 '짧은 산책'이라는 구체적 사례를 제시한다. 따라서 '예를 들어'라는 뜻의 For example이 알맞다. 앞뒤가 대조나 인과 관계가 아니므로 However, Therefore, In contrast, Instead는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-a03d92de58",
+"typeId": "eng-h2-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nHoney is one of the few foods that almost never goes bad. Archaeologists have even found honey in ancient tombs that was thousands of years old but still safe to eat. ________, you do not really need to worry about a jar of honey in your kitchen passing its expiration date.",
+"choices": [
+"① Therefore",
+"② However",
+"③ For example",
+"④ In contrast",
+"⑤ Similarly"
+],
+"answer": "①",
+"solution": "앞부분은 꿀이 거의 상하지 않는다는 근거(고대 무덤의 꿀도 먹을 수 있었음)를 제시하고, 빈칸 뒤는 '그러니 유통기한을 걱정할 필요가 없다'는 결론이다. 원인에서 결론으로 이어지므로 '그러므로'라는 뜻의 Therefore가 알맞다. 역접(However), 예시(For example), 대조(In contrast), 유사(Similarly)는 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-37342b90e4",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nOn the first day of a new school year, students often sit quietly in a classroom full of unfamiliar faces. No one wants to speak first, and the silence can feel uncomfortable. Many teachers know this and start the class with a simple activity. For example, they may ask students to find someone who was born in the same month or likes the same food. Soon, students begin to laugh and talk with one another, and the room feels much friendlier. A small game like this can help people **break the ice** and feel comfortable with each other.",
+"choices": [
+"다른 사람과 한 약속을 어기다",
+"처음 만난 사람들 사이의 어색한 분위기를 풀다",
+"위험한 일에 용기 있게 도전하다",
+"다른 사람을 차갑고 냉정하게 대하다",
+"오래된 규칙이나 관습을 바꾸다"
+],
+"answer": "②",
+"solution": "글은 새 학년 첫날 서로 모르는 학생들이 말을 꺼내지 못해 어색한 상황에서 간단한 활동을 하자 웃고 이야기하며 분위기가 친근해지는 과정을 설명한다. 따라서 break the ice는 '얼음을 깨다'라는 글자 그대로의 뜻이 아니라, 처음 만난 사람들 사이의 어색함을 풀고 서로 편해지는 것을 뜻한다. ①은 break(깨다)를 약속에, ④는 ice(차가움)를 태도에 연결한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-1716a019d6",
+"typeId": "eng-h2-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nA high school basketball team was leading by ten points with only five minutes left in the game. Some of the players began talking about how they would celebrate their victory. They even stopped running hard on defense. But the other team did not give up. They scored again and again, and in the last few seconds, they won the game by one point. After the game, the coach said to his players, \"You started celebrating too early. Remember, never **count your chickens before they hatch**.\"",
+"choices": [
+"practice harder than your opponents",
+"take good care of small animals",
+"expect success before it is certain",
+"share the victory with your teammates",
+"keep track of the score during a game"
+],
+"answer": "③",
+"solution": "팀은 10점 앞서 있다는 이유로 경기가 끝나기도 전에 승리를 축하할 생각을 하다가 결국 역전패했다. 코치는 '너무 일찍 축하했다'고 말하며 이 속담을 인용하므로, 굵은 부분은 '병아리가 부화하기 전에 세다', 즉 아직 확실하지 않은 성공을 미리 기대하다라는 뜻이다. ②는 chickens를, ⑤는 count를 글자 그대로 해석한 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-ad3fa3f0ee",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문의 내용과 일치하는 것은?\n\nSchool Art Workshop\nEnjoy painting and making art with your friends!\n\n• Date: August 14 (Friday)\n• Time: 1:00 p.m. – 4:00 p.m.\n• Place: School Art Room\n• Who: High school students\n• Fee: 10,000 won (all materials included)\n• Activities: Painting and making paper flowers\n• Registration: Sign up at the school office by August 10.\n\n※ Students do not need to bring any art materials.",
+"choices": [
+"① 워크숍은 토요일에 열린다.",
+"② 워크숍은 오전 10시에 시작한다.",
+"③ 워크숍은 학교 미술실에서 진행된다.",
+"④ 참가자는 미술 재료를 직접 가져와야 한다.",
+"⑤ 참가 신청은 8월 14일까지 할 수 있다."
+],
+"answer": "③",
+"solution": "안내문의 Place 항목에 'School Art Room'이라고 명시되어 있으므로 워크숍은 학교 미술실에서 진행된다. 따라서 정답은 ③이다. 워크숍은 금요일 오후 1시에 시작하며, 미술 재료를 가져올 필요가 없고 신청 마감일은 8월 10일이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-e5c6ddccb2",
+"typeId": "eng-h2-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 표의 내용과 일치하지 않는 것은?\n\nThe table below shows the number of books borrowed from a school library by students in four grades during two months.\n\n[Number of Books Borrowed from the School Library]\n\nGrade | March | April\nGrade 7 | 40 | 50\nGrade 8 | 35 | 30\nGrade 9 | 25 | 35\nGrade 10 | 20 | 25",
+"choices": [
+"① In March, Grade 7 students borrowed 40 books.",
+"② In April, Grade 8 students borrowed 30 books.",
+"③ Grade 9 students borrowed more books in April than in March.",
+"④ Grade 10 students borrowed 25 books in March.",
+"⑤ In April, Grade 7 students borrowed the most books."
+],
+"answer": "④",
+"solution": "표에 따르면 Grade 10 학생들이 3월에 빌린 책은 20권이고, 4월에 빌린 책은 25권이다. 따라서 3월에 25권을 빌렸다는 ④는 표의 내용과 일치하지 않는다. 나머지 선택지는 모두 표에 제시된 수치와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-51f00d45b6",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nLibraries are special places where anyone can borrow books for free. Long ago, only rich people ⓐ**could** read, because books were expensive and rare. Today, a public library ⓑ**offers** thousands of books to everyone in the community. Many libraries also have computers ⓒ**that** people can use to find information online. A quiet reading room ⓓ**give** students a comfortable place to study. For these reasons, libraries ⓔ**remain** important even in the digital age.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓓ의 주어는 단수 명사 A quiet reading room이므로 동사도 단수형 gives가 되어야 한다. 따라서 give는 gives로 고쳐야 한다. ⓐ 조동사+동사원형, ⓑ 단수 주어 a public library에 맞는 offers, ⓒ 선행사 computers를 받는 목적격 관계대명사 that, ⓔ 복수 주어 libraries에 맞는 remain은 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-8b838f6b27",
+"typeId": "eng-h2-u1m0s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 어법상 틀린 것은?\n\nHoneybees are small insects that work very ⓐ**hard** every day. A single bee visits hundreds of flowers to collect nectar, ⓑ**which** it carries back to the hive. Inside the hive, bees turn the nectar into honey ⓒ**slow** over several days. This honey becomes food for the whole colony during the cold winter. Without bees, many plants could not produce the fruits and seeds ⓓ**that** we eat. For this reason, scientists say that protecting bees ⓔ**is** very important.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ는 동사 turn을 수식하므로 형용사 slow가 아니라 부사 slowly가 되어야 한다. ⓐ hard는 '열심히'라는 뜻의 부사로 동사 work를 바르게 수식하고, ⓑ는 앞 절(nectar를 모으는 것)을 받는 관계대명사 which, ⓓ는 선행사 the fruits and seeds를 받는 목적격 관계대명사 that, ⓔ는 동명사 주어 protecting bees에 맞는 단수 동사 is로 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m0s1t0",
+"custom": true
+},
+{
+"id": "fill-6c164c9d9d",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nRegular exercise is good for both the body and the mind. When we exercise, our heart becomes ⓐ**stronger** and our blood flows more easily. Exercise also ⓑ**reduces** stress, because it helps the body release chemicals that make us feel good. People who exercise regularly often sleep ⓒ**better** at night. However, many people say they are too busy to exercise. Experts suggest that even short activities, such as walking to school or taking the stairs instead of the elevator, can be ⓓ**useless** for our health. The key is to make exercise a ⓔ**habit** rather than something we do only once in a while.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "글 전체가 규칙적인 운동의 이로움을 말하고, 바쁜 사람도 짧은 활동부터 할 수 있다고 권하는 흐름이다. 걸어서 등교하기나 계단 이용하기 같은 짧은 활동도 건강에 '도움이 된다'고 해야 하므로 ⓓ useless는 helpful이나 beneficial로 고쳐야 한다. 나머지 stronger, reduces, better, habit은 모두 문맥에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b516f21a2e",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nMany teenagers use their smartphones late at night. The bright light from the screen can ⓐ**disturb** sleep because it tells the brain that it is still daytime. As a result, students may feel ⓑ**energetic** the next morning and find it hard to ⓒ**focus** in class. To sleep well, experts recommend turning off phones about an hour before going to bed. Instead, you can read a paper book or listen to ⓓ**calm** music. Small changes like these can ⓔ**improve** the quality of your sleep.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "밤늦게 스마트폰을 쓰면 화면 불빛이 잠을 방해한다는 내용이므로, 그 결과 다음 날 아침에는 '피곤함'을 느낀다고 해야 한다. 바로 뒤의 '수업에 집중하기 어렵다'는 내용과도 이어져야 하므로 ⓑ energetic은 tired나 sleepy로 고쳐야 한다. disturb, focus, calm, improve는 모두 흐름에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ff2c7aea15",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nEvery year, a large amount of food around the world is thrown away. When food is wasted, the water, energy, and labor used to produce it are ⓐ**lost** as well. In addition, food that rots in landfills ⓑ**releases** methane, a gas that contributes to global warming. In the past, fruits and vegetables with strange shapes were often ⓒ**accepted** by stores simply because of their appearance, even though they were perfectly safe to eat. Today, some stores sell such \"ugly\" produce at lower prices. At home, people can also ⓓ**reduce** waste by planning meals before shopping and buying only what they ⓔ**need**.\n\n*landfill: 쓰레기 매립지  *produce: 농산물",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "모양이 이상한 과일과 채소는 먹기에 전혀 문제가 없는데도(even though) 생김새 때문에 상점에서 '거부되었다'는 내용이어야 한다. 그래야 오늘날 이런 농산물을 싸게 판다는 다음 문장과 대비가 된다. 따라서 ⓒ accepted는 rejected로 고쳐야 한다. 나머지 낱말은 모두 문맥에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-37f53afd33",
+"typeId": "eng-h2-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nOnce we have learned something, it becomes surprisingly difficult to imagine what it was like not to know it. Psychologists call this the \"curse of knowledge.\" Experts, in particular, tend to ⓐ**underestimate** how much others understand, skipping steps that seem obvious to them but are anything but obvious to beginners. Ironically, then, the very knowledge that qualifies someone to teach can ⓑ**hinder** effective teaching. A teacher who has solved a certain type of problem hundreds of times may no longer ⓒ**notice** the small decisions involved in solving it, because those decisions have become automatic. To overcome this, good communicators deliberately ⓓ**adopt** the perspective of a novice, testing their explanations on people who are unfamiliar with the subject. In this sense, the curse of knowledge is best ⓔ**resolved** not by knowing more but by remembering what it felt like to know less.\n\n*novice: 초보자",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "'지식의 저주'란 전문가가 남들도 자기만큼 안다고 여겨 초보자에게 필요한 단계를 건너뛰는 현상이다. 따라서 전문가는 남들이 이해하는 정도를 '과대평가한다'고 해야 하므로 ⓐ underestimate는 overestimate로 고쳐야 한다. 뒤의 '분사구문(skipping steps…)'과 연결해 보아야 판단할 수 있는 함정이다. ⓑ hinder는 Ironically와 이어져 지식이 오히려 가르치는 일을 방해한다는 역설을 나타내므로 적절하다. ⓒ notice, ⓓ adopt, ⓔ resolved도 모두 흐름에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3d292e38e8",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 굵게 표시한 단어의 우리말 뜻으로 알맞은 것은?\n\nShe tried to **persuade** her parents to let her study abroad.",
+"choices": [
+"설득하다",
+"무시하다",
+"숨기다",
+"비교하다",
+"수리하다"
+],
+"answer": "①",
+"solution": "persuade는 '설득하다'라는 뜻의 기본 동사이다. 유학을 가게 해 달라고 부모님을 설득하려 했다는 문맥과도 자연스럽게 맞는다. 나머지 선지는 persuade와 관련 없는 뜻이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-fdb052db55",
+"typeId": "eng-h2-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 굵게 표시한 단어의 우리말 뜻으로 알맞은 것은?\n\nThe teacher asked the students to **describe** the picture in English.",
+"choices": [
+"파괴하다",
+"묘사하다, 설명하다",
+"무시하다",
+"발명하다",
+"빌리다"
+],
+"answer": "②",
+"solution": "describe는 '묘사하다, 설명하다'라는 뜻이다. 학생들에게 그림을 영어로 묘사해 보라고 했다는 문맥과 자연스럽게 어울린다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-774af24c84",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 맞는 영어 단어의 철자로 옳은 것은?\n\n정부",
+"choices": [
+"goverment",
+"government",
+"governmant",
+"guvernment",
+"govermant"
+],
+"answer": "②",
+"solution": "'정부'를 뜻하는 영어 단어는 government이다. 동사 govern(다스리다)에 명사 접미사 -ment가 붙은 형태라서 govern의 n이 빠지면 안 된다. ①과 ⑤는 n이 빠졌고, ③은 접미사를 -mant로 잘못 썼으며, ④는 첫 모음을 u로 잘못 썼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-90294a0d24",
+"typeId": "eng-h2-u3m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 맞는 영어 단어의 철자로 옳은 것은?\n\n도서관",
+"choices": [
+"libary",
+"librery",
+"liberary",
+"library",
+"libraray"
+],
+"answer": "④",
+"solution": "'도서관'을 뜻하는 영어 단어는 library이며 철자는 l-i-b-r-a-r-y이다. ①은 첫 번째 r이 빠졌고, ②는 a를 e로 잘못 썼다. ③은 b 뒤에 e가 더 들어갔고, ⑤는 a가 하나 더 들어갔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-4561ef3d04",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nShe is not only kind but also honest.",
+"choices": [
+"그녀는 친절하기만 하고 정직하지는 않다.",
+"그녀는 친절하지도 정직하지도 않다.",
+"그녀는 친절할 뿐만 아니라 정직하기도 하다.",
+"그녀는 정직하기 때문에 친절하다.",
+"그녀는 친절하거나 정직하거나 둘 중 하나이다."
+],
+"answer": "③",
+"solution": "'not only A but also B'는 'A뿐만 아니라 B도'라는 뜻이다. 따라서 친절할 뿐만 아니라 정직하기도 하다는 ③이 알맞다. 두 성질을 모두 긍정하는 구문이므로 ①②④⑤처럼 하나를 부정하거나 인과·선택으로 옮긴 것은 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-af6e83f5be",
+"typeId": "eng-h2-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe sooner you start, the earlier you will finish.",
+"choices": [
+"네가 일찍 시작할수록 더 일찍 끝낼 것이다.",
+"네가 늦게 시작할수록 더 일찍 끝낼 것이다.",
+"네가 일찍 시작하면 결코 끝내지 못할 것이다.",
+"일찍 끝내려면 늦게 시작해야 한다.",
+"네가 시작하든 안 하든 끝나는 시간은 같다."
+],
+"answer": "①",
+"solution": "'the+비교급 ~, the+비교급 …'은 '~할수록 더 …하다'라는 뜻이다. sooner는 '더 일찍', earlier도 '더 일찍'이므로 '일찍 시작할수록 더 일찍 끝낼 것이다'가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-17959f02b2",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nHer ________ made everyone in the room happy.",
+"choices": [
+"① kind",
+"② kindly",
+"③ kindness",
+"④ kinder",
+"⑤ kindest"
+],
+"answer": "③",
+"solution": "빈칸 앞에 소유격 Her가 있고 뒤에 동사 made가 있으므로 빈칸에는 주어 역할을 하는 명사가 필요하다. kind는 형용사이고, 그 명사형은 kindness(친절함)이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-86b2eb7a56",
+"typeId": "eng-h2-u1m1s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 동사와 그 명사형이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"① develop – development",
+"② improve – improvement",
+"③ agree – agreement",
+"④ move – movement",
+"⑤ enjoy – enjoyable"
+],
+"answer": "⑤",
+"solution": "①~④는 모두 동사와 그 명사형이 올바르게 짝지어진 경우이다. ⑤의 enjoyable은 '즐거운'이라는 뜻의 형용사이므로 명사형이 아니다. enjoy의 올바른 명사형은 enjoyment(즐거움)이다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-73a00a2a7b",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nHowever, the birds at the edge of the huddle are still exposed to the freezing wind.\n\nDuring the Antarctic winter, male emperor penguins must survive extremely cold weather. ( A ) To keep warm, they gather closely together in large groups called huddles. ( B ) The temperature inside a huddle can be much higher than the temperature outside. ( C ) Fortunately, the penguins do not stay in the same positions. ( D ) They slowly move around, allowing those at the edge to move toward the warmer center. ( E ) In this way, the penguins help one another survive the harsh winter.",
+"choices": [
+"① (A)",
+"② (B)",
+"③ (C)",
+"④ (D)",
+"⑤ (E)"
+],
+"answer": "③",
+"solution": "주어진 문장은 무리의 가장자리에 있는 펭귄들이 여전히 차가운 바람에 노출된다는 내용이다. (C) 앞에서는 무리 안쪽의 온도가 바깥보다 높다고 설명하고, (C) 뒤에서는 다행히 펭귄들이 같은 자리에 머물지 않는다고 설명한다. 따라서 안쪽과 가장자리의 온도 차이를 대조하면서 위치 이동의 필요성을 제시하는 (C)가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-06cf6695ff",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThis is because blue light is scattered more strongly than red light.\n\nSunlight may look white, but it actually contains many different colors. ( A ) When sunlight enters Earth's atmosphere, tiny gas molecules scatter the light in different directions. ( B ) During the day, the sky usually appears blue rather than red. ( C ) At sunset, however, sunlight travels through a much longer path in the atmosphere. ( D ) Much of the blue light is scattered away before the sunlight reaches our eyes. ( E ) As a result, we often see beautiful red and orange colors in the evening sky.",
+"choices": [
+"① (A)",
+"② (B)",
+"③ (C)",
+"④ (D)",
+"⑤ (E)"
+],
+"answer": "③",
+"solution": "주어진 문장은 파란빛이 빨간빛보다 더 강하게 산란되기 때문이라는 원인을 설명한다. (C) 앞 문장은 낮에 하늘이 빨간색보다 파란색으로 보인다는 현상을 제시하므로 주어진 문장이 그 이유를 설명하는 구조가 자연스럽다. 또한 (C) 뒤에서는 At sunset, however를 통해 낮의 하늘에서 저녁노을로 화제가 전환된다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-ff673bef9d",
+"typeId": "eng-h2-u0m2s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nYet this does not mean that recycling paper is useless.\n\nPaper is made from tiny plant fibers that are pressed together into thin sheets. ( A ) When used paper is recycled, it is broken down in water so that the fibers can be used again. ( B ) However, the fibers become shorter and weaker each time they go through this process. ( C ) After several cycles, they become too short to form new sheets of paper. Therefore, the same fibers cannot be recycled forever. ( D ) Recycling still helps reduce the number of trees that need to be cut down. ( E ) For this reason, recycling paper remains an important way to protect the environment, even though there is a limit to how many times the fibers can be reused.",
+"choices": [
+"① (A)",
+"② (B)",
+"③ (C)",
+"④ (D)",
+"⑤ (E)"
+],
+"answer": "④",
+"solution": "주어진 문장은 종이의 재활용 횟수에 한계가 있다는 사실이 재활용의 무용함을 뜻하지는 않는다는 내용이다. (D) 앞에서는 종이 섬유가 계속 짧아지기 때문에 무한히 재활용할 수 없다는 한계를 설명한다. 반면 (D) 뒤에서는 재활용이 나무의 벌목을 줄이는 데 도움이 된다고 하여 재활용의 가치를 강조한다. 따라서 Yet으로 앞뒤 내용의 대조를 자연스럽게 연결할 수 있는 위치는 (D)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m2s1t0",
+"custom": true
 }
 ]
