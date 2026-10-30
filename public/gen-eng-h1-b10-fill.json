@@ -1,202 +1,5 @@
 [
 {
-"id": "fill-3f72870370",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장에서 밑줄 친 tough의 의미로 가장 적절한 것은?\n\nThe cloth from Genoa was tough enough to be used for work clothes.",
-"choices": [
-"부드러운",
-"질긴",
-"값비싼",
-"가벼운",
-"화려한"
-],
-"answer": "②",
-"solution": "작업복을 만드는 데 사용될 정도의 천을 설명하므로 tough는 쉽게 찢어지지 않는다는 뜻이다. 따라서 ‘질긴’이 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-36177fd495",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe name “flip-flops” comes from the ______ the shoes make while a person is walking.",
-"choices": [
-"color",
-"sound",
-"shape",
-"city",
-"material"
-],
-"answer": "②",
-"solution": "플립플롭의 고무 밑창은 걸을 때 발바닥에 부딪쳐 특유의 소리를 낸다. 따라서 이름의 유래를 나타내는 말은 sound이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-36d34d03bc",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nGênes is the French name for the Italian city of ______.",
-"choices": [
-"Genoa",
-"France",
-"England",
-"Egypt",
-"Europe"
-],
-"answer": "①",
-"solution": "Gênes는 이탈리아 도시 Genoa의 프랑스어 이름이다. 따라서 빈칸에는 Genoa가 들어간다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-d3ec79ba62",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 문장에서 밑줄 친 major와 의미가 가장 가까운 것은?\n\nGenoa was a major center for trade in the 17th and 18th centuries.",
-"choices": [
-"unimportant",
-"leading",
-"temporary",
-"distant",
-"secret"
-],
-"answer": "②",
-"solution": "문맥상 Genoa는 당시 무역에서 중요한 역할을 한 중심지였다. major는 여기서 ‘주요한’이라는 뜻이므로 leading과 가장 가깝다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-4e9a917903",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 우리말과 의미가 일치하는 영어 문장을 고르시오.\n\n그 신발의 고무 밑창은 사람들이 걸을 때 발바닥에 부딪힌다.",
-"choices": [
-"The rubber soles hit the bottom of people’s feet as they walk.",
-"The rubber soles are hit by people before they walk.",
-"People hit the rubber soles because the shoes are old.",
-"The bottom of the shoes hits the ground while people swim.",
-"The rubber soles stop people from making any sound."
-],
-"answer": "①",
-"solution": "‘~할 때’는 접속사 as로, ‘발바닥에 부딪히다’는 hit the bottom of people’s feet로 표현할 수 있다. 의미와 문법이 모두 올바른 것은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-04e0361636",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 중 어법상 옳은 문장을 고르시오.",
-"choices": [
-"The pants named jeans because they made of jean.",
-"French was widely speaking in Europe at that time.",
-"Genoa was an important center for trade.",
-"Merchants from Genoa were traded their goods throughout Europe.",
-"The sound became naming of the shoes in the USA."
-],
-"answer": "③",
-"solution": "③은 주어와 동사의 관계 및 문장 구조가 모두 올바르다. ①은 were가 필요하고, ②는 spoken, ④는 traded, ⑤는 the name이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-a9d42ee627",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 설명 중 옳은 것만을 고른 것은?\n\nㄱ. jean은 프랑스어 지명 Gênes가 변형된 말이다.\nㄴ. jandals는 Japanese sandals를 줄여 만든 말이다.\nㄷ. flip-flops는 한 무역 도시의 이름에서 유래했다.",
-"choices": [
-"ㄱ",
-"ㄴ",
-"ㄷ",
-"ㄱ, ㄴ",
-"ㄱ, ㄴ, ㄷ"
-],
-"answer": "④",
-"solution": "jean은 Gênes의 변형이고, jandals는 Japanese sandals의 축약형이므로 ㄱ과 ㄴ은 옳다. flip-flops는 걸을 때 나는 소리에서 유래했으므로 ㄷ은 옳지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-937a276905",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 두 문장의 빈칸에 공통으로 들어갈 단어로 가장 적절한 것은?\n\n• The word jean is a ______ of the French place-name Gênes.\n• Jandals is a shortened ______ of the expression “Japanese sandals.”",
-"choices": [
-"history",
-"modification",
-"trade",
-"painting",
-"material"
-],
-"answer": "②",
-"solution": "첫 문장은 jean이 Gênes에서 변형되었다는 뜻이고, 둘째 문장은 jandals가 긴 표현을 줄인 형태라는 뜻이다. 두 경우 모두 원래 말이 바뀐 형태를 나타내므로 modification이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-6cf7d09a27",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "주어진 글 다음에 이어질 내용의 순서로 가장 적절한 것을 고르시오.\n\nThe name of blue jeans developed through trade and language.\n\n(A) Since French was commonly used in Europe, people called the material “bleu de Gênes.”\n(B) Merchants from Genoa carried a strong blue cotton cloth to other parts of Europe.\n(C) In English, pants made from that material eventually became known as blue jeans.",
-"choices": [
-"(A)－(C)－(B)",
-"(B)－(A)－(C)",
-"(B)－(C)－(A)",
-"(C)－(A)－(B)",
-"(C)－(B)－(A)"
-],
-"answer": "②",
-"solution": "먼저 Genoa의 상인들이 천을 유럽에 전한 내용인 (B)가 나와야 한다. 이어 프랑스어 명칭이 붙은 과정인 (A), 그 명칭이 영어의 blue jeans로 이어진 결과인 (C)가 오는 것이 자연스럽다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-fd56f83120",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 문맥과 괄호 안의 단어를 고려하여 빈칸에 들어갈 한 단어를 쓰시오.\n\nThe noun “jean” developed from Gênes, the French name for Genoa. In other words, the French place-name was gradually ______ into an English word. (modification)",
-"selfGrade": true,
-"answer": "modified",
-"solution": "괄호의 modification을 동사 modify로 바꾸어야 한다. 주어인 the French place-name이 변형된 것이므로 수동태 was modified가 되어야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-87ea6086d0",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 조건에 맞게 우리말을 영어로 쓰시오.\n\n그 신발은 사람들이 걸을 때 고무 밑창이 내는 소리 때문에 미국에서 flip-flops라고 불린다.\n\n<조건>\n• 수동태를 사용할 것\n• because와 as를 모두 사용할 것\n• 다음 단어를 모두 한 번씩 사용할 것: called, rubber, soles, sound",
-"selfGrade": true,
-"answer": "The shoes are called flip-flops in the USA because their rubber soles make that sound as people walk.",
-"solution": "‘~라고 불린다’는 수동태 are called로 표현한다. 이름이 붙은 이유는 because절로 나타내고, 사람들이 걷는 때는 as people walk로 연결해야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
 "id": "fill-3c92eef35d",
 "typeId": "eng-h1-b10-u3m7s0t0",
 "kind": "객관식",
@@ -4860,63 +4663,6 @@
 "custom": true
 },
 {
-"id": "fill-d1084c1b97",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
-"choices": [
-"cloth – 천, 옷감",
-"merchant – 상인",
-"tough – 질긴, 튼튼한",
-"ancient – 고대의",
-"trade – 바느질"
-],
-"answer": "⑤",
-"solution": "'trade'는 '무역, 거래하다'라는 뜻이다. 나머지는 모두 바르게 연결되어 있다. 따라서 뜻이 잘못 짝지어진 것은 ⑤번이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-fda41597cc",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe rubber ________ hit the bottom of your feet as you walk, making a flip-flop sound.",
-"choices": [
-"soles",
-"names",
-"jeans",
-"toes",
-"clouds"
-],
-"answer": "①",
-"solution": "걸을 때 발바닥에 닿아 '플립플롭' 소리를 내는 것은 신발의 고무 '밑창(soles)'이다. 문맥상 나머지 단어들은 어울리지 않으므로 정답은 ①번이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
-"id": "fill-ebe434dc3f",
-"typeId": "eng-h1-b10-u1m7s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 영영 풀이가 가리키는 단어로 알맞은 것은?\n\na person who buys and sells goods, especially one who trades with other countries",
-"choices": [
-"merchant",
-"painting",
-"cotton",
-"sandal",
-"toe"
-],
-"answer": "①",
-"solution": "'물건을 사고파는 사람, 특히 다른 나라와 거래하는 사람'은 '상인(merchant)'을 뜻한다. 지문의 'Sailing merchants from Genoa'에서 쓰인 단어이므로 정답은 ①번이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
-"custom": true
-},
-{
 "id": "fill-db8ea42679",
 "typeId": "eng-h1-b10-u6m6s0t0",
 "kind": "주관식",
@@ -5686,5 +5432,239 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u6m1s0t0",
 "custom": true
+},
+{
+"id": "fill-d1084c1b97",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"answer": "⑤",
+"solution": "'trade'는 '무역, 거래하다'라는 뜻이다. 나머지는 모두 바르게 연결되어 있다. 따라서 뜻이 잘못 짝지어진 것은 ⑤번이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"cloth – 천, 옷감",
+"merchant – 상인",
+"tough – 질긴, 튼튼한",
+"ancient – 고대의",
+"trade – 바느질"
+]
+},
+{
+"id": "fill-fda41597cc",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe rubber ________ hit the bottom of your feet as you walk, making a flip-flop sound.",
+"answer": "①",
+"solution": "걸을 때 발바닥에 닿아 '플립플롭' 소리를 내는 것은 신발의 고무 '밑창(soles)'이다. 문맥상 나머지 단어들은 어울리지 않으므로 정답은 ①번이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"soles",
+"names",
+"jeans",
+"toes",
+"clouds"
+]
+},
+{
+"id": "fill-ebe434dc3f",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이가 가리키는 단어로 알맞은 것은?\n\na person who buys and sells goods, especially one who trades with other countries",
+"answer": "①",
+"solution": "'물건을 사고파는 사람, 특히 다른 나라와 거래하는 사람'은 '상인(merchant)'을 뜻한다. 지문의 'Sailing merchants from Genoa'에서 쓰인 단어이므로 정답은 ①번이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"merchant",
+"painting",
+"cotton",
+"sandal",
+"toe"
+]
+},
+{
+"id": "fill-3f72870370",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 tough의 의미로 가장 적절한 것은?\n\nThe cloth from Genoa was tough enough to be used for work clothes.",
+"answer": "②",
+"solution": "작업복을 만드는 데 사용될 정도의 천을 설명하므로 tough는 쉽게 찢어지지 않는다는 뜻이다. 따라서 ‘질긴’이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"부드러운",
+"질긴",
+"값비싼",
+"가벼운",
+"화려한"
+]
+},
+{
+"id": "fill-36177fd495",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe name “flip-flops” comes from the ______ the shoes make while a person is walking.",
+"answer": "②",
+"solution": "플립플롭의 고무 밑창은 걸을 때 발바닥에 부딪쳐 특유의 소리를 낸다. 따라서 이름의 유래를 나타내는 말은 sound이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"color",
+"sound",
+"shape",
+"city",
+"material"
+]
+},
+{
+"id": "fill-36d34d03bc",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nGênes is the French name for the Italian city of ______.",
+"answer": "①",
+"solution": "본문에서 blue jeans의 jean은 이탈리아 도시 Genoa의 프랑스어 이름인 Gênes에서 유래했다고 하였다. 따라서 빈칸에는 Genoa가 들어간다. 나머지는 모두 이탈리아 도시이지만 Gênes와 관계가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Genoa",
+"Venice",
+"Milan",
+"Naples",
+"Rome"
+]
+},
+{
+"id": "fill-d3ec79ba62",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 major와 의미가 가장 가까운 것은?\n\nGenoa was a major center for trade in the 17th and 18th centuries.",
+"answer": "②",
+"solution": "문맥상 Genoa는 17~18세기에 무역에서 중요한 역할을 한 중심지였다. 여기서 major는 '주요한'이라는 뜻이므로 '주도적인, 일류의'를 뜻하는 leading과 의미가 가장 가깝다. ①은 반의어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"unimportant",
+"leading",
+"temporary",
+"distant",
+"secret"
+]
+},
+{
+"id": "fill-4e9a917903",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말과 의미가 일치하는 영어 문장을 고르시오.\n\n그 신발의 고무 밑창은 사람들이 걸을 때 발바닥에 부딪힌다.",
+"answer": "①",
+"solution": "'~할 때'는 접속사 as로, '발바닥에 부딪히다'는 hit the bottom of people’s feet로 나타낸다. ②는 before(~하기 전에)를 써서 시점이 다르다. ③은 목적어가 있는데 수동태(are hit)를 써서 어법상 틀렸다. ④는 발바닥이 아니라 신발 바닥(shoes)이라서 뜻이 다르다. ⑤는 주어가 복수(The rubber soles)이므로 hits가 아니라 hit여야 한다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The rubber soles hit the bottom of people’s feet as they walk.",
+"The rubber soles hit the bottom of people’s feet before they walk.",
+"The rubber soles are hit the bottom of people’s feet as they walk.",
+"The rubber soles hit the bottom of people’s shoes as they walk.",
+"The rubber soles hits the bottom of people’s feet as they walk."
+]
+},
+{
+"id": "fill-04e0361636",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장을 고르시오.",
+"answer": "③",
+"solution": "③은 주어(Merchants from Genoa)와 동사(sold), 목적어(their cloth)의 구조가 올바르다. ①은 바지가 천으로 '만들어진' 것이므로 수동태 were made가 되어야 한다. ②는 프랑스어가 '사용된' 것이므로 spoken이 되어야 한다. ④는 상인이 물건을 '거래한' 것이므로 능동태 traded가 되어야 한다. ⑤는 관계대명사 which가 이미 make의 목적어 역할을 하는데 it을 또 써서 틀렸다. 관계대명사절이 끝난 뒤 주절의 동사 gave가 와야 하므로 it을 빼야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The pants were named jeans because they made of jean.",
+"French was widely speaking in Europe at that time.",
+"Merchants from Genoa sold their cloth throughout Europe.",
+"Merchants from Genoa were traded their goods throughout Europe.",
+"The sound which the shoes make it gave them their name."
+]
+},
+{
+"id": "fill-a9d42ee627",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 설명 중 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. jean은 프랑스어 지명 Gênes가 변형된 말이다.\nㄴ. jandals는 Japanese sandals를 줄여 만든 말이다.\nㄷ. flip-flops는 한 무역 도시의 이름에서 유래했다.",
+"answer": "③",
+"solution": "ㄱ. jean은 Genoa의 프랑스어 이름 Gênes가 변형된 말이므로 옳다. ㄴ. jandals는 Japanese sandals를 줄인 말이므로 옳다. ㄷ. flip-flops는 걸을 때 고무 밑창이 발바닥에 부딪혀 나는 소리에서 유래했다. 무역 도시의 이름에서 유래한 것은 jean이므로 ㄷ은 옳지 않다. 따라서 옳은 것은 ㄱ, ㄴ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+]
+},
+{
+"id": "fill-937a276905",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 단어로 가장 적절한 것은?\n\n• The word jean is a ______ of the French place-name Gênes.\n• A small ______ to the design made the shoes much more comfortable.",
+"answer": "②",
+"solution": "첫 문장은 jean이 Gênes가 '변형된 것'이라는 뜻이고, 둘째 문장은 디자인에 대한 작은 '수정, 변경'이 신발을 더 편하게 만들었다는 뜻이다. 두 문장에 모두 맞는 단어는 '변형, 수정'을 뜻하는 modification이다. ① version은 첫 문장에는 들어갈 수 있지만 둘째 문장의 'a small ___ to the design'과는 어울리지 않는다. ③ translation은 jean이 단순히 번역된 말이 아니므로 첫 문장에도 맞지 않는다. ④ reduction과 ⑤ variety는 어느 문장에도 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"version",
+"modification",
+"translation",
+"reduction",
+"variety"
+]
+},
+{
+"id": "fill-fd56f83120",
+"typeId": "eng-h1-b10-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 빈칸에 들어갈 말을 괄호 안의 단어를 알맞은 형태로 바꾸어 한 단어로 쓰시오.\n\nThe noun “jean” developed from Gênes, the French name for Genoa. In other words, the French place-name was gradually ______ into an English word. (modification)",
+"answer": "modified",
+"solution": "빈칸 앞에 be동사 was가 있고 뒤에 'into an English word'가 이어지므로 빈칸에는 동사가 와야 한다. 명사 modification을 동사 modify로 바꾼다. 주어 the French place-name은 스스로 바꾼 것이 아니라 '변형된' 대상이므로 수동태(was + 과거분사)가 되어야 한다. 따라서 빈칸에는 과거분사 modified가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u1m7s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
 }
 ]

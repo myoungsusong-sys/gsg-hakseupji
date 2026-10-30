@@ -7819,5 +7819,53 @@
 "twinGroup": "tw-19676",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-c45acb09cd",
+"typeId": "19707",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 등식을 만족하는 모든 실수 $x$의 제곱의 합을 구하시오.\n\n$\\sqrt{\\left(\\sqrt{(x-2)^2}-3\\right)^2}=\\sqrt{(x-4)^2}$",
+"selfGrade": true,
+"answer": "$\\frac{45}{2}$",
+"solution": "$\\sqrt{A^2}=|A|$이므로 주어진 등식은 $\\bigl||x-2|-3\\bigr|=|x-4|$이다.\n① $x\\geq2$일 때: $|x-2|=x-2$이므로 $|x-5|=|x-4|$이다. 따라서 $x-5=x-4$ 또는 $x-5=-(x-4)$이다. 첫째 등식은 성립하지 않고, 둘째 등식에서 $x=\\frac92$이다. 이 값은 $x\\geq2$를 만족한다.\n② $x<2$일 때: $|x-2|=2-x$이므로 $|x+1|=|x-4|$이다. 따라서 $x+1=x-4$ 또는 $x+1=-(x-4)$이다. 첫째 등식은 성립하지 않고, 둘째 등식에서 $x=\\frac32$이다. 이 값은 $x<2$를 만족한다.\n따라서 모든 해는 $\\frac92$, $\\frac32$이고, 구하는 합은 $\\left(\\frac92\\right)^2+\\left(\\frac32\\right)^2=\\frac{45}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19707",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ab781942bc",
+"typeId": "19707",
+"kind": "객관식",
+"diff": 4,
+"body": "두 실수 $a$, $b$가 $a-b<0$, $ab<0$, $(a+b)(a+2b)<0$을 만족할 때, 다음 식을 간단히 한 값은?\n\n$\\displaystyle\\frac{\\sqrt{\\left(\\sqrt{a^2}-2\\sqrt{b^2}\\right)^2}+\\sqrt{(2a+b)^2}-3\\sqrt{(a+b)^2}}{\\sqrt{(a+2b)^2}}$",
+"choices": [
+"$-3$",
+"$-2$",
+"$0$",
+"$2$",
+"$3$"
+],
+"answer": "④",
+"solution": "$ab<0$이므로 $a$, $b$의 부호는 서로 다르다. 또 $a-b<0$에서 $a<b$이므로 $a<0<b$이다.\n$b>0$이므로 $a+b<a+2b$이다. 여기에 $(a+b)(a+2b)<0$을 적용하면 $a+b<0<a+2b$이다. 또한 $2a+b=a+(a+b)<0$이다.\n따라서 $\\sqrt{a^2}=-a$, $\\sqrt{b^2}=b$이고,\n$\\sqrt{\\left(\\sqrt{a^2}-2\\sqrt{b^2}\\right)^2}=|-a-2b|=a+2b$,\n$\\sqrt{(2a+b)^2}=-2a-b$,\n$\\sqrt{(a+b)^2}=-a-b$,\n$\\sqrt{(a+2b)^2}=a+2b>0$이다.\n그러므로 주어진 식은 $\\displaystyle\\frac{(a+2b)+(-2a-b)-3(-a-b)}{a+2b}=\\frac{2a+4b}{a+2b}=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19707",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3f7b710bf4",
+"typeId": "19707",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 $a$가 다음 조건을 만족한다.\n\n$\\sqrt{(a-2)^2}+\\sqrt{(a-10)^2}=8$\n\n이때 식 $\\sqrt{(a-3)^2}+\\sqrt{(a-6)^2}+\\sqrt{(a-9)^2}-\\sqrt{(2a-11)^2}$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $M-m$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac92$",
+"solution": "주어진 조건은 $|a-2|+|a-10|=8$이다. 좌변은 $a<2$일 때 $12-2a>8$, $2\\leq a\\leq10$일 때 $8$, $a>10$일 때 $2a-12>8$이므로 $2\\leq a\\leq10$이다.\n구하려는 식을 $E$라 하면 $E=|a-3|+|a-6|+|a-9|-|2a-11|$이다. 각 절댓값 안의 식의 부호에 따라 정리하면 다음과 같다.\n$E=\\begin{cases}7-a&\\left(2\\leq a\\leq3\\right)\\\\a+1&\\left(3\\leq a\\leq\\frac{11}{2}\\right)\\\\23-3a&\\left(\\frac{11}{2}\\leq a\\leq6\\right)\\\\11-a&\\left(6\\leq a\\leq9\\right)\\\\a-7&\\left(9\\leq a\\leq10\\right)\\end{cases}$\n각 구간에서 $E$는 일정하게 증가하거나 감소하므로 구간의 양 끝값을 비교하면 된다. $a=2,3,\\frac{11}{2},6,9,10$일 때 $E$의 값은 각각 $5,4,\\frac{13}{2},5,2,3$이다.\n따라서 $M=\\frac{13}{2}$, $m=2$이므로 $M-m=\\frac{13}{2}-2=\\frac92$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19707",
+"custom": true,
+"rv": 1
 }
 ]

@@ -7028,5 +7028,39 @@
 "twinGroup": "tw-18264",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-90172b7f0a",
+"typeId": "18375",
+"kind": "객관식",
+"diff": 1,
+"body": "볼록사각형 $ABCD$에서 대각선 $AC$의 길이가 $8$이고, $AB=3$, $AD=5$이다. $\\angle BAC=\\angle CAD=30^\\circ$일 때, 사각형 $ABCD$의 넓이를 구하시오.",
+"choices": [
+"$8$",
+"$12$",
+"$16$",
+"$20$",
+"$24$"
+],
+"answer": "③",
+"solution": "대각선 $AC$를 그으면 사각형의 넓이는 두 삼각형 $ABC$, $ACD$의 넓이의 합이다. 따라서 구하는 넓이는 $\\frac12\\times8\\times3\\times\\sin30^\\circ+\\frac12\\times8\\times5\\times\\sin30^\\circ=6+10=16$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18375",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7b770b5d65",
+"typeId": "18375",
+"kind": "주관식",
+"diff": 1,
+"body": "볼록사각형 $ABCD$에서 $AC=6$, $AB=2$, $AD=4$이고, $\\angle BAC=\\angle CAD=60^\\circ$이다. 사각형 $ABCD$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$9\\sqrt{3}$",
+"solution": "대각선 $AC$를 이용하여 사각형을 두 삼각형으로 나눈다. 삼각형 $ABC$의 넓이는 $\\frac12\\times6\\times2\\times\\sin60^\\circ=3\\sqrt3$이고, 삼각형 $ACD$의 넓이는 $\\frac12\\times6\\times4\\times\\sin60^\\circ=6\\sqrt3$이다. 따라서 사각형의 넓이는 $9\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18375",
+"custom": true,
+"rv": 1
 }
 ]
