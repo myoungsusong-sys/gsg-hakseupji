@@ -4076,5 +4076,161 @@
 "twinGroup": "tw-20519",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-53a066eb2e",
+"typeId": "20527",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle C=90^\\circ$인 직각삼각형 $ABC$에서 $\\angle A=30^\\circ$, $AB=14\\,\\mathrm{cm}$이다. 변 $BC$의 길이는?",
+"choices": [
+"$7\\,\\mathrm{cm}$",
+"$\\dfrac{14\\sqrt{3}}{3}\\,\\mathrm{cm}$",
+"$7\\sqrt{2}\\,\\mathrm{cm}$",
+"$7\\sqrt{3}\\,\\mathrm{cm}$",
+"$28\\,\\mathrm{cm}$"
+],
+"answer": "①",
+"solution": "$\\angle A$의 대변은 $BC$이고 빗변은 $AB$이므로 $\\sin30^\\circ=\\dfrac{BC}{AB}=\\dfrac12$이다. 따라서 $BC=14\\times\\dfrac12=7\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20527",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-29094d733c",
+"typeId": "20527",
+"kind": "주관식",
+"diff": 1,
+"body": "한 변의 길이가 $8\\,\\mathrm{cm}$인 정삼각형 $ABC$에서 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $H$라 하자. 선분 $AH$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$4\\sqrt{3}\\,\\mathrm{cm}$",
+"solution": "직각삼각형 $ABH$에서 $\\angle ABH=60^\\circ$이고 $AB=8\\,\\mathrm{cm}$이다. 따라서 $AH=AB\\sin 60^\\circ=8\\times\\dfrac{\\sqrt{3}}2=4\\sqrt{3}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20527",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d7c5d8a875",
+"typeId": "20527",
+"kind": "객관식",
+"diff": 1,
+"body": "한 변의 길이가 $9\\,\\mathrm{cm}$인 정사각형 $ABCD$에서 대각선 $AC$의 길이는?",
+"choices": [
+"$9\\,\\mathrm{cm}$",
+"$9\\sqrt{2}\\,\\mathrm{cm}$",
+"$9\\sqrt{3}\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$",
+"$18\\sqrt{2}\\,\\mathrm{cm}$"
+],
+"answer": "②",
+"solution": "직각삼각형 $ABC$에서 $\\angle BAC=45^\\circ$이므로 $\\cos45^\\circ=\\dfrac{AB}{AC}=\\dfrac{\\sqrt{2}}2$이다. 따라서 $AC=9\\div\\dfrac{\\sqrt{2}}2=9\\sqrt{2}\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20527",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b83ce94bd0",
+"typeId": "20563",
+"kind": "객관식",
+"diff": 1,
+"body": "직사각형 $ABCD$의 변 $BC$ 위에 점 $E$가 있다. 사각형 $ABED$에 원이 내접하고, $AB=6$ cm, $BE=4$ cm, $DE=10$ cm일 때, 변 $AD$의 길이를 구하시오.",
+"choices": [
+"$8$ cm",
+"$10$ cm",
+"$12$ cm",
+"$14$ cm",
+"$16$ cm"
+],
+"answer": "③",
+"solution": "원에 외접하는 사각형은 두 쌍의 대변의 길이의 합이 같으므로 $AB+DE=AD+BE$이다. 따라서 $6+10=AD+4$이므로 $AD=12$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20563",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-32b7e300a8",
+"typeId": "20563",
+"kind": "주관식",
+"diff": 2,
+"body": "직사각형 $ABCD$의 변 $BC$ 위에 점 $E$가 있다. 사각형 $ABED$에 내접하는 원의 반지름이 $5$ cm이고, $BE=6$ cm, $DE=26$ cm이다. 변 $AD$의 길이는 몇 cm인지 구하시오.",
+"selfGrade": true,
+"answer": "30",
+"solution": "$AD\\parallel BE$이고 $AB\\perp AD$이므로 두 변 $AD$, $BE$ 사이의 거리는 $AB$이다. 내접원이 두 변 $AD$, $BE$에 접하므로 $AB=2\\times5=10$ cm이다. 원에 외접하는 사각형 $ABED$에서 $AB+DE=AD+BE$이므로 $10+26=AD+6$이다. 따라서 $AD=30$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20563",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8d8fcc02cc",
+"typeId": "20563",
+"kind": "객관식",
+"diff": 1,
+"body": "직사각형 $ABCD$의 변 $BC$ 위에 점 $E$가 있고, 사각형 $ABED$에 원이 내접한다. $AB=12$ cm, $DE=15$ cm일 때, 사각형 $ABED$의 둘레의 길이를 구하시오.",
+"choices": [
+"$48$ cm",
+"$51$ cm",
+"$54$ cm",
+"$57$ cm",
+"$60$ cm"
+],
+"answer": "③",
+"solution": "원에 외접하는 사각형 $ABED$에서 $AD+BE=AB+DE=27$ cm이다. 따라서 사각형 $ABED$의 둘레의 길이는 $27+27=54$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20563",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-37e000d635",
+"typeId": "20563",
+"kind": "객관식",
+"diff": 2,
+"body": "직사각형 $ABCD$의 변 $BC$ 위에 점 $E$가 있다. 사각형 $ABED$에 원이 내접하고, $CD=8$ cm, $EC=15$ cm일 때, 변 $BC$의 길이를 구하시오.",
+"choices": [
+"$17$ cm",
+"$20$ cm",
+"$23$ cm",
+"$25$ cm",
+"$40$ cm"
+],
+"answer": "②",
+"solution": "직각삼각형 $DCE$에서 피타고라스 정리에 의해 $DE=\\sqrt{8^2+15^2}=17$ cm이다. 직사각형의 마주 보는 변의 길이는 같으므로 $AB=8$ cm이다. $BC=AD=x$ cm라 하면 $BE=x-15$ cm이다. 원에 외접하는 사각형 $ABED$에서 $AB+DE=AD+BE$이므로 $8+17=x+(x-15)$이다. 따라서 $2x=40$, $x=20$이므로 $BC=20$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20563",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1c712a5eb7",
+"typeId": "20563",
+"kind": "주관식",
+"diff": 2,
+"body": "직사각형 $ABCD$의 변 $BC$ 위에 점 $E$가 있고, 사각형 $ABED$에 원이 내접한다. $CD=20$ cm, $EC=21$ cm일 때, 직사각형 $ABCD$의 둘레의 길이는 몇 cm인지 구하시오.",
+"selfGrade": true,
+"answer": "$110$",
+"solution": "직각삼각형 $DCE$에서 $DE=\\sqrt{20^2+21^2}=29$ cm이다. $AD=BC=x$ cm라 하면 $BE=x-21$ cm이다. 원에 외접하는 사각형의 성질에 따라 $20+29=x+(x-21)$이므로 $x=35$이다. 따라서 직사각형의 둘레의 길이는 $2(20+35)=110$ cm이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20563",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0c4fcfbaae",
+"typeId": "20563",
+"kind": "주관식",
+"diff": 2,
+"body": "직사각형 $ABCD$의 변 $BC$ 위에 점 $E$가 있다. 사각형 $ABED$에 내접하는 원의 반지름이 $6$ cm이고, $EC=16$ cm이다. 직사각형 $ABCD$의 넓이는 몇 $\\mathrm{cm}^2$인지 구하시오.",
+"selfGrade": true,
+"answer": "$288$",
+"solution": "원이 서로 평행한 두 변 $AD$, $BE$에 접하므로 $AB=CD=12$ cm이다. 직각삼각형 $DCE$에서 $DE=\\sqrt{12^2+16^2}=20$ cm이다. $AD=BC=x$ cm라 하면 원에 외접하는 사각형의 성질에 따라 $12+20=x+(x-16)$이므로 $x=24$이다. 따라서 직사각형의 넓이는 $12\\times24=288\\ \\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20563",
+"custom": true,
+"rv": 1
 }
 ]
