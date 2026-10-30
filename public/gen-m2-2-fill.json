@@ -1201,5 +1201,181 @@
 "twinGroup": "tw-18877",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-92545e59d7",
+"typeId": "18803",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 ABC에서 AB=10 cm, AC=8 cm이다. ∠A의 외각의 이등분선이 변 BC의 연장선과 만나는 점을 D라 하자. 점 B, C, D가 이 순서로 한 직선 위에 있고 삼각형 ACD의 넓이가 28 cm²일 때, 삼각형 ABC의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "7 cm²",
+"solution": "외각의 이등분선의 성질에 의해 BD:CD=AB:AC=10:8=5:4이다. 점 B, C, D가 이 순서로 놓여 있으므로 BC=BD-CD이다. 따라서 BC:CD=(5-4):4=1:4이다. 삼각형 ABC와 삼각형 ACD는 밑변이 놓인 직선이 같아 높이가 같으므로 넓이의 비는 [ABC]:[ACD]=BC:CD=1:4이다. 따라서 [ABC]=28×(1/4)=7 cm²이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18803",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4d3f5fc18a",
+"typeId": "18803",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 ABC에서 AB=15 cm, AC=9 cm이다. ∠A의 외각의 이등분선과 변 BC의 연장선의 교점을 D라 하자. 점 B, C, D가 이 순서로 한 직선 위에 있고 삼각형 ABC의 넓이가 24 cm²일 때, 삼각형 ACD의 넓이는?",
+"choices": [
+"① 27 cm²",
+"② 30 cm²",
+"③ 32 cm²",
+"④ 36 cm²",
+"⑤ 40 cm²"
+],
+"answer": "④",
+"solution": "외각의 이등분선의 성질에 의해 BD:CD=AB:AC=15:9=5:3이다. 점 B, C, D가 이 순서로 놓여 있으므로 BC=BD-CD이다. 따라서 BC:CD=(5-3):3=2:3이다. 삼각형 ABC와 삼각형 ACD는 높이가 같으므로 [ABC]:[ACD]=BC:CD=2:3이다. 따라서 [ACD]=24×(3/2)=36 cm²이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18803",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-13771a383d",
+"typeId": "18803",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 ABC에서 AB=14 cm, AC=10 cm이다. ∠A의 외각의 이등분선과 변 BC의 연장선의 교점을 D라 하자. 점 B, C, D가 이 순서로 한 직선 위에 있을 때, 삼각형 ABC와 삼각형 ACD의 넓이의 비는?",
+"choices": [
+"① 1:2",
+"② 2:5",
+"③ 2:7",
+"④ 4:5",
+"⑤ 5:7"
+],
+"answer": "②",
+"solution": "외각의 이등분선의 성질에 의해 BD:CD=AB:AC=14:10=7:5이다. 점 B, C, D가 이 순서로 놓여 있으므로 BC=BD-CD이다. 따라서 BC:CD=(7-5):5=2:5이다. 삼각형 ABC와 삼각형 ACD는 높이가 같으므로 [ABC]:[ACD]=BC:CD=2:5이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18803",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-306e309f78",
+"typeId": "18758",
+"kind": "객관식",
+"diff": 1,
+"body": "두 삼각형 $ABC$와 $DEF$에서 $AB=6\\text{ cm}$, $BC=10\\text{ cm}$, $DE=3\\text{ cm}$, $EF=5\\text{ cm}$이다. 두 변의 길이의 비와 그 끼인각을 이용하여 $\\triangle ABC\\sim\\triangle DEF$임을 알 수 있도록 추가할 조건은?",
+"choices": [
+"$\\angle A=\\angle D$",
+"$\\angle B=\\angle E$",
+"$\\angle C=\\angle F$",
+"$\\angle B=2\\angle E$",
+"$\\angle A=2\\angle D$"
+],
+"answer": "②",
+"solution": "$AB:DE=6:3=2:1$이고 $BC:EF=10:5=2:1$이므로 두 쌍의 대응하는 변의 길이의 비가 같다. 이 두 변의 끼인각은 각각 $\\angle B$와 $\\angle E$이므로 $\\angle B=\\angle E$를 추가하면 SAS 닮음 조건을 만족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-18758",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-474d578401",
+"typeId": "18758",
+"kind": "객관식",
+"diff": 1,
+"body": "두 삼각형 $ABC$와 $DEF$에서 $\\angle A=40^\\circ$, $\\angle B=65^\\circ$, $\\angle D=40^\\circ$이다. $\\triangle ABC\\sim\\triangle DEF$가 되려면 $\\angle E$의 크기는 얼마이어야 하는가?",
+"choices": [
+"$40^\\circ$",
+"$65^\\circ$",
+"$75^\\circ$",
+"$105^\\circ$",
+"$115^\\circ$"
+],
+"answer": "②",
+"solution": "$\\triangle ABC\\sim\\triangle DEF$에서 대응하는 각인 $\\angle B$와 $\\angle E$의 크기는 같아야 하므로 $\\angle E=65^\\circ$이다. 이때 $\\angle A=\\angle D=40^\\circ$, $\\angle B=\\angle E=65^\\circ$이므로 두 삼각형은 AA 닮음 조건을 만족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-18758",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5d16b27d0c",
+"typeId": "18758",
+"kind": "객관식",
+"diff": 1,
+"body": "두 삼각형 $ABC$와 $DEF$에서 $AB=10\\text{ cm}$, $BC=12\\text{ cm}$, $DE=15\\text{ cm}$, $EF=18\\text{ cm}$, $DF=12\\text{ cm}$이다. 세 쌍의 대응하는 변의 길이의 비를 이용하여 $\\triangle ABC\\sim\\triangle DEF$가 되게 하려면 $AC$의 길이는 얼마이어야 하는가?",
+"choices": [
+"$6\\text{ cm}$",
+"$7\\text{ cm}$",
+"$8\\text{ cm}$",
+"$12\\text{ cm}$",
+"$18\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$AB:DE=10:15=2:3$이고 $BC:EF=12:18=2:3$이다. SSS 닮음 조건을 만족하려면 $AC:DF=2:3$이어야 하므로 $AC=12\\times\\frac{2}{3}=8\\text{ cm}$이다. 이때 세 쌍의 대응하는 변의 길이의 비가 모두 같으므로 $\\triangle ABC\\sim\\triangle DEF$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18758",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-64034a64cd",
+"typeId": "18863",
+"kind": "객관식",
+"diff": 1,
+"body": "문구점에서 공책은 줄 공책과 무지 공책 중 하나를 고르고, 표지 색은 노란색, 초록색, 보라색 중 하나를 고를 수 있다. 공책의 종류와 표지 색을 하나씩 고르는 경우의 수는?",
+"choices": [
+"$2$",
+"$3$",
+"$5$",
+"$6$",
+"$9$"
+],
+"answer": "④",
+"solution": "공책의 종류에 따라 가지를 나누면 $2$개의 가지가 생긴다. 각 가지에서 표지 색에 따라 다시 $3$개의 가지로 나뉘므로 경우의 수는 $3+3=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18863",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-710189a192",
+"typeId": "18863",
+"kind": "주관식",
+"diff": 1,
+"body": "빨간색 카드와 파란색 카드가 한 장씩 있다. 두 카드 중 한 장을 뽑아 색을 기록한 뒤 다시 넣는 일을 두 번 한다. 기록된 색을 순서대로 나열할 때, 두 번 모두 같은 색이 나오는 경우의 수를 구하시오.",
+"selfGrade": true,
+"answer": "$2$",
+"solution": "첫 번째 색과 두 번째 색에 따라 가지를 나누면 (빨강, 빨강), (빨강, 파랑), (파랑, 빨강), (파랑, 파랑)의 $4$가지이다. 이 중 두 번 모두 같은 색인 것은 (빨강, 빨강), (파랑, 파랑)이므로 $2$가지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18863",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b08b0a62dd",
+"typeId": "18863",
+"kind": "주관식",
+"diff": 4,
+"body": "지우와 하린이 다음 규칙으로 탁구 시합을 한다.\n\n(가) 각 판에는 무승부가 없으며, 먼저 4승을 한 사람이 나오면 즉시 시합을 끝낸다.\n(나) 첫 번째 판은 하린이 이겼다.\n(다) 시합이 끝날 때까지 어느 누구도 세 판을 연속하여 이기지 않았다.\n\n각 판의 승자를 순서대로 기록할 때, 가능한 기록의 경우의 수를 구하시오.",
+"selfGrade": true,
+"answer": "18",
+"solution": "하린이 이긴 판을 H, 지우가 이긴 판을 J로 나타내자. 첫 번째 가지는 H로 고정하고, 다음 판마다 H와 J로 가지를 나눈다. 이때 같은 문자가 세 번 연속되는 가지는 제외하고, 어느 한 문자가 네 번 나타나면 그 가지를 끝낸다.\n시합은 늦어도 7판째에 끝난다. 4판째에 끝나려면 한 사람이 네 판을 연속하여 이겨야 하므로 조건 (다)에 어긋난다. 따라서 5판, 6판, 7판째에 끝나는 경우만 조사하면 된다.\n\n① 5판째에 끝나는 경우\n하린 우승: HHJHH의 1가지\n지우 우승: 첫 판에서 진 뒤 네 판을 연속하여 이겨야 하므로 0가지\n\n② 6판째에 끝나는 경우\n하린 우승: HJHJHH, HJHHJH, HHJJHH, HHJHJH의 4가지\n지우 우승: HJJHJJ의 1가지\n\n③ 7판째에 끝나는 경우\n하린 우승: HHJHJJH, HHJJHJH, HJHHJJH, HJHJHJH, HJHJJHH, HJJHHJH, HJJHJHH의 7가지\n지우 우승: HHJJHJJ, HJHJHJJ, HJHJJHJ, HJJHHJJ, HJJHJHJ의 5가지\n\n따라서 구하는 경우의 수는 (1+0)+(4+1)+(7+5)=18이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18863",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-62f4f5f61d",
+"typeId": "18863",
+"kind": "주관식",
+"diff": 4,
+"body": "1, 2, 3, 4, 5가 각각 적힌 역할 카드가 한 장씩 있다. 이 카드 5장을 다섯 학생 가, 나, 다, 라, 마에게 한 장씩 나누어 주려고 한다. 각 학생이 받을 수 있는 카드 번호는 다음과 같다.\n\n가: 3, 4, 5\n나: 1, 4, 5\n다: 1, 2, 5\n라: 1, 2, 3\n마: 2, 3, 4\n\n조건에 맞게 역할 카드를 나누어 주는 경우의 수를 구하시오.",
+"selfGrade": true,
+"answer": "13",
+"solution": "가, 나, 다, 라, 마의 순서로 받을 카드 번호에 따라 가지를 나누되, 이미 사용한 번호는 제외한다. 다섯 학생 모두에게 카드를 배정할 수 있는 끝가지의 수를 세면 된다.\n가와 나의 카드 번호를 정했을 때, 나머지 학생에게 가능한 배정을 (다의 번호, 라의 번호, 마의 번호)로 나타내면 다음과 같다.\n\n① 가가 3을 받는 경우\n나가 1: (5, 2, 4)의 1가지\n나가 4: (5, 1, 2)의 1가지\n나가 5: (1, 2, 4), (2, 1, 4)의 2가지\n따라서 1+1+2=4가지이다.\n\n② 가가 4를 받는 경우\n나가 1: (5, 2, 3), (5, 3, 2)의 2가지\n나가 5: (1, 2, 3), (1, 3, 2), (2, 1, 3)의 3가지\n따라서 2+3=5가지이다.\n\n③ 가가 5를 받는 경우\n나가 1: (2, 3, 4)의 1가지\n나가 4: (1, 2, 3), (1, 3, 2), (2, 1, 3)의 3가지\n따라서 1+3=4가지이다.\n\n그러므로 구하는 경우의 수는 4+5+4=13이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18863",
+"custom": true,
+"rv": 1
 }
 ]

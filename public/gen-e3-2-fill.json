@@ -8614,5 +8614,113 @@
 "twinGroup": "tw-9802",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-86aa708cdb",
+"typeId": "17422",
+"kind": "객관식",
+"diff": 1,
+"body": "들이가 $5\\mathrm{L}$인 물통에 물이 $3\\mathrm{L}$ 들어 있습니다. 물통에 물을 가득 채우려면 물을 얼마나 더 부어야 합니까?",
+"choices": [
+"$1\\mathrm{L}$",
+"$2\\mathrm{L}$",
+"$3\\mathrm{L}$",
+"$4\\mathrm{L}$",
+"$5\\mathrm{L}$"
+],
+"answer": "②",
+"solution": "물통의 전체 들이에서 들어 있는 물의 양을 뺍니다. 따라서 $5\\mathrm{L}-3\\mathrm{L}=2\\mathrm{L}$이므로 물을 $2\\mathrm{L}$ 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17422",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f0d4808772",
+"typeId": "17422",
+"kind": "주관식",
+"diff": 2,
+"body": "들이가 2 L인 주전자에 물이 1 L 400 mL 들어 있습니다. 주전자에 물을 가득 채우려면 물을 몇 mL 더 부어야 합니까?",
+"selfGrade": true,
+"answer": "600 mL",
+"solution": "2 L는 2000 mL이고, 1 L 400 mL는 1400 mL입니다. 따라서 더 부어야 하는 물의 양은 2000-1400=600(mL)입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17422",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9d28184fd0",
+"typeId": "17422",
+"kind": "객관식",
+"diff": 2,
+"body": "들이가 4 L인 양동이에 물이 2 L 500 mL 들어 있습니다. 양동이에 물을 가득 채우려면 물을 얼마나 더 부어야 합니까?",
+"choices": [
+"500 mL",
+"1 L",
+"1 L 500 mL",
+"2 L",
+"2 L 500 mL"
+],
+"answer": "③",
+"solution": "4 L를 3 L 1000 mL로 바꾸어 계산합니다. 3 L 1000 mL-2 L 500 mL=1 L 500 mL이므로 물을 1 L 500 mL 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17422",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-25c0f641c6",
+"typeId": "17422",
+"kind": "주관식",
+"diff": 2,
+"body": "들이가 6 L인 냄비에 물이 2 L 들어 있습니다. 들이가 1 L인 컵에 물을 가득 담아 부을 때, 몇 번 더 부어야 냄비에 물이 가득 찹니까?",
+"selfGrade": true,
+"answer": "4번",
+"solution": "냄비에 더 부어야 하는 물의 양은 6-2=4(L)입니다. 한 번에 1 L씩 부으므로 4÷1=4(번) 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17422",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4d8aeee2c0",
+"typeId": "17422",
+"kind": "객관식",
+"diff": 2,
+"body": "들이가 5 L인 어항에 물이 2 L 600 mL 들어 있습니다. 들이가 400 mL인 컵에 물을 가득 담아 부을 때, 몇 번 더 부어야 어항에 물이 가득 찹니까?",
+"choices": [
+"4번",
+"5번",
+"6번",
+"7번",
+"8번"
+],
+"answer": "③",
+"solution": "5 L를 4 L 1000 mL로 바꾸면 더 부어야 하는 물의 양은 4 L 1000 mL-2 L 600 mL=2 L 400 mL입니다. 2 L 400 mL는 2400 mL이므로 2400÷400=6(번) 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17422",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-63e2dca6c9",
+"typeId": "17422",
+"kind": "객관식",
+"diff": 3,
+"body": "빈 수조에 들이가 1 L 500 mL인 물병에 물을 가득 담아 2번 부었습니다. 들이가 7 L인 이 수조를 가득 채우려면 들이가 500 mL인 컵에 물을 가득 담아 몇 번 더 부어야 합니까?",
+"choices": [
+"5번",
+"6번",
+"7번",
+"8번",
+"9번"
+],
+"answer": "④",
+"solution": "수조에 들어 있는 물의 양은 1 L 500 mL의 2배인 3 L입니다. 수조에 더 부어야 하는 물의 양은 7-3=4(L)이고, 4 L는 4000 mL입니다. 따라서 4000÷500=8(번) 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17422",
+"custom": true,
+"rv": 1
 }
 ]
