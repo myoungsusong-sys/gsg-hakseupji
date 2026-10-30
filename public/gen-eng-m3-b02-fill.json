@@ -6245,5 +6245,202 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b02-u5m3s0t0",
 "custom": true
+},
+{
+"id": "fill-865c8c2e78",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 아래 질문에 대한 답이 되도록 빈칸에 들어갈 알맞은 말을 본문에서 찾아 쓰시오. (단, 빈칸 하나에 한 단어씩 쓸 것)\n\nA Chat with Your Pet\nBrooke had a dog, Kayla, who was suffering from awful separation anxiety. The dog became very upset and depressed whenever she was left alone. So Brooke wanted to find a way to connect with her pet dog while she was away.\nNecessity is the mother of invention! One day Brooke was video chatting with her friends, and an idea flashed across her mind. “Why not do the same thing with Kayla? Wouldn’t it be great to video chat with her and deliver a snack while I am away from home?” she said to herself.\nBrooke suggested the idea at Startup Weekend, where people put forward ideas for products and develop them together. She was fortunate enough to work with a team of designers to develop the product concept, and finally invented a device for lonely dogs left at home. Brooke said that she found genuine satisfaction in being part of the solution.\n\nQ. What did Brooke do after she suggested her idea at Startup Weekend?\n→ She worked with ____ ____ ____ ____ to develop ____ ____ ____, and in the end, she invented ____ ____ ____ ____ ____ ____ ____ ____.",
+"selfGrade": true,
+"answer": "a team of designers, the product concept, a device for lonely dogs left at home",
+"solution": "Startup Weekend에서 아이디어를 제안한 뒤의 일은 셋째 단락 'She was fortunate enough to work with a team of designers to develop the product concept, and finally invented a device for lonely dogs left at home.'에 나온다. 첫 번째 빈칸에는 함께 일한 대상인 a team of designers(4단어)를, 두 번째 빈칸에는 개발한 대상인 the product concept(3단어)를 쓴다. 마지막 빈칸은 8칸이므로 과거분사구 left at home까지 포함한 a device for lonely dogs left at home을 그대로 옮겨야 한다. 빈칸 수와 단어 수가 맞는지 꼭 확인한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d5df7e1cc7",
+"typeId": "eng-m3-b02-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화를 읽고, 아래 질문에 대한 답이 되도록 빈칸에 들어갈 알맞은 말을 대화에서 찾아 쓰시오. (단, 빈칸 하나에 한 단어씩 쓸 것)\n\nNara: Are you working on ideas for the school invention contest?\nJunha: Yes. I’m thinking of making a special lunch tray to reduce food waste.\nNara: A lunch tray to solve the problem of food waste? Can you explain more about it?\nJunha: Sure. Do you see the three different lines here? They show the amount of food we want to receive.\nNara: Oh, I see. So we can take only as much food as we can finish.\nJunha: Exactly. Now I have to work on the display board, but I’m all thumbs.\nNara: Can I give you a hand? You know that two heads are better than one.\nJunha: Thanks. That would be great!\n\n(1) What is Junha planning to make for the contest, and for what purpose?\n→ He is planning to make ____ ____ ____ ____ in order to ____ ____ ____.\n(2) Why does Nara offer to help Junha?\n→ Because Junha has to work on ____ ____ ____, but he is ____ ____.",
+"selfGrade": true,
+"answer": "(1) a special lunch tray, reduce food waste (2) the display board, all thumbs",
+"solution": "(1) 준하의 말 'I’m thinking of making a special lunch tray to reduce food waste.'에서 만들려는 것은 a special lunch tray(4단어)이고, 목적은 in order to 뒤에 동사원형으로 이어지는 reduce food waste(3단어)이다. (2) 'Now I have to work on the display board, but I’m all thumbs.'에서 준하가 해야 할 일은 the display board이고, 손재주가 없다는 뜻의 all thumbs 때문에 나라가 도움을 제안한다. 주어가 he로 바뀌었으므로 be동사는 이미 주어져 있고, 빈칸에는 all thumbs 두 단어만 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7925418890",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 목적으로 알맞은 것은?\n\nPopcorn is one of the oldest snacks in the world. Long ago, people in many countries made it in different ways. Today, we can easily make popcorn at home with a small machine. It is cheap, tasty, and loved by many people.",
+"choices": [
+"① 감사 표현",
+"② 사과",
+"③ 광고",
+"④ 불평",
+"⑤ 정보 전달"
+],
+"answer": "⑤",
+"solution": "이 글은 팝콘이 오래된 간식이며 여러 나라에서 다양하게 만들어졌고 오늘날 집에서 쉽게 만들 수 있다는 사실을 알려 주는 글이다. 감정을 표현하거나 무언가를 사도록 권하는 내용이 아니라 정보를 전달하는 글이다. 따라서 목적은 ⑤ 정보 전달이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f30e07a67f",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 알맞은 것은?\n\nDuring the nineteenth century, Americans tried many ways to pop corn. Some threw corn seeds onto hot ashes and picked out the popped pieces. Others mixed corn with butter and cooked it in a pan. Later, people popped corn in a wire box over an open fire.",
+"choices": [
+"① 19세기 미국의 농업 발전",
+"② 19세기 미국인들이 팝콘을 만든 다양한 방법",
+"③ 팝콘이 몸에 좋은 이유",
+"④ 버터를 이용한 요리법",
+"⑤ 팝콘 기계를 발명한 사람들"
+],
+"answer": "②",
+"solution": "글 전체가 19세기 미국인들이 뜨거운 재에 옥수수를 던지거나, 버터와 섞어 팬에 굽거나, 철망 상자를 불 위에 올려 튀기는 등 팝콘을 만든 여러 방법을 나열하고 있다. 따라서 주제는 ② 19세기 미국인들이 팝콘을 만든 다양한 방법이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-be29e7731f",
+"typeId": "eng-m3-b02-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nIn ancient China, popcorn was more than just food. People popped corn to tell fortunes for the coming year. They also used it to guess their daughters' future marriage. For them, popping corn was a special way to look into the future.",
+"choices": [
+"① The History of Chinese Food",
+"② Popcorn Used to Tell Fortunes",
+"③ How to Pop Corn at Home",
+"④ Marriage Customs in China",
+"⑤ The First Popcorn Machine"
+],
+"answer": "②",
+"solution": "고대 중국에서 팝콘이 단순한 음식이 아니라 다가올 해의 운세나 딸의 미래 결혼을 점치는 데 쓰였다는 내용이 중심이다. 따라서 ‘점을 치는 데 사용된 팝콘’이라는 뜻의 ② Popcorn Used to Tell Fortunes가 제목으로 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5589a769c6",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\na person whose job is to make pots, bowls, and vases from clay",
+"choices": [
+"potter",
+"farmer",
+"writer",
+"singer",
+"officer"
+],
+"answer": "①",
+"solution": "흙(clay)으로 그릇이나 꽃병을 만드는 일을 하는 사람은 '도공, 옹기장이'를 뜻하는 potter이다. 본문에서 Potter Min이 바로 이 일을 하는 사람이다. 나머지는 각각 농부, 작가, 가수, 관리로 뜻이 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-feb2ea99e1",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nTree-ear dug ______ near the river to make pots and vases.",
+"choices": [
+"clay",
+"glass",
+"paper",
+"metal",
+"plastic"
+],
+"answer": "①",
+"solution": "강가에서 파내어(dug) 도자기(pots, vases)를 만드는 재료는 '점토, 흙'을 뜻하는 clay이다. 본문에서 Tree-ear가 강 근처에서 clay를 파는 장면과 일치한다. 유리, 종이, 금속, 플라스틱은 강가에서 파내는 재료가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-be00bf17e0",
+"typeId": "eng-m3-b02-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nFrom the hill, we saw the lights of the town twinkling in the distance.",
+"choices": [
+"shining",
+"falling",
+"melting",
+"breaking",
+"growing"
+],
+"answer": "①",
+"solution": "twinkle은 별이나 불빛이 '반짝이다'라는 뜻이므로 '빛나다'를 뜻하는 shining과 의미가 가장 가깝다. 나머지는 각각 떨어지다, 녹다, 부서지다, 자라다로 뜻이 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5e71fe89a3",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nOn his way to Songdo, Tree-ear met two robbers at a cliff. They found only vases, so they threw them over the cliff. Tree-ear ran down to the bottom of the cliff, but both vases were broken. He was very sad. Then he found a shard the size of his palm. It still had part of an inlaid flower on it. \"There is still a chance,\" Tree-ear said to himself, and he continued on his journey.",
+"choices": [
+"A Brave Fight with Robbers",
+"Finding Hope in a Broken Shard",
+"How to Make an Inlaid Vase",
+"A Fun Trip to the Palace",
+"Tree-ear Goes Back to Julpo"
+],
+"answer": "②",
+"solution": "도둑들이 꽃병을 절벽 아래로 던져 꽃병이 모두 깨졌지만, 목이는 상감 꽃무늬가 남은 조각을 발견하고 \"There is still a chance\"라며 다시 길을 떠난다. 따라서 '깨진 조각에서 희망을 찾다'라는 뜻의 ②가 제목으로 알맞다. 목이는 도둑과 싸우지 않았고(①), 꽃병 만드는 법(③)이나 즐거운 여행(④)은 글의 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a84f606608",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nTree-ear arrived at the palace in Songdo. He showed the shard to the royal officer. \"It is only a single shard, but it shows the skill of my master,\" he said. The officer looked at it and smiled. \"I have never seen inlay work like this! It's wonderful. Tell your master that he can work for the king.\"",
+"choices": [
+"왕실 관리는 깨진 조각을 보고 크게 실망했다.",
+"목이는 송도에서 도자기 만드는 법을 배우기 시작했다.",
+"깨진 조각 하나만으로도 민 도공의 뛰어난 솜씨가 인정받았다.",
+"왕실 관리는 상감 기법을 이미 여러 번 본 적이 있었다.",
+"민 도공은 왕을 위해 일하는 것을 거절했다."
+],
+"answer": "③",
+"solution": "목이가 조각 하나를 보여 주며 스승의 솜씨를 보여 준다고 말하자, 관리는 미소를 지으며 이런 상감 작품은 처음 본다고 감탄했다. 그리고 민 도공이 왕을 위해 일해도 된다고 했으므로 요지는 ③이다. 관리는 실망하지 않았고(①), 상감 작품을 처음 본다고 했으므로 ④는 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-687f5650d3",
+"typeId": "eng-m3-b02-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nTree-ear came back to Julpo with the good news. Potter Min was glad to hear it, but he was even happier to see Tree-ear. \"You need a potter's wheel of your own,\" said Potter Min. \"And from now on, I will call you Hyeong-pil.\" Tree-ear couldn't believe his ears. His new name shared a character with the name of Potter Min's dead son, Hyeong-gu.\n\n→ Potter Min accepted Tree-ear as his (A)__________ and gave him a new (B)__________.",
+"choices": [
+"teacher …… shard",
+"friend …… vase",
+"master …… job",
+"robber …… cart",
+"son …… name"
+],
+"answer": "⑤",
+"solution": "민 도공은 목이에게 죽은 아들 형구와 한 글자를 같이 쓰는 '형필'이라는 이름을 지어 주었다. 이는 목이를 아들처럼 받아들였다는 뜻이다. 따라서 (A)에는 son, (B)에는 name이 들어가야 하므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u6m2s0t0",
+"custom": true
 }
 ]

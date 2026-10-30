@@ -6598,5 +6598,233 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-38bbfffc3f",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nLast week my history club went to Hyochang Park. We visited the Kim Koo Museum inside the park. At the entrance of the museum, we saw a white statue of Kim Koo. Kim Koo is a great national hero who spent most of his life fighting for the independence of Korea from Japanese rule. In the 1900s, he helped educate young people by building schools. In 1919, he moved to Shanghai, China, and later became the president of the Government of the Republic of Korea.",
+"choices": [
+"효창공원의 정확한 위치",
+"김구 박물관 건물의 규모",
+"조국의 독립을 위해 헌신한 김구의 삶",
+"역사 동아리 활동의 어려움",
+"상하이라는 도시의 역사"
+],
+"answer": "③",
+"solution": "글 전체가 김구가 조국의 독립을 위해 평생을 바친 위인임을 소개하고 있다. 동상, 학교 설립, 상하이 임시정부 활동 등은 모두 그의 삶을 설명하는 근거이다. 따라서 주제는 '독립을 위해 헌신한 김구의 삶'인 ③이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0998ba47db",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nLast week my history club went to Hyochang Park. We visited the Kim Koo Museum inside the park. At the entrance of the museum, we saw a white statue of Kim Koo. Kim Koo is a great national hero who spent most of his life fighting for the independence of Korea from Japanese rule. In the 1900s, he helped educate young people by building schools. In 1919, he moved to Shanghai, China, and later became the president of the Government of the Republic of Korea.",
+"choices": [
+"My History Club's Big Plan",
+"Kim Koo, a Hero for Korea's Independence",
+"How to Build a Good School",
+"A Long Trip to Shanghai, China",
+"The History of Hyochang Park"
+],
+"answer": "②",
+"solution": "글은 김구를 '조국의 독립을 위해 싸운 위대한 민족 영웅'으로 소개하고 그의 업적을 서술한다. 중심 인물과 핵심 내용을 함께 담은 제목은 ②이다. 나머지는 글에 일부만 언급되거나 다뤄지지 않은 내용이라 제목이 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3e5c61f6c5",
+"typeId": "eng-m3-b03-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글에서 글쓴이가 전하려는 중심 내용으로 가장 알맞은 것은?\n\nLast week my history club went to Hyochang Park. We visited the Kim Koo Museum inside the park. At the entrance of the museum, we saw a white statue of Kim Koo. Kim Koo is a great national hero who spent most of his life fighting for the independence of Korea from Japanese rule. In the 1900s, he helped educate young people by building schools. In 1919, he moved to Shanghai, China, and later became the president of the Government of the Republic of Korea.",
+"choices": [
+"김구는 평생 조국의 독립을 위해 힘쓴 위대한 인물이다.",
+"효창공원은 서울에서 가장 큰 공원이다.",
+"역사 동아리는 매주 여러 박물관을 방문한다.",
+"김구는 중국 상하이에서 태어나 자랐다.",
+"학교를 짓는 일은 매우 어렵고 오래 걸린다."
+],
+"answer": "①",
+"solution": "글의 요지는 김구가 독립을 위해 평생을 바친 위인이라는 점이다. 교육, 상하이 임시정부 활동 등은 이를 뒷받침하는 세부 내용이다. ②~⑤는 글에 없거나 사실과 다른 진술이므로 중심 내용이 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6463833d1d",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것을 고르시오.\n\nThe more you practice, ________ you become.",
+"choices": [
+"the good",
+"the better",
+"the best",
+"better",
+"more better"
+],
+"answer": "②",
+"solution": "'the 비교급 ~, the 비교급 ~'(~할수록 더 ~하다) 구문이므로 두 번째 빈칸에도 'the + 비교급' 형태가 와야 한다. good의 비교급은 better이므로 'the better'가 알맞다. the best는 최상급, better는 the가 빠졌고, more better는 이중 비교급이라 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2f0b7fa112",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것을 고르시오.\n\nThis is the house ________ I was born.",
+"choices": [
+"which",
+"who",
+"when",
+"where",
+"why"
+],
+"answer": "④",
+"solution": "선행사가 장소를 나타내는 the house이고 뒤에 완전한 문장(I was born)이 이어지므로 장소를 나타내는 관계부사 where가 알맞다. which는 뒤에 불완전한 문장이 와야 하고, who·when·why는 선행사와 맞지 않아 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2232e8c063",
+"typeId": "eng-m3-b03-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것을 고르시오.\n\nDo you remember the day ________ we first met?",
+"choices": [
+"which",
+"where",
+"why",
+"when",
+"how"
+],
+"answer": "④",
+"solution": "선행사가 시간을 나타내는 the day이고 뒤에 완전한 문장(we first met)이 오므로 시간을 나타내는 관계부사 when이 알맞다. where는 장소, why는 이유(the reason), how는 방법을 나타내는 선행사에 쓰이므로 맞지 않고, which 뒤에는 불완전한 문장이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2eb026f797",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"① This book is worth read.",
+"② This book is worth to read.",
+"③ This book worth reading.",
+"④ This book is worth reading.",
+"⑤ This book are worth reading."
+],
+"answer": "④",
+"solution": "'~할 가치가 있다'는 의미는 「be worth + 동명사(-ing)」로 표현한다. 주어 This book은 단수이므로 be동사 is를 써야 한다. 따라서 is worth reading을 사용한 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e34066dce",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"① Andy Warhol is called the King of Pop Art.",
+"② The pictures were made by Andy Warhol.",
+"③ The sculptures were made of soft materials.",
+"④ The works are enjoyed by many people.",
+"⑤ The sculptures made of plastic and paper."
+],
+"answer": "⑤",
+"solution": "수동태는 「be동사 + 과거분사(p.p.)」의 형태로 나타낸다. ⑤는 조각품이 플라스틱과 종이로 만들어졌다는 수동의 의미이므로 made 앞에 were가 필요하다. 따라서 The sculptures were made of plastic and paper.로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f3795cc299",
+"typeId": "eng-m3-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸 (A), (B), (C)에 들어갈 말이 바르게 연결된 것은?\n\nAndy Warhol (A) [is called / calls] the King of Pop Art.\nThis work (B) [is / are] made up of many pictures.\nThese books are worth (C) [read / reading].",
+"choices": [
+"① is called - is - reading",
+"② is called - are - reading",
+"③ calls - is - reading",
+"④ is called - is - read",
+"⑤ calls - are - read"
+],
+"answer": "①",
+"solution": "(A)는 '팝 아트의 왕이라고 불린다'는 수동의 의미이므로 is called가 알맞다. (B)는 주어 This work가 단수이므로 is를 써야 한다. (C)는 「be worth + 동명사(-ing)」 구문이므로 reading이 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-24e8d23c69",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAmy: You look nervous about the dance contest.\nMinsu: Yes, I am. I don't know what to do.\nAmy: Don't worry. Just relax and enjoy dancing.\nMinsu: Thank you for your advice. I really ______ it.",
+"choices": [
+"regret",
+"refuse",
+"appreciate",
+"hurt",
+"borrow"
+],
+"answer": "③",
+"solution": "Amy가 조언을 해 주자 Minsu가 감사의 말을 전하는 상황이다. appreciate는 '고마워하다, 감사하다'라는 뜻이므로 빈칸에 가장 알맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c9d58e8e1e",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 두 단어의 의미가 서로 가장 비슷한 것은?",
+"choices": [
+"nervous : relaxed",
+"hurt : wound",
+"borrow : lend",
+"include : exclude",
+"receive : refuse"
+],
+"answer": "②",
+"solution": "hurt와 wound는 모두 '다치게 하다'라는 의미를 나타내므로 유의어 관계이다. ①은 반의어 관계이고, ③은 빌리는 행위와 빌려주는 행위를 나타낸다. ④와 ⑤도 의미가 서로 반대이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1473ee0675",
+"typeId": "eng-m3-b03-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\ncalm and not worried or nervous",
+"choices": [
+"nervous",
+"necessary",
+"relaxed",
+"important",
+"following"
+],
+"answer": "③",
+"solution": "제시된 영영풀이는 '차분하고 걱정하거나 긴장하지 않는'이라는 뜻이다. relaxed는 '편안한, 긴장을 푼'이라는 의미이므로 영영풀이와 일치한다. nervous는 '긴장한, 불안한'이라는 뜻으로 반대되는 의미에 가깝다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m0s0t0",
+"custom": true
 }
 ]

@@ -4364,5 +4364,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b01-u3m7s0t0",
 "custom": true
+},
+{
+"id": "fill-1a3591b47e",
+"typeId": "eng-m1-b01-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"How a cute puppy!",
+"What fast the boy runs!",
+"How wonderful the dancers are!",
+"She wants cold something.",
+"What amazing!"
+],
+"answer": "③",
+"solution": "감탄문은 「How+형용사/부사+주어+동사!」 또는 「What+(a/an)+형용사+명사+주어+동사!」 형태이다. ③은 How 뒤에 형용사(wonderful)+주어(the dancers)+동사(are)가 바르게 왔다. ①은 How 뒤에 「a+명사」가 올 수 없어 What a로, ②는 fast가 부사이므로 How fast로, ⑤는 What 뒤에 명사가 와야 하므로 틀렸다. ④는 -thing으로 끝나는 말은 형용사가 뒤에서 꾸미므로 something cold가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f48a4a6e1d",
+"typeId": "eng-m1-b01-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\n______ delicious the food is!",
+"choices": [
+"What",
+"How",
+"What a",
+"Very",
+"So"
+],
+"answer": "②",
+"solution": "뒤에 형용사(delicious)와 「주어+동사」(the food is)가 이어지는 감탄문이다. 형용사나 부사를 강조하는 감탄문은 How로 시작하므로 How가 알맞다. What 감탄문은 「What+(a/an)+형용사+명사」 구조로 명사가 반드시 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1a3591b47e",
+"typeId": "eng-m1-b01-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"I'll tell you something funny.",
+"There is wrong nothing with it.",
+"He met famous someone.",
+"How a great idea!",
+"What tall she is!"
+],
+"answer": "①",
+"solution": "-thing, -one 등으로 끝나는 대명사는 형용사가 뒤에서 수식하므로 something funny가 올바르다. ②는 nothing wrong, ③은 someone famous로 고쳐야 한다. ④는 「a+명사(idea)」가 있으므로 What a great idea!, ⑤는 형용사 tall을 강조하므로 How tall she is!가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-468928de43",
+"typeId": "eng-m1-b01-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 어색한 문장의 개수는?\n\nⓐ How brave the firefighter is!\nⓑ What a exciting game it was!\nⓒ I need someone strong.\nⓓ How slowly the turtle moves!\nⓔ There's something strange about him.\nⓕ What delicious the soup is!",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "어색한 문장은 ⓑ와 ⓕ로 2개이다. ⓑ는 exciting이 모음 소리로 시작하므로 What an exciting game it was!가 되어야 한다. ⓕ는 명사 없이 형용사(delicious)만 강조하므로 How delicious the soup is!로 고쳐야 한다. ⓐⓓ는 How 감탄문, ⓒⓔ는 -one/-thing 뒤에 형용사가 바르게 쓰여 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u7m1s0t0",
+"custom": true
 }
 ]

@@ -4086,5 +4086,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b08-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-3b08648bdf",
+"typeId": "eng-m1-b08-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nHi, I am Sam. I live with my grandma, and she is a great cook. She makes delicious food just like magic. We often cook together. Thanks to her, I can make some simple dishes. Mac and cheese is one of them, and I can make it very well.",
+"choices": [
+"How to Grow Vegetables at Home",
+"The Dishes I Can Make Thanks to Grandma",
+"My Trip to a Famous Restaurant",
+"A Letter to My Favorite Chef",
+"The History of Italian Pasta"
+],
+"answer": "②",
+"solution": "샘은 요리를 잘하는 할머니 덕분에 몇 가지 간단한 요리를 만들 수 있고 맥앤치즈도 그중 하나라고 말한다. 글 전체가 할머니 덕분에 만들 수 있게 된 음식에 관한 내용이므로 제목은 ②가 알맞다. 채소 기르기, 식당 여행, 셰프에게 쓴 편지, 파스타의 역사는 글의 내용과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3a032966a9",
+"typeId": "eng-m1-b08-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nMac and cheese is a simple dish, and I can make it very well. Mac means macaroni, a type of pasta. Many Americans love this food. The recipe is simple, so you can make it, too! You need: macaroni, cheese, milk, butter, flour, salt.",
+"choices": [
+"여러 나라의 유명한 디저트",
+"미국인들이 좋아하는 맥앤치즈와 간단한 조리법",
+"건강에 좋은 채소 요리법",
+"파스타 면을 만드는 방법",
+"할머니 생신 파티 준비 과정"
+],
+"answer": "②",
+"solution": "글은 많은 미국인이 좋아하는 맥앤치즈가 어떤 음식인지 소개하고, 조리법이 간단하며 필요한 재료를 알려 주고 있다. 따라서 주제는 ②가 가장 알맞다. 디저트, 채소 요리, 면 만들기, 생신 파티는 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ad0763f90e",
+"typeId": "eng-m1-b08-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 요지로 가장 알맞은 것은?\n\nMany Americans love mac and cheese. The recipe is simple, so you can make it, too! You need: macaroni, cheese, milk, butter, flour, salt.",
+"choices": [
+"맥앤치즈는 만들기 어려운 음식이다.",
+"맥앤치즈는 조리법이 간단해서 누구나 만들 수 있다.",
+"맥앤치즈는 미국에서 인기가 없는 음식이다.",
+"맥앤치즈를 만들려면 특별한 재료가 많이 필요하다.",
+"맥앤치즈는 식당에서만 먹을 수 있다."
+],
+"answer": "②",
+"solution": "글쓴이는 맥앤치즈의 조리법이 간단해서 독자도 만들 수 있다고 하며 필요한 재료를 알려 준다. 따라서 요지는 ②가 알맞다. 만들기 어렵다, 인기 없다, 특별한 재료가 많이 필요하다, 식당에서만 먹는다는 내용은 모두 글과 반대되거나 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m3s0t0",
+"custom": true
 }
 ]

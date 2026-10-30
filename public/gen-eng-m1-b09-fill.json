@@ -3066,5 +3066,70 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u4m2s0t0",
 "custom": true
+},
+{
+"id": "fill-1efe6bf45d",
+"typeId": "eng-m1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 아픈 야생 동물들을 돌본다.\n\n(care / sick / of / take / wild animals)\n\n→ I ______________________________.",
+"selfGrade": true,
+"answer": "take care of sick wild animals",
+"solution": "‘~을 돌보다’는 take care of로 씁니다. 목적어는 형용사 sick이 명사 wild animals 앞에 오는 순서로 써서 sick wild animals가 됩니다. 따라서 I take care of sick wild animals.가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f507645354",
+"typeId": "eng-m1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 바르게 배열하여 문장을 쓰시오.\n\n우리는 바다에 관심을 가져야 한다.\n\n(about / we / the ocean / should / care)\n\n→ ______________________________.",
+"selfGrade": true,
+"answer": "We should care about the ocean",
+"solution": "‘~해야 한다’는 조동사 should 뒤에 동사원형을 써서 나타냅니다. ‘~에 관심을 가지다’는 care about이므로 주어 We 다음에 should care about the ocean을 이어 씁니다. 정답은 We should care about the ocean.입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-22d36edc02",
+"typeId": "eng-m1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 빈칸에 알맞은 말을 2단어로 쓰시오.\n\n나는 물속에서 일하기 위해 잠수복을 입는다.\n\n→ I wear a diving suit ____________ ____________ in the water.",
+"selfGrade": true,
+"answer": "to work",
+"solution": "‘~하기 위해’라는 목적은 to부정사(to+동사원형)로 나타냅니다. ‘일하다’는 work이므로 빈칸에는 to work가 들어갑니다. 이 to부정사는 부사적 용법(목적)으로 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a86e4554eb",
+"typeId": "eng-m1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 (A)의 우리말을 주어진 <조건>에 알맞게 영작하시오.\n\nMy name is Jihan. I am a vet at the wild animal care center in Jirisan. I take care of sick wild animals in the center and send them back to their homes. Also, I often climb the mountain to look after wild animals like bears. I'm proud of my job. I think that protecting wild animals is important. (A)우리는 함께 살기 위해 그들과 그들의 집을 지켜봐야 합니다.\n\n<조건>\n• 조동사 should와 to부정사를 사용할 것\n• keep, eye, home, live, together를 사용할 것 (필요시 변형할 것)\n• 13단어의 완전한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "We should keep an eye on them and their homes to live together.",
+"solution": "‘~을 지켜보다’는 keep an eye on이고, ‘~해야 한다’는 should 뒤에 동사원형 keep을 씁니다. ‘그들의 집’은 복수이므로 home을 homes로 바꿔 their homes로 씁니다. ‘함께 살기 위해’는 목적을 나타내는 to부정사 to live together로 문장 끝에 둡니다. 모두 13단어입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ddfea01f20",
+"typeId": "eng-m1-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글을 읽고, 질문에 대한 답을 주어진 <조건>에 맞게 영어로 쓰시오.\n\nI am Nari. I am a haenyeo in Geoje. I dive in the water and collect seafood. In the morning, I check the tide and the weather. I wear a diving suit and swimming glasses to work in the water. I love diving and spending time in the beautiful sea. I don't collect too much seafood. This is good for the ocean. These days, I see a lot of trash in the water, so I pick up the trash. I believe that we should care about the ocean.\n\nQ: What does Nari do when she sees a lot of trash in the water?\n\n<조건>\n• 주어 She로 시작하는 완전한 문장으로 쓸 것\n• 본문의 표현을 이용하되, 필요시 형태를 바꿀 것\n• 5단어로 쓸 것",
+"selfGrade": true,
+"answer": "She picks up the trash.",
+"solution": "본문에서 물속에 쓰레기가 많이 보이면 쓰레기를 줍는다(so I pick up the trash)고 했습니다. 주어가 3인칭 단수 She이고 현재 시제이므로 pick을 picks로 바꿔야 합니다. 따라서 She picks up the trash.(5단어)가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m6s0t0",
+"custom": true
 }
 ]

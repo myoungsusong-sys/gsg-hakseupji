@@ -1748,5 +1748,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u3m0s1t0",
 "custom": true
+},
+{
+"id": "fill-8fcf166645",
+"typeId": "eng-h1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nSocial media algorithms keep track of the people we interact with the most. This allows us to stay in touch with the people we care about.",
+"selfGrade": true,
+"answer": "소셜 미디어 알고리즘이 우리가 가장 많이 교류하는 사람들을 계속 파악하는[추적하는] 것",
+"solution": "지시어 This는 바로 앞 문장의 내용을 가리킨다. 앞 문장에서 소셜 미디어 알고리즘이 '우리가 가장 많이 교류하는 사람들을 계속 파악한다'고 했으므로, 이것이 This가 가리키는 내용이다. 이 덕분에 우리가 아끼는 사람들과 계속 연락을 유지할 수 있다는 흐름이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u2m0s3t1",
+"custom": true
+},
+{
+"id": "fill-3dddfe4aef",
+"typeId": "eng-h1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nWhen sea levels rise, there will likely be more frequent flooding along the coasts. This can cause significant damage in coastal regions.",
+"selfGrade": true,
+"answer": "해수면이 상승할 때 해안을 따라 더 빈번한 홍수가 발생할 가능성이 있는 것",
+"solution": "This는 앞 문장 전체의 내용을 받는 지시어이다. 앞 문장에서 '해수면이 상승하면 해안을 따라 더 빈번한 홍수가 발생할 가능성이 있다'고 했으므로, 이것이 This의 내용이다. 이러한 홍수가 해안 지역에 심각한 피해를 줄 수 있다는 의미로 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u2m0s3t1",
+"custom": true
+},
+{
+"id": "fill-ec318257fe",
+"typeId": "eng-h1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nLike the human fingerprint, the pattern of spots on a giraffe is unique. This means we can identify each giraffe by its spots.",
+"selfGrade": true,
+"answer": "기린의 반점 무늬가 (사람의 지문처럼) 고유하다는 것",
+"solution": "This는 앞 문장의 내용을 가리킨다. 앞 문장에서 '사람의 지문처럼 기린의 반점 무늬가 고유하다'고 했으므로, 이것이 This가 의미하는 바이다. 그래서 반점으로 각각의 기린을 식별할 수 있다는 내용이 뒤따른다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u2m0s3t1",
+"custom": true
 }
 ]

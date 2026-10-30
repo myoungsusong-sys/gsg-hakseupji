@@ -1785,5 +1785,145 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-13-u0m0s2t0",
 "custom": true
+},
+{
+"id": "fill-ba2c5ae010",
+"typeId": "set2-cm2-13-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "유리식 $\\dfrac{x^2-9}{x^2+5x+6}$ 을 기약분수식으로 나타낸 것은? (단, 분모는 $0$이 아니다.)",
+"choices": [
+"$\\dfrac{x-3}{x+2}$",
+"$\\dfrac{x+3}{x+2}$",
+"$\\dfrac{x-3}{x-2}$",
+"$\\dfrac{x+3}{x-2}$",
+"$\\dfrac{x-2}{x+3}$"
+],
+"answer": "①",
+"solution": "분자는 $x^2-9=(x-3)(x+3)$, 분모는 $x^2+5x+6=(x+2)(x+3)$으로 인수분해된다. 공통인수 $(x+3)$으로 약분하면 $\\dfrac{(x-3)(x+3)}{(x+2)(x+3)}=\\dfrac{x-3}{x+2}$ 이다. 따라서 정답은 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-2d50c52c84",
+"typeId": "set2-cm2-13-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 식의 값을 구한 것은?\n\n$\\dfrac{1}{1\\cdot 2}+\\dfrac{1}{2\\cdot 3}+\\dfrac{1}{3\\cdot 4}$",
+"choices": [
+"$\\dfrac12$",
+"$\\dfrac23$",
+"$\\dfrac34$",
+"$\\dfrac45$",
+"$1$"
+],
+"answer": "③",
+"solution": "$\\dfrac{1}{n(n+1)}=\\dfrac{1}{n}-\\dfrac{1}{n+1}$ 로 부분분수 분해한다. 주어진 식은 $\\left(1-\\dfrac12\\right)+\\left(\\dfrac12-\\dfrac13\\right)+\\left(\\dfrac13-\\dfrac14\\right)$ 이고, 중간 항들이 소거되어 $1-\\dfrac14=\\dfrac34$ 이다. 따라서 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-518c78803e",
+"typeId": "set2-cm2-13-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 유리식을 간단히 하시오. (단, 분모는 $0$이 아니다.)\n\n$\\dfrac{x^2-1}{x+2}\\div\\dfrac{x-1}{x+2}$",
+"selfGrade": true,
+"answer": "$x+1$",
+"solution": "나눗셈을 곱셈으로 바꾸면 $\\dfrac{x^2-1}{x+2}\\times\\dfrac{x+2}{x-1}$ 이다. 분자 $x^2-1=(x-1)(x+1)$ 로 인수분해한 뒤 $(x+2)$와 $(x-1)$을 각각 약분하면 $x+1$ 이 남는다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-691caa733e",
+"typeId": "set2-cm2-13-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "유리함수 $y=\\dfrac{3}{x-2}+1$의 그래프 위의 한 점 $\\mathrm{P}$에서 두 점근선에 각각 수선을 내렸다. 이 두 수선과 두 점근선으로 둘러싸인 직사각형의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$3$",
+"solution": "두 점근선은 $x=2$, $y=1$입니다. 그래프 위의 점을 $\\mathrm{P}\\left(t,\\ \\dfrac{3}{t-2}+1\\right)$이라 하면, 두 점근선까지의 거리는 각각 $|t-2|$와 $\\left|\\dfrac{3}{t-2}\\right|$입니다. 따라서 직사각형의 넓이는 $|t-2|\\times\\dfrac{3}{|t-2|}=3$으로, 점의 위치와 상관없이 일정합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-a8aafe6035",
+"typeId": "set2-cm2-13-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "유리함수 $y=\\dfrac{2x+5}{x+1}$의 그래프의 점근선의 방정식이 $x=p$, $y=q$일 때, $p+q$의 값은?",
+"choices": [
+"$-1$",
+"$0$",
+"$1$",
+"$2$",
+"$3$"
+],
+"answer": "③",
+"solution": "분자를 $2(x+1)+3$으로 고치면 $y=\\dfrac{2x+5}{x+1}=\\dfrac{3}{x+1}+2$입니다. 따라서 점근선은 $x=-1$, $y=2$이므로 $p=-1$, $q=2$입니다. 그러므로 $p+q=1$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-1d8d153bd1",
+"typeId": "set2-cm2-13-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "유리함수 $y=\\dfrac{k}{x-1}+2\\ (k\\ne0)$의 그래프가 점 $(3,\\ 5)$를 지난다. 이 그래프 위의 임의의 점에서 두 점근선에 각각 수선을 내려 만든 직사각형의 넓이는?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$6$",
+"$8$"
+],
+"answer": "④",
+"solution": "점 $(3,5)$를 대입하면 $5=\\dfrac{k}{2}+2$이므로 $k=6$입니다. 그래프 위의 점 $\\left(t,\\ \\dfrac{6}{t-1}+2\\right)$에서 두 점근선 $x=1$, $y=2$까지의 거리는 각각 $|t-1|$, $\\dfrac{6}{|t-1|}$입니다. 따라서 직사각형의 넓이는 $|k|=6$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-a0aace8984",
+"typeId": "set2-cm2-13-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "유리함수\n\n$y=\\dfrac{3}{x-1}+2$\n\n의 그래프의 두 점근선의 방정식은?",
+"choices": [
+"$x=1,\\ y=2$",
+"$x=-1,\\ y=2$",
+"$x=1,\\ y=-2$",
+"$x=2,\\ y=1$",
+"$x=-1,\\ y=-2$"
+],
+"answer": "①",
+"solution": "유리함수 $y=\\dfrac{3}{x-1}+2$는 $y=\\dfrac{3}{x}$의 그래프를 $x$축 방향으로 $1$, $y$축 방향으로 $2$만큼 평행이동한 것이다. 따라서 세로 점근선은 $x=1$, 가로 점근선은 $y=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-606554d124",
+"typeId": "set2-cm2-13-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "유리함수\n\n$y=\\dfrac{5}{x+2}-3$\n\n의 두 점근선의 교점의 좌표는?",
+"choices": [
+"$(2,\\ 3)$",
+"$(-2,\\ 3)$",
+"$(2,\\ -3)$",
+"$(-2,\\ -3)$",
+"$(-3,\\ -2)$"
+],
+"answer": "④",
+"solution": "유리함수 $y=\\dfrac{5}{x+2}-3$의 세로 점근선은 $x=-2$, 가로 점근선은 $y=-3$이다. 두 점근선의 교점은 이 함수 그래프의 대칭의 중심이므로 그 좌표는 $(-2,\\ -3)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s2t3",
+"custom": true
 }
 ]

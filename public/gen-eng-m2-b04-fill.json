@@ -1945,5 +1945,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b04-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-9dc7217240",
+"typeId": "eng-m2-b04-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 알맞게 영작한 것은?\n\n해변을 청소하는 것은 나를 행복하게 만든다.",
+"choices": [
+"① Cleaning up beaches make me happy.",
+"② Cleaning up beaches makes me happily.",
+"③ Cleaning up beaches makes me happiness.",
+"④ Cleaning up beaches make me happily.",
+"⑤ Cleaning up beaches makes me happy."
+],
+"answer": "⑤",
+"solution": "동명사구 주어(Cleaning up beaches)는 단수 취급하므로 동사는 makes가 되어야 한다. 또한 「make+목적어+목적격보어」에서 보어 자리에는 형용사가 오므로 happily(부사)나 happiness(명사)가 아닌 happy(형용사)가 와야 한다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7f893b3160",
+"typeId": "eng-m2-b04-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 알맞게 영작한 것은?\n\n돌고래들을 돕는 것은 우리를 신나게 만든다.",
+"choices": [
+"① Helping dolphins makes us excited.",
+"② Helping dolphins make us excited.",
+"③ Helping dolphins makes us excitedly.",
+"④ Helping dolphins makes us excitement.",
+"⑤ Helping dolphins make us excitedly."
+],
+"answer": "①",
+"solution": "동명사구 주어(Helping dolphins)는 단수 취급하므로 동사는 makes가 맞다. 「make+목적어+목적격보어」에서 보어 자리에는 형용사가 와야 하므로 excitedly(부사)나 excitement(명사)가 아닌 excited(형용사)가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m6s0t0",
+"custom": true
 }
 ]

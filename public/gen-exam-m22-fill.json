@@ -6900,5 +6900,235 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u1m0s0t3",
 "custom": true
+},
+{
+"id": "fill-8d9dd03962",
+"typeId": "exam-m22-u0m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "각의 이등분선의 성질에 대한 설명으로 옳은 것은?",
+"selfGrade": true,
+"answer": "③",
+"solution": "각의 두 변에서 같은 거리에 있는 점은 그 각의 이등분선 위에 있고, 반대로 이등분선 위의 점에서 두 변에 이르는 거리는 서로 같다. 따라서 ③이 옳다. ①은 '서로 같다', ④는 '두 각으로 나눈다'가 되어야 하므로 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-6d839ffbc2",
+"typeId": "exam-m22-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle \\mathrm{AOB}$의 이등분선 위의 한 점 $\\mathrm{P}$에서 두 변 $\\mathrm{OA}$, $\\mathrm{OB}$에 내린 수선의 발을 각각 $\\mathrm{C}$, $\\mathrm{D}$라 하자. $\\overline{\\mathrm{PC}}=5\\,\\mathrm{cm}$일 때, $\\overline{\\mathrm{PD}}$의 길이는?",
+"choices": [
+"$3\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "각의 이등분선 위의 점에서 그 각의 두 변까지의 거리는 서로 같다. 따라서 $\\overline{\\mathrm{PD}}=\\overline{\\mathrm{PC}}=5\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-befc217769",
+"typeId": "exam-m22-u0m1s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "점 $O$는 예각삼각형 $ABC$의 외심이다. $\\angle A=55^\\circ$일 때, $\\angle BOC$의 크기는?",
+"choices": [
+"$100^\\circ$",
+"$105^\\circ$",
+"$110^\\circ$",
+"$115^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③",
+"solution": "점 $O$가 외심이므로 $\\angle BOC=2\\angle A$이다. 따라서 $\\angle BOC=2\\times55^\\circ=110^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-930a3b3cd4",
+"typeId": "exam-m22-u0m1s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "점 $O$는 예각삼각형 $ABC$의 외심이다. $\\angle OBC=25^\\circ$일 때, $\\angle A$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$65^\\circ$",
+"solution": "외심의 성질에 따라 $\\overline{OB}=\\overline{OC}$이므로 $\\triangle OBC$는 이등변삼각형이고 $\\angle OCB=\\angle OBC=25^\\circ$이다. 따라서 $\\angle BOC=180^\\circ-2\\times25^\\circ=130^\\circ$이다. $\\angle BOC=2\\angle A$이므로 $\\angle A=65^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-6df5429e86",
+"typeId": "exam-m22-u0m1s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "점 $O$는 $\\triangle ABC$의 외심이다. $\\angle AOB=100^\\circ$일 때, $\\angle OAB$의 크기는?",
+"choices": [
+"$35^\\circ$",
+"$40^\\circ$",
+"$45^\\circ$",
+"$50^\\circ$",
+"$55^\\circ$"
+],
+"answer": "②",
+"solution": "외심에서 세 꼭짓점까지의 거리는 같으므로 $\\overline{OA}=\\overline{OB}$이고, $\\triangle OAB$는 이등변삼각형이다. 따라서 $\\angle OAB=\\angle OBA=\\dfrac{180^\\circ-100^\\circ}{2}=40^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-e04f11424e",
+"typeId": "exam-m22-u0m1s0t3",
+"kind": "주관식",
+"diff": 3,
+"body": "점 $O$는 $\\triangle ABC$의 외심이고, 선분 $AO$의 연장선이 변 $BC$와 만나는 점을 $D$라 하자. $\\angle B=60^\\circ$, $\\angle C=48^\\circ$일 때, $\\angle ADC$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$102^\\circ$",
+"solution": "$\\angle A=180^\\circ-60^\\circ-48^\\circ=72^\\circ$이므로 $\\triangle ABC$는 예각삼각형이고, 외심 $O$는 삼각형의 내부에 있다. 점 $O$가 외심이므로 $\\angle AOC=2\\angle B=120^\\circ$이고, $\\overline{OA}=\\overline{OC}$이므로 $\\angle OAC=\\dfrac{180^\\circ-120^\\circ}{2}=30^\\circ$이다. 따라서 $\\triangle ADC$에서 $\\angle ADC=180^\\circ-30^\\circ-48^\\circ=102^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s0t3",
+"custom": true
+},
+{
+"id": "fill-968c92c103",
+"typeId": "exam-m22-u1m1s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "두 직선 $l$, $m$이 평행할 때, 밑변의 길이가 12 cm이고 높이가 6 cm인 삼각형의 넓이는?",
+"choices": [
+"$30\\ \\text{cm}^2$",
+"$36\\ \\text{cm}^2$",
+"$42\\ \\text{cm}^2$",
+"$48\\ \\text{cm}^2$",
+"$72\\ \\text{cm}^2$"
+],
+"answer": "②",
+"solution": "삼각형의 넓이는 $\\frac{1}{2}\\times(밑변)\\times(높이)$이다. 따라서 $\\frac{1}{2}\\times12\\times6=36$ (cm²)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m1s1t1",
+"custom": true
+},
+{
+"id": "fill-5dc7a77385",
+"typeId": "exam-m22-u1m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "평행사변형이 되는 조건을 완성하시오.\n\n한 쌍의 대변이 평행하고 그 ( )가 같으면 그 사각형은 평행사변형이다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "길이",
+"solution": "평행사변형이 되는 조건 중 하나는 '한 쌍의 대변이 평행하고 그 길이가 같다'이다. 따라서 빈칸에는 '길이'가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s1t1",
+"custom": true
+},
+{
+"id": "fill-9c1f05ca4d",
+"typeId": "exam-m22-u1m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "평행사변형이 되는 조건을 완성하시오.\n\n사각형의 두 대각선이 서로 다른 것을 ( )하면 그 사각형은 평행사변형이다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "이등분",
+"solution": "평행사변형이 되는 조건 중 하나는 '두 대각선이 서로 다른 것을 이등분한다'이다. 두 대각선이 각각의 중점에서 만나므로 서로를 이등분하게 된다. 따라서 빈칸에는 '이등분'이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s1t1",
+"custom": true
+},
+{
+"id": "fill-611157cd00",
+"typeId": "exam-m22-u1m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 사각형 $ABCD$가 평행사변형이 되는 조건으로 옳지 않은 것은?",
+"choices": [
+"두 쌍의 대변이 각각 평행하다.",
+"두 쌍의 대변의 길이가 각각 같다.",
+"두 쌍의 대각의 크기가 각각 같다.",
+"두 대각선이 서로 다른 것을 이등분한다.",
+"한 쌍의 대변의 길이가 같고 다른 한 쌍의 대변이 평행하다."
+],
+"answer": "⑤",
+"solution": "평행사변형이 되는 조건은 ①~④와 '한 쌍의 대변이 평행하고 그 길이가 같다'이다. ⑤는 길이가 같은 대변과 평행한 대변이 서로 다른 쌍이므로 등변사다리꼴 등도 가능하여 평행사변형이 되는 조건이 아니다. 따라서 옳지 않은 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s1t1",
+"custom": true
+},
+{
+"id": "fill-6a4fbbcdb4",
+"typeId": "exam-m22-u1m1s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\overline{AD}\\parallel\\overline{BC}$인 사다리꼴 $ABCD$에서 두 대각선 $AC$와 $BD$의 교점을 $O$라 하자. $\\triangle ABO$의 넓이가 $15\\,\\mathrm{cm^2}$일 때, $\\triangle DOC$의 넓이는?",
+"choices": [
+"$10\\,\\mathrm{cm^2}$",
+"$12\\,\\mathrm{cm^2}$",
+"$15\\,\\mathrm{cm^2}$",
+"$18\\,\\mathrm{cm^2}$",
+"$20\\,\\mathrm{cm^2}$"
+],
+"answer": "③",
+"solution": "$\\overline{AD}\\parallel\\overline{BC}$이므로 $\\triangle ABC$와 $\\triangle DBC$는 밑변 $BC$가 같고 높이도 같아서 넓이가 같다. 두 삼각형에서 공통인 $\\triangle OBC$를 빼면 $\\triangle ABO=\\triangle DOC$이다. 따라서 $\\triangle DOC=15\\,\\mathrm{cm^2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m1s1t3",
+"custom": true
+},
+{
+"id": "fill-2c217aaa02",
+"typeId": "exam-m22-u1m1s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "넓이가 $40\\,\\mathrm{cm^2}$인 $\\triangle ABC$에서 변 $BC$ 위에 점 $D$를 $\\overline{BD}:\\overline{DC}=3:2$가 되도록 잡았다. 이때 $\\triangle ABD$의 넓이는?",
+"choices": [
+"$20\\,\\mathrm{cm^2}$",
+"$24\\,\\mathrm{cm^2}$",
+"$26\\,\\mathrm{cm^2}$",
+"$28\\,\\mathrm{cm^2}$",
+"$30\\,\\mathrm{cm^2}$"
+],
+"answer": "②",
+"solution": "$\\triangle ABD$와 $\\triangle ADC$는 꼭짓점 $A$에서 내린 높이가 같으므로, 넓이의 비는 밑변의 길이의 비 $3:2$와 같다. 따라서 $\\triangle ABD=40\\times\\dfrac{3}{5}=24\\,(\\mathrm{cm^2})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m1s1t3",
+"custom": true
+},
+{
+"id": "fill-0652edad23",
+"typeId": "exam-m22-u1m1s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "넓이가 $50\\,\\mathrm{cm^2}$인 평행사변형 $ABCD$의 변 $AD$ 위에 한 점 $P$를 잡았다. 이때 $\\triangle PBC$의 넓이는 몇 $\\mathrm{cm^2}$인지 구하시오.",
+"selfGrade": true,
+"answer": "$25\\,\\mathrm{cm^2}$",
+"solution": "$\\overline{AD}\\parallel\\overline{BC}$이므로 점 $P$가 변 $AD$ 위의 어디에 있든 $\\triangle PBC$의 높이는 평행사변형의 높이와 같다. 밑변도 $BC$로 같으므로 $\\triangle PBC$의 넓이는 평행사변형 넓이의 $\\dfrac{1}{2}$이다. 따라서 $\\triangle PBC=50\\times\\dfrac{1}{2}=25\\,(\\mathrm{cm^2})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m1s1t3",
+"custom": true
+},
+{
+"id": "fill-75d03b8178",
+"typeId": "exam-m22-u1m1s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "넓이가 $96\\,\\mathrm{cm^2}$인 평행사변형 $ABCD$에서 변 $BC$ 위에 점 $P$를 $\\overline{BP}:\\overline{PC}=1:3$이 되도록 잡고, 선분 $AP$ 위에 점 $Q$를 $\\overline{AQ}:\\overline{QP}=2:1$이 되도록 잡았다. 이때 $\\triangle QCD$의 넓이는?",
+"choices": [
+"$32\\,\\mathrm{cm^2}$",
+"$36\\,\\mathrm{cm^2}$",
+"$40\\,\\mathrm{cm^2}$",
+"$44\\,\\mathrm{cm^2}$",
+"$48\\,\\mathrm{cm^2}$"
+],
+"answer": "③",
+"solution": "$\\triangle ABC=\\triangle APD=48$이므로 $\\triangle ABP=48\\times\\dfrac{1}{4}=12$이고 $\\triangle APC=36$이다. $\\overline{AQ}:\\overline{QP}=2:1$이므로 $\\triangle ABQ=12\\times\\dfrac{2}{3}=8$, $\\triangle AQD=48\\times\\dfrac{2}{3}=32$이다. 또 $\\triangle QBC=\\triangle QBP+\\triangle QPC=12\\times\\dfrac{1}{3}+36\\times\\dfrac{1}{3}=4+12=16$이다. 따라서 $\\triangle QCD=96-8-32-16=40\\,(\\mathrm{cm^2})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m1s1t3",
+"custom": true
 }
 ]

@@ -2421,5 +2421,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-3ec6b38b91",
+"typeId": "eng-m1-b03-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 패션에 매우 관심이 있다.\n(fashion / I'm / in / very / interested)\n\n→ ______________________________________.",
+"selfGrade": true,
+"answer": "I'm very interested in fashion",
+"solution": "'~에 관심이 있다'는 be interested in으로 나타냅니다. 부사 very는 형용사 interested 앞에 와서 '매우 관심이 있는'의 뜻이 됩니다. 따라서 I'm very interested in fashion.이 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-84fba7fe7f",
+"typeId": "eng-m1-b03-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 요즘 도넛에 푹 빠져 있다.\n(these days / into / I'm / donuts)\n\n→ ______________________________________.",
+"selfGrade": true,
+"answer": "I'm into donuts these days",
+"solution": "'~에 푹 빠져 있다, ~을 아주 좋아하다'는 be into로 나타내며, 그 뒤에 빠져 있는 대상(donuts)을 씁니다. '요즘'을 뜻하는 these days는 문장 끝에 둡니다. 따라서 I'm into donuts these days.가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-efda71684c",
+"typeId": "eng-m1-b03-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 알맞은 대답이 되도록 빈칸에 알맞은 말을 본문에서 찾아 쓰시오. (각 빈칸에 한 단어씩 쓸 것)\n\nHi, everyone! I'm Harin. I am an active person. I exercise a lot. I love running. I often run in the park, and I enjoy the fresh air there. I use a running app. It records my speed, time, and steps. It is very helpful.\n\nQ. What does Harin's running app record?\n→ It records her __________, __________, and __________.",
+"selfGrade": true,
+"answer": "speed, time, steps",
+"solution": "본문의 'It records my speed, time, and steps.'에 답이 그대로 나옵니다. 질문의 주어가 Harin이므로 대답에서는 my가 her로 바뀌어 이미 주어져 있습니다. 따라서 빈칸에는 speed, time, steps를 차례대로 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m6s0t0",
+"custom": true
 }
 ]

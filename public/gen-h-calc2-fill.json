@@ -3182,5 +3182,209 @@
 "source": "유사 문항",
 "twinGroup": "tw-20831",
 "custom": true
+},
+{
+"id": "fill-c805a63175",
+"typeId": "20714",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 $a$에 대하여\n\n$\\displaystyle \\lim_{x\\to 0}\\frac{a\\sin 4x}{x}=12$\n\n일 때, $a$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$6$"
+],
+"answer": "③",
+"solution": "$\\displaystyle \\lim_{x\\to0}\\frac{\\sin4x}{x}=4$이므로 주어진 극한은 $4a$이다. 따라서 $4a=12$에서 $a=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-b0589199f2",
+"typeId": "20714",
+"kind": "주관식",
+"diff": 1,
+"body": "상수 $a$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{1-\\cos2x}{ax^2}=2$\n\n일 때, $a$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "1",
+"solution": "$1-\\cos2x=2\\sin^2x$이므로 주어진 극한은 $\\displaystyle \\frac{2}{a}\\lim_{x\\to0}\\left(\\frac{\\sin x}{x}\\right)^2=\\frac{2}{a}$이다. 따라서 $\\frac{2}{a}=2$이므로 $a=1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-457b8fd626",
+"typeId": "20714",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 $a$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{ax+\\sin3x}{x}=7$\n\n일 때, $a$의 값은?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "③",
+"solution": "$\\displaystyle \\lim_{x\\to0}\\frac{\\sin3x}{x}=3$이므로 주어진 극한은 $a+3$이다. 따라서 $a+3=7$에서 $a=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-91c2f3c30b",
+"typeId": "20714",
+"kind": "주관식",
+"diff": 2,
+"body": "두 실수 $a$, $b$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{a-b\\cos2x}{x^2}=8$\n\n일 때, $a+b$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "8",
+"solution": "극한이 유한하려면 분자의 상수항이 $0$이어야 하므로 $a=b$이다. 이때 분자는 $b(1-\\cos2x)$이고, $\\displaystyle \\lim_{x\\to0}\\frac{1-\\cos2x}{x^2}=2$이므로 $2b=8$이다. 따라서 $a=b=4$이므로 $a+b=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-77406aef97",
+"typeId": "20714",
+"kind": "객관식",
+"diff": 2,
+"body": "양의 상수 $a$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{\\sin ax+\\tan2x}{3x}=2$\n\n일 때, $a$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "④",
+"solution": "$\\displaystyle \\lim_{x\\to0}\\frac{\\sin ax}{x}=a$이고 $\\displaystyle \\lim_{x\\to0}\\frac{\\tan2x}{x}=2$이다. 따라서 $\\frac{a+2}{3}=2$이므로 $a=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-b052ca2c5b",
+"typeId": "20714",
+"kind": "객관식",
+"diff": 2,
+"body": "두 실수 $a$, $b$에 대하여\n\n$\\displaystyle \\lim_{x\\to a}\\frac{2^x-4}{\\sin(x-a)}=b\\ln2$\n\n가 성립할 때, $a+b$의 값은?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "③",
+"solution": "극한이 유한하려면 $2^a-4=0$이어야 하므로 $a=2$이다. $x-2=t$로 놓으면 극한은 $\\displaystyle 4\\lim_{t\\to0}\\frac{2^t-1}{t}\\frac{t}{\\sin t}=4\\ln2$이므로 $b=4$이다. 따라서 $a+b=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-432d7e0b5d",
+"typeId": "20714",
+"kind": "주관식",
+"diff": 5,
+"body": "두 실수 $a$, $b$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{a(1-\\cos x)+b(1-\\cos2x)}{x^4}=-3$\n\n일 때, $a+b$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "-18",
+"solution": "$1-\\cos x=\\frac{x^2}{2}-\\frac{x^4}{24}+o(x^4)$, $1-\\cos2x=2x^2-\\frac{2}{3}x^4+o(x^4)$이다. 극한이 유한하려면 $\\frac a2+2b=0$이므로 $a=-4b$이다. $x^4$의 계수를 비교하면 $-\\frac a{24}-\\frac{2b}{3}=-\\frac b2=-3$이므로 $b=6$, $a=-24$이다. 따라서 $a+b=-18$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-1460f9c613",
+"typeId": "20714",
+"kind": "주관식",
+"diff": 5,
+"body": "두 실수 $a$, $b$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{\\sin(ax)-b\\sin x}{x^3}=-4$\n\n일 때, $a^2+b^2$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "18",
+"solution": "$\\sin(ax)-b\\sin x=(a-b)x+\\frac{b-a^3}{6}x^3+o(x^3)$이다. 극한이 유한하려면 $a=b$이고, 이때 $\\frac{a-a^3}{6}=-4$이므로 $a^3-a=24$이다. $(a-3)(a^2+3a+8)=0$이고 이차식은 실근이 없으므로 $a=b=3$이다. 따라서 $a^2+b^2=18$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-123ec4033c",
+"typeId": "20714",
+"kind": "객관식",
+"diff": 5,
+"body": "두 실수 $a$, $b$에 대하여\n\n$\\displaystyle \\lim_{x\\to0}\\frac{a\\sin2x+b\\tan x-7x}{x^3}=-\\frac53$\n\n일 때, $ab$의 값은?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "⑤",
+"solution": "$\\sin2x=2x-\\frac43x^3+o(x^3)$, $\\tan x=x+\\frac13x^3+o(x^3)$이다. 극한이 유한하려면 $2a+b=7$이고, 극한값을 비교하면 $\\frac{-4a+b}{3}=-\\frac53$이므로 $-4a+b=-5$이다. 두 식을 풀면 $a=2$, $b=3$이므로 $ab=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20714",
+"custom": true
+},
+{
+"id": "fill-bf2c210411",
+"typeId": "20846",
+"kind": "객관식",
+"diff": 1,
+"body": "높이가 $5\\,\\mathrm{cm}$인 용기를 밑면과 평행한 평면으로 잘랐을 때, 모든 단면의 넓이가 $6\\,\\mathrm{cm}^2$이다. 이 용기의 부피는?",
+"choices": [
+"$11\\,\\mathrm{cm}^3$",
+"$25\\,\\mathrm{cm}^3$",
+"$30\\,\\mathrm{cm}^3$",
+"$36\\,\\mathrm{cm}^3$",
+"$60\\,\\mathrm{cm}^3$"
+],
+"answer": "③",
+"solution": "밑면으로부터의 높이를 $x$라 하면 단면의 넓이는 항상 $6$이다. 따라서 부피는 $\\int_0^5 6\\,dx=30\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20846",
+"custom": true
+},
+{
+"id": "fill-916f6a269b",
+"typeId": "20846",
+"kind": "객관식",
+"diff": 1,
+"body": "높이가 $3\\,\\mathrm{cm}$인 입체도형을 밑면과 평행한 평면으로 잘랐을 때, 밑면으로부터 높이가 $x\\,\\mathrm{cm}$인 지점의 단면의 넓이는 $x^2\\,\\mathrm{cm}^2$이다. 이 입체도형의 부피는?",
+"choices": [
+"$3\\,\\mathrm{cm}^3$",
+"$6\\,\\mathrm{cm}^3$",
+"$9\\,\\mathrm{cm}^3$",
+"$18\\,\\mathrm{cm}^3$",
+"$27\\,\\mathrm{cm}^3$"
+],
+"answer": "③",
+"solution": "단면의 넓이가 $x^2$이므로 부피는 $\\int_0^3x^2\\,dx$이다. 이를 계산하면 $[\\frac{x^3}{3}]_0^3=9\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20846",
+"custom": true
+},
+{
+"id": "fill-759ee3f2ad",
+"typeId": "20846",
+"kind": "객관식",
+"diff": 2,
+"body": "높이가 $2\\,\\mathrm{m}$인 용기에서 밑면으로부터 높이가 $x\\,\\mathrm{m}$인 지점의 수평 단면의 넓이는 $\\frac{6}{x+1}\\,\\mathrm{m}^2$이다. 이 용기의 부피는?",
+"choices": [
+"$3\\ln 2\\,\\mathrm{m}^3$",
+"$3\\ln 3\\,\\mathrm{m}^3$",
+"$6\\ln 2\\,\\mathrm{m}^3$",
+"$6\\ln 3\\,\\mathrm{m}^3$",
+"$9\\ln 3\\,\\mathrm{m}^3$"
+],
+"answer": "④",
+"solution": "용기의 부피는 $\\int_0^2\\frac{6}{x+1}\\,dx$이다. 이를 계산하면 $[6\\ln(x+1)]_0^2=6\\ln 3\\,\\mathrm{m}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20846",
+"custom": true
 }
 ]

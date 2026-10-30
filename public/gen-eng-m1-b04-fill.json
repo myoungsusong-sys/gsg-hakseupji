@@ -3755,5 +3755,75 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b04-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-ee978fb581",
+"typeId": "eng-m1-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"I can makes tofu chips.",
+"She is bake tofu chips.",
+"You can make healthy snacks.",
+"He will eats tofu chips.",
+"They are make caprese skewers."
+],
+"answer": "③",
+"solution": "조동사 can, will 뒤에는 동사원형이 와야 한다. ③은 can 뒤에 동사원형 make가 왔으므로 어법상 알맞다. ①과 ④는 동사원형을 써야 하고, ②와 ⑤는 현재진행형이므로 각각 baking, making으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-14eb89ac6e",
+"typeId": "eng-m1-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 현재진행형의 형태가 어법상 알맞은 것은?",
+"choices": [
+"I am make tofu chips.",
+"She is putting tomatoes on skewers.",
+"He are eating a snack.",
+"They is baking tofu chips.",
+"We are fry tofu chips."
+],
+"answer": "②",
+"solution": "현재진행형은 'be동사 + 동사원형-ing'의 형태로 쓴다. ②는 주어 She에 맞는 be동사 is와 putting을 사용했으므로 알맞다. ①과 ⑤는 동사를 -ing형으로 고쳐야 하고, ③과 ④는 주어에 맞게 be동사를 각각 is와 are로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e62b46fbe2",
+"typeId": "eng-m1-b04-u1m1s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 동사를 어법상 알맞은 형태로 쓰시오.\n\nYou can (eat) tofu chips with honey.\n\n정답: __________",
+"selfGrade": true,
+"answer": "eat",
+"solution": "조동사 can 뒤에는 동사원형을 써야 한다. 따라서 괄호 안의 eat은 형태를 바꾸지 않고 그대로 쓴다. 문장의 뜻은 '너는 꿀과 함께 두부 칩을 먹을 수 있다.'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cd1d19366a",
+"typeId": "eng-m1-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ에 대한 설명으로 어법상 옳지 않은 것은?\n\nHi, I'm Mina from Korea. I ⓐam making tofu chips now. I ⓑdon't use any flour. I use only tofu. My tofu chips are healthy because I don't fry them but ⓒbake them. You can ⓓeating them with honey or garlic powder. They will ⓔtaste good.",
+"choices": [
+"ⓐ는 현재 진행 중인 동작을 나타내므로 'am making'이 알맞다.",
+"ⓑ는 일반동사의 현재시제 부정문이므로 'don't use'가 알맞다.",
+"ⓒ는 앞의 'don't fry'와 연결되므로 동사원형 'bake'가 알맞다.",
+"ⓓ는 조동사 can 뒤에 동사의 -ing형이 오므로 'eating'이 알맞다.",
+"ⓔ는 조동사 will 뒤에 동사원형이 오므로 'taste'가 알맞다."
+],
+"answer": "④",
+"solution": "조동사 can 뒤에는 동사의 -ing형이 아니라 동사원형이 와야 하므로 ⓓ의 eating은 eat으로 고쳐야 한다. ⓐ는 현재진행형, ⓑ는 일반동사의 현재시제 부정문으로 알맞게 쓰였다. ⓒ는 앞의 don't에 연결된 동사원형이고, ⓔ 역시 조동사 will 뒤에 동사원형이 왔으므로 올바르다. 따라서 어법 설명이 옳지 않은 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u1m1s0t0",
+"custom": true
 }
 ]

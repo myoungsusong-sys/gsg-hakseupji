@@ -1993,5 +1993,57 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b09-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-2dcc10d723",
+"typeId": "eng-m2-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고 질문에 대한 알맞은 대답이 되도록 주어진 <조건>에 맞게 빈칸을 완성하시오.\n\nBobby got his name from his grandfather, Bob. Bob was his best friend. Bob was the person who taught Bobby how to walk.\n\nQ. Who taught Bobby how to walk?\n\n<조건>\n• Bob을 주어로 사용할 것.\n• 빈칸에 한 단어씩 쓸 것.\n\n→ __________ __________ Bobby how to walk.",
+"selfGrade": true,
+"answer": "Bob taught",
+"solution": "Bobby에게 걷는 법을 가르쳐 준 사람은 할아버지 Bob이다. 질문의 Who에 해당하는 주어는 Bob이고, 과거에 일어난 일이므로 teach의 과거형 taught를 쓴다. 따라서 정답은 Bob taught이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e2ad961484",
+"typeId": "eng-m2-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고 질문에 대한 알맞은 대답이 되도록 주어진 <조건>에 맞게 빈칸을 완성하시오.\n\nBob and Bobby often played with old wooden blocks. They slowly piled the blocks one by one to build a tower.\n\nQ. What did Bob and Bobby build with the blocks?\n\n<조건>\n• tower를 사용할 것.\n• 빈칸에 한 단어씩 쓸 것.\n\n→ They __________ a __________.",
+"selfGrade": true,
+"answer": "built tower",
+"solution": "Bob과 Bobby는 나무 블록을 쌓아 탑을 만들었다. 질문의 did는 과거의 행동을 묻는 표현이므로 대답에서는 build의 과거형 built를 사용한다. a 뒤에는 단수 명사 tower를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5c9ec36e41",
+"typeId": "eng-m2-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고 질문에 대한 알맞은 대답이 되도록 주어진 <조건>에 맞게 빈칸을 완성하시오.\n\nBob came back home after a few months. He just lay in bed without talking or moving.\n\nQ. Where did Bob lie after he came back home?\n\n<조건>\n• in을 사용할 것.\n• 빈칸에 한 단어씩 쓸 것.\n\n→ He lay __________ __________.",
+"selfGrade": true,
+"answer": "in bed",
+"solution": "본문에서 Bob은 집에 돌아온 후 침대에 누워 있었다고 설명한다. '침대에 누워 있다'라는 표현은 lie in bed이다. 따라서 빈칸에는 in bed를 순서대로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f45723249c",
+"typeId": "eng-m2-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 대한 알맞은 대답이 되도록 주어진 <조건>에 맞게 빈칸을 완성하시오.\n\nBob was the person who taught Bobby how to walk. However, Bob fell ill and could not move his arms and legs. After a few months, he came back home. When the weather got nice and warm, Bob and Bobby sat side by side. Bobby stood in front of Bob, and Bob leaned on Bobby's shoulders. Bobby said, 'When I was little, you held my hands and said these words.' Bobby added, 'Now one foot.' Like magic, Bob moved one foot. 'Now the other.' And Bob moved the other.\n\nQ. How did Bobby help Bob walk again?\n\n<조건>\n• remind, support를 반드시 사용할 것 (필요시 변형할 것).\n• 접속사 while을 사용할 것.\n• 과거 시제로 쓸 것.\n• 빈칸에 한 단어씩 쓸 것.\n\n→ Bobby __________ Bob __________ the words he had said before __________ __________ him with his shoulders.",
+"selfGrade": true,
+"answer": "reminded of while supporting",
+"solution": "Bobby는 Bob이 예전에 자신에게 했던 말을 떠올리게 하고, 어깨로 Bob을 받쳐 주었다. remind A of B는 'A에게 B를 떠올리게 하다'라는 뜻이므로 reminded Bob of the words가 된다. 또한 while 뒤에 현재분사를 사용하면 '~하면서'라는 의미를 나타낼 수 있다. 따라서 reminded, of, while, supporting을 순서대로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m6s0t0",
+"custom": true
 }
 ]

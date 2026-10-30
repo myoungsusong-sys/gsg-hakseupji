@@ -1469,5 +1469,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b03-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-c5c7e66271",
+"typeId": "eng-m2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nLie on your bed with your head at the edge.\nLet your head ________ off the bed.",
+"choices": [
+"hang",
+"hangs",
+"to hang",
+"hanging",
+"hung"
+],
+"answer": "①",
+"solution": "사역동사 let은 「let + 목적어 + 동사원형」의 형태로 써서 '~가 …하게 하다'라는 뜻을 나타낸다. 따라서 목적어 your head 뒤에는 동사원형 hang이 와야 한다. to hang, hanging, hung은 let의 목적격 보어로 쓸 수 없고, hangs처럼 동사에 -s를 붙인 형태도 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0f0f213718",
+"typeId": "eng-m2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nStand and spread your feet.\nBend your arms ________ a W shape. (W 모양을 만들기 위해)",
+"choices": [
+"make",
+"makes",
+"made",
+"to make",
+"to making"
+],
+"answer": "④",
+"solution": "'~하기 위해'라는 목적을 나타낼 때는 to부정사의 부사적 용법(to + 동사원형)을 쓴다. Bend your arms는 이미 명령문으로 완성된 문장이므로 동사 make를 그대로 덧붙일 수 없다. 따라서 to make가 알맞고, to 뒤에는 동사원형이 와야 하므로 to making은 틀린 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d17b9edbf6",
+"typeId": "eng-m2-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"Sit up straight and move your head slowly.",
+"Hold for 10 seconds.",
+"It can make you feel dizzily.",
+"This stretch is great for your neck and shoulders.",
+"Don't do this for longer than 60 seconds."
+],
+"answer": "③",
+"solution": "감각동사 feel 뒤에는 보어로 형용사가 와야 하므로 부사 dizzily가 아니라 형용사 dizzy를 써야 한다. 또한 사역동사 make는 「make + 목적어 + 동사원형」으로 쓰므로 feel은 맞게 쓰였다. ①, ②, ⑤는 동사원형으로 시작하는 명령문(⑤는 Don't + 동사원형인 부정 명령문)으로 모두 어법상 맞고, ④도 어색한 곳이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m1s0t0",
+"custom": true
 }
 ]

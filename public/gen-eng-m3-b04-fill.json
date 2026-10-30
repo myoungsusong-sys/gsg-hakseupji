@@ -6109,5 +6109,170 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-8b81cc7f31",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nA runner was just entering the stadium, but there was something wrong with his legs. Still, he kept ________ toward the finish line.",
+"choices": [
+"go",
+"goes",
+"went",
+"going",
+"to go"
+],
+"answer": "④",
+"solution": "keep은 목적어로 동명사(-ing)를 취하며, 'keep -ing'는 '계속 ~하다'라는 뜻이다. 따라서 빈칸에는 going이 알맞다. to go는 to부정사이므로 keep 뒤에 쓸 수 없고, 동사원형이나 과거형도 이 자리에 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a96a843761",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nSomeone shouted, \"Look! There comes another runner!\" A runner was just entering the stadium, but there was ________ with his legs.",
+"choices": [
+"wrong something",
+"something wrong",
+"wrong some",
+"something wrongly",
+"wrongly something"
+],
+"answer": "②",
+"solution": "-thing으로 끝나는 대명사(something, anything, nothing 등)는 형용사가 뒤에서 꾸민다. 따라서 '무언가 잘못된 것'은 something wrong으로 써야 한다. 여기서 wrong은 대명사를 꾸미는 말이므로 부사 wrongly는 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-380567da3b",
+"typeId": "eng-m3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThe officials removed the tape at the finish line. Then someone shouted, \"Look! There ________ another runner!\"",
+"choices": [
+"come",
+"comes",
+"coming",
+"to come",
+"to coming"
+],
+"answer": "②",
+"solution": "'There + 동사 + 주어' 어순의 도치 구문에서는 동사 뒤에 오는 주어에 수를 맞춘다. 주어 another runner가 3인칭 단수이고 'Look!'으로 보아 지금 일어나는 일이므로 현재형 comes가 알맞다. coming이나 to come은 문장의 동사 자리에 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-309a333652",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nDo you want to be healthy? Then try mountain biking! Mountain biking is a great exercise. It makes your body strong. It also makes you feel happy. Why don't you start mountain biking today?",
+"choices": [
+"Mountain Biking Is Good for You",
+"How to Buy a New Bike",
+"The History of Mountain Biking",
+"Dangerous Sports to Avoid",
+"Famous Mountain Biking Places"
+],
+"answer": "①",
+"solution": "글은 산악자전거가 몸을 튼튼하게 하고 기분을 좋게 해 주는 좋은 운동이라고 소개하며 권하고 있다. 따라서 '산악자전거는 당신에게 좋다'라는 제목이 가장 알맞다. 자전거 구입, 역사, 위험한 스포츠, 장소는 글에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9a7056e06d",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nSunshine has many benefits. It makes your bones strong. It also makes your mood better. Just 10 to 20 minutes of sunlight a day is good for your mind and body. So enjoy a little sunshine every day!",
+"choices": [
+"햇빛이 우리 몸과 마음에 주는 이로움",
+"햇빛을 피해야 하는 여러 가지 이유",
+"자외선 차단제를 고르는 방법",
+"하루에 필요한 운동 시간",
+"비타민이 풍부한 음식의 종류"
+],
+"answer": "①",
+"solution": "글은 햇빛이 뼈를 튼튼하게 하고 기분을 좋게 하는 등 몸과 마음에 이롭다는 점을 설명하고 있다. 따라서 주제는 '햇빛이 우리 몸과 마음에 주는 이로움'이다. 햇빛을 피하는 이유나 차단제, 운동 시간, 음식은 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b4770b4817",
+"typeId": "eng-m3-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nEating breakfast every morning is important. Breakfast gives you energy for the day. It also helps you study well at school. Don't skip your breakfast!",
+"choices": [
+"아침 식사는 중요하므로 거르지 말아야 한다.",
+"저녁은 가볍게 먹는 것이 좋다.",
+"운동을 매일 하는 것이 건강에 좋다.",
+"충분한 잠이 공부에 도움이 된다.",
+"물을 자주 마시는 것이 중요하다."
+],
+"answer": "①",
+"solution": "글은 아침 식사가 하루의 에너지를 주고 학교 공부에도 도움이 되니 거르지 말라고 말하고 있다. 따라서 요지는 '아침 식사는 중요하므로 거르지 말아야 한다'이다. 저녁, 운동, 잠, 물은 글에 나오지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-df9c1f03c0",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nMina can ride a bike as ________ as her older brother.",
+"choices": [
+"fast",
+"faster",
+"fastest",
+"more fast",
+"faster than"
+],
+"answer": "①",
+"solution": "「as + 원급 + as」 동등 비교 구문이므로 두 as 사이에는 비교급이나 최상급이 아닌 원급이 와야 한다. 따라서 fast가 알맞다. faster(비교급)나 fastest(최상급)는 이 구문에서 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e514ca25b",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThe new bike is both light ________ strong, so he really likes it.",
+"choices": [
+"or",
+"but",
+"and",
+"nor",
+"so"
+],
+"answer": "③",
+"solution": "상관접속사 「both A and B(A와 B 둘 다)」 구문이다. both는 반드시 and와 짝을 이루므로 빈칸에는 and가 와야 한다. or, but 등은 both와 함께 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2c990ea384",
+"typeId": "eng-m3-b04-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에는 어법상 틀린 부분이 두 군데 있다. 틀린 부분을 찾아 바르게 고쳐 쓰시오.\n\nThat was hard to accept the low price at first, but after he sold the bike he felt both relieved or proud.",
+"selfGrade": true,
+"answer": "That → It, or → and",
+"solution": "첫째, to accept 이하를 받는 가주어가 필요하므로 지시대명사 That이 아니라 가주어 It을 써야 한다(It ~ to부정사 구문). 둘째, 상관접속사 both는 and와 짝을 이루므로 both relieved or proud가 아니라 both relieved and proud로 고쳐야 한다. 따라서 That은 It으로, or는 and로 바꿔야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u5m1s0t0",
+"custom": true
 }
 ]

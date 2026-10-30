@@ -1767,5 +1767,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-09-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-17c6a350e9",
+"typeId": "set2-cm2-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "길이가 $36\\,\\mathrm{m}$인 끈을 모두 사용하여 직사각형을 만들려고 한다. 직사각형의 가로를 $x\\,\\mathrm{m}$, 세로를 $y\\,\\mathrm{m}$라 할 때, 직사각형 넓이의 최댓값은? (단, 끈의 두께는 무시한다.)",
+"choices": [
+"$64\\,\\mathrm{m}^2$",
+"$72\\,\\mathrm{m}^2$",
+"$81\\,\\mathrm{m}^2$",
+"$90\\,\\mathrm{m}^2$",
+"$324\\,\\mathrm{m}^2$"
+],
+"answer": "③",
+"solution": "둘레가 $36$이므로 $2(x+y)=36$, 즉 $x+y=18$이다. $x>0$, $y>0$이므로 산술평균과 기하평균의 관계에 의해 $x+y\\geq2\\sqrt{xy}$, 즉 $18\\geq2\\sqrt{xy}$이고 $xy\\leq81$이다. 등호는 $x=y=9$일 때 성립하므로 넓이의 최댓값은 $81\\,\\mathrm{m}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-0de1482e49",
+"typeId": "set2-cm2-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "넓이가 $49\\,\\mathrm{m}^2$인 직사각형 모양의 꽃밭의 둘레에 울타리를 설치하려고 한다. 꽃밭의 가로를 $x\\,\\mathrm{m}$, 세로를 $y\\,\\mathrm{m}$라 할 때, 필요한 울타리 길이의 최솟값은? (단, 울타리의 두께는 무시한다.)",
+"choices": [
+"$14\\,\\mathrm{m}$",
+"$28\\,\\mathrm{m}$",
+"$32\\,\\mathrm{m}$",
+"$36\\,\\mathrm{m}$",
+"$49\\,\\mathrm{m}$"
+],
+"answer": "②",
+"solution": "$xy=49$이고 울타리의 길이는 $2(x+y)$이다. $x>0$, $y>0$이므로 $x+y\\geq2\\sqrt{xy}=2\\sqrt{49}=14$이다. 따라서 $2(x+y)\\geq28$이고, 등호는 $x=y=7$일 때 성립하므로 최솟값은 $28\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-f1b8e2003e",
+"typeId": "set2-cm2-09-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "충분히 긴 담장을 한 변으로 이용하여 직사각형 모양의 닭장을 만들려고 한다. 담장과 평행한 변의 길이를 $x\\,\\mathrm{m}$, 담장과 수직인 변의 길이를 $y\\,\\mathrm{m}$라 하고, 담장을 제외한 세 변에 길이가 $20\\,\\mathrm{m}$인 철망을 모두 사용할 때, 닭장 넓이의 최댓값은 몇 $\\mathrm{m}^2$인지 구하시오. (단, 철망의 두께는 무시한다.)",
+"selfGrade": true,
+"answer": "$50$",
+"solution": "세 변의 길이의 합이 $20$이므로 $x+2y=20$이다. $x>0$, $2y>0$이므로 산술평균과 기하평균의 관계에 의해 $x+2y\\geq2\\sqrt{2xy}$, 즉 $20\\geq2\\sqrt{2xy}$이고 $xy\\leq50$이다. 등호는 $x=2y$, 즉 $x=10$, $y=5$일 때 성립하므로 넓이의 최댓값은 $50\\,\\mathrm{m}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c9130b307c",
+"typeId": "set2-cm2-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$a>0$일 때, $a+\\dfrac{16}{a}$의 최솟값은?",
+"choices": [
+"$4$",
+"$6$",
+"$8$",
+"$10$",
+"$12$"
+],
+"answer": "③",
+"solution": "$a>0$, $\\dfrac{16}{a}>0$이므로 산술평균과 기하평균의 관계에 의하여 $a+\\dfrac{16}{a}\\geq 2\\sqrt{a\\cdot\\dfrac{16}{a}}=2\\sqrt{16}=8$이다. 등호는 $a=\\dfrac{16}{a}$, 즉 $a=4$일 때 성립하므로 최솟값은 $8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-5243354d39",
+"typeId": "set2-cm2-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "모든 실수 $x$에 대하여 부등식 $x^2-6x+k\\geq 0$이 항상 성립하도록 하는 실수 $k$의 최솟값은?",
+"choices": [
+"$6$",
+"$7$",
+"$8$",
+"$9$",
+"$10$"
+],
+"answer": "④",
+"solution": "이차식 $x^2-6x+k$의 최고차항 계수가 양수이므로, 모든 실수 $x$에 대하여 부등식이 성립하려면 판별식 $D\\leq 0$이어야 한다. $D=(-6)^2-4k=36-4k\\leq 0$에서 $k\\geq 9$이다. 따라서 $k$의 최솟값은 $9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-9e2c0a246c",
+"typeId": "set2-cm2-09-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$x>0$, $y>0$일 때, $\\dfrac{x}{y}+\\dfrac{y}{x}$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$2$",
+"solution": "$\\dfrac{x}{y}>0$, $\\dfrac{y}{x}>0$이므로 산술평균과 기하평균의 관계에 의하여 $\\dfrac{x}{y}+\\dfrac{y}{x}\\geq 2\\sqrt{\\dfrac{x}{y}\\cdot\\dfrac{y}{x}}=2$이다. 등호는 $\\dfrac{x}{y}=\\dfrac{y}{x}$, 즉 $x=y$일 때 성립하므로 최솟값은 $2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-ba034bd25b",
+"typeId": "set2-cm2-09-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "두 실수 $x$, $y$가 $x^2+y^2=25$를 만족시킬 때, $3x+4y$의 최댓값은?",
+"choices": [
+"$15$",
+"$20$",
+"$25$",
+"$30$",
+"$35$"
+],
+"answer": "③",
+"solution": "코시-슈바르츠 부등식에 의해 $(3x+4y)^2\\le(3^2+4^2)(x^2+y^2)=25\\times25=625$이다. 따라서 $3x+4y\\le25$이다. $x=3$, $y=4$일 때 주어진 조건을 만족하고 등호가 성립하므로 최댓값은 $25$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-f54ad08c8e",
+"typeId": "set2-cm2-09-u0m0s2t3",
+"kind": "주관식",
+"diff": 1,
+"body": "두 양수 $x$, $y$가 $x+y=12$를 만족시킬 때, $\\dfrac{1}{x}+\\dfrac{1}{y}$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{1}{3}$",
+"solution": "코시-슈바르츠 부등식에 의해 $(x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)\\ge(1+1)^2=4$이다. $x+y=12$이므로 $\\dfrac{1}{x}+\\dfrac{1}{y}\\ge\\dfrac{4}{12}=\\dfrac{1}{3}$이다. $x=y=6$일 때 등호가 성립하므로 최솟값은 $\\dfrac{1}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-ee761d293a",
+"typeId": "set2-cm2-09-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "두 실수 $x$, $y$가 $x+2y=10$을 만족시킬 때, $x^2+y^2$의 최솟값은?",
+"choices": [
+"$10$",
+"$15$",
+"$20$",
+"$25$",
+"$30$"
+],
+"answer": "③",
+"solution": "코시-슈바르츠 부등식에 의해 $(x+2y)^2\\le(x^2+y^2)(1^2+2^2)=5(x^2+y^2)$이다. $x+2y=10$이므로 $100\\le5(x^2+y^2)$, 즉 $x^2+y^2\\ge20$이다. $x=2$, $y=4$일 때 주어진 조건을 만족하고 등호가 성립하므로 최솟값은 $20$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t3",
+"custom": true
 }
 ]

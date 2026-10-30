@@ -2586,5 +2586,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b06-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-952fcf9eaf",
+"typeId": "eng-m1-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 뜻이 같도록 괄호 안의 단어를 모두 배열하시오.\n\nMy plan looked perfect. But Dad and I woke up late and missed the bus. I said, “It’s okay, Dad. We have a plan B. Our plan B is taking the train.” Dad said, “Great! You had another plan. (A)네 덕분에 우리는 제시간에 거기에 도착할 수 있어.” So we took the train, and it even had a special ondol room!\n\n(A) ___________________________________________\n(to / we / thanks / there / can / you / be / in time)",
+"selfGrade": true,
+"answer": "Thanks to you, we can be there in time.",
+"solution": "'~ 덕분에'는 thanks to ~로 써서 Thanks to you를 문장 맨 앞에 둔다. 그다음 '주어 + 조동사 + 동사원형' 순서에 따라 we can be를 쓰고, 장소 there와 시간 in time을 차례로 이어 쓴다. can 뒤에는 동사원형 be가 와야 한다는 점에 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d3f1fc0ac9",
+"typeId": "eng-m1-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 뜻이 같도록 괄호 안의 단어를 모두 배열하시오.\n\nThird, I will prepare for my grandma’s birthday party! (A)나는 멋진 해산물 식당을 찾을 것이다.\nFourth, we will take family pictures!\n\n(A) ___________________________________________\n(find / will / I / a nice / seafood restaurant)",
+"selfGrade": true,
+"answer": "I will find a nice seafood restaurant.",
+"solution": "미래의 계획을 말할 때는 '주어 + will + 동사원형'을 쓴다. 그러므로 주어 I 다음에 will find를 쓰고, 목적어 a nice seafood restaurant를 그 뒤에 둔다. 앞 문장 I will prepare for ~와 같은 구조이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-a58f1a09ce",
+"typeId": "eng-m1-b06-u3m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 밑줄 친 우리말과 뜻이 같도록 괄호 안의 단어를 모두 배열하시오.\n\nM: Alicia, let’s go to Rainbow Waterfall today.\nG: Great. Is it near here?\nM: I’m not sure. (A)지도를 봐 줄 수 있니?\nG: Sure, Dad. Let’s see. (pause) Oh, it’s very close. We can walk from here.\n\n(A) ___________________________________________\n(look at / can / the map / you)",
+"selfGrade": true,
+"answer": "Can you look at the map?",
+"solution": "'~해 줄 수 있니?'라고 부탁할 때는 'Can you + 동사원형 ~?'을 쓴다. 의문문이므로 조동사 Can을 맨 앞에 두고 주어 you를 쓴 다음, 동사 look at과 목적어 the map을 이어 쓴다. 문장 끝에는 물음표를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u3m5s0t0",
+"custom": true
 }
 ]

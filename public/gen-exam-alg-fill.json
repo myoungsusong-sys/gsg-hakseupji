@@ -13808,5 +13808,37 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-alg-u1m0s5t3",
 "custom": true
+},
+{
+"id": "fill-e6e4363824",
+"typeId": "exam-alg-u1m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "원점 $O$를 지나는 직선 $3x+4y=0$이 $x$축의 양의 방향과 이루는 각의 크기를 $\\theta$라 하자. 단, $\\theta$는 제2사분면의 각이다. $\\sin\\theta$의 값은?",
+"choices": [
+"$\\frac{3}{5}$",
+"$\\frac{4}{5}$",
+"$-\\frac{3}{5}$",
+"$-\\frac{4}{5}$",
+"$\\frac{5}{4}$"
+],
+"answer": "①",
+"solution": "직선 $3x+4y=0$ 위의 제2사분면에 있는 점으로 $(-4,3)$을 잡을 수 있다. 원점에서 이 점까지의 거리는 $\\sqrt{(-4)^2+3^2}=5$이다. 따라서 삼각함수의 정의에 의해 $\\sin\\theta=\\frac{y}{r}=\\frac{3}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s2t3",
+"custom": true
+},
+{
+"id": "fill-0e68546267",
+"typeId": "exam-alg-u1m0s2t3",
+"kind": "주관식",
+"diff": 1,
+"body": "반지름의 길이가 $6$이고 중심각의 크기가 $\\frac{\\pi}{3}$인 부채꼴의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$6\\pi$",
+"solution": "반지름의 길이가 $r$, 중심각의 크기가 $\\theta$라디안인 부채꼴의 넓이는 $S=\\frac{1}{2}r^2\\theta$이다. $r=6$, $\\theta=\\frac{\\pi}{3}$을 대입하면 $S=\\frac{1}{2}\\times36\\times\\frac{\\pi}{3}=6\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-alg-u1m0s2t3",
+"custom": true
 }
 ]

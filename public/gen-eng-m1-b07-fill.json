@@ -3585,5 +3585,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u4m7s0t0",
 "custom": true
+},
+{
+"id": "fill-e7372731ba",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻의 연결이 어색한 것은?",
+"choices": [
+"huge: 거대한",
+"fresh: 신선한",
+"tasty: 맛있는",
+"contest: 대회",
+"leave: 도착하다"
+],
+"answer": "⑤",
+"solution": "leave는 '떠나다, 출발하다'라는 뜻이다. '도착하다'는 arrive이므로 ⑤의 연결이 어색하다. 본문에서 leave the fair는 '박람회를 떠나다'로 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dd70ed13b5",
+"typeId": "eng-m1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nA: What are you going to do this weekend?\nB: I ____________ visit my grandparents.",
+"choices": [
+"am go to",
+"am going to",
+"going to",
+"am going",
+"is going to"
+],
+"answer": "②",
+"solution": "주말에 할 일(미래 계획)을 말할 때는 「be going to + 동사원형」을 쓴다. 주어가 I이므로 am going to가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m7s0t0",
+"custom": true
 }
 ]
