@@ -3386,5 +3386,331 @@
 "source": "유사 문항",
 "twinGroup": "tw-20846",
 "custom": true
+},
+{
+"id": "fill-3c18269623",
+"typeId": "20661",
+"kind": "객관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 가로의 길이가 $n$, 세로의 길이가 $n+1$인 직사각형의 넓이를 $A_n$이라 하자. 급수 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{A_n}$의 값은?",
+"choices": [
+"$\\frac14$",
+"$\\frac12$",
+"$1$",
+"$\\frac32$",
+"$2$"
+],
+"answer": "③",
+"solution": "직사각형의 넓이는 $A_n=n(n+1)$이다. $\\frac{1}{A_n}=\\frac1n-\\frac{1}{n+1}$이므로 제$N$부분합은 $1-\\frac{1}{N+1}$이다. 따라서 구하는 급수의 값은 $1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20661",
+"custom": true
+},
+{
+"id": "fill-cc95d06975",
+"typeId": "20661",
+"kind": "객관식",
+"diff": 1,
+"body": "한 변의 길이가 $n$인 정삼각형의 둘레의 길이를 $p_n$이라 하자. 급수 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{p_np_{n+1}}$의 값은?",
+"choices": [
+"$\\frac{1}{18}$",
+"$\\frac19$",
+"$\\frac16$",
+"$\\frac13$",
+"$\\frac23$"
+],
+"answer": "②",
+"solution": "정삼각형의 둘레의 길이는 $p_n=3n$이므로 $\\frac{1}{p_np_{n+1}}=\\frac19\\left(\\frac1n-\\frac{1}{n+1}\\right)$이다. 따라서 제$N$부분합은 $\\frac19\\left(1-\\frac{1}{N+1}\\right)$이고, 구하는 값은 $\\frac19$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20661",
+"custom": true
+},
+{
+"id": "fill-eac91063b9",
+"typeId": "20661",
+"kind": "객관식",
+"diff": 1,
+"body": "자연수 $n$에 대하여 점을 $n$개의 가로줄에 배열하되, 위에서부터 $k$번째 줄에는 점을 $k$개씩 놓아 삼각형 모양을 만든다. 이때 사용한 점의 총개수를 $b_n$이라 할 때, 급수 $\\displaystyle\\sum_{n=2}^{\\infty}\\frac{1}{b_n}$의 값은?",
+"choices": [
+"$\\frac12$",
+"$\\frac34$",
+"$\\frac32$",
+"$2$",
+"$1$"
+],
+"answer": "⑤",
+"solution": "점의 총개수는 $b_n=1+2+\\cdots+n=\\frac{n(n+1)}2$이다. 따라서 $\\sum_{n=2}^{N}\\frac{1}{b_n}=2\\sum_{n=2}^{N}\\left(\\frac1n-\\frac{1}{n+1}\\right)=1-\\frac{2}{N+1}$이다. $N\\to\\infty$로 보내면 구하는 값은 $1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20661",
+"custom": true
+},
+{
+"id": "fill-6cf37db584",
+"typeId": "20661",
+"kind": "주관식",
+"diff": 5,
+"body": "자연수 $n$에 대하여 반지름의 길이가 $1$인 원에 내접하는 정$(2n+2)$각형의 꼭짓점을 원주를 따라 차례로 $P_1,P_2,\\ldots,P_{2n+2}$라 하자. $P_1$과 마주 보는 꼭짓점 $P_{n+2}$를 제외한 나머지 꼭짓점까지의 거리의 여덟제곱의 합을\n$\\displaystyle S_n=\\sum_{\\substack{2\\le k\\le 2n+2\\\\k\\ne n+2}}\\left(\\overline{P_1P_k}\\right)^8$\n이라 할 때, 급수 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{S_nS_{n+1}}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{43}{183680}$",
+"solution": "$n=1$일 때에는 정사각형의 이웃한 두 꼭짓점까지의 거리가 각각 $\\sqrt2$이므로 $S_1=32$이다. $n\\ge2$에서 $m=2n+2$, $\\theta_j=\\frac{2\\pi j}{m}$이라 놓으면 현의 길이의 여덟제곱은 $(2-2\\cos\\theta_j)^4=70-112\\cos\\theta_j+56\\cos2\\theta_j-16\\cos3\\theta_j+2\\cos4\\theta_j$이고, $r=1,2,3,4$에 대하여 $\\sum_{j=0}^{m-1}\\cos(r\\theta_j)=0$이다. 따라서 지름에 해당하는 항을 빼면 $S_n=70(2n+2)-2^8=140n-116$이므로 $S_2=164$이고, $n\\ge2$에서 $\\frac{1}{S_nS_{n+1}}=\\frac1{140}\\left(\\frac1{S_n}-\\frac1{S_{n+1}}\\right)$이다. 그러므로 구하는 값은 $\\frac{1}{32\\cdot164}+\\frac{1}{140\\cdot164}=\\frac{43}{183680}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20661",
+"custom": true
+},
+{
+"id": "fill-2327bd134c",
+"typeId": "20649",
+"kind": "객관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$이 $a_1=5$, $a_{n+1}=\\frac{1}{3}a_n$을 모든 자연수 $n$에 대하여 만족시킨다. $\\displaystyle\\lim_{n\\to\\infty}a_n$의 값은?",
+"choices": [
+"$0$",
+"$\\frac{1}{3}$",
+"$1$",
+"$3$",
+"$5$"
+],
+"answer": "①",
+"solution": "수열 $\\{a_n\\}$은 첫째항이 $5$, 공비가 $\\frac{1}{3}$인 등비수열이므로 $a_n=5\\left(\\frac{1}{3}\\right)^{n-1}$이다. $\\left|\\frac{1}{3}\\right|<1$이므로 구하는 극한값은 $0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20649",
+"custom": true
+},
+{
+"id": "fill-b6dce4144b",
+"typeId": "20649",
+"kind": "객관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$이 $a_1=2$, $a_{n+1}=\\frac{1}{4}a_n$을 모든 자연수 $n$에 대하여 만족시킨다. $\\displaystyle\\lim_{n\\to\\infty}(a_n+3)$의 값은?",
+"choices": [
+"$0$",
+"$1$",
+"$2$",
+"$3$",
+"$5$"
+],
+"answer": "④",
+"solution": "주어진 점화식에서 $a_n=2\\left(\\frac{1}{4}\\right)^{n-1}$이므로 $\\displaystyle\\lim_{n\\to\\infty}a_n=0$이다. 따라서 구하는 극한값은 $0+3=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20649",
+"custom": true
+},
+{
+"id": "fill-93cecf1634",
+"typeId": "20649",
+"kind": "주관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$이 $a_1=3$, $a_{n+1}=\\frac{1}{4}a_n$을 모든 자연수 $n$에 대하여 만족시킨다. $S_n=a_1+a_2+\\cdots+a_n$일 때, $\\displaystyle\\lim_{n\\to\\infty}S_n$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "수열 $\\{a_n\\}$은 첫째항이 $3$, 공비가 $\\frac{1}{4}$인 등비수열이다. 등비수열의 합 공식에 따라 $S_n=\\frac{3\\{1-(\\frac{1}{4})^n\\}}{1-\\frac{1}{4}}=4\\{1-(\\frac{1}{4})^n\\}$이다. 따라서 구하는 극한값은 $4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20649",
+"custom": true
+},
+{
+"id": "fill-fd20c2c257",
+"typeId": "20692",
+"kind": "주관식",
+"diff": 1,
+"body": "어떤 용액에 물질을 넣은 지 $t$분 후, 녹아 있는 물질의 질량을 $M(t)$ g이라 하면 $M(t)=7(1-e^{-3t})$이다. $\\displaystyle\\lim_{t\\to\\infty}M(t)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "7",
+"solution": "$t\\to\\infty$일 때 $e^{-3t}\\to 0$이다. 따라서 $\\displaystyle\\lim_{t\\to\\infty}M(t)=7(1-0)=7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20692",
+"custom": true
+},
+{
+"id": "fill-5e2a1dc9d0",
+"typeId": "20692",
+"kind": "주관식",
+"diff": 1,
+"body": "모든 양수 $x$에 대하여 두 함수 $f(x)$, $h(x)$가 다음 조건을 만족시킨다.\n\n$f(x)>0$, $\\quad h(x)=f(x)+\\dfrac{1}{f(x)}$, $\\quad h(x)\\le 2+e^{-x}$\n\n$\\displaystyle\\lim_{x\\to\\infty}h(x)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "2",
+"solution": "$f(x)>0$이므로 산술평균과 기하평균의 관계에 의해 $h(x)=f(x)+\\dfrac{1}{f(x)}\\ge 2$이다. 따라서 $2\\le h(x)\\le 2+e^{-x}$이다. $x\\to\\infty$일 때 $e^{-x}\\to 0$이므로 샌드위치 정리에 의해 구하는 극한값은 $2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20692",
+"custom": true
+},
+{
+"id": "fill-9c73e1d753",
+"typeId": "20692",
+"kind": "객관식",
+"diff": 1,
+"body": "어떤 배양 실험에서 처음 세균의 수는 $N$이다. 세균의 수가 한 단계마다 이전 단계의 $1+\\dfrac{2}{n}$배가 되도록 총 $n$단계의 배양을 진행한다. 배양을 마친 후 세균의 수를 $A_n$이라 할 때, $\\displaystyle\\lim_{n\\to\\infty}\\dfrac{A_n}{N}$의 값은? (단, $N>0$이고 $n$은 자연수이다.)",
+"choices": [
+"$1$",
+"$2$",
+"$e$",
+"$e^2$",
+"$e^4$"
+],
+"answer": "④",
+"solution": "한 단계마다 세균의 수가 $1+\\dfrac{2}{n}$배가 되므로 $A_n=N\\left(1+\\dfrac{2}{n}\\right)^n$이다. 지수함수의 극한 공식 $\\displaystyle\\lim_{n\\to\\infty}\\left(1+\\dfrac{c}{n}\\right)^n=e^c$를 적용하면 구하는 값은 $e^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20692",
+"custom": true
+},
+{
+"id": "fill-4ed1a5487b",
+"typeId": "20805",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 전체에서 연속인 함수 $f(x)$가 모든 실수 $x$에 대하여 $f(-x)=f(x)$를 만족한다. $0\\le x\\le\\ln 3$에서 $f(x)=e^x$일 때, $\\displaystyle\\int_{-\\ln 3}^{\\ln 3}f(x)\\,dx$의 값은?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "③",
+"solution": "$f(-x)=f(x)$이므로 $f(x)$는 우함수이다. 따라서 주어진 정적분은 $2\\displaystyle\\int_0^{\\ln 3}e^x\\,dx=2[e^x]_0^{\\ln 3}=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20805",
+"custom": true
+},
+{
+"id": "fill-2fbb305065",
+"typeId": "20805",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 전체에서 연속인 함수 $f(x)$가 모든 실수 $x$에 대하여 $f(x+\\pi)=f(x)$를 만족한다. $\\displaystyle\\int_0^\\pi f(x)\\,dx=2$일 때, $\\displaystyle\\int_0^{4\\pi}f(x)\\,dx$의 값은?",
+"choices": [
+"$4$",
+"$6$",
+"$8$",
+"$10$",
+"$12$"
+],
+"answer": "③",
+"solution": "$f(x+\\pi)=f(x)$이므로 길이가 $\\pi$인 구간마다 적분값이 반복된다. 따라서 $\\displaystyle\\int_0^{4\\pi}f(x)\\,dx=4\\int_0^\\pi f(x)\\,dx=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20805",
+"custom": true
+},
+{
+"id": "fill-db5d2a75cf",
+"typeId": "20805",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 전체에서 연속인 함수 $f(x)$가 모든 실수 $x$에 대하여 $f(2+x)=f(2-x)$를 만족한다. $\\displaystyle\\int_0^2 f(x)\\,dx=3$일 때, $\\displaystyle\\int_0^4 f(x)\\,dx$의 값은?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "④",
+"solution": "$f(2+x)=f(2-x)$이므로 함수 $y=f(x)$의 그래프는 직선 $x=2$에 대하여 대칭이다. 따라서 $\\displaystyle\\int_2^4 f(x)\\,dx=\\int_0^2 f(x)\\,dx=3$이므로 구하는 값은 $6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20805",
+"custom": true
+},
+{
+"id": "fill-090de85fa1",
+"typeId": "20805",
+"kind": "주관식",
+"diff": 3,
+"body": "실수 전체에서 연속인 함수 $f(x)$가 다음 조건을 모두 만족한다.\n\n(가) 모든 실수 $x$에 대하여 $f(-x)=f(x)$, $f\\left(\\frac{\\pi}{2}+x\\right)=f\\left(\\frac{\\pi}{2}-x\\right)$이다.\n(나) $0\\le x\\le\\frac{\\pi}{2}$에서 $f(x)=2+\\sin x$이다.\n\n$\\displaystyle\\int_0^{\\frac{5\\pi}{2}}f(x)\\,dx$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$5\\pi+5$",
+"solution": "(가)에서 $f(\\pi+x)=f(-x)=f(x)$이므로 $f(x)$는 $\\pi$를 주기로 갖는다. 또한 직선 $x=\\frac{\\pi}{2}$에 대한 대칭성으로 $\\displaystyle\\int_0^\\pi f(x)\\,dx=2\\int_0^{\\pi/2}f(x)\\,dx$이다. 이때 $\\displaystyle\\int_0^{\\pi/2}(2+\\sin x)\\,dx=[2x-\\cos x]_0^{\\pi/2}=\\pi+1$이다. 따라서 구하는 정적분은 $\\displaystyle 2\\int_0^\\pi f(x)\\,dx+\\int_0^{\\pi/2}f(x)\\,dx=5(\\pi+1)=5\\pi+5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20805",
+"custom": true
+},
+{
+"id": "fill-09dbc384d2",
+"typeId": "20767",
+"kind": "객관식",
+"diff": 1,
+"body": "미분가능한 함수 $y=f(x)$의 그래프 위의 점 $(1,2)$에서 그은 접선이 점 $(3,8)$을 지난다. $f'(1)$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$6$"
+],
+"answer": "③",
+"solution": "$f'(1)$은 그래프 위의 점 $(1,2)$에서의 접선의 기울기이다. 따라서 $f'(1)=\\dfrac{8-2}{3-1}=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20767",
+"custom": true
+},
+{
+"id": "fill-3865d7306b",
+"typeId": "20767",
+"kind": "객관식",
+"diff": 1,
+"body": "이계도함수를 갖는 함수 $y=f(x)$의 그래프가 구간 $(0,4)$에서 위로 볼록하다. $f''(2)\\ne 0$일 때, 반드시 옳은 것은?",
+"choices": [
+"$f(2)>0$",
+"$f(2)<0$",
+"$f'(2)>0$",
+"$f''(2)>0$",
+"$f''(2)<0$"
+],
+"answer": "⑤",
+"solution": "그래프가 위로 볼록하면 접선의 기울기가 감소하므로 $f''(2)\\le 0$이다. 조건 $f''(2)\\ne 0$에 의하여 $f''(2)<0$이다. 그래프의 높이나 접선의 기울기의 부호는 주어진 조건만으로 알 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-20767",
+"custom": true
+},
+{
+"id": "fill-305a7f788f",
+"typeId": "20767",
+"kind": "주관식",
+"diff": 1,
+"body": "미분가능한 함수 $y=f(x)$의 그래프가 $x=-3$에서 극대점을 갖는다. $f'(-3)$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "0",
+"solution": "미분가능한 함수가 극댓값을 갖는 점에서는 접선이 수평이다. 따라서 $f'(-3)=0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20767",
+"custom": true
+},
+{
+"id": "fill-06fff778e4",
+"typeId": "20769",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)=x^4+4x^2+2$의 그래프에서 극솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$2$",
+"solution": "$f'(x)=4x(x^2+2)$이고 $x^2+2>0$이므로, $x<0$에서 $f'(x)<0$, $x>0$에서 $f'(x)>0$이다. 따라서 $x=0$에서 극소이므로 극솟값은 $f(0)=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20769",
+"custom": true
+},
+{
+"id": "fill-7a09f322ef",
+"typeId": "20769",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)=-x^4+2x^2+3$의 그래프에서 극댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$f'(x)=-4x(x-1)(x+1)$이므로 도함수가 $0$이 되는 $x$는 $-1$, $0$, $1$이다. $x=-1$과 $x=1$에서 $f'(x)$의 부호가 양에서 음으로 바뀌므로 극대이다. 따라서 극댓값은 $f(-1)=f(1)=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20769",
+"custom": true
+},
+{
+"id": "fill-efca94fa40",
+"typeId": "20769",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)=x^4-4x^3+5$의 그래프에서 극소가 되는 점의 $x$좌표를 구하시오.",
+"selfGrade": true,
+"answer": "$3$",
+"solution": "$f'(x)=4x^2(x-3)$이므로 도함수가 $0$이 되는 $x$는 $0$, $3$이다. $x=0$의 좌우에서는 $f'(x)$의 부호가 바뀌지 않고, $x=3$에서는 음에서 양으로 바뀐다. 따라서 극소가 되는 점의 $x$좌표는 $3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20769",
+"custom": true
 }
 ]

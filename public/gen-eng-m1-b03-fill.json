@@ -2498,5 +2498,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-025eecb332",
+"typeId": "eng-m1-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nGelato was my favorite. It was ______________ than dondurma and paleta.",
+"choices": [
+"delicious",
+"deliciouser",
+"more delicious",
+"most delicious",
+"the deliciousest"
+],
+"answer": "③",
+"solution": "delicious처럼 음절이 긴 형용사는 -er을 붙이지 않고 앞에 more를 써서 비교급을 만든다. 뒤에 than이 있으므로 비교급이 필요하다. 따라서 more delicious가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4ecfeda95",
+"typeId": "eng-m1-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThere are ______________ flavors of gelato. They all look delicious.",
+"choices": [
+"much",
+"a little",
+"many",
+"little",
+"a bit"
+],
+"answer": "③",
+"solution": "flavors는 셀 수 있는 명사의 복수형이므로 '많은'을 나타낼 때 much가 아니라 many를 쓴다. a little, little, a bit는 모두 셀 수 없는 명사에 쓰므로 알맞지 않다. 따라서 many가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3b2820393d",
+"typeId": "eng-m1-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI want this kiwi paleta. Oh, no! It tastes ______________!",
+"choices": [
+"spicily",
+"to spicy",
+"spicy",
+"spicying",
+"spice"
+],
+"answer": "③",
+"solution": "taste와 같은 감각동사 뒤에는 부사가 아니라 형용사가 와서 주어의 상태를 설명한다. 따라서 부사 spicily가 아니라 형용사 spicy를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m1s0t0",
+"custom": true
 }
 ]

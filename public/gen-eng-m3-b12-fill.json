@@ -6484,5 +6484,75 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-5222f0368e",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nOn the weekends that followed, we made rows, planted flower and vegetable seeds, and watered them. After about two weeks, I stopped complaining when I found the plants had started popping up! First, the lettuce and then the beans and the tomatoes. They grew so fast. I couldn't believe it! The bean plants grew an inch, and the tomatoes doubled in size in just a few days.",
+"choices": [
+"how to buy good seeds",
+"how fast the plants grew",
+"why the writer hated the lot",
+"where to put the trash bags",
+"who helped the writer on weekends"
+],
+"answer": "②",
+"solution": "글쓴이는 씨앗을 심은 뒤 상추, 콩, 토마토가 차례로 싹을 틔우고, 며칠 만에 콩은 1인치 자라고 토마토는 두 배로 커졌다며 놀라워한다. 그러므로 글의 주제는 '식물들이 얼마나 빨리 자랐는가'이다. 씨앗을 사는 방법, 쓰레기봉투를 둔 곳, 도와준 사람은 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8375114592",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화에서 학생들이 주로 이야기하고 있는 것은?\n\nSumi: How can we make our town better?\nJun: There's too much trash at the bus stop.\nMiso: Why don't we clean the place together?\nJun: Good. We can put a bench there, too.\nMiso: How about putting some flower pots around the bench?\nSumi: Great ideas!",
+"choices": [
+"버스 노선을 바꾸는 방법",
+"꽃을 잘 기르는 방법",
+"동네를 더 좋게 만드는 방법",
+"새 벤치를 사는 방법",
+"쓰레기를 분리하는 방법"
+],
+"answer": "③",
+"solution": "수미가 처음에 'How can we make our town better?'라고 묻고, 친구들이 버스 정류장 청소, 벤치 놓기, 화분 두기를 차례로 제안한다. 따라서 대화의 중심 내용은 '동네를 더 좋게 만드는 방법'이다. 벤치와 꽃은 그 방법 중 일부일 뿐이므로 주제가 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9e603e06da",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nBy lunchtime, I was hot, sweaty, and glad my dad had made me wear gloves. We filled fifty trash bags with waste and were ready to pull wild plants. As we pulled and pulled, dust filled the air and made us sneeze. At the end of the day, I had to admit the lot looked much better. That first day was the toughest.",
+"choices": [
+"My Dad's Gloves",
+"A Fun Picnic at Lunchtime",
+"The Hard First Day of Work",
+"Why Dust Makes Us Sneeze",
+"Growing Wild Plants in the Lot"
+],
+"answer": "③",
+"solution": "덥고 땀이 나는 상황에서 쓰레기봉투 50개를 채우고, 먼지 때문에 재채기를 하며 잡초를 뽑았다는 내용이 나오고, 마지막에 'That first day was the toughest.'라고 정리한다. 따라서 제목은 '힘들었던 첫날의 작업'이 알맞다. 장갑이나 먼지는 세부 내용이고, 잡초는 기른 것이 아니라 뽑은 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-560a604375",
+"typeId": "eng-m3-b12-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문단으로 요약하려고 한다. 〈조건〉에 맞게 빈칸 (A)~(D)에 들어갈 말을 쓰시오.\n\nI complained the whole day. My parents were making me work on the neighborhood project, but I had far better things to do. I didn't understand why we were working on this place. It was just the ugly, old, empty lot across from Johnny's Shop. It was full of wild plants, fast food wraps, old newspapers, broken glass, and every other kind of dirty trash you can imagine.\nThere were twenty of us — all ages and sizes — ready to work that day. I didn't think that we could clean up this awful mess and turn it into a garden. Then Mr. Hernandez said, \"The only way to do it is just to start.\"\nOn the weekends that followed, we made rows, planted flower and vegetable seeds, and watered them. After about two weeks, I stopped complaining when I found the plants had started popping up!\nTonight, it suddenly hit me — what a good thing we did! I'm proud I have been a part of it. I'm in charge of picking flowers for the nursing home on Fourth Street. The vegetables will go to every kitchen in our town. But even better, an ugly and dirty lot that people didn't like has become a pretty garden for everyone.\n\n[요약문]\nAt first, the writer (A) c__________ about the neighborhood project because the lot was ugly and dirty. However, twenty people (B) c__________ up the lot, planted seeds, and watered them. As a result, the lot became a (C) p__________ garden for everyone, and now the writer is (D) p__________ to have been a part of it.\n\n〈조건〉\n· 본문에 쓰인 단어를 사용하되, 필요하면 형태를 바꿀 것\n· 각 빈칸에는 주어진 철자로 시작하는 한 단어만 쓸 것",
+"selfGrade": true,
+"answer": "(A) complained (B) cleaned (C) pretty (D) proud",
+"solution": "(A) 글쓴이는 처음에 하루 종일 불평했으므로 본문의 complained를 쓴다. (B) 본문의 'clean up this awful mess'에서 clean을 가져오되, 요약문이 과거 시제이고 뒤의 planted, watered와 병렬을 이루므로 cleaned로 바꿔야 한다. (C) 마지막 문단의 'a pretty garden for everyone'에서 pretty를, (D) 'I'm proud I have been a part of it.'에서 proud를 찾아 쓴다. 특히 (B)에서 원형 clean을 그대로 쓰면 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m2s0t0",
+"custom": true
 }
 ]

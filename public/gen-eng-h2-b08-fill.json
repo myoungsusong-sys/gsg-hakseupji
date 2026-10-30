@@ -4590,5 +4590,127 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u4m1s0t0",
 "custom": true
+},
+{
+"id": "fill-ddcf45f396",
+"typeId": "eng-h2-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWetlands are unique ecosystems that must (A)[protect / be protected] because they help the environment and humans. For example, Upo (B)[cover / covers] an area as big as 210 soccer fields. It is a habitat for a number of species that (C)[is / are] threatened and endangered.\n\n(A) (B) (C)",
+"choices": [
+"protect / cover / is",
+"be protected / covers / are",
+"protect / covers / are",
+"be protected / cover / is",
+"be protected / covers / is"
+],
+"answer": "②",
+"solution": "(A) 주어 ecosystems가 보호를 '받는' 대상이므로 조동사 뒤에 수동태 be protected가 맞습니다. (B) 주어 Upo가 단수이고 뒤에 목적어 an area가 있는 능동태이므로 covers가 맞습니다. (C) 선행사 species가 복수 취급되어 관계사절 동사는 are가 맞습니다. 따라서 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fa87f25c73",
+"typeId": "eng-h2-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Everglades is a wetland that (A)[stretches / is stretched] from Lake Okeechobee to Florida Bay. It is the only place (B)[where / which] crocodiles and alligators coexist. Besides, the Everglades (C)[provide / provides] drinking water to many people in Florida.\n\n(A) (B) (C)",
+"choices": [
+"is stretched / which / provide",
+"stretches / where / provides",
+"stretches / which / provides",
+"stretches / where / provide",
+"is stretched / where / provides"
+],
+"answer": "②",
+"solution": "(A) stretch는 '뻗어 있다'는 자동사로 수동태를 쓰지 않으므로 stretches가 맞습니다. (B) 선행사가 장소 place이고 뒤에 완전한 절이 오므로 관계부사 where가 맞습니다. (C) 주어 The Everglades가 단수 취급되므로 provides가 맞습니다. 따라서 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4a94b9320",
+"typeId": "eng-h2-b08-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA rooftop garden is found at the Government Complex Sejong, (A)[what / which] has been recognized as the largest of its kind. Rooftop gardens clean the air by (B)[absorb / absorbing] air pollutants. In addition, their plants (C)[give / gives] off oxygen.\n\n(A) (B) (C)",
+"choices": [
+"what / absorb / gives",
+"which / absorbing / give",
+"which / absorb / give",
+"what / absorbing / gives",
+"which / absorbing / gives"
+],
+"answer": "②",
+"solution": "(A) 앞에 선행사가 있고 콤마 뒤에서 이를 보충 설명하므로 관계대명사 which가 맞습니다(what은 선행사와 함께 쓸 수 없음). (B) 전치사 by 뒤에는 동명사가 와야 하므로 absorbing이 맞습니다. (C) 주어 their plants가 복수이므로 give가 맞습니다. 따라서 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b8bec45066",
+"typeId": "eng-h2-b08-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "윗글의 밑줄 친 우리말의 뜻이 되도록, <조건>에 맞게 문장을 완성하시오.\n\nSwimming was difficult at first, but after a year, I became a good swimmer. After one hard practice, (나는 너무 피곤해서 똑바로 설 수 없었다).\n\n<조건>\n• 'so ~ that …' 구문을 활용할 것\n• <보기>의 단어를 모두 사용할 것(필요시 형태를 바꾸지 말 것)\n<보기> so, tired, that, could, stand\n→ I ___ ___ ___ ___ ___ not ___ up straight.",
+"selfGrade": true,
+"answer": "I was so tired that I could not stand up straight",
+"solution": "'너무 ~해서 …할 수 없다'는 'so+형용사+that+주어+could not+동사' 구문으로 쓴다. 형용사 tired를 so 뒤에 두고, 결과절에 that I could not stand up straight를 연결한다. 본문의 '수영 연습 후 지침' 상황을 그대로 활용한 기본형 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-23e961c038",
+"typeId": "eng-h2-b08-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "윗글의 밑줄 친 우리말의 뜻이 되도록, <조건>에 맞게 문장을 완성하시오.\n\nMy coach wanted me to get good results. (그는 나에게 내가 근력을 길러야 한다고 조언했다).\n\n<조건>\n• 명사절 접속사 that을 사용할 것\n• <보기>의 단어를 모두 사용할 것\n<보기> advised, that, should, build\n→ He ___ me ___ I ___ ___ muscle strength.",
+"selfGrade": true,
+"answer": "He advised me that I should build muscle strength",
+"solution": "'advise+목적어+that절' 구조로 '~에게 …라고 조언하다'를 나타낸다. that 뒤에 'I should build muscle strength'를 완전한 절로 쓴다. 본문의 코치 조언 문장을 활용한 명사절 접속사 확인 문항이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a44d21ba17",
+"typeId": "eng-h2-b08-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "윗글의 밑줄 친 우리말의 뜻이 되도록, <조건>에 맞게 문장을 완성하시오.\n\nEvery time my interest changed, (나는 내가 미래에 무엇이 될지 걱정했다).\n\n<조건>\n• 관계대명사 what을 사용할 것\n• <보기>의 단어 및 표현을 모두 사용할 것\n<보기> worried, what, going to, become\n→ I was ___ about ___ I was ___ ___ in the future.",
+"selfGrade": true,
+"answer": "I was worried about what I was going to become in the future",
+"solution": "선행사를 포함하는 관계대명사 what을 '~것'의 의미로 전치사 about의 목적어 자리에 쓴다. what 뒤에 'I was going to become'을 이어 '내가 무엇이 될지'를 나타낸다. 본문의 진로 고민 문장을 활용한 기본형이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-54ac8d5b4c",
+"typeId": "eng-h2-b08-u0m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 우리말의 뜻이 되도록, <조건>에 맞게 문장을 완성하시오.\n\nMy preferences have changed over the years as I was exposed to new experiences. (저는 제가 즐기는 것을 찾기 전에 몸소 많은 각양각색의 것들을 시도했습니다), and that is why I can now work as a magazine editor.\n\n<조건>\n• 강조 용법의 재귀대명사를 이용할 것\n• 관계대명사 what을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것(필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> try, many, different, things, find, enjoy\n→ I ___ ___ ___ ___ ___ before I ___ ___ I ___.",
+"selfGrade": true,
+"answer": "I myself tried many different things before I found what I enjoy",
+"solution": "주어 I를 강조하는 재귀대명사 myself를 주어 바로 뒤에 두고, 동사 try는 과거형 tried로 변형한다. '제가 즐기는 것'은 선행사를 포함한 관계대명사 what을 써서 'what I enjoy'로 나타내고, find는 과거형 found로 쓴다. 강조 재귀대명사와 관계대명사 what을 한 문장에 결합한 복합 서술형이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5be6a509c7",
+"typeId": "eng-h2-b08-u0m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 우리말의 뜻이 되도록, <조건>에 맞게 문장을 완성하시오.\n\nAfter a year of hard practice, my times got better and better. (저의 코치 선생님은 제가 대회에 참가할 것을 제안하셨고, 좋은 결과를 위해 제가 근력을 길러야 한다고 조언하셨습니다).\n\n<조건>\n• 명사절 접속사 that을 두 번 사용할 것\n• 뒷부분은 분사구문을 사용할 것\n• <보기>의 단어 및 표현을 사용할 것(필요시 변형할 것)\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> coach, suggest, enter, a competition, advise, should, build, strength\n→ My ___ ___ that I ___ ___, ___ me that I ___ ___ muscle ___ for good results.",
+"selfGrade": true,
+"answer": "My coach suggested that I enter a competition, advising me that I should build muscle strength for good results",
+"solution": "'제안하다'는 'suggest that+주어+동사원형(enter)' 구조로 쓰고, 뒤 문장은 접속사 없이 현재분사 advising으로 시작하는 분사구문(=and he advised)으로 연결한다. 두 번째 명사절도 'that I should build muscle strength'로 접속사 that을 사용한다. 명사절 접속사와 분사구문을 함께 요구하는 고난도 복합 서술형이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m6s0t0",
+"custom": true
 }
 ]

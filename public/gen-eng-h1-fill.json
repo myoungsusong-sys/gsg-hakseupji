@@ -1787,5 +1787,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u2m0s3t1",
 "custom": true
+},
+{
+"id": "fill-8a04eb2ea6",
+"typeId": "eng-h1-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 분위기로 알맞은 것은?\n\nThe sea was calm and quiet that morning. I floated gently on the water and watched the soft sunlight dance on the waves. Small fish swam slowly around me, and I could hear only the gentle sound of the water. Everything felt relaxing, and I smiled peacefully.",
+"choices": [
+"① scary and tense",
+"② calm and peaceful",
+"③ busy and noisy",
+"④ sad and lonely",
+"⑤ angry and violent"
+],
+"answer": "②",
+"solution": "'calm and quiet', 'gently', 'slowly', 'relaxing', 'peacefully' 등 잔잔하고 평온함을 나타내는 표현이 반복된다. 글쓴이는 조용한 바다 위에서 편안함을 느끼고 있다. 따라서 글의 분위기는 ② '차분하고 평화로운'이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-9891a92d50",
+"typeId": "eng-h1-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글에 나타난 분위기로 알맞은 것은?\n\nIn the painting, a kind old doctor is listening to a little girl's doll with a smile. The girl looks up at him with a sweet face, holding her doll carefully. The warm colors and the gentle look on the doctor's face bring a soft smile to everyone who sees it.",
+"choices": [
+"① tense and urgent",
+"② gloomy and dark",
+"③ heartwarming and gentle",
+"④ noisy and chaotic",
+"⑤ cold and lonely"
+],
+"answer": "③",
+"solution": "'kind old doctor', 'smile', 'sweet face', 'carefully', 'warm colors', 'gentle' 등 따뜻하고 다정한 표현이 그림 묘사에 가득하다. 보는 사람에게 부드러운 미소를 준다고 했으므로 분위기는 ③ '마음이 따뜻해지고 다정한'이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-5a158798f1",
+"typeId": "eng-h1-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 분위기로 알맞은 것은?\n\nThe arena was full of people in colorful clothes. Everyone was cheering loudly and clapping their hands. Music played, and the whole crowd was full of energy and excitement. It was a bright and cheerful day at the festival.",
+"choices": [
+"① boring and dull",
+"② lively and cheerful",
+"③ sad and quiet",
+"④ dark and scary",
+"⑤ calm and peaceful"
+],
+"answer": "②",
+"solution": "'colorful clothes', 'cheering loudly', 'clapping', 'full of energy and excitement', 'bright and cheerful' 등 활기차고 즐거운 표현이 이어진다. 축제 현장의 생기 넘치는 모습을 묘사하므로 분위기는 ② '활기차고 쾌활한'이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s5t1",
+"custom": true
 }
 ]

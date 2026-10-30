@@ -1420,5 +1420,56 @@
 "source": "유사 문항",
 "twinGroup": "tw-18203",
 "custom": true
+},
+{
+"id": "fill-51215081ea",
+"typeId": "18296",
+"kind": "객관식",
+"diff": 1,
+"body": "좌표평면 위의 점 $P$의 좌표가 $(3\\cos\\theta,\\,3\\sin\\theta)$일 때, 원점 $O$와 점 $P$ 사이의 거리를 구하시오.",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$6$",
+"$9$"
+],
+"answer": "③",
+"solution": "두 점 사이의 거리 공식에 의해 $OP^2=9\\cos^2\\theta+9\\sin^2\\theta$이다. $\\sin^2\\theta+\\cos^2\\theta=1$이므로 $OP^2=9$이고, 따라서 $OP=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-d62b8eafb6",
+"typeId": "18296",
+"kind": "주관식",
+"diff": 1,
+"body": "직각삼각형의 직각을 이루는 두 변의 길이가 각각 $4\\sin\\theta$, $4\\cos\\theta$이다. 빗변의 길이를 구하시오. (단, $0<\\theta<\\dfrac{\\pi}{2}$)",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "빗변의 길이를 $c$라 하면 피타고라스 정리에 의해 $c^2=16\\sin^2\\theta+16\\cos^2\\theta$이다. $\\sin^2\\theta+\\cos^2\\theta=1$이므로 $c^2=16$이고, 따라서 $c=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-2f3dcaef53",
+"typeId": "18296",
+"kind": "객관식",
+"diff": 1,
+"body": "두 정사각형의 한 변의 길이가 각각 $2\\sin x$, $2\\cos x$이다. 두 정사각형의 넓이의 합을 구하시오. (단, $0<x<\\dfrac{\\pi}{2}$)",
+"choices": [
+"$2$",
+"$4$",
+"$6$",
+"$8$",
+"$16$"
+],
+"answer": "②",
+"solution": "두 정사각형의 넓이의 합은 $(2\\sin x)^2+(2\\cos x)^2=4(\\sin^2x+\\cos^2x)$이다. $\\sin^2x+\\cos^2x=1$이므로 구하는 값은 $4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
 }
 ]

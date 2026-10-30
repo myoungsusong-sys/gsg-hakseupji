@@ -5498,5 +5498,100 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-d3798ee557",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAstronauts on the ISS live in microgravity. They move around by ⓐ[float / floating] instead of walking. From the station, they can see Earth, which ⓑ[look / looks] beautiful from space. Many researchers ⓒ[is / are] interested in doing experiments there.",
+"choices": [
+"ⓐ float ⓑ looks ⓒ are",
+"ⓐ floating ⓑ look ⓒ are",
+"ⓐ floating ⓑ looks ⓒ are",
+"ⓐ floating ⓑ looks ⓒ is",
+"ⓐ float ⓑ look ⓒ is"
+],
+"answer": "③",
+"solution": "ⓐ 전치사 by 뒤에는 동명사가 와야 하므로 floating이 맞다. ⓑ 관계대명사 which의 선행사가 단수 Earth이므로 단수 동사 looks가 맞다. ⓒ 주어 Many researchers가 복수이므로 복수 동사 are가 맞다. 따라서 floating / looks / are인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-11020c3e9b",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSpace junk ⓐ[is / are] a serious problem. Dead satellites and used rocket parts ⓑ[leave / are left] in orbit around Earth. These objects ⓒ[call / are called] space junk.",
+"choices": [
+"ⓐ is ⓑ leave ⓒ are called",
+"ⓐ is ⓑ are left ⓒ are called",
+"ⓐ are ⓑ are left ⓒ call",
+"ⓐ is ⓑ are left ⓒ call",
+"ⓐ are ⓑ leave ⓒ are called"
+],
+"answer": "②",
+"solution": "ⓐ 주어 Space junk는 단수 취급하므로 is가 맞다. ⓑ 위성과 부품이 '남겨지는' 대상이므로 수동태 are left가 맞다. ⓒ 물체들이 space junk라고 '불리는' 것이므로 수동태 are called가 맞다. 따라서 is / are left / are called인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a41e689a9e",
+"typeId": "eng-h1-b07-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nRobots ⓐ[sending / sent] to asteroids will dig for materials. They will be programmed to explore the surface and ⓑ[identify / identifying] materials. The place ⓒ[which / where] they work is very far from Earth.",
+"choices": [
+"ⓐ sending ⓑ identify ⓒ where",
+"ⓐ sent ⓑ identifying ⓒ where",
+"ⓐ sent ⓑ identify ⓒ which",
+"ⓐ sent ⓑ identify ⓒ where",
+"ⓐ sending ⓑ identifying ⓒ which"
+],
+"answer": "④",
+"solution": "ⓐ 로봇이 소행성으로 '보내지는' 대상이므로 과거분사 sent가 맞다. ⓑ to explore와 and로 연결된 병렬 구조이므로 (to) identify가 맞다. ⓒ 선행사 The place가 장소이고 뒤 문장이 완전하므로 관계부사 where가 맞다. 따라서 sent / identify / where인 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e6c953f41",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nI returned to the Cape of Good Hope, South Africa, (A)[which / where] I had spent my childhood. I saw a fish peacefully (B)[swimming / swam] near a heap of shells. It was emotionally painful (C)[to witness / witnessing] these things happening to her.\n\n(A) (B) (C)",
+"choices": [
+"① which / swimming / to witness",
+"② where / swimming / to witness",
+"③ where / swam / witnessing",
+"④ which / swimming / witnessing",
+"⑤ where / swimming / witnessing"
+],
+"answer": "②",
+"solution": "(A)는 장소를 나타내는 선행사(the Cape of Good Hope) 뒤에 완전한 절이 이어지므로 관계부사 where가 맞다. (B)는 지각동사 saw의 목적격보어로 진행의 의미를 나타내는 현재분사 swimming이 적절하다. (C)는 가주어 It에 대응하는 진주어 자리이므로 to부정사 to witness가 와야 한다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7e250e32de",
+"typeId": "eng-h1-b07-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nI started reading books about octopuses. The first thing I learned (A)[was / were] that “it” was a “she.” An octopus’s average life is about a year, (B)[which / what] ends after reproducing. It sparked my curiosity in a way that I (C)[have / had] not experienced before.\n\n(A) (B) (C)",
+"choices": [
+"① was / which / had",
+"② were / which / had",
+"③ was / what / have",
+"④ was / which / have",
+"⑤ were / what / had"
+],
+"answer": "①",
+"solution": "(A)의 주어는 The first thing(단수)이므로 단수동사 was가 맞다. (B)는 앞 절 전체(또는 a year)를 선행사로 받아 계속적으로 설명하는 관계대명사 which가 와야 하고, 선행사가 있으므로 what은 쓸 수 없다. (C)는 과거(sparked)보다 더 이전의 경험을 나타내므로 과거완료 had (not) experienced가 맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m1s0t0",
+"custom": true
 }
 ]

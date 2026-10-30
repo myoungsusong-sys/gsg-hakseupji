@@ -5851,5 +5851,127 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b04-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-42a672cc0c",
+"typeId": "eng-h1-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n어떤 삶도 문제로부터 자유롭지 않습니다.\n\n( from / is / problems / life / free / no )\n\n→ ________________________________.",
+"selfGrade": true,
+"answer": "No life is free from problems.",
+"solution": "'어떤 삶도 ~않다'는 부정어 no를 명사 앞에 두어 No life를 주어로 씁니다. '~로부터 자유로운'은 be free from 구문이므로 is free from problems로 이어 씁니다. 따라서 No life is free from problems.가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9d5c413b6c",
+"typeId": "eng-h1-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음은 STOP 기법의 첫 단계이다. 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하여 명령문을 완성하시오.\n\n당신이 하고 있는 것이 무엇이든 멈추세요.\n\n( doing / stop / are / you / whatever )\n\n→ ________________________________.",
+"selfGrade": true,
+"answer": "Stop whatever you are doing.",
+"solution": "명령문이므로 동사원형 Stop으로 시작합니다. '~하는 것은 무엇이든'은 복합관계대명사 whatever를 쓰고, 그 뒤에 주어+동사 you are doing을 이어 씁니다. 이 whatever절이 Stop의 목적어 역할을 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-82aa54a610",
+"typeId": "eng-h1-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오. (필요시 형태를 바꿀 것)\n\n회복 탄력성은 다시 튀어 오르는 것을 의미합니다.\n\n<보기> back, mean, resilience, spring\n\n→ ________________________________, just like a bouncy ball after hitting the ground.",
+"selfGrade": true,
+"answer": "Resilience means springing back",
+"solution": "주어 Resilience는 3인칭 단수이므로 동사 mean을 means로 씁니다. mean이 '~하는 것을 의미하다'라는 뜻일 때는 목적어로 동명사를 쓰므로 spring을 springing으로 바꿉니다. 따라서 Resilience means springing back이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3229db9ce0",
+"typeId": "eng-h1-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nFairy tale writer Hans Andersen and athlete Aimee Mullins saw their challenges as an opportunity. (A)두 사람 모두 역경에도 '불구하고'가 아니라 역경 덕분에 성공했습니다. This is the real bouncing back.\n\n<조건>\n• 'not A but B' 구문을 이용할 것\n• <보기>의 단어 및 표현을 모두 사용할 것 (필요시 변형할 것)\n• 두 번째 adversity는 대명사로 바꾸어 쓸 것\n• 빈칸에 8단어로 쓸 것 (따옴표는 쓰지 않음)\n\n<보기> succeed, despite, thanks to, adversity, not, but\n\n→ Both people ________________________________.",
+"selfGrade": true,
+"answer": "succeeded not despite adversity but thanks to it",
+"solution": "과거의 일을 말하므로 succeed를 과거형 succeeded로 씁니다. 'A가 아니라 B'는 not A but B 구문이라 not despite adversity but thanks to it으로 씁니다. 두 번째 adversity는 반복을 피해 대명사 it으로 바꾸고, thanks to를 2단어로 세면 모두 8단어입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-43a13d512c",
+"typeId": "eng-h1-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nFirst, accept and respect adversity as a natural part of life. Then, instead of feeling singled out and thinking, \"Why me?\", you can face whatever happens and focus on what you can change, not what you can't. (A)당신의 삶에서 도전과 예상치 못한 장애물을 받아들이는 것은 당신이 그것들을 학습 과정으로 직면하도록 도울 수 있습니다.\n\n<조건>\n• 동명사 주어로 시작할 것\n• 'help + 목적어 + 동사원형' 구문을 이용할 것\n• <보기>의 단어를 사용하되 필요시 변형할 것\n• 빈칸 ⓐ에는 5단어, 빈칸 ⓑ에는 6단어로 쓸 것\n\n<보기> embrace, challenge, unexpected, obstacle, confront, learning, process, a, as\n\n→ ⓐ________________________________ in your life can help you ⓑ________________________________.",
+"selfGrade": true,
+"answer": "ⓐ Embracing challenges and unexpected obstacles ⓑ confront them as a learning process",
+"solution": "주어는 동명사로 써야 하므로 embrace를 Embracing으로 바꾸고, 목적어 challenges and unexpected obstacles를 복수형으로 씁니다(5단어). help 뒤에 목적어 you가 있으므로 동사원형 confront를 쓰고, 앞의 명사들은 대명사 them으로 받습니다. '~로서'는 as를 써서 as a learning process로 마무리하면 6단어가 됩니다. 동명사 주어는 단수 취급하지만 여기서는 조동사 can이 있어서 동사 형태가 바뀌지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-818f93580e",
+"typeId": "eng-h1-b04-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHow would you (A)[react / reacted] if you saw an English sign reading \"Robot Ahead\" on the road while driving in South Africa? You would be confused momentarily, but laugh when you learned (B)[that / what] the term \"robot\" also means \"traffic light\" in South Africa. This unique usage highlights the diversity of World Englishes, the different varieties of the English language (C)[used / using] around the world.\n\n        (A)        (B)        (C)",
+"choices": [
+"① react ─ that ─ used",
+"② react ─ what ─ used",
+"③ reacted ─ that ─ using",
+"④ react ─ what ─ using",
+"⑤ reacted ─ that ─ used"
+],
+"answer": "①",
+"solution": "(A) 'How would you ~'로 시작하는 가정법 과거 주절이므로 「would+동사원형」형태인 react가 알맞다. (B) learned의 목적어 역할을 하는 완전한 절을 이끌고 명사절 접속사가 필요하므로 that이 맞다(what은 불완전한 절을 이끎). (C) '사용되는' 영어의 변이형이라는 수동의 의미이고 뒤에서 명사 varieties를 꾸미므로 과거분사 used가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-69306e65bf",
+"typeId": "eng-h1-b04-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe change is particularly noticeable in vocabulary. English vocabulary (A)[has modified / has been modified] within the different varieties of English. In Indian English, the term \"prepone\" (B)[was coined / coined] to mean \"to reschedule\" as the opposite of \"postpone.\" For instance, if a meeting scheduled for Thursday is moved to Wednesday, it is considered (C)[prepone / preponed].\n\n        (A)        (B)        (C)",
+"choices": [
+"① has modified ─ was coined ─ preponed",
+"② has been modified ─ was coined ─ preponed",
+"③ has been modified ─ coined ─ prepone",
+"④ has modified ─ coined ─ preponed",
+"⑤ has been modified ─ was coined ─ prepone"
+],
+"answer": "②",
+"solution": "(A) 어휘(vocabulary)는 '수정되는' 대상이므로 수동태 has been modified가 알맞다. (B) 용어(the term)가 '만들어진' 것이므로 수동태 was coined가 맞다. (C) '회의가 preponed된 것으로 여겨진다'는 수동의 의미로 be considered 뒤에 과거분사 preponed가 와야 한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2343757c7b",
+"typeId": "eng-h1-b04-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn the Philippines, there are many houses with \"dirty kitchens,\" (A)[which / what] are not actually \"dirty\" kitchens. Instead, they refer to kitchens outside the home, (B)[which / where] most of the cooking takes place (C)[to avoid / avoiding] trapping heat and smell inside the house in a hot climate.\n\n        (A)        (B)        (C)",
+"choices": [
+"① which ─ which ─ to avoid",
+"② which ─ where ─ to avoid",
+"③ what ─ where ─ to avoid",
+"④ which ─ where ─ avoiding",
+"⑤ what ─ which ─ avoiding"
+],
+"answer": "②",
+"solution": "(A) 앞의 명사 kitchens를 선행사로 받고 뒤에 주어가 빠진 불완전한 절이 오므로 관계대명사 which가 알맞다(what은 선행사를 취하지 않음). (B) 선행사 kitchens를 받되 뒤에 완전한 절이 이어지므로 장소를 나타내는 관계부사 where가 맞다. (C) '열과 냄새를 가두는 것을 피하기 위해'라는 목적의 의미이므로 to부정사 to avoid가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m1s0t0",
+"custom": true
 }
 ]

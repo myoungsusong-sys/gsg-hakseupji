@@ -2500,5 +2500,430 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-u0m0s3t1",
 "custom": true
+},
+{
+"id": "fill-42dc22b852",
+"typeId": "eng-m2-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?\n\nMany students drink soda or juice when they are thirsty. But sweet drinks have a lot of sugar, and too much sugar is bad for your teeth and your health. Water, on the other hand, has no sugar at all. It cleans your body and helps your brain work well. When you feel tired at school, a glass of water can wake you up. So I think students should drink plenty of water every day.",
+"choices": [
+"학생들은 물을 충분히 마셔야 한다.",
+"학생들은 주스를 매일 마셔야 한다.",
+"설탕은 건강에 전혀 해롭지 않다.",
+"피곤할 때는 단 음료를 마셔야 한다.",
+"물은 뇌에 아무런 도움이 되지 않는다."
+],
+"answer": "①",
+"solution": "필자는 단 음료 대신 설탕이 없는 물이 몸과 뇌에 좋다고 설명하고, 마지막 문장에서 'students should drink plenty of water every day'라며 물을 충분히 마시라고 직접 주장한다. 따라서 ①이 정답이다. 나머지 선지는 글의 내용과 반대되거나 핵심 주장이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-39fa4b6f76",
+"typeId": "eng-m2-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 필자가 주장하는 바로 가장 알맞은 것은?\n\nSome students stay up late at night to watch videos or play games. The next day, they feel sleepy and can't focus in class. Our bodies and brains need enough sleep to grow and work well. When you sleep enough, you remember what you learned and feel happy. Doctors say teenagers need about nine hours of sleep. So don't give up your sleep. Go to bed early and get enough rest every night.",
+"choices": [
+"학생들은 밤에 게임을 더 많이 해야 한다.",
+"학생들은 수업 시간에 자도 괜찮다.",
+"학생들은 매일 밤 충분한 잠을 자야 한다.",
+"잠은 뇌 성장과 아무 관계가 없다.",
+"십 대는 네 시간만 자면 충분하다."
+],
+"answer": "③",
+"solution": "필자는 늦게 자면 수업에 집중하지 못한다고 지적하고, 충분한 잠이 몸과 뇌에 필요하다고 말한 뒤 'go to bed early and get enough rest every night'라며 충분한 수면을 주장한다. 따라서 ③이 정답이다. 나머지 선지는 글의 내용과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-b600ea02af",
+"typeId": "eng-m2-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nIt was snowing hard outside, but our living room was warm and bright. My family sat around the fireplace together. Mom made hot chocolate for everyone, and Dad played the guitar. My little sister sang along, and Grandma told us funny stories about her childhood. We laughed so much that our stomachs hurt. I wanted this night to last forever.",
+"choices": [
+"scary and dark",
+"warm and happy",
+"sad and lonely",
+"tense and nervous",
+"boring and dull"
+],
+"answer": "②",
+"solution": "가족이 따뜻한 거실의 벽난로 주위에 모여 핫초콜릿을 마시고, 기타 연주에 맞춰 노래하며 할머니의 재미있는 이야기에 배가 아플 만큼 웃고 있다. 마지막 문장 'I wanted this night to last forever.'에서도 행복한 마음이 드러난다. 따라서 글의 분위기는 ② 'warm and happy(따뜻하고 행복한)'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-3f1d9c0579",
+"typeId": "eng-m2-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nMy dog, Max, died last week. He was fifteen years old. Every morning, he used to wait for me at the door. But today, nobody was there. His bowl and his old red ball were still in the corner of the kitchen. I sat down on the floor and held his ball for a long time. Outside, the sky was gray, and it was raining all day. I missed him so much.",
+"choices": [
+"exciting and fun",
+"peaceful and calm",
+"sad and gloomy",
+"funny and humorous",
+"festive and lively"
+],
+"answer": "③",
+"solution": "글쓴이는 지난주에 죽은 개 Max를 그리워하고 있다. 아무도 기다리지 않는 문 앞, 주인 잃은 밥그릇과 공, 하루 종일 비가 내리는 회색 하늘 같은 표현이 슬프고 우울한 느낌을 준다. 'I missed him so much.'에서도 슬픔이 바로 드러나므로 정답은 ③ 'sad and gloomy(슬프고 우울한)'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-fbed59f658",
+"typeId": "eng-m2-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 추론할 수 «없는» 것은?\n\nHello, I'm Minho. Last month, my family got a puppy from an animal shelter. His name is Bori. At first, he was very shy and hid under the sofa all day. So I sat next to him and talked to him every day. Now Bori follows me everywhere and waits for me at the door when I come home from school. Taking care of him is hard work, but I'm really happy to have him.\n\n*animal shelter: 동물 보호소",
+"choices": [
+"민호의 가족은 동물 보호소에서 강아지를 데려왔다.",
+"보리는 처음에 수줍음이 많았다.",
+"민호는 매일 보리 옆에 앉아 말을 걸었다.",
+"보리는 지금도 민호를 피해 소파 밑에 숨어 지낸다.",
+"민호는 보리와 함께 지내는 것을 행복하게 여긴다."
+],
+"answer": "④",
+"solution": "글에서 보리가 소파 밑에 숨어 지낸 것은 처음(At first) 데려왔을 때의 일이다. 지금(Now)은 민호를 어디든 따라다니고 학교에서 돌아오면 문 앞에서 기다린다. 따라서 보리가 지금도 민호를 피해 숨어 지낸다는 ④는 글과 맞지 않는다. 나머지 선지는 모두 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-137f713ce0",
+"typeId": "eng-m2-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 추론할 수 «없는» 것은?\n\nSora loves reading books. Every Saturday morning, she walks to the library near her house. She usually borrows three or four books at a time. Her favorite books are mystery stories. Last week, she joined a reading club at the library. The members meet once a month and talk about a book they all read. Sora is excited because she can make new friends who also like books.\n\n*mystery: 추리(소설)",
+"choices": [
+"Sora goes to the library on Saturdays.",
+"The library is not far from Sora's house.",
+"The reading club meets every week.",
+"Sora likes mystery stories the most.",
+"Sora hopes to make new friends in the reading club."
+],
+"answer": "③",
+"solution": "글에 독서 모임 회원들은 한 달에 한 번(once a month) 만난다고 나와 있다. 따라서 모임이 매주 열린다는 ③은 글에서 추론할 수 없다. 소라가 매주 토요일 집 근처 도서관에 걸어가고(①, ②), 추리 소설을 가장 좋아하며(④), 새 친구를 사귈 수 있어 설레 한다는 것(⑤)은 모두 글에서 알 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-e665dcccdd",
+"typeId": "eng-m2-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제문으로 가장 알맞은 것은?\n\nⓐ Eating breakfast every morning is very important for students. ⓑ It gives you energy to start the busy day. ⓒ Students who eat breakfast can focus better in class. ⓓ They also feel less tired and less hungry before lunch time. ⓔ My little brother always eats toast and an egg before he goes to school.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "글 전체가 '학생에게 아침 식사가 중요하다'라는 내용을 뒷받침한다. ⓑ~ⓔ는 에너지, 집중, 덜 피곤함, 동생의 예 등 구체적인 근거와 예시이다. 이 모든 내용을 아우르는 가장 일반적인 문장은 첫 문장 ⓐ이므로 주제문은 ⓐ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-206c906520",
+"typeId": "eng-m2-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제문으로 가장 알맞은 것은?\n\nⓐ These days, many people throw away food that they don't eat. ⓑ Food in the trash makes a lot of garbage every day. ⓒ Making food also uses a lot of water and energy. ⓓ When we waste food, we waste all of these things, too. ⓔ So we should take only as much food as we can eat.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "ⓐ~ⓓ는 음식물을 버리면 쓰레기와 물·에너지까지 낭비된다는 문제 상황과 이유를 설명한다. 이 근거들을 바탕으로 글쓴이가 전하려는 핵심 주장은 마지막 문장 ⓔ 'So we should take only as much food as we can eat(먹을 만큼만 담자)'이다. 'So(그래서)'로 시작하며 글 전체의 결론을 담고 있으므로 주제문은 ⓔ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-8af541b574",
+"typeId": "eng-m2-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"cloud – cloudy",
+"peace – peaceful",
+"friend – friendly",
+"quick – quickly",
+"danger – dangerous"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 모두 '명사 – 형용사' 관계입니다. 명사에 -y, -ful, -ly, -ous를 붙여 형용사가 되었습니다. ④ quick – quickly는 형용사에 -ly를 붙여 부사를 만든 '형용사 – 부사' 관계입니다. ③ friendly는 -ly로 끝나지만 부사가 아니라 형용사이므로 헷갈리지 않도록 주의합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-bb3273b697",
+"typeId": "eng-m2-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nIt suddenly started to rain very hard outside. ______, we decided to stay inside and watch a movie together.",
+"choices": [
+"However",
+"Therefore",
+"For example",
+"In other words",
+"On the other hand"
+],
+"answer": "②",
+"solution": "비가 세차게 내린 것이 '원인'이고, 집 안에 머물기로 한 것이 그 '결과'이다. 따라서 결과를 나타내는 연결어 Therefore(그래서, 그러므로)가 가장 적절하다. However와 On the other hand는 대조, For example은 예시, In other words는 바꿔 말하기이므로 흐름에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-728ba16ece",
+"typeId": "eng-m2-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nMy brother loves winter sports like skiing and skating. ______, I prefer summer activities such as swimming at the beach.",
+"choices": [
+"Therefore",
+"In addition",
+"However",
+"For example",
+"As a result"
+],
+"answer": "③",
+"solution": "형은 겨울 스포츠를 좋아하지만, 글쓴이 '나'는 여름 활동을 더 좋아한다고 하여 앞뒤 내용이 서로 대조된다. 따라서 역접·대조를 나타내는 연결어 However(그러나, 하지만)가 가장 적절하다. Therefore와 As a result는 결과, In addition은 추가, For example은 예시이므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-43cc73f37a",
+"typeId": "eng-m2-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 «없는» 문장은?\n\nDolphins are very smart animals. ⓐ They can learn to understand signals from people. ⓑ They use different sounds to communicate with each other. ⓒ They can also recognize themselves in a mirror. ⓓ Sharks have several rows of sharp teeth. ⓔ They even work together as a team to catch fish.\n\n*recognize: 알아보다",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "첫 문장에서 글의 주제가 '돌고래는 매우 영리한 동물이다'임을 밝힌다. ⓐ 사람의 신호 이해, ⓑ 소리로 의사소통, ⓒ 거울 속 자신 알아보기, ⓔ 협동해서 물고기 잡기는 모두 돌고래가 영리하다는 근거이다. ⓓ는 상어의 이빨에 관한 내용이라 돌고래의 영리함이라는 주제와 관계가 없다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8f748cc63b",
+"typeId": "eng-m2-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 «없는» 문장은?\n\nEating breakfast is good for students. ⓐ Breakfast gives your body energy to start the day. ⓑ Pizza is one of the most popular foods in the world. ⓒ Students who eat breakfast can focus better in class. ⓓ It also keeps you from getting too hungry before lunch. ⓔ So try not to skip breakfast, even when you are busy.\n\n*skip: 거르다",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "②",
+"solution": "이 글의 주제는 '아침 식사는 학생들에게 좋다'이다. ⓐ 하루를 시작할 에너지, ⓒ 수업 집중력 향상, ⓓ 점심 전 지나친 배고픔 방지는 모두 아침 식사의 장점이고, ⓔ는 아침을 거르지 말라는 결론이다. ⓑ는 피자가 세계적으로 인기 있는 음식이라는 내용으로 아침 식사의 장점과 관계가 없다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cf1a07f753",
+"typeId": "eng-m2-u2m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.\n\nMy brother finished to do his homework before dinner.",
+"selfGrade": true,
+"answer": "to do → doing",
+"solution": "finish는 목적어로 동명사만 쓰는 동사입니다. 그래서 finish 뒤에 to부정사 to do를 쓸 수 없습니다. to do를 동명사 doing으로 고쳐 My brother finished doing his homework before dinner.로 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-1d02f62966",
+"typeId": "eng-m2-u2m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.\n\nWe decided going to the museum this Saturday.",
+"selfGrade": true,
+"answer": "going → to go",
+"solution": "decide는 목적어로 to부정사를 쓰는 동사입니다. 그래서 decide 뒤에 동명사 going을 쓸 수 없습니다. going을 to go로 고쳐 We decided to go to the museum this Saturday.로 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u2m0s2t0",
+"custom": true
+},
+{
+"id": "fill-19b0e63d31",
+"typeId": "eng-m2-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?\n\nMinji was worried about the math test. \"I studied a lot, but I'm still nervous,\" she said. Her friend Sora smiled and said, \"Don't worry! We practiced these problems so many times, so this test will be [a piece of cake].\" After the test, Minji got a perfect score and thanked Sora.",
+"choices": [
+"아주 쉬운 일",
+"맛있는 케이크 한 조각",
+"매우 어려운 시험",
+"함께 나눠 먹을 간식",
+"시간이 오래 걸리는 일"
+],
+"answer": "①",
+"solution": "여러 번 연습해서 걱정하지 말라는 소라의 말과, 민지가 만점을 받았다는 결과로 보아 [a piece of cake]는 '아주 쉬운 일'이라는 뜻이다. 따라서 정답은 ①이다. 케이크 한 조각이라는 글자 그대로의 뜻이 아니라 관용 표현임에 유의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-62f69e450a",
+"typeId": "eng-m2-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?\n\nTom was carrying a big box of books up the stairs. It was really heavy, and he almost dropped it. His classmate Jina saw him and said, \"That looks heavy. Let me [give you a hand].\" Together, they carried the box to the classroom easily.",
+"choices": [
+"손을 흔들어 인사하다",
+"박수를 쳐 주다",
+"너를 도와주다",
+"손을 씻으러 가다",
+"상자를 떨어뜨리다"
+],
+"answer": "③",
+"solution": "무거운 상자를 들고 힘들어하는 톰을 본 지나가 한 말이고, 이어서 둘이 함께 상자를 옮겼다고 했으므로 [give you a hand]는 '너를 도와주다'라는 뜻이다. 따라서 정답은 ③이다. '손을 준다'는 글자 그대로의 의미가 아니라 '돕다'를 뜻하는 관용 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-75dbc3af07",
+"typeId": "eng-m2-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 해석으로 가장 알맞은 것은?\n\nShe wants to visit her grandmother this weekend.",
+"choices": [
+"그녀는 이번 주말에 할머니를 방문하고 싶어 한다.",
+"그녀는 지난 주말에 할머니를 방문했다.",
+"그녀는 이번 주말에 할머니를 방문해야 한다.",
+"그녀는 할머니가 이번 주말에 오기를 바란다.",
+"그녀는 이번 주말에 할머니와 여행을 가고 싶어 한다."
+],
+"answer": "①",
+"solution": "「want to + 동사원형」은 '~하고 싶어 하다'라는 뜻입니다. visit은 '방문하다'이고 this weekend는 '이번 주말에'이므로 '그녀는 이번 주말에 할머니를 방문하고 싶어 한다'가 바른 해석입니다. 과거(②), 의무(③), 다른 주어(④) 등은 모두 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1616413291",
+"typeId": "eng-m2-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 해석으로 가장 알맞은 것은?\n\nMy brother is taller than me.",
+"choices": [
+"내 남동생은 나만큼 키가 크다.",
+"내 남동생은 나보다 키가 크다.",
+"내 남동생은 나보다 키가 작다.",
+"나는 내 남동생보다 키가 크다.",
+"내 남동생과 나는 키가 똑같다."
+],
+"answer": "②",
+"solution": "「형용사 비교급 + than」은 '~보다 더 …한'이라는 뜻입니다. taller는 tall의 비교급이고 than me는 '나보다'이므로 '내 남동생은 나보다 키가 크다'가 바른 해석입니다. 동등 비교(①, ⑤)나 주어가 바뀐 해석(④)은 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6f44ac7249",
+"typeId": "eng-m2-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nHowever, it started to rain heavily in the afternoon.\n\nIn the morning, the sky was clear and sunny. ( A ) My friends and I planned to play soccer after school. ( B ) We were all very excited about the game. ( C ) So we had to cancel our plan and go home instead. ( D ) We decided to play next weekend. ( E )",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "③",
+"solution": "주어진 문장은 However로 시작해 맑고 화창한 아침과 대조되는 '오후에 비가 왔다'는 내용이다. 또 뒤 문장이 So로 시작해 '그래서 경기를 취소했다'는 결과를 말하므로, 비가 온 원인이 그 앞에 와야 한다. 따라서 '경기를 기대했다'와 '그래서 취소했다' 사이인 (C)가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-d671af4b92",
+"typeId": "eng-m2-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nFor example, they can smell food from far away.\n\nA dog's nose is very special. ( A ) Dogs can smell much better than humans. ( B ) They use their noses to learn about the world. ( C ) That is why dogs are often used to find lost people. ( D ) Their amazing noses really help us in many ways. ( E )",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "②",
+"solution": "주어진 문장은 For example로 시작하는 구체적인 예시로, '개가 냄새를 사람보다 훨씬 잘 맡는다'는 일반적 설명 바로 뒤에 와야 한다. (B)에 넣으면 '사람보다 냄새를 잘 맡는다 → 예를 들어 멀리서도 음식 냄새를 맡는다'로 자연스럽게 이어진다. 따라서 (B)가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-3921ce0b9b",
+"typeId": "eng-m2-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문을 읽고 알 «없는» 것은?\n\n[Sunrise School Movie Night]\nCome and enjoy a fun evening with your friends!\n- Date: Friday, June 14\n- Time: 6:00 p.m. – 8:00 p.m.\n- Place: School Gym\n- Movie: Finding Nemo\n- Ticket: Free for all students\n※ Bring your own cushion to sit on!",
+"choices": [
+"행사 날짜",
+"행사 시간",
+"상영 장소",
+"상영하는 영화 제목",
+"영화의 상영 등급"
+],
+"answer": "⑤",
+"solution": "안내문에 날짜(June 14), 시간(6–8 p.m.), 장소(School Gym), 영화 제목(Finding Nemo)은 모두 나와 있다. 그러나 영화의 상영 등급(rating)에 대한 정보는 어디에도 나와 있지 않다. 따라서 알 수 없는 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-d9fa756550",
+"typeId": "eng-m2-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문의 내용과 일치하지 «않는» 것은?\n\n[Happy Puppy Pet Shop]\n- Open: Monday – Saturday, 10:00 a.m. – 7:00 p.m.\n- Closed on Sundays\n- We sell food and toys for dogs and cats.\n- Free health check for your pet every Friday.",
+"choices": [
+"가게는 일요일에 문을 닫는다.",
+"가게는 월요일부터 토요일까지 연다.",
+"개와 고양이를 위한 물건을 판다.",
+"매주 금요일에 무료 건강 검진을 해 준다.",
+"가게는 오전 7시에 문을 연다."
+],
+"answer": "⑤",
+"solution": "안내문에 영업 시간이 오전 10시부터 오후 7시까지라고 나와 있으므로, 오전 7시에 문을 연다는 ⑤는 일치하지 않는다. 일요일 휴무(①), 월~토 영업(②), 개·고양이 용품 판매(③), 매주 금요일 무료 건강 검진(④)은 모두 안내문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m1s4t1",
+"custom": true
 }
 ]

@@ -1304,5 +1304,50 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-09-u0m0s0t3",
 "custom": true
+},
+{
+"id": "fill-beea31b673",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $\\mathrm{ABC}$에서 두 변의 길이 $b$, $c$와 그 끼인각 $A$가 주어졌을 때, 삼각형의 넓이 $S$를 구하는 공식으로 옳은 것은?",
+"choices": [
+"$S=\\dfrac12 bc\\sin A$",
+"$S=\\dfrac12 bc\\cos A$",
+"$S=bc\\sin A$",
+"$S=\\dfrac12 bc\\tan A$",
+"$S=\\dfrac12(b+c)\\sin A$"
+],
+"answer": "①",
+"solution": "삼각형의 두 변과 그 끼인각을 알 때 넓이는 두 변의 곱의 절반에 끼인각의 사인 값을 곱하여 구한다. 따라서 $S=\\dfrac12 bc\\sin A$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-eaf2d0e3a9",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "두 변의 길이가 각각 $4$, $6$이고 그 끼인각의 크기가 $30^\\circ$인 삼각형의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$6$",
+"solution": "두 변과 끼인각이 주어졌으므로 $S=\\dfrac12\\times4\\times6\\times\\sin30^\\circ$이다. $\\sin30^\\circ=\\dfrac12$이므로 $S=\\dfrac12\\times4\\times6\\times\\dfrac12=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-c7d525f1f7",
+"typeId": "set2-alg-09-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "세 변의 길이가 $6$, $8$, $10$인 삼각형의 넓이를 헤론의 공식을 이용하여 구하시오.",
+"selfGrade": true,
+"answer": "$24$",
+"solution": "반둘레는 $s=\\dfrac{6+8+10}{2}=12$이다. 헤론의 공식 $S=\\sqrt{s(s-a)(s-b)(s-c)}$에 대입하면 $S=\\sqrt{12\\times6\\times4\\times2}=\\sqrt{576}=24$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t1",
+"custom": true
 }
 ]

@@ -4840,5 +4840,114 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-06a9099eb9",
+"typeId": "eng-m3-b09-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nan object used for making musical sounds, such as a piano, a violin, or a drum",
+"choices": [
+"garbage",
+"instrument",
+"treasure",
+"choir",
+"program"
+],
+"answer": "②",
+"solution": "영영풀이는 '피아노, 바이올린, 드럼처럼 음악 소리를 내는 데 쓰는 물건'이라는 뜻입니다. 이에 해당하는 단어는 instrument(악기)입니다. garbage는 '쓰레기', treasure는 '보물', choir는 '합창단', program은 '프로그램'이라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-cc4f7350f6",
+"typeId": "eng-m3-b09-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"garbage - 쓰레기",
+"eager - 간절히 바라는",
+"local - 지역의",
+"treasure - 보물",
+"conductor - 작곡가"
+],
+"answer": "⑤",
+"solution": "conductor는 오케스트라나 합창단 앞에 서서 공연을 이끄는 '지휘자'라는 뜻입니다. '작곡가'는 composer입니다. 나머지 단어와 우리말 뜻은 모두 바르게 짝지어져 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4b2b60b0f7",
+"typeId": "eng-m3-b09-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Do you find it interesting to sing in the choir?\nB: Yeah, it's great to sing in ________ with others.",
+"choices": [
+"harmony",
+"garbage",
+"recycling",
+"treasure",
+"conductor"
+],
+"answer": "①",
+"solution": "'다른 사람들과 함께 ~하게 노래하는 것이 좋다'는 내용이므로 '조화, 화음'이라는 뜻의 harmony가 알맞습니다. in harmony with는 '~와 조화를 이루어'라는 뜻입니다. 나머지 단어는 문맥에 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-799041547d",
+"typeId": "eng-m3-b09-u4m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 분사구문으로 바꿔 쓰시오.\n\n<u>When she heard the news</u>, she called her friend.\n\n→ _______________________, she called her friend.",
+"selfGrade": true,
+"answer": "Hearing the news",
+"solution": "부사절을 분사구문으로 바꿀 때는 접속사를 생략하고, 주절과 주어가 같으면 주어도 생략합니다. 동사 heard는 「동사원형+-ing」인 Hearing으로 바꿉니다. 따라서 Hearing the news가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f8fdbd21fc",
+"typeId": "eng-m3-b09-u4m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 그 기사가 사실인지 아닌지 모르겠다.\n\n<보기>\ntrue / the article / whether / is\n\n→ I don't know _______________________.",
+"selfGrade": true,
+"answer": "whether the article is true",
+"solution": "'~인지 아닌지'는 접속사 whether로 나타냅니다. whether 뒤에는 「주어+동사」 어순이 오므로 the article is true가 됩니다. 따라서 whether the article is true가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m5s0t0",
+"custom": true
+},
+{
+"id": "fill-9b62230a7f",
+"typeId": "eng-m3-b09-u4m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n만약 그 뉴스가 가짜라면 어떻게 할 것인가?\n\n(fake / what / is / the news / if)\n\n→ _______________________?",
+"selfGrade": true,
+"answer": "What if the news is fake",
+"solution": "'만약 ~라면 어떻게 할 것인가?'는 「What if+주어+동사 ~?」로 나타냅니다. if 뒤에 주어 the news와 동사 is를 쓰고 보어 fake를 붙입니다. 따라서 What if the news is fake?가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m5s0t0",
+"custom": true
+},
+{
+"id": "fill-46477a0953",
+"typeId": "eng-m3-b09-u4m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nAt that time, those who read the article carefully laughed out loud. However, ⓐ<u>그 기사를 끝까지 읽지 않아서, 어떤 사람들은 정말 걱정했다.</u> Some tried to escape the city while others went into the parks with guns to hunt the animals.\n\n<조건>\n• read, to the end, get을 활용하되 필요하면 형태를 바꿀 것\n• 부정의 분사구문으로 시작할 것\n• really를 반드시 포함할 것\n\n→ _______________________________________________",
+"selfGrade": true,
+"answer": "Not reading the article to the end, some people got really worried.",
+"solution": "'~하지 않아서'라는 이유를 분사구문으로 나타내고, 부정어 Not을 분사 앞에 두어 Not reading으로 시작합니다. 주절의 주어 some people은 생략하지 않고 쓰며, '걱정했다'는 과거시제 got worried로 나타냅니다. 따라서 Not reading the article to the end, some people got really worried.가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u4m5s0t0",
+"custom": true
 }
 ]

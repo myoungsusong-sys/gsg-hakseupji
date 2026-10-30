@@ -676,5 +676,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b01-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-8b60d11c70",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKendrick and Eldering worked hard to develop a vaccine. They even injected it into ⓐ[them / themselves] to make sure it was safe. ⓑ[Despite / Though] the serious lack of funds, they never gave up. With Eleanor Roosevelt's help, they were finally able ⓒ[securing / to secure] enough funding.",
+"choices": [
+"ⓐ them  ⓑ Despite  ⓒ to secure",
+"ⓐ themselves  ⓑ Despite  ⓒ to secure",
+"ⓐ themselves  ⓑ Though  ⓒ to secure",
+"ⓐ them  ⓑ Though  ⓒ securing",
+"ⓐ themselves  ⓑ Despite  ⓒ securing"
+],
+"answer": "②",
+"solution": "ⓐ 주어(They)와 목적어가 같은 대상이므로 재귀대명사 themselves가 맞다. ⓑ 뒤에 명사구(the serious lack of funds)가 오므로 전치사 Despite를 써야 한다(Though는 접속사로 뒤에 「주어+동사」가 온다). ⓒ be able to+동사원형 형태이므로 to secure가 맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e4d33ca18",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe patients coughed onto a petri dish, ⓐ[which / what] was then put into an incubator. This allowed the bacteria ⓑ[grow / to grow] into colonies. The two women went from home to home ⓒ[collecting / collected] samples from the sick children.",
+"choices": [
+"ⓐ which  ⓑ grow  ⓒ collecting",
+"ⓐ what  ⓑ to grow  ⓒ collecting",
+"ⓐ which  ⓑ to grow  ⓒ collecting",
+"ⓐ which  ⓑ to grow  ⓒ collected",
+"ⓐ what  ⓑ grow  ⓒ collected"
+],
+"answer": "③",
+"solution": "ⓐ 앞에 선행사 a petri dish가 있으므로 관계대명사 which를 쓴다(what은 선행사를 포함). ⓑ allow+목적어+to부정사 구문이므로 to grow가 맞다. ⓒ 주어 The two women가 직접 '수집하는' 능동 의미이므로 현재분사 collecting이 알맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-40a9475dbe",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFor Kendrick and Eldering, a different kind of work was about ⓐ[begin / to begin]. They had to be certain ⓑ[that / what] the vaccine would not have any negative side effects. In the group of 712 ⓒ[vaccinating / vaccinated] children, only four developed whooping cough.",
+"choices": [
+"ⓐ begin  ⓑ that  ⓒ vaccinated",
+"ⓐ to begin  ⓑ what  ⓒ vaccinated",
+"ⓐ to begin  ⓑ that  ⓒ vaccinating",
+"ⓐ to begin  ⓑ that  ⓒ vaccinated",
+"ⓐ begin  ⓑ what  ⓒ vaccinating"
+],
+"answer": "④",
+"solution": "ⓐ be about to+동사원형(막 ~하려 하다) 구문이므로 to begin이 맞다. ⓑ 뒤에 완전한 절이 이어지고 '~라는 것을 확신하다'의 의미이므로 접속사 that을 쓴다(what은 불완전한 절). ⓒ children이 '예방접종을 받은' 대상이므로 수동의 의미인 과거분사 vaccinated가 알맞다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true
 }
 ]

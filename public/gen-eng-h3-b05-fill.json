@@ -658,5 +658,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b05-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-3de72afabb",
+"typeId": "eng-h3-b05-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\na place where an organized meeting, concert, or sports event takes place",
+"choices": [
+"spectator",
+"venue",
+"athlete",
+"emission",
+"material"
+],
+"answer": "②",
+"solution": "‘조직된 모임·공연·경기 등이 열리는 장소’를 뜻하는 단어는 venue(개최지, 경기장)이다. spectator는 관중, athlete는 선수, emission은 배출(물), material은 재료를 뜻하므로 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-de6f5e74a3",
+"typeId": "eng-h3-b05-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nMany sporting events have a negative ________ on the environment because they require massive structures to host them.",
+"choices": [
+"impact",
+"popularity",
+"snow",
+"foundation",
+"holiday"
+],
+"answer": "①",
+"solution": "‘스포츠 행사가 환경에 부정적인 ~을 미친다’는 흐름이므로 ‘영향’을 뜻하는 impact가 알맞다. have a negative impact on은 ‘~에 부정적 영향을 미치다’라는 뜻의 표현이다. 나머지 낱말은 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-82beab31c8",
+"typeId": "eng-h3-b05-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어의 뜻으로 가장 알맞은 것은?\n\nThe IOC encouraged host nations to adopt more environmental approaches to putting on the Olympics.",
+"choices": [
+"버리다",
+"채택하다",
+"오염시키다",
+"낭비하다",
+"숨기다"
+],
+"answer": "②",
+"solution": "여기서 adopt는 ‘(방식·방법 등을) 받아들이다, 채택하다’라는 뜻으로 쓰였다. ‘더 환경적인 접근법을 채택하도록 장려했다’는 문맥이므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1a85680304",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto put all the parts of something together",
+"choices": [
+"preserve",
+"endure",
+"pursue",
+"assemble",
+"observe"
+],
+"answer": "④",
+"solution": "'어떤 것의 모든 부분을 하나로 합치다'라는 뜻이므로 '조립하다'를 뜻하는 assemble이 정답이다. 교과서에서는 Bopp가 친구가 직접 조립한(had assembled himself) 망원경을 빌려 썼다는 문장에 나온다. preserve는 '보존하다', endure는 '견디다', pursue는 '추구하다', observe는 '관찰하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8248194b77",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nThe PCT is a journey of a lifetime. It is a chance to see the <u>magnificent</u> landscapes of the American West.",
+"choices": [
+"ordinary",
+"harsh",
+"splendid",
+"narrow",
+"secret"
+],
+"answer": "③",
+"solution": "magnificent는 '웅장한, 장엄한'이라는 뜻이므로 '훌륭한, 화려한'을 뜻하는 splendid와 의미가 가장 가깝다. ordinary는 '평범한', harsh는 '혹독한', narrow는 '좁은', secret은 '비밀의'라는 뜻이라서 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-152b3ec09c",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nSurviving in nature for months itself can be a tremendous challenge. Hikers cook their own meals, and sometimes they have to ________ days without eating.",
+"choices": [
+"endure",
+"publish",
+"invent",
+"celebrate",
+"discover"
+],
+"answer": "①",
+"solution": "자연에서 몇 달 동안 살아남는 것이 엄청난 도전이라는 내용이다. 그러니 '며칠 동안 먹지 못하는 것을 견뎌야 한다'가 자연스럽고, 빈칸에는 '견디다'를 뜻하는 endure가 들어간다. publish(출판하다), invent(발명하다), celebrate(축하하다), discover(발견하다)는 '먹지 못하는 날'과 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true
 }
 ]

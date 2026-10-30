@@ -1035,5 +1035,50 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-m22-05-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-2e8ca7c370",
+"typeId": "set2-m22-05-u0m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "두 삼각형에서 세 쌍의 대응하는 변의 길이의 비가 각각 같을 때, 이 두 삼각형이 닮음임을 설명하는 닮음 조건은?",
+"choices": [
+"SSS 닮음",
+"SAS 닮음",
+"AA 닮음",
+"ASA 닮음",
+"RHS 닮음"
+],
+"answer": "①",
+"solution": "세 쌍의 대응변의 길이의 비가 각각 같으면 두 삼각형은 서로 닮음이며, 이 조건을 SSS 닮음이라 한다. 따라서 정답은 SSS 닮음이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-526cfbfddb",
+"typeId": "set2-m22-05-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "두 삼각형에서 두 쌍의 대응변의 길이의 비가 각각 같고 그 끼인각의 크기가 같을 때 적용하는 닮음 조건은 ( ) 닮음이다.\n\n( )에 들어갈 기호를 입력하세요.",
+"selfGrade": true,
+"answer": "SAS",
+"solution": "두 쌍의 대응변의 길이의 비가 같고 그 끼인각의 크기가 같으면 두 삼각형은 닮음이며, 이 조건을 SAS 닮음이라 한다. 따라서 ( )에 들어갈 기호는 SAS이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-46927e27f5",
+"typeId": "set2-m22-05-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "두 삼각형에서 두 쌍의 대응각의 크기가 각각 같으면 나머지 한 쌍의 대응각의 크기도 같아져 두 삼각형은 서로 닮음이 된다. 이때 적용하는 닮음 조건을 기호로 나타내면 ( )이다.\n\n( )에 들어갈 기호를 입력하세요.",
+"selfGrade": true,
+"answer": "AA",
+"solution": "삼각형의 세 내각의 크기의 합은 $180^\\circ$이므로 두 쌍의 대응각이 같으면 나머지 한 각도 같아진다. 따라서 두 쌍의 대응각의 크기가 같을 때의 닮음 조건은 AA 닮음이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t1",
+"custom": true
 }
 ]

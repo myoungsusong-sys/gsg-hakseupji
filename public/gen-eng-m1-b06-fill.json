@@ -2682,5 +2682,247 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b06-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-00b0da0475",
+"typeId": "eng-m1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nKnowing your trash ______ very important.",
+"choices": [
+"am",
+"are",
+"is",
+"be",
+"being"
+],
+"answer": "③",
+"solution": "동명사(Knowing your trash)가 주어로 쓰이면 하나의 덩어리로 보아 단수 취급하므로 단수 동사 is가 와야 한다. 주어가 복수처럼 보여도 동명사 주어는 항상 단수로 받는다. 따라서 정답은 is이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-66a9e3e06e",
+"typeId": "eng-m1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nYesterday I ______ through my garbage.",
+"choices": [
+"go",
+"goes",
+"going",
+"went",
+"gone"
+],
+"answer": "④",
+"solution": "Yesterday(어제)라는 과거 시간 표현이 있으므로 동사는 과거형이어야 한다. go의 과거형은 불규칙 변화로 went이다. gone은 과거분사형이라 혼자서 과거 시제를 나타낼 수 없다. 따라서 정답은 went이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9a699ce219",
+"typeId": "eng-m1-b06-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nYou should ______ an umbrella on a rainy day.",
+"choices": [
+"carry",
+"carries",
+"carrying",
+"carried",
+"to carry"
+],
+"answer": "①",
+"solution": "조동사 should 뒤에는 항상 동사원형이 온다. 따라서 carries, carrying, carried, to carry는 모두 틀리고 동사원형 carry가 와야 한다. 정답은 carry이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e813d65786",
+"typeId": "eng-m1-b06-u4m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 우리말 뜻이 어색한 것은?\n\nI ⓐposted my pictures on my social media. I got many “likes ♥.” Some of my friends even tried the challenge. We ⓑshared ⓒuseful tips and ideas. This challenge was good for the ⓓenvironment, but it was also great for our ⓔfriendship.",
+"choices": [
+"ⓐ: 게시했다",
+"ⓑ: 공유했다",
+"ⓒ: 쓸모없는",
+"ⓓ: 환경",
+"ⓔ: 우정"
+],
+"answer": "③",
+"solution": "useful은 '유용한, 쓸모 있는'이라는 뜻입니다. '쓸모없는'은 useless이므로 ③의 뜻풀이가 어색합니다. 나머지 posted(게시했다), shared(공유했다), environment(환경), friendship(우정)은 모두 알맞게 풀이되어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e5918c2ba3",
+"typeId": "eng-m1-b06-u4m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 동사의 원형과 과거형이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"clean – cleaned",
+"find – found",
+"sell – sold",
+"buy – buyed",
+"try – tried"
+],
+"answer": "④",
+"solution": "buy의 과거형은 불규칙 변화형인 bought입니다. 따라서 buy – buyed는 틀린 짝입니다. clean은 -ed를 붙이고, try는 y를 i로 바꾼 뒤 -ed를 붙입니다. find(found)와 sell(sold)은 불규칙 변화를 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a3943375d0",
+"typeId": "eng-m1-b06-u4m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오.\n\n쓰레기 없는 삶 → a _____________-free life",
+"selfGrade": true,
+"answer": "trash",
+"solution": "'쓰레기'는 영어로 trash입니다. 명사 뒤에 -free를 붙이면 '~이 없는'이라는 뜻이 됩니다. 따라서 trash-free는 '쓰레기 없는'이라는 뜻이고, 본문의 a trash-free life(쓰레기 없는 삶)와 같은 표현입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6b85c36d7a",
+"typeId": "eng-m1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 틀린 것은?\n\nThe game ①began. Cathy ②watched silently.\n“Can somebody ③get the ball? It’s going over the fence!” Rusty ④shouted.\nThen, Cathy ⑤jump into the air and got the ball.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "이 글은 과거에 일어난 일을 말하므로 동사를 과거형으로 써야 합니다. ⑤는 뒤의 got과 and로 연결되어 있으므로 과거형 jumped가 되어야 합니다. ③은 조동사 can 뒤라서 동사원형 get이 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b3f198dd91",
+"typeId": "eng-m1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\n“Maybe Cathy never had a dog on her team. Now, let’s ______ a game,” Coach Biscuit said.",
+"choices": [
+"play",
+"plays",
+"played",
+"playing",
+"to play"
+],
+"answer": "①",
+"solution": "‘~하자’라는 뜻의 Let’s 뒤에는 동사원형이 옵니다. 그래서 빈칸에는 play가 알맞습니다. plays, played, playing, to play는 모두 Let’s 뒤에 올 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f6287c8b0a",
+"typeId": "eng-m1-b06-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\n“Wow, Cathy! How did you do that?” The dogs were ______.",
+"choices": [
+"surprise",
+"surprises",
+"surprising",
+"surprised",
+"to surprise"
+],
+"answer": "④",
+"solution": "주어 The dogs는 놀라게 하는 쪽이 아니라 놀람을 느끼는 쪽입니다. 그래서 감정을 느낄 때 쓰는 -ed 형태인 surprised가 알맞습니다. surprising은 ‘놀라게 하는, 놀라운’이라는 뜻이라 여기에 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-76967f5dda",
+"typeId": "eng-m1-b06-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\n“Coach, ⓐare the new member a cat?” Max shouted.\n“I can’t believe it,” Rusty said.\n“Let’s ⓑbe nice to her!” ⓒsaid Coach Biscuit. But the dogs ⓓlooked nervous. “We never had a cat on our team!” they said.\n“Maybe Cathy never had a dog on her team. Now, let’s play a game,” Coach Biscuit said.\n“But can she ⓔplays fetch? She’s not a dog. Only dogs can play fetch,” Rusty said.\n“Be nice! We can teach her,” ⓕanother dog said ⓖsoft.\n\n(기호) ______ → ______",
+"selfGrade": true,
+"answer": "ⓐ are → is, ⓔ plays → play, ⓖ soft → softly",
+"solution": "ⓐ는 주어 the new member가 3인칭 단수이므로 is가 되어야 합니다. ⓔ는 조동사 can 뒤이므로 동사원형 play를 써야 하고, ⓖ는 동사 said를 꾸미므로 부사 softly가 되어야 합니다. ⓑ(Let’s 뒤 동사원형), ⓒ(said와 주어의 도치), ⓓ(look 뒤 형용사), ⓕ(another + 단수명사)는 모두 맞는 표현입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-833fee9467",
+"typeId": "eng-m1-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"worried - 걱정하는",
+"member - 구성원, 회원",
+"fence - 담장, 울타리",
+"nervous - 신이 난",
+"silently - 조용히"
+],
+"answer": "④",
+"solution": "nervous는 '긴장한, 불안해하는'이라는 뜻입니다. '신이 난'은 excited입니다. 본문에서 개들은 고양이가 새 팀원으로 오자 긴장했습니다(the dogs looked nervous).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9f47f80994",
+"typeId": "eng-m1-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA: What's wrong? You look sick.\nB: I have a bad cold.\nA: That's too bad. I hope you ________ well soon.",
+"choices": [
+"go",
+"get",
+"make",
+"take",
+"have"
+],
+"answer": "②",
+"solution": "'get well'은 '(병이) 낫다'라는 뜻입니다. 'I hope you get well soon.'은 아픈 사람에게 빨리 낫기를 바란다고 할 때 쓰는 표현입니다. 따라서 빈칸에는 get이 들어갑니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-33d94179ea",
+"typeId": "eng-m1-b06-u2m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 알맞은 말을 한 단어로 쓰시오.\n\nA: Can you help me with my homework?\nB: No ________. I can help you.",
+"selfGrade": true,
+"answer": "problem",
+"solution": "부탁을 들어줄 때는 'No problem.(문제없어, 그럼.)'이라고 말할 수 있습니다. 뒤에 'I can help you.'가 이어지므로 부탁을 받아들이는 말이 와야 합니다. 따라서 빈칸에는 problem이 들어갑니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-12a318eff5",
+"typeId": "eng-m1-b06-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화를 읽고, 물음에 답하시오.\n\nG: What's wrong? You look worried.\nB: I fell and hurt my leg. I have a soccer match next week. I'm worried about it.\nG: (A)____________________ I hope you get well soon.\nB: Thanks.\nG: Do you need any help with anything?\nB: Actually, I do.\nG: What is it?\nB: Can you carry my bag? My mom is waiting for me in front of the school.\nG: No problem. Let's go.\n\n(1) 빈칸 (A)에 유감을 나타내는 말을 <조건>에 맞게 쓰시오.\n<조건> · sorry와 hear를 반드시 사용할 것\n· 5단어로 쓸 것(축약형은 한 단어로 셈)\n\n(2) 대화의 내용과 일치하도록 다음 요약문의 빈칸 ⓐ~ⓒ에 알맞은 말을 대화에서 찾아 각각 한 단어로 쓰시오.\nThe boy fell and hurt his ⓐ________. He is ⓑ________ about his soccer match next week. He asks the girl to ⓒ________ his bag because his mom is waiting for him.",
+"selfGrade": true,
+"answer": "(1) I'm sorry to hear that. (2) ⓐ leg ⓑ worried ⓒ carry",
+"solution": "(1) 다친 친구에게 유감을 나타낼 때는 'I'm sorry to hear that.(그 말을 들으니 유감이야.)'이라고 말합니다. I'm을 한 단어로 세면 5단어이므로 조건에 맞습니다. (2) 소년은 넘어져서 다리(leg)를 다쳤고, 다음 주 축구 시합을 걱정하고(worried) 있습니다. 또 'Can you carry my bag?'이라고 하며 가방을 들어 달라고(carry) 부탁했습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u2m7s0t0",
+"custom": true
 }
 ]

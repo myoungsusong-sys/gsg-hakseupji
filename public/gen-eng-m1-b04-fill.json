@@ -3825,5 +3825,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b04-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-568527b4e9",
+"typeId": "eng-m1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 것은?",
+"choices": [
+"① I know that she likes music.",
+"② Tom planned going camping with his family.",
+"③ We decided to clean the classroom.",
+"④ Mina enjoys reading comic books.",
+"⑤ I believe that he is honest."
+],
+"answer": "②",
+"solution": "plan은 to부정사를 목적어로 쓰는 동사이므로 going을 to go로 고쳐야 한다. decide도 to부정사를 목적어로 쓰므로 ③ to clean은 맞고, enjoy는 동명사를 목적어로 쓰므로 ④ reading도 맞다. ①과 ⑤는 know, believe 뒤에 목적어 역할을 하는 that절이 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bc2478837e",
+"typeId": "eng-m1-b04-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 것은?",
+"choices": [
+"① My brother kept to talk during the movie.",
+"② I think that this bag look nice.",
+"③ She gave up eating fast food.",
+"④ We need buying a new notebook.",
+"⑤ He promised clean his room."
+],
+"answer": "③",
+"solution": "give up은 동명사를 목적어로 쓰므로 ③ gave up eating은 올바르다. ① keep은 동명사를 목적어로 쓰므로 to talk를 talking으로 고쳐야 한다. ② that절의 주어 this bag이 3인칭 단수이므로 look을 looks로 고쳐야 한다. ④ need는 to부정사를 쓰므로 to buy로, ⑤ promise도 to부정사를 쓰므로 to clean으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-697ffc9a3d",
+"typeId": "eng-m1-b04-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 부분의 우리말 뜻이 알맞은 것은?\n\nMy job is to find perfect places for shooting.",
+"choices": [
+"find: 잃어버리다",
+"perfect: 완벽한",
+"places: 사람들",
+"shooting: 노래하기",
+"easy: 어려운"
+],
+"answer": "②",
+"solution": "perfect는 '완벽한, 완전한'이라는 뜻의 형용사입니다. find는 '찾다', places는 '장소들', shooting은 '촬영', easy는 '쉬운'이라는 뜻이므로 나머지는 모두 뜻이 어긋납니다. 따라서 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c0f0db655e",
+"typeId": "eng-m1-b04-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n나는 영화를 보기 위해 극장에 간다.",
+"choices": [
+"I go to the theater and watch a movie.",
+"I go to the theater to watch a movie.",
+"I go to the theater to watching a movie.",
+"I go to the theater not to watch a movie.",
+"I go the theater to watch a movie."
+],
+"answer": "②",
+"solution": "'~하기 위해'라는 목적은 「to+동사원형」(to부정사)으로 나타냅니다. to 뒤에는 동사원형 watch가 와야 하므로 ③ watching은 틀립니다. ④ not to watch는 '보지 않기 위해'라는 부정의 뜻이고, ⑤는 to the theater에서 to가 빠져 틀립니다. 따라서 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2d45f67c28",
+"typeId": "eng-m1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 어법상 가장 알맞은 것은?\n\nYesterday, my family and I (A)[come / came] to Ronda in Spain. Most buildings here (B)[is / are] white.",
+"choices": [
+"come — is",
+"came — are",
+"come — are",
+"came — is",
+"coming — are"
+],
+"answer": "②",
+"solution": "(A) Yesterday는 과거를 나타내므로 동사 come의 과거형 came이 알맞다. (B) 주어 Most buildings는 복수이므로 be동사의 복수형 are를 써야 한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7acae85f2f",
+"typeId": "eng-m1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 어법상 가장 알맞은 것은?\n\nI enjoyed (A)[take / taking] pictures of the blue streets in Chefchaouen. Now, I'm (B)[drink / drinking] mint tea at a tea house.",
+"choices": [
+"take — drink",
+"take — drinking",
+"taking — drink",
+"taking — drinking",
+"to take — to drink"
+],
+"answer": "④",
+"solution": "(A) 동사 enjoy는 목적어로 동명사(-ing)를 취하므로 taking이 알맞다. (B) 현재진행형은 be동사와 동사원형에 -ing를 붙인 형태로 나타내므로 am drinking이 되어야 한다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7834851fba",
+"typeId": "eng-m1-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 괄호 (A), (B)에 들어갈 말로 어법상 가장 알맞은 것은?\n\nI'm on Purple Island in Korea. I'm going (A)[to explore / exploring] the island by bicycle. I'm looking forward to (B)[visit / visiting] the Lavender Garden.",
+"choices": [
+"to explore — visiting",
+"to explore — visit",
+"exploring — visiting",
+"exploring — visit",
+"explore — to visit"
+],
+"answer": "①",
+"solution": "(A) 미래의 계획을 나타내는 be going to 다음에는 동사원형이 오므로 to explore가 알맞다. (B) look forward to에서 to는 전치사이므로 뒤에 동명사 visiting을 써야 한다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m1s0t0",
+"custom": true
 }
 ]

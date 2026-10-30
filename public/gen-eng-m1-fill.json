@@ -2347,5 +2347,348 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-u0m0s2t1",
 "custom": true
+},
+{
+"id": "fill-aaad9a5b50",
+"typeId": "eng-m1-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제문으로 가장 알맞은 것은?\n\nⓐ Drinking enough water is important for your body. ⓑ First, it helps you stay awake and feel fresh. ⓒ Second, it makes your skin healthy. ⓓ Also, it helps your body work well on hot days. ⓔ I always keep a water bottle in my bag.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ는 '물을 충분히 마시는 것이 몸에 중요하다'는 글 전체의 중심 생각을 담은 일반적인 진술이다. ⓑ, ⓒ, ⓓ는 그 이유를 나열한 뒷받침 문장이고, ⓔ는 글쓴이의 개인적인 습관을 덧붙인 예일 뿐이다. 따라서 주제문은 ⓐ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-e24f0e0d49",
+"typeId": "eng-m1-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제문으로 가장 알맞은 것은?\n\nⓐ Reading books every day is a good habit. ⓑ You can learn many new words from books. ⓒ You can also visit new places in your mind. ⓓ And reading helps you understand other people's feelings. ⓔ My sister reads one book every weekend.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ는 '매일 책을 읽는 것은 좋은 습관이다'라는 글의 중심 생각을 담은 문장이다. ⓑ, ⓒ, ⓓ는 독서가 좋은 이유를 하나씩 설명하는 뒷받침 문장이고, ⓔ는 누나의 예를 든 부수적인 내용이다. 그러므로 주제문은 ⓐ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-269eb307b4",
+"typeId": "eng-m1-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문을 읽고 알 수 «없는» 것은?\n\n[Sunnyside School Flea Market]\n- Date: Friday, June 6\n- Time: 1:00 – 3:00 p.m.\n- Place: School gym\n- Things to sell: old books, toys, and clothes\nCome with your friends!",
+"choices": [
+"행사 날짜",
+"행사 시간",
+"참가비",
+"행사 장소",
+"팔 수 있는 물건"
+],
+"answer": "③",
+"solution": "안내문에는 날짜(Date: 6월 6일 금요일), 시간(Time: 오후 1시~3시), 장소(Place: 학교 체육관), 팔 수 있는 물건(Things to sell: 헌책, 장난감, 옷)이 나와 있습니다. 참가비가 얼마인지는 어디에도 나와 있지 않으므로 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-1f2b359a9c",
+"typeId": "eng-m1-u0m1s4t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 안내문을 읽고 알 수 «없는» 것은?\n\n[Lost Cat]\n- Name: Coco\n- Age: 3 years old\n- Color: white with black spots\n- Lost: near Green Park on Sunday, April 6\nPlease call 010-1234-5678.",
+"choices": [
+"고양이의 이름",
+"고양이의 몸무게",
+"고양이의 털 색깔",
+"고양이를 잃어버린 장소",
+"연락할 전화번호"
+],
+"answer": "②",
+"solution": "안내문에는 고양이의 이름(Name: Coco), 털 색깔(Color: 검은 점이 있는 흰색), 잃어버린 장소(Green Park 근처), 연락할 전화번호(010-1234-5678)가 나와 있습니다. 고양이의 몸무게는 나와 있지 않으므로 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m1s4t1",
+"custom": true
+},
+{
+"id": "fill-cba73fae9f",
+"typeId": "eng-m1-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 추론할 수 «없는» 것은?\n\nMinho has a dog named Coco. Coco is white and very small. Every morning, Minho walks Coco in the park before school. Coco loves to run after a red ball. When Minho comes home from school, Coco runs to the door and wags her tail. Minho always gives her a big hug.",
+"choices": [
+"민호는 개를 키운다.",
+"민호는 코코를 귀찮아하고 잘 돌보지 않는다.",
+"민호는 학교에 가기 전에 코코를 산책시킨다.",
+"코코는 빨간 공을 쫓아가는 것을 좋아한다.",
+"코코는 민호가 집에 오면 반가워한다."
+],
+"answer": "②",
+"solution": "민호는 매일 아침 코코를 산책시키고(Every morning, Minho walks Coco), 집에 오면 항상 꼭 안아 준다(always gives her a big hug). 따라서 민호가 코코를 아끼고 잘 돌본다는 것을 알 수 있다. 코코를 귀찮아한다는 ②는 글의 내용과 반대이므로 추론할 수 없다. 코코가 문으로 달려가 꼬리를 흔드는 모습에서 ⑤를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-ef4add148b",
+"typeId": "eng-m1-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 추론할 수 «없는» 것은?\n\nYeji's family has a picnic every Sunday. Last Sunday, her mom made sandwiches, and her dad brought a big blanket. Yeji brought her little sister's favorite ball. They ate lunch under a big tree and played with the ball. Her little sister laughed a lot. On the way home, Yeji said, \"This was the best day!\"",
+"choices": [
+"Yeji has a little sister.",
+"Yeji's family often goes on picnics.",
+"Yeji's dad made the sandwiches.",
+"Yeji's little sister had fun.",
+"Yeji enjoyed the picnic."
+],
+"answer": "③",
+"solution": "글에 샌드위치를 만든 사람은 엄마(her mom made sandwiches)이고, 아빠는 큰 담요를 가져왔다고 나온다. 그러므로 아빠가 샌드위치를 만들었다는 ③은 추론할 수 없다. 매주 일요일 소풍을 간다는 데서 ②를 알 수 있다. 동생이 많이 웃었다는 데서 ④를, 예지가 \"최고의 날\"이라고 말한 데서 ⑤를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-878524cd42",
+"typeId": "eng-m1-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nI studied very hard for the English test last week. ______, I got a good score on the test. My mom was very happy.",
+"choices": [
+"However",
+"For example",
+"So",
+"On the other hand",
+"Instead"
+],
+"answer": "③",
+"solution": "앞 문장은 '지난주 영어 시험 공부를 아주 열심히 했다'이고, 뒤 문장은 '그래서 시험에서 좋은 점수를 받았다'입니다. 앞 내용이 원인이고 뒤 내용이 결과이므로 결과를 나타내는 So(그래서)가 알맞습니다. However와 On the other hand는 서로 반대되는 내용을, For example은 예시를 이어 줄 때 쓰므로 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-a8b0ca4fb6",
+"typeId": "eng-m1-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nMy brother likes soccer very much. He plays it every weekend. ______, I don't like soccer at all. I like reading books at home.",
+"choices": [
+"So",
+"For example",
+"Also",
+"However",
+"As a result"
+],
+"answer": "④",
+"solution": "앞부분은 '형은 축구를 매우 좋아한다'이고, 뒷부분은 '하지만 나는 축구를 전혀 좋아하지 않는다'입니다. 서로 반대되는 내용이 이어지므로 대조를 나타내는 However(그러나)가 알맞습니다. So와 As a result는 결과를, For example은 예시를, Also는 내용 추가를 나타내므로 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m2s3t0",
+"custom": true
+},
+{
+"id": "fill-dd0bcad53f",
+"typeId": "eng-m1-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 «없는» 문장은?\n\nDogs make great pets. ⓐ They are friendly and love to play with people. ⓑ Dogs can learn many tricks, like sitting and shaking hands. ⓒ My favorite subject at school is math. ⓓ They also make us feel happy when we are sad. ⓔ That is why many families keep dogs at home.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "이 글은 개가 좋은 반려동물인 이유(친근함, 재주, 위안)를 설명하고 있다. 나머지 문장은 모두 개에 관한 내용이다. ⓒ는 '내가 학교에서 좋아하는 과목은 수학이다'라는 내용으로 개와 전혀 관계가 없다. 따라서 흐름과 관계 없는 문장은 ⓒ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-05cc6bd69b",
+"typeId": "eng-m1-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 전체 흐름과 관계 «없는» 문장은?\n\nAutumn is a great season for a picnic. ⓐ The weather is cool and the sky is clear. ⓑ People can enjoy beautiful red and yellow leaves. ⓒ Many families go to the park with delicious food. ⓓ Winter is the coldest season of the year. ⓔ Children often play games and run around on the grass.\n① ⓐ\n② ⓑ\n③ ⓒ\n④ ⓓ\n⑤ ⓔ",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "이 글은 가을이 소풍하기 좋은 계절인 이유(시원한 날씨, 단풍, 가족 나들이, 놀이)를 설명하고 있다. ⓓ는 '겨울은 일 년 중 가장 추운 계절이다'라는 내용으로 가을 소풍이라는 주제와 관계가 없다. 따라서 흐름과 관계 없는 문장은 ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1999dd6599",
+"typeId": "eng-m1-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nBut my sister loved it.\n\nLast night, my family watched a movie together. ( A ) The movie was about a brave dog. ( B ) I thought it was boring. ( C ) She watched it again the next day. ( D ) We had a fun night. ( E )\n① (A)\n② (B)\n③ (C)\n④ (D)\n⑤ (E)",
+"choices": [
+"① (A)",
+"② (B)",
+"③ (C)",
+"④ (D)",
+"⑤ (E)"
+],
+"answer": "③",
+"solution": "주어진 문장은 'But(그러나)'로 시작해 바로 앞 내용과 반대되는 흐름을 이끈다. 앞에 'I thought it was boring(나는 지루하다고 생각했다)'이 와야 역접이 자연스럽다. 또 이 문장의 'my sister loved it'이 뒤의 'She watched it again(그녀는 다시 봤다)'의 'She'와 연결되므로 (C)가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-8a7ef529b9",
+"typeId": "eng-m1-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nSo we opened the windows.\n\nIt was very hot in our classroom today. ( A ) The air felt heavy and warm. ( B ) Soon, a cool wind came in. ( C ) Everyone felt much better. ( D ) We smiled at each other. ( E )\n① (A)\n② (B)\n③ (C)\n④ (D)\n⑤ (E)",
+"choices": [
+"① (A)",
+"② (B)",
+"③ (C)",
+"④ (D)",
+"⑤ (E)"
+],
+"answer": "②",
+"solution": "주어진 문장은 'So(그래서)'로 시작해 앞의 원인에 대한 결과를 나타낸다. 앞에 'The air felt heavy and warm(공기가 덥고 답답했다)'이라는 원인이 와야 창문을 연다는 행동이 자연스럽다. 또 창문을 열었기 때문에 뒤의 'a cool wind came in(시원한 바람이 들어왔다)'으로 이어지므로 (B)가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-2bb4ec45c0",
+"typeId": "eng-m1-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 해석으로 가장 알맞은 것은?\n\nMy sister often reads books after dinner.",
+"choices": [
+"내 여동생은 저녁 식사 전에 자주 책을 읽는다.",
+"내 여동생은 저녁 식사 후에 자주 책을 읽는다.",
+"내 여동생은 저녁 식사 후에 절대 책을 읽지 않는다.",
+"내 여동생은 아침 식사 후에 자주 책을 읽는다.",
+"내 여동생은 저녁 식사 후에 책을 샀다."
+],
+"answer": "②",
+"solution": "often은 '자주, 종종'이라는 뜻의 빈도부사이고, after dinner는 '저녁 식사 후에'라는 뜻이다. reads는 현재 시제이므로 습관처럼 하는 일을 나타낸다. 따라서 '내 여동생은 저녁 식사 후에 자주 책을 읽는다.'가 알맞다. ①은 before, ④는 breakfast를 뜻하는 해석이고, ③은 never, ⑤는 과거 시제 bought를 뜻하는 해석이므로 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9d40bb4476",
+"typeId": "eng-m1-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 해석으로 가장 알맞은 것은?\n\nTom is playing soccer with his friends now.",
+"choices": [
+"Tom은 어제 친구들과 축구를 했다.",
+"Tom은 지금 친구들과 야구를 하고 있다.",
+"Tom은 친구들과 축구하는 것을 좋아한다.",
+"Tom은 지금 친구들과 축구를 하고 있다.",
+"Tom의 친구들은 지금 Tom이 축구하는 것을 보고 있다."
+],
+"answer": "④",
+"solution": "'is playing'은 「be동사+동사원형-ing」 형태의 현재진행형으로 '~하고 있다'로 해석한다. with his friends는 '그의 친구들과 함께', now는 '지금'이라는 뜻이다. 따라서 'Tom은 지금 친구들과 축구를 하고 있다.'가 알맞다. ①은 과거 시제, ②는 baseball, ③은 like, ⑤는 watch를 뜻하는 해석이므로 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1795f62fa5",
+"typeId": "eng-m1-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?\n\nMy best friend Mina moved to another city last month. We used to walk to school together every day, so now the mornings feel empty without her. I really [miss her like crazy]. Yesterday I sent her a long message and asked her to come back soon.",
+"choices": [
+"그녀를 매우 그리워한다",
+"그녀에게 화가 많이 났다",
+"그녀를 거의 잊어버렸다",
+"그녀를 자주 만난다",
+"그녀를 싫어하게 되었다"
+],
+"answer": "①",
+"solution": "[ ] 앞에서 친구가 이사를 가서 아침이 허전하게 느껴진다고 했고, 뒤에서는 빨리 돌아오라고 긴 메시지를 보냈다고 했다. 따라서 'miss her like crazy'는 친구를 매우 많이 그리워한다는 뜻이다. 그러므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-cf1a5edbee",
+"typeId": "eng-m1-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 [ ] 안의 말이 의미하는 바로 가장 알맞은 것은?\n\nIt was my first day at the new school. I didn't know anyone, and I sat alone at lunch. Then a boy named Tom came to me and said, “Hi! Let's be friends.” He showed me around the school and shared his snacks. Tom is really [a nice guy].",
+"choices": [
+"키가 아주 큰 사람",
+"매우 친절하고 좋은 사람",
+"운동을 잘하는 사람",
+"공부를 잘하는 사람",
+"말이 아주 많은 사람"
+],
+"answer": "②",
+"solution": "[ ] 앞에서 Tom은 혼자 있던 '나'에게 먼저 다가와 친구가 되자고 하고, 학교를 안내해 주고 간식도 나눠 주었다. 이런 행동은 친절함을 보여 주므로 'a nice guy'는 친절하고 좋은 사람이라는 뜻이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m3s1t1",
+"custom": true
+},
+{
+"id": "fill-d874efb98a",
+"typeId": "eng-m1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "윗글에서 글쓴이가 Coco를 좋아하는 이유를 우리말로 쓰시오.\n\nHi, I'm Mina. I have a pet dog named Coco. I like Coco because he is very cute and always plays with me. Every evening, I walk Coco in the park. He is my best friend.",
+"selfGrade": true,
+"answer": "아주 귀엽고 항상 자기(글쓴이)와 놀아 주기 때문이다.",
+"solution": "책을 읽고 특정 사실을 찾아 우리말로 옮기는 문항이다. 세 번째 문장 'I like Coco because he is very cute and always plays with me.'에서 좋아하는 이유를 바로 알 수 있다. '귀엽다'와 '항상 함께 놀아 준다' 두 내용이 들어가면 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u2m0s3t1",
+"custom": true
+},
+{
+"id": "fill-028e89f719",
+"typeId": "eng-m1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "윗글에서 Jinho가 겨울을 가장 좋아하는 이유를 우리말로 쓰시오.\n\nMy name is Jinho. My favorite season is winter because I can go skiing. Every winter, I go to the mountains with my family. We make a snowman and have a snowball fight. I always feel happy in winter.",
+"selfGrade": true,
+"answer": "스키를 탈 수 있기 때문이다.",
+"solution": "좋아하는 이유를 나타내는 because 뒤의 내용을 우리말로 옮기면 된다. 두 번째 문장 'My favorite season is winter because I can go skiing.'에서 이유가 '스키를 탈 수 있어서'임을 알 수 있다. 눈사람 만들기·눈싸움은 겨울에 하는 다른 활동일 뿐 '가장 좋아하는 이유'로 든 것이 아니므로 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u2m0s3t1",
+"custom": true
+},
+{
+"id": "fill-109151c59b",
+"typeId": "eng-m1-u2m0s3t1",
+"kind": "주관식",
+"diff": 4,
+"body": "윗글을 읽고, (1) 글쓴이가 수영을 배우게 된 계기와 (2) 수영에 대한 글쓴이의 태도가 어떻게 달라졌는지를 각각 우리말로 쓰시오.\n\nI used to be afraid of the water. I never went into the pool with my friends. Then last summer, my uncle taught me how to swim every weekend. At first, it was scary, but soon I could swim across the pool. Now I love swimming, and I even joined the school swimming club.",
+"selfGrade": true,
+"answer": "(1) 지난여름에 삼촌이 주말마다 수영을 가르쳐 주었다. (2) 전에는 물을 무서워해서 수영을 하지 않았지만, 지금은 수영을 아주 좋아하게 되어 학교 수영 동아리에도 가입했다.",
+"solution": "계기와 태도 변화를 모두 찾아 우리말로 옮기는 복합 서술형이다. 계기는 'Then last summer, my uncle taught me how to swim every weekend.'에 나온 '삼촌이 지난여름 주말마다 가르쳐 줌'이다. 태도 변화는 'I used to be afraid of the water'(전: 물을 무서워함)와 'Now I love swimming, and I even joined the school swimming club'(후: 좋아하게 되어 동아리 가입)의 대비로 나타난다. 'At first, it was scary'는 배우는 중의 느낌일 뿐 최종 태도가 아니므로 '지금은 좋아한다'까지 써야 한다. 계기·전후 변화 세 요소가 모두 들어가야 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u2m0s3t1",
+"custom": true
 }
 ]

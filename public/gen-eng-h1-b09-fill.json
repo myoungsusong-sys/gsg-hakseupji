@@ -5271,5 +5271,196 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u5m7s0t0",
 "custom": true
+},
+{
+"id": "fill-b9f76f74e6",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어 및 표현을 알맞게 배열하여 문장을 완성하시오.\n\n지도 제작이라는 생각이 당신을 압도한다면, 작게 시작하라.\n\n<보기> overwhelms, the idea, you, of, if, mapping\n\n→ ______________________________________, start small.",
+"selfGrade": true,
+"answer": "If the idea of mapping overwhelms you",
+"solution": "'만약 ~라면'이라는 조건은 접속사 if로 시작합니다. 주어는 '지도 제작이라는 생각'이므로 the idea of mapping으로 씁니다. 동사는 overwhelms, 목적어는 you입니다. 그래서 If the idea of mapping overwhelms you가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-95ea044729",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어 및 표현을 알맞게 배열하여 문장을 완성하시오.\n\n공동체 지도 제작 프로젝트는 규모 면에서 야심 찰 필요는 없다.\n\n<보기> be, in scale, doesn't, ambitious, have to\n\n→ A community mapping project ______________________________________.",
+"selfGrade": true,
+"answer": "doesn't have to be ambitious in scale",
+"solution": "'~할 필요가 없다'는 doesn't have to 뒤에 동사원형을 써서 나타냅니다. 동사원형 be 뒤에 형용사 ambitious를 씁니다. '규모 면에서'를 뜻하는 in scale은 문장 끝에 둡니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d606dfd999",
+"typeId": "eng-h1-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어 및 표현을 알맞게 배열하시오.\n\n재난에 대한 최초 대응자들은 흔히 평범한 시민들이다.\n\n<보기> ordinary citizens, are, the first responders, often, to a disaster\n\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "The first responders to a disaster are often ordinary citizens",
+"solution": "주어는 '재난에 대한 최초 대응자들'입니다. 그래서 The first responders 뒤에 전치사구 to a disaster를 붙입니다. 빈도부사 often은 be동사 are 뒤에 둡니다. 보어 ordinary citizens는 마지막에 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bae7fe5f68",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe heart of this device is a 3D depth sensor ⓐ[connecting / connected] to a small computer. Seoyoung coded the computer to control the nine motors so that each motor could ⓑ[move / moves] a pin up and down. When it detects an obstacle, the corresponding pin ⓒ[rises / raises] to either the middle or high position.",
+"choices": [
+"① connecting — move — rises",
+"② connected — move — rises",
+"③ connected — moves — raises",
+"④ connecting — moves — rises",
+"⑤ connected — move — raises"
+],
+"answer": "②",
+"solution": "ⓐ sensor가 '연결되는' 대상이므로 수동의 과거분사 connected가 맞다. ⓑ 조동사 could 뒤에는 동사원형이 오므로 move가 맞다. ⓒ '(스스로) 올라가다'라는 자동사가 필요하므로 rises가 맞다(raise는 목적어가 필요한 타동사). 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e2308ceb75",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAt least one billion people ⓐ[experience / experiences] some form of disability. One day, Nand's group came up with an idea for an app ⓑ[that / what] could translate sign language. He decided to focus on the body parts ⓒ[which / what] are important in signing, such as individual fingertips.",
+"choices": [
+"① experience — that — which",
+"② experiences — that — what",
+"③ experience — what — which",
+"④ experiences — what — that",
+"⑤ experience — that — what"
+],
+"answer": "①",
+"solution": "ⓐ 주어 one billion people가 복수이므로 동사는 experience가 맞다. ⓑ 앞에 선행사 an app이 있으므로 관계대명사 that이 맞다(what은 선행사를 포함). ⓒ 앞에 선행사 the body parts가 있으므로 관계대명사 which가 맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4b892463b5",
+"typeId": "eng-h1-b09-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBy running your hand over the nine pins, you can tell where the obstacles ⓐ[is / are]. When the device worked again, she started ⓑ[screaming / to screaming] with joy. When the user runs the app, gestures ⓒ[is / are] captured by the camera.",
+"choices": [
+"① is — screaming — are",
+"② are — to screaming — is",
+"③ are — screaming — are",
+"④ is — to screaming — are",
+"⑤ are — screaming — is"
+],
+"answer": "③",
+"solution": "ⓐ 주어 the obstacles가 복수이므로 are가 맞다. ⓑ start는 동명사와 to부정사를 모두 목적어로 취하지만 to screaming(전치사+동명사)은 쓸 수 없으므로 screaming이 맞다. ⓒ 주어 gestures가 복수이고 '포착되는' 수동태이므로 are가 맞다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-abea952080",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nOnly female mosquitoes ①bite us because they need protein to produce eggs. When you sweat, you ②release certain chemicals that ③attracts them. Mosquitoes are highly ④sensitive to CO₂ and can ⑤detect it from far away.",
+"choices": [
+"① bite",
+"② release",
+"③ attracts",
+"④ sensitive",
+"⑤ detect"
+],
+"answer": "③",
+"solution": "관계대명사 that가 이끄는 절의 주어는 선행사 certain chemicals(복수)이다. 따라서 동사는 복수형 attract가 되어야 하므로 attracts는 어색하다. ①은 복수 주어 mosquitoes에, ②는 you에 알맞고, ④ sensitive는 형용사, ⑤ detect는 조동사 can 뒤 원형으로 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d602956da8",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nA mosquito ①sneaks in and ②pierces your skin with its straw-like mouthparts. It fills its belly with blood and then escapes quickly, ③leave behind an itchy red bump. This ④is a mild allergic reaction to the mosquito's ⑤saliva.",
+"choices": [
+"① sneaks",
+"② pierces",
+"③ leave",
+"④ is",
+"⑤ saliva"
+],
+"answer": "③",
+"solution": "'~한 채로, ~하면서'의 의미로 주절과 동시에 일어나는 상황을 나타내는 분사구문 자리이므로 동사원형 leave가 아니라 현재분사 leaving이 되어야 한다. ①, ②는 단수 주어 A mosquito에 맞는 3인칭 단수 동사이고, ④ is와 ⑤ saliva(명사)는 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fbd689afef",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nLadybugs ①are probably the most well-known of all the helpful bugs. They eat the bad bugs that ②prevent plants from growing. Each ladybug can ③eat fifty to sixty aphids per day. Ladybugs can defend ④them by giving off a certain smell that their predators ⑤do not like.",
+"choices": [
+"① are",
+"② prevent",
+"③ eat",
+"④ them",
+"⑤ do not like"
+],
+"answer": "④",
+"solution": "동사 defend의 목적어가 주어 Ladybugs와 동일한 대상이므로 재귀대명사 themselves를 써야 한다. 따라서 them은 어색하다. ② prevent는 선행사 the bad bugs(복수)에 맞고, ③ eat은 조동사 can 뒤 원형, ⑤ do not like는 선행사 predators(복수)에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bfd5d6bfb1",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nⓐ[Beat / Beating] its wings as fast as 600 times per second, a mosquito sneaks in and pierces your skin. Carbon dioxide, ⓑ[which / what] humans and other animals breathe out, is a key signal to mosquitoes. Only females bite us because they ⓒ[need / needs] protein to produce eggs.",
+"choices": [
+"ⓐ Beating – ⓑ which – ⓒ need",
+"ⓐ Beat – ⓑ which – ⓒ needs",
+"ⓐ Beating – ⓑ what – ⓒ need",
+"ⓐ Beat – ⓑ what – ⓒ needs",
+"ⓐ Beating – ⓑ which – ⓒ needs"
+],
+"answer": "①",
+"solution": "ⓐ는 뒤의 주어 a mosquito가 날개를 치는 능동 동작이므로 분사구문 현재분사 Beating이 알맞다. ⓑ는 선행사 Carbon dioxide가 있으므로 선행사를 포함하는 what이 아니라 관계대명사 which가 와야 한다. ⓒ의 주어 they(=females)는 복수이므로 need가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3e417f7edd",
+"typeId": "eng-h1-b09-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것끼리 바르게 짝지은 것은?\n\nWinegard claims that mosquitoes also ⓐplayed a role in shaping the history of several countries. The fall of the Western Roman Empire was gradual, ⓑspanning over centuries. Rome, the capital of the empire, ⓒwere once surrounded by a huge stretch of wetland, which was an ideal breeding ground for mosquitoes. At first, mosquitoes helped ⓓprotecting the city against the armies coming to attack it. However, they eventually spread the disease throughout the empire, ⓔcrushing much of the population.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓑ, ⓓ",
+"ⓒ, ⓓ",
+"ⓐ, ⓔ",
+"ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓒ의 주어 Rome은 단수이므로 were가 아니라 was가 되어야 한다. ⓓ는 'help + (to)동사원형' 구조이므로 protecting이 아니라 protect(또는 to protect)가 알맞다. ⓐ played는 과거동사로, ⓑ spanning과 ⓔ crushing은 각각 주절과 동시에 일어나는 상황을 나타내는 분사구문으로 모두 올바르다. 따라서 어색한 것은 ⓒ, ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m1s0t0",
+"custom": true
 }
 ]

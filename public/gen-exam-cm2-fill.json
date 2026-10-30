@@ -10075,5 +10075,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-cm2-u1m0s2t3",
 "custom": true
+},
+{
+"id": "fill-d6d2a7cdb1",
+"typeId": "exam-cm2-u0m0s3t2",
+"kind": "객관식",
+"diff": 1,
+"body": "세 점 $\\mathrm{A}(3, 1)$, $\\mathrm{B}(-2, 4)$, $\\mathrm{C}(5, 7)$을 꼭짓점으로 하는 삼각형 $\\mathrm{ABC}$의 무게중심 $\\mathrm{G}$의 좌표는?",
+"choices": [
+"$(1, 3)$",
+"$(2, 3)$",
+"$(2, 4)$",
+"$(3, 4)$",
+"$(4, 5)$"
+],
+"answer": "③",
+"solution": "삼각형의 무게중심의 좌표는 세 꼭짓점의 $x$좌표의 평균과 $y$좌표의 평균이다. $x$좌표는 $\\dfrac{3+(-2)+5}{3}=\\dfrac{6}{3}=2$이고, $y$좌표는 $\\dfrac{1+4+7}{3}=\\dfrac{12}{3}=4$이다. 따라서 무게중심의 좌표는 $(2, 4)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t2",
+"custom": true
+},
+{
+"id": "fill-c8dcf53bc0",
+"typeId": "exam-cm2-u0m0s3t2",
+"kind": "객관식",
+"diff": 1,
+"body": "세 점 $\\mathrm{A}(1, 2)$, $\\mathrm{B}(4, 3)$, $\\mathrm{C}(a, b)$를 꼭짓점으로 하는 삼각형 $\\mathrm{ABC}$의 무게중심의 좌표가 $(3, 2)$일 때, 점 $\\mathrm{C}(a, b)$의 좌표는?",
+"choices": [
+"$(3, 1)$",
+"$(4, 0)$",
+"$(4, 1)$",
+"$(5, 1)$",
+"$(5, 2)$"
+],
+"answer": "③",
+"solution": "무게중심의 $x$좌표에서 $\\dfrac{1+4+a}{3}=3$이므로 $5+a=9$, 즉 $a=4$이다. 무게중심의 $y$좌표에서 $\\dfrac{2+3+b}{3}=2$이므로 $5+b=6$, 즉 $b=1$이다. 따라서 점 $\\mathrm{C}$의 좌표는 $(4, 1)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t2",
+"custom": true
 }
 ]

@@ -803,5 +803,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b03-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-920d8b011c",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nWhen you enjoy ①doing something, a chemical substance ②calling dopamine is released in your brain, which ③increases your motivation and ④makes you eager ⑤to repeat the action.",
+"choices": [
+"① doing",
+"② calling",
+"③ increases",
+"④ makes",
+"⑤ to repeat"
+],
+"answer": "②",
+"solution": "dopamine은 '도파민이라고 불리는' 물질이라는 뜻이다. 앞의 명사 a chemical substance가 부르는 쪽이 아니라 불리는 쪽이므로 수동의 과거분사 called를 써야 한다. ①은 enjoy가 동명사를 목적어로 취하므로 맞다. ③과 ④는 계속적 용법의 which에 이어지는 동사로, 앞 절 전체를 받는 단수 취급이므로 맞다. ⑤는 형용사 eager 뒤에 오는 to부정사이므로 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aa2a127ecd",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nIf a habit is ①easier to do, it's more likely ②to be repeated. For example, if you aim to work out regularly, you could set up a dedicated workout area like a space in your living room. This will ensure ③what all your workout equipment is ④readily available while ⑤keeping distractions away.",
+"choices": [
+"① easier",
+"② to be repeated",
+"③ what",
+"④ readily",
+"⑤ keeping"
+],
+"answer": "③",
+"solution": "ensure 뒤의 절은 주어(all your workout equipment)와 보어(available)를 모두 갖춘 완전한 문장이다. 따라서 명사절을 이끄는 접속사 that을 써야 하고, what은 쓸 수 없다. ②는 'be likely to-v' 구문이며, 습관이 반복'되는' 것이므로 수동태가 맞다. ④는 형용사 available을 꾸미는 부사이고, ⑤는 접속사 while 뒤의 분사구문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a07b80ef5d",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nWhen ①creating a new habit, set a cue that ②sparks the habit and make the cue as ③obviously as possible. Instead of a vague intent like \"I will work out,\" be specific and tell ④yourself \"I will work out for an hour starting at 8 p.m. at home.\" Your current habit is already ⑤associated with a particular time and location.",
+"choices": [
+"① creating",
+"② sparks",
+"③ obviously",
+"④ yourself",
+"⑤ associated"
+],
+"answer": "③",
+"solution": "'make + 목적어 + 목적격보어' 구조에서 목적격보어 자리에는 형용사가 와야 한다. 따라서 as ~ as 사이의 obviously를 obvious로 고쳐야 한다. ①은 접속사 When 뒤의 분사구문이고, ②는 선행사 a cue가 단수이므로 sparks가 맞다. ④는 명령문에서 생략된 주어 you와 목적어가 같으므로 재귀대명사를 쓴다. ⑤는 'be associated with(~와 관련되다)'라는 수동태 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-951243efcf",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 crucial과 의미가 가장 가까운 것은?\n\nThus, it is crucial to make your habits attractive and enjoyable.",
+"choices": [
+"optional",
+"harmful",
+"essential",
+"difficult",
+"temporary"
+],
+"answer": "③",
+"solution": "crucial은 '매우 중요한, 결정적인'의 뜻이므로 '필수적인'을 의미하는 essential과 가장 가깝다. optional(선택적인), harmful(해로운), difficult(어려운), temporary(일시적인)은 모두 의미가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-920957d177",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\na strong desire to do or have something",
+"choices": [
+"reward",
+"craving",
+"cue",
+"response",
+"identity"
+],
+"answer": "②",
+"solution": "'무엇을 하거나 갖고 싶은 강한 욕구'를 뜻하는 단어는 craving(갈망)이다. reward(보상), cue(신호), response(반응), identity(정체성)는 모두 뜻이 다르다. 본문의 habit loop(cue-craving-response-reward)에서 craving에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8289597627",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 seamlessly의 의미로 알맞은 것은?\n\nThis way, you can seamlessly do what you need to do along with what you want to do.",
+"choices": [
+"갑작스럽게",
+"마지못해",
+"드물게",
+"끊김 없이 매끄럽게",
+"억지로"
+],
+"answer": "④",
+"solution": "seamlessly는 seam(이음새)이 없다는 뜻에서 나와 '끊김 없이 매끄럽게'를 의미한다. 하고 싶은 일과 해야 할 일을 자연스럽게 연결해 수행한다는 문맥에 맞는다. 나머지 선지는 모두 부정적이거나 반대되는 의미다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true
 }
 ]

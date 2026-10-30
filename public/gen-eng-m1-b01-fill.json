@@ -4535,5 +4535,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b01-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-5565649c6f",
+"typeId": "eng-m1-b01-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nWe should not waste water.",
+"choices": [
+"모으다",
+"낭비하다",
+"마시다",
+"끓이다",
+"얼리다"
+],
+"answer": "②",
+"solution": "waste는 '낭비하다, 버리다'라는 뜻의 동사이다. 'waste water'는 '물을 낭비하다'라는 의미이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1b434944d5",
+"typeId": "eng-m1-b01-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말에 해당하는 영어 단어로 알맞은 것은?\n\n재활용하다",
+"choices": [
+"protect",
+"recycle",
+"pollute",
+"waste",
+"reduce"
+],
+"answer": "②",
+"solution": "'재활용하다'는 recycle이다. protect는 '보호하다', pollute는 '오염시키다', waste는 '낭비하다', reduce는 '줄이다'라는 뜻이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u6m7s0t0",
+"custom": true
 }
 ]

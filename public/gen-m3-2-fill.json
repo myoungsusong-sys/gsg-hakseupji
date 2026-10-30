@@ -1004,5 +1004,139 @@
 "source": "유사 문항",
 "twinGroup": "tw-20581",
 "custom": true
+},
+{
+"id": "fill-c4be5eb238",
+"typeId": "20567",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$의 방접원이 변 $BC$와 점 $Q$에서 접하고, 변 $AB$를 $B$ 쪽으로 연장한 직선과 점 $P$에서 접한다. $BQ=4\\text{ cm}$일 때, $BP$의 길이는?",
+"choices": [
+"$2\\text{ cm}$",
+"$3\\text{ cm}$",
+"$4\\text{ cm}$",
+"$5\\text{ cm}$",
+"$8\\text{ cm}$"
+],
+"answer": "③",
+"solution": "점 $B$에서 방접원에 그은 두 접선의 접점은 $P$, $Q$이다. 한 점에서 원에 그은 두 접선의 길이는 같으므로 $BP=BQ=4\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-7c38fe426e",
+"typeId": "20567",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형 $ABC$의 방접원이 변 $BC$와 점 $E$에서 접하고, 변 $AC$를 $C$ 쪽으로 연장한 직선과 점 $F$에서 접한다. $CE=11\\text{ cm}$일 때, $CF$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$11\\text{ cm}$",
+"solution": "점 $C$에서 방접원에 그은 두 접선의 길이는 같다. 따라서 $CF=CE=11\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-cbdc5595fb",
+"typeId": "20567",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$의 방접원이 변 $BC$와 점 $Q$에서 접하고, 변 $AB$를 $B$ 쪽으로 연장한 직선과 점 $P$에서 접한다. $AP=13\\text{ cm}$, $AB=8\\text{ cm}$일 때, $BQ$의 길이는?",
+"choices": [
+"$4\\text{ cm}$",
+"$5\\text{ cm}$",
+"$6\\text{ cm}$",
+"$8\\text{ cm}$",
+"$13\\text{ cm}$"
+],
+"answer": "②",
+"solution": "점 $B$는 선분 $AP$ 위에 있으므로 $BP=AP-AB=13-8=5\\text{ cm}$이다. 점 $B$에서 방접원에 그은 두 접선의 길이는 같으므로 $BQ=BP=5\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20567",
+"custom": true
+},
+{
+"id": "fill-8562d79455",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 1,
+"body": "두 원 $O$, $O'$이 두 점 $A$, $B$에서 만난다. 두 중심을 잇는 직선 $OO'$과 공통현 $AB$의 교점을 $M$이라 할 때, $AM=7\\text{ cm}$이다. 공통현 $AB$의 길이는?",
+"choices": [
+"$7\\text{ cm}$",
+"$10\\text{ cm}$",
+"$14\\text{ cm}$",
+"$21\\text{ cm}$",
+"$28\\text{ cm}$"
+],
+"answer": "③",
+"solution": "두 원의 중심을 잇는 직선은 공통현을 수직이등분하므로 $AM=BM$이다. 따라서 $AB=2AM=2\\times7=14\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-2c3c4b02d0",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 1,
+"body": "두 원 $O$, $O'$이 두 점 $A$, $B$에서 만나고, 직선 $OO'$이 공통현 $AB$와 점 $M$에서 만난다. $OA=10\\text{ cm}$, $OM=6\\text{ cm}$일 때, 공통현 $AB$의 길이는?",
+"choices": [
+"$8\\text{ cm}$",
+"$12\\text{ cm}$",
+"$16\\text{ cm}$",
+"$18\\text{ cm}$",
+"$20\\text{ cm}$"
+],
+"answer": "③",
+"solution": "두 원의 중심을 잇는 직선은 공통현을 수직이등분하므로 $\\angle OMA=90^\\circ$이고 $AM=BM$이다. 직각삼각형 $OMA$에서 $AM=\\sqrt{10^2-6^2}=8\\text{ cm}$이다. 따라서 $AB=2AM=16\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-7d0bd402d4",
+"typeId": "20565",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 $AB=5\\text{ cm}$, $AC=8\\text{ cm}$이다. $AB$, $AC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그리고, $BC$를 지름으로 하는 반원을 점 $A$가 있는 쪽에 그렸다. 앞의 두 반원에서 $BC$를 지름으로 하는 반원의 바깥에 있는 두 초승달 모양 부분의 넓이의 합은?",
+"choices": [
+"$10\\text{ cm}^2$",
+"$13\\text{ cm}^2$",
+"$20\\text{ cm}^2$",
+"$26\\text{ cm}^2$",
+"$40\\text{ cm}^2$"
+],
+"answer": "③",
+"solution": "피타고라스 정리에 의해 두 직각변을 지름으로 하는 반원의 넓이의 합은 빗변을 지름으로 하는 반원의 넓이와 같다. 양쪽에서 공통으로 겹치는 부분을 빼면 두 초승달 모양 부분의 넓이의 합은 삼각형 $ABC$의 넓이와 같다. 따라서 구하는 넓이는 $\\frac12\\times5\\times8=20\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
+},
+{
+"id": "fill-d8c36b31b9",
+"typeId": "20565",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\angle P=90^\\circ$인 직각삼각형 $PQR$의 넓이는 $17\\text{ cm}^2$이다. $PQ$, $PR$을 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그리고, $QR$을 지름으로 하는 반원을 점 $P$가 있는 쪽에 그렸다. 앞의 두 반원에서 $QR$을 지름으로 하는 반원의 바깥에 있는 두 초승달 모양 부분의 넓이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$17\\text{ cm}^2$",
+"solution": "히포크라테스의 원의 넓이 관계에 의해 두 초승달 모양 부분의 넓이의 합은 직각삼각형 $PQR$의 넓이와 같다. 따라서 구하는 넓이는 $17\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
+},
+{
+"id": "fill-b66372ca7c",
+"typeId": "20565",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\angle B=90^\\circ$, $AB=BC=4\\text{ cm}$인 직각이등변삼각형 $ABC$가 있다. $AB$, $BC$를 각각 지름으로 하는 반원을 삼각형의 바깥쪽에 그리고, $AC$를 지름으로 하는 반원을 점 $B$가 있는 쪽에 그렸다. 앞의 두 반원에서 $AC$를 지름으로 하는 반원의 바깥에 있는 두 초승달 모양 부분의 넓이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$8\\text{ cm}^2$",
+"solution": "히포크라테스의 원의 넓이 관계에 의해 두 초승달 모양 부분의 넓이의 합은 삼각형 $ABC$의 넓이와 같다. 두 직각변의 길이가 각각 $4\\text{ cm}$이므로 구하는 넓이는 $\\frac12\\times4\\times4=8\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
 }
 ]

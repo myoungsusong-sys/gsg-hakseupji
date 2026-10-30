@@ -2661,5 +2661,177 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-0bb3ce4288",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nOne morning, three elephants ________ to my village.",
+"choices": [
+"come",
+"comes",
+"came",
+"coming",
+"to come"
+],
+"answer": "③",
+"solution": "문장이 'One morning'으로 과거의 특정 시점을 나타내므로 동사는 과거형이어야 한다. come의 과거형은 불규칙 변화로 came이다. 따라서 ③ came가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4ee539fe6a",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThere ________ many animals in the forest.",
+"choices": [
+"is",
+"am",
+"are",
+"be",
+"was"
+],
+"answer": "③",
+"solution": "'There + be동사' 구문에서 be동사는 뒤에 오는 주어에 수를 일치시킨다. 주어 many animals가 복수이고 현재 시제이므로 복수형 are가 알맞다. 따라서 정답은 ③ are이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1e3418f580",
+"typeId": "eng-m1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nElephants and people can ________ good neighbors.",
+"choices": [
+"is",
+"are",
+"be",
+"being",
+"was"
+],
+"answer": "③",
+"solution": "조동사 can 뒤에는 항상 동사원형이 온다. 따라서 be동사도 원형인 be를 써야 한다. 정답은 ③ be이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7345a1d5c1",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nJina: I use words like, \"ball,\" \"strike,\" \"safe,\" and \"out.\" My voice is very ________.",
+"choices": [
+"loud",
+"loudly",
+"louds",
+"louding",
+"to loud"
+],
+"answer": "①",
+"solution": "be동사(is) 뒤에서 주어 voice의 상태를 설명하는 자리이므로 형용사가 와야 한다. 부사 loudly는 동사를 꾸밀 때 쓰므로 알맞지 않다. 따라서 형용사 loud가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-19594ad6df",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nYogi: Look! A pitcher is ________ a baseball. I will catch it.",
+"choices": [
+"throw",
+"throws",
+"throwing",
+"threw",
+"to throw"
+],
+"answer": "③",
+"solution": "지금 일어나고 있는 동작을 나타내는 현재진행형이다. 현재진행형은 「be동사(is) + 동사-ing」 형태이므로 throwing이 알맞다. 앞에 is가 있으므로 동사원형이나 과거형은 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3e2c958ca0",
+"typeId": "eng-m1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nJina: My voice is very loud. Everyone ________ me.",
+"choices": [
+"can hear",
+"hear can",
+"can hears",
+"cans hear",
+"can hearing"
+],
+"answer": "①",
+"solution": "조동사 can은 동사 앞에 오며, 뒤에는 동사원형이 온다. 따라서 「can + hear」 어순이 맞고, can 뒤에는 원형 hear를 써야 하므로 can hear가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7766cd97f4",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영작할 때 네 번째로 오는 단어는? (단, 단어를 추가하지 말 것)\n\n나의 형은 나에게 영어를 가르쳐주셨다.",
+"choices": [
+"My",
+"brother",
+"taught",
+"me",
+"English"
+],
+"answer": "④",
+"solution": "수여동사 teach는 「주어+taught+사람+사물」의 순서로 쓴다. 바르게 배열하면 My brother taught me English가 되어 첫 번째부터 My–brother–taught–me–English 순이다. 따라서 네 번째로 오는 단어는 me이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-5b5f52a977",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 단어를 바르게 배열하여 문장을 완성하시오. (단, 모든 단어를 한 번씩 사용할 것)\n\nshould / you / using / stop / it",
+"selfGrade": true,
+"answer": "You should stop using it",
+"solution": "「주어(You)+조동사(should)+동사(stop)」 뒤에 목적어로 동명사(using it)가 온다. stop은 「~하는 것을 멈추다」의 뜻일 때 뒤에 동명사를 쓴다. 따라서 You should stop using it으로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4fb070962e",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n모든 학생들이 지금 그것을 사용하고 있다.\n\n<조건>\n• everyone, use, it, now를 사용할 것\n• 현재진행형으로 쓸 것\n• 5단어로 쓸 것",
+"selfGrade": true,
+"answer": "Everyone is using it now",
+"solution": "everyone은 단수 취급하므로 be동사는 is를 쓴다. 「지금 ~하고 있다」는 현재진행형 「is + 동사-ing」으로 나타낸다. 따라서 Everyone is using it now가 되며 모두 5단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-b3793fed02",
+"typeId": "eng-m1-b05-u7m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 대화의 빈칸에 들어갈 말을 <보기>의 표현을 사용하여 4단어로 영작하시오.\n\nA: What did you do last Sunday?\nB: I went to a baseball game.\nA: ______________________________?\nB: It was exciting. My team won.\n\n<보기> the game",
+"selfGrade": true,
+"answer": "How was the game ?",
+"solution": "뒤에서 B가 It was exciting(흥미진진했어)이라고 경기의 소감을 말하므로, 빈칸에는 경기가 어땠는지 묻는 말이 들어가야 한다. 과거의 상태·소감을 물을 때는 「How was + 주어?」를 쓴다. <보기>의 the game을 넣어 How was the game?으로 4단어로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m5s0t0",
+"custom": true
 }
 ]

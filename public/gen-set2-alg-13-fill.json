@@ -1286,5 +1286,50 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-13-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-415e045654",
+"typeId": "set2-alg-13-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$a_1=2$, $a_{n+1}=a_n+3\\ (n\\geq1)$로 정의된 수열 $\\{a_n\\}$에서 $a_3$의 값은?",
+"choices": [
+"$5$",
+"$6$",
+"$8$",
+"$11$",
+"$14$"
+],
+"answer": "③",
+"solution": "$a_2=a_1+3=2+3=5$이다. 다시 $a_3=a_2+3=5+3=8$이다. 따라서 $a_3=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-f0e1382404",
+"typeId": "set2-alg-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "$a_1=5$, $a_{n+1}=a_n-2\\ (n\\geq1)$로 정의된 수열 $\\{a_n\\}$에서 $a_4$의 값은 ( )이다.\n\n( )에 들어갈 수를 입력하세요.",
+"selfGrade": true,
+"answer": "$-1$",
+"solution": "$a_2=a_1-2=3$, $a_3=a_2-2=1$, $a_4=a_3-2=-1$이다. 따라서 $a_4=-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-13-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-fb9393494f",
+"typeId": "set2-alg-13-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "$a_{n+1}=ra_n\\ (n\\geq1,\\ r\\neq0)$과 같이 이웃한 두 항의 비 $\\dfrac{a_{n+1}}{a_n}$이 일정한 수열을 ( )이라고 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "등비수열",
+"solution": "이웃한 두 항의 차 $a_{n+1}-a_n$이 일정하면 등차수열이고, 이웃한 두 항의 비 $\\dfrac{a_{n+1}}{a_n}$이 일정하면 등비수열이다. 주어진 관계식은 비가 일정하므로 등비수열이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-13-u0m0s0t1",
+"custom": true
 }
 ]

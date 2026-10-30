@@ -5629,5 +5629,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-e739a73810",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 어법상 알맞은 것을 고르시오.\n\nPeople in Europe and the U.S. use separate gardening tools ________ the ground.",
+"choices": [
+"weed",
+"weeds",
+"to weed",
+"weeding",
+"weeded"
+],
+"answer": "③",
+"solution": "'땅의 잡초를 뽑기 위해'라는 '목적'을 나타내므로 to부정사를 써야 한다. 따라서 to weed가 알맞다. 동사 원형(weed)이나 동명사(weeding) 등은 도구를 사용하는 목적을 나타낼 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ad58f9446",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 어법상 알맞은 것을 고르시오.\n\nOndol warms the entire room using heat that ________ outside the room.",
+"choices": [
+"create",
+"creates",
+"created",
+"is created",
+"creating"
+],
+"answer": "④",
+"solution": "관계대명사 that이 이끄는 절에서 heat(열)는 '만들어지는' 대상이므로 수동태가 필요하다. 주어가 단수이고 현재 사실이므로 is created가 알맞다. 능동형 creates나 과거분사 단독(created)은 문장의 동사 역할을 할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-be8930de85",
+"typeId": "eng-h1-b10-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 어법상 알맞은 것을 고르시오.\n\nThe Korean homi is a traditional farming tool ________ has gotten a lot of attention in the United States.",
+"choices": [
+"what",
+"who",
+"that",
+"it",
+"where"
+],
+"answer": "③",
+"solution": "선행사 a traditional farming tool(사물)을 수식하면서 뒤 절의 주어 역할을 하는 주격 관계대명사가 필요하므로 that이 알맞다. what은 선행사를 포함하므로 쓸 수 없고, who는 사람, where는 장소, it은 관계대명사가 아니므로 모두 부적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u6m1s0t0",
+"custom": true
 }
 ]

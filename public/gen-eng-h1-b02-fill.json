@@ -5769,5 +5769,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-38ca1c0749",
+"typeId": "eng-h1-b02-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWeb accessibility is the practice of making sure that websites can ________ by everyone, including people with disabilities.",
+"choices": [
+"use",
+"used",
+"be used",
+"be using",
+"to use"
+],
+"answer": "③",
+"solution": "주어 websites는 사람이 '사용하는' 대상이므로 수동태를 써야 합니다. 조동사 can 뒤에는 동사원형이 오므로 수동태는 'be + 과거분사', 곧 be used가 됩니다. 뒤에 나오는 by everyone도 수동태라는 단서입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bcac0b5b03",
+"typeId": "eng-h1-b02-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nFor people with certain disabilities, many websites can be nearly impossible to use. This is the reason ________ web accessibility is important.",
+"choices": [
+"what",
+"which",
+"who",
+"why",
+"whose"
+],
+"answer": "④",
+"solution": "선행사 the reason은 '이유'를 나타내므로 관계부사 why가 옵니다. 빈칸 뒤 web accessibility is important는 빠진 성분이 없는 완전한 절이라서 관계대명사 which나 what은 올 수 없습니다. who와 whose도 이 문장에 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-072c81e67d",
+"typeId": "eng-h1-b02-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"Reading and writing systems is different across cultures.",
+"Alt text is a brief description of non-textual information.",
+"Screen readers can detect this alt text and reads it aloud.",
+"Captions are text versions of the audio what appear in a video.",
+"They may provide captions that can help users accessing this information."
+],
+"answer": "②",
+"solution": "②는 주어 Alt text가 단수이므로 is가 맞고, 어법상 틀린 곳이 없습니다. ①은 주어가 복수 systems이므로 is를 are로 고쳐야 합니다. ③은 조동사 can 뒤에 detect와 병렬로 이어지므로 reads가 아니라 read여야 합니다. ④는 선행사 the audio가 있으므로 what을 that으로 고쳐야 하고, ⑤는 help + 목적어 뒤에 동사원형이나 to부정사가 와야 하므로 access(또는 to access)가 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m1s0t0",
+"custom": true
 }
 ]

@@ -640,5 +640,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-0572b43513",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto give money, goods, or works of art to an organization or a place in order to help it",
+"choices": [
+"persuade",
+"exhibit",
+"decline",
+"donate",
+"bargain"
+],
+"answer": "④",
+"solution": "영영풀이는 '단체나 장소를 돕기 위해 돈·물품·예술 작품을 주다'라는 뜻이므로 donate(기증하다)가 알맞다. 본문에서 Arias는 피카소의 작품 약 60점을 고향 Buitrago del Lozoya에 기증했다(donated). persuade는 '설득하다', exhibit는 '전시하다', decline은 '쇠퇴하다, 거절하다', bargain은 '흥정하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-305a0218ad",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nOne day, Picasso asked Arias, \"What are you going to do with all the paintings and sketches I gave you?\" Arias responded that he would build a museum in Spain to display the works. Picasso was ________ to hear that and swore to help Arias.",
+"choices": [
+"annoyed",
+"bored",
+"moved",
+"ashamed",
+"frightened"
+],
+"answer": "③",
+"solution": "Arias가 자신의 작품을 전시할 박물관을 스페인에 짓겠다고 하자 피카소는 그를 돕겠다고 맹세했다. 따라서 그 말을 듣고 '감동받았다(moved)'가 흐름에 맞다. annoyed(짜증 난), bored(지루한), ashamed(부끄러운), frightened(겁먹은)는 돕겠다고 맹세한 행동과 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4f2e369e50",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"grief – 슬픔, 비탄",
+"merchant – 상인",
+"inscription – 새겨진 글, 비문",
+"legacy – 유산",
+"ceramics – 조각품"
+],
+"answer": "⑤",
+"solution": "ceramics는 '도자기(류)'라는 뜻이므로 '조각품'과 연결한 것은 틀렸다. 본문에서 Arias가 기증한 작품은 회화, 포스터, 도자기(ceramics) 등으로 이루어져 있었다. 나머지 grief(슬픔), merchant(상인), inscription(새겨진 글), legacy(유산)는 뜻이 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-088da4e592",
+"typeId": "eng-h3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"Picasso were late for dinner that evening.",
+"A curious crowd gathered around the limousine.",
+"Each of the paintings were signed by Picasso.",
+"Arias donate about sixty pieces to his hometown.",
+"Picasso made Arias to wait in the car."
+],
+"answer": "②",
+"solution": "②는 주어 a curious crowd에 과거동사 gathered가 바르게 쓰여 어법상 옳다. ①은 주어 Picasso가 단수이므로 were가 아니라 was여야 하고, ③은 「each of+복수명사」가 단수 취급이므로 were가 아니라 was여야 한다. ④는 주어 Arias에 맞춰 donated(과거)로, ⑤는 사역동사 make 뒤에 원형부정사 wait로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-088da4e592",
+"typeId": "eng-h3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"The crowd gathered, wondered who Picasso was.",
+"Despite the fact which Picasso was older than Arias, they were friends.",
+"Each of them are distinct from his other works.",
+"Visitors discover that the museum honors their friendship.",
+"Picasso did not live to seeing the museum completed."
+],
+"answer": "④",
+"solution": "④는 뒤에 완전한 절이 오므로 접속사 that이 바르게 쓰여 어법상 옳다. ①은 동시동작을 나타내는 분사구문이므로 wondered가 아니라 wondering이어야 하고, ②는 the fact와 동격을 이루는 절을 이끄는 that이 와야 하므로 which가 틀리다. ③은 「each of+복수명사」가 단수 취급이므로 are가 아니라 is, ⑤는 「live to+동사원형」 구조이므로 seeing이 아니라 see여야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-088da4e592",
+"typeId": "eng-h3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"The works were comprised a large collection of paintings.",
+"They went back to the afternoon which their friendship began.",
+"Picasso had been working hard for days before Arias visited.",
+"Arias started to dropping by Picasso's house.",
+"This situation made Picasso feeling uncomfortable."
+],
+"answer": "③",
+"solution": "③은 과거의 특정 시점(Arias가 방문한 때)보다 앞선 일이 계속되었음을 나타내는 과거완료진행 had been working이 바르게 쓰여 옳다. ①의 comprise는 '~로 구성되다'라는 능동 의미로 수동태가 불가능하므로 comprised여야 하고, ②는 뒤에 완전한 절이 오므로 관계부사 when(또는 on which)이 와야 한다. ④는 「to+동사원형」이므로 to drop, ⑤는 사역동사 make 뒤 원형부정사 feel로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-225144cc56",
+"typeId": "eng-h3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nPicasso's visits to Arias's barbershop soon became routine. Whenever he came, the other customers let him ⓐbe served first. This made Picasso ⓑto feel uncomfortable, since it caused others to wait longer. ⓒSensing his discomfort, Arias asked whether Picasso would prefer to be shaved at home. From then on, Arias visited Picasso's house, but never charged him for the services he ⓓprovided. The sixty works ⓔdonated to the museum comprised paintings, posters, and ceramics. Each of them ⓕare distinct, for Picasso carved every one with a personal inscription. When visitors enter the museum, they soon discover ⓖwhat it honors a lifelong friendship.",
+"choices": [
+"ⓐ, ⓒ, ⓖ",
+"ⓑ, ⓓ, ⓕ",
+"ⓑ, ⓕ, ⓖ",
+"ⓐ, ⓔ, ⓖ",
+"ⓒ, ⓓ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓑ는 사역동사 make의 목적격보어 자리이므로 to feel이 아니라 원형부정사 feel이어야 한다. ⓕ는 「each of+복수명사」가 단수 취급이므로 are가 아니라 is가 맞다. ⓖ는 뒤에 완전한 절(it honors a lifelong friendship)이 오므로 what이 아니라 접속사 that이어야 한다. 한편 ⓐ는 let+목적어 뒤의 원형(수동 be served)으로, ⓒ는 분사구문으로, ⓓ는 services를 수식하는 관계절 동사로, ⓔ는 works를 수식하는 과거분사로 모두 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
+"custom": true
 }
 ]

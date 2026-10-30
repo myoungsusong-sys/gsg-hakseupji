@@ -3359,5 +3359,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b04-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-d69a43cba3",
+"typeId": "eng-h2-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn August 1, 1914, Ernest Shackleton (A)[departed / was departed] London on the ship Endurance with 27 men and 69 dogs to cross the Antarctic continent. The crew members were full of (B)[excite / excitement], but when their ship got stuck in thick pack ice on January 18, 1915, their joy quickly turned to fear. Shackleton and his men had to abandon their ship and set up camp on the floating ice. Each man was given a sleeping bag and was (C)[assigned / assigning] to one of five tents.\n\n(A) - (B) - (C)",
+"choices": [
+"departed - excite - assigned",
+"was departed - excitement - assigned",
+"departed - excitement - assigned",
+"departed - excitement - assigning",
+"was departed - excite - assigning"
+],
+"answer": "③",
+"solution": "(A) 주어 Shackleton이 직접 런던을 떠난 것이므로 능동태 departed가 알맞다. 또한 depart는 목적어 London을 취하므로 수동태로 쓸 수 없다. (B) 전치사 of 뒤에는 명사가 와야 하므로 excitement가 맞다. (C) 각 대원은 텐트에 '배정된' 것이므로 수동태 was assigned가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-005366c4a7",
+"typeId": "eng-h2-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn April 20, with four crew members, Shackleton set off on a risky journey in a small lifeboat to (A)[seek / seeking] help from a whaling station on South Georgia Island, (B)[which / what] was 1,300 km away. He took some of the troublesome characters with him so that the remaining crew would not fight while on Elephant Island. Each morning on the island, Frank Wild, whom Shackleton had left in charge, called everyone to be ready to depart. \"The Boss may come today!\" he (C)[declared / declaring] daily.\n\n(A) - (B) - (C)",
+"choices": [
+"seeking - which - declared",
+"seek - what - declared",
+"seek - which - declaring",
+"seek - which - declared",
+"seeking - what - declaring"
+],
+"answer": "④",
+"solution": "(A) '도움을 구하기 위해'라는 목적을 나타내는 to부정사이므로 to 뒤에는 동사원형 seek이 온다. (B) 앞의 명사 a whaling station을 보충 설명하는 계속적 용법의 관계대명사가 필요하므로 which가 맞다. what은 선행사를 포함하고 콤마 뒤에 쓸 수 없다. (C) 주어 he 뒤에 문장의 동사가 있어야 하므로 과거시제 declared가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-492474a712",
+"typeId": "eng-h2-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nShackleton and the four crew members finally ①reached South Georgia Island on May 10. Still, their struggle ②was not over yet. The whaling station was ③locating on the other side of a mountain range. They had to ④cross the rocky mountains on foot. They stopped ⑤to rest for a while, and the exhausted men fell asleep right away.",
+"choices": [
+"① reached",
+"② was",
+"③ locating",
+"④ cross",
+"⑤ to rest"
+],
+"answer": "③",
+"solution": "포경 기지는 스스로 위치하는 것이 아니라 '위치해 있는' 것이므로 수동태 was located로 써야 한다. 따라서 ③ locating은 located로 고쳐야 한다. ① reached는 과거 사실을 나타내는 동사로 맞다. ② was는 단수 주어 their struggle에 맞게 수 일치를 했다. ④ had to 뒤에는 동사원형 cross가 오고, ⑤ '쉬기 위해 멈췄다'는 뜻이므로 to부정사 to rest가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-80e284c423",
+"typeId": "eng-h2-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 각 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n• Some radical changes, like the climate crisis, (A)[affects / affect] all age groups.\n• Many individuals say they used to (B)[being / be] more adventurous during their youth.\n• Another survey (C)[conducting / conducted] by German researchers showed similar consumption rates of ethical products between older and younger generations.\n\n   (A)        (B)        (C)",
+"choices": [
+"affects – being – conducting",
+"affects – be – conducted",
+"affect – be – conducted",
+"affect – being – conducted",
+"affect – be – conducting"
+],
+"answer": "③",
+"solution": "(A) 문장의 주어는 복수 명사 changes이고, like the climate crisis는 중간에 끼어든 삽입 어구이므로 복수 동사 affect가 알맞다. (B) '(과거에) ~하곤 했다'는 뜻의 used to 뒤에는 동사원형이 오므로 be가 알맞다. (C) 설문 조사는 독일 연구자들에 의해 '실시된' 것이므로 수동의 의미를 나타내는 과거분사 conducted가 survey를 뒤에서 꾸민다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-496e5ee9ad",
+"typeId": "eng-h2-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"Each generation are defined by the birth years of its members.",
+"Koreans went through the 1997 financial crisis, also known as the IMF crisis.",
+"Gen Zers are accustomed to get their news from social media.",
+"When baby boomers were young, climate change was not so a prominent issue.",
+"We should be careful not making hasty judgments about people."
+],
+"answer": "②",
+"solution": "②는 '~로 알려진'이라는 수동의 의미이므로 과거분사 known이 앞의 명사를 꾸미는 것이 맞다. ① each generation은 단수이므로 is로 고쳐야 한다. ③ be accustomed to의 to는 전치사이므로 getting으로 고쳐야 한다. ④ 'such + a + 형용사 + 명사' 어순이므로 such a prominent issue로 고쳐야 하고, ⑤ be careful 뒤에는 to부정사가 오므로 not to make로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-24b4893cfd",
+"typeId": "eng-h2-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nBroadly speaking, each generation ①is defined by the birth years of its members. According to the theory of generational cohorts, individuals who ②belong to a particular generation are socialized in distinct conditions. They experience similar political, economic, and social events during their early stages of life, ③which shapes their beliefs, values, and behaviors in similar ways. Gen Zers grew up with smartphones, and they are accustomed ④to getting their news, information, and advice from social media. Their strength in using digital media, however, often ⑤lead them to lack social skills.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "⑤의 주어는 단수 명사 strength이고, in using digital media는 주어를 꾸미는 수식어일 뿐이므로 단수 동사 leads로 고쳐야 한다. ① 세대는 출생 연도에 의해 '정의되는' 것이므로 수동태 is defined가 맞다. ② 관계대명사 who의 선행사 individuals가 복수이므로 belong이 맞고, ③ 앞 절 전체를 받는 계속적 용법의 which와 단수 동사 shapes가 맞다. ④ be accustomed to의 to는 전치사이므로 동명사 getting이 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m1s0t0",
+"custom": true
 }
 ]

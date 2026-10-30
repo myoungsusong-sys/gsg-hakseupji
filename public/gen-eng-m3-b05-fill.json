@@ -7609,5 +7609,209 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b05-u2m0s0t0",
 "custom": true
+},
+{
+"id": "fill-c3cff303df",
+"typeId": "eng-m3-b05-u1m4s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\n네가 더 많이 연습할수록, 너는 더 잘하게 될 것이다.\n\n<보기> you / the / will / more / better / practice / you / the / become\n→ ______________________________________, ______________________________________.",
+"selfGrade": true,
+"answer": "The more you practice, the better you will become.",
+"solution": "'~할수록 더 …하다'는 「The+비교급+주어+동사, the+비교급+주어+동사」 구문으로 나타낸다. '더 많이 연습할수록'은 The more you practice, '더 잘하게 될 것이다'는 the better you will become이다. 비교급(more, better)은 반드시 the 바로 뒤에 와야 하고, 그 뒤에 「주어+동사」 순서가 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b796d88456",
+"typeId": "eng-m3-b05-u1m4s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 알맞은 형태로 바꾸어 빈칸에 쓰시오.\n\n날씨가 더 따뜻할수록, 우리는 더 많은 물을 마신다.\n\n→ The ________ (warm) the weather is, the ________ (much) water we drink.",
+"selfGrade": true,
+"answer": "warmer, more",
+"solution": "「The+비교급 ~, the+비교급 …」 구문이므로 두 빈칸 모두 비교급을 써야 한다. warm의 비교급은 warmer이고, much는 불규칙 변화를 해서 비교급이 more이다. 따라서 The warmer the weather is, the more water we drink.가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8b2b17604b",
+"typeId": "eng-m3-b05-u1m4s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\n우리가 학교에서 에너지를 절약하는 것은 중요하다.\n\n<보기> to / us / it / for / is / save / important / energy\n→ ______________________________________ at school.",
+"selfGrade": true,
+"answer": "It is important for us to save energy",
+"solution": "'~가 …하는 것은 -하다'는 가주어 it을 써서 「It is+형용사+for+목적격+to부정사」로 나타낸다. important처럼 사람의 성격을 나타내지 않는 형용사 뒤에서는 의미상 주어를 for us로 쓴다. 따라서 It is important for us to save energy at school.이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2251cafd19",
+"typeId": "eng-m3-b05-u1m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻의 연결이 옳지 않은 것은?",
+"choices": [
+"conference - 회의",
+"environmental - 환경의",
+"electricity - 전기",
+"necessary - 필수적인",
+"waste - 절약하다"
+],
+"answer": "⑤",
+"solution": "waste는 '낭비하다'라는 뜻이다. '절약하다'는 save이므로 ⑤의 연결이 옳지 않다. 나머지 ①~④는 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-249cdeb097",
+"typeId": "eng-m3-b05-u1m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nWe should not ____________ a lot of energy. (우리는 많은 에너지를 낭비해서는 안 된다.)",
+"choices": [
+"save",
+"share",
+"plant",
+"waste",
+"charge"
+],
+"answer": "④",
+"solution": "'낭비하다'를 뜻하는 단어는 waste이다. save는 '절약하다', share는 '공유하다', plant는 '심다', charge는 '충전하다'라는 뜻이므로 빈칸에는 ④ waste가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-182be47d13",
+"typeId": "eng-m3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nHi, everyone. Last winter our science club did a small experiment with bubble wrap. We put bubble wrap on the windows in Classroom A, but we didn't put any in Classroom B. Then we turned off the heater. Sixty minutes later, Classroom A was warmer than Classroom B. We learned that bubble wrap can help to save energy.",
+"choices": [
+"과학 동아리는 여름에 실험을 했다.",
+"A 교실에만 뽁뽁이(bubble wrap)를 붙였다.",
+"B 교실이 A 교실보다 더 따뜻했다.",
+"실험하는 동안 난방기를 계속 켜 두었다.",
+"뽁뽁이는 에너지를 낭비하게 만든다."
+],
+"answer": "②",
+"solution": "글에서 A 교실에는 뽁뽁이를 붙이고 B 교실에는 붙이지 않았다고 했으므로 ②가 일치한다. 실험은 지난겨울에 했고(①), 난방기를 껐으며(④), A 교실이 더 따뜻했고(③), 뽁뽁이는 에너지를 절약하도록 돕는다(⑤)고 했으므로 나머지는 모두 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f3c830f05f",
+"typeId": "eng-m3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nInho: Lina, you are not using your phone, but the charger is still plugged in. If I were you, I'd pull the plug out.\nLina: Why? I'll use the charger later. Leave it that way.\nInho: But you are wasting electricity.\nLina: It's only a little bit.\nInho: Actually, a lot of small things like that waste energy without us knowing.",
+"choices": [
+"Lina는 지금 전화기를 사용하고 있지 않다.",
+"충전기는 아직 콘센트에 꽂혀 있다.",
+"Inho는 플러그를 뽑으라고 말한다.",
+"Lina는 전기를 많이 낭비하고 있다고 걱정한다.",
+"Inho는 작은 것들이 에너지를 낭비한다고 말한다."
+],
+"answer": "④",
+"solution": "Lina는 \"It's only a little bit.\"라고 말하며 낭비가 아주 적다고 여기므로, 전기를 많이 낭비하고 있다고 걱정한다는 ④는 일치하지 않는다. 나머지 ①②③⑤는 대화 내용과 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b569971762",
+"typeId": "eng-m3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nHello, friends. A few months ago, I was surprised to see some empty classrooms with the lights on. So we designed some resource saving stickers and put them on the light switches. The stickers tell the last student who leaves the classroom to turn off the lights. We also put some stickers on the mirrors in the restrooms to help students not to waste water.",
+"choices": [
+"글쓴이는 불이 꺼진 빈 교실을 보고 놀랐다.",
+"스티커는 몇 년 전에 만들어졌다.",
+"전등 스위치에는 스티커를 붙이지 않았다.",
+"화장실 거울에 붙인 스티커는 물 절약을 돕는다.",
+"스티커는 첫 번째로 나가는 학생에게 불을 끄라고 한다."
+],
+"answer": "④",
+"solution": "화장실 거울에 붙인 스티커가 학생들이 물을 낭비하지 않도록 돕는다고 했으므로 ④가 일치한다. 글쓴이는 불이 켜진 빈 교실을 보고 놀랐고(①), 스티커는 몇 달 전에 만들었으며(②), 전등 스위치에 붙였고(③), 마지막으로 나가는 학생에게 불을 끄라고 하므로(⑤) 나머지는 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3f1a1cfc0e",
+"typeId": "eng-m3-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nIt's time we ________ to bed. It's already midnight.",
+"choices": [
+"goes",
+"going",
+"went",
+"gone",
+"to going"
+],
+"answer": "③",
+"solution": "「It's (about/high) time + 주어 + 과거동사」는 '~해야 할 때이다'라는 뜻이며, 아직 하지 않은 일을 해야 한다는 의미를 나타낸다. 따라서 빈칸에는 과거형 went가 알맞다. goes, going, gone, to going은 이 구문에 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b0bad26cda",
+"typeId": "eng-m3-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"The woman brought up them with her love.",
+"The woman brought them up with her love.",
+"Please pick up it.",
+"It's dark. Turn on it, please.",
+"He took off them at the door."
+],
+"answer": "②",
+"solution": "「동사 + 부사」로 된 이어동사(bring up, pick up, turn on, take off)의 목적어가 대명사이면, 대명사는 반드시 동사와 부사 사이에 와야 한다. 따라서 brought them up이 옳다. 나머지는 각각 pick it up, Turn it on, took them off로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-60ddd889a8",
+"typeId": "eng-m3-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nSimon: I'm not sure ________ he is dead or not.",
+"choices": [
+"whether",
+"that",
+"what",
+"which",
+"who"
+],
+"answer": "①",
+"solution": "'~인지 아닌지'라는 뜻으로 명사절을 이끄는 접속사는 whether(또는 if)이며, 뒤에 or not과 함께 자주 쓰인다. that은 '~라는 것'이라는 확정된 내용을 나타내므로 or not과 어울리지 않는다. what, which, who는 뒤에 빠진 문장 성분이 있어야 하는데, 이 문장은 완전한 절이므로 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d9e1cf576b",
+"typeId": "eng-m3-b05-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 어색한 것을 두 개 골라 기호를 쓰고, 각각 알맞게 고치시오.\n\nScene #3.\nA year later, Simon has become famous, thanks to Michael's great skills in ⓐmaking shoes. One day, a nobleman comes ⓑto order his boots.\nNobleman: I'd like to order fine leather boots ⓒthat has to last for a year. I'm not sure ⓓif you can make them. Can you do that?\n(Michael watches the man carefully and smiles for the second time.)\nSimon: Yes, sir. Don't worry.\n(The nobleman leaves the shop.)\nSimon: Michael, please make some thick leather boots.\nMichael: Okay.\n(However, Michael makes soft slippers instead of boots.)\nSimon: (finding the slippers) Michael! I told you there should be no mistakes. What do you think you ⓔare doing?\nServant: (running into the shop) Please stop ⓕmaking boots and start making soft slippers for a dead body instead. My master ⓖhas been died of a heart attack.\n\n기호      고친 표현\n(1) ______ : ______________________\n(2) ______ : ______________________",
+"selfGrade": true,
+"answer": "ⓒ: have (또는 that have), ⓖ: has died",
+"solution": "ⓒ 주격 관계대명사 that의 선행사가 복수 명사 fine leather boots이므로 관계절의 동사도 복수형 have가 되어야 한다. ⓖ die는 목적어를 갖지 않는 자동사라서 수동태로 쓸 수 없으므로 현재완료 has died로 고쳐야 한다. ⓓ if는 '~인지 아닌지'라는 뜻의 명사절 접속사로, whether 대신 써도 어법상 맞다. ⓐ는 전치사 뒤의 동명사, ⓑ는 목적을 나타내는 to부정사, ⓔ는 간접의문문 안의 현재진행형, ⓕ는 'stop + 동명사(~하던 것을 멈추다)'로 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m1s0t0",
+"custom": true
 }
 ]

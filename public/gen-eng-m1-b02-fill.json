@@ -3014,5 +3014,108 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b02-u5m7s0t0",
 "custom": true
+},
+{
+"id": "fill-4bc3bce9a3",
+"typeId": "eng-m1-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"explore – 탐험하다",
+"trash – 쓰레기",
+"hallway – 복도",
+"solution – 문제",
+"sign – 표지판"
+],
+"answer": "④",
+"solution": "solution은 '해결책'이라는 뜻이고, '문제'는 problem입니다. 본문에서도 'we find its problems'(문제를 찾는다)와 'we share solutions'(해결책을 공유한다)가 구별되어 쓰였습니다. 나머지 선지는 모두 바르게 짝지어져 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c11835e610",
+"typeId": "eng-m1-b02-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 단어를 쓰시오. (주어진 철자로 시작할 것)\n\n복도와 계단에 쓰레기가 많이 있었다.\n→ There was a lot of t__________ in the hallways and on the stairs.",
+"selfGrade": true,
+"answer": "trash",
+"solution": "'쓰레기'는 영어로 trash입니다. 셀 수 없는 명사여서 a lot of 뒤에 그대로 쓰고, 동사도 단수형인 was를 씁니다. 본문에서 지현이가 학교에서 발견한 큰 문제를 말할 때 쓴 표현입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-799a78c815",
+"typeId": "eng-m1-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 풀이가 뜻하는 단어로 알맞은 것은?\n\na way to solve a problem",
+"choices": [
+"problem",
+"solution",
+"sign",
+"map",
+"step"
+],
+"answer": "②",
+"solution": "'a way to solve a problem'은 '문제를 해결하는 방법'이라는 뜻이므로 solution(해결책)이 알맞습니다. 본문에서 동아리는 해결책으로 지도를 학생과 선생님들에게 공유했습니다(For solutions, we shared this map). problem은 '문제', sign은 '표지판', map은 '지도', step은 '단계'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-222f073db3",
+"typeId": "eng-m1-b02-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하여 문장을 완성하시오.\n\n우리는 함께 과학 프로젝트를 했다.\n(the science project / did / together / we)\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "We did the science project together",
+"solution": "주어 We 다음에 과거형 동사 did를 쓰고, 목적어 the science project를 이어 씁니다. '함께'를 뜻하는 together는 문장 끝에 둡니다. 영어 문장은 기본적으로 '주어 + 동사 + 목적어 + 부사' 순서입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-a943010acc",
+"typeId": "eng-m1-b02-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하여 문장을 완성하시오.\n\n나는 어제 자전거를 타러 갔다.\n(a bike ride / went / I / yesterday / for)\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "I went for a bike ride yesterday",
+"solution": "'자전거를 타러 가다'는 go for a bike ride로 표현합니다. 어제 일이므로 go의 과거형 went를 씁니다. 시간을 나타내는 yesterday는 문장 끝에 둡니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bb2873f48a",
+"typeId": "eng-m1-b02-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 밑줄 친 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하시오.\n\nG: How was your bike ride?\nB: It was great. The weather was wonderful. 나는 정말 재미있었어.\n(so / I / fun / had / much)\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "I had so much fun",
+"solution": "'재미있게 보내다'는 have fun으로 표현하고, 지난 일이므로 과거형 had를 씁니다. '정말 많이'라는 뜻의 so much는 fun 앞에 둡니다. 그래서 I had so much fun.이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-818f58095b",
+"typeId": "eng-m1-b02-u2m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 밑줄 친 (A), (B)의 우리말을 주어진 <조건>에 맞게 영작하시오.\n\nThe first note is from Dahyeon for her friend Lina.\n\"Hi, Lina. You and I did the science project together. It went well, thanks to you. Your ideas and energy were a great help!\"\nLina is fantastic!\nI will read another note from Junseo. It's for our school nurse, Mr. Kim.\n\"Mr. Kim, this is Junseo. (A)저는 2주 전에 배가 아팠어요. (B)선생님께서 저를 잘 돌봐 주셨어요. It really hurt then, but I'm well now. Thank you very much.\"\nMr. Kim is so good to us!\n\n<조건>\n• (A)는 have, stomachache를 사용하여 7단어로 쓸 것\n• (B)는 take, care를 사용하여 6단어로 쓸 것\n• 필요하면 단어를 추가하거나 형태를 바꿀 것\n\n(A) ______________________________________________\n(B) ______________________________________________",
+"selfGrade": true,
+"answer": "(A) I had a stomachache two weeks ago. (B) You took good care of me.",
+"solution": "(A) '배가 아프다'는 have a stomachache이고, 2주 전(two weeks ago)의 일이므로 have를 과거형 had로 바꿔 씁니다. 셀 수 있는 명사인 stomachache 앞에 a를 붙여야 7단어가 됩니다. (B) '~를 잘 돌보다'는 take good care of이고, take의 과거형 took을 씁니다. 그래서 You took good care of me.(6단어)가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m5s0t0",
+"custom": true
 }
 ]

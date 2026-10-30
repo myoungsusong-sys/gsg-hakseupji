@@ -772,5 +772,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b04-u0m3s0t0",
 "custom": true
+},
+{
+"id": "fill-6732b0e177",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAt that time, a person was far more likely to _______ as a member of a group than as an isolated individual.",
+"choices": [
+"survive",
+"fail",
+"hide",
+"forget",
+"refuse"
+],
+"answer": "①",
+"solution": "혼자 고립된 개인보다 집단의 구성원으로 있을 때 생존 가능성이 훨씬 높았다는 진화적 관점의 내용이다. 문맥상 '생존하다'라는 뜻의 survive가 알맞다. 나머지 단어는 모두 생존과 반대되거나 무관한 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3c3bd26be6",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 fostered와 의미가 가장 가까운 것은?\n\nThis mutual cooperation built trust and fostered relationships among group members.",
+"choices": [
+"promoted",
+"destroyed",
+"ignored",
+"delayed",
+"hid"
+],
+"answer": "①",
+"solution": "협력이 신뢰를 쌓고 구성원 간의 관계를 '촉진·발전시켰다'는 긍정적 맥락이다. foster는 '기르다, 촉진하다'의 뜻이므로 promoted가 가장 가깝다. destroyed, ignored 등은 정반대이거나 무관한 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-60ad9c5afb",
+"typeId": "eng-h3-b04-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIndividuals want to be included somewhere, but they also want to be different and _______.",
+"choices": [
+"unique",
+"similar",
+"ordinary",
+"equal",
+"invisible"
+],
+"answer": "①",
+"solution": "사람들은 소속되고 싶어 하는 동시에 남과 다르고 '독특한' 존재가 되기를 원한다는 최적 차별성 이론의 내용이다. different와 짝을 이루어 '독특한'을 뜻하는 unique가 알맞다. similar, ordinary, equal은 모두 반대 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7f60a2adac",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPlaying sports ⓐ[is / are] one of the most common hobbies. From an evolutionary perspective, tribes with a stronger sense of community ⓑ[was / were] likely to defeat other tribes. Sports team supporters ⓒ[is / are] one such group that satisfies our need for inclusion.",
+"choices": [
+"are - were - are",
+"is - were - are",
+"is - was - are",
+"is - were - is",
+"are - was - is"
+],
+"answer": "②",
+"solution": "ⓐ 동명사구 'Playing sports'가 주어이므로 단수 취급하여 is가 맞다. ⓑ 주어가 복수 명사 tribes이므로 were가 맞다. ⓒ 주어 supporters가 복수이므로 are가 맞다. 따라서 is-were-are이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d99d2e5193",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIf you go to any sports stadium, you will be able to find fans ⓐ[cheering / cheered] wildly. If you are a fan of a football team ⓑ[basing / based] in your city, you can satisfy your need for inclusion. This dynamic has an impact on the team's performance, as ⓒ[confirming / confirmed] by a study in 2021.",
+"choices": [
+"cheered - based - confirmed",
+"cheering - basing - confirmed",
+"cheering - based - confirmed",
+"cheering - based - confirming",
+"cheered - basing - confirming"
+],
+"answer": "③",
+"solution": "ⓐ fans가 응원하는 주체(능동)이므로 현재분사 cheering이 맞다. ⓑ team은 도시에 '기반을 둔' 대상(수동)이므로 과거분사 based가 맞다. ⓒ 'as (it is) confirmed'의 수동 분사구문이므로 confirmed가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fedab2c43d",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPeople could help each other when carrying hunted animals that were too heavy for one person ⓐ[to handle / handling]. The instinct ⓑ[to find / finding] one's own tribe has been passed down to modern people. When a team competes at home, their fans gather ⓒ[watch / to watch] the game.",
+"choices": [
+"handling - to find - to watch",
+"to handle - finding - to watch",
+"to handle - to find - watch",
+"to handle - to find - to watch",
+"handling - finding - watch"
+],
+"answer": "④",
+"solution": "ⓐ 'too+형용사+to부정사(too heavy ... to handle)' 구문이므로 to handle이 맞다. ⓑ 명사 instinct를 수식하는 to부정사 to find가 맞다. ⓒ '~하기 위해'라는 목적을 나타내는 to부정사 to watch가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0ef7ed5268",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nPlaying sports is one of the most common hobbies, but people also love to watch live sports games. If you go to any sports stadium, you will be able to find fans ⓐcheering wildly, crying with joy. What does it mean for an individual ⓑto be a sports fan? From an evolutionary perspective, sports fandom emerged from our ancestors, who were far more likely to survive as a member of a group. In fact, group membership was so important ⓒwhat tribes with a stronger sense of community were likely to defeat other tribes. Because of this, the instinct to find one's own group ⓓhas passed down to modern people. When a team competes in their home stadium, their fans gather ⓔto watch the game, and the cheers from the home team's fans are usually louder than ⓕthat from the visiting team's supporters. This dynamic has an impact on the team's performance, ⓖas confirmed by a study in 2021.",
+"choices": [
+"ⓐ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓕ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓔ, ⓕ",
+"ⓐ, ⓓ, ⓖ"
+],
+"answer": "②",
+"solution": "ⓒ 'so+형용사+that' 구문으로 뒤에 완전한 절이 이어지므로 what이 아니라 that이 되어야 한다. ⓓ the instinct가 '전해 내려지는' 대상이므로 수동태 has been passed down이 되어야 한다. ⓕ 앞의 복수명사 the cheers를 대신하므로 that이 아니라 those가 되어야 한다. 나머지 ⓐ(fans를 수식하는 능동 현재분사), ⓑ(for+목적어+to부정사), ⓔ(목적의 to부정사), ⓖ(as confirmed 수동 분사구문)는 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true
 }
 ]

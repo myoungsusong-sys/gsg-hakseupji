@@ -7054,5 +7054,189 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-612821a89a",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 단어의 우리말 뜻으로 알맞은 것은?\n\nfailure",
+"choices": [
+"① 성공",
+"② 실패",
+"③ 기술",
+"④ 가격",
+"⑤ 박람회"
+],
+"answer": "②",
+"solution": "failure는 동사 fail(실패하다)의 명사형으로 '실패'라는 뜻입니다. 본문의 After many failures는 '여러 번 실패한 끝에'라는 뜻입니다. ①은 success, ③은 technology, ④는 price, ⑤는 fair의 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d326b805a6",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 단어와 뜻이 반대인 것은?\n\ncheap",
+"choices": [
+"① useful",
+"② young",
+"③ expensive",
+"④ free",
+"⑤ better"
+],
+"answer": "③",
+"solution": "cheap(값이 싼)의 반의어는 expensive(값이 비싼)입니다. free는 '무료의'라는 뜻이라 반대말이 아닙니다. 나머지 useful(쓸모 있는), young(어린), better(더 좋은)도 cheap과 뜻이 반대되는 관계가 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-347b1d0c11",
+"typeId": "eng-m3-b03-u8m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 적절한 것은?\n\nto have enough money to buy or pay for something",
+"choices": [
+"① share",
+"② afford",
+"③ remove",
+"④ pollute",
+"⑤ achieve"
+],
+"answer": "②",
+"solution": "'무언가를 사거나 그 값을 치를 만큼 돈이 충분히 있다'는 뜻의 단어는 afford(~할 여유가 있다)입니다. share는 '나누다', remove는 '없애다', pollute는 '오염시키다', achieve는 '이루다'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m0s0t0",
+"custom": true
+},
+{
+"id": "fill-48c560487f",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 적절한 것은?\n\nto move your hand from side to side to say hello or goodbye",
+"choices": [
+"① wave",
+"② greet",
+"③ share",
+"④ range",
+"⑤ tag"
+],
+"answer": "①",
+"solution": "영영풀이는 '인사하려고 손을 좌우로 흔들다'라는 뜻이고, 이에 해당하는 단어는 wave(손을 흔들다)이다. greet는 '인사하다'라는 뜻이지만 손을 흔드는 동작을 가리키지는 않는다. share는 '나누다, 공유하다', range는 '(범위가) ~에 이르다', tag는 '가격표'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b8d9be1142",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"① polite - rude",
+"② comfortable - uncomfortable",
+"③ more - less",
+"④ positive - negative",
+"⑤ elderly - old"
+],
+"answer": "⑤",
+"solution": "①~④는 뜻이 서로 반대인 반의어 관계이다. ⑤ elderly(나이가 든)와 old(늙은)는 뜻이 비슷한 유의어 관계이므로 관계가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0966ae40b1",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"① tax - 세금",
+"② goods - 상품, 물건",
+"③ tag - 가격표",
+"④ greet - 인사하다",
+"⑤ range - 다르다"
+],
+"answer": "⑤",
+"solution": "range는 '(범위가) ~에서 …에 이르다'라는 뜻으로, 본문에서는 range from A to B 형태로 쓰였다. '다르다'라는 뜻의 단어는 differ이다. 나머지 단어는 뜻이 바르게 짝지어져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1601bfa3a9",
+"typeId": "eng-m3-b03-u1m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (1)~(5)에 알맞은 말을 <보기>에서 골라 쓰시오.\n\n<조건>\n· 각 단어는 한 번씩만 쓸 것.\n· 필요하면 단어의 형태를 바꿀 것. 접두사·접미사를 붙여 다른 품사나 반대말로 바꿔도 된다.\n· <보기>의 단어 중 하나는 쓰이지 않는다.\n\n<보기> differ   range   regard   greet   comfort   tax\n\nHere in America, people pay a sales tax when they buy goods. Sales tax rates (1)________ by state. They (2)________ from less than one percent to more than ten percent.\nIn America, people often (3)________ each other by waving. Waving to an older person is not (4)________ as rude. When you come to America, you may feel (5)________ about it at first, but why don't you try it?",
+"selfGrade": true,
+"answer": "(1) differ (2) range (3) greet (4) regarded (5) uncomfortable",
+"solution": "(1) 주어가 복수인 Sales tax rates이고 현재시제이므로 differ를 그대로 쓴다. (2) range from A to B는 'A에서 B에 이르다'라는 뜻이다. (3) '손을 흔들며 서로 인사한다'는 흐름이므로 greet를 쓴다. (4) be regarded as는 '~로 여겨지다'라는 뜻의 수동태이므로 regard를 과거분사 regarded로 바꾼다. (5) 처음에는 어색하게 느낄 수 있다는 흐름이므로 comfort를 형용사의 반대말 uncomfortable로 바꾸고, tax는 쓰이지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c798f3c471",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAndy Warhol is called the King of Pop Art. He found his subjects in magazines and stores. One of his famous works is made up of pictures of Marilyn Monroe, the American actor. Another work shows cans of soup. He made many copies of these works.",
+"choices": [
+"Andy Warhol은 '팝 아트의 왕'이라고 불린다.",
+"Andy Warhol은 소재를 오직 거리에서만 찾았다.",
+"Andy Warhol의 유명한 작품 중 하나는 자동차 사진들로 이루어져 있다.",
+"Andy Warhol은 자신의 작품을 단 하나만 만들었다.",
+"Marilyn Monroe는 영국의 가수이다."
+],
+"answer": "①",
+"solution": "본문 첫 문장에서 Andy Warhol이 '팝 아트의 왕'이라 불린다고 했으므로 ①이 일치한다. 소재는 잡지와 가게에서 찾았고(②), 유명 작품은 Marilyn Monroe 사진들로 이루어졌으며(③), 작품의 복사본을 많이 만들었다(④). Marilyn Monroe는 미국의 배우(American actor)이므로 ⑤도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-16b9383997",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글의 내용과 일치하지 않는 것은?\n\nClaes Oldenburg is a pop artist who made art fun. He made sculptures of everyday items, such as a hamburger, cookies, and a brush. In the beginning, he created soft sculptures. He used cloth to make toilets. He ran a store inside his studio to sell his works.",
+"choices": [
+"Claes Oldenburg는 예술을 재미있게 만든 팝 아티스트이다.",
+"그는 햄버거, 쿠키, 붓과 같은 일상 용품의 조각품을 만들었다.",
+"처음에 그는 단단한 금속으로 조각품을 만들었다.",
+"그는 변기를 만들기 위해 천을 사용했다.",
+"그는 작품을 팔기 위해 작업실 안에서 상점을 운영했다."
+],
+"answer": "③",
+"solution": "본문에 처음에는 '부드러운 조각품(soft sculptures)'을 만들었다고 나오므로, 단단한 금속으로 만들었다는 ③이 일치하지 않는다. 나머지 ①②④⑤는 모두 본문에 그대로 제시된 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1fc42106e4",
+"typeId": "eng-m3-b03-u7m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글의 내용과 일치하지 않는 것은?\n\nPop is short for popular. So pop art means popular art, or art for people. It began in the 1950s in America. Pop artists used images from TV, comic books, magazines, and advertising.",
+"choices": [
+"pop은 popular의 줄임말이다.",
+"pop art는 대중을 위한 예술을 의미한다.",
+"pop art는 1950년대 미국에서 시작되었다.",
+"pop artist들은 TV, 만화책, 잡지, 광고의 이미지를 사용했다.",
+"pop art는 1950년대 프랑스에서 시작되었다."
+],
+"answer": "⑤",
+"solution": "본문에서 pop art는 1950년대 '미국(America)'에서 시작되었다고 했으므로, 프랑스에서 시작되었다는 ⑤가 일치하지 않는다. ①②③④는 모두 본문에 나온 사실이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m4s0t0",
+"custom": true
 }
 ]

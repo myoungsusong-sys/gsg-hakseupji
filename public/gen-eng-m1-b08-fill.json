@@ -4232,5 +4232,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b08-u6m7s0t0",
 "custom": true
+},
+{
+"id": "fill-63a3ce8a44",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 표현의 우리말 뜻으로 알맞은 것은?\n\nThe firefighters tried to put out the fire quickly.",
+"choices": [
+"~을 생각해내다",
+"(불을) 끄다",
+"~에 관심이 있다",
+"~을 상징하다",
+"~을 버리다"
+],
+"answer": "②",
+"solution": "put out은 '(불을) 끄다'라는 뜻의 표현이다. 소방관들이 불을 '끄려고' 했다는 문맥과도 자연스럽게 연결된다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-aba36936a3",
+"typeId": "eng-m1-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The fifty stars ________ ________ the fifty states.\n• What do these letters ________ ________?",
+"choices": [
+"care about",
+"throw away",
+"put out",
+"stand for",
+"come up"
+],
+"answer": "④",
+"solution": "stand for는 '~을 상징하다, 나타내다'라는 뜻이다. 별이 주(state)를 '나타내고', 글자가 무엇을 '의미하는지' 묻는 두 문장에 모두 자연스럽게 들어간다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u5m7s0t0",
+"custom": true
 }
 ]

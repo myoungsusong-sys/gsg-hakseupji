@@ -6700,5 +6700,247 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u7m6s0t0",
 "custom": true
+},
+{
+"id": "fill-e0168255b1",
+"typeId": "eng-m3-b04-u2m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 주어진 우리말을 알맞게 영작한 것은?\n\n내가 공원에서 잃어버린 것은 바로 내 가방이었다.",
+"choices": [
+"It was my bag that I lost in the park.",
+"It was the park that I lost my bag.",
+"It is my bag that I lost in the park.",
+"It was my bag what I lost in the park.",
+"It was I that lost my bag in the park."
+],
+"answer": "①",
+"solution": "'바로 ~이었다'는 'It was + 강조할 말 + that ~' 강조 구문으로 나타낸다. 강조할 말은 '내 가방(my bag)'이고 일이 과거에 있었으므로 It was를 쓴다. ②는 장소를 강조하려면 in the park 전체가 들어가야 하므로 틀렸고, ③은 시제가 맞지 않으며, ④는 that 대신 what을 써서 틀렸다. ⑤는 문법상 맞지만 '가방을 잃어버린 사람은 바로 나였다'라는 뜻이어서 주어진 우리말과 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-0dfbdb2a2b",
+"typeId": "eng-m3-b04-u2m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 주어진 우리말을 알맞게 영작한 것은?\n\n네가 더 많이 연습할수록, 너는 더 잘하게 된다.",
+"choices": [
+"The much you practice, the good you become.",
+"More you practice, better you become.",
+"The more you practice, the more good you become.",
+"The more you practice, the better you become.",
+"The more practice you, the better become you."
+],
+"answer": "④",
+"solution": "'~할수록 더 …하다'는 'The + 비교급 + 주어 + 동사, the + 비교급 + 주어 + 동사' 형태로 쓴다. much의 비교급은 more, good의 비교급은 better이다. ①은 원급을 썼고, ②는 the가 빠졌으며, ③의 more good은 잘못된 비교급이다. ⑤는 주어와 동사의 순서가 바뀌었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-6092a04d4d",
+"typeId": "eng-m3-b04-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nSujin이 도서관에서 만난 사람은 바로 Tom이었다.\n\n(Tom / was / it / that / met / Sujin) in the library.",
+"selfGrade": true,
+"answer": "It was Tom that Sujin met in the library.",
+"solution": "'바로 ~이었다'는 'It was + 강조할 말 + that + 나머지 문장'으로 나타낸다. 강조할 말은 Sujin이 만난 사람인 Tom이므로 It was Tom 뒤에 that을 쓰고, 그 뒤에 Sujin met in the library를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-abebda0c30",
+"typeId": "eng-m3-b04-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nan unexpected and usually dangerous situation that calls for immediate action",
+"choices": [
+"pressure",
+"emergency",
+"design",
+"product",
+"steam"
+],
+"answer": "②",
+"solution": "'예상치 못한, 보통 위험하며 즉각적인 행동이 필요한 상황'은 emergency(비상사태)의 뜻이다. pressure는 압력, design은 설계, product는 제품, steam은 증기이므로 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-571f46a80f",
+"typeId": "eng-m3-b04-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 <보기>의 두 단어의 관계와 같은 것은?\n\n<보기> safe : safety",
+"choices": [
+"big : bigger",
+"happy : happiness",
+"swallow : swallowed",
+"run : running",
+"good : bad"
+],
+"answer": "②",
+"solution": "<보기>의 safe(형용사) : safety(명사)는 '형용사 → 명사'의 관계이다. happy(형용사) : happiness(명사)가 같은 관계이다. 나머지는 비교급, 과거형, 현재분사, 반의어 관계이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b35023cc44",
+"typeId": "eng-m3-b04-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe hole was so small and well hidden that I didn't ______ it at first.",
+"choices": [
+"notice",
+"swallow",
+"boil",
+"balance",
+"prevent"
+],
+"answer": "①",
+"solution": "구멍이 아주 작고 잘 숨겨져 있어서 처음에 '알아차리지' 못했다는 뜻이므로 notice(알아차리다)가 알맞다. swallow는 삼키다, boil은 끓다, balance는 균형을 맞추다, prevent는 막다로 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-45b09b53f5",
+"typeId": "eng-m3-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하시오.\n\n펜 뚜껑의 구멍은 공기가 통과하게 해 준다.\n→ The hole in the cap ______________________________.\n(pass, lets, air, through)",
+"selfGrade": true,
+"answer": "lets air pass through",
+"solution": "'~가 …하게 해 주다'는 사역동사 let을 써서 「let + 목적어 + 동사원형」으로 나타냅니다. 주어 The hole이 3인칭 단수이므로 lets로 쓰고, 목적어 air 뒤에 동사원형 pass와 부사 through를 차례로 씁니다. 따라서 lets air pass through가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e2d88af0f5",
+"typeId": "eng-m3-b04-u6m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그 구멍들은 크래커를 바삭하게 만든다.",
+"choices": [
+"The holes make crispy the crackers.",
+"The holes make the crackers crispy.",
+"The holes make the crackers crispily.",
+"The holes make to the crackers crispy.",
+"The holes making the crackers crispy."
+],
+"answer": "②",
+"solution": "'~을 …하게 만들다'는 「make + 목적어 + 목적격보어(형용사)」로 씁니다. 목적격보어 자리에는 부사 crispily가 아닌 형용사 crispy가 와야 하고, 목적어 the crackers가 목적격보어보다 앞에 와야 합니다. ④는 make 뒤에 불필요한 to가 있고, ⑤는 문장에 동사가 없으므로 틀린 문장입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b36f69799b",
+"typeId": "eng-m3-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오. (2단어)\n\n그 구멍은 또한 여러분이 그 멋진 경치를 즐길 수 있도록 창문에 김이 서리는 것을 막아 준다.\n→ The hole also prevents the window from fogging up ______ ______ you can enjoy that fantastic view.",
+"selfGrade": true,
+"answer": "so that",
+"solution": "'~가 …할 수 있도록'이라는 목적의 의미는 「so that + 주어 + can + 동사원형」으로 나타냅니다. 빈칸 뒤에 주어 you와 can enjoy가 이어지므로 빈칸에는 so that이 들어갑니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f9967590f4",
+"typeId": "eng-m3-b04-u6m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 두 가지 방법으로 영작하시오.\n\n펜 뚜껑에 구멍이 없다면, 공기가 통과할 수 없을 것이다.\n\n<조건>\n• 현재 사실과 반대되는 일을 가정하는 가정법을 쓸 것\n• (1)은 If와 there를 사용하여 14단어로 쓸 것\n• (2)는 Without을 사용하여 12단어로 쓸 것\n• 두 문장 모두 pen cap, could, pass through를 포함할 것\n• 축약형은 쓰지 말 것\n\n(1) _____________________________________________\n(2) _____________________________________________",
+"selfGrade": true,
+"answer": "(1) If there were no hole in the pen cap, air could not pass through. (2) Without a hole in the pen cap, air could not pass through.",
+"solution": "현재 사실과 반대되는 일은 가정법 과거 「If + 주어 + 동사의 과거형, 주어 + 조동사 과거형 + 동사원형」으로 씁니다. (1)에서 there 구문을 쓸 때는 be동사 과거형 were를 써서 If there were no hole in the pen cap으로 시작하며, 주절은 air could not pass through입니다(14단어). (2)는 If절 대신 'Without + 명사(구)'를 써서 Without a hole in the pen cap으로 시작하고, 주절은 (1)과 같습니다(12단어). 축약형 couldn't를 쓰면 단어 수가 달라지므로 could not으로 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8c95208fbf",
+"typeId": "eng-m3-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThey are well hidden, but many of these small holes are very important and make your life ______.",
+"choices": [
+"safe",
+"safely",
+"safety",
+"more safely",
+"to safely"
+],
+"answer": "①",
+"solution": "「make+목적어+목적격보어」 구문에서 목적어(your life)의 상태를 설명하는 보어 자리에는 형용사가 와야 한다. 따라서 부사 safely가 아니라 형용사 safe가 알맞다. safety(명사)도 보어로 쓸 수 없다. 정답은 safe.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ba11731dd3",
+"typeId": "eng-m3-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nSome holes are so small that you may not even notice ______.",
+"choices": [
+"them",
+"it",
+"its",
+"they",
+"theirs"
+],
+"answer": "①",
+"solution": "빈칸은 동사 notice의 목적어 자리이고, 가리키는 대상은 앞의 복수명사 holes이다. 따라서 복수 목적격 대명사 them이 알맞다. 단수 it은 수가 맞지 않고, they는 주격이라 목적어로 쓸 수 없다. 정답은 them.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-50396a152d",
+"typeId": "eng-m3-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWhen you see a small hole in a pen cap, do you know why ______ there?",
+"choices": [
+"the hole is",
+"is the hole",
+"does the hole",
+"the hole does",
+"the hole being"
+],
+"answer": "①",
+"solution": "의문사 why가 이끄는 절이 know의 목적어로 쓰인 간접의문문이다. 간접의문문의 어순은 「의문사+주어+동사」이므로 why the hole is there가 되어야 한다. 의문문 어순인 is the hole는 틀리다. 정답은 the hole is.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a330dc55bc",
+"typeId": "eng-m3-b04-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThere are many products that (A)[have / has] small hidden holes. For example, the hole in a pen cap can help (B)[save / saving] lives. When you see a little hole in something, ask (C)[you / yourself] why it is there.",
+"choices": [
+"have - save - yourself",
+"has - save - you",
+"have - saving - yourself",
+"has - saving - you",
+"have - save - you"
+],
+"answer": "①",
+"solution": "(A) 관계대명사 that의 선행사가 복수명사 products이므로 동사는 have가 맞다. (B) 동사 help 뒤에는 원형부정사(또는 to부정사)가 오므로 save가 알맞고 saving은 틀리다. (C) ask의 주어(생략된 you)와 목적어가 같은 대상이므로 재귀대명사 yourself를 써야 한다. 따라서 정답은 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m1s0t0",
+"custom": true
 }
 ]

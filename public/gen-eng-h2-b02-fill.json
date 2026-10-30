@@ -3730,5 +3730,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b02-u4m7s0t0",
 "custom": true
+},
+{
+"id": "fill-e1d680fcec",
+"typeId": "eng-h2-b02-u4m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThe International Space Station, or ISS, is the ninth space station to be inhabited by humans. Since 2000, it has been continuously occupied by astronauts. It serves as a research laboratory for many fields, including astronomy, physics, and medicine. As big as a football field, it is composed of many different sections, such as experiment modules, habitation modules, solar battery panels, and robotic arms.",
+"choices": [
+"The ISS is the ninth space station ever inhabited by humans.",
+"The ISS has been empty since the year 2000.",
+"The ISS is used only for studying astronomy.",
+"The ISS is much smaller than a football field.",
+"The ISS has no robotic arms."
+],
+"answer": "①",
+"solution": "첫 문장에서 ISS는 인간이 거주한 아홉 번째 우주 정거장이라고 했으므로 ①이 일치한다. 2000년 이후 계속 사람이 거주했으므로 ②는 틀리고, 천문학·물리학·의학 등 여러 분야 연구실이므로 ③도 틀리다. 축구장만큼 크고 로봇 팔도 포함하므로 ④, ⑤도 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4ed9d6d0a5",
+"typeId": "eng-h2-b02-u4m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nM: Welcome to our live show of the Nuri rocket launch. I'm at the Naro Space Center with Dr. Kim, the chief project manager.\nW: Yes, the Nuri rocket is a locally developed rocket. We're using our own space vehicles for the first time.\nM: Just now, an official announcement was made that the launch was successful.\nW: It'll place eight satellites into Earth's orbit. It'll also carry out missions, such as ground observation and space weather observation.",
+"choices": [
+"The show is being broadcast live from the Naro Space Center.",
+"The Nuri rocket was developed locally.",
+"The launch of the Nuri rocket was announced as successful.",
+"The Nuri rocket will place eight satellites into orbit.",
+"Dr. Kim is a news reporter visiting the center."
+],
+"answer": "⑤",
+"solution": "Dr. Kim은 chief project manager(수석 프로젝트 책임자)라고 소개되었으므로 뉴스 기자라는 ⑤는 일치하지 않는다. 생방송·국내 개발·발사 성공 발표·위성 8기 배치는 모두 대화에 언급되어 ①~④는 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0e9c1815f8",
+"typeId": "eng-h2-b02-u4m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nDay 1 Back to Space!\nAfter blasting off from Earth, we took about 27 hours to reach the International Space Station, where we docked successfully. This is my third journey into space. After ten years, I'm back on this station, the largest artificial space habitat in orbit 400 kilometers away from Earth!",
+"choices": [
+"The writer took about 27 hours to reach the station.",
+"The spacecraft docked with the station successfully.",
+"This is the writer's third journey into space.",
+"The writer returns to the station after ten years.",
+"The station is located 4 kilometers away from Earth."
+],
+"answer": "⑤",
+"solution": "글에서 우주 정거장은 지구에서 400킬로미터 떨어진 궤도에 있다고 했으므로 4킬로미터라는 ⑤는 일치하지 않는다. 약 27시간 소요, 성공적 도킹, 세 번째 여행, 10년 만의 복귀는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a3c773b27e",
+"typeId": "eng-h2-b02-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어와 표현을 바르게 배열하여 문장을 완성하시오.\n\n우리말: 코치들과 팀들은 더 나은 결정을 내리기 위해 데이터를 분석한다.\n\n<보기> analyze / to make / data / better decisions / coaches and teams",
+"selfGrade": true,
+"answer": "Coaches and teams analyze data to make better decisions.",
+"solution": "‹목적›을 나타내는 to부정사(to make better decisions)가 문장 끝에 오도록 배열한다. 주어 Coaches and teams, 동사 analyze, 목적어 data 순으로 쓰고, 그 뒤에 '더 나은 결정을 내리기 위해'에 해당하는 to make better decisions를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4f5d7789cd",
+"typeId": "eng-h2-b02-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어와 표현을 바르게 배열하여 문장을 완성하시오.\n\n우리말: 팀들은 스톤의 경로와 속도를 추적하기 위해 데이터를 사용한다.\n\n<보기> data / to track / use / the path and speed / teams / of the stone",
+"selfGrade": true,
+"answer": "Teams use data to track the path and speed of the stone.",
+"solution": "주어 Teams, 동사 use, 목적어 data를 먼저 쓴다. '추적하기 위해'는 부사적 용법의 to부정사 to track으로 나타내고, 그 목적어로 the path and speed of the stone을 이어 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-52f3b79cda",
+"typeId": "eng-h2-b02-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 문장을 완성하시오.\n\n우리말: 솔기는 투수들이 공을 더 잘 잡도록 도와준다.\n\n<보기> grip / help / the seams / pitchers / the ball / better",
+"selfGrade": true,
+"answer": "The seams help pitchers grip the ball better.",
+"solution": "‹help+목적어+동사원형› 구문을 이용한다. 주어 The seams 뒤에 동사 help, 목적어 pitchers, 그리고 동사원형 grip the ball을 쓴다. 마지막에 '더 잘'을 뜻하는 부사 better를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-80ee9bd8b4",
+"typeId": "eng-h2-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMany left-handed people face difficulties in daily life. Most products (A)[is / are] designed for right-handed users. For example, scissors are hard for them (B)[to use / using]. For this reason, they need tools (C)[which / what] are made especially for them.",
+"choices": [
+"① is - to use - which",
+"② are - to use - which",
+"③ are - using - what",
+"④ is - using - what",
+"⑤ are - to use - what"
+],
+"answer": "②",
+"solution": "(A)의 주어 Most products는 복수이므로 are가 맞습니다. (B) 'hard for 목적어 + to부정사' 구조이므로 to use가 옳습니다. (C) 앞에 선행사 tools가 있고 뒤에 주어가 빠진 불완전한 절이 오므로 관계대명사 which가 맞습니다. what은 선행사를 포함하므로 쓸 수 없습니다. 따라서 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-57d33107b9",
+"typeId": "eng-h2-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nRonald Mace was an architect (A)[who / which] created the term universal design. Universal design (B)[calls / is called] design for all. He dreamed of a world (C)[where / which] everyone could use products without difficulty.",
+"choices": [
+"① who - calls - where",
+"② who - is called - where",
+"③ who - is called - which",
+"④ which - is called - where",
+"⑤ which - calls - which"
+],
+"answer": "②",
+"solution": "(A) 선행사가 사람(an architect)이므로 관계대명사 who가 맞습니다. (B) universal design이 '~라고 불리는' 대상이므로 수동태 is called가 옳습니다. (C) 선행사 a world 뒤에 주어·목적어가 모두 갖춰진 완전한 절이 오므로 관계부사 where가 맞습니다. 따라서 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e98be6d194",
+"typeId": "eng-h2-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOne out of every ten people in the world (A)[is / are] left-handed. It is not easy for them (B)[finding / to find] suitable products. They often have to use objects (C)[that / what] are made for right-handed people.",
+"choices": [
+"① is - to find - that",
+"② are - to find - that",
+"③ is - finding - what",
+"④ is - to find - what",
+"⑤ are - finding - that"
+],
+"answer": "①",
+"solution": "(A) 'One out of ~'이 주어이므로 단수 동사 is가 맞습니다. (B) 'It is + 형용사 + for + 목적어 + to부정사' 구문이므로 to find가 옳습니다. (C) 앞에 선행사 objects가 있고 뒤에 주어가 빠진 불완전한 절이 오므로 관계대명사 that이 맞습니다. 따라서 정답은 ①입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b02-u0m1s0t0",
+"custom": true
 }
 ]

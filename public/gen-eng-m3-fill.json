@@ -1564,5 +1564,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m1s3t0",
 "custom": true
+},
+{
+"id": "fill-1d6daa34a5",
+"typeId": "eng-m3-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nHoli is a festival in India. On that day, people throw colored powder and water at each other. They dance together on the street and eat traditional Holi dishes. Everyone laughs and has a great time.",
+"choices": [
+"① sad",
+"② scary",
+"③ festive",
+"④ boring",
+"⑤ lonely"
+],
+"answer": "③",
+"solution": "인도의 홀리 축제에서 사람들이 색 가루와 물을 서로 뿌리고, 거리에서 춤추고, 전통 음식을 먹으며 웃고 즐긴다는 내용이다. throw colored powder, dance, laughs, has a great time 같은 표현에서 들뜨고 즐거운 분위기가 드러난다. 따라서 글의 분위기는 '축제 분위기의(festive)'가 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-e486c6d350",
+"typeId": "eng-m3-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nSuddenly, the building began to shake. Books fell to the floor, and the glass of our family picture broke. My mom, my brother, and I crawled under the kitchen table. I was afraid that the building would collapse.",
+"choices": [
+"① calm",
+"② joyful",
+"③ boring",
+"④ frightening",
+"⑤ romantic"
+],
+"answer": "④",
+"solution": "갑자기 건물이 흔들리고 책이 떨어지고 유리가 깨져서 가족이 식탁 밑으로 기어 들어간 지진 상황이다. 'I was afraid that the building would collapse.'에서 두려움이 직접 드러난다. 따라서 글의 분위기는 '무서운(frightening)'이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-312fda3ae1",
+"typeId": "eng-m3-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 분위기로 가장 알맞은 것은?\n\nDong-ju and his cousin studied in Japan. They were arrested by the Japanese police for taking part in an independence movement. In 1945, they died in prison. It was just a few months later that Korea achieved independence from Japan.",
+"choices": [
+"① sad",
+"② exciting",
+"③ humorous",
+"④ festive",
+"⑤ peaceful"
+],
+"answer": "①",
+"solution": "동주와 그의 사촌이 독립운동에 참여했다는 이유로 일본 경찰에 체포되어 1945년 감옥에서 죽었다는 내용이다. 한국이 독립하기 불과 몇 달 전에 세상을 떠났다는 점에서 안타깝고 슬픈 분위기가 느껴진다. 따라서 글의 분위기는 '슬픈(sad)'이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s5t1",
+"custom": true
 }
 ]

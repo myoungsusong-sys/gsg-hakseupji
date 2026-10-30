@@ -1939,5 +1939,94 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-09-u0m0s2t1",
 "custom": true
+},
+{
+"id": "fill-1bac42d288",
+"typeId": "set2-cm2-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 모든 실수 $a$에 대하여 항상 성립하는 부등식은?",
+"choices": [
+"$a^2>0$",
+"$a^2+1>0$",
+"$a>0$",
+"$2a\\ge a$",
+"$a^2\\ge 2a$"
+],
+"answer": "②",
+"solution": "① $a=0$이면 $0>0$이 되어 거짓이다. ③ $a=-1$이면 거짓, ④ $2a\\ge a$는 $a\\ge0$일 때만 성립하므로 음수에서 거짓, ⑤ $a=1$이면 $1\\ge2$로 거짓이다. 그러나 ②는 모든 실수 $a$에 대하여 $a^2\\ge0$이므로 $a^2+1\\ge1>0$이 항상 성립한다. 따라서 절대부등식은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-4a027184dc",
+"typeId": "set2-cm2-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 모든 실수 $a$, $b$에 대하여 항상 성립하는 부등식은?",
+"choices": [
+"$|a+b|\\ge |a|+|b|$",
+"$|a|+|b|\\ge |a+b|$",
+"$|a-b|\\ge |a|+|b|$",
+"$|a|+|b|=|a+b|$",
+"$|a|+|b|\\ge 2|ab|$"
+],
+"answer": "②",
+"solution": "삼각부등식에 의하여 모든 실수 $a$, $b$에 대하여 $|a|+|b|\\ge|a+b|$가 항상 성립하므로 ②가 절대부등식이다. ① $a=1$, $b=-1$이면 $0\\ge2$로 거짓, ③ $a=b=1$이면 $0\\ge2$로 거짓, ④ $a=1$, $b=1$이면 $2\\ne2$가 아니라 성립하지만 $a=1$, $b=-1$이면 $2\\ne0$이므로 항상 성립하지는 않는다. ⑤ $a=b=2$이면 $4\\ge8$로 거짓이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-f0e7ab692e",
+"typeId": "set2-cm2-09-u0m0s2t2",
+"kind": "객관식",
+"diff": 1,
+"body": "두 실수 $x$, $y$가 $x^2+y^2=4$를 만족할 때, $x+y$의 최댓값은?",
+"choices": [
+"$2$",
+"$2\\sqrt{2}$",
+"$4$",
+"$4\\sqrt{2}$",
+"$8$"
+],
+"answer": "②",
+"solution": "코시-슈바르츠 부등식에 의해 $(1^2+1^2)(x^2+y^2)\\ge(x+y)^2$이다. 좌변은 $2\\times4=8$이므로 $(x+y)^2\\le8$, 즉 $-2\\sqrt{2}\\le x+y\\le2\\sqrt{2}$이다. 따라서 $x+y$의 최댓값은 $2\\sqrt{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-7063289164",
+"typeId": "set2-cm2-09-u0m0s2t2",
+"kind": "객관식",
+"diff": 1,
+"body": "두 실수 $x$, $y$가 $x^2+y^2=5$를 만족할 때, $2x+y$의 최댓값은?",
+"choices": [
+"$5$",
+"$\\sqrt{5}$",
+"$2\\sqrt{5}$",
+"$10$",
+"$25$"
+],
+"answer": "①",
+"solution": "코시-슈바르츠 부등식에 의해 $(2^2+1^2)(x^2+y^2)\\ge(2x+y)^2$이다. 좌변은 $5\\times5=25$이므로 $(2x+y)^2\\le25$, 즉 $-5\\le2x+y\\le5$이다. 따라서 $2x+y$의 최댓값은 $5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-00f8390c96",
+"typeId": "set2-cm2-09-u0m0s2t2",
+"kind": "주관식",
+"diff": 1,
+"body": "두 실수 $x$, $y$가 $x^2+y^2=9$를 만족할 때, $x+y$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$-3\\sqrt{2}$",
+"solution": "코시-슈바르츠 부등식에 의해 $(1^2+1^2)(x^2+y^2)\\ge(x+y)^2$이다. 좌변은 $2\\times9=18$이므로 $(x+y)^2\\le18$, 즉 $-3\\sqrt{2}\\le x+y\\le3\\sqrt{2}$이다. 따라서 $x+y$의 최솟값은 $-3\\sqrt{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t2",
+"custom": true
 }
 ]

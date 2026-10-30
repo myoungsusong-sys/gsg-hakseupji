@@ -5811,5 +5811,50 @@
 "source": "유사 문항",
 "twinGroup": "tw-15206",
 "custom": true
+},
+{
+"id": "fill-ef98c6e83a",
+"typeId": "9600",
+"kind": "주관식",
+"diff": 1,
+"body": "수가 일정한 규칙에 따라 줄어듭니다. 빈칸에 알맞은 수를 쓰세요.\n\n$28,\\ 26,\\ 24,\\ \\square$",
+"selfGrade": true,
+"answer": "22",
+"solution": "앞의 수에서 $2$씩 빼는 규칙입니다. 따라서 빈칸에 알맞은 수는 $24-2=22$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-9600",
+"custom": true
+},
+{
+"id": "fill-83001d8e91",
+"typeId": "9600",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 수의 규칙을 보고 빈칸에 들어갈 수를 고르세요.\n\n$65,\\ 60,\\ 55,\\ \\square$",
+"choices": [
+"$45$",
+"$48$",
+"$50$",
+"$54$",
+"$60$"
+],
+"answer": "③",
+"solution": "앞의 수에서 $5$씩 빼는 규칙입니다. $55-5=50$이므로 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-9600",
+"custom": true
+},
+{
+"id": "fill-acc8aebaa8",
+"typeId": "9600",
+"kind": "주관식",
+"diff": 1,
+"body": "같은 수만큼씩 작아지도록 수를 늘어놓았습니다. 빈칸에 알맞은 수를 쓰세요.\n\n$90,\\ 80,\\ \\square,\\ 60$",
+"selfGrade": true,
+"answer": "70",
+"solution": "앞의 수에서 $10$씩 빼는 규칙입니다. $80-10=70$이고 $70-10=60$이므로 빈칸에 알맞은 수는 $70$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-9600",
+"custom": true
 }
 ]

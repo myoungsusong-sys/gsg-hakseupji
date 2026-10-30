@@ -4890,5 +4890,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-033238a681",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n\nA powerful first line of a book can ①catch readers' attention and ②make them ③to want to ④read ⑤on.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "사역동사 make는 목적격보어로 to부정사가 아니라 원형부정사를 취한다. 따라서 'make them to want'의 ③ to want는 원형인 want로 고쳐야 한다. 나머지 catch, read, on은 모두 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9e5a000147",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nPeter Pan is a boy who ______ to grow older. He wants to have fun and stay a child forever.",
+"choices": [
+"refuse",
+"refuses",
+"refusing",
+"to refuse",
+"be refused"
+],
+"answer": "②",
+"solution": "주격 관계대명사 who가 이끄는 절에는 동사가 필요하고, 선행사 a boy(3인칭 단수)와 수를 일치시켜야 한다. 뒤 문장이 현재시제(wants)이므로 현재형 단수 동사 refuses가 알맞다. refusing, to refuse는 동사 역할을 할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f1af4e9f61",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nBut the first line of Holes paints a different picture. It states ______ there is no lake there despite its name.",
+"choices": [
+"what",
+"that",
+"which",
+"it",
+"where"
+],
+"answer": "②",
+"solution": "동사 states의 목적어 자리에 들어갈 명사절을 이끄는 접속사가 필요하다. 뒤에 'there is no lake there'라는 완전한 절이 오므로 불완전한 절을 이끄는 what, which는 쓸 수 없고, 접속사 that이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b660b621a1",
+"typeId": "eng-h1-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 짝지어진 것은?\n\nIt is very important (A)[making / to make] a good impression on others when we meet them for the first time. But people aren't the only ones who make first impressions — books (B)[do / are] as well. A powerful first line of a book can catch readers' attention and make them (C)[want / to want] to read on.",
+"choices": [
+"making - do - want",
+"to make - do - want",
+"to make - are - to want",
+"making - are - want",
+"to make - do - to want"
+],
+"answer": "②",
+"solution": "(A) It is very important ~ 구문에서 It은 가주어, 진주어 자리에는 to부정사 to make가 와야 한다. (B) 앞의 일반동사구 make first impressions를 대신하는 대동사이므로 do가 알맞다. (C) 사역동사 make의 목적격보어는 원형부정사이므로 want가 맞다. 따라서 to make - do - want이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m1s0t0",
+"custom": true
 }
 ]

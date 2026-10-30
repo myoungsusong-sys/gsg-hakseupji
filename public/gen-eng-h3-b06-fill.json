@@ -633,5 +633,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b06-u1m0s0t0",
 "custom": true
+},
+{
+"id": "fill-baf958b34e",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nDr. Perry: Lab-grown meat has gotten much cheaper than it ①used to be, but it is still more expensive than conventional meat. This high price is an issue that needs ②to be resolved for the popularization of cultured meat. Several food companies ③have been working on ④finding less expensive production methods, so it won't be long before you ⑤can buys it in grocery stores.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "조동사 can 뒤에는 동사원형이 와야 하므로 ⑤ can buys는 can buy로 고쳐야 한다. ①은 '예전에 ~였다'라는 뜻의 used to be로 맞게 쓰였다. ②는 문제가 '해결되는' 것이므로 수동형 to be resolved가 맞다. ③은 현재완료진행형, ④는 전치사 on 뒤에 온 동명사이므로 모두 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5a1b80f78b",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHost: Does lab-grown meat taste like real meat?\nDr. Perry: Yes, indeed. Most of the original taste tests have yielded positive reviews. Many taste testers were unable (A)[to taste / tasting] a difference between lab-grown and regular meat. Some of them even guessed incorrectly which sample (B)[was / were] lab-grown.\n(…)\nDr. Perry: Lab-grown chicken was first (C)[approved / approving] in Singapore in 2020.\n\n(A) - (B) - (C)",
+"choices": [
+"to taste - was - approved",
+"to taste - were - approving",
+"tasting - was - approved",
+"tasting - were - approved",
+"to taste - was - approving"
+],
+"answer": "①",
+"solution": "(A) be unable 뒤에는 to부정사가 오므로 to taste가 맞다. (B) 의문사절의 주어가 단수명사 sample이므로 단수동사 was가 맞다. (C) 닭고기가 '승인된' 것이므로 be동사 뒤에 과거분사를 써서 수동태 was approved로 해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5d851f13b1",
+"typeId": "eng-h3-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nHost: Welcome to News Tonight. What was once the stuff of science fiction ①is finally arriving on our dinner plates. We're talking about lab-grown meat. You may be reluctant ②to try it. However strange it may seem, many people say it ③taste just like regular meat. (…) It's an honor ④to meet you, Dr. Perry.\nDr. Perry: Thank you for having me, Kelly. I am currently leading a lab-grown meat project research team. Our team is working ⑤to trace the process of cell division and growth in lab-grown meat.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "say 뒤에 오는 명사절의 주어 it은 3인칭 단수이고 일반적인 사실을 말하는 현재 시제이므로 ③ taste는 tastes로 고쳐야 한다. ①은 What절이 주어로 쓰여 단수 취급하므로 is가 맞다. ②는 be reluctant to-v 구문, ④는 가주어 It에 대응하는 진주어 to부정사, ⑤는 목적을 나타내는 to부정사이므로 모두 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m1s0t0",
+"custom": true
 }
 ]

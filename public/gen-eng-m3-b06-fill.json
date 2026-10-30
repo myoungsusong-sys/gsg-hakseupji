@@ -2666,5 +2666,82 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u7m3s0t0",
 "custom": true
+},
+{
+"id": "fill-64ec3a3a23",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 말을 고르시오.\n\nI have a lot of homework ______ tonight.",
+"choices": [
+"do",
+"doing",
+"to do",
+"did",
+"does"
+],
+"answer": "③",
+"solution": "'~할 숙제'처럼 앞의 명사(homework)를 꾸며 주는 to부정사의 형용사적 용법이 필요합니다. 명사 뒤에서 'to+동사원형' 형태로 수식하므로 to do가 알맞습니다. 따라서 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4d5ea164f7",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 단어를 고르시오.\n\nYou need ______ to speak in front of many people. Don't be afraid.",
+"choices": [
+"courage",
+"career",
+"vacation",
+"photo",
+"major"
+],
+"answer": "①",
+"solution": "많은 사람 앞에서 말하려면 '용기'가 필요하고, 뒤 문장에서 '두려워하지 말라'고 했으므로 빈칸에는 courage(용기)가 알맞습니다. career(직업), vacation(방학), photo(사진), major(전공)는 문맥에 맞지 않습니다. 따라서 정답은 ①입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-fe81bed4da",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장을 하나의 문장으로 만들 때, 빈칸에 들어갈 알맞은 말을 쓰시오.\n\n• I'm not sure.\n• Is he a photographer?\n→ I'm not sure _________________________________.",
+"selfGrade": true,
+"answer": "if[whether] he is a photographer",
+"solution": "Yes/No로 답하는 의문문을 다른 문장 안에 넣을 때는 접속사 if 또는 whether를 쓰고, 그 뒤는 '주어+동사'의 평서문 어순으로 바꿉니다. 따라서 Is he ~? 가 if[whether] he is ~ 로 바뀝니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-28dcd46614",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장을 하나의 문장으로 만들 때, 빈칸에 들어갈 알맞은 말을 쓰시오.\n\n• Can you tell me?\n• When does the photo contest start?\n→ Can you tell me _________________________________?",
+"selfGrade": true,
+"answer": "when the photo contest starts",
+"solution": "의문사가 있는 의문문을 다른 문장 안에 넣는 간접의문문은 '의문사+주어+동사' 어순이 됩니다. 이때 does 같은 조동사는 사라지고 본동사에 수 일치를 시켜야 하므로 start가 starts로 바뀝니다. 따라서 when the photo contest starts가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a7b2164831",
+"typeId": "eng-m3-b06-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 사용하여 영작하시오. (필요하면 어형을 바꾸고, to부정사와 if[whether]를 활용할 것)\n\n그는 자신이 성공할 수 있을지 알지 못했지만, 시도하기로 결심했다.\n\n<보기>\nhe / know / succeed / could / decide / try / if / but",
+"selfGrade": true,
+"answer": "He didn't know if[whether] he could succeed, but he decided to try.",
+"solution": "'~인지 알지 못했다'는 간접의문문으로 didn't know if[whether]+주어+동사로 씁니다. '성공할 수 있을지'는 could succeed로, '시도하기로 결심했다'는 decide to+동사원형을 써서 decided to try로 나타냅니다. 과거 상황이므로 know는 didn't know, decide는 decided로 바꿉니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u0m7s0t0",
+"custom": true
 }
 ]

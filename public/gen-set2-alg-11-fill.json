@@ -1280,5 +1280,89 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-11-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-e83458a990",
+"typeId": "set2-alg-11-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "등비수열 $5,\\,15,\\,45,\\,135,\\,\\ldots$의 공비는 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "$3$",
+"solution": "등비수열의 공비는 어떤 항을 바로 앞의 항으로 나눈 값입니다. $\\dfrac{15}{5}=\\dfrac{45}{15}=\\dfrac{135}{45}=3$이므로 공비는 $3$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-d447143cb8",
+"typeId": "set2-alg-11-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "첫째항이 $2$, 공비가 $-3$인 등비수열의 제$4$항은 ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "$-54$",
+"solution": "첫째항이 $a$, 공비가 $r$인 등비수열의 일반항은 $a_n=ar^{n-1}$입니다. 따라서 $a_4=2\\times(-3)^{3}=2\\times(-27)=-54$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-106c2f59e3",
+"typeId": "set2-alg-11-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "$0$이 아닌 세 수 $a,\\,b,\\,c$가 이 순서대로 등비수열을 이룰 때, $b$를 $a$와 $c$의 ( )이라 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "등비중항",
+"solution": "$0$이 아닌 세 수 $a,\\,b,\\,c$가 이 순서대로 등비수열을 이루면 $b$를 $a$와 $c$의 등비중항이라 합니다. 이때 $b^2=ac$가 성립합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-69e16cdf9a",
+"typeId": "set2-alg-11-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "첫째항이 $1$, 공비가 $2$인 등비수열의 첫째항부터 제$5$항까지의 합은 (  )이다.\n\n(  )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "31",
+"solution": "등비수열의 합 공식 $S_n=\\dfrac{a(r^n-1)}{r-1}$에 $a=1$, $r=2$, $n=5$를 대입한다. $S_5=\\dfrac{1\\cdot(2^5-1)}{2-1}=\\dfrac{32-1}{1}=31$이다. 실제로 $1+2+4+8+16=31$로 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-fc75339cd2",
+"typeId": "set2-alg-11-u0m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "첫째항이 $a$, 공비가 $r$ $(r\\neq 1)$인 등비수열의 첫째항부터 제$n$항까지의 합 $S_n$을 바르게 나타낸 것은?",
+"choices": [
+"$S_n=\\dfrac{a(r^n-1)}{r-1}$",
+"$S_n=\\dfrac{a(r-1)}{r^n-1}$",
+"$S_n=\\dfrac{a(1-r^n)}{1+r}$",
+"$S_n=\\dfrac{a(r^n+1)}{r-1}$",
+"$S_n=na$"
+],
+"answer": "①",
+"solution": "공비가 $1$이 아닌 등비수열의 합 공식은 $S_n=\\dfrac{a(r^n-1)}{r-1}=\\dfrac{a(1-r^n)}{1-r}$이다. 따라서 ①이 옳다. ⑤는 공비가 $1$일 때의 합이므로 조건 $r\\neq1$에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-9f1f828663",
+"typeId": "set2-alg-11-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "첫째항이 $1$, 공비가 $3$인 등비수열의 첫째항부터 제$4$항까지의 합은 (  )이다.\n\n(  )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "40",
+"solution": "등비수열의 합 공식 $S_n=\\dfrac{a(r^n-1)}{r-1}$에 $a=1$, $r=3$, $n=4$를 대입한다. $S_4=\\dfrac{1\\cdot(3^4-1)}{3-1}=\\dfrac{81-1}{2}=40$이다. 실제로 $1+3+9+27=40$으로 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s1t1",
+"custom": true
 }
 ]

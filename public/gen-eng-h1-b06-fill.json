@@ -5632,5 +5632,323 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-65483803e5",
+"typeId": "eng-h1-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nIt took Nani Tama almost two years ①to gather most of the whakapapa, but there were still missing names he needed ②to fill in. Now, he wanted me ③drive him to Murupara ④to finish his work. When I arrived at Auntie's place, I was shocked ⑤to see how thin Nani Tama was.",
+"choices": [
+"① to gather",
+"② to fill",
+"③ drive",
+"④ to finish",
+"⑤ to see"
+],
+"answer": "③",
+"solution": "want는 「want + 목적어 + to부정사」 형태로 쓰는 동사이므로 drive를 to drive로 고쳐야 한다. ①은 「It takes + 사람 + 시간 + to부정사」 구문이고, ②는 need의 목적어로 쓰인 to부정사이다. ④는 목적을 나타내는 to부정사, ⑤는 감정의 원인을 나타내는 to부정사이므로 모두 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b49ea80704",
+"typeId": "eng-h1-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nEvery slow, painful step hurt him, but he tried to walk. I could not help but ________ him to the car, and we set off with Auntie.",
+"choices": [
+"carry",
+"carrying",
+"to carry",
+"carried",
+"carries"
+],
+"answer": "①",
+"solution": "「cannot help but + 동사원형」은 '~하지 않을 수 없다'라는 뜻이므로 빈칸에는 동사원형 carry가 들어가야 한다. 같은 뜻을 「cannot help + 동명사(carrying)」로도 나타낼 수 있지만, but 뒤에는 동명사를 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a1d2b1fc6a",
+"typeId": "eng-h1-b06-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nTā moko is the traditional Maori art of ①tattooing, which ②has been a culturally significant practice of the Maori for thousands of years. It is not only decorative but also ③symbolic of an individual's journey from their past to their present. Each curved line and pattern of tā moko ④represents a person's whakapapa(genealogy), social positions, and personal accomplishments. This explains why no two tā moko designs ⑤looks the same.",
+"choices": [
+"① tattooing",
+"② has been",
+"③ symbolic",
+"④ represents",
+"⑤ looks"
+],
+"answer": "⑤",
+"solution": "간접의문문 why절의 주어는 복수 명사 two tā moko designs이므로 동사도 복수형인 look으로 고쳐야 한다. ①은 전치사 of의 목적어로 쓰인 동명사이고, ②는 수천 년 동안 이어져 온 일을 나타내는 현재완료로 선행사 Tā moko에 맞춘 단수 동사이다. ③은 not only A but also B 구문에서 형용사 decorative와 병렬을 이루며, ④는 Each가 이끄는 단수 주어에 맞춘 단수 동사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cae28cca39",
+"typeId": "eng-h1-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 주어진 어구를 바르게 배열하여 문장을 완성하시오.\n\n헤드폰 안에는 마이크와 소음 제거 회로가 있다.\n\n<조건>\n• 장소를 나타내는 부사구로 문장을 시작할 것\n• 주어진 어구를 모두 한 번씩만 사용할 것\n\n( are / the headphones / microphones / inside / and noise-cancelling circuitry )\n\n→ ______________________________________________________.",
+"selfGrade": true,
+"answer": "Inside the headphones are microphones and noise-cancelling circuitry",
+"solution": "장소의 부사구 Inside the headphones가 문장 앞으로 나오면 주어와 동사의 자리가 바뀌어 '부사구 + 동사 + 주어' 순서가 된다. 주어가 microphones and noise-cancelling circuitry로 복수이므로 동사는 are를 쓴다. 따라서 Inside the headphones are microphones and noise-cancelling circuitry.가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4dccc8a916",
+"typeId": "eng-h1-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 <조건>에 맞게 빈칸을 완성하시오.\n\n그녀는 1980년대에 자동 청소 집을 발명한 놀라운 미국 여성이었다.\n\n<조건>\n• 적절한 관계대명사를 사용할 것\n• invent를 이용하되, 필요하면 형태를 바꿀 것\n• 총 2단어로 쓸 것\n\n→ She was an amazing American woman ____________ ____________ a self-cleaning house during the 1980s.",
+"selfGrade": true,
+"answer": "who invented",
+"solution": "선행사 an amazing American woman이 사람이고 뒤에 주어가 빠진 절이 이어지므로 주격 관계대명사 who를 쓴다. 1980년대에 있었던 과거의 일이므로 invent를 과거형 invented로 바꾼다. 따라서 빈칸에는 who invented가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-15466e37a2",
+"typeId": "eng-h1-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 아래 질문에 대한 답을 <조건>에 맞게 쓰시오.\n\nInside the headphones are microphones and noise-cancelling circuitry. The microphones pick up sounds from the outside, and the circuitry analyzes them to produce opposite sound waves.\n\n<조건>\n• It으로 시작하여 완전한 영어 문장으로 쓸 것\n• 나머지 표현은 본문에서 찾아 쓰되, 동사는 주어에 맞게 형태를 바꿀 것\n• 총 5단어로 쓸 것\n\nQ: What does the circuitry produce?\n→ ______________________________________________________.",
+"selfGrade": true,
+"answer": "It produces opposite sound waves",
+"solution": "본문에서 회로(circuitry)는 바깥 소리를 분석해 '반대 음파(opposite sound waves)'를 만든다고 했다. 주어 It이 3인칭 단수이므로 produce를 produces로 바꾼다. 따라서 It produces opposite sound waves.(5단어)가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fb470cd746",
+"typeId": "eng-h1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMaking good presentation slides is not difficult. Keeping each slide simple and (A)[select / selecting] attractive colors can make a big difference. You should also add high-quality images (B)[that / what] complement the text. A clean design like this allows the audience (C)[focus / to focus] more on your message than on the screen.\n\n(A) / (B) / (C)",
+"choices": [
+"select / that / to focus",
+"selecting / that / to focus",
+"selecting / what / to focus",
+"select / that / focus",
+"selecting / that / focus"
+],
+"answer": "②",
+"solution": "(A) 'Keeping ~ and ___'은 and로 연결된 병렬 구조이므로 앞의 동명사 Keeping과 형태를 맞춰 selecting이 옳다. (B) 선행사 images가 있고 뒤 문장에 주어가 빠져 있으므로 관계대명사 that이 와야 한다(what은 선행사를 취하지 못함). (C) 'allow + 목적어 + to부정사' 구조이므로 to focus가 옳다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2afab3fc4b",
+"typeId": "eng-h1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMany people believe (A)[that / which] only the strongest can succeed. However, kindness also matters. By being kind and (B)[work / working] together, we can all benefit. Just as each flower (C)[add / adds] to the beauty of a bouquet, each person can make the world more beautiful.\n\n(A) / (B) / (C)",
+"choices": [
+"that / work / adds",
+"working / add / which",
+"work / adds / which",
+"that / working / adds",
+"working / adds / which"
+],
+"answer": "④",
+"solution": "(A) believe의 목적어가 되는 완전한 절을 이끌어야 하므로 접속사 that이 옳다. (B) 전치사 By 뒤에서 and로 being과 병렬을 이루므로 동명사 working이 옳다. (C) 주어가 단수 each flower이므로 단수동사 adds가 옳다. 따라서 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8087acdf58",
+"typeId": "eng-h1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIt was Homo sapiens (A)[who / which] ultimately survived and thrived. Our ancestors lived in large communities (B)[that / what] promoted cooperation. These social differences gave them a great advantage, (C)[allowed / allowing] them to adapt to a changing environment.\n\n(A) / (B) / (C)",
+"choices": [
+"which / what / allowed",
+"who / what / allowing",
+"who / that / allowing",
+"which / that / allowed",
+"who / that / allowed"
+],
+"answer": "③",
+"solution": "(A) 강조되는 대상이 사람(Homo sapiens)이므로 관계대명사 who가 옳다. (B) 선행사 communities가 사물이고 뒤에 주어가 빠진 절이 오므로 that이 옳다. (C) 앞 문장 전체를 부가적으로 설명하는 분사구문으로, 주어가 능동적으로 '~하게 하다'는 의미이므로 현재분사 allowing이 옳다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3fb2f194b0",
+"typeId": "eng-h1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nA successful presentation ①relies on employing various skills, such as making eye contact and speaking clearly. To ②convey your message effectively, enhance your slides with high-quality images ③that complement the text. The best readability is generally ④achieving with a font size of at least 18 pt, ⑤which helps the audience focus on your message.",
+"choices": [
+"①relies",
+"②convey",
+"③that",
+"④achieving",
+"⑤which"
+],
+"answer": "④",
+"solution": "④ 주어 The best readability가 '얻어지는' 대상이므로 수동태가 되어야 하며, achieving을 과거분사 achieved로 고쳐야 한다. ① 'rely on + 동명사'로 적절하고, ② 목적을 나타내는 to부정사로 옳다. ③ 선행사 images 뒤 주어가 빠진 절을 이끄는 관계대명사 that으로 옳고, ⑤ 앞 절 전체를 받는 계속적 용법의 which로 적절하다. 따라서 어색한 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dc79bfb643",
+"typeId": "eng-h1-b06-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nLewis suffered from physical weaknesses such as distorted shoulders and fingers. This limited her mobility and caused her ________ out of school.",
+"choices": [
+"drop",
+"to drop",
+"dropping",
+"dropped",
+"drops"
+],
+"answer": "②",
+"solution": "cause는 「cause+목적어+to부정사」 구조를 취하는 동사로, '(목적어)가 ~하게 하다'라는 뜻이다. 따라서 목적격보어 자리에는 to drop이 와야 한다. 원형부정사 drop은 사역동사(make, have, let) 뒤에 쓰는 형태이므로 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6bc47239cd",
+"typeId": "eng-h1-b06-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThe first artist we're going to examine ________ Bill Traylor.",
+"choices": [
+"are",
+"is",
+"be",
+"being",
+"to be"
+],
+"answer": "②",
+"solution": "주어는 The first artist이고, we're going to examine은 artist를 꾸미는 관계사절(목적격 관계대명사 생략)이다. 주어의 핵심이 단수 명사 artist이므로 동사는 단수형 is가 되어야 한다. 이 문장에는 정동사가 따로 없으므로 being이나 to be는 들어갈 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-630cbba8b0",
+"typeId": "eng-h1-b06-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nToday, you're going to meet three amazing artists who never gave up on their art, ________ challenges in their lives.",
+"choices": [
+"though",
+"although",
+"even though",
+"despite",
+"because"
+],
+"answer": "④",
+"solution": "빈칸 뒤에는 주어와 동사를 갖춘 절이 아니라 명사구(challenges in their lives)가 온다. 따라서 '~에도 불구하고'라는 뜻의 전치사 despite가 알맞다. though, although, even though, because는 모두 접속사여서 뒤에 절이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1b25625a5d",
+"typeId": "eng-h1-b06-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 세 개 찾아 기호를 쓰고, 각각 바르게 고쳐 쓰시오.\n\nAnna Ancher\nNow let's take a look at the final artist of this exhibition: Anna Ancher, a famous painter from Denmark. When observing her paintings, you may notice a common theme — they all feature female figures. ⓐBorn in Skagen, Denmark, in 1859, she later moved to Copenhagen to attend a private painting school. After that, she even studied abroad in Paris, ⓑin which was unusual for women at the time. Thanks to her mother's encouragement, she was able to take advantage of these opportunities. Even after getting married, Ancher persisted in painting, ⓒobjected to the social pressure that married women were to solely focus on household duties. Ancher differed from other artists of that era, ⓓwho depicted women as still life subjects. In contrast, she showcased them as active participants in everyday tasks, as seen in her works The Maid in the Kitchen and Sewing Fisherman's Wife. She also skillfully explored light and color, which ⓔcontributing to the rich Impressionist movement in Denmark.\n\n(1) ______ : ____________ → ____________\n(2) ______ : ____________ → ____________\n(3) ______ : ____________ → ____________",
+"selfGrade": true,
+"answer": "ⓑ in which → which, ⓒ objected → objecting, ⓔ contributing → contributed",
+"solution": "ⓑ 뒤에 주어가 빠진 불완전한 절(was unusual ~)이 이어지고, 이 관계사절은 앞 절 전체를 받아 주어 역할을 한다. 따라서 「전치사+관계대명사」인 in which가 아니라 계속적 용법의 주격 관계대명사 which를 써야 한다. ⓒ 주어 Ancher가 사회적 압력에 '반대하는' 능동 관계이므로 분사구문은 현재분사 objecting이 되어야 한다. ⓔ 주격 관계대명사 which가 이끄는 절에 정동사가 필요하므로 과거시제 contributed로 고친다. ⓐ는 수동 의미의 분사구문(Being) Born이고, ⓓ는 other artists를 보충 설명하는 계속적 용법의 who여서 둘 다 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-92a1c5a2aa",
+"typeId": "eng-h1-b06-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분 중 어법상 어색한 것은?\n\nDark patterns are manipulative designs on websites and applications ①that trick users into ②making unintended decisions. These deceptive practices often ③has consequences ④that cause financial ⑤damages to the users.",
+"choices": [
+"①that",
+"②making",
+"③has",
+"④that",
+"⑤damages"
+],
+"answer": "③",
+"solution": "주어는 복수 명사 These deceptive practices이므로 동사는 has가 아니라 have가 되어야 한다. ①④는 각각 designs와 consequences를 꾸미는 주격 관계대명사 that으로 옳고, ②는 전치사 into 뒤의 동명사, ⑤는 복수형 명사로 모두 적절하다. 따라서 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fb8951879d",
+"typeId": "eng-h1-b06-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분 중 어법상 어색한 것은?\n\nOn the final page, consumers ①are surprised ②to discover additional charges ③what the seller ④has added to ⑤increase the final cost of the order.",
+"choices": [
+"①are",
+"②to discover",
+"③what",
+"④has added",
+"⑤increase"
+],
+"answer": "③",
+"solution": "선행사 additional charges가 있고 뒤 문장의 목적어가 빠진 불완전한 절이므로 선행사를 받는 목적격 관계대명사 which가 와야 한다. what은 선행사를 포함하므로 올 수 없다. ①감정 수동태, ②surprised 뒤의 to부정사, ④현재완료, ⑤목적을 나타내는 to부정사의 동사원형은 모두 옳다. 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e60a9f16e3",
+"typeId": "eng-h1-b06-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분 중 어법상 어색한 것은?\n\nWhen users want to cancel their subscription, they ①are offered two options. The first option ②present in an appealing way, ③while the second option ④seems like ⑤a bad choice.",
+"choices": [
+"①are offered",
+"②present",
+"③while",
+"④seems",
+"⑤a bad choice"
+],
+"answer": "②",
+"solution": "The first option은 '제시되는' 대상이므로 수동태 is presented가 되어야 한다. present는 능동형이라 어색하다. ①은 offer의 4형식 수동태, ③접속사 while, ④단수 주어에 맞는 seems, ⑤명사구로 모두 적절하다. 따라서 답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-439cb56c54",
+"typeId": "eng-h1-b06-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nTo tackle the problem of dark patterns, extensive research across various websites and applications (A)[is / are] being conducted to document their prevalence. In addition, governments are discussing how to regulate these designs. The EU's Digital Service Act, (B)[which / what] banned dark patterns on online platforms in 2022, is a good example of such regulation. At the same time, companies deliberately make the cancellation process (C)[complicated / complicating] so that users give up requesting refunds.\n\n(A)          (B)          (C)",
+"choices": [
+"is / which / complicating",
+"is / which / complicated",
+"are / what / complicated",
+"is / what / complicating",
+"are / which / complicated"
+],
+"answer": "②",
+"solution": "(A) 주어의 핵은 단수 명사 research이고 across ~ applications는 수식어구이므로 동사는 is가 맞다(긴 수식어 뒤 복수 명사에 현혹되지 않아야 한다). (B) 앞에 선행사 The Digital Service Act가 있고 콤마로 이어지는 계속적 용법이므로 관계대명사 which가 와야 하며 what은 쓸 수 없다. (C) make+목적어+목적격보어 구조에서 the process는 '복잡하게 만들어지는' 대상이므로 과거분사 complicated가 적절하다. 따라서 is / which / complicated인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u5m1s0t0",
+"custom": true
 }
 ]

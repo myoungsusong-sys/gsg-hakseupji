@@ -4446,5 +4446,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b01-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-eddfffebe0",
+"typeId": "eng-h1-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음은 AI 프로그램에 관한 글의 한 문장이다. <보기>의 단어를 모두 바르게 배열하여 문장을 완성하시오. (대소문자는 필요시 고칠 것)\n\nMany AI programs ______________________________________.\n\n<보기> are / open / to / the / public",
+"selfGrade": true,
+"answer": "are open to the public",
+"solution": "본문 첫 문장 'Many AI programs are open to the public.'를 그대로 완성하는 문제이다. 'be open to ~'는 '~에게 개방되어 있다'라는 뜻이므로 be동사 are 뒤에 open, 그다음 전치사 to the public 순서로 배열한다. 많은 AI 프로그램이 대중에게 공개되어 있다는 의미가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e9606fac22",
+"typeId": "eng-h1-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 한 단어를 본문에서 찾아 쓰시오.\n\nSince AI has the potential to perform skills better than humans, some people view it as a ____________. They worry that AI will replace humans in more and more areas.\n\n(힌트: AI를 '위협'으로 여긴다는 의미의 단어)",
+"selfGrade": true,
+"answer": "threat",
+"solution": "AI가 인간보다 일을 더 잘할 수 있어 일부 사람들이 AI를 '위협(threat)'으로 본다는 본문 내용이다. 'view A as B'는 'A를 B로 여기다'라는 뜻이며, 뒤 문장의 '인간을 대체할까 봐 걱정한다'는 내용과 연결되므로 빈칸에는 threat가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a65bcdc975",
+"typeId": "eng-h1-b01-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "대화의 흐름상 빈칸에 들어갈 질문을 <조건>에 맞게 영작하시오.\n\nB: Hi, Emma. ______________________________________?\nG: I'm chatting with General Yi Sunsin.\n\n<조건>\n• you, do, what, on your phone, be동사를 사용할 것\n• 현재진행형 의문문으로 쓸 것",
+"selfGrade": true,
+"answer": "What are you doing on your phone",
+"solution": "Emma가 '장군과 채팅하고 있다'고 답하므로 빈칸에는 '휴대폰으로 무엇을 하고 있는지' 묻는 현재진행형 의문문이 와야 한다. 의문사 What으로 시작하고 be동사 are, 주어 you, 동사원형+ing(doing), 부사구 on your phone 순서로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-dfec369b94",
+"typeId": "eng-h1-b01-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 표현을 바르게 배열하여 문장을 완성하시오.\n\n우리말: 인간이 자연 파괴의 주요 원인 제공자라는 것은 분명하다.\n\n<보기> are / humans / a major contributor / to the destruction of nature\n\n→ It is clear that _______________________________________.",
+"selfGrade": true,
+"answer": "humans are a major contributor to the destruction of nature",
+"solution": "‘주어(humans) + be동사(are) + 보어(a major contributor)’ 순으로 배열하고, 뒤에 수식어구 ‘to the destruction of nature(자연의 파괴에 대한)’를 붙입니다. 접속사 that이 이끄는 명사절 안의 어순을 그대로 지키면 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2a16287d7b",
+"typeId": "eng-h1-b01-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 표현을 바르게 배열하여 문장을 완성하시오. (단, 문장 맨 앞 글자는 대문자로 쓸 것)\n\n우리말: 플라스틱은 특히 토양과 수질 오염 문제를 일으키고 있다.\n\n<보기> is causing / plastic / in particular / problems / with soil and water pollution\n\n→ _______________________________________.",
+"selfGrade": true,
+"answer": "Plastic, in particular, is causing problems with soil and water pollution",
+"solution": "주어 Plastic 뒤에 ‘특히’를 뜻하는 삽입어구 in particular를 넣고, 현재진행형 동사 is causing과 목적어 problems를 둡니다. 이어서 ‘~와 관련된’을 뜻하는 with soil and water pollution으로 마무리합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3b67f2193d",
+"typeId": "eng-h1-b01-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 표현을 바르게 배열하여 문장을 완성하시오.\n\n우리말: 이 놀라운 나무들은 광범위하고 잘 발달된 뿌리 체계를 가지고 있다.\n\n<보기> have / these amazing trees / root systems / extensive and well-developed\n\n→ _______________________________________.",
+"selfGrade": true,
+"answer": "These amazing trees have extensive and well-developed root systems",
+"solution": "주어 These amazing trees 뒤에 동사 have를 놓고, 목적어 root systems 앞에 수식하는 형용사구 extensive and well-developed를 배치합니다. ‘형용사 + 명사’ 어순에 유의하면 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m6s0t0",
+"custom": true
 }
 ]

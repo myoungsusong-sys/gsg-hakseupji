@@ -3237,5 +3237,57 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b06-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-145a0a0808",
+"typeId": "eng-h2-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n그가 일곱 살이었을 때, 그는 학교에 다니기 위해 13 km 떨어진 곳으로 이사해야 했다.\n\n( to / had / attend / move / to / he / school / 13 km away )\n\n→ When he was seven, ______________________________.",
+"selfGrade": true,
+"answer": "he had to move 13 km away to attend school",
+"solution": "'~해야 했다'는 had to + 동사원형으로 나타내므로 he had to move가 된다. '13 km 떨어진 곳으로'는 13 km away를 move 뒤에 쓴다. '학교에 다니기 위해'는 목적을 나타내는 to부정사 to attend school로 문장 끝에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bdb963e2d1",
+"typeId": "eng-h2-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 의미가 같도록 괄호 안의 단어 및 어구를 바르게 배열하시오.\n\n그의 비전이 더 넓은 대중과 공유될수록, 우리 세상은 더 좋아질 것이다.\n\n( shared / the better / is / his vision / the more / our world / will become / with a wider audience )\n\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "The more his vision is shared with a wider audience, the better our world will become",
+"solution": "'~할수록 더 …하다'는 'The 비교급 + 주어 + 동사, the 비교급 + 주어 + 동사' 구문으로 나타낸다. 앞 절은 '비전이 공유되는' 것이므로 수동태 is shared를 쓰고 with a wider audience를 뒤에 붙인다. 뒤 절은 the better our world will become의 순서가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3d10d1a343",
+"typeId": "eng-h2-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 빈칸에 쓰시오.\n\n이 혼합물은 더운 날씨 동안 교실을 시원하게 유지하는 데 도움을 준다.\n\n( keep / cool / helps / classrooms )\n\n→ This mixture ______ ______ ______ ______ during hot weather.",
+"selfGrade": true,
+"answer": "helps keep classrooms cool",
+"solution": "help는 목적어 자리에 동사원형을 바로 쓸 수 있으므로 helps keep이 된다. 'keep + 목적어 + 형용사'는 '~을 …한 상태로 유지하다'라는 뜻이므로 keep classrooms cool의 순서로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bd99dc3d38",
+"typeId": "eng-h2-b06-u2m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 우리말을 <조건>에 맞게 영작하여 문장을 완성하시오.\n\nHe also trained the young members of the village and then they collaborated on the construction. These trained workers have since used these new skills to build schools and houses in other communities. Furthermore, 그는 학교 건축을 위한 모든 건축 설계도를 마을의 누구나 이용할 수 있게 했는데, 이것은 인근의 두 마을이 그들 자신의 학교를 짓는 것을 더 쉽게 만들었다.\n\n<조건>\n• 'make + 목적어 + 목적격 보어(형용사)' 구문을 두 번 사용할 것\n• 앞 절 전체를 받는 계속적 용법의 관계대명사를 사용할 것\n• 가목적어 it과 to부정사의 의미상 주어를 사용할 것\n• <보기>의 단어 및 표현을 모두 사용하되, 필요하면 형태를 바꿀 것\n• 각 빈칸에 한 단어씩 쓸 것\n<보기> available, easy, anyone, make, build, two nearby villages, their own schools\n\n→ he made all the architectural plans for the school construction ______ ______ ______ ______ ______ ______, ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______.",
+"selfGrade": true,
+"answer": "available to anyone in the village, which made it easier for two nearby villages to build their own schools",
+"solution": "앞부분은 'made + 목적어 + 형용사' 구문이므로 목적격 보어로 available을 쓰고, 그 뒤에 to anyone in the village를 이어 쓴다. 앞 절 전체를 받는 계속적 용법의 관계대명사는 콤마 뒤의 which이며, 과거 시제에 맞춰 make를 made로 바꾼다. 진목적어인 to부정사구 대신 가목적어 it을 두고, '더 쉽게'는 easy를 비교급 easier로 바꿔 쓴다. 의미상 주어 for two nearby villages를 넣은 뒤 to build their own schools로 문장을 마무리한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m6s0t0",
+"custom": true
 }
 ]

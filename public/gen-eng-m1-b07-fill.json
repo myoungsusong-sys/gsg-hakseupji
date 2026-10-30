@@ -3757,5 +3757,127 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-a69da24790",
+"typeId": "eng-m1-b07-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nYesterday, Dylan ______ a book report.",
+"choices": [
+"write",
+"writes",
+"wrote",
+"written",
+"writing"
+],
+"answer": "③",
+"solution": "'어제(Yesterday)'라는 과거를 나타내는 말이 있으므로 동사는 과거형을 써야 한다. write의 과거형은 불규칙 변화로 wrote이다. 따라서 ③ wrote가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-24be1606a1",
+"typeId": "eng-m1-b07-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nA: Harry can stand on one leg for an hour.\nB: Wow, that's surprising!",
+"choices": [
+"지루한",
+"놀라운",
+"슬픈",
+"무서운",
+"친절한"
+],
+"answer": "②",
+"solution": "surprising은 '놀라운, 놀랄 만한'이라는 뜻의 형용사이다. 상대방의 놀라운 소식에 반응할 때 That's surprising!(그거 놀랍다!)이라고 말한다. 따라서 ② 놀라운이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a90847c3c4",
+"typeId": "eng-m1-b07-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nA: What does your dog ______ like?\nB: She is black and white.",
+"choices": [
+"looks",
+"looking",
+"look",
+"looked",
+"to look"
+],
+"answer": "③",
+"solution": "생김새를 물을 때 'What does+주어+look like?' 형태를 쓴다. 조동사 does 뒤에는 동사원형이 오므로 look이 알맞다. 따라서 ③ look이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2cf982fcd0",
+"typeId": "eng-m1-b07-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 바르게 배열하시오.\n\n우리말: 나는 오늘 6개의 수업이 있다.\n<보기> have / I / today / classes / six\n\n→ ______________________________________",
+"selfGrade": true,
+"answer": "I have six classes today.",
+"solution": "주어 I 다음에 일반동사 have를 쓰고, 목적어 six classes, 마지막에 시간 부사 today를 놓습니다. 영어의 기본 어순은 「주어+동사+목적어」입니다. 따라서 I have six classes today.가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6f70434dbe",
+"typeId": "eng-m1-b07-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 긍정의 대답을 완성하시오.\n\nA: Do you wear a uniform?\nB: ____________, I ____________.\n\n(지민은 엄마처럼 교복을 입는다.)",
+"selfGrade": true,
+"answer": "Yes, I do",
+"solution": "Do you ~?로 묻는 일반동사 의문문에 긍정으로 답할 때는 「Yes, 주어+do.」를 씁니다. 주어가 you이므로 대답의 주어는 I이고, 긍정이므로 do를 씁니다. 따라서 Yes, I do.가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d14f1104de",
+"typeId": "eng-m1-b07-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 바르게 배열하시오.\n\n우리말: 나는 음악실로 달려간다.\n<보기> the / run / I / music / to / room\n\n→ ______________________________________",
+"selfGrade": true,
+"answer": "I run to the music room.",
+"solution": "주어 I 다음에 동사 run을 쓰고, 「~로」를 뜻하는 방향 전치사 to를 붙인 뒤 장소 the music room을 놓습니다. 명사 music room 앞에 관사 the가 옵니다. 따라서 I run to the music room.이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5c8bc9425f",
+"typeId": "eng-m1-b07-u0m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 지민이가 쓴 글의 일부이다. 밑줄 친 (A), (B)의 우리말을 <조건>에 맞게 각각 영작하시오.\n\nThis is me on my first day of school. (A)이것은 내가 가장 좋아하는 엄마 사진이다. Now, I wear a uniform just like her. (B)우리는 같은 파란 넥타이를 맨다!\n\n<조건>\n• <보기>의 단어를 모두 포함시킬 것\n• (A)는 8단어, (B)는 6단어로 각각 쓸 것\n<보기> favorite, picture / same\n\n(A) ______________________________________\n(B) ______________________________________",
+"selfGrade": true,
+"answer": "(A) This is my favorite picture of my mom. (B) We wear the same blue tie.",
+"solution": "(A)는 「This is+소유격+명사」 구조로, 「엄마의 사진」은 picture of my mom으로 나타냅니다. This is my favorite picture of my mom.은 8단어입니다. (B)는 주어 We, 동사 wear, 목적어 the same blue tie로 「우리는 같은 파란 넥타이를 맨다」를 나타내며 We wear the same blue tie.는 6단어입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d11a0f54e7",
+"typeId": "eng-m1-b07-u0m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 윤호가 쓴 글의 일부이다. 밑줄 친 (A), (B)의 우리말을 <조건>에 맞게 각각 영작하시오.\n\nThe bell rings. It's music class. I run to the music room. I sit on a chair. (A)누군가 내 이름을 부른다. It's my older sister. Wait! Am I in my sister's class? (B)나는 내 반 친구들이 보이지 않는다.\n\n<조건>\n• 괄호 안의 단어를 모두 사용하되, 필요하면 형태를 바꿀 것\n• (B)는 부정문으로 쓸 것\n(A) (someone, call, my, name)\n(B) (I, see, my, classmate)\n\n(A) ______________________________________\n(B) ______________________________________",
+"selfGrade": true,
+"answer": "(A) Someone calls my name. (B) I don't see my classmates.",
+"solution": "(A)는 주어 Someone이 3인칭 단수이므로 동사 call에 -s를 붙여 calls로 바꿔 Someone calls my name.으로 씁니다. (B)는 일반동사 부정문이므로 주어 I 뒤에 don't를 넣고 동사원형 see를 쓰며, 반 친구는 여럿이므로 classmate를 복수형 classmates로 바꿉니다. 따라서 I don't see my classmates.가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m6s0t0",
+"custom": true
 }
 ]

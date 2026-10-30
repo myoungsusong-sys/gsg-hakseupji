@@ -4705,5 +4705,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u5m3s0t0",
 "custom": true
+},
+{
+"id": "fill-fd82b7f409",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 바르게 배열하여 빈칸을 완성하시오.\n\nCan you guess what these whales are doing in the picture? It looks like they are standing up in a group. But they are actually sleeping! 혹등고래는 잠을 자는 동안 꼬리로 서 있다. They sleep near the surface.\n\n<보기>\non / tails / stand / their\n\nHumpback whales _______ _______ _______ _______ while they sleep.",
+"selfGrade": true,
+"answer": "stand on their tails",
+"solution": "주어 Humpback whales 뒤에는 동사 stand가 온다. '꼬리로 (서다)'는 '~ 위에'라는 뜻의 전치사 on을 써서 on their tails로 나타낸다. 따라서 빈칸에는 stand on their tails가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-ada8106dac",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\n\n우리 행성의 3분의 2는 바다로 덮여 있다.\n→ Two-thirds of our planet _______ by oceans.",
+"choices": [
+"is covered",
+"covers",
+"is covering",
+"covered",
+"are cover"
+],
+"answer": "①",
+"solution": "'덮여 있다'는 수동의 뜻이므로 「be동사 + 과거분사」 형태의 수동태를 써야 한다. 「분수 + of + 명사」는 of 뒤의 명사에 수를 맞추는데, our planet은 단수이므로 be동사는 is가 된다. 따라서 is covered가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f4d392106e",
+"typeId": "eng-m3-b07-u6m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 <보기>의 말을 모두 바르게 배열하여 빈칸을 완성하시오.\n\nThe tuskfish blows on the sand until a clam appears. The clam is closed tightly, so the fish cannot eat it. But the tuskfish doesn't give up. 그것은 조개를 바위에 내리친다. In the end, the clam opens and dinner is served.\n\n<보기>\nagainst / smashes / a rock / the clam\n\nIt _______ _______ _______ _______.",
+"selfGrade": true,
+"answer": "smashes the clam against a rock",
+"solution": "주어 It 뒤에 동사 smashes가 오고, 그 뒤에 목적어 the clam이 온다. '~을 …에 내리치다'는 「smash A against B」 형태로 쓰므로 against a rock이 마지막에 온다. 따라서 It smashes the clam against a rock.이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bc60428717",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWe didn't try to choose the best idea. We took a good idea and made it better. We divided up the roles and worked together. In the end, we built our tall tower!",
+"choices": [
+"Working Together Built Our Tower",
+"How to Eat Marshmallows Fast",
+"The Best Way to Study Math",
+"My Favorite Soccer Player",
+"Why Tall Towers Are Dangerous"
+],
+"answer": "①",
+"solution": "글 전체가 좋은 생각을 함께 발전시키고 역할을 나누어 협력해서 탑을 세웠다는 내용이므로, 핵심은 '함께 협력해 탑을 만들었다'는 것이다. 따라서 제목으로는 ①이 가장 알맞다. 나머지 선지는 글에 나오지 않는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-61b232cc31",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWe didn't spend much time on planning. We started building right away. Our first tower was not tall. We tried again and again. After many tries, we finally built a tall tower!",
+"choices": [
+"Never Give Up, Try Again!",
+"The History of Spaghetti",
+"How to Draw a Tent",
+"The Best Pizza in Pisa",
+"Cleaning Up the Classroom"
+],
+"answer": "①",
+"solution": "처음 만든 탑이 높지 않았지만 여러 번 다시 시도해서 마침내 높은 탑을 세웠다는 내용이다. 즉 '포기하지 않고 계속 도전했다'는 것이 핵심이므로 제목은 ①이 알맞다. 다른 선지는 글의 내용과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-30ae6d5667",
+"typeId": "eng-m3-b07-u0m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nOne student said we needed a strong base. Another student suggested a triangle shape for the base. We all agreed and divided up the roles. We worked together as a team.",
+"choices": [
+"팀원들이 서로 협력하여 역할을 나누어 일했다.",
+"혼자서 일하는 것이 가장 빠르고 좋다.",
+"삼각형은 그리기 어려운 도형이다.",
+"좋은 생각은 항상 한 사람에게서만 나온다.",
+"시간을 재는 일은 전혀 필요하지 않다."
+],
+"answer": "①",
+"solution": "학생들이 서로 의견을 내고 모두 동의한 뒤 역할을 나누어 한 팀으로 함께 일했다는 내용이다. 글의 핵심은 '팀원들의 협력'이므로 요지는 ①이 알맞다. 나머지는 글에서 말하지 않았거나 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u0m3s0t0",
+"custom": true
 }
 ]

@@ -3169,5 +3169,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-7e4d164559",
+"typeId": "eng-m1-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 뜻풀이에 해당하는 낱말로 알맞은 것은?\n\na flat piece of wood or plastic that you cut food on",
+"choices": [
+"plate",
+"bowl",
+"cutting board",
+"sauce",
+"bamboo"
+],
+"answer": "③",
+"solution": "뜻풀이는 '음식을 그 위에 놓고 써는 납작한 나무나 플라스틱 판'이므로 cutting board(도마)가 알맞다. plate는 음식을 담는 접시, bowl은 그릇, sauce는 소스, bamboo는 대나무이다. 본문에서 dombe는 제주어로 '도마'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-64f597813c",
+"typeId": "eng-m1-b09-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "우리말과 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오.\n\n나는 선생님 덕분에 시험에 통과했다.\n→ I passed the test __________ __________ my teacher.",
+"selfGrade": true,
+"answer": "thanks to",
+"solution": "'~ 덕분에'는 thanks to로 나타낸다. thanks to 뒤에는 명사(구)가 온다. 본문의 'we got our energy back thanks to dombegogi'에서도 같은 표현이 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2693cff0e7",
+"typeId": "eng-m1-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 동사의 현재형과 과거형이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"go – went",
+"win – won",
+"hold – held",
+"become – became",
+"visit – visitted"
+],
+"answer": "⑤",
+"solution": "visit는 규칙 동사이고 마지막 음절에 강세가 없으므로 자음을 겹쳐 쓰지 않고 -ed만 붙인다. 따라서 visit의 과거형은 visited이다. go, win, hold, become은 불규칙 동사로 과거형이 각각 went, won, held, became이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c39099fd44",
+"typeId": "eng-m1-b09-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"afraid: 두려워하는",
+"excited: 신이 난",
+"scared: 겁먹은",
+"comfortable: 편안한",
+"curious: 아픈"
+],
+"answer": "⑤",
+"solution": "'curious'는 '호기심이 있는'이라는 뜻이다. '아픈'은 'sick'에 해당한다. 본문에서 토끼가 무언가에 호기심이 있다고(The rabbit is curious about something.) 했으므로 ⑤의 짝이 어색하다. 나머지 네 개는 모두 바르게 짝지어졌다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a4fb52c76f",
+"typeId": "eng-m1-b09-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 알맞은 말을 쓰시오.\n\nWhat does the dog look like? = ___________ ___________ the dog ___________?",
+"selfGrade": true,
+"answer": "How does look",
+"solution": "'What does ~ look like?'와 'How does ~ look?'은 '~은 어떻게 생겼니?'라는 같은 의미를 나타낸다. 주어가 the dog로 3인칭 단수이므로 does를 쓰고, 동사원형 look을 쓴다. 따라서 빈칸은 How / does / look 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1ef4fb6c05",
+"typeId": "eng-m1-b09-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 해당하는 영어 단어로 알맞은 것은?\n\n혼자의, 홀로",
+"choices": [
+"forward",
+"alone",
+"belly",
+"fear",
+"tail"
+],
+"answer": "②",
+"solution": "'혼자의, 홀로'를 뜻하는 영어 단어는 'alone'이다. 본문에서 개가 잠시 혼자 있고 싶어 한다는 문장(It needs to be alone for a moment.)에 쓰였다. forward는 '앞으로', belly는 '배', fear는 '두려움', tail은 '꼬리'를 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m6s0t0",
+"custom": true
 }
 ]
