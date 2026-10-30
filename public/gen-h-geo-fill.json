@@ -2749,5 +2749,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-19522",
 "custom": true
+},
+{
+"id": "fill-c200eabb6e",
+"typeId": "19555",
+"kind": "객관식",
+"diff": 1,
+"body": "타원 $\\dfrac{x^2}{49}+\\dfrac{y^2}{9}=1$ 위의 점 $(7,0)$에서의 접선을 $l$이라 하자. 이 타원 위를 움직이는 점 $P$와 직선 $l$ 사이의 거리의 최댓값은?",
+"choices": [
+"$7$",
+"$10$",
+"$12$",
+"$14$",
+"$16$"
+],
+"answer": "④",
+"solution": "점 $(7,0)$에서의 접선은 $x=7$이다. 타원 위의 점 $P(x,y)$에 대하여 $-7\\le x\\le7$이므로 접선까지의 거리는 $7-x$이다. 따라서 $P=(-7,0)$일 때 최댓값 $14$를 갖는다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-e5fab003a1",
+"typeId": "19555",
+"kind": "객관식",
+"diff": 1,
+"body": "타원 $\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$ 위의 점 $(0,4)$에서의 접선을 $l$이라 하자. 이 타원 위의 점 $Q$와 직선 $l$ 사이의 거리의 최댓값은?",
+"choices": [
+"$4$",
+"$6$",
+"$8$",
+"$10$",
+"$12$"
+],
+"answer": "③",
+"solution": "점 $(0,4)$에서의 접선은 $y=4$이다. 타원 위에서는 $-4\\le y\\le4$이므로 점 $Q(x,y)$와 접선 사이의 거리는 $4-y$이다. 따라서 $Q=(0,-4)$일 때 최댓값 $8$을 갖는다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-b800e43b68",
+"typeId": "19555",
+"kind": "객관식",
+"diff": 1,
+"body": "직선 $y=mx+c$가 타원 $\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1$에 접할 때, $c^2$의 최솟값은? (단, $m$, $c$는 실수이다.)",
+"choices": [
+"$1$",
+"$4$",
+"$6$",
+"$9$",
+"$13$"
+],
+"answer": "②",
+"solution": "직선 $y=mx+c$가 주어진 타원에 접할 조건은 $c^2=9m^2+4$이다. $m^2\\ge0$이므로 $c^2\\ge4$이고, $m=0$, $c=\\pm2$일 때 등호가 성립한다. 따라서 최솟값은 $4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-c13aa4230a",
+"typeId": "19555",
+"kind": "객관식",
+"diff": 2,
+"body": "타원 $\\dfrac{x^2}{36}+\\dfrac{y^2}{16}=1$의 제1사분면 위의 점 $P$에서 그은 접선이 $x$축, $y$축과 만나는 점을 각각 $A$, $B$라 하자. 원점을 $O$라 할 때, 삼각형 $OAB$의 넓이의 최솟값은?",
+"choices": [
+"$12$",
+"$16$",
+"$20$",
+"$24$",
+"$48$"
+],
+"answer": "④",
+"solution": "$P=(6u,4v)$로 놓으면 $u,v>0$, $u^2+v^2=1$이고, 접선은 $\\dfrac{ux}{6}+\\dfrac{vy}{4}=1$이다. 따라서 삼각형 $OAB$의 넓이는 $\\dfrac12\\cdot\\dfrac6u\\cdot\\dfrac4v=\\dfrac{12}{uv}$이다. $2uv\\le u^2+v^2=1$이므로 넓이는 $24$ 이상이며, $u=v=\\dfrac1{\\sqrt2}$일 때 최솟값 $24$를 갖는다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-5f5433de76",
+"typeId": "19555",
+"kind": "주관식",
+"diff": 2,
+"body": "타원 $\\dfrac{x^2}{9}+\\dfrac{y^2}{25}=1$의 제1사분면 위의 점 $P$에서의 접선이 $x$축, $y$축과 만나는 점을 각각 $A$, $B$라 하자. 선분 $AB$의 길이의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$8$",
+"solution": "$P=(3\\sqrt{u},5\\sqrt{1-u})$로 놓으면 $0<u<1$이고, 접선의 두 절편은 $\\dfrac3{\\sqrt{u}}$, $\\dfrac5{\\sqrt{1-u}}$이다. 따라서 코시ㆍ슈바르츠 부등식에 의하여 $\\overline{AB}^{\\,2}=\\dfrac9u+\\dfrac{25}{1-u}\\ge(3+5)^2=64$이다. $u=\\dfrac38$일 때 등호가 성립하므로 선분 $AB$의 길이의 최솟값은 $8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-b29486628e",
+"typeId": "19555",
+"kind": "주관식",
+"diff": 2,
+"body": "타원 $\\dfrac{x^2}{8}+\\dfrac{y^2}{2}=1$ 위의 점 $(2,1)$에서의 접선을 $l$이라 하자. 이 타원 위를 움직이는 점 $P$와 직선 $l$ 사이의 거리의 최댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{8\\sqrt5}{5}$",
+"solution": "점 $(2,1)$에서의 접선은 $x+2y=4$이다. 타원 위의 점 $(x,y)$에 대하여 $(x+2y)^2\\le\\left(\\dfrac{x^2}{8}+\\dfrac{y^2}{2}\\right)(8+8)=16$이므로 $-4\\le x+2y\\le4$이다. 따라서 접선까지의 거리는 최대 $\\dfrac8{\\sqrt5}$이며, 점 $(-2,-1)$에서 이 값에 도달한다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-edb4155277",
+"typeId": "19555",
+"kind": "주관식",
+"diff": 5,
+"body": "타원 $\\dfrac{x^2}{64}+\\dfrac{y^2}{9}=1$의 제1사분면 위의 점 $P$에서의 접선이 $x$축, $y$축과 만나는 점을 각각 $A$, $B$라 하자. 점 $C=(2\\sqrt6,0)$에 대하여 삼각형 $CAB$의 넓이의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$9\\sqrt2$",
+"solution": "$P=(8t,3\\sqrt{1-t^2})$로 놓으면 $0<t<1$이고, $A=\\left(\\dfrac8t,0\\right)$, $B=\\left(0,\\dfrac3{\\sqrt{1-t^2}}\\right)$이다. $C$는 선분 $OA$ 위에 있으므로 삼각형 $CAB$의 넓이는 $K=\\dfrac{3(4-\\sqrt6t)}{t\\sqrt{1-t^2}}$이다. 항등식 $(4-\\sqrt6t)^2-18t^2(1-t^2)=\\left(t-\\dfrac{\\sqrt6}{3}\\right)^2(18t^2+12\\sqrt6t+24)\\ge0$과 양변의 양수성으로부터 $4-\\sqrt6t\\ge3\\sqrt2t\\sqrt{1-t^2}$를 얻는다. 따라서 $K\\ge9\\sqrt2$이고, $t=\\dfrac{\\sqrt6}{3}$일 때 등호가 성립하므로 최솟값은 $9\\sqrt2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-0d3f8b6d7f",
+"typeId": "19555",
+"kind": "주관식",
+"diff": 5,
+"body": "타원 $\\dfrac{x^2}{64}+y^2=1$의 제1사분면 위의 점 $P$에서의 접선이 $x$축, $y$축과 만나는 점을 각각 $A$, $B$라 하자. 원점을 $O$, 삼각형 $OAB$의 넓이를 $S$라 할 때, $\\overline{AB}^{\\,2}+4S$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$125$",
+"solution": "$P=(x_1,y_1)$에 대하여 $t=\\dfrac{x_1}{8y_1}>0$으로 놓으면 접선의 절편으로부터 $\\overline{AB}^{\\,2}=65+\\dfrac{64}{t^2}+t^2$, $S=4\\left(t+\\dfrac1t\\right)$를 얻는다. 따라서 $F=\\overline{AB}^{\\,2}+4S$라 하면 $F-125=\\dfrac{t^4+16t^3-60t^2+16t+64}{t^2}$이다. 이를 인수분해하면 $F-125=\\dfrac{(t-2)^2(t^2+20t+16)}{t^2}\\ge0$이다. $P=\\left(\\dfrac{16}{\\sqrt5},\\dfrac1{\\sqrt5}\\right)$일 때 $t=2$이므로 최솟값은 $125$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
+},
+{
+"id": "fill-9c79449275",
+"typeId": "19555",
+"kind": "주관식",
+"diff": 5,
+"body": "타원 $\\dfrac{x^2}{10}+\\dfrac{y^2}{4}=1$의 제1사분면 위의 점 $P$에서의 접선을 $l$이라 하고, $l$이 $x$축, $y$축과 만나는 점을 각각 $A$, $B$라 하자. 원점 $O$에 대하여 삼각형 $OAB$의 넓이를 $S$, 이 타원 위의 점 $Q$와 직선 $l$ 사이의 거리의 최댓값을 $D$라 할 때, $SD^2$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$60\\sqrt5$",
+"solution": "$P=(\\sqrt{10u},2\\sqrt{1-u})$로 놓으면 $0<u<1$이고, 접선의 절편으로부터 $S=\\dfrac{\\sqrt{10}}{\\sqrt{u(1-u)}}$를 얻는다. 접선은 $\\dfrac{\\sqrt{u}}{\\sqrt{10}}x+\\dfrac{\\sqrt{1-u}}2y=1$이며, 타원 위에서 좌변의 최솟값은 $-1$이므로 $D^2=\\dfrac{160}{10-6u}$이다. 따라서 $SD^2=\\dfrac{160\\sqrt{10}}{(10-6u)\\sqrt{u(1-u)}}$이다. 항등식 $\\dfrac{128}{9}-(10-6u)^2u(1-u)=\\left(u-\\dfrac13\\right)^2(36u^2-132u+128)\\ge0$에 의하여 분모는 $\\dfrac{8\\sqrt2}{3}$ 이하이다. $u=\\dfrac13$일 때 등호가 성립하므로 $SD^2$의 최솟값은 $60\\sqrt5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19555",
+"custom": true
 }
 ]

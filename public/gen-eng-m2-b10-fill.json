@@ -1040,5 +1040,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b10-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-e440f2d66e",
+"typeId": "eng-m2-b10-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nI don't know how use this machine.",
+"selfGrade": true,
+"answer": "how to use",
+"solution": "「의문사+to부정사」 형태로 써야 하므로 how 뒤에 동사를 그냥 쓸 수 없고 to부정사가 와야 합니다. 따라서 how use는 how to use로 고쳐야 합니다. '어떻게 ~할지'라는 뜻이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c3b0d419d2",
+"typeId": "eng-m2-b10-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "괄호 안에서 알맞은 것을 골라 쓰시오.\n\nWe stayed inside ( because / because of ) the heavy rain.",
+"selfGrade": true,
+"answer": "because of",
+"solution": "뒤에 the heavy rain이라는 명사(구)가 나오므로 전치사 역할을 하는 because of를 써야 합니다. because 뒤에는 「주어+동사」가 와야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f81b7e98a7",
+"typeId": "eng-m2-b10-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nPlease tell me where ( go ) next.",
+"selfGrade": true,
+"answer": "to go",
+"solution": "「의문사+to부정사」 형태이므로 where 뒤에는 동사원형이 아니라 to부정사가 와야 합니다. 따라서 go를 to go로 써서 '어디로 갈지'라는 의미를 완성합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u1m2s0t0",
+"custom": true
 }
 ]

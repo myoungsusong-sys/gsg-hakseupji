@@ -3788,5 +3788,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u7m2s0t0",
 "custom": true
+},
+{
+"id": "fill-818472df30",
+"typeId": "eng-m1-b10-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nI want go to the park after school.\n\n<바르게 고쳐 쓴 표현>\n____________________",
+"selfGrade": true,
+"answer": "to go",
+"solution": "동사 want는 목적어로 to부정사를 취할 수 있다. 따라서 want 뒤에 동사원형 go를 바로 쓰면 어법상 틀리다. go를 to go로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ac5c3ff6b1",
+"typeId": "eng-m1-b10-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nMy brother said which he was hungry.\n\n<바르게 고쳐 쓴 표현>\n____________________",
+"selfGrade": true,
+"answer": "that",
+"solution": "동사 said 뒤에는 말한 내용을 나타내는 명사절이 올 수 있다. 문장의 내용이 완전하고 의문을 나타내지 않으므로 접속사 which가 아니라 that을 써야 한다. 따라서 which를 that으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f8f0d1dc01",
+"typeId": "eng-m1-b10-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nHer dream is become a singer.\n\n<바르게 고쳐 쓴 표현>\n____________________",
+"selfGrade": true,
+"answer": "to become 또는 becoming",
+"solution": "be동사 뒤의 보어 자리에는 명사 역할을 하는 표현이 올 수 있다. 동사원형 become은 단독으로 보어가 될 수 없으므로 to부정사 또는 동명사 형태로 바꾸어야 한다. 따라서 become을 to become 또는 becoming으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m2s0t0",
+"custom": true
 }
 ]

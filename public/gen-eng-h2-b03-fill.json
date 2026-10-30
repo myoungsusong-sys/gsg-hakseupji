@@ -3072,5 +3072,153 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b03-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-fbf29f958e",
+"typeId": "eng-h2-b03-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nOut of these options, we agreed (what / that) a lemonade stand would be the easiest for us, as we would need only a good recipe and a few ingredients.",
+"selfGrade": true,
+"answer": "that",
+"solution": "괄호 뒤의 'a lemonade stand would be the easiest for us'는 주어와 보어를 모두 갖춘 완전한 절입니다. 따라서 동사 agreed의 목적어 역할을 하는 명사절을 이끄는 접속사 that이 알맞습니다. what은 뒤에 불완전한 절이 와야 하므로 쓸 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-15a8a3fee0",
+"typeId": "eng-h2-b03-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nIt would make about 1.5 liters of lemonade, (that / which) could be sold as five cups.",
+"selfGrade": true,
+"answer": "which",
+"solution": "괄호 앞에 콤마(,)가 있으므로 앞의 명사 lemonade를 보충 설명하는 계속적 용법의 관계대명사가 필요합니다. 관계대명사 that은 계속적 용법으로 쓸 수 없으므로 which가 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1ee43ea010",
+"typeId": "eng-h2-b03-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nSome of the ideas (which / what) we discussed included cotton candy, corn dogs, and lemonade.",
+"selfGrade": true,
+"answer": "which",
+"solution": "괄호 앞에 선행사 the ideas가 있고, 뒤의 'we discussed'는 목적어가 빠진 불완전한 절입니다. 따라서 선행사를 수식하는 목적격 관계대명사 which가 알맞습니다. what은 선행사를 포함하는 관계대명사이므로 앞에 선행사가 있으면 쓸 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b5830e6969",
+"typeId": "eng-h2-b03-u1m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 두 개 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nThe first step ⓐthat we took was to decide what to sell. Out of cotton candy, corn dogs, and lemonade, we agreed that a lemonade stand would be the easiest for us. We also found out ⓑwhat no other stand had signed up to sell drinks, so lemonade seemed to be the natural choice. Once we decided on lemonade, we needed the perfect recipe. Fortunately, we were able ⓒfinding a simple one online. We just needed ⓓfreshly squeezed lemons, sugar, water, and ice. It would make about 1.5 liters of lemonade, ⓔwhich could be sold as five cups.\n\n<기호> <알맞게 고친 표현>\n(1) ______ → ______________\n(2) ______ → ______________",
+"selfGrade": true,
+"answer": "ⓑ that, ⓒ to find",
+"solution": "ⓑ 뒤의 'no other stand had signed up to sell drinks'는 완전한 절이므로 found out의 목적어절을 이끄는 접속사 that으로 고쳐야 합니다. ⓒ 'be able'은 뒤에 to부정사가 와서 'be able to + 동사원형'의 형태로 쓰므로 to find로 고쳐야 합니다. ⓐ는 선행사 The first step을 수식하는 목적격 관계대명사로, ⓓ는 과거분사 squeezed를 꾸미는 부사로, ⓔ는 콤마 뒤의 계속적 용법 관계대명사로 모두 바르게 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-00996385e7",
+"typeId": "eng-h2-b03-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이가 설명하는 단어로 가장 알맞은 것은?\n\nextremely large in size or amount\n\n(The largest blue whales are ________ and can grow as long as 30 meters.)",
+"choices": [
+"enormous",
+"tiny",
+"narrow",
+"shallow",
+"light"
+],
+"answer": "①",
+"solution": "'크기나 양이 매우 큰'이라는 뜻풀이에 해당하는 단어는 enormous(거대한)이다. 지문에서 고래가 몸집이 거대하다는 내용과도 일치한다. 나머지 tiny(아주 작은), narrow(좁은), shallow(얕은), light(가벼운)는 모두 반대이거나 무관한 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-792627195e",
+"typeId": "eng-h2-b03-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAccording to scientists, a single whale can ________ about 550 kilograms of CO₂ per year, while a tree can ________ only 22.",
+"choices": [
+"absorb",
+"produce",
+"waste",
+"release",
+"create"
+],
+"answer": "①",
+"solution": "지문에서 고래와 나무가 이산화탄소를 '흡수한다(absorb)'는 내용이므로 빈칸에는 absorb가 알맞다. produce(생산하다), release(방출하다), create(만들다)는 오히려 반대 의미이고, waste(낭비하다)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3b374f58ec",
+"typeId": "eng-h2-b03-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nWhen whales die, their bodies become food and habitats for deep-sea creatures.",
+"choices": [
+"서식지",
+"적군",
+"질병",
+"먹이사슬",
+"껍데기"
+],
+"answer": "①",
+"solution": "habitat은 동물이 사는 '서식지'를 뜻한다. 지문에서 고래의 사체가 심해 생물의 먹이이자 서식지가 된다고 하였다. 나머지 선지는 habitat의 뜻과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e76ca55585",
+"typeId": "eng-h2-b03-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 하나 찾아 알맞게 고쳐 쓰시오.\n\nCompare their posts with more popular ones can make them feel inferior and harm their self-esteem.\n\n<어색한 부분> ______ → <알맞게 고친 표현> ______",
+"selfGrade": true,
+"answer": "Compare → Comparing",
+"solution": "문장의 동사는 can make이고, 그 앞부분인 'Compare ~ popular ones'는 주어 자리입니다. 동사원형 Compare는 주어가 될 수 없으므로 동명사 Comparing으로 고칩니다. 동명사구 주어는 단수로 취급하며, To compare로 고쳐도 정답으로 인정합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c22f25a947",
+"typeId": "eng-h2-b03-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 하나 찾아 알맞게 고쳐 쓰시오.\n\nMin even feels disappointing when she sees her friends' posts receiving more likes than hers.\n\n<어색한 부분> ______ → <알맞게 고친 표현> ______",
+"selfGrade": true,
+"answer": "disappointing → disappointed",
+"solution": "feel 뒤의 보어가 주어 Min이 느끼는 감정을 나타냅니다. Min은 실망하게 '되는' 쪽이므로 현재분사 disappointing이 아니라 과거분사 disappointed를 써야 합니다. 감정을 일으키는 원인일 때는 -ing, 감정을 느끼는 사람일 때는 -ed를 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-aecaca65ca",
+"typeId": "eng-h2-b03-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중 어법상 어색한 것을 하나 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nSocial media is a powerful tool ⓐthat helps us connect with others, but it also has its downsides. One of them is ⓑwhat many people place excessive value on the number of likes and comments they get on their posts. Those ⓒwho feel that they don't get enough likes may experience feelings of shame or rejection.\n\n<기호> ______ → <알맞게 고친 표현> ______",
+"selfGrade": true,
+"answer": "ⓑ → that",
+"solution": "ⓑ 뒤의 'many people place excessive value on ~'은 주어·목적어 등이 모두 갖추어진 완전한 절입니다. 따라서 불완전한 절을 이끄는 what은 쓸 수 없고, is의 보어가 되는 명사절을 이끄는 접속사 that으로 고쳐야 합니다. ⓐ는 선행사 a powerful tool을 받는 주격 관계대명사이고, ⓒ는 사람을 가리키는 Those를 받는 주격 관계대명사이므로 둘 다 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b03-u3m2s0t0",
+"custom": true
 }
 ]

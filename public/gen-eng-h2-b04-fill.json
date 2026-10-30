@@ -2925,5 +2925,120 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b04-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-6e227b7470",
+"typeId": "eng-h2-b04-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 가장 알맞은 것은?\n\n\"to treat something as more important than other things\"",
+"choices": [
+"① define",
+"② prioritize",
+"③ socialize",
+"④ experience",
+"⑤ shape"
+],
+"answer": "②",
+"solution": "'다른 것보다 더 중요하게 여기다'라는 뜻의 단어는 prioritize이다. 지문에서 Gen X 부모가 자녀의 안정적 고용을 prioritize(우선시)한다는 맥락으로 쓰였다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3a741cfa38",
+"typeId": "eng-h2-b04-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nGen Zers grew up with smartphones, and this earned them the \"______ natives\" label.",
+"choices": [
+"① social",
+"② secure",
+"③ digital",
+"④ financial",
+"⑤ distinct"
+],
+"answer": "③",
+"solution": "스마트폰과 함께 자란 Z세대를 '디지털 원주민(digital natives)'이라고 부른다는 내용이다. 빈칸에는 digital이 들어가야 자연스럽다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7cf62f13db",
+"typeId": "eng-h2-b04-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 부분과 의미가 가장 가까운 것은?\n\nGen Zers are accustomed to getting their news and information from social media.",
+"choices": [
+"① afraid of",
+"② used to",
+"③ tired of",
+"④ aware of",
+"⑤ free from"
+],
+"answer": "②",
+"solution": "be accustomed to는 '~에 익숙하다'라는 뜻으로, be used to -ing와 의미가 같다. 나머지 선지는 '두려워하다', '지치다', '알고 있다', '~이 없는'의 뜻으로 맞지 않는다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0cca375a49",
+"typeId": "eng-h2-b04-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 단어의 쓰임이 문맥상 적절하지 않은 것은?",
+"choices": [
+"① People who belong to the same generation are often socialized in similar conditions.",
+"② The 1997 financial crisis caused serious employment instability in Korea.",
+"③ Gen Zers are accustomed to getting information from social media, but they often lack social skills.",
+"④ Because Gen Xers experienced employment stability during the IMF crisis, they came to value secure jobs for their children.",
+"⑤ Each generation is largely defined by the birth years of its members."
+],
+"answer": "④",
+"solution": "지문에 따르면 Gen X 세대는 IMF 위기 때 극심한 고용 '불안정(instability)'을 겪었고, 그 때문에 자녀에게 안정적 고용을 중시하게 되었다. ④의 stability(안정)는 문맥과 반대되므로 instability가 되어야 한다. 나머지 선지의 단어는 모두 문맥에 맞게 쓰였다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-013e4b6987",
+"typeId": "eng-h2-b04-u2m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고 질문에 대한 답을 완성할 때, 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\nELIZA, the first chatbot, was designed by Joseph Weizenbaum between 1964 and 1967. It was programmed to communicate with users, playing the role of a psychotherapist. When users typed questions and answers, ELIZA would give pre-programmed replies using a pattern-matching technique.\n\nQ. Who designed ELIZA?\n→ ELIZA was designed by ____________________.",
+"selfGrade": true,
+"answer": "Joseph Weizenbaum",
+"solution": "질문은 ELIZA를 설계한 사람이 누구인지 묻고 있다. 지문의 첫 문장에서 ELIZA가 Joseph Weizenbaum에 의해 설계되었다고 설명한다. 따라서 빈칸에는 'Joseph Weizenbaum'을 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4f8d3c4317",
+"typeId": "eng-h2-b04-u2m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고 질문에 대한 답을 완성할 때, 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\nELIZA was programmed to communicate with users, playing the role of a psychotherapist. Users felt like they were talking to someone who understood their input. They shared their worries and thoughts about their lives with ELIZA as if they were talking to a real psychotherapist.\n\nQ. What did users share with ELIZA?\n→ They shared their ____________________ and thoughts about their lives with ELIZA.",
+"selfGrade": true,
+"answer": "worries",
+"solution": "질문은 사용자들이 ELIZA와 무엇을 공유했는지 묻고 있다. 지문에 'They shared their worries and thoughts about their lives with ELIZA'라고 제시되어 있다. 따라서 빈칸에는 '걱정'을 뜻하는 'worries'가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-93008f62c9",
+"typeId": "eng-h2-b04-u2m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고 질문에 대한 답을 완성할 때, 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\n1974–1980: AI winter\nMillions of dollars had been invested in the AI industry, but with little progress to show for the investment. People were increasingly critical of the field, and as a result, funding was significantly reduced. This led to a period known as the 'AI winter.'\n\nQ. What was the period of reduced funding for AI called?\n→ The period was known as the '____________________.'",
+"selfGrade": true,
+"answer": "AI winter",
+"solution": "질문은 AI 분야에 대한 자금 지원이 감소했던 시기를 무엇이라고 불렀는지 묻고 있다. 지문 마지막 문장에서 이 시기를 'AI winter'라고 설명한다. 따라서 빈칸에는 'AI winter'를 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u2m7s0t0",
+"custom": true
 }
 ]

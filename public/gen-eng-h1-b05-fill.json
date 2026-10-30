@@ -4096,5 +4096,337 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-4ff9c07182",
+"typeId": "eng-h1-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 가장 적절한 것은?\n\nthe act of trying to recycle something that should not be recycled",
+"choices": [
+"recycling",
+"wishcycling",
+"advertising",
+"gardening",
+"shopping"
+],
+"answer": "②",
+"solution": "재활용되어서는 안 되는 것을 재활용하려는 행위를 가리키는 단어는 wishcycling이다. 본문에서 이 행위를 wishcycling이라고 정의하고 있다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-81be539811",
+"typeId": "eng-h1-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nOn my way home from school, someone handed me a shiny ______ advertising a new study café.",
+"choices": [
+"flyer",
+"garbage",
+"planet",
+"effort",
+"impact"
+],
+"answer": "①",
+"solution": "새로 생긴 스터디 카페를 광고하는 '반짝이는 전단지'를 건네받았다는 내용이므로 빈칸에는 '전단지'를 뜻하는 flyer가 들어가야 한다. garbage(쓰레기), planet(행성) 등은 문맥에 맞지 않는다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1dac885744",
+"typeId": "eng-h1-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 intentions의 뜻으로 가장 적절한 것은?\n\nWishcycling is usually done with good intentions, but it often causes more harm than good.",
+"choices": [
+"의도",
+"결과",
+"습관",
+"실수",
+"규칙"
+],
+"answer": "①",
+"solution": "intention은 '의도, 의향'을 뜻하는 단어이다. 위시사이클링이 보통 '좋은 의도'로 이루어진다는 의미이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a29543c106",
+"typeId": "eng-h1-b05-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분과 의미가 가장 가까운 것은?\n\nThen one day, I <u>came across</u> an interesting university major called sports medicine.",
+"choices": [
+"found by chance",
+"ran away from",
+"got used to",
+"gave up on",
+"applied to"
+],
+"answer": "①",
+"solution": "come across는 '우연히 마주치다, 우연히 발견하다'라는 뜻이다. 따라서 의미가 가장 가까운 것은 found by chance이다. ② ran away from은 '~에서 도망치다', ③ got used to는 '~에 익숙해지다', ④ gave up on은 '~을 포기하다', ⑤ applied to는 '~에 지원하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b2a6218614",
+"typeId": "eng-h1-b05-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe doctors said my knee injury would ________ me from running again.",
+"choices": [
+"protect",
+"prevent",
+"allow",
+"encourage",
+"make"
+],
+"answer": "②",
+"solution": "'prevent A from -ing'는 'A가 ~하지 못하게 막다'라는 뜻이다. 의사들은 무릎 부상 때문에 Olivia가 다시는 달릴 수 없다고 말한 것이므로 prevent가 알맞다. protect A from은 'A를 ~로부터 보호하다'라는 뜻이라 문맥에 맞지 않는다. allow, encourage, make는 from -ing와 함께 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8d717ea176",
+"typeId": "eng-h1-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 Olivia의 글에서 알맞은 표현을 찾아 빈칸에 쓰시오. (본문에 쓰인 형태 그대로 쓸 것)\n\n그래서 나는 결심을 하고 이 전공에 지원했다.\n→ So I ______________________ and applied to this major.",
+"selfGrade": true,
+"answer": "made up my mind",
+"solution": "make up one's mind는 '결심하다'라는 뜻이다. 본문에서는 과거 시제이고 주어가 I이므로 made up my mind로 쓰였다. 바로 뒤의 applied와 시제도 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1d9b7cec36",
+"typeId": "eng-h1-b05-u0m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 질문에 대한 답을 완성하시오. 빈칸에 들어갈 말은 본문에서 찾아 쓰되, 필요하면 대명사의 형태를 바꿀 것.\n\nI dreamed of being an Olympic track and field athlete. My room was full of medals and awards from races I had competed in. During the national 100-meter championship race, however, my Olympic dreams came to a sudden end. I was about to take the lead in the race when I suddenly felt a pain in my knee. I fell to the ground and had to be carried off the track. At first, I didn’t think much of the injury. I thought I would get better soon. But the test results from the hospital were not hopeful. The doctors said my knee injury would prevent me from running again. Every night, I had flashbacks of my injury. I could not watch sports anymore because it was just too painful. So I shut out everything related to sports from my life. Two years passed and I was still trying to get used to my ordinary high school life without sports. Then one day, I came across an interesting university major called sports medicine. It deals with the treatment and prevention of sports injuries. A light bulb went on in my head. This was my chance to stop running away from my problems and fears. So I made up my mind and applied to this major. Today, thanks to my brave decision, I am studying to be a star on the sidelines instead of on the playing field.\n\n(1) Why couldn’t Olivia watch sports anymore after her injury, and what did she do as a result?\n→ She couldn’t watch sports because it was ______________________, so she ______________________________________ from her life.\n\n(2) What did Olivia think when she found out about sports medicine?\n→ She thought it was her chance to ______________________________________________.",
+"selfGrade": true,
+"answer": "(1) just too painful, shut out everything related to sports (2) stop running away from her problems and fears",
+"solution": "(1) 본문의 'I could not watch sports anymore because it was just too painful. So I shut out everything related to sports from my life.'에서 답을 찾는다. 빈칸 뒤에 from her life가 이미 있으므로 shut out everything related to sports까지만 쓴다. (2) 'This was my chance to stop running away from my problems and fears.'에서 답을 찾되, 주어가 She이므로 my를 her로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c83833b560",
+"typeId": "eng-h1-b05-u0m6s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것끼리 짝지은 것은?\n\nI dreamed of being an Olympic track and field athlete. During the national 100-meter championship race, however, I suddenly felt a pain in my knee and fell to the ground. At first, I didn’t think much of the injury. But the test results from the hospital were not ⓐdisappointing. The doctors said my knee injury would prevent me from running again. I could not watch sports anymore because it was just too ⓑpainful. Two years passed and I was still trying to get used to my ⓒordinary high school life without sports. Then one day, I came across a university major called sports medicine. It deals with the ⓓtreatment and prevention of sports injuries. This was my chance to stop running away from my problems and fears. Today, thanks to my ⓔcowardly decision, I am studying to be a star on the sidelines instead of on the playing field.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓔ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ 바로 뒤에 의사들이 다시는 달릴 수 없다고 말했으므로 검사 결과는 '희망적이지 않았다'가 되어야 한다. 따라서 not disappointing이 아니라 not hopeful이 알맞다. ⓔ 두려움에서 도망치지 않고 새로운 전공에 지원한 결정이므로 cowardly(비겁한)가 아니라 brave(용기 있는)가 되어야 한다. ⓑ painful, ⓒ ordinary, ⓓ treatment는 모두 문맥에 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3d2ffe1c8e",
+"typeId": "eng-h1-b05-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 의미로 가장 적절한 것은?\n\nWhen stressed, many people naturally crave something spicy such as tteokbokki.",
+"choices": [
+"피하다",
+"갈망하다, 간절히 원하다",
+"기억하다",
+"소화하다",
+"요리하다"
+],
+"answer": "②",
+"solution": "crave는 '간절히 원하다, 갈망하다'라는 뜻이다. 스트레스를 받으면 매운 음식을 몹시 먹고 싶어 한다는 문맥과 가장 잘 어울린다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e617841dc4",
+"typeId": "eng-h1-b05-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 적절한 것은?\n\nTo avoid being a stress eater, try to find other ways to _______ your stress, such as going for a walk or talking to a friend.",
+"choices": [
+"increase",
+"relieve",
+"cause",
+"ignore",
+"create"
+],
+"answer": "②",
+"solution": "산책을 하거나 친구와 이야기하는 것은 스트레스를 '풀어 주는(해소하는)' 방법이다. '완화하다, 덜어 주다'를 뜻하는 relieve가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-964c24de7a",
+"typeId": "eng-h1-b05-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 가장 적절한 것은?\n\nto learn something so that you can remember it exactly",
+"choices": [
+"memorize",
+"escape",
+"trigger",
+"relieve",
+"crave"
+],
+"answer": "①",
+"solution": "'정확히 기억할 수 있도록 무언가를 익히다'라는 뜻풀이는 '암기하다'를 의미하는 memorize에 해당한다. 시험을 위해 외울 것이 많다(many things to memorize)는 지문과도 연결된다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-94ab026653",
+"typeId": "eng-h1-b05-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ 중 어법상 어색한 것을 하나 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nI think ⓐthat social media algorithms ⓑmakes my life easier. They help me a lot when I'm looking for songs or movies ⓒthat suit my taste.\n\n<기호> ______ → <고친 표현> ____________",
+"selfGrade": true,
+"answer": "ⓑ makes → make",
+"solution": "ⓑ의 주어는 복수 명사 social media algorithms입니다. 따라서 동사도 복수형인 make가 되어야 합니다. ⓐ that은 think의 목적어가 되는 명사절을 이끄는 접속사이고, ⓒ that은 선행사 songs or movies를 꾸미는 주격 관계대명사이므로 둘 다 어법상 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-69b482c1fa",
+"typeId": "eng-h1-b05-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nPeople share fake news on social media, as they do not pay attention to (if / whether) or not the information is accurate.\n\n답: ____________",
+"selfGrade": true,
+"answer": "whether",
+"solution": "괄호 바로 뒤에 or not이 오고, 이 명사절은 전치사 to의 목적어입니다. 전치사의 목적어 자리에 오면서 바로 뒤에 or not을 붙여 쓸 수 있는 접속사는 whether입니다. if는 전치사 뒤에 쓰지 않고 if or not의 형태로도 쓰지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-20911b6c17",
+"typeId": "eng-h1-b05-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 괄호 안의 동사를 어법에 맞게 고쳐 쓰시오.\n\nIt is a bad idea (depend) on social media for all of our information. We need to seek out different sources as well, such as books, official news websites, and documentaries.\n\n답: ____________",
+"selfGrade": true,
+"answer": "to depend",
+"solution": "It은 가주어이고, 실제 주어는 뒤에 오는 '소셜 미디어에 의존하는 것'입니다. 진주어 자리에는 to부정사가 와야 하므로 depend를 to depend로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-de9aabc7f6",
+"typeId": "eng-h1-b05-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nScience, (that / which) seems far removed from art, can be the key to seeing beyond what the naked eye can see.",
+"selfGrade": true,
+"answer": "which",
+"solution": "괄호 앞에 콤마가 있으므로 앞의 Science를 보충 설명하는 계속적 용법의 관계대명사 자리입니다. 관계대명사 that은 계속적 용법으로 쓸 수 없으므로 which를 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5eeec084cf",
+"typeId": "eng-h1-b05-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nWhat (draw / draws / drawing) most people's attention initially is not the woman but the beautiful white animal in the woman's arms.",
+"selfGrade": true,
+"answer": "draws",
+"solution": "What은 선행사를 포함한 관계대명사로, 'What ~ initially'가 문장 전체의 주어이고 is가 본동사입니다. 따라서 What절 안에는 동사가 필요하고, 주어 What은 단수로 취급하므로 draws가 알맞습니다. drawing은 동사 역할을 할 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-20b7a7ca62",
+"typeId": "eng-h1-b05-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 알맞게 고쳐 쓰시오.\n\nIn 2014, this painting by Leonardo da Vinci analyzed by an engineer.\n\n( ________ → ________ )",
+"selfGrade": true,
+"answer": "analyzed → was analyzed",
+"solution": "주어 this painting은 기술자에 의해 '분석된' 대상이므로 수동태(be + p.p.)를 써야 합니다. 2014년이라는 과거 시점이 있고 주어가 단수이므로 was analyzed로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b39e9cfbbe",
+"typeId": "eng-h1-b05-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 affordable의 의미로 가장 알맞은 것을 고르시오.\n\nYou think it's affordable, even though the price is still beyond your budget.\n\n밑줄 친 단어: affordable",
+"choices": [
+"비싼",
+"구입할 만한",
+"불필요한",
+"유명한",
+"새로운"
+],
+"answer": "②",
+"solution": "affordable은 '가격이 알맞은, 구입할 만한'이라는 뜻이다. 문장에서는 재킷의 가격이 예산을 초과하지만 구입할 만하다고 생각한다는 의미로 사용되었다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-52d1e89e47",
+"typeId": "eng-h1-b05-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nThe first piece of information acts as an ________ that influences your decisions later.",
+"choices": [
+"example",
+"anchor",
+"budget",
+"discount",
+"purchase"
+],
+"answer": "②",
+"solution": "처음 접한 정보가 이후의 판단에 영향을 미치는 기준점으로 작용한다는 내용이다. anchor는 '닻, 기준점'이라는 뜻으로, 가격 판단에 영향을 주는 최초의 정보를 나타낸다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d0c74eb9c9",
+"typeId": "eng-h1-b05-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 encourage의 의미로 가장 알맞은 것을 고르시오.\n\nIt is common for stores to use this kind of price anchoring as a way to encourage purchases.\n\n밑줄 친 단어: encourage",
+"choices": [
+"제한하다",
+"비교하다",
+"취소하다",
+"장려하다",
+"기록하다"
+],
+"answer": "④",
+"solution": "encourage는 '격려하다, 장려하다, 촉진하다'라는 뜻이다. 문장에서는 상점들이 소비자의 구매를 유도하기 위해 가격 앵커링을 사용한다는 의미로 쓰였다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m7s0t0",
+"custom": true
 }
 ]

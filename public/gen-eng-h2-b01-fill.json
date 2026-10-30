@@ -3559,5 +3559,272 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b01-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-8adbf9a0db",
+"typeId": "eng-h2-b01-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 가장 알맞은 것은?\n\n<a scientist who studies animals and their behavior>",
+"choices": [
+"curator",
+"zoologist",
+"assistant",
+"companion",
+"reptile"
+],
+"answer": "②",
+"solution": "동물과 동물의 행동을 연구하는 과학자는 zoologist(동물학자)입니다. 본문에서 Joan Procter는 파충류를 전문으로 연구한 'a notable zoologist'로 소개됩니다. curator는 박물관이나 동물원에서 소장품을 관리하는 사람이고, assistant는 조수, companion은 동반자, reptile은 파충류라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b76c87c4b7",
+"typeId": "eng-h2-b01-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nDuring her childhood, Procter __________ herself in the exploration of nature and animals.",
+"choices": [
+"prevented",
+"hired",
+"immersed",
+"accumulated",
+"incorporated"
+],
+"answer": "③",
+"solution": "'immerse oneself in ~'은 '~에 몰두하다'라는 뜻으로, 어린 시절 Procter가 자연과 동물 탐구에 몰두했다는 본문 내용과 맞습니다. prevented(막았다), hired(고용했다), accumulated(축적했다), incorporated(포함시켰다)는 'herself in'과 함께 쓰이지 않고 문맥에도 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0372b93d73",
+"typeId": "eng-h2-b01-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto come to have or own something, especially knowledge or a skill, by your own effort",
+"choices": [
+"acquire",
+"require",
+"reduce",
+"refuse",
+"repeat"
+],
+"answer": "①",
+"solution": "'자신의 노력으로 무언가(지식·기술)를 갖게 되다, 습득하다'라는 뜻은 acquire이다. 지문에서도 'knowledge that I have yet to acquire(내가 아직 습득하지 못한 지식)'로 쓰였다. require는 '요구하다', reduce는 '줄이다', refuse는 '거절하다', repeat는 '반복하다'이므로 뜻이 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-cc4d08b5df",
+"typeId": "eng-h2-b01-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nJacob spends time with his elderly neighbors in exchange for free __________ at Humanitas.",
+"choices": [
+"accommodations",
+"appointments",
+"instruments",
+"experiments",
+"arguments"
+],
+"answer": "①",
+"solution": "제이콥은 무료 '숙소(accommodations)'를 받는 대신 이웃 어르신들과 시간을 보낸다. 지문의 'in exchange for free accommodations'와 같은 맥락이다. appointments(약속), instruments(도구), experiments(실험), arguments(논쟁)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-00a580b0c0",
+"typeId": "eng-h2-b01-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 부분의 의미로 가장 알맞은 것은?\n\nSometimes I teach them things, and other times I just hang out with them.",
+"choices": [
+"함께 어울려 시간을 보내다",
+"크게 말다툼을 하다",
+"작별 인사를 하다",
+"집안을 청소하다",
+"음식을 요리하다"
+],
+"answer": "①",
+"solution": "hang out with는 '~와 함께 어울려 시간을 보내다'라는 뜻이다. 가르쳐 주기도 하고 그냥 함께 어울리기도 한다는 흐름과 자연스럽게 이어진다. 나머지 선지는 hang out의 의미와 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-938303110f",
+"typeId": "eng-h2-b01-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nCuriosity can ________ us to investigate unfamiliar topics and ideas, so it works as a starting point for deeper thinking.",
+"choices": [
+"motivate",
+"ignore",
+"confuse",
+"forbid",
+"delay"
+],
+"answer": "①",
+"solution": "호기심이 낯선 주제를 탐구하도록 '동기를 부여한다'는 흐름이므로 motivate가 알맞다. 호기심이 깊은 사고의 출발점이 된다는 내용과 자연스럽게 연결된다. 나머지 선지는 모두 긍정적 자극이라는 문맥과 반대되거나 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c63d0bab14",
+"typeId": "eng-h2-b01-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 investigate와 의미가 가장 가까운 것은?\n\nCuriosity encourages us to investigate unfamiliar topics and explore them from multiple angles.",
+"choices": [
+"explore",
+"avoid",
+"forget",
+"reduce",
+"hide"
+],
+"answer": "①",
+"solution": "investigate는 '조사하다, 탐구하다'라는 뜻으로, 뒤에 이어지는 explore(탐구하다)와 의미가 거의 같다. 낯선 주제를 파고들어 여러 각도에서 살펴본다는 문맥과도 일치한다. 나머지 선지는 '피하다·잊다·줄이다·숨기다'로 뜻이 반대되거나 무관하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-48e440420b",
+"typeId": "eng-h2-b01-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 efficiently의 우리말 뜻으로 가장 적절한 것은?\n\nThese new activities will create new paths that allow information to flow through your brain more efficiently.",
+"choices": [
+"효율적으로",
+"우연히",
+"천천히",
+"억지로",
+"드물게"
+],
+"answer": "①",
+"solution": "efficiently는 형용사 efficient(효율적인)의 부사형으로 '효율적으로'라는 뜻이다. 새로운 길이 생겨 정보가 뇌를 더 효율적으로 흐르게 한다는 문맥과 일치한다. 나머지는 모두 뜻이 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-47bdb56ee7",
+"typeId": "eng-h2-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto change the form or appearance of something completely",
+"choices": [
+"transform",
+"confirm",
+"arrange",
+"highlight",
+"admit"
+],
+"answer": "①",
+"solution": "영영 풀이는 '어떤 것의 형태나 모습을 완전히 바꾸다'라는 뜻이므로 transform(변형시키다)이 알맞다. 본문에서 Stentzel은 검은 스웨트셔츠와 짙은 회색 바지를 말(horse)로 transform했다. confirm은 '확인하다', arrange는 '배열하다', highlight는 '강조하다', admit는 '인정하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c4cb6a7854",
+"typeId": "eng-h2-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어의 의미로 가장 알맞은 것은?\n\nThe stars of the series are Brad Pet and Crunchie, a pair of puppies made of sliced bread and lettuce <u>respectively</u>.",
+"choices": [
+"대략",
+"동시에",
+"각각",
+"우연히",
+"끊임없이"
+],
+"answer": "③",
+"solution": "respectively는 '각각'이라는 뜻으로, 앞에 나온 대상들과 순서대로 짝지어질 때 쓴다. 이 문장에서 Brad Pet은 식빵으로, Crunchie는 상추로 만들어졌다는 뜻이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-783f27cee4",
+"typeId": "eng-h2-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nStentzel is perhaps best known for her Clothesline Animals series. She got __________ for the series while she was hanging her laundry.",
+"choices": [
+"illusion",
+"laundry",
+"society",
+"inspiration",
+"pattern"
+],
+"answer": "④",
+"solution": "빨래를 널다가 이 시리즈의 '영감'을 얻었다는 흐름이므로 inspiration이 알맞다. get inspiration for는 '~에 대한 영감을 얻다'라는 뜻이다. 다른 선지는 문맥상 got의 목적어로 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-310c15e9ab",
+"typeId": "eng-h2-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 어법상 옳은 문장만을 있는 대로 고른 것은?\n\n<보기>\nⓐ This witty creation is actually a work of art creating by the visual artist Helga Stentzel.\nⓑ Using everyday items, she creates playful visual illusions that force you to look twice.\nⓒ By simply add some colorful clothespins, she was able to transform her sweatshirt into a horse.\nⓓ It is her active observation skills that allow her to make magic out of the ordinary.\nⓔ This keen observation is that enables her to continuously produce creative works of art.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓓ",
+"ⓑ, ⓔ",
+"ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ 작품은 예술가에 의해 '만들어진' 것이므로 수동의 의미를 지닌 과거분사 created로 고쳐야 한다. ⓒ 전치사 By 뒤에는 동명사가 와야 하므로 add를 adding으로 고쳐야 한다. ⓔ 선행사가 없고 is의 보어 역할을 하는 명사절을 이끌어야 하므로 that을 관계대명사 what으로 고쳐야 한다. ⓑ는 force+목적어+to부정사, ⓓ는 it is ~ that 강조구문과 allow+목적어+to부정사가 바르게 쓰였으므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7e18cea871",
+"typeId": "eng-h2-b01-u4m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답을 완성할 수 있도록 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\nWhen Yusra Mardini was a young girl growing up in Damascus, Syria, her life centered around swimming. Her father was a former professional swimmer, and she started learning how to swim from a young age.\n\nQ. What sport was important in Yusra's life when she was young?\n→ The sport was __________.",
+"selfGrade": true,
+"answer": "swimming",
+"solution": "지문에서 Yusra의 어린 시절 삶이 수영을 중심으로 이루어졌다고 설명한다. 'her life centered around swimming'에서 중요한 스포츠가 수영임을 알 수 있다. 따라서 정답은 swimming이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6ce517f5be",
+"typeId": "eng-h2-b01-u4m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답을 완성할 수 있도록 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\nHer father was a former professional swimmer, and she started learning how to swim from a young age. When she was nine years old, she was already faster than many older swimmers.\n\nQ. Who was a former professional swimmer?\n→ Yusra's __________ was a former professional swimmer.",
+"selfGrade": true,
+"answer": "father",
+"solution": "지문 첫 문장에서 'Her father was a former professional swimmer'라고 설명한다. 따라서 과거에 전문 수영 선수였던 사람은 Yusra의 아버지이다. 빈칸에는 father가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d465e26ca4",
+"typeId": "eng-h2-b01-u4m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답을 완성할 수 있도록 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\nShe enjoyed watching Olympic swimming events with her father, which led her to dream about competing in the Olympics. She got the chance to represent Syria in an international swimming championship, and it seemed like her Olympic dream might someday come true.\n\nQ. Which country did Yusra get the chance to represent in an international swimming championship?\n→ She got the chance to represent __________.",
+"selfGrade": true,
+"answer": "Syria",
+"solution": "지문에서 Yusra가 국제 수영 선수권 대회에 시리아를 대표하여 참가할 기회를 얻었다고 설명한다. 'represent Syria'라는 표현에서 정답을 직접 찾을 수 있다. 따라서 빈칸에는 Syria가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b01-u4m7s0t0",
+"custom": true
 }
 ]

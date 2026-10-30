@@ -8536,5 +8536,337 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b03-u3m3s0t0",
 "custom": true
+},
+{
+"id": "fill-2842b6af68",
+"typeId": "eng-h1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAn hour later, his dad still keeps winning easily, but the boy is learning from the experience. Every now and then, he even surprises himself with a decent return, and a few times, he almost hits the ball past his dad. The boy later on decides to challenge his older brother. His brother is a better player, but the boy likes the idea that he can work even harder.",
+"choices": [
+"한 시간 후, 소년은 아빠를 쉽게 이기기 시작한다.",
+"소년은 가끔 괜찮은 리턴을 해서 스스로 놀라기도 한다.",
+"소년의 형은 소년보다 실력이 부족한 선수이다.",
+"소년은 형에게 도전하라는 제안을 거절한다.",
+"소년은 아빠와의 경기에서 아무것도 배우지 못한다."
+],
+"answer": "②",
+"solution": "'Every now and then, he even surprises himself with a decent return'에서 소년이 가끔 괜찮은 리턴으로 스스로 놀란다는 것을 알 수 있으므로 ②가 일치한다. 한 시간 후에도 아빠가 여전히 쉽게 이기고(①), 형은 소년보다 더 잘하는 선수이다(③). 소년은 스스로 형에게 도전하기로 하며(④), 경험에서 배우고 있다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e247b42726",
+"typeId": "eng-h1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThe boy learns from his mistakes and develops new skills by practicing. He practices hard after school, on weekends, and on holidays until he is able to join the regional team. Eventually, he participates in the national championship and makes it all the way to the finals.",
+"choices": [
+"소년은 실수로부터 배운다.",
+"소년은 연습을 통해 새로운 기술을 익힌다.",
+"소년은 방과 후, 주말, 휴일에 열심히 연습한다.",
+"소년은 지역 팀에 들어가게 된다.",
+"소년은 전국 대회 준결승에서 탈락한다."
+],
+"answer": "⑤",
+"solution": "'makes it all the way to the finals'에서 소년은 전국 대회 결승까지 진출했음을 알 수 있다. 따라서 준결승에서 탈락한다는 ⑤는 글의 내용과 일치하지 않는다. 나머지 ①~④는 모두 글에 그대로 나와 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-14b38a20f5",
+"typeId": "eng-h1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 답할 때, 질문에 대한 답으로 알맞은 것은?\n\nLet’s rewind to the point at which the boy first faces his dad across the net. His first attempt does not go any better, and he still gets hit on the elbow on his second try. However, he picks up the ball and tries again anyway.\n\nQ: Where does the boy get hit on his second try?",
+"choices": [
+"on the head",
+"on the knee",
+"on the elbow",
+"on the hand",
+"on the shoulder"
+],
+"answer": "③",
+"solution": "'he still gets hit on the elbow on his second try'에서 소년이 두 번째 시도에서 팔꿈치에 공을 맞았다는 것을 알 수 있다. 따라서 정답은 ③ on the elbow이다. 그래도 소년은 공을 주워 다시 시도한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5a02917ff9",
+"typeId": "eng-h1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용과 일치하는 것만을 <보기>에서 있는 대로 고른 것은?\n\nLet’s rewind to the point at which the boy first faces his dad across the net. His first attempt does not go any better, and he still gets hit on the elbow on his second try. However, he picks up the ball and tries again anyway.\nAn hour later, his dad still keeps winning easily, but the boy is learning from the experience. Every now and then, he even surprises himself with a decent return, and a few times, he almost hits the ball past his dad. The boy later on decides to challenge his older brother. His brother is a better player, but the boy likes the idea that he can work even harder.\nThe boy learns from his mistakes and develops new skills by practicing. He practices hard after school, on weekends, and on holidays until he is able to join the regional team. Eventually, he participates in the national championship and makes it all the way to the finals. He finds his opponent to be skillful and smart, but he plays hard. He finds himself at match point, and the audience holds its breath. He realizes how much he has tried to achieve what he wants. For years he has gotten up early to practice and has loved the challenge of improving his game. He serves for the match and sneaks the ball past his opponent. He punches the air in triumph. He has become truly awesome!\n\n<보기>\n(a) Even after being hit on the elbow, the boy does not give up and tries again.\n(b) An hour later, the boy finally manages to beat his dad a few times.\n(c) The boy chooses to play against his brother although his brother is more skilled than he is.\n(d) The boy makes it to the finals of the national championship after joining the regional team.\n(e) At match point, the boy’s opponent serves, and the boy fails to return the ball.",
+"choices": [
+"(a), (b)",
+"(a), (c), (d)",
+"(b), (c), (e)",
+"(a), (c), (d), (e)",
+"(b), (d), (e)"
+],
+"answer": "②",
+"solution": "(a)는 팔꿈치에 맞고도 공을 주워 다시 시도하므로 일치하고, (c)는 형이 더 잘하는 선수인데도 도전하므로 일치하며, (d)는 지역 팀에 들어간 뒤 전국 대회 결승까지 진출하므로 일치한다. (b)는 'almost hits the ball past his dad'라고 했으므로 아빠를 이긴 것이 아니라 거의 이길 뻔한 것이고, 한 시간 후에도 아빠가 여전히 쉽게 이기고 있다. (e)는 매치 포인트에서 서브를 넣은 사람이 소년이고 그 공을 상대 선수가 받아내지 못했으므로 일치하지 않는다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-db1ce5270e",
+"typeId": "eng-h1-b03-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nEating local food reduces CO₂ emissions that associated with transportation.",
+"selfGrade": true,
+"answer": "associated → are associated",
+"solution": "관계대명사 that이 이끄는 절에서 주어 CO₂ emissions는 '배출되는 것'이 아니라 '관련되는' 대상이므로 수동태가 필요하다. 동사 associate는 be동사와 함께 수동태 are associated로 써야 한다. 따라서 associated를 are associated로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5db4431926",
+"typeId": "eng-h1-b03-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nPut a lid on the pan while cooking, which reduce cooking time by up to 40 percent.",
+"selfGrade": true,
+"answer": "reduce → reduces",
+"solution": "계속적 용법의 관계대명사 which는 앞 문장 전체(냄비에 뚜껑을 덮는 행위)를 선행사로 받아 3인칭 단수 취급한다. 따라서 동사도 단수형 reduces가 되어야 한다. reduce를 reduces로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-57d3e706c4",
+"typeId": "eng-h1-b03-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThe kitchen is a great place begin making eco-friendly adjustments in your daily life.",
+"selfGrade": true,
+"answer": "begin → to begin",
+"solution": "명사 place를 뒤에서 수식하여 '~할 장소'라는 의미를 나타내려면 to부정사의 형용사적 용법을 써야 한다. 동사원형 begin만 쓰면 수식 구조가 성립하지 않으므로 to begin으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7f838de616",
+"typeId": "eng-h1-b03-u9m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것을 고르시오.\n\nKlara said that the replica resembled Josie quite accurately, and she told Mr. Capaldi that he had done a good job of capturing Josie's appearance. Capaldi asked Klara to become Josie and to live in the replica with everything she had learned. He wanted her to learn Josie not just superficially, but deeply and entirely.",
+"choices": [
+"Klara는 복제품이 Josie와 전혀 닮지 않았다고 말했다.",
+"Capaldi는 Klara에게 Josie가 되어 달라고 부탁했다.",
+"Capaldi는 Josie의 겉모습을 담아내는 데 실패했다.",
+"Klara는 Josie를 피상적으로만 배우라고 요청받았다.",
+"Klara는 복제품에 대해 아무 의견도 말하지 않았다."
+],
+"answer": "②",
+"solution": "본문에서 Capaldi는 Klara에게 \"We will ask you to become her and to live in that replica of Josie\"라고 하며 Josie가 되어 달라고 부탁하므로 ②가 일치한다. Klara는 복제품이 Josie를 정확히 닮았다고 말했고, 깊고 완전하게 배우라고 요청받았으므로 나머지는 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u9m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e4dccddcba",
+"typeId": "eng-h1-b03-u9m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 내용으로 보아, Chrissie에 대한 설명으로 알맞은 것을 고르시오.\n\nChrissie said she had doubts about the whole plan. She had been afraid of losing Josie ever since she lost Sal. That was why she agreed with Capaldi on the replica. However, she said that no matter how well they made it, she did not think she would be able to accept the AF as her Josie.",
+"choices": [
+"Chrissie는 그 계획에 대해 전혀 의심이 없다.",
+"Chrissie는 Sal을 잃은 적이 한 번도 없다.",
+"Chrissie는 Josie를 잃을까 봐 두려워해 왔다.",
+"Chrissie는 복제품에 끝까지 반대해서 동의하지 않았다.",
+"Chrissie는 AF를 자신의 Josie로 쉽게 받아들일 수 있다고 했다."
+],
+"answer": "③",
+"solution": "본문에서 Chrissie는 \"I have been afraid of losing Josie ever since I lost Sal.\"라고 말하므로 ③이 맞다. 그녀는 Sal을 잃은 적이 있고, 그 두려움 때문에 복제품에 동의했으나 AF를 Josie로 받아들이기 어렵다고 했으므로 나머지는 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u9m4s0t0",
+"custom": true
+},
+{
+"id": "fill-7af8c1a710",
+"typeId": "eng-h1-b03-u9m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 내용으로 보아, 다음 질문에 대한 답으로 알맞은 것을 고르시오.\n\nWhat does Klara say at the end of the conversation?",
+"choices": [
+"그녀는 Josie가 결코 병을 이겨낼 수 없다고 말한다.",
+"그녀는 지금 당장 희망을 포기해야 한다고 말한다.",
+"그녀는 새로운 Josie가 전혀 필요 없을 것이라고 확신한다.",
+"그녀는 새로운 Josie가 필요 없을 수도 있으니 희망을 포기하지 말라고 말한다.",
+"그녀는 Josie의 결정을 배우고 싶지 않다고 말한다."
+],
+"answer": "④",
+"solution": "Klara는 대화 끝에서 \"there is a chance you will never need the new Josie. She may overcome her illness.\"라고 하며, \"it is wrong to give up hope already\"라고 말한다. 따라서 희망을 포기하지 말라는 ④가 알맞다. 확신이 아니라 가능성(a chance)을 말했으므로 ③은 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u9m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e12b7ed0c8",
+"typeId": "eng-h1-b03-u10m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 [ ] 안의 표현이 어법상 어색하다. 알맞게 고쳐 쓰시오.\n\nCommunity mapping is a collaborative process [which] community members create maps to address local issues by using online map services and various tools.",
+"selfGrade": true,
+"answer": "in which (또는 where)",
+"solution": "[ ] 뒤의 절 community members create maps는 주어(community members), 동사(create), 목적어(maps)를 모두 갖춘 완전한 절입니다. 관계대명사 which 뒤에는 주어나 목적어가 빠진 불완전한 절이 와야 하므로 여기서는 쓸 수 없습니다. 선행사 a collaborative process를 받으면서 완전한 절을 이끌 수 있는 '전치사+관계대명사' in which나 관계부사 where로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0eb07b7bca",
+"typeId": "eng-h1-b03-u10m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nDr. Im developed an interactive map of every restroom in New York City and made it (accessible / accessibly) to everyone.",
+"selfGrade": true,
+"answer": "accessible",
+"solution": "'make+목적어+목적격 보어' 구조에서 목적격 보어 자리에는 부사를 쓸 수 없고 형용사를 써야 합니다. 목적어 it(지도)이 '누구나 이용할 수 있는' 상태가 되었다는 뜻이므로 형용사 accessible이 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9cae1de20e",
+"typeId": "eng-h1-b03-u10m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안의 동사를 어법에 맞게 바꿔 쓰시오.\n\nImmediately after the disaster, volunteers and organizers from the OpenStreetMap community quickly employed satellite images to create maps of the (affect) area within 48 hours.",
+"selfGrade": true,
+"answer": "affected",
+"solution": "괄호 안의 동사는 명사 area를 앞에서 꾸미는 분사로 바꿔야 합니다. 지역이 지진의 '영향을 받은' 것이므로 수동의 의미를 지닌 과거분사 affected를 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u10m2s0t0",
+"custom": true
+},
+{
+"id": "fill-cfae8b797d",
+"typeId": "eng-h1-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nFalse information can cause emotional or financial harm to people. For example, false information about a certain group can stir up hatred against that group. It can also cause fights between people. In addition, misleading online reviews about questionable products often trick people into wasting money.",
+"choices": [
+"① False information is always harmless.",
+"② False information can cause fights between people.",
+"③ Online reviews never influence people's decisions.",
+"④ False information only causes financial harm.",
+"⑤ Misleading reviews always help people save money."
+],
+"answer": "②",
+"solution": "지문에서는 거짓 정보가 특정 집단에 대한 증오를 일으키고 사람들 사이의 다툼을 유발할 수 있다고 설명한다. 따라서 거짓 정보가 사람들 사이의 다툼을 일으킬 수 있다는 ②가 정답이다. 나머지 선택지는 거짓 정보의 피해나 온라인 리뷰의 영향을 지문과 다르게 설명하고 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-59c3c0398a",
+"typeId": "eng-h1-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 대한 답으로 가장 적절한 것은?\n\nIf you see a story that looks too good or too bad to be true, check the source first. Look at the website the story comes from. Does it look real? Are there spelling errors? Check that the story contains references and links to other information.\n\nQ. What should you check first when you find a story that seems too good to be true?",
+"choices": [
+"① The length of the story",
+"② The number of pictures",
+"③ The source of the story",
+"④ The color of the website",
+"⑤ The time you read the story"
+],
+"answer": "③",
+"solution": "지문에서는 지나치게 좋거나 나빠서 사실이라고 믿기 어려운 이야기를 발견하면 먼저 정보의 출처를 확인하라고 한다. 'check the source first'라는 표현이 정답의 직접적인 근거이다. 따라서 정보의 출처를 뜻하는 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3796ce3bd1",
+"typeId": "eng-h1-b03-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 내용을 가장 올바르게 이해한 학생은?\n\nWebsites with false information often do not have many real stories about other topics. They also often have lots of advertisements that pop up when you visit the sites. To avoid being tricked by false information, we should critically evaluate what we see online.\n\nWho best understands the passage?",
+"choices": [
+"① Minji: We should believe everything we see online.",
+"② Junho: Websites with many pop-up ads are always reliable.",
+"③ Yuna: There is no need to check information online.",
+"④ Jisoo: False information is easy to recognize without checking.",
+"⑤ Sora: We should think carefully about information we find online."
+],
+"answer": "⑤",
+"solution": "지문에서는 거짓 정보에 속지 않기 위해 온라인에서 접하는 정보를 비판적으로 평가해야 한다고 설명한다. Sora는 온라인 정보를 신중하게 생각하고 판단해야 한다고 말하므로 지문의 내용과 일치한다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-beeae00a8f",
+"typeId": "eng-h1-b03-u7m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nA ______ is an aircraft that can fly without a pilot on board and can be used to deliver items.",
+"choices": [
+"robot",
+"vehicle",
+"drone",
+"map",
+"application"
+],
+"answer": "③",
+"solution": "조종사가 탑승하지 않고 비행하며 물품 배송에 이용될 수 있는 비행체는 드론(drone)이다. 따라서 빈칸에는 drone이 가장 적절하다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a03213dce6",
+"typeId": "eng-h1-b03-u7m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 단어의 의미로 가장 알맞은 것은?\n\nThe delivery company uses GPS maps to find the most efficient route.\n\n밑줄 친 단어: efficient",
+"choices": [
+"위험한",
+"효율적인",
+"전통적인",
+"복잡한",
+"비싼"
+],
+"answer": "②",
+"solution": "efficient는 '효율적인'이라는 뜻이다. 문장은 배송 회사가 GPS 지도를 이용하여 가장 효율적인 경로를 찾는다는 의미이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3d78438546",
+"typeId": "eng-h1-b03-u7m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 해당하는 영어 단어를 주어진 문장에서 찾아 쓰시오.\n\nThe company uses autonomous vehicles to transport items without human drivers.\n\n뜻: 자율적인, 자율 주행의\n\n정답: ____________________",
+"selfGrade": true,
+"answer": "autonomous",
+"solution": "autonomous는 '자율적인' 또는 '자율 주행의'라는 뜻의 형용사이다. autonomous vehicles는 사람의 직접적인 운전 없이 이동할 수 있는 자율 주행 차량을 의미한다. 따라서 정답은 autonomous이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m7s0t0",
+"custom": true
+},
+{
+"id": "fill-86fbf380a5",
+"typeId": "eng-h1-b03-u7m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 대한 답을 완성하시오. 빈칸에는 지문에 나온 단어를 활용하여 정확히 6단어로 쓰시오.\n\nTaekbae services have developed rapidly thanks to advancements in technology. Korean companies are testing the possibility of using autonomous vehicles, delivery robots, and drones for deliveries. To maintain trust with customers, the Korean delivery industry prioritizes rapid, safe, and affordable transportation. These efforts and the adoption of advanced delivery technology will continue to support the development of Korean delivery services.\n\nQ. What are Korean companies testing for future deliveries?\n\n→ They are testing the possibility of using ____________________ for future deliveries.\n\n(조건)\n① 지문에 제시된 세 가지 첨단 배송 수단을 모두 포함할 것.\n② 지문에 나온 순서를 그대로 유지할 것.\n③ 접속사와 쉼표를 정확히 사용할 것.\n④ 빈칸에 정확히 6단어를 쓸 것.",
+"selfGrade": true,
+"answer": "autonomous vehicles, delivery robots, and drones",
+"solution": "지문에서는 한국 기업들이 미래 배송을 위해 자율 주행 차량, 배송 로봇, 드론의 활용 가능성을 시험하고 있다고 설명한다. 이를 지문 순서대로 나열하면 autonomous vehicles, delivery robots, and drones이다. 단어 수는 autonomous(1), vehicles(2), delivery(3), robots(4), and(5), drones(6)으로 정확히 6개이다. 세 가지 배송 수단을 모두 포함하고 쉼표와 접속사도 올바르게 사용하므로 제시된 조건을 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b03-u7m7s0t0",
+"custom": true
 }
 ]

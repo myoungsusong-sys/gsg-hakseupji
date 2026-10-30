@@ -1325,5 +1325,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b06-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-094d002d5a",
+"typeId": "eng-m2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nI want to buy new something for my room.",
+"selfGrade": true,
+"answer": "new something → something something new (즉 something new)",
+"solution": "-thing으로 끝나는 부정대명사(something, anything, nothing 등)는 형용사가 뒤에서 꾸며 줍니다. 따라서 'new something'이 아니라 'something new'가 되어야 합니다. 어순을 바꾸어 'something new'로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b6b0f728bd",
+"typeId": "eng-m2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nI have a friend who live in Insadong.",
+"selfGrade": true,
+"answer": "live → lives",
+"solution": "주격 관계대명사 who가 이끄는 절의 동사는 선행사의 수에 맞춥니다. 선행사 'a friend'가 3인칭 단수이므로 동사도 단수형이 되어야 합니다. 따라서 'live'를 'lives'로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ec11622901",
+"typeId": "eng-m2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nVan Gogh is a painter which painted The Starry Night.",
+"selfGrade": true,
+"answer": "which → who",
+"solution": "선행사가 사람(a painter)일 때는 주격 관계대명사로 who를 씁니다. 사물에 쓰는 which는 알맞지 않으므로 'which'를 'who'로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u0m2s0t0",
+"custom": true
 }
 ]

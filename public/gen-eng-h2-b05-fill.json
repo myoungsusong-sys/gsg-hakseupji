@@ -2735,5 +2735,178 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-a8ba019124",
+"typeId": "eng-h2-b05-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 단어를 어법에 맞게 바꾸어 빈칸에 쓰시오. (단, 한 단어로 쓸 것)\n\nCax's story about accepting her new body was very ________ (inspire) to many people on social media.",
+"selfGrade": true,
+"answer": "inspiring",
+"solution": "주어 Cax's story는 사람들에게 감동을 '주는' 대상이므로 능동의 의미를 가진 현재분사 inspiring을 써야 한다. 과거분사 inspired는 감동을 '받는' 사람이 주어일 때 쓴다. 감정을 나타내는 분사는 주어가 감정을 일으키는지, 느끼는지에 따라 구분한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e8ef463531",
+"typeId": "eng-h2-b05-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 단어를 어법에 맞게 바꾸어 빈칸에 쓰시오. (단, 두 단어로 쓸 것)\n\nLaura Thompson, a guidance counselor at the local college, uses her social media channel ________ ________ (give) advice to young students.",
+"selfGrade": true,
+"answer": "to give",
+"solution": "이 문장에는 이미 동사 uses가 있으므로 give를 동사 형태로 다시 쓸 수 없다. '조언을 하기 위해'라는 목적의 뜻이므로 부사적 용법의 to부정사 to give를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1377f5c1cc",
+"typeId": "eng-h2-b05-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 단어를 어법에 맞게 바꾸어 빈칸에 쓰시오. (단, 두 단어로 쓸 것)\n\nCax ________ ________ (diagnose) with cancer at age 14, and she lost her right leg at 16 after surgery.",
+"selfGrade": true,
+"answer": "was diagnosed",
+"solution": "Cax는 암 진단을 '하는' 사람이 아니라 '받는' 사람이므로 수동태(be동사 + 과거분사)를 써야 한다. 14살 때의 일이고 주어가 3인칭 단수이므로 be동사는 was를 쓴다. 따라서 답은 was diagnosed이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1c7f00e34c",
+"typeId": "eng-h2-b05-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 우리말 뜻으로 알맞은 것을 고르시오.\n\nMost participants' estimations of their partners' responses were pessimistic.",
+"choices": [
+"낙관적인",
+"비관적인",
+"현실적인",
+"적극적인",
+"호의적인"
+],
+"answer": "②",
+"solution": "pessimistic은 '비관적인'이라는 뜻의 형용사이다. 지문에서 참가자들이 상대방의 평가를 실제보다 나쁘게 예측했다는 맥락과도 일치한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6b73112e47",
+"typeId": "eng-h2-b05-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이가 설명하는 단어로 가장 알맞은 것을 고르시오.\n\nto think that someone or something is smaller, cheaper, or less important than it really is",
+"choices": [
+"underestimate",
+"overestimate",
+"appreciate",
+"recognize",
+"emphasize"
+],
+"answer": "①",
+"solution": "'실제보다 작게·덜 중요하게 평가하다'라는 풀이는 '과소평가하다'를 뜻하는 underestimate에 해당한다. 지문의 'We often underestimate ourselves'와도 의미가 같다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0c4abb09ce",
+"typeId": "eng-h2-b05-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nWhen you first meet someone, you want to make a good ____________ on that person.",
+"choices": [
+"impression",
+"decision",
+"promise",
+"question",
+"mistake"
+],
+"answer": "①",
+"solution": "'좋은 인상을 주다'라는 의미가 되어야 하므로 '인상'을 뜻하는 impression이 알맞다. make a good impression는 '좋은 인상을 주다'라는 표현이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e5a1745b7a",
+"typeId": "eng-h2-b05-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nWith the arrival of smart fish farming technology driven by AI, fish farmers are able to provide healthy, [affordable] seafood to families everywhere.",
+"choices": [
+"expensive",
+"reasonably priced",
+"healthy",
+"fresh",
+"rare"
+],
+"answer": "②",
+"solution": "affordable은 '(가격이) 감당할 수 있는, 적당한'이라는 뜻이다. 따라서 '적당한 가격의'라는 뜻의 reasonably priced가 가장 가깝다. expensive는 반대 뜻이고, healthy는 문장에 따로 나온 다른 형용사다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dae1a7fd8a",
+"typeId": "eng-h2-b05-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nsomething that is not normal or usual, especially in the body or health of a living thing",
+"choices": [
+"profitability",
+"generation",
+"observation",
+"abnormality",
+"precision"
+],
+"answer": "④",
+"solution": "영영풀이는 '정상적이지 않은 것, 특히 생물의 몸이나 건강에 나타나는 이상'을 뜻하므로 abnormality(이상, 기형)가 답이다. 본문에서 카메라와 센서가 sea lice, physical wounds와 함께 abnormalities도 기록한다고 나온다. profitability는 '수익성', generation은 '세대', observation은 '관찰', precision은 '정밀성'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0eaf8f501e",
+"typeId": "eng-h2-b05-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오.\n\n그들은 시행착오를 통해 얻은 경험을 활용했다.\n→ They took advantage of their experience gained through trial and __________.",
+"selfGrade": true,
+"answer": "error",
+"solution": "'시행착오'는 영어로 trial and error라고 한다. 따라서 빈칸에는 error가 들어간다. take advantage of는 '~을 활용하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ee2da1d559",
+"typeId": "eng-h2-b05-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 한 번씩만 사용하여 문장을 완성하시오. (필요하면 첫 글자를 대문자로 바꿀 것)\n\n컴퓨터 비전은 양식업자들이 질병이 퍼지기 전에 그것을 식별하고 추적할 수 있게 해 준다.\n\n<보기>\nallows / before / and / diseases / to / track / they / computer vision / identify / spread / fish farmers",
+"selfGrade": true,
+"answer": "Computer vision allows fish farmers to identify and track diseases before they spread.",
+"solution": "'A가 ~할 수 있게 해 주다'는 'allow + 목적어 + to부정사'로 쓰므로 allows fish farmers to identify and track이 된다. 우리말이 '식별하고 추적할'의 순서이므로 identify and track 순서로 쓴다. '질병이 퍼지기 전에'는 접속사 before를 써서 before they spread로 나타낸다. 주어 computer vision은 3인칭 단수이므로 동사에 -s를 붙여 allows로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-20638906a6",
+"typeId": "eng-h2-b05-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것 2개를 찾아 기호를 쓰고 바르게 고치시오.\n\nAn essential element in providing healthy fish to consumers is the fish farmers' ability to detect and prevent sea lice, a significant ⓐ[threat] to fish health and profitability. One of the most modern methods to do this is through the power of computer vision and precision sensors, allowing fish farmers to identify and track diseases ⓑ[after] they spread. An aquaculture system has already been developed in Norway. It can hold up to 150,000 salmon in a sea cage, regularly inducing each fish into a tube where high-ⓒ[resolution] cameras and sensors record everything about each individual salmon, as well as any ⓓ[signs] of sea lice, physical wounds, or abnormalities. Such ⓔ[tiny] amounts of data and other information are taken care of by the AI system.",
+"selfGrade": true,
+"answer": "ⓑ after → before, ⓔ tiny → huge",
+"solution": "질병을 '식별하고 추적하는' 목적은 병이 퍼지기 전에 막는 것이므로 ⓑ after는 before로 고쳐야 한다. 또 15만 마리 연어 한 마리 한 마리의 정보와 수백만 장의 이미지를 AI가 처리한다는 흐름이므로 ⓔ tiny는 huge로 고쳐야 한다. 나머지 ⓐ threat(위협), ⓒ resolution(해상도), ⓓ signs(징후)는 문맥에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m7s0t0",
+"custom": true
 }
 ]

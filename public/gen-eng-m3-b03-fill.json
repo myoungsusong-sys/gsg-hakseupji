@@ -5636,5 +5636,592 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u5m0s0t0",
 "custom": true
+},
+{
+"id": "fill-4d63b2d8ab",
+"typeId": "eng-m3-b03-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 두 문장을 현재분사를 사용하여 한 문장으로 바꿀 때, 빈칸에 알맞은 것은?\n\n• The boy is my brother.\n• The boy is wearing a blue cap.\n→ The boy ____ a blue cap is my brother.",
+"choices": [
+"wear",
+"wears",
+"wearing",
+"wore",
+"to wear"
+],
+"answer": "③",
+"solution": "'파란 모자를 쓰고 있는 소년'이라는 뜻으로 명사 the boy를 꾸며 주어야 한다. 능동·진행의 의미이므로 현재분사 wearing을 쓴다. 따라서 정답은 ③ wearing이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-e4e3fc82e2",
+"typeId": "eng-m3-b03-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 두 문장을 현재분사를 사용하여 한 문장으로 바르게 바꾼 것은?\n\n• I know the man.\n• The man is talking to the teacher.",
+"choices": [
+"I know the man talk to the teacher.",
+"I know the man talked to the teacher.",
+"I know the man to talk to the teacher.",
+"I know the man talking to the teacher.",
+"I know the man talks to the teacher."
+],
+"answer": "④",
+"solution": "'선생님과 이야기하고 있는 그 남자'라는 뜻으로 the man을 분사구가 뒤에서 수식해야 한다. 진행·능동의 의미이므로 현재분사 talking을 사용한다. 따라서 정답은 ④ I know the man talking to the teacher.이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3543f256f6",
+"typeId": "eng-m3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 뜻하는 단어로 가장 알맞은 것은?\n\nmaking you laugh or smile; funny",
+"choices": [
+"critical",
+"humorous",
+"comfortable",
+"nervous",
+"serious"
+],
+"answer": "②",
+"solution": "'웃게 하거나 미소 짓게 하는, 재미있는'이라는 뜻풀이에 맞는 단어는 '유머러스한, 웃긴'을 뜻하는 humorous이다. critical은 '위중한', comfortable은 '편안한', nervous는 '긴장한', serious는 '진지한'이라는 뜻이므로 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-20ee115a55",
+"typeId": "eng-m3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAfter the long walk, I sat on the sofa and felt very ________.",
+"choices": [
+"critical",
+"humorous",
+"comfortable",
+"dangerous",
+"angry"
+],
+"answer": "③",
+"solution": "오랜 산책 후 소파에 앉아 '매우 ~하게 느꼈다'는 문맥이므로 '편안한'을 뜻하는 comfortable이 알맞다. critical(위중한), humorous(웃긴), dangerous(위험한), angry(화난)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a98f8e6b3a",
+"typeId": "eng-m3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 쓰임이 알맞지 않은 것은?",
+"choices": [
+"Riding a roller coaster is really exciting.",
+"The patient is in a critical condition in the hospital.",
+"Please use a handkerchief to wipe your tears.",
+"This bed is soft and comfortable to sleep in.",
+"A sad and boring story always makes me laugh out loud."
+],
+"answer": "⑤",
+"solution": "⑤는 '슬프고 지루한 이야기가 늘 나를 크게 웃게 한다'는 뜻으로, '슬프고 지루한'과 '크게 웃는다'가 서로 어울리지 않아 쓰임이 알맞지 않다. 나머지 ①~④는 단어가 문맥에 맞게 자연스럽게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-90ccbfb969",
+"typeId": "eng-m3-b03-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 잘못 짝지어진 것은?",
+"choices": [
+"museum: 박물관",
+"exhibition: 전시",
+"member: 회원, 단원",
+"photo: 사진",
+"watch: 지도"
+],
+"answer": "⑤",
+"solution": "watch는 '손목시계'를 뜻하는 단어로, 본문에서 김구와 윤봉길의 사진 아래에 놓인 두 개의 시계를 가리킨다. '지도, 안내'는 guide나 map 등의 뜻이므로 ⑤가 잘못된 짝이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3e783a8cf0",
+"typeId": "eng-m3-b03-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nKim Koo formed the secret organization in 1931.",
+"choices": [
+"① 조직, 단체",
+"② 정부",
+"③ 군대",
+"④ 공원",
+"⑤ 임무"
+],
+"answer": "①",
+"solution": "organization은 '조직, 단체'를 뜻한다. 본문에서 김구가 1931년에 비밀 조직(한인 애국단)을 결성했다는 내용에 쓰였다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1d4fe249ba",
+"typeId": "eng-m3-b03-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 알맞은 것은?\n\na soldier with a high rank who leads an army",
+"choices": [
+"① leader",
+"② member",
+"③ general",
+"④ patriot",
+"⑤ organization"
+],
+"answer": "③",
+"solution": "'높은 계급을 가진 군대를 이끄는 군인'은 general(장군)의 뜻풀이이다. 본문에서 김구가 상하이 공원에서 일본 장군들을 처단할 계획을 세웠다는 내용에 쓰였으므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4ad97d4b82",
+"typeId": "eng-m3-b03-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장이 어법상 올바르도록 괄호 안의 동사를 알맞은 형태로 고쳐 쓰시오.\n\nSince I was young, I ( be ) a big fan of baseball.",
+"selfGrade": true,
+"answer": "have been",
+"solution": "'Since + 과거시점'은 과거부터 지금까지 이어지는 상황을 나타내므로 현재완료(have/has + 과거분사)를 쓴다. 주어가 I이므로 be동사의 현재완료형은 'have been'이다. 따라서 be를 have been으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e4d78cfa93",
+"typeId": "eng-m3-b03-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장이 어법상 올바르도록 괄호 안의 동사를 알맞은 형태로 고쳐 쓰시오.\n\nMy job is to watch ( record ) games and collect data.",
+"selfGrade": true,
+"answer": "recorded",
+"solution": "games(경기)는 '녹화되는' 대상이므로 수동의 의미를 지닌 과거분사가 명사를 앞에서 꾸며야 한다. 따라서 record를 과거분사 recorded로 고쳐 'recorded games(녹화된 경기)'로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ba0f6a1020",
+"typeId": "eng-m3-b03-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장이 어법상 올바르도록 괄호 안의 동사를 알맞은 형태로 고쳐 쓰시오.\n\nIt is my responsibility to have each song ( play ) the same way.",
+"selfGrade": true,
+"answer": "played",
+"solution": "사역동사 have는 목적어와 목적격보어의 관계가 수동일 때 목적격보어로 과거분사를 쓴다. each song은 '연주되는' 대상이므로 play를 과거분사 played로 고쳐 'have each song played'로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-af795dc79b",
+"typeId": "eng-m3-b03-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 뜻하는 단어로 알맞은 것은?\n\na person whose job is to arrange and sell flowers",
+"choices": [
+"florist",
+"gardener",
+"designer",
+"farmer",
+"director"
+],
+"answer": "①",
+"solution": "꽃을 다듬고 꽃꽂이를 하며 꽃을 파는 사람은 florist(플로리스트, 꽃집 주인)입니다. gardener는 정원을 가꾸는 사람이고, designer는 디자인하는 사람입니다. farmer와 director도 풀이와 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-99352f9232",
+"typeId": "eng-m3-b03-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nI design movie sets sometimes and I <u>decorate</u> shops with flowers.",
+"choices": [
+"설계하다",
+"장식하다",
+"추천하다",
+"참석하다",
+"재배하다"
+],
+"answer": "②",
+"solution": "decorate는 '장식하다, 꾸미다'라는 뜻입니다. 이 문장은 '나는 가끔 영화 세트를 디자인하고, 꽃으로 가게를 장식한다'는 뜻입니다. 설계하다는 design, 추천하다는 recommend, 참석하다는 attend, 재배하다는 grow에 해당합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3cf24c40ed",
+"typeId": "eng-m3-b03-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"color – colorful",
+"help – helpful",
+"use – useful",
+"care – careful",
+"design – designer"
+],
+"answer": "⑤",
+"solution": "①~④는 명사에 -ful을 붙여 형용사를 만든 관계입니다. ⑤ design – designer는 동사에 -er을 붙여 '~하는 사람'을 뜻하는 명사를 만든 관계이므로 나머지와 다릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-efc3da5af2",
+"typeId": "eng-m3-b03-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸 (a)~(c)에 들어갈 말이 바르게 짝지어진 것은?\n\nTom is a florist. He (a)__________ a high school for florists and gardeners. There, he learned how to grow and (b)__________ for different types of flowers. If you like plants and the arts, Tom highly (c)__________ that you become a florist.",
+"choices": [
+"attended to – care – recommends",
+"attended – take – recommends",
+"attended – care – recommends",
+"attended – care – creates",
+"went – care – decorates"
+],
+"answer": "③",
+"solution": "(a) '~에 다니다'는 attend 뒤에 목적어를 바로 붙여 씁니다. attend to는 '~을 처리하다, ~에 주의를 기울이다'라는 뜻이고, went는 to 없이 목적어를 바로 쓸 수 없습니다. (b) '~을 돌보다'는 care for이며, take는 take care of로 써야 합니다. (c) '플로리스트가 되기를 권한다'는 뜻이므로 recommends가 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-38967482d7",
+"typeId": "eng-m3-b03-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ의 영영풀이로 알맞지 않은 것은?\n\nHi, I am Tom. I am a ⓐ<u>florist</u>. I ⓑ<u>attended</u> a high school for florists and gardeners. These days, I design movie sets sometimes and I ⓒ<u>decorate</u> shops with flowers. I am happy when I create something colorful with fresh flowers and ⓓ<u>greenery</u>. If you like plants and the arts, I highly ⓔ<u>recommend</u> you become a florist.",
+"choices": [
+"ⓐ florist: a person whose job is arranging and selling flowers",
+"ⓑ attend: to go to a place such as a school regularly",
+"ⓒ decorate: to make something look more attractive by adding things to it",
+"ⓓ greenery: a bright green color that is used in paintings",
+"ⓔ recommend: to tell someone that something is good or suitable"
+],
+"answer": "④",
+"solution": "greenery는 '초록 식물, 푸른 잎'이라는 뜻이고, 이 글에서도 fresh flowers와 함께 꽃 장식에 쓰는 초록 잎을 가리킵니다. green이 들어 있다고 '그림에 쓰는 초록색'으로 풀이한 ④가 함정입니다. 나머지 영영풀이는 모두 글의 문맥과 단어 뜻에 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ce233ca1e0",
+"typeId": "eng-m3-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nA lot of kiwi fruit is grown there, so New Zealand is known ______ the land of kiwi fruit.",
+"choices": [
+"as",
+"for",
+"to",
+"with",
+"by"
+],
+"answer": "①",
+"solution": "'~로(서) 알려져 있다'는 「be known as」로 쓴다. 뉴질랜드는 '키위의 나라'라는 자격으로 알려져 있으므로 as가 알맞다. be known for는 '~ 때문에(~으로) 유명하다', be known to는 '~에게 알려져 있다'라는 뜻이라 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f68a17b995",
+"typeId": "eng-m3-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nBecause of its natural beauty, many famous movies have been ______ in New Zealand.",
+"choices": [
+"make",
+"made",
+"making",
+"to make",
+"makes"
+],
+"answer": "②",
+"solution": "영화는 '만들어지는' 대상이므로 수동태를 써야 한다. 현재완료 수동태는 「have(has) been + 과거분사」 형태이므로 make의 과거분사 made가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c1d4b2d330",
+"typeId": "eng-m3-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nToday, New Zealanders are sometimes ______ Kiwis throughout the world.",
+"choices": [
+"call",
+"calls",
+"called",
+"calling",
+"to call"
+],
+"answer": "③",
+"solution": "뉴질랜드 사람들이 '키위라고 불리는' 것이므로 수동태 「be동사 + 과거분사」를 쓴다. are 뒤에는 과거분사 called가 와야 한다. 「call A B」의 수동태는 「A be called B」이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-df94fb60c4",
+"typeId": "eng-m3-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nA lot of kiwi fruit ①is grown in New Zealand, so the country ②knows as the land of kiwi fruit. Kiwi is also the name of one of New Zealand's native birds. The kiwi is special to New Zealanders because it ③is the symbol of the nation. Also, people from New Zealand ④are called Kiwis. Next time, don't ⑤be confused when someone uses the word kiwi.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "②",
+"solution": "뉴질랜드가 '키위의 나라로 알려져 있는' 것이므로 수동태 「be known as」를 써야 한다. 따라서 ② knows as는 is known as로 고쳐야 한다. ①은 과일이 '재배되는' 것이라 수동태가 맞고, ⑤는 부정 명령문 「Don't + be + 과거분사」 형태로 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f3ee71987e",
+"typeId": "eng-m3-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 올바른 문장만을 있는 대로 고른 것은?\n\n(a) Many famous movies have made in New Zealand.\n(b) You will be amazed by the fantastic views.\n(c) In the South Island, there are mountains that are covered with snow all year round.\n(d) New Zealanders are sometimes called Kiwis throughout the world.\n(e) When you hear the word kiwi, what is come to your mind?\n(f) Don't be confused when someone uses the word kiwi.",
+"choices": [
+"(a), (b), (c)",
+"(b), (c), (e)",
+"(b), (c), (d), (f)",
+"(a), (c), (d), (f)",
+"(b), (d), (e), (f)"
+],
+"answer": "③",
+"solution": "(a)는 영화가 '만들어진' 것이므로 현재완료 수동태 have been made로 고쳐야 한다. (e)의 come은 목적어를 취하지 않는 자동사라서 수동태로 쓸 수 없으므로 what comes to your mind로 고쳐야 한다. (b) be amazed by, (c) be covered with, (d) be called, (f) Don't be confused는 모두 수동태를 바르게 썼다. 따라서 올바른 문장은 (b), (c), (d), (f)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-53df3c535d",
+"typeId": "eng-m3-b03-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안의 동사를 어법에 맞게 고쳐 쓰시오.\n\nKim Koo always carried the watch that Yun (give) him before the mission.",
+"selfGrade": true,
+"answer": "had given",
+"solution": "김구가 시계를 가지고 다닌 것(carried, 과거)보다 윤봉길이 시계를 준 일이 먼저 일어났습니다. 과거의 어느 시점보다 앞선 일은 과거완료(had+p.p.)로 씁니다. 따라서 give는 had given으로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e2998d398b",
+"typeId": "eng-m3-b03-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안의 동사를 어법에 맞게 고쳐 쓰시오.\n\nYun said to Kim Koo, \"Please take my watch, and let me (have) yours.\"",
+"selfGrade": true,
+"answer": "have",
+"solution": "사역동사 let은 「let+목적어+동사원형」의 형태로 씁니다. 따라서 목적어 me 뒤에는 동사원형 have가 와야 합니다. to have, has, having은 모두 쓸 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bec76bde39",
+"typeId": "eng-m3-b03-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nKim Koo always carried Yun's watch in his jacket not forget Yun's sacrifice.\n\n어색한 부분: ____________ → 바르게 고친 표현: ____________",
+"selfGrade": true,
+"answer": "not forget → not to forget",
+"solution": "'윤봉길의 희생을 잊지 않기 위해'라는 목적을 나타내야 하므로 to부정사의 부사적 용법을 씁니다. to부정사를 부정할 때는 not을 to 앞에 두어 「not to+동사원형」으로 씁니다. 따라서 not forget을 not to forget으로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5686fad577",
+"typeId": "eng-m3-b03-u4m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 두 개 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nBefore Yun left for the mission, he said to Kim Koo, \"Sir, your watch is very old. Please take my watch, and let me ⓐto have yours.\" Kim Koo always carried Yun's watch in his jacket ⓑnot to forget Yun's sacrifice. After the museum tour, we visited the tombs of the three heroes. Their bodies ⓒhad been in Japan until Kim Koo ⓓbrings them to Hyochang Park after Korea's independence. By doing so, he ⓔshowed his deep love and respect for the sacrifice of the three heroes.\n\n기호      바르게 고친 표현\n(1) ______ → ____________________\n(2) ______ → ____________________",
+"selfGrade": true,
+"answer": "ⓐ to have → have, ⓓ brings → brought",
+"solution": "ⓐ 사역동사 let 뒤의 목적격보어는 동사원형이어야 하므로 to have를 have로 고칩니다. ⓓ 김구가 유해를 옮긴 것은 과거의 일이고, 그보다 앞서 유해가 일본에 있었던 일을 과거완료 had been으로 썼으므로 brings를 과거형 brought로 고칩니다. ⓑ는 목적을 나타내는 to부정사의 부정형이고, ⓒ는 앞선 일을 나타내는 과거완료, ⓔ는 과거시제여서 모두 바르게 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2ebb6bbe37",
+"typeId": "eng-m3-b03-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nPop art uses images from our daily lives. Artists paint cartoons, soup cans, and other common things. These images are all around us. Pop artists want everyone to enjoy art easily. They believe art is not only for special people.",
+"choices": [
+"the history of cartoons",
+"daily images used in pop art",
+"how to draw soup cans",
+"famous museums in the world",
+"the price of pop art works"
+],
+"answer": "②",
+"solution": "글은 팝아트가 만화, 수프 캔 등 일상의 이미지를 사용한다는 내용을 중심으로 설명하고 있다. 따라서 주제는 '팝아트에 사용되는 일상의 이미지'이다. 나머지 선지는 글에 나오지 않은 내용이거나 지엽적이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-786bd0b7db",
+"typeId": "eng-m3-b03-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nRoy Lichtenstein was a pop artist. He used cartoons in his art. His works were large and painted in lively colors. He even put speech balloons in his paintings. Many people were surprised because cartoons were not seen as art before.",
+"choices": [
+"A Painter Who Hated Cartoons",
+"Roy Lichtenstein and His Cartoon Art",
+"The Smallest Paintings in the World",
+"How to Make Speech Balloons",
+"Colors That Make People Sad"
+],
+"answer": "②",
+"solution": "글은 팝아트가인 Roy Lichtenstein이 만화를 이용해 작품을 만들었다는 내용이 중심이다. 따라서 제목으로는 'Roy Lichtenstein과 그의 만화 예술'이 가장 알맞다. ①은 그가 만화를 싫어했다는 반대 내용이라 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-80d7eef896",
+"typeId": "eng-m3-b03-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nPop artists believe that anyone can create and enjoy art. You do not need special skills to start. By using daily images in a creative way, you can make a work of art, too. Why not try making pop art today?",
+"choices": [
+"예술은 특별한 사람만 할 수 있다.",
+"만화는 예술이 될 수 없다.",
+"누구나 일상의 이미지로 예술을 만들 수 있다.",
+"그림은 밝은 색으로만 그려야 한다.",
+"예술 작품은 반드시 크게 만들어야 한다."
+],
+"answer": "③",
+"solution": "글은 누구나 특별한 기술 없이 일상의 이미지를 창의적으로 사용해 예술을 만들 수 있다는 점을 강조한다. 따라서 요지는 ③이다. ①은 글의 내용과 정반대이고, 나머지는 글에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-892c7373c4",
+"typeId": "eng-m3-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\n\n→ 내가 영어를 잘 말할 수 있으면 좋을 텐데.\nI wish I ___________ speak English well.",
+"selfGrade": true,
+"answer": "could",
+"solution": "'~할 수 있으면 좋을 텐데'라는 소망을 나타내는 「I wish + 주어 + could + 동사원형」 구문이다. can의 과거형인 could가 빈칸에 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5c0c060a77",
+"typeId": "eng-m3-b03-u8m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 알맞은 것을 고르시오.\n\n→ I wish I ___________ a bird. Then I could fly in the sky.",
+"choices": [
+"am",
+"is",
+"are",
+"were",
+"being"
+],
+"answer": "④",
+"solution": "「I wish + 주어 + were」는 '~라면 좋을 텐데'라는 현재 사실과 반대되는 소망을 나타내는 가정법 과거이다. 가정법에서는 주어와 상관없이 be동사로 were를 쓰므로 정답은 were이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d5abec1fbf",
+"typeId": "eng-m3-b03-u8m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장을 읽고 빈칸에 알맞은 한 단어를 쓰시오.\n\n→ I can't swim now, so I feel sad. I wish I ___________ swim like my friends.",
+"selfGrade": true,
+"answer": "could",
+"solution": "현재 수영을 할 수 없는 사실과 반대로 '수영할 수 있으면 좋을 텐데'라고 바라는 문장이다. 「I wish + 주어 + could + 동사원형」을 쓰므로 can의 과거형 could가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a5d868e5b0",
+"typeId": "eng-m3-b03-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThis movie is worth watch.\n\n<바르게 고쳐 쓴 표현>\n____________________",
+"selfGrade": true,
+"answer": "worth watching",
+"solution": "「be worth + 동명사(-ing)」는 '~할 가치가 있다'라는 뜻이다. 전치사 worth 뒤에는 동사원형이 아니라 동명사가 와야 한다. 따라서 worth watch를 worth watching으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-95e706f567",
+"typeId": "eng-m3-b03-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nIt is worthwhile to reading this book.\n\n<바르게 고쳐 쓴 표현>\n____________________",
+"selfGrade": true,
+"answer": "to read",
+"solution": "「It is worthwhile to + 동사원형」은 '~하는 것은 가치가 있다'라는 뜻이다. to부정사의 to 뒤에는 동사원형이 와야 한다. 따라서 to reading을 to read로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1002c9162c",
+"typeId": "eng-m3-b03-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nHer hard work is worthy to praise.\n\n<바르게 고쳐 쓴 표현>\n____________________",
+"selfGrade": true,
+"answer": "worthy of praise",
+"solution": "「be worthy of + 명사」는 '~을 받을 만한 가치가 있다'라는 뜻이다. 이 문장에서 praise는 '칭찬'이라는 명사로 쓰였다. 따라서 worthy to praise를 worthy of praise로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-71323ed6df",
+"typeId": "eng-m3-b03-u7m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글에서 어법상 어색한 부분을 모두 찾아 기호를 쓰고, 각각 바르게 고쳐 쓰시오.\n\nⓐ This old building is worth preserving.\nⓑ It is worthwhile to consider other options.\nⓒ Her efforts are worthy of respect.\nⓓ The problem is worth to discuss before making a decision.\nⓔ It is worthwhile comparing the two plans carefully.\nⓕ His suggestion is worthy of considering.\n\n<조건>\n• 어법상 어색한 문장은 모두 2개이다.\n• 어색한 표현과 바르게 고친 표현을 각각 쓸 것.\n• 기호는 알파벳순으로 쓸 것.\n\n<답안>\n(기호) __________\n(어색한 표현) __________ → (알맞은 표현) __________\n\n(기호) __________\n(어색한 표현) __________ → (알맞은 표현) __________",
+"selfGrade": true,
+"answer": "ⓓ worth to discuss → worth discussing / ⓕ worthy of considering → worth considering",
+"solution": "ⓓ의 「be worth」 뒤에는 동명사가 와야 하므로 worth to discuss를 worth discussing으로 고친다. ⓕ의 worthy는 「be worthy of + 명사」 또는 「be worthy of being + 과거분사」 등의 형태로 쓰이므로, 주어진 문맥에서는 worthy of considering을 worth considering으로 고치는 것이 자연스럽다. ⓐ는 worth preserving, ⓑ는 worthwhile to consider, ⓒ는 worthy of respect, ⓔ는 worthwhile comparing의 형태로 모두 어법상 올바르다. 따라서 정답은 ⓓ와 ⓕ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m2s0t0",
+"custom": true
 }
 ]

@@ -6804,5 +6804,50 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u0m1s2t3",
 "custom": true
+},
+{
+"id": "fill-9b43b3fb5e",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\overline{AB}=\\overline{AC}$인 이등변삼각형 $ABC$에서 $\\angle A=40^\\circ$일 때, $\\angle B$의 크기는?",
+"choices": [
+"$40^\\circ$",
+"$50^\\circ$",
+"$60^\\circ$",
+"$70^\\circ$",
+"$80^\\circ$"
+],
+"answer": "④",
+"solution": "이등변삼각형은 두 밑각의 크기가 같으므로 $\\angle B=\\angle C$입니다. 삼각형의 세 내각의 합은 $180^\\circ$이므로 $\\angle B=\\dfrac{180^\\circ-40^\\circ}{2}=70^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-573370da91",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\overline{AB}=\\overline{AC}$인 이등변삼각형 $ABC$에서 $\\angle C=64^\\circ$일 때, $\\angle A$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$52^\\circ$",
+"solution": "$\\overline{AB}=\\overline{AC}$이므로 두 밑각의 크기가 같아 $\\angle B=\\angle C=64^\\circ$입니다. 따라서 $\\angle A=180^\\circ-2\\times64^\\circ=52^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-cb2b317a8c",
+"typeId": "exam-m22-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 점 $D$는 변 $AC$ 위의 점이고 $\\overline{DA}=\\overline{DB}$입니다. $\\angle A=25^\\circ$일 때, $\\angle BDC$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$50^\\circ$",
+"solution": "$\\overline{DA}=\\overline{DB}$이므로 삼각형 $DAB$는 이등변삼각형이고, $\\angle DBA=\\angle A=25^\\circ$입니다. $\\angle BDC$는 삼각형 $DAB$의 외각이므로 $\\angle BDC=25^\\circ+25^\\circ=50^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m0s0t3",
+"custom": true
 }
 ]

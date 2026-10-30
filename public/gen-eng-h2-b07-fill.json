@@ -3095,5 +3095,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b07-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-077b6ec773",
+"typeId": "eng-h2-b07-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\na short stay at a place in the middle of a long journey",
+"choices": [
+"① migration",
+"② stopover",
+"③ mudflat",
+"④ organ",
+"⑤ resource"
+],
+"answer": "②",
+"solution": "'긴 여정 중간에 어떤 장소에 잠시 머무는 것'은 stopover(경유지, 중간 기착)이다. 본문에서 황해 갯벌은 동아시아-대양주 철새 이동 경로의 철새들에게 'a critical stopover point'를 제공한다고 나온다. migration은 '이주', mudflat은 '갯벌', organ은 '기관', resource는 '자원'이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4d4619b108",
+"typeId": "eng-h2-b07-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻의 연결이 바르지 않은 것은?",
+"choices": [
+"① migratory – 이주하는",
+"② featureless – 특색 없는",
+"③ undergo – 겪다",
+"④ critical – 사소한",
+"⑤ conservationist – 환경 보호 활동가"
+],
+"answer": "④",
+"solution": "critical은 '결정적인, 매우 중요한'이라는 뜻이므로 '사소한'과 연결한 ④가 틀렸다. 본문의 'a critical stopover point'와 'critically important'는 모두 '매우 중요한'이라는 뜻으로 쓰였다. 나머지 연결은 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0d08388561",
+"typeId": "eng-h2-b07-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nWhile these enormous stretches of tidal mud look ________ to the human eye, they have plenty of marine life forms.",
+"choices": [
+"① featureless",
+"② colorful",
+"③ crowded",
+"④ dangerous",
+"⑤ noisy"
+],
+"answer": "①",
+"solution": "While(~이지만)은 앞뒤 내용이 서로 반대임을 나타낸다. 뒤에서 갯벌에 해양 생물이 많다고 했으므로, 앞에는 겉보기에 '특별한 것이 없어 보인다'는 뜻의 featureless가 와야 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-22fe7a3bcd",
+"typeId": "eng-h2-b07-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 아래와 같이 쓸 때, <보기>의 단어 및 표현을 모두 한 번씩 사용하여 빈칸을 완성하시오. (단, 빈칸 하나에 한 단어씩 쓸 것)\n\nWeidensaul: The Yellow Sea mudflats between Korea and China are some of the largest tidal mudflats on the earth. Many birds on the East Asian-Australasian Flyway fly several thousand kilometers to get to the Yellow Sea. Here, they have to double their weight in less than two weeks and make another flight of several thousand kilometers up north. The Yellow Sea is one of the few places in the world where migratory birds can get the resources they need on their difficult journey.\n\nThe Yellow Sea mudflats serve as ________ ________ ________ where ________ ________ can ________ ________ ________ needed to ________ ________ ________.\n\n<보기>\nget / the resources / double / their weight / a critical stopover / migratory birds",
+"selfGrade": true,
+"answer": "a critical stopover migratory birds get the resources double their weight",
+"solution": "황해 갯벌은 철새들이 짧은 기간에 몸무게를 두 배로 늘리는 데 필요한 자원을 얻는 매우 중요한 경유지라는 것이 글의 요지이다. serve as 뒤에는 명사구 a critical stopover가 오고, 관계부사 where절의 주어는 migratory birds, 동사는 can get, 목적어는 the resources이다. needed to 뒤에는 동사원형 double과 목적어 their weight가 이어진다. get과 double의 자리를 바꾸면 뜻이 통하지 않으므로 답은 하나로 정해진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-de736b52ef",
+"typeId": "eng-h2-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 알맞게 고쳐 쓰시오.\n\nAfter returning to the UK, I found myself to read the book again.\n\n<어색한 표현> → <알맞게 고친 표현>\n__________ → __________",
+"selfGrade": true,
+"answer": "to read → reading",
+"solution": "「find + 목적어 + 목적격 보어」 구문에서 목적어와 목적격 보어가 능동 관계일 때 현재분사를 사용할 수 있다. 이 문장에서는 myself가 책을 읽는 동작의 주체이므로 to read를 reading으로 고쳐야 한다. 따라서 올바른 표현은 found myself reading이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1f28ff360b",
+"typeId": "eng-h2-b07-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 (A), (B) 중 어법상 어색한 것을 하나 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\n(A) Reading the story, the artist got inspiration for her sculpture. She found herself (B) to cut paper shapes out of the pages.\n\n<기호> → <알맞게 고친 표현>\n__________ → __________",
+"selfGrade": true,
+"answer": "(B) → cutting",
+"solution": "(A)의 Reading은 주절의 주어인 the artist가 이야기를 읽는 능동 관계를 나타내므로 적절하다. (B)는 「find + 목적어 + 현재분사」 구문으로, 목적어인 herself가 종이를 자르는 동작을 직접 하고 있으므로 현재분사 cutting을 써야 한다. 따라서 (B)의 to cut을 cutting으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u1m2s0t0",
+"custom": true
 }
 ]

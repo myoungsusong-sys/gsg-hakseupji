@@ -2808,5 +2808,222 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b06-u3m4s0t0",
 "custom": true
+},
+{
+"id": "fill-1f7bf025b7",
+"typeId": "eng-h2-b06-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 단어로 가장 알맞은 것을 고르시오.\n\nThe Football Association ________ players under the age of 12 from performing headers. (12세 미만 선수가 헤더를 하는 것을 금지한다)",
+"choices": [
+"prohibits",
+"recommends",
+"purchases",
+"analyzes",
+"introduces"
+],
+"answer": "①",
+"solution": "'금지하다'라는 뜻의 동사는 prohibit이다. 'prohibit A from -ing'는 'A가 ~하는 것을 금지하다'라는 표현이다. recommend(추천하다), purchase(구매하다), analyze(분석하다), introduce(도입하다)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c23a5a8e3f",
+"typeId": "eng-h2-b06-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 우리말 뜻으로 알맞은 것을 고르시오.\n\nFans can now easily purchase tickets online.",
+"choices": [
+"구매하다",
+"보호하다",
+"분석하다",
+"방송하다",
+"손상시키다"
+],
+"answer": "①",
+"solution": "purchase는 '구매하다, 사다'라는 뜻이다. 문장은 '팬들은 이제 온라인으로 쉽게 표를 구매할 수 있다'는 의미이다. 보호하다는 protect, 분석하다는 analyze, 방송하다는 broadcast, 손상시키다는 damage이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ff21c7a6ed",
+"typeId": "eng-h2-b06-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어를 고르시오.\n\nto harm or hurt the body or a part of the body (예: Repeated headers can ________ the brain.)",
+"choices": [
+"damage",
+"enjoy",
+"enter",
+"show",
+"identify"
+],
+"answer": "①",
+"solution": "'신체나 신체 일부를 해치다, 손상시키다'라는 뜻의 단어는 damage이다. 지문에서 '반복되는 헤더가 뇌를 손상시킬 수 있다(Repeated headers can damage the brain)'라고 쓰였다. enjoy(즐기다), enter(들어가다), show(보여주다), identify(식별하다)는 뜻이 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-edfbf55cf3",
+"typeId": "eng-h2-b06-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 vulnerable의 우리말 뜻으로 가장 알맞은 것은?\n\nFor more than fifty years, she dedicated her time to the sick and lonely people — the most vulnerable members of our society, often overlooked and isolated.",
+"choices": [
+"취약한",
+"유명한",
+"부유한",
+"용감한",
+"정직한"
+],
+"answer": "①",
+"solution": "vulnerable은 '취약한, 상처받기 쉬운'이라는 뜻이다. 문장에서도 '아프고 외로운 사람들', '자주 간과되고 고립된'과 같은 표현으로 사회적 약자를 설명하고 있다. 그러므로 '취약한'이 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ef96833d17",
+"typeId": "eng-h2-b06-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto give a lot of your time and energy to a person or a purpose",
+"choices": [
+"overlook",
+"isolate",
+"dedicate",
+"lean",
+"heal"
+],
+"answer": "③",
+"solution": "어떤 사람이나 목적에 많은 시간과 에너지를 바친다는 뜻이므로 '바치다, 헌신하다'를 뜻하는 dedicate가 정답이다. 본문의 'she dedicated her time to the sick and lonely people'에서 쓰였다. overlook은 '간과하다', isolate는 '고립시키다', lean은 '기대다', heal은 '치유하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0149fc2c7c",
+"typeId": "eng-h2-b06-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 단어를 주어진 우리말 뜻과 첫 글자를 참고하여 쓰시오.\n\nAs Sister Kang Carla, she lived among people suffering from disease and d____________, providing them with help and education.\n\n(우리말 뜻: 차별)",
+"selfGrade": true,
+"answer": "discrimination",
+"solution": "'차별'을 뜻하는 영어 명사는 discrimination이다. 본문은 강칼라 수녀가 질병과 차별로 고통받는 사람들 사이에서 살면서 그들에게 도움과 교육을 주었다고 설명한다. 빈칸은 disease와 and로 이어지므로 같은 품사인 명사가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6b4e71bd67",
+"typeId": "eng-h2-b06-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어와 의미가 가장 가까운 것을 고르시오.\n\nThey were able to offer high-quality eyewear at an affordable price, so many people could buy it.",
+"choices": [
+"reasonable",
+"expensive",
+"valuable",
+"limited",
+"unknown"
+],
+"answer": "①",
+"solution": "affordable은 '(가격이) 알맞은, 감당할 수 있는'의 뜻이다. 보기 중 가격이 부담스럽지 않다는 의미에 가장 가까운 것은 reasonable(합리적인, 적당한)이다. expensive(비싼)는 반대 의미이므로 오답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c325e1e1d7",
+"typeId": "eng-h2-b06-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 가장 알맞은 것을 고르시오.\n\nintroducing new ideas or ways of doing something",
+"choices": [
+"innovative",
+"physical",
+"default",
+"affordable",
+"courageous"
+],
+"answer": "①",
+"solution": "'새로운 아이디어나 방식을 도입하는'이라는 설명은 innovative(혁신적인)에 해당한다. 지문에서 이 회사는 가장 innovative한 기업으로 뽑혔다고 했다. physical(물리적인), default(기본값), affordable(가격이 알맞은), courageous(용감한)는 뜻이 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-01372180ce",
+"typeId": "eng-h2-b06-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "우리말 뜻에 맞도록 빈칸에 들어갈 단어로 가장 알맞은 것을 고르시오.\n\nNo one expected the new company to _____________, but it grew to be worth more than a billion dollars. (번성하다)",
+"choices": [
+"thrive",
+"fail",
+"shrink",
+"disappear",
+"stop"
+],
+"answer": "①",
+"solution": "빈칸에는 '번성하다, 번창하다'의 뜻을 가진 단어가 와야 하므로 thrive가 알맞다. 뒤에 10억 달러 이상의 가치로 성장했다는 내용과도 자연스럽게 연결된다. 나머지 fail(실패하다), shrink(줄어들다), disappear(사라지다), stop(멈추다)은 모두 반대되는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b0f155ed67",
+"typeId": "eng-h2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThe internet allows consumers finding information about products easily.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "to find",
+"solution": "동사 allow는 'allow + 목적어 + to부정사'의 구조로 쓰인다. 따라서 consumers 뒤의 finding을 to find로 고쳐야 한다. 이 문장은 인터넷이 소비자들이 상품 정보를 쉽게 찾을 수 있게 해 준다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2f176f54b5",
+"typeId": "eng-h2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThe number of online shoppers is expecting to increase in the future.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "expected",
+"solution": "온라인 쇼핑객 수는 증가할 것으로 '예상되는' 대상이므로 수동태를 사용해야 한다. 따라서 is expecting을 is expected로 고쳐야 한다. 'be expected to + 동사원형'은 '~할 것으로 예상되다'라는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-13abb729d8",
+"typeId": "eng-h2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 두 개 찾아, 기호와 바르게 고친 표현을 각각 쓰시오.\n\nSocial commerce has changed the way people shop online. Social media platforms allow customers ⓐto discover new products and compare prices without visiting physical stores. Many companies use short videos and instant messaging tools to attract consumers. These features make online shopping ⓑmore convenient and help ⓒincrease customer interest. As more people use social media, the number of social commerce buyers is ⓓexpecting to grow. In addition, companies encourage customers ⓔsharing their shopping experiences with others.\n\n<기호 및 바르게 고친 표현>\n(1) ______ → ____________________\n(2) ______ → ____________________",
+"selfGrade": true,
+"answer": "ⓓ → expected, ⓔ → to share",
+"solution": "ⓓ에서 구매자 수는 증가할 것으로 예상되는 대상이므로 is expecting을 is expected로 고쳐야 한다. ⓔ에서 encourage는 'encourage + 목적어 + to부정사' 구조를 취하므로 sharing을 to share로 고쳐야 한다. ⓐ의 allow customers to discover와 ⓒ의 help increase는 올바른 표현이며, ⓑ의 비교급 more convenient도 문맥에 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-728228bdbb",
+"typeId": "eng-h2-b06-u0m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 두 개 찾아, 기호와 바르게 고친 표현을 각각 쓰시오.\n\nFree trials are commonly used to encourage consumers to try new services. A free trial allows users ⓐto experience a premium service without paying for it at first. However, using a product for a certain period can make consumers ⓑfeel a sense of ownership. This psychological feeling makes it difficult ⓒgiving up the service, even when consumers no longer need it. Marketers often use strategies ⓓdesigned to strengthen this feeling. As a result, consumers may become less willing ⓔto cancel their subscriptions. To avoid this problem, consumers should remember how strongly their decisions can ⓕinfluenced by psychological ownership.\n\n<기호 및 바르게 고친 표현>\n(1) ______ → ____________________\n(2) ______ → ____________________",
+"selfGrade": true,
+"answer": "ⓒ → to give, ⓕ → be influenced",
+"solution": "ⓒ는 'make + it + 형용사 + to부정사' 구조이므로 giving을 to give로 고쳐야 한다. ⓕ에서는 소비자의 결정이 심리적 소유 의식에 의해 영향을 받는다는 의미이므로 조동사 can 뒤에 수동태의 원형인 be influenced가 필요하다. ⓑ의 make consumers feel은 사역동사 make의 목적격보어로 동사원형을 사용한 올바른 표현이다. ⓓ의 designed는 strategies를 수식하는 과거분사이며, ⓔ의 willing to cancel도 올바른 어법이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u0m2s0t0",
+"custom": true
 }
 ]

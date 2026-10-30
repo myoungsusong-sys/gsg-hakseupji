@@ -5142,5 +5142,260 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-6651ab1e00",
+"typeId": "eng-h1-b02-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nLewis Hine wanted to show people [ how hard the children's lives were / how hard were the children's lives ].",
+"selfGrade": true,
+"answer": "how hard the children's lives were",
+"solution": "의문사가 이끄는 절이 동사 show의 목적어로 쓰인 간접의문문이다. 간접의문문은 「의문사(+형용사)+주어+동사」 어순을 따른다. 따라서 how hard 다음에 주어 the children's lives와 동사 were가 차례로 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-29b50c9461",
+"typeId": "eng-h1-b02-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nThe work in factories was difficult and dangerous, which [ left / leaving ] many child laborers with health problems.",
+"selfGrade": true,
+"answer": "left",
+"solution": "콤마 뒤의 which는 앞 절 전체를 받는 계속적 용법의 관계대명사이다. 관계대명사절에서 which가 주어 역할을 하므로 뒤에 동사가 와야 한다. 따라서 분사 leaving은 쓸 수 없고 과거시제 동사 left가 알맞다. 참고로 which를 빼면 분사구문 leaving으로 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-3f7ec1530e",
+"typeId": "eng-h1-b02-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nHine's photographs [ showed / were shown ] in exhibitions, lectures, and magazine articles.",
+"selfGrade": true,
+"answer": "were shown",
+"solution": "주어 Hine's photographs는 직접 보여 주는 것이 아니라 사람들에게 '보여지는' 대상이다. 따라서 수동태 「be동사+과거분사」를 써야 한다. 주어가 복수이고 과거의 일이므로 were shown이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8070c17f9c",
+"typeId": "eng-h1-b02-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 [ ] 안 단어의 우리말 뜻으로 알맞은 것은?\n\nHow about making a [virtual] band called The Sam Lees?",
+"choices": [
+"① 실제의",
+"② 가상의",
+"③ 유명한",
+"④ 전통적인",
+"⑤ 지역의"
+],
+"answer": "②",
+"solution": "virtual은 '가상의'라는 뜻이다. 글쓴이는 서로 다른 나라에 사는 Sam Lee들에게 함께 온라인 밴드를 만들자고 제안한다. 그래서 a virtual band는 '가상 밴드'로 해석한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3179a010c2",
+"typeId": "eng-h1-b02-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nB: Really? How so?\nG: My dad is a tour guide. He often takes me with him on tours because he thinks that new experiences are __________.",
+"choices": [
+"① boring",
+"② useless",
+"③ important",
+"④ dangerous",
+"⑤ unimportant"
+],
+"answer": "③",
+"solution": "아빠가 Hailey를 자주 여행에 데려가는 이유를 설명하는 문장이다. 새로운 경험이 '중요하다(important)'고 생각해야 자연스럽게 이어진다. 나머지 선지는 모두 딸을 여행에 데려가는 이유와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-994911f23c",
+"typeId": "eng-h1-b02-u4m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어를 아래 문장에서 찾아 쓰시오.\n\nthe words of a song\n\nThere was a Sam Lee in his mid-30s from Singapore who enjoyed singing and writing lyrics.",
+"selfGrade": true,
+"answer": "lyrics",
+"solution": "'the words of a song'은 '노래의 가사'라는 뜻이다. 문장에서 이 뜻에 해당하는 단어는 lyrics이다. 싱가포르의 Sam Lee는 노래 부르기와 가사 쓰기를 즐겼다는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8c093c5303",
+"typeId": "eng-h1-b02-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어 vital의 의미로 가장 알맞은 것을 고르시오.\n\nThey did everything they could to accomplish this vital mission in time.",
+"choices": [
+"위험한",
+"매우 중요한",
+"비밀스러운",
+"불가능한",
+"일시적인"
+],
+"answer": "②",
+"solution": "vital은 '필수적인, 매우 중요한'이라는 뜻의 형용사이다. 임무를 제시간에 완수하기 위해 모든 것을 다했다는 문맥에서도 그 임무가 '매우 중요한' 것임을 알 수 있다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6056632836",
+"typeId": "eng-h1-b02-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어를 고르시오.\n\nto stop something from happening\n\nWhen the MFAA was first formed, its main goal was to _______ the destruction of cultural landmarks.",
+"choices": [
+"restore",
+"prevent",
+"expand",
+"steal",
+"retreat"
+],
+"answer": "②",
+"solution": "'어떤 일이 일어나지 못하게 막다'라는 뜻풀이에 해당하는 단어는 prevent(막다, 예방하다)이다. 빈칸 뒤에 destruction(파괴)이 이어져 '파괴를 막는 것'이라는 문맥에도 자연스럽게 들어맞는다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-817e5edc93",
+"typeId": "eng-h1-b02-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 restore의 우리말 뜻으로 알맞은 것을 고르시오.\n\nThey visited the destroyed areas to restore damaged architecture and works of art.",
+"choices": [
+"파괴하다",
+"복원하다",
+"훔치다",
+"숨기다",
+"확장하다"
+],
+"answer": "②",
+"solution": "restore는 '복원하다, 되돌리다'라는 뜻의 동사이다. 손상된(damaged) 건축물과 예술 작품을 대상으로 하는 행위이므로 '복원하다'가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2cf95f51cb",
+"typeId": "eng-h1-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nThe government's bold plan was a great success.",
+"choices": [
+"brave",
+"foolish",
+"secret",
+"simple",
+"expensive"
+],
+"answer": "①",
+"solution": "bold는 '대담한, 용감한'이라는 뜻이다. 정부가 아파트를 1유로에 파는 과감한 계획을 세운 상황이므로 '용감한'을 뜻하는 brave가 가장 가깝다. foolish(어리석은), secret(비밀의), simple(단순한), expensive(비싼)은 의미가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d216da2b38",
+"typeId": "eng-h1-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe only ______ was that people who bought the apartments needed to renovate them.",
+"choices": [
+"condition",
+"garden",
+"crime",
+"budget",
+"terrace"
+],
+"answer": "①",
+"solution": "'유일한 ~은 아파트를 산 사람들이 그것을 수리해야 한다는 것이었다'라는 내용이다. 무언가를 하기 위해 지켜야 할 '조건'을 뜻하는 condition이 들어가야 자연스럽다. garden(정원), crime(범죄), budget(예산), terrace(테라스)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f95419a03d",
+"typeId": "eng-h1-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어는?\n\nto repair and improve an old building so that it is in good condition again",
+"choices": [
+"abandon",
+"renovate",
+"attract",
+"transform",
+"tear"
+],
+"answer": "②",
+"solution": "'오래된 건물을 수리하고 개선하여 다시 좋은 상태로 만들다'라는 뜻풀이에 해당하는 단어는 renovate(수리[개조]하다)이다. abandon(버리다), attract(끌어들이다), transform(완전히 바꾸다), tear(허물다, 찢다)는 뜻이 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-236cf5a0fe",
+"typeId": "eng-h1-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 steady의 의미로 가장 알맞은 것을 고르시오.\n\nThis industrial growth provided steady jobs to people in the area.\n\n밑줄 친 단어: steady",
+"choices": [
+"위험한",
+"일시적인",
+"안정적인",
+"복잡한",
+"특별한"
+],
+"answer": "③",
+"solution": "steady는 '안정적인, 꾸준한'이라는 뜻이다. 문장은 산업의 성장이 그 지역 사람들에게 안정적인 일자리를 제공했다는 의미이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-33d5d1b97d",
+"typeId": "eng-h1-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nIn June 1969, the polluted river caught _______.",
+"choices": [
+"fire",
+"water",
+"air",
+"snow",
+"rain"
+],
+"answer": "①",
+"solution": "catch fire는 '불이 붙다'라는 뜻의 표현이다. 문장은 1969년 6월에 오염된 강에 불이 붙었다는 의미이다. 따라서 빈칸에는 fire가 들어가야 하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-745c05240a",
+"typeId": "eng-h1-b02-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 단어를 주어진 글에서 찾아 쓰시오. (한 단어로 쓸 것)\n\nMore and more people were becoming aware of the need to protect the ___________.\n\n<조건>\n• 주어진 교과서 문장의 의미에 맞게 쓸 것.\n• 영어 단어 한 개만 쓸 것.",
+"selfGrade": true,
+"answer": "environment",
+"solution": "be aware of는 '~을 인식하다'라는 뜻이고, protect는 '보호하다'라는 뜻이다. 문장은 점점 더 많은 사람이 환경을 보호할 필요성을 인식하게 되었다는 의미이다. 따라서 빈칸에 들어갈 단어는 environment(환경)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m7s0t0",
+"custom": true
 }
 ]

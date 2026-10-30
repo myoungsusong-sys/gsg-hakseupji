@@ -4863,5 +4863,241 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-081df4185f",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nAfter the eggs hatched, the baby octopuses swam away.",
+"choices": [
+"숨다",
+"(알이) 부화하다",
+"사냥하다",
+"자라다",
+"상처 입다"
+],
+"answer": "②",
+"solution": "hatch는 '(알이) 부화하다'라는 뜻으로, 알에서 새끼가 깨어나는 것을 가리킨다. 지문에서 문어 알이 부화한 뒤 어미가 죽었다는 내용과 연결된다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d2564d6cd2",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe diver watched the octopus's wound slowly ________ until it was completely gone.",
+"choices": [
+"heal",
+"hunt",
+"mate",
+"compare",
+"grow"
+],
+"answer": "①",
+"solution": "상처(wound)가 점점 사라질 때까지 '아물다/낫다'는 뜻의 동사가 필요하다. heal이 '(상처가) 낫다, 아물다'를 뜻한다. 지문의 the wound had healed와 같은 쓰임이므로 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-94abeab1ae",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어로 알맞은 것은?\n\na sheltered place or home where an animal such as an octopus lives",
+"choices": [
+"arm",
+"egg",
+"den",
+"sea",
+"life"
+],
+"answer": "③",
+"solution": "den은 동물이 사는 '굴, 은신처'를 뜻한다. 지문에서 문어가 짝짓기 후 자신의 den 안에 머물렀다는 내용과 일치한다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-76fef6fde9",
+"typeId": "eng-h1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어의 우리말 뜻으로 가장 알맞은 것은?\n\nIn his book, the scholar Yunseok Hwang mentions that he ordered naengmyeon for lunch with his <u>colleagues</u> on the day after the state examination.",
+"choices": [
+"하인",
+"동료",
+"학자",
+"귀족",
+"신하"
+],
+"answer": "②",
+"solution": "colleague는 '함께 일하는 사람', 즉 '동료'라는 뜻이다. 황윤석은 과거 시험 다음 날 동료들과 함께 점심으로 냉면을 주문했다. '하인'은 servant, '학자'는 scholar, '귀족'은 nobleman이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dfc724f22b",
+"typeId": "eng-h1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\na man who belongs to a family of high social rank",
+"choices": [
+"servant",
+"scholar",
+"nobleman",
+"colleague",
+"court"
+],
+"answer": "③",
+"solution": "높은 신분의 가문에 속한 남자는 nobleman(귀족)이다. 본문에서는 냉면이 귀족들 사이에서 인기를 얻었다(had gained popularity among noblemen)고 나온다. servant는 '하인', scholar는 '학자', colleague는 '동료', court는 '궁중, 궁정'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-58f81661be",
+"typeId": "eng-h1-b07-u5m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 단어를 쓰시오. (우리말 뜻을 참고할 것)\n\nIt appears that naengmyeon, a summer dish enjoyed in the royal ________, had gained popularity among noblemen.\n(궁중에서 즐기던 여름 음식인 냉면이 귀족들 사이에서 인기를 얻었던 것으로 보인다.)",
+"selfGrade": true,
+"answer": "court",
+"solution": "'궁중, 궁정'은 영어로 court이고, the royal court는 '왕실 궁중'을 뜻한다. 본문에서는 냉면을 궁중에서 즐기던 여름 음식으로 소개한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-90c4f6ac48",
+"typeId": "eng-h1-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Korean food delivery history(조선 시대 냉면 배달)에 관한 본문을 읽고, 다음 중 본문의 내용과 일치하면서 어법상으로도 옳은 문장을 고르시오.",
+"choices": [
+"Yunseok Hwang mentions in his book that he ordered naengmyeon alone on the day after the state examination.",
+"Yunseok Hwang ordered naengmyeon for lunch on the day before the state examination in July 1768.",
+"Naengmyeon was a summer dish that enjoyed in the royal court.",
+"King Sunjo ordered his servants to buy naengmyeon so that he could eat it while looking at the moon.",
+"Naengmyeon's popularity among noblemen led to introduce delivery services."
+],
+"answer": "④",
+"solution": "④는 이유원의 책에 기록된 순조 일화와 내용이 일치하고, 'order+목적어+to부정사'와 분사구문 'while looking'의 쓰임도 옳다. ①은 혼자가 아니라 동료들과 함께(with his colleagues) 주문했으므로 내용이 틀리고, ②는 과거 시험 '다음 날(after)'이 맞으므로 before가 틀렸다. ③은 냉면이 '즐겨진' 것이므로 수동태 that was enjoyed로 써야 하고, ⑤는 led to 뒤에 명사가 와야 하므로 led to the introduction of로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-64679fdf90",
+"typeId": "eng-h1-b07-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 괄호 안의 단어를 바르게 배열하여 빈칸에 들어갈 말을 완성하시오.\n\nFrom a space explorers’ perspective, the most valuable resource from asteroids could actually be water. Water ______________________ into space due to its weight and volume.\n\n( transport / is / to / expensive )",
+"selfGrade": true,
+"answer": "is expensive to transport",
+"solution": "주어 Water 다음에는 동사 is와 보어 expensive가 와야 한다. 그 뒤에는 '~하기에'라는 뜻으로 형용사를 꾸미는 to부정사 to transport를 쓴다. 따라서 'Water is expensive to transport into space'는 '물은 우주로 운반하기에 비용이 많이 든다'는 뜻이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8475505970",
+"typeId": "eng-h1-b07-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답을 완성하시오. 빈칸에 들어갈 말은 글에서 찾아 5단어로 쓸 것.\n\nResearch has shown that asteroids contain valuable resources like gold and rare earth elements. For example, one asteroid, 16 Psyche, is reported to consist mainly of gold and other precious metals.\n\nQ: What is 16 Psyche reported to consist mainly of?\nA: It is reported to consist mainly of ______________________.",
+"selfGrade": true,
+"answer": "gold and other precious metals",
+"solution": "글에서 16 Psyche는 'consist mainly of gold and other precious metals'라고 소개된다. 질문이 consist mainly of 뒤에 오는 내용을 묻고 있으므로 이 부분을 그대로 옮겨 쓰면 된다. 단어 수는 gold, and, other, precious, metals로 5단어다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-330bb0fd91",
+"typeId": "eng-h1-b07-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 괄호 안의 단어와 어구를 바르게 배열하여 빈칸에 들어갈 말을 완성하시오.\n\nWater is expensive to transport into space due to its weight and volume. Having a space station with sufficient water supplies in orbit around Earth ______________________________.\n\n( make / much easier / would / space explorations )",
+"selfGrade": true,
+"answer": "would make space explorations much easier",
+"solution": "동명사구 'Having ~ around Earth'가 주어이므로 그 뒤에는 동사 would make가 온다. 'make + 목적어 + 목적격 보어(형용사)' 구조를 따라 space explorations 뒤에 much easier를 쓴다. much는 비교급 easier를 강조한다. 해석은 '우주 정거장을 두면 우주 탐사가 훨씬 더 쉬워질 것이다'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-87d4a68a97",
+"typeId": "eng-h1-b07-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 주어진 질문에 대한 답을 아래와 같이 완성하시오. 빈칸에는 지문에 나온 단어를 활용하여 문맥과 어법에 맞게 쓰되, 필요한 경우 형태를 변형할 것. (각 빈칸에 한 단어씩 쓸 것)\n\nAbigail Princeton Class of 2022: As I worked through my second year into my third in college, I had more troubles balancing school and personal life. I would get excited, anxious, worried, and bored all at once and then separately. I would get exhausted when I had to write a report for my courses, mediate a disaster between friends, and respond to the comments on my online journal. I was drowning in a sea of responsibilities, concerns, and anxieties, and that was when I read an article with a simple insight.\n\nThe article advised me to draw two big circles, with myself in the center. The smaller circle is my circle of influence, and I have direct control over the things inside it: what I eat and drink, how I behave, or what I do after school. The bigger circle is called my circle of concern: things I worry about but have no direct control over. For example, I have no direct control over how my professor will react to my report, but I do have control over the amount of research I do for it. Believing that everything was in my circle of influence left me stressed out and constantly exhausted. By wasting less energy on my circle of concern, I was able to invest more energy into things that mattered. I no longer worry about what my friends think, and I focus on my own actions. I don’t get anxious over what might be on the test, and instead I put in every effort to understand the concepts themselves.\n\n[Questions]\n(1) What mistaken belief caused Abigail to feel stressed out and constantly exhausted?\n(2) How did Abigail change the way she used her energy after understanding the difference between the two circles?\n\n[Answers]\n(1) Abigail's stress and exhaustion resulted from her belief that everything (A) __________ __________ __________ __________ __________ __________.\n\n(2) Instead of wasting energy on things beyond her direct control, Abigail became able (B) __________ __________ __________ __________ __________ __________ __________ __________.",
+"selfGrade": true,
+"answer": "(A) was in her circle of influence (B) to invest more energy into things that mattered",
+"solution": "(A)는 Abigail이 모든 것이 자신의 영향력의 원 안에 있다고 믿었던 것이 스트레스와 피로의 원인이었다는 내용을 찾아야 한다. 지문의 'Believing that everything was in my circle of influence'를 활용하되, 주어진 문장의 주어가 everything이고 서술 시점이 과거이므로 was를 쓰며 my를 her로 바꾼다. (B)는 'I was able to invest more energy into things that mattered'에서 핵심 표현을 찾아 완성한다. 특히 (A)의 소유격 변환과 (B)의 be able to 뒤에 오는 동사원형 구조를 모두 정확히 적용해야 정답으로 인정된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1a8c6bfd31",
+"typeId": "eng-h1-b07-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, Naadam Festival에 관한 설명으로 옳은 것은?\n\nNaadam Festival\nWhere: Ulaanbaatar, Mongolia\nWhen: July\n\nThe Naadam Festival celebrates Mongolia's unique culture. The festival features three sports competitions: wrestling, archery, and horse racing. In the wrestling competition, hundreds of male players participate.",
+"choices": [
+"Naadam Festival은 멕시코에서 개최된다.",
+"Naadam Festival은 12월에 열린다.",
+"Naadam Festival에서는 세 가지 스포츠 경기가 열린다.",
+"Naadam Festival에서는 씨름 경기가 열리지 않는다.",
+"Naadam Festival의 씨름 경기에는 남성 참가자가 없다."
+],
+"answer": "③",
+"solution": "지문에서 Naadam Festival은 씨름(wrestling), 양궁(archery), 경마(horse racing)의 세 가지 스포츠 경기를 특징으로 한다고 설명한다. 따라서 세 가지 스포츠 경기가 열린다는 ③이 정답이다. 개최 장소는 몽골의 울란바토르이고 개최 시기는 7월이며, 씨름 경기에는 수백 명의 남성 선수가 참가한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8715383986",
+"typeId": "eng-h1-b07-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, Día de los Muertos에 관한 설명으로 옳은 것은?\n\nDía de los Muertos\nWhere: Mexico\nWhen: end of October to early November\n\nDía de los Muertos is commonly known as the \"Day of the Dead.\" During this holiday, people believe that the souls of the dead can return to the living world for a reunion with their loved ones. In their homes, Mexicans put photos of the dead along with their favorite foods and other meaningful objects on special stands.",
+"choices": [
+"이 축제는 스코틀랜드에서 열린다.",
+"이 축제는 7월에 열린다.",
+"사람들은 죽은 사람의 사진을 모두 버린다.",
+"사람들은 죽은 이의 영혼이 살아 있는 세상으로 돌아올 수 있다고 믿는다.",
+"사람들은 축제 기간에 경마 경기를 반드시 관람한다."
+],
+"answer": "④",
+"solution": "지문에 따르면 Día de los Muertos 기간에 사람들은 죽은 이의 영혼이 살아 있는 세상으로 돌아와 사랑하는 사람들과 재회할 수 있다고 믿는다. 따라서 ④가 정답이다. 이 축제는 멕시코에서 10월 말부터 11월 초까지 열리며, 사람들은 집에 죽은 이의 사진과 좋아하던 음식 등을 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d0f2c67cf8",
+"typeId": "eng-h1-b07-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, Hogmanay에 관한 설명으로 옳은 것은?\n\nHogmanay\nWhere: Scotland\nWhen: December 31 to January 1\n\nHogmanay is a Scottish way of celebrating the new year. It features a fire-lit parade and singing of traditional songs at night. The most popular custom is \"first footing.\" At night, neighbors visit one another and share traditional food gifts such as black fruit cake and drink. People believe that a male visitor with dark hair brings good luck.",
+"choices": [
+"Hogmanay는 몽골의 전통 축제이다.",
+"Hogmanay에서는 사람들이 새해를 축하한다.",
+"Hogmanay에서는 이웃끼리 방문하는 것이 금지된다.",
+"Hogmanay는 매년 10월 말에 열린다.",
+"Hogmanay에서는 검은 머리의 남성 방문자가 불운을 가져온다고 믿는다."
+],
+"answer": "②",
+"solution": "지문의 첫 문장에서 Hogmanay는 스코틀랜드에서 새해를 축하하는 방식이라고 설명한다. 따라서 ②가 정답이다. 이 축제에서는 이웃들이 서로 방문하여 전통 음식을 나누며, 검은 머리의 남성 방문자가 행운을 가져온다고 믿는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m4s0t0",
+"custom": true
 }
 ]

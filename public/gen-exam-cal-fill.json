@@ -10942,5 +10942,363 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-cal-u0m0s1t3",
 "custom": true
+},
+{
+"id": "fill-f66c552dea",
+"typeId": "exam-cal-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)$에서 $x$의 값이 한없이 커질 때 $f(x)$의 값도 한없이 커지면, $f(x)$는 ( )(으)로 발산한다고 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "양의 무한대",
+"solution": "$x \\to \\infty$일 때 $f(x)$의 값이 한없이 커지는 경우를 양의 무한대로 발산한다고 하고, $\\lim_{x\\to\\infty} f(x)=\\infty$로 나타낸다. 따라서 빈칸에 들어갈 말은 양의 무한대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-f9380bb7fc",
+"typeId": "exam-cal-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)$에서 $x$가 $a$가 아니면서 $a$에 한없이 가까워질 때 $f(x)$의 값이 일정한 값 $L$에 한없이 가까워지는 것을 무엇이라 하는가?",
+"choices": [
+"수렴한다",
+"발산한다",
+"진동한다",
+"연속이다",
+"증가한다"
+],
+"answer": "①",
+"solution": "$x$가 $a$에 한없이 가까워질 때 $f(x)$가 일정한 값 $L$에 한없이 가까워지면 $f(x)$는 $L$에 수렴한다고 한다. 이때 $L$을 극한값이라 하며 $\\lim_{x\\to a} f(x)=L$로 나타낸다. 따라서 정답은 '수렴한다'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-39b48679ba",
+"typeId": "exam-cal-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 극한값을 구하면?\n\n$$\\lim_{x\\to 2}(3x-1)$$",
+"choices": [
+"$1$",
+"$3$",
+"$5$",
+"$7$",
+"$9$"
+],
+"answer": "③",
+"solution": "$f(x)=3x-1$은 $x=2$ 근처에서 그 값이 $3\\times 2-1=5$에 한없이 가까워지므로 $f(x)$는 $5$에 수렴한다. 따라서 $\\lim_{x\\to 2}(3x-1)=5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-9db465c33b",
+"typeId": "exam-cal-u0m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$x$가 $2$보다 큰 값을 가지면서 $2$에 한없이 가까워질 때 $f(x)$의 우극한을 나타내는 기호로 옳은 것은?",
+"choices": [
+"$\\lim\\limits_{x\\to 2-}f(x)$",
+"$\\lim\\limits_{x\\to 2+}f(x)$",
+"$\\lim\\limits_{x\\to -2}f(x)$",
+"$\\lim\\limits_{x\\to \\infty}f(x)$",
+"$\\lim\\limits_{x\\to 0}f(x)$"
+],
+"answer": "②",
+"solution": "우극한은 $x$가 어떤 값보다 '큰' 값을 가지면서 그 값에 가까워질 때의 극한이므로 기호로는 $x\\to 2+$로 나타낸다. 따라서 옳은 기호는 $\\lim\\limits_{x\\to 2+}f(x)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-2ca44a46b0",
+"typeId": "exam-cal-u0m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "기호 $\\lim\\limits_{x\\to 1-}f(x)$ 가 나타내는 것으로 옳은 것은?",
+"choices": [
+"$x$가 $1$보다 큰 값을 가지면서 $1$에 가까워질 때 $f(x)$의 극한",
+"$x$가 $1$보다 작은 값을 가지면서 $1$에 가까워질 때 $f(x)$의 극한",
+"$x=1$에서의 함숫값 $f(1)$",
+"$x$가 한없이 커질 때 $f(x)$의 극한",
+"$f(x)$가 $1$에 가까워질 때 $x$의 극한"
+],
+"answer": "②",
+"solution": "기호 $x\\to 1-$는 $x$가 $1$보다 작은 값(왼쪽)에서 $1$에 가까워지는 것을 뜻하며, 이때 $f(x)$의 극한을 좌극한이라 한다. 따라서 옳은 설명은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-fcab4ff8b9",
+"typeId": "exam-cal-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장이 옳으면 O, 틀리면 X를 입력하세요.\n\n$\\lim_{x\\to 1} f(x)=4$, $\\lim_{x\\to 1} g(x)=-2$일 때, $\\lim_{x\\to 1}\\{2f(x)-g(x)\\}=10$이다.",
+"selfGrade": true,
+"answer": "O",
+"solution": "두 함수의 극한값이 모두 존재하므로 함수의 극한에 대한 성질을 써서 극한을 나누어 계산할 수 있습니다. 따라서 $\\lim_{x\\to 1}\\{2f(x)-g(x)\\}=2\\lim_{x\\to 1} f(x)-\\lim_{x\\to 1} g(x)=2\\times4-(-2)=10$입니다. 그러므로 주어진 문장은 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s2t0",
+"custom": true
+},
+{
+"id": "fill-0ec4b2b114",
+"typeId": "exam-cal-u0m0s2t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장이 옳으면 O, 틀리면 X를 입력하세요.\n\n$\\lim_{x\\to a} f(x)$와 $\\lim_{x\\to a} g(x)$의 값이 모두 존재하면, $\\lim_{x\\to a} g(x)=0$인 경우에도 항상 $\\lim_{x\\to a}\\dfrac{f(x)}{g(x)}=\\dfrac{\\lim_{x\\to a} f(x)}{\\lim_{x\\to a} g(x)}$가 성립한다.",
+"selfGrade": true,
+"answer": "X",
+"solution": "몫의 극한에 대한 성질은 분모의 극한값이 $0$이 아닐 때만 쓸 수 있습니다. $\\lim_{x\\to a} g(x)=0$이면 오른쪽 식의 분모가 $0$이 되어 그 값이 정의되지 않습니다. 따라서 주어진 문장은 옳지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s2t0",
+"custom": true
+},
+{
+"id": "fill-481e15261e",
+"typeId": "exam-cal-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 극한값을 구하면?\n\n$$\\lim_{x \\to 3}(2x+1)$$",
+"choices": [
+"$3$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "④",
+"solution": "다항함수는 모든 실수에서 연속이므로 극한값은 함숫값과 같다. 따라서 $x$ 대신 $3$을 대입하면 $2 \\times 3 + 1 = 7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-fd0b337e5b",
+"typeId": "exam-cal-u0m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 극한값을 구하시오.\n\n$$\\lim_{x \\to 2}\\frac{x^2-4}{x-2}$$",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$x \\to 2$일 때 분모와 분자가 모두 $0$으로 수렴하는 $\\frac{0}{0}$ 꼴이다. 분자를 인수분해하면 $\\dfrac{(x-2)(x+2)}{x-2}=x+2$이므로, $\\lim_{x \\to 2}(x+2)=2+2=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-c7867efa4d",
+"typeId": "exam-cal-u0m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "분수식의 극한에서 $\\dfrac{0}{0}$ 꼴을 계산할 때, 분자와 분모가 모두 다항식이면 각각 ( )하여 공통인수를 약분한 뒤 극한값을 구한다.\n\n( )에 들어갈 말을 입력하시오.",
+"selfGrade": true,
+"answer": "인수분해",
+"solution": "분모와 분자가 모두 $0$으로 수렴하는 $\\frac{0}{0}$ 꼴에서는 분자와 분모를 인수분해하면 $(x-a)$ 꼴의 공통인수가 나타난다. 이 공통인수를 약분한 후 극한값을 계산한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-eb4ed17f8d",
+"typeId": "exam-cal-u1m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x)=x^2+3x$ 에 대하여 $\\lim_{h \\to 0} \\frac{f(1+h)-f(1)}{h}$ 의 값은?",
+"choices": [
+"$4$",
+"$5$",
+"$6$",
+"$7$",
+"$8$"
+],
+"answer": "②",
+"solution": "주어진 극한은 미분계수 $f'(1)$ 의 정의와 같다. $f'(x)=2x+3$ 이므로 $f'(1)=2+3=5$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-120ce56031",
+"typeId": "exam-cal-u1m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다항함수 $f(x)$ 가 $f'(2)=4$ 를 만족시킬 때, $\\lim_{h \\to 0} \\frac{f(2+3h)-f(2)}{h}$ 의 값은?",
+"choices": [
+"$3$",
+"$6$",
+"$9$",
+"$12$",
+"$15$"
+],
+"answer": "④",
+"solution": "$\\frac{f(2+3h)-f(2)}{h}=3\\times\\frac{f(2+3h)-f(2)}{3h}$ 로 변형한다. $h \\to 0$ 일 때 $3h \\to 0$ 이므로 $\\frac{f(2+3h)-f(2)}{3h}$ 는 $f'(2)$ 로 수렴한다. 따라서 구하는 값은 $3f'(2)=3\\times4=12$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-a36f48221f",
+"typeId": "exam-cal-u1m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)=x^3-2x$ 에서 $x$ 의 값이 $0$ 에서 $2$ 까지 변할 때의 평균변화율을 구하시오.",
+"selfGrade": true,
+"answer": "2",
+"solution": "평균변화율은 $\\frac{f(2)-f(0)}{2-0}$ 이다. $f(2)=8-4=4$, $f(0)=0$ 이므로 평균변화율은 $\\frac{4-0}{2}=2$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d6dd94835f",
+"typeId": "exam-cal-u0m0s5t1",
+"kind": "객관식",
+"diff": 1,
+"body": "모든 실수 $x$에서 부등식 $2x+1 \\le f(x) \\le x^2-2x+5$ 가 성립할 때, $\\lim_{x \\to 2} f(x)$ 의 값은?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "$x \\to 2$ 일 때 $\\lim_{x \\to 2}(2x+1)=5$ 이고 $\\lim_{x \\to 2}(x^2-2x+5)=4-4+5=5$ 이다. 좌변과 우변의 극한이 모두 $5$ 로 같으므로 함수의 극한의 대소 관계(샌드위치 정리)에 의해 $\\lim_{x \\to 2} f(x)=5$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-6e88da37e7",
+"typeId": "exam-cal-u0m0s5t1",
+"kind": "주관식",
+"diff": 1,
+"body": "모든 실수 $x$에서 부등식 $3x+2 \\le f(x) \\le x^2+3x+2$ 가 성립할 때, $\\lim_{x \\to 0} f(x)$ 의 값을 구하시오.",
+"selfGrade": true,
+"answer": "2",
+"solution": "$x \\to 0$ 일 때 $\\lim_{x \\to 0}(3x+2)=2$ 이고 $\\lim_{x \\to 0}(x^2+3x+2)=2$ 이다. 좌변과 우변의 극한값이 모두 $2$ 로 같으므로 함수의 극한의 대소 관계에 의해 $\\lim_{x \\to 0} f(x)=2$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-7557cb4575",
+"typeId": "exam-cal-u0m0s5t1",
+"kind": "주관식",
+"diff": 1,
+"body": "모든 실수 $x$에서 부등식 $2x+3 \\le f(x) \\le x^2+4x+4$ 가 성립할 때, $\\lim_{x \\to -1} f(x)$ 의 값을 구하시오.",
+"selfGrade": true,
+"answer": "1",
+"solution": "$x \\to -1$ 일 때 $\\lim_{x \\to -1}(2x+3)=-2+3=1$ 이고 $\\lim_{x \\to -1}(x^2+4x+4)=1-4+4=1$ 이다. 좌변과 우변의 극한값이 모두 $1$ 로 같으므로 함수의 극한의 대소 관계에 의해 $\\lim_{x \\to -1} f(x)=1$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s5t1",
+"custom": true
+},
+{
+"id": "fill-c9f590e388",
+"typeId": "exam-cal-u1m0s1t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다항함수 $f(x)$에 대하여 $f'(1) = 5$일 때, $\\lim_{h \\to 0} \\dfrac{f(1+h) - f(1)}{h}$의 값은?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "미분계수의 정의에 의하여 $\\lim_{h \\to 0} \\dfrac{f(1+h) - f(1)}{h} = f'(1)$이다. 따라서 주어진 극한값은 $f'(1) = 5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s1t2",
+"custom": true
+},
+{
+"id": "fill-8c0a2547e3",
+"typeId": "exam-cal-u1m0s1t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다항함수 $f(x)$에 대하여 $f'(2) = 3$일 때, $\\lim_{x \\to 2} \\dfrac{f(x) - f(2)}{x - 2}$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "③",
+"solution": "$x = 2$에서의 미분계수의 정의는 $f'(2) = \\lim_{x \\to 2} \\dfrac{f(x) - f(2)}{x - 2}$이다. 따라서 주어진 극한값은 $f'(2) = 3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s1t2",
+"custom": true
+},
+{
+"id": "fill-6b1737ff7c",
+"typeId": "exam-cal-u1m0s1t2",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $f(x) = x^3$에 대하여 $f'(2)$의 값은?",
+"choices": [
+"$6$",
+"$8$",
+"$10$",
+"$12$",
+"$14$"
+],
+"answer": "④",
+"solution": "$f(x) = x^3$의 도함수는 $f'(x) = 3x^2$이다. 따라서 $f'(2) = 3 \\times 2^2 = 12$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u1m0s1t2",
+"custom": true
+},
+{
+"id": "fill-0999067c59",
+"typeId": "exam-cal-u0m0s2t1",
+"kind": "주관식",
+"diff": 1,
+"body": "두 함수 $f(x)$, $g(x)$에 대하여 $\\lim_{x\\to 2}f(x)=3$, $\\lim_{x\\to 2}g(x)=5$이다.\n\n$\\lim_{x\\to 2}\\{f(x)+g(x)\\}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$8$",
+"solution": "두 함수의 극한이 모두 수렴하므로 함수의 극한에 대한 덧셈의 성질을 적용할 수 있다. 따라서 $\\lim_{x\\to 2}\\{f(x)+g(x)\\}=3+5=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-abd3d077b9",
+"typeId": "exam-cal-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 함수의 극한에 대한 성질을 적용하기 위한 조건으로 옳은 것은?",
+"choices": [
+"① 두 함수의 극한이 모두 발산해야 한다.",
+"② 두 함수의 극한 중 하나만 수렴하면 된다.",
+"③ 두 함수의 극한이 모두 수렴해야 한다.",
+"④ 두 함수의 함숫값이 항상 같아야 한다.",
+"⑤ 두 함수가 모두 상수함수여야 한다."
+],
+"answer": "③",
+"solution": "함수의 극한에 대한 기본적인 연산 성질은 두 함수의 극한이 모두 유한한 값으로 수렴할 때 적용할 수 있다. 따라서 두 함수의 극한이 모두 수렴해야 한다는 ③이 정답이다. 단, 몫의 극한에서는 분모에 해당하는 함수의 극한이 $0$이 아니어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-478230f9e6",
+"typeId": "exam-cal-u0m0s2t1",
+"kind": "주관식",
+"diff": 1,
+"body": "두 함수 $f(x)$, $g(x)$에 대하여 $\\lim_{x\\to -1}f(x)=4$, $\\lim_{x\\to -1}g(x)=2$이다.\n\n$\\lim_{x\\to -1}\\{f(x)g(x)\\}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$8$",
+"solution": "두 함수의 극한이 모두 수렴하므로 함수의 극한에 대한 곱셈의 성질을 적용할 수 있다. 따라서 $\\lim_{x\\to -1}\\{f(x)g(x)\\}=4\\times 2=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cal-u0m0s2t1",
+"custom": true
 }
 ]

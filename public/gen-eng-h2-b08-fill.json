@@ -3894,5 +3894,210 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-7d41b4373d",
+"typeId": "eng-h2-b08-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"impressive — 인상적인",
+"transform — 변형시키다, 탈바꿈시키다",
+"arrange — 배열하다, 배치하다",
+"examine — 무시하다",
+"discover — 발견하다, 알아내다"
+],
+"answer": "④",
+"solution": "examine은 '조사하다, 살펴보다'라는 뜻이다. '무시하다'는 ignore에 해당하므로 ④가 잘못된 짝이다. 나머지 단어들의 뜻은 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-89aec2b21f",
+"typeId": "eng-h2-b08-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nLandscape architects must ________ the dimensions and slopes of land. They also need to be good at math.",
+"choices": [
+"calculate",
+"forget",
+"enjoy",
+"forgive",
+"imagine"
+],
+"answer": "①",
+"solution": "조경 건축가는 땅의 치수와 경사를 '계산해야' 하므로 calculate(계산하다)가 알맞다. 뒤 문장에서 수학을 잘해야 한다는 내용과도 자연스럽게 연결된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f253e3ff89",
+"typeId": "eng-h2-b08-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 영영 풀이의 연결이 알맞은 것은?",
+"choices": [
+"soil — the gas that we breathe",
+"climate — the usual weather conditions in a particular area",
+"effort — a kind of outdoor plant",
+"slope — a type of soil",
+"dimension — a factor of the environment"
+],
+"answer": "②",
+"solution": "climate는 '특정 지역의 일반적인 기후, 날씨 상태'를 뜻하므로 ②의 영영 풀이가 알맞다. ①은 air, ③·④·⑤는 각 단어의 뜻과 맞지 않는 풀이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a140f1b050",
+"typeId": "eng-h2-b08-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 평평한 코스에서는 가장 빨리 질주할 수 있었지만, 산악 경주에서는 항상 뒤처졌다.\n\nI could sprint the fastest on flat courses, but I ______________________________.\n\n( fell / mountain / behind / always / races / in )",
+"selfGrade": true,
+"answer": "always fell behind in mountain races",
+"solution": "'뒤처지다'는 fall behind로 나타내며, 과거 시제이므로 fell behind를 쓴다. 빈도부사 always는 일반동사 fell 앞에 온다. '산악 경주에서'는 in mountain races로 문장 끝에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5480f855be",
+"typeId": "eng-h2-b08-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n네덜란드는 대부분 평평해서, 나는 전에 가파른 비탈을 거의 올라가 본 적이 없었다.\n\nThe Netherlands is mostly flat, so I ______________________________ before.\n\n( cycled / steep / had / up / rarely / slopes )",
+"selfGrade": true,
+"answer": "had rarely cycled up steep slopes",
+"solution": "과거의 어느 시점 이전까지의 경험을 나타내므로 과거완료 had p.p.(had cycled)를 쓴다. 부정의 의미를 지닌 빈도부사 rarely는 had와 과거분사 사이에 들어간다. '가파른 비탈을 올라가다'는 cycle up steep slopes로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9282d0bee2",
+"typeId": "eng-h2-b08-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "윗글의 내용을 아래와 같이 요약할 때, 빈칸 (A)~(E)에 들어갈 단어를 <보기>에서 골라 쓰시오. (필요시 변형하고, 각 빈칸에 한 단어씩 쓸 것. 한 번씩만 사용할 것)\n\nUnlike Gabriel, who was (A)__________ in riding on hills and mountains, the writer had rarely ridden up steep slopes because of the (B)__________ land of the Netherlands. However, Gabriel (C)__________ the writer to keep (D)__________ even when riding uphill was (E)__________.\n\n<보기> pain, flat, avoid, experience, pedal, encourage",
+"selfGrade": true,
+"answer": "(A) experienced (B) flat (C) encouraged (D) pedaling (E) painful",
+"solution": "Gabriel은 언덕과 산을 달린 경험이 많았으므로 (A)에는 형용사 experienced가 들어간다. 필자는 네덜란드의 평평한(flat) 지형 때문에 가파른 비탈을 거의 오르지 못했고, Gabriel은 'Never stop pedaling'이라며 필자를 격려했다. 따라서 (C)에는 'encourage + 목적어 + to부정사' 구조에 맞춰 과거형 encouraged를, keep 뒤인 (D)에는 동명사 pedaling을 쓴다. (E)는 be동사의 보어이므로 형용사 painful을 쓰며, avoid는 쓰이지 않는 단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5e2db2ac6f",
+"typeId": "eng-h2-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nIn scuba diving, all divers are ______ up with a dive companion called a \"buddy\" for safety.",
+"choices": [
+"paired",
+"broken",
+"given",
+"divided",
+"tired"
+],
+"answer": "①",
+"solution": "본문에서 스쿠버 다이빙을 할 때 모든 다이버는 '버디'라고 불리는 짝과 함께 짝지어진다고 했다. '~와 짝을 이루다'라는 뜻의 be paired up with가 알맞다. 나머지 선지는 문맥에 맞지 않는다. 따라서 정답은 ① paired이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-bdac1f8a06",
+"typeId": "eng-h2-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어와 의미가 가장 가까운 것은?\n\nWithout a pacemaker, the front runner has to cope with the harsh wind alone.",
+"choices": [
+"deal with",
+"run from",
+"look for",
+"give up",
+"call for"
+],
+"answer": "①",
+"solution": "cope with는 '(어려움 등을) 처리하다, 대처하다'라는 뜻이다. 이와 의미가 가장 가까운 표현은 deal with이다. 거센 바람을 혼자 감당해야 한다는 문맥에도 자연스럽게 어울린다. 따라서 정답은 ① deal with이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e1236a3481",
+"typeId": "eng-h2-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이가 설명하는 단어로 가장 적절한 것은?\n\nto work together with another person to achieve the same goal",
+"choices": [
+"cooperate",
+"prevent",
+"shield",
+"maintain",
+"hinder"
+],
+"answer": "①",
+"solution": "'같은 목표를 이루기 위해 다른 사람과 함께 일하다'라는 뜻풀이에 해당하는 단어는 cooperate(협력하다)이다. 본문에서도 기술을 가진 선수와 협력할 수 있는 동료의 중요성을 강조할 때 쓰였다. 따라서 정답은 ① cooperate이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1dbf86455f",
+"typeId": "eng-h2-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nI was very tired, but my hard work was finally paid off.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "finally paid off",
+"solution": "pay off는 '노력이 결실을 맺다'라는 의미일 때 자동사로 쓰이므로 수동태로 표현할 수 없다. 따라서 was finally paid off에서 was를 삭제해야 한다. 올바른 표현은 finally paid off이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4e1f193799",
+"typeId": "eng-h2-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nRode up the steep hill, I remembered Gabriel's encouragement.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "Riding",
+"solution": "분사구문의 의미상 주어인 I는 자전거를 타는 동작의 주체이므로 능동의 현재분사를 사용해야 한다. 따라서 과거형 Rode를 현재분사 Riding으로 고쳐야 한다. Riding up the steep hill은 '가파른 언덕을 자전거로 올라가면서'라는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6ec7ac9f83",
+"typeId": "eng-h2-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nI caused the crash during the race. I must have been more careful.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "should have been",
+"solution": "화자는 경기 중 사고를 일으킨 자신의 과거 행동을 후회하고 있다. 과거에 하지 않은 행동에 대한 후회는 'should have + 과거분사'로 표현한다. 따라서 must have been을 should have been으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8db1223624",
+"typeId": "eng-h2-b08-u3m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 세 개 찾아 기호와 바르게 고친 표현을 쓰시오.\n\nGabriel encouraged me to participate in the mountain training courses. ⓐMotivated by his advice, I practiced harder than before. Eventually, my efforts ⓑwere paid off during an important race. As a domestique, I rode in front of Gabriel to shield him from the headwind. However, I crashed because of a crack in the road, and Gabriel was seriously injured. He urged me to continue the race. ⓒAlthough I doubted our chances, I followed his advice. ⓓPedaled as fast as I could, I finished second. I felt guilty because I ⓔmust have paid more attention to the road. Gabriel hugged me and said that he was proud of me. ⓕIf I had not crashed, our team would have had a better chance of winning.\n\n<기호> <바르게 고친 표현>\n(1) ______ → ____________________\n(2) ______ → ____________________\n(3) ______ → ____________________",
+"selfGrade": true,
+"answer": "ⓑ → paid off, ⓓ → Pedaling, ⓔ → should have paid",
+"solution": "ⓑ의 pay off는 '노력이 결실을 맺다'라는 의미의 자동사이므로 수동태인 were paid off를 paid off로 고쳐야 한다. ⓓ에서는 주어 I가 자전거를 타는 능동 관계이므로 Pedaled를 현재분사 Pedaling으로 고친다. ⓔ는 과거의 부주의를 후회하는 상황이므로 must have paid가 아니라 should have paid를 사용해야 한다. ⓐ는 수동 관계의 분사구문, ⓒ는 양보를 나타내는 접속사, ⓕ는 과거 사실과 반대되는 상황을 가정한 가정법 과거완료이므로 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m2s0t0",
+"custom": true
 }
 ]

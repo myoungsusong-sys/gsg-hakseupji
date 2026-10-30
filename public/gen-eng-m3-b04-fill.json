@@ -5466,5 +5466,293 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u7m4s0t0",
 "custom": true
+},
+{
+"id": "fill-fbd90578a0",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 강조하는 문장으로 바꿔 쓰시오.\n\nMy brother broke the window.",
+"selfGrade": true,
+"answer": "It was my brother that[who] broke the window.",
+"solution": "사람인 주어 'My brother'를 강조하므로 「It was ~ that[who] ...」 형태로 씁니다. 강조 대상이 사람일 때는 that 대신 who도 쓸 수 있습니다. 나머지 부분(broke the window)은 that 뒤에 그대로 옵니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8f5461c7b1",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 강조하는 문장으로 바꿔 쓰시오.\n\nI met Tom at the library.",
+"selfGrade": true,
+"answer": "It was at the library that[where] I met Tom.",
+"solution": "장소를 나타내는 'at the library'를 강조하므로 「It was ~ that ...」로 씁니다. 강조 대상이 장소일 때는 that 대신 where도 쓸 수 있습니다. 나머지 부분(I met Tom)은 that 뒤에 그대로 옵니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-35dae4cc5f",
+"typeId": "eng-m3-b04-u2m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 강조하는 문장으로 바꿔 쓰시오.\n\nWe visited the museum last Sunday.",
+"selfGrade": true,
+"answer": "It was last Sunday that[when] we visited the museum.",
+"solution": "때를 나타내는 'last Sunday'를 강조하므로 「It was ~ that ...」로 씁니다. 강조 대상이 때일 때는 that 대신 when도 쓸 수 있습니다. 나머지 부분(we visited the museum)은 that 뒤에 그대로 옵니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f38abac0ea",
+"typeId": "eng-m3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 부가의문문으로 알맞은 것은?\n\nSohui: You know my friend Hayeon, ______?\nSister: Yeah. Why? What about her?",
+"choices": [
+"do you",
+"don't you",
+"doesn't she",
+"aren't you",
+"isn't it"
+],
+"answer": "②",
+"solution": "앞 문장이 일반동사(know)의 긍정문이고 주어가 you이므로, 부가의문문은 부정형 do를 써서 「don't + you」 형태가 된다. 따라서 don't you가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c0991a1854",
+"typeId": "eng-m3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 옳은 것은?",
+"choices": [
+"I wonder why is she avoiding me.",
+"I wonder why she is avoiding me.",
+"I wonder why does she avoid me.",
+"I wonder why avoiding she is me.",
+"I wonder why she avoiding is me."
+],
+"answer": "②",
+"solution": "의문사가 이끄는 절이 문장의 일부로 들어가는 간접의문문은 「의문사 + 주어 + 동사」의 어순을 따른다. 따라서 why 뒤에 주어 she, 동사 is avoiding 순으로 쓴 ②가 옳다. 나머지는 의문문 어순(is she, does she)이나 어순 자체가 잘못되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e60aa4bc53",
+"typeId": "eng-m3-b04-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분 중 어법상 옳은 것은?",
+"choices": [
+"Maybe you should ask her if there is wrong something.",
+"Maybe you should ask her if there is something wrong.",
+"Maybe you should ask her if there is wrongly something.",
+"Maybe you should ask her is there something wrong.",
+"Maybe you should ask her if there something wrong is."
+],
+"answer": "②",
+"solution": "-thing으로 끝나는 대명사(something)를 꾸미는 형용사는 뒤에 와야 하므로 something wrong이 옳다. 또한 ask 뒤의 명사절은 접속사 if가 이끄는 「if + 주어 + 동사」 어순이어야 하므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-615d9dafef",
+"typeId": "eng-m3-b04-u4m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 두 문장을 한 문장으로 바르게 나타낸 것은?\n\n• Mina started to wait for the bus 20 minutes ago.\n• She is still waiting for it now.",
+"choices": [
+"① Mina waits for the bus for 20 minutes.",
+"② Mina has waited for the bus 20 minutes ago.",
+"③ Mina has been waiting for the bus for 20 minutes.",
+"④ Mina have been waiting for the bus for 20 minutes.",
+"⑤ Mina has been waited for the bus since 20 minutes."
+],
+"answer": "③",
+"solution": "과거에 시작한 동작이 지금도 계속되고 있으므로 현재완료진행형 「have/has been + -ing」를 쓴다. 주어 Mina는 3인칭 단수라서 has를 쓰고, 기간(20 minutes) 앞에는 for를 쓴다. ①은 현재시제, ②는 ago와 현재완료를 함께 써서, ④는 주어와 동사의 수가 맞지 않아서, ⑤는 waited 형태와 since 뒤 기간 표현 때문에 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c7aa3d91c9",
+"typeId": "eng-m3-b04-u4m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nIt ________ raining since last night.",
+"choices": [
+"① is been",
+"② has been",
+"③ have been",
+"④ was been",
+"⑤ has"
+],
+"answer": "②",
+"solution": "since last night는 과거의 한 시점부터 지금까지 계속됨을 나타내므로 현재완료진행형 「has been + -ing」를 쓴다. 주어 It은 3인칭 단수라서 has been이 알맞다. ⑤ has만 쓰면 be동사 been이 빠져 진행형이 되지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d848d4d6e8",
+"typeId": "eng-m3-b04-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 빈칸에 for와 since 중 알맞은 말을 쓰시오.\n\nMy parents have been living in this town ________ 2015.",
+"selfGrade": true,
+"answer": "since",
+"solution": "2015는 동작이 시작된 시점을 나타낸다. 현재완료진행형에서 시작 시점 앞에는 since를 쓰고, 기간 앞에는 for를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6f4d13fd5c",
+"typeId": "eng-m3-b04-u4m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 옳은 문장의 개수는?\n\n(a) I have been knowing him for ten years.\n(b) How long have you been learning Chinese?\n(c) She has been cleaning her room since two hours.\n(d) They have been playing soccer since they finished lunch.\n(e) The baby has been sleeping for three hours.",
+"choices": [
+"① 1개",
+"② 2개",
+"③ 3개",
+"④ 4개",
+"⑤ 5개"
+],
+"answer": "③",
+"solution": "(b), (d), (e)는 어법상 옳다. (a)의 know처럼 상태를 나타내는 동사는 진행형으로 쓰지 않으므로 I have known him for ten years.로 고쳐야 한다. (c)는 기간(two hours) 앞이므로 since가 아니라 for를 써야 한다. (d)처럼 since 뒤에는 시작 시점을 나타내는 절이 올 수도 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-fcf451c547",
+"typeId": "eng-m3-b04-u4m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, <조건>에 맞게 (1)과 (2)의 문장을 각각 완성하시오.\n\nJisu started to practice the guitar at 3 p.m. It is 5 p.m. now, and she is still practicing it.\n\n<조건>\n• 현재완료진행형을 쓸 것\n• 주어는 Jisu로 쓸 것\n• (1)에는 for를, (2)에는 since를 쓸 것\n\n(1) ______________________________ (for)\n(2) ______________________________ (since)",
+"selfGrade": true,
+"answer": "(1) Jisu has been practicing the guitar for two hours. (2) Jisu has been practicing the guitar since 3 p.m.",
+"solution": "오후 3시에 시작한 기타 연습이 오후 5시인 지금도 계속되고 있으므로 현재완료진행형 has been practicing을 쓴다. for 뒤에는 기간이 와야 하므로 3시부터 5시까지 걸린 시간인 two hours를 직접 계산해서 쓴다. since 뒤에는 시작 시점인 3 p.m.을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-378f359bbf",
+"typeId": "eng-m3-b04-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 강조한 문장 중, 어법상 알맞지 않은 것은?\n\nSora met her friend at the library yesterday.",
+"choices": [
+"It was Sora that met her friend at the library yesterday.",
+"It was her friend that Sora met at the library yesterday.",
+"It was at the library that Sora met her friend yesterday.",
+"It was yesterday that Sora met her friend at the library.",
+"It was met that Sora her friend at the library yesterday."
+],
+"answer": "⑤",
+"solution": "「It is/was ~ that ...」 강조구문은 강조하고 싶은 '말'을 It is/was와 that 사이에 두고, that 뒤에는 나머지를 원래 어순대로 쓴다. 동사(met)는 이 자리에 넣어 강조할 수 없고, ⑤는 that 뒤의 어순도 뒤죽박죽이다. 따라서 ⑤가 어법상 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-664e5d2534",
+"typeId": "eng-m3-b04-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 「the ball」을 강조한 문장으로 어법상 알맞은 것은?\n\nMinho kicked the ball in the gym.",
+"choices": [
+"It was the ball what Minho kicked in the gym.",
+"It was the ball that Minho kicked in the gym.",
+"It was the ball that Minho kicked it in the gym.",
+"It were the ball that Minho kicked in the gym.",
+"It was kicked the ball that Minho in the gym."
+],
+"answer": "②",
+"solution": "강조구문은 「It is/was + 강조 대상 + that + 나머지」 형태이다. 연결어는 what이 아니라 that을 쓰므로 ①은 틀리다. that 뒤 문장에서 강조된 the ball이 목적어 자리에서 빠져야 하므로 it을 다시 쓴 ③은 틀리고, 주어 It에 맞춰 be동사는 was여야 하므로 ④도 틀리다. 동사를 끼워 넣은 ⑤도 어법상 맞지 않아 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-750d7cf878",
+"typeId": "eng-m3-b04-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 강조한 문장 중, 어법상 알맞지 않은 것은?\n\nMy family watched a movie at home on Sunday.",
+"choices": [
+"It was my family that watched a movie at home on Sunday.",
+"It was a movie that my family watched at home on Sunday.",
+"It was at home that my family watched a movie on Sunday.",
+"It was on Sunday that my family watched a movie at home.",
+"It was watched that my family a movie at home on Sunday."
+],
+"answer": "⑤",
+"solution": "강조구문에서는 주어(my family), 목적어(a movie), 부사구(at home, on Sunday)처럼 명사·부사(구)는 It was와 that 사이에 두어 강조할 수 있다. 그러나 동사 watched는 이 자리에 넣을 수 없으며, that 뒤의 어순도 어색하므로 ⑤가 어법상 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2d8b328491",
+"typeId": "eng-m3-b04-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nIn 1879, Thomas Edison has made the first useful light bulb.\n\n__________________ → __________________",
+"selfGrade": true,
+"answer": "has made → made",
+"solution": "'In 1879'처럼 명백한 과거 시점을 나타내는 표현은 현재완료(has made)와 함께 쓸 수 없고 과거시제와 함께 써야 한다. 따라서 has made를 과거형 made로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d750e296f7",
+"typeId": "eng-m3-b04-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nIf I had a lot of money, I will buy a big refrigerator.\n\n__________________ → __________________",
+"selfGrade": true,
+"answer": "will → would",
+"solution": "현재 사실과 반대되는 일을 가정하는 가정법 과거 문장이다. 'If + 주어 + 과거동사'가 오면 주절에는 '조동사의 과거형(would/could 등) + 동사원형'을 써야 하므로 will을 would로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b02f96cb62",
+"typeId": "eng-m3-b04-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nIf I was a scientist, I could invent many useful machines.\n\n__________________ → __________________",
+"selfGrade": true,
+"answer": "was → were",
+"solution": "가정법 과거에서 be동사는 주어의 인칭·수와 상관없이 원칙적으로 were를 쓴다. 'If I was ~'는 가정법에서 어색하므로 was를 were로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-eb9db0b301",
+"typeId": "eng-m3-b04-u6m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분을 세 곳 찾아 바르게 고쳐 쓰시오.\n\nThe washing machine is one of the most useful inventions in history. In 1908, Alva Fisher has designed the first electric model, and it has become a common part of modern homes since then. If I was you, I will feel thankful for this machine. Without it, we would have to spend many hours washing our clothes by hand.\n\n(1) __________________ → __________________\n(2) __________________ → __________________\n(3) __________________ → __________________",
+"selfGrade": true,
+"answer": "has designed → designed, was → were, will → would",
+"solution": "'In 1908'은 명백한 과거 시점이므로 현재완료 has designed를 과거형 designed로 고친다. 'If I was you'는 가정법 과거이므로 be동사는 were를 써서 'If I were you'로 고친다. 가정법 과거의 주절에는 조동사의 과거형을 써야 하므로 will feel을 would feel로 고친다. 한편 'it has become a common part ... since then'은 since와 함께 쓰인 현재완료로 올바른 표현이므로 고치지 않도록 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m2s0t0",
+"custom": true
 }
 ]

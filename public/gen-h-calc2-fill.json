@@ -2466,5 +2466,317 @@
 "source": "유사 문항",
 "twinGroup": "tw-20672",
 "custom": true
+},
+{
+"id": "fill-d70ddbddf1",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$에 대하여 $\\lim_{n\\to\\infty}a_n=4$일 때, 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\lim_{n\\to\\infty}a_{n+3}=4$\nㄴ. $\\lim_{n\\to\\infty}a_{2n}=8$\nㄷ. $\\lim_{n\\to\\infty}(a_{n+1}-a_n)=0$",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "수렴하는 수열에서 처음 몇 개의 항을 제외하거나 짝수 번째 항만 뽑아도 극한값은 $4$이므로 ㄱ은 참이고 ㄴ은 거짓이다. 또한 $\\lim_{n\\to\\infty}(a_{n+1}-a_n)=4-4=0$이므로 ㄷ은 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-d9bb018ffd",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 1,
+"body": "두 수열 $\\{a_n\\}$, $\\{b_n\\}$에 대하여 $\\lim_{n\\to\\infty}a_n=-2$, $\\lim_{n\\to\\infty}b_n=3$일 때, 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\lim_{n\\to\\infty}(a_n+b_n)=1$\nㄴ. $\\lim_{n\\to\\infty}a_nb_n=-6$\nㄷ. $\\lim_{n\\to\\infty}(a_n^2-b_n^2)=5$",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "수렴하는 수열의 극한에 대한 성질에 따라 합의 극한은 $-2+3=1$, 곱의 극한은 $(-2)\\times3=-6$이다. 한편 제곱의 차의 극한은 $(-2)^2-3^2=-5$이므로 ㄷ은 거짓이다. 따라서 옳은 것은 ㄱ, ㄴ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-ff4b509eae",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 1,
+"body": "두 수열의 일반항이 $a_n=n+2$, $b_n=5n-1$일 때, 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. 두 수열 $\\{a_n\\}$, $\\{b_n\\}$은 모두 양의 무한대로 발산한다.\nㄴ. $\\lim_{n\\to\\infty}(b_n-a_n)=\\infty$\nㄷ. $\\lim_{n\\to\\infty}\\dfrac{b_n}{a_n}=5$",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "$n$이 한없이 커지면 $n+2$와 $5n-1$은 모두 한없이 커지므로 ㄱ은 참이다. $b_n-a_n=4n-3$이므로 ㄴ도 참이다. 또한 $\\dfrac{b_n}{a_n}=\\dfrac{5-1/n}{1+2/n}\\to5$이므로 ㄷ도 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-5f75e19007",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 2,
+"body": "두 수열의 일반항이 $a_n=\\dfrac{(-1)^n}{n+2}$, $b_n=\\dfrac{2n-1}{n+3}$일 때, 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\lim_{n\\to\\infty}a_n=0$\nㄴ. $\\lim_{n\\to\\infty}b_n=2$\nㄷ. $\\lim_{n\\to\\infty}a_nb_n=2$",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ"
+],
+"answer": "④",
+"solution": "$-\\dfrac1{n+2}\\le a_n\\le\\dfrac1{n+2}$이므로 $a_n\\to0$이다. 또한 $b_n=\\dfrac{2-1/n}{1+3/n}\\to2$이므로 ㄱ, ㄴ은 참이다. 따라서 $a_nb_n\\to0\\times2=0$이므로 ㄷ은 거짓이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-05c16cc474",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 2,
+"body": "두 수열의 일반항이 $a_n=-1+\\dfrac3n$, $b_n=1-\\dfrac1n$일 때, 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. 모든 자연수 $n$에 대하여 $a_n<b_n$이다.\nㄴ. $\\lim_{n\\to\\infty}a_n<\\lim_{n\\to\\infty}b_n$이다.\nㄷ. $\\lim_{n\\to\\infty}(a_n+b_n)=0$",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "$n=1$이면 $a_1=2$, $b_1=0$이므로 ㄱ은 거짓이다. 두 수열의 극한값은 각각 $-1$, $1$이므로 ㄴ은 참이다. 또한 $a_n+b_n=\\dfrac2n\\to0$이므로 ㄷ도 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-0297794125",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 2,
+"body": "실수로 이루어진 두 수열 $\\{a_n\\}$, $\\{b_n\\}$에 대한 다음 보기의 설명 중 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. 모든 자연수 $n$에 대하여 $a_n\\ne-4$이고 수열 $\\left\\{\\dfrac1{a_n+4}\\right\\}$이 수렴하면 수열 $\\{a_n\\}$도 수렴한다.\nㄴ. $\\lim_{n\\to\\infty}a_nb_n=6$이면 두 수열 $\\{a_n\\}$, $\\{b_n\\}$은 모두 수렴한다.\nㄷ. 두 수열 $\\{2a_n+b_n\\}$, $\\{a_n-b_n\\}$이 모두 수렴하면 두 수열 $\\{a_n\\}$, $\\{b_n\\}$도 모두 수렴한다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "ㄱ에서 $a_n=n$이면 $\\dfrac1{a_n+4}\\to0$이지만 $\\{a_n\\}$은 발산하므로 거짓이다. ㄴ에서 $a_n=2(-1)^n$, $b_n=3(-1)^n$이면 곱은 항상 $6$이지만 두 수열은 모두 발산하므로 거짓이다. ㄷ은 $a_n=\\dfrac{(2a_n+b_n)+(a_n-b_n)}3$, $b_n=\\dfrac{(2a_n+b_n)-2(a_n-b_n)}3$으로 나타낼 수 있으므로 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-7e72a87696",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 5,
+"body": "실수로 이루어진 수열 $\\{a_n\\}$에 대한 다음 보기의 설명 중 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\lim_{n\\to\\infty}a_n^2=9$이고 $\\lim_{n\\to\\infty}(a_{n+1}-a_n)=0$이면 수열 $\\{a_n\\}$은 수렴한다.\nㄴ. $\\lim_{n\\to\\infty}a_n^2=9$이면 수열 $\\{a_{2n}\\}$은 수렴한다.\nㄷ. $\\lim_{n\\to\\infty}(a_{n+1}-a_n)=0$이고 $\\lim_{n\\to\\infty}a_{3n}=2$이면 $\\lim_{n\\to\\infty}a_n=2$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "ㄱ에서 $|a_n|\\to3$이므로 충분히 큰 $n$에 대하여 $|a_n|>2$이고, 이웃한 두 항의 부호가 다르면 $|a_{n+1}-a_n|>4$이므로 주어진 조건에 의해 부호는 결국 일정해진다. 따라서 $a_n\\to3$ 또는 $a_n\\to-3$이므로 ㄱ은 참이다. ㄴ은 $a_{2n}=3(-1)^n$, $a_{2n-1}=3$으로 정하면 $a_n^2=9$이지만 짝수 번째 항으로 이루어진 수열이 발산하므로 거짓이다. ㄷ에서 $a_{3n+1}-a_{3n}\\to0$이고 $a_{3n+2}-a_{3n}=(a_{3n+2}-a_{3n+1})+(a_{3n+1}-a_{3n})\\to0$이므로 나머지 두 부분수열도 모두 $2$로 수렴한다. 따라서 전체 수열도 $2$로 수렴하므로 ㄷ은 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-24c5273c91",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 5,
+"body": "실수로 이루어진 두 수열 $\\{a_n\\}$, $\\{b_n\\}$이 $\\lim_{n\\to\\infty}(a_n+b_n)=1$, $\\lim_{n\\to\\infty}(a_n^2+b_n^2)=5$를 만족한다. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\lim_{n\\to\\infty}a_nb_n=-2$\nㄴ. $\\lim_{n\\to\\infty}|a_n-b_n|=3$\nㄷ. $\\lim_{n\\to\\infty}(a_{n+1}-a_n)=0$이면 수열 $\\{a_n\\}$은 수렴한다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "$2a_nb_n=(a_n+b_n)^2-(a_n^2+b_n^2)\\to-4$이므로 ㄱ은 참이다. 또한 $(a_n-b_n)^2=2(a_n^2+b_n^2)-(a_n+b_n)^2\\to9$이므로 ㄴ도 참이다. $s_n=a_n+b_n$, $d_n=a_n-b_n$이라 하면 $s_n\\to1$이고, ㄷ의 조건 아래에서 $d_{n+1}-d_n=2(a_{n+1}-a_n)-(s_{n+1}-s_n)\\to0$이다. $|d_n|\\to3$이므로 충분히 큰 번호부터는 $d_n$의 부호가 바뀔 수 없어 $d_n\\to3$ 또는 $d_n\\to-3$이다. 따라서 $a_n=(s_n+d_n)/2$는 $2$ 또는 $-1$로 수렴하므로 ㄷ도 참이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-f36322992c",
+"typeId": "20635",
+"kind": "객관식",
+"diff": 5,
+"body": "실수로 이루어진 두 수열 $\\{a_n\\}$, $\\{b_n\\}$이 모든 자연수 $n$에 대하여 $a_n\\ne0$이고, $\\lim_{n\\to\\infty}\\left(a_n+\\dfrac1{a_n}\\right)=2$, $\\lim_{n\\to\\infty}(b_n^2-a_nb_n)=0$을 만족한다. 다음 보기에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $\\lim_{n\\to\\infty}a_n=1$\nㄴ. 수열 $\\{b_n\\}$은 반드시 수렴한다.\nㄷ. $\\lim_{n\\to\\infty}(b_n^2+b_n)=0$이면 $\\lim_{n\\to\\infty}b_n=0$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "$s_n=a_n+1/a_n$이라 하면 $s_n\\to2$이므로 충분히 큰 $n$에 대하여 $s_n>0$이고, $s_n=(a_n^2+1)/a_n$에서 $a_n>0$이다. 이때 $0<a_n<s_n$이므로 $\\{a_n\\}$은 유계이고, $(a_n-1)^2=a_n(s_n-2)\\to0$에서 $a_n\\to1$이므로 ㄱ은 참이다. ㄴ은 $a_n=1$, $b_n=\\dfrac{1+(-1)^n}{2}$로 정하면 주어진 조건을 만족하지만 $\\{b_n\\}$이 발산하므로 거짓이다. ㄷ의 추가 조건이 성립하면 $(a_n+1)b_n=(b_n^2+b_n)-(b_n^2-a_nb_n)\\to0$이고 $a_n+1\\to2$이므로 $b_n\\to0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20635",
+"custom": true
+},
+{
+"id": "fill-362d963f54",
+"typeId": "20844",
+"kind": "객관식",
+"diff": 1,
+"body": "곡선 $y=e^x$와 $x$축 및 두 직선 $x=0$, $x=\\ln 9$로 둘러싸인 도형을 직선 $x=k$가 넓이가 같은 두 부분으로 나눈다. $0<k<\\ln 9$일 때, $k$의 값은?",
+"choices": [
+"$\\ln 3$",
+"$\\ln 4$",
+"$\\ln 5$",
+"$\\ln 6$",
+"$\\ln 7$"
+],
+"answer": "③",
+"solution": "전체 도형의 넓이는 $\\int_0^{\\ln 9}e^x\\,dx=8$이므로 왼쪽 부분의 넓이는 $4$이다. 따라서 $\\int_0^k e^x\\,dx=e^k-1=4$이므로 $k=\\ln 5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-125caa36d3",
+"typeId": "20844",
+"kind": "객관식",
+"diff": 1,
+"body": "곡선 $y=\\cos x$와 $x$축 및 $y$축으로 둘러싸인 도형 중 $0\\le x\\le \\dfrac{\\pi}{2}$인 부분을 직선 $x=a$가 넓이가 같은 두 부분으로 나눈다. $a$의 값은?",
+"choices": [
+"$\\dfrac{\\pi}{12}$",
+"$\\dfrac{\\pi}{6}$",
+"$\\dfrac{\\pi}{4}$",
+"$\\dfrac{\\pi}{3}$",
+"$\\dfrac{5\\pi}{12}$"
+],
+"answer": "②",
+"solution": "전체 넓이는 $\\int_0^{\\pi/2}\\cos x\\,dx=1$이다. 따라서 $\\int_0^a\\cos x\\,dx=\\sin a=\\dfrac12$이고, $0<a<\\dfrac{\\pi}{2}$이므로 $a=\\dfrac{\\pi}{6}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-fb73db2dbb",
+"typeId": "20844",
+"kind": "주관식",
+"diff": 1,
+"body": "곡선 $y=\\dfrac1x$와 $x$축 및 두 직선 $x=1$, $x=25$로 둘러싸인 도형을 직선 $x=k$가 넓이가 같은 두 부분으로 나눈다. 양수 $k$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$5$",
+"solution": "넓이가 같으므로 $\\int_1^k\\dfrac1x\\,dx=\\dfrac12\\int_1^{25}\\dfrac1x\\,dx$이다. 따라서 $\\ln k=\\dfrac12\\ln 25=\\ln 5$이므로 $k=5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-9df022df0c",
+"typeId": "20844",
+"kind": "객관식",
+"diff": 2,
+"body": "$1<c<4$인 실수 $c$에 대하여 곡선 $y=e^x$와 두 직선 $y=c$, $x=0$으로 둘러싸인 도형의 넓이를 $A$라 하고, 곡선 $y=e^x$와 두 직선 $y=c$, $x=\\ln 4$로 둘러싸인 도형의 넓이를 $B$라 하자. $A=B$일 때, $c$의 값은?",
+"choices": [
+"$\\dfrac{2}{\\ln 4}$",
+"$\\dfrac{3}{\\ln 4}$",
+"$\\dfrac{4}{\\ln 4}$",
+"$\\dfrac{3}{\\ln 3}$",
+"$\\dfrac{4}{\\ln 3}$"
+],
+"answer": "②",
+"solution": "두 곡선의 교점의 $x$좌표는 $\\ln c$이며, 그 좌우에서 $e^x-c$의 부호가 바뀐다. 따라서 $A=B$이면 $\\int_0^{\\ln 4}(e^x-c)\\,dx=0$이다. 이를 계산하면 $3-c\\ln 4=0$이므로 $c=\\dfrac{3}{\\ln 4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-52e561f703",
+"typeId": "20844",
+"kind": "객관식",
+"diff": 2,
+"body": "곡선 $y=xe^{x^2}$과 $x$축 및 직선 $x=\\sqrt{\\ln 7}$로 둘러싸인 도형 중 $x\\ge0$인 부분을 직선 $x=k$가 넓이가 같은 두 부분으로 나눈다. $k$의 값은?",
+"choices": [
+"$\\sqrt{\\ln 2}$",
+"$\\sqrt{\\ln 3}$",
+"$\\sqrt{\\ln 5}$",
+"$\\sqrt{\\ln 4}$",
+"$\\sqrt{\\ln 6}$"
+],
+"answer": "④",
+"solution": "$\\int xe^{x^2}\\,dx=\\dfrac12e^{x^2}+C$이므로 전체 넓이는 $\\dfrac12(7-1)=3$이다. 따라서 $\\dfrac12(e^{k^2}-1)=\\dfrac32$이므로 $e^{k^2}=4$이다. $k>0$이므로 $k=\\sqrt{\\ln 4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-5d82931fd6",
+"typeId": "20844",
+"kind": "주관식",
+"diff": 2,
+"body": "양수 $k<3$에 대하여 곡선 $y=\\dfrac{\\ln x}{x}$와 $x$축 및 두 직선 $x=1$, $x=e^k$로 둘러싸인 도형의 넓이를 $A$라 하자. 같은 곡선과 $x$축 및 두 직선 $x=e^k$, $x=e^3$으로 둘러싸인 도형의 넓이를 $B$라 할 때, $A=B$를 만족시키는 $k$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{3\\sqrt2}{2}$",
+"solution": "$x\\ge1$에서 함수가 음이 아니고, $\\int\\dfrac{\\ln x}{x}\\,dx=\\dfrac12(\\ln x)^2+C$이다. 따라서 $A=\\dfrac{k^2}{2}$, $B=\\dfrac{9-k^2}{2}$이므로 $2k^2=9$이다. $k>0$이므로 $k=\\dfrac{3\\sqrt2}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-d85b6c9c49",
+"typeId": "20844",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $a$, $b$에 대하여 함수 $f(x)=\\dfrac{(\\ln x)^2-a\\ln x+b}{x}$가 열린구간 $(1,e^3)$에서 서로 다른 두 영점을 갖는다. 곡선 $y=f(x)$와 $x$축 및 두 직선 $x=1$, $x=e^3$ 사이의 도형에서 $x$축 위쪽 부분의 넓이의 합을 $P$, 아래쪽 부분의 넓이의 합을 $N$이라 하자. $P=N$을 만족시키는 모든 $a$, $b$에 대하여 공통 넓이 $P$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{\\sqrt3}{2}$",
+"solution": "$t=\\ln x$로 치환하면 $P=N$에서 $\\int_0^3(t^2-at+b)\\,dt=0$이므로 $b=\\dfrac{3a}{2}-3$이다. $d=a-3$이라 놓으면 이차식은 $(t-\\dfrac32)^2-d(t-\\dfrac32)-\\dfrac34$이고, 두 근 $\\alpha$, $\\beta$의 차는 $\\beta-\\alpha=\\sqrt{d^2+3}$이다. 두 근이 $(0,3)$에 있으므로 $P=N=-\\int_\\alpha^\\beta(t-\\alpha)(t-\\beta)\\,dt=\\dfrac{(d^2+3)^{3/2}}6\\ge\\dfrac{\\sqrt3}{2}$이다. $a=3$, $b=\\dfrac32$일 때 두 근은 $\\dfrac{3\\pm\\sqrt3}{2}$로 조건을 만족하므로 최솟값은 $\\dfrac{\\sqrt3}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-befad7f317",
+"typeId": "20844",
+"kind": "주관식",
+"diff": 5,
+"body": "양수 $a$와 실수 $b$에 대하여 $f(x)=\\sin x+a\\cos 2x-b$라 하자. 곡선 $y=f(x)$와 $x$축이 열린구간 $(0,\\pi)$에서 서로 다른 네 점에서 만나고, $0\\le x\\le\\pi$에서 곡선과 $x$축 사이의 도형 중 $x$축 위쪽 부분의 넓이의 합과 아래쪽 부분의 넓이의 합이 같다. 이러한 실수 $b$가 존재하도록 하는 $a$의 값의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$1-\\dfrac{2}{\\pi}<a<\\dfrac{2}{\\pi}$",
+"solution": "넓이 조건에서 $\\int_0^\\pi f(x)\\,dx=2-b\\pi=0$이므로 $b=\\dfrac2\\pi$이다. $c=\\dfrac2\\pi$, $s=\\sin x$라 놓으면 $f(x)=q(s)=-2as^2+s+a-c$이고, 서로 다른 네 교점을 가지려면 $q$가 $(0,1)$에서 서로 다른 두 근을 가져야 한다. 이차식의 최고차항 계수가 음수이므로 이 조건의 필요조건은 $q(0)=a-c<0$, $q(1)=1-a-c<0$이다. 역으로 $1-c<a<c$이면 두 부등식이 성립하고 $q(c)=a(1-2c^2)>0$이므로 $(0,c)$와 $(c,1)$에 각각 한 근이 존재한다. 따라서 구하는 범위는 $1-\\dfrac2\\pi<a<\\dfrac2\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
+},
+{
+"id": "fill-1bdbaffe76",
+"typeId": "20844",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $a$, $b$에 대하여 곡선 $y=\\ln x$와 직선 $y=ax+b$가 열린구간 $(1,e)$에서 서로 다른 두 점에서 만난다. $1\\le x\\le e$에서 곡선이 직선보다 위쪽에 있는 부분의 넓이의 합과 직선이 곡선보다 위쪽에 있는 부분의 넓이의 합이 같도록 하는 실수 $b$가 존재할 때, $a$의 값의 범위를 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{2(e-2)}{(e-1)^2}<a<\\dfrac{2}{(e-1)^2}$",
+"solution": "$g(x)=\\ln x-ax-b$라 놓으면 넓이 조건은 $\\int_1^e g(x)\\,dx=0$이므로 $b=\\dfrac1{e-1}-\\dfrac{a(e+1)}2$이다. $g''(x)=-\\dfrac1{x^2}<0$이므로 내부에 서로 다른 두 영점이 있으면 $g(1)<0$, $g(e)<0$이다. 이를 대입하여 정리하면 각각 $a<\\dfrac2{(e-1)^2}$, $a>\\dfrac{2(e-2)}{(e-1)^2}$을 얻는다. 역으로 이 범위에서는 양 끝의 함수값이 음수이고 정적분이 $0$이므로 내부에 함수값이 양수인 점이 존재하며, $g'$가 엄격히 감소하므로 내부 영점은 정확히 두 개이다. 따라서 구하는 범위는 $\\dfrac{2(e-2)}{(e-1)^2}<a<\\dfrac2{(e-1)^2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20844",
+"custom": true
 }
 ]

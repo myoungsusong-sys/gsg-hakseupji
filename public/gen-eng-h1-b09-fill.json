@@ -4511,5 +4511,261 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-e41bb89599",
+"typeId": "eng-h1-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto walk slowly around a place without a clear purpose or direction",
+"choices": [
+"① wander",
+"② discover",
+"③ provide",
+"④ hide",
+"⑤ experience"
+],
+"answer": "①",
+"solution": "영영풀이는 '뚜렷한 목적이나 방향 없이 어떤 장소를 천천히 걸어 다니다'라는 뜻이므로 wander(거닐다, 돌아다니다)가 알맞다. discover는 '발견하다', provide는 '제공하다', hide는 '숨다', experience는 '경험하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a8cfd20699",
+"typeId": "eng-h1-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nBehind an old bookcase, there was a secret space where Anne and her family ________ for over two years during World War II.",
+"choices": [
+"① built",
+"② hid",
+"③ provided",
+"④ discovered",
+"⑤ lined"
+],
+"answer": "②",
+"solution": "책장 뒤의 '비밀 공간'에서 안네와 가족이 2년 넘게 '숨어 지냈다'는 내용이므로 hide의 과거형 hid가 알맞다. 나머지 동사들은 목적어가 필요하거나 의미가 맞지 않아 문장이 자연스럽지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-93ccf7a69f",
+"typeId": "eng-h1-b09-u2m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 두 단어를 쓰시오.\n\n프린센흐라흐트 운하를 따라 늘어선 운하 주택들은 대부분 네덜란드 황금기에 지어져서 큰 역사적 가치를 지닌다.\n→ The canal houses along the Prinsengracht were mostly built during the Dutch Golden Age, so they have great ________ ________.",
+"selfGrade": true,
+"answer": "historical value",
+"solution": "'역사적 가치'는 영어로 historical value이다. 형용사 historical(역사적인)이 명사 value(가치)를 앞에서 꾸민다. 본문의 'which gives them great historical value'에 나온 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9f147acd31",
+"typeId": "eng-h1-b09-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nChildren are particularly defenseless against air pollution.",
+"choices": [
+"무방비의, 방어 능력이 없는",
+"호기심이 많은",
+"건강한",
+"용감한",
+"부유한"
+],
+"answer": "①",
+"solution": "defenseless는 '방어할 수 없는, 무방비의'라는 뜻이다. 접미사 -less는 '~이 없는'을 뜻하므로 defense(방어)가 없는 상태를 가리킨다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-266d02a70e",
+"typeId": "eng-h1-b09-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAbout 93% of the world’s children breathe in ________ air every day, which is very dangerous for their health.",
+"choices": [
+"fresh",
+"clean",
+"toxic",
+"warm",
+"quiet"
+],
+"answer": "③",
+"solution": "건강에 매우 위험하다(very dangerous)는 내용과 호흡으로 들이마신다는 문맥으로 보아, 공기는 '유독한(toxic)' 공기여야 한다. fresh, clean, warm, quiet는 모두 위험하다는 내용과 어울리지 않으므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1800dccadc",
+"typeId": "eng-h1-b09-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 짝지어진 영어 단어와 우리말 뜻이 서로 어울리지 않는 것은?",
+"choices": [
+"pollution – 오염",
+"consumer – 소비자",
+"purchase – 구매하다",
+"resident – 주민",
+"highlight – 숨기다"
+],
+"answer": "⑤",
+"solution": "highlight는 '강조하다, 부각하다'라는 뜻으로, '숨기다'와는 반대 의미이다. 나머지 pollution(오염), consumer(소비자), purchase(구매하다), resident(주민)는 모두 올바르게 짝지어졌으므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4bb309a1a6",
+"typeId": "eng-h1-b09-u4m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIf you had to choose the greatest predator in nature, you might pick sharks, lions, or bears. However, according to history professor Timothy Winegard, the real answer is the mosquito. Mosquitoes can pass on deadly diseases like malaria and yellow fever. Over a million people worldwide die of these diseases every year.",
+"choices": [
+"Winegard가 꼽은 가장 위험한 포식자는 상어이다.",
+"모기는 어떤 질병도 사람에게 옮기지 못한다.",
+"모기는 말라리아와 황열병 같은 치명적인 질병을 옮길 수 있다.",
+"질병으로 죽는 사람은 전 세계적으로 매년 백 명뿐이다.",
+"사자와 곰은 질병을 옮기는 대표적인 동물이다."
+],
+"answer": "③",
+"solution": "글에서 Winegard가 꼽은 가장 위험한 포식자는 모기이며, 모기는 말라리아와 황열병 같은 치명적인 질병을 옮긴다고 했으므로 ③이 일치한다. ①은 상어가 아니라 모기이고, ④는 백 명이 아니라 백만 명 이상이므로 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-fdff74374c",
+"typeId": "eng-h1-b09-u4m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 로마에 관해 알 수 있는 내용으로 가장 적절한 것은?\n\nRome, the capital of the empire, was once surrounded by a huge stretch of wetland. This was an ideal breeding ground for mosquitoes and hence a hot spot for malaria. On the one hand, mosquitoes helped protect the city against the armies that came to attack it. However, they eventually spread malaria throughout the city and the empire.",
+"choices": [
+"로마는 사막으로 둘러싸여 있었다.",
+"로마 주변의 습지는 모기가 번식하기에 좋은 장소였다.",
+"모기는 로마를 공격하는 군대에 전혀 영향을 주지 않았다.",
+"로마에서는 말라리아가 전혀 발생하지 않았다.",
+"습지 때문에 모기가 모두 사라졌다."
+],
+"answer": "②",
+"solution": "글에서 로마는 한때 거대한 습지로 둘러싸여 있었고, 이 습지가 모기가 번식하기에 이상적인 장소였다고 했으므로 ②가 적절하다. 사막(①)이 아니라 습지였고, 모기는 공격 군대를 막는 데 도움을 주었으며(③) 말라리아의 중심지였으므로(④) 나머지는 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b4c6ea8b89",
+"typeId": "eng-h1-b09-u4m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 질문에 대한 답으로 가장 적절한 것은?\n\nThe fall of the Western Roman Empire was gradual, spanning over centuries. Here are commonly cited reasons for the fall of the empire: invasions by outside forces, economic troubles, and corruption. Diseases like malaria, however, also contributed.\n\nQ: What is NOT mentioned as a reason for the fall of the Western Roman Empire?",
+"choices": [
+"외부 세력의 침략",
+"경제적 어려움",
+"부패",
+"말라리아 같은 질병",
+"지진과 화산 폭발"
+],
+"answer": "⑤",
+"solution": "글은 서로마 제국 몰락의 원인으로 외부 세력의 침략, 경제적 어려움, 부패를 들고 있으며, 말라리아 같은 질병도 한몫했다고 했다. 지진과 화산 폭발은 언급되지 않았으므로 답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-42bd34aeb3",
+"typeId": "eng-h1-b09-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안의 단어를 어법에 맞게 고쳐 쓰시오. (한 단어로 쓸 것)\n\nCilantro is one of those (polarize) foods with lots of fans and haters, such as mushrooms, olives, and blue cheese.",
+"selfGrade": true,
+"answer": "polarizing",
+"solution": "음식이 사람들의 호불호를 양극으로 '나뉘게 만드는' 것이므로 능동의 의미를 지닌 현재분사가 와야 합니다. 따라서 polarize는 polarizing으로 고쳐 foods를 꾸미게 합니다. 과거분사 polarized를 쓰면 음식 자체가 '양극화된' 것이 되어 의미가 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f9f2d8aa46",
+"typeId": "eng-h1-b09-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 괄호 안의 단어를 어법에 맞게 바꾸어 쓰시오. (두 단어로 쓸 것)\n\nFirst of all, we need ________ clear about the role of the tongue. (be)",
+"selfGrade": true,
+"answer": "to be",
+"solution": "동사 need가 '~할 필요가 있다'라는 능동의 뜻일 때는 to부정사를 목적어로 취합니다. 따라서 빈칸에는 to be가 알맞습니다. need 뒤에 동명사가 오면 '~될 필요가 있다'라는 수동의 뜻이 되므로 이 문장에는 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6df2f32a05",
+"typeId": "eng-h1-b09-u6m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nBabies like sweet tastes, not bitter ones, since bitterness can indicate poison. Not liking bitter things ⓐare, in a sense, a natural defense mechanism.",
+"selfGrade": true,
+"answer": "is",
+"solution": "이 문장의 주어는 동명사구 Not liking bitter things입니다. 동명사구 주어는 단수로 취급하므로 동사도 단수형이 되어야 합니다. 바로 앞의 복수 명사 things에 이끌려 복수 동사를 쓰지 않도록 주의해야 합니다. 앞 문장이 현재시제이므로 are를 is로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d856acab95",
+"typeId": "eng-h1-b09-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nMany people remain isolating from their communities.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "isolated",
+"solution": "remain은 상태를 나타내는 연결동사로, 뒤에 형용사 역할을 하는 표현이 올 수 있다. 주어 Many people은 공동체로부터 고립된 상태이므로 현재분사 isolating이 아니라 과거분사 isolated를 써야 한다. 따라서 remain isolated가 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7f493492e4",
+"typeId": "eng-h1-b09-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nCommunity mapping helps residents sharing valuable experiences.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "share",
+"solution": "help는 목적어 뒤에 목적격 보어로 동사원형이나 to부정사를 취할 수 있다. 따라서 helps residents sharing에서 sharing을 share로 고쳐야 한다. helps residents share valuable experiences가 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-381e97115c",
+"typeId": "eng-h1-b09-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nDuring a disaster, every second is counted.\n\n<바르게 고친 표현>\n____________________________",
+"selfGrade": true,
+"answer": "counts",
+"solution": "이 문장에서 every second는 '매 순간'을 의미하며, count는 '중요하다'라는 뜻의 자동사로 쓰인다. 따라서 수동태 is counted가 아니라 능동형 counts를 사용해야 한다. every second는 단수 취급하므로 counts가 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5460faf93d",
+"typeId": "eng-h1-b09-u1m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 어색한 것을 세 개 골라, 각각의 기호와 어색한 표현 및 알맞은 표현을 쓰시오.\n\nCommunity mapping is a collective process ⓐthat allows residents to share information about their communities. It helps people ⓑunderstanding the places around them and connect with other community members. Maps ⓒcreated by local residents can provide useful information about public roads and shelters. During a disaster, this information ⓓcan use by ordinary citizens who are often the first responders. Working together, community members can gather information ⓔbased on actual needs rather than guesses. Such information is especially important in situations ⓕwhich every second counts.\n\n<답안 작성>\n(1) 기호: _____ / 어색한 표현: __________ / 알맞은 표현: __________\n(2) 기호: _____ / 어색한 표현: __________ / 알맞은 표현: __________\n(3) 기호: _____ / 어색한 표현: __________ / 알맞은 표현: __________",
+"selfGrade": true,
+"answer": "ⓑ understanding → understand, ⓓ can use → can be used, ⓕ which → where",
+"solution": "ⓑ help는 목적어 뒤에 동사원형 또는 to부정사를 취하므로 understanding을 understand로 고쳐야 하며, 뒤의 connect와도 병렬을 이룬다. ⓓ information은 시민들에 의해 이용되는 대상이므로 조동사 can 뒤에 수동태 be used가 와야 한다. ⓕ 선행사 situations는 뒤의 절에서 상황을 나타내는 부사 역할을 하므로 관계부사 where가 적절하다. ⓐ의 that은 주격 관계대명사, ⓒ의 created와 ⓔ의 based는 과거분사로 모두 올바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u1m2s0t0",
+"custom": true
 }
 ]
