@@ -7791,5 +7791,33 @@
 "twinGroup": "tw-19755",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-0d8d453dc8",
+"typeId": "19676",
+"kind": "주관식",
+"diff": 3,
+"body": "$\\sqrt2=a$, $\\sqrt5=b$일 때, 다음 식을 $a$, $b$를 이용하여 나타내시오. 단, 분모에 근호가 남지 않도록 하시오.\n\n$\\displaystyle \\frac{\\sqrt{72}-\\sqrt{125}}{\\sqrt{\\frac52}-1}+\\frac{\\sqrt{50}+\\sqrt{80}}{\\sqrt{10}+2}$",
+"selfGrade": true,
+"answer": "$\\displaystyle -\\frac83a+b$",
+"solution": "$a^2=2$, $b^2=5$, $\\sqrt{10}=ab$이고, $\\displaystyle \\sqrt{\\frac52}=\\frac{\\sqrt{10}}2=\\frac{ab}{2}$이다. 따라서 주어진 식은 $\\displaystyle \\frac{2(6a-5b)}{ab-2}+\\frac{5a+4b}{ab+2}$이다.\n첫 번째 분수의 분모를 유리화하면\n$\\displaystyle \\frac{2(6a-5b)(ab+2)}{10-4}=\\frac{2(12b+12a-25a-10b)}6=\\frac{-13a+2b}{3}$이다.\n두 번째 분수의 분모를 유리화하면\n$\\displaystyle \\frac{(5a+4b)(ab-2)}{10-4}=\\frac{10b-10a+20a-8b}{6}=\\frac{5a+b}{3}$이다.\n따라서 주어진 식은 $\\displaystyle \\frac{-13a+2b}{3}+\\frac{5a+b}{3}=-\\frac83a+b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19676",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-71f20d1c04",
+"typeId": "19676",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\sqrt{0.6}=a$, $\\sqrt{1.5}=b$일 때, 다음 식을 $a$, $b$를 이용하여 나타내시오. 단, 분모에 근호가 남지 않도록 하시오.\n\n$\\displaystyle \\frac{\\sqrt{(\\sqrt{24}+\\sqrt{15})^2}}{\\sqrt{10}+2}+\\frac{\\sqrt{(\\sqrt{54}-\\sqrt{60})^2}}{\\sqrt{10}-2}$",
+"selfGrade": true,
+"answer": "$\\displaystyle \\frac53b$",
+"solution": "$\\sqrt{x^2}=|x|$이고, $\\sqrt{24}+\\sqrt{15}>0$, $\\sqrt{54}-\\sqrt{60}<0$이므로 두 분자는 각각 $\\sqrt{24}+\\sqrt{15}$, $\\sqrt{60}-\\sqrt{54}$이다.\n또한 $\\sqrt{24}=4b$, $\\sqrt{15}=5a$, $\\sqrt{60}=10a$, $\\sqrt{54}=6b$이다. 따라서 주어진 식은 $\\displaystyle \\frac{4b+5a}{\\sqrt{10}+2}+\\frac{10a-6b}{\\sqrt{10}-2}$이다.\n여기서 $\\sqrt{10}a=\\sqrt6=2b$, $\\sqrt{10}b=\\sqrt{15}=5a$이므로 첫 번째 분수의 분모를 유리화하면\n$\\displaystyle \\frac{(4b+5a)(\\sqrt{10}-2)}{10-4}=\\frac{20a+10b-8b-10a}{6}=\\frac{5a+b}{3}$이다.\n두 번째 분수의 분모를 유리화하면\n$\\displaystyle \\frac{(10a-6b)(\\sqrt{10}+2)}{10-4}=\\frac{20b-30a+20a-12b}{6}=\\frac{-5a+4b}{3}$이다.\n따라서 주어진 식은 $\\displaystyle \\frac{5a+b}{3}+\\frac{-5a+4b}{3}=\\frac53b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19676",
+"custom": true,
+"rv": 1
 }
 ]

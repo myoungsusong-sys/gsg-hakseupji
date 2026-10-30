@@ -1172,5 +1172,101 @@
 "twinGroup": "tw-7080",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-7679161101",
+"typeId": "7079",
+"kind": "주관식",
+"diff": 1,
+"body": "예각 $A$에 대하여 $\\sin A=\\dfrac{5}{13}$일 때, $\\cos A$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{12}{13}$",
+"solution": "$\\sin^2 A+\\cos^2 A=1$이므로 $\\cos^2 A=1-\\dfrac{25}{169}=\\dfrac{144}{169}$이다. $A$는 예각이므로 $\\cos A=\\dfrac{12}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7079",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9ca4bac81b",
+"typeId": "7079",
+"kind": "주관식",
+"diff": 1,
+"body": "예각 $A$에 대하여 $\\sin A=\\cos 18^\\circ$일 때, $A$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$72^\\circ$",
+"solution": "두 예각의 합이 $90^\\circ$이면 한 각의 사인 값과 다른 각의 코사인 값이 같다. 따라서 $A=90^\\circ-18^\\circ=72^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7079",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b4fa926c5f",
+"typeId": "7079",
+"kind": "객관식",
+"diff": 1,
+"body": "예각 $A$에 대하여 $\\sin^2 A=\\dfrac{2}{9}$일 때, $\\cos^2 A$의 값은?",
+"choices": [
+"$\\dfrac{1}{9}$",
+"$\\dfrac{2}{9}$",
+"$\\dfrac{4}{9}$",
+"$\\dfrac{7}{9}$",
+"$\\dfrac{8}{9}$"
+],
+"answer": "④",
+"solution": "$\\sin^2 A+\\cos^2 A=1$이다. 따라서 $\\cos^2 A=1-\\dfrac{2}{9}=\\dfrac{7}{9}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7079",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6f1a3723ff",
+"typeId": "7079",
+"kind": "주관식",
+"diff": 2,
+"body": "예각 $x$에 대하여 $\\sin x\\cos x=\\dfrac{3}{8}$일 때, $\\sin x+\\cos x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{\\sqrt{7}}{2}$",
+"solution": "$(\\sin x+\\cos x)^2=\\sin^2 x+\\cos^2 x+2\\sin x\\cos x=1+\\dfrac{3}{4}=\\dfrac{7}{4}$이다. $x$는 예각이므로 $\\sin x+\\cos x>0$이다. 따라서 $\\sin x+\\cos x=\\dfrac{\\sqrt{7}}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7079",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8f691492b5",
+"typeId": "7079",
+"kind": "객관식",
+"diff": 2,
+"body": "예각 $A$에 대하여 $\\tan A=2$일 때, $\\sin A\\cos A$의 값은?",
+"choices": [
+"$\\dfrac{1}{5}$",
+"$\\dfrac{2}{5}$",
+"$\\dfrac{1}{2}$",
+"$\\dfrac{3}{5}$",
+"$\\dfrac{4}{5}$"
+],
+"answer": "②",
+"solution": "$\\tan A=\\dfrac{\\sin A}{\\cos A}=2$이므로 $\\sin A=2\\cos A$이다. 이를 $\\sin^2 A+\\cos^2 A=1$에 대입하면 $5\\cos^2 A=1$이다. 따라서 $\\sin A\\cos A=2\\cos^2 A=\\dfrac{2}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7079",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-577bb5efa2",
+"typeId": "7079",
+"kind": "주관식",
+"diff": 2,
+"body": "$10^\\circ<A<60^\\circ$이고 $\\sin(A-10^\\circ)=\\cos(A+30^\\circ)$일 때, $A$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$35^\\circ$",
+"solution": "주어진 범위에서 $A-10^\\circ$와 $A+30^\\circ$는 모두 예각이다. 따라서 $(A-10^\\circ)+(A+30^\\circ)=90^\\circ$이므로 $2A=70^\\circ$이다. 그러므로 $A=35^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7079",
+"custom": true,
+"rv": 1
 }
 ]
