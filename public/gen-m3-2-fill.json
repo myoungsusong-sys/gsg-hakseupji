@@ -4252,5 +4252,161 @@
 "twinGroup": "tw-20536",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-eaef005827",
+"typeId": "20542",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\angle ABC=120^\\circ$, $BC=6\\text{ cm}$이다. 점 $C$에서 직선 $AB$에 내린 수선의 발을 $H$라 할 때, 높이 $CH$의 길이는?",
+"choices": [
+"$3\\text{ cm}$",
+"$2\\sqrt{3}\\text{ cm}$",
+"$3\\sqrt{2}\\text{ cm}$",
+"$3\\sqrt{3}\\text{ cm}$",
+"$6\\text{ cm}$"
+],
+"answer": "④",
+"solution": "점 $H$는 선분 $AB$를 점 $B$ 쪽으로 연장한 직선 위에 있으므로 $\\angle CBH=180^\\circ-120^\\circ=60^\\circ$이다. 직각삼각형 $BCH$에서 $CH=BC\\sin60^\\circ=6\\times\\frac{\\sqrt{3}}{2}=3\\sqrt{3}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20542",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1720c79c6c",
+"typeId": "20542",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형 $PQR$에서 $\\angle PQR=150^\\circ$, $QR=14\\text{ cm}$이다. 점 $R$에서 직선 $PQ$에 내린 수선의 발을 $H$라 할 때, 높이 $RH$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$7\\text{ cm}$",
+"solution": "점 $H$는 선분 $PQ$를 점 $Q$ 쪽으로 연장한 직선 위에 있으므로 $\\angle RQH=180^\\circ-150^\\circ=30^\\circ$이다. 직각삼각형 $QRH$에서 $RH=QR\\sin30^\\circ=14\\times\\frac{1}{2}=7\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20542",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7f2fc8e93a",
+"typeId": "20542",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\angle BAC=135^\\circ$이다. 점 $B$에서 선분 $CA$를 점 $A$ 쪽으로 연장한 직선에 내린 수선의 발을 $H$라 하자. $AH=5\\text{ cm}$일 때, 높이 $BH$의 길이는?",
+"choices": [
+"$\\frac{5}{2}\\text{ cm}$",
+"$5\\text{ cm}$",
+"$5\\sqrt{2}\\text{ cm}$",
+"$5\\sqrt{3}\\text{ cm}$",
+"$10\\text{ cm}$"
+],
+"answer": "②",
+"solution": "점 $C$, $A$, $H$가 이 순서로 한 직선 위에 있으므로 $\\angle BAH=180^\\circ-135^\\circ=45^\\circ$이다. 직각삼각형 $ABH$에서 $BH=AH\\tan45^\\circ=5\\times1=5\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20542",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9acdad8411",
+"typeId": "20541",
+"kind": "주관식",
+"diff": 1,
+"body": "예각삼각형 $ABC$에서 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $H$라 하자. $AB=10$, $\\angle ABC=60^\\circ$일 때, 높이 $AH$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$5\\sqrt{3}$",
+"solution": "직각삼각형 $ABH$에서 $AH=AB\\sin 60^\\circ$이다. 따라서 $AH=10\\times\\frac{\\sqrt{3}}{2}=5\\sqrt{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20541",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-bc01576931",
+"typeId": "20541",
+"kind": "객관식",
+"diff": 1,
+"body": "예각삼각형 $ABC$에서 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $H$라 하자. $AB=8$, $\\angle ABC=30^\\circ$일 때, 높이 $AH$의 길이는?",
+"choices": [
+"$2$",
+"$4$",
+"$4\\sqrt{2}$",
+"$4\\sqrt{3}$",
+"$8$"
+],
+"answer": "②",
+"solution": "직각삼각형 $ABH$에서 $\\sin30^\\circ=\\frac{AH}{AB}$이다. 따라서 $AH=8\\times\\frac{1}{2}=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20541",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e13839a20d",
+"typeId": "20541",
+"kind": "객관식",
+"diff": 2,
+"body": "예각삼각형 ABC에서 AB=6, BC=10, ∠ABC=60°이다. 삼각형 ABC의 넓이는?",
+"choices": [
+"10√3",
+"12√3",
+"15√3",
+"18√3",
+"30√3"
+],
+"answer": "③",
+"solution": "꼭짓점 A에서 변 BC에 내린 수선의 발을 H라 하자. 직각삼각형 ABH에서 AH=AB×sin 60°=6×(√3/2)=3√3이다. 따라서 삼각형 ABC의 넓이는 (1/2)×BC×AH=(1/2)×10×3√3=15√3이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20541",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d5d176d92b",
+"typeId": "20541",
+"kind": "주관식",
+"diff": 3,
+"body": "예각삼각형 ABC에서 BC=14, ∠ABC=45°, ∠ACB=60°이다. 꼭짓점 A에서 변 BC에 내린 높이의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "21-7√3",
+"solution": "꼭짓점 A에서 변 BC에 내린 수선의 발을 H라 하고 AH=h라 하자. 삼각형 ABC가 예각삼각형이므로 H는 변 BC 위에 있다. 직각삼각형 ABH에서 tan 45°=h/BH이므로 BH=h이다. 직각삼각형 ACH에서 tan 60°=h/CH이므로 CH=h/√3이다. BH+CH=BC이므로 h+h/√3=14이다. 이를 풀면 h=14√3/(√3+1)=7√3(√3-1)=21-7√3이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20541",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9a0d7aa171",
+"typeId": "20541",
+"kind": "주관식",
+"diff": 4,
+"body": "예각삼각형 ABC에서 sin A=4/5, sin B=12/13이고 AC=20이다. 삼각형 ABC의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "448/3",
+"solution": "꼭짓점 C에서 변 AB에 내린 수선의 발을 H라 하자. 삼각형 ABC가 예각삼각형이므로 H는 변 AB 위에 있다. 직각삼각형 ACH에서 CH=AC×sin A=20×4/5=16이다. 또한 A가 예각이므로 cos A=3/5이고, AH=AC×cos A=20×3/5=12이다. B도 예각이므로 cos B=5/13이고 tan B=(12/13)÷(5/13)=12/5이다. 직각삼각형 BCH에서 tan B=CH/BH이므로 BH=16÷(12/5)=20/3이다. 따라서 AB=AH+BH=12+20/3=56/3이고, 삼각형 ABC의 넓이는 (1/2)×AB×CH=(1/2)×(56/3)×16=448/3이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20541",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-df1f034a73",
+"typeId": "20541",
+"kind": "객관식",
+"diff": 4,
+"body": "선분 BC의 같은 쪽에 점 A, D를 잡아 두 예각삼각형 ABC, DBC를 만들었다. BC=8, ∠ABC=75°, ∠ACB=30°, ∠DBC=45°, ∠DCB=60°이다. 선분 AC와 BD의 교점을 E라 할 때, 삼각형 EBC의 넓이는?",
+"choices": [
+"8(√3-1)",
+"12(√3-1)",
+"16(√3-1)",
+"20(√3-1)",
+"24(√3-1)"
+],
+"answer": "③",
+"solution": "점 E는 선분 BD 위에 있으므로 ∠EBC=∠DBC=45°이고, 선분 AC 위에 있으므로 ∠ECB=∠ACB=30°이다. 점 E에서 변 BC에 내린 수선의 발을 H라 하고 EH=h, BH=x라 하자. 직각삼각형 EBH에서 tan 45°=h/x이므로 h=x이다. 또한 CH=8-x이고, 직각삼각형 ECH에서 tan 30°=h/(8-x)이므로 h=(8-x)/√3이다. x=h를 대입하면 h=(8-h)/√3이므로 h(√3+1)=8이다. 따라서 h=8/(√3+1)=4(√3-1)이다. 그러므로 삼각형 EBC의 넓이는 (1/2)×8×4(√3-1)=16(√3-1)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20541",
+"custom": true,
+"rv": 1
 }
 ]

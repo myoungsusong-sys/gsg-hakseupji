@@ -1076,5 +1076,101 @@
 "twinGroup": "tw-7161",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-9075f8311a",
+"typeId": "7080",
+"kind": "객관식",
+"diff": 3,
+"body": "원 $O$ 위에 서로 다른 다섯 점 $A, B, C, D, E$가 이 순서대로 놓여 있다. 이웃한 두 점을 잇는 호 중 나머지 세 점을 포함하지 않는 호는 모두 반원보다 작다. $\\overline{AB}=\\overline{CD}$, $\\overline{BC}=\\overline{DE}=\\overline{EA}$이고 $\\angle AOC=148^\\circ$일 때, $\\angle AOD$의 크기는? (단, 중심각은 $180^\\circ$ 이하인 각을 뜻한다.)",
+"choices": [
+"$64^\\circ$",
+"$84^\\circ$",
+"$128^\\circ$",
+"$148^\\circ$",
+"$168^\\circ$"
+],
+"answer": "③",
+"solution": "같은 원에서 길이가 같은 현에 대한 중심각의 크기는 같다. 이웃한 두 점 사이의 주어진 호에 대한 중심각을 $\\angle AOB=\\angle COD=a^\\circ$, $\\angle BOC=\\angle DOE=\\angle EOA=b^\\circ$라 하면 $2a+3b=360$이다. $b>0$이므로 $2(a+b)=360-b<360$, 즉 $a+b<180$이다. 따라서 $\\angle AOC=(a+b)^\\circ=148^\\circ$이다. $2a+3b=360$과 $a+b=148$을 연립하면 $b=64$, $a=84$이다. 점 $E$를 지나는 호 $AD$의 크기는 $2b^\\circ=128^\\circ$이고 이는 $180^\\circ$보다 작으므로 $\\angle AOD=128^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7080",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-84feac5241",
+"typeId": "7080",
+"kind": "객관식",
+"diff": 3,
+"body": "원 $O$ 위에 서로 다른 여섯 점 $A, B, C, D, E, F$가 이 순서대로 놓여 있다. 이웃한 두 점을 잇는 호 중 나머지 네 점을 포함하지 않는 호는 모두 반원보다 작다. $\\overline{AB}=\\overline{CD}=\\overline{EF}=\\overline{FA}$, $\\overline{BC}=\\overline{DE}$이고 $\\angle AOC=126^\\circ$일 때, $\\angle EOB$의 크기는? (단, 중심각은 $180^\\circ$ 이하인 각을 뜻한다.)",
+"choices": [
+"$54^\\circ$",
+"$108^\\circ$",
+"$126^\\circ$",
+"$144^\\circ$",
+"$162^\\circ$"
+],
+"answer": "⑤",
+"solution": "이웃한 두 점 사이의 주어진 호에 대한 중심각을 $\\angle AOB=\\angle COD=\\angle EOF=\\angle FOA=a^\\circ$, $\\angle BOC=\\angle DOE=b^\\circ$라 하면 $4a+2b=360$이다. $a>0$이므로 $2(a+b)=360-2a<360$, 즉 $a+b<180$이다. 따라서 $\\angle AOC=(a+b)^\\circ=126^\\circ$이다. $2a+b=180$과 $a+b=126$을 연립하면 $a=54$, $b=72$이다. 점 $F, A$를 차례로 지나는 호 $EB$의 크기는 $3a^\\circ=162^\\circ$이고, 나머지 호 $EB$의 크기는 $360^\\circ-162^\\circ=198^\\circ$이다. 따라서 $\\angle EOB=162^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7080",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-442fa4bbb7",
+"typeId": "7080",
+"kind": "주관식",
+"diff": 3,
+"body": "원 $O$ 위에 서로 다른 다섯 점 $A, B, C, D, E$가 이 순서대로 놓여 있다. 이웃한 두 점을 잇는 호 중 나머지 세 점을 포함하지 않는 호는 모두 반원보다 작다. $\\overline{AB}=\\overline{BC}=\\overline{CD}=\\overline{DE}$이고 $\\angle AOC=144^\\circ$이다. $\\overline{AB}=(t^2-4t+8)\\,\\mathrm{cm}$, $\\overline{EA}=(2t+3)\\,\\mathrm{cm}$이며 $t>3$일 때, $\\overline{EA}$의 길이를 구하시오. (단, 중심각은 $180^\\circ$ 이하인 각을 뜻한다.)",
+"selfGrade": true,
+"answer": "$13\\,\\mathrm{cm}$",
+"solution": "길이가 같은 네 현 $AB, BC, CD, DE$에 대한 중심각의 크기를 각각 $a^\\circ$라 하자. 나머지 호 $EA$의 크기가 양수이므로 $4a<360$, 즉 $2a<180$이다. 따라서 $\\angle AOC=2a^\\circ=144^\\circ$이므로 $a=72$이다. 나머지 호 $EA$에 대한 중심각도 $360^\\circ-4\\times72^\\circ=72^\\circ$이다. 같은 원에서 중심각의 크기가 같으면 현의 길이도 같으므로 $\\overline{AB}=\\overline{EA}$이다. 따라서 $t^2-4t+8=2t+3$에서 $t^2-6t+5=0$, 즉 $(t-1)(t-5)=0$이다. $t>3$이므로 $t=5$이고, $\\overline{EA}=2\\times5+3=13\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7080",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6d89007594",
+"typeId": "7080",
+"kind": "주관식",
+"diff": 4,
+"body": "원 $O$ 위에 서로 다른 다섯 점 $A, B, C, D, E$가 이 순서대로 놓여 있다. 이웃한 두 점을 잇는 호 중 나머지 세 점을 포함하지 않는 호는 모두 반원보다 작다. $\\overline{AB}=\\overline{BC}$, $\\overline{CD}=\\overline{DE}$, $\\overline{AC}=\\overline{CE}$, $\\overline{BD}=\\overline{EA}$일 때, $\\angle OAE$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$30^\\circ$",
+"solution": "이웃한 두 점 사이의 주어진 호에 대하여 호 $AB, BC$의 크기를 각각 $a^\\circ$, 호 $CD, DE$의 크기를 각각 $b^\\circ$, 호 $EA$의 크기를 $c^\\circ$라 하면 $2a+2b+c=360$이다. 같은 원에서 길이가 같은 현에 대응하는 작은 호끼리, 큰 호끼리는 크기가 같다. 따라서 길이가 같은 현에 대응하는 두 호의 크기는 서로 같거나 합이 $360^\\circ$이다. $\\overline{AC}=\\overline{CE}$이므로 호 $ABC$와 호 $CDE$의 크기 $2a^\\circ$, $2b^\\circ$는 서로 같거나 합이 $360^\\circ$이다. 그런데 $2a+2b=360-c<360$이므로 $2a=2b$, 즉 $a=b$이다. 따라서 $4a+c=360$이다. $c>0$이므로 $2a<180$이고, 조건에서 $c<180$이다. 점 $C$를 지나는 호 $BD$의 크기는 $(a+b)^\\circ=2a^\\circ$이므로 $\\overline{BD}=\\overline{EA}$에서 $2a=c$이다. 이를 $4a+c=360$에 대입하면 $a=60$, $c=120$이다. $OA=OE$이고 $\\angle AOE=120^\\circ$이므로 이등변삼각형 $OAE$에서 $\\angle OAE=(180^\\circ-120^\\circ)\\div2=30^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7080",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8b79301603",
+"typeId": "7080",
+"kind": "주관식",
+"diff": 4,
+"body": "원 $O$ 위에 서로 다른 네 점 $A, B, C, D$가 이 순서대로 놓여 있다. 이웃한 두 점을 잇는 호 중 나머지 두 점을 포함하지 않는 호는 모두 반원보다 작다. $\\overline{AB}=\\overline{BC}=\\overline{CD}$이고 $\\overline{AC}=\\overline{AD}$일 때, $\\angle OAD$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$18^\\circ$",
+"solution": "이웃한 두 점 사이의 주어진 호에 대하여 호 $AB, BC, CD$의 크기를 각각 $a^\\circ$, 호 $DA$의 크기를 $b^\\circ$라 하면 $3a+b=360$이다. 같은 원에서 길이가 같은 현에 대응하는 작은 호끼리, 큰 호끼리는 크기가 같다. 따라서 길이가 같은 현에 대응하는 두 호의 크기는 서로 같거나 합이 $360^\\circ$이다. $\\overline{AC}=\\overline{AD}$이므로 호 $ABC$와 주어진 호 $DA$의 크기 $2a^\\circ$, $b^\\circ$는 서로 같거나 합이 $360^\\circ$이다. 그런데 $a>0$이므로 $2a+b=360-a<360$이다. 따라서 $2a=b$이다. 이를 $3a+b=360$에 대입하면 $5a=360$이므로 $a=72$, $b=144$이다. 주어진 호 $DA$는 반원보다 작으므로 $\\angle AOD=144^\\circ$이다. $OA=OD$이므로 이등변삼각형 $OAD$에서 $\\angle OAD=(180^\\circ-144^\\circ)\\div2=18^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7080",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-495ee7727a",
+"typeId": "7080",
+"kind": "주관식",
+"diff": 4,
+"body": "원 $O$ 위에 서로 다른 여섯 점 $A, B, C, D, E, F$가 이 순서대로 놓여 있다. 이웃한 두 점을 잇는 호 중 나머지 네 점을 포함하지 않는 호는 모두 반원보다 작다. $\\overline{AB}=\\overline{CD}=\\overline{EF}$, $\\overline{BC}=\\overline{DE}$, $\\overline{AD}=\\overline{BF}$이고 $\\angle AOC=100^\\circ$, $\\overline{AB}=9\\,\\mathrm{cm}$일 때, 이 원의 반지름의 길이를 구하시오. (단, 중심각은 $180^\\circ$ 이하인 각을 뜻한다.)",
+"selfGrade": true,
+"answer": "$9\\,\\mathrm{cm}$",
+"solution": "이웃한 두 점 사이의 주어진 호에 대하여 호 $AB, CD, EF$의 크기를 각각 $a^\\circ$, 호 $BC, DE$의 크기를 각각 $b^\\circ$, 호 $FA$의 크기를 $c^\\circ$라 하면 $3a+2b+c=360$이다. $a>0$, $c>0$이므로 $2(a+b)=360-a-c<360$, 즉 $a+b<180$이다. 따라서 $\\angle AOC=(a+b)^\\circ=100^\\circ$이므로 $a+b=100$이다. 호 $ABCD$와 호 $BCDEF$의 크기는 각각 $(2a+b)^\\circ$, $(2a+2b)^\\circ$이다. 같은 원에서 길이가 같은 현에 대응하는 두 호의 크기는 서로 같거나 합이 $360^\\circ$이다. 두 현 $AD, BF$의 길이는 같지만 $b>0$이므로 두 호의 크기는 서로 다르다. 따라서 $(2a+b)+(2a+2b)=360$, 즉 $4a+3b=360$이다. 이 식에서 $3(a+b)=300$을 빼면 $a=60$이고, 따라서 $b=40$이다. 그러므로 $\\angle AOB=60^\\circ$이다. $OA=OB$이므로 삼각형 $OAB$의 두 밑각도 각각 $60^\\circ$이다. 따라서 삼각형 $OAB$는 정삼각형이고, 이 원의 반지름의 길이는 $OA=\\overline{AB}=9\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7080",
+"custom": true,
+"rv": 1
 }
 ]

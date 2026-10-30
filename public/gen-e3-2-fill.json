@@ -9130,5 +9130,107 @@
 "twinGroup": "tw-17426",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-15eb58bf44",
+"typeId": "17420",
+"kind": "주관식",
+"diff": 1,
+"body": "가 물통에는 물이 $750\\mathrm{mL}$, 나 물통에는 물이 $500\\mathrm{mL}$ 들어 있습니다. 나 물통에 물을 몇 $\\mathrm{mL}$ 더 부으면 두 물통의 물의 양이 같아집니까?",
+"selfGrade": true,
+"answer": "$250\\mathrm{mL}$",
+"solution": "가 물통과 나 물통의 물의 양의 차를 구합니다. $750-500=250$이므로 나 물통에 물을 $250\\mathrm{mL}$ 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17420",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-29e9e624da",
+"typeId": "17420",
+"kind": "객관식",
+"diff": 2,
+"body": "민수의 물병에는 물이 1 L, 지우의 물병에는 물이 600 mL 들어 있습니다. 지우의 물병에 물을 몇 mL 더 부으면 두 물병의 물의 양이 같아집니까?",
+"choices": [
+"200 mL",
+"300 mL",
+"400 mL",
+"500 mL",
+"600 mL"
+],
+"answer": "③",
+"solution": "1 L=1000 mL입니다. 두 물병에 들어 있는 물의 양의 차는 1000-600=400(mL)입니다. 따라서 지우의 물병에 물을 400 mL 더 부어야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17420",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2e3d79cc07",
+"typeId": "17420",
+"kind": "주관식",
+"diff": 2,
+"body": "큰 그릇에는 물이 2 L 200 mL, 작은 그릇에는 물이 1 L 800 mL 들어 있습니다. 큰 그릇에서 물을 몇 mL 덜어 내면 두 그릇의 물의 양이 같아집니까?",
+"selfGrade": true,
+"answer": "400 mL",
+"solution": "2 L 200 mL=2200 mL이고, 1 L 800 mL=1800 mL입니다. 두 그릇에 들어 있는 물의 양의 차는 2200-1800=400(mL)입니다. 따라서 큰 그릇에서 물을 400 mL 덜어 내야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17420",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8aab3e1917",
+"typeId": "17420",
+"kind": "객관식",
+"diff": 2,
+"body": "가 수조에는 물이 $1\\mathrm{L}\\ 600\\mathrm{mL}$, 나 수조에는 물이 $800\\mathrm{mL}$ 들어 있습니다. 가 수조에서 나 수조로 물을 몇 $\\mathrm{mL}$ 옮기면 두 수조의 물의 양이 같아집니까?",
+"choices": [
+"$200\\mathrm{mL}$",
+"$300\\mathrm{mL}$",
+"$400\\mathrm{mL}$",
+"$500\\mathrm{mL}$",
+"$800\\mathrm{mL}$"
+],
+"answer": "③",
+"solution": "두 수조의 물의 양의 차는 $1600-800=800(\\mathrm{mL})$입니다. 한쪽에서 다른 쪽으로 물을 옮기면 차가 옮긴 양의 두 배만큼 줄어드므로 $800\\div2=400(\\mathrm{mL})$를 옮겨야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17420",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0a45422665",
+"typeId": "17420",
+"kind": "주관식",
+"diff": 2,
+"body": "A 물통에는 물이 $2\\mathrm{L}\\ 300\\mathrm{mL}$, B 물통에는 물이 $1\\mathrm{L}\\ 100\\mathrm{mL}$ 들어 있습니다. A 물통에서 B 물통으로 물을 몇 $\\mathrm{mL}$ 옮기면 두 물통의 물의 양이 같아집니까?",
+"selfGrade": true,
+"answer": "$600\\mathrm{mL}$",
+"solution": "두 물통의 물의 양의 차는 $2\\mathrm{L}\\ 300\\mathrm{mL}-1\\mathrm{L}\\ 100\\mathrm{mL}=1\\mathrm{L}\\ 200\\mathrm{mL}$입니다. 이 차의 절반을 옮겨야 하므로 $1200\\div2=600(\\mathrm{mL})$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17420",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3ab4839a0a",
+"typeId": "17420",
+"kind": "객관식",
+"diff": 2,
+"body": "첫째 양동이에는 물이 $3\\mathrm{L}\\ 500\\mathrm{mL}$, 둘째 양동이에는 물이 $2\\mathrm{L}\\ 100\\mathrm{mL}$ 들어 있습니다. 첫째 양동이에서 둘째 양동이로 물을 옮겨 두 양동이의 물의 양을 같게 하려고 합니다. 옮겨야 하는 물의 양은 얼마입니까?",
+"choices": [
+"$500\\mathrm{mL}$",
+"$600\\mathrm{mL}$",
+"$700\\mathrm{mL}$",
+"$800\\mathrm{mL}$",
+"$1\\mathrm{L}\\ 400\\mathrm{mL}$"
+],
+"answer": "③",
+"solution": "두 양동이의 물의 양의 차는 $3\\mathrm{L}\\ 500\\mathrm{mL}-2\\mathrm{L}\\ 100\\mathrm{mL}=1\\mathrm{L}\\ 400\\mathrm{mL}$입니다. 차의 절반인 $1400\\div2=700(\\mathrm{mL})$를 옮기면 두 양이 같아집니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17420",
+"custom": true,
+"rv": 1
 }
 ]

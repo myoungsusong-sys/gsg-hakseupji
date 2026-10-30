@@ -3087,5 +3087,113 @@
 "twinGroup": "tw-18784",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-0ddf197386",
+"typeId": "18748",
+"kind": "객관식",
+"diff": 1,
+"body": "직각삼각형 $ABC$에서 $\\angle C=90^\\circ$이고 $AB=18\\text{ cm}$이다. 이 삼각형의 외접원의 반지름의 길이는?",
+"choices": [
+"$6\\text{ cm}$",
+"$8\\text{ cm}$",
+"$9\\text{ cm}$",
+"$12\\text{ cm}$",
+"$18\\text{ cm}$"
+],
+"answer": "③",
+"solution": "직각삼각형의 외접원의 지름은 빗변의 길이와 같다. 따라서 외접원의 반지름의 길이는 $18\\div2=9\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18748",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7460b39f27",
+"typeId": "18748",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\angle B=90^\\circ$인 직각삼각형 $ABC$의 외접원의 반지름의 길이가 $12\\text{ cm}$이다. 변 $AC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$24\\text{ cm}$",
+"solution": "변 $AC$는 직각삼각형의 빗변이므로 외접원의 지름이다. 따라서 $AC=2\\times12=24\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18748",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-db9e23e9c6",
+"typeId": "18748",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$의 내심을 $I$라 하고, 내접원이 변 $AB$, $AC$와 접하는 점을 각각 $D$, $E$라 하자. $AD=3\\text{ cm}$일 때, 내접원의 반지름의 길이는?",
+"choices": [
+"$2\\text{ cm}$",
+"$3\\text{ cm}$",
+"$4\\text{ cm}$",
+"$5\\text{ cm}$",
+"$6\\text{ cm}$"
+],
+"answer": "②",
+"solution": "접점에 그은 반지름은 접선에 수직이고 $ID=IE$이므로, 사각형 $ADIE$는 정사각형이다. 따라서 내접원의 반지름의 길이는 $ID=AD=3\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18748",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-df97180ebd",
+"typeId": "18748",
+"kind": "객관식",
+"diff": 2,
+"body": "직각삼각형의 세 변의 길이가 각각 $10\\text{ cm}$, $24\\text{ cm}$, $26\\text{ cm}$이다. 이 삼각형의 내접원의 반지름의 길이는?",
+"choices": [
+"$2\\text{ cm}$",
+"$3\\text{ cm}$",
+"$4\\text{ cm}$",
+"$5\\text{ cm}$",
+"$6\\text{ cm}$"
+],
+"answer": "③",
+"solution": "빗변의 길이는 $26\\text{ cm}$이므로 삼각형의 넓이는 $\\dfrac12\\times10\\times24=120\\text{ cm}^2$이다. 내접원의 반지름의 길이를 $r\\text{ cm}$라 하고 내심과 세 꼭짓점을 각각 연결하면, 원래 삼각형은 높이가 모두 $r\\text{ cm}$인 세 삼각형으로 나누어진다. 따라서 $\\dfrac12\\times(10+24+26)\\times r=120$이다. 즉 $30r=120$이므로 내접원의 반지름의 길이는 $4\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18748",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a2011e972a",
+"typeId": "18748",
+"kind": "객관식",
+"diff": 2,
+"body": "$\\angle C=90^\\circ$인 직각삼각형 $ABC$에서 $AC=20\\text{ cm}$, $BC=21\\text{ cm}$, $AB=29\\text{ cm}$이다. 이 삼각형의 외접원의 넓이는?",
+"choices": [
+"$\\dfrac{441}{4}\\pi\\text{ cm}^2$",
+"$210\\pi\\text{ cm}^2$",
+"$\\dfrac{841}{4}\\pi\\text{ cm}^2$",
+"$420\\pi\\text{ cm}^2$",
+"$841\\pi\\text{ cm}^2$"
+],
+"answer": "③",
+"solution": "빗변 $AB$가 외접원의 지름이므로 외접원의 반지름의 길이는 $\\dfrac{29}{2}\\text{ cm}$이다. 따라서 외접원의 넓이는 $\\pi\\times\\left(\\dfrac{29}{2}\\right)^2=\\dfrac{841}{4}\\pi\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18748",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d992444238",
+"typeId": "18748",
+"kind": "주관식",
+"diff": 2,
+"body": "직각삼각형의 세 변의 길이가 각각 $18\\text{ cm}$, $24\\text{ cm}$, $30\\text{ cm}$이다. 이 삼각형의 외접원의 넓이에서 내접원의 넓이를 뺀 값을 구하시오.",
+"selfGrade": true,
+"answer": "$189\\pi\\text{ cm}^2$",
+"solution": "빗변의 길이가 $30\\text{ cm}$이므로 외접원의 반지름의 길이는 $15\\text{ cm}$이다. 삼각형의 넓이는 $\\dfrac12\\times18\\times24=216\\text{ cm}^2$이다. 내접원의 반지름의 길이를 $r\\text{ cm}$라 하고 내심과 세 꼭짓점을 각각 연결하면, 원래 삼각형은 높이가 모두 $r\\text{ cm}$인 세 삼각형으로 나누어진다. 따라서 $\\dfrac12\\times(18+24+30)\\times r=216$이다. 즉 $36r=216$이므로 $r=6$이다. 따라서 구하는 값은 $\\pi\\times15^2-\\pi\\times6^2=189\\pi\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18748",
+"custom": true,
+"rv": 1
 }
 ]
