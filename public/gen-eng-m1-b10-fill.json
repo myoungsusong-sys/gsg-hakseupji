@@ -3827,5 +3827,126 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-873a1a9493",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nHe wanted ____________ his emotions with bright and wild colors.",
+"choices": [
+"express",
+"expresses",
+"expressing",
+"to express",
+"expressed"
+],
+"answer": "④",
+"solution": "동사 want는 목적어로 to부정사를 취하므로 「want + to+동사원형」 형태가 되어야 한다. 따라서 to express가 알맞다. express, expressing 등은 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-39608d1355",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThe shapes look ____________ a snail shell.",
+"choices": [
+"like",
+"at",
+"for",
+"as",
+"to"
+],
+"answer": "①",
+"solution": "'~처럼 보이다'라는 뜻으로 뒤에 명사(a snail shell)가 올 때는 「look like + 명사」를 쓴다. 따라서 like가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4a0efd5b04",
+"typeId": "eng-m1-b10-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nSome people thought ____________ a beast painted me.",
+"choices": [
+"that",
+"what",
+"who",
+"which",
+"whose"
+],
+"answer": "①",
+"solution": "동사 thought 뒤에 「주어(a beast) + 동사(painted)」를 갖춘 완전한 절이 목적어로 오므로, 명사절을 이끄는 접속사 that이 알맞다. 의문사나 관계대명사는 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-11780d4ffe",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 어색하게 짝지어진 것은?",
+"choices": [
+"greedy: 욕심 많은",
+"hungry: 배고픈",
+"honest: 정직한",
+"reward: 보상하다",
+"enough: 부족한"
+],
+"answer": "⑤",
+"solution": "⑤ enough는 '충분한'이라는 뜻입니다. '부족한'이 아니므로 뜻이 어색합니다. 나머지 greedy(욕심 많은), hungry(배고픈), honest(정직한), reward(보상하다)는 모두 바르게 짝지어졌습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-820f05dfd7",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 빈칸에 알맞은 단어를 <보기>에서 골라 쓰시오.\n\n<보기> hungry  honest  share\n\n(1) His people were ______ because they had no food. (배고픈)\n(2) Rani was very ______ and gave the rice back to the king. (정직한)\n(3) I'll ______ the rice with the poor people. (나누다)",
+"selfGrade": true,
+"answer": "hungry honest share",
+"solution": "(1) 음식이 없어 배고픈 상태이므로 hungry입니다. (2) 쌀을 돌려준 정직한 행동이므로 honest입니다. (3) 가난한 사람들과 쌀을 나눈다는 뜻이므로 share입니다. 모두 본문에 나온 어휘입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0ca6cb16b0",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe king said to Rani, \"I'll ______ you.\" (보상하다)",
+"choices": [
+"carry",
+"share",
+"reward",
+"collect",
+"fall"
+],
+"answer": "③",
+"solution": "'보상하다'라는 뜻을 가진 단어는 reward입니다. carry(운반하다), share(나누다), collect(모으다), fall(떨어지다)은 뜻이 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2d6870ddbe",
+"typeId": "eng-m1-b10-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 바르게 배열하여 문장을 완성하시오. (필요시 형태는 그대로 쓸 것)\n\n우리말: 그 왕은 배고픈 사람들과 그의 쌀을 나누지 않았다.\n<보기> share / his rice / the king / with / didn't / the hungry people",
+"selfGrade": true,
+"answer": "The king didn't share his rice with the hungry people.",
+"solution": "주어 The king 뒤에 부정의 조동사 didn't를 쓰고, 동사원형 share가 옵니다. 목적어 his rice 다음에 '~와 함께'를 뜻하는 전치사 with와 the hungry people을 붙입니다. 'share A with B'(A를 B와 나누다) 구조를 이용한 문장입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m7s0t0",
+"custom": true
 }
 ]

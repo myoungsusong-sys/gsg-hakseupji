@@ -6076,5 +6076,413 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u7m7s0t0",
 "custom": true
+},
+{
+"id": "fill-507f202c5f",
+"typeId": "eng-m3-b12-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 알맞은 단어는?\n\na person who is your age and whom you like and enjoy spending time with",
+"choices": [
+"friend",
+"symbol",
+"text",
+"table",
+"floor"
+],
+"answer": "①",
+"solution": "'당신과 나이가 비슷하고 함께 시간을 보내는 것을 좋아하는 사람'은 '친구'를 뜻하는 friend이다. symbol은 상징, text는 글, table은 탁자, floor는 바닥이므로 뜻이 맞지 않는다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-aadb747339",
+"typeId": "eng-m3-b12-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?\n\n(형용사 - 부사)",
+"choices": [
+"quick - quickly",
+"actual - actually",
+"visual - visually",
+"tight - tightly",
+"quiet - quietness"
+],
+"answer": "⑤",
+"solution": "①~④는 모두 '형용사 - 부사(-ly)' 관계이다. 하지만 ⑤의 quietness는 '조용함'이라는 명사이므로 '형용사 - 명사' 관계이다. 따라서 나머지와 다른 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-cdf48e293f",
+"typeId": "eng-m3-b12-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 알맞은 단어는?\n\nwords that are written or printed",
+"choices": [
+"text",
+"human",
+"type",
+"symbol",
+"conversation"
+],
+"answer": "①",
+"solution": "'쓰이거나 인쇄된 글(단어들)'은 text를 뜻한다. human은 인간, type은 유형, symbol은 상징, conversation은 대화이므로 풀이와 맞지 않는다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-898262a68d",
+"typeId": "eng-m3-b12-u3m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nDorothy Vaughan worked at NASA. When IBM computers came to NASA, she was worried about her team's jobs. So she studied FORTRAN, a new programming language, and taught it to her team members. Thanks to her, they could become programmers.",
+"choices": [
+"the problems of IBM computers",
+"how to use FORTRAN",
+"how Dorothy helped her team prepare for change",
+"why Dorothy left NASA",
+"the first programmer in America"
+],
+"answer": "③",
+"solution": "Dorothy는 IBM 컴퓨터가 들어오자 팀원들의 일자리를 걱정했습니다. 그래서 새 프로그래밍 언어인 FORTRAN을 공부해 팀원들에게 가르쳤고, 덕분에 팀원들은 프로그래머가 될 수 있었습니다. 따라서 글의 주제는 'Dorothy가 팀원들이 변화에 대비하도록 도운 방법'인 ③입니다. ②는 FORTRAN이라는 세부 소재만 다루고, ④·⑤는 본문에 없는 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ba34e1dd20",
+"typeId": "eng-m3-b12-u3m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nMary Jackson wanted to study rocket science. But she couldn't go to a white school because of her skin color. She didn't give up. She asked a judge for permission, and the judge finally gave it to her. Later, she became the first African-American woman engineer at NASA.",
+"choices": [
+"A Judge Who Studied Rocket Science",
+"Why White Schools Were Popular",
+"The Hard Life of NASA Engineers",
+"Mary Jackson: She Never Gave Up Her Dream",
+"How to Become a Judge"
+],
+"answer": "④",
+"solution": "Mary Jackson은 피부색 때문에 백인 학교에 다닐 수 없었지만 포기하지 않았습니다. 판사에게 허락을 구해 결국 허락을 받았고, 나중에 NASA 최초의 아프리카계 미국인 여성 엔지니어가 되었습니다. 꿈을 포기하지 않은 Mary의 이야기이므로 제목은 ④가 알맞습니다. ①은 로켓 과학을 공부하려 한 사람을 판사로 바꿨고, ③은 글의 중심 내용이 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5e794cfa3f",
+"typeId": "eng-m3-b12-u3m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nHidden Figures is a movie about three African-American women who worked at NASA: Katherine Johnson, Dorothy Vaughan, and Mary Jackson. They had a hard time because of their skin color. But they didn't give up and did great work at NASA.",
+"choices": [
+"NASA는 컴퓨터를 처음 만든 곳이다.",
+"세 여성은 피부색으로 인한 어려움에도 포기하지 않고 NASA에서 훌륭한 일을 해냈다.",
+"영화는 재미있지만 내용은 사실이 아니다.",
+"세 여성은 어려움 때문에 결국 NASA를 떠났다.",
+"우주 비행사가 되려면 수학을 잘해야 한다."
+],
+"answer": "②",
+"solution": "글은 영화 'Hidden Figures'에 나오는 세 아프리카계 미국인 여성이 피부색 때문에 힘든 시간을 보냈지만 포기하지 않고 NASA에서 훌륭한 일을 했다고 말합니다. 따라서 요지는 ②입니다. ④는 'didn't give up'과 정반대이고, ①·③·⑤는 본문에 근거가 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8f1d57c36e",
+"typeId": "eng-m3-b12-u3m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 요약할 때, 빈칸 ⓐ~ⓔ에 들어갈 알맞은 말을 본문에서 찾아 각각 한 단어로 쓰시오. (본문에 나온 형태 그대로 쓸 것)\n\nWhen NASA installed IBM computers in 1961, Dorothy Vaughan was worried that the \"human computers\" would lose their jobs. So she studied FORTRAN, a new programming language, and taught it to her team members. Later, she was asked to lead a new IBM team. She said she would not accept the offer if she couldn't bring her ladies with her. Thanks to her, her team members could become programmers. She wasn't afraid of change and used it as a chance.\n\n<Summary>\nDorothy was afraid that the \"human computers\" would ⓐ________ their jobs because of the new IBM computers. Instead of giving up, she learned FORTRAN and ⓑ________ it to her team. When she got an offer to lead a new team, she wanted to ⓒ________ her ladies with her. As a result, her team members became ⓓ________. In this way, she turned change into a ⓔ________.",
+"selfGrade": true,
+"answer": "ⓐ lose ⓑ taught ⓒ bring ⓓ programmers ⓔ chance",
+"solution": "ⓐ 'would lose their jobs'에서 lose를 찾습니다. ⓑ 앞의 learned와 시제를 맞춰야 하므로 본문의 과거형 taught를 씁니다. ⓒ 'wanted to' 뒤에는 동사원형이 오므로, 새 팀을 맡을 때 팀원들을 데려가고 싶어 했다는 뜻의 bring이 들어갑니다. ⓓ 팀원들이 'programmers'가 되었고, ⓔ Dorothy는 변화를 기회로 삼았으므로(used it as a chance) chance가 답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0621b1a3e8",
+"typeId": "eng-m3-b12-u3m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 말을 주어진 단어를 활용하여 쓰시오.\n\nDorothy studied a new programming language. She also taught it to her team members.\n\n→ __________ a new programming language, Dorothy taught it to her team members.\n\n<조건>\n• study를 알맞은 형태로 바꾸어 쓸 것.\n• 분사구문을 사용할 것.\n• 빈칸에 들어갈 두 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "After studying",
+"solution": "Dorothy가 새로운 프로그래밍 언어를 공부한 후 팀원들에게 가르쳤다는 내용이다. 시간의 선후 관계를 나타내는 분사구문은 After studying과 같이 만들 수 있다. 따라서 빈칸에는 After studying이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-dee52f9d64",
+"typeId": "eng-m3-b12-u3m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n나는 혼자서 그것을 할 수 없다.\n\n① I can't do it alone.\n② I can't doing it alone.\n③ I don't can do it alone.\n④ I can't to do it alone.\n⑤ I can not doing it alone.",
+"choices": [
+"I can't do it alone.",
+"I can't doing it alone.",
+"I don't can do it alone.",
+"I can't to do it alone.",
+"I can not doing it alone."
+],
+"answer": "①",
+"solution": "‘~할 수 없다’는 조동사 can의 부정형 can't를 사용한다. 조동사 뒤에는 반드시 동사원형이 와야 하므로 do가 알맞다. ‘혼자서’는 alone으로 표현하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-8bd2d08139",
+"typeId": "eng-m3-b12-u3m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장이 같은 의미가 되도록 빈칸을 완성하시오.\n\nDorothy wasn't afraid of change. She used it as a chance.\n\n→ __________ afraid of change, Dorothy used it as a chance.\n\n<조건>\n• 분사구문을 사용할 것.\n• 부정의 의미를 유지할 것.\n• 접속사와 주어는 생략할 것.\n• 빈칸에 들어갈 두 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "Not being",
+"solution": "두 문장의 주어가 Dorothy로 같으므로 앞 문장을 분사구문으로 바꿀 수 있다. wasn't afraid는 be동사의 부정 표현이므로 분사구문에서는 Not being afraid로 나타낸다. 분사구문의 부정어 not은 현재분사 앞에 놓이므로 정답은 Not being이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-bedde2c0cc",
+"typeId": "eng-m3-b12-u3m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nMary Jackson wanted to learn more about rocket science, but she wasn't allowed to go to a white school. She asked a judge to give her permission. The judge was impressed by what she said and finally gave her permission.\n\nMary는 판사에게 자신의 입장을 설명하며 이렇게 말했다.\n\n“저는 최초가 되는 것 이외에는 선택이 없어요.”\n\n<조건>\n• 주어는 I로 시작할 것.\n• ‘~하는 것 외에는 선택의 여지가 없다’는 have no choice but to 구문을 사용할 것.\n• ‘최초가 되다’는 be the first로 표현할 것.\n• 주어진 의미를 모두 포함한 완전한 영어 문장으로 쓸 것.\n• 문장 끝에 마침표를 붙일 것.",
+"selfGrade": true,
+"answer": "I have no choice but to be the first.",
+"solution": "‘~하는 것 외에는 선택의 여지가 없다’는 have no choice but to＋동사원형 구문으로 나타낸다. ‘최초가 되다’는 be the first이므로 but to 뒤에 be the first를 연결해야 한다. but 뒤에 동사원형을 바로 쓰거나 to와 but의 순서를 바꾸면 어법상 틀리다. 따라서 I have no choice but to be the first.가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u3m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4bac36982f",
+"typeId": "eng-m3-b12-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ의 우리말 뜻이 올바르게 짝지어진 것은?\n\nThis tiny book is really important to people in my town. It ⓐprovides both the information and the ⓑtools necessary to make clean drinking water. It is called the Drinkable Book. You cannot actually drink the book, but you can use it as a ⓒfilter. Simply tear out a page and ⓓpour dirty water on it. … This amazing book saves the lives of many children from ⓔdiseases that come from dirty water.",
+"choices": [
+"ⓐ provides - 받다",
+"ⓑ tools - 도구",
+"ⓒ filter - 그릇",
+"ⓓ pour - 마시다",
+"ⓔ diseases - 기적"
+],
+"answer": "②",
+"solution": "tool은 '도구'라는 뜻이므로 ②가 바르게 짝지어졌다. provide는 '제공하다', filter는 '여과 장치, 필터', pour는 '붓다, 따르다', disease는 '질병'이라는 뜻이다. 문맥상 '깨끗한 식수를 만드는 데 필요한 정보와 도구를 제공한다'는 의미로 읽힌다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-536bd6b8e2",
+"typeId": "eng-m3-b12-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 풀이에 해당하는 단어로 알맞은 것은?\n\na company that prepares and prints books and sells them to people\n\n(참고) This book was made by a small children's book ________ in Argentina.",
+"choices": [
+"seed",
+"publisher",
+"filter",
+"leaf",
+"town"
+],
+"answer": "②",
+"solution": "책을 만들어 인쇄하고 판매하는 회사는 publisher(출판사)이다. 본문의 'This book was made by a small children's book publisher in Argentina.'에도 쓰인 단어다. seed는 '씨앗', filter는 '필터', leaf는 '잎', town은 '마을'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4120b49963",
+"typeId": "eng-m3-b12-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말 뜻을 참고하여 빈칸에 알맞은 한 단어를 쓰시오.\n\n그냥 한 페이지를 뜯어내고 그 위에 더러운 물을 부어라.\n→ Simply __________ out a page and pour dirty water on it.",
+"selfGrade": true,
+"answer": "tear",
+"solution": "'~을 뜯어내다, 찢어 내다'는 tear out으로 나타낸다. 명령문이므로 동사원형 tear를 쓴다. Drinkable Book에서 책장 하나를 뜯어 필터로 쓰는 방법을 설명하는 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c74743a942",
+"typeId": "eng-m3-b12-u6m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)와 같은 의미가 되도록 <보기>의 단어를 모두 사용하여 순서대로 배열하시오.\n\nGarcia-Fuller said she was teaching her students how to tell fake news from real news. “One of the first steps is to slow down.” (A)Garcia-Fuller의 학생들은 또한 뉴스에서 사실과 의견을 구별하는 법을 배운다.\n\n<보기>\nfrom, how, fact, tell, to, opinion\n\n→ Garcia-Fuller’s students also learn ______________________________ in the news.",
+"selfGrade": true,
+"answer": "how to tell fact from opinion",
+"solution": "‘~하는 법’은 「how+to부정사」로 나타내므로 how to tell이 된다. ‘A와 B를 구별하다’는 tell A from B이므로 tell fact from opinion으로 쓴다. 따라서 how to tell fact from opinion이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-1ddcbf6762",
+"typeId": "eng-m3-b12-u6m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)를 바르게 영작한 것은?\n\nGarcia-Fuller said she was teaching her students how to tell fake news from real news. (A)“첫 단계 중 하나는 속도를 늦추는 것이다. If a story or a photo seems too good to be true, stop and think.”",
+"choices": [
+"One of the first step is slow down.",
+"One of the first steps is to slow down.",
+"One of the first steps are to slow down.",
+"One of first steps is to slowing down.",
+"One of the first steps to slow down are."
+],
+"answer": "②",
+"solution": "‘~ 중 하나’는 「one of the+복수명사」이므로 steps를 쓰고, 주어가 One이므로 동사는 단수형 is를 쓴다. ‘속도를 늦추는 것’은 보어 자리이므로 to부정사 to slow down으로 나타낸다. ①은 step이 단수이고, ③과 ⑤는 동사가 are이며, ④는 to 뒤에 -ing가 와서 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-c9ec93d466",
+"typeId": "eng-m3-b12-u6m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)와 같은 의미가 되도록 괄호 안의 단어를 사용하여 빈칸을 채우시오. (단, 필요하면 어형을 바꿀 것)\n\n“Opinions are good to read,” said 15-year-old McKenzie Campbell, “but (A)너는 또한 그것들이 사실에 근거한 것인지 확인해야 한다.”\n\n→ but you also have to check if they ________ ________ ________ facts. (base)",
+"selfGrade": true,
+"answer": "are based on",
+"solution": "‘~에 근거하다’는 수동태 be based on으로 나타낸다. 주어 they(= Opinions)가 복수이고 현재 시제이므로 be동사는 are를 쓴다. base는 과거분사 based로 바꾸어 are based on이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2524f98bae",
+"typeId": "eng-m3-b12-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 것은?\n\n① I want you to help me.\n② She told him to wait.\n③ He asked me to open the door.\n④ My mom allowed me go out.\n⑤ The teacher wants us to study hard.",
+"choices": [
+"I want you to help me.",
+"She told him to wait.",
+"He asked me to open the door.",
+"My mom allowed me go out.",
+"The teacher wants us to study hard."
+],
+"answer": "④",
+"solution": "allow는 「allow+목적어+to부정사」 형태로 쓰여 목적격보어로 to부정사를 취한다. 따라서 ④의 go out은 to go out으로 고쳐야 한다. 나머지 want, tell, ask도 모두 to부정사를 목적격보어로 바르게 취하고 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-83b32dcf17",
+"typeId": "eng-m3-b12-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞지 않은 것은?\n\n① They expected him to win.\n② I asked her to call me.\n③ He wants me come early.\n④ She told me to be quiet.\n⑤ We advised him to rest.",
+"choices": [
+"They expected him to win.",
+"I asked her to call me.",
+"He wants me come early.",
+"She told me to be quiet.",
+"We advised him to rest."
+],
+"answer": "③",
+"solution": "want는 「want+목적어+to부정사」 형태로 목적격보어 자리에 to부정사가 와야 한다. 따라서 ③의 come은 to come으로 고쳐야 한다. expect, ask, tell, advise도 모두 to부정사를 목적격보어로 취하는 동사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f3dc608c80",
+"typeId": "eng-m3-b12-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 것은?\n\n① My father wants me to be a doctor.\n② She asked him to close the window.\n③ The doctor advised her to sleep more.\n④ I told my brother clean the room.\n⑤ They expected us to arrive early.",
+"choices": [
+"My father wants me to be a doctor.",
+"She asked him to close the window.",
+"The doctor advised her to sleep more.",
+"I told my brother clean the room.",
+"They expected us to arrive early."
+],
+"answer": "④",
+"solution": "tell은 「tell+목적어+to부정사」 형태로 목적격보어로 to부정사를 취한다. 따라서 ④의 clean은 to clean으로 고쳐야 한다. want, ask, advise, expect도 모두 목적격보어 자리에 to부정사가 와야 하므로 나머지는 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-657cd3a1ff",
+"typeId": "eng-m3-b12-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nAfter about two weeks, I stopped ______ about the hard work when I saw the plants popping up.",
+"choices": [
+"complain",
+"complained",
+"to complain",
+"complaining",
+"complains"
+],
+"answer": "④",
+"solution": "「stop + V-ing」은 '~하던 것을 멈추다'라는 뜻이다. 불평하던 행동 자체를 그만두었다는 의미이므로 동명사 complaining이 알맞다. 「stop + to부정사」는 '~하기 위해 멈추다'라는 다른 뜻이 되므로 여기서는 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-565cd0c573",
+"typeId": "eng-m3-b12-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nNow I like to go to the garden every day ______ what new flowers are ready to pop up.",
+"choices": [
+"see",
+"saw",
+"to see",
+"seeing",
+"seen"
+],
+"answer": "③",
+"solution": "'~하기 위해서'라는 목적의 뜻을 나타내는 부사적 용법의 to부정사가 필요하다. 따라서 to see가 알맞다. 동사원형 see나 동명사 seeing은 go의 목적을 나타내는 자리에 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3394705106",
+"typeId": "eng-m3-b12-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nOn the weekends ______ followed, the town people made rows and planted seeds.",
+"choices": [
+"what",
+"who",
+"that",
+"whose",
+"where"
+],
+"answer": "③",
+"solution": "선행사가 사물(the weekends)이고, 뒤 문장에 주어가 없으므로 주격 관계대명사 that(= which)이 알맞다. what은 선행사를 포함하므로 올 수 없고, who는 사람, whose는 소유격, where는 관계부사라서 주어 자리를 채울 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-07d79d3b33",
+"typeId": "eng-m3-b12-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n우리말: 두 주가 지난 후에, 나는 그 식물들이 싹트기 시작했다는 것을 알았다.\n\n<조건>\n1. find, start, pop up을 어형 변화하여 모두 사용할 것\n2. '싹트기 시작한 것'이 '알게 된 것'보다 먼저 일어난 일임을 나타내도록 과거완료(had p.p.)를 쓸 것\n3. After two weeks로 시작할 것",
+"selfGrade": true,
+"answer": "After two weeks, I found that the plants had started to pop up.",
+"solution": "'알게 된 것(found)'보다 '싹트기 시작한 것'이 더 먼저 일어난 일이므로, 주절은 과거시제(found), 종속절은 과거완료(had started)로 써서 시제의 전후 관계를 나타낸다. start는 to부정사와 동명사를 모두 목적어로 취하므로 to pop up(또는 popping up)이 가능하다. that은 목적어절을 이끄는 접속사로 생략도 가능하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u1m1s0t0",
+"custom": true
 }
 ]

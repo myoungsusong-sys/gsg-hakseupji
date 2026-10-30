@@ -5706,5 +5706,140 @@
 "source": "유사 문항",
 "twinGroup": "tw-15434",
 "custom": true
+},
+{
+"id": "fill-b8a1605a89",
+"typeId": "15338",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 식에서 곱셈 기호와 나눗셈 기호를 생략하여 나타내시오.\n\n$a\\times 7\\div b$ (단, $b\\ne 0$)",
+"selfGrade": true,
+"answer": "$\\dfrac{7a}{b}$",
+"solution": "수와 문자의 곱에서는 수를 문자 앞에 쓴다. 나눗셈을 분수로 나타내면 $\\dfrac{7a}{b}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-a4c9bd5805",
+"typeId": "15338",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 식에서 곱셈 기호와 나눗셈 기호를 생략하여 나타낸 것으로 옳은 것은?\n\n$x\\div 6\\times y$",
+"choices": [
+"$\\dfrac{x}{6y}$",
+"$6xy$",
+"$\\dfrac{6x}{y}$",
+"$\\dfrac{xy}{6}$",
+"$\\dfrac{y}{6x}$"
+],
+"answer": "④",
+"solution": "곱셈과 나눗셈만 있는 식은 왼쪽부터 차례대로 계산한다. 따라서 $x\\div 6\\times y=\\dfrac{x}{6}\\times y=\\dfrac{xy}{6}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-b42cfb4d02",
+"typeId": "15338",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 식에서 곱셈 기호와 나눗셈 기호를 생략하여 나타내시오.\n\n$(-3)\\times m\\div n$ (단, $n\\ne 0$)",
+"selfGrade": true,
+"answer": "$-\\dfrac{3m}{n}$",
+"solution": "곱셈 기호를 생략하면 $(-3)\\times m=-3m$이다. 이를 $n$으로 나눈 식은 $-\\dfrac{3m}{n}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-c7fc0ec7a0",
+"typeId": "15338",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 식에서 곱셈 기호와 나눗셈 기호를 생략하고 수끼리의 계산을 마친 것으로 옳은 것은?\n\n$6\\times a\\div (2\\times b)\\times c\\div 3$ (단, $b\\ne 0$)",
+"choices": [
+"$\\dfrac{ac}{b}$",
+"$\\dfrac{a}{bc}$",
+"$\\dfrac{9ac}{b}$",
+"$abc$",
+"$\\dfrac{ac}{3b}$"
+],
+"answer": "①",
+"solution": "괄호 안의 $2\\times b$ 전체로 나누어야 하므로 식은 $\\dfrac{6a}{2b}\\times c\\div 3$이다. 수끼리 계산하면 $\\dfrac{6ac}{6b}=\\dfrac{ac}{b}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-4b2f614041",
+"typeId": "15338",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 식에서 곱셈 기호와 나눗셈 기호를 생략하고 수끼리의 계산을 마치시오.\n\n$a\\times(-8)\\div b\\div\\left(-\\dfrac{2}{3}\\right)+c\\div 4\\times b$ (단, $b\\ne 0$)",
+"selfGrade": true,
+"answer": "$\\dfrac{12a}{b}+\\dfrac{bc}{4}$",
+"solution": "첫째 항에서 $-\\dfrac{2}{3}$으로 나누는 것은 $-\\dfrac{3}{2}$를 곱하는 것과 같으므로 $\\dfrac{12a}{b}$이다. 둘째 항은 $c$를 $4$로 나눈 뒤 $b$를 곱하므로 $\\dfrac{bc}{4}$이다. 따라서 답은 $\\dfrac{12a}{b}+\\dfrac{bc}{4}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-a2ca9eeef9",
+"typeId": "15338",
+"kind": "주관식",
+"diff": 4,
+"body": "다음은 곱셈 기호와 나눗셈 기호를 생략하는 과정에서 잘못 나타낸 두 식이다. 왼쪽의 원래 식을 각각 바르게 나타내어 순서대로 쓰시오. (단, $a$, $b$는 모두 $0$이 아니다.)\n\n(가) $a\\div 5\\times b=\\dfrac{a}{5b}$\n\n(나) $a\\div(5\\times b)\\div 2=\\dfrac{2a}{5b}$",
+"selfGrade": true,
+"answer": "$\\dfrac{ab}{5},\\ \\dfrac{a}{10b}$",
+"solution": "(가)는 $a$를 $5$로 나눈 다음 $b$를 곱하므로 $\\dfrac{ab}{5}$이다. (나)는 $a$를 $5b$로 나눈 다음 다시 $2$로 나누므로 $\\dfrac{a}{10b}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-b783175125",
+"typeId": "15338",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 식에서 곱셈 기호와 나눗셈 기호를 생략하고 수끼리의 계산을 마치시오. (단, $a$, $b$, $c$는 모두 $0$이 아니다.)\n\n$\\left\\{a\\div\\left(\\dfrac{2}{3}\\times b\\right)\\right\\}\\div\\left\\{c\\div\\left((-4)\\times b\\right)\\right\\}$",
+"selfGrade": true,
+"answer": "$-\\dfrac{6a}{c}$",
+"solution": "첫 번째 중괄호 안의 식은 $\\dfrac{3a}{2b}$이고, 두 번째 중괄호 안의 식은 $-\\dfrac{c}{4b}$이다. 따라서 전체 식은 $\\dfrac{3a}{2b}\\times\\left(-\\dfrac{4b}{c}\\right)$이다. 공통인 인수를 약분하고 수끼리 계산하면 $-\\dfrac{6a}{c}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-5f49e3aa53",
+"typeId": "15338",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 등식 중 항상 성립하는 것의 개수는? (단, $a$, $b$, $c$는 모두 $0$이 아니다.)\n\n(가) $a\\div b\\times c=\\dfrac{ac}{b}$\n\n(나) $a\\div(b\\div c)=\\dfrac{a}{bc}$\n\n(다) $a\\div(b\\times c)\\div\\dfrac{1}{2}=\\dfrac{2a}{bc}$\n\n(라) $a\\div\\left(b\\div\\dfrac{1}{2}\\right)\\times c=\\dfrac{ac}{2b}$\n\n(마) $a\\div\\left(b\\times\\dfrac{1}{2}\\right)\\div c=\\dfrac{a}{2bc}$",
+"choices": [
+"$1$개",
+"$2$개",
+"$3$개",
+"$4$개",
+"$5$개"
+],
+"answer": "③",
+"solution": "(가)는 왼쪽부터 계산하면 $\\dfrac{ac}{b}$이므로 성립한다. (나)의 왼쪽은 $\\dfrac{ac}{b}$이므로 항상 성립하지 않고, (다)의 왼쪽은 $\\dfrac{2a}{bc}$이므로 성립한다. (라)는 괄호 안이 $2b$이므로 성립한다. (마)의 왼쪽은 $\\dfrac{2a}{bc}$이므로 항상 성립하지 않아, 답은 $3$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
+},
+{
+"id": "fill-482c6609e2",
+"typeId": "15338",
+"kind": "주관식",
+"diff": 5,
+"body": "세 식 $A$, $B$, $C$를 다음과 같이 정하였다. $A\\div(B\\times C)$에서 곱셈 기호와 나눗셈 기호를 생략하고 수끼리의 계산을 마치시오. (단, $a$, $b$, $c$는 모두 $0$이 아니다.)\n\n$A=(-10)\\times a\\div b$\n\n$B=a\\div\\left((-2)\\times c\\right)$\n\n$C=15\\times c\\div b$",
+"selfGrade": true,
+"answer": "$\\dfrac{4}{3}$",
+"solution": "각 식을 분수로 나타내면 $A=-\\dfrac{10a}{b}$, $B=-\\dfrac{a}{2c}$, $C=\\dfrac{15c}{b}$이다. 따라서 $B\\times C=-\\dfrac{15a}{2b}$이다. 그러므로 $A\\div(B\\times C)=\\left(-\\dfrac{10a}{b}\\right)\\times\\left(-\\dfrac{2b}{15a}\\right)=\\dfrac{4}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15338",
+"custom": true
 }
 ]

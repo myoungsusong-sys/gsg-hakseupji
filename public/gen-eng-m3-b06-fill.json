@@ -2533,5 +2533,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u1m5s0t0",
 "custom": true
+},
+{
+"id": "fill-7607133442",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 영어 표현의 우리말 뜻으로 알맞지 않은 것은?\n\nComfort foods can make us feel better when we are ⓐstressed out. Jessica's father made chicken soup for her ⓑso that she could get well. Maria felt happy when her stress ⓒdisappeared after eating cassava chips. Simon likes madeleines that ⓓlook like sea shells. He thinks of his grandmother ⓔevery time he eats madeleines.",
+"choices": [
+"① ⓐ stressed out: 스트레스가 쌓인",
+"② ⓑ so that: ~할 수 있도록",
+"③ ⓒ disappeared: 나타났다",
+"④ ⓓ look like: ~처럼 보이다",
+"⑤ ⓔ every time: ~할 때마다"
+],
+"answer": "③",
+"solution": "disappear는 '사라지다'라는 뜻이므로 disappeared는 '사라졌다'로 해석해야 한다. '나타났다'는 appeared에 해당하므로 ③은 잘못된 해석이다. 나머지 선택지는 모두 영어 표현과 우리말 뜻이 올바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8673ebf773",
+"typeId": "eng-m3-b06-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThe word shampoo comes from the Hindi word chāmpo, which means \"to press.\" In India, the word was used for a head massage. British traders in India experienced a bath with a head massage and introduced it to Britain in the 18th century. Later, in the 19th century, the word shampoo got its present meaning of \"washing the hair.\"",
+"choices": [
+"the best way to wash your hair",
+"the origin of the word shampoo",
+"the history of British traders in India",
+"how to give a good head massage",
+"popular Hindi words used in English today"
+],
+"answer": "②",
+"solution": "글은 shampoo라는 단어가 힌디어 chāmpo에서 왔고 그 의미가 어떻게 변해 왔는지를 설명하고 있다. 따라서 글 전체를 아우르는 주제는 'shampoo라는 단어의 기원'이다. 머리 감는 법이나 두피 마사지 방법은 세부 내용일 뿐 주제가 아니므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3735833a3c",
+"typeId": "eng-m3-b06-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe word sandwich comes from John Montagu, the 4th Earl of Sandwich. He enjoyed eating meat between two slices of bread because he could play a card game while he was eating. People thought that it was a great idea and began calling such food a sandwich after him.",
+"choices": [
+"How to Play a Card Game",
+"The Life of a Great English King",
+"Where the Word Sandwich Came From",
+"The Healthiest Food in England",
+"Why Bread Is Good for You"
+],
+"answer": "③",
+"solution": "글은 sandwich라는 단어가 John Montagu(샌드위치 백작)의 이름에서 비롯되었음을 이야기한다. 따라서 'sandwich라는 단어가 어디에서 왔는가'를 뜻하는 ③이 제목으로 알맞다. 카드 게임이나 건강은 글의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e306394ee0",
+"typeId": "eng-m3-b06-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThe word robot comes from the play R.U.R., which was written in 1920 by a Czech writer, Karel Čapek. In the play, robots are machines that look like humans. The word robot comes from roboti, which means \"slave workers\" in Czech.",
+"choices": [
+"different types of modern robots",
+"how to write a famous play",
+"the origin of the word robot",
+"the life of Karel Čapek",
+"how robots are made in a factory"
+],
+"answer": "③",
+"solution": "글은 robot이라는 단어가 1920년에 쓰인 희곡 R.U.R.에서, 그리고 체코어 roboti('노예 노동자')에서 유래했음을 설명한다. 그러므로 글의 주제는 'robot이라는 단어의 기원'인 ③이다. 로봇의 종류나 제작 방법은 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-41beecabd9",
+"typeId": "eng-m3-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nMunjado is a type of folk painting that was popular in the late Joseon dynasty. In Munjado, there is usually a Chinese character with some animals or objects. The animals or objects are not just decorations. They are often symbolic.",
+"choices": [
+"조선 왕실의 역사",
+"문자도의 뜻과 특징",
+"한자를 빨리 외우는 방법",
+"조선 시대 화가들의 생활",
+"민화를 사고파는 시장의 규모"
+],
+"answer": "②",
+"solution": "글은 문자도가 무엇인지(조선 후기 유행한 민화) 설명하고, 그 안의 한자와 동물·사물이 단순한 장식이 아니라 상징적이라는 특징을 소개한다. 따라서 '문자도의 뜻과 특징'이 주제로 가장 알맞다. 나머지 선지는 글에 언급되지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1d7d59656d",
+"typeId": "eng-m3-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nBamboo is one of the symbolic objects in Munjado. Bamboo does not bend, and it stays green in all kinds of weather. For these reasons, bamboo came to represent loyalty to the king.",
+"choices": [
+"How to Grow Bamboo",
+"The Color of Winter Trees",
+"Bamboo: A Symbol of Loyalty",
+"Why Munjado Was So Popular",
+"The Carp Story Behind Munjado"
+],
+"answer": "③",
+"solution": "대나무가 휘지 않고 어떤 날씨에도 푸르름을 유지하기 때문에 '왕에 대한 충성(loyalty)'을 상징하게 되었다는 내용이다. 글 전체가 대나무가 상징하는 가치를 말하므로 제목은 'Bamboo: A Symbol of Loyalty'가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-dd8aff300c",
+"typeId": "eng-m3-b06-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 알맞은 것은?\n\nLotus flowers grow in muddy ponds, but they still bloom beautifully. For this reason, lotus flowers in Munjado became a symbol of a person's will to fight for justice despite difficulties.",
+"choices": [
+"연꽃은 더러운 물에서는 살 수 없다.",
+"연꽃은 조선의 왕을 상징한다.",
+"연꽃은 효(孝)를 나타내는 대표 식물이다.",
+"연꽃은 그림을 아름답게 하는 장식일 뿐이다.",
+"연꽃은 문자도에서 정의를 향한 의지를 상징한다."
+],
+"answer": "⑤",
+"solution": "연꽃은 진흙 연못에서 자라지만 아름답게 피어나므로, 어려움 속에서도 정의를 위해 싸우려는 의지를 상징하게 되었다는 내용이다. 따라서 요지는 '연꽃이 문자도에서 정의를 향한 의지를 상징한다'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u7m3s0t0",
+"custom": true
 }
 ]

@@ -3623,5 +3623,139 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u5m7s0t0",
 "custom": true
+},
+{
+"id": "fill-878c1fa27f",
+"typeId": "eng-m1-b07-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 알맞은 것은?\n\nMy dad is ____________ pink roses in his hands. (hold)",
+"choices": [
+"holding",
+"holdding",
+"holdeing",
+"holds",
+"hold"
+],
+"answer": "①",
+"solution": "현재진행형은 「be동사 + 동사원형-ing」로 나타낸다. hold는 끝 자음을 겹치지 않고 그대로 -ing를 붙여 holding이 된다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fe778f64ff",
+"typeId": "eng-m1-b07-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 알맞은 것은?\n\nThere ____________ one hundred candles on the birthday cake.",
+"choices": [
+"is",
+"are",
+"am",
+"be",
+"was"
+],
+"answer": "②",
+"solution": "「There + be동사 + 주어」 구문에서 be동사는 뒤의 주어에 수를 일치시킨다. 주어 one hundred candles가 복수이고 현재 상황이므로 are가 알맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-88bc1d035a",
+"typeId": "eng-m1-b07-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nMy mom ____________ strawberries on the cake now.",
+"choices": [
+"put",
+"puts",
+"is putting",
+"is puting",
+"are putting"
+],
+"answer": "③",
+"solution": "now가 있어 지금 하고 있는 동작을 나타내므로 현재진행형 「be동사 + -ing」를 쓴다. 주어 My mom은 3인칭 단수라 is를 쓰고, put은 끝 자음 t를 겹쳐 putting이 된다. 따라서 ③ is putting이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-10ec2eed8f",
+"typeId": "eng-m1-b07-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말이 되도록 주어진 단어를 알맞게 배열하시오.\n\nhero / is / Tommy / my\n\nReporter: Who saved your life, Gary?\nGary: My cat did. _______________________________",
+"selfGrade": true,
+"answer": "Tommy is my hero",
+"solution": "「주어 + be동사 + 보어」 어순으로 배열한다. 주어는 Tommy, 동사는 is, 보어는 my hero이다. 따라서 정답은 'Tommy is my hero.'이다. 본문의 'He is my hero.'와 같은 구조이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-503dfa8c14",
+"typeId": "eng-m1-b07-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말을 <보기>의 단어를 사용하여 알맞게 영작하시오. (필요하면 형태를 바꿀 것)\n\n<보기> amaze, that\n\nW: My cat can push buttons on the telephone.\nM: Wow, _______________________",
+"selfGrade": true,
+"answer": "that's amazing",
+"solution": "놀라움을 나타낼 때는 'That's amazing.'이라고 한다. 사물이나 사실이 놀라움을 줄 때는 amaze를 현재분사 amazing으로 바꿔 쓴다. 따라서 that과 is를 줄인 that's를 써서 'that's amazing'으로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f22c331036",
+"typeId": "eng-m1-b07-u2m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 대답이 되도록 빈칸에 알맞은 말을 본문에서 찾아 한 단어로 쓰시오.\n\nGary: I was sick for a long time, so I stayed home. My cat, Tommy, stayed by my side. He was my only friend. We often played a game together.\n\nQ. Why did Gary stay home?\n→ Because he was __________ for a long time.",
+"selfGrade": true,
+"answer": "sick",
+"solution": "본문 첫 문장 'I was sick for a long time, so I stayed home.'에서 so 앞부분이 집에 머문 이유이다. Gary는 오랫동안 아팠기 때문에 집에 머물렀다. 따라서 빈칸에는 sick이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-fcdb394df7",
+"typeId": "eng-m1-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"① My sister likes music.",
+"② He plays soccer after school.",
+"③ Mina studies English every day.",
+"④ Tom go to school at 8:00 a.m.",
+"⑤ They eat lunch at school."
+],
+"answer": "④",
+"solution": "④의 주어 Tom은 3인칭 단수이므로 일반동사의 현재형에 -(e)s를 붙여야 한다. 따라서 go를 goes로 고쳐야 한다. 나머지 문장은 모두 주어에 알맞은 동사 형태를 사용하였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c574974613",
+"typeId": "eng-m1-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 be동사의 현재형으로 가장 알맞은 것은?\n\nMy brother and I ________ students.",
+"choices": [
+"① am",
+"② is",
+"③ are",
+"④ be",
+"⑤ being"
+],
+"answer": "③",
+"solution": "주어 My brother and I는 두 사람을 나타내는 복수 주어이다. 현재 시제에서 복수 주어에는 be동사 are를 사용한다. 따라서 정답은 ③ are이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m1s0t0",
+"custom": true
 }
 ]

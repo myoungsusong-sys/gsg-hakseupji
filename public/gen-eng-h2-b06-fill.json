@@ -3142,5 +3142,100 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b06-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-af22d693f4",
+"typeId": "eng-h2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 innovative와 의미가 가장 가까운 것을 고르시오.\n\nZaha Hadid was a pioneering architect known for her innovative designs.",
+"choices": [
+"creative",
+"ordinary",
+"traditional",
+"careless",
+"expensive"
+],
+"answer": "①",
+"solution": "innovative는 '혁신적인, 참신한'이라는 뜻으로, 새롭고 독창적임을 나타낸다. 보기 중 이와 가장 가까운 의미는 '창의적인'을 뜻하는 creative이다. ordinary(평범한)와 traditional(전통적인)은 오히려 반대에 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7a552d3171",
+"typeId": "eng-h2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 설명이 가리키는 단어로 가장 적절한 것을 고르시오.\n\na dark and cool area that is produced when something blocks the sunlight\n\n→ The large overhanging roof provides ________ and protects the clay bricks from heavy rain.",
+"choices": [
+"shade",
+"foundation",
+"ceiling",
+"brick",
+"drainage"
+],
+"answer": "①",
+"solution": "설명은 '햇빛을 가려 생기는 어둡고 시원한 공간', 즉 '그늘(shade)'을 뜻한다. 빈칸 문장에서도 지붕이 그늘을 제공하고 벽돌을 보호한다는 맥락이므로 shade가 알맞다. foundation(토대), ceiling(천장) 등은 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-72db502abd",
+"typeId": "eng-h2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\n\nInstead of using conventional materials like concrete, glass, and steel, Kéré chose to use ________, a locally available material, mixed with 10% cement to make bricks.",
+"choices": [
+"clay",
+"marble",
+"plastic",
+"iron",
+"gold"
+],
+"answer": "①",
+"solution": "지문에서 Kéré는 현대적 재료 대신 그 지역에서 쉽게 구할 수 있는 '점토(clay)'를 10%의 시멘트와 섞어 벽돌을 만들었다고 했다. 따라서 빈칸에는 clay가 알맞다. 나머지 재료들은 locally available material이라는 설명과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-310fbaea59",
+"typeId": "eng-h2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어의 문맥상 쓰임이 적절하지 않은 것을 고르시오.",
+"choices": [
+"Kéré made bricks by mixing clay, a locally (available) material, with cement.",
+"The brick mixture helps keep classrooms (cool) during hot weather.",
+"The large overhanging roof provides shade and (protects) the clay bricks from heavy rain.",
+"The trained young workers (collaborated) on the construction of the school.",
+"Holes carved in the walls (prevent) light from entering, making the pavilion dark."
+],
+"answer": "⑤",
+"solution": "⑤의 지문 내용은 벽에 뚫은 구멍이 빛을 '들어오게 하여' 밝고 통풍이 잘되는 분위기를 만든다는 것이다. 따라서 '막다'라는 뜻의 prevent와 '어둡게 한다(dark)'는 서술은 문맥과 정반대이므로 적절하지 않다. 나머지 ①~④는 지문 내용과 일치하는 올바른 쓰임이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ad8f4e8c42",
+"typeId": "eng-h2-b06-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.\n\nIn Kéré's hometown, residents traditionally wear blue clothing during times of (A)________, and the triangles on the pavilion's walls (B)________ luck and confidence.",
+"choices": [
+"(A) mourning … (B) hide",
+"(A) celebration … (B) symbolize",
+"(A) celebration … (B) conceal",
+"(A) hardship … (B) oppose",
+"(A) mourning … (B) symbolize"
+],
+"answer": "②",
+"solution": "지문에 따르면 주민들은 '축하(celebration)'의 시기에 전통적으로 파란 옷을 입으며, 삼각형은 행운과 자신감을 '상징한다(symbolize)'고 했다. 따라서 (A)는 celebration, (B)는 symbolize가 알맞다. mourning(애도), hardship(고난), hide/conceal(숨기다), oppose(반대하다)는 모두 문맥과 맞지 않는 함정 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b06-u2m7s0t0",
+"custom": true
 }
 ]

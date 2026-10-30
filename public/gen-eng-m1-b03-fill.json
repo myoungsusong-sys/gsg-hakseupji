@@ -2460,5 +2460,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u0m6s0t0",
 "custom": true
+},
+{
+"id": "fill-0be2ec7dc9",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"flavor - 맛",
+"creamy - 크림 같은",
+"spicy - 매운",
+"slowly - 빠르게",
+"popular - 인기 있는"
+],
+"answer": "④",
+"solution": "slowly는 '천천히'라는 뜻이다. 본문에서 It melts very slowly(그것은 매우 천천히 녹는다)로 쓰였다. 따라서 '빠르게'로 연결한 ④가 어색하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-908b07a5df",
+"typeId": "eng-m1-b03-u4m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 알맞은 것은?\n\nGelato was ____________ delicious than dondurma and paleta.",
+"choices": [
+"more",
+"most",
+"very",
+"many",
+"much"
+],
+"answer": "①",
+"solution": "delicious는 3음절 형용사이므로 비교급을 만들 때 앞에 more를 붙여 more delicious로 쓴다. than이 있으므로 비교급이 필요하다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u4m6s0t0",
+"custom": true
 }
 ]

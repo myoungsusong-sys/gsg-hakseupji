@@ -4609,5 +4609,286 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u3m6s0t0",
 "custom": true
+},
+{
+"id": "fill-b5ebbf786f",
+"typeId": "eng-h1-b05-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 요약문의 빈칸에 들어갈 알맞은 말을 <조건>에 맞게 쓰시오.\n\nA powerful first line of a book can catch readers’ attention and make them want to read on. Authors often spend weeks, months, or even years coming up with the perfect opening line for their books.\n\n<요약문>\nA powerful opening line can (1)________________________ and encourage them to continue reading.\n\n<조건>\n• 본문에서 찾아 그대로 쓸 것.\n• 3단어로 쓸 것.",
+"selfGrade": true,
+"answer": "catch readers’ attention",
+"solution": "본문에서 책의 강렬한 첫 문장은 독자의 관심을 끌고 계속 읽고 싶게 만든다고 설명한다. 요약문의 빈칸 뒤에 나오는 them은 readers를 가리킨다. 따라서 본문의 표현인 catch readers’ attention을 그대로 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a047225db0",
+"typeId": "eng-h1-b05-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 요약문의 빈칸에 들어갈 알맞은 말을 <조건>에 맞게 쓰시오.\n\nPeter Pan is a boy who refuses to grow older. He wants to have fun and stay a child forever.\n\n<요약문>\nPeter Pan does not want to become an adult. Instead, he wants to have fun and (1)________________________ forever.\n\n<조건>\n• 본문에서 찾아 그대로 쓸 것.\n• 3단어로 쓸 것.",
+"selfGrade": true,
+"answer": "stay a child",
+"solution": "본문에 따르면 피터 팬은 어른이 되는 것을 거부하고 영원히 어린아이로 남기를 원한다. 요약문의 does not want to become an adult는 refuses to grow older와 같은 의미이다. 따라서 빈칸에는 stay a child가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a5475c5c31",
+"typeId": "eng-h1-b05-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 요약문의 빈칸에 들어갈 알맞은 말을 <조건>에 맞게 쓰시오.\n\nThe main character, Winston Smith, does not agree with what the government is doing. He wants to fight against Big Brother, but he can’t do it by himself.\n\n<요약문>\nWinston Smith disagrees with the government and wants to (1)________________________ Big Brother.\n\n<조건>\n• 본문에서 찾아 그대로 쓸 것.\n• 2단어로 쓸 것.",
+"selfGrade": true,
+"answer": "fight against",
+"solution": "본문에서 윈스턴 스미스는 정부의 행동에 동의하지 않으며 빅 브라더에 맞서 싸우고 싶어 한다. 요약문의 wants to 뒤에는 동사원형이 와야 한다. 따라서 본문에 제시된 fight against를 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f09f4b11d6",
+"typeId": "eng-h1-b05-u1m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 요약문의 빈칸 (1), (2)에 들어갈 알맞은 말을 <조건>에 맞게 쓰시오.\n\nOne night in London, Peter Pan and Tinker Bell visit the home of Wendy, John, and Michael. Peter Pan invites them to a fantastic island in the sky called Neverland. It is a magical place where dreams are born and excitement never ends. The children take Peter Pan’s hand and their adventure begins. Only children can visit Neverland, and they do not grow up as long as they remain there. They have a wonderful time in Neverland. But in the end, the three children decide to return home and grow up.\n\n<요약문>\nPeter Pan invites Wendy, John, and Michael to Neverland, a magical island where dreams are born. The children do not grow older as long as (1)________________________. However, they eventually decide to (2)________________________ and become adults.\n\n<조건>\n• 본문에서 찾아 그대로 쓸 것.\n• (1)은 3단어, (2)는 2단어로 쓸 것.\n\n(1) ______________________________\n(2) ______________________________",
+"selfGrade": true,
+"answer": "(1) they remain there (2) return home",
+"solution": "본문에서 아이들은 네버랜드에 머무르는 동안 나이를 먹지 않는다고 설명한다. 따라서 (1)에는 '그들이 그곳에 머무르는 한'이라는 뜻의 they remain there가 들어간다. 마지막 부분에서는 세 아이가 결국 집으로 돌아가 성장하기로 결정했다고 하므로 (2)에는 return home이 알맞다. 두 표현 모두 본문에 그대로 제시되어 있으며 조건의 단어 수도 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a87a1fcc0e",
+"typeId": "eng-h1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nSteve Jobs went on to talk about the features of the tablet and continued to justify why the tablet was worth ________.",
+"choices": [
+"buy",
+"to buy",
+"buying",
+"bought",
+"to buying"
+],
+"answer": "③",
+"solution": "'be worth -ing'는 '~할 가치가 있다'라는 뜻의 관용 표현이다. worth 뒤에는 동명사가 와야 하므로 buying이 알맞다. to부정사(to buy), 동사원형(buy), 과거형(bought)은 worth 뒤에 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8c16292d1c",
+"typeId": "eng-h1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThis is the basic idea of the endowment effect. People are less likely to give up ________ they already have or trade it for something else.",
+"choices": [
+"that",
+"which",
+"what",
+"who",
+"where"
+],
+"answer": "③",
+"solution": "빈칸 앞에는 선행사가 없고, 빈칸 뒤의 절(they already have)은 목적어가 빠진 불완전한 절이다. 이 절은 give up의 목적어 역할을 해야 한다. 따라서 선행사를 포함하는 관계대명사 what(~하는 것)이 알맞다. that과 which는 선행사가 있어야 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-33a4f41d1e",
+"typeId": "eng-h1-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"The crowd went wild.",
+"The tablet suddenly seemed affordable to everyone.",
+"Both groups were told they could exchange their items.",
+"It is common for stores use this kind of price anchoring.",
+"About half of the group chose the chocolate bar, and the other half chose the coffee mug."
+],
+"answer": "④",
+"solution": "④는 'It is ~ for 의미상 주어 + to부정사' 구문이다. 따라서 use를 to use로 고쳐야 한다. ①의 go wild에서 wild는 보어로 쓰인 형용사이므로 맞다. ②의 seem 뒤에도 형용사 보어 affordable이 와서 맞다. ③은 두 그룹이 '들은' 것이므로 수동태 were told가 맞다. ⑤는 둘로 나눈 것 중 나머지 하나이므로 the other가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9ed8b8ceec",
+"typeId": "eng-h1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nRecycling is an easy way to help the planet. It makes you ______ good about yourself, too.",
+"choices": [
+"to feel",
+"feeling",
+"felt",
+"feel",
+"feels"
+],
+"answer": "④",
+"solution": "사역동사 make는 「make + 목적어 + 동사원형」의 구조를 취한다. 따라서 목적격보어 자리에는 동사원형 feel이 와야 한다. to feel, feeling, felt, feels는 모두 어법상 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b317574fb2",
+"typeId": "eng-h1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nRecycling makes a positive impact on the planet. It also makes you feel good about ______, too.",
+"choices": [
+"you",
+"yours",
+"yourself",
+"your",
+"yourselves"
+],
+"answer": "③",
+"solution": "문장의 주어와 전치사 about의 목적어가 가리키는 대상이 동일인(you)이므로 재귀대명사를 써야 한다. 주어가 you(단수 취급)이므로 yourself가 알맞다. you, yours, your, yourselves는 모두 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6ce489d482",
+"typeId": "eng-h1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\n______ just happened is a case of wishcycling. It is the act of trying to recycle something that should not be recycled.",
+"choices": [
+"That",
+"Which",
+"It",
+"What",
+"Who"
+],
+"answer": "④",
+"solution": "빈칸부터 happened까지가 문장의 주어 역할을 하는 명사절이고, 절 안에 주어가 빠져 있다. 선행사를 포함하여 '~한 것'의 뜻으로 주어 역할을 하는 관계대명사 What이 알맞다. That, Which, It, Who는 선행사 없이 명사절의 주어 자리를 채울 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5da23d95c3",
+"typeId": "eng-h1-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 괄호 (A), (B)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe biggest problem with wishcycling is (A)[that / what] it creates more waste. Wishcycled items can also damage the sorting machines, causing them to be (B)[temporary / temporarily] shut down for repairs.",
+"choices": [
+"that — temporary",
+"that — temporarily",
+"what — temporary",
+"what — temporarily",
+"which — temporarily"
+],
+"answer": "②",
+"solution": "(A) is의 보어가 되는 명사절을 이끌면서 뒤에 완전한 절(it creates more waste)이 오므로 접속사 that이 알맞다. what은 뒤에 불완전한 절이 와야 한다. (B) 과거분사 shut down을 수식하여 '일시적으로'의 뜻을 나타내므로 부사 temporarily가 알맞다. 따라서 that — temporarily가 바르게 연결된 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fc0de90112",
+"typeId": "eng-h1-b05-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 배열하여 문장을 완성하시오.\n\n우리말: 그 캠프 숙소는 돌과 올리브 나무로 만들어졌다.\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것\n• 수동태(be + 과거분사)로 쓸 것\n\n<보기> made / of / was / the camp house / stone and olive wood",
+"selfGrade": true,
+"answer": "The camp house was made of stone and olive wood",
+"solution": "'~로 만들어졌다'는 수동태 'be made of ~'로 나타낸다. 주어 The camp house 뒤에 was made of를 쓰고, 재료인 stone and olive wood를 연결한다. 본문의 문장과 동일하게 'The camp house was made of stone and olive wood.'가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-aa4fab0d54",
+"typeId": "eng-h1-b05-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n우리말: 영어가 케냐에서 널리 사용된다.\n\n<조건>\n• <보기>의 단어를 모두 사용할 것\n• 수동태(be + 과거분사)로 쓸 것\n\n<보기> English / is / widely / spoken / in Kenya",
+"selfGrade": true,
+"answer": "English is widely spoken in Kenya",
+"solution": "행위의 대상인 English가 주어이므로 수동태 'is spoken'을 쓴다. 빈도·정도를 나타내는 부사 widely는 be동사와 과거분사 사이에 넣어 'is widely spoken'으로 배열한다. 마지막에 장소 표현 in Kenya를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f84cc667d5",
+"typeId": "eng-h1-b05-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 말을 본문에서 찾아 한 단어로 쓰시오. (필요시 어법에 맞게 변형할 것)\n\nThe statue of Ahmed, an elephant with massive tusks, ______ the movement against illegal hunting in Kenya.",
+"selfGrade": true,
+"answer": "symbolizes",
+"solution": "본문에서 Ahmed 동상을 설명하며 'It symbolizes the movement against illegal hunting in Kenya.'라고 하였다. 빈칸의 주어 The statue가 3인칭 단수이므로 동사에 -s를 붙여 symbolizes로 쓴다. '상징하다'라는 뜻의 동사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fbdb1b9ed6",
+"typeId": "eng-h1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThis old portrait was ⓐ[analyzed / analyzing] by an engineer in 2016. He found that the white animal ⓑ[held / holding] in the woman's arms had been changed many times. The painting also had different layers, like ⓒ[that / those] of an onion.",
+"choices": [
+"ⓐ analyzed - ⓑ held - ⓒ those",
+"ⓐ analyzing - ⓑ held - ⓒ those",
+"ⓐ analyzed - ⓑ holding - ⓒ those",
+"ⓐ analyzing - ⓑ held - ⓒ that",
+"ⓐ analyzed - ⓑ holding - ⓒ that"
+],
+"answer": "①",
+"solution": "ⓐ 그림이 조사되는 대상이므로 수동태 was analyzed가 맞다. ⓑ 동물이 팔에 '안긴' 대상이므로 과거분사 held가 와서 the animal을 수식한다. ⓒ 앞의 복수명사 layers를 대신하므로 those가 맞다(that은 단수). 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-39c55cd03b",
+"typeId": "eng-h1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nYou might ⓐ[hear / have heard] this expression before: there is more than meets the eye. Science can be the key to ⓑ[see / seeing] beyond what the naked eye can see. ⓒ[What / That] draws most people's attention is not the woman but the white animal.",
+"choices": [
+"ⓐ hear - ⓑ seeing - ⓒ What",
+"ⓐ have heard - ⓑ see - ⓒ What",
+"ⓐ have heard - ⓑ seeing - ⓒ What",
+"ⓐ have heard - ⓑ seeing - ⓒ That",
+"ⓐ hear - ⓑ see - ⓒ What"
+],
+"answer": "③",
+"solution": "ⓐ 'before(이전에)'와 어울려 과거의 경험을 나타내므로 have heard가 맞다. ⓑ 전치사 to 뒤에는 동명사가 와야 하므로 seeing이 맞다(the key to -ing). ⓒ 뒤 문장의 주어 역할을 하면서 선행사를 포함하는 관계대명사 What이 필요하다(That은 불가). 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-111e7ac439",
+"typeId": "eng-h1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIt is possible that other hidden paintings will be ⓐ[revealing / revealed] to the world with the help of technology. You may be aware ⓑ[of / that] Van Gogh sold only one painting in his lifetime. ⓒ[Whatever / What] the reason for his poverty, his works are now loved by everyone.",
+"choices": [
+"ⓐ revealing - ⓑ that - ⓒ Whatever",
+"ⓐ revealed - ⓑ of - ⓒ Whatever",
+"ⓐ revealed - ⓑ that - ⓒ What",
+"ⓐ revealed - ⓑ that - ⓒ Whatever",
+"ⓐ revealing - ⓑ of - ⓒ What"
+],
+"answer": "④",
+"solution": "ⓐ 그림들이 '드러나는' 대상이므로 수동태 be revealed가 맞다. ⓑ 뒤에 「주어+동사」의 완전한 절이 오므로 접속사 that이 필요하다(of 뒤에는 명사(구)). ⓒ 'the reason'을 받아 '이유가 무엇이든'이라는 양보의 뜻을 만드는 Whatever가 맞다(What은 불가). 따라서 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u7m1s0t0",
+"custom": true
 }
 ]

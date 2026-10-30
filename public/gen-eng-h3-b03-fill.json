@@ -670,5 +670,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b03-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-40b71a8345",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWhen we arrived at the beach, we were guided to the viewing platforms so that we could watch the little blue penguins without _______ them.",
+"choices": [
+"disturbing",
+"protecting",
+"feeding",
+"greeting",
+"counting"
+],
+"answer": "①",
+"solution": "펭귄을 '방해하지' 않기 위해 전망대로 안내되었다는 흐름이므로 disturbing(방해하는)이 알맞다. protect(보호하다), feed(먹이를 주다), greet(인사하다), count(세다)는 '방해하지 않고 보려고 했다'는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-08de0b64fb",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nAlthough manta rays are _______, I was lucky enough to see many of them gliding gracefully through the water near Lady Elliot Island.",
+"choices": [
+"common",
+"endangered",
+"dangerous",
+"noisy",
+"harmless"
+],
+"answer": "②",
+"solution": "manta ray(쥐가오리)는 멸종 위기에 처한 동물로, '비록 멸종 위기에 처해 있지만' 운 좋게 많이 보았다는 대조의 흐름이 자연스럽다. 따라서 endangered(멸종 위기에 처한)가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-683ea72c6c",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nUluru was originally gray, but its iron content had _______ over time, giving it its iconic red color.",
+"choices": [
+"oxidized",
+"frozen",
+"disappeared",
+"melted",
+"cooled"
+],
+"answer": "①",
+"solution": "원래 회색이던 Uluru가 철 성분이 '산화되어' 상징적인 붉은색을 띠게 되었다는 내용이므로 oxidized(산화되었다)가 알맞다. 얼거나 사라지거나 녹거나 식었다는 선택지는 붉은색이 된 이유로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a1fed8bebc",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn Lady Elliot Island, I went snorkeling in the clear water. I witnessed many manta rays (A)[to glide / gliding] gracefully below me. The coral reef (B)[stretching / stretched] beneath the surface was full of color. It was the reef (C)[that / what] amazed me the most.\n\n(A) / (B) / (C)",
+"choices": [
+"to glide / stretching / that",
+"gliding / stretching / that",
+"gliding / stretched / what",
+"to glide / stretched / that",
+"gliding / stretching / what"
+],
+"answer": "②",
+"solution": "(A) 지각동사 witness는 목적어 뒤에 현재분사(-ing)나 원형부정사를 쓰므로 to glide가 아닌 gliding이 맞다. (B) reef가 '펼쳐져 있는' 능동·자동사 의미이므로 현재분사 stretching이 옳다. (C) 선행사 the reef를 받으며 뒤 문장의 주어 역할을 하는 관계대명사 that이 맞고, what은 선행사가 있으면 쓸 수 없다. 따라서 gliding/stretching/that인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-118fa26205",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn Kakadu, our guide Victor showed us rock art (A)[that / what] depicted Aboriginal stories. One drawing showed a spirit (B)[created / creating] lightning. Being able to see the saltwater crocodiles right in front of me (C)[was / were] truly exciting.\n\n(A) / (B) / (C)",
+"choices": [
+"that / created / was",
+"what / creating / were",
+"that / creating / was",
+"what / created / was",
+"that / creating / were"
+],
+"answer": "③",
+"solution": "(A) 선행사 rock art가 있으므로 관계대명사 that이 맞고 what은 선행사를 취할 수 없다. (B) spirit이 번개를 '만들어 내는' 능동 관계이므로 현재분사 creating이 옳다. (C) 주어가 동명사구 Being able to see ...로 단수 취급하므로 was가 맞다. 가까운 복수명사 crocodiles에 수를 맞추지 않도록 주의한다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cbfe001bbd",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nUluru is the largest rock in the world. The colors of the sunsets at Uluru (A)[change / changes] over time based on the sun's position. We walked around its base, (B)[where / which] we saw numerous caves. It was impossible (C)[to find / to be found] words to describe the beauty.\n\n(A) / (B) / (C)",
+"choices": [
+"change / where / to find",
+"changes / where / to find",
+"change / which / to be found",
+"change / where / to be found",
+"changes / which / to find"
+],
+"answer": "①",
+"solution": "(A) 주어의 핵심은 복수명사 The colors이므로 동사는 change가 맞다. (B) 뒤 문장이 완전하고 '그 밑동에서' 라는 장소 의미이므로 관계부사 where가 옳다. (C) '~할 말을 찾는 것이 불가능했다'라는 능동 의미이며 뒤에 목적어 words가 있으므로 to find가 맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a7bd23a2e4",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhile crossing the Yellow River in Kakadu, we spotted more than 30 saltwater crocodiles, which are the largest of all crocodile species. Being able to see them right in front of me (A)[was / were] an experience that I will never forget. The next day at Uluru, I couldn't believe (B)[that / what] I was seeing — could this gigantic rock really be a single piece? From a distance, it looked like a huge red dome, (C)[providing / provided] an amazing contrast against the clear blue sky.\n\n(A) / (B) / (C)",
+"choices": [
+"was / that / providing",
+"was / what / providing",
+"were / what / provided",
+"was / what / provided",
+"were / that / providing"
+],
+"answer": "②",
+"solution": "(A) 진짜 주어는 동명사구 Being able to see them이므로 단수 was가 맞으며, 바로 앞 them·crocodiles에 수를 맞추면 안 된다. (B) believe의 목적어 자리에 오면서 뒤 동사 seeing의 목적어가 빠진 불완전한 명사절을 이끄는 what이 맞고, that은 완전한 절을 이끌어 쓸 수 없다. (C) a red dome이 대비를 '제공하는' 능동 관계의 분사구문이므로 providing이 옳다. 따라서 was/what/providing인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true
 }
 ]

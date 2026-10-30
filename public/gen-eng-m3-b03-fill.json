@@ -6826,5 +6826,233 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u6m0s0t0",
 "custom": true
+},
+{
+"id": "fill-b7c924376d",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"statue - 조각상",
+"hero - 영웅",
+"independence - 독립",
+"secret - 비밀의",
+"entrance - 출구"
+],
+"answer": "⑤",
+"solution": "entrance는 '입구'라는 뜻입니다. 본문에서 김구 기념관 입구(At the entrance of the museum)에서 김구의 하얀 조각상을 보았다는 내용에 쓰였습니다. '출구'는 exit이므로 ⑤가 잘못 연결되었습니다. 나머지는 모두 뜻이 바르게 연결되어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ffd6783cc4",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\na person who is admired for doing great or brave things",
+"choices": [
+"statue",
+"hero",
+"mission",
+"entrance",
+"government"
+],
+"answer": "②",
+"solution": "영영풀이는 '훌륭하거나 용감한 일을 해서 존경받는 사람'이라는 뜻이므로 hero(영웅)가 알맞습니다. 본문에서 김구를 a great national hero라고 소개합니다. statue는 조각상, mission은 임무, entrance는 입구, government는 정부를 뜻합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7f2f84ffbb",
+"typeId": "eng-m3-b03-u4m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"nation - national",
+"nature - natural",
+"person - personal",
+"educate - education",
+"culture - cultural"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 명사 뒤에 -al을 붙여 형용사를 만든 '명사 - 형용사' 관계입니다. ④ educate(교육하다)와 education(교육)은 '동사 - 명사' 관계이므로 나머지와 다릅니다. 본문에 나오는 national(국가의)은 nation(국가)의 형용사형입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6ff14fdaeb",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nMisun\nMy family is the most important thing to me. In my dream house, my family feels safe and comfortable. There is a large living room. We sometimes play board games and sing there. The house also has a garden with a large picnic table. We will enjoy barbecues there.",
+"choices": [
+"가족을 위한 꿈의 집",
+"친구들과 여행하는 방법",
+"새로운 기술의 장점",
+"애완동물을 기르는 방법",
+"시골 생활의 어려움"
+],
+"answer": "①",
+"solution": "첫 문장 'My family is the most important thing to me.'에서 글쓴이가 가족을 가장 중요하게 여긴다는 것을 알 수 있다. 이어서 가족이 안전하고 편안하게 지내는 집, 보드게임을 하고 노래하는 거실, 가족 바비큐를 위한 정원을 소개한다. 따라서 글의 주제는 '가족을 위한 꿈의 집'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-75980415ed",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nNature is my good friend. I feel good when I walk in the forest. My dream house is in the countryside. It has a big garden with many flowers and trees. In the morning, I can wake up and listen to the songs of the birds. I can also play with my pets there.",
+"choices": [
+"My Busy City Life",
+"A House for Robots",
+"A Dream House Close to Nature",
+"How to Cook a Barbecue",
+"My Favorite Board Games"
+],
+"answer": "③",
+"solution": "글쓴이는 자연을 좋은 친구라고 말하며, 시골에 있는 꿈의 집을 소개한다. 꽃과 나무가 많은 큰 정원, 아침에 들리는 새소리, 애완동물과 노는 모습은 모두 자연과 가까운 집의 모습이다. 따라서 제목으로는 'A Dream House Close to Nature'가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5a51fd60e0",
+"typeId": "eng-m3-b03-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nBryan\nI like to use new products and technology before others. In my dream house, the front door recognizes my face and opens automatically. The bathroom mirror tells me my weight. A robot cleans the house and cooks for me.\n\n<요약>\nBryan's dream house is full of ____________.",
+"choices": [
+"animals",
+"new technology",
+"flowers and trees",
+"family pictures",
+"toys for children"
+],
+"answer": "②",
+"solution": "Bryan은 새로운 제품과 기술을 남보다 먼저 쓰기를 좋아한다고 말한다. 그의 꿈의 집에는 얼굴을 인식해 저절로 열리는 현관문, 몸무게를 알려 주는 욕실 거울, 청소와 요리를 해 주는 로봇이 있다. 이것들은 모두 새로운 기술이므로 빈칸에는 'new technology'가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-dc4e045f5a",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWhen I arrived at the station, the train ____________ already.",
+"choices": [
+"① leaves",
+"② has left",
+"③ had left",
+"④ will leave",
+"⑤ is leaving"
+],
+"answer": "③",
+"solution": "내가 역에 도착한 것(과거)보다 기차가 떠난 것이 더 먼저 일어난 일이다. 과거의 어느 때보다 먼저 일어난 일은 과거완료 「had + 과거분사」로 쓰므로 had left가 알맞다. has left는 현재완료라서 과거 시점(arrived)과 함께 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ed2b1cb985",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"① I had never seen snow before I go to Canada.",
+"② She found the book that she has lost.",
+"③ They has finished the work before noon.",
+"④ He had already eaten dinner when I called him.",
+"⑤ We had visit the museum before it closed."
+],
+"answer": "④",
+"solution": "④는 내가 전화한 것(과거)보다 저녁을 먹은 일이 먼저이므로 과거완료 had eaten을 바르게 썼다. ①은 before 뒤의 go를 went로, ②는 has lost를 had lost로, ③은 has를 had로, ⑤는 visit를 과거분사 visited로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-75d2418138",
+"typeId": "eng-m3-b03-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분 중 어법상 어색한 것은?",
+"choices": [
+"① Mina had finished her homework before her mom came home.",
+"② When we got to the theater, the movie had already started.",
+"③ I realized that I had left my umbrella on the bus.",
+"④ He told me that he had never been to Jeju-do.",
+"⑤ Junho couldn't enter the house because he had lose his key."
+],
+"answer": "⑤",
+"solution": "과거완료는 「had + 과거분사」 형태로 쓴다. ⑤에서 lose는 동사원형이므로 과거분사 lost로 고쳐 had lost라고 해야 한다. 나머지는 모두 과거 시점보다 먼저 일어난 일을 과거완료로 바르게 나타냈다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f87b7ba5ad",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nWhen you hurt someone, you should apologize at once. A quick apology shows that you are considerate and take responsibility for your action. All you need to do is to say, \"I'm sorry.\" Then, the hurt friend will think nothing of it and laugh it off.",
+"choices": [
+"how to make many friends",
+"why people often make mistakes",
+"the importance of apologizing quickly",
+"ways to avoid hurting other people",
+"how to become a responsible student"
+],
+"answer": "③",
+"solution": "글 전체가 누군가에게 상처를 주었을 때 즉시 사과하라고 말하고 있다. 빠른 사과가 배려심과 책임감을 보여 준다는 내용이 중심이므로 주제는 '빠르게 사과하는 것의 중요성'이다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f3154eeefd",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nApologies are necessary among family members and loved ones, too. People get hurt more easily when the hurt comes from a family member or a friend. We may think that they will let it go because they are close to us. Remember, however, that small mistakes and no apology add up to big emotional wounds.",
+"choices": [
+"Apologies Are Also Needed for Family",
+"Family Members Never Get Hurt",
+"How to Make New Friends at School",
+"The Best Way to Avoid Making Mistakes",
+"Why Small Mistakes Are Not Important"
+],
+"answer": "①",
+"solution": "가족이나 가까운 사람에게도 사과가 필요하다는 것이 글의 핵심이다. 가까운 사이일수록 상처가 더 쌓일 수 있으니 사과해야 한다고 했으므로 제목으로는 '가족에게도 사과가 필요하다'가 알맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-7eaabb2938",
+"typeId": "eng-m3-b03-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nYou should be sincere when you apologize. Saying you're sorry is more than just words. You need to show that you respect the other person and care about his or her feelings. A casual apology can hurt the other person even more.",
+"choices": [
+"사과는 가능한 한 빨리 해야 한다.",
+"사과할 때는 진심을 담아야 한다.",
+"가족에게는 사과하지 않아도 된다.",
+"실수는 누구나 할 수 있는 일이다.",
+"말보다 행동이 항상 더 중요하다."
+],
+"answer": "②",
+"solution": "사과는 단순한 말 이상이며 상대를 존중하고 감정을 배려하는 진심이 담겨야 한다고 말하고 있다. 가벼운 사과는 오히려 상처를 줄 수 있다고 했으므로 요지는 '진심을 담아 사과해야 한다'이다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u6m2s0t0",
+"custom": true
 }
 ]

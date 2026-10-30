@@ -4304,5 +4304,291 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u4m7s0t0",
 "custom": true
+},
+{
+"id": "fill-f05d0055be",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 내용과 일치하는 것은?\n\nOne day, Gropius took a trip to France. The place he went to was famous for its vineyards. Along the road, farmers were selling grapes near each vineyard. However, at one vineyard, there was no one selling grapes but only a box by the side of the road. The elderly couple who owned the vineyard were in poor health and could not pick the grapes themselves. So they let people pick as many grapes as they wanted as long as they put five francs in the box.",
+"choices": [
+"Gropius는 이탈리아로 여행을 갔다.",
+"Gropius가 간 곳은 포도밭으로 유명했다.",
+"모든 포도밭에서 농부들이 직접 포도를 팔고 있었다.",
+"노부부는 건강이 좋아서 직접 포도를 땄다.",
+"사람들은 10프랑을 내면 포도를 딸 수 있었다."
+],
+"answer": "②",
+"solution": "'The place he went to was famous for its vineyards.'에서 Gropius가 간 곳이 포도밭으로 유명했음을 알 수 있으므로 ②가 정답이다. Gropius는 프랑스로 갔고(①), 한 포도밭에는 파는 사람 없이 상자만 있었다(③). 노부부는 건강이 좋지 않아 직접 포도를 딸 수 없었고(④), 상자에 5프랑을 넣으면 포도를 딸 수 있었다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a11836e71b",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOne employee of the elevator company looked at the problem from a passenger's point of view. After many days of searching for a solution, she proposed installing a mirror inside the elevator. She believed that the mirror could make the elevator appear larger. She also believed that people could relieve boredom by looking in the mirror. After the mirror was installed, passengers commented on how much faster the elevator was, even though the speed was exactly the same. They stopped paying attention to the speed because they were looking in the mirror.",
+"choices": [
+"한 직원은 승객의 관점에서 문제를 바라보았다.",
+"그 직원은 엘리베이터 안에 거울을 설치하자고 제안했다.",
+"그 직원은 거울이 엘리베이터를 더 넓어 보이게 할 것이라고 생각했다.",
+"거울을 설치한 후 엘리베이터의 실제 속도가 더 빨라졌다.",
+"승객들은 거울을 보느라 엘리베이터의 속도에 신경 쓰지 않게 되었다."
+],
+"answer": "④",
+"solution": "'even though the speed was exactly the same'에서 거울을 설치한 뒤에도 엘리베이터의 속도는 그대로였음을 알 수 있다. 승객들이 빨라졌다고 느꼈을 뿐 실제 속도는 변하지 않았으므로 ④가 글의 내용과 일치하지 않는다. 나머지 선지는 모두 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-aa36a043c9",
+"typeId": "eng-h2-b08-u1m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답으로 알맞은 것을 고르시오.\n\nIn the past, doughnut shops were one of the few places that were open late at night, so the owners were very concerned for their safety. They came up with the idea to donate leftover doughnuts to police officers who were on duty late at night. Because the police officers got free doughnuts, they visited the shops more frequently, and the owners became safer from potential robbers.\n\nQ: What did the doughnut shop owners give to the police officers?",
+"choices": [
+"money",
+"coffee",
+"leftover doughnuts",
+"safety tips",
+"the keys to their shops"
+],
+"answer": "③",
+"solution": "'They came up with the idea to donate leftover doughnuts to police officers'에서 도넛 가게 주인들이 경찰관들에게 남은 도넛(leftover doughnuts)을 기부했음을 알 수 있다. 따라서 ③이 정답이다. 돈, 커피, 안전 수칙, 가게 열쇠는 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6026ede459",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어의 의미로 가장 알맞은 것은?\n\nThis work was created by Georges Seurat, the <u>pioneer</u> of Pointillism.",
+"choices": [
+"① 후원자",
+"② 비평가",
+"③ 개척자",
+"④ 수집가",
+"⑤ 제자"
+],
+"answer": "③",
+"solution": "pioneer는 어떤 분야를 처음 시작하거나 길을 연 '개척자, 선구자'를 뜻한다. 쇠라는 점묘법을 처음 시작한 화가이므로 '점묘법의 개척자'로 해석한다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-81191c166c",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nTake a look at a part of the monkey from the original picture. Its body is made up of a variety of different colored dots. However, when viewed from a distance, the dots of various colors optically ________ to produce brown.",
+"choices": [
+"① separate",
+"② disappear",
+"③ argue",
+"④ merge",
+"⑤ fall"
+],
+"answer": "④",
+"solution": "원숭이의 몸은 여러 색의 점으로 이루어져 있지만, 멀리서 보면 그 점들이 시각적으로 '합쳐져' 갈색으로 보인다는 내용이다. 따라서 '합쳐지다, 융합하다'라는 뜻의 merge가 알맞다. separate(분리되다)는 문맥과 정반대의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-25ec3d166e",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글에서 주어진 영영 풀이에 해당하는 단어를 찾아 원형으로 쓰시오.\n\nEach tiny square dot is called a pixel. Each pixel emits one of the three primary colors of light: red, green, or blue.\n\n<영영 풀이> to send out something such as light, heat, or sound",
+"selfGrade": true,
+"answer": "emit",
+"solution": "'빛, 열, 소리 등을 내보내다'라는 뜻의 단어는 emit(방출하다)이다. 지문에서는 주어 Each pixel에 맞춰 3인칭 단수형 emits로 쓰였으므로 원형인 emit으로 답한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-89a79585fc",
+"typeId": "eng-h2-b08-u5m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "윗글을 읽고 다음 질문에 대한 답을 아래와 같이 쓸 때 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오.\n\nThis work named A Sunday Afternoon on the Island of La Grande Jatte was created by Georges Seurat, the pioneer of Pointillism. It portrays people looking at the river, reading books, or sitting on the grass. We can see some animals including a dog and a monkey as well. The grass where the shade falls is painted dark. However, other areas without shadow are painted bright. This sharp contrast is pretty impressive. (…) It took him two years to produce this huge piece because he arranged every single dot with purpose and intention. Since he created art using color theory, Seurat is known as a scientific artist. He himself also said, “Some say they see poetry in my paintings; I see only science.”\n\n(1) Why did it take Seurat two years to produce A Sunday Afternoon on the Island of La Grande Jatte?\n→ Because he arranged every single dot ________.\n(2) Why is Seurat known as a scientific artist?\n→ Because he created art ________.",
+"selfGrade": true,
+"answer": "(1) with purpose and intention (2) using color theory",
+"solution": "(1) 지문에서 쇠라가 이 큰 작품을 완성하는 데 2년이 걸린 이유는 모든 점을 목적과 의도를 가지고 배치했기 때문이라고 했다. 따라서 'with purpose and intention'이 들어간다. (2) 쇠라가 과학적인 화가로 알려진 것은 색채 이론을 이용해 작품을 만들었기 때문이므로 'using color theory'가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c4b12f8a06",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이가 가리키는 단어로 가장 적절한 것은?\n\nextremely large in size or amount",
+"choices": [
+"enormous",
+"clever",
+"potential",
+"frequent",
+"leftover"
+],
+"answer": "①",
+"solution": "'크기나 양이 매우 큰'이라는 뜻풀이는 enormous(거대한, 엄청난)에 해당한다. 대화에서 문 앞의 큰 상자를 묘사할 때 쓰인 단어다. clever는 영리한, potential은 잠재적인, frequent는 잦은, leftover는 남은이라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f2e794a41a",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어의 뜻으로 가장 적절한 것은?\n\nThe shop owners decided to donate leftover doughnuts to police officers.",
+"choices": [
+"기부하다",
+"배달하다",
+"주문하다",
+"포장하다",
+"교환하다"
+],
+"answer": "①",
+"solution": "donate는 '기부하다, 기증하다'라는 뜻이다. 도넛 가게 주인들이 남은 도넛을 경찰관에게 거저 준 상황을 나타낸다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3bef280df1",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nLet's see if the bicycle is safe and ______. (무사히, 탈 없이)",
+"choices": [
+"sound",
+"round",
+"found",
+"bound",
+"ground"
+],
+"answer": "①",
+"solution": "'safe and sound'는 '무사히, 탈 없이'라는 뜻의 관용 표현이다. 대화에서 남편이 자전거가 멀쩡한지 확인하자고 말할 때 쓰였다. 따라서 빈칸에는 sound가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5952a534e0",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nThe owners came up with the idea to give leftover doughnuts to police officers on duty late at night. Because they got free doughnuts, police officers visited the shops more (A)______, and the owners became (B)______ from (C)______ robbers.",
+"choices": [
+"(A) frequently (B) safer (C) potential",
+"(A) frequently (B) safer (C) impossible",
+"(A) rarely (B) safer (C) potential",
+"(A) frequently (B) more dangerous (C) potential",
+"(A) rarely (B) more dangerous (C) impossible"
+],
+"answer": "①",
+"solution": "공짜 도넛을 받으러 경찰관이 가게를 더 '자주(frequently)' 방문했고, 그 덕분에 주인들은 강도로부터 더 '안전해(safer)'졌다. 밤에 올 수 있는 강도는 '잠재적(potential)' 강도를 뜻한다. 따라서 세 빈칸이 모두 알맞은 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-49fc4bc886",
+"typeId": "eng-h2-b08-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화를 읽고 주어진 질문에 대한 답을 아래와 같이 쓸 때, 빈칸에 들어갈 알맞은 말을 지문에서 찾아 쓰시오. (필요시 변형하고, 각 빈칸에 한 단어씩 쓸 것)\n\nM: Hmm, then, why does the box have a picture of a TV on it?\nW: I heard that the company put the picture of a TV on bicycles' boxes so that delivery workers would handle them with more care.\nM: What a clever way to protect the bicycles!\nW: Yeah, it's amazing that they came up with this smart idea.\n\nQ. Why did the company put a picture of a TV on the bicycles' boxes? → Because they wanted delivery workers to ___________ the boxes with more ___________ so that the bicycles could arrive safe and sound.",
+"selfGrade": true,
+"answer": "handle care",
+"solution": "대화에서 회사가 TV 사진을 붙인 이유는 'delivery workers would handle them with more care'라고 설명된다. 즉 배달원이 상자를 더 '조심히(care)' '다루도록(handle)' 하기 위함이다. 질문의 답 문장 구조에 맞춰 동사원형 handle과 명사 care를 빈칸에 넣는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4c8f97c85f",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nCultures with low uncertainty avoidance ______ more open to the unknown and show more acceptance to things that are different.",
+"choices": [
+"is",
+"are",
+"was",
+"being",
+"to be"
+],
+"answer": "②",
+"solution": "문장의 주어는 복수명사 Cultures이므로 동사도 복수형이어야 한다. 전치사구 with low uncertainty avoidance는 주어를 수식할 뿐 수일치에 영향을 주지 않는다. 따라서 복수 동사 are가 알맞다. is·was는 단수형이라 틀리고, being·to be는 본동사 자리에 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b63f8c9885",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nIn other words, it is illegal ______ and raise just one goldfish, one rabbit, or one guinea pig.",
+"choices": [
+"own",
+"to own",
+"owning",
+"owned",
+"to owning"
+],
+"answer": "②",
+"solution": "문장 맨 앞의 it은 가주어이고, 뒤에 진주어가 와야 한다. 진주어 자리에는 to부정사가 오므로 to own이 알맞다. and로 뒤의 raise와 병렬 연결되어 '(to) own and raise'가 된다. 동사원형 own, 동명사 owning·owned, to owning은 모두 진주어 역할을 할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d63b0c9ea9",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nAnother feature ______ distinguishes cultures is their orientation of temporal horizon, or how they relate to time.",
+"choices": [
+"that",
+"what",
+"whose",
+"it",
+"where"
+],
+"answer": "①",
+"solution": "선행사 feature가 있고 빈칸 뒤에 주어가 빠진 불완전한 절이 이어지므로 주격 관계대명사가 필요하다. 따라서 that이 알맞다. what은 선행사를 포함하므로 선행사가 있는 이 문장에는 쓸 수 없고, whose·where는 뒤 절 구조에 맞지 않으며 it은 접속 기능이 없어 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-947e239094",
+"typeId": "eng-h2-b08-u4m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSwitzerland is very concerned about the welfare of not only humans, but also animals. In fact, it is one of the world’s most animal-friendly countries, (A)[earning / earned] the support of many animal lovers. In 2008, the Swiss government made it a requirement for social animals that typically live in groups to be kept in pairs. This law recognizes (C)[that / what] social animals will experience loneliness if left alone and considers this to be a case of animal abuse. In addition, Switzerland is known to be the only European country requiring all dogs (B)[being / to be] microchipped and registered in the country’s database.\n\n(A)          (B)          (C)",
+"choices": [
+"earning  —  being  —  that",
+"earning  —  to be  —  that",
+"earning  —  to be  —  what",
+"earned  —  to be  —  that",
+"earned  —  being  —  what"
+],
+"answer": "②",
+"solution": "(A) 분사구문으로, 국가(it)가 지지를 '얻는' 능동 관계이므로 현재분사 earning이 맞다. (B) 'require+목적어+to부정사' 구조이고 개들이 '마이크로칩이 심어지는' 수동 의미이므로 to be가 맞다(require ... (to be) microchipped). (C) recognizes의 목적어로 뒤에 주어·동사가 모두 갖춰진 완전한 절이 오므로 접속사 that이 맞고, 선행사 없는 완전한 절에는 what을 쓸 수 없다. 따라서 earning–to be–that인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u4m1s0t0",
+"custom": true
 }
 ]

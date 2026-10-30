@@ -1526,5 +1526,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b03-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-03fdc54dab",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻이 어색한 것은?",
+"choices": [
+"Hold your chin with your thumbs. (턱)",
+"I feel dizzy after spinning around. (어지러운)",
+"Spread your feet and stand up straight. (벌리다)",
+"Lean your head backward slowly. (들어 올리다)",
+"Lie down on the edge of the bed. (가장자리)"
+],
+"answer": "④",
+"solution": "lean은 '기울이다, 숙이다'라는 뜻이다. 'Lean your head backward.'는 '머리를 뒤로 젖혀라(기울여라)'라는 의미이므로 '들어 올리다'는 어색하다. 나머지 chin(턱), dizzy(어지러운), spread(벌리다), edge(가장자리)는 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-83f9f56178",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nDon't do this stretch for longer than 60 seconds. It can make you feel __________.",
+"choices": [
+"strong",
+"dizzy",
+"straight",
+"gentle",
+"healthy"
+],
+"answer": "②",
+"solution": "본문에서 머리를 침대 밖으로 늘어뜨리는 스트레칭을 60초 넘게 하면 '어지러움(dizzy)'을 느낄 수 있다고 했다. 따라서 빈칸에는 dizzy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8da65597a1",
+"typeId": "eng-m2-b03-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이에 해당하는 단어로 알맞은 것은?\n\nto make your body or a part of your body longer and tighter by reaching out",
+"choices": [
+"bend",
+"hold",
+"stretch",
+"spread",
+"lean"
+],
+"answer": "③",
+"solution": "몸이나 신체의 일부를 쭉 뻗어 늘이는 것을 뜻하는 단어는 stretch(스트레칭하다, 늘이다)이다. bend(구부리다), hold(잡다, 유지하다), spread(벌리다), lean(기울이다)은 풀이와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b03-u1m7s0t0",
+"custom": true
 }
 ]

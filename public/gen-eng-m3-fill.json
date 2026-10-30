@@ -1507,5 +1507,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m3s1t1",
 "custom": true
+},
+{
+"id": "fill-7f4a719488",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글을 읽고 추론할 수 없는 것은?\n\nTom has a small dog named Max. Max is three years old. Every morning, Tom walks Max in the park near his house. Max loves to play with a ball. After the walk, Tom gives Max food and water.",
+"choices": [
+"Tom은 개를 기른다.",
+"Max는 공을 가지고 노는 것을 좋아한다.",
+"Tom은 아침마다 Max를 산책시킨다.",
+"Tom의 집 근처에 공원이 있다.",
+"Max는 고양이를 무서워한다."
+],
+"answer": "⑤",
+"solution": "글에는 Tom이 개 Max를 기르고, 아침마다 집 근처 공원에서 산책시키며, Max가 공놀이를 좋아한다는 내용이 나온다. 그래서 ①②③④는 모두 글에서 확인할 수 있다. 그러나 Max가 고양이를 무서워하는지에 대한 언급은 전혀 없으므로 ⑤는 추론할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-7675847723",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글을 읽고 추론할 수 없는 것은?\n\nBananas are a popular fruit around the world. They grow in warm places. Many people eat bananas for breakfast because they give energy. Bananas also have potassium, which is good for the body. Monkeys like to eat bananas, too.",
+"choices": [
+"바나나는 따뜻한 곳에서 자란다.",
+"바나나는 에너지를 준다.",
+"바나나에는 칼륨이 들어 있다.",
+"원숭이도 바나나를 좋아한다.",
+"바나나는 세계에서 가장 비싼 과일이다."
+],
+"answer": "⑤",
+"solution": "글은 바나나가 따뜻한 곳에서 자라고, 에너지를 주며, 칼륨이 들어 있고, 원숭이도 좋아한다고 설명한다. 따라서 ①②③④는 글에서 확인된다. 바나나가 세계에서 가장 비싼 과일이라는 내용은 어디에도 없으므로 ⑤는 추론할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
+},
+{
+"id": "fill-ea8ac29451",
+"typeId": "eng-m3-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "위 글을 읽고 추론할 수 없는 것은?\n\nMina is a middle school student. She likes science the most. After school, she goes to the library to read books about space. She wants to be an astronaut in the future. On weekends, she watches documentaries about stars with her father.",
+"choices": [
+"Mina는 중학생이다.",
+"Mina는 과학을 가장 좋아한다.",
+"Mina는 미래에 우주 비행사가 되고 싶어 한다.",
+"Mina는 주말에 아버지와 다큐멘터리를 본다.",
+"Mina는 수학 시험에서 1등을 했다."
+],
+"answer": "⑤",
+"solution": "글에서 Mina는 과학을 가장 좋아하는 중학생이고, 우주 비행사가 되고 싶어 하며, 주말에 아버지와 별에 관한 다큐멘터리를 본다고 했다. 그래서 ①②③④는 모두 확인할 수 있다. 수학 시험에서 1등을 했다는 내용은 전혀 나오지 않으므로 ⑤는 추론할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m1s3t0",
+"custom": true
 }
 ]

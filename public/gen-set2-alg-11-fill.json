@@ -1178,5 +1178,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-11-u0m0s1t0",
 "custom": true
+},
+{
+"id": "fill-a65f3f51a3",
+"typeId": "set2-alg-11-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "첫째항이 $2$이고 공비가 $3$인 등비수열 $\\{a_n\\}$에 대하여 $a_4$의 값은?",
+"choices": [
+"$18$",
+"$36$",
+"$54$",
+"$108$",
+"$162$"
+],
+"answer": "③",
+"solution": "등비수열의 일반항은 $a_n = a_1 r^{n-1}$이다. 첫째항 $a_1=2$, 공비 $r=3$이므로 $a_4 = 2 \\times 3^{3} = 2 \\times 27 = 54$이다. 따라서 답은 $54$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-68a3d33224",
+"typeId": "set2-alg-11-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "첫째항이 $48$이고 공비가 $\\dfrac{1}{2}$인 등비수열 $\\{a_n\\}$에 대하여 $a_4$의 값은?",
+"choices": [
+"$3$",
+"$6$",
+"$12$",
+"$24$",
+"$96$"
+],
+"answer": "②",
+"solution": "일반항 $a_n = a_1 r^{n-1}$에 $a_1=48$, $r=\\dfrac{1}{2}$를 대입하면 $a_4 = 48 \\times \\left(\\dfrac{1}{2}\\right)^{3} = 48 \\times \\dfrac{1}{8} = 6$이다. 따라서 답은 $6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-cb02ce328a",
+"typeId": "set2-alg-11-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "공비가 $2$인 등비수열 $\\{a_n\\}$에서 $a_3 = 12$일 때, 첫째항 $a_1$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$3$",
+"solution": "$a_3 = a_1 r^{2}$이고 공비 $r=2$이므로 $a_3 = a_1 \\times 2^{2} = 4a_1$이다. $4a_1 = 12$에서 $a_1 = 3$이다. 따라서 첫째항은 $3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-6c31c52aff",
+"typeId": "set2-alg-11-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "첫째항이 $1$이고 공비가 $3$인 등비수열 $\\{a_n\\}$의 첫째항부터 제$4$항까지의 합 $S_4$의 값은?",
+"choices": [
+"$20$",
+"$30$",
+"$40$",
+"$50$",
+"$60$"
+],
+"answer": "③",
+"solution": "공비가 $1$이 아닌 등비수열의 합 공식 $S_n=\\dfrac{a_1(r^n-1)}{r-1}$을 쓴다. $S_4=\\dfrac{1\\cdot(3^4-1)}{3-1}=\\dfrac{81-1}{2}=\\dfrac{80}{2}=40$이다. 따라서 답은 $40$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-80f7ae568e",
+"typeId": "set2-alg-11-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "첫째항이 $5$이고 공비가 $2$인 등비수열의 첫째항부터 제$5$항까지의 합은?",
+"choices": [
+"$75$",
+"$125$",
+"$155$",
+"$160$",
+"$310$"
+],
+"answer": "③",
+"solution": "$S_5=\\dfrac{a_1(r^5-1)}{r-1}=\\dfrac{5\\,(2^5-1)}{2-1}=5\\,(32-1)=5\\cdot31=155$이다. 따라서 합은 $155$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-560c12950a",
+"typeId": "set2-alg-11-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "첫째항이 $1$이고 공비가 $2$인 등비수열의 첫째항부터 제$10$항까지의 합을 구하시오.",
+"selfGrade": true,
+"answer": "1023",
+"solution": "등비수열의 합 공식에서 $S_{10}=\\dfrac{a_1(r^{10}-1)}{r-1}=\\dfrac{1\\cdot(2^{10}-1)}{2-1}=2^{10}-1$이다. $2^{10}=1024$이므로 $S_{10}=1024-1=1023$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-11-u0m0s1t3",
+"custom": true
 }
 ]

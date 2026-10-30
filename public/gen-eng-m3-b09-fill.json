@@ -4464,5 +4464,381 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-a40f0b61ae",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"wealth – 재산, 부",
+"settle – 정착하다",
+"puzzled – 어리둥절한, 당황한",
+"advice – 충고, 조언",
+"share – 빌리다"
+],
+"answer": "⑤",
+"solution": "share는 명사로 '몫', 동사로 '나누다, 공유하다'라는 뜻입니다. '빌리다'는 borrow입니다. 나머지 단어는 모두 뜻이 바르게 연결되어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7c9d088465",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nMy grandfather ________ away peacefully last spring, and our family missed him very much.",
+"choices": [
+"got",
+"passed",
+"took",
+"made",
+"put"
+],
+"answer": "②",
+"solution": "pass away는 '돌아가시다'라는 뜻으로, die를 완곡하게 이르는 표현입니다. 할아버지가 지난봄 평화롭게 돌아가셨고 가족이 그를 무척 그리워했다는 내용이므로 passed가 알맞습니다. get away, take away, make away, put away는 이 문맥에 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-71bc44c5f6",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어를 주어진 철자로 시작하여 쓰시오.\n\nconfused because you cannot understand something\n→ p__________",
+"selfGrade": true,
+"answer": "puzzled",
+"solution": "무언가를 이해하지 못해 혼란스러운 상태를 나타내는 단어는 puzzled(어리둥절한, 당황한)입니다. 본문에서도 Puru가 자신이 어디서 잘못했는지 몰라 어리둥절했다는 장면에 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8cf889324a",
+"typeId": "eng-m3-b09-u5m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 밑줄 친 우리말을 <조건>에 맞게 영어로 쓰시오.\n\nAfter his death, the two sons took their share of the father's wealth and settled in different cities. Five years passed. Puru, who had been following his father's words carefully, had no money left. But his brother was richer than ever. 푸루는 자신이 어디에서 잘못했는지 어리둥절해서, 그것을 알아내기 위해 푸니트를 방문했다.\n\n<조건>\n• be puzzled about을 사용할 것\n• '자신이 어디에서 잘못했는지'는 간접의문문과 과거완료(go wrong)를 사용할 것\n• '그것을 알아내기 위해'는 to부정사와 find out을 사용할 것\n• 접속사 so를 사용하여 총 16단어로 쓸 것",
+"selfGrade": true,
+"answer": "Puru was puzzled about where he had gone wrong, so he visited Puneet to find out.",
+"solution": "'~에 대해 어리둥절하다'는 be puzzled about으로 쓰고, 그 목적어 자리에는 간접의문문 '의문사+주어+동사' 어순인 where he had gone wrong을 씁니다. 잘못한 일은 어리둥절해한 시점보다 먼저 일어났으므로 과거완료(had gone)를 써야 합니다. 이어서 결과를 나타내는 so로 연결하고, 목적은 to부정사 to find out으로 나타내면 모두 16단어가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-44844ec701",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nFavio Chávez did not just teach the children of Cateura how to play broken, recycled instruments. In a town mostly buried in garbage, where real instruments were far too expensive, he gave the children something far more important. With cellos made from oil tanks and violins made from forks, the young members of \"The Junk Orchestra\" found joy, pride, and dreams they had never had before. Their deep, beautiful music showed the world that even in the poorest place, music can bring positive changes to people's lives.",
+"choices": [
+"재활용 재료로 만든 악기가 일반 악기보다 더 뛰어난 소리를 낸다.",
+"버려진 물건도 창의적으로 활용하면 값진 것으로 바뀔 수 있다.",
+"음악은 어려운 환경에 놓인 아이들의 삶에 긍정적인 변화를 줄 수 있다.",
+"환경 오염 문제를 해결하려면 체계적인 재활용 교육이 필요하다.",
+"훌륭한 연주자가 되기 위해서는 꾸준한 연습이 반드시 필요하다."
+],
+"answer": "③",
+"solution": "글은 Favio Chávez가 가난한 아이들에게 단순히 악기 연주법을 가르친 것이 아니라 기쁨·자부심·꿈을 주었고, 음악이 사람들의 삶에 긍정적 변화를 가져올 수 있음을 보여 주었다고 말한다. 따라서 요지는 ③이다. ②는 재활용 악기라는 소재에만 초점을 둔 함정 선지이고, ①④⑤는 본문에서 강조하지 않은 내용이거나 지나친 일반화라 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-04073322c7",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIt's wonderful to sing in ______ with the other choir members.",
+"choices": [
+"practice",
+"harmony",
+"instrument",
+"vacation",
+"talent"
+],
+"answer": "②",
+"solution": "'조화를 이루어 노래하다'는 sing in harmony with ~로 표현한다. 기준 대화의 'sing in harmony with others'와 같은 표현이다. 따라서 빈칸에는 harmony가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-348fcdf83b",
+"typeId": "eng-m3-b09-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n너는 방과 후에 피아노를 연습할 계획이니?",
+"choices": [
+"Are you plan to practice the piano after school?",
+"Do you planning practice the piano after school?",
+"Are you planning to practice the piano after school?",
+"Are you planning practice the piano after school?",
+"You are planning to practice the piano after school?"
+],
+"answer": "③",
+"solution": "'~할 계획이다'는 be planning to+동사원형으로 쓴다. 의문문이므로 be동사 are를 주어 you 앞으로 보내고 뒤에 planning to practice를 쓴다. 따라서 ③이 올바른 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c03196c30e",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것을 고르시오.",
+"choices": [
+"persistent – 끊임없는",
+"gravity – 중력",
+"ongoing – 계속 진행 중인",
+"root – 뿌리",
+"tasty – 신선한"
+],
+"answer": "⑤",
+"solution": "tasty는 '맛있는'이라는 뜻이다. '신선한'은 fresh이다. 따라서 짝이 잘못된 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ba200fe42d",
+"typeId": "eng-m3-b09-u7m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nI wish I ________ a camera. Then I could take a picture of the sunrise.",
+"choices": [
+"have",
+"had",
+"will have",
+"having",
+"to have"
+],
+"answer": "②",
+"solution": "「I wish+주어+과거동사」는 현재 사실과 반대되는 소망을 나타내는 가정법 과거이다. 현재 카메라가 없는 것에 대한 아쉬움을 표현하므로 과거형 had가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bc7675287e",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nSci Teen: Is there a faster way to travel through space?\nDr. Sci: Well, in order to answer that question, I’d like you to think about this apple for a second. Imagine a worm is on this apple. It detects something sweet at the bottom and wants to move from the top to the bottom. For the worm, the apple’s surface is as vast as our universe. Now the worm can either move around the outer layer or down a wormhole. Which do you think it will choose? Well, it would choose the wormhole because it is a shortcut.",
+"choices": [
+"the reason worms like sweet apples",
+"a shortcut through space like a wormhole in an apple",
+"the size of our universe compared to an apple",
+"how to find the bottom of an apple",
+"the dangers of traveling through space"
+],
+"answer": "②",
+"solution": "Dr. Sci는 우주를 더 빨리 여행하는 방법이 있느냐는 질문에 사과 위 벌레의 예로 답한다. 벌레는 지름길인 웜홀을 고르게 되고, 우주에도 이런 지름길이 있다는 것을 설명하려는 글이다. 사과, 벌레, 우주의 크기는 비유에 쓰인 소재일 뿐 주제가 아니므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-773e5319c1",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nDr. Sci: Einstein figured out that space and time are connected, and he called it space-time. He thought that space-time could actually be bent. When it is bent, parts that are far away from each other are suddenly closer. To understand this, take a sheet of paper and make a small dot at the top of the paper and another at the bottom of the paper. On a flat sheet of paper, the dots are far away from one another. Now, take the paper and fold it with the dots matching up. Punch a hole in the paper and the dots will be instantly connected. Like this, wormholes in space may contain two mouths, with a throat connecting the two.",
+"choices": [
+"Einstein’s Life as a Scientist",
+"How to Make a Hole in Paper",
+"Bent Space-time: How Wormholes Connect Faraway Places",
+"Why Space Travel Is Dangerous",
+"The History of Space Exploration"
+],
+"answer": "③",
+"solution": "아인슈타인은 시공간이 휠 수 있다고 보았고, 시공간이 휘면 멀리 떨어진 곳들이 갑자기 가까워진다. 종이를 접고 구멍을 뚫는 예를 통해 웜홀이 먼 두 곳을 잇는 원리를 설명하고 있다. 종이에 구멍을 뚫는 것은 설명을 위한 예일 뿐이므로 ②는 답이 아니고, 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2dddde7850",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 Dr. Sci가 말하고자 하는 요지로 가장 알맞은 것은?\n\nSci Teen: So, are we hopeless? Is traveling in space through a wormhole simply an idea that only exists in theory?\nDr. Sci: I wouldn’t say so. The debate about wormholes is still ongoing, but with persistent exploration and research, I believe we will eventually find one and learn how to travel through it. Look back at our history. We’ve achieved so many things that seemed impossible at first. Who knows? Maybe you can be the one to find the answer!",
+"choices": [
+"웜홀은 이론에만 존재하므로 연구할 필요가 없다.",
+"우주선은 웜홀을 지나면 반드시 부서진다.",
+"웜홀에 관한 논쟁은 이미 끝났다.",
+"과거의 역사는 미래의 과학과 아무 관련이 없다.",
+"꾸준히 탐사하고 연구하면 언젠가 웜홀을 찾고 통과하는 법도 알게 될 것이다."
+],
+"answer": "⑤",
+"solution": "Dr. Sci는 \"I wouldn’t say so.\"라고 하며 희망이 없다는 생각을 부정한다. 이어서 꾸준한 탐사와 연구로 결국 웜홀을 찾고 통과하는 법을 알게 될 것이라고 말한다. 과거에도 처음에는 불가능해 보이던 일들을 해냈다는 점을 근거로 들었으므로 정답은 ⑤이다. ③은 논쟁이 아직 진행 중(still ongoing)이라는 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-65330f132e",
+"typeId": "eng-m3-b09-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 요약할 때, 빈칸 (A)~(E)에 들어갈 알맞은 말을 글에서 찾아 각각 한 단어로 쓰시오. (필요하면 형태를 바꿀 것)\n\nSci Teen: Is there such a shortcut in the universe?\nDr. Sci: According to some researchers, yes. Einstein figured out that space and time are connected, and he called it space-time. He thought that space-time could actually be bent. When it is bent, parts that are far away from each other are suddenly closer. Like this, wormholes in space may contain two mouths, with a throat connecting the two.\nSci Teen: If such wormholes existed in space, we could get to places billions of light-years away quickly!\nDr. Sci: Yes, but it’s too early to celebrate. Wormholes exist in theory only. Even if we find one, there are many things to consider before actually going through one. A wormhole would be very unstable. If a spaceship flew into one, it might be crushed or broken into pieces.\nSci Teen: So, are we hopeless?\nDr. Sci: I wouldn’t say so. The debate about wormholes is still ongoing, but with persistent exploration and research, I believe we will eventually find one and learn how to travel through it.\n\n↓\n\nEinstein thought that space-time could be (A)__________, which would make faraway parts suddenly closer. A wormhole might be a (B)__________ through space, but for now wormholes (C)__________ only in theory, and they would be too (D)__________ for a spaceship to go through safely. Still, Dr. Sci (E)__________ that persistent research will help us find one someday.\n\n(A) ________ (B) ________ (C) ________ (D) ________ (E) ________",
+"selfGrade": true,
+"answer": "bent, shortcut, exist, unstable, believes",
+"solution": "(A) 'could be' 뒤에는 수동형이 오므로 글의 bent를 그대로 쓴다. (B) 웜홀은 우주를 가로지르는 지름길이므로 shortcut이다. (C) 'Wormholes exist in theory only.'에서 exist를 찾아 복수 주어 wormholes에 맞춰 그대로 쓴다. (D) 웜홀은 매우 불안정하다고 했으므로 unstable이다. (E) 글의 'I believe'를 3인칭 단수 주어 Dr. Sci에 맞춰 현재형 believes로 바꿔야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4ba3f669a5",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 match와 의미가 같은 것은?\n\nMy shoes do not match my new coat.",
+"choices": [
+"① buy",
+"② sell",
+"③ need",
+"④ go well with",
+"⑤ look for"
+],
+"answer": "④",
+"solution": "match는 '(색상이나 스타일 등이) 잘 어울리다'라는 뜻이다. go well with 역시 '~와 잘 어울리다'라는 의미이므로 바꾸어 쓸 수 있다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-965850d882",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어의 영영풀이로 가장 알맞은 것은?\n\nanchor",
+"choices": [
+"① money taken off the usual price",
+"② a heavy object used to keep a boat in one place",
+"③ a person who writes books",
+"④ something that you wear on your head",
+"⑤ a place where people buy clothes"
+],
+"answer": "②",
+"solution": "anchor는 '닻'이라는 뜻의 명사이다. 닻은 배가 움직이지 않도록 한곳에 고정하는 무거운 물체이다. 따라서 anchor의 영영풀이로 알맞은 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c71fc98720",
+"typeId": "eng-m3-b09-u6m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe bag was $80, but I got a 10 percent ________ and bought it for $72.",
+"choices": [
+"① discount",
+"② furniture",
+"③ effect",
+"④ purchase",
+"⑤ comparison"
+],
+"answer": "①",
+"solution": "가방의 원래 가격은 80달러였지만 72달러에 샀으므로 가격을 할인받았다는 의미이다. discount는 '할인'이라는 뜻이며, get a 10 percent discount는 '10퍼센트 할인을 받다'라는 표현이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0cebb70de3",
+"typeId": "eng-m3-b09-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"detective - 탐정",
+"biography - 전기(傳記)",
+"release - 풀어 주다, 석방하다",
+"fortune - 재산, 거금",
+"ruin - 기대하다"
+],
+"answer": "⑤",
+"solution": "ruin은 '파산시키다, 망치다'라는 뜻입니다. '기대하다'라는 뜻의 단어는 expect입니다. 나머지는 모두 뜻이 바르게 짝지어져 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8b484f80c6",
+"typeId": "eng-m3-b09-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nto give all or most of your time and effort to a person, an activity, or a purpose",
+"choices": [
+"deliver",
+"expect",
+"devote",
+"release",
+"ruin"
+],
+"answer": "③",
+"solution": "이 영영풀이는 '자신의 시간과 노력을 어떤 사람·활동·목적에 쏟는다'는 뜻이므로 devote(바치다, 헌신하다)가 알맞습니다. deliver는 '배달하다', expect는 '기대하다', release는 '풀어 주다', ruin은 '파산시키다'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-959d1d8c63",
+"typeId": "eng-m3-b09-u2m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 단어를 주어진 철자로 시작하여 쓰시오.\n\nThe man worked very hard for many years. Finally, he made a f__________ and became very rich.",
+"selfGrade": true,
+"answer": "fortune",
+"solution": "'오랫동안 열심히 일해서 마침내 아주 부자가 되었다'는 흐름이므로 '큰돈, 재산'이라는 뜻의 fortune이 알맞습니다. make a fortune은 '큰돈을 벌다'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-16c8022f15",
+"typeId": "eng-m3-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 주어진 단어를 모두 사용하여 현재완료진행시제 문장을 완성하시오.\n\n나는 두 시간 동안 영어를 공부하고 있다.\n(have / studying / been / English / I / for two hours)\n→ ______________________________________",
+"selfGrade": true,
+"answer": "I have been studying English for two hours.",
+"solution": "현재완료진행시제는 「have[has] been + -ing」 형태로, 과거에 시작된 동작이 현재까지 계속됨을 나타냅니다. 주어 I 뒤에 have been studying을 쓰고 목적어 English, 기간을 나타내는 for two hours를 이어 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c0e381988d",
+"typeId": "eng-m3-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n그는 그 상자를 들어 올릴 만큼 충분히 힘이 세다.\n(the box / enough / strong / He / to / lift / is)\n→ ______________________________________",
+"selfGrade": true,
+"answer": "He is strong enough to lift the box.",
+"solution": "「형용사 + enough + to부정사」는 '~할 만큼 충분히 …한'이라는 뜻입니다. enough는 형용사 strong 뒤에 오므로 strong enough to lift의 순서로 쓰고, 그 뒤에 목적어 the box를 붙입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-053cdafcc3",
+"typeId": "eng-m3-b09-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 주어진 단어를 모두 사용하여 현재완료진행시제 문장을 완성하시오.\n\n그들은 아침부터 테니스를 치고 있다.\n(tennis / been / They / playing / have / since morning)\n→ ______________________________________",
+"selfGrade": true,
+"answer": "They have been playing tennis since morning.",
+"solution": "현재완료진행시제 「have been + -ing」로 아침부터 지금까지 계속되는 동작을 나타냅니다. 주어 They 뒤에 have been playing을 쓰고 목적어 tennis, 시작 시점을 나타내는 since morning을 이어 씁니다. 특정 시점 앞에는 for가 아니라 since를 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u1m6s0t0",
+"custom": true
 }
 ]

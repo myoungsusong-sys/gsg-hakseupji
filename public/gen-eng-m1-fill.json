@@ -2271,5 +2271,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-u0m0s5t1",
 "custom": true
+},
+{
+"id": "fill-cf5388864f",
+"typeId": "eng-m1-u3m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n엄마는 나에게 생일 선물을 사 주기 위해 시장에 가셨다.",
+"choices": [
+"My mom went to the market to buy a birthday present to me.",
+"My mom went to the market to buying me a birthday present.",
+"My mom goes to the market to buy me a birthday present.",
+"My mom went to the market to buy me a birthday present.",
+"My mom went to the market in order buy me a birthday present."
+],
+"answer": "④",
+"solution": "'~하기 위해'라는 목적은 「to+동사원형」으로 나타내고, '가셨다'는 과거이므로 went를 쓴다. buy는 4형식 「buy+간접목적어+직접목적어」로 쓰거나, 3형식으로 바꿀 때 전치사 for를 써야 하므로 ①의 to me는 틀렸다. ②는 to 뒤에 동명사 buying을 썼고, ③은 현재시제 goes를 썼으며, ⑤는 in order 뒤에 to가 빠졌다. 따라서 바른 문장은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u3m0s0t1",
+"custom": true
+},
+{
+"id": "fill-073bece794",
+"typeId": "eng-m1-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글에서 필자의 주장으로 알맞은 것을 고르면?\n\nWater is very important. But we often waste it. When you brush your teeth, turn off the tap. When you wash dishes, don't let the water run. A short shower is better than a long bath. Let's save water every day!",
+"choices": [
+"① Save water in your daily life.",
+"② Drink a lot of water every morning.",
+"③ A long bath is good for your health.",
+"④ Buy clean water at the store.",
+"⑤ Wash your hands many times a day."
+],
+"answer": "①",
+"solution": "글은 양치할 때 수도를 잠그고, 설거지할 때 물을 틀어 놓지 말라는 등 물을 아끼는 방법을 들며 마지막에 'Let's save water every day!'로 주장을 분명히 밝히고 있습니다. 따라서 필자의 주장은 '일상에서 물을 아끼자'인 ①입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-d9919bff88",
+"typeId": "eng-m1-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글에서 필자의 주장으로 알맞은 것을 고르면?\n\nThe internet never forgets. So be careful online. Don't post your address or phone number. Don't share your password with others. Protect your personal information on the internet!",
+"choices": [
+"① Use the internet for many hours.",
+"② Share your password with your friends.",
+"③ Protect your personal information online.",
+"④ Post many photos on social media.",
+"⑤ The internet always forgets your data."
+],
+"answer": "③",
+"solution": "글은 주소나 전화번호를 올리지 말고 비밀번호를 공유하지 말라고 한 뒤 'Protect your personal information on the internet!'로 끝맺습니다. 따라서 필자의 주장은 '인터넷에서 개인 정보를 보호하자'인 ③입니다. ②, ⑤는 글 내용과 반대입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-849f17e983",
+"typeId": "eng-m1-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글에서 필자의 주장으로 알맞은 것을 고르면?\n\nDo you always draw the same pictures? Don't be afraid of new things. You can draw, paint, or make something with paper. Try a new art style today. Art is fun when you try something new!",
+"choices": [
+"① Draw the same pictures every day.",
+"② Only famous artists can make art.",
+"③ Art should always use paper.",
+"④ Try a new style of art.",
+"⑤ Buy new paints for your art class."
+],
+"answer": "④",
+"solution": "글은 늘 같은 그림만 그리지 말고 새로운 것을 두려워하지 말라고 하며 'Try a new art style today.'라고 권합니다. 마지막 문장도 새로운 것을 시도할 때 미술이 즐겁다고 하므로 필자의 주장은 '새로운 미술 방식을 시도해 보자'인 ④입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s2t1",
+"custom": true
 }
 ]

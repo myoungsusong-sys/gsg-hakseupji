@@ -4440,5 +4440,100 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b01-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-dc66309da4",
+"typeId": "eng-m1-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"I are from France.",
+"She are my friend.",
+"We is best friends.",
+"He is my brother.",
+"They am twins."
+],
+"answer": "④",
+"solution": "be동사는 주어에 따라 모양이 달라진다. I는 am, you·we·they·복수는 are, he·she·it·단수는 is를 쓴다. ①은 I are→I am, ②는 She are→She is, ③은 We is→We are, ⑤는 They am→They are로 고쳐야 한다. 따라서 주어 He에 is를 바르게 쓴 ④가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-520fc65f79",
+"typeId": "eng-m1-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nMina ______ music.",
+"choices": [
+"like",
+"likes",
+"am like",
+"are like",
+"is like"
+],
+"answer": "②",
+"solution": "주어가 3인칭 단수(Mina)일 때 일반동사의 현재형은 끝에 -s를 붙인다. 따라서 like가 아니라 likes가 알맞다. 일반동사 문장에는 be동사(am/are/is)를 함께 쓰지 않으므로 ③④⑤는 틀리다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-02a6fe820f",
+"typeId": "eng-m1-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"I am a student.",
+"You are my friend.",
+"We are twins.",
+"He is my dad.",
+"They is from Japan."
+],
+"answer": "⑤",
+"solution": "be동사는 주어에 맞춰 써야 한다. ⑤의 주어 They는 복수이므로 is가 아니라 are를 써야 한다(They are from Japan.). 나머지 ①(I-am), ②(You-are), ③(We-are), ④(He-is)는 모두 주어와 be동사가 바르게 짝지어져 있다. 따라서 어색한 문장은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a5c165ea05",
+"typeId": "eng-m1-b01-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nThis pizza is so ______! I want to eat it all.",
+"choices": [
+"delicious",
+"flat",
+"expensive",
+"popular",
+"cheap"
+],
+"answer": "①",
+"solution": "'너무 ~해서 다 먹고 싶다'라는 맥락이므로 맛을 나타내는 형용사가 와야 한다. delicious는 '맛있는'이라는 뜻으로 가장 알맞다. flat(평평한), expensive(비싼), popular(인기 있는), cheap(값싼)은 맛과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-de5220e27d",
+"typeId": "eng-m1-b01-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것을 고르시오.\n\na person who cooks food in a restaurant",
+"choices": [
+"chef",
+"tourist",
+"customer",
+"dish",
+"price"
+],
+"answer": "①",
+"solution": "'식당에서 음식을 요리하는 사람'을 뜻하므로 '요리사'인 chef가 정답이다. tourist(관광객), customer(손님), dish(요리), price(가격)는 뜻이 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u1m7s0t0",
+"custom": true
 }
 ]

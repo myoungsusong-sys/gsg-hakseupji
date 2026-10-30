@@ -4143,5 +4143,94 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b08-u2m3s0t0",
 "custom": true
+},
+{
+"id": "fill-3fbf0d14de",
+"typeId": "eng-m1-b08-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻의 연결이 바르지 않은 것은?",
+"choices": [
+"delicious - 맛있는",
+"recipe - 요리법",
+"dessert - 후식",
+"flour - 꽃",
+"cook - 요리사"
+],
+"answer": "④",
+"solution": "flour는 '밀가루'라는 뜻으로, mac and cheese를 만들 때 필요한 재료로 나온다. '꽃'은 발음이 같은 flower이다. cook은 동사로는 '요리하다'이지만 명사로는 '요리사'이므로 ⑤는 바른 연결이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c9348d9bee",
+"typeId": "eng-m1-b08-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\na sweet food that you eat after a meal",
+"choices": [
+"recipe",
+"dessert",
+"pasta",
+"butter",
+"salt"
+],
+"answer": "②",
+"solution": "'식사 후에 먹는 달콤한 음식'은 dessert(후식)이다. 교과서 대화에서 Ratu가 만든 es-buah도 dessert이다. recipe는 요리법, pasta는 파스타, butter는 버터, salt는 소금이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-887ca36d7c",
+"typeId": "eng-m1-b08-u2m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n\n(음식을 대접하며) 마음껏 드세요.\n→ Help ____________.",
+"selfGrade": true,
+"answer": "yourself",
+"solution": "음식을 권하며 '마음껏 드세요'라고 말할 때는 Help yourself.라고 한다. 교과서 대화에서 Ratu가 Jiho에게 저녁을 대접하며 이 표현을 쓴다. 상대방에게 하는 말이므로 재귀대명사 yourself를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2e16a580ed",
+"typeId": "eng-m1-b08-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻의 연결이 바른 것은?",
+"choices": [
+"forest – 바다",
+"weight – 무게",
+"ocean – 숲",
+"teeth – 다리",
+"bridge – 이빨"
+],
+"answer": "②",
+"solution": "weight는 '무게'라는 뜻이므로 ②가 바르게 연결되었다. forest는 '숲', ocean은 '바다', teeth는 '이빨', bridge는 '다리'이므로 ①③④⑤는 뜻이 서로 바뀌어 있다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-94329487a7",
+"typeId": "eng-m1-b08-u6m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분의 우리말 뜻으로 알맞은 것은?\n\nFrom October to December, millions of fruit bats fly to the park.",
+"choices": [
+"수백 개의",
+"수십 마리의",
+"수백만의",
+"몇몇의",
+"대부분의"
+],
+"answer": "③",
+"solution": "millions of는 '수백만의'라는 뜻으로 매우 많은 수를 나타내는 표현이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u6m7s0t0",
+"custom": true
 }
 ]

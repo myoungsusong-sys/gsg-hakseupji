@@ -933,5 +933,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-m22-05-u0m0s1t2",
 "custom": true
+},
+{
+"id": "fill-72eb76a476",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "닮은 두 삼각기둥 $\\mathrm{A}$, $\\mathrm{B}$의 닮음비가 $2:3$이다.\n\n삼각기둥 $\\mathrm{A}$와 $\\mathrm{B}$의 부피의 비는?",
+"choices": [
+"$2:3$",
+"$4:9$",
+"$8:27$",
+"$8:9$",
+"$4:27$"
+],
+"answer": "③",
+"solution": "닮은 두 입체도형의 부피의 비는 닮음비의 세제곱의 비와 같다. 따라서 닮음비가 $2:3$이면 부피의 비는 $2^3:3^3=8:27$이다. 그러므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-ec1bca963a",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "닮은 두 직육면체의 닮음비가 $1:3$이다.\n\n두 직육면체의 겉넓이의 비는?",
+"choices": [
+"$1:3$",
+"$1:6$",
+"$1:9$",
+"$1:27$",
+"$2:9$"
+],
+"answer": "③",
+"solution": "닮은 두 입체도형의 겉넓이의 비는 닮음비의 제곱의 비와 같다. 따라서 닮음비가 $1:3$이면 겉넓이의 비는 $1^2:3^2=1:9$이다. 그러므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-371e37f158",
+"typeId": "set2-m22-05-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "닮은 두 원뿔 $\\mathrm{P}$, $\\mathrm{Q}$의 닮음비가 $3:5$이다.\n\n작은 원뿔 $\\mathrm{P}$의 부피가 $54\\,\\mathrm{cm}^3$일 때, 큰 원뿔 $\\mathrm{Q}$의 부피를 구하시오.",
+"selfGrade": true,
+"answer": "$250\\,\\mathrm{cm}^3$",
+"solution": "부피의 비는 닮음비의 세제곱의 비와 같으므로 $\\mathrm{P}:\\mathrm{Q}=3^3:5^3=27:125$이다. $\\mathrm{Q}$의 부피를 $x$라 하면 $27:125=54:x$에서 $27x=125\\times54$, $x=250$이다. 따라서 큰 원뿔의 부피는 $250\\,\\mathrm{cm}^3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-6eeac25714",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "두 삼각형 $ABC$와 $DEF$에서 세 변의 길이가 각각 다음과 같다.\n\n$\\overline{AB}=4\\,\\mathrm{cm}$, $\\overline{BC}=6\\,\\mathrm{cm}$, $\\overline{CA}=8\\,\\mathrm{cm}$\n$\\overline{DE}=6\\,\\mathrm{cm}$, $\\overline{EF}=9\\,\\mathrm{cm}$, $\\overline{FD}=12\\,\\mathrm{cm}$\n\n두 삼각형에 대한 설명으로 옳은 것은?",
+"choices": [
+"$\\mathrm{SSS}$ 닮음이고 닮음비는 $2:3$이다.",
+"$\\mathrm{SAS}$ 닮음이고 닮음비는 $2:3$이다.",
+"$\\mathrm{AA}$ 닮음이고 닮음비는 $2:3$이다.",
+"$\\mathrm{SSS}$ 닮음이고 닮음비는 $3:2$이다.",
+"두 삼각형은 닮음이 아니다."
+],
+"answer": "①",
+"solution": "세 쌍의 대응변의 비를 확인하면 $\\overline{AB}:\\overline{DE}=4:6=2:3$, $\\overline{BC}:\\overline{EF}=6:9=2:3$, $\\overline{CA}:\\overline{FD}=8:12=2:3$이다. 세 쌍의 대응변의 비가 모두 $2:3$으로 같으므로 두 삼각형은 $\\mathrm{SSS}$ 닮음이고 닮음비는 $2:3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-4968a3a9ac",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\angle A=70^\\circ$, $\\angle B=50^\\circ$이고, 삼각형 $DEF$에서 $\\angle E=50^\\circ$, $\\angle F=60^\\circ$이다.\n\n두 삼각형이 닮음일 때, 사용된 닮음 조건은?",
+"choices": [
+"$\\mathrm{SSS}$ 닮음",
+"$\\mathrm{SAS}$ 닮음",
+"$\\mathrm{AA}$ 닮음",
+"$\\mathrm{RHS}$ 합동",
+"닮음이 아니다"
+],
+"answer": "③",
+"solution": "삼각형 $ABC$에서 $\\angle C=180^\\circ-70^\\circ-50^\\circ=60^\\circ$이고, 삼각형 $DEF$에서 $\\angle D=180^\\circ-50^\\circ-60^\\circ=70^\\circ$이다. 두 삼각형의 세 내각이 모두 $70^\\circ,\\ 50^\\circ,\\ 60^\\circ$로 같으므로, 두 쌍의 대응각의 크기가 같아 $\\mathrm{AA}$ 닮음이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-6f96f11cc2",
+"typeId": "set2-m22-05-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "두 삼각형 $ABC$와 $DEF$에서 $\\angle A=\\angle D$이고, $\\overline{AB}=4\\,\\mathrm{cm}$, $\\overline{AC}=6\\,\\mathrm{cm}$, $\\overline{DE}=10\\,\\mathrm{cm}$, $\\overline{DF}=15\\,\\mathrm{cm}$이다.\n\n두 삼각형은 $\\mathrm{SAS}$ 닮음임을 알 수 있다. 이때 삼각형 $ABC$와 삼각형 $DEF$의 닮음비를 구하여라.",
+"selfGrade": true,
+"answer": "$2:5$",
+"solution": "$\\overline{AB}:\\overline{DE}=4:10=2:5$, $\\overline{AC}:\\overline{DF}=6:15=2:5$로 두 쌍의 대응변의 비가 같고, 그 끼인각 $\\angle A=\\angle D$로 같으므로 두 삼각형은 $\\mathrm{SAS}$ 닮음이다. 따라서 닮음비는 $2:5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-05-u0m0s1t3",
+"custom": true
 }
 ]

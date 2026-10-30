@@ -3074,5 +3074,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u3m4s0t0",
 "custom": true
+},
+{
+"id": "fill-3800689d20",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것을 고르시오.\n\nRaising and breeding animals has always been a vital part of human history.",
+"choices": [
+"essential",
+"useless",
+"temporary",
+"dangerous",
+"rare"
+],
+"answer": "①",
+"solution": "vital은 '필수적인, 매우 중요한'이라는 뜻이다. 동물을 기르고 번식시키는 일이 인류 역사에서 꼭 필요한 부분이었다는 문맥이므로 essential(필수적인)이 의미가 가장 가깝다. 나머지 선지는 반대되거나 무관한 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ec83bc3172",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 적절한 것을 고르시오.\n\nexisting or lasting only for a short time",
+"choices": [
+"vital",
+"dominant",
+"temporary",
+"adaptive",
+"mutual"
+],
+"answer": "③",
+"solution": "'짧은 기간 동안만 존재하거나 지속되는'이라는 뜻풀이에 해당하는 단어는 temporary(일시적인)이다. 지문에서 인간과 동물이 이 행성의 temporary tenants(일시적인 거주자)라고 표현한 것과 같은 의미이다. vital(필수적인), dominant(우세한), adaptive(적응력 있는), mutual(상호의)은 뜻이 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3e1368fade",
+"typeId": "eng-h2-b05-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\n\nThe dolphins and the fishers formed a ______ relationship in which both sides helped each other and benefited.",
+"choices": [
+"mutual",
+"illegal",
+"tragic",
+"destructive",
+"unexpected"
+],
+"answer": "①",
+"solution": "양쪽이 서로 돕고 모두 이익을 얻는 관계이므로 '상호의, 서로의'라는 뜻의 mutual이 알맞다. 지문에서 야생동물이 인간과 mutual relationships를 맺는다고 한 것과 같은 쓰임이다. illegal(불법의), tragic(비극적인), destructive(파괴적인), unexpected(예상치 못한)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m7s0t0",
+"custom": true
 }
 ]

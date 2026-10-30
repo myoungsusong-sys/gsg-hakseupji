@@ -6442,5 +6442,259 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b02-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-a726becfc8",
+"typeId": "eng-m3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"It is easy of me to ride a bike.",
+"It was kind of you to help me.",
+"It is hard for he to get up early.",
+"It was careless for her to lose the key.",
+"It is fun of us to play soccer."
+],
+"answer": "②",
+"solution": "kind처럼 사람의 성격이나 태도를 나타내는 형용사 뒤에서는 to부정사의 의미상 주어를 「of+목적격」으로 쓴다. 그래서 ②가 알맞다. ①과 ⑤의 easy, fun은 성격을 나타내는 형용사가 아니므로 for를 써야 한다. ③은 he가 아니라 목적격 him을 써야 하고, ④의 careless는 성격을 나타내므로 of her로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d549631e17",
+"typeId": "eng-m3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"My sister keeps asking me questions.",
+"I am not sure whether he will come.",
+"It is important for us to exercise.",
+"It was nice of him to say so.",
+"It is difficult of them to solve the problem."
+],
+"answer": "⑤",
+"solution": "difficult는 사람의 성격을 나타내는 형용사가 아니므로 의미상 주어를 「for+목적격」으로 써서 for them이 되어야 한다. ①은 keep 뒤에 동명사를 썼고, ②는 '~인지 아닌지'를 뜻하는 whether를 바르게 썼다. ③의 important 뒤에는 for us, ④의 nice 뒤에는 of him을 쓴 것이 모두 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-41507c193e",
+"typeId": "eng-m3-b02-u0m1s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\n\nIt was rude (for / of) Minsu to shout at his sister.",
+"selfGrade": true,
+"answer": "of",
+"solution": "rude(무례한)는 사람의 성격이나 태도를 나타내는 형용사이다. 이런 형용사 뒤에서는 to부정사의 의미상 주어를 「of+목적격」으로 나타낸다. 따라서 of Minsu가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eadfcc05a9",
+"typeId": "eng-m3-b02-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nWhen my sister became a teenager, she often lost her temper. At first, it was hard for me to understand her. But now that I am a teenager, too, I know how she felt. We understand each other better than before.",
+"choices": [
+"형제자매를 더 잘 이해하게 된 과정",
+"방 청소를 잘하는 방법",
+"가장 좋아하는 영화 소개",
+"건강을 지키는 생활 습관",
+"새 학기 시간표 짜기"
+],
+"answer": "①",
+"solution": "글쓴이는 언니가 십 대가 되었을 때 이해하기 어려웠지만, 자신도 십 대가 되자 언니의 마음을 알게 되어 서로를 더 잘 이해하게 되었다고 말한다. 따라서 글의 주제는 ‘형제자매를 더 잘 이해하게 된 과정’이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-38bcc23653",
+"typeId": "eng-m3-b02-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nBeing a teenager is not always easy. Our moods can change quickly, and we sometimes feel angry for no reason. But these feelings are a normal part of growing up. Little by little, we learn to understand ourselves.",
+"choices": [
+"How to Cook Easy Meals",
+"Changes in a Teenager's Mood",
+"My Favorite Baseball Team",
+"A Trip to the Seoul Stadium",
+"Rules for Using a Smartphone"
+],
+"answer": "②",
+"solution": "글은 십 대 시절 기분이 빠르게 변하고 이유 없이 화가 나기도 하지만 이는 성장의 정상적인 과정이라고 설명한다. 따라서 제목으로는 ‘Changes in a Teenager's Mood(십 대의 기분 변화)’가 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-80a5cf90d5",
+"typeId": "eng-m3-b02-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nMy sister and I share a room. Sometimes we argue, but we also help each other a lot. As we get to know each other better, we feel greater love toward each other.",
+"choices": [
+"방은 혼자 쓰는 것이 가장 편하다.",
+"서로를 알아갈수록 더 사랑하게 된다.",
+"형제자매와는 다투지 않는 것이 좋다.",
+"운동은 매일 하는 것이 건강에 좋다.",
+"책을 읽는 것이 영화를 보는 것보다 낫다."
+],
+"answer": "②",
+"solution": "글쓴이는 언니와 때때로 다투기도 하지만 서로 많이 도우며, 서로를 더 알아갈수록 더 큰 사랑을 느낀다고 말한다. 따라서 요지는 ‘서로를 알아갈수록 더 사랑하게 된다’이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-be01a692e8",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe girl ________ in a small room all her life before she finally got her wheelchair.",
+"choices": [
+"lives",
+"is living",
+"has lived",
+"had lived",
+"living"
+],
+"answer": "④",
+"solution": "휠체어를 받은 시점(과거)보다 더 이전부터 방 안에서 지내 온 것이므로, 과거보다 앞선 때를 나타내는 과거완료 「had + 과거분사」를 써야 한다. before가 이끄는 절(got)이 과거이고, 그 이전 상황이므로 had lived가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-750f6c66ca",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\n________ with other like-minded groups, we have helped people in over 90 countries.",
+"choices": [
+"Work",
+"Worked",
+"Working",
+"To work",
+"Works"
+],
+"answer": "③",
+"solution": "분사구문의 주어 we가 '함께 일하는' 주체이므로 능동의 의미를 가진 현재분사 Working을 써야 한다. 주어와 분사의 관계가 능동일 때는 현재분사(-ing)를 쓰므로 Working이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eddb5896be",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIn 2017, the one-millionth wheelchair ________ to a girl who needed it.",
+"choices": [
+"delivered",
+"was delivered",
+"has delivered",
+"delivering",
+"deliver"
+],
+"answer": "②",
+"solution": "주어 the wheelchair는 '전달되는' 대상이므로 수동태 「be동사 + 과거분사」가 필요하다. 시점이 과거(In 2017)이므로 was delivered가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ccb233519c",
+"typeId": "eng-m3-b02-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓓ 중 어법상 틀린 것을 모두 찾아 그 기호를 쓰고, 각각 바르게 고쳐 쓰시오.\n\nI wanted to design a wheelchair ⓐwhich was light and cheap. ⓑWorking in my garage every night, I kept trying. My friends thought I ⓒhave gone off the deep end. But by 2017, our team ⓓhad distribute wheelchairs in over 90 countries.",
+"selfGrade": true,
+"answer": "ⓒ have gone → had gone, ⓓ had distribute → had distributed",
+"solution": "ⓐ는 선행사 wheelchair가 단수이고 '가볍고 싼' 특성을 설명하므로 which was가 옳고, ⓑ는 주어 I가 능동적으로 '일하는' 주체이므로 현재분사 Working이 옳다. ⓒ는 주절 동사 thought(과거)보다 앞선 때를 나타내야 하므로 현재완료 have gone을 과거완료 had gone으로 고쳐야 한다. ⓓ는 과거완료는 「had + 과거분사」 형태이므로 distribute를 과거분사 distributed로 고쳐 had distributed로 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d73feb6c99",
+"typeId": "eng-m3-b02-u1m5s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 말을 모두 배열하여 영작할 때, 5번째에 오는 것은?\n\n옥수수를 튀기는 게임을 즐긴 사람들은 바로 원주민들이었다.\n\n<보기>\nNative Americans, that, enjoyed, It, was, the game of, popping corn\n\n<조건>\n• 대·소문자는 구별하지 않음",
+"choices": [
+"Native Americans",
+"was",
+"that",
+"enjoyed",
+"the game of"
+],
+"answer": "④",
+"solution": "주어를 강조하는 「It was ~ that ...」 강조구문이다. 바르게 배열하면 It was Native Americans that enjoyed the game of popping corn.이다. 순서대로 It(1)-was(2)-Native Americans(3)-that(4)-enjoyed(5)이므로 5번째에 오는 것은 enjoyed, 즉 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2f77c119a6",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, 내용과 일치하는 것을 고르시오.\n\nNative Americans not only loved eating corn but also enjoyed the game of popping corn. They threw corn seeds on hot stones over a fire. Then the corn seeds popped and bloomed into white flowers. The game was to catch and enjoy the flowery snacks.",
+"choices": [
+"아메리카 원주민들은 옥수수를 먹는 것을 싫어했다.",
+"아메리카 원주민들은 차가운 돌 위에 옥수수 씨앗을 던졌다.",
+"아메리카 원주민들은 옥수수를 튀기는 놀이를 즐겼다.",
+"옥수수 씨앗은 튀겨지면 검은색으로 변했다.",
+"옥수수를 튀기는 놀이에서는 옥수수를 먹을 수 없었다."
+],
+"answer": "③",
+"solution": "본문에서 아메리카 원주민들은 옥수수를 먹는 것뿐만 아니라 옥수수를 튀기는 놀이도 즐겼다고 했다. 따라서 정답은 ③이다. 옥수수 씨앗은 불 위의 뜨거운 돌에서 튀겨졌으며, 하얀 꽃처럼 변한 옥수수를 받아먹는 놀이였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bf18ec5120",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답으로 가장 알맞은 것을 고르시오.\n\nNative Americans used popcorn for decoration as well. Their teenage girls used popped corn to decorate clothes. The Aztecs made corn decorations for the statues of the god of rain. They thought popcorn a symbol of good health and goodwill.\n\nQ. What did Native American teenage girls decorate with popped corn?",
+"choices": [
+"Their clothes.",
+"Their houses.",
+"Their books.",
+"Their shoes.",
+"Their baskets."
+],
+"answer": "①",
+"solution": "본문의 'Their teenage girls used popped corn to decorate clothes.'에서 정답을 찾을 수 있다. 아메리카 원주민의 십 대 소녀들은 튀긴 옥수수로 옷을 장식했다. 따라서 정답은 ① Their clothes이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-69ea757487",
+"typeId": "eng-m3-b02-u1m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, 내용과 일치하지 않는 것을 고르시오.\n\nThe Chinese, as well as people in Sumatra and India, made popcorn long before Columbus arrived in the West Indies. In ancient China, people popped corn to tell fortunes for the coming year and their daughters' future marriage. In the Song Dynasty, Chinese people invented large pot-shaped popping machines to pop corn, and these machines are still used by street poppers today.",
+"choices": [
+"중국인들은 콜럼버스가 서인도 제도에 도착하기 전부터 팝콘을 만들었다.",
+"수마트라와 인도 사람들도 오래전부터 팝콘을 만들었다.",
+"고대 중국인들은 다음 해의 운세를 점치기 위해 옥수수를 튀겼다.",
+"송나라 시대의 중국인들은 커다란 항아리 모양의 팝콘 기계를 발명했다.",
+"송나라 시대에 발명된 팝콘 기계는 오늘날 더 이상 사용되지 않는다."
+],
+"answer": "⑤",
+"solution": "본문의 마지막 문장에서 송나라 시대에 발명된 팝콘 기계가 오늘날에도 길거리에서 팝콘을 만드는 사람들에게 사용된다고 했다. 따라서 현재 더 이상 사용되지 않는다는 ⑤는 본문과 일치하지 않는다. 나머지 선지는 모두 본문에 명시된 사실이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m3s0t0",
+"custom": true
 }
 ]

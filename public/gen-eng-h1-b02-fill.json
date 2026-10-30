@@ -5501,5 +5501,273 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-eff180f9ed",
+"typeId": "eng-h1-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nMy name is Lee Saem. My first name has an impressive meaning in Korean: “a source of power and vitality.” Since Saem sounds like Sam, I decided to make that my English name. Growing up, I thought Lee was a common last name only in Korea. 나는 그것이 실제로 다른 많은 나라에서도 흔하다는 것을 전혀 알지 못했다.\n\n(know / did / little / I)\n\n→ ____________ ____________ ____________ ____________ that it’s actually common in many other countries, too.",
+"selfGrade": true,
+"answer": "Little did I know",
+"solution": "부정의 의미를 가진 부사 little이 문장 맨 앞에 오면 주어와 조동사의 어순이 바뀌는 도치가 일어난다. 일반동사 know가 쓰인 과거 시제 문장이므로 「Little + did + 주어 + 동사원형」의 어순이 된다. 따라서 Little did I know가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a33963b706",
+"typeId": "eng-h1-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nMy name is Lee Saem. My first name has an impressive meaning in Korean: “a source of power and vitality.” Saem이 Sam처럼 들려서, 나는 그것을 내 영어 이름으로 하기로 결정했다.\n\n(decided / make / to / that / I)\n\n→ Since Saem sounds like Sam, ____________ ____________ ____________ ____________ ____________ my English name.",
+"selfGrade": true,
+"answer": "I decided to make that",
+"solution": "decide는 목적어로 to부정사를 취하므로 decided to make의 형태가 된다. make 뒤에는 목적어 that(= Saem)과 목적격보어 my English name이 차례로 와서 '그것을 내 영어 이름으로 만들다'라는 뜻이 된다. 따라서 I decided to make that이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a0db127488",
+"typeId": "eng-h1-b02-u4m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 의미가 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nA few months ago, I had a conflict with Eunsu. She suddenly stopped responding to my messages. During our conversation, I found out why she was upset. Then we both apologized to each other. From this experience, I learned that 그러한 문제들을 열린 의사소통을 통해 해결하는 것이 가장 좋다.\n\n(best / it / to / is / resolve)\n\n→ ____________ ____________ ____________ ____________ ____________ such problems through open communication.",
+"selfGrade": true,
+"answer": "it is best to resolve",
+"solution": "'~하는 것이 가장 좋다'는 가주어 it과 진주어 to부정사를 써서 「it is best to + 동사원형」으로 나타낸다. 진주어 자리에는 to resolve such problems through open communication이 온다. 따라서 it is best to resolve가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-dba9cf6e82",
+"typeId": "eng-h1-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 가장 적절한 것은?\n\nto make someone or something healthy again",
+"choices": [
+"reduce",
+"heal",
+"volunteer",
+"prevent",
+"organize"
+],
+"answer": "②",
+"solution": "\"누군가나 무언가를 다시 건강하게 만들다\"라는 뜻의 단어는 heal(치유하다)이다. Grandma Moyo가 \"heal their wounded hearts\"라고 말한 것과 같은 의미이다. reduce는 줄이다, prevent는 막다, organize는 정리하다라는 뜻이므로 답이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-44c33ac125",
+"typeId": "eng-h1-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nI have been volunteering for the Friendship Bench program for about eight years.",
+"choices": [
+"상담하다",
+"회복하다",
+"자원봉사하다",
+"소개하다",
+"격려하다"
+],
+"answer": "③",
+"solution": "volunteer는 '자원봉사하다'라는 뜻이다. Grandma Moyo가 약 8년 동안 그 프로그램을 위해 자원봉사해 왔다는 문장이다. 상담하다는 counsel, 회복하다는 recover, 소개하다는 introduce, 격려하다는 encourage이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9522d1e8d6",
+"typeId": "eng-h1-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nNow her life is back on ______, and she has even started her own business.",
+"choices": [
+"track",
+"foot",
+"time",
+"hand",
+"mind"
+],
+"answer": "①",
+"solution": "'be back on track'은 '(삶 등이) 다시 정상 궤도에 오르다'라는 뜻의 표현이다. 지문에서 상담을 받은 소녀의 삶이 다시 정상으로 돌아왔다는 내용과 일치한다. 나머지 단어들은 track과 함께 이 의미를 만들지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-79c28090b1",
+"typeId": "eng-h1-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어와 영영풀이가 바르게 짝지어지지 않은 것은?",
+"choices": [
+"recovery – the process of becoming healthy again",
+"former – happening or existing before now",
+"rewarding – giving satisfaction or a good feeling",
+"productive – producing or achieving a lot",
+"struggle – to feel very happy and proud of something"
+],
+"answer": "⑤",
+"solution": "struggle은 '(어려움과) 싸우다, 힘겨워하다'라는 뜻으로, 올바른 영영풀이는 'to try hard to deal with a difficult problem'이다. ⑤의 'to feel very happy and proud of something'은 proud 등을 설명하는 풀이이므로 잘못 짝지어졌다. 나머지 recovery, former, rewarding, productive는 모두 뜻풀이가 정확하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5eb9653088",
+"typeId": "eng-h1-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nEver since I was a child, I've always been afraid of water. One day, I came across a video clip of my cousin surfing at an indoor pool on social media. It looked fun, and I liked the fact that it took place in a shallow pool, not in the ocean. I messaged my cousin about it. She assured me that it wasn't too hard, so I signed up for a beginner course. At the beginning of the lesson, it was hard just to stand up on the board. After some help from the instructor, however, I learned how to balance properly and even managed to surf a few waves!",
+"choices": [
+"The writer has been afraid of water since childhood.",
+"The writer saw a video clip of a cousin surfing.",
+"The surfing course took place in the deep ocean.",
+"The instructor helped the writer learn how to balance.",
+"The writer managed to surf a few waves."
+],
+"answer": "③",
+"solution": "글에서 글쓴이는 바다(ocean)가 아니라 얕은 실내 수영장(shallow indoor pool)에서 서핑을 했다고 했으므로 '깊은 바다에서 했다'는 ③은 글과 일치하지 않는다. 나머지 ①②④⑤는 모두 본문에 그대로 언급되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6f71324209",
+"typeId": "eng-h1-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThese days, I tend to watch movies on streaming services. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. After the movie, I promised myself that I would try to make my own choices more often in the future.",
+"choices": [
+"The writer usually watches movies on streaming services these days.",
+"For the first challenge, the writer went to the theater alone.",
+"The writer chose a historical drama to watch.",
+"The writer felt awkward and lonely during the entire movie.",
+"The writer decided to make his or her own choices more often."
+],
+"answer": "④",
+"solution": "처음(at first)에는 혼자 앉아 어색하고 외로웠지만 영화가 시작된 뒤에는 이야기에 완전히 몰입했다(became completely absorbed)고 했으므로, '영화 내내' 어색하고 외로웠다는 ④는 글과 일치하지 않는다. ①②③⑤는 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5dd158f73a",
+"typeId": "eng-h1-b02-u0m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 답할 수 있는 질문으로 가장 적절한 것은?\n\nOn the first day of school, our teacher gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+"choices": [
+"How many challenges did the teacher give the students?",
+"What grade did the students get for the assignment?",
+"How many students were there in the class?",
+"When did the new semester end?",
+"Which hobby did the writer choose for a challenge?"
+],
+"answer": "①",
+"solution": "선생님이 세 가지(three) 도전 과제를 주었다고 분명히 나와 있으므로 ①은 글을 통해 답할 수 있다. 성적, 학생 수, 학기 종료 시점, 글쓴이가 고른 취미는 본문에 언급되지 않아 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b5df75104a",
+"typeId": "eng-h1-b02-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 빈칸을 완성하시오.\n\nWhen the MFAA was first formed, its main goal was to prevent the destruction of cultural landmarks. 모뉴먼츠 맨은 연합군에게 박물관, 교회, 또는 다른 문화적으로 중요한 건물들이 있는 지역을 폭격하지 말라고 설득했다.\n\n<보기> not, the Allied forces, persuaded, to bomb\n\n→ The Monuments Men ______________________________ areas with museums, churches, or other culturally significant buildings.",
+"selfGrade": true,
+"answer": "persuaded the Allied forces not to bomb",
+"solution": "persuade는 '설득하다'라는 뜻으로 'persuade+목적어+to부정사' 구조를 취한다. to부정사를 부정할 때는 not을 to 바로 앞에 둔다. 따라서 persuaded the Allied forces not to bomb 순서로 배열해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d8d53fe6f1",
+"typeId": "eng-h1-b02-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 빈칸을 완성하시오.\n\nThey also visited areas that had already been destroyed to restore damaged architecture and works of art. 머지않아 그들의 역할은 확대되었다.\n\n<보기> before, long, it, wasn’t\n\n→ ______________________________ their role expanded.",
+"selfGrade": true,
+"answer": "It wasn’t long before",
+"solution": "'It wasn't long before+주어+동사'는 '머지않아 ~했다'라는 뜻의 관용 표현이다. 비인칭 주어 it을 맨 앞에 두고 wasn't long before를 이어서 쓴다. 따라서 It wasn't long before 순서가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a048ca2772",
+"typeId": "eng-h1-b02-u6m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 <보기>의 단어를 바르게 배열하여 빈칸을 완성하시오.\n\nWhen the Monuments Men learned about this, they started looking for the stolen treasures. 그들의 탐색은 그 이후로 ‘역사상 가장 위대한 보물찾기’라고 불려 왔다.\n\n<보기> been, since, called, has\n\n→ Their search ______________________________ “the greatest treasure hunt in history.”",
+"selfGrade": true,
+"answer": "has since been called",
+"solution": "'그 이후로 ~라고 불려 왔다'는 현재완료 수동태(has been p.p.)로 나타낸다. '그 이후로'를 뜻하는 부사 since는 조동사 has와 been 사이에 들어간다. 따라서 has since been called 순서로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f2ff229b9a",
+"typeId": "eng-h1-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 괄호 ⓐ에 들어갈 말로 어법상 가장 적절한 것은?\n\nAfter the novel ⓐ[          ], more people in the North became against slavery.",
+"choices": [
+"① publish",
+"② publishing",
+"③ was published",
+"④ has publishing",
+"⑤ to publish"
+],
+"answer": "③",
+"solution": "소설은 스스로 출판하는 것이 아니라 출판되는 대상이므로 수동태를 사용해야 한다. 또한 과거에 일어난 사건을 서술하고 있으므로 과거 수동태인 was published가 알맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6a395c6445",
+"typeId": "eng-h1-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 괄호 ⓐ에 들어갈 말로 어법상 가장 적절한 것은?\n\nThe article featured a photograph ⓐ[          ] flames and smoke rising from the Cuyahoga River.",
+"choices": [
+"① show",
+"② shows",
+"③ showed",
+"④ showing",
+"⑤ to showing"
+],
+"answer": "④",
+"solution": "빈칸은 명사 a photograph를 뒤에서 수식하는 자리이다. 사진이 불꽃과 연기를 보여 주는 능동 관계이므로 현재분사 showing이 적절하다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4abb9efe3",
+"typeId": "eng-h1-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn the 1880s, factories along the Cuyahoga River provided jobs for local people. However, they also dumped large amounts of waste into the river. In June 1969, the polluted river caught fire. The fire was ⓐ[put out / putting out] so quickly that nobody took a photograph of it.\n\nLater, an article ⓑ[published / publishing] in Time magazine featured a shocking photograph of a much worse fire that had occurred several years earlier. The image made more Americans aware of water pollution. On April 22, 1970, a national environmental awareness event was held, ⓒ[that / which] later became known as the first Earth Day.\n\nⓐ          ⓑ          ⓒ",
+"choices": [
+"① put out – publishing – that",
+"② putting out – published – which",
+"③ put out – published – that",
+"④ putting out – publishing – which",
+"⑤ put out – published – which"
+],
+"answer": "⑤",
+"solution": "ⓐ는 화재가 진압되었다는 수동의 의미이므로 was와 함께 과거분사 put out을 써야 한다. ⓑ는 기사가 출판된 것이므로 과거분사 published가 명사 an article을 뒤에서 수식한다. ⓒ는 앞의 행사를 부연 설명하는 계속적 용법의 관계대명사 자리이므로 that이 아닌 which를 사용해야 한다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u3m1s0t0",
+"custom": true
 }
 ]

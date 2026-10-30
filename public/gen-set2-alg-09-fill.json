@@ -1202,5 +1202,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-09-u0m0s1t0",
 "custom": true
+},
+{
+"id": "fill-1b1a8ee1f1",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6$, $\\overline{AC}=4$, $A=150^\\circ$일 때, 삼각형 $ABC$의 넓이는?",
+"choices": [
+"$6$",
+"$6\\sqrt2$",
+"$6\\sqrt3$",
+"$12$",
+"$12\\sqrt3$"
+],
+"answer": "①",
+"solution": "두 변의 길이와 그 끼인각을 알면 넓이는 $S=\\dfrac12\\cdot\\overline{AB}\\cdot\\overline{AC}\\cdot\\sin A$로 구한다. $\\sin150^\\circ=\\dfrac12$이므로 $S=\\dfrac12\\cdot6\\cdot4\\cdot\\dfrac12=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-14a8d51bf8",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "세 변의 길이가 $\\overline{AB}=5$, $\\overline{BC}=7$, $\\overline{CA}=8$인 삼각형 $ABC$의 넓이는?",
+"choices": [
+"$5\\sqrt3$",
+"$10$",
+"$10\\sqrt3$",
+"$20$",
+"$20\\sqrt3$"
+],
+"answer": "③",
+"solution": "코사인법칙에 의해 $\\cos A=\\dfrac{5^2+8^2-7^2}{2\\cdot5\\cdot8}=\\dfrac{40}{80}=\\dfrac12$이므로 $A=60^\\circ$이다. 따라서 넓이는 $\\dfrac12\\cdot5\\cdot8\\cdot\\sin60^\\circ=\\dfrac12\\cdot40\\cdot\\dfrac{\\sqrt3}{2}=10\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-1ae6c79207",
+"typeId": "set2-alg-09-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "평행사변형 $ABCD$에서 $\\overline{AB}=4$, $\\overline{AD}=5$, $A=45^\\circ$일 때, 평행사변형 $ABCD$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$10\\sqrt2$",
+"solution": "평행사변형은 대각선 $BD$에 의해 넓이가 같은 두 삼각형으로 나뉜다. 따라서 넓이는 $2\\cdot\\dfrac12\\cdot\\overline{AB}\\cdot\\overline{AD}\\cdot\\sin A=4\\cdot5\\cdot\\dfrac{\\sqrt2}{2}=10\\sqrt2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-337273d87b",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=3$, $\\overline{AC}=5$, $\\angle BAC=120^\\circ$일 때, $\\overline{BC}$의 길이는?",
+"choices": [
+"$\\sqrt{19}$",
+"$6$",
+"$7$",
+"$\\sqrt{34}$",
+"$8$"
+],
+"answer": "③",
+"solution": "코사인법칙에 의해 $\\overline{BC}^2=\\overline{AB}^2+\\overline{AC}^2-2\\cdot\\overline{AB}\\cdot\\overline{AC}\\cos(\\angle BAC)$이다. 즉 $\\overline{BC}^2=3^2+5^2-2\\cdot3\\cdot5\\cdot\\cos120^\\circ=9+25-30\\cdot\\left(-\\dfrac12\\right)=34+15=49$이다. 따라서 $\\overline{BC}=7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-b81d6ae3fc",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=5$, $\\overline{BC}=7$, $\\overline{CA}=8$일 때, $\\cos A$의 값은?",
+"choices": [
+"$\\dfrac12$",
+"$\\dfrac13$",
+"$\\dfrac14$",
+"$\\dfrac23$",
+"$\\dfrac34$"
+],
+"answer": "①",
+"solution": "코사인법칙 $\\cos A=\\dfrac{\\overline{AB}^2+\\overline{CA}^2-\\overline{BC}^2}{2\\cdot\\overline{AB}\\cdot\\overline{CA}}$를 이용한다. 대입하면 $\\cos A=\\dfrac{5^2+8^2-7^2}{2\\cdot5\\cdot8}=\\dfrac{25+64-49}{80}=\\dfrac{40}{80}=\\dfrac12$이다. 따라서 $\\cos A=\\dfrac12$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-d04d62ce6a",
+"typeId": "set2-alg-09-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=4$, $\\overline{AC}=6$, $\\angle BAC=60^\\circ$일 때, $\\overline{BC}$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$2\\sqrt{7}$",
+"solution": "코사인법칙에 의해 $\\overline{BC}^2=\\overline{AB}^2+\\overline{AC}^2-2\\cdot\\overline{AB}\\cdot\\overline{AC}\\cos(\\angle BAC)$이다. 즉 $\\overline{BC}^2=4^2+6^2-2\\cdot4\\cdot6\\cdot\\cos60^\\circ=16+36-48\\cdot\\dfrac12=52-24=28$이다. 따라서 $\\overline{BC}=\\sqrt{28}=2\\sqrt{7}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t3",
+"custom": true
 }
 ]

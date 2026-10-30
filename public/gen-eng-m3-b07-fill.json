@@ -4369,5 +4369,341 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u7m5s0t0",
 "custom": true
+},
+{
+"id": "fill-22332a7fb8",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nMy name is Homin, and I'm in the school art club. Last month, I visited a village with wall paintings in Yeosu. The paintings made the old village bright and new. Then I had an idea. \"Why don't we do wall paintings like these?\" At the next club meeting, I told the members about my idea, and they loved it. We found a teen volunteer project on the Internet and applied for it.",
+"choices": [
+"여수의 유명한 관광지 소개",
+"미술 동아리 회원을 모집하는 방법",
+"벽화 봉사를 하게 된 계기와 지원 과정",
+"벽화 앞에서 사진을 잘 찍는 방법",
+"인터넷으로 자원봉사 정보를 찾는 것의 위험성"
+],
+"answer": "③",
+"solution": "호민이는 여수의 벽화 마을을 보고 벽화를 그려 보자는 생각을 했습니다. 동아리 회원들에게 이 생각을 말한 뒤 인터넷에서 찾은 청소년 봉사 프로젝트에 지원했습니다. 따라서 글의 주제는 벽화 봉사를 하게 된 계기와 지원 과정입니다. 여수, 사진, 인터넷은 글에 나오는 세부 내용일 뿐 중심 내용이 아닙니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-39aa6a749c",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용을 한 문장으로 요약할 때 가장 알맞은 것은?\n\nVolunteer Work Diary\nName: Minsu Kim\nToday, I volunteered at Dream Library. First, I read English books to children. Then, the volunteer manager had me arrange the books on the shelves. The books were heavy, so it was hard work. But after I finished, the shelves looked very neat. I felt proud. It was a rewarding day.",
+"choices": [
+"민수는 도서관에서 영어책을 빌렸다.",
+"민수는 도서관 봉사를 하며 보람을 느꼈다.",
+"민수는 무거운 책 때문에 봉사를 그만두었다.",
+"민수는 아이들에게 책 정리하는 법을 가르쳤다.",
+"민수는 도서관 관리자가 되고 싶다는 꿈을 꾸게 되었다."
+],
+"answer": "②",
+"solution": "민수는 Dream Library에서 아이들에게 영어책을 읽어 주고 책장을 정리하는 봉사를 했습니다. 일은 힘들었지만 마지막에 'I felt proud.'와 'It was a rewarding day.'라고 말합니다. 따라서 도서관 봉사를 하며 보람을 느꼈다는 ②가 요약으로 알맞습니다. ③은 봉사를 끝까지 마친 내용과 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-74da5761a1",
+"typeId": "eng-m3-b07-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 주제로 가장 알맞은 것은?\n\nWoman: Hello. Are you here for the volunteer work?\nTony: Yes, I am. What should I do today?\nWoman: Please record this book for the blind. You can use Room 7.\nTony: Okay. Is there anything to keep in mind?\nWoman: Yes. Make sure you read slowly and clearly.\nTony: All right. I'll do my best.",
+"choices": [
+"녹음실을 예약하는 방법",
+"새 책을 사러 가는 계획",
+"책을 빨리 읽는 방법",
+"봉사 활동 시간을 바꾸는 일",
+"시각 장애인을 위한 책 녹음 봉사 안내"
+],
+"answer": "⑤",
+"solution": "Tony는 봉사 활동을 하러 왔습니다. 여자는 Tony에게 시각 장애인을 위해 책을 녹음해 달라고 부탁하고, 천천히 또박또박 읽으라고 안내합니다. 따라서 대화의 주제는 시각 장애인을 위한 책 녹음 봉사 안내입니다. ③은 'read slowly'라는 내용과 정반대입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-68a3e6560f",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어와 우리말 뜻이 알맞지 않은 것은?",
+"choices": [
+"imitate: 모방하다",
+"architect: 건축가",
+"protect: 보호하다",
+"column: 기둥",
+"nature: 도시"
+],
+"answer": "⑤",
+"solution": "nature는 '자연'을 뜻하는 단어로, '도시'라는 뜻이 아니다. 나머지 imitate(모방하다), architect(건축가), protect(보호하다), column(기둥)은 모두 뜻이 바르게 짝지어져 있다. 따라서 알맞지 않은 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3ac53034a6",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 맞게 아래 단어들을 나열할 때, 4번째 오는 단어는?\n\n<보기>\nthe / that / people / building / looks / like / a / spaceship / many / think\n\n많은 사람들은 그 건물이 우주선처럼 보인다고 생각한다.",
+"choices": [
+"many",
+"people",
+"that",
+"building",
+"looks"
+],
+"answer": "③",
+"solution": "영어로 바르게 배열하면 'Many people think that the building looks like a spaceship.'이다. 순서대로 Many(1) - people(2) - think(3) - that(4) - the(5) ... 이므로 4번째 오는 단어는 that이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0a96e71a40",
+"typeId": "eng-m3-b07-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe egg is round and delicate, yet strong enough to ______ its contents.\n(그 달걀은 둥글고 섬세하지만, 그 내용물을 보호할 만큼 충분히 튼튼하다.)",
+"choices": [
+"protect",
+"imitate",
+"shine",
+"exist",
+"guess"
+],
+"answer": "①",
+"solution": "'내용물을 보호하다'라는 의미이므로 빈칸에는 '보호하다'를 뜻하는 protect가 들어가야 한다. imitate(모방하다), shine(비추다), exist(존재하다), guess(추측하다)는 문맥에 맞지 않는다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d50f8dac18",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, 글쓴이의 심경으로 가장 알맞은 것은?\n\nOur concert has just finished. Everyone is standing and giving us a big hand. Tears of joy are rolling down my cheeks. I'm so happy. The other members in my orchestra are hugging one another. We never expected that this day would come.",
+"choices": [
+"① angry and upset",
+"② sad and lonely",
+"③ worried and nervous",
+"④ happy and excited",
+"⑤ bored and disappointed"
+],
+"answer": "④",
+"solution": "공연이 끝난 후 관객들이 기립 박수를 보내고 단원들이 서로 껴안고 있다. 글쓴이는 기쁨의 눈물을 흘리며 매우 행복하다고 말한다. 따라서 글쓴이의 심경은 '행복하고 신이 난'이라는 뜻의 happy and excited가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-be97c32d53",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nFavio wanted to teach us music, but there were only a few musical instruments in our town. We couldn't afford to buy new instruments. Favio had an idea. We could make musical instruments with objects from the landfill. Nicholas made violins from oil drums and flutes from water pipes.",
+"choices": [
+"① 새 악기를 구입하기 위해 돈을 모으는 방법",
+"② 쓰레기 매립장의 물건으로 악기를 만드는 방법",
+"③ 음악을 배우기 위해 다른 마을로 가야 하는 이유",
+"④ 바이올린과 플루트의 연주 방법",
+"⑤ 음악회에서 관객들의 박수를 받는 방법"
+],
+"answer": "②",
+"solution": "마을에는 악기가 부족했고 새 악기를 살 돈도 없었다. Favio는 쓰레기 매립장의 물건으로 악기를 만들자는 생각을 했고, Nicholas는 기름통과 수도관을 이용해 악기를 만들었다. 따라서 글의 주제는 쓰레기 매립장의 물건을 활용한 악기 제작이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c4679ad6f7",
+"typeId": "eng-m3-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAt first, we didn't know how to play musical instruments or read music. Favio taught us with great patience. Step by step, we began to play music. Our first piece was short and mostly out of tune, but we felt a new hope in our hearts. We practiced every day. One day, Favio told us that we were going to have a real concert!",
+"choices": [
+"① Why We Stopped Playing Music",
+"② The Most Expensive Instruments",
+"③ Learning Music and Finding Hope",
+"④ A Town Without a Music Teacher",
+"⑤ How to Read Music Without Practice"
+],
+"answer": "③",
+"solution": "처음에는 악기 연주와 악보 읽기를 몰랐지만 Favio의 가르침으로 조금씩 음악을 연주하게 되었다. 학생들은 서툰 첫 연주를 통해 새로운 희망을 느꼈고 매일 연습한 끝에 실제 공연을 앞두게 되었다. 따라서 '음악을 배우며 희망을 찾다'라는 뜻의 Learning Music and Finding Hope가 가장 적절한 제목이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-478fa45437",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분의 의미로 가장 알맞은 것은?\n\nWhat does the letter 'B' <u>stand for</u> on this map?",
+"choices": [
+"서 있다",
+"찾다",
+"의미하다",
+"끝나다",
+"털어내다"
+],
+"answer": "③",
+"solution": "stand for는 '~을 의미하다, 나타내다'라는 뜻의 표현이다. 문장은 '이 지도에서 글자 B는 무엇을 의미하니?'라는 뜻이다. '털어내다'는 brush off, '결국 ~하게 되다'는 end up이므로 혼동하지 않도록 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-691508f8eb",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 들어갈 말로 알맞은 것은?\n\n책을 더 많이 읽을수록, 너는 더 많이 배운다.\n→ The more you read, the ________ you learn.",
+"choices": [
+"much",
+"most",
+"many",
+"more",
+"less"
+],
+"answer": "④",
+"solution": "'~하면 할수록 더 …하다'는 「the+비교급 ~, the+비교급 …」으로 나타낸다. '더 많이'를 나타내는 비교급은 more이므로 빈칸에는 more가 알맞다. less는 '더 적게'라는 뜻이라 우리말과 맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-13cbb4e61f",
+"typeId": "eng-m3-b07-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 그가 어디에 사는지 모른다.\n(lives / he / where)\n→ I don't know ____________________.",
+"selfGrade": true,
+"answer": "where he lives",
+"solution": "의문문이 다른 문장의 일부로 쓰이는 간접의문문은 「의문사+주어+동사」의 어순을 따른다. 따라서 where does he live가 아니라 where he lives로 써야 한다. 주어가 3인칭 단수이므로 동사는 lives가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-25c6ad723b",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞지 <않은> 것은?",
+"choices": [
+"The orchestra is famous around the world.",
+"Our concert has just finished.",
+"The members are hugging one another.",
+"A tear are rolling down my cheeks.",
+"Andrea is a violinist in the band."
+],
+"answer": "④",
+"solution": "④의 주어 A tear는 단수(눈물 한 방울)이므로 동사도 단수형 is가 되어 A tear is rolling이 맞다. 나머지는 주어와 동사의 수가 올바르게 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eac2c2bc61",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe instruments (A)[made / making] of trash are really special.\nA talented man (B)[named / naming] Nicholas made violins.\nI'm looking forward to (C)[play / playing] music with them.",
+"choices": [
+"made - named - play",
+"making - named - playing",
+"made - named - playing",
+"making - naming - play",
+"made - naming - playing"
+],
+"answer": "③",
+"solution": "(A) 악기가 '만들어진' 수동 의미이므로 과거분사 made가 알맞다. (B) 남자가 '이름 붙여진' 수동 의미이므로 과거분사 named가 알맞다. (C) look forward to의 to는 전치사이므로 뒤에 동명사 playing이 와야 한다. 따라서 made - named - playing이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-adeca19eeb",
+"typeId": "eng-m3-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 것은?",
+"choices": [
+"The violins is made from oil drums.",
+"How has it called the Recycled Orchestra?",
+"It is called the Landfill Harmonic Orchestra.",
+"Our instruments is made of trash.",
+"The flutes was turned from water pipes are nice."
+],
+"answer": "③",
+"solution": "③은 '그것은 ~라고 불린다'라는 수동태 is called가 주어 It과 올바르게 쓰였다. ①은 주어 The violins가 복수이므로 is→are, ②는 수동태이므로 has→is, ④는 주어가 복수이므로 is→are, ⑤는 한 문장에 동사가 중복되어 어법상 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-313db2b6c7",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nThis is the Sagrada Familia in Spain. It is one of the most famous churches in the world. Look at the beautiful tall columns inside the church. They look like trees, don’t they? The famous architect, Antoni Gaudi, used the shape of trees in the Sagrada Familia. That’s how he brought the beauty of nature indoors.",
+"choices": [
+"나무의 모습을 건축에 담아낸 가우디",
+"스페인에서 가장 오래된 교회의 역사",
+"교회 안에 나무를 심는 방법",
+"건축가가 되기 위한 공부 방법",
+"세계 여러 나라의 유명한 나무들"
+],
+"answer": "①",
+"solution": "글은 가우디가 Sagrada Familia의 기둥에 나무의 모습(shape of trees)을 사용해 자연의 아름다움을 실내로 들여왔다는 내용이다. 따라서 주제는 '나무의 모습을 건축에 담아낸 가우디'인 ①이다. 교회의 역사나 나무 심기 등은 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f27528d39f",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nJørn Utzon, the architect of the Sydney Opera House, took a shape from nature and added his imagination. Many people think it is the waves in the ocean or a sailing boat. But interestingly, the inspiration came from an orange. Look at the roof closely. Can you see the peels of an orange?",
+"choices": [
+"The History of the Sydney Opera House",
+"An Orange: The Secret Behind the Opera House Roof",
+"How to Grow Oranges in Australia",
+"The Most Famous Boats in the Ocean",
+"Waves and Boats in Modern Painting"
+],
+"answer": "②",
+"solution": "사람들은 지붕의 영감을 파도나 배라고 생각하지만, 실제 영감은 오렌지(의 껍질)에서 왔다는 것이 글의 핵심이다. 따라서 제목은 'An Orange: The Secret Behind the Opera House Roof'인 ②가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-dda270fb68",
+"typeId": "eng-m3-b07-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nMany people think Dongdaemun Design Plaza looks like a giant spaceship. But the architect, Zaha Hadid, took the curved lines from nature so city people could enjoy them. Thanks to its special design, it has become a popular tourist attraction in Seoul.",
+"choices": [
+"동대문 디자인 플라자는 자연의 곡선을 담은 건축물이다.",
+"우주선은 자연에서 영감을 받아 만들어진다.",
+"서울에는 관광객이 갈 곳이 많지 않다.",
+"자하 하디드는 우주선을 설계한 과학자이다.",
+"곡선보다 직선이 더 아름다운 디자인이다."
+],
+"answer": "①",
+"solution": "자하 하디드가 자연에서 가져온 곡선(curved lines)을 동대문 디자인 플라자에 담아 도시 사람들이 즐길 수 있게 했다는 내용이다. 따라서 요지는 '자연의 곡선을 담은 건축물'인 ①이다. 나머지는 본문과 무관하거나 사실이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m3s0t0",
+"custom": true
 }
 ]

@@ -5100,5 +5100,176 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-7d8479d099",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nB: Hi, Jia. What are you working on?\nG: Hi, David. I'm finalizing my script for the English speech contest.\nB: Did you write it all by yourself?\nG: I wrote the first draft. Then, I got some feedback from a writing assistant app.\nB: What does the app do?\nG: It checks things like my spelling and grammar, and then it suggests ways to correct them.\nB: That's amazing!\nG: I know, right? Now I feel more confident about giving my speech.",
+"choices": [
+"David가 Jia의 원고 초고를 대신 써 주었다.",
+"앱은 원고의 발음을 녹음해서 평가해 준다.",
+"Jia는 영어 말하기 대회 원고를 마무리하고 있다.",
+"앱은 철자는 확인하지만 문법은 확인하지 않는다.",
+"Jia는 앱을 사용한 뒤 연설에 대한 자신감을 잃었다."
+],
+"answer": "③",
+"solution": "Jia가 \"I'm finalizing my script for the English speech contest.\"라고 했으므로 ③이 대화 내용과 일치합니다. 초고는 Jia가 직접 썼고(①), 앱은 철자와 문법을 확인해 고칠 방법을 제안합니다(②, ④). 마지막에 Jia는 연설에 더 자신감이 생겼다고 말했으므로 ⑤도 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e108745afc",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nAt least one billion people, or 15% of the world's population, experience some form of disability. In order to fully function in everyday life, they need to have the same physical and social access to the places, goods, and services in their communities as everyone else. For many of them, however, access still remains an issue. Two teenagers presented new inventions to tackle the issue at an international science competition.",
+"choices": [
+"전 세계에서 적어도 10억 명이 어떤 형태로든 장애를 겪는다.",
+"장애를 겪는 사람은 세계 인구의 약 15%이다.",
+"장애인도 다른 사람들과 똑같은 물리적·사회적 접근이 필요하다.",
+"많은 장애인에게 접근성 문제는 이미 완전히 해결되었다.",
+"두 명의 십대가 국제 과학 대회에서 새로운 발명품을 발표했다."
+],
+"answer": "④",
+"solution": "글에서 \"For many of them, however, access still remains an issue.\"라고 했으므로, 많은 장애인에게 접근성은 여전히 문제로 남아 있습니다. 따라서 '이미 완전히 해결되었다'고 한 ④는 글의 내용과 일치하지 않습니다. 나머지 선지는 모두 글에 그대로 나오는 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6a31032619",
+"typeId": "eng-h1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 Seoyoung이 만든 장치가 사용자에게 장애물의 위치를 알려 주는 방법으로 알맞은 것은?\n\nThose who have lost sight get their spatial information mainly from touch, not vision. Seoyoung Jun based her new navigation device on this fact. This little device sends a beam of infrared light to gather 3D information about what may lie around the user, including walls and furniture. The bounced beam conveys that information to the device, which then raises little pins to indicate where those obstacles are. By \"reading\" the positions and heights of those pins, the user can understand the arrangement of objects lying ahead and navigate around them.",
+"choices": [
+"경고음을 크게 울려 준다.",
+"장치 전체를 진동시킨다.",
+"작은 화면에 장애물 그림을 보여 준다.",
+"작은 핀들을 위로 올려 준다.",
+"불빛을 깜빡여 방향을 알려 준다."
+],
+"answer": "④",
+"solution": "글에 따르면 장치는 \"raises little pins to indicate where those obstacles are\", 즉 작은 핀을 올려서 장애물이 있는 곳을 알려 줍니다. 사용자는 핀의 위치와 높이를 손으로 만져 '읽고' 앞에 무엇이 있는지 파악합니다. 시각 장애인은 공간 정보를 주로 촉각으로 얻는다는 점에 바탕을 둔 장치이므로 정답은 ④입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2e35dedd2c",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nAs a hummingbird visits hundreds of flowers a day, it pollinates many flowers.",
+"choices": [
+"① (꽃가루를) 수분시키다",
+"② 물을 주다",
+"③ 꺾다",
+"④ 심다",
+"⑤ 뿌리째 뽑다"
+],
+"answer": "①",
+"solution": "벌새가 하루에 수백 송이의 꽃을 방문하면서 꽃을 '수분시킨다(pollinate)'는 내용이다. pollinate는 꽃가루를 옮겨 수분을 돕는다는 뜻이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-641d2a912a",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이가 설명하는 단어로 가장 알맞은 것은?\n\nan animal that hunts and eats other animals in nature",
+"choices": [
+"① nectar",
+"② predator",
+"③ wing",
+"④ disease",
+"⑤ saliva"
+],
+"answer": "②",
+"solution": "자연에서 다른 동물을 사냥하고 잡아먹는 동물을 가리키는 단어는 predator(포식자)이다. 본문에서 모기를 자연의 가장 강력한 predator로 소개한 것과 같은 의미이다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-06a73904a6",
+"typeId": "eng-h1-b09-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nHumans and other animals breathe out carbon ____________, which is a key signal to mosquitoes that a meal is near.",
+"choices": [
+"① oxygen",
+"② dioxide",
+"③ hydrogen",
+"④ nitrogen",
+"⑤ nectar"
+],
+"answer": "②",
+"solution": "사람과 동물이 내쉬는 기체는 carbon dioxide(이산화탄소)이며, 이것이 모기에게 먹잇감이 가까이 있다는 신호가 된다는 본문 내용이다. 빈칸에는 dioxide가 들어가야 하므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6c42a3b6e6",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 가장 알맞은 것은?\n\nto change words or sentences from one language into another language",
+"choices": [
+"invent",
+"recognize",
+"translate",
+"brainstorm",
+"capture"
+],
+"answer": "③",
+"solution": "한 언어의 말을 다른 언어로 바꾸는 것은 translate(번역하다)이다. Nand의 앱이 수화를 실시간으로 translate 한다는 본문 내용과 같다. invent는 발명하다, recognize는 알아보다, brainstorm은 아이디어를 짜내다, capture는 포착하다의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9b9f34b540",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nThe technology for a self-driving car is becoming increasingly accessible.",
+"choices": [
+"expensive",
+"available",
+"dangerous",
+"perfect",
+"hidden"
+],
+"answer": "②",
+"solution": "accessible은 '이용할 수 있는, 접근하기 쉬운'이라는 뜻으로 available과 의미가 가장 가깝다. 자율주행차 기술이 점점 쉽게 이용할 수 있게 되고 있다는 본문 맥락과도 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6f50268c3c",
+"typeId": "eng-h1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nMost accidents are caused by ____________ people on the road, for example, those who use their phones or fall asleep while driving.",
+"choices": [
+"careful",
+"careless",
+"kind",
+"famous",
+"honest"
+],
+"answer": "②",
+"solution": "운전 중 휴대폰을 사용하거나 졸음운전을 하는 것은 '부주의한(careless)' 사람의 행동이다. 본문에서 대부분의 사고가 도로 위 careless한 사람들 때문에 생긴다고 한 내용과 같다. careful은 반대 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u5m7s0t0",
+"custom": true
 }
 ]

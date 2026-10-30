@@ -7056,5 +7056,558 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b05-u7m7s0t0",
 "custom": true
+},
+{
+"id": "fill-d29b1dddb3",
+"typeId": "eng-m3-b05-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nWe spray dry ice into clouds to make them ________.",
+"choices": [
+"rain",
+"to rain",
+"raining",
+"rained",
+"rains"
+],
+"answer": "①",
+"solution": "사역동사 make는 「make+목적어+동사원형」의 형태로 쓰여 목적격보어 자리에 원형부정사가 온다. 따라서 to rain, raining이 아닌 동사원형 rain이 알맞다. 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-af8850ddcc",
+"typeId": "eng-m3-b05-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\n________ net-zero energy houses is my job.",
+"choices": [
+"Design",
+"Designs",
+"Designing",
+"Designed",
+"To designing"
+],
+"answer": "③",
+"solution": "동사가 주어 자리에 오려면 동명사(-ing) 또는 to부정사 형태여야 한다. 선지 중 주어 역할을 하며 단수 취급하는 올바른 형태는 동명사 Designing이다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1e01da9983",
+"typeId": "eng-m3-b05-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nIf you are interested in ________ net-zero energy houses, please come and talk to me.",
+"choices": [
+"design",
+"to design",
+"designing",
+"designed",
+"designs"
+],
+"answer": "③",
+"solution": "전치사 in 뒤에는 명사 역할을 하는 동명사가 와야 하므로 「be interested in+-ing」 형태가 된다. 따라서 designing이 알맞다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2beeb76b60",
+"typeId": "eng-m3-b05-u6m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화를 읽고, 질문에 대한 답이 되도록 빈칸에 들어갈 말을 대화에서 찾아 쓰시오.\n\nG: How do you feel about this new recipe?\nB: I think it is good. It is easy to make.\nG: I agree with you.\n\nQ. Why does the boy think the new recipe is good?\n→ He thinks the new recipe is good because __________.\n\n<조건>\n• 대화에서 알맞은 표현을 찾아 그대로 쓸 것.",
+"selfGrade": true,
+"answer": "it is easy to make",
+"solution": "남학생은 새로운 요리법이 좋은 이유로 'It is easy to make.'라고 말한다. 질문은 요리법이 좋은 이유를 묻고 있으므로 because 뒤에 'it is easy to make'를 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8fafddbcc0",
+"typeId": "eng-m3-b05-u6m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 알맞은 말을 <보기>와 같이 So … I 구문을 이용하여 쓰시오.\n\n<보기>\nA: I like this soup.\nB: So do I.\n\nA: I was tired yesterday.\nB: __________.\n\n<조건>\n• So로 시작할 것.\n• 빈칸에 들어갈 세 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "So was I",
+"solution": "상대방의 긍정문에 동의할 때는 'So + 조동사 또는 be동사 + 주어' 구문을 사용한다. 앞 문장이 과거시제이고 be동사 was를 사용했으므로 'So was I'가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-892c8ecfa4",
+"typeId": "eng-m3-b05-u6m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 알맞은 말을 쓰시오.\n\nMina didn't call Alex last night. Jinsu didn't call Alex, either.\n→ Mina didn't call Alex last night, and __________.\n\n<조건>\n• neither를 이용할 것.\n• 빈칸에 들어갈 세 단어만 쓸 것.",
+"selfGrade": true,
+"answer": "neither did Jinsu",
+"solution": "앞 문장의 부정 내용에 동의할 때는 'neither + 조동사 + 주어' 구문을 사용한다. 앞 문장의 일반동사 didn't call은 과거시제이므로 조동사 did를 사용한다. 따라서 정답은 'neither did Jinsu'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u6m7s0t0",
+"custom": true
+},
+{
+"id": "fill-beb42b1d9b",
+"typeId": "eng-m3-b05-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"reduce – 줄이다",
+"waste – 낭비하다",
+"prevent – 막다, 예방하다",
+"escape – 빠져나가다",
+"electricity – 온도"
+],
+"answer": "⑤",
+"solution": "electricity는 '전기'라는 뜻이다. '온도'를 뜻하는 단어는 temperature이다. 나머지 단어는 모두 우리말 뜻이 바르게 짝지어져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a7180c2e23",
+"typeId": "eng-m3-b05-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"save – waste",
+"heat – cool",
+"turn on – turn off",
+"reduce – decrease",
+"necessary – unnecessary"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 서로 뜻이 반대인 반의어 관계이다. ④의 reduce와 decrease는 둘 다 '줄이다'라는 뜻이어서 유의어 관계이다. 따라서 관계가 다른 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5f4f2b5549",
+"typeId": "eng-m3-b05-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPlease turn off the lights when you leave the room.\nDon't __________ electricity.",
+"choices": [
+"save",
+"waste",
+"charge",
+"prevent",
+"heat"
+],
+"answer": "②",
+"solution": "방을 나갈 때 불을 끄라고 했으므로 '전기를 낭비하지 마라'가 흐름에 맞다. 따라서 '낭비하다'라는 뜻의 waste가 알맞다. save(아끼다)를 넣으면 '전기를 아끼지 마라'가 되어 앞 문장과 뜻이 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6685ff0c1c",
+"typeId": "eng-m3-b05-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI heard someone ________ my name in the hallway.",
+"choices": [
+"① to call",
+"② called",
+"③ calling",
+"④ calls",
+"⑤ to calling"
+],
+"answer": "③",
+"solution": "hear는 지각동사이므로 「hear + 목적어 + 동사원형/현재분사」 형태로 씁니다. 목적어 someone이 이름을 부르는 동작을 직접 하고 있으므로 현재분사 calling이 알맞습니다. to부정사(to call)나 과거분사(called)는 이 자리에 올 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4680f12c4f",
+"typeId": "eng-m3-b05-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe soup was ________ hot that I couldn't eat it.",
+"choices": [
+"① very",
+"② so",
+"③ such",
+"④ too",
+"⑤ much"
+],
+"answer": "②",
+"solution": "「so + 형용사/부사 + that + 주어 + 동사」는 '너무 ~해서 …하다'라는 뜻입니다. 빈칸 뒤에 형용사 hot과 that절이 이어지므로 so가 알맞습니다. such는 「such (a/an) + 형용사 + 명사」 형태로 써야 하므로 형용사 hot 앞에는 올 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-243794e48c",
+"typeId": "eng-m3-b05-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장을 고르면?",
+"choices": [
+"① I saw a cat sleeping on the sofa.",
+"② She heard the baby crying.",
+"③ We watched the birds flying in the sky.",
+"④ He was so hungry that he ate two hamburgers.",
+"⑤ I felt the ground to shake."
+],
+"answer": "⑤",
+"solution": "feel은 지각동사이므로 목적격보어로 to부정사를 쓸 수 없고 동사원형이나 현재분사를 써야 합니다. 따라서 ⑤는 I felt the ground shake[shaking].으로 고쳐야 합니다. ①~③은 「지각동사 + 목적어 + 현재분사」를, ④는 「so + 형용사 + that」 구문을 바르게 썼습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-02f0ea58b2",
+"typeId": "eng-m3-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 어법상 알맞은 말을 고르면?\n\nWhen we arrived at the theater, the movie\n______________ already.\n\n* 우리가 도착했을 때는 이미 영화가 시작한 뒤였다.",
+"choices": [
+"starts",
+"is starting",
+"will start",
+"had started",
+"was start"
+],
+"answer": "④",
+"solution": "극장에 도착한 과거 시점(arrived)보다 영화가 시작한 것이 더 이전의 일이므로 과거완료 「had+과거분사」를 써야 한다. start의 과거분사는 started이므로 had started가 정답이다. 나머지는 현재·미래·틀린 형태라 과거보다 앞선 시점을 나타낼 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ca7238b36d",
+"typeId": "eng-m3-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 어법상 알맞은 말을 고르면?\n\nI was really ______________ at the beautiful view\nof the old palace.",
+"choices": [
+"amaze",
+"amazes",
+"amazing",
+"amazed",
+"to amaze"
+],
+"answer": "④",
+"solution": "사람이 어떤 감정을 '느끼는' 경우에는 과거분사형(-ed) 형용사를 쓴다. 주어 I가 놀라움을 느끼는 것이므로 amazed가 알맞다. amazing은 '놀라움을 주는'이라는 뜻으로 사물·대상을 꾸밀 때 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6ff16447e6",
+"typeId": "eng-m3-b05-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 어색한 것은?\n\nLast summer, my family ⓐwent to Gyeongju. We\nⓑvisited many old temples there. Before that trip, I\nⓒhad never ⓓsee such beautiful buildings. It ⓔwas\na really wonderful trip.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "④",
+"solution": "ⓒ had never 뒤에는 과거분사가 와야 과거완료 「had+과거분사」가 완성된다. 따라서 ⓓ see는 과거분사 seen으로 고쳐야 한다. 나머지 went, visited, had, was는 모두 과거 시제로 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a419f8a235",
+"typeId": "eng-m3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 내용과 일치하는 것은?\n\nRyan gave me a piece of advice: \"Try to understand your group members first.\" So I watched my group members carefully. Lina was an expert on Japanese culture. We decided to write about world culture, and our newspaper got an A+.",
+"choices": [
+"Ryan은 나에게 아무런 조언도 해 주지 않았다.",
+"나는 모둠원들을 주의 깊게 관찰했다.",
+"Lina는 중국 문화에 관한 전문가였다.",
+"우리는 한국 역사에 대해 쓰기로 했다.",
+"우리 신문은 B 학점을 받았다."
+],
+"answer": "②",
+"solution": "글에서 \"I watched my group members carefully\"라고 했으므로 ②가 일치한다. Ryan은 조언을 해 주었고(①), Lina는 일본 문화 전문가였으며(③), 주제는 세계 문화였고(④), 신문은 A+를 받았다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5a67232de1",
+"typeId": "eng-m3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 내용으로 보아 Inho에 대한 설명으로 알맞은 것은?\n\nInho's Korean sounded a bit different because he lived in Argentina when he was young. He knew a lot about Argentina and its soccer.",
+"choices": [
+"Inho는 어렸을 때 일본에서 살았다.",
+"Inho는 축구에 전혀 관심이 없었다.",
+"Inho는 어렸을 때 아르헨티나에서 살았다.",
+"Inho의 영어 발음이 조금 달랐다.",
+"Inho는 베트남의 역사를 잘 알았다."
+],
+"answer": "③",
+"solution": "글에서 \"he lived in Argentina when he was young\"이라고 했으므로 ③이 알맞다. Inho는 한국어 발음이 달랐고(④), 아르헨티나와 그 축구에 대해 잘 알았다(②).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9a18b6a04e",
+"typeId": "eng-m3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글을 읽고 Min에 대해 알 수 있는 것은?\n\nMin's mom was Vietnamese, and Min used to spend some time in Vietnam. He read a lot of history books and loved to talk about Vietnam and its history.",
+"choices": [
+"Min의 엄마는 일본 사람이었다.",
+"Min은 베트남에서 시간을 보낸 적이 있다.",
+"Min은 만화책을 많이 읽었다.",
+"Min은 역사에 관심이 없었다.",
+"Min은 아르헨티나 축구를 좋아했다."
+],
+"answer": "②",
+"solution": "글에서 \"Min used to spend some time in Vietnam\"이라고 했으므로 ②가 알맞다. Min의 엄마는 베트남 사람이었고(①), 역사책을 많이 읽으며 베트남 역사를 이야기하길 좋아했다(③④). 만화책은 Lina, 아르헨티나 축구는 Inho와 관련된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2eb4e05e99",
+"typeId": "eng-m3-b05-u7m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"punish - 벌주다",
+"argue - 논쟁하다, 주장하다",
+"dwell - 살다, 거주하다",
+"mysterious - 신비한, 불가사의한",
+"adopt - 적응하다"
+],
+"answer": "⑤",
+"solution": "adopt는 '채택하다, 입양하다'라는 뜻이다. '적응하다'는 철자가 비슷한 adapt의 뜻이므로 헷갈리지 않도록 주의한다. 나머지는 모두 뜻이 바르게 짝지어져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-cd16cc8db5",
+"typeId": "eng-m3-b05-u7m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe police will ______ the man for breaking the law.",
+"choices": [
+"punish",
+"adopt",
+"dwell",
+"explain",
+"surprise"
+],
+"answer": "①",
+"solution": "'법을 어긴 것 때문에 그 남자를 ~할 것이다'라는 문장이므로 '벌주다'라는 뜻의 punish가 알맞다. 'punish A for B'는 'B 때문에 A를 벌주다'라는 뜻이다. dwell(살다)은 목적어를 바로 취하지 않고, adopt·explain·surprise는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-12f75622be",
+"typeId": "eng-m3-b05-u7m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어를 주어진 철자로 시작하여 쓰시오.\n\nto speak angrily to someone because you disagree with him or her\n\n→ a__________",
+"selfGrade": true,
+"answer": "argue",
+"solution": "'의견이 달라서 누군가에게 화를 내며 말하다'라는 뜻이므로 '논쟁하다, 다투다'라는 뜻의 argue가 알맞다. argue의 명사형은 argument이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2c56924ccd",
+"typeId": "eng-m3-b05-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"① harmful: 해로운",
+"② relieved: 안도하는",
+"③ confused: 혼란스러운",
+"④ expert: 전문가",
+"⑤ opinion: 감정"
+],
+"answer": "⑤",
+"solution": "opinion은 '의견'이라는 뜻이므로 ⑤의 '감정'은 틀렸다. 나머지 harmful(해로운), relieved(안도하는), confused(혼란스러운), expert(전문가)는 모두 바르게 짝지어졌다. 따라서 정답은 ⑤.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c5309295c4",
+"typeId": "eng-m3-b05-u4m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오. (답은 서로 중복되지 않음)\n\n<보기>\nforget / emergency / opinion / score\n\n(1) In an __________, you should call 119.\n(2) Don't __________ to bring your umbrella.",
+"selfGrade": true,
+"answer": "(1) emergency (2) forget",
+"solution": "(1) '응급 상황에서는 119에 전화해야 한다'는 뜻이므로 emergency(응급 상황)가 알맞다. (2) '우산 가져오는 것을 잊지 마라'는 뜻이므로 forget(잊다)이 알맞다. opinion(의견)과 score(점수)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ba9736d042",
+"typeId": "eng-m3-b05-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 '눈에 띄다'라는 뜻을 가진 표현은?",
+"choices": [
+"① fit in",
+"② stand out",
+"③ care for",
+"④ get along with",
+"⑤ pay attention to"
+],
+"answer": "②",
+"solution": "stand out이 '눈에 띄다, 두드러지다'라는 뜻이다. fit in은 '어울리다', care for는 '~을 돌보다', get along with는 '~와 잘 지내다', pay attention to는 '~에 집중하다'이므로 정답은 ②.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8cbaef98e6",
+"typeId": "eng-m3-b05-u4m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 (1)~(4)의 빈칸에 들어갈 단어를 <보기>에서 골라 문맥에 맞게 알맞은 형태로 바꿔 쓰시오. (한 단어는 쓰이지 않으며, 답은 중복되지 않음)\n\n<보기>\nshare / harm / confuse / relieve / attention\n\n(1) Eating too much fast food can be __________ to your health.\n(2) Everyone was __________ by the complicated rules of the new game.\n(3) My parents were __________ to hear that I arrived home safely.\n(4) Please pay __________ to the safety rules before the trip.",
+"selfGrade": true,
+"answer": "(1) harmful (2) confused (3) relieved (4) attention",
+"solution": "(1) 'be동사+to your health'와 어울리며 '해로운'의 뜻이 되어야 하므로 harm을 형용사 harmful로 바꾼다. (2) '~에 의해 혼란스러워진'의 수동 의미이므로 confuse를 과거분사형 형용사 confused로 쓴다. (3) '안도한'의 뜻이므로 relieve를 relieved로 쓴다. (4) 'pay __________ to'는 '~에 집중하다'라는 표현으로 명사 attention이 들어간다. share는 쓰이지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-939cc24ed6",
+"typeId": "eng-m3-b05-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\n__________ these highways, we may be able to travel further into space.",
+"choices": [
+"Follow",
+"Follows",
+"Followed",
+"Following",
+"Is following"
+],
+"answer": "④",
+"solution": "쉼표 뒤에 주어 we와 동사가 있는 완전한 절이 나오므로, 앞부분은 분사구문이어야 합니다. 주어 we가 고속도로를 '따라가는' 능동의 관계이므로 현재분사 Following을 씁니다. 원래 문장 If we follow these highways에서 접속사와 주어를 빼고 동사를 -ing 형태로 바꾼 것입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-941418058d",
+"typeId": "eng-m3-b05-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nI want to know __________.",
+"choices": [
+"how old is the Greenland shark",
+"how old the Greenland shark is",
+"how the Greenland shark is old",
+"the Greenland shark how old is",
+"how old does the Greenland shark is"
+],
+"answer": "②",
+"solution": "의문문이 문장의 목적어로 들어가는 간접의문문은 「의문사 + 주어 + 동사」의 순서로 씁니다. how old가 하나의 의문사 역할을 하므로 how old 뒤에 주어 the Greenland shark와 동사 is를 차례로 씁니다. ①은 의문문 어순을 그대로 둔 것이고, ③은 how와 old를 떼어 놓은 것이므로 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1b9a2a2389",
+"typeId": "eng-m3-b05-u5m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 알맞은 것은?\n\nOn the zero gravity paths, spaceships will be able to fly not only faster __________ more efficiently.",
+"choices": [
+"and",
+"or",
+"but also",
+"so",
+"nor"
+],
+"answer": "③",
+"solution": "'A뿐만 아니라 B도'라는 뜻은 「not only A but also B」로 나타냅니다. 이 문장에서는 not only 뒤에 faster가 오므로 빈칸에는 but also가 들어가야 합니다. A와 B 자리에는 faster, more efficiently처럼 같은 품사(부사)가 옵니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2fb1eea3cf",
+"typeId": "eng-m3-b05-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 의미로 알맞은 것은?\n\nEunchong's dad thanked his son for teaching him an important life lesson.\n\nlesson: ______",
+"choices": [
+"① 여행",
+"② 교훈",
+"③ 질병",
+"④ 용기",
+"⑤ 도전"
+],
+"answer": "②",
+"solution": "'lesson'은 '수업' 또는 '교훈'이라는 뜻이다. 문장에서 'an important life lesson'은 '중요한 인생의 교훈'을 의미한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3c6df0025c",
+"typeId": "eng-m3-b05-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 두 단어의 의미가 서로 반대인 것은?",
+"choices": [
+"① courage - bravery",
+"② sickness - disease",
+"③ happy - sad",
+"④ difficult - hard",
+"⑤ journey - trip"
+],
+"answer": "③",
+"solution": "'happy'는 '행복한', 'sad'는 '슬픈'이라는 뜻으로 서로 반의어 관계이다. 나머지 선택지의 단어들은 모두 의미가 비슷한 유의어 관계이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-15668889c8",
+"typeId": "eng-m3-b05-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nMany people cheered for Eunchong and his dad during the race. They wanted to ______ them.",
+"choices": [
+"① avoid",
+"② blame",
+"③ hide",
+"④ encourage",
+"⑤ endure"
+],
+"answer": "④",
+"solution": "'cheer for'는 '응원하다'라는 뜻이므로 빈칸에는 '격려하다, 용기를 북돋우다'라는 뜻의 'encourage'가 알맞다. 다른 선택지들은 각각 '피하다', '비난하다', '숨기다', '견디다'라는 뜻으로 문맥에 맞지 않는다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u2m0s0t0",
+"custom": true
 }
 ]

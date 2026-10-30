@@ -3811,5 +3811,458 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-2ed5baf7e9",
+"typeId": "eng-m3-b11-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"She has been waiting for the bus for 30 minutes.",
+"They have been play soccer since noon.",
+"He has been knowing the answer for a long time.",
+"I have been studying English since three years.",
+"We are been cleaning the room for an hour."
+],
+"answer": "①",
+"solution": "현재완료진행형은 「have/has been + 동사원형-ing」 형태이므로 ①이 알맞다. ②는 play를 playing으로 고쳐야 하고, ③의 know는 상태를 나타내는 동사라 진행형으로 쓰지 않으므로 has known으로 고쳐야 한다. ④는 기간(three years) 앞이므로 since를 for로, ⑤는 are를 have로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2ed5baf7e9",
+"typeId": "eng-m3-b11-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"The movie was so bored that I fell asleep.",
+"He ran so fastly that he won the race.",
+"It was so cold that we stayed home.",
+"The box was too heavy that I couldn't lift it.",
+"She was so tired what she went to bed early."
+],
+"answer": "③",
+"solution": "「so + 형용사/부사 + that + 주어 + 동사」는 '너무 ~해서 …하다'라는 뜻으로, ③이 바르게 쓰였다. ①은 영화가 지루함을 주는 것이므로 bored를 boring으로, ②는 fast가 부사로도 쓰이므로 fastly를 fast로 고쳐야 한다. ④는 too를 so로, ⑤는 what을 that으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e9a7d0b3d1",
+"typeId": "eng-m3-b11-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"I have lived here since 2020.",
+"He has been reading for two hours.",
+"It has been raining since this morning.",
+"They have been talking on the phone since an hour.",
+"We have known each other for ten years."
+],
+"answer": "④",
+"solution": "for 뒤에는 기간(two hours, ten years)이 오고, since 뒤에는 시작 시점(2020, this morning)이 온다. ④의 an hour는 기간이므로 since를 for로 고쳐야 한다. 나머지 문장은 모두 어법상 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f155c9cfce",
+"typeId": "eng-m3-b11-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 알맞은 문장의 개수는?\n\nⓐ Mina has been practicing the piano since she was ten.\nⓑ The news was so surprising that everyone was shocked.\nⓒ The soup was too hot for me to eat it.\nⓓ I have been owning this bike for five years.\nⓔ She spoke so quietly that I couldn't hear her.\nⓕ How long have you been waited here?\nⓖ The bag was light enough for me to carry.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "ⓐ(since + 절), ⓑ(so + 형용사 + that), ⓔ(so + 부사 + that), ⓖ(형용사 + enough + for 의미상 주어 + to부정사)는 어법상 알맞아서 모두 4개다. ⓒ는 문장의 주어(The soup)가 to eat의 목적어와 같으므로 목적어 it을 빼야 한다. ⓓ의 own은 소유를 나타내는 상태 동사라 진행형으로 쓸 수 없으므로 have owned로 고쳐야 한다. ⓕ는 현재완료진행형이므로 waited를 waiting으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d274268aa7",
+"typeId": "eng-m3-b11-u5m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n네가 나를 도와주다니 친절하구나.\n(kind / you / of / to / help / is / it / me)\n\n→ ______________________________________.",
+"selfGrade": true,
+"answer": "It is kind of you to help me.",
+"solution": "'~하다니 …하구나'는 가주어 It과 진주어 to부정사를 써서 'It is+형용사+of+의미상 주어+to부정사'로 나타냅니다. kind처럼 사람의 성격이나 태도를 나타내는 형용사 뒤에는 의미상 주어 앞에 for가 아니라 of를 씁니다. 따라서 It is kind of you to help me.가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-9fa8fe1da6",
+"typeId": "eng-m3-b11-u5m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n만약 내가 새라면, 나는 하늘을 날 수 있을 텐데.\n(I / a bird / could / were / I / if / fly)\n\n→ ______________________________________ in the sky.",
+"selfGrade": true,
+"answer": "If I were a bird, I could fly in the sky.",
+"solution": "현재 사실과 반대되는 일을 가정할 때는 가정법 과거 'If+주어+동사의 과거형, 주어+조동사의 과거형+동사원형'을 씁니다. 가정법 과거에서 be동사는 주어와 상관없이 were를 쓰므로 If I were a bird가 됩니다. 주절에는 could fly를 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-333b13da28",
+"typeId": "eng-m3-b11-u5m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n이것은 마을 사람들이 그들의 아이들에게 들려주는 이야기이다.\n(the story / is / the villagers / that / this / tell)\n\n→ ______________________________________ their children.",
+"selfGrade": true,
+"answer": "This is the story that the villagers tell their children.",
+"solution": "'마을 사람들이 들려주는'이 '이야기'를 꾸며 주므로 선행사 the story 뒤에 목적격 관계대명사 that을 씁니다. 관계대명사 뒤에는 '주어(the villagers)+동사(tell)'가 오고, tell의 목적어 자리는 관계대명사 that이 대신하므로 비어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-08ec9af4ac",
+"typeId": "eng-m3-b11-u5m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 밑줄 친 상황과 반대되는 내용을 가정하는 문장을 <조건>에 맞게 영어로 쓰시오.\n\nIn the past, the small number of cows on the commons always found something to eat, even in a dry year. However, this time, no grass was left because there were too many cows. Many of the cows died, and things were harsh for the villagers.\n\n<조건>\n• 가정법 과거를 사용할 것\n• 'there'로 시작하는 표현을 if절에 쓸 것\n• 괄호 안의 표현을 모두 활용할 것 (필요시 변형 가능)\n  (too many cows, some grass, be left)\n• 축약형을 쓰지 말고 총 12단어로 쓸 것\n\n밑줄: no grass was left because there were too many cows\n\n→ 만약 소가 너무 많지 않다면, 약간의 풀이 남아 있을 텐데.\n→ ______________________________________________",
+"selfGrade": true,
+"answer": "If there were not too many cows, some grass would be left.",
+"solution": "현재 사실(소가 너무 많아 풀이 남지 않음)과 반대되는 내용을 가정하므로 가정법 과거 'If+주어+과거동사, 주어+would+동사원형'을 씁니다. 여기서는 there 구문을 써야 하므로 if절은 If there were not too many cows가 되고, 주절의 be left는 would be left로 바꿉니다. 함정은 두 가지입니다. if절에 are를 쓰면 가정법이 되지 않고, 축약형 weren't를 쓰면 11단어가 되어 조건을 어기게 됩니다. would 대신 could를 쓴 답도 맞는 답으로 인정할 수 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m5s0t0",
+"custom": true
+},
+{
+"id": "fill-e804f81c95",
+"typeId": "eng-m3-b11-u4m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말 의미가 되도록 괄호 안의 단어를 이용하여 빈칸을 완성하시오.\n\n내가 극장에 도착하기 전에, 그 영화는 이미 시작했다.\n→ Before I got to the theater, the movie ______________________. (already, start)",
+"selfGrade": true,
+"answer": "had already started",
+"solution": "과거의 어느 시점(극장에 도착한 때)보다 더 이전에 일어난 일을 나타내므로 과거완료 「had + 과거분사」를 쓴다. start의 과거분사는 started이고, '이미'를 뜻하는 already는 had와 과거분사 사이에 넣는다. 따라서 had already started가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-608e634c23",
+"typeId": "eng-m3-b11-u4m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nShe lost the watch that her father ______ her the year before.",
+"choices": [
+"gives",
+"gave",
+"gives to",
+"had given",
+"is giving"
+],
+"answer": "④",
+"solution": "시계를 잃어버린 것(lost, 과거)보다 아버지가 시계를 준 것이 더 먼저 일어난 일이므로, 더 이전의 과거를 나타내는 과거완료 「had + 과거분사」가 알맞다. give의 과거분사는 given이므로 had given이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-503f646c18",
+"typeId": "eng-m3-b11-u4m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말 의미에 맞도록 빈칸에 알맞은 한 단어를 쓰시오.\n\n한국은 1945년에 일본으로부터 독립을 이루었다.\n→ Korea achieved ________________ from Japan in 1945.",
+"selfGrade": true,
+"answer": "independence",
+"solution": "'독립'을 뜻하는 명사는 independence이다. 본문의 'Korea achieved independence from Japan'(한국이 일본으로부터 독립을 이루었다)과 같은 표현이다. 철자(indepen-dence)에 유의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8f8ccf65fd",
+"typeId": "eng-m3-b11-u4m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 <조건>에 맞게 주어진 단어를 활용하여 우리말 의미에 맞도록 빈칸을 완성하시오.\n\n<조건>\n1. 과거완료 수동태를 반드시 사용할 것\n2. 단어의 형태를 알맞게 바꿀 것\n\n나는 그 시가 여러 해 전에 이미 쓰였다는 것을 알지 못했다. (know, not / already, write)\n→ I ______________________ that the poem ______________________ many years before.",
+"selfGrade": true,
+"answer": "didn't[did not] know / had already been written",
+"solution": "'알지 못했다'는 단순 과거 부정이므로 didn't know로 쓴다. '이미 쓰였다'는 알지 못한 시점보다 더 이전의 일이면서 시가 '쓰여진' 것이므로 과거완료 수동태 「had + been + 과거분사」를 쓴다. write의 과거분사는 written이고 already는 had와 been 사이에 넣어 had already been written이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-548b016318",
+"typeId": "eng-m3-b11-u7m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"calm – 침착한",
+"ashamed – 부끄러운",
+"cheerful – 쾌활한",
+"nervous – 긴장한",
+"scared – 지루한"
+],
+"answer": "⑤",
+"solution": "scared는 '겁먹은, 무서워하는'이라는 뜻이므로 '지루한'과 짝지은 ⑤가 틀렸다. '지루한'은 bored이다. 나머지 ①~④는 뜻이 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-86ffd0985a",
+"typeId": "eng-m3-b11-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장의 의미가 통하도록 빈칸에 알맞은 말을 쓰시오.\n\nI regret that I did not bring an umbrella.\n→ I __________ __________ __________ an umbrella.",
+"selfGrade": true,
+"answer": "should have brought",
+"solution": "'~했어야 했는데 (하지 않아 후회한다)'는 「should have + 과거분사」로 쓴다. regret that I did not bring을 바꾸면 should have brought가 된다. bring의 과거분사는 brought이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-065e4b8b0f",
+"typeId": "eng-m3-b11-u7m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI have a sister, ______ lives in Busan.",
+"choices": [
+"that",
+"what",
+"who",
+"which",
+"whom"
+],
+"answer": "③",
+"solution": "콤마 뒤에서 앞의 사람(a sister)을 보충 설명하는 계속적 용법이며, 관계사가 뒤 절의 주어 역할을 한다. 사람을 받으면서 주격으로 쓰는 who가 알맞다. 계속적 용법에는 that을 쓸 수 없고, which는 사물을 받는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d8fd86d966",
+"typeId": "eng-m3-b11-u7m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?",
+"choices": [
+"너는 그 편지를 보냈어야 했다. → You should sent have the letter.",
+"나는 삼촌이 한 분 계신데, 캐나다에 사신다. → I have an uncle, that lives in Canada.",
+"그녀는 그렇게 말하지 말았어야 했다. → She should not have said that.",
+"Edison은 발명가였는데, 전구를 발명했다. → Edison was an inventor, which invented the light bulb.",
+"우리는 더 일찍 떠났어야 했다. → We must have left earlier."
+],
+"answer": "③",
+"solution": "③은 「should not have + 과거분사」가 '~하지 말았어야 했다'를 바르게 나타낸다. ①은 어순이 틀려 should have sent여야 한다. ②는 계속적 용법에 that을 쓸 수 없어 who로 고쳐야 한다. ④는 사람(inventor)을 받으므로 which가 아니라 who가 맞다. ⑤의 must have p.p.는 '분명 ~했을 것이다'라는 추측이어서 '~했어야 했다'와 뜻이 다르며 should have left가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-30afc8485d",
+"typeId": "eng-m3-b11-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI heard someone ________ my name from the hallway.",
+"choices": [
+"calls",
+"called",
+"to call",
+"calling to",
+"call"
+],
+"answer": "⑤",
+"solution": "지각동사 hear는 목적격보어로 동사원형을 취한다. heard someone 다음에는 to부정사나 3인칭 단수형이 아니라 동사원형 call이 와야 한다. 따라서 ⑤ call이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-dd0fb40c82",
+"typeId": "eng-m3-b11-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\n________ he really wants is a quiet weekend.",
+"choices": [
+"That",
+"Which",
+"Who",
+"What",
+"Whose"
+],
+"answer": "④",
+"solution": "빈칸 앞에 꾸며 줄 선행사(명사)가 없고 '그가 정말로 원하는 것'이라는 명사절이 필요하므로 선행사를 포함하는 관계대명사 what을 써야 한다. that은 선행사가 있어야 하므로 쓸 수 없다. 따라서 ④ What이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2faa85bc36",
+"typeId": "eng-m3-b11-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: This song is really amazing!\nB: You can ________ that again.",
+"choices": [
+"say",
+"tell",
+"talk",
+"speak",
+"call"
+],
+"answer": "①",
+"solution": "'You can say that again.'은 상대방의 말에 강하게 동의할 때 쓰는 표현으로 '정말 그래, 네 말이 맞아'라는 뜻이다. tell, talk, speak, call은 이 관용 표현에 쓰이지 않는다. 따라서 ① say가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-58609d2dd0",
+"typeId": "eng-m3-b11-u0m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ 중 어법상 옳은 문장의 개수는?\n\nⓐ I felt someone touch my shoulder.\nⓑ What he said made everyone angry.\nⓒ This is the house that I was born.\nⓓ They watched the players to practice.\nⓔ Please tell me that you want for your birthday.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "ⓐ는 지각동사 felt의 목적격보어로 동사원형 touch가 와서 옳다. ⓑ는 선행사 없는 명사절을 이끄는 what이 바르게 쓰여 옳다. ⓒ는 '태어난 집'이므로 that이 아니라 where(또는 in which)가 필요해 틀리다. ⓓ는 지각동사 watched 다음에 동사원형 practice가 와야 하므로 틀리다. ⓔ는 '네가 원하는 것'이라는 명사절이므로 that이 아니라 what을 써야 하므로 틀리다. 따라서 옳은 문장은 ⓐ, ⓑ 두 개로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-547475a64b",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nWhen we read literature, we can meet the ideas of great writers who lived long ago. We can even imagine being someone else or living in a completely different place. In this way, literature opens up for us new worlds that we have never visited before.",
+"choices": [
+"문학은 우리에게 새로운 세계를 열어 준다",
+"문학은 반드시 혼자서 읽어야 한다",
+"위대한 작가는 모두 오래전에 살았다",
+"여행은 독서보다 더 중요하다",
+"소설은 시보다 읽기 쉽다"
+],
+"answer": "①",
+"solution": "글은 문학을 읽으면 위대한 작가의 생각을 만나고 다른 사람이나 다른 장소를 상상할 수 있다고 하며, 마지막 문장에서 '문학은 우리가 가 보지 못한 새로운 세계를 열어 준다'고 요약한다. 따라서 주제는 ①이다. 나머지 선지는 글에 없는 내용이거나 지엽적이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4270723ccb",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nDong-ju and his cousin went to study in Japan in 1942. Later they were arrested by the Japanese police for taking part in an independence movement. In 1945, they died in prison after harsh treatment. Just a few months later, Korea achieved independence from Japan.",
+"choices": [
+"Yun Dong-ju's Sad Days During Japan's Rule",
+"How to Learn Japanese Easily",
+"The History of Modern Painting",
+"A Trip to Japan with My Family",
+"The Best Poems of the World"
+],
+"answer": "①",
+"solution": "글은 동주와 사촌이 일본에서 공부하다가 독립운동 가담으로 체포되어 감옥에서 죽은 슬픈 일제강점기 이야기를 담고 있다. 따라서 제목으로는 ①이 가장 알맞다. 나머지는 글의 내용과 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8da93c6d7b",
+"typeId": "eng-m3-b11-u4m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nPeople enjoy different kinds of literature. Some like poems, and others like novels or cartoons. People differ in which kind they prefer, but all of them let us go beyond our own small world.",
+"choices": [
+"사람마다 좋아하는 문학의 종류는 다르지만, 문학은 모두 우리를 넓은 세계로 이끈다",
+"만화는 문학이 아니다",
+"시를 좋아하는 사람이 가장 많다",
+"문학은 어린이만 즐길 수 있다",
+"소설은 반드시 길어야 한다"
+],
+"answer": "①",
+"solution": "글은 사람마다 선호하는 문학의 종류(시·소설·만화)는 다르지만, 그 모두가 우리를 작은 세계 너머로 데려간다고 말한다. 따라서 요지는 ①이다. 나머지 선지는 글에 없거나 사실과 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-15c199f7b0",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI wonder ______ the market is open on Sundays.\n(나는 그 시장이 일요일에 문을 여는지 궁금하다.)",
+"choices": [
+"that",
+"which",
+"whether",
+"what",
+"where"
+],
+"answer": "③",
+"solution": "'~인지 (아닌지)'라는 뜻으로 wonder의 목적어 역할을 하는 명사절을 이끄는 말이 필요합니다. 이 자리에는 whether(또는 if)가 들어갑니다. that은 확실한 사실을, which·what·where는 문맥상 맞지 않으므로 정답은 ③ whether입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-347e98b792",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 관계부사는?\n\nThis is the market ______ I bought the flowers.\n(이곳은 내가 그 꽃들을 산 시장이다.)",
+"choices": [
+"when",
+"where",
+"which",
+"why",
+"who"
+],
+"answer": "②",
+"solution": "선행사 the market이 '장소'를 나타내고, 빈칸 뒤에 완전한 절이 이어지므로 장소를 나타내는 관계부사 where가 알맞습니다. when은 시간, why는 이유에 쓰이고, which·who는 관계대명사라 뒤에 불완전한 절이 와야 하므로 정답은 ② where입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7084325854",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같도록 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.\n\n나는 그를 처음 만난 날을 기억한다.\nI remember the day ______ I met him for the first time.",
+"selfGrade": true,
+"answer": "when",
+"solution": "선행사 the day가 '시간'을 나타내고 빈칸 뒤에 완전한 절이 오므로, 시간을 나타내는 관계부사 when이 알맞습니다. on which로도 바꿔 쓸 수 있지만 한 단어로 쓰라고 했으므로 when입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7f694aec8c",
+"typeId": "eng-m3-b11-u3m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 상황을 읽고, <조건>에 맞게 빈칸 (1), (2)를 완성하시오.\n\n상황: Mina는 터키의 Grand Bazaar에 가고 싶어 한다. 그곳은 동양과 서양이 만나는 시장이다. 하지만 그녀는 그 시장이 일요일에 문을 여는지 궁금하다.\n\n<조건>\n- (1)에는 관계부사 where를 사용할 것\n- (2)에는 if 또는 whether를 사용한 명사절을 쓸 것\n- 괄호 안의 단어를 모두 사용하고, 필요시 형태를 바꿀 것\n\nMina wants to visit the Grand Bazaar, (1)______________________________ (East, meet, West). However, she wonders (2)______________________________ (the market, open, on Sundays).",
+"selfGrade": true,
+"answer": "(1) where East meets West (2) if[whether] the market is open on Sundays",
+"solution": "(1) 선행사 the Grand Bazaar(장소)를 꾸미고 뒤에 완전한 절이 오므로 관계부사 where를 쓰고, 주어 East에 맞춰 동사를 meets로 바꿔 'where East meets West'로 씁니다. (2) wonders의 목적어가 되는 명사절이 '~인지 (아닌지)'의 뜻이므로 if 또는 whether로 시작하고, the market을 주어로 하여 'if[whether] the market is open on Sundays'로 완성합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u3m6s0t0",
+"custom": true
 }
 ]

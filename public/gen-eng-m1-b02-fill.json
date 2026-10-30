@@ -2925,5 +2925,94 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b02-u7m2s0t0",
 "custom": true
+},
+{
+"id": "fill-c2cf4c9adc",
+"typeId": "eng-m1-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"stairs – 계단",
+"burn – 화상",
+"safety – 안전",
+"shake – 흔들리다",
+"dangerous – 안전한"
+],
+"answer": "⑤",
+"solution": "dangerous는 '위험한'이라는 뜻이고, '안전한'은 safe입니다. 나머지 stairs(계단), burn(화상), safety(안전), shake(흔들리다)는 뜻이 바르게 짝지어져 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-847f052807",
+"typeId": "eng-m1-b02-u1m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 의미가 되도록 괄호 안에 주어진 단어를 알맞은 형태로 바꾸어 빈칸을 완성하시오.\n\n엘리베이터가 많이 흔들리고 있다. (shake)\n→ The elevator ___________ ___________ a lot.",
+"selfGrade": true,
+"answer": "is shaking",
+"solution": "'~하고 있다'는 현재진행형 「be동사 + 동사원형-ing」로 나타냅니다. 주어 The elevator가 3인칭 단수이므로 be동사는 is를 씁니다. shake는 끝의 e를 빼고 -ing를 붙여 shaking이 되므로 정답은 is shaking입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a66802b574",
+"typeId": "eng-m1-b02-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말과 같은 의미가 되도록 빈칸에 들어갈 알맞은 말을 고르시오.\n\n비상 상황에 대비하라.\n→ Be ___________ for emergencies.",
+"choices": [
+"safe",
+"cool",
+"ready",
+"down",
+"off"
+],
+"answer": "③",
+"solution": "'~에 대비하다, ~할 준비가 되다'는 be ready for로 나타냅니다. 따라서 빈칸에는 ready가 알맞습니다. safe는 '안전한', cool은 '시원한, 식히다'라는 뜻이라 문장의 의미와 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d03f980fa4",
+"typeId": "eng-m1-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\nsmall files that websites store on your computer",
+"choices": [
+"cookies",
+"footprints",
+"comments",
+"accounts",
+"homework"
+],
+"answer": "①",
+"solution": "웹사이트가 사용자의 컴퓨터에 저장하는 작은 파일은 'cookies(쿠키)'이다. 본문에서 \"cookies are small files\"라고 설명하고 있다. 나머지 단어는 발자국, 댓글, 계정, 숙제의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c4d3603701",
+"typeId": "eng-m1-b02-u5m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻의 연결이 바르지 않은 것은?",
+"choices": [
+"store: 저장하다",
+"address: 주소",
+"regularly: 규칙적으로",
+"print: 인쇄하다",
+"forget: 기억하다"
+],
+"answer": "⑤",
+"solution": "'forget'은 '잊다, 잊어버리다'라는 뜻이다. '기억하다'는 'remember'이다. 나머지 단어의 뜻 연결은 모두 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u5m7s0t0",
+"custom": true
 }
 ]

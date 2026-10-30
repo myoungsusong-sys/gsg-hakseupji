@@ -1220,5 +1220,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-12-u0m0s1t0",
 "custom": true
+},
+{
+"id": "fill-236e2cc053",
+"typeId": "set2-alg-12-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합 $S_n$이\n$S_n=n^2+2n$\n일 때, $\\displaystyle\\sum_{k=4}^{7}a_k$의 값은?",
+"choices": [
+"$40$",
+"$44$",
+"$48$",
+"$52$",
+"$56$"
+],
+"answer": "③",
+"solution": "$\\displaystyle\\sum_{k=4}^{7}a_k=S_7-S_3$입니다. $S_7=49+14=63$이고 $S_3=9+6=15$입니다. 따라서 구하는 값은 $63-15=48$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-7270a883d4",
+"typeId": "set2-alg-12-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$에 대하여 모든 자연수 $n$에 대해\n$\\displaystyle\\sum_{k=1}^{n}a_k=n^2+n$\n이 성립할 때, $a_8$의 값은?",
+"choices": [
+"$10$",
+"$12$",
+"$14$",
+"$16$",
+"$18$"
+],
+"answer": "④",
+"solution": "$S_n=\\displaystyle\\sum_{k=1}^{n}a_k=n^2+n$이라 하면 $a_8=S_8-S_7$입니다. $S_8=64+8=72$이고 $S_7=49+7=56$입니다. 따라서 $a_8=72-56=16$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-59091e50e6",
+"typeId": "set2-alg-12-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합 $S_n$이\n$S_n=3n^2-2n$\n일 때, $\\displaystyle\\sum_{k=6}^{10}a_k$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$215$",
+"solution": "$\\displaystyle\\sum_{k=6}^{10}a_k=S_{10}-S_5$입니다. $S_{10}=300-20=280$이고 $S_5=75-10=65$입니다. 따라서 구하는 값은 $280-65=215$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-1012cfabfb",
+"typeId": "set2-alg-12-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{10}\\frac{1}{k(k+1)}$의 값은?",
+"choices": [
+"$\\dfrac{9}{10}$",
+"$\\dfrac{10}{11}$",
+"$\\dfrac{11}{12}$",
+"$1$",
+"$\\dfrac{12}{11}$"
+],
+"answer": "②",
+"solution": "$\\dfrac{1}{k(k+1)}=\\dfrac{1}{k}-\\dfrac{1}{k+1}$로 부분분수 분해한다. 따라서 합은 $\\left(1-\\dfrac12\\right)+\\left(\\dfrac12-\\dfrac13\\right)+\\cdots+\\left(\\dfrac{1}{10}-\\dfrac{1}{11}\\right)$로 중간 항이 모두 소거된다. 결국 $1-\\dfrac{1}{11}=\\dfrac{10}{11}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-0ef16b445e",
+"typeId": "set2-alg-12-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{15}\\frac{1}{\\sqrt{k}+\\sqrt{k+1}}$의 값은?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$4-\\sqrt2$",
+"$2\\sqrt3$"
+],
+"answer": "②",
+"solution": "분모를 유리화하면 $\\dfrac{1}{\\sqrt{k}+\\sqrt{k+1}}=\\dfrac{\\sqrt{k+1}-\\sqrt{k}}{(k+1)-k}=\\sqrt{k+1}-\\sqrt{k}$이다. 따라서 합은 $(\\sqrt2-\\sqrt1)+(\\sqrt3-\\sqrt2)+\\cdots+(\\sqrt{16}-\\sqrt{15})$로 소거되어 $\\sqrt{16}-\\sqrt{1}=4-1=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-dbe0a97f46",
+"typeId": "set2-alg-12-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\displaystyle\\sum_{k=1}^{5}\\frac{1}{(2k-1)(2k+1)}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{5}{11}$",
+"solution": "$\\dfrac{1}{(2k-1)(2k+1)}=\\dfrac12\\left(\\dfrac{1}{2k-1}-\\dfrac{1}{2k+1}\\right)$로 부분분수 분해한다. 합은 $\\dfrac12\\left(1-\\dfrac13+\\dfrac13-\\dfrac15+\\cdots+\\dfrac19-\\dfrac{1}{11}\\right)$로 중간 항이 소거되어 $\\dfrac12\\left(1-\\dfrac{1}{11}\\right)=\\dfrac12\\cdot\\dfrac{10}{11}=\\dfrac{5}{11}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t3",
+"custom": true
 }
 ]

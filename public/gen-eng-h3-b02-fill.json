@@ -765,5 +765,214 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b02-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-c19bdda076",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe subscription economy brings advantages for both companies and consumers. Companies can have a ________ revenue and build customer loyalty by using the subscription model.",
+"choices": [
+"① poor",
+"② uncertain",
+"③ stable",
+"④ falling",
+"⑤ temporary"
+],
+"answer": "③",
+"solution": "앞 문장에서 구독 경제가 기업과 소비자 모두에게 '이점(advantages)'을 준다고 했습니다. 그러니 빈칸에는 기업이 얻는 긍정적인 결과가 들어가야 합니다. 정기적으로 구독료가 들어오므로 '안정적인(stable)' 수익이 흐름에 맞습니다. poor, uncertain, falling, temporary는 모두 이점과 어긋나는 말입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b74f50ec32",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이에 해당하는 단어로 가장 알맞은 것은?\n\nmore than is necessary, normal, or reasonable\n\n(ex) This can result in ________ consumption and using more subscription services than actually needed.",
+"choices": [
+"① affordable",
+"② excessive",
+"③ crucial",
+"④ flexible",
+"⑤ diverse"
+],
+"answer": "②",
+"solution": "'필요하거나 정상적인 정도보다 많은'이라는 뜻의 단어는 excessive(과도한)입니다. 예문도 실제로 필요한 것보다 더 많은 구독 서비스를 쓰는 '과소비'를 말하고 있어 뜻이 맞습니다. affordable은 '(가격이) 감당할 수 있는', crucial은 '매우 중요한', flexible은 '유연한', diverse는 '다양한'이라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-247169fa39",
+"typeId": "eng-h3-b02-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nOne concern is the potential for overconsumption. It is <u>crucial</u> to subscribe only to services that are truly necessary and avoid subscribing to similar services.",
+"choices": [
+"① useless",
+"② optional",
+"③ harmful",
+"④ essential",
+"⑤ similar"
+],
+"answer": "④",
+"solution": "crucial은 '매우 중요한, 필수적인'이라는 뜻입니다. 따라서 의미가 가장 가까운 단어는 essential(필수적인)입니다. 과소비를 막으려면 꼭 필요한 서비스만 구독하는 것이 중요하다는 흐름과도 맞습니다. useless(쓸모없는), optional(선택적인), harmful(해로운)은 뜻이 다르고, similar(비슷한)는 문장 속 단어를 그대로 가져온 오답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b8aabe2965",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA rhyme is usually the repetition of the final sound of a word. Most often, it is consciously ⓐ[using / used] for a musical effect in the final position of lines within poems or songs. Let’s look at three ways that rhyme is used in rap lyrics.\nFirst, if two lines finish with words that rhyme, this ⓑ[calls / is called] an end rhyme, which is the most representative kind of rhyme.\n…\nWhen a sequence of rhymed words is spoken aloud, it creates a rhythmic pattern or “flow.” This helps the song keep a steady beat, ⓒ[pleases / pleasing] the ear, and evokes emotions.\n\n    ⓐ        ⓑ          ⓒ",
+"choices": [
+"using – calls – pleases",
+"used – calls – pleasing",
+"used – is called – pleases",
+"used – is called – pleasing",
+"using – is called – pleasing"
+],
+"answer": "③",
+"solution": "ⓐ 주어 it(rhyme)은 '사용되는' 대상이므로 be동사 뒤에 과거분사 used를 써서 수동태를 만든다. ⓑ this(두 행이 각운으로 끝나는 것)는 end rhyme이라고 '불리는' 것이므로 수동태 is called가 알맞다. ⓒ helps, ___, evokes가 and로 연결된 병렬 구조이므로 주어 This에 맞춘 동사 pleases가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-afecb8a8ea",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAfter the peace treaty, the gangs that had fought one another started partying together. Abandoned buildings and parking lots were used for events ⓐ[calling / called] block parties. What eventually emerged from these parties? A vibrant youth movement called hip-hop culture, based on DJing, breakdancing, MCing, and graffiti.\nThe most popular block parties were those ⓑ[hosting / hosted] by DJ Kool Herc, who ⓒ[is / are] regarded as the founding father of hip-hop.\n\n    ⓐ        ⓑ        ⓒ",
+"choices": [
+"calling – hosting – is",
+"calling – hosted – are",
+"called – hosting – are",
+"called – hosted – is",
+"called – hosted – are"
+],
+"answer": "④",
+"solution": "ⓐ events는 block parties라고 '불리는' 것이므로 수동의 의미를 지닌 과거분사 called가 알맞다. ⓑ those(block parties)는 DJ Kool Herc에 의해 '열린' 것이므로 뒤에 by가 이어지는 과거분사 hosted를 써야 한다. ⓒ 관계대명사 who의 선행사는 단수인 DJ Kool Herc이므로 단수 동사 is가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-83bea5921d",
+"typeId": "eng-h3-b02-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAlso, a new attitude gradually emerged in hip-hop lyrics, which can be summarized as “respect.” Hip-hop music began ⓐ[be / to be] a way to express respect for one another, and particularly for hip-hop pioneers. For rappers, the pioneers are heroes ⓑ[who / which] overcame hardship and injustice and went on to create new music and culture.\n…\nWhen hip-hop artist Kendrick Lamar ⓒ[awarded / was awarded] a Pulitzer Prize for Music in 2018, it was another important event.\n\n    ⓐ        ⓑ        ⓒ",
+"choices": [
+"be – who – was awarded",
+"to be – who – was awarded",
+"to be – which – awarded",
+"be – which – was awarded",
+"to be – which – was awarded"
+],
+"answer": "②",
+"solution": "ⓐ 동사 begin은 to부정사나 동명사를 목적어로 취하므로 동사원형 be는 올 수 없고 to be가 알맞다. ⓑ 선행사 heroes가 사람이므로 관계대명사 who를 써야 한다. ⓒ Kendrick Lamar는 퓰리처상을 '받은(수여된)' 사람이므로 수동태 was awarded가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1a352bd20c",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nJiyun enjoys (A)[to listen / listening] to her favorite music every morning. By using the subscription model, companies can (B)[have / having] a stable revenue and build customer loyalty. In addition, consumers can save money by (C)[use / using] flexible subscription contracts.",
+"choices": [
+"to listen - have - use",
+"to listen - having - using",
+"listening - have - using",
+"listening - having - use",
+"listening - have - use"
+],
+"answer": "③",
+"solution": "(A) enjoy는 목적어로 동명사를 취하므로 listening이 맞습니다. (B) 조동사 can 뒤에는 동사원형이 오므로 have가 맞습니다. (C) 전치사 by 뒤에는 동명사가 와야 하므로 using이 맞습니다. 따라서 listening - have - using인 ③이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a294a46a93",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe concept of business models based on subscriptions (A)[is / are] not new. Initially it was limited to products such as milk and newspapers. However, these business models (B)[have / has] expanded to all industries, including entertainment, technology, and fashion. Customers (C)[pay / pays] for these benefits via a regular subscription.",
+"choices": [
+"are - have - pay",
+"is - have - pay",
+"is - has - pay",
+"are - has - pays",
+"is - have - pays"
+],
+"answer": "②",
+"solution": "(A) 주어의 핵은 단수명사 The concept이므로 is가 맞습니다. (B) 주어 these business models가 복수이므로 have가 맞습니다. (C) 주어 Customers가 복수이므로 pay가 맞습니다. 따라서 is - have - pay인 ②가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-48d4f95bcb",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAfter school, Jiyun expands her knowledge in whatever she finds (A)[interesting / interested]. During weekends, she and her family watch movies or dramas (B)[using / used] a streaming service. The rise of the subscription economy is closely (C)[connecting / connected] to two major drivers.",
+"choices": [
+"interested - using - connected",
+"interesting - used - connecting",
+"interested - used - connected",
+"interesting - using - connected",
+"interesting - used - connecting"
+],
+"answer": "④",
+"solution": "(A) 상황이 흥미를 '주는' 것이므로 현재분사형 형용사 interesting이 맞습니다. (B) Jiyun 가족이 서비스를 능동적으로 이용하는 것이므로 현재분사 using이 맞습니다(분사구문). (C) be connected to(~에 연결되다)는 수동 형태이므로 과거분사 connected가 맞습니다. 따라서 interesting - using - connected인 ④가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-58517e083c",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nConsumers can save money by selecting only (A)[what / which] they really need. Jiyun utilizes a video lecture service to (B)[expand / expanding] her knowledge about the latest trends. If they wish to change their device model, they can (C)[do / be] so with just a few clicks.",
+"choices": [
+"which - expand - do",
+"what - expand - do",
+"what - expanding - do",
+"what - expand - be",
+"which - expanding - be"
+],
+"answer": "②",
+"solution": "(A) need의 목적어가 빠져 있고 선행사가 없으므로 선행사를 포함하는 관계대명사 what이 맞습니다. (B) '지식을 넓히기 위해'라는 목적을 나타내는 부사적 용법의 to부정사이므로 to expand가 맞습니다. (C) 앞의 일반동사구 change their device model을 대신하는 대동사이므로 do가 맞습니다(do so). 따라서 what - expand - do인 ②가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e746384231",
+"typeId": "eng-h3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nJiyun expands her knowledge in (A)[whatever / however] she finds interesting. In some models, consumers choose only the necessary services when (B)[needing / needed], saving money. Instead of (C)[creation / creating] a hit product that will be sold once, companies now prioritize providing continuing value.",
+"choices": [
+"however - needed - creating",
+"whatever - needing - creating",
+"however - needing - creation",
+"whatever - needed - creation",
+"whatever - needed - creating"
+],
+"answer": "⑤",
+"solution": "(A) finds의 목적어 역할을 하는 명사절을 이끌면서 '~하는 것은 무엇이든'의 뜻이므로 복합관계대명사 whatever가 맞습니다. (B) 서비스가 '필요해지는' 수동 관계이고 when (they are) needed에서 생략된 형태이므로 needed가 맞습니다. (C) 전치사 of의 목적어이면서 뒤에 a hit product라는 목적어를 취하므로 동명사 creating이 맞습니다. 따라서 whatever - needed - creating인 ⑤가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b02-u1m1s0t0",
+"custom": true
 }
 ]

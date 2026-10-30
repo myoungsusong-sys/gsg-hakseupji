@@ -1971,5 +1971,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-08-u0m0s2t3",
 "custom": true
+},
+{
+"id": "fill-e604a4ff72",
+"typeId": "set2-cm2-08-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "용어의 뜻을 명확하게 정한 문장을 그 용어의 ( )라고 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "정의",
+"solution": "용어의 뜻을 분명하게 정한 문장을 그 용어의 정의라고 한다. 예를 들어 '두 쌍의 대변이 각각 평행한 사각형을 평행사변형이라고 한다.'는 평행사변형의 정의이다. 따라서 ( )에 들어갈 말은 정의이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-7f95bb8ff5",
+"typeId": "set2-cm2-08-u0m0s1t1",
+"kind": "주관식",
+"diff": 1,
+"body": "명제 $p\\to q$가 참임을 직접 증명하기 어려울 때, 명제 $\\sim q\\to\\sim p$가 참임을 보여서 증명할 수 있다. 이때 명제 $\\sim q\\to\\sim p$를 명제 $p\\to q$의 ( )라고 한다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "대우",
+"solution": "명제 $p\\to q$에서 가정과 결론을 각각 부정하고 서로 바꾼 명제 $\\sim q\\to\\sim p$를 대우라고 한다. 명제와 그 대우는 참, 거짓이 항상 일치하므로 대우가 참임을 보이면 원래 명제도 참이다. 따라서 ( )에 들어갈 말은 대우이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-f18c11adb1",
+"typeId": "set2-cm2-08-u0m0s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "명제와 그 증명에 대한 다음 설명 중 옳지 않은 것은?",
+"choices": [
+"참임이 증명된 명제 중에서 기본이 되는 것이나 다른 명제를 증명할 때 자주 쓰이는 것을 정리라고 한다.",
+"귀류법은 명제의 결론을 부정한 뒤 모순이 생김을 보여 명제가 참임을 증명하는 방법이다.",
+"명제 $p\\to q$가 참이면 그 대우 $\\sim q\\to\\sim p$도 반드시 참이다.",
+"명제 $p\\to q$가 참이면 그 역 $q\\to p$도 반드시 참이다.",
+"명제 $p\\to q$가 거짓임을 보이려면 가정 $p$는 만족하지만 결론 $q$는 만족하지 않는 예를 하나 들면 된다."
+],
+"answer": "④",
+"solution": "명제가 참이라고 해서 그 역이 반드시 참인 것은 아니다. 예를 들어 '$x=1$이면 $x^2=1$이다.'는 참이지만, 그 역 '$x^2=1$이면 $x=1$이다.'는 $x=-1$이 반례이므로 거짓이다. 나머지 ①, ②, ③, ⑤는 모두 옳은 설명이므로 답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-7d22243e65",
+"typeId": "set2-cm2-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "명제 $p\\to q$의 역을 바르게 나타낸 것은?",
+"choices": [
+"$p\\to q$",
+"$q\\to p$",
+"$\\sim p\\to\\sim q$",
+"$\\sim q\\to\\sim p$",
+"$\\sim p\\to q$"
+],
+"answer": "②",
+"solution": "명제 $p\\to q$의 역은 가정과 결론의 자리를 서로 바꾼 명제이다. 따라서 가정은 $q$, 결론은 $p$가 되어 $q\\to p$이다. 그러므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-dd41a6bb11",
+"typeId": "set2-cm2-08-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "명제 $p\\to q$의 대우를 바르게 나타낸 것은?",
+"choices": [
+"$q\\to p$",
+"$\\sim p\\to\\sim q$",
+"$\\sim q\\to\\sim p$",
+"$p\\to\\sim q$",
+"$\\sim p\\to q$"
+],
+"answer": "③",
+"solution": "명제 $p\\to q$의 대우는 가정과 결론의 자리를 바꾼 뒤 각각 부정한 명제이다. 즉 가정은 $\\sim q$, 결론은 $\\sim p$가 되어 $\\sim q\\to\\sim p$이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-dc0589fd45",
+"typeId": "set2-cm2-08-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "실수 $x$에 대한 명제 “$x^2=1$이면 $x=1$이다”의 반례가 되는 $x$의 값은 ( )이다.\n\n( )에 들어갈 값을 입력하세요.",
+"selfGrade": true,
+"answer": "$-1$",
+"solution": "$x^2=1$을 만족하는 실수는 $x=1$ 또는 $x=-1$이다. 이 중 가정 $x^2=1$은 참이지만 결론 $x=1$은 거짓이 되는 값이 반례이다. 따라서 $x=-1$이 반례이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s0t1",
+"custom": true
 }
 ]

@@ -576,5 +576,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b06-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-7b548b42cd",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nFalse Bananas\nEnset, also known as “false banana,” is a close (A)[relative / stranger] of the banana. The fruit of the plant isn’t safe to eat, but the stems and roots can be processed and used to make bread. Approximately 20 million people rely on this plant for food in Ethiopia, but it is almost (B)[unknown / famous] outside of the country. Scientists anticipate that this crop has the potential to feed more than 100 million people in a (C)[warming / cooling] world, establishing itself as a new fundamental food for the future.\n\n(A) — (B) — (C)",
+"choices": [
+"relative — unknown — cooling",
+"stranger — famous — warming",
+"relative — famous — warming",
+"relative — unknown — warming",
+"stranger — unknown — cooling"
+],
+"answer": "④",
+"solution": "엔셋은 ‘가짜 바나나’라고 불릴 만큼 바나나와 가까운 ‘친척 식물’이므로 (A)에는 relative가 알맞다. 에티오피아에서는 약 2천만 명이 먹지만, but으로 내용이 바뀌므로 나라 밖에서는 거의 ‘알려지지 않았다’는 뜻의 unknown이 와야 한다. 기후 변화 속에서 미래 식량으로 주목받는다는 흐름이므로 (C)에는 ‘온난화되는’ 세계를 뜻하는 warming이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-99aaf5dd85",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 flourishes와 의미가 가장 가까운 것은?\n\nSeaweed is a type of plant that typically flourishes along rocky coasts around the world. This plant offers a range of flavors that are used in a variety of dishes, including soups, salads, and snacks.",
+"choices": [
+"disappears",
+"thrives",
+"suffers",
+"freezes",
+"shrinks"
+],
+"answer": "②",
+"solution": "flourish는 ‘잘 자라다, 번성하다’라는 뜻이므로 의미가 가장 가까운 말은 thrive(번성하다)이다. 해조류가 전 세계의 바위 해안을 따라 ‘잘 자란다’는 내용이다. 나머지 disappear(사라지다), suffer(고통받다), freeze(얼다), shrink(줄어들다)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f757c2685f",
+"typeId": "eng-h3-b06-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nDr. Perry: Simplifying the production process and using ⓐrenewable energy will ⓑaddress many of these concerns. There is also criticism that it won’t ⓒeliminate animal cruelty 100%. This is because the process extracts cells from animals, although it doesn’t ⓓkill them. It is expected that technological advances will ⓔincrease these problems.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "⑤",
+"solution": "배양육에 대한 비판(에너지 사용, 동물 학대 문제)을 기술 발전이 해결해 줄 것이라는 흐름이다. 따라서 ⓔ는 문제를 ‘증가시킨다’는 increase가 아니라 ‘줄인다’는 reduce가 되어야 한다. ⓐ~ⓓ는 재생 에너지 사용, 우려 해결, 동물 학대를 완전히 없애지 못함, 세포를 추출하지만 죽이지는 않음이라는 뜻으로 모두 문맥에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u1m0s0t0",
+"custom": true
 }
 ]

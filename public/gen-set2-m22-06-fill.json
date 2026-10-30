@@ -2811,5 +2811,120 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-m22-06-u0m0s2t3",
 "custom": true
+},
+{
+"id": "fill-f464578fec",
+"typeId": "set2-m22-06-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고 $DE\\parallel BC$일 때, 다음 중 옳지 않은 것은?",
+"choices": [
+"$AD:AB=AE:AC$",
+"$AD:DB=AE:EC$",
+"$AD:AB=DE:BC$",
+"$AE:AC=DE:BC$",
+"$AD:DB=DE:BC$"
+],
+"answer": "⑤",
+"solution": "$DE\\parallel BC$이면 $\\triangle ADE\\sim\\triangle ABC$이므로 $AD:AB=AE:AC=DE:BC$가 성립합니다. 또한 $AD:DB=AE:EC$도 성립합니다. 그러나 $DE:BC$는 $AD:DB$가 아니라 $AD:AB$와 같으므로 옳지 않은 것은 ⑤입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-2a06e27189",
+"typeId": "set2-m22-06-u0m0s0t1",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고 $DE\\parallel BC$일 때, $AD=5$, $DB=10$, $AE=4$이면 $EC=$ ( )이다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "$8$",
+"solution": "$DE\\parallel BC$이므로 $AD:DB=AE:EC$입니다. 따라서 $5:10=4:EC$이고, $5\\times EC=40$이므로 $EC=8$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-98c071264a",
+"typeId": "set2-m22-06-u0m0s0t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\triangle ABC$의 변 $AB$, $AC$ 위에 각각 점 $D$, $E$가 있고 $DE\\parallel BC$이다. $AD=4$, $AB=12$, $BC=9$일 때, $DE$의 길이는?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "②",
+"solution": "$DE\\parallel BC$이므로 $AD:AB=DE:BC$입니다. 따라서 $4:12=DE:9$이고, $12\\times DE=36$이므로 $DE=3$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s0t1",
+"custom": true
+},
+{
+"id": "fill-7ceb186e6b",
+"typeId": "set2-m22-06-u0m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 하자. $DE=9$ cm일 때, $BC$의 길이는 ( ) cm이다.\n\n( )에 들어갈 말을 입력하세요.",
+"selfGrade": true,
+"answer": "$18$",
+"solution": "삼각형의 두 변의 중점을 연결한 선분의 길이는 나머지 한 변의 길이의 $\\frac{1}{2}$입니다. 따라서 $DE=\\frac{1}{2}BC$입니다. $BC=2DE=2\\times 9=18$ (cm)입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-fe54f84ba6",
+"typeId": "set2-m22-06-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 변 $AB$, $AC$의 중점을 각각 $M$, $N$이라 할 때, 다음 중 옳지 않은 것은?",
+"choices": [
+"$\\overline{MN} /\\!/ \\overline{BC}$",
+"$MN=\\frac{1}{2}BC$",
+"$AM=MB$",
+"$AN=NC$",
+"$AM=AN$"
+],
+"answer": "⑤",
+"solution": "$M$, $N$이 각각 $AB$, $AC$의 중점이므로 $AM=MB$, $AN=NC$입니다. 또 삼각형의 두 변의 중점을 연결한 선분의 성질에 따라 $\\overline{MN} /\\!/ \\overline{BC}$이고 $MN=\\frac{1}{2}BC$입니다. 하지만 $AM=\\frac{1}{2}AB$, $AN=\\frac{1}{2}AC$이므로 $AB=AC$가 아니면 $AM=AN$이 성립하지 않습니다. 따라서 옳지 않은 것은 ⑤입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-c4b9d8cce8",
+"typeId": "set2-m22-06-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "$\\triangle ABC$에서 $AC=16$ cm, $BC=12$ cm이다. 변 $AB$의 중점 $M$을 지나고 변 $BC$에 평행한 직선이 변 $AC$와 만나는 점을 $N$이라 할 때, $MN+NC$의 값은?",
+"choices": [
+"$10$ cm",
+"$12$ cm",
+"$14$ cm",
+"$16$ cm",
+"$20$ cm"
+],
+"answer": "③",
+"solution": "삼각형의 한 변의 중점을 지나고 다른 한 변에 평행한 직선은 나머지 한 변의 중점을 지납니다. 따라서 $N$은 $AC$의 중점이고, $NC=\\frac{1}{2}\\times 16=8$ (cm)입니다. 또 $MN=\\frac{1}{2}BC=\\frac{1}{2}\\times 12=6$ (cm)입니다. 그러므로 $MN+NC=6+8=14$ (cm)입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-978be5aebd",
+"typeId": "set2-m22-06-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\triangle ABC$에서 변 $BC$의 중점을 $D$, 선분 $AD$의 중점을 $E$라 하자. 선분 $BE$의 연장선이 변 $AC$와 만나는 점을 $F$라 한다. $AC=18$ cm, $BF=16$ cm일 때, 선분 $AF$의 길이와 선분 $BE$의 길이를 각각 구하시오.\n\n(단, 풀이 과정을 자세히 쓰시오.)",
+"selfGrade": true,
+"answer": "$AF=6$ cm, $BE=12$ cm",
+"solution": "점 $D$를 지나고 $\\overline{BF}$에 평행한 직선이 $AC$와 만나는 점을 $G$라 합니다. $\\triangle CBF$에서 $D$는 $BC$의 중점이고 $\\overline{DG} /\\!/ \\overline{BF}$이므로, $G$는 $FC$의 중점이고 $DG=\\frac{1}{2}BF=8$ (cm)입니다. $\\triangle ADG$에서 $E$는 $AD$의 중점이고 $\\overline{EF} /\\!/ \\overline{DG}$이므로, $F$는 $AG$의 중점이고 $EF=\\frac{1}{2}DG=4$ (cm)입니다. 따라서 $AF=FG=GC$이므로 $AF=\\frac{18}{3}=6$ (cm)이고, $BE=BF-EF=16-4=12$ (cm)입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t1",
+"custom": true
 }
 ]

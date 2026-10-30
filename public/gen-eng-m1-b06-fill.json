@@ -2625,5 +2625,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b06-u3m5s0t0",
 "custom": true
+},
+{
+"id": "fill-57654ccc11",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nJiwon: For me, a stress ball. I hold the ball tightly. Then my stress ______ away.",
+"choices": [
+"go",
+"goes",
+"going",
+"to go",
+"gone"
+],
+"answer": "②",
+"solution": "주어 my stress는 3인칭 단수이고 문장이 현재시제이므로 동사에 -(e)s를 붙인다. 따라서 goes가 알맞다. go, going, to go, gone은 모두 주어와 수·시제가 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1171aace1d",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nMs. Seo: Great! Now make your own survival kit. Let's ______ a great year!",
+"choices": [
+"has",
+"had",
+"have",
+"having",
+"to have"
+],
+"answer": "③",
+"solution": "「Let's + 동사원형」은 '~하자'라는 제안을 나타낸다. 따라서 동사원형 have가 알맞다. has, had, having, to have는 동사원형이 아니므로 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e57fd7702a",
+"typeId": "eng-m1-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nMike: An eraser! It ______ my mistakes. I start all over again!",
+"choices": [
+"erase",
+"erases",
+"erasing",
+"to erase",
+"erased"
+],
+"answer": "②",
+"solution": "주어 It은 3인칭 단수이고 현재시제 문장이므로 동사에 -s를 붙여 erases가 되어야 한다. erase는 원형, erasing은 -ing형, to erase는 to부정사, erased는 과거형이라 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u0m1s0t0",
+"custom": true
 }
 ]

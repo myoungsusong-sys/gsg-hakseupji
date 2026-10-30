@@ -3384,5 +3384,100 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b07-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-aca5e3baf5",
+"typeId": "eng-h2-b07-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto die, especially in a sudden or violent way",
+"choices": [
+"nod",
+"perish",
+"grant",
+"boast",
+"tend"
+],
+"answer": "②",
+"solution": "perish는 '죽다, 사라지다'라는 뜻으로, 본문에서 Baucis는 'we may perish in the same hour'라고 하며 부부가 같은 시간에 죽게 해 달라고 부탁했다. nod는 '고개를 끄덕이다', grant는 '(소원 등을) 들어주다', boast는 '자랑하다', tend는 '돌보다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5c6d0329dd",
+"typeId": "eng-h2-b07-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 단어의 우리말 뜻으로 알맞지 않은 것은?",
+"choices": [
+"They set out their best delicacies on the table. → 진미, 맛있는 음식",
+"They lived entirely from the produce of their small piece of land. → 농산물",
+"Baucis also was awed and afraid. → 경외심을 느낀",
+"Few would have made such a good and moderate request. → 지나친, 과도한",
+"To have spoken with the immortals face to face is a thing few men can boast of. → 불멸의 존재(신)"
+],
+"answer": "④",
+"solution": "moderate는 '적당한, 절제된'이라는 뜻으로, '지나친, 과도한'과는 반대되는 의미이다. Hermes는 노부부의 소원이 욕심 없이 소박하다는 점을 칭찬하며 이 단어를 썼다. 나머지 단어의 뜻은 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-35b946ce74",
+"typeId": "eng-h2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 <u>않은</u> 것은?",
+"choices": [
+"benefit – 이익, 혜택",
+"loneliness – 외로움",
+"conservation – 보존",
+"anxiety – 불안",
+"reward – 벌, 처벌"
+],
+"answer": "⑤",
+"solution": "reward는 '보상, 보답'을 뜻하는 단어로, 본문의 rewarding(보람 있는)과 같은 뿌리의 말이다. '벌, 처벌'은 punishment이므로 짝이 잘못되었다. 나머지 네 개는 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-8583f11f60",
+"typeId": "eng-h2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nVolunteering even ____________ stress and anxiety, so it is good for your mind.",
+"choices": [
+"reduces",
+"increases",
+"creates",
+"ignores",
+"forgets"
+],
+"answer": "①",
+"solution": "본문에서 봉사활동이 스트레스와 불안을 '줄여 준다(reduces)'고 하였다. 뒤에 '마음에 좋다'는 내용이 이어지므로 긍정적 효과를 나타내는 reduces가 알맞다. increases(늘리다)나 creates(만들다)는 문맥상 반대 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f25863746a",
+"typeId": "eng-h2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이가 가리키는 단어로 가장 알맞은 것은?\n\nthe sad feeling you have when you are alone and have no friends with you",
+"choices": [
+"loneliness",
+"kindness",
+"freedom",
+"success",
+"health"
+],
+"answer": "①",
+"solution": "'혼자여서 슬픈 감정'을 뜻하는 단어는 loneliness(외로움)이다. 본문에서도 외로움으로 힘들어하는 노인들(senior citizens who struggle with loneliness)을 돕는 내용이 나온다. 나머지 선지는 뜻풀이와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
+"custom": true
 }
 ]

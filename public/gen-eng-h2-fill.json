@@ -3275,5 +3275,114 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-u2m0s0t0",
 "custom": true
+},
+{
+"id": "fill-840820c1c4",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어 및 표현을 알맞게 배열하여 문장을 완성하시오.\n\n벨기에 예술가 Vincent Bal은 일상적인 물건의 그림자를 예술 작품으로 바꾼다.\n\n<보기> turns / he / shadows / into / of everyday objects / art forms\n\n→ Belgian artist Vincent Bal is famous for his shadow art. ______________________________________.",
+"selfGrade": true,
+"answer": "He turns shadows of everyday objects into art forms.",
+"solution": "'A를 B로 바꾸다'는 turn A into B로 쓴다. 주어 he 다음에 동사 turns를 쓰고, 목적어 A 자리에 shadows of everyday objects를 둔다. 마지막으로 into art forms를 붙여 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-a190dccd62",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어 및 표현을 알맞게 배열하여 빈칸을 완성하시오.\n\n더운 날씨 때문에 우리는 결국 얼음 봉지를 더 사게 되었다.\n\n<보기> purchasing / ended up / we / extra bags of ice\n\n→ Because of the hot weather, ______________________________________.",
+"selfGrade": true,
+"answer": "we ended up purchasing extra bags of ice",
+"solution": "'결국 ~하게 되다'는 end up -ing로 쓰며, up 뒤에는 동명사가 온다. 주어 we 다음에 ended up을 쓰고, 이어서 purchasing을 쓴다. 목적어 extra bags of ice를 마지막에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-3a4c71f813",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 <보기>의 단어 및 표현을 알맞게 배열하여 빈칸을 완성하시오.\n\n공원에 있던 사람들 대부분은 휴대폰에 눈을 고정하고 있었다.\n\n<보기> had / most of / their eyes / the people / glued to / their phones\n\n→ While walking in the park, I looked around. ______________________________________.",
+"selfGrade": true,
+"answer": "Most of the people had their eyes glued to their phones.",
+"solution": "'~의 대부분'은 most of the people로 써서 주어를 만든다. '눈을 ~에 고정하고 있다'는 'have+목적어+과거분사' 구조로 써서 had their eyes glued to로 나타낸다. 마지막에 전치사 to의 목적어 their phones를 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-b1fd3eadff",
+"typeId": "eng-h2-u2m0s1t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 밑줄 친 우리말과 뜻이 같도록 <보기>의 단어 및 표현을 알맞게 배열하여 빈칸을 완성하시오. (단, <보기>에서 필요 없는 단어 1개는 쓰지 말 것)\n\nIn the early 2000s, when millennials initially entered the job market, they were perceived as being less committed to their companies. However, as they aged and got used to their roles, they began to be increasingly recognized as diligent workers. 이것은 자유의 추구가 특정 세대의 특징이라기보다는 청춘의 특징이라는 것을 보여 준다.\n\n<보기> what / that / is / more / characteristic / of / of / than / youth / a specific generation / the pursuit of freedom\n\n→ This illustrates ________________________________________________.",
+"selfGrade": true,
+"answer": "that the pursuit of freedom is more characteristic of youth than of a specific generation",
+"solution": "illustrates의 목적어로 쓰인 절은 주어와 보어를 모두 갖춘 완전한 절이므로 접속사 that을 써야 하고, what은 쓰지 않는다. 'A라기보다는 B의 특징이다'는 비교 구문 be more characteristic of B than of A로 나타낸다. than 앞뒤의 전치사구를 병렬로 맞추기 위해 of를 두 번 쓰는 것에 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s1t0",
+"custom": true
+},
+{
+"id": "fill-da4c11b6b0",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)가 의미하는 바로 가장 알맞은 것은?\n\nMany students worry about what others think of them when they meet someone for the first time. They often believe that they have made a bad impression. However, research shows that people usually like us more than we expect. This difference is called the \"liking gap.\" Therefore, (A)we should not judge ourselves too harshly after meeting new people. We may have made a much better impression than we think.",
+"choices": [
+"① We should avoid meeting people for the first time.",
+"② We should always believe that others dislike us.",
+"③ We should not think too negatively about the impression we make.",
+"④ We should try to find mistakes in other people's behavior.",
+"⑤ We should stop talking to people who have different opinions."
+],
+"answer": "③",
+"solution": "글에서는 사람들이 처음 만난 상대에게 실제보다 나쁜 인상을 주었다고 생각하는 경향이 있다고 설명한다. 그러나 실제로는 상대방이 자신을 더 긍정적으로 평가할 수 있다. 따라서 밑줄 친 부분은 자신이 남긴 인상을 지나치게 부정적으로 판단하지 말아야 한다는 의미이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-31c2671ceb",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)가 의미하는 바로 가장 알맞은 것은?\n\nA young musician dreamed of recording an album. He practiced playing his guitar every day, but success did not come easily. Sometimes he felt disappointed because few people knew his music. However, he remembered his grandfather, who had enjoyed playing the guitar throughout his life without becoming famous. The young musician decided to continue practicing. He believed that (A)every small step was part of his journey. He knew that his daily efforts could help him prepare for future opportunities.",
+"choices": [
+"① Only famous musicians can enjoy playing music.",
+"② Small efforts and experiences can help him achieve his goal.",
+"③ He should stop practicing until a good opportunity appears.",
+"④ Becoming successful is possible without any practice.",
+"⑤ His musical journey is meaningful only if he becomes famous."
+],
+"answer": "②",
+"solution": "글에서 젊은 음악가는 성공이 쉽게 찾아오지 않아도 기타 연습을 계속하기로 결심한다. 또한 매일의 노력이 미래의 기회를 준비하는 데 도움이 된다고 믿는다. 따라서 밑줄 친 부분은 작은 노력과 경험도 목표를 향해 나아가는 과정에서 의미가 있다는 뜻이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
+},
+{
+"id": "fill-a36369cde0",
+"typeId": "eng-h2-u0m3s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 (A)가 의미하는 바로 가장 알맞은 것은?\n\nThe artist Arcimboldo created unusual paintings using everyday objects. One of his paintings, The Gardener, looks like vegetables in a bowl. However, when viewers turn the painting upside down, they can see a human face. This surprising change makes the painting interesting. Viewers can enjoy discovering the hidden face by themselves. In this way, (A)the painting invites viewers to take part in a visual game. It offers more than just a picture to look at.",
+"choices": [
+"① The painting asks viewers to draw their own pictures.",
+"② The painting teaches viewers how to grow vegetables.",
+"③ The painting encourages viewers to study the artist's life.",
+"④ The painting makes viewers compete with one another.",
+"⑤ The painting allows viewers to actively enjoy finding a hidden image."
+],
+"answer": "⑤",
+"solution": "글에서는 아르침볼도의 그림을 거꾸로 돌리면 채소들이 사람의 얼굴로 보인다고 설명한다. 관람객들은 이러한 변화를 직접 발견하면서 그림을 즐길 수 있다. 따라서 밑줄 친 부분은 관람객이 숨겨진 이미지를 찾는 활동에 능동적으로 참여한다는 의미이므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u0m3s1t0",
+"custom": true
 }
 ]

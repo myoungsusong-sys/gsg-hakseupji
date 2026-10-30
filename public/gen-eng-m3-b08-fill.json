@@ -3116,5 +3116,196 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b08-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-b57d5e6e9c",
+"typeId": "eng-m3-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻이 알맞지 않은 것은?",
+"choices": [
+"I'm reading a book on Norse myths. (신화)",
+"It was a spear that never missed its target. (창)",
+"Nothing can ever break it. (부수다)",
+"The gods now had precious treasures. (평범한)",
+"The hammer would protect the gods from their enemies. (적)"
+],
+"answer": "④",
+"solution": "precious는 '귀중한, 소중한'이라는 뜻이다. '평범한'은 ordinary나 common의 뜻이므로 ④가 잘못 짝지어진 것이다. 나머지 myths(신화), spear(창), break(부수다), enemies(적)는 모두 올바르게 짝지어져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f773952570",
+"typeId": "eng-m3-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThor used his hammer to ______ the gods from their enemies.",
+"choices": [
+"break",
+"miss",
+"protect",
+"lend",
+"read"
+],
+"answer": "③",
+"solution": "'적으로부터 신들을 ___하기 위해 망치를 사용했다'라는 문맥이므로 '보호하다'라는 뜻의 protect가 알맞다. break(부수다), miss(놓치다), lend(빌려주다), read(읽다)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-45b6e093e4",
+"typeId": "eng-m3-b08-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이에 해당하는 단어로 알맞은 것은?\n\na person who makes things out of metal",
+"choices": [
+"god",
+"smith",
+"target",
+"movie",
+"character"
+],
+"answer": "②",
+"solution": "'금속으로 물건을 만드는 사람'을 뜻하는 단어는 smith(대장장이)이다. 본문에서 Brokk과 그의 형제를 the better smiths라고 표현했다. god(신), target(목표), movie(영화), character(등장인물)는 풀이에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3f49cf7c85",
+"typeId": "eng-m3-b08-u4m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n창밖을 보면서, Mina는 노래를 불렀다.\n(the window / looking / out)\n→ ______________________________, Mina sang a song.",
+"selfGrade": true,
+"answer": "Looking out the window",
+"solution": "'~하면서'라는 동시 동작은 분사구문으로 나타낼 수 있습니다. 주절의 주어 Mina와 '보는' 행동의 주체가 같으므로 현재분사 Looking으로 시작합니다. 그 뒤에 out the window를 이어 쓰면 Looking out the window가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u4m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d4e4900b97",
+"typeId": "eng-m3-b08-u4m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 순서대로 쓰시오.\n\nJiho can speak not only English but also Chinese.\n= Jiho can speak __________ as well as __________.",
+"selfGrade": true,
+"answer": "Chinese, English",
+"solution": "'not only A but also B'는 'B as well as A'와 뜻이 같습니다. 이때 A와 B의 순서가 서로 바뀐다는 점에 주의해야 합니다. A는 English, B는 Chinese이므로 Chinese as well as English가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u4m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2f9cb15b7f",
+"typeId": "eng-m3-b08-u4m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 부분을 접속사 because를 사용하여 같은 뜻의 절로 바꿔 쓰시오.\n\nTaeho has never told anyone about his dream. He is worried that his parents or his friends will not understand. [Wanting to clear his mind], Taeho decided to take a day trip on a train by himself.\n\n→ ______________________________, Taeho decided to take a day trip on a train by himself.",
+"selfGrade": true,
+"answer": "Because he wanted to clear his mind",
+"solution": "밑줄 친 부분은 이유를 나타내는 분사구문입니다. 분사구문을 절로 바꿀 때는 알맞은 접속사와 주절의 주어(Taeho → he)를 넣습니다. 동사는 주절의 시제(decided, 과거)에 맞춰 wanted로 씁니다. 따라서 답은 Because he wanted to clear his mind입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u4m5s0t0",
+"custom": true
+},
+{
+"id": "fill-4a289df243",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 관계부사를 고르시오.\n\nThis is the park ________ we played soccer last Sunday.",
+"choices": [
+"when",
+"where",
+"who",
+"which",
+"what"
+],
+"answer": "②",
+"solution": "선행사가 장소(the park)이고 뒤에 완전한 문장이 이어지므로 장소를 나타내는 관계부사 where가 알맞다. 선행사가 시간이면 when, 사람이나 사물일 때 쓰는 관계대명사(who, which, what)는 여기서는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5f4024de9d",
+"typeId": "eng-m3-b08-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 표현의 우리말 뜻으로 알맞은 것은?\n\nAs a result, da Vinci lost his job.",
+"choices": [
+"게다가",
+"예를 들어",
+"그 결과",
+"그러나",
+"처음에는"
+],
+"answer": "③",
+"solution": "As a result는 앞의 내용이 원인이 되어 생긴 결과를 이끄는 표현으로 '그 결과'라는 뜻이다. 다 빈치가 메뉴를 바꾸어 손님들이 불만을 가졌고, 그 결과 일자리를 잃었다는 흐름과 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3ce8296b75",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 알맞은 것은?\n\nDa Vinci worked for Ludovico Sforza in Milan, and he was put in charge of the kitchen. He wanted to cook much more quickly and easily. So he invented new machines for his kitchen. He made machines that could crush vegetables and pull spaghetti. He even made a device that could scare frogs away from the water tank. They were very innovative, but most of them were too big or too difficult to use.",
+"choices": [
+"da Vinci's famous paintings",
+"da Vinci's machines for the kitchen",
+"the best way to cook spaghetti",
+"the life of Ludovico Sforza",
+"frogs living in the water tank"
+],
+"answer": "②",
+"solution": "글 전체가 다빈치가 요리를 더 빠르고 쉽게 하려고 주방 기계를 발명한 이야기입니다. 채소를 으깨는 기계, 스파게티를 뽑는 기계, 개구리를 쫓는 장치는 모두 그가 만든 주방 기계의 예입니다. 그래서 주제는 ② '다빈치가 주방을 위해 만든 기계들'입니다. ③과 ⑤는 글에 나온 낱말만 따온 오답이고, ①과 ④는 글의 내용과 관계없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1ab0bf0410",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 알맞은 것은?\n\nIn 1495, Sforza asked da Vinci to make a grand painting on the wall of a church in Milan. It was based on the last supper of Jesus. Da Vinci had always been interested in food, so he gladly took on the project. To decide what to put on the table in his picture, he spent a lot of time cooking all kinds of food. Because of this, the people from the church complained that he hadn't finished the painting for over a year.",
+"choices": [
+"다빈치는 그림을 그리는 것을 싫어했다.",
+"교회 사람들은 다빈치의 요리를 매우 좋아했다.",
+"스포르차는 다빈치에게 요리사가 되라고 부탁했다.",
+"다빈치는 그림에 넣을 음식을 정하느라 요리에 많은 시간을 써서 그림이 늦어졌다.",
+"다빈치는 1년 만에 교회 벽화를 빠르게 완성했다."
+],
+"answer": "④",
+"solution": "다빈치는 음식에 관심이 많아서 그림 속 식탁에 무엇을 올릴지 정하려고 온갖 음식을 요리하며 많은 시간을 보냈습니다. 그래서 1년이 넘도록 그림을 끝내지 못해 교회 사람들이 불평했습니다. 따라서 요지는 ④입니다. ⑤는 그림을 끝내지 못했다는 글의 내용과 반대이고, ①·②·③은 글에 없는 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-56526ba16e",
+"typeId": "eng-m3-b08-u5m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 주제로 알맞은 것은?\n\nMan: How is your meal?\nWoman: The salad was fresh, but I'm not satisfied with the steak. It's too rare for me.\nMan: I'm sorry. Would you like me to bring you another one?\nWoman: That's O.K. Let me just have the check, please.\nMan: I'm really sorry. You won't have to pay for the steak.",
+"choices": [
+"식당을 예약하는 방법",
+"스테이크를 굽는 요리법",
+"음식에 대한 불만과 종업원의 사과",
+"신선한 샐러드를 만드는 방법",
+"새로 생긴 식당 소개"
+],
+"answer": "③",
+"solution": "여자는 스테이크가 너무 덜 익어서 만족스럽지 않다고 말합니다. 종업원은 여러 번 사과하고, 스테이크 값은 내지 않아도 된다고 합니다. 따라서 대화의 주제는 ③ '음식에 대한 불만과 종업원의 사과'입니다. ②와 ④는 대화에 나온 음식 이름만 이용한 오답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u5m2s0t0",
+"custom": true
 }
 ]

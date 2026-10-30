@@ -588,5 +588,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b07-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-026bb967be",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nA nudge is an intervention that gently guides individuals toward a desired action, without (A)[forbidding / encouraging] any options. For example, a smartphone can send notifications to remind people to exercise when they have been (B)[active / inactive] for a set amount of time.\n\n       (A)                 (B)",
+"choices": [
+"forbidding – active",
+"encouraging – inactive",
+"forbidding – inactive",
+"encouraging – active",
+"forbidding – encouraging"
+],
+"answer": "③",
+"solution": "넛지(nudge)는 선택지를 금지하지 않으면서 사람들이 바람직한 행동을 하도록 부드럽게 유도하는 개입이다. 따라서 (A)에는 '금지하는'이라는 뜻의 forbidding이 알맞다. 스마트폰은 일정 시간 동안 활동하지 않았을 때 운동을 알리는 알림을 보내므로 (B)에는 '활동하지 않는'이라는 뜻의 inactive가 적절하다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-933b95eeee",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nArtificial scarcity is a dark pattern used to (A)[stimulate / prevent] purchases. Companies may display messages such as 'Only two pieces available!' to make customers feel that they must decide quickly. Under this kind of pressure, people tend to make decisions more (B)[quickly / slowly].\n\n       (A)                 (B)",
+"choices": [
+"prevent – quickly",
+"stimulate – slowly",
+"prevent – slowly",
+"stimulate – quickly",
+"slowly – stimulate"
+],
+"answer": "④",
+"solution": "인위적인 희소성(artificial scarcity)은 상품의 수량이나 구매 가능 시간이 제한되어 있다는 인상을 주어 구매를 촉진하는 다크 패턴이다. 따라서 (A)에는 '촉진하다'라는 뜻의 stimulate가 알맞다. 이러한 압박을 받으면 소비자는 결정을 더 빠르게 내리는 경향이 있으므로 (B)에는 quickly가 적절하다. 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1e9d190716",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nIn Chicago, traffic engineers painted lines across a road ahead of a dangerous curve. The gaps between the lines become smaller as drivers approach the curve. This gives drivers an illusion that they are (A)[speeding up / slowing down], so they step on the brakes. As a result, the number of crashes at the curve showed a significant (B)[reduction / increase].\n\n       (A)                 (B)",
+"choices": [
+"slowing down – reduction",
+"speeding up – reduction",
+"speeding up – increase",
+"slowing down – increase",
+"reduction – speeding up"
+],
+"answer": "②",
+"solution": "시카고의 도로에서는 커브에 가까워질수록 노면에 그려진 선 사이의 간격이 좁아지도록 설계하였다. 이로 인해 운전자는 실제보다 속도가 빨라지는 듯한 착각을 하므로 (A)에는 speeding up이 알맞다. 운전자가 브레이크를 밟게 되어 사고가 감소하였으므로 (B)에는 '감소'라는 뜻의 reduction이 적절하다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-57589b9ab8",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 inevitable의 의미로 가장 적절한 것은?\n\nYou will fail at some point in your lives. Embrace it because it's inevitable.",
+"choices": [
+"impossible to avoid",
+"easy to escape",
+"not important at all",
+"very pleasant",
+"only temporary"
+],
+"answer": "①",
+"solution": "inevitable은 '피할 수 없는, 반드시 일어나는'이라는 뜻이다. 글은 누구나 언젠가 실패하게 마련이니 그것을 받아들이라고 말하고 있다. 따라서 '피할 수 없는'에 해당하는 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1f143dd39a",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 engaged와 바꾸어 쓸 수 있는 말로 가장 적절한 것은?\n\nWhenever Mia works on model airplanes, she is totally engaged in assembling them and never gets distracted.",
+"choices": [
+"absorbed",
+"distracted",
+"bored",
+"confused",
+"exhausted"
+],
+"answer": "①",
+"solution": "engaged in은 '~에 몰두한, 열중한'이라는 뜻이다. 뒤에 '결코 산만해지지 않는다(never gets distracted)'는 내용이 이어지므로 몰입을 뜻하는 absorbed가 가장 적절하다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1ef87a887a",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 적절한 것은?\n\nTime and again, Addario has risked her life to _______ powerful images of people suffering in war zones.",
+"choices": [
+"capture",
+"avoid",
+"forget",
+"hide",
+"sell"
+],
+"answer": "①",
+"solution": "Addario는 전쟁터에서 고통받는 사람들의 모습을 사진으로 '담아내기' 위해 목숨을 걸었다. capture an image는 '(사진 등으로) 장면을 포착하다'라는 뜻이므로 문맥상 capture가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true
 }
 ]

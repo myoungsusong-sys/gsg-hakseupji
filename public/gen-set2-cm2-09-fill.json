@@ -1920,5 +1920,24 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-09-u0m0s2t3",
 "custom": true
+},
+{
+"id": "fill-a6c402ba92",
+"typeId": "set2-cm2-09-u0m0s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "실수 $a$, $b$, $x$, $y$에 대하여 항상 성립하는 코시-슈바르츠 부등식으로 옳은 것은? (단, 등호 조건은 생각하지 않는다.)",
+"choices": [
+"$(a^2+b^2)(x^2+y^2)\\ge(ax+by)^2$",
+"$(a^2+b^2)(x^2+y^2)\\le(ax+by)^2$",
+"$(a+b)(x+y)\\ge(ax+by)^2$",
+"$(a^2+b^2)+(x^2+y^2)\\ge(ax+by)^2$",
+"$(a^2+b^2)(x^2+y^2)=(ax+by)^2$"
+],
+"answer": "①",
+"solution": "코시-슈바르츠 부등식은 실수 $a$, $b$, $x$, $y$에 대하여 $(a^2+b^2)(x^2+y^2)\\ge(ax+by)^2$ 꼴로 항상 성립한다. 등호는 $ay=bx$일 때 성립한다. 따라서 옳은 것은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-09-u0m0s2t1",
+"custom": true
 }
 ]

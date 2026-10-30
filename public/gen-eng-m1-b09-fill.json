@@ -3131,5 +3131,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-eb85d379f9",
+"typeId": "eng-m1-b09-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"He wants to plays soccer after school.",
+"I need buying a new bag.",
+"She hopes to win the race.",
+"We plan go to the park tomorrow.",
+"They decide to visiting the museum."
+],
+"answer": "③",
+"solution": "want, need, hope, plan, decide는 목적어로 to부정사(to+동사원형)를 쓰는 동사입니다. ①은 to plays를 to play로, ②는 buying을 to buy로, ④는 go를 to go로, ⑤는 to visiting을 to visit으로 고쳐야 합니다. 따라서 'hopes to win'으로 바르게 쓴 ③이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e28ee120a6",
+"typeId": "eng-m1-b09-u2m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞지 않은 문장은?",
+"choices": [
+"The dog is wagging its tail.",
+"I feel happy today.",
+"She is lying on the sofa.",
+"His tail looks like a question mark.",
+"The cat feels safely now."
+],
+"answer": "⑤",
+"solution": "feel은 감각동사라서 뒤에 부사가 아니라 형용사가 와야 합니다. 그러므로 ⑤의 safely를 safe로 고쳐야 합니다. ①과 ③은 현재진행형(be동사+-ing)을 바르게 썼고, ②는 feel 뒤에 형용사 happy를 썼으며, ④는 명사 앞에 look like를 바르게 썼습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m1s0t0",
+"custom": true
 }
 ]

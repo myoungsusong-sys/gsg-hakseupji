@@ -3206,5 +3206,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b04-u4m7s0t0",
 "custom": true
+},
+{
+"id": "fill-22ada04bbe",
+"typeId": "eng-h2-b04-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>에 주어진 말을 바르게 배열하여 문장을 완성하시오.\n\nMalala Yousafzai는 1997년에 파키스탄 Mingora에서 태어났다.\n\n<보기> born / in / was / Mingora, Pakistan, / Malala Yousafzai / in 1997",
+"selfGrade": true,
+"answer": "Malala Yousafzai was born in Mingora, Pakistan, in 1997.",
+"solution": "「~에서 태어났다」는 수동태 was born을 쓰고, 장소(in Mingora, Pakistan)와 연도(in 1997)를 뒤에 이어 씁니다. 주어 Malala Yousafzai 뒤에 was born을 두고 장소·시간 순으로 배열하면 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-c5655297b7",
+"typeId": "eng-h2-b04-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답을 지문에서 찾아 완성하시오.\n\nDue to her effort, Malala Yousafzai became the youngest Nobel Prize winner in 2014.\n\nQ: What did Malala Yousafzai become in 2014?\n→ She became ______________________________.",
+"selfGrade": true,
+"answer": "the youngest Nobel Prize winner",
+"solution": "질문은 2014년에 Malala가 무엇이 되었는지 묻고 있습니다. 지문의 'became the youngest Nobel Prize winner in 2014'에서 보어 부분인 the youngest Nobel Prize winner를 그대로 찾아 쓰면 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-67eef2bc0f",
+"typeId": "eng-h2-b04-u0m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>에 주어진 말을 바르게 배열하여 문장을 완성하시오.\n\n1914년 8월 1일에, Ernest Shackleton은 Endurance호를 타고 런던을 떠났다.\n\n<보기> departed / on the ship Endurance / London / Ernest Shackleton / On August 1, 1914,",
+"selfGrade": true,
+"answer": "On August 1, 1914, Ernest Shackleton departed London on the ship Endurance.",
+"solution": "시간을 나타내는 On August 1, 1914,를 문장 맨 앞에 두고, 주어 Ernest Shackleton 다음에 동사 departed, 목적어 London, 그리고 「~호를 타고」에 해당하는 on the ship Endurance를 순서대로 배열합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-9f37f71f58",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nSociologists classify generations based on an individual's birth year. In the U.S., baby boomers are people born between 1946 and 1964, but in Korea, they are those born between 1955 and 1963. This difference exists because Korea and the U.S. experienced dramatic population increases during different periods. Generation X (1965-1980) earned its name from the title of a book written by Douglas Coupland in 1991. Generation Y (1981-1996) is also called the millennials because its members became adults with the beginning of the new millennium.",
+"choices": [
+"Generations are classified according to a person's birth year.",
+"In the U.S., baby boomers were born between 1946 and 1964.",
+"In Korea, baby boomers were born between 1955 and 1963.",
+"The name 'Generation X' comes from a book written by Douglas Coupland.",
+"Generation Y members got their name because they were born in a baby boom."
+],
+"answer": "⑤",
+"solution": "지문에서 Generation Y는 새 천 년(millennium)이 시작될 무렵에 성인이 되었기 때문에 millennials라 불린다고 했다. '출산율이 높은 시기(baby boom)'에 태어나 이름이 붙은 세대는 baby boomers이므로 ⑤가 글의 내용과 일치하지 않는다. 나머지 ①~④는 모두 지문에 그대로 제시되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0be3aa89f2",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThe cohort effect results in characteristic differences between generations. For example, Koreans went through the 1997 financial crisis, also known as the IMF crisis. Gen Xers were in their 20s at that time and experienced great employment instability. This may have led them to prioritize secure employment for their children. In contrast, Gen Zers grew up with smartphones, which earned them the \"digital natives\" label. They are used to getting their news and information from social media. However, their strength in using digital media often leads them to lack social skills.",
+"choices": [
+"Gen Xers were in their 40s during the 1997 IMF crisis.",
+"Gen Xers experienced great employment instability during the IMF crisis.",
+"Gen Zers grew up without smartphones.",
+"Gen Zers rarely get their news from social media.",
+"Gen Zers are described as having excellent social skills."
+],
+"answer": "②",
+"solution": "지문에서 Gen X는 1997년 IMF 위기 당시 20대였고 큰 고용 불안정을 겪었다고 했으므로 ②가 일치한다. ①은 20대였으므로 틀렸고, ③·④는 Gen Z가 스마트폰과 함께 자라 소셜 미디어에서 정보를 얻는다는 내용과 반대다. ⑤는 디지털 매체에 강한 반면 사회성(social skills)이 부족한 경향이 있다고 했으므로 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ba92fc7d45",
+"typeId": "eng-h2-b04-u1m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThe life cycle effect suggests that major life events, such as getting married or having children, can change people's values and attitudes. Many individuals say they used to be more adventurous during their youth. But they tend to become more responsible after getting married and take fewer risks after having children. For example, in the early 2000s, millennials were first perceived as being less committed to their companies. However, as they aged and got used to their roles, they began to be recognized as diligent workers.",
+"choices": [
+"Major life events can change people's values and attitudes.",
+"Many people were more adventurous when they were young.",
+"People tend to take fewer risks after having children.",
+"Millennials were first seen as less committed to their companies.",
+"As millennials aged, they came to be seen as lazier workers."
+],
+"answer": "⑤",
+"solution": "지문에서 밀레니얼 세대는 나이가 들고 역할에 익숙해지면서 오히려 성실한(diligent) 노동자로 인정받게 되었다고 했다. 따라서 '더 게으른(lazier) 노동자로 보이게 되었다'는 ⑤가 내용과 일치하지 않는다. ①~④는 모두 지문에 제시된 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e08ab757dc",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe Romantic Road in southern Germany is a trail (A)[that / what] attracts tourists from all over the world. When (B)[visiting / visit] the town of Rothenburg, don't forget (C)[to try / trying] a Schneeball, a famous pastry.",
+"choices": [
+"① that - visiting - to try",
+"② what - visit - trying",
+"③ that - visiting - trying",
+"④ what - visiting - to try",
+"⑤ that - visit - to try"
+],
+"answer": "①",
+"solution": "(A) 앞에 선행사 a trail이 있고 뒤 문장에 주어가 빠져 있으므로 선행사를 받는 관계대명사 that이 알맞다. 선행사가 있을 때는 what을 쓸 수 없다. (B) 주절의 주어(you)와 같아 생략된 분사구문이므로 visiting이 맞다. (C) 'don't forget to+동사원형'은 '~할 것을 잊지 마라'의 뜻으로 to try가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-908e59bc47",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAgritourism allows tourists (A)[experiencing / to experience] rural life. It also gives valuable insights (B)[which / what] help them understand farming. Most tourists feel (C)[happy / happily] when they feed animals on the farm.",
+"choices": [
+"① to experience - which - happy",
+"② experiencing - what - happily",
+"③ to experience - what - happy",
+"④ experiencing - which - happily",
+"⑤ to experience - which - happily"
+],
+"answer": "①",
+"solution": "(A) 'allow+목적어+to부정사' 구조이므로 to experience가 알맞다. (B) 앞에 선행사 insights가 있고 뒤에 동사 help가 이어지므로 주격 관계대명사 which가 맞다. 선행사가 있으므로 what은 쓸 수 없다. (C) 감각동사 feel 뒤에는 보어로 형용사가 와야 하므로 happy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eab2406ee1",
+"typeId": "eng-h2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIf you visit Würzburg in early summer, count yourself (A)[lucky / luckily]! You can enjoy Mozart's music (B)[performing / performed] by the best orchestras in the world. The beautiful music and the grand architecture (C)[combine / combining] to create a wonderful experience.",
+"choices": [
+"① lucky - performed - combine",
+"② luckily - performed - combining",
+"③ lucky - performing - combine",
+"④ luckily - performing - combining",
+"⑤ lucky - performed - combining"
+],
+"answer": "①",
+"solution": "(A) 'count+목적어+보어' 구조에서 보어 자리이므로 형용사 lucky가 알맞다. (B) 음악이 '연주되는' 것이므로 수동의 의미를 지닌 과거분사 performed가 맞다. (C) 주어가 music and architecture로 복수이고 문장의 본동사 자리이므로 combine이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u3m1s0t0",
+"custom": true
 }
 ]

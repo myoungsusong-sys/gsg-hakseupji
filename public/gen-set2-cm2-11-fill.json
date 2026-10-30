@@ -1188,5 +1188,43 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-11-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-9931f64c29",
+"typeId": "set2-cm2-11-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "두 함수 $f(x)=2x-1$, $g(x)=x+4$에 대하여 $(f\\circ g)(3)$의 값은?",
+"choices": [
+"$9$",
+"$11$",
+"$13$",
+"$15$",
+"$17$"
+],
+"answer": "③",
+"solution": "합성함수는 안쪽 함수부터 계산한다. $g(3)=3+4=7$이다. 따라서 $(f\\circ g)(3)=f(g(3))=f(7)=2\\times 7-1=13$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-c18463a746",
+"typeId": "set2-cm2-11-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "두 함수 $f(x)=4x+3$, $g(x)=x-1$에 대하여 합성함수 $(g\\circ f)(x)$를 구하면?",
+"choices": [
+"$4x-2$",
+"$4x+2$",
+"$4x+4$",
+"$x+2$",
+"$4x+3$"
+],
+"answer": "②",
+"solution": "$(g\\circ f)(x)=g(f(x))$이므로 $g$의 식에 $x$ 대신 $f(x)=4x+3$을 대입한다. 따라서 $(g\\circ f)(x)=(4x+3)-1=4x+2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t3",
+"custom": true
 }
 ]

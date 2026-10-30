@@ -2604,5 +2604,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-be53bef2c1",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nHi, my name is Somi. I'm from Korea. I play the drums in the school band. We play K-pop songs. Our songs ________ great!",
+"choices": [
+"am",
+"is",
+"are",
+"be",
+"being"
+],
+"answer": "③",
+"solution": "빈칸의 주어는 Our songs이고, 복수 명사이다. 주어가 복수일 때 현재형 be동사는 are를 쓴다. am은 I와 함께 쓰고, is는 3인칭 단수 주어와 함께 쓰므로 알맞지 않다. be와 being은 주어 바로 뒤에서 동사로 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f20420d694",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nHi! I'm Mariam. I live in Dubai. The sunlight is very strong here. My school ________ a special rule. It's \"No hat, no play.\"",
+"choices": [
+"have",
+"has",
+"having",
+"to have",
+"is have"
+],
+"answer": "②",
+"solution": "빈칸의 주어 My school은 3인칭 단수이다. 주어가 3인칭 단수이고 현재 시제이면 일반동사 have는 has로 바뀐다. having과 to have는 문장의 동사 자리에 혼자 올 수 없다. is have처럼 be동사와 일반동사를 함께 쓸 수도 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2b6229a71d",
+"typeId": "eng-m1-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nHello. I'm Luca. I'm from New Zealand. People in my country ________ rugby. I have a rugby ball in my school bag.",
+"choices": [
+"loves",
+"loving",
+"to love",
+"love",
+"is love"
+],
+"answer": "④",
+"solution": "빈칸의 주어는 People이고, '사람들'이라는 뜻의 복수 명사이다. 주어가 복수이면 일반동사에 -s를 붙이지 않고 동사원형 love를 쓴다. loves는 3인칭 단수 주어와 함께 쓰므로 틀리다. loving, to love, is love는 동사 자리에 올 수 없는 형태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m1s0t0",
+"custom": true
 }
 ]

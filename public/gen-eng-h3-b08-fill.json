@@ -507,5 +507,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-11bbfe79e0",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe scientific community has even ______ the term “sitting disease” for this phenomenon in order to represent the harmful health effects that result from long periods of sitting.",
+"choices": [
+"coined",
+"eliminated",
+"borrowed",
+"forgotten",
+"ignored"
+],
+"answer": "①",
+"solution": "'새로운 용어를 만들어 내다'라는 뜻이 필요하므로 coined가 알맞다. eliminated(없애다), forgotten(잊은), ignored(무시한)는 문맥상 어울리지 않는다. 과학계가 'sitting disease'라는 말을 '만들어 냈다'는 흐름이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-56c560425d",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어 combat과 의미가 가장 가까운 것은?\n\nWalking is one of the safest, easiest, and cheapest forms of exercise to combat sitting disease.",
+"choices": [
+"fight against",
+"give in to",
+"wait for",
+"take part in",
+"give up on"
+],
+"answer": "①",
+"solution": "여기서 combat은 '~와 맞서 싸우다, 퇴치하다'라는 동사로 쓰였다. 따라서 fight against가 의미상 가장 가깝다. 걷기가 sitting disease에 '맞서는' 운동이라는 문맥이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-629b13eebe",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe longer you sit, the more ______ you are to the dangers of obesity, heart disease, and even depression.",
+"choices": [
+"exposed",
+"protected",
+"connected",
+"related",
+"opposed"
+],
+"answer": "①",
+"solution": "오래 앉아 있을수록 비만, 심장병 등의 위험에 더 '노출된다'는 흐름이므로 be exposed to(~에 노출되다)의 exposed가 알맞다. protected(보호받는)는 반대 의미라 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6d6f393c81",
+"typeId": "eng-h3-b08-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nMany people find it hard to stick to a walking routine on their own. However, walking with a friend can completely change this. When you promise to meet someone, you feel a sense of responsibility, so you are far less likely to (A)[postpone / proceed] your workout. Moreover, a lively conversation can make the minutes pass so quickly that you barely (B)[notice / doubt] the effort you are putting in. Finally, sharing a pleasant scene with a companion makes the whole experience far more (C)[monotonous / rewarding], encouraging you to return again and again.\n\n(A)          (B)          (C)",
+"choices": [
+"postpone — notice — rewarding",
+"proceed — notice — monotonous",
+"postpone — doubt — rewarding",
+"proceed — doubt — monotonous",
+"postpone — notice — monotonous"
+],
+"answer": "①",
+"solution": "(A) 친구와 약속하면 책임감이 생겨 운동을 '미룰(postpone)' 가능성이 줄어든다는 흐름이 자연스럽다. (B) 대화로 시간이 빨리 지나 자신이 들이는 노력을 거의 '알아차리지(notice)' 못한다는 의미가 맞다. (C) 함께 경치를 나누면 경험이 더 '보람 있게(rewarding)' 된다는 긍정적 흐름이므로 monotonous(단조로운)는 부적절하다. 따라서 postpone — notice — rewarding이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9ad91ac248",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nYou can even make walking a social media challenge and get others ______ you.",
+"choices": [
+"join",
+"joins",
+"joined",
+"to join",
+"joining"
+],
+"answer": "④",
+"solution": "「get+목적어+목적격보어」 구조에서 목적어(others)와 보어의 관계가 능동이면 보어 자리에 to부정사를 쓴다. 따라서 'get others to join you(남들이 함께하게 만들다)'가 알맞다. 동사원형 join, 과거형 joins·joined, 동명사 joining은 모두 어법상 맞지 않다. 정답은 ④ to join이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-02f65f1756",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWalking ______ been found to improve our creativity.",
+"choices": [
+"have",
+"has",
+"are",
+"were",
+"having"
+],
+"answer": "②",
+"solution": "주어 Walking은 동명사로 단수 취급하므로 단수 동사를 써야 한다. 현재완료 수동태 'has been found(밝혀져 왔다)'가 자연스럽다. 복수 동사 have·are·were는 수가 맞지 않고, having은 동사 자리에 올 수 없다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0ccbea6493",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nHere are some simple ways to make walking ______ for you.",
+"choices": [
+"enjoy",
+"enjoyed",
+"enjoyably",
+"enjoyable",
+"to enjoy"
+],
+"answer": "④",
+"solution": "「make+목적어+목적격보어」 구조에서 목적격보어 자리에는 형용사가 와야 하므로 'make walking enjoyable(걷기를 즐겁게 만들다)'이 알맞다. 부사 enjoyably는 보어가 될 수 없고, 동사 enjoy·enjoyed·to enjoy도 이 자리에 올 수 없다. 정답은 ④ enjoyable이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true
 }
 ]

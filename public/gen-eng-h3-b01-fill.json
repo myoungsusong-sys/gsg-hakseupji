@@ -562,5 +562,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b01-u1m3s0t0",
 "custom": true
+},
+{
+"id": "fill-082c041828",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nScience belongs to (A)________, and ordinary people can make valuable (B)________ to science.\n\n     (A)                  (B)",
+"choices": [
+"① everyone — contributions",
+"② everyone — experiments",
+"③ scientists — contributions",
+"④ scientists — discoveries",
+"⑤ researchers — experiments"
+],
+"answer": "①",
+"solution": "과학은 모든 사람의 것이며, 평범한 사람들도 과학에 가치 있는 기여를 할 수 있다는 내용이다. (A)에는 '모든 사람'을 뜻하는 everyone이 적절하다. (B)에는 make contributions to(~에 기여하다)라는 표현에 따라 contributions가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7efc9ae26f",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nKevin Schawinski was an (A)________ researcher. He had to classify images of galaxies according to their (B)________.\n\n     (A)                  (B)",
+"choices": [
+"① biology — shape",
+"② astronomy — color",
+"③ physics — size",
+"④ astronomy — shape",
+"⑤ biology — size"
+],
+"answer": "④",
+"solution": "Kevin Schawinski는 은하를 연구하는 천문학 연구자였으므로 (A)에는 astronomy가 적절하다. 또한 그는 은하의 모양에 따라 이미지를 분류해야 했으므로 (B)에는 shape이 들어가야 한다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1e8c5e7c90",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nOnline media helped (A)________ the word about Galaxy Zoo. As a result, more people began to (B)________ in the project.\n\n     (A)                  (B)",
+"choices": [
+"① stop — participate",
+"② spread — participate",
+"③ stop — classify",
+"④ spread — disappear",
+"⑤ reduce — disappear"
+],
+"answer": "②",
+"solution": "온라인 매체의 도움으로 Galaxy Zoo가 널리 알려지고 더 많은 사람이 프로젝트에 참여했다는 내용이다. (A)에는 '소식이나 정보를 퍼뜨리다'라는 의미의 spread가 적절하다. (B)에는 participate in(~에 참여하다)이라는 표현에 따라 participate가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e8ca727c91",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKevin Schawinski was a young astronomy researcher (A)[studying / studied] black holes and the evolution of galaxies at the University of Oxford. His job there was dull and time-consuming. He had to classify around one million images of galaxies according to their shape. Since they all (B)[looked / looking] similar but were actually shaped slightly differently, the best way to do this was to sort them while looking at each one individually. It took Schawinski a whole week (C)[classify / to classify] just 50,000 galaxies.\n\n(A) - (B) - (C)",
+"choices": [
+"studying - looked - to classify",
+"studying - looking - classify",
+"studied - looked - classify",
+"studied - looking - to classify",
+"studying - looking - to classify"
+],
+"answer": "①",
+"solution": "(A) 앞의 명사 researcher가 black holes를 '연구하는' 것이므로 능동 의미의 현재분사 studying이 알맞다. (B) 접속사 Since가 이끄는 부사절에 동사가 필요하므로 과거시제 동사 looked가 알맞다. (C) 'It takes+사람+시간+to부정사(~하는 데 시간이 걸리다)' 구문이므로 to classify가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d428f17122",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe website was kept as simple as possible, with a very basic design and an easy-to-use interface. New visitors (A)[greeted / were greeted] with a brief tutorial that explained the project. Then they were shown an image of a galaxy and asked to click buttons (B)[who / that] described its features. After completion of the tutorial and a little bit of practice, the participants were able to classify galaxies (C)[effective / effectively].\n\n(A) - (B) - (C)",
+"choices": [
+"greeted - who - effective",
+"greeted - that - effectively",
+"were greeted - who - effectively",
+"were greeted - that - effective",
+"were greeted - that - effectively"
+],
+"answer": "⑤",
+"solution": "(A) 새로운 방문자들이 튜토리얼로 '맞이된' 것이므로 수동태 were greeted가 알맞다. (B) 선행사 buttons는 사물이므로 주격 관계대명사 that이 알맞고, who는 사람 선행사에 쓴다. (C) 동사 classify를 꾸미는 자리이므로 부사 effectively가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3041657f9a",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nGalaxy Zoo has now grown into Zooniverse, which (A)[is / are] one of the most popular platforms on the Internet for ordinary people who want to participate in science projects. It is (B)[more / most] active than ever before, with about 2 million registered users worldwide. It now offers a wide range of projects in astronomy, biology, physics, and more. If you want to get (C)[involving / involved], you should definitely check it out!\n\n(A) - (B) - (C)",
+"choices": [
+"is - most - involving",
+"are - more - involved",
+"is - more - involved",
+"are - most - involving",
+"is - most - involved"
+],
+"answer": "③",
+"solution": "(A) 관계대명사 which의 선행사는 단수 명사 Zooniverse이므로 단수 동사 is가 알맞다. (B) 뒤에 than이 있으므로 비교급 more가 알맞다. (C) 'get involved(참여하다)'는 과거분사를 쓰는 표현이므로 involved가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true
 }
 ]

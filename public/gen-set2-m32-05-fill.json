@@ -1102,5 +1102,126 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-m32-05-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-8f06a81bd2",
+"typeId": "set2-m32-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "직선 $AT$가 점 $A$에서 원 $O$에 접하고, 이 원 위에 두 점 $B$, $C$가 있다. 현 $AB$에 대하여 접선과 현이 이루는 각이 $\\angle TAB=55^\\circ$이고, 점 $C$는 $\\angle TAB$가 놓인 쪽과 반대쪽의 호 $AB$ 위에 있다.\n\n이때 원주각 $\\angle ACB$의 크기는?",
+"choices": [
+"$45^\\circ$",
+"$50^\\circ$",
+"$55^\\circ$",
+"$60^\\circ$",
+"$65^\\circ$"
+],
+"answer": "③",
+"solution": "원의 접선과 현이 이루는 각은 그 현이 자르는 호에 대한 원주각과 크기가 같다. 따라서 $\\angle ACB=\\angle TAB=55^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-1f547a5842",
+"typeId": "set2-m32-05-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "원 위에 세 점 $A$, $B$, $C$가 있고, 점 $A$에서의 접선 위에 점 $T$가 있다. 현 $AB$에 대한 원주각이 $\\angle ACB=48^\\circ$일 때, 접선과 현 $AB$가 이루는 각 $\\angle TAB$의 크기는? (단, 점 $C$는 $\\angle TAB$와 반대쪽 호 위에 있다.)",
+"choices": [
+"$42^\\circ$",
+"$48^\\circ$",
+"$52^\\circ$",
+"$84^\\circ$",
+"$96^\\circ$"
+],
+"answer": "②",
+"solution": "접선과 현이 이루는 각은 그 현에 대한 원주각과 같으므로 $\\angle TAB=\\angle ACB=48^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-eff7f2261a",
+"typeId": "set2-m32-05-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "직선 $PT$가 점 $B$에서 원에 접하고, 이 원 위에 두 점 $A$, $C$가 있다. 접선과 현 $BC$가 이루는 각이 $\\angle TBC=63^\\circ$일 때, 호 $BC$에 대한 원주각 $\\angle BAC$의 크기를 구하시오. (단, 점 $A$는 $\\angle TBC$와 반대쪽 호 위에 있다.)",
+"selfGrade": true,
+"answer": "$63^\\circ$",
+"solution": "접선과 현이 이루는 각은 그 현이 자르는 호에 대한 원주각과 크기가 같다. 따라서 $\\angle BAC=\\angle TBC=63^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-fd2b51d2a0",
+"typeId": "set2-m32-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "원에 내접하는 사각형 $ABCD$에서 $\\angle A = 108^\\circ$일 때, $\\angle C$의 크기는?",
+"choices": [
+"$62^\\circ$",
+"$72^\\circ$",
+"$82^\\circ$",
+"$92^\\circ$",
+"$108^\\circ$"
+],
+"answer": "②",
+"solution": "원에 내접하는 사각형은 마주 보는 두 각의 크기의 합이 $180^\\circ$이다. 따라서 $\\angle A + \\angle C = 180^\\circ$이므로 $\\angle C = 180^\\circ - 108^\\circ = 72^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-f4bf83ab25",
+"typeId": "set2-m32-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "원에 내접하는 사각형 $ABCD$에서 $\\angle B = 2\\angle D$일 때, $\\angle D$의 크기는?",
+"choices": [
+"$45^\\circ$",
+"$50^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③",
+"solution": "원에 내접하는 사각형에서 마주 보는 두 각의 크기의 합은 $180^\\circ$이므로 $\\angle B + \\angle D = 180^\\circ$이다. $\\angle B = 2\\angle D$를 대입하면 $2\\angle D + \\angle D = 180^\\circ$, 즉 $3\\angle D = 180^\\circ$이므로 $\\angle D = 60^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-482e782001",
+"typeId": "set2-m32-05-u0m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "원에 내접하는 사각형 $ABCD$에서 변 $\\overline{BC}$를 점 $C$ 쪽으로 연장한 직선 위에 점 $E$를 잡았더니 $\\angle DCE = 95^\\circ$가 되었다. $\\angle BAD$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$95^\\circ$",
+"solution": "원에 내접하는 사각형에서 한 외각의 크기는 그와 이웃하지 않는 내각(마주 보는 내각)의 크기와 같다. $\\angle DCE$는 꼭짓점 $C$에서의 외각이므로 마주 보는 내각 $\\angle BAD$와 크기가 같다. 따라서 $\\angle BAD = \\angle DCE = 95^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s0t3",
+"custom": true
+},
+{
+"id": "fill-bff141259e",
+"typeId": "set2-m32-05-u0m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "원 위에 네 점 $A$, $B$, $C$, $D$가 이 순서대로 놓여 있고, 두 대각선 $\\overline{AC}$와 $\\overline{BD}$의 교점을 $P$라 하자. $\\overline{AB} = \\overline{AD}$이고 $\\angle ABD = 55^\\circ$, $\\angle DBC = 20^\\circ$일 때, $\\angle APB$의 크기는?",
+"choices": [
+"$70^\\circ$",
+"$75^\\circ$",
+"$80^\\circ$",
+"$95^\\circ$",
+"$105^\\circ$"
+],
+"answer": "②",
+"solution": "$\\overline{AB}=\\overline{AD}$이면 삼각형 $ABD$가 이등변삼각형이므로 $\\angle ADB=\\angle ABD=55^\\circ$이다. $\\angle ABC=\\angle ABD+\\angle DBC=75^\\circ$이고, 원에 내접하는 사각형이므로 $\\angle ADC=180^\\circ-75^\\circ=105^\\circ$, 따라서 $\\angle BDC=105^\\circ-55^\\circ=50^\\circ$이다. 호 $BC$에 대한 원주각이므로 $\\angle BAC=\\angle BDC=50^\\circ$이다. 삼각형 $ABP$에서 $\\angle ABP=55^\\circ$, $\\angle BAP=50^\\circ$이므로 $\\angle APB=180^\\circ-55^\\circ-50^\\circ=75^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m32-05-u0m0s0t3",
+"custom": true
 }
 ]

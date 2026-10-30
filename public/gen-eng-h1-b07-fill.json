@@ -5344,5 +5344,159 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u4m2s0t0",
 "custom": true
+},
+{
+"id": "fill-b3c7a923a1",
+"typeId": "eng-h1-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nDan persuaded me ______ one, and soon I was able to use the hand crank pretty well.",
+"choices": [
+"try",
+"trying",
+"to try",
+"tried",
+"tries"
+],
+"answer": "③",
+"solution": "persuade는 「persuade + 목적어 + to부정사」 형태로 쓰여 '~가 …하도록 설득하다'라는 뜻을 나타낸다. 따라서 목적격 보어 자리에는 to부정사 to try가 와야 한다. 동사원형, 동명사, 과거형, 3인칭 단수형은 이 자리에 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4f80bfe0f6",
+"typeId": "eng-h1-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\n______ people floating down the Merced River and hiking the Half Dome was cool.",
+"choices": [
+"Watch",
+"Watches",
+"Watched",
+"Watching",
+"Has watched"
+],
+"answer": "④",
+"solution": "문장의 동사는 was이므로 빈칸부터 the Half Dome까지가 주어 역할을 해야 한다. 동사를 주어로 쓰려면 동명사(또는 to부정사)로 바꾸어야 하므로 Watching이 알맞다. 동명사 주어는 단수 취급하므로 동사 was와도 수가 맞는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dd11f2e46a",
+"typeId": "eng-h1-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nIt must have ______ the cold cuts and chips we had packed because it began to approach us.",
+"choices": [
+"smell",
+"smelling",
+"to smell",
+"smells",
+"smelled"
+],
+"answer": "⑤",
+"solution": "「must have + 과거분사」는 '~했음이 틀림없다'라는 뜻으로 과거 일에 대한 강한 추측을 나타낸다. have 뒤에는 과거분사가 와야 하므로 smelled가 알맞다. 곰이 다가오기 시작한 것을 근거로 곰이 음식 냄새를 맡았을 것이라고 추측하는 문맥이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b218789845",
+"typeId": "eng-h1-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓔ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFisherman’s Wharf is popular for its pretty shops and seafood restaurants. We were hungry, but it took almost an hour for us ⓐ[to look / looking] around and decide ⓑ[what / that] to eat for lunch. We chose to eat a roasted crab and clam chowder soup. The sea lions peacefully lying on the floats near the pier ⓒ[looked / looking] like melting chocolate. They didn’t smell pleasant up close, yet their cuteness delayed our visit to the Golden Gate Bridge, the famous spot that ⓓ[appears / appear] in most movies and TV shows ⓔ[filmed / filming] in San Francisco.\n\n     ⓐ        ⓑ      ⓒ        ⓓ        ⓔ",
+"choices": [
+"to look - what - looking - appears - filmed",
+"looking - what - looked - appear - filmed",
+"to look - that - looked - appears - filming",
+"to look - what - looked - appears - filmed",
+"to look - what - looked - appear - filmed"
+],
+"answer": "④",
+"solution": "ⓐ 「it takes + 시간 + for 목적어 + to부정사」 구문이므로 to look이 맞다. ⓑ '무엇을 먹을지'를 뜻하는 「의문사 + to부정사」이므로 what이 와야 하고, that은 이 자리에 쓸 수 없다. ⓒ 주어 The sea lions를 lying ~ pier가 뒤에서 꾸며 주고 있을 뿐 문장에 본동사가 따로 없으므로 본동사 looked가 와야 한다. ⓓ 관계대명사 that의 선행사는 바로 앞의 movies and TV shows가 아니라 단수 명사 the famous spot이므로 appears가 맞고, ⓔ TV shows는 '촬영되는' 대상이므로 수동의 과거분사 filmed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3d3484f311",
+"typeId": "eng-h1-b07-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 배열하여 문장을 완성하시오.\n\n우리말: 나는 중학교 이후로 케이팝 팬이었다.\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것\n• 현재완료 시제로 쓸 것\n\n<보기> a / been / fan / have / I / K-pop / middle school / since\n\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "I have been a K-pop fan since middle school.",
+"solution": "'~ 이후로 계속 …해 왔다'는 「have + 과거분사」 현재완료로 쓰고 시작 시점은 since로 나타냅니다. 주어 I 뒤에 have been을 두고 a K-pop fan을 보어로, since middle school을 문장 끝에 배열합니다. 따라서 I have been a K-pop fan since middle school. 이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-46ee128231",
+"typeId": "eng-h1-b07-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 표현을 활용하여 문장을 완성하시오.\n\n우리말: K-드라마에 푹 빠진 것은 나에게 새로운 세계를 열어 주었다.\n\n<조건>\n• 동명사를 문장의 주어로 쓸 것\n• <보기>의 표현을 모두 사용하되 필요시 형태를 변형할 것\n\n<보기> get hooked on, K-drama, open up, a new world, for me\n\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "Getting hooked on K-drama opened up a new world for me.",
+"solution": "동사구 get hooked on을 주어로 쓰려면 동명사 Getting으로 바꿔 Getting hooked on K-drama가 주어가 됩니다. 동명사 주어는 단수 취급이고 과거의 일이므로 동사는 opened up으로 씁니다. 완성된 문장은 Getting hooked on K-drama opened up a new world for me. 입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-48d1750a2f",
+"typeId": "eng-h1-b07-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장을 관계대명사 who를 사용하여 한 문장으로 바꿔 쓰시오.\n\nI have a Korean neighbor. She gives me some useful tips on Korean cooking.\n\n<조건>\n• 관계대명사 who를 사용할 것\n• 두 문장을 한 문장으로 연결할 것\n\n→ ______________________________________________.",
+"selfGrade": true,
+"answer": "I have a Korean neighbor who gives me some useful tips on Korean cooking.",
+"solution": "두 번째 문장의 주어 She가 앞 문장의 사람 명사 a Korean neighbor를 가리키므로 사람 주격 관계대명사 who로 바꿔 연결합니다. who gives me some useful tips on Korean cooking이 a Korean neighbor를 꾸며 I have a Korean neighbor who gives me some useful tips on Korean cooking. 이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-782e505e10",
+"typeId": "eng-h1-b07-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 요약문의 빈칸 (1), (2)에 들어갈 알맞은 말을 본문에서 찾아 쓰시오.\n\nThe octopus became less scared as I visited more often. After about a month, it came near me. I put my hand out, and it reached out to me. After another week, it started to wave like a human friend saying, “Hi, I’m excited to see you.”\n\n[요약문]\nAs I visited the octopus more (1)__________, she became less (2)__________ and began to approach me.\n\n<조건>\n• 각 빈칸에 본문에 나온 단어를 한 단어씩 쓸 것.\n• 필요시 단어의 형태를 변형할 것.\n\n(1) ____________________\n(2) ____________________",
+"selfGrade": true,
+"answer": "(1) often (2) scared",
+"solution": "문어는 글쓴이가 더 자주 방문할수록 두려움을 덜 느끼고 가까이 다가왔다. 'as I visited more often'에서 방문 빈도를 나타내는 often을 찾을 수 있다. 또한 'became less scared'에서 두려움이 줄어들었다는 의미의 scared를 그대로 사용하면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6742314a9a",
+"typeId": "eng-h1-b07-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 우리말과 같은 뜻이 되도록 주어진 단어를 올바르게 배열하여 문장을 완성하시오.\n\nThe next day, I was relieved to see that she had survived. She was weak, and her colors were not as bright.\n\n[우리말]\n나는 그녀가 살아남았다는 것을 보고 안도했다.\n\n<보기>\n(relieved / that / I / had survived / was / to see / she)\n\n<조건>\n• <보기>의 단어 및 표현을 모두 한 번씩 사용할 것.\n• 필요한 대문자와 문장부호를 사용할 것.\n\n정답: __________________________________________",
+"selfGrade": true,
+"answer": "I was relieved to see that she had survived.",
+"solution": "주어 I와 동사 was를 먼저 배치하고, 감정을 나타내는 형용사 relieved를 연결한다. 안도한 이유는 to부정사인 to see로 표현한다. 그 뒤에 that절을 놓고 과거완료 had survived를 사용하면 문장이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-edeedf75f5",
+"typeId": "eng-h1-b07-u2m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 밑줄 친 우리말을 <조건>에 맞게 영작하시오.\n\nAfter mating, the octopus didn’t come out of her den. There would be no feeding or hunting. She was timing her final moments for the hatching of her eggs. After the eggs hatched, she died.\n\n[영작할 문장]\n알들이 부화한 후, 그녀는 죽었다.\n\n<보기>\n(her eggs / after / die / hatch / she)\n\n<조건>\n• <보기>의 단어를 모두 사용할 것.\n• 필요시 단어의 형태를 변형할 것.\n• 시간의 접속사 after를 사용할 것.\n• 총 6단어로 영작할 것.\n\n정답: __________________________________________",
+"selfGrade": true,
+"answer": "After her eggs hatched, she died.",
+"solution": "알들이 부화한 일이 문어가 죽은 일보다 먼저 일어났으므로 after를 사용해 시간 관계를 나타낸다. after절의 주어는 her eggs이고 동사는 과거형 hatched이다. 주절에서도 과거형 died를 사용하며, 문장은 총 6단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m6s0t0",
+"custom": true
 }
 ]

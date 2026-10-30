@@ -1650,5 +1650,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b05-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-109f2160e9",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nDon’t just sit still and listen. _____________ listen. Make eye contact with the speaker. Nod your head from time to time.",
+"choices": [
+"Active",
+"Actively",
+"Activity",
+"Action",
+"Acted"
+],
+"answer": "②",
+"solution": "빈칸은 동사 listen을 꾸며 주는 자리이므로 동사를 수식하는 부사가 필요하다. 형용사 Active가 아니라 부사 Actively를 써야 한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a651156637",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nBegin conversations with an easy topic. Talk about the weather or hobbies. Small talk can lead to _____________ fun topics to talk about.",
+"choices": [
+"another",
+"other",
+"others",
+"each",
+"every"
+],
+"answer": "②",
+"solution": "뒤에 오는 명사 topics가 복수형이므로 단수 명사를 꾸미는 another는 쓸 수 없다. 복수 명사를 수식하여 '다른 ~들'이라는 뜻을 나타내는 other가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f8220e9a0c",
+"typeId": "eng-m2-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nYou can also say, “Right,” or “I see.” These things will show _____________ you’re really listening.",
+"choices": [
+"what",
+"which",
+"that",
+"who",
+"how"
+],
+"answer": "③",
+"solution": "show의 목적어가 되는 완전한 문장(you’re really listening)을 이끄는 명사절 접속사가 필요하다. 뒤 문장에 빠진 성분이 없으므로 의문사 what이 아니라 접속사 that을 써야 한다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b05-u0m1s0t0",
+"custom": true
 }
 ]
