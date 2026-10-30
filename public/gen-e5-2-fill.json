@@ -10573,5 +10573,101 @@
 "twinGroup": "tw-20021",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-0ac16ba873",
+"typeId": "20045",
+"kind": "객관식",
+"diff": 1,
+"body": "점 $O$를 대칭의 중심으로 하여 점 $A$의 대응점이 점 $A'$입니다. $AO=7\\text{ cm}$일 때, 선분 $AA'$의 길이는 얼마입니까?",
+"choices": [
+"$7\\text{ cm}$",
+"$10\\text{ cm}$",
+"$12\\text{ cm}$",
+"$14\\text{ cm}$",
+"$21\\text{ cm}$"
+],
+"answer": "④",
+"solution": "점대칭에서 대칭의 중심은 대응점끼리 이은 선분을 이등분합니다. 따라서 $AA'=AO\\times2=7\\times2=14\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20045",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-63eecee99b",
+"typeId": "20045",
+"kind": "객관식",
+"diff": 1,
+"body": "점 $O$를 대칭의 중심으로 하여 점 $X$의 대응점이 점 $X'$입니다. $XX'=22\\text{ cm}$일 때, $XO$는 얼마입니까?",
+"choices": [
+"$9\\text{ cm}$",
+"$10\\text{ cm}$",
+"$11\\text{ cm}$",
+"$12\\text{ cm}$",
+"$44\\text{ cm}$"
+],
+"answer": "③",
+"solution": "대칭의 중심인 점 $O$는 선분 $XX'$의 한가운데에 있습니다. 따라서 $XO=22\\div2=11\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20045",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8b2e904543",
+"typeId": "20045",
+"kind": "주관식",
+"diff": 1,
+"body": "점 $O$를 대칭의 중심으로 하는 점대칭도형에서 점 $M$과 점 $M'$은 서로 대응합니다. 세 점이 $M$, $O$, $M'$의 순서로 한 직선 위에 있고 $MM'=26\\text{ cm}$일 때, $OM'$의 길이를 구하세요.",
+"selfGrade": true,
+"answer": "$13\\text{ cm}$",
+"solution": "점 $O$는 대응점 $M$과 $M'$을 이은 선분의 중점입니다. 따라서 $OM'=26\\div2=13\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20045",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4d8e4db311",
+"typeId": "20045",
+"kind": "주관식",
+"diff": 3,
+"body": "육각형 $ABCDEF$는 점 $O$를 대칭의 중심으로 하는 점대칭도형이고, $A$와 $D$, $B$와 $E$, $C$와 $F$가 각각 서로 대응합니다. $AB=3\\text{ cm}$, $BC=4\\text{ cm}$, $CD=5\\text{ cm}$이고, $AO=4\\text{ cm}$, $BO=5\\text{ cm}$, $CO=3\\text{ cm}$입니다. 육각형 $ABCDEF$의 둘레에 세 선분 $AD$, $BE$, $CF$의 길이의 합을 더한 값을 구하세요.",
+"selfGrade": true,
+"answer": "$48\\text{ cm}$",
+"solution": "점대칭도형에서 서로 대응하는 변의 길이는 같습니다. 따라서 $DE=AB=3\\text{ cm}$, $EF=BC=4\\text{ cm}$, $FA=CD=5\\text{ cm}$이므로 육각형의 둘레는 $(3+4+5)\\times2=24\\text{ cm}$입니다. 또 대칭의 중심인 점 $O$는 대응점끼리 이은 선분을 이등분하므로 $AD=4\\times2=8\\text{ cm}$, $BE=5\\times2=10\\text{ cm}$, $CF=3\\times2=6\\text{ cm}$입니다. 세 선분의 길이의 합은 $8+10+6=24\\text{ cm}$이므로 구하는 값은 $24+24=48\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20045",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9258ac48b7",
+"typeId": "20045",
+"kind": "주관식",
+"diff": 4,
+"body": "육각형 $ABCDEF$는 점 $O$를 대칭의 중심으로 하는 점대칭도형이고, $A$와 $D$, $B$와 $E$, $C$와 $F$가 각각 서로 대응합니다. 이 육각형의 둘레는 $48\\text{ cm}$이고, $AB=8\\text{ cm}$, $BC=6\\text{ cm}$입니다. 또 $AO=6\\text{ cm}$, $BE=20\\text{ cm}$, $CF=16\\text{ cm}$입니다. $CD+AD+BO+CO$의 값을 구하세요.",
+"selfGrade": true,
+"answer": "$40\\text{ cm}$",
+"solution": "서로 대응하는 변의 길이는 같으므로 $AB+BC+CD$는 육각형의 둘레의 절반입니다. 따라서 $AB+BC+CD=48\\div2=24\\text{ cm}$이고, $CD=24-8-6=10\\text{ cm}$입니다. 대칭의 중심인 점 $O$는 대응점끼리 이은 선분을 이등분하므로 $AD=6\\times2=12\\text{ cm}$, $BO=20\\div2=10\\text{ cm}$, $CO=16\\div2=8\\text{ cm}$입니다. 따라서 $CD+AD+BO+CO=10+12+10+8=40\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20045",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-42c88d9bc9",
+"typeId": "20045",
+"kind": "주관식",
+"diff": 4,
+"body": "육각형 $ABCC'B'A'$은 점 $O$를 대칭의 중심으로 하는 점대칭도형입니다. $A$와 $A'$, $B$와 $B'$, $C$와 $C'$이 각각 서로 대응하며, 육각형의 둘레는 $86\\text{ cm}$입니다. $AB=9\\text{ cm}$, $AO=8\\text{ cm}$, $CO=6\\text{ cm}$일 때, 선분 $BC$의 길이를 구하세요.",
+"selfGrade": true,
+"answer": "$20\\text{ cm}$",
+"solution": "서로 대응하는 변의 길이는 같으므로 $A'B'=AB=9\\text{ cm}$이고 $B'C'=BC$입니다. 또 대칭의 중심인 점 $O$는 대응점끼리 이은 선분을 이등분하므로 $AA'=8\\times2=16\\text{ cm}$, $CC'=6\\times2=12\\text{ cm}$입니다. 따라서 두 선분 $BC$와 $B'C'$의 길이의 합은 $86-(9+12+9+16)=40\\text{ cm}$입니다. 두 선분의 길이는 같으므로 $BC=40\\div2=20\\text{ cm}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-20045",
+"custom": true,
+"rv": 1
 }
 ]
