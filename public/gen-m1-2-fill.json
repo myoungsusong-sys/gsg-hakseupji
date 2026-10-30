@@ -421,5 +421,299 @@
 "source": "유사 문항",
 "twinGroup": "tw-17794",
 "custom": true
+},
+{
+"id": "fill-9a5473fdd5",
+"typeId": "17806",
+"kind": "객관식",
+"diff": 1,
+"body": "반지름의 길이가 $4\\text{ cm}$인 반원 모양의 종이와 세로의 길이가 $4\\text{ cm}$인 직사각형 모양의 종이를 일부가 겹치도록 놓았다. 겹친 부분을 제외하고 각 종이에 남은 부분을 색칠했더니 두 색칠한 부분의 넓이가 같았다. 직사각형의 가로의 길이는?",
+"choices": [
+"$\\pi\\text{ cm}$",
+"$2\\pi\\text{ cm}$",
+"$3\\pi\\text{ cm}$",
+"$4\\pi\\text{ cm}$",
+"$8\\pi\\text{ cm}$"
+],
+"answer": "②",
+"solution": "두 색칠한 부분에 겹친 부분을 각각 더하면 반원과 직사각형의 넓이가 같다. 반원의 넓이는 $\\frac12\\times\\pi\\times4^2=8\\pi\\text{ cm}^2$이다. 따라서 직사각형의 가로의 길이는 $8\\pi\\div4=2\\pi\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-cccc721587",
+"typeId": "17806",
+"kind": "객관식",
+"diff": 1,
+"body": "반지름의 길이가 $10\\text{ cm}$이고 중심각의 크기가 $72^\\circ$인 부채꼴과 밑변의 길이가 $8\\text{ cm}$인 삼각형이 일부 겹쳐 있다. 부채꼴에만 속하는 부분과 삼각형에만 속하는 부분의 넓이가 같을 때, 삼각형의 높이는?",
+"choices": [
+"$3\\pi\\text{ cm}$",
+"$4\\pi\\text{ cm}$",
+"$5\\pi\\text{ cm}$",
+"$6\\pi\\text{ cm}$",
+"$10\\pi\\text{ cm}$"
+],
+"answer": "③",
+"solution": "공통 부분의 넓이를 각각 더하면 부채꼴과 삼각형의 넓이가 같다. 부채꼴의 넓이는 $\\pi\\times10^2\\times\\frac{72}{360}=20\\pi\\text{ cm}^2$이다. 삼각형의 높이를 $h\\text{ cm}$라 하면 $\\frac12\\times8\\times h=20\\pi$이므로 $h=5\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-da8a13259a",
+"typeId": "17806",
+"kind": "객관식",
+"diff": 1,
+"body": "반지름의 길이가 $8\\text{ cm}$이고 중심각의 크기가 $90^\\circ$인 부채꼴 모양의 종이와 가로의 길이가 $4\\text{ cm}$인 직사각형 모양의 종이를 일부 겹쳐 놓았다. 겹치지 않은 두 부분의 넓이가 같을 때, 직사각형의 세로의 길이는?",
+"choices": [
+"$2\\pi\\text{ cm}$",
+"$3\\pi\\text{ cm}$",
+"$6\\pi\\text{ cm}$",
+"$8\\pi\\text{ cm}$",
+"$4\\pi\\text{ cm}$"
+],
+"answer": "⑤",
+"solution": "겹치지 않은 두 부분의 넓이가 같으므로 두 종이 전체의 넓이도 같다. 부채꼴의 넓이는 $\\pi\\times8^2\\times\\frac{90}{360}=16\\pi\\text{ cm}^2$이다. 따라서 직사각형의 세로의 길이는 $16\\pi\\div4=4\\pi\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-6c0cd141b7",
+"typeId": "17806",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 $12\\text{ cm}$이고 중심각의 크기가 $120^\\circ$인 부채꼴과 윗변, 아랫변의 길이가 각각 $5\\text{ cm}$, $11\\text{ cm}$인 사다리꼴이 일부 겹쳐 있다. 두 도형의 공통 부분을 제외한 나머지 두 부분의 넓이가 같을 때, 사다리꼴의 높이는?",
+"choices": [
+"$4\\pi\\text{ cm}$",
+"$5\\pi\\text{ cm}$",
+"$8\\pi\\text{ cm}$",
+"$6\\pi\\text{ cm}$",
+"$12\\pi\\text{ cm}$"
+],
+"answer": "④",
+"solution": "공통 부분의 넓이를 각각 더하면 부채꼴과 사다리꼴의 넓이가 같다. 부채꼴의 넓이는 $\\pi\\times12^2\\times\\frac{120}{360}=48\\pi\\text{ cm}^2$이다. 사다리꼴의 높이를 $h\\text{ cm}$라 하면 $\\frac12\\times(5+11)\\times h=48\\pi$이므로 $h=6\\pi$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-6c8354dac4",
+"typeId": "17806",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 $9\\text{ cm}$인 부채꼴과 가로, 세로의 길이가 각각 $6\\text{ cm}$, $3\\pi\\text{ cm}$인 직사각형이 일부 겹쳐 있다. 부채꼴에만 속하는 부분과 직사각형에만 속하는 부분을 색칠했더니 두 부분의 넓이가 같았다. 부채꼴의 중심각의 크기는?",
+"choices": [
+"$80^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$100^\\circ$",
+"$120^\\circ$"
+],
+"answer": "①",
+"solution": "두 색칠한 부분의 넓이가 같으므로 부채꼴과 직사각형의 넓이는 모두 $6\\times3\\pi=18\\pi\\text{ cm}^2$이다. 중심각의 크기를 $x^\\circ$라 하면 $\\pi\\times9^2\\times\\frac{x}{360}=18\\pi$이다. 따라서 $x=80$이므로 중심각의 크기는 $80^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-1609a007c3",
+"typeId": "17806",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 $12\\text{ cm}$이고 중심각의 크기가 $150^\\circ$인 부채꼴 모양의 종이와 직사각형 모양의 종이를 일부 겹쳐 놓았다. 각 종이에서 겹친 부분을 제외한 두 부분의 넓이는 서로 같다. 두 종이가 덮고 있는 전체 영역의 넓이가 $92\\pi\\text{ cm}^2$일 때, 겹친 부분의 넓이는? (단, 겹친 부분은 전체 영역에서 한 번만 센다.)",
+"choices": [
+"$16\\pi\\text{ cm}^2$",
+"$24\\pi\\text{ cm}^2$",
+"$28\\pi\\text{ cm}^2$",
+"$32\\pi\\text{ cm}^2$",
+"$44\\pi\\text{ cm}^2$"
+],
+"answer": "③",
+"solution": "부채꼴의 넓이는 $\\pi\\times12^2\\times\\frac{150}{360}=60\\pi\\text{ cm}^2$이며, 직사각형의 넓이도 이와 같다. 두 종이의 넓이의 합에서는 겹친 부분을 두 번 세므로, 이 합에서 전체 영역의 넓이를 빼면 겹친 부분의 넓이가 된다. 따라서 구하는 넓이는 $60\\pi+60\\pi-92\\pi=28\\pi\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-e2eb92eef2",
+"typeId": "17806",
+"kind": "주관식",
+"diff": 5,
+"body": "중심이 같은 두 부채꼴 $P$, $Q$의 반지름의 길이는 각각 $8\\text{ cm}$, $12\\text{ cm}$이다. 두 부채꼴의 중심각이 차지하는 범위는 일부 겹쳐 있으며, 겹치는 각의 크기는 $15^\\circ$이고 두 범위를 합친 각의 크기는 $180^\\circ$이다. 각 부채꼴에서 다른 부채꼴과 겹치지 않는 부분만 색칠했더니 두 색칠한 부분의 넓이가 같았다. 색칠한 두 부분의 넓이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{128\\pi}{3}\\text{ cm}^2$",
+"solution": "두 부채꼴의 중심각을 각각 $\\alpha^\\circ$, $\\beta^\\circ$라 하면 $\\alpha+\\beta=180+15=195$이다. 두 색칠한 부분에 공통 부분을 각각 더하면 두 부채꼴의 넓이가 같으므로 $64\\alpha=144\\beta$, 즉 $\\alpha:\\beta=9:4$이어서 $\\alpha=135$, $\\beta=60$이다. 각 부채꼴의 넓이는 $\\pi\\times8^2\\times\\frac{135}{360}=24\\pi\\text{ cm}^2$이고, 공통 부분의 넓이는 $\\pi\\times8^2\\times\\frac{15}{360}=\\frac{8\\pi}{3}\\text{ cm}^2$이다. 따라서 구하는 넓이는 $2\\times\\left(24\\pi-\\frac{8\\pi}{3}\\right)=\\frac{128\\pi}{3}\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-055a5f2918",
+"typeId": "17806",
+"kind": "주관식",
+"diff": 5,
+"body": "중심이 $O$이고 반지름의 길이가 각각 $6\\text{ cm}$, $12\\text{ cm}$인 두 동심원이 있다. 두 원 사이의 영역을 두 반직선으로 잘라 만든 도형을 $P$라 하고, 중심이 $O$이고 반지름의 길이가 $9\\text{ cm}$인 부채꼴을 $Q$라 하자. 도형 $P$를 정하는 두 반직선 사이의 각과 부채꼴 $Q$의 중심각이 차지하는 범위는 일부 겹치며, 겹치는 각의 크기는 $30^\\circ$이고 두 범위를 합친 각의 크기는 $180^\\circ$이다. $P$에만 속하는 부분과 $Q$에만 속하는 부분의 넓이가 같을 때, 이 두 부분의 넓이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{93\\pi}{2}\\text{ cm}^2$",
+"solution": "도형 $P$, $Q$에 해당하는 각의 크기를 각각 $\\alpha^\\circ$, $\\beta^\\circ$라 하면 $\\alpha+\\beta=210$이고, 두 도형의 넓이가 같으므로 $(12^2-6^2)\\alpha=9^2\\beta$이다. 따라서 $\\alpha:\\beta=3:4$이므로 $\\alpha=90$, $\\beta=120$이며, 각 도형의 넓이는 $27\\pi\\text{ cm}^2$이다. 공통 부분은 반지름 $6\\text{ cm}$와 $9\\text{ cm}$ 사이에서 각의 크기가 $30^\\circ$인 영역이므로 그 넓이는 $\\pi\\times(9^2-6^2)\\times\\frac{30}{360}=\\frac{15\\pi}{4}\\text{ cm}^2$이다. 따라서 구하는 넓이는 $2\\times\\left(27\\pi-\\frac{15\\pi}{4}\\right)=\\frac{93\\pi}{2}\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-a3ca81e8bb",
+"typeId": "17806",
+"kind": "주관식",
+"diff": 5,
+"body": "중심이 같은 두 부채꼴 $P$, $Q$가 있고, $Q$의 반지름의 길이는 $P$의 반지름의 길이의 $2$배이다. 두 부채꼴의 중심각이 차지하는 범위는 일부 겹치며, 겹치는 각의 크기는 $30^\\circ$이고 두 범위를 합친 각의 크기는 $150^\\circ$이다. $P$에만 속하는 부분과 $Q$에만 속하는 부분의 넓이는 서로 같고, 두 부채꼴의 호의 길이의 합은 $18\\pi\\text{ cm}$이다. 두 부채꼴 중 어느 하나에만 속하는 부분의 넓이의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{285\\pi}{2}\\text{ cm}^2$",
+"solution": "$P$의 반지름을 $r\\text{ cm}$, 두 중심각을 각각 $\\alpha^\\circ$, $\\beta^\\circ$라 하면 넓이가 같다는 조건에서 $\\alpha=4\\beta$이고, $\\alpha+\\beta=150+30=180$이므로 $\\alpha=144$, $\\beta=36$이다. 호의 길이의 합은 $2\\pi r\\times\\frac{144}{360}+2\\pi(2r)\\times\\frac{36}{360}=\\frac65\\pi r=18\\pi$이므로 $r=15$이다. 각 부채꼴의 넓이는 $\\pi\\times15^2\\times\\frac{144}{360}=90\\pi\\text{ cm}^2$이고, 공통 부분의 넓이는 $\\pi\\times15^2\\times\\frac{30}{360}=\\frac{75\\pi}{4}\\text{ cm}^2$이다. 따라서 구하는 넓이는 $2\\times\\left(90\\pi-\\frac{75\\pi}{4}\\right)=\\frac{285\\pi}{2}\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17806",
+"custom": true
+},
+{
+"id": "fill-1fcdd96262",
+"typeId": "17740",
+"kind": "객관식",
+"diff": 2,
+"body": "세 점 $A$, $B$, $C$에 대하여 선분 $AB$의 길이는 $13\\,\\mathrm{cm}$, 선분 $AC$의 길이는 $8\\,\\mathrm{cm}$, 선분 $CB$의 길이는 $9\\,\\mathrm{cm}$이다. 두 점 $A$, $B$ 사이의 거리는?",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$13\\,\\mathrm{cm}$",
+"$17\\,\\mathrm{cm}$",
+"$30\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "두 점 사이의 거리는 두 점을 잇는 선분의 길이이다. 따라서 두 점 $A$, $B$ 사이의 거리는 선분 $AB$의 길이인 $13\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-3f4feab587",
+"typeId": "17740",
+"kind": "객관식",
+"diff": 2,
+"body": "두 점 사이의 거리에 대한 설명으로 옳은 것은?",
+"choices": [
+"두 점을 잇는 곡선의 길이는 항상 같다.",
+"두 점 사이의 거리는 두 점을 잇는 선분의 길이이다.",
+"두 점 사이의 거리는 두 점을 잇는 선 중 가장 긴 선의 길이이다.",
+"서로 다른 두 점 사이의 거리는 $0$이 될 수 있다.",
+"두 점을 잇는 선을 다르게 그리면 두 점 사이의 거리도 달라진다."
+],
+"answer": "②",
+"solution": "두 점을 잇는 선 중 길이가 가장 짧은 것은 선분이다. 이 선분의 길이를 두 점 사이의 거리라고 하므로 옳은 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-86f560c8ba",
+"typeId": "17740",
+"kind": "주관식",
+"diff": 2,
+"body": "두 점 $A$, $B$를 잇는 굽은 길의 길이는 $24\\,\\mathrm{m}$이다. 이 길의 길이는 선분 $AB$의 길이보다 $7\\,\\mathrm{m}$ 더 길다. 두 점 $A$, $B$ 사이의 거리를 구하시오.",
+"selfGrade": true,
+"answer": "$17\\,\\mathrm{m}$",
+"solution": "두 점 $A$, $B$ 사이의 거리는 선분 $AB$의 길이이다. 따라서 구하는 거리는 $24-7=17\\,\\mathrm{m}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-c2074c43c4",
+"typeId": "17740",
+"kind": "객관식",
+"diff": 4,
+"body": "점 $C$는 선분 $AB$ 위에서 두 끝점 사이에 있고, 점 $D$는 직선 $AB$ 위에 있지 않다. 각 선분의 길이는 다음과 같다.\n\n$AC=(x+1)\\,\\mathrm{cm}$, $CB=(2x+3)\\,\\mathrm{cm}$\n$AD=(2x+5)\\,\\mathrm{cm}$, $DB=(2x+6)\\,\\mathrm{cm}$\n\n선분 $AD$, $DB$를 차례로 따라가는 경로의 길이가 두 점 $A$, $B$ 사이의 거리보다 $12\\,\\mathrm{cm}$ 더 길 때, 두 점 $A$, $B$ 사이의 거리는?",
+"choices": [
+"$15\\,\\mathrm{cm}$",
+"$17\\,\\mathrm{cm}$",
+"$19\\,\\mathrm{cm}$",
+"$21\\,\\mathrm{cm}$",
+"$23\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "점 $C$가 선분 $AB$ 위에 있으므로 두 점 $A$, $B$ 사이의 거리는 $(3x+4)\\,\\mathrm{cm}$이다. 점 $D$를 거치는 경로의 길이는 $(4x+11)\\,\\mathrm{cm}$이므로 $(4x+11)-(3x+4)=12$에서 $x=5$이다. 따라서 구하는 거리는 $3\\times5+4=19\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-6f1d314a61",
+"typeId": "17740",
+"kind": "객관식",
+"diff": 4,
+"body": "점 $C$는 직선 $AB$ 위에 있지 않고, $AC=6\\,\\mathrm{cm}$, $CB=9\\,\\mathrm{cm}$이다. 다음 중 두 점 $A$, $B$ 사이의 거리가 될 수 없는 것은?",
+"choices": [
+"$11\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$13\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$"
+],
+"answer": "⑤",
+"solution": "두 점 $A$, $B$를 선분으로 바로 이으면 직선 $AB$ 위에 있지 않은 점 $C$를 거치는 경로보다 짧다. 따라서 두 점 $A$, $B$ 사이의 거리는 $6+9=15\\,\\mathrm{cm}$보다 작아야 한다. 그러므로 거리가 될 수 없는 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-553d6ba8c5",
+"typeId": "17740",
+"kind": "주관식",
+"diff": 4,
+"body": "서로 다른 세 점 $A$, $B$, $C$가 한 직선 위에 있고, $AC=8\\,\\mathrm{cm}$, $BC=13\\,\\mathrm{cm}$이다. 직선 $AB$ 위에 있지 않은 점 $D$에 대하여 $AD=9\\,\\mathrm{cm}$, $DB=10\\,\\mathrm{cm}$일 때, 두 점 $A$, $B$ 사이의 거리를 구하시오.",
+"selfGrade": true,
+"answer": "$5\\,\\mathrm{cm}$",
+"solution": "점 $A$, $B$가 점 $C$의 같은 쪽에 있으면 $AB=13-8=5\\,\\mathrm{cm}$이고, 서로 반대쪽에 있으면 $AB=13+8=21\\,\\mathrm{cm}$이다. 한편 선분 $AB$는 점 $D$를 거치는 경로보다 짧으므로 $AB<9+10=19\\,\\mathrm{cm}$이다. 따라서 두 점 $A$, $B$ 사이의 거리는 $5\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-68b8ebbeb7",
+"typeId": "17740",
+"kind": "주관식",
+"diff": 5,
+"body": "서로 다른 네 점 $A$, $B$, $C$, $D$가 한 직선 위에 있다. 네 점의 위치 순서는 알려져 있지 않고, 다음 조건을 모두 만족한다.\n\n$AC=14\\,\\mathrm{cm}$, $BC=8\\,\\mathrm{cm}$\n$AD=9\\,\\mathrm{cm}$, $BD=13\\,\\mathrm{cm}$\n\n두 점 $A$, $B$ 사이의 거리를 구하시오.",
+"selfGrade": true,
+"answer": "$22\\,\\mathrm{cm}$",
+"solution": "점 $C$를 기준으로 점 $A$, $B$가 같은 쪽에 있으면 $AB=14-8=6\\,\\mathrm{cm}$이고, 반대쪽에 있으면 $AB=14+8=22\\,\\mathrm{cm}$이다. 점 $D$를 기준으로 생각하면 $AB$는 $13-9=4\\,\\mathrm{cm}$ 또는 $13+9=22\\,\\mathrm{cm}$이다. 두 조건을 모두 만족하는 값은 $22\\,\\mathrm{cm}$이므로 두 점 사이의 거리는 $22\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-3329cc916c",
+"typeId": "17740",
+"kind": "주관식",
+"diff": 5,
+"body": "한 직선 위에 서로 다른 네 점이 $A$, $C$, $D$, $B$의 순서로 놓여 있다. 선분 $AC$는 선분 $CD$보다 $2\\,\\mathrm{cm}$ 더 길고, 선분 $DB$는 선분 $CD$의 길이의 $2$배보다 $1\\,\\mathrm{cm}$ 짧다. 네 점 중 두 점을 골라 얻는 여섯 거리 $AC$, $AD$, $AB$, $CD$, $CB$, $DB$의 합이 $94\\,\\mathrm{cm}$일 때, 두 점 $A$, $B$ 사이의 거리를 구하시오.",
+"selfGrade": true,
+"answer": "$29\\,\\mathrm{cm}$",
+"solution": "선분 $CD$의 길이를 $x\\,\\mathrm{cm}$라 하면 $AC=x+2$, $DB=2x-1$, $AD=2x+2$, $CB=3x-1$, $AB=4x+1$이다. 여섯 거리의 합은 $(13x+3)\\,\\mathrm{cm}$이므로 $13x+3=94$에서 $x=7$이다. 따라서 두 점 $A$, $B$ 사이의 거리는 $4\\times7+1=29\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
+},
+{
+"id": "fill-75adc6f4f0",
+"typeId": "17740",
+"kind": "주관식",
+"diff": 5,
+"body": "점 $C$는 선분 $AB$ 위에서 두 끝점 사이에 있고, 점 $D$는 직선 $AB$ 위에 있지 않다. 아래 경로는 이름에 적힌 점들을 차례로 선분으로 이어 이동하는 경로이다.\n\n경로 $A\\to C\\to D\\to B$의 길이: $32\\,\\mathrm{cm}$\n경로 $A\\to D\\to C\\to B$의 길이: $34\\,\\mathrm{cm}$\n경로 $A\\to D\\to B$의 길이: $28\\,\\mathrm{cm}$\n\n$CD=12\\,\\mathrm{cm}$일 때, 두 점 $A$, $B$ 사이의 거리를 구하시오.",
+"selfGrade": true,
+"answer": "$14\\,\\mathrm{cm}$",
+"solution": "앞의 두 경로의 길이를 더하면 $AC+CB+AD+DB+2CD=32+34=66\\,\\mathrm{cm}$이다. 점 $C$가 선분 $AB$ 위에 있으므로 $AC+CB=AB$이고, 세 번째 경로에서 $AD+DB=28\\,\\mathrm{cm}$이다. 따라서 $AB=66-28-2\\times12=14\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17740",
+"custom": true
 }
 ]

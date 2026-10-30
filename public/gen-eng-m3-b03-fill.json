@@ -5560,5 +5560,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u8m6s0t0",
 "custom": true
+},
+{
+"id": "fill-bbe7ad25a5",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\nvery well known to a lot of people",
+"choices": [
+"① wet",
+"② famous",
+"③ empty",
+"④ heavy",
+"⑤ silent"
+],
+"answer": "②",
+"solution": "'많은 사람에게 매우 잘 알려진'이라는 뜻풀이에 해당하는 단어는 famous(유명한)이다. 나머지 선지는 젖은, 빈, 무거운, 조용한이라는 뜻으로 뜻풀이와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1342091a68",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\na person who travels to visit a place for pleasure or interest",
+"choices": [
+"① farmer",
+"② singer",
+"③ tourist",
+"④ teacher",
+"⑤ doctor"
+],
+"answer": "③",
+"solution": "'즐거움이나 흥미를 위해 어떤 장소를 방문하려고 여행하는 사람'은 tourist(관광객)이다. farmer(농부), singer(가수), teacher(교사), doctor(의사)는 모두 직업을 나타내지만 뜻풀이와 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6b493a6501",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\nfacts or details that you learn about someone or something",
+"choices": [
+"① bottle",
+"② corner",
+"③ garden",
+"④ weather",
+"⑤ information"
+],
+"answer": "⑤",
+"solution": "'어떤 사람이나 사물에 대해 알게 되는 사실이나 세부 내용'은 information(정보)이다. 대화에서 세호가 'Thank you for the information'이라고 말한 것과도 연결된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d8aab3e26d",
+"typeId": "eng-m3-b03-u5m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 단어로 알맞은 것은?\n\n• The cheese steak sandwich is very ______ with tourists in Philadelphia.\n• These days, K-pop is becoming ______ all over the world.",
+"choices": [
+"① proper",
+"② familiar",
+"③ popular",
+"④ confused",
+"⑤ important"
+],
+"answer": "③",
+"solution": "첫 문장은 '관광객에게 인기 있는', 둘째 문장은 '전 세계적으로 인기 있는'이라는 의미로, 두 빈칸에 공통으로 들어갈 단어는 popular(인기 있는)이다. 'be popular with(~에게 인기 있다)' 형태로도 자주 쓰인다. proper(적절한), familiar(친숙한), confused(혼란스러운), important(중요한)는 두 문장 모두에 자연스럽게 들어가지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m0s0t0",
+"custom": true
 }
 ]

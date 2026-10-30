@@ -3568,5 +3568,102 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u5m0s0t0",
 "custom": true
+},
+{
+"id": "fill-916c93356e",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe boy ________ under the chestnut tree is Minho.",
+"choices": [
+"sit",
+"sits",
+"sitting",
+"is sitting",
+"was sat"
+],
+"answer": "③",
+"solution": "빈칸 앞의 명사 The boy를 뒤에서 꾸미는 말이 와야 하고, 이 문장의 동사는 is이다. 소년이 '앉아 있는' 것이므로 능동·진행의 뜻을 가진 현재분사 sitting이 알맞다. ②, ④처럼 동사를 하나 더 넣으면 한 문장에 동사가 두 개가 되어 틀린다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f2ccacf1a6",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 두 문장을 <조건>에 맞게 한 문장으로 바꾸어 쓰시오.\n\n• Look at the ants.\n• They are carrying food.\n\n<조건>\n• 분사를 이용할 것\n• 관계대명사를 쓰지 말 것",
+"selfGrade": true,
+"answer": "Look at the ants carrying food.",
+"solution": "두 번째 문장의 They는 the ants를 가리킨다. 개미가 음식을 '나르고 있는' 것이므로 현재분사 carrying을 쓴다. carrying food가 the ants를 뒤에서 꾸미도록 한 문장으로 만든다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-e100a32be2",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하시오.\n\n너는 개미가 하루에 얼마나 오래 자는지 아니?\n(sleep, how, you, do, ants, know, long) a day?",
+"selfGrade": true,
+"answer": "Do you know how long ants sleep a day?",
+"solution": "'~인지 아니?'는 Do you know로 시작한다. 그 뒤에 오는 간접의문문은 「의문사(how long) + 주어(ants) + 동사(sleep)」의 순서로 쓴다. 따라서 Do you know how long ants sleep a day?가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-9a7c3125d8",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말을 <조건>에 맞게 쓰시오.\n\nA: We can go swimming or hiking this afternoon. Which do you like better?\nB: ______________________________ I want to see wild birds and insects in the woods.\nA: Okay. Let's go hiking together.\n\n<조건>\n• prefer를 사용하여 선호를 나타낼 것\n• swimming과 hiking을 모두 포함할 것\n• 주어와 동사를 갖춘 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "I prefer hiking to swimming.",
+"solution": "B는 숲에서 새와 곤충을 보고 싶다고 했으므로 수영보다 하이킹을 더 좋아한다. 'A를 B보다 더 좋아하다'는 「prefer A to B」로 나타낸다. 따라서 I prefer hiking to swimming.이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-8b910f197a",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 캠프에 다녀온 학생이 쓴 일기이다. 어법상 틀린 문장 2개를 골라 번호를 쓰고, 틀린 부분을 바르게 고쳐 쓰시오.\n\n① The talent show holding last night was really great.\n② This afternoon, I went hiking with a friend named Amber.\n③ We saw a chestnut tree called the oldest tree in the woods.\n④ The ants carried big leaves were very strong.\n⑤ It was a really exciting day.",
+"selfGrade": true,
+"answer": "①: holding → held, ④: carried → carrying",
+"solution": "①에서 장기자랑은 '열린' 것이므로 수동의 뜻을 가진 과거분사 held를 써야 한다. ④는 동사가 carried와 were 두 개라서 틀렸다. 개미가 잎을 '나르는' 것이므로 현재분사 carrying으로 고쳐 The ants를 꾸며야 한다. ②의 named와 ③의 called는 수동의 과거분사로 맞고, ⑤의 exciting은 '신나게 하는'이라는 뜻으로 바르게 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-74a7ef2154",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 <보기>의 단어와 표현을 이용하여 <조건>에 맞게 영작하시오.\n\n하루에 약 250번 짧은 낮잠을 자는 일개미들은 매일 약 4시간 동안 잔다.\n\n<보기>\nworker ants, take, short naps, about 250 times a day, sleep, for about four hours, each day\n\n<조건>\n• 분사를 이용하여 주어를 꾸밀 것\n• 관계대명사는 쓰지 말 것\n• 필요하면 단어의 형태를 바꿀 것",
+"selfGrade": true,
+"answer": "Worker ants taking short naps about 250 times a day sleep for about four hours each day.",
+"solution": "일개미가 낮잠을 '자는' 것이므로 take를 현재분사 taking으로 바꾼다. taking short naps about 250 times a day를 주어 Worker ants 뒤에 놓아 꾸미게 한다. 문장의 동사는 sleep이며, 주어가 복수이므로 -s를 붙이지 않는다. taking과 sleep을 함께 동사로 쓰면 틀린다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-3630bb42be",
+"typeId": "eng-m3-b11-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 아래 요약문의 빈칸 (A)~(C)에 알맞은 말을 쓰시오.\n\nWorker ants rest by taking very short naps about 250 times a day. Each of these naps lasts only about a minute. This means that the worker ants sleep for about four hours each day. On the other hand, queen ants fall asleep 90 times a day, and they sleep for about six minutes at a time. This means that they sleep for about nine hours each day.\n\n<요약문>\nQueen ants (A)________ asleep 90 times a day sleep about (B)________ hours longer than worker ants (C)________ very short naps about 250 times a day.\n\n<조건>\n• (A), (C)는 본문에서 동사를 찾아 어법에 맞게 형태를 바꾸어 한 단어로 쓸 것\n• (B)는 수를 영어 한 단어로 쓸 것",
+"selfGrade": true,
+"answer": "(A) falling (B) five (C) taking",
+"solution": "요약문의 동사는 sleep이므로 (A)와 (C)에는 앞의 명사를 꾸미는 분사가 와야 한다. 여왕개미가 '잠드는' 것이므로 (A)는 fall을 바꾼 falling이다. 일개미가 낮잠을 '자는' 것이므로 (C)는 take를 바꾼 taking이다. 여왕개미는 하루 약 9시간, 일개미는 약 4시간을 자므로 (B)에는 차이인 five가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m5s0t0",
+"custom": true
 }
 ]

@@ -3965,5 +3965,266 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-ea085b77ae",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nThe Junk Orchestra played instruments made entirely out of garbage. They had a cello made out of a shiny oil tank, a violin made with forks, and a flute made with a water pipe and buttons. Even though the instruments were made from recycled materials, the sound was deep and beautiful.",
+"choices": [
+"Instruments Made from Garbage",
+"The Most Expensive Cello in the World",
+"How to Throw Away Garbage Well",
+"A Famous Violin Maker in Paraguay",
+"The Long History of the Cello"
+],
+"answer": "①",
+"solution": "글 전체가 쓰레기로 만든 악기(기름통 첼로, 포크 바이올린, 수도관 플루트)를 소개하고 있으므로 중심 내용은 '쓰레기로 만든 악기'이다. 따라서 제목으로는 ①이 가장 적절하다. 나머지는 글에 없거나 세부 사항을 벗어난 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-617db129e8",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nFavio Chávez went to a small town called Cateura in Paraguay in 2005. There he saw children living in a town that was mostly filled with garbage. He wanted to add something positive to their lives, so he decided to share his love of music with them.",
+"choices": [
+"파라과이의 유명한 관광 명소",
+"파비오가 음악으로 아이들의 삶에 긍정적인 것을 더하려 한 이유",
+"쓰레기를 분리배출하는 올바른 방법",
+"첼로를 빠르게 배우는 방법",
+"파라과이의 기후 변화 문제"
+],
+"answer": "②",
+"solution": "글은 파비오 차베스가 쓰레기 마을의 아이들에게 긍정적인 것을 더해 주고자 음악을 나누기로 한 내용을 담고 있다. 따라서 주제는 ②이다. 나머지 선지는 글에서 다루지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e9091bd6f2",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nI was so into the music that I forgot the instruments were made from recycled materials. The Junk Orchestra showed me that even garbage can be turned into something beautiful.",
+"choices": [
+"쓰레기는 되도록 빨리 버려야 한다.",
+"재활용은 비용이 많이 드는 일이다.",
+"쓰레기도 아름다운 것으로 바뀔 수 있다.",
+"악기는 비쌀수록 좋은 소리를 낸다.",
+"음악은 배우기 매우 어려운 과목이다."
+],
+"answer": "③",
+"solution": "마지막 문장에서 'even garbage can be turned into something beautiful(쓰레기도 아름다운 것으로 바뀔 수 있다)'이라고 글의 핵심을 직접 밝히고 있다. 따라서 요지는 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8074b257b5",
+"typeId": "eng-m3-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\n\"The world sends us garbage, we send back music.\" This was written on the back of a concert ticket I was given. The musical group was called \"The Junk Orchestra.\" They played instruments made entirely out of garbage: a cello made out of a shiny oil tank, a violin made with forks, and a flute made with a water pipe and buttons. I was so into the music that I forgot the instruments were made from recycled materials.",
+"choices": [
+"A Reporter's Busy Day in Paraguay",
+"Turning Trash into Beautiful Music",
+"The Difficulty of Learning the Cello",
+"The Serious Garbage Problem of Cateura",
+"Bach's Cello Suite No. 1 and Its Composer"
+],
+"answer": "②",
+"solution": "글은 쓰레기로 만든 악기로 아름다운 음악을 들려주는 '정크 오케스트라'를 소개하며, 쓰레기가 음악으로 바뀌는 점을 핵심으로 한다. 따라서 제목은 ②가 가장 적절하다. ④는 글에 직접 언급되지 않은 배경, ⑤는 세부 소재에 불과하고, ①·③은 글의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6c42ab013a",
+"typeId": "eng-m3-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI am proud ______ my father.\n(나는 아버지가 자랑스럽다.)",
+"choices": [
+"at",
+"of",
+"for",
+"with",
+"from"
+],
+"answer": "②",
+"solution": "‘~을 자랑스러워하다’는 be proud of로 표현한다. 따라서 빈칸에는 전치사 of가 들어가야 한다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-661965426f",
+"typeId": "eng-m3-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n나는 그 소식을 들었을 때 슬펐다.",
+"choices": [
+"I was sad when I hear the news.",
+"I am sad when I heard the news.",
+"I was sad when I heard the news.",
+"I had sad when I heard the news.",
+"I was sad when I hearing the news."
+],
+"answer": "③",
+"solution": "과거에 그 소식을 들었을 때의 감정을 나타내므로 두 절 모두 과거 시제를 사용한다. be동사의 과거형 was와 hear의 과거형 heard를 사용한 ③이 올바르다. ①과 ②는 시제가 어울리지 않으며, ④와 ⑤는 문법적으로 잘못된 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ef6826c6f8",
+"typeId": "eng-m3-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nMy father ______ his life to the independence movement.\n(나의 아버지는 독립운동에 자신의 삶을 바쳤다.)",
+"choices": [
+"devoted",
+"expected",
+"realized",
+"continued",
+"wondered"
+],
+"answer": "①",
+"solution": "devote A to B는 ‘A를 B에 바치다’라는 뜻이다. 문장의 의미와 과거 시제에 알맞은 단어는 devoted이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-65f229eab1",
+"typeId": "eng-m3-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말 뜻이 되도록 <보기>의 단어를 모두 한 번씩 배열할 때, 일곱 번째에 오는 단어는?\n\n나는 아버지가 독립운동가들에게 보냈던 돈에 관해 알게 되었다.\n\n<보기>\nI / found / out / about / the / money / that / my / father / had / sent / to / the / independence / fighters",
+"choices": [
+"money",
+"that",
+"father",
+"had",
+"sent"
+],
+"answer": "②",
+"solution": "‘~에 관해 알게 되었다’는 found out about으로 표현한다. ‘아버지가 독립운동가들에게 보냈던 돈’은 the money that my father had sent to the independence fighters로 배열한다. 완성된 문장은 ‘I found out about the money that my father had sent to the independence fighters.’이다. 일곱 번째 단어는 that이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0fd44bd4b3",
+"typeId": "eng-m3-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 (A)~(E) 중 어법상 옳지 않은 것은?\n\nIn 1946, a man visited me. I was (A)used to being called the daughter of a parakho, so I did not expect good news about my father. The man told me that my father (B)had sent money to the independence fighters before he died. He had pretended (C)to be a gambler to keep his actions secret. At first, I was not sure whether (D)he was telling the truth. Later, I realized that I (E)have been wrong about my father.",
+"choices": [
+"(A) used to being called",
+"(B) had sent",
+"(C) to be",
+"(D) he was telling",
+"(E) have been"
+],
+"answer": "⑤",
+"solution": "(A)는 be used to -ing 구조로 수동의 의미인 being called가 적절하고, (B)는 과거의 전달 시점보다 앞선 일을 나타내므로 과거완료가 적절하다. (C)는 pretend to부정사, (D)는 과거 당시 진행 중인 행동을 나타내는 표현으로 옳다. (E)는 과거에 자신의 판단이 잘못되었음을 깨달았다는 내용이므로 현재완료 have been이 아니라 과거완료 had been을 써야 한다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ea355d7cd1",
+"typeId": "eng-m3-b09-u2m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 우리말과 같은 뜻이 되도록 <조건>에 맞게 빈칸 (A), (B)를 완성하시오.\n\nFor a long time, I thought my father was a gambler. People called me the daughter of a parakho, and I became familiar with that name. However, after my father's friend told me the truth, I learned that my father had secretly supported the independence movement. I realized that I had misunderstood him.\n\n(A) 나는 파락호의 딸이라고 불리는 것에 익숙했다.\nI ______________________________ the daughter of a parakho.\n\n(B) 나는 아버지의 친구가 진실을 말해 주기 전에 아버지를 오해했었다.\nI ______________________________ before my father's friend told me the truth.\n\n<조건>\n1. (A)는 be used to와 call을 활용하고, 수동의 의미를 나타낼 것.\n2. (B)는 misunderstand를 활용하고, 과거완료를 사용할 것.\n3. 주어진 주어 I와 나머지 문장은 바꾸지 말 것.\n4. 두 빈칸에 들어갈 표현을 (A), (B) 순서로 쓸 것.",
+"selfGrade": true,
+"answer": "(A) was used to being called / (B) had misunderstood my father",
+"solution": "(A)의 ‘~에 익숙했다’는 was used to로 표현하며, 전치사 to 뒤에는 동명사가 와야 한다. 또한 ‘~라고 불리다’는 수동의 의미이므로 being called를 사용하여 was used to being called를 완성한다. (B)에서는 아버지를 오해한 일이 친구가 진실을 말해 준 일보다 먼저 일어났으므로 과거완료 had misunderstood를 사용한다. 따라서 (A)는 was used to being called, (B)는 had misunderstood my father이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1fb966a5e2",
+"typeId": "eng-m3-b09-u6m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 바르게 배열하시오.\n\n그 학생들의 절반이 안경을 쓴다.\n\n( glasses / of / wear / half / the students )\n\n→ ______________________________________.",
+"selfGrade": true,
+"answer": "Half of the students wear glasses",
+"solution": "'~의 절반'은 'half of + 명사'로 나타냅니다. 'half of' 뒤의 명사가 복수형(the students)이므로 동사도 복수형 wear를 씁니다. 따라서 Half of the students wear glasses.가 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-a48f9ea9e6",
+"typeId": "eng-m3-b09-u6m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 들어갈 말로 알맞은 것은?\n\n날이 더 어두워질수록 날씨는 더 추워졌다.\n→ ________ it got darker, it became colder.",
+"choices": [
+"Unless",
+"As",
+"Though",
+"Until",
+"Because of"
+],
+"answer": "②",
+"solution": "'~할수록'이라는 비례의 의미는 접속사 as로 나타냅니다. Unless는 '~하지 않으면', Though는 '비록 ~이지만', Until은 '~할 때까지'라는 뜻이므로 우리말과 맞지 않습니다. Because of는 전치사이므로 뒤에 절이 올 수 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-16f1434cce",
+"typeId": "eng-m3-b09-u6m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 동사를 알맞은 형태로 바꿔 쓰시오.\n\nThe price (mention) first affects our opinion of prices.\n\n→ ______________",
+"selfGrade": true,
+"answer": "mentioned",
+"solution": "가격은 '언급되는' 대상이므로 수동의 의미를 지닌 과거분사를 써야 합니다. 과거분사구 mentioned first가 뒤에서 The price를 꾸며 '처음에 언급된 가격'이라는 뜻이 됩니다. 문장의 동사는 affects입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-cbba99014f",
+"typeId": "eng-m3-b09-u6m5s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"Most of the money were spent on new clothes.",
+"Half of the boys on his team wears the shoes.",
+"Some of the water in the bottle are cold.",
+"Sixty percent of the students like soccer.",
+"All of the furniture were too old."
+],
+"answer": "④",
+"solution": "'부분 표현 + of + 명사'가 주어이면 동사의 수는 of 뒤의 명사에 맞춥니다. ④는 the students가 복수이므로 like가 맞습니다. ①·③·⑤의 money, water, furniture는 셀 수 없는 명사이므로 각각 was, is, was로 써야 하고, ②의 the boys는 복수이므로 wear로 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m5s0t0",
+"custom": true
+},
+{
+"id": "fill-baff59af61",
+"typeId": "eng-m3-b09-u6m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n더 많은 사람들이 그것을 살수록, 그것은 더 인기 있게 된다.\n\n<조건>\n• as, buy, become, popular를 사용하되 필요시 형태를 바꾸거나 단어를 추가할 것\n• 총 9단어로 쓸 것\n\n→ ______________________________________.",
+"selfGrade": true,
+"answer": "As more people buy it, it becomes more popular",
+"solution": "'~할수록'은 접속사 as를 써서 'As + 주어 + 동사 ~, 주어 + 동사 ~'로 나타냅니다. 앞 절은 As more people buy it이고, 뒤 절의 주어 it은 3인칭 단수이므로 becomes를 씁니다. '더 인기 있는'은 비교급 more popular로 쓰며, 전체 단어 수는 9단어입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u6m5s0t0",
+"custom": true
 }
 ]

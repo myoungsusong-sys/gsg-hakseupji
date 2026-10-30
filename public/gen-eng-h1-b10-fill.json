@@ -4636,5 +4636,176 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b10-u0m7s0t0",
 "custom": true
+},
+{
+"id": "fill-edea405faf",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nShilin Night Market in Taipei, Taiwan, is a wonderful place for food lovers. Visitors can enjoy many kinds of local street food at inexpensive prices. Popular foods include ji pai, oyster omelet, and papaya milk juice. The market is also famous for its lively atmosphere.",
+"choices": [
+"The importance of healthy eating habits",
+"The history of traditional Taiwanese drinks",
+"The attractions of Shilin Night Market for food lovers",
+"The differences between Taiwanese and Vietnamese food",
+"The environmental problems caused by night markets"
+],
+"answer": "③",
+"solution": "글에서 반복해서 강조하는 내용은 스린 야시장의 다양한 먹거리와 활기찬 분위기입니다. 지파이, 굴 오믈렛, 파파야 밀크 주스는 이곳의 매력을 보여 주는 구체적인 예시입니다. 따라서 음식 애호가들이 즐길 수 있는 스린 야시장의 매력을 포괄한 ③이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e8877dfbee",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nLoi Krathong is a famous festival of lights in Thailand. During the festival, people release floating lanterns called krathongs into the water while making wishes. In Sukhothai, visitors can also enjoy fireworks, folk dances, and beautiful light shows.",
+"choices": [
+"A Festival of Lights and Wishes",
+"How to Prepare Traditional Thai Food",
+"The Most Dangerous Activities in Thailand",
+"Shopping at Night Markets in Asia",
+"The History of Water Sports in Thailand"
+],
+"answer": "①",
+"solution": "제목을 고를 때는 글 전체에서 중심이 되는 소재를 찾아야 합니다. 이 글은 태국의 러이끄라통 축제에서 소원을 빌며 등불을 띄우고 여러 공연을 즐기는 모습을 소개합니다. 축제의 특징인 빛과 소원을 모두 담은 ①이 가장 적절합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6aa834cb1f",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nIf you love exciting outdoor activities, try canyoning at Datanla Waterfall in Dalat, Vietnam. You can enjoy zip-lining, natural water sliding, and water rappelling. These activities offer exciting experiences in a beautiful natural environment.",
+"choices": [
+"Canyoning should be avoided because it is always dangerous.",
+"Dalat is mainly known for its traditional food.",
+"Waterfalls are suitable only for sightseeing.",
+"Artificial water parks are more exciting than natural places.",
+"Datanla Waterfall is a great place to experience exciting canyoning activities."
+],
+"answer": "⑤",
+"solution": "글쓴이는 신나는 야외 활동을 좋아하는 사람들에게 다딴라 폭포의 캐니어닝을 추천하고 있습니다. 집라인, 자연 물 미끄럼틀, 폭포 하강은 그곳에서 경험할 수 있는 활동의 예시입니다. 따라서 다딴라 폭포가 짜릿한 캐니어닝을 즐기기 좋은 곳이라는 ⑤가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-17f2ca407b",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 목적으로 가장 알맞은 것은?\n\nAre you planning to visit Shilin Night Market? Arrive at around 7 to 8 p.m., when everything is set up and the market becomes lively. Start with ji pai if you enjoy crispy fried chicken. You can also try oyster omelet with sweet sauce. After walking around the market, refresh yourself with some sweet papaya milk juice. These foods will make your visit even more enjoyable.",
+"choices": [
+"To explain why tourists should avoid visiting night markets",
+"To introduce the best time to visit Shilin Night Market and recommend foods to try",
+"To compare the nutritional value of three Taiwanese dishes",
+"To describe how street food prices have changed over the years",
+"To encourage local residents to open new restaurants"
+],
+"answer": "②",
+"solution": "글쓴이가 독자에게 어떤 정보를 전달하려는지 살펴보면 됩니다. 이 글은 스린 야시장을 방문하기 좋은 시간인 오후 7~8시를 안내하고, 지파이와 굴 오믈렛 등 추천 음식도 소개합니다. 음식의 영양이나 가격 변화를 분석하는 글이 아니므로 방문 시간과 추천 음식을 안내하는 ②가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d1fba6e81c",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nSukhothai is a special place to experience Loi Krathong because it is the birthplace of the festival. Its celebration lasts for about five days and is the biggest in Thailand. Visitors can release floating lanterns, enjoy fireworks, and watch light and sound shows. Since the festival date changes every year, visitors should check the date before traveling.",
+"choices": [
+"Why Thai Festivals Have Different Dates Every Year",
+"The Development of Modern Entertainment in Thailand",
+"Traditional Music and Dance around the World",
+"Experience the Special Charm of Loi Krathong in Sukhothai",
+"A Guide to Thailand's Famous Night Markets"
+],
+"answer": "④",
+"solution": "이 글의 중심은 수코타이에서 경험할 수 있는 러이끄라통 축제의 특별한 매력입니다. 축제의 발상지라는 역사적 의미와 다양한 행사가 그 매력을 뒷받침합니다. ①의 날짜 정보는 글의 일부에 불과하므로, 전체 내용을 자연스럽게 포괄하는 ④가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-138ad90344",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 요약한 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nSustainable travelers should think about more than their own enjoyment. They can reduce plastic waste and avoid disturbing wild animals. They should also respect the customs of local communities. In addition, choosing local tour guides and guest houses can help local businesses.\n\nSustainable travel requires travelers to (A)________ the natural environment and local cultures while (B)________ local businesses.",
+"choices": [
+"damage — supporting",
+"protect — avoiding",
+"protect — supporting",
+"ignore — developing",
+"change — replacing"
+],
+"answer": "③",
+"solution": "요약문을 완성하려면 본문에 제시된 지속 가능한 여행의 실천 방법을 연결해야 합니다. 자연환경과 지역 문화를 보호한다는 의미이므로 (A)에는 protect가 적절합니다. 지역 사업체를 지원한다는 내용에는 supporting이 알맞으며, while 뒤에서도 자연스럽게 연결됩니다. 따라서 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-068813b670",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nTourism can bring enjoyment to travelers, but it can also affect the places they visit. Sustainable travel aims to maintain tourism without harming natural or cultural environments. To practice it, travelers should reduce pollution, save water, and avoid disturbing wildlife. They also need to respect local traditions and support local communities. Spending money on local services, such as tour guides and guest houses, can help the local economy. These actions show that responsible travel requires attention to several connected aspects rather than just one.",
+"choices": [
+"The role of local businesses in attracting more tourists",
+"The importance of protecting wildlife instead of promoting tourism",
+"The reasons travelers prefer traditional accommodations",
+"The difficulties of maintaining tourism without modern technology",
+"The need to balance environmental, social, and economic responsibilities in sustainable travel"
+],
+"answer": "⑤",
+"solution": "이 문항에서는 여러 세부 내용을 하나의 주제로 통합하는 것이 중요합니다. 글은 환경 보호뿐 아니라 지역 사회 존중과 지역 경제 지원까지 함께 고려해야 한다고 설명합니다. ①과 ②는 각각 경제와 환경이라는 한 측면에만 초점을 맞춘 선택지입니다. 세 가지 측면을 모두 반영한 ⑤가 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a8c461f996",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nSome travelers may think that canyoning is simply another way to enjoy the beautiful scenery of Dalat. However, canyoning at Datanla Waterfall offers much more than a view. Travelers can fly down a cable while watching the waterfall, slide into cool water along a natural rock surface, and walk down a vertical waterfall with the help of a rope. Each activity allows visitors to experience nature in an exciting and active way. For adventure seekers, these experiences make Datanla Waterfall a place worth visiting.",
+"choices": [
+"Datanla Waterfall offers adventure seekers thrilling ways to experience nature.",
+"Canyoning is mainly an activity for studying the geological features of waterfalls.",
+"Watching waterfalls from a distance is more enjoyable than participating in outdoor activities.",
+"Dalat should replace its natural attractions with artificial water parks.",
+"Travelers should choose peaceful sightseeing instead of challenging outdoor sports."
+],
+"answer": "①",
+"solution": "첫 문장만 읽으면 단순한 자연경관 소개로 생각하기 쉽지만, However 뒤에서 글의 핵심이 드러납니다. 글쓴이는 캐니어닝을 통해 자연을 짜릿하고 역동적으로 경험할 수 있다는 점을 강조합니다. 집라인, 자연 물 미끄럼틀, 폭포 하강은 이를 뒷받침하는 사례이므로 ①이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-22da5f456a",
+"typeId": "eng-h1-b10-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 요약한 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nLoi Krathong is celebrated throughout Thailand, but Sukhothai has a special connection to the festival because it is its birthplace. During the celebration, people release floating lanterns while making wishes. Visitors can also enjoy fireworks, folk dances, and light and sound shows. The festival usually takes place in November, but its exact date changes from year to year because it follows the Thai lunar calendar. Therefore, travelers should confirm the date before planning their visit.\n\nSukhothai is an (A)________ destination for experiencing Loi Krathong because of its historical connection and various attractions, but visitors need to (B)________ the festival date before traveling.",
+"choices": [
+"ordinary — ignore",
+"ideal — check",
+"unfamiliar — determine",
+"inconvenient — change",
+"expensive — announce"
+],
+"answer": "②",
+"solution": "요약문의 앞부분과 뒷부분에 각각 대응하는 내용을 찾아야 합니다. 수코타이는 축제의 발상지이면서 다양한 행사를 즐길 수 있는 곳이므로 (A)에는 '이상적인'이라는 뜻의 ideal이 적절합니다. 축제 날짜는 해마다 달라 방문 전에 확인해야 하므로 (B)에는 check가 들어갑니다. 두 조건을 모두 충족하는 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b10-u4m3s0t0",
+"custom": true
 }
 ]

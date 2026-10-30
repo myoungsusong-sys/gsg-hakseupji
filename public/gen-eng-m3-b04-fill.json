@@ -5295,5 +5295,176 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u1m5s0t0",
 "custom": true
+},
+{
+"id": "fill-b82818a947",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nHow to Make Tomato Soup\n\nFirst, ________ one fresh tomato. Then put it in a pan and pour some water over it. Next, boil the mixture for ten minutes.",
+"choices": [
+"drink",
+"chop",
+"serve",
+"blend",
+"recommend"
+],
+"answer": "②",
+"solution": "토마토를 냄비에 넣고 물을 붓기 전에 해야 할 일을 묻는 문제이다. 토마토를 잘게 썬다는 의미의 chop이 알맞다. blend는 재료를 갈아 부드럽게 만든다는 뜻이므로 이 단계에 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-92531d6d9e",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nB: I'd recommend Bibimbap.\nG: Sorry, could you say that again?\nB: __________. It's made with vegetables, beef, and an egg over rice.",
+"choices": [
+"Samgyetang",
+"Rasmalai",
+"Bibimbap",
+"Gogol-mogol",
+"Tomato soup"
+],
+"answer": "③",
+"solution": "G는 B가 추천한 음식의 이름을 다시 말해 달라고 요청했다. B가 처음 추천한 음식은 Bibimbap이므로 이를 반복해야 한다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2de998fd64",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nGogol-mogol\n\nPut an egg and some honey in a large cup and mix them. Pour hot milk and melted butter into the cup. Stir as you pour. Finally, ________ while it is hot.",
+"choices": [
+"chop the egg",
+"boil the honey",
+"add a tomato",
+"drink it",
+"turn off the heat"
+],
+"answer": "④",
+"solution": "고골모골을 만드는 과정에서 달걀과 꿀을 섞고 따뜻한 우유와 녹인 버터를 부은 다음 마지막에 할 행동을 묻는다. 완성된 고골모골은 뜨거울 때 마시므로 drink it이 알맞다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f78a030ba1",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 토마토수프를 만드는 과정이다. 주어진 글 다음에 이어질 순서로 가장 알맞은 것은?\n\nFirst, chop one fresh tomato. Put the chopped tomato in a pan and pour some water over it.\n\n(A) Finally, add some black pepper and salt. Now you can enjoy the soup.\n(B) Next, blend it until it is smooth.\n(C) Then boil the mixture for ten minutes and turn off the heat.\n(D) After that, leave the mixture to cool down.",
+"choices": [
+"(C)-(B)-(D)-(A)",
+"(D)-(C)-(B)-(A)",
+"(C)-(D)-(A)-(B)",
+"(C)-(D)-(B)-(A)",
+"(B)-(D)-(C)-(A)"
+],
+"answer": "④",
+"solution": "토마토를 잘라 냄비에 넣고 물을 부은 다음에는 혼합물을 끓여야 하므로 (C)가 먼저 온다. 이후 식히는 (D), 부드럽게 가는 (B), 후추와 소금을 넣어 마무리하는 (A) 순서로 이어진다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-638eed67ed",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 말을 바르게 연결한 것은?\n\n(A) ________ many Koreans eat Samgyetang when they are sick, many people in India eat tomato soup. Here is (B) ________ to make the soup. First, chop a tomato and boil it with some water. After the mixture cools down, blend it until it is smooth. Finally, add salt and black pepper. The soup is not only healthy (C) ________ also delicious.\n\n       (A)        (B)       (C)",
+"choices": [
+"While — how — but",
+"While — when — and",
+"As — how — and",
+"Because — when — but",
+"While — what — but"
+],
+"answer": "①",
+"solution": "한국과 인도의 음식을 대조하므로 (A)에는 While이 적절하다. 수프를 만드는 방법을 소개하는 표현은 how to make이므로 (B)는 how이다. 또한 not only A but also B 구문에 따라 (C)에는 but이 들어간다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-99d7170c6d",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화를 읽고 밑줄 친 ⓐ와 ⓑ가 각각 가리키는 것으로 가장 알맞은 것은?\n\nG: I don't know much about Korean food. Could you recommend something?\nB: I'd recommend Bibimbap.\nG: Could you say that again?\nB: Bibimbap. ⓐIt's made with lots of vegetables, beef, and an egg over rice.\nG: That sounds great. I'll try ⓑit.\nB: It's served with a spicy red pepper sauce. Is that okay?\nG: No problem. I like spicy food.\n\n       ⓐ                   ⓑ",
+"choices": [
+"Korean food — an egg",
+"Bibimbap — Bibimbap",
+"vegetables — spicy red pepper sauce",
+"beef — Korean food",
+"Bibimbap — spicy red pepper sauce"
+],
+"answer": "②",
+"solution": "ⓐIt's는 바로 앞에서 B가 반복하여 말한 Bibimbap을 가리킨다. ⓑit은 G가 먹어 보겠다고 한 음식인 Bibimbap을 가리킨다. 매운 고추장 소스는 ⓑ가 나온 뒤에 언급되므로 ⓑ의 지시 대상이 될 수 없다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-47c4cbb9a9",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (가)~(마) 중 주어진 문장이 들어가기에 가장 알맞은 곳은?\n\n[주어진 문장]\nThen turn off the heat and leave the mixture to cool down.\n\nHere is how to make tomato soup. You need one tomato, some water, black pepper, and salt. (가) First, chop the tomato. (나) Next, put the chopped tomato in a pan, pour some water over it, and boil the mixture for ten minutes. (다) After that, blend the mixture until it is smooth. (라) Finally, add black pepper and salt. (마) Now you can enjoy the tomato soup.",
+"choices": [
+"(가)",
+"(나)",
+"(다)",
+"(라)",
+"(마)"
+],
+"answer": "③",
+"solution": "주어진 문장은 가열을 중단하고 혼합물을 식히는 단계이다. 따라서 혼합물을 10분간 끓이는 문장 뒤이면서 식힌 혼합물을 부드럽게 가는 문장 앞에 들어가야 한다. 이 조건을 모두 만족하는 위치는 (다)이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b95fa4d457",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 밑줄 친 ⓐ~ⓔ에 대한 설명으로 옳지 않은 것은?\n\nHave you found out about foods that people eat when they are sick? Why not try making one of ⓐthem? ⓑIt will be fun and good for your health.\n\nHere is how to make Gogol-mogol. First, put an egg and some honey in a large cup and mix ⓒthem. Next, warm milk and butter in a pan until the butter melts. Then pour the hot milk and melted butter into the cup with the egg and honey. Stir as you pour ⓓit. Finally, drink ⓔit while it is hot.",
+"choices": [
+"ⓐ는 아플 때 사람들이 먹는 음식들을 가리킨다.",
+"ⓑ는 알아본 음식 중 하나를 직접 만들어 보는 일을 가리킨다.",
+"ⓒ는 달걀과 꿀을 가리킨다.",
+"ⓓ는 컵에 붓는 뜨거운 우유와 녹인 버터를 가리킨다.",
+"ⓔ는 달걀과 꿀을 넣기 전의 우유만을 가리킨다."
+],
+"answer": "⑤",
+"solution": "ⓐ는 앞서 언급된 foods를, ⓑ는 음식을 직접 만들어 보는 활동을 가리킨다. ⓒ는 달걀과 꿀을, ⓓ는 컵에 붓는 뜨거운 우유와 녹인 버터를 가리킨다. ⓔ는 모든 재료를 섞어 완성한 고골모골을 가리키므로 우유만을 뜻한다는 ⑤가 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-fe88b5f32a",
+"typeId": "eng-m3-b04-u7m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 대화의 (A)~(D)를 자연스럽게 배열한 뒤, 빈칸 (E)에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nB: Have you ever tried poke?\n\n(A) B: It's made with rice and fish. It's not only delicious but also very healthy.\n(B) G: Sorry, could you say that again?\n(C) G: What's so special about it?\n(D) B: Poke. It's a salad that is popular in Hawaii.\n\nG: That sounds good. I'd like to try it.\nB: __________________ (E)\nG: Yes, please. That would help me choose.\n\n(A)~(D)의 배열과 (E)의 조합이 모두 알맞은 것은?",
+"choices": [
+"(B)-(D)-(A)-(C) / Would you like to order it now?",
+"(C)-(D)-(B)-(A) / Do you know how to make it?",
+"(B)-(A)-(C)-(D) / Could you say that again?",
+"(D)-(B)-(C)-(A) / Would you recommend it to me?",
+"(B)-(D)-(C)-(A) / Would you like me to recommend something?"
+],
+"answer": "⑤",
+"solution": "G가 poke라는 음식 이름을 다시 말해 달라고 요청하는 (B)가 먼저 오고, B가 이름을 반복하며 설명하는 (D)가 이어진다. 이후 G가 음식의 특징을 묻는 (C), B가 재료와 장점을 설명하는 (A) 순서가 자연스럽다. 마지막에는 G가 선택에 도움이 된다고 대답하므로 B가 다른 음식을 추천해 주겠다는 제안을 하는 것이 적절하다. 따라서 모든 조건을 만족하는 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m4s0t0",
+"custom": true
 }
 ]

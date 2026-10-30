@@ -2276,5 +2276,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u3m5s0t0",
 "custom": true
+},
+{
+"id": "fill-c47ae47818",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어와 우리말 뜻이 잘못 짝지어진 것은?",
+"choices": [
+"disappear: 사라지다",
+"similar: 비슷한",
+"especially: 특히",
+"stomach: 마음",
+"international: 국제적인"
+],
+"answer": "④",
+"solution": "stomach는 '위, 배'라는 뜻입니다. 본문의 'It satisfies not only the stomach but also the heart.'에서도 stomach(위)와 heart(마음)가 서로 대비되어 쓰였습니다. 나머지 단어는 뜻이 바르게 짝지어져 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5ffea1a882",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오. (각 빈칸에 한 단어씩 쓸 것)\n\n지금 나는 감기에 걸리면 치킨 수프를 먹는다.\n→ Now, when I __________ a __________, I eat chicken soup.",
+"selfGrade": true,
+"answer": "catch, cold",
+"solution": "'감기에 걸리다'는 catch a cold로 씁니다. 주어가 I이고 현재 시제이므로 catch를 원형 그대로 씁니다. 같은 뜻으로 'have a cold(감기에 걸려 있다)'라는 표현도 함께 알아 두세요.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-916ad482e3",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분의 우리말 뜻으로 가장 알맞은 것은?\n\nMy father made me a bowl of chicken soup [so that] I could get well.",
+"choices": [
+"~하기 위해서, ~하도록",
+"~하기 때문에",
+"~에도 불구하고",
+"~하자마자",
+"~할 때마다"
+],
+"answer": "①",
+"solution": "「so that + 주어 + can[could] ~」는 '~하기 위해서, ~하도록'이라는 뜻으로 목적을 나타냅니다. 따라서 이 문장은 '아버지는 내가 낫도록 치킨 수프 한 그릇을 만들어 주셨다'로 해석됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-880309bdac",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 두 문장의 의미가 서로 같지 않은 것은?",
+"choices": [
+"I study hard so that I can pass the test.\n= I study hard to pass the test.",
+"She got up early so that she could catch the bus.\n= She got up early in order to catch the bus.",
+"My father made me chicken soup so that I could get well.\n= My father made me chicken soup to get well.",
+"He saved money so that he could buy a bike.\n= He saved money so as to buy a bike.",
+"We left home early so that we could arrive on time.\n= We left home early to arrive on time."
+],
+"answer": "③",
+"solution": "so that절을 to부정사로 바꾸려면 주절의 주어와 so that절의 주어가 같아야 합니다. ③에서는 만든 사람이 father이고 낫는 사람은 I이므로 주어가 다릅니다. 그런데 to get well로 바꾸면 아버지가 낫기 위해 수프를 만들었다는 뜻이 되어 의미가 달라집니다. 나머지 선지는 두 주어가 같으므로 to부정사, in order to, so as to로 바꿔 써도 의미가 같습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-17bbe1c86e",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n할머니는 내가 오후 간식으로 마들렌을 먹을 수 있도록 마들렌을 만들어 주셨다.\n\n<조건>\n1. grandmother, make, madeleines, eat, afternoon snack을 모두 사용하고, 필요하면 형태를 바꿀 것\n2. so that과 조동사 can을 사용하되, 시제를 일치시킬 것\n3. 두 번째로 나오는 '마들렌'은 대명사로 쓸 것\n4. My로 시작하여 총 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "My grandmother made madeleines so that I could eat them as an afternoon snack.",
+"solution": "'~할 수 있도록'은 「so that + 주어 + can + 동사원형」으로 씁니다. 주절이 과거(made)이므로 시제를 맞추어 can은 could로 바꿉니다. 두 번째 '마들렌'은 조건에 따라 대명사 them으로 받고, '오후 간식으로'는 as an afternoon snack으로 씁니다. 이렇게 하면 모두 14단어가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a7b2044a42",
+"typeId": "eng-m3-b06-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분 두 군데를 찾아 바르게 고쳐 쓰시오. (틀린 표현 → 고친 표현의 형태로 쓸 것)\n\nComfort food is food that makes you to feel good when you are sad, angry, or stressed out. It satisfies not only the stomach but also the heart.\nWhen I was a small child, I caught a very bad cold. My father made me a bowl of chicken soup so that I can get well. The hot soup warmed my body, and I slowly started to feel better.",
+"selfGrade": true,
+"answer": "to feel → feel, can → could",
+"solution": "사역동사 make는 「make + 목적어 + 동사원형」 형태로 쓰므로 makes you to feel을 makes you feel로 고쳐야 합니다. 또 주절의 시제가 과거(made)이므로 so that절의 조동사도 과거형으로 맞추어 can을 could로 고쳐야 합니다. not only A but also B, started to feel 같은 나머지 표현은 어법상 바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m6s0t0",
+"custom": true
 }
 ]

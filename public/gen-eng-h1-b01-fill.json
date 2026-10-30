@@ -3849,5 +3849,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b01-u0m4s0t0",
 "custom": true
+},
+{
+"id": "fill-7a4ba01bbe",
+"typeId": "eng-h1-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 적절한 것은?\n\nToday, there ______ numerous AI programs that can create various forms of art, including images, songs, and novels.",
+"choices": [
+"is",
+"are",
+"was",
+"being",
+"to be"
+],
+"answer": "②",
+"solution": "주어는 복수 명사 numerous AI programs이므로 복수 동사가 필요하다. 또한 Today라는 현재 시점을 나타내므로 현재형 복수 동사 are가 알맞다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-707abb56e2",
+"typeId": "eng-h1-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 적절한 것은?\n\nRecently, an artist used an AI system ______ an image for an art contest.",
+"choices": [
+"create",
+"creates",
+"created",
+"to create",
+"creating"
+],
+"answer": "④",
+"solution": "'~하기 위해'라는 목적의 의미를 나타내는 to부정사가 필요하다. used an AI system 다음에 목적을 나타내는 to create가 와야 자연스럽다. 따라서 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e097380209",
+"typeId": "eng-h1-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 가장 적절한 것은?\n\nThese two images have ______ differences, but they look similar overall.",
+"choices": [
+"a little",
+"much",
+"a few",
+"a great deal of",
+"less"
+],
+"answer": "③",
+"solution": "differences는 셀 수 있는 명사의 복수형이므로 수량을 나타낼 때 a few를 써야 한다. a little, much, a great deal of, less는 모두 셀 수 없는 명사를 수식하므로 적절하지 않다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u3m1s0t0",
+"custom": true
 }
 ]

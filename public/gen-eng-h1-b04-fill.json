@@ -4653,5 +4653,133 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b04-u7m4s0t0",
 "custom": true
+},
+{
+"id": "fill-0bb999f3bf",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nIn 1828, Noah Webster published his dictionary with the goal of ______ America its own version of the English language.",
+"choices": [
+"provide",
+"provides",
+"provided",
+"providing",
+"to provide"
+],
+"answer": "④",
+"solution": "전치사 of의 목적어 자리이므로 동사가 아니라 동명사가 와야 한다. 따라서 providing이 알맞다. 「with the goal of + -ing」는 '~할 목적으로'라는 뜻의 전형적 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c273867543",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nToday, it is essential for English dictionaries ______ new words that reflect diverse identities and experiences.",
+"choices": [
+"recognize",
+"recognizes",
+"recognizing",
+"to recognize",
+"recognized"
+],
+"answer": "④",
+"solution": "문장 맨 앞의 it은 가주어이고 뒤에 진주어가 와야 한다. 「It is + 형용사 + for + 의미상 주어 + to부정사」 구문이므로 to recognize가 알맞다. for English dictionaries는 to recognize의 의미상 주어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a353f7c454",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 동사를 어법에 맞게 한 단어로 고쳐 쓰시오.\n\nWebster argued that these informal words captured American variations, (distinguish) American English from British English.",
+"selfGrade": true,
+"answer": "distinguishing",
+"solution": "접속사 없이 주절에 이어지는 분사구문 자리이다. 의미상 주어(these words)가 '구별하는' 능동 관계이므로 현재분사 distinguishing으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ddd2ae1ebe",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "밑줄 친 ①~⑤ 중, 어법상 틀린 것은?\n\nWith the rise of English as a global lingua franca, there ①has been many efforts to document its variations. The Oxford Handbook of World Englishes ②is one result of this trend, and it ③describes how English ④is spoken in different regions and ⑤reflects local identities.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "①",
+"solution": "「there + be동사」 구문에서 동사의 수는 뒤의 명사에 일치한다. 주어가 복수 many efforts이므로 has been을 have been으로 고쳐야 한다. ②는 단수 주어 The Handbook에 맞는 is, ④는 '말해지다'라는 수동 is spoken으로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-78cbe7ffc2",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 두 개 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nNoah Webster devoted years to ⓐcreate a dictionary that reflected American English. In his day, most reference books were more interested in ⓑdictating correct usage than in ⓒdocumenting real speech. Webster, however, sought ⓓto describe the way Americans actually spoke, ⓔincluded many informal words. Although critics accused him of ⓕpolluting the language, he insisted that such words were valuable.",
+"selfGrade": true,
+"answer": "ⓐ : creating / ⓔ : including",
+"solution": "ⓐ의 to는 「devote A to B(~에 바치다)」의 전치사이므로 뒤에 동명사 creating이 와야 한다. ⓔ는 접속사 없이 앞 절에 이어지는 분사구문으로, 의미상 주어 Webster가 '포함하는' 능동 관계이므로 including으로 고친다. ⓑ·ⓕ는 「interested in / accused of + 동명사」로, ⓓ는 「seek + to부정사」로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-37a015bb5e",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "밑줄 친 ①~⑤ 중, 어법상 틀린 것은?\n\nWebster believed that a dictionary should document the way people ①spoke rather than ②dictate how they should speak. This idea, ③considering radical at the time, ④led critics ⑤to accuse him of polluting English.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "분사구문의 의미상 주어 This idea는 '여겨지는' 대상이므로 수동의 과거분사 considered가 되어야 한다. 따라서 considering을 considered로 고쳐야 한다. ②는 조동사 should 뒤 document와 병렬을 이루는 원형 dictate, ⑤는 「led + 목적어 + to부정사」로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-23e7694a6a",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 세 개 찾아 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nThe publication of Webster's dictionary in 1828 marked a turning point in ⓐhow Americans viewed their own language. At a time when most reference books were busy ⓑto prescribe rules, Webster chose ⓒdescribing everyday speech, a decision ⓓmaking him both famous and controversial. Critics, ⓔconvinced that informal words would corrupt English, demanded that such entries ⓕwere removed from future editions.",
+"selfGrade": true,
+"answer": "ⓑ : prescribing / ⓒ : to describe / ⓕ : be removed",
+"solution": "ⓑ는 「be busy + -ing(~하느라 바쁘다)」 구문이므로 prescribing이 맞다. ⓒ는 「choose + to부정사」이므로 to describe로 고친다. ⓕ는 요구를 뜻하는 demand의 that절로, that절 동사는 「(should) + 동사원형」이 되어야 하므로 be removed가 맞다. ⓓ는 a decision을 수식하는 현재분사, ⓔ는 critics가 '확신하게 된' 수동 관계의 과거분사로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6d2773e4b8",
+"typeId": "eng-h1-b04-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분을 모두 찾아 기호를 쓰고 알맞게 고쳐 쓰시오. (틀린 개수는 주어지지 않으며, 고칠 필요가 없는 것은 쓰지 않는다.)\n\nWebster's dictionary inspired later scholars ⓐtreating local varieties of English as worthy of study. Today, linguists are busy ⓑcollecting words from communities around the world, ⓒbelieved that every variety deserves a place in the record. Because English now ⓓbelongs to no single country, it is essential that each new edition ⓔreflect the experiences of its many users.",
+"selfGrade": true,
+"answer": "ⓐ : to treat / ⓒ : believing",
+"solution": "ⓐ는 「inspire + 목적어 + to부정사」 구문이므로 to treat로 고쳐야 한다. ⓒ는 접속사 없이 이어지는 분사구문으로, 의미상 주어 linguists가 '믿는' 능동 관계이므로 believing으로 고친다. ⓑ는 「be busy + -ing」, ⓓ는 단수 취급되는 English에 맞는 belongs, ⓔ는 당위를 뜻하는 essential 뒤 that절의 「(should) + 동사원형」 reflect로 모두 옳으므로 고치지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b04-u2m2s0t0",
+"custom": true
 }
 ]

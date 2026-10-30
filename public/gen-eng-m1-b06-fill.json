@@ -2228,5 +2228,70 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b06-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-ceb865542f",
+"typeId": "eng-m1-b06-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하시오.\n\n나는 배려하는 사람이 되고 싶다.\n(be, want, caring, I, a, to, person)\n→ ____________________________________",
+"selfGrade": true,
+"answer": "I want to be a caring person.",
+"solution": "'~이 되고 싶다'는 「want to + 동사원형」으로 쓴다. 주어 I 뒤에 want to be를 쓰고, 보어 a caring person을 이어 쓴다. caring은 명사 person을 꾸미므로 a와 person 사이에 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ed88ac1d46",
+"typeId": "eng-m1-b06-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하시오.\n\n나는 새로운 것들을 시도하고 싶다.\n(things, I, try, new, to, want)\n→ ____________________________________",
+"selfGrade": true,
+"answer": "I want to try new things.",
+"solution": "'~하고 싶다'는 「want to + 동사원형」으로 쓰므로 I want to try로 시작한다. 목적어 '새로운 것들'은 형용사 new가 명사 things 앞에 와서 new things가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4a6056c4fc",
+"typeId": "eng-m1-b06-u5m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 대화의 밑줄 친 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하시오.\n\nB: What do you want to be in the future?\nG: Well, 나는 인공지능에 관심이 있어. I want to be a computer scientist.\n(AI, interested, I'm, in)\n→ ____________________________________",
+"selfGrade": true,
+"answer": "I'm interested in AI.",
+"solution": "'~에 관심이 있다'는 be interested in으로 쓴다. 주어와 be동사가 줄어든 I'm 뒤에 interested in을 쓰고, 마지막에 AI를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-624de4bfa5",
+"typeId": "eng-m1-b06-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고 질문에 알맞은 대답을 <조건>에 맞게 쓰시오.\n\nAt home, I asked my family about their dream jobs. Dad said, “Well, I wanted to be an astronaut when I was young. I wanted to travel to the moon.”\n\n<조건>\n• to부정사를 사용할 것\n• 주어 He로 시작하여 7단어로 쓸 것\n\nQ. What did Noah’s dad want to do when he was young?\n→ ____________________________________",
+"selfGrade": true,
+"answer": "He wanted to travel to the moon.",
+"solution": "아빠는 어렸을 때 달로 여행 가고 싶었다고 말했다. 질문이 과거시제(did)이므로 want의 과거형 wanted를 쓰고, 뒤에 to부정사 to travel을 쓴다. He / wanted / to / travel / to / the / moon으로 7단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fa6788ec54",
+"typeId": "eng-m1-b06-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 알맞은 대답을 <조건>에 맞게 쓰시오.\n\nThe next day, I gave a presentation.\n“What do I want to be when I grow up? I don’t know. Who do I want to be? I know that!\nI want to be a caring person. I want to help others. I also want to be a brave person. I want to try new things.\nWho do I want to be? I want to be me.”\n\n<조건>\n• to부정사와 접속사 and를 사용할 것\n• 본문에서 사람의 성격을 나타내는 형용사 두 개를 모두 쓸 것\n• 주어 He로 시작하여 9단어로 쓸 것(필요시 변형할 것)\n\nQ. What kind of person does Noah want to be?\n→ ____________________________________",
+"selfGrade": true,
+"answer": "He wants to be a caring and brave person.",
+"solution": "Noah는 발표에서 배려하는 사람(caring)과 용감한 사람(brave)이 되고 싶다고 말했다. 주어가 3인칭 단수 He이므로 want가 아니라 wants로 써야 한다. 두 형용사를 and로 이어 a caring and brave person으로 쓰면 He / wants / to / be / a / caring / and / brave / person으로 9단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b06-u5m6s0t0",
+"custom": true
 }
 ]

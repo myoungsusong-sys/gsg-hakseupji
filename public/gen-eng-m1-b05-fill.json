@@ -2144,5 +2144,260 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u0m5s0t0",
 "custom": true
+},
+{
+"id": "fill-3a53f46d6e",
+"typeId": "eng-m1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nMrs. Granger said, \"Frindle is not a real word. You and your classmates should stop ______ it.\"",
+"choices": [
+"use",
+"uses",
+"used",
+"using",
+"to use"
+],
+"answer": "④",
+"solution": "「stop + -ing」는 '~하는 것을 멈추다'라는 뜻으로, stop 뒤에는 동명사가 와야 한다. 따라서 using이 알맞다. stop to부정사는 '~하기 위해 멈추다'라는 다른 뜻이므로 여기서는 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-efff432b4a",
+"typeId": "eng-m1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWhen he turned 21, he ______ a package from Mrs. Granger.",
+"choices": [
+"receive",
+"receives",
+"received",
+"receiving",
+"to receive"
+],
+"answer": "③",
+"solution": "when he turned 21로 보아 과거의 일을 서술하는 문장이므로, 주절의 동사도 과거형이어야 한다. 따라서 receive의 과거형인 received가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c3e119aecd",
+"typeId": "eng-m1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMrs. Granger said, “You and your classmates should stop (A)[using / to use] it.” The next morning, she told the class, “Stop using frindle!” But more and more students used it. Students in other schools started using (B)[it / them]. Soon, students in the whole country (C)[was / were] using it.",
+"choices": [
+"using - it - were",
+"using - them - was",
+"to use - it - was",
+"using - it - was",
+"to use - them - were"
+],
+"answer": "①",
+"solution": "(A) stop 뒤에는 동명사가 오므로 using이 맞다. (B) 가리키는 대상은 단어 frindle 하나이므로 단수 대명사 it이 맞다. (C) 주어 students가 복수이고 과거 시제이므로 were가 맞다. 따라서 using - it - were인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d3dab54a1c",
+"typeId": "eng-m1-b05-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 ⓐ~ⓕ 중, 어법상 알맞은 것끼리 짝지어진 것은?\n\nShe said, “I wrote this letter for you. But I'm not going to give ⓐit to you today. I will send ⓑyou this letter some day.” The next morning, Mrs. Granger told the class, “Stop ⓒto use frindle!” But more and more students ⓓused it. Soon, students in the whole country ⓔwas using it. Every good story ⓕneeds a “bad guy.”",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓑ, ⓕ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓒ는 stop 뒤에 동명사가 와야 하므로 using으로 고쳐야 하고, ⓔ는 주어 students가 복수이므로 were로 고쳐야 한다. ⓐ(단수 대명사 it), ⓑ(send + 사람 + 사물 어순), ⓓ(과거형 used), ⓕ(every + 단수 주어 취급 → needs)는 모두 어법상 옳다. 따라서 옳은 것끼리 묶인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a8a9538a51",
+"typeId": "eng-m1-b05-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분을 모두 찾아 기호와 함께 바르게 고쳐 쓰시오. (3개)\n\nTime passed and Nick graduated. When he turned 21, he received a package from Mrs. Granger. It had a pen, a letter, and a dictionary. There ⓐwere a note on the dictionary. On that page, he ⓑfinds the word frindle! Every good story ⓒneed a “bad guy.”",
+"selfGrade": true,
+"answer": "ⓐ were → was, ⓑ finds → found, ⓒ need → needs",
+"solution": "ⓐ는 뒤의 주어 a note가 단수이므로 과거 단수형 was로 고친다. ⓑ는 글 전체가 과거 시제(turned, received, had)이므로 find의 과거형 found로 고친다. ⓒ는 「every + 단수명사」는 단수 취급하고 현재의 일반적 사실을 말하므로 needs로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-60aee95aa6",
+"typeId": "eng-m1-b05-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "윗글의 괄호 ⓐ~ⓓ에 주어진 동사를 어법상 알맞은 형태로 각각 쓰시오.\n\nNick said, “You should stop ⓐ(use) it. Everyone ⓑ(be) using it now.” The next morning, Mrs. Granger said, “Stop using frindle!” Soon, students in the whole country ⓒ(be) using it. Mrs. Granger later wrote, “Every good story ⓓ(need) a 'bad guy.'”",
+"selfGrade": true,
+"answer": "ⓐ using, ⓑ is, ⓒ were, ⓓ needs",
+"solution": "ⓐ는 「stop + -ing」구조이므로 using이다. ⓑ는 Nick이 말하는 현재 시점이고 주어 Everyone이 단수 취급되므로 is이다. ⓒ는 과거의 일이고 주어 students가 복수이므로 were이다. ⓓ는 현재의 일반적 사실이고 「every + 단수명사」는 단수 취급하므로 needs이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fccb2018e7",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이가 뜻하는 단어로 알맞은 것은?\n\nfeeling afraid or frightened",
+"choices": [
+"glad",
+"sad",
+"hungry",
+"scared",
+"dangerous"
+],
+"answer": "④",
+"solution": "'무서워하는, 겁먹은' 상태를 뜻하는 feeling afraid or frightened 는 scared 의 풀이다. glad(기쁜), sad(슬픈), hungry(배고픈), dangerous(위험한)는 뜻이 맞지 않는다. 따라서 정답은 ④ scared 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8758312268",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 단어의 우리말 뜻으로 알맞은 것은?\n\nThe rice and bananas grew _quickly_ near the forest.",
+"choices": [
+"천천히",
+"빠르게",
+"조용히",
+"위험하게",
+"슬프게"
+],
+"answer": "②",
+"solution": "quickly 는 '빠르게'라는 뜻의 부사다. 벼와 바나나가 숲 근처에서 '빠르게' 자랐다는 의미로 자연스럽다. 따라서 정답은 ② 빠르게 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-16bdb22398",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말 뜻에 알맞은 영어 단어(표현)는?\n\n**잃어버리다 (lose-lost-lost)**",
+"choices": [
+"take",
+"lose",
+"make",
+"live",
+"try"
+],
+"answer": "②",
+"solution": "'잃어버리다'에 해당하는 단어는 lose(lose-lost-lost)이다. take(가지고 가다), make(만들다), live(살다), try(시도하다)는 뜻이 다르다. 따라서 정답은 ② lose 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-249410f8b2",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸에 들어갈 말로 알맞은 단어를 영영풀이를 참고하여 고르면?\n\nLong ago, elephants often came to our village. We made loud noises and used fire, but it was dangerous. Later, we planted rice and bananas near the forest for them. Now elephants and people are good ___________.\n\n[영영풀이] people who live next to or near you",
+"choices": [
+"players",
+"farmers",
+"teachers",
+"artists",
+"neighbors"
+],
+"answer": "⑤",
+"solution": "영영풀이 people who live next to or near you 는 '이웃'을 뜻하는 neighbors 의 풀이다. 코끼리와 사람이 '좋은 이웃'이 되었다는 흐름과도 맞는다. players(선수), farmers(농부), teachers(교사), artists(예술가)는 뜻이 맞지 않으므로 정답은 ⑤ neighbors 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-40e17adb86",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nWe used fire, but it was (A)[safe / dangerous] for us. One day, my father said, “The elephants are just (B)[full / hungry].” So we (C)[planted / lost] rice and bananas near the forest for them.",
+"choices": [
+"safe - full - planted",
+"dangerous - hungry - planted",
+"dangerous - full - lost",
+"safe - hungry - lost",
+"dangerous - hungry - lost"
+],
+"answer": "②",
+"solution": "불을 사용했지만 우리에게 '위험했다'이므로 (A)는 dangerous. 코끼리가 '그저 배고플 뿐'이라는 흐름이므로 (B)는 hungry. 코끼리를 위해 벼와 바나나를 '심었다'이므로 (C)는 planted 이다. 따라서 정답은 ② dangerous - hungry - planted 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-62b7942050",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 영어 단어와 우리말 뜻의 연결이 바르지 <않은> 것은?",
+"choices": [
+"forest - 숲",
+"scared - 무서워하는",
+"dangerous - 안전한",
+"quickly - 빠르게",
+"hungry - 배고픈"
+],
+"answer": "③",
+"solution": "dangerous 는 '위험한'이라는 뜻이다. '안전한'은 safe 이므로 ③의 연결이 바르지 않다. 나머지 forest(숲), scared(무서워하는), quickly(빠르게), hungry(배고픈)는 모두 바르게 연결되었다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8b7df43992",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이가 뜻하는 단어를 쓰시오.\n\na large area of land that is covered with trees",
+"selfGrade": true,
+"answer": "forest",
+"solution": "'나무로 뒤덮인 넓은 땅'이라는 영영풀이는 '숲'을 뜻하는 forest 의 설명이다. 본문에서 마을 사람들이 '숲 근처(near the forest)'에 먹을 것을 심었다는 내용과도 연결된다. 따라서 정답은 forest 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-52662dd05c",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말 뜻과 첫 글자를 참고하여 빈칸에 알맞은 단어를 쓰시오.\n\nMany elephants came down to our v__________ to look for food. (마을)",
+"selfGrade": true,
+"answer": "village",
+"solution": "'마을'을 뜻하면서 v 로 시작하는 단어는 village 이다. 코끼리들이 먹이를 찾아 '우리 마을'로 내려왔다는 흐름에 알맞다. 따라서 정답은 village 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8eab53a39a",
+"typeId": "eng-m1-b05-u3m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이가 뜻하는 단어를 쓰시오. (표현 make a ________ 의 빈칸에 들어가는 낱말)\n\na loud or unpleasant sound",
+"selfGrade": true,
+"answer": "noise",
+"solution": "'크거나 듣기 싫은 소리'라는 영영풀이는 '소음, 시끄러운 소리'를 뜻하는 noise 의 설명이다. make a noise 는 '소음을 내다'라는 표현이다. 따라서 빈칸에 들어갈 단어는 noise 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u3m0s0t0",
+"custom": true
 }
 ]

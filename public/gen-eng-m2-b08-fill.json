@@ -946,5 +946,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b08-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-3a365f368d",
+"typeId": "eng-m2-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말 뜻에 알맞은 영어 표현은?\n\n**~에 신청하다, ~을 신청하다**",
+"choices": [
+"sign up for",
+"take a look",
+"put on",
+"dive into",
+"be interested in"
+],
+"answer": "①",
+"solution": "'~에 신청하다, 등록하다'는 sign up for이다. take a look은 '한 번 보다', put on은 '~을 착용하다', dive into는 '~에 뛰어들다', be interested in은 '~에 관심이 있다'를 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-3cf26f659f",
+"typeId": "eng-m2-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영어 단어의 우리말 뜻으로 알맞은 것은?\n\n**telescope**",
+"choices": [
+"망원경",
+"현미경",
+"무대",
+"마스크",
+"북극광"
+],
+"answer": "①",
+"solution": "telescope는 멀리 있는 물체를 크게 보는 도구인 '망원경'이다. 무대는 stage, 마스크는 mask, 북극광은 the Northern Lights이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-eadb552e49",
+"typeId": "eng-m2-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 영영풀이에 해당하는 단어는?\n\n_to jump into water with your arms and head going in first_",
+"choices": [
+"dive",
+"observe",
+"share",
+"copy",
+"put on"
+],
+"answer": "①",
+"solution": "팔과 머리를 먼저 넣으며 물속으로 뛰어드는 것은 dive(다이빙하다)이다. observe는 관찰하다, share는 공유하다, copy는 따라 하다, put on은 착용하다를 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-23c4c3880d",
+"typeId": "eng-m2-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>의 영영풀이가 알맞은 것을 모두 골라 짝지은 것은?\n\n<보기>\nⓐ observe: to watch someone or something carefully\nⓑ powerful: weak and very gentle\nⓒ share: to have or use something with other people\nⓓ copy: to do something exactly the same as someone else\nⓔ near: a long distance away from something\nⓕ dive: to walk slowly on dry land",
+"choices": [
+"ⓐ, ⓒ, ⓓ",
+"ⓐ, ⓑ, ⓕ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓓ, ⓕ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "①",
+"solution": "observe(주의 깊게 관찰하다), share(다른 사람과 함께 쓰다·나누다), copy(똑같이 따라 하다)의 풀이가 맞다. powerful은 '강렬한'이므로 ⓑ는 틀렸고, near는 '~근처에'이므로 ⓔ도 반대로 설명되었으며, dive는 '물속으로 뛰어들다'이므로 ⓕ도 틀렸다. 따라서 정답은 ⓐ, ⓒ, ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c81706a97a",
+"typeId": "eng-m2-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 표현의 우리말 뜻이 바르지 <u>않은</u> 것은?",
+"choices": [
+"I <u>signed up for</u> the talent show. (장기 자랑에 신청했다)",
+"Let's <u>take a look</u> at this new app. (한 번 보다)",
+"She <u>put on</u> a diving mask. (벗었다)",
+"We <u>observed</u> sea life underwater. (관찰했다)",
+"The song has a <u>powerful</u> rhythm. (강렬한)"
+],
+"answer": "③",
+"solution": "put on은 '~을 착용하다, 쓰다'라는 뜻이므로 '벗었다'로 해석한 ③이 틀렸다. '벗다'는 take off이다. 나머지 sign up for(신청하다), take a look(한 번 보다), observe(관찰하다), powerful(강렬한)은 모두 바르게 해석되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-1526ee0b55",
+"typeId": "eng-m2-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nWhen I watched the amazing underwater video, I decided to ______ the diving class right away.",
+"choices": [
+"sign up for",
+"take a look",
+"put on",
+"look at",
+"copy"
+],
+"answer": "①",
+"solution": "수업(class)에 '신청하다, 등록하다'라는 뜻이 자연스러우므로 sign up for가 알맞다. take a look at, look at은 '보다', put on은 '착용하다', copy는 '따라 하다'로 수업을 신청한다는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m0s0t0",
+"custom": true
 }
 ]

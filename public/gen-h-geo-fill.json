@@ -2608,5 +2608,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-19524",
 "custom": true
+},
+{
+"id": "fill-6ceadb0904",
+"typeId": "19522",
+"kind": "객관식",
+"diff": 1,
+"body": "포물선 $x^2=12y$의 초점을 $F$라 하자. 이 포물선 위의 점 $P$와 점 $A(2,6)$에 대하여 $\\overline{PA}+\\overline{PF}$의 최솟값은?",
+"choices": [
+"$6$",
+"$7$",
+"$8$",
+"$9$",
+"$10$"
+],
+"answer": "④",
+"solution": "준선은 $y=-3$이고, $P$에서 준선에 내린 수선의 발을 $H$라 하면 $\\overline{PF}=\\overline{PH}$이다. 따라서 $\\overline{PA}+\\overline{PF}\\geq\\overline{AH}\\geq 9$이다. $P\\left(2,\\frac13\\right)$일 때 등호가 성립하므로 최솟값은 $9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-a351cdbe7f",
+"typeId": "19522",
+"kind": "주관식",
+"diff": 1,
+"body": "포물선 $y^2=8x$의 초점을 $F$라 하자. 이 포물선 위의 점 $P$와 점 $A(7,-2)$에 대하여 $\\overline{AP}+\\overline{PF}$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$9$",
+"solution": "준선은 $x=-2$이고, $P$에서 준선에 내린 수선의 발을 $H$라 하면 $\\overline{PF}=\\overline{PH}$이다. 따라서 $\\overline{AP}+\\overline{PF}\\geq\\overline{AH}\\geq 9$이며, $P\\left(\\frac12,-2\\right)$일 때 등호가 성립한다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-c94b0af433",
+"typeId": "19522",
+"kind": "객관식",
+"diff": 1,
+"body": "포물선 $x^2=-8y$ 위의 점 $P$에서 준선에 내린 수선의 발을 $H$라 하자. 점 $A(0,-5)$에 대하여 $\\overline{AP}+\\overline{PH}$의 최솟값은?",
+"choices": [
+"$6$",
+"$7$",
+"$8$",
+"$9$",
+"$10$"
+],
+"answer": "②",
+"solution": "포물선의 준선은 $y=2$이다. 삼각부등식에 의해 $\\overline{AP}+\\overline{PH}\\geq\\overline{AH}\\geq 7$이다. $P=(0,0)$일 때 두 등호가 모두 성립하므로 최솟값은 $7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-d4158d00e8",
+"typeId": "19522",
+"kind": "객관식",
+"diff": 2,
+"body": "포물선 $y^2=-12x$의 초점을 $F$라 하자. 이 포물선 위를 움직이는 점 $P$와 점 $A(-5,3)$에 대하여 $\\overline{AP}+\\overline{PF}$의 최솟값은?",
+"choices": [
+"$6$",
+"$7$",
+"$8$",
+"$9$",
+"$10$"
+],
+"answer": "③",
+"solution": "준선은 $x=3$이고, $P$에서 준선에 내린 수선의 발을 $H$라 하면 $\\overline{PF}=\\overline{PH}$이다. 따라서 $\\overline{AP}+\\overline{PF}\\geq\\overline{AH}\\geq 8$이다. $P\\left(-\\frac34,3\\right)$일 때 $A,P,H$가 이 순서로 한 직선 위에 있으므로 최솟값은 $8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-9112720cd5",
+"typeId": "19522",
+"kind": "객관식",
+"diff": 2,
+"body": "포물선 $x^2=4y$ 위의 점 $P$에서 준선에 내린 수선의 발을 $H$라 하자. 점 $A(4,1)$에 대하여 $\\overline{AP}+\\overline{PH}$의 최솟값은?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "③",
+"solution": "포물선의 초점은 $F(0,1)$이므로 $\\overline{PH}=\\overline{PF}$이다. 삼각부등식에 의해 $\\overline{AP}+\\overline{PH}\\geq\\overline{AF}=4$이다. 선분 $AF$ 위의 점 $P(2,1)$이 포물선 위에 있으므로 최솟값은 $4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-5bed548f2d",
+"typeId": "19522",
+"kind": "주관식",
+"diff": 2,
+"body": "두 점 $A(0,-2)$, $B(3,-6)$과 포물선 $x^2+8y=0$ 위의 점 $P$에 대하여 삼각형 $ABP$의 둘레의 길이의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$13$",
+"solution": "점 $A$는 포물선의 초점이고 준선은 $y=2$이므로, $P$에서 준선에 내린 수선의 발을 $H$라 하면 $\\overline{AP}=\\overline{PH}$이다. 따라서 $\\overline{BP}+\\overline{AP}\\geq\\overline{BH}\\geq 8$이며, $P\\left(3,-\\frac98\\right)$일 때 등호가 성립한다. $\\overline{AB}=5$이므로 둘레의 길이의 최솟값은 $13$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-975d437715",
+"typeId": "19522",
+"kind": "주관식",
+"diff": 5,
+"body": "포물선 $y^2=4x$의 초점을 $F$라 하자. 실수 $t$에 대하여 점 $A_t(t^2,2t-3)$을 정하고, $P$가 이 포물선 위를 움직일 때 $\\overline{A_tP}+\\overline{PF}$의 최솟값을 $m(t)$라 하자. $m(t)=5$를 만족시키는 모든 실수 $t$의 합을 구하시오.",
+"selfGrade": true,
+"answer": "$1$",
+"solution": "초점은 $F(1,0)$, 준선은 $x=-1$이고, $A_t$가 포물선 위 또는 포물선의 오른쪽 영역에 있을 조건은 $4t^2\\geq(2t-3)^2$, 즉 $t\\geq\\frac34$이다. 포물선의 정의와 삼각부등식을 이용하면 $t\\geq\\frac34$일 때 $m(t)=t^2+1$이고, $t<\\frac34$일 때는 선분 $A_tF$와 포물선의 교점에서 최솟값을 가지므로 $m(t)=\\sqrt{t^4+2t^2-12t+10}$이다. 첫째 경우에는 $t^2+1=5$에서 조건을 만족하는 값이 $t=2$이다. 둘째 경우에는 $(t+1)(t^3-t^2+3t-15)=0$이고, $t<\\frac34$에서 $t^3-t^2+3t-15=t^2(t-1)+3t-15<0$이므로 $t=-1$이다. 따라서 구하는 합은 $2+(-1)=1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-29d376630b",
+"typeId": "19522",
+"kind": "주관식",
+"diff": 5,
+"body": "포물선 $x^2=4y$의 초점을 $F$라 하고, 점 $A(0,13)$을 잡는다. 이 포물선 위의 점 $P$에 대하여 $2\\overline{AP}+\\overline{PF}$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$24$",
+"solution": "$P=(x,y)$라 하면 $y\\geq0$, $x^2=4y$이고, 포물선의 정의에 의해 $\\overline{PF}=y+1$이다. 또한 $\\overline{AP}=\\sqrt{4y+(y-13)^2}=\\sqrt{(11-y)^2+48}$이다. 코시ㆍ슈바르츠 부등식에 의해 $2\\sqrt{(11-y)^2+48}\\geq(11-y)+\\sqrt3\\cdot4\\sqrt3=23-y$이므로 $2\\overline{AP}+\\overline{PF}\\geq24$이다. $y=7$, $x=\\pm2\\sqrt7$일 때 등호가 성립하므로 최솟값은 $24$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
+},
+{
+"id": "fill-aaad9745e7",
+"typeId": "19522",
+"kind": "주관식",
+"diff": 5,
+"body": "포물선 $x^2=4y$의 초점을 $F$라 하고, 점 $A(9,13)$을 잡는다. 점 $P$는 이 포물선 위를 움직이고, 점 $Q$는 직선 $y=2x$ 위를 움직인다. $\\overline{FP}+\\overline{PQ}+\\overline{QA}$의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$16$",
+"solution": "점 $A$를 직선 $y=2x$에 대하여 대칭이동한 점은 $A'(5,15)$이므로 $\\overline{QA}=\\overline{QA'}$이다. $P$에서 준선 $y=-1$에 내린 수선의 발을 $H$라 하면 $\\overline{FP}=\\overline{PH}$이므로 $\\overline{FP}+\\overline{PQ}+\\overline{QA}=\\overline{HP}+\\overline{PQ}+\\overline{QA'}\\geq\\overline{HA'}\\geq16$이다. $P\\left(5,\\frac{25}{4}\\right)$, $Q(5,10)$으로 잡으면 각 점이 주어진 조건을 만족하고 $H,P,Q,A'$가 이 순서로 한 직선 위에 놓인다. 따라서 최솟값은 $16$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19522",
+"custom": true
 }
 ]

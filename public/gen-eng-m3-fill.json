@@ -1374,5 +1374,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m0s3t1",
 "custom": true
+},
+{
+"id": "fill-4c62a29cbf",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 흐름으로 보아 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nHe told me to practice drawing every day.\n\nI want to be an animator. ( ① ) However, I am not very good at drawing. ( ② ) Yesterday, I asked my teacher for advice. ( ③ ) I decided to follow his advice. ( ④ ) Now I draw pictures for thirty minutes every day. ( ⑤ ) I hope to become a good animator.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "주어진 문장은 '그는 나에게 매일 그림 그리기를 연습하라고 말했다.'라는 뜻이다. 앞의 my teacher가 주어진 문장의 He를 가리키며, 뒤의 his advice는 선생님이 해 준 조언을 의미한다. 따라서 선생님에게 조언을 구한 문장과 조언을 따르기로 했다는 문장 사이인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-762ffc3584",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 흐름으로 보아 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nHowever, this does not mean that an animator only needs to draw well.\n\nJisu has wanted to be an animator since she was young. ( ① ) She enjoys watching animated movies and often draws her favorite characters. ( ② ) She used to believe that good drawing skills were the most important thing for an animator. ( ③ ) Her teacher explained that animators also need to create interesting stories. ( ④ ) After hearing this, Jisu decided to read more books as well as practice drawing. ( ⑤ ) She now understands that becoming an animator requires more than one skill.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "주어진 문장의 However는 앞에서 언급한 생각과 반대되는 내용을 도입하며, this는 그림 실력이 가장 중요하다고 믿었던 생각을 가리킨다. 따라서 그 믿음이 제시된 직후에 주어진 문장을 넣고, 뒤에서 흥미로운 이야기를 만드는 능력도 필요하다는 선생님의 설명을 제시해야 한다. ②에 넣으면 this의 구체적인 대상이 아직 제시되지 않고, ④에 넣으면 선생님의 설명이 이미 나온 뒤라 역접의 흐름이 약해진다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-22fc318224",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 흐름으로 보아 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThis is why the building can remind visitors of a spaceship even though its design was inspired by nature.\n\nWhen people first see Dongdaemun Design Plaza in Seoul, many of them think of a giant spaceship. ( ① ) Its unusual appearance makes it look different from the buildings around it. ( ② ) Some visitors may therefore think that its design came from something made by humans rather than from the natural world. ( ③ ) In fact, the architect Zaha Hadid used curved lines from nature in designing the building. ( ④ ) Those curves give the building its unusual shape, which visitors may connect with the image of a spaceship. ( ⑤ ) The building shows how nature and modern cities can meet through architecture.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "주어진 문장은 건물이 자연에서 영감을 받아 설계되었는데도 우주선을 떠올리게 하는 이유를 정리한다. 따라서 앞에서 자연의 곡선이 건물의 독특한 형태를 만들고, 사람들이 그 형태를 우주선과 연결한다는 설명이 모두 제시되어야 한다. ④에 넣으면 자연에서 영감을 받았다는 사실은 나오지만 우주선을 연상하는 구체적인 이유가 아직 설명되지 않았다. 두 내용을 종합한 뒤 자연과 도시의 만남이라는 결론으로 이어지는 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
+},
+{
+"id": "fill-b15d23d762",
+"typeId": "eng-m3-u0m2s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 흐름으로 보아 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nOnly then did he realize that the way he read was just as important as the words themselves.\n\nTony volunteered to read books for blind people. ( ① ) Before he began recording, a woman at the volunteer center told him to read slowly and clearly. ( ② ) Tony understood her instructions, but he was more concerned about reading every word correctly. ( ③ ) During his first recording, he spoke so quickly that some words were difficult to understand. ( ④ ) When he listened to the recording, he noticed the problem and tried reading the same part again, this time more slowly. ( ⑤ ) From that experience, he learned to pay attention to both clear pronunciation and reading speed.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "⑤",
+"solution": "주어진 문장의 Only then은 토니가 자신의 읽기 방식의 중요성을 비로소 깨닫게 된 특정 시점을 가리킨다. 처음에는 정확하게 읽는 것만 중요하게 생각했지만, 빠르게 읽은 녹음을 직접 듣고 문제를 발견한 뒤 천천히 다시 읽는 경험을 했다. 따라서 깨달음은 녹음을 듣고 다시 읽어 본 사건 이후에 제시되어야 하며, 마지막 문장의 교훈으로 이어지는 ⑤가 적절하다. ④는 아직 녹음을 확인하고 문제를 해결하기 전이므로 정답이 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m2s1t0",
+"custom": true
 }
 ]

@@ -4755,5 +4755,203 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u6m3s0t0",
 "custom": true
+},
+{
+"id": "fill-d0318d492b",
+"typeId": "eng-h1-b06-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.\n\nIt was (amaze) to see bears and elephants moving freely in a large field.",
+"selfGrade": true,
+"answer": "amazing",
+"solution": "가주어 It이 가리키는 진주어 to see ~가 놀라움을 '주는' 대상이므로 능동의 의미인 현재분사형 형용사 amazing을 써야 한다. 사람이 놀라움을 '느낄' 때 쓰는 amazed와 구별해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5e28d847b7",
+"typeId": "eng-h1-b06-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오. (현재 시제로 쓸 것)\n\nOne of the worst examples of this (be) bear bile farming.",
+"selfGrade": true,
+"answer": "is",
+"solution": "주어는 'One of the + 복수명사' 구조이므로 핵심 주어는 One(단수)이다. 따라서 동사도 단수형 is를 써야 한다. 바로 앞의 examples나 this에 수를 맞추지 않도록 주의한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1bcbb2ed4f",
+"typeId": "eng-h1-b06-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오. (한 단어로 쓸 것)\n\n(Say) goodbye to the animals and staff, I felt grateful for the opportunity to volunteer.",
+"selfGrade": true,
+"answer": "Saying",
+"solution": "접속사와 주어(When I said ~)를 생략한 분사구문이다. 생략된 주어 I가 작별 인사를 '하는' 능동 관계이므로 현재분사 Saying을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9ad7f9e9c6",
+"typeId": "eng-h1-b06-u4m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 어색한 것을 두 개 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nAugust 1, Thursday\nOn the last day, we were called to the rescue center due to a sudden emergency. Some dehydrated birds ⓐhave fallen out of the sky in the city and ⓑwere brought to the center. ⓒFollowing the veterinarian's guidance, we provided water to the birds while the vets treated their broken wings and legs and injected them with vitamins for a speedy recovery. It was ⓓshocking that this type of accident happens every year since the high temperatures dry up water sources in the city. Caring for the birds, I couldn't help but ⓔreflecting on the impact of human activities on climate change and how it harms animals.\n\n<기호> <알맞게 고친 표현>\n(1) _______ → ______________\n(2) _______ → ______________",
+"selfGrade": true,
+"answer": "ⓐ had fallen ⓔ reflect",
+"solution": "ⓐ 새들이 센터로 옮겨진 과거 시점보다 더 먼저 떨어진 일이므로 과거완료 had fallen을 써야 한다. ⓔ 'couldn't help but + 동사원형'은 '~하지 않을 수 없었다'는 뜻이므로 reflect로 고친다. ⓑ는 새들이 '옮겨진' 수동, ⓒ는 생략된 주어 we와 능동 관계인 분사구문, ⓓ는 사실이 충격을 '주는' 것이므로 shocking으로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e3710ec3c7",
+"typeId": "eng-h1-b06-u4m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 세 개 골라 기호를 쓰고 알맞게 고쳐 쓰시오.\n\nⓐCaring for the birds, I couldn't help but reflect on the impact of human activities on climate change and how it harms animals.\nⓑSaying goodbye to the animals and staff, I felt ⓒgratefully for the opportunity to volunteer. From this experience, I learned the importance of ⓓtreat animals with respect and care. I also came ⓔto realize that humans are just another kind of animal and ⓕshares the Earth with all other living creatures. ⓖTo improve animal welfare, I'll work hard with Care for Animals members.\n\n<기호> <알맞게 고친 표현>\n(1) _______ → ______________\n(2) _______ → ______________\n(3) _______ → ______________",
+"selfGrade": true,
+"answer": "ⓒ grateful ⓓ treating ⓕ share",
+"solution": "ⓒ 감각·상태동사 felt 뒤에는 보어로 형용사가 와야 하므로 grateful로 고친다. ⓓ 전치사 of의 목적어 자리이므로 동명사 treating을 쓴다. ⓕ that절의 주어 humans(복수)에 이어 are와 and로 병렬 연결된 동사이므로 share로 고친다. ⓐ·ⓑ는 주어 I와 능동 관계인 분사구문, ⓔ는 'come to + 동사원형(~하게 되다)', ⓖ는 목적을 나타내는 to부정사로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-47a5925c7d",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThe external part of the outer ear gathers sound waves and directs them into the ear. The waves then travel through the ear canal and reach the eardrum in the middle ear. When the eardrum vibrates, the vibrations are transmitted to three small bones.",
+"choices": [
+"① Sound waves are first collected by the inner ear.",
+"② Sound waves travel directly from the outer ear to the brain.",
+"③ The eardrum is located in the middle ear.",
+"④ The three small bones are located in the outer ear.",
+"⑤ The eardrum prevents vibrations from reaching the small bones."
+],
+"answer": "③",
+"solution": "지문에서 고막은 중이에 위치한다고 명시하고 있으므로 ③이 정답이다. 소리는 외이에서 모인 뒤 외이도를 지나 고막에 도달한다. 고막의 진동은 중이에 있는 세 개의 작은 뼈로 전달되므로 나머지 선택지는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f5ac352e1c",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nA Swiss man noticed plant seeds sticking to his dog's fur while walking his dog in the 1940s. This observation inspired him to develop Velcro, a sticky fabric commonly used in clothes and bags.",
+"choices": [
+"① What was the name of the Swiss man's dog?",
+"② How much did the first Velcro product cost?",
+"③ Where did the Swiss man sell Velcro for the first time?",
+"④ What inspired the invention of Velcro?",
+"⑤ How many years did it take to develop Velcro?"
+],
+"answer": "④",
+"solution": "스위스 남성이 개의 털에 식물의 씨앗이 달라붙는 모습을 관찰한 것이 벨크로 발명의 계기였으므로 ④에 답할 수 있다. 개의 이름, 제품 가격, 최초 판매 장소, 개발 기간은 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f293bc866f",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nNoise-cancelling technology is used in cars to reduce unpleasant sounds such as engine, wind, and road noise. The car's audio system produces sound waves that cancel out these unwanted sounds. As a result, drivers can concentrate on driving without being disturbed by distracting noises.",
+"choices": [
+"① Noise-cancelling technology can be used in cars.",
+"② Car audio systems can produce waves to cancel unwanted noise.",
+"③ Engine noise is one of the sounds this technology can reduce.",
+"④ The technology can help drivers concentrate on driving.",
+"⑤ The technology makes road noise louder to keep drivers alert."
+],
+"answer": "⑤",
+"solution": "자동차의 소음 제거 기술은 엔진 소리, 바람 소리, 도로 소음 등을 줄이는 역할을 한다. 따라서 도로 소음을 더 크게 만든다는 ⑤는 글의 내용과 일치하지 않는다. ①~④는 모두 지문에 제시된 사실이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3203a64ae6",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 추론할 수 있는 내용으로 가장 적절한 것은?\n\nA sphere has the least surface area for a given volume. This is why a large sphere-shaped piece of ice melts more slowly than regular ice cubes. Since it lasts longer, it can keep a drink cool for a longer period of time.",
+"choices": [
+"① A sphere-shaped piece of ice melts faster because its surface area is larger.",
+"② The shape of ice can affect how long a drink stays cool.",
+"③ Ice cubes always have a smaller surface area than a sphere of the same volume.",
+"④ The volume of ice is the only factor that determines its melting speed.",
+"⑤ A sphere-shaped piece of ice cannot melt in a cold drink."
+],
+"answer": "②",
+"solution": "같은 부피일 때 구는 표면적이 가장 작아 일반적인 얼음 조각보다 천천히 녹는다고 설명한다. 따라서 얼음의 모양이 음료의 차가운 상태를 유지하는 시간에 영향을 미친다고 추론할 수 있다. ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0817fb35a3",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nNoise-cancelling headphones contain microphones and special circuitry. The microphones detect outside sounds, and the circuitry analyzes them to generate opposite sound waves. These waves are sent to the speakers to reduce unwanted noise. This technology works well for predictable sounds such as car engines and subways, but it is less effective for irregular sounds like nearby conversations.",
+"choices": [
+"① What detects outside sounds in noise-cancelling headphones?",
+"② What does the circuitry generate after analyzing outside noise?",
+"③ Where are the opposite sound waves sent?",
+"④ Why is noise cancellation less effective for nearby conversations?",
+"⑤ How many microphones are installed in each headphone?"
+],
+"answer": "⑤",
+"solution": "지문에는 마이크가 외부 소리를 감지하고 회로가 반대 음파를 생성하여 스피커로 보낸다는 내용이 나온다. 또한 규칙적으로 발생하는 소음에는 효과적이지만 불규칙한 대화 소리에는 효과가 상대적으로 낮다고 설명한다. 그러나 헤드폰에 설치된 마이크의 정확한 개수는 제시되지 않았으므로 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-bb2718029a",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 가장 올바르게 이해한 학생은?\n\nNoise-cancelling technology can also be used at ticket offices and drive-through restaurants. At noisy ticket offices, microphones detect external noise, and speakers produce opposite sound waves so that ticket agents can hear customers clearly. At drive-through restaurants, noise-cancelling headsets reduce vehicle noise, helping employees take orders accurately.\n\n학생들의 의견:\nEmma: The technology can help workers communicate clearly in noisy workplaces.\nJack: Ticket agents use the technology to make customers' voices disappear.\nOlivia: Drive-through employees use the headsets to increase vehicle noise.\nDaniel: The technology is useful only when people listen to music.\nSophia: Microphones at ticket offices are used to make external noise louder.",
+"choices": [
+"① Emma",
+"② Jack",
+"③ Olivia",
+"④ Daniel",
+"⑤ Sophia"
+],
+"answer": "①",
+"solution": "지문은 소음 제거 기술이 매표소와 드라이브스루 매장에서 직원과 고객 사이의 의사소통을 개선한다고 설명한다. 따라서 시끄러운 작업 환경에서 명확한 의사소통을 돕는다는 Emma의 의견이 옳다. 나머지 학생들은 소음 제거 기술의 목적이나 작동 효과를 반대로 이해했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c0cd343306",
+"typeId": "eng-h1-b06-u2m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 <보기>의 설명 중 옳은 것만을 모두 고른 것은?\n\nSound waves are first gathered by the external part of the outer ear and travel through the ear canal to the eardrum in the middle ear. The eardrum vibrates, and three small bones strengthen these vibrations before passing them to a fluid-filled, snail-shaped structure in the inner ear. Inside this structure, tiny hair cells move in response to waves in the fluid and generate electrical signals. The auditory nerve then carries the information to the brain, where the signals are interpreted.\n\nNoise-cancelling headphones use a different process involving sound waves. Microphones detect external noise, and special circuitry produces opposite sound waves to reduce it. For instance, an external wave with a value of +1 can be countered by a wave with a value of −1. However, the technology cannot easily eliminate every sound because the opposite waves must be produced and transmitted immediately. Therefore, it works better with regular sounds, such as engine noise, than with unpredictable sounds, such as nearby conversations.\n\n<보기>\nㄱ. Both hearing and noise cancellation involve the processing of sound-related information, but only the hearing process described here involves interpreting electrical signals in the brain.\nㄴ. The three small bones and the hair cells perform the same function because both strengthen vibrations before sending them to the auditory nerve.\nㄷ. If the circuitry does not produce the opposite sound waves quickly enough, complete cancellation of external noise may be difficult.\nㄹ. Since nearby conversations are less predictable than engine noise, the technology is generally less effective at cancelling nearby conversations.\nㅁ. In the hearing process, electrical signals are generated before the vibrations reach the fluid-filled structure of the inner ear.",
+"choices": [
+"① ㄱ, ㄴ",
+"② ㄴ, ㄷ, ㅁ",
+"③ ㄱ, ㄷ, ㄹ",
+"④ ㄱ, ㄹ, ㅁ",
+"⑤ ㄷ, ㄹ, ㅁ"
+],
+"answer": "③",
+"solution": "ㄱ은 청각 과정과 소음 제거 과정의 차이를 정확히 설명하므로 옳다. ㄷ은 반대 음파를 즉시 생성하고 전달해야 한다는 조건에서 추론할 수 있으며, ㄹ은 규칙적인 소음에 더 효과적이라는 설명과 일치한다. 반면 ㄴ은 진동을 증폭하는 작은 뼈와 전기 신호를 생성하는 유모세포의 기능을 혼동했고, ㅁ은 진동이 내이의 액체로 전달된 뒤 전기 신호가 생성된다는 순서를 뒤바꾸었다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u2m4s0t0",
+"custom": true
 }
 ]

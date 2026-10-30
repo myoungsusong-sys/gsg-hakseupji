@@ -3542,5 +3542,95 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u3m2s0t0",
 "custom": true
+},
+{
+"id": "fill-ce8e649806",
+"typeId": "eng-m1-b10-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"lettuce – 상추",
+"farmer – 농부",
+"stage – 무대",
+"contest – 대회",
+"section – 정원"
+],
+"answer": "⑤",
+"solution": "section은 '구역, 코너'라는 뜻으로, 본문의 'a special section'은 '특별 코너'를 뜻한다. '정원'은 garden이다. 나머지는 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fbffaa939e",
+"typeId": "eng-m1-b10-u1m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오. (주어진 철자로 시작할 것)\n\n저 알록달록한 벽은 암벽 등반을 위한 것이다.\n→ That c__________ wall is for r__________ c__________.",
+"selfGrade": true,
+"answer": "colorful, rock, climbing",
+"solution": "'알록달록한'은 colorful, '암벽 등반'은 rock climbing이다. 본문의 'Do you see the colorful wall? It's for rock climbing.'에 나온 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-47af51bcef",
+"typeId": "eng-m1-b10-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• Look at the student over there. He's __________ Spider-Man!\n• This month's writer is Yun Dong-ju. I __________ his poems.",
+"choices": [
+"love",
+"like",
+"enjoy",
+"see",
+"pick"
+],
+"answer": "②",
+"solution": "첫 문장의 빈칸에는 '~처럼'을 뜻하는 전치사 like가, 둘째 문장의 빈칸에는 '좋아하다'를 뜻하는 동사 like가 들어간다. love와 enjoy는 둘째 문장에만 들어갈 수 있고, 첫 문장에는 들어갈 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b9c0a5e185",
+"typeId": "eng-m1-b10-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말을 <보기>에서 골라 알맞은 형태로 쓰시오. (한 번씩만 쓸 것)\n\n<보기> pick   grow   call\n\n(1) Listen! Jimin's friends __________ __________ her now.\n(2) Every year, the students __________ tomatoes and lettuce in the school garden.\n(3) Look! My classmates __________ __________ the lettuce for the bibimbap party.",
+"selfGrade": true,
+"answer": "(1) are calling (2) grow (3) are picking",
+"solution": "(1)과 (3)은 Listen!, Look!, now로 보아 지금 일어나는 일이므로 'be동사+-ing' 형태의 현재진행형을 쓴다. 주어가 복수이므로 be동사는 are이다. (2)는 Every year로 보아 늘 반복되는 일이므로 현재시제를 쓰고, 주어 the students가 복수이므로 grow를 그대로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-dcdd82ede2",
+"typeId": "eng-m1-b10-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 <조건>에 맞게 영어로 쓰시오.\n\n저기에 있는 남자아이가 무대를 청소하고 있다.\n\n<조건>\n1. over there와 clean을 반드시 사용하되, 필요하면 형태를 바꿀 것\n2. 현재진행형을 사용할 것\n3. 총 8단어로 쓸 것",
+"selfGrade": true,
+"answer": "The boy over there is cleaning the stage.",
+"solution": "'저기에 있는 남자아이'는 over there가 뒤에서 꾸며 주는 The boy over there로 쓴다. '청소하고 있다'는 현재진행형이므로, 주어가 3인칭 단수인 것에 맞춰 is cleaning으로 쓴다. 문장 전체는 The / boy / over / there / is / cleaning / the / stage로 8단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b49b8a9742",
+"typeId": "eng-m1-b10-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Kate: Hey, Minji! Can you open the door for me, please?\nMinji: Sure, Kate. What are those?\nKate: These are prizes for the Dream Dance Contest. I'm working as a staff member.\nMinji: I see.\n(in the gym)\nMinji: Alex, what are you doing here?\nAlex: I'm cleaning the stage for the dance contest.\nMinji: Do you need help?\nAlex: Oh, can you move these chairs with me?\nMinji: Of course.\nAlex: Thank you for your help.\n\n위 대화를 읽고 내용을 요약할 때, 빈칸에 알맞은 말을 대화에서 찾아 쓰시오. (한 칸에 한 단어씩 쓸 것)\n\nKate is working as a __________ __________ for the Dream Dance Contest. She is carrying __________ for the contest, so Minji opens the door for her. In the gym, Alex is __________ the __________. Minji helps him, and they move the __________ together.",
+"selfGrade": true,
+"answer": "staff, member, prizes, cleaning, stage, chairs",
+"solution": "Kate는 'I'm working as a staff member.'라고 했으므로 staff member가 들어간다. Kate가 들고 있는 것은 대회 상품(prizes)이다. Alex는 'I'm cleaning the stage'라고 했으므로, 현재진행형에 맞춰 cleaning과 stage를 쓴다. 마지막으로 Alex가 함께 옮겨 달라고 부탁한 것은 의자(chairs)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m6s0t0",
+"custom": true
 }
 ]

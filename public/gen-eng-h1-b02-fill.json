@@ -5028,5 +5028,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u4m7s0t0",
 "custom": true
+},
+{
+"id": "fill-04a0960117",
+"typeId": "eng-h1-b02-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어 'drought'의 뜻으로 알맞은 것은?",
+"choices": [
+"홍수",
+"가뭄",
+"폭설",
+"지진",
+"산불"
+],
+"answer": "②",
+"solution": "'drought'는 비가 오랫동안 내리지 않아 물이 부족한 상태인 '가뭄'을 뜻한다. 본문에서 호주의 millennium drought(세기의 가뭄)가 1990년대 후반부터 2010년까지 이어졌다고 했다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-025e8a4b16",
+"typeId": "eng-h1-b02-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\n\nThe amount of shade provided by trees within the city is also known as ______ cover.",
+"choices": [
+"canopy",
+"cloud",
+"shadow",
+"leaf",
+"forest"
+],
+"answer": "①",
+"solution": "본문에서 도시 안 나무가 제공하는 그늘의 양을 'canopy cover(수관 피복)'라고 부른다고 설명했다. 따라서 빈칸에는 ① canopy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-514f4763b0",
+"typeId": "eng-h1-b02-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이에 해당하는 단어를 고르시오.\n\nthe people who live in a particular place",
+"choices": [
+"residents",
+"tourists",
+"workers",
+"farmers",
+"drivers"
+],
+"answer": "①",
+"solution": "'특정한 장소에 사는 사람들'을 뜻하는 단어는 'residents(주민)'이다. 본문에서도 높은 기온이 residents에게 위험할 수 있다고 했다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-fb08520609",
+"typeId": "eng-h1-b02-u2m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 문맥상 가장 알맞은 단어를 고르시오.\n\nHigher temperatures in cities can be dangerous for residents, as they increase the ______ of heat exhaustion.",
+"choices": [
+"risk",
+"benefit",
+"number",
+"shade",
+"loss"
+],
+"answer": "①",
+"solution": "높은 기온이 주민에게 위험한 이유는 열사병의 '위험(risk)'을 높이기 때문이다. increase the risk of ~는 '~의 위험을 높이다'라는 뜻으로 자연스럽다. 따라서 정답은 ① risk이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-249c01c80a",
+"typeId": "eng-h1-b02-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\nThe loss of canopy cover is a major (A)______ to urban environments because it (B)______ temperatures.",
+"choices": [
+"(A) threat – (B) raises",
+"(A) threat – (B) lowers",
+"(A) benefit – (B) raises",
+"(A) benefit – (B) lowers",
+"(A) solution – (B) raises"
+],
+"answer": "①",
+"solution": "수관 피복의 손실은 도시 환경에 대한 주요 '위협(threat)'이며, 그 이유는 기온을 '높이기(raises)' 때문이다. benefit(이익)이나 solution(해결책), lowers(낮추다)는 문맥과 맞지 않는다. 따라서 (A) threat, (B) raises인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ce7fb4bcbb",
+"typeId": "eng-h1-b02-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 단어 중 문맥상 쓰임이 어색한 것을 고르시오.\n\nDuring Australia's millennium ⓐdrought, 40 percent of the city's trees were in a state of ⓑdeclining health, and the overall number of trees was ⓒincreasing. As a result, the canopy cover ⓓdecreased, which ⓔraised temperatures in the city.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "본문에 따르면 가뭄으로 나무의 건강이 나빠졌을(declining) 뿐 아니라 나무의 전체 수(the overall number)도 '줄어들고(decreasing)' 있었다. 따라서 ⓒ increasing(증가하는)은 decreasing(감소하는)이 되어야 문맥에 맞다. 나머지 drought, declining, decreased, raised는 모두 자연스럽다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u2m7s0t0",
+"custom": true
 }
 ]

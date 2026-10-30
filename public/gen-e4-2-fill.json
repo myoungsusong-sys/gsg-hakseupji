@@ -1417,5 +1417,197 @@
 "source": "유사 문항",
 "twinGroup": "tw-17601",
 "custom": true
+},
+{
+"id": "fill-fc7aabf6b3",
+"typeId": "17544",
+"kind": "객관식",
+"diff": 1,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $37^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 각 DAE의 크기는 얼마입니까?",
+"choices": [
+"$23^\\circ$",
+"$37^\\circ$",
+"$53^\\circ$",
+"$60^\\circ$",
+"$97^\\circ$"
+],
+"answer": "④",
+"solution": "정삼각형의 한 각의 크기는 $60^\\circ$입니다. 삼각형을 돌려도 각의 크기는 변하지 않으므로 각 DAE는 $60^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-f0e5e60040",
+"typeId": "17544",
+"kind": "주관식",
+"diff": 1,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $24^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 각 BAD의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$24^\\circ$",
+"solution": "점 B가 점 A를 중심으로 $24^\\circ$만큼 돌아 점 D로 옮겨졌습니다. 따라서 각 BAD는 회전한 각과 같은 $24^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-b7e568664c",
+"typeId": "17544",
+"kind": "객관식",
+"diff": 1,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 반대 방향으로 $43^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 각 CAE의 크기는 얼마입니까?",
+"choices": [
+"$17^\\circ$",
+"$43^\\circ$",
+"$60^\\circ$",
+"$86^\\circ$",
+"$103^\\circ$"
+],
+"answer": "②",
+"solution": "점 C가 점 A를 중심으로 돌아 점 E로 옮겨졌습니다. 따라서 각 CAE는 회전한 각과 같은 $43^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-b151b57339",
+"typeId": "17544",
+"kind": "객관식",
+"diff": 2,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $22^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D가 각 BAC의 안쪽에 있을 때, 각 DAC의 크기는 얼마입니까?",
+"choices": [
+"$22^\\circ$",
+"$28^\\circ$",
+"$38^\\circ$",
+"$60^\\circ$",
+"$82^\\circ$"
+],
+"answer": "③",
+"solution": "정삼각형의 각 BAC는 $60^\\circ$이고, 각 BAD는 회전한 각과 같은 $22^\\circ$입니다. 따라서 각 DAC는 $60^\\circ-22^\\circ=38^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-9d61bc91a3",
+"typeId": "17544",
+"kind": "주관식",
+"diff": 2,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $34^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D가 각 BAC의 안쪽에 있을 때, 각 BAE의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$94^\\circ$",
+"solution": "각 BAC는 $60^\\circ$이고, 각 CAE는 회전한 각과 같은 $34^\\circ$입니다. 따라서 각 BAE는 $60^\\circ+34^\\circ=94^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-a84e22a6de",
+"typeId": "17544",
+"kind": "객관식",
+"diff": 2,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $60^\\circ$보다 작은 각만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D가 각 BAC의 안쪽에 있고 각 DAC가 $17^\\circ$일 때, 삼각형을 돌린 각의 크기는 얼마입니까?",
+"choices": [
+"$17^\\circ$",
+"$34^\\circ$",
+"$47^\\circ$",
+"$77^\\circ$",
+"$43^\\circ$"
+],
+"answer": "⑤",
+"solution": "각 BAC는 $60^\\circ$이므로 각 BAD는 $60^\\circ-17^\\circ=43^\\circ$입니다. 각 BAD는 삼각형을 돌린 각과 같으므로 구하는 각은 $43^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-e3b1d0306c",
+"typeId": "17544",
+"kind": "주관식",
+"diff": 3,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $38^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 선분 BD를 그었을 때, 각 ABD의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$71^\\circ$",
+"solution": "돌리기 전과 후의 길이가 같으므로 선분 AB와 선분 AD의 길이는 같습니다. 따라서 삼각형 ABD는 이등변삼각형이고, 각 BAD는 $38^\\circ$입니다. 각 ABD는 $(180^\\circ-38^\\circ)\\div2=71^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-a6394ab011",
+"typeId": "17544",
+"kind": "객관식",
+"diff": 3,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $36^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D가 각 BAC의 안쪽에 있습니다. 선분 BE를 그었을 때, 각 ABE의 크기는 얼마입니까?",
+"choices": [
+"$24^\\circ$",
+"$36^\\circ$",
+"$48^\\circ$",
+"$42^\\circ$",
+"$72^\\circ$"
+],
+"answer": "④",
+"solution": "각 BAE는 $60^\\circ+36^\\circ=96^\\circ$입니다. 정삼각형의 성질과 회전 전후의 길이를 생각하면 선분 AB와 선분 AE의 길이는 같습니다. 따라서 각 ABE는 $(180^\\circ-96^\\circ)\\div2=42^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-82f316d13d",
+"typeId": "17544",
+"kind": "주관식",
+"diff": 3,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $60^\\circ$보다 작은 각만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D가 각 BAC의 안쪽에 있고, 선분 BD를 그었을 때 각 ABD가 $68^\\circ$였습니다. 각 DAC의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$16^\\circ$",
+"solution": "선분 AB와 선분 AD의 길이가 같으므로 각 ADB도 $68^\\circ$입니다. 따라서 각 BAD는 $180^\\circ-68^\\circ-68^\\circ=44^\\circ$입니다. 각 DAC는 $60^\\circ-44^\\circ=16^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-92f97a4903",
+"typeId": "17544",
+"kind": "주관식",
+"diff": 4,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $44^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D는 각 BAC의 안쪽에 있습니다. 선분 AD와 선분 BE가 만나는 점을 P라고 할 때, 각 DPE의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$98^\\circ$",
+"solution": "각 BAE는 $60^\\circ+44^\\circ=104^\\circ$이고, 선분 AB와 선분 AE의 길이가 같으므로 각 ABE는 $(180^\\circ-104^\\circ)\\div2=38^\\circ$입니다. 삼각형 ABP에서 각 APB는 $180^\\circ-44^\\circ-38^\\circ=98^\\circ$입니다. 각 DPE와 각 APB는 마주 보는 두 각이므로 크기가 같아 각 DPE는 $98^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-6fdf4927c4",
+"typeId": "17544",
+"kind": "객관식",
+"diff": 4,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $60^\\circ$보다 작은 각만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D는 각 BAC의 안쪽에 있습니다. 선분 AD와 선분 BE가 만나는 점을 P라고 할 때 각 APB가 $101^\\circ$였습니다. 각 DAC의 크기는 얼마입니까?",
+"choices": [
+"$19^\\circ$",
+"$22^\\circ$",
+"$38^\\circ$",
+"$41^\\circ$",
+"$79^\\circ$"
+],
+"answer": "②",
+"solution": "선분 AB와 선분 AE의 길이가 같으므로 각 ABE와 각 BEA의 크기는 같습니다. 삼각형 ABP에서 각 BAP와 각 ABP의 합은 $180^\\circ-101^\\circ=79^\\circ$입니다. 삼각형 ABE와 비교하면 이 합은 $60^\\circ$에 회전한 각의 절반을 더한 크기이므로, 회전한 각은 $(79^\\circ-60^\\circ)\\times2=38^\\circ$입니다. 따라서 각 DAC는 $60^\\circ-38^\\circ=22^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
+},
+{
+"id": "fill-c835b255e7",
+"typeId": "17544",
+"kind": "주관식",
+"diff": 4,
+"body": "정삼각형 ABC를 점 A를 중심으로 시계 방향으로 $52^\\circ$만큼 돌렸더니 점 B는 점 D로, 점 C는 점 E로 옮겨졌습니다. 점 D는 각 BAC의 안쪽에 있습니다. 선분 BD와 선분 BE를 그었을 때, 각 DBE의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$30^\\circ$",
+"solution": "선분 AB와 선분 AD의 길이가 같으므로 각 ABD는 $(180^\\circ-52^\\circ)\\div2=64^\\circ$입니다. 각 BAE는 $60^\\circ+52^\\circ=112^\\circ$이고, 선분 AB와 선분 AE의 길이가 같으므로 각 ABE는 $(180^\\circ-112^\\circ)\\div2=34^\\circ$입니다. 따라서 각 DBE는 $64^\\circ-34^\\circ=30^\\circ$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17544",
+"custom": true
 }
 ]

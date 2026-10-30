@@ -2390,5 +2390,120 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-m22-06-u0m0s2t0",
 "custom": true
+},
+{
+"id": "fill-162f1bb28d",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하자. $\\overline{AB}=8\\,\\mathrm{cm}$, $\\overline{AC}=12\\,\\mathrm{cm}$, $\\overline{BC}=15\\,\\mathrm{cm}$일 때, $\\overline{BD}$의 길이는?",
+"choices": [
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$7.5\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$"
+],
+"answer": "②",
+"solution": "삼각형의 내각의 이등분선은 대변을 두 변의 길이의 비로 나누므로 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=8:12=2:3$이다. 따라서 $\\overline{BD}=15\\times\\dfrac{2}{2+3}=15\\times\\dfrac{2}{5}=6\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-8760b97b87",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하자. $\\overline{AB}=10\\,\\mathrm{cm}$, $\\overline{AC}=15\\,\\mathrm{cm}$, $\\overline{BC}=20\\,\\mathrm{cm}$일 때, $\\overline{DC}$의 길이는?",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$15\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "내각의 이등분선의 성질에 의해 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=10:15=2:3$이다. 따라서 $\\overline{DC}=20\\times\\dfrac{3}{2+3}=20\\times\\dfrac{3}{5}=12\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-94e1fdcce3",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6\\,\\mathrm{cm}$, $\\overline{AC}=4\\,\\mathrm{cm}$, $\\overline{BC}=5\\,\\mathrm{cm}$이다. $\\angle A$의 내각의 이등분선이 변 $BC$와 만나는 점을 $D$, $\\angle A$의 외각의 이등분선이 변 $BC$의 연장선과 만나는 점을 $E$라 할 때, $\\overline{DE}$의 길이는?",
+"choices": [
+"$8\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "내각의 이등분선에서 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=6:4=3:2$이므로 $\\overline{DC}=5\\times\\dfrac{2}{5}=2\\,\\mathrm{cm}$이다. 외각의 이등분선은 변 $BC$를 외분하므로 점 $E$는 $C$의 연장선 위에 있고 $\\overline{BE}:\\overline{CE}=3:2$이다. $\\overline{BE}=\\overline{BC}+\\overline{CE}=5+\\overline{CE}$이므로 $(5+\\overline{CE}):\\overline{CE}=3:2$에서 $\\overline{CE}=10\\,\\mathrm{cm}$이다. 따라서 $\\overline{DE}=\\overline{DC}+\\overline{CE}=2+10=12\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-431fb2d386",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=14\\,\\mathrm{cm}$, $\\overline{AC}=21\\,\\mathrm{cm}$, $\\overline{BC}=25\\,\\mathrm{cm}$이다. $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$, 변 $BC$의 중점을 $M$이라 할 때, $\\overline{DM}$의 길이는?",
+"choices": [
+"$2\\,\\mathrm{cm}$",
+"$2.5\\,\\mathrm{cm}$",
+"$3\\,\\mathrm{cm}$",
+"$3.5\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$"
+],
+"answer": "②",
+"solution": "내각의 이등분선의 성질에서 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=14:21=2:3$이므로 $\\overline{BD}=25\\times\\dfrac{2}{5}=10\\,\\mathrm{cm}$이다. 점 $M$은 중점이므로 $\\overline{BM}=\\dfrac{25}{2}=12.5\\,\\mathrm{cm}$이다. 따라서 $\\overline{DM}=\\overline{BM}-\\overline{BD}=12.5-10=2.5\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-3be9ff4332",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=7\\,\\mathrm{cm}$, $\\overline{AC}=5\\,\\mathrm{cm}$, $\\overline{BC}=6\\,\\mathrm{cm}$이다. $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하고, $\\angle B$의 이등분선이 선분 $AD$와 만나는 점을 $I$라 하자. $\\overline{AI}:\\overline{ID}$를 가장 간단한 자연수의 비로 나타내어라.",
+"selfGrade": true,
+"answer": "$2:1$",
+"solution": "먼저 $\\angle A$의 이등분선에서 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=7:5$이므로 $\\overline{BD}=6\\times\\dfrac{7}{12}=\\dfrac{7}{2}\\,\\mathrm{cm}$이다. 선분 $BI$는 삼각형 $ABD$에서 $\\angle B$의 이등분선이므로 $\\overline{AI}:\\overline{ID}=\\overline{BA}:\\overline{BD}=7:\\dfrac{7}{2}=2:1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-c42469fd5b",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "주관식",
+"diff": 5,
+"body": "넓이가 $45\\,\\mathrm{cm}^2$인 삼각형 $ABC$에서 $\\overline{AB}=6\\,\\mathrm{cm}$, $\\overline{AC}=3\\,\\mathrm{cm}$이다. $\\angle A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 하고, 점 $D$를 지나고 변 $AC$에 평행한 직선이 변 $AB$와 만나는 점을 $E$라 하자. 삼각형 $EBD$의 넓이를 구하여라.",
+"selfGrade": true,
+"answer": "$20\\,\\mathrm{cm}^2$",
+"solution": "내각의 이등분선에서 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=6:3=2:1$이므로 $\\overline{BD}:\\overline{BC}=2:3$이다. $\\overline{ED}\\parallel\\overline{AC}$이므로 삼각형 $EBD$와 삼각형 $ABC$는 닮음이고 닮음비는 $\\overline{BD}:\\overline{BC}=2:3$이다. 따라서 넓이의 비는 $2^2:3^2=4:9$이므로 삼각형 $EBD$의 넓이는 $45\\times\\dfrac{4}{9}=20\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-1998ff0839",
+"typeId": "set2-m22-06-u0m0s2t2",
+"kind": "주관식",
+"diff": 5,
+"body": "넓이가 $48\\,\\mathrm{cm}^2$인 삼각형 $ABC$에서 $\\overline{AB}=10\\,\\mathrm{cm}$, $\\overline{AC}=6\\,\\mathrm{cm}$이다. $\\angle A$의 내각의 이등분선이 변 $BC$와 만나는 점을 $D$, $\\angle A$의 외각의 이등분선이 변 $BC$의 연장선과 만나는 점을 $E$라 하자. 삼각형 $ADE$의 넓이를 구하여라.",
+"selfGrade": true,
+"answer": "$90\\,\\mathrm{cm}^2$",
+"solution": "$\\overline{BC}=a$라 하면 내각의 이등분선에서 $\\overline{BD}:\\overline{DC}=10:6=5:3$이므로 $\\overline{DC}=\\dfrac{3}{8}a$이다. 외각의 이등분선에서 $\\overline{BE}:\\overline{CE}=5:3$으로 외분하고 $\\overline{BE}=a+\\overline{CE}$이므로 $(a+\\overline{CE}):\\overline{CE}=5:3$에서 $\\overline{CE}=\\dfrac{3}{2}a$이다. 따라서 $\\overline{DE}=\\overline{DC}+\\overline{CE}=\\dfrac{3}{8}a+\\dfrac{3}{2}a=\\dfrac{15}{8}a$이다. 두 삼각형 $ADE$와 $ABC$는 직선 $BC$까지의 높이가 같으므로 넓이의 비는 밑변의 비와 같아 $\\dfrac{15}{8}a:a=15:8$이다. 따라서 삼각형 $ADE$의 넓이는 $48\\times\\dfrac{15}{8}=90\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s2t2",
+"custom": true
 }
 ]

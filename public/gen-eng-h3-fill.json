@@ -3863,5 +3863,57 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-u1m1s1t0",
 "custom": true
+},
+{
+"id": "fill-771b35033d",
+"typeId": "eng-h3-u2m0s3t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 말을 본문에서 찾아 한 단어로 쓰시오.\n\nOur memories are not perfect recordings of the past. Each time we remember an event, we may unintentionally change some of its details. For example, a person might recall a childhood trip differently after hearing family members describe it. New information can become mixed with the original experience, making it difficult to distinguish what actually happened from what was added later. Researchers therefore warn that confidence in a memory does not necessarily mean that the memory is accurate. We should be careful about treating every remembered detail as an unquestionable fact. In short, even our most vivid __________ can contain errors.",
+"selfGrade": true,
+"answer": "memories",
+"solution": "글의 핵심은 기억이 과거를 완벽하게 재현하지 못하며 새로운 정보에 의해 변형될 수 있다는 것이다. 마지막 문장의 even our most vivid는 매우 생생한 기억조차 오류를 포함할 수 있다는 의미이다. 앞부분에 등장하는 memories를 그대로 사용하면 문법과 의미가 모두 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u2m0s3t0",
+"custom": true
+},
+{
+"id": "fill-c4eb3a8cb8",
+"typeId": "eng-h3-u2m0s3t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말을 본문에서 찾아 각각 한 단어로 쓰시오. (필요하면 형태를 바꿀 것)\n\nMany people believe that making a decision becomes easier when they have more options. At first, this seems reasonable because having a variety of choices allows people to find something that closely matches their preferences. However, an excessive number of options can produce the opposite effect. When shoppers face dozens of nearly identical products, they must spend considerable time comparing small differences. They may become worried about making the wrong choice and end up postponing their purchase altogether. Even after choosing something, they sometimes wonder whether another option would have been better. Thus, although having some choice is valuable, too many alternatives can make decision-making more stressful and less satisfying.\n\n[요약] Having too many (A) __________ can make people feel anxious about choosing and may cause them to (B) __________ their decisions.",
+"selfGrade": true,
+"answer": "(A) options, (B) postpone",
+"solution": "글은 선택지가 지나치게 많으면 오히려 결정을 내리기 어려워진다고 설명한다. (A)는 excessive number of options에서 핵심 명사 options를 찾을 수 있다. (B)는 사람들이 잘못 선택할까 걱정하여 구매를 미룬다는 end up postponing their purchase altogether에서 찾는다. cause them to 뒤에는 동사원형이 필요하므로 postponing을 postpone으로 바꿔야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u2m0s3t0",
+"custom": true
+},
+{
+"id": "fill-6c5273a693",
+"typeId": "eng-h3-u2m0s3t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B), (C)에 들어갈 말을 주어진 철자로 시작하여 쓰시오. (단, _의 개수는 나머지 글자 수와 같으며, 각 빈칸에는 한 단어만 쓸 것)\n\nWhen people work on a creative project, they often try to avoid taking breaks because they believe that constant effort will produce better results. However, stepping away from a difficult problem can sometimes be more productive than continuing to struggle with it. While our conscious attention is directed elsewhere, the brain may continue to organize information and form new connections. As a result, an unexpected solution may appear during a walk or while performing an ordinary household task. This does not mean that effort is unnecessary. The mind needs relevant information to work with, so preparation remains essential. Nevertheless, periods of rest can support creative thinking by allowing previously gathered ideas to combine in new ways.\n\n[요약] Taking (A) b_____ after sufficient (B) p__________ can encourage (C) c_______ thinking by allowing the brain to connect existing ideas in new ways.",
+"selfGrade": true,
+"answer": "(A) breaks, (B) preparation, (C) creative",
+"solution": "글은 충분한 준비를 한 뒤 잠시 쉬는 것이 새로운 생각의 연결을 촉진할 수 있다고 설명한다. (A)는 Taking 뒤에 오는 복수명사 breaks이며, (B)는 글에서 필수적이라고 강조한 preparation이다. (C)는 thinking을 수식하는 형용사 creative가 적절하다. 세 단어 모두 첫 글자와 남은 글자 수 조건에 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u2m0s3t0",
+"custom": true
+},
+{
+"id": "fill-a24d1a7170",
+"typeId": "eng-h3-u2m0s3t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B), (C)에 들어갈 말을 주어진 철자로 시작하여 쓰시오. (단, _의 개수는 나머지 글자 수와 같으며, 본문의 표현을 참고하되 요약문의 문법에 맞는 한 단어로 각각 완성할 것)\n\nIn evaluating our own performance, we tend to pay greater attention to information that agrees with what we already believe about ourselves. A student who considers herself skilled at mathematics may remember the problems she solved correctly while giving little weight to the mistakes she made. Similarly, a manager who believes that a particular strategy is effective may focus on successful outcomes and explain away evidence of failure. This selective treatment of information can preserve confidence, but it also makes it difficult to recognize weaknesses and improve. The problem is not that people deliberately invent favorable evidence. Rather, they often examine available information through the lens of an existing belief. A more reliable approach is to actively search for observations that might challenge one's assumptions instead of merely collecting examples that support them.\n\n[요약] People often (A) f____ information that (B) c_______ their existing beliefs while overlooking contradictory evidence, so evaluating themselves more accurately requires actively (C) q__________ their own assumptions.",
+"selfGrade": true,
+"answer": "(A) favor, (B) confirms, (C) questioning",
+"solution": "(A)는 기존 믿음에 부합하는 정보에 더 큰 비중을 둔다는 내용을 반영하므로 favor가 적절하다. (B)는 앞의 information을 선행사로 하는 관계절의 동사로, information을 불가산 단수 취급하므로 confirms를 써야 한다. (C)는 기존 가정을 뒷받침하는 사례만 찾기보다 가정에 도전하는 정보를 적극적으로 찾는다는 의미이므로 questioning이 적절하다. requires 뒤의 actively는 동명사를 수식하며, requires actively questioning의 구조가 성립한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u2m0s3t0",
+"custom": true
 }
 ]

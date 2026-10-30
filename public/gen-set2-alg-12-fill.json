@@ -1034,5 +1034,191 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-12-u0m0s0t2",
 "custom": true
+},
+{
+"id": "fill-9d69391e98",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{(2k-1)(2k+1)}=\\frac{n}{2n+1}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$\\displaystyle\\frac{1}{(2k-1)(2k+1)}=\\frac12\\left(\\frac1{2k-1}-\\frac1{2k+1}\\right)$로 부분분수로 나눕니다. 더하면 중간 항이 모두 지워져 $\\displaystyle\\frac12\\left(1-\\frac1{2n+1}\\right)=\\frac{n}{2n+1}$입니다. 따라서 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-efd35f546a",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\displaystyle\\sum_{k=5}^{10}k^3=\\left(\\frac{10\\cdot11}{2}\\right)^2-\\left(\\frac{5\\cdot6}{2}\\right)^2$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "$\\displaystyle\\sum_{k=5}^{10}k^3=\\sum_{k=1}^{10}k^3-\\sum_{k=1}^{4}k^3$이므로 빼야 하는 값은 $k=1$부터 $4$까지의 합인 $\\left(\\frac{4\\cdot5}{2}\\right)^2$입니다. 주어진 식은 $k=5$의 항까지 빼므로 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-7ed63060a7",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\displaystyle\\sum_{k=1}^{24}\\frac{1}{\\sqrt{k+1}+\\sqrt{k}}=4$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "분모를 유리화하면 $\\displaystyle\\frac{1}{\\sqrt{k+1}+\\sqrt{k}}=\\sqrt{k+1}-\\sqrt{k}$입니다. 더하면 중간 항이 지워져 $\\sqrt{25}-\\sqrt1=5-1=4$입니다. 따라서 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-899a9580b6",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "$\\displaystyle\\sum_{k=1}^{10}\\frac{1}{k^2+3k+2}=\\frac{5}{12}$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$k^2+3k+2=(k+1)(k+2)$이므로 $\\displaystyle\\frac{1}{(k+1)(k+2)}=\\frac1{k+1}-\\frac1{k+2}$입니다. 더하면 $\\displaystyle\\frac12-\\frac1{12}=\\frac5{12}$입니다. 따라서 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-fc54472aec",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "수열 $1,\\ 1,\\ 2,\\ 1,\\ 2,\\ 3,\\ 1,\\ 2,\\ 3,\\ 4,\\ \\cdots$를 $(1),\\ (1,2),\\ (1,2,3),\\ \\cdots$와 같이 묶을 때, 이 수열의 제$60$항은 $6$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "제$m$군에는 항이 $m$개 있으므로 제$10$군까지 항은 모두 $\\displaystyle\\frac{10\\cdot11}{2}=55$개입니다. 따라서 제$60$항은 제$11$군의 다섯 번째 항이고, 그 값은 $5$입니다. 그러므로 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-2b08984b65",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "$\\displaystyle\\sum_{k=1}^{10}(k+1)^2=506$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "$\\displaystyle\\sum_{k=1}^{10}(k+1)^2=\\sum_{k=2}^{11}k^2=\\sum_{k=1}^{11}k^2-1$입니다. $\\displaystyle\\sum_{k=1}^{11}k^2=\\frac{11\\cdot12\\cdot23}{6}=506$이므로 구하는 값은 $505$입니다. 따라서 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-fd22ae8a1a",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{k(k+1)(k+2)}=\\frac12\\left\\{\\frac12-\\frac{1}{(n+1)(n+2)}\\right\\}$\nㄴ. $\\displaystyle\\sum_{k=1}^{20}\\frac{1}{\\sqrt{2k-1}+\\sqrt{2k+1}}=\\sqrt{41}-1$\nㄷ. $\\displaystyle\\sum_{k=1}^{n}\\frac{2}{k(k+2)}=\\frac32-\\frac1{n+1}-\\frac1{n+2}$",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ"
+],
+"answer": "⑤",
+"solution": "ㄱ: $\\displaystyle\\frac{1}{k(k+1)(k+2)}=\\frac12\\left\\{\\frac1{k(k+1)}-\\frac1{(k+1)(k+2)}\\right\\}$이므로 옳습니다. ㄴ: 유리화하면 각 항은 $\\displaystyle\\frac{\\sqrt{2k+1}-\\sqrt{2k-1}}{2}$이므로 합은 $\\displaystyle\\frac{\\sqrt{41}-1}{2}$이 되어 틀립니다. ㄷ: $\\displaystyle\\frac{2}{k(k+2)}=\\frac1k-\\frac1{k+2}$이므로 합은 $\\displaystyle1+\\frac12-\\frac1{n+1}-\\frac1{n+2}$가 되어 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-39ddda2e0d",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "수열 $\\displaystyle\\frac11,\\ \\frac12,\\ \\frac22,\\ \\frac13,\\ \\frac23,\\ \\frac33,\\ \\frac14,\\ \\cdots$를 $\\left(\\frac11\\right),\\ \\left(\\frac12,\\frac22\\right),\\ \\left(\\frac13,\\frac23,\\frac33\\right),\\ \\cdots$와 같이 묶을 때, 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. 제$m$군에 있는 모든 항의 합은 $\\displaystyle\\frac{m+1}{2}$이다.\nㄴ. 제$100$항은 $\\displaystyle\\frac{9}{14}$이다.\nㄷ. 첫째항부터 제$100$항까지의 합은 $\\displaystyle\\frac{737}{14}$이다.",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "ㄱ: 제$m$군의 합은 $\\displaystyle\\frac{1+2+\\cdots+m}{m}=\\frac{m+1}{2}$이므로 옳습니다. ㄴ: 제$13$군까지 항이 $91$개이므로 제$100$항은 제$14$군의 아홉 번째 항 $\\displaystyle\\frac9{14}$이고, 옳습니다. ㄷ: 합은 $\\displaystyle\\sum_{m=1}^{13}\\frac{m+1}{2}+\\frac{1+2+\\cdots+9}{14}=52+\\frac{45}{14}=\\frac{773}{14}$이므로 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-57d0229ae4",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "일반항이 $a_n=3n-1$인 수열 $\\{a_n\\}$에 대하여 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. $\\displaystyle\\sum_{k=1}^{10}\\frac{1}{a_ka_{k+1}}=\\frac{5}{32}$\nㄴ. $\\displaystyle\\sum_{k=1}^{n}\\frac{3}{\\sqrt{a_k}+\\sqrt{a_{k+1}}}=\\sqrt{3n+2}-\\sqrt2$\nㄷ. $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{a_ka_{k+2}}=\\frac16\\left(\\frac1{a_1}-\\frac1{a_{n+2}}\\right)$",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "ㄱ: 공차가 $3$이므로 $\\displaystyle\\frac13\\left(\\frac1{a_1}-\\frac1{a_{11}}\\right)=\\frac13\\left(\\frac12-\\frac1{32}\\right)=\\frac5{32}$가 되어 옳습니다. ㄴ: $a_{k+1}-a_k=3$이므로 각 항은 $\\sqrt{a_{k+1}}-\\sqrt{a_k}$이고, 합은 $\\sqrt{a_{n+1}}-\\sqrt{a_1}=\\sqrt{3n+2}-\\sqrt2$가 되어 옳습니다. ㄷ: $\\displaystyle\\frac1{a_ka_{k+2}}=\\frac16\\left(\\frac1{a_k}-\\frac1{a_{k+2}}\\right)$이므로 앞뒤로 두 항씩 남아 $\\displaystyle\\frac16\\left(\\frac1{a_1}+\\frac1{a_2}-\\frac1{a_{n+1}}-\\frac1{a_{n+2}}\\right)$가 됩니다. 따라서 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-c2bec91580",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합 $S_n$이 $S_n=n^2+2n$일 때, 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{a_ka_{k+1}}=\\frac{n}{3(2n+3)}$\nㄴ. $\\displaystyle\\sum_{k=1}^{12}\\frac{2}{\\sqrt{a_k}+\\sqrt{a_{k+1}}}=2\\sqrt3$\nㄷ. 모든 자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{S_k}<\\frac34$이다.",
+"choices": [
+"ㄱ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "$a_1=S_1=3$이고, $n\\ge2$이면 $a_n=S_n-S_{n-1}=2n+1$이므로 모든 $n$에 대해 $a_n=2n+1$입니다. ㄱ: $\\displaystyle\\frac12\\left(\\frac13-\\frac1{2n+3}\\right)=\\frac{n}{3(2n+3)}$이므로 옳습니다. ㄴ: 각 항은 $\\sqrt{a_{k+1}}-\\sqrt{a_k}$이므로 합은 $\\sqrt{27}-\\sqrt3=2\\sqrt3$이 되어 옳습니다. ㄷ: $S_k=k(k+2)$이므로 합은 $\\displaystyle\\frac12\\left(\\frac32-\\frac1{n+1}-\\frac1{n+2}\\right)<\\frac34$가 되어 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-f2afe67d8b",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "수열 $1,\\ 1,\\ 3,\\ 1,\\ 3,\\ 5,\\ 1,\\ 3,\\ 5,\\ 7,\\ \\cdots$를 $(1),\\ (1,3),\\ (1,3,5),\\ (1,3,5,7),\\ \\cdots$와 같이 묶을 때, 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. 제$m$군에 있는 모든 항의 합은 $m^2$이다.\nㄴ. 이 수열의 제$60$항은 $9$이다.\nㄷ. 첫째항부터 제$60$항까지의 합은 $\\displaystyle\\frac{10\\cdot11\\cdot21}{6}+9$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "ㄱ: 제$m$군은 처음 $m$개의 홀수이므로 합은 $m^2$이 되어 옳습니다. ㄴ: 제$10$군까지 항이 $55$개이므로 제$60$항은 제$11$군의 다섯 번째 항 $9$이고, 옳습니다. ㄷ: 합은 $\\displaystyle\\sum_{m=1}^{10}m^2+(1+3+5+7+9)=385+25=410$입니다. 마지막 항 $9$만 더한 식 $385+9=394$와 다르므로 틀립니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-cfef3f5037",
+"typeId": "set2-alg-12-u0m0s1t0",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\displaystyle\\sum_{k=1}^{n}\\frac{2k+1}{k^2(k+1)^2}>\\frac{99}{100}$을 만족시키는 자연수 $n$의 최솟값은 $10$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$(k+1)^2-k^2=2k+1$이므로 $\\displaystyle\\frac{2k+1}{k^2(k+1)^2}=\\frac1{k^2}-\\frac1{(k+1)^2}$이고, 합은 $\\displaystyle1-\\frac1{(n+1)^2}$입니다. 부등식은 $(n+1)^2>100$, 곧 $n+1>10$과 같습니다. $n=9$이면 값이 정확히 $\\displaystyle\\frac{99}{100}$이어서 조건을 만족하지 않으므로 최솟값은 $10$입니다. 따라서 옳습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t0",
+"custom": true
 }
 ]
