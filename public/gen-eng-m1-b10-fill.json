@@ -3179,5 +3179,253 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b10-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-c7a427d13a",
+"typeId": "eng-m1-b10-u1m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nHi, I'm Jimin. Let's look around my school today. Follow me!\nThis is Dream Gym. Do you see the colorful wall? It's for rock climbing. It's not difficult. Many students come here and enjoy rock climbing. Oh, the student over there is climbing fast. He's like Spider-Man!\nNow, let's enter the school library. Here we have a special section, 'The Writer of the Month.' We're reading the writer's works for one month. At the end of the month, we have a quiz contest about them. This month's writer is Yun Dong-ju. I like his poems.\nHere's the school garden. We're the farmers. We grow tomatoes and lettuce. Even birds like it! My classmates are picking the lettuce. It's for today's bibimbap party. I'm excited about the party!\nOh, my friends are calling me. See you again soon. Bye!",
+"choices": [
+"Rock Climbing: The Most Popular Sport at School",
+"Yun Dong-ju, a Great Writer of the Month",
+"Jimin's Tour of Three Special Places at School",
+"How to Grow Fresh Vegetables in a Garden",
+"A Bibimbap Party with Jimin's Classmates"
+],
+"answer": "③",
+"solution": "글 전체는 지민이가 자신의 학교의 세 장소(Dream Gym, 도서관, 정원)를 차례로 소개하는 학교 투어이다. 따라서 세 장소를 모두 아우르는 ③이 제목으로 알맞다. ①②④⑤는 각각 한 장소나 한 활동만 다루는 지나치게 좁은 함정 선지이므로 글 전체의 제목이 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8b3c9de433",
+"typeId": "eng-m1-b10-u1m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 다음과 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nHi, I'm Jimin. Let's look around my school today. Follow me!\nThis is Dream Gym. Do you see the colorful wall? It's for rock climbing. It's not difficult. Many students come here and enjoy rock climbing.\nNow, let's enter the school library. Here we have a special section, 'The Writer of the Month.' We're reading the writer's works for one month. At the end of the month, we have a quiz contest about them.\nHere's the school garden. We're the farmers. We grow tomatoes and lettuce. My classmates are picking the lettuce. It's for today's bibimbap party.\nOh, my friends are calling me. See you again soon. Bye!\n\n[요약문]\nJimin gives her friends a (A)__________ of her school. She shows three places: Dream Gym for rock climbing, the library's 'Writer of the Month' section, and the garden where students grow (B)__________.",
+"choices": [
+"(A) history  -  (B) flowers",
+"(A) tour  -  (B) tomatoes and lettuce",
+"(A) review  -  (B) rice and beans",
+"(A) tour  -  (B) only tomatoes",
+"(A) history  -  (B) tomatoes and lettuce"
+],
+"answer": "②",
+"solution": "지민이는 'look around my school', 'Follow me'라며 학교의 세 장소를 안내하므로 (A)에는 '둘러보기, 투어'를 뜻하는 tour가 알맞다. 정원에서는 'We grow tomatoes and lettuce.'라고 했으므로 (B)는 tomatoes and lettuce이다. 따라서 ②가 정답이다. ④의 only tomatoes는 상추가 빠져 본문과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-27c62d9426",
+"typeId": "eng-m1-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "위 대화의 제목으로 가장 알맞은 것은?\n\nKate: Everyone, join our campaign!\nAlex: Save the sea animals! They're dying.\nJunho: Kate, Alex! Hi!\nKate: Hi, Junho! Come and join our campaign.\nAlex: Look at the sea turtle in the picture.\nJunho: Okay. What is the turtle eating? Is that a jellyfish?\nKate: No, it's a plastic bag. Sea turtles are dying because of plastic bags.\nJunho: Oh, no. We should not use plastic bags.\nAlex: You're right. We should use cloth bags.\nKate: Also, we should not use plastic straws.\nJunho: Okay. From now on, I won't. I'll post your campaign information online, too!\nAlex: That's a good idea. Thank you, Junho.",
+"choices": [
+"How to Make Cloth Bags",
+"What Do Sea Turtles Eat?",
+"Let's Post Pictures Online",
+"No Plastic Bags for Sea Animals",
+"Jellyfish in the Sea Are in Danger"
+],
+"answer": "④",
+"solution": "Kate와 Alex는 비닐봉지 때문에 바다거북 같은 바다 동물들이 죽어 가고 있으니 비닐봉지와 플라스틱 빨대를 쓰지 말자는 캠페인을 하고 있다. 그래서 대화 전체를 가장 잘 담은 제목은 ④ '바다 동물을 위해 비닐봉지를 쓰지 말자'이다. ①의 천 가방, ③의 온라인 게시는 대화에 나오는 일부 내용일 뿐이고, ②와 ⑤는 해파리라는 낱말을 이용한 함정 선지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f5c5cfc868",
+"typeId": "eng-m1-b10-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A)~(F)에 들어갈 알맞은 말을 <조건>에 맞게 쓰시오.\n\nIn the movie Finding Nemo, Nemo lives on beautiful coral reefs. They are home to many sea animals.\nCoral reefs are in danger. Climate change is warming up the sea. The sea water is also getting dirty. Coral reefs are dying, but our small actions can save them.\nSmall Actions for Coral Reefs\nSay “No” to Plastics\nDon't use plastic bags or plastic straws.\nSave Energy\nWe can slow down climate change.\nChoose Sunscreens Carefully\nSome sunscreens are dangerous to coral reefs.\n\n<요약문>\nThe sea is getting (A)________ because of climate change, and the sea water is getting (B)________, too. So coral reefs are (C)d________. But we can help them by not using plastic bags or plastic (D)________, saving (E)________, and choosing sunscreens (F)________.\n\n<조건>\n· 각 빈칸에 한 단어씩 쓸 것.\n· 본문에 나온 단어를 이용하되, (A), (B)는 알맞은 형태로 바꾸어 쓸 것.\n· (C)는 주어진 첫 글자로 시작할 것.",
+"selfGrade": true,
+"answer": "(A) warmer (B) dirtier (C) dying (D) straws (E) energy (F) carefully",
+"solution": "'Climate change is warming up the sea.'는 바다가 점점 더 따뜻해진다는 뜻이므로 (A)는 warm의 비교급 warmer, 'getting dirty'는 점점 더러워진다는 뜻이므로 (B)는 dirtier로 써야 한다. (C)는 본문의 'Coral reefs are dying'에서 dying을 가져온다. (D)~(F)는 산호초를 위한 작은 실천(플라스틱 빨대 쓰지 않기, 에너지 절약, 자외선 차단제 신중히 고르기)에서 straws, energy, carefully를 찾아 쓴다. 단어 형태를 바꾸는 (A), (B)와 철자를 주의해야 하는 dirtier(y→i)가 변별 포인트이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1b068f8d12",
+"typeId": "eng-m1-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용을 가장 바르게 요약한 것은?\n\nWelcome to the ‘Save Coral Reefs’ festival. It is for Boram Middle School's Earth Day event. Join the festival and learn about coral reefs.\nPROGRAMS\nWatch & Join\nThe Film Chasing Coral\n1 p.m. – 3 p.m. in the library\nIn Chasing Coral, people talk about coral reefs in danger. Come and watch the film!\nFeel & Think\nThe Great Barrier Reef VR\n10 a.m. – 4 p.m. in the gym\nDive into the Great Barrier Reef with VR. You will not need swimwear. You can see the coral reefs before and now.\nPaint & Change\nCoral Reef Wall Painting\n11 a.m. – 3 p.m. in the art room\nDying coral reefs are turning white. Explore their original colors and paint the coral reefs on the wall.\nSmall actions make a big difference.\nThe change starts with you!",
+"choices": [
+"The festival is for Earth Day, and students can watch Chasing Coral in the gym from 1 p.m. to 3 p.m.",
+"Students can dive into the Great Barrier Reef with VR, so they should bring their swimwear.",
+"Through a film, VR, and wall painting, students learn about coral reefs in danger, and the festival says small actions make a big difference.",
+"In the wall painting program, students paint the coral reefs white because dying coral reefs are white.",
+"The festival only shows the beautiful coral reefs of the past, so students don't need to do anything."
+],
+"answer": "③",
+"solution": "이 글은 영화, VR, 벽화 그리기 프로그램을 통해 위험에 처한 산호초에 대해 배우는 축제를 소개하면서, 작은 실천이 큰 변화를 만든다고 말한다. 따라서 ③이 글의 중심 내용을 바르게 요약한 것이다. ①은 영화를 보는 장소가 도서관(library)이 아니라 체육관(gym)으로 잘못 쓰였고, ②는 수영복이 필요 없다는 내용(You will not need swimwear)과 반대이다. ④는 하얀색이 아니라 산호초 원래의 색(original colors)으로 칠해야 하고, ⑤는 '변화는 너로부터 시작된다'는 글의 요지와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d0a2e6590f",
+"typeId": "eng-m1-b10-u2m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 요지를 한 문장으로 쓰려고 한다. <보기>의 말을 배열하여 문장을 완성하시오.\n\nKate: Everyone, join our campaign!\nAlex: Save the sea animals! They're dying.\nJunho: Kate, Alex! Hi!\nKate: Hi, Junho! Come and join our campaign.\nAlex: Look at the sea turtle in the picture.\nJunho: Okay. What is the turtle eating? Is that a jellyfish?\nKate: No, it's a plastic bag. Sea turtles are dying because of plastic bags.\nJunho: Oh, no. We should not use plastic bags.\nAlex: You're right. We should use cloth bags.\nKate: Also, we should not use plastic straws.\nJunho: Okay. From now on, I won't. I'll post your campaign information online, too!\nAlex: That's a good idea. Thank you, Junho.\n\n<보기>\nsave / should / plastic bags / we / sea animals / not / use / to / cloth\n\n<조건>\n· <보기>의 말 중 하나는 쓰지 말 것.\n· We로 시작하고, 나머지 말은 한 번씩만 쓸 것.",
+"selfGrade": true,
+"answer": "We should not use plastic bags to save sea animals.",
+"solution": "대화의 요지는 바다 동물을 살리기 위해 비닐봉지를 쓰지 말아야 한다는 것이다. 'should not + 동사원형'으로 '~하지 말아야 한다'를 만들고, 'to save ~(~을 구하기 위해)'로 목적을 덧붙이면 We should not use plastic bags to save sea animals.가 된다. cloth는 bags와 함께 써야만 의미가 통하는데 bags가 plastic bags로 묶여 있으므로 쓰지 않는 말이다. 쓰지 않을 말을 찾고 어순(should not + use, to + save)을 맞추는 것이 변별 포인트이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3dd298e9b7",
+"typeId": "eng-m1-b10-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 주제로 알맞은 것은?\n\nJunho: Minji, how was The Blue Bird?\nMinji: It was amazing. The story was very interesting.\nKate: I agree. The acting was also great.\nJunho: That sounds great. Where did you see it?\nMinji: At Happy Theater. You should watch it!",
+"choices": [
+"how to act in a play",
+"Junho’s soccer game",
+"a play Minji and Kate enjoyed",
+"how to get to Happy Theater",
+"Minji’s favorite bird"
+],
+"answer": "③",
+"solution": "민지와 Kate는 The Blue Bird라는 연극의 이야기와 연기가 좋았다고 말하며 준호에게 그 연극을 추천하고 있다. 따라서 대화의 주제는 '민지와 Kate가 즐겁게 본 연극'이다. Happy Theater는 연극을 본 장소일 뿐이고 가는 방법은 나오지 않으므로 ④는 답이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f013cabbda",
+"typeId": "eng-m1-b10-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nOn day 10, Rani got 512 grains of rice. The king laughed, “That’s just a handful.” But on day 24, four elephants carried more than 8 million grains to Rani’s house. On the last day, 256 elephants will carry the rice. The king’s storehouse will be empty.",
+"choices": [
+"A Kind King’s Gift",
+"Rani’s Lost Elephants",
+"More and More Rice for Rani",
+"How to Grow Rice",
+"The King’s Favorite Food"
+],
+"answer": "③",
+"solution": "10일째에는 쌀이 512알뿐이었지만 24일째에는 800만 알이 넘었고, 마지막 날에는 코끼리 256마리가 쌀을 실어 날라야 한다. 글 전체가 Rani가 받는 쌀이 점점 많아지는 내용이므로 제목은 ③ 'More and More Rice for Rani'가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-780948580f",
+"typeId": "eng-m1-b10-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nRani was an honest girl. She collected the rice from the elephant’s bag and gave it back to the king. The king wanted to reward her. Rani asked for one grain of rice on the first day. She also asked him to double the rice each day for 30 days. The king thought it was easy, but on the last day, he had a lot of rice to give her. Rani shared the rice with the hungry people.\n\n→ Rani asked the king for rice that (A)________ every day, and she (B)________ it with the hungry people.\n\n(A)  -  (B)",
+"choices": [
+"doubled - shared",
+"doubled - sold",
+"disappeared - shared",
+"grew - ate",
+"fell - sold"
+],
+"answer": "①",
+"solution": "Rani는 쌀을 매일 두 배로 늘려 달라고 했으므로 (A)에는 doubled가 들어간다. Rani는 받은 쌀을 굶주린 사람들과 나누었으므로 (B)에는 shared가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5ca2ac0b48",
+"typeId": "eng-m1-b10-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nLong ago, a greedy king didn’t share his rice with his hungry people. One day, Rani collected the rice falling from an elephant’s bag and gave it back to the king. The king wanted to reward her, so Rani asked for one grain of rice on the first day. She also asked him to double the rice each day for 30 days. The king thought her request was easy. On day 10, Rani got only 512 grains, and the king laughed at her. But on day 24, four elephants carried more than 8 million grains to her house. On the last day, the king’s storehouse was empty. Rani shared the rice with the hungry people and said to the king, “Don’t be greedy anymore.”",
+"choices": [
+"How Rani Became a Rich Girl",
+"An Honest Girl’s Reward: A Handful of Rice",
+"A Wise Plan That Taught a Greedy King to Share",
+"The King Who Rewarded His Honest Servant",
+"Elephants Carrying Rice for the Hungry People"
+],
+"answer": "③",
+"solution": "Rani는 쌀을 매일 두 배로 늘려 받는 지혜로운 계획으로 욕심 많은 왕의 쌀을 받아 내 굶주린 사람들과 나누었고, 왕에게 더 이상 욕심내지 말라고 했다. 따라서 ③이 글 전체를 담은 제목이다. Rani는 쌀을 나누었으므로 부자가 되었다는 ①은 틀리고, ②의 a handful은 10일째 내용일 뿐이다. 정직했던 사람은 하인이 아니라 Rani이므로 ④도 틀리고, ⑤는 세부 내용에 불과하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-58bd6687fa",
+"typeId": "eng-m1-b10-u3m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약하려고 한다. 빈칸 (A), (B), (C)에 들어갈 알맞은 말을 본문에서 찾아 쓰시오. (필요하면 형태를 바꿀 것)\n\nRani: Then I want one grain today, two tomorrow, and four the next day. Double the rice each day for 30 days, please.\nKing: That’s easy.\n(Day 24)\nServant: Four elephants will carry the rice to Rani’s house today. On the last day, 256 elephants will carry the rice. Your storehouse will be empty.\nKing: Alas! I’m in trouble.\n(The last day)\nRani: I’ll share the rice with the hungry people. I’ll share some with you, too. However, don’t be greedy anymore.\n\n→ Rani’s idea of (A)________ the rice each day put the (B)________ king in trouble, but in the end she (C)________ the rice with the hungry people.",
+"selfGrade": true,
+"answer": "(A) doubling (B) greedy (C) shared",
+"solution": "(A)는 전치사 of 뒤에 오므로 본문의 동사 double을 동명사 doubling으로 바꿔 쓴다. Rani가 왕에게 'don’t be greedy anymore'라고 말했으므로 (B)에는 greedy가 들어간다. (C)는 요약문이 과거 시제(put, in the end)로 쓰였으므로 share를 과거형 shared로 바꿔 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6e5f467619",
+"typeId": "eng-m1-b10-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 Rani가 왕에게 전하려는 말(요지)로 가장 알맞은 것은?\n\nIt was day 24.\nServant: Four elephants will carry the rice to Rani’s house today. It’s more than 8 million grains.\nKing: (in surprise) How many elephants will carry the rice on the last day?\nServant: 256 elephants. Your storehouse will be empty.\nKing: Alas! I’m in trouble.\nThe king met Rani on the last day.\nKing: Whew.... What will you do with the rice?\nRani: I’ll share it with the hungry people.\nKing: You’re so kind.\nRani: I’ll share some with you, too. However, don’t be greedy anymore.\nKing: I won’t! I won’t!",
+"choices": [
+"정직한 사람은 반드시 보상을 받아야 한다.",
+"작은 것도 매일 두 배가 되면 큰 것이 된다.",
+"가진 것을 혼자 갖지 말고 어려운 사람들과 나누어야 한다.",
+"지혜로운 사람은 다른 사람의 도움이 필요 없다.",
+"왕은 하인의 말을 귀담아들어야 한다."
+],
+"answer": "③",
+"solution": "Rani는 받은 쌀을 굶주린 사람들과 나누겠다고 하면서 왕에게 'don’t be greedy anymore(더 이상 욕심내지 마세요)'라고 말한다. 따라서 Rani가 왕에게 전하려는 말은 ③이다. ②는 Rani의 계획에 담긴 원리일 뿐 Rani가 왕에게 하려는 말이 아니고, ①은 앞부분의 내용이라 이 글의 요지가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f16aacc8cc",
+"typeId": "eng-m1-b10-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThere is an interesting story about omelets. One day, Napoleon and his army stayed near the town of Bessières. Napoleon tried an omelet from the town, and he enjoyed it very much. He asked for a giant omelet for his army the next day. These days, people in Bessières make a giant omelet for their omelet festival every year.",
+"choices": [
+"Napoleon과 그의 군대는 Bessières 마을 근처에 머물렀다.",
+"Napoleon은 그 마을의 오믈렛을 먹어 보고 매우 좋아했다.",
+"Napoleon은 다음 날 군대를 위해 거대한 오믈렛을 요청했다.",
+"오늘날 Bessières 사람들은 매년 축제를 위해 거대한 오믈렛을 만든다.",
+"Napoleon은 Bessières 사람들에게 오믈렛 요리법을 가르쳐 주었다."
+],
+"answer": "⑤",
+"solution": "지문에는 Napoleon이 마을의 오믈렛을 맛보고 좋아해 군대를 위한 거대한 오믈렛을 요청했다고만 나온다. Napoleon이 요리법을 가르쳐 주었다는 내용은 전혀 없으므로 ⑤가 일치하지 않는다. 나머지 ①~④는 모두 본문에서 그대로 확인할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-43f2a9786a",
+"typeId": "eng-m1-b10-u6m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nThere is an interesting story about omelets. One day, Napoleon and his army stayed near the town of Bessières. Napoleon tried an omelet from the town, and he enjoyed it very much. He asked for a giant omelet for his army the next day. These days, people in Bessières make a giant omelet for their omelet festival every year.\nPeople around the world have their own omelet recipes. Tortilla de Patata is a Spanish omelet. In Spanish, 'patata' means 'a potato.' You need eggs and potatoes for this omelet. In Malaysia, people wrap chicken fried rice with a thin omelet. The name of this special omelet is Nasi Goreng Pattaya. It is also popular in Indonesia and Singapore.",
+"choices": [
+"How did Napoleon feel about the omelet from the town?",
+"What do people in Bessières do for their festival every year?",
+"What do you need to make Tortilla de Patata?",
+"In which countries is Nasi Goreng Pattaya popular besides Malaysia?",
+"How many eggs do people use for the giant omelet in Bessières?"
+],
+"answer": "⑤",
+"solution": "①은 'enjoyed it very much', ②는 'make a giant omelet for their omelet festival', ③은 'eggs and potatoes', ④는 'Indonesia and Singapore'로 모두 본문에서 답할 수 있다. 그러나 거대한 오믈렛에 달걀을 몇 개 쓰는지는 지문에 전혀 언급되지 않았으므로 답할 수 없는 질문은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b10-u6m4s0t0",
+"custom": true
 }
 ]

@@ -386,5 +386,100 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b06-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-f718a43c9e",
+"typeId": "eng-h3-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nUniversal design ensures (A)[that / what] everyone can access a product. Curb cuts, for example, help people (B)[move / moving] heavy loads use the sidewalk comfortably. Automatic doors in public buildings allow people (C)[enter / to enter] without any major problems.\n\n(A)          (B)          (C)",
+"choices": [
+"① that      moving      to enter",
+"② what      moving      enter",
+"③ that      move      to enter",
+"④ what      move      to enter",
+"⑤ that      moving      enter"
+],
+"answer": "①",
+"solution": "(A) ensures의 목적어로 완전한 절을 이끌며 선행사가 없으므로 명사절 접속사 that이 알맞다. (B) people을 뒤에서 수식하는 분사구로, people이 '옮기는' 주체이므로 능동의 현재분사 moving이 맞다. (C) 「allow + 목적어 + to부정사」 구문이므로 to enter가 알맞다. 따라서 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bf4f1e813e",
+"typeId": "eng-h3-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe height-adjustable desk is (A)[designed / designing] for everyone. It makes the workspace (B)[comfortable / comfortably] and reduces fatigue. With this desk, it is easy (C)[use / to use] it in a better posture.\n\n(A)          (B)          (C)",
+"choices": [
+"① designed      comfortable      to use",
+"② designing      comfortable      use",
+"③ designed      comfortably      to use",
+"④ designing      comfortably      use",
+"⑤ designed      comfortable      use"
+],
+"answer": "①",
+"solution": "(A) 책상이 '설계되는' 대상이므로 수동의 과거분사 designed가 알맞다. (B) 「make + 목적어 + 목적격보어」에서 보어 자리에는 형용사가 와야 하므로 comfortable이 맞다. (C) 가주어 it에 대한 진주어로 to부정사 to use가 알맞다. 따라서 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ab12315bdd",
+"typeId": "eng-h3-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn elevators, braille, (A)[which / what] indicates the floor number, (B)[allow / allows] individuals with visual impairments to select their desired floor. (C)[Finding / Find] the right button becomes much easier when braille is provided next to it.\n\n(A)          (B)          (C)",
+"choices": [
+"① which      allows      Finding",
+"② what      allows      Finding",
+"③ which      allow      Find",
+"④ which      allows      Find",
+"⑤ what      allow      Finding"
+],
+"answer": "①",
+"solution": "(A) 선행사 braille를 수식하는 관계대명사 자리이고 선행사가 있으므로 which가 알맞다(what은 선행사를 포함). (B) 문장의 주어는 단수인 braille이므로 단수 동사 allows가 맞다(삽입된 관계사절에 속지 말 것). (C) 문장의 주어 역할을 하는 동명사 Finding이 알맞다. 따라서 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5c8db7a4d2",
+"typeId": "eng-h3-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA lever-type door handle requires no firm grip or twisting. It is a good example (A)[that / what] reflects the idea of universal design. A door with such a handle can be opened (B)[using / used] an elbow or a closed hand, (C)[benefiting / benefited] people carrying baskets as well as those with limited strength.\n\n(A)          (B)          (C)",
+"choices": [
+"① that      using      benefiting",
+"② what      using      benefiting",
+"③ that      used      benefited",
+"④ that      using      benefited",
+"⑤ what      used      benefiting"
+],
+"answer": "①",
+"solution": "(A) 선행사 a good example를 수식하는 주격 관계대명사 자리이므로 that이 알맞다(what은 선행사와 함께 쓸 수 없음). (B) 「be opened」 뒤에서 '~을 사용하여'라는 능동의 의미이므로 현재분사 using이 맞다. (C) 앞 절 전체를 부가 설명하는 분사구문으로, 문이 사람에게 '이로움을 주는' 능동 관계이므로 benefiting이 알맞다. 따라서 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1d7049caa2",
+"typeId": "eng-h3-b06-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 (A)~(F) 중, 어법상 어색한 것을 모두 골라 바르게 짝지은 것은?\n\nUniversal design seeks to create products that can be used efficiently and comfortably without (A)causing unnecessary fatigue. Many people have had trouble (B)to open a lid of a jar that was stuck. Opening a lid can be a great challenge to the elderly or people with hand impairments. Fortunately, various clever opening devices have been (C)designed. A lever-type door handle, which (D)require no firm grip or twisting, reflects this characteristic of universal design. A door with such a handle can be opened (E)using an elbow, which benefits people (F)carry baskets.",
+"choices": [
+"① (A), (B), (D)",
+"② (B), (C), (E)",
+"③ (B), (D), (F)",
+"④ (A), (D), (F)",
+"⑤ (C), (E), (F)"
+],
+"answer": "③",
+"solution": "(B) 「have trouble + -ing(~하는 데 어려움을 겪다)」 구문이므로 to open은 opening으로 고쳐야 한다. (D) 관계대명사 which의 선행사가 단수인 handle이므로 require는 requires가 되어야 한다. (F) people을 뒤에서 수식하며 능동 관계이므로 carry는 현재분사 carrying이어야 한다. (A) without causing(전치사+동명사), (C) have been designed(수동 완료), (E) opened using(분사구문)은 모두 올바르다. 따라서 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b06-u0m1s0t0",
+"custom": true
 }
 ]

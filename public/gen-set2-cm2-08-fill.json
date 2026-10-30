@@ -1666,5 +1666,145 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-08-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-be37778e32",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 $x$에 대하여 두 조건\n$p:|x-2|\\le k$, $q:x^2-3x-28<0$\n이 있다. $p$가 $q$이기 위한 충분조건이 되도록 하는 모든 자연수 $k$의 값의 합은?",
+"choices": [
+"$6$",
+"$10$",
+"$15$",
+"$21$",
+"$28$"
+],
+"answer": "②",
+"solution": "$P=\\{x\\mid 2-k\\le x\\le 2+k\\}$이고, $x^2-3x-28=(x+4)(x-7)<0$이므로 $Q=\\{x\\mid -4<x<7\\}$이다. $p$가 $q$이기 위한 충분조건이려면 $P\\subset Q$이어야 하므로 $2-k>-4$이고 $2+k<7$, 즉 $k<5$이다. 따라서 자연수 $k$는 $1,2,3,4$이고, 그 합은 $10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-b6e4d1529b",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "객관식",
+"diff": 3,
+"body": "전체집합 $U$의 세 조건 $p$, $q$, $r$의 진리집합을 각각 $P$, $Q$, $R$라 하자. $p$는 $\\sim q$이기 위한 충분조건이고, $r$는 $q$이기 위한 필요조건일 때, 〈보기〉에서 항상 옳은 것만을 있는 대로 고른 것은? 단, $R^{\\mathrm c}$, $Q^{\\mathrm c}$는 각각 $R$, $Q$의 여집합이다.\n\n〈보기〉\nㄱ. $P\\cap Q=\\varnothing$\nㄴ. $R^{\\mathrm c}\\subset Q^{\\mathrm c}$\nㄷ. $P\\subset R^{\\mathrm c}$",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "$p\\Rightarrow\\sim q$이므로 $P\\subset Q^{\\mathrm c}$, 즉 $P\\cap Q=\\varnothing$이다(ㄱ 참). $q\\Rightarrow r$이므로 $Q\\subset R$이고, 이는 $R^{\\mathrm c}\\subset Q^{\\mathrm c}$와 같다(ㄴ 참). $R$이 $Q$보다 커서 $P$와 겹칠 수 있으므로 $P\\subset R^{\\mathrm c}$가 항상 성립하지는 않는다(ㄷ 거짓). 따라서 옳은 것은 ㄱ, ㄴ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-b455316d32",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "객관식",
+"diff": 4,
+"body": "두 실수 $x$, $y$에 대하여 〈보기〉에서 옳은 것만을 있는 대로 고른 것은?\n\n〈보기〉\nㄱ. '$x>1$이고 $y>1$'은 '$x+y>2$이고 $xy>1$'이기 위한 필요충분조건이다.\nㄴ. $xy<0$은 $|x+y|<|x|+|y|$이기 위한 필요충분조건이다.\nㄷ. $x>|y|$는 $x^2>y^2$이기 위한 충분조건이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "ㄱ: $x=\\frac12$, $y=3$이면 $x+y>2$, $xy>1$이지만 $x>1$은 아니므로 필요조건이 아니어서 거짓이다. ㄴ: $|x+y|\\le|x|+|y|$에서 등호는 $xy\\ge0$일 때만 성립하므로 $|x+y|<|x|+|y|\\iff xy<0$이 되어 참이다. ㄷ: $x>|y|\\ge0$이면 양변을 제곱해 $x^2>y^2$이므로 참이다. 따라서 옳은 것은 ㄴ, ㄷ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-f05aaa25e9",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 $x$에 대하여 세 조건\n$p:x^2-(a+3)x+3a\\le0$, $q:x^2-2x-8\\le0$, $r:x^2-4x+3\\le0$\n이 있다. $p$가 $q$이기 위한 충분조건이면서 $r$이기 위한 필요조건이 되도록 하는 정수 $a$의 개수를 구하시오.",
+"selfGrade": true,
+"answer": "4",
+"solution": "$p:(x-a)(x-3)\\le0$이므로 $P$는 $a$와 $3$ 사이의 닫힌구간이고, $Q=\\{x\\mid-2\\le x\\le4\\}$, $R=\\{x\\mid1\\le x\\le3\\}$이다. $P\\subset Q$이려면 $-2\\le a\\le4$이고, $R\\subset P$이려면 $P$가 $[1,3]$을 포함해야 하므로 $a\\le1$이다. 따라서 $-2\\le a\\le1$이고, 정수 $a$는 $-2,-1,0,1$의 $4$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-a546eddd35",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 $x$에 대하여 두 조건\n$p:x^2-2ax+9\\ne0$, $q:(x+3)(x-1)(x-3)(x-9)\\ne0$\n이 있다. $p$가 $q$이기 위한 필요조건이 되도록 하는 정수 $a$의 개수는?",
+"choices": [
+"$3$",
+"$5$",
+"$7$",
+"$8$",
+"$9$"
+],
+"answer": "④",
+"solution": "$q\\Rightarrow p$는 대우 $\\sim p\\Rightarrow\\sim q$와 같으므로, 방정식 $x^2-2ax+9=0$의 실근이 모두 $\\{-3,1,3,9\\}$에 속해야 한다. 실근이 없을 때($-3<a<3$)는 $\\sim p$의 진리집합이 공집합이라 항상 성립하고, 중근일 때 $a=\\pm3$이면 근이 $\\pm3$이라 성립한다. 서로 다른 두 실근의 곱이 $9$인 경우는 $1$과 $9$뿐이므로 $2a=10$, $a=5$이다. 따라서 $-3\\le a\\le3$ 또는 $a=5$이고, 정수 $a$는 $8$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-e92157292e",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "객관식",
+"diff": 5,
+"body": "실수 $x$에 대하여 세 조건\n$p:|x-a|\\le b$, $q:x^2-8x-20\\le0$, $r:x^2-4x+3<0$\n이 있다. $p$는 $q$이기 위한 충분조건이고, $r$는 $p$이기 위한 충분조건이 되도록 하는 정수 $a$와 자연수 $b$의 순서쌍 $(a,b)$의 개수는?",
+"choices": [
+"$12$",
+"$14$",
+"$16$",
+"$18$",
+"$20$"
+],
+"answer": "③",
+"solution": "$P=\\{x\\mid a-b\\le x\\le a+b\\}$, $Q=\\{x\\mid-2\\le x\\le10\\}$, $R=\\{x\\mid1<x<3\\}$이다. $R\\subset P\\subset Q$이려면 $u=a-b$, $v=a+b$라 할 때 $-2\\le u\\le1$, $3\\le v\\le10$이어야 한다. $a=\\frac{u+v}2$, $b=\\frac{v-u}2$가 정수이려면 $u$와 $v$의 홀짝이 같아야 하고, 이때 $v>u$이므로 $b\\ge1$은 저절로 성립한다. $u$ 하나마다 홀짝이 같은 $v$가 $4$개씩 있으므로 순서쌍은 $4\\times4=16$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-0be03d101e",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $x$에 대하여 두 조건\n$p:x^2-2ax+3\\ge0$, $q:1\\le x\\le3$\n이 있다. $p$가 $q$이기 위한 필요조건이 되도록 하는 실수 $a$의 최댓값을 구하고, 그 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "$\\sqrt3$",
+"solution": "$q\\Rightarrow p$이어야 하므로 $1\\le x\\le3$인 모든 $x$에 대하여 $x^2-2ax+3\\ge0$, 즉 $2a\\le x+\\frac3x$가 성립해야 한다. $x>0$이므로 산술평균과 기하평균의 관계에 의해 $x+\\frac3x\\ge2\\sqrt3$이고, 등호는 $x=\\sqrt3$일 때 성립하며 $\\sqrt3$은 $[1,3]$에 속한다. 따라서 $2a\\le2\\sqrt3$, 즉 $a\\le\\sqrt3$이므로 $a$의 최댓값은 $\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
+},
+{
+"id": "fill-1c545241ed",
+"typeId": "set2-cm2-08-u0m0s2t2",
+"kind": "객관식",
+"diff": 5,
+"body": "전체집합 $U=\\{x\\mid x\\text{는 }12\\text{ 이하의 자연수}\\}$에 대하여 세 조건\n$p:x$는 짝수이다, $q:x$는 소수이다, $r$\n의 진리집합을 각각 $P$, $Q$, $R$라 하자. 다음 조건을 모두 만족시키는 집합 $R$의 개수는?\n\n(가) $p$는 $r$이기 위한 충분조건이다.\n(나) '$\\sim p$이고 $\\sim q$'는 $\\sim r$이기 위한 충분조건이다.\n(다) $q$는 $r$이기 위한 충분조건이 아니다.",
+"choices": [
+"$7$",
+"$8$",
+"$14$",
+"$15$",
+"$16$"
+],
+"answer": "④",
+"solution": "$P=\\{2,4,6,8,10,12\\}$, $Q=\\{2,3,5,7,11\\}$이다. (가)에서 $P\\subset R$이고, (나)에서 $(P\\cup Q)^{\\mathrm c}\\subset R^{\\mathrm c}$, 즉 $R\\subset P\\cup Q$이다. 따라서 $R=P\\cup S$이고 $S\\subset\\{3,5,7,11\\}$이므로 $R$은 $2^4=16$개이다. (다)에서 $Q\\not\\subset R$이어야 하는데, $2\\in P\\subset R$이므로 $3,5,7,11$이 모두 $R$에 속하는 $1$개만 제외된다. 따라서 $R$의 개수는 $16-1=15$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-08-u0m0s2t2",
+"custom": true
 }
 ]

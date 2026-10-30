@@ -1119,5 +1119,69 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b01-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-21f1dfc26f",
+"typeId": "eng-m2-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 알맞은 것은?\n\nHave you ever used a digital kiosk before? You may think it's easy. But some people have trouble using kiosks. To help them, we volunteered as digital guides at the community center. We explained every step of ordering: starting an order, choosing from the menu, and paying. After the class, people said, \"Now we feel more comfortable with kiosks. Thank you so much!\" We felt very proud.",
+"choices": [
+"how to order food at a kiosk",
+"why kiosks are becoming more popular",
+"helping people learn to use kiosks",
+"various problems with digital kiosks",
+"different services at the community center"
+],
+"answer": "③",
+"solution": "키오스크 사용에 어려움을 겪는 사람들을 돕기 위해 디지털 안내자로 봉사하며 주문 과정을 설명했다는 글이다. 따라서 글의 주제는 '사람들이 키오스크 사용법을 배우도록 돕기'이다. ①은 세부 내용일 뿐이고 ②④⑤는 글에 없거나 중심에서 벗어난 내용이라 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8dffa38006",
+"typeId": "eng-m2-b01-u1m3s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸에 들어갈 알맞은 말을 각각 글에서 찾아 쓰시오.\n\nThe members of Warm Hearts gathered to solve this problem. We thought that adding lines to food trays would be helpful. Students could look at the lines and take the right amount of food. Our school principal liked this idea, so he changed the food trays in the cafeteria. It was a success! The new trays reduced a large amount of food waste!\n\n[요약] By adding ______ to food ______, the members of Warm Hearts helped students take the right ______ of food and ______ food waste.",
+"selfGrade": true,
+"answer": "lines / trays / amount / reduce",
+"solution": "식판(food trays)에 선(lines)을 그어 학생들이 알맞은 양(amount)의 음식을 가져가도록 해 음식물 쓰레기를 줄였다(reduce)는 내용이다. 빈칸에는 각각 글에 쓰인 lines, trays, amount, reduce가 들어간다. 'take the right amount of food', 'reduce food waste' 표현을 그대로 활용하면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-773d7d8daf",
+"typeId": "eng-m2-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 요지로 알맞은 것은?\n\nHello, everyone! I'm Yuna, and I'm the leader of Warm Hearts, a club at our school. Our club has solved some problems in our school and our community over the past few years.\nOur school principal asked how to reduce food waste. We thought that adding lines to food trays would be helpful, so students could take the right amount of food. The new trays reduced a large amount of food waste!\nWe also found out that some roads around our school were very dark at night. With the help of a teacher, we put up lights with sensors around the neighborhood. Now all our neighbors feel safer than before!\nSome people have trouble using kiosks, so we volunteered as digital guides at the community center. After the class, people felt more comfortable with kiosks.\nAs you can see, your actions can make positive changes. Even the smallest acts can make a big difference!",
+"choices": [
+"Teenagers should join a school club to make new friends.",
+"It is important to always follow the school principal's advice.",
+"Community problems can be solved only by adults, not students.",
+"Even small actions by us can lead to big positive changes.",
+"We must use new technology such as kiosks in daily life."
+],
+"answer": "④",
+"solution": "음식물 쓰레기 줄이기, 어두운 길에 센서 등 설치, 키오스크 사용 돕기 등 작은 활동들의 사례를 들며 마지막에 'Even the smallest acts can make a big difference!'로 마무리한다. 따라서 요지는 '우리의 작은 행동이 큰 긍정적 변화를 가져올 수 있다'는 ④이다. 나머지는 글에 없거나 세부 소재에 치우친 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-612df90fa2",
+"typeId": "eng-m2-b01-u1m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 아래와 같이 한 문장으로 요약할 때, 빈칸에 들어갈 알맞은 말을 각각 글에서 찾아 쓰시오.\n\nHave you ever used a digital kiosk before? You may think it's easy. But some people have trouble using kiosks. To help them, we volunteered as digital guides at the community center. We explained every step of ordering: starting an order, choosing from the menu, and paying. After the class, people said, \"Now we feel more comfortable with kiosks. Thank you so much!\" We felt very proud.\n\n[요약] Since some people have ______ using kiosks, the members of Warm Hearts volunteered as digital ______ and explained every ______ of ordering, so the people felt more ______ with kiosks.",
+"selfGrade": true,
+"answer": "trouble / guides / step / comfortable",
+"solution": "키오스크 사용에 어려움(trouble)을 겪는 사람들을 위해 디지털 안내자(guides)로 봉사하며 주문의 모든 단계(step)를 설명했고, 그 결과 사람들이 더 편안함(comfortable)을 느꼈다는 글이다. 빈칸에는 각각 본문의 'have trouble', 'digital guides', 'every step', 'feel more comfortable'에서 찾은 trouble, guides, step, comfortable이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m3s0t0",
+"custom": true
 }
 ]

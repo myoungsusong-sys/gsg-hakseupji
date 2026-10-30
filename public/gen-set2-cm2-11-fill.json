@@ -592,5 +592,445 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-11-u0m0s0t1",
 "custom": true
+},
+{
+"id": "fill-2ffe156624",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=3x-2$, $g(x)=x+5$에 대하여 $(f\\circ g)(x)=3x+13$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$(f\\circ g)(x)=f(g(x))=f(x+5)$이다. 따라서 $3(x+5)-2=3x+13$이므로 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-066cc9b16a",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 전체를 정의역과 공역으로 하는 임의의 두 함수 $f$, $g$에 대하여 항상 $f\\circ g=g\\circ f$가 성립한다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "합성함수에서는 교환법칙이 일반적으로 성립하지 않는다. 예를 들어 $f(x)=2x$, $g(x)=x+1$이면 $(f\\circ g)(x)=2x+2$, $(g\\circ f)(x)=2x+1$이므로 서로 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-116929a8ac",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 전체에서 $f(x)=2x+1$이고 $f$를 $n$번 합성한 함수를 $F_n$이라 하면 $F_3(x)=8x+7$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$F_2(x)=f(f(x))=2(2x+1)+1=4x+3$이다. 따라서 $F_3(x)=f(F_2(x))=2(4x+3)+1=8x+7$이므로 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-fd03f429a9",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=x^2$, $g(x)=x+1$에 대하여 $(f\\circ g)(a)=(g\\circ f)(a)$를 만족하는 실수 $a$는 $0$ 하나뿐이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$(f\\circ g)(a)=(a+1)^2=a^2+2a+1$, $(g\\circ f)(a)=a^2+1$이다. 두 값이 같으면 $2a=0$이므로 $a=0$ 하나뿐이다. 따라서 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-f3babdcb89",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체에서 정의된 세 함수 $f(x)=x+2$, $g(x)=3x$, $h(x)=x^2$에 대하여 <보기>에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $(f\\circ g)(x)=3x+2$\nㄴ. $(g\\circ f)(x)=(f\\circ g)(x)$\nㄷ. $(h\\circ(g\\circ f))(0)=((h\\circ g)\\circ f)(0)$",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "ㄱ: $f(g(x))=3x+2$이므로 옳다. ㄴ: $g(f(x))=3(x+2)=3x+6$이고 $3x+2$와 다르므로 옳지 않다. ㄷ: 결합법칙이 성립하므로 두 값이 같다. 실제로 $g(f(0))=6$이고 $h(6)=36$이다. 따라서 옳은 것은 ㄱ, ㄷ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-6b9a2a473b",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "주관식",
+"diff": 3,
+"body": "실수 전체에서 $f(x)=-x+4$이고 $f$를 $n$번 합성한 함수를 $F_n$이라 하면 $F_{2027}(1)=3$이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "$(f\\circ f)(x)=-(-x+4)+4=x$이므로 $F_2$는 항등함수이다. 따라서 $n$이 홀수이면 $F_n=f$이다. 그러므로 $F_{2027}(1)=f(1)=3$이 되어 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-3bcfaf21ac",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체의 집합을 정의역과 공역으로 하는 함수 $f$, $g$, $h$와 항등함수 $i$에 대하여 <보기>에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $f\\circ g=g\\circ f$이면 $f=g$이다.\nㄴ. $f\\circ i=i\\circ f$이다.\nㄷ. $f\\circ g=f\\circ h$이면 $g=h$이다.",
+"choices": [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ"
+],
+"answer": "②",
+"solution": "ㄱ: $f(x)=x+1$, $g(x)=x-1$이면 $f\\circ g=g\\circ f$이지만 $f\\neq g$이므로 거짓이다. ㄴ: $f\\circ i=i\\circ f=f$이므로 참이다. ㄷ: $f(x)=x^2$, $g(x)=x$, $h(x)=-x$이면 $f\\circ g=f\\circ h$이지만 $g\\neq h$이므로 거짓이다. 따라서 옳은 것은 ㄴ뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-828c32a8d8",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=ax+b$, $g(x)=2x-1$이 $f\\circ g=g\\circ f$를 만족시킬 때, <보기>에서 옳은 것만을 있는 대로 고른 것은? (단, $a$, $b$는 상수)\n\nㄱ. $f(1)=1$\nㄴ. 조건을 만족시키는 함수 $f$는 오직 하나뿐이다.\nㄷ. $a=3$이면 $(f\\circ f)(0)=-8$이다.",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "④",
+"solution": "$f(g(x))=2ax-a+b$, $g(f(x))=2ax+2b-1$이므로 $-a+b=2b-1$, 즉 $b=1-a$이다. ㄱ: $f(1)=a+b=1$이므로 참이다. ㄴ: $a$의 값마다 $f$가 하나씩 정해지므로 $f$는 무수히 많아 거짓이다. ㄷ: $a=3$이면 $b=-2$이고, $f(0)=-2$, $f(-2)=-8$이므로 참이다. 따라서 옳은 것은 ㄱ, ㄷ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-e2496c2f97",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "주관식",
+"diff": 4,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=x^2$, $g(x)=2x-3$에 대하여 $(f\\circ g)(x)=(g\\circ f)(x)$를 만족시키는 실수 $x$는 존재하지 않는다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "$(f\\circ g)(x)=(2x-3)^2=4x^2-12x+9$, $(g\\circ f)(x)=2x^2-3$이다. 두 식을 같다고 놓으면 $x^2-6x+6=0$이다. 판별식이 $36-24=12>0$이므로 서로 다른 두 실근이 존재한다. 따라서 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-74754b72f8",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "집합 $X=\\{1,2,3\\}$에 대하여 함수 $f:X\\to X$가 $f(1)=2$, $f(2)=3$, $f(3)=1$을 만족시킨다. $f$를 $n$번 합성한 함수를 $F_n$, $X$의 항등함수를 $i$라 할 때, <보기>에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $f\\circ f\\circ f=i$\nㄴ. $(f\\circ f)(1)=3$\nㄷ. $F_{100}(2)=1$",
+"choices": [
+"ㄱ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "②",
+"solution": "$1\\to2\\to3\\to1$이므로 세 번 합성하면 모든 원소가 제자리로 돌아온다. 따라서 $f\\circ f\\circ f=i$이고 ㄱ은 참이다. ㄴ: $f(f(1))=f(2)=3$이므로 참이다. ㄷ: $100=3\\times33+1$이므로 $F_{100}(2)=f(2)=3$이고, 따라서 거짓이다. 옳은 것은 ㄱ, ㄴ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-59f4f11a86",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "집합 $X=\\{1,2,3,4\\}$에 대하여 두 함수 $f:X\\to X$, $g:X\\to X$가\n$f(1)=2,\\ f(2)=1,\\ f(3)=4,\\ f(4)=3$, $g(x)=5-x$\n를 만족시킨다. $X$의 항등함수를 $i$라 할 때, <보기>에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $f\\circ g=g\\circ f$\nㄴ. $(f\\circ g)\\circ(f\\circ g)=i$\nㄷ. $f\\circ h=g$를 만족시키는 함수 $h:X\\to X$에 대하여 $h(1)=3$이다.",
+"choices": [
+"ㄱ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "$f\\circ g$는 $1\\to3$, $2\\to4$, $3\\to1$, $4\\to2$이다. $g\\circ f$도 $1\\to3$, $2\\to4$, $3\\to1$, $4\\to2$이므로 ㄱ은 참이다. ㄴ: $f\\circ g$를 두 번 합성하면 모든 원소가 제자리로 돌아오므로 참이다. ㄷ: $f\\circ f=i$이므로 $f\\circ h=g$의 양변 왼쪽에 $f$를 합성하면 $h=f\\circ g$이다. 따라서 $h(1)=f(g(1))=f(4)=3$이므로 참이다. 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-ae35bf10f3",
+"typeId": "set2-cm2-11-u0m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "집합 $X=\\{x\\mid 0\\le x\\le1\\}$에서 $X$로의 함수 $f$가\n$f(x)=\\begin{cases}2x & \\left(0\\le x\\le\\frac{1}{2}\\right)\\\\ 2-2x & \\left(\\frac{1}{2}<x\\le1\\right)\\end{cases}$\n이다. $f$를 $n$번 합성한 함수를 $F_n$이라 할 때, <보기>에서 옳은 것만을 있는 대로 고른 것은?\n\nㄱ. $(f\\circ f)\\left(\\frac{1}{4}\\right)=1$\nㄴ. $F_{10}\\left(\\frac{1}{3}\\right)=\\frac{2}{3}$\nㄷ. $(f\\circ f)(x)=0$을 만족시키는 $x$의 개수는 $2$이다.",
+"choices": [
+"ㄱ",
+"ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "③",
+"solution": "ㄱ: $f\\left(\\frac14\\right)=\\frac12$, $f\\left(\\frac12\\right)=1$이므로 참이다. ㄴ: $f\\left(\\frac13\\right)=\\frac23$이고 $f\\left(\\frac23\\right)=2-\\frac43=\\frac23$이다. 따라서 $n\\ge1$이면 $F_n\\left(\\frac13\\right)=\\frac23$이 되어 참이다. ㄷ: $f(f(x))=0$이려면 $f(x)=0$ 또는 $f(x)=1$이어야 한다. $f(x)=0$에서 $x=0, 1$, $f(x)=1$에서 $x=\\frac12$이므로 해는 3개이고, 따라서 거짓이다. 옳은 것은 ㄱ, ㄴ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t0",
+"custom": true
+},
+{
+"id": "fill-788a45415c",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체의 집합에서 정의된 두 함수 $f(x)=2x+5$, $g(x)=3x+a$에 대하여 $f\\circ g=g\\circ f$가 성립한다. 상수 $a$의 값은?",
+"choices": [
+"$6$",
+"$8$",
+"$10$",
+"$12$",
+"$14$"
+],
+"answer": "③",
+"solution": "$(f\\circ g)(x)=2(3x+a)+5=6x+2a+5$이고, $(g\\circ f)(x)=3(2x+5)+a=6x+15+a$이다. 두 함수가 모든 실수 $x$에서 같으려면 상수항이 같아야 하므로 $2a+5=15+a$이다. 따라서 $a=10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-7d71c21016",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "주관식",
+"diff": 3,
+"body": "실수 전체의 집합에서 정의된 두 함수 $f(x)=x^2$, $g(x)=2x-1$에 대하여 두 합성함수 $(f\\circ g)(x)$, $(g\\circ f)(x)$를 각각 구하고, $(f\\circ g)(x)=(g\\circ f)(x)$를 만족시키는 모든 실수 $x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$(f\\circ g)(x)=4x^2-4x+1$, $(g\\circ f)(x)=2x^2-1$, $x=1$",
+"solution": "$(f\\circ g)(x)=f(2x-1)=(2x-1)^2=4x^2-4x+1$이고, $(g\\circ f)(x)=g(x^2)=2x^2-1$이다. 두 식을 같다고 놓으면 $4x^2-4x+1=2x^2-1$에서 $2x^2-4x+2=0$, 곧 $x^2-2x+1=0$이다. 따라서 $(x-1)^2=0$이므로 $x=1$뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-7f69d1b928",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체의 집합에서 정의된 함수 $h$가 모든 실수 $x$에 대하여\n\n$h(3x+1)=6x-4$\n\n를 만족시킨다. $(h\\circ h)(2)$의 값은?",
+"choices": [
+"$-10$",
+"$-6$",
+"$-2$",
+"$2$",
+"$6$"
+],
+"answer": "①",
+"solution": "$3x+1=t$로 놓으면 $x=\\dfrac{t-1}{3}$이므로 $h(t)=6\\cdot\\dfrac{t-1}{3}-4=2(t-1)-4=2t-6$, 즉 $h(x)=2x-6$이다. $h(2)=4-6=-2$이고, $(h\\circ h)(2)=h(-2)=-4-6=-10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-06ee6fdac0",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체의 집합에서 정의된 두 함수 $f(x)=2x+1$, $g(x)=4x^2+4x+3$에 대하여 함수 $h$가 $f\\circ h=g$를 만족시킨다. 방정식 $h(x)=5$의 모든 실근의 합은?",
+"choices": [
+"$-2$",
+"$-1$",
+"$0$",
+"$1$",
+"$2$"
+],
+"answer": "②",
+"solution": "$f\\circ h=g$에서 $2h(x)+1=4x^2+4x+3$이므로 $2h(x)=4x^2+4x+2$, 곧 $h(x)=2x^2+2x+1$이다. $h(x)=5$이면 $2x^2+2x+1=5$에서 $2x^2+2x-4=0$, 즉 $x^2+x-2=0$이다. 근과 계수의 관계에 의하여 두 실근의 합은 $-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-8774b2e8c5",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체의 집합에서 정의된 세 함수 $f$, $g$, $h$가\n\n$(f\\circ g)(x)=x^2+2x$, $h(x)=2x-1$\n\n을 만족시킨다. 방정식 $\\bigl(f\\circ(g\\circ h)\\bigr)(x)=3$의 모든 실근의 곱은?",
+"choices": [
+"$-2$",
+"$-1$",
+"$0$",
+"$1$",
+"$2$"
+],
+"answer": "②",
+"solution": "$f\\circ(g\\circ h)=(f\\circ g)\\circ h$이므로 $\\bigl(f\\circ(g\\circ h)\\bigr)(x)=(f\\circ g)(h(x))=(2x-1)^2+2(2x-1)=4x^2-4x+1+4x-2=4x^2-1$이다. 이것이 $3$과 같으면 $4x^2=4$, 곧 $x^2=1$이므로 $x=\\pm1$이다. 따라서 모든 실근의 곱은 $-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-ec2470ec93",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 전체의 집합에서 정의된 일차함수 $f(x)=ax+b$가 다음을 만족시킨다.\n\n“모든 일차함수 $g$에 대하여 $f\\circ g=g\\circ f$이다.”\n\n이때 상수 $a$, $b$의 값을 각각 구하는 과정을 서술하고 함수 $f(x)$를 구하시오.",
+"selfGrade": true,
+"answer": "$a=1$, $b=0$, $f(x)=x$",
+"solution": "임의의 일차함수를 $g(x)=cx+d$라 하면 $(f\\circ g)(x)=a(cx+d)+b=acx+ad+b$, $(g\\circ f)(x)=c(ax+b)+d=acx+cb+d$이다. 두 식이 모든 실수 $x$에서 같으려면 상수항이 같아야 하므로 $ad+b=cb+d$가 모든 $c$, $d$에 대하여 성립해야 한다. $c$에 관한 항을 보면 $cb$는 $c$에 따라 변하므로 $b=0$이어야 하고, 그러면 $ad=d$가 모든 $d$에 대하여 성립하므로 $a=1$이다. 따라서 $a=1$, $b=0$이고 $f(x)=x$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-b93c2eb6b7",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "실수 전체의 집합에서 정의된 함수 $f(x)=3x-2$에 대하여 $f$를 $n$번 합성한 함수를 $f^n$으로 나타낸다. 즉 $f^1=f$, $f^{n+1}=f\\circ f^{\\,n}$이다. $f^{4}(2)$의 값은?",
+"choices": [
+"$28$",
+"$54$",
+"$80$",
+"$82$",
+"$84$"
+],
+"answer": "④",
+"solution": "$x=1$은 $f(1)=1$인 고정점이므로 $f^{n}(x)=3^{n}(x-1)+1$임을 알 수 있다. 실제로 $f(2)=4$, $f(4)=10$, $f(10)=28$, $f(28)=82$로 네 번 합성한 값이 $82$이다. 공식으로도 $f^{4}(2)=3^{4}(2-1)+1=81+1=82$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-b2f3942e9b",
+"typeId": "set2-cm2-11-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 전체의 집합에서 정의된 함수 $f(x)=2x+1$과 함수 $g$가\n\n$(g\\circ f)(x)=4x^2+4x+3$\n\n을 만족시킨다. 함수 $g(x)$를 구하고, $(f\\circ g)(x)=(g\\circ f)(x)$를 만족시키는 모든 실수 $x$의 값의 곱을 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "$g(x)=x^2+2$, 곱은 $-1$",
+"solution": "$(g\\circ f)(x)=g(2x+1)=4x^2+4x+3$에서 $2x+1=t$로 놓으면 $x=\\dfrac{t-1}{2}$이므로 $g(t)=4\\cdot\\dfrac{(t-1)^2}{4}+4\\cdot\\dfrac{t-1}{2}+3=(t-1)^2+2(t-1)+3=t^2+2$, 즉 $g(x)=x^2+2$이다. 그러면 $(f\\circ g)(x)=2(x^2+2)+1=2x^2+5$이다. $(f\\circ g)(x)=(g\\circ f)(x)$이면 $2x^2+5=4x^2+4x+3$에서 $2x^2+4x-2=0$, 곧 $x^2+2x-1=0$이다. 근과 계수의 관계에 의하여 모든 실근의 곱은 $-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-7a78f51199",
+"typeId": "set2-cm2-11-u0m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=\\begin{cases}x^2& (x\\le1)\\\\ 2x-1& (x>1)\\end{cases}$, $\\quad g(x)=x+1$에 대하여\n\n$(f\\circ g)(0)+(g\\circ f)(2)$의 값은?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "$(f\\circ g)(0)=f(g(0))=f(1)$인데 $1\\le1$이므로 $f(1)=1^2=1$이다. 또 $f(2)$는 $2>1$이므로 $f(2)=2\\cdot2-1=3$이고, $(g\\circ f)(2)=g(3)=3+1=4$이다. 따라서 구하는 값은 $1+4=5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-9589bd6f31",
+"typeId": "set2-cm2-11-u0m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=2x+3$, $g(x)=4x^2+8x+1$에 대하여 $f\\circ h=g$를 만족하는 함수 $h$는?",
+"choices": [
+"$h(x)=2x^2+4x-1$",
+"$h(x)=2x^2+4x+1$",
+"$h(x)=2x^2+4x+2$",
+"$h(x)=4x^2+8x-2$",
+"$h(x)=2x^2-4x-1$"
+],
+"answer": "①",
+"solution": "$f(h(x))=2h(x)+3$이므로 $2h(x)+3=4x^2+8x+1$이다. 이를 풀면 $2h(x)=4x^2+8x-2$, 즉 $h(x)=2x^2+4x-1$이다. 실제로 $f(h(x))=2(2x^2+4x-1)+3=4x^2+8x+1=g(x)$로 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-3fde2be90a",
+"typeId": "set2-cm2-11-u0m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=(x-1)^2$, $g(x)=x^2-2$에 대하여 방정식 $(f\\circ g)(x)=4$의 서로 다른 실근의 개수는?",
+"choices": [
+"$0$",
+"$1$",
+"$2$",
+"$3$",
+"$4$"
+],
+"answer": "⑤",
+"solution": "$(f\\circ g)(x)=(g(x)-1)^2=(x^2-2-1)^2=(x^2-3)^2$이므로 $(x^2-3)^2=4$이다. 따라서 $x^2-3=2$ 또는 $x^2-3=-2$이고, 각각 $x^2=5$, $x^2=1$이다. 이때 $x=\\pm\\sqrt5,\\ \\pm1$로 서로 다른 실근이 $4$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-3493e607b0",
+"typeId": "set2-cm2-11-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체에서 정의된 두 함수 $f(x)=x^2-x-3$, $g(x)=x^2+1$에 대하여 방정식 $f(g(x))=g(x)$의 모든 실근의 곱은?",
+"choices": [
+"$-3$",
+"$-2$",
+"$-1$",
+"$2$",
+"$3$"
+],
+"answer": "②",
+"solution": "$t=g(x)=x^2+1$로 놓으면 $t\\ge1$이다. 주어진 방정식은 $t^2-t-3=t$, 즉 $t^2-2t-3=(t-3)(t+1)=0$이므로 $t=3$ 또는 $t=-1$이다. 그런데 $t\\ge1$이므로 $t=-1$은 버리고 $t=3$만 택한다. $x^2+1=3$에서 $x^2=2$, $x=\\pm\\sqrt2$이므로 모든 실근의 곱은 $-2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-9e72189abc",
+"typeId": "set2-cm2-11-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "실수 전체에서 정의된 함수 $f(x)=x^2-4x+3$에 대하여 방정식 $(f\\circ f)(x)=0$의 서로 다른 실근의 개수는?",
+"choices": [
+"$0$",
+"$1$",
+"$2$",
+"$3$",
+"$4$"
+],
+"answer": "⑤",
+"solution": "$f(x)=x^2-4x+3=(x-1)(x-3)$이므로 $f(t)=0$의 해는 $t=1,\\ 3$이다. 따라서 $(f\\circ f)(x)=0$은 $f(x)=1$ 또는 $f(x)=3$과 같다. $f(x)=1$에서 $x^2-4x+2=0$이므로 $x=2\\pm\\sqrt2$, $f(x)=3$에서 $x^2-4x=0$이므로 $x=0,\\ 4$이다. 네 값이 모두 서로 다르므로 실근은 $4$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-fa5919bb29",
+"typeId": "set2-cm2-11-u0m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "실수 전체에서 정의된 함수 $f(x)=x^2-2$에 대하여 방정식 $(f\\circ f)(x)=x$의 서로 다른 실근의 개수는?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "④",
+"solution": "$(f\\circ f)(x)=(x^2-2)^2-2=x^4-4x^2+2$이므로 방정식은 $x^4-4x^2-x+2=0$이다. $f(x)=x$의 해는 $(f\\circ f)(x)=x$의 해이기도 하므로 $x^2-x-2$가 인수이고, 실제로 $x^4-4x^2-x+2=(x^2-x-2)(x^2+x-1)$로 인수분해된다. $x^2-x-2=0$에서 $x=2,-1$, $x^2+x-1=0$에서 $x=\\dfrac{-1\\pm\\sqrt5}{2}$이고 네 값이 모두 다르므로 실근은 $4$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-11-u0m0s0t2",
+"custom": true
 }
 ]

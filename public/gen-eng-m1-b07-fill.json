@@ -2988,5 +2988,216 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u4m3s0t0",
 "custom": true
+},
+{
+"id": "fill-e7386458c6",
+"typeId": "eng-m1-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nCan a shadow become an artwork? Look at this. The shadow of this cup makes an elephant. It's your turn. Choose a shadow, and draw interesting things around the shadow. Your shadow can be art.",
+"choices": [
+"그림자를 이용해 예술 작품을 만드는 것",
+"알맞은 컵을 고르는 방법",
+"코끼리 그림을 잘 그리는 방법",
+"그림자가 생기는 과학적 원리",
+"유명 화가들의 그림자 작품 소개"
+],
+"answer": "①",
+"solution": "글은 컵의 그림자가 코끼리 모양이 되는 예를 보여 준 뒤, 그림자를 하나 골라 그 주변에 재미있는 것을 그려 보라고 권합니다. 마지막 문장 'Your shadow can be art.'가 주제를 드러내므로 정답은 ①입니다. ②, ③은 글에 나온 낱말(cup, elephant)만 활용한 오답이고, ④, ⑤는 글에 없는 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cb60cab3a0",
+"typeId": "eng-m1-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용을 바르게 요약한 문장만을 <보기>에서 있는 대로 고른 것은?\n\nHello, everyone. I'm Artro, your A.I. art guide. Look around you. Art is everywhere. Everything can be art. Follow me. I'll give you some examples.\nCan a shadow become an artwork? Look at this. The shadow of this cup makes an elephant. It's your turn. Choose a shadow, and draw interesting things around the shadow. Your shadow can be art.\nBox tape can be an artwork, too. Artists put a piece of tape on glass and add another piece of tape on it. This way, they can make dark or bright colors. Look at the man's face. Isn't it interesting? Give it a try.\nLastly, your heartbeat can be art, too! At Pulse Park, your heartbeat makes a great art show. Hold the special sensors in the park. Then, your heartbeat changes into lights. Like this, you can see everyone's heartbeats on different lights. Look, the lights are dancing!\nDid you enjoy your visit? There is no end to art. Just try new things. Next time, I will show you a different art style. See you next time.\n\n<보기>\n(a) Artro says that art can be found everywhere.\n(b) Artro gives three examples: shadows, box tape, and heartbeats.\n(c) At Pulse Park, people draw pictures of their hearts with lights.\n(d) Artists put pieces of tape on paper to make dark or bright colors.\n(e) Artro wants us to try new things because there is no end to art.",
+"choices": [
+"(a), (b)",
+"(a), (c), (e)",
+"(a), (b), (e)",
+"(b), (d), (e)",
+"(c), (d), (e)"
+],
+"answer": "③",
+"solution": "(a)는 'Art is everywhere.'와, (b)는 그림자·박스 테이프·심장 박동이라는 세 가지 예시와, (e)는 'There is no end to art. Just try new things.'와 일치합니다. (c)는 틀렸습니다. 펄스 공원에서는 센서를 잡으면 심장 박동이 빛으로 바뀌는 것이지, 사람들이 빛으로 심장을 그리는 것이 아닙니다. (d)도 틀렸습니다. 테이프를 붙이는 곳은 종이(paper)가 아니라 유리(glass)입니다. 따라서 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1f340a912a",
+"typeId": "eng-m1-b07-u3m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 아래와 같이 요약할 때, <조건>에 맞게 빈칸 (A), (B)에 들어갈 말을 쓰시오.\n\nHello, everyone. I'm Artro, your A.I. art guide. Look around you. Art is everywhere. Everything can be art. Follow me. I'll give you some examples.\n(중략)\nLastly, your heartbeat can be art, too! At Pulse Park, your heartbeat makes a great art show. Hold the special sensors in the park. Then, your heartbeat changes into lights. Like this, you can see everyone's heartbeats on different lights. Look, the lights are dancing!\nDid you enjoy your visit? There is no end to art. Just try new things. Next time, I will show you a different art style. See you next time.\n\n<요약>\nAccording to Artro, art can be found (A)__________, even in shadows, box tape, and heartbeats. Art never (B)__________, so we should just try new things.\n\n<조건>\n· (A)는 본문에서 한 단어를 찾아 그대로 쓸 것\n· (B)는 본문에 나온 한 단어를 활용하되, 어법에 맞게 형태를 바꾸어 쓸 것",
+"selfGrade": true,
+"answer": "(A) everywhere (B) ends",
+"solution": "'Art is everywhere.'에서 (A)에 들어갈 말은 everywhere입니다. 'There is no end to art.'는 '예술에는 끝이 없다', 곧 '예술은 결코 끝나지 않는다'는 뜻입니다. 따라서 명사 end를 동사로 써야 하고, 주어 Art가 3인칭 단수이므로 (B)는 ends가 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b6bb029070",
+"typeId": "eng-m1-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중 글의 요지를 가장 잘 드러내는 문장끼리 짝지은 것은?\n\nHello, everyone. I'm Artro, your A.I. art guide. Look around you. ⓐArt is everywhere. Everything can be art. Follow me. I'll give you some examples.\nCan a shadow become an artwork? Look at this. ⓑThe shadow of this cup makes an elephant. It's your turn. Choose a shadow, and draw interesting things around the shadow. Your shadow can be art.\nBox tape can be an artwork, too. Artists put a piece of tape on glass and add another piece of tape on it. This way, they can make dark or bright colors. ⓒLook at the man's face. Isn't it interesting? Give it a try.\nLastly, your heartbeat can be art, too! At Pulse Park, your heartbeat makes a great art show. Hold the special sensors in the park. Then, ⓓyour heartbeat changes into lights. Like this, you can see everyone's heartbeats on different lights. Look, the lights are dancing!\nDid you enjoy your visit? ⓔThere is no end to art. Just try new things. Next time, I will show you a different art style. See you next time.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓔ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "이 글은 처음에 '예술은 어디에나 있다(ⓐ)'는 중심 생각을 밝힙니다. 이어 그림자, 박스 테이프, 심장 박동을 예시로 들고, 마지막에 '예술에는 끝이 없으니 새로운 것을 시도하라(ⓔ)'고 마무리하는 구조입니다. ⓑ, ⓒ, ⓓ는 각 예시를 설명하는 세부 내용일 뿐 글 전체의 요지는 아닙니다. 따라서 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-bf6db7db39",
+"typeId": "eng-m1-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ의 우리말 뜻으로 어색한 것은?\n\nToday is my first day of school. I ⓐwear a uniform just like my mom. I have six classes, so I check my bag ⓑagain and again for my textbooks. Oh, no! It's ⓒalready 8:50 a.m.! The bell rings, and I ⓓrun to the music room. I don't see my ⓔclassmates.",
+"choices": [
+"ⓐ wear: 입다",
+"ⓑ again and again: 몇 번이고",
+"ⓒ already: 아직",
+"ⓓ run to: ~로 달려가다",
+"ⓔ classmates: 반 친구들"
+],
+"answer": "③",
+"solution": "already는 '벌써, 이미'라는 뜻이고, '아직'은 still/yet의 뜻이므로 ⓒ의 우리말 뜻이 어색하다. 특히 '이미 8:50이다'라는 문맥상 '벌써'가 맞다. 나머지 ⓐⓑⓓⓔ는 뜻이 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d22d6ab8a5",
+"typeId": "eng-m1-b07-u0m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 표현을 <보기>에서 골라 알맞은 형태로 쓰시오. (단, 하나는 쓰지 않음)\n\n<보기> run to, again and again, already, just like\n\n(1) He is worried, so he checks his bag ________________.\n(2) The bell rings, so the students ________________ the classroom.\n(3) It's ________________ 8:50 a.m. We are late!",
+"selfGrade": true,
+"answer": "(1) again and again (2) run to (3) already",
+"solution": "(1) 걱정이 되어 가방을 '몇 번이고' 확인하므로 again and again. (2) 종이 울려 학생들이 교실로 '달려가므로' run to이고, 주어가 복수 the students라 원형 그대로 쓴다. (3) 늦었다는 문맥이라 '벌써, 이미'의 already. 남는 표현은 just like이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-781c8a7631",
+"typeId": "eng-m1-b07-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "윗글을 읽고 질문에 대한 대답이 되도록 빈칸을 완성하시오.\n\n<조건> minutes를 사용하여 시간 표현을 영어로 쓸 것\n\nToby\nI have six classes today. I check my bag again and again for my textbooks. My first class starts at 9:10 a.m. Oops, it's already 8:50 a.m.!\n\nQ. When Toby looks at the clock, how long is it until his first class starts?\n→ His first class starts after ____________ ____________.",
+"selfGrade": true,
+"answer": "twenty minutes",
+"solution": "첫 수업은 9:10 a.m.에 시작하고 지금은 8:50 a.m.이다. 9:10에서 8:50을 빼면 20분 차이가 난다. 따라서 '20분 후'에 수업이 시작하므로 twenty minutes가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e17ad80f99",
+"typeId": "eng-m1-b07-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영어로 쓰시오.\n\n나는 나의 엄마처럼 교복을 입는다.\n\n<조건>\n① wear, uniform, just like를 모두 사용할 것\n② 필요한 관사를 반드시 넣을 것\n③ mom을 사용할 것",
+"selfGrade": true,
+"answer": "I wear a uniform just like my mom.",
+"solution": "'교복을 입는다'는 wear a uniform으로, 셀 수 있는 명사 uniform 앞에 관사 a가 필요하다. '~처럼'은 just like로 나타내고 뒤에 my mom을 쓴다. 따라서 I wear a uniform just like my mom.이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0e987599ec",
+"typeId": "eng-m1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 알맞은 것을 모두 골라 짝지은 것은?\n\nWe, then, went to the Giant Vegetable Contest. All the vegetables ⓐwere huge! My uncle entered the contest with his pumpkin. It was ⓑbigger than a pig! “The crops get about 20 hours of sunlight a day during summer. So they grow ⓒbig and sweeter,” my uncle said. Earlier, we got ⓓhungrily and ate salmon sandwiches. When we left the fair at 10 p.m., it was not so ⓔbright.",
+"choices": [
+"① ⓐ, ⓑ",
+"② ⓐ, ⓒ, ⓓ",
+"③ ⓐ, ⓑ, ⓔ",
+"④ ⓑ, ⓓ, ⓔ",
+"⑤ ⓒ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ 주어 the vegetables가 복수이고 과거이므로 were가 맞다. ⓑ than이 있으므로 비교급 bigger가 맞다. ⓒ 'bigger and sweeter'처럼 비교급으로 이어져야 하므로 big은 bigger로 고쳐야 한다. ⓓ 「get+형용사(~한 상태가 되다)」이므로 부사 hungrily가 아니라 형용사 hungry가 와야 한다. ⓔ be동사 뒤 보어로 형용사 bright가 맞다. 따라서 알맞은 것은 ⓐ, ⓑ, ⓔ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-db42263e07",
+"typeId": "eng-m1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분을 고친 것 중, 어법상 바르게 고치지 못한 것은?\n\nMy uncle said, “The sun ⓐdon’t set from May to July.” One day, my uncle ⓑtaked me and my cousin to the Alaska State Fair. People started ⓒcutting the wood fast. I cheered for Jimmy, but he didn’t get the prize. “It was ⓓhardly. The wood was ⓔmore wet than ice,” Jimmy said.",
+"choices": [
+"① ⓐ: don’t → doesn’t",
+"② ⓑ: taked → took",
+"③ ⓒ: cutting → to cutting",
+"④ ⓓ: hardly → hard",
+"⑤ ⓔ: more wet → wetter"
+],
+"answer": "③",
+"solution": "주어 The sun이 3인칭 단수이므로 doesn't가 맞다(①). take의 과거형은 불규칙 변화로 took이다(②). hardly는 '거의 ~않다'라는 뜻의 부사이므로, '어려웠다'는 의미의 형용사 hard로 고쳐야 한다(④). wet은 1음절이지만 「단모음+단자음」이라 자음을 겹쳐 wetter가 된다(⑤). 그러나 ⓒ는 「start+동명사/to부정사」로 cutting(또는 to cut)이 올바르며, 'to cutting'은 틀린 형태이므로 ③이 바르게 고치지 못한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c1afbd711c",
+"typeId": "eng-m1-b07-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 알맞은 것을 모두 골라 짝지은 것은?\n\nⓐ The vegetables were huge and heavy.\nⓑ In summer, Alaska’s days get longer and brighter.\nⓒ My pumpkin is as big as a pig.\nⓓ The pumpkin grew more big during summer.\nⓔ When Jimmy will cut the wood, he smiles.\nⓕ I felt nervously before the contest.\nⓖ This salmon is more fresh than that ham.",
+"choices": [
+"① ⓐ, ⓑ, ⓒ",
+"② ⓐ, ⓒ, ⓓ",
+"③ ⓑ, ⓒ, ⓔ",
+"④ ⓐ, ⓓ, ⓖ",
+"⑤ ⓒ, ⓔ, ⓕ"
+],
+"answer": "①",
+"solution": "ⓐ 복수 주어+과거 were가 맞다. ⓑ 「get+비교급 and 비교급」으로 longer and brighter가 맞다. ⓒ 「as+원급+as(~만큼 …한)」로 as big as가 맞다. ⓓ big은 bigger로 고쳐야 한다(more big은 틀림). ⓔ 시간의 부사절 when절에서는 미래를 현재시제로 쓰므로 will cut이 아니라 cuts여야 한다. ⓕ 「feel+형용사」이므로 nervously가 아니라 nervous여야 한다. ⓖ fresh의 비교급은 fresher이다. 따라서 알맞은 것은 ⓐ, ⓑ, ⓒ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fef3ec0df5",
+"typeId": "eng-m1-b07-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓓ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.\n\nOne day, my uncle ⓐtook me to the Alaska State Fair. People started cutting the wood fast. We got ⓑhungrily, so we went to the food court. All the vegetables ⓒwas huge! My uncle’s pumpkin was ⓓbig than a pig!",
+"selfGrade": true,
+"answer": "ⓑ hungrily → hungry, ⓒ was → were, ⓓ big → bigger",
+"solution": "ⓐ take의 과거형 took은 올바르다. ⓑ 「get+형용사」로 상태 변화를 나타내므로 부사 hungrily가 아니라 형용사 hungry여야 한다. ⓒ 주어 the vegetables가 복수이고 과거이므로 was가 아니라 were여야 한다. ⓓ than이 있으므로 원급 big이 아니라 비교급 bigger여야 한다. 따라서 틀린 것은 ⓑ, ⓒ, ⓓ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e0abeba56",
+"typeId": "eng-m1-b07-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 각 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\n\n(1) My uncle’s pumpkin grew more big than a pig.\n(2) When the bell will ring, we will go to the cafeteria.",
+"selfGrade": true,
+"answer": "(1) My uncle’s pumpkin grew bigger than a pig. (2) When the bell rings, we will go to the cafeteria.",
+"solution": "(1) big은 1음절 형용사이므로 more를 붙이지 않고 「단모음+단자음」 규칙에 따라 자음을 겹쳐 bigger로 쓴다. (2) 시간을 나타내는 부사절 when절에서는 미래의 일이라도 현재시제로 쓰므로 will ring을 rings로 고치고, 주절에는 will go를 그대로 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m1s0t0",
+"custom": true
 }
 ]

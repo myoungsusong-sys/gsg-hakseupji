@@ -2624,5 +2624,157 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b07-u2m6s0t0",
 "custom": true
+},
+{
+"id": "fill-aa006a39ef",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 Weidensaul이 말하고자 하는 요지로 가장 알맞은 것은?\n\nJo: Your new book says every spring and fall, hundreds of millions to billions of migratory birds pass over our roofs, but we seem to have no idea that it’s happening. Why is that?\nWeidensaul: Well, most birds migrate after dark, including almost all of the birds that are normally active during the day. That’s why it’s hard for us to realize the migration is happening. They migrate at night because the night sky is cooler, and the air calmer. Besides, there are fewer predators at night. If you could strip away the night sky and make everything visible, this migration would probably be the largest, greatest natural spectacle on the planet.",
+"choices": [
+"철새는 포식자를 피하려고 해마다 이동 경로를 바꾼다.",
+"낮에 활동하는 새들은 밤에는 절대 이동하지 않는다.",
+"철새 대부분은 밤에 이동하기 때문에 사람들은 그 거대한 이동을 잘 알아차리지 못한다.",
+"철새를 관찰하기에는 봄과 가을보다 여름이 더 좋다.",
+"밤하늘의 별빛 때문에 철새가 길을 잃는 경우가 많다."
+],
+"answer": "③",
+"solution": "Weidensaul은 철새 대부분이 밤에 이동해서(migrate after dark) 사람들이 이동이 일어나는 줄 모른다고 하고, 밤이 서늘하고 바람이 잔잔하며 포식자가 적다는 이유를 든다. 그래서 요지는 ③이다. ②는 낮에 활동하는 새들도 밤에 이동한다는 본문 내용과 반대이고, ①④⑤는 본문에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-72711e298c",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nLook! I just found one over there. See how it is trying to stuff its cheeks full? Hamsters can pack a quarter of their body weight inside their cheeks, which helps them get through the winter. Surprisingly, they not only feed on nuts and flowers, but have also adapted to eating candle wax, which is a good source of fat and is easy to find in graveyards.",
+"choices": [
+"the history of graveyards in Vienna",
+"why hamsters are popular pets in Europe",
+"the harmful effects of candle wax on wildlife",
+"the structure of hamster holes under the ground",
+"how hamsters in Vienna store and find food to survive"
+],
+"answer": "⑤",
+"solution": "햄스터가 볼에 몸무게의 4분의 1까지 먹이를 저장해 겨울을 나고, 묘지에서 구하기 쉬운 양초 왁스까지 먹도록 적응했다는 내용이다. 그래서 주제는 '빈의 햄스터가 살아남으려고 먹이를 저장하고 구하는 방법'인 ⑤이다. ③은 양초 왁스가 좋은 지방 공급원이라는 본문 내용과 반대다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c17270ca05",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nWeidensaul: Well, you can start by raising awareness of its importance among people around you. Or, if you want to be more actively involved, you can participate in cleaning up beaches or monitoring wildlife habitats. On a bigger scale, because migratory birds travel through many countries, international cooperation is a must for their protection.",
+"choices": [
+"the main causes of beach pollution in Korea",
+"ways to protect the Yellow Sea for migratory birds",
+"how black-faced spoonbills find food in the mudflats",
+"the reasons migratory birds avoid crossing many countries",
+"the history of international organizations for wildlife"
+],
+"answer": "②",
+"solution": "Weidensaul은 주변 사람들에게 중요성 알리기, 해변 청소와 서식지 모니터링 참여하기, 국제 협력 같은 보호 방법을 차례로 소개한다. 그래서 주제는 '철새를 위해 황해를 보호하는 방법'인 ②이다. 나머지 선지는 글에서 다루지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-297b14cbf9",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nJo: Then what happens after they arrive there?\nWeidensaul: They regrow their digestive organs and spend the summer feeding again, and they undergo the same journey back to Alaska. They do this again and again for 25 to 30 years, flying up to 30,000 km every year. By the time bar-tailed godwits die, they have flown close to twice the distance from Earth to the moon.\nJo: That’s truly impressive.",
+"choices": [
+"A Lifelong Round Trip: The Endless Journey of Godwits",
+"How Godwits Find Food in the Pacific Ocean",
+"Why Godwits Stop Migrating After Their First Trip",
+"Flying to the Moon: The Dream of Bar-tailed Godwits",
+"Leaving Alaska Forever: A New Home in New Zealand"
+],
+"answer": "①",
+"solution": "큰뒷부리도요는 소화 기관을 다시 키운 뒤 알래스카로 돌아가는 여정을 25~30년 동안 되풀이한다. 평생 날아간 거리를 합치면 지구와 달 사이 거리의 거의 두 배라고 하므로 제목은 ①이 알맞다. ④는 '달'이라는 표현만 가져온 함정이고, ③⑤는 해마다 반복해서 오간다는 본문 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6e6d15556f",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWeidensaul: As a bird watcher and conservationist, I find the Yellow Sea mudflats between Korea and China very special. They are some of the largest tidal mudflats on the earth and provide a critical stopover point for the countless migratory birds on the East Asian-Australasian Flyway. While these enormous stretches of tidal mud look featureless to the human eye, they have plenty of marine life forms.\nJo: So the mudflats are drawing all kinds of birds in from as far away as New Zealand, Australia, and Asia?\nWeidensaul: Yes. Many of these birds fly several thousand kilometers to get to the Yellow Sea. Here, they have to double their weight in less than two weeks and make another flight of several thousand kilometers up north. That’s why the Yellow Sea is so critically important.\n*East Asian-Australasian Flyway: 동아시아-대양주 철새 이동 경로",
+"choices": [
+"Mudflats: Empty Lands with Little Life",
+"Bird Watching Tips for Beginners in Korea",
+"How Migratory Birds Lose Weight on Long Flights",
+"The Yellow Sea: A Vital Rest Stop on a Long Journey",
+"Tidal Mudflats as Popular Tourist Attractions"
+],
+"answer": "④",
+"solution": "황해 갯벌은 해양 생물이 풍부해서, 수천 km를 날아온 철새들이 2주도 안 되는 사이에 몸무게를 두 배로 늘리고 다시 북쪽으로 떠나는 중요한 중간 기착지다. 그래서 제목은 ④가 알맞다. ①은 겉으로 특징 없어 보인다는 말만 보고 고르게 만든 함정으로, 생물이 풍부하다는 내용과 반대다. ③은 철새가 이곳에서 몸무게를 늘린다는 사실과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-00525ee74e",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nWeidensaul: To find their routes, the bar-tailed godwits probably rely on the sun and stars among other things. Some experts believe that they may be able to sense the earth’s magnetic field lines, too. You may also wonder how, if ever, they sleep while flying over a vast ocean. It turns out that migratory birds use an approach called \"half-brain sleep.\" This is how it works. Only the left half of the brain sleeps for a couple of seconds, then only the right half for the next couple of seconds, and then this process repeats over and over again. Isn’t it amazing? Actually, some sea mammals like dolphins can do that, too, because they have to keep breathing consciously.",
+"choices": [
+"철새는 바다를 건너기 전에 잠을 충분히 자 두어야 한다.",
+"돌고래와 철새는 같은 방법으로 길을 찾는다.",
+"큰뒷부리도요는 해와 별 등을 이용해 길을 찾고, 뇌의 반쪽씩 번갈아 재우며 비행 중에도 잠을 잔다.",
+"지구 자기장 때문에 철새가 비행 중에 잠들기 어렵다.",
+"철새는 비행 중에 뇌의 양쪽이 동시에 몇 초씩 잠든다."
+],
+"answer": "③",
+"solution": "글은 큰뒷부리도요가 해·별·지구 자기장으로 길을 찾는 방법과, 뇌의 왼쪽과 오른쪽이 번갈아 자는 '반뇌 수면'으로 비행 중에 잠자는 방법을 설명한다. 그래서 요지는 ③이다. ②는 돌고래와 공통점이 길 찾기가 아니라 수면 방식이므로 틀렸고, ⑤는 양쪽이 '동시에' 잔다고 해서 '번갈아' 잔다는 본문과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9898e9d519",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nNow, I’ve come really early to a graveyard to try to see some hamsters because this is one of the best times of day to see them. At this time of the day, there’s nobody around so they don’t have to avoid people while looking for food. These little ones have been in the area for decades, but now live among the dead because development has robbed them of the green fields they used to inhabit.\nLook! I just found one over there. See how it is trying to stuff its cheeks full? Hamsters can pack a quarter of their body weight inside their cheeks, which helps them get through the winter. Surprisingly, they not only feed on nuts and flowers, but have also adapted to eating candle wax, which is a good source of fat and is easy to find in graveyards.\nEven though the hamsters here have adapted to the noises of the city, they still keep a watchful eye, as predators are never too far away. They may need to quickly escape back down into their holes, which are complex structures stretching under the ground. Despite urban areas generally having a negative effect on wildlife, cities can actually provide islands of protection for it.\n\n<요약문>\nHaving lost their green fields to (A)________, the hamsters in Vienna now live in graveyards, where they have successfully (B)________ to urban conditions, showing that cities can offer protection to wildlife.\n\n     (A)               (B)",
+"choices": [
+"predators …… adapted",
+"development …… adapted",
+"development …… surrendered",
+"tourism …… adapted",
+"predators …… surrendered"
+],
+"answer": "②",
+"solution": "햄스터가 살던 초원을 잃은 것은 개발(development) 때문이므로 (A)에는 development가 들어간다. 햄스터들은 도시 소음에 적응하고 양초 왁스를 먹는 등 도시 환경에 적응(adapted)했으므로 (B)에는 adapted가 들어간다. 그래서 정답은 ②이다. ①⑤의 predators는 본문에 나오지만 서식지를 잃은 원인이 아니고, surrendered(굴복했다)는 도시가 보호처가 될 수 있다는 결론과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4b4aad5266",
+"typeId": "eng-h2-b07-u3m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nWeidensaul: Birds in migratory condition can do things that they can’t do at other times of the year. Another neat trick you might envy is that they can gain a tremendous amount of muscle tissue without exercise. For example, before some bar-tailed godwits leave Alaska in September and make a 10,000 km flight across the Pacific, they undergo a process of binge feeding. They just eat and eat until they double their weight. By the time they take off, their heart and flight muscles may have increased by 50%. After they have eaten as much as they possibly can and can’t put any more weight on, their digestive organs shrink dramatically because these won’t be put to use during the non-stop flight to New Zealand.\n\n<요약문>\nBirds preparing for migration can build up muscle (A)________ exercise; bar-tailed godwits, for instance, double their weight by binge feeding, after which their digestive organs (B)________ because they are useless during the long non-stop flight.\n\n     (A)               (B)",
+"choices": [
+"through …… shrink",
+"without …… expand",
+"through …… expand",
+"without …… shrink",
+"after …… recover"
+],
+"answer": "④",
+"solution": "본문에 철새는 운동 없이(without exercise) 근육 조직을 크게 늘릴 수 있다고 나오므로 (A)에는 without이 들어간다. 더 이상 먹을 수 없을 만큼 먹고 나면 비행 중에 쓰지 않는 소화 기관이 급격히 줄어든다(shrink)고 했으므로 (B)에는 shrink가 들어간다. 그래서 정답은 ④이다. through와 after는 운동으로 근육을 키운다는 상식에 기댄 함정이고, expand와 recover는 소화 기관이 줄어든다는 본문 내용과 반대다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u3m3s0t0",
+"custom": true
 }
 ]

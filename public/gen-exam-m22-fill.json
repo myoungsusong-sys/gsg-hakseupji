@@ -5863,5 +5863,318 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u0m1s1t0",
 "custom": true
+},
+{
+"id": "fill-20c60fd2d9",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "두 마름모는 항상 서로 닮은 도형이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "마름모는 네 변의 길이가 모두 같지만, 내각의 크기는 마름모마다 다를 수 있다. 예를 들어 정사각형과 한 내각이 $60^\\circ$인 마름모는 대응하는 각의 크기가 같지 않다. 따라서 두 마름모가 항상 닮은 도형인 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6658ccc063",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "$\\triangle ABC$ ∽ $\\triangle DEF$ 이고 두 삼각형의 닮음비가 $2:3$ 이다. $\\overline{AB}=6\\,\\text{cm}$ 이면 $\\overline{DE}=9\\,\\text{cm}$ 이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "닮음 기호의 꼭짓점 순서에 따라 $\\overline{AB}$에 대응하는 변은 $\\overline{DE}$이다. $\\overline{AB}:\\overline{DE}=2:3$ 이므로 $6:\\overline{DE}=2:3$ 이고, $\\overline{DE}=9\\,\\text{cm}$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f2d512a1bf",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "두 직각이등변삼각형은 항상 서로 닮은 도형이다.\n\n옳으면 O, 틀리면 X 를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "직각이등변삼각형의 세 내각은 항상 $90^\\circ, 45^\\circ, 45^\\circ$ 이다. 세 변의 길이의 비도 항상 일정하므로, 한 삼각형을 일정한 비율로 확대하거나 축소하면 다른 삼각형과 합동이 된다. 따라서 두 직각이등변삼각형은 항상 닮은 도형이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9d03745c57",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 항상 서로 닮은 도형인 것은?",
+"choices": [
+"두 직사각형",
+"두 마름모",
+"두 정육면체",
+"두 원기둥",
+"두 이등변삼각형"
+],
+"answer": "③",
+"solution": "정육면체는 모든 모서리의 길이가 같고 모양이 하나로 정해지므로, 두 정육면체는 항상 닮은 도형이다. 직사각형, 마름모, 원기둥, 이등변삼각형은 가로와 세로의 비, 내각, 높이와 반지름의 비, 꼭지각 등이 서로 다를 수 있으므로 항상 닮은 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-879c51749b",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "닮은 도형에 대한 다음 설명 중 옳지 않은 것은?",
+"choices": [
+"합동인 두 도형은 닮음비가 $1:1$ 인 닮은 도형이다.",
+"닮은 두 평면도형에서 대응하는 각의 크기는 각각 같다.",
+"닮은 두 평면도형에서 대응하는 변의 길이의 비는 일정하다.",
+"닮음비가 $2:3$ 인 두 삼각형의 둘레의 길이의 비는 $4:9$ 이다.",
+"닮은 두 입체도형에서 대응하는 모서리의 길이의 비는 일정하다."
+],
+"answer": "④",
+"solution": "닮은 두 평면도형의 둘레의 길이의 비는 닮음비와 같다. 따라서 닮음비가 $2:3$ 이면 둘레의 길이의 비도 $2:3$ 이다. $4:9$ 는 넓이의 비이므로 ④가 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-8494aff07a",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\triangle ABC$ ∽ $\\triangle DEF$ 이고 닮음비는 $3:5$ 이다. $\\angle A=50^\\circ$, $\\angle B=70^\\circ$, $\\overline{AB}=6\\,\\text{cm}$, $\\overline{BC}=9\\,\\text{cm}$ 일 때, 다음 중 옳은 것은?",
+"choices": [
+"$\\overline{DE}=12\\,\\text{cm}$",
+"$\\angle F=70^\\circ$",
+"$\\overline{EF}=15\\,\\text{cm}$",
+"$\\angle D=70^\\circ$",
+"$\\triangle ABC$ 와 $\\triangle DEF$ 의 둘레의 길이의 비는 $9:25$ 이다."
+],
+"answer": "③",
+"solution": "$\\overline{BC}:\\overline{EF}=3:5$ 이므로 $9:\\overline{EF}=3:5$ 이고, $\\overline{EF}=15\\,\\text{cm}$ 이다. 나머지를 확인하면 $\\overline{DE}=10\\,\\text{cm}$, $\\angle F=\\angle C=60^\\circ$, $\\angle D=\\angle A=50^\\circ$ 이고, 둘레의 길이의 비는 $3:5$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d8e2fa5b9a",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기> 중 항상 서로 닮은 도형인 것을 모두 고른 것은?\n\n<보기>\nㄱ. 두 부채꼴\nㄴ. 중심각의 크기가 같은 두 부채꼴\nㄷ. 두 정육각형\nㄹ. 두 원뿔\nㅁ. 두 직각삼각형\nㅂ. 두 반원",
+"choices": [
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄴ, ㄷ, ㅂ",
+"ㄱ, ㄴ, ㄷ, ㅂ",
+"ㄷ, ㄹ, ㅂ"
+],
+"answer": "③",
+"solution": "중심각의 크기가 같은 두 부채꼴, 변의 수가 같은 두 정다각형인 두 정육각형, 두 반원은 항상 닮은 도형이다. 두 부채꼴은 중심각이 다를 수 있다. 두 원뿔은 높이와 밑면의 반지름의 비가 다를 수 있고, 두 직각삼각형은 예각의 크기가 다를 수 있다. 따라서 답은 ㄴ, ㄷ, ㅂ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-711f8d15fc",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "사각형 $ABCD$ ∽ 사각형 $EFGH$ 이고 닮음비는 $4:3$ 이다. 다음 <보기> 중 옳은 것을 모두 고른 것은?\n\n<보기>\nㄱ. $\\overline{AB}:\\overline{EF}=4:3$\nㄴ. $\\angle C:\\angle G=4:3$\nㄷ. $\\overline{CD}=8\\,\\text{cm}$ 이면 $\\overline{GH}=6\\,\\text{cm}$ 이다.\nㄹ. $\\overline{AB}:\\overline{BC}=\\overline{EF}:\\overline{FG}$\nㅁ. 두 사각형의 둘레의 길이의 비는 $16:9$ 이다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "ㄱ은 대응변의 길이의 비이므로 옳다. ㄷ은 $8:\\overline{GH}=4:3$ 에서 $\\overline{GH}=6\\,\\text{cm}$ 이므로 옳다. ㄹ은 대응변의 길이의 비가 일정하므로 한 도형 안의 두 변의 길이의 비도 같아서 옳다. 대응각의 크기는 같으므로 ㄴ은 틀리고, 둘레의 길이의 비는 $4:3$ 이므로 ㅁ도 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2205a22dd0",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\triangle ABC$ ∽ $\\triangle FDE$ 이고 $\\triangle ABC$ 와 $\\triangle FDE$ 의 닮음비는 $2:3$ 이다. $\\overline{AB}=8\\,\\text{cm}$, $\\overline{BC}=10\\,\\text{cm}$, $\\overline{CA}=12\\,\\text{cm}$, $\\angle A=40^\\circ$, $\\angle B=75^\\circ$ 일 때, 다음 중 옳은 것은?",
+"choices": [
+"$\\overline{DE}=12\\,\\text{cm}$",
+"$\\overline{EF}=15\\,\\text{cm}$",
+"$\\angle E=75^\\circ$",
+"$\\angle D=75^\\circ$",
+"$\\overline{FD}:\\overline{DE}=3:2$"
+],
+"answer": "④",
+"solution": "꼭짓점은 $A\\leftrightarrow F$, $B\\leftrightarrow D$, $C\\leftrightarrow E$ 로 대응한다. 따라서 $\\angle D=\\angle B=75^\\circ$, $\\angle E=\\angle C=65^\\circ$ 이다. 변의 길이는 $\\overline{FD}=12\\,\\text{cm}$, $\\overline{DE}=15\\,\\text{cm}$, $\\overline{EF}=18\\,\\text{cm}$ 이다. 그러므로 $\\overline{FD}:\\overline{DE}=4:5$ 이고, 옳은 것은 ④뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-fc47a3bba4",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 <보기> 중 옳은 것의 개수를 구하시오.\n\n<보기>\nㄱ. 합동인 두 도형은 서로 닮은 도형이다.\nㄴ. 서로 닮은 두 도형은 항상 합동이다.\nㄷ. 둘레의 길이가 같은 두 정오각형은 합동이다.\nㄹ. 넓이가 같은 두 직사각형은 서로 닮은 도형이다.\nㅁ. 한 내각의 크기가 $50^\\circ$ 인 두 마름모는 서로 닮은 도형이다.\nㅂ. 한 내각의 크기가 $50^\\circ$ 인 두 이등변삼각형은 서로 닮은 도형이다.",
+"selfGrade": true,
+"answer": "3",
+"solution": "ㄱ은 닮음비가 $1:1$ 인 경우이므로 옳다. ㄷ에서 두 정오각형은 항상 닮았고 둘레가 같으면 닮음비가 $1:1$ 이므로 합동이다. ㅁ에서 두 마름모의 내각은 모두 $50^\\circ, 130^\\circ, 50^\\circ, 130^\\circ$ 이고 네 변의 길이가 각각 같으므로 닮은 도형이다. ㄴ, ㄹ은 반례가 있다. ㅂ은 $50^\\circ, 50^\\circ, 80^\\circ$ 인 삼각형과 $50^\\circ, 65^\\circ, 65^\\circ$ 인 삼각형이 모두 가능하므로 틀리다. 따라서 옳은 것은 ㄱ, ㄷ, ㅁ의 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5ff230a704",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "가로의 길이가 $12\\,\\text{cm}$, 세로의 길이가 $8\\,\\text{cm}$ 인 직사각형이 있다. 한 변의 길이가 $6\\,\\text{cm}$ 인 직사각형이 이 직사각형과 서로 닮은 도형일 때, 이 직사각형의 다른 한 변의 길이가 될 수 있는 값을 모두 더하면 몇 cm인지 구하시오.",
+"selfGrade": true,
+"answer": "13",
+"solution": "처음 직사각형의 이웃한 두 변의 길이의 비는 $12:8=3:2$ 이다. 다른 한 변의 길이를 $x\\,\\text{cm}$ 라 하자. 길이 $6\\,\\text{cm}$ 인 변이 긴 변에 대응하면 $3:2=6:x$ 이므로 $x=4$ 이다. 짧은 변에 대응하면 $3:2=x:6$ 이므로 $x=9$ 이다. 따라서 가능한 값의 합은 $4+9=13\\,(\\text{cm})$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-c318c5adfc",
+"typeId": "exam-m22-u2m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\triangle ABC$ ∽ $\\triangle EFD$ 이고 $\\overline{AB}=6\\,\\text{cm}$, $\\overline{BC}=8\\,\\text{cm}$, $\\overline{CA}=10\\,\\text{cm}$ 이다. $\\triangle EFD$ 의 둘레의 길이가 $36\\,\\text{cm}$ 일 때, $\\overline{FD}$ 의 길이는 몇 cm인지 구하시오.",
+"selfGrade": true,
+"answer": "12",
+"solution": "$\\triangle ABC$ 의 둘레의 길이는 $6+8+10=24\\,(\\text{cm})$ 이다. 둘레의 길이의 비는 닮음비와 같으므로 닮음비는 $24:36=2:3$ 이다. 꼭짓점의 대응 순서에 따라 $\\overline{BC}$ 에 대응하는 변은 $\\overline{FD}$ 이다. 따라서 $8:\\overline{FD}=2:3$ 이고, $\\overline{FD}=12\\,\\text{cm}$ 이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a58f36cdc8",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "객관식",
+"diff": 2,
+"body": "점 $I$는 $\\triangle ABC$의 내심이다. $\\angle A = 52^\\circ$일 때, $\\angle BIC$의 크기는?",
+"choices": [
+"$112^\\circ$",
+"$114^\\circ$",
+"$116^\\circ$",
+"$118^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③",
+"solution": "내심 $I$에서 $\\angle IBC=\\dfrac{\\angle B}{2}$, $\\angle ICB=\\dfrac{\\angle C}{2}$이므로 $\\angle BIC=180^\\circ-\\dfrac{\\angle B+\\angle C}{2}=90^\\circ+\\dfrac{\\angle A}{2}$이다. 따라서 $\\angle BIC=90^\\circ+\\dfrac{52^\\circ}{2}=116^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
+},
+{
+"id": "fill-1c723d6f61",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\triangle ABC$의 외심을 $O$라 하자. 점 $O$에서 세 꼭짓점에 선분을 그었더니 $\\angle OAB = 28^\\circ$, $\\angle OCB = 35^\\circ$가 되었다. 이때 $\\angle BAC$의 크기는?",
+"choices": [
+"$50^\\circ$",
+"$53^\\circ$",
+"$55^\\circ$",
+"$57^\\circ$",
+"$60^\\circ$"
+],
+"answer": "③",
+"solution": "외심은 세 꼭짓점에서 거리가 같으므로 $\\overline{OA}=\\overline{OB}=\\overline{OC}$이고, 세 삼각형 $OAB,\\ OBC,\\ OCA$는 모두 이등변삼각형이다. $\\angle OAB=\\angle OBA=28^\\circ$, $\\angle OCB=\\angle OBC=35^\\circ$이고, $\\angle OAC=\\angle OCA=c$라 하면 세 밑각의 합은 $28^\\circ+35^\\circ+c=90^\\circ$이므로 $c=27^\\circ$이다. 따라서 $\\angle BAC=\\angle OAB+\\angle OAC=28^\\circ+27^\\circ=55^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
+},
+{
+"id": "fill-d208345953",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\angle A = 90^\\circ$인 직각삼각형 $ABC$에서 점 $O$는 외심, 점 $I$는 내심이다. $\\overline{AB} = 12\\,\\mathrm{cm}$, $\\overline{AC} = 16\\,\\mathrm{cm}$, $\\overline{BC} = 20\\,\\mathrm{cm}$일 때, $\\triangle ABC$의 외접원의 넓이와 내접원의 넓이의 차를 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "$84\\pi\\,\\mathrm{cm^2}$",
+"solution": "직각삼각형의 외심은 빗변의 중점이므로 외접원의 반지름 $R=\\dfrac{1}{2}\\overline{BC}=10\\,\\mathrm{cm}$이다. 내접원의 반지름은 $r=\\dfrac{\\overline{AB}+\\overline{AC}-\\overline{BC}}{2}=\\dfrac{12+16-20}{2}=4\\,\\mathrm{cm}$이다. 따라서 넓이의 차는 $\\pi R^2-\\pi r^2=\\pi(100-16)=84\\pi\\,\\mathrm{cm^2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
+},
+{
+"id": "fill-166fe4c66d",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "객관식",
+"diff": 4,
+"body": "$\\overline{AB}=\\overline{AC}$인 이등변삼각형 $ABC$의 외심을 $O$, 내심을 $I$라 하자. $\\angle BOC = 64^\\circ$일 때, $\\angle OBI$의 크기는?",
+"choices": [
+"$18^\\circ$",
+"$19^\\circ$",
+"$20^\\circ$",
+"$21^\\circ$",
+"$22^\\circ$"
+],
+"answer": "④",
+"solution": "$\\angle BOC=2\\angle A$이므로 $\\angle A=32^\\circ$이고, $\\angle ABC=\\dfrac{180^\\circ-32^\\circ}{2}=74^\\circ$이다. 삼각형 $OBC$는 $\\overline{OB}=\\overline{OC}$인 이등변삼각형이므로 $\\angle OBC=\\dfrac{180^\\circ-64^\\circ}{2}=58^\\circ$이고, 내심이므로 $\\angle IBC=\\dfrac{74^\\circ}{2}=37^\\circ$이다. 따라서 $\\angle OBI=\\angle OBC-\\angle IBC=58^\\circ-37^\\circ=21^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
+},
+{
+"id": "fill-7041118779",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "객관식",
+"diff": 5,
+"body": "$\\overline{AB}=\\overline{AC}$이고 $\\angle A = 80^\\circ$인 이등변삼각형 $ABC$의 외심을 $O$, 내심을 $I$라 하자. 이때 $\\angle OBI$의 크기는?",
+"choices": [
+"$10^\\circ$",
+"$12^\\circ$",
+"$15^\\circ$",
+"$18^\\circ$",
+"$20^\\circ$"
+],
+"answer": "③",
+"solution": "$\\angle ABC=\\angle ACB=\\dfrac{180^\\circ-80^\\circ}{2}=50^\\circ$이고, $\\angle BOC=2\\angle A=160^\\circ$이므로 삼각형 $OBC$에서 $\\angle OBC=\\dfrac{180^\\circ-160^\\circ}{2}=10^\\circ$이다. 내심이므로 $\\angle IBC=\\dfrac{50^\\circ}{2}=25^\\circ$이다. $\\angle A$가 커서 $\\angle OBC<\\angle IBC$이므로 반직선 $BO$가 반직선 $BI$보다 변 $BC$에 더 가깝다. 따라서 $\\angle OBI=\\angle IBC-\\angle OBC=25^\\circ-10^\\circ=15^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
+},
+{
+"id": "fill-efca224ebb",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\angle C = 90^\\circ$인 직각삼각형 $ABC$에서 점 $I$는 내심이다. $\\overline{AC} = 15\\,\\mathrm{cm}$, $\\overline{BC} = 20\\,\\mathrm{cm}$, $\\overline{AB} = 25\\,\\mathrm{cm}$이고, 내접원이 빗변 $AB$와 접하는 점을 $P$라 할 때, $\\overline{AP}$의 길이를 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "$10\\,\\mathrm{cm}$",
+"solution": "내접원이 세 변과 접하는 점에서 한 꼭짓점까지 그은 두 접선의 길이는 같다. 꼭짓점 $A$에서 그은 접선의 길이를 $x$, $B$에서는 $y$, $C$에서는 $z$라 하면 $x+y=25$, $y+z=20$, $z+x=15$이다. 세 식을 더하면 $2(x+y+z)=60$이므로 $x+y+z=30$이고, $x=(x+y+z)-(y+z)=30-20=10$이다. 따라서 $\\overline{AP}=x=10\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
+},
+{
+"id": "fill-68f7b40471",
+"typeId": "exam-m22-u0m1s2t2",
+"kind": "객관식",
+"diff": 5,
+"body": "$\\triangle ABC$의 외심을 $O$, 내심을 $I$라 하자. $\\angle BOC$와 $\\angle BIC$의 크기의 비가 $2 : 3$일 때, $\\angle A$의 크기는?",
+"choices": [
+"$30^\\circ$",
+"$32^\\circ$",
+"$36^\\circ$",
+"$40^\\circ$",
+"$45^\\circ$"
+],
+"answer": "③",
+"solution": "외심에서 $\\angle BOC=2\\angle A$, 내심에서 $\\angle BIC=90^\\circ+\\dfrac{\\angle A}{2}$이다. $\\angle A=x$라 하면 $2x : \\left(90^\\circ+\\dfrac{x}{2}\\right)=2:3$이므로 $3\\cdot 2x=2\\left(90^\\circ+\\dfrac{x}{2}\\right)$, 즉 $6x=180^\\circ+x$에서 $5x=180^\\circ$이다. 따라서 $\\angle A=36^\\circ$이다. (확인: $\\angle BOC=72^\\circ$, $\\angle BIC=108^\\circ$로 비가 $2:3$)",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u0m1s2t2",
+"custom": true
 }
 ]

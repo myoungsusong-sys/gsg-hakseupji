@@ -1808,5 +1808,387 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-ca3038bc29",
+"typeId": "eng-m1-b03-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nHi, everyone! I'm Harin. I am an active person. I exercise a lot. I love running. I often run in the park, and I enjoy the fresh air there. I use a running app. It records my speed, time, and steps. It is very helpful.\n\nHarin is an (A)__________ person who loves running, and she uses a running app to (B)__________ her speed, time, and steps.",
+"choices": [
+"(A) active – (B) record",
+"(A) active – (B) hide",
+"(A) lazy – (B) record",
+"(A) fresh – (B) count",
+"(A) helpful – (B) record"
+],
+"answer": "①",
+"solution": "하린은 운동을 많이 하는 '활동적인(active)' 사람이라고 스스로 소개하므로 (A)에는 active가 알맞다. 러닝 앱이 속도·시간·걸음 수를 '기록한다(records)'고 했으므로 (B)에는 record가 알맞다. 따라서 ①이 정답이다. lazy(게으른), hide(숨기다) 등은 본문 내용과 반대이거나 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-26bd6647ec",
+"typeId": "eng-m1-b03-u0m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 제목으로 가장 알맞은 것은?\n\nHello! My name is Mike. I'm very interested in fashion. I take pictures of my clothes. Then, I post them on social media. These pictures are my fashion diary. I have many followers. They love my posts, and they leave nice comments, too.",
+"choices": [
+"The Joy of Buying New Clothes",
+"Mike's Fashion Lifelogging",
+"How to Get Many Followers",
+"The Dangers of Social Media",
+"Tips for Taking Good Pictures"
+],
+"answer": "②",
+"solution": "마이크는 패션에 관심이 많아 자신의 옷 사진을 찍어 SNS에 올려 '패션 일기(fashion diary)'로 삼는다고 했다. 이는 일상을 기록하는 라이프로깅의 한 예이므로 제목으로는 ②가 가장 알맞다. ③·⑤는 글의 세부 내용일 뿐 전체를 포괄하지 못하고, ①·④는 본문에 없는 내용이라 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-075516a8ef",
+"typeId": "eng-m1-b03-u0m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 Harin, Mike, Elena 세 사람이 쓴 글의 일부이다. 세 글에 공통으로 담긴 주제로 가장 알맞은 것은?\n\n[Harin] I use a running app. It records my speed, time, and steps.\n[Mike] I take pictures of my clothes and post them on social media. These pictures are my fashion diary.\n[Elena] I mark good donut shops on my map app. Then, I visit them again with my friends.",
+"choices": [
+"ways to make new friends online",
+"recording daily life as a hobby (lifelogging)",
+"the importance of daily exercise",
+"problems of using smartphones too much",
+"how to become famous on social media"
+],
+"answer": "②",
+"solution": "하린은 앱으로 달리기 기록을, 마이크는 사진으로 패션 일기를, 엘레나는 지도 앱으로 도넛 가게를 기록한다. 세 사람 모두 자신의 일상을 디지털 도구로 '기록'하는 라이프로깅을 하고 있으므로 공통 주제는 ②이다. 운동·친구·유명세 등은 한 사람에게만 해당하는 세부 내용이라 전체를 포괄하지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m3s0t0",
+"custom": true
+},
+{
+"id": "fill-690a342a7f",
+"typeId": "eng-m1-b03-u1m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 밑줄 친 우리말과 뜻이 같도록 괄호 안의 말을 알맞게 배열하시오.\n\nToday is Cross Country Race Day. It's a big sport event at our school. We run 4 kilometers in the woods. The course has small hills and lots of trees. It is a hard race, but we can finish it. Now, 우리는 출발선에서 기다리고 있습니다!\n\n( waiting / we / at the starting line / are )\n\n→ ____________________________________________",
+"selfGrade": true,
+"answer": "We are waiting at the starting line",
+"solution": "'~하고 있다'는 현재진행형 「be동사 + 동사원형-ing」로 나타냅니다. 주어 We 뒤에 are waiting을 쓰고, 장소를 나타내는 at the starting line을 마지막에 둡니다. 따라서 We are waiting at the starting line이 됩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-5275119472",
+"typeId": "eng-m1-b03-u1m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 대화를 읽고, 대화의 내용과 일치하도록 요약문의 빈칸 (1)~(4)를 완성하시오. (단, 각 빈칸의 단어 수를 지킬 것)\n\nG: Where is Peter?\nB: He is in the school garden with Bella.\nG: What is he doing there?\nB: He is flying a drone. He's good at it.\nG: Is Bella doing it, too?\nB: No, she is controlling a robot.\nG: Is she good at it?\nB: No, she's not.\n\n<요약문>\nPeter and Bella are in the school garden. Peter (1)__________ __________ a drone, and he (2)__________ __________ __________ flying it. Bella (3)__________ __________ a robot, but she (4)__________ good at controlling it.\n\n※ (1) 2단어 (2) 3단어 (3) 2단어 (4) 1단어(축약형)",
+"selfGrade": true,
+"answer": "(1) is flying (2) is good at (3) is controlling (4) isn't",
+"solution": "Peter와 Bella가 지금 하고 있는 일은 현재진행형 「is + 동사원형-ing」로 써서 (1) is flying, (3) is controlling이 됩니다. '~을 잘하다'는 be good at이므로 (2)는 is good at입니다. Bella는 로봇 조종을 잘하지 못하는데, be good at의 부정은 be동사 뒤에 not을 붙이므로 doesn't가 아니라 isn't를 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d84967375b",
+"typeId": "eng-m1-b03-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 틀린 부분을 3개 찾아 바르게 고쳐 쓰시오.\n\nNational Language Month, The Philippines\nHow many languages does you have in your country? We have over 100 language. August is National Language Month. There are many events at schools. We have speech contests. We read poems and acting in our languages. I'm proud of our languages!\n\n(1) __________ → __________\n(2) __________ → __________\n(3) __________ → __________",
+"selfGrade": true,
+"answer": "does → do, language → languages, acting → act",
+"solution": "주어 you에 맞는 조동사는 do이므로 does를 do로 고쳐야 합니다. over 100 뒤에는 셀 수 있는 명사의 복수형이 와야 하므로 language를 languages로 고칩니다. and는 앞의 read와 대등하게 연결하므로 주어 We에 맞는 동사 act를 써야 합니다. There are many events는 주어 events가 복수이므로 맞는 문장입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2583416959",
+"typeId": "eng-m1-b03-u1m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 바탕으로, 우리말과 뜻이 같도록 <조건>에 맞게 영작하시오.\n\nDigital Writing Contest, Korea\nWe have a digital writing contest today. We write stories and take pictures with our smartphones. Then, we post our work on the school's online board. The topic is our school campus in the spring. I will write about the school garden and post pictures of the beautiful flowers. It will be fun!\n\n(1) 우리는 스마트폰으로 사진을 찍고 있다.\n(2) 나는 학교 정원에 대해 쓸 것이다.\n(3) 우리는 학교 온라인 게시판에 작품을 올릴 수 있다.\n\n<조건>\n• (1)은 현재진행형을 사용하고 축약형을 쓰지 말 것 (7단어)\n• (2)는 조동사 will을 사용하고 축약형을 쓰지 말 것 (7단어)\n• (3)은 조동사 can을 사용할 것 (10단어, school's는 1단어로 셈)\n• 본문에 나온 표현을 활용할 것\n\n(1) ____________________________________________\n(2) ____________________________________________\n(3) ____________________________________________",
+"selfGrade": true,
+"answer": "(1) We are taking pictures with our smartphones. (2) I will write about the school garden. (3) We can post our work on the school's online board.",
+"solution": "(1) 현재진행형 are taking을 쓰고, '스마트폰으로'라는 도구는 전치사 with로 나타냅니다(7단어). (2) will 뒤에는 동사원형 write를 쓰고, '~에 대해'는 about으로 나타냅니다(7단어). (3) can 뒤에 동사원형 post를 쓰고, 본문처럼 work는 셀 수 없는 명사이므로 works가 아닌 work로 씁니다. '게시판에'는 전치사 on을 써서 on the school's online board로 나타냅니다(10단어).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-09c27c417d",
+"typeId": "eng-m1-b03-u3m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 부분의 우리말 뜻이 어색한 것은?\n\n① We get special curry powder from my grandmother.  (가루)\n② We always do the dishes after dinner.  (설거지를 하다)\n③ We cheer for our team loudly.  (큰 소리로)\n④ It has the real taste of India.  (냄새)\n⑤ We keep good memories for a long time.  (간직하다)",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "taste는 '맛'이라는 뜻이므로 '냄새'는 어색하다. the real taste of India는 '인도의 진짜 맛'을 의미한다. 나머지 powder(가루), do the dishes(설거지를 하다), loudly(큰 소리로), keep(간직하다)은 모두 알맞다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c41be05d47",
+"typeId": "eng-m1-b03-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 단어로 알맞은 것은?\n\n• My father's favorite __________ is Indian chicken curry.\n• Can you wash the __________ after we finish dinner?",
+"choices": [
+"plate",
+"dish",
+"bowl",
+"meal",
+"food"
+],
+"answer": "②",
+"solution": "dish는 '요리'라는 뜻과 '접시'라는 뜻을 모두 가진다. 첫 문장에서는 '가장 좋아하는 요리', 둘째 문장에서는 '접시(설거지)'의 의미로 쓰여 두 빈칸에 공통으로 들어갈 수 있다. plate는 '접시'만, bowl은 '그릇', meal·food는 '식사·음식'의 뜻이라 둘째 문장(wash)에 맞지 않는다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5ce8d947b4",
+"typeId": "eng-m1-b03-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 부분의 우리말 뜻이 어색한 것은?\n\n① It was an exciting day for all of us.  (신나는)\n② When we visited the park for the first time, I was four.  (처음으로)\n③ Last year, I was the loser in the game.  (승자)\n④ We wear our team's uniform at the stadium.  (유니폼을 입다)\n⑤ We like to take pictures at the gates.  (출입구에서)",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "③",
+"solution": "loser는 '패자, 진 사람'이라는 뜻이므로 '승자'는 어색하다. 작년에 경기에서 져서 설거지를 했다는 내용과도 일치한다. 나머지 exciting(신나는), for the first time(처음으로), wear a uniform(유니폼을 입다), at the gates(출입구에서)는 모두 알맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-f9eb87bcd2",
+"typeId": "eng-m1-b03-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nApple: What a nice day! I’m here because I have many spots on my skin. People think that I’m tasteless. They are wrong! My spots are not harmful. I taste great.\nKiwi: I’m round but very small. Farmers don’t want to sell me because of my size. Who cares about size? I’m sweet and delicious.\nCarrot: Do you see that I have three legs? I look funny because my roots are like a fork. I just tried to avoid stones in the ground and grew three legs. I’m fresh and make healthy juice.\n\n<요약문>\nApple, Kiwi, and Carrot don’t look perfect because of (A)__________, a small size, and strange roots. But they all have (B)__________ points, such as a great taste and freshness.\n\n   (A)        (B)",
+"choices": [
+"spots …… weak",
+"spots …… good",
+"stones …… good",
+"legs …… bad",
+"seeds …… harmful"
+],
+"answer": "②",
+"solution": "Apple은 껍질의 반점(spots), Kiwi는 작은 크기, Carrot은 포크 같은 뿌리 때문에 겉모양이 완벽하지 않습니다. 그래도 셋 모두 맛이 좋거나 신선하다는 좋은(good) 점을 내세웁니다. ③의 stones는 당근이 피하려던 대상일 뿐 겉모양이 이상한 원인으로 든 말이 아니라서 함정입니다. 그러므로 정답은 ② spots – good입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c3cbec723c",
+"typeId": "eng-m1-b03-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nApple: I’m glad to see you all! I want to meet more fruits and vegetables like us. Do you know any?\nKiwi: How about eggplants? Some eggplants are bent too much. Supermarkets don’t sell them because people like straight eggplants.\nCarrot: There are funny-looking potatoes, too. Their shapes are unusual, and their sizes are all different. People believe that they are useless.\nKiwi: I know, but I heard that funny-looking potatoes make fantastic chips.\nCarrot: Is it true? How wonderful! I hope that people learn more about us.\nApple: I hope so, too. Look, friends! People are coming. Let’s welcome them.",
+"choices": [
+"Supermarkets should sell only straight eggplants.",
+"Funny-looking potatoes are more delicious than normal ones.",
+"Fruits and vegetables with unusual looks can still be useful.",
+"People are right to think that funny-looking potatoes are useless.",
+"Fruits and vegetables want to meet more people at the market."
+],
+"answer": "③",
+"solution": "구부러진 가지와 모양이 특이한 감자도 쓸모가 있다는 것(감자는 훌륭한 감자칩이 된다)이 글의 핵심이므로 정답은 ③입니다. ②는 보통 감자보다 더 맛있다는 비교가 본문에 없어 틀립니다. ④는 본문 내용과 반대이고, ⑤는 마지막 부분만 따로 떼어 낸 함정 선지입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-31eb71c778",
+"typeId": "eng-m1-b03-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nCarrot: Do you see that I have three legs? I look funny because my roots are like a fork. I just tried to avoid stones in the ground and grew three legs. I’m fresh and make healthy juice.\nApple: I’m glad to see you all! I want to meet more fruits and vegetables like us. Do you know any?\nKiwi: How about eggplants? Some eggplants are bent too much. Supermarkets don’t sell them because people like straight eggplants.\nCarrot: There are funny-looking potatoes, too. Their shapes are unusual, and their sizes are all different. People believe that they are useless.\nKiwi: I know, but I heard that funny-looking potatoes make fantastic chips.",
+"choices": [
+"how carrots grow three legs in the ground",
+"the reasons people like straight eggplants",
+"the health benefits of drinking fresh juice",
+"the best way to make fantastic potato chips",
+"the hidden value of produce with unusual looks"
+],
+"answer": "⑤",
+"solution": "세 다리 당근, 구부러진 가지, 모양이 특이한 감자처럼 겉모양이 이상한 농산물에도 숨은 가치가 있다는 것이 글 전체의 주제입니다. ①과 ②는 글의 일부 내용만 다루고, ③과 ④는 본문의 세부 내용을 지나치게 넓히거나 바꾼 것입니다. 따라서 정답은 ⑤입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9fd6a83b05",
+"typeId": "eng-m1-b03-u6m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 아래와 같이 요약하려고 한다. 빈칸 (A), (B), (C)에 들어갈 알맞은 말을 본문에서 찾아 각각 한 단어로 쓰시오. (단, 주어진 첫 글자로 시작할 것, 필요하면 형태를 바꿀 것)\n\nApple: I’m glad to see you all! I want to meet more fruits and vegetables like us. Do you know any?\nKiwi: How about eggplants? Some eggplants are bent too much. Supermarkets don’t sell them because people like straight eggplants.\nCarrot: There are funny-looking potatoes, too. Their shapes are unusual, and their sizes are all different. People believe that they are useless.\nKiwi: I know, but I heard that funny-looking potatoes make fantastic chips.\nCarrot: Is it true? How wonderful! I hope that people learn more about us.\nApple: I hope so, too. Look, friends! People are coming. Let’s welcome them.\n\n<요약문>\nKiwi and Carrot talk about other friends with (A) f__________ looks, such as bent eggplants and unusual potatoes. People think that those potatoes are (B) u__________, but they actually make fantastic chips. The friends hope that people (C) l__________ more about them.",
+"selfGrade": true,
+"answer": "(A) funny (B) useless (C) learn",
+"solution": "(A)에는 funny-looking에서 온 funny가 들어가 '이상하게 생긴 겉모양'을 나타냅니다. (B)는 People believe that they are useless.에서 useless를 찾아 씁니다. (C)는 I hope that people learn more about us.에서 learn이 들어가며, 주어가 people이므로 형태를 바꿀 필요가 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b38238b667",
+"typeId": "eng-m1-b03-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목과 요지가 모두 바르게 짝지어진 것은?\n\nThis is a special market for funny-looking fruits and vegetables. They greet each other and start to talk.\nApple: What a nice day! I’m here because I have many spots on my skin. People think that I’m tasteless. They are wrong! My spots are not harmful. I taste great.\nKiwi: I’m round but very small. Farmers don’t want to sell me because of my size. Who cares about size? I’m sweet and delicious.\nCarrot: Do you see that I have three legs? I look funny because my roots are like a fork. I just tried to avoid stones in the ground and grew three legs. I’m fresh and make healthy juice.\nApple: I’m glad to see you all! I want to meet more fruits and vegetables like us. Do you know any?\nKiwi: How about eggplants? Some eggplants are bent too much. Supermarkets don’t sell them because people like straight eggplants.\nCarrot: There are funny-looking potatoes, too. Their shapes are unusual, and their sizes are all different. People believe that they are useless.\nKiwi: I know, but I heard that funny-looking potatoes make fantastic chips.\nCarrot: Is it true? How wonderful! I hope that people learn more about us.\nApple: I hope so, too. Look, friends! People are coming. Let’s welcome them.\n\n   [제목]                    [요지]",
+"choices": [
+"Small but Sweet …… Small fruits taste better than big ones.",
+"Perfect Looks, Perfect Taste …… Good-looking produce is always fresher.",
+"Ugly Produce, Great Value …… Funny-looking produce should be sold at a lower price.",
+"Don’t Judge Produce by Its Looks …… Fruits and vegetables with funny looks can still be tasty and useful.",
+"Let’s Make Potato Chips …… Fruits and vegetables with funny looks can still be useful."
+],
+"answer": "④",
+"solution": "이 글은 반점이 있는 사과, 작은 키위, 세 다리 당근, 구부러진 가지와 특이한 감자를 통해 겉모양만 보고 농산물을 판단하면 안 된다는 것을 말합니다. ③은 제목은 맞지만 '더 싸게 팔아야 한다'는 요지가 본문에 없습니다. ⑤는 요지는 맞지만 제목이 감자칩이라는 세부 내용에 치우쳐 있습니다. 제목과 요지가 모두 맞는 것은 ④뿐입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a5c2a07c29",
+"typeId": "eng-m1-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nDohun's Story\nMy friend, Jian, (A)[send / sends] me too many texts. He even texts in the middle of the night. When I don't reply, I want (B)[ignore / to ignore] him, but he is my good friend. These days I enjoy (C)[chat / chatting] with him less online.",
+"choices": [
+"(A) send - (B) to ignore - (C) chatting",
+"(A) sends - (B) ignore - (C) chatting",
+"(A) sends - (B) to ignore - (C) chatting",
+"(A) send - (B) to ignore - (C) chat",
+"(A) sends - (B) to ignore - (C) chat"
+],
+"answer": "③",
+"solution": "(A) 주어 My friend, Jian이 3인칭 단수이고 현재의 습관을 말하므로 sends가 맞다. (B) want는 to부정사를 목적어로 취하므로 to ignore가 옳다. (C) enjoy는 동명사를 목적어로 취하므로 chatting이 알맞다. 따라서 sends - to ignore - chatting인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-01bc1a68db",
+"typeId": "eng-m1-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 알맞지 않은 것을 모두 골라 바르게 짝지은 것은?\n\nⓐ My brother gave me his old phone.\nⓑ She showed her new photos to us.\nⓒ I finished to upload the video.\nⓓ We enjoy to chat with friends online.\nⓔ Mina told the funny story for us.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓓ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ give와 ⓑ show는 각각 4형식, 「to+사람」의 3형식으로 바르게 쓰였다. ⓒ finish는 동명사를 목적어로 취하므로 to upload가 아니라 uploading이어야 한다. ⓓ enjoy도 동명사를 취하므로 to chat이 아니라 chatting이어야 한다. ⓔ tell은 3형식에서 「to+사람」을 쓰므로 for us가 아니라 to us가 옳다. 따라서 틀린 것은 ⓒ, ⓓ, ⓔ인 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3f63014ad5",
+"typeId": "eng-m1-b03-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ의 어색한 부분을 바르게 고치지 못한 것은?\n\nWe like chatting and ⓐto post photos online. We also enjoy ⓑwatch videos. Please give ⓒadvice them. My friend sends ⓓtoo many texts for me. When I don't reply, he ⓔsent me angry emojis.",
+"choices": [
+"ⓐ: to post → posting",
+"ⓑ: watch → watching",
+"ⓒ: advice them → them advice",
+"ⓓ: too many texts for me → too many texts me",
+"ⓔ: sent → sends"
+],
+"answer": "④",
+"solution": "ⓐ chatting과 병렬이므로 posting으로, ⓑ enjoy의 목적어이므로 watching으로, ⓒ 「give+사람+사물」 어순이므로 them advice로, ⓔ 현재의 반복 행동이므로 sends로 고치는 것은 모두 옳다. ⓓ는 「send+사람+사물」 또는 「send+사물+to+사람」이어야 하므로 전치사만 빼서 too many texts me로 고치면 여전히 어법상 틀린 문장이 된다. 따라서 바르게 고치지 못한 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8effed7a0d",
+"typeId": "eng-m1-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 주어진 단어의 형태가 알맞게 연결된 것은?\n\nVashti wanted ⓐ(make) a better dot. She opened her watercolors and started to work. She was very happy with ⓑ(she). She used a bigger brush ⓒ(make) bigger dots.\n\nⓐ ________  ⓑ ________  ⓒ ________",
+"choices": [
+"to make - herself - to make",
+"making - herself - making",
+"to make - her - making",
+"making - she - to make",
+"to make - herself - making"
+],
+"answer": "①",
+"solution": "ⓐ는 'want + to부정사' 구문이므로 to make가 맞습니다. ⓑ는 주어 She와 목적어가 같으므로 재귀대명사 herself를 씁니다. ⓒ는 '~하기 위해'라는 목적을 나타내는 to부정사이므로 to make가 알맞습니다. 따라서 to make - herself - to make인 ①이 정답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dfc1919b76",
+"typeId": "eng-m1-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 틀린 것끼리 바르게 묶은 것은?\n\n\"I just can't draw,\" said Vashti. Her teacher ⓐsmiled and shook her head. \"Just ⓑmake a mark. It will take you somewhere.\" Vashti picked up a pen and ⓒpoked the paper. The next week, there ⓓwere a picture of her dot in a gold frame. \"I can make a better dot ⓔas that!\" She was very happy with ⓕherself. She used a bigger brush, and she even made a dot without ⓖpaint one.",
+"choices": [
+"ⓓ, ⓔ",
+"ⓓ, ⓖ",
+"ⓓ, ⓔ, ⓖ",
+"ⓐ, ⓔ, ⓕ",
+"ⓑ, ⓓ, ⓖ"
+],
+"answer": "③",
+"solution": "ⓓ는 유도부사 there 뒤의 주어 a picture가 단수이므로 were가 아니라 was여야 합니다. ⓔ는 비교급 better와 함께 쓰여 '~보다'를 나타내므로 as가 아니라 than이어야 합니다. ⓖ는 전치사 without 뒤이므로 동명사 painting이어야 합니다. ⓐ(과거 병렬), ⓑ(명령문 동사원형), ⓒ(과거), ⓕ(재귀대명사)는 모두 올바릅니다. 따라서 틀린 것은 ⓓ, ⓔ, ⓖ인 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6699beb575",
+"typeId": "eng-m1-b03-u7m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ의 어색한 부분을 바르게 고치지 못한 것은?\n\nA few weeks later, the school art show took place. Vashti saw a little boy. He was ⓐstand beside her. \"You're a great artist. I want ⓑpainting like you,\" he said. \"I'm sure you can. Trust ⓒyou,\" said Vashti. \"No, I can't even draw a straight line.\" Vashti smiled. She handed ⓓa piece of paper the boy. \"Show me.\" The boy's pencil shook while he drew a line. The line was not straight. Vashti looked at it carefully and ⓔsay, \"Please ... sign it.\"",
+"choices": [
+"ⓐ: stand → stands",
+"ⓑ: painting → to paint",
+"ⓒ: you → yourself",
+"ⓓ: a piece of paper the boy → the boy a piece of paper",
+"ⓔ: say → said"
+],
+"answer": "①",
+"solution": "ⓐ는 과거진행형 was 뒤이므로 stand는 현재분사 standing으로 고쳐야 하는데, ①은 stands로 잘못 고쳤습니다. ⓑ는 'want + to부정사'이므로 to paint, ⓒ는 주어와 목적어가 같아 yourself, ⓓ는 'hand + 간접목적어 + 직접목적어'의 4형식 어순, ⓔ는 과거시제 said로 모두 바르게 고쳐졌습니다. 따라서 바르게 고치지 못한 것은 ①입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8e83e59bf4",
+"typeId": "eng-m1-b03-u7m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓓ 중 어법상 틀린 것 두 개를 찾아, 기호를 쓰고 바르게 고쳐 쓰시오.\n\nShe was very happy with ⓐherself. \"I made lots of little dots. I guess I can make big ones, ⓑtoo.\" Vashti used a bigger brush and bigger paper ⓒmaking bigger dots. She even made a dot without ⓓto paint one.",
+"selfGrade": true,
+"answer": "ⓒ making → to make, ⓓ to paint → painting",
+"solution": "ⓒ는 '더 큰 점을 만들기 위해'라는 목적을 나타내므로 현재분사 making이 아니라 to부정사 to make여야 합니다. ⓓ는 전치사 without 뒤에는 동명사가 와야 하므로 to paint가 아니라 painting이어야 합니다. ⓐ는 주어와 목적어가 같은 재귀대명사, ⓑ는 긍정문의 '역시'를 뜻하는 too로 모두 올바릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u7m1s0t0",
+"custom": true
 }
 ]

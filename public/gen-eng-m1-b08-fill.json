@@ -3139,5 +3139,241 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b08-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-993342dfe4",
+"typeId": "eng-m1-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nNora from Ireland\nHi, I am Nora. I am the captain of the hurling club. Hurling is an Irish field sport. Players hit a small ball with their sticks. We have a match every month. Let's watch a video of my school's match. The girl with the red helmet is me. I am running fast after the ball. Hurling is very fun!",
+"choices": [
+"rules for an online class",
+"Nora's hurling club and its match",
+"how to make a hurling stick",
+"famous sports players in Ireland",
+"the history of Irish field sports"
+],
+"answer": "②",
+"solution": "Nora는 자신이 주장으로 있는 헐링 클럽을 소개하고, 매달 하는 경기 영상을 보여 주며 헐링이 재미있다고 말한다. 따라서 주제는 'Nora의 헐링 클럽과 그 경기'이다. 막대기로 공을 친다는 내용은 나오지만 막대기 만드는 법이나 헐링의 역사, 유명한 선수 이야기는 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0ca1c1420d",
+"typeId": "eng-m1-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nSuho is taking an online class with students from different countries. They are talking about their school sports clubs.\nSuho from Korea\nHi, I am Suho. I am a member of the climbing club. There is a nice climbing wall at my school. It has stones of different colors and sizes. Small stones are for good climbers. Look at this picture. I am holding onto the small green stones. My nickname is Spider-Man!\nNora from Ireland\nHi, I am Nora. I am the captain of the hurling club. Hurling is an Irish field sport. Players hit a small ball with their sticks. We have a match every month. Let's watch a video of my school's match. The girl with the red helmet is me. I am running fast after the ball. Hurling is very fun!\nLuca from the U.S.\nHi, I am Luca. I am a new member of the skateboarding club. We practice at a skate park with hip-hop music. This picture shows my first day of skateboarding. With my friends' help, I am standing on the board. Skateboarding is still hard, but I like it.\n\n<요약문>\nIn an online class, three students from different countries introduce their school (A)__________ clubs. To show their club activities, they share (B)__________.\n\n   (A)        (B)",
+"choices": [
+"sports - their game rules",
+"music - pictures and a video",
+"sports - only pictures",
+"sports - pictures and a video",
+"art - only videos"
+],
+"answer": "④",
+"solution": "세 학생은 모두 학교 운동부(sports clubs)를 소개하므로 (A)는 sports이다. Suho와 Luca는 사진(picture)을, Nora는 경기 영상(video)을 보여 주므로 (B)는 pictures and a video이다. ③은 Nora의 영상을 빠뜨렸고, 경기 규칙을 설명하는 글이 아니므로 ①도 틀렸다. Luca가 말한 hip-hop music은 연습할 때 틀어 두는 음악일 뿐 클럽 종류가 아니므로 ②는 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5aab9f5f75",
+"typeId": "eng-m1-b08-u1m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸 (A)~(C)에 들어갈 알맞은 말을 본문에서 찾아 쓰시오. (단, 각 빈칸에 한 단어씩 쓸 것)\n\nSuho from Korea\nHi, I am Suho. I am a member of the climbing club. There is a nice climbing wall at my school. It has stones of different colors and sizes. Small stones are for good climbers. Look at this picture. I am holding onto the small green stones. My nickname is Spider-Man!\nLuca from the U.S.\nHi, I am Luca. I am a new member of the skateboarding club. We practice at a skate park with hip-hop music. This picture shows my first day of skateboarding. With my friends' help, I am standing on the board. Skateboarding is still hard, but I like it.\n\n<요약문>\nSuho holds onto the (A)__________ stones on the climbing wall, so he is a good climber. Luca is a (B)__________ member of the skateboarding club. Skateboarding is still (C)__________ for him, but he likes it.",
+"selfGrade": true,
+"answer": "(A) small (B) new (C) hard",
+"solution": "'Small stones are for good climbers.'와 'I am holding onto the small green stones.'를 함께 보면 Suho가 작은 돌을 잡고 있는 실력 좋은 클라이머임을 알 수 있으므로 (A)는 small이다. Luca는 'a new member'라고 했으므로 (B)는 new이다. 'Skateboarding is still hard'에서 (C)는 hard이다. green만 쓰면 '실력 좋은 클라이머'라는 결론의 근거가 되지 않으므로 답이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6fbe9eae1d",
+"typeId": "eng-m1-b08-u1m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 가장 바르게 요약한 것은?\n\nNora from Ireland\nHi, I am Nora. I am the captain of the hurling club. Hurling is an Irish field sport. Players hit a small ball with their sticks. We have a match every month. Let's watch a video of my school's match. The girl with the red helmet is me. I am running fast after the ball. Hurling is very fun!\nLuca from the U.S.\nHi, I am Luca. I am a new member of the skateboarding club. We practice at a skate park with hip-hop music. This picture shows my first day of skateboarding. With my friends' help, I am standing on the board. Skateboarding is still hard, but I like it.",
+"choices": [
+"Nora is a new member of the hurling club, and Luca is the captain of the skateboarding club.",
+"Nora and Luca play the same field sport, and they have a match every month.",
+"Nora is the captain of the hurling club, and Luca enjoys skateboarding although it is still hard for him.",
+"Nora thinks hurling is hard, but Luca thinks skateboarding is easy and fun.",
+"Luca stands on the board without any help, and he practices at school with hip-hop music."
+],
+"answer": "③",
+"solution": "Nora는 헐링 클럽의 주장(captain)이고, Luca는 스케이트보드가 아직 어렵지만 좋아한다고 했으므로 ③이 두 사람의 글을 바르게 요약한다. ①은 두 사람의 역할(captain, new member)을 서로 바꿔 놓았고, ②에서 매달 경기를 하는 것은 Nora뿐이다. ④에서 Nora는 헐링이 재미있다고 했고 Luca는 스케이트보드가 어렵다고 했다. ⑤에서 Luca는 친구들의 도움을 받아 보드 위에 서 있으며, 연습 장소도 학교가 아니라 스케이트 공원이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u1m3s0t0",
+"custom": true
+},
+{
+"id": "fill-6fc44f5596",
+"typeId": "eng-m1-b08-u0m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Do you like badminton?\nB: Yes, I ____________.",
+"choices": [
+"am",
+"do",
+"does",
+"have",
+"is"
+],
+"answer": "②",
+"solution": "일반동사 like로 묻는 Do you ~? 의문문에는 do로 대답합니다. 주어가 I이므로 does가 아니라 do를 써야 합니다. 따라서 정답은 ② do입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d4758091c4",
+"typeId": "eng-m1-b08-u0m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 부분 중 어법상 어색한 것은?",
+"choices": [
+"Do you like ice cream?",
+"Does Mia has a cat?",
+"He plays soccer after school.",
+"Mia loves her cat very much.",
+"I don't like mint chocolate."
+],
+"answer": "②",
+"solution": "Does로 시작하는 의문문에서는 뒤의 동사를 반드시 동사원형으로 써야 합니다. 따라서 ②의 has는 have가 되어야 합니다(Does Mia have a cat?). 나머지 ①③④⑤는 어법상 올바르므로 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1e9f2ed755",
+"typeId": "eng-m1-b08-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장을 <조건>에 맞게 한 문장으로 바꾸어 쓰시오.\n\n<조건>\n• 제시된 어구를 포함하여 총 5단어로 쓸 것\n• 반드시 괄호 안의 단어 중 하나를 골라 비교급의 문장으로 영작할 것\n\nNamsan is 262m. Bukhansan is 836m.\n= Namsan ________________________________________.\n(high / low)",
+"selfGrade": true,
+"answer": "is lower than Bukhansan",
+"solution": "두 산의 높이를 비교하는 문장이다. 남산(262m)이 북한산(836m)보다 낮으므로 low의 비교급 lower를 써야 한다. 비교급 뒤에는 than을 붙이고 비교 대상 Bukhansan을 쓴다. 주어 Namsan을 포함해 'Namsan is lower than Bukhansan'으로 총 5단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-06e32d209f",
+"typeId": "eng-m1-b08-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 대화의 빈칸에 들어갈 말이 되도록 <보기>의 단어를 알맞게 배열하시오.\n\nA: Sora, ______________________________________________?\nB: Yes, I’m going to visit my grandparents in Busan.\nA: Oh, that sounds nice. What are you going to do there?\nB: I’m going to eat delicious food and swim at the beach.\n\n<보기> plans / the / for / have / holiday / you / any / do",
+"selfGrade": true,
+"answer": "Do you have any plans for the holiday",
+"solution": "B가 'Yes'로 답하고 계획을 말하므로 빈칸은 계획을 묻는 의문문이다. 'Do you have any plans for ~?'는 '~에 대한 계획이 있니?'라는 표현으로, Do you have any plans 뒤에 for the holiday를 붙인다. 'Do you have any plans for the holiday'가 완성된 질문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-086a49799b",
+"typeId": "eng-m1-b08-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 질문에 대한 알맞은 대답이 되도록 <조건>에 맞게 빈칸을 완성하시오.\n\nOur last stop was Dongmak Beach. I heard that this beach has one of the largest mud flats in the world. Luckily, we saw a wide mud flat that day. I took off my shoes and felt the mud. A few small crabs walked by my feet.\n\n<조건>\n• ‘비교급 + than’의 구문을 사용할 것\n• 괄호 안의 단어를 변형하여 쓸 것 (large)\n\nQ. How large is the mud flat at Dongmak Beach?\n→ It ______________________________ most other mud flats in the world.",
+"selfGrade": true,
+"answer": "is larger than",
+"solution": "본문에서 이 갯벌이 세계에서 가장 큰 갯벌 중 하나(one of the largest mud flats)라고 했으므로 다른 갯벌들보다 더 크다. 조건에 '비교급 + than'을 쓰라고 했으므로 large의 비교급 larger를 쓰고 than을 붙인다. 주어 It에 맞춰 be동사 is를 써서 'is larger than'이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0484489987",
+"typeId": "eng-m1-b08-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 대화의 밑줄 친 (A), (B)의 우리말을 주어진 단어 및 표현을 사용하여 알맞게 영작하시오. (필요시 변형 또는 추가할 것)\n\nA: I’m going to go to Gyeongju this weekend.\nB: That’s great! (A)너는 그곳에서 무엇을 볼 거니, Jenny?\nA: (B)나는 불국사를 방문하고 한복을 입어 볼 거야.\nB: Sounds fun! Take a lot of pictures there.\n\n(A) __________________________________________ (what, see, there)\n(B) __________________________________________ (going, visit, Bulguksa, try on, a hanbok, and)",
+"selfGrade": true,
+"answer": "(A) What are you going to see there (B) I’m going to visit Bulguksa and try on a hanbok",
+"solution": "(A)는 'be going to + 동사원형'의 의문문으로, 의문사 What을 문두에 두고 'are you going to see there'를 연결한다. (B)는 'I’m going to' 뒤에 동사원형 두 개를 and로 연결한다. '불국사를 방문하다'는 visit Bulguksa, '한복을 입어 보다'는 try on a hanbok이므로 'I’m going to visit Bulguksa and try on a hanbok'이 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1b37583e56",
+"typeId": "eng-m1-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nFrom October to December, millions of fruit bats fly to Zambia's Kasanka National Park. These bats come from all over Africa. Why do they travel to the park? They go there to eat wild fruit. They are big eaters. They eat more than their weight in a night.",
+"choices": [
+"why fruit bats are afraid of wild fruit",
+"the reason fruit bats travel to Kasanka National Park",
+"how fruit bats protect their young",
+"the different colors of African fruit bats",
+"the dangers that fruit bats face in forests"
+],
+"answer": "②",
+"solution": "글은 과일박쥐가 10월부터 12월까지 카산카 국립공원으로 날아오는 이유를 묻고, 야생 과일을 먹기 위해 이동한다고 설명한다. 따라서 '과일박쥐가 그 공원으로 이동하는 이유'가 주제이다. 색깔이나 위험, 새끼 보호 등은 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-96f0e8bf39",
+"typeId": "eng-m1-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 알맞은 것은?\n\nOn Christmas Island, red crabs live in forests, not in the water. However, when the rainy season begins in October, millions of red crabs march toward the ocean to lay eggs. During this period, they are all over the place, and the whole island turns red. People close some roads and build bridges to protect them.",
+"choices": [
+"how red crabs change their color for fun",
+"the reason red crabs choose to live in the ocean",
+"red crabs' march to the ocean to lay eggs",
+"the kinds of food that red crabs eat in forests",
+"why people on the island are afraid of red crabs"
+],
+"answer": "③",
+"solution": "숲에 살던 붉은게가 우기가 시작되면 알을 낳기 위해 바다로 이동한다는 내용이 중심이다. 따라서 '알을 낳기 위한 붉은게의 바다로의 이동'이 주제이다. ②는 본문과 반대(숲에 산다)이며 나머지는 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a3bae0754f",
+"typeId": "eng-m1-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 알맞은 것은?\n\nJellyfish Lake in Palau is home to golden jellyfish. Every day, they move across the lake and then swim back. Why do they travel every day? They follow the sun to get energy from it. When the sun rises in the morning, the jellyfish begin to swim toward the sun. In the afternoon, they travel back and wait for the next morning.",
+"choices": [
+"Golden Jellyfish That Hate Sunlight",
+"The Daily Sun-Following Trip of Golden Jellyfish",
+"How Golden Jellyfish Catch Other Fish",
+"The Most Dangerous Lake in Palau",
+"Golden Jellyfish and Their Deep-Sea Enemies"
+],
+"answer": "②",
+"solution": "황금해파리는 태양을 따라가 에너지를 얻기 위해 매일 호수를 가로질러 이동하고 돌아온다. 태양을 따라가는 매일의 이동이 핵심이므로 ②가 제목으로 알맞다. ①은 본문과 반대이고 나머지는 근거가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-97acbc9dcf",
+"typeId": "eng-m1-b08-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글 전체의 제목으로 가장 알맞은 것은?\n\nDo you know animals also leave their homes and travel? Many animals travel for different reasons. Let's find out more! From October to December, millions of fruit bats fly to Zambia's Kasanka National Park to eat wild fruit. On Christmas Island, when the rainy season begins, millions of red crabs march toward the ocean to lay eggs. In Palau, golden jellyfish move across the lake every day to follow the sun and get energy from it.",
+"choices": [
+"Why Animals Never Leave Their Safe Homes",
+"The Hidden Dangers of Three Rare Animals",
+"Journeys with a Purpose: Why Animals Travel",
+"How Humans Protect Wild Animals Worldwide",
+"The Longest Animal Trips Ever Recorded on Earth"
+],
+"answer": "③",
+"solution": "세 동물(과일박쥐·붉은게·황금해파리)은 서로 다른 '이유'로 집을 떠나 이동한다는 것이 글 전체의 중심이다. 따라서 '목적이 있는 여정: 동물들이 이동하는 이유'인 ③이 제목으로 알맞다. ①은 본문과 반대, ④는 붉은게 일부에만 해당, ②·⑤는 위험·기록을 다루지 않아 전체를 포괄하지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b08-u6m3s0t0",
+"custom": true
 }
 ]

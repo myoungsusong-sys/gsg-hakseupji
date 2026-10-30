@@ -69,5 +69,101 @@
 "source": "유사 문항",
 "twinGroup": "tw-9837",
 "custom": true
+},
+{
+"id": "fill-178082ac95",
+"typeId": "17425",
+"kind": "객관식",
+"diff": 2,
+"body": "빈 어항에 들이가 $450\\mathrm{mL}$인 컵으로 물을 가득 담아 $4$번 부었습니다. 어항에 부은 물은 모두 몇 $\\mathrm{L}$ 몇 $\\mathrm{mL}$입니까?",
+"choices": [
+"$1\\mathrm{L}\\ 350\\mathrm{mL}$",
+"$1\\mathrm{L}\\ 600\\mathrm{mL}$",
+"$1\\mathrm{L}\\ 800\\mathrm{mL}$",
+"$2\\mathrm{L}\\ 200\\mathrm{mL}$",
+"$2\\mathrm{L}\\ 400\\mathrm{mL}$"
+],
+"answer": "③",
+"solution": "어항에 부은 물은 $450\\mathrm{mL}\\times4=1800\\mathrm{mL}$입니다. $1800\\mathrm{mL}=1\\mathrm{L}\\ 800\\mathrm{mL}$이므로 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-9d0a98ff36",
+"typeId": "17425",
+"kind": "주관식",
+"diff": 2,
+"body": "들이가 같은 컵으로 빈 물통에 물을 가득 담아 $6$번 부었더니 물통에 $3\\mathrm{L}\\ 600\\mathrm{mL}$의 물이 들어갔습니다. 컵의 들이는 몇 $\\mathrm{mL}$입니까?",
+"selfGrade": true,
+"answer": "$600\\mathrm{mL}$",
+"solution": "$3\\mathrm{L}\\ 600\\mathrm{mL}=3600\\mathrm{mL}$입니다. 컵의 들이는 $3600\\mathrm{mL}\\div6=600\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-41c5c230dc",
+"typeId": "17425",
+"kind": "객관식",
+"diff": 2,
+"body": "물이 가득 들어 있는 주전자에서 들이가 $550\\mathrm{mL}$인 컵으로 물을 $3$번 빼냈습니다. 주전자에 남은 물이 $1\\mathrm{L}\\ 250\\mathrm{mL}$라면 주전자의 들이는 얼마입니까?",
+"choices": [
+"$2\\mathrm{L}\\ 350\\mathrm{mL}$",
+"$2\\mathrm{L}\\ 700\\mathrm{mL}$",
+"$2\\mathrm{L}\\ 800\\mathrm{mL}$",
+"$2\\mathrm{L}\\ 900\\mathrm{mL}$",
+"$3\\mathrm{L}\\ 100\\mathrm{mL}$"
+],
+"answer": "④",
+"solution": "빼낸 물은 $550\\mathrm{mL}\\times3=1650\\mathrm{mL}$입니다. 처음 물의 양은 $1650\\mathrm{mL}+1250\\mathrm{mL}=2900\\mathrm{mL}$이므로 주전자의 들이는 $2\\mathrm{L}\\ 900\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-3a112bd6a3",
+"typeId": "17425",
+"kind": "주관식",
+"diff": 5,
+"body": "큰 컵의 들이는 작은 컵의 들이보다 $300\\mathrm{mL}$ 더 큽니다. 빈 냄비를 채우려면 큰 컵으로는 물을 가득 담아 $5$번 부어야 합니다. 같은 냄비를 작은 컵으로 채우려면 물을 가득 담아 $8$번 붓고 $300\\mathrm{mL}$를 더 부어야 합니다. 냄비의 들이는 몇 $\\mathrm{L}$ 몇 $\\mathrm{mL}$입니까?",
+"selfGrade": true,
+"answer": "$3\\mathrm{L}\\ 500\\mathrm{mL}$",
+"solution": "큰 컵 $5$개의 물은 작은 컵 $5$개의 물보다 $300\\mathrm{mL}\\times5=1500\\mathrm{mL}$ 더 많습니다. 따라서 작은 컵 $3$개의 물은 $1500\\mathrm{mL}-300\\mathrm{mL}=1200\\mathrm{mL}$이므로 작은 컵의 들이는 $400\\mathrm{mL}$이고, 큰 컵의 들이는 $700\\mathrm{mL}$입니다. 냄비의 들이는 $700\\mathrm{mL}\\times5=3500\\mathrm{mL}=3\\mathrm{L}\\ 500\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-59d536f2a1",
+"typeId": "17425",
+"kind": "객관식",
+"diff": 5,
+"body": "물이 가득 들어 있는 수조에서 한 컵으로 물을 가득 담아 $6$번 빼내면 $2\\mathrm{L}\\ 300\\mathrm{mL}$가 남습니다. 같은 컵으로 처음부터 물을 가득 담아 $8$번 빼내면 $900\\mathrm{mL}$가 남습니다. 수조의 들이는 얼마입니까?",
+"choices": [
+"$5\\mathrm{L}\\ 600\\mathrm{mL}$",
+"$6\\mathrm{L}$",
+"$6\\mathrm{L}\\ 300\\mathrm{mL}$",
+"$6\\mathrm{L}\\ 500\\mathrm{mL}$",
+"$7\\mathrm{L}\\ 200\\mathrm{mL}$"
+],
+"answer": "④",
+"solution": "컵으로 $2$번 더 빼냈을 때 남은 물은 $2300\\mathrm{mL}-900\\mathrm{mL}=1400\\mathrm{mL}$만큼 줄어듭니다. 따라서 컵의 들이는 $1400\\mathrm{mL}\\div2=700\\mathrm{mL}$입니다. 수조의 들이는 $700\\mathrm{mL}\\times6+2300\\mathrm{mL}=6500\\mathrm{mL}=6\\mathrm{L}\\ 500\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
+},
+{
+"id": "fill-3f4765d1f5",
+"typeId": "17425",
+"kind": "주관식",
+"diff": 5,
+"body": "큰 그릇의 들이는 작은 그릇의 들이보다 $300\\mathrm{mL}$ 더 큽니다. 큰 그릇으로 물을 가득 담아 $4$번, 작은 그릇으로 물을 가득 담아 $3$번 부었더니 모두 $4\\mathrm{L}\\ 700\\mathrm{mL}$였습니다. 물이 가득 든 다른 물통에서 큰 그릇으로 $6$번, 작은 그릇으로 $5$번 물을 빼내자 $1\\mathrm{L}\\ 300\\mathrm{mL}$가 남았습니다. 이 물통의 들이는 몇 $\\mathrm{L}$ 몇 $\\mathrm{mL}$입니까?",
+"selfGrade": true,
+"answer": "$8\\mathrm{L}\\ 600\\mathrm{mL}$",
+"solution": "큰 그릇 $4$개분을 작은 그릇 $4$개분으로 바꾸면 물의 양은 $1200\\mathrm{mL}$ 줄어드므로, 작은 그릇 $7$개분은 $4700\\mathrm{mL}-1200\\mathrm{mL}=3500\\mathrm{mL}$입니다. 작은 그릇의 들이는 $500\\mathrm{mL}$이고 큰 그릇의 들이는 $800\\mathrm{mL}$입니다. 물통의 들이는 $800\\mathrm{mL}\\times6+500\\mathrm{mL}\\times5+1300\\mathrm{mL}=8600\\mathrm{mL}=8\\mathrm{L}\\ 600\\mathrm{mL}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-17425",
+"custom": true
 }
 ]

@@ -533,5 +533,279 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-09-u0m0s0t1",
 "custom": true
+},
+{
+"id": "fill-38cc29a01b",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "세 변의 길이가 각각 $3$, $5$, $7$인 삼각형에서 가장 큰 내각의 크기는?",
+"choices": [
+"$90^\\circ$",
+"$105^\\circ$",
+"$120^\\circ$",
+"$135^\\circ$",
+"$150^\\circ$"
+],
+"answer": "③",
+"solution": "가장 큰 내각은 가장 긴 변 $7$을 마주 본다. 이 각을 $\\theta$라 하면 코사인법칙에 의해 $\\cos\\theta=\\dfrac{3^2+5^2-7^2}{2\\cdot3\\cdot5}=\\dfrac{9+25-49}{30}=\\dfrac{-15}{30}=-\\dfrac12$이다. 따라서 $\\theta=120^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-8e55e31ac0",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "평행사변형 $ABCD$에서 $\\overline{AB}=6$, $\\overline{BC}=4$, $\\angle B=120^\\circ$일 때, 대각선 $\\overline{AC}$의 길이는?",
+"choices": [
+"$2\\sqrt7$",
+"$2\\sqrt{13}$",
+"$2\\sqrt{19}$",
+"$\\sqrt{21}$",
+"$14$"
+],
+"answer": "③",
+"solution": "삼각형 $ABC$에서 $\\angle B$는 두 변 $BA$, $BC$ 사이의 각이다. 코사인법칙에 의해 $\\overline{AC}^2=6^2+4^2-2\\cdot6\\cdot4\\cos120^\\circ=36+16-48\\cdot(-\\tfrac12)=52+24=76$이다. 따라서 $\\overline{AC}=\\sqrt{76}=2\\sqrt{19}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-00df1f8ff6",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=x$, $\\overline{AC}=x+1$, $\\overline{BC}=\\sqrt7$이고 $\\angle A=60^\\circ$이다. 양수 $x$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "②",
+"solution": "코사인법칙에 의해 $\\overline{BC}^2=\\overline{AB}^2+\\overline{AC}^2-2\\cdot\\overline{AB}\\cdot\\overline{AC}\\cos60^\\circ$이다. 즉 $7=x^2+(x+1)^2-2x(x+1)\\cdot\\tfrac12=x^2+(x+1)^2-x(x+1)=x^2+x+1$이다. $x^2+x-6=0$에서 $(x+3)(x-2)=0$이고 $x>0$이므로 $x=2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-831d4cd538",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "세 변의 길이가 각각 $6$, $8$, $x$인 삼각형이 예각삼각형이 되도록 하는 자연수 $x$의 개수는?",
+"choices": [
+"$2$",
+"$3$",
+"$4$",
+"$5$",
+"$6$"
+],
+"answer": "③",
+"solution": "예각삼각형은 가장 긴 변에 대응하는 각이 예각이면 된다. $x\\le8$일 때 가장 긴 변 $8$에 대해 $8^2<6^2+x^2$에서 $x^2>28$, 즉 $x>2\\sqrt7\\approx5.29$이다. $x>8$일 때 가장 긴 변 $x$에 대해 $x^2<6^2+8^2=100$에서 $x<10$이다. 따라서 $2\\sqrt7<x<10$이고 자연수 $x$는 $6,7,8,9$의 $4$개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-1db1b93a6a",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=7$, $\\overline{AC}=8$, $\\overline{BC}=13$일 때, 이 삼각형의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$14\\sqrt3$",
+"solution": "$\\angle A$는 두 변 $AB$, $AC$ 사이의 각이므로 코사인법칙에 의해 $\\cos A=\\dfrac{7^2+8^2-13^2}{2\\cdot7\\cdot8}=\\dfrac{49+64-169}{112}=\\dfrac{-56}{112}=-\\dfrac12$, 즉 $A=120^\\circ$이다. 따라서 넓이는 $\\dfrac12\\cdot\\overline{AB}\\cdot\\overline{AC}\\sin A=\\dfrac12\\cdot7\\cdot8\\cdot\\dfrac{\\sqrt3}{2}=14\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-824b3e3717",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 세 변의 길이 $a$, $b$, $c$가 $(a+b+c)(a-b+c)=3ac$를 만족시킬 때, $\\angle B$의 크기는? (단, $a=\\overline{BC}$, $b=\\overline{CA}$, $c=\\overline{AB}$)",
+"choices": [
+"$30^\\circ$",
+"$45^\\circ$",
+"$60^\\circ$",
+"$90^\\circ$",
+"$120^\\circ$"
+],
+"answer": "③",
+"solution": "좌변을 $((a+c)+b)((a+c)-b)=(a+c)^2-b^2$로 묶으면 $a^2+2ac+c^2-b^2=3ac$이다. 정리하면 $a^2+c^2-b^2=ac$이다. 코사인법칙에서 $\\cos B=\\dfrac{a^2+c^2-b^2}{2ac}=\\dfrac{ac}{2ac}=\\dfrac12$이므로 $\\angle B=60^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-58274b82b5",
+"typeId": "set2-alg-09-u0m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=7$, $\\overline{CA}=5$, $\\overline{BC}=8$이다. 변 $BC$의 중점을 $M$이라 할 때, 선분 $AM$의 길이는?",
+"choices": [
+"$\\sqrt{17}$",
+"$\\sqrt{19}$",
+"$\\sqrt{21}$",
+"$\\sqrt{23}$",
+"$5$"
+],
+"answer": "③",
+"solution": "먼저 코사인법칙으로 $\\cos B=\\dfrac{\\overline{AB}^2+\\overline{BC}^2-\\overline{CA}^2}{2\\cdot\\overline{AB}\\cdot\\overline{BC}}=\\dfrac{49+64-25}{2\\cdot7\\cdot8}=\\dfrac{88}{112}=\\dfrac{11}{14}$이다. $\\overline{BM}=4$이므로 삼각형 $ABM$에서 $\\overline{AM}^2=\\overline{AB}^2+\\overline{BM}^2-2\\cdot\\overline{AB}\\cdot\\overline{BM}\\cos B=49+16-2\\cdot7\\cdot4\\cdot\\dfrac{11}{14}=65-44=21$이다. 따라서 $\\overline{AM}=\\sqrt{21}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-fefb53a14f",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=7$, $\\overline{AC}=5$이고 $\\cos A=\\dfrac{1}{7}$이다. 이 삼각형의 넓이는?",
+"choices": [
+"$5\\sqrt3$",
+"$10$",
+"$10\\sqrt3$",
+"$20$",
+"$20\\sqrt3$"
+],
+"answer": "③",
+"solution": "$\\cos A=\\dfrac{1}{7}$이고 $A$는 삼각형의 내각이므로 $\\sin A>0$이다. $\\sin A=\\sqrt{1-\\left(\\dfrac{1}{7}\\right)^2}=\\sqrt{\\dfrac{48}{49}}=\\dfrac{4\\sqrt3}{7}$이다. 따라서 넓이는 $\\dfrac{1}{2}\\cdot\\overline{AB}\\cdot\\overline{AC}\\cdot\\sin A=\\dfrac{1}{2}\\cdot7\\cdot5\\cdot\\dfrac{4\\sqrt3}{7}=10\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-1b367296c3",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "세 변의 길이가 각각 $4$, $13$, $15$인 삼각형의 넓이는?",
+"choices": [
+"$12$",
+"$18$",
+"$24$",
+"$30$",
+"$36$"
+],
+"answer": "③",
+"solution": "세 변의 길이의 합의 반을 $s$라 하면 $s=\\dfrac{4+13+15}{2}=16$이다. 헤론의 공식에 의하여 넓이는 $\\sqrt{s(s-4)(s-13)(s-15)}=\\sqrt{16\\cdot12\\cdot3\\cdot1}=\\sqrt{576}=24$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-0b1c903846",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "주관식",
+"diff": 3,
+"body": "세 변의 길이가 각각 $10$, $17$, $21$인 삼각형 $ABC$가 있다. 이 삼각형의 넓이를 구하고, 길이가 $21$인 변을 밑변으로 할 때의 높이를 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "넓이 $84$, 높이 $8$",
+"solution": "$s=\\dfrac{10+17+21}{2}=24$이므로 헤론의 공식에 의하여 넓이는 $\\sqrt{24\\cdot14\\cdot7\\cdot3}=\\sqrt{7056}=84$이다. 길이가 $21$인 변을 밑변, 그때의 높이를 $h$라 하면 $\\dfrac{1}{2}\\cdot21\\cdot h=84$이므로 $h=\\dfrac{168}{21}=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-a94b3c6863",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=4$, $\\overline{AC}=6$이고 넓이가 $6\\sqrt3$이다. $\\angle A$가 둔각일 때, 변 $BC$의 길이는?",
+"choices": [
+"$2\\sqrt7$",
+"$4\\sqrt3$",
+"$2\\sqrt{13}$",
+"$2\\sqrt{19}$",
+"$2\\sqrt{22}$"
+],
+"answer": "④",
+"solution": "넓이 공식에서 $\\dfrac{1}{2}\\cdot4\\cdot6\\cdot\\sin A=6\\sqrt3$이므로 $\\sin A=\\dfrac{\\sqrt3}{2}$이다. $\\angle A$가 둔각이므로 $A=120^\\circ$, $\\cos A=-\\dfrac12$이다. 코사인법칙에 의하여 $\\overline{BC}^2=4^2+6^2-2\\cdot4\\cdot6\\cdot\\left(-\\dfrac12\\right)=16+36+24=76$이다. 따라서 $\\overline{BC}=\\sqrt{76}=2\\sqrt{19}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-d48c8c1073",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "주관식",
+"diff": 4,
+"body": "세 변의 길이가 각각 $13$, $14$, $15$인 삼각형 $ABC$의 내접원의 반지름을 $r$라 하자. 삼각형의 넓이를 구하고, 넓이와 내접원의 반지름 사이의 관계를 이용하여 $r$를 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "넓이 $84$, $r=4$",
+"solution": "$s=\\dfrac{13+14+15}{2}=21$이므로 헤론의 공식에 의하여 넓이는 $\\sqrt{21\\cdot8\\cdot7\\cdot6}=\\sqrt{7056}=84$이다. 내접원의 중심과 세 변으로 나누어지는 세 삼각형의 넓이의 합을 생각하면 삼각형의 넓이는 $\\dfrac{1}{2}r(13+14+15)=rs=21r$이다. 따라서 $21r=84$에서 $r=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-ebdb434b79",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6$, $\\overline{AC}=4$, $\\angle A=120^\\circ$이다. 변 $AB$ 위의 점 $D$와 변 $AC$ 위의 점 $E$를 $\\overline{AD}=4$, $\\overline{AE}=3$이 되도록 잡을 때, 사각형 $DBCE$의 넓이는?",
+"choices": [
+"$2\\sqrt3$",
+"$3\\sqrt3$",
+"$6\\sqrt3$",
+"$\\dfrac{15\\sqrt3}{2}$",
+"$9\\sqrt3$"
+],
+"answer": "②",
+"solution": "삼각형 $ABC$의 넓이는 $\\dfrac{1}{2}\\cdot6\\cdot4\\cdot\\sin120^\\circ=12\\cdot\\dfrac{\\sqrt3}{2}=6\\sqrt3$이다. 삼각형 $ADE$는 $\\angle A$를 공유하므로 넓이가 $\\dfrac{1}{2}\\cdot4\\cdot3\\cdot\\sin120^\\circ=6\\cdot\\dfrac{\\sqrt3}{2}=3\\sqrt3$이다. 따라서 사각형 $DBCE$의 넓이는 $6\\sqrt3-3\\sqrt3=3\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-cd8d00d79b",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 세 변의 길이가 $\\overline{BC}=8$, $\\overline{CA}=5$, $\\overline{AB}=7$이다. 이 삼각형의 넓이 $S$, 내접원의 반지름 $r$, 외접원의 반지름 $R$를 차례로 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "$S=10\\sqrt3$, $r=\\sqrt3$, $R=\\dfrac{7\\sqrt3}{3}$",
+"solution": "$s=\\dfrac{8+5+7}{2}=10$이므로 헤론의 공식에 의하여 $S=\\sqrt{10\\cdot2\\cdot5\\cdot3}=\\sqrt{300}=10\\sqrt3$이다. 내접원의 반지름은 $S=rs$에서 $r=\\dfrac{S}{s}=\\dfrac{10\\sqrt3}{10}=\\sqrt3$이다. 한편 $\\cos A=\\dfrac{5^2+7^2-8^2}{2\\cdot5\\cdot7}=\\dfrac{10}{70}=\\dfrac{1}{7}$에서 $\\sin A=\\dfrac{4\\sqrt3}{7}$이므로, 사인법칙 $\\dfrac{\\overline{BC}}{\\sin A}=2R$에 의하여 $R=\\dfrac{8}{2\\cdot\\frac{4\\sqrt3}{7}}=\\dfrac{7}{\\sqrt3}=\\dfrac{7\\sqrt3}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-d61e58bf68",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\angle A=60^\\circ$로 일정하고 두 변의 길이의 합이 $\\overline{AB}+\\overline{AC}=12$이다. 이 삼각형의 넓이의 최댓값을 구하고, 그때의 $\\overline{AB}$, $\\overline{AC}$의 길이를 구하는 과정을 서술하시오.",
+"selfGrade": true,
+"answer": "넓이의 최댓값 $9\\sqrt3$, $\\overline{AB}=\\overline{AC}=6$",
+"solution": "$\\overline{AB}=b$, $\\overline{AC}=c$라 하면 넓이는 $S=\\dfrac{1}{2}bc\\sin60^\\circ=\\dfrac{\\sqrt3}{4}bc$이다. 합이 $b+c=12$로 일정하므로 산술·기하평균 관계에 의하여 $bc\\le\\left(\\dfrac{b+c}{2}\\right)^2=36$이고, 등호는 $b=c=6$일 때 성립한다. 따라서 넓이의 최댓값은 $\\dfrac{\\sqrt3}{4}\\cdot36=9\\sqrt3$이며, 이때 $\\overline{AB}=\\overline{AC}=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
+},
+{
+"id": "fill-2a9373f4ce",
+"typeId": "set2-alg-09-u0m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $\\overline{AB}=6$, $\\overline{AC}=8$, $\\overline{BC}=2\\sqrt{13}$이다. 변 $BC$ 위의 점 $D$가 $\\overline{BD}:\\overline{DC}=1:3$을 만족할 때, 삼각형 $ABD$의 넓이는?",
+"choices": [
+"$3\\sqrt3$",
+"$\\dfrac{3\\sqrt3}{2}$",
+"$6\\sqrt3$",
+"$9\\sqrt3$",
+"$12\\sqrt3$"
+],
+"answer": "①",
+"solution": "코사인법칙에 의하여 $\\cos A=\\dfrac{6^2+8^2-(2\\sqrt{13})^2}{2\\cdot6\\cdot8}=\\dfrac{36+64-52}{96}=\\dfrac{1}{2}$이므로 $A=60^\\circ$이다. 삼각형 $ABC$의 넓이는 $\\dfrac{1}{2}\\cdot6\\cdot8\\cdot\\sin60^\\circ=24\\cdot\\dfrac{\\sqrt3}{2}=12\\sqrt3$이다. 두 삼각형 $ABD$, $ABC$는 높이가 같고 밑변의 비가 $\\overline{BD}:\\overline{BC}=1:4$이므로, 삼각형 $ABD$의 넓이는 $\\dfrac{1}{4}\\cdot12\\sqrt3=3\\sqrt3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-09-u0m0s1t2",
+"custom": true
 }
 ]

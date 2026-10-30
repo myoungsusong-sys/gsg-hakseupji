@@ -2105,5 +2105,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b05-u7m5s0t0",
 "custom": true
+},
+{
+"id": "fill-67b784ae86",
+"typeId": "eng-m1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 밑줄 친 (A)의 우리말과 같은 뜻이 되도록 괄호 안의 말을 바르게 배열하여 문장을 완성하시오.\n\nHi, my name is Somi. I'm from Korea. I'm in the first year of middle school. Everything is new and exciting. I have drumsticks in my school bag. (A)나는 학교 밴드에서 드럼을 쳐. We play K-pop songs. Our songs are great!\n\n(in / play / the school band / I / the drums)\n→ ________________________________________.",
+"selfGrade": true,
+"answer": "I play the drums in the school band",
+"solution": "우리말 '나는 ~을 쳐'에 맞게 주어 I 뒤에 동사 play를 쓴다. 악기를 연주할 때는 악기 이름 앞에 the를 붙이므로 목적어는 the drums이다. '학교 밴드에서'는 장소를 나타내는 전치사구 in the school band로 문장 끝에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2e4c258c6b",
+"typeId": "eng-m1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말을 <보기>의 단어를 사용하여 4단어로 영작하시오. (단, What's는 한 단어로 셀 것)\n\n<보기> lunch\n\nG: ________________________________?\nB: Bibimbap and chicken.\nG: Wow! I love bibimbap.",
+"selfGrade": true,
+"answer": "What's for lunch today",
+"solution": "B가 오늘 점심 메뉴(비빔밥과 치킨)를 말하고 있으므로, 빈칸에는 오늘 점심 메뉴를 묻는 말이 들어가야 한다. '오늘 점심은 뭐야?'는 What's for lunch today?로 표현한다. What's / for / lunch / today로 4단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-fe3c0a09cc",
+"typeId": "eng-m1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, 아래 질문에 대한 알맞은 대답이 되도록 <조건>에 맞게 빈칸을 완성하시오.\n\nHi! I'm Mariam. I live in Dubai. The sunlight is very strong here. My school has a special rule. It's \"No hat, no play.\" Students don't play outside without a hat. I have a blue hat in my school bag. Blue is my favorite color.\n\nQ. Why does Mariam have a hat in her school bag?\n\n<조건>\n• have, rule, play, without을 사용하되 필요시 변형할 것\n• 필요한 단어를 추가할 것\n• 각 빈칸에 한 단어씩 쓰고, don't는 한 단어로 볼 것\n\n→ Because her school ________ ________ ________ ________, and students ________ ________ ________ ________ ________ ________.",
+"selfGrade": true,
+"answer": "has a special rule / don't play outside without a hat",
+"solution": "Mariam의 학교에는 '모자가 없으면 놀 수 없다'는 특별한 규칙이 있어서 Mariam은 가방에 모자를 넣고 다닌다. 앞 절의 주어 her school은 3인칭 단수이므로 have를 has로 바꾸고, 본문대로 a special rule을 쓴다. 뒤 절의 주어 students는 복수이므로 don't play를 쓰고, outside without a hat을 붙여 6칸을 채운다. has의 3인칭 단수 형태와 don't/doesn't 구분을 정확히 해야 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b05-u0m5s0t0",
+"custom": true
 }
 ]

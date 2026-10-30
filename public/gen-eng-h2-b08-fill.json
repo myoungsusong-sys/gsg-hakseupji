@@ -3033,5 +3033,309 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b08-u0m3s0t0",
 "custom": true
+},
+{
+"id": "fill-25facdc9b3",
+"typeId": "eng-h2-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHi, everyone. I am Minji Song, the editor of an online teen magazine, Teens Today. Many high school students ask me how they can prepare for their future. I always tell them (A)[what / that] experiences matter more than anything else. When I was young, I tried many activities (B)[that / what] helped me discover my own interests. I am still excited (C)[sharing / to share] these stories with you today.\n\n(A)          (B)          (C)",
+"choices": [
+"① what – that – to share",
+"② that – that – to share",
+"③ that – what – sharing",
+"④ what – what – sharing",
+"⑤ that – that – sharing"
+],
+"answer": "②",
+"solution": "(A) tell them 뒤에 'experiences matter ~'라는 완전한 절이 오므로 접속사 that이 알맞다. (B) 선행사 many activities가 있고 뒤 문장에 주어가 빠져 있으므로 관계대명사 that이 알맞다(what은 선행사를 가질 수 없다). (C) be excited 뒤에는 to부정사가 와서 '~하게 되어 신난'을 나타내므로 to share가 알맞다. 따라서 that – that – to share인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f7ef3f1447",
+"typeId": "eng-h2-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAfter I saw the poster, I became interested in landscape design. I found (A)[that / what] landscape designing involves arranging and decorating outdoor spaces. The work looked impressive because the arrangement of plants and structures can transform a space. However, I was not good at math or science, so I decided (B)[putting / to put] more effort into (C)[study / studying] them.\n\n(A)          (B)          (C)",
+"choices": [
+"① that – to put – studying",
+"② what – to put – study",
+"③ that – putting – studying",
+"④ what – to put – studying",
+"⑤ that – putting – study"
+],
+"answer": "①",
+"solution": "(A) found 뒤에 'landscape designing involves ~'라는 완전한 절이 오므로 접속사 that이 알맞다. (B) decide는 to부정사를 목적어로 취하므로 to put이 알맞다. (C) 전치사 into 다음에는 동명사가 와야 하므로 studying이 알맞다. 따라서 that – to put – studying인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eafbf385b8",
+"typeId": "eng-h2-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nWhen Steve Jobs was a college student, he did not know what he wanted to do in the future. He felt uncertain about how the normal classes he ⓐwas required to take could help him figure out his life. He decided to start ⓑchecking out things that seemed interesting to him. One day, a handwritten poster ⓒcaught his eye. He became ⓓfascinating with the art of producing beautiful handwriting. So he ⓔdecided attending a calligraphy class. Later, he incorporated ⓕwhat he learned from that class into designing his own computer system.",
+"choices": [
+"① ⓐ, ⓑ",
+"② ⓐ, ⓓ",
+"③ ⓓ, ⓔ",
+"④ ⓑ, ⓕ",
+"⑤ ⓒ, ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ he가 수업을 '듣도록 요구받은' 수동 관계이므로 was required가 옳고, ⓑ start는 동명사를 취할 수 있어 checking이 옳으며, ⓒ caught, ⓕ incorporated what도 모두 옳다. ⓓ 주어 He가 '매료된' 수동 관계이므로 fascinating이 아니라 fascinated가 되어야 한다. ⓔ decide는 to부정사를 취하므로 decided attending이 아니라 decided to attend가 되어야 한다. 따라서 어색한 것은 ⓓ, ⓔ인 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-de33b0f4ba",
+"typeId": "eng-h2-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 밑줄 친 ⓐ~ⓕ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nAllowing yourself the opportunity ⓐto experience a variety of things ⓑare not a waste of time. As you ⓒwill spend each day wisely, you will be able to figure out what kind of person you are and what you enjoy ⓓdoing. Do not attempt to define ⓔyourself in just one way as you undergo this process. Remember ⓕwhat your potential is limitless.",
+"choices": [
+"① ⓐ, ⓑ",
+"② ⓑ, ⓒ, ⓕ",
+"③ ⓐ, ⓒ, ⓔ",
+"④ ⓑ, ⓓ, ⓕ",
+"⑤ ⓒ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓐ opportunity를 수식하는 to부정사로 옳고, ⓓ enjoy는 동명사를 취하므로 doing이 옳으며, ⓔ 주어와 동일 대상을 가리키는 재귀대명사 yourself도 옳다. ⓑ 주어가 동명사구 'Allowing ~ things'(단수)이므로 are가 아니라 is가 되어야 한다. ⓒ 시간의 부사절에서는 미래의 의미라도 현재시제를 쓰므로 will spend가 아니라 spend가 되어야 한다. ⓕ 뒤에 완전한 절이 오므로 what이 아니라 접속사 that이 되어야 한다. 따라서 어색한 것은 ⓑ, ⓒ, ⓕ인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-92757f1bce",
+"typeId": "eng-h2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMy name is Bliksem, ⓐ[which / that] means \"lightning.\" My parents named me this because they wanted me ⓑ[be / to be] faster than anyone else. Born in the Netherlands, a country with more bicycles than people, I learned ⓒ[riding / to ride] a bike almost as soon as I could walk. I loved feeling the breeze in my hair.",
+"choices": [
+"which － to be － to ride",
+"that － be － riding",
+"which － be － to ride",
+"that － to be － riding",
+"which － to be － riding"
+],
+"answer": "①",
+"solution": "ⓐ 콤마 뒤 계속적 용법에는 관계대명사 that을 쓸 수 없으므로 which가 알맞다. ⓑ want는 목적격보어로 to부정사를 취하므로 to be가 알맞다. ⓒ learn은 목적어로 to부정사를 취하므로 to ride가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dd9d54b734",
+"typeId": "eng-h2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhen I was eleven, a junior bicycle race ⓐ[held / was held] in our small town. I entered the race as the youngest rider. Before the race started, I looked around the crowd, and I couldn't believe my eyes! My hero, Gabriel Martinez, the cycling world champion, ⓑ[was standing / were standing] there! I ran over and asked, \"You're Gabriel Martinez, right? Can I have your autograph?\" He smiled and said, \"If you win, you can.\" ⓒ[Exciting / Excited] by what he said, I pedaled harder than ever.",
+"choices": [
+"held － was standing － Excited",
+"was held － were standing － Exciting",
+"was held － was standing － Excited",
+"held － were standing － Exciting",
+"was held － was standing － Exciting"
+],
+"answer": "③",
+"solution": "ⓐ 경주는 '개최되는' 대상이므로 수동태 was held가 알맞다. ⓑ 주어는 My hero(= Gabriel Martinez)로 단수이므로 was standing이 알맞다. ⓒ 주어 I가 그의 말에 '신이 난' 것이므로 과거분사로 시작하는 분사구문 Excited가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2e24fcad79",
+"typeId": "eng-h2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nGabriel's final race was the Paris-Roubaix, a 250 km race ⓐ[famed / faming] for its cobblestone sections. (중략) Our speed increased as we ⓑ[approached / approached to] the finish line, and my teammates worked hard to support me. When the finish line came into view, I began my final sprint with a rush of adrenaline, and our rivals were right on my tail, ⓒ[fighting / fought] for the same victory.",
+"choices": [
+"famed － approached to － fought",
+"famed － approached － fighting",
+"faming － approached － fighting",
+"faming － approached to － fought",
+"famed － approached to － fighting"
+],
+"answer": "②",
+"solution": "ⓐ '자갈길 구간으로 유명한' 경주라는 수동의 의미이므로 과거분사 famed가 알맞다. ⓑ approach는 타동사라 전치사 없이 목적어를 바로 쓰므로 approached가 알맞다. ⓒ 경쟁자들이 직접 '다투는' 능동의 의미이고 동시 상황을 나타내는 분사구문이므로 fighting이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a2ec03b234",
+"typeId": "eng-h2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ①~⑤ 중, 어법상 어색한 것은?\n\nSince then, Gabriel ①has been my mentor. When I turned nineteen, he brought me into his professional team, where only the most skilled and passionate cyclists ②came together. I felt small and insignificant. I could sprint ③the fastest on flat courses, but I always fell behind in mountain races. The Netherlands is mostly flat, so I had rarely cycled up steep slopes before. Gabriel was from Bogotá, Colombia, ④that is high up in the Andes. He had a lot of experience in riding on hills and mountains, so he was always the first ⑤to arrive at the top.",
+"choices": [
+"has been",
+"came together",
+"the fastest",
+"that",
+"to arrive"
+],
+"answer": "④",
+"solution": "④ 콤마 뒤 계속적 용법으로 Bogotá, Colombia를 부연 설명하므로 that이 아니라 which를 써야 한다. ① since then과 함께 현재완료 has been을 쓰는 것은 알맞다. ② 관계부사 where 뒤에는 완전한 절이 오며 came together는 자동사구로 알맞다. ③ 부사의 최상급 the fastest, ⑤ the first를 꾸미는 to부정사 to arrive도 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0d0a96a04f",
+"typeId": "eng-h2-b08-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nⓐMotivated by Gabriel's encouragement, I participated eagerly in all the training courses, especially the uphill ones. Soon after, my efforts finally paid off in one of the mountain courses. As a domestique, who supports the leader and the team during a cycling race, I was riding in front of Gabriel ⓑto shielding him from the headwind. Our team was far ahead of the others. Everything was going perfectly until I crashed ⓒdue to a crack in the road. All four of us ⓓfell in the crash, and the other teams passed us by. I was just slightly wounded, but Gabriel's injury was more serious. He urged me to continue on his behalf. But there were a couple of more steep slopes ahead, and I ⓔdoubted we had a chance. Gabriel read my mind and yelled, \"Remember the view at the top. Never stop pedaling ⓕwhat it takes, kid. Now go!\" ⓖPedaled with all my strength, I finished second in that race, but I felt a sense of guilt for my fellow team members.",
+"choices": [
+"ⓑ, ⓓ, ⓕ",
+"ⓑ, ⓕ, ⓖ",
+"ⓐ, ⓑ, ⓔ, ⓖ",
+"ⓒ, ⓕ, ⓖ",
+"ⓑ, ⓒ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "ⓑ 목적(~하기 위해)을 나타내는 to부정사이므로 to shield로 고쳐야 한다. ⓕ '무엇이 필요하든'이라는 양보의 의미이므로 whatever로 고쳐야 한다. ⓖ 주어 I가 직접 페달을 '밟는' 능동 관계이므로 Pedaling으로 고쳐야 한다. ⓐ는 내가 '동기 부여를 받은' 것이므로 과거분사가 맞고, ⓒ due to 뒤의 명사구, ⓓ 자동사 fall의 과거형 fell, ⓔ doubted 뒤에 that이 생략된 명사절도 모두 어법상 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-671765f486",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nDid you know that February 2nd is World Wetlands Day? Some may wonder whether wetlands are important enough to celebrate every year. They may think wetlands are useless and unpleasant places, but actually they are unique ecosystems that must be protected because they provide numerous benefits to both the environment and humans. For example, Upo is Korea’s largest untouched wetland, covering an area as big as 210 soccer fields. First of all, Upo is a habitat for a number of threatened and endangered species. To name a few, there is the rare gasiyeon and the ttaogi, a bird which is nearly extinct. Furthermore, Upo prevents floods by absorbing water during the rainy season of July and August, and it supplies adequate water to local farmers during droughts.",
+"choices": [
+"세계 습지의 날은 매년 2월 20일이다.",
+"우포는 한국에서 가장 큰 인공 습지이다.",
+"우포의 면적은 축구장 약 210개 크기에 해당한다.",
+"따오기는 우포에서 개체 수가 크게 늘어 흔히 볼 수 있는 새이다.",
+"우포는 가뭄 때 물을 흡수하여 홍수를 막는다."
+],
+"answer": "③",
+"solution": "본문에 Upo가 ‘covering an area as big as 210 soccer fields’라고 했으므로 ③이 일치한다. 세계 습지의 날은 2월 2일이고(①), 우포는 ‘untouched(자연 그대로의)’ 습지이다(②). 따오기는 ‘nearly extinct’한 새이며(④), 물을 흡수해 홍수를 막는 시기는 가뭄 때가 아니라 7~8월 장마철이다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-77f3e50419",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nG: Dad, what are you reading?\nM: Some Internet news about the Amazon rainforest. There’s been a lot of deforestation in the region.\nG: What exactly is deforestation?\nM: It happens when humans cut down trees in forests on a large scale. It is a serious threat to the environment.\nG: That’s terrible, but what does that have to do with us?\nM: Trees absorb CO₂, so deforestation in Brazil will have adverse effects on the global climate.\nG: Oh, I got it. I thought the situation in the Amazon rainforest didn’t directly affect us.\nM: Remember that we are all connected. Caring for the Earth is a responsibility we all share.",
+"choices": [
+"아빠는 아마존 열대우림에 관한 인터넷 뉴스를 읽고 있다.",
+"소녀는 처음부터 아마존의 상황이 자신들에게 직접 영향을 준다고 알고 있었다.",
+"삼림 벌채는 사람들이 숲의 나무를 대규모로 베어 낼 때 일어난다.",
+"나무가 이산화탄소를 흡수하므로 브라질의 삼림 벌채는 지구 기후에 악영향을 준다.",
+"아빠는 지구를 돌보는 것이 우리 모두의 책임이라고 말한다."
+],
+"answer": "②",
+"solution": "소녀는 ‘I thought the situation in the Amazon rainforest didn’t directly affect us.’라고 말했다. 즉 처음에는 자신들과 관계없다고 생각했다가 아빠의 설명을 듣고 이해했으므로 ②가 일치하지 않는다. 나머지 선지는 모두 아빠의 말과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-32c17f0efc",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThe Everglades is the only place where American crocodiles and American alligators coexist. These animals typically inhabit different ecosystems: crocodiles live in salt water, whereas alligators live in fresh water. However, they are found living together where fresh water from Lake Okeechobee meets the salt water of Florida Bay. Besides, the Everglades provides drinking water to people in Florida, with one out of every three people relying on the Everglades for drinking water. Unless the Everglades is preserved, millions of people will suffer from a shortage of drinking water.",
+"choices": [
+"에버글레이즈는 미국악어(crocodile)와 미국앨리게이터가 공존하는 유일한 곳이다.",
+"두 동물은 오키초비 호수의 민물 한가운데에서 함께 산다.",
+"크로커다일은 보통 바닷물에, 앨리게이터는 보통 민물에 산다.",
+"플로리다 사람 세 명 중 한 명은 에버글레이즈에 식수를 의존한다.",
+"에버글레이즈가 보존되지 않으면 수백만 명이 식수 부족을 겪을 것이다."
+],
+"answer": "②",
+"solution": "두 동물이 함께 사는 곳은 오키초비 호수의 민물이 플로리다만의 바닷물과 만나는 곳(where fresh water ... meets the salt water)이다. 민물 한가운데라고 한 ②는 일치하지 않는다. 나머지는 모두 본문 내용과 같다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-2944593672",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nThe Camargue is a region in southern France where the Rhône River meets the Mediterranean Sea, just a few miles from the city of Arles. It functions as a natural sponge, absorbing and gradually releasing surface water such as rain, groundwater, and floodwater. Its ability to hold water aids in flood control. The Camargue is also an excellent place to observe more than 400 species of birds. Because wetlands and lakes cover 35% of the area, the Camargue is an ideal place for flocks of birds to feed and cool off. The exotic pink flamingo is one of the most famous species found there. The area is also known historically for its white horses. They have become powerful and strong as a result of surviving in the Camargue, where only reeds, thick grasses, and weeds are available.",
+"choices": [
+"The Camargue lies where the Rhône River flows into the Mediterranean Sea.",
+"The Camargue absorbs surface water and then releases it little by little.",
+"Wetlands and lakes make up more than half of the Camargue.",
+"The pink flamingo is one of the best-known birds in the Camargue.",
+"Camargue horses have grown strong by surviving on limited plants such as reeds and weeds."
+],
+"answer": "③",
+"solution": "본문에 습지와 호수는 이 지역의 35%를 차지한다(cover 35% of the area)고 했으므로, 절반 이상이라고 한 ③이 일치하지 않는다. ②는 ‘absorbing and gradually releasing’을, ⑤는 ‘only reeds, thick grasses, and weeds are available’을 바꿔 쓴 표현으로 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ebc7c382a3",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nThe Sudd wetland is the largest wetland in Africa, sustained by the flow of the White Nile from Lake Victoria in Uganda. The Egyptians, Greeks, and Romans spent centuries searching for the starting point of the Nile River. Nero, the emperor of the Roman empire, sent the military to explore the White Nile in 61 AD, but his soldiers were unable to proceed beyond the Sudd. In the Sudd, there are many endangered mammal species, including African elephants and antelopes. Additionally, one million people rely on the wetland for a living, primarily through cattle herding. For example, during the dry season, nomadic people move deeper into the wetland and build seasonal homes on naturally occurring islands to feed their herds like sheep, cows, and goats and catch the abundant fish. The name “Sudd” comes from an Arabic word for “barriers,” and the wetland historically protected the people from invaders.",
+"choices": [
+"Where does the White Nile that sustains the Sudd flow from?",
+"When did Nero send his military to explore the White Nile?",
+"What kinds of animals do the nomadic people keep in their herds?",
+"How many African elephants currently live in the Sudd?",
+"What does the Arabic word that the name “Sudd” comes from mean?"
+],
+"answer": "④",
+"solution": "아프리카코끼리가 수드에 사는 멸종 위기 포유류라는 사실은 나오지만, 그 개체 수는 본문에 나오지 않으므로 ④에는 답할 수 없다. ①은 우간다의 빅토리아 호수, ②는 서기 61년, ③은 양·소·염소, ⑤는 ‘barriers(장벽)’로 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-04806f285e",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nIn the city, where people and buildings crowd together, much of the land is covered in concrete. In this urban landscape, rooftop gardens provide a natural oasis. They help reduce energy consumption for heating and cooling. They also clean the air because their plants give off oxygen and absorb air pollutants. One remarkable example of a rooftop garden is found at the Government Complex Sejong, which has been officially recognized as the largest of its kind. It has a span of 3.6 km and covers an area of 79,194 m², spread across fifteen connected buildings. The ground is covered in basalt, creating a natural drainage effect. In the garden, speakers for announcements are made to look like rocks to complement the plants. It also possesses 192 different plant species. The place is free to visit.",
+"choices": [
+"Rooftop gardens increase the energy needed for heating and cooling.",
+"The rooftop garden at the Government Complex Sejong stretches across fifteen connected buildings.",
+"The ground of the Sejong rooftop garden is covered in concrete for natural drainage.",
+"Speakers in the Sejong rooftop garden are hidden under the plants.",
+"Visitors must pay a fee to enter the Sejong rooftop garden."
+],
+"answer": "②",
+"solution": "본문에 ‘spread across fifteen connected buildings’라고 했으므로 ②가 일치한다. 옥상정원은 냉난방 에너지 소비를 줄이고(①), 바닥은 콘크리트가 아니라 현무암(basalt)으로 덮여 있다(③). 스피커는 식물 아래 숨겨진 것이 아니라 바위처럼 보이게 만들었으며(④), 입장은 무료이다(⑤).",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8252573ea1",
+"typeId": "eng-h2-b08-u2m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하는 것을 <보기>에서 모두 고른 것의 개수는?\n\nThe Everglades is a wetland that stretches from Lake Okeechobee to Florida Bay. It functions as a “biological supermarket.” Many birds and mammal species rely on the Everglades for food, water, and shelter, particularly during the migration and breeding seasons. For example, the Florida panther has flourished in the Everglades. It was nearly extinct in 1995, with only a dozen adults estimated in the wild. But the whole population in the Everglades National Park had recovered to about 230 by 2017. What is more, the Everglades is the only place where American crocodiles and American alligators coexist. They are found living together where fresh water from Lake Okeechobee meets the salt water of Florida Bay. Besides, the Everglades provides drinking water to people in Florida, with one out of every three people relying on the Everglades for drinking water. Unless the Everglades is preserved, millions of people will suffer from a shortage of drinking water.\n\n<보기>\n(a) Birds and mammals depend on the Everglades for food, water, and shelter, especially during the migration and breeding seasons.\n(b) In 1995, only about twelve adult Florida panthers were estimated to be living in the wild.\n(c) The Florida panther population in the Everglades National Park was about 230 in 1995.\n(d) American crocodiles and alligators live together where Lake Okeechobee’s fresh water meets Florida Bay’s salt water.\n(e) Millions of people in Florida are already suffering from a shortage of drinking water.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "(a)는 본문과 같고, (b)는 ‘a dozen(12)’을 바꿔 쓴 것으로 일치하며, (d)도 일치한다. (c)는 약 230마리로 회복된 시점이 2017년이므로 틀리다. (e)는 ‘Unless the Everglades is preserved’라는 조건이 붙은 미래의 일인데 이미 겪고 있다고 했으므로 틀리다. 따라서 일치하는 것은 (a), (b), (d)의 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b08-u2m4s0t0",
+"custom": true
 }
 ]

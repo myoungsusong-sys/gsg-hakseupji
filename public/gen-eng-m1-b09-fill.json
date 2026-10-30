@@ -2057,5 +2057,609 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-cc27300f40",
+"typeId": "eng-m1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 올바른 문장의 개수는?\n\n(a) Yeji's club members are testing their robots now.\n(b) Jake's spider robot is runing away.\n(c) Mina doesn't writing a story now.\n(d) Will Brian's club members post their webtoons this Friday?\n(e) Hayun's club can creates one beautiful sound.\n(f) Melodia is a singing club in Singapore.",
+"choices": [
+"① 1개",
+"② 2개",
+"③ 3개",
+"④ 4개",
+"⑤ 5개"
+],
+"answer": "③",
+"solution": "올바른 문장은 (a), (d), (f)로 3개이다. (b)는 run의 -ing형이 자음을 한 번 더 쓴 running이어야 한다. (c)는 현재진행형의 부정이므로 Mina isn't writing으로 고쳐야 하고, (e)는 조동사 can 뒤에 동사원형이 와야 하므로 can create가 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9a577b5573",
+"typeId": "eng-m1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것끼리 짝지어진 것은?\n\nHi! I'm Brian. This is Dream and Draw, and my club members ⓐmakes webtoons. Mina is ⓑwriting a story, and I ⓒam drawing pictures. I use a painting app for my pictures. With this app, I can ⓓuses many kinds of brushes and colors. My club members will ⓔpost our new webtoons on our social media site this Friday.",
+"choices": [
+"① ⓐ, ⓑ",
+"② ⓐ, ⓓ",
+"③ ⓑ, ⓒ",
+"④ ⓒ, ⓔ",
+"⑤ ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ의 주어는 my club이 아니라 복수인 my club members이므로 makes가 아니라 make가 되어야 한다. ⓓ는 조동사 can 뒤이므로 동사원형 use를 써야 한다. ⓑ, ⓒ는 「be동사+-ing」 현재진행형이고, ⓔ는 will 뒤에 동사원형이 온 것이므로 모두 바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-346a162ad6",
+"typeId": "eng-m1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 질문과 대답이 어법상 어색한 것은?",
+"choices": [
+"① Is Mina writing a story now? – Yes, she is.",
+"② Does Brian use a painting app for his pictures? – Yes, he does.",
+"③ Are Yeji's club members testing their robots? – Yes, they are.",
+"④ Are Melodia and New Voice in the same country? – No, they don't.",
+"⑤ Will Brian's club members post their webtoons this Friday? – Yes, they will."
+],
+"answer": "④",
+"solution": "be동사(Are)로 물은 질문에는 be동사로 답해야 하므로 ④는 No, they aren't.가 되어야 한다. ①, ③은 현재진행형 의문문에 be동사로, ②는 일반동사 의문문에 does로, ⑤는 will 의문문에 will로 알맞게 답했다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-80da78c7ba",
+"typeId": "eng-m1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 올바른 문장끼리 짝지어진 것은?\n\nⓐ Club members are doing fun activities now.\nⓑ My club members learns programming and build robots.\nⓒ Why don't you visit our social media site and reading our webtoons?\nⓓ Melodia and New Voice are not in the same country, but we can create one beautiful sound.\nⓔ My club is practice for a global music project now.",
+"choices": [
+"① ⓐ, ⓑ",
+"② ⓑ, ⓒ",
+"③ ⓒ, ⓔ",
+"④ ⓐ, ⓒ, ⓓ",
+"⑤ ⓐ, ⓓ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 현재진행형, ⓓ는 be동사의 부정(are not)과 can+동사원형이 바르게 쓰였다. ⓑ는 복수 주어이므로 learns를 learn으로 고쳐야 하고, ⓒ는 Why don't you 뒤의 visit와 and로 이어지므로 reading을 동사원형 read로 고쳐야 한다. ⓔ는 now가 있는 현재진행형이므로 is practicing이 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-cccb8fc06d",
+"typeId": "eng-m1-b09-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ를 어법상 바르게 고친 것은?\n\nToday is the school club day. Club members ⓐdo fun activities now. Let's ⓑmeeting them!\nDo you like robots? I'm Yeji from the robot club, We Makers. My club members ⓒlearns programming and build robots. Right now, we ⓓtesting our robots. This is Jake's spider robot. Watch out! His robot ⓔis runing away!",
+"choices": [
+"① ⓐ: do → doing",
+"② ⓑ: meeting → meets",
+"③ ⓒ: learns → learning",
+"④ ⓓ: testing → are testing",
+"⑤ ⓔ: is runing → running"
+],
+"answer": "④",
+"solution": "ⓓ는 Right now가 있으므로 「be동사+-ing」인 are testing으로 고친 ④가 바르다. ⓐ는 be동사 없이 doing만 쓰면 안 되므로 are doing으로, ⓑ는 Let's 뒤이므로 동사원형 meet로 고쳐야 한다. ⓒ는 복수 주어이고 build와 나란히 쓰였으므로 learn이 맞다. ⓔ는 be동사를 남긴 채 is running으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a9001fc5cf",
+"typeId": "eng-m1-b09-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분을 3개 찾아 바르게 고쳐 쓰시오.\n\nWelcome to my club, New Voice. I'm Hayun. My club members sing songs and performs together. My club is practicing for a global music project now. We will making a music video with Melodia, a singing club in Singapore. Melodia and New Voice don't in the same country, but we can create one beautiful sound.\n\n(1) ________ → ________\n(2) ________ → ________\n(3) ________ → ________",
+"selfGrade": true,
+"answer": "(1) performs → perform (2) making → make (3) don't → are not(aren't)",
+"solution": "주어 My club members가 복수이고 sing과 and로 이어지므로 performs를 perform으로 고쳐야 한다. 조동사 will 뒤에는 동사원형이 오므로 making을 make로 고친다. 형용사구 in the same country 앞에서 부정을 나타낼 때는 일반동사의 부정 don't가 아니라 be동사의 부정 are not(aren't)을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5d105c10ff",
+"typeId": "eng-m1-b09-u2m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 목적으로 가장 알맞은 것은?\n\nI'm Michael from Animal Care Center. We help street animals. Look at the baby cat on the tree! It is gray, and it has black ears. It is scared. Let's help it! Whew, it is safe now. Many street animals need our help. We need volunteers. Can you help us, please?",
+"choices": [
+"길고양이 입양을 권하려고",
+"봉사자를 모집하려고",
+"동물 병원을 홍보하려고",
+"고양이를 기르는 방법을 알려 주려고",
+"나무에 오르는 것의 위험성을 경고하려고"
+],
+"answer": "②",
+"solution": "글쓴이 Michael은 Animal Care Center가 길거리 동물을 돕는 일을 소개합니다. 이어서 \"Many street animals need our help. We need volunteers. Can you help us, please?\"라고 말하며 도움을 요청합니다. 따라서 글의 목적은 봉사자를 모집하는 것입니다. 나무 위 아기 고양이 이야기는 목적을 뒷받침하는 예시일 뿐입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5f8c951791",
+"typeId": "eng-m1-b09-u2m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸 (A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\n\nDo you like animals? Can you understand them well? Let's learn about their feelings in the next quiz.\nHow do these cats feel?\nThe first cat is showing its belly. What does this mean? Is it afraid of something? Not at all! This action shows its trust. The cat also feels safe now. The second cat's ears are forward, and the tail is up. Its tail looks like a question mark. How does the cat feel? It feels happy. Maybe it also wants to have playtime.\nWhat do these dogs want to say?\nThe first dog is bowing. It is saying, \"I want to play with you.\" The dog feels excited, and it wants to have fun right now. Look at the second dog. The dog's head is low, its ears are back, and its tail is down. This body language shows fear. The dog is scared of something. It needs to be alone for a moment.\n\n→ We can understand animals' feelings through their (A)________. For example, a cat showing its belly shows (B)________, and a dog with a low head and a down tail shows (C)________.\n\n   (A)            (B)        (C)",
+"choices": [
+"body language … trust … fear",
+"sounds … trust … fear",
+"body language … fear … trust",
+"body language … trust … excitement",
+"sounds … curiosity … fear"
+],
+"answer": "①",
+"solution": "이 글은 고양이와 개의 몸짓(body language)으로 감정을 알 수 있다는 내용이므로 (A)에는 body language가 알맞고, 소리(sounds)에 대한 언급은 없습니다. 배를 보이는 고양이는 \"Is it afraid of something? Not at all! This action shows its trust.\"라고 했으므로 (B)는 trust입니다. 이때 afraid가 나온다고 fear를 고르면 함정에 걸립니다. 머리가 낮고 꼬리가 내려간 개는 \"This body language shows fear.\"라고 했으므로 (C)는 fear입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e52c51e0d9",
+"typeId": "eng-m1-b09-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A)~(C)에 알맞은 말을 쓰시오.\n\n<조건>\n· (A)는 주어진 철자로 시작하며, 본문의 단어를 알맞은 명사 형태로 바꾸어 쓸 것\n· (B)는 주어진 철자로 시작하며, 본문의 단어를 그대로 쓸 것\n· (C)는 본문에서 찾아 두 단어로 쓸 것\n\nWhat do these dogs want to say?\nThe first dog is bowing. It is saying, \"I want to play with you.\" The dog feels excited, and it wants to have fun right now. Look at the second dog. The dog's head is low, its ears are back, and its tail is down. This body language shows fear. The dog is scared of something. It needs to be alone for a moment.\n\n[요약] The first dog's bowing shows its (A) e________, so it wants to have fun right now. But the second dog's low head, back ears, and down tail show its (B) f________, so it needs to (C)________ ________ for a moment.",
+"selfGrade": true,
+"answer": "(A) excitement (B) fear (C) be alone",
+"solution": "첫 번째 개는 \"The dog feels excited\"라고 했으므로, 형용사 excited를 명사로 바꾼 excitement가 (A)에 들어갑니다. 두 번째 개는 \"This body language shows fear.\"라고 했으므로 (B)는 fear입니다. 마지막 문장 \"It needs to be alone for a moment.\"에서 needs to 뒤에 오는 be alone이 (C)에 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bbdc5461f1",
+"typeId": "eng-m1-b09-u2m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 학생들이 글의 주제·제목·요지에 대해 말한 내용 중 바르게 말한 학생의 수는?\n\nThe first cat is showing its belly. What does this mean? Is it afraid of something? Not at all! This action shows its trust. The cat also feels safe now. The second cat's ears are forward, and the tail is up. Its tail looks like a question mark. How does the cat feel? It feels happy.\nThe first rabbit is standing on its back legs. It is raising its front legs, and its ears are straight. Is it worried about something? Not really. The rabbit is curious about something. The second rabbit is lying down like Superman. It is stretching its legs. Why is it doing that? Is it sick? Don't worry. The rabbit is saying, \"I feel so comfortable.\"\n\n<보기>\n· 지민: 글의 주제는 \"animals' feelings and their body language\"야.\n· 수호: 제목으로 \"Why Do Rabbits Get Sick?\"이 알맞아.\n· 하나: 글의 요지는 \"Animals' actions can tell us their thoughts.\"라고 할 수 있어.\n· 민규: 제목으로 \"Cats and Rabbits Are Always Afraid\"가 어울려.\n· 서연: 글의 주제는 \"how to understand cats' and rabbits' feelings by their poses\"야.",
+"choices": [
+"1명",
+"2명",
+"3명",
+"4명",
+"5명"
+],
+"answer": "③",
+"solution": "이 글은 고양이와 토끼의 자세와 몸짓을 보고 그들의 감정과 생각을 이해하는 내용입니다. 따라서 지민, 하나, 서연의 말이 맞습니다. 수호는 \"Is it sick? Don't worry.\"라는 질문에 끌린 함정이며, 토끼는 아픈 것이 아니라 편안한 상태입니다. 민규도 \"Is it afraid ~? Not at all!\", \"Is it worried ~? Not really.\"라는 내용과 반대로 말했습니다. 바르게 말한 학생은 3명입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6805706177",
+"typeId": "eng-m1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제로 가장 알맞은 것은?\n\nAugust 2\nJeju-do is a beautiful island in Korea. We went there on a very hot day, and we became tired. However, we got our energy back thanks to dombegogi. It surprised me in two ways. First, it was pork on a cutting board, not on a plate. Second, the meat was so soft! I had it with a special fish sauce, and the sauce was great, too. Later, I learned about the meaning of dombe. It means a cutting board in Jeju's language.",
+"choices": [
+"a hot summer day on a beautiful island",
+"a special fish sauce made in Jeju-do",
+"a surprising local pork dish in Jeju-do",
+"how to make dombegogi at home",
+"different kinds of cutting boards in Jeju-do"
+],
+"answer": "③",
+"solution": "글쓴이는 제주도에서 돔베고기를 먹고 힘을 되찾았습니다. 도마 위에 나온 고기와 아주 부드러운 식감에 두 번 놀랐고, '돔베'라는 이름의 뜻도 알게 되었습니다. 글 전체가 돔베고기라는 놀라운 지역 돼지고기 요리를 다루므로 ③이 알맞습니다. ①은 도입부의 배경일 뿐이고 ②는 세부 내용입니다. ④ 만드는 법과 ⑤ 여러 종류의 도마는 글에 나오지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e5cb5daf51",
+"typeId": "eng-m1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 날짜별 내용을 정리한 것으로 알맞지 않은 것은?\n\nDuring the summer vacation, William traveled around Korea with his family. This is his food diary.\nJuly 25\nWe went to Damyang and visited Jungnogwon, a famous bamboo garden. We enjoyed walking in the garden. After we looked around, we ate two local dishes, daetongbap and tteokgalbi. Daetongbap is rice in a bamboo bowl. I loved its unique bamboo smell. Tteokgalbi, a Korean beef dish, was soft and sweet. The dishes really went well together.\nJuly 30\nWe visited Tongyeong and went up the mountain by cable car. Seeing the blue ocean and the green islands was fantastic! Near the sea, we found a local restaurant and ate chungmugimbap. It wasn't like other types of gimbap. There was only rice inside the seaweed. Kimchi and spicy squid were on the side. It was spicy but really delicious. I heard about the history of this food. Chungmu is an old name for Tongyeong. Long ago, fishermen in this town started to eat chungmugimbap because it did not go bad quickly.\nAugust 2\nJeju-do is a beautiful island in Korea. We went there on a very hot day, and we became tired. However, we got our energy back thanks to dombegogi. It surprised me in two ways. First, it was pork on a cutting board, not on a plate. Second, the meat was so soft! I had it with a special fish sauce, and the sauce was great, too. Later, I learned about the meaning of dombe. It means a cutting board in Jeju's language.",
+"choices": [
+"July 25 – walking in a bamboo garden and trying two local dishes",
+"July 25 – rice in a bamboo bowl and a soft, sweet beef dish",
+"July 30 – a great view from a mountain and gimbap with only rice inside",
+"July 30 – a gimbap that fishermen ate because it was easy to make",
+"August 2 – getting energy back with soft pork on a cutting board"
+],
+"answer": "④",
+"solution": "본문에서 어부들이 충무김밥을 먹기 시작한 이유는 'it did not go bad quickly(빨리 상하지 않았다)'입니다. 만들기 쉬워서라는 내용은 없으므로 ④가 알맞지 않습니다. ①과 ②는 7월 25일 담양 단락의 내용입니다. ③은 7월 30일 통영 단락, ⑤는 8월 2일 제주 단락의 핵심과 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-dc10aec876",
+"typeId": "eng-m1-b09-u3m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 윗글을 요약한 것이다. 빈칸 (A), (B), (C)에 들어갈 알맞은 말을 본문에서 찾아 쓰시오. (단, 필요하면 형태를 바꿀 것. (B)는 두 단어, (A)와 (C)는 한 단어로 쓸 것)\n\nAugust 2\nJeju-do is a beautiful island in Korea. We went there on a very hot day, and we became tired. However, we got our energy back thanks to dombegogi. It surprised me in two ways. First, it was pork on a cutting board, not on a plate. Second, the meat was so soft! I had it with a special fish sauce, and the sauce was great, too. Later, I learned about the meaning of dombe. It means a cutting board in Jeju's language.\n\n<요약문>\nOn a hot day in Jeju-do, William got his energy back by eating dombegogi. He was (A)__________ because the pork was served on a (B)__________ __________ instead of a plate. He also learned that the name of the dish comes from a word in Jeju's (C)__________.",
+"selfGrade": true,
+"answer": "(A) surprised (B) cutting board (C) language",
+"solution": "본문의 'It surprised me'를 요약문에서는 'He was ~' 구조로 바꿔 써야 합니다. 그래서 (A)에는 동사 surprised가 아니라 '놀란'이라는 뜻의 형용사 surprised가 들어갑니다(형태는 같지만 품사가 달라짐). (B)는 'pork on a cutting board, not on a plate'에서 cutting board를 찾아 씁니다. (C)는 'dombe'가 'Jeju's language'의 낱말이라는 마지막 문장에서 language를 찾아 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5f533c6afd",
+"typeId": "eng-m1-b09-u3m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 주제를 가장 잘 나타낸 문장은?\n\nDuring the summer vacation, William traveled around Korea with his family. This is his food diary.\nJuly 25\nWe went to Damyang and visited Jungnogwon, a famous bamboo garden. We enjoyed walking in the garden. After we looked around, we ate two local dishes, daetongbap and tteokgalbi. Daetongbap is rice in a bamboo bowl. I loved its unique bamboo smell. Tteokgalbi, a Korean beef dish, was soft and sweet. The dishes really went well together.\nJuly 30\nWe visited Tongyeong and went up the mountain by cable car. Seeing the blue ocean and the green islands was fantastic! Near the sea, we found a local restaurant and ate chungmugimbap. It wasn't like other types of gimbap. There was only rice inside the seaweed. Kimchi and spicy squid were on the side. It was spicy but really delicious. I heard about the history of this food. Chungmu is an old name for Tongyeong. Long ago, fishermen in this town started to eat chungmugimbap because it did not go bad quickly.\nAugust 2\nJeju-do is a beautiful island in Korea. We went there on a very hot day, and we became tired. However, we got our energy back thanks to dombegogi. It surprised me in two ways. First, it was pork on a cutting board, not on a plate. Second, the meat was so soft! I had it with a special fish sauce, and the sauce was great, too. Later, I learned about the meaning of dombe. It means a cutting board in Jeju's language.",
+"choices": [
+"William learned why fishermen in Tongyeong ate chungmugimbap.",
+"William enjoyed unique local foods while traveling to different places in Korea.",
+"Most local dishes in Korea are spicy, soft, and sweet.",
+"William's family liked the beautiful nature of Korea more than its food.",
+"In many parts of Korea, people serve food on a cutting board."
+],
+"answer": "②",
+"solution": "윌리엄은 담양, 통영, 제주도를 여행하며 각 지역의 특별한 음식을 맛본 경험을 날짜별로 기록했습니다. 따라서 글 전체를 아우르는 ②가 주제입니다. ①은 통영 단락의 세부 내용일 뿐입니다. ③은 각 음식의 맛을 지나치게 일반화했고, ⑤는 제주도에만 해당하는 내용을 한국의 여러 지역으로 넓혔습니다. ④는 자연을 음식보다 더 좋아했다는 내용으로, 본문에 근거가 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e5031c28c3",
+"typeId": "eng-m1-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 문장은?\n\n① Mina is writing a new story now.\n② I am drawing pictures with a painting app.\n③ Watch out! Jake's spider robot is running away!\n④ Right now, we are test our robots.\n⑤ My club members will post our new webtoons this Friday.",
+"choices": [
+"Mina is writing a new story now.",
+"I am drawing pictures with a painting app.",
+"Watch out! Jake's spider robot is running away!",
+"Right now, we are test our robots.",
+"My club members will post our new webtoons this Friday."
+],
+"answer": "④",
+"solution": "현재진행형은 「be동사 + 동사원형-ing」 형태로 써야 한다. ④는 지금 일어나는 일을 나타내므로 are test가 아니라 are testing이 되어야 한다. ①②③은 현재진행형이 올바르고, ⑤는 「will + 동사원형」의 미래 표현으로 어법상 맞다. 따라서 옳지 않은 문장은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5406f71d9e",
+"typeId": "eng-m1-b09-u5m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 제목으로 알맞은 것은?\n\nI am Nari. I am a haenyeo in Geoje. I dive in the water and collect seafood. In the morning, I check the tide and the weather. I wear a diving suit and swimming glasses to work in the water. I love diving and spending time in the beautiful sea. I don't collect too much seafood. This is good for the ocean. These days, I see a lot of trash in the water, so I pick up the trash. I believe that we should care about the ocean.",
+"choices": [
+"A Guide to Diving Safely in Geoje",
+"The Haenyeo Who Removes All Trash from the Sea",
+"My Life as a Haenyeo and My Care for the Sea",
+"Why the Seafood in Geoje Tastes So Good",
+"Steps to Become a Professional Haenyeo"
+],
+"answer": "③",
+"solution": "나리는 해녀로서 바다에서 일하는 자신의 삶을 소개하면서, 동시에 해산물을 지나치게 잡지 않고 쓰레기를 줍는 등 바다를 아끼는 모습을 함께 전한다. 따라서 '일'과 '바다를 아끼는 마음'을 모두 담은 ③이 제목으로 알맞다. ②는 쓰레기 줍기라는 일부 내용만 강조해 글 전체를 포괄하지 못하므로 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5927f90b1e",
+"typeId": "eng-m1-b09-u5m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 요지로 알맞은 것은?\n\nI am Nari. I am a haenyeo in Geoje. I dive in the water and collect seafood. I don't collect too much seafood. These days, I see a lot of trash in the water, so I pick up the trash. I believe that we should care about the ocean.\nMy name is Jihan. I am a vet at the wild animal care center in Jirisan. I take care of sick wild animals and send them back to their homes. I think that protecting wild animals is important. We should keep an eye on them and their homes to live together.\nMy name is Eun, and I am an Arctic scientist. I study the soil, seawater, and ice in the Arctic. The Arctic Ocean has the answers to the climate crisis. I hope that my work can help the Earth.",
+"choices": [
+"People with nature-related jobs work to protect the Earth and nature.",
+"Working in nature is far more dangerous than working in a city.",
+"Scientists play the most important role in solving the climate crisis.",
+"You should choose a job that pays well and is also exciting.",
+"Nature provides people with many useful resources for daily life."
+],
+"answer": "①",
+"solution": "세 사람 모두 바다·산·북극에서 자연과 관련된 일을 하면서 바다를 아끼고, 야생동물을 보호하고, 지구를 돕고자 하는 공통된 마음을 드러낸다. 따라서 '자연 관련 직업을 가진 사람들이 지구와 자연을 지키기 위해 일한다'는 ①이 요지다. ③은 과학자만 부각해 과도하게 일반화한 함정이고, ④는 글에 없는 조언이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5501fef536",
+"typeId": "eng-m1-b09-u5m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 다음과 같이 요약할 때, 빈칸 (A), (B)에 들어갈 말로 알맞게 연결된 것은?\n\nMy name is Eun, and I am an Arctic scientist. I work at the Arctic Dasan Station in Norway. I study the soil, seawater, and ice in the Arctic. I often travel on the special ship, Araon. This ship is stronger than other ships. It can break thick ice across the ocean. Thanks to Araon, I can collect seawater samples. The Arctic Ocean has the answers to the climate crisis. I hope that my work can help the Earth.\n\n→ Eun works as an Arctic scientist in Norway. With the strong ship Araon, she collects (A)__________ to study the Arctic. She believes the Arctic Ocean holds the answers to the (B)__________ and hopes to help the Earth.",
+"choices": [
+"(A) soil samples (B) energy crisis",
+"(A) seawater samples (B) climate crisis",
+"(A) ice samples (B) food crisis",
+"(A) seawater samples (B) energy crisis",
+"(A) soil samples (B) climate crisis"
+],
+"answer": "②",
+"solution": "은은 북극의 흙·바닷물·얼음을 '연구'하지만, 아라온 덕분에 실제로 '채집(collect)'하는 것은 seawater samples(바닷물 표본)이므로 (A)는 seawater samples다. 또한 북극해가 'climate crisis(기후 위기)'의 답을 가지고 있다고 했으므로 (B)는 climate crisis다. 따라서 ②가 정답이며, 연구 대상인 soil·ice를 (A)에 넣은 선지는 함정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-27458d99a4",
+"typeId": "eng-m1-b09-u5m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 아래와 같이 요약할 때, 빈칸에 들어갈 말을 본문에서 각각 찾아 쓰시오. (네 칸을 순서대로 쓸 것)\n\nI am Nari. I am a haenyeo in Geoje. I dive in the water and collect seafood. In the morning, I check the tide and the weather. I wear a diving suit and swimming glasses to work in the water. I love diving and spending time in the beautiful sea. I don't collect too much seafood. This is good for the ocean. These days, I see a lot of trash in the water, so I pick up the trash. I believe that we should care about the ocean.\n\n→ Nari, a haenyeo in Geoje, dives to collect __________. To protect the ocean, she does not collect __________ seafood and picks up the __________ she finds in the water. She believes that we should __________ about the ocean.",
+"selfGrade": true,
+"answer": "seafood / too much / trash / care",
+"solution": "나리는 해산물(seafood)을 채집하지만 바다를 위해 '너무 많이(too much)' 잡지 않는다고 했고, 물속의 '쓰레기(trash)'를 줍는다고 했다. 마지막 문장에서 우리는 바다를 '아껴야(care)' 한다고 믿는다고 했으므로 네 빈칸에는 각각 seafood, too much, trash, care가 들어간다. 모두 본문에 쓰인 낱말을 그대로 찾아 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-936ea74591",
+"typeId": "eng-m1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 내용과 일치하는 것을 고르시오.\n\nJuly 25\nWe went to Damyang and visited Jungnogwon, a famous bamboo garden. We enjoyed walking in the garden. After we looked around, we ate two local dishes, daetongbap and tteokgalbi. Daetongbap is rice in a bamboo bowl. I loved its unique bamboo smell. Tteokgalbi, a Korean beef dish, was soft and sweet. The dishes really went well together.",
+"choices": [
+"Jungnogwon is a famous bamboo garden in Damyang.",
+"William disliked the bamboo smell of daetongbap.",
+"Daetongbap is a Korean beef dish.",
+"Tteokgalbi was hard and sour.",
+"Daetongbap and tteokgalbi did not go well together."
+],
+"answer": "①",
+"solution": "글에서 Jungnogwon을 'a famous bamboo garden'이라고 했으므로 ①이 일치한다. William은 대통밥의 대나무 향을 좋아했고(loved), 소고기 요리는 떡갈비이며, 떡갈비는 부드럽고 달았고(soft and sweet), 두 음식은 잘 어울렸다(went well together)고 했으므로 ②③④⑤는 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9cda89fb15",
+"typeId": "eng-m1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것을 고르시오.\n\nJuly 30\nWe visited Tongyeong and went up the mountain by cable car. Seeing the blue ocean and the green islands was fantastic! Near the sea, we found a local restaurant and ate chungmugimbap. It wasn't like other types of gimbap. There was only rice inside the seaweed. Kimchi and spicy squid were on the side. It was spicy but really delicious. Long ago, fishermen in this town started to eat chungmugimbap because it did not go bad quickly.",
+"choices": [
+"William and his family went up the mountain by cable car.",
+"They could see the blue ocean and the green islands.",
+"Chungmugimbap had only rice inside the seaweed.",
+"Kimchi and spicy squid were served on the side.",
+"Fishermen started eating chungmugimbap because it tasted sweet."
+],
+"answer": "⑤",
+"solution": "어부들이 충무김밥을 먹기 시작한 이유는 '잘 상하지 않아서(it did not go bad quickly)'이지 맛이 달아서가 아니므로 ⑤가 일치하지 않는다. 케이블카로 산에 올랐고, 푸른 바다와 녹색 섬을 보았으며, 김밥 안에는 밥만 들어 있었고, 김치와 매운 오징어는 곁들여 나왔으므로 ①~④는 모두 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e9ccf8058f",
+"typeId": "eng-m1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 대답할 수 없는 질문을 고르시오.\n\nAugust 2\nJeju-do is a beautiful island in Korea. We went there on a very hot day, and we became tired. However, we got our energy back thanks to dombegogi. It surprised me in two ways. First, it was pork on a cutting board, not on a plate. Second, the meat was so soft! I had it with a special fish sauce, and the sauce was great, too. Later, I learned about the meaning of dombe. It means a cutting board in Jeju's language.",
+"choices": [
+"Why did William and his family become tired in Jeju-do?",
+"How did William and his family get their energy back?",
+"In what two ways did dombegogi surprise William?",
+"How much did the dombegogi cost in Jeju-do?",
+"What does dombe mean in Jeju's language?"
+],
+"answer": "④",
+"solution": "글에 돔베고기의 가격에 대한 정보는 없으므로 ④는 대답할 수 없다. 더운 날이라 지쳤고, 돔베고기 덕분에 기운을 되찾았으며, 두 가지(접시가 아닌 도마 위의 돼지고기·아주 부드러운 고기)로 놀랐고, dombe는 제주 말로 도마를 뜻한다고 했으므로 ①②③⑤는 모두 답할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-909ecb3382",
+"typeId": "eng-m1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용과 일치하면 T, 일치하지 않으면 F라고 할 때, ㉠, ㉡, ㉢를 순서대로 바르게 연결한 것을 고르시오.\n\nWe visited Jungnogwon in Damyang and ate daetongbap and tteokgalbi. Daetongbap is rice in a bamboo bowl, and I loved its unique bamboo smell. Later we went to Tongyeong and went up the mountain by cable car. Near the sea, we found a local restaurant and ate chungmugimbap. In Jeju-do, we ate dombegogi. First, it was pork on a cutting board, not on a plate. Second, the meat was so soft!\n\n㉠ Daetongbap is served in a bamboo bowl and has a unique bamboo smell.\n㉡ William ate chungmugimbap at a restaurant on top of the mountain in Tongyeong.\n㉢ Dombegogi is pork served on a cutting board instead of on a plate.",
+"choices": [
+"T - T - T",
+"T - F - T",
+"T - F - F",
+"F - T - F",
+"F - F - T"
+],
+"answer": "②",
+"solution": "㉠ 대통밥은 대나무 그릇에 담긴 밥이며 독특한 대나무 향이 있다고 했으므로 T이다. ㉡ 충무김밥을 먹은 식당은 '바다 근처(Near the sea)'에서 발견한 곳이지 산 정상이 아니므로 F이다. ㉢ 돔베고기는 접시가 아닌 도마 위에 놓인 돼지고기이므로 T이다. 따라서 T-F-T인 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-184340aee7",
+"typeId": "eng-m1-b09-u3m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 내용과 일치하는 것을 고르시오.\n\nDuring the summer vacation, William traveled around Korea with his family. In Damyang, they ate daetongbap and tteokgalbi, a Korean beef dish. In Tongyeong, they ate chungmugimbap, which had only rice inside the seaweed, with kimchi and spicy squid on the side. In Jeju-do, they ate dombegogi, which was pork on a cutting board. William had it with a special fish sauce, and the sauce was great, too.",
+"choices": [
+"William visited three different places during his family trip.",
+"William ate beef both in Damyang and in Jeju-do.",
+"Chungmugimbap is wrapped with various vegetables inside the seaweed.",
+"William traveled around Korea alone.",
+"William disliked the fish sauce he had with dombegogi."
+],
+"answer": "①",
+"solution": "William은 담양·통영·제주도 세 곳을 방문했으므로 ①이 일치한다. 제주의 돔베고기는 소고기가 아닌 돼지고기(pork)이고, 충무김밥 안에는 밥만 들어 있었으며, William은 가족과 함께 여행했고, 특별한 생선 소스가 훌륭했다(great)고 했으므로 ②③④⑤는 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-91daa43bc9",
+"typeId": "eng-m1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하는 것의 개수는?\n\nMy name is Eun, and I am an Arctic scientist. I work at the Arctic Dasan Station in Norway. I study the soil, seawater, and ice in the Arctic. I often travel on the special ship, Araon. This ship is stronger than other ships. It can break thick ice across the ocean. Thanks to Araon, I can collect seawater samples. The Arctic Ocean has the answers to the climate crisis. I hope that my work can help the Earth.\n\nⓐ Eun studies three things in the Arctic: the soil, seawater, and ice.\nⓑ Eun can collect seawater samples because of Araon.\nⓒ Araon can break only thin ice across the ocean.\nⓓ Eun already found the answers to the climate crisis.\nⓔ Eun hopes that the Earth can help her work.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "ⓐ Eun은 북극의 흙, 바닷물, 얼음을 연구하므로 일치하고, ⓑ 'Thanks to Araon'으로 보아 아라온호 덕분에 바닷물 샘플을 모으므로 일치한다. ⓒ 아라온호는 두꺼운(thick) 얼음을 깰 수 있고, ⓓ 북극해가 기후 위기의 해답을 가지고 있다고 했을 뿐 Eun이 이미 해답을 찾았다는 말은 없다. ⓔ Eun은 자신의 일이 지구를 돕기를 바라는 것이므로 주어와 목적어가 뒤바뀌었다. 따라서 일치하는 것은 ⓐ, ⓑ 2개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-881e1fa15d",
+"typeId": "eng-m1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글을 읽고 질문에 답한 것으로 알맞지 않은 것은?\n\nI am Nari. I am a haenyeo in Geoje. I dive in the water and collect seafood. In the morning, I check the tide and the weather. I wear a diving suit and swimming glasses to work in the water. I love diving and spending time in the beautiful sea. I don't collect too much seafood. This is good for the ocean. These days, I see a lot of trash in the water, so I pick up the trash. I believe that we should care about the ocean.",
+"choices": [
+"Q: Where does Nari work as a haenyeo?\n   A: She works in Geoje.",
+"Q: What does Nari wear to work in the water?\n   A: She wears a diving suit and swimming glasses.",
+"Q: What does Nari do for the ocean?\n   A: She doesn't collect too much seafood.",
+"Q: What does Nari check in the morning?\n   A: She checks the seafood and the trash.",
+"Q: What does Nari do with the trash in the water?\n   A: She picks it up."
+],
+"answer": "④",
+"solution": "Nari는 아침에 조류(the tide)와 날씨(the weather)를 확인한다고 했으므로 ④의 대답은 본문 내용과 맞지 않는다. 해산물(seafood)과 쓰레기(trash)는 본문에 나오는 다른 낱말로 만든 함정이다. 나머지 대답은 모두 본문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dd60d58771",
+"typeId": "eng-m1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nMy name is Jihan. I am a vet at the wild animal care center in Jirisan. I take care of sick wild animals in the center and send them back to their homes. Also, I often climb the mountain to look after wild animals like bears. I'm proud of my job. I think that protecting wild animals is important. We should keep an eye on them and their homes to live together.",
+"choices": [
+"Jihan은 지리산에 있는 야생 동물 보호 센터의 수의사이다.",
+"Jihan은 아픈 야생 동물을 센터에서 돌본 뒤 그들의 서식지로 돌려보낸다.",
+"Jihan은 곰과 같은 야생 동물을 돌보기 위해 자주 산에 오른다.",
+"Jihan은 자신의 직업을 자랑스럽게 여긴다.",
+"Jihan은 함께 살기 위해 야생 동물과 그 서식지에서 멀리 떨어져 있어야 한다고 생각한다."
+],
+"answer": "⑤",
+"solution": "'keep an eye on'은 '~을 지켜보다, 주의 깊게 살피다'라는 뜻이다. Jihan은 함께 살기 위해 야생 동물과 그 서식지를 지켜봐야 한다고 했지, 멀리 떨어져 있어야 한다고 하지 않았다. 따라서 ⑤가 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-75cff824a6",
+"typeId": "eng-m1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글의 내용과 일치하는 것은?\n\nSome people love working in nature. They work in the sea, mountains, or even in the Arctic. Let's meet them and listen to their stories.\n\nI am Nari. I am a haenyeo in Geoje. I dive in the water and collect seafood. In the morning, I check the tide and the weather. I wear a diving suit and swimming glasses to work in the water. I love diving and spending time in the beautiful sea. I don't collect too much seafood. This is good for the ocean. These days, I see a lot of trash in the water, so I pick up the trash. I believe that we should care about the ocean.\n\nMy name is Eun, and I am an Arctic scientist. I work at the Arctic Dasan Station in Norway. I study the soil, seawater, and ice in the Arctic. I often travel on the special ship, Araon. This ship is stronger than other ships. It can break thick ice across the ocean. Thanks to Araon, I can collect seawater samples. The Arctic Ocean has the answers to the climate crisis. I hope that my work can help the Earth.\n\nMy name is Jihan. I am a vet at the wild animal care center in Jirisan. I take care of sick wild animals in the center and send them back to their homes. Also, I often climb the mountain to look after wild animals like bears. I'm proud of my job. I think that protecting wild animals is important. We should keep an eye on them and their homes to live together.",
+"choices": [
+"Nari checks the tide and the weather at night.",
+"Eun travels on Araon to look after wild animals like bears.",
+"Jihan sends sick wild animals to the station in Norway.",
+"Both Nari and Jihan think that people should care about nature.",
+"Both Eun and Jihan work in the sea."
+],
+"answer": "④",
+"solution": "Nari는 바다를 돌봐야 한다고 믿고, Jihan은 야생 동물을 보호하는 것이 중요하다고 생각하므로 두 사람 모두 자연을 돌봐야 한다고 생각한다는 ④가 일치한다. ① Nari는 아침에 조류와 날씨를 확인한다. ② 곰 같은 야생 동물을 돌보는 사람은 Jihan이고, Eun은 아라온호로 바닷물 샘플을 모은다. ③ Jihan은 동물을 그들의 서식지로 돌려보내며, 노르웨이의 기지는 Eun이 일하는 곳이다. ⑤ Eun은 북극, Jihan은 산(지리산)에서 일한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-4089279fae",
+"typeId": "eng-m1-b09-u5m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "윗글을 읽고 답할 수 있는 질문을 모두 고른 것은?\n\nMy name is Eun, and I am an Arctic scientist. I work at the Arctic Dasan Station in Norway. I study the soil, seawater, and ice in the Arctic. I often travel on the special ship, Araon. This ship is stronger than other ships. It can break thick ice across the ocean. Thanks to Araon, I can collect seawater samples. The Arctic Ocean has the answers to the climate crisis. I hope that my work can help the Earth.\n\nⓐ In which country is the Arctic Dasan Station?\nⓑ How thick is the ice that Araon can break?\nⓒ What can Eun collect thanks to Araon?\nⓓ What are the answers to the climate crisis?\nⓔ What does Eun study in the Arctic?",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ",
+"ⓐ, ⓒ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ 다산 기지는 노르웨이에 있고, ⓒ 아라온호 덕분에 바닷물 샘플을 모을 수 있으며, ⓔ 흙, 바닷물, 얼음을 연구하므로 모두 답할 수 있다. ⓑ 얼음이 두껍다(thick)고만 했을 뿐 구체적인 두께는 나오지 않는다. ⓓ 북극해가 기후 위기의 해답을 가지고 있다고만 했고, 그 해답이 무엇인지는 나오지 않으므로 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8c09b525fe",
+"typeId": "eng-m1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어와 영어 뜻풀이가 어울리지 않는 것은?",
+"choices": [
+"vet – a doctor who takes care of sick animals",
+"tide – the regular rise and fall of the level of the sea",
+"collect – to throw useless things away",
+"dive – to go down into the water, usually head first",
+"soil – the top layer of the earth where plants grow"
+],
+"answer": "③",
+"solution": "collect는 '모으다, 수집하다'라는 뜻이다. 영영풀이는 '필요 없는 것을 버리다'(to throw useless things away)라고 되어 있어 뜻이 맞지 않는다. 본문에서 나리는 'collect seafood(해산물을 모으다)'로 쓰였다. 나머지 vet, tide, dive, soil의 뜻풀이는 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c1f9b955c0",
+"typeId": "eng-m1-b09-u5m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• We should ______ an eye on wild animals and their homes.\n• Please ______ your promise and come to the center on time.",
+"choices": [
+"take",
+"keep",
+"look",
+"make",
+"get"
+],
+"answer": "②",
+"solution": "'keep an eye on'은 '~을 계속 지켜보다'라는 숙어이고, 'keep one's promise'는 '약속을 지키다'라는 표현이다. 두 빈칸 모두 keep이 들어가야 한다. take an eye on, look an eye on 등은 쓰지 않는 잘못된 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5cb2096e5a",
+"typeId": "eng-m1-b09-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 영영풀이가 설명하는 단어를 본문에 나온 형태로 각각 쓰시오.\n\n(1) a person whose job is to take care of sick animals\n(2) to go under the water, especially head first",
+"selfGrade": true,
+"answer": "vet / dive",
+"solution": "(1) '아픈 동물을 돌보는 일을 하는 사람'은 vet(수의사)이다. 지한의 직업으로 본문에 나온다. (2) '물속으로, 특히 머리부터 들어가다'는 dive(잠수하다)이다. 해녀 나리가 'I dive in the water'로 쓴 단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b8130c06ca",
+"typeId": "eng-m1-b09-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말과 같은 뜻이 되도록 <보기>의 표현을 문맥과 어법에 맞는 형태로 빈칸에 쓰시오. (중복 사용 금지)\n\n<보기> be proud of / keep an eye on / look after\n\n(1) 지한은 자신의 직업을 자랑스러워한다.\n→ Jihan ______________ his job.\n(2) 우리는 야생동물들을 계속 지켜봐야 한다.\n→ We should ______________ wild animals.\n(3) 어제 나는 아픈 곰 한 마리를 하루 종일 돌보았다.\n→ Yesterday I ______________ a sick bear all day.",
+"selfGrade": true,
+"answer": "is proud of / keep an eye on / looked after",
+"solution": "(1) 주어가 3인칭 단수 현재이므로 be동사는 is → is proud of(~을 자랑스러워하다). (2) 조동사 should 뒤에는 동사원형이므로 keep an eye on(~을 계속 지켜보다). (3) Yesterday, all day로 과거 시제이므로 look → looked, 즉 looked after(~을 돌보았다)로 쓴다. 세 표현을 중복 없이 하나씩 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5e1f99b069",
+"typeId": "eng-m1-b09-u5m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "우리말과 같은 뜻이 되도록 <조건>에 맞게 영어 문장을 완성하시오.\n\n나는 아픈 야생동물들을 돌보는 것을 자랑스러워한다.\n\n<조건>\n1. be proud of, take care of 를 모두 사용할 것\n2. of 뒤에는 동명사(-ing) 형태를 쓸 것\n3. sick, wild animals 를 사용할 것",
+"selfGrade": true,
+"answer": "I am proud of taking care of sick wild animals.",
+"solution": "'~을 자랑스러워하다'는 be proud of, '~을 돌보다'는 take care of를 쓴다. 전치사 of 뒤에는 동명사가 와야 하므로 take care of는 taking care of가 된다. 목적어로 '아픈 야생동물들'인 sick wild animals를 넣어 'I am proud of taking care of sick wild animals.'로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u5m7s0t0",
+"custom": true
 }
 ]
