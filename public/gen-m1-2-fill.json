@@ -4261,5 +4261,47 @@
 "twinGroup": "tw-17807",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-7aeef0a9cb",
+"typeId": "17725",
+"kind": "주관식",
+"diff": 3,
+"body": "점 $O$에서 시작하는 두 반직선 $OA$, $OE$는 서로 반대 방향이다. 직선 $AE$의 한쪽에 세 반직선 $OB$, $OC$, $OD$를 그어, 평각 $AOE$의 내부를 $OA$에서 $OE$까지 돌 때 $OB$, $OC$, $OD$를 이 순서로 만나도록 하였다. 다음 조건을 모두 만족할 때, $\\angle AOC$의 이등분선과 $\\angle BOE$의 이등분선이 이루는 작은 각의 크기를 구하시오.\n\n$\\angle AOC:\\angle BOD:\\angle COE=7:9:11$\n\n$\\angle AOB:\\angle DOE=2:7$",
+"selfGrade": true,
+"answer": "$65^\\circ$",
+"solution": "$\\angle AOC+\\angle COE=180^\\circ$이므로 $\\angle AOC=180^\\circ\\times\\frac{7}{7+11}=70^\\circ$, $\\angle COE=110^\\circ$이다. 따라서 $\\angle BOD=70^\\circ\\times\\frac{9}{7}=90^\\circ$이다.\n$\\angle AOB+\\angle BOD+\\angle DOE=180^\\circ$이므로 $\\angle AOB+\\angle DOE=90^\\circ$이다. 두 각의 비가 $2:7$이므로 $\\angle AOB=90^\\circ\\times\\frac{2}{9}=20^\\circ$이다. 따라서 $\\angle BOE=180^\\circ-20^\\circ=160^\\circ$이다.\n평각 $AOE$의 내부에서 두 이등분선이 $OA$와 이루는 각의 크기는 각각 $70^\\circ\\div2=35^\\circ$, $20^\\circ+160^\\circ\\div2=100^\\circ$이다. 따라서 구하는 작은 각의 크기는 $100^\\circ-35^\\circ=65^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17725",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-304a1e6586",
+"typeId": "17725",
+"kind": "주관식",
+"diff": 4,
+"body": "점 $O$에서 시작하는 네 반직선 $OA$, $OB$, $OC$, $OD$가 시계 반대 방향으로 이 순서로 놓여 있다. 이웃한 두 반직선 사이의 네 각 $\\angle AOB$, $\\angle BOC$, $\\angle COD$, $\\angle DOA$는 모두 $180^\\circ$보다 작고, 그 합은 $360^\\circ$이다. 다음 조건을 모두 만족할 때, $\\angle AOB$의 이등분선과 $\\angle COD$의 이등분선이 이루는 작은 각의 크기를 구하시오.\n\n$\\angle AOB:\\angle BOC=3:4$\n\n$\\angle COD:\\angle DOA=5:6$\n\n$\\angle BOC+\\angle DOA=202^\\circ$",
+"selfGrade": true,
+"answer": "$157^\\circ$",
+"solution": "$\\angle AOB=3x^\\circ$, $\\angle BOC=4x^\\circ$라 하면 $\\angle DOA=(202-4x)^\\circ$이다. $\\angle COD:\\angle DOA=5:6$이므로 $\\angle COD=\\left\\{\\frac{5}{6}(202-4x)\\right\\}^\\circ$이다.\n네 각의 합이 $360^\\circ$이므로\n$3x+4x+\\frac{5}{6}(202-4x)+(202-4x)=360$이다.\n양변에 $6$을 곱하여 정리하면 $18x+11(202-4x)=2160$, $26x=62$이므로 $x=31$이 아니라는 계산이 나오지 않도록 원식을 정확히 전개해야 한다. 정확히 전개하면 $42x+5(202-4x)+6(202-4x)=2160$, 즉 $2222-2x=2160$이므로 $x=31$이다.\n따라서 $\\angle AOB=93^\\circ$, $\\angle BOC=124^\\circ$, $\\angle COD=65^\\circ$, $\\angle DOA=78^\\circ$이다.\n두 이등분선 사이에서 $OB$, $OC$를 지나는 쪽의 각의 크기는 $93^\\circ\\div2+124^\\circ+65^\\circ\\div2=203^\\circ$이다. 이는 $180^\\circ$보다 크므로 구하는 작은 각의 크기는 $360^\\circ-203^\\circ=157^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17725",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b650ce703a",
+"typeId": "17725",
+"kind": "주관식",
+"diff": 4,
+"body": "점 $O$에서 시작하는 두 반직선 $OA$, $OD$는 서로 반대 방향이다. 직선 $AD$의 한쪽에 두 반직선 $OB$, $OC$를 그어, 평각 $AOD$의 내부를 $OA$에서 $OD$까지 돌 때 $OB$, $OC$를 이 순서로 만나도록 하였다. 반직선 $OP$, $OQ$는 각각 $\\angle AOB$, $\\angle COD$의 이등분선이며, 다음 조건을 만족한다.\n\n$\\angle AOB:\\angle COD=5:7$\n\n$\\angle POQ:\\angle BOC=2:1$\n\n직선 $AD$를 기준으로 $OB$와 같은 쪽에 반직선 $OR$를 그어 $OR\\perp OB$가 되게 하였다. $\\angle ROQ$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$5^\\circ$",
+"solution": "$\\angle BOC=x^\\circ$라 하면 $\\angle AOB+\\angle COD=(180-x)^\\circ$이다. $OP$, $OQ$가 각각 $\\angle AOB$, $\\angle COD$의 이등분선이므로\n$\\angle POQ=\\frac{1}{2}\\angle AOB+\\angle BOC+\\frac{1}{2}\\angle COD=\\left(90+\\frac{x}{2}\\right)^\\circ$이다.\n$\\angle POQ:\\angle BOC=2:1$이므로 $90+\\frac{x}{2}=2x$이다. 이를 풀면 $x=60$이다.\n따라서 $\\angle AOB+\\angle COD=120^\\circ$이고, 두 각의 비가 $5:7$이므로 $\\angle AOB=50^\\circ$, $\\angle COD=70^\\circ$이다.\n$OR$는 직선 $AD$를 기준으로 $OB$와 같은 쪽에 있고 $OB$와 수직이므로 $\\angle AOR=50^\\circ+90^\\circ=140^\\circ$이다. 또 $\\angle AOQ=50^\\circ+60^\\circ+70^\\circ\\div2=145^\\circ$이다.\n따라서 $\\angle ROQ=145^\\circ-140^\\circ=5^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17725",
+"custom": true,
+"rv": 1
 }
 ]

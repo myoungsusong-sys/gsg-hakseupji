@@ -11100,5 +11100,19 @@
 "twinGroup": "tw-9742",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-785861ed2f",
+"typeId": "16864",
+"kind": "주관식",
+"diff": 1,
+"body": "색종이를 오려 둘레가 곧은 선 3개로 이루어진 모양을 만들었습니다. 만든 모양은 동그라미 모양, 세모 모양, 네모 모양 중 어느 것입니까?",
+"selfGrade": true,
+"answer": "세모 모양",
+"solution": "둘레가 곧은 선 3개로 이루어진 모양은 세모 모양입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-16864",
+"custom": true,
+"rv": 1
 }
 ]

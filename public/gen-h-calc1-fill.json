@@ -6097,5 +6097,107 @@
 "twinGroup": "tw-18571",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-9363f15f5d",
+"typeId": "18553",
+"kind": "주관식",
+"diff": 4,
+"body": "최고차항의 계수가 $1$인 삼차함수 $f(x)$의 그래프와 직선 $y=k$가 서로 다른 세 점 $A$, $B$, $C$에서 만난다. 세 점 $A$, $B$, $C$의 $x$좌표는 각각 $\\alpha$, $10$, $\\gamma$이고, $\\alpha<10<\\gamma$이다. 점 $B$에서의 접선의 기울기가 $-8$이고, 점 $A$와 점 $C$에서의 두 접선이 $y$축 위에서 만날 때, 점 $A$에서의 접선의 기울기로 가능한 값을 모두 구하시오.",
+"selfGrade": true,
+"answer": "$24,\\ 48+16\\sqrt{6}$",
+"solution": "$p=10-\\alpha>0$, $q=\\gamma-10>0$이라 놓자. 최고차항의 계수가 $1$이므로 $f(x)-k=(x-\\alpha)(x-10)(x-\\gamma)$이다. 따라서 $f'(\\alpha)=p(p+q)$, $f'(10)=-pq$, $f'(\\gamma)=q(p+q)$이고, 점 $B$에서의 접선의 기울기가 $-8$이므로 $pq=8$이다.\n점 $A$와 점 $C$에서의 접선의 방정식은 각각 $y-k=p(p+q)(x-\\alpha)$, $y-k=q(p+q)(x-\\gamma)$이다. 두 접선이 $y$축 위에서 만나므로 $k-\\alpha p(p+q)=k-\\gamma q(p+q)$이다. $p+q>0$이므로 $\\alpha p=\\gamma q$이고, $\\alpha=10-p$, $\\gamma=10+q$를 대입하면 $10(p-q)=p^2+q^2$을 얻는다.\n$d=p-q$라 놓으면 $p^2+q^2=d^2+2pq=d^2+16$이므로 $d^2-10d+16=0$이다. 따라서 $(d-2)(d-8)=0$에서 $d=2$ 또는 $d=8$이다.\n또한 $p+q=\\sqrt{d^2+4pq}=\\sqrt{d^2+32}$이고 $p=((p+q)+d)/2$이다. $d=2$이면 $p+q=6$, $p=4$, $q=2$이므로 $f'(\\alpha)=24$이다. $d=8$이면 $p+q=4\\sqrt{6}$, $p=4+2\\sqrt{6}$, $q=2\\sqrt{6}-4$이므로 $f'(\\alpha)=(4+2\\sqrt{6})4\\sqrt{6}=48+16\\sqrt{6}$이다.\n두 경우 모두 $p,q>0$, $pq=8$, $10(p-q)=p^2+q^2$을 만족한다. 각 경우에 $\\alpha=10-p$, $\\gamma=10+q$로 정하고 $f(x)=(x-\\alpha)(x-10)(x-\\gamma)$, $k=0$으로 두면 주어진 조건을 만족한다. 특히 $p\\ne q$이므로 점 $A$와 점 $C$에서의 두 접선의 기울기가 서로 달라 두 접선은 $y$축 위의 한 점에서 만난다. 따라서 구하는 값은 $24$, $48+16\\sqrt{6}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18553",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-abbe02521d",
+"typeId": "18531",
+"kind": "객관식",
+"diff": 1,
+"body": "미분가능한 함수 $f(x)$가 모든 실수 $x$에 대하여 다음 관계식을 만족시킨다.\n$$f(x)-f(2)=(x-2)(x+4)$$\n$f'(2)$의 값은?",
+"choices": [
+"$-6$",
+"$0$",
+"$2$",
+"$4$",
+"$6$"
+],
+"answer": "⑤",
+"solution": "미분계수의 정의에 의하여\n$$f'(2)=\\lim_{x\\to 2}\\frac{f(x)-f(2)}{x-2}$$\n이다. 주어진 관계식에서 $x\\ne 2$일 때\n$$\\frac{f(x)-f(2)}{x-2}=x+4$$\n이므로\n$$f'(2)=\\lim_{x\\to 2}(x+4)=6$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18531",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d0e61e6127",
+"typeId": "18531",
+"kind": "객관식",
+"diff": 1,
+"body": "미분가능한 함수 $f(x)$가 모든 실수 $h$에 대하여 다음 관계식을 만족시킨다.\n$$f(1+h)-f(1)=-3h+2h^2$$\n$f'(1)$의 값은?",
+"choices": [
+"$-3$",
+"$-1$",
+"$0$",
+"$2$",
+"$3$"
+],
+"answer": "①",
+"solution": "미분계수의 정의에 의하여\n$$f'(1)=\\lim_{h\\to 0}\\frac{f(1+h)-f(1)}{h}$$\n이다. 주어진 관계식에서 $h\\ne 0$일 때\n$$\\frac{f(1+h)-f(1)}{h}=-3+2h$$\n이므로\n$$f'(1)=\\lim_{h\\to 0}(-3+2h)=-3$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18531",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0d6c48163f",
+"typeId": "18665",
+"kind": "객관식",
+"diff": 2,
+"body": "다항함수 $f(x)$가 모든 실수 $x$에 대하여\n\n$\\displaystyle\\int_{-1}^{x}(x-t)f(t)\\,dt=2x^3+3x^2-1$\n\n을 만족시킬 때, $f(2)$의 값은?",
+"choices": [
+"$26$",
+"$28$",
+"$30$",
+"$32$",
+"$34$"
+],
+"answer": "③",
+"solution": "주어진 등식의 양변을 $x$에 대하여 두 번 미분하면 $f(x)=12x+6$이다. 따라서 $f(2)=24+6=30$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18665",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7a86041f69",
+"typeId": "18665",
+"kind": "주관식",
+"diff": 4,
+"body": "양수 $a$와 다항함수 $f(x)$가 모든 실수 $x$에 대하여\n\n$\\displaystyle\\int_a^x(x-t)f(t)\\,dt=x^4-9x^2+4x+12$\n\n를 만족시킨다. $\\displaystyle f(a)+\\int_a^{a+1}f(t)\\,dt$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$88$",
+"solution": "$x=a$를 대입하면\n\n$0=a^4-9a^2+4a+12=(a-2)^2(a+1)(a+3)$\n\n이다. $a>0$이므로 $a=2$이다.\n\n주어진 등식의 양변을 $x$에 대하여 미분하면\n\n$\\displaystyle\\int_a^x f(t)\\,dt=4x^3-18x+4$\n\n이고, 다시 미분하면\n\n$f(x)=12x^2-18$\n\n이다. 따라서\n\n$f(2)=30$\n\n이고,\n\n$\\displaystyle\\int_2^3f(t)\\,dt=\\int_2^3(12t^2-18)\\,dt=[4t^3-18t]_2^3=58$\n\n이다. 그러므로 구하는 값은\n\n$30+58=88$\n\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18665",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5b4de15dbf",
+"typeId": "18665",
+"kind": "주관식",
+"diff": 4,
+"body": "다항함수 $f(x)$가 모든 실수 $x$에 대하여\n\n$\\displaystyle\\int_1^x(x-t)f(t)\\,dt=(x-1)^2(x^2+x+5)$\n\n를 만족시킬 때, 다음 극한값을 구하시오.\n\n$\\displaystyle\\lim_{x\\to1}\\frac{\\int_1^x(x-t-1)f'(t)\\,dt+(x-1)f'(1)}{(x-1)^2}$",
+"selfGrade": true,
+"answer": "$-3$",
+"solution": "주어진 등식의 양변을 $x$에 대하여 두 번 미분하면\n\n$\\displaystyle f(x)=\\frac{d^2}{dx^2}\\{(x-1)^2(x^2+x+5)\\}$\n\n이다. $h=x-1$로 놓으면\n\n$(x-1)^2(x^2+x+5)=h^2(h^2+3h+7)$\n\n이므로\n\n$f(x)=12h^2+18h+14$\n\n이다. 따라서\n\n$f'(t)=24(t-1)+18,\\qquad f'(1)=18$\n\n이다. 다시 $u=t-1$로 놓으면 극한식의 분자는\n\n$\\displaystyle\\int_0^h(h-u-1)(18+24u)\\,du+18h$\n\n$\\displaystyle=-3h^2+4h^3$\n\n이다. 그러므로 구하는 극한값은\n\n$\\displaystyle\\lim_{h\\to0}\\frac{-3h^2+4h^3}{h^2}=\\lim_{h\\to0}(-3+4h)=-3$\n\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18665",
+"custom": true,
+"rv": 1
 }
 ]

@@ -4232,5 +4232,25 @@
 "twinGroup": "tw-20563",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-054f926353",
+"typeId": "20536",
+"kind": "객관식",
+"diff": 1,
+"body": "직육면체 모양의 상자에서 바닥의 한 꼭짓점을 $A$, $A$의 바로 위에 있는 꼭짓점을 $B$, 바닥에서 $A$와 마주 보는 꼭짓점을 $C$라 하자. $BC=14\\text{ cm}$이고 $\\angle BCA=30^\\circ$일 때, 상자의 높이 $AB$의 길이는?",
+"choices": [
+"$7\\text{ cm}$",
+"$\\dfrac{14\\sqrt{3}}{3}\\text{ cm}$",
+"$7\\sqrt{2}\\text{ cm}$",
+"$7\\sqrt{3}\\text{ cm}$",
+"$28\\text{ cm}$"
+],
+"answer": "①",
+"solution": "직육면체의 높이인 모서리 $AB$는 바닥의 대각선 $AC$와 수직이므로 삼각형 $ABC$는 $A$에서 직각인 삼각형이다. 따라서 $\\sin30^\\circ=\\dfrac{AB}{BC}$이므로 $AB=BC\\sin30^\\circ=14\\times\\dfrac12=7\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20536",
+"custom": true,
+"rv": 1
 }
 ]
