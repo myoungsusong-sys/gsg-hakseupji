@@ -6260,5 +6260,141 @@
 "twinGroup": "tw-19578",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-b50dee67fe",
+"typeId": "9838",
+"kind": "주관식",
+"diff": 1,
+"body": "좌표평면 위의 점 $A(3,-2)$에 대하여 $|\\overrightarrow{AP}|=5$를 만족시키는 점 $P(x,y)$가 나타내는 도형의 방정식을 구하시오.",
+"selfGrade": true,
+"answer": "$(x-3)^2+(y+2)^2=25$",
+"solution": "$\\overrightarrow{AP}=(x-3,y+2)$이므로 $|\\overrightarrow{AP}|^2=(x-3)^2+(y+2)^2$이다. 따라서 구하는 방정식은 $(x-3)^2+(y+2)^2=25$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f730913df7",
+"typeId": "9838",
+"kind": "객관식",
+"diff": 2,
+"body": "두 점 $A(-1,2)$, $B(5,-4)$에 대하여 $|\\overrightarrow{PA}+\\overrightarrow{PB}|=8$을 만족시키는 점 $P$가 나타내는 원의 중심을 $(a,b)$, 반지름을 $r$라 하자. $a+b+r$의 값은?",
+"choices": [
+"$3$",
+"$4$",
+"$5$",
+"$6$",
+"$7$"
+],
+"answer": "③",
+"solution": "$P(x,y)$라 하면 $\\overrightarrow{PA}=(-1-x,2-y)$, $\\overrightarrow{PB}=(5-x,-4-y)$이므로\n$$\\overrightarrow{PA}+\\overrightarrow{PB}=(4-2x,-2-2y)$$\n이다. 따라서\n$$(4-2x)^2+(-2-2y)^2=64,$$\n즉\n$$(x-2)^2+(y+1)^2=16$$\n이다. 그러므로 $(a,b)=(2,-1)$, $r=4$이므로\n$$a+b+r=2-1+4=5$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-46eae6abcd",
+"typeId": "9838",
+"kind": "객관식",
+"diff": 2,
+"body": "두 점 $A(0,0)$, $B(3,0)$에 대하여 $|\\overrightarrow{AP}|=2|\\overrightarrow{BP}|$를 만족시키는 점 $P(x,y)$가 나타내는 도형의 방정식은?",
+"choices": [
+"$x^2+y^2-8x-12=0$",
+"$x^2+y^2-8x+12=0$",
+"$x^2+y^2+8x+12=0$",
+"$x^2+y^2-4x+12=0$",
+"$x^2+y^2+4x-12=0$"
+],
+"answer": "②",
+"solution": "주어진 식의 양변이 음이 아닌 수이므로 양변을 제곱하면\n$$x^2+y^2=4\\{(x-3)^2+y^2\\}$$\n이다. 이를 전개하여 정리하면\n$$3x^2+3y^2-24x+36=0,$$\n따라서\n$$x^2+y^2-8x+12=0$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-fbbee796f7",
+"typeId": "9838",
+"kind": "객관식",
+"diff": 3,
+"body": "두 점 $A(-2,1)$, $B(4,3)$에 대하여 $|\\overrightarrow{AP}|^2+|\\overrightarrow{BP}|^2=26$을 만족시키는 점 $P$가 나타내는 도형의 둘레의 길이는?",
+"choices": [
+"$\\sqrt{3}\\pi$",
+"$2\\pi$",
+"$2\\sqrt{3}\\pi$",
+"$3\\pi$",
+"$6\\pi$"
+],
+"answer": "③",
+"solution": "$P(x,y)$라 하면\n$$|\\overrightarrow{AP}|^2=(x+2)^2+(y-1)^2,$$\n$$|\\overrightarrow{BP}|^2=(x-4)^2+(y-3)^2$$\n이다. 따라서\n$$(x+2)^2+(y-1)^2+(x-4)^2+(y-3)^2=26.$$\n이를 정리하면\n$$x^2+y^2-2x-4y+2=0,$$\n즉\n$$(x-1)^2+(y-2)^2=3$$\n이다. 이 원의 반지름은 $\\sqrt{3}$이므로 둘레의 길이는\n$$2\\sqrt{3}\\pi$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6d63d07be3",
+"typeId": "9838",
+"kind": "객관식",
+"diff": 3,
+"body": "두 점 $A(-1,2)$, $B(3,-2)$에 대하여 $|\\overrightarrow{AP}|=2|\\overrightarrow{BP}|$를 만족시키는 점 $P$가 나타내는 원이 $x$축과 만나는 두 점 사이의 거리는?",
+"choices": [
+"$\\dfrac{\\sqrt{7}}{3}$",
+"$\\dfrac{2\\sqrt{7}}{3}$",
+"$\\dfrac{4\\sqrt{7}}{3}$",
+"$\\dfrac{7\\sqrt{7}}{3}$",
+"$\\dfrac{8\\sqrt{7}}{3}$"
+],
+"answer": "③",
+"solution": "$P(x,y)$라 하면 주어진 조건에서\n$$(x+1)^2+(y-2)^2=4\\{(x-3)^2+(y+2)^2\\}$$\n이다. 이를 정리하면 원의 방정식은\n$$3x^2+3y^2-26x+20y+47=0$$\n이다. 이 원과 $x$축의 교점에서는 $y=0$이므로\n$$3x^2-26x+47=0$$\n이다. 두 교점의 $x$좌표를 $\\alpha$, $\\beta$라 하면 두 점 사이의 거리는\n$$|\\alpha-\\beta|=\\frac{\\sqrt{(-26)^2-4\\cdot3\\cdot47}}{3}=\\frac{\\sqrt{112}}{3}=\\frac{4\\sqrt7}{3}$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b245efff92",
+"typeId": "9838",
+"kind": "주관식",
+"diff": 4,
+"body": "두 점 $A(-3,0)$, $B(3,0)$과 실수 $k>1$에 대하여 $|\\overrightarrow{AP}|=k|\\overrightarrow{BP}|$를 만족시키는 점 $P$가 나타내는 원이 직선 $y=4$에 접한다. $k^2$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$P(x,y)$라 하면\n$$(x+3)^2+y^2=k^2\\{(x-3)^2+y^2\\}$$\n이다. 이를 원의 표준형으로 정리하면 중심은\n$$\\left(\\frac{3(1+k^2)}{k^2-1},0\\right),$$\n반지름은\n$$\\frac{6k}{k^2-1}$$\n이다. 원의 중심과 직선 $y=4$ 사이의 거리는 $4$이므로 접하기 위한 조건은\n$$\\frac{6k}{k^2-1}=4$$\n이다. 따라서\n$$2k^2-3k-2=0,$$\n즉\n$$(2k+1)(k-2)=0$$\n이다. $k>1$이므로 $k=2$이고, 따라서\n$$k^2=4$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8c90462cb3",
+"typeId": "9838",
+"kind": "주관식",
+"diff": 4,
+"body": "두 점 $A(-1,1)$, $B(3,-2)$에 대하여\n$$|\\overrightarrow{AP}|^2=2\\overrightarrow{AP}\\cdot\\overrightarrow{BP}$$\n를 만족시키는 점 $P$가 나타내는 도형과 직선 $x+y=5$의 두 교점을 $C$, $D$라 하자. 선분 $CD$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$2\\sqrt{17}$",
+"solution": "$\\overrightarrow{BP}=\\overrightarrow{AP}-\\overrightarrow{AB}$이므로 주어진 식은\n$$|\\overrightarrow{AP}|^2=2\\overrightarrow{AP}\\cdot(\\overrightarrow{AP}-\\overrightarrow{AB})$$\n이다. 이를 정리하면\n$$|\\overrightarrow{AP}|^2-2\\overrightarrow{AP}\\cdot\\overrightarrow{AB}=0$$\n이다. 따라서\n$$|\\overrightarrow{BP}|^2=|\\overrightarrow{AP}-\\overrightarrow{AB}|^2$$\n$$=|\\overrightarrow{AP}|^2-2\\overrightarrow{AP}\\cdot\\overrightarrow{AB}+|\\overrightarrow{AB}|^2=|\\overrightarrow{AB}|^2.$$\n한편 $|\\overrightarrow{AB}|=5$이므로 점 $P$의 자취는 중심이 $B(3,-2)$이고 반지름이 $5$인 원이다. 중심 $B$에서 직선 $x+y-5=0$까지의 거리는\n$$\\frac{|3-2-5|}{\\sqrt{1^2+1^2}}=2\\sqrt2$$\n이다. 따라서 현 $CD$의 길이는\n$$2\\sqrt{5^2-(2\\sqrt2)^2}=2\\sqrt{17}$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-fc00f6dc47",
+"typeId": "9838",
+"kind": "주관식",
+"diff": 4,
+"body": "두 점 $A(-2,0)$, $B(2,0)$과 양수 $t$에 대하여\n$$|\\overrightarrow{AP}|^2+t|\\overrightarrow{BP}|^2=20$$\n을 만족시키는 점 $P$가 나타내는 원의 넓이가 $4\\pi$이다. $t^2+t$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$4$",
+"solution": "$P(x,y)$라 하면\n$$(x+2)^2+y^2+t\\{(x-2)^2+y^2\\}=20$$\n이다. 이를 정리하면\n$$x^2+y^2+\\frac{4(1-t)}{t+1}x+4-\\frac{20}{t+1}=0$$\n이므로 원의 중심은\n$$\\left(\\frac{2(t-1)}{t+1},0\\right)$$\n이고, 반지름의 제곱은\n$$\\frac{4(t+5)}{(t+1)^2}$$\n이다. 원의 넓이가 $4\\pi$이므로 반지름의 제곱은 $4$이다. 따라서\n$$\\frac{4(t+5)}{(t+1)^2}=4,$$\n즉\n$$t+5=(t+1)^2$$\n이다. 이를 정리하면\n$$t^2+t=4$$\n이다.",
+"source": "유사 문항",
+"twinGroup": "tw-9838",
+"custom": true,
+"rv": 1
 }
 ]

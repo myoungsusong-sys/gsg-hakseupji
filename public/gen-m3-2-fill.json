@@ -2106,5 +2106,93 @@
 "twinGroup": "tw-20538",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-f7568e25ae",
+"typeId": "20584",
+"kind": "객관식",
+"diff": 1,
+"body": "원에 내접하는 사각형 $ABCD$에서 $\\angle DAB=112^\\circ$일 때, $\\angle BCD$의 크기는?",
+"choices": [
+"$58^\\circ$",
+"$68^\\circ$",
+"$78^\\circ$",
+"$88^\\circ$",
+"$112^\\circ$"
+],
+"answer": "②",
+"solution": "원에 내접하는 사각형의 한 쌍의 대각의 크기의 합은 $180^\\circ$이다. 따라서 $\\angle BCD=180^\\circ-112^\\circ=68^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20584",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0bd5b99ce2",
+"typeId": "20584",
+"kind": "객관식",
+"diff": 1,
+"body": "볼록사각형 $ABCD$에서 $\\angle ABC=78^\\circ$이다. 사각형 $ABCD$가 원에 내접하도록 하는 $\\angle CDA$의 크기는?",
+"choices": [
+"$78^\\circ$",
+"$92^\\circ$",
+"$98^\\circ$",
+"$102^\\circ$",
+"$112^\\circ$"
+],
+"answer": "④",
+"solution": "볼록사각형이 원에 내접하기 위한 필요충분조건은 한 쌍의 대각의 크기의 합이 $180^\\circ$인 것이다. 따라서 $\\angle ABC+\\angle CDA=180^\\circ$이어야 하므로 $\\angle CDA=180^\\circ-78^\\circ=102^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20584",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f02ef3f1ce",
+"typeId": "20584",
+"kind": "객관식",
+"diff": 1,
+"body": "볼록사각형이 원에 내접하기 위한 조건으로 옳은 것은?",
+"choices": [
+"네 변의 길이가 모두 같다.",
+"두 대각선의 길이가 같다.",
+"이웃한 두 내각의 크기의 합이 $180^\\circ$이다.",
+"한 쌍의 대각의 크기의 합이 $180^\\circ$이다.",
+"두 대각선이 서로 수직이다."
+],
+"answer": "④",
+"solution": "볼록사각형의 한 쌍의 대각의 크기의 합이 $180^\\circ$이면 그 사각형은 원에 내접한다. 따라서 옳은 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20584",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-cc70118aca",
+"typeId": "20584",
+"kind": "주관식",
+"diff": 4,
+"body": "볼록사각형 $ABCD$에서 직선 $AB$와 $CD$의 교점을 $P$라 하자. 각 직선 위에서 점들은 각각 $P$, $A$, $B$의 순서와 $P$, $D$, $C$의 순서로 놓여 있다.\n\n삼각형 $PAD$의 내심을 $K$라 하고, 두 내각 $\\angle DAB$, $\\angle ABC$의 이등분선이 사각형 내부에서 만나는 점을 $I$라 하자. $\\angle AKD=128^\\circ$, $\\angle AIB=116^\\circ$일 때, 사각형 $ABCD$가 원에 내접하기 위한 $\\angle BCD$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$78^\\circ$",
+"solution": "삼각형 $PAD$의 내심의 성질에 의해 $\\angle AKD=90^\\circ+\\frac12\\angle APD$이다. 따라서 $128^\\circ=90^\\circ+\\frac12\\angle APD$에서 $\\angle APD=76^\\circ$이다.\n\n$\\angle DAB=\\alpha$, $\\angle ABC=\\beta$라 하자. 삼각형 $AIB$에서 $\\angle IAB=\\frac\\alpha2$, $\\angle ABI=\\frac\\beta2$이므로 $\\frac\\alpha2+\\frac\\beta2+116^\\circ=180^\\circ$이다. 따라서 $\\alpha+\\beta=128^\\circ$이다.\n\n점 $P$, $A$, $B$가 이 순서로 놓여 있으므로 $\\angle PAD=180^\\circ-\\alpha$이다. 삼각형 $PAD$에서 $\\angle PDA=180^\\circ-76^\\circ-(180^\\circ-\\alpha)=\\alpha-76^\\circ$이다. 또한 점 $P$, $D$, $C$가 이 순서로 놓여 있으므로 $\\angle CDA=180^\\circ-(\\alpha-76^\\circ)=256^\\circ-\\alpha$이다.\n\n사각형 $ABCD$가 원에 내접하려면 $\\beta+(256^\\circ-\\alpha)=180^\\circ$이어야 하므로 $\\alpha-\\beta=76^\\circ$이다. 이를 $\\alpha+\\beta=128^\\circ$와 연립하면 $\\alpha=102^\\circ$, $\\beta=26^\\circ$이다. 따라서 $\\angle BCD=180^\\circ-\\alpha=78^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20584",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0b9974f4fd",
+"typeId": "20584",
+"kind": "주관식",
+"diff": 4,
+"body": "볼록사각형 $ABCD$의 두 대각선 $AC$, $BD$가 만나는 점을 $O$라 하자. $AB=BD$이고, $AC$는 $\\angle DAB$의 이등분선이다.\n\n삼각형 $AOB$에서 $\\angle BAO$와 $\\angle ABO$의 이등분선의 교점을 $J$라 할 때, $\\angle AJB=138^\\circ$이다. 사각형 $ABCD$가 원에 내접하기 위한 $\\angle BCD$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$116^\\circ$",
+"solution": "점 $J$는 삼각형 $AOB$의 내심이므로 $\\angle AJB=90^\\circ+\\frac12\\angle AOB$이다. 따라서 $138^\\circ=90^\\circ+\\frac12\\angle AOB$에서 $\\angle AOB=96^\\circ$이다.\n\n$\\angle BAC=\\angle CAD=x$라 하면 $\\angle BAD=2x$이다. 삼각형 $ABD$에서 $AB=BD$이므로 $\\angle ADB=\\angle BAD=2x$이다. 따라서 $\\angle ABD=180^\\circ-4x$이다.\n\n볼록사각형의 두 대각선은 내부에서 만나므로 $O$는 선분 $AC$와 선분 $BD$ 위에 있다. 따라서 $\\angle BAO=x$, $\\angle ABO=\\angle ABD=180^\\circ-4x$이다. 삼각형 $AOB$의 내각의 합에 의해 $x+(180^\\circ-4x)+96^\\circ=180^\\circ$이므로 $x=32^\\circ$이다.\n\n따라서 $\\angle BAD=64^\\circ$이다. 사각형 $ABCD$가 원에 내접하려면 한 쌍의 대각의 크기의 합이 $180^\\circ$이어야 하므로 $\\angle BCD=180^\\circ-64^\\circ=116^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20584",
+"custom": true,
+"rv": 1
 }
 ]
