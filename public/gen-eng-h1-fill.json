@@ -1,122 +1,5 @@
 [
 {
-"id": "fill-c2aced10c1",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 글에서 표시된 This가 가리키는 내용을 우리말로 쓰시오.\n\nOn social media, algorithms follow our interactions with other users. Posts from close friends therefore tend to appear before other posts. This helps us keep in touch with people we care about.",
-"selfGrade": true,
-"answer": "소셜 미디어에서 친한 친구들의 게시물이 다른 게시물보다 먼저 나타나는 것",
-"solution": "This는 바로 앞 문장에서 설명한 게시물의 표시 방식을 가리킨다. 따라서 친한 친구들의 게시물이 다른 게시물보다 먼저 나타나는 것이라고 쓰면 된다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-74f4cd5564",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 글에서 표시된 This의 구체적인 내용을 우리말로 쓰시오.\n\nAs sea levels rise, salt water can enter fresh water sources. This makes the water unfit for drinking or growing crops.",
-"selfGrade": true,
-"answer": "해수면이 상승하면서 소금물이 담수원으로 들어가는 것",
-"solution": "This는 앞 문장에서 제시한 소금물의 유입을 가리킨다. 물을 마시거나 농작물을 재배하는 데 사용할 수 없게 된다는 내용은 그 결과이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-1a88cb98d2",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 글에서 표시된 this가 가리키는 행동을 우리말로 쓰시오.\n\nAt the camp, the volunteers compared their giraffe photographs with the photographs in an identification book. By doing this, they were able to identify most of the giraffes.",
-"selfGrade": true,
-"answer": "자신들이 찍은 기린 사진을 식별 도감에 있는 사진과 비교하는 것",
-"solution": "doing this는 앞 문장에 나온 자원봉사자들의 행동을 대신한다. 사진을 비교한 두 대상을 모두 밝혀 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-e0c3674ae3",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글에서 표시된 This가 가리키는 내용을 목적을 포함하여 우리말로 쓰시오.\n\nThe volunteers sometimes needed photographs of both sides of a giraffe to identify it. Each giraffe had its own pattern of spots, much like a human fingerprint. This required the volunteers to move to the animal’s other side before it ran away.",
-"selfGrade": true,
-"answer": "기린을 식별하기 위해 기린 몸의 양쪽 측면을 사진으로 찍는 것",
-"solution": "This는 바로 앞의 반점 무늬에 관한 설명이 아니라 첫 문장의 촬영 행동을 가리킨다. 기린의 반대쪽으로 이동해야 한다는 내용이 단서이며, 발문에 따라 식별이라는 목적도 포함해야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-48162c3453",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글의 ⓐThis와 ⓑThis가 가리키는 내용을 각각 우리말로 쓰시오.\n\nAlgorithms show users posts by people with similar ideas and interests. ⓐThis can help users form communities around shared interests. However, algorithms also limit users’ chances to encounter views different from their own. ⓑThis can lead users to believe that their opinions represent what society generally thinks.\n\nⓐ ____________________\nⓑ ____________________",
-"selfGrade": true,
-"answer": "ⓐ 알고리즘이 사용자에게 생각과 관심사가 비슷한 사람들의 게시물을 보여 주는 것\nⓑ 알고리즘이 사용자가 자신의 견해와 다른 견해를 접할 기회를 제한하는 것",
-"solution": "ⓐThis는 공통 관심사를 가진 공동체의 형성을 돕는 게시물 제공 방식을 가리킨다. ⓑThis는 자신의 견해와 다른 견해를 접할 기회를 제한하는 것을 가리키며, 사회의 일반적인 생각에 대한 잘못된 믿음은 그 결과이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-2eca3e47d5",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글의 ⓐThis와 ⓑthis가 가리키는 내용을 각각 우리말로 쓰시오.\n\nWith higher sea levels, flooding along the coast may become more frequent and more severe. ⓐThis can seriously damage low-lying areas. Some villages may eventually be completely covered by water. If ⓑthis happens, residents could lose their homes as well as their ties to the local community.\n\nⓐ ____________________\nⓑ ____________________",
-"selfGrade": true,
-"answer": "ⓐ 해안을 따라 홍수가 더 빈번하고 더 심각하게 발생하는 것\nⓑ 일부 마을이 결국 완전히 물에 잠기는 것",
-"solution": "ⓐThis는 해안 홍수의 빈도와 심각성이 증가하는 상황을 가리키므로 두 변화를 모두 포함해야 한다. ⓑthis는 일부 마을이 완전히 물에 잠기는 상황을 가리키며, 주민들이 집과 공동체의 유대를 잃는 것은 그에 따른 결과이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-7409433b32",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 4,
-"body": "다음 글의 ⓐthis와 ⓑThis가 가리키는 내용을 각각 우리말로 쓰시오. ⓑ에는 지문에 제시된 두 가지 상태가 모두 드러나도록 쓰시오.\n\nSocial media algorithms select content according to users’ earlier likes, dislikes, and searches. By doing ⓐthis, they repeatedly offer content similar to what users have already shown interest in. Users consequently have fewer opportunities to encounter other viewpoints. Their knowledge remains limited, and they continue to hold the same opinions. ⓑThis is particularly dangerous when the issue being discussed is controversial.\n\nⓐ ____________________\nⓑ ____________________",
-"selfGrade": true,
-"answer": "ⓐ 소셜 미디어 알고리즘이 사용자의 이전 좋아요, 싫어요, 검색 기록에 따라 콘텐츠를 선택하는 것\nⓑ 사용자들의 지식이 제한된 상태로 남고 같은 의견을 계속 유지하는 것",
-"solution": "ⓐthis는 알고리즘의 콘텐츠 선택 행동을 가리키므로 선택의 기준까지 밝혀야 한다. ⓑThis는 다른 관점을 접할 기회가 줄어든 결과로 나타난 두 상태를 함께 가리킨다. 따라서 제한된 지식과 변하지 않는 의견을 모두 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-c5ad2eba43",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 4,
-"body": "다음 글의 ⓐThis와 ⓑthis가 가리키는 내용을 각각 우리말로 쓰시오. ⓐ에는 폭풍의 두 가지 특성을, ⓑ에는 물을 사용할 수 없는 두 가지 용도를 모두 포함하시오.\n\nHigher sea levels can produce stronger storms. These storms travel more slowly and bring more rain. ⓐThis can increase the destruction they cause even in places far from the coast. Rising seas can also push salt water into fresh water sources. Once mixed with salt water, the water cannot be used for drinking or growing crops. In ⓑthis, we can see another problem caused by rising sea levels.\n\nⓐ ____________________\nⓑ ____________________",
-"selfGrade": true,
-"answer": "ⓐ 폭풍이 더 천천히 이동하고 더 많은 비를 내리는 것\nⓑ 소금물과 섞인 물을 마시거나 농작물을 재배하는 데 사용할 수 없게 되는 것",
-"solution": "ⓐThis는 폭풍이 강해진다는 첫 문장만이 아니라 바로 앞 문장의 이동 속도와 강수량이라는 두 특성을 가리킨다. ⓑthis는 소금물의 유입 자체보다 그 결과로 물을 두 용도에 사용할 수 없게 된 상황을 가리킨다. 각각 요구된 두 요소를 빠짐없이 포함해야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-4596855d81",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 4,
-"body": "다음 글의 ⓐthis와 ⓑThis가 가리키는 내용을 각각 우리말로 쓰시오. ⓐ에는 행동의 목적과 촬영 대상을, ⓑ에는 자원봉사자들이 거둔 두 가지 성과를 모두 포함하시오.\n\nTo identify giraffes, the volunteers often had to photograph both sides of each animal. Its pattern of spots was unique, like a person’s fingerprint. To do ⓐthis, they needed to reach the other side before the giraffe ran away. Back at camp, they checked their photographs against those in an identification book. They identified most of the giraffes and also discovered baby giraffes that were not yet listed in the book. ⓑThis went beyond simply identifying the giraffes already recorded there.\n\nⓐ ____________________\nⓑ ____________________",
-"selfGrade": true,
-"answer": "ⓐ 기린을 식별하기 위해 각 기린 몸의 양쪽 측면을 사진으로 찍는 것\nⓑ 기린 대부분을 식별하고 도감에 아직 기록되지 않은 새끼 기린들도 발견한 것",
-"solution": "ⓐthis는 반점 무늬의 고유성을 설명한 문장을 건너뛰어 앞선 촬영 행동을 가리킨다. ⓑThis는 사진을 대조한 행동 자체가 아니라 그 뒤에 제시된 두 가지 성과를 가리킨다. 특히 새끼 기린이 도감에 아직 기록되지 않았다는 조건까지 포함해야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
 "id": "fill-3404de2462",
 "typeId": "eng-h1-u0m0s5t1",
 "kind": "객관식",
@@ -365,139 +248,6 @@
 "custom": true
 },
 {
-"id": "fill-9208069bbc",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 종류로 가장 적절한 것은?\n\nI thought I would be disappointed about not joining a race at the school sports festival today. Instead, I helped my classmates get ready and cheered for them from beside the track. When our last runner crossed the finish line, I shouted louder than anyone else. We did not win, but we laughed together all afternoon. On the way home, I realized that being part of a team does not always mean running in a race. I want to remember that feeling, so I am writing it down before bed.",
-"choices": [
-"a news article",
-"a personal diary",
-"a sports advertisement",
-"a school announcement",
-"a personal letter"
-],
-"answer": "②",
-"solution": "글쓴이는 체육대회에서 경험한 일과 그때 느낀 감정을 개인적으로 기록하고 있다. 특히 잠들기 전에 자신의 느낌을 적어 둔다는 마지막 문장에서 일기의 성격이 분명하게 드러난다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-ef22f30745",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nYour bag is full, but you still need a water bottle? Try a bottle that takes up less space after you finish your drink. Simply press it flat and put it away. Choose from three colors and find the right one for your everyday bag. Buy two this weekend and receive a special discount on the second bottle. Visit our online store today and make more room for the things you need!",
-"choices": [
-"a student's daily journal",
-"a newspaper's readers' letters section",
-"a collection of book reviews",
-"an online store's product promotion page",
-"a school's sports festival report"
-],
-"answer": "④",
-"solution": "제품의 장점을 소개한 뒤 주말 구매 할인과 온라인 상점 방문을 안내하고 있다. 독자의 구매를 유도하는 광고이므로 온라인 상점의 제품 홍보 페이지에 실리기에 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-749b5240ba",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 종류로 가장 적절한 것은?\n\nAt first, I expected this mystery novel to be an easy book to put down. Its opening chapters move slowly, and the main character spends a long time describing the island where she lives. However, those details become important as the mystery develops. I especially liked how small conversations later helped explain the characters' decisions. The final chapter answers the main question, though one character's sudden change of mind is not fully explained. Readers who want action on every page may lose patience, but those who enjoy collecting clues will find the book rewarding.",
-"choices": [
-"a summary of a writer's life",
-"an advertisement for an island trip",
-"a news report about a writer",
-"a guide to writing a mystery novel",
-"a critical review of a novel"
-],
-"answer": "⑤",
-"solution": "줄거리의 일부를 언급하면서 전개 속도, 세부 묘사의 역할, 결말의 부족한 점 등을 평가하고 있다. 작품의 장단점과 적합한 독자층을 함께 제시하므로 소설에 대한 비평적 서평이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-8bfe7101ea",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 종류로 가장 적절한 것은?\n\nAn unused area beside the school became a community garden this week after students finished clearing the ground and planting vegetables. According to the school's environmental club, the work took longer than expected because several planting days were canceled by rain. A student who took part said that neighbors had helped carry tools and prepare the soil. Some residents have asked how the garden will be cared for during school holidays. The club said it would prepare a schedule with local volunteers before the holidays begin. Part of the harvest is expected to go to a local food bank.",
-"choices": [
-"텃밭 조성 과정과 관계자의 말을 전달하는 보도 기사",
-"학생들에게 텃밭 봉사 활동 참여를 요청하는 모집 공고",
-"텃밭 관리 경험을 시간순으로 기록한 개인 일기",
-"텃밭 확대의 필요성을 주장하는 신문 사설",
-"텃밭 이용 규칙을 설명하는 학교 안내문"
-],
-"answer": "①",
-"solution": "텃밭 조성이라는 사건을 중심으로 동아리의 설명, 참여 학생의 말, 주민의 질문과 향후 계획을 전달한다. 글쓴이가 직접 참여를 요청하거나 자신의 주장을 펼치지 않으므로 보도 기사가 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-52aaddc15e",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글이 쓰인 상황으로 가장 적절한 것은?\n\nBefore we leave this hall, please look at the people sitting beside you. When we first met, many of us were too shy even to ask one another's names. Now it is difficult to imagine a school day without these familiar faces. Our teachers have taught us far more than what appears in our notebooks, and our families have supported us through days we would rather forget. In a few minutes, we will walk out toward different futures. On behalf of my classmates, I thank everyone who has helped us reach this moment. Wherever we go, may we give others the same kindness we received here.",
-"choices": [
-"교장이 입학식에서 신입생의 학교생활을 안내하는 상황",
-"학생 기자가 졸업식이 끝난 뒤 행사 내용을 보도하는 상황",
-"졸업생 대표가 졸업식에서 감사와 작별의 뜻을 전하는 상황",
-"학부모 대표가 교사에게 학교 운영 개선을 요구하는 상황",
-"재학생 대표가 새 학기를 맞아 동아리 가입을 권유하는 상황"
-],
-"answer": "③",
-"solution": "서로 처음 만났던 때를 회상하고 교사와 가족에게 감사하며 각기 다른 미래로 나아갈 것을 말한다. 특히 'On behalf of my classmates'라는 표현을 통해 졸업생 대표가 졸업식에서 하는 연설임을 알 수 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-8326943352",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nThe proposal to end evening service at local libraries has been presented as a simple matter of saving money. That description leaves out the people who cannot arrive before late afternoon. Students need somewhere quiet to work, and many families can attend library programs only after the working day ends. Supporters of the proposal are right to ask whether public money is being used well. Yet a service should not be judged only by the cost of keeping its doors open. This newspaper believes the city should first examine how evening visitors use the libraries and consider other ways to reduce expenses. A decision made without that information would put an immediate saving ahead of a lasting public benefit.",
-"choices": [
-"시의 확정된 도서관 운영 시간을 전달하는 공지란",
-"신문사의 공식 견해를 밝히는 사설란",
-"주민 개인의 기고 편지를 싣는 독자 투고란",
-"찬반 발언을 평가 없이 전달하는 스트레이트 기사란",
-"도서관 이용자의 방문 경험을 소개하는 수기란"
-],
-"answer": "②",
-"solution": "예산 절감이라는 찬성 측 논거를 일부 인정하면서도 추가 조사와 대안 검토가 필요하다는 주장을 전개한다. 'This newspaper believes'는 개인 독자가 아니라 신문사가 견해를 밝히고 있음을 보여 주므로 사설란이 적절하다. 운영 시간 변경은 아직 제안 단계이므로 확정 사항을 알리는 공지로도 볼 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-f4bde9a1eb",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 출처로 가장 적절한 것은?\n\nIn last week's coverage of the school community garden, readers were told that the vegetables would be given to a local food bank. That is an important part of the project, but the report's description of the garden as merely a source of free food missed something. I am one of the students who helped prepare the ground. During the work, neighbors who had never spoken to one another began sharing tools and advice. Those conversations did not appear in your account, although they were what I remembered most. I hope future coverage will give some attention to these relationships as well as the harvest. The value of the garden cannot be measured only by what is carried away in a basket.\n\nA student participant",
-"choices": [
-"텃밭 활동의 성과를 공식 발표하는 학교 보도 자료",
-"취재 기자가 후속 조사 결과를 전달하는 신문 기사",
-"신문사가 텃밭 사업에 대한 공식 입장을 밝히는 사설",
-"기존 보도의 관점을 보완해 달라고 요청하는 독자 투고",
-"학생이 이웃에게 텃밭 참여를 권하는 개인 편지"
-],
-"answer": "④",
-"solution": "필자는 기존 기사에 등장한 활동의 참여자로서 보도에서 빠진 공동체 관계의 가치를 설명하고 있다. 'your account'와 'future coverage'를 통해 신문 측에 보도 관점의 보완을 요청하고 있음을 알 수 있다. 개인 참여자의 입장에서 언론 보도에 의견을 보내는 글이므로 독자 투고가 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
 "id": "fill-f5a991a6c8",
 "typeId": "eng-h1-u0m1s4t1",
 "kind": "객관식",
@@ -622,260 +372,6 @@
 "solution": "할인된 단체 강습은 2시간에 44,000원이므로, 개인 강습만으로 같은 시간을 채우는 것보다 저렴하다. 각자 단체 강습 한 번과 개인 강습 두 번을 선택하면 조건을 충족하며, 할인 전 합계는 (44,000+40,000×2)×2=248,000원이다. 총 예약 건수는 여섯 건이므로 12,000원을 추가로 할인받아 최소 총금액은 236,000원이다. 개인 강습만 선택하면 비용이 더 들고 추가 할인액도 커지지 않으므로 이보다 저렴해질 수 없다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u0m1s4t1",
-"custom": true
-},
-{
-"id": "fill-63af6ce317",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 전체적인 내용과 관련이 없는 문장을 고르시오.\n\nYou do not have to learn a difficult sport to become more active. Walking offers an easy way to make exercise part of everyday life. ⓐ You can begin without buying special equipment or taking lessons. ⓑ If you continue regularly, this simple activity can help keep your heart and lungs strong. ⓒ When choosing shoes as a fashion item, shoppers may care more about their appearance than their practical use. ⓓ A walk outside can also help you feel calmer after a stressful day. ⓔ Since walking is gentle on the joints, it can be suitable for people who find harder exercise difficult. These benefits make walking a useful choice for people who want an activity they can continue.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "③",
-"solution": "이 글은 걷기를 일상에서 실천하기 쉬운 운동으로 소개하고 그 장점을 설명한다. ⓒ는 신발을 패션 상품으로 고를 때의 관심사에 관한 내용이므로 걷기의 편리함과 건강상 이점이라는 전체 흐름에서 벗어난다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-9687c52700",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글에서 글의 흐름을 벗어나는 문장을 고르시오.\n\nImagine someone saying, \"I can find information online, so I have no reason to visit a library.\" That person may be overlooking what a public library offers today. ⓐ A visitor who has no Internet connection at home can use one there. ⓑ Someone who needs help using a computer can attend a class. ⓒ A person looking for work can receive support with the job search. ⓓ Local residents can also use meeting spaces to discuss plans for their neighborhood. ⓔ When arranging books at home, a reader might place favorite titles together on one shelf. Services like these show that a library can meet community needs that access to online information alone does not satisfy.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "⑤",
-"solution": "이 글의 중심 내용은 공공 도서관이 온라인 정보 제공을 넘어 지역 주민에게 다양한 서비스를 제공한다는 것이다. ⓔ는 개인이 집에서 책을 정리하는 방법에 관한 내용으로, 도서관의 지역 사회 서비스와 관련이 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-e9c1f00a5e",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글에서 전체 흐름상 불필요한 문장을 고르시오.\n\nThe importance of a coral reef cannot be judged simply by the amount of space it occupies. Its influence reaches both underwater communities and people living near the sea. ⓐ For many sea creatures, a reef provides places to find food, hide from danger, and produce the next generation. ⓑ A visitor planning a seaside holiday might choose between swimming and taking photographs on the beach. ⓒ For coastal residents, the same reef acts as a barrier that weakens powerful storm waves. ⓓ Reef organisms also contain substances that scientists can investigate for possible medical uses. ⓔ In addition, visitors who come to explore reefs support jobs in nearby communities. The value of reefs therefore extends well beyond their small share of the ocean floor.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "②",
-"solution": "이 글은 산호초가 해양 생물과 인간에게 제공하는 여러 가치를 설명한다. ⓑ는 해변 여행객의 활동 선택을 다루며, 산호초의 기능이나 가치에 대한 설명을 이어 가지 않는다. 바다라는 공통 배경이 있어도 글의 중심 내용과는 무관하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-3cdc62b7ed",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 논리적 흐름과 관계 없는 문장을 고르시오.\n\nAfter entering a room, you may worry that everyone has noticed something embarrassing about your appearance. The strength of that feeling, however, does not show how much attention you actually received. ⓐ Your own appearance is at the center of your awareness, so it is easy to assume that it is equally important to others. ⓑ Yet the people around you are often occupied with thoughts about themselves. ⓒ As a result, you may greatly overestimate how many of them noticed the detail that concerns you. ⓓ When deciding what to wear, you should consider whether your clothes will keep you comfortable in the day's weather. ⓔ Recognizing this gap between your estimate and other people's attention can reduce unnecessary anxiety. What feels highly visible to you may have passed almost unnoticed by everyone else.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "④",
-"solution": "이 글은 자신의 외모가 타인의 주목을 받는 정도를 실제보다 크게 판단하는 경향을 설명한다. ⓓ는 옷이라는 소재를 공유하지만, 날씨에 맞추어 옷을 선택하는 실용적인 조언으로 논점을 바꾼다. ⓓ를 제외하면 주목받는 정도에 대한 과대평가와 그 차이를 인식했을 때의 효과가 자연스럽게 연결된다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-b692bb77a6",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글에서 중심 내용의 전개와 관계 없는 문장을 고르시오.\n\nSuppose you keep moving between a writing assignment and messages on your phone. You may feel productive because both activities seem to be progressing, but that impression leaves out a hidden cost. ⓐ When choosing a phone, a student might compare how many different activities its applications can support. ⓑ Each return to the assignment requires you to recover the thought you were developing before the interruption. ⓒ Although an individual pause may seem unimportant, repeated pauses can increase the total time required. ⓓ The changes in focus can also cause you to overlook details and make mistakes. ⓔ Completing one activity before beginning the other avoids these repeated demands on your attention. To judge efficiency, then, consider the time and accuracy of the finished work rather than the number of activities you appear to be handling.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "①",
-"solution": "이 글은 과제와 메시지 확인 사이에서 주의를 전환할 때 생기는 시간 손실과 오류를 설명한다. ⓐ는 휴대전화의 활용 범위를 구매 기준으로 삼는 상황이므로, 주의 전환이 작업 효율에 미치는 영향과 관련이 없다. ⓐ를 빼면 도입부의 '숨겨진 비용'이 ⓑ의 생각을 되찾는 과정으로 구체화된다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-66ab5e5f55",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글에서 필자의 논지 전개에 필요하지 않은 문장을 고르시오.\n\nA person who postpones a task may know exactly when it is due and still be unable to begin. This suggests that knowing how to arrange time is not always enough to explain the delay. ⓐ If beginning brings anxiety or boredom, turning away from the task offers an immediate improvement in how the person feels. ⓑ That improvement can make avoidance attractive even though it does nothing to remove the task itself. ⓒ A detailed timetable can divide a large project into smaller stages and show the deadline assigned to each stage. ⓓ The immediate emotional benefit can thus reinforce the very behavior that creates greater pressure as the deadline gets closer. ⓔ A useful response must therefore address the willingness to experience discomfort at the start, rather than merely provide a clearer picture of the time available. The crucial issue is how the person responds to an unpleasant feeling when action is required.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "③",
-"solution": "필자는 미루기를 시간 배분의 문제가 아니라 불편한 감정을 피하려는 행동이 강화되는 과정으로 설명한다. ⓒ는 시간표의 일정 정리 기능을 설명할 뿐, 감정적 보상과 회피 행동의 관계를 전개하지 않는다. ⓒ를 제외하면 ⓑ의 즉각적인 기분 개선이 ⓓ의 행동 강화로 이어지고, ⓔ에서 감정을 견디는 대응의 필요성이 도출된다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-1e5fb39c0d",
-"typeId": "eng-h1-u0m2s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글에서 전체 논리 구조상 관계 없는 문장을 고르시오.\n\nFeeling noticeable and being noticed are not the same thing, although we often treat the first as evidence of the second. An embarrassing detail about our appearance can remain so clear in our own minds that we assume it must also stand out in everyone else's. ⓐ This judgment begins with information that is readily available to us: our own continuing awareness of the detail. ⓑ What it fails to consider is that other people have concerns of their own competing for their attention. ⓒ The resulting estimate therefore reflects how strongly we experience the situation more than how closely others have observed it. ⓓ Correcting the estimate requires us to distinguish our internal experience from the amount of attention available in someone else's mind. ⓔ For someone choosing a personal style, deciding which features of an outfit deserve emphasis is an important part of creating the desired appearance. Once that distinction is made, the feeling of being on display becomes a less convincing reason to believe that an audience is actually watching.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "⑤",
-"solution": "이 글은 자신이 눈에 띈다고 느끼는 내적 경험과 타인이 실제로 기울이는 주의를 구분해야 한다는 논지를 전개한다. ⓔ는 외모와 강조라는 관련 어휘를 사용하지만, 타인의 주의에 대한 판단에서 원하는 외모를 연출하는 방법으로 논점을 옮긴다. ⓔ를 삭제하면 마지막 문장의 'that distinction'이 ⓓ에서 제시한 두 관점의 구분을 바로 이어받는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-500717ae8d",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nTeenagers need enough sleep because their brains and bodies are still ⓐ**developing**. While they sleep, their brains organize and ⓑ**store** what they learned during the day. Sleep also allows their bodies to ⓒ**recover** from physical activity. However, students who stay up late may feel ⓓ**alert** the next day and have difficulty concentrating in class. For this reason, experts ⓔ**recommend** that teenagers get at least eight hours of sleep each night.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "④",
-"solution": "잠이 부족한 학생은 다음 날 피곤함을 느끼고 집중하기 어려워진다. 따라서 정신이 또렷하다는 뜻의 alert는 문맥에 어울리지 않으며 tired와 같은 낱말이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4a795d7a9e",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nPlastic is widely used because it is cheap and ⓐ**durable**. However, its durability becomes a serious problem after it is thrown away because plastic breaks down very ⓑ**slowly**. Some plastic reaches the ocean, where sea animals may ⓒ**mistake** it for food. To reduce this waste, several countries have ⓓ**banned** certain single-use plastic products. Individuals can also help by choosing ⓔ**disposable** bags and bottles that can be used many times.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "⑤",
-"solution": "여러 번 사용할 수 있는 가방과 물병을 선택해야 플라스틱 쓰레기를 줄일 수 있다. 한 번 쓰고 버리는이라는 뜻의 disposable은 문맥에 맞지 않으며 reusable이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-083bf592aa",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nA failed attempt can provide ⓐ**useful** information about what does not work. Successful people do not simply ⓑ**ignore** such information. Instead, they examine the cause of the failure and ⓒ**adjust** their approach before trying again. In this way, a setback becomes a form of ⓓ**feedback** rather than a final judgment of their ability. Failure is therefore not the destination of their efforts but a necessary ⓔ**destination** on the path to success.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "⑤",
-"solution": "글은 실패를 성공으로 가는 과정에서 배우는 계기로 설명한다. 따라서 실패를 최종 목적지라는 뜻의 destination이라고 한 것은 부적절하며 step이나 part가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-8a9673b558",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nPutting out every forest fire may appear to be the safest policy, but the long-term result can be different. Small natural fires ⓐ**remove** dead leaves and branches from the forest floor and return nutrients to the soil. They can also create ⓑ**space** through which sunlight reaches new plants. If all such fires are immediately suppressed, however, dry material may ⓒ**diminish** over the years, leaving more fuel for a future wildfire. Forest managers therefore sometimes allow small fires to burn under careful ⓓ**control**. This policy does not deny the ⓔ**danger** of large fires near homes.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "③",
-"solution": "작은 불을 모두 끄면 낙엽과 마른 가지가 제거되지 않고 숲 바닥에 쌓인다. 따라서 ‘줄어들다’라는 diminish는 반대 의미이며 accumulate가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-6c37a0dced",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nThe first number people encounter can become an ⓐ**anchor**, even when it has no real connection to the decision they must make. A high starting number often pulls later estimates ⓑ**upward**, while a low one tends to pull them downward. Sellers may ⓒ**exploit** this tendency by presenting an expensive product before showing a moderately priced one. The second product then appears cheaper by ⓓ**comparison**. Because trained professionals can also be affected by anchors, expertise alone ⓔ**neutralizes** this bias.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
-"answer": "⑤",
-"solution": "글은 전문가도 기준점 효과의 영향을 받을 수 있다고 설명한다. 그러므로 전문성이 편향을 ‘무효화한다’는 neutralizes는 문맥상 부적절하며 does not eliminate 등의 의미가 되어야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-b425b3c28b",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중 문맥상 적절하지 않은 낱말을 찾아, 문맥에 맞는 한 단어로 바꾸어 쓰시오.\n\nIntuition is not a mysterious power but a judgment based on patterns ⓐ**accumulated** through experience. It is most dependable when the relationship between cues and outcomes is ⓑ**consistent** and when feedback arrives ⓒ**promptly**. Under these conditions, people can recognize mistakes and improve their judgments. In a highly ⓓ**unpredictable** environment, however, experience may not produce reliable intuition because past patterns offer little guidance. Intuition should therefore be trusted ⓔ**equally** across different environments.",
-"selfGrade": true,
-"answer": "selectively",
-"solution": "직관의 신뢰도는 경험이 형성된 환경의 규칙성과 피드백 조건에 따라 달라진다. 따라서 모든 환경에서 ‘동등하게’ 신뢰해야 한다는 equally가 부적절하며, 환경에 따라 ‘선별적으로’ 신뢰한다는 selectively로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4f6b76231a",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중 문맥상 적절하지 않은 낱말을 찾아, 문맥에 맞는 한 단어로 바꾸어 쓰시오.\n\nAn anchor does not need to be ⓐ**relevant** to influence a judgment. Once an initial number becomes a reference point, later estimates may be drawn ⓑ**toward** it. For example, after a customer sees a very expensive item, the next item may appear ⓒ**cheaper** even though its price has not changed. The apparent cheapness of the second item is therefore ⓓ**absolute**, arising from a comparison with the first price. Being ⓔ**aware** of this tendency can encourage more careful judgment.",
-"selfGrade": true,
-"answer": "relative",
-"solution": "두 번째 상품이 싸게 느껴지는 것은 가격 자체가 변했기 때문이 아니라 첫 번째 가격과 비교되었기 때문이다. 따라서 ‘절대적인’이라는 absolute가 부적절하며 ‘상대적인’이라는 relative가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
 "custom": true
 },
 {
@@ -1750,45 +1246,6 @@
 "custom": true
 },
 {
-"id": "fill-8fcf166645",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 1,
-"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nSocial media algorithms keep track of the people we interact with the most. This allows us to stay in touch with the people we care about.",
-"selfGrade": true,
-"answer": "소셜 미디어 알고리즘이 우리가 가장 많이 교류하는 사람들을 계속 파악하는[추적하는] 것",
-"solution": "지시어 This는 바로 앞 문장의 내용을 가리킨다. 앞 문장에서 소셜 미디어 알고리즘이 '우리가 가장 많이 교류하는 사람들을 계속 파악한다'고 했으므로, 이것이 This가 가리키는 내용이다. 이 덕분에 우리가 아끼는 사람들과 계속 연락을 유지할 수 있다는 흐름이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-3dddfe4aef",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 1,
-"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nWhen sea levels rise, there will likely be more frequent flooding along the coasts. This can cause significant damage in coastal regions.",
-"selfGrade": true,
-"answer": "해수면이 상승할 때 해안을 따라 더 빈번한 홍수가 발생할 가능성이 있는 것",
-"solution": "This는 앞 문장 전체의 내용을 받는 지시어이다. 앞 문장에서 '해수면이 상승하면 해안을 따라 더 빈번한 홍수가 발생할 가능성이 있다'고 했으므로, 이것이 This의 내용이다. 이러한 홍수가 해안 지역에 심각한 피해를 줄 수 있다는 의미로 이어진다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-ec318257fe",
-"typeId": "eng-h1-u2m0s3t1",
-"kind": "주관식",
-"diff": 1,
-"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nLike the human fingerprint, the pattern of spots on a giraffe is unique. This means we can identify each giraffe by its spots.",
-"selfGrade": true,
-"answer": "기린의 반점 무늬가 (사람의 지문처럼) 고유하다는 것",
-"solution": "This는 앞 문장의 내용을 가리킨다. 앞 문장에서 '사람의 지문처럼 기린의 반점 무늬가 고유하다'고 했으므로, 이것이 This가 의미하는 바이다. 그래서 반점으로 각각의 기린을 식별할 수 있다는 내용이 뒤따른다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u2m0s3t1",
-"custom": true
-},
-{
 "id": "fill-8a04eb2ea6",
 "typeId": "eng-h1-u0m0s5t1",
 "kind": "객관식",
@@ -2017,44 +1474,6 @@
 "custom": true
 },
 {
-"id": "fill-354867386f",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 종류로 가장 적절한 것은?\n\nDo you want to keep your school bag clean and organized? Try our new Easy Pencil Case! It has three pockets for your pens, pencils, and erasers. It is small, light, and easy to carry. You can choose from four different colors. Buy one today and get a 10% discount!",
-"choices": [
-"① diary",
-"② news article",
-"③ advertisement",
-"④ biography",
-"⑤ book review"
-],
-"answer": "③",
-"solution": "이 글은 필통의 특징과 장점을 소개하며 구매를 권유하고 있다. 특히 'Buy one today'와 'get a 10% discount'라는 표현은 상품 구매를 유도하는 광고의 전형적인 특징이다. 따라서 글의 종류로 가장 적절한 것은 ③ advertisement(광고)이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
-"id": "fill-692174a2af",
-"typeId": "eng-h1-u0m0s3t1",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nMonday, September 7\n\nToday was a really happy day. My English teacher gave us a short speaking test. I was very nervous because I usually feel shy when I speak English. However, I practiced a lot last night, so I did well on the test. My teacher smiled and said, 'Good job!' I felt so proud of myself. I want to study harder and do even better next time.",
-"choices": [
-"① 학교 행사 안내문",
-"② 영어 학습 교재의 광고",
-"③ 신문의 교육 관련 기사",
-"④ 개인의 일기장",
-"⑤ 학교 급식 안내표"
-],
-"answer": "④",
-"solution": "글의 첫 부분에 날짜가 적혀 있고, 글쓴이가 하루 동안 겪은 일과 자신의 감정을 기록하고 있다. 특히 'I was very nervous'와 'I felt so proud of myself'는 개인적인 감정을 나타내는 표현이다. 따라서 이 글이 실리기에 가장 적절한 곳은 ④ 개인의 일기장이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s3t1",
-"custom": true
-},
-{
 "id": "fill-31f2e09944",
 "typeId": "eng-h1-u0m3s1t1",
 "kind": "객관식",
@@ -2090,44 +1509,6 @@
 "solution": "할머니는 좋은 것에는 시간이 걸린다며 식물을 억지로 빨리 자라게 할 수 없다고 말한다. 이는 언어 학습이나 우정처럼 진짜 성장은 하루하루 천천히 이루어진다는 비유이다. 따라서 굵은 글씨는 좋은 결과에는 시간과 꾸준함이 필요하다는 뜻이므로 정답은 ①이다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-fa0c483efb",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nRegular exercise is good for both the body and the mind. When we exercise, our heart becomes ⓐ**stronger** and pumps blood more efficiently. Exercise also helps us ⓑ**gain** weight by burning calories. In addition, physical activity can ⓒ**improve** our mood because the brain releases chemicals that make us feel happy. People who exercise regularly often find that they ⓓ**sleep** better at night. Many people say they are too busy to exercise, but you do not need a lot of time. Even a short walk every day can make a ⓔ**big** difference in your health.",
-"choices": [
-"ⓐ",
-"ⓑ",
-"ⓒ",
-"ⓓ",
-"ⓔ"
-],
-"answer": "②",
-"solution": "ⓑ 바로 뒤에 '칼로리를 태움으로써(by burning calories)'라는 말이 이어지므로, 운동은 체중을 늘리는 것이 아니라 조절하도록 돕는다고 해야 문맥에 맞습니다. 따라서 gain(늘리다)을 control(조절하다)이나 lose(줄이다)로 고쳐야 합니다. 나머지 낱말은 모두 운동의 좋은 점을 설명하는 흐름에 맞습니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-143fe6530d",
-"typeId": "eng-h1-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nBreakfast is often called the most important meal of the day. After a long night without food, your body needs energy to start the day. A healthy breakfast ⓐ**provides** the fuel your brain needs to focus. Students who eat breakfast tend to ⓑ**concentrate** better in class and remember more of what they learn. On the other hand, students who ⓒ**skip** breakfast often feel hungry and tired before lunch. They may also eat too many snacks later in the day. A good breakfast does not have to be ⓓ**simple**; a piece of fruit, some bread, and a glass of milk are enough. So tomorrow morning, don't ⓔ**forget** to eat breakfast before you leave home.",
-"choices": [
-"ⓐ",
-"ⓑ",
-"ⓒ",
-"ⓓ",
-"ⓔ"
-],
-"answer": "④",
-"solution": "세미콜론 뒤에 '과일 한 조각, 빵 약간, 우유 한 잔이면 충분하다'는 예가 나오므로, 좋은 아침 식사가 복잡할 필요는 없다는 내용이 되어야 합니다. 따라서 simple(간단한)을 complicated(복잡한)로 고쳐야 합니다. ⓒ skip(거르다)은 아침을 먹지 않아 배고프고 피곤하다는 내용과 맞으므로 알맞은 쓰임입니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u1m1s0t0",
 "custom": true
 },
 {
@@ -2188,23 +1569,372 @@
 "custom": true
 },
 {
+"id": "fill-3dddfe4aef",
+"typeId": "eng-h1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nWhen sea levels rise, there will likely be more frequent flooding along the coasts. This can cause significant damage in coastal regions.",
+"answer": "해수면이 상승할 때 해안을 따라 더 빈번한 홍수가 발생할 가능성이 있는 것",
+"solution": "This는 앞 문장 전체의 내용을 받는 지시어이다. 앞 문장에서 '해수면이 상승하면 해안을 따라 더 빈번한 홍수가 발생할 가능성이 있다'고 했으므로, 이것이 This의 내용이다. 이러한 홍수가 해안 지역에 심각한 피해를 줄 수 있다는 의미로 이어진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u2m0s3t1",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-ec318257fe",
+"typeId": "eng-h1-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "밑줄 친 This가 의미하는 바를 윗글에서 찾아 우리말로 쓰시오.\n\nLike the human fingerprint, the pattern of spots on a giraffe is unique. This means we can identify each giraffe by its spots.",
+"answer": "기린의 반점 무늬가 (사람의 지문처럼) 고유하다는 것",
+"solution": "This는 앞 문장의 내용을 가리킨다. 앞 문장에서 '사람의 지문처럼 기린의 반점 무늬가 고유하다'고 했으므로, 이것이 This가 의미하는 바이다. 그래서 반점으로 각각의 기린을 식별할 수 있다는 내용이 뒤따른다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u2m0s3t1",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-9208069bbc",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nI thought I would be disappointed about not joining a race at the school sports festival today. Instead, I helped my classmates get ready and cheered for them from beside the track. When our last runner crossed the finish line, I shouted louder than anyone else. We did not win, but we laughed together all afternoon. On the way home, I realized that being part of a team does not always mean running in a race. I want to remember that feeling, so I am writing it down before bed.",
+"answer": "②",
+"solution": "글쓴이는 체육대회에서 경험한 일과 그때 느낀 감정을 개인적으로 기록하고 있다. 특히 잠들기 전에 자신의 느낌을 적어 둔다는 마지막 문장에서 일기의 성격이 분명하게 드러난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"a news article",
+"a personal diary",
+"a sports advertisement",
+"a school announcement",
+"a personal letter"
+]
+},
+{
+"id": "fill-ef22f30745",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nYour bag is full, but you still need a water bottle? Try a bottle that takes up less space after you finish your drink. Simply press it flat and put it away. Choose from three colors and find the right one for your everyday bag. Buy two this weekend and receive a special discount on the second bottle. Visit our online store today and make more room for the things you need!",
+"answer": "④",
+"solution": "제품의 장점을 소개한 뒤 주말 구매 할인과 온라인 상점 방문을 안내하고 있다. 독자의 구매를 유도하는 광고이므로 온라인 상점의 제품 홍보 페이지에 실리기에 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"a student's daily journal",
+"a newspaper's readers' letters section",
+"a collection of book reviews",
+"an online store's product promotion page",
+"a school's sports festival report"
+]
+},
+{
+"id": "fill-749b5240ba",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nAt first, I expected this mystery novel to be an easy book to put down. Its opening chapters move slowly, and the main character spends a long time describing the island where she lives. However, those details become important as the mystery develops. I especially liked how small conversations later helped explain the characters' decisions. The final chapter answers the main question, though one character's sudden change of mind is not fully explained. Readers who want action on every page may lose patience, but those who enjoy collecting clues will find the book rewarding.",
+"answer": "⑤",
+"solution": "줄거리의 일부를 언급하면서 전개 속도, 세부 묘사의 역할, 결말의 부족한 점 등을 평가하고 있다. 작품의 장단점과 적합한 독자층을 함께 제시하므로 소설에 대한 비평적 서평이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"a summary of a writer's life",
+"an advertisement for an island trip",
+"a news report about a writer",
+"a guide to writing a mystery novel",
+"a critical review of a novel"
+]
+},
+{
+"id": "fill-8bfe7101ea",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nAn unused area beside the school became a community garden this week after students finished clearing the ground and planting vegetables. According to the school's environmental club, the work took longer than expected because several planting days were canceled by rain. A student who took part said that neighbors had helped carry tools and prepare the soil. Some residents have asked how the garden will be cared for during school holidays. The club said it would prepare a schedule with local volunteers before the holidays begin. Part of the harvest is expected to go to a local food bank.",
+"answer": "①",
+"solution": "텃밭 조성이라는 사건을 중심으로 동아리의 설명, 참여 학생의 말, 주민의 질문과 향후 계획을 전달한다. 글쓴이가 직접 참여를 요청하거나 자신의 주장을 펼치지 않으므로 보도 기사가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"텃밭 조성 과정과 관계자의 말을 전달하는 보도 기사",
+"학생들에게 텃밭 봉사 활동 참여를 요청하는 모집 공고",
+"텃밭 관리 경험을 시간순으로 기록한 개인 일기",
+"텃밭 확대의 필요성을 주장하는 신문 사설",
+"텃밭 이용 규칙을 설명하는 학교 안내문"
+]
+},
+{
+"id": "fill-52aaddc15e",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글이 쓰인 상황으로 가장 적절한 것은?\n\nBefore we leave this hall, please look at the people sitting beside you. When we first met, many of us were too shy even to ask one another's names. Now it is difficult to imagine a school day without these familiar faces. Our teachers have taught us far more than what appears in our notebooks, and our families have supported us through days we would rather forget. In a few minutes, we will walk out toward different futures. On behalf of my classmates, I thank everyone who has helped us reach this moment. Wherever we go, may we give others the same kindness we received here.",
+"answer": "③",
+"solution": "서로 처음 만났던 때를 회상하고 교사와 가족에게 감사하며 각기 다른 미래로 나아갈 것을 말한다. 특히 'On behalf of my classmates'라는 표현을 통해 졸업생 대표가 졸업식에서 하는 연설임을 알 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"교장이 입학식에서 신입생의 학교생활을 안내하는 상황",
+"학생 기자가 졸업식이 끝난 뒤 행사 내용을 보도하는 상황",
+"졸업생 대표가 졸업식에서 감사와 작별의 뜻을 전하는 상황",
+"학부모 대표가 교사에게 학교 운영 개선을 요구하는 상황",
+"재학생 대표가 새 학기를 맞아 동아리 가입을 권유하는 상황"
+]
+},
+{
+"id": "fill-8326943352",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nThe proposal to end evening service at local libraries has been presented as a simple matter of saving money. That description leaves out the people who cannot arrive before late afternoon. Students need somewhere quiet to work, and many families can attend library programs only after the working day ends. Supporters of the proposal are right to ask whether public money is being used well. Yet a service should not be judged only by the cost of keeping its doors open. This newspaper believes the city should first examine how evening visitors use the libraries and consider other ways to reduce expenses. A decision made without that information would put an immediate saving ahead of a lasting public benefit.",
+"answer": "②",
+"solution": "예산 절감이라는 찬성 측 논거를 일부 인정하면서도 추가 조사와 대안 검토가 필요하다는 주장을 전개한다. 'This newspaper believes'는 개인 독자가 아니라 신문사가 견해를 밝히고 있음을 보여 주므로 사설란이 적절하다. 운영 시간 변경은 아직 제안 단계이므로 확정 사항을 알리는 공지로도 볼 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"시의 확정된 도서관 운영 시간을 전달하는 공지란",
+"신문사의 공식 견해를 밝히는 사설란",
+"주민 개인의 기고 편지를 싣는 독자 투고란",
+"찬반 발언을 평가 없이 전달하는 스트레이트 기사란",
+"도서관 이용자의 방문 경험을 소개하는 수기란"
+]
+},
+{
+"id": "fill-f4bde9a1eb",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 출처로 가장 적절한 것은?\n\nIn last week's coverage of the school community garden, readers were told that the vegetables would be given to a local food bank. That is an important part of the project, but the report's description of the garden as merely a source of free food missed something. I am one of the students who helped prepare the ground. During the work, neighbors who had never spoken to one another began sharing tools and advice. Those conversations did not appear in your account, although they were what I remembered most. I hope future coverage will give some attention to these relationships as well as the harvest. The value of the garden cannot be measured only by what is carried away in a basket.\n\nA student participant",
+"answer": "④",
+"solution": "필자는 기존 기사에 등장한 활동의 참여자로서 보도에서 빠진 공동체 관계의 가치를 설명하고 있다. 'your account'와 'future coverage'를 통해 신문 측에 보도 관점의 보완을 요청하고 있음을 알 수 있다. 개인 참여자의 입장에서 언론 보도에 의견을 보내는 글이므로 독자 투고가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"텃밭 활동의 성과를 공식 발표하는 학교 보도 자료",
+"취재 기자가 후속 조사 결과를 전달하는 신문 기사",
+"신문사가 텃밭 사업에 대한 공식 입장을 밝히는 사설",
+"기존 보도의 관점을 보완해 달라고 요청하는 독자 투고",
+"학생이 이웃에게 텃밭 참여를 권하는 개인 편지"
+]
+},
+{
+"id": "fill-354867386f",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nDo you want to keep your school bag clean and organized? Try our new Easy Pencil Case! It has three pockets for your pens, pencils, and erasers. It is small, light, and easy to carry. You can choose from four different colors. Buy one today and get a 10% discount!",
+"answer": "③",
+"solution": "필통의 특징과 장점을 소개하고 'Buy one today', 'get a 10% discount'로 구매를 권유하므로 광고(advertisement)이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"diary",
+"news article",
+"advertisement",
+"biography",
+"book review"
+]
+},
+{
+"id": "fill-692174a2af",
+"typeId": "eng-h1-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글이 실리기에 가장 적절한 곳은?\n\nMonday, September 7\n\nToday was a really happy day. My English teacher gave us a short speaking test. I was very nervous because I usually feel shy when I speak English. However, I practiced a lot last night, so I did well on the test. My teacher smiled and said, 'Good job!' I felt so proud of myself. I want to study harder and do even better next time.",
+"answer": "④",
+"solution": "첫머리에 날짜가 적혀 있고 하루 동안 겪은 일과 자신의 감정('I was very nervous', 'I felt so proud of myself')을 기록하고 있다. 특정 독자에게 보내는 글도, 공지·기사·광고도 아니므로 개인의 일기장에 실리기에 가장 적절하다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s3t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"학교 행사 안내문",
+"영어 학습 교재의 광고",
+"신문의 교육 관련 기사",
+"개인의 일기장",
+"학교 급식 안내표"
+]
+},
+{
+"id": "fill-63af6ce317",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 전체적인 내용과 관련이 없는 문장을 고르시오.\n\nYou do not have to learn a difficult sport to become more active. Walking offers an easy way to make exercise part of everyday life. ⓐ You can begin without buying special equipment or taking lessons. ⓑ If you continue regularly, this simple activity can help keep your heart and lungs strong. ⓒ When choosing shoes as a fashion item, shoppers may care more about their appearance than their practical use. ⓓ A walk outside can also help you feel calmer after a stressful day. ⓔ Since walking is gentle on the joints, it can be suitable for people who find harder exercise difficult. These benefits make walking a useful choice for people who want an activity they can continue.",
+"answer": "③",
+"solution": "이 글은 걷기를 일상에서 쉽게 실천할 수 있는 운동으로 소개하고 그 장점을 설명한다. ⓐ는 장비나 강습 없이 시작할 수 있다는 편리함, ⓑ는 심폐 건강, ⓓ는 스트레스 완화, ⓔ는 관절 부담이 적다는 점을 말하며, 모두 마지막 문장의 'These benefits'로 묶인다. 반면 ⓒ는 신발을 패션 상품으로 고를 때 외관을 중시한다는 내용으로, '신발'이라는 연관 소재만 공유할 뿐 걷기의 장점과는 관련이 없다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-9687c52700",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 글의 흐름을 벗어나는 문장을 고르시오.\n\nImagine someone saying, \"I can find information online, so I have no reason to visit a library.\" That person may be overlooking what a public library offers today. ⓐ A visitor who has no Internet connection at home can go online there. ⓑ Someone who needs help using a computer can attend a class. ⓒ A person looking for work can receive support with the job search. ⓓ Local residents can also use meeting spaces to discuss plans for their neighborhood. ⓔ When arranging books at home, a reader might place favorite titles together on one shelf. Services like these show that a library can meet community needs that access to online information alone does not satisfy.",
+"answer": "⑤",
+"solution": "이 글은 공공 도서관이 온라인 정보 제공을 넘어 지역 주민에게 다양한 서비스를 제공한다는 내용이다. ⓐ 인터넷 이용, ⓑ 컴퓨터 강좌, ⓒ 구직 지원, ⓓ 회의 공간 제공은 모두 도서관 서비스의 예이며, 마지막 문장의 'Services like these'로 정리된다. ⓔ는 개인이 집에서 책을 정리하는 방식에 관한 내용으로, '책'이라는 소재만 공유할 뿐 도서관의 지역 사회 서비스와는 관련이 없다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-e9c1f00a5e",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 전체 흐름상 불필요한 문장을 고르시오.\n\nThe importance of a coral reef cannot be judged simply by the amount of space it occupies. Its influence reaches both underwater communities and people living near the sea. ⓐ For many sea creatures, a reef provides places to find food, hide from danger, and produce the next generation. ⓑ A visitor planning a seaside holiday might choose between swimming and taking photographs on the beach. ⓒ For coastal residents, the same reef acts as a barrier that weakens powerful storm waves. ⓓ Reef organisms also contain substances that scientists can investigate for possible medical uses. ⓔ In addition, visitors who come to explore reefs support jobs in nearby communities. The value of reefs therefore extends well beyond their small share of the ocean floor.",
+"answer": "②",
+"solution": "이 글은 산호초가 차지하는 면적은 작지만 해양 생물과 인간에게 큰 가치를 지닌다는 내용이다. ⓐ는 해양 생물의 먹이·은신·번식 장소, ⓒ는 폭풍 파도를 막는 방파제 역할, ⓓ는 의학 연구 자원, ⓔ는 관광을 통한 일자리 지원으로, 모두 산호초의 가치를 설명한다. ⓑ는 해변 여행객이 수영과 사진 촬영 중 무엇을 할지 고르는 내용이다. 바다라는 배경을 공유하고 ⓔ의 visitors와 어휘가 겹치지만, 산호초에 대한 언급이 없고 그 기능이나 가치를 설명하지도 않는다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-3cdc62b7ed",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 논리적 흐름과 관계 없는 문장을 고르시오.\n\nAfter entering a room, you may worry that everyone has noticed something embarrassing about your appearance. The strength of that feeling, however, does not show how much attention you actually received. ⓐ Your own appearance is at the center of your awareness, so it is easy to assume that it is equally important to others. ⓑ Yet the people around you are often occupied with thoughts about themselves. ⓒ As a result, you may greatly overestimate how many of them noticed the detail that concerns you. ⓓ When deciding what to wear, you should consider whether your clothes will keep you comfortable in the day's weather. ⓔ Recognizing this gap between your estimate and other people's attention can reduce unnecessary anxiety. What feels highly visible to you may have passed almost unnoticed by everyone else.",
+"answer": "④",
+"solution": "이 글은 자신의 외모가 남의 주목을 받는 정도를 실제보다 크게 판단하는 경향을 설명한다. ⓐ는 그런 착각의 원인(자기 외모가 자기 의식의 중심에 있음), ⓑ는 이를 반박하는 사실(타인도 자기 생각에 몰두함), ⓒ는 그 결과(과대평가)를 제시하고, ⓔ는 이 차이를 인식하면 불안이 줄어든다는 효과를 말한다. ⓓ는 '옷'이라는 소재를 공유하지만, 날씨에 맞게 옷을 고르라는 실용적 조언으로 논점을 바꾼다. ⓓ를 빼면 ⓒ의 과대평가가 ⓔ의 'this gap'으로 바로 이어진다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-b692bb77a6",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 중심 내용의 전개와 관계 없는 문장을 고르시오.\n\nSuppose you keep moving between a writing assignment and messages on your phone. You may feel productive because both activities seem to be progressing, but that impression leaves out a hidden cost. ⓐ When choosing a phone, a student might compare how many different activities its applications can support. ⓑ Each return to the assignment requires you to recover the thought you were developing before the interruption. ⓒ Although an individual pause may seem unimportant, repeated pauses can increase the total time required. ⓓ The changes in focus can also cause you to overlook details and make mistakes. ⓔ Completing one activity before beginning the other avoids these repeated demands on your attention. To judge efficiency, then, consider the time and accuracy of the finished work rather than the number of activities you appear to be handling.",
+"answer": "①",
+"solution": "이 글은 과제와 메시지 확인 사이를 오갈 때 생기는 '숨겨진 비용', 곧 시간 손실과 오류를 설명한다. ⓑ는 중단 전의 생각을 되찾아야 하는 부담, ⓒ는 반복되는 중단이 늘리는 전체 소요 시간, ⓓ는 주의 전환으로 생기는 실수를 제시하고, ⓔ는 한 가지를 끝낸 뒤 다른 일을 하라는 해결책을 제시한다. ⓐ는 휴대전화를 고를 때 앱의 활용 범위를 비교한다는 내용으로, '휴대전화'라는 소재만 같을 뿐 주의 전환의 비용과는 관련이 없다. ⓐ를 빼면 도입부의 'hidden cost'가 ⓑ에서 바로 구체화된다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-66ab5e5f55",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 필자의 논지 전개에 필요하지 않은 문장을 고르시오.\n\nA person who postpones a task may know exactly when it is due and still be unable to begin. This suggests that knowing how to arrange time is not always enough to explain the delay. ⓐ If beginning brings anxiety or boredom, turning away from the task offers an immediate improvement in how the person feels. ⓑ That improvement can make avoidance attractive even though it does nothing to remove the task itself. ⓒ A detailed timetable can divide a large project into smaller stages and show the deadline assigned to each stage. ⓓ The immediate emotional benefit can thus reinforce the very behavior that creates greater pressure as the deadline gets closer. ⓔ A useful response must therefore address the willingness to experience discomfort at the start, rather than merely provide a clearer picture of the time available. The crucial issue is how the person responds to an unpleasant feeling when action is required.",
+"answer": "③",
+"solution": "필자는 미루기가 시간 관리 지식의 부족이 아니라, 불편한 감정을 피하는 행동이 즉각적인 기분 개선으로 강화되는 과정이라고 설명한다. ⓐ는 과제를 피하면 기분이 곧바로 나아진다는 점, ⓑ는 그 개선 때문에 회피가 매력적으로 느껴진다는 점, ⓓ는 그 감정적 이득이 회피를 강화해 마감 압박을 키운다는 점을 차례로 제시한다. ⓔ는 그 결론으로, 시간 정보보다 초기의 불편함을 견디려는 의지를 다뤄야 한다고 말한다. ⓒ는 시간표가 일정을 나누고 단계별 마감을 보여 준다는 기능 설명이다. 도입부의 '시간 배분' 화제와 겹치지만, 필자가 '충분하지 않다'고 밀어낸 관점을 다시 설명할 뿐 논지를 진전시키지 않는다. ⓒ를 빼면 ⓑ의 'That improvement'가 ⓓ의 'The immediate emotional benefit'으로 바로 이어진다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-1e5fb39c0d",
+"typeId": "eng-h1-u0m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 전체 논리 구조상 관계 없는 문장을 고르시오.\n\nFeeling noticeable and being noticed are not the same thing, although we often treat the first as evidence of the second. An embarrassing detail about our appearance can remain so clear in our own minds that we assume it must also stand out in everyone else's. ⓐ This judgment begins with information that is readily available to us: our own continuing awareness of the detail. ⓑ What it fails to consider is that other people have concerns of their own competing for their attention. ⓒ The resulting estimate therefore reflects how strongly we experience the situation more than how closely others have observed it. ⓓ Correcting the estimate requires us to distinguish our internal experience from the amount of attention available in someone else's mind. ⓔ For someone choosing a personal style, deciding which features of an outfit deserve emphasis is an important part of creating the desired appearance. Once that distinction is made, the feeling of being on display becomes a less convincing reason to believe that an audience is actually watching.",
+"answer": "⑤",
+"solution": "이 글은 눈에 띈다고 '느끼는 것'과 실제로 '주목받는 것'을 구분해야 한다는 논지를 전개한다. ⓐ는 그 판단이 자기 인식이라는 손쉬운 정보에서 출발함을, ⓑ는 타인에게도 주의를 빼앗는 관심사가 있다는 점을 놓친다는 것을, ⓒ는 그래서 추정이 타인의 관찰보다 내 경험의 강도를 반영한다는 것을 밝힌다. ⓓ는 이를 바로잡으려면 내적 경험과 타인의 주의를 구분해야 한다고 제시한다. ⓔ는 appearance, emphasis 같은 관련 어휘를 쓰지만, 원하는 외모를 연출하는 방법으로 논점을 옮긴다. ⓔ를 빼면 마지막 문장의 'that distinction'이 ⓓ에서 제시한 구분을 바로 받는다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
 "id": "fill-7826229132",
 "typeId": "eng-h1-u0m2s0t0",
 "kind": "객관식",
 "diff": 1,
 "body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nWalking every day is a simple way to stay healthy. ⓐ Walking helps keep our heart strong and improves our physical health. ⓑ It can also reduce stress and make us feel happier. ⓒ We do not need expensive equipment to enjoy walking. ⓓ Many people buy new smartphones because they have better cameras. ⓔ Walking with family or friends can make exercise more enjoyable. Therefore, walking is a good activity for both our body and mind.",
-"choices": [
-"① ⓐ",
-"② ⓑ",
-"③ ⓒ",
-"④ ⓓ",
-"⑤ ⓔ"
-],
 "answer": "④",
-"solution": "이 글은 걷기 운동이 신체와 정신 건강에 주는 이점과 걷기의 편리함을 설명하고 있다. ⓐ, ⓑ, ⓒ, ⓔ는 모두 걷기 운동의 장점과 관련된 내용이다. 반면 ⓓ는 사람들이 카메라 성능이 좋은 새 스마트폰을 구매하는 이유를 설명하므로 글의 전체 흐름과 관계가 없다. 따라서 정답은 ④이다.",
+"solution": "이 글은 걷기 운동이 몸과 마음의 건강에 주는 이점과 걷기의 편리함을 설명한다. ⓐ는 심장과 신체 건강, ⓑ는 스트레스 감소, ⓒ는 비싼 장비가 필요 없다는 점, ⓔ는 함께 걸으면 더 즐겁다는 점으로, 모두 걷기의 장점이다. 반면 ⓓ는 사람들이 카메라 성능 때문에 새 스마트폰을 산다는 내용이므로 글 전체의 흐름과 관계가 없다. 따라서 정답은 ④이다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
 },
 {
 "id": "fill-36bf2dc46b",
@@ -2212,17 +1942,158 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 글에서 전체 흐름과 관계 없는 문장은?\n\nCoral reefs are very important to ocean life and people. ⓐ Many kinds of fish and other sea animals live around coral reefs. ⓑ Coral reefs provide safe places for these animals to hide and find food. ⓒ They also help protect beaches from strong waves. ⓓ Some people enjoy watching movies about space and astronauts. ⓔ In addition, coral reefs attract tourists and help local people earn money. For these reasons, protecting coral reefs is important for both nature and human communities.",
+"answer": "④",
+"solution": "이 글의 중심 내용은 산호초가 해양 생물과 사람들에게 주는 여러 이점이다. ⓐ와 ⓑ는 해양 생물의 서식지 역할, ⓒ는 해안 보호 기능, ⓔ는 관광을 통한 경제적 이점을 설명한다. 그러나 ⓓ는 우주와 우주비행사에 관한 영화를 즐겨 보는 사람들에 대한 내용이므로 산호초의 중요성과 관계가 없다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-500717ae8d",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nTeenagers need enough sleep because their brains and bodies are still ⓐ**developing**. While they sleep, their brains organize and ⓑ**store** what they learned during the day. Sleep also allows their bodies to ⓒ**recover** from physical activity. However, students who stay up late may feel ⓓ**alert** the next day and have difficulty concentrating in class. For this reason, experts ⓔ**recommend** that teenagers get at least eight hours of sleep each night.",
+"answer": "④",
+"solution": "잠이 부족한 학생은 다음 날 피곤함을 느끼고 집중하기 어려워진다. 따라서 정신이 또렷하다는 뜻의 alert는 문맥에 어울리지 않으며 tired와 같은 낱말이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "① ⓐ",
 "② ⓑ",
 "③ ⓒ",
 "④ ⓓ",
 "⑤ ⓔ"
-],
-"answer": "④",
-"solution": "이 글의 중심 내용은 산호초가 해양 생물과 사람들에게 주는 다양한 이점이다. ⓐ와 ⓑ는 해양 생물의 서식지로서의 역할을, ⓒ는 해안 보호 기능을, ⓔ는 관광을 통한 경제적 이점을 설명한다. 그러나 ⓓ는 우주와 우주비행사에 관한 영화를 즐겨 보는 사람들에 대한 내용이므로 산호초의 중요성과 관계가 없다. 따라서 정답은 ④이다.",
+]
+},
+{
+"id": "fill-4a795d7a9e",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nPlastic is widely used because it is cheap and ⓐ**durable**. However, its durability becomes a serious problem after it is thrown away because plastic breaks down very ⓑ**slowly**. Some plastic reaches the ocean, where sea animals may ⓒ**mistake** it for food. To reduce this waste, several countries have ⓓ**banned** certain single-use plastic products. Individuals can also help by choosing ⓔ**disposable** bags and bottles that can be used many times.",
+"answer": "⑤",
+"solution": "여러 번 사용할 수 있는 가방과 물병을 선택해야 플라스틱 쓰레기를 줄일 수 있다. 한 번 쓰고 버리는이라는 뜻의 disposable은 문맥에 맞지 않으며 reusable이 적절하다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s0t0",
-"custom": true
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+]
+},
+{
+"id": "fill-083bf592aa",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nA failed attempt can provide ⓐ**useful** information about what does not work. Successful people do not simply ⓑ**ignore** such information. Instead, they examine the cause of the failure and ⓒ**adjust** their approach before trying again. In this way, a setback becomes a form of ⓓ**feedback** rather than a final judgment of their ability. Failure is therefore not the destination of their efforts but a necessary ⓔ**destination** on the path to success.",
+"answer": "⑤",
+"solution": "글은 실패를 성공으로 가는 과정에서 배우는 계기로 설명한다. 따라서 실패를 최종 목적지라는 뜻의 destination이라고 한 것은 부적절하며 step이나 part가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+]
+},
+{
+"id": "fill-8a9673b558",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nPutting out every forest fire may appear to be the safest policy, but the long-term result can be different. Small natural fires ⓐ**remove** dead leaves and branches from the forest floor and return nutrients to the soil. They can also create ⓑ**space** through which sunlight reaches new plants. If all such fires are immediately suppressed, however, dry material may ⓒ**diminish** over the years, leaving more fuel for a future wildfire. Forest managers therefore sometimes allow small fires to burn under careful ⓓ**control**. This policy does not deny the ⓔ**danger** of large fires near homes.",
+"answer": "③",
+"solution": "작은 불을 모두 끄면 낙엽과 마른 가지가 제거되지 않고 숲 바닥에 쌓인다. 따라서 ‘줄어들다’라는 diminish는 반대 의미이며 accumulate가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+]
+},
+{
+"id": "fill-6c37a0dced",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nThe first number people encounter can become an ⓐ**anchor**, even when it has no real connection to the decision they must make. A high starting number often pulls later estimates ⓑ**upward**, while a low one tends to pull them downward. Sellers may ⓒ**exploit** this tendency by presenting an expensive product before showing a moderately priced one. The second product then appears cheaper by ⓓ**comparison**. Because trained professionals can also be affected by anchors, expertise alone ⓔ**neutralizes** this bias.",
+"answer": "⑤",
+"solution": "글은 전문가도 기준점 효과의 영향을 받을 수 있다고 설명한다. 그러므로 전문성이 편향을 ‘무효화한다’는 neutralizes는 문맥상 부적절하며 does not eliminate 등의 의미가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+]
+},
+{
+"id": "fill-fa0c483efb",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 «않은» 것은?\n\nRegular exercise is good for both the body and the mind. When we exercise, our heart becomes ⓐ**stronger** and pumps blood more efficiently. Exercise also helps us ⓑ**gain** weight by burning calories. In addition, physical activity can ⓒ**improve** our mood because the brain releases chemicals that make us feel happy. People who exercise regularly often find that they ⓓ**sleep** better at night. Many people say they are too busy to exercise, but you do not need a lot of time. Even a short walk every day can make a ⓔ**big** difference in your health.",
+"answer": "②",
+"solution": "ⓑ 바로 뒤에 '칼로리를 태움으로써(by burning calories)'라는 말이 이어지므로, 운동은 체중을 늘리는 것이 아니라 조절하도록 돕는다고 해야 문맥에 맞습니다. 따라서 gain(늘리다)을 control(조절하다)이나 lose(줄이다)로 고쳐야 합니다. 나머지 낱말은 모두 운동의 좋은 점을 설명하는 흐름에 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-143fe6530d",
+"typeId": "eng-h1-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵은 글씨로 표시한 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\n\nBreakfast is often called the most important meal of the day. After a long night without food, your body needs energy to start the day. A healthy breakfast ⓐprovides the fuel your brain needs to focus. Students who eat breakfast tend to ⓑconcentrate better in class and remember more of what they learn. On the other hand, students who ⓒskip breakfast often feel hungry and tired before lunch. They may also eat too many snacks later in the day. A good breakfast does not have to be ⓓsimple; a piece of fruit, some bread, and a glass of milk are enough. So tomorrow morning, don't ⓔforget to eat breakfast before you leave home.",
+"answer": "④",
+"solution": "세미콜론 뒤에 '과일 한 조각, 빵 약간, 우유 한 잔이면 충분하다'는 간단한 예가 나오므로, 좋은 아침 식사가 복잡할 필요는 없다는 내용이 되어야 한다. 따라서 simple(간단한)을 complicated(복잡한)로 고쳐야 한다. ⓒ skip(거르다)은 아침을 먹지 않아 배고프고 피곤하다는 흐름과 맞으므로 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① ⓐ",
+"② ⓑ",
+"③ ⓒ",
+"④ ⓓ",
+"⑤ ⓔ"
+]
 }
 ]
