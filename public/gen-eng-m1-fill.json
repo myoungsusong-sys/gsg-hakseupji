@@ -1717,5 +1717,349 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-39668ea543",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 ‘형용사 → 부사’의 관계가 아닌 것은?",
+"choices": [
+"slow → slowly",
+"quiet → quietly",
+"teach → teacher",
+"quick → quickly",
+"careful → carefully"
+],
+"answer": "③",
+"solution": "teacher는 동사 teach에 -er를 붙여 만든 명사로, ‘가르치는 사람’을 뜻한다. 나머지는 모두 형용사에 -ly를 붙여 만든 부사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-3420263c56",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThis flower is very ________.",
+"choices": [
+"beauty",
+"beautiful",
+"beautifully",
+"teacher",
+"slowly"
+],
+"answer": "②",
+"solution": "be동사 뒤에서 주어인 꽃의 상태를 설명하므로 형용사 beautiful이 알맞다. beauty는 명사이고, beautifully는 부사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-90441097fb",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "보기의 두 단어와 같은 관계로 연결된 것은?\n\n[보기] teach → teacher",
+"choices": [
+"kind → kindly",
+"happy → happiness",
+"cloud → cloudy",
+"sing → singer",
+"safe → safely"
+],
+"answer": "④",
+"solution": "보기는 동사에 -er를 붙여 그 행동을 하는 사람을 나타내는 명사를 만든 관계이다. sing과 singer도 각각 ‘노래하다’와 ‘가수’를 뜻하므로 같은 관계이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-db49179732",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "두 빈칸에 들어갈 말을 순서대로 바르게 짝 지은 것은?\n\n• Please be ________ in the library.\n• Please speak ________ in the library.",
+"choices": [
+"quiet — quiet",
+"quietly — quiet",
+"quietly — quietly",
+"quietness — quietly",
+"quiet — quietly"
+],
+"answer": "⑤",
+"solution": "첫 문장에서는 be동사 뒤에 형용사 quiet가 필요하다. 둘째 문장에서는 동사 speak를 꾸미는 부사 quietly가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-f0aa9faae5",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 왼쪽 단어를 오른쪽 품사의 단어로 바르게 바꾼 것은?",
+"choices": [
+"happy → happily (부사)",
+"easy → easyly (부사)",
+"beauty → beautyful (형용사)",
+"careful → carefulness (부사)",
+"kind → kindly (명사)"
+],
+"answer": "①",
+"solution": "happy의 부사형은 y를 i로 바꾸고 -ly를 붙인 happily이다. easy와 beauty는 각각 easily와 beautiful로 바꿔야 한다. carefulness는 명사이며, kindly는 명사가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-515adb68ff",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 괄호 안 단어를 알맞게 바꾸어 빈칸에 넣을 때, 명사형이 필요한 것은?\n\n각 빈칸에는 괄호 안 단어에서 파생된 단어를 넣는다.",
+"choices": [
+"The soup is ________. (taste)",
+"She answered the question ________. (quick)",
+"Thank you for your ________. (kind)",
+"It is ________ today. (rain)",
+"Please walk ________ on the wet floor. (careful)"
+],
+"answer": "③",
+"solution": "③은 소유격 your 뒤에 ‘친절’을 뜻하는 명사 kindness가 필요하다. ①과 ④에는 형용사 tasty와 rainy가 들어간다. ②와 ⑤에는 부사 quickly와 carefully가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-b0274a7355",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 괄호 안 단어를 빈칸에 알맞은 형태로 바꾼 것이 옳지 않은 것은?",
+"choices": [
+"Please drive ________. (safe → safely)",
+"Her ________ made me happy. (kind → kindness)",
+"The children laughed ________. (happy → happily)",
+"This is a ________ book. (use → usefully)",
+"The sky is ________. (cloud → cloudy)"
+],
+"answer": "④",
+"solution": "④의 빈칸은 명사 book을 꾸미므로 부사 usefully가 아니라 형용사 useful이 필요하다. 나머지는 각각 동사를 꾸미는 부사, 주어로 쓰이는 명사, 상태를 나타내는 형용사의 자리에 알맞은 형태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-8e0eb5e360",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "빈칸 (A)~(C)에 들어갈 말을 순서대로 바르게 짝 지은 것은?\n\n• This question looks (A)________.\n• I can answer it (B)________.\n• I am a fast (C)________.\n\n(A), (B)에는 easy 또는 그 부사형을, (C)에는 learn에서 파생된 ‘배우는 사람’을 뜻하는 명사를 넣는다.",
+"choices": [
+"easy — easy — learner",
+"easy — easily — learner",
+"easily — easy — learner",
+"easy — easily — learning",
+"easily — easily — learning"
+],
+"answer": "②",
+"solution": "looks 뒤에서는 주어의 상태를 설명하는 형용사 easy가 필요하다. answer를 꾸미는 (B)에는 부사 easily가 들어간다. (C)에는 learn에 -er를 붙여 ‘배우는 사람’을 뜻하는 learner가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-5422367120",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "밑줄 대신 표시한 【 】 속 단어의 품사를 바르게 설명한 것만 모두 고른 것은?\n\nㄱ. She gave me a 【friendly】 smile. → 부사\nㄴ. He answered 【politely】. → 부사\nㄷ. Your 【kindness】 helped me. → 명사\nㄹ. This bag is 【useful】. → 명사",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ",
+"ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "politely는 동사 answered를 꾸미는 부사이고, kindness는 문장의 주어로 쓰인 명사이다. friendly는 -ly로 끝나지만 smile을 꾸미는 형용사이다. useful도 주어의 성질을 설명하는 형용사이므로 ㄴ과 ㄷ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-6e6c13ffc2",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에는 파생어의 품사를 잘못 사용한 부분이 각각 한 군데씩 있다. 잘못된 단어를 같은 어근의 알맞은 단어로 고쳐, (A)~(C)의 순서대로 쓰시오.\n\n(A) Please read the question careful.\n(B) Thank you for your kindly.\n(C) The answer looks easily.\n\n[조건]\n• 각 문장에서 단어 하나만 고칠 것.\n• 문장의 나머지 부분은 바꾸지 말 것.\n• 고친 단어만 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "carefully, kindness, easy",
+"solution": "(A)에서는 동사 read를 꾸며야 하므로 careful을 부사 carefully로 고친다. (B)에서는 your 뒤에 명사가 필요하므로 kindly를 kindness로 고친다. (C)에서는 looks 뒤에서 주어의 상태를 설명해야 하므로 easily를 형용사 easy로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-4144777697",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "happy를 그대로 쓰거나 알맞은 파생어로 바꾸어 (A)~(C)를 완성하시오.\n\n(A) The children played ________ together.\n(B) Their ________ made me smile.\n(C) They looked ________.\n\n[조건]\n• 각 빈칸에 한 단어씩 쓸 것.\n• happy, happy의 명사형, happy의 부사형을 각각 한 번씩 사용할 것.\n• (A)~(C)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "happily, happiness, happy",
+"solution": "(A)는 동사 played를 꾸미므로 부사 happily가 알맞다. (B)는 Their 뒤에서 주어를 이루어야 하므로 명사 happiness가 필요하다. (C)는 looked 뒤에서 아이들의 상태를 설명하므로 형용사 happy가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-55723d7693",
+"typeId": "eng-m1-u1m1s2t1",
+"kind": "주관식",
+"diff": 5,
+"body": "보기의 명사를 각각 한 번씩 사용하여 문장을 완성하시오. 각 명사를 문맥에 맞는 형용사 또는 부사로 바꾸어야 한다.\n\n[보기] care / friend / noise\n\n(A) The classroom is too ________ to study in.\n(B) Our new teacher is very ________.\n(C) Please carry these eggs ________ so that they do not break.\n\n[조건]\n• 각 빈칸에 한 단어씩 쓸 것.\n• (A)~(C)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "noisy, friendly, carefully",
+"solution": "(A)는 교실이 너무 시끄럽다는 뜻이므로 noise의 형용사형 noisy가 들어간다. (B)는 선생님의 성격을 설명하므로 friend에서 파생된 형용사 friendly가 알맞다. (C)는 달걀이 깨지지 않도록 조심해서 옮기라는 뜻이므로 care에서 careful을 거쳐 만든 부사 carefully가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u1m1s2t1",
+"custom": true
+},
+{
+"id": "fill-f0cbe2c9be",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글이 실릴 곳으로 가장 알맞은 것은?\n\nSeptember 12\nOur family visited Tongyeong today. Before lunch, I thought Chungmu gimbap would have many things inside. But there was only rice in the roll! I tried it with radish and squid. It was a little spicy for me, but I enjoyed it. Now I am back in our room, thinking about lunch. I want to tell my friends about this special meal when I get home.",
+"choices": [
+"지역 음식을 만드는 요리책",
+"식당의 메뉴와 가격 안내판",
+"통영의 역사를 설명하는 자료집",
+"개인의 여행 경험을 기록한 일기장",
+"새로운 식당을 소개하는 신문 광고"
+],
+"answer": "④",
+"solution": "날짜 아래에 여행 중 먹은 음식과 그때의 생각을 자신의 관점에서 기록하고 있다. 음식을 만드는 방법이나 식당 정보를 제공하는 글이 아니므로 여행 일기장에 실릴 글이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-07c498a8f6",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 종류와 판단 근거가 바르게 연결된 것은?\n\nDear Dad,\nYou asked what I enjoy doing these days. I often run in the park and enjoy the fresh air. I also use an app to record my speed, time, and steps. Looking at the records makes running more interesting. Do you still run in the morning? I hope we can run together when I visit you.\nLove,\nYour daughter",
+"choices": [
+"일기 — 하루의 일을 날짜와 함께 기록하고 있다.",
+"편지 — 특정한 사람에게 근황을 전하고 말을 건네고 있다.",
+"광고 — 달리기 앱을 구매하도록 권하고 있다.",
+"기사 — 여러 사람의 운동 습관을 객관적으로 보도하고 있다.",
+"설명서 — 앱을 설치하는 과정을 순서대로 안내하고 있다."
+],
+"answer": "②",
+"solution": "아버지를 수신인으로 하여 자신의 근황을 전하고, 아버지의 생활을 묻고 있다. 앱은 근황을 설명하기 위한 소재이며, 글 전체는 인사말과 맺음말을 갖춘 편지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-4c09cc937c",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 주된 기능을 고려할 때, 이 글이 실릴 곳으로 가장 알맞은 것은?\n\nMacaroni with Cheese\nThis warm dish can be a nice meal for your family.\nHave macaroni, cheese, milk, butter, flour, and salt ready. First, cook the macaroni in water. In another pot, melt the butter and mix in the flour. Slowly add the milk and stir. Add the cheese and a little salt. Finally, put the cooked macaroni into the pot and mix everything together. Serve it warm.\n* melt: 녹이다  stir: 젓다",
+"choices": [
+"가족 식사 경험을 적은 일기",
+"음식의 맛을 평가하는 후기 게시판",
+"식당의 신메뉴 광고",
+"유제품의 영양을 설명하는 보고서",
+"음식의 재료와 조리법을 소개하는 요리책"
+],
+"answer": "⑤",
+"solution": "첫 문장은 음식을 소개하지만, 글의 중심 내용은 준비할 재료와 조리 순서이다. First, Finally 등의 표현과 행동을 지시하는 문장을 통해 요리책에 실릴 조리법임을 알 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-7626d663d2",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 글의 종류를 가장 적절하게 판단한 것은?\n\nRunning Is Part of My Life\nSome people enjoy taking pictures in their free time. I enjoy running. I usually run in the park because I like the fresh air. I use an app to record my speed, time, and steps, but the numbers are not the only reason I run. Running is something I enjoy doing again and again. When I introduce myself to new friends, I often tell them about this hobby. It is a simple way to show them what kind of person I am.",
+"choices": [
+"수필 — 자신의 취미와 그에 대한 생각을 자유롭게 풀어 쓰고 있다.",
+"일기 — 특정한 날에 일어난 일을 시간순으로 기록하고 있다.",
+"광고 — 특정 앱의 장점을 내세워 이용자를 모으고 있다.",
+"설명서 — 달리기 기록을 확인하는 방법을 단계별로 안내하고 있다.",
+"기사 — 조사 결과를 바탕으로 학생들의 취미를 보도하고 있다."
+],
+"answer": "①",
+"solution": "이 글은 특정한 하루의 사건이 아니라 평소의 취미와 자신에게 그 취미가 갖는 의미를 다룬다. 앱의 기능도 언급하지만 중심은 글쓴이의 생활과 생각이므로 수필로 보는 것이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-52195a73b6",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 종류를 판단한 설명으로 가장 알맞은 것은?\n\nDAY 4 — My Empty Bottle\nBefore leaving home this morning, I wrote a short note: “Take the empty bottle. Fill it with shampoo. Share the idea.” I followed the note and visited a zero-waste shop. Later, I put pictures of my visit on social media. A friend saw them and tried the same thing. We shared useful ideas, and I felt happy. Tonight, I am writing this page to remember how a small action brought us together.",
+"choices": [
+"명령문이 있으므로 글 전체는 샴푸 사용 설명서이다.",
+"가게 방문을 다루므로 글 전체는 가게 광고이다.",
+"하루의 행동과 느낌을 돌아보므로 글 전체는 활동 일지이다.",
+"친구의 행동이 나오므로 글 전체는 그 친구의 전기이다.",
+"환경을 소재로 하므로 글 전체는 환경 문제에 관한 과학 보고서이다."
+],
+"answer": "③",
+"solution": "따옴표 안의 짧은 메모는 글쓴이가 그날 한 일을 설명하기 위해 포함한 내용이다. 글 전체는 아침부터 밤까지의 활동과 그에 대한 느낌을 기록하고 있으므로 활동 일지에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-2083c12928",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 글은 같은 소재를 다루지만 종류가 다르다. 날짜나 인사말의 유무가 아니라 글의 주된 기능을 기준으로, (A)와 (B)의 종류를 각각 한국어 두 글자로 쓰시오. 답은 '(A)의 종류, (B)의 종류' 순서로 쓰시오.\n\n(A)\nI visited a zero-waste shop this morning with my empty shampoo bottle. After filling it, I took some pictures and shared them online. My friends liked them, and we talked about our ideas. Now, before going to bed, I am thinking about that conversation. I felt closer to my friends today. I want to keep this memory on this page.\n\n(B)\nYou asked me what I did with the empty shampoo bottle. I took it to a zero-waste shop and filled it there. I wanted to tell you because we talked about helping the Earth the last time we met. Have you tried anything like this? Please tell me in your next letter. I would love to hear your ideas.",
+"selfGrade": true,
+"answer": "일기, 편지",
+"solution": "(A)는 잠들기 전에 자신의 하루와 감정을 돌아보며 기억을 남기는 글이므로 일기이다. (B)는 특정 상대가 했던 질문에 답하고 다음 편지로 소식을 전해 달라고 요청하므로 편지이다. 같은 활동을 설명하더라도 기록의 목적과 말을 건네는 대상에 따라 글의 종류가 달라진다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-f1ddb2ef79",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 한 여행 글의 본문과 그 안에 인용된 글이다. 본문 전체의 종류와 ㉠에 인용된 글의 종류를 각각 한국어 네 글자, 두 글자로 쓰시오. 답은 '본문의 종류, 인용된 글의 종류' 순서로 쓰시오.\n\nOur visit to Purple Island is over, and I am writing about it before I forget the day. I saw purple houses, buses, and bridges. Purple is my favorite color, so I kept looking around with a smile. During a break, I wrote this to Mom:\n\n㉠ “You would love the colors here. I am going to explore the island by bicycle. I will tell you more when I get home. Please write back and tell me how you are.”\n\nAfter sending it, I went to a bike rental shop. Looking back now, I think the purple bridges were the best part of my day. I want to remember how happy I felt when I saw them.",
+"selfGrade": true,
+"answer": "여행일기, 편지",
+"solution": "본문 전체는 여행을 마친 뒤 방문 중의 경험과 느낌을 되돌아보며 기록한 여행일기이다. ㉠은 엄마에게 여행 소식을 전하고 답장을 부탁하는 편지이다. 본문에 편지가 인용되어 있어도 본문 전체의 기록 목적까지 편지로 바뀌는 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-b4d8bc58e0",
+"typeId": "eng-m1-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 (A)와 (B) 중 조리법을 모은 책에 실릴 글을 고르고, 그 글의 종류를 영어 한 단어로 쓰시오. 답은 '기호, 영어 단어' 형식으로 쓰시오.\n\n(A)\nHave the macaroni, cheese, milk, butter, flour, and salt ready before you begin. Cook the macaroni in water. Melt the butter in another pot and mix in the flour. Add the milk slowly, and then add the cheese and salt. Mix the cooked macaroni with the sauce. If someone asks, “When do I add the macaroni?” remember that it goes into the sauce at the end.\n\n(B)\n“Have everything ready before you begin,” I told myself. But while I was cooking the macaroni, I remembered that the milk was still in the refrigerator. I got it and went back to the pot. At last, my macaroni with cheese was ready. I enjoyed the warm meal and felt proud. Next time, I will put everything on the table first.\n\n* melt: 녹이다",
+"selfGrade": true,
+"answer": "A, recipe",
+"solution": "(A)는 독자가 음식을 만들 수 있도록 재료 준비와 조리 순서를 안내하므로 recipe에 해당한다. (B)에도 조리 행동과 명령문이 나오지만, 명령문은 자신에게 한 말을 인용한 것이고 글의 중심은 자신의 경험과 느낌이다. 음식 관련 낱말이나 명령문의 유무만으로 판단하지 않고 글 전체의 기능을 살펴야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-u0m0s3t1",
+"custom": true
 }
 ]

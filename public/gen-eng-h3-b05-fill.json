@@ -354,5 +354,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b05-u0m1s0t0",
 "custom": true
+},
+{
+"id": "fill-cba7ba75ab",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhen oil enters the sea, certain bacteria (A)[are / is] attracted to it and begin to multiply. The bacteria release enzymes (B)[that / what] break down components of the oil, thereby (C)[turning / turn] them into carbon dioxide and water.",
+"choices": [
+"are – that – turning",
+"are – what – turning",
+"is – that – turning",
+"are – that – turn",
+"is – what – turn"
+],
+"answer": "①",
+"solution": "주어 certain bacteria가 복수이므로 (A)에는 are가 알맞다. 선행사 enzymes를 수식하며 관계절 안에서 주어 역할을 하는 관계대명사는 that이다. thereby 뒤에서는 앞 절의 결과를 나타내는 분사 turning을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a8f396a532",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA large sporting event often (A)[requires / require] an enormous facility. To attract more spectators, stadiums are becoming larger, (B)[consuming / consume] more land and building materials. (C)[Whenever / Whatever] an area of grassland is cleared for construction, part of nature is lost.",
+"choices": [
+"requires – consuming – Whenever",
+"requires – consume – Whenever",
+"require – consuming – Whatever",
+"requires – consuming – Whatever",
+"require – consume – Whenever"
+],
+"answer": "①",
+"solution": "주어 A large sporting event가 단수이므로 requires가 알맞다. consuming은 앞의 are becoming larger에 이어지는 분사구문이다. 뒤에 완전한 절이 오고 ‘~할 때마다’라는 의미이므로 Whenever를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-42d7d7d605",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOne environmental cost that is easily overlooked (A)[is / are] the large quantity of resources needed by a stadium. Water, electricity, and other forms of energy (B)[are / is] consumed to operate and maintain the facility. Moreover, the equipment used to produce and transport construction materials (C)[emit / emits] waste into the ground and atmosphere. This means that the environmental impact of a sporting event (D)[continues / continuing] even after construction has been completed.",
+"choices": [
+"is – are – emits – continues",
+"is – is – emit – continues",
+"are – are – emits – continuing",
+"is – are – emit – continuing",
+"are – is – emits – continues"
+],
+"answer": "①",
+"solution": "(A)의 주어는 단수인 One environmental cost이고, (B)의 주어는 Water, electricity, and other forms of energy라는 복수 병렬 구조이다. (C)의 주어는 불가산 단수 명사 equipment이므로 emits가 필요하다. that절에는 서술동사가 필요하므로 (D)는 continues가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5284189284",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nResearchers have warned that climate change may prevent some former Winter Olympics host cities from holding the event again. This warning, based on predictions (A)[that / what] snow and ice may become insufficient, has increased concern about the future of sports. The US Open organizers also adopted an extreme heat policy (B)[requiring / required] short breaks during matches. The policy allows players (C)[to cool / cooling] down when temperatures become dangerously high. Neither the concern about winter sports nor the prediction of more extreme heat (D)[has / have] disappeared.",
+"choices": [
+"that – requiring – to cool – has",
+"that – required – cooling – has",
+"what – requiring – to cool – have",
+"that – requiring – cooling – have",
+"what – required – to cool – has"
+],
+"answer": "①",
+"solution": "predictions 뒤에는 그 내용을 설명하는 완전한 절이 이어지므로 동격의 접속사 that이 필요하다. 정책이 휴식을 ‘요구하는’ 능동 관계이므로 requiring이 알맞고, allow는 「allow + 목적어 + to부정사」로 쓰인다. 「neither A nor B」의 동사는 가까운 주어 prediction에 일치하므로 has가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true
 }
 ]

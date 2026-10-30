@@ -2542,5 +2542,451 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u6m7s0t0",
 "custom": true
+},
+{
+"id": "fill-c39873a56c",
+"typeId": "eng-m1-b07-u2m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nJessica is making a sweater for her dog. Her dog is big and has a long body and short legs. She shows a picture of him.",
+"choices": [
+"Jessica의 강아지와 그 생김새",
+"강아지 사진을 잘 찍는 방법",
+"Jessica가 좋아하는 여러 동물",
+"작은 강아지를 위한 운동",
+"남자가 만든 강아지 옷"
+],
+"answer": "①",
+"solution": "Jessica가 강아지를 위해 스웨터를 만들며 강아지의 크기와 신체적 특징을 설명하는 글이다. 따라서 강아지와 그 생김새를 나타낸 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-44203d70d8",
+"typeId": "eng-m1-b07-u2m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nGary fell from a chair and could not move. His cat, Tommy, ran to the telephone and pushed the buttons for 911. The police came to Gary's house and saved him.",
+"choices": [
+"Gary는 경찰에게 고양이를 찾아 달라고 부탁했다.",
+"Tommy는 전화로 장난을 하여 경찰을 곤란하게 했다.",
+"Tommy는 911에 전화하여 움직일 수 없는 Gary를 구했다.",
+"경찰관은 Gary에게 전화기 사용법을 가르쳤다.",
+"Gary는 의자에서 고양이를 구해 주었다."
+],
+"answer": "③",
+"solution": "움직일 수 없었던 Gary를 위해 Tommy가 전화기의 911 버튼을 눌렀고 경찰이 출동했다. 고양이의 전화가 주인을 구했다는 ③이 글의 요지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2fd4662681",
+"typeId": "eng-m1-b07-u2m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe police received two calls, but they heard no sound. They checked the address, and a police officer went there. He found Gary on the floor and Tommy next to the telephone. Tommy's call helped the police rescue Gary.",
+"choices": [
+"Two Silent Calls That Saved Gary",
+"Gary's New Job at the Police Station",
+"Why Tommy Was Afraid of the Telephone",
+"A Police Officer Looking for His Cat",
+"The Wrong Address on Gary's Telephone"
+],
+"answer": "①",
+"solution": "소리가 들리지 않는 두 번의 전화 때문에 경찰이 주소를 확인했고, 그 결과 Gary를 구조했다. 이 핵심 사건과 결과를 모두 담은 제목은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-94387cf652",
+"typeId": "eng-m1-b07-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 요약한 문장의 빈칸 (A)~(C)에 들어갈 말을 본문에서 찾아 알맞은 형태로 쓰시오.\n\nGary often played a telephone game with Tommy. The game was a kind of training: Tommy learned to push the telephone buttons, including the button for 911. Later, Gary fell from a chair and could not move. Tommy pushed the buttons, so the police checked the address and went to Gary's house.\n\nThe telephone game provided Tommy with (A)__________. Thanks to it, Tommy's call made the police check Gary's (B)__________ and finally (C)__________ him.",
+"selfGrade": true,
+"answer": "training, address, save",
+"solution": "전화 게임은 Tommy가 버튼을 누르도록 하는 ‘훈련’이었으므로 (A)는 training이다. 경찰은 전화가 온 주소를 확인했으므로 (B)는 address이고, finally 뒤에는 Gary를 구조했다는 의미의 동사원형 save가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-34da8ec481",
+"typeId": "eng-m1-b07-u2m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요지를 아래 조건에 맞게 영어 한 문장으로 쓰시오.\n\nThe police got a call from Gary's house, but there was no sound. A little later, the same thing happened again. The police checked where the calls came from. At the house, an officer found Gary lying on the floor and Tommy beside the telephone.\n\n<조건>\n· although, receive, two calls, no sound, check, find를 각각 한 번씩 사용할 것\n· 필요하면 단어의 형태를 바꿀 것\n· 정확히 19단어로 쓸 것",
+"selfGrade": true,
+"answer": "Although the police received two calls with no sound, they checked the address and found Gary on the floor.",
+"solution": "두 차례의 무음 전화에도 경찰이 주소를 확인하여 Gary를 발견했다는 것이 핵심이다. 제시된 표현을 문맥과 시제에 맞게 received, checked, found로 바꾸어 연결한다. 제시된 답은 총 19단어이며 모든 조건을 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-0ef4d2fecf",
+"typeId": "eng-m1-b07-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 모두 배열하시오.\n\n그 재활용 상자들을 우리 교실에 두자.\n\n(classroom / boxes / let’s / recycling / the / in / put / our)",
+"selfGrade": true,
+"answer": "Let’s put the recycling boxes in our classroom.",
+"solution": "‘~하자’는 「Let’s＋동사원형」으로 나타낸다. 장소를 나타내는 in our classroom을 문장 끝에 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-ce1a66128c",
+"typeId": "eng-m1-b07-u6m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n그 플라스틱 오리는 얼마나 운이 좋은가!\n\n<조건>\n• How와 lucky를 사용할 것\n• 6단어로 쓸 것",
+"selfGrade": true,
+"answer": "How lucky the plastic duck is!",
+"solution": "형용사를 강조하는 감탄문은 「How＋형용사＋주어＋동사!」의 어순으로 쓴다. 주어 the plastic duck 뒤에 동사 is를 놓으면 6단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6c119ac2f2",
+"typeId": "eng-m1-b07-u6m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "플라스틱 오리의 이야기를 바탕으로 다음 우리말을 <조건>에 맞게 영작하시오.\n\n상자들이 사고로 바다에 떨어졌고, 파도가 오리들을 서로 흩어지게 했다.\n\n<조건>\n• fall과 take를 알맞은 형태로 바꾸어 사용할 것\n• 오리들을 가리키는 대명사를 사용할 것\n• accident, waves, apart를 모두 포함할 것\n• 15단어로 쓸 것",
+"selfGrade": true,
+"answer": "The boxes fell into the ocean in an accident, and the waves took them apart.",
+"solution": "지난 일을 나타내므로 fall과 take를 각각 fell과 took으로 바꾼다. 앞에서 언급한 오리들은 목적격 대명사 them으로 받고 「take＋목적어＋apart」의 어순으로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-6b82c4d5be",
+"typeId": "eng-m1-b07-u6m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "플라스틱 오리의 이야기를 바탕으로 다음 우리말을 <조건>에 맞게 영작하시오.\n\n그 플라스틱 오리는 바다거북을 도울 수 없었기 때문에 매우 슬펐다.\n\n<조건>\n• Because로 시작할 것\n• could, not, so를 모두 사용할 것\n• 두 번째 절에서는 플라스틱 오리를 대명사로 나타낼 것\n• 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "Because the plastic duck could not help the sea turtle, it was so sad.",
+"solution": "이유를 나타내는 절을 Because로 시작하고 과거의 불가능은 could not으로 표현한다. 뒤 절에서는 the plastic duck을 it으로 바꾸고 ‘매우 슬펐다’를 was so sad로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-12b2e29ff9",
+"typeId": "eng-m1-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 (A)~(C)의 괄호 안에서 어법상 알맞은 말을 바르게 연결한 것은?\n\n(A) A piece of box tape can [be / is] part of an artwork.\n(B) The shadow of the cup [look / looks] like an elephant.\n(C) Look at the shadow and [draw / drawing] something around it.",
+"choices": [
+"be — look — draw",
+"is — looks — draw",
+"be — looks — drawing",
+"be — looks — draw",
+"is — look — drawing"
+],
+"answer": "④",
+"solution": "조동사 can 뒤에는 동사원형 be가 와야 한다. (B)의 주어는 단수인 The shadow이므로 looks가 알맞다. (C)는 명령문에서 Look과 draw가 and로 연결되므로 동사원형 draw를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-df529bda6e",
+"typeId": "eng-m1-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ 중 어법상 옳은 문장만을 모두 고른 것은?\n\nⓐ Can the shadow of a cup becomes art?\nⓑ I will show a different art style to you next time.\nⓒ Put some tape on the glass and adding another piece on top of it.\nⓓ The artwork made with box tape is interesting.\nⓔ Did you enjoyed the lights at Pulse Park?",
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓓ",
+"ⓒ, ⓔ",
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓑ는 show 뒤에 ‘사물 + to + 사람’이 온 올바른 문장이며, ⓓ의 interesting은 작품이 흥미롭다는 뜻으로 알맞다. ⓐ는 조동사 Can 뒤의 becomes를 become으로 고쳐야 한다. ⓒ는 명령문에서 Put과 병렬로 연결되므로 adding을 add로 고쳐야 한다. ⓔ는 Did 뒤에 동사원형이 와야 하므로 enjoyed를 enjoy로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-38006ddf85",
+"typeId": "eng-m1-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 틀린 문장 네 개를 찾아 기호와 수정한 표현을 쓰시오.\n\nⓐ The shadow of the cup can makes an elephant shape.\nⓑ Look at the shadow and draws something around it.\nⓒ The lights at Pulse Park are dance now.\nⓓ Did you see the artwork made with tape?\nⓔ I will showing a different art style to you next time.\n\n[조건]\n• 틀린 문장에는 각각 잘못된 단어가 한 개씩 있다.\n• 단어를 추가하거나 삭제하지 말고, 잘못된 단어의 형태만 고칠 것.\n• ‘기호: 잘못된 단어 → 바른 단어’의 형식으로 기호 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "ⓐ: makes → make, ⓑ: draws → draw, ⓒ: dance → dancing, ⓔ: showing → show",
+"solution": "ⓐ와 ⓔ는 각각 조동사 can과 will 뒤에 동사원형이 필요하므로 make와 show로 고친다. ⓑ는 Look과 and로 연결된 명령문이므로 draw가 알맞다. ⓒ는 현재진행형이므로 are 뒤에 dancing을 쓴다. ⓓ는 Did 뒤에 동사원형 see가 쓰인 올바른 문장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-889e59568f",
+"typeId": "eng-m1-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 표현 ⓐ~ⓖ 중 어법상 틀린 것 다섯 개를 찾아 기호와 바른 표현을 쓰시오.\n\nArt can ⓐ[is] all around us. A cup's shadow ⓑ[makes] the shape of an elephant. ⓒ[Choosing] a shadow and add a drawing around it. Artists can ⓓ[use] box tape to make an artwork. Their tape artwork looks ⓔ[interested]. At Pulse Park, your heartbeat ⓕ[change] into lights. Are the lights ⓖ[dance] now?\n\n[조건]\n• 대괄호 안의 표현만 고칠 것.\n• 각 표현을 한 단어로 고치되, 원래 단어의 형태만 바꿀 것.\n• ‘기호: 바른 표현’의 형식으로 기호 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "ⓐ: be, ⓒ: Choose, ⓔ: interesting, ⓕ: changes, ⓖ: dancing",
+"solution": "ⓐ는 조동사 can 뒤이므로 be가 와야 하고, ⓒ는 명령문이므로 Choose가 알맞다. ⓔ는 작품이 흥미롭게 보인다는 뜻이므로 interesting을 쓴다. ⓕ는 주어 your heartbeat가 3인칭 단수이므로 changes로 고치고, ⓖ는 현재진행형 의문문이므로 dancing으로 고친다. ⓑ는 단수 주어에 맞는 makes이고, ⓓ는 can 뒤의 동사원형 use이므로 둘 다 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5cd1a693a3",
+"typeId": "eng-m1-b07-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문에 대한 답으로 가장 알맞은 것을 고르시오.\n\nAndy could not see and used a stick when walking. He wanted to join Friendship Marathon, a school event for teams of two. However, he was worried about running. When he talked to his best friend Junha, Junha offered to be his running partner.\n\nQ: Who offered to run with Andy?",
+"choices": [
+"His uncle.",
+"His homeroom teacher.",
+"His best friend.",
+"A student from another school.",
+"A friend he met after the race."
+],
+"answer": "③",
+"solution": "Andy가 달리기에 대한 걱정을 이야기하자 가장 친한 친구인 Junha가 함께 달리겠다고 했다. 따라서 질문의 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8d5f00bbe5",
+"typeId": "eng-m1-b07-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용으로 보아, Andy가 다음에 해 보고 싶어 하는 활동은?\n\nAt Friendship Marathon, Andy ran with Junha. They reached the end of the race, and Andy felt proud. Before taking part, Andy had doubts about his ability to run. After the experience, he became interested in trying more activities. Riding a bike was something he thought he could try next.",
+"choices": [
+"친구에게 수영 가르치기",
+"자전거 타기에 도전하기",
+"혼자 마라톤 대회 열기",
+"산 정상까지 걸어가기",
+"달리기 선수를 인터뷰하기"
+],
+"answer": "②",
+"solution": "글의 마지막에서 Andy는 다음에 자전거 타기를 시도할 수 있겠다고 생각했다. 따라서 해 보고 싶어 하는 활동은 자전거 타기이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-a26a089e37",
+"typeId": "eng-m1-b07-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nJunha joined Friendship Marathon with Andy as his guide runner. During practice, they connected themselves with a string and ran together each day. In the race, Junha both ran beside Andy and helped him find his way. They reached the finish, although they were not the winners.",
+"choices": [
+"How long was the race?",
+"What time did the race begin?",
+"How many teams joined the race?",
+"How often did the two boys practice?",
+"What color was the string?"
+],
+"answer": "④",
+"solution": "두 사람이 매일 함께 달리며 연습했다고 했으므로 연습 빈도를 묻는 ④에 답할 수 있다. 경기 거리, 시작 시각, 참가 팀 수, 줄의 색깔은 제시되어 있지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f6b3620b94",
+"typeId": "eng-m1-b07-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고, (A)~(C)의 내용이 글과 일치하면 T, 일치하지 않으면 F로 표시한 것으로 알맞은 것을 고르시오.\n\nAndy and Junha took part in Friendship Marathon together. A string around their fingers helped them feel how the other person moved. Andy paid close attention to Junha's words as they ran. Guiding Andy while running was difficult for Junha, but the boys kept going until they reached the finish. They did not take first place. Still, Junha felt happy because he had finished something that was difficult for him.\n\n(A) The string helped the boys feel each other's movements.\n(B) Junha found it easy to run and guide Andy at the same time.\n(C) Junha was happy even though his team did not win.",
+"choices": [
+"T - T - F",
+"F - T - T",
+"T - F - F",
+"F - F - T",
+"T - F - T"
+],
+"answer": "⑤",
+"solution": "줄은 서로의 움직임을 느끼는 데 도움을 주었으므로 (A)는 T이다. Junha는 달리면서 안내하는 일이 어려웠다고 했으므로 (B)는 F이다. 우승하지 못했어도 완주하여 행복했으므로 (C)는 T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-170c9c776c",
+"typeId": "eng-m1-b07-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글을 종합하여 이해한 내용으로 가장 적절한 것을 고르시오.\n\n[Andy]\nWhen I heard about Friendship Marathon at school, I wanted to join, but I doubted that I could run. Junha, my best friend, offered to help. On race day, we put a string around our fingers so that we could feel each other's movements. I followed his words carefully. After we reached the finish, I felt proud. Now I would like to try more things, perhaps riding a bike.\n\n[Junha]\nAndy and I trained together daily, using a string. Our goal was to win Friendship Marathon. In the race, I had to guide Andy while running with him. That was difficult, but we kept running and reached the end. Another team won, but I felt we had given our best. Completing things had been difficult for me, so finishing this race made me happy.\n\n※ 두 사람의 목표, 실제 결과, 경기 후 생각을 모두 고려할 것.",
+"choices": [
+"Andy는 달릴 수 있을지 걱정했지만 완주 후 새 활동에 도전하고 싶어 했고, Junha는 우승 목표를 이루지 못했어도 완주를 기뻐했다.",
+"Andy는 완주 후 자전거 타기까지 성공하여 자신감을 얻었고, Junha는 우승 목표를 이루지 못했어도 완주를 기뻐했다.",
+"Andy는 달릴 수 있을지 걱정했지만 완주 후 새 활동에 도전하고 싶어 했고, Junha는 우승을 목표로 하지 않았기 때문에 결과에 만족했다.",
+"Andy는 준하의 안내 없이 완주하면서 자신감을 얻었고, Junha는 어려운 일을 끝까지 해냈다는 점에서 기쁨을 느꼈다.",
+"Andy는 완주를 통해 새로운 도전에 관심을 갖게 되었고, Junha는 이번 완주를 통해 이전에도 일을 끝내는 것이 쉬웠음을 확인했다."
+],
+"answer": "①",
+"solution": "Andy는 자신의 달리기 능력을 의심했지만 완주 후 다른 활동에도 도전하고 싶어 했다. Junha는 우승을 목표로 연습했으나 실제로는 우승하지 못했고, 그럼에도 어려운 일을 끝냈다는 점에서 행복해했다. 자전거 타기는 앞으로의 희망이며, Andy는 경기 중 Junha의 안내를 받았으므로 두 글을 모두 정확하게 이해한 것은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3cc359aea1",
+"typeId": "eng-m1-b07-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 학생들이 작성한 질문과 답을 검토하였다. 답의 내용 전체가 글에 의해 뒷받침되는 것만을 <보기>에서 모두 고른 것은?\n\nAndy uses a stick to walk because he cannot see. After learning about a school race called Friendship Marathon, he became interested but was unsure whether he could run. Junha agreed to join him as his guide runner. They practiced together every day with a string. During one practice, Junha told Andy to move right because a bike was coming.\n\nFor the race, they tied a string around their fingers to feel each other's movements. Andy listened closely to Junha, who ran and guided him at the same time. The boys kept running despite the difficulty and reached the finish. They did not win. Andy was proud and wanted to try riding a bike next. Junha was happy to finish the race because completing things had been difficult for him.\n\n<보기>\n(A) Q: Why did Andy use a stick, and what made him unsure about joining the race?\n    A: He could not see, and he doubted that he could run.\n(B) Q: Why did they move right during practice, and who was riding the bike?\n    A: A bike was coming, and their teacher was riding it.\n(C) Q: Did the boys achieve their goal of winning, and why was Junha still happy?\n    A: They did not win, but Junha was happy because he completed something difficult for him.\n(D) Q: How did Andy receive help during the race, and who would guide him on his next bike ride?\n    A: He listened to Junha and felt his movements through the string, and Junha would guide him on the bike ride.",
+"choices": [
+"(A), (B)",
+"(B), (D)",
+"(C), (D)",
+"(A), (C)",
+"(A), (C), (D)"
+],
+"answer": "④",
+"solution": "Andy의 시각 장애와 달리기에 대한 걱정이 제시되어 있으므로 (A)는 뒷받침된다. 우승하지 못했지만 어려운 일을 끝내서 Junha가 행복했다는 (C)도 글에 근거한다. (B)의 자전거를 탄 사람과 (D)의 앞으로 자전거 타기를 안내할 사람은 밝혀지지 않았으므로, 답의 일부가 맞더라도 전체가 뒷받침되지는 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-451f99fb98",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화에서 두 사람이 주로 이야기하는 내용은?\n\nW: James Sweeney makes games. I learned about him on TV.\nM: Would you like to do the same job?\nW: Yes. He is my role model. I hope to create adventure games in the future.\nM: I'd love to try a game you make.",
+"choices": [
+"여자가 즐겨 보는 방송의 종류",
+"여자가 앞으로 하고 싶은 일",
+"남자가 게임을 만드는 방법",
+"두 사람이 함께 즐기는 취미",
+"남자가 존경하는 게임 제작자"
+],
+"answer": "②",
+"solution": "여자는 James Sweeney를 본받아 미래에 모험 게임을 만드는 사람이 되고 싶다고 말한다. 따라서 대화의 중심 내용은 여자가 앞으로 하고 싶은 일이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1bdce1e7e7",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nSumin tried her friends' game again and again. She liked it, but she thought the adventure was too short. She suggested another stage and useful things for the player. The friends followed her advice by putting an ice lake and more items into the game.",
+"choices": [
+"Learning to Draw Game Characters",
+"Choosing a Game on the App Market",
+"Writing Music for an Adventure",
+"Making a Game Better with Advice",
+"Finding a Way out of a Real Lake"
+],
+"answer": "④",
+"solution": "수민은 게임을 여러 번 해 본 뒤 새로운 단계와 유용한 아이템을 제안했고, 친구들은 이를 게임에 반영했다. 따라서 조언을 바탕으로 게임을 개선한다는 제목이 글 전체를 가장 잘 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-5527d0e6a2",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nHyunsu created the story for an adventure game. In the story, the player must leave an island with monsters. Sujin worked on the music and sounds, while Jean drew the characters. Minwoo then used coding to bring the story, sounds, and characters together. These different pieces became one game.",
+"choices": [
+"how friends brought their different work together to build a game",
+"how a player chose useful items to escape from an island",
+"why the friends wanted to become famous game makers",
+"why coding was more important than the other jobs",
+"how players' reviews changed the story of a game"
+],
+"answer": "①",
+"solution": "글은 이야기, 소리, 캐릭터 제작과 코딩을 맡은 친구들의 작업이 하나의 게임으로 합쳐지는 과정을 설명한다. 섬 탈출은 게임 속 이야기의 일부일 뿐이며, 글 전체의 주제는 각자의 작업을 모아 게임을 만드는 과정이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4b04a60ef3",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThe team's adventure game already had a story, characters, music, and sounds. However, their work did not stop there. Sumin played it several times and said that the adventure finished too quickly. She also wanted more helpful items. The team used her ideas to add an ice lake stage and more items before putting the game on the app market.",
+"choices": [
+"게임의 이야기는 캐릭터를 완성한 뒤에 만들어야 한다.",
+"게임 제작에서는 음악보다 아이템의 수가 중요하다.",
+"게임을 출시하면 이용자들의 의견을 모두 반영해야 한다.",
+"게임의 모험 단계는 짧고 간단하게 만드는 것이 좋다.",
+"게임을 시험해 보고 얻은 의견은 출시 전 개선에 도움이 된다."
+],
+"answer": "⑤",
+"solution": "이야기와 소리 등이 갖춰진 후에도 수민의 시험과 의견 제시를 통해 게임이 개선되었다. 따라서 글의 요지는 시험 과정에서 얻은 의견이 출시 전 게임을 더 좋게 만드는 데 도움이 된다는 것이다. 앱 마켓 이용자의 의견을 반영한 내용은 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9c6f6dd305",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글 전체를 소개하는 제목과 부제의 짝으로 가장 적절한 것은?\n\nAn adventure game needs many parts. For Hyunsu's team, his story was one of them. Sujin supplied music and sounds, Jean provided character drawings, and Minwoo joined these parts through coding. The game was ready for Sumin to try, but the team's work was not over. Her comments about its short length and its items led to an extra ice lake stage and more useful items. Only after these changes did the friends put the game on the app market. The work was difficult, but the team finished it together.",
+"choices": [
+"A Story Becomes a Game — How Hyunsu's writing solved the team's problems at every stage",
+"The Final Step: Testing — How Sumin's ideas brought the team's work to an end before publication",
+"Many Jobs, One Finished Game — How different tasks and testing helped a team complete its project",
+"A Better Game through Reviews — How app market users guided the team from building to testing",
+"More Items, Less Work — How adding useful items made every game-making task easy"
+],
+"answer": "③",
+"solution": "글 전체에는 역할을 나누어 게임을 구성하고, 시험 의견을 반영한 뒤 출시하기까지의 협력 과정이 담겨 있다. ③은 서로 다른 작업과 시험 과정이 공동의 완성으로 이어졌다는 핵심을 모두 포함한다. ②는 시험이 마지막 단계라고 잘못 설명하고, ④는 수민의 출시 전 의견을 앱 마켓 이용자의 의견으로 바꾸었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-93e207311e",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 요약할 때, 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nHyunsu and his friends shared the work of creating an adventure game. His story, Sujin's sounds, and Jean's drawings became parts of the game through Minwoo's coding. Sumin then tried the game many times. Although she enjoyed it, she pointed out that it needed another stage and more useful items. The team made these changes and later released the game on the app market. Completing the project took hard work from the team.\n\n[요약문]\nThe friends turned their (A)________ work into one game. Testing helped them find ways to (B)________ it before release. Their success came from working together, not from the task being (C)________.",
+"choices": [
+"different — advertise — easy",
+"different — improve — easy",
+"similar — improve — easy",
+"different — improve — difficult",
+"similar — advertise — difficult"
+],
+"answer": "②",
+"solution": "친구들은 이야기, 소리, 그림, 코딩 등 서로 다른 일을 맡았으므로 (A)에는 different가 들어간다. 시험은 출시 전 게임을 개선하는 데 쓰였으므로 (B)는 improve이다. 마지막 문장은 성공의 이유가 과제의 쉬움이 아니라 협력에 있다는 뜻이므로 (C)는 easy가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
+},
+{
+"id": "fill-82d9d8e66e",
+"typeId": "eng-m1-b07-u4m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 핵심 내용을 빠짐없이 담으면서, 글에 없는 내용을 덧붙이지 않은 요약문은?\n\nHyunsu's friends did different jobs for their adventure game. He prepared the story, Sujin created its sounds, and Jean drew its characters. Minwoo brought their work together by coding. Sumin enjoyed trying the game, yet she found its adventure too short and suggested more items. The friends added an ice lake stage and useful items in response. They then released the game and received many reviews. Making it was difficult, but they completed the work as a team.",
+"choices": [
+"The friends shared the jobs and released their game, but they left Sumin's suggestions for another game because she enjoyed this one.",
+"The friends built their game together and changed it after release because reviews on the app market asked for a longer adventure.",
+"The friends combined their work and followed Sumin's advice, so the many reviews showed that every player liked the finished game.",
+"The friends combined their different work, improved the game with Sumin's suggestions, and released it through a difficult team effort.",
+"The friends used Sumin's suggestions to build the game from the beginning, and coding alone allowed them to complete the difficult project."
+],
+"answer": "④",
+"solution": "글의 핵심은 서로 다른 역할의 결합, 수민의 의견을 반영한 개선, 협력을 통한 완성과 출시이다. ④는 이 내용을 순서와 인과관계에 맞게 요약한다. ①은 의견을 반영하지 않았다고 바꾸고, ②는 개선 시점과 의견의 출처를 바꾸었으며, ③과 ⑤는 각각 모든 이용자의 호평과 코딩만의 기여라는 근거 없는 내용을 덧붙였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m3s0t0",
+"custom": true
 }
 ]

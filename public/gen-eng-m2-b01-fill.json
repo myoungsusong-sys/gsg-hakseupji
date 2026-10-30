@@ -870,5 +870,254 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b01-u3m1s0t0",
 "custom": true
+},
+{
+"id": "fill-f84d0cd499",
+"typeId": "eng-m2-b01-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nBen: Soye, do you need some help with that poster?\nSoye: Yes, please. Putting it up is harder than I thought.\nBen: Let me hold it.\nSoye: Thanks for your help.\nBen: The poster says “Community Cleanup.” What do people do there?\nSoye: They clean our neighborhood by sweeping the streets and collecting trash.\nBen: I’d like to take part in it, too.\nSoye: You can! Anyone is welcome to join.",
+"choices": [
+"Soye finds it difficult to put up the poster.",
+"Ben offers to hold the poster for Soye.",
+"The poster introduces an activity for cleaning the neighborhood.",
+"Ben shows interest in joining the activity.",
+"Soye explains that only people living on certain streets can join."
+],
+"answer": "⑤",
+"solution": "Soye는 누구나 활동에 참여할 수 있다고 말한다. 따라서 특정 거리에 사는 사람만 참여할 수 있다는 ⑤는 대화의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a9141156b5",
+"typeId": "eng-m2-b01-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화를 읽고 답할 수 있는 질문은?\n\nWorker: Welcome to the Happy Animal Shelter.\nJinho: Hello. I’d like to volunteer here. I really like dogs and want to help care for them.\nWorker: Let me show you our puppies.\nJinho: They look lovely! How can I help?\nWorker: We need to clean their cage. Could you walk the puppies while we do that?\nJinho: Sure. I’m looking forward to being with them.\nWorker: Thank you for your help.",
+"choices": [
+"How many puppies will Jinho walk?",
+"What will the workers do while Jinho walks the puppies?",
+"How long will Jinho stay at the shelter?",
+"Who told Jinho about the shelter?",
+"Has Jinho volunteered at this shelter before?"
+],
+"answer": "②",
+"solution": "보호소 직원은 자신들이 강아지들의 우리를 청소하는 동안 Jinho에게 강아지들을 산책시켜 달라고 요청한다. 따라서 ②에는 답할 수 있지만, 강아지의 수, 머무는 시간, 보호소를 알게 된 경로, 이전 봉사 경험은 제시되어 있지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-29622bade3",
+"typeId": "eng-m2-b01-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고, (A)~(D)가 글의 내용과 일치하면 T, 일치하지 않으면 F로 표시한 것으로 알맞은 것은?\n\nWarm Hearts worked on the food waste problem at school. Its members suggested putting lines on food trays so that students could use the lines to decide how much food to take. The principal accepted the suggestion and replaced the cafeteria trays. As a result, much less food was wasted.\nLater, the members noticed that some streets near their school were too dark at night. Every member thought more lights were necessary. A teacher helped them install lights with sensors, and the neighbors now feel safer.\n\n(A) The lines were intended to help students choose the amount of food they took.\n(B) The club members replaced the cafeteria trays before the principal accepted their suggestion.\n(C) The members disagreed about whether the streets needed additional lights.\n(D) The school problem was addressed before the members worked on the dark streets.",
+"choices": [
+"T－T－F－T",
+"T－F－T－F",
+"F－F－T－T",
+"T－F－F－T",
+"F－T－F－F"
+],
+"answer": "④",
+"solution": "식판의 선은 학생들이 가져갈 음식의 양을 정하도록 돕기 위한 것이므로 (A)는 T이다. 교장선생님이 제안을 받아들여 식판을 교체했고, 모든 회원이 추가 조명이 필요하다고 생각했으므로 (B), (C)는 F이다. 학교의 음식물 쓰레기 문제를 다룬 뒤 어두운 거리 문제를 해결했으므로 (D)는 T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d41d520787",
+"typeId": "eng-m2-b01-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 바탕으로 답할 수 없는 질문만을 <보기>에서 고른 것은?\n\nSome people find digital kiosks difficult to use. To support these people, the members of Warm Hearts served as digital guides at the community center. They taught people how to begin an order, select food from the menu, and make a payment. After the lesson, the learners thanked the members and said they felt more comfortable using kiosks. The members were proud of their volunteer work.\n\n<보기>\n(a) What difficulty did the people receiving help have?\n(b) How many kiosks were used during the lesson?\n(c) Did the guides explain how to pay for an order?\n(d) On which day of the week was the lesson held?",
+"choices": [
+"(a), (b)",
+"(a), (c)",
+"(b), (c)",
+"(c), (d)",
+"(b), (d)"
+],
+"answer": "⑤",
+"solution": "도움을 받은 사람들은 키오스크 사용에 어려움이 있었고, 회원들은 결제 방법까지 설명했으므로 (a), (c)에는 답할 수 있다. 수업에 사용된 키오스크의 수와 수업이 열린 요일은 제시되어 있지 않다. 따라서 답할 수 없는 질문은 (b), (d)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1c70d4c637",
+"typeId": "eng-m2-b01-u1m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <보기>의 내용을 판단할 때, 글에서 확인할 수 있는 것만을 모두 고른 것은?\n\nYuna leads Warm Hearts, a school club that has worked on problems at school and in the community. When the principal raised the issue of students taking too much food at lunch, the members proposed adding lines to trays. The principal then replaced the cafeteria trays, and food waste decreased greatly.\nAfter dealing with this issue, the members turned their attention to the community. They agreed that some dark roads near the school needed more lights. With a teacher’s support, they installed sensor lights. The neighbors feel safer now.\nThe members also helped people who had difficulty with kiosks. At the community center, they explained the ordering process from beginning an order to payment. The learners later reported feeling more comfortable with kiosks, which made the members proud.\n\n<보기>\nㄱ. 음식물 쓰레기 문제에서는 아이디어를 제안한 주체와 식판을 교체한 주체가 달랐다.\nㄴ. 거리 조명 문제에서는 회원들의 의견이 일치했으며, 실행 과정에서 교사의 도움을 받았다.\nㄷ. 키오스크 수업의 효과는 수업 전후 주문에 걸린 시간을 비교하여 확인했다.\nㄹ. 식판 교체 뒤의 변화는 음식물 쓰레기의 양으로, 키오스크 수업 뒤의 변화는 학습자들이 표현한 느낌으로 제시되었다.\nㅁ. 세 활동은 모두 회원들이 사용법을 설명하고 참여자들이 직접 시설을 교체하는 방식으로 이루어졌다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "회원들이 식판의 선을 제안하고 교장선생님이 식판을 교체했으므로 ㄱ은 맞으며, 조명 설치에는 회원들의 의견 일치와 교사의 도움이 있었으므로 ㄴ도 맞다. 식판의 효과는 음식물 쓰레기 감소로, 키오스크 수업의 효과는 학습자들이 말한 편안함의 증가로 제시되어 ㄹ도 맞다. 주문 시간의 비교는 언급되지 않았고 세 활동의 실행 방식도 서로 다르므로 ㄷ과 ㅁ은 글에서 확인할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f99426c796",
+"typeId": "eng-m2-b01-u1m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 추론한 내용으로 가장 적절한 것은?\n\nThe members of Warm Hearts wanted to reduce food waste at school. Their idea was to mark lines on trays, allowing students to judge the amount of food to take. The principal put the idea into practice by changing the trays, and food waste fell greatly.\nIn the neighborhood, the members found roads that were dark at night. They installed sensor lights with help from a teacher. The neighbors now feel safer than they did before.\nFor people who found kiosks difficult, the members became digital guides at the community center. They explained how to start an order, choose from the menu, and pay. Afterward, the learners said that they felt more comfortable with kiosks.\nThese experiences show that even small actions can bring positive changes.",
+"choices": [
+"식판에 선을 표시한 목적은 학생들이 음식을 선택하는 과정을 없애는 것이므로, 키오스크 수업도 학습자의 선택 과정을 없애는 데 목적이 있었을 것이다.",
+"조명 설치에 교사의 도움이 필요했으므로, 식판의 선을 제안한 사람과 키오스크 수업을 진행한 사람도 교사였을 것이다.",
+"음식물 쓰레기의 감소가 확인되었으므로, 조명 설치와 키오스크 수업의 성과도 쓰레기 감소량으로 판단했을 것이다.",
+"식판의 선과 키오스크 안내는 사람들이 스스로 행동하는 데 필요한 도움을 주었고, 조명은 주변 환경을 바꾸어 주민들의 안전감을 높였다고 볼 수 있다.",
+"키오스크 학습자들이 더 편안해졌다고 말했으므로, 수업 전에는 모든 학습자가 주문의 어떤 단계도 수행할 수 없었을 것이다."
+],
+"answer": "④",
+"solution": "식판의 선은 학생들이 음식의 양을 판단하도록 돕고, 키오스크 안내는 학습자들이 주문 절차를 이해하도록 돕는다. 조명 설치는 거리 환경을 바꾸었으며, 그 뒤 주민들은 더 안전하다고 느꼈으므로 ④가 적절하다. 나머지는 선택 과정의 제거, 교사의 역할, 성과 판단 기준, 학습자의 기존 능력에 관해 글의 근거를 벗어나 확대하여 추론한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e36d9042c5",
+"typeId": "eng-m2-b01-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "Warm Hearts suggested a new way to reduce food waste. The principal accepted the club’s idea and replaced something in the school cafeteria.\n\n다음 질문에 대한 알맞은 대답이 되도록 빈칸을 완성하시오. (각 빈칸에 한 단어씩 쓸 것)\n\nQ. What did the principal change in the cafeteria?\n→ He changed __________ __________ __________ in the cafeteria.",
+"selfGrade": true,
+"answer": "the food trays",
+"solution": "교장 선생님은 음식물 쓰레기를 줄이기 위한 동아리의 제안을 받아들여 식판을 바꾸었다. ‘식판’은 영어로 food trays이므로 빈칸에는 the food trays가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a07f1eb0ed",
+"typeId": "eng-m2-b01-u1m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "Warm Hearts noticed that the roads near the school were too dark at night. With a teacher’s help, the members installed sensor lights, and the neighbors began to feel safer.\n\n윗글의 제목을 다음과 같이 쓸 때 빈칸에 들어갈 말을 쓰시오. (각 빈칸에 한 단어씩 쓰고 첫 철자는 대문자로 쓸 것)\n\n__________ __________ with __________ __________",
+"selfGrade": true,
+"answer": "Safer Roads Sensor Lights",
+"solution": "글의 중심 내용은 센서가 달린 조명을 설치하여 어두운 도로를 더 안전하게 만든 것이다. 따라서 제목은 ‘센서 조명으로 더 안전해진 도로’라는 뜻의 Safer Roads with Sensor Lights가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e9715337e8",
+"typeId": "eng-m2-b01-u1m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장에서 밑줄 친 표현과 바꾸어 쓸 수 있는 말로 가장 알맞은 것은?\n\nWarm Hearts *put up* lights with sensors around the neighborhood.",
+"choices": [
+"removed",
+"installed",
+"borrowed",
+"turned off",
+"looked for"
+],
+"answer": "②",
+"solution": "put up은 이 문장에서 조명과 같은 시설물을 ‘설치하다’라는 의미이다. 같은 의미를 나타내는 단어는 installed이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-dfaf63892b",
+"typeId": "eng-m2-b01-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Students could use the lines on the new food trays to take an appropriate quantity of food.\n\n다음 질문에 대한 대답을 <조건>에 맞게 완성하시오.\n\nQ. Why did students look at the lines on the food trays?\n\n<조건>\n- so that을 사용할 것\n- the right amount of food를 포함할 것\n- 총 15단어로 쓸 것",
+"selfGrade": true,
+"answer": "They looked at the lines so that they could take the right amount of food",
+"solution": "학생들이 선을 본 목적은 알맞은 양의 음식을 담기 위해서이다. ‘~할 수 있도록’은 so that 주어 could 동사의 형태로 나타낼 수 있다. 제시된 답은 총 15단어이며 모든 조건을 충족한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4b6c744b5e",
+"typeId": "eng-m2-b01-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "At the community center, the volunteers showed kiosk users how to begin an order, select menu items, and pay. Afterward, the users felt less nervous about using kiosks.\n\n윗글의 내용을 다음과 같이 요약할 때, 괄호 안의 단어를 모두 사용하여 빈칸을 완성하시오. (필요하면 단어의 형태를 바꿀 것)\n\n(explain / every / step / make / user / comfortable / kiosk)\n\n→ ________________________________________________.",
+"selfGrade": true,
+"answer": "Explaining every step made users more comfortable with kiosks",
+"solution": "주문의 각 단계를 설명한 결과 이용자들이 키오스크를 더 편안하게 느꼈다는 내용이다. ‘각 단계를 설명하는 것’을 주어로 나타내기 위해 explain을 동명사 Explaining으로 바꾼다. make는 ‘make＋목적어＋형용사’ 구조로 써서 made users more comfortable로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7d024ff6aa",
+"typeId": "eng-m2-b01-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 표현을 바르게 짝지은 것은?\n\nMr. Kim looks after the school buildings. When some air conditioners (A)__________ last summer, he repaired them immediately. Mr. Park checks the school for danger so that students can (B)__________ studying. Both men (C)__________ in making the school a good place for students.\n\n(A) — (B) — (C)",
+"choices": [
+"broke down — focus on — play roles",
+"broke down — take care of — play roles",
+"played roles — focus on — break down",
+"broke down — focus on — take care",
+"played roles — take care of — break down"
+],
+"answer": "①",
+"solution": "에어컨이 ‘고장 났다’는 뜻이고 last summer가 있으므로 (A)에는 broke down이 알맞다. ‘공부에 집중하다’는 focus on studying이며, ‘역할을 하다’는 play roles이다. 따라서 세 빈칸에 모두 알맞은 표현을 연결한 것은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e3e1ef5e3e",
+"typeId": "eng-m2-b01-u2m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장의 뜻이 모두 드러나도록 형용사적 용법의 to부정사를 사용하여 빈칸을 완성하시오.\n\n• We have three awards.\n• We will present them to our school heroes.\n\n→ We have three awards __________ __________ __________ __________ __________ __________.\n\n<조건>\n• 각 빈칸에 한 단어씩 쓸 것.\n• 위 문장에 쓰인 단어를 활용할 것.",
+"selfGrade": true,
+"answer": "to present to our school heroes",
+"solution": "앞의 명사 three awards를 꾸며 ‘학교의 영웅들에게 수여할 상 세 개’라는 뜻이 되도록 to present를 쓴다. present A to B는 ‘A를 B에게 수여하다’라는 뜻이므로 수여받는 대상 앞의 전치사 to도 필요하다. awards가 present의 목적어 역할을 하므로 them을 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b714b88913",
+"typeId": "eng-m2-b01-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장을 각각 주어진 말로 시작하여 한 문장으로 바꾸었다. (가), (나)의 뜻과 문법이 모두 올바른 것은?\n\n(가) We have some awards. We will give them to the winners.\n→ We have some awards ...\n\n(나) You may have a question about the school facilities. In that case, you can ask Mr. Kim.\n→ If you ...",
+"choices": [
+"(가) We have some awards to give them to the winners.\n(나) If you have a question about the school facilities, you can ask Mr. Kim.",
+"(가) We have some awards to give to the winners.\n(나) If you will have a question about the school facilities, you can ask Mr. Kim.",
+"(가) We have some awards give to the winners.\n(나) If you have a question about the school facilities, you can ask Mr. Kim.",
+"(가) We have some awards to give to the winners.\n(나) If you have a question about the school facilities, you can ask Mr. Kim.",
+"(가) We have some awards to give to the winners.\n(나) If you have a question about the school facilities, you can to ask Mr. Kim."
+],
+"answer": "④",
+"solution": "(가)는 awards를 꾸미는 to give to the winners를 사용하며, awards와 가리키는 대상이 같은 목적어 them을 중복해서 쓰지 않는다. (나)의 if는 조건을 나타내므로 미래의 가능성을 말해도 if절에는 현재형 have를 쓴다. 또한 조동사 can 뒤에는 동사원형 ask가 와야 하므로 두 문장이 모두 올바른 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7e439e14d2",
+"typeId": "eng-m2-b01-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고, 질문에 대한 답의 빈칸을 완성하시오.\n\nMr. Park helps students get to school safely each morning. Later in the day, he goes around the school and checks whether there are any dangerous situations. His work helps students feel safe and concentrate on their studies.\n\nQ. What does Mr. Park check for, and what can students focus on thanks to his work?\nA. He checks for (A)__________, and students can (B)__________ thanks to his work.\n\n<조건>\n• (A)는 본문에 연속하여 쓰인 세 단어로 쓸 것.\n• (B)는 focus와 study를 포함한 세 단어로 쓸 것. 필요한 경우 형태를 바꿀 것.\n• (A), (B)의 답을 순서대로 쓸 것.",
+"selfGrade": true,
+"answer": "any dangerous situations, focus on studying",
+"solution": "Mr. Park이 확인하는 것은 위험한 상황이 있는지 여부이므로 (A)는 본문의 any dangerous situations이다. 학생들이 그의 도움으로 학업에 집중할 수 있다는 내용이므로 (B)에는 focus on studying을 쓴다. focus on의 on은 전치사이므로 뒤에 동사 study의 동명사형 studying이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m7s0t0",
+"custom": true
 }
 ]

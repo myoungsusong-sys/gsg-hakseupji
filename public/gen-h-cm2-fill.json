@@ -292,5 +292,114 @@
 "source": "유사 문항",
 "twinGroup": "tw-16134",
 "custom": true
+},
+{
+"id": "fill-7ea5a2864d",
+"typeId": "16637",
+"kind": "객관식",
+"diff": 2,
+"body": "양수 $x$, $y$에 대하여 $x+y=8$, $xy=12$일 때, $\\sqrt{\\frac{3x}{y}}+\\sqrt{\\frac{3y}{x}}$의 값은?",
+"choices": [
+"$2\\sqrt{3}$",
+"$4$",
+"$3\\sqrt{2}$",
+"$\\frac{8}{3}$",
+"$2\\sqrt{6}$"
+],
+"answer": "②",
+"solution": "$x$, $y$가 양수이므로 $\\sqrt{\\frac{3x}{y}}=\\frac{\\sqrt{3}x}{\\sqrt{xy}}$, $\\sqrt{\\frac{3y}{x}}=\\frac{\\sqrt{3}y}{\\sqrt{xy}}$이다. 따라서 구하는 값은 $\\frac{\\sqrt{3}(x+y)}{\\sqrt{xy}}=\\frac{8\\sqrt{3}}{\\sqrt{12}}=4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
+},
+{
+"id": "fill-c407ea793c",
+"typeId": "16637",
+"kind": "객관식",
+"diff": 2,
+"body": "실수 $x$, $y$에 대하여 $x+y=11$, $xy=28$일 때, $\\sqrt{(x-y)^2}+\\sqrt{(x+y-6)^2}$의 값은?",
+"choices": [
+"$3$",
+"$5$",
+"$6$",
+"$8$",
+"$10$"
+],
+"answer": "④",
+"solution": "$(x-y)^2=(x+y)^2-4xy=121-112=9$이므로 $\\sqrt{(x-y)^2}=3$이다. 또한 $\\sqrt{(x+y-6)^2}=|11-6|=5$이므로 구하는 값은 $3+5=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
+},
+{
+"id": "fill-d8c33279a5",
+"typeId": "16637",
+"kind": "주관식",
+"diff": 2,
+"body": "양수 $x$, $y$에 대하여 $x+y=13$, $xy=36$일 때, $\\sqrt{x}+\\sqrt{y}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$5$",
+"solution": "$(\\sqrt{x}+\\sqrt{y})^2=x+y+2\\sqrt{xy}=13+12=25$이다. $\\sqrt{x}+\\sqrt{y}>0$이므로 구하는 값은 $5$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
+},
+{
+"id": "fill-651be7f79f",
+"typeId": "16637",
+"kind": "객관식",
+"diff": 4,
+"body": "$x>y>0$인 두 실수 $x$, $y$에 대하여 $x+y=11$, $xy=24$일 때, 다음 식의 값은?\n\n$\\sqrt{(x-y-4)^2}+\\sqrt{(\\sqrt{x}-\\sqrt{y}-1)^2}$",
+"choices": [
+"$2+\\sqrt{3}-2\\sqrt{2}$",
+"$2\\sqrt{2}+\\sqrt{3}-2$",
+"$2\\sqrt{2}-\\sqrt{3}$",
+"$2\\sqrt{2}-\\sqrt{3}-1$",
+"$2+2\\sqrt{2}-\\sqrt{3}$"
+],
+"answer": "③",
+"solution": "$x$, $y$는 이차방정식 $t^2-11t+24=0$의 두 근이고 $x>y$이므로 $x=8$, $y=3$이다. $10>4\\sqrt{6}$이므로 $(2\\sqrt{2}-\\sqrt{3})^2=11-4\\sqrt{6}>1$이고, 따라서 $2\\sqrt{2}-\\sqrt{3}>1$이다. 그러므로 구하는 값은 $|8-3-4|+|2\\sqrt{2}-\\sqrt{3}-1|=2\\sqrt{2}-\\sqrt{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
+},
+{
+"id": "fill-11bc3f5f5a",
+"typeId": "16637",
+"kind": "주관식",
+"diff": 5,
+"body": "$x>y>0$인 두 실수 $x$, $y$에 대하여 $x+y=14$, $xy=9$이다. 실수 $t$에 대한 방정식\n\n$\\sqrt{(t-\\sqrt{x})^2}+\\sqrt{(t-\\sqrt{y})^2}=t$\n\n의 서로 다른 모든 실근의 곱을 구하시오.",
+"selfGrade": true,
+"answer": "$4\\sqrt{10}$",
+"solution": "$u=\\sqrt{x}$, $v=\\sqrt{y}$라 하면 $u+v=2\\sqrt{5}$, $u-v=2\\sqrt{2}$이므로 $u=\\sqrt{5}+\\sqrt{2}$, $v=\\sqrt{5}-\\sqrt{2}$이다. 주어진 방정식은 $|t-u|+|t-v|=t$이며, $t\\le v$에서는 $t=\\frac{2\\sqrt{5}}{3}$을 얻지만 이 값은 $v$보다 크므로 해당 구간의 해가 아니다. $v\\le t\\le u$에서는 $t=u-v=2\\sqrt{2}$이고, 이 값은 해당 구간에 속한다. $t\\ge u$에서는 $t=u+v=2\\sqrt{5}$이고, 이 값도 해당 구간에 속한다. 따라서 서로 다른 모든 실근의 곱은 $(2\\sqrt{2})(2\\sqrt{5})=4\\sqrt{10}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
+},
+{
+"id": "fill-ed5d455b64",
+"typeId": "16637",
+"kind": "주관식",
+"diff": 5,
+"body": "$x>y>0$인 두 실수 $x$, $y$에 대하여 $x+y=14$, $xy=9$이고,\n\n$r=\\frac{\\sqrt{x}+\\sqrt{y}}{\\sqrt{x}-\\sqrt{y}}$\n\n이다. $\\sqrt{\\left(r+\\frac{1}{r}-2\\right)^2}+\\sqrt{\\left(r-\\frac{1}{r}-1\\right)^2}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{2\\sqrt{10}}{5}-1$",
+"solution": "$(\\sqrt{x}+\\sqrt{y})^2=20$, $(\\sqrt{x}-\\sqrt{y})^2=8$이고 $r>0$이므로 $r=\\frac{\\sqrt{10}}{2}$이다. 따라서 $r+\\frac1r=\\frac{7\\sqrt{10}}{10}>2$이고, $r-\\frac1r=\\frac{3\\sqrt{10}}{10}<1$이다. 구하는 식은 절댓값의 성질에 따라 $\\left(r+\\frac1r-2\\right)+\\left(1-r+\\frac1r\\right)=\\frac2r-1$이다. 여기에 $r=\\frac{\\sqrt{10}}2$를 대입하면 $\\frac{2\\sqrt{10}}5-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
+},
+{
+"id": "fill-be8db9457a",
+"typeId": "16637",
+"kind": "주관식",
+"diff": 5,
+"body": "$x>y>0$인 두 실수 $x$, $y$에 대하여 $x+y=38$, $xy=121$일 때, 다음 식의 값을 구하시오.\n\n$\\left(\\sqrt{\\sqrt{x-6\\sqrt{x}+9}}+\\sqrt{\\sqrt{y-6\\sqrt{y}+9}}\\right)^2$",
+"selfGrade": true,
+"answer": "$4+2\\sqrt{6\\sqrt{15}-20}$",
+"solution": "$u=\\sqrt{x}$, $v=\\sqrt{y}$라 하면 $u+v=\\sqrt{38+22}=2\\sqrt{15}$, $u-v=\\sqrt{38-22}=4$이므로 $u=\\sqrt{15}+2$, $v=\\sqrt{15}-2$이다. 따라서 $u>3>v$이므로 $\\sqrt{x-6\\sqrt{x}+9}=|u-3|=\\sqrt{15}-1$이고, $\\sqrt{y-6\\sqrt{y}+9}=|v-3|=5-\\sqrt{15}$이다. 이 두 값의 합은 $4$이고 곱은 $(\\sqrt{15}-1)(5-\\sqrt{15})=6\\sqrt{15}-20$이다. 그러므로 구하는 값은 $4+2\\sqrt{6\\sqrt{15}-20}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16637",
+"custom": true
 }
 ]

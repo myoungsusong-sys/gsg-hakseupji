@@ -1760,5 +1760,159 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u6m7s0t0",
 "custom": true
+},
+{
+"id": "fill-8e28824a81",
+"typeId": "eng-m1-b09-u0m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 말을 모두 한 번씩 사용하여 문장을 완성하시오.\n\n미나와 친구들은 매일 야구를 한다.\n\n<보기> my friends / baseball / every day / and / play / I",
+"selfGrade": true,
+"answer": "My friends and I play baseball every day.",
+"solution": "‘미나와 친구들’은 말하는 사람이 미나이므로 My friends and I로 나타낸다. 주어가 복수이므로 동사원형 play를 쓰고, 빈도 표현 every day는 문장 끝에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-69262bcf2b",
+"typeId": "eng-m1-b09-u0m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 Kate가 자신의 딱정벌레 Beeti를 소개한 내용을 한 문장으로 정리한 것이다. 문법상 가장 적절한 문장을 고르시오.\n\n그것의 이름은 Beeti이고, Kate는 그것을 매우 좋아하지만, 그녀의 남동생은 그것을 좋아하지 않는다.",
+"choices": [
+"It's name is Beeti, and Kate love it a lot, but her brother doesn't like it.",
+"Its name is Beeti, and Kate loves it a lot, but her brother doesn't likes it.",
+"Its name is Beeti, and Kate loves it a lot, but her brother doesn't like it.",
+"Its name are Beeti, and Kate loves it a lot, but her brother don't like it.",
+"It's name is Beeti, and Kate loves it a lot, but her brother doesn't like it."
+],
+"answer": "③",
+"solution": "소유를 나타내는 ‘그것의’는 Its이고, Kate가 주어일 때 love에는 -s를 붙인다. 또한 doesn't 뒤에는 동사원형 like가 와야 하므로 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d1e12c12d8",
+"typeId": "eng-m1-b09-u0m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 Mina의 야구 글을 요약한 것이다. <보기>의 어구를 모두 한 번씩 사용하여 한 문장으로 배열하시오. 문장 부호는 필요에 따라 사용할 수 있다.\n\n<보기> her hand is safe / because / thanks to it / Mina's glove / and / she is a catcher / is important for her",
+"selfGrade": true,
+"answer": "Mina's glove is important for her because she is a catcher, and her hand is safe thanks to it.",
+"solution": "장갑이 중요한 이유는 because she is a catcher로 연결한다. 장갑 덕분에 손이 안전하다는 내용은 her hand is safe thanks to it으로 배열하며, 두 내용을 and로 이어 준다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-efff4a90f8",
+"typeId": "eng-m1-b09-u0m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Jiho에 관한 다음 질문에 답하는 문장을 <조건>에 맞게 영작하시오.\n\nQ. Who is Jiho's big fan, and what does he often do for her?\n\n<조건>\n• His grandmother로 시작할 것\n• and, he, often, her를 모두 사용할 것\n• 총 12단어로 쓸 것",
+"selfGrade": true,
+"answer": "His grandmother is his big fan, and he often dances for her.",
+"solution": "Jiho의 열성 팬은 그의 할머니이므로 His grandmother is his big fan으로 시작한다. 이어서 Jiho가 할머니를 위해 자주 춤춘다는 내용을 he often dances for her로 쓰면 총 12단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-7e558fbebf",
+"typeId": "eng-m1-b09-u0m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 Kate의 딱정벌레에 관한 내용을 요약한 문장이다. 문법적으로 잘못된 세 부분을 찾아 바르게 고친 뒤 문장 전체를 다시 쓰시오.\n\nKate's little friend sometimes fly, but her brother doesn't likes it, and it's name is Beeti.",
+"selfGrade": true,
+"answer": "Kate's little friend sometimes flies, but her brother doesn't like it, and its name is Beeti.",
+"solution": "주어 Kate's little friend가 3인칭 단수이므로 fly를 flies로 고친다. doesn't 뒤에는 동사원형 like를 쓰며, ‘그것의 이름’이라는 소유의 뜻에는 it's가 아니라 its를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4779d4cb97",
+"typeId": "eng-m1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞은 문장을 모두 골라 짝지은 것은?\n\nⓐ Please give your notebook to me.\nⓑ My sister made a sandwich to me.\nⓒ When the class ends, we will clean the room.\nⓓ When I was young, I like drawing.\nⓔ Can you show me your picture?",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ와 ⓔ는 각각 ‘give + 사물 + to + 사람’, ‘show + 사람 + 사물’의 어순으로 알맞다. ⓒ는 미래를 나타내더라도 시간을 나타내는 when절에서 현재형 ends를 쓰므로 옳다. ⓑ의 to는 for로, ⓓ의 like는 과거형 liked로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d9959a2d47",
+"typeId": "eng-m1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ의 표시된 부분을 고친 것으로 적절하지 않은 것은?\n\nⓐ When she [will arrive] tomorrow, I will give her the book.\nⓑ There [is] paper birds and flowers in the room.\nⓒ He picked up the scissors and [cuts] the paper yesterday.\nⓓ She could sit on the bed and [drawing] pictures.\nⓔ I bought some flowers and gave [her them].",
+"choices": [
+"ⓐ: will arrive → arrives",
+"ⓑ: is → are",
+"ⓒ: cuts → cut",
+"ⓓ: drawing → to draw",
+"ⓔ: her them → them to her"
+],
+"answer": "④",
+"solution": "ⓓ에서는 could 뒤에 sit과 draw가 and로 연결되므로 drawing을 동사원형 draw로 고쳐야 한다. ⓐ는 시간을 나타내는 when절이므로 현재형을, ⓑ는 복수 명사에 맞추어 are를 쓴다. ⓒ는 과거형 cut이 알맞고, ⓔ는 ‘give + 사물 + to + 사람’의 어순으로 바르게 고쳤다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1eea21b3e4",
+"typeId": "eng-m1-b09-u6m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 알맞은 문장을 모두 고른 것은?\n\nⓐ When Matisse became ill, he could only lie in bed and sleep.\nⓑ Matisse used scissors to making shapes from paper.\nⓒ The pleasure of cutting paper were great for Matisse.\nⓓ Matisse knew that he could not paint well anymore.\nⓔ Matisse saw his scissors and picked up them.\nⓕ More people began noticing Matisse's paintings.\nⓖ When Matisse opened his eyes, they was full of sadness.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓕ",
+"ⓑ, ⓕ, ⓖ",
+"ⓐ, ⓓ, ⓕ"
+],
+"answer": "⑤",
+"solution": "ⓐ는 could 뒤의 동사원형 병렬 연결이 알맞고, ⓓ는 완전한 절을 이끄는 that을 바르게 썼다. ⓕ의 begin은 목적어로 동명사를 취할 수 있으므로 noticing이 옳다. ⓑ의 to making은 목적을 나타내는 to make로, ⓒ의 were는 단수 주어 pleasure에 맞추어 was로 고쳐야 한다. ⓔ는 대명사 목적어를 가운데 둔 picked them up으로, ⓖ의 was는 복수 주어 they에 맞추어 were로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d045b583ce",
+"typeId": "eng-m1-b09-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장이 주어진 우리말과 일치하도록 어법상 틀린 부분을 모두 고쳐 문장 전체를 쓰시오.\n\n네가 내일 여기에 오면, 나는 너에게 내 그림들을 보여 줄 것이고 우리는 그것들을 함께 볼 수 있다.\n\nWhen you will come here tomorrow, I will show to you my pictures, and we can look at them together.\n\n<조건>\n• 단어 두 개만 삭제할 것.\n• 나머지 단어의 형태와 순서는 바꾸지 말 것.",
+"selfGrade": true,
+"answer": "When you come here tomorrow, I will show you my pictures, and we can look at them together.",
+"solution": "시간을 나타내는 when절에서는 미래의 일도 현재형으로 나타내므로 will을 삭제한다. ‘show + 사람 + 사물’의 어순에서는 사람 앞에 전치사를 쓰지 않으므로 to를 삭제한다. 주절의 will과 can 뒤에 쓰인 동사원형은 모두 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6e14503f1d",
+"typeId": "eng-m1-b09-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 틀린 부분 세 곳을 찾아 고친 뒤, 문장 전체를 쓰시오.\n\nWhen Matisse was cutting paper to make shapes, he said to him that his pleasure in cut paper were growing.\n\n<조건>\n• him은 Matisse 자신을 가리킨다.\n• 단어 세 개를 각각 한 단어로 바꿀 것.\n• 단어를 추가하거나 삭제하지 말고, 나머지 단어와 어순은 유지할 것.",
+"selfGrade": true,
+"answer": "When Matisse was cutting paper to make shapes, he said to himself that his pleasure in cutting paper was growing.",
+"solution": "말을 한 사람과 그 말을 듣는 사람이 Matisse로 같으므로 him을 재귀대명사 himself로 고친다. 전치사 in 뒤에는 동명사가 와야 하므로 cut을 cutting으로 바꾼다. that절의 주어는 단수 명사 pleasure이므로 were를 was로 고친다. 앞부분의 was cutting과 목적을 나타내는 to make는 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u6m1s0t0",
+"custom": true
 }
 ]

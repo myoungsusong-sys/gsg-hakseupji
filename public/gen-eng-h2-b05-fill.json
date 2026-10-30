@@ -1948,5 +1948,191 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u2m4s0t0",
 "custom": true
+},
+{
+"id": "fill-6a8658b41b",
+"typeId": "eng-h2-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nRichard learned that moving lights frightened lions. He placed lights around the cattle enclosure and (A)[connected / connecting] them to a battery. His neighbors adopted the idea, (B)[protected / protecting] their animals without killing lions. His observation led to a solution (C)[that / what] helped humans and animals live together.",
+"choices": [
+"connected — protected — what",
+"connecting — protecting — that",
+"connecting — protected — what",
+"connected — protecting — that",
+"connected — protecting — what"
+],
+"answer": "④",
+"solution": "주어 He의 동사 placed와 and로 연결되는 (A)에는 과거형 connected가 알맞다. (B)는 이웃들이 그 방법을 채택하면서 동물을 보호했다는 부가적 내용을 나타내므로 protecting이 적절하다. (C)는 선행사 a solution을 수식하면서 관계절의 주어 역할을 하는 that이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-723bd4c749",
+"typeId": "eng-h2-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 표시된 ⓐ~ⓔ 중 어법상 어색한 것을 모두 고른 것은?\n\nUrban green spaces ⓐprovides places for wildlife to live. Gardens and parks ⓑbuilt in cities can attract wild animals. Some birds use tall buildings ⓒto nest. Peregrine falcons also use artificial lighting ⓓhunt at night. Cities have therefore ⓔbecome homes for various animals.",
+"choices": [
+"ⓐ, ⓓ",
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓔ",
+"ⓓ, ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ의 주어 Urban green spaces가 복수이므로 provides를 provide로 고쳐야 한다. ⓓ는 인공조명을 사용하는 목적을 나타내므로 hunt를 to hunt로 고쳐야 한다. ⓑ의 built는 Gardens and parks를 수식하는 과거분사이며, ⓒ와 ⓔ도 어법상 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0af13912f2",
+"typeId": "eng-h2-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nKilling coyotes may seem like a simple solution, but (A)[so / such] a method can disturb their social structure. A dominant pair maintains a structure (B)[that / where] limits breeding within the pack. When people interfere with this structure, it is hard to predict how (C)[nature will / will nature] respond.",
+"choices": [
+"so — that — nature will",
+"such — that — nature will",
+"such — where — nature will",
+"so — where — will nature",
+"such — that — will nature"
+],
+"answer": "②",
+"solution": "‘그러한 방법’은 such a method로 표현하므로 (A)에는 such가 들어간다. (B)는 관계절에서 주어 역할을 해야 하므로 관계대명사 that이 알맞다. (C)는 predict의 목적어인 간접의문문의 일부이므로 ‘주어＋동사’ 어순인 nature will이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bad2eba1db",
+"typeId": "eng-h2-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓗ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe cooperation that has developed between Laguna's fishers and dolphins ⓐallows both groups to benefit. One advantage that dolphins ⓑtaking part in this fishing receive ⓒare a greater chance of living longer. The fishers catch more fish, while the dolphins eat mullets ⓓtrying to escape the net. Without this cooperation, dolphins might enter areas with fewer fish and risk ⓔbeing caught in illegal fishing operations. This relationship reminds us of ⓕwhat cooperation with wildlife can benefit both sides. It also enables the fishers ⓖcatch fish with the dolphins' help. Their long partnership has kept this tradition ⓗalive.",
+"choices": [
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓔ, ⓖ",
+"ⓒ, ⓕ, ⓖ",
+"ⓒ, ⓖ, ⓗ",
+"ⓑ, ⓓ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓒ의 주어는 관계절의 dolphins가 아니라 One advantage이므로 are를 is로 고쳐야 한다. ⓕ 뒤에는 문장 성분이 갖추어진 절이 이어지고 ‘어떻게 협력이 양쪽에 이익이 될 수 있는지’라는 의미이므로 what을 how로 고친다. ⓖ는 enable＋목적어＋to부정사 구조에 따라 to catch가 되어야 한다. ⓑ와 ⓓ는 앞의 명사를 수식하는 현재분사이며, ⓔ와 ⓗ도 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f2dd71b679",
+"typeId": "eng-h2-b05-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓗ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe view ⓐthat wild animals are threats to be removed is common. Yet ⓑeliminating animals without considering their role can produce unintended consequences. In coyote packs, the structure that a dominant adult pair maintains ⓒprevent other members from breeding. Methods aimed at ⓓdestroy this structure may therefore increase the population. Removing coyotes altogether could also allow the numbers of small prey animals ⓔto rise. What is needed ⓕare a balanced approach that takes both human safety and animal well-being into account. Such an approach requires an understanding of ⓖhow animals behave in their habitats. Humans and animals share the planet, and neither group is more valuable than ⓗthe other.",
+"choices": [
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓗ",
+"ⓒ, ⓔ, ⓖ",
+"ⓓ, ⓕ, ⓗ",
+"ⓒ, ⓓ, ⓕ"
+],
+"answer": "⑤",
+"solution": "ⓒ의 주어는 the structure이므로 prevent를 prevents로 고쳐야 한다. ⓓ는 전치사 at의 목적어이므로 destroy를 destroying으로 고친다. ⓕ에서는 What is needed가 단수의 대상인 a balanced approach를 가리키므로 are를 is로 고쳐야 한다. ⓐ는 동격절을 이끄는 that이고, ⓗ는 두 집단 중 나머지 하나를 가리키므로 the other가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-38ca679c06",
+"typeId": "eng-h2-b05-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓗ 중 어법상 어색한 부분 네 곳을 찾아 각각 바르게 고치시오. 표시된 부분만 고치되, ⓐ~ⓗ의 순서대로 고친 표현만 쓰시오. 단, 원문의 의미를 유지하고, ⓓ는 동명사의 수동형으로 고칠 것.\n\nThat a coyote population can survive even when many of its members are killed ⓐsuggest that removal alone may not solve the problem. The social structure ⓑmaintained by a dominant adult pair ⓒprevents other coyotes from breeding. The possibility of this structure ⓓbe disrupted by destructive control methods must therefore be considered. Scientists question ⓔsuch a method because coyotes adapt and reproduce quickly. The fact ⓕwhich removing coyotes can affect populations of small prey also makes it difficult to predict how ⓖwill nature respond to human interference. ⓗEliminating a species can thus have consequences beyond the intended result.",
+"selfGrade": true,
+"answer": "suggests, being disrupted, that, nature will",
+"solution": "ⓐ는 That이 이끄는 명사절 전체가 주어이므로 단수 동사 suggests로 고친다. ⓓ는 전치사 of 뒤에서 this structure를 의미상 주어로 하는 수동형 동명사 being disrupted가 되어야 한다. ⓕ 뒤에는 완전한 절이 이어지며 the fact의 내용을 설명하므로 동격의 접속사 that이 필요하다. ⓖ는 간접의문문의 어순에 맞게 nature will로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-eab24f0722",
+"typeId": "eng-h2-b05-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문에 대한 답의 빈칸을 <조건>에 맞게 완성하시오.\n\nThe grandfather used a GPS app to reach the community center. However, he became so reliant on the app that he could not remember how he had reached his destination.\n\nQ. Why couldn't the grandfather remember the route?\n→ Because he became __________ the GPS app.\n\n<조건>\n• 글에서 연속된 3단어를 찾아 쓸 것\n• 빈칸에 들어갈 말만 쓸 것",
+"selfGrade": true,
+"answer": "so reliant on",
+"solution": "할아버지는 GPS 앱에 지나치게 의존해서 이동 경로를 기억하지 못했다. 뒤에 의존의 대상인 the GPS app이 있으므로, 글의 표현 so reliant on을 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-53003437dd",
+"typeId": "eng-h2-b05-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸을 <조건>에 맞게 완성하시오.\n\n해조류는 식량 공급원으로서 물고기만큼 가치가 있다.\n→ Seaweed is __________ fish as a source of food.\n\n<보기>\nvaluable / as / as\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것\n• 원급 비교 구문을 사용할 것\n• 3단어로 쓸 것",
+"selfGrade": true,
+"answer": "as valuable as",
+"solution": "‘~만큼 …한’이라는 동등 비교는 as와 as 사이에 형용사의 원급을 넣어 나타낸다. 따라서 as valuable as를 쓰면 해조류와 물고기의 식량 공급원으로서의 가치를 비교할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4dc04083e2",
+"typeId": "eng-h2-b05-u3m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장의 뜻이 같도록 빈칸을 <조건>에 맞게 완성하시오.\n\nHigh-resolution cameras and sensors record each salmon's weight.\n→ Each salmon's weight __________ high-resolution cameras and sensors.\n\n<조건>\n• record를 포함하여 3단어로 쓸 것\n• 현재시제의 수동태를 사용할 것\n• 행위자를 나타내는 전치사를 포함할 것",
+"selfGrade": true,
+"answer": "is recorded by",
+"solution": "능동문의 목적어인 each salmon's weight가 주어가 되었으므로 수동태를 사용한다. 주어가 단수이므로 is recorded를 쓰고, 기록하는 주체 앞에는 by를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a5d3282cb8",
+"typeId": "eng-h2-b05-u3m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말에 맞도록 빈칸을 <조건>에 따라 완성하시오.\n\nAI 시스템은 물고기가 탈출하는 것을 막기 위해 가두리 그물의 상태를 확인한다.\n→ An AI system checks the condition of cage nets __________.\n\n<보기>\nescape / fish / prevent / from\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용하되, 필요하면 형태를 바꿀 것\n• 목적을 나타내는 to부정사를 사용할 것\n• 필요한 단어 1개를 추가하여 총 5단어로 쓸 것",
+"selfGrade": true,
+"answer": "to prevent fish from escaping",
+"solution": "확인하는 목적을 나타내므로 to prevent로 시작한다. prevent A from -ing는 ‘A가 ~하는 것을 막다’라는 뜻이므로 escape를 escaping으로 바꾸어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-df371f3968",
+"typeId": "eng-h2-b05-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n양식업자들은 실시간 관찰을 사용하는데, 이는 여러 목적에 기여하며, 물고기의 질병을 발견하기 위해 사용된다.\n\n<보기>\nFarmers / real-time monitoring / use / serve / multiple purposes / detect / diseases / in fish\n\n<조건>\n• Farmers use real-time monitoring으로 시작할 것\n• <보기>의 단어 및 표현을 모두 한 번씩 사용하되, 필요하면 형태를 바꿀 것\n• real-time monitoring을 선행사로 하는 계속적 용법의 관계대명사절을 그 바로 뒤에 삽입할 것\n• ‘물고기의 질병을 발견하기 위해’에 해당하는 목적의 to부정사구를 문장 끝에 둘 것\n• 필요한 단어는 which와 to만 추가하고, 완전한 한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "Farmers use real-time monitoring, which serves multiple purposes, to detect diseases in fish.",
+"solution": "real-time monitoring을 부연하는 관계사절은 쉼표와 which로 연결한다. 선행사가 단수이므로 serve를 serves로 바꾸어야 한다. 목적을 나타내는 to detect diseases in fish는 관계사절을 닫는 쉼표 뒤에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fc72021b74",
+"typeId": "eng-h2-b05-u3m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n데이터를 수집하기 위해, 함께 일하는 소형 로봇들은 해조류 농장 주변을 헤엄치며 발생하는 문제들을 어떻게 처리할지 결정한다.\n\n<보기>\ncollect / data / small robots / work together / swim / around seaweed farms / and / decide / deal with / problems / arise\n\n<조건>\n• 목적을 나타내는 To collect data로 시작할 것\n• <보기>의 단어 및 표현을 모두 한 번씩 사용하되, 필요하면 형태를 바꿀 것\n• small robots를 뒤에서 수식하는 현재분사구를 사용할 것\n• decide 뒤에 ‘의문사+to부정사’를 사용할 것\n• problems를 수식하는 관계대명사 that절을 사용할 것\n• 필요한 단어는 to 2개, how, that만 추가하고, 현재시제의 완전한 한 문장으로 쓸 것",
+"selfGrade": true,
+"answer": "To collect data, small robots working together swim around seaweed farms and decide how to deal with problems that arise.",
+"solution": "문장 앞의 To collect data는 로봇들이 헤엄치는 목적을 나타내며, working together는 small robots를 뒤에서 수식한다. ‘어떻게 처리할지’는 how to deal with로 표현한다. problems 뒤에는 that arise를 연결하여 발생하는 문제들이라는 뜻을 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u3m6s0t0",
+"custom": true
 }
 ]

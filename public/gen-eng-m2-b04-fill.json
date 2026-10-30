@@ -1000,5 +1000,299 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b04-u0m7s0t0",
 "custom": true
+},
+{
+"id": "fill-39bd3412f4",
+"typeId": "eng-m2-b04-u1m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 표현으로 가장 알맞은 것은?\n\nPlease __________ what I am saying. You need to listen carefully.",
+"choices": [
+"sign up for",
+"say goodbye to",
+"focus on",
+"talk behind",
+"be short for"
+],
+"answer": "③",
+"solution": "뒤에 ‘주의 깊게 들어야 한다’는 말이 있으므로 ‘내가 말하는 것에 집중해 달라’는 의미가 자연스럽다. focus on은 ‘~에 집중하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-23f02f46a4",
+"typeId": "eng-m2-b04-u1m7s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 일치하도록 괄호 안의 말을 배열하여 문장을 완성하시오. 모든 말을 한 번씩 사용하고, 단어의 형태를 바꾸지 마시오.\n\n헨리는 어머니에게 조금 더 기다려 달라고 부탁했다.\n\nHenry ________________________________________.\n\n(longer / his / to / asked / a / wait / mother / little)",
+"selfGrade": true,
+"answer": "asked his mother to wait a little longer",
+"solution": "‘~에게 …해 달라고 부탁하다’는 「ask + 목적어 + to부정사」로 나타낸다. 목적어 his mother 뒤에 to wait를 쓰고, ‘조금 더’라는 의미의 a little longer를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-fa7bfb5c47",
+"typeId": "eng-m2-b04-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 이모지 사용에 관한 글의 내용을 정리한 것이다. 우리말의 의미가 되도록 <보기>의 말을 모두 한 번씩 사용하여 한 문장으로 쓰시오.\n\n‘우리는 모든 사람이 이모지를 같은 방식으로 사용할 것이라고 기대해서는 안 된다. 같은 이모지가 사람에 따라 다른 의미를 가질 수 있기 때문이다.’\n\n<보기>\nWe / should / not / expect / everyone / to / use / emojis / in / the / same / way / because / the / same / emoji / can / have / different / meanings / for / different / people\n\n<조건>\n• We로 시작하는 23단어의 문장으로 쓸 것.\n• ‘모든 사람이 같은 방식으로 사용하는 것은 아니다’라는 의미가 되도록 부정어의 위치에 유의할 것.\n• 단어의 형태를 바꾸거나 단어를 추가하지 말 것.",
+"selfGrade": true,
+"answer": "We should not expect everyone to use emojis in the same way because the same emoji can have different meanings for different people.",
+"solution": "‘모든 사람이 ~할 것이라고 기대해서는 안 된다’는 should not expect everyone to use로 나타낸다. everyone을 부정하는 뜻으로 everyone 뒤에 not을 놓으면 ‘모든 사람이 사용하지 않을 것’이라는 다른 의미가 된다. 이유를 나타내는 because 뒤에는 같은 이모지가 사람마다 다른 의미를 가질 수 있다는 내용을 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-94d92fa457",
+"typeId": "eng-m2-b04-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장을 고르시오.",
+"choices": [
+"Learning about marketing strategies help people become smarter shoppers.",
+"There is several marketing strategies that influence shoppers’ decisions.",
+"Junho does not need to worried about missing the sale.",
+"The information that shoppers see repeatedly can influence their decisions.",
+"The first piece of information often become an anchor and influence a shopper."
+],
+"answer": "④",
+"solution": "④의 주어 The information은 단수이고 조동사 can 뒤에 동사원형 influence가 쓰였으므로 옳다. ①은 help를 helps로, ②는 is를 are로, ③은 worried를 worry로 고쳐야 한다. ⑤는 단수 주어에 맞게 become과 influence를 각각 becomes와 influences로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-478802307a",
+"typeId": "eng-m2-b04-u3m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 괄호 ⓐ~ⓔ에 주어진 동사를 어법상 알맞은 형태로 각각 쓰시오.\n\nMarketing strategies ⓐ(influence) shoppers’ decisions in various ways. ⓑ(Learn) about these strategies helps people shop more wisely. For example, the first piece of information often ⓒ(become) an anchor. Since this information may affect a decision, shoppers should not rely only on what ⓓ(give) to them first. They also need to ⓔ(check) other information.\n\nⓐ __________, ⓑ __________, ⓒ __________, ⓓ __________, ⓔ __________",
+"selfGrade": true,
+"answer": "influence, Learning, becomes, is given, check",
+"solution": "ⓐ의 주어 Marketing strategies는 복수이므로 influence가 알맞고, ⓑ는 문장의 주어 역할을 해야 하므로 동명사 Learning이 필요하다. ⓒ는 단수 주어에 맞춰 becomes를 쓰며, ⓓ는 정보가 주어지는 것이므로 수동태 is given을 쓴다. ⓔ는 to 뒤이므로 동사원형 check가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-6afbb295d3",
+"typeId": "eng-m2-b04-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 부분이 다섯 곳 있다. 다섯 곳을 모두 고쳐 글 전체를 다시 쓰시오.\n\nLearning about marketing strategies help people become smarter shoppers. There is many shoppers who falls for viral marketing. When a product is seen again and again, people may wants to have them.",
+"selfGrade": true,
+"answer": "Learning about marketing strategies helps people become smarter shoppers. There are many shoppers who fall for viral marketing. When a product is seen again and again, people may want to have it.",
+"solution": "동명사구 주어는 단수이므로 help를 helps로 고쳐야 하고, many shoppers가 복수이므로 is와 falls를 각각 are와 fall로 고친다. 조동사 may 뒤에는 동사원형 want가 와야 한다. 마지막 대명사는 단수인 a product를 가리키므로 them이 아니라 it이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3713c56fd9",
+"typeId": "eng-m2-b04-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 주어진 표현을 모두 한 번씩 사용하여 문장을 완성하시오. 필요하면 단어의 형태를 바꿀 수 있으나 새로운 단어를 추가할 수 없다.\n\n상품을 반복해서 보는 것이 그 상품이 너에게 알맞다는 것을 의미하지는 않는다는 점을 기억해라.\n\nremember / that / see / a product / again and again / do / not / mean / it / be / right for you",
+"selfGrade": true,
+"answer": "Remember that seeing a product again and again does not mean it is right for you.",
+"solution": "that 뒤에는 목적어 역할을 하는 완전한 절이 와야 한다. ‘상품을 반복해서 보는 것’은 주어이므로 see를 동명사 seeing으로 바꾸고, 단수 주어에 맞춰 do를 does로 바꾼다. it 뒤의 be도 단수 현재형 is가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f624b48c5c",
+"typeId": "eng-m2-b04-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 문장의 의미를 모두 포함하는 한 문장을 조건에 맞게 쓰시오.\n\nThe salesperson first showed Somi an expensive lipstick. The expensive lipstick became the anchor. The other lipstick sounded cheap to Somi.\n\n조건\n· The other lipstick으로 시작할 것\n· because를 사용할 것\n· 관계대명사 that과 수동태를 함께 사용할 것",
+"selfGrade": true,
+"answer": "The other lipstick sounded cheap to Somi because the expensive lipstick that was shown to her first by the salesperson became the anchor.",
+"solution": "결과에 해당하는 The other lipstick sounded cheap to Somi를 먼저 쓰고, because 뒤에 그 원인을 제시한다. 선행사 the expensive lipstick 뒤에는 관계대명사 that을 쓴다. 립스틱은 판매원에 의해 소미에게 제시된 것이므로 관계절은 수동태 that was shown으로 표현해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5c8273e3ed",
+"typeId": "eng-m2-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 Inho의 활동을 정리한 문장들이다. 어법상 옳은 문장만을 모두 고른 것은?\n\nⓐ Inho was interested in helping dolphins in danger.\nⓑ He searched online and found Dolphin Lovers.\nⓒ Taking part in activities for dolphins are a way to help them.\nⓓ Halla and Olle needed learn skills for life in the sea.\nⓔ The experience in the training class made Inho excited.",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓑ, ⓔ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ는 사람이 느끼는 감정을 나타내므로 interested가, ⓑ는 searched와 병렬로 연결된 과거형 found가 알맞다. ⓔ에서도 경험으로 인해 Inho가 느낀 감정을 나타내므로 excited가 옳다. ⓒ는 동명사구 주어를 단수 취급하므로 are를 is로, ⓓ는 need 뒤에 to부정사가 필요하므로 learn을 to learn으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-91fd44acb9",
+"typeId": "eng-m2-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 표시된 부분에 대한 수정안 중 어법상 옳지 않은 것은?\n\nPlastic waste can make dolphins ⓐsickly. For this reason, removing plastic waste from beaches ⓑare important. Inho enjoyed ⓒtake part in the beach cleanup. He also saw Aunt Sumi there. They were both members of Dolphin Lovers. ⓓHow a small world it was! Later, the training experience made Inho feel ⓔexciting.",
+"choices": [
+"ⓐ sickly → sick",
+"ⓑ are → is",
+"ⓒ take → to take",
+"ⓓ How → What",
+"ⓔ exciting → excited"
+],
+"answer": "③",
+"solution": "enjoy는 동명사를 목적어로 취하므로 ⓒ는 to take가 아니라 taking으로 고쳐야 한다. ⓐ는 목적격 보어로 형용사 sick이 필요하고, ⓑ는 동명사구 주어이므로 is가 알맞다. ⓓ는 명사구 a small world 앞이므로 What을 쓰며, ⓔ는 사람이 느끼는 감정이므로 excited가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a30e677df0",
+"typeId": "eng-m2-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A)~(D)에 들어갈 말을 바르게 연결한 것은?\n\nInho had opportunities (A)[see / to see] dolphins while growing up in Jeju-do. He later joined Dolphin Lovers, which helps dolphins through activities such as cleaning beaches and (B)[helping / to help] dolphins. At the ceremony for Halla and Olle, every member of Dolphin Lovers (C)[was / were] there. Seeing the dolphins return to the sea made the members (D)[emotional / emotionally].",
+"choices": [
+"see — helping — was — emotional",
+"to see — to help — was — emotional",
+"to see — helping — were — emotional",
+"to see — helping — was — emotional",
+"to see — helping — was — emotionally"
+],
+"answer": "④",
+"solution": "(A)는 opportunities를 뒤에서 수식하는 to부정사이고, (B)는 cleaning과 병렬을 이루므로 helping이 알맞다. (C)는 every member가 단수 주어이고 과거의 행사에 관한 내용이므로 was를 쓴다. (D)는 make의 목적격 보어 자리이므로 부사가 아닌 형용사 emotional이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e145d95613",
+"typeId": "eng-m2-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호에 주어진 단어를 문맥과 어법에 맞게 바꾸어 ⓐ~ⓕ의 순서대로 쓰시오. 필요한 경우 단어를 추가하되, ⓐ와 ⓔ에는 to부정사를 쓰시오.\n\nInho had many opportunities ⓐ(see) dolphins in Jeju-do. After learning that some dolphins were endangered, he searched for an NGO and ⓑ(find) Dolphin Lovers. Its activities include cleaning beaches and ⓒ(help) dolphins. When Inho took part in the beach cleanup, collecting waste ⓓ(be) difficult for him, but he enjoyed the activity. Halla and Olle also had to learn skills ⓔ(survive) outside the aquarium. Helping in their training class made Inho ⓕ(excite).",
+"selfGrade": true,
+"answer": "to see, found, helping, was, to survive, excited",
+"solution": "ⓐ는 opportunities를 수식하는 to see이며, ⓑ는 searched와 병렬인 과거형 found이다. ⓒ는 cleaning과 병렬이므로 helping을 쓰고, ⓓ는 동명사구 주어와 과거 시제에 맞추어 was를 쓴다. ⓔ는 생존이라는 목적을 나타내는 to survive이다. ⓕ는 Inho가 느낀 감정을 나타내는 목적격 보어이므로 excited가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1ca3096f7c",
+"typeId": "eng-m2-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓖ 중 어법상 틀린 부분 다섯 곳을 찾아 바르게 고치시오. 표시된 부분만 수정하고, 기호와 수정한 표현을 글에 나온 순서대로 쓰시오.\n\nHalla and Olle returned to the sea after ten years in an aquarium. There ⓐwere a ceremony for them, and all the members of Dolphin Lovers ⓑwas present. Watching the dolphins return to the sea ⓒmade Inho emotional. He felt happy ⓓbecause of they could live freely in the sea. He ⓔshouted to the dolphins and ⓕwave goodbye. ⓖHow a happy moment it was for him!\n\n※ 답안 형식: ⓐ → 수정한 표현",
+"selfGrade": true,
+"answer": "ⓐ → was, ⓑ → were, ⓓ → because, ⓕ → waved, ⓖ → What",
+"solution": "ⓐ는 뒤에 단수 명사 a ceremony가 오므로 was로, ⓑ는 복수 주어 all the members에 맞추어 were로 고친다. ⓓ 뒤에는 주어와 동사를 갖춘 절이 있으므로 because가 필요하다. ⓕ는 shouted와 병렬인 과거형 waved로 고친다. ⓖ는 「What + a + 형용사 + 단수 명사 + 주어 + 동사!」 형태의 감탄문이므로 What이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-39fefaa233",
+"typeId": "eng-m2-b04-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고, Graham이 흰색 물감을 만들어 사용한 이유로 가장 알맞은 것을 고르시오.\n\nIn 1956, Bette Graham worked at a bank in Texas. She often made typing mistakes. In those days, a person had to type an entire page again even after making one small mistake. Graham wanted to solve this problem. After watching window painters cover their mistakes with paint, she prepared some white paint herself. She put it over her typing mistakes, and nobody noticed the corrections. Other workers at the bank soon started using it, too.",
+"choices": [
+"은행의 창문을 다른 색으로 칠하기 위해서",
+"동료들에게 타자 치는 방법을 가르치기 위해서",
+"틀린 부분 때문에 페이지 전체를 다시 입력하는 일을 피하기 위해서",
+"창문에 칠한 물감을 쉽게 지우기 위해서",
+"은행에서 사용하는 종이를 직접 만들기 위해서"
+],
+"answer": "③",
+"solution": "당시에는 작은 타자 실수 하나만 해도 페이지 전체를 다시 입력해야 했다. Graham은 흰색 물감으로 틀린 부분을 덮어 이러한 문제를 해결하려 했으므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-40e9b99197",
+"typeId": "eng-m2-b04-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화가 끝난 뒤 남학생의 생각으로 가장 알맞은 것은?\n\nG: Who do you think will win today's game, the Reds or the Blues?\nB: I think the Reds will win because they're better than the Blues.\nG: But their star player, Yun Jihun, isn't playing today. Do you still think so?\nB: Oh, that's news to me. Now I can't say for sure.",
+"choices": [
+"The Blues will certainly win today's game.",
+"He is no longer certain that the Reds will win.",
+"Yun Jihun will play for the Blues today.",
+"The Reds will win because Yun Jihun is playing.",
+"He knew about Yun Jihun before the conversation."
+],
+"answer": "②",
+"solution": "남학생은 처음에는 Reds가 더 좋은 팀이므로 이길 것이라고 생각했다. 그러나 윤지훈이 출전하지 않는다는 사실을 듣고는 확신할 수 없다고 했으므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-04850d4257",
+"typeId": "eng-m2-b04-u2m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에 근거하여 답할 수 있는 질문만을 있는 대로 고른 것은?\n\nIn 1991, Quentin Stafford-Fraser and Paul Jardetzky worked in a computer lab in England. They needed plenty of coffee to work better, but the building had just one coffee machine. They often walked to it and found that the pot was empty. To solve this problem, they placed a camera in front of the machine. It photographed the pot three times every minute. Special software allowed every researcher in the building to view these pictures through a local network. This was how the first webcam came into use.\n\n(a) What made some of the researchers' trips disappointing?\n(b) How many photographs did the camera take per minute?\n(c) Which of the two researchers wrote the special software?\n(d) Could researchers in other buildings also view the pictures?",
+"choices": [
+"(a), (c)",
+"(b), (d)",
+"(a), (b), (d)",
+"(a), (b)",
+"(b), (c), (d)"
+],
+"answer": "④",
+"solution": "커피를 가지러 갔을 때 주전자가 비어 있었다는 점과 카메라가 1분에 세 번 사진을 찍었다는 점에서 (a), (b)에 답할 수 있다. 소프트웨어를 누가 작성했는지는 제시되지 않았다. 또한 해당 건물의 모든 연구원이 사진을 볼 수 있었다는 사실만으로 다른 건물에서도 볼 수 있었는지는 판단할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-98f3e7c264",
+"typeId": "eng-m2-b04-u2m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글의 세부 내용을 바탕으로 추론한 것으로 가장 적절한 것은?\n\n[A]\nBette Graham worked at a Texas bank in 1956. A small typing error meant typing the whole page again, and she was not good at typing. One day, she watched window painters put paint over their mistakes. The following day, she made white paint and covered her typing errors with it. People did not notice the corrections. Before long, all the workers at the bank were using her invention.\n\n[B]\nAt a computer lab in England in 1991, Quentin Stafford-Fraser and Paul Jardetzky needed a lot of coffee. There was only one coffee machine in their building, and their trips to it often ended with an empty pot. They put a camera in front of the machine. It took three pictures per minute. Using special software and a local network, all the researchers in the building could look at the pictures of the pot.",
+"choices": [
+"Graham의 동료들이 발명품을 사용했다는 것은 그들 모두가 Graham만큼 타자를 잘 치지 못했다는 뜻이다.",
+"카메라 설치 후에는 연구원들이 커피를 더 많이 마실 수 있도록 커피 주전자 자체의 크기가 커졌을 것이다.",
+"두 발명 모두 작업 중 생긴 실수를 다른 사람이 알아보지 못하도록 가리는 방식으로 문제를 해결했다.",
+"Graham은 화가들이 쓰던 방법을 타자 실수에 적용했고, 연구원들은 사진을 통해 커피를 가지러 갈지 판단하는 데 필요한 정보를 얻을 수 있었다.",
+"Graham의 물감은 실수가 생기는 것을 막았고, 연구원들의 카메라는 커피가 떨어지는 것을 막았다."
+],
+"answer": "④",
+"solution": "Graham은 물감으로 실수를 덮는 방법을 보고 이를 타자 실수 수정에 적용했다. 연구원들은 주전자 사진을 보고 커피가 있는지 확인하여 이동 여부를 판단할 수 있었으므로 ④가 적절하다. 두 발명은 각각 이미 생긴 실수를 수정하거나 주전자 상태를 확인하게 했으며, 실수나 커피 소진 자체를 막은 것은 아니다. 동료들의 타자 실력이나 주전자 크기의 변화도 글에서 확인할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cf4ac0cad3",
+"typeId": "eng-m2-b04-u2m4s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글에 근거하여 (가)~(라)를 판단할 때, 타당하면 T, 타당하지 않으면 F로 표시한 것으로 알맞은 것은?\n\n[A]\nIn 1815, Mt. Tambora in Indonesia erupted and sent a great cloud of ash into the air. Crops around the world failed, leaving people without enough food. Many horses, which people used for travel, were killed to provide food. A different means of travel was needed. In Germany in 1817, Karl von Drais invented the first bicycle. It had a pair of wooden wheels and no pedals. Riders moved it forward by pushing against the ground with their feet. Many inventors contributed to the development of the bicycle during the nineteenth century.\n\n[B]\nIn 1991, two researchers at an English computer lab found that trips to their building's only coffee machine often ended in disappointment: the pot was empty. They installed a camera that photographed the pot three times a minute. Special software made the pictures available to all the researchers in the building on a local network.\n\n(가) [A]에서는 식량 부족이 이동의 어려움으로 이어지는 과정에 말이 식용으로 죽임을 당한 일이 포함된다.\n(나) [A]에서 오늘날의 자전거는 Drais가 1817년에 완성한 구조를 다른 발명가들의 기여 없이 그대로 유지한 것으로 볼 수 있다.\n(다) [B]의 사진 제공 횟수를 고려하면 연구원들은 주전자의 상태가 바뀌는 모든 순간을 사진으로 확인할 수 있었다고 단정할 수 있다.\n(라) [A]에서는 새로운 이동 수단이, [B]에서는 주전자를 직접 보러 가지 않고 상태를 확인할 수 있는 방법이 필요에 대한 해결책으로 제시된다.",
+"choices": [
+"T－F－T－F",
+"F－T－F－T",
+"T－T－F－F",
+"F－F－T－T",
+"T－F－F－T"
+],
+"answer": "⑤",
+"solution": "식량 부족으로 많은 말이 식용으로 죽임을 당하면서 이동이 어려워졌으므로 (가)는 T이다. 자전거 발전에는 여러 발명가가 기여했으므로 (나)는 F이다. 1분에 세 번 찍은 사진으로 모든 변화 순간을 확인했다고 단정할 수 없으므로 (다)는 F이다. 두 글에서 각각 새로운 이동 수단과 원격으로 주전자 상태를 확인하는 방법이 해결책이므로 (라)는 T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b04-u2m4s0t0",
+"custom": true
 }
 ]

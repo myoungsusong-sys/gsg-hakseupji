@@ -3289,5 +3289,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u7m5s0t0",
 "custom": true
+},
+{
+"id": "fill-74aca50359",
+"typeId": "eng-m3-b07-u7m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nA newspaper reported that Alfred Nobel had died, but the report was wrong. After reading it, Nobel became worried about how people would remember him. He did not want people to connect his name only with dangerous inventions. He wanted to help make the world better, so he gave his money to create the Nobel Prize. Today, people connect his name with the prize more than with dynamite.",
+"choices": [
+"the difficulty of inventing something new",
+"the importance of reading newspapers every day",
+"Nobel’s effort to be remembered for helping the world",
+"the reasons people become interested in dangerous inventions",
+"Nobel’s plan to earn more money through his inventions"
+],
+"answer": "③",
+"solution": "글은 노벨이 자신의 이름이 위험한 발명품으로만 기억되기를 원하지 않아 노벨상을 만들었다는 내용을 중심으로 전개된다. 따라서 더 나은 세상에 기여한 사람으로 기억되려는 노벨의 노력을 나타낸 ③이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-47e2f86740",
+"typeId": "eng-m3-b07-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nMr. Porter prepared paper stars with personal messages for his students. Lucy had made slow progress, but he recognized that she was smart in her own way. His message told her that she was smart and could achieve things if she tried. After receiving it, Lucy came to him in tears. Until then, she had believed that she was not good at anything. No one had ever told her she was smart. Now she felt ready to try. For Mr. Porter, seeing this change made the time spent preparing the stars worthwhile.",
+"choices": [
+"A Teacher’s Message Opens the Door to Self-Belief",
+"Paper Stars: A Reward for the Highest Scores",
+"Why Students Should Hide Their Weaknesses",
+"A Student Teaches Her Teacher to Study Harder",
+"Slow Progress: A Problem Solved by Better Grades"
+],
+"answer": "①",
+"solution": "핵심은 교사의 격려를 통해 자신을 부정적으로 보던 Lucy가 자신의 가능성을 믿게 되었다는 것이다. ①은 격려의 메시지와 자신감 형성이라는 원인과 결과를 함께 담고 있다. 성적이 향상되었다거나 높은 점수에 대한 보상으로 별을 받았다는 내용은 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-93fcc0fe04",
+"typeId": "eng-m3-b07-u7m2s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nThe person who died was Alfred Nobel’s brother, but a newspaper reported Alfred’s death instead. The report presented Alfred as someone who had grown rich through inventions that brought death to others. Alfred knew that he had invented dynamite, yet he had not expected people to judge his life in that way. He wanted his name to stand for something better. He therefore used his money to establish the Nobel Prize. His name is now more closely connected with the prize than with dynamite.\n\n→ Although the report of Nobel’s death was (A), it led him to try to change how he would be remembered through his (B) to a better world.",
+"choices": [
+"accurate — contribution",
+"mistaken — opposition",
+"accurate — connection",
+"mistaken — contribution",
+"mistaken — return"
+],
+"answer": "④",
+"solution": "실제로 사망한 사람은 노벨의 형제이므로 노벨의 사망 보도는 잘못된 것이었다. 그러나 그 보도는 노벨이 더 나은 세상에 기여함으로써 자신에 대한 기억을 바꾸려는 계기가 되었다. 따라서 (A)에는 mistaken, (B)에는 contribution이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-81455cee96",
+"typeId": "eng-m3-b07-u7m2s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 두 글의 핵심 내용을 종합한 것으로 가장 알맞은 것은?\n\n(A)\nA newspaper wrongly announced Alfred Nobel’s death and described his life in terms of dangerous inventions. Nobel was upset by the thought that this was how the world would remember him. Wanting to leave a different memory, he gave his money to establish the Nobel Prize.\n\n(B)\nLucy had little confidence because she believed she could do nothing well. Although her progress was slow, Mr. Porter saw ability in her and expressed his belief in a message on a paper star. His words helped Lucy believe that she could achieve something through effort.",
+"choices": [
+"Both show that accepting others’ judgments without question helps people discover their true abilities.",
+"Both suggest that people must first achieve public success before they can change their view of themselves.",
+"Both explain that mistaken reports can be corrected when people receive encouragement from a teacher.",
+"Both suggest that positive judgments are necessary because negative judgments prevent people from changing.",
+"Both show that others’ views can lead people to reconsider themselves, whether they reject or accept those views."
+],
+"answer": "⑤",
+"solution": "노벨은 자신에 대한 부정적인 평가를 받아들이고 싶지 않아 앞으로 남길 기억을 바꾸려 했고, Lucy는 교사의 긍정적인 평가를 받아들여 자신에 대한 생각을 바꾸었다. 따라서 두 글은 타인의 평가가 자신을 돌아보는 계기가 될 수 있다는 공통점을 지닌다. ⑤는 평가를 거부한 노벨과 평가를 받아들인 Lucy의 차이까지 반영한다. ④는 부정적인 평가도 변화의 계기가 된 노벨의 사례와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-146601112a",
+"typeId": "eng-m3-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 요약문을 완성하시오.\n\nMr. Porter did not overlook Lucy’s ability simply because she was making slow progress. He wrote on her paper star that she was smart and could do anything she put her mind to. Before reading his words, Lucy had believed she was not good at anything and had lacked the courage to try. The message changed that belief. She began to think that effort could lead to achievement. The teacher considered the time spent on the stars worthwhile because of this change.\n\n[요약문]\nRather than treating Lucy’s slow progress as a lack of (A), Mr. Porter expressed his belief in her, helping her replace doubt with (B) and gain the courage to (C).\n\n[조건]\n• (A), (B), (C)에 들어갈 말을 순서대로 쓰시오.\n• 아래 단어 중 세 개를 골라 각각 한 번씩 사용하시오.\n• 필요한 경우 단어의 형태를 바꾸고, 각 빈칸에는 한 단어만 쓰시오.\n\n[단어]\nable / confident / try / compete / proud / progress",
+"selfGrade": true,
+"answer": "ability, confidence, try",
+"solution": "교사는 Lucy의 더딘 발전을 능력 부족으로 단정하지 않고 그녀의 능력을 인정했다. 그 메시지는 Lucy가 의심 대신 자신감을 갖고 시도할 용기를 얻도록 했다. 따라서 able은 명사 ability로, confident는 명사 confidence로 바꾸며, 마지막에는 to 뒤에 동사원형 try를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-05b4f2940d",
+"typeId": "eng-m3-b07-u7m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 핵심 내용을 나타내도록 요약문을 완성하시오.\n\nAlfred Nobel could not accept the idea that people would remember him only for inventions that caused harm. A newspaper’s incorrect report of his death made him face that possibility. He wanted his life to mean something better to the world, and he acted on that wish by providing the money to create the Nobel Prize. Today, his name brings the prize to mind more readily than dynamite. The importance of the story lies in the connection between the way he wanted to be remembered and what he chose to do.\n\n[요약문]\nNobel’s story shows how ________________________________________.\n\n[조건]\n• 아래 표현 중 글의 핵심에 맞는 다섯 개를 골라 빈칸에 배열하시오.\n• 선택한 표현은 각각 한 번씩 사용하고 형태를 바꾸지 마시오.\n• 빈칸에 들어갈 부분만 쓰시오.\n\n[표현]\nhim to act / his wish / to be remembered / for a better world / led / to become wealthier / to avoid all criticism",
+"selfGrade": true,
+"answer": "his wish to be remembered led him to act for a better world",
+"solution": "글의 핵심은 노벨이 자신이 어떻게 기억될지를 고민한 데서 그치지 않고 더 나은 세상을 위해 행동했다는 것이다. 따라서 기억되고자 하는 바람이 행동으로 이어졌다는 인과관계가 드러나도록 배열해야 한다. 부자가 되거나 모든 비판을 피하려 했다는 내용은 글의 핵심과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m2s0t0",
+"custom": true
 }
 ]
