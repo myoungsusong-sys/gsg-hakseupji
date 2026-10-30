@@ -8306,5 +8306,101 @@
 "custom": true,
 "rv": 1,
 "selfGrade": true
+},
+{
+"id": "fill-509fc5151c",
+"typeId": "15669",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 약속에 따라 $12\\star 3$을 계산하세요.\n\n[약속] $가\\star 나$는 가와 나를 곱한 값에 $2$를 더한 값입니다.",
+"selfGrade": true,
+"answer": "38",
+"solution": "먼저 두 수를 곱하면 $12\\times 3=36$입니다. 여기에 $2$를 더하면 $36+2=38$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15669",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5ddef8b066",
+"typeId": "15669",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 약속에 따라 $21\\diamond 2$를 계산한 값은 얼마인가요?\n\n[약속] $가\\diamond 나$는 가와 나를 곱한 값에서 $3$을 뺀 값입니다.",
+"choices": [
+"20",
+"36",
+"39",
+"42",
+"45"
+],
+"answer": "③",
+"solution": "먼저 두 수를 곱하면 $21\\times 2=42$입니다. 이 값에서 $3$을 빼면 $42-3=39$이므로 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15669",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-23b3a1562f",
+"typeId": "15669",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 약속에 따라 $11\\triangle 4$의 값을 구하세요.\n\n[약속] $가\\triangle 나$는 가와 나의 곱에 $5$를 더한 값입니다.",
+"selfGrade": true,
+"answer": "49",
+"solution": "가와 나의 곱은 $11\\times 4=44$입니다. 이 값에 $5$를 더하면 $44+5=49$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15669",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0b63aa52f3",
+"typeId": "15669",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 약속에 따라 $26\\square 3$을 계산하세요.\n\n[약속] $가\\square 나$는 가에서 $2$를 뺀 다음, 그 결과에 나를 곱한 값입니다.",
+"selfGrade": true,
+"answer": "72",
+"solution": "먼저 $26$에서 $2$를 빼면 $26-2=24$입니다. 그 결과에 $3$을 곱하면 $24\\times 3=72$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15669",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2540c64799",
+"typeId": "15669",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 약속에 따라 $18\\circ 4$를 계산한 값은 얼마인가요?\n\n[약속] $가\\circ 나$는 가와 나를 곱한 다음, 그 곱에 가를 더한 값입니다.",
+"choices": [
+"60",
+"72",
+"76",
+"80",
+"90"
+],
+"answer": "⑤",
+"solution": "먼저 가와 나를 곱하면 $18\\times 4=72$입니다. 그 곱에 가에 해당하는 $18$을 더하면 $72+18=90$이므로 정답은 ⑤입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15669",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-521ff87cb3",
+"typeId": "15669",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 약속에 따라 $29\\oplus 4$의 값을 구하세요.\n\n[약속] $가\\oplus 나$는 가와 나를 더한 다음, 그 합에 나를 곱한 값입니다.",
+"selfGrade": true,
+"answer": "132",
+"solution": "먼저 가와 나를 더하면 $29+4=33$입니다. 그 합에 나인 $4$를 곱하면 $33\\times 4=132$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15669",
+"custom": true,
+"rv": 1
 }
 ]

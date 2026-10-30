@@ -2674,5 +2674,61 @@
 "twinGroup": "tw-20534",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-16774a3b7e",
+"typeId": "20581",
+"kind": "주관식",
+"diff": 4,
+"body": "원에 내접하는 사각형 $ABCD$에서 직선 $AB$와 $CD$의 교점을 $P$, 직선 $AD$와 $BC$의 교점을 $Q$라 하자. 점 $P,A,B$는 이 순서로, 점 $P,D,C$는 이 순서로, 점 $Q,D,A$는 이 순서로, 점 $Q,C,B$는 이 순서로 각각 한 직선 위에 있다.\n\n$\\angle BPC$의 이등분선이 선분 $BC$와 만나는 점을 $E$, $\\angle AQB$의 이등분선이 선분 $AB$와 만나는 점을 $F$라 하자. 다음 두 조건을 만족할 때, $\\angle ABC$의 크기를 구하시오.\n\n$\\angle PEB:\\angle QFB=13:14$\n\n$\\angle EPF=\\angle FQB+8^\\circ$",
+"selfGrade": true,
+"answer": "54°",
+"solution": "$\\angle ABC=x$, $\\angle BCD=y$, $\\angle BPC=p$, $\\angle AQB=q$라 하자.\n\n삼각형 $PBC$에서 $x+y+p=180^\\circ$이다. 원에 내접하는 사각형의 두 대각의 크기의 합은 $180^\\circ$이므로 $\\angle DAB=180^\\circ-y$이다. 따라서 삼각형 $QAB$에서 $x+(180^\\circ-y)+q=180^\\circ$이므로 $y=x+q$이다. 이를 앞의 식에 대입하면 $2x+p+q=180^\\circ$이다.\n\n$PE$, $QF$가 각각 각의 이등분선이므로 삼각형 $PBE$와 $QBF$에서\n$\\angle PEB=180^\\circ-x-\\frac p2=90^\\circ+\\frac q2$,\n$\\angle QFB=180^\\circ-x-\\frac q2=90^\\circ+\\frac p2$이다.\n\n따라서 첫 번째 조건에서 $14(180^\\circ+q)=13(180^\\circ+p)$이므로 $13p-14q=180^\\circ$이다.\n\n한편 $F$는 선분 $AB$ 위에 있으므로 반직선 $PF$와 $PB$가 일치한다. 따라서 $\\angle EPF=\\frac p2$, $\\angle FQB=\\frac q2$이므로 두 번째 조건에서 $p-q=16^\\circ$이다.\n\n$p=q+16^\\circ$를 $13p-14q=180^\\circ$에 대입하면 $13(q+16^\\circ)-14q=180^\\circ$이므로 $q=28^\\circ$, $p=44^\\circ$이다.\n\n따라서 $x=\\frac{180^\\circ-44^\\circ-28^\\circ}{2}=54^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20581",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-73be6c3617",
+"typeId": "20573",
+"kind": "주관식",
+"diff": 4,
+"body": "중심이 O로 같은 두 원의 반지름을 각각 R, r라 하자. 단, R>r>0이다. 큰 원의 지름 AB에 대하여 A, B와 다른 큰 원 위의 점 C를 잡았더니 직선 BC가 작은 원에 접하였다. 삼각형 ABC의 둘레가 40이고 BC-AC=7일 때, $\\dfrac{r}{R}+\\tan\\angle CAB$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{319}{136}$",
+"solution": "AB가 지름이므로 ∠ACB=90°이다. AC=t라 하면 BC=t+7이고, 둘레가 40이므로 AB=33-2t이다. 피타고라스 정리에 의해 $t^2+(t+7)^2=(33-2t)^2$이다. 이를 정리하면 $t^2-73t+520=0$, 즉 $(t-8)(t-65)=0$이다. t=65이면 AB<0이므로 t=8이다. 따라서 AC=8, BC=15, AB=17이다. 직선 BC와 작은 원의 접점을 T라 하면 OT⊥BC이다. AC⊥BC이므로 OT∥AC이고, O는 AB의 중점이므로 T는 BC의 중점이다. 중점 연결 정리에 의해 OT=AC/2=4이다. 따라서 r=4, R=17/2이고, $\\tan\\angle CAB=BC/AC=15/8$이다. 그러므로 구하는 값은 $\\dfrac{8}{17}+\\dfrac{15}{8}=\\dfrac{319}{136}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20573",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b2cdf3fd3b",
+"typeId": "20573",
+"kind": "주관식",
+"diff": 3,
+"body": "AB를 지름으로 하는 원 위에 A, B와 다른 점 C가 있다. 점 C에서 AB에 내린 수선의 발을 D라 하자. 삼각형 ACD와 삼각형 CBD의 둘레가 각각 24, 36이다. 선분 CD 위의 점 E가 CE:ED=2:3을 만족할 때, $x=\\angle BAE$에 대하여 $\\sin x\\cos x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{90}{181}$",
+"solution": "AB가 지름이므로 ∠ACB=90°이다. 삼각형 ACD와 삼각형 CBD는 두 쌍의 대응각의 크기가 각각 같으므로 닮음이다. 두 삼각형의 둘레의 비가 24:36=2:3이므로 대응변의 길이의 비도 2:3이다. 따라서 AD:CD=2:3이다. AD=2k, CD=3k(k>0)라 놓으면 CE:ED=2:3이므로 $ED=\\dfrac35CD=\\dfrac95k$이다. 직각삼각형 ADE에서 $AE^2=AD^2+ED^2=4k^2+\\dfrac{81}{25}k^2=\\dfrac{181}{25}k^2$이다. D는 선분 AB 위에 있으므로 ∠BAE=∠DAE이다. 따라서 $\\sin x\\cos x=\\dfrac{ED}{AE}\\cdot\\dfrac{AD}{AE}=\\dfrac{(9k/5)(2k)}{181k^2/25}=\\dfrac{90}{181}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20573",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a14a562efa",
+"typeId": "20573",
+"kind": "주관식",
+"diff": 4,
+"body": "원의 지름 AB를 B 쪽으로 연장한 직선 위에 점 P가 있다. 점 P에서 원에 그은 접선의 접점을 C라 하자. PB=8, PC=12일 때, $\\theta=\\angle CAB$에 대하여 $\\dfrac{\\sin\\theta\\cos\\theta}{1+\\tan\\theta}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{18}{65}$",
+"solution": "원의 중심을 O, 반지름을 R라 하면 OC⊥PC이고 OP=R+8이다. 직각삼각형 OCP에서 피타고라스 정리에 의해 $(R+8)^2=R^2+12^2$이므로 R=5, OP=13이다. 점 C에서 직선 AB에 내린 수선의 발을 D라 하자. D는 직각삼각형 OCP의 빗변 OP 위에 있다. 삼각형 ODC와 삼각형 OCP가 닮음이므로 OD:OC=OC:OP이다. 따라서 $OD=\\dfrac{OC^2}{OP}=\\dfrac{25}{13}$이다. OD<OB=5이므로 D는 선분 OB 위에 있고, $AD=AO+OD=\\dfrac{90}{13}$, $BD=OB-OD=\\dfrac{40}{13}$이다. AB가 지름이므로 ∠ACB=90°이다. 삼각형 ADC와 삼각형 ACB의 닮음에서 $AC^2=AB\\cdot AD$이고, 삼각형 BDC와 삼각형 BCA의 닮음에서 $BC^2=AB\\cdot BD$이다. 따라서 $AC^2:BC^2=AD:BD=9:4$이므로 AC:BC=3:2이다. AC=3k, BC=2k(k>0)라 놓으면 $AB^2=13k^2$이다. 따라서 $\\tan\\theta=\\dfrac23$, $\\sin\\theta\\cos\\theta=\\dfrac{BC\\cdot AC}{AB^2}=\\dfrac6{13}$이다. 그러므로 구하는 값은 $\\dfrac6{13}\\div\\left(1+\\dfrac23\\right)=\\dfrac{18}{65}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20573",
+"custom": true,
+"rv": 1
 }
 ]
