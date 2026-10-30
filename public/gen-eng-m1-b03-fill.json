@@ -1187,5 +1187,280 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u5m6s0t0",
 "custom": true
+},
+{
+"id": "fill-ee2bc18ed4",
+"typeId": "eng-m1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Mike takes photos of what he wears and shares them on social media. His followers enjoy the photos and write kind comments. Elena saves the locations of good donut shops on a map app. Later, she goes back to the shops with her friends.\n\n윗글에서 추론할 수 있는 것은?",
+"choices": [
+"Mike and Elena both receive comments from their friends.",
+"Mike uses a map app to find fashionable clothes.",
+"Elena shares pictures of donuts with her followers.",
+"Mike and Elena use digital tools for their interests.",
+"Elena visits each donut shop only once."
+],
+"answer": "④",
+"solution": "Mike는 소셜 미디어를 패션 기록에 활용하고, Elena는 지도 앱에 도넛 가게를 표시한다. 따라서 두 사람 모두 자신의 관심사를 위해 디지털 도구를 사용한다고 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0cac52ee60",
+"typeId": "eng-m1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Harin is active and exercises frequently. Running in the park is her favorite activity, and she likes the fresh air there. She also uses an app that keeps a record of her speed, time, and steps.\n\n윗글의 내용과 (A)~(C)가 일치하면 T, 일치하지 않으면 F를 쓸 때, 순서대로 연결된 것은?\n\n(A) Harin’s app records the place where she runs.\n(B) Harin’s favorite exercise agrees with her active personality.\n(C) The exact time when Harin runs is not given.",
+"choices": [
+"T-T-F",
+"T-F-T",
+"F-T-T",
+"F-T-F",
+"F-F-T"
+],
+"answer": "③",
+"solution": "앱이 기록하는 것은 속도, 시간, 걸음 수이므로 (A)는 F이다. 하린의 활동적인 성격과 달리기를 좋아하는 특징은 서로 어울리므로 (B)는 T이고, 달리는 정확한 시각은 제시되지 않았으므로 (C)도 T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-8e70d08697",
+"typeId": "eng-m1-b03-u0m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Jack says that soccer is his favorite sport and that he belongs to his school team. The number on his uniform is nine, which is also his favorite number. He practices with the team after classes.\n\n윗글을 읽고 답할 수 있는 질문끼리 바르게 묶인 것은?\n\nⓐ What sport does Jack like?\nⓑ Who teaches Jack soccer?\nⓒ Where does Jack practice?\nⓓ Why does Jack like the number nine?\nⓔ What is Jack’s uniform number?",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓔ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "Jack이 좋아하는 운동은 축구이고 유니폼 번호는 9이므로 ⓐ와 ⓔ에 답할 수 있다. 지도자, 연습 장소, 숫자 9를 좋아하는 이유는 제시되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5163fc36ce",
+"typeId": "eng-m1-b03-u0m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Harin loves running and often enjoys it in the park. For each run, her app saves information about how fast she runs, how long she runs, and how many steps she takes.\n\n다음 두 질문의 답을 모두 포함하는 한 문장의 영어 답을 완성하시오.\n\nQ1. Where does Harin often run?\nQ2. What does her app record?",
+"selfGrade": true,
+"answer": "She often runs in the park, and her app records her speed, time, and steps.",
+"solution": "첫 번째 질문의 답은 in the park이고, 두 번째 질문의 답은 her speed, time, and steps이다. 두 내용을 and로 연결하고, 주어에 맞게 runs와 records를 사용해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-3291eded75",
+"typeId": "eng-m1-b03-u0m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "In her free time, Elena looks for donut shops. Whenever she finds good ones, she puts marks for them on her map app. After that, she returns to those places with her friends.\n\nWhat does Elena do after marking good donut shops? 주어진 조건에 맞게 영어로 답하시오.\n\n<조건>\n- 총 7개의 단어로 쓸 것\n- good donut shops를 대명사로 바꾸어 쓸 것",
+"selfGrade": true,
+"answer": "She visits them again with her friends.",
+"solution": "표시한 뒤에는 그 가게들을 친구들과 다시 방문한다. 복수인 good donut shops는 목적격 대명사 them으로 바꾸며, 제시된 답은 총 7개의 단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u0m4s0t0",
+"custom": true
+},
+{
+"id": "fill-cb7e737fb9",
+"typeId": "eng-m1-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ의 어법상 잘못된 부분을 고친 것으로 적절하지 않은 것은?\n\nⓐ Every student in the orchestra play an instrument.\nⓑ Tom will sings in the chorus at the concert.\nⓒ My parents are wait for the school concert.\nⓓ I am exciting about the concert.\nⓔ Annie will plays the guitar in the band.",
+"choices": [
+"ⓐ: play → plays",
+"ⓑ: sings → singing",
+"ⓒ: wait → waiting",
+"ⓓ: exciting → excited",
+"ⓔ: plays → play"
+],
+"answer": "②",
+"solution": "미래를 나타내는 will 뒤에는 동사원형을 쓰므로 ⓑ의 sings는 sing으로 고쳐야 한다. every student는 단수 취급하므로 ⓐ에는 plays가 알맞고, 현재진행형인 ⓒ에는 waiting이 필요하다. 사람의 감정을 나타내는 ⓓ에는 excited가, will 뒤인 ⓔ에는 play가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f4bd9202fe",
+"typeId": "eng-m1-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓕ 중 어법상 옳은 문장만을 모두 고른 것은?\n\nⓐ Are you takeing pictures of the school garden?\nⓑ The students are running through the woods.\nⓒ Every student are waiting at the starting line.\nⓓ We can finish the race in the woods.\nⓔ I will writing about the flowers in the garden.\nⓕ We are using our smartphones to take pictures.",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓕ",
+"ⓒ, ⓓ, ⓔ",
+"ⓐ, ⓔ, ⓕ"
+],
+"answer": "③",
+"solution": "ⓑ의 running은 run의 마지막 자음을 한 번 더 쓰고 -ing를 붙인 올바른 형태이며, ⓓ의 can 뒤에는 동사원형 finish가 알맞다. ⓕ의 using도 use의 e를 빼고 -ing를 붙인 올바른 형태이다. ⓐ의 takeing은 taking으로, ⓒ의 are는 is로, ⓔ의 writing은 write로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-da74440876",
+"typeId": "eng-m1-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 (A)~(E)에 들어갈 말을 어법에 맞게 연결한 것은?\n\n• How many languages (A) [do / are] students in your country use?\n• There are (B) [much / many] school events during National Language Month.\n• Every student in the digital writing contest (C) [write / writes] a story.\n• I will take pictures and (D) [post / posting] them on the school's online board.\n• The students are (E) [prepare / preparing] for the speech contest.",
+"choices": [
+"do — many — write — post — preparing",
+"are — many — writes — post — preparing",
+"do — much — writes — post — preparing",
+"do — many — writes — posting — preparing",
+"do — many — writes — post — preparing"
+],
+"answer": "⑤",
+"solution": "일반동사 use의 의문문에는 do를 쓰며, 셀 수 있는 명사의 복수형 events 앞에는 many가 알맞다. every student는 단수 취급하므로 writes를 쓴다. will에 이어지는 take와 post는 모두 동사원형이어야 하며, 현재진행형은 are preparing으로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2b90ac4f55",
+"typeId": "eng-m1-b03-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓕ 중 어법상 잘못된 부분은 네 곳이다. 잘못된 부분을 각각 한 단어로 고쳐, 기호 없이 ⓐ~ⓕ의 순서대로 쓰시오.\n\nEvery student in the orchestra ⓐhave an instrument. Tom will ⓑsinging in the chorus, and Annie will ⓒplay the guitar in the band. My parents ⓓis waiting for the concert. I am ⓔexciting about it, and the concert will ⓕbe fun.",
+"selfGrade": true,
+"answer": "has, sing, are, excited",
+"solution": "every student는 단수 취급하므로 ⓐ have를 has로 고치고, will 뒤에는 동사원형이 필요하므로 ⓑ singing을 sing으로 고친다. ⓓ는 복수 주어 My parents에 맞게 are로 고쳐야 한다. ⓔ는 사람이 느끼는 감정을 나타내므로 excited가 알맞으며, ⓒ와 ⓕ는 이미 올바른 형태이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1f19b2a103",
+"typeId": "eng-m1-b03-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장들의 괄호 안 동사를 어법에 맞는 형태로 바꾸시오. 바꿀 필요가 없으면 그대로 쓰고, ⓐ~ⓕ에 들어갈 말만 순서대로 쓰시오.\n\n• Every student in the digital writing contest ⓐ(use) a smartphone and ⓑ(take) pictures.\n• The students are ⓒ(write) stories about the school campus now.\n• I will ⓓ(post) my story and pictures on the school's online board.\n• The students are ⓔ(run) through the woods now.\n• They can ⓕ(finish) the race.",
+"selfGrade": true,
+"answer": "uses, takes, writing, post, running, finish",
+"solution": "첫 문장의 주어 Every student는 단수 취급하며, and로 연결된 두 동사 모두 현재형이므로 uses와 takes를 쓴다. 현재진행형에서는 write의 e를 빼고 writing을, run의 마지막 자음을 한 번 더 써서 running을 만든다. will과 can 뒤에는 각각 동사원형 post와 finish를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3e77230a87",
+"typeId": "eng-m1-b03-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 ⓐ~ⓖ 중 어법상 잘못된 부분은 다섯 곳이다. 문장의 의미를 유지하면서 잘못된 부분을 각각 한 단어로 고쳐, 기호 없이 ⓐ~ⓖ의 순서대로 쓰시오.\n\nHow many ⓐlanguage do students use in your country? During National Language Month, there ⓑis many events at schools. Every student ⓒreads poems in class. Students read poems and ⓓacts in their languages. They are ⓔprepareing for speech contests now. The contests will ⓕare exciting, and students can ⓖuse their languages.",
+"selfGrade": true,
+"answer": "languages, are, act, preparing, be",
+"solution": "How many 뒤에는 복수 명사가 필요하므로 ⓐ는 languages로, 복수 명사 many events에 맞추어 ⓑ는 are로 고친다. ⓓ는 복수 주어 Students에 연결된 동사이므로 act로 고치며, ⓔ는 prepare의 e를 빼고 -ing를 붙인 preparing으로 고친다. ⓕ는 will 뒤이므로 be로 고쳐야 한다. ⓒ의 reads는 단수 주어 Every student에 맞고, ⓖ의 use는 can 뒤에 쓰인 동사원형이므로 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e187d2a4e1",
+"typeId": "eng-m1-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸 (A)~(C)에 들어갈 말이 어법상 알맞게 연결된 것은?\n\nYubin's parents (A)_______ computer engineers. Her mother fell in love with her father when she (B)_______ in India. Yubin hopes (C)_______ her family traditions for a long time.",
+"choices": [
+"are — works — to keep",
+"is — worked — keeping",
+"are — worked — to keep",
+"are — worked — keep",
+"is — works — keeping"
+],
+"answer": "③",
+"solution": "주어 Yubin's parents는 복수이므로 (A)에는 are가 알맞다. 어머니가 인도에서 일했던 과거의 일이므로 (B)에는 worked를 쓴다. hope는 목적어로 to부정사를 취하므로 (C)에는 to keep이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-34a4e57f78",
+"typeId": "eng-m1-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓕ 중 어법상 어색한 문장을 모두 고른 것은?\n\nⓐ Yubin's father has his birthday in the fall.\nⓑ Her family cooks together on his birthday.\nⓒ Her father played pachisi when he is young.\nⓓ Yubin lost the game last year and did the dishes.\nⓔ She wants win the game this year.\nⓕ Her family has two traditions, and she hopes to keep it.",
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓒ, ⓓ, ⓔ",
+"ⓒ, ⓔ, ⓕ",
+"ⓐ, ⓑ, ⓕ"
+],
+"answer": "④",
+"solution": "ⓒ는 아버지가 어렸던 과거를 나타내므로 is를 was로 고쳐야 한다. ⓔ는 want 뒤에 to부정사가 와야 하므로 win을 to win으로 고친다. ⓕ에서 대명사가 가리키는 것은 복수 명사 two traditions이므로 it을 them으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-15db052492",
+"typeId": "eng-m1-b03-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>의 문장을 어법상 바르게 고친 것만을 모두 고른 것은?\n\n<보기>\nⓐ Yubin's parents is computer engineers.\n    → is를 are로 고친다.\nⓑ Her mother fall in love with her father when she worked in India.\n    → fall을 falls로 고친다.\nⓒ The family plays pachisi after dinner and love the game.\n    → love를 to love로 고친다.\nⓓ Yubin hopes keeping her family traditions.\n    → keeping을 to keep으로 고친다.\nⓔ Her father played pachisi when he were young.\n    → were를 was로 고친다.",
+"choices": [
+"ⓐ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓔ"
+],
+"answer": "①",
+"solution": "ⓐ는 복수 주어 parents에 맞게 are로, ⓓ는 hope 뒤에 오는 to부정사인 to keep으로 고치는 것이 맞다. ⓔ도 과거의 단수 주어 he에 맞게 was로 고치는 것이 맞다. ⓑ는 과거의 일이므로 fell로 고쳐야 하고, ⓒ는 plays와 병렬을 이루도록 loves로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b3d4ff979e",
+"typeId": "eng-m1-b03-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 어색한 것은 네 개이다. 해당 기호와 바르게 고친 표현을 글에 나온 순서대로 쓰시오.\n\n[조건]\n• 각 부분의 문장 구조와 뜻을 유지할 것.\n• 동사는 시제와 주어에 맞게 고칠 것.\n• 필요한 경우에만 to를 추가할 것.\n\nYubin's father has his birthday ⓐon the fall. Yubin's family ⓑcooks Indian chicken curry together on his birthday. Her father ⓒplayed pachisi when he ⓓis young. Yubin ⓔlose the game last year, but she hopes ⓕwin this year.",
+"selfGrade": true,
+"answer": "ⓐ in, ⓓ was, ⓔ lost, ⓕ to win",
+"solution": "계절 앞에는 in을 쓰므로 ⓐ를 in으로 고친다. 아버지가 어렸던 때와 지난해의 일은 모두 과거이므로 ⓓ는 was, ⓔ는 lost가 되어야 한다. hope 뒤에는 to부정사가 오므로 ⓕ는 to win이 알맞으며, ⓑ와 ⓒ는 그대로 써도 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bd906f9823",
+"typeId": "eng-m1-b03-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 한 학생이 작성한 어법 수정표이다. 수정 결과가 어법상 틀린 항목 세 개를 찾아, 해당 기호와 최종적으로 들어가야 할 표현을 순서대로 쓰시오.\n\n[조건]\n• 원문의 뜻과 문장 구조를 유지할 것.\n• 표의 '수정 후' 표현을 다시 고칠 것.\n\nⓐ Yubin's father [play → played] pachisi when he was young.\nⓑ Her mother fell in love with her father when she [worked → works] in India.\nⓒ Yubin lost the game last year and [do → did] the dishes.\nⓓ Yubin wants [win → winning] the game this year.\nⓔ She loves her family traditions and hopes to keep [it → them].\nⓕ Yubin's father and mother [are → is] computer engineers.",
+"selfGrade": true,
+"answer": "ⓑ worked, ⓓ to win, ⓕ are",
+"solution": "ⓑ는 어머니가 인도에서 일했던 과거의 상황이므로 worked를 써야 한다. ⓓ는 want의 목적어로 to부정사를 써야 하므로 to win이 알맞다. ⓕ의 주어는 아버지와 어머니 두 사람이므로 are가 맞으며, 나머지 항목의 수정 결과는 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-601cfead3b",
+"typeId": "eng-m1-b03-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓖ에서 어법상 어색한 부분을 모두 찾아, 해당 기호와 바르게 고친 표현을 순서대로 쓰시오.\n\n[조건]\n• 괄호에 표시된 부분만 고칠 것.\n• 원문의 뜻과 문장 구조를 유지할 것.\n• 동사는 알맞은 형태로 바꾸고, 필요한 경우에만 to를 추가할 것.\n\nYubin's family ⓐ[have] two traditions. Her father's birthday is ⓑ[in] the fall, and the family cooks curry together ⓒ[in] his birthday. They play pachisi after dinner. Her father played it when he ⓓ[was] young. Last year, Yubin lost the game and ⓔ[does] the dishes. She wants ⓕ[to win] this year. She loves her family traditions and ⓖ[hoping] to keep them for a long time.",
+"selfGrade": true,
+"answer": "ⓐ has, ⓒ on, ⓔ did, ⓖ hopes",
+"solution": "ⓐ는 한 가족을 단수로 나타내며 뒤에서도 the family cooks라고 했으므로 has로 고친다. ⓒ는 특정한 생일날을 나타내므로 on이 알맞고, ⓔ는 Last year와 앞의 lost에 맞추어 did로 고쳐야 한다. ⓖ는 주어 She에 연결되어 loves와 병렬을 이루는 현재형 동사이므로 hopes가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b03-u3m1s0t0",
+"custom": true
 }
 ]

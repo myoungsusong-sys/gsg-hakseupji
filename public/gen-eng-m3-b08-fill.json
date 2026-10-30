@@ -2104,5 +2104,299 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b08-u1m6s0t0",
 "custom": true
+},
+{
+"id": "fill-b6e87a7aac",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 직접의문문을 간접의문문으로 바르게 바꾼 것을 고르시오.\n\nMina: What did you eat?\n→ Mina is asking me __________.",
+"choices": [
+"what did I eat",
+"what I ate",
+"what I did eat",
+"if I ate what",
+"what ate I"
+],
+"answer": "②",
+"solution": "간접의문문은 「의문사＋주어＋동사」의 어순을 사용한다. 직접의문문의 과거형 did eat은 간접의문문에서 ate가 되므로 what I ate가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-60a9e73f7c",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nSunho met his friends after he __________ an English book.",
+"choices": [
+"has read",
+"had read",
+"reads",
+"is reading",
+"will read"
+],
+"answer": "②",
+"solution": "영어책을 읽은 일이 친구들을 만난 일보다 먼저 일어났다. 과거의 특정 사건보다 앞선 일을 나타낼 때 과거완료 「had＋과거분사」를 쓰므로 had read가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-97ed414120",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 괄호 안의 단어를 사용하여 빈칸을 완성하시오.\n\n그녀는 다섯 시간 넘게 물속에 있었지만 계속 웃었다.\nShe kept laughing although she __________ __________ in the water for over five hours. (be)",
+"selfGrade": true,
+"answer": "had been",
+"solution": "물속에 있었던 일은 계속 웃은 과거 시점보다 앞서 시작된 일이다. 따라서 과거완료 「had＋과거분사」를 사용하며, be의 과거분사는 been이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-602bcdc781",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장을 고르시오.",
+"choices": [
+"Jaden wondered where was the music coming from.",
+"Jaden wondered where did the music come from.",
+"Jaden wondered where the music was coming from.",
+"Jaden wondered where the music coming was from.",
+"Jaden wondered where was coming the music from."
+],
+"answer": "③",
+"solution": "간접의문문에서는 의문문 어순이 아니라 「의문사＋주어＋동사」의 평서문 어순을 쓴다. 따라서 where 뒤에 주어 the music과 동사 was coming이 이어진 ③이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-907cc6da1e",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 일정과 일치하도록 빈칸에 들어갈 말을 바르게 짝지은 것을 고르시오.\n\nJuly 18\n• go hiking with family\n• eat seafood kimbab and noodle\n\nJane __________ seafood kimbab and noodle after she __________ with her family.",
+"choices": [
+"had eaten — went hiking",
+"ate — had gone hiking",
+"eats — has gone hiking",
+"had eaten — had gone hiking",
+"was eating — goes hiking"
+],
+"answer": "②",
+"solution": "등산이 먼저 일어나고 음식을 먹은 일이 나중에 일어났다. 나중 사건은 단순과거 ate, 그보다 앞선 사건은 과거완료 had gone hiking으로 나타내므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-97fb3c69de",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 Mina의 질문을 전달하는 한 문장으로 바꾸시오. 주어진 부분에 이어지는 말만 쓰시오.\n\nMina asked me, “When did Jane check in at the hotel?”\n→ Mina asked me ________________________________.",
+"selfGrade": true,
+"answer": "when Jane had checked in at the hotel",
+"solution": "의문사가 있는 간접의문문은 「의문사＋주어＋동사」의 어순으로 쓴다. 질문을 전달하는 기준 시점이 과거이고 호텔에 체크인한 일은 그보다 앞선 일이므로 had checked를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c0a043d478",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 사건의 순서와 일치하도록 주어진 단어를 모두 사용하여 한 문장을 완성하시오. 필요하면 단어의 형태를 바꾸고, 주어진 부분에 이어지는 말만 쓰시오.\n\n① Somebody broke into the office during the night.\n② I arrived at work in the morning.\n③ I called the police.\n\n(arrive / find / somebody / break / into / office / already)\n→ When I ________________________________.",
+"selfGrade": true,
+"answer": "arrived at work, I found that somebody had already broken into the office",
+"solution": "아침에 도착하여 알게 된 시점보다 사무실 침입이 먼저 일어났다. 따라서 도착하고 발견한 일은 단순과거 arrived와 found로, 더 앞선 침입은 과거완료 had broken으로 표현한다. already는 had와 broken 사이에 둔다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5ff1cdf81e",
+"typeId": "eng-m3-b08-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 대화의 내용과 일치하도록 두 문장을 한 문장으로 바꾸시오. 괄호 안의 표현을 반드시 사용하고, 주어진 부분에 이어지는 말만 쓰시오.\n\nNongak cheers up farmers. It also expresses people’s wish for a good harvest.\n(to / and)\n→ People play nongak ________________________________.",
+"selfGrade": true,
+"answer": "to cheer up farmers and wish for a good harvest",
+"solution": "목적을 나타낼 때 「to＋동사원형」을 사용한다. 두 목적은 and로 병렬 연결해야 하므로 cheer와 wish를 같은 형태로 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d59653e086",
+"typeId": "eng-m3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nCarter and Olivia became interested (A)[in helping / to help] other endangered animals. Their parents wanted (B)[they / them] to continue the work. The organization also educated their friends about the animals so that more people could protect (C)[it / them].",
+"choices": [
+"to help - they - it",
+"in helping - they - them",
+"in helping - them - them",
+"to help - them - them",
+"in helping - them - it"
+],
+"answer": "③",
+"solution": "become interested in 다음에는 동명사 helping이 온다. want는 ‘want＋목적어＋to부정사’의 형태이므로 them이 알맞고, endangered animals를 가리키는 복수 대명사는 them이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f7583d0fda",
+"typeId": "eng-m3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Although Carter and Olivia were teenagers, but they made a difference.",
+"What the family collected them was delivered to the Gulf of Mexico.",
+"The specialist told to the teenagers that plastic waste was dangerous.",
+"The family drove to the Gulf of Mexico to deliver what they had collected.",
+"Mayonnaise could used to get oil out of turtles."
+],
+"answer": "④",
+"solution": "④의 what은 선행사를 포함한 관계대명사로 ‘그들이 모은 것’을 뜻한다. ①은 but을 삭제해야 하고, ②는 them을 삭제해야 한다. ③은 told the teenagers로, ⑤는 could be used로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-78cb849244",
+"typeId": "eng-m3-b08-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 부분이 세 군데 있다. 잘못된 말을 모두 찾아 바르게 고쳐 쓰시오.\n\nAlthough Carter and Olivia were still young, but they created a non-profit organization with their parents’ help. Their parents wanted them understand why endangered animals needed protection. The two teenagers also taught their friends what they could do it for the animals.",
+"selfGrade": true,
+"answer": "but 삭제 / understand → to understand / it 삭제",
+"solution": "although가 양보의 접속사 역할을 하므로 but과 함께 쓸 수 없다. want는 ‘want＋목적어＋to부정사’의 구조를 취하므로 understand를 to understand로 고쳐야 한다. what이 do의 목적어를 포함하므로 뒤의 it은 삭제한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-aefcf9982b",
+"typeId": "eng-m3-b08-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 직접화법의 문장을 조건에 맞게 간접화법으로 바꾸어 쓰시오.\n\nThe marine life specialist said to us, “Plastic waste is more dangerous to sea animals than oil spills are.”\n\n<조건>\n- said to를 told로 바꿀 것\n- 시제는 바꾸지 말 것\n- 접속사 that을 사용할 것\n- than 뒤의 비교 대상을 생략하지 말 것",
+"selfGrade": true,
+"answer": "The marine life specialist told us that plastic waste is more dangerous to sea animals than oil spills are.",
+"solution": "tell은 ‘tell＋사람＋that절’의 구조로 쓰이므로 told us that으로 연결한다. 조건에 따라 is와 are의 시제를 그대로 유지하고, 비교 대상인 oil spills are도 생략하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4b31169b4e",
+"typeId": "eng-m3-b08-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 부분이 네 군데 있다. 잘못된 부분을 모두 찾아 바르게 고쳐 쓰시오.\n\nWhen the family reached the Gulf of Mexico, many sea animals were covering with oil. They delivered the cages and gloves that was collected in their neighborhood. While they worked, they learned how could they get oil out of turtles. They found that mayonnaise could be used to make a turtle throw up. Although the work was difficult, but they continued helping the animals.",
+"selfGrade": true,
+"answer": "covering → covered / was → were / how could they → how they could / but 삭제",
+"solution": "동물들이 기름에 덮인 것이므로 수동태 were covered를 써야 하며, that의 선행사가 복수인 the cages and gloves이므로 were가 알맞다. 간접의문문은 ‘의문사＋주어＋동사’의 어순이므로 how they could로 고친다. Although가 이끄는 절과 but은 함께 쓸 수 없으므로 but을 삭제한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-76857100dc",
+"typeId": "eng-m3-b08-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 두 단어의 품사 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"punish → punishment",
+"educate → education",
+"wise → wisdom",
+"decide → decision",
+"speak → speech"
+],
+"answer": "③",
+"solution": "wise는 ‘현명한’이라는 형용사이고 wisdom은 ‘지혜’라는 명사이다. 나머지 네 쌍은 모두 동사와 그에 대응하는 명사의 관계이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5ab438f086",
+"typeId": "eng-m3-b08-u6m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 비르발의 지혜에 관한 글을 요약한 것이다. 괄호 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nBirbal brought two pots with (A)[narrow / broad] necks. He asked the Persian official to return the pot because it was (B)[precious / useless]. When the official saw what was inside, he became (C)[speechless / careless].",
+"choices": [
+"(A) narrow — (B) useless — (C) speechless",
+"(A) broad — (B) precious — (C) careless",
+"(A) narrow — (B) precious — (C) careless",
+"(A) narrow — (B) precious — (C) speechless",
+"(A) broad — (B) useless — (C) speechless"
+],
+"answer": "④",
+"solution": "비르발이 가져온 항아리의 목은 좁았으므로 narrow가 알맞다. 항아리를 돌려 달라고 한 이유는 그것이 귀중했기 때문이므로 precious가 들어간다. 관리는 항아리 안을 보고 말문이 막혔으므로 speechless가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0868a901ae",
+"typeId": "eng-m3-b08-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 조건을 모두 만족하는 단어 쌍만을 <보기>에서 고른 것은?\n\n• 두 단어의 품사가 같다.\n• 두 단어의 뜻이 서로 반대이다.\n\n<보기>\nⓐ wisdom — foolish\nⓑ narrow — broad\nⓒ precious — valuable\nⓓ hopeful — hopeless\nⓔ speak — speech\nⓕ careful — careless",
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓓ, ⓕ",
+"ⓑ, ⓒ, ⓕ",
+"ⓐ, ⓓ, ⓔ",
+"ⓒ, ⓔ, ⓕ"
+],
+"answer": "②",
+"solution": "narrow와 broad, hopeful과 hopeless, careful과 careless는 각각 형용사끼리의 반의어 관계이다. wisdom과 foolish는 품사가 다르고, precious와 valuable은 유의어 관계이다. speak와 speech는 동사와 명사의 관계이므로 두 조건을 만족하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d563c5f4a1",
+"typeId": "eng-m3-b08-u6m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ를 바꾸어 쓸 때, 문맥상 의미가 달라지는 것은?\n\nAkbar wanted to test the wisdom of his officials, so he ⓐthought up a strange question about someone pulling his hair. Birbal said that Akbar should give that person ⓑcandies. He explained, “It ⓒmust have been your grandson.” Akbar told Birbal that his answer was ⓓright and that he was ⓔhappy to have such a wise man nearby.",
+"choices": [
+"ⓐ thought up → came up with",
+"ⓑ candies → sweets",
+"ⓒ must → might",
+"ⓓ right → correct",
+"ⓔ happy → glad"
+],
+"answer": "③",
+"solution": "must have been은 과거의 일에 대한 강한 확신을 나타내지만, might have been은 그랬을지도 모른다는 가능성을 나타낸다. 따라서 must를 might로 바꾸면 비르발의 확신 정도가 달라진다. 나머지는 각각 해당 문맥에서 같은 의미로 바꾸어 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m0s0t0",
+"custom": true
+},
+{
+"id": "fill-48f0febc3b",
+"typeId": "eng-m3-b08-u6m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 비르발 이야기의 내용이다. 괄호 안의 단어를 변형하여 빈칸을 완성하시오.\n\n<조건>\n• 각 빈칸에는 한 단어만 쓸 것.\n• 첫 글자가 제시된 경우 그 글자로 시작할 것.\n• 완성한 낱말을 (A), (B), (C)의 순서대로 쓸 것.\n\nBirbal was wise, and Akbar wanted to test his (A)________. (wise)\nThe Persian official could not say anything after looking inside the pot; he was (B)________. (speech)\nBirbal told the official to be careful with the precious pot, not to handle it (C)c________. (careful)",
+"selfGrade": true,
+"answer": "wisdom, speechless, carelessly",
+"solution": "(A)는 소유격 his 뒤에서 ‘지혜’를 뜻해야 하므로 wise의 명사형 wisdom이 들어간다. (B)는 ‘말을 할 수 없는’ 상태를 나타내므로 speech에 -less를 붙인 speechless가 알맞다. (C)는 handle을 수식하면서 주의 깊게 다루라는 내용과 반대되는 행동을 나타내야 하므로 ‘부주의하게’라는 부사 carelessly가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b08-u6m0s0t0",
+"custom": true
 }
 ]

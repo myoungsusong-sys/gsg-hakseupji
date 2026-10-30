@@ -522,5 +522,229 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b07-u2m7s0t0",
 "custom": true
+},
+{
+"id": "fill-8d3c4cf8b5",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A)~(C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nWhen the ship began to go down, Shackleton told his men, “(A)[Leave / To leave] the ship!” They later had (B)[make / to make] a camp on the ice. Shackleton’s new goal was (C)[bring / to bring] all his men home safely.",
+"choices": [
+"① Leave ― make ― bring",
+"② Leave ― to make ― to bring",
+"③ To leave ― to make ― bring",
+"④ To leave ― make ― to bring",
+"⑤ Leave ― making ― to bring"
+],
+"answer": "②",
+"solution": "명령문은 동사원형으로 시작하므로 (A)는 Leave가 알맞다. had to 뒤에는 동사원형 make가 오며, 주격 보어로 목표의 내용을 나타낼 때는 to부정사 to bring을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c1e216d547",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ 중 어법상 옳은 문장의 개수는?\n\nⓐ Shackleton’s team was crossing the sea when the ship hit thick ice.\nⓑ The ship has sank beneath the water.\nⓒ Shackleton had his men get on the lifeboats.\nⓓ There was little food to eat on Elephant Island.\nⓔ After help arrived, every man was saving.",
+"choices": [
+"① 1개",
+"② 2개",
+"③ 3개",
+"④ 4개",
+"⑤ 5개"
+],
+"answer": "③",
+"solution": "ⓐ는 과거진행형, ⓒ는 「have+목적어+동사원형」, ⓓ는 「little+불가산명사」와 to부정사의 쓰임이 올바르다. ⓑ의 sank는 과거분사 sunk로, ⓔ의 saving은 수동태 was saved로 고쳐야 하므로 옳은 문장은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3bd42881f9",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A)~(D)에 주어진 동사를 어법에 맞게 바꾸어 순서대로 쓰시오.\n\nNear Antarctica, Shackleton’s team (A)(cross) the sea when their ship hit thick ice. After the ice broke the ship into pieces, Shackleton ordered his men (B)(leave) it. He eventually made them (C)(return) home safely, and every member of the team (D)(save).",
+"selfGrade": true,
+"answer": "was crossing / to leave / return / was saved",
+"solution": "진행 중이던 과거 동작에는 was crossing을 쓰고, 「order+목적어+to부정사」에 따라 to leave를 쓴다. 사역동사 make의 목적격 보어에는 동사원형 return이 오며, 대원들이 구조된 것이므로 수동태 was saved가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ea06c7550b",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 부분이 세 군데 있다. 세 부분을 모두 고쳐 글 전체를 다시 쓰시오.\n\nAfter reaching Elephant Island, the men found that there were little food to eat. Shackleton had five of his man go with him to get help. After they got help, they went back, and everyone was saving.",
+"selfGrade": true,
+"answer": "After reaching Elephant Island, the men found that there was little food to eat. Shackleton had five of his men go with him to get help. After they got help, they went back, and everyone was saved.",
+"solution": "food는 셀 수 없는 명사이므로 there was를 쓰고, five of his 뒤에는 복수형 men이 와야 한다. everyone은 구조된 대상이므로 진행형 was saving이 아니라 수동태 was saved가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a4fa7d142b",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 주어진 조건에 맞게 영작하시오.\n\n나는 대원들을 구명보트에 타게 했다. 그 섬에는 먹을 음식이 거의 없었다.\n\n조건: 첫 문장에는 have의 과거형을 사용할 것. 두 번째 문장에는 little과 eat을 사용할 것.",
+"selfGrade": true,
+"answer": "I had my men get on the lifeboats. There was little food to eat on the island.",
+"solution": "‘대원들을 타게 했다’는 「had+목적어+동사원형」으로 표현하므로 had my men get을 쓴다. food는 셀 수 없는 명사이므로 little과 단수 동사 was를 사용하고, ‘먹을’은 to eat으로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-92e5ec2858",
+"typeId": "eng-m2-b07-u1m6s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\n\nJames: I hurt my leg while playing basketball.\nMs. Johnson: It doesn't look good. __________",
+"choices": [
+"I think you should see a doctor.",
+"Why don't I play basketball?",
+"You should move your leg a lot.",
+"I think you should keep a spending diary.",
+"Let's put a banana next to it."
+],
+"answer": "①",
+"solution": "다리를 다친 James에게 필요한 것은 병원에 가 보라는 조언이다. ‘I think you should＋동사원형’은 상대방에게 조언할 때 쓰는 표현이므로 ①이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5fb4b6ce97",
+"typeId": "eng-m2-b07-u1m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 표현을 <보기>에서 골라 문맥에 맞는 형태로 쓰시오.\n\n<보기> turn around / turn into / turn off\n\n(1) Be sure to __________ the computer before you leave.\n(2) She __________ when she heard a noise behind her.\n(3) The snow slowly __________ water in the warm room.",
+"selfGrade": true,
+"answer": "(1) turn off (2) turned around (3) turned into",
+"solution": "기기를 끄는 것은 turn off, 뒤를 돌아보는 것은 turn around, 다른 상태로 변하는 것은 turn into로 나타낸다. (1)은 to 뒤이므로 원형을 쓰고, (2)와 (3)은 과거 상황이므로 turned를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-576c141921",
+"typeId": "eng-m2-b07-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장을 한 문장으로 바르게 연결한 것을 고르시오.\n\nLarry is under the locker. The locker is at the back of the classroom.",
+"choices": [
+"Larry is under the locker who is at the back of the classroom.",
+"Larry is under the locker which is at the back of the classroom.",
+"Larry is under the locker which it is at the back of the classroom.",
+"Larry is under the locker where is at the back of the classroom.",
+"Larry is under the locker which are at the back of the classroom."
+],
+"answer": "②",
+"solution": "선행사 the locker는 사물이므로 주격 관계대명사 which를 쓴다. which가 종속절의 주어이므로 it을 다시 쓸 수 없고, 단수 선행사에 맞게 동사는 is가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f6765edca4",
+"typeId": "eng-m2-b07-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 관계대명사를 이용하여 한 문장으로 합치시오. that은 사용하지 않고, the locker를 한 번만 쓰며, 총 17단어로 쓸 것.\n\nOliver and his friends find Larry under the locker.\nThe locker is at the back of the classroom.",
+"selfGrade": true,
+"answer": "Oliver and his friends find Larry under the locker which is at the back of the classroom.",
+"solution": "두 번째 문장의 The locker는 첫 번째 문장의 the locker와 같으므로 관계대명사절로 바꾼다. 사물을 나타내는 선행사 뒤에 주격 관계대명사 which를 쓰면 조건에 맞는 17단어 문장이 완성된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b28ec2dedc",
+"typeId": "eng-m2-b07-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "Larry를 찾은 과정을 묻는 다음 질문에 한 문장으로 답하시오. They로 시작하고, and와 대명사 it을 각각 한 번 사용하여 총 14단어로 쓸 것.\n\nQ. How do Oliver and his friends use the banana, and what does Mike do afterward?",
+"selfGrade": true,
+"answer": "They put the banana next to the cage, and Mike leads Larry into it.",
+"solution": "Oliver와 친구들은 바나나를 우리 옆에 두고, 그 후 Mike가 Larry를 우리 안으로 이끈다. 반복되는 the cage는 두 번째 절에서 대명사 it으로 바꾸며, 이렇게 쓰면 총 14단어가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-469f575fee",
+"typeId": "eng-m2-b07-u0m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "두 문장의 의미가 같도록 빈칸을 완성하시오. 빈칸마다 한 단어씩 쓰되, make를 알맞은 형태로 사용할 것.\n\nBora is happy when she listens to music.\n→ Listening to music __________ __________ __________.",
+"selfGrade": true,
+"answer": "makes her happy",
+"solution": "‘make + 목적어 + 형용사’는 ‘~을 …하게 만들다’라는 뜻이다. 주어 Listening to music은 단수로 취급하므로 makes를 쓰고, Bora는 목적격 대명사 her로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-acd309c48f",
+"typeId": "eng-m2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• Hazel uses a toothbrush to __________ her teeth.\n• She does not forget to __________ them.",
+"choices": [
+"share",
+"carry",
+"brush",
+"taste",
+"wear"
+],
+"answer": "③",
+"solution": "brush one's teeth는 ‘이를 닦다’라는 뜻이다. 둘째 문장의 them도 teeth를 가리키므로 두 빈칸 모두 brush가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-3fa0d76bfe",
+"typeId": "eng-m2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 우리말을 영어로 옮긴 문장으로 어법과 의미가 모두 알맞은 것은?\n\n음악은 Bora를 행복하게 만들고, Seho는 자신의 축구화를 깨끗하게 유지한다.",
+"choices": [
+"Music makes Bora happily, and Seho keeps his soccer shoes clean.",
+"Music makes Bora happy, and Seho keeps his soccer shoes clean.",
+"Music makes Bora happy, and Seho keeps his soccer shoes cleanly.",
+"Music make Bora happy, and Seho keeps his soccer shoes clean.",
+"Music makes Bora happiness, and Seho keeps his soccer shoes clean."
+],
+"answer": "②",
+"solution": "make와 keep 뒤에서 목적어의 상태를 설명할 때는 형용사 happy와 clean을 쓴다. happily와 cleanly는 부사이고 happiness는 명사이므로 해당 자리에 알맞지 않다. Music은 단수 취급하는 주어이므로 동사는 makes가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b5384c64ba",
+"typeId": "eng-m2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ에 대한 우리말 풀이 중 문맥상 적절하지 않은 것은?\n\nBora enjoys music. She and Lucy ⓐshare playlists and discuss their favorite singers. Before a test, Bora listens to raindrops when she ⓑneeds to relax. Hazel enjoys ⓒtrying out the newest snacks. She brings more snacks because her friends ⓓare interested in them, too. Before P.E. class, she shares chocolate bars with Kate ⓔfor some energy.",
+"choices": [
+"ⓐ: 재생 목록을 공유하다",
+"ⓑ: 긴장을 풀 필요가 있다",
+"ⓒ: 가장 새로운 간식들을 먹어 보다",
+"ⓓ: 그것들에게 흥미를 주다",
+"ⓔ: 기운을 좀 얻기 위해"
+],
+"answer": "④",
+"solution": "be interested in은 ‘~에 관심이 있다’라는 뜻이다. 따라서 ⓓ는 친구들이 그 간식들에 관심이 있다는 의미이지, 간식들에게 흥미를 준다는 의미가 아니다. 나머지 표현은 모두 문맥에 맞게 풀이되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u0m7s0t0",
+"custom": true
 }
 ]

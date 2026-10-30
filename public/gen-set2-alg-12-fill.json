@@ -439,5 +439,140 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-alg-12-u0m0s0t1",
 "custom": true
+},
+{
+"id": "fill-39224db899",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\displaystyle\\sum_{k=1}^{8}k(k+1)$의 값은?",
+"choices": [
+"$204$",
+"$220$",
+"$232$",
+"$240$",
+"$276$"
+],
+"answer": "④",
+"solution": "$k(k+1)=k^2+k$이므로 주어진 합은 $\\displaystyle\\sum_{k=1}^{8}k^2+\\sum_{k=1}^{8}k$이다. 따라서 그 값은 $\\displaystyle\\frac{8\\cdot9\\cdot17}{6}+\\frac{8\\cdot9}{2}=204+36=240$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-21596d4651",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\displaystyle\\sum_{k=1}^{8}\\frac{1}{\\sqrt{k}+\\sqrt{k+2}}$의 값은?",
+"choices": [
+"$\\displaystyle\\frac{\\sqrt{10}-\\sqrt2}{2}$",
+"$\\displaystyle\\frac{2+\\sqrt{10}-\\sqrt2}{2}$",
+"$\\displaystyle\\frac{4+\\sqrt{10}-\\sqrt2}{2}$",
+"$\\displaystyle 2+\\sqrt{10}-\\sqrt2$",
+"$\\displaystyle\\frac{2+\\sqrt{10}+\\sqrt2}{2}$"
+],
+"answer": "②",
+"solution": "각 항을 유리화하면 $\\displaystyle\\frac{1}{\\sqrt{k}+\\sqrt{k+2}}=\\frac{\\sqrt{k+2}-\\sqrt{k}}{2}$이다. 이를 모두 더하면 중간 항들이 소거되므로 주어진 합은 $\\displaystyle\\frac{\\sqrt9+\\sqrt{10}-\\sqrt1-\\sqrt2}{2}=\\frac{2+\\sqrt{10}-\\sqrt2}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-147a0daa7b",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "자연수를 작은 수부터 차례로 나열한 후, 제$n$군에 $n$개의 항이 들어가도록 다음과 같이 묶었다.\n\n$\\underbrace{1}_{\\text{제1군}},\\quad\\underbrace{2,3}_{\\text{제2군}},\\quad\\underbrace{4,5,6}_{\\text{제3군}},\\quad\\cdots$\n\n제$10$군에 속한 모든 항의 합은?",
+"choices": [
+"$455$",
+"$495$",
+"$500$",
+"$550$",
+"$505$"
+],
+"answer": "⑤",
+"solution": "제$9$군까지의 항수는 $\\displaystyle\\frac{9\\cdot10}{2}=45$이고, 제$10$군까지의 항수는 $\\displaystyle\\frac{10\\cdot11}{2}=55$이다. 따라서 제$10$군은 $46$부터 $55$까지의 자연수로 이루어지므로 그 합은 $\\displaystyle\\frac{10(46+55)}{2}=505$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-5ad1bf53f8",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 4,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}\\frac{1}{k(k+2)}=\\frac{69}{112}$일 때, $n$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$6$",
+"solution": "$\\displaystyle\\frac{1}{k(k+2)}=\\frac12\\left(\\frac1k-\\frac1{k+2}\\right)$이므로 주어진 합은 $\\displaystyle\\frac34-\\frac12\\left(\\frac1{n+1}+\\frac1{n+2}\\right)$이다. 따라서 $\\displaystyle\\frac1{n+1}+\\frac1{n+2}=\\frac{15}{56}$이고, 정리하면 $15n^2-67n-138=(n-6)(15n+23)=0$이다. $n$은 자연수이므로 $n=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-2602060081",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 4,
+"body": "$2$ 이상의 자연수 $n$이 $\\displaystyle\\sum_{k=1}^{n}(k^3-6k^2+5k)=0$을 만족시킬 때, $n$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$6$",
+"solution": "자연수, 제곱, 세제곱의 합 공식을 적용하면 좌변은 $\\displaystyle\\left\\{\\frac{n(n+1)}2\\right\\}^2-n(n+1)(2n+1)+\\frac{5n(n+1)}2$이다. 이를 인수분해하면 $\\displaystyle\\frac{n(n+1)(n-1)(n-6)}4=0$이다. $n\\ge2$이므로 $n=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-ee0cc6b501",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\displaystyle\\sum_{k=1}^{15}\\frac{k}{\\sqrt{k+1}+\\sqrt{k}}+\\sum_{k=1}^{15}\\sqrt{k}$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$60$",
+"solution": "유리화하면 $\\displaystyle\\frac{k}{\\sqrt{k+1}+\\sqrt{k}}=k(\\sqrt{k+1}-\\sqrt{k})$이다. 첫 번째 합에서 같은 근호를 가진 항끼리 모으면 $\\displaystyle\\sum_{k=1}^{15}k(\\sqrt{k+1}-\\sqrt{k})=15\\sqrt{16}-\\sum_{k=1}^{15}\\sqrt{k}$이다. 따라서 주어진 식의 값은 $15\\sqrt{16}=60$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-064cfad73b",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}\\frac{k}{(k+1)(k+2)(k+3)}=\\frac{15}{88}$일 때, $n$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$9$",
+"solution": "각 항은 $\\displaystyle\\frac{k}{(k+1)(k+2)(k+3)}=\\frac1{(k+2)(k+3)}-\\frac1{(k+1)(k+2)(k+3)}$으로 나타낼 수 있다. 여기서 $\\displaystyle\\frac1{(k+2)(k+3)}=\\frac1{k+2}-\\frac1{k+3}$이고, $\\displaystyle\\frac1{(k+1)(k+2)(k+3)}=\\frac12\\left\\{\\frac1{(k+1)(k+2)}-\\frac1{(k+2)(k+3)}\\right\\}$이다. 연쇄소거를 이용하면 주어진 합은 $\\displaystyle\\frac14-\\frac1{n+3}+\\frac1{2(n+2)(n+3)}=\\frac{n(n+1)}{4(n+2)(n+3)}$이다. 따라서 $7n^2-53n-90=(n-9)(7n+10)=0$이므로 자연수 $n$의 값은 $9$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-b9ac5f9974",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "양의 홀수를 작은 수부터 차례로 나열한 후, 제$k$군에 $k$개의 항이 들어가도록 다음과 같이 묶었다.\n\n$\\underbrace{1}_{\\text{제1군}},\\quad\\underbrace{3,5}_{\\text{제2군}},\\quad\\underbrace{7,9,11}_{\\text{제3군}},\\quad\\cdots$\n\n제$k$군에 속한 모든 항의 합을 $A_k$라 하자. 자연수 $n$에 대하여 $\\displaystyle\\sum_{k=1}^{n}\\left(\\frac{A_k}{k}-k\\right)=1120$일 때, 제$(n+1)$군의 첫 번째 항을 구하시오.",
+"selfGrade": true,
+"answer": "$241$",
+"solution": "제$k$군의 첫 번째 항과 마지막 항은 각각 $k(k-1)+1$, $k(k+1)-1$이므로 $A_k=k^3$이다. 따라서 주어진 합은 $\\displaystyle\\sum_{k=1}^{n}(k^2-k)=\\frac{n(n+1)(n-1)}3$이다. 이 값이 $1120$이므로 $n^3-n-3360=(n-15)(n^2+15n+224)=0$이고, 자연수 $n$은 $15$이다. 따라서 제$16$군의 첫 번째 항은 $16\\cdot15+1=241$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
+},
+{
+"id": "fill-fa48c85fb9",
+"typeId": "set2-alg-12-u0m0s1t1",
+"kind": "주관식",
+"diff": 5,
+"body": "자연수 $n$과 실수 $a$가 다음 두 조건을 만족시킨다.\n\n$\\displaystyle\\sum_{k=1}^{n}(k-a)=0,\\qquad\\sum_{k=1}^{n}(k-a)^2=60$\n\n이때 $\\displaystyle\\sum_{k=1}^{n}(k+a)^3$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$10800$",
+"solution": "첫 번째 조건에서 $\\displaystyle\\frac{n(n+1)}2-na=0$이므로 $\\displaystyle a=\\frac{n+1}2$이다. 이를 두 번째 조건에 대입하여 제곱의 합 공식을 적용하면 $\\displaystyle\\frac{n(n+1)(n-1)}{12}=60$을 얻는다. 따라서 $n^3-n-720=(n-9)(n^2+9n+80)=0$이므로 $n=9$, $a=5$이다. 구하는 값은 $\\displaystyle\\sum_{j=6}^{14}j^3=\\left(\\frac{14\\cdot15}2\\right)^2-\\left(\\frac{5\\cdot6}2\\right)^2=10800$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-alg-12-u0m0s1t1",
+"custom": true
 }
 ]

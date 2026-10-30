@@ -1365,5 +1365,138 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u0m3s1t1",
 "custom": true
+},
+{
+"id": "fill-328e2777b6",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 가장 강조하는 실천 사항은?\n\nAn unfamiliar English idiom may seem like a group of words that makes little sense. Instead of simply repeating its meaning, find out where the expression came from. The story behind it can make learning more enjoyable. It can also make the meaning easier to remember and help you judge when to use the expression. When an idiom puzzles you, spend some time exploring its background.",
+"choices": [
+"Learn the history behind unfamiliar idioms.",
+"Use as many idioms as possible in every conversation.",
+"Memorize each word separately before studying an idiom.",
+"Choose expressions mainly because they sound interesting.",
+"Avoid idioms whose meanings are difficult to guess."
+],
+"answer": "①",
+"solution": "필자는 낯선 관용어의 유래를 알아보면 학습이 즐거워지고 의미를 기억하거나 사용 상황을 판단하는 데 도움이 된다고 설명한다. 따라서 생소한 관용어의 배경을 공부하라는 ①이 핵심 주장이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-8553402f82",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 조언을 가장 잘 나타낸 것은?\n\nAfter a busy school day, watching videos on your phone may feel relaxing. However, spending too much time with a screen can leave you mentally tired. Put your devices away for a while and give your attention to the people around you. You can also use that time to think about yourself. A regular break from technology can help you focus on what matters in your life.",
+"choices": [
+"Use your phone whenever you feel mentally tired.",
+"Spend your free time learning about new digital devices.",
+"Choose online conversations over time with your family.",
+"Make time away from screens to focus on yourself and others.",
+"Finish watching all your favorite videos before taking a break."
+],
+"answer": "④",
+"solution": "필자는 과도한 화면 사용이 정신적 피로를 일으킬 수 있으므로 기기를 내려놓는 시간을 가지라고 조언한다. 그 시간을 자신과 주변 사람들에게 집중하는 데 활용하라는 ④가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-2e4e582418",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 독자에게 권하는 행동은?\n\nBefore buying another piece of clothing, ask yourself whether you really need it. Buying clothes without thinking can create more waste. Also, clothes that you no longer want may still be useful to someone else. If they can still be worn, pass them on to another person or take them to a secondhand shop. Your choices when buying and getting rid of clothes can help reduce waste.",
+"choices": [
+"Replace old clothes whenever a new style appears.",
+"Purchase necessary clothes and pass usable ones on to others.",
+"Keep every item of clothing even if nobody can wear it.",
+"Buy more clothes to support clothing stores.",
+"Throw away unwanted clothes before buying new ones."
+],
+"answer": "②",
+"solution": "필자는 옷을 사기 전에 필요성을 확인하고, 입을 수 있는 옷은 다른 사람이나 중고품 가게에 전달하라고 권한다. 구매와 처분 단계에서 쓰레기를 줄이는 두 행동을 모두 담은 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-380335b37b",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 논지를 바탕으로 할 때, 필자의 주장으로 가장 적절한 것은?\n\nPeople who have succeeded in a field can teach you a great deal about preparing for it. You may discover useful skills by talking with them or watching them work. Still, their experience does not provide a ready-made route for everyone. Your strengths and the skills you need to develop may be different from theirs. Use what you learn to examine the distance between your present abilities and your goal. Then choose a step that helps you close that distance. Advice becomes useful when it guides action suited to your own situation.",
+"choices": [
+"Follow a successful person's career steps in the same order.",
+"Decide on your career before asking anyone for advice.",
+"Choose a goal that requires only the skills you already possess.",
+"Collect advice until you can avoid every possible difficulty.",
+"Use others' experience to identify and address your own needs."
+],
+"answer": "⑤",
+"solution": "성공한 사람의 경험은 도움이 되지만 개인마다 강점과 보완할 능력이 다르다는 것이 글의 전제이다. 따라서 그 경험을 참고하여 자신의 목표 달성에 필요한 부분을 찾아 보완하라는 ⑤가 적절하다. ①은 다른 사람의 경로를 그대로 적용할 수 없다는 글의 내용에 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-d75327943c",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 필자가 궁극적으로 촉구하는 것은?\n\nMany people think about their digital footprints only when they post a message or upload a picture. Yet visiting websites and using mobile services can leave information behind without a deliberate decision to share it. Removing a post later does not necessarily remove every copy, either. Someone may already have collected the information, and harmful online behavior may affect how others view you. Therefore, paying attention only to what you intentionally publish is not enough. Consider the traces left by your online activities as a whole and work to limit and manage them.",
+"choices": [
+"Manage online information mainly by deleting embarrassing posts.",
+"Allow websites to decide which personal information should remain.",
+"Manage digital traces from both deliberate sharing and other online activities.",
+"Judge the safety of online activities by whether they involve public posts.",
+"Protect your reputation by sharing personal information only through apps."
+],
+"answer": "③",
+"solution": "글은 의도적으로 게시한 정보뿐 아니라 웹사이트 방문이나 모바일 서비스 이용도 디지털 흔적을 남길 수 있다고 설명한다. 따라서 의도적 공유 여부와 관계없이 온라인 활동 전반에서 생기는 흔적을 관리해야 한다는 ③이 핵심 주장이다. ①은 게시물 삭제만으로 모든 사본이 사라지지는 않는다는 설명을 충분히 반영하지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-f459a256ec",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에 담긴 필자의 조언으로 가장 적절한 것은?\n\nA career plan is more useful when it begins with a clear picture of the person making it. List what interests you, what you do well, and what you have achieved. School courses and activities can give you clues, but your own view may not reveal everything. People who know you well may notice strengths that you have overlooked. Consider their observations alongside your own ideas. Rather than waiting for a suitable career to appear by chance, build an understanding of yourself and use it as the starting point for careful career research.",
+"choices": [
+"Base career exploration on self-understanding informed by reflection and trusted feedback.",
+"Let people who know you well make the final decision about your career.",
+"Select a career according to your strongest school subject alone.",
+"Delay career research until your interests become permanent.",
+"Search for available jobs before considering your personal qualities."
+],
+"answer": "①",
+"solution": "필자는 자신의 관심사와 강점 등을 돌아보고, 신뢰하는 사람들의 의견도 참고하여 자신을 이해하라고 조언한다. 이러한 자기 이해를 신중한 진로 탐색의 출발점으로 삼으라는 ①이 적절하다. 주변 사람의 관찰을 참고하라는 말이 진로 결정 자체를 맡기라는 뜻은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
+},
+{
+"id": "fill-66ca314713",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 전체 논지를 가장 충실하게 반영한 필자의 주장은?\n\nDeveloping clothing materials that create less waste is a useful step toward sustainable fashion. Producing clothes after customers order them can also help reduce waste. However, these changes address only part of a garment's journey. If the industry continues to encourage people to buy more and quickly throw clothes away, resources will still be lost. Consumers therefore have a role alongside producers: they can buy according to need and pass wearable clothes on for further use. Nor should reuse become an excuse for unnecessary purchases. The aim is to keep materials useful for as long as possible. Progress should be judged by how production, purchasing, and reuse work together to reduce waste across the whole process.",
+"choices": [
+"Make cleaner production the main solution while leaving purchasing and disposal habits to individual preference.",
+"Encourage purchases of reusable clothes so that a larger amount of clothing can enter the reuse cycle.",
+"Place the main responsibility on consumers because their choices can replace changes in clothing production.",
+"Coordinate production improvements with careful purchasing and continued use to reduce waste throughout clothing's life cycle.",
+"Evaluate sustainable fashion chiefly by how easily a new material breaks down after disposal."
+],
+"answer": "④",
+"solution": "필자는 생산 기술의 개선을 인정하면서도 구매와 재사용까지 연결해야 의류의 전체 과정에서 낭비를 줄일 수 있다고 주장한다. 따라서 생산 개선, 필요한 만큼의 구매, 지속적인 사용을 통합한 ④가 정답이다. ①·③·⑤는 책임이나 평가 범위를 일부 단계로 좁히며, ②는 재사용을 불필요한 구매의 명분으로 삼지 말라는 내용에 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true
 }
 ]

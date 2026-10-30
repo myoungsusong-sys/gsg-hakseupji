@@ -2017,5 +2017,234 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-u1m1s2t1",
 "custom": true
+},
+{
+"id": "fill-4ccb7c1d9e",
+"typeId": "eng-m2-u0m0s5t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 Patrick의 말과 행동에 드러난 심경 변화로 가장 적절한 것은?\n\nPatrick believed that he had found a way to fill the room. Without discussing his idea with Ethan or Annie, he hurried to the market and returned with bags of feathers. However, the feathers were not enough. When Ethan asked why he had acted alone, Patrick lowered his head and apologized.",
+"choices": [
+"eager and confident → regretful and ashamed",
+"doubtful and nervous → satisfied and proud",
+"calm and hopeful → confused and angry",
+"frightened and lonely → relaxed and thankful",
+"disappointed and guilty → excited and certain"
+],
+"answer": "①",
+"solution": "Patrick은 자신의 방법이 정답이라고 확신하여 의논하지 않고 시장으로 달려간다. 그러나 실패한 뒤 고개를 숙이고 사과하므로 자신감과 의욕이 후회와 부끄러움으로 바뀌었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-585cab9d5d",
+"typeId": "eng-m2-u0m0s5t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에 나타난 ‘I’의 심경을 두 시점으로 나눈 것으로 가장 적절한 것은?\n\nThe ice finally began to melt, but it damaged the ship badly. I had to tell the crew to leave it, and before long, the ship disappeared beneath the water. My plan to reach Antarctica could no longer come true. Still, as the leader, I decided that bringing every crew member home safely would be my new goal.",
+"choices": [
+"before accepting the loss: relieved / after setting the new goal: curious",
+"before accepting the loss: disappointed / after setting the new goal: determined",
+"before accepting the loss: embarrassed / after setting the new goal: cheerful",
+"before accepting the loss: jealous / after setting the new goal: confident",
+"before accepting the loss: bored / after setting the new goal: frightened"
+],
+"answer": "②",
+"solution": "배가 가라앉아 남극에 가려던 꿈이 무너졌으므로 ‘I’는 실망했을 것이다. 하지만 대원들을 안전하게 귀환시키겠다는 새 목표를 세우므로 이후에는 결연한 태도를 보인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-efc4206ba4",
+"typeId": "eng-m2-u0m0s5t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 Nikau가 느낀 감정의 흐름으로 가장 적절한 것은?\n\nWhile Nikau was recording humpback whales under the sea, one of them suddenly pushed him upward again and again. He did not understand its behavior. After reaching the boat safely, he heard that a tiger shark had been approaching him. Only then did he understand the whale’s intention.",
+"choices": [
+"pleased → irritated → disappointed",
+"curious → frightened → doubtful",
+"startled → puzzled → grateful",
+"relaxed → ashamed → proud",
+"excited → relieved → jealous"
+],
+"answer": "③",
+"solution": "고래가 갑자기 자신을 밀자 Nikau는 놀라고 그 행동을 이해하지 못해 의아해한다. 이후 고래가 상어로부터 자신을 구하려 했음을 깨달으므로 마지막에는 고마움을 느낀다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-076ce474e1",
+"typeId": "eng-m2-u0m0s5t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 Gloria의 심경 변화를 <보기>의 단어를 각각 한 번씩 사용하여 완성하시오.\n\nGloria could not smile after Robbie was sent back to the factory. Neither a new pet nor a visit to New York made her feel better. At the factory, however, she finally spotted Robbie and rushed toward him with joy. A large machine nearly struck her, but Robbie pulled her out of danger. She then held him tightly.\n\n<보기> relieved / heartbroken / overjoyed\n\nRobbie와 헤어진 뒤 → Robbie를 발견했을 때 → Robbie에게 구조된 뒤",
+"selfGrade": true,
+"answer": "heartbroken → overjoyed → relieved",
+"solution": "Robbie와 헤어진 뒤에는 어떤 것도 Gloria를 웃게 하지 못했으므로 heartbroken이 적절하다. Robbie를 발견했을 때에는 기뻐하며 달려갔으므로 overjoyed이고, 위험에서 구조된 뒤에는 안도했으므로 relieved이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-e4a11c4189",
+"typeId": "eng-m2-u0m0s5t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고 Bobby의 심경 변화를 나타내는 두 단어를 <보기>에서 골라 순서대로 쓰시오.\n\nAfter Bob returned from the hospital, he could neither speak nor move as before. Bobby brought their blocks into Bob’s room and invited him to build a tower. Bob first showed a slight smile and later made a small sound. From these little responses, Bobby came to believe that Bob would gradually get better.\n\n<보기> ashamed / concerned / hopeless / hopeful / annoyed",
+"selfGrade": true,
+"answer": "concerned → hopeful",
+"solution": "처음의 Bobby는 말하거나 움직이지 못하는 Bob의 상태를 염려하므로 concerned가 알맞다. 이후 Bob의 미소와 작은 소리를 회복의 신호로 받아들이므로 hopeful로 변화한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-784b0bd8f6",
+"typeId": "eng-m2-u0m0s5t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 Oliver의 심경 및 태도 변화를 가장 잘 나타내는 말을 <보기>에서 골라 완성하시오.\n\nOn his way home, Oliver suddenly remembered Larry, the class iguana under his care. He ran back and found the cage open and empty. His breathing became fast as he imagined explaining the situation to his classmates. Then he reminded himself that his friends could help and contacted them immediately.\n\n<보기> anxious / indifferent / determined / disappointed / relieved\n\nLarry가 사라진 것을 확인한 직후 → 친구들에게 도움을 요청하기로 한 뒤",
+"selfGrade": true,
+"answer": "anxious → determined",
+"solution": "빠르게 숨을 쉬며 친구들에게 무엇이라고 말할지 걱정하므로 처음 심경은 anxious이다. Larry를 아직 찾지 못했으므로 relieved는 적절하지 않으며, 곧바로 친구들에게 연락해 문제를 해결하려 하므로 determined가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s5t0",
+"custom": true
+},
+{
+"id": "fill-50b9a13df3",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은?",
+"choices": [
+"① Please <u>check</u> your answers before you give your paper to the teacher.",
+"② We walked around the island to <u>search</u> for the missing bag.",
+"③ Ice cream will <u>freeze</u> if you leave it in the hot sun for a long time.",
+"④ I couldn't read the words on the board <u>clearly</u> without my glasses.",
+"⑤ Playing soccer together can <u>build</u> team spirit."
+],
+"answer": "③",
+"solution": "뜨거운 햇볕 아래 아이스크림을 오래 두면 얼지 않고 녹는다. 따라서 freeze(얼다)는 melt(녹다)로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-50b9a13df3",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은?",
+"choices": [
+"① I couldn't solve the math problem, but my friend's <u>advice</u> helped me find the answer.",
+"② My sister went back to school for her bag and <u>returned</u> home an hour later.",
+"③ The students discussed their mistakes to <u>avoid</u> making the same ones again.",
+"④ I couldn't see the board from the back, so I moved <u>closer</u> to it.",
+"⑤ She checked every answer twice to make sure it was correct. She was <u>careless</u> about her work."
+],
+"answer": "⑤",
+"solution": "모든 답이 맞는지 두 번씩 확인했다는 것은 주의 깊게 과제를 했다는 뜻이다. 따라서 careless(부주의한)는 careful(주의 깊은)로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-50b9a13df3",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은?",
+"choices": [
+"① My friends kept running at the same speed. When I slowed down, the distance between us <u>decreased</u> because I fell farther behind.",
+"② We had no idea where the treasure was, so we decided to <u>continue</u> our search.",
+"③ I couldn't remember my password, but it <u>finally</u> came back to me after several tries.",
+"④ The rain stopped and the sun began to <u>shine</u>, so we went outside to play soccer.",
+"⑤ The math problem looked difficult, but I <u>managed</u> to solve it without help."
+],
+"answer": "①",
+"solution": "친구들은 같은 속도로 달리고 자신은 속도를 늦춰 더 뒤처졌으므로, 서로의 거리는 늘어났다. 따라서 decreased(줄어들었다)는 increased(늘어났다)로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-50b9a13df3",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은?",
+"choices": [
+"① The movie showed that people could find happiness after hard times. Its message was <u>hopeful</u>.",
+"② We wished each other good health because we wanted everyone to stay <u>well</u>.",
+"③ We didn't buy the first bag we saw. We looked around to <u>compare</u> it with other bags.",
+"④ Everyone on the team wanted to play alone and refused to help anyone else. They showed strong team <u>spirit</u>.",
+"⑤ I checked my answer against the one at the back of the book. They were <u>different</u>, so I solved the problem again."
+],
+"answer": "④",
+"solution": "모두 혼자 경기하려 하고 다른 사람을 돕지 않았다는 내용은 강한 협동심을 보였다는 말과 맞지 않는다. 따라서 spirit(정신)이 쓰인 team spirit은 이 문맥에 부적절하며, 마지막 문장은 협동심이 부족했다는 내용이어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b09b02d43c",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은? 각 선지의 앞뒤 내용을 함께 고려하시오.",
+"choices": [
+"① I thought I had forgotten my password, but I entered it correctly on my first try. I had <u>actually</u> remembered it.",
+"② Soccer was the most popular hobby in our class, while only one student enjoyed searching for four-leaf clovers. Searching for four-leaf clovers was the more <u>common</u> hobby of the two.",
+"③ My first answer was wrong, but checking it helped me understand the problem. The mistake turned out to be <u>useful</u>.",
+"④ We hadn't found the treasure when it became dark. We stopped searching, although our task was still <u>unfinished</u>.",
+"⑤ My sister usually gets home before me. Today, however, she was still at school when I arrived home, so I got home <u>earlier</u> than she did."
+],
+"answer": "②",
+"solution": "축구는 학급에서 가장 인기 있는 취미인 반면, 네잎클로버 찾기를 좋아하는 학생은 한 명뿐이다. 따라서 둘 중 네잎클로버 찾기가 더 흔한 취미라고 할 수 없으므로 common(흔한)을 uncommon(흔하지 않은)으로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b09b02d43c",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은? 각 선지의 앞뒤 내용을 함께 고려하시오.",
+"choices": [
+"① I checked the answer at the back of the book only after solving the problem myself. The answer helped me <u>confirm</u> that my solution was correct.",
+"② Our team lost the game, but we helped one another until the end. The result was disappointing, yet our team spirit remained <u>strong</u>.",
+"③ I ran faster than before, but my friends were still running faster than me. My greater speed was <u>insufficient</u> to catch up with them.",
+"④ The movie ended sadly, but its message made me believe that life could get better. Despite the ending, I felt <u>hopeful</u>.",
+"⑤ I checked my answers more carefully on the second test. I made two mistakes on the first test and six on the second, so the number of mistakes <u>decreased</u>."
+],
+"answer": "⑤",
+"solution": "더 꼼꼼하게 확인했다는 행동과 실제 실수의 개수 변화를 구별해야 한다. 실수가 두 개에서 여섯 개로 늘었으므로 decreased(줄어들었다)는 increased(늘어났다)로 바꾸어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b09b02d43c",
+"typeId": "eng-m2-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은? 각 선지의 앞뒤 내용을 함께 고려하시오.",
+"choices": [
+"① We searched the whole island without finding the treasure. This did not <u>prove</u> that there was no treasure; we might have missed it.",
+"② I remembered the correct password but typed one letter incorrectly. The problem was my typing, not my <u>memory</u>.",
+"③ My sister left school before I did, but she stopped to look around some shops. I went straight home and arrived first, so her earlier departure led to an earlier <u>arrival</u> home than mine.",
+"④ I got the right answer by chance and couldn't explain it. A correct answer did not necessarily show <u>understanding</u>.",
+"⑤ All the players practiced their skills alone, but they rarely practiced together. Their individual skills did not <u>guarantee</u> good teamwork."
+],
+"answer": "③",
+"solution": "누나 또는 여동생이 학교에서는 먼저 출발했지만, 집에는 화자가 먼저 도착했다. 출발 순서와 도착 순서가 다르므로, 더 이른 arrival(도착)로 이어졌다는 마지막 부분은 문맥에 맞지 않는다. arrival을 departure로 바꾸면 먼저 출발했다는 앞의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u1m1s0t0",
+"custom": true
 }
 ]

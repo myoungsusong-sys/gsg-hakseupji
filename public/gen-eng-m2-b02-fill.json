@@ -1156,5 +1156,171 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b02-u0m4s0t0",
 "custom": true
+},
+{
+"id": "fill-7c8dbf8681",
+"typeId": "eng-m2-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 빈칸에 들어갈 말을 바르게 짝지은 것은?\n\n• The rail runs (A) the beach.\n• The potato balls are (B) and delicious.\n• Interesting events are (C) place at the festival.",
+"choices": [
+"along－chewy－taking",
+"along－spicy－making",
+"across－chewy－taking",
+"across－cute－getting",
+"around－cold－having"
+],
+"answer": "①",
+"solution": "철길이 해변을 따라 이어진다는 뜻이므로 (A)에는 along이 알맞다. 감자옹심이는 ‘쫄깃한’ 음식이므로 chewy를 쓰고, ‘열리다’는 take place이므로 진행형인 taking이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-88037c1bf8",
+"typeId": "eng-m2-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 밑줄 친 표현의 우리말 의미가 어색한 것은?\n\n① The rail bike is powered by electricity.\n② You can say that again.\n③ Two men are trying to bring each other to the ground.\n④ Changpo kept bad luck away.\n⑤ Interesting events are taking place here.",
+"choices": [
+"전기로 움직인다",
+"정말 네 말에 동의한다",
+"서로를 땅에 넘어뜨리려고 한다",
+"불운을 가까이 간직했다",
+"흥미로운 행사들이 이곳에서 열리고 있다"
+],
+"answer": "④",
+"solution": "keep A away는 ‘A를 가까이 간직하다’가 아니라 ‘A가 가까이 오지 못하게 하다, A를 물리치다’라는 뜻이다. 따라서 ④는 ‘창포가 불운을 물리쳤다’라고 해석해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-5cbd96409b",
+"typeId": "eng-m2-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 우리말과 영어 문장의 의미가 일치하는 것은?",
+"choices": [
+"철길은 해변을 가로질러 이어진다.－The rail runs across the beach.",
+"감자옹심이는 귀엽게 맛이 난다.－The potato balls taste cutely.",
+"창포물은 우리의 머리카락을 윤기 나게 할 것이다.－Changpo water will make our hair shiny.",
+"사람들은 벼를 심기 전에 풍년을 기원했다.－People wished for a good harvest after they planted rice.",
+"막국수는 감자옹심이가 든 뜨거운 국이다.－Makguksu is hot soup with potato balls."
+],
+"answer": "③",
+"solution": "make＋목적어＋형용사는 ‘목적어를 …하게 만들다’라는 뜻이므로 ③의 두 문장은 의미가 일치한다. 철길은 해변을 따라 이어지고, 사람들은 벼를 심은 뒤 풍년을 기원했다. 또한 막국수는 차가운 메밀국수이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-b6f1b18567",
+"typeId": "eng-m2-b02-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 두 문장의 의미가 서로 다른 것은?",
+"choices": [
+"The rail bike is powered by electricity.＝Electricity powers the rail bike.",
+"The market sells many kinds of delicious food.＝Many kinds of delicious food are sold at the market.",
+"People believed that changpo kept bad luck away.＝People believed that changpo brought bad luck close.",
+"I’m excited to try sundubu ice cream.＝I can’t wait to try sundubu ice cream.",
+"Interesting events are taking place here.＝Interesting events are happening here."
+],
+"answer": "③",
+"solution": "keep bad luck away는 ‘불운을 물리치다’라는 뜻이지만, bring bad luck close는 ‘불운을 가까이 가져오다’라는 반대 의미이다. 나머지는 능동태와 수동태의 전환 또는 유의 표현을 사용하여 같은 의미를 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a126c7a6b3",
+"typeId": "eng-m2-b02-u3m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 여행 기록의 빈칸에 본문에 나온 알맞은 말을 순서대로 쓰시오.\n\nBefore lunch, we rode a rail bike at Jeongdongjin. The rail runs (A) ____________, so we enjoyed a nice (B) ____________. The rail bike was (C) ____________ electricity. At the Danoje Festival, we watched two men try to (D) ____________ to the (E) ____________ in ssireum. Rebecca wanted to wash her hair in changpo water because she heard it would make her hair (F) ____________. In the past, people believed that changpo (G) ____________.",
+"selfGrade": true,
+"answer": "along the beach, view, powered by, bring each other, ground, shiny, kept bad luck away",
+"solution": "철길은 해변을 따라 이어지므로 (A)는 along the beach이고, 경치와 전기에 관한 표현은 각각 view와 powered by이다. 씨름에서는 두 사람이 서로를 땅에 넘어뜨리려고 하므로 bring each other와 ground가 알맞다. 창포물은 머리카락을 윤기 나게 하고 불운을 물리친다고 믿었으므로 shiny와 kept bad luck away를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d61c4a7e82",
+"typeId": "eng-m2-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nAt Gangneung Central Market, visitors can enjoy food at a traditional market that (A)[sell / sells] many kinds of food. The potato balls in ongsimi look (B)[cute / cutely]. Visitors can also try sundubu ice cream, which (C)[is made / makes] from soft tofu.",
+"choices": [
+"sell — cute — is made",
+"sells — cutely — is made",
+"sells — cute — makes",
+"sells — cute — is made",
+"sell — cutely — makes"
+],
+"answer": "④",
+"solution": "관계대명사 that의 선행사가 단수 명사 a traditional market이므로 sells가 알맞다. 감각동사 look 뒤에는 형용사 cute가 와야 한다. 아이스크림은 두부로 만들어지는 대상이므로 수동태 is made를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c2c3e12b7b",
+"typeId": "eng-m2-b02-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 ⓐ~ⓔ의 어법상 어색한 부분에 대한 수정으로 적절하지 않은 것은?\n\nⓐ Rebecca is exciting about looking around Gangneung with Eunji.\nⓑ Rebecca wants to wash her hair in changpo water after watch ssireum.\nⓒ Electricity is also use to power the rail bike.\nⓓ People in the past believe that changpo kept bad luck away.\nⓔ Let’s taking a look at the blue sea from the rail bike.",
+"choices": [
+"ⓐ exciting → excited",
+"ⓑ watch → watching",
+"ⓒ use → used",
+"ⓓ believe → believed",
+"ⓔ taking → taken"
+],
+"answer": "⑤",
+"solution": "Let's 뒤에는 동사원형이 와야 하므로 taking을 take로 고쳐야 한다. ⓐ는 감정을 느끼는 사람을 설명하므로 excited, ⓑ는 전치사 after 뒤이므로 watching이 알맞다. ⓒ는 전기가 사용된다는 수동의 의미이므로 used, ⓓ는 과거의 믿음을 나타내므로 believed가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c6dad0cb89",
+"typeId": "eng-m2-b02-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 표시된 부분 ⓐ~ⓕ는 모두 어법상 어색하다. 문맥에 맞게 각각 고쳐 순서대로 쓰시오.\n\n[조건]\n• 표시된 부분만 고칠 것.\n• 각 부분의 동사는 그대로 활용하되, 필요한 경우 to 또는 be동사를 추가할 것.\n• 각 답은 한 단어 또는 두 단어로 쓸 것.\n\nEunji is at Gangneung Station ⓐ[meet] Rebecca and Paul. Rebecca feels ⓑ[exciting] about their trip together. At Jeongdongjin, they are ⓒ[ride] a rail bike along the beach. The bike is also ⓓ[power] by electricity. While they are on the bike, Eunji notices that it is ⓔ[get] faster. They ride it before ⓕ[have] lunch.",
+"selfGrade": true,
+"answer": "to meet / excited / riding / powered / getting / having",
+"solution": "ⓐ는 역에 있는 목적을 나타내므로 to meet, ⓑ는 Rebecca가 느끼는 감정을 나타내므로 excited가 알맞다. ⓒ와 ⓔ는 진행형이므로 각각 riding과 getting으로 고치며, get은 마지막 자음을 한 번 더 쓴다. ⓓ는 수동태의 과거분사 powered, ⓕ는 전치사 before의 목적어인 동명사 having으로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-647259ae4d",
+"typeId": "eng-m2-b02-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 틀린 부분은 다섯 개이다. 틀린 부분의 기호와 바르게 고친 말을 글에 나온 순서대로 쓰시오.\n\n[조건]\n• 각 부분은 한 단어만 바꿀 것.\n• 어법상 옳은 부분은 답에 포함하지 말 것.\n\nGangneung Central Market is a place that ⓐ[offer] many kinds of food. Ongsimi contains potato balls that ⓑ[looks] cute. Rebecca likes makguksu because its noodles taste ⓒ[spicily]. Sundubu ice cream is ⓓ[made] from soft tofu. Eunji believes that this ice cream was ⓔ[invent] by people in the Gangneung area. Rebecca is looking forward to ⓕ[try] it.",
+"selfGrade": true,
+"answer": "ⓐ offers / ⓑ look / ⓒ spicy / ⓔ invented / ⓕ trying",
+"solution": "ⓐ와 ⓑ는 관계대명사의 선행사가 각각 단수인 a place와 복수인 potato balls이므로 offers와 look으로 고친다. ⓒ는 감각동사 taste 뒤에서 주어의 상태를 설명하므로 형용사 spicy가 알맞다. ⓔ는 과거 수동태이므로 invented, ⓕ는 look forward to의 전치사 to 뒤이므로 trying으로 고친다. ⓓ의 is made는 현재 수동태로 올바른 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c708ae5607",
+"typeId": "eng-m2-b02-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 표시된 ⓐ~ⓕ 가운데 어법상 옳은 두 부분을 제외하고, 나머지 네 부분을 바르게 고쳐 기호와 함께 순서대로 쓰시오.\n\n[조건]\n• 표시된 부분 밖의 단어는 바꾸지 말 것.\n• 각 답은 한 단어 또는 두 단어로 쓸 것.\n• 원래 동사의 뜻을 유지할 것.\n\nAt the Danoje Festival, several events ⓐ[are taking] place. Paul sees two men who ⓑ[is trying] to bring each other to the ground. Eunji explains that this sport ⓒ[calls] ssireum. Rebecca wants ⓓ[washing] her hair in changpo water after they watch the match. People in the past ⓔ[believed] that changpo kept bad luck away. Later, on Anmok Beach, Eunji thanks Rebecca and Paul for ⓕ[join] her on the trip.",
+"selfGrade": true,
+"answer": "ⓑ are trying / ⓒ is called / ⓓ to wash / ⓕ joining",
+"solution": "ⓑ는 관계대명사 who의 선행사가 복수인 two men이므로 are trying으로 고친다. ⓒ는 그 운동이 씨름이라고 불린다는 뜻이므로 수동태 is called가 알맞다. ⓓ는 want의 목적어로 쓰이는 to부정사 to wash, ⓕ는 전치사 for 뒤에 오는 동명사 joining으로 고친다. ⓐ는 복수 주어에 맞는 현재진행형이고, ⓔ는 과거의 믿음을 나타내는 과거형이므로 둘 다 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b02-u3m1s0t0",
+"custom": true
 }
 ]

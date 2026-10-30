@@ -1222,5 +1222,157 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-u0m1s4t1",
 "custom": true
+},
+{
+"id": "fill-2f4340d551",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 종류로 가장 알맞은 것은?\n\nTuesday, June 11\nToday I helped children read English books at the library. At first, I was nervous, but the children listened carefully. After reading, I put the books back on the shelves. I was tired when I finished, but I felt happy. I want to help there again.",
+"choices": [
+"도서관 이용 안내문",
+"자원봉사 활동 일기",
+"영어책 소개 광고문",
+"자원봉사자 모집 공고문",
+"독서 실태 조사보고서"
+],
+"answer": "②",
+"solution": "날짜 아래에 글쓴이가 그날 한 도서관 봉사 활동과 그때 느낀 감정을 기록하고 있다. 따라서 자원봉사 활동을 마친 뒤 쓴 일기이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-791cb54bf0",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 종류로 가장 알맞은 것은?\n\nDear friend,\nGraduation is getting closer. Of all our memories, I will remember our afternoons on the basketball court most clearly. You always waited patiently when I missed a shot. Thank you for making those afternoons special. Even when we go to different schools, let's find time to play together.\nYour friend",
+"choices": [
+"a news article",
+"a travel essay",
+"a school notice",
+"a personal letter",
+"a book review"
+],
+"answer": "④",
+"solution": "특정 친구에게 말을 건네며 함께한 추억과 감사의 마음을 전하고 있다. 받는 사람을 부르는 표현과 끝인사도 있으므로 개인적인 편지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-59a21708ff",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nA Brighter Wall Starts with You\nOld posters still cover parts of the neighborhood wall, and there is writing that needs to be painted over. Perhaps you have walked past it and thought, “Someone should do something.” This Saturday, you can be that someone. We will remove the posters and cover the writing with white paint. Then we will add our own pictures. You do not have to be good at painting; there is work for everyone. Meet in front of the wall at 10 a.m. and help make the neighborhood brighter.",
+"choices": [
+"벽화 제작에 사용할 페인트의 판매 광고문",
+"완성된 벽화를 평가하는 미술 감상문",
+"벽을 꾸미는 봉사 활동의 참여자 모집문",
+"마을 벽의 관리 상태를 조사한 결과 보고문",
+"벽화 그리기 활동을 마친 학생의 체험 수기"
+],
+"answer": "③",
+"solution": "벽의 현재 상태를 설명하지만, 글의 중심은 독자에게 토요일 봉사 활동에 참여하도록 권하는 데 있다. 활동 내용과 모이는 시간이 제시되어 있으므로 자원봉사 참여자 모집문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-c5f9461426",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글이 실릴 곳으로 가장 적절한 것은?\n\nOur history club's visit to Hyochang Park began at the entrance to the Kim Koo Museum. The white statue there caught my attention first. Inside, I learned about Kim Koo's efforts to educate young people and his work for Korea's independence. Before the visit, these had seemed like facts to remember for a test. As I left the museum, however, I found myself thinking about the person behind those facts. That change in my thoughts was the most valuable part of our visit.",
+"choices": [
+"김구의 생애를 출생부터 순서대로 정리한 인물 사전",
+"학생들이 역사 유적 방문 경험과 느낌을 나누는 문집",
+"박물관의 관람 시간과 입장 절차를 소개하는 안내 책자",
+"역사 동아리의 신규 회원을 모집하는 학교 게시판",
+"공원 내 조각상의 제작 기법을 설명하는 미술 교재"
+],
+"answer": "②",
+"solution": "김구에 관한 정보가 포함되어 있지만, 글의 흐름은 글쓴이의 박물관 방문과 그 과정에서 생긴 생각의 변화를 따른다. 따라서 역사 유적을 방문한 경험과 감상을 모은 문집에 가장 어울린다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-adf806dc1c",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 종류로 가장 적절한 것은?\n\nA fishing boat faces a powerful storm in The Perfect Storm. That may sound like a simple story, but watching it was a much stronger experience than reading that short description. The storm scenes made the danger feel real, and George Clooney's acting kept me interested in the people on the boat. For me, the film's greatest strength was the way the acting and the exciting scenes worked together. I would recommend it to viewers who enjoy films about people facing danger.",
+"choices": [
+"영화 속 사건을 실제 사고로 보도하는 기사",
+"배우가 자신의 연기 생활을 돌아보는 자서전",
+"관객의 영화 취향을 정리한 조사보고서",
+"영화 제작자가 촬영 과정을 기록한 작업 일지",
+"영화의 특징을 평가하고 관람을 권하는 감상문"
+],
+"answer": "⑤",
+"solution": "줄거리 소개에 그치지 않고 장면과 연기를 평가하며 영화의 장점을 설명한다. 마지막에는 관람을 추천하므로 영화 감상문에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-6e0fa289e3",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 종류와 주된 목적을 바르게 연결한 것은?\n\nBefore I finish, I would like you to think about a question: Have you ever enjoyed something without imagining that it could become your work? That was true for me. I liked both stars and photography, yet I became an engineer. During a winter trip to Iceland, photographing the Northern Lights made me feel excited about taking pictures again. Later, winning a photo contest encouraged me to learn more. Becoming a professional photographer took years of practice, and leaving my engineering job was a difficult decision. I am sharing this experience because some of you may also be uncertain about your future. As you leave this room today, remember that an interest you already have may help you discover a direction. Thank you for listening.",
+"choices": [
+"연설문 — 자신의 경험을 통해 청중이 진로의 가능성을 생각하도록 격려한다.",
+"기행문 — 여행지에서 겪은 일을 바탕으로 아이슬란드 방문을 권한다.",
+"조사보고서 — 직업 선택에 영향을 미치는 요인의 비율을 제시한다.",
+"광고문 — 사진 강좌의 장점을 소개하여 수강 신청을 유도한다.",
+"자서전 — 독자에게 자신의 출생부터 현재까지의 생애를 빠짐없이 전한다."
+],
+"answer": "①",
+"solution": "여행과 직업 경험은 청중에게 진로에 관한 메시지를 전하기 위한 사례로 쓰였다. 청중이 이 방을 나설 때를 언급하고 듣는 데 감사하는 표현으로 끝내므로, 진로 탐색을 격려하는 연설문이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-203916c61b",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 종류를 판단한 근거로 가장 적절한 것은?\n\nHow Green Are Our Daily Habits?\nTo find out whether our classmates practiced environmentally friendly habits, we asked 30 students four questions. Each question was answered separately. Twenty-four students said they turned off lights when leaving a room, while 18 turned off the water while brushing their teeth. Nine recycled plastic, and only six used both sides of a sheet of paper. Because the same student could report several habits, these numbers should not be added to find the total number of students. The answers suggest that the students practiced some habits more often than others. We believe the less common habits deserve more attention, but the results do not show why students did or did not practice them.",
+"choices": [
+"환경 보호를 위한 행동을 언급하므로, 각 행동의 순서를 가르치는 생활 안내문이다.",
+"학생들이 했다고 응답한 행동을 제시하므로, 조사자가 직접 관찰한 과정을 기록한 관찰 일지이다.",
+"조사자의 의견이 포함되어 있으므로, 조사 수치와 관계없이 주장을 전개하는 논설문이다.",
+"조사 대상과 응답 수치를 밝히고 해석의 한계까지 제시하므로, 설문 조사보고서이다.",
+"환경 보호 습관의 차이를 다루므로, 그 차이가 생기는 원인을 입증한 실험 보고서이다."
+],
+"answer": "④",
+"solution": "조사 대상인 30명, 질문별 응답 수치, 결과의 해석과 한계를 제시한 설문 조사보고서이다. 조사자의 의견이 일부 포함되어 있어도 글의 중심은 응답 결과를 전달하는 데 있으며, 직접 관찰하거나 원인을 실험한 것은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-e4ff218587",
+"typeId": "eng-m3-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글이 실릴 곳과 그 판단 근거를 바르게 연결한 것은?\n\nAn interesting news story and a true news story are not always the same thing. A report can attract attention even when its information has been made up. Such a report is called fake news. Its problem is more serious than simply containing an incorrect sentence: readers may accept the false information and understand an event in the wrong way. This helps explain why an interesting report does not necessarily leave its readers better informed. To understand fake news, therefore, we need to consider both the truth of the information and its effect on readers. These two points explain what fake news is and why it can be harmful.",
+"choices": [
+"신문의 독자 투고란 — 특정 보도의 잘못을 지적하고 해당 기자의 사과를 요구하기 때문이다.",
+"개인 체험 수기집 — 거짓 보도를 믿었던 글쓴이의 경험과 후회를 시간순으로 제시하기 때문이다.",
+"뉴스 읽기 학습 자료 — 가짜 뉴스의 개념과 독자에게 미치는 해로운 영향을 설명하기 때문이다.",
+"뉴스 서비스 광고란 — 특정 서비스의 정확성을 내세워 독자의 이용을 유도하기 때문이다.",
+"언론인 인터뷰집 — 기자와의 질문과 답변을 통해 허위 기사를 작성한 동기를 밝히기 때문이다."
+],
+"answer": "③",
+"solution": "가짜 뉴스가 무엇인지 정의하고, 거짓 정보가 독자의 이해를 어떻게 그르칠 수 있는지 설명하는 글이다. 특정 사건에 대한 항의나 개인 경험의 기록이 없으므로 뉴스 읽기를 위한 설명 자료에 가장 적합하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-u0m0s3t1",
+"custom": true
 }
 ]

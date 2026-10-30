@@ -3313,5 +3313,455 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b02-u4m1s0t0",
 "custom": true
+},
+{
+"id": "fill-63b5e6a570",
+"typeId": "eng-h1-b02-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nThe local government initially considered replacing Wallisblok with a new building. Because it could not afford this plan, it sold the empty apartments at a very low price. The buyers, however, had to renovate the apartments themselves. Many people applied because they were interested not only in the low price but also in the chance to redesign the building creatively.",
+"choices": [
+"The government had enough money to construct a new building.",
+"The buyers were required to repair their apartments.",
+"Few people showed interest in the government’s plan.",
+"The government paid all the renovation costs.",
+"Applicants were attracted only by the low price."
+],
+"answer": "②",
+"solution": "아파트 구매자들은 낡은 공간을 직접 수리해야 한다는 조건을 받아들여야 했다. 따라서 글의 내용과 일치하는 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-26537ab437",
+"typeId": "eng-h1-b02-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 있는 질문으로 가장 알맞은 것은?\n\nThe city of Amsterdam bought De Ceuvel to improve an abandoned and polluted area. Since city officials were unsure how to use the site, they invited the public to submit proposals. Each proposal needed to explain how the polluted land could be cleaned and developed sustainably. It also had to show how the site could become a place for creative work.",
+"choices": [
+"Why did the city ask the public to submit proposals?",
+"How many factories were built near De Ceuvel?",
+"Which country received the factory work from Amsterdam?",
+"How much did each city official pay for the site?",
+"When did the new factories begin operating?"
+],
+"answer": "①",
+"solution": "시 관계자들이 부지 활용 방법을 정하지 못했기 때문에 시민들에게 계획을 요청했다는 내용이 제시되어 있다. 따라서 글을 통해 답할 수 있는 질문은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1f89d201a7",
+"typeId": "eng-h1-b02-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용으로 보아 추론할 수 있는 것은?\n\nThe architects could not place ordinary foundations on De Ceuvel’s polluted, muddy ground. Instead, they bought unused boats cheaply and converted them into studios, meeting areas, cultural facilities, and a café. Wooden walkways were added between the boats, while special plants were grown to help clean the soil.",
+"choices": [
+"The architects abandoned the project after failing to build ordinary foundations.",
+"The boats were used only to transport workers across the site.",
+"The polluted soil was completely removed before construction began.",
+"The architects adapted their design to the difficult condition of the land.",
+"The wooden walkways were built to prevent visitors from entering the boats."
+],
+"answer": "④",
+"solution": "오염된 진흙땅에는 일반적인 기초를 세울 수 없었으므로 건축가들은 버려진 배를 활용했다. 이는 토지의 제약에 맞추어 설계를 창의적으로 바꾸었다는 뜻이므로 ④가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dfddd2ab92",
+"typeId": "eng-h1-b02-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 바르게 이해한 학생은?\n\nAfter new families settled in Wallisblok, they changed the worn-out structure into distinctive homes. They also created shared facilities, including a garden and a terrace on the roof. Their work had an effect beyond the apartment building: the nearby neighborhood gradually became better, and Wallisblok eventually gained a reputation as a highly attractive residential place in Rotterdam.",
+"choices": [
+"민수: The improvement was limited to the inside of each apartment.",
+"서연: The residents’ efforts also had a positive influence on the surrounding area.",
+"지호: Wallisblok became less popular after the renovation.",
+"유나: The residents removed all spaces that could be used together.",
+"현우: The government replaced Wallisblok with an entirely new building."
+],
+"answer": "②",
+"solution": "주민들의 변화는 아파트 건물에만 그치지 않고 주변 지역의 개선으로도 이어졌다. 이를 정확히 이해한 학생은 서연이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b6ee5e014d",
+"typeId": "eng-h1-b02-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 사례에 대한 설명으로 가장 적절한 것은?\n\nIn Rotterdam, the government could not afford to replace the deteriorated Wallisblok, so it offered its empty homes cheaply on the condition that the buyers renovate them. The new residents used their own ideas to transform both the building and its shared spaces.\n\nIn Amsterdam, an architectural company received permission to use De Ceuvel for a limited period. Because the polluted ground could not support normal foundations, old boats were repurposed as work and cultural spaces. Plants that clean soil and systems for sustainable water use were introduced as well.",
+"choices": [
+"Both projects succeeded mainly because the governments constructed expensive new buildings.",
+"Both projects permanently transferred polluted public land to private residents.",
+"Wallisblok focused on testing green technology, whereas De Ceuvel focused only on housing families.",
+"The two projects restored neglected places by combining practical limits with creative participation.",
+"The two projects began only after all pollution and financial problems had been completely solved."
+],
+"answer": "④",
+"solution": "Wallisblok은 예산 부족을 주민들의 직접 개조와 창의성으로 극복했고, De Ceuvel은 오염된 지반의 한계를 폐선 재활용과 친환경 기술로 해결했다. 두 사례 모두 현실적 제약 속에서 창의적인 참여를 통해 버려진 공간을 되살렸으므로 ④가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6635c736aa",
+"typeId": "eng-h1-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nAn aging neighborhood may cause its residents (A)[leave / to leave]. Cooperation between citizens and the local government (B)[is / are] helpful in improving such an area. Wallisblok is an apartment building (C)[calling / called] Wallisblok in Rotterdam that shows the results of this cooperation.",
+"choices": [
+"leave — is — calling",
+"to leave — is — called",
+"to leave — are — called",
+"leave — are — called",
+"to leave — is — calling"
+],
+"answer": "②",
+"solution": "cause는 목적격 보어로 to부정사를 취하므로 (A)는 to leave가 알맞다. (B)는 주어의 중심어인 Cooperation이 단수이므로 is가 알맞다. (C)는 건물이 Wallisblok이라고 불리는 수동 관계이므로 called가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1c97ae6976",
+"typeId": "eng-h1-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nA number of apartments in Wallisblok (A)[was / were] empty. With a (B)[limited / limiting] budget, the local government needed another solution instead of replacing the building. Its requirement was (C)[that / what] the buyers renovate their apartments.",
+"choices": [
+"was — limited — that",
+"were — limiting — that",
+"was — limiting — what",
+"were — limited — what",
+"were — limited — that"
+],
+"answer": "⑤",
+"solution": "a number of 뒤에 복수 명사가 주어로 쓰이면 복수 동사를 사용하므로 (A)는 were이다. 예산이 제한된 상태를 나타내므로 (B)는 limited이다. (C) 뒤에는 문장 성분이 모두 갖추어진 절이 이어지므로 접속사 that이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d5478eb1d5",
+"typeId": "eng-h1-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nDe Ceuvel has become one of Amsterdam’s creative (A)[space / spaces] for green technology. Making the project successful took (B)[much / very] more than money. Other cities can learn from it when they try (C)[bring / to bring] new life to abandoned sites.",
+"choices": [
+"space — much — to bring",
+"spaces — very — to bring",
+"spaces — much — to bring",
+"space — very — bring",
+"spaces — much — bring"
+],
+"answer": "③",
+"solution": "one of 뒤에는 복수 명사가 필요하므로 (A)는 spaces이다. 비교급 more를 강조할 때는 very가 아니라 much를 사용한다. ‘새로운 활력을 불어넣으려고 노력하다’라는 의미이므로 (C)에는 try의 목적어인 to bring이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b5a6f92147",
+"typeId": "eng-h1-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nLaya learned about an accident involving a truck during a flood. The report was ⓐshocking to her. She found ⓑthat bridges without flood monitoring systems could allow such tragedies to happen. The device she designed ⓒpredict floods and warns people in advance. Solving a problem may seem ⓓdifficulty at first. However, asking ⓔyourself what caused it can help you discover a way ⓕto solve it.",
+"choices": [
+"ⓒ, ⓓ",
+"ⓐ, ⓒ",
+"ⓑ, ⓔ",
+"ⓓ, ⓕ",
+"ⓒ, ⓔ"
+],
+"answer": "①",
+"solution": "ⓒ는 주어의 중심어가 단수 명사 device이므로 predicts로 고쳐야 한다. ⓓ는 연결동사 seem의 보어 자리이므로 명사 difficulty 대신 형용사 difficult가 필요하다. ⓐ는 보고 내용이 충격을 주는 것이므로 shocking이 맞으며, 나머지 표현도 어법상 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-370e968787",
+"typeId": "eng-h1-b02-u5m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓔ를 각각 바꾸어 쓸 때, 원래 의미를 유지하면서 어법상 바르게 전환한 것으로 적절하지 않은 것은? 각 전환은 다른 전환과 관계없이 독립적으로 적용한다.\n\nⓐBecause the city wanted to improve the polluted area, it bought a former shipyard. Officials were unsure ⓑwhat they should do with the site, so they invited the public to suggest plans. An architectural company proposed using ⓒboats which had been abandoned. Its plan was ⓓto create workspaces and connect the boats with wooden paths. Special plants were also placed across the site, ⓔwhich helped clean the polluted soil.",
+"choices": [
+"ⓐ → Wanting to improve the polluted area",
+"ⓑ → what to do with the site",
+"ⓒ → abandoned boats",
+"ⓓ → to create workspaces and connecting the boats with wooden paths",
+"ⓔ → helping clean the polluted soil"
+],
+"answer": "④",
+"solution": "ⓓ에서는 하나의 to에 연결되는 create와 connect가 병렬을 이루므로 connecting으로 바꾸면 어법상 적절하지 않다. ⓐ는 주절과 주어가 같은 이유의 부사절을 분사구문으로 바꾼 것이고, ⓑ는 의문사절을 의문사와 to부정사로 줄인 것이다. ⓒ는 수동 의미의 관계절을 과거분사로 나타낸 것이며, ⓔ는 앞선 식재 행위의 결과를 나타내는 분사구문으로 전환한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5e40e779c9",
+"typeId": "eng-h1-b02-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓖ 중 어법상 틀린 부분 세 곳을 찾아 바르게 고치시오.\n\n[조건]\n• 표시된 단어만 고치고, 나머지 표현은 바꾸지 말 것.\n• 원문의 의미를 유지할 것.\n• 정답은 기호 순서대로 ‘기호 수정한 단어’의 형식으로 쓸 것.\n\nThe work that had once been done in the factories ⓐwere moved to other countries. The city, ⓑwanting to improve the area, bought a former shipyard. Officials requested proposals that would explain how ⓒto clean the land and turn the site into a creative workspace. The boats ⓓpurchasing by the architects became part of a small community. The project shows ⓔwhat can be achieved through creative thinking and cooperation. One of the lessons that these examples teach other cities ⓕare that successful change requires ⓖmuch more than a budget.",
+"selfGrade": true,
+"answer": "ⓐ was, ⓓ purchased, ⓕ is",
+"solution": "ⓐ의 주어는 관계절 속 factories가 아니라 불가산 명사 work이므로 was로 고쳐야 한다. ⓓ는 배가 건축가들에 의해 구매된 수동 관계이므로 purchased가 필요하다. ⓕ의 주어는 관계절 속 examples나 cities가 아니라 One of the lessons이므로 단수 동사 is를 써야 한다. ⓔ의 what은 절 안에서 주어 역할을 하며, ⓒ의 to clean과 turn은 하나의 to를 공유하므로 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f462c275cf",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 소개된 우정 벤치 상담의 특징으로 옳은 것은?\n\nThe Friendship Bench program helps people who have mental health difficulties, including depression and anxiety. People can talk about their problems with elderly women who are respected in their community. These volunteers are known as grandmothers. They listen carefully and offer emotional support while sitting with patients on benches. Patients do not have to pay for these conversations.",
+"choices": [
+"Patients pay each time they talk to a grandmother.",
+"The volunteers help patients by listening to their concerns.",
+"The program offers services only to elderly patients.",
+"Patients must become volunteers before receiving help.",
+"The grandmothers mainly provide financial support."
+],
+"answer": "②",
+"solution": "우정 벤치의 할머니들은 환자의 이야기를 주의 깊게 듣고 정서적 지지를 제공한다. 따라서 환자의 고민을 들어 주며 돕는다는 ②가 옳다. 상담은 무료이며, 환자를 노인으로 한정한다는 내용은 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b9fb964ed1",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 바탕으로 Judith Moyo를 소개한 문장 중 틀린 것은?\n\nJudith Moyo, also known as Grandma Moyo, volunteers for the Friendship Bench program. Seeing people around her suffer from mental health difficulties gave her a reason to join. She wanted to offer support that could help them recover emotionally. She feels proud when she sees patients making positive changes in their lives.",
+"choices": [
+"She is called Grandma Moyo.",
+"She takes part in the program as a volunteer.",
+"She hoped to support people around her.",
+"She joined because her community had no mental health problems.",
+"She feels proud of positive changes in patients' lives."
+],
+"answer": "④",
+"solution": "Moyo는 주변 사람들이 정신 건강 문제로 어려움을 겪는 것을 보고 프로그램에 참여했다. 따라서 지역 사회에 정신 건강 문제가 없어서 참여했다는 ④는 글의 내용과 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-57568d8a1f",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 확인할 수 있는 내용은?\n\nSupport can continue even after patients finish talking with the grandmothers. The Friendship Bench program encourages them to enter support groups consisting of people who previously received help through the program. Many group members belong to the same community and have faced similar difficulties. These shared experiences make it easier for them to understand and help each other.",
+"choices": [
+"The groups consist of people who previously received help from the program.",
+"Patients are told to leave their community after counseling.",
+"Only the grandmothers can become members of the groups.",
+"Group members are unable to understand each other's difficulties.",
+"The program requires patients to join a group before meeting a grandmother."
+],
+"answer": "①",
+"solution": "지원 그룹은 이전에 프로그램을 통해 도움을 받은 사람들로 구성된다. 따라서 ①이 옳다. 할머니들과의 상담을 마친 뒤 그룹에 참여하도록 권장하므로 ⑤는 순서가 뒤바뀌었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-537a742f8f",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 정보만으로는 답을 정할 수 없는 질문을 고르시오.\n\nThe Friendship Bench program uses grandmothers as volunteer counselors. Their strong ties to local people help explain this choice. They are good listeners, understand other people's feelings, and can have meaningful conversations. People can also depend on them. The program began with a small group of grandmothers, and the number of women trained to offer this support has since grown greatly.",
+"choices": [
+"What role do the grandmothers have in the program?",
+"How do the grandmothers' community ties help explain their selection?",
+"What communication skills do the grandmothers have?",
+"How has the number of trained grandmothers changed?",
+"How many hours does each grandmother volunteer every week?"
+],
+"answer": "⑤",
+"solution": "글에는 할머니들의 역할, 선정 이유, 의사소통 능력, 훈련받은 인원의 증가가 제시되어 있다. 그러나 각 할머니가 매주 몇 시간 봉사하는지는 나와 있지 않으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-985bc20644",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 Dr. Chibanda가 지역 사회 안에서 정신 건강 서비스를 제공하려 한 이유로 가장 적절한 것은?\n\nAn experience with a patient changed Dr. Chibanda's thinking. The patient needed help for severe depression but did not have enough money for transportation to the hospital. He realized that travel costs could keep people from receiving treatment. Zimbabwe also had too few psychiatrists to meet people's needs. These difficulties led him to look for a way to make mental health support available within communities.",
+"choices": [
+"He believed that patients no longer wanted emotional support.",
+"He found that hospitals were offering unnecessary treatment.",
+"He recognized that both travel costs and a shortage of specialists limited access to care.",
+"He wanted all patients to move to communities near hospitals.",
+"He discovered that the country already had enough psychiatrists."
+],
+"answer": "③",
+"solution": "글에서는 병원까지의 교통비 부담과 정신과 의사 부족이 치료 접근을 어렵게 하는 요인으로 제시된다. Chibanda는 이러한 어려움을 해결하고자 지역 사회에서 도움을 받을 방법을 찾았다. 따라서 두 요인을 함께 설명한 ③이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-337b3f7e0a",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용에 근거한 이해로 적절하지 않은 것은?\n\nA boy notices that his shirt has become tight and thinks frequent snacking, particularly late at night, may be the reason. He and a girl search for advice online. They learn that thirst can sometimes be mistaken for hunger. The advice also explains that missing daytime meals can increase hunger at night. If a snack is needed, fruit or nuts are suggested. The boy says he will try the advice.",
+"choices": [
+"The boy connects his weight gain with frequent snacking.",
+"The advice suggests avoiding daytime meals to control nighttime hunger.",
+"Feeling hungry may sometimes be related to a need for water.",
+"Fruit and nuts are presented as possible snack choices.",
+"The boy shows willingness to change his habits."
+],
+"answer": "②",
+"solution": "글에서는 낮에 식사를 거르면 밤에 더 배고파질 수 있다고 설명한다. 따라서 밤의 허기를 조절하려면 낮 식사를 피하라는 조언으로 이해한 ②는 적절하지 않다. 나머지는 소년의 판단과 글에 제시된 조언에 부합한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6daf80cb06",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽은 학생의 추론 중 근거가 가장 충분한 것은?\n\nThe Friendship Bench program provides counseling in person and has also introduced counseling through an app. The online service has enabled the program to reach additional people. Patients who finish their sessions with grandmothers are encouraged to join groups of former patients, where shared experiences help members support one another. Friendship Benches have spread to many regions of Zimbabwe. However, the program is still working toward its vision of having a bench close enough for everyone to walk to.",
+"choices": [
+"The introduction of app counseling means that meetings with grandmothers have ended.",
+"The growth of the program proves that everyone can already walk to a Friendship Bench.",
+"Former patients must become trained counselors before they can support group members.",
+"The program broadens ways to receive help and encourages continued support, while still pursuing wider local access.",
+"The program's expansion shows that former patients no longer need community support groups."
+],
+"answer": "④",
+"solution": "대면 상담과 앱 상담은 도움을 받는 통로를 넓히며, 이전 환자들의 모임은 상담 이후에도 지지가 이어지도록 한다. 한편 누구나 걸어서 벤치에 갈 수 있게 하는 것은 여전히 추진 중인 목표이다. 따라서 현재의 지원 방식과 아직 달성 중인 목표를 구분한 ④가 가장 타당하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c2d85c0f5a",
+"typeId": "eng-h1-b02-u1m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에 제시된 두 사례에 관한 판단으로 타당한 것은?\n\nA patient of Dr. Chibanda's suffered from severe depression but could not afford transportation to the hospital. This experience helped him recognize the need to bring mental health services closer to local people.\n\nGrandma Moyo describes a patient who struggled after losing her mother. Through counseling, Moyo helped her take steps toward recovery. The young woman later got her life back on track and started a business. Moyo finds it rewarding to help people make positive changes and believes there is no shame in asking for mental health support.",
+"choices": [
+"One case shows an obstacle to receiving care, while the other illustrates a positive change following support.",
+"The two accounts establish that Moyo counseled the patient who could not afford transportation.",
+"The first patient's inability to reach the hospital resulted from a refusal to seek mental health support.",
+"The second patient's recovery shows that starting a business was required before she could receive counseling.",
+"Taken together, the cases prove that every patient who receives counseling will start a business."
+],
+"answer": "①",
+"solution": "첫 사례는 교통비 부족으로 필요한 치료를 받기 어려운 상황을, 둘째 사례는 상담을 통해 회복을 시작한 뒤 긍정적인 변화가 나타난 상황을 보여 준다. 따라서 두 사례의 의미를 각각 구분한 ①이 타당하다. 두 환자가 동일인이라는 근거는 없으며, 한 환자의 창업 사례를 모든 환자의 결과로 일반화할 수도 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u1m4s0t0",
+"custom": true
+},
+{
+"id": "fill-72d39db9bd",
+"typeId": "eng-h1-b02-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 핵심 내용으로 가장 적절한 것은?\n\nMoving a mouse can be difficult for people whose hand movements are limited. Accessible websites give these users another way to move around a page: a keyboard. Users can reach links, select buttons, and enter information into fields with keys. For instance, pressing the tab key moves them between different parts of a page. This feature also helps people who have temporarily injured a hand. By allowing keyboard navigation, websites make their content easier to access for people who have difficulty using a mouse.",
+"choices": [
+"Learning keyboard shortcuts helps people write documents faster.",
+"Keyboard navigation makes websites usable for people who struggle to use a mouse.",
+"People with injured hands should avoid entering information online.",
+"Websites should explain how a mouse and a keyboard work together.",
+"Using a mouse is the easiest way for all users to explore websites."
+],
+"answer": "②",
+"solution": "글은 마우스 사용이 어려운 사람들이 키보드로 웹사이트의 링크, 버튼, 입력란에 접근할 수 있다고 설명한다. 따라서 키보드 탐색이 마우스 사용에 어려움이 있는 사람들의 웹사이트 이용을 돕는다는 ②가 핵심 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d11f62c25b",
+"typeId": "eng-h1-b02-u7m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에 제목을 붙일 때 가장 적절한 것은?\n\nNot everyone can get information by listening. Some website users have hearing disabilities, and others cannot play audio in a quiet library. Written forms of audio information can help both groups. A transcript presents the full audio content as text. Captions show text while a video plays and can describe music and other sounds as well as speech. These features allow users to understand audio information even when listening is difficult or impossible.",
+"choices": [
+"Making Online Music More Enjoyable",
+"Finding Quiet Places to Watch Videos",
+"Why Speech Matters More Than Other Sounds",
+"Providing Written Access to Audio Information",
+"Choosing Better Background Music for Websites"
+],
+"answer": "④",
+"solution": "청각 장애가 있거나 소리를 재생할 수 없는 상황에서도 대본과 자막을 통해 음성 정보에 접근할 수 있다는 내용이다. 두 기능을 함께 포괄하는 제목은 음성 정보를 글로 제공하는 것을 다룬 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-0116de585e",
+"typeId": "eng-h1-b02-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글 전체의 주제를 가장 잘 나타낸 것은?\n\nA website may contain an image that provides information readers need to understand its text. For someone with a visual disability, however, that information may be difficult to access. A screen reader reads written content aloud, but it cannot explain an image on its own. Accessible websites therefore attach a short written description, called alt text, to the image. If students appear in a picture, the description can state their number and explain their actions. The screen reader can then read this description aloud. The important point is that information presented visually becomes available in a form the program can read.",
+"choices": [
+"The role of image descriptions in making visual information accessible",
+"The advantages of replacing all website images with written passages",
+"The importance of selecting attractive pictures for online readers",
+"The development of programs that recognize images without descriptions",
+"The reasons students prefer spoken explanations to written information"
+],
+"answer": "①",
+"solution": "이미지의 정보에 접근하기 어려운 문제를 대체 텍스트와 화면 낭독 프로그램이 함께 해결하는 과정이 중심이다. 따라서 시각 정보를 이용할 수 있도록 돕는 이미지 설명의 역할을 제시한 ①이 적절하다. ②는 모든 이미지를 글로 교체한다는 내용이므로 지문의 취지와 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-17af9ea802",
+"typeId": "eng-h1-b02-u7m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 아우르는 제목으로 가장 적절한 것은?\n\nMaking information available on a website does not always make it easy to use. People with poor eyesight may still find written content difficult to read. A clear difference between the colors of the text and its background can make the writing easier to see. Sound presents another issue. Accessible websites let users lower the volume of background sound or switch it off, giving them control over their listening experience. These features respond to different needs: one makes text clearer, while the other lets users manage sound. Their value is not limited to people who cannot see or hear at all.",
+"choices": [
+"Replacing Visual Content with Sound for Users with Poor Eyesight",
+"Improving Web Accessibility by Removing Every Background Sound",
+"Clearer Text: The Complete Solution to Website Accessibility",
+"Why Websites Should Offer the Same Sensory Settings to Everyone",
+"Clearer Text and Adjustable Sound: Meeting Different Access Needs"
+],
+"answer": "⑤",
+"solution": "글은 글자와 배경의 색 대비를 통한 가독성 개선과 배경음 조절 기능을 함께 설명한다. 따라서 서로 다른 이용상의 필요를 충족하는 두 기능을 모두 포괄한 ⑤가 적절하다. ②는 배경음의 전면 제거로 내용을 왜곡하고, ③은 글자 가독성만으로 접근성 문제 전체를 해결한다고 과장한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-c535ab2e2b",
+"typeId": "eng-h1-b02-u7m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nWeb accessibility involves more than placing information where people can find it. The form in which it is offered and the way users reach it also matter. An image may carry important information, but a screen reader needs a written description to communicate that information aloud. Audio content can be provided through transcripts or captions for people who cannot hear it. Likewise, links and buttons need to be reachable by keyboard for users who cannot easily operate a mouse. These features address different barriers, yet they share a purpose: enabling access to website information and functions through another means. Their usefulness also reaches beyond lasting disabilities. Captions help someone who cannot play sound in a quiet library, and keyboard navigation can help someone whose hand is temporarily injured. Thus, an accessibility feature designed to address one difficulty can also serve users facing a similar barrier for a different reason.\n\n[요약문]\nWeb accessibility responds to barriers by (A) the ways users receive information or operate a site, and the value of these features is determined by users’ (B), rather than solely by whether they have lasting disabilities.",
+"choices": [
+"standardizing — access needs",
+"diversifying — disability status alone",
+"diversifying — access needs",
+"simplifying — preferred website topics",
+"standardizing — disability status alone"
+],
+"answer": "③",
+"solution": "대체 텍스트, 대본·자막, 키보드 탐색은 정보 수용이나 사이트 조작 방식을 다양화하므로 (A)에는 diversifying이 적절하다. 또한 도서관 이용자와 일시적으로 손을 다친 사람의 사례는 영구적 장애 여부보다 실제 접근상의 필요가 중요함을 보여 주므로 (B)에는 access needs가 들어간다. 따라서 두 논점을 모두 반영한 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b02-u7m3s0t0",
+"custom": true
 }
 ]

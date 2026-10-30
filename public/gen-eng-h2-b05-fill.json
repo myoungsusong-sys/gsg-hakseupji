@@ -1834,5 +1834,119 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b05-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-585691175d",
+"typeId": "eng-h2-b05-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nM: How does a honeyguide bird get food from a bee nest safely?\nW: It first makes a loud noise to lead humans to the nest.\nM: What do the humans do there?\nW: They use smoke to drive the bees away and take the honey. Then the bird eats bits of the nest without being attacked.",
+"choices": [
+"The bird uses smoke to remove the bees.",
+"The bird guides humans to a bee nest.",
+"Humans give all the honey to the bird.",
+"The bird attacks the bees before eating.",
+"Humans follow the bird to catch it."
+],
+"answer": "②",
+"solution": "꿀잡이새는 큰 소리를 내며 인간을 벌집으로 안내한다. 연기를 사용해 벌을 쫓는 주체는 새가 아니라 인간이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-17ba2d4a14",
+"typeId": "eng-h2-b05-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 Richard의 ‘lion lights’에 관하여 알 수 없는 것은?\n\nRichard noticed that lions stayed away when he walked around his family’s cattle enclosure with a flashlight. Based on this observation, he put flashing LED bulbs on poles around the enclosure. He connected the bulbs to an old car battery powered by a solar panel. After the lights were installed, his family no longer lost cattle to lions.",
+"choices": [
+"what gave Richard the idea for the device",
+"where Richard placed the LED bulbs",
+"what supplied power to the old car battery",
+"whether the device protected his family’s cattle",
+"how much it cost Richard to make the device"
+],
+"answer": "⑤",
+"solution": "글에는 장치의 착안점, 설치 위치, 전력 공급 방식과 효과가 제시되어 있다. 장치를 만드는 데 든 비용은 언급되지 않았으므로 ⑤는 알 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-111e046fd1",
+"typeId": "eng-h2-b05-u2m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn Laguna, Brazil, dolphins help fishers catch migrating mullets. The dolphins drive groups of mullets toward the coast and signal that they are about to make a deep dive. The fishers watch for this signal and then cast their nets. The fishers catch more fish, while the dolphins eat mullets that try to escape from the nets.",
+"choices": [
+"The cooperation takes place in Laguna, Brazil.",
+"The dolphins move groups of mullets toward the coast.",
+"The fishers observe the dolphins before casting their nets.",
+"The fishers catch fewer fish because of the dolphins.",
+"The dolphins can eat fish escaping from the nets."
+],
+"answer": "④",
+"solution": "돌고래와 협력한 결과 어부들은 더 많은 물고기를 잡는다. 따라서 어부들이 더 적은 물고기를 잡는다는 ④는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a12c9b7446",
+"typeId": "eng-h2-b05-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 추론할 수 있는 것은?\n\nWhen an immortal jellyfish is attacked or does not have enough food, it can return to the polyp stage, an earlier stage in its life. A tiny jellyfish is later formed from the polyp, and a new life cycle begins. By repeating this process, the jellyfish can continue to renew itself.",
+"choices": [
+"The jellyfish can restart its life cycle when its survival is threatened.",
+"The jellyfish becomes a polyp only after laying eggs.",
+"A polyp is the final stage of the jellyfish’s life.",
+"The jellyfish must receive help from another animal to renew itself.",
+"A lack of food prevents the jellyfish from changing its life stage."
+],
+"answer": "①",
+"solution": "이 해파리는 공격받거나 굶주리면 이전 단계인 폴립으로 돌아간 뒤 새로운 생애 주기를 시작한다. 따라서 생존이 위협받을 때 생애 주기를 다시 시작할 수 있다는 ①을 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-bfc765330d",
+"typeId": "eng-h2-b05-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nCities can offer useful environments to some wild animals. Peregrine falcons use tall buildings as nesting sites, hunt at night with the help of artificial lighting, and ride warm urban air currents to soar. However, people do not always welcome wild animals near their homes, particularly when the animals are predators high in the food chain.",
+"choices": [
+"Peregrine falcons avoid nesting in tall urban structures.",
+"Artificial lighting makes it impossible for falcons to hunt at night.",
+"Warm air currents in cities interfere with falcons’ flight.",
+"Every city resident enjoys having predators near residential areas.",
+"Urban environments provide peregrine falcons with several advantages."
+],
+"answer": "⑤",
+"solution": "도시는 송골매에게 둥지를 틀 높은 건물, 야간 사냥에 유용한 조명, 비행을 돕는 따뜻한 상승 기류를 제공한다. 따라서 도시 환경이 송골매에게 여러 이점을 준다는 ⑤가 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5b178af7b7",
+"typeId": "eng-h2-b05-u2m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답을 찾을 수 없는 질문은?\n\nNairobi is the world’s only capital with a national park. Lions sometimes left the park at night and attacked livestock raised by families living nearby. Thirteen-year-old Richard Turere discovered that the lions were frightened by moving lights. He created flashing lights around his family’s cattle enclosure, and the device successfully kept the lions away. His neighbors later installed similar lights.",
+"choices": [
+"What makes Nairobi different from other capital cities?",
+"Why were nearby families concerned about the lions?",
+"What animal behavior did Richard observe?",
+"How did Richard’s device help his family?",
+"How many LED bulbs did each neighbor install?"
+],
+"answer": "⑤",
+"solution": "글을 통해 나이로비의 특징, 주민들의 문제, Richard의 관찰 및 장치의 효과를 확인할 수 있다. 그러나 이웃들이 각각 설치한 LED 전구의 개수는 제시되지 않아 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b05-u2m4s0t0",
+"custom": true
 }
 ]

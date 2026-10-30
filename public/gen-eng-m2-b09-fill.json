@@ -865,5 +865,242 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b09-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-238feb1389",
+"typeId": "eng-m2-b09-u0m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 우리말을 영어로 바르게 옮긴 것은?",
+"choices": [
+"나는 숙면을 위해 무엇을 해야 할지 모른다. → I don't know what should I do for good sleep.",
+"문제는 규칙적인 수면 습관을 어떻게 유지할지이다. → The question is how to keep a regular sleep pattern.",
+"너는 왜 카페인을 피해야 할지 아니? → Do you know why to avoid caffeine?",
+"밤에 에너지 음료를 마신다면, 너는 잘 자지 못할 것이다. → If you will drink an energy drink at night, you won't sleep well.",
+"낮에 운동하면, 그는 밤에 쉽게 잠들 것이다. → If he exercises during the day, he fall asleep easily at night."
+],
+"answer": "②",
+"solution": "「의문사+to부정사」는 ‘어떻게 ~할지’라는 의미이므로 how to keep이 알맞다. 간접의문문은 의문사 뒤에 주어와 동사가 오며, 조건을 나타내는 if절에서는 미래의 일도 현재시제로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-60e257427d",
+"typeId": "eng-m2-b09-u0m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장만을 모두 고른 것은?\n\nⓐ Do you know what to do for better sleep?\nⓑ If you will take a long nap, you may not sleep well.\nⓒ Your body clock tells you when should you wake up.\nⓓ Remember finish exercising a few hours before bedtime.\nⓔ Foods and drinks such as chocolate and tea may have caffeine.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓔ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "ⓐ의 what to do와 ⓔ의 such as가 바르게 쓰였다. ⓑ는 will take를 take로, ⓒ는 when should you wake up을 when to wake up 또는 when you should wake up으로 고쳐야 한다. ⓓ는 remember 뒤에 목적을 나타내는 to finish가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4271dfd5f2",
+"typeId": "eng-m2-b09-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문맥과 어법에 맞도록 (A)~(D)의 단어를 각각 한 단어로 고쳐 쓰시오. (고친 단어만 순서대로 쓸 것)\n\nIf you (A)will use your smartphone late at night, its blue light can make your brain (B)staying active. To sleep well, do not (C)using your phone right before you (D)will go to bed.",
+"selfGrade": true,
+"answer": "use, stay, use, go",
+"solution": "조건을 나타내는 if절에서는 미래의 일도 현재시제 use로 표현한다. 사역동사 make의 목적격보어에는 동사원형 stay가 오고, do not 뒤에도 동사원형 use가 필요하다. 시간을 나타내는 before절에서도 미래를 나타낼 때 현재시제 go를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-a1f5409431",
+"typeId": "eng-m2-b09-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 의미가 같도록 조건에 맞게 영작하시오.\n\n숙면을 위해 무엇을 해야 할지 알고 싶다면, 자기 직전에 스마트폰을 사용하지 마라.\n\n<조건>\n- If로 시작할 것\n- 「의문사+to부정사」를 사용할 것\n- right before bedtime을 포함할 것\n- 총 18단어로 쓸 것",
+"selfGrade": true,
+"answer": "If you want to know what to do for good sleep, don't use your smartphone right before bedtime.",
+"solution": "‘무엇을 해야 할지’는 what to do로 표현한다. 조건절은 If you want to know로 시작하고, ‘자기 직전에’는 right before bedtime으로 나타낸다. 제시된 정답은 축약형 don't을 한 단어로 세어 총 18단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-95f127215d",
+"typeId": "eng-m2-b09-u0m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 질문에 대한 대답을 조건에 맞게 한 문장으로 쓰시오.\n\nQ. Why shouldn't you exercise right before bedtime?\n\n<조건>\n- If로 시작할 것\n- too ... to 구문을 사용할 것\n- 본문의 내용에 맞게 쓸 것\n- 총 16단어로 쓸 것",
+"selfGrade": true,
+"answer": "If you exercise right before bedtime, your body may be too awake to fall asleep easily.",
+"solution": "취침 직전에 운동하면 몸이 지나치게 깨어 있어 쉽게 잠들지 못할 수 있다. ‘너무 깨어 있어서 쉽게 잠들 수 없다’는 too awake to fall asleep easily로 나타낸다. 조건절의 동사는 현재형 exercise를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-192725c1c1",
+"typeId": "eng-m2-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 밑줄 친 문장과 의미가 같은 것은?\n\nSubin: I want to make cheese cookies for Kate. Can I use the oven, Dad?\nDad: Sure. I can help you before my online meeting.\n\n밑줄 친 문장: Can I use the oven, Dad?",
+"choices": [
+"Do you know how to use the oven, Dad?",
+"Are you going to use the oven, Dad?",
+"Is it okay if I use the oven, Dad?",
+"Do I have to use the oven, Dad?",
+"Would you like to use the oven, Dad?"
+],
+"answer": "③",
+"solution": "‘Can I ~?’는 상대방에게 허락을 구하는 표현으로, ‘Is it okay if I ~?’로 바꿔 쓸 수 있다. 두 문장 모두 아빠에게 자신이 오븐을 사용해도 되는지 묻는다. 나머지는 방법, 계획, 의무 또는 의향을 묻는 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e1111a8661",
+"typeId": "eng-m2-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장에서 표시한 낱말의 문맥상 의미로 알맞지 않은 것은?\n\n• Bobby ⓐpiled the wooden blocks to make a tower.\n• Bob ⓑsneezed, and the tower fell down.\n• Later, Bob became ill, but Bobby hoped he would ⓒrecover.\n• Bob slowly ⓓmoved his fingers.\n• When Bob stood up, he ⓔleaned on Bobby’s shoulders.",
+"choices": [
+"ⓐ: 쌓았다",
+"ⓑ: 재채기했다",
+"ⓒ: 기억하다",
+"ⓓ: 움직였다",
+"ⓔ: 기댔다"
+],
+"answer": "③",
+"solution": "recover는 병이나 부상에서 ‘회복하다’라는 뜻이다. Bobby가 아픈 Bob의 회복을 바랐다는 문맥이므로 ‘기억하다’로 풀이할 수 없다. 나머지 낱말의 뜻은 각 문맥에 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-980f91a105",
+"typeId": "eng-m2-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 두 문장을 to부정사를 이용하여 한 문장으로 바꿀 때, 빈칸에 알맞은 것은?\n\n• Bobby had some wooden blocks.\n• He could play with them.\n\n→ Bobby had some wooden blocks __________.",
+"choices": [
+"to play",
+"to play with",
+"play with",
+"to playing with",
+"to play with them"
+],
+"answer": "②",
+"solution": "앞의 명사 blocks를 꾸미는 to부정사를 사용하면 ‘가지고 놀 나무 블록’이라는 뜻이 된다. ‘~을 가지고 놀다’는 play with이므로 전치사 with를 남겨야 한다. blocks가 이미 with의 목적어에 해당하므로 them을 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-73a18ddd3d",
+"typeId": "eng-m2-b09-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음은 Bob과 Bobby의 이야기를 요약한 글이다. <보기>의 단어를 각각 한 번씩 사용하여 빈칸을 완성하시오.\n\n<보기> hold / move / recover / sneeze / teach\n\n<조건>\n• 각 빈칸에는 한 단어만 쓸 것.\n• 문맥과 어법에 맞게 형태를 바꿀 것.\n• 답은 (A)~(E)의 순서대로 쓸 것.\n\nWhen Bobby was little, Bob (A)__________ him how to walk. Bob (B)__________ Bobby’s hands while helping him. They also played with blocks, and once their tower fell when Bob (C)__________. Later, Bob became ill and lay in bed without (D)__________ his arms or legs. When Bob made a small sound during their block game, Bobby believed that he would (E)__________.",
+"selfGrade": true,
+"answer": "taught, held, sneezed, moving, recover",
+"solution": "어린 시절의 일을 서술하는 (A)~(C)에는 과거형 taught, held, sneezed가 들어간다. (D)는 전치사 without 뒤이므로 동명사 moving이 알맞다. (E)는 조동사 would 뒤이므로 동사원형 recover를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-ad69bd1366",
+"typeId": "eng-m2-b09-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장을 to부정사를 사용하여 한 문장으로 완성하시오.\n\n• Bob and Bobby had some wooden blocks.\n• They could build a tower with them.\n\n→ Bob and Bobby had some wooden blocks ____________________.\n\n<조건>\n• 빈칸에는 ‘탑을 쌓는 데 사용할’이라는 뜻으로 blocks를 꾸미는 표현을 쓸 것.\n• build, a, tower, with를 모두 사용할 것.\n• 필요한 단어 한 개만 추가하여 총 다섯 단어로 쓸 것.\n• them은 쓰지 말고, 빈칸에 들어갈 부분만 답할 것.",
+"selfGrade": true,
+"answer": "to build a tower with",
+"solution": "blocks를 꾸미도록 to부정사를 만들면 to build a tower with가 된다. 원래 문장에서 them은 blocks를 가리키므로 합친 문장에서는 생략한다. 블록을 ‘사용하여’ 탑을 쌓는다는 관계를 나타내는 전치사 with는 끝에 남겨야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-eebb2a6649",
+"typeId": "eng-m2-b09-u1m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 내용을 모두 포함하여, 아빠에게 허락을 구하는 하나의 의문문을 쓰시오.\n\n• Can I use the oven?\n• I want to bake some cheese cookies for Kate.\n\n<조건>\n• Is it okay if로 시작할 것.\n• 오븐을 사용하려는 목적을 to부정사로 나타낼 것.\n• 아래 단어를 각각 한 번씩 모두 사용하고, 단어를 추가하거나 형태를 바꾸지 말 것.\n• 문장 끝에 물음표를 쓸 것.\n\n<사용할 단어>\nIs / it / okay / if / I / use / the / oven / to / bake / some / cheese / cookies / for / Kate",
+"selfGrade": true,
+"answer": "Is it okay if I use the oven to bake some cheese cookies for Kate?",
+"solution": "허락을 구하는 Can I use the oven?은 Is it okay if I use the oven?으로 바꿀 수 있다. if 뒤에는 주어 I와 동사 use를 평서문 어순으로 배치한다. 오븐을 사용하는 목적은 to bake 이하로, 쿠키를 만들어 줄 대상은 for Kate로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-d957779d53",
+"typeId": "eng-m2-b09-u2m7s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 능동태 문장을 수동태 문장으로 바꿀 때, 빈칸에 들어갈 말을 쓰시오. (각 빈칸에 한 단어씩 쓰고, 행위자를 생략하지 말 것)\n\nMs. Wakefield invented chocolate chip cookies.\n→ Chocolate chip cookies ______ ______ ______ ______ ______.",
+"selfGrade": true,
+"answer": "were invented by Ms. Wakefield",
+"solution": "목적어인 chocolate chip cookies가 수동태 문장의 주어가 된다. 주어가 복수이고 원래 문장이 과거시제이므로 were invented를 쓰며, 행위자는 by Ms. Wakefield로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-22104289f7",
+"typeId": "eng-m2-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ에 대한 문맥상 의미 설명으로 알맞지 않은 것은?\n\nMr. Bénédictus ⓐaccidentally hit a glass flask while experimenting with liquid plastic. The flask broke, but the pieces ⓑheld together because of the plastic inside. His ⓒfinding led to the invention of safety glass. The story shows that an invention can come ⓓby chance. Even when things ⓔgo wrong, an unexpected result can lead to an invention.",
+"choices": [
+"① ⓐ: 의도하지 않게 어떤 일이 일어났음을 나타낸다.",
+"② ⓑ: 조각들이 서로 붙어 있는 상태를 나타낸다.",
+"③ ⓒ: 관찰을 통해 알아낸 사실을 가리킨다.",
+"④ ⓓ: 미리 세운 계획에 따라 이루어졌음을 나타낸다.",
+"⑤ ⓔ: 일이 예상하거나 바라던 대로 되지 않음을 나타낸다."
+],
+"answer": "④",
+"solution": "by chance는 ‘우연히’라는 뜻으로, 미리 계획한 결과라는 설명은 적절하지 않다. held together는 깨진 조각들이 흩어지지 않고 서로 붙어 있었다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1ecbc7df7b",
+"typeId": "eng-m2-b09-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 두 문장을 각각 수동태로 바꾸었을 때, 두 문장 모두 원래의 의미와 시제를 바르게 유지한 것은?\n\n• A factory worker spilled lamp oil on a tablecloth.\n• People widely use dry cleaning around the world.",
+"choices": [
+"① Lamp oil was spilled on a tablecloth by a factory worker. / Dry cleaning widely uses around the world.",
+"② Lamp oil is spilled on a tablecloth by a factory worker. / Dry cleaning is widely used around the world.",
+"③ Lamp oil was spilled on a tablecloth by a factory worker. / Dry cleaning is widely used around the world.",
+"④ A tablecloth was spilled on lamp oil by a factory worker. / Dry cleaning is widely used around the world.",
+"⑤ Lamp oil was spilled on a tablecloth by a factory worker. / Dry cleaning was widely used around the world."
+],
+"answer": "③",
+"solution": "첫 문장에서 spilled의 목적어는 lamp oil이며 과거시제이므로 Lamp oil was spilled로 바꾼다. 두 번째 문장은 현재시제이므로 Dry cleaning is widely used가 되어야 한다. ④는 첫 문장의 목적어를 잘못 골랐고, ⑤는 두 번째 문장의 시제를 바꾸었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-68e9f9f643",
+"typeId": "eng-m2-b09-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글을 읽고 요약문의 빈칸을 완성하시오. (각 빈칸에 한 단어씩 쓰되, 글에서 찾아 그대로 쓸 것)\n\nMs. Wakefield wanted to make chocolate cookies, but she had little time. Instead of melting chocolate first, she cut a chocolate bar into chips and added them to the dough. In the oven, the chips did not melt into the dough. They remained in the cookies. However, she was not disappointed because the cookies were delicious.\n\n[요약문]\nAlthough the chocolate chips (A)______ in the cookies, Ms. Wakefield was not (B)______. The cookies tasted (C)______.",
+"selfGrade": true,
+"answer": "remained disappointed delicious",
+"solution": "초콜릿 조각들은 반죽에 녹아들지 않고 쿠키 속에 남아 있었으므로 (A)는 remained이다. 예상과 다른 결과에도 실망하지 않았으므로 (B)는 disappointed이며, 쿠키의 맛을 나타내는 (C)는 delicious이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b09-u2m7s0t0",
+"custom": true
 }
 ]

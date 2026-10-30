@@ -4588,5 +4588,88 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u7m2s0t0",
 "custom": true
+},
+{
+"id": "fill-da59cb91d0",
+"typeId": "eng-m3-b04-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe tiny holes in crackers have a purpose. While crackers are baking, steam escapes through these openings. This helps the crackers become thin and crispy. The holes do more than change how the crackers look.",
+"choices": [
+"Why Crackers Have Tiny Holes",
+"How to Keep Crackers Warm",
+"Different Shapes of Crackers",
+"Why Thin Crackers Need More Steam",
+"The Best Way to Serve Crackers"
+],
+"answer": "①",
+"solution": "글은 크래커의 작은 구멍으로 수증기가 빠져나가 크래커가 얇고 바삭해진다고 설명한다. 따라서 구멍이 있는 이유를 나타낸 ①이 제목으로 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-d28ae50c41",
+"typeId": "eng-m3-b04-u6m3s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 ⓐ, ⓑ에 들어갈 말로 가장 알맞게 연결된 것은?\n\nA tiny opening can serve different purposes depending on where it is. In a pen cap, it provides a passage for air if someone swallows the cap. In a pot lid, it provides an exit for steam during cooking. The first can help a person breathe, while the second helps prevent boiling water from spilling out. Both openings are small, but their roles matter.\n\nAlthough the holes deal with different problems by allowing different ⓐ__________ to pass through, both can improve ⓑ__________.",
+"choices": [
+"ⓐ materials — ⓑ appearance",
+"ⓐ amounts of water — ⓑ safety",
+"ⓐ materials — ⓑ safety",
+"ⓐ amounts of water — ⓑ appearance",
+"ⓐ materials — ⓑ cooking speed"
+],
+"answer": "③",
+"solution": "펜 뚜껑에서는 공기가, 냄비 뚜껑에서는 수증기가 구멍을 통과하므로 ⓐ에는 materials가 알맞다. 두 구멍은 각각 호흡 중단과 끓는 물의 넘침을 막는 데 도움을 주므로 공통 목적을 나타내는 ⓑ에는 safety가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-532a9809fd",
+"typeId": "eng-m3-b04-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nA hole in a sock may be unwelcome, but that does not mean every hole should be closed. An opening in a pen cap can provide a way for air to move through if the cap is swallowed. Another in a pot lid allows steam to escape, helping keep boiling water inside the pot. The middle pane of an airplane window also has a tiny opening. It helps balance air pressure and keeps the window clear. These openings may attract little attention, yet understanding their purposes changes how we see them.",
+"choices": [
+"작은 구멍은 대체로 물건이 손상되었다는 신호이므로 용도에 따라 수리해야 한다.",
+"작은 구멍은 공기를 통과시키는 동일한 방식으로 모든 물건의 안전성을 높인다.",
+"물건을 안전하게 사용하는 일보다 숨겨진 구멍을 찾아내는 일 자체가 더 중요하다.",
+"잘 보이지 않는 작은 구멍도 위치에 따라 유용한 기능을 하므로 그 목적에 주목할 필요가 있다.",
+"안전을 위해 만든 작은 구멍은 다른 기능을 수행할 수 없으므로 목적별로 따로 만들어야 한다."
+],
+"answer": "④",
+"solution": "글은 양말의 구멍과 달리 펜 뚜껑, 냄비 뚜껑, 비행기 창문의 구멍에는 유용한 목적이 있음을 설명한다. 따라서 작은 구멍의 위치별 기능과 목적에 주목하자는 ④가 요지이다. ②는 수증기의 배출과 기압의 균형까지 모두 동일한 공기 통과 방식으로 단정하므로 부적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-f7545b6116",
+"typeId": "eng-m3-b04-u6m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 요약한 문장의 빈칸 ⓐ~ⓓ에 들어갈 말을 <보기>에서 골라 쓰시오. 필요한 경우 어형을 바꾸고, 각 단어는 한 번만 사용하시오.\n\nSmall openings are useful in several familiar objects. If a swallowed pen cap blocks a person's breathing, an opening in the cap can still provide a path for air. In a covered pot, steam can escape through an opening in the lid, helping stop boiling water from spilling over. An opening in the middle pane of an airplane window helps keep air pressure balanced. It also keeps the window from becoming foggy. These examples show why an opening should not be judged only by its size.\n\n<보기>\nrelease / block / balance / remove / important / dangerous / decorate / replace\n\nThe value of these openings lies in their functions: keeping a swallowed cap from completely ⓐ__________ airflow, ⓑ__________ steam from a pot, and ⓒ__________ air pressure in an airplane window. Their small size does not mean that they are ⓓ__________.\n\n※ 답은 ⓐ, ⓑ, ⓒ, ⓓ의 순서로 쓰시오.",
+"selfGrade": true,
+"answer": "blocking, releasing, balancing, unimportant",
+"solution": "펜 뚜껑의 구멍은 공기의 흐름이 완전히 차단되지 않도록 하고, 냄비 뚜껑의 구멍은 수증기를 내보내며, 비행기 창문의 구멍은 기압의 균형을 돕는다. 앞의 from 뒤와 병렬 구조에 맞추어 blocking, releasing, balancing을 쓴다. 마지막 문장은 크기가 작다고 중요하지 않은 것은 아니라는 뜻이므로 important를 unimportant로 바꿔야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-8e216736f8",
+"typeId": "eng-m3-b04-u6m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 핵심 내용을 <조건>에 맞게 영어 한 문장으로 요약하시오.\n\nPeople may overlook a tiny opening because it seems too small to matter. Yet a pen cap with an opening can allow air to pass through when someone swallows it. A pot lid has an opening through which steam escapes, helping prevent boiling water from overflowing. In the middle pane of an airplane window, an opening helps maintain balanced air pressure. Such details show that something we hardly notice can play an important role in keeping us safe.\n\n<조건>\n• Small holes로 시작하는 24~28단어의 한 문장으로 쓸 것.\n• 세 사례의 작동 원리를 '공기나 수증기의 통과'와 '기압의 균형'으로 묶어 모두 포함할 것.\n• 안전에 주는 도움과 크기가 중요성을 나타내지는 않는다는 내용을 모두 포함할 것.\n• 다음 표현을 모두 사용할 것. 단, 어형은 바꿀 수 있음.\n  allow / balance / safety / importance",
+"selfGrade": true,
+"answer": "Small holes can improve safety by allowing air or steam to pass through or by balancing air pressure, so their size does not show their importance.",
+"solution": "세 사례는 공기나 수증기를 통과시키거나 기압의 균형을 유지하여 안전에 도움을 준다는 내용으로 묶을 수 있다. 여기에 작은 크기가 중요성이 낮다는 뜻은 아니라는 글의 핵심 관점을 덧붙인다. 정답은 26단어로, 지정된 시작 표현과 필수 표현을 모두 포함한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u6m3s0t0",
+"custom": true
 }
 ]

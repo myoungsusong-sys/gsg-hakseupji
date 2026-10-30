@@ -3512,5 +3512,157 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b06-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-46d111a684",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 동아리 구성원들이 동물 보호소를 봉사 장소로 정한 주된 이유는?\n\nThe leader of Care for Animals planned a volunteer trip with the club members. A sanctuary protects animals that have been rescued, hurt, or abused. The members agreed to volunteer there because they wanted to learn how animals should be cared for.",
+"choices": [
+"야생 동물을 직접 사냥하기 위해서",
+"동물 보호 관련 법률을 만들기 위해서",
+"동물을 돌보는 법을 배우기 위해서",
+"새로운 동아리 회원을 모집하기 위해서",
+"전통 의학에 쓰이는 재료를 조사하기 위해서"
+],
+"answer": "③",
+"solution": "동아리 구성원들은 동물 보호소가 동물 돌봄에 관해 배우기에 적절한 장소라고 판단했다. 따라서 봉사 장소를 정한 주된 이유는 동물을 돌보는 법을 배우기 위해서이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-36e1e106f4",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 바탕으로 꿀 통나무 먹이통을 만든 과정으로 알맞은 것은?\n\nThe volunteers prepared a special feeder for Ben and Lily. They made holes in a log, put honey into the holes, and then hung the feeder from a tree near the bears’ living area.",
+"choices": [
+"통나무를 나무에 건 뒤 구멍을 뚫었다.",
+"통나무의 구멍에 꿀을 넣은 뒤 나무에 걸었다.",
+"꿀을 나무에 바른 뒤 통나무를 땅에 묻었다.",
+"통나무를 우리 안에 놓은 뒤 꿀을 제거했다.",
+"구멍이 없는 통나무를 곰에게 바로 주었다."
+],
+"answer": "②",
+"solution": "봉사자들은 먼저 통나무에 구멍을 만들고 그 안을 꿀로 채웠다. 그다음 먹이통을 곰들의 생활 공간 근처 나무에 걸었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-d1d647fd22",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화에서 Kelly가 중고 물품 대신 쿠키를 준비하려는 이유는?\n\nJun and Kelly are discussing what to bring to Friday’s charity market. Kelly looked for used items in her room, but none of them were in good enough condition. She therefore plans to bake banana cookies with honey.",
+"choices": [
+"금요일에는 중고 물품을 팔 수 없어서",
+"Jun이 쿠키를 만들어 달라고 부탁해서",
+"방에서 찾은 물건들이 모두 너무 낡아서",
+"바나나와 꿀을 기부받았기 때문에",
+"어린이 병원에서 쿠키만 요청해서"
+],
+"answer": "③",
+"solution": "Kelly는 방에서 중고 물품을 찾아보았지만 모두 너무 낡았다고 말했다. 그래서 중고 물품을 가져가는 대신 쿠키를 구우려고 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b98151f291",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nDehydrated birds were taken to the rescue center after falling from the sky in the city. Under a veterinarian’s direction, the volunteers gave them water. Meanwhile, the veterinarians cared for their injured wings and legs and gave them vitamin injections to support a quick recovery.",
+"choices": [
+"새들은 동물 보호소에서 탈출한 뒤 구조되었다.",
+"봉사자들은 수의사의 지시에 따라 새들에게 물을 주었다.",
+"봉사자들이 새들의 부러진 날개와 다리를 직접 수술했다.",
+"수의사들은 새들의 회복을 늦추기 위해 비타민 투여를 중단했다.",
+"새들은 다친 곳이 없었으므로 수분 공급만 필요했다."
+],
+"answer": "②",
+"solution": "글에서 봉사자들은 수의사의 지침에 따라 탈수된 새들에게 물을 제공했다. 다친 날개와 다리를 치료하고 비타민을 주사한 사람들은 수의사들이므로 ②가 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-dec3b6df76",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답을 찾을 수 없는 질문은?\n\nSeveral kinds of bears are captured for their bile. Brown bears are targeted in Eurasia and North America, sun bears in Southeast Asia, and Asiatic black bears in Asia. Their bile is sold at a high price for use in traditional Asian medicine. Although many countries prohibit bile farming, continuing demand allows the practice to persist.",
+"choices": [
+"Which three kinds of bears are mentioned as targets of bile farming?",
+"In which regions are brown bears hunted for their bile?",
+"For what purpose is bear bile sold?",
+"Why does bile farming continue despite legal bans?",
+"How much money does a bear bile farm earn each year?"
+],
+"answer": "⑤",
+"solution": "글에는 대상이 되는 곰의 종류와 지역, 곰의 쓸개즙이 쓰이는 목적, 사육이 지속되는 이유가 제시되어 있다. 그러나 곰 쓸개즙 농장의 연간 수입은 언급되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-68ff276bf9",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글로부터 추론할 수 있는 것은?\n\nBen and Lily had spent years in a small cage on a farm before being rescued. The volunteers gave them behavioral enrichment using honey-filled log feeders. Such activities provide mental and physical stimulation and encourage the bears to use the curiosity and instincts that they would normally display in nature.",
+"choices": [
+"Ben과 Lily는 구조되기 전에도 야생과 같은 자극을 충분히 받았다.",
+"행동 풍부화 활동은 곰이 사람에게 더 의존하도록 만드는 훈련이다.",
+"꿀 통나무 먹이통은 곰의 자연스러운 행동 회복에 도움을 줄 수 있다.",
+"작은 우리에서 생활하면 곰의 호기심이 항상 더 강해진다.",
+"봉사자들은 곰을 농장으로 돌려보내기 위해 먹이통을 만들었다."
+],
+"answer": "③",
+"solution": "행동 풍부화는 곰에게 정신적·신체적 자극을 주고 자연적 호기심과 본능을 발휘하게 한다. 따라서 꿀 통나무 먹이통이 곰의 자연스러운 행동 회복을 도울 수 있다고 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a6e2a4a315",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하는 진술만을 <보기>에서 고른 것은?\n\nDuring the final day of volunteering, the writer helped care for dehydrated birds at a rescue center. The accident recurs because extreme heat dries up urban water sources. This experience led the writer to consider how human activities contribute to climate change and harm animals. The writer also recognized that humans share the planet with other living creatures and promised to keep working for animal welfare.\n\n<보기>\nㄱ. 새들에게 발생한 사고는 도시의 수원 고갈과 관련이 있다.\nㄴ. 글쓴이는 기후 변화와 인간의 활동이 서로 무관하다고 결론지었다.\nㄷ. 글쓴이는 인간 역시 지구를 공유하는 동물의 한 종류라고 깨달았다.\nㄹ. 글쓴이는 이번 경험을 끝으로 동물 복지 활동을 중단하기로 했다.",
+"choices": [
+"ㄱ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "고온으로 도시의 수원이 말라 새들이 피해를 입었으므로 ㄱ은 일치한다. 글쓴이는 인간도 다른 생명체와 지구를 공유하는 동물이라고 깨달았으므로 ㄷ도 일치한다. 인간 활동의 영향을 성찰했고 앞으로도 동물 복지를 위해 노력하겠다고 했으므로 ㄴ과 ㄹ은 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9d9256f623",
+"typeId": "eng-h1-b06-u4m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽은 학생의 반응으로 가장 적절한 것은?\n\nBears have the right to live freely, but encounters with people sometimes lead to their deaths. In addition, some bears are illegally kept for bile even where the practice is banned. Governments and animal welfare groups repeatedly search for such farms, rescue the bears, and move them to sanctuaries or other safe places. Animal rights have improved since UNESCO’s 1978 statement about animals’ right to respect, but legal protection remains incomplete for some animals.",
+"choices": [
+"곰 보호 문제는 인간과 곰이 만나는 상황과는 관련이 없군.",
+"곰 쓸개즙 사육이 금지된 곳에서는 불법 사육이 완전히 사라졌군.",
+"동물권이 발전했으므로 이제 모든 동물이 법으로 충분히 보호받는군.",
+"구조 활동뿐 아니라 지속적인 관심과 법적 보호의 보완도 필요하겠군.",
+"안전한 보호소보다 불법 농장에 곰을 계속 두는 것이 자연스럽겠군."
+],
+"answer": "④",
+"solution": "정부와 동물 복지 단체가 곰을 구조해 안전한 장소로 옮기고 있지만, 일부 동물은 여전히 충분한 법적 보호를 받지 못한다. 따라서 구조 활동과 함께 지속적인 관심 및 보호 제도의 보완이 필요하다는 ④가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b06-u4m4s0t0",
+"custom": true
 }
 ]

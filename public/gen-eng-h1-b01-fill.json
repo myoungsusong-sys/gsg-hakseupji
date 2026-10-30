@@ -3085,5 +3085,458 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b01-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-a5cc025426",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하는 것은?\n\nB: What did you learn during your exchange program in Germany, Heeju?\nG: I learned that celebrating someone’s birthday before the actual date is believed to bring bad luck there.\nB: Did you notice any similarities between German and Korean culture?\nG: Yes. In both cultures, people may remove their shoes before entering someone’s home.",
+"choices": [
+"Heeju participated in an exchange program in Korea.",
+"Germans believe that an early birthday celebration can bring bad luck.",
+"Heeju found no similarities between the two cultures.",
+"Germans always wear their shoes inside another person’s home.",
+"Heeju learned nothing about German culture."
+],
+"answer": "②",
+"solution": "Heeju는 독일에서 실제 생일보다 일찍 축하하는 것을 불운하게 여긴다는 사실을 배웠다. 따라서 대화의 내용과 일치하는 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-0dc4af19d6",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nTigers once lived in such large numbers in Korea that the country was known as the “Land of Tigers.” They are believed to have lived on the Korean Peninsula for at least 100,000 years. Tigers also appeared in Korean culture as early as the Bronze Age, when they were depicted in rock art.",
+"choices": [
+"Why was Korea called the “Land of Tigers”?",
+"For how long are tigers believed to have lived in Korea?",
+"In which period did tigers first appear in Korean culture?",
+"Where were tigers depicted during the Bronze Age?",
+"Who created the Bronze Age rock art?"
+],
+"answer": "⑤",
+"solution": "글에는 호랑이가 많았던 이유, 서식 기간, 문화적 등장 시기와 암각화에 묘사되었다는 사실이 제시되어 있다. 그러나 그 암각화를 만든 사람이 누구인지는 언급되지 않았으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-be3f87ae80",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nIn a Korean folktale, a person saves a tiger’s life. The tiger later helps that person become rich. This story is an example of a folktale in which a tiger is presented positively.",
+"choices": [
+"The story is a Korean folktale.",
+"A person saves a tiger.",
+"The tiger later helps the person.",
+"The person becomes rich with the tiger’s help.",
+"The tiger is described only as a foolish creature."
+],
+"answer": "⑤",
+"solution": "이 이야기에서 호랑이는 자신을 구해 준 사람을 부자가 되도록 돕는 긍정적인 존재이다. 호랑이가 어리석은 존재로만 묘사된다는 ⑤는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-79dac6351f",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 가장 잘 이해한 학생은?\n\nTae Keller’s When You Trap a Tiger was inspired by “The Sun and the Moon,” a folktale her grandmother told her. The old story features a brother, a sister, and a tiger. By creating her own story, Keller hoped to bring people’s attention back to tigers.",
+"choices": [
+"민수: Keller wrote down her grandmother’s story without making any changes.",
+"서연: Keller found the folktale in a book published by a museum.",
+"지훈: Keller’s grandmother was inspired by When You Trap a Tiger.",
+"하린: A traditional story told by Keller’s grandmother influenced her book.",
+"유진: Keller wrote her book to reduce people’s interest in tigers."
+],
+"answer": "④",
+"solution": "Keller의 책은 할머니가 들려준 옛이야기 「해와 달」에서 영감을 받았다. 이를 정확히 이해한 학생은 하린이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-fd9a6101f4",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 통해 추론할 수 있는 것은?\n\nPeople in the past admired the power and courage of tigers, but they were also afraid of being attacked by them. In some folktales, therefore, tigers were portrayed as foolish. For instance, one tiger ran away because it wrongly believed that a gotgam was a frightening creature.",
+"choices": [
+"People’s feelings toward tigers were entirely positive.",
+"Foolish tiger characters may have helped people deal with their fear.",
+"People made tigers look foolish because tigers lacked courage.",
+"A gotgam was an animal that commonly attacked tigers.",
+"All Korean folktales presented tigers in the same way."
+],
+"answer": "②",
+"solution": "사람들은 호랑이의 힘을 존중하면서도 호랑이를 두려워했다. 호랑이를 어리석게 묘사한 것은 이러한 두려움을 줄이려는 방법이었을 수 있으므로 ②를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-5f8d0a0222",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAlthough the national symbolism of tigers weakened after they disappeared from Korea, it became prominent again in modern times. Hodori, a Siberian tiger symbolizing courage, represented the 1988 Seoul Summer Olympics. Thirty years later, Soohorang, a white tiger associated with sacred guardianship, became the mascot of the PyeongChang Winter Olympics.",
+"choices": [
+"The symbolism of tigers grew weaker after the Seoul Olympics.",
+"Both Olympic mascots were white tigers.",
+"Hodori was associated with courage.",
+"Soohorang was created for the Seoul Summer Olympics.",
+"Korea stopped using tigers as national symbols in modern times."
+],
+"answer": "③",
+"solution": "글에서 Hodori는 용기를 상징하는 시베리아호랑이라고 설명한다. 두 마스코트의 종류와 해당 올림픽을 바꾸어 제시한 다른 선택지는 글과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ebab52285f",
+"typeId": "eng-h1-b01-u6m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 바탕으로 판단한 내용으로 옳은 것만을 모두 고른 것은?\n\nA verse of the K-pop song “Tiger is Coming” reinterprets part of the traditional Korean song “Sugungga.” The song attracted attention around the world, and its online video received millions of views. Today, reports indicate that only a small number of wild tigers remain in North Korea. Nevertheless, tigers continue to be meaningful in Korea through the country’s history, stories, and culture. The National Folk Museum of Korea also published a collection of Korean tiger stories in 2021.\n\n(a) “Tiger is Coming” contains an element drawn from a traditional Korean song.\n(b) The online video failed to attract international attention.\n(c) The passage states that many wild tigers currently live throughout Korea.\n(d) Tigers still possess cultural and historical significance for Koreans.\n(e) The museum’s publication gathered tiger stories from every country in the world.",
+"choices": [
+"(a), (b)",
+"(a), (d)",
+"(b), (c)",
+"(c), (e)",
+"(a), (d), (e)"
+],
+"answer": "②",
+"solution": "‘Tiger is Coming’에는 전통 노래 「수궁가」를 재해석한 부분이 있으며, 호랑이는 오늘날에도 한국에서 역사적·문화적 의미를 지닌다. 따라서 옳은 것은 (a), (d)이고, 세계적 관심을 받지 못했다거나 야생 호랑이가 많다는 내용 및 세계 각국의 이야기를 모았다는 내용은 모두 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m4s0t0",
+"custom": true
+},
+{
+"id": "fill-92d66f713e",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\n지구의 기온이 높아지면서 해수면이 상승하고 산불과 홍수 같은 자연재해가 늘고 있다. 인간이 만들어 내는 폐기물도 계속 증가하며, 특히 플라스틱은 토양과 물을 오염시킨다. 이러한 문제를 해결하기는 쉽지 않지만, 자연에서 해결의 실마리를 찾을 수 있다.",
+"choices": [
+"해수면은 지구의 기온이 상승할수록 낮아진다.",
+"플라스틱은 토양 오염과는 관계가 없다.",
+"인간은 자연 파괴의 주요 원인 중 하나이다.",
+"환경 문제는 이미 대부분 해결되었다.",
+"자연은 환경 문제의 해결에 도움을 줄 수 없다."
+],
+"answer": "③",
+"solution": "글에서는 인간이 배출하는 폐기물, 특히 플라스틱이 환경을 오염시킨다고 설명한다. 따라서 인간이 자연 파괴의 주요 원인 중 하나라는 ③이 글의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-6c575ff073",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nMealworms contain special bacteria that are able to digest plastic. Researchers are studying how to grow these bacteria separately from the mealworms and make the plastic-breaking process faster.",
+"choices": [
+"How long do adult beetles usually live?",
+"What inside mealworms can break down plastic?",
+"Why do marine animals eat mealworms?",
+"Where was plastic first invented?",
+"How much does it cost to recycle glass?"
+],
+"answer": "②",
+"solution": "글에는 밀웜의 몸속에 플라스틱을 분해할 수 있는 특별한 박테리아가 있다고 제시되어 있다. 따라서 글을 통해 답할 수 있는 질문은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-829603a753",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화에서 추론할 수 있는 것은?\n\nG: This product has a label saying that it uses only natural materials.\nB: That label alone may not show its complete environmental impact.\nG: Do you mean the company might be hiding the greenhouse gases released during production?\nB: Exactly. We should check such information before buying it.",
+"choices": [
+"천연 재료로 만든 제품은 생산 과정에서 온실가스를 전혀 배출하지 않는다.",
+"제품의 친환경 표시만으로 환경에 미치는 전체 영향을 판단하기는 어렵다.",
+"두 사람은 제품의 가격을 가장 중요한 구매 기준으로 생각한다.",
+"회사는 제품 생산 과정에 관한 정보를 모두 공개하고 있다.",
+"두 사람은 환경 관련 정보를 확인할 필요가 없다고 생각한다."
+],
+"answer": "②",
+"solution": "대화에서는 천연 재료를 사용했다는 표시가 제품의 전체 환경 영향을 모두 보여 주지는 않는다고 말한다. 생산 과정에서 배출되는 온실가스가 숨겨질 수도 있으므로 ②를 추론할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-e4459669f4",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nRemoving contaminated soil and carrying it to a landfill costs a great deal and merely transfers the pollution elsewhere. Willow trees offer another possibility. Their broad root systems take in various harmful substances, and the trees can grow rapidly even in highly acidic soil or soil containing many heavy metals. Researchers have learned that willow species differ in their ability to absorb pollutants, so further study is required.",
+"choices": [
+"오염된 흙을 매립지로 옮기는 방법은 비용이 많이 든다.",
+"오염된 흙의 이동은 오염 문제의 장소만 바꿀 수 있다.",
+"버드나무의 뿌리는 토양 속 여러 유해 물질을 흡수한다.",
+"모든 버드나무 종은 오염 물질을 흡수하는 능력이 동일하다.",
+"어떤 버드나무가 가장 효과적인지 알아보기 위한 연구가 더 필요하다."
+],
+"answer": "④",
+"solution": "글에서는 버드나무의 종에 따라 오염 물질을 흡수하는 능력이 다르다고 설명한다. 모든 종의 흡수 능력이 같다는 ④는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-b3e3fffc48",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 바탕으로 추론한 내용으로 가장 적절한 것은?\n\nUsed coffee grounds are commonly discarded in landfills, where they may generate a damaging greenhouse gas. Researchers can instead use the grounds to grow algae without supplying extra nutrients. When the algae receive a regular cycle of light and darkness, they produce renewable biofuel that releases relatively few emissions.",
+"choices": [
+"커피 소비를 완전히 중단해야만 온실가스를 줄일 수 있다.",
+"조류를 기르려면 커피 찌꺼기 외에 많은 영양분을 반드시 넣어야 한다.",
+"커피 찌꺼기를 재활용하면 폐기물과 온실가스 문제를 줄이는 데 도움이 될 수 있다.",
+"조류로 만든 바이오 연료는 재생이 불가능한 화석 연료이다.",
+"커피 찌꺼기는 매립지에서 환경에 해로운 물질을 전혀 만들지 않는다."
+],
+"answer": "③",
+"solution": "커피 찌꺼기를 매립하지 않고 조류를 기르는 데 이용하면 재생 가능한 바이오 연료를 생산할 수 있다. 따라서 폐기물의 양과 온실가스 배출을 줄이는 데 도움이 될 수 있다는 ③이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-f7f6a234d2",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 해결책의 차이를 <조건>에 맞게 영어 한 문장으로 요약하시오.\n\n• Algae grown on used coffee grounds can produce renewable biofuel.\n• Willow trees can absorb dangerous substances from contaminated soil.\n\n<조건>\n1. while을 반드시 사용할 것.\n2. 두 해결책의 작용을 모두 포함할 것.\n3. 정확히 15개의 영어 단어로 쓸 것.",
+"selfGrade": true,
+"answer": "Algae turn coffee waste into biofuel, while willow trees remove harmful materials from polluted soil.",
+"solution": "첫 번째 해결책은 커피 폐기물을 바이오 연료로 전환하고, 두 번째 해결책은 오염된 토양에서 유해 물질을 제거한다. 제시된 답은 while로 두 작용을 대조하며, 구두점을 제외하면 정확히 15개의 단어로 이루어져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true
+},
+{
+"id": "fill-9343b4f7bd",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 배열하여 문장을 완성하시오.\n\n이민자들은 새로운 문화에 적응하면서 문화적 혼란을 경험할 수 있다.\n\n<보기> culture / may / adapting / immigrants / a / while / experience / new / confusion / to / cultural\n\n<조건>\n• 모든 단어를 한 번씩 사용할 것\n• 필요에 따라 대소문자를 바꿀 것",
+"selfGrade": true,
+"answer": "Immigrants may experience cultural confusion while adapting to a new culture.",
+"solution": "접속사 while 뒤에서 주어와 be동사가 생략되면 ‘while＋현재분사’의 형태가 된다. 주어 Immigrants 뒤에 「may＋동사원형」을 쓰고, while adapting to a new culture를 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5334e7db90",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n그 가게는 한국의 작은 한 조각처럼 보인다.\n\n<조건>\n• seem과 like를 사용할 것\n• 9단어로 쓸 것",
+"selfGrade": true,
+"answer": "The shop seems like a little piece of Korea.",
+"solution": "‘~처럼 보이다’는 「seem like＋명사」로 표현할 수 있다. 주어 The shop이 3인칭 단수이므로 seem에 -s를 붙인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-bac97bfb16",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n형사들은 단서를 찾기 위해 축소 모형 장면의 세부 사항을 조사했다.\n\n<조건>\n• examine, detail, miniature scene, look for를 사용할 것\n• 목적을 나타내는 to부정사를 사용할 것\n• 13단어로 쓸 것",
+"selfGrade": true,
+"answer": "The detectives examined the details of the miniature scenes to look for clues.",
+"solution": "‘단서를 찾기 위해’는 목적을 나타내는 to부정사인 to look for clues로 표현한다. ‘축소 모형 장면의 세부 사항’은 the details of the miniature scenes로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-05010531fc",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n서로 다른 두 문화적 배경을 가진 부모의 자녀들은 다문화 정체성을 지닐 수 있다.\n\n<조건>\n• 소유격 관계대명사를 사용할 것\n• come from과 may를 사용할 것\n• 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "Children whose parents come from two different cultural backgrounds may have a multicultural identity.",
+"solution": "부모와 자녀 사이의 소유 관계를 나타내므로 소유격 관계대명사 whose를 사용한다. whose parents come from two different cultural backgrounds가 선행사 Children을 수식한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b65888bcf4",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n어머니가 돌아가신 상태에서, 나는 내가 여전히 한국인인지 궁금하다.\n\n<조건>\n• 「with＋목적어＋목적격보어」를 사용할 것\n• whether가 이끄는 간접의문문을 사용할 것\n• 11단어로 쓸 것",
+"selfGrade": true,
+"answer": "With my mother gone, I wonder whether I am still Korean.",
+"solution": "‘어머니가 돌아가신 상태에서’는 「with＋목적어＋과거분사」인 With my mother gone으로 나타낸다. ‘내가 여전히 한국인인지’는 whether 뒤에 평서문의 어순을 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-fc02f54b86",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n1949년 무렵에는 미국과 캐나다에서 온 형사들이 연례 세미나에 참석하고 있었다.\n\n<조건>\n• 진행 수동태를 사용할 것\n• 「both A and B」를 사용할 것\n• 16단어로 쓸 것",
+"selfGrade": true,
+"answer": "By 1949, the annual seminar was being attended by detectives from both the US and Canada.",
+"solution": "세미나가 형사들에 의해 참석되고 있었으므로 진행 수동태 was being attended를 사용한다. 두 출신 국가를 함께 나타내기 위해 both the US and Canada를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-85396f72fc",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\nLee가 법의학에 관심을 갖게 한 것은 바로 Magrath의 열정이었다.\n\n<조건>\n• 「It is/was ~ that ...」 강조구문을 사용할 것\n• passion, spark, interest, legal medicine을 모두 사용할 것\n• 11단어로 쓸 것",
+"selfGrade": true,
+"answer": "It was Magrath's passion that sparked Lee's interest in legal medicine.",
+"solution": "강조 대상인 Magrath's passion을 It was와 that 사이에 놓는다. that 뒤에는 나머지 문장인 sparked Lee's interest in legal medicine을 이어 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4b0e268420",
+"typeId": "eng-h1-b01-u5m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 <조건>에 맞게 영작하시오.\n\n주의 깊은 관찰력을 기르는 것은 형사들이 범죄 사건 해결을 더 잘하게 했다.\n\n<조건>\n• 동명사구를 주어로 사용할 것\n• 「enable＋목적어＋to부정사」를 사용할 것\n• become better at을 포함할 것\n• 14단어로 쓸 것",
+"selfGrade": true,
+"answer": "Developing careful observation skills enabled the detectives to become better at solving crime cases.",
+"solution": "‘주의 깊은 관찰력을 기르는 것’은 동명사구 Developing careful observation skills로 표현하며 단수 주어로 취급한다. enable의 과거형 enabled 뒤에 목적어와 to부정사를 쓰고, at은 전치사이므로 solving을 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-acfc2ac3fb",
+"typeId": "eng-h1-b01-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKeller’s inspiration came from an old folktale that her halmoni used (A)[to tell / telling] her. The folktale (B)[calls / is called] “The Sun and the Moon.” Keller tried to revive people’s interest in tigers by (C)[writing / write] her own book.",
+"choices": [
+"to tell ― calls ― writing",
+"to tell ― is called ― writing",
+"telling ― is called ― write",
+"telling ― calls ― writing",
+"to tell ― is called ― write"
+],
+"answer": "②",
+"solution": "‘used to + 동사원형’은 과거의 습관을 나타내므로 to tell이 알맞다. 민담은 ‘불리는’ 대상이므로 수동태 is called를 쓰며, 전치사 by 뒤에는 동명사 writing이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-1dc2d36838",
+"typeId": "eng-h1-b01-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA tiger hears a mother (A)[tell / to tell] her crying baby not to cry. When the baby stops (B)[crying / to cry], the tiger mistakenly thinks (C)[what / that] the gotgam is a frightening creature.",
+"choices": [
+"tell ― crying ― that",
+"tell ― to cry ― what",
+"to tell ― crying ― that",
+"to tell ― to cry ― what",
+"tell ― crying ― what"
+],
+"answer": "①",
+"solution": "지각동사 hears의 목적격보어로 동사원형 tell이 온다. stop crying은 ‘울음을 그치다’라는 뜻이고, thinks 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-67c385594e",
+"typeId": "eng-h1-b01-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nLong ago, there were so (A)[many / much] tigers in Korea that the country was called the “Land of Tigers.” Ancient rock art depicts people (B)[hunting / hunted] various animals. In Korean culture, white tigers (C)[consider / are considered] sacred guardians.",
+"choices": [
+"many ― hunted ― consider",
+"much ― hunting ― are considered",
+"many ― hunting ― consider",
+"many ― hunting ― are considered",
+"much ― hunted ― are considered"
+],
+"answer": "④",
+"solution": "복수 가산명사 tigers는 many의 수식을 받는다. depict의 목적격보어로 현재분사 hunting이 쓰이며, 흰 호랑이는 신성한 수호자로 ‘여겨지는’ 대상이므로 are considered가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3a7001a66d",
+"typeId": "eng-h1-b01-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장들을 밑줄 친 부분과 같은 의미가 되도록 전환한 것 중 어법상 알맞지 않은 것은?\n\n한국의 민담과 문화에는 다양한 모습의 호랑이가 등장한다.",
+"choices": [
+"Some Korean folktales feature tigers. → Tigers are featured in some Korean folktales.",
+"A tiger helps a human become rich. → A human is helped to become rich by a tiger.",
+"The tiger hears a mother tell her baby not to cry. → A mother is heard to tell her baby not to cry by the tiger.",
+"People made tigers into foolish characters so that they would be less scared of them. → Tigers were made into foolish characters in order that people to be less scared of them.",
+"People consider white tigers to be sacred guardians. → White tigers are considered to be sacred guardians."
+],
+"answer": "④",
+"solution": "in order that 뒤에는 ‘주어+동사’ 형태의 절이 와야 하므로 people to be는 어법상 옳지 않다. ‘in order that people would be’ 또는 ‘in order for people to be’로 고쳐야 한다. 나머지는 능동태와 수동태 사이의 올바른 전환이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-955aec1b65",
+"typeId": "eng-h1-b01-u6m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 옳은 것의 개수는?\n\nTigers in Korea ⓐfaced a decline in population and nearly ⓑwent extinct. With their disappearance, their use as a national symbol ⓒfade away. However, their symbolism was later revived through ⓓtheir being selected as Olympic mascots. Hodori, ⓔthat represented courage, was one of these mascots. White tigers ⓕare considering sacred guardians.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ⓐ와 ⓑ는 과거 시제와 보어의 쓰임이 적절하고, ⓓ의 소유격 their 뒤 동명사 being selected도 옳다. ⓒ는 주어가 단수이므로 faded away, ⓔ는 계속적 용법이므로 which, ⓕ는 수동태 are considered로 고쳐야 한다. 따라서 옳은 것은 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-62525d5a69",
+"typeId": "eng-h1-b01-u6m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 의미가 유지되도록 한 문장으로 바꿀 때, 빈칸 (A), (B)에 들어갈 말을 순서대로 쓰시오.\n\nIt seems that people at the time had conflicting feelings about tigers. Only a few wild tigers have been reported to live in North Korea these days.\n\n→ People at the time (A) ____________________ conflicting feelings about tigers, while only a few wild tigers (B) ____________________ in North Korea these days.\n\n※ (A)에는 seem과 완료부정사를 사용하고, (B)에는 report의 수동태와 진행부정사를 사용할 것.",
+"selfGrade": true,
+"answer": "seem to have had / have been reported to be living",
+"solution": "과거에 가졌던 감정을 현재의 관점에서 추정하므로 seem 뒤에 완료부정사 to have had를 쓴다. ‘호랑이들이 살고 있다고 보고되었다’는 의미는 report의 수동태와 진행부정사를 결합하여 have been reported to be living으로 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u6m1s0t0",
+"custom": true
 }
 ]

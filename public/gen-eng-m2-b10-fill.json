@@ -451,5 +451,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b10-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-a30685b0be",
+"typeId": "eng-m2-b10-u0m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 밑줄 친 표현의 우리말 뜻으로 알맞지 않은 것은?\n\n① Hiking gives us a sense of success.\n② Please follow the recipe carefully.\n③ Let’s head to the kitchen.\n④ Take in the fresh air on the mountain.\n⑤ Put the puzzle pieces together.",
+"choices": [
+"① a sense of success: 성취감",
+"② follow the recipe: 조리법을 따르다",
+"③ head to the kitchen: 부엌으로 향하다",
+"④ take in the fresh air: 신선한 공기를 막다",
+"⑤ put the puzzle pieces together: 퍼즐 조각들을 맞추다"
+],
+"answer": "④",
+"solution": "‘take in the fresh air’는 ‘신선한 공기를 마시다’라는 뜻이다. 따라서 ‘신선한 공기를 막다’라고 해석한 ④가 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1b628f4478",
+"typeId": "eng-m2-b10-u0m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 빈칸에 제시된 표현을 두 문장에 모두 사용할 수 없는 것은?",
+"choices": [
+"① follow: ______ a recipe / ______ the rules",
+"② reach: ______ the top / ______ a goal",
+"③ take in: ______ the fresh air / ______ the view",
+"④ put together: ______ puzzle pieces / ______ your worries",
+"⑤ express: ______ yourself / ______ an idea"
+],
+"answer": "④",
+"solution": "‘put together’는 퍼즐 조각처럼 여러 부분을 ‘맞추다’라는 뜻으로 사용할 수 있다. 그러나 걱정을 없애거나 잊는다는 의미로 ‘put together your worries’라고 표현하지 않으므로 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8318b3697e",
+"typeId": "eng-m2-b10-u0m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\n(1) ______ puzzles is good for clearing your mind.\n(2) Don’t be afraid ______ creative when you bake.\n(3) Baking gives you the joy of ______ with others.",
+"choices": [
+"Do ― get ― share",
+"Doing ― getting ― sharing",
+"To do ― to get ― share",
+"Doing ― to get ― sharing",
+"Do ― to getting ― sharing"
+],
+"answer": "④",
+"solution": "(1)의 주어 자리에는 동명사 Doing이 알맞고, ‘be afraid to＋동사원형’에 따라 (2)에는 to get이 들어간다. 전치사 of 뒤에는 동명사가 필요하므로 (3)에는 sharing을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b10-u0m6s0t0",
+"custom": true
 }
 ]

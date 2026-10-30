@@ -88,5 +88,229 @@
 "source": "유사 문항",
 "twinGroup": "tw-20567",
 "custom": true
+},
+{
+"id": "fill-61e3409e02",
+"typeId": "20558",
+"kind": "주관식",
+"diff": 2,
+"body": "반지름의 길이가 모두 $10\\text{ cm}$인 두 원이 서로 다른 두 점 $A$, $B$에서 만난다. 두 원의 중심 사이의 거리가 $12\\text{ cm}$일 때, 공통현 $AB$의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$16\\text{ cm}$",
+"solution": "두 원의 중심을 잇는 선분은 공통현 $AB$를 수직이등분한다. 공통현의 중점을 $M$이라 하면 중심에서 $M$까지의 거리는 $6\\text{ cm}$이므로, $AM=\\sqrt{10^2-6^2}=8\\text{ cm}$이다. 따라서 $AB=2AM=16\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-6920f144b3",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 2,
+"body": "반지름의 길이가 각각 $13\\text{ cm}$, $15\\text{ cm}$인 두 원이 서로 다른 두 점 $A$, $B$에서 만난다. 두 원의 중심 사이의 거리가 $14\\text{ cm}$일 때, 공통현 $AB$의 길이는?",
+"choices": [
+"$18\\text{ cm}$",
+"$20\\text{ cm}$",
+"$22\\text{ cm}$",
+"$24\\text{ cm}$",
+"$26\\text{ cm}$"
+],
+"answer": "④",
+"solution": "두 중심을 $O$, $O'$이라 하고 $AB$와 $OO'$의 교점을 $M$이라 하자. $OM=x$라 하면 $x^2+AM^2=13^2$, $(14-x)^2+AM^2=15^2$이므로 $x=5$이다. 따라서 $AM=\\sqrt{13^2-5^2}=12$이므로 $AB=24\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-23be1769f7",
+"typeId": "20558",
+"kind": "주관식",
+"diff": 2,
+"body": "두 원이 서로 다른 두 점 $A$, $B$에서 만나고, 두 중심을 잇는 선분과 공통현 $AB$의 교점을 $M$이라 하자. 한 원의 중심을 $O$라 할 때, $OA=17\\text{ cm}$이고 $OM=8\\text{ cm}$이다. 공통현 $AB$의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$30\\text{ cm}$",
+"solution": "두 원의 중심을 잇는 직선은 공통현을 수직이등분하므로 $OM\\perp AB$이고 $AM=BM$이다. 직각삼각형 $OAM$에서 $AM=\\sqrt{17^2-8^2}=15\\text{ cm}$이다. 따라서 $AB=2AM=30\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-ed8a97b589",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 3,
+"body": "두 원의 중심을 각각 $O$, $O'$이라 하고, 두 원의 교점 중 하나를 $A$라 하자. $OA=9\\text{ cm}$, $O'A=12\\text{ cm}$이고 $\\angle OAO'=90^\\circ$일 때, 두 원의 공통현의 길이는?",
+"choices": [
+"$12\\text{ cm}$",
+"$\\dfrac{72}{5}\\text{ cm}$",
+"$15\\text{ cm}$",
+"$18\\text{ cm}$",
+"$24\\text{ cm}$"
+],
+"answer": "②",
+"solution": "직각삼각형 $OAO'$에서 $OO'=\\sqrt{9^2+12^2}=15\\text{ cm}$이다. 공통현과 $OO'$의 교점을 $M$이라 하면 $AM$은 빗변에 내린 높이이므로 $AM=\\dfrac{9\\times12}{15}=\\dfrac{36}{5}\\text{ cm}$이다. 따라서 공통현의 길이는 $2AM=\\dfrac{72}{5}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-336052ef94",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 3,
+"body": "반지름의 길이가 각각 $10\\text{ cm}$, $17\\text{ cm}$인 두 원이 서로 다른 두 점에서 만난다. 두 원의 중심 사이의 거리가 $21\\text{ cm}$일 때, 공통현의 길이는?",
+"choices": [
+"$12\\text{ cm}$",
+"$14\\text{ cm}$",
+"$16\\text{ cm}$",
+"$18\\text{ cm}$",
+"$20\\text{ cm}$"
+],
+"answer": "③",
+"solution": "반지름이 $10\\text{ cm}$인 원의 중심에서 공통현까지의 거리를 $x$라 하면 $x^2+h^2=10^2$, $(21-x)^2+h^2=17^2$이다. 두 식을 빼면 $x=6$이고, 공통현의 길이의 절반은 $h=\\sqrt{10^2-6^2}=8$이다. 따라서 공통현의 길이는 $16\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-38399290d8",
+"typeId": "20558",
+"kind": "주관식",
+"diff": 3,
+"body": "반지름의 길이가 모두 $13\\text{ cm}$인 서로 다른 두 원의 공통현의 길이가 $24\\text{ cm}$이다. 두 원의 중심 사이의 거리를 구하여라.",
+"selfGrade": true,
+"answer": "$10\\text{ cm}$",
+"solution": "공통현의 중점을 $M$이라 하면 현의 길이의 절반은 $12\\text{ cm}$이다. 각 중심에서 $M$까지의 거리는 $\\sqrt{13^2-12^2}=5\\text{ cm}$이다. 두 중심은 공통현의 서로 반대쪽에 있으므로 중심 사이의 거리는 $5+5=10\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-464b5f1e63",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 5,
+"body": "두 원의 중심을 각각 $O$, $O'$이라 하고, 두 원의 교점 중 하나를 $A$라 하자. $OA:O'A=3:4$, $OO'=20\\text{ cm}$이고 $\\angle OAO'=90^\\circ$일 때, 두 원의 공통현의 길이는?",
+"choices": [
+"$\\dfrac{48}{5}\\text{ cm}$",
+"$16\\text{ cm}$",
+"$\\dfrac{96}{5}\\text{ cm}$",
+"$20\\text{ cm}$",
+"$24\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$\\triangle OAO'$은 빗변의 길이가 $20\\text{ cm}$이고 두 직각변의 길이의 비가 $3:4$인 직각삼각형이므로 $OA=12\\text{ cm}$, $O'A=16\\text{ cm}$이다. 공통현과 $OO'$의 교점을 $M$이라 하면 $AM=\\dfrac{12\\times16}{20}=\\dfrac{48}{5}\\text{ cm}$이다. 따라서 공통현의 길이는 $2AM=\\dfrac{96}{5}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-ea55bd89c1",
+"typeId": "20558",
+"kind": "주관식",
+"diff": 5,
+"body": "반지름의 길이가 각각 $13\\text{ cm}$, $14\\text{ cm}$인 두 원의 중심 사이의 거리가 $15\\text{ cm}$이다. 두 원이 서로 다른 두 점에서 만날 때, 공통현의 길이를 구하여라.",
+"selfGrade": true,
+"answer": "$\\dfrac{112}{5}\\text{ cm}$",
+"solution": "두 중심을 $O$, $O'$이라 하고 공통현과 $OO'$의 교점을 $M$이라 하자. $OM=x$라 하면 $x^2+AM^2=13^2$, $(15-x)^2+AM^2=14^2$이므로 $x=\\dfrac{33}{5}$이다. 따라서 $AM=\\sqrt{13^2-\\left(\\dfrac{33}{5}\\right)^2}=\\dfrac{56}{5}$이므로 공통현의 길이는 $\\dfrac{112}{5}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-6590bb1e0f",
+"typeId": "20558",
+"kind": "객관식",
+"diff": 5,
+"body": "반지름의 길이가 각각 $17\\text{ cm}$, $10\\text{ cm}$인 두 원이 서로 다른 두 점에서 만나고, 공통현의 길이는 $16\\text{ cm}$이다. 이 조건을 만족하는 두 원의 중심 사이의 거리를 모두 더한 값은?",
+"choices": [
+"$21\\text{ cm}$",
+"$24\\text{ cm}$",
+"$27\\text{ cm}$",
+"$30\\text{ cm}$",
+"$33\\text{ cm}$"
+],
+"answer": "④",
+"solution": "공통현의 길이의 절반은 $8\\text{ cm}$이므로 두 중심에서 공통현까지의 거리는 각각 $\\sqrt{17^2-8^2}=15\\text{ cm}$, $\\sqrt{10^2-8^2}=6\\text{ cm}$이다. 두 중심이 공통현의 같은 쪽에 있으면 중심 사이의 거리는 $15-6=9\\text{ cm}$이고, 반대쪽에 있으면 $15+6=21\\text{ cm}$이다. 따라서 가능한 두 거리의 합은 $9+21=30\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20558",
+"custom": true
+},
+{
+"id": "fill-27cf3e29ea",
+"typeId": "20565",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$에서 $AB=9\\text{ cm}$, $AC=12\\text{ cm}$이다. 변 $BC$를 지름으로 하여 점 $A$가 있는 쪽에 반원을 그리고, 변 $AB$, $AC$를 지름으로 하여 각각 삼각형의 바깥쪽에 반원을 그렸다.\n\n$AB$, $AC$를 지름으로 하는 두 반원에서 $BC$를 지름으로 하는 반원의 바깥쪽에 놓인 두 초승달 모양 부분의 넓이의 합은?",
+"choices": [
+"$45\\text{ cm}^2$",
+"$48\\text{ cm}^2$",
+"$54\\text{ cm}^2$",
+"$60\\text{ cm}^2$",
+"$72\\text{ cm}^2$"
+],
+"answer": "③",
+"solution": "히포크라테스의 원의 넓이 성질에 따라 두 초승달 모양 부분의 넓이의 합은 직각삼각형 $ABC$의 넓이와 같다. 따라서 구하는 넓이는 $\\dfrac12\\times9\\times12=54\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
+},
+{
+"id": "fill-53f4048c1a",
+"typeId": "20565",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$의 세 변을 지름으로 하는 반원을 그렸다. 변 $BC$를 지름으로 하는 반원은 점 $A$가 있는 쪽에, 나머지 두 반원은 삼각형의 바깥쪽에 그렸다.\n\n$BC=17\\text{ cm}$이고, $AB$, $AC$를 지름으로 하는 반원에서 $BC$를 지름으로 하는 반원의 바깥쪽에 놓인 두 부분의 넓이의 합이 $60\\text{ cm}^2$일 때, $AB+AC$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$23\\text{ cm}$",
+"solution": "두 초승달 모양 부분의 넓이의 합은 삼각형 $ABC$의 넓이이므로 $\\dfrac12 AB\\cdot AC=60$에서 $AB\\cdot AC=120$이다. 피타고라스 정리에 의해 $AB^2+AC^2=BC^2=289$이다. 따라서 $(AB+AC)^2=289+2\\times120=529$이므로 $AB+AC=23\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
+},
+{
+"id": "fill-4e67adc0a9",
+"typeId": "20565",
+"kind": "객관식",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$의 세 변을 지름으로 하는 반원을 그어 생기는 두 초승달 모양 부분의 넓이의 합이 $156\\text{ cm}^2$이다. 점 $A$에서 빗변 $BC$에 내린 수선의 발을 $H$라 할 때, $BH:HC=4:9$이다.\n\n$AB+AC$의 값은?",
+"choices": [
+"$8\\sqrt{13}\\text{ cm}$",
+"$9\\sqrt{13}\\text{ cm}$",
+"$10\\sqrt{13}\\text{ cm}$",
+"$12\\sqrt{13}\\text{ cm}$",
+"$13\\sqrt{13}\\text{ cm}$"
+],
+"answer": "③",
+"solution": "$BH=4t$, $HC=9t$라 하면 높이의 성질에 의해 $AH=\\sqrt{BH\\cdot HC}=6t$이고 $BC=13t$이다. 두 초승달의 넓이의 합이 삼각형의 넓이와 같으므로 $\\dfrac12\\times13t\\times6t=156$에서 $t=2$이다. 또 $AB^2=BC\\cdot BH$, $AC^2=BC\\cdot HC$이므로 $AB+AC=(2\\sqrt{13}+3\\sqrt{13})t=10\\sqrt{13}\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
+},
+{
+"id": "fill-b4a7de0ea9",
+"typeId": "20565",
+"kind": "주관식",
+"diff": 5,
+"body": "$\\angle A=90^\\circ$인 직각삼각형 $ABC$의 세 변을 지름으로 하는 반원을 그었다. 변 $AB$, $AC$를 지름으로 하는 두 반원 중에서 변 $BC$를 지름으로 하는 반원의 바깥쪽에 놓인 두 부분을 색칠하였다.\n\n삼각형 $ABC$의 둘레가 $40\\text{ cm}$이고 색칠한 부분의 넓이의 합이 $60\\text{ cm}^2$일 때, 변 $BC$를 지름으로 하는 반원의 넓이를 구하여라.",
+"selfGrade": true,
+"answer": "$\\dfrac{289\\pi}{8}\\text{ cm}^2$",
+"solution": "$BC=c$라 하면 색칠한 부분의 넓이의 합이 삼각형의 넓이와 같으므로 $AB\\cdot AC=120$이다. $AB+AC=40-c$이고 피타고라스 정리에 의해 $(AB+AC)^2=c^2+2AB\\cdot AC$이므로 $(40-c)^2=c^2+240$에서 $c=17$이다. 따라서 지름이 $17\\text{ cm}$인 반원의 넓이는 $\\dfrac12\\pi(\\dfrac{17}{2})^2=\\dfrac{289\\pi}{8}\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
+},
+{
+"id": "fill-1986e0748c",
+"typeId": "20565",
+"kind": "주관식",
+"diff": 5,
+"body": "서로 닮은 두 직각삼각형 $ABC$, $PQR$에서 $\\angle A=\\angle P=90^\\circ$이다. 각 삼각형의 세 변을 지름으로 하는 반원을 그은 뒤, 두 직각변을 지름으로 하는 반원에서 빗변을 지름으로 하는 반원의 바깥쪽에 놓인 두 초승달 모양 부분을 각각 색칠하였다.\n\n삼각형 $ABC$에서는 $AB+AC=41\\text{ cm}$이고 색칠한 부분의 넓이의 합이 $210\\text{ cm}^2$이다. 삼각형 $PQR$에서 색칠한 부분의 넓이의 합이 $840\\text{ cm}^2$일 때, 빗변 $QR$를 지름으로 하는 반원의 넓이를 구하여라.",
+"selfGrade": true,
+"answer": "$\\dfrac{841\\pi}{2}\\text{ cm}^2$",
+"solution": "삼각형 $ABC$에서 $AB\\cdot AC=420$이므로 $BC^2=(AB+AC)^2-2AB\\cdot AC=41^2-840=841$, 즉 $BC=29\\text{ cm}$이다. 두 삼각형의 넓이의 비가 $210:840=1:4$이므로 닮음비는 $1:2$이고, 따라서 $QR=58\\text{ cm}$이다. 구하는 반원의 넓이는 $\\dfrac12\\pi(\\dfrac{58}{2})^2=\\dfrac{841\\pi}{2}\\text{ cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20565",
+"custom": true
 }
 ]

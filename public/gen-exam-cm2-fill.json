@@ -3378,5 +3378,158 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-cm2-u0m0s2t1",
 "custom": true
+},
+{
+"id": "fill-2675c96874",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 세 꼭짓점이 $A(-2,1)$, $B(4,5)$, $C(x,y)$이고, 무게중심이 $G(1,2)$일 때, 점 $C$의 좌표는?",
+"choices": [
+"$(-1,0)$",
+"$(1,2)$",
+"$(3,0)$",
+"$(1,0)$",
+"$(0,1)$"
+],
+"answer": "④",
+"solution": "삼각형의 무게중심의 좌표는 세 꼭짓점의 각 좌표의 평균이다. 따라서 $\\frac{-2+4+x}{3}=1$, $\\frac{1+5+y}{3}=2$이므로 $x=1$, $y=0$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-b37858b2fa",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "주관식",
+"diff": 3,
+"body": "삼각형 $ABC$의 무게중심이 $G(-1,2)$이고 $A(3,-2)$이다. 변 $BC$의 중점 $M$의 좌표를 구하여라.",
+"selfGrade": true,
+"answer": "$(-3,4)$",
+"solution": "무게중심은 중선 $AM$을 $AG:GM=2:1$로 내분하므로 $G=\\frac{A+2M}{3}$이다. 따라서 $M=\\frac{3G-A}{2}=\\frac{(-3,6)-(3,-2)}{2}=(-3,4)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-9bd83fc74b",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "객관식",
+"diff": 3,
+"body": "삼각형 $ABC$에서 $A(-3,2)$, $B(6,-1)$, $C(k,5)$이다. 이 삼각형의 무게중심 $G$가 $y$축 위에 있을 때, 선분 $AG$의 길이는?",
+"choices": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+],
+"answer": "③",
+"solution": "$G$의 $x$좌표가 $0$이므로 $\\frac{-3+6+k}{3}=0$에서 $k=-3$이다. 이때 $G=(0,2)$이므로 $AG=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-b009c44dd9",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 무게중심은 $G(2,-1)$이다. 삼각형 $BCG$의 무게중심이 $H(3,1)$일 때, 점 $A$의 좌표는?",
+"choices": [
+"$(1,-7)$",
+"$(-1,7)$",
+"$(-2,-5)$",
+"$(1,-5)$",
+"$(-1,-7)$"
+],
+"answer": "⑤",
+"solution": "$B+C$를 좌표의 성분별 합으로 나타내면 $B+C=3H-G=(7,4)$이다. 한편 $A+B+C=3G=(6,-3)$이므로 $A=(6,-3)-(7,4)=(-1,-7)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-576b461704",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 무게중심을 $G$라 하자. 점 $P$는 점 $A$를 점 $G$에 대하여 대칭이동한 점이다. $B(1,-2)$, $C(4,3)$, $P(2,1)$일 때, 점 $A$의 두 좌표의 합은?",
+"choices": [
+"$-1$",
+"$1$",
+"$2$",
+"$3$",
+"$5$"
+],
+"answer": "④",
+"solution": "$P=2G-A$이고 $G=\\frac{A+B+C}{3}$이므로 $3P=-A+2B+2C$이다. 따라서 $A=2B+2C-3P=(4,-1)$이므로 두 좌표의 합은 $3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-8167b7bfd3",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "객관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 세 꼭짓점이 $A(0,6)$, $B(-4,0)$, $C(8,0)$이다. 이 삼각형의 무게중심 $G$를 지나고 변 $BC$와 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $P$, $Q$라 할 때, 선분 $PQ$의 길이는?",
+"choices": [
+"$6$",
+"$7$",
+"$8$",
+"$9$",
+"$10$"
+],
+"answer": "③",
+"solution": "무게중심은 $G\\left(\\frac{4}{3},2\\right)$이므로 직선 $PQ$는 $y=2$이다. 이 직선과 $AB$, $AC$의 교점은 각각 $P\\left(-\\frac{8}{3},2\\right)$, $Q\\left(\\frac{16}{3},2\\right)$이므로 $PQ=8$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-631ca43be2",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "객관식",
+"diff": 5,
+"body": "삼각형 $ABC$의 변 $BC$, $CA$, $AB$ 위에 각각 점 $D$, $E$, $F$가 있다. $BD:DC=1:2$, $CE:EA=2:1$, $AF:FB=3:1$이고 $D(-2,4)$, $E(6,-2)$, $F(1,5)$일 때, 삼각형 $ABC$의 무게중심의 좌표는?",
+"choices": [
+"$(1,2)$",
+"$(2,1)$",
+"$(2,2)$",
+"$(3,1)$",
+"$(3,2)$"
+],
+"answer": "②",
+"solution": "내분점 공식에 의해 $3D=2B+C$, $3E=2A+C$이다. 두 식을 더하면 $3(D+E)=2(A+B+C)$이므로 무게중심은 $\\frac{A+B+C}{3}=\\frac{D+E}{2}$이다. 따라서 무게중심은 $(2,1)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-bba623f8f8",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$에서 $A(1,4)$, $B(7,-2)$이고, 점 $C$는 직선 $2x-y=5$ 위를 움직인다. 이 삼각형의 무게중심을 $G$라 하고 원점을 $O$라 할 때, $OG^2$의 최솟값을 구하여라.",
+"selfGrade": true,
+"answer": "$\\frac{361}{45}$",
+"solution": "$C=(t,2t-5)$로 놓으면 $G\\left(\\frac{t+8}{3},\\frac{2t-3}{3}\\right)$이다. 따라서 $OG^2=\\frac{(t+8)^2+(2t-3)^2}{9}=\\frac{5\\left(t+\\frac25\\right)^2+\\frac{361}{5}}{9}$이다. 그러므로 $t=-\\frac25$일 때 최솟값은 $\\frac{361}{45}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-2fec0fe3e6",
+"typeId": "exam-cm2-u0m0s3t1",
+"kind": "주관식",
+"diff": 5,
+"body": "삼각형 $ABC$의 세 꼭짓점이 $A(a,2)$, $B(4,b)$, $C(-1,5)$이다. 이 삼각형의 무게중심이 직선 $y=2x$ 위에 있고 삼각형 $ABC$의 넓이가 $\\frac{9}{2}$일 때, 가능한 모든 $b$의 값의 곱을 구하여라.",
+"selfGrade": true,
+"answer": "$-3$",
+"solution": "무게중심이 $y=2x$ 위에 있으므로 $\\frac{b+7}{3}=2\\cdot\\frac{a+3}{3}$에서 $b=2a-1$이다. 삼각형의 넓이는 $\\frac12\\left|2a^2-4a+9\\right|=\\frac92$이고 $2a^2-4a+9>0$이므로 $a=0$ 또는 $a=2$이다. 이에 대응하는 $b$는 $-1$, $3$이므로 그 곱은 $-3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-cm2-u0m0s3t1",
+"custom": true
 }
 ]

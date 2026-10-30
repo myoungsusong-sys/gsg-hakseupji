@@ -190,5 +190,107 @@
 "source": "유사 문항",
 "twinGroup": "tw-18219",
 "custom": true
+},
+{
+"id": "fill-929f325ef2",
+"typeId": "18296",
+"kind": "객관식",
+"diff": 2,
+"body": "$\\dfrac{\\pi}{2}<\\theta<\\pi$이고 $\\sin\\theta=\\dfrac{5}{13}$일 때, $\\cos\\theta$의 값은?",
+"choices": [
+"$-\\dfrac{12}{13}$",
+"$-\\dfrac{5}{12}$",
+"$\\dfrac{5}{12}$",
+"$\\dfrac{12}{13}$",
+"$\\dfrac{13}{12}$"
+],
+"answer": "①",
+"solution": "$\\sin^2\\theta+\\cos^2\\theta=1$이므로 $\\cos^2\\theta=1-\\left(\\dfrac{5}{13}\\right)^2=\\dfrac{144}{169}$이다. 제2사분면에서 코사인의 값은 음수이므로 $\\cos\\theta=-\\dfrac{12}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-df0c1c0fba",
+"typeId": "18296",
+"kind": "주관식",
+"diff": 2,
+"body": "점 $P$의 좌표가 실수 $t$에 대하여 $P(4+7\\cos t,\\,-3+7\\sin t)$로 주어진다. 점 $P$와 점 $Q(4,-3)$ 사이의 거리를 구하시오.",
+"selfGrade": true,
+"answer": "$7$",
+"solution": "$PQ^2=(7\\cos t)^2+(7\\sin t)^2=49(\\cos^2t+\\sin^2t)$이다. $\\sin^2t+\\cos^2t=1$이므로 $PQ=7$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-64152ac208",
+"typeId": "18296",
+"kind": "객관식",
+"diff": 2,
+"body": "$\\angle B=90^\\circ$, $\\angle A=\\theta$인 직각삼각형 $ABC$에서 $AC=10$이다. $\\sin\\theta+\\cos\\theta=\\dfrac{7}{5}$일 때, 삼각형 $ABC$의 넓이는?",
+"choices": [
+"$12$",
+"$18$",
+"$20$",
+"$24$",
+"$30$"
+],
+"answer": "④",
+"solution": "$(\\sin\\theta+\\cos\\theta)^2=1+2\\sin\\theta\\cos\\theta$이므로 $\\sin\\theta\\cos\\theta=\\dfrac{12}{25}$이다. $BC=10\\sin\\theta$, $AB=10\\cos\\theta$이므로 넓이는 $\\dfrac12\\times100\\sin\\theta\\cos\\theta=24$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-f25b34e402",
+"typeId": "18296",
+"kind": "객관식",
+"diff": 3,
+"body": "점 $P$의 좌표가 실수 $t$에 대하여 $P(2+6\\cos t,\\,-3+6\\sin t)$로 주어진다. 점 $P$와 원점 사이의 거리의 최댓값과 최솟값의 차는?",
+"choices": [
+"$\\sqrt{13}$",
+"$2\\sqrt{13}$",
+"$6-\\sqrt{13}$",
+"$6+\\sqrt{13}$",
+"$12$"
+],
+"answer": "②",
+"solution": "점 $P$는 중심이 $(2,-3)$이고 반지름이 $6$인 원 위를 움직이며, 원점과 원의 중심 사이의 거리는 $\\sqrt{13}$이다. 따라서 원점에서 $P$까지 거리의 최댓값과 최솟값은 각각 $6+\\sqrt{13}$, $6-\\sqrt{13}$이므로 그 차는 $2\\sqrt{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-a17b64cbbb",
+"typeId": "18296",
+"kind": "객관식",
+"diff": 3,
+"body": "$\\angle B=90^\\circ$인 직각삼각형 $ABC$의 빗변 $AC$를 삼등분하는 두 점을 $A,D,E,C$의 순서로 잡는다. $0<x<\\dfrac{\\pi}{2}$이고 $BD=2\\cos x$, $BE=2\\sin x$일 때, $AC$의 길이는?",
+"choices": [
+"$\\dfrac{3\\sqrt5}{5}$",
+"$\\sqrt5$",
+"$\\dfrac{6\\sqrt5}{5}$",
+"$2\\sqrt5$",
+"$3\\sqrt5$"
+],
+"answer": "③",
+"solution": "$AB=p$, $BC=q$라 하면 삼등분점의 성질과 피타고라스 정리에 의해 $BD^2=\\dfrac{4p^2+q^2}{9}$, $BE^2=\\dfrac{p^2+4q^2}{9}$이다. 두 식을 더하면 $4(\\cos^2x+\\sin^2x)=\\dfrac{5(p^2+q^2)}9=\\dfrac{5AC^2}{9}$이다. 따라서 $AC^2=\\dfrac{36}{5}$이므로 $AC=\\dfrac{6\\sqrt5}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
+},
+{
+"id": "fill-91bf4ab7ad",
+"typeId": "18296",
+"kind": "주관식",
+"diff": 3,
+"body": "실수 $\\theta$에 대하여 $a=3\\cos\\theta+4\\sin\\theta$, $b=4\\cos\\theta-3\\sin\\theta$라 하자. $a=4$이고 $b>0$일 때, $b$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$3$",
+"solution": "두 식을 제곱하여 더하면 교차항이 소거되어 $a^2+b^2=25(\\cos^2\\theta+\\sin^2\\theta)=25$이다. $a=4$이므로 $b^2=9$이고, $b>0$이므로 $b=3$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18296",
+"custom": true
 }
 ]

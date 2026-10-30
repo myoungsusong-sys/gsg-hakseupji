@@ -4582,5 +4582,153 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-80cea538fe",
+"typeId": "eng-m3-b12-u5m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A)~(C)에 들어갈 말로 바르게 짝지어진 것은?\n\nA book with seeds in its pages can become a tree. After you finish (A)[reading / to read] it, you can plant it. The book was (B)[made / making] by a publisher in Argentina. The idea makes readers (C)[think / to think] about the connection between books and trees.",
+"choices": [
+"reading — making — think",
+"to read — made — think",
+"reading — made — to think",
+"reading — made — think",
+"to read — making — to think"
+],
+"answer": "④",
+"solution": "finish는 목적어로 동명사를 취하므로 reading이 알맞다. 수동태는 「be동사＋과거분사」이므로 made가 필요하다. 사역동사 make의 목적격 보어에는 동사원형 think를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9ed2b1d1a6",
+"typeId": "eng-m3-b12-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 책 나눔 프로젝트를 설명한 문장들이다. 어법상 옳지 않은 것은?",
+"choices": [
+"A book that has an ID number can be registered on the website.",
+"When another reader reports finding the book, you can check where is the book.",
+"Leave your registered book in a place where other people can find it.",
+"A number of readers in different countries can read the same book.",
+"The more books people share, the more they can learn."
+],
+"answer": "②",
+"solution": "check의 목적어로 쓰인 간접의문문은 「의문사＋주어＋동사」의 어순이어야 한다. 따라서 where is the book을 where the book is로 고쳐야 한다. ④의 a number of는 ‘많은’이라는 뜻이고, ⑤는 「the＋비교급, the＋비교급」 구문으로 어법상 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0a18e14673",
+"typeId": "eng-m3-b12-u5m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에 들어갈 말로 바르게 짝지어진 것은?\n\nThe Drinkable Book gives people information (A)[necessary / necessarily] for making dirty water clean. Its pages can also be used as filters. A page removes harmful things from water, and it is the water passing through the page (B)[that / what] people can drink. The book helps protect children from diseases that (C)[come / comes] from dirty water. Both the information and the filter paper (D)[is / are] useful.",
+"choices": [
+"necessary — that — comes — are",
+"necessarily — that — come — are",
+"necessary — that — come — are",
+"necessary — what — come — is",
+"necessarily — what — comes — is"
+],
+"answer": "③",
+"solution": "information을 뒤에서 수식하므로 형용사 necessary가 필요하고, 강조 구문 「It is＋강조하는 말＋that ...」에 따라 that을 쓴다. 관계대명사 that의 선행사가 복수 명사 diseases이므로 come이 알맞다. 「both A and B」가 주어이면 복수로 취급하므로 are를 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f3bd69641d",
+"typeId": "eng-m3-b12-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 (A)~(D)에 주어진 동사를 알맞은 형태로 바꾸어 쓰시오.\n\n[조건]\n• 글 전체는 과거의 경험을 서술한다.\n• 책을 발견하기 전에 완료된 일은 모두 과거완료로 쓴다.\n• 각 빈칸에는 필요한 동사 형태 전체를 쓴다.\n\nBy the time I (A)__________ (find) the book on the park bench, it (B)__________ (travel) to several countries. A number of readers (C)__________ (read) it before I discovered it. After finding the book, I entered its ID number on the website and (D)__________ (learn) about its journey.\n\n답은 (A), (B), (C), (D)의 순서로 쓰시오.",
+"selfGrade": true,
+"answer": "found, had traveled, had read, learned",
+"solution": "책을 발견한 일은 과거의 기준 시점이므로 (A)는 found이다. 책이 여러 나라를 여행한 일과 다른 독자들이 읽은 일은 발견 이전에 완료되었으므로 각각 had traveled와 had read를 쓴다. (D)는 and로 entered와 연결되어 발견 이후의 일을 서술하므로 과거형 learned가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d5a307679e",
+"typeId": "eng-m3-b12-u5m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 두 문장의 의미를 반영하여 빈칸에 들어갈 문장을 완성하시오.\n\nReaders think about where books come from because of the special project.\nThe special project causes them to do so.\n\n→ __________________________________________________\n\n[조건]\n• It is로 시작하고, the special project를 강조하는 「It is ~ that ...」 구문을 쓸 것.\n• 사역동사 make를 현재시제로 사용할 것.\n• 아래 어구를 각각 한 번씩 모두 사용하고, make만 필요에 따라 형태를 바꿀 것.\n• 어구를 추가하지 말고, 완성된 문장 전체를 쓸 것.\n\n[어구]\nIt is / readers / where books come from / that / make / the special project / think about",
+"selfGrade": true,
+"answer": "It is the special project that makes readers think about where books come from.",
+"solution": "강조 대상인 the special project를 It is와 that 사이에 놓는다. 단수인 the special project에 맞추어 make를 makes로 바꾸고, 사역동사 구문에 따라 readers 뒤에 동사원형 think를 연결한다. think about 뒤에는 「의문사＋주어＋동사」 어순인 where books come from을 놓는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u5m1s0t0",
+"custom": true
+},
+{
+"id": "fill-ba8735fa9a",
+"typeId": "eng-m3-b12-u2m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말을 주어진 <조건>에 맞게 영작하시오.\n\n그 연구는 사람들을 웃게 할 정도로 충분히 재미있다.\n\n<조건>\n• 총 9단어로 쓸 것\n• funny, enough, make를 사용할 것",
+"selfGrade": true,
+"answer": "The research is funny enough to make people laugh.",
+"solution": "‘~할 정도로 충분히 …한’은 「형용사+enough+to부정사」로 나타낸다. ‘사람들을 웃게 하다’는 「make+목적어+동사원형」을 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-fd4a013210",
+"typeId": "eng-m3-b12-u2m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 괄호 안의 단어를 알맞게 배열하시오.\n\n그 발견은 사람들을 웃게 할 뿐만 아니라 생각하게도 한다.\n\nThe discovery ________________________________.\n\n(also, think, not, makes, laugh, only, people, them, but, makes)",
+"selfGrade": true,
+"answer": "not only makes people laugh but also makes them think",
+"solution": "‘A뿐만 아니라 B도’는 「not only A but also B」로 표현한다. make 뒤에는 목적어와 동사원형이 이어지므로 「makes people laugh」와 「makes them think」를 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-123b4e700d",
+"typeId": "eng-m3-b12-u2m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 주어진 <조건>에 맞게 영작하시오.\n\n이 연구는 재미있을 뿐만 아니라 사람들이 생각하게 할 정도로 충분히 특이하다.\n\n<조건>\n• 총 14단어로 쓸 것\n• not only, unusual, enough를 반드시 사용할 것",
+"selfGrade": true,
+"answer": "This research is not only fun but also unusual enough to make people think.",
+"solution": "「not only A but also B」에서 형용사 fun과 unusual을 병렬로 연결한다. 이어서 「unusual enough to make people think」의 어순으로 ‘사람들이 생각하게 할 정도로 충분히 특이한’을 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-2eecfaab52",
+"typeId": "eng-m3-b12-u2m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 주어진 <조건>에 맞게 영작하시오.\n\n돈을 아끼기 위해 해군은 선원들에게 실제 폭탄을 사용하는 대신 “쾅!”이라고 외치게 했다.\n\n<조건>\n• 총 15단어로 쓸 것\n• save, made, instead를 각각 한 번씩 사용할 것\n• “Bang”도 한 단어로 셀 것",
+"selfGrade": true,
+"answer": "To save money, the Navy made its sailors shout “Bang!” instead of using real bombs.",
+"solution": "목적은 「to save money」로 나타내고, ‘선원들에게 외치게 했다’는 「made+목적어+동사원형」으로 표현한다. 「instead of」 뒤에는 동명사가 와야 하므로 「instead of using real bombs」가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m5s0t0",
+"custom": true
+},
+{
+"id": "fill-59aa72645b",
+"typeId": "eng-m3-b12-u2m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말을 주어진 <조건>에 맞게 영작하시오.\n\n수상자들의 재미있는 연구뿐만 아니라 그 시상식도 과학을 훨씬 더 재미있게 만든다.\n\n<조건>\n• 총 16단어로 쓸 것\n• not only와 a lot을 사용할 것\n• 주어와 동사의 수를 일치시킬 것",
+"selfGrade": true,
+"answer": "Not only the winners’ fun studies but also the ceremony makes science a lot more fun.",
+"solution": "「not only A but also B」가 주어일 때 동사는 가까운 주어 B에 수를 일치시키므로 단수형 makes를 쓴다. ‘과학을 훨씬 더 재미있게 만들다’는 「make+목적어+a lot+비교급」의 구조로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m5s0t0",
+"custom": true
 }
 ]

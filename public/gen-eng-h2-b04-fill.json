@@ -2054,5 +2054,139 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-b04-u2m1s0t0",
 "custom": true
+},
+{
+"id": "fill-476f55f8c6",
+"typeId": "eng-h2-b04-u1m2s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 ⓐ, ⓑ 중 어법상 어색한 것을 모두 찾아 기호와 함께 알맞게 고쳐 쓰시오.\n\nThe 2022 survey ⓐconducting among Korean adults examined their main leisure activities. The preference for hobbies ⓑdecrease as the respondents’ age rises.",
+"selfGrade": true,
+"answer": "ⓐ conducting → conducted; ⓑ decrease → decreases",
+"solution": "survey는 조사를 ‘실시하는’ 주체가 아니라 ‘실시된’ 대상이므로 과거분사 conducted가 알맞다. 두 번째 문장의 주어 The preference가 단수이므로 동사도 decreases가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-bf46573f5e",
+"typeId": "eng-h2-b04-u1m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 ⓐ~ⓓ 중 어법상 어색한 것을 두 개 찾아 기호와 함께 알맞게 고쳐 쓰시오.\n\nMany individuals say that they ⓐwere once attracted to adventurous lifestyles. After they marry, however, they tend ⓑbecome more responsible and ⓒtaking fewer risks, especially after they ⓓhave children.",
+"selfGrade": true,
+"answer": "ⓑ become → to become; ⓒ taking → take",
+"solution": "tend는 목적어로 to부정사를 취하므로 tend to become으로 고쳐야 한다. and 뒤에서는 become과 병렬을 이루도록 동사원형 take를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-678b1e55ca",
+"typeId": "eng-h2-b04-u1m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 세 개 찾아 기호와 함께 알맞게 고쳐 쓰시오.\n\nAs ⓐshowing in the survey results, older respondents were more likely to select relaxing at home. The results suggest ⓑwhat age can influence the way ⓒwhich people spend their free time, although they do not prove that every person in an age group ⓓhas the same preference. Such broad classifications should therefore ⓔbe used carefully.",
+"selfGrade": true,
+"answer": "ⓐ showing → shown; ⓑ what → that; ⓒ which → in which",
+"solution": "‘결과에 나타난 바와 같이’라는 수동의 의미이므로 As shown이 알맞다. suggest 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다. the way를 관계절에서 수식할 때에는 in which를 쓸 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-66d58c81a0",
+"typeId": "eng-h2-b04-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn agriculture, satellites (A)[use / are used] to monitor crop health. They also (B)[predict / predicts] crop yields, and the information they provide (C)[helps / help] develop effective strategies.",
+"choices": [
+"use - predict - helps",
+"are used - predicts - help",
+"are used - predict - helps",
+"use - predicts - helps",
+"are used - predict - help"
+],
+"answer": "③",
+"solution": "(A)는 위성이 농업에 ‘사용되는’ 것이므로 수동태 are used가 알맞다. 주어 They가 복수이므로 (B)는 predict이고, (C)의 주어 the information은 단수이므로 helps가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b841aee7d7",
+"typeId": "eng-h2-b04-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOnce (A)[collected / collecting], satellite data (B)[are / is] transmitted to a ground station. The data are then turned into useful information that people can (C)[use / used] in their daily lives.",
+"choices": [
+"collecting - are - use",
+"collected - are - use",
+"collected - is - used",
+"collecting - is - use",
+"collected - are - used"
+],
+"answer": "②",
+"solution": "데이터는 ‘수집되는’ 대상이므로 (A)는 과거분사 collected가 적절하다. data를 복수로 취급하므로 (B)는 are이고, 조동사 can 뒤에는 동사원형 use가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5fb78c8f5c",
+"typeId": "eng-h2-b04-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nSatellite images are used (A)[to locate / locating] emergency situations. They can help rescuers (B)[find / finding] blocked roads or damaged buildings, (C)[allowing / allowed] them to reach people in time.",
+"choices": [
+"locating - find - allowing",
+"to locate - finding - allowed",
+"locating - finding - allowed",
+"to locate - find - allowing",
+"to locate - finding - allowing"
+],
+"answer": "④",
+"solution": "‘~하기 위해 사용되다’는 be used to부정사이므로 (A)는 to locate이다. help의 목적격보어로 동사원형 find를 쓸 수 있으며, 뒤에서는 앞 문장의 결과를 나타내는 분사구문 allowing이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0fe3f6dfad",
+"typeId": "eng-h2-b04-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFor many years, people have looked at the night sky, (A)[wondering / wondered] about the universe. You may also have seen a bright object and (B)[wondering / wondered] whether it was a star or a satellite. Satellites are machines (C)[that / what] orbit the Earth.",
+"choices": [
+"wondered - wondering - that",
+"wondering - wondering - what",
+"wondering - wondered - that",
+"wondered - wondered - what",
+"wondering - wondered - what"
+],
+"answer": "③",
+"solution": "(A)는 사람들이 하늘을 바라보면서 궁금해했다는 동시 상황이므로 wondering이 알맞다. (B)는 have seen과 병렬을 이루는 과거분사 wondered가 적절하며, (C)는 선행사 machines를 수식하는 주격 관계대명사 that이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-adf1a5b81f",
+"typeId": "eng-h2-b04-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe increasing number of satellites in orbit (A)[has / have] created several problems. Nearly half of the satellites currently in orbit (B)[are / is] no longer in use, but they continue to move around the Earth. Collisions can produce pieces of debris (C)[which / what] threaten other satellites.",
+"choices": [
+"have - are - which",
+"has - is - what",
+"have - is - which",
+"has - are - what",
+"has - are - which"
+],
+"answer": "⑤",
+"solution": "(A)의 주어 중심어는 단수인 number이므로 has가 알맞다. (B)의 주어는 복수 satellites이므로 are를 쓰고, (C)에는 선행사 pieces of debris를 받는 관계대명사 which가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b04-u4m1s0t0",
+"custom": true
 }
 ]

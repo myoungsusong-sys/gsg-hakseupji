@@ -3336,5 +3336,83 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b09-u7m1s0t0",
 "custom": true
+},
+{
+"id": "fill-2bf01b959d",
+"typeId": "eng-h1-b09-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 대화를 읽고, 질문에 대한 답을 <조건>에 맞게 완성하시오.\n\nW: Why are you so tired?\nM: A mosquito was making an annoying sound in my room, so I could not sleep.\n\nQ. Why could the man not sleep?\n→ He could not sleep because ______________________________.\n\n<조건>\n• 대화의 내용에 맞게 쓸 것\n• 빈칸에 6단어로 쓸 것",
+"selfGrade": true,
+"answer": "a mosquito buzzed in his room",
+"solution": "남자는 방 안에서 모기가 내는 소리 때문에 잠을 자지 못했다. ‘모기 한 마리가 그의 방에서 윙윙거렸다’라는 의미가 되도록 6단어로 쓰면 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a669585cda",
+"typeId": "eng-h1-b09-u4m6s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글의 내용에 맞게 주어진 단어를 올바르게 배열하여 문장을 완성하시오.\n\nEarthworms dig tunnels in the soil. These tunnels allow air to reach the roots of plants.\n\n→ Earthworms help plant roots by ______________________________.\n\n<보기>\nair / bring / digging / that / tunnels\n\n<조건>\n• <보기>의 단어를 모두 한 번씩 사용할 것\n• 필요시 어법에 맞게 단어를 변형할 것",
+"selfGrade": true,
+"answer": "digging tunnels that bring air",
+"solution": "지렁이는 땅굴을 파서 식물의 뿌리에 공기가 도달하도록 돕는다. 전치사 by 뒤에는 동명사 digging이 오며, that bring air가 tunnels를 수식한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d325e0a7a8",
+"typeId": "eng-h1-b09-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 의미가 같도록 <보기>의 표현을 배열하여 문장을 완성하시오.\n\n모기는 배를 피로 채운 뒤 빠르게 달아나면서 가려운 붉은 혹을 남긴다.\n\n→ After filling its belly with blood, a mosquito escapes quickly, ______________________________.\n\n<보기>\nan itchy red bump / leave / behind\n\n<조건>\n• <보기>의 표현을 모두 사용할 것\n• 분사구문으로 쓸 것\n• 필요시 단어를 어법에 맞게 변형할 것",
+"selfGrade": true,
+"answer": "leaving behind an itchy red bump",
+"solution": "모기가 달아나는 동시에 붉은 혹을 남기므로 부대 상황을 나타내는 분사구문을 사용한다. 주어인 a mosquito가 혹을 남기는 능동 관계이므로 leave를 현재분사 leaving으로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3cbaf294c9",
+"typeId": "eng-h1-b09-u4m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때, 빈칸에 들어갈 말을 쓰시오.\n\nMosquitoes can sense the carbon dioxide that humans and other animals breathe out. Chemicals released in sweat also attract them. In addition, they notice when a person's body becomes warmer.\n\n→ Mosquitoes find their victims by detecting carbon dioxide, chemicals in sweat, and a(n) ____________ in body temperature.\n\n<조건>\n• 글의 내용에 맞는 한 단어를 쓸 것",
+"selfGrade": true,
+"answer": "rise",
+"solution": "모기는 이산화 탄소와 땀의 화학 물질뿐 아니라 높아진 체온도 감지한다. 관사 a와 전치사 in 사이에는 ‘상승’을 뜻하는 명사 rise가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3025a12c98",
+"typeId": "eng-h1-b09-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 내용과 일치하도록 문장을 <조건>에 맞게 완성하시오.\n\nFemale mosquitoes require the protein in blood to develop their eggs. For this reason, blood without protein would not attract them as a source needed for reproduction.\n\n→ ____________ protein in our blood, female mosquitoes ____________ bother us.\n\n<조건>\n• 첫 번째 빈칸에는 ‘~이 없다면’의 의미가 되도록 한 단어를 쓸 것\n• 두 번째 빈칸에는 would를 포함하여 두 단어로 쓸 것\n• 가정법 과거 문장과 같은 의미가 되게 할 것",
+"selfGrade": true,
+"answer": "Without, would not",
+"solution": "단백질이 없는 상황을 현재 사실과 반대되는 가정으로 나타낸 문장이다. ‘If our blood did not contain protein’은 전치사 Without을 사용한 구로 바꿀 수 있으며, 주절에는 would not을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m6s0t0",
+"custom": true
+},
+{
+"id": "fill-20c251d3f1",
+"typeId": "eng-h1-b09-u4m6s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 나타낼 때, 주어진 <조건>에 맞게 영작하시오.\n\nMosquitoes helped defend Rome against armies that came to attack it. Eventually, however, they carried malaria across both the city and the empire.\n\n→ 모기들은 로마를 공격하는 군대로부터 로마를 보호하는 데 도움을 주었지만, 말라리아를 도시뿐만 아니라 제국 전역에도 퍼뜨렸다.\n\n<조건>\n• Although로 시작할 것\n• help, protect, attack을 각각 알맞은 형태로 사용할 것\n• not only A but also B 구문을 사용할 것",
+"selfGrade": true,
+"answer": "Although mosquitoes helped protect Rome from attacking armies, they spread malaria not only throughout the city but also throughout the empire",
+"solution": "상반되는 두 사실을 연결해야 하므로 양보의 접속사 Although를 사용한다. help 뒤에는 동사원형 protect를 쓰고, 전치사 from 뒤의 attack은 attacking으로 바꾼다. 말라리아가 도시와 제국 양쪽에 퍼졌다는 내용은 not only A but also B로 표현한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b09-u4m6s0t0",
+"custom": true
 }
 ]

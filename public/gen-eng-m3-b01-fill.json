@@ -2737,5 +2737,247 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b01-u7m6s0t0",
 "custom": true
+},
+{
+"id": "fill-675847f132",
+"typeId": "eng-m3-b01-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nArtificial intelligence is making robots more intelligent. With AI, robots can understand what is happening around them and choose what to do. Some robots can understand speech, play games, and even respond to people.",
+"choices": [
+"Robots That Learn with AI",
+"How to Build a Robot Arm",
+"Dangerous Places for Humans",
+"The First Robot in History",
+"Movies about Future Robots"
+],
+"answer": "①",
+"solution": "글은 인공지능을 통해 로봇이 주변 상황을 파악하고 여러 지능적인 행동을 할 수 있게 되었다는 내용이다. 따라서 인공지능으로 학습하고 똑똑해지는 로봇을 나타낸 ①이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-2d5f654253",
+"typeId": "eng-m3-b01-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nToday, robots can be found in many places. Delivery robots move through the air, robot arms work in factories, and service robots assist people in public places. Robots are no longer seen only in stories or films.",
+"choices": [
+"the problems caused by robot pets",
+"the places where robots are used",
+"the history of factory machines",
+"the way to control delivery robots",
+"the differences between films and books"
+],
+"answer": "②",
+"solution": "글은 하늘, 공장, 공공장소 등 로봇을 볼 수 있는 여러 장소와 사례를 소개한다. 중심 내용은 로봇의 제작법이 아니라 로봇이 활용되는 장소이므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1a427f497c",
+"typeId": "eng-m3-b01-u6m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nSome robots make everyday life easier. A home helper robot can do housework, communicate with family members, and notice their emotions. A self-driving car can travel along roads without a human driver, allowing passengers to rest during the ride.",
+"choices": [
+"가정용 로봇은 사람의 감정을 느끼지 못한다.",
+"자율주행차에는 반드시 사람이 운전해야 한다.",
+"로봇은 일상생활을 더욱 편리하게 도울 수 있다.",
+"모든 로봇은 재난 지역에서만 사용되어야 한다.",
+"로봇은 가족과 의사소통하는 기능이 필요하지 않다."
+],
+"answer": "③",
+"solution": "가정 도우미 로봇과 자율주행차가 사람들의 집안일과 이동을 편리하게 해 주는 사례가 제시되어 있다. 두 사례를 포괄하는 요지는 로봇이 일상생활을 편리하게 할 수 있다는 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-48ef0cb2fe",
+"typeId": "eng-m3-b01-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 한 문장으로 요약하려고 한다. 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nA robot swarm consists of many robots that exchange information and solve tasks together. It may work on farms or at construction sites. Search-and-rescue robots have a different role: they enter unsafe disaster areas, locate survivors, handle dangers, and open paths through which people can reach safety.\n\nBoth kinds of robots can perform tasks through (A)________, but they are introduced as useful in different places: robot swarms at ordinary work sites and search-and-rescue robots in (B)________ areas.",
+"choices": [
+"competition — public",
+"communication — dangerous",
+"human control — comfortable",
+"emotional understanding — private",
+"individual judgment — peaceful"
+],
+"answer": "②",
+"solution": "로봇 무리는 서로 정보를 주고받으며 공동으로 과제를 해결하므로 (A)에는 communication이 적절하다. 수색·구조 로봇은 인간에게 위험한 재난 지역에서 활동하므로 (B)에는 dangerous가 들어가야 한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-cd8f421db7",
+"typeId": "eng-m3-b01-u6m3s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 내용을 아래와 같이 요약할 때, 빈칸 (A), (B)에 들어갈 영어 단어를 차례대로 쓰시오.\n\nLiving with robots in the future has both positive and negative sides. Robots may help people enjoy an easier life, but they may also create concerns about employment and safety. Therefore, people should deal with the possible problems and make certain that robots serve positive purposes.\n\nAlthough robots may make our lives more (A)________, we must solve the problems they may cause and ensure that they are used only for (B)________.",
+"selfGrade": true,
+"answer": "convenient, good",
+"solution": "로봇의 도움으로 삶이 더 편리해질 수 있다는 내용이므로 (A)는 convenient이다. 또한 로봇이 오직 좋은 일에 사용되도록 해야 한다고 했으므로 (B)는 good이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-22715d4a1e",
+"typeId": "eng-m3-b01-u6m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nAI allows robots to recognize speech, understand their surroundings, and make decisions. These abilities are already used in AI speakers and robot pets. Other robots help with housework, drive on roads, cooperate in groups, or work in disaster areas. Such robots can make human life easier, but they may also threaten jobs and safety. For this reason, people need to solve the problems connected with robots and guide their use in a positive direction.",
+"choices": [
+"Replacing Every Human Worker with a Robot",
+"AI Speakers: The Only Useful Robots",
+"Robots in Human Life: Abilities, Uses, and Responsibilities",
+"Why Robots Cannot Make Their Own Decisions",
+"Perfect Safety in a Future Controlled by Robots"
+],
+"answer": "③",
+"solution": "글은 인공지능 로봇의 능력, 여러 생활 영역에서의 활용, 그리고 미래의 문제에 대한 인간의 책임을 함께 다룬다. 이 세 가지 핵심 내용을 모두 포괄하는 제목은 ③이다. 나머지 선택지는 일부 내용만 강조하거나 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u6m3s0t0",
+"custom": true
+},
+{
+"id": "fill-9e386a90b4",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어와 영영풀이가 바르게 연결되지 않은 것은?",
+"choices": [
+"surface: the outer or top part of something",
+"material: a substance used for making something",
+"tourist: someone who visits a place for enjoyment",
+"unique: ordinary and similar to many other things",
+"reduce: to make something smaller in size or amount"
+],
+"answer": "④",
+"solution": "unique는 ‘독특한, 유일한’이라는 뜻으로, 다른 것과 구별되는 특징이 있음을 나타낸다. ‘평범하고 다른 많은 것과 비슷한’이라는 풀이는 unique의 의미와 반대이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-588dec5a56",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 두 단어의 관계가 <보기>와 같은 것은?\n\n<보기>\ncreate → creative\n‘동사 → 그 동작과 관련된 성질을 나타내는 형용사’",
+"choices": [
+"explain → explanation",
+"add → additional",
+"art → artist",
+"proper → properly",
+"appear → disappear"
+],
+"answer": "②",
+"solution": "create는 ‘창조하다’라는 동사이고 creative는 ‘창의적인’이라는 형용사이다. add와 additional도 각각 ‘추가하다’라는 동사와 ‘추가적인’이라는 형용사이므로 같은 관계이다. 나머지는 동사와 명사, 명사와 사람을 나타내는 명사, 형용사와 부사, 또는 반대 의미의 동사 관계이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0df53ce02b",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nTourists enjoy watching sea life near Cancun, but their activities can (A)[damage / support] it. The underwater museum offers (B)[additional / edible] living spaces on its statues. The artists hope that seeing different kinds of sea life will help visitors understand why the sea needs (C)[protection / destruction].\n\n선지는 (A)－(B)－(C)의 순서이다.",
+"choices": [
+"support－additional－protection",
+"damage－edible－protection",
+"damage－additional－destruction",
+"support－edible－destruction",
+"damage－additional－protection"
+],
+"answer": "⑤",
+"solution": "but 뒤에는 관광객의 활동이 해양 생물에 해를 줄 수 있다는 내용이 이어져야 하므로 damage가 알맞다. 조각상은 생물이 살아갈 ‘추가적인’ 공간을 제공하므로 additional이 적절하다. 다양한 해양 생물을 관찰하여 바다를 보호할 필요성을 이해한다는 흐름이므로 마지막에는 protection이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9a2050d525",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 단어와 영영풀이가 바르게 연결된 것만을 모두 고른 것은?\n\nⓐ edible: safe or suitable for people to eat\nⓑ awareness: words that make an idea easier to understand\nⓒ architecture: the art of planning and designing buildings\nⓓ shade: light that reaches a place straight from the sun\nⓔ contribute: to help cause something or make it happen",
+"choices": [
+"ⓐ, ⓑ, ⓒ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓓ, ⓔ"
+],
+"answer": "②",
+"solution": "edible은 ‘먹을 수 있는’, architecture는 ‘건축, 건축술’, contribute는 ‘기여하다’이므로 ⓐ, ⓒ, ⓔ가 옳다. awareness는 어떤 상황이나 사실에 대한 ‘인식’이며, ⓑ의 풀이는 explanation에 해당한다. shade는 햇빛이 가려져 생기는 ‘그늘’이므로 ⓓ도 옳지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-bfcc869444",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 대화의 ⓐ, ⓑ를 문맥상 바꾸어 쓴 것으로 가장 알맞은 것은?\n\nA: Taking the elevator once may not use much energy.\nB: True, but the energy used on repeated rides ⓐadds up.\nA: ⓑYou have a point. I'll use the stairs.\n\n선지는 ⓐ－ⓑ의 순서이다.",
+"choices": [
+"gradually decreases－Your idea is reasonable.",
+"gradually increases in total－You have reached your destination.",
+"stays at the same level－I understand your reason.",
+"gradually increases in total－Your idea is reasonable.",
+"completely disappears－You have reached your destination."
+],
+"answer": "④",
+"solution": "adds up은 작은 양이 반복해서 더해져 전체 양이 늘어난다는 뜻이다. You have a point는 상대의 말에 타당한 점이 있음을 인정하는 표현이다. 따라서 두 표현의 문맥상 의미를 모두 살린 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4d40ef0340",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 대신 표시한 ⓐ~ⓔ 중 문맥상 부적절한 단어 세 개를 찾아 <보기>의 단어로 고쳐 쓰시오.\n\nThe statues in the underwater museum are made of materials that ⓐdestroy sea life. They offer ⓑadditional spaces where sea plants and animals can live. As different forms of sea life grow on them, the artworks become ⓒcommon, each with its own special appearance. The artists hope that visitors will ⓓrealize the value of sea life and understand the need to ⓔdamage the sea.\n\n<보기>\nsupport / unique / save / edible / reduce\n\n[조건]\n• <보기>의 단어를 변형하지 말고 각각 한 번만 사용할 것.\n• 고친 단어만 ⓐ~ⓔ의 순서에 따라 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "support, unique, save",
+"solution": "해양 생물이 살아갈 공간을 제공하므로 ⓐ는 destroy가 아니라 support가 되어야 한다. 각각 특별한 모습을 갖게 된다는 설명에 맞게 ⓒ의 common은 unique로 고쳐야 한다. 해양 생물의 가치를 깨닫는다는 흐름상 ⓔ의 damage는 save로 바꾸는 것이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-37b5db55a9",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "각 영영풀이와 문장에 모두 맞도록 <보기>의 단어를 변형하여 빈칸에 쓰시오.\n\n<보기>\ncreate / add / explain / proper / attract\n\n(A) the quality of being suitable or correct → 해당 성질을 나타내는 형용사의 부사형\nThe materials must be used ________ to support sea life.\n\n(B) more than the amount already available\nThe statues give sea life ________ places to live.\n\n(C) a statement that makes something easier to understand\nThe professor gives an ________ of the underwater museum.\n\n(D) able to produce new ideas\nFinding a new way to protect the environment requires ________ thinking.\n\n[조건]\n• <보기>에서 서로 다른 단어 네 개를 골라 각각 한 단어로 변형할 것.\n• (A)~(D)의 답만 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "properly, additional, explanation, creative",
+"solution": "(A)는 ‘적절하게’라는 뜻으로 used를 수식해야 하므로 proper의 부사형 properly가 필요하다. (B)는 기존의 것에 더해지는 공간을 뜻하므로 additional이며, (C)는 이해를 돕는 ‘설명’이므로 explanation이다. (D)는 새로운 생각을 만들어 내는 성질을 뜻하고 thinking을 수식하므로 creative가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
+},
+{
+"id": "fill-9bfb189faf",
+"typeId": "eng-m3-b01-u4m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 (A)~(C)에 들어갈 단어를 아래 영영풀이에서 찾아 쓰시오. 영영풀이 중 두 개는 사용하지 않는다.\n\nAn environmental photo contest can increase students' (A)________ of pollution. Once students understand the problem, they may try to (B)________ the amount of plastic waste they produce. The corn-based bag offers one example of a different material: it can break down in (C)________.\n\n<영영풀이>\n㉠ the upper layer of the earth in which plants grow\n㉡ to keep someone or something safe from harm\n㉢ knowledge or understanding of a situation\n㉣ a substance from which an object is made\n㉤ to make something less in amount or size\n\n[조건]\n• 각 빈칸에 영영풀이에 해당하는 영어 단어를 한 개씩 쓸 것.\n• (A), (B), (C)의 첫 글자는 각각 a, r, s이다.\n• 답만 (A)~(C)의 순서대로 쉼표로 구분하여 쓸 것.",
+"selfGrade": true,
+"answer": "awareness, reduce, soil",
+"solution": "(A)는 오염 문제에 대한 ‘인식’을 뜻하며 ㉢에 해당하는 awareness이다. (B)는 플라스틱 쓰레기의 양을 ‘줄이다’라는 뜻으로 ㉤의 reduce가 들어간다. (C)는 옥수수가 주재료인 봉투가 분해되는 곳인 ‘흙’을 뜻하므로 ㉠의 soil이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u4m0s0t0",
+"custom": true
 }
 ]

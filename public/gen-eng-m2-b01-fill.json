@@ -595,5 +595,280 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b01-u3m7s0t0",
 "custom": true
+},
+{
+"id": "fill-b199d4f5b9",
+"typeId": "eng-m2-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 부분을 고친 것으로 적절하지 않은 것은?\n\nWarm Hearts has ⓐsolve some problems over the past few years. For the food waste problem, its members gathered ⓑsolving it. They thought that adding lines to food trays ⓒwill be helpful. Students could ⓓtook the right amount of food by looking at the lines. As a result, the new trays reduced ⓔmany food waste.",
+"choices": [
+"ⓐ solve → solved",
+"ⓑ solving → to solve",
+"ⓒ will → would",
+"ⓓ took → take",
+"ⓔ many → a large number of"
+],
+"answer": "⑤",
+"solution": "food waste는 셀 수 없는 명사이므로 a large number of와 함께 쓸 수 없다. many 대신 a large amount of로 고쳐야 한다. 나머지는 각각 현재완료, 목적의 to부정사, 시제 일치, 조동사 뒤 동사원형에 맞게 고친 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8142d11480",
+"typeId": "eng-m2-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 괄호 (A)~(D)에서 어법상 알맞은 말이 바르게 연결된 것은?\n\nHave you ever (A)[use / used] a digital kiosk? Warm Hearts volunteered at the community center to (B)[help / helping] people who had trouble with kiosks. The members explained every step: (C)[start / starting] an order, choosing from the menu, and paying. Their experience showed that even (D)[smaller / the smallest] acts can make a big difference.",
+"choices": [
+"use ― help ― starting ― smaller",
+"used ― helping ― start ― the smallest",
+"used ― help ― start ― smaller",
+"used ― help ― starting ― the smallest",
+"use ― helping ― starting ― the smallest"
+],
+"answer": "④",
+"solution": "현재완료 의문문에서는 과거분사 used를 쓰고, 목적을 나타내는 to 뒤에는 동사원형 help가 온다. 콜론 뒤의 세 동작은 starting, choosing, paying으로 병렬을 이루며, small의 최상급은 the smallest이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-e2c1411315",
+"typeId": "eng-m2-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"After solving the school problem, the members started to looking for another problem.",
+"The members thought that adding lines to the trays would helpful.",
+"By looking at the lines, students could take the right amount of food.",
+"The members found that some roads were dark and agreed what the roads needed more lights.",
+"After the lights were put up, the neighbors felt more safely than before."
+],
+"answer": "③",
+"solution": "조동사 could 뒤에 동사원형 take가 쓰였으므로 ③이 옳다. ①은 look, ②는 would be helpful, ④는 agreed that, ⑤는 비교급 형용사 safer로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c586fe1e7a",
+"typeId": "eng-m2-b01-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓕ에 주어진 단어를 어법상 알맞은 형태로 각각 쓰시오.\n\nHave you ever ⓐ(use) a digital kiosk? ⓑ(help) people who had trouble using kiosks, the members of Warm Hearts volunteered as digital guides. They explained the steps of ordering: ⓒ(start) an order, ⓓ(choose) from the menu, and ⓔ(pay). They learned that even the ⓕ(small) acts can make a big difference.\n\nⓐ ______, ⓑ ______, ⓒ ______, ⓓ ______, ⓔ ______, ⓕ ______",
+"selfGrade": true,
+"answer": "used, To help, starting, choosing, paying, smallest",
+"solution": "현재완료 경험에는 과거분사 used가 필요하고, 봉사한 목적은 To help로 나타낸다. 콜론 뒤의 동작들은 모두 동명사 형태로 병렬을 이루어야 한다. the 뒤에는 small의 최상급 smallest가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d763757cb9",
+"typeId": "eng-m2-b01-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호 ⓐ~ⓓ에 주어진 동사를 어법상 알맞은 형태로 각각 쓰시오.\n\nThe members of Warm Hearts gathered ⓐ(solve) the food waste problem. They believed that ⓑ(add) lines to food trays ⓒ(will) be helpful. With the lines, students could ⓓ(take) the right amount of food.\n\nⓐ ______, ⓑ ______, ⓒ ______, ⓓ ______",
+"selfGrade": true,
+"answer": "to solve, adding, would, take",
+"solution": "문제를 해결하려고 모였다는 목적은 to solve로 나타내며, that절의 주어 역할을 하는 add는 동명사 adding이 된다. 주절의 believed가 과거이므로 will은 would로 바뀌고, 조동사 could 뒤에는 동사원형 take가 온다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-88be24ffa5",
+"typeId": "eng-m2-b01-u1m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ를 어법상 알맞게 고쳐 쓰시오.\n\nAs the leader of Warm Hearts, Yuna introduces the club’s work. The club has ⓐsolving some school and community problems over the past few years, and she wants ⓑsharing the stories. After ⓒsolve one problem at school, the members started to ⓓlooked for another problem in their community. They learned that some roads ⓔwas dark at night and agreed ⓕwhat the roads needed more lights.\n\nⓐ ______, ⓑ ______, ⓒ ______, ⓓ ______, ⓔ ______, ⓕ ______",
+"selfGrade": true,
+"answer": "solved, to share, solving, look, were, that",
+"solution": "현재완료에는 과거분사 solved가 오며, want 뒤에는 to부정사 to share가 필요하다. 전치사 After 뒤에는 동명사 solving이 오고, started to 뒤에는 동사원형 look이 온다. 복수 주어 roads에는 were를 쓰며, agree 뒤의 완전한 절은 접속사 that으로 연결한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8e25dfe7b2",
+"typeId": "eng-m2-b01-u2m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 (A), (B)에 주어진 동사의 어법상 알맞은 형태가 바르게 연결된 것은?\n\nAfter the students leave, Ms. Lee washes the dishes and (A)(clean) the cafeteria. She is proud to (B)(serve) healthy food.",
+"choices": [
+"clean - serving",
+"cleans - serve",
+"cleans - serving",
+"cleaning - serve",
+"to clean - serve"
+],
+"answer": "②",
+"solution": "주어 she에 이어지는 washes와 병렬을 이루어야 하므로 (A)는 3인칭 단수형 cleans가 알맞다. 「be proud to＋동사원형」의 구조이므로 (B)는 serve가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-becd08e392",
+"typeId": "eng-m2-b01-u2m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 글의 일부를 고쳐 쓴 것이다. 어색한 부분을 바르게 고친 것만을 모두 고른 것은?\n\nⓐ There is three school heroes. → There are three school heroes.\nⓑ Eunho has awards presenting to them. → Eunho has awards to present to them.\nⓒ If you have a question, ask Mr. Kim. → If you will have a question, ask Mr. Kim.\nⓓ Ms. Lee washes the dishes and cleaning the cafeteria. → Ms. Lee washes the dishes and cleans the cafeteria.\nⓔ Students can feel safe at school. → Students can feel safely at school.",
+"choices": [
+"ⓐ, ⓑ",
+"ⓐ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓐ는 복수 주어 three school heroes에 맞게 are를 써야 하고, ⓑ의 to present는 awards를 수식한다. ⓓ에서는 washes와 병렬을 이루도록 cleans를 써야 한다. 조건을 나타내는 if절에는 현재형 have를 쓰며, 감각동사 feel 뒤에는 형용사 safe가 와야 하므로 ⓒ와 ⓔ의 수정은 잘못되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-068a10840c",
+"typeId": "eng-m2-b01-u2m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 어법상 옳은 문장의 개수는?\n\n(a) There are other people who plays important roles at school.\n(b) Eunho has three awards to present to the school heroes.\n(c) Mr. Kim works hard to make the school a good place for studying.\n(d) If students have a question, they can feel freely to ask Mr. Kim.\n(e) Ms. Lee prepares fresh meals and serves it to the students.\n(f) She washes the dishes and cleans the cafeteria.\n(g) Mr. Park makes sure the students can walk to school safely.\n(h) Thanks to Mr. Park, the students can feel safely and focus on studying.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "어법상 옳은 문장은 (b), (c), (f), (g)의 네 개이다. (a)는 play, (d)는 free, (e)는 them이 알맞고, (h)의 safely는 감각동사 feel의 보어인 형용사 safe로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-dc7677fbbe",
+"typeId": "eng-m2-b01-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 괄호에 주어진 동사를 어법상 알맞은 형태로 바꾸어 순서대로 쓰시오.\n\nAt the awards, Eunho says that there (A)(be) people who work behind the scenes. He has awards (B)(present) to three of them. Mr. Kim works hard (C)(make) the school a great place for studying. Ms. Lee is proud (D)(serve) healthy food, and she (E)(clean) the cafeteria after the students leave. Mr. Park walks around the school (F)(check) for dangerous situations.",
+"selfGrade": true,
+"answer": "are, to present, to make, to serve, cleans, to check",
+"solution": "(A)는 복수 주어 people에 맞추어 are를 쓰고, (B)는 awards를 수식하는 to부정사 형태가 필요하다. (C)와 (F)는 목적을 나타내며, 「be proud to＋동사원형」에 따라 (D)도 to부정사를 쓴다. (E)는 주어 she에 맞는 3인칭 단수 현재형 cleans가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-36245a200a",
+"typeId": "eng-m2-b01-u2m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 잘못된 네 부분을 찾아 바르게 고친 형태만 글에 나온 순서대로 쓰시오.\n\nThere is other people who work behind the scenes at school. Eunho has awards to presenting to three school heroes. Mr. Kim works hard make the school a good place for studying. If students have questions about the facilities, they can ask him. Ms. Lee prepares meals, washes the dishes, and clean the cafeteria.",
+"selfGrade": true,
+"answer": "are, present, to make, cleans",
+"solution": "people이 복수이므로 is는 are로 고쳐야 하고, 「awards to＋동사원형」이므로 presenting은 present가 되어야 한다. 목적을 나타내는 to부정사가 필요하므로 make는 to make로 고친다. 마지막으로 주어 Ms. Lee에 연결된 prepares, washes와 병렬을 이루도록 clean은 cleans로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u2m1s0t0",
+"custom": true
+},
+{
+"id": "fill-27d4508408",
+"typeId": "eng-m2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"Let’s talks about the importance of sleep.",
+"I have so many homework that I cannot sleep enough.",
+"Getting enough sleep is important for your health.",
+"Imagine to keep every experience in your memory.",
+"Watching messages on your phone keep your brain active."
+],
+"answer": "③",
+"solution": "동명사구 Getting enough sleep가 문장의 주어이므로 단수 동사 is가 알맞다. ①은 talk, ②는 much homework, ④는 keeping, ⑤는 keeps로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9cd424f609",
+"typeId": "eng-m2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 고쳐야 하는 것끼리 바르게 묶인 것은?\n\nDr. Jang was pleased ⓐto talk with hundreds of teenagers online. He explained that the body ⓑrepairs cells and muscles during sleep. He also said that memories which are not needed ⓒis cleared from the brain. ⓓKeeping every detail would fill our memory with unnecessary information. Before bedtime, watching videos or reading messages ⓔkeep the brain active.",
+"choices": [
+"ⓐ, ⓒ",
+"ⓐ, ⓓ",
+"ⓑ, ⓔ",
+"ⓒ, ⓔ",
+"ⓓ, ⓔ"
+],
+"answer": "④",
+"solution": "ⓒ의 주어 memories가 복수이고 수동태가 필요하므로 is cleared를 are cleared로 고쳐야 한다. ⓔ의 동명사구 watching videos or reading messages는 하나의 행위를 나타내는 단수 주어이므로 keep을 keeps로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-2c52194857",
+"typeId": "eng-m2-b01-u3m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 괄호 안의 동사를 문맥과 어법에 맞는 형태로 각각 쓰시오.\n\nHere ⓐ(be) one useful way to sleep deeply: put your phone away before bedtime. ⓑ(Watch) videos late at night ⓒ(make) your brain active, so you may have trouble ⓓ(fall) asleep.\n\nⓐ ________, ⓑ ________, ⓒ ________, ⓓ ________",
+"selfGrade": true,
+"answer": "is, Watching, makes, falling",
+"solution": "Here 뒤의 실제 주어가 one useful way이므로 ⓐ에는 is가 온다. 문장의 주어 역할을 하는 ⓑ는 Watching으로 쓰며, 이 동명사구는 단수 취급하므로 ⓒ는 makes가 알맞다. have trouble 뒤에는 동명사가 오므로 ⓓ는 falling이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-48b4d375cf",
+"typeId": "eng-m2-b01-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글의 ⓐ~ⓖ 중 어법상 틀린 것을 모두 찾아 기호와 바르게 고친 표현을 쓰시오.\n\nDr. Jang said that he was happy ⓐtalk with many teenagers through his live stream. Sleep is ⓑso necessary that people cannot live without it. While people are asleep, their cells and muscles ⓒrepair by the body. Unneeded memories ⓓare removed to make room for new ones. Imagine ⓔto remember every small detail of your experiences. Now, let’s ⓕlooking at a question about sleep habits. Changing a sleep schedule too often ⓖmay leads to health problems.",
+"selfGrade": true,
+"answer": "ⓐ to talk, ⓒ are repaired, ⓔ remembering, ⓕ look, ⓖ may lead",
+"solution": "happy 뒤에서 기쁨의 이유를 나타낼 때는 to부정사를 쓰므로 ⓐ는 to talk이다. 세포와 근육은 복구되는 대상이므로 ⓒ는 수동태 are repaired가 되어야 하며, imagine 뒤에는 동명사가 와서 ⓔ는 remembering이다. let’s와 조동사 may 뒤에는 동사원형이 오므로 ⓕ는 look, ⓖ는 may lead로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-4ddf3a3c1f",
+"typeId": "eng-m2-b01-u3m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 모든 문장이 어법상 옳은 것은?",
+"choices": [
+"Sleep is so important that we cannot live without it. During sleep, memories that are not needed are cleared.",
+"Sleep is such important that it affects our health. The body repairs its cells while we sleeping.",
+"Getting enough sleep help the body stay healthy. Imagine to keep every detail in your memory.",
+"A regular sleep schedule may prevents health problems. Trying to sleep more on weekends sometimes help.",
+"Here are a useful tip for deep sleep. You may have trouble to fall asleep after watching videos."
+],
+"answer": "①",
+"solution": "①은 so＋형용사＋that 구문과 수동태가 모두 올바르게 사용되었다. ②는 so important와 while we are sleeping, ③은 helps와 keeping이 필요하다. ④는 may prevent와 helps, ⑤는 Here is와 falling으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-404f6ce429",
+"typeId": "eng-m2-b01-u3m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 조건에 맞게 영작하시오.\n\n자기 전에 동영상을 보는 것은 뇌를 매우 활발하게 유지하므로 잠드는 데 어려움을 겪을 수 있다.\n\n조건\n- Watching으로 시작할 것\n- so ... that 구문을 사용할 것\n- have trouble을 사용할 것",
+"selfGrade": true,
+"answer": "Watching videos before bed keeps your brain so active that you may have trouble falling asleep.",
+"solution": "‘자기 전에 동영상을 보는 것’은 동명사구 Watching videos before bed로 나타내며 단수 주어이므로 keeps를 쓴다. ‘매우 활발해서 …하다’는 so active that 구문으로 표현한다. have trouble 뒤에는 동명사가 오므로 falling asleep이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b01-u3m1s0t0",
+"custom": true
 }
 ]

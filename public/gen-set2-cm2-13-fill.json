@@ -1488,5 +1488,146 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-cm2-13-u0m0s0t0",
 "custom": true
+},
+{
+"id": "fill-eb7a80f6c5",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "유리식 $\\dfrac{x^2-16}{x^2+x-20}$을 기약분수식으로 나타낸 결과와 원래 식에서 제외되는 $x$의 값을 바르게 짝지은 것은?",
+"choices": [
+"$\\dfrac{x+4}{x+5}$, $x\\ne -5$",
+"$\\dfrac{x-4}{x+5}$, $x\\ne -5,\\ 4$",
+"$\\dfrac{x+4}{x+5}$, $x\\ne -5,\\ 4$",
+"$\\dfrac{x+4}{x-4}$, $x\\ne -5,\\ 4$",
+"$\\dfrac{x-4}{x+5}$, $x\\ne -4,\\ 5$"
+],
+"answer": "③",
+"solution": "$x^2-16=(x-4)(x+4)$이고 $x^2+x-20=(x-4)(x+5)$이다. 따라서 기약분수식은 $\\dfrac{x+4}{x+5}$이고, 원래 분모가 $0$이 되는 $x=-5,\\ 4$는 제외해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-54030bfc8d",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 식을 계산한 결과와 원래 식이 정의되기 위한 조건을 바르게 짝지은 것은?\n\n$\\dfrac{x+2}{(x-1)(x+4)}\\div\\dfrac{x^2-4}{x-1}$",
+"choices": [
+"$\\dfrac{1}{(x+4)(x-2)}$, $x\\ne -4,\\ 1,\\ 2$",
+"$\\dfrac{1}{(x+4)(x+2)}$, $x\\ne -4,\\ -2,\\ 1,\\ 2$",
+"$\\dfrac{x+2}{(x+4)(x-2)}$, $x\\ne -4,\\ -2,\\ 1,\\ 2$",
+"$\\dfrac{1}{(x+4)(x-2)}$, $x\\ne -4,\\ -2,\\ 1,\\ 2$",
+"$\\dfrac{1}{(x-1)(x-2)}$, $x\\ne -4,\\ -2,\\ 1,\\ 2$"
+],
+"answer": "④",
+"solution": "나눗셈을 역수의 곱셈으로 바꾸고 $x^2-4=(x-2)(x+2)$를 이용하면 결과는 $\\dfrac{1}{(x+4)(x-2)}$이다. 각 분모를 $0$으로 만드는 $x=-4,\\ 1$과 나누는 식의 값을 $0$으로 만드는 $x=-2,\\ 2$를 모두 제외해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-77803dea45",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "주관식",
+"diff": 3,
+"body": "부분분수 분해를 이용하여 다음 식의 값을 구하여라.\n\n$\\dfrac{1}{2\\times4}+\\dfrac{1}{3\\times5}+\\dfrac{1}{4\\times6}+\\dfrac{1}{5\\times7}+\\dfrac{1}{6\\times8}$",
+"selfGrade": true,
+"answer": "$\\dfrac{95}{336}$",
+"solution": "$\\dfrac{1}{k(k+2)}=\\dfrac12\\left(\\dfrac1k-\\dfrac1{k+2}\\right)$로 분해한다. 따라서 주어진 합은 $\\dfrac12\\left(\\dfrac12+\\dfrac13-\\dfrac17-\\dfrac18\\right)=\\dfrac{95}{336}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-e3720bcd9b",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 식을 계산한 결과와 원래 식에서 제외해야 하는 $x$의 값을 바르게 짝지은 것은?\n\n$\\dfrac{x^2-9}{x^2-5x+6}\\times\\dfrac{x^2-4x+4}{x^2+2x-3}$",
+"choices": [
+"$\\dfrac{x-2}{x-1}$, $x\\ne 1,\\ 2,\\ 3$",
+"$\\dfrac{x-2}{x-1}$, $x\\ne -3,\\ 1,\\ 2,\\ 3$",
+"$\\dfrac{x+2}{x-1}$, $x\\ne -3,\\ 1,\\ 2,\\ 3$",
+"$\\dfrac{x-3}{x-1}$, $x\\ne -3,\\ 1,\\ 2,\\ 3$",
+"$\\dfrac{x-2}{x+1}$, $x\\ne -3,\\ -1,\\ 2,\\ 3$"
+],
+"answer": "②",
+"solution": "각 다항식을 인수분해하면 약분 후 $\\dfrac{x-2}{x-1}$을 얻는다. 원래 두 분모 $(x-2)(x-3)$과 $(x+3)(x-1)$을 기준으로 $x=-3,\\ 1,\\ 2,\\ 3$을 모두 제외해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-2eaf4c2fc8",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "부분분수 분해를 이용하여 다음 식의 값을 구한 것은?\n\n$\\dfrac{1}{2\\times5}+\\dfrac{1}{5\\times8}+\\dfrac{1}{8\\times11}+\\dfrac{1}{11\\times14}+\\dfrac{1}{14\\times17}+\\dfrac{1}{17\\times20}$",
+"choices": [
+"$\\dfrac{1}{20}$",
+"$\\dfrac{9}{40}$",
+"$\\dfrac{17}{60}$",
+"$\\dfrac{3}{20}$",
+"$\\dfrac{9}{20}$"
+],
+"answer": "④",
+"solution": "$\\dfrac{1}{m(m+3)}=\\dfrac13\\left(\\dfrac1m-\\dfrac1{m+3}\\right)$이다. 연속하여 소거하면 주어진 합은 $\\dfrac13\\left(\\dfrac12-\\dfrac1{20}\\right)=\\dfrac3{20}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-10e2048882",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "주관식",
+"diff": 4,
+"body": "모든 $x\\ne 2,\\ -3$에 대하여\n\n$\\dfrac{3x-16}{(x-2)(x+3)}=\\dfrac{A}{x-2}+\\dfrac{B}{x+3}$\n\n가 성립할 때, $A^2+B^2$의 값을 구하여라.",
+"selfGrade": true,
+"answer": "$29$",
+"solution": "우변을 통분하면 분자는 $(A+B)x+3A-2B$이다. 따라서 $A+B=3$, $3A-2B=-16$이므로 $A=-2$, $B=5$이다. 그러므로 $A^2+B^2=4+25=29$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-4cdcf4d2d2",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 식을 계산한 뒤 얻는 기약분수식이 $\\dfrac{1}{x+3}$일 때, 상수 $a$와 원래 식에서 제외되는 모든 $x$의 값의 합을 더한 값을 구하여라.\n\n$\\dfrac{x^2+(a-3)x-3a}{x^2-5x+6}\\div\\dfrac{x^2-9}{x-2}$",
+"selfGrade": true,
+"answer": "$-1$",
+"solution": "$x^2+(a-3)x-3a=(x-3)(x+a)$이므로 주어진 식은 $\\dfrac{x+a}{(x-3)(x+3)}$으로 계산된다. 기약분수식이 $\\dfrac1{x+3}$이려면 $x+a=x-3$이어야 하므로 $a=-3$이다. 원래 식에서는 $x=-3,\\ 2,\\ 3$을 제외하므로 그 합은 $2$이고, 구하는 값은 $-3+2=-1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-decab82af0",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "부분분수 분해를 이용하여 다음 식의 값을 구하여라.\n\n$\\dfrac{8}{1^2\\times3^2}+\\dfrac{16}{3^2\\times5^2}+\\dfrac{24}{5^2\\times7^2}+\\dfrac{32}{7^2\\times9^2}$",
+"selfGrade": true,
+"answer": "$\\dfrac{80}{81}$",
+"solution": "$\\dfrac{8(k+1)}{(2k+1)^2(2k+3)^2}=\\dfrac{1}{(2k+1)^2}-\\dfrac{1}{(2k+3)^2}$이다. 이를 $k=0,1,2,3$에 대하여 적용하면 중간 항이 모두 소거된다. 따라서 주어진 합은 $1-\\dfrac1{9^2}=\\dfrac{80}{81}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
+},
+{
+"id": "fill-04ddd5e3d4",
+"typeId": "set2-cm2-13-u0m0s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "실수 $a$에 대하여 다음 방정식이 서로 다른 실근을 정확히 하나만 갖도록 하는 모든 $a$의 제곱의 합을 구하여라.\n\n$\\dfrac{(x-1)(x+2)(x-a)}{(x-a)(x+a)}=0$",
+"selfGrade": true,
+"answer": "$10$",
+"solution": "원래 식에서 $x=a,\\ -a$는 제외되며, 약분 후 영점의 후보는 $x=1,\\ -2$이다. 이 두 수 중 정확히 하나만 제외되려면 $a=1,\\ -1,\\ 2,\\ -2$이어야 한다. 따라서 모든 $a$의 제곱의 합은 $1+1+4+4=10$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-cm2-13-u0m0s0t2",
+"custom": true
 }
 ]

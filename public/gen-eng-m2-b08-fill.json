@@ -141,5 +141,165 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b08-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-623ce79059",
+"typeId": "eng-m2-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 괄호 안에서 어법상 알맞은 말을 고른 것은?\n\nHilda uses a telescope (A)[see / to see] stars better and enjoys (B)[observe / observing] the night sky.",
+"choices": [
+"(A) see - (B) observe",
+"(A) see - (B) observing",
+"(A) to see - (B) observe",
+"(A) to see - (B) observing",
+"(A) seeing - (B) to observe"
+],
+"answer": "④",
+"solution": "망원경을 사용하는 목적을 나타내므로 (A)에는 목적의 to부정사인 to see가 알맞다. enjoy는 목적어로 동명사를 취하므로 (B)에는 observing이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-f6d21821eb",
+"typeId": "eng-m2-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳지 않은 것의 개수는?\n\nAnya enjoys ⓐwatching the powerful moves in Bollywood movies. She is taking classes ⓑto learn Bollywood dances and loves the feeling of ⓒmove to the rhythm. Noah feels ⓓhappily when he sees coral reefs. He hopes he can ⓔshare the beauty of sea life with his classmates.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "②",
+"solution": "전치사 of 뒤에는 동명사가 필요하므로 ⓒmove는 moving으로 고쳐야 한다. 감각동사 feel 뒤에는 형용사 보어가 오므로 ⓓhappily는 happy가 되어야 한다. 나머지 표현은 모두 어법상 알맞으므로 옳지 않은 것은 2개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-297090c797",
+"typeId": "eng-m2-b08-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장에서 어법상 잘못된 부분을 모두 찾아 바르게 고쳐 문장 전체를 쓰시오.\n\nSomeday, Hilda hopes discovering a new star and naming it after herself.",
+"selfGrade": true,
+"answer": "Someday, Hilda hopes she can discover a new star and name it after herself.",
+"solution": "hope는 「hope＋주어＋동사」의 절을 목적어로 취할 수 있으므로 hopes 뒤를 she can discover로 고친다. 조동사 can 뒤의 discover와 and로 연결된 동사도 원형이어야 하므로 naming을 name으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-80630e51e0",
+"typeId": "eng-m2-b08-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 어법상 틀린 부분 세 곳을 바르게 고쳐 문장 전체를 쓰시오.\n\nWhen Noah swims with colorful fish and seeing coral reefs, he feels happily, and it is a great chance sharing the beauty of sea life with his classmates.",
+"selfGrade": true,
+"answer": "When Noah swims with colorful fish and sees coral reefs, he feels happy, and it is a great chance to share the beauty of sea life with his classmates.",
+"solution": "swims와 and로 연결되어 같은 형태를 이루어야 하므로 seeing을 sees로 고친다. 감각동사 feels의 보어로는 부사가 아닌 형용사 happy가 와야 한다. chance 뒤에서는 기회를 구체적으로 설명하는 to부정사를 사용하므로 sharing을 to share로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-19dff13542",
+"typeId": "eng-m2-b08-u1m6s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 단어와 영영풀이의 연결이 올바르지 않은 것은?",
+"choices": [
+"happen: to take place",
+"chaos: a state of complete confusion",
+"swell: to become larger than usual",
+"bare: covered with thick clothing",
+"remove: to take something away"
+],
+"answer": "④",
+"solution": "bare는 ‘맨살의, 가리지 않은’이라는 뜻이다. 따라서 ‘두꺼운 옷으로 덮인’이라는 영영풀이는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5e7f37212b",
+"typeId": "eng-m2-b08-u1m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 알맞은 말을 쓰시오.\n\nMake sure you wash the area with soap and water.\n= Don’t __________ __________ __________ __________ __________ with soap and water.",
+"selfGrade": true,
+"answer": "forget to wash the area",
+"solution": "‘Make sure you＋동사원형’은 ‘반드시 ~해라’라는 뜻이다. 이를 ‘Don’t forget to＋동사원형’으로 바꾸면 같은 의미를 나타낼 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-4d2db67851",
+"typeId": "eng-m2-b08-u1m6s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법과 단어의 쓰임이 모두 적절한 것은?",
+"choices": [
+"The loud shouting turned the garden in chaos.",
+"Katie’s fingers started hurting after she touched the hot pan.",
+"Yunho took out the stinger by his fingers successfully.",
+"The students screamed in exciting when they saw the bees.",
+"We use a flat object to damaging the stinger."
+],
+"answer": "②",
+"solution": "②는 과거시제와 어휘의 쓰임이 모두 자연스럽다. ①은 into chaos, ③은 with his fingers, ④는 in excitement, ⑤는 to damage 또는 문맥상 to remove로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2a8881543d",
+"typeId": "eng-m2-b08-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 사용하여 문장을 완성하시오. 단어의 형태를 바꾸거나 단어를 추가하지 마시오.\n\n응급 처치 기술이 있는 사람들은 도움이 필요한 다른 사람들을 도울 수 있다.\n\n<보기> People / who / have / basic / first / aid / skills / can / help / others / who / are / in / need",
+"selfGrade": true,
+"answer": "People who have basic first aid skills can help others who are in need.",
+"solution": "첫 번째 who절은 People을 꾸며 ‘기본적인 응급 처치 기술이 있는 사람들’을 나타낸다. 두 번째 who절은 others를 꾸며 ‘도움이 필요한 다른 사람들’이라는 의미를 만든다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-0612211af1",
+"typeId": "eng-m2-b08-u1m6s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 세 문장을 <조건>에 맞게 의미가 통하도록 한 문장으로 쓰시오.\n\nYou have basic first aid skills. You can help some people. The people are in need.\n\n<조건>\n· If로 시작할 것\n· 관계대명사 who를 사용할 것\n· 같은 명사를 반복하지 않을 것",
+"selfGrade": true,
+"answer": "If you have basic first aid skills, you can help people who are in need.",
+"solution": "첫 번째 문장을 If가 이끄는 조건절로 만들고, 나머지 두 문장은 people을 선행사로 하는 관계대명사절로 연결한다. people이 사람이므로 주격 관계대명사 who를 사용한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-b57cf17ae7",
+"typeId": "eng-m2-b08-u1m6s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 중 양쪽 표현이 모두 어법상 옳고 서로 같은 의미를 나타내는 것은?",
+"choices": [
+"Make sure you wear a life jacket. ↔ Don’t forget wearing a life jacket.",
+"the fingers that touched the hot pan ↔ the fingers that the hot pan touched",
+"He tried to remove the stinger. ↔ He tried removing the stinger.",
+"people who are in need ↔ people needing help",
+"The garden turned into chaos. ↔ The students turned chaos into a peaceful garden."
+],
+"answer": "④",
+"solution": "people who are in need는 ‘도움이 필요한 사람들’이며 people needing help로 바꾸어 쓸 수 있다. ①은 forget to wear가 되어야 하고, ②와 ⑤는 행위의 주체나 의미가 달라진다. ③의 try to remove는 ‘제거하려고 시도하다’, try removing은 ‘시험 삼아 제거해 보다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b08-u1m6s0t0",
+"custom": true
 }
 ]

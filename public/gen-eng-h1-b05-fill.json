@@ -3320,5 +3320,191 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b05-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-07c651788f",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 알맞게 배열하시오. 필요하면 형태를 바꾸거나 단어를 추가할 수 있다.\n\n나는 계산대 너머를 보고 점원이 바닥에 누워 있는 것을 보았다.\n\n<보기> look / the counter / see / the clerk / lie / the floor",
+"selfGrade": true,
+"answer": "I looked over the counter and saw the clerk lying on the floor.",
+"solution": "지각동사 see는 ‘목적어＋현재분사’의 형태로 진행 중인 동작을 나타낼 수 있다. 과거의 일이므로 look과 see를 각각 looked와 saw로 바꾸어 배열한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-cb7ae28e2a",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 주어진 단어를 모두 사용하여 문장을 완성하시오.\n\n유나는 그 대회에 참가 신청을 하기로 결심했다.\n\n<보기> decide / sign / contest\n\nYuna ________________________________________________.",
+"selfGrade": true,
+"answer": "decided to sign up for the contest",
+"solution": "‘~하기로 결심하다’는 decide to부정사로 표현한다. ‘대회에 참가 신청을 하다’는 sign up for the contest이므로 과거형 decided로 완성한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-cd48598beb",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 말을 알맞게 배열하시오.\n\n나는 스포츠가 없는 평범한 고등학교 생활에 익숙해지려고 여전히 노력하고 있었다.\n\n<보기> without sports / was still trying / my ordinary high school life / I / to get used to",
+"selfGrade": true,
+"answer": "I was still trying to get used to my ordinary high school life without sports.",
+"solution": "‘~에 익숙해지다’는 get used to로 나타낸다. try 뒤에는 to부정사를 사용하고, without sports는 high school life를 뒤에서 보충한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-1ad891f843",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장의 의미가 자연스럽게 이어지도록 because를 사용하여 한 문장으로 영작하시오. 단, 16단어로 쓸 것.\n\n아무도 계산대에 없었다. 그래서 나는 점원이 안쪽에서 일하고 있다고 생각했다.",
+"selfGrade": true,
+"answer": "Because no one was at the counter, I thought the clerk was working in the back.",
+"solution": "첫 번째 내용이 생각의 이유이므로 because가 이끄는 이유의 부사절로 만든다. thought 뒤에는 ‘주어＋동사’ 형태의 명사절 the clerk was working in the back을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-df766e0522",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어를 모두 사용하여 영작하시오. 필요하면 형태를 바꾸거나 단어를 추가할 수 있다.\n\n나의 두려움은 나를 무대 위가 아니라 무대 뒤에 머물게 했다.\n\n<보기> fear / keep / behind / rather than / on",
+"selfGrade": true,
+"answer": "My fear kept me behind the stage rather than on it.",
+"solution": "‘A가 B를 어떤 상태에 있게 하다’는 keep A＋장소 표현으로 나타낼 수 있다. ‘~라기보다는’의 rather than을 사용하고 반복되는 the stage는 it으로 대신한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-e4dee9ef3e",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n내가 경주에서 막 선두를 차지하려던 바로 그때, 갑자기 무릎에 통증을 느꼈다.\n\n<조건>\n• ‘막 ~하려던 참이었다’의 표현을 사용할 것\n• when을 사용할 것\n• 19단어로 쓸 것",
+"selfGrade": true,
+"answer": "I was about to take the lead in the race when I suddenly felt a pain in my knee.",
+"solution": "‘막 ~하려던 참이었다’는 was about to＋동사원형으로 표현한다. 그때 발생한 일을 when절로 연결하고 ‘무릎에 통증을 느끼다’는 feel a pain in one’s knee로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-b3874b823f",
+"typeId": "eng-h1-b05-u0m5s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "Jason의 경험에 관한 다음 우리말을 <조건>에 맞게 영작하시오.\n\n전화를 받으러 오는 사람이 아무도 없었기 때문에, Jason은 무언가 잘못되었다고 느꼈고 점원이 바닥에 누워 있는 것을 보았다.\n\n<조건>\n• Because로 시작할 것\n• 지각동사와 현재분사를 사용할 것\n• 21단어로 쓸 것\n• <보기>의 단어를 모두 사용할 것\n\n<보기> answer / wrong / see / lie",
+"selfGrade": true,
+"answer": "Because no one came to answer the phone, Jason felt something was wrong and saw the clerk lying on the floor.",
+"solution": "이유를 나타내는 절은 Because no one came to answer the phone으로 구성한다. ‘점원이 누워 있는 것을 보았다’는 지각동사 saw 뒤에 목적어 the clerk와 현재분사 lying을 차례로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u0m5s0t0",
+"custom": true
+},
+{
+"id": "fill-5a9400084e",
+"typeId": "eng-h1-b05-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAt the airport in Nairobi, Jiwoo met Henry, who was in charge of the volunteer camp. Volunteers arriving from various countries quickly became friends. Together, they traveled through the busy city in a large van. Jiwoo learned that people in Kenya speak Swahili as well as English. The volunteers also learned to greet people by saying jambo.",
+"choices": [
+"Henry came to Kenya to join the camp as a volunteer.",
+"The volunteers all came from the same country.",
+"Jiwoo traveled through Nairobi with the other volunteers in a van.",
+"English is the only language used in Kenya.",
+"Jambo is an expression used to say goodbye."
+],
+"answer": "③",
+"solution": "Jiwoo는 다른 자원봉사자들과 함께 큰 승합차를 타고 나이로비 시내를 이동했으므로 ③이 일치한다. Henry는 캠프 책임자이며, 참가자들의 출신 국가는 다양하고, 케냐에서는 영어와 스와힐리어를 사용하며 jambo는 인사말이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-ef0bb3b3d5",
+"typeId": "eng-h1-b05-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nFor dinner at the camp, the volunteers enjoyed chapati, a popular food in Kenya. To make it, flour dough is cooked in oil. Its outer layer is crispy, while the inside remains moist. The meal included fried vegetables and beans. Volunteers from different countries all enjoyed the food. After dinner, they stepped outside to watch the bright stars.",
+"choices": [
+"Chapati is a popular food in Kenya.",
+"Flour dough is used to make chapati.",
+"Chapati has a crispy outside and a moist inside.",
+"The volunteers ate vegetables and beans with chapati.",
+"Some volunteers disliked the meal because they came from different countries."
+],
+"answer": "⑤",
+"solution": "출신 국가와 관계없이 모든 자원봉사자가 음식을 즐겼다고 했으므로, 일부가 출신 국가 때문에 음식을 싫어했다는 ⑤는 일치하지 않는다. 나머지 선지는 차파티의 재료와 식감, 함께 제공된 음식에 관한 설명과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-c73af07d1d",
+"typeId": "eng-h1-b05-u5m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 통해 추론할 수 있는 것으로 가장 적절한 것은?\n\nJiwoo's task was to look for traps placed illegally in the conservancy. Her group went into the field with people experienced in finding traps. The volunteers searched different areas and discovered wire traps lying on the ground, hidden among bushes, or fixed to fences. Jiwoo felt that finding each trap meant saving an animal's life, and she found the work very rewarding.",
+"choices": [
+"Jiwoo hoped to learn how to catch wild animals with wire.",
+"Searching for illegal traps was a way to help protect wild animals.",
+"The experienced trap spotters taught volunteers to set traps.",
+"Jiwoo considered the search useless because the traps were empty.",
+"The group expected to find traps only on open ground."
+],
+"answer": "②",
+"solution": "Jiwoo는 덫을 발견할 때마다 동물의 생명을 구하는 것이라고 느꼈으므로, 불법 덫을 찾는 활동이 야생 동물 보호에 도움이 된다는 ②를 추론할 수 있다. 덫을 설치하거나 동물을 잡는 방법을 배우려 했다는 내용은 없으며, 덫은 덤불과 울타리에서도 발견되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-1617c30946",
+"typeId": "eng-h1-b05-u5m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nJiwoo joined a group studying giraffes at the conservancy. Each giraffe already had a name, and its particular arrangement of spots helped the volunteers recognize it. The group searched for the animals with cameras and binoculars and kept records of where they were and what they were doing. For identification, pictures of both sides were often necessary. After returning to camp, the volunteers checked their photographs against those in an identification book. They identified most of the giraffes and also found baby giraffes missing from the book.",
+"choices": [
+"What physical feature helped the volunteers recognize individual giraffes?",
+"What equipment did the group use to find the giraffes?",
+"What information about the giraffes did the group record?",
+"How many hours did the group spend looking for giraffes in the field?",
+"What did the volunteers use to check their photographs after returning to camp?"
+],
+"answer": "④",
+"solution": "기린의 반점 무늬, 사용 장비, 기록한 정보, 캠프에서 사진을 대조한 자료는 모두 제시되어 있다. 그러나 현장에서 기린을 찾는 데 몇 시간이 걸렸는지는 나와 있지 않으므로 ④에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m4s0t0",
+"custom": true
+},
+{
+"id": "fill-eabb91581e",
+"typeId": "eng-h1-b05-u5m4s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용에 비추어 (A)~(E)를 판단할 때, 일치하거나 추론할 수 있으면 T, 그렇지 않으면 F로 표시한 것으로 가장 적절한 것은?\n\nDuring her visit to the Nairobi National Museum, Jiwoo explored exhibits about Kenya's nature and culture. A statue showing Ahmed, an elephant with huge tusks, particularly impressed her. The statue stands for efforts to fight illegal hunting. After the museum visit, the volunteers traveled to the Kigio Wildlife Conservancy.\n\nThe following morning, Jiwoo was placed in the giraffe survey group. The giraffes had already been given names. Their spot patterns, which differ from one animal to another like human fingerprints, allowed the group to tell them apart. Using cameras and binoculars, the volunteers located giraffes and noted their positions and activities. They often needed photographs of both sides, so they had to move around an animal before it ran away. At camp, they compared the photographs with pictures in an identification book. They recognized most of the giraffes and discovered baby giraffes that the book did not yet include.\n\n(A) Ahmed's statue connects the museum visit with the issue of wildlife protection.\n(B) The survey group's task included giving names to giraffes that had previously had none.\n(C) The discovery of the baby giraffes showed that the identification book did not include every giraffe the group encountered.\n(D) Taking photographs in the field completed the identification process, so comparison at camp was unnecessary.\n(E) Successful photography sometimes required the volunteers to change their position while the giraffe was still there.",
+"choices": [
+"T-F-T-F-T",
+"T-T-F-F-T",
+"F-F-T-T-T",
+"T-F-F-T-F",
+"F-T-T-F-F"
+],
+"answer": "①",
+"solution": "Ahmed의 동상은 불법 사냥에 반대하는 활동을 상징하므로 (A)는 T이고, 기린들은 이미 이름이 있었으므로 (B)는 F이다. 도감에 없는 새끼 기린을 발견했으므로 (C)는 T이며, 캠프에서 사진을 도감과 대조했으므로 (D)는 F이다. 기린이 달아나기 전에 반대편으로 이동하여 촬영해야 하는 경우가 있었으므로 (E)는 T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b05-u5m4s0t0",
+"custom": true
 }
 ]

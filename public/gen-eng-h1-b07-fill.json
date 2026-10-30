@@ -3148,5 +3148,94 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u1m1s0t0",
 "custom": true
+},
+{
+"id": "fill-104f570e91",
+"typeId": "eng-h1-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nCharlie explains that a “Dislike” button may improve communication on social media. It is likely (A)[that / what] users can express disagreement without leaving an unkind comment. This may keep online conversations honest and (B)[respectful / respectfully]. It can also let content creators (C)[learn / to learn] what their audience does not like.",
+"choices": [
+"that - respectful - learn",
+"that - respectfully - learn",
+"what - respectful - to learn",
+"what - respectfully - learn",
+"that - respectful - to learn"
+],
+"answer": "①",
+"solution": "「It is likely that ...」에서 that은 내용절을 이끄는 접속사이다. honest와 and로 연결되므로 형용사 respectful이 알맞고, 사역동사 let은 목적격보어로 동사원형 learn을 취한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d9e3492871",
+"typeId": "eng-h1-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe article encouraged Abigail (A)[to focus / focus] her energy on matters within her control. For instance, she could not decide her professor’s reaction, but she could control the research (B)[that / what] she did for her report. After understanding this distinction, she no longer felt constantly (C)[exhausted / exhausting].",
+"choices": [
+"to focus - that - exhausted",
+"to focus - what - exhausting",
+"focus - that - exhausted",
+"focus - what - exhausted",
+"to focus - that - exhausting"
+],
+"answer": "①",
+"solution": "encourage는 「encourage＋목적어＋to부정사」의 형태로 쓰인다. 선행사 the research가 있으므로 목적격 관계대명사 that이 필요하며, Abigail이 피로를 느끼는 것이므로 exhausted가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-19e6ce476a",
+"typeId": "eng-h1-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 어색한 것의 개수는?\n\nElias often found ⓐhimself remaining silent during class discussions. Although he considered ⓑto speak up, he worried about being wrong or ridiculed. He was afraid ⓒwhat something bad might happen and rarely imagined a positive result. However, after noticing his classmates ⓓtaking similar risks, he decided that expressing his opinion was worth ⓔto try. By ⓕexpress himself more openly, he developed both intellectually and socially. He also found more people with ⓖwhom he could exchange ideas.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "어색한 부분은 ⓑ, ⓒ, ⓔ, ⓕ의 네 곳이다. 각각 considering speaking up, afraid that, worth trying, By expressing himself로 고쳐야 한다. ⓐ의 재귀대명사, ⓓ의 지각동사 목적격보어, ⓖ의 「전치사＋관계대명사」는 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-3cdde341e5",
+"typeId": "eng-h1-b07-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 어색한 것을 모두 고른 것은?\n\nLucia says that many gifts are chosen ⓐthoughtfully for their receivers. She believes that common gifts can ⓑbe regifted until they ⓒfind a home with someone who appreciates them. In her opinion, there is no reason to feel guilty about passing on something ⓓwhich might otherwise be thrown away. Richard disagrees because a gift contains the giver’s feelings and should not ⓔgive away carelessly. He also thinks regifting is not worth the trouble ⓕwhich it may cause. Therefore, he recommends simply ⓖkeep the gift as a reminder of the relationship.",
+"choices": [
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓔ, ⓕ",
+"ⓓ, ⓔ, ⓖ",
+"ⓔ, ⓕ, ⓖ"
+],
+"answer": "⑤",
+"solution": "선물이 주어지는 대상이므로 ⓔ는 수동태 be given away가 되어야 한다. ⓕ에서는 관계대명사 which가 cause의 목적어이므로 it을 삭제해야 한다. recommend 뒤에는 동명사를 쓰므로 ⓖ은 keeping이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-5fd878add6",
+"typeId": "eng-h1-b07-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 문장의 밑줄 친 (A), (B), (C)에서 어법상 어색한 부분을 각각 고친 후, 문장 전체를 다시 쓰시오. (단어를 추가하거나 삭제하지 말 것)\n\nEveryone at university seemed more talented than Nahyeon, which made her (A)compared herself with them. Later, she happened to see a drawing (B)what she had won an award for and realized how much (C)had she improved.",
+"selfGrade": true,
+"answer": "Everyone at university seemed more talented than Nahyeon, which made her compare herself with them. Later, she happened to see a drawing that she had won an award for and realized how much she had improved.",
+"solution": "사역동사 make의 목적격보어에는 동사원형 compare가 온다. 선행사 a drawing이 있으므로 what을 관계대명사 that으로 바꾸어야 한다. realized의 목적어인 간접의문문은 평서문 어순이므로 she had improved가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u0m1s0t0",
+"custom": true
 }
 ]
