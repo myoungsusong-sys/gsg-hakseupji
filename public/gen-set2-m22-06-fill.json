@@ -2505,5 +2505,94 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-m22-06-u0m0s2t2",
 "custom": true
+},
+{
+"id": "fill-19d4c3dbb1",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 두 변 $AB$, $AC$의 중점을 각각 $M$, $N$이라 하자. $\\overline{BC}=18\\,\\mathrm{cm}$일 때, $\\overline{MN}$의 길이는?",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "삼각형의 두 변의 중점을 연결한 선분은 나머지 한 변과 평행하고 그 길이는 나머지 변의 길이의 절반이다. 따라서 $\\overline{MN}=\\dfrac{1}{2}\\overline{BC}=\\dfrac{1}{2}\\times 18=9\\,(\\mathrm{cm})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-1948364ab0",
+"typeId": "set2-m22-06-u0m0s3t3",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $ABC$에서 두 변 $AB$, $AC$의 중점을 각각 $D$, $E$라 하자. $\\overline{DE}=7\\,\\mathrm{cm}$일 때, $\\overline{BC}$의 길이는?",
+"choices": [
+"$10\\,\\mathrm{cm}$",
+"$12\\,\\mathrm{cm}$",
+"$14\\,\\mathrm{cm}$",
+"$16\\,\\mathrm{cm}$",
+"$18\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "$D$, $E$가 두 변의 중점이므로 $\\overline{DE}=\\dfrac{1}{2}\\overline{BC}$, 즉 $\\overline{BC}=2\\overline{DE}$이다. 따라서 $\\overline{BC}=2\\times 7=14\\,(\\mathrm{cm})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s3t3",
+"custom": true
+},
+{
+"id": "fill-29a21c3162",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD=6\\,\\mathrm{cm}$, $BC=12\\,\\mathrm{cm}$이다. 변 $AB$, $DC$ 위의 점 $E$, $F$에 대하여 $AD\\parallel EF\\parallel BC$이고 $AE:EB=1:2$일 때, $EF$의 길이는?",
+"choices": [
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$8\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$",
+"$10\\,\\mathrm{cm}$"
+],
+"answer": "③",
+"solution": "대각선 $AC$와 $EF$가 만나는 점을 $G$라 하자. $\\triangle ABC$에서 $AE:AB=1:3$이므로 $EG=12\\times\\frac{1}{3}=4\\,(\\mathrm{cm})$이다. $\\triangle ACD$에서 $CF:CD=EB:AB=2:3$이므로 $GF=6\\times\\frac{2}{3}=4\\,(\\mathrm{cm})$이다. 따라서 $EF=4+4=8\\,(\\mathrm{cm})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-fd1a68e31f",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "세 직선 $l$, $m$, $n$이 서로 평행하고, 두 직선 $p$, $q$가 이 세 직선과 만난다. 직선 $p$ 위에서 $l$과 $m$ 사이의 선분의 길이는 $4\\,\\mathrm{cm}$, $m$과 $n$ 사이의 선분의 길이는 $6\\,\\mathrm{cm}$이다. 직선 $q$ 위에서 $l$과 $m$ 사이의 선분의 길이가 $x\\,\\mathrm{cm}$, $m$과 $n$ 사이의 선분의 길이가 $9\\,\\mathrm{cm}$일 때, $x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "6",
+"solution": "평행선 사이에 생기는 선분의 길이의 비는 같으므로 $4:6=x:9$이다. 따라서 $6x=36$에서 $x=6$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-776f80c63d",
+"typeId": "set2-m22-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "사다리꼴 $ABCD$에서 $AD\\parallel BC$이고 $AD=8\\,\\mathrm{cm}$, $BC=12\\,\\mathrm{cm}$이다. 변 $AB$, $DC$의 중점을 각각 $E$, $F$라 하고, 선분 $EF$가 대각선 $BD$, $AC$와 만나는 점을 각각 $H$, $G$라 하자. 점들이 선분 $EF$ 위에 $E$, $H$, $G$, $F$의 순서로 놓여 있을 때, $HG$의 길이는?",
+"choices": [
+"$1\\,\\mathrm{cm}$",
+"$2\\,\\mathrm{cm}$",
+"$3\\,\\mathrm{cm}$",
+"$4\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$"
+],
+"answer": "②",
+"solution": "$E$, $F$가 중점이므로 $AD\\parallel EF\\parallel BC$이다. $\\triangle ABC$에서 $EG=\\frac{1}{2}BC=6\\,(\\mathrm{cm})$이고, $\\triangle ABD$에서 $EH=\\frac{1}{2}AD=4\\,(\\mathrm{cm})$이다. 따라서 $HG=EG-EH=6-4=2\\,(\\mathrm{cm})$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-m22-06-u0m0s1t3",
+"custom": true
 }
 ]

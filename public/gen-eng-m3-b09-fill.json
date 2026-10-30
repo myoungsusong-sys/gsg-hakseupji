@@ -4407,5 +4407,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b09-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-7db44ce66f",
+"typeId": "eng-m3-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 단어의 우리말 뜻이 알맞지 않은 것은?",
+"choices": [
+"survive: 살아남다, 생존하다",
+"glacier: 빙하",
+"rainfall: 강수량, 강우",
+"harsh: 부드러운, 온화한",
+"spiky: 뾰족한"
+],
+"answer": "④",
+"solution": "harsh는 '혹독한, 가혹한'이라는 뜻이다. ④의 '부드러운, 온화한'은 반대 의미이므로 알맞지 않다. 나머지 단어의 뜻은 모두 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6d168cad02",
+"typeId": "eng-m3-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이가 설명하는 단어로 가장 알맞은 것은?\n\na person whose job is to study living things and their relationship with the environment",
+"choices": [
+"ecologist",
+"colorist",
+"scout",
+"glacier",
+"range"
+],
+"answer": "①",
+"solution": "생물과 환경의 관계를 연구하는 사람은 ecologist(생태학자)이다. colorist는 색채 전문가, scout는 장소를 찾는 사람, glacier는 빙하, range는 산맥 등을 뜻하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u1m7s0t0",
+"custom": true
+},
+{
+"id": "fill-7b49489b81",
+"typeId": "eng-m3-b09-u1m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 공통으로 들어갈 말로 가장 알맞은 것은?\n\n• The beauty of nature can ________ artists.\n• I'm ________ by the amazing colors of the river.",
+"choices": [
+"inspire",
+"survive",
+"produce",
+"visit",
+"mix"
+],
+"answer": "①",
+"solution": "'영감을 주다'라는 뜻의 inspire가 들어가야 자연스럽다. 첫 문장은 '자연의 아름다움이 예술가에게 영감을 줄 수 있다', 둘째 문장은 '나는 강의 놀라운 색에서 영감을 받는다'라는 의미이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b09-u1m7s0t0",
+"custom": true
 }
 ]

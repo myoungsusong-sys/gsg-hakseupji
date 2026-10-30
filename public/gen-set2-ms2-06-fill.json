@@ -2154,5 +2154,113 @@
 "source": "유사 문항",
 "twinGroup": "tw-set2-ms2-06-u0m0s0t3",
 "custom": true
+},
+{
+"id": "fill-d711d51815",
+"typeId": "set2-ms2-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "어떤 저항에 $6\\ \\mathrm{V}$의 전압을 걸었더니 $3\\ \\Omega$의 저항을 통해 전류가 흘렀다. 이때 저항에 흐르는 전류의 세기는?",
+"choices": [
+"$1\\ \\mathrm{A}$",
+"$2\\ \\mathrm{A}$",
+"$3\\ \\mathrm{A}$",
+"$6\\ \\mathrm{A}$",
+"$18\\ \\mathrm{A}$"
+],
+"answer": "②",
+"solution": "옴의 법칙에서 전류의 세기는 $I=\\dfrac{V}{R}$이다. 따라서 $I=\\dfrac{6\\ \\mathrm{V}}{3\\ \\Omega}=2\\ \\mathrm{A}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-ms2-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-646f00f7f2",
+"typeId": "set2-ms2-06-u0m0s1t3",
+"kind": "객관식",
+"diff": 1,
+"body": "같은 재질로 만든 니크롬선의 저항에 대한 설명으로 옳은 것은?",
+"choices": [
+"길이가 길수록 저항이 작아진다.",
+"단면적이 넓을수록 저항이 커진다.",
+"길이가 길수록 저항이 커진다.",
+"길이와 단면적은 저항과 관계가 없다.",
+"단면적이 넓을수록 저항이 커진다가 항상 성립한다."
+],
+"answer": "③",
+"solution": "같은 재질의 도선에서 저항은 길이에 비례하고 단면적에 반비례한다. 따라서 길이가 길수록 저항은 커지고, 단면적이 넓을수록 저항은 작아진다. 그러므로 옳은 설명은 길이가 길수록 저항이 커진다는 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-ms2-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-a878d277c4",
+"typeId": "set2-ms2-06-u0m0s1t3",
+"kind": "주관식",
+"diff": 1,
+"body": "어떤 저항에 $10\\ \\mathrm{V}$의 전압을 걸었더니 $2\\ \\mathrm{A}$의 전류가 흘렀다. 이 저항의 저항값은 몇 $\\Omega$인지 구하시오.",
+"selfGrade": true,
+"answer": "$5\\ \\Omega$",
+"solution": "옴의 법칙에서 저항은 $R=\\dfrac{V}{I}$로 구한다. 따라서 $R=\\dfrac{10\\ \\mathrm{V}}{2\\ \\mathrm{A}}=5\\ \\Omega$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-ms2-06-u0m0s1t3",
+"custom": true
+},
+{
+"id": "fill-5fc1687d6f",
+"typeId": "set2-ms2-06-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "저항이 $4\\,\\mathrm{\\Omega}$인 저항 2개를 직렬로 연결하였다. 이때 합성 저항의 크기는?",
+"choices": [
+"$2\\,\\mathrm{\\Omega}$",
+"$4\\,\\mathrm{\\Omega}$",
+"$6\\,\\mathrm{\\Omega}$",
+"$8\\,\\mathrm{\\Omega}$",
+"$16\\,\\mathrm{\\Omega}$"
+],
+"answer": "④",
+"solution": "저항을 직렬로 연결하면 합성 저항은 각 저항의 크기를 더한 값과 같다. 따라서 합성 저항은 $4+4=8\\,\\mathrm{\\Omega}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-ms2-06-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-b829521b6b",
+"typeId": "set2-ms2-06-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "저항이 $6\\,\\mathrm{\\Omega}$인 저항 2개를 병렬로 연결하였다. 이때 합성 저항의 크기는?",
+"choices": [
+"$1\\,\\mathrm{\\Omega}$",
+"$2\\,\\mathrm{\\Omega}$",
+"$3\\,\\mathrm{\\Omega}$",
+"$6\\,\\mathrm{\\Omega}$",
+"$12\\,\\mathrm{\\Omega}$"
+],
+"answer": "③",
+"solution": "크기가 같은 저항 2개를 병렬로 연결하면 합성 저항은 저항 1개의 크기의 절반이 된다. 따라서 합성 저항은 $6\\div2=3\\,\\mathrm{\\Omega}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-ms2-06-u0m0s2t3",
+"custom": true
+},
+{
+"id": "fill-83eb347d67",
+"typeId": "set2-ms2-06-u0m0s2t3",
+"kind": "객관식",
+"diff": 1,
+"body": "저항 $R_1$과 $R_2$를 병렬로 연결하고, 이 두 저항의 연결 부분에 저항 $R_3$를 직렬로 연결하였다. 이에 대한 설명으로 옳은 것은?",
+"choices": [
+"$R_1$과 $R_2$에 걸리는 전압은 항상 같다.",
+"$R_1$과 $R_2$에 흐르는 전류의 세기는 항상 같다.",
+"$R_3$에 흐르는 전류의 세기는 $R_1$에 흐르는 전류의 세기보다 항상 작다.",
+"회로 전체의 합성 저항은 $R_1$, $R_2$, $R_3$의 크기를 모두 더한 값이다.",
+"$R_3$에 걸리는 전압은 $R_1$에 걸리는 전압과 항상 같다."
+],
+"answer": "①",
+"solution": "병렬로 연결된 저항에는 각각 같은 크기의 전압이 걸린다. 따라서 $R_1$과 $R_2$에 걸리는 전압은 같다. 반면 병렬로 연결된 저항에 흐르는 전류의 세기는 저항의 크기에 따라 달라질 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-set2-ms2-06-u0m0s2t3",
+"custom": true
 }
 ]

@@ -1364,5 +1364,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-b06-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-8b119dca49",
+"typeId": "eng-m2-b06-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nMinho went to the library <u>to borrowing</u> some books.\n\n→ ____________________",
+"selfGrade": true,
+"answer": "to borrow",
+"solution": "'~하기 위해'라는 목적을 나타낼 때는 to부정사(to + 동사원형)를 쓴다. to 뒤에 -ing 형태가 오면 안 되므로 to borrowing을 to borrow로 고쳐야 한다. 해석은 '민호는 책 몇 권을 빌리기 위해 도서관에 갔다.'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-04b782e4ab",
+"typeId": "eng-m2-b06-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThis is the cake <u>who</u> my mom made for my birthday.\n\n→ ____________________",
+"selfGrade": true,
+"answer": "which (또는 that)",
+"solution": "선행사 the cake는 사물이므로 관계대명사 who는 쓸 수 없다. 사물이 선행사인 목적격 관계대명사는 which나 that을 쓴다. 따라서 who를 which 또는 that으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m2s0t0",
+"custom": true
+},
+{
+"id": "fill-63a5c0291a",
+"typeId": "eng-m2-b06-u1m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nI like pancakes with maple syrup. My sister likes them, <u>either</u>.\n\n→ ____________________",
+"selfGrade": true,
+"answer": "too",
+"solution": "긍정문에서 '~도 역시'라는 뜻을 나타낼 때는 문장 끝에 too를 쓴다. either는 부정문에서만 '~도 역시 (아니다)'라는 뜻으로 쓴다. 두 번째 문장은 긍정문이므로 either를 too로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b06-u1m2s0t0",
+"custom": true
 }
 ]

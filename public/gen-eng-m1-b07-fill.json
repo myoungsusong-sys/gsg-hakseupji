@@ -3469,5 +3469,121 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b07-u1m2s0t0",
 "custom": true
+},
+{
+"id": "fill-b1a807b8bb",
+"typeId": "eng-m1-b07-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nMy brother can rides a bike very well.\n\n→ ______________________________________",
+"selfGrade": true,
+"answer": "My brother can ride a bike very well.",
+"solution": "조동사 can 뒤에는 주어의 인칭이나 수와 관계없이 동사원형이 온다. 그래서 rides를 동사원형 ride로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-d9417f2e39",
+"typeId": "eng-m1-b07-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장과 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\n\nMy grandmother gave me a warm scarf.\n= My grandmother gave a warm scarf ______ ______.",
+"selfGrade": true,
+"answer": "to me",
+"solution": "give는 「give + 간접목적어(~에게) + 직접목적어(~을)」 어순으로 쓴다. 직접목적어를 앞으로 보내면 간접목적어 앞에 전치사 to를 붙인다. 그래서 빈칸에는 to me가 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e685f80091",
+"typeId": "eng-m1-b07-u3m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\n나는 너에게 내 사진들을 보여 줄 것이다.\n(show / my pictures / you / will / I)\n\n→ ______________________________________.",
+"selfGrade": true,
+"answer": "I will show you my pictures",
+"solution": "조동사 will 뒤에는 동사원형 show가 온다. show는 「show + 간접목적어(you) + 직접목적어(my pictures)」 어순으로 쓴다. 따라서 I will show you my pictures가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-9669ce97c4",
+"typeId": "eng-m1-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nMy uncle's pumpkin is more big than a pig.\n\n→ ________________________________________",
+"selfGrade": true,
+"answer": "My uncle's pumpkin is bigger than a pig.",
+"solution": "big처럼 짧은 1음절 형용사의 비교급은 more를 쓰지 않고 -er을 붙여 만듭니다. big은 '단모음+단자음'으로 끝나므로 마지막 자음 g를 한 번 더 쓰고 -er을 붙여 bigger가 됩니다. 따라서 more big을 bigger로 고쳐야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-c56e298066",
+"typeId": "eng-m1-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nWhen I will visit Alaska next summer, I will see the midnight sun.\n\n→ ________________________________________",
+"selfGrade": true,
+"answer": "When I visit Alaska next summer, I will see the midnight sun.",
+"solution": "시간을 나타내는 부사절(when ~)에서는 미래의 일이라도 현재시제로 씁니다. 따라서 when절의 will visit을 visit으로 고쳐야 합니다. 주절의 will see는 미래를 나타내므로 그대로 둡니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-79ced4ff4f",
+"typeId": "eng-m1-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nThis salmon sandwich is gooder than that ham sandwich.\n\n→ ________________________________________",
+"selfGrade": true,
+"answer": "This salmon sandwich is better than that ham sandwich.",
+"solution": "good은 비교급을 불규칙하게 만드는 형용사로, good–better–best로 변합니다. gooder라는 형태는 없으므로 better로 고쳐야 합니다. 비슷한 예로 bad의 비교급은 worse입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-4a799f0e1b",
+"typeId": "eng-m1-b07-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결된 것은?",
+"choices": [
+"real - 가짜의",
+"stage - 단계",
+"item - 소리",
+"code - 그리다",
+"section - 꿈"
+],
+"answer": "②",
+"solution": "real은 '진짜의', item은 '물품·아이템', code는 '코딩하다', section은 '구역·부분'이라는 뜻이므로 연결이 틀렸다. stage는 '단계'라는 뜻으로 바르게 연결되었으므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2bef8a624e",
+"typeId": "eng-m1-b07-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI want ______ be a game maker.",
+"choices": [
+"to",
+"be",
+"for",
+"of",
+"at"
+],
+"answer": "①",
+"solution": "'~가 되고 싶다'는 「want to+동사원형」으로 나타낸다. want 다음에는 to be가 와야 하므로 빈칸에는 to가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b07-u4m7s0t0",
+"custom": true
 }
 ]

@@ -6849,5 +6849,56 @@
 "source": "유사 문항",
 "twinGroup": "tw-exam-m22-u0m0s0t3",
 "custom": true
+},
+{
+"id": "fill-d9c1bbce53",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "평행사변형 $ABCD$에서 $\\angle A=64^\\circ$이다. $\\angle A$와 $\\angle B$의 이등분선이 만나는 점을 $P$라 할 때, $\\angle APB$의 크기는?",
+"choices": [
+"$45^\\circ$",
+"$60^\\circ$",
+"$75^\\circ$",
+"$90^\\circ$",
+"$100^\\circ$"
+],
+"answer": "④",
+"solution": "평행사변형에서 이웃하는 두 내각의 크기의 합은 $180^\\circ$이므로 $\\angle B=116^\\circ$이다. 두 각의 이등분선에 의해 $\\angle PAB=32^\\circ$, $\\angle PBA=58^\\circ$이다. 따라서 삼각형 $ABP$에서 $\\angle APB=180^\\circ-32^\\circ-58^\\circ=90^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-b9f6c7d505",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "주관식",
+"diff": 1,
+"body": "평행사변형 $ABCD$에서 $\\angle A=72^\\circ$이다. $\\angle A$와 $\\angle B$의 이등분선이 만나는 점을 $P$라 할 때, $\\angle PAB$의 크기를 구하시오.",
+"selfGrade": true,
+"answer": "$36^\\circ$",
+"solution": "평행사변형의 한 내각인 $\\angle A$의 크기는 $72^\\circ$이다. $AP$는 $\\angle A$의 이등분선이므로 $\\angle PAB=72^\\circ\\div2=36^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
+},
+{
+"id": "fill-a837d2ec8b",
+"typeId": "exam-m22-u1m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "평행사변형 $ABCD$에서 $\\angle B=124^\\circ$이다. $\\angle A$와 $\\angle B$의 이등분선이 만나는 점을 $P$라 할 때, $\\angle PBA$의 크기는?",
+"choices": [
+"$28^\\circ$",
+"$56^\\circ$",
+"$62^\\circ$",
+"$68^\\circ$",
+"$90^\\circ$"
+],
+"answer": "③",
+"solution": "평행사변형의 이웃하는 두 내각의 크기의 합은 $180^\\circ$이며, $\\angle B=124^\\circ$이다. $BP$는 $\\angle B$의 이등분선이므로 $\\angle PBA=124^\\circ\\div2=62^\\circ$이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam-m22-u1m0s0t3",
+"custom": true
 }
 ]

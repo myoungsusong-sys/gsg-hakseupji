@@ -5569,5 +5569,512 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b12-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-f495dd6efb",
+"typeId": "eng-m3-b12-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 알맞은 관계대명사를 고르시오.\n\nI have a friend ________ lives in London.\n(나는 런던에 사는 친구가 한 명 있다.)",
+"choices": [
+"who",
+"which",
+"it",
+"what",
+"whose"
+],
+"answer": "①",
+"solution": "선행사가 사람(a friend)이고 뒤에 동사(lives)가 바로 이어지는 주격 자리이므로 관계대명사 who가 알맞다. 사물일 때는 which를 쓴다. 따라서 정답은 ① who이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u0m7s0t0",
+"custom": true
+},
+{
+"id": "fill-084b26ecb2",
+"typeId": "eng-m3-b12-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThe U.K. Navy won the Ig Nobel Prize for Peace in 2000. To save money, the Navy made its sailors shout, “Bang!” instead of using real bombs. Is that funny enough for you to laugh out loud?",
+"choices": [
+"영국 해군의 역사",
+"진짜 폭탄의 위험성",
+"돈을 아끼려고 영국 해군이 쓴 우스운 방법",
+"해군 병사들이 받는 힘든 훈련",
+"이그노벨상을 받기 위한 조건"
+],
+"answer": "③",
+"solution": "이 글은 영국 해군이 돈을 아끼려고 진짜 폭탄 대신 병사들에게 “Bang!”이라고 외치게 해서 이그노벨 평화상을 받았다는 내용이다. 그래서 주제는 ‘돈을 아끼려고 영국 해군이 쓴 우스운 방법’이다. 해군의 역사(①)나 훈련(④)은 글에 나오지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-310b102435",
+"typeId": "eng-m3-b12-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 Andre Geim이 한 말의 요지로 가장 알맞은 것은?\n\nAndre Geim also won an award that year. He succeeded in floating a live frog in the air by using magnets. “In my experience, if people don’t have a sense of humor, they are usually not very good scientists,” he said when he accepted his award.",
+"choices": [
+"과학자는 자석을 잘 다룰 줄 알아야 한다.",
+"좋은 과학자에게는 유머 감각이 필요하다.",
+"개구리는 과학 실험에 알맞은 동물이다.",
+"상을 받는 것은 과학자에게 중요하지 않다.",
+"과학 연구는 언제나 진지하게 해야 한다."
+],
+"answer": "②",
+"solution": "Andre Geim은 유머 감각이 없는 사람은 대개 아주 좋은 과학자가 아니라고 말했다. 이 말은 곧 좋은 과학자에게는 유머 감각이 필요하다는 뜻이므로 정답은 ②이다. ⑤는 그의 말과 반대되는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-43fbcaf54e",
+"typeId": "eng-m3-b12-u2m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nIn 2005, Gauri Nanda won the Ig Nobel Prize in Economics for inventing an alarm clock. It keeps running away until the sleeper finally gets out of bed.",
+"choices": [
+"A Clock That Runs Away",
+"How to Sleep Well",
+"The History of Economics",
+"The Best Time to Get Up",
+"Why We Need Alarm Clocks"
+],
+"answer": "①",
+"solution": "이 글은 Gauri Nanda가 잠자는 사람이 침대에서 나올 때까지 계속 도망 다니는 자명종을 발명해 이그노벨 경제학상을 받았다는 내용이다. 그러므로 제목은 ‘도망 다니는 시계’를 뜻하는 ①이 가장 알맞다. 나머지 선지는 글의 중심 내용과 관계가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6831e8faf5",
+"typeId": "eng-m3-b12-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분의 우리말 뜻으로 알맞은 것은?\n\nThese old coins are very valuable.",
+"choices": [
+"특이한",
+"상상력이 풍부한",
+"귀중한",
+"반복적인",
+"열렬한"
+],
+"answer": "③",
+"solution": "valuable은 '가치가 큰, 귀중한'이라는 뜻의 형용사이다. 오래된 동전이 매우 '귀중하다'는 문맥에 가장 자연스럽게 어울린다. 따라서 정답은 ③ '귀중한'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-be4a442a66",
+"typeId": "eng-m3-b12-u2m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 부분의 우리말 뜻으로 알맞은 것은?\n\nShe was eager to learn new things.",
+"choices": [
+"반복하여",
+"가치가 있는",
+"특이한",
+"간절히 바라는",
+"상상력이 풍부한"
+],
+"answer": "④",
+"solution": "eager는 '열렬한, 간절히 바라는'이라는 뜻이다. 'be eager to+동사원형'은 '~하기를 간절히 바라다'라는 의미로 쓰인다. 새로운 것을 배우기를 간절히 바랐다는 문맥이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u2m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3d62dde465",
+"typeId": "eng-m3-b12-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nThese days, stories can spread very fast on the Internet. Anyone can make a website full of false information. So it is really important to look at the right sources and to check who is saying this. We should also think about whether there is any evidence that supports the story.",
+"choices": [
+"뉴스를 빠르게 읽는 방법",
+"인터넷 정보를 비판적으로 확인하는 일의 중요성",
+"웹사이트를 만드는 방법",
+"소셜 미디어 사용 시간을 줄이는 방법",
+"신문과 TV 방송의 차이점"
+],
+"answer": "②",
+"solution": "글은 인터넷에서 정보가 빠르게 퍼지므로 올바른 출처와 증거를 확인하는 것이 중요하다고 말한다. 따라서 주제는 '정보를 비판적으로 확인하는 일의 중요성'이다. 나머지 선지는 글에서 다루지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-e48894eebc",
+"typeId": "eng-m3-b12-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nWhen you read the news, don't just look at one thing and believe it's true. First, slow down. If a story or a photo seems too good to be true, stop and think. Ask yourself: Is there any evidence? And where is this coming from? These simple steps can help you tell fake news from real news.",
+"choices": [
+"How to Make a Website",
+"A History of Newspapers",
+"Simple Steps to Spot Fake News",
+"Why Social Media Is Fun",
+"The Story of Scary Clowns"
+],
+"answer": "③",
+"solution": "글은 뉴스를 읽을 때 천천히 하고 증거와 출처를 확인하라는 '간단한 단계'를 설명하며, 이것이 가짜 뉴스를 가려내는 데 도움이 된다고 한다. 따라서 제목은 'Simple Steps to Spot Fake News'가 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b247b313ef",
+"typeId": "eng-m3-b12-u6m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 글쓴이가 말하고자 하는 바로 가장 알맞은 것은?\n\nOpinions are good to read, but you also have to check if they are based on facts. When you read the news, try to tell fact from opinion. A fact can be checked, but an opinion is just what someone thinks.",
+"choices": [
+"의견은 절대 읽지 말아야 한다.",
+"뉴스에서 사실과 의견을 구별해야 한다.",
+"사실보다 의견이 더 중요하다.",
+"뉴스는 믿을 수 없으므로 읽지 말아야 한다.",
+"의견은 항상 사실에 바탕을 둔다."
+],
+"answer": "②",
+"solution": "글은 의견도 읽을 가치가 있지만 사실에 근거했는지 확인해야 하며, 뉴스에서 사실과 의견을 구별하라고 말한다. 따라서 글쓴이의 요지는 '뉴스에서 사실과 의견을 구별해야 한다'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m2s0t0",
+"custom": true
+},
+{
+"id": "fill-8c3faed1c3",
+"typeId": "eng-m3-b12-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 풀이가 설명하는 단어로 알맞은 것은?\n\nwanting to know or learn about something",
+"choices": [
+"rich",
+"sick",
+"curious",
+"hidden",
+"serious"
+],
+"answer": "③",
+"solution": "'무언가에 대해 알고 싶어 하는'이라는 뜻풀이에 해당하는 단어는 curious(궁금한, 호기심이 있는)이다. rich는 '부유한', sick은 '아픈', hidden은 '숨겨진', serious는 '심각한'이라는 뜻이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9c4f0b9201",
+"typeId": "eng-m3-b12-u4m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 빈칸에 들어가기에 가장 알맞은 것은?\n\nA: I see some letters here. What do they mean?\nB: They __________ \"Hello.\"",
+"choices": [
+"are curious about",
+"look after",
+"fell ill",
+"mean",
+"vote for"
+],
+"answer": "④",
+"solution": "글자가 \"Hello.\"라는 뜻을 가진다고 설명하는 상황이므로 '의미하다'라는 뜻의 동사 mean이 알맞다. 주어가 복수(They)이므로 mean을 그대로 쓴다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u4m7s0t0",
+"custom": true
+},
+{
+"id": "fill-c42051f667",
+"typeId": "eng-m3-b12-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 직접화법 문장을 간접화법으로 바꿀 때, 빈칸에 들어갈 말로 알맞은 것은?\n\nPatricia said, \"I am scared.\"\n→ Patricia said that she ______ scared.",
+"choices": [
+"am",
+"is",
+"was",
+"be",
+"were"
+],
+"answer": "③",
+"solution": "주절의 동사가 과거(said)이므로 전달하는 말의 시제도 과거로 바꾼다. 주어가 she이므로 am은 was가 된다. 따라서 정답은 ③ was이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7618366edc",
+"typeId": "eng-m3-b12-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 직접화법 문장을 간접화법으로 바꿀 때, 빈칸에 들어갈 말로 알맞은 것은?\n\nMike said to me, \"I am hungry.\"\n→ Mike ______ me that he was hungry.",
+"choices": [
+"said",
+"told",
+"asked",
+"talked",
+"spoke"
+],
+"answer": "②",
+"solution": "평서문을 간접화법으로 바꿀 때 「said to + 사람」은 「told + 사람」으로 바꾼다. said 뒤에는 목적어(사람)를 바로 쓸 수 없다. 따라서 정답은 ② told이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c566eaa000",
+"typeId": "eng-m3-b12-u6m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 직접화법 문장을 간접화법으로 바꿀 때, 빈칸에 들어갈 말로 알맞은 것은?\n\nShe said to me, \"Are you busy?\"\n→ She asked me ______ I was busy.",
+"choices": [
+"that",
+"what",
+"if",
+"who",
+"which"
+],
+"answer": "③",
+"solution": "의문사가 없는 의문문을 간접화법으로 바꿀 때는 「ask + 사람 + if[whether] + 주어 + 동사」 형태로 쓴다. that은 평서문을 전달할 때 쓴다. 따라서 정답은 ③ if이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-674883f7d1",
+"typeId": "eng-m3-b12-u6m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 직접화법을 간접화법으로 바르게 바꾼 것은?",
+"choices": [
+"Tom said to me, \"I am tired.\" → Tom said me that he was tired.",
+"Jenny said to me, \"I will help you.\" → Jenny told me that she would help me.",
+"He said to her, \"Where do you live?\" → He asked her where did she live.",
+"Sue said, \"I can swim.\" → Sue said that I could swim.",
+"Mom said to me, \"Do you have homework?\" → Mom asked me that I had homework."
+],
+"answer": "②",
+"solution": "①은 said me가 아니라 told me로 써야 한다. ③은 의문사가 있는 의문문이므로 「의문사 + 주어 + 동사」 어순에 따라 where she lived가 되어야 한다. ④는 인칭을 바꿔 that she could swim으로 써야 하고, ⑤는 의문사가 없는 의문문이므로 that 대신 if[whether]를 써야 한다. 따라서 바르게 바꾼 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m1s0t0",
+"custom": true
+},
+{
+"id": "fill-32b79b69c5",
+"typeId": "eng-m3-b12-u7m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nany object used in fighting or war",
+"choices": [
+"noise",
+"weapon",
+"patience",
+"general",
+"control"
+],
+"answer": "②",
+"solution": "'싸움이나 전쟁에서 사용되는 물건'은 '무기'를 뜻하므로 weapon이 알맞다. noise는 소음, patience는 인내, general은 장군, control은 통제의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-66cbf6197e",
+"typeId": "eng-m3-b12-u7m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어의 관계가 나머지와 다른 하나는?",
+"choices": [
+"power - powerful",
+"noise - noisy",
+"care - careful",
+"patience - patient",
+"quick - quickly"
+],
+"answer": "⑤",
+"solution": "①~④는 모두 '명사 - 형용사'의 관계이다. 반면 ⑤ quick - quickly는 '형용사 - 부사'의 관계이므로 나머지와 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b0cad1c7ab",
+"typeId": "eng-m3-b12-u7m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 단어의 영영풀이가 바르게 짝지어진 것은?",
+"choices": [
+"injured: very large in size",
+"general: a soldier of the lowest rank",
+"weapon: a feeling of being happy",
+"control: the ability to make somebody or something do what you want",
+"noise: light that is very bright"
+],
+"answer": "④",
+"solution": "control은 '어떤 사람이나 사물을 원하는 대로 하게 만드는 능력', 즉 '통제력'을 뜻하므로 ④가 바른 풀이이다. injured는 '다친', general은 '장군(고위 장교)', weapon은 '무기', noise는 '소음'을 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m0s0t0",
+"custom": true
+},
+{
+"id": "fill-703b9c79c5",
+"typeId": "eng-m3-b12-u6m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n______ you are hungry, you can eat this sandwich.",
+"choices": [
+"If",
+"So",
+"But",
+"Or",
+"And"
+],
+"answer": "①",
+"solution": "'네가 배고프면'이라는 조건을 나타내는 접속사가 필요하다. 조건의 부사절을 이끄는 접속사는 If(만약 ~라면)이다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f0fa7866bb",
+"typeId": "eng-m3-b12-u6m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI don't know ______ he will come to the party.\n(나는 그가 파티에 올지 안 올지 모른다.)",
+"choices": [
+"if",
+"that",
+"so",
+"because",
+"and"
+],
+"answer": "①",
+"solution": "동사 know의 목적어로 '~인지 아닌지'를 뜻하는 명사절이 필요하다. 이때 쓰는 접속사는 if 또는 whether이다. 선지 중 알맞은 것은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u6m6s0t0",
+"custom": true
+},
+{
+"id": "fill-2db90f6585",
+"typeId": "eng-m3-b12-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"The girl who bag is blue is my sister.",
+"The girl whose bag is blue is my sister.",
+"The girl which bag is blue is my sister.",
+"The girl whom bag is blue is my sister.",
+"The girl whose is bag blue is my sister."
+],
+"answer": "②",
+"solution": "선행사 The girl과 뒤에 나오는 명사 bag 사이에는 소유 관계가 있으므로 소유격 관계대명사 whose를 써야 한다. whose 뒤에는 명사가 이어지며, whose bag is blue가 앞의 The girl을 수식한다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d42b353a36",
+"typeId": "eng-m3-b12-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 소유격 관계대명사 whose가 바르게 쓰인 문장은?",
+"choices": [
+"I know a boy whose father is a doctor.",
+"I know a boy who father is a doctor.",
+"I know a boy which father is a doctor.",
+"I know a boy whose is father a doctor.",
+"I know a boy whom father is a doctor."
+],
+"answer": "①",
+"solution": "선행사 a boy와 명사 father 사이에는 소유 관계가 있으므로 whose를 사용해야 한다. 소유격 관계대명사 whose 뒤에는 명사가 오며, whose father is a doctor가 올바른 어순이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-0f3955d3f0",
+"typeId": "eng-m3-b12-u4m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThis is the house ________ windows are large.",
+"choices": [
+"who",
+"whom",
+"which",
+"whose",
+"that"
+],
+"answer": "④",
+"solution": "선행사 the house와 명사 windows는 소유 관계이므로 빈칸에는 소유격 관계대명사 whose가 들어가야 한다. whose는 사람뿐만 아니라 사물을 선행사로 할 때도 사용할 수 있다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u4m1s0t0",
+"custom": true
+},
+{
+"id": "fill-981228479b",
+"typeId": "eng-m3-b12-u7m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이가 뜻하는 단어로 알맞은 것은?\n\nthe ability to wait or keep doing something calmly without getting angry",
+"choices": [
+"① push",
+"② patience",
+"③ follow",
+"④ tired",
+"⑤ focus"
+],
+"answer": "②",
+"solution": "화내지 않고 차분히 기다리거나 무언가를 계속하는 능력은 '인내심'이므로 patience가 맞다. push는 '밀다', follow는 '따르다', tired는 '피곤한', focus는 '집중하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m7s0t0",
+"custom": true
+},
+{
+"id": "fill-6e3a694376",
+"typeId": "eng-m3-b12-u7m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIn the library, everyone should __________ the rules and keep quiet.",
+"choices": [
+"① push",
+"② forget",
+"③ follow",
+"④ stand",
+"⑤ tire"
+],
+"answer": "③",
+"solution": "도서관에서는 모두가 규칙을 '지키고' 조용히 해야 한다는 뜻이므로 follow the rules(규칙을 따르다)가 알맞다. push, forget, stand, tire는 문맥상 규칙과 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m7s0t0",
+"custom": true
+},
+{
+"id": "fill-0c2804d9d6",
+"typeId": "eng-m3-b12-u7m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 밑줄 친 문장의 의미로 가장 알맞은 것은?\n\nA: My brother plays loud music every night.\nB: Really? How do you feel about that?\nA: I can't stand it.",
+"choices": [
+"① 나는 그것이 정말 좋아.",
+"② 나는 그것을 들을 수 없어.",
+"③ 나는 그것을 참을 수 없어.",
+"④ 나는 거기에 서 있을 수 없어.",
+"⑤ 나는 그것을 이해할 수 있어."
+],
+"answer": "③",
+"solution": "I can't stand it.은 '나는 그것을 참을 수 없어.'라는 뜻으로, 짜증이나 불만을 나타내는 표현이다. 여기서 stand는 '서다'가 아니라 '참다, 견디다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m7s0t0",
+"custom": true
+},
+{
+"id": "fill-9a19a4461e",
+"typeId": "eng-m3-b12-u7m7s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.\n\n(1) 그는 그의 방을 청소하느라 바빴다.\n(2) 나는 피곤해서 그것에 집중할 수 없었다.\n(3) 그녀는 설거지하는 것을 잊었다. (아직 하지 않았음)\n\n<조건>\n• (1) busy, clean을 사용하여 6단어로 쓸 것\n• (2) As, tired, focus를 사용하여 9단어로 쓸 것 (couldn't는 1단어로 셈)\n• (3) forget, do를 사용하여 6단어로 쓸 것\n• 필요시 단어의 형태를 바꿀 것",
+"selfGrade": true,
+"answer": "(1) He was busy cleaning his room. (2) As I was tired, I couldn't focus on it. (3) She forgot to do the dishes.",
+"solution": "(1) '~하느라 바쁘다'는 「be busy + -ing」이므로 clean을 cleaning으로 바꾼다. (2) '~해서'라는 이유는 접속사 As로 나타내고, '~에 집중하다'는 focus on이다. (3) 앞으로 할 일을 '잊었다'는 「forget + to부정사」로 쓰며, forget -ing는 '(과거에) ~한 것을 잊다'라는 뜻이 되므로 쓸 수 없다. 설거지하다는 do the dishes이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b12-u7m7s0t0",
+"custom": true
 }
 ]

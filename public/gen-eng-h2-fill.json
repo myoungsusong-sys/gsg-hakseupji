@@ -3197,5 +3197,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-h2-u0m0s5t1",
 "custom": true
+},
+{
+"id": "fill-969a4010c3",
+"typeId": "eng-h2-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓐthem이 가리키는 것을 찾아 우리말로 쓰시오.\n\nI did some research on this issue and found that ancient Romans understood “genius” differently from how we see it today. To ⓐthem, “genius” didn’t refer to a particularly gifted person but rather a divine assistant spirit of creativity.\n\nⓐ _______________________",
+"selfGrade": true,
+"answer": "고대 로마인들",
+"solution": "ⓐthem은 복수 대명사이므로 앞 문장에서 복수 명사를 찾아야 한다. 앞 문장의 주어 역할을 하는 복수 명사는 ancient Romans이다. 'To them'은 '고대 로마인들에게 있어서'라는 뜻이고, 그들이 genius를 오늘날과 다르게 이해했다는 앞 내용으로 이어진다. 따라서 답은 '고대 로마인들'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s3t1",
+"custom": true
+},
+{
+"id": "fill-7cc1c8ff1d",
+"typeId": "eng-h2-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓑThey가 가리키는 것을 찾아 우리말로 쓰시오.\n\nThen, what do people do with the remaining 400 calories? ⓑThey may be burned by intense physical exercise like jogging, working out at the gym, playing badminton or tennis, or venturing out for a hike.\n\nⓑ _______________________",
+"selfGrade": true,
+"answer": "남은 400칼로리",
+"solution": "ⓑThey 뒤에 수동태 may be burned(소모될 수 있다)가 이어지므로, 태워서 없앨 수 있는 대상을 찾아야 한다. 바로 앞 질문에 나온 복수 명사 the remaining 400 calories가 그 대상이다. 따라서 ⓑThey는 '남은 400칼로리'를 가리킨다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s3t1",
+"custom": true
+},
+{
+"id": "fill-833e057be5",
+"typeId": "eng-h2-u2m0s3t1",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 ⓒThese actions가 가리키는 것을 찾아 우리말로 쓰시오.\n\nHowever, those calories may also be burned by small, seemingly unimportant activities we do throughout the day, like standing up and sitting down, walking around the house, washing dishes, doing the laundry, taking out the garbage, and many others. ⓒThese actions are collectively called Non-Exercise Activity Thermogenesis (NEAT) as they use up energy too!\n\nⓒ _______________________",
+"selfGrade": true,
+"answer": "일어섰다 앉기, 집 안 돌아다니기, 설거지하기, 빨래하기, 쓰레기 내다 버리기와 같이 우리가 하루 종일 하는 작고 겉보기에 중요하지 않은 활동들",
+"solution": "ⓒThese actions는 '이러한 행동들'이라는 뜻이므로 바로 앞 문장에서 행동을 나타내는 복수 명사를 찾아야 한다. 앞 문장의 small, seemingly unimportant activities we do throughout the day와 그 예시들(standing up and sitting down, walking around the house 등)이 이에 해당한다. 예시를 모두 쓰지 않고 '우리가 하루 종일 하는 작고 겉보기에 중요하지 않은 활동들'이라고만 써도 핵심은 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-u2m0s3t1",
+"custom": true
 }
 ]

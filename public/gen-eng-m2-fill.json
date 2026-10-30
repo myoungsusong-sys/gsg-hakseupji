@@ -2443,5 +2443,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m2-u3m0s0t1",
 "custom": true
+},
+{
+"id": "fill-54f2000556",
+"typeId": "eng-m2-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 종류로 가장 알맞은 것은?\n\nManet and Monet liked different subjects. Manet liked to paint people in everyday life. Monet liked to paint nature. He painted gardens and landscapes in different seasons.",
+"choices": [
+"① 일기",
+"② 편지",
+"③ 소설",
+"④ 설명문",
+"⑤ 광고문"
+],
+"answer": "④",
+"solution": "이 글은 마네와 모네가 즐겨 그린 그림의 소재를 객관적으로 설명하고 있다. 자신의 경험이나 감정을 기록하거나 이야기를 만들어 낸 글이 아니다. 따라서 글의 종류는 설명문인 ④번이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-c28d97ffc9",
+"typeId": "eng-m2-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 종류로 가장 알맞은 것은?\n\nNovember 22nd, 1915\n\nToday was a difficult day. Our ship is gone, and we are living on the ice. I am worried about my men. I want to take everyone home safely.",
+"choices": [
+"① advertisement",
+"② diary",
+"③ review",
+"④ news article",
+"⑤ invitation"
+],
+"answer": "②",
+"solution": "글의 첫 부분에 날짜가 나오고, 'Today'와 'I'를 사용하여 그날의 상황과 자신의 감정을 기록하고 있다. 이는 일기의 대표적인 특징이다. 따라서 정답은 diary(일기)인 ②번이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s3t1",
+"custom": true
+},
+{
+"id": "fill-014bcd2490",
+"typeId": "eng-m2-u0m0s3t1",
+"kind": "객관식",
+"diff": 1,
+"body": "윗글의 종류로 가장 알맞은 것은?\n\nDear Friend,\n\nHow are you? I want to tell you about Monet. He liked painting gardens and water lilies. I saw his paintings and liked them very much. I hope to see you soon.\n\nYour friend",
+"choices": [
+"① 설명문",
+"② 일기",
+"③ 편지",
+"④ 뉴스 기사",
+"⑤ 소설"
+],
+"answer": "③",
+"solution": "글의 처음에 'Dear Friend'라는 받는 사람을 부르는 표현이 있고, 마지막에 'Your friend'라는 끝인사가 있다. 이는 편지에서 흔히 볼 수 있는 형식이다. 따라서 정답은 편지인 ③번이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-u0m0s3t1",
+"custom": true
 }
 ]

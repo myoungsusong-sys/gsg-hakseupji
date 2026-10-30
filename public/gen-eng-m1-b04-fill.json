@@ -3698,5 +3698,62 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b04-u5m2s0t0",
 "custom": true
+},
+{
+"id": "fill-640debfd20",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어의 우리말 뜻으로 알맞은 것은?\n\nespecially",
+"choices": [
+"보통",
+"특히",
+"거의",
+"전혀",
+"다시"
+],
+"answer": "②",
+"solution": "'especially'는 '특히, 특별히'라는 뜻의 부사이다. 기준 지문의 'I especially like the churros(나는 특히 추로스가 좋다)'에서 쓰인 의미와 같다. 따라서 알맞은 뜻은 '특히'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-216ec80d15",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 해당하는 영어 표현으로 알맞은 것은?\n\n~을 기대하다, ~을 고대하다",
+"choices": [
+"look at",
+"look for",
+"look forward to",
+"look up",
+"look after"
+],
+"answer": "③",
+"solution": "'~을 기대하다, 고대하다'라는 뜻의 표현은 'look forward to'이다. 지문의 'I'm really looking forward to it'에서도 같은 의미로 쓰였다. 나머지는 각각 '~을 보다, ~을 찾다, ~을 찾아보다, ~을 돌보다'의 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
+},
+{
+"id": "fill-8bd3eda85c",
+"typeId": "eng-m1-b04-u3m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻의 연결이 바르지 <않은> 것은?",
+"choices": [
+"view - 경관, 전망",
+"cliff - 절벽",
+"bridge - 다리",
+"entrance fee - 입장료",
+"summer - 겨울"
+],
+"answer": "⑤",
+"solution": "'summer'는 '여름'이라는 뜻이므로 '겨울'과 연결된 ⑤가 바르지 않다. '겨울'은 'winter'이다. 나머지 view(경관), cliff(절벽), bridge(다리), entrance fee(입장료)는 모두 바르게 연결되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b04-u3m6s0t0",
+"custom": true
 }
 ]

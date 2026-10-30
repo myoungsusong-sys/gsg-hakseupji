@@ -6223,5 +6223,380 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b03-u7m2s0t0",
 "custom": true
+},
+{
+"id": "fill-8738d46663",
+"typeId": "eng-m3-b03-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "우리말 뜻에 맞도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n나는 정말로 어제 그 책을 다 읽었다.\n→ I ____________ read the book yesterday.",
+"choices": [
+"① do",
+"② does",
+"③ did",
+"④ was",
+"⑤ am"
+],
+"answer": "③",
+"solution": "일반동사의 뜻을 강조할 때는 동사 앞에 do/does/did를 쓰고, 뒤의 동사는 원형(read)으로 쓴다. 문장이 과거(yesterday)이고 주어가 I이므로 did가 알맞다. 따라서 정답은 ③ did이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-d471963c47",
+"typeId": "eng-m3-b03-u0m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 알맞은 것은?\n\n이것은 그녀의 지갑이다.\n→ This is ____________ wallet.",
+"choices": [
+"① she",
+"② her",
+"③ hers",
+"④ he",
+"⑤ him"
+],
+"answer": "②",
+"solution": "'그녀의'처럼 명사(wallet) 앞에서 소유를 나타내는 말은 소유격 her이다. she는 주격, hers는 소유대명사(명사 없이 단독으로 쓰임)이므로 알맞지 않다. 따라서 정답은 ② her이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m6s0t0",
+"custom": true
+},
+{
+"id": "fill-3faa0eaf4e",
+"typeId": "eng-m3-b03-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nan unpleasant feeling in a part of your body when you are hurt or sick",
+"choices": [
+"contact",
+"information",
+"pain",
+"advantage",
+"outside"
+],
+"answer": "③",
+"solution": "다치거나 아플 때 몸의 한 부분에서 느끼는 불쾌한 느낌은 '통증, 아픔'을 뜻하는 pain입니다. contact는 '연락(하다)', information은 '정보', advantage는 '장점', outside는 '밖에서'라는 뜻입니다. 정답은 ③입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b089ce939b",
+"typeId": "eng-m3-b03-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nSmartphones have good points and bad points. One ________ is that we can get neck pain.",
+"choices": [
+"advantage",
+"disadvantage",
+"information",
+"contact",
+"outside"
+],
+"answer": "②",
+"solution": "목 통증(neck pain)이 생길 수 있다는 것은 스마트폰의 나쁜 점입니다. 그러므로 '단점'을 뜻하는 disadvantage가 알맞습니다. advantage는 '장점'이라서 문맥에 맞지 않습니다. 정답은 ②입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0a5e3e27a1",
+"typeId": "eng-m3-b03-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"post – 게시하다",
+"contact – 연락하다",
+"information – 정보",
+"advantage – 단점",
+"pain – 통증"
+],
+"answer": "④",
+"solution": "advantage는 '장점, 이점'이라는 뜻입니다. '단점'은 반의어인 disadvantage입니다. 나머지 단어는 모두 뜻이 바르게 짝지어져 있습니다. 정답은 ④입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-65a5b1ce7d",
+"typeId": "eng-m3-b03-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.\n\nI had my hair ________ yesterday.\n(나는 어제 머리카락을 잘랐다.)",
+"choices": [
+"cut",
+"cutting",
+"to cut",
+"cuts",
+"cutted"
+],
+"answer": "①",
+"solution": "「have + 목적어 + 과거분사」는 '~이 …되게 하다(시키다)'라는 사역의 뜻이다. 머리카락은 '잘려지는' 대상이므로 수동의 의미인 과거분사가 와야 한다. cut은 cut-cut-cut으로 과거분사도 cut이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-48a98dca7e",
+"typeId": "eng-m3-b03-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "It ~ that 강조 구문이 되도록 빈칸에 알맞은 말을 고르시오.\n\n________ is the ocean that Yeji studies.\n(예지가 연구하는 것은 바로 바다이다.)",
+"choices": [
+"It",
+"This",
+"That",
+"There",
+"Here"
+],
+"answer": "①",
+"solution": "강조하고 싶은 말을 It is와 that 사이에 넣는 「It is[was] ~ that …」 강조 구문이다. 문장의 맨 앞에는 반드시 It을 써야 하므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-4a78c8a506",
+"typeId": "eng-m3-b03-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nIn New Zealand, the word kiwi is not only the name of a sweet green fruit. It is also the name of a native bird and even a nickname for the people of the country. So the same word can mean three different things there.",
+"choices": [
+"the price of kiwi fruit in New Zealand",
+"the different things the word kiwi can mean",
+"how to grow green fruit in New Zealand",
+"the best way to cook a native bird",
+"the history of the people of New Zealand"
+],
+"answer": "②",
+"solution": "글은 kiwi라는 한 단어가 과일, 새, 사람(국민 별명)이라는 서로 다른 세 가지를 뜻한다고 설명한다. 따라서 주제는 'kiwi라는 단어가 가질 수 있는 여러 의미'이다. 가격·재배·요리·역사는 글의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-4b29ace31f",
+"typeId": "eng-m3-b03-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nThe kiwi is one of New Zealand's native birds. It is very special to New Zealanders because it is the symbol of their nation. That is why the bird is loved by people all over the country.",
+"choices": [
+"The Kiwi Bird, the Symbol of New Zealand",
+"How to Find a Kiwi Bird at Night",
+"The Tasty Green Fruit of New Zealand",
+"Why People Move to New Zealand",
+"The Many Birds of the Whole World"
+],
+"answer": "①",
+"solution": "글은 kiwi 새가 뉴질랜드의 상징이어서 국민에게 특별하다는 내용을 담고 있다. 따라서 제목은 '뉴질랜드의 상징인 kiwi 새'가 가장 적절하다. 과일, 다른 나라의 새 등은 글의 중심 소재가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1002cee7a9",
+"typeId": "eng-m3-b03-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nA lot of kiwi fruit is grown in New Zealand. Because so much of the fruit comes from there, New Zealand is known around the world as the land of kiwi fruit.",
+"choices": [
+"뉴질랜드 사람들은 과일을 전혀 먹지 않는다.",
+"kiwi 새는 뉴질랜드의 국가 상징이다.",
+"뉴질랜드는 kiwi 과일의 나라로 알려져 있다.",
+"kiwi는 뉴질랜드 사람들의 별명이다.",
+"kiwi 과일은 재배하기가 매우 어렵다."
+],
+"answer": "③",
+"solution": "글은 뉴질랜드에서 kiwi 과일이 많이 재배되어 '과일의 나라'로 알려져 있다는 내용이다. 따라서 요지는 '뉴질랜드가 kiwi 과일의 나라로 알려져 있다'이다. 새의 상징이나 사람의 별명은 이 단락의 핵심이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-181cf0c572",
+"typeId": "eng-m3-b03-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 괄호 안의 단어를 바르게 배열하시오.\n\n이 그림들은 볼 만한 가치가 있다.\n(worth / these / are / at / paintings / looking)",
+"selfGrade": true,
+"answer": "These paintings are worth looking at.",
+"solution": "'~할 가치가 있다'는 「be worth + 동명사」로 나타낸다. look at은 목적어가 필요한 구동사이므로 worth 뒤에 looking at을 쓴다. 주어 these paintings가 at의 의미상 목적어이므로 at 뒤에 목적어를 다시 쓰지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-26ad7a7c61",
+"typeId": "eng-m3-b03-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분을 분사구문으로 바꿔 쓰시오.\n\n<u>Because they used daily images and bright colors</u>, pop artists changed that thought.",
+"selfGrade": true,
+"answer": "Using daily images and bright colors",
+"solution": "분사구문을 만들려면 접속사 Because를 없앤다. 부사절의 주어 they가 주절의 주어 pop artists와 같으므로 주어도 생략한다. 동사 used는 능동의 의미이므로 현재분사 Using으로 바꾼다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5040e9aada",
+"typeId": "eng-m3-b03-u7m6s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\n\n__________ (see) familiar images in art exhibitions, people found them refreshing.\n(사람들은 미술 전시회에서 친숙한 이미지를 보았을 때, 그것들이 신선하다고 느꼈다.)",
+"selfGrade": true,
+"answer": "Seeing",
+"solution": "When people saw ~를 분사구문으로 바꾼 문장이다. 주어 people가 직접 '보는' 능동의 관계이므로 현재분사 Seeing을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-a415a21789",
+"typeId": "eng-m3-b03-u7m6s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말을 주어진 <조건>에 알맞게 영작하시오.\n\n<조건>\n• 분사구문을 사용하여 한 문장으로 쓸 것\n• fill, meaning, pop art, worth, pay attention을 사용하되 필요시 변형할 것\n• 총 10단어로 쓸 것\n\n의미로 가득 차 있기 때문에, 팝아트는 주목할 만한 가치가 있다.",
+"selfGrade": true,
+"answer": "Filled with meaning, pop art is worth paying attention to.",
+"solution": "Because pop art is filled with meaning을 분사구문으로 바꾸면 접속사와 주어를 생략한다. 이때 수동의 의미이므로 being을 생략하고 과거분사 Filled로 시작한다. '~할 가치가 있다'는 「be worth + 동명사」이므로 worth paying attention to로 쓴다. pay attention to의 to를 빠뜨리지 않아야 하며, 이렇게 쓰면 모두 10단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-889334a62c",
+"typeId": "eng-m3-b03-u8m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nIn many villages in India, many people did not have clean water to drink. A young girl saw this problem and wanted to help. She knew that dried corn cobs had many small holes. So she put some cobs into a bowl of dirty water. After a while, the water became much cleaner. In this way, she used corn cobs to make dirty water clean.",
+"choices": [
+"인도의 전통적인 농사 방법",
+"옥수수를 이용한 다양한 요리법",
+"옥수수 속대를 이용한 물 정화",
+"깨끗한 식수의 세계적 부족",
+"마을 사람들 사이의 협동심"
+],
+"answer": "③",
+"solution": "글 전체가 한 소녀가 마른 옥수수 속대(corn cobs)의 작은 구멍을 이용해 더러운 물을 깨끗하게 만든 과정을 설명하고 있다. 따라서 주제는 '옥수수 속대를 이용한 물 정화'인 ③이 가장 적절하다. 나머지는 글에 언급되지 않거나 부분적인 소재일 뿐이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m2s0t0",
+"custom": true
+},
+{
+"id": "fill-afdae519a8",
+"typeId": "eng-m3-b03-u8m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nAfter the girl found that corn cobs could clean dirty water, she did not stop there. She collected many dried cobs from farmers near her village. Then she put them together and built a bigger filtering system. With this system, more people in her village could get clean water.",
+"choices": [
+"Building a Bigger Water Filter with Corn Cobs",
+"How to Grow Corn in India",
+"The Many Dangers of Drinking Dirty Water",
+"A Busy Day on an Indian Farm",
+"Helping Farmers Sell More Corn"
+],
+"answer": "①",
+"solution": "소녀가 농부들에게서 모은 옥수수 속대로 더 큰 정수 장치를 만들었다는 내용이다. 글의 핵심은 '옥수수 속대로 더 큰 물 여과 장치를 만든 것'이므로 제목으로는 ①이 가장 적절하다. ②~⑤는 글의 중심 내용과 관계가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5eaf92b5b1",
+"typeId": "eng-m3-b03-u8m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 적절한 것은?\n\nWhen the girl saw the dirty water around her, she did not think the problem was too big for her. She looked around and found something very simple—dried corn cobs. She tried her idea, and it worked. Small things around us can become the answer to big problems.",
+"choices": [
+"큰 문제는 전문가에게 맡기는 것이 좋다.",
+"우리 주변의 작은 것이 큰 문제의 해결책이 될 수 있다.",
+"깨끗한 물은 전 세계적으로 부족하다.",
+"농부들은 옥수수를 더 많이 길러야 한다.",
+"실패를 두려워하면 아무 일도 할 수 없다."
+],
+"answer": "②",
+"solution": "글의 마지막 문장 'Small things around us can become the answer to big problems.'가 핵심 메시지다. 주변의 작고 단순한 것(옥수수 속대)이 큰 문제의 해결책이 되었다는 내용이므로 요지는 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u8m2s0t0",
+"custom": true
+},
+{
+"id": "fill-b8e5ba18ba",
+"typeId": "eng-m3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"She do likes music.",
+"He does plays soccer.",
+"I do enjoy reading books.",
+"They did went to school.",
+"My brother doesn't likes math."
+],
+"answer": "③",
+"solution": "긍정문에서 일반동사를 강조할 때는 do, does, did 뒤에 동사원형을 쓴다. ③의 do enjoy는 올바른 강조 표현이다. 나머지 문장은 조동사 뒤에 동사원형이 아닌 형태를 사용했으므로 어법상 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b8e5ba18ba",
+"typeId": "eng-m3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"My sister does like chocolate.",
+"My sister do like chocolate.",
+"My sister does likes chocolate.",
+"My sister did likes chocolate.",
+"My sister doesn't likes chocolate."
+],
+"answer": "①",
+"solution": "현재시제에서 주어가 3인칭 단수이면 강조의 조동사 does를 사용하고, 뒤에는 동사원형을 쓴다. 따라서 My sister does like chocolate.이 올바르다. ②는 주어와 조동사의 수 일치가 틀렸고, ③~⑤는 조동사 뒤에 likes를 사용하여 틀렸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b8e5ba18ba",
+"typeId": "eng-m3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"What I need are some water.",
+"What I need is some water.",
+"What I needs is some water.",
+"What I need be some water.",
+"What I needing is some water."
+],
+"answer": "②",
+"solution": "What I need는 '내가 필요한 것'이라는 뜻의 명사절로 문장의 주어 역할을 한다. 이 문장에서 필요한 것은 불가산명사인 some water이므로 단수 동사 is가 적절하다. 또한 I 뒤에는 need를 써야 하므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-685b285ab3",
+"typeId": "eng-m3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>에서 어법상 올바른 문장만을 모두 고른 것은?\n\n<보기>\n(A) What makes me happy is listening to music.\n(B) She does enjoys playing the piano.\n(C) We did finish our homework before dinner.\n(D) What he wants are a new bicycle.\n(E) My friends do like watching movies.",
+"choices": [
+"(A), (B), (C)",
+"(A), (C), (D)",
+"(B), (C), (E)",
+"(A), (C), (E)",
+"(B), (D), (E)"
+],
+"answer": "④",
+"solution": "(A)는 What이 이끄는 명사절이 주어 역할을 하며 단수 동사 is를 사용하므로 올바르다. (C)의 did finish와 (E)의 do like는 일반동사를 강조하는 올바른 표현이다. (B)는 does 뒤에 동사원형 enjoy를 써야 하고, (D)는 What he wants를 주어로 하는 문장에서 are 대신 is를 써야 한다. 따라서 올바른 문장은 (A), (C), (E)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b03-u0m1s0t0",
+"custom": true
 }
 ]

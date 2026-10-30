@@ -2494,5 +2494,44 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b06-u2m2s0t0",
 "custom": true
+},
+{
+"id": "fill-1be5e4bd78",
+"typeId": "eng-m3-b06-u1m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nComfort food is food that makes you feel good when you are sad, angry, or stressed out. It can also make you think of happy moments from the past. ⓐ그것은 위(배)뿐만 아니라 마음도 만족시킨다. Comfort foods differ around the world.\n\n( the heart / not only / satisfies / but also / the stomach )\n\n→ It ______________________________________.",
+"selfGrade": true,
+"answer": "It satisfies not only the stomach but also the heart.",
+"solution": "'A뿐만 아니라 B도'는 not only A but also B로 나타냅니다. 주어 It 뒤에 동사 satisfies를 쓰고, 목적어 자리에 not only the stomach but also the heart를 차례로 놓습니다. 우리말의 '위(배)'는 the stomach, '마음'은 the heart에 해당합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-f760a00a7f",
+"typeId": "eng-m3-b06-u1m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 밑줄 친 우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n\nMaria from Brazil\nIn Brazil, there are many dishes that are made with cassava, a vegetable similar to a potato. I love cassava chips the most. Once when I had a bad day at school and felt stressed out, my best friend bought me a bag of cassava chips. ⓐ칩을 먹는 바삭한 소리는 내 기분을 더 좋아지게 만들었다.\n\n( feel / me / made / better )\n\n→ The crisp sound of eating chips ______________________.",
+"selfGrade": true,
+"answer": "The crisp sound of eating chips made me feel better.",
+"solution": "사역동사 make는 「make + 목적어 + 동사원형」 형태로 써서 '~가 …하게 만들다'라는 뜻을 나타냅니다. 그래서 made 뒤에 목적어 me를 쓰고 동사원형 feel을 놓은 다음, 보어 better를 붙입니다. 주어 The crisp sound가 단수이고 과거의 일이므로 동사는 made로 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m5s0t0",
+"custom": true
+},
+{
+"id": "fill-d46e1dcabf",
+"typeId": "eng-m3-b06-u1m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 읽고, 질문에 대한 답을 본문에서 찾아 영어 한 단어로 쓰시오.\n\nSimon from France\nI have many comfort foods, but I love madeleines the most. A madeleine is a small cake that looks like a sea shell. People in France enjoy madeleines as an afternoon snack. My grandmother always makes madeleines for me when I visit her.\n\nQ: What do people in France enjoy as an afternoon snack?\nA: They enjoy ______________.",
+"selfGrade": true,
+"answer": "madeleines",
+"solution": "본문의 'People in France enjoy madeleines as an afternoon snack.'에서 프랑스 사람들이 오후 간식으로 즐기는 것이 마들렌임을 알 수 있습니다. 질문이 복수 주어 people에 대해 묻고 본문에서도 복수형을 썼으므로, 답은 복수형 madeleines로 씁니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b06-u1m5s0t0",
+"custom": true
 }
 ]

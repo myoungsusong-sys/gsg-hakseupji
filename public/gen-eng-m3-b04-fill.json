@@ -5754,5 +5754,360 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b04-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-ef314ef11f",
+"typeId": "eng-m3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAt the 1996 Atlanta Summer Olympics, the officials were preparing for the closing ceremony. Then one more runner entered the stadium. His legs were hurt, but he did not stop. He slowly ran through the tape and fell to the ground. His name was Abdul Baser Wasiqi, the last runner to finish the marathon.",
+"choices": [
+"The Last Runner Who Never Gave Up",
+"The Fastest Runner in History",
+"A Famous Olympic Swimmer",
+"The Winner of the Gold Medal",
+"A Boring Closing Ceremony"
+],
+"answer": "①",
+"solution": "글은 모두가 끝났다고 생각한 순간에 마지막으로 들어와 포기하지 않고 결승선을 통과한 주자 Wasiqi에 관한 이야기이다. 따라서 '포기하지 않은 마지막 주자'가 제목으로 알맞다. 속도나 수영, 금메달 수상과는 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-a7b7466100",
+"typeId": "eng-m3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nWasiqi injured his leg during a practice run, and the injury got worse during the race. Still, he kept running. He was the only athlete representing Afghanistan at the Olympics, so he could not give up. For him and his country, it was important to finish the race.",
+"choices": [
+"부상을 당한 선수가 끝까지 포기하지 않은 이유",
+"올림픽 폐회식을 준비하는 방법",
+"마라톤에서 금메달을 따는 비결",
+"아프가니스탄의 유명한 관광지 소개",
+"건강을 위한 올바른 달리기 자세"
+],
+"answer": "①",
+"solution": "글은 Wasiqi가 다리를 다쳤음에도 조국을 대표하는 유일한 선수였기에 경기를 포기하지 않았다는 내용이다. 따라서 주제는 '부상을 당한 선수가 끝까지 포기하지 않은 이유'이다. 폐회식 준비나 관광지, 달리기 자세와는 관련이 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-94f3e3845e",
+"typeId": "eng-m3-b04-u0m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nWhen Wasiqi finished the race, reporters asked him how he felt. He said, \"I'm proud of myself and proud to be from Afghanistan. I didn't come here to win. For me, it was enough to be here and to finish the race.\"",
+"choices": [
+"이기지 못해도 끝까지 완주하는 것 자체가 값지다.",
+"올림픽에서는 금메달이 가장 중요하다.",
+"운동선수는 부상을 당하면 즉시 쉬어야 한다.",
+"기자들의 질문에 대답하지 않는 것이 좋다.",
+"마라톤은 혼자 연습하는 것이 가장 좋다."
+],
+"answer": "①",
+"solution": "Wasiqi는 이기려고 온 것이 아니라 참가해서 완주하는 것만으로 충분했다고 말한다. 따라서 요지는 '이기지 못해도 끝까지 완주하는 것 자체가 값지다'이다. 금메달이 가장 중요하다는 ②는 글의 내용과 반대된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u0m2s0t0",
+"custom": true
+},
+{
+"id": "fill-acd0de3fd1",
+"typeId": "eng-m3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어(어구)와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"avoid – 피하다",
+"prove – 증명하다",
+"advice – 충고, 조언",
+"misunderstand – 오해하다",
+"focus on – ~을 걱정하다"
+],
+"answer": "⑤",
+"solution": "focus on은 '~에 집중하다'라는 뜻이다. 본문에서 민경이가 'I need to focus on my studies.'라고 말하는 장면에서 '공부에 집중해야 한다'는 의미로 쓰였다. 나머지는 모두 뜻이 바르게 짝지어져 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-e8f58d2695",
+"typeId": "eng-m3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nWhen I see Hayeon at school, she turns around and walks away from me. I feel she's ________ me.",
+"choices": [
+"proving",
+"wearing",
+"avoiding",
+"focusing",
+"asking"
+],
+"answer": "③",
+"solution": "하연이가 소희를 보면 돌아서서 다른 데로 걸어가 버린다는 내용이다. 따라서 '나를 피하고 있다'는 뜻이 되도록 avoid(피하다)의 -ing형인 avoiding이 알맞다. 나머지는 문맥에 맞지 않고, focusing은 뒤에 on이 있어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-01d4c4ad8e",
+"typeId": "eng-m3-b04-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nto show that something is true by giving facts or evidence",
+"choices": [
+"avoid",
+"prove",
+"hurt",
+"focus",
+"worry"
+],
+"answer": "②",
+"solution": "영영풀이는 '사실이나 증거를 들어 어떤 것이 참임을 보여 주다'라는 뜻으로, prove(증명하다)에 해당한다. 본문에서 성진이는 'You don't need new sneakers to prove it.'이라고 말한다. avoid는 '피하다', hurt는 '다치게 하다', focus는 '집중하다', worry는 '걱정하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-95755d2dbd",
+"typeId": "eng-m3-b04-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 ⓐ와 바꿔 쓸 수 있는 것은?\n\nMy grandmother looks very ⓐhappy today.",
+"choices": [
+"sad",
+"angry",
+"glad",
+"tired",
+"busy"
+],
+"answer": "③",
+"solution": "ⓐhappy는 '행복한, 기쁜'이라는 뜻이다. 선지 중 같은 뜻을 가진 단어는 glad(기쁜)이다. sad(슬픈), angry(화난), tired(피곤한), busy(바쁜)는 모두 뜻이 다르므로 답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2e3d2866c9",
+"typeId": "eng-m3-b04-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIt is very cold outside, so you should wear a warm _______.",
+"choices": [
+"coat",
+"spoon",
+"desk",
+"window",
+"clock"
+],
+"answer": "①",
+"solution": "밖이 매우 추우니 따뜻한 것을 '입어야(wear)' 한다는 내용이다. 입을 수 있는 옷은 coat(외투)이다. spoon(숟가락), desk(책상), window(창문), clock(시계)은 입는 것이 아니므로 답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-896f028978",
+"typeId": "eng-m3-b04-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 ⓐ와 반대되는 뜻을 가진 것은?\n\nThe math test was really ⓐdifficult for me.",
+"choices": [
+"hard",
+"easy",
+"long",
+"boring",
+"important"
+],
+"answer": "②",
+"solution": "ⓐdifficult는 '어려운'이라는 뜻이다. 반대되는 뜻을 가진 단어는 easy(쉬운)이다. hard는 difficult와 비슷한 뜻이고, long, boring, important는 반대말이 아니므로 답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-7de982b738",
+"typeId": "eng-m3-b04-u3m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 주어진 우리말을 알맞게 영작한 것은?\n\n비가 오고 있었지만, 우리는 축구를 했다.",
+"choices": [
+"Because it was raining, we played soccer.",
+"Although it was raining, we played soccer.",
+"If it was raining, we played soccer.",
+"Although it was raining, we didn't play soccer.",
+"Although we played soccer, it was raining."
+],
+"answer": "②",
+"solution": "'~이지만'이라는 양보의 뜻은 접속사 although로 나타낸다. 따라서 '비가 오고 있었다'를 Although절로 쓰고, '우리는 축구를 했다'를 주절로 쓴 ②가 정답이다. ①은 '~때문에', ③은 '~라면'이라는 뜻이라 우리말과 맞지 않는다. ④는 '축구를 하지 않았다'는 뜻이라 틀리고, ⑤는 although절과 주절의 내용이 서로 바뀌었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-ff39464426",
+"typeId": "eng-m3-b04-u3m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말과 같도록 빈칸에 들어갈 말로 알맞은 것은?\n\n그는 피곤했지만, 숙제를 끝마쳤다.\n→ ________ he was tired, he finished his homework.",
+"choices": [
+"Because",
+"If",
+"Although",
+"When",
+"So"
+],
+"answer": "③",
+"solution": "'피곤했지만'처럼 앞뒤 내용이 서로 반대될 때는 양보의 접속사 Although(비록 ~이지만)를 쓴다. Because는 '~ 때문에', If는 '~라면', When은 '~할 때'라는 뜻이라 우리말과 맞지 않는다. So는 결과를 나타내는 접속사라서 이렇게 문장 맨 앞의 종속절을 이끌 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-24a4cc6cd4",
+"typeId": "eng-m3-b04-u3m3s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 같도록 괄호 안의 말을 바르게 배열하여 문장을 완성하시오.\n\n그 가방은 비쌌지만, 나는 그것을 샀다.\n→ ______________________________, I bought it.\n(was / although / expensive / the bag)",
+"selfGrade": true,
+"answer": "Although the bag was expensive",
+"solution": "'~이지만'은 접속사 although로 나타내고, 그 뒤에는 '주어 + 동사'의 순서가 온다. 그래서 Although 다음에 주어 the bag, 동사 was, 보어 expensive를 차례로 놓는다. 문장 맨 앞에 오므로 Although의 첫 글자는 대문자로 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1135df90d9",
+"typeId": "eng-m3-b04-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 두 문장이 같은 뜻이 되도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\n\nIt seems that she is tired.\n= She seems ______ tired.",
+"choices": [
+"① be",
+"② being",
+"③ to be",
+"④ to being",
+"⑤ been"
+],
+"answer": "③",
+"solution": "「It seems that + 주어 + 동사」는 「주어 + seem(s) + to부정사」로 바꿀 수 있다. 주절과 that절의 시제가 같으므로 단순부정사 to be를 쓴다. 따라서 She seems to be tired. 가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-a041164e12",
+"typeId": "eng-m3-b04-u3m4s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻과 일치하도록 빈칸에 들어갈 말로 알맞은 것은?\n\n비록 비가 오고 있었지만, 우리는 산책하러 나갔다.\n→ ______ it was raining, we went out for a walk.",
+"choices": [
+"① Because",
+"② If",
+"③ Although",
+"④ Before",
+"⑤ So"
+],
+"answer": "③",
+"solution": "'비록 ~이지만'이라는 양보의 뜻을 나타내는 접속사는 Although[Though/Even though]이다. Because는 '~때문에', If는 '만약 ~라면'의 뜻이므로 문맥에 맞지 않는다. 따라서 Although가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u3m4s0t0",
+"custom": true
+},
+{
+"id": "fill-db3eb82415",
+"typeId": "eng-m3-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장과 의미가 같은 것은?\n\nHe drinks not only ginger tea but also chicken soup.",
+"choices": [
+"He drinks ginger tea as well as chicken soup.",
+"He drinks chicken soup as well as ginger tea.",
+"He drinks either ginger tea or chicken soup.",
+"He drinks neither ginger tea nor chicken soup.",
+"He drinks not ginger tea but chicken soup."
+],
+"answer": "②",
+"solution": "'not only A but also B'는 B를 강조하는 표현으로 'B as well as A'와 의미가 같다. 여기서 A는 ginger tea, B는 chicken soup이므로 'chicken soup as well as ginger tea'가 된다. 두 표현 모두 두 가지를 다 마신다는 뜻이며, as well as 앞뒤의 순서가 뒤바뀜에 유의한다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-b3cb6aba28",
+"typeId": "eng-m3-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWhen you catch a cold, you want to stay ______.",
+"choices": [
+"warmly",
+"warmth",
+"warm",
+"to warm",
+"warming"
+],
+"answer": "③",
+"solution": "stay는 '~한 상태로 있다'라는 뜻의 연결동사(linking verb)로, 뒤에 부사가 아니라 형용사가 보어로 와야 한다. 따라서 부사 warmly나 명사 warmth가 아닌 형용사 warm이 알맞다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d3c8b7bebd",
+"typeId": "eng-m3-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nSalt and pepper can ______ before eating.",
+"choices": [
+"add",
+"be added",
+"added",
+"be adding",
+"to add"
+],
+"answer": "②",
+"solution": "소금과 후추(Salt and pepper)는 '더해지는' 대상이므로 수동태가 필요하다. 조동사 can 뒤에는 동사원형이 오므로 'be + 과거분사' 형태인 be added가 알맞다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bf7baafd0d",
+"typeId": "eng-m3-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n\nWhat do you do when you ①catch a cold? Of course, you want to stay ②warm. Ginger tea is something people in Korea often ③drink. In Finland, ④which it is very cold in winter, people have a special drink when they catch a cold. This simple drink is said ⑤to be good for a cold.",
+"choices": [
+"①catch",
+"②warm",
+"③drink",
+"④which",
+"⑤to be"
+],
+"answer": "④",
+"solution": "④의 뒤에 'it is very cold in winter'라는 완전한 문장이 이어지고 선행사가 장소(Finland)이므로 관계대명사 which가 아니라 관계부사 where를 써야 한다. ②는 연결동사 stay 뒤의 형용사 보어로 알맞고, ⑤의 'be said to+동사원형'도 바른 표현이다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-be8d657041",
+"typeId": "eng-m3-b04-u7m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nGinger tea is a drink people in Korea often enjoy. With its special taste, it warms your body and (A)[help / helps] reduce the pain in your throat. In Finland, (B)[which / where] it is very cold in winter, people drink a cup of onion milk when they catch a cold. In America, many people want a bowl of chicken soup, and salt and pepper can (C)[add / be added] before eating.",
+"choices": [
+"help     where     be added",
+"helps     which     be added",
+"helps     where     add",
+"helps     where     be added",
+"help     which     add"
+],
+"answer": "④",
+"solution": "(A) 주어가 3인칭 단수 it이고 앞의 warms와 and로 연결된 병렬구조이므로 helps가 알맞다. (B) 뒤에 완전한 문장이 오고 선행사가 장소 Finland이므로 관계부사 where가 맞다. (C) salt and pepper는 더해지는 대상이므로 조동사 can 뒤에 수동태 be added를 써야 한다. 따라서 helps·where·be added로 연결된 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b04-u7m1s0t0",
+"custom": true
 }
 ]

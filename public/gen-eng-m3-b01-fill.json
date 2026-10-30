@@ -3724,5 +3724,81 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b01-u6m2s0t0",
 "custom": true
+},
+{
+"id": "fill-207af7c152",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nFive wise men got lost in a forest. They had different ideas about which way to go. One wanted to go left, another wanted to go right, and the others suggested different ways. Each man believed his idea was good.",
+"choices": [
+"The importance of finding food in a forest",
+"Different ideas about choosing a way",
+"The dangers of wild animals",
+"The best time to travel together",
+"The importance of climbing tall trees"
+],
+"answer": "②",
+"solution": "지문은 숲에서 길을 잃은 다섯 남자가 서로 다른 방향으로 가야 한다고 생각하는 내용이다. 중심 내용은 길을 선택하는 것에 대한 서로 다른 의견이므로 정답은 ②이다. 나머지 선택지는 지문의 중심 내용과 관련이 없거나 구체적인 일부 소재에 불과하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-62659cfda2",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nOne man walked back and made a safe path around the forest. People could use his path without getting lost. It took more time, but it helped them reach their destinations safely.",
+"choices": [
+"A Dangerous Journey with Thieves",
+"How to Find Food in the Forest",
+"A Man Who Climbed a Tall Tree",
+"A Safe Path Around the Forest",
+"The Shortest Way Through the Forest"
+],
+"answer": "④",
+"solution": "지문은 한 남자가 숲을 돌아가는 안전한 길을 만들었고, 사람들이 그 길을 이용해 길을 잃지 않고 목적지에 도착할 수 있었다는 내용이다. 따라서 글의 핵심 내용을 가장 잘 나타내는 제목은 ④ '숲을 돌아가는 안전한 길'이다. ⑤는 가장 짧은 길을 뜻하므로 시간이 더 걸렸다는 지문의 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-03e0fa31f7",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThe five men followed different paths. Each man had a different experience and found his own way in life. In the same way, we all have our own journeys. We should not compare our lives with others' lives.",
+"choices": [
+"우리는 항상 다른 사람의 선택을 따라야 한다.",
+"모든 사람은 같은 목표를 가져야 한다.",
+"성공하려면 가장 빠른 길을 선택해야 한다.",
+"다른 사람보다 먼저 목적지에 도착해야 한다.",
+"자신만의 길을 선택하고 다른 사람과 비교하지 않아야 한다."
+],
+"answer": "⑤",
+"solution": "지문은 다섯 남자가 서로 다른 길을 선택했듯이 우리도 각자의 인생을 살아간다는 내용이다. 특히 다른 사람의 삶과 자신의 삶을 비교하지 말아야 한다고 강조한다. 따라서 글의 요지로 가장 적절한 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
+},
+{
+"id": "fill-1f4e52713a",
+"typeId": "eng-m3-b01-u7m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 요약문의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nAfter getting lost in a forest, five wise men chose different paths. One man went left and learned how to survive in the forest. Another went right and changed a group of thieves through his kindness. The man who went back made a safe path for others, while the man who went straight discovered new places. The last man climbed a tree and found the shortest way out. At first, he believed that he was the only wise man. However, each of the five men achieved something meaningful through his own choice. Their experiences show us that there is no single correct path for everyone.\n\n[요약문]\nAlthough the five men made (A)________ choices, each of them achieved something valuable. This suggests that people should (B)________ their own paths in life rather than judge every life by the same standard.",
+"choices": [
+"(A) similar - (B) follow",
+"(A) different - (B) avoid",
+"(A) different - (B) create",
+"(A) careful - (B) compare",
+"(A) wrong - (B) change"
+],
+"answer": "③",
+"solution": "다섯 남자는 서로 다른 길을 선택했지만 각자 의미 있는 결과를 얻었다. 따라서 (A)에는 '서로 다른'이라는 뜻의 different가 알맞다. 또한 글의 핵심 교훈은 모든 사람에게 정해진 하나의 정답이 있는 것이 아니라 각자가 자신만의 길을 만들어 가야 한다는 것이므로 (B)에는 create가 적절하다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b01-u7m3s0t0",
+"custom": true
 }
 ]

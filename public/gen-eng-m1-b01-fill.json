@@ -4294,5 +4294,75 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b01-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-47fbfdec0a",
+"typeId": "eng-m1-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"injury – 부상",
+"ankle – 발목",
+"accident – 사고",
+"knee – 손가락",
+"dangerous – 위험한"
+],
+"answer": "④",
+"solution": "knee의 뜻은 '무릎'입니다. '손가락'은 finger입니다. 나머지 단어는 모두 뜻이 바르게 짝지어져 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1db2ecd67b",
+"typeId": "eng-m1-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nYou must wear a ________ when you ride a bike.",
+"choices": [
+"helmet",
+"ankle",
+"lane",
+"sign",
+"lunchtime"
+],
+"answer": "①",
+"solution": "'자전거를 탈 때는 ~을 써야 한다'는 뜻이므로 머리에 쓰는 '헬멧(helmet)'이 알맞습니다. ankle(발목), lane(차선), sign(표지판), lunchtime(점심시간)은 wear의 목적어로 쓰기에 문맥상 어색합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-33e7e38e58",
+"typeId": "eng-m1-b01-u3m7s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\n\n자동차를 조심해라.\n→ ________ ________ for cars.",
+"selfGrade": true,
+"answer": "Watch out",
+"solution": "'~을 조심하다'는 watch out for로 씁니다. 명령문이므로 동사원형 Watch로 문장을 시작하고, 빈칸에는 Watch out이 들어갑니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u3m7s0t0",
+"custom": true
+},
+{
+"id": "fill-1d0930aee7",
+"typeId": "eng-m1-b01-u3m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"Dodgeball can cause injuries to your fingers.",
+"Many accidents happen at lunchtime.",
+"Students get injuries when they are play soccer.",
+"You must watch out for cars on the road.",
+"It is important to know about dangerous places."
+],
+"answer": "③",
+"solution": "③은 be동사 are와 동사원형 play가 함께 쓰였으므로 틀린 문장입니다. 현재진행형 are playing이나 현재형 play로 고쳐야 합니다. ②의 happen은 자동사라서 수동태(are happened)로 쓰지 않습니다. 따라서 happen이 맞는 표현입니다. ④의 must 뒤에는 동사원형 watch가 바르게 쓰였습니다. ⑤의 to know는 진주어 역할을 하는 to부정사입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b01-u3m7s0t0",
+"custom": true
 }
 ]

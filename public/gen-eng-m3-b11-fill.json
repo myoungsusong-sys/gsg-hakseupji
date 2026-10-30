@@ -3665,5 +3665,151 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b11-u1m5s0t0",
 "custom": true
+},
+{
+"id": "fill-a303c583ea",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nAnts do not have lungs, but they ________ through small holes in their bodies.",
+"choices": [
+"breathe",
+"carry",
+"share",
+"swim",
+"hold"
+],
+"answer": "①",
+"solution": "개미는 폐가 없지만 몸에 있는 작은 구멍으로 '숨을 쉰다(breathe)'는 내용이다. carry(나르다), share(나누다), swim(수영하다), hold(담다)는 문맥에 맞지 않는다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-f5b78a457c",
+"typeId": "eng-m3-b11-u1m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "밑줄 친 단어와 의미가 가장 가까운 것은?\n\nLike humans, ants live almost everywhere in the world, except a few extremely cold places.",
+"choices": [
+"other than",
+"because of",
+"instead of",
+"thanks to",
+"such as"
+],
+"answer": "①",
+"solution": "except는 '~을 제외하고'라는 뜻으로 other than과 의미가 가장 가깝다. because of(~때문에), instead of(~대신에), thanks to(~덕분에), such as(~와 같은)는 뜻이 다르다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u1m6s0t0",
+"custom": true
+},
+{
+"id": "fill-1c74d01477",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nMy grandmother, Helen Baker, passed the local tryouts. One day, she got a letter from the girls' baseball league in Chicago. She was invited to the league's main tryouts! However, she became worried that she might fail. In the end, she was too afraid to go to Chicago. She has regretted her decision all her life. She often tells me, \"All your dreams are worth chasing. Never miss an opportunity.\"",
+"choices": [
+"야구는 여자들에게도 인기 있는 운동이다.",
+"실패가 두렵더라도 기회를 놓치지 말고 꿈을 좇아야 한다.",
+"가족의 조언은 언제나 그대로 따라야 한다.",
+"중요한 소식은 편지로 전하는 것이 좋다.",
+"큰 도시에 가야 꿈을 이루기 쉽다."
+],
+"answer": "②",
+"solution": "Helen은 실패할까 봐 두려워서 시카고 본선 테스트에 가지 않았고, 평생 그 결정을 후회했다. 그래서 손녀에게 꿈은 좇을 가치가 있으니 기회를 놓치지 말라고 말한다. 따라서 글의 요지는 ②이다. ①, ③, ④, ⑤는 글에 나온 낱말만 빌려 왔을 뿐 글의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-04bebb728a",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 대화의 주제로 가장 알맞은 것은?\n\nM: Let's start the interview. Why did you apply for Mana Animation High School?\nG: I've loved drawing cartoons since I was a little child.\nM: So, do you want to be a cartoon artist?\nG: No. I want to be a game designer.\nM: What do you think is the most important skill for a game designer?\nG: I'd say imagination. A good designer should create a completely new world in a game.",
+"choices": [
+"the history of Mana Animation High School",
+"how to draw cartoons well",
+"Sora's dream job and the skill it needs",
+"the result of Sora's drawing exam",
+"popular games among teenagers"
+],
+"answer": "③",
+"solution": "면접에서 소녀는 게임 디자이너가 되고 싶다고 말하고, 게임 디자이너에게 가장 중요한 능력으로 상상력을 꼽는다. 따라서 대화의 주제는 '소라의 장래 희망과 그 일에 필요한 능력'인 ③이다. 학교의 역사, 만화 잘 그리는 법, 시험 결과, 인기 게임은 대화에서 다루지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-eebd049238",
+"typeId": "eng-m3-b11-u7m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸에 알맞은 말을 쓰시오. (단, 주어진 철자로 시작할 것)\n\nHelen Baker was invited to the main tryouts of the girls' baseball league in Chicago. But she was afraid that she might fail, so she didn't go. Now she regrets her decision. When she watches a baseball game on TV, she says to her granddaughter, \"I should have gone to Chicago. Never miss an opportunity.\"\n\n[요약]\nHelen didn't go to the main tryouts because of her fear, and she tells her granddaughter never to miss an o__________.",
+"selfGrade": true,
+"answer": "opportunity",
+"solution": "Helen은 실패가 두려워 본선 테스트에 가지 않은 것을 후회하며, 손녀에게 \"Never miss an opportunity.\"라고 말한다. 요약문은 할머니가 손녀에게 해 주는 충고를 담고 있으므로 빈칸에는 opportunity(기회)가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u7m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f261ab9820",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIt is important for students _________ hard every day.",
+"choices": [
+"study",
+"studies",
+"studied",
+"to study",
+"studying"
+],
+"answer": "④",
+"solution": "「It ~ for + 목적격 + to부정사」 구문으로, 가주어 It이 뒤의 to부정사를 대신하고 for 다음에 의미상 주어가 온다. 따라서 빈칸에는 to study가 알맞다. 나머지 형태는 to부정사가 아니므로 이 구문에 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-308176ed87",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nIf I _________ you, I would say sorry to her.",
+"choices": [
+"am",
+"are",
+"were",
+"will be",
+"have been"
+],
+"answer": "③",
+"solution": "현재 사실과 반대되는 상황을 가정하는 가정법 과거 문장이다. 가정법 과거에서 if절의 be동사는 인칭에 관계없이 were를 쓰므로 정답은 were이다. 주절이 「would + 동사원형」인 것으로도 가정법 과거임을 알 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-aa8853da0c",
+"typeId": "eng-m3-b11-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 해당하는 영어 단어로 알맞은 것은?\n\n(소·양 등이) 풀을 뜯어 먹다",
+"choices": [
+"raise",
+"graze",
+"notice",
+"fill",
+"lay"
+],
+"answer": "②",
+"solution": "'풀을 뜯어 먹다'라는 뜻의 단어는 graze이다. raise는 '기르다', notice는 '알아차리다', fill은 '채우다', lay는 '놓여 있다'라는 뜻이므로 알맞지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b11-u5m6s0t0",
+"custom": true
 }
 ]

@@ -3001,5 +3001,70 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b09-u0m2s0t0",
 "custom": true
+},
+{
+"id": "fill-cd3351812b",
+"typeId": "eng-m1-b09-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 괄호 안의 단어를 알맞은 형태로 고쳐 쓰시오.\n\nMy bag is __________ than your bag. (big)",
+"selfGrade": true,
+"answer": "bigger",
+"solution": "뒤에 than이 있으므로 비교급을 써야 합니다. big은 「단모음 + 단자음」으로 끝나므로 마지막 자음 g를 한 번 더 쓰고 -er을 붙입니다. 따라서 bigger가 답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-17b79665b3",
+"typeId": "eng-m1-b09-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 괄호 안의 단어를 알맞은 형태로 고쳐 쓰시오.\n\nThis is the __________ building in our town. (old)",
+"selfGrade": true,
+"answer": "oldest",
+"solution": "앞에 the가 있고 뒤에 in our town(범위)이 오므로 최상급이 필요합니다. old의 최상급은 -est를 붙인 oldest입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ba88547c56",
+"typeId": "eng-m1-b09-u4m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 괄호 안의 단어를 알맞은 형태로 고쳐 쓰시오. (두 단어로 쓸 것)\n\nThis book is __________ than that book. (interesting)",
+"selfGrade": true,
+"answer": "more interesting",
+"solution": "than이 있으므로 비교급 문장입니다. interesting처럼 3음절 이상인 긴 형용사는 -er을 붙이지 않고 앞에 more를 씁니다. 따라서 more interesting이 답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-49b14a5628",
+"typeId": "eng-m1-b09-u4m2s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 중 어법상 어색한 문장 두 개를 찾아 기호를 쓴 후, 어색한 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\n\nⓐ This box is much heavier than that one.\nⓑ Jiho is the most funniest boy in my class.\nⓒ Today is hotter than yesterday.\nⓓ My score is badder than your score.\nⓔ Summer is the best season of the year.\n\n(1) _______: _____________________________________________\n(2) _______: _____________________________________________",
+"selfGrade": true,
+"answer": "ⓑ : Jiho is the funniest boy in my class. ⓓ : My score is worse than your score.",
+"solution": "ⓑ funny는 -y로 끝나는 2음절 형용사라서 y를 i로 바꾸고 -est를 붙여 funniest가 됩니다. 여기에 most를 함께 쓰면 최상급이 겹치므로 the funniest로 고칩니다. ⓓ bad는 불규칙 변화(bad-worse-worst)를 하므로 badder가 아니라 worse로 고칩니다. ⓐ의 much는 비교급을 강조하는 말이라 맞고, ⓒ hotter와 ⓔ the best도 바르게 쓰였습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m2s0t0",
+"custom": true
+},
+{
+"id": "fill-74a6661fe5",
+"typeId": "eng-m1-b09-u4m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 표는 세 학생의 100m 달리기 기록이다. 표의 내용과 일치하도록 <조건>에 맞게 영어 문장을 완성하시오.\n\n| 이름 | Minsu | Yuna | Tom |\n| 기록 | 15초 | 17초 | 14초 |\n\n<조건>\n• (1)은 Minsu를 주어로, 동사 runs와 fast를 활용하여 Minsu와 Yuna를 비교하는 5단어 문장으로 쓸 것\n• (2)는 Tom을 주어로, 동사 runs와 fast, of the three를 활용하여 7단어 문장으로 쓸 것\n• (3)은 Yuna를 주어로, 동사 is와 slow, runner, of the three를 활용하여 8단어 문장으로 쓸 것\n• 필요하면 단어의 형태를 바꿀 것\n\n(1) _____________________________________________\n(2) _____________________________________________\n(3) _____________________________________________",
+"selfGrade": true,
+"answer": "(1) Minsu runs faster than Yuna. (2) Tom runs the fastest of the three. (3) Yuna is the slowest runner of the three.",
+"solution": "기록은 시간이 짧을수록 빠르므로, 빠른 순서는 Tom(14초) > Minsu(15초) > Yuna(17초)입니다. (1) Minsu가 Yuna보다 빠르므로 비교급 faster than을 써서 5단어로 씁니다. (2) Tom이 세 명 중 가장 빠르므로 최상급 the fastest를 쓰면 7단어가 됩니다. (3) Yuna가 가장 느리므로 slow의 최상급 the slowest를 runner 앞에 써서 8단어로 완성합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b09-u4m2s0t0",
+"custom": true
 }
 ]

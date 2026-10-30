@@ -6471,5 +6471,56 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b05-u4m6s0t0",
 "custom": true
+},
+{
+"id": "fill-afce7706db",
+"typeId": "eng-m3-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어는?\n\nto give permission for someone to do or have something",
+"choices": [
+"destroy",
+"gather",
+"decide",
+"allow",
+"raise"
+],
+"answer": "④",
+"solution": "제시된 풀이는 '누군가가 어떤 일을 하거나 무언가를 갖도록 허락하다'라는 뜻이므로 allow(허락하다)가 알맞다. destroy는 '파괴하다', gather는 '모으다', decide는 '결정하다', raise는 '기르다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6994e65fc0",
+"typeId": "eng-m3-b05-u3m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말 뜻에 해당하는 영어 단어를 주어진 철자로 시작하여 쓰시오.\n\n다양한, 여러 가지의 → v__________",
+"selfGrade": true,
+"answer": "various",
+"solution": "'다양한, 여러 가지의'라는 뜻의 형용사는 various이다. 비슷한 뜻의 단어로는 diverse가 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-ceb65d3272",
+"typeId": "eng-m3-b05-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 잘못 연결된 것은?",
+"choices": [
+"decide - 결정하다",
+"gather - 모으다",
+"raise - 기르다",
+"mystery - 수수께끼, 신비",
+"main - 사소한"
+],
+"answer": "⑤",
+"solution": "main은 '주된, 가장 중요한'이라는 뜻이므로 '사소한'과 연결한 ⑤가 틀렸다. main과 뜻이 비슷한 단어는 major이다. 나머지 단어는 모두 우리말 뜻과 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b05-u3m0s0t0",
+"custom": true
 }
 ]

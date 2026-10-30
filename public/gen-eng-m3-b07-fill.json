@@ -4133,5 +4133,241 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b07-u1m7s0t0",
 "custom": true
+},
+{
+"id": "fill-4a1de16774",
+"typeId": "eng-m3-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe harder you study, ________ grades you will get.",
+"choices": [
+"good",
+"better",
+"the better",
+"the best",
+"more good"
+],
+"answer": "③",
+"solution": "'~할수록 더 …하다'는 「the + 비교급 ~, the + 비교급 …」 구문으로 나타낸다. 앞 절이 The harder로 시작하므로 뒤 절에도 'the + 비교급'이 와야 한다. good의 비교급은 better이므로 the better가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-d719a716fa",
+"typeId": "eng-m3-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 올바른 문장은?",
+"choices": [
+"The more you read, the much you learn.",
+"The faster you run, the tired you get.",
+"The earlier you get up, the more time you have.",
+"Older he gets, wiser he becomes.",
+"The colder it gets, the warm clothes we need."
+],
+"answer": "③",
+"solution": "「the + 비교급 ~, the + 비교급 …」 구문에서는 두 절 모두에 'the + 비교급'을 써야 한다. ①은 the much → the more, ②는 the tired → the more tired, ⑤는 the warm → the warmer로 고쳐야 한다. ④는 두 절 모두 the가 빠졌다. 따라서 올바른 문장은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-a1f5cf1f39",
+"typeId": "eng-m3-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 밑줄 친 부분 중 어법상 어색한 것은?\n\nThe ①more ②you ③laugh, the ④happiest ⑤you will feel.",
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+"answer": "④",
+"solution": "「the + 비교급 ~, the + 비교급 …」은 '~할수록 더 …하다'라는 뜻이다. 이 구문에는 최상급이 아니라 비교급을 써야 하므로 ④ happiest를 happier로 고쳐야 한다. 나머지 more, you, laugh, you는 모두 어법상 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u3m1s0t0",
+"custom": true
+},
+{
+"id": "fill-90bc951fb7",
+"typeId": "eng-m3-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 강조하고 있는 대상으로 알맞은 것은?\n\nIt was Minsu that painted some flowers on the wall.",
+"choices": [
+"Minsu",
+"painted",
+"some flowers",
+"the wall",
+"that"
+],
+"answer": "①",
+"solution": "「It was ~ that ...」 강조구문으로, It was와 that 사이에 놓인 말이 강조 대상이다. 여기서는 that 앞의 Minsu가 강조되고 있다. 따라서 '꽃을 그린 사람은 바로 민수였다'라는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-488c59236e",
+"typeId": "eng-m3-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말과 같은 뜻이 되도록 빈칸에 들어갈 말로 알맞은 것은?\n\n우리의 벽화는 우리 동네를 더 밝게 만들었다.\nOur wall painting made our neighborhood ______.",
+"choices": [
+"brightly",
+"brightness",
+"brighter",
+"brighten",
+"to bright"
+],
+"answer": "③",
+"solution": "「make + 목적어 + 목적격보어」 5형식 문장으로, 목적격보어 자리에는 형용사가 온다. '더 밝게'라는 비교급 의미이므로 형용사 bright의 비교급 brighter가 알맞다. 부사(brightly)나 명사(brightness)는 목적격보어가 될 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-fbf7902a98",
+"typeId": "eng-m3-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nMy flower is so ______ that a bee landed on it.\n(내 꽃이 너무 진짜 같아서 벌이 그 위에 앉았어.)",
+"choices": [
+"real",
+"artificial",
+"fake",
+"perfect",
+"hard"
+],
+"answer": "①",
+"solution": "벌이 앉을 만큼 '진짜 같다'는 의미이므로 '진짜의, 실제의'라는 뜻의 real이 알맞다. artificial(인공의), fake(가짜의)는 반대 의미이고, perfect(완벽한), hard(어려운)는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-e856a8d91d",
+"typeId": "eng-m3-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장은?",
+"choices": [
+"It was a better tomorrow what we painted that day.",
+"We made our neighborhood a little more brighter.",
+"It was in the morning that we began to paint the wall.",
+"We made happy our neighborhood with the painting.",
+"It was Jiwon who do the background drawings on the wall."
+],
+"answer": "③",
+"solution": "③은 부사구 in the morning을 강조하는 「It was ~ that ...」 강조구문으로 어법상 옳다. ①은 강조구문에서 what이 아니라 that을 써야 하고, ②는 비교급을 중복(more + brighter)해 틀렸으며 brighter로 써야 한다. ④는 「make+목적어+형용사」 어순이어야 하므로 made our neighborhood happy가 맞다. ⑤는 선행사 Jiwon이 3인칭 단수이고 과거 사실이므로 do가 아니라 did를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u2m7s0t0",
+"custom": true
+},
+{
+"id": "fill-2bb9d7c237",
+"typeId": "eng-m3-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 단어 하나를 찾아 바르게 고쳐 쓰시오.\n\nI'll leave the window open so what fresh air can come in.",
+"selfGrade": true,
+"answer": "what → that",
+"solution": "'~하도록, ~하기 위해서'라는 목적의 뜻은 「so that + 주어 + can ~」으로 나타냅니다. so 뒤에는 what이 아니라 that이 와야 합니다. 따라서 what을 that으로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-6c40c83ec6",
+"typeId": "eng-m3-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐 쓰시오.\n\nThis box is enough strong to hold all the books.",
+"selfGrade": true,
+"answer": "enough strong → strong enough",
+"solution": "'~할 만큼 충분히 …한'은 「형용사 + enough + to부정사」 순서로 씁니다. enough는 형용사 뒤에 와야 하므로 enough strong을 strong enough로 고칩니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-5b6d693609",
+"typeId": "eng-m3-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글에서 어법상 어색한 단어 하나를 찾아 바르게 고쳐 쓰시오.\n\nThis is the Sagrada Familia in Spain. It is one of the most famous churches in the world. Look at the tall columns inside the church. They look like trees, don't they? The famous architect, Antoni Gaudi, used the shape of trees so that he could bringing the beauty of nature indoors.",
+"selfGrade": true,
+"answer": "bringing → bring",
+"solution": "「so that + 주어 + can/could」 뒤에는 동사원형이 와야 합니다. 그러므로 could 뒤의 bringing을 bring으로 고칩니다. one of the most famous churches(one of + 최상급 + 복수명사)와 부가의문문 don't they는 어법상 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-1fb0e15fee",
+"typeId": "eng-m3-b07-u5m2s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에서 어법상 어색한 부분을 4군데 찾아 올바른 영어로 고쳐 쓰시오. (단, 글에 나온 순서대로 쓸 것)\n\nA lot of artists get their ideas from the world around them. This is because the natural world are a beautiful place. Look at the egg on the left. It is round and delicate, yet it is enough strong to protect its contents. Can you imagine a building that looks like an egg? Such a building actually exists in London. Nature has inspired many architects around the world. Antoni Gaudi used the shape of trees in the Sagrada Familia so what he could bring the beauty of nature indoors. Jørn Utzon, the architect of the Sydney Opera House, took a shape from nature and added his imagination. Many people think that the inspiration came from the waves in the ocean. But interesting, it came from an orange.\n\n어색한 표현      고친 표현\n(1) _______________ → _______________\n(2) _______________ → _______________\n(3) _______________ → _______________\n(4) _______________ → _______________",
+"selfGrade": true,
+"answer": "(1) are → is (2) enough strong → strong enough (3) so what → so that (4) interesting → interestingly",
+"solution": "(1) 주어 the natural world는 단수이므로 동사는 is가 되어야 합니다. (2) '~할 만큼 충분히 튼튼한'은 「형용사 + enough + to부정사」 순서이므로 strong enough로 고칩니다. (3) '~하기 위해서'라는 목적은 「so that + 주어 + could」로 나타내므로 so what을 so that으로 고칩니다. (4) 문장 전체를 꾸미는 말은 부사여야 하므로 interesting을 interestingly로 고칩니다. Such a building과 added his imagination은 어법상 맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u5m2s0t0",
+"custom": true
+},
+{
+"id": "fill-fffcb40f4a",
+"typeId": "eng-m3-b07-u7m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 분사구문을 부사절로 바르게 바꾼 것을 고르시오.\n\nFeeling hungry, Tom made a sandwich.\n→ (          ), Tom made a sandwich.",
+"choices": [
+"Because Tom feels hungry",
+"Because Tom felt hungry",
+"Because Tom will feel hungry",
+"Because Tom has felt hungry",
+"Because Tom is feeling hungry"
+],
+"answer": "②",
+"solution": "분사구문을 부사절로 바꿀 때 주절의 시제에 맞춰야 한다. 주절의 동사 made가 과거이므로 부사절의 동사도 과거형 felt가 되어야 한다. 따라서 'Because Tom felt hungry'가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m6s0t0",
+"custom": true
+},
+{
+"id": "fill-df9ac31723",
+"typeId": "eng-m3-b07-u7m5s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그는 자신의 눈을 믿을 수 없었다.",
+"choices": [
+"He can't believed his eyes.",
+"He couldn't believed his eyes.",
+"He couldn't believe his eyes.",
+"He doesn't believe his eyes.",
+"He wasn't believe his eyes."
+],
+"answer": "③",
+"solution": "과거에 눈을 믿을 수 없었다는 의미이므로 couldn't를 사용한다. 조동사 could의 부정형 couldn't 뒤에는 동사원형 believe가 와야 한다. 따라서 He couldn't believe his eyes.가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m5s0t0",
+"custom": true
+},
+{
+"id": "fill-e781b0bf3c",
+"typeId": "eng-m3-b07-u7m5s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 우리말과 일치하도록 주어진 단어를 바르게 배열하여 문장을 완성하시오.\n\n그는 계속해서 읽었다.\n\n<보기>\nreading / kept / he\n\n<조건>\n• 주어진 단어를 모두 한 번씩 사용할 것.\n• 문장의 첫 글자는 대문자로 쓸 것.\n• 완전한 영어 문장으로 쓸 것.",
+"selfGrade": true,
+"answer": "He kept reading.",
+"solution": "주어 He 뒤에 과거형 동사 kept를 쓴다. keep은 동명사를 목적어로 취하므로 reading을 사용한다. 따라서 올바른 배열은 He kept reading.이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b07-u7m5s0t0",
+"custom": true
 }
 ]

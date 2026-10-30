@@ -6861,5 +6861,341 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b10-u6m3s0t0",
 "custom": true
+},
+{
+"id": "fill-55bab914fa",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\nto pay no attention to someone or something",
+"choices": [
+"① forgive",
+"② ignore",
+"③ argue",
+"④ join",
+"⑤ complete"
+],
+"answer": "②",
+"solution": "'누군가 또는 무언가에 관심을 기울이지 않다'라는 뜻의 단어는 ignore(무시하다)입니다. forgive는 '용서하다', argue는 '논쟁하다', join은 '함께하다, 합류하다', complete는 '완전한; 완성하다'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5316024fc5",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"choices": [
+"① utensil – 도구, 기구",
+"② polite – 공손한, 예의 바른",
+"③ forgive – 용서하다",
+"④ boastful – 겸손한",
+"⑤ host – 주인, 주최자"
+],
+"answer": "④",
+"solution": "boastful은 '자랑하는, 뽐내는'이라는 뜻입니다. '겸손한'은 modest이며, boastful과 뜻이 반대되는 말입니다. 나머지는 모두 단어와 뜻이 바르게 연결되어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-0a1dc5a6b3",
+"typeId": "eng-m3-b10-u1m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어를 주어진 철자로 시작하여 쓰시오.\n\nto go away so that you cannot be seen or found\n\n→ d__________",
+"selfGrade": true,
+"answer": "disappear",
+"solution": "'보이지 않거나 찾을 수 없게 사라지다'라는 뜻의 단어는 disappear(사라지다)입니다. 본문에서 Ms. Disher가 조용히 떠나자 Spork가 \"She has disappeared.\"라고 말하는 장면에 나옵니다. disappear와 뜻이 반대되는 말은 appear(나타나다)입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m0s0t0",
+"custom": true
+},
+{
+"id": "fill-2d3778a6d0",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 인터넷 약어 'ASAP'이 나타내는 표현으로 알맞은 것은?",
+"choices": [
+"Have a nice day",
+"as soon as possible",
+"words of wisdom",
+"in my opinion",
+"every now and then"
+],
+"answer": "②",
+"solution": "ASAP은 'as soon as possible(가능한 한 빨리)'을 줄인 두문자어(acronym)이다. ①은 HAND가 뜻하는 표현이므로 정답이 아니다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-22e8759b01",
+"typeId": "eng-m3-b10-u5m6s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 공통으로 들어갈 단어로 알맞은 것은?\n\nASAP and HAND are examples of an ___________, which is a word made from the first letters of other words.",
+"choices": [
+"opinion",
+"language",
+"acronym",
+"action",
+"message"
+],
+"answer": "③",
+"solution": "여러 단어의 첫 글자를 따서 만든 말을 'acronym(두문자어)'이라고 한다. ASAP과 HAND가 그 예이다. 나머지 선지는 문맥상 '첫 글자로 만든 말'이라는 뜻과 맞지 않는다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u5m6s0t0",
+"custom": true
+},
+{
+"id": "fill-5b1f6d1bc5",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 알맞은 것은?\n\nNature can be a great teacher. When we look closely at plants and animals, we can get useful ideas. Many engineers study nature when they want to solve a problem. By learning from nature, they can create helpful things for our lives.",
+"choices": [
+"Nature gives us good ideas for problems",
+"Animals are stronger than humans",
+"Engineers do not need any help",
+"Plants grow only in the woods",
+"We should not touch wild animals"
+],
+"answer": "①",
+"solution": "글은 자연을 관찰하면 유용한 아이디어를 얻을 수 있고, 엔지니어들이 문제를 해결할 때 자연을 공부한다고 말한다. 따라서 '자연이 문제 해결의 좋은 아이디어를 준다'가 주제다. 나머지 선지는 글에 없는 내용이거나 핵심이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-31061aef88",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nMany great inventions started with a simple question. People became curious about something in nature and asked, \"How does this work?\" Their curiosity led them to study and test their ideas. So, being curious is the first step to making something new.",
+"choices": [
+"호기심은 새로운 것을 만드는 첫걸음이다",
+"발명은 혼자 하는 것이 가장 좋다",
+"자연은 위험하므로 피해야 한다",
+"질문을 많이 하면 시간이 낭비된다",
+"오래된 물건이 새 물건보다 좋다"
+],
+"answer": "①",
+"solution": "글은 위대한 발명이 단순한 질문과 호기심에서 시작되며, 호기심이 새로운 것을 만드는 첫걸음이라고 분명히 말한다(마지막 문장). 따라서 ①이 요지다. 나머지는 글의 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-60bc72a4fa",
+"typeId": "eng-m3-b10-u2m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nHave you ever watched a bird fly or a fish swim? Animals do many things very well. If we watch them carefully, we can learn from them. In fact, people have made many useful things by copying animals and plants.",
+"choices": [
+"Learning from Animals and Plants",
+"How to Take Care of a Pet Bird",
+"The Fastest Fish in the Sea",
+"Why We Should Protect Forests",
+"A Trip to the Animal Zoo"
+],
+"answer": "①",
+"solution": "글은 동물과 식물을 주의 깊게 관찰하면 그것들로부터 배울 수 있고, 사람들이 그것들을 모방해 유용한 것을 만들어 왔다는 내용이다. 따라서 '동물과 식물에게서 배우기'가 제목으로 알맞다. 나머지 선지는 세부 소재이거나 글의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u2m3s0t0",
+"custom": true
+},
+{
+"id": "fill-e2072ffcc3",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThis box is too heavy for me ________.",
+"choices": [
+"① carry",
+"② to carry",
+"③ carrying",
+"④ carried",
+"⑤ carries"
+],
+"answer": "②",
+"solution": "'too + 형용사 + (for 의미상 주어) + to부정사'는 '~하기에 너무 …한(그래서 ~할 수 없는)'이라는 뜻이다. 그래서 too heavy 뒤에는 to부정사 to carry가 와야 한다. 동사원형, -ing형, 과거형, 3인칭 단수형은 이 자리에 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-59acec8912",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nI saw a little boy ________ the street alone.",
+"choices": [
+"① to cross",
+"② crosses",
+"③ crossing",
+"④ to crossing",
+"⑤ is crossing"
+],
+"answer": "③",
+"solution": "see, hear 같은 지각동사는 '지각동사 + 목적어 + 동사원형/현재분사(-ing)' 형태로 쓴다. 선지 중에는 현재분사 crossing만 알맞다. 지각동사의 목적격보어로 to부정사는 쓸 수 없고, 3인칭 단수 동사나 'is + -ing'도 올 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9c1097b626",
+"typeId": "eng-m3-b10-u7m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 어색한 문장은?",
+"choices": [
+"① She is old enough to drive a car.",
+"② He was too tired to walk home.",
+"③ The water is enough warm to swim in.",
+"④ I heard the baby crying in the room.",
+"⑤ Nobody was at home when I called."
+],
+"answer": "③",
+"solution": "'~할 만큼 충분히 …한'이라는 뜻은 '형용사 + enough + to부정사' 순서로 쓴다. 그래서 ③은 The water is warm enough to swim in.이 되어야 한다. ①은 enough 구문, ②는 too ~ to 구문, ④는 지각동사 + 목적어 + 현재분사로 모두 맞다. ⑤의 nobody는 단수 취급하므로 was가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u7m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fe59c6da63",
+"typeId": "eng-m3-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"The boy playing soccer is my brother.",
+"The boy play soccer is my brother.",
+"The boy played soccer is my brother.",
+"The boy to playing soccer is my brother.",
+"The boy plays soccer is my brother."
+],
+"answer": "①",
+"solution": "명사 The boy를 뒤에서 수식할 때, 소년이 축구를 하는 능동의 관계이므로 현재분사 playing을 사용한다. ①의 playing soccer는 앞의 명사 The boy를 수식하는 현재분사구이다. 나머지 선택지는 분사의 형태가 잘못되었거나 관계사 없이 동사가 중복되어 어법상 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-66f25df7c9",
+"typeId": "eng-m3-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI have a lot of homework __________ tonight.",
+"choices": [
+"do",
+"doing",
+"to do",
+"done",
+"does"
+],
+"answer": "③",
+"solution": "명사 homework를 뒤에서 수식하면서 앞으로 해야 할 일을 나타내므로 to부정사의 형용사적 용법을 사용한다. 따라서 빈칸에는 to do가 알맞다. I have a lot of homework to do tonight은 '나는 오늘 밤 해야 할 숙제가 많다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-fe59c6da63",
+"typeId": "eng-m3-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 어법상 알맞은 문장은?",
+"choices": [
+"It is kind for you to help me.",
+"It is kind of you help me.",
+"It is kind of you to helping me.",
+"It is kind of you to help me.",
+"It is kind for you helping me."
+],
+"answer": "④",
+"solution": "It is + 형용사 + of + 목적격 + to부정사 구문에서 사람의 성격이나 태도를 평가하는 형용사 kind가 쓰이면 의미상의 주어 앞에 전치사 of를 사용한다. 또한 to부정사는 to + 동사원형의 형태이므로 to help가 알맞다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-928cc700d1",
+"typeId": "eng-m3-b10-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳지 않은 것만을 모두 고른 것은?\n\nMs. Disher enjoys ⓐlistening to stories about her friends' trips. One evening, she invited her friends ⓑreturning from their trips to dinner. She prepared a special meal ⓒto welcome them. During dinner, Spork suggested a new way ⓓeating food, and Chopsticks began ⓔto explain why he preferred his own way.\n\n<조건>\n• 밑줄 친 부분의 어법상 적절성만 판단할 것.\n• 옳지 않은 부분을 빠짐없이 고를 것.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓑ, ⓓ"
+],
+"answer": "④",
+"solution": "ⓐ는 enjoy의 목적어로 동명사 listening을 사용했으므로 옳고, ⓑ는 명사 friends를 뒤에서 수식하는 현재분사 returning이므로 옳다. ⓒ는 식사를 준비한 목적을 나타내는 to부정사의 부사적 용법으로 적절하다. ⓓ는 '음식을 먹는 방법'이라는 뜻으로 명사 way를 수식해야 하므로 eating을 to eat으로 고쳐야 한다. ⓔ는 begin이 to부정사를 목적어로 취할 수 있으므로 옳으며, 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-c461b6f069",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 빈칸에 들어갈 말로 어법상 가장 알맞은 것은?\n\nI don't know ______ I should say to my father.",
+"choices": [
+"① that",
+"② which",
+"③ what",
+"④ who",
+"⑤ whose"
+],
+"answer": "③",
+"solution": "빈칸 뒤에는 목적어가 없는 불완전한 절이 이어진다. 의문사 what은 '무엇을'이라는 뜻으로 동사 say의 목적어 역할을 한다. 따라서 '나는 아버지께 무엇을 말씀드려야 할지 모르겠다.'라는 의미가 되도록 what을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-423d167ef0",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 빈칸에 들어갈 말로 어법상 가장 알맞은 것은?\n\nThe lights ______ Richard made scared away lions.",
+"choices": [
+"① who",
+"② whose",
+"③ what",
+"④ that",
+"⑤ where"
+],
+"answer": "④",
+"solution": "선행사 The lights는 사물을 나타내며, 빈칸 뒤에는 동사 made의 목적어가 없는 불완전한 절이 이어진다. 따라서 사물을 선행사로 하는 목적격 관계대명사 that이 알맞다. what은 선행사를 포함하는 관계대명사이므로 선행사 The lights 뒤에 사용할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
+},
+{
+"id": "fill-8fcf3baabc",
+"typeId": "eng-m3-b10-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 밑줄 친 표현을 어법상 바르게 고친 것은?\n\nRichard made that he called 'lion lights.'\n\n밑줄 친 표현: that",
+"choices": [
+"① who",
+"② where",
+"③ when",
+"④ whose",
+"⑤ what"
+],
+"answer": "⑤",
+"solution": "동사 made 뒤에는 목적어가 필요하며, he called 뒤에도 목적어가 빠져 있다. 관계대명사 what은 선행사를 포함하여 '그가 사자 조명이라고 부른 것'이라는 의미를 나타낸다. 따라서 that을 what으로 고쳐 Richard made what he called 'lion lights.'라고 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b10-u0m1s0t0",
+"custom": true
 }
 ]

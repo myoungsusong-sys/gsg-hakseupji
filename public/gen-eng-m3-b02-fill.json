@@ -5833,5 +5833,417 @@
 "source": "유사 문항",
 "twinGroup": "tw-eng-m3-b02-u4m2s0t0",
 "custom": true
+},
+{
+"id": "fill-4b4c29945b",
+"typeId": "eng-m3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 알맞은 것은?\n\na person who is between 13 and 19 years old",
+"choices": [
+"① temper",
+"② teenager",
+"③ privacy",
+"④ fashion",
+"⑤ university"
+],
+"answer": "②",
+"solution": "13세에서 19세 사이의 사람을 가리키는 단어는 teenager(십 대)입니다. temper는 '성질, 화', privacy는 '사생활', fashion은 '패션, 유행', university는 '대학교'라는 뜻이라서 풀이와 맞지 않습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-a07c25b7d9",
+"typeId": "eng-m3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"① support – 지지하다, 응원하다",
+"② privacy – 사생활",
+"③ appreciate – 고마워하다",
+"④ temper – 성질, 화",
+"⑤ enter – 졸업하다"
+],
+"answer": "⑤",
+"solution": "enter는 '들어가다, 입학하다'라는 뜻입니다. 교과서의 enter university는 '대학에 입학하다'라는 뜻입니다. '졸업하다'는 graduate이므로 ⑤가 잘못 짝지어졌습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-d231e2f9c1",
+"typeId": "eng-m3-b02-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"① stress – stressful",
+"② help – helpful",
+"③ peace – peaceful",
+"④ wonder – wonderful",
+"⑤ happy – happily"
+],
+"answer": "⑤",
+"solution": "①~④는 명사 뒤에 -ful을 붙여 형용사를 만든 '명사 – 형용사' 관계입니다. ⑤ happy – happily는 형용사 뒤에 -ly를 붙여 부사를 만든 '형용사 – 부사' 관계이므로 관계가 다릅니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-61c929583a",
+"typeId": "eng-m3-b02-u0m0s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, (A)~(C)의 영영풀이에 해당하는 말을 글에서 찾아 그대로 쓰시오. (단, (C)는 세 단어로 쓸 것)\n\nI share a room with my sister. When she became a teenager, her mood started changing every minute. She would lose her temper over nothing one moment and happily read a book the next. It was difficult for me to put up with her. Now it's my turn to be a teenager. Whenever I lose my temper, she tries to support me.\n\n(A) the way you feel at a particular time\n(B) a tendency to become angry suddenly or easily\n(C) to accept an unpleasant person or situation without complaining",
+"selfGrade": true,
+"answer": "(A) mood (B) temper (C) put up with",
+"solution": "(A) '특정한 때에 느끼는 기분'은 mood입니다. (B) '갑자기 또는 쉽게 화를 내는 성향'은 temper이며, lose one's temper는 '화를 내다'라는 뜻입니다. mood와 temper는 둘 다 감정과 관련된 말이라 헷갈리기 쉬우니 '화'의 의미가 있는지로 구별해야 합니다. (C) '불쾌한 사람이나 상황을 불평 없이 받아들이다'는 put up with(참다, 견디다)이고, 조건대로 세 단어로 써야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u0m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5d59248f71",
+"typeId": "eng-m3-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 짝지어진 두 단어의 관계가 나머지 넷과 다른 것은?",
+"choices": [
+"online – offline",
+"fast – slow",
+"limited – unlimited",
+"quick – fast",
+"last – first"
+],
+"answer": "④",
+"solution": "①, ②, ③, ⑤는 뜻이 서로 반대인 반의어 관계입니다. ④ quick과 fast는 둘 다 '빠른'이라는 뜻이어서 유의어 관계입니다. 그래서 관계가 다른 것은 ④입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-6acd96639a",
+"typeId": "eng-m3-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 단어와 우리말 뜻이 바르게 짝지어지지 않은 것은?",
+"choices": [
+"collect – 모으다",
+"satisfy – 만족시키다",
+"repeat – 반복하다",
+"appreciate – 진가를 알아보다, 감사하다",
+"tradition – 유행"
+],
+"answer": "⑤",
+"solution": "tradition은 '전통'이라는 뜻입니다. '유행'이 아니므로 ⑤가 잘못 짝지어졌습니다. 나머지는 모두 뜻이 바르게 연결되어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-4da64f7bcc",
+"typeId": "eng-m3-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe new sneakers sold like hot ______. They were all gone in ten minutes.",
+"choices": [
+"cakes",
+"cookies",
+"bread",
+"pies",
+"potatoes"
+],
+"answer": "①",
+"solution": "sell like hot cakes는 '불티나게 팔리다'라는 뜻의 관용 표현입니다. 운동화가 10분 만에 다 팔렸다는 뒤 문장과도 흐름이 맞습니다. 따라서 빈칸에는 cakes가 들어가야 합니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u2m0s0t0",
+"custom": true
+},
+{
+"id": "fill-5c66dcc9d7",
+"typeId": "eng-m3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nIt was Marie Curie ______ won the Nobel Prize in Physics in 1903.",
+"choices": [
+"① which",
+"② what",
+"③ that",
+"④ whose",
+"⑤ whom"
+],
+"answer": "③",
+"solution": "「It is[was] ~ that ...」 강조 구문으로, 강조하는 대상(Marie Curie)을 「It was」와 「that」 사이에 두고 that을 쓴다. 강조 대상이 사람이어도 which, what, whom 등은 쓰지 않으므로 정답은 ③ that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-7fec0f9fa5",
+"typeId": "eng-m3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nThe exciting news made us ______.",
+"choices": [
+"① happily",
+"② happy",
+"③ happiness",
+"④ to happy",
+"⑤ being happy"
+],
+"answer": "②",
+"solution": "「make+목적어+목적격 보어」 형태의 5형식 문장이다. 목적격 보어 자리에는 목적어(us)의 상태를 설명하는 형용사가 와야 하므로 부사 happily나 명사 happiness가 아닌 형용사 happy가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-9cb9bf0bbd",
+"typeId": "eng-m3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nMany popcorn snacks ______ on hot stones over a fire.",
+"choices": [
+"① popped were",
+"② were popped",
+"③ popping",
+"④ were pop",
+"⑤ pop were"
+],
+"answer": "②",
+"solution": "주어(snacks)가 '튀겨지는' 대상이므로 수동태 「be동사+과거분사」로 써야 한다. 주어가 복수이고 과거 시제이므로 「were+popped」가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-bca91e6ca7",
+"typeId": "eng-m3-b02-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nMany people consider Leonardo da Vinci (A)[a genius / to genius] in many fields. His most famous work, the Mona Lisa, (B)[painted / was painted] about 500 years ago. Today it is the Mona Lisa (C)[that / which] a lot of visitors want to see at the museum.",
+"choices": [
+"① a genius - painted - that",
+"② a genius - was painted - that",
+"③ a genius - was painted - which",
+"④ to genius - was painted - that",
+"⑤ a genius - painted - which"
+],
+"answer": "②",
+"solution": "(A) 「consider+목적어+목적격 보어」 구조로 보어 자리에 명사구 a genius가 와야 한다(to genius는 틀림). (B) 주어 the Mona Lisa가 '그려진' 대상이므로 수동태 was painted가 알맞다. (C) 「It is ~ that ...」 강조 구문이므로 which가 아닌 that을 쓴다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u1m1s0t0",
+"custom": true
+},
+{
+"id": "fill-912037969d",
+"typeId": "eng-m3-b02-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이에 해당하는 단어로 가장 적절한 것은?\n\nable to be reached, entered, or used easily",
+"choices": [
+"awful",
+"personal",
+"accessible",
+"economic",
+"social"
+],
+"answer": "③",
+"solution": "'쉽게 도달하거나 들어가거나 이용할 수 있는'이라는 뜻의 단어는 accessible(접근 가능한, 이용 가능한)입니다. awful은 '끔찍한', personal은 '개인의', economic은 '경제의', social은 '사회의'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-fad54061eb",
+"typeId": "eng-m3-b02-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영풀이의 빈칸에 들어갈 단어로 가장 적절한 것은?\n\n_______________: to give or share things among a number of people",
+"choices": [
+"achieve",
+"preserve",
+"distribute",
+"profit",
+"intend"
+],
+"answer": "③",
+"solution": "'여러 사람에게 물건을 나누어 주다'라는 뜻의 단어는 distribute(분배하다, 나누어 주다)입니다. achieve는 '성취하다', preserve는 '보존하다', profit은 '이익(을 얻다)', intend는 '의도하다'라는 뜻입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-039c22eae2",
+"typeId": "eng-m3-b02-u3m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 동사와 명사의 연결이 바르지 않은 것은?",
+"choices": [
+"achieve – achievement",
+"deliver – delivery",
+"preserve – preservement",
+"distribute – distribution",
+"provide – provision"
+],
+"answer": "③",
+"solution": "preserve(보존하다)의 명사형은 preservement가 아니라 preservation(보존)입니다. 나머지는 achieve–achievement(성취), deliver–delivery(배달), distribute–distribution(분배), provide–provision(제공)으로 모두 바르게 연결되어 있습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-f0d5fe5123",
+"typeId": "eng-m3-b02-u3m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 밑줄 친 단어의 쓰임이 어법상 또는 의미상 바르지 않은 것은?",
+"choices": [
+"The new website makes information more <u>accessible</u> to students.",
+"Volunteers <u>delivered</u> food to people in need.",
+"The museum works hard to <u>preserve</u> old paintings.",
+"She was very proud of her <u>achieve</u> in the contest.",
+"They <u>distributed</u> free books to children in the village."
+],
+"answer": "④",
+"solution": "④ 소유격 her 뒤와 전치사 in 앞 자리에는 명사가 와야 하므로 동사 achieve가 아니라 명사 achievement(성취)를 써야 합니다. ①의 accessible은 형용사로 make의 목적격 보어 자리에 맞게 쓰였습니다. ②의 delivered(배달했다), ③의 preserve(보존하다), ⑤의 distributed(나누어 주었다)도 문맥과 품사가 모두 알맞습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m0s0t0",
+"custom": true
+},
+{
+"id": "fill-b1ad502d2c",
+"typeId": "eng-m3-b02-u3m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 목적으로 가장 적절한 것은?\n\nOne in ten people in the world lives without clean water. In 2006, we started a project to bring clean drinking water to people in developing countries. So far, we have helped over 7 million people. But millions of people are still waiting for our help. Will you give away some of your money for our project? Your small help can change many lives.",
+"choices": [
+"식수 부족 국가의 위치를 안내하려고",
+"깨끗한 물의 중요성을 과학적으로 설명하려고",
+"식수 지원 프로젝트에 대한 기부를 요청하려고",
+"가정에서 물을 절약하는 방법을 소개하려고",
+"개발도상국 여행 상품을 광고하려고"
+],
+"answer": "③",
+"solution": "글 전체가 물이 부족한 사람들을 돕기 위한 프로젝트를 소개하고, 마지막에서 'Will you give away some of your money for our project?'라고 직접 돈을 기부해 달라고 요청하고 있다. 따라서 글의 목적은 기부를 권유하는 것이다. 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-ddcc741992",
+"typeId": "eng-m3-b02-u3m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 주제로 가장 적절한 것은?\n\nDon Schoendorfer built the first one hundred wheelchairs by hand. One of them was given to a 16-year-old girl in India who had lived her whole life in a small room. When she got her wheelchair, she went out by herself for the first time. Working with other like-minded groups, Free Wheelchair Mission has distributed wheelchairs in over 90 countries. Each wheelchair represents a life changed.",
+"choices": [
+"휠체어를 직접 만드는 방법",
+"인도 소녀의 평범한 학교생활",
+"휠체어 기부가 바꾼 사람들의 삶",
+"장애인을 위한 정부의 복지 정책",
+"세계 여러 나라의 교통수단 비교"
+],
+"answer": "③",
+"solution": "손으로 만든 휠체어가 인도 소녀에게 전달되어 그녀가 스스로 밖으로 나가게 된 일과, 90개국 이상에 휠체어를 보급해 'a life changed'를 이뤘다는 내용이 중심이다. 즉 휠체어 기부가 사람들의 삶을 바꾼 이야기가 주제이다. 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-f2312b4504",
+"typeId": "eng-m3-b02-u3m2s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 적절한 것은?\n\nOne in ten people lives without clean water. In 2006, we settled on a plan to provide clean drinking water to people in developing countries. We have built many wells in their villages. So far, we have helped over 7 million people have clean water. Some people burst into tears when they first drank clean water from the well. Each well brings new hope to a village.",
+"choices": [
+"Why We Should Save Water at Home",
+"Bringing Clean Water to the World",
+"The Science of Clean Drinking Water",
+"How to Build a Well by Yourself",
+"A Travel Guide to Developing Countries"
+],
+"answer": "②",
+"solution": "개발도상국 마을에 우물을 지어 깨끗한 식수를 전달하고 700만 명 이상을 도왔다는 내용으로, 전 세계에 깨끗한 물을 전하는 활동이 글의 핵심이다. 따라서 제목으로는 ‘Bringing Clean Water to the World’가 가장 적절하다. 정답은 ②.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u3m2s0t0",
+"custom": true
+},
+{
+"id": "fill-2eb780b8a3",
+"typeId": "eng-m3-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nBrooke's dog, Kayla, felt very sad and nervous every time she was left at home alone. Brooke wanted to stay in touch with Kayla while she was out. One day, while she was video chatting with her friends, she thought, \"Why don't I video chat with Kayla, too?\" Later, she developed this idea with a team of designers and invented a device for lonely dogs.",
+"choices": [
+"How to Train Your Dog",
+"A Device for Lonely Dogs",
+"The Best Snacks for Pets",
+"Video Chatting with Friends",
+"Famous Designers Around the World"
+],
+"answer": "②",
+"solution": "혼자 남으면 불안해하는 개 Kayla를 위해 Brooke가 화상 통화 아이디어를 떠올리고, 디자이너들과 함께 외로운 개를 위한 기기를 발명했다는 내용이다. 따라서 제목은 ② '외로운 개들을 위한 기기'가 알맞다. ④는 아이디어를 떠올린 계기일 뿐 글 전체의 중심 내용이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-968baf6c47",
+"typeId": "eng-m3-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 목적으로 가장 알맞은 것은?\n\nHave you ever had a great idea for a new product? Do you want to share it with others? Come to The World Invention Fair! At the fair, you can put forward your ideas and meet experts who will help turn them into a product concept. Don't miss this chance!",
+"choices": [
+"to sell new products",
+"to invite people to an invention fair",
+"to explain how to become an expert",
+"to complain about an invention fair",
+"to thank people for coming to the fair"
+],
+"answer": "②",
+"solution": "\"Come to The World Invention Fair!\", \"Don't miss this chance!\"처럼 박람회에 오라고 권하는 표현이 핵심이다. 따라서 글의 목적은 ② '사람들을 발명 박람회에 초대하기 위해'이다. 전문가를 만날 수 있다는 것은 박람회의 장점일 뿐이고, 전문가가 되는 방법을 설명하는 글은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-b13d5af9f2",
+"typeId": "eng-m3-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nNecessity is the mother of invention! Brooke's dog got upset whenever she was left alone, so Brooke needed a way to connect with her dog while she was away. One day, she was video chatting with her friends, and an idea flashed across her mind: she could video chat with her dog, too. Her need to help her dog became the starting point of a new invention.",
+"choices": [
+"발명은 전문가만 할 수 있다.",
+"일상 속의 필요가 새로운 발명으로 이어질 수 있다.",
+"반려동물을 집에 혼자 두어서는 절대 안 된다.",
+"친구들과 자주 화상 통화를 하는 것이 좋다.",
+"좋은 아이디어는 오랜 연구를 통해서만 나온다."
+],
+"answer": "②",
+"solution": "첫 문장 'Necessity is the mother of invention!(필요는 발명의 어머니이다)'과 마지막 문장이 글의 요지를 직접 보여 준다. 개를 돕고 싶다는 Brooke의 필요가 발명의 출발점이 되었으므로 ②가 정답이다. 화상 통화는 아이디어를 떠올린 계기일 뿐이므로 ④는 요지가 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m3s0t0",
+"custom": true
+},
+{
+"id": "fill-3c8e60d3fd",
+"typeId": "eng-m3-b02-u5m3s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nKayla, Brooke's dog, suffered from terrible separation anxiety. She became depressed whenever Brooke left her alone at home. While talking with her friends through a video chat, Brooke wondered if she could do the same with Kayla and even give her a snack from far away. She shared this idea at Startup Weekend, an event where people suggest ideas for products and develop them together. Working with a team of designers, she was able to turn her idea into a real device for lonely dogs. Brooke later said that being part of the solution gave her true satisfaction.\n\n<Summary>\nBrooke's story shows that a(n) (A)______ in everyday life can lead to a creative (B)______, especially when people (C)______ with others.",
+"choices": [
+"(A) problem - (B) solution - (C) cooperate",
+"(A) problem - (B) solution - (C) compete",
+"(A) problem - (B) mistake - (C) cooperate",
+"(A) success - (B) solution - (C) cooperate",
+"(A) success - (B) mistake - (C) compete"
+],
+"answer": "①",
+"solution": "Brooke는 개의 분리 불안이라는 일상 속 문제(problem)에서 출발해, 외로운 개를 위한 기기라는 창의적인 해결책(solution)을 만들었다. 이 과정에서 Startup Weekend에서 디자이너 팀과 함께 일했으므로 (C)에는 '협력하다(cooperate)'가 알맞다. 경쟁(compete)이나 실수(mistake)는 글의 내용과 맞지 않고, 출발점은 성공이 아니라 문제였으므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m3-b02-u5m3s0t0",
+"custom": true
 }
 ]
