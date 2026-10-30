@@ -1,113 +1,5 @@
 [
 {
-"id": "fill-92d66f713e",
-"typeId": "eng-h1-b01-u7m4s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 내용과 일치하는 것은?\n\n지구의 기온이 높아지면서 해수면이 상승하고 산불과 홍수 같은 자연재해가 늘고 있다. 인간이 만들어 내는 폐기물도 계속 증가하며, 특히 플라스틱은 토양과 물을 오염시킨다. 이러한 문제를 해결하기는 쉽지 않지만, 자연에서 해결의 실마리를 찾을 수 있다.",
-"choices": [
-"해수면은 지구의 기온이 상승할수록 낮아진다.",
-"플라스틱은 토양 오염과는 관계가 없다.",
-"인간은 자연 파괴의 주요 원인 중 하나이다.",
-"환경 문제는 이미 대부분 해결되었다.",
-"자연은 환경 문제의 해결에 도움을 줄 수 없다."
-],
-"answer": "③",
-"solution": "글에서는 인간이 배출하는 폐기물, 특히 플라스틱이 환경을 오염시킨다고 설명한다. 따라서 인간이 자연 파괴의 주요 원인 중 하나라는 ③이 글의 내용과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
-"custom": true
-},
-{
-"id": "fill-6c575ff073",
-"typeId": "eng-h1-b01-u7m4s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nMealworms contain special bacteria that are able to digest plastic. Researchers are studying how to grow these bacteria separately from the mealworms and make the plastic-breaking process faster.",
-"choices": [
-"How long do adult beetles usually live?",
-"What inside mealworms can break down plastic?",
-"Why do marine animals eat mealworms?",
-"Where was plastic first invented?",
-"How much does it cost to recycle glass?"
-],
-"answer": "②",
-"solution": "글에는 밀웜의 몸속에 플라스틱을 분해할 수 있는 특별한 박테리아가 있다고 제시되어 있다. 따라서 글을 통해 답할 수 있는 질문은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
-"custom": true
-},
-{
-"id": "fill-829603a753",
-"typeId": "eng-h1-b01-u7m4s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 대화에서 추론할 수 있는 것은?\n\nG: This product has a label saying that it uses only natural materials.\nB: That label alone may not show its complete environmental impact.\nG: Do you mean the company might be hiding the greenhouse gases released during production?\nB: Exactly. We should check such information before buying it.",
-"choices": [
-"천연 재료로 만든 제품은 생산 과정에서 온실가스를 전혀 배출하지 않는다.",
-"제품의 친환경 표시만으로 환경에 미치는 전체 영향을 판단하기는 어렵다.",
-"두 사람은 제품의 가격을 가장 중요한 구매 기준으로 생각한다.",
-"회사는 제품 생산 과정에 관한 정보를 모두 공개하고 있다.",
-"두 사람은 환경 관련 정보를 확인할 필요가 없다고 생각한다."
-],
-"answer": "②",
-"solution": "대화에서는 천연 재료를 사용했다는 표시가 제품의 전체 환경 영향을 모두 보여 주지는 않는다고 말한다. 생산 과정에서 배출되는 온실가스가 숨겨질 수도 있으므로 ②를 추론할 수 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
-"custom": true
-},
-{
-"id": "fill-e4459669f4",
-"typeId": "eng-h1-b01-u7m4s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 내용과 일치하지 않는 것은?\n\nRemoving contaminated soil and carrying it to a landfill costs a great deal and merely transfers the pollution elsewhere. Willow trees offer another possibility. Their broad root systems take in various harmful substances, and the trees can grow rapidly even in highly acidic soil or soil containing many heavy metals. Researchers have learned that willow species differ in their ability to absorb pollutants, so further study is required.",
-"choices": [
-"오염된 흙을 매립지로 옮기는 방법은 비용이 많이 든다.",
-"오염된 흙의 이동은 오염 문제의 장소만 바꿀 수 있다.",
-"버드나무의 뿌리는 토양 속 여러 유해 물질을 흡수한다.",
-"모든 버드나무 종은 오염 물질을 흡수하는 능력이 동일하다.",
-"어떤 버드나무가 가장 효과적인지 알아보기 위한 연구가 더 필요하다."
-],
-"answer": "④",
-"solution": "글에서는 버드나무의 종에 따라 오염 물질을 흡수하는 능력이 다르다고 설명한다. 모든 종의 흡수 능력이 같다는 ④는 글의 내용과 일치하지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
-"custom": true
-},
-{
-"id": "fill-b3e3fffc48",
-"typeId": "eng-h1-b01-u7m4s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글을 바탕으로 추론한 내용으로 가장 적절한 것은?\n\nUsed coffee grounds are commonly discarded in landfills, where they may generate a damaging greenhouse gas. Researchers can instead use the grounds to grow algae without supplying extra nutrients. When the algae receive a regular cycle of light and darkness, they produce renewable biofuel that releases relatively few emissions.",
-"choices": [
-"커피 소비를 완전히 중단해야만 온실가스를 줄일 수 있다.",
-"조류를 기르려면 커피 찌꺼기 외에 많은 영양분을 반드시 넣어야 한다.",
-"커피 찌꺼기를 재활용하면 폐기물과 온실가스 문제를 줄이는 데 도움이 될 수 있다.",
-"조류로 만든 바이오 연료는 재생이 불가능한 화석 연료이다.",
-"커피 찌꺼기는 매립지에서 환경에 해로운 물질을 전혀 만들지 않는다."
-],
-"answer": "③",
-"solution": "커피 찌꺼기를 매립하지 않고 조류를 기르는 데 이용하면 재생 가능한 바이오 연료를 생산할 수 있다. 따라서 폐기물의 양과 온실가스 배출을 줄이는 데 도움이 될 수 있다는 ③이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
-"custom": true
-},
-{
-"id": "fill-f7f6a234d2",
-"typeId": "eng-h1-b01-u7m4s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 두 해결책의 차이를 <조건>에 맞게 영어 한 문장으로 요약하시오.\n\n• Algae grown on used coffee grounds can produce renewable biofuel.\n• Willow trees can absorb dangerous substances from contaminated soil.\n\n<조건>\n1. while을 반드시 사용할 것.\n2. 두 해결책의 작용을 모두 포함할 것.\n3. 정확히 15개의 영어 단어로 쓸 것.",
-"selfGrade": true,
-"answer": "Algae turn coffee waste into biofuel, while willow trees remove harmful materials from polluted soil.",
-"solution": "첫 번째 해결책은 커피 폐기물을 바이오 연료로 전환하고, 두 번째 해결책은 오염된 토양에서 유해 물질을 제거한다. 제시된 답은 while로 두 작용을 대조하며, 구두점을 제외하면 정확히 15개의 단어로 이루어져 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
-"custom": true
-},
-{
 "id": "fill-b9d42ab246",
 "typeId": "eng-h1-b01-u3m4s0t0",
 "kind": "객관식",
@@ -3490,5 +3382,119 @@
 "Where do teenagers usually express their anger?",
 "Why do adults have fewer emotions than teenagers?"
 ]
+},
+{
+"id": "fill-92d66f713e",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nAs global temperatures rise, sea levels are increasing, and natural disasters such as wildfires and floods are becoming more frequent. In addition, the amount of waste produced by humans continues to grow. Plastic waste, in particular, pollutes both soil and water. Although these environmental problems are difficult to solve, nature may provide useful clues to possible solutions.",
+"answer": "③",
+"solution": "정답은 ③이다. 지문의 'Plastic waste, in particular, pollutes both soil and water.'에서 플라스틱 폐기물이 토양과 물을 모두 오염시킨다는 사실을 직접 확인할 수 있다. ①은 해수면이 상승한다는 내용과 반대이고, ②는 산불과 홍수가 더 빈번해진다는 내용과 반대이다. ④는 인간이 배출하는 폐기물의 양이 계속 증가한다는 내용과 반대이다. ⑤는 자연이 해결의 실마리를 제공할 수 있다는 가능성을 이미 대부분 해결했다는 확정적 사실로 바꾸었으므로 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Global temperatures are rising, but sea levels are gradually falling.",
+"Wildfires and floods are becoming less frequent as temperatures increase.",
+"Plastic waste is responsible for polluting both soil and water.",
+"The amount of waste produced by humans has recently begun to decrease.",
+"Scientists have already solved most environmental problems by studying nature."
+]
+},
+{
+"id": "fill-6c575ff073",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 답할 수 있는 질문은?\n\nMealworms contain special bacteria that are able to digest plastic. Researchers are studying how to grow these bacteria separately from the mealworms and make the plastic-breaking process faster.",
+"answer": "②",
+"solution": "정답은 ②이다. 첫 번째 문장의 'Mealworms contain special bacteria that are able to digest plastic.'에서 밀웜 내부의 특별한 박테리아가 플라스틱을 분해할 수 있다는 사실을 확인할 수 있다. 따라서 플라스틱 분해를 가능하게 하는 밀웜 내부의 요소가 무엇인지 묻는 ②에 답할 수 있다. ①은 하루 분해량, ③은 박테리아 배양 시간, ④는 플라스틱 종류별 분해 효율, ⑤는 최적 분해 온도를 묻는다. 이러한 구체적인 정보는 지문에 제시되어 있지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"How much plastic can a single mealworm digest each day?",
+"What inside mealworms enables them to break down plastic?",
+"How long does it take researchers to grow these bacteria?",
+"Which types of plastic can these bacteria digest most efficiently?",
+"At what temperature do these bacteria break down plastic fastest?"
+]
+},
+{
+"id": "fill-829603a753",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화에서 추론할 수 있는 내용으로 가장 적절한 것은?\n\nG: This product has a label saying that it uses only natural materials.\nB: That label alone may not show its complete environmental impact.\nG: Do you mean the company might be hiding the greenhouse gases released during production?\nB: Exactly. We should check such information before buying it.",
+"answer": "②",
+"solution": "정답은 ②이다. B는 천연 재료만 사용했다는 표시가 제품의 전체 환경 영향을 보여 주지는 않을 수 있다고 지적한다. 이어 G가 생산 과정에서 배출되는 온실가스 정보가 숨겨질 가능성을 언급하자 B는 이에 동의하며 구매 전 관련 정보를 확인해야 한다고 말한다. 따라서 친환경 표시 외에도 생산 과정의 환경 영향을 살펴보아야 한다는 ②가 적절하다. ①은 B의 주장과 반대이고, ③은 대화에 언급되지 않은 가격을 판단 기준으로 제시한다. ④는 온실가스가 배출되는 과정을 임의로 한정하며, ⑤는 서로 다른 환경 정보를 대체 관계로 해석하므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"천연 재료의 사용 여부만 확인하면 제품의 환경 영향을 충분히 평가할 수 있다.",
+"친환경 표시가 있는 제품도 생산 과정의 환경 영향을 추가로 살펴볼 필요가 있다.",
+"제품에 표시된 재료의 종류보다 제품의 판매 가격을 먼저 확인해야 한다.",
+"천연 재료로 만든 제품은 일반적으로 재료의 생산 과정에서만 온실가스를 배출한다.",
+"기업이 온실가스 배출 정보를 제공하면 제품의 친환경 표시를 확인할 필요가 없어진다."
+]
+},
+{
+"id": "fill-e4459669f4",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nRemoving contaminated soil and carrying it to a landfill costs a great deal and merely transfers the pollution elsewhere. Willow trees offer another possibility. Their broad root systems take in various harmful substances, and the trees can grow rapidly even in highly acidic soil or soil containing many heavy metals. Researchers have learned that willow species differ in their ability to absorb pollutants, so further study is required.",
+"answer": "④",
+"solution": "정답은 ④이다. 지문에서는 버드나무가 산성도가 매우 높은 토양이나 중금속이 많이 포함된 토양에서도 빠르게 자랄 수 있다고 설명한다. 그러나 토양의 산성도가 높아질수록 오염 물질을 흡수하는 능력이 뛰어나진다는 관계는 제시하지 않았다. 즉, 불리한 토양 환경에서도 성장할 수 있다는 사실과 산성도가 높을수록 정화 능력이 향상된다는 주장은 구별해야 한다. ①은 처리 비용이 많이 든다는 내용, ②는 오염 장소만 옮긴다는 내용, ③은 넓은 뿌리 체계가 유해 물질을 흡수한다는 내용과 일치한다. ⑤ 역시 종마다 흡수 능력이 달라 추가 연구가 필요하다는 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"오염된 토양을 매립지로 옮기는 방식은 상당한 비용을 발생시킨다.",
+"오염된 토양을 다른 장소로 옮겨도 오염 자체가 사라지는 것은 아니다.",
+"버드나무는 뿌리를 통해 토양에 포함된 다양한 유해 물질을 흡수할 수 있다.",
+"버드나무의 오염 물질 흡수 능력은 토양의 산성도가 높을수록 뛰어난 것으로 확인되었다.",
+"버드나무의 종에 따라 오염 물질 흡수 능력에 차이가 있어 추가 연구가 필요하다."
+]
+},
+{
+"id": "fill-b3e3fffc48",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 바탕으로 추론한 내용으로 가장 적절한 것은?\n\nUsed coffee grounds are commonly discarded in landfills, where they may generate a damaging greenhouse gas. Researchers can instead use the grounds to grow algae without supplying extra nutrients. When the algae receive a regular cycle of light and darkness, they produce renewable biofuel that releases relatively few emissions.",
+"answer": "③",
+"solution": "정답은 ③이다. 지문은 커피 찌꺼기를 매립하면 유해한 온실가스가 발생할 수 있지만, 이를 조류 배양에 활용하면 추가 영양분 없이 조류를 기르고 배출량이 상대적으로 적은 재생 가능한 바이오 연료를 생산할 수 있다고 설명한다. 따라서 커피 찌꺼기를 재활용하면 매립 폐기물을 줄이고 온실가스 배출을 완화하는 데 도움이 될 수 있다고 추론할 수 있다. ①은 매립과 조류 배양의 관계를 잘못 연결하였고, ②는 규칙적인 명암 주기가 필요하다는 내용을 빛의 지속적인 증가로 바꾸었다. ④는 상대적으로 배출량이 적다는 사실을 배출량이 없다는 의미로 확대하였다. ⑤는 매립 과정에서 온실가스가 발생하는 것이 조류 배양의 선행 조건인 것처럼 잘못 해석하였다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"커피 찌꺼기를 매립하면 조류를 재배하는 데 필요한 영양분을 얻을 수 있다.",
+"조류를 이용한 바이오 연료 생산은 빛의 공급량을 지속적으로 늘릴수록 효과적이다.",
+"커피 찌꺼기를 조류 배양에 활용하면 폐기물 처리와 온실가스 배출 문제를 함께 완화할 수 있다.",
+"커피 찌꺼기에서 생산한 바이오 연료는 기존 연료와 달리 온실가스를 배출하지 않는다.",
+"조류 배양에 커피 찌꺼기를 활용하려면 매립지에서 먼저 온실가스를 발생시켜야 한다."
+]
+},
+{
+"id": "fill-f7f6a234d2",
+"typeId": "eng-h1-b01-u7m4s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 환경 문제 해결 방법을 비교하여 <조건>에 맞게 영어 한 문장으로 요약하시오.\n\n(A) Algae grown on used coffee grounds can produce renewable biofuel.\n(B) Willow trees can absorb dangerous substances from contaminated soil.\n\n<조건>\n1. 접속사 while을 사용하여 두 방법의 차이를 나타낼 것.\n2. 커피 찌꺼기를 활용한 바이오 연료 생산과 버드나무의 토양 정화 작용을 모두 포함할 것.\n3. 정확히 15개의 영어 단어로 작성할 것.\n4. 문법적으로 완전한 한 문장으로 작성할 것. 단어 수를 셀 때 구두점은 제외할 것.",
+"answer": "Algae turn coffee waste into biofuel, while willow trees remove harmful materials from polluted soil.",
+"solution": "첫 번째 방법은 커피 찌꺼기를 이용해 조류를 배양하고 재생 가능한 바이오 연료를 생산하는 것이며, 두 번째 방법은 버드나무가 오염된 토양에서 유해 물질을 흡수하는 것이다. 두 방법의 작용을 대조하기 위해 while을 사용한다. 모범답안은 'Algae(1) turn(2) coffee(3) waste(4) into(5) biofuel(6), while(7) willow(8) trees(9) remove(10) harmful(11) materials(12) from(13) polluted(14) soil(15).'로 정확히 15단어이다. 두 절 모두 주어와 동사를 갖춘 완전한 구조이고, while은 두 해결 방법을 대조하는 접속사로 쓰였다. 채점 시 모범답안과 표현이 달라도 네 가지 조건을 모두 충족하고 의미와 문법이 정확하면 정답으로 인정한다. 예를 들어 'Algae produce biofuel using coffee grounds, while willow trees absorb harmful substances from contaminated soil.' 역시 15단어이므로 정답으로 인정할 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b01-u7m4s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
 }
 ]

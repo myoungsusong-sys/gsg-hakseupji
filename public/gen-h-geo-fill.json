@@ -9254,5 +9254,87 @@
 "twinGroup": "tw-19609",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-c04cde93c1",
+"typeId": "19622",
+"kind": "객관식",
+"diff": 2,
+"body": "서로 평행하지 않은 두 벡터 $\\vec a$, $\\vec b$와 벡터 $\\vec x$가\n$3\\{2\\vec x-(\\vec a-2\\vec b)\\}-2\\{\\vec x+3(\\vec a+\\vec b)\\}=5\\vec a-4\\vec b$\n를 만족시킨다. $\\vec x=m\\vec a+n\\vec b$일 때, $m-2n$의 값은? (단, $m$, $n$은 실수이다.)",
+"choices": [
+"$\\dfrac{3}{2}$",
+"$\\dfrac{5}{2}$",
+"$\\dfrac{7}{2}$",
+"$\\dfrac{9}{2}$",
+"$\\dfrac{11}{2}$"
+],
+"answer": "⑤",
+"solution": "주어진 식의 좌변을 전개하면 $6\\vec x-3\\vec a+6\\vec b-2\\vec x-6\\vec a-6\\vec b=4\\vec x-9\\vec a$이다. 따라서 $4\\vec x=14\\vec a-4\\vec b$이므로 $\\vec x=\\dfrac{7}{2}\\vec a-\\vec b$이다. 두 벡터 $\\vec a$, $\\vec b$가 서로 평행하지 않으므로 $m=\\dfrac{7}{2}$, $n=-1$이다. 그러므로 $m-2n=\\dfrac{7}{2}+2=\\dfrac{11}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19622",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-be5930421f",
+"typeId": "19622",
+"kind": "주관식",
+"diff": 2,
+"body": "두 벡터 $\\vec a$, $\\vec b$에 대하여 두 벡터 $\\vec x$, $\\vec y$가\n$2(\\vec x-\\vec y)+\\vec y=3\\vec a-2\\vec b$,\n$\\vec x+2(\\vec y-\\vec x)=-\\vec a+4\\vec b$\n를 만족시킨다. $3\\vec x-2\\vec y$를 $\\vec a$, $\\vec b$로 나타내시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{13}{3}\\vec a-4\\vec b$",
+"solution": "두 식을 정리하면 $2\\vec x-\\vec y=3\\vec a-2\\vec b$, $-\\vec x+2\\vec y=-\\vec a+4\\vec b$이다. 첫 번째 식의 $2$배에 두 번째 식을 더하면 $3\\vec x=5\\vec a$이므로 $\\vec x=\\dfrac{5}{3}\\vec a$이다. 이를 첫 번째 식에 대입하면 $\\vec y=2\\vec x-3\\vec a+2\\vec b=\\dfrac{1}{3}\\vec a+2\\vec b$이다. 따라서 $3\\vec x-2\\vec y=5\\vec a-\\dfrac{2}{3}\\vec a-4\\vec b=\\dfrac{13}{3}\\vec a-4\\vec b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19622",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-bb6ed8cb1e",
+"typeId": "19622",
+"kind": "주관식",
+"diff": 3,
+"body": "서로 평행하지 않은 두 벡터 $\\vec a$, $\\vec b$에 대하여 실수 $t$와 벡터 $\\vec x$가\n$(t-1)\\vec x+2\\{\\vec a-t(\\vec x-\\vec b)\\}=3\\vec x+(t+1)\\vec a+(t^2-1)\\vec b$\n를 만족시킨다. $\\vec x=m\\vec a+n\\vec b$로 나타낼 때, $m-n=1$이 되도록 하는 모든 실수 $t$의 값을 구하시오. (단, $m$, $n$은 실수이다.)",
+"selfGrade": true,
+"answer": "$t=2-2\\sqrt{2},\\ 2+2\\sqrt{2}$",
+"solution": "주어진 식을 전개하여 정리하면 $(t+4)\\vec x=(1-t)\\vec a+(-t^2+2t+1)\\vec b$이다. $t=-4$이면 $\\vec 0=5\\vec a-23\\vec b$가 되어 두 벡터가 서로 평행하지 않다는 조건에 모순이다. 따라서 $t\\ne-4$이고, $\\vec x=\\dfrac{1-t}{t+4}\\vec a+\\dfrac{-t^2+2t+1}{t+4}\\vec b$이다. 두 벡터 $\\vec a$, $\\vec b$가 서로 평행하지 않으므로 $m=\\dfrac{1-t}{t+4}$, $n=\\dfrac{-t^2+2t+1}{t+4}$이다. 따라서 $m-n=1$에서 $\\dfrac{t^2-3t}{t+4}=1$, 즉 $t^2-4t-4=0$을 얻는다. 이를 풀면 $t=2\\pm2\\sqrt{2}$이다. 두 값은 모두 $-4$와 다르고, 각각 위 식으로 정한 $\\vec x$가 주어진 조건을 만족시킨다.",
+"source": "유사 문항",
+"twinGroup": "tw-19622",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e3f3b8c4df",
+"typeId": "19622",
+"kind": "객관식",
+"diff": 4,
+"body": "서로 평행하지 않은 두 벡터 $\\vec a$, $\\vec b$와 실수 $t$에 대하여 다음 두 식을 만족시키는 벡터의 순서쌍 $(\\vec x,\\vec y)$가 유일하게 존재한다고 한다.\n$(t-1)\\vec x+2\\vec y=(t+1)\\vec a+(t+3)\\vec b$\n$2\\vec x+(t-1)\\vec y=(t-2)\\vec a+4\\vec b$\n이때 $\\vec x$가 $\\vec a$의 실수배가 되도록 하는 모든 실수 $t$의 값의 합은?",
+"choices": [
+"$-6$",
+"$-4$",
+"$-2$",
+"$0$",
+"$2$"
+],
+"answer": "③",
+"solution": "첫 번째 식의 $(t-1)$배에서 두 번째 식의 $2$배를 빼면 $(t-3)(t+1)\\vec x=(t^2-2t+3)\\vec a+(t^2+2t-11)\\vec b$이다. $t=3$이면 원래 두 식의 좌변이 같으므로 $3\\vec a+2\\vec b=\\vec 0$이어야 한다. $t=-1$이면 원래 두 식을 더하여 $-3\\vec a+6\\vec b=\\vec 0$을 얻는다. 두 경우 모두 $\\vec a$, $\\vec b$가 서로 평행하지 않다는 조건에 모순이다. $t\\ne3,-1$이면 위 식에서 $\\vec x$가 유일하게 정해지고, 첫 번째 식에서 $\\vec y$도 유일하게 정해진다. 따라서 $\\vec x=\\dfrac{t^2-2t+3}{(t-3)(t+1)}\\vec a+\\dfrac{t^2+2t-11}{(t-3)(t+1)}\\vec b$이다. 두 벡터가 서로 평행하지 않으므로 $\\vec x$가 $\\vec a$의 실수배일 필요충분조건은 $t^2+2t-11=0$이다. 두 근은 $-1\\pm2\\sqrt{3}$으로 모두 $3$, $-1$과 다르다. 따라서 구하는 합은 $-2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19622",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-963ebbd607",
+"typeId": "19622",
+"kind": "주관식",
+"diff": 3,
+"body": "두 벡터 $\\vec a$, $\\vec b$와 세 벡터 $\\vec x$, $\\vec y$, $\\vec z$에 대하여 모든 실수 $t$에 대하여\n$(t-1)(2\\vec x+t\\vec y)-(t+1)\\{\\vec x+(t-2)\\vec y\\}+(t^2-1)(\\vec z-\\vec x)=(t^2+3t-4)\\vec a+(2t^2+5t+7)\\vec b$\n가 성립한다. $2\\vec x-\\vec y+\\vec z$를 $\\vec a$, $\\vec b$로 나타내시오.",
+"selfGrade": true,
+"answer": "$7\\vec a+5\\vec b$",
+"solution": "좌변을 전개하여 정리하면 $t^2(\\vec z-\\vec x)+t\\vec x-2\\vec x+2\\vec y-\\vec z$이다. 우변은 $t^2(\\vec a+2\\vec b)+t(3\\vec a+5\\vec b)-4\\vec a+7\\vec b$이다. 모든 실수 $t$에 대하여 성립하므로 각 차수의 계수를 비교하면 $\\vec z-\\vec x=\\vec a+2\\vec b$, $\\vec x=3\\vec a+5\\vec b$, $-2\\vec x+2\\vec y-\\vec z=-4\\vec a+7\\vec b$이다. 따라서 $\\vec z=\\vec x+\\vec a+2\\vec b=4\\vec a+7\\vec b$이다. 또한 $2\\vec y=2\\vec x+\\vec z-4\\vec a+7\\vec b=6\\vec a+24\\vec b$이므로 $\\vec y=3\\vec a+12\\vec b$이다. 그러므로 $2\\vec x-\\vec y+\\vec z=(6-3+4)\\vec a+(10-12+7)\\vec b=7\\vec a+5\\vec b$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19622",
+"custom": true,
+"rv": 1
 }
 ]

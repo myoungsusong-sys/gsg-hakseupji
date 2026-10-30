@@ -3974,5 +3974,107 @@
 "twinGroup": "tw-20513",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-fb7b4b5216",
+"typeId": "20519",
+"kind": "객관식",
+"diff": 1,
+"body": "한 모서리의 길이가 $7$인 정육면체에서 아래쪽 면은 정사각형 $ABCD$이고, 꼭짓점 $A$의 바로 위에 있는 꼭짓점은 $E$이다. $\\angle ABE=x$일 때, $\\sin x$의 값은?",
+"choices": [
+"$\\dfrac{1}{2}$",
+"$\\dfrac{\\sqrt{3}}{3}$",
+"$\\dfrac{\\sqrt{2}}{2}$",
+"$\\dfrac{\\sqrt{3}}{2}$",
+"$1$"
+],
+"answer": "③",
+"solution": "삼각형 $ABE$는 $\\angle BAE=90^\\circ$이고 $AB=AE=7$인 직각이등변삼각형이다. 따라서 $x=45^\\circ$이므로 $\\sin x=\\dfrac{\\sqrt{2}}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20519",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7bdf8cb120",
+"typeId": "20519",
+"kind": "주관식",
+"diff": 2,
+"body": "직육면체의 아래쪽 면은 직사각형 $ABCD$이고, 꼭짓점 $A$의 바로 위에 있는 꼭짓점은 $E$이다. $AB=8$, $AE=6$이고 $\\angle ABE=x$일 때, $\\cos x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{4}{5}$",
+"solution": "모서리 $AE$는 밑면에 수직이므로 $\\angle BAE=90^\\circ$이다. 직각삼각형 $ABE$에서 피타고라스 정리에 의해 $BE=\\sqrt{8^2+6^2}=10$이다. 따라서 $\\cos x=\\dfrac{AB}{BE}=\\dfrac{8}{10}=\\dfrac{4}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20519",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-75f7068fa8",
+"typeId": "20519",
+"kind": "객관식",
+"diff": 1,
+"body": "직육면체의 아래쪽 면은 직사각형 $ABCD$이고, 꼭짓점 $A$의 바로 위에 있는 꼭짓점은 $E$이다. $AB=12$, $AE=5$이고 $\\angle ABE=x$일 때, $\\tan x$의 값은?",
+"choices": [
+"$\\dfrac{5}{13}$",
+"$\\dfrac{5}{12}$",
+"$\\dfrac{12}{13}$",
+"$\\dfrac{12}{5}$",
+"$\\dfrac{13}{5}$"
+],
+"answer": "②",
+"solution": "삼각형 $ABE$에서 $\\angle BAE=90^\\circ$이다. 따라서 $\\tan x=\\dfrac{AE}{AB}=\\dfrac{5}{12}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20519",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-dc9f2db285",
+"typeId": "20519",
+"kind": "주관식",
+"diff": 2,
+"body": "직육면체의 아래쪽 면은 직사각형 $ABCD$이고, 꼭짓점 $A$의 바로 위에 있는 꼭짓점은 $E$이다. $AB=6$, $BC=8$, $AE=5$이고 $\\angle ECA=x$일 때, $\\sin x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{\\sqrt{5}}{5}$",
+"solution": "밑면의 대각선의 길이는 $AC=\\sqrt{6^2+8^2}=10$이다. $AE$는 밑면에 수직이므로 삼각형 $ACE$는 $A$에서 직각이고, $CE=\\sqrt{10^2+5^2}=5\\sqrt{5}$이다. 따라서 $\\sin x=\\dfrac{AE}{CE}=\\dfrac{\\sqrt{5}}{5}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20519",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-859c822f2a",
+"typeId": "20519",
+"kind": "객관식",
+"diff": 2,
+"body": "직육면체의 아래쪽 면은 직사각형 $ABCD$이고, 꼭짓점 $A$의 바로 위에 있는 꼭짓점은 $E$이다. $AB=3$, $BC=4$, $AE=12$이고 $\\angle ECA=x$일 때, $\\cos x$의 값은?",
+"choices": [
+"$\\dfrac{3}{13}$",
+"$\\dfrac{4}{13}$",
+"$\\dfrac{5}{12}$",
+"$\\dfrac{12}{13}$",
+"$\\dfrac{5}{13}$"
+],
+"answer": "⑤",
+"solution": "밑면에서 $AC=\\sqrt{3^2+4^2}=5$이다. 삼각형 $ACE$는 $A$에서 직각이므로 $CE=\\sqrt{5^2+12^2}=13$이다. 따라서 $\\cos x=\\dfrac{AC}{CE}=\\dfrac{5}{13}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20519",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e58d9323f2",
+"typeId": "20519",
+"kind": "주관식",
+"diff": 2,
+"body": "한 모서리의 길이가 $4$인 정육면체에서 아래쪽 면은 정사각형 $ABCD$이고, 꼭짓점 $A$의 바로 위에 있는 꼭짓점은 $E$이다. $\\angle ECA=x$일 때, $\\tan x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{\\sqrt{2}}{2}$",
+"solution": "밑면의 대각선의 길이는 $AC=\\sqrt{4^2+4^2}=4\\sqrt{2}$이다. $AE$는 밑면에 수직이므로 삼각형 $ACE$는 $A$에서 직각이다. 따라서 $\\tan x=\\dfrac{AE}{AC}=\\dfrac{4}{4\\sqrt{2}}=\\dfrac{\\sqrt{2}}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20519",
+"custom": true,
+"rv": 1
 }
 ]
