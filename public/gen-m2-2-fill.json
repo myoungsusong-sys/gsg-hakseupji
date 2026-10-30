@@ -3327,5 +3327,19 @@
 "twinGroup": "tw-18791",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-1e600b197f",
+"typeId": "18769",
+"kind": "주관식",
+"diff": 4,
+"body": "볼록사각형 $ABCD$의 두 대각선 $AC$, $BD$가 점 $O$에서 수직으로 만난다. $AO:OC=2:1$, $BO:OD=3:2$이고, 변 $AB$, $CD$의 중점을 각각 $M$, $N$이라 하자. $MN=\\sqrt{61}\\,\\mathrm{cm}$, $AB^2-CD^2=68\\,\\mathrm{cm}^2$일 때, 삼각형 $AMN$의 넓이를 구하시오.",
+"selfGrade": true,
+"answer": "$19\\,\\mathrm{cm}^2$",
+"solution": "길이의 단위를 $\\mathrm{cm}$로 놓고 $AO=2x$, $OC=x$, $BO=3y$, $OD=2y$라 하자. 이때 $x>0$, $y>0$이다. 피타고라스 정리에 의해 $AB^2=4x^2+9y^2$, $CD^2=x^2+4y^2$이므로 $3x^2+5y^2=68$이다. …… ㉠\n$M$, $N$에서 직선 $AC$에 내린 수선의 발을 각각 $P$, $Q$라 하자. 삼각형 $AOB$, $COD$에서 중점 연결 정리에 의해 $P$, $Q$는 각각 $AO$, $CO$의 중점이고, $MP=\\frac{3y}{2}$, $NQ=y$이다. 따라서 $PQ=x+\\frac{x}{2}=\\frac{3x}{2}$이다. $M$, $N$은 직선 $AC$의 서로 다른 쪽에 있으므로 피타고라스 정리에 의해 $MN^2=\\left(\\frac{3x}{2}\\right)^2+\\left(\\frac{5y}{2}\\right)^2=61$, 즉 $9x^2+25y^2=244$이다. …… ㉡\n㉡에서 ㉠의 양변에 $3$을 곱한 식을 빼면 $10y^2=40$이므로 $y^2=4$이다. 이를 ㉠에 대입하면 $x^2=16$이다. $x>0$, $y>0$이므로 $x=4$, $y=2$이다. 따라서 $AO=8$, $AC=12$, $BO=6$, $BD=10$이다.\n삼각형 $XYZ$의 넓이를 $[XYZ]$라 하자. $M$이 $AB$의 중점이므로 $[AMC]=\\frac12[ABC]=\\frac12\\times\\frac12\\times12\\times6=18$이고, $[AMD]=\\frac12[ABD]=\\frac12\\times\\frac12\\times10\\times8=20$이다.\n볼록사각형이므로 $C$, $D$는 직선 $AM$의 같은 쪽에 있다. $N$이 $CD$의 중점이므로 직선 $AM$에 대한 $N$의 높이는 $C$, $D$의 높이의 평균이다. 따라서 $[AMN]=\\frac{[AMC]+[AMD]}2=\\frac{18+20}{2}=19\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18769",
+"custom": true,
+"rv": 1
 }
 ]

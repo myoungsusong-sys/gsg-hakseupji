@@ -375,877 +375,6 @@
 "custom": true
 },
 {
-"id": "fill-71ecd65f2e",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 2,
-"body": "글의 내용이 자연스럽게 이어지도록 주어진 문장을 넣을 위치를 고르시오.\n\n[주어진 문장]\nThe yellow and orange colors that had been covered by it can then be seen clearly.\n\nThe colorful leaves of autumn are produced in more than one way. (가) In spring and summer, leaves contain large amounts of chlorophyll, which allows plants to make food using sunlight. (나) This green pigment is so abundant that it covers the yellow and orange pigments already present in the leaves. (다) When autumn brings shorter and cooler days, trees stop making chlorophyll, and the green color fades. (라) Red leaves develop differently because some trees produce new red pigments during autumn. (마) Since the production of these pigments is affected by the weather, the strength of the red color varies from year to year.",
-"choices": [
-"① (가)",
-"② (나)",
-"③ (다)",
-"④ (라)",
-"⑤ (마)"
-],
-"answer": "④",
-"solution": "주어진 문장의 it은 바로 앞에서 사라진 chlorophyll을 가리킨다. 엽록소가 줄어든 결과 기존의 노란색과 주황색이 드러난다는 내용이므로 (라)에 들어가야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-d3d70a6b1e",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 논리적 흐름을 고려할 때, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThat same explanation, however, also tells a person in need how to make help more likely.\n\nA person facing an emergency in a busy place may expect a large crowd to provide greater safety. (가) Research on the bystander effect shows that the opposite can happen. (나) In an experiment, people who thought they alone had heard an emergency offered help more often than those who believed several others had heard it as well. (다) When many people are present, responsibility is divided among them, and each person may expect someone else to act. (라) A person who needs assistance should therefore select one individual from the crowd and ask that person directly. (마) A direct request makes the selected individual feel personally responsible instead of leaving the duty to the group.",
-"choices": [
-"① (가)",
-"② (나)",
-"③ (다)",
-"④ (라)",
-"⑤ (마)"
-],
-"answer": "④",
-"solution": "주어진 문장의 That same explanation은 앞에서 설명한 책임 분산을 가리킨다. 또한 however를 통해 현상의 부정적인 원리에서 도움을 받을 수 있는 실용적인 방법으로 전환하므로 (라)가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-e8131be023",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "문맥상 주어진 문장이 들어가야 할 위치로 가장 적절한 것을 고르시오.\n\n[주어진 문장]\nThis later behavior could not be explained by a lack of interest at the beginning, since every child had already enjoyed the activity.\n\nRewards are commonly expected to strengthen motivation, but they may have the opposite effect on an activity that is already enjoyable. (가) Researchers studied preschool children who liked drawing with colored markers. (나) Some children were promised a certificate for drawing, whereas the others were offered no reward. (다) When the markers were made available again several days later, the children who had expected the certificate chose to draw much less often on their own. (라) The researchers concluded that the promised reward had changed the meaning of drawing from an enjoyable activity into work performed for a prize. (마) This reduction of natural interest following an external reward is known as the overjustification effect.",
-"choices": [
-"① (가)",
-"② (나)",
-"③ (다)",
-"④ (라)",
-"⑤ (마)"
-],
-"answer": "④",
-"solution": "This later behavior는 보상을 기대했던 아이들이 나중에 자발적으로 그림을 덜 그린 행동을 가리킨다. 주어진 문장은 그 결과가 원래의 흥미 부족 때문이 아님을 밝힌 뒤 연구진의 해석으로 이어지므로 (라)가 가장 자연스럽다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-332f4cd761",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "주어진 문장이 글의 흐름에 가장 자연스럽게 연결되는 곳은?\n\n[주어진 문장]\nBy that point, what had been introduced as a solution had itself become a widespread problem.\n\nA species moved into a new environment may encounter conditions very different from those in its original home. (가) In its native environment, predators, diseases, and competitors prevent its population from growing without limit. (나) If these natural controls are absent in the new environment, however, the species can multiply rapidly. (다) Cane toads were taken to Australia to eat beetles that were harming sugar cane crops. (라) The toads did little to control the beetles, and without natural enemies, they increased in number and spread across a large part of northern Australia. (마) The damage became even more serious because their poisonous skin killed many native animals that attempted to eat them.",
-"choices": [
-"① (가)",
-"② (나)",
-"③ (다)",
-"④ (라)",
-"⑤ (마)"
-],
-"answer": "⑤",
-"solution": "By that point는 두꺼비가 해충을 제대로 줄이지 못한 채 널리 퍼진 시점까지의 내용을 받아야 한다. 주어진 문장으로 두꺼비가 새로운 문제 자체가 되었음을 정리한 뒤 독성으로 인한 추가 피해를 제시하는 (마)가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-0bed2fd217",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "글의 세부적인 연결 관계를 고려하여 주어진 문장이 들어갈 최적의 위치를 고르시오.\n\n[주어진 문장]\nBecause only one side possessed this extra information, any estimate made from that side's viewpoint was likely to be distorted.\n\nOnce people know something, they often find it difficult to reconstruct the experience of someone who does not know it. (가) This is one reason experts may struggle to explain familiar ideas to beginners. In a well-known experiment, some participants tapped the rhythms of familiar songs while others tried to identify them. (나) As they tapped, the first group automatically heard the missing melodies in their minds. (다) The listeners, by contrast, received no melody and heard only separate knocks on a table. (라) The tappers expected the listeners to recognize about half of the songs, but the listeners actually identified only a very small proportion. (마) The large gap between the prediction and the result illustrates the curse of knowledge.",
-"choices": [
-"① (가)",
-"② (나)",
-"③ (다)",
-"④ (라)",
-"⑤ (마)"
-],
-"answer": "④",
-"solution": "this extra information은 두드리는 사람들이 머릿속에서 들은 멜로디를 뜻하며, only one side는 그들과 단순한 소리만 들은 청자들의 대조를 전제로 한다. 따라서 두 집단의 경험이 모두 제시된 뒤, 두드린 사람들의 잘못된 예측이 나오기 직전인 (라)가 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-67f11b2e22",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 주어진 문장을 글에 삽입할 때 문맥이 가장 긴밀해지는 위치는?\n\n[주어진 문장]\nThe later decline must therefore be understood in light of the fact that the children's original interest had already been established.\n\nAn external reward does not affect every activity in the same way. (가) In an experiment involving drawing, researchers selected children who already spent time using colored markers for enjoyment. (나) One group was told beforehand that drawing would earn a certificate, while another group drew without being offered one. (다) When the markers appeared again later with no reward being offered, the children who had expected the certificate spent less time drawing freely. (라) The promised prize seemed to have replaced enjoyment with an external reason for taking part. (마) This is why the finding supports the overjustification effect rather than the general claim that rewards always reduce motivation.",
-"choices": [
-"① (가)",
-"② (나)",
-"③ (다)",
-"④ (라)",
-"⑤ (마)"
-],
-"answer": "④",
-"solution": "The later decline은 보상을 기대했던 아이들이 나중에 자유롭게 그림을 그린 시간이 감소한 결과를 가리킨다. 주어진 문장은 이 감소를 아이들의 기존 흥미와 연결해 해석해야 한다고 강조하며, 이어지는 외적 동기로의 변화에 대한 설명을 준비한다. 따라서 (라)가 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-8f43453469",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 내용에 근거하여 판단할 수 없는 것은?\n\nFor a sea otter, a rock can be a useful tool at mealtime. Floating on its back, the animal puts a rock on its chest and uses it to break open hard shells. A rock that works well may be kept in a pocket of skin under its arm for later use. However, tools are not the only interesting part of its daily life. A sea otter also spends hours caring for its fur. Unlike many other sea mammals, it lacks a thick layer of fat for warmth. Its thick fur holds air and protects its skin from cold water. Keeping this fur clean helps it do its job.",
-"choices": [
-"해달이 몸에 보관하는 돌은 이후의 식사에도 쓰일 수 있다.",
-"해달의 털 손질은 차가운 물로부터 몸을 보호하는 데 도움이 된다.",
-"해달은 먹이의 껍데기를 깨는 동안 물 위에 등을 대고 떠 있을 수 있다.",
-"해달은 털 사이의 공기를 없애기 위해 오랜 시간 털을 손질한다.",
-"해달에게 돌과 털은 각각 먹이 섭취와 체온 유지에 도움을 준다."
-],
-"answer": "④",
-"solution": "해달의 털은 공기를 가두어 차가운 물로부터 피부를 보호한다. 따라서 털 손질의 목적이 털 사이의 공기를 없애는 것이라는 ④는 추론할 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-6b6921b7a3",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글을 바탕으로 이해한 내용 중 적절하지 않은 것은?\n\nA finished object may feel especially valuable when you have helped make it. This tendency is known as the IKEA effect. Consider putting together a small table at home. After completing it, you may value it more than an identical table that required no work from you. The difference need not come from better materials or a better design. Your own successful effort can change how you feel about the object. Yet spending time on the work is not enough by itself. If you cannot finish the table, the effect may disappear. The feeling of having achieved something, rather than effort alone, seems to be important.",
-"choices": [
-"직접 완성한 탁자를 높이 평가하는 데에는 성취감이 작용할 수 있다.",
-"조립을 끝내지 못해도 시간을 들였다는 이유만으로 탁자의 가치가 반드시 높게 느껴진다.",
-"재료나 디자인이 더 우수하지 않아도 직접 만든 물건이 특별하게 느껴질 수 있다.",
-"동일한 탁자라도 직접 조립했는지에 따라 느끼는 가치가 달라질 수 있다.",
-"노력을 들였다는 사실과 작업을 성공적으로 마쳤다는 사실은 구별할 필요가 있다."
-],
-"answer": "②",
-"solution": "글은 노력만으로는 충분하지 않으며 작업을 완성하지 못하면 IKEA 효과가 사라질 수 있다고 설명한다. 따라서 시간을 들였다는 이유만으로 가치가 반드시 높게 느껴진다는 ②는 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-dcfb12ae0e",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글이 뒷받침하지 않는 판단은?\n\nWhere an item appears in a list can influence how easily you remember it. Early items allow more mental repetition before other items follow. Final items have a different advantage: they may still be fresh in short-term memory when recall begins. Items between these two groups benefit from neither position and are therefore more likely to be forgotten. This pattern suggests a way to organize review. Suppose you always study a set of vocabulary cards in the same order. Some words will repeatedly occupy the less favorable middle positions. Changing the order from time to time may help, as may giving extra attention to the words in the middle. Neither suggestion means that every word will then be remembered.",
-"choices": [
-"같은 순서로 계속 공부하면 특정 단어들이 반복해서 불리한 위치에 놓일 수 있다.",
-"처음 단어와 마지막 단어가 잘 기억되는 데에는 서로 다른 이유가 있다.",
-"복습 순서를 바꾸더라도 모든 단어의 기억이 보장되는 것은 아니다.",
-"중간에 놓인 단어에 복습 시간을 더 배분하는 것은 글의 설명에 부합한다.",
-"순서를 바꾸어 기억이 나아졌다면 모든 단어의 머릿속 반복 횟수가 같아졌다고 볼 수 있다."
-],
-"answer": "⑤",
-"solution": "순서 변경은 특정 단어가 계속 중간 위치에 놓이는 상황을 바꿀 수 있다. 그러나 이것이 모든 단어의 머릿속 반복 횟수를 같게 만든다는 근거는 없으므로 ⑤는 추론할 수 없다. 나머지 선지는 위치별 기억의 이점과 복습 방법에 대한 설명에 부합한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-5461f195a2",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글을 읽고 도출한 결론으로 적절하지 않은 것은?\n\nCity heat comes from several sources that can operate together. Dark roads and roofs take in solar energy and give it back slowly as heat. Meanwhile, vehicles, factories, and air conditioners release additional heat. A lack of plants makes matters worse because less water is released through leaves to cool the air. These explanations help us understand different ways of reducing urban heat. A white roof reflects sunlight, while trees offer shade and cool the air through their leaves. Roofs covered with plants can also help. Such measures address parts of the problem, but adopting one does not mean that the other sources of heat have stopped operating. Heat stored in urban surfaces can also continue to affect the air after daylight ends.",
-"choices": [
-"흰색 지붕이 햇빛을 반사하기 시작하면 에어컨에서 나오는 열도 함께 감소한다고 볼 수 있다.",
-"낮 동안 표면에 저장된 에너지는 해가 진 뒤에도 도시의 열에 영향을 줄 수 있다.",
-"가로수는 햇빛을 가리는 기능 외에도 잎을 통한 수분 방출로 공기를 식힐 수 있다.",
-"지붕 색을 바꾸는 대책을 시행한 뒤에도 차량이나 공장 때문에 열이 추가될 수 있다.",
-"식물이 적은 도시에서는 표면의 열 흡수뿐 아니라 공기를 식히는 작용의 부족도 문제가 될 수 있다."
-],
-"answer": "①",
-"solution": "흰색 지붕은 햇빛을 반사하여 도시의 열을 줄이는 데 기여하지만, 이것이 에어컨에서 방출되는 열까지 감소시킨다는 설명은 없다. 글은 한 가지 대책을 도입해도 다른 열 발생 원인은 계속 작용할 수 있다고 명시한다. 따라서 서로 다른 열 발생 원인을 직접 연결한 ①은 추론할 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-f827de61e5",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 논리를 적용할 때, 근거가 부족한 판단은?\n\nImagine that you have bought a non-refundable ticket for an evening concert. During the performance, you become disappointed and consider leaving to read at home. The ticket money cannot be recovered under either choice. Staying merely to justify that payment would be an example of the sunk cost fallacy. Still, recognizing this mistake does not automatically tell you to leave. You should compare what the rest of the concert could offer with what you could gain from going home. If the remaining music seems more rewarding than reading, staying can make sense. If reading seems more rewarding, leaving can make sense. A sensible decision depends on the value of the available future experiences, not on making an unrecoverable payment feel worthwhile.",
-"choices": [
-"집에서 독서하는 편이 더 만족스러울 것으로 예상된다면 공연장을 떠나는 선택이 합리적일 수 있다.",
-"같은 자리에 계속 앉아 있더라도 그 선택의 근거에 따라 합리성에 대한 판단이 달라질 수 있다.",
-"공연에 실망한 뒤에도 끝까지 남아 있기로 했다면 매몰 비용의 오류를 범한 것으로 볼 수 있다.",
-"이미 지불한 돈을 아깝지 않게 만들려는 생각만으로 남는 것은 글에서 지적한 오류에 해당한다.",
-"환불받을 수 없는 티켓값은 남은 공연과 귀가 후 독서 중 어느 쪽이 더 가치 있는지를 결정해 주지 못한다."
-],
-"answer": "③",
-"solution": "글은 남은 공연에서 얻을 만족이 독서에서 얻을 만족보다 클 것으로 예상되면 머무르는 선택도 합리적일 수 있다고 설명한다. 따라서 남아 있다는 행동만으로 매몰 비용의 오류를 범했다고 판단할 수 없다. 핵심은 선택의 결과가 아니라 이미 쓴 돈과 앞으로 얻을 가치 중 무엇을 판단 근거로 삼았는지이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-30a2709a59",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글을 근거로 추론하기 어려운 진술만을 <보기>에서 모두 고른 것은?\n\nImprovement after taking a pill does not, by itself, establish that an active ingredient caused the improvement. A placebo contains no active ingredient, yet the expectation of relief can cause the brain to release natural painkillers. The way a treatment is presented can matter as well. Two pills often produce a stronger placebo effect than one, and an injection often produces a stronger effect than pills. Pill color can also influence the response. These observations explain why medicine must be compared with a placebo in testing. In many trials, both patients and doctors are kept unaware of which treatment each patient receives. To count as effective in such a comparison, the medicine must help significantly more than the placebo; improvement within the medicine group alone is insufficient.\n\n<보기>\nㄱ. 유효 성분이 없는 처치를 받고 통증이 줄었다고 해도 그 경험을 상상에 불과하다고 단정할 수 없다.\nㄴ. 알약 두 개가 한 개보다 강한 플라시보 효과를 보였다면, 두 개에 포함된 유효 성분의 총량이 더 많았다고 판단할 수 있다.\nㄷ. 실제 약을 받은 집단의 증상이 호전되었다는 정보만으로는 글에서 제시한 효과 판정 기준의 충족 여부를 알 수 없다.\nㄹ. 플라시보를 받은 집단에 호전이 나타났다면, 실제 약을 받은 집단의 결과와 관계없이 그 약은 효과가 없다고 판단할 수 있다.",
-"choices": [
-"ㄱ, ㄴ",
-"ㄱ, ㄷ",
-"ㄴ, ㄷ",
-"ㄷ, ㄹ",
-"ㄴ, ㄹ"
-],
-"answer": "⑤",
-"solution": "플라시보에는 유효 성분이 없으므로 알약 개수에 따른 효과 차이를 유효 성분 총량으로 설명한 ㄴ은 추론할 수 없다. 약의 효과는 플라시보보다 유의미하게 더 도움이 되는지로 판단하므로, 플라시보 집단의 호전만으로 약의 효과를 부정한 ㄹ도 근거가 부족하다. 기대가 실제 신체 반응을 일으킬 수 있다는 ㄱ과 실제 약 집단의 호전만으로는 충분하지 않다는 ㄷ은 글이 뒷받침한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-c0e782ea2c",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 설명으로 뒷받침되지 않는 진술만을 <보기>에서 모두 고른 것은?\n\nPast effort can influence both our decisions and our feelings about objects, but these influences should be distinguished. The sunk cost fallacy occurs when an unrecoverable investment becomes the reason to continue an activity. Suppose you have spent time assembling a cabinet and must decide whether to work on it for another hour. The time already spent cannot be regained. Whether you should continue depends on the future value of finishing compared with that of other uses of the hour. The IKEA effect concerns a different question: how much you value something you have made. Successful completion can make a self-assembled object feel more valuable than an identical ready-made one, whereas the effect may disappear if the work remains unfinished. Thus, the decision to continue working and the later feeling that the finished object is special require separate explanations.\n\n<보기>\nㄱ. 수납장을 완성한 뒤 애착이 생겼다는 사실만으로, 완성 전에 작업을 계속한 결정이 합리적이었다고 확정할 수 있다.\nㄴ. 남은 한 시간을 다른 일에 쓸 때보다 완성에서 더 큰 가치를 얻을 것으로 판단했다면, 작업을 계속하는 선택은 합리적일 수 있다.\nㄷ. 미완성 수납장에 IKEA 효과가 나타나지 않았다면, 이미 들인 시간을 이유로 작업을 계속하려는 매몰 비용의 오류도 나타날 수 없다.\nㄹ. 동일한 완제품보다 직접 완성한 수납장을 더 소중히 여기더라도, 두 물건의 물리적 품질이 다르다고 결론 내릴 수는 없다.",
-"choices": [
-"ㄱ, ㄴ",
-"ㄴ, ㄷ",
-"ㄱ, ㄷ",
-"ㄱ, ㄹ",
-"ㄷ, ㄹ"
-],
-"answer": "③",
-"solution": "완성 후의 애착은 IKEA 효과로 설명할 수 있지만, 작업을 계속한 결정의 합리성은 당시 앞으로 얻을 가치와 다른 선택의 가치를 비교하여 판단해야 하므로 ㄱ은 뒷받침되지 않는다. 또한 미완성으로 IKEA 효과가 나타나지 않더라도 이미 쓴 시간을 이유로 작업을 계속하는 오류는 발생할 수 있으므로 ㄷ도 추론할 수 없다. ㄴ은 미래 가치에 따른 판단에 해당하고, ㄹ은 동일한 물건에도 서로 다른 주관적 가치를 부여할 수 있다는 설명에 부합한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-0c080f883f",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 뜻으로 가장 적절한 것을 고르시오.\n\nI did not understand the question until my teacher explained it again.",
-"choices": [
-"나는 선생님이 그 질문을 다시 설명하시기 전에 이미 이해했다.",
-"나는 그 질문을 이해했지만 선생님께 다시 설명해 달라고 했다.",
-"나는 선생님이 다시 설명하셨는데도 그 질문을 이해하지 못했다.",
-"나는 선생님이 그 질문을 다시 설명하시고 나서야 이해했다.",
-"나는 그 질문을 이해할 때까지 선생님께 계속 설명했다."
-],
-"answer": "④",
-"solution": "「not ~ until ...」은 ‘…하고 나서야 비로소 ~하다’라는 뜻이다. 따라서 선생님이 질문을 다시 설명한 뒤에야 내가 그 질문을 이해했다는 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-0ee91ccc34",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장이 나타내는 의미를 우리말로 바르게 표현한 것을 고르시오.\n\nThe explanation was too difficult for me to understand.",
-"choices": [
-"그 설명은 내가 이해하기에 너무 어려웠다.",
-"그 설명은 어려웠지만 나는 충분히 이해할 수 있었다.",
-"그 설명은 내가 이해할수록 더 어려워졌다.",
-"나는 그 설명을 이해하기 위해 어려운 내용을 설명했다.",
-"그 설명은 내가 이해할 만큼 충분히 쉬웠다."
-],
-"answer": "①",
-"solution": "「too + 형용사 + to부정사」는 ‘너무 ~해서 …할 수 없다’라는 의미이다. for me는 이해하는 주체가 ‘나’임을 나타내므로, 내가 이해하기에는 설명이 너무 어려웠다는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4d49cc1c22",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 문장의 해석으로 가장 적절한 것을 고르시오.\n\nWhether you can solve the problem depends not on how quickly you read it but on how carefully you think about it.",
-"choices": [
-"네가 그 문제를 얼마나 빨리 읽을 수 있는지는 얼마나 신중하게 답을 쓰느냐에 달려 있다.",
-"네가 그 문제를 풀 수 있는지는 얼마나 신중하게 생각하느냐보다 얼마나 빨리 읽느냐에 달려 있다.",
-"네가 그 문제를 풀 수 있는지는 얼마나 빨리 읽느냐가 아니라 얼마나 신중하게 생각하느냐에 달려 있다.",
-"네가 그 문제를 풀 수 있든 없든 빠르게 읽고 신중하게 생각하는 것은 똑같이 중요하다.",
-"네가 그 문제를 신중하게 생각할 수 있는지는 그 문제를 이미 풀었는지에 달려 있다."
-],
-"answer": "③",
-"solution": "Whether가 이끄는 절은 문장의 주어로, ‘네가 그 문제를 풀 수 있는지’를 뜻한다. 「not A but B」는 ‘A가 아니라 B’이므로, 문제 해결 여부를 결정하는 것은 읽는 속도가 아니라 생각하는 신중함이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-becfc9cb45",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 문장의 구조와 의미를 모두 바르게 반영한 해석을 고르시오.\n\nWritten in simple English, the book is not as difficult to understand as its title suggests.",
-"choices": [
-"쉬운 영어로 쓰인 그 책은 제목에서 짐작되는 것보다 이해하기가 더 어렵다.",
-"쉬운 영어로 쓰인 그 책은 제목에서 짐작되는 것만큼 이해하기 어렵지는 않다.",
-"그 책의 제목은 쉬운 영어로 쓰여 있지만 책의 내용만큼 이해하기 어렵다.",
-"그 책을 쉬운 영어로 쓰고 나면 제목이 암시하는 어려움을 이해할 수 있다.",
-"쉬운 영어로 쓰인 그 책은 이해하기 어렵지 않다는 점을 제목에서 분명히 밝히고 있다."
-],
-"answer": "②",
-"solution": "Written in simple English는 주어인 the book을 설명하며 ‘쉬운 영어로 쓰인’이라는 수동의 의미를 나타낸다. 「not as difficult ~ as ...」는 ‘…만큼 어렵지는 않은’이라는 뜻이다. its title suggests는 제목을 보고 짐작하게 되는 난이도를 나타내므로 ②가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-93b043973c",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "〈자료〉의 영어 문장과 해석을 검토한 결과, 수정할 필요가 없는 항목을 모두 포함한 것을 고르시오.\n\n〈자료〉\nㄱ. Not until I tried to explain the problem did I realize how little I understood it.\n→ 나는 그 문제를 설명하려고 해 보고 나서야 내가 그것을 얼마나 제대로 이해하지 못하고 있었는지 깨달았다.\n\nㄴ. No sooner had I asked for help than she offered to explain the question.\n→ 그녀가 그 질문을 설명해 주겠다고 제안하고 나서야 나는 도움을 요청했다.\n\nㄷ. Had you not explained it again, I would still be confused now.\n→ 네가 그것을 다시 설명해 주지 않았더라면 나는 지금도 혼란스러울 것이다.\n\nㄹ. It is not how much you read but how well you understand it that matters.\n→ 중요한 것은 네가 읽은 내용을 얼마나 잘 이해하느냐가 아니라 얼마나 많이 읽느냐이다.",
-"choices": [
-"ㄱ, ㄴ",
-"ㄴ, ㄷ",
-"ㄱ, ㄷ, ㄹ",
-"ㄴ, ㄹ",
-"ㄱ, ㄷ"
-],
-"answer": "⑤",
-"solution": "ㄱ은 Not until에 따른 도치와 how little의 부정적 의미를 바르게 해석했다. ㄷ은 과거에 설명해 준 사실과 반대되는 조건이 현재의 상태에 영향을 주는 혼합 가정법이므로 해석이 적절하다. ㄴ은 ‘도움을 요청하자마자 그녀가 설명해 주겠다고 제안했다’라는 뜻이며, ㄹ은 ‘읽은 양이 아니라 이해한 정도가 중요하다’라는 뜻이므로 두 해석 모두 잘못되었다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-eca7e5eeed",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 영어 문장을 조건에 맞게 우리말 한 문장으로 옮기시오.\n\nIt was not until I tried to explain the answer to her that I realized I could not have solved the problem without her advice.\n\n〈조건〉\n• 깨달음이 일어난 시점을 ‘~하고 나서야 비로소’로 표현할 것.\n• without her advice에 담긴 가정의 의미를 ‘~없었더라면’으로 표현할 것.\n• 설명하려고 한 내용과 조언을 통해 해결한 대상을 구별하여 문장 전체를 해석할 것.",
-"selfGrade": true,
-"answer": "나는 그녀에게 답을 설명하려고 해 보고 나서야 비로소 그녀의 조언이 없었더라면 내가 그 문제를 풀 수 없었을 것임을 깨달았다.",
-"solution": "「It was not until ~ that ...」은 ‘~하고 나서야 비로소 …했다’라는 뜻으로, 답을 설명하려고 시도한 뒤에 깨달았음을 나타낸다. 「could not have solved ~ without ...」은 ‘…이 없었더라면 ~을 풀 수 없었을 것이다’라는 과거 사실에 반대되는 가정의 의미이다. 설명하려고 한 대상은 the answer이고, 해결한 대상은 the problem이므로 각각 ‘답’과 ‘문제’로 구별하여 옮긴다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-f4d3bcd620",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 굵게 표시된 표현이 나타내는 태도로 가장 적절한 것은?\n\nDuring a disagreement, we often think about what to say next instead of listening. We may believe that the other person is simply wrong because we do not know what experiences shaped their opinion. To understand them better, we need to **look through their window for a moment**. We can ask what worries them and why a particular issue matters to them. Their answers may help us understand how they reached their opinion. This does not mean that we must give up our own beliefs. We can keep a different opinion while recognizing that the other person has reasons for theirs.",
-"choices": [
-"상대방이 의견을 바꿀 때까지 자신의 주장을 반복하는 태도",
-"갈등을 피하려고 자신의 의견을 숨기는 태도",
-"상대방의 말보다 겉으로 드러나는 행동을 중시하는 태도",
-"상대방의 경험과 걱정을 고려하여 그 관점을 이해하려는 태도",
-"좋은 관계를 유지하기 위해 상대방의 의견을 그대로 받아들이는 태도"
-],
-"answer": "④",
-"solution": "뒤에 이어지는 문장들은 상대방이 무엇을 걱정하고 왜 그 문제를 중요하게 여기는지 알아보라고 설명한다. 따라서 해당 표현은 상대방의 경험과 상황을 고려하여 그 관점을 이해하려는 태도를 뜻한다. 자신의 생각을 포기하거나 상대방의 의견에 반드시 동의한다는 의미는 아니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-9d19edcdf0",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글에서 굵게 표시한 부분의 문맥상 의미로 가장 적절한 것은?\n\nA falling test score is easy to notice, but the reason for it may not be. A student may be sleeping badly or feeling upset about a friendship. Adults sometimes respond by adding more study hours without asking about these difficulties. Yet **the score is an alarm bell, not an explanation**. It tells us that something needs attention, but it does not tell us exactly what is wrong. Talking with the student can reveal problems that the test result cannot show. If adults focus only on raising the number, the difficulty behind it may continue.",
-"choices": [
-"A lower score shows that something may be wrong without identifying its cause.",
-"A lower score proves that the student needs a longer daily study schedule.",
-"A lower score explains which friendship problem the student is experiencing.",
-"A lower score is too unreliable to deserve attention from adults.",
-"A lower score means that the student's difficulties will disappear without help."
-],
-"answer": "①",
-"solution": "성적 하락은 문제가 있음을 알려 주지만 수면 문제나 친구 관계 등 구체적인 원인을 직접 설명하지는 못한다. 따라서 성적을 원인에 대한 설명이 아니라 추가적인 관심과 대화가 필요한 신호로 보아야 한다는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-2bbd931dca",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 굵은 글씨에 담긴 의미를 가장 잘 설명한 것은?\n\nIn a group discussion, a suggestion can begin to sound convincing simply because one member presents it with confidence and repeats it. Meanwhile, a quieter member may have a better reason for choosing another option but struggle to enter the conversation. When the group accepts the repeated suggestion without comparing the reasons behind both ideas, **confidence has taken the judge's seat**. The decision then reflects how an idea was presented more than how carefully it was developed. Asking members to write their suggestions before speaking can help. The group can then consider the ideas themselves, including those that might otherwise receive little attention.",
-"choices": [
-"A confident member has been officially chosen to lead the discussion.",
-"The group has become more confident after comparing all available reasons.",
-"The group is using the speaker's confidence to judge the value of an idea.",
-"Members are building confidence by explaining their ideas in writing.",
-"A quiet member's idea has been accepted because it received less attention."
-],
-"answer": "③",
-"solution": "모둠은 두 의견의 근거를 비교하지 않고 자신 있게 반복된 제안을 받아들인다. 따라서 자신감이 판사의 자리를 차지했다는 표현은 발표자의 자신감이 의견의 가치를 판단하는 기준으로 작용했다는 뜻이다. 글은 이를 해결하기 위해 말하기 전에 각자의 제안을 적는 방법을 제시한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-712b749936",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글에서 굵게 표시된 부분이 함축하는 의미로 가장 적절한 것은?\n\nWhen practicing a difficult musical passage, a learner may judge progress by how easily the fingers move. However, ease alone can be misleading. If the same incorrect movement is repeated, it may gradually feel natural even though it still produces the wrong result. In that case, the learner is **making the wrong road easier to travel**. Slowing down to examine the movement can feel like a step backward because the passage becomes less smooth for a while. Yet this pause allows the learner to replace the faulty movement before repeating it. The important question is therefore not simply whether a passage feels easier, but whether the movement becoming easier is the one the learner actually needs.",
-"choices": [
-"Choosing an easier passage to avoid practicing a difficult movement",
-"Strengthening an incorrect movement until it can be performed with less effort",
-"Losing a useful skill by examining each movement too carefully",
-"Developing the correct movement by increasing speed before checking accuracy",
-"Finding several acceptable ways to perform a passage through repeated practice"
-],
-"answer": "②",
-"solution": "글은 잘못된 동작도 반복하면 자연스럽고 쉽게 느껴질 수 있다고 설명한다. 따라서 해당 표현은 오류가 교정된 것이 아니라 잘못된 동작이 반복을 통해 더 수월하게 수행되도록 굳어지고 있다는 뜻이다. 연주가 매끄러워졌다는 사실을 정확성이 향상되었다는 증거로 오해하지 않는 것이 핵심이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-1b2e6b5355",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 굵게 표시한 표현을 문맥에 맞게 해석한 것으로 가장 적절한 것은?\n\nAn online feed may contain hundreds of posts and still offer a narrow picture of an issue. A platform can select posts according to a user's earlier clicks, so different writers may repeatedly present views the user already prefers. Because the names and photographs change, the user may feel that many independent voices confirm the same conclusion. However, the user may be **counting echoes as separate witnesses**. Agreement within such a feed does not necessarily show how widely an opinion is shared outside it. To judge an issue more carefully, users need to examine views beyond those selected to match their interests. The number of posts matters less than whether they provide genuinely different ways of thinking.",
-"choices": [
-"Rejecting similar opinions because they are expressed by different writers",
-"Assuming that repeated posts were all secretly written by one person",
-"Comparing conflicting opinions to determine which has stronger support",
-"Checking the popularity of an opinion by examining sources outside the feed",
-"Mistaking agreement in a personalized feed for broader confirmation of a belief"
-],
-"answer": "⑤",
-"solution": "맞춤형 피드에서는 작성자가 달라도 사용자의 기존 선호에 맞는 견해가 반복적으로 제시될 수 있다. 해당 표현은 이렇게 선별된 공간 안의 동의를 자신의 믿음이 더 넓은 범위에서 지지받는다는 근거로 착각한다는 뜻이다. 작성자가 모두 같은 사람이라는 의미가 아니라, 선택된 정보의 편향을 놓친다는 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-01efbff771",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 논지를 고려할 때, 굵게 표시된 부분에 담긴 의미로 가장 적절한 것은?\n\nThe number of calls handled by a worker can provide useful information about a call center. However, its meaning depends on how those calls are handled. Suppose workers are rewarded mainly for completing more calls. They may begin ending conversations sooner, even when customers still need help. The total then rises, but the change may reflect a response to the reward rather than an improvement in service. If managers continue treating every increase as proof of success, they are **letting the scoreboard rewrite the rules of success**. The problem is not that the total has been counted incorrectly. It is that finishing calls has quietly replaced helping customers as the practical goal. Managers can still use the total, but they must consider it alongside evidence of whether customers' problems were solved.",
-"choices": [
-"Allowing the ease of collecting a figure to determine how frequently service is reviewed",
-"Treating the rewarded figure as the goal even when raising it weakens the outcome it should represent",
-"Revising the service goal after confirming that faster calls solve customers' problems more effectively",
-"Assuming that a performance figure becomes useless whenever workers know it is being recorded",
-"Explaining poor service as a counting error rather than checking whether enough calls were completed"
-],
-"answer": "②",
-"solution": "통화 처리 건수는 원래 서비스 성과를 파악하기 위한 지표이지만, 보상이 건수에 집중되면 고객의 문제 해결보다 통화 종료 자체가 목표가 된다. 따라서 해당 표현은 지표가 나타내야 할 실제 성과가 나빠져도 지표의 상승을 성공으로 받아들이는 목표의 대체를 의미한다. 집계가 부정확하다는 뜻이나 수치를 완전히 버려야 한다는 뜻은 아니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-a6a05d2f58",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글에서 굵게 표시한 부분의 함축적 의미를 가장 정확하게 설명한 것은?\n\nSeeking opinions outside a personalized feed can help us examine our beliefs, but access alone does not guarantee understanding. We can read an opposing argument while noticing only statements that seem easy to attack. We can also prepare our reply before considering the experiences that make the argument reasonable to its writer. Although a different view has reached us, it has had no real chance to influence our thinking. In this situation, **we have opened the door but kept the conversation outside**. The missing step is not necessarily agreement. After considering another person's reasons fairly, we may still reject the conclusion. What matters is whether we allow those reasons to test our own view, rather than treating the encounter only as an opportunity to defend what we already believe.",
-"choices": [
-"Accepting another person's conclusion before examining the reasons supporting it",
-"Avoiding unfamiliar opinions until we can respond to them with complete confidence",
-"Understanding an opposing argument but refusing to express our disagreement openly",
-"Encountering an opposing view without allowing its reasons to challenge our own thinking",
-"Failing to understand another person's reasons because we still disagree with the conclusion"
-],
-"answer": "④",
-"solution": "글은 다른 의견에 접하는 것과 그 의견의 근거를 공정하게 검토하는 것을 구별한다. 문을 열고도 대화를 밖에 두었다는 표현은 반대 의견을 읽기는 했지만 기존 생각을 방어하는 데만 집중하여 그 근거가 자신의 생각을 검증할 기회를 주지 않았다는 뜻이다. 충분히 이해한 뒤에도 결론에는 동의하지 않을 수 있으므로, 의견 불일치 자체를 이해의 실패로 보는 ⑤는 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-328e2777b6",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글에서 필자가 가장 강조하는 실천 사항은?\n\nAn unfamiliar English idiom may seem like a group of words that makes little sense. Instead of simply repeating its meaning, find out where the expression came from. The story behind it can make learning more enjoyable. It can also make the meaning easier to remember and help you judge when to use the expression. When an idiom puzzles you, spend some time exploring its background.",
-"choices": [
-"Learn the history behind unfamiliar idioms.",
-"Use as many idioms as possible in every conversation.",
-"Memorize each word separately before studying an idiom.",
-"Choose expressions mainly because they sound interesting.",
-"Avoid idioms whose meanings are difficult to guess."
-],
-"answer": "①",
-"solution": "필자는 낯선 관용어의 유래를 알아보면 학습이 즐거워지고 의미를 기억하거나 사용 상황을 판단하는 데 도움이 된다고 설명한다. 따라서 생소한 관용어의 배경을 공부하라는 ①이 핵심 주장이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-8553402f82",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 조언을 가장 잘 나타낸 것은?\n\nAfter a busy school day, watching videos on your phone may feel relaxing. However, spending too much time with a screen can leave you mentally tired. Put your devices away for a while and give your attention to the people around you. You can also use that time to think about yourself. A regular break from technology can help you focus on what matters in your life.",
-"choices": [
-"Use your phone whenever you feel mentally tired.",
-"Spend your free time learning about new digital devices.",
-"Choose online conversations over time with your family.",
-"Make time away from screens to focus on yourself and others.",
-"Finish watching all your favorite videos before taking a break."
-],
-"answer": "④",
-"solution": "필자는 과도한 화면 사용이 정신적 피로를 일으킬 수 있으므로 기기를 내려놓는 시간을 가지라고 조언한다. 그 시간을 자신과 주변 사람들에게 집중하는 데 활용하라는 ④가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-2e4e582418",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글에서 필자가 독자에게 권하는 행동은?\n\nBefore buying another piece of clothing, ask yourself whether you really need it. Buying clothes without thinking can create more waste. Also, clothes that you no longer want may still be useful to someone else. If they can still be worn, pass them on to another person or take them to a secondhand shop. Your choices when buying and getting rid of clothes can help reduce waste.",
-"choices": [
-"Replace old clothes whenever a new style appears.",
-"Purchase necessary clothes and pass usable ones on to others.",
-"Keep every item of clothing even if nobody can wear it.",
-"Buy more clothes to support clothing stores.",
-"Throw away unwanted clothes before buying new ones."
-],
-"answer": "②",
-"solution": "필자는 옷을 사기 전에 필요성을 확인하고, 입을 수 있는 옷은 다른 사람이나 중고품 가게에 전달하라고 권한다. 구매와 처분 단계에서 쓰레기를 줄이는 두 행동을 모두 담은 ②가 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-380335b37b",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 논지를 바탕으로 할 때, 필자의 주장으로 가장 적절한 것은?\n\nPeople who have succeeded in a field can teach you a great deal about preparing for it. You may discover useful skills by talking with them or watching them work. Still, their experience does not provide a ready-made route for everyone. Your strengths and the skills you need to develop may be different from theirs. Use what you learn to examine the distance between your present abilities and your goal. Then choose a step that helps you close that distance. Advice becomes useful when it guides action suited to your own situation.",
-"choices": [
-"Follow a successful person's career steps in the same order.",
-"Decide on your career before asking anyone for advice.",
-"Choose a goal that requires only the skills you already possess.",
-"Collect advice until you can avoid every possible difficulty.",
-"Use others' experience to identify and address your own needs."
-],
-"answer": "⑤",
-"solution": "성공한 사람의 경험은 도움이 되지만 개인마다 강점과 보완할 능력이 다르다는 것이 글의 전제이다. 따라서 그 경험을 참고하여 자신의 목표 달성에 필요한 부분을 찾아 보완하라는 ⑤가 적절하다. ①은 다른 사람의 경로를 그대로 적용할 수 없다는 글의 내용에 어긋난다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-d75327943c",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글에서 필자가 궁극적으로 촉구하는 것은?\n\nMany people think about their digital footprints only when they post a message or upload a picture. Yet visiting websites and using mobile services can leave information behind without a deliberate decision to share it. Removing a post later does not necessarily remove every copy, either. Someone may already have collected the information, and harmful online behavior may affect how others view you. Therefore, paying attention only to what you intentionally publish is not enough. Consider the traces left by your online activities as a whole and work to limit and manage them.",
-"choices": [
-"Manage online information mainly by deleting embarrassing posts.",
-"Allow websites to decide which personal information should remain.",
-"Manage digital traces from both deliberate sharing and other online activities.",
-"Judge the safety of online activities by whether they involve public posts.",
-"Protect your reputation by sharing personal information only through apps."
-],
-"answer": "③",
-"solution": "글은 의도적으로 게시한 정보뿐 아니라 웹사이트 방문이나 모바일 서비스 이용도 디지털 흔적을 남길 수 있다고 설명한다. 따라서 의도적 공유 여부와 관계없이 온라인 활동 전반에서 생기는 흔적을 관리해야 한다는 ③이 핵심 주장이다. ①은 게시물 삭제만으로 모든 사본이 사라지지는 않는다는 설명을 충분히 반영하지 못한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-f459a256ec",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글에 담긴 필자의 조언으로 가장 적절한 것은?\n\nA career plan is more useful when it begins with a clear picture of the person making it. List what interests you, what you do well, and what you have achieved. School courses and activities can give you clues, but your own view may not reveal everything. People who know you well may notice strengths that you have overlooked. Consider their observations alongside your own ideas. Rather than waiting for a suitable career to appear by chance, build an understanding of yourself and use it as the starting point for careful career research.",
-"choices": [
-"Base career exploration on self-understanding informed by reflection and trusted feedback.",
-"Let people who know you well make the final decision about your career.",
-"Select a career according to your strongest school subject alone.",
-"Delay career research until your interests become permanent.",
-"Search for available jobs before considering your personal qualities."
-],
-"answer": "①",
-"solution": "필자는 자신의 관심사와 강점 등을 돌아보고, 신뢰하는 사람들의 의견도 참고하여 자신을 이해하라고 조언한다. 이러한 자기 이해를 신중한 진로 탐색의 출발점으로 삼으라는 ①이 적절하다. 주변 사람의 관찰을 참고하라는 말이 진로 결정 자체를 맡기라는 뜻은 아니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-66ca314713",
-"typeId": "eng-h1-u0m0s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 전체 논지를 가장 충실하게 반영한 필자의 주장은?\n\nDeveloping clothing materials that create less waste is a useful step toward sustainable fashion. Producing clothes after customers order them can also help reduce waste. However, these changes address only part of a garment's journey. If the industry continues to encourage people to buy more and quickly throw clothes away, resources will still be lost. Consumers therefore have a role alongside producers: they can buy according to need and pass wearable clothes on for further use. Nor should reuse become an excuse for unnecessary purchases. The aim is to keep materials useful for as long as possible. Progress should be judged by how production, purchasing, and reuse work together to reduce waste across the whole process.",
-"choices": [
-"Make cleaner production the main solution while leaving purchasing and disposal habits to individual preference.",
-"Encourage purchases of reusable clothes so that a larger amount of clothing can enter the reuse cycle.",
-"Place the main responsibility on consumers because their choices can replace changes in clothing production.",
-"Coordinate production improvements with careful purchasing and continued use to reduce waste throughout clothing's life cycle.",
-"Evaluate sustainable fashion chiefly by how easily a new material breaks down after disposal."
-],
-"answer": "④",
-"solution": "필자는 생산 기술의 개선을 인정하면서도 구매와 재사용까지 연결해야 의류의 전체 과정에서 낭비를 줄일 수 있다고 주장한다. 따라서 생산 개선, 필요한 만큼의 구매, 지속적인 사용을 통합한 ④가 정답이다. ①·③·⑤는 책임이나 평가 범위를 일부 단계로 좁히며, ②는 재사용을 불필요한 구매의 명분으로 삼지 말라는 내용에 어긋난다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s2t1",
-"custom": true
-},
-{
-"id": "fill-6f8922ff76",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nDigital literacy is more than knowing how to turn on a computer. It is the ability to find, evaluate, and use information wisely. In a world full of online content, we must judge whether what we read is true. People who have this skill do not believe everything they see. They check the source and think carefully before sharing. Therefore, developing digital literacy helps us deal with information in a smart and safe way.",
-"choices": [
-"Computers are becoming harder to use every year.",
-"Digital literacy is the ability to use information wisely and safely.",
-"Most online content is created by professional writers.",
-"Sharing information quickly is the key to digital success.",
-"People rarely check the sources of the news they read."
-],
-"answer": "②",
-"solution": "글 전체는 디지털 리터러시가 단순한 컴퓨터 사용 능력이 아니라 정보를 현명하고 안전하게 다루는 능력임을 설명하고 있습니다. 마지막 문장 'developing digital literacy helps us deal with information in a smart and safe way'가 주제문이며, 이를 바꾸어 말한 ②가 정답입니다. 나머지는 지엽적 내용이거나 글과 어긋납니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-00f0f91c5c",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nFalse information is any information that misleads or deceives people. It can appear on many platforms and be about many topics, such as health or the environment. Some people spread it on purpose, while others share it by mistake. Once it spreads, it can cause people to make wrong decisions. For this reason, false information can be harmful to both individuals and society.",
-"choices": [
-"False information is always spread on purpose by a few people.",
-"Health and the environment are the only topics of false information.",
-"False information can cause real harm to people and society.",
-"People can easily tell true information from false information.",
-"Platforms are responsible for creating most false information."
-],
-"answer": "③",
-"solution": "글은 거짓 정보가 여러 주제·여러 경로로 퍼지며 결국 개인과 사회에 해를 끼친다는 점을 말합니다. 마지막 문장 'false information can be harmful to both individuals and society'가 주제문이므로 ③이 정답입니다. ①은 'some ... others'를 무시했고, ②는 'such as'(예시)를 전부로 오해한 것이며, ④·⑤는 본문에 없습니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-127dd31741",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nAI image generators can create pictures in a very short time. They do this by studying millions of images made by humans and the words that describe them. When you give them a simple instruction, they quickly produce a new image. Some can even mix two different styles into one picture. In short, AI image generators make art by imitating and combining human-made images.",
-"choices": [
-"AI image generators need several days to finish one picture.",
-"AI image generators create art by imitating and combining human works.",
-"Human artists can no longer compete with AI programs.",
-"AI image generators can only copy a single image at a time.",
-"Writing instructions for AI is harder than drawing by hand."
-],
-"answer": "②",
-"solution": "글은 AI 이미지 생성기가 사람이 만든 그림을 학습·모방하고 서로 다른 스타일을 섞어 그림을 만든다는 과정을 설명합니다. 'In short'로 시작하는 마지막 문장이 전체를 요약한 주제문이므로 ②가 정답입니다. ①·④는 본문과 반대이고, ③·⑤는 언급되지 않은 내용입니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-cbcfddbc2d",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nComics are not just for fun. They can take complex ideas and explain them in a simple and clear way. When words and pictures are used together, readers understand the message more easily. A single drawing can show a feeling that would take many sentences to describe. This is why comics can be powerful tools for communication. They also help people feel closer to one another by sharing stories.",
-"choices": [
-"Comics are mainly a form of entertainment for children.",
-"Reading many sentences is the best way to understand feelings.",
-"Comics can serve as powerful tools for communication.",
-"Pictures should always be used instead of words.",
-"Drawing comics requires many years of professional training."
-],
-"answer": "③",
-"solution": "글은 만화가 복잡한 생각을 쉽게 전달하고 사람들을 가깝게 만든다는 점을 들어 만화가 강력한 의사소통 수단임을 말합니다. 'This is why comics can be powerful tools for communication'이 핵심 주제문이므로 ③이 정답입니다. ①은 첫 문장('not just for fun')에 반하고, ②·④는 글의 '함께 쓸 때'라는 취지를 왜곡했으며, ⑤는 언급되지 않았습니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-cde32b5265",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nAI programs are changing the way music is made. These programs can already compose songs for you. You can choose the style, the key, and the length of the song. Once you enter the information, the program creates a song that you can use or edit. Thanks to such technology, making music has become easier and faster than before.",
-"choices": [
-"AI programs can only choose the key of a song.",
-"AI programs are transforming the way music is created.",
-"Editing a song is impossible once AI composes it.",
-"Human musicians compose better songs than AI programs.",
-"Choosing a song's length is the hardest part of making music."
-],
-"answer": "②",
-"solution": "글은 AI 프로그램이 스타일·조성·길이를 정해 곡을 만들어 주어 음악 제작 방식을 바꾸고 있다는 내용입니다. 첫 문장과 마지막 문장이 모두 이 중심 생각을 담고 있으므로 이를 바꾸어 쓴 ②가 정답입니다. ①·⑤는 세부를 과장했고, ③은 'edit'(수정 가능)과 반대이며, ④는 본문에 없습니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-0bfc8f9bc2",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nWhen the boy first lost at table tennis, he felt like giving up. But instead of avoiding the game, he picked up the ball and tried again. He learned from each mistake and practiced hard after school and on weekends. Little by little, his skills improved, and he even began to win. His story shows that facing challenges, rather than avoiding them, helps us grow.",
-"choices": [
-"Winning a game is more important than enjoying it.",
-"Avoiding difficult games is the safest way to stay happy.",
-"Facing challenges helps us grow more than avoiding them.",
-"Talent matters more than practice in sports.",
-"Practicing on weekends is the only way to improve."
-],
-"answer": "③",
-"solution": "글은 소년이 실패를 피하지 않고 도전해 실력을 키운 이야기를 통해, 도전을 피하기보다 마주하는 것이 성장에 도움이 된다는 교훈을 전합니다. 마지막 문장 'facing challenges, rather than avoiding them, helps us grow'가 주제문이므로 ③이 정답입니다. ②는 글의 취지와 정반대이고, ①·④·⑤는 본문이 말하지 않은 내용입니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-6332cc9924",
-"typeId": "eng-h1-u0m0s0t1",
-"kind": "객관식",
-"diff": 4,
-"body": "윗글의 주제문으로 알맞은 것은?\n\nMany AI programs are open to the public and can be used freely. However, these programs have started a debate about their effect on humans. Some people see AI as a threat because it may learn skills and replace human workers. Others argue that AI cannot go beyond human imagination, since it depends on data that may be flawed or limited. Human imagination, they say, has no limits. Thus, people continue to argue over whether AI can truly surpass and replace humans.",
-"choices": [
-"The free use of AI programs has made human workers more creative.",
-"AI will surely replace humans because its data has no limits.",
-"AI's dependence on flawed data makes it completely useless.",
-"There is an ongoing debate over whether AI can surpass and replace humans.",
-"Human imagination is the main source of data that AI programs use."
-],
-"answer": "④",
-"solution": "글은 AI가 인간을 위협할 것이라는 견해와 인간 상상력을 넘지 못한다는 견해를 '한편으로는~다른 한편으로는' 구조로 나란히 제시하며, 두 입장이 계속 맞서는 '논쟁'이 핵심입니다. 'Thus'로 시작하는 마지막 문장이 주제문이므로 ④가 정답입니다. ②·③은 글에 나온 '한쪽 견해'일 뿐 전체 주제가 아니며(함정), ①·⑤는 세부 내용을 뒤틀어 만든 오답입니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m0s0t1",
-"custom": true
-},
-{
-"id": "fill-939921beb6",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 1,
-"body": "다음 문장을 읽고, 우리말 뜻에 해당하는 영어 단어를 문장에서 찾아 쓰시오. (첫 철자는 대문자로 쓸 것)\n\nMosquitoes can spread dangerous diseases such as malaria.\n\n뜻: 질병\n\n정답: __________",
-"selfGrade": true,
-"answer": "Diseases",
-"solution": "'질병'을 뜻하는 영어 단어는 disease이다. 제시된 문장에서는 여러 질병을 의미하므로 복수형 diseases가 사용되었다. 문장에서 찾아 쓰고 첫 철자를 대문자로 써야 하므로 정답은 Diseases이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-76545e4880",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 1,
-"body": "다음 문장의 빈칸에 들어갈 단어를 주어진 철자로 시작하도록 완성하시오.\n\nRegular ex__________ is good for your health.\n\n뜻: 규칙적인 운동은 건강에 좋다.\n\n정답: __________",
-"selfGrade": true,
-"answer": "exercise",
-"solution": "'운동'을 뜻하는 영어 단어는 exercise이다. regular exercise는 '규칙적인 운동'이라는 의미이다. 주어진 철자 ex로 시작하고 문맥에 맞는 단어는 exercise이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-a445ff8106",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 1,
-"body": "다음 영어 단어의 뜻을 참고하여 빠진 철자를 채워 단어를 완성하시오.\n\nr _ s o u r c e\n\n뜻: 자원\n\n빠진 알파벳 한 글자를 쓰시오.",
-"selfGrade": true,
-"answer": "e",
-"solution": "'자원'을 뜻하는 영어 단어는 resource이다. 철자는 r-e-s-o-u-r-c-e 순서이다. 따라서 r과 s 사이에 들어갈 알파벳은 e이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-d1f0e6a282",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 문장의 빈칸에 들어갈 단어를 주어진 우리말 뜻과 첫 철자를 참고하여 완성하시오.\n\nThe new technology may help reduce the number of traffic ac__________.\n\n뜻: 새로운 기술은 교통사고의 수를 줄이는 데 도움이 될 수 있다.\n\n조건: '사고'를 뜻하는 단어의 복수형을 쓸 것.\n\n정답: __________",
-"selfGrade": true,
-"answer": "accidents",
-"solution": "'사고'를 뜻하는 단어는 accident이다. 문장에서 the number of 뒤에는 셀 수 있는 명사의 복수형이 오므로 accidents가 적절하다. 따라서 정답은 accidents이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-3367820ffb",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 문장을 읽고, 밑의 뜻에 해당하는 영어 단어를 문장에서 찾아 쓰시오. (단어의 형태를 바꾸지 말 것)\n\nRecycling materials can reduce waste and protect the environment.\n\n뜻: 환경\n\n정답: __________",
-"selfGrade": true,
-"answer": "environment",
-"solution": "'환경'을 뜻하는 단어는 environment이다. 문장에서 protect the environment는 '환경을 보호하다'라는 의미이다. 단어의 형태를 바꾸지 않고 그대로 쓰므로 정답은 environment이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-b5b44512e3",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 두 문장의 공통 빈칸에 들어갈 단어를 주어진 철자로 시작하도록 쓰시오.\n\n(A) The new system can im__________ the safety of passengers.\n(B) We need to im__________ our English skills through practice.\n\n뜻: 개선하다, 향상시키다\n\n정답: __________",
-"selfGrade": true,
-"answer": "improve",
-"solution": "'개선하다, 향상시키다'를 뜻하는 동사는 improve이다. (A)에서는 승객의 안전을 개선한다는 뜻이고, (B)에서는 영어 실력을 향상시킨다는 뜻이다. 두 문장 모두 조동사 뒤 또는 to부정사 뒤에 동사원형이 필요하므로 improve가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-10ac850f63",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글을 읽고, 글의 핵심 내용을 요약한 문장의 빈칸에 들어갈 단어를 본문에서 찾아 쓰시오. (각 빈칸에 한 단어씩 쓰고, 첫 철자는 대문자로 쓸 것)\n\nCircular fashion encourages people to reuse clothing and reduce waste. Unlike linear fashion, it aims to keep materials in use for as long as possible. This approach can help protect the environment.\n\n[요약문]\nC__________ F__________ helps reduce waste by encouraging the reuse of clothing.\n\n정답: __________ __________",
-"selfGrade": true,
-"answer": "Circular Fashion",
-"solution": "글은 의류를 재사용하고 폐기물을 줄이는 순환 패션을 설명한다. 본문의 Circular fashion이 글의 핵심 개념이므로 요약문의 빈칸에 들어간다. 각 단어의 첫 철자를 대문자로 써야 하므로 Circular Fashion이 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-79ab7f2607",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글을 읽고, 글의 제목에 들어갈 단어를 본문에서 찾아 쓰시오. (주어진 첫 철자로 시작하고, 각 단어의 첫 철자는 대문자로 쓸 것)\n\nSelf-driving cars use sensors and computer programs to operate. They may help people travel more easily, but their safety remains an important concern. If the technology fails, passengers could be put at risk.\n\n[제목]\nS__________ Concerns about S__________ Cars\n\n정답: __________ / __________",
-"selfGrade": true,
-"answer": "Safety / Self-driving",
-"solution": "글은 자율주행 자동차의 기술적 특징과 안전 문제를 설명한다. 첫 번째 빈칸에는 '안전'을 뜻하는 Safety가 들어가고, 두 번째 빈칸에는 자동차의 종류를 나타내는 Self-driving이 들어간다. 두 단어 모두 본문에 제시되어 있으며 제목의 의미에도 부합한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
-"id": "fill-43f8611ab5",
-"typeId": "eng-h1-u3m0s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글을 읽고, 내용을 정리한 문장의 빈칸에 들어갈 단어를 본문에서 찾아 쓰시오. (각 빈칸에 한 단어씩 쓰되, 본문에 사용된 형태를 유지할 것)\n\nAI-powered neural implants may help people with brain disorders. However, this technology also raises concerns about privacy and social inequality. Hackers could access personal information without permission, and high costs could intensify the gap between people who can afford the technology and those who cannot.\n\n[내용 정리]\nAI-powered neural implants raise ethical concerns.\n\n(1) Hackers may a__________ private information without permission.\n(2) High costs may i__________ social inequality.\n\n정답: (1) __________  (2) __________",
-"selfGrade": true,
-"answer": "access / intensify",
-"solution": "(1)은 해커가 허락 없이 개인 정보에 접근할 위험을 설명하므로 access가 들어간다. (2)는 높은 비용이 사회적 불평등을 심화할 수 있다는 의미이므로 intensify가 적절하다. 두 단어 모두 본문에 그대로 제시되어 있고 조동사 may 뒤에 동사원형이 오는 문법 조건에도 맞는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m0s1t0",
-"custom": true
-},
-{
 "id": "fill-8a04eb2ea6",
 "typeId": "eng-h1-u0m0s5t1",
 "kind": "객관식",
@@ -1341,44 +470,6 @@
 "custom": true
 },
 {
-"id": "fill-c02194b104",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글에서 추론할 수 «없는» 것은?\n\nEmperor penguins live in Antarctica, one of the coldest places on Earth. To survive the freezing winter, they huddle together in large groups. The birds on the outside of the group block the icy wind, keeping those in the center warm. The penguins take turns, so no single bird has to stay in the cold too long. Emperor penguins also have a thick layer of fat and tightly packed feathers that keep heat in. Fathers, not mothers, keep the eggs warm. After the female lays an egg, she goes to the sea to find food, and the male holds the egg on his feet under a warm flap of skin for about two months.",
-"choices": [
-"황제펭귄은 추위를 견디기 위해 무리를 지어 모인다.",
-"무리 바깥쪽에 있는 펭귄들은 찬 바람을 막아 준다.",
-"펭귄들은 자리를 바꿔 가며 추운 바깥쪽을 나눠 맡는다.",
-"암컷이 바다에 가 있는 동안 수컷이 알을 품는다.",
-"황제펭귄은 깃털이 없어 지방층만으로 체온을 유지한다."
-],
-"answer": "⑤",
-"solution": "글에 황제펭귄은 두꺼운 지방층과 '촘촘한 깃털(tightly packed feathers)'로 열을 가둔다고 나오므로, 깃털이 없다는 ⑤는 글과 어긋나 추론할 수 없다. 나머지 ①~④는 무리 짓기, 바깥쪽 펭귄의 바람막이 역할, 교대, 수컷의 알 품기에 관한 서술에서 그대로 확인된다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
-"id": "fill-087bca72f2",
-"typeId": "eng-h1-u0m1s3t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글에서 추론할 수 «없는» 것은?\n\nCamels live in hot, dry deserts. Many people think a camel's hump is full of water, but it is actually full of fat. When food is hard to find, the camel's body breaks down this fat for energy. A camel can also go for many days without drinking, and when it finally reaches water, it can drink a huge amount in just a few minutes. Its long eyelashes and its ability to close its nostrils protect its eyes and nose from blowing sand. Thick pads on its feet keep it from sinking into the soft sand. Thanks to these features, camels have been used to carry people and goods across deserts for thousands of years.",
-"choices": [
-"낙타의 혹에는 물이 아니라 지방이 들어 있다.",
-"낙타는 먹이가 부족할 때 혹의 지방을 에너지로 쓴다.",
-"낙타는 며칠 동안 물을 마시지 않고도 지낼 수 있다.",
-"긴 속눈썹은 날리는 모래로부터 눈을 보호해 준다.",
-"낙타는 모래에 쉽게 빠져 사막을 건너는 데 적합하지 않다."
-],
-"answer": "⑤",
-"solution": "글에 발바닥의 두꺼운 패드가 부드러운 모래에 빠지지 않게 해 주며, 그런 특징 덕분에 수천 년간 사막을 건너는 데 이용되어 왔다고 했으므로 ⑤는 글과 어긋나 추론할 수 없다. 혹이 지방으로 차 있다는 점(①), 먹이가 부족할 때 지방을 쓰는 것(②), 며칠간 물 없이 지내는 것(③), 긴 속눈썹의 보호 기능(④)은 모두 본문에서 확인된다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m1s3t0",
-"custom": true
-},
-{
 "id": "fill-413635f113",
 "typeId": "eng-h1-u0m3s0t0",
 "kind": "객관식",
@@ -1414,158 +505,6 @@
 "solution": "자전거, 피아노, 농구 모두 '반복해서 할수록' 실력이 는다는 예시이다. '행동을 반복할수록 쉬워진다'와 '조금씩 매일 쌓인다'는 설명으로 보아 빈칸에는 '연습(practice)'이 알맞다. money(돈), anger(분노), luck(운), sleep(잠)은 글이 말하는 실력 향상의 비결과 맞지 않는다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-u0m3s0t0",
-"custom": true
-},
-{
-"id": "fill-3f19ea0c05",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 1,
-"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nFor instance, you could study for 25 minutes and then rest for 5 minutes.\n\nMany students believe that studying for hours without stopping is the best way to learn. ( A ) However, our brains cannot stay focused for a long time without rest. ( B ) If you keep studying when you are tired, you may read the same page again and again without understanding it. ( C ) That is why it is a good idea to take short breaks while you study. ( D ) During those five minutes, you can stretch, drink some water, or look out the window. ( E ) After a short rest, you will feel refreshed and be able to concentrate again. In the end, short breaks can help you study more effectively, not less.",
-"choices": [
-"(A)",
-"(B)",
-"(C)",
-"(D)",
-"(E)"
-],
-"answer": "④",
-"solution": "주어진 문장은 For instance로 시작하므로, 앞에는 이 문장이 예로 드는 조언이 와야 한다. 그 조언은 공부하는 동안 짧은 휴식을 하라는 내용이다. 또 (D) 뒤의 those five minutes는 주어진 문장의 rest for 5 minutes를 가리킨다. 따라서 주어진 문장은 짧은 휴식을 권하는 문장과 쉬는 5분 동안 할 일을 말하는 문장 사이인 (D)에 들어가야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-65eefa6c55",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 1,
-"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThen, when the bee flies to another flower, some of this pollen rubs off onto that flower.\n\nBees are small insects, but they play a big role in nature. ( A ) While a bee is drinking nectar from a flower, tiny grains of pollen stick to its hairy body. ( B ) This process helps flowers produce seeds and fruit. ( C ) In fact, many of the fruits and vegetables we eat need bees to grow. ( D ) For this reason, farmers sometimes bring beehives to their fields. ( E ) So the next time you see a bee, remember that it is working hard for all of us.",
-"choices": [
-"(A)",
-"(B)",
-"(C)",
-"(D)",
-"(E)"
-],
-"answer": "②",
-"solution": "주어진 문장의 this pollen은 앞 문장에 나온 벌의 몸에 붙은 꽃가루(pollen)를 가리킨다. 그리고 Then은 꽃가루가 몸에 붙은 다음 단계를 나타낸다. (B) 뒤의 This process는 꽃가루가 몸에 붙었다가 다른 꽃에 묻는 전체 과정을 가리킨다. 따라서 주어진 문장은 (B)에 들어가야 흐름이 자연스럽다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-be82808e31",
-"typeId": "eng-h1-u0m2s1t0",
-"kind": "객관식",
-"diff": 2,
-"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nAs a result, ice is lighter than the same amount of liquid water, so it floats.\n\nMost substances take up less space when they change from a liquid to a solid. ( A ) Water, however, is different. ( B ) When water freezes, its molecules arrange themselves in a pattern that takes up more space, so the water expands. ( C ) This unusual property is very important for life on Earth. ( D ) In winter, ice forms on the surface of lakes and rivers and acts like a blanket, keeping the water below from freezing. ( E ) Thanks to this, fish and other water animals can survive even in very cold weather.",
-"choices": [
-"(A)",
-"(B)",
-"(C)",
-"(D)",
-"(E)"
-],
-"answer": "③",
-"solution": "주어진 문장은 As a result로 시작하므로, 앞에는 그 원인이 와야 한다. 원인은 물이 얼 때 부피가 늘어난다는 내용이다. 또 (D)에서 얼음이 호수 표면에 생긴다는 내용이 나오려면, 그 전에 얼음이 물에 뜬다는 사실이 먼저 나와야 한다. 따라서 주어진 문장은 물의 팽창을 설명한 문장 뒤, 이 특성의 중요성을 말하는 문장 앞인 (C)에 들어가야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m2s1t0",
-"custom": true
-},
-{
-"id": "fill-31f2e09944",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nWhen I was learning to ride a bike, I fell down again and again. Each time, my knees hurt and I wanted to give up. My father, however, kept saying, \"Falling is just part of learning.\" He told me that every child who can ride a bike today has **fallen many times before**. So instead of being afraid of falling, I began to see each fall as one more step toward success. After a week, I was finally able to ride all the way to the park by myself. Now, whenever I try something new and fail, I remember my father's words. Mistakes are not the end; they are how we learn.",
-"choices": [
-"실패는 배우는 과정의 자연스러운 일부라는 것",
-"넘어지면 크게 다칠 수 있다는 것",
-"자전거를 타는 것은 매우 위험하다는 것",
-"혼자서는 아무것도 배울 수 없다는 것",
-"아버지의 말을 믿어서는 안 된다는 것"
-],
-"answer": "①",
-"solution": "넘어지는 것을 배움의 일부로 보라는 아버지의 말과, 넘어짐을 성공으로 가는 한 걸음으로 받아들였다는 내용이 핵심이다. 글 전체가 실수는 끝이 아니라 배우는 방법이라고 말하고 있다. 따라서 굵은 글씨는 실패가 배움의 자연스러운 과정이라는 뜻이므로 정답은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-e252850984",
-"typeId": "eng-h1-u0m3s1t1",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nMy grandmother grows vegetables in her small garden. One spring, I asked her why she did not simply buy them at the store, which would be much faster. She smiled and said, \"Good things take time.\" She explained that a plant needs many days of sun, water, and care before it is ready to eat. If you pull it up too early, you get nothing. The same is true for learning a language or building a friendship. You cannot rush them. When I feel impatient about my studies, I think of her garden and remember that **you cannot pull up a plant to make it grow faster**. Real growth happens slowly, one day at a time.",
-"choices": [
-"좋은 결과에는 시간과 꾸준함이 필요하다는 것",
-"식물은 물을 주지 않아도 자란다는 것",
-"채소는 가게에서 사는 것이 더 낫다는 것",
-"공부는 빨리 끝낼수록 좋다는 것",
-"할머니의 정원은 너무 작다는 것"
-],
-"answer": "①",
-"solution": "할머니는 좋은 것에는 시간이 걸린다며 식물을 억지로 빨리 자라게 할 수 없다고 말한다. 이는 언어 학습이나 우정처럼 진짜 성장은 하루하루 천천히 이루어진다는 비유이다. 따라서 굵은 글씨는 좋은 결과에는 시간과 꾸준함이 필요하다는 뜻이므로 정답은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-2a0883dc46",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe harder you study, the better your grades will be.",
-"choices": [
-"너는 성적이 좋기 때문에 더 열심히 공부할 것이다.",
-"열심히 공부하더라도 성적이 좋아지지는 않을 것이다.",
-"공부를 더 열심히 할수록 성적이 더 좋아질 것이다.",
-"성적을 올리기 위해 공부를 열심히 해야만 했다.",
-"공부를 열심히 하는 것보다 좋은 성적을 받는 것이 중요하다."
-],
-"answer": "③",
-"solution": "'The + 비교급, the + 비교급'은 '~하면 할수록 더욱 …하다'라는 뜻이다. 'The harder you study'는 '더 열심히 공부할수록', 'the better your grades will be'는 '성적이 더 좋아질 것이다'로 해석한다. 따라서 정답은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-0756b87ba0",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe girl is too young to drive a car.",
-"choices": [
-"그 소녀는 자동차를 운전하기에 너무 어리다.",
-"그 소녀는 어리지만 자동차를 운전할 수 있다.",
-"그 소녀는 자동차를 운전할 만큼 나이가 많다.",
-"그 소녀는 자동차를 운전하기 위해 일찍 일어난다.",
-"그 소녀는 어렸을 때 자동차를 운전했다."
-],
-"answer": "①",
-"solution": "'too + 형용사 + to부정사'는 '너무 ~해서 …할 수 없다'라는 의미이다. 따라서 주어진 문장은 '그 소녀는 너무 어려서 자동차를 운전할 수 없다'라는 뜻이다. 이와 같은 의미를 나타낸 ①이 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-8bd217fcfa",
-"typeId": "eng-h1-u3m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 중 영어 문장과 우리말 해석이 바르게 짝지어진 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. It was not until the meeting ended that he checked his messages.\n    → 그는 회의가 끝나고 나서야 비로소 메시지를 확인했다.\nㄴ. She is the last person to break a promise.\n    → 그녀는 약속을 가장 마지막에 어기는 사람이다.\nㄷ. Had I left home earlier, I would not have missed the bus.\n    → 내가 집에서 더 일찍 출발했더라면 버스를 놓치지 않았을 텐데.\nㄹ. The more carefully you listen, the less you will understand.\n    → 주의 깊게 들을수록 더 많이 이해하게 될 것이다.\nㅁ. I could not help smiling when I heard the good news.\n    → 나는 좋은 소식을 들었을 때 미소 짓지 않을 수 없었다.",
-"choices": [
-"ㄱ, ㄴ, ㄷ",
-"ㄱ, ㄷ, ㅁ",
-"ㄴ, ㄷ, ㄹ",
-"ㄱ, ㄹ, ㅁ",
-"ㄷ, ㄹ, ㅁ"
-],
-"answer": "②",
-"solution": "ㄱ의 'It was not until ~ that ...'은 '~하고 나서야 비로소 …하다'라는 뜻이므로 올바른 해석이다. ㄴ의 'the last person to ...'는 '결코 …할 사람이 아닌'이라는 뜻이고, ㄹ의 'the less'는 '더 적게'라는 뜻이므로 두 해석 모두 틀렸다. ㄷ은 가정법 과거완료에서 if가 생략된 도치 구문으로 과거 사실과 반대되는 상황을 나타내며, ㅁ의 'cannot help -ing'는 '~하지 않을 수 없다'라는 뜻이다. 따라서 올바른 해석은 ㄱ, ㄷ, ㅁ으로 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-u3m1s0t0",
 "custom": true
 },
 {
@@ -2094,6 +1033,1000 @@
 "③ ⓒ",
 "④ ⓓ",
 "⑤ ⓔ"
+]
+},
+{
+"id": "fill-8f43453469",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용에 근거하여 판단할 수 없는 것은?\n\nFor a sea otter, a rock can be a useful tool at mealtime. Floating on its back, the animal puts a rock on its chest and uses it to break open hard shells. A rock that works well may be kept in a pocket of skin under its arm for later use. However, tools are not the only interesting part of its daily life. A sea otter also spends hours caring for its fur. Unlike many other sea mammals, it lacks a thick layer of fat for warmth. Its thick fur holds air and protects its skin from cold water. Keeping this fur clean helps it do its job.",
+"answer": "④",
+"solution": "해달의 털은 공기를 가두어 차가운 물로부터 피부를 보호한다. 따라서 털 손질의 목적이 털 사이의 공기를 없애는 것이라는 ④는 추론할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"해달이 몸에 보관하는 돌은 이후의 식사에도 쓰일 수 있다.",
+"해달의 털 손질은 차가운 물로부터 몸을 보호하는 데 도움이 된다.",
+"해달은 먹이의 껍데기를 깨는 동안 물 위에 등을 대고 떠 있을 수 있다.",
+"해달은 털 사이의 공기를 없애기 위해 오랜 시간 털을 손질한다.",
+"해달에게 돌과 털은 각각 먹이 섭취와 체온 유지에 도움을 준다."
+]
+},
+{
+"id": "fill-6b6921b7a3",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 바탕으로 이해한 내용 중 적절하지 않은 것은?\n\nA finished object may feel especially valuable when you have helped make it. This tendency is known as the IKEA effect. Consider putting together a small table at home. After completing it, you may value it more than an identical table that required no work from you. The difference need not come from better materials or a better design. Your own successful effort can change how you feel about the object. Yet spending time on the work is not enough by itself. If you cannot finish the table, the effect may disappear. The feeling of having achieved something, rather than effort alone, seems to be important.",
+"answer": "②",
+"solution": "글은 'spending time on the work is not enough by itself'라고 하여 시간을 들이는 것만으로는 충분하지 않다고 말한다. 또 'If you cannot finish the table, the effect may disappear'라고 하여 완성하지 못하면 IKEA 효과가 사라질 수 있다고 설명한다. 따라서 들인 시간만으로 미완성 탁자가 더 가치 있게 느껴진다는 ②는 적절하지 않다. ①은 마지막 문장(성취감의 중요성), ③은 'need not come from better materials or a better design', ④는 'value it more than an identical table', ⑤는 'rather than effort alone'과 각각 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"직접 완성한 탁자를 높이 평가하는 데에는 성취감이 작용할 수 있다.",
+"조립을 끝내지 못했더라도 들인 시간만으로 탁자가 더 가치 있게 느껴진다.",
+"재료나 디자인이 더 우수하지 않아도 직접 만든 물건이 특별하게 느껴질 수 있다.",
+"동일한 탁자라도 직접 조립했는지에 따라 다르게 평가될 수 있다.",
+"노력을 들인 것과 작업을 성공적으로 마친 것은 구별해야 한다."
+]
+},
+{
+"id": "fill-dcfb12ae0e",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글이 뒷받침하지 않는 판단은?\n\nWhere an item appears in a list can influence how easily you remember it. Early items allow more mental repetition before other items follow. Final items have a different advantage: they may still be fresh in short-term memory when recall begins. Items between these two groups benefit from neither position and are therefore more likely to be forgotten. This pattern suggests a way to organize review. Suppose you always study a set of vocabulary cards in the same order. Some words will repeatedly occupy the less favorable middle positions. Changing the order from time to time may help, as may giving extra attention to the words in the middle. Neither suggestion means that every word will then be remembered.",
+"answer": "⑤",
+"solution": "순서 변경은 특정 단어가 계속 중간 위치에 놓이는 상황을 바꿀 수 있다. 그러나 이것이 모든 단어의 머릿속 반복 횟수를 같게 만든다는 근거는 없으므로 ⑤는 추론할 수 없다. 나머지 선지는 위치별 기억의 이점과 복습 방법에 대한 설명에 부합한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"같은 순서로 계속 공부하면 특정 단어들이 반복해서 불리한 위치에 놓일 수 있다.",
+"처음 단어와 마지막 단어가 잘 기억되는 데에는 서로 다른 이유가 있다.",
+"복습 순서를 바꾸더라도 모든 단어의 기억이 보장되는 것은 아니다.",
+"중간에 놓인 단어에 복습 시간을 더 배분하는 것은 글의 설명에 부합한다.",
+"순서를 바꾸어 기억이 나아졌다면 모든 단어의 머릿속 반복 횟수가 같아졌다고 볼 수 있다."
+]
+},
+{
+"id": "fill-5461f195a2",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 도출한 결론으로 적절하지 않은 것은?\n\nCity heat comes from several sources that can operate together. Dark roads and roofs take in solar energy and give it back slowly as heat. Meanwhile, vehicles, factories, and air conditioners release additional heat. A lack of plants makes matters worse because less water is released through leaves to cool the air. These explanations help us understand different ways of reducing urban heat. A white roof reflects sunlight, while trees offer shade and cool the air through their leaves. Roofs covered with plants can also help. Such measures address parts of the problem, but adopting one does not mean that the other sources of heat have stopped operating. Heat stored in urban surfaces can also continue to affect the air after daylight ends.",
+"answer": "①",
+"solution": "흰색 지붕은 햇빛을 반사하여 어두운 표면이 태양 에너지를 흡수하는 문제를 줄인다. 그러나 이것이 에어컨에서 나오는 열까지 줄인다는 설명은 없다. 오히려 글은 한 가지 대책을 도입해도 다른 열 발생 원인은 계속 작용한다고 밝힌다. 따라서 서로 다른 열 발생 원인을 연결한 ①은 도출할 수 없다. ②는 마지막 문장, ③은 'trees offer shade and cool the air through their leaves', ④는 'adopting one does not mean that the other sources of heat have stopped operating', ⑤는 어두운 표면의 열 흡수와 'A lack of plants makes matters worse'에 각각 근거한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"흰색 지붕이 햇빛을 반사하기 시작하면 에어컨에서 나오는 열도 함께 감소한다고 볼 수 있다.",
+"낮 동안 표면에 저장된 에너지는 해가 진 뒤에도 도시의 열에 영향을 줄 수 있다.",
+"가로수는 햇빛을 가리는 기능 외에도 잎을 통한 수분 방출로 공기를 식힐 수 있다.",
+"지붕 색을 바꾸는 대책을 시행한 뒤에도 차량이나 공장 때문에 열이 추가될 수 있다.",
+"식물이 적은 도시에서는 표면의 열 흡수뿐 아니라 공기를 식히는 작용의 부족도 문제가 될 수 있다."
+]
+},
+{
+"id": "fill-f827de61e5",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 논리를 적용할 때, 근거가 부족한 판단은?\n\nImagine that you have bought a non-refundable ticket for an evening concert. During the performance, you become disappointed and consider leaving to read at home. The ticket money cannot be recovered under either choice. Staying merely to justify that payment would be an example of the sunk cost fallacy. Still, recognizing this mistake does not automatically tell you to leave. You should compare what the rest of the concert could offer with what you could gain from going home. If the remaining music seems more rewarding than reading, staying can make sense. If reading seems more rewarding, leaving can make sense. A sensible decision depends on the value of the available future experiences, not on making an unrecoverable payment feel worthwhile.",
+"answer": "③",
+"solution": "글은 남은 공연에서 얻을 만족이 독서에서 얻을 만족보다 클 것으로 예상되면 머무르는 선택도 합리적일 수 있다고 설명한다. 따라서 남아 있다는 행동만으로 매몰 비용의 오류를 범했다고 판단할 수 없다. 핵심은 선택의 결과가 아니라 이미 쓴 돈과 앞으로 얻을 가치 중 무엇을 판단 근거로 삼았는지이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"집에서 독서하는 편이 더 만족스러울 것으로 예상된다면 공연장을 떠나는 선택이 합리적일 수 있다.",
+"같은 자리에 계속 앉아 있더라도 그 선택의 근거에 따라 합리성에 대한 판단이 달라질 수 있다.",
+"공연에 실망한 뒤에도 끝까지 남아 있기로 했다면 매몰 비용의 오류를 범한 것으로 볼 수 있다.",
+"이미 지불한 돈을 아깝지 않게 만들려는 생각만으로 남는 것은 글에서 지적한 오류에 해당한다.",
+"환불받을 수 없는 티켓값은 남은 공연과 귀가 후 독서 중 어느 쪽이 더 가치 있는지를 결정해 주지 못한다."
+]
+},
+{
+"id": "fill-30a2709a59",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 근거로 추론하기 어려운 진술만을 <보기>에서 모두 고른 것은?\n\nImprovement after taking a pill does not, by itself, establish that an active ingredient caused the improvement. A placebo contains no active ingredient, yet the expectation of relief can cause the brain to release natural painkillers. The way a treatment is presented can matter as well. Two pills often produce a stronger placebo effect than one, and an injection often produces a stronger effect than pills. Pill color can also influence the response. These observations explain why medicine must be compared with a placebo in testing. In many trials, both patients and doctors are kept unaware of which treatment each patient receives. To count as effective in such a comparison, the medicine must help significantly more than the placebo; improvement within the medicine group alone is insufficient.\n\n<보기>\nㄱ. 유효 성분이 없는 처치를 받고 통증이 줄었다고 해도 그 경험을 상상에 불과하다고 단정할 수 없다.\nㄴ. 알약 두 개가 한 개보다 강한 플라시보 효과를 보였다면, 두 개에 포함된 유효 성분의 총량이 더 많았다고 판단할 수 있다.\nㄷ. 실제 약을 받은 집단의 증상이 호전되었다는 정보만으로는 글에서 제시한 효과 판정 기준의 충족 여부를 알 수 없다.\nㄹ. 플라시보를 받은 집단에 호전이 나타났다면, 실제 약을 받은 집단의 결과와 관계없이 그 약은 효과가 없다고 판단할 수 있다.",
+"answer": "⑤",
+"solution": "ㄴ: 글은 플라시보에 유효 성분이 없다고 하며, 알약 개수에 따른 차이를 처치가 제시되는 방식의 영향으로 설명한다. 따라서 효과 차이를 유효 성분 총량으로 설명한 ㄴ은 추론할 수 없다. ㄹ: 약은 플라시보보다 유의미하게 더 도움이 되어야 효과가 있다고 인정된다. 그러므로 플라시보 집단의 호전만 보고 실제 약 집단과 비교하지 않은 채 효과를 부정할 수 없다. ㄱ: 기대가 뇌에서 천연 진통 물질을 분비하게 할 수 있다고 했으므로 글이 뒷받침한다. ㄷ: 'improvement within the medicine group alone is insufficient'와 일치한다. 따라서 정답은 ㄴ, ㄹ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄷ, ㄹ",
+"ㄴ, ㄹ"
+]
+},
+{
+"id": "fill-c0e782ea2c",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 설명으로 뒷받침되지 않는 진술만을 <보기>에서 모두 고른 것은?\n\nPast effort can influence both our decisions and our feelings about objects, but these influences should be distinguished. The sunk cost fallacy occurs when an unrecoverable investment becomes the reason to continue an activity. Suppose you have spent time assembling a cabinet and must decide whether to work on it for another hour. The time already spent cannot be regained. Whether you should continue depends on the future value of finishing compared with that of other uses of the hour. The IKEA effect concerns a different question: how much you value something you have made. Successful completion can make a self-assembled object feel more valuable than an identical ready-made one, whereas the effect may disappear if the work remains unfinished. Thus, the decision to continue working and the later feeling that the finished object is special require separate explanations.\n\n<보기>\nㄱ. 수납장을 완성한 뒤 애착이 생겼다면, 그것을 근거로 완성 전에 작업을 계속한 결정도 합리적이었다고 볼 수 있다.\nㄴ. 남은 한 시간을 다른 일에 쓸 때보다 완성에서 더 큰 가치를 얻을 것으로 판단했다면, 작업을 계속하는 선택은 합리적일 수 있다.\nㄷ. 미완성 수납장에 IKEA 효과가 나타나지 않았다면, 이미 들인 시간을 이유로 작업을 계속하려는 매몰 비용의 오류도 나타나지 않는다.\nㄹ. 동일한 완제품보다 직접 완성한 수납장을 더 소중히 여기더라도, 두 물건의 물리적 품질이 다르다고 결론 내릴 수는 없다.",
+"answer": "③",
+"solution": "ㄱ: 완성 후의 애착은 IKEA 효과로 설명되는 감정이다. 작업을 계속한 결정의 합리성은 당시에 완성의 미래 가치를 그 시간의 다른 쓰임과 비교해 판단해야 한다. 글은 이 둘을 따로 설명해야 한다고 했으므로 ㄱ은 뒷받침되지 않는다. ㄷ: IKEA 효과는 물건에 대한 평가의 문제이고, 매몰 비용의 오류는 계속 여부를 결정하는 문제이다. 따라서 미완성이라 IKEA 효과가 나타나지 않더라도, 이미 쓴 시간을 이유로 작업을 계속하는 오류는 생길 수 있다. 그러므로 ㄷ도 뒷받침되지 않는다. ㄴ: 미래 가치를 비교해 판단한 경우이므로 글과 일치한다. ㄹ: 글은 'an identical ready-made one'과 비교해도 직접 만든 물건이 더 가치 있게 느껴질 수 있다고 했으므로 글과 일치한다. 따라서 정답은 ㄱ, ㄷ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄹ",
+"ㄷ, ㄹ"
+]
+},
+{
+"id": "fill-c02194b104",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용으로 추론할 수 없는 것은?\n\nEmperor penguins live in Antarctica, one of the coldest places on Earth. To survive the freezing winter, they huddle together in large groups. The birds on the outside of the group block the icy wind, keeping those in the center warm. The penguins take turns, so no single bird has to stay in the cold too long. Emperor penguins also have a thick layer of fat and tightly packed feathers that keep heat in. Fathers, not mothers, keep the eggs warm. After the female lays an egg, she goes to the sea to find food, and the male holds the egg on his feet under a warm flap of skin for about two months.",
+"answer": "⑤",
+"solution": "글에서 황제펭귄은 두꺼운 지방층과 촘촘한 깃털(tightly packed feathers)로 열을 가둔다고 했다. 따라서 깃털이 없어 지방층만으로 체온을 유지한다는 ⑤는 글과 어긋나 추론할 수 없다. ①은 'huddle together in large groups', ②는 'The birds on the outside of the group block the icy wind', ③은 'The penguins take turns', ④는 암컷이 먹이를 찾으러 바다에 가고 수컷이 알을 품는다는 내용에서 각각 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"황제펭귄은 추위를 견디기 위해 무리를 지어 모인다.",
+"무리 바깥쪽에 있는 펭귄들은 찬 바람을 막아 준다.",
+"펭귄들은 자리를 바꿔 가며 추운 바깥쪽을 나눠 맡는다.",
+"암컷이 바다에 가 있는 동안 수컷이 알을 품는다.",
+"황제펭귄은 깃털이 없어 지방층만으로 체온을 유지한다."
+]
+},
+{
+"id": "fill-087bca72f2",
+"typeId": "eng-h1-u0m1s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용으로 추론할 수 없는 것은?\n\nCamels live in hot, dry deserts. Many people think a camel's hump is full of water, but it is actually full of fat. When food is hard to find, the camel's body breaks down this fat for energy. A camel can also go for many days without drinking, and when it finally reaches water, it can drink a huge amount in just a few minutes. Its long eyelashes and its ability to close its nostrils protect its eyes and nose from blowing sand. Thick pads on its feet keep it from sinking into the soft sand. Thanks to these features, camels have been used to carry people and goods across deserts for thousands of years.",
+"answer": "⑤",
+"solution": "글에서 발바닥의 두꺼운 패드가 부드러운 모래에 빠지지 않게 해 준다고 했다. 또 이런 특징 덕분에 낙타가 수천 년 동안 사막을 건너는 데 이용되어 왔다고 했으므로, ⑤는 글과 어긋나 추론할 수 없다. ①은 'it is actually full of fat', ②는 'breaks down this fat for energy', ③은 'go for many days without drinking', ④는 'long eyelashes ... protect its eyes'에서 각각 확인된다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m1s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"낙타의 혹에는 물이 아니라 지방이 들어 있다.",
+"낙타는 먹이가 부족할 때 혹의 지방을 에너지로 쓴다.",
+"낙타는 며칠 동안 물을 마시지 않고도 지낼 수 있다.",
+"긴 속눈썹은 날리는 모래로부터 눈을 보호해 준다.",
+"낙타는 모래에 쉽게 빠져 사막을 건너는 데 적합하지 않다."
+]
+},
+{
+"id": "fill-71ecd65f2e",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "글의 내용이 자연스럽게 이어지도록 주어진 문장을 넣을 위치를 고르시오.\n\n[주어진 문장]\nThe yellow and orange colors that had been covered by it can then be seen clearly.\n\nThe colorful leaves of autumn are produced in more than one way. (가) In spring and summer, leaves contain large amounts of chlorophyll, which allows plants to make food using sunlight. (나) This green pigment is so abundant that it covers the yellow and orange pigments already present in the leaves. (다) When autumn brings shorter and cooler days, trees stop making chlorophyll, and the green color fades. (라) Red leaves develop differently because some trees produce new red pigments during autumn. (마) Since the production of these pigments is affected by the weather, the strength of the red color varies from year to year.",
+"answer": "④",
+"solution": "주어진 문장의 it은 바로 앞에서 사라진 chlorophyll을 가리킨다. 엽록소가 줄어든 결과 기존의 노란색과 주황색이 드러난다는 내용이므로 (라)에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① (가)",
+"② (나)",
+"③ (다)",
+"④ (라)",
+"⑤ (마)"
+]
+},
+{
+"id": "fill-d3d70a6b1e",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 논리적 흐름을 고려할 때, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThat same explanation, however, also tells a person in need how to make help more likely.\n\nA person facing an emergency in a busy place may expect a large crowd to provide greater safety. (가) Research on the bystander effect shows that the opposite can happen. (나) In an experiment, people who thought they alone had heard an emergency offered help more often than those who believed several others had heard it as well. (다) When many people are present, responsibility is divided among them, and each person may expect someone else to act. (라) A person who needs assistance should therefore select one individual from the crowd and ask that person directly. (마) A direct request makes the selected individual feel personally responsible instead of leaving the duty to the group.",
+"answer": "④",
+"solution": "주어진 문장의 That same explanation은 앞에서 설명한 책임 분산을 가리킨다. 또한 however를 통해 현상의 부정적인 원리에서 도움을 받을 수 있는 실용적인 방법으로 전환하므로 (라)가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① (가)",
+"② (나)",
+"③ (다)",
+"④ (라)",
+"⑤ (마)"
+]
+},
+{
+"id": "fill-e8131be023",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "문맥상 주어진 문장이 들어가야 할 위치로 가장 적절한 것을 고르시오.\n\n[주어진 문장]\nThis later behavior could not be explained by a lack of interest at the beginning, since every child had already enjoyed the activity.\n\nRewards are commonly expected to strengthen motivation, but they may have the opposite effect on an activity that is already enjoyable. (가) Researchers studied preschool children who liked drawing with colored markers. (나) Some children were promised a certificate for drawing, whereas the others were offered no reward. (다) When the markers were made available again several days later, the children who had expected the certificate chose to draw much less often on their own. (라) The researchers concluded that the promised reward had changed the meaning of drawing from an enjoyable activity into work performed for a prize. (마) This reduction of natural interest following an external reward is known as the overjustification effect.",
+"answer": "④",
+"solution": "This later behavior는 보상을 기대했던 아이들이 나중에 자발적으로 그림을 덜 그린 행동을 가리킨다. 주어진 문장은 그 결과가 원래의 흥미 부족 때문이 아님을 밝힌 뒤 연구진의 해석으로 이어지므로 (라)가 가장 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① (가)",
+"② (나)",
+"③ (다)",
+"④ (라)",
+"⑤ (마)"
+]
+},
+{
+"id": "fill-332f4cd761",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "주어진 문장이 글의 흐름에 가장 자연스럽게 연결되는 곳은?\n\n[주어진 문장]\nBy that point, what had been introduced as a solution had itself become a widespread problem.\n\nA species moved into a new environment may encounter conditions very different from those in its original home. (가) In its native environment, predators, diseases, and competitors prevent its population from growing without limit. (나) If these natural controls are absent in the new environment, however, the species can multiply rapidly. (다) Cane toads were taken to Australia to eat beetles that were harming sugar cane crops. (라) The toads did little to control the beetles, and without natural enemies, they increased in number and spread across a large part of northern Australia. (마) The damage became even more serious because their poisonous skin killed many native animals that attempted to eat them.",
+"answer": "⑤",
+"solution": "By that point는 두꺼비가 해충을 제대로 줄이지 못한 채 널리 퍼진 시점까지의 내용을 받아야 한다. 주어진 문장으로 두꺼비가 새로운 문제 자체가 되었음을 정리한 뒤 독성으로 인한 추가 피해를 제시하는 (마)가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① (가)",
+"② (나)",
+"③ (다)",
+"④ (라)",
+"⑤ (마)"
+]
+},
+{
+"id": "fill-0bed2fd217",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "글의 세부적인 연결 관계를 고려하여 주어진 문장이 들어갈 최적의 위치를 고르시오.\n\n[주어진 문장]\nBecause only one side possessed this extra information, any estimate made from that side's viewpoint was likely to be distorted.\n\nOnce people know something, they often find it difficult to reconstruct the experience of someone who does not know it. (가) This is one reason experts may struggle to explain familiar ideas to beginners. In a well-known experiment, some participants tapped the rhythms of familiar songs while others tried to identify them. (나) As they tapped, the first group automatically heard the missing melodies in their minds. (다) The listeners, by contrast, received no melody and heard only separate knocks on a table. (라) The tappers expected the listeners to recognize about half of the songs, but the listeners actually identified only a very small proportion. (마) The large gap between the prediction and the result illustrates the curse of knowledge.",
+"answer": "④",
+"solution": "this extra information은 두드리는 사람들이 머릿속에서 들은 멜로디를 뜻하며, only one side는 그들과 단순한 소리만 들은 청자들의 대조를 전제로 한다. 따라서 두 집단의 경험이 모두 제시된 뒤, 두드린 사람들의 잘못된 예측이 나오기 직전인 (라)가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① (가)",
+"② (나)",
+"③ (다)",
+"④ (라)",
+"⑤ (마)"
+]
+},
+{
+"id": "fill-67f11b2e22",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 주어진 문장을 글에 삽입할 때 문맥이 가장 긴밀해지는 위치는?\n\n[주어진 문장]\nThe later decline must therefore be understood in light of the fact that the children's original interest had already been established.\n\nAn external reward does not affect every activity in the same way. (가) In an experiment involving drawing, researchers selected children who already spent time using colored markers for enjoyment. (나) One group was told beforehand that drawing would earn a certificate, while another group drew without being offered one. (다) When the markers appeared again later with no reward being offered, the children who had expected the certificate spent less time drawing freely. (라) The promised prize seemed to have replaced enjoyment with an external reason for taking part. (마) This is why the finding supports the overjustification effect rather than the general claim that rewards always reduce motivation.",
+"answer": "④",
+"solution": "The later decline은 보상을 기대했던 아이들이 나중에 자유롭게 그림을 그린 시간이 감소한 결과(다 뒤 문장)를 가리킨다. 주어진 문장은 이 감소를 아이들의 기존 흥미와 연결해 해석해야 한다고 강조하며, 이어지는 '외적 동기로의 전환'(라 뒤 문장) 설명을 준비한다. 따라서 (라)가 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① (가)",
+"② (나)",
+"③ (다)",
+"④ (라)",
+"⑤ (마)"
+]
+},
+{
+"id": "fill-3f19ea0c05",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nFor instance, you could study for 25 minutes and then rest for 5 minutes.\n\nMany students believe that studying for hours without stopping is the best way to learn. ( A ) However, our brains cannot stay focused for a long time without rest. ( B ) If you keep studying when you are tired, you may read the same page again and again without understanding it. ( C ) That is why it is a good idea to take short breaks while you study. ( D ) During those five minutes, you can stretch, drink some water, or look out the window. ( E ) After a short rest, you will feel refreshed and be able to concentrate again. In the end, short breaks can help you study more effectively, not less.",
+"answer": "④",
+"solution": "주어진 문장은 For instance로 시작하므로, 앞에는 이 문장이 예로 드는 조언이 와야 한다. 그 조언은 공부하는 동안 짧은 휴식을 하라는 내용이다. 또 (D) 뒤의 those five minutes는 주어진 문장의 rest for 5 minutes를 가리킨다. 따라서 주어진 문장은 짧은 휴식을 권하는 문장과 쉬는 5분 동안 할 일을 말하는 문장 사이인 (D)에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+]
+},
+{
+"id": "fill-65eefa6c55",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 1,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nThen, when the bee flies to another flower, some of this pollen rubs off onto that flower.\n\nBees are small insects, but they play a big role in nature. ( A ) While a bee is drinking nectar from a flower, tiny grains of pollen stick to its hairy body. ( B ) This process helps flowers produce seeds and fruit. ( C ) In fact, many of the fruits and vegetables we eat need bees to grow. ( D ) For this reason, farmers sometimes bring beehives to their fields. ( E ) So the next time you see a bee, remember that it is working hard for all of us.",
+"answer": "②",
+"solution": "주어진 문장의 this pollen은 앞 문장에 나온 벌의 몸에 붙은 꽃가루(pollen)를 가리킨다. 그리고 Then은 꽃가루가 몸에 붙은 다음 단계를 나타낸다. (B) 뒤의 This process는 꽃가루가 몸에 붙었다가 다른 꽃에 묻는 전체 과정을 가리킨다. 따라서 주어진 문장은 (B)에 들어가야 흐름이 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+]
+},
+{
+"id": "fill-be82808e31",
+"typeId": "eng-h1-u0m2s1t0",
+"kind": "객관식",
+"diff": 2,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n[주어진 문장]\nAs a result, ice is lighter than the same amount of liquid water, so it floats.\n\nMost substances take up less space when they change from a liquid to a solid. ( A ) Water, however, is different. ( B ) When water freezes, its molecules arrange themselves in a pattern that takes up more space, so the water expands. ( C ) This unusual property is very important for life on Earth. ( D ) In winter, ice forms on the surface of lakes and rivers and acts like a blanket, keeping the water below from freezing. ( E ) Thanks to this, fish and other water animals can survive even in very cold weather.",
+"answer": "③",
+"solution": "주어진 문장은 As a result로 시작하므로, 앞에는 그 원인이 와야 한다. 원인은 물이 얼 때 부피가 늘어난다는 내용이다. 또 (D)에서 얼음이 호수 표면에 생긴다는 내용이 나오려면, 그 전에 얼음이 물에 뜬다는 사실이 먼저 나와야 한다. 따라서 주어진 문장은 물의 팽창을 설명한 문장 뒤, 이 특성의 중요성을 말하는 문장 앞인 (C)에 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m2s1t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+]
+},
+{
+"id": "fill-f4d3bcd620",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵게 표시된 표현이 나타내는 태도로 가장 적절한 것은?\n\nDuring a disagreement, we often think about what to say next instead of listening. We may believe that the other person is simply wrong because we do not know what experiences shaped their opinion. To understand them better, we need to **look through their window for a moment**. We can ask what worries them and why a particular issue matters to them. Their answers may help us understand how they reached their opinion. This does not mean that we must give up our own beliefs. We can keep a different opinion while recognizing that the other person has reasons for theirs.",
+"answer": "④",
+"solution": "뒤에 이어지는 문장들은 상대방이 무엇을 걱정하고 왜 그 문제를 중요하게 여기는지 알아보라고 설명한다. 따라서 해당 표현은 상대방의 경험과 상황을 고려하여 그 관점을 이해하려는 태도를 뜻한다. 자신의 생각을 포기하거나 상대방의 의견에 반드시 동의한다는 의미는 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"상대방이 의견을 바꿀 때까지 자신의 주장을 반복하는 태도",
+"갈등을 피하려고 자신의 의견을 숨기는 태도",
+"상대방의 말보다 겉으로 드러나는 행동을 중시하는 태도",
+"상대방의 경험과 걱정을 고려하여 그 관점을 이해하려는 태도",
+"좋은 관계를 유지하기 위해 상대방의 의견을 그대로 받아들이는 태도"
+]
+},
+{
+"id": "fill-9d19edcdf0",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 굵게 표시한 부분의 문맥상 의미로 가장 적절한 것은?\n\nA falling test score is easy to notice, but the reason for it may not be. A student may be sleeping badly or feeling upset about a friendship. Adults sometimes respond by adding more study hours without asking about these difficulties. Yet **the score is an alarm bell, not an explanation**. It tells us that something needs attention, but it does not tell us exactly what is wrong. Talking with the student can reveal problems that the test result cannot show. If adults focus only on raising the number, the difficulty behind it may continue.",
+"answer": "①",
+"solution": "성적 하락은 문제가 있음을 알려 주지만 수면 문제나 친구 관계 등 구체적인 원인을 직접 설명하지는 못한다. 따라서 성적을 원인에 대한 설명이 아니라 추가적인 관심과 대화가 필요한 신호로 보아야 한다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"A lower score shows that something may be wrong without identifying its cause.",
+"A lower score proves that the student needs a longer daily study schedule.",
+"A lower score explains which friendship problem the student is experiencing.",
+"A lower score is too unreliable to deserve attention from adults.",
+"A lower score means that the student's difficulties will disappear without help."
+]
+},
+{
+"id": "fill-2bbd931dca",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 굵은 글씨에 담긴 의미를 가장 잘 설명한 것은?\n\nIn a group discussion, a suggestion can begin to sound convincing simply because one member presents it with confidence and repeats it. Meanwhile, a quieter member may have a better reason for choosing another option but struggle to enter the conversation. When the group accepts the repeated suggestion without comparing the reasons behind both ideas, **confidence has taken the judge's seat**. The decision then reflects how an idea was presented more than how carefully it was developed. Asking members to write their suggestions before speaking can help. The group can then consider the ideas themselves, including those that might otherwise receive little attention.",
+"answer": "③",
+"solution": "모둠은 두 의견의 근거를 비교하지 않고 자신 있게 반복된 제안을 받아들인다. 따라서 자신감이 판사의 자리를 차지했다는 표현은 발표자의 자신감이 의견의 가치를 판단하는 기준으로 작용했다는 뜻이다. 글은 이를 해결하기 위해 말하기 전에 각자의 제안을 적는 방법을 제시한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"A confident member has been officially chosen to lead the discussion.",
+"The group has become more confident after comparing all available reasons.",
+"The group is using the speaker's confidence to judge the value of an idea.",
+"Members are building confidence by explaining their ideas in writing.",
+"A quiet member's idea has been accepted because it received less attention."
+]
+},
+{
+"id": "fill-712b749936",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 굵게 표시된 부분이 함축하는 의미로 가장 적절한 것은?\n\nWhen practicing a difficult musical passage, a learner may judge progress by how easily the fingers move. However, ease alone can be misleading. If the same incorrect movement is repeated, it may gradually feel natural even though it still produces the wrong result. In that case, the learner is **making the wrong road easier to travel**. Slowing down to examine the movement can feel like a step backward because the passage becomes less smooth for a while. Yet this pause allows the learner to replace the faulty movement before repeating it. The important question is therefore not simply whether a passage feels easier, but whether the movement becoming easier is the one the learner actually needs.",
+"answer": "②",
+"solution": "글은 잘못된 동작도 반복하면 자연스럽고 쉽게 느껴질 수 있다고 설명한다. 따라서 해당 표현은 오류가 교정된 것이 아니라 잘못된 동작이 반복을 통해 더 수월하게 수행되도록 굳어지고 있다는 뜻이다. 연주가 매끄러워졌다는 사실을 정확성이 향상되었다는 증거로 오해하지 않는 것이 핵심이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Choosing an easier passage to avoid practicing a difficult movement",
+"Strengthening an incorrect movement until it can be performed with less effort",
+"Losing a useful skill by examining each movement too carefully",
+"Developing the correct movement by increasing speed before checking accuracy",
+"Finding several acceptable ways to perform a passage through repeated practice"
+]
+},
+{
+"id": "fill-1b2e6b5355",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 굵게 표시한 표현을 문맥에 맞게 해석한 것으로 가장 적절한 것은?\n\nAn online feed may contain hundreds of posts and still offer a narrow picture of an issue. A platform can select posts according to a user's earlier clicks, so different writers may repeatedly present views the user already prefers. Because the names and photographs change, the user may feel that many independent voices confirm the same conclusion. However, the user may be **counting echoes as separate witnesses**. Agreement within such a feed does not necessarily show how widely an opinion is shared outside it. To judge an issue more carefully, users need to examine views beyond those selected to match their interests. The number of posts matters less than whether they provide genuinely different ways of thinking.",
+"answer": "⑤",
+"solution": "맞춤형 피드에서는 작성자가 달라도 사용자의 기존 선호에 맞는 견해가 반복적으로 제시될 수 있다. 해당 표현은 이렇게 선별된 공간 안의 동의를 자신의 믿음이 더 넓은 범위에서 지지받는다는 근거로 착각한다는 뜻이다. 작성자가 모두 같은 사람이라는 의미가 아니라, 선택된 정보의 편향을 놓친다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Rejecting similar opinions because they are expressed by different writers",
+"Assuming that repeated posts were all secretly written by one person",
+"Comparing conflicting opinions to determine which has stronger support",
+"Checking the popularity of an opinion by examining sources outside the feed",
+"Mistaking agreement in a personalized feed for broader confirmation of a belief"
+]
+},
+{
+"id": "fill-01efbff771",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 논지를 고려할 때, 굵게 표시된 부분에 담긴 의미로 가장 적절한 것은?\n\nThe number of calls handled by a worker can provide useful information about a call center. However, its meaning depends on how those calls are handled. Suppose workers are rewarded mainly for completing more calls. They may begin ending conversations sooner, even when customers still need help. The total then rises, but the change may reflect a response to the reward rather than an improvement in service. If managers continue treating every increase as proof of success, they are **letting the scoreboard rewrite the rules of success**. The problem is not that the total has been counted incorrectly. It is that finishing calls has quietly replaced helping customers as the practical goal. Managers can still use the total, but they must consider it alongside evidence of whether customers' problems were solved.",
+"answer": "②",
+"solution": "통화 처리 건수는 원래 서비스 성과를 파악하기 위한 지표이지만, 보상이 건수에 집중되면 고객의 문제 해결보다 통화 종료 자체가 목표가 된다. 따라서 해당 표현은 지표가 나타내야 할 실제 성과가 나빠져도 지표의 상승을 성공으로 받아들이는 목표의 대체를 의미한다. 집계가 부정확하다는 뜻이나 수치를 완전히 버려야 한다는 뜻은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Allowing the ease of collecting a figure to determine how frequently service is reviewed",
+"Treating the rewarded figure as the goal even when raising it weakens the outcome it should represent",
+"Revising the service goal after confirming that faster calls solve customers' problems more effectively",
+"Assuming that a performance figure becomes useless whenever workers know it is being recorded",
+"Explaining poor service as a counting error rather than checking whether enough calls were completed"
+]
+},
+{
+"id": "fill-a6a05d2f58",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 굵게 표시한 부분의 함축적 의미를 가장 정확하게 설명한 것은?\n\nSeeking opinions outside a personalized feed can help us examine our beliefs, but access alone does not guarantee understanding. We can read an opposing argument while noticing only statements that seem easy to attack. We can also prepare our reply before considering the experiences that make the argument reasonable to its writer. Although a different view has reached us, it has had no real chance to influence our thinking. In this situation, **we have opened the door but kept the conversation outside**. The missing step is not necessarily agreement. After considering another person's reasons fairly, we may still reject the conclusion. What matters is whether we allow those reasons to test our own view, rather than treating the encounter only as an opportunity to defend what we already believe.",
+"answer": "④",
+"solution": "글은 다른 의견에 접하는 것과 그 의견의 근거를 공정하게 검토하는 것을 구별한다. 문을 열고도 대화를 밖에 두었다는 표현은 반대 의견을 읽기는 했지만 기존 생각을 방어하는 데만 집중하여 그 근거가 자신의 생각을 검증할 기회를 주지 않았다는 뜻이다. 충분히 이해한 뒤에도 결론에는 동의하지 않을 수 있으므로, 의견 불일치 자체를 이해의 실패로 보는 ⑤는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Accepting another person's conclusion before examining the reasons supporting it",
+"Avoiding unfamiliar opinions until we can respond to them with complete confidence",
+"Understanding an opposing argument but refusing to express our disagreement openly",
+"Encountering an opposing view without allowing its reasons to challenge our own thinking",
+"Failing to understand another person's reasons because we still disagree with the conclusion"
+]
+},
+{
+"id": "fill-31f2e09944",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nWhen I was learning to ride a bike, I fell down again and again. Each time, my knees hurt and I wanted to give up. My father, however, kept saying, \"Falling is just part of learning.\" He told me that every child who can ride a bike today has **fallen many times before**. So instead of being afraid of falling, I began to see each fall as one more step toward success. After a week, I was finally able to ride all the way to the park by myself. Now, whenever I try something new and fail, I remember my father's words. Mistakes are not the end; they are how we learn.",
+"answer": "①",
+"solution": "넘어지는 것을 배움의 일부로 보라는 아버지의 말과, 넘어짐을 성공으로 가는 한 걸음으로 받아들였다는 내용이 핵심이다. 글 전체가 실수는 끝이 아니라 배우는 방법이라고 말하고 있다. 따라서 굵은 글씨는 실패가 배움의 자연스러운 과정이라는 뜻이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"실패는 배우는 과정의 자연스러운 일부라는 것",
+"넘어지면 크게 다칠 수 있다는 것",
+"자전거를 타는 것은 매우 위험하다는 것",
+"혼자서는 아무것도 배울 수 없다는 것",
+"아버지의 말을 믿어서는 안 된다는 것"
+]
+},
+{
+"id": "fill-e252850984",
+"typeId": "eng-h1-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글에서 굵은 글씨로 표시한 부분이 의미하는 바로 가장 적절한 것은?\n\nMy grandmother grows vegetables in her small garden. One spring, I asked her why she did not simply buy them at the store, which would be much faster. She smiled and said, \"Good things take time.\" She explained that a plant needs many days of sun, water, and care before it is ready to eat. If you pull it up too early, you get nothing. The same is true for learning a language or building a friendship. You cannot rush them. When I feel impatient about my studies, I think of her garden and remember that **you cannot pull up a plant to make it grow faster**. Real growth happens slowly, one day at a time.",
+"answer": "①",
+"solution": "할머니는 좋은 것에는 시간이 걸린다며 식물을 억지로 빨리 자라게 할 수 없다고 말한다. 이는 언어 학습이나 우정처럼 진짜 성장은 하루하루 천천히 이루어진다는 비유이다. 따라서 굵은 글씨는 좋은 결과에는 시간과 꾸준함이 필요하다는 뜻이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"좋은 결과에는 시간과 꾸준함이 필요하다는 것",
+"식물은 물을 주지 않아도 자란다는 것",
+"채소는 가게에서 사는 것이 더 낫다는 것",
+"공부는 빨리 끝낼수록 좋다는 것",
+"할머니의 정원은 너무 작다는 것"
+]
+},
+{
+"id": "fill-328e2777b6",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nAn unfamiliar English idiom may seem like a group of words that makes little sense. Instead of simply memorizing its meaning, find out where the expression came from. The story behind it can make learning more enjoyable. It can also make the meaning easier to remember and help you judge when to use the expression. When an idiom puzzles you, spend some time exploring its background.",
+"answer": "①",
+"solution": "필자는 낯선 관용어의 뜻만 외우지 말고 그 표현이 어디서 유래했는지 알아보라고 한다. 유래를 알면 학습이 즐거워지고, 의미를 기억하기 쉬워지며, 언제 그 표현을 써야 할지 판단하는 데도 도움이 된다는 것이다. 마지막 문장에서도 관용어가 이해되지 않으면 그 배경을 탐구하라고 다시 강조한다. 따라서 낯선 관용어의 유래를 공부하라는 ①이 필자의 주장이다. ③은 단어를 하나씩 외우라는 내용이어서 단순 암기를 넘어서라는 글의 취지와 반대된다. ②·④·⑤는 글에 언급되지 않은 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Learn the history behind unfamiliar idioms.",
+"Use as many idioms as possible in every conversation.",
+"Memorize each word separately before studying an idiom.",
+"Choose expressions mainly because they sound interesting.",
+"Avoid idioms whose meanings are difficult to guess."
+]
+},
+{
+"id": "fill-8553402f82",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 조언을 가장 잘 나타낸 것은?\n\nAfter a busy school day, watching videos on your phone may feel relaxing. However, spending too much time with a screen can leave you mentally tired. Put your devices away for a while and give your attention to the people around you. You can also use that time to think about yourself. A regular break from technology can help you focus on what matters in your life.",
+"answer": "④",
+"solution": "필자는 과도한 화면 사용이 정신적 피로를 일으킬 수 있으므로 기기를 내려놓는 시간을 가지라고 조언한다. 그 시간을 자신과 주변 사람들에게 집중하는 데 활용하라는 ④가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Use your phone whenever you feel mentally tired.",
+"Spend your free time learning about new digital devices.",
+"Choose online conversations over time with your family.",
+"Make time away from screens to focus on yourself and others.",
+"Finish watching all your favorite videos before taking a break."
+]
+},
+{
+"id": "fill-2e4e582418",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 필자가 독자에게 권하는 행동은?\n\nBefore buying another piece of clothing, ask yourself whether you really need it. Buying clothes without thinking can create more waste. Also, clothes that you no longer want may still be useful to someone else. If they can still be worn, pass them on to another person or take them to a secondhand shop. Your choices when buying and getting rid of clothes can help reduce waste.",
+"answer": "②",
+"solution": "필자는 옷을 사기 전에 필요성을 확인하고, 입을 수 있는 옷은 다른 사람이나 중고품 가게에 전달하라고 권한다. 구매와 처분 단계에서 쓰레기를 줄이는 두 행동을 모두 담은 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Replace old clothes whenever a new style appears.",
+"Purchase necessary clothes and pass usable ones on to others.",
+"Keep every item of clothing even if nobody can wear it.",
+"Buy more clothes to support clothing stores.",
+"Throw away unwanted clothes before buying new ones."
+]
+},
+{
+"id": "fill-380335b37b",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 논지를 바탕으로 할 때, 필자의 주장으로 가장 적절한 것은?\n\nPeople who have succeeded in a field can teach you a great deal about preparing for it. You may discover useful skills by talking with them or watching them work. Still, their experience does not provide a ready-made route for everyone. Your strengths and the skills you need to develop may be different from theirs. Use what you learn to examine the distance between your present abilities and your goal. Then choose a step that helps you close that distance. Advice becomes useful when it guides action suited to your own situation.",
+"answer": "⑤",
+"solution": "성공한 사람의 경험은 도움이 되지만 개인마다 강점과 보완할 능력이 다르다는 것이 글의 전제이다. 따라서 그 경험을 참고하여 자신의 목표 달성에 필요한 부분을 찾아 보완하라는 ⑤가 적절하다. ①은 다른 사람의 경로를 그대로 적용할 수 없다는 글의 내용에 어긋난다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Follow a successful person's career steps in the same order.",
+"Decide on your career before asking anyone for advice.",
+"Choose a goal that requires only the skills you already possess.",
+"Collect advice until you can avoid every possible difficulty.",
+"Use others' experience to identify and address your own needs."
+]
+},
+{
+"id": "fill-d75327943c",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에서 필자가 궁극적으로 촉구하는 것은?\n\nMany people think about their digital footprints only when they post a message or upload a picture. Yet visiting websites and using mobile services can leave information behind without a deliberate decision to share it. Removing a post later does not necessarily remove every copy, either. Someone may already have collected the information, and harmful online behavior may affect how others view you. Therefore, paying attention only to what you intentionally publish is not enough. Consider the traces left by your online activities as a whole and work to limit and manage them.",
+"answer": "③",
+"solution": "글은 의도적으로 게시한 정보뿐 아니라 웹사이트 방문이나 모바일 서비스 이용도 디지털 흔적을 남길 수 있다고 설명한다. 따라서 의도적 공유 여부와 관계없이 온라인 활동 전반에서 생기는 흔적을 관리해야 한다는 ③이 핵심 주장이다. ①은 게시물 삭제만으로 모든 사본이 사라지지는 않는다는 설명을 충분히 반영하지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Manage online information mainly by deleting embarrassing posts.",
+"Allow websites to decide which personal information should remain.",
+"Manage digital traces from both deliberate sharing and other online activities.",
+"Judge the safety of online activities by whether they involve public posts.",
+"Protect your reputation by sharing personal information only through apps."
+]
+},
+{
+"id": "fill-f459a256ec",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에 담긴 필자의 조언으로 가장 적절한 것은?\n\nA career plan is more useful when it begins with a clear picture of the person making it. List what interests you, what you do well, and what you have achieved. School courses and activities can give you clues, but your own view may not reveal everything. People who know you well may notice strengths that you have overlooked. Consider their observations alongside your own ideas. Rather than waiting for a suitable career to appear by chance, build an understanding of yourself and use it as the starting point for careful career research.",
+"answer": "①",
+"solution": "필자는 자신의 관심사와 강점 등을 돌아보고, 신뢰하는 사람들의 의견도 참고하여 자신을 이해하라고 조언한다. 이러한 자기 이해를 신중한 진로 탐색의 출발점으로 삼으라는 ①이 적절하다. 주변 사람의 관찰을 참고하라는 말이 진로 결정 자체를 맡기라는 뜻은 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Base career exploration on self-understanding informed by reflection and trusted feedback.",
+"Let people who know you well make the final decision about your career.",
+"Select a career according to your strongest school subject alone.",
+"Delay career research until your interests become permanent.",
+"Search for available jobs before considering your personal qualities."
+]
+},
+{
+"id": "fill-66ca314713",
+"typeId": "eng-h1-u0m0s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 전체 논지를 가장 충실하게 반영한 필자의 주장은?\n\nDeveloping clothing materials that create less waste is a useful step toward sustainable fashion. Producing clothes after customers order them can also help reduce waste. However, these changes address only part of a garment's journey. If the industry continues to encourage people to buy more and quickly throw clothes away, resources will still be lost. Consumers therefore have a role alongside producers: they can buy according to need and pass wearable clothes on for further use. At the same time, reuse should not become an excuse for unnecessary purchases. The aim is to keep materials useful for as long as possible. Progress should be judged by how production, purchasing, and reuse work together to reduce waste across the whole process.",
+"answer": "④",
+"solution": "필자는 낭비가 적은 소재 개발이나 주문 후 생산 같은 생산 측면의 개선을 인정한다. 그러나 이는 의류의 일생 중 일부만 다룰 뿐이며, 소비를 부추기고 빨리 버리는 관행이 계속되면 자원은 여전히 낭비된다고 지적한다. 그래서 소비자도 필요한 만큼 사고, 입을 수 있는 옷은 넘겨 계속 쓰이게 해야 한다고 말한다. 동시에 재사용이 불필요한 구매의 핑계가 되어서는 안 된다고 경계한다. 결론에서는 생산·구매·재사용이 함께 작동해 전 과정의 낭비를 줄이는지를 기준으로 진전을 판단해야 한다고 주장한다. 따라서 생산 개선을 신중한 구매 및 지속적 사용과 연계하라는 ④가 정답이다. ①은 구매와 처분 습관을 개인 선택에 맡겨 생산 단계로만 범위를 좁힌다. ③은 소비자의 선택이 생산의 변화를 대체할 수 있다고 하여 '생산자와 함께(alongside producers)'라는 내용에 어긋난다. ⑤는 평가 기준을 폐기 후 분해 용이성 하나로 좁힌다. ②는 재사용을 명분으로 구매를 늘리자는 내용이어서, 재사용이 불필요한 구매의 핑계가 되어서는 안 된다는 서술과 정면으로 충돌한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Make cleaner production the main solution while leaving purchasing and disposal habits to individual preference.",
+"Encourage purchases of reusable clothes so that a larger amount of clothing can enter the reuse cycle.",
+"Place the main responsibility on consumers because their choices can replace changes in clothing production.",
+"Coordinate production improvements with careful purchasing and continued use to reduce waste throughout clothing's life cycle.",
+"Evaluate sustainable fashion chiefly by how easily a new material breaks down after disposal."
+]
+},
+{
+"id": "fill-6f8922ff76",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nDigital literacy is more than knowing how to turn on a computer. It is the ability to find, evaluate, and use information wisely. In a world full of online content, we must judge whether what we read is true. People who have this skill do not believe everything they see. They check the source and think carefully before sharing. Therefore, developing digital literacy helps us deal with information in a smart and safe way.",
+"answer": "②",
+"solution": "글 전체는 디지털 리터러시가 단순한 컴퓨터 사용 능력이 아니라 정보를 현명하고 안전하게 다루는 능력임을 설명하고 있습니다. 마지막 문장 'developing digital literacy helps us deal with information in a smart and safe way'가 주제문이며, 이를 바꾸어 말한 ②가 정답입니다. 나머지는 지엽적 내용이거나 글과 어긋납니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Computers are becoming harder to use every year.",
+"Digital literacy is the ability to use information wisely and safely.",
+"Most online content is created by professional writers.",
+"Sharing information quickly is the key to digital success.",
+"People rarely check the sources of the news they read."
+]
+},
+{
+"id": "fill-00f0f91c5c",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nFalse information is any information that misleads or deceives people. It can appear on many platforms and be about many topics, such as health or the environment. Some people spread it on purpose, while others share it by mistake. Once it spreads, it can cause people to make wrong decisions. For this reason, false information can be harmful to both individuals and society.",
+"answer": "③",
+"solution": "글은 거짓 정보가 여러 주제·여러 경로로 퍼지며 결국 개인과 사회에 해를 끼친다는 점을 말합니다. 마지막 문장 'false information can be harmful to both individuals and society'가 주제문이므로 ③이 정답입니다. ①은 'some ... others'를 무시했고, ②는 'such as'(예시)를 전부로 오해한 것이며, ④·⑤는 본문에 없습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"False information is always spread on purpose by a few people.",
+"Health and the environment are the only topics of false information.",
+"False information can cause real harm to people and society.",
+"People can easily tell true information from false information.",
+"Platforms are responsible for creating most false information."
+]
+},
+{
+"id": "fill-127dd31741",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nAI image generators can create pictures in a very short time. They do this by studying millions of images made by humans and the words that describe them. When you give them a simple instruction, they quickly produce a new image. Some can even mix two different styles into one picture. In short, AI image generators make art by imitating and combining human-made images.",
+"answer": "②",
+"solution": "글은 AI 이미지 생성기가 사람이 만든 그림을 학습·모방하고 서로 다른 스타일을 섞어 그림을 만든다는 과정을 설명합니다. 'In short'로 시작하는 마지막 문장이 전체를 요약한 주제문이므로 ②가 정답입니다. ①·④는 본문과 반대이고, ③·⑤는 언급되지 않은 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"AI image generators need several days to finish one picture.",
+"AI image generators create art by imitating and combining human works.",
+"Human artists can no longer compete with AI programs.",
+"AI image generators can only copy a single image at a time.",
+"Writing instructions for AI is harder than drawing by hand."
+]
+},
+{
+"id": "fill-cbcfddbc2d",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nComics are not just for fun. They can take complex ideas and explain them in a simple and clear way. When words and pictures are used together, readers understand the message more easily. A single drawing can show a feeling that would take many sentences to describe. This is why comics can be powerful tools for communication. They also help people feel closer to one another by sharing stories.",
+"answer": "③",
+"solution": "글은 만화가 복잡한 생각을 쉽게 전달하고 사람들을 가깝게 만든다는 점을 들어 만화가 강력한 의사소통 수단임을 말합니다. 'This is why comics can be powerful tools for communication'이 핵심 주제문이므로 ③이 정답입니다. ①은 첫 문장('not just for fun')에 반하고, ②·④는 글의 '함께 쓸 때'라는 취지를 왜곡했으며, ⑤는 언급되지 않았습니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Comics are mainly a form of entertainment for children.",
+"Reading many sentences is the best way to understand feelings.",
+"Comics can serve as powerful tools for communication.",
+"Pictures should always be used instead of words.",
+"Drawing comics requires many years of professional training."
+]
+},
+{
+"id": "fill-cde32b5265",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nAI programs are changing the way music is made. These programs can already compose songs for you. You can choose the style, the key, and the length of the song. Once you enter the information, the program creates a song that you can use or edit. Thanks to such technology, making music has become easier and faster than before.",
+"answer": "②",
+"solution": "글은 AI 프로그램이 스타일·조성·길이를 정해 곡을 만들어 주어 음악 제작 방식을 바꾸고 있다는 내용이다. 첫 문장과 마지막 문장이 모두 이 중심 생각을 담고 있으므로 이를 바꾸어 쓴 ②가 정답이다. ①·⑤는 세부(여러 선택 요소 중 하나)를 과장했고, ③은 'edit'(수정 가능)과 반대이며, ④는 본문에 없는 내용이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"AI programs can only choose the key of a song.",
+"AI programs are transforming the way music is created.",
+"Editing a song is impossible once AI composes it.",
+"Human musicians compose better songs than AI programs.",
+"Choosing a song's length is the hardest part of making music."
+]
+},
+{
+"id": "fill-0bfc8f9bc2",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nWhen the boy first lost at table tennis, he felt like giving up. But instead of avoiding the game, he picked up the ball and tried again. He learned from each mistake and practiced hard after school and on weekends. Little by little, his skills improved, and he even began to win. His story shows that facing challenges, rather than avoiding them, helps us grow.",
+"answer": "③",
+"solution": "글은 소년이 실패를 피하지 않고 도전해 실력을 키운 이야기를 통해, 도전을 피하기보다 마주하는 것이 성장에 도움이 된다는 교훈을 전합니다. 마지막 문장 'facing challenges, rather than avoiding them, helps us grow'가 주제문이므로 ③이 정답입니다. ②는 글의 취지와 정반대이고, ①·④·⑤는 본문이 말하지 않은 내용입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Winning a game is more important than enjoying it.",
+"Avoiding difficult games is the safest way to stay happy.",
+"Facing challenges helps us grow more than avoiding them.",
+"Talent matters more than practice in sports.",
+"Practicing on weekends is the only way to improve."
+]
+},
+{
+"id": "fill-6332cc9924",
+"typeId": "eng-h1-u0m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 주제문으로 알맞은 것은?\n\nMany AI programs are open to the public and can be used freely. However, these programs have started a debate about their effect on humans. Some people see AI as a threat because it may learn skills and replace human workers. Others argue that AI cannot go beyond human imagination, since it depends on data that may be flawed or limited. Human imagination, they say, has no limits. Thus, people continue to argue over whether AI can truly surpass and replace humans.",
+"answer": "④",
+"solution": "글은 AI가 인간을 위협할 것이라는 견해와 인간 상상력을 넘지 못한다는 견해를 '한편으로는~다른 한편으로는' 구조로 나란히 제시하며, 두 입장이 계속 맞서는 '논쟁'이 핵심입니다. 'Thus'로 시작하는 마지막 문장이 주제문이므로 ④가 정답입니다. ②·③은 글에 나온 '한쪽 견해'일 뿐 전체 주제가 아니며(함정), ①·⑤는 세부 내용을 뒤틀어 만든 오답입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u0m0s0t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"The free use of AI programs has made human workers more creative.",
+"AI will surely replace humans because its data has no limits.",
+"AI's dependence on flawed data makes it completely useless.",
+"There is an ongoing debate over whether AI can surpass and replace humans.",
+"Human imagination is the main source of data that AI programs use."
+]
+},
+{
+"id": "fill-0c080f883f",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 뜻으로 가장 적절한 것을 고르시오.\n\nI did not understand the question until my teacher explained it again.",
+"answer": "④",
+"solution": "「not ~ until ...」은 ‘…하고 나서야 비로소 ~하다’라는 뜻이다. 따라서 선생님이 질문을 다시 설명한 뒤에야 내가 그 질문을 이해했다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"나는 선생님이 그 질문을 다시 설명하시기 전에 이미 이해했다.",
+"나는 그 질문을 이해했지만 선생님께 다시 설명해 달라고 했다.",
+"나는 선생님이 다시 설명하셨는데도 그 질문을 이해하지 못했다.",
+"나는 선생님이 그 질문을 다시 설명하시고 나서야 이해했다.",
+"나는 그 질문을 이해할 때까지 선생님께 계속 설명했다."
+]
+},
+{
+"id": "fill-0ee91ccc34",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장이 나타내는 의미를 우리말로 바르게 표현한 것을 고르시오.\n\nThe explanation was too difficult for me to understand.",
+"answer": "①",
+"solution": "「too + 형용사 + to부정사」는 ‘너무 ~해서 …할 수 없다’라는 의미이다. for me는 이해하는 주체가 ‘나’임을 나타내므로, 내가 이해하기에는 설명이 너무 어려웠다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"그 설명은 내가 이해하기에 너무 어려웠다.",
+"그 설명은 어려웠지만 나는 충분히 이해할 수 있었다.",
+"그 설명은 내가 이해할수록 더 어려워졌다.",
+"나는 그 설명을 이해하기 위해 어려운 내용을 설명했다.",
+"그 설명은 내가 이해할 만큼 충분히 쉬웠다."
+]
+},
+{
+"id": "fill-4d49cc1c22",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 해석으로 가장 적절한 것을 고르시오.\n\nWhether you can solve the problem depends not on how quickly you read it but on how carefully you think about it.",
+"answer": "③",
+"solution": "Whether가 이끄는 절은 문장의 주어로, ‘네가 그 문제를 풀 수 있는지’를 뜻한다. 「not A but B」는 ‘A가 아니라 B’이므로, 문제 해결 여부를 결정하는 것은 읽는 속도가 아니라 생각하는 신중함이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"네가 그 문제를 얼마나 빨리 읽을 수 있는지는 얼마나 신중하게 답을 쓰느냐에 달려 있다.",
+"네가 그 문제를 풀 수 있는지는 얼마나 신중하게 생각하느냐보다 얼마나 빨리 읽느냐에 달려 있다.",
+"네가 그 문제를 풀 수 있는지는 얼마나 빨리 읽느냐가 아니라 얼마나 신중하게 생각하느냐에 달려 있다.",
+"네가 그 문제를 풀 수 있든 없든 빠르게 읽고 신중하게 생각하는 것은 똑같이 중요하다.",
+"네가 그 문제를 신중하게 생각할 수 있는지는 그 문제를 이미 풀었는지에 달려 있다."
+]
+},
+{
+"id": "fill-becfc9cb45",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장의 구조와 의미를 모두 바르게 반영한 해석을 고르시오.\n\nWritten in simple English, the book is not as difficult to understand as its title suggests.",
+"answer": "②",
+"solution": "Written in simple English는 주어인 the book을 설명하며 ‘쉬운 영어로 쓰인’이라는 수동의 의미를 나타낸다. 「not as difficult ~ as ...」는 ‘…만큼 어렵지는 않은’이라는 뜻이다. its title suggests는 제목을 보고 짐작하게 되는 난이도를 나타내므로 ②가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"쉬운 영어로 쓰인 그 책은 제목에서 짐작되는 것보다 이해하기가 더 어렵다.",
+"쉬운 영어로 쓰인 그 책은 제목에서 짐작되는 것만큼 이해하기 어렵지는 않다.",
+"그 책의 제목은 쉬운 영어로 쓰여 있지만 책의 내용만큼 이해하기 어렵다.",
+"그 책을 쉬운 영어로 쓰고 나면 제목이 암시하는 어려움을 이해할 수 있다.",
+"쉬운 영어로 쓰인 그 책은 이해하기 어렵지 않다는 점을 제목에서 분명히 밝히고 있다."
+]
+},
+{
+"id": "fill-93b043973c",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>의 영어 문장과 우리말 해석을 비교할 때, 해석이 옳은 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. Not until I tried to explain the problem did I realize how little I understood it.\n→ 나는 그 문제를 설명하려고 시도하고 나서야 내가 그 문제를 얼마나 조금 이해하고 있었는지 깨달았다.\n\nㄴ. No sooner had I asked for help than she offered to explain the question.\n→ 그녀가 그 질문을 설명해 주겠다고 제안한 후에야 나는 도움을 요청했다.\n\nㄷ. Had you not explained it again, I would still be confused now.\n→ 네가 그것을 다시 설명해 주지 않았더라면 나는 지금도 혼란스러울 것이다.\n\nㄹ. It is not how much you read but how well you understand it that matters.\n→ 중요한 것은 읽은 내용을 얼마나 잘 이해하느냐가 아니라 얼마나 많이 읽느냐이다.",
+"answer": "⑤",
+"solution": "ㄱ은 옳다. Not until이 문두에 놓이면서 조동사 did가 주어 I 앞으로 이동한 도치 구문이다. '그 문제를 설명하려고 시도하고 나서야 내가 그 문제를 얼마나 조금 이해하고 있었는지 깨달았다'라는 뜻이다.\nㄴ은 틀리다. No sooner had I asked for help than ...은 '내가 도움을 요청하자마자 그녀가 …했다'라는 의미이다. 제시된 해석은 두 사건의 순서를 반대로 나타낸다.\nㄷ은 옳다. Had you not explained it again은 If you had not explained it again에서 if를 생략하고 had를 주어 앞으로 도치한 형태이다. 과거의 가정이 현재의 결과에 영향을 미치는 혼합 가정법이므로 '네가 그것을 다시 설명해 주지 않았더라면 나는 지금도 혼란스러울 것이다'라는 해석이 정확하다.\nㄹ은 틀리다. It is ... that 강조구문 안에 not A but B 구조가 포함되어 있다. 중요한 것은 읽은 양이 아니라 읽은 내용을 얼마나 잘 이해하는지이다.\n따라서 옳은 것은 ㄱ, ㄷ이며 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄷ, ㄹ",
+"ㄱ, ㄷ"
+]
+},
+{
+"id": "fill-eca7e5eeed",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 영어 문장을 <조건>에 맞게 우리말 한 문장으로 해석하시오.\n\nIt was not until I tried to explain the answer to her that I realized I could not have solved the problem without her advice.\n\n<조건>\n• 문장에 나타난 사건의 시간적 순서와 가정의 의미를 정확하게 반영할 것.\n• the answer와 the problem이 가리키는 대상을 구별할 것.\n• 원문에 없는 내용을 추가하거나 원문의 의미를 생략하지 말 것.\n• 우리말 한 문장으로 자연스럽게 표현할 것.",
+"answer": "나는 그녀에게 답을 설명하려고 해 보고 나서야 비로소 그녀의 조언이 없었더라면 내가 그 문제를 풀 수 없었을 것임을 깨달았다.",
+"solution": "① It was not until I tried to explain the answer to her that ...은 '내가 그녀에게 답을 설명하려고 시도하고 나서야 비로소 …했다'라는 의미이다. It was not until ~ that ...은 깨달음이 일어난 시점을 강조한다.\n② I realized는 '나는 깨달았다'라는 뜻이며, 깨달음의 내용은 뒤에 오는 절이다.\n③ I could not have solved the problem without her advice에서 could not have solved는 과거에 문제를 해결할 수 없었을 것이라는 가정적 의미를 나타낸다. without her advice는 '그녀의 조언이 없었더라면'으로 해석한다.\n④ the answer는 설명하려고 한 '답'이고, the problem은 해결한 '문제'이므로 두 대상을 구별해야 한다.\n⑤ 전체 문장은 '나는 그녀에게 답을 설명하려고 해 보고 나서야 비로소 그녀의 조언이 없었더라면 내가 그 문제를 풀 수 없었을 것임을 깨달았다'로 해석한다.\n채점 기준: 강조구문의 시간 관계, 과거에 대한 반대 사실의 가정, 두 대상의 구별, 전체 의미의 정확성을 평가한다. 같은 의미를 자연스럽게 나타낸 다른 우리말 표현도 정답으로 인정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-2a0883dc46",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe harder you study, the better your grades will be.",
+"answer": "③",
+"solution": "'The + 비교급, the + 비교급'은 '~하면 할수록 더욱 …하다'라는 뜻이다. 'The harder you study'는 '더 열심히 공부할수록', 'the better your grades will be'는 '성적이 더 좋아질 것이다'로 해석한다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"너는 성적이 좋기 때문에 더 열심히 공부할 것이다.",
+"열심히 공부하더라도 성적이 좋아지지는 않을 것이다.",
+"공부를 더 열심히 할수록 성적이 더 좋아질 것이다.",
+"성적을 올리기 위해 공부를 열심히 해야만 했다.",
+"공부를 열심히 하는 것보다 좋은 성적을 받는 것이 중요하다."
+]
+},
+{
+"id": "fill-0756b87ba0",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장을 우리말로 가장 알맞게 옮긴 것은?\n\nThe girl is too young to drive a car.",
+"answer": "①",
+"solution": "'too + 형용사 + to부정사'는 '너무 ~해서 …할 수 없다'라는 의미이다. 따라서 주어진 문장은 '그 소녀는 너무 어려서 자동차를 운전할 수 없다'라는 뜻이다. 이와 같은 의미를 나타낸 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"그 소녀는 자동차를 운전하기에 너무 어리다.",
+"그 소녀는 어리지만 자동차를 운전할 수 있다.",
+"그 소녀는 자동차를 운전할 만큼 나이가 많다.",
+"그 소녀는 자동차를 운전하기 위해 일찍 일어난다.",
+"그 소녀는 어렸을 때 자동차를 운전했다."
+]
+},
+{
+"id": "fill-8bd217fcfa",
+"typeId": "eng-h1-u3m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>의 영어 문장과 우리말 해석을 비교할 때, 해석이 옳은 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. It was not until the meeting ended that he checked his messages.\n→ 그는 회의가 끝나고 나서야 비로소 메시지를 확인했다.\n\nㄴ. She is the last person to break a promise.\n→ 그녀는 약속을 어길 가능성이 가장 낮은 사람 중 한 명이다.\n\nㄷ. Had I left home earlier, I would not have missed the bus.\n→ 내가 집에서 더 일찍 출발했더라면 버스를 놓치지 않았을 텐데.\n\nㄹ. The more carefully you listen, the less you will understand.\n→ 주의 깊게 들을수록 이해하기 어려운 내용이 줄어들 것이다.\n\nㅁ. I could not help smiling when I heard the good news.\n→ 나는 좋은 소식을 들었을 때 미소 짓지 않을 수 없었다.",
+"answer": "②",
+"solution": "ㄱ은 옳다. It was not until ~ that ...은 '~하고 나서야 비로소 …했다'라는 의미로, 회의가 끝난 후에야 메시지를 확인했다는 뜻이다.\nㄴ은 틀리다. the last person to break a promise는 '결코 약속을 어길 사람이 아닌 사람'이라는 강한 부정의 의미를 나타낸다. 제시된 해석의 '가능성이 가장 낮은 사람 중 한 명'은 다른 사람들과 비교한 상대적인 가능성을 나타내므로 원문의 단정적인 의미를 정확하게 반영하지 못한다.\nㄷ은 옳다. Had I left home earlier는 If I had left home earlier에서 if를 생략하고 had를 도치한 형태이다. 과거 사실과 반대되는 가정을 나타내므로 제시된 해석이 정확하다.\nㄹ은 틀리다. The more carefully you listen, the less you will understand는 '더 주의 깊게 들을수록 이해하는 정도가 더 낮아질 것이다'라는 뜻이다. 이해하기 어려운 내용의 양이 줄어든다는 의미가 아니다.\nㅁ은 옳다. could not help -ing는 '~하지 않을 수 없었다'라는 의미로, 좋은 소식을 듣고 저절로 미소를 지었다는 뜻이다.\n따라서 옳은 것은 ㄱ, ㄷ, ㅁ이며 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
 ]
 }
 ]
