@@ -7987,5 +7987,107 @@
 "twinGroup": "tw-19210",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-7ef7dc4bc4",
+"typeId": "19281",
+"kind": "주관식",
+"diff": 1,
+"body": "직사각형 모양의 이름표가 있습니다. 이름표의 가로는 세로의 $\\frac{1}{2}$이고, 세로는 $10\\text{ cm}$입니다. 이름표의 넓이는 몇 $\\text{cm}^2$인가요?",
+"selfGrade": true,
+"answer": "$50\\text{ cm}^2$",
+"solution": "이름표의 가로는 $10\\times\\frac{1}{2}=5\\text{ (cm)}$입니다. 따라서 넓이는 $5\\times10=50\\text{ (cm}^2\\text{)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-19281",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e44f130f97",
+"typeId": "19281",
+"kind": "객관식",
+"diff": 1,
+"body": "평행사변형의 높이는 밑변의 길이의 $\\frac{1}{3}$입니다. 밑변의 길이가 $12\\text{ cm}$일 때, 이 평행사변형의 넓이는 얼마인가요?",
+"choices": [
+"$24\\text{ cm}^2$",
+"$36\\text{ cm}^2$",
+"$48\\text{ cm}^2$",
+"$96\\text{ cm}^2$",
+"$144\\text{ cm}^2$"
+],
+"answer": "③",
+"solution": "높이는 $12\\times\\frac{1}{3}=4\\text{ (cm)}$입니다. 평행사변형의 넓이는 밑변의 길이와 높이의 곱이므로 $12\\times4=48\\text{ (cm}^2\\text{)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-19281",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f6c25460a3",
+"typeId": "19281",
+"kind": "주관식",
+"diff": 1,
+"body": "삼각형 모양의 깃발을 만들었습니다. 깃발의 밑변의 길이는 $8\\text{ cm}$이고, 높이는 밑변의 길이의 $\\frac{1}{2}$입니다. 깃발의 넓이는 몇 $\\text{cm}^2$인가요?",
+"selfGrade": true,
+"answer": "$16\\text{ cm}^2$",
+"solution": "깃발의 높이는 $8\\times\\frac{1}{2}=4\\text{ (cm)}$입니다. 따라서 넓이는 $8\\times4\\div2=16\\text{ (cm}^2\\text{)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-19281",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7d1bd4afcf",
+"typeId": "19281",
+"kind": "객관식",
+"diff": 3,
+"body": "직사각형의 세로에 대한 둘레의 비율은 $\\frac{10}{3}$입니다. 세로가 $6\\text{ cm}$일 때, 이 직사각형의 넓이는 얼마인가요?",
+"choices": [
+"$24\\text{ cm}^2$",
+"$36\\text{ cm}^2$",
+"$60\\text{ cm}^2$",
+"$84\\text{ cm}^2$",
+"$120\\text{ cm}^2$"
+],
+"answer": "①",
+"solution": "세로에 대한 둘레의 비율이 $\\frac{10}{3}$이므로 둘레는 $6\\times\\frac{10}{3}=20\\text{ (cm)}$입니다. 직사각형의 둘레는 가로와 세로의 합의 2배이므로 가로와 세로의 합은 $20\\div2=10\\text{ (cm)}$입니다. 따라서 가로는 $10-6=4\\text{ (cm)}$이고, 넓이는 $4\\times6=24\\text{ (cm}^2\\text{)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-19281",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-52254fc230",
+"typeId": "19281",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 모양의 종이에서 높이에 대한 밑변의 길이의 비율을 구하면 $\\frac{5}{3}$입니다. 이 종이의 높이가 $12\\text{ cm}$일 때, 넓이는 몇 $\\text{cm}^2$인가요?",
+"selfGrade": true,
+"answer": "$120\\text{ cm}^2$",
+"solution": "밑변의 길이는 높이의 $\\frac{5}{3}$이므로 $12\\times\\frac{5}{3}=20\\text{ (cm)}$입니다. 따라서 종이의 넓이는 $20\\times12\\div2=120\\text{ (cm}^2\\text{)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-19281",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-725c9ab715",
+"typeId": "19281",
+"kind": "객관식",
+"diff": 2,
+"body": "직사각형 모양의 사진에서 세로에 대한 가로의 비율은 $\\frac{4}{3}$입니다. 사진의 가로가 $12\\text{ cm}$일 때, 사진의 넓이는 얼마인가요?",
+"choices": [
+"$54\\text{ cm}^2$",
+"$81\\text{ cm}^2$",
+"$108\\text{ cm}^2$",
+"$144\\text{ cm}^2$",
+"$192\\text{ cm}^2$"
+],
+"answer": "③",
+"solution": "가로는 세로의 $\\frac{4}{3}$이므로 세로는 $12\\div\\frac{4}{3}=12\\times\\frac{3}{4}=9\\text{ (cm)}$입니다. 따라서 사진의 넓이는 $12\\times9=108\\text{ (cm}^2\\text{)}$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-19281",
+"custom": true,
+"rv": 1
 }
 ]

@@ -4443,5 +4443,107 @@
 "twinGroup": "tw-18656",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-30b6e51ef2",
+"typeId": "18680",
+"kind": "객관식",
+"diff": 2,
+"body": "양수 $a$에 대하여 두 곡선 $y=ax^2$, $y=-\\dfrac{4}{a}x^2$과 직선 $x=1$로 둘러싸인 도형의 넓이의 최솟값은?",
+"choices": [
+"$\\dfrac{2}{3}$",
+"$\\dfrac{4}{3}$",
+"$2$",
+"$\\dfrac{8}{3}$",
+"$4$"
+],
+"answer": "②",
+"solution": "두 곡선의 교점은 원점이고, $0\\leq x\\leq 1$에서 $ax^2\\geq -\\dfrac{4}{a}x^2$이다. 따라서 도형의 넓이는 $S=\\displaystyle\\int_0^1\\left(a+\\frac{4}{a}\\right)x^2\\,dx=\\frac{1}{3}\\left(a+\\frac{4}{a}\\right)$이다. $a>0$이므로 산술·기하평균 부등식에 의하여 $a+\\dfrac{4}{a}\\geq 2\\sqrt{a\\cdot\\dfrac{4}{a}}=4$이다. 등호는 $a=\\dfrac{4}{a}$, 즉 $a=2$일 때 성립한다. 따라서 넓이의 최솟값은 $\\dfrac{4}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18680",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7303154422",
+"typeId": "18680",
+"kind": "객관식",
+"diff": 2,
+"body": "양수 $t$에 대하여 두 곡선 $y=3tx^3$, $y=-\\dfrac{3}{t}x^3$과 직선 $x=1$로 둘러싸인 도형의 넓이를 $S$라 하자. $S$의 최솟값은?",
+"choices": [
+"$\\dfrac{3}{4}$",
+"$\\dfrac{3}{2}$",
+"$2$",
+"$3$",
+"$6$"
+],
+"answer": "②",
+"solution": "두 곡선의 교점은 원점이고, $0\\leq x\\leq 1$에서 $3tx^3\\geq -\\dfrac{3}{t}x^3$이다. 따라서 $S=\\displaystyle\\int_0^1\\left(3t+\\frac{3}{t}\\right)x^3\\,dx=\\frac{3}{4}\\left(t+\\frac{1}{t}\\right)$이다. $t>0$이므로 산술·기하평균 부등식에 의하여 $t+\\dfrac{1}{t}\\geq 2$이고, 등호는 $t=1$일 때 성립한다. 따라서 $S$의 최솟값은 $\\dfrac{3}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18680",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-181cf63c98",
+"typeId": "18680",
+"kind": "객관식",
+"diff": 2,
+"body": "양수 $k$에 대하여 두 곡선 $y=kx^4$, $y=-\\dfrac{16}{k}x^4$과 직선 $x=1$로 둘러싸인 도형의 넓이가 최소가 되도록 하는 $k$의 값은?",
+"choices": [
+"$1$",
+"$2$",
+"$4$",
+"$8$",
+"$16$"
+],
+"answer": "③",
+"solution": "두 곡선의 교점은 원점이고, $0\\leq x\\leq 1$에서 $kx^4\\geq -\\dfrac{16}{k}x^4$이다. 따라서 도형의 넓이는 $S=\\displaystyle\\int_0^1\\left(k+\\frac{16}{k}\\right)x^4\\,dx=\\frac{1}{5}\\left(k+\\frac{16}{k}\\right)$이다. $k>0$이므로 산술·기하평균 부등식에 의하여 $k+\\dfrac{16}{k}\\geq 8$이고, 등호는 $k=\\dfrac{16}{k}$일 때 성립한다. 이때 $k^2=16$이고 $k>0$이므로 $k=4$이다. 따라서 구하는 값은 $4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18680",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-087ec2258a",
+"typeId": "18680",
+"kind": "주관식",
+"diff": 2,
+"body": "양수 $k$에 대하여 두 곡선 $y=(k+1)x^2$, $y=-\\dfrac{9}{k}x^2$과 직선 $x=2$로 둘러싸인 도형의 넓이의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{56}{3}$",
+"solution": "두 곡선은 원점에서 만나고, $0\\leq x\\leq 2$에서 위쪽 곡선은 $y=(k+1)x^2$이다. 따라서 넓이는 $S=\\displaystyle\\int_0^2\\left(k+1+\\frac{9}{k}\\right)x^2\\,dx=\\frac{8}{3}\\left(k+\\frac{9}{k}+1\\right)$이다. $k+\\frac{9}{k}\\geq 6$이고 등호는 $k=3$일 때 성립하므로 넓이의 최솟값은 $\\frac{56}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18680",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-44f1ad8b25",
+"typeId": "18680",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 $t$에 대하여 곡선 $y=x^2$과 직선 $y=t^2+2t+5$로 둘러싸인 도형의 넓이의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\dfrac{32}{3}$",
+"solution": "$h=t^2+2t+5=(t+1)^2+4$라 놓으면 $h\\geq 4$이고 두 그래프의 교점의 $x$좌표는 $\\pm\\sqrt{h}$이다. 도형의 넓이는 $S=\\displaystyle\\int_{-\\sqrt{h}}^{\\sqrt{h}}(h-x^2)\\,dx=\\frac{4}{3}h\\sqrt{h}$이다. 이 값은 $h=4$, 즉 $t=-1$일 때 최소이므로 구하는 최솟값은 $\\frac{32}{3}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18680",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1c734f0d40",
+"typeId": "18680",
+"kind": "주관식",
+"diff": 2,
+"body": "실수 $m$에 대하여 곡선 $y=x^2$과 직선 $y=mx+3$으로 둘러싸인 도형의 넓이가 최소가 되도록 하는 $m$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$0$",
+"solution": "직선과 곡선의 높이의 차는 $mx+3-x^2=3+\\frac{m^2}{4}-\\left(x-\\frac{m}{2}\\right)^2$이다. $h=3+\\frac{m^2}{4}$라 놓고 $u=x-\\frac{m}{2}$로 치환하면 도형의 넓이는 $S=\\displaystyle\\int_{-\\sqrt{h}}^{\\sqrt{h}}(h-u^2)\\,du=\\frac{4}{3}h\\sqrt{h}$이다. 따라서 $h$가 가장 작은 $m=0$일 때 넓이가 최소가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-18680",
+"custom": true,
+"rv": 1
 }
 ]
