@@ -1144,5 +1144,1157 @@
 "His true love for nature is shown clearly in every corner of the room."
 ],
 "answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-065",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe jacket was 50 dollars yesterday, but now it is 30 dollars. It is _____ now.",
+"solution": "가격이 50달러에서 30달러로 내려갔으므로 ‘세일 중인’이라는 뜻의 on sale이 알맞다. crossed out은 ‘선을 그어 지워진’이라는 뜻이므로 가격 인하 상태 자체를 나타내지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"proud",
+"on sale",
+"fat-free",
+"half empty",
+"crossed out"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-066",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 1,
+"body": "다음 문장에서 밑줄 친 말과 바꾸어 쓸 수 있는 것은?\n\nThe two products look different, but they are actually the same.",
+"solution": "actually는 ‘사실은, 실제로’라는 뜻이므로 in fact와 바꾸어 쓸 수 있다. at last는 ‘마침내’, at first는 ‘처음에는’이라는 뜻이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"at last",
+"for example",
+"on sale",
+"in fact",
+"at first"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-067",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe notebook _____ Jina bought yesterday is on the desk.",
+"solution": "선행사 The notebook은 사물이고, 빈칸 뒤의 bought에는 목적어가 없으므로 목적격 관계대명사 that이 알맞다. what은 그 자체에 선행사의 의미가 포함되어 있으므로 앞에 The notebook을 둘 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"that",
+"who",
+"where",
+"whose",
+"what"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-068",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n점원은 잘못 쓴 가격에 선을 그어 지웠다.\nThe clerk _____ the wrong price.",
+"solution": "cross out은 ‘선을 그어 지우다’라는 뜻이므로 과거형 crossed out이 알맞다. pick up은 ‘집어 들다’, look for는 ‘찾다’라는 뜻이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"picked up",
+"looked for",
+"talked to",
+"decided on",
+"crossed out"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-069",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe clerk _____ we asked for help was very friendly.",
+"solution": "선행사 The clerk는 사람이고 관계대명사가 asked의 목적어 역할을 하므로 whom이 알맞다. which는 사물이나 동물을 선행사로 할 때 사용한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"which",
+"whose",
+"whom",
+"where",
+"what"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-070",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 2,
+"body": "다음 중 대괄호로 표시한 관계대명사를 생략할 수 있는 것은?",
+"solution": "④의 that은 bought의 목적어 역할을 하는 목적격 관계대명사이므로 생략할 수 있다. 나머지 that은 모두 관계대명사절의 주어이므로 생략할 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"The bag [that] is on the chair is mine.",
+"I need a chair [that] has strong legs.",
+"We met a clerk [that] speaks English.",
+"This is the bag [that] I bought yesterday.",
+"The boy [that] runs fastest is my brother."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-071",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nMia picks up the 80% fat-free cheese. She says to herself, “I think it’s healthier!” She feels proud of the choice that she makes. However, Mia does not know the words are tricking her. Both types of cheese are actually the same!\n\n윗글의 내용과 일치하는 것은?",
+"solution": "마지막 문장의 Both types of cheese are actually the same에서 두 치즈가 실제로 같다는 것을 알 수 있다. Mia는 자신의 선택을 자랑스럽게 여겼으며 점원에게 도움을 요청하지 않았다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"두 치즈는 실제로 같은 제품이다.",
+"Mia는 지방 함량이 더 높은 치즈를 골랐다.",
+"Mia는 점원에게 더 건강한 치즈를 물어보았다.",
+"Mia는 자신의 선택을 곧바로 후회했다.",
+"두 치즈에는 서로 다른 지방 함량이 표시되어 있지 않다."
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-072",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 2,
+"body": "다음 단어의 관계가 같도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nchoose : choice = decide : _____",
+"solution": "choice는 동사 choose의 명사형이고, decision은 동사 decide의 명사형이다. deciding은 동명사 또는 현재분사이며 ‘결정’이라는 명사형을 묻는 관계에 맞지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"deciding",
+"decision",
+"decisive",
+"decided",
+"decides"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-073",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nFirst, let’s imagine Logan at a clothing store. He finds a nice T-shirt that he really likes. The price tag says 40 dollars. Logan thinks that it is expensive. But the next day, he sees that the price is crossed out and the tag says 30 dollars. Logan talks to himself, “Oh, it’s on sale! What a great deal!” He gets excited and decides to buy it. In fact, 30 dollars is still a lot, but Logan thinks it is a great price!\n\n윗글의 내용과 일치하는 것은?",
+"solution": "Logan은 40달러가 지워지고 30달러가 적힌 가격표를 본 뒤 What a great deal!이라고 생각하며 구매를 결정한다. 실제로 30달러가 여전히 큰 금액이라는 서술과 Logan의 판단을 구별해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"Logan은 처음부터 40달러가 싼 가격이라고 생각한다.",
+"Logan은 점원의 추천을 받고 티셔츠를 구입한다.",
+"티셔츠의 실제 판매 가격은 40달러보다 높아진다.",
+"Logan은 30달러도 비싸다고 판단하여 구매를 포기한다.",
+"Logan은 지워진 가격과 새 가격을 보고 좋은 거래라고 생각한다."
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-074",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 3,
+"body": "다음 중 어법상 옳지 않은 것은?",
+"solution": "what은 선행사를 포함하는 관계대명사이므로 선행사 The movie와 함께 쓸 수 없다. what 대신 that 또는 which를 쓰거나 목적격 관계대명사를 생략해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"This is the cake that Mina baked.",
+"He is the player whom many students admire.",
+"The movie what we watched was exciting.",
+"I found the key which I had lost.",
+"She is the clerk that I met yesterday."
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-075",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 3,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 가장 알맞은 것은?\n\n• The clerk _____ I met was friendly.\n• This is the flavor _____ Yena chose.",
+"solution": "that은 사람인 The clerk와 사물인 the flavor를 모두 선행사로 하는 목적격 관계대명사로 쓸 수 있다. who와 whom은 두 번째 문장에, which는 첫 번째 문장에 쓸 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"who",
+"which",
+"whom",
+"that",
+"what"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-076",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nMia picks up the 80% fat-free cheese. She says to herself, “I think it’s healthier!” She feels proud of the choice that she makes.\n\n밑줄 친 것으로 간주한 that의 선행사는 무엇인가?",
+"solution": "that이 이끄는 she makes가 바로 앞의 명사구 the choice를 수식하므로 선행사는 the choice이다. that은 관계대명사절에서 makes의 목적어 역할을 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"Mia",
+"the choice",
+"the cheese",
+"herself",
+"healthier"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-077",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nHe finds a nice T-shirt that he really likes.\n\n윗문장의 that에 관한 설명으로 옳은 것만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. 목적격 관계대명사이다.\nㄴ. 선행사가 사물이므로 which로 바꿀 수 없다.\nㄷ. 관계대명사절에서 likes의 목적어 역할을 한다.\nㄹ. 생략하면 문장이 비문이 된다.",
+"solution": "that은 사물인 a nice T-shirt를 선행사로 하며 likes의 목적어 역할을 하는 목적격 관계대명사이다. which로 바꿀 수 있고 목적격 관계대명사는 생략할 수 있으므로 ㄴ과 ㄹ은 옳지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-078",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nFirst, let’s imagine Logan at a clothing store. He finds a nice T-shirt (A) that he really likes. The price tag says 40 dollars. Logan thinks (B) that it is expensive.\n\n(A)와 (B)의 문법적 역할을 바르게 짝지은 것은?",
+"solution": "(A)는 a nice T-shirt를 선행사로 하고 likes의 목적어 역할을 하는 목적격 관계대명사이다. (B)는 thinks의 목적어가 되는 명사절 it is expensive를 이끄는 접속사이므로 두 that의 역할이 다르다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"주격 관계대명사 — 목적격 관계대명사",
+"명사절 접속사 — 주격 관계대명사",
+"목적격 관계대명사 — 지시형용사",
+"명사절 접속사 — 목적격 관계대명사",
+"목적격 관계대명사 — 명사절 접속사"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-079",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 4,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI bought everything _____ I needed for the school festival.",
+"solution": "선행사가 everything이고 빈칸이 needed의 목적어 역할을 하므로 목적격 관계대명사 that이 알맞다. what은 선행사를 포함하므로 everything과 함께 쓸 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"who",
+"what",
+"that",
+"where",
+"whose"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-080",
+"typeId": "exam2-eng-m22-cj-u2m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s0t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nNow, meet Mia ⓐwho is looking for a little cheese for her sandwich. She ⓑhas to choose between two types of cheese. One says “20% Fat,” and the other says “80% Fat-Free.” Mia ⓒpicks up the 80% fat-free cheese. She says to herself, “I think it’s healthier!” She feels proud of the choice ⓓthat she makes. However, Mia does not know the words ⓔare tricking her.\n\n밑줄 친 부분에 관한 설명으로 옳지 않은 것은?",
+"solution": "ⓓ의 that은 she makes에서 makes의 목적어 역할을 하는 목적격 관계대명사이다. 관계대명사절의 주어는 she이므로 that을 주어 역할이라고 설명한 ④가 옳지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ⓐ의 who는 관계대명사절의 주어이므로 생략할 수 없다.",
+"ⓑ의 has to는 ‘~해야 한다’라는 의미이다.",
+"ⓒ의 picks up은 ‘집어 든다’라는 의미이다.",
+"ⓓ의 that은 관계대명사절의 주어 역할을 한다.",
+"ⓔ의 are는 주어 the words에 수를 일치시킨 형태이다."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-081",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 답하시오.\nWhat do you think about when you go shopping? Price might be one thing, but there are actually more things to think about. Here are a few shopping secrets that you must know.\n\n다음에 이어질 내용으로 가장 알맞은 것은?",
+"solution": "마지막 문장에서 쇼핑객이 반드시 알아야 할 몇 가지 쇼핑 비밀을 소개하겠다고 예고한다. 가격도 고려할 요소 중 하나라고 했지만, 가격 상승의 원인을 설명하겠다는 뜻은 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"온라인으로 옷을 주문하는 구체적인 절차",
+"가게에서 일하는 점원이 갖추어야 할 조건",
+"쇼핑할 때 알아 두어야 할 몇 가지 비밀",
+"상품의 가격이 해마다 오르는 이유",
+"쇼핑몰에서 길을 찾는 여러 가지 방법"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-082",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe price _____ on this sweater says 25 dollars.",
+"solution": "price tag는 상품의 가격이 적힌 ‘가격표’를 뜻한다. option과 choice는 선택과 관련된 말이므로, 옷에 붙어 가격을 알려 주는 물건을 가리키기에 적절하지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"tag",
+"flavor",
+"option",
+"secret",
+"choice"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-083",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 답하시오.\nLastly, imagine Yena at an ice cream shop with many kinds of ice cream flavors. Exciting, right? Well, not for Yena. She feels stressed because there are so many options.\n\nYena가 스트레스를 받는 이유로 가장 알맞은 것은?",
+"solution": "because there are so many options에서 선택지가 너무 많은 것이 스트레스의 원인이라고 밝힌다. 아이스크림의 가격이나 품절 여부에 관한 내용은 제시되지 않았다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"원하는 맛이 모두 품절되어서",
+"아이스크림 가격이 너무 비싸서",
+"점원이 불친절하게 응대해서",
+"친구와 취향이 서로 달라서",
+"고를 수 있는 종류가 너무 많아서"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-084",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nFirst, let’s imagine Logan at a clothing store. He finds a nice T-shirt that he really likes. The price tag says 40 dollars. Logan thinks that it is expensive. But the next day, he sees that the price is crossed out and the tag says 30 dollars. Logan talks to himself, “Oh, it’s on sale! What a great deal!” He gets excited and decides to buy it. In fact, 30 dollars is still a lot, but Logan thinks it is a great price!\n\n윗글의 내용과 일치하는 것은?",
+"solution": "In fact, 30 dollars is still a lot이라고 했으므로 글쓴이는 30달러도 여전히 큰 금액이라고 본다. Logan은 가격이 내려간 것을 보고 신이 나서 구매를 결정했으며, 직접 할인을 요청했다는 내용은 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"Logan은 처음부터 40달러가 저렴하다고 생각했다.",
+"글쓴이는 30달러도 여전히 큰 금액이라고 말한다.",
+"가격표의 금액은 다음 날 30달러에서 40달러로 올랐다.",
+"Logan은 가격이 내려간 것을 보고 구매를 포기했다.",
+"Logan은 점원에게 가격을 낮춰 달라고 부탁했다."
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-085",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nNow, meet Mia who is looking for a little cheese for her sandwich. She has to choose between two types of cheese. One says “20% Fat,” and the other says “80% Fat-Free.” Mia picks up the 80% fat-free cheese. She says to herself, “I think it’s healthier!” She feels proud of the choice that she makes. However, Mia does not know the words are tricking her. Both types of cheese are actually the same!\n\nMia의 선택에 대한 설명으로 가장 알맞은 것은?",
+"solution": "지방이 20%라는 표현과 지방이 아닌 부분이 80%라는 표현은 같은 지방 비율을 나타낸다. Mia는 80% Fat-Free라는 표현 때문에 더 건강하다고 느꼈지만, 이것이 지방이 전혀 없다는 뜻은 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"두 치즈의 지방 비율을 정확히 비교한 뒤 더 낮은 것을 골랐다.",
+"80% Fat-Free를 지방이 전혀 없다는 뜻으로 설명했다.",
+"20% Fat라고 표시된 치즈가 더 건강하다고 생각했다.",
+"두 표시가 같은 지방 비율을 나타낸다는 사실을 알지 못했다.",
+"샌드위치에 치즈를 넣지 않는 것이 낫다고 판단했다."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-086",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 2,
+"body": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 가장 알맞은 것은?\n\n• Please _____ a choice before the store closes.\n• We need more time to _____ a decision.",
+"solution": "‘선택하다’는 make a choice, ‘결정하다’는 make a decision으로 표현한다. 우리말 뜻만 생각해 take나 do를 고르기 쉽지만, 두 문장에 공통으로 자연스럽게 쓰이는 동사는 make이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"take",
+"do",
+"make",
+"give",
+"find"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-087",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 빈칸 (A), (B)에 들어갈 말을 바르게 연결한 것은?\n\n• 수프에 소금을 조금 넣어라.\n  Add (A)_____ salt to the soup.\n• 나는 동아리에서 친구를 몇 명 사귀었다.\n  I made (B)_____ friends in the club.",
+"solution": "salt는 셀 수 없는 명사이므로 a little, friends는 셀 수 있는 명사의 복수형이므로 a few로 수식한다. a 없이 little이나 few를 쓰면 ‘거의 없는’이라는 부정적 의미가 되어 제시된 우리말과 달라진다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"(A) a little — (B) a few",
+"(A) a few — (B) a little",
+"(A) little — (B) few",
+"(A) few — (B) little",
+"(A) a little — (B) little"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-088",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nOne says “20% Fat,” and the other says “80% Fat-Free.” Mia picks up the 80% fat-free cheese. She says to herself, “I think it’s healthier!” She feels proud of the choice that she makes. However, Mia does not know ⓐthe words are tricking her. Both types of cheese are actually the same!\n\nⓐthe words가 가리키는 것으로 가장 알맞은 것은?",
+"solution": "the words는 앞에서 제시한 두 치즈의 표시인 20% Fat와 80% Fat-Free를 가리킨다. healthier는 그 표시를 보고 Mia가 내린 판단이므로, the words의 지시 대상과 구별해야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"샌드위치의 조리 순서를 설명하는 말",
+"Mia가 점원에게 도움을 요청한 말",
+"치즈의 가격을 비교하는 말",
+"Mia의 선택을 칭찬하는 말",
+"20% Fat와 80% Fat-Free라는 표시"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-089",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nMia picks up the 80% fat-free cheese. She says to herself, “I think it’s healthier!” She feels proud of the choice ⓐthat she makes.\n\nⓐ와 같이 앞의 명사를 꾸미는 절에서 목적어 역할을 하며 생략할 수 있는 that이 쓰인 문장은?",
+"solution": "ⓐ는 the choice를 수식하며 makes의 목적어 역할을 하는 관계대명사이다. 네 번째 문장의 that도 bought의 목적어이므로 생략할 수 있지만, 세 번째 문장의 that은 works의 주어여서 생략할 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"I believe that this answer is right.",
+"That jacket looks warm.",
+"This is the clerk that works here.",
+"The bag that I bought yesterday is light.",
+"Please put that on the desk."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-090",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 3,
+"body": "다음 〈보기〉에서 표시된 관계대명사를 생략할 수 없는 문장만을 모두 고른 것은?\n〈보기〉\nㄱ. The cap [which] I chose is yellow.\nㄴ. The woman [who] sells bread is my aunt.\nㄷ. I need a bag [that] has two pockets.\nㄹ. The boy [whom] we helped thanked us.",
+"solution": "ㄴ의 who는 sells의 주어이고, ㄷ의 that은 has의 주어이므로 생략할 수 없다. ㄱ의 which와 ㄹ의 whom은 각각 chose와 helped의 목적어 역할을 하므로 생략할 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄹ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-091",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nLastly, imagine Yena at an ice cream shop with many kinds of ice cream flavors. Exciting, right? Well, not for Yena.\n(A) She leaves the store with a smile and realizes that fewer choices can be better.\n(B) She feels stressed because there are so many options. So, Yena decides to ask the friendly clerk Andy for help.\n(C) Andy recommends the top five flavors that everyone loves. Yena easily makes a decision with just a few options.\n\n주어진 글 다음에 이어질 (A)~(C)의 순서로 가장 알맞은 것은?",
+"solution": "선택지가 많아 스트레스를 받고 도움을 요청하는 (B) 뒤에, Andy의 추천으로 쉽게 결정하는 (C)가 이어진다. 마지막에는 웃으며 가게를 떠나 깨달음을 얻는 (A)가 와야 하므로, 추천을 받기 전에 떠나는 순서는 적절하지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"(A) → (C) → (B)",
+"(B) → (A) → (C)",
+"(B) → (C) → (A)",
+"(C) → (B) → (A)",
+"(C) → (A) → (B)"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-092",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nThe price tag says 40 dollars. Logan thinks that it is expensive. But the next day, he sees that the price is crossed out and the tag says 30 dollars. Logan talks to himself, “Oh, it’s on sale! _____” He gets excited and decides to buy it.\n\n빈칸에 들어갈 말로 문맥과 어법에 모두 맞는 것은?",
+"solution": "Logan은 할인을 좋은 구매 기회로 여기므로 ‘정말 좋은 거래구나!’라는 감탄이 적절하며, What a great deal!은 ‘What + a + 형용사 + 단수 명사!’ 구조이다. What an expensive deal!은 문법적으로 가능하지만 뒤의 신이 나서 구매하는 반응과 맞지 않고, How a great deal!은 감탄문의 어순이 잘못되었다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"What an expensive deal!",
+"How a great deal!",
+"What a great price it!",
+"How great deal!",
+"What a great deal!"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-093",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nThe price tag says 40 dollars. Logan thinks that it is expensive. But the next day, he sees that the price is crossed out and the tag says 30 dollars. Logan talks to himself, “Oh, it’s on sale! What a great deal!” He gets excited and decides to buy it. In fact, 30 dollars is still a lot, but Logan thinks it is a great price!\n\n윗글에서 추론할 수 있는 내용으로 가장 알맞은 것은?",
+"solution": "Logan은 40달러를 비싸다고 생각했다가 30달러를 보고 좋은 가격이라고 판단하므로, 먼저 본 가격이 비교 기준으로 작용했다고 추론할 수 있다. 다른 가게의 가격이나 티셔츠의 필요성은 제시되지 않았으며, 모든 할인 판매가 속임수라고 일반화할 수도 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"처음 본 높은 가격이 나중 가격을 저렴하게 느끼는 데 영향을 줄 수 있다.",
+"할인된 상품은 다른 가게의 상품보다 반드시 저렴하다.",
+"Logan은 티셔츠가 꼭 필요한지 확인한 뒤 구매했다.",
+"가격에 줄을 그어 지운 모든 가게는 고객을 속인다.",
+"Logan이 처음 본 가격은 실제로 30달러였다."
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-094",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nShe feels proud of the choice ⓐthat she makes. However, Mia does not know the words are tricking her. Both types of cheese are actually the same!\n\nⓐ를 포함한 첫 문장을 의미가 같고 어법에 맞게 바꾸어 쓴 것은?",
+"solution": "that은 makes의 목적어 역할을 하는 관계대명사이므로 생략하여 the choice she makes로 쓸 수 있다. 관계절에 목적어 it을 다시 쓰면 중복되고, 선행사 the choice가 있으므로 what을 쓰는 것도 적절하지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"She feels proud of the choice which she makes it.",
+"She feels proud of the choice what she makes.",
+"She feels proud of the choice which makes.",
+"She feels proud of the choice she makes.",
+"She feels proud of the choice whom she makes."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-095",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nAndy recommends the top five flavors that everyone loves. Yena easily makes a decision with just a few options. She leaves the store with a smile and realizes that fewer choices can be better.\n\n윗글의 표현에 대한 설명으로 옳은 것만을 모두 고른 것은?\n〈보기〉\nㄱ. fewer choices는 앞서 선택지가 많았던 상황보다 선택지의 수가 적다는 뜻이다.\nㄴ. a few options는 선택지가 거의 없다는 부정적 의미이다.\nㄷ. choices가 복수여도 fewer를 less로 바꾸는 것이 중학교 표준 어법에 맞다.\nㄹ. a few options를 few options로 바꾸면 선택지가 거의 없다는 부정적 의미를 더하게 된다.",
+"solution": "fewer는 셀 수 있는 명사의 수가 더 적음을 나타내고, a few는 ‘몇몇의’, few는 ‘거의 없는’이라는 뜻이다. 따라서 ㄱ과 ㄹ이 옳으며, 셀 수 있는 복수 명사 choices의 수를 비교할 때는 less보다 fewer가 적절하다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-096",
+"typeId": "exam2-eng-m22-cj-u2m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u2m0s1t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nLastly, imagine Yena at an ice cream shop with many kinds of ice cream flavors. Exciting, right? Well, not for Yena. (A) She feels stressed because there are so many options. (B) So, Yena decides to ask the friendly clerk Andy for help. Andy recommends the top five flavors that everyone loves. (C) She leaves the store with a smile and realizes that fewer choices can be better. (D)\nRemember these secrets when you go shopping. (E) They will guide you to make wiser decisions.\n\n글의 흐름으로 보아 다음 문장이 들어가기에 가장 알맞은 곳은?\n\nYena easily makes a decision with just a few options.",
+"solution": "주어진 문장은 Andy가 다섯 가지 맛을 추천한 결과 Yena가 쉽게 결정했다는 내용이므로 추천 직후인 (C)에 들어간다. 가게를 떠난 뒤인 (D)에 넣으면 구매 결정을 먼저 하고 떠나는 자연스러운 사건 순서가 뒤바뀐다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-097",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 1,
+"body": "다음 영어 단어의 뜻으로 가장 알맞은 것은?\n\nconnect",
+"solution": "connect는 둘 이상의 사물이나 지점을 ‘연결하다’라는 뜻이다. ‘뒤쫓다’는 chase, ‘치료하다’는 heal이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"상상하다",
+"연결하다",
+"뒤쫓다",
+"치료하다",
+"형성되다"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-098",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n_____ you leave now, you can catch the last bus.",
+"solution": "‘지금 출발하면 막차를 탈 수 있다’라는 조건을 나타내므로 If가 알맞다. Because는 이유, Although는 양보를 나타내어 문맥에 맞지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"If",
+"Because",
+"Although",
+"Before",
+"Until"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-099",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 답하시오.\nNative Americans have also told a special story about the Big Dipper. A long time ago, the Mohawk people found the tracks of a giant bear. This bear was taking all their food, so people were very hungry. It was difficult to catch the bear. Everyone was just scared. One night, three brothers of the Mohawk all had the same dream of catching the bear. They became brave and followed its tracks for many months to the world’s end. There they saw the bear jump into the sky, and they jumped after it. Now, when you see the night sky, you can see the three brothers still _____ the bear.\n\n빈칸에 들어갈 말로 가장 알맞은 것은?",
+"solution": "지각동사 see 뒤에서 목적어 the three brothers가 진행 중인 동작을 하는 상황이므로 현재분사 chasing이 알맞다. still도 ‘여전히 뒤쫓고 있는’이라는 진행의 의미를 뒷받침한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"chases",
+"chased",
+"to chase",
+"chasing",
+"chase"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-100",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nWe are looking forward to _____ the space museum next Saturday.",
+"solution": "look forward to에서 to는 전치사이므로 뒤에 동명사 visiting이 온다. to visit은 to부정사로 착각하기 쉬운 오답이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"visit",
+"visited",
+"visiting",
+"to visit",
+"visits"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-101",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 2,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\nIf the sky (A)_____ clear tonight, we (B)_____ the stars through the telescope.",
+"solution": "미래의 조건을 나타내더라도 if절에는 현재형 is를 쓰고, 주절에는 will watch를 쓴다. if절의 will be는 중학교 문법의 조건절 규칙에 어긋난다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"will be — watch",
+"will be — will watch",
+"is — watched",
+"was — will watch",
+"is — will watch"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-102",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nIn Korea, there is a story about seven brothers and the Big Dipper. Once upon a time, seven brothers lived with their sick mom. They heard there was a water spring over the mountain. People said the water could heal sickness. So, the brothers walked a long and hard path over the mountain to get the water. They gave it to their mom, and she finally got well. The Sky Emperor was touched by their love for their mom. Later, he turned the seven brothers into seven stars.\n\n윗글의 내용과 일치하는 것은?",
+"solution": "형제들은 산을 넘어 샘물을 가져와 어머니에게 드렸고, 어머니는 마침내 병이 나았다. 옥황상제가 감동한 까닭은 형제들의 용기가 아니라 어머니에 대한 사랑이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"일곱 형제는 어머니를 위해 약초를 구했다.",
+"일곱 형제의 어머니는 형제들이 가져온 물을 마시고 병이 나았다.",
+"옥황상제는 일곱 형제에게 산을 넘으라고 명령했다.",
+"일곱 형제는 산 아래에서 샘을 발견했다.",
+"옥황상제는 형제들의 용기에 감동했다."
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-103",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n그들은 곰이 하늘로 뛰어드는 전 과정을 보았다.\n→ They saw the bear _____ into the sky.",
+"solution": "지각동사 saw 뒤에서 목적어가 한 동작의 전 과정을 했음을 나타낼 때 동사원형 jump를 쓴다. 과거형 jumped나 to부정사 to jump는 이 구조에서 목적격보어로 쓸 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"jump",
+"jumped",
+"to jump",
+"jumps",
+"has jumped"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-104",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 2,
+"body": "다음 밑줄 친 표현과 의미가 가장 가까운 것은?\n\nAfter drinking some water and taking a rest, the sick traveler got well.",
+"solution": "get well은 병이나 몸 상태가 ‘낫다, 회복되다’라는 뜻이다. ‘잠이 들다’는 fall asleep, ‘용기를 내다’는 become brave 등으로 표현한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"길을 잃었다",
+"화를 냈다",
+"잠이 들었다",
+"병이 나았다",
+"용기를 냈다"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-105",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nSo, the brothers walked a long and hard path over the mountain to get the water. They gave it to their mom, and she finally got well. The Sky Emperor was _____ by their love for their mom. Later, he turned the seven brothers into seven stars.\n\n빈칸에 들어갈 말로 가장 알맞은 것은?",
+"solution": "be touched by는 ‘~에 감동받다’라는 뜻이므로 touched가 알맞다. followed나 caught를 넣으면 형제들의 사랑에 대한 옥황상제의 감정을 나타낼 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"followed",
+"formed",
+"touched",
+"caught",
+"connected"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-106",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장은?",
+"solution": "미래 조건을 나타내는 if절에는 현재형 finishes를 쓰고 주절에는 will call을 쓴다. 주어 Sora가 3인칭 단수이므로 finish가 아니라 finishes여야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"If Sora will finish early, she calls me.",
+"If Sora finish early, she will call me.",
+"If Sora will finishes early, she will call me.",
+"If Sora finishes early, she will call me.",
+"If Sora finished early tomorrow, she will call me."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-107",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 3,
+"body": "다음 중 지각동사의 쓰임이 어법상 옳은 것은?",
+"solution": "지각동사 heard 뒤에는 ‘목적어+동사원형’이 올 수 있으므로 someone knock이 옳다. 나머지 문장들은 목적격보어 자리에 to부정사나 과거형을 잘못 사용했다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"I saw him to cross the bridge.",
+"We watched the birds flew away.",
+"She heard the baby cried upstairs.",
+"They felt the ground to shake.",
+"We heard someone knock on the door."
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-108",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nA long time ago, the Mohawk people found the tracks of a giant bear. This bear was taking all their food, so people were very hungry. It was difficult to catch the bear. Everyone was just scared. One night, three brothers of the Mohawk all had the same dream of catching the bear. They became brave and followed its tracks for many months to the world’s end.\n\n윗글을 통해 알 수 있는 것은?",
+"solution": "곰을 잡기는 어려웠고 모두가 두려워했다는 내용이 직접 제시되어 있다. 삼 형제는 같은 꿈을 꾸었으며 곰의 발자국을 여러 달 동안 따라갔다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"처음에는 사람들이 곰을 두려워하여 잡기 어려워했다.",
+"모호크족 사람들은 곰에게 먹이를 주었다.",
+"삼 형제는 서로 다른 꿈을 꾸었다.",
+"곰의 발자국은 산 중턱에서 사라졌다.",
+"삼 형제는 며칠 동안만 곰을 추적했다."
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-109",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nOnce upon a time, seven brothers lived with their sick mom. They heard there was a water spring over the mountain. People said the water could heal sickness. So, the brothers walked a long and hard path over the mountain to get the water. They gave it to their mom, and she finally got well. The Sky Emperor was touched by their love for their mom. Later, he turned the seven brothers into seven stars.\n\n윗글의 내용 흐름상 가장 나중에 일어난 일은?",
+"solution": "어머니가 회복된 뒤 옥황상제가 형제들의 사랑에 감동했고, 나중에 형제들을 별로 바꾸었다. 따라서 제시된 사건 가운데 가장 나중의 일은 ②이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"형제들이 산 너머의 샘물에 관해 들었다.",
+"옥황상제가 형제들을 일곱 개의 별로 바꾸었다.",
+"형제들이 아픈 어머니와 함께 살았다.",
+"형제들이 길고 험한 산길을 걸었다.",
+"형제들의 어머니가 병에서 회복되었다."
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-110",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nⓐ Look up at the sky at night, and you will find seven bright stars in the north. ⓑ If you connect them, they form the shape of a big spoon. People ⓒ call it the Big Dipper. There are many stories about it around the world. Here are two of them.\nIn Korea, there is a story about seven brothers and the Big Dipper. Once upon a time, seven brothers lived with their sick mom. They heard there was a water spring over the mountain. People said the water could heal sickness. So, the brothers walked a long and hard path over the mountain to get the water. They gave it to their mom, and she finally got well. The Sky Emperor ⓓ was touched by their love for their mom. Later, he ⓔ turned the seven brothers into seven stars.\n\n표시된 부분에 관한 설명으로 적절하지 않은 것은?",
+"solution": "was touched는 ‘감동받았다’라는 뜻의 수동태이므로 능동태의 과거동사라는 설명은 틀리다. 나머지는 각 문장에 사용된 문법 구조와 의미를 바르게 설명한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ⓐ는 ‘명령문+and+주어+will+동사원형’의 구조이다.",
+"ⓑ의 If는 조건을 나타내는 부사절을 이끈다.",
+"ⓒ는 ‘call+목적어+목적격보어’의 구조이다.",
+"ⓓ의 touched는 능동태의 과거동사이다.",
+"ⓔ의 turn A into B는 ‘A를 B로 바꾸다’라는 뜻이다."
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-111",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nThey heard there was a water ⓐ spring over the mountain. People said the water could ⓑ heal sickness. So, the brothers walked a long and hard ⓒ path over the mountain to get the water. They gave it to their mom, and she finally got well. The Sky Emperor was ⓓ touched by their love for their mom. Later, he turned the seven brothers into seven stars. These stars ⓔ formed a big spoon shape in the night sky.\n\n표시된 낱말과 그 문맥상 의미가 바르게 연결된 것은?",
+"solution": "touched는 이 문맥에서 형제들의 사랑에 ‘감동한’이라는 뜻이다. spring은 ‘샘’, heal은 ‘치료하다’, path는 ‘길’, formed는 ‘형성했다’라는 뜻이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ⓐ spring — 봄",
+"ⓑ heal — 숨기다",
+"ⓓ touched — 감동한",
+"ⓒ path — 발자국",
+"ⓔ formed — 파괴했다"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-112",
+"typeId": "exam2-eng-m22-cj-u3m0s0t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s0t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nAs we have seen, people around the world create different and interesting stories about the same stars. What new story can you imagine about the Big Dipper? Maybe people in the future will enjoy your story.\n\n윗글로부터 추론할 수 있는 내용으로 가장 알맞은 것은?",
+"solution": "세계 사람들이 같은 별을 두고 다양하고 흥미로운 이야기를 만든다는 내용에서 ⑤를 추론할 수 있다. 글쓴이는 독자와 미래 사람들도 새로운 이야기를 만들고 즐길 수 있다고 본다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"별에 관한 모든 이야기는 동일한 결말을 지녀야 한다.",
+"북두칠성 이야기는 과거 사람들만 만들 수 있다.",
+"미래에는 사람들이 더 이상 별을 관찰하지 않을 것이다.",
+"새로운 이야기는 반드시 실제 역사에 근거해야 한다.",
+"같은 별도 문화와 시대에 따라 서로 다른 이야기의 소재가 될 수 있다."
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-113",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 답하시오.\nLook up at the sky at night, and you will find seven bright stars in the north. If you connect them, they form the shape of a big spoon. People call it the Big Dipper.\n\n윗글에서 북두칠성의 모양을 비유한 것으로 알맞은 것은?",
+"solution": "일곱 개의 밝은 별을 연결하면 큰 숟가락 모양이 된다고 했다. 곰의 발자국은 뒤에 나오는 모호크족 이야기의 소재이며, 이 대목에서 설명하는 별의 모양이 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"작은 배",
+"둥근 접시",
+"큰 숟가락",
+"긴 화살",
+"거대한 곰의 발자국"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-114",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 답하시오.\nThey heard there was a water ⓐspring over the mountain. People said the water could heal sickness.\n\n밑줄 친 ⓐspring의 문맥상 의미로 가장 알맞은 것은?",
+"solution": "산 너머에 있고 그 물이 병을 치료할 수 있다고 했으므로 spring은 ‘샘’이라는 뜻이다. ‘봄’도 spring의 뜻이지만, 이 문장의 water 및 뒤 문장의 the water와 연결되지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"샘",
+"봄",
+"용수철",
+"도약",
+"물병"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-115",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 1,
+"body": "다음 글을 읽고 물음에 답하시오.\nOnce upon a time, seven brothers lived with their sick mom. They heard there was a water spring over the mountain. People said the water could heal sickness. So, the brothers walked a long and hard path over the mountain to get the water.\n\n일곱 형제가 산을 넘어간 목적으로 가장 알맞은 것은?",
+"solution": "형제들은 병을 치료할 수 있다는 물을 구하기 위해 산을 넘었다. 옥황상제는 형제들의 사랑에 감동하는 인물이며, 형제들이 산을 넘은 목적은 그를 만나는 것이 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"새로운 집을 짓기 위해",
+"별을 가까이에서 보기 위해",
+"곰에게 빼앗긴 음식을 찾기 위해",
+"옥황상제를 만나기 위해",
+"어머니의 병을 낫게 할 물을 구하기 위해"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-116",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nPeople said the water could heal sickness. So, the brothers walked a long and hard path over the mountain to get the water. They gave ⓐit to their mom, and she finally got well.\n\n밑줄 친 ⓐit이 가리키는 것으로 알맞은 것은?",
+"solution": "형제들이 구하러 간 물을 어머니께 드렸으므로 it은 the water를 가리킨다. a long and hard path는 형제들이 걸어간 길이므로 어머니께 드린 대상이 될 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"the mountain",
+"the water",
+"sickness",
+"a long and hard path",
+"their mom"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-117",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nThey gave it to their mom, and she finally got well. The Sky Emperor was ⓐtouched by their love for their mom. Later, he turned the seven brothers into seven stars.\n\n밑줄 친 ⓐtouched의 의미를 가장 잘 설명한 것은?",
+"solution": "옥황상제는 형제들의 어머니에 대한 사랑에 마음이 움직여 감동했다. touch에는 신체에 접촉한다는 뜻도 있지만, 여기서는 사랑이라는 감정적 원인이 제시되어 있으므로 물리적으로 밀거나 만졌다는 의미가 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"physically pushed by someone",
+"made angry by a mistake",
+"frightened by something dangerous",
+"emotionally moved by something",
+"made tired by hard work"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-118",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nA long time ago, the Mohawk people found the tracks of a giant bear. This bear was taking all their food, so people were very hungry. It was difficult to catch the bear. Everyone was just scared.\n\n모호크족 사람들이 매우 배고팠던 이유로 알맞은 것은?",
+"solution": "곰이 사람들의 음식을 모두 가져가고 있었고, 그 결과 사람들이 매우 배고팠다고 했다. 세계의 끝은 형제들이 나중에 도달하는 장소이며, 사람들이 처음 배고파진 이유로 제시되지 않았다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"곰이 그들의 음식을 모두 가져가고 있었기 때문이다.",
+"곰의 발자국을 찾느라 식사 시간을 잊었기 때문이다.",
+"병을 치료하는 물을 마시지 못했기 때문이다.",
+"형제들이 음식을 가지고 하늘로 올라갔기 때문이다.",
+"세계의 끝에는 먹을 것이 없었기 때문이다."
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-119",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\nThis bear was taking all their food, so people were very hungry. ⓐIt was difficult to catch the bear. Everyone was just scared.\n\nⓐ의 It과 문법적 쓰임이 같은 것은?",
+"solution": "ⓐ의 It은 진주어인 to catch the bear를 대신하는 가주어이다. 세 번째 문장의 It도 to read the instructions first를 대신하지만, 첫 번째 문장의 It은 날씨를 나타내는 비인칭 주어이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"It was cold outside last night.",
+"I found a key, and it was under the desk.",
+"It is useful to read the instructions first.",
+"It is seven thirty now.",
+"It is about two kilometers from here to school."
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-120",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 2,
+"body": "다음 우리말과 일치하도록 빈칸에 들어갈 말을 알맞게 짝지은 것은?\n내일 하늘이 맑으면 우리는 별을 볼 것이다.\nIf the sky _____ clear tomorrow, we _____ the stars.",
+"solution": "미래의 일을 나타내더라도 조건을 나타내는 if절에는 현재형 is를 쓰고, 주절에는 will see를 쓴다. 첫 번째 선택지는 if절에 단순한 미래 예측의 will be를 사용했으므로 이 문장의 조건절에 알맞지 않다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"will be — will see",
+"is — saw",
+"was — will see",
+"will be — see",
+"is — will see"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-121",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nOnce upon a time, seven brothers lived with their sick mom.\n\n(A) The Sky Emperor was touched by their love for their mom. Later, he turned the seven brothers into seven stars. These stars formed a big spoon shape in the night sky.\n\n(B) They heard there was a water spring over the mountain. People said the water could heal sickness. So, the brothers walked a long and hard path over the mountain to get the water.\n\n(C) They gave it to their mom, and she finally got well.\n\n주어진 문장 다음에 이어질 글의 순서로 가장 알맞은 것은?",
+"solution": "형제들이 치료 효과가 있다는 물을 구하고(B), 그것을 어머니께 드려 병이 낫게 한 뒤(C), 옥황상제가 감동하여 형제들을 별로 바꾸는 순서(A)이다. (B) 다음에 곧바로 (A)를 놓으면 물을 드리고 어머니가 회복하는 사건보다 보상이 먼저 나와 이야기의 인과관계가 어긋난다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"(A) — (C) — (B)",
+"(B) — (C) — (A)",
+"(B) — (A) — (C)",
+"(C) — (A) — (B)",
+"(C) — (B) — (A)"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-122",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nA long time ago, the Mohawk people found the tracks of a giant bear. (A) This bear was taking all their food, so people were very hungry. (B) It was difficult to catch the bear. (C) Everyone was just scared. (D) They became brave and followed its tracks for many months to the world’s end. (E) There they saw the bear jump into the sky, and they jumped after it.\n\n다음 문장이 들어갈 위치로 가장 알맞은 것은?\nOne night, three brothers of the Mohawk all had the same dream of catching the bear.",
+"solution": "모두가 두려워하던 상황 뒤에 삼 형제의 꿈이 제시되고, 이어서 그들이 용감해져 곰을 추적하는 흐름이 자연스럽다. (E)에 넣으면 앞 문장의 They가 가리키는 삼 형제가 먼저 소개되지 않으며, 용감해진 뒤에야 꿈을 꾸는 순서가 된다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-123",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nThere they saw the bear ⓐjump into the sky, and they jumped after it. Now, when you see the night sky, you can see the three brothers still ⓑchasing the bear.\n\nⓐ와 ⓑ에 쓰인 지각동사 구문을 참고할 때, 다음 중 어법상 옳은 것은?",
+"solution": "지각동사 see는 목적어 뒤에 동사원형이나 현재분사를 목적격보어로 취할 수 있으므로 flying이 알맞다. to fly는 이 구문의 목적격보어로 쓸 수 없으며, 나머지 선택지의 정형동사도 해당 자리에 올 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"We saw the bird to fly over the tree.",
+"We saw the bird flew over the tree.",
+"We saw the bird flying over the tree.",
+"We saw the bird was flying over the tree.",
+"We saw the bird flies over the tree."
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-cj-con-124",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nOne night, three brothers of the Mohawk all had the same dream of catching the bear. They became brave and followed its tracks for many months to the world’s end. There they saw the bear jump into the sky, and they jumped after it. Now, when you see the night sky, you can see the three brothers still chasing the bear.\n\n윗글만으로 답할 수 없는 질문은?",
+"solution": "삼 형제의 이름은 제시되어 있지 않다. 추적 기간은 정확한 개월 수까지 나오지는 않지만 for many months라고 제시되어 있으므로, 세 번째 질문에는 ‘여러 달 동안’이라고 답할 수 있다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"What were the names of the three brothers?",
+"What did the three brothers dream of doing?",
+"How long did the brothers follow the bear’s tracks?",
+"Where did the brothers see the bear jump into the sky?",
+"What can you see the brothers still doing in the night sky?"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-cj-con-125",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 3,
+"body": "다음 글을 읽고 물음에 답하시오.\nAs we have seen, people around the world create different and interesting stories about the same stars. What new story can you imagine about the Big Dipper? Maybe people in the future will enjoy your story.\n\n윗글에 나타난 글쓴이의 의도로 가장 알맞은 것은?",
+"solution": "글쓴이는 독자에게 북두칠성에 관한 새로운 이야기를 상상해 보도록 권하고, 미래의 사람들이 그 이야기를 즐길 수도 있다고 말한다. 같은 별을 두고 다양한 이야기를 만든다는 점을 인정하므로 이야기를 하나로 통일하려는 의도가 아니다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"북두칠성을 관찰하는 데 필요한 장비를 소개하려고",
+"별에 관한 옛이야기의 과학적 오류를 증명하려고",
+"미래에는 옛이야기가 사라질 것이라고 경고하려고",
+"세계의 모든 별자리 이야기를 하나로 통일하려고",
+"독자가 북두칠성에 관한 새로운 이야기를 상상하도록 권하려고"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-cj-con-126",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nLook up at the sky at night, and you will find seven bright stars in the north. If you connect ⓐthem, they form the shape of a big spoon. People call it the Big Dipper. There are many stories about it around the world. Here are two of ⓑthem.\n\nⓐ와 ⓑ가 가리키는 대상을 알맞게 짝지은 것은?",
+"solution": "ⓐ는 연결하면 숟가락 모양을 이루는 일곱 개의 별을 가리키고, ⓑ는 바로 앞에서 언급한 북두칠성에 관한 많은 이야기를 가리킨다. 두 대명사의 형태가 같더라도 두 번째 them을 별로 해석하면 ‘별 중 두 개를 소개한다’는 뜻이 되어 문맥과 맞지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ⓐ seven bright stars — ⓑ people around the world",
+"ⓐ seven bright stars — ⓑ many stories about the Big Dipper",
+"ⓐ many stories about the Big Dipper — ⓑ seven bright stars",
+"ⓐ people around the world — ⓑ many stories about the Big Dipper",
+"ⓐ seven bright stars — ⓑ two big spoons"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-cj-con-127",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nA long time ago, the Mohawk people found the tracks of a giant bear. This bear was taking all their food, so people were very hungry. It was difficult to catch the bear. Everyone was just scared. One night, three brothers of the Mohawk all had the same dream of catching the bear. They became brave and followed its tracks for many months to the world’s end. There they saw the bear jump into the sky, and they jumped after it. Now, when you see the night sky, you can see the three brothers still chasing the bear.\n\n윗글의 내용과 일치하는 진술만을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. 사람들은 곰의 발자국을 발견했지만 곰을 잡는 일을 어려워했다.\nㄴ. 삼 형제는 서로 다른 꿈을 꾸고 각자 다른 곰을 쫓았다.\nㄷ. 삼 형제는 여러 달 동안 곰의 발자국을 따라갔다.\nㄹ. 글은 밤하늘에서 삼 형제가 여전히 곰을 쫓는 모습을 볼 수 있다고 한다.",
+"solution": "사람들은 곰을 잡기 어려워했고, 삼 형제는 여러 달 동안 추적했으며, 지금도 밤하늘에서 곰을 쫓는 것으로 묘사된다. ㄴ은 삼 형제가 모두 같은 꿈을 꾸었다는 all had the same dream과 어긋난다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-cj-con-128",
+"typeId": "exam2-eng-m22-cj-u3m0s1t2",
+"twinGroup": "tw-exam2-eng-m22-cj-u3m0s1t2",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nⓐLook up at the sky at night, and you will find seven bright stars in the north. If you connect them, they form the shape of a big spoon.\n\nⓐ를 조건을 나타내는 if절이 있는 문장으로 바꿀 때, 원래 의미를 유지하면서 어법상 옳은 것은?",
+"solution": "‘명령문, and + 주어 + will ~’은 이 문맥에서 ‘If + 주어 + 현재형, 주어 + will ~’로 바꿀 수 있다. 두 번째 선택지는 조건절에 will을 쓴 오류이고, 네 번째 선택지는 조건과 결과의 방향을 뒤바꾸었다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 천재(이상기)",
+"kind": "객관식",
+"choices": [
+"If you look up at the sky at night, you will find seven bright stars in the north.",
+"If you will look up at the sky at night, you will find seven bright stars in the north.",
+"If you look up at the sky at night, and you will find seven bright stars in the north.",
+"If you find seven bright stars in the north, you will look up at the sky at night.",
+"If you look up at the sky at night, you would found seven bright stars in the north."
+],
+"answer": "①"
 }
 ]

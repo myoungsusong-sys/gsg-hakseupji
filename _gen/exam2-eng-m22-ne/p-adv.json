@@ -394,5 +394,389 @@
 "ㄱ, ㄴ, ㄷ, ㄹ"
 ],
 "answer": "④"
+},
+{
+"id": "exam2-eng-m22-ne-adv-025",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nAnyone who has an app can borrow a bike easily. First, you choose a bike that you want to use. Then you scan the QR code on the bike. This makes the bike’s lock open. Before I rode to the park, I checked the bike carefully. Using the bike was really easy.\n\n윗글에 관한 설명으로 옳은 것만을 모두 고른 것은?\n〈보기〉\nㄱ. 첫 문장의 who는 관계절 안에서 주어 역할을 한다.\nㄴ. open은 makes의 목적격 보어로 쓰인 동사원형이다.\nㄷ. Before는 뒤에 완전한 절이 왔으므로 전치사이다.\nㄹ. Using the bike는 문장의 주어이고 단수로 취급되었다.",
+"solution": "who는 관계절의 주어이고, make 뒤의 open은 동사원형이며, 동명사구 Using the bike는 단수 주어로 취급된다. Before 뒤에는 ‘I rode to the park’라는 절이 왔으므로 여기서 Before는 전치사가 아니라 접속사이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-ne-adv-026",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\n주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.\n\nThat day was a great experience for me.\n\n(A) I also really liked the color of it. I looked forward to using it for school.\n\n(B) After I got the backpack from the person, I went home.\n\n(C) The backpack wasn’t as big as my old one, but it was in great condition.",
+"solution": "먼저 백팩을 받은 뒤 집으로 갔다는 (B)가 오고, 이어서 백팩의 크기와 상태를 설명하는 (C)가 와야 한다. it으로 백팩을 계속 가리키며 색깔과 사용에 대한 기대를 말하는 (A)가 마지막이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"(A)－(B)－(C)",
+"(A)－(C)－(B)",
+"(B)－(A)－(C)",
+"(C)－(B)－(A)",
+"(B)－(C)－(A)"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-ne-adv-027",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"diff": 4,
+"body": "다음 우리말과 뜻이 같도록 주어진 조건을 모두 활용하여 영어 문장을 쓰시오.\n\n이 경험은 또한 제게 저 역시도 다른 사람들과 제 것을 공유해야겠다고 생각하게 만들었다.\n\n조건: make, think, that, share A with B를 모두 사용할 것.",
+"solution": "‘~가 나로 하여금 생각하게 했다’는 made me think으로 나타내고, 생각의 내용은 that절로 연결한다. ‘내 것을 다른 사람들과 공유하다’는 share my things with others로 쓴다. 채점 기준: made me think, that절, should share, share A with B의 네 요소를 모두 포함하고 전체 의미가 일치하면 정답으로 인정한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "주관식",
+"answer": "This experience also made me think that I should share my things with others, too.",
+"selfGrade": true
+},
+{
+"id": "exam2-eng-m22-ne-adv-028",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"diff": 5,
+"body": "다음 중 어법상 옳은 문장의 개수를 고르시오.\n〈보기〉\nㄱ. The app lets users buy and sell secondhand items.\nㄴ. My parents made me to return the bike before dinner.\nㄷ. Jimin had her friend check the lock carefully.\nㄹ. The post allowed him get the backpack for free.",
+"solution": "ㄱ은 let 뒤에 목적어와 동사원형이 왔고, ㄷ도 have 뒤에 목적어와 동사원형이 와서 옳다. ㄴ의 to return은 return으로, ㄹ의 get은 to get으로 고쳐야 하므로 옳은 문장은 두 개이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"0개",
+"1개",
+"2개",
+"3개",
+"4개"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-ne-adv-029",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nSometimes, people also give away items that they don’t need anymore. I saw a post about a nice backpack. Someone was giving it away. Sometimes, the bikes are not in good condition. When I got there, I returned the bike to a station in the park. I got a cool backpack without spending any money!\n\n윗글에 사용된 단어의 문맥상 의미를 바르게 설명한 것만을 모두 고른 것은?\n〈보기〉\nㄱ. post: 인터넷에 올라온 게시글\nㄴ. condition: 물건의 상태\nㄷ. station: 기차가 정차하는 철도역\nㄹ. spend: 돈을 쓰다",
+"solution": "post는 백팩에 관한 게시글, condition은 자전거의 상태, spend는 돈을 쓰는 것을 뜻한다. station은 이 문맥에서 철도역이 아니라 공유 자전거를 반납하는 대여소를 가리킨다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-ne-adv-030",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nAfter I got the backpack from the person, I went home. The backpack wasn’t as big as my old one, but it was in great condition. I also really liked the color of it. I looked forward to using it for school.\nThat day was a great experience for me. I got a cool backpack without spending any money! This experience also made me think that I should share my things with others, too.\n\n윗글의 의미를 유지하면서 어법상 바르게 바꿔 쓴 것만을 모두 고른 것은?\n〈보기〉\nㄱ. The backpack I got was smaller than my old one.\nㄴ. Although I did not spend any money, I got a cool backpack.\nㄷ. This experience let me think that I should share my things with others.\nㄹ. I expected to using the backpack for school.",
+"solution": "not as big as는 ‘~보다 작다’로 바꿀 수 있고, without spending any money는 ‘돈을 쓰지 않았지만’으로 바꾸어도 핵심 의미가 유지된다. ㄷ의 let은 단순 허용의 의미라 made의 인과적 의미와 다르고, ㄹ은 expect 뒤에 to use를 써야 하므로 틀리다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-ne-adv-031",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nBefore I rode to the park, I checked the bike carefully. Sometimes, the bikes are not in good condition. This time, everything looked fine, so I headed for the park. When I got there, I returned the bike to a station in the park. Using the bike was really easy. Also, I was happy to help the environment.\nAfter I got the backpack from the person, I went home.\n\n윗글에서 확인할 수 있는 사건의 시간 관계를 바르게 설명한 진술만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. 지민이는 공원으로 자전거를 타고 가기 전에 자전거를 점검했다.\nㄴ. 지민이는 공원에 도착했을 때 그곳의 대여소에 자전거를 반납했다.\nㄷ. 지민이는 집에 돌아온 후 백팩을 받았다.\nㄹ. 지민이는 공원에 도착한 후 처음으로 자전거의 상태를 점검했다.",
+"solution": "Before는 점검이 자전거 이동보다 먼저임을, When은 공원 도착 시 반납했음을 보여 준다. After I got the backpack은 백팩을 받은 일이 귀가보다 앞섰다는 뜻이므로 ㄷ은 시간 관계를 뒤집은 설명이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ",
+"ㄴ, ㄷ"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-ne-adv-032",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nThe app ⓐallows users to easily buy and sell secondhand items.\nLet me ⓑtell you about my experience with the sharing economy.\nThis experience also ⓒmade me think that I should share my things with others, too.\n\n각 문장을 고친 내용 중 원래 의미를 유지하면서 어법에도 맞는 것만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. ⓐ를 lets users easily buy and sell secondhand items로 바꾼다.\nㄴ. ⓑ를 to tell you about my experience with the sharing economy로 바꾼다.\nㄷ. ⓒ를 made me to think that I should share my things with others, too로 바꾼다.\nㄹ. ⓐ를 allows users to buy and sell secondhand items easily로 바꾼다.",
+"solution": "allow는 목적어 뒤에 to부정사를, let은 목적어 뒤에 동사원형을 쓰므로 ㄱ은 올바른 전환이다. ㄹ처럼 easily를 문장 끝에 두어도 의미가 유지되지만, let과 사역동사 make 뒤의 목적격보어에 to를 붙인 ㄴ과 ㄷ은 틀리다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄹ",
+"ㄷ, ㄹ",
+"ㄴ, ㄹ"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-ne-adv-033",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nAfter I got the backpack from the person, I went home. The backpack wasn’t as big as my old one, but it was in great condition. I also really liked the color of it. I looked forward to using it for school.\nThat day was a great experience for me. I got a cool backpack without spending any money! This experience also made me think that I should share my things with others, too.\n\n윗글을 다음과 같이 요약할 때 빈칸 (A), (B), (C)에 들어갈 말을 순서대로 바르게 짝지은 것은?\n지민이는 기존 것보다 (A) 백팩을 (B) 얻었으며, 이 경험을 통해 자신의 물건도 다른 사람들과 (C) 생각을 하게 되었다.",
+"solution": "not as big as는 더 작다는 뜻이고, without spending any money는 돈을 쓰지 않고 얻었음을 나타낸다. 마지막 문장은 공유의 필요성을 깨달았다는 내용이므로 공유하지 말아야겠다는 요약은 반대이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"큰 — 무료로 — 공유해야겠다는",
+"작은 — 돈을 주고 — 공유해야겠다는",
+"작은 — 무료로 — 공유하지 말아야겠다는",
+"작은 — 무료로 — 공유해야겠다는",
+"큰 — 돈을 주고 — 공유하지 말아야겠다는"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-ne-adv-034",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nSometimes, people also give away items that they don’t need anymore. I saw a post about a nice backpack. Someone was giving it away. It looked as good as a new one.\nAfter I got the backpack from the person, I went home. The backpack wasn’t as big as my old one, but it was in great condition. I also really liked the color of it. I looked forward to using it for school.\n\n윗글을 근거로 판단한 내용 중 타당한 것만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. as good as a new one이라는 표현만으로 받은 백팩이 사용된 적 없는 새 제품이라고 단정할 수 있다.\nㄴ. 받은 백팩은 기존 백팩보다 작았지만 상태가 매우 좋았다.\nㄷ. 학교에서 사용할 것을 기대했다는 내용만으로 이미 학교에서 사용했다고 단정할 수 없다.\nㄹ. 기존 백팩보다 작다는 것은 기존 백팩보다 품질도 나쁘다는 뜻이다.",
+"solution": "본문은 받은 백팩의 크기와 상태를 구분하여 설명하며, 학교에서 사용할 것을 기대했다고만 말한다. 새것처럼 좋아 보였다는 표현은 실제 새 제품이라는 증거가 아니고, 크기가 작다는 사실로 품질이 나쁘다고 판단할 수도 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄱ, ㄹ",
+"ㄴ, ㄹ",
+"ㄴ, ㄷ"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-ne-adv-035",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nSometimes, people also give away items ⓐthat they don’t need anymore.\nSo, I sent a message to the person ⓑwho posted it.\nAnyone ⓒwho has an app can borrow a bike easily.\nFirst, you choose a bike ⓓthat you want to use.\nThis experience also made me think ⓔthat I should share my things with others, too.\n\nⓐ~ⓔ에 대한 설명으로 옳은 것만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. ⓐ와 ⓓ는 관계절에서 목적어 역할을 하는 관계대명사이므로 생략할 수 있다.\nㄴ. ⓑ와 ⓒ는 사람을 나타내는 말 뒤에 있으므로 관계대명사만 생략해도 문장이 성립한다.\nㄷ. ⓔ는 뒤에 이어지는 생각의 내용을 이끄는 접속사이며, 앞의 명사를 꾸미는 관계대명사가 아니다.\nㄹ. ⓐ와 ⓔ는 모두 앞에 있는 명사를 대신하는 목적격 관계대명사이다.",
+"solution": "ⓐ와 ⓓ는 각각 need와 use의 목적어 역할을 하므로 생략할 수 있고, ⓔ는 think의 목적어가 되는 내용절을 이끈다. ⓑ와 ⓒ는 각각 posted와 has의 주어 역할을 하는 관계대명사이므로 관계대명사만 생략할 수 없다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄷ, ㄹ",
+"ㄱ, ㄹ"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-ne-adv-036",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nThe backpack wasn’t as big as my old one, but it was in great condition. I also really liked the color of it. I looked forward to using it for school.\nThat day was a great experience for me. I got a cool backpack without spending any money! This experience also made me think that I should share my things with others, too.\n\n윗글의 내용에 맞게 다음 두 가지를 영어로 각각 한 문장씩 쓰시오.\n(1) 받은 백팩과 기존 백팩의 크기를 비교하시오. Jimin’s old backpack으로 시작하고 as를 사용하지 말 것.\n(2) 이 경험으로 지민이가 어떤 생각을 하게 되었는지 쓰시오. This experience로 시작하고 made, think, should, share를 모두 사용할 것.\n두 문장 모두 지민이를 3인칭으로 표현하고, 성별을 나타내는 대명사 대신 Jimin 또는 Jimin’s를 사용할 것.",
+"solution": "받은 백팩이 기존 백팩만큼 크지 않았으므로 기존 백팩을 주어로 쓰면 bigger than으로 비교해야 한다. 두 번째 문장은 made 뒤에 목적어 Jimin과 동사원형 think를 쓰며, 이미 공유했다는 사실이 아닌 공유해야겠다는 생각을 표현해야 한다. 채점 기준: 각 문장 3점으로 총 6점이며, (1)은 비교 방향과 내용 1점·비교급 구문 1점·시작 표현과 대명사 조건 및 문장 완결성 1점, (2)는 생각의 내용 1점·made＋목적어＋think 구문 1점·필수 어휘와 시작 표현 및 대명사 조건 충족 1점을 부여하고, 조건을 충족하는 의미상 동등한 답안도 인정한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "주관식",
+"answer": "Jimin’s old backpack was bigger than the backpack Jimin got. This experience made Jimin think that Jimin should share Jimin’s things with others, too.",
+"selfGrade": true
+},
+{
+"id": "exam2-eng-m22-ne-adv-037",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\n\n1. Accuracy: AI is not always correct, so you should always carefully check the information that it provides.\n2. Originality: Even if the information is correct, do not blindly copy it. Make sure you understand it, and then write it in your own words.\n〈보기〉\nㄱ. 첫 문장의 that은 the information을 수식하는 관계절을 이끈다.\nㄴ. Even if는 ‘～이기 때문에’라는 원인의 뜻을 나타낸다.\nㄷ. blindly는 동사 copy를 수식한다.\nㄹ. understand 뒤의 it은 the information을 가리킨다.\n\n옳은 진술만을 고른 것은?",
+"solution": "that은 the information을 선행사로 하는 관계대명사이고, blindly는 copy를 수식하는 부사이며, understand it의 it은 해당 정보를 가리킨다. Even if는 원인이 아니라 ‘비록 ～일지라도’라는 양보를 나타내므로 ㄴ은 틀리다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-ne-adv-038",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\n\n1. Accuracy: AI is not always (A)_____, so you should always (B)_____ check the information that it provides.\n\nIf you are careful about these things, you can use AI (C)_____ and wisely.\n\n문맥과 어법을 모두 고려할 때 (A), (B), (C)에 들어갈 말로 가장 알맞은 것은?",
+"solution": "be동사 뒤에는 형용사 correct가, 동사 check를 수식하는 자리에는 부사 carefully가 필요하다. use를 수식하며 wisely와 병렬을 이루는 말도 부사 safely이므로 세 형태를 모두 바르게 고른 것은 ③이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"correctly ― careful ― safe",
+"correct ― careful ― safely",
+"correct ― carefully ― safely",
+"correctly ― carefully ― safe",
+"correct ― carefulness ― safety"
+],
+"answer": "③"
+},
+{
+"id": "exam2-eng-m22-ne-adv-039",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"diff": 4,
+"body": "다음 〈보기〉에서 어법상 옳은 문장의 개수는?\n〈보기〉\nㄱ. It is dangerous for children to share their passwords.\nㄴ. It was careless of him to copy the answer blindly.\nㄷ. It is difficult of us to recognize his voice.\nㄹ. It is wisely to check information from several sources.",
+"solution": "ㄱ은 행위의 주체를 나타내는 for children이, ㄴ은 사람의 성품을 평가하는 careless와 함께 쓰인 of him이 적절하다. ㄷ의 of는 for로, ㄹ의 부사 wisely는 형용사 wise로 고쳐야 하므로 옳은 문장은 두 개이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"0개",
+"1개",
+"3개",
+"2개",
+"4개"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-ne-adv-040",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\n\n1. Accuracy: AI is not always correct, so you should always carefully check the information that it provides.\n\n다음 조건을 모두 만족하도록 주어진 우리말을 한 문장으로 영작하시오.\n\n‘학생들이 AI가 제공하는 정보를 주의 깊게 확인하는 것은 중요하다.’\n〈보기〉\nㄱ. 가주어 It을 사용할 것\nㄴ. students의 의미상 주어를 나타낼 것\nㄷ. 본문의 ‘the information that it provides’를 필요한 형태로 활용할 것",
+"solution": "가주어 It 뒤에 important를 쓰고, 진주어는 to carefully check 이하로 나타낸다. 행위의 주체는 for students로 표시하며, 관계절 that AI provides가 the information을 수식한다. 채점 기준: It is important, for students, to check, the information that AI provides의 네 핵심 요소를 모두 포함하면 정답으로 인정하며, carefully의 위치가 자연스럽고 철자·수 일치에 오류가 없어야 한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "주관식",
+"answer": "It is important for students to carefully check the information that AI provides.",
+"selfGrade": true
+},
+{
+"id": "exam2-eng-m22-ne-adv-041",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\n\n3. Privacy: It is not safe to share your personal information with AI.\nIf you are careful about these things, you can use AI safely and wisely.\nUser: Got it, thanks!\nANNIE: You’re welcome! If you need help in the future, feel free to ask. Have a great day!\n〈보기〉\nㄱ. correct처럼 -ly가 없는 단어도 언제나 동사를 수식하는 부사로 쓰인다.\nㄴ. personal은 명사 information을 수식하는 형용사이다.\nㄷ. safely와 wisely는 모두 동사 use를 수식한다.\nㄹ. feel free to ask는 ‘부담 없이 물어보다’라는 의미이다.\n\n옳은 진술만을 고른 것은?",
+"solution": "personal은 information을 꾸미는 형용사이고, safely와 wisely는 use를 수식하는 부사이며, feel free to ask는 ‘편하게 물어보다’라는 뜻이다. correct는 본문의 ‘AI is not always correct’처럼 be동사의 보어인 형용사로 쓰이므로 ㄱ의 설명은 틀리다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-ne-adv-042",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nANNIE: You should keep the following things in mind:\n1. Accuracy: AI is not always correct, so you should always carefully check the information that it provides.\n2. Originality: Even if the information is correct, do not blindly copy it. Make sure you understand it, and then write it in your own words.\n3. Privacy: It is not safe to share your personal information with AI.\nIf you are careful about these things, you can use AI safely and wisely.\n\n〈보기〉의 상황에서 학생의 행동과 본문의 원칙을 연결한 설명으로 적절한 것만을 고른 것은?\n〈보기〉\nㄱ. AI의 답변을 다른 자료와 대조해 확인한 행동은 Accuracy에 부합한다.\nㄴ. 사실임을 확인한 AI의 답변을 이해하지 않고 그대로 제출한 행동은 Originality에 부합한다.\nㄷ. AI에게 질문할 때 자신의 집 주소를 입력하지 않은 행동은 Privacy에 부합한다.\nㄹ. AI의 답변을 자기 말로 바꾸었으므로 사실 확인은 생략해도 된다는 판단은 Accuracy에 부합한다.",
+"solution": "다른 자료와의 대조는 정보 확인의 실천이고, 집 주소를 입력하지 않는 것은 개인 정보 보호의 실천이므로 ㄱ과 ㄷ이 적절하다. 정확한 정보라도 이해 없이 복사하면 독창성 원칙에 어긋나며, 자기 말로 바꾸어도 정확성 확인 의무가 사라지지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "①"
+},
+{
+"id": "exam2-eng-m22-ne-adv-043",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\n1. Accuracy: AI is not always correct, so you should always carefully check the information that (A)it provides.\n2. Originality: (B)Even if the information is correct, do not blindly copy it. Make sure you understand it, and then write it in your own words.\n3. Privacy: (C)It is not safe to share your personal information with AI.\n(D)If you are careful about these things, you can use AI safely and wisely.\n\n윗글의 표현에 대한 설명으로 옳은 것만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. (A)의 it은 AI를 가리킨다.\nㄴ. (B)는 정보가 정확한 경우에는 복사 금지의 지침이 적용되지 않는다는 뜻이다.\nㄷ. (C)의 It은 앞에서 나온 personal information을 가리킨다.\nㄹ. (D)의 If절은 AI를 안전하고 현명하게 사용할 수 있는 조건을 제시한다.",
+"solution": "정보를 제공하는 주체는 AI이며, 마지막 If절은 안전하고 현명한 사용의 조건을 제시하므로 ㄱ과 ㄹ이 옳다. Even if는 정확한 경우에도 복사하지 말라는 양보의 의미이고, (C)의 It은 뒤의 to부정사구에 대응하는 가주어이다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "②"
+},
+{
+"id": "exam2-eng-m22-ne-adv-044",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\nAI is used in many situations. For example, AI technology can recommend new videos that you may like. It studies (A)_____. Then it decides what to recommend.\nAI can also recognize your face to unlock your smartphone. It learns (B)_____. Over time, it gets better at recognizing you, even if you change your hair or wear a mask.\n\n문맥과 어법을 모두 고려할 때, 빈칸 (A), (B)에 들어갈 말을 바르게 짝지은 것은? 각 선택지는 ‘(A) / (B)’의 순서이다.",
+"solution": "두 빈칸은 모두 동사의 목적어인 간접의문문 자리이므로 ‘의문사(구)＋주어＋동사’의 어순을 따른다. 현재완료는 have watched가 되어야 하고, 단수 주어 your face 뒤에는 looks가 와야 하므로 네 번째 선택지만 모두 옳다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"which videos have you already watched / what your face looks like",
+"which videos you have already watched / what does your face look like",
+"which videos you have already watch / what your face looks like",
+"which videos you have already watched / what your face looks like",
+"which videos you have already watched / what your face look like"
+],
+"answer": "④"
+},
+{
+"id": "exam2-eng-m22-ne-adv-045",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nAI can also recognize your face to unlock your smartphone. It learns what your face looks like. Over time, it gets better at recognizing you, even if you change your hair or wear a mask.\nUser: Here is my last question: What should I be careful about when I use AI?\nANNIE: You should keep the following things in mind:\n1. Accuracy: AI is not always correct, so you should always carefully check the information that it provides.\n\n윗글을 근거로 판단한 내용으로 적절한 것만을 〈보기〉에서 고른 것은?\n〈보기〉\nㄱ. gets better는 AI가 처음부터 모든 사용자의 얼굴을 완벽하게 인식한다는 것을 전제로 한다.\nㄴ. even if you change your hair or wear a mask는 외모의 변화가 있을 때 얼굴 인식이 반드시 실패한다는 뜻이다.\nㄷ. not always correct는 AI가 정확한 정보를 제공하는 경우도 있을 수 있다는 해석과 양립한다.\nㄹ. 얼굴 인식 능력이 향상된다는 설명만으로 AI가 제공하는 정보의 확인이 불필요하다고 결론 내릴 수는 없다.",
+"solution": "not always는 모든 경우의 정확성을 부정하므로 때로 정확할 가능성과 양립하고, 얼굴 인식의 향상이 정보 확인의 필요성을 없애지는 않으므로 ㄷ과 ㄹ이 적절하다. gets better는 능력의 향상을 나타낼 뿐 처음부터 완벽했다는 뜻이 아니며, even if도 외모 변화에 따른 필연적 실패를 뜻하지 않는다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "객관식",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "⑤"
+},
+{
+"id": "exam2-eng-m22-ne-adv-046",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\n1. Accuracy: AI is not always correct, so you should always carefully check the information that it provides.\n2. Originality: Even if the information is correct, do not blindly copy it. Make sure you understand it, and then write it in your own words.\n3. Privacy: It is not safe to share your personal information with AI.\n\n다음 조건을 모두 충족하도록 AI 사용 지침을 영어 두 문장으로 쓰시오.\n첫째 문장은 Even if로 시작하고, 정보가 정확하더라도 항상 주의 깊게 확인하고 이해한 다음 자기 말로 써야 한다는 내용을 담을 것.\n둘째 문장은 가주어 It과 to부정사를 사용하여 개인 정보 공유가 안전하지 않다는 내용을 담을 것.",
+"solution": "첫 문장은 정확성 확인과 독창성 원칙을 Even if의 양보 구문으로 통합하고, 둘째 문장은 개인 정보 보호 원칙을 가주어 구문으로 표현한다. 정확한 정보는 그대로 복사해도 된다고 쓰거나, 둘째 문장에서 to를 빠뜨리면 조건을 충족하지 못한다. 채점 기준: 양보절의 의미, 항상 주의 깊게 확인하기·이해하기·자기 말로 쓰기의 세 행동, 개인 정보 공유의 위험성, 가주어 It과 to부정사 구조를 모두 충족하면 정답으로 인정하며 의미가 같은 문법적으로 올바른 표현도 허용한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "주관식",
+"answer": "Even if AI information is correct, you should always carefully check it, understand it, and then write it in your own words. It is not safe to share your personal information with AI.",
+"selfGrade": true
+},
+{
+"id": "exam2-eng-m22-ne-adv-047",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\nAI can also recognize your face to unlock your smartphone. It learns what your face looks like. Over time, it gets better at recognizing you, even if you change your hair or wear a mask.\nUser: Here is my last question: What should I be careful about when I use AI?\nANNIE: You should keep the following things in mind:\n1. Accuracy: AI is not always correct, so you should always carefully check the information that it provides.\n2. Originality: Even if the information is correct, do not blindly copy it. Make sure you understand it, and then write it in your own words.\n3. Privacy: It is not safe to share your personal information with AI.\nIf you are careful about these things, you can use AI safely and wisely.\n\n〈보기〉의 두 판단이 본문의 의미를 넘어서는 이유를 우리말 두 문장으로 설명하시오. 첫 문장에는 gets better의 의미와 한계를, 둘째 문장에는 마지막 If절의 결론과 Accuracy 항목을 함께 반영할 것.\n〈보기〉\nㄱ. AI는 마스크를 쓴 모든 사람의 얼굴을 언제나 완벽하게 인식한다.\nㄴ. 사용자가 세 가지 주의 사항을 지키면 AI가 제공하는 모든 정보가 정확해진다.",
+"solution": "능력의 향상과 모든 상황에서의 완벽함은 다르며, 안전하고 현명한 사용과 정보 자체의 완전한 정확성도 구별해야 한다. 특히 마지막 조건문의 결론을 ‘모든 정보가 정확해진다’로 바꾸면 본문에 없는 보장을 덧붙이게 된다. 채점 기준: 첫 문장에서 인식 능력의 향상과 보편적·절대적 정확성의 차이를 설명하고, 둘째 문장에서 안전하고 현명한 사용이라는 결론 및 지속적인 정보 확인의 필요성을 모두 설명하면 정답으로 인정한다.",
+"source": "대치스파르타 프리미엄 · 2026 2학기 기말 시험대비 · 중2 영어 NE능률(김기택)",
+"kind": "주관식",
+"answer": "gets better는 시간이 지나면서 사용자 인식 능력이 향상된다는 뜻이며, 마스크를 쓴 모든 사람을 언제나 완벽하게 인식한다는 보장은 아니다. 주의 사항을 지키면 AI를 안전하고 현명하게 사용할 수 있다는 뜻이지 모든 정보가 정확해진다는 뜻은 아니므로, AI가 항상 정확한 것은 아니라는 점을 기억하고 정보를 확인해야 한다.",
+"selfGrade": true
 }
 ]
