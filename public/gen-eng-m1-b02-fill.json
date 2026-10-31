@@ -1,119 +1,5 @@
 [
 {
-"id": "fill-ef16e205c3",
-"typeId": "eng-m1-b02-u2m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 영영 풀이가 설명하는 단어로 알맞은 것은?\n\na short rest between classes",
-"choices": [
-"project",
-"break",
-"weekend",
-"science",
-"menu"
-],
-"answer": "②",
-"solution": "수업과 수업 사이의 짧은 휴식을 뜻하므로 '쉬는 시간'에 해당하는 break가 알맞다. project(과제), weekend(주말), science(과학), menu(메뉴)는 뜻이 맞지 않는다. 따라서 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
-"custom": true
-},
-{
-"id": "fill-5a9c949c03",
-"typeId": "eng-m1-b02-u2m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 우리말과 뜻이 같도록 할 때 빈칸에 들어갈 말로 알맞은 것은?\n\n그녀는 신나는 기분이 들었다.\n→ She ______ excited.",
-"choices": [
-"won",
-"read",
-"felt",
-"laughed",
-"prepared"
-],
-"answer": "③",
-"solution": "'~한 기분이 들다'는 feel이며, 과거를 나타내므로 feel-felt-felt의 과거형 felt가 와야 한다. won(이겼다), read(읽었다), laughed(웃었다), prepared(준비했다)는 문맥상 맞지 않는다. 따라서 정답은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
-"custom": true
-},
-{
-"id": "fill-01c6ec7e09",
-"typeId": "eng-m1-b02-u2m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 단어들 중 성격(의미 범주)이 나머지 넷과 다른 하나는?",
-"choices": [
-"Friday",
-"weekend",
-"tomorrow",
-"yesterday",
-"celebrity"
-],
-"answer": "⑤",
-"solution": "Friday(금요일), weekend(주말), tomorrow(내일), yesterday(어제)는 모두 '날·때'를 나타내는 말이다. 반면 celebrity는 '연예인'으로 사람을 가리키는 말이라 범주가 다르다. 따라서 정답은 ⑤이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
-"custom": true
-},
-{
-"id": "fill-c52de6f7a3",
-"typeId": "eng-m1-b02-u2m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 두 문장의 빈칸에 공통으로 들어갈 단어로 알맞은 것은?\n\n• We take a ten-minute ______ after science class.\n• Be careful! Don't ______ the cup.",
-"choices": [
-"read",
-"break",
-"feel",
-"win",
-"laugh"
-],
-"answer": "②",
-"solution": "첫 문장은 '쉬는 시간', 둘째 문장은 '깨뜨리다'라는 뜻이 필요하다. break는 명사로 '쉬는 시간', 동사로 '깨뜨리다'의 뜻을 모두 가지므로 두 빈칸에 공통으로 들어간다. 나머지는 두 문장을 모두 만족시키지 못한다. 따라서 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
-"custom": true
-},
-{
-"id": "fill-7814111e32",
-"typeId": "eng-m1-b02-u2m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 밑줄 친 말과 바꿔 쓸 수 있는 단어로 알맞은 것은?\n\nThe dance show was <u>fantastic</u>!",
-"choices": [
-"boring",
-"wonderful",
-"funny",
-"lucky",
-"hard"
-],
-"answer": "②",
-"solution": "fantastic은 '굉장한, 멋진'이라는 뜻으로 wonderful(아주 좋은, 멋진)과 바꿔 쓸 수 있다. boring(지루한), funny(웃긴), lucky(운 좋은), hard(어려운)는 뜻이 다르다. 따라서 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
-"custom": true
-},
-{
-"id": "fill-3d6a30508a",
-"typeId": "eng-m1-b02-u2m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 중 단어와 우리말 뜻의 연결이 바르지 <u>않은</u> 것은?",
-"choices": [
-"first – 첫째의",
-"break – 쉬는 시간",
-"lucky – 지루한",
-"together – 함께, 같이",
-"weekend – 주말"
-],
-"answer": "③",
-"solution": "lucky는 '운이 좋은'이라는 뜻이며, '지루한'은 boring이다. 나머지 first(첫째의), break(쉬는 시간), together(함께), weekend(주말)의 연결은 모두 옳다. 따라서 연결이 바르지 않은 것은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
-"custom": true
-},
-{
 "id": "fill-190549e173",
 "typeId": "eng-m1-b02-u4m2s0t0",
 "kind": "주관식",
@@ -2212,5 +2098,105 @@
 "custom": true,
 "rv": 1,
 "selfGrade": true
+},
+{
+"id": "fill-ef16e205c3",
+"typeId": "eng-m1-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 영영 풀이에 해당하는 단어로 가장 알맞은 것은?\n\na short rest between classes",
+"answer": "②",
+"solution": "영영 풀이의 a short rest는 '짧은 휴식', between classes는 '수업과 수업 사이에'라는 뜻이다. 따라서 수업 사이의 짧은 휴식, 즉 '쉬는 시간'을 뜻하는 break가 알맞다. lesson은 '수업', lunch는 '점심 식사', subject는 '과목', vacation은 '방학, 휴가'라는 뜻이므로 영영 풀이에 해당하지 않는다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"lesson",
+"break",
+"lunch",
+"subject",
+"vacation"
+]
+},
+{
+"id": "fill-5a9c949c03",
+"typeId": "eng-m1-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 우리말과 뜻이 같도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n그녀는 어제 신나는 기분이 들었다.\n→ She ______ excited yesterday.",
+"answer": "③",
+"solution": "빈칸에는 '~한 기분이 들다'라는 뜻의 동사 feel이 필요하다. 우리말의 '들었다'와 문장 끝의 yesterday(어제)를 통해 과거의 일임을 알 수 있으므로 feel의 과거형인 felt를 써야 한다. feel은 동사원형, feels는 3인칭 단수 현재형, feeling은 현재분사, to feel은 to부정사 형태이므로 빈칸에 알맞지 않다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"feel",
+"feels",
+"felt",
+"feeling",
+"to feel"
+]
+},
+{
+"id": "fill-01c6ec7e09",
+"typeId": "eng-m1-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 단어의 의미상 나머지 넷과 다른 하나는?",
+"answer": "⑤",
+"solution": "① Friday는 '금요일', ② weekend는 '주말', ③ tomorrow는 '내일', ④ yesterday는 '어제'라는 뜻으로 모두 요일이나 시간을 나타내는 표현이다. 반면 ⑤ celebrity는 '유명인'이라는 뜻으로 사람을 나타낸다. 따라서 의미상 나머지 넷과 다른 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Friday",
+"weekend",
+"tomorrow",
+"yesterday",
+"celebrity"
+]
+},
+{
+"id": "fill-7814111e32",
+"typeId": "eng-m1-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nThe dance show was <u>fantastic</u>!",
+"answer": "②",
+"solution": "fantastic은 '환상적인, 아주 멋진'이라는 뜻으로, 매우 훌륭하거나 좋은 것을 나타낸다. 따라서 '아주 멋진, 훌륭한'이라는 뜻의 wonderful이 의미상 가장 가깝다. popular는 '인기 있는', colorful은 '다채로운', famous는 '유명한', special은 '특별한'이라는 뜻이다. 이 단어들은 공연의 특징을 설명할 수 있지만 fantastic과 직접적인 유의어 관계는 아니다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"popular",
+"wonderful",
+"colorful",
+"famous",
+"special"
+]
+},
+{
+"id": "fill-3d6a30508a",
+"typeId": "eng-m1-b02-u2m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 영어 단어와 우리말 뜻의 연결이 바르지 않은 것은?",
+"answer": "③",
+"solution": "lucky는 '운이 좋은, 행운의'라는 뜻이므로 '지루한'과 연결한 ③은 바르지 않다. '지루한'은 영어로 boring이다. ① first는 '첫 번째의', ② break는 '쉬는 시간', ④ together는 '함께', ⑤ weekend는 '주말'이라는 뜻으로 모두 바르게 연결되어 있다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m1-b02-u2m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"first – 첫 번째의",
+"break – 쉬는 시간",
+"lucky – 지루한",
+"together – 함께",
+"weekend – 주말"
+]
 }
 ]

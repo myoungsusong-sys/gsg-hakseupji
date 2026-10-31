@@ -5201,5 +5201,19 @@
 "twinGroup": "tw-17886",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-14cd97f0ef",
+"typeId": "17706",
+"kind": "주관식",
+"diff": 4,
+"body": "직선 $l$ 위의 서로 다른 두 점 $A$, $B$와 직선 $l$ 밖의 점 $P$에 대하여 $\\angle PAB$는 예각이다. 다음과 같이 작도하였다.\n\n(가) 점 $A$를 중심으로 반지름이 $\\dfrac{AP}{3}$인 원을 그려 반직선 $AP$, $AB$와 만나는 점을 각각 $C$, $D$라 한다.\n(나) 점 $P$를 중심으로 반지름이 $AC$인 원을 그려 반직선 $PA$와 만나는 점을 $E$라 한다.\n(다) 점 $E$를 중심으로 반지름이 $CD$인 원을 그려 (나)의 원과 만나는 두 점을 $F$, $G$라 한다. 직선 $AP$를 기준으로 $F$는 $B$와 반대쪽에, $G$는 $B$와 같은 쪽에 있다.\n\n직선 $PG$와 직선 $l$의 교점을 $H$라 할 때, $\\angle AHP=3\\angle PAH+20^\\circ$이다. 두 직선 $PF$, $PG$ 중 직선 $l$과 평행한 직선을 엇각의 성질을 이용하여 판별하고, $\\angle FPG$의 크기를 구하시오. (풀이 과정을 쓰시오.)",
+"selfGrade": true,
+"answer": "$PF\\parallel l$, $\\angle FPG=64^\\circ$",
+"solution": "$\\angle PAB=\\theta$라 하자. 작도에 의해 $AC=AD=PE=PF=PG$이고 $CD=EF=EG$이므로, 삼각형 $ACD$, $PEF$, $PEG$는 SSS 합동이다. 따라서 $\\angle EPF=\\angle EPG=\\theta$이다.\n\n반직선 $PE$와 $PA$가 일치하므로 $\\angle APF=\\theta$이다. 또 $F$와 $B$는 직선 $AP$의 서로 반대쪽에 있으므로 $\\angle PAB$와 $\\angle APF$는 엇각이다. 이 두 각의 크기가 같으므로 $PF\\parallel l$이다. 한편 $F$와 $G$는 직선 $AP$의 서로 반대쪽에 있으므로 직선 $PF$와 $PG$는 서로 다르다. 따라서 $PG$는 $l$과 평행하지 않다.\n\n$G$와 $B$는 직선 $AP$의 같은 쪽에 있고 $\\angle APG=\\theta$이다. $0^\\circ<\\theta<90^\\circ$이므로 반직선 $PG$는 반직선 $AB$와 만난다. 따라서 $H$는 반직선 $AB$ 위에 있고, 반직선 $PH$와 $PG$는 일치한다. 그러므로 $\\angle PAH=\\angle APH=\\theta$이다.\n\n삼각형 $APH$의 내각의 합에 의해 $\\theta+\\theta+(3\\theta+20^\\circ)=180^\\circ$이므로 $\\theta=32^\\circ$이다.\n\n두 반직선 $PF$, $PG$는 반직선 $PE$의 양쪽에서 각각 $\\theta$의 각을 이루고, $2\\theta<180^\\circ$이다. 따라서 $\\angle FPG=2\\theta=64^\\circ$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-17706",
+"custom": true,
+"rv": 1
 }
 ]
