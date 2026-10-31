@@ -5,18 +5,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nSports organizations are trying to ______ their negative impact on the environment by using fewer resources.",
+"answer": "②",
+"solution": "환경에 미치는 부정적인 영향을 줄이려 한다는 내용이므로 ‘최소화하다’라는 뜻의 minimize가 적절하다. maximize는 ‘극대화하다’라는 반대 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "maximize",
 "minimize",
 "declare",
 "maintain",
 "emit"
-],
-"answer": "②",
-"solution": "환경에 미치는 부정적인 영향을 줄이려 한다는 내용이므로 ‘최소화하다’라는 뜻의 minimize가 적절하다. maximize는 ‘극대화하다’라는 반대 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-782cefd456",
@@ -24,18 +25,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 밑줄 친 말과 의미가 가장 가까운 것은?\n\nMany sports fans are _receptive_ to environmental campaigns and are willing to change their habits.",
+"answer": "②",
+"solution": "receptive는 새로운 생각이나 제안을 기꺼이 받아들이려는 상태를 뜻한다. 뒤의 ‘습관을 바꿀 의향이 있다’는 내용도 이를 뒷받침한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "unwilling to accept new ideas",
 "ready to consider new ideas",
 "unable to recognize problems",
 "likely to avoid public events",
 "required to follow strict rules"
-],
-"answer": "②",
-"solution": "receptive는 새로운 생각이나 제안을 기꺼이 받아들이려는 상태를 뜻한다. 뒤의 ‘습관을 바꿀 의향이 있다’는 내용도 이를 뒷받침한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-86b06451ed",
@@ -43,18 +45,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 영영풀이에 해당하는 단어로 가장 적절한 것은?\n\n‘a place where an organized sports event, meeting, or concert takes place’",
+"answer": "①",
+"solution": "스포츠 경기나 회의와 같은 행사가 열리는 장소는 venue이다. vehicle은 문맥에 따라 ‘수단’ 또는 ‘탈것’을 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "venue",
 "vehicle",
 "spectator",
 "structure",
 "suburb"
-],
-"answer": "①",
-"solution": "스포츠 경기나 회의와 같은 행사가 열리는 장소는 venue이다. vehicle은 문맥에 따라 ‘수단’ 또는 ‘탈것’을 뜻한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-cc16a7cbcc",
@@ -62,621 +65,39 @@
 "kind": "객관식",
 "diff": 3,
 "body": "다음 단어와 영영풀이가 바르게 연결된 것만을 모두 고른 것은?\n\nⓐ affect: to influence someone or something\nⓑ emit: to send out gas, heat, light, or waste\nⓒ maintain: to keep something in an appropriate condition\nⓓ restore: to remove something permanently\nⓔ dispose of: to predict what will happen in the future",
+"answer": "④",
+"solution": "affect는 ‘영향을 미치다’, emit은 ‘방출하다’, maintain은 ‘적절한 상태로 유지하다’라는 뜻이므로 ⓐ, ⓑ, ⓒ가 옳다. restore는 ‘회복시키다’이고, dispose of는 ‘처리하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "ⓐ, ⓑ",
 "ⓑ, ⓓ",
 "ⓐ, ⓒ, ⓔ",
 "ⓐ, ⓑ, ⓒ",
 "ⓑ, ⓒ, ⓓ, ⓔ"
-],
-"answer": "④",
-"solution": "affect는 ‘영향을 미치다’, emit은 ‘방출하다’, maintain은 ‘적절한 상태로 유지하다’라는 뜻이므로 ⓐ, ⓑ, ⓒ가 옳다. restore는 ‘회복시키다’이고, dispose of는 ‘처리하다’라는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-8868901cec",
-"typeId": "eng-h3-b05-u1m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 각 문장의 빈칸에 주어진 단어 sustain의 알맞은 형태를 쓰시오. 답은 빈칸 순서대로 쉼표로 구분하여 쓸 것.\n\n• Responsible actions help (A)______ the environment.\n• Bioremediation is a more (B)______ method of cleaning up oil spills.\n• Sporting events should encourage greater (C)______.",
-"selfGrade": true,
-"answer": "sustain, sustainable, sustainability",
-"solution": "(A)는 help 뒤에서 동사원형이 필요하므로 sustain이 적절하다. (B)는 명사 method를 수식하는 형용사 sustainable이 필요하고, (C)는 형용사 greater의 수식을 받는 명사 sustainability가 필요하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-3d9870d835",
-"typeId": "eng-h3-b05-u1m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 각 문장의 빈칸에 environment의 알맞은 형태를 쓰시오. 답은 빈칸 순서대로 쉼표로 구분하여 쓸 것.\n\n• Sporting events can affect the natural (A)______.\n• Stadium construction may cause (B)______ damage.\n• Green Sports Day promotes (C)______ friendly sports.",
-"selfGrade": true,
-"answer": "environment, environmental, environmentally",
-"solution": "(A)는 관사와 형용사 뒤에 오는 명사 environment가 필요하다. (B)는 명사 damage를 수식하므로 environmental, (C)는 형용사 friendly를 수식하므로 부사 environmentally가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-6093e56ae5",
-"typeId": "eng-h3-b05-u1m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 각 문장의 빈칸에 organize의 알맞은 형태를 쓰시오. 답은 빈칸 순서대로 쉼표로 구분하여 쓸 것.\n\n• Various sports (A)______ have adopted responsible approaches.\n• Event (B)______ need to reduce the waste produced at stadiums.\n• Fans often respond positively to environmental initiatives (C)______ at sporting events.",
-"selfGrade": true,
-"answer": "organizations, organizers, organized",
-"solution": "(A)는 ‘단체들’을 뜻하는 복수 명사 organizations가 적절하다. (B)는 행사를 기획하는 사람들을 가리키므로 organizers가 필요하며, (C)는 initiatives를 수식하는 과거분사 organized가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-999fc81a65",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPeople interested in astronomy use a __________ to see distant objects in the night sky more clearly.",
-"choices": [
-"shelter",
-"magazine",
-"telescope",
-"landscape",
-"community"
-],
-"answer": "③",
-"solution": "빈칸에는 밤하늘의 멀리 있는 천체를 더 선명하게 보는 데 사용하는 도구가 들어가야 한다. telescope는 ‘망원경’이라는 뜻이므로 문맥에 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-418272c1c2",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글에서 [preserve]의 의미로 가장 알맞은 영영풀이는?\n\nAn interest in history can benefit society. For example, amateur history researchers help [preserve] historical sites.",
-"choices": [
-"to move something to a different place",
-"to protect something and keep it in good condition",
-"to examine something in order to discover its age",
-"to replace something old with something new",
-"to make something available for sale"
-],
-"answer": "②",
-"solution": "역사 연구가들이 유적지를 preserve한다는 것은 유적지를 보호하고 보존한다는 뜻이다. 따라서 대상을 보호하여 좋은 상태로 유지한다는 ②가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-67dc54cefe",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nWalking the PCT requires considerable effort, so hikers may find the journey (A)[demanding / effortless]. Along the trail, however, “trail angels” sometimes offer meals or transportation. Such (B)[assistance / isolation] can help hikers continue their journey.",
-"choices": [
-"demanding — isolation",
-"effortless — assistance",
-"effortless — isolation",
-"demanding — assistance",
-"demanding — competition"
-],
-"answer": "④",
-"solution": "상당한 노력이 필요한 여정이므로 (A)에는 ‘힘든’이라는 뜻의 demanding이 알맞다. 식사나 교통편을 제공하는 것은 도움이므로 (B)에는 assistance가 들어간다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-ae7a767179",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nFor Tolkien, creating languages meant spending time apart from others who shared his interest. This could make the activity (A)[frustrating / reassuring]. Today, the Internet makes fellow language enthusiasts more (B)[accessible / isolated]. By exchanging ideas and celebrating one another’s progress, they can (C)[discourage / encourage] one another to continue their projects.",
-"choices": [
-"frustrating — accessible — encourage",
-"reassuring — accessible — discourage",
-"frustrating — isolated — encourage",
-"reassuring — isolated — encourage",
-"frustrating — accessible — discourage"
-],
-"answer": "①",
-"solution": "같은 관심사를 가진 사람들과 떨어져 활동해야 하는 상황은 답답함을 줄 수 있으므로 (A)는 frustrating이다. 인터넷은 동료 애호가들에게 쉽게 접근할 수 있게 하므로 (B)는 accessible이다. 생각을 나누고 성과를 축하하는 행동은 서로를 격려하므로 (C)는 encourage이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-cd475d949f",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 표시된 어휘에 대한 영영풀이로 알맞은 것을 모두 고른 것은?\n\nHobbies can involve ⓐserious effort. People may accept a ⓑchallenge because they want to develop their abilities. As their skills improve, they may regard a hobby as part of who they are and take pride in a ⓒtitle such as “photographer.” In this way, an activity outside work can become ⓓmeaningful.\n\n<보기>\nⓐ serious: involving sincere attention and effort\nⓑ challenge: a task that can be completed without difficulty or effort\nⓒ title: a word or name identifying a person’s role or activity\nⓓ meaningful: having importance or value",
-"choices": [
-"ⓐ, ⓑ",
-"ⓑ, ⓒ",
-"ⓐ, ⓓ",
-"ⓑ, ⓒ, ⓓ",
-"ⓐ, ⓒ, ⓓ"
-],
-"answer": "⑤",
-"solution": "serious는 진지한 관심과 노력을 기울이는 것을, title은 사람의 역할이나 활동을 나타내는 명칭을 뜻한다. meaningful은 중요성이나 가치가 있다는 뜻이므로 ⓐ, ⓒ, ⓓ가 옳다. challenge는 능력과 노력을 요구하는 어려운 과제이므로 ⓑ의 풀이는 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-fa01909dbb",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nThe difficulties of the PCT go beyond the effort of walking. Hikers may have to (A)[endure / avoid] periods with no food. Since water found along the route is not always safe to drink, obtaining safe water is (B)[optional / essential]. Shelters available in some areas offer protection when weather conditions become (C)[harsh / mild].",
-"choices": [
-"avoid — essential — mild",
-"endure — optional — harsh",
-"endure — essential — harsh",
-"avoid — optional — harsh",
-"endure — essential — mild"
-],
-"answer": "③",
-"solution": "먹을 것이 없는 기간을 견뎌야 한다는 의미이므로 (A)는 endure이다. 안전한 식수를 확보하는 일은 필수적이므로 (B)는 essential이다. 대피소의 보호가 필요한 날씨는 혹독한 날씨이므로 (C)는 harsh이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-5a285c48ec",
-"typeId": "eng-h3-b05-u0m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 ⓐ~ⓕ 중 문맥상 적절하지 않은 낱말을 모두 찾아, <보기>의 낱말로 바꾸어 쓰시오.\n\n취미에 관한 글의 내용과 각 낱말의 영영풀이를 함께 고려할 것. 적절한 낱말은 고치지 말고, 정답은 ‘기호 낱말’의 형식으로 기호 순서대로 쓸 것. <보기>의 낱말은 각각 한 번만 사용할 수 있다.\n\nA hobby can be demanding without being a paid occupation. An activity may ⓐqualify as a serious hobby when it requires sustained effort and offers opportunities for personal growth. Likewise, an astronomer who studies the sky for personal interest rather than as a paid occupation is a(n) ⓑprofessional; this description concerns the person’s relationship to the activity, not necessarily a lack of skill. Discoveries made through such an interest can be a ⓒcontribution to society because they add to our understanding of the universe. Yet the desire to make a discovery need not be the primary ⓓconsequence for taking up astronomy: the wish to learn may itself be the main reason. Other hobbyists value the ⓔcommunity formed around a shared interest. Whether an activity provides personal growth or friendship, it can be ⓕprofitable in the sense of giving satisfaction, even when it produces no income.\n\n<보기>\namateur / contribution / isolation / motivation / professional / qualify / rewarding / title\n\n<영영풀이>\n• amateur: someone who takes part in an activity for interest or enjoyment rather than as a paid occupation\n• consequence: something that happens as a result of an action or situation\n• contribution: something given or done that helps produce a result or improvement\n• motivation: a reason or desire that makes someone want to act\n• profitable: producing a financial gain\n• qualify: to meet the conditions necessary to be considered a particular thing\n• rewarding: giving a feeling of satisfaction or achievement",
-"selfGrade": true,
-"answer": "ⓑ amateur, ⓓ motivation, ⓕ rewarding",
-"solution": "ⓑ는 보수를 받는 직업이 아니라 개인적 관심으로 천문학을 탐구하는 사람이므로 amateur로 고쳐야 하며, 실력의 부족을 뜻하는 것은 아니다. ⓓ는 활동의 결과가 아니라 활동을 시작하게 하는 주된 이유를 가리키므로 motivation이 알맞다. ⓕ는 수입 없이도 만족감을 준다는 의미이므로 금전적 이익을 나타내는 profitable 대신 rewarding이 적절하다. ⓐ qualify, ⓒ contribution, ⓔ community는 각각 자격 충족, 사회에 대한 기여, 공통 관심사로 형성된 공동체를 나타내므로 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-27e6629bbf",
-"typeId": "eng-h3-b05-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 대화의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nW: Your model airplane is amazing. Do you enjoy (A)[assemble / assembling] models?\nM: Yes. Putting the small pieces together (B)[helps / help] me forget everything else.\nW: I prefer spending time outdoors, but your hobby also looks interesting.\nM: I can help you (C)[to make / making] one if you want.",
-"choices": [
-"assemble - helps - to make",
-"assembling - helps - to make",
-"assembling - help - making",
-"assemble - help - to make",
-"assembling - helps - making"
-],
-"answer": "②",
-"solution": "enjoy는 목적어로 동명사를 취하므로 (A)는 assembling이 알맞다. 동명사구 Putting the small pieces together는 단수로 취급하므로 (B)는 helps를 쓰며, help의 목적격 보어로는 to부정사인 to make를 쓸 수 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-d75db16566",
-"typeId": "eng-h3-b05-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nEinstein began (A)[to learn / learn] sailing when he was eighteen. Although he was not highly skilled, he continued (B)[enjoying / enjoyed] the hobby throughout his life. Being on the water allowed him (C)[forget / to forget] his worries.",
-"choices": [
-"to learn - enjoying - to forget",
-"to learn - enjoyed - forget",
-"learn - enjoying - to forget",
-"learn - enjoyed - forget",
-"to learn - enjoying - forget"
-],
-"answer": "①",
-"solution": "begin은 목적어로 to부정사를 취할 수 있으므로 to learn이 알맞다. continue 뒤에는 동명사 enjoying을 쓸 수 있고, allow는 ‘allow＋목적어＋to부정사’의 구조이므로 to forget이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-01db174fd6",
-"typeId": "eng-h3-b05-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe PCT (A)[stretch / stretches] across three states and seven national parks. Its varied landscapes give hikers a chance (B)[to experience / experiencing] both desert regions and mountain ranges. However, only a small percentage of those attempting a thru-hike (C)[succeed / succeeds] in finishing it.",
-"choices": [
-"stretch - to experience - succeed",
-"stretches - experiencing - succeeds",
-"stretches - to experience - succeed",
-"stretch - experiencing - succeeds",
-"stretches - to experience - succeeds"
-],
-"answer": "③",
-"solution": "주어 The PCT가 단수이므로 stretches가 알맞고, a chance 뒤에서는 to부정사가 chance를 수식한다. 마지막 문장의 주어는 a small percentage of those이므로 복수 동사 succeed가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-06f671b772",
-"typeId": "eng-h3-b05-u0m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nTolkien created Sindarin and Quenya, the former (A)[being / was] inspired by Welsh and the latter by Finnish and Latin. Because language creation required him to work alone, he wrote about the frustration (B)[experienced / experiencing] by people who shared his passion. Today, the Internet makes it possible for such people (C)[to find / finding] one another and work together.",
-"choices": [
-"being - experienced - to find",
-"was - experienced - finding",
-"being - experiencing - finding",
-"was - experiencing - to find",
-"being - experienced - finding"
-],
-"answer": "①",
-"solution": "(A)는 독립분사구문이므로 being이 알맞다. frustration은 사람들이 ‘겪는’ 대상이므로 과거분사 experienced가 수식해야 한다. ‘make it possible for＋목적어＋to부정사’ 구조에 따라 (C)는 to find가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-5311e96d8a",
-"typeId": "eng-h3-b05-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳지 않은 것의 개수는?\n\nPeople who ⓐtakes their hobbies seriously make meaningful efforts ⓑto improve their skills, take risks, and ⓒovercome hardships. Neither watching TV nor surfing online ⓓare generally regarded as a serious hobby because neither activity ⓔoffers a clear challenge or a way to improve oneself.",
-"choices": [
-"0개",
-"1개",
-"2개",
-"3개",
-"4개"
-],
-"answer": "③",
-"solution": "관계대명사 who의 선행사가 복수인 People이므로 ⓐtakes는 take로 고쳐야 한다. ‘neither A nor B’의 동사는 가까운 주어인 단수 동명사구 surfing online에 맞춰야 하므로 ⓓare는 is가 되어야 한다. 나머지는 병렬 구조와 수의 일치가 모두 적절하므로 오류는 2개이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4c8f926ffb",
-"typeId": "eng-h3-b05-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAlthough (A)[regarded / regarding] as a genius in physics, Einstein did not consider himself a skilled sailor. Neither his basic technique nor the apparent meaninglessness of his adventures (B)[prevented / were prevented] him from enjoying his time on the water. It was the complete relaxation he found there (C)[what / that] mattered most to him.",
-"choices": [
-"regarded - prevented - that",
-"regarded - were prevented - what",
-"regarding - prevented - that",
-"regarded - prevented - what",
-"regarding - were prevented - that"
-],
-"answer": "①",
-"solution": "(A)는 Einstein이 천재로 ‘여겨지는’ 관계이므로 과거분사 regarded가 알맞다. prevent는 ‘prevent＋목적어＋from＋동명사’로 쓰이며, 주어가 행위의 주체이므로 능동형 prevented가 적절하다. 마지막 문장은 ‘It was＋강조 대상＋that’ 강조 구문이므로 (C)는 that이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-cba7ba75ab",
-"typeId": "eng-h3-b05-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhen oil enters the sea, certain bacteria (A)[are / is] attracted to it and begin to multiply. The bacteria release enzymes (B)[that / what] break down components of the oil, thereby (C)[turning / turn] them into carbon dioxide and water.",
-"choices": [
-"are – that – turning",
-"are – what – turning",
-"is – that – turning",
-"are – that – turn",
-"is – what – turn"
-],
-"answer": "①",
-"solution": "주어 certain bacteria가 복수이므로 (A)에는 are가 알맞다. 선행사 enzymes를 수식하며 관계절 안에서 주어 역할을 하는 관계대명사는 that이다. thereby 뒤에서는 앞 절의 결과를 나타내는 분사 turning을 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-a8f396a532",
-"typeId": "eng-h3-b05-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA large sporting event often (A)[requires / require] an enormous facility. To attract more spectators, stadiums are becoming larger, (B)[consuming / consume] more land and building materials. (C)[Whenever / Whatever] an area of grassland is cleared for construction, part of nature is lost.",
-"choices": [
-"requires – consuming – Whenever",
-"requires – consume – Whenever",
-"require – consuming – Whatever",
-"requires – consuming – Whatever",
-"require – consume – Whenever"
-],
-"answer": "①",
-"solution": "주어 A large sporting event가 단수이므로 requires가 알맞다. consuming은 앞의 are becoming larger에 이어지는 분사구문이다. 뒤에 완전한 절이 오고 ‘~할 때마다’라는 의미이므로 Whenever를 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-42d7d7d605",
-"typeId": "eng-h3-b05-u1m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOne environmental cost that is easily overlooked (A)[is / are] the large quantity of resources needed by a stadium. Water, electricity, and other forms of energy (B)[are / is] consumed to operate and maintain the facility. Moreover, the equipment used to produce and transport construction materials (C)[emit / emits] waste into the ground and atmosphere. This means that the environmental impact of a sporting event (D)[continues / continuing] even after construction has been completed.",
-"choices": [
-"is – are – emits – continues",
-"is – is – emit – continues",
-"are – are – emits – continuing",
-"is – are – emit – continuing",
-"are – is – emits – continues"
-],
-"answer": "①",
-"solution": "(A)의 주어는 단수인 One environmental cost이고, (B)의 주어는 Water, electricity, and other forms of energy라는 복수 병렬 구조이다. (C)의 주어는 불가산 단수 명사 equipment이므로 emits가 필요하다. that절에는 서술동사가 필요하므로 (D)는 continues가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-5284189284",
-"typeId": "eng-h3-b05-u1m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nResearchers have warned that climate change may prevent some former Winter Olympics host cities from holding the event again. This warning, based on predictions (A)[that / what] snow and ice may become insufficient, has increased concern about the future of sports. The US Open organizers also adopted an extreme heat policy (B)[requiring / required] short breaks during matches. The policy allows players (C)[to cool / cooling] down when temperatures become dangerously high. Neither the concern about winter sports nor the prediction of more extreme heat (D)[has / have] disappeared.",
-"choices": [
-"that – requiring – to cool – has",
-"that – required – cooling – has",
-"what – requiring – to cool – have",
-"that – requiring – cooling – have",
-"what – required – to cool – has"
-],
-"answer": "①",
-"solution": "predictions 뒤에는 그 내용을 설명하는 완전한 절이 이어지므로 동격의 접속사 that이 필요하다. 정책이 휴식을 ‘요구하는’ 능동 관계이므로 requiring이 알맞고, allow는 「allow + 목적어 + to부정사」로 쓰인다. 「neither A nor B」의 동사는 가까운 주어 prediction에 일치하므로 has가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-bce5bff77f",
-"typeId": "eng-h3-b05-u1m2s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThanks to its popularity, sports is a powerful tool for universally raising awareness about environmental responsibility. Simply put, the sports industry influences billions of individuals that are involved in sports either as spectators, athletes, or organizers. Through sports, strategies to increase awareness and educate the public about the importance of sustaining the environment have shown good results. Research has found that fans are receptive to ecological or environmental initiatives organized at sporting events, and many are willing to change their lifestyle habits accordingly. The social status of athletes can have a strong effect, too. For example, high-profile athletes and coaches can be sports ambassadors to foster environmental consciousness among fans, especially young people who look up to them. The broad appeal of sports becomes a vehicle to reach many people at once.",
-"choices": [
-"스포츠 팬들은 환경 캠페인에 무관심해서 생활 습관을 잘 바꾸지 않는다.",
-"스포츠는 폭넓은 인기 덕분에 환경 의식을 널리 퍼뜨리는 효과적인 수단이다.",
-"유명 운동선수와 코치는 경기력 향상에만 집중해야 한다.",
-"스포츠 산업은 자원을 많이 써서 환경을 크게 해친다.",
-"청소년 환경 교육은 스포츠가 아닌 학교 수업으로 해야 한다."
-],
-"answer": "②",
-"solution": "첫 문장에서 스포츠가 인기 덕분에 환경적 책임에 대한 인식을 높이는 강력한 도구라고 밝히고, 팬들이 호응한다는 연구 결과와 유명 선수의 영향력을 근거로 든다. 마지막 문장도 스포츠의 폭넓은 매력이 많은 사람에게 한꺼번에 닿는 수단이라고 다시 강조한다. 따라서 요지는 ②이다. ①은 팬들이 환경 활동에 호응한다는 내용과 반대이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
-"custom": true
-},
-{
-"id": "fill-890ddb9b1c",
-"typeId": "eng-h3-b05-u1m2s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nMany sporting events have a negative impact on the environment because they require massive structures to host them. To draw more spectators, sports stadiums and sporting facilities are getting bigger, consuming larger areas of land and requiring greater amounts of building materials for construction. Whenever a hectare of grassland is cleared for a construction site, there is a loss of nature. Every ton of concrete and steel used in the building foundation and structure is produced, transported, poured, and put together by equipment and facilities that emit waste into the ground and atmosphere. Then, after the stadium is completed, large amounts of water, electricity, and other forms of resources are consumed to operate and maintain the facility.",
-"choices": [
-"How to Build Stadiums That Attract More Fans",
-"Concrete and Steel: The Best Materials for Stadiums",
-"Why Spectators Prefer Smaller Sports Facilities",
-"Bigger Stadiums, Bigger Costs to Nature",
-"Simple Ways to Save Water in Modern Stadiums"
-],
-"answer": "④",
-"solution": "글은 경기장이 점점 커지면서 땅과 건축 자재를 더 많이 쓰고, 건설 과정에서 폐기물을 내보내며, 완공 뒤에도 물과 전기 같은 자원을 많이 소비한다는 점, 즉 대형 경기장이 환경에 주는 부담을 다룬다. 따라서 제목은 ④가 알맞다. ①과 ②는 글에 나온 낱말만 빌렸을 뿐 중심 내용과 관계가 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
-"custom": true
-},
-{
-"id": "fill-0b23ddc593",
-"typeId": "eng-h3-b05-u1m2s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 요지로 가장 알맞은 것은?\n\nAlarm bells sounded when research suggested the possibility that nearly one in every four English soccer stadiums could be partially or completely flooded in the near future due to climate change and extreme weather events. Some research even predicted that by 2050 almost half of the cities that once hosted the Winter Olympics would not be able to do so again for lack of snow and ice. Also, the US Open Tennis Championships organizers implemented an “extreme heat policy,” having mandatory short breaks for players to cool down during matches, after a few quit their matches due to extreme heat. As more sports are affected by climate change, concerns are growing.",
-"choices": [
-"축구 경기장은 홍수에 대비해 새로 지어야 한다.",
-"동계 올림픽을 개최하는 도시를 더 늘려야 한다.",
-"기후 변화가 여러 스포츠 경기에 점점 더 큰 위협이 되고 있다.",
-"테니스 선수들은 더위를 견딜 체력을 길러야 한다.",
-"스포츠 경기가 기후 변화의 가장 큰 원인이다."
-],
-"answer": "③",
-"solution": "축구 경기장 침수 가능성, 눈과 얼음이 부족해 동계 올림픽을 다시 열지 못할 도시들, 테니스 대회의 폭염 정책은 모두 기후 변화가 스포츠에 영향을 준다는 사례이다. 마지막 문장에서 기후 변화의 영향을 받는 스포츠가 늘면서 우려가 커진다고 정리하므로 요지는 ③이다. ⑤는 스포츠가 기후 변화를 일으킨다는 반대 방향의 내용으로, 이 글에서는 다루지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
-"custom": true
-},
-{
-"id": "fill-69c8504ee3",
-"typeId": "eng-h3-b05-u1m2s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nOn April 20, 2010, an enormous explosion shook the Deepwater Horizon drilling platform in the Gulf of Mexico, causing a significant oil leak into the sea. Over a three-month period, approximately 134 million gallons of oil, comparable to more than 200 Olympic swimming pools, flowed into the sea before it was eventually halted. Despite continuing restoration efforts, the sea has not yet fully recovered. One approach to addressing the issue of oil contamination is bioremediation, a restoration method that utilizes bacteria. Some types of bacteria naturally exist in marine environments and possess the capability to break down various components of oil. When an oil spill occurs, these bacteria are attracted to the oil and begin to multiply. As they grow, they release enzymes that break down oil into carbon dioxide and water. Although this process may take several weeks or months, it represents a more sustainable method of cleaning up oil spills compared to conventional approaches involving harmful chemicals.",
-"choices": [
-"Why the Gulf of Mexico Has Fully Recovered",
-"Harmful Chemicals: The Fastest Cure for Oil Spills",
-"Bacteria: Nature’s Sustainable Cleanup Crew for Oil Spills",
-"How Oil Spills Help Marine Bacteria Multiply",
-"The Deepwater Horizon: A Disaster Without Any Solution"
-],
-"answer": "③",
-"solution": "글은 딥워터 호라이즌 기름 유출 사고로 문제를 꺼낸 뒤, 박테리아를 이용해 기름을 이산화탄소와 물로 분해하는 생물학적 정화(bioremediation)가 더 지속 가능한 정화 방법이라는 내용으로 이어진다. 따라서 제목은 ③이다. ①은 바다가 아직 완전히 회복되지 않았다는 내용과 맞지 않고, ④는 세부 내용을 중심 내용처럼 바꾼 함정이며, ⑤는 해결책을 제시하는 글의 흐름과 반대이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
-"custom": true
-},
-{
-"id": "fill-1213485e13",
-"typeId": "eng-h3-b05-u1m2s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지은 것은?\n\nEvery sporting event affects the environment before, during, and even after it. For example, a long-track speed skating competition can only take place, provided that the ice of a 400-meter oval track is frozen until it is 3 to 5 cm thick. As long as the competition is on, the track needs to be kept frozen by specialized refrigeration systems while the temperature, humidity, and air quality inside the stadium also have to be maintained for optimal ice conditions. Additionally, all of the stadium employees, athletes, and spectators need to travel to and from the stadium, often from other cities or even from abroad. During the event, spectators and athletes eat and drink, and the plastic bottles and wrappers of whatever they consumed leave trash cans overflowing. After the event has ended, in addition to the significant amount of trash that needs to be disposed of, the effects those people caused and the emissions generated from their travel continue to have a lasting negative impact on air quality.\n\n[요약문] Sporting events place a(n) (A)__________ burden on the environment through facility operation, travel, and waste, and their effects (B)__________ even after the events are over.",
-"choices": [
-"minor – persist",
-"considerable – persist",
-"considerable – vanish",
-"temporary – remain",
-"minor – vanish"
-],
-"answer": "②",
-"solution": "글은 경기 전·중·후 모든 단계에서 스포츠 행사가 환경에 영향을 준다고 말한다. 빙상 유지, 이동, 쓰레기 같은 사례로 부담이 크다는 것을 보여 주므로 (A)에는 considerable이 알맞다. 경기가 끝난 뒤에도 배기가스가 대기 질에 오래 부정적 영향을 미친다고 했으므로 (B)에는 persist가 알맞다. ④의 temporary는 경기 뒤까지 이어지는 영향이라는 내용과 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
-"custom": true
-},
-{
-"id": "fill-75f504748a",
-"typeId": "eng-h3-b05-u1m2s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAlarm bells sounded when research suggested the possibility that nearly one in every four English soccer stadiums could be partially or completely flooded in the near future due to climate change and extreme weather events. Some research even predicted that by 2050 almost half of the cities that once hosted the Winter Olympics would not be able to do so again for lack of snow and ice. As more sports are affected by climate change, concerns are growing.\nThere is light at the end of the tunnel, however. The sports community is optimistic that it can reduce its environmental impact by taking two main steps: transitioning to more sustainable operations before, during, and after events and raising awareness among the public about their impact. Efforts to adopt more responsible approaches have been made by various organizations, and the International Olympic Committee (IOC) is leading the way by setting a good example. The IOC set up the Sport and Environment Commission decades ago and declared the environment as essential to the Olympic Movement, in addition to sports and culture. It has since encouraged host nations to adopt more environmental approaches to putting on the Olympics.",
-"choices": [
-"Climate Change: An Unstoppable Threat to the Future of Sports",
-"Raising Public Awareness: The Only Way to Save Sports",
-"How the IOC Became the Most Powerful Sports Organization",
-"Why Sporting Events Are the Main Cause of Climate Change",
-"Sports in a Warming World: Growing Concerns and Hopeful Steps"
-],
-"answer": "⑤",
-"solution": "첫 단락은 기후 변화로 스포츠가 위협받으며 우려가 커지고 있다고 말하고, 둘째 단락은 however로 흐름을 바꿔 지속 가능한 운영과 대중 인식 제고라는 두 가지 대응, 그리고 IOC의 모범 사례를 소개한다. 두 단락을 모두 담은 ⑤가 제목으로 알맞다. ①은 첫 단락만 반영했고 낙관적인 둘째 단락과 어긋나며, ②는 두 가지 대응 가운데 하나만 골라 'Only'라고 과장했다. ③은 IOC의 영향력을 중심 내용으로 잘못 잡았고, ④는 글에 나오지 않는 인과 관계이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
-"custom": true
-},
-{
-"id": "fill-ed7939fcf4",
-"typeId": "eng-h3-b05-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nIn 2010, the Deepwater Horizon platform in the Gulf of Mexico exploded and leaked a large amount of oil into the sea. One way to deal with such oil pollution is bioremediation, a method that relies on bacteria. Some bacteria that naturally live in the ocean can break down oil. When an oil spill happens, these bacteria are drawn to the oil and start to multiply. As they grow, they release enzymes that break oil down into carbon dioxide and water. Although the process may take weeks or months, it is more environmentally friendly than traditional methods that use harmful chemicals.",
-"choices": [
-"① The Deepwater Horizon explosion in 2010 caused a large oil leak into the Gulf of Mexico.",
-"② Bioremediation is a cleanup method that makes use of bacteria.",
-"③ Some bacteria living in the ocean are naturally able to break down oil.",
-"④ During bioremediation, bacteria release enzymes that turn oil into carbon dioxide and water.",
-"⑤ Bioremediation cleans up oil spills faster than traditional methods that use chemicals."
-],
-"answer": "⑤",
-"solution": "지문은 생물정화 과정이 몇 주에서 몇 달이 걸릴 수 있다고 했으므로 전통적 방법보다 '빠르다'는 ⑤는 일치하지 않는다. 오히려 지문은 화학약품을 쓰는 방법보다 더 '친환경적'이라고 말할 뿐 속도가 빠르다고 하지 않았다. 나머지 ①~④는 지문에 그대로 언급되어 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-9379e84505",
-"typeId": "eng-h3-b05-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nEvery sporting event affects the environment. For example, a long-track speed skating competition can only take place if the ice of a 400-meter oval track is frozen to a thickness of 3 to 5 cm. While the competition is on, refrigeration systems keep the track frozen, and the temperature, humidity, and air quality inside the stadium must be maintained. In addition, employees, athletes, and spectators travel to and from the stadium, often from other cities or even from abroad. In fact, more than 25% of the emissions from the 2018 PyeongChang Winter Olympics are estimated to have come from fan travel and accommodations.",
-"choices": [
-"① Every sporting event has some effect on the environment.",
-"② A long-track speed skating race requires an oval track with ice 3 to 5 cm thick.",
-"③ Special refrigeration systems are used to keep the track frozen during the competition.",
-"④ Spectators at the event travel only from nearby cities within the same country.",
-"⑤ Over a quarter of the emissions from the 2018 PyeongChang Winter Olympics are thought to be due to fan travel and lodging."
-],
-"answer": "④",
-"solution": "지문은 관중과 선수들이 다른 도시뿐 아니라 해외(abroad)에서도 이동한다고 했으므로, '같은 나라 안 가까운 도시에서만' 온다는 ④는 일치하지 않는다. ①②③⑤는 트랙 두께, 냉각 시스템, 25% 배기가스 수치 등 지문 내용과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-5a43364912",
-"typeId": "eng-h3-b05-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nM: Can you pass me one of those cotton bags?\nW: Sure. You like them because they're reusable, right?\nM: Yes, they're better for the environment than disposable plastic bags.\nW: Actually, I read that reusable bags are only effective if you use them more than 7,100 times.\nM: Really? Is that a lot?\nW: Yes. You'd have to use the same bag every day for about 20 years.\nM: Then should I just go back to plastic bags?\nW: Not at all. Just use your reusable bags as often as you can.\nM: Okay. I'll keep using mine until they wear out.",
-"choices": [
-"① The man prefers cotton bags because they can be used again and again.",
-"② The woman says reusable bags are only effective if used more than 7,100 times.",
-"③ Using a reusable bag every day for about 20 years would reach that number of uses.",
-"④ The woman advises the man to go back to disposable plastic bags.",
-"⑤ The man decides to keep using his reusable bags until they wear out."
-],
-"answer": "④",
-"solution": "여자는 남자가 'plastic bags로 돌아가야 하냐'고 묻자 'Not at all'이라며 재사용 봉투를 가능한 자주 쓰라고 했으므로, 일회용 봉투로 돌아가라고 조언했다는 ④는 일치하지 않는다. 나머지 선지는 대화 내용과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-a530b72d00",
-"typeId": "eng-h3-b05-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nMany Olympic Games have tried to reduce their environmental impact. The Olympic Village built for the 2000 Sydney Summer Olympics became the world's largest solar-powered suburb. The 2002 Salt Lake City Winter Olympics used a new energy recycling system that used the curling hall's air conditioning unit to heat the showers and bathrooms in the venue. For the 2010 Vancouver Winter Olympics, the Olympic speed-skating venue was built with salvaged timber. At the 2020 Tokyo Summer Olympics, electricity was generated with hydrogen instead of fossil fuel, supplying power for many buildings in the Olympic Village.",
-"choices": [
-"① The Olympic Village for the 2000 Sydney Games became the world's largest solar-powered suburb.",
-"② The 2002 Salt Lake City Games reused heat from the curling hall's air conditioning unit to warm showers and bathrooms.",
-"③ The speed-skating venue for the 2010 Vancouver Games was built using salvaged timber.",
-"④ At the 2020 Tokyo Games, electricity was produced from fossil fuels rather than hydrogen.",
-"⑤ Several Olympic Games have made efforts to lower their impact on the environment."
-],
-"answer": "④",
-"solution": "지문은 2020 도쿄 올림픽에서 화석 연료 대신 수소로 전기를 생산했다고 했으므로, 수소가 아닌 화석 연료로 전기를 만들었다는 ④는 정반대로 서술되어 일치하지 않는다. ①②③⑤는 각 대회의 친환경 사례와 그대로 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-a649d89143",
-"typeId": "eng-h3-b05-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글을 읽고 답할 수 없는 질문은?\n\nThe Aral Sea is located in Central Asia, between Uzbekistan and Kazakhstan. Its name means \"sea of islands\" in Kazakh. It is not actually a sea but a saltwater lake that was once the world's fourth-largest lake. Sadly, by 2007 it had shrunk to only 10% of its original size because of the dams and canals built for cotton farming. This decline damaged local water resources and changed the local climate, leading to longer summers and more dry days.",
-"choices": [
-"① Where is the Aral Sea located?",
-"② What does the name of the Aral Sea mean in Kazakh?",
-"③ By 2007, what fraction of its original size had the Aral Sea shrunk to?",
-"④ Why were the dams and canals near the Aral Sea built?",
-"⑤ How long will it take for the Aral Sea to return to its original size?"
-],
-"answer": "⑤",
-"solution": "지문에는 아랄해가 원래 크기로 회복되는 데 걸리는 시간이 전혀 언급되지 않으므로 ⑤는 답할 수 없다. ①은 중앙아시아, ②는 '섬들의 바다', ③은 10%, ④는 목화 재배를 위한 댐·운하 건설로 각각 지문에서 답을 찾을 수 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-1c3affdf61",
-"typeId": "eng-h3-b05-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nThanks to its popularity, sports is a powerful tool for raising awareness about environmental responsibility. The sports industry influences billions of people who take part in sports as spectators, athletes, or organizers. Research has found that fans are receptive to environmental initiatives organized at sporting events, and many are willing to change their lifestyle habits accordingly. The social status of athletes can also have a strong effect; high-profile athletes and coaches can act as ambassadors to foster environmental consciousness among fans, especially young people who look up to them.",
-"choices": [
-"① Because of its popularity, sports can be a strong tool for raising environmental awareness.",
-"② The sports industry has an influence on billions of people connected to sports.",
-"③ According to research, fans tend to reject environmental initiatives held at sporting events.",
-"④ Many fans are willing to change their lifestyle habits for the environment.",
-"⑤ Well-known athletes can help spread environmental awareness, especially among young fans."
-],
-"answer": "③",
-"solution": "지문은 팬들이 스포츠 행사에서 열리는 환경 캠페인에 수용적(receptive)이라고 했으므로, 팬들이 그것을 거부하는 경향이 있다는 ③은 일치하지 않는다. ①②④⑤는 스포츠의 영향력, 팬들의 생활습관 변화 의지, 유명 선수의 역할 등 지문 내용과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-3de72afabb",
 "typeId": "eng-h3-b05-u1m0s0t0",
 "kind": "객관식",
 "diff": 1,
-"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\na place where an organized meeting, concert, or sports event takes place",
-"choices": [
-"spectator",
-"venue",
-"athlete",
-"emission",
-"material"
-],
+"body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\na person who watches an event, especially a sports game, without taking part in it",
 "answer": "②",
-"solution": "‘조직된 모임·공연·경기 등이 열리는 장소’를 뜻하는 단어는 venue(개최지, 경기장)이다. spectator는 관중, athlete는 선수, emission은 배출(물), material은 재료를 뜻하므로 알맞지 않다.",
+"solution": "경기나 행사를 직접 하지 않고 지켜보는 사람은 spectator(관중)이다. athlete는 선수, venue는 개최지, organizer는 주최자, emission은 배출(물)을 뜻하므로 알맞지 않다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"① athlete",
+"② spectator",
+"③ venue",
+"④ organizer",
+"⑤ emission"
+]
 },
 {
 "id": "fill-de6f5e74a3",
@@ -684,18 +105,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nMany sporting events have a negative ________ on the environment because they require massive structures to host them.",
+"answer": "①",
+"solution": "‘스포츠 행사가 환경에 부정적인 ~을 미친다’는 흐름이므로 ‘영향’을 뜻하는 impact가 알맞다. have a negative impact on은 ‘~에 부정적 영향을 미치다’라는 뜻의 표현이다. 나머지 낱말은 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "impact",
 "popularity",
 "snow",
 "foundation",
 "holiday"
-],
-"answer": "①",
-"solution": "‘스포츠 행사가 환경에 부정적인 ~을 미친다’는 흐름이므로 ‘영향’을 뜻하는 impact가 알맞다. have a negative impact on은 ‘~에 부정적 영향을 미치다’라는 뜻의 표현이다. 나머지 낱말은 문맥에 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-82beab31c8",
@@ -703,18 +125,273 @@
 "kind": "객관식",
 "diff": 1,
 "body": "밑줄 친 단어의 뜻으로 가장 알맞은 것은?\n\nThe IOC encouraged host nations to adopt more environmental approaches to putting on the Olympics.",
+"answer": "②",
+"solution": "여기서 adopt는 ‘(방식·방법 등을) 받아들이다, 채택하다’라는 뜻으로 쓰였다. ‘더 환경적인 접근법을 채택하도록 장려했다’는 문맥이므로 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "버리다",
 "채택하다",
 "오염시키다",
 "낭비하다",
 "숨기다"
-],
+]
+},
+{
+"id": "fill-27e6629bbf",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nW: Your model airplane is amazing. Do you enjoy (A)[assemble / assembling] models?\nM: Yes. Putting the small pieces together (B)[helps / help] me forget everything else.\nW: I prefer spending time outdoors, but your hobby also looks interesting.\nM: I can help you (C)[to make / making] one if you want.",
 "answer": "②",
-"solution": "여기서 adopt는 ‘(방식·방법 등을) 받아들이다, 채택하다’라는 뜻으로 쓰였다. ‘더 환경적인 접근법을 채택하도록 장려했다’는 문맥이므로 ②가 알맞다.",
+"solution": "enjoy는 목적어로 동명사를 취하므로 (A)는 assembling이 알맞다. 동명사구 Putting the small pieces together는 단수로 취급하므로 (B)는 helps를 쓰며, help의 목적격 보어로는 to부정사인 to make를 쓸 수 있다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u1m0s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"assemble - helps - to make",
+"assembling - helps - to make",
+"assembling - help - making",
+"assemble - help - to make",
+"assembling - helps - making"
+]
+},
+{
+"id": "fill-d75db16566",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nEinstein began (A)[to learn / learn] sailing when he was eighteen. Although he was not highly skilled, he continued (B)[enjoying / enjoyed] the hobby throughout his life. Being on the water allowed him (C)[forget / to forget] his worries.",
+"answer": "①",
+"solution": "begin은 목적어로 to부정사를 취할 수 있으므로 to learn이 알맞다. continue 뒤에는 동명사 enjoying을 쓸 수 있고, allow는 ‘allow＋목적어＋to부정사’의 구조이므로 to forget이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"to learn - enjoying - to forget",
+"to learn - enjoyed - forget",
+"learn - enjoying - to forget",
+"learn - enjoyed - forget",
+"to learn - enjoying - forget"
+]
+},
+{
+"id": "fill-01db174fd6",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe PCT (A)[stretch / stretches] across three states and seven national parks. Its varied landscapes give hikers a chance (B)[to experience / experiencing] both desert regions and mountain ranges. However, only a small percentage of those attempting a thru-hike (C)[succeed / succeeds] in finishing it.",
+"answer": "③",
+"solution": "주어 The PCT가 단수이므로 stretches가 알맞고, a chance 뒤에서는 to부정사가 chance를 수식한다. 마지막 문장의 주어는 a small percentage of those이므로 복수 동사 succeed가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"stretch - to experience - succeed",
+"stretches - experiencing - succeeds",
+"stretches - to experience - succeed",
+"stretch - experiencing - succeeds",
+"stretches - to experience - succeeds"
+]
+},
+{
+"id": "fill-06f671b772",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nTolkien created Sindarin and Quenya, the former (A)[being / was] inspired by Welsh and the latter by Finnish and Latin. Because language creation required him to work alone, he wrote about the frustration (B)[experienced / experiencing] by people who shared his passion. Today, the Internet makes it possible for such people (C)[to find / finding] one another and work together.",
+"answer": "①",
+"solution": "(A)는 독립분사구문이므로 being이 알맞다. frustration은 사람들이 ‘겪는’ 대상이므로 과거분사 experienced가 수식해야 한다. ‘make it possible for＋목적어＋to부정사’ 구조에 따라 (C)는 to find가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"being - experienced - to find",
+"was - experienced - finding",
+"being - experiencing - finding",
+"was - experiencing - to find",
+"being - experienced - finding"
+]
+},
+{
+"id": "fill-5311e96d8a",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 옳지 않은 것의 개수는?\n\nPeople who ⓐtakes their hobbies seriously make meaningful efforts ⓑto improve their skills, take risks, and ⓒovercome hardships. Neither watching TV nor surfing online ⓓare generally regarded as a serious hobby because neither activity ⓔoffers a clear challenge or a way to improve oneself.",
+"answer": "③",
+"solution": "관계대명사 who의 선행사가 복수인 People이므로 ⓐtakes는 take로 고쳐야 한다. 'neither A nor B'의 동사는 가까운 주어인 단수 동명사구 surfing online에 맞춰야 하므로 ⓓare는 is가 되어야 한다. ⓑ·ⓒ는 efforts를 수식하는 to부정사의 병렬(to improve, (to) take, (to) overcome)로 적절하고, ⓔ는 단수 주어 neither activity와의 일치로 적절하다. 따라서 오류는 2개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"0개",
+"1개",
+"2개",
+"3개",
+"4개"
+]
+},
+{
+"id": "fill-4c8f926ffb",
+"typeId": "eng-h3-b05-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAlthough (A)[regarded / regarding] as a genius in physics, Einstein did not consider himself a skilled sailor. Neither his basic technique nor the apparent meaninglessness of his adventures (B)[prevented / were prevented] him from enjoying his time on the water. It was the complete relaxation he found there (C)[what / that] mattered most to him.",
+"answer": "①",
+"solution": "(A)는 Einstein이 천재로 '여겨지는' 수동 관계이므로 과거분사 regarded가 알맞다(=Although he was regarded). (B)의 prevent는 'prevent＋목적어＋from＋동명사' 구조로 주어가 행위의 주체이므로 능동형이 맞고, neither A nor B는 가까운 단수 주어에 일치하므로 prevented가 적절하다. 마지막 문장은 'It was＋강조 대상＋that' 강조 구문이므로 (C)는 that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"regarded - prevented - that",
+"regarded - were prevented - what",
+"regarding - prevented - that",
+"regarded - prevented - what",
+"regarding - were prevented - that"
+]
+},
+{
+"id": "fill-999fc81a65",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPeople interested in astronomy use a __________ to observe distant stars and planets more clearly. It allows them to see objects that are difficult to observe with the naked eye.",
+"answer": "③",
+"solution": "천문학에 관심이 있는 사람들이 멀리 있는 별과 행성을 더 선명하게 관찰하기 위해 사용하는 도구를 묻고 있다. 육안으로 관찰하기 어려운 천체를 보는 데 사용하는 도구는 telescope(망원경)이므로 정답은 ③이다. ① microscope는 현미경, ② binoculars는 쌍안경, ④ camera는 카메라, ⑤ magnifier는 확대경을 뜻한다. 모두 관찰이나 영상과 관련이 있지만 먼 천체를 관찰하는 데 가장 적합한 도구는 telescope이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"microscope",
+"binoculars",
+"telescope",
+"camera",
+"magnifier"
+]
+},
+{
+"id": "fill-418272c1c2",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 [preserve]의 의미로 가장 알맞은 영영풀이는?\n\nAn interest in history can benefit society. For example, amateur history researchers help [preserve] historical sites.",
+"answer": "②",
+"solution": "역사 연구가들이 유적지를 preserve한다는 것은 유적지를 보호하고 보존한다는 뜻이다. 따라서 대상을 보호하여 좋은 상태로 유지한다는 ②가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"to move something to a different place",
+"to protect something and keep it in good condition",
+"to examine something in order to discover its age",
+"to replace something old with something new",
+"to make something available for sale"
+]
+},
+{
+"id": "fill-67dc54cefe",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nWalking the PCT requires considerable physical effort, so hikers often find the journey (A)__________. Along the trail, however, people known as 'trail angels' sometimes offer meals, rides, or other forms of help. Such (B)__________ can make the difficult journey more manageable.",
+"answer": "④",
+"solution": "(A) 앞에서는 PCT를 걷는 데 상당한 신체적 노력이 필요하다고 설명한다. 따라서 여정이 힘들고 많은 노력을 요구한다는 의미의 demanding이 적절하다. exhausting 역시 힘들다는 점에서는 문맥과 관련되지만 ②의 (B)가 적절하지 않다. (B) 앞에서는 'trail angels'가 등산객들에게 식사나 차량 이동 등의 도움을 제공한다고 설명한다. 이러한 지원이 어려운 여정을 수월하게 해 준다는 의미이므로 assistance(도움, 지원)가 적절하다. isolation은 고립, competition은 경쟁을 뜻하므로 해당 문맥에 맞지 않는다. 따라서 정답은 ④ demanding — assistance이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"demanding — isolation",
+"exhausting — competition",
+"effortless — assistance",
+"demanding — assistance",
+"rewarding — isolation"
+]
+},
+{
+"id": "fill-ae7a767179",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nWhen Tolkien was creating his own languages, finding people who shared his unusual interest was difficult. He wanted to exchange ideas with others, so working without such opportunities could be (A)__________. Today, however, the Internet has made fellow language enthusiasts more (B)__________. They can share their work, exchange feedback, and celebrate one another's progress. These interactions can (C)__________ them to continue developing their languages.",
+"answer": "①",
+"solution": "(A) 톨킨은 같은 관심사를 가진 사람들과 생각을 교환하고 싶었지만 그러한 기회가 부족했다. 따라서 답답하고 좌절감을 주는 상황이라는 의미의 frustrating이 적절하다. reassuring은 안심시키는이라는 뜻이다. (B) 인터넷을 통해 언어 창작에 관심이 있는 사람들과 쉽게 교류할 수 있게 되었다는 내용이므로 접근하기 쉬운이라는 의미의 accessible이 적절하다. isolated는 고립된이라는 뜻으로 반대되는 의미이다. (C) 서로의 작업에 의견을 주고 성과를 축하하는 것은 창작 활동을 계속하도록 격려하는 행동이므로 encourage가 적절하다. discourage는 의욕을 꺾다라는 뜻이다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"frustrating — accessible — encourage",
+"reassuring — accessible — discourage",
+"frustrating — isolated — encourage",
+"reassuring — isolated — encourage",
+"frustrating — accessible — discourage"
+]
+},
+{
+"id": "fill-cd475d949f",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 표시된 어휘에 대한 영영풀이로 알맞은 것을 모두 고른 것은?\n\nHobbies can involve ⓐserious effort. People may accept a ⓑchallenge because they want to develop their abilities. As their skills improve, they may regard a hobby as part of who they are and take pride in a ⓒtitle such as “photographer.” In this way, an activity outside work can become ⓓmeaningful.\n\n<보기>\nⓐ serious: involving sincere attention and effort\nⓑ challenge: a task that can be completed without difficulty or effort\nⓒ title: a word or name identifying a person’s role or activity\nⓓ meaningful: having importance or value",
+"answer": "⑤",
+"solution": "serious는 진지한 관심과 노력을 기울이는 것을, title은 사람의 역할이나 활동을 나타내는 명칭을 뜻한다. meaningful은 중요성이나 가치가 있다는 뜻이므로 ⓐ, ⓒ, ⓓ가 옳다. challenge는 능력과 노력을 요구하는 어려운 과제이므로 ⓑ의 풀이는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓐ, ⓓ",
+"ⓑ, ⓒ, ⓓ",
+"ⓐ, ⓒ, ⓓ"
+]
+},
+{
+"id": "fill-fa01909dbb",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nThe difficulties of hiking the PCT go beyond the physical effort of walking. When their food supplies run out far from the nearest town, hikers sometimes have no choice but to (A)__________ several days of hunger. Since water collected from natural sources may contain harmful substances, obtaining safe drinking water is (B)__________ for their survival. Furthermore, when freezing temperatures and powerful storms threaten their safety, hikers need shelters that can protect them from (C)__________ weather conditions.",
+"answer": "③",
+"solution": "(A) 식량이 떨어진 상황에서 'have no choice but to'는 ~할 수밖에 없다는 의미이다. 따라서 며칠간의 배고픔을 견뎌야 한다는 뜻의 endure가 적절하다. avoid는 피하다라는 뜻이므로 강제적으로 겪어야 하는 상황과 맞지 않는다. (B) 자연에서 구한 물에는 유해 물질이 포함될 수 있으므로 안전한 식수 확보는 생존에 필수적이다. 따라서 essential이 적절하다. optional은 선택적인이라는 뜻이다. (C) 영하의 기온과 강력한 폭풍은 혹독한 기상 조건을 가리키므로 harsh가 적절하다. mild는 온화한이라는 뜻이다. 따라서 세 빈칸의 정답 조합은 ③ endure — essential — harsh이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"avoid — essential — mild",
+"endure — optional — harsh",
+"endure — essential — harsh",
+"avoid — optional — harsh",
+"endure — essential — mild"
+]
+},
+{
+"id": "fill-5a285c48ec",
+"typeId": "eng-h3-b05-u0m0s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓕ 중 문맥상 어휘의 쓰임이 적절하지 않은 것을 모두 찾아, <보기>에서 알맞은 낱말을 골라 바르게 고쳐 쓰시오.\n\n[조건]\n• 글의 내용과 제시된 영영풀이를 함께 고려할 것.\n• 적절한 어휘는 고치지 않을 것.\n• <보기>의 낱말은 필요한 경우에만 사용하며, 같은 낱말을 두 번 사용하지 않을 것.\n• 정답은 '기호 — 바르게 고친 낱말'의 형식으로 기호 순서대로 쓸 것.\n\nA hobby can be demanding without being a paid occupation. An activity may ⓐqualify as a serious hobby when it requires sustained effort and offers opportunities for personal growth. Likewise, an astronomer who studies the sky for personal interest rather than as a paid occupation is a(n) ⓑprofessional; this description concerns the person's relationship to the activity, not necessarily a lack of skill. Discoveries made through such an interest can be a ⓒcontribution to society because they add to our understanding of the universe. Yet the desire to make a discovery need not be the primary ⓓconsequence for taking up astronomy: the wish to learn may itself be the main reason. Other hobbyists value the ⓔcommunity formed around a shared interest. Whether an activity provides personal growth or friendship, it can be ⓕprofitable in the sense of giving satisfaction, even when it produces no income.\n\n<보기>\namateur / contribution / isolation / motivation / professional / qualify / rewarding / title\n\n<영영풀이>\n• amateur: someone who takes part in an activity for interest or enjoyment rather than as a paid occupation\n• community: a group of people who share an interest or characteristic\n• consequence: something that happens as a result of an action or situation\n• contribution: something given or done that helps produce a result or improvement\n• motivation: a reason or desire that makes someone want to act\n• professional: someone who is paid to do an activity as a job\n• profitable: producing a financial gain\n• qualify: to meet the conditions necessary to be considered a particular thing\n• rewarding: giving a feeling of satisfaction or achievement",
+"answer": "ⓑ — amateur, ⓓ — motivation, ⓕ — rewarding",
+"solution": "ⓐ qualify는 어떤 기준이나 조건을 충족하여 특정한 것으로 인정될 수 있다는 뜻이다. 지속적인 노력과 성장의 기회를 제공하는 활동이 진지한 취미로 인정될 수 있다는 문맥이므로 적절하다.\n\nⓑ professional은 보수를 받고 전문적인 활동을 직업으로 하는 사람을 의미한다. 그러나 본문에서는 금전적 보수가 아니라 개인적 관심에 따라 천문학을 연구한다고 했으므로 amateur로 고쳐야 한다. 여기서 amateur는 실력이 부족한 사람이 아니라 해당 활동을 직업이 아닌 개인적 관심으로 수행하는 사람을 뜻한다.\n\nⓒ contribution은 어떤 결과나 개선에 도움이 되는 기여를 의미한다. 천문학에 관한 발견이 우주에 대한 이해를 높인다는 문맥이므로 적절하다.\n\nⓓ consequence는 어떤 행동이나 상황에 따른 결과를 의미한다. 그러나 해당 문장에서는 천문학을 시작하게 하는 주된 이유나 욕구를 설명하고 있다. 따라서 활동의 동기를 의미하는 motivation으로 고쳐야 한다.\n\nⓔ community는 공통된 관심사를 공유하는 사람들의 집단을 뜻한다. 같은 취미를 가진 사람들이 형성한 공동체를 가리키므로 적절하다.\n\nⓕ profitable은 금전적 수익을 가져오는 것을 의미한다. 그러나 본문에서는 수입이 전혀 없어도 만족감이나 성취감을 줄 수 있다는 뜻이므로 rewarding으로 고쳐야 한다.\n\n따라서 문맥상 적절하지 않은 어휘는 ⓑ, ⓓ, ⓕ이며, 정답은 'ⓑ — amateur, ⓓ — motivation, ⓕ — rewarding'이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
 },
 {
 "id": "fill-1a85680304",
@@ -722,18 +399,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto put all the parts of something together",
+"answer": "④",
+"solution": "'어떤 것의 모든 부분을 하나로 합치다'라는 뜻이므로 '조립하다'를 뜻하는 assemble이 정답이다. 교과서에서는 Bopp가 친구가 직접 조립한(had assembled himself) 망원경을 빌려 썼다는 문장에 나온다. preserve는 '보존하다', endure는 '견디다', pursue는 '추구하다', observe는 '관찰하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "preserve",
 "endure",
 "pursue",
 "assemble",
 "observe"
-],
-"answer": "④",
-"solution": "'어떤 것의 모든 부분을 하나로 합치다'라는 뜻이므로 '조립하다'를 뜻하는 assemble이 정답이다. 교과서에서는 Bopp가 친구가 직접 조립한(had assembled himself) 망원경을 빌려 썼다는 문장에 나온다. preserve는 '보존하다', endure는 '견디다', pursue는 '추구하다', observe는 '관찰하다'라는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-8248194b77",
@@ -741,18 +419,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nThe PCT is a journey of a lifetime. It is a chance to see the <u>magnificent</u> landscapes of the American West.",
+"answer": "③",
+"solution": "magnificent는 '웅장한, 장엄한'이라는 뜻이므로 '훌륭한, 화려한'을 뜻하는 splendid와 의미가 가장 가깝다. ordinary는 '평범한', harsh는 '혹독한', narrow는 '좁은', secret은 '비밀의'라는 뜻이라서 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "ordinary",
 "harsh",
 "splendid",
 "narrow",
 "secret"
-],
-"answer": "③",
-"solution": "magnificent는 '웅장한, 장엄한'이라는 뜻이므로 '훌륭한, 화려한'을 뜻하는 splendid와 의미가 가장 가깝다. ordinary는 '평범한', harsh는 '혹독한', narrow는 '좁은', secret은 '비밀의'라는 뜻이라서 문맥에 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-152b3ec09c",
@@ -760,17 +439,338 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nSurviving in nature for months itself can be a tremendous challenge. Hikers cook their own meals, and sometimes they have to ________ days without eating.",
+"answer": "①",
+"solution": "자연에서 몇 달 동안 살아남는 것이 엄청난 도전이라는 내용이다. 그러니 '며칠 동안 먹지 못하는 것을 견뎌야 한다'가 자연스럽고, 빈칸에는 '견디다'를 뜻하는 endure가 들어간다. publish(출판하다), invent(발명하다), celebrate(축하하다), discover(발견하다)는 '먹지 못하는 날'과 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "endure",
 "publish",
 "invent",
 "celebrate",
 "discover"
-],
+]
+},
+{
+"id": "fill-cba7ba75ab",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhen oil enters the sea, certain bacteria (A)[are / is] attracted to it and begin to multiply. The bacteria release enzymes (B)[that / what] break down components of the oil, thereby (C)[turning / turn] them into carbon dioxide and water.",
 "answer": "①",
-"solution": "자연에서 몇 달 동안 살아남는 것이 엄청난 도전이라는 내용이다. 그러니 '며칠 동안 먹지 못하는 것을 견뎌야 한다'가 자연스럽고, 빈칸에는 '견디다'를 뜻하는 endure가 들어간다. publish(출판하다), invent(발명하다), celebrate(축하하다), discover(발견하다)는 '먹지 못하는 날'과 어울리지 않는다.",
+"solution": "주어 certain bacteria가 복수이므로 (A)에는 are가 알맞다. 선행사 enzymes를 수식하며 관계절 안에서 주어 역할을 하는 관계대명사는 that이다. thereby 뒤에서는 앞 절의 결과를 나타내는 분사 turning을 써야 한다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b05-u0m0s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"are – that – turning",
+"are – what – turning",
+"is – that – turning",
+"are – that – turn",
+"is – what – turn"
+]
+},
+{
+"id": "fill-a8f396a532",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA large sporting event often (A)[requires / require] an enormous facility. To attract more spectators, stadiums are becoming larger, (B)[consuming / consume] more land and building materials. (C)[Whenever / Whatever] an area of grassland is cleared for construction, part of nature is lost.",
+"answer": "①",
+"solution": "주어 A large sporting event가 단수이므로 requires가 알맞다. consuming은 앞의 are becoming larger에 이어지는 분사구문이다. 뒤에 완전한 절이 오고 ‘~할 때마다’라는 의미이므로 Whenever를 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"requires – consuming – Whenever",
+"requires – consume – Whenever",
+"require – consuming – Whatever",
+"requires – consuming – Whatever",
+"require – consume – Whenever"
+]
+},
+{
+"id": "fill-42d7d7d605",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOne environmental cost that is easily overlooked (A)[is / are] the large quantity of resources needed by a stadium. Water, electricity, and other forms of energy (B)[are / is] consumed to operate and maintain the facility. Moreover, the equipment used to produce and transport construction materials (C)[emit / emits] waste into the ground and atmosphere. This means that the environmental impact of a sporting event (D)[continues / continuing] even after construction has been completed.",
+"answer": "①",
+"solution": "(A) 주어는 단수인 One environmental cost이므로(뒤의 resources는 보어 속 수식어) is. (B) 주어는 Water, electricity, and other forms of energy의 복수 병렬이므로 are. (C) 주어 the equipment는 불가산 단수 취급이므로 emits. (D) that절의 서술동사가 필요하므로 continuing(분사)이 아닌 continues. 따라서 is–are–emits–continues인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"is – are – emits – continues",
+"is – is – emit – continues",
+"are – are – emits – continuing",
+"is – are – emit – continuing",
+"are – is – emits – continues"
+]
+},
+{
+"id": "fill-5284189284",
+"typeId": "eng-h3-b05-u1m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 괄호 (A), (B), (C), (D)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nResearchers have warned that climate change may prevent some former Winter Olympics host cities from holding the event again. This warning, based on predictions (A)[that / what] snow and ice may become insufficient, has increased concern about the future of sports. The US Open organizers also adopted an extreme heat policy (B)[requiring / required] short breaks during matches. The policy allows players (C)[to cool / cooling] down when temperatures become dangerously high. Neither the concern about winter sports nor the prediction of more extreme heat (D)[has / have] disappeared.",
+"answer": "①",
+"solution": "predictions 뒤에는 그 내용을 설명하는 완전한 절이 이어지므로 동격의 접속사 that이 필요하다. 정책이 휴식을 ‘요구하는’ 능동 관계이므로 requiring이 알맞고, allow는 「allow + 목적어 + to부정사」로 쓰인다. 「neither A nor B」의 동사는 가까운 주어 prediction에 일치하므로 has가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"that – requiring – to cool – has",
+"that – required – cooling – has",
+"what – requiring – to cool – have",
+"that – requiring – cooling – have",
+"what – required – to cool – has"
+]
+},
+{
+"id": "fill-ed7939fcf4",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nIn 2010, the Deepwater Horizon platform in the Gulf of Mexico exploded and leaked a large amount of oil into the sea. One way to deal with such oil pollution is bioremediation, a method that relies on bacteria. Some bacteria that naturally live in the ocean can break down oil. When an oil spill happens, these bacteria are drawn to the oil and start to multiply. As they grow, they release enzymes that break oil down into carbon dioxide and water. Although the process may take weeks or months, it is more environmentally friendly than traditional methods that use harmful chemicals.",
+"answer": "⑤",
+"solution": "지문은 생물정화 과정이 몇 주에서 몇 달이 걸릴 수 있다고 했으므로 전통적 방법보다 '빠르다'는 ⑤는 일치하지 않는다. 오히려 지문은 화학약품을 쓰는 방법보다 더 '친환경적'이라고 말할 뿐 속도가 빠르다고 하지 않았다. 나머지 ①~④는 지문에 그대로 언급되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① The Deepwater Horizon explosion in 2010 caused a large oil leak into the Gulf of Mexico.",
+"② Bioremediation is a cleanup method that makes use of bacteria.",
+"③ Some bacteria living in the ocean are naturally able to break down oil.",
+"④ During bioremediation, bacteria release enzymes that turn oil into carbon dioxide and water.",
+"⑤ Bioremediation cleans up oil spills faster than traditional methods that use chemicals."
+]
+},
+{
+"id": "fill-9379e84505",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nEvery sporting event affects the environment. For example, a long-track speed skating competition can only take place if the ice of a 400-meter oval track is frozen to a thickness of 3 to 5 cm. While the competition is on, refrigeration systems keep the track frozen, and the temperature, humidity, and air quality inside the stadium must be maintained. In addition, employees, athletes, and spectators travel to and from the stadium, often from other cities or even from abroad. In fact, more than 25% of the emissions from the 2018 PyeongChang Winter Olympics are estimated to have come from fan travel and accommodations.",
+"answer": "④",
+"solution": "지문은 관중과 선수들이 다른 도시뿐 아니라 해외(abroad)에서도 이동한다고 했으므로, '같은 나라 안 가까운 도시에서만' 온다는 ④는 일치하지 않는다. ①②③⑤는 트랙 두께, 냉각 시스템, 25% 배기가스 수치 등 지문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① Every sporting event has some effect on the environment.",
+"② A long-track speed skating race requires an oval track with ice 3 to 5 cm thick.",
+"③ Special refrigeration systems are used to keep the track frozen during the competition.",
+"④ Spectators at the event travel only from nearby cities within the same country.",
+"⑤ Over a quarter of the emissions from the 2018 PyeongChang Winter Olympics are thought to be due to fan travel and lodging."
+]
+},
+{
+"id": "fill-5a43364912",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nM: Can you pass me one of those cotton bags?\nW: Sure. You like them because they're reusable, right?\nM: Yes, they're better for the environment than disposable plastic bags.\nW: Actually, I read that reusable bags are only effective if you use them more than 7,100 times.\nM: Really? Is that a lot?\nW: Yes. You'd have to use the same bag every day for about 20 years.\nM: Then should I just go back to plastic bags?\nW: Not at all. Just use your reusable bags as often as you can.\nM: Okay. I'll keep using mine until they wear out.",
+"answer": "④",
+"solution": "여자는 남자가 'plastic bags로 돌아가야 하냐'고 묻자 'Not at all'이라며 재사용 봉투를 가능한 자주 쓰라고 했으므로, 일회용 봉투로 돌아가라고 조언했다는 ④는 일치하지 않는다. 나머지 선지는 대화 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① The man prefers cotton bags because they can be used again and again.",
+"② The woman says reusable bags are only effective if used more than 7,100 times.",
+"③ Using a reusable bag every day for about 20 years would reach that number of uses.",
+"④ The woman advises the man to go back to disposable plastic bags.",
+"⑤ The man decides to keep using his reusable bags until they wear out."
+]
+},
+{
+"id": "fill-a530b72d00",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nMany Olympic Games have tried to reduce their environmental impact. The Olympic Village built for the 2000 Sydney Summer Olympics became the world's largest solar-powered suburb. The 2002 Salt Lake City Winter Olympics used a new energy recycling system that used the curling hall's air conditioning unit to heat the showers and bathrooms in the venue. For the 2010 Vancouver Winter Olympics, the Olympic speed-skating venue was built with salvaged timber. At the 2020 Tokyo Summer Olympics, electricity was generated with hydrogen instead of fossil fuel, supplying power for many buildings in the Olympic Village.",
+"answer": "④",
+"solution": "지문은 2020 도쿄 올림픽에서 화석 연료 대신 수소로 전기를 생산했다고 했으므로, 수소가 아닌 화석 연료로 전기를 만들었다는 ④는 정반대로 서술되어 일치하지 않는다. ①②③⑤는 각 대회의 친환경 사례와 그대로 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① The Olympic Village for the 2000 Sydney Games became the world's largest solar-powered suburb.",
+"② The 2002 Salt Lake City Games reused heat from the curling hall's air conditioning unit to warm showers and bathrooms.",
+"③ The speed-skating venue for the 2010 Vancouver Games was built using salvaged timber.",
+"④ At the 2020 Tokyo Games, electricity was produced from fossil fuels rather than hydrogen.",
+"⑤ Several Olympic Games have made efforts to lower their impact on the environment."
+]
+},
+{
+"id": "fill-a649d89143",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글을 읽고 답할 수 없는 질문은?\n\nThe Aral Sea is located in Central Asia, between Uzbekistan and Kazakhstan. Its name means \"sea of islands\" in Kazakh. It is not actually a sea but a saltwater lake that was once the world's fourth-largest lake. Sadly, by 2007 it had shrunk to only 10% of its original size because of the dams and canals built for cotton farming. This decline damaged local water resources and changed the local climate, leading to longer summers and more dry days.",
+"answer": "⑤",
+"solution": "지문에는 아랄해가 원래 크기로 회복되는 데 걸리는 시간이 전혀 언급되지 않으므로 ⑤는 답할 수 없다. ①은 중앙아시아, ②는 '섬들의 바다', ③은 10%, ④는 목화 재배를 위한 댐·운하 건설로 각각 지문에서 답을 찾을 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① Where is the Aral Sea located?",
+"② What does the name of the Aral Sea mean in Kazakh?",
+"③ By 2007, what fraction of its original size had the Aral Sea shrunk to?",
+"④ Why were the dams and canals near the Aral Sea built?",
+"⑤ How long will it take for the Aral Sea to return to its original size?"
+]
+},
+{
+"id": "fill-1c3affdf61",
+"typeId": "eng-h3-b05-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nThanks to its popularity, sports is a powerful tool for raising awareness about environmental responsibility. The sports industry influences billions of people who take part in sports as spectators, athletes, or organizers. Research has found that fans are receptive to environmental initiatives organized at sporting events, and many are willing to change their lifestyle habits accordingly. The social status of athletes can also have a strong effect; high-profile athletes and coaches can act as ambassadors to foster environmental consciousness among fans, especially young people who look up to them.",
+"answer": "③",
+"solution": "지문은 팬들이 스포츠 행사에서 열리는 환경 캠페인에 수용적(receptive)이라고 했으므로, 팬들이 그것을 거부하는 경향이 있다는 ③은 일치하지 않는다. ①②④⑤는 스포츠의 영향력, 팬들의 생활습관 변화 의지, 유명 선수의 역할 등 지문 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① Because of its popularity, sports can be a strong tool for raising environmental awareness.",
+"② The sports industry has an influence on billions of people connected to sports.",
+"③ According to research, fans tend to reject environmental initiatives held at sporting events.",
+"④ Many fans are willing to change their lifestyle habits for the environment.",
+"⑤ Well-known athletes can help spread environmental awareness, especially among young fans."
+]
+},
+{
+"id": "fill-bce5bff77f",
+"typeId": "eng-h3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nThanks to its popularity, sports is a powerful tool for universally raising awareness about environmental responsibility. Simply put, the sports industry influences billions of individuals that are involved in sports either as spectators, athletes, or organizers. Through sports, strategies to increase awareness and educate the public about the importance of sustaining the environment have shown good results. Research has found that fans are receptive to ecological or environmental initiatives organized at sporting events, and many are willing to change their lifestyle habits accordingly. The social status of athletes can have a strong effect, too. For example, high-profile athletes and coaches can be sports ambassadors to foster environmental consciousness among fans, especially young people who look up to them. The broad appeal of sports becomes a vehicle to reach many people at once.",
+"answer": "②",
+"solution": "첫 문장에서 스포츠가 폭넓은 인기를 바탕으로 환경적 책임에 대한 인식을 높이는 강력한 수단임을 제시한다. 이어 스포츠 산업이 수십억 명에게 영향을 미친다는 점, 팬들이 환경 보호 활동에 호응하고 생활 습관을 바꿀 의향이 있다는 점, 유명 선수와 지도자가 환경 의식을 높이는 데 기여할 수 있다는 점을 근거로 든다. 마지막 문장은 스포츠의 대중적 매력이 많은 사람에게 동시에 영향을 미칠 수 있다는 핵심 내용을 재강조한다. 따라서 정답은 ②이다. ①은 교육의 양이 실천을 결정한다는 근거 없는 인과 관계를 제시한다. ③은 유명 선수의 역할을 전체 요지로 확대하고 실천의 출발점이라는 조건을 추가했다. ④는 본문의 핵심인 대중의 환경 의식과 생활 습관 변화에서 초점을 벗어난다. ⑤는 청소년이 특별히 영향을 받을 수 있다는 세부 내용을 환경 교육의 주된 대상으로 과도하게 일반화한 것이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"스포츠 팬의 환경 보호 실천은 경기장에서 제공하는 교육의 양에 따라 결정된다.",
+"스포츠는 대중적 인기와 영향력을 바탕으로 환경 의식을 확산하는 효과적인 수단이다.",
+"스포츠계의 환경 보호 활동은 유명 선수의 개인적인 실천에서 시작되어야 한다.",
+"스포츠 행사의 환경 캠페인은 관중의 생활 습관보다 경기장 운영 방식에 초점을 두어야 한다.",
+"스포츠를 통한 환경 교육은 일반 대중보다 어린 팬들에게 집중할 때 효과적이다."
+]
+},
+{
+"id": "fill-890ddb9b1c",
+"typeId": "eng-h3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nMany sporting events have a negative impact on the environment because they require massive structures to host them. To draw more spectators, sports stadiums and sporting facilities are getting bigger, consuming larger areas of land and requiring greater amounts of building materials for construction. Whenever a hectare of grassland is cleared for a construction site, there is a loss of nature. Every ton of concrete and steel used in the building foundation and structure is produced, transported, poured, and put together by equipment and facilities that emit waste into the ground and atmosphere. Then, after the stadium is completed, large amounts of water, electricity, and other forms of resources are consumed to operate and maintain the facility.",
+"answer": "④",
+"solution": "첫 문장은 대규모 스포츠 시설이 환경에 부정적인 영향을 미친다는 중심 내용을 제시한다. 이후 경기장의 대형화에 따른 토지 사용 증가, 자연 훼손, 건축 자재 생산과 운송 및 시공 과정에서 발생하는 오염, 완공 이후 시설 운영에 필요한 막대한 자원 소비를 구체적으로 설명한다. 따라서 경기장 규모 확대가 초래하는 환경적 비용을 포괄하는 ④가 가장 적절하다. ①과 ⑤는 경기장 대형화의 배경이나 수요만 강조하고 환경 부담을 반영하지 못한다. ②는 경기 중 자원 소비라는 일부 문제만 다루며, 본문에서 자원 소비를 줄이는 구체적인 방안을 제시하지도 않는다. ③은 건축 자재를 언급하지만 경기장 품질에 관한 내용은 지문에 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Expanding Stadiums to Meet the Needs of More Fans",
+"Reducing Resource Consumption During Sporting Events",
+"How Construction Materials Determine Stadium Quality",
+"Bigger Stadiums, Greater Environmental Costs",
+"The Growing Demand for Modern Sports Facilities"
+]
+},
+{
+"id": "fill-0b23ddc593",
+"typeId": "eng-h3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 요지로 가장 알맞은 것은?\n\nAlarm bells sounded when research suggested the possibility that nearly one in every four English soccer stadiums could be partially or completely flooded in the near future due to climate change and extreme weather events. Some research even predicted that by 2050 almost half of the cities that once hosted the Winter Olympics would not be able to do so again for lack of snow and ice. Also, the US Open Tennis Championships organizers implemented an “extreme heat policy,” having mandatory short breaks for players to cool down during matches, after a few quit their matches due to extreme heat. As more sports are affected by climate change, concerns are growing.",
+"answer": "③",
+"solution": "지문은 기후 변화가 스포츠에 미치는 부정적인 영향을 세 가지 사례로 설명한다. 첫째, 영국 축구 경기장 일부가 홍수로 침수될 수 있다는 연구 결과를 제시한다. 둘째, 눈과 얼음의 부족으로 과거 동계 올림픽 개최 도시 중 상당수가 2050년에는 다시 대회를 개최하기 어려울 수 있다는 예측을 소개한다. 셋째, 극심한 더위 때문에 테니스 대회에서 선수들의 휴식 시간을 의무화한 사례를 제시한다. 마지막 문장은 기후 변화의 영향을 받는 스포츠가 늘어나면서 우려가 커진다고 정리한다. 따라서 다양한 스포츠에 대한 기후 변화의 위협을 포괄하는 ③이 정답이다. ①은 지문에서 직접 제안하지 않은 대책이다. ②는 동계 스포츠에만 초점을 맞춘 부분적 내용이다. ④는 테니스 대회의 대응 사례를 스포츠계 전체의 일반적 행동으로 확대했다. ⑤는 경기장과 선수에게 미치는 영향을 비교하지만 지문에는 그러한 비교가 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"기후 변화에 대응하기 위해 스포츠 시설의 안전 기준을 강화할 필요가 있다.",
+"기후 변화로 인해 동계 스포츠의 개최 가능 지역이 점차 제한되고 있다.",
+"기후 변화가 다양한 스포츠의 경기 환경과 개최 여건을 위협하고 있다.",
+"스포츠계는 기후 변화로 인한 피해를 줄이기 위해 경기 규칙을 변경하고 있다.",
+"극단적인 기상 현상은 경기장 시설보다 선수들의 경기력에 더 큰 영향을 미친다."
+]
+},
+{
+"id": "fill-69c8504ee3",
+"typeId": "eng-h3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nOn April 20, 2010, an enormous explosion shook the Deepwater Horizon drilling platform in the Gulf of Mexico, causing a significant oil leak into the sea. Over a three-month period, approximately 134 million gallons of oil, comparable to more than 200 Olympic swimming pools, flowed into the sea before it was eventually halted. Despite continuing restoration efforts, the sea has not yet fully recovered. One approach to addressing the issue of oil contamination is bioremediation, a restoration method that utilizes bacteria. Some types of bacteria naturally exist in marine environments and possess the capability to break down various components of oil. When an oil spill occurs, these bacteria are attracted to the oil and begin to multiply. As they grow, they release enzymes that break down oil into carbon dioxide and water. Although this process may take several weeks or months, it represents a more sustainable method of cleaning up oil spills compared to conventional approaches involving harmful chemicals.",
+"answer": "③",
+"solution": "첫 부분은 딥워터 호라이즌 사고로 대규모 원유가 바다에 유출되었고 생태계가 아직 완전히 회복되지 않았다는 배경을 소개한다. 이후 글의 중심은 박테리아를 이용한 생물학적 정화(bioremediation)로 이동한다. 바다에 자연적으로 존재하는 특정 박테리아는 기름 성분을 분해할 수 있으며, 기름이 유출되면 증식하면서 효소를 방출해 기름을 이산화탄소와 물로 분해한다. 마지막 문장은 이러한 방법이 시간이 걸리더라도 유해 화학 물질을 사용하는 기존 방법보다 지속 가능하다고 평가한다. 따라서 박테리아를 활용한 지속 가능한 기름 오염 정화를 나타낸 ③이 가장 적절하다. ①은 도입부의 사고와 장기적 영향만 다루고 중심 내용인 정화 방법을 반영하지 못한다. ②는 화학적 처리에 초점을 맞추지만 글은 오히려 박테리아를 활용하는 대안을 강조한다. ④는 박테리아 증식이라는 세부 현상을 중심 내용으로 잘못 선택했다. ⑤는 해양 생태계 복원의 어려움을 포괄적으로 나타내지만 본문의 구체적인 해결 방법을 충분히 반영하지 못한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The Deepwater Horizon Disaster and Its Lasting Effects",
+"The Role of Chemical Treatments in Marine Restoration",
+"Oil-Eating Bacteria: A Sustainable Solution to Oil Pollution",
+"How Oil Spills Change the Growth of Marine Bacteria",
+"The Challenges of Restoring Damaged Marine Ecosystems"
+]
+},
+{
+"id": "fill-1213485e13",
+"typeId": "eng-h3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 한 문장으로 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 알맞게 짝지은 것은?\n\nEvery sporting event affects the environment before, during, and even after it. For example, a long-track speed skating competition can only take place, provided that the ice of a 400-meter oval track is frozen until it is 3 to 5 cm thick. As long as the competition is on, the track needs to be kept frozen by specialized refrigeration systems while the temperature, humidity, and air quality inside the stadium also have to be maintained for optimal ice conditions. Additionally, all of the stadium employees, athletes, and spectators need to travel to and from the stadium, often from other cities or even from abroad. During the event, spectators and athletes eat and drink, and the plastic bottles and wrappers of whatever they consumed leave trash cans overflowing. After the event has ended, in addition to the significant amount of trash that needs to be disposed of, the effects those people caused and the emissions generated from their travel continue to have a lasting negative impact on air quality.\n\n[요약문]\nSporting events place a(n) (A)__________ burden on the environment through facility operation, travel, and waste, and their negative effects (B)__________ beyond the duration of the events.",
+"answer": "②",
+"solution": "첫 문장은 모든 스포츠 행사가 개최 전, 개최 중, 종료 후까지 환경에 영향을 미친다는 중심 내용을 제시한다. 이어 스피드 스케이팅 경기장의 냉각 설비 운영과 실내 환경 유지, 관계자 및 관중의 장거리 이동, 경기 중 발생하는 쓰레기 등을 구체적인 사례로 설명한다. 이는 스포츠 행사가 환경에 상당한 부담을 준다는 의미이므로 (A)에는 considerable(상당한)이 가장 적절하다. 또한 경기가 끝난 뒤에도 쓰레기 처리 문제와 이동 과정에서 발생한 배출물의 부정적인 영향이 계속된다고 서술한다. 따라서 (B)에는 persist(지속되다)가 들어가야 한다. 정답은 ②이다. ①의 diminish는 영향이 줄어든다는 뜻으로, 본문에서 강조하는 지속성을 정확히 나타내지 못한다. ③과 ⑤의 avoidable은 환경 부담을 피할 수 있다는 의미인데, 본문은 부담의 발생과 규모를 설명할 뿐 회피 가능성을 주장하지 않는다. ④의 temporary는 일시적이라는 뜻이므로 경기 종료 후에도 영향이 지속된다는 내용과 모순된다. accumulate는 영향의 누적을 의미하지만 지문의 핵심은 누적 여부가 아니라 지속성이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"considerable — diminish",
+"considerable — persist",
+"avoidable — persist",
+"temporary — accumulate",
+"avoidable — diminish"
+]
+},
+{
+"id": "fill-75f504748a",
+"typeId": "eng-h3-b05-u1m2s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 제목으로 가장 알맞은 것은?\n\nAlarm bells sounded when research suggested the possibility that nearly one in every four English soccer stadiums could be partially or completely flooded in the near future due to climate change and extreme weather events. Some research even predicted that by 2050 almost half of the cities that once hosted the Winter Olympics would not be able to do so again for lack of snow and ice. As more sports are affected by climate change, concerns are growing.\n\nThere is light at the end of the tunnel, however. The sports community is optimistic that it can reduce its environmental impact by taking two main steps: transitioning to more sustainable operations before, during, and after events and raising awareness among the public about their impact. Efforts to adopt more responsible approaches have been made by various organizations, and the International Olympic Committee (IOC) is leading the way by setting a good example. The IOC set up the Sport and Environment Commission decades ago and declared the environment as essential to the Olympic Movement, in addition to sports and culture. It has since encouraged host nations to adopt more environmental approaches to putting on the Olympics.",
+"answer": "⑤",
+"solution": "첫 단락에서는 기후 변화로 인한 스포츠계의 위기를 설명한다. 영국 축구 경기장의 침수 가능성과 동계 올림픽 개최 도시의 눈·얼음 부족 문제를 통해 기후 변화가 스포츠 행사와 시설에 실질적인 위협이 되고 있음을 보여 준다. 둘째 단락은 however를 통해 우려에서 대응으로 전환된다. 스포츠계가 지속 가능한 행사 운영과 대중의 환경 의식 제고라는 두 가지 방향으로 환경적 영향을 줄이려 한다는 내용을 제시한다. 이어 IOC가 환경을 올림픽 운동의 중요한 요소로 선언하고 개최국에 친환경적인 운영을 장려하는 사례를 소개한다. 따라서 기후 변화의 위협과 이에 대한 스포츠계의 공동 대응을 모두 포괄하는 ⑤가 가장 적절하다. ①은 첫 단락의 위협과 불확실성에 초점을 맞추어 둘째 단락의 대응 노력을 반영하지 못한다. ②는 둘째 단락에 제시된 두 가지 대응 중 환경 의식 제고만 강조한다. ③은 IOC의 역할이라는 구체적인 사례를 글 전체의 중심 내용으로 확대했다. ④는 지속 가능한 행사 운영이라는 대응 방향을 강조하지만, 첫 단락의 기후 변화로 인한 위기와 둘째 단락의 대중 인식 제고까지 포괄하지 못한다. 따라서 글 전체의 문제 제기와 해결 노력을 균형 있게 반영하는 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b05-u1m2s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Climate Change and the Uncertain Future of Major Sporting Events",
+"Raising Environmental Awareness Through International Sports",
+"The IOC's Leadership in Making the Olympics More Sustainable",
+"Reducing the Environmental Footprint of Global Sporting Events",
+"Sports Facing Climate Threats: From Growing Concerns to Collective Action"
+]
 }
 ]

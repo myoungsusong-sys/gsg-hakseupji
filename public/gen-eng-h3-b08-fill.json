@@ -5,18 +5,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 문장의 밑줄 친 단어와 의미가 가장 가까운 것은?\n\nIf you continually neglect your health, you may suffer from an upset stomach.",
+"answer": "②",
+"solution": "neglect는 해야 할 일이나 돌봐야 할 대상을 ‘소홀히 하다, 방치하다’라는 뜻이다. 문맥상 건강을 돌보지 않는다는 의미이므로 ignore가 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "improve",
 "ignore",
 "examine",
 "protect",
 "restore"
-],
-"answer": "②",
-"solution": "neglect는 해야 할 일이나 돌봐야 할 대상을 ‘소홀히 하다, 방치하다’라는 뜻이다. 문맥상 건강을 돌보지 않는다는 의미이므로 ignore가 가장 가깝다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-f95c32cddd",
@@ -24,56 +25,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 대화의 밑줄 친 표현과 바꾸어 쓸 수 없는 것은?\n\nA: I often eat something just before going to bed.\nB: In my opinion, you should avoid eating that late.",
+"answer": "⑤",
+"solution": "In my opinion은 개인의 의견을 제시하는 표현이다. ①~④는 모두 화자의 견해를 나타내지만, ⑤는 어떤 내용이 객관적으로 입증되었다는 뜻이므로 바꾸어 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "I think you should avoid eating that late.",
 "In my view, you should avoid eating that late.",
 "The way I see it, you should avoid eating that late.",
 "From my point of view, you should avoid eating that late.",
 "It has been proven that you should avoid eating that late."
-],
-"answer": "⑤",
-"solution": "In my opinion은 개인의 의견을 제시하는 표현이다. ①~④는 모두 화자의 견해를 나타내지만, ⑤는 어떤 내용이 객관적으로 입증되었다는 뜻이므로 바꾸어 쓸 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-f4f626c4ae",
-"typeId": "eng-h3-b08-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 문맥에 들어갈 말로 가장 알맞은 것은?\n\nYour body needs time to ______ food properly. If you go to sleep immediately after eating, you may experience indigestion.",
-"choices": [
-"digest",
-"neglect",
-"expose",
-"coin",
-"combat"
-],
-"answer": "①",
-"solution": "음식을 먹은 뒤 신체가 하는 작용과 indigestion이라는 단서에 주목해야 한다. digest는 ‘소화하다’라는 뜻이므로 문맥에 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-29cba0745a",
-"typeId": "eng-h3-b08-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 영영 풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto invent a new word or expression that people have not used before",
-"choices": [
-"engage",
-"expose",
-"coin",
-"protect",
-"neglect"
-],
-"answer": "③",
-"solution": "새로운 단어나 표현을 만들어 내는 행위는 동사 coin으로 나타낸다. 따라서 주어진 영영 풀이에 해당하는 단어는 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-9c7480542a",
@@ -81,37 +45,19 @@
 "kind": "객관식",
 "diff": 3,
 "body": "다음 대화의 밑줄 친 문장과 의미가 가장 가까운 것은?\n\nA: Eating right before sleep can cause indigestion.\nB: Really? Then I will save this bread for tomorrow.\nA: Good. I'm glad I've convinced you.",
+"answer": "①",
+"solution": "convince는 근거나 설명을 통해 상대가 어떤 생각을 믿거나 받아들이게 한다는 뜻이다. 대화에서 B가 생각을 바꾸었으므로 ‘내 말에 동의하게 했다’는 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "I'm glad I have made you agree with me.",
 "I'm glad I have allowed you to eat the bread.",
 "I'm glad I have asked you for your opinion.",
 "I'm glad I have hidden the fact from you.",
 "I'm glad I have made you feel more worried."
-],
-"answer": "①",
-"solution": "convince는 근거나 설명을 통해 상대가 어떤 생각을 믿거나 받아들이게 한다는 뜻이다. 대화에서 B가 생각을 바꾸었으므로 ‘내 말에 동의하게 했다’는 ①이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-84f937ec41",
-"typeId": "eng-h3-b08-u1m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nA regular walking partner can make it easier to maintain an exercise plan. Because you have promised to meet someone, you are less likely to (A)[cancel / complete] the planned walk. While walking, an enjoyable conversation may keep you from (B)[noticing / emphasizing] the effort required for exercise. Sharing the scenery with another person can also make the experience more (C)[engaging / tedious].",
-"choices": [
-"cancel — noticing — engaging",
-"cancel — emphasizing — tedious",
-"complete — noticing — engaging",
-"complete — emphasizing — tedious",
-"complete — noticing — tedious"
-],
-"answer": "①",
-"solution": "함께 걷기로 약속하면 상대를 실망시키고 싶지 않으므로 계획을 취소할 가능성이 작다는 흐름이다. 대화는 운동 중인 사실을 잘 의식하지 않게 하고, 주변 풍경을 함께 나누면 걷기가 더 흥미로워진다. 따라서 cancel, noticing, engaging의 연결이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-7cb2ba69b5",
@@ -119,394 +65,19 @@
 "kind": "객관식",
 "diff": 4,
 "body": "다음 중 밑줄 친 낱말의 쓰임이 문맥상 적절하지 않은 것은?",
+"answer": "③",
+"solution": "새로운 현상을 설명하기 위해 표현을 ‘만들었다’는 문맥에는 coined가 적절하다. eliminated는 ‘제거했다’라는 뜻이므로 새로운 표현을 만들어 사용했다는 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "The amount of exercise he gets is insufficient for maintaining an active lifestyle.",
 "Health experts recommend walking as a safe way to combat the problems caused by prolonged sitting.",
 "Scientists eliminated the expression “sitting disease” to describe the harmful effects of sitting too long.",
 "People who remain seated for long periods may be exposed to several health risks.",
 "The body may not digest a late-night meal properly before sleep."
-],
-"answer": "③",
-"solution": "새로운 현상을 설명하기 위해 표현을 ‘만들었다’는 문맥에는 coined가 적절하다. eliminated는 ‘제거했다’라는 뜻이므로 새로운 표현을 만들어 사용했다는 내용과 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-f7ba8b5bd3",
-"typeId": "eng-h3-b08-u1m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 빈칸 (A)~(E)에 문맥상 알맞은 영어 단어를 쓰시오. 단, 각 단어는 괄호 안에 제시된 철자로 시작해야 한다.\n\nA considerable number of teenagers do not get enough exercise, so their level of physical activity may be described as (A) i______. Researchers have (B) c______ a special expression for the health problems associated with prolonged sitting. The more time people remain seated, the more (C) e______ they become to various health risks. Walking is an accessible form of exercise that can (D) c______ these problems. Walking with a friend can make the activity more enjoyable and (E) e______.",
-"selfGrade": true,
-"answer": "insufficient / coined / exposed / combat / engaging",
-"solution": "운동량이 충분하지 않다는 뜻에는 insufficient가 알맞고, 표현을 새로 만들었다는 뜻에는 과거분사 coined가 필요하다. 위험에 노출된 상태는 exposed, 문제에 맞서 싸우는 것은 combat으로 나타낸다. 마지막 빈칸에는 걷기를 흥미롭고 몰입하게 만든다는 의미의 engaging이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-ff51fa05ff",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA smartphone and a good pair of shoes (A)[is / are] useful for a music walk. Energetic songs can motivate you (B)[walk / to walk] harder, and you can let the rhythm (C)[leads / lead] your steps.",
-"choices": [
-"is — walk — leads",
-"are — walk — lead",
-"are — to walk — lead",
-"is — to walk — leads",
-"are — to walk — leads"
-],
-"answer": "③",
-"solution": "주어가 A smartphone and a good pair of shoes로 복수이므로 (A)는 are가 알맞다. motivate는 목적어 뒤에 to부정사를 취하고, 사역동사 let 뒤에는 동사원형이 오므로 각각 to walk와 lead를 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-92be4af10d",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWalking (A)[has / have] a positive effect on creativity. In one study, people who walked produced more creative ideas than those who remained (B)[seated / seating]. This benefit is one reason to make daily walks (C)[enjoyable / enjoyably].",
-"choices": [
-"has — seated — enjoyable",
-"has — seating — enjoyably",
-"have — seated — enjoyable",
-"have — seating — enjoyably",
-"has — seated — enjoyably"
-],
-"answer": "①",
-"solution": "동명사 Walking은 단수 취급하므로 has가 적절하다. remain의 주격보어로는 상태를 나타내는 seated가, make의 목적격보어로는 형용사 enjoyable이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-5d73386235",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBy (A)[setting / to set] a weekly step goal, you can make your walking challenge more specific. You may add steps while (B)[brushing / brushed] your teeth and get your friends (C)[to join / joined] the challenge.",
-"choices": [
-"to set — brushing — joined",
-"setting — brushed — to join",
-"to set — brushed — joined",
-"setting — brushing — to join",
-"setting — brushed — joined"
-],
-"answer": "④",
-"solution": "전치사 By 뒤에는 동명사 setting이 와야 한다. while 뒤에는 주어와 be동사가 생략된 brushing이 적절하며, get은 ‘get+목적어+to부정사’의 형태로 쓰인다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-8607a6ef15",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 밑줄 친 ⓐ~ⓔ 중 어법상 알맞은 것은?\n\nResearch shows that walking ⓐhave a positive effect on creativity. Participants who stayed ⓑsitting during the experiment produced fewer creative ideas than those who walked. Steve Jobs also developed ideas while ⓒwalk. ⓓThough its physical and creative benefits, students may find it difficult to make time for walking. A simple challenge can make it ⓔenjoyably.",
-"choices": [
-"ⓐ have",
-"ⓑ sitting",
-"ⓒ walk",
-"ⓓ Though",
-"ⓔ enjoyably"
-],
-"answer": "②",
-"solution": "stay는 보어로 현재분사 sitting을 취할 수 있으므로 ⓑ는 어법상 알맞다. ⓐ는 has, ⓒ는 walking, ⓓ는 Despite, ⓔ는 enjoyable로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-b663b93ab5",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhat a music walk requires (A)[is / are] only a few simple items. Take earphones (B)[in case / in case of] other walkers are bothered by your music. You can also prepare a playlist containing energetic songs that motivate you (C)[walking / to walk] at a faster pace.",
-"choices": [
-"are — in case — walking",
-"is — in case of — to walk",
-"are — in case of — walking",
-"are — in case — to walk",
-"is — in case — to walk"
-],
-"answer": "⑤",
-"solution": "주어인 What a music walk requires는 하나의 명사절이므로 단수동사 is가 온다. 뒤에 완전한 절이 이어지므로 in case가 필요하며, motivate는 ‘목적어+to부정사’를 목적격보어로 취한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-c218c6b8bc",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 ⓐ~ⓕ를 모두 어법에 맞게 고쳐 쓰시오.\n\nThe number of ⓐstep you take each day can be recorded with an app. Walking ⓑhave also been found to improve creativity, and Steve Jobs often developed ideas while ⓒwalk. ⓓDespite of these benefits, some students may not make time for it. Therefore, it is helpful to make walking ⓔenjoyably or to choose songs that motivate listeners ⓕwalking harder.",
-"selfGrade": true,
-"answer": "ⓐ steps, ⓑ has, ⓒ walking, ⓓ Despite, ⓔ enjoyable, ⓕ to walk",
-"solution": "the number of 뒤의 가산명사는 복수형 steps로 쓰고, 동명사 주어 Walking에는 단수동사 has를 쓴다. while 뒤에서 주어와 be동사가 생략되었으므로 walking이 알맞으며, Despite는 of 없이 명사구를 목적어로 취한다. make의 목적격보어에는 형용사 enjoyable을 쓰고, motivate는 목적어 뒤에 to부정사를 취한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-af0c5ff2da",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 의미가 되도록 두 문장을 하나의 문장으로 합쳐 쓰시오. 단, in case와 motivate를 각각 한 번 사용해야 한다.\n\nOther people may be disturbed by your music, so bring earphones. Select energetic songs because they will encourage you to walk harder.",
-"selfGrade": true,
-"answer": "Bring earphones in case other people are disturbed by your music, and select energetic songs that will motivate you to walk harder.",
-"solution": "‘다른 사람들이 방해받을 가능성에 대비하여’라는 의미는 in case 뒤에 완전한 절을 이어 표현한다. energetic songs를 선행사로 하는 관계대명사절을 만들고, motivate 뒤에는 ‘목적어+to부정사’를 사용해야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-fe87229cfc",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 문장을 어법에 맞게 다시 쓰시오. 분사구문의 의미상 주어가 주절의 주어와 일치하게 하고, by 뒤의 세 동작이 병렬 구조가 되게 할 것.\n\nUsing a smartphone app, your daily steps can be recorded, and the challenge can be completed by walking during lunch, to take the stairs, or walked in place while brush your teeth.",
-"selfGrade": true,
-"answer": "Using a smartphone app, you can record your daily steps and take part in the challenge by walking during lunch, taking the stairs, or walking in place while brushing your teeth.",
-"solution": "Using의 의미상 주체가 사람이므로 주절의 주어를 you로 바꾸어야 한다. 전치사 by 뒤의 세 동작은 walking, taking, walking의 동명사 형태로 병렬을 이루어야 한다. while 뒤에서는 you are가 생략된 것으로 보아 brushing을 쓴다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-fa906c4d2e",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPicasso did not want the other customers to wait because of him, so Arias noticed his ______ and offered to cut his hair at home.",
-"choices": [
-"comfort",
-"discomfort",
-"excitement",
-"pride",
-"satisfaction"
-],
-"answer": "②",
-"solution": "다른 손님들을 기다리게 하는 상황에서 Picasso는 마음이 불편했다. 따라서 ‘불편함’을 뜻하는 discomfort가 문맥상 가장 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-c7f7fa4fe1",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 중 영영풀이가 알맞지 않은 것은?",
-"choices": [
-"persuade: to make someone agree to do something by giving reasons",
-"grief: a feeling of deep sadness caused by a loss",
-"donate: to give something to help a person or an organization",
-"inscription: a spoken agreement to purchase an artwork",
-"tribute: something that shows respect or admiration"
-],
-"answer": "④",
-"solution": "inscription은 물건의 표면에 새기거나 적은 ‘글귀, 명문’을 의미한다. ‘물건을 구매하겠다는 구두 합의’라는 ④의 풀이는 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-555659da4e",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 대화의 밑줄 친 표현과 바꿔 쓰기에 적절하지 않은 것은?\n\nYejin: I can take you to a restaurant run by an Italian chef tonight.\nAlberto: That would be wonderful. (A)I'd love to join you.",
-"choices": [
-"I'd be happy to go with you.",
-"I'd really like to come along.",
-"It would be my pleasure to join you.",
-"I'm delighted to accept your invitation.",
-"I'd rather stay home by myself."
-],
-"answer": "⑤",
-"solution": "I'd love to join you는 상대의 제안을 기쁘게 받아들이는 표현이다. ⑤는 함께 가기보다 혼자 집에 있겠다는 거절의 뜻이므로 바꿔 쓸 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-836a3e2d99",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 문장의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nThe small display of Picasso's art (A)[attracted / discouraged] people from many countries. Although a merchant offered to buy the entire collection, Arias (B)[accepted / refused] the offer. He later (C)[donated / concealed] the works so that a museum could be established in his hometown.",
-"choices": [
-"attracted – accepted – donated",
-"attracted – refused – donated",
-"discouraged – refused – concealed",
-"discouraged – accepted – donated",
-"attracted – refused – concealed"
-],
-"answer": "②",
-"solution": "전시는 여러 나라의 방문객을 끌어들였으므로 attracted가 알맞다. Arias는 판매 제안을 거절했고 작품을 고향에 기증했으므로 refused와 donated가 이어져야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-78160dc45f",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음은 1과 본문의 어휘를 문맥에 맞게 풀이한 것이다. 밑줄 친 낱말의 의미 설명으로 적절하지 않은 것은?",
-"choices": [
-"Arias never \"charged\" Picasso for a haircut: 서비스의 대가를 요구했다",
-"Picasso was \"moved\" by Arias's museum plan: 다른 장소로 옮겨졌다",
-"Picasso's health \"declined\" as he aged: 점차 나빠졌다",
-"Arias protected Picasso's \"works\": Picasso가 만든 예술 작품들",
-"Picasso's memory would \"live on\" through his art: 사라지지 않고 계속 남다"
-],
-"answer": "②",
-"solution": "이 문맥에서 moved는 장소가 ‘옮겨졌다’는 뜻이 아니라 Arias의 계획을 듣고 ‘감동했다’는 뜻이다. 나머지는 모두 각 문장에서 사용된 의미를 올바르게 설명한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-b3e59ff3e6",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 요약문의 (A)~(C)에 주어진 단어를 문맥과 어법에 맞게 변형하여 쓰시오.\n\nAs Picasso's health (A)________ with age, Arias planned to preserve the artworks in a museum. Picasso was deeply (B)________ by the plan. After Picasso's death, a merchant attempted to buy the collection, but his (C)________ failed because Arias would not sell it.\n\n(A) decline  (B) move  (C) persuade",
-"selfGrade": true,
-"answer": "declined, moved, persuasion",
-"solution": "(A)는 과거에 건강이 악화된 일을 나타내므로 declined가 필요하다. (B)는 ‘감동한’이라는 수동의 의미이므로 moved가 알맞고, (C)는 소유격 his 뒤에서 주어 역할을 해야 하므로 persuade의 명사형 persuasion을 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-d38958af9a",
-"typeId": "eng-h3-b08-u0m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 문장의 (A)~(C)에 문맥상 알맞은 영어 단어를 각각 한 단어로 쓰시오.\n\nAt first, a dog and a dolphin may appear (A)________ because they belong to different species and habitats. However, Gunner and Delta showed that different animals can exist together in (B)________. At their first meeting, they cautiously (C)________ each other with sniffs and gentle touches.\n\n• (A): compatible에 ‘반대’의 의미를 더한 형용사\n• (B): ‘조화롭게 공존하는 상태’를 뜻하는 명사\n• (C): ‘자세히 살펴보다’를 뜻하는 동사의 과거형",
-"selfGrade": true,
-"answer": "incompatible, harmony, inspected",
-"solution": "(A)는 compatible의 반대말이므로 접두사 in-을 붙인 incompatible이다. 조화로운 공존 상태는 harmony이며, 서로를 자세히 살펴본 과거 행동은 inspected로 나타낸다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-4b77f5a665",
-"typeId": "eng-h3-b08-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nPicasso received haircuts at home after Arias offered to visit him. Arias did not ask Picasso to pay for his services. The sketches and paintings that Picasso gave Arias (A)[was / were] expressions of friendship. When Picasso visited Arias’s home, he enjoyed food (B)[preparing / prepared] by Arias’s mother.",
-"choices": [
-"(A) was — (B) preparing",
-"(A) were — (B) prepared",
-"(A) was — (B) prepared",
-"(A) were — (B) preparing",
-"(A) were — (B) prepare"
-],
-"answer": "②",
-"solution": "첫 번째 문장의 주어는 복수 명사구 The sketches and paintings이므로 (A)에는 were가 알맞다. (B)는 food를 수식하며 음식이 Arias의 어머니에 의해 준비된다는 수동 관계를 나타내므로 과거분사 prepared가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-de718d1574",
-"typeId": "eng-h3-b08-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nAt the barbershop, the other customers allowed Picasso to receive service before them. Their kindness made him (A)[feel / to feel] uncomfortable, since they had to wait. Arias noticed this and asked (B)[whether / what] Picasso wanted to receive haircuts at home.",
-"choices": [
-"(A) to feel — (B) whether",
-"(A) feel — (B) what",
-"(A) to feel — (B) what",
-"(A) feel — (B) whether",
-"(A) feeling — (B) whether"
-],
-"answer": "④",
-"solution": "사역동사 make는 목적격 보어로 동사원형을 취하므로 (A)에는 feel이 들어간다. (B) 뒤에는 문장 성분이 갖추어진 절이 오고, 집에서 이발받기를 원하는지 물었다는 의미이므로 whether가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-976147b52b",
-"typeId": "eng-h3-b08-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\n(A)[Although / Despite] the difference in their ages, Picasso and Arias developed a close friendship. The works in the museum help visitors understand (B)[that / what] their friendship lasted throughout their lives.",
-"choices": [
-"(A) Although — (B) that",
-"(A) Despite — (B) what",
-"(A) Although — (B) what",
-"(A) Despite — (B) which",
-"(A) Despite — (B) that"
-],
-"answer": "⑤",
-"solution": "(A) 뒤에는 명사구 the difference in their ages가 있으므로 전치사 Despite가 적절하다. (B) 뒤의 절은 문장 성분이 모두 갖추어져 있으므로 명사절을 이끄는 접속사 that을 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-2e109d7fc9",
-"typeId": "eng-h3-b08-u0m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nBy the time Arias came out of his shop to join Picasso for dinner, their friendship (A)[has / had] already lasted twenty years. People stood around the limousine, (B)[wondering / wondered] who could keep Picasso waiting. The story of the two friends goes back to the summer afternoon (C)[when / which] they first became friends.",
-"choices": [
-"(A) had — (B) wondering — (C) when",
-"(A) has — (B) wondering — (C) when",
-"(A) had — (B) wondered — (C) when",
-"(A) has — (B) wondered — (C) which",
-"(A) had — (B) wondering — (C) which"
-],
-"answer": "①",
-"solution": "과거에 Arias가 가게에서 나온 시점까지 우정이 이어졌으므로 (A)에는 과거완료를 만드는 had가 적절하다. 사람들이 궁금해하면서 서 있었다는 능동 관계이므로 (B)에는 wondering이 들어간다. (C) 뒤에는 완전한 절이 이어지고 선행사가 시간을 나타내므로 관계부사 when이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-e9c6139e35",
-"typeId": "eng-h3-b08-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe customers who were already at the barbershop let Picasso ⓐ[be served] ahead of them. The knowledge that his early service meant a longer wait for others made him ⓑ[to feel] uneasy. Arias, ⓒ[noticing] Picasso’s discomfort, offered to provide the service at Picasso’s home. As the friendship between the two men grew ⓓ[more deeply], their visits were no longer simply about haircuts. At Arias’s home, Picasso enjoyed dishes ⓔ[preparing] by Arias’s mother. What he told Arias about feeling as if he were back in Spain ⓕ[shows] how comfortable he felt with his friend.",
-"choices": [
-"ⓐ, ⓑ, ⓓ",
-"ⓑ, ⓒ, ⓔ",
-"ⓑ, ⓓ, ⓔ",
-"ⓒ, ⓓ, ⓕ",
-"ⓐ, ⓔ, ⓕ"
-],
-"answer": "③",
-"solution": "ⓑ는 사역동사 made의 목적격 보어이므로 동사원형 feel로 고쳐야 한다. ⓓ의 grew는 우정의 상태 변화를 나타내는 연결동사이므로 부사 more deeply가 아니라 형용사 비교급 deeper가 필요하다. ⓔ는 dishes와 수동 관계이므로 prepared로 고쳐야 한다. ⓐ의 be served는 let 뒤에 쓰인 수동형 동사원형이고, ⓒ는 Arias를 의미상 주어로 하는 분사이며, ⓕ는 What이 이끄는 명사절 주어에 호응하는 단수 동사이므로 모두 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-f73f9e9fc5",
-"typeId": "eng-h3-b08-u0m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 틀린 세 부분을 찾아 각각 바르게 고치시오.\n\nArias donated roughly sixty works by Picasso to his hometown. The collection, which includes paintings, posters, and ceramics, ⓐ[were donated] to make the museum possible. Each of the works that Picasso gave Arias ⓑ[bears] an inscription expressing friendship. Visitors who examine the collection discover ⓒ[what] the museum celebrates more than Picasso’s achievements. The fact ⓓ[that] these works were gifts between friends helps explain its special meaning. ⓔ[Although] the loss of Picasso, Arias found comfort in the belief that his friend would live on through art. The museum honors a friendship ⓕ[that lasted] throughout their lives.\n\n[답안 조건]\n• 표시된 부분만 고칠 것.\n• 원문의 의미와 시제를 유지할 것.\n• ⓔ를 고칠 경우 한 단어로 쓸 것.\n• ‘기호: 수정한 표현’의 형식으로 기호 순서대로 쓸 것.",
-"selfGrade": true,
-"answer": "ⓐ: was donated, ⓒ: that, ⓔ: Despite",
-"solution": "ⓐ의 주어는 관계절 내부의 복수 명사들이 아니라 단수 명사 The collection이므로 was donated로 고쳐야 한다. ⓒ 뒤에는 완전한 절이 이어지므로 목적절을 이끄는 접속사 that이 필요하다. ⓔ 뒤에는 명사구 the loss of Picasso가 오므로 양보의 의미를 유지하는 전치사 Despite가 적절하다. ⓑ는 Each를 중심으로 하는 단수 주어에 호응하며, ⓓ는 동격절의 접속사이고, ⓕ는 주격 관계대명사가 이끄는 절이므로 옳다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-11bbfe79e0",
@@ -514,18 +85,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe scientific community has even ______ the term “sitting disease” for this phenomenon in order to represent the harmful health effects that result from long periods of sitting.",
+"answer": "①",
+"solution": "'새로운 용어를 만들어 내다'라는 뜻이 필요하므로 coined가 알맞다. eliminated(없애다), forgotten(잊은), ignored(무시한)는 문맥상 어울리지 않는다. 과학계가 'sitting disease'라는 말을 '만들어 냈다'는 흐름이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "coined",
 "eliminated",
 "borrowed",
 "forgotten",
 "ignored"
-],
-"answer": "①",
-"solution": "'새로운 용어를 만들어 내다'라는 뜻이 필요하므로 coined가 알맞다. eliminated(없애다), forgotten(잊은), ignored(무시한)는 문맥상 어울리지 않는다. 과학계가 'sitting disease'라는 말을 '만들어 냈다'는 흐름이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-56c560425d",
@@ -533,18 +105,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "밑줄 친 단어 combat과 의미가 가장 가까운 것은?\n\nWalking is one of the safest, easiest, and cheapest forms of exercise to combat sitting disease.",
+"answer": "①",
+"solution": "여기서 combat은 '~와 맞서 싸우다, 퇴치하다'라는 동사로 쓰였다. 따라서 fight against가 의미상 가장 가깝다. 걷기가 sitting disease에 '맞서는' 운동이라는 문맥이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "fight against",
 "give in to",
 "wait for",
 "take part in",
 "give up on"
-],
-"answer": "①",
-"solution": "여기서 combat은 '~와 맞서 싸우다, 퇴치하다'라는 동사로 쓰였다. 따라서 fight against가 의미상 가장 가깝다. 걷기가 sitting disease에 '맞서는' 운동이라는 문맥이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-629b13eebe",
@@ -552,75 +125,39 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe longer you sit, the more ______ you are to the dangers of obesity, heart disease, and even depression.",
+"answer": "①",
+"solution": "오래 앉아 있을수록 비만, 심장병 등의 위험에 더 '노출된다'는 흐름이므로 be exposed to(~에 노출되다)의 exposed가 알맞다. protected(보호받는)는 반대 의미라 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "exposed",
 "protected",
 "connected",
 "related",
 "opposed"
-],
-"answer": "①",
-"solution": "오래 앉아 있을수록 비만, 심장병 등의 위험에 더 '노출된다'는 흐름이므로 be exposed to(~에 노출되다)의 exposed가 알맞다. protected(보호받는)는 반대 의미라 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-6d6f393c81",
 "typeId": "eng-h3-b08-u1m0s0t0",
 "kind": "객관식",
-"diff": 5,
-"body": "윗글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nMany people find it hard to stick to a walking routine on their own. However, walking with a friend can completely change this. When you promise to meet someone, you feel a sense of responsibility, so you are far less likely to (A)[postpone / proceed] your workout. Moreover, a lively conversation can make the minutes pass so quickly that you barely (B)[notice / doubt] the effort you are putting in. Finally, sharing a pleasant scene with a companion makes the whole experience far more (C)[monotonous / rewarding], encouraging you to return again and again.\n\n(A)          (B)          (C)",
+"diff": 3,
+"body": "윗글의 괄호 (A), (B), (C)에서 흐름상 알맞은 말로 바르게 연결된 것은?\n\nMany people find it hard to stick to a walking routine on their own. However, walking with a friend can completely change this. When you promise to meet someone, you feel a sense of responsibility, so you are far less likely to (A)[postpone / proceed] your workout. Moreover, a lively conversation can make the minutes pass so quickly that you barely (B)[notice / doubt] the effort you are putting in. Finally, sharing a pleasant scene with a companion makes the whole experience far more (C)[monotonous / rewarding], encouraging you to return again and again.",
+"answer": "①",
+"solution": "(A) 약속으로 책임감이 생기면 운동을 '미룰(postpone)' 가능성이 줄어든다. proceed(계속 진행하다)는 less likely와 결합하면 의미가 어긋난다. (B) 대화로 시간이 빨리 흘러 자신이 들이는 노력을 거의 '알아차리지(notice)' 못한다는 뜻이 맞고, doubt(의심하다)는 부적절하다. (C) 함께 경치를 나누면 경험이 더 '보람 있게(rewarding)' 되어 다시 찾게 된다는 긍정적 흐름이므로 monotonous(단조로운)는 맞지 않다. 따라서 postpone — notice — rewarding인 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "postpone — notice — rewarding",
 "proceed — notice — monotonous",
 "postpone — doubt — rewarding",
 "proceed — doubt — monotonous",
 "postpone — notice — monotonous"
-],
-"answer": "①",
-"solution": "(A) 친구와 약속하면 책임감이 생겨 운동을 '미룰(postpone)' 가능성이 줄어든다는 흐름이 자연스럽다. (B) 대화로 시간이 빨리 지나 자신이 들이는 노력을 거의 '알아차리지(notice)' 못한다는 의미가 맞다. (C) 함께 경치를 나누면 경험이 더 '보람 있게(rewarding)' 된다는 긍정적 흐름이므로 monotonous(단조로운)는 부적절하다. 따라서 postpone — notice — rewarding이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-9ad91ac248",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nYou can even make walking a social media challenge and get others ______ you.",
-"choices": [
-"join",
-"joins",
-"joined",
-"to join",
-"joining"
-],
-"answer": "④",
-"solution": "「get+목적어+목적격보어」 구조에서 목적어(others)와 보어의 관계가 능동이면 보어 자리에 to부정사를 쓴다. 따라서 'get others to join you(남들이 함께하게 만들다)'가 알맞다. 동사원형 join, 과거형 joins·joined, 동명사 joining은 모두 어법상 맞지 않다. 정답은 ④ to join이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-02f65f1756",
-"typeId": "eng-h3-b08-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWalking ______ been found to improve our creativity.",
-"choices": [
-"have",
-"has",
-"are",
-"were",
-"having"
-],
-"answer": "②",
-"solution": "주어 Walking은 동명사로 단수 취급하므로 단수 동사를 써야 한다. 현재완료 수동태 'has been found(밝혀져 왔다)'가 자연스럽다. 복수 동사 have·are·were는 수가 맞지 않고, having은 동사 자리에 올 수 없다. 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-0ccbea6493",
@@ -628,18 +165,259 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nHere are some simple ways to make walking ______ for you.",
+"answer": "④",
+"solution": "「make+목적어+목적격보어」 구조에서 목적격보어 자리에는 형용사가 와야 하므로 'make walking enjoyable(걷기를 즐겁게 만들다)'이 알맞다. 부사 enjoyably는 보어가 될 수 없고, 동사 enjoy·enjoyed·to enjoy도 이 자리에 올 수 없다. 정답은 ④ enjoyable이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "enjoy",
 "enjoyed",
 "enjoyably",
 "enjoyable",
 "to enjoy"
-],
-"answer": "④",
-"solution": "「make+목적어+목적격보어」 구조에서 목적격보어 자리에는 형용사가 와야 하므로 'make walking enjoyable(걷기를 즐겁게 만들다)'이 알맞다. 부사 enjoyably는 보어가 될 수 없고, 동사 enjoy·enjoyed·to enjoy도 이 자리에 올 수 없다. 정답은 ④ enjoyable이다.",
+]
+},
+{
+"id": "fill-ff51fa05ff",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nA smartphone and a good pair of shoes (A)[is / are] useful for a music walk. Energetic songs can motivate you (B)[walk / to walk] harder, and you can let the rhythm (C)[leads / lead] your steps.",
+"answer": "③",
+"solution": "주어가 A smartphone and a good pair of shoes로 복수이므로 (A)는 are가 알맞다. motivate는 목적어 뒤에 to부정사를 취하고, 사역동사 let 뒤에는 동사원형이 오므로 각각 to walk와 lead를 써야 한다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u1m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"is — walk — leads",
+"are — walk — lead",
+"are — to walk — lead",
+"is — to walk — leads",
+"are — to walk — leads"
+]
+},
+{
+"id": "fill-92be4af10d",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWalking (A)[has / have] a positive effect on creativity. In one study, people who walked produced more creative ideas than those who remained (B)[seated / seating]. This benefit is one reason to make daily walks (C)[enjoyable / enjoyably].",
+"answer": "①",
+"solution": "동명사 Walking은 단수 취급하므로 has가 적절하다. remain의 주격보어로는 상태를 나타내는 seated가, make의 목적격보어로는 형용사 enjoyable이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"has — seated — enjoyable",
+"has — seating — enjoyably",
+"have — seated — enjoyable",
+"have — seating — enjoyably",
+"has — seated — enjoyably"
+]
+},
+{
+"id": "fill-5d73386235",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBy (A)[setting / to set] a weekly step goal, you can make your walking challenge more specific. You may add steps while (B)[brushing / brushed] your teeth and get your friends (C)[to join / joined] the challenge.",
+"answer": "④",
+"solution": "전치사 By 뒤에는 동명사 setting이 와야 한다. while 뒤에는 주어와 be동사가 생략된 brushing이 적절하며, get은 ‘get+목적어+to부정사’의 형태로 쓰인다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"to set — brushing — joined",
+"setting — brushed — to join",
+"to set — brushed — joined",
+"setting — brushing — to join",
+"setting — brushed — joined"
+]
+},
+{
+"id": "fill-8607a6ef15",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 밑줄 친 ⓐ~ⓔ 중 어법상 알맞은 것은?\n\nResearch shows that walking ⓐhave a positive effect on creativity. Participants who stayed ⓑsitting during the experiment produced fewer creative ideas than those who walked. Steve Jobs also developed ideas while ⓒwalk. ⓓThough its physical and creative benefits, students may find it difficult to make time for walking. A simple challenge can make it ⓔenjoyably.",
+"answer": "②",
+"solution": "stay는 보어로 현재분사 sitting을 취할 수 있으므로 ⓑ는 어법상 알맞다. ⓐ는 has, ⓒ는 walking, ⓓ는 Despite, ⓔ는 enjoyable로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ have",
+"ⓑ sitting",
+"ⓒ walk",
+"ⓓ Though",
+"ⓔ enjoyably"
+]
+},
+{
+"id": "fill-b663b93ab5",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhat a music walk requires (A)[is / are] only a few simple items. Take earphones (B)[in case / in case of] other walkers are bothered by your music. You can also prepare a playlist containing energetic songs that motivate you (C)[walking / to walk] at a faster pace.",
+"answer": "⑤",
+"solution": "주어인 What a music walk requires는 하나의 명사절이므로 단수동사 is가 온다. 뒤에 완전한 절이 이어지므로 in case가 필요하며, motivate는 ‘목적어+to부정사’를 목적격보어로 취한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"are — in case — walking",
+"is — in case of — to walk",
+"are — in case of — walking",
+"are — in case — to walk",
+"is — in case — to walk"
+]
+},
+{
+"id": "fill-9ad91ac248",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nYou can even make walking a social media challenge and get others ______ you.",
+"answer": "④",
+"solution": "「get+목적어+목적격보어」 구조에서 목적어(others)와 보어의 관계가 능동이면 보어 자리에 to부정사를 쓴다. 따라서 'get others to join you(남들이 함께하게 만들다)'가 알맞다. 동사원형 join, 과거형 joins·joined, 동명사 joining은 모두 어법상 맞지 않다. 정답은 ④ to join이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"join",
+"joins",
+"joined",
+"to join",
+"joining"
+]
+},
+{
+"id": "fill-02f65f1756",
+"typeId": "eng-h3-b08-u1m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\n\nWalking ______ been found to improve our creativity.",
+"answer": "②",
+"solution": "주어 Walking은 동명사로 단수 취급하므로 단수 동사를 써야 한다. 현재완료 수동태 'has been found(밝혀져 왔다)'가 자연스럽다. 복수 동사 have·are·were는 수가 맞지 않고, having은 동사 자리에 올 수 없다. 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"have",
+"has",
+"are",
+"were",
+"having"
+]
+},
+{
+"id": "fill-fa906c4d2e",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPicasso did not want the other customers to wait because of him, so Arias noticed his ______ and offered to cut his hair at home.",
+"answer": "②",
+"solution": "다른 손님들을 기다리게 하는 상황에서 Picasso는 마음이 불편했다. 따라서 ‘불편함’을 뜻하는 discomfort가 문맥상 가장 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"comfort",
+"discomfort",
+"excitement",
+"pride",
+"satisfaction"
+]
+},
+{
+"id": "fill-c7f7fa4fe1",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 영영풀이가 알맞지 않은 것은?",
+"answer": "④",
+"solution": "inscription은 물건의 표면에 새기거나 적은 ‘글귀, 명문’을 의미한다. ‘물건을 구매하겠다는 구두 합의’라는 ④의 풀이는 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"persuade: to make someone agree to do something by giving reasons",
+"grief: a feeling of deep sadness caused by a loss",
+"donate: to give something to help a person or an organization",
+"inscription: a spoken agreement to purchase an artwork",
+"tribute: something that shows respect or admiration"
+]
+},
+{
+"id": "fill-555659da4e",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 밑줄 친 표현과 바꿔 쓰기에 적절하지 않은 것은?\n\nYejin: I can take you to a restaurant run by an Italian chef tonight.\nAlberto: That would be wonderful. (A)I'd love to join you.",
+"answer": "⑤",
+"solution": "I'd love to join you는 상대의 제안을 기쁘게 받아들이는 표현이다. ⑤는 함께 가기보다 혼자 집에 있겠다는 거절의 뜻이므로 바꿔 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"I'd be happy to go with you.",
+"I'd really like to come along.",
+"It would be my pleasure to join you.",
+"I'm delighted to accept your invitation.",
+"I'd rather stay home by myself."
+]
+},
+{
+"id": "fill-836a3e2d99",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nThe small display of Picasso's art (A)[attracted / discouraged] people from many countries. Although a merchant offered to buy the entire collection, Arias (B)[accepted / refused] the offer. He later (C)[donated / concealed] the works so that a museum could be established in his hometown.",
+"answer": "②",
+"solution": "전시는 여러 나라의 방문객을 끌어들였으므로 attracted가 알맞다. Arias는 판매 제안을 거절했고 작품을 고향에 기증했으므로 refused와 donated가 이어져야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"attracted – accepted – donated",
+"attracted – refused – donated",
+"discouraged – refused – concealed",
+"discouraged – accepted – donated",
+"attracted – refused – concealed"
+]
+},
+{
+"id": "fill-78160dc45f",
+"typeId": "eng-h3-b08-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 1과 본문의 어휘를 문맥에 맞게 풀이한 것이다. 밑줄 친 낱말의 의미 설명으로 적절하지 않은 것은?",
+"answer": "②",
+"solution": "이 문맥에서 moved는 장소가 ‘옮겨졌다’는 뜻이 아니라 Arias의 계획을 듣고 ‘감동했다’는 뜻이다. 나머지는 모두 각 문장에서 사용된 의미를 올바르게 설명한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Arias never \"charged\" Picasso for a haircut: 서비스의 대가를 요구했다",
+"Picasso was \"moved\" by Arias's museum plan: 다른 장소로 옮겨졌다",
+"Picasso's health \"declined\" as he aged: 점차 나빠졌다",
+"Arias protected Picasso's \"works\": Picasso가 만든 예술 작품들",
+"Picasso's memory would \"live on\" through his art: 사라지지 않고 계속 남다"
+]
 },
 {
 "id": "fill-0572b43513",
@@ -647,18 +425,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 영영풀이에 해당하는 단어로 가장 알맞은 것은?\n\nto give money, goods, or works of art to an organization or a place in order to help it",
+"answer": "④",
+"solution": "영영풀이는 '단체나 장소를 돕기 위해 돈·물품·예술 작품을 주다'라는 뜻이므로 donate(기증하다)가 알맞다. 본문에서 Arias는 피카소의 작품 약 60점을 고향 Buitrago del Lozoya에 기증했다(donated). persuade는 '설득하다', exhibit는 '전시하다', decline은 '쇠퇴하다, 거절하다', bargain은 '흥정하다'라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "persuade",
 "exhibit",
 "decline",
 "donate",
 "bargain"
-],
-"answer": "④",
-"solution": "영영풀이는 '단체나 장소를 돕기 위해 돈·물품·예술 작품을 주다'라는 뜻이므로 donate(기증하다)가 알맞다. 본문에서 Arias는 피카소의 작품 약 60점을 고향 Buitrago del Lozoya에 기증했다(donated). persuade는 '설득하다', exhibit는 '전시하다', decline은 '쇠퇴하다, 거절하다', bargain은 '흥정하다'라는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-305a0218ad",
@@ -666,18 +445,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nOne day, Picasso asked Arias, \"What are you going to do with all the paintings and sketches I gave you?\" Arias responded that he would build a museum in Spain to display the works. Picasso was ________ to hear that and swore to help Arias.",
+"answer": "③",
+"solution": "Arias가 자신의 작품을 전시할 박물관을 스페인에 짓겠다고 하자 피카소는 그를 돕겠다고 맹세했다. 따라서 그 말을 듣고 '감동받았다(moved)'가 흐름에 맞다. annoyed(짜증 난), bored(지루한), ashamed(부끄러운), frightened(겁먹은)는 돕겠다고 맹세한 행동과 어울리지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "annoyed",
 "bored",
 "moved",
 "ashamed",
 "frightened"
-],
-"answer": "③",
-"solution": "Arias가 자신의 작품을 전시할 박물관을 스페인에 짓겠다고 하자 피카소는 그를 돕겠다고 맹세했다. 따라서 그 말을 듣고 '감동받았다(moved)'가 흐름에 맞다. annoyed(짜증 난), bored(지루한), ashamed(부끄러운), frightened(겁먹은)는 돕겠다고 맹세한 행동과 어울리지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-4f2e369e50",
@@ -685,93 +465,118 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 중 단어와 우리말 뜻이 바르게 연결되지 않은 것은?",
+"answer": "⑤",
+"solution": "ceramics는 '도자기(류)'라는 뜻이므로 '조각품'과 연결한 것은 틀렸다. 본문에서 Arias가 기증한 작품은 회화, 포스터, 도자기(ceramics) 등으로 이루어져 있었다. 나머지 grief(슬픔), merchant(상인), inscription(새겨진 글), legacy(유산)는 뜻이 바르게 연결되어 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "grief – 슬픔, 비탄",
 "merchant – 상인",
 "inscription – 새겨진 글, 비문",
 "legacy – 유산",
 "ceramics – 조각품"
-],
-"answer": "⑤",
-"solution": "ceramics는 '도자기(류)'라는 뜻이므로 '조각품'과 연결한 것은 틀렸다. 본문에서 Arias가 기증한 작품은 회화, 포스터, 도자기(ceramics) 등으로 이루어져 있었다. 나머지 grief(슬픔), merchant(상인), inscription(새겨진 글), legacy(유산)는 뜻이 바르게 연결되어 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b08-u0m0s0t0",
-"custom": true
+]
 },
 {
-"id": "fill-088da4e592",
+"id": "fill-4b77f5a665",
 "typeId": "eng-h3-b08-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 중 어법상 올바른 문장은?",
-"choices": [
-"Picasso were late for dinner that evening.",
-"A curious crowd gathered around the limousine.",
-"Each of the paintings were signed by Picasso.",
-"Arias donate about sixty pieces to his hometown.",
-"Picasso made Arias to wait in the car."
-],
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nPicasso received haircuts at home after Arias offered to visit him. Arias did not ask Picasso to pay for his services. The sketches and paintings that Picasso gave Arias (A)[was / were] expressions of friendship. When Picasso visited Arias’s home, he enjoyed food (B)[preparing / prepared] by Arias’s mother.",
 "answer": "②",
-"solution": "②는 주어 a curious crowd에 과거동사 gathered가 바르게 쓰여 어법상 옳다. ①은 주어 Picasso가 단수이므로 were가 아니라 was여야 하고, ③은 「each of+복수명사」가 단수 취급이므로 were가 아니라 was여야 한다. ④는 주어 Arias에 맞춰 donated(과거)로, ⑤는 사역동사 make 뒤에 원형부정사 wait로 고쳐야 한다.",
+"solution": "첫 번째 문장의 주어는 복수 명사구 The sketches and paintings이므로 (A)에는 were가 알맞다. (B)는 food를 수식하며 음식이 Arias의 어머니에 의해 준비된다는 수동 관계를 나타내므로 과거분사 prepared가 적절하다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) was — (B) preparing",
+"(A) were — (B) prepared",
+"(A) was — (B) prepared",
+"(A) were — (B) preparing",
+"(A) were — (B) prepare"
+]
 },
 {
-"id": "fill-088da4e592",
+"id": "fill-de718d1574",
 "typeId": "eng-h3-b08-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 중 어법상 올바른 문장은?",
-"choices": [
-"The crowd gathered, wondered who Picasso was.",
-"Despite the fact which Picasso was older than Arias, they were friends.",
-"Each of them are distinct from his other works.",
-"Visitors discover that the museum honors their friendship.",
-"Picasso did not live to seeing the museum completed."
-],
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nAt the barbershop, the other customers allowed Picasso to receive service before them. Their kindness made him (A)[feel / to feel] uncomfortable, since they had to wait. Arias noticed this and asked (B)[whether / what] Picasso wanted to receive haircuts at home.",
 "answer": "④",
-"solution": "④는 뒤에 완전한 절이 오므로 접속사 that이 바르게 쓰여 어법상 옳다. ①은 동시동작을 나타내는 분사구문이므로 wondered가 아니라 wondering이어야 하고, ②는 the fact와 동격을 이루는 절을 이끄는 that이 와야 하므로 which가 틀리다. ③은 「each of+복수명사」가 단수 취급이므로 are가 아니라 is, ⑤는 「live to+동사원형」 구조이므로 seeing이 아니라 see여야 한다.",
+"solution": "사역동사 make는 목적격 보어로 동사원형을 취하므로 (A)에는 feel이 들어간다. (B) 뒤에는 문장 성분이 갖추어진 절이 오고, 집에서 이발받기를 원하는지 물었다는 의미이므로 whether가 알맞다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) to feel — (B) whether",
+"(A) feel — (B) what",
+"(A) to feel — (B) what",
+"(A) feel — (B) whether",
+"(A) feeling — (B) whether"
+]
 },
 {
-"id": "fill-088da4e592",
+"id": "fill-976147b52b",
 "typeId": "eng-h3-b08-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 중 어법상 올바른 문장은?",
-"choices": [
-"The works were comprised a large collection of paintings.",
-"They went back to the afternoon which their friendship began.",
-"Picasso had been working hard for days before Arias visited.",
-"Arias started to dropping by Picasso's house.",
-"This situation made Picasso feeling uncomfortable."
-],
-"answer": "③",
-"solution": "③은 과거의 특정 시점(Arias가 방문한 때)보다 앞선 일이 계속되었음을 나타내는 과거완료진행 had been working이 바르게 쓰여 옳다. ①의 comprise는 '~로 구성되다'라는 능동 의미로 수동태가 불가능하므로 comprised여야 하고, ②는 뒤에 완전한 절이 오므로 관계부사 when(또는 on which)이 와야 한다. ④는 「to+동사원형」이므로 to drop, ⑤는 사역동사 make 뒤 원형부정사 feel로 고쳐야 한다.",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\n(A)[Although / Despite] the difference in their ages, Picasso and Arias developed a close friendship. The works in the museum help visitors understand (B)[that / what] their friendship lasted throughout their lives.",
+"answer": "⑤",
+"solution": "(A) 뒤에는 명사구 the difference in their ages가 있으므로 전치사 Despite가 적절하다. (B) 뒤의 절은 문장 성분이 모두 갖추어져 있으므로 명사절을 이끄는 접속사 that을 써야 한다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) Although — (B) that",
+"(A) Despite — (B) what",
+"(A) Although — (B) what",
+"(A) Despite — (B) which",
+"(A) Despite — (B) that"
+]
 },
 {
-"id": "fill-225144cc56",
+"id": "fill-2e109d7fc9",
+"typeId": "eng-h3-b08-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 짝지어진 것은?\n\nBy the time Arias came out of his shop to join Picasso for dinner, their friendship (A)[has / had] already lasted twenty years. People stood around the limousine, (B)[wondering / wondered] who could keep Picasso waiting. The story of the two friends goes back to the summer afternoon (C)[when / which] they first became friends.",
+"answer": "①",
+"solution": "과거에 Arias가 가게에서 나온 시점까지 우정이 이어졌으므로 (A)에는 과거완료를 만드는 had가 적절하다. 사람들이 궁금해하면서 서 있었다는 능동 관계이므로 (B)에는 wondering이 들어간다. (C) 뒤에는 완전한 절이 이어지고 선행사가 시간을 나타내므로 관계부사 when이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b08-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) had — (B) wondering — (C) when",
+"(A) has — (B) wondering — (C) when",
+"(A) had — (B) wondered — (C) when",
+"(A) has — (B) wondered — (C) which",
+"(A) had — (B) wondering — (C) which"
+]
+},
+{
+"id": "fill-e9c6139e35",
 "typeId": "eng-h3-b08-u0m1s0t0",
 "kind": "객관식",
 "diff": 5,
-"body": "윗글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nPicasso's visits to Arias's barbershop soon became routine. Whenever he came, the other customers let him ⓐbe served first. This made Picasso ⓑto feel uncomfortable, since it caused others to wait longer. ⓒSensing his discomfort, Arias asked whether Picasso would prefer to be shaved at home. From then on, Arias visited Picasso's house, but never charged him for the services he ⓓprovided. The sixty works ⓔdonated to the museum comprised paintings, posters, and ceramics. Each of them ⓕare distinct, for Picasso carved every one with a personal inscription. When visitors enter the museum, they soon discover ⓖwhat it honors a lifelong friendship.",
-"choices": [
-"ⓐ, ⓒ, ⓖ",
-"ⓑ, ⓓ, ⓕ",
-"ⓑ, ⓕ, ⓖ",
-"ⓐ, ⓔ, ⓖ",
-"ⓒ, ⓓ, ⓕ"
-],
+"body": "다음 글의 표시된 부분 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe customers who were already at the barbershop let Picasso ⓐ[be served] ahead of them. The knowledge that his early service meant a longer wait for others made him ⓑ[to feel] uneasy. Arias, ⓒ[noticing] Picasso’s discomfort, offered to provide the service at Picasso’s home. As the friendship between the two men grew ⓓ[more deeply], their visits were no longer simply about haircuts. At Arias’s home, Picasso enjoyed dishes ⓔ[preparing] by Arias’s mother. What he told Arias about feeling as if he were back in Spain ⓕ[shows] how comfortable he felt with his friend.",
 "answer": "③",
-"solution": "ⓑ는 사역동사 make의 목적격보어 자리이므로 to feel이 아니라 원형부정사 feel이어야 한다. ⓕ는 「each of+복수명사」가 단수 취급이므로 are가 아니라 is가 맞다. ⓖ는 뒤에 완전한 절(it honors a lifelong friendship)이 오므로 what이 아니라 접속사 that이어야 한다. 한편 ⓐ는 let+목적어 뒤의 원형(수동 be served)으로, ⓒ는 분사구문으로, ⓓ는 services를 수식하는 관계절 동사로, ⓔ는 works를 수식하는 과거분사로 모두 어법상 옳다.",
+"solution": "ⓑ는 사역동사 made의 목적격 보어이므로 동사원형 feel로 고쳐야 한다. ⓓ의 grew는 우정의 상태 변화를 나타내는 연결동사이므로 부사 more deeply가 아니라 형용사 비교급 deeper가 필요하다. ⓔ는 dishes와 수동 관계이므로 prepared로 고쳐야 한다. ⓐ의 be served는 let 뒤에 쓰인 수동형 동사원형이고, ⓒ는 Arias를 의미상 주어로 하는 분사이며, ⓕ는 What이 이끄는 명사절 주어에 호응하는 단수 동사이므로 모두 적절하다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b08-u0m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓑ, ⓓ",
+"ⓑ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓕ",
+"ⓐ, ⓔ, ⓕ"
+]
 }
 ]

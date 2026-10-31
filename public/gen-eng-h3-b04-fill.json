@@ -1,183 +1,5 @@
 [
 {
-"id": "fill-83d3db1f29",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n(A)[Watching / Watch] live sports is a common hobby. At a stadium, spectators can see fans (B)[cheering / cheered] enthusiastically for their team. Supporting the same team can make the fans (C)[feel / to feel] that they belong to a group.",
-"choices": [
-"Watching — cheering — feel",
-"Watching — cheered — to feel",
-"Watch — cheering — feel",
-"Watching — cheering — to feel",
-"Watch — cheered — to feel"
-],
-"answer": "①",
-"solution": "동명사 Watching은 문장의 주어로 쓰이며, see의 목적어인 fans와 능동 관계인 cheering이 알맞다. 사역동사 make는 목적격 보어로 동사원형을 취하므로 feel을 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-33037a3699",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFans of a football team (A)[based / basing] in their city share a sense of belonging. They often gather at the stadium (B)[to support / supporting] the team. Their songs may be different from (C)[that / those] of the opposing team’s fans.",
-"choices": [
-"based — to support — those",
-"based — supporting — that",
-"basing — to support — those",
-"basing — supporting — that",
-"based — to support — that"
-],
-"answer": "①",
-"solution": "a football team은 도시에 기반을 둔 대상이므로 과거분사 based가 알맞다. 목적을 나타내는 to support가 필요하며, 복수 명사 songs를 대신하므로 복수 대명사 those를 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-6c11b82493",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nResearchers compared home matches with games played without crowds. They found (A)[that / what] the absence of cheering affected the home team’s performance. This finding helps us (B)[understand / understanding] the influence of fans and (C)[consider / considering] how to create a healthy fandom culture.",
-"choices": [
-"that — understand — consider",
-"what — understand — considering",
-"that — understanding — consider",
-"what — understanding — considering",
-"that — understand — considering"
-],
-"answer": "①",
-"solution": "found 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다. help의 목적격 보어로 동사원형 understand를 쓸 수 있고, and 뒤의 consider는 understand와 병렬을 이룬다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-c6b3226e04",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nSports fandom can be explained from evolutionary and social psychological perspectives. In the past, belonging to a group ⓐwas important for survival because group members could cooperate with one another. This instinct may explain ⓑwhy modern people choose a team and remain loyal to it. In addition, optimal distinctiveness theory suggests that each individual ⓒhave two competing needs: inclusion and differentiation. Supporting a team allows fans ⓓto satisfy both needs, and team colors and songs make their feeling of uniqueness ⓔstronger.",
-"choices": [
-"ⓐ",
-"ⓑ",
-"ⓒ",
-"ⓓ",
-"ⓔ"
-],
-"answer": "③",
-"solution": "주어 each individual은 단수이므로 동사도 단수형 has가 되어야 한다. 나머지는 각각 주어·동사 수 일치, 관계부사절, allow의 목적격 보어, 목적격 보어의 비교급 용법에 맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-7f24c99361",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 세 부분을 모두 어법에 맞게 고쳐 쓰시오. 답은 고친 표현을 글에 나온 순서대로 쉼표로 구분하여 쓸 것.\n\nThe researchers examined matches during a period ⓐwhich spectators could not enter the stadiums. Their analysis showed ⓑwhat the home team’s performance declined without the support of a crowd. The result suggests that fans should establish a healthy culture of fandom and ⓒseeking ways to influence society positively.",
-"selfGrade": true,
-"answer": "when, that, seek",
-"solution": "선행사 a period 뒤에는 그 기간을 나타내는 관계부사 when이 필요하다. showed 뒤의 절은 문장 성분이 완전하므로 접속사 that으로 이끌어야 한다. 또한 seek는 and 앞의 establish와 병렬을 이루어야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-0f527b2fd9",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 우리말과 일치하도록 괄호 안의 단어를 모두 사용하여 영작하시오. 필요하면 단어의 형태를 바꾸되, given으로 시작할 것.\n\n스포츠 팬덤이 현대에 점점 더 보편화되고 있다는 점을 고려할 때, 팬들은 사회에 긍정적인 영향을 미칠 수 있는 응원 방식을 찾아야 한다.\n\n(given, common, become, sports fandom, fans, seek, ways, support, can, have, a positive influence, society)",
-"selfGrade": true,
-"answer": "Given that sports fandom has become increasingly common, fans should seek ways of supporting their teams that can have a positive influence on society.",
-"solution": "given that은 ‘~을 고려할 때’라는 뜻으로 뒤에 완전한 절을 이끈다. 현재까지의 변화를 나타내므로 has become을 쓰고, ways 뒤에는 전치사 of와 동명사 supporting을 연결할 수 있다. 관계대명사 that이 ways를 수식하며 can have의 주어 역할을 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-7f60a2adac",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPlaying sports ⓐ[is / are] one of the most common hobbies. From an evolutionary perspective, tribes with a stronger sense of community ⓑ[was / were] likely to defeat other tribes. Sports team supporters ⓒ[is / are] one such group that satisfies our need for inclusion.",
-"choices": [
-"are - were - are",
-"is - were - are",
-"is - was - are",
-"is - were - is",
-"are - was - is"
-],
-"answer": "②",
-"solution": "ⓐ 동명사구 'Playing sports'가 주어이므로 단수 취급하여 is가 맞다. ⓑ 주어가 복수 명사 tribes이므로 were가 맞다. ⓒ 주어 supporters가 복수이므로 are가 맞다. 따라서 is-were-are이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-d99d2e5193",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIf you go to any sports stadium, you will be able to find fans ⓐ[cheering / cheered] wildly. If you are a fan of a football team ⓑ[basing / based] in your city, you can satisfy your need for inclusion. This dynamic has an impact on the team's performance, as ⓒ[confirming / confirmed] by a study in 2021.",
-"choices": [
-"cheered - based - confirmed",
-"cheering - basing - confirmed",
-"cheering - based - confirmed",
-"cheering - based - confirming",
-"cheered - basing - confirming"
-],
-"answer": "③",
-"solution": "ⓐ fans가 응원하는 주체(능동)이므로 현재분사 cheering이 맞다. ⓑ team은 도시에 '기반을 둔' 대상(수동)이므로 과거분사 based가 맞다. ⓒ 'as (it is) confirmed'의 수동 분사구문이므로 confirmed가 맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-fedab2c43d",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPeople could help each other when carrying hunted animals that were too heavy for one person ⓐ[to handle / handling]. The instinct ⓑ[to find / finding] one's own tribe has been passed down to modern people. When a team competes at home, their fans gather ⓒ[watch / to watch] the game.",
-"choices": [
-"handling - to find - to watch",
-"to handle - finding - to watch",
-"to handle - to find - watch",
-"to handle - to find - to watch",
-"handling - finding - watch"
-],
-"answer": "④",
-"solution": "ⓐ 'too+형용사+to부정사(too heavy ... to handle)' 구문이므로 to handle이 맞다. ⓑ 명사 instinct를 수식하는 to부정사 to find가 맞다. ⓒ '~하기 위해'라는 목적을 나타내는 to부정사 to watch가 맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-0ef7ed5268",
-"typeId": "eng-h3-b04-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중, 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nPlaying sports is one of the most common hobbies, but people also love to watch live sports games. If you go to any sports stadium, you will be able to find fans ⓐcheering wildly, crying with joy. What does it mean for an individual ⓑto be a sports fan? From an evolutionary perspective, sports fandom emerged from our ancestors, who were far more likely to survive as a member of a group. In fact, group membership was so important ⓒwhat tribes with a stronger sense of community were likely to defeat other tribes. Because of this, the instinct to find one's own group ⓓhas passed down to modern people. When a team competes in their home stadium, their fans gather ⓔto watch the game, and the cheers from the home team's fans are usually louder than ⓕthat from the visiting team's supporters. This dynamic has an impact on the team's performance, ⓖas confirmed by a study in 2021.",
-"choices": [
-"ⓐ, ⓒ, ⓓ",
-"ⓒ, ⓓ, ⓕ",
-"ⓑ, ⓓ, ⓖ",
-"ⓒ, ⓔ, ⓕ",
-"ⓐ, ⓓ, ⓖ"
-],
-"answer": "②",
-"solution": "ⓒ 'so+형용사+that' 구문으로 뒤에 완전한 절이 이어지므로 what이 아니라 that이 되어야 한다. ⓓ the instinct가 '전해 내려지는' 대상이므로 수동태 has been passed down이 되어야 한다. ⓕ 앞의 복수명사 the cheers를 대신하므로 that이 아니라 those가 되어야 한다. 나머지 ⓐ(fans를 수식하는 능동 현재분사), ⓑ(for+목적어+to부정사), ⓔ(목적의 to부정사), ⓖ(as confirmed 수동 분사구문)는 어법상 옳다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
-"custom": true
-},
-{
 "id": "fill-b0ca2dffa7",
 "typeId": "eng-h3-b04-u0m0s0t0",
 "kind": "객관식",
@@ -909,6 +731,194 @@
 "When spectators were not allowed in stadiums, home teams performed worse on average.",
 "The study proved that cheering is the decisive factor in determining a team’s victory.",
 "Home teams’ performance improved by eight percent when there were no spectators."
+]
+},
+{
+"id": "fill-83d3db1f29",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\n(A)[Watching / Watch] live sports is a common hobby. At a stadium, spectators can see fans (B)[cheering / cheered] enthusiastically for their team. Supporting the same team can make the fans (C)[feel / to feel] that they belong to a group.",
+"answer": "①",
+"solution": "동명사 Watching은 문장의 주어로 쓰이며, see의 목적어인 fans와 능동 관계인 cheering이 알맞다. 사역동사 make는 목적격 보어로 동사원형을 취하므로 feel을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Watching — cheering — feel",
+"Watching — cheered — to feel",
+"Watch — cheering — feel",
+"Watching — cheering — to feel",
+"Watch — cheered — to feel"
+]
+},
+{
+"id": "fill-33037a3699",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFans of a football team (A)[based / basing] in their city share a sense of belonging. They consider it important (B)[to support / supporting] their team even when it loses. Their songs are often different from (C)[that / those] of the opposing team's fans.",
+"answer": "①",
+"solution": "(A) a football team은 도시에 기반을 둔 대상이므로 과거분사 based가 알맞다. (B) consider it important to do는 가목적어 it과 진목적어 to부정사를 사용하는 구조이다. 따라서 to support가 알맞다. (C) 앞의 복수 명사 songs를 대신하므로 복수 대명사 those가 필요하다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"based — to support — those",
+"based — supporting — those",
+"basing — to support — those",
+"based — to support — that",
+"basing — supporting — that"
+]
+},
+{
+"id": "fill-6c11b82493",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nResearchers compared home matches with games played without crowds. They found (A)[that / what] the absence of cheering affected the home team’s performance. This finding helps us (B)[understand / understanding] the influence of fans and (C)[consider / considering] how to create a healthy fandom culture.",
+"answer": "①",
+"solution": "found 뒤에는 완전한 절을 이끄는 접속사 that이 필요하다. help의 목적격 보어로 동사원형 understand를 쓸 수 있고, and 뒤의 consider는 understand와 병렬을 이룬다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"that — understand — consider",
+"what — understand — considering",
+"that — understanding — consider",
+"what — understanding — considering",
+"that — understand — considering"
+]
+},
+{
+"id": "fill-c6b3226e04",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 어색한 것은?\n\nSports fandom can be explained from evolutionary and social psychological perspectives. In the past, belonging to a group ⓐwas important for survival because group members could cooperate with one another. This instinct may explain ⓑwhy modern people choose a team and remain loyal to it. In addition, optimal distinctiveness theory suggests that each individual ⓒhave two competing needs: inclusion and differentiation. Supporting a team allows fans ⓓto satisfy both needs, and team colors and songs make their feeling of uniqueness ⓔstronger.",
+"answer": "③",
+"solution": "주어 each individual은 단수이므로 동사도 단수형 has가 되어야 한다. 나머지는 각각 주어·동사 수 일치, 관계부사절, allow의 목적격 보어, 목적격 보어의 비교급 용법에 맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+]
+},
+{
+"id": "fill-7f24c99361",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓒ는 모두 어법상 틀린 표현이다. 각 표현을 <조건>에 맞게 바르게 고쳐 쓰시오.\n\nThe researchers examined matches during a period ⓐwhich spectators could not enter the stadiums. Their analysis showed ⓑwhat the home team's performance declined without the support of a crowd. The result suggests that fans should establish a healthy culture of fandom and ⓒseeking ways to influence society positively.\n\n<조건>\n① ⓐ는 관계부사 한 단어로 고칠 것.\n② ⓑ는 접속사 한 단어로 고칠 것.\n③ ⓒ는 동사의 형태만 바꿀 것.\n④ 고친 표현을 ⓐ, ⓑ, ⓒ 순서대로 쉼표로 구분하여 쓸 것.",
+"answer": "when, that, seek",
+"solution": "ⓐ 선행사 a period는 시간을 나타내며 관계절 spectators could not enter the stadiums는 완전한 문장이다. 따라서 시간을 나타내는 관계부사 when이 필요하다. ⓑ showed 뒤의 the home team's performance declined without the support of a crowd 역시 완전한 절이므로 명사절 접속사 that을 사용해야 한다. what은 명사절 내부에서 주어나 목적어 등의 역할을 하므로 적절하지 않다. ⓒ and로 연결된 establish와 seek는 조동사 should의 지배를 받는 병렬 동사이다. 따라서 seeking을 동사원형 seek로 고쳐야 한다. 정답은 when, that, seek이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-0f527b2fd9",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 같은 뜻이 되도록 <보기>의 단어 및 어구를 모두 사용하여 한 문장으로 영작하시오.\n\n스포츠 팬덤이 점점 더 보편화되고 있다는 점을 고려할 때, 팬들은 사회에 긍정적인 영향을 미칠 수 있는 방식으로 자신의 팀을 응원해야 한다.\n\n<보기>\ngiven / that / sports fandom / increasingly / common / become / fans / should / support / their teams / in ways / that / can / have / a positive influence / on society\n\n<조건>\n① Given으로 문장을 시작할 것.\n② <보기>의 단어 및 어구를 모두 한 번씩 사용하고, 필요한 경우 동사의 형태를 바꿀 것.\n③ 스포츠 팬덤의 변화는 현재완료 시제로 나타낼 것.\n④ 관계대명사 that을 사용하여 ways를 수식할 것.\n⑤ 제시된 단어 및 어구 외에 새로운 단어를 추가하지 말 것.",
+"answer": "Given that sports fandom has become increasingly common, fans should support their teams in ways that can have a positive influence on society.",
+"solution": "① '~을 고려할 때'는 Given that으로 표현하며, 그 뒤에는 완전한 절이 온다. ② sports fandom은 단수 취급하므로 현재완료 시제는 has become이다. ③ increasingly는 부사로 형용사 common을 수식한다. 따라서 Given that sports fandom has become increasingly common이 된다. ④ 주절은 fans should support their teams이다. ⑤ '사회에 긍정적인 영향을 미칠 수 있는 방식으로'는 in ways that can have a positive influence on society로 표현한다. 관계대명사 that은 선행사 ways를 수식하는 주격 관계대명사로, 관계절에서 can have의 주어 역할을 한다. ⑥ 모든 요소를 결합하면 Given that sports fandom has become increasingly common, fans should support their teams in ways that can have a positive influence on society.가 된다. 단, <보기>에는 현재완료의 조동사 has가 없으므로 제시어를 엄격하게 모두 사용하도록 한 조건과 충돌한다. 출제 시에는 <보기>의 become 앞에 has를 추가해야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-7f60a2adac",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPlaying sports (A)[is / are] one of the most common hobbies. From an evolutionary perspective, tribes with a stronger sense of community (B)[was / were] likely to defeat other tribes. Sports fans (C)[is / are] also members of groups that satisfy their need for inclusion.",
+"answer": "②",
+"solution": "(A) Playing sports는 동명사구로 문장의 주어 역할을 하며 단수 취급하므로 is가 알맞다. (B) 주어 tribes는 복수 명사이므로 were가 알맞다. (C) 주어 Sports fans는 복수이므로 are가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"are — were — are",
+"is — were — are",
+"is — was — are",
+"is — were — is",
+"are — was — is"
+]
+},
+{
+"id": "fill-d99d2e5193",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIf you go to any sports stadium, you will be able to find fans (A)[cheering / cheered] wildly. If you are a fan of a football team (B)[basing / based] in your city, you can satisfy your need for inclusion. This dynamic has an impact on the team's performance, as (C)[confirming / confirmed] by a study in 2021.",
+"answer": "③",
+"solution": "(A) fans는 직접 응원하는 주체이므로 능동의 의미를 나타내는 현재분사 cheering이 알맞다. (B) a football team은 도시에 기반을 둔 대상이므로 과거분사 based가 알맞다. (C) as confirmed by a study in 2021은 as it was confirmed by a study in 2021에서 주어와 be동사가 생략된 형태로 볼 수 있다. 연구에 의해 확인된다는 수동의 의미이므로 confirmed가 알맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"cheered — based — confirmed",
+"cheering — basing — confirmed",
+"cheering — based — confirmed",
+"cheering — based — confirming",
+"cheered — basing — confirming"
+]
+},
+{
+"id": "fill-fedab2c43d",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nPeople could help each other when carrying hunted animals that were too heavy for one person (A)[to handle / handling]. The instinct (B)[to find / finding] one's own tribe has been passed down to modern people. When a team competes at home, its fans gather (C)[watch / to watch] the game.",
+"answer": "④",
+"solution": "(A) too+형용사+to부정사는 '너무 ~해서 …할 수 없다'라는 의미를 나타낸다. 따라서 too heavy for one person to handle이 알맞다. (B) to find one's own tribe는 앞의 명사 instinct의 구체적인 내용을 설명하는 형용사적 용법의 to부정사이다. (C) 팬들이 모이는 목적이 경기를 보기 위한 것이므로 목적을 나타내는 부사적 용법의 to부정사 to watch가 알맞다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"handling — to find — to watch",
+"to handle — finding — to watch",
+"to handle — to find — watch",
+"to handle — to find — to watch",
+"handling — finding — watch"
+]
+},
+{
+"id": "fill-0ef7ed5268",
+"typeId": "eng-h3-b04-u0m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 ⓐ~ⓖ 중 어법상 틀린 것을 모두 고른 것은?\n\nPlaying sports is one of the most common hobbies, but people also love to watch live sports games. If you go to a sports stadium, you will be able to find fans ⓐcheering wildly and crying with joy. What does it mean for an individual ⓑto be a sports fan? From an evolutionary perspective, the human tendency to form groups may have developed because our ancestors were more likely to survive when they belonged to a group. In fact, group membership was so important ⓒwhat tribes with a stronger sense of community were more likely to survive than other tribes. Because of this, the instinct to find one's own group ⓓhas passed down through generations. When a team competes at its home stadium, fans gather ⓔto watch the game, and the cheers from the home team's fans are usually louder than ⓕthat from the visiting team's supporters. This dynamic can influence the home team's performance, ⓖas confirmed by a study conducted in 2021.",
+"answer": "②",
+"solution": "ⓐ cheering과 crying은 모두 fans의 동작을 나타내는 현재분사로 적절하다. ⓑ What does it mean for an individual to be a sports fan?에서 for an individual은 to부정사의 의미상 주어이므로 적절하다. ⓒ so important 뒤에는 결과를 나타내는 that절이 필요하다. 따라서 what을 that으로 고쳐야 한다. ⓓ the instinct는 세대를 거쳐 전해 내려온 대상이므로 현재완료 수동태 has been passed down이 필요하다. 따라서 has passed down을 has been passed down으로 고쳐야 한다. ⓔ to watch는 팬들이 모이는 목적을 나타내므로 적절하다. ⓕ 비교 대상은 앞의 복수 명사 the cheers이므로 단수 대명사 that이 아니라 복수 대명사 those가 필요하다. ⓖ as confirmed by a study conducted in 2021은 수동의 의미를 나타내는 축약된 표현으로 적절하다. 따라서 틀린 부분은 ⓒ, ⓓ, ⓕ이며 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b04-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓒ, ⓓ",
+"ⓒ, ⓓ, ⓕ",
+"ⓑ, ⓓ, ⓖ",
+"ⓒ, ⓔ, ⓕ",
+"ⓐ, ⓓ, ⓖ"
 ]
 }
 ]

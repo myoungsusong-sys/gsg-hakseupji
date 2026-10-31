@@ -1,22 +1,51 @@
 [
 {
+"id": "fill-933b95eeee",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nArtificial scarcity is a dark pattern used to (A)[stimulate / prevent] purchases. Companies may display messages such as 'Only two pieces available!' to make customers feel that they must decide quickly. Under this kind of pressure, people tend to make decisions more (B)[quickly / slowly].\n\n       (A)                 (B)",
+"answer": "④",
+"solution": "인위적인 희소성(artificial scarcity)은 수량·시간이 제한되어 있다는 인상을 주어 구매를 '촉진하는' 다크 패턴이므로 (A)에는 stimulate가 알맞다. 이러한 압박을 받으면 소비자는 결정을 더 '빠르게' 내리는 경향이 있으므로 (B)에는 quickly가 적절하다. 따라서 정답은 ④ stimulate – quickly이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-1e9d190716",
+"typeId": "eng-h3-b07-u1m0s0t0",
+"kind": "주관식",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nIn Chicago, traffic engineers painted lines across a road ahead of a dangerous curve. The gaps between the lines become smaller as drivers approach the curve. This gives drivers an illusion that they are (A)[speeding up / slowing down], so they step on the brakes. As a result, the number of crashes at the curve showed a significant (B)[reduction / increase].\n\n       (A)                 (B)",
+"answer": "②",
+"solution": "커브에 가까워질수록 선 사이 간격이 좁아지므로 운전자는 실제보다 속도가 '빨라지는(speeding up)' 듯한 착각을 하여 브레이크를 밟는다. 따라서 (A)에는 speeding up이 알맞다. 그 결과 사고 건수가 '감소(reduction)'하였으므로 (B)에는 reduction이 적절하다. 따라서 정답은 ② speeding up – reduction이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
 "id": "fill-48e8a1496a",
 "typeId": "eng-h3-b07-u1m0s0t0",
 "kind": "객관식",
 "diff": 2,
 "body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA smartphone may send its user a reminder to move after the user has remained ________ for a certain period.",
+"answer": "①",
+"solution": "스마트폰은 사용자가 일정 시간 동안 움직이지 않았을 때 활동을 권하는 알림을 보낸다. 따라서 ‘활동하지 않는’이라는 뜻의 inactive가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "inactive",
 "energetic",
 "careful",
 "visible",
 "uninterrupted"
-],
-"answer": "①",
-"solution": "스마트폰은 사용자가 일정 시간 동안 움직이지 않았을 때 활동을 권하는 알림을 보낸다. 따라서 ‘활동하지 않는’이라는 뜻의 inactive가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-2f02026fc6",
@@ -24,18 +53,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA nudge ________ leads people toward a desirable choice while allowing them to choose other options.",
+"answer": "②",
+"solution": "넛지는 다른 선택을 금지하지 않으면서 바람직한 행동으로 부드럽게 유도하는 개입이다. 따라서 gently가 문맥상 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "secretly",
 "gently",
 "violently",
 "accidentally",
 "completely"
-],
-"answer": "②",
-"solution": "넛지는 다른 선택을 금지하지 않으면서 바람직한 행동으로 부드럽게 유도하는 개입이다. 따라서 gently가 문맥상 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-34542f32dd",
@@ -43,18 +73,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nIn a hidden-information pattern, an unsubscribe link may be printed in tiny gray letters so that it is nearly ________.",
+"answer": "①",
+"solution": "작고 흐린 글씨로 표시된 구독 취소 링크는 사용자가 알아보기 어렵다. 따라서 ‘거의 보이지 않는’이라는 의미의 invisible이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "invisible",
 "expensive",
 "automatic",
 "harmful",
 "available"
-],
-"answer": "①",
-"solution": "작고 흐린 글씨로 표시된 구독 취소 링크는 사용자가 알아보기 어렵다. 따라서 ‘거의 보이지 않는’이라는 의미의 invisible이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-61de3c3ee9",
@@ -62,18 +93,19 @@
 "kind": "객관식",
 "diff": 3,
 "body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nArtificial scarcity presents products or offers as extremely (A)________. This pressure tends to (B)________ consumers to make quick purchasing decisions.",
+"answer": "①",
+"solution": "인위적 희소성은 상품의 수량이나 이용 가능 시간 등이 제한된 것처럼 제시하는 방식이다. 이러한 압박은 소비자의 빠른 구매를 촉진하므로 limited와 stimulate의 연결이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "limited – stimulate",
 "abundant – stimulate",
 "limited – prohibit",
 "ordinary – delay",
 "abundant – discourage"
-],
-"answer": "①",
-"solution": "인위적 희소성은 상품의 수량이나 이용 가능 시간 등이 제한된 것처럼 제시하는 방식이다. 이러한 압박은 소비자의 빠른 구매를 촉진하므로 limited와 stimulate의 연결이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-f1a033738f",
@@ -81,18 +113,19 @@
 "kind": "객관식",
 "diff": 4,
 "body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nCompanies claim that automatic payment after a free trial lets customers use a service (A)________. However, because customers are not (B)________ before being charged, they may receive an (C)________ bill.",
+"answer": "②",
+"solution": "회사는 자동 결제가 서비스를 중단 없이 이용하게 해 준다고 주장한다. 그러나 결제 전 경고가 없으므로 이용자는 예상하지 못한 청구를 받을 수 있다. 따라서 uninterruptedly, warned, unexpected가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "temporarily – interrupted – expected",
 "uninterruptedly – warned – unexpected",
 "automatically – protected – inexpensive",
 "uninterruptedly – charged – predictable",
 "temporarily – warned – unavoidable"
-],
-"answer": "②",
-"solution": "회사는 자동 결제가 서비스를 중단 없이 이용하게 해 준다고 주장한다. 그러나 결제 전 경고가 없으므로 이용자는 예상하지 못한 청구를 받을 수 있다. 따라서 uninterruptedly, warned, unexpected가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-35705f8a43",
@@ -100,18 +133,19 @@
 "kind": "객관식",
 "diff": 4,
 "body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nThe painted crosswalks appear to be (A)________ to approaching motorists. This visual effect makes drivers become more (B)________, thereby improving pedestrian (C)________.",
+"answer": "①",
+"solution": "3D 횡단보도의 선은 운전자에게 도로를 막는 장애물처럼 보인다. 이 효과로 운전자는 더 조심하게 되고 보행자의 안전은 높아진다. 따라서 roadblocks, cautious, safety가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "roadblocks – cautious – safety",
 "shortcuts – careless – safety",
 "roadblocks – impatient – risk",
 "signals – careless – convenience",
 "shortcuts – cautious – risk"
-],
-"answer": "①",
-"solution": "3D 횡단보도의 선은 운전자에게 도로를 막는 장애물처럼 보인다. 이 효과로 운전자는 더 조심하게 되고 보행자의 안전은 높아진다. 따라서 roadblocks, cautious, safety가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-a77aa58bd4",
@@ -119,18 +153,19 @@
 "kind": "객관식",
 "diff": 4,
 "body": "다음 문장의 빈칸 (A)~(C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nAs drivers approach the dangerous curve, the spaces between the painted lines gradually (A)________. This creates the impression that their cars are (B)________, so they apply the brakes. The design consequently led to a (C)________ in crashes.",
+"answer": "②",
+"solution": "곡선 구간에 가까워질수록 선 사이의 간격은 좁아진다. 운전자는 속도가 빨라지는 듯한 착각을 느껴 제동하고, 그 결과 사고가 감소한다. 따라서 narrow, speeding up, reduction이 올바른 연결이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "widen – slowing down – surge",
 "narrow – speeding up – reduction",
 "narrow – slowing down – reduction",
 "widen – speeding up – reduction",
 "narrow – speeding up – surge"
-],
-"answer": "②",
-"solution": "곡선 구간에 가까워질수록 선 사이의 간격은 좁아진다. 운전자는 속도가 빨라지는 듯한 착각을 느껴 제동하고, 그 결과 사고가 감소한다. 따라서 narrow, speeding up, reduction이 올바른 연결이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-9e8b5e0df2",
@@ -138,272 +173,33 @@
 "kind": "객관식",
 "diff": 5,
 "body": "다음 문장의 빈칸 (A)~(D)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nUnlike a ban, a nudge (A)________ the freedom to select other options. Visual nudges may cause drivers to (B)________ even when no real obstacle exists. By contrast, dark patterns can make important options (C)________ because a company's interests do not always (D)________ those of its customers.",
+"answer": "②",
+"solution": "넛지는 다른 선택의 자유를 보존하며, 시각적 넛지는 운전자의 감속을 유도할 수 있다. 다크 패턴에서는 중요한 선택 사항이 눈에 잘 띄지 않게 제시된다. 또한 회사의 이익은 고객의 이익과 항상 일치하지 않으므로 preserves, slow down, inconspicuous, coincide with가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "restricts – speed up – noticeable – differ from",
 "preserves – slow down – inconspicuous – coincide with",
 "eliminates – slow down – conspicuous – coincide with",
 "preserves – speed up – inconspicuous – differ from",
 "restricts – slow down – conspicuous – correspond with"
-],
-"answer": "②",
-"solution": "넛지는 다른 선택의 자유를 보존하며, 시각적 넛지는 운전자의 감속을 유도할 수 있다. 다크 패턴에서는 중요한 선택 사항이 눈에 잘 띄지 않게 제시된다. 또한 회사의 이익은 고객의 이익과 항상 일치하지 않으므로 preserves, slow down, inconspicuous, coincide with가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+]
 },
 {
-"id": "fill-a0b8a0ce33",
+"id": "fill-026bb967be",
 "typeId": "eng-h3-b07-u1m0s0t0",
 "kind": "주관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 (A)~(E)는 모두 문맥상 부적절하다. 각 단어를 문맥에 맞게 고쳐 순서대로 쓰시오.\n\nUnlike a ban, a nudge (A)removes people's alternative choices. Artificial scarcity tends to (B)delay purchasing decisions by putting consumers under pressure. On the road near a dangerous curve, the spaces between painted lines become (C)wider, creating an illusion that a vehicle is (D)slowing down. This encourages drivers to brake and ultimately produces a (E)surge in crashes.",
-"selfGrade": true,
-"answer": "preserves, accelerate, narrower, speeding up, reduction",
-"solution": "넛지는 대안적 선택을 보존하고, 인위적 희소성은 구매 결정을 빠르게 한다. 도로의 선 간격은 점점 좁아져 운전자가 속도가 빨라진다고 느끼게 한다. 그 결과 제동이 유도되어 사고가 감소하므로 제시된 순서대로 고쳐야 한다.",
+"diff": 1,
+"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nA nudge is an intervention that gently guides individuals toward a desired action, without (A)[forbidding / encouraging] any options. For example, a smartphone can send notifications to remind people to exercise when they have been (B)[active / inactive] for a set amount of time.\n\n       (A)                 (B)",
+"answer": "③",
+"solution": "넛지는 어떤 선택지도 금지(forbidding)하지 않으면서 부드럽게 유도하는 개입이므로 (A)에는 forbidding이 들어간다. 스마트폰은 일정 시간 동안 움직이지 않았을(inactive) 때 운동 알림을 보내므로 (B)에는 inactive가 알맞다. 따라서 정답은 ③ forbidding – inactive.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-3180cd6a57",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 밑줄 친 표현과 의미가 가장 가까운 것은?\n\nBeing ⓐgood at assembling model airplanes means having the ability to put their parts together skillfully.",
-"choices": [
-"afraid of",
-"skilled at",
-"unfamiliar with",
-"bored with",
-"curious about"
-],
-"answer": "②",
-"solution": "good at은 어떤 일을 잘하거나 그 일에 능숙하다는 뜻이다. 따라서 ‘~에 능숙한’을 뜻하는 skilled at이 가장 가깝다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-e878272286",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA failed experiment does not necessarily end the search for success. It can become a __________ toward a successful result.",
-"choices": [
-"distraction",
-"conflict",
-"burden",
-"stepping stone",
-"limit"
-],
-"answer": "④",
-"solution": "실패한 실험도 성공적인 결과를 향해 나아가는 데 도움이 될 수 있다는 내용이다. 따라서 발전이나 성공의 발판을 뜻하는 stepping stone이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-8442774d62",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 밑줄 친 낱말에 대한 영영풀이로 가장 적절한 것은?\n\nAddario understood the danger, but she showed ⓐcourage by continuing her work in areas affected by war.",
-"choices": [
-"the ability to face danger despite feeling afraid",
-"the wish to receive attention from other people",
-"the habit of avoiding unfamiliar experiences",
-"the feeling of being satisfied with an easy task",
-"the ability to remember past events clearly"
-],
-"answer": "①",
-"solution": "courage는 위험하거나 두려운 상황에 맞서는 용기를 뜻한다. 두려움을 느끼면서도 위험에 맞서는 능력이라는 ①의 풀이가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-d867145108",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nWhen people become deeply involved in an activity they love, they may hardly notice time passing. Their attention remains (A)[focused / divided], and unrelated things are less likely to (B)[distract / absorb] them.",
-"choices": [
-"focused — absorb",
-"divided — distract",
-"divided — absorb",
-"divided — discourage",
-"focused — distract"
-],
-"answer": "⑤",
-"solution": "좋아하는 활동에 깊이 몰두하면 시간이 흐르는 것도 잘 알아차리지 못한다는 내용이다. 따라서 주의는 ‘집중된’ 상태로 유지되고, 관련 없는 것들은 주의를 ‘흐트러뜨리기’ 어렵다는 흐름이 자연스럽다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-92a5806f5d",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 문장의 밑줄 친 부분을 바꾸어 쓸 수 없는 것은?\n\nFor someone with a talent for assembling model airplanes, ⓐearning a living from that interest would be appealing.",
-"choices": [
-"making a living through that interest",
-"supporting oneself financially through that interest",
-"developing that interest without receiving any income",
-"earning money to live on through that interest",
-"doing work related to that interest to support oneself"
-],
-"answer": "③",
-"solution": "earning a living은 생활에 필요한 돈을 번다는 뜻이다. ③은 수입을 전혀 얻지 않고 관심 분야를 발전시킨다는 의미이므로 생계를 유지한다는 의미를 담고 있지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-1c1d99b9aa",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 표시된 낱말에 대한 문맥상 영영풀이로 적절하지 않은 것은?\n\nAddario’s photographs ⓐcaptured the suffering of people affected by war. Her work received international ⓑrecognition and helped her career develop. Although she herself had been ⓒcaptured, she continued to ⓓdocument conflicts. She felt a responsibility to ⓔcover events that mattered to her generation.",
-"choices": [
-"ⓐ: to express or show something successfully in an image",
-"ⓑ: respect or approval received because of one's work",
-"ⓒ: to take a person prisoner",
-"ⓓ: to provide written instructions for preventing an event",
-"ⓔ: to report on an event as a journalist"
-],
-"answer": "④",
-"solution": "document는 이 문맥에서 분쟁의 상황을 기록한다는 뜻이다. 사건을 예방하기 위한 지침을 제공한다는 ④의 풀이는 적절하지 않다. captured는 목적어와 문맥에 따라 사진에 담는 것과 사람을 붙잡는 것을 각각 나타낸다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-3eb4fbe1ec",
-"typeId": "eng-h3-b07-u0m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nAddario’s experience suggests that courage does not depend on being free from danger. Having been taken prisoner, she knew that she was far from (A)[immune / vulnerable] to the risks of war. Yet her awareness of those risks did not mean that she was (B)[deterred / encouraged] from continuing her work. Her determination reflected the belief that recording the suffering of people caught in conflict was anything but (C)[insignificant / meaningful].",
-"choices": [
-"vulnerable — deterred — insignificant",
-"immune — encouraged — insignificant",
-"immune — deterred — meaningful",
-"immune — deterred — insignificant",
-"vulnerable — encouraged — meaningful"
-],
-"answer": "④",
-"solution": "far from은 ‘결코 ~이 아닌’이라는 뜻이므로, 위험에서 자유롭지 않았다는 의미가 되려면 (A)에 immune이 들어가야 한다. 위험을 알면서도 일을 계속했다는 흐름이므로 ‘계속하는 것을 단념하게 된 것은 아니었다’라는 의미의 deterred가 적절하다. anything but은 ‘결코 ~이 아닌’이라는 뜻이므로, 고통을 기록하는 일이 중요하다고 믿었다는 의미를 나타내려면 (C)에 insignificant가 들어가야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-e305091878",
-"typeId": "eng-h3-b07-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAt the age of fifteen, Lazylegz (A)[introduced / was introduced] to breakdancing. He developed his own style (B)[by using / by use] his crutches as extensions of his arms. Later, he formed ILL-Abilities to encourage people of all abilities (C)[to pursue / pursuing] their passions.",
-"choices": [
-"introduced ― by using ― to pursue",
-"was introduced ― by use ― pursuing",
-"was introduced ― by using ― to pursue",
-"introduced ― by use ― pursuing",
-"was introduced ― by using ― pursuing"
-],
-"answer": "③",
-"solution": "Lazylegz는 브레이크댄스를 소개받은 대상이므로 수동태 was introduced가 적절하다. 전치사 by 뒤에는 동명사 using이 오며, encourage는 목적격 보어로 to부정사를 취하므로 to pursue가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4cb9b4ef34",
-"typeId": "eng-h3-b07-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nAddario’s career changed greatly after she went to Afghanistan. Her photographs ①captured the courage and resilience of Afghan women. Her work has ②taken her to several regions ③torn by war. Although she ④was captured twice, she continued ⑤document the suffering caused by conflicts.",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "continue는 목적어로 to부정사나 동명사를 취하므로 continued to document 또는 continued documenting로 써야 한다. 나머지 밑줄은 능동태, 과거분사, 수동태의 쓰임이 모두 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-b500eab74f",
-"typeId": "eng-h3-b07-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 중 어법상 옳은 문장은?",
-"choices": [
-"Every graduate have the talent to succeed.",
-"Lazylegz became an advocate by bring people together.",
-"Addario photographed people caught in conflicts.",
-"The dancers were encouraged pursuing their passions.",
-"The past few years have been excited for Lazylegz."
-],
-"answer": "③",
-"solution": "③의 caught는 people이 분쟁에 휘말린 수동 관계이므로 적절한 과거분사이다. ①은 has, ②는 bringing, ④는 to pursue, ⑤는 exciting으로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-9510813559",
-"typeId": "eng-h3-b07-u0m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nThe speaker believes that nothing in life ①is valuable unless people take risks. When deciding ②what they want to do, students are often told ③to make sure that they have something safe to fall back on. However, the many failed experiments of Thomas Edison ④was part of his progress. The speaker therefore tells graduates that they should not fear that they will ⑤embarrass themselves.",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "주어의 핵심어는 복수 명사 experiments이므로 동사는 were가 되어야 한다. what은 deciding의 목적어 역할과 뒤 절의 목적어 역할을 동시에 하며, tell은 목적격 보어로 to부정사를 취한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-8e198a8e7c",
-"typeId": "eng-h3-b07-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 알맞은 것을 모두 고른 것은?\n\nAddario has repeatedly risked her life to photograph those ⓐcaught in conflicts. Her work gained international recognition, ⓑserved as a stepping stone for later achievements. It also took her to regions ⓒtearing apart by war. She is now at a point ⓓwhere many of her friends are not. She believes that there is a reason ⓔwhy she is still here and that she must keep ⓕpush forward.",
-"choices": [
-"ⓐ, ⓒ, ⓓ",
-"ⓐ, ⓓ, ⓔ",
-"ⓑ, ⓒ, ⓔ",
-"ⓐ, ⓑ, ⓓ, ⓔ",
-"ⓒ, ⓓ, ⓔ, ⓕ"
-],
-"answer": "②",
-"solution": "ⓐ는 those와 수동 관계인 caught, ⓓ는 선행사가 지점·단계의 의미인 point이므로 where, ⓔ는 reason을 수식하는 why가 적절하다. ⓑ는 serving, ⓒ는 torn, ⓕ는 pushing으로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-97c3f73953",
-"typeId": "eng-h3-b07-u0m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A)~(E)에서 어법상 알맞은 말을 골라 순서대로 쓰시오.\n\nWhen deciding (A)[that / what] path to follow, students are often advised (B)[keeping / to keep] something to fall back on. The speaker, however, says that a person who (C)[take / takes] no risks cannot gain anything valuable. Each failed attempt can (D)[regard / be regarded] as a step toward success. Therefore, graduates should accept failure even if it sometimes makes them (E)[embarrass / embarrass themselves].",
-"selfGrade": true,
-"answer": "what, to keep, takes, be regarded, embarrass themselves",
-"solution": "what은 deciding의 목적어이면서 뒤의 부정사에서 follow의 목적어 역할을 한다. advise는 목적격 보어로 to부정사를 취하고, 관계대명사 who의 선행사가 단수이므로 takes가 알맞다. 시도는 성공의 과정으로 여겨지는 대상이므로 be regarded를 쓰며, make 뒤에는 목적어와 원형부정사인 them embarrass themselves가 이어진다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"selfGrade": true
 },
 {
 "id": "fill-d88d175444",
@@ -411,18 +207,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 글의 표시된 부분 중 어법상 어색한 것은?\n\nSome companies use dark patterns ①to influence consumers. Important details may ②be hidden from users. A company may make its cancellation link ③difficult to find. Users therefore need to examine the information ④carefully. They should remember ⑤what a company's interests may differ from their own.",
+"answer": "⑤",
+"solution": "remember 뒤에는 주어와 동사를 갖춘 완전한 절이 이어지므로 접속사 that을 써야 한다. what은 절 안에서 주어나 목적어 등의 역할을 해야 하므로 이 문장에 사용할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "① to influence",
 "② be hidden",
 "③ difficult",
 "④ carefully",
 "⑤ what"
-],
-"answer": "⑤",
-"solution": "remember 뒤에는 주어와 동사를 갖춘 완전한 절이 이어지므로 접속사 that을 써야 한다. what은 절 안에서 주어나 목적어 등의 역할을 해야 하므로 이 문장에 사용할 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-44f292570d",
@@ -430,18 +227,19 @@
 "kind": "객관식",
 "diff": 2,
 "body": "다음 문장의 (A), (B)에 들어갈 말이 어법상 알맞게 짝지어진 것은?\n\nA message (A)[showing / shown] what most people do can influence a person's choice. Although people make the final decision themselves, they may (B)[have nudged / have been nudged] by the message.",
+"answer": "②",
+"solution": "message가 사람들이 하는 행동을 보여 주는 주체이므로 능동의 현재분사 showing을 쓴다. 사람들은 메시지에 의해 영향을 받는 대상이므로 완료 수동형 have been nudged가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "(A) showing — (B) have nudged",
 "(A) showing — (B) have been nudged",
 "(A) shown — (B) have nudged",
 "(A) shown — (B) have been nudged",
 "(A) show — (B) have been nudged"
-],
-"answer": "②",
-"solution": "message가 사람들이 하는 행동을 보여 주는 주체이므로 능동의 현재분사 showing을 쓴다. 사람들은 메시지에 의해 영향을 받는 대상이므로 완료 수동형 have been nudged가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-aa8e1d61a6",
@@ -449,240 +247,299 @@
 "kind": "객관식",
 "diff": 4,
 "body": "다음 글의 (A), (B), (C)에 들어갈 말이 어법상 알맞게 짝지어진 것은?\n\nRoad markings can change how drivers judge their speed. Near a dangerous curve, the spaces between successive lines become progressively smaller, (A)[creating / created] the impression that a vehicle is accelerating. This impression encourages drivers approaching the curve (B)[to brake / braking]. The idea (C)[that / which] changes in visual design can influence behavior also underlies the use of painted three-dimensional crosswalks.",
+"answer": "③",
+"solution": "앞 절의 상황이 가속하는 듯한 인상을 만들어 내므로 (A)에는 결과를 나타내는 현재분사 creating이 알맞다. encourage는 목적격 보어로 to부정사를 취하므로 (B)는 to brake이다. (C) 뒤는 완전한 절로 idea의 내용을 설명하므로 동격 접속사 that을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "(A) creating — (B) braking — (C) that",
 "(A) created — (B) to brake — (C) which",
 "(A) creating — (B) to brake — (C) that",
 "(A) created — (B) braking — (C) that",
 "(A) creating — (B) to brake — (C) which"
-],
-"answer": "③",
-"solution": "앞 절의 상황이 가속하는 듯한 인상을 만들어 내므로 (A)에는 결과를 나타내는 현재분사 creating이 알맞다. encourage는 목적격 보어로 to부정사를 취하므로 (B)는 to brake이다. (C) 뒤는 완전한 절로 idea의 내용을 설명하므로 동격 접속사 that을 쓴다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
-"custom": true
+]
 },
 {
-"id": "fill-ca167068d7",
-"typeId": "eng-h3-b07-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 ⓐ~ⓕ 중 어법상 틀린 부분을 모두 찾아 바르게 고쳐 쓰시오. 각 표시 부분 전체를 교체하되, 나머지 표현은 바꾸지 말고 글의 의미와 시제를 유지할 것. 정답은 '기호: 수정한 표현'의 형식으로 쓰시오.\n\nCompanies offering free trials argue that automatic renewal enables customers ⓐto continue using a service without interruption. Yet customers may receive no notice that their credit cards are about ⓑto charge, a practice often ⓒcaused them to face unexpected bills. Finding cancellation information can also be difficult: a company may make the link, even when it is included in a message, almost ⓓinvisibly. Small letters are difficult to read, as ⓔis gray text against a dark background. Consumers should therefore remain aware ⓕwhat the goals pursued by a company do not necessarily match their own.",
-"selfGrade": true,
-"answer": "ⓑ: to be charged; ⓒ: causing; ⓓ: invisible; ⓕ: that",
-"solution": "ⓑ는 신용 카드에 요금이 청구되는 수동 관계이므로 to be charged로 고친다. ⓒ는 a practice가 예상 밖의 청구를 겪게 하는 주체이므로 이를 능동으로 수식하는 causing이 알맞다. ⓓ는 make의 목적격 보어이므로 형용사 invisible이 필요하며, ⓕ 뒤에는 완전한 절이 이어지므로 that을 쓴다. ⓐ는 enable의 목적격 보어인 to부정사이고, ⓔ는 도치된 단수 주어 gray text에 일치하는 동사이므로 옳다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-71d949c537",
-"typeId": "eng-h3-b07-u1m3s0t0",
+"id": "fill-e305091878",
+"typeId": "eng-h3-b07-u0m1s0t0",
 "kind": "객관식",
 "diff": 2,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nA nudge is an intervention that gently guides individuals toward a desired action, without forbidding any options. For instance, if a school wants to reduce the amount of sugary drinks that students consume, making the drinks less visible than bottled water counts as a nudge. In contrast, banning sugary drinks completely is not a nudge, since it removes students' options entirely. Smartphones also use nudges: they send notifications telling users that it is time to move after the users have been inactive for a set amount of time.",
-"choices": [
-"① A nudge leads people toward a desired action without forbidding their options.",
-"② Making sugary drinks less visible than bottled water is given as an example of a nudge.",
-"③ Banning sugary drinks altogether is presented as an example of a nudge.",
-"④ Smartphones can nudge users by sending notifications telling them to move.",
-"⑤ The notifications are sent after a user has been inactive for a certain period of time."
-],
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nAt the age of fifteen, Lazylegz (A)[introduced / was introduced] to breakdancing. He developed his own style (B)[by using / by use] his crutches as extensions of his arms. Later, he formed ILL-Abilities to encourage people of all abilities (C)[to pursue / pursuing] their passions.",
 "answer": "③",
-"solution": "지문은 금지(완전히 못 마시게 하는 것)는 선택지를 없애므로 넛지가 '아니다'라고 분명히 말한다. 따라서 금지를 넛지의 예로 제시했다는 ③은 글의 내용과 반대다. 나머지 ①②④⑤는 모두 본문에 그대로 나온다.",
+"solution": "Lazylegz는 브레이크댄스를 소개받은 대상이므로 수동태 was introduced가 적절하다. 전치사 by 뒤에는 동명사 using이 오며, encourage는 목적격 보어로 to부정사를 취하므로 to pursue가 알맞다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"introduced ― by using ― to pursue",
+"was introduced ― by use ― pursuing",
+"was introduced ― by using ― to pursue",
+"introduced ― by use ― pursuing",
+"was introduced ― by using ― pursuing"
+]
 },
 {
-"id": "fill-5efafb22e2",
-"typeId": "eng-h3-b07-u1m3s0t0",
+"id": "fill-4cb9b4ef34",
+"typeId": "eng-h3-b07-u0m1s0t0",
 "kind": "객관식",
 "diff": 2,
-"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nB: I'm going to volunteer to make see-through soap for children in need.\nG: See-through soap? Why is it made see-through?\nB: There's a small toy inside, and you can see it through the soap. To get the toy out, children have to wash their hands with it again and again.\nG: That's clever. So it leads children to wash their hands regularly. It's a good example of a nudge.\nB: Right. According to a report, the soap not only helped reduce diseases but also helped children develop hand-washing habits.\nG: I hope more people start using it.\nB: Me too.",
-"choices": [
-"① The boy plans to volunteer to make see-through soap for children in need.",
-"② A toy is placed inside the soap so that it can be seen from the outside.",
-"③ Children have to wash their hands repeatedly in order to get the toy out.",
-"④ The girl regards the see-through soap as a good example of a nudge.",
-"⑤ According to a report, the soap reduced diseases but failed to form hand-washing habits."
-],
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nAddario’s career changed greatly after she went to Afghanistan. Her photographs ①captured the courage and resilience of Afghan women. Her work has ②taken her to several regions ③torn by war. Although she ④was captured twice, she continued ⑤document the suffering caused by conflicts.",
 "answer": "⑤",
-"solution": "남학생은 보고서를 인용하며 비누가 질병을 줄였을 뿐 아니라 손 씻는 습관을 기르는 데도 도움을 주었다고 말한다. 따라서 습관 형성에 실패했다는 ⑤는 대화 내용과 반대다. ①~④는 모두 대화에 그대로 드러난다.",
+"solution": "continue는 목적어로 to부정사나 동명사를 취하므로 continued to document 또는 continued documenting로 써야 한다. 나머지 밑줄은 능동태, 과거분사, 수동태의 쓰임이 모두 적절하다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+]
 },
 {
-"id": "fill-8f24dcc37d",
-"typeId": "eng-h3-b07-u1m3s0t0",
+"id": "fill-b500eab74f",
+"typeId": "eng-h3-b07-u0m1s0t0",
 "kind": "객관식",
 "diff": 2,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nDark patterns are design elements or processes that companies use to manipulate consumer behavior. They come in many forms; some are harmless, while others are misleading. One common example is forced continuity. When you sign up for a free trial of a streaming service, your credit card may be charged automatically as soon as the trial ends. Companies claim that this lets users keep using the service without interruption, but users often receive no warning and end up being billed unexpectedly.",
-"choices": [
-"① Dark patterns are used by companies to influence how consumers behave.",
-"② Not all dark patterns are misleading; some of them are harmless.",
-"③ In forced continuity, a user's card can be charged automatically when a free trial ends.",
-"④ Companies claim that forced continuity allows uninterrupted use of their service.",
-"⑤ Users are always clearly warned before their cards are charged after a free trial."
-],
-"answer": "⑤",
-"solution": "지문은 사용자들이 '경고를 받지 못한 채(no warning)' 예상치 못하게 청구된다고 했다. 따라서 항상 분명히 경고받는다는 ⑤는 글과 정반대다. ①~④는 모두 본문 내용과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-b7aca5f720",
-"typeId": "eng-h3-b07-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글을 읽고 답할 수 없는 질문은?\n\nChanges in visual designs can strongly affect how people behave on streets. In Ahmedabad, India, two artists painted a 3D crosswalk on several roads. To drivers, the painted lines looked like roadblocks, which made them slow down without braking too suddenly. The idea later spread to other countries. In a similar way, traffic engineers in Chicago painted a series of lines across the road before a dangerous curve on North Lake Shore Drive in 2006. As the road nears the curve, the gaps between the lines become smaller and smaller, giving drivers the illusion that they are speeding up. This prompts them to step on the brakes.",
-"choices": [
-"① Where did two artists paint a 3D crosswalk?",
-"② Why did the painted 3D crosswalk make drivers slow down?",
-"③ When did Chicago paint a series of lines before the dangerous curve on North Lake Shore Drive?",
-"④ What illusion do the gapped lines in Chicago give to drivers?",
-"⑤ By how much did crashes at the North Lake Shore Drive curve decrease after the lines were painted?"
-],
-"answer": "⑤",
-"solution": "①은 Ahmedabad, ②는 '도로 장애물처럼 보여서', ③은 2006년, ④는 '속도를 내고 있다는 착각'으로 모두 본문에서 답을 찾을 수 있다. 그러나 사고 감소 수치(퍼센트)는 지문에 제시되지 않았으므로 ⑤는 답할 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-da44b83d1f",
-"typeId": "eng-h3-b07-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nA default is an option that applies if the chooser does nothing. The chooser is still free to opt out of the default. Defaults are effective at nudging people toward more desirable behaviors, because people have a strong desire to stick with what they already have, since making a change requires a conscious effort. Setting greener choices as defaults can automatically nudge people into more sustainable behaviors. In 2008, Rutgers University made double-sided printing the default setting for all its printers in order to reduce paper waste. Thanks to this simple change, the university saved about 62 million sheets of paper in about three years.",
-"choices": [
-"① A default is an option that takes effect when the chooser does nothing.",
-"② Once a default is set, the chooser can no longer opt out of it.",
-"③ Defaults work partly because people tend to keep what they already have.",
-"④ Rutgers University set double-sided printing as the default to reduce paper waste.",
-"⑤ Rutgers saved about 62 million sheets of paper in about three years."
-],
-"answer": "②",
-"solution": "지문은 선택자가 기본값에서 '벗어날 자유가 있다(free to opt out)'고 분명히 말한다. 따라서 더 이상 벗어날 수 없다는 ②는 글과 반대다. ①③④⑤는 모두 본문에 그대로 제시되어 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-6e4d69e375",
-"typeId": "eng-h3-b07-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nNudging people into making good choices does not always go as planned. In a study of household energy conservation, researchers gave residents information about their neighbors' average energy use. As expected, households that had consumed more energy than the average reduced their use afterward. However, households with low energy consumption increased their use after learning that they had used less energy than their neighbors. Later, the researchers added a smiley face to the information sent to those who used less energy than the average, and this neutralized the opposite effect.",
-"choices": [
-"① Residents were given information about how much energy their neighbors used on average.",
-"② Households that had used more energy than the average reduced their consumption afterward.",
-"③ Households that had used less energy than the average reduced their use even further after getting the information.",
-"④ Adding a smiley face helped remove the unwanted increase in energy use.",
-"⑤ Nudging does not always produce the results that were intended."
-],
+"body": "다음 중 어법상 옳은 문장은?",
 "answer": "③",
-"solution": "에너지를 평균보다 적게 쓰던 가구는 정보를 받은 뒤 사용량을 '늘렸다(increased).' 따라서 더 줄였다는 ③은 글과 반대다. 나머지 선택지는 모두 연구 결과와 일치한다.",
+"solution": "③의 caught는 people이 분쟁에 휘말린 수동 관계이므로 적절한 과거분사이다. ①은 has, ②는 bringing, ④는 to pursue, ⑤는 exciting으로 고쳐야 한다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Every graduate have the talent to succeed.",
+"Lazylegz became an advocate by bring people together.",
+"Addario photographed people caught in conflicts.",
+"The dancers were encouraged pursuing their passions.",
+"The past few years have been excited for Lazylegz."
+]
 },
 {
-"id": "fill-026bb967be",
-"typeId": "eng-h3-b07-u1m0s0t0",
+"id": "fill-9510813559",
+"typeId": "eng-h3-b07-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nA nudge is an intervention that gently guides individuals toward a desired action, without (A)[forbidding / encouraging] any options. For example, a smartphone can send notifications to remind people to exercise when they have been (B)[active / inactive] for a set amount of time.\n\n       (A)                 (B)",
-"choices": [
-"forbidding – active",
-"encouraging – inactive",
-"forbidding – inactive",
-"encouraging – active",
-"forbidding – encouraging"
-],
-"answer": "③",
-"solution": "넛지(nudge)는 선택지를 금지하지 않으면서 사람들이 바람직한 행동을 하도록 부드럽게 유도하는 개입이다. 따라서 (A)에는 '금지하는'이라는 뜻의 forbidding이 알맞다. 스마트폰은 일정 시간 동안 활동하지 않았을 때 운동을 알리는 알림을 보내므로 (B)에는 '활동하지 않는'이라는 뜻의 inactive가 적절하다. 정답은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-933b95eeee",
-"typeId": "eng-h3-b07-u1m0s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nArtificial scarcity is a dark pattern used to (A)[stimulate / prevent] purchases. Companies may display messages such as 'Only two pieces available!' to make customers feel that they must decide quickly. Under this kind of pressure, people tend to make decisions more (B)[quickly / slowly].\n\n       (A)                 (B)",
-"choices": [
-"prevent – quickly",
-"stimulate – slowly",
-"prevent – slowly",
-"stimulate – quickly",
-"slowly – stimulate"
-],
+"diff": 3,
+"body": "다음 글의 밑줄 친 부분 중 어법상 옳지 않은 것은?\n\nThe speaker believes that nothing in life ①is valuable unless people take risks. When deciding ②what they want to do, students are often told ③to make sure that they have something safe to fall back on. However, the many failed experiments of Thomas Edison ④was part of his progress. The speaker therefore tells graduates that they should not fear that they will ⑤embarrass themselves.",
 "answer": "④",
-"solution": "인위적인 희소성(artificial scarcity)은 상품의 수량이나 구매 가능 시간이 제한되어 있다는 인상을 주어 구매를 촉진하는 다크 패턴이다. 따라서 (A)에는 '촉진하다'라는 뜻의 stimulate가 알맞다. 이러한 압박을 받으면 소비자는 결정을 더 빠르게 내리는 경향이 있으므로 (B)에는 quickly가 적절하다. 정답은 ④이다.",
+"solution": "주어의 핵심어는 복수 명사 experiments이므로 동사는 were가 되어야 한다. what은 deciding의 목적어 역할과 뒤 절의 목적어 역할을 동시에 하며, tell은 목적격 보어로 to부정사를 취한다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"①",
+"②",
+"③",
+"④",
+"⑤"
+]
 },
 {
-"id": "fill-1e9d190716",
-"typeId": "eng-h3-b07-u1m0s0t0",
+"id": "fill-8e198a8e7c",
+"typeId": "eng-h3-b07-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B)에 들어갈 말로 가장 적절하게 연결된 것은?\n\nIn Chicago, traffic engineers painted lines across a road ahead of a dangerous curve. The gaps between the lines become smaller as drivers approach the curve. This gives drivers an illusion that they are (A)[speeding up / slowing down], so they step on the brakes. As a result, the number of crashes at the curve showed a significant (B)[reduction / increase].\n\n       (A)                 (B)",
-"choices": [
-"slowing down – reduction",
-"speeding up – reduction",
-"speeding up – increase",
-"slowing down – increase",
-"reduction – speeding up"
-],
+"diff": 5,
+"body": "다음 글의 밑줄 친 ⓐ~ⓕ 중 어법상 알맞은 것을 모두 고른 것은?\n\nAddario has repeatedly risked her life to photograph those ⓐcaught in conflicts. Her work gained international recognition, ⓑserved as a stepping stone for later achievements. It also took her to regions ⓒtearing apart by war. She is now at a point ⓓwhere many of her friends are not. She believes that there is a reason ⓔwhy she is still here and that she must keep ⓕpush forward.",
 "answer": "②",
-"solution": "시카고의 도로에서는 커브에 가까워질수록 노면에 그려진 선 사이의 간격이 좁아지도록 설계하였다. 이로 인해 운전자는 실제보다 속도가 빨라지는 듯한 착각을 하므로 (A)에는 speeding up이 알맞다. 운전자가 브레이크를 밟게 되어 사고가 감소하였으므로 (B)에는 '감소'라는 뜻의 reduction이 적절하다. 정답은 ②이다.",
+"solution": "ⓐ는 those와 수동 관계인 caught, ⓓ는 선행사가 지점·단계의 의미인 point이므로 where, ⓔ는 reason을 수식하는 why가 적절하다. ⓑ는 serving, ⓒ는 torn, ⓕ는 pushing으로 고쳐야 한다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u1m0s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b07-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓒ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓒ, ⓔ",
+"ⓐ, ⓑ, ⓓ, ⓔ",
+"ⓒ, ⓓ, ⓔ, ⓕ"
+]
+},
+{
+"id": "fill-3180cd6a57",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 표현과 의미가 가장 가까운 것은?\n\nBeing ⓐgood at assembling model airplanes means having the ability to put their parts together skillfully.",
+"answer": "②",
+"solution": "good at은 어떤 일을 잘하거나 그 일에 능숙하다는 뜻이다. 따라서 ‘~에 능숙한’을 뜻하는 skilled at이 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"afraid of",
+"skilled at",
+"unfamiliar with",
+"bored with",
+"curious about"
+]
+},
+{
+"id": "fill-e878272286",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA failed experiment does not necessarily end the search for success. It can become a __________ toward a successful result.",
+"answer": "④",
+"solution": "실패한 실험도 성공적인 결과를 향해 나아가는 데 도움이 될 수 있다는 내용이다. 따라서 발전이나 성공의 발판을 뜻하는 stepping stone이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"distraction",
+"conflict",
+"burden",
+"stepping stone",
+"limit"
+]
+},
+{
+"id": "fill-8442774d62",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 밑줄 친 낱말에 대한 영영풀이로 가장 적절한 것은?\n\nAddario understood the danger, but she showed ⓐcourage by continuing her work in areas affected by war.",
+"answer": "①",
+"solution": "courage는 위험하거나 두려운 상황에 맞서는 용기를 뜻한다. 두려움을 느끼면서도 위험에 맞서는 능력이라는 ①의 풀이가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"the ability to face danger despite feeling afraid",
+"the wish to receive attention from other people",
+"the habit of avoiding unfamiliar experiences",
+"the feeling of being satisfied with an easy task",
+"the ability to remember past events clearly"
+]
+},
+{
+"id": "fill-d867145108",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nWhen people become deeply involved in an activity they love, they may hardly notice time passing. Their attention remains (A)__________, and unrelated things are less likely to (B)__________ them.",
+"answer": "⑤",
+"solution": "좋아하는 활동에 깊이 몰두하면 시간의 흐름을 거의 인식하지 못한다는 내용이다. 따라서 (A)에는 주의가 한곳에 집중된 상태임을 나타내는 focused가 적절하다. divided는 '나뉜', dispersed는 '흩어진'이라는 뜻이므로 문맥에 맞지 않는다. 또한 관련 없는 것들이 주의를 흐트러뜨리기 어려워진다는 의미이므로 (B)에는 distract가 적절하다. absorb는 '흡수하다, 몰두하게 하다'라는 뜻으로, 여기서는 unrelated things가 집중을 방해하는 대상이라는 문맥과 맞지 않는다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"focused — absorb",
+"divided — distract",
+"dispersed — absorb",
+"divided — absorb",
+"focused — distract"
+]
+},
+{
+"id": "fill-92a5806f5d",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 밑줄 친 부분과 의미가 다른 것은?\n\nFor someone with a talent for assembling model airplanes, ⓐearning a living from that interest would be appealing.",
+"answer": "③",
+"solution": "earning a living은 '생계를 유지할 만큼 돈을 벌다'라는 뜻이다. ①은 그 관심 분야를 추구하여 생계를 유지한다는 의미이고, ②는 해당 분야에서 일하여 스스로 생계를 책임진다는 의미이다. ④는 그 관심 분야를 통해 생활에 필요한 돈을 번다는 의미이며, ⑤도 관련 일을 통해 생계를 유지한다는 의미이므로 모두 밑줄 친 표현과 의미가 통한다. 반면 ③은 '수입에 관계없이 그 관심 분야를 추구하는 것'으로, 생계 유지에 필요한 수입을 얻는다는 의미가 포함되어 있지 않다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"making a living by pursuing that interest",
+"supporting oneself by working in that field",
+"pursuing that interest regardless of income",
+"earning enough to live on through that interest",
+"providing for oneself through related work"
+]
+},
+{
+"id": "fill-1c1d99b9aa",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 표시된 낱말에 대한 문맥상 영영풀이로 적절하지 않은 것은?\n\nAddario’s photographs ⓐcaptured the suffering of people affected by war. Her work received international ⓑrecognition and helped her career develop. Although she herself had been ⓒcaptured, she continued to ⓓdocument conflicts. She felt a responsibility to ⓔcover events that mattered to her generation.",
+"answer": "④",
+"solution": "① ⓐcaptured는 사진이 전쟁으로 고통받는 사람들의 모습을 효과적으로 담아냈다는 뜻이므로 적절하다. ② ⓑrecognition은 업적이나 활동에 대한 인정 또는 인정을 받는 상태를 뜻하므로 적절하다. ③ ⓒcaptured는 사람이 붙잡혀 포로가 되었다는 의미이므로 적절하다. ④ ⓓdocument는 이 문맥에서 분쟁 상황을 기록하거나 증거로 남긴다는 뜻이다. 분쟁이 해결되었다는 공식적인 증거를 제공한다는 의미가 아니므로 적절하지 않다. ⑤ ⓔcover는 언론인으로서 사건이나 상황을 취재하고 보도한다는 의미이므로 적절하다. 특히 capture는 ⓐ에서 '사진에 담다', ⓒ에서 '붙잡다'라는 서로 다른 의미로 쓰였다는 점에 유의해야 한다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ: to represent something effectively in a photograph",
+"ⓑ: to receive respect or approval for one's achievements",
+"ⓒ: to take someone prisoner or hold them against their will",
+"ⓓ: to provide official proof that a conflict has been resolved",
+"ⓔ: to report on events or situations as a journalist"
+]
+},
+{
+"id": "fill-3eb4fbe1ec",
+"typeId": "eng-h3-b07-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nAddario’s experience suggests that courage does not depend on being free from danger. Having been taken prisoner, she knew that she was far from (A)__________ to the risks of war. Yet her awareness of those risks did not mean that she was (B)__________ from continuing her work. Her determination reflected the belief that recording the suffering of people caught in conflict was anything but (C)__________.",
+"answer": "④",
+"solution": "첫째, far from은 '결코 ~이 아닌'이라는 뜻이다. Addario는 포로로 붙잡힌 경험이 있으므로 전쟁의 위험에서 결코 안전하지 않다는 의미가 되어야 한다. 따라서 (A)에는 '영향을 받지 않는, 면역이 있는'이라는 뜻의 immune이 적절하다. vulnerable을 넣으면 '결코 위험에 취약하지 않았다'라는 의미가 되어 문맥과 어긋난다.\n\n둘째, 위험을 잘 알고 있었지만 일을 계속했다는 내용이므로 위험에 대한 인식이 그녀의 활동을 단념하게 만들지는 않았다는 의미가 필요하다. 따라서 (B)에는 '단념하게 된, 저지된'이라는 의미의 deterred가 적절하다. be deterred from -ing는 '~하는 것을 단념하다'라는 의미로 쓰인다. did not과 결합하면 '단념하지 않았다'라는 뜻이 된다.\n\n셋째, anything but은 '결코 ~이 아닌'이라는 뜻이다. Addario는 전쟁 속에서 고통받는 사람들의 모습을 기록하는 일이 중요하다고 믿었으므로 (C)에는 '중요하지 않은'이라는 뜻의 insignificant가 적절하다. anything but insignificant는 '결코 중요하지 않은 일이 아닌', 즉 '매우 의미 있고 중요한'이라는 뜻이다. meaningful을 넣으면 정반대 의미가 된다.\n\n따라서 (A) immune, (B) deterred, (C) insignificant가 적절하므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"vulnerable — deterred — insignificant",
+"immune — encouraged — insignificant",
+"immune — deterred — meaningful",
+"immune — deterred — insignificant",
+"vulnerable — encouraged — meaningful"
+]
 },
 {
 "id": "fill-57589b9ab8",
 "typeId": "eng-h3-b07-u0m0s0t0",
 "kind": "객관식",
 "diff": 1,
-"body": "밑줄 친 inevitable의 의미로 가장 적절한 것은?\n\nYou will fail at some point in your lives. Embrace it because it's inevitable.",
+"body": "다음 문장의 밑줄 친 낱말의 의미로 가장 적절한 것은?\n\nYou will fail at some point in your lives. Embrace it because it's ⓐinevitable.",
+"answer": "①",
+"solution": "inevitable은 '피할 수 없는, 반드시 일어나는'이라는 뜻이다. 앞 문장에서 누구나 인생의 어느 시점에 실패하게 될 것이라고 말하고 있으므로, 실패가 피할 수 없는 일임을 나타내는 표현이 적절하다. ① impossible to avoid는 '피할 수 없는'이라는 뜻으로 inevitable과 의미가 같다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "impossible to avoid",
 "easy to escape",
 "not important at all",
 "very pleasant",
 "only temporary"
-],
-"answer": "①",
-"solution": "inevitable은 '피할 수 없는, 반드시 일어나는'이라는 뜻이다. 글은 누구나 언젠가 실패하게 마련이니 그것을 받아들이라고 말하고 있다. 따라서 '피할 수 없는'에 해당하는 ①이 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-1f143dd39a",
 "typeId": "eng-h3-b07-u0m0s0t0",
 "kind": "객관식",
 "diff": 1,
-"body": "밑줄 친 engaged와 바꾸어 쓸 수 있는 말로 가장 적절한 것은?\n\nWhenever Mia works on model airplanes, she is totally engaged in assembling them and never gets distracted.",
-"choices": [
-"absorbed",
-"distracted",
-"bored",
-"confused",
-"exhausted"
-],
+"body": "다음 문장의 밑줄 친 표현과 의미가 가장 가까운 것은?\n\nWhenever Mia works on model airplanes, she is totally ⓐengaged in assembling them and never gets distracted.",
 "answer": "①",
-"solution": "engaged in은 '~에 몰두한, 열중한'이라는 뜻이다. 뒤에 '결코 산만해지지 않는다(never gets distracted)'는 내용이 이어지므로 몰입을 뜻하는 absorbed가 가장 적절하다. 따라서 정답은 ①이다.",
+"solution": "be engaged in은 '~에 몰두하다, 열중하다'라는 뜻이다. 뒤에 이어지는 never gets distracted는 '결코 주의가 흐트러지지 않는다'라는 의미이므로, Mia가 모형 비행기를 조립하는 일에 완전히 몰두해 있음을 알 수 있다. ① absorbed in은 '~에 몰두한'이라는 뜻으로 engaged in과 의미가 가장 가깝다. ②는 '~에 의해 주의가 산만해진', ③은 '~에 싫증이 난', ④는 '~에 대해 혼란스러운', ⑤는 '~로 인해 지친'이라는 뜻이다. 따라서 정답은 ①이다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"absorbed in",
+"distracted by",
+"bored with",
+"confused about",
+"exhausted by"
+]
 },
 {
 "id": "fill-1ef87a887a",
@@ -690,17 +547,138 @@
 "kind": "객관식",
 "diff": 1,
 "body": "빈칸에 들어갈 말로 가장 적절한 것은?\n\nTime and again, Addario has risked her life to _______ powerful images of people suffering in war zones.",
+"answer": "①",
+"solution": "Addario는 전쟁터에서 고통받는 사람들의 모습을 사진으로 '담아내기' 위해 목숨을 걸었다. capture an image는 '(사진 등으로) 장면을 포착하다'라는 뜻이므로 문맥상 capture가 알맞다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "capture",
 "avoid",
 "forget",
 "hide",
 "sell"
-],
-"answer": "①",
-"solution": "Addario는 전쟁터에서 고통받는 사람들의 모습을 사진으로 '담아내기' 위해 목숨을 걸었다. capture an image는 '(사진 등으로) 장면을 포착하다'라는 뜻이므로 문맥상 capture가 알맞다. 따라서 정답은 ①이다.",
+]
+},
+{
+"id": "fill-71d949c537",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nA nudge is an intervention that gently guides individuals toward a desired action, without forbidding any options. For instance, if a school wants to reduce the amount of sugary drinks that students consume, making the drinks less visible than bottled water counts as a nudge. In contrast, banning sugary drinks completely is not a nudge, since it removes students' options entirely. Smartphones also use nudges: they send notifications telling users that it is time to move after the users have been inactive for a set amount of time.",
+"answer": "③",
+"solution": "정답은 ③이다. 지문은 넛지를 선택지를 금지하지 않으면서 바람직한 행동으로 부드럽게 유도하는 개입이라고 정의한다. 설탕이 든 음료를 완전히 금지하는 것은 선택권 자체를 없애므로 넛지가 아니라고 명시한다. 따라서 완전한 금지를 넛지의 한 형태라고 설명한 ③이 일치하지 않는다. ①과 ⑤는 넛지의 핵심 원리인 선택권 유지에 부합한다. ②는 설탕이 든 음료보다 생수를 눈에 잘 띄게 배치하는 사례와 일치하며, ④는 일정 시간 움직이지 않은 사용자에게 활동을 권하는 스마트폰 알림 사례와 일치한다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b07-u0m0s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"A nudge can influence people's decisions while preserving their freedom of choice.",
+"Placing bottled water where it is more noticeable than sugary drinks can serve as a nudge.",
+"Completely prohibiting sugary drinks is a form of nudge because it encourages healthier choices.",
+"Smartphone notifications can encourage users to become physically active after a period of inactivity.",
+"A nudge can guide behavior by changing how choices are presented rather than removing them."
+]
+},
+{
+"id": "fill-5efafb22e2",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 내용과 일치하지 않는 것은?\n\nB: I'm going to volunteer to make see-through soap for children in need.\nG: See-through soap? Why is it made see-through?\nB: There's a small toy inside, and you can see it through the soap. To get the toy out, children have to wash their hands with it again and again.\nG: That's clever. So it leads children to wash their hands regularly. It's a good example of a nudge.\nB: Right. According to a report, the soap not only helped reduce diseases but also helped children develop hand-washing habits.\nG: I hope more people start using it.\nB: Me too.",
+"answer": "④",
+"solution": "정답은 ④이다. 여학생은 투명 비누가 아이들의 자발적인 손 씻기를 유도하므로 넛지의 좋은 사례라고 평가한다. 그러나 엄격한 규칙(strict rule)을 이용한다는 설명은 대화에 없으며, 장난감을 얻고 싶은 마음을 활용하는 유도 방식과도 다르다. ①은 남학생의 봉사 계획, ②는 비누 속 장난감의 가시성, ③은 장난감을 꺼내기 위한 반복적인 손 씻기와 일치한다. ⑤ 역시 질병 감소와 손 씻기 습관 형성에 모두 도움이 되었다는 보고 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The boy intends to participate in volunteer work involving soap production.",
+"The soap allows children to see a toy that is enclosed within it.",
+"The toy encourages children to use the soap repeatedly to reach it.",
+"The girl believes the soap encourages handwashing by using a strict rule.",
+"The report suggests that the soap contributed to both disease prevention and habit formation."
+]
+},
+{
+"id": "fill-8f24dcc37d",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nDark patterns are design elements or processes that companies use to manipulate consumer behavior. They come in many forms; some are harmless, while others are misleading. One common example is forced continuity. When you sign up for a free trial of a streaming service, your credit card may be charged automatically as soon as the trial ends. Companies claim that this lets users keep using the service without interruption, but users often receive no warning and end up being billed unexpectedly.",
+"answer": "⑤",
+"solution": "정답은 ⑤이다. 지문에 따르면 강제 연속 결제(forced continuity)에서는 무료 체험이 끝난 뒤 카드가 자동으로 청구될 수 있으며, 사용자들은 사전 경고를 받지 못해 예상치 못한 비용을 부담하는 경우가 많다. 따라서 사전 안내로 인해 자동 결제를 일반적으로 예상한다는 ⑤는 내용과 일치하지 않는다. ①은 다크 패턴의 정의, ②는 다크 패턴의 다양한 성격, ③은 무료 체험 종료 후 자동 결제의 가능성, ④는 서비스 이용의 연속성을 강조하는 기업의 주장에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Dark patterns refer to design practices that companies use to affect consumer behavior.",
+"Dark patterns vary in nature, and some are described as harmless rather than misleading.",
+"Forced continuity may result in automatic payment when a free trial period expires.",
+"Companies justify forced continuity by emphasizing uninterrupted access to their services.",
+"In forced continuity, automatic billing is presented as a process that users generally anticipate because they receive advance notice."
+]
+},
+{
+"id": "fill-b7aca5f720",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nChanges in visual designs can strongly affect how people behave on streets. In Ahmedabad, India, two artists painted a 3D crosswalk on several roads. To drivers, the painted lines looked like roadblocks, which made them slow down without braking too suddenly. The idea later spread to other countries. In a similar way, traffic engineers in Chicago painted a series of lines across the road before a dangerous curve on North Lake Shore Drive in 2006. As the road nears the curve, the gaps between the lines become smaller and smaller, giving drivers the illusion that they are speeding up. This prompts them to step on the brakes.",
+"answer": "⑤",
+"solution": "정답은 ⑤이다. ①은 아메다바드의 횡단보도가 운전자에게 도로 장애물처럼 보였다는 설명으로 답할 수 있다. ②는 운전자들이 너무 급하게 제동하지 않으면서 속도를 줄였다는 내용으로 답할 수 있다. ③은 선 사이의 간격을 점차 좁혀 운전자에게 속도가 빨라지는 듯한 착각을 주기 위해서라고 답할 수 있다. ④는 아메다바드에서는 3차원 횡단보도를 그렸고 시카고에서는 간격이 점차 좁아지는 일련의 선을 그렸다는 차이로 답할 수 있다. 반면 ⑤에서 요구하는 두 도로 디자인의 교통사고 감소 효과에 대한 비교 자료는 지문에 제시되지 않았다. 따라서 어느 디자인이 사고를 더 많이 감소시켰는지는 알 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"What visual impression did the painted crosswalk create for drivers in Ahmedabad?",
+"How did the painted crosswalk influence drivers' braking behavior in Ahmedabad?",
+"Why did the engineers in Chicago gradually reduce the gaps between the painted lines?",
+"How did the Chicago road markings differ from the Ahmedabad crosswalk in their visual design?",
+"Which of the two road designs resulted in a greater reduction in traffic accidents?"
+]
+},
+{
+"id": "fill-da44b83d1f",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nA default is an option that applies if the chooser does nothing. The chooser is still free to opt out of the default. Defaults are effective at nudging people toward more desirable behaviors, because people have a strong desire to stick with what they already have, since making a change requires a conscious effort. Setting greener choices as defaults can automatically nudge people into more sustainable behaviors. In 2008, Rutgers University made double-sided printing the default setting for all its printers in order to reduce paper waste. Thanks to this simple change, the university saved about 62 million sheets of paper in about three years.",
+"answer": "②",
+"solution": "정답은 ②이다. 기본값(default)은 사용자가 별도의 행동을 하지 않을 때 적용되는 선택 사항이지만, 사용자는 언제든지 기본값을 벗어나 다른 선택을 할 수 있다. 따라서 다른 선택을 막는 것이 기본값의 주된 작동 원리라는 ②는 지문과 일치하지 않는다. ①은 기본값의 정의와 일치한다. ③은 사람들이 기존 상태를 유지하려는 성향 때문에 기본값이 효과적이라는 설명에 해당한다. ④는 종이 낭비를 줄이기 위한 양면 인쇄 기본 설정을 의미한다. ⑤는 약 3년 동안 약 6,200만 장의 종이를 절약했다는 사례와 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"A default takes effect without requiring the chooser to make an active selection.",
+"Defaults influence behavior mainly by preventing users from selecting alternatives.",
+"People's tendency to avoid making changes can contribute to the effectiveness of defaults.",
+"Rutgers University adopted a printing setting designed to discourage unnecessary paper use.",
+"The university's change in printing settings led to substantial paper savings over approximately three years."
+]
+},
+{
+"id": "fill-6e4d69e375",
+"typeId": "eng-h3-b07-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nNudging people into making good choices does not always go as planned. In a study of household energy conservation, researchers gave residents information about their neighbors' average energy use. As expected, households that had consumed more energy than the average reduced their use afterward. However, households with low energy consumption increased their use after learning that they had used less energy than their neighbors. Later, the researchers added a smiley face to the information sent to those who used less energy than the average, and this neutralized the opposite effect.",
+"answer": "③",
+"solution": "정답은 ③이다. 연구자들은 각 가구에 이웃의 평균 에너지 사용량을 알려 주었다. 평균보다 많이 사용하던 가구는 사용량을 줄였지만, 평균보다 적게 사용하던 가구는 자신이 이웃보다 적게 소비한다는 사실을 알게 된 후 오히려 사용량을 늘렸다. 따라서 이 정보가 평균 이하 가구의 기존 절약 행동을 유지하도록 장려했다는 ③은 일치하지 않는다. ①은 연구 방법, ②는 평균 이상 가구의 반응, ④는 웃는 얼굴 표시의 적용 대상과 일치한다. ⑤는 넛지가 의도와 반대되는 결과를 일으킬 수 있다는 연구의 핵심 내용에 부합한다. 이후 연구자들이 평균 이하 가구에 전달하는 정보에 웃는 얼굴을 추가하자 이러한 역효과가 상쇄되었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b07-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The researchers used information about neighbors' average energy consumption to influence household behavior.",
+"Households with above-average energy use responded to the information by lowering their consumption.",
+"The information encouraged households with below-average energy use to maintain their existing conservation efforts.",
+"The smiley face was added to the information provided to households whose energy use was below average.",
+"The study demonstrated that information intended to promote energy conservation could initially produce an undesirable effect."
+]
 }
 ]
