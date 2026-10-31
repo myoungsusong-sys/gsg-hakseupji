@@ -1514,5 +1514,67 @@
 "twinGroup": "tw-7068",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-04d1f4ad9e",
+"typeId": "7104",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=8\\,\\mathrm{cm}$, $AC=10\\,\\mathrm{cm}$, $BC=12\\,\\mathrm{cm}$이다. 변 $BC$, 변 $AB$의 $B$ 쪽 연장선, 변 $AC$의 $C$ 쪽 연장선에 접하는 방접원이 변 $BC$와 접하는 점을 $Q$라 하자. 선분 $BQ$의 길이는?",
+"choices": [
+"$3\\,\\mathrm{cm}$",
+"$5\\,\\mathrm{cm}$",
+"$6\\,\\mathrm{cm}$",
+"$7\\,\\mathrm{cm}$",
+"$9\\,\\mathrm{cm}$"
+],
+"answer": "④",
+"solution": "방접원이 변 $AB$, $AC$의 연장선과 접하는 점을 각각 $P$, $R$라 하고, $BQ=x\\,\\mathrm{cm}$라 하자. 한 점에서 원에 그은 두 접선의 길이는 같으므로 $BP=BQ=x\\,\\mathrm{cm}$, $CR=CQ=(12-x)\\,\\mathrm{cm}$이다. 또한 $AP=AR$이고, $P$, $R$는 각각 $B$, $C$ 쪽 연장선 위에 있으므로 $8+x=10+(12-x)$이다. 따라서 $2x=14$, $x=7$이므로 $BQ=7\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-fb4fd9cabb",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "$\\angle ABC=90^\\circ$인 직각삼각형 $ABC$의 내심을 $I$라 하자. 변 $BC$, 변 $AB$의 $B$ 쪽 연장선, 변 $AC$의 $C$ 쪽 연장선에 접하는 방접원의 중심을 $J$라 한다. 내접원과 방접원의 반지름을 각각 $r\\,\\mathrm{cm}$, $R\\,\\mathrm{cm}$라 할 때, $R-r=3$이고 $IJ=3\\sqrt{17}\\,\\mathrm{cm}$이다. 삼각형 $ABC$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$60\\,\\mathrm{cm}$",
+"solution": "두 중심 $I$, $J$는 직선 $AB$의 같은 쪽에 있고, 직선 $BC$의 반대쪽에 있다. 두 중심에서 직선 $AB$까지의 거리는 각각 $r\\,\\mathrm{cm}$, $R\\,\\mathrm{cm}$이고, 직선 $BC$까지의 거리도 각각 $r\\,\\mathrm{cm}$, $R\\,\\mathrm{cm}$이다. $AB\\perp BC$이므로 피타고라스 정리에 의해 $IJ^2=\\{(R-r)^2+(R+r)^2\\}\\,\\mathrm{cm}^2$이다. 따라서 $(R+r)^2=153-9=144$이고, $R+r=12$이다. 이를 $R-r=3$과 연립하면 $r=\\frac92$, $R=\\frac{15}2$이다. 내접원과 방접원이 변 $BC$와 접하는 점을 각각 $E$, $Q$라 하자. $\\angle ABC=90^\\circ$이므로 각 중심과 $B$, 두 접점을 잇는 사각형은 정사각형이다. 따라서 $BE=r\\,\\mathrm{cm}$, $BQ=R\\,\\mathrm{cm}$이다. $AB=x\\,\\mathrm{cm}$, $AC=y\\,\\mathrm{cm}$, $BC=z\\,\\mathrm{cm}$라 하면, 내접원에 그은 접선의 길이 관계에서 $x+z-y=2r$이다. 방접원이 $AB$, $AC$의 연장선과 접하는 점을 각각 $P$, $T$라 하면 $BP=BQ=R\\,\\mathrm{cm}$, $CT=CQ=(z-R)\\,\\mathrm{cm}$이다. $AP=AT$에서 $x+R=y+z-R$, 즉 $y+z-x=2R$이다. 두 식을 더하면 $z=r+R=12$이고, 두 식을 빼면 $y-x=R-r=3$이다. 따라서 $x^2+12^2=(x+3)^2$이므로 $x=\\frac{45}2$, $y=\\frac{51}2$이다. 구하는 둘레는 $\\left(12+\\frac{45}2+\\frac{51}2\\right)\\mathrm{cm}=60\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9444e35d3f",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 내접원과, 변 $BC$, 변 $AB$의 $B$ 쪽 연장선, 변 $AC$의 $C$ 쪽 연장선에 접하는 방접원이 서로 외접한다. 두 원의 반지름의 합은 $15\\,\\mathrm{cm}$이고, 꼭짓점 $A$에서 직선 $BC$에 내린 수선의 길이는 $8\\,\\mathrm{cm}$이다. $AB\\times BC$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$120\\,\\mathrm{cm}^2$",
+"solution": "내접원과 방접원의 중심을 각각 $I$, $J$, 반지름을 각각 $r\\,\\mathrm{cm}$, $R\\,\\mathrm{cm}$라 하자. 두 원은 직선 $BC$의 반대쪽에 있으므로 두 중심 사이의 거리는 $(r+R)\\,\\mathrm{cm}$ 이상이다. 한편 두 원이 외접하므로 $IJ=(r+R)\\,\\mathrm{cm}$이다. 따라서 $IJ\\perp BC$이고, 두 원이 $BC$와 접하는 점은 같은 점 $P$이다. $I$, $J$는 모두 $\\angle BAC$의 이등분선 위에 있으므로 $A$, $I$, $P$, $J$는 일직선 위에 있다. 따라서 $AP=8\\,\\mathrm{cm}$이다. 두 직각삼각형 $ABP$, $ACP$는 변 $AP$를 공유하고 $\\angle BAP=\\angle PAC$이므로 합동이다. 따라서 $AB=AC$, $BP=PC$이다. $AB=l\\,\\mathrm{cm}$, $BP=t\\,\\mathrm{cm}$라 하자. 내접원과 변 $AB$의 접점을 $T$, 방접원과 변 $AB$의 $B$ 쪽 연장선의 접점을 $U$라 하면, 접선의 길이 관계에서 $BT=BU=BP=t\\,\\mathrm{cm}$이다. 따라서 $AT=(l-t)\\,\\mathrm{cm}$, $AU=(l+t)\\,\\mathrm{cm}$이다. 또한 $AI=(8-r)\\,\\mathrm{cm}$, $AJ=(8+R)\\,\\mathrm{cm}$이다. $IT\\perp AB$, $JU\\perp AB$이므로 피타고라스 정리에 의해 $(l-t)^2+r^2=(8-r)^2$, $(l+t)^2+R^2=(8+R)^2$이다. 정리하면 $(l-t)^2=64-16r$, $(l+t)^2=64+16R$이다. 두 식을 빼면 $4lt=16(r+R)=240$이므로 $2lt=120$이다. 따라서 $AB\\times BC=l\\times 2t\\,\\mathrm{cm}^2=120\\,\\mathrm{cm}^2$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-da5090a857",
+"typeId": "7104",
+"kind": "주관식",
+"diff": 4,
+"body": "삼각형 $ABC$의 내접원이 변 $BC$와 접하는 점을 $E$라 하자. 변 $BC$, 변 $AB$의 $B$ 쪽 연장선, 변 $AC$의 $C$ 쪽 연장선에 접하는 방접원이 변 $BC$와 접하는 점을 $Q$라 한다. $BQ:QC=3:4$, $EQ=2\\,\\mathrm{cm}$이다. 꼭짓점 $A$에서 직선 $BC$에 내린 수선의 발 $H$는 선분 $BC$ 위에 있으며, $AH=12\\,\\mathrm{cm}$이다. 삼각형 $ABC$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$42\\,\\mathrm{cm}$",
+"solution": "삼각형의 둘레의 절반을 $s$라 하자. 한 점에서 원에 그은 두 접선의 길이가 같다는 성질에 의해 $BE=s-AC$, $CE=s-AB$이다. 방접원이 $AB$, $AC$의 연장선과 접하는 점을 각각 $P$, $R$라 하면 $BP=BQ$, $CR=CQ$이고, $AP=AR$에서 $AB+BQ=AC+CQ$이다. 이를 $BQ+CQ=BC$와 함께 이용하면 $BQ=s-AB$, $CQ=s-AC$이다. 따라서 $BE=CQ$, $CE=BQ$이다. $BQ=3t\\,\\mathrm{cm}$, $CQ=4t\\,\\mathrm{cm}$라 하면 $BE=4t\\,\\mathrm{cm}$이므로 $EQ=(4t-3t)\\,\\mathrm{cm}=t\\,\\mathrm{cm}$이다. 따라서 $t=2$, $BC=14\\,\\mathrm{cm}$이다. 또한 $AB-AC=CQ-BQ=2\\,\\mathrm{cm}$이다. $AC=x\\,\\mathrm{cm}$, $BH=y\\,\\mathrm{cm}$라 하면 $AB=(x+2)\\,\\mathrm{cm}$, $CH=(14-y)\\,\\mathrm{cm}$이다. 두 직각삼각형 $ABH$, $ACH$에서 $(x+2)^2=y^2+144$, $x^2=(14-y)^2+144$이다. 두 식을 빼면 $4x+4=28y-196$이므로 $y=\\frac{x+50}{7}$이다. 이를 첫 번째 식에 대입하면 $49(x+2)^2=(x+50)^2+7056$이고, 정리하면 $x^2+2x-195=(x-13)(x+15)=0$이다. $x>0$이므로 $x=13$이다. 따라서 $AC=13\\,\\mathrm{cm}$, $AB=15\\,\\mathrm{cm}$이고, 구하는 둘레는 $(14+13+15)\\,\\mathrm{cm}=42\\,\\mathrm{cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-7104",
+"custom": true,
+"rv": 1
 }
 ]

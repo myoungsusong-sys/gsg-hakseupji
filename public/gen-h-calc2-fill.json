@@ -12665,5 +12665,33 @@
 "twinGroup": "tw-20771",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-85154b7652",
+"typeId": "20771",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $f(x)=\\sqrt{x}-\\frac{1}{2}x$의 그래프에서 $y$좌표의 최댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$\\frac{1}{2}$",
+"solution": "정의역은 $x\\geq 0$이고, $x>0$에서 $f'(x)=\\frac{1-\\sqrt{x}}{2\\sqrt{x}}$이다. 따라서 $0<x<1$에서 증가하고 $x>1$에서 감소한다. 또한 $f(0)=0$이므로 최댓값은 $f(1)=\\frac{1}{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20771",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-01a4381cad",
+"typeId": "20771",
+"kind": "주관식",
+"diff": 1,
+"body": "함수 $y=x-4\\sqrt{x}$의 그래프에서 $y$좌표의 최솟값을 구하시오.",
+"selfGrade": true,
+"answer": "$-4$",
+"solution": "정의역은 $x\\geq 0$이고, $x>0$에서 $y'=\\frac{\\sqrt{x}-2}{\\sqrt{x}}$이다. 따라서 $0<x<4$에서 감소하고 $x>4$에서 증가한다. 또한 $x=0$일 때 $y=0$이므로 최솟값은 $x=4$일 때의 $-4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20771",
+"custom": true,
+"rv": 1
 }
 ]

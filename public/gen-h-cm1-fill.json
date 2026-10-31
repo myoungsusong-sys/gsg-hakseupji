@@ -7741,5 +7741,19 @@
 "twinGroup": "tw-16337",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-d2742800e7",
+"typeId": "16337",
+"kind": "주관식",
+"diff": 4,
+"body": "이차방정식 $t^2-2at+b=0$의 두 실근 $\\alpha$, $\\beta$가 $\\alpha>5$, $1<\\beta<4$를 만족시킨다. 다음 부등식의 해를 $\\beta$의 값에 따라 나누어 $\\alpha$, $\\beta$로 나타내시오. (단, $a$, $b$는 실수이다.)\n\n$(b-6a+9)x^2+2(b-5a+6)x+b-4a+4<0$",
+"selfGrade": true,
+"answer": "$\\begin{cases}x<-\\dfrac{\\alpha-2}{\\alpha-3}\\ \\text{또는}\\ x>-\\dfrac{\\beta-2}{\\beta-3} & (1<\\beta<3),\\\\ x<-\\dfrac{\\alpha-2}{\\alpha-3} & (\\beta=3),\\\\ -\\dfrac{\\beta-2}{\\beta-3}<x<-\\dfrac{\\alpha-2}{\\alpha-3} & (3<\\beta<4).\\end{cases}$",
+"solution": "근과 계수의 관계에 의하여 $2a=\\alpha+\\beta$, $b=\\alpha\\beta$이다. 이를 대입하여 인수분해하면 주어진 부등식은 $\\{(3-\\alpha)x+2-\\alpha\\}\\{(3-\\beta)x+2-\\beta\\}<0$이다.\n\n$A=-\\dfrac{\\alpha-2}{\\alpha-3}=-1-\\dfrac1{\\alpha-3}$이라 하고, $\\beta\\ne3$일 때 $B=-\\dfrac{\\beta-2}{\\beta-3}=-1-\\dfrac1{\\beta-3}$이라 하자.\n\n① $1<\\beta<3$일 때: 이차항의 계수 $(3-\\alpha)(3-\\beta)$가 음수이고 $A<-1<B$이므로 해는 $x<A$ 또는 $x>B$이다.\n\n② $\\beta=3$일 때: 주어진 부등식은 $(\\alpha-3)x+\\alpha-2<0$이다. $\\alpha-3>0$이므로 해는 $x<A$이다.\n\n③ $3<\\beta<4$일 때: 이차항의 계수가 양수이다. 또한 $0<\\beta-3<\\alpha-3$이므로 $B=-1-\\dfrac1{\\beta-3}<-1-\\dfrac1{\\alpha-3}=A$이다. 따라서 해는 $B<x<A$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-16337",
+"custom": true,
+"rv": 1
 }
 ]

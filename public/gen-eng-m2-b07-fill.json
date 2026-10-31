@@ -1,82 +1,5 @@
 [
 {
-"id": "fill-8d3c4cf8b5",
-"typeId": "eng-m2-b07-u3m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A)~(C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nWhen the ship began to go down, Shackleton told his men, “(A)[Leave / To leave] the ship!” They later had (B)[make / to make] a camp on the ice. Shackleton’s new goal was (C)[bring / to bring] all his men home safely.",
-"choices": [
-"① Leave ― make ― bring",
-"② Leave ― to make ― to bring",
-"③ To leave ― to make ― bring",
-"④ To leave ― make ― to bring",
-"⑤ Leave ― making ― to bring"
-],
-"answer": "②",
-"solution": "명령문은 동사원형으로 시작하므로 (A)는 Leave가 알맞다. had to 뒤에는 동사원형 make가 오며, 주격 보어로 목표의 내용을 나타낼 때는 to부정사 to bring을 쓴다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-c1e216d547",
-"typeId": "eng-m2-b07-u3m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 ⓐ~ⓔ 중 어법상 옳은 문장의 개수는?\n\nⓐ Shackleton’s team was crossing the sea when the ship hit thick ice.\nⓑ The ship has sank beneath the water.\nⓒ Shackleton had his men get on the lifeboats.\nⓓ There was little food to eat on Elephant Island.\nⓔ After help arrived, every man was saving.",
-"choices": [
-"① 1개",
-"② 2개",
-"③ 3개",
-"④ 4개",
-"⑤ 5개"
-],
-"answer": "③",
-"solution": "ⓐ는 과거진행형, ⓒ는 「have+목적어+동사원형」, ⓓ는 「little+불가산명사」와 to부정사의 쓰임이 올바르다. ⓑ의 sank는 과거분사 sunk로, ⓔ의 saving은 수동태 was saved로 고쳐야 하므로 옳은 문장은 3개이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-3bd42881f9",
-"typeId": "eng-m2-b07-u3m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A)~(D)에 주어진 동사를 어법에 맞게 바꾸어 순서대로 쓰시오.\n\nNear Antarctica, Shackleton’s team (A)(cross) the sea when their ship hit thick ice. After the ice broke the ship into pieces, Shackleton ordered his men (B)(leave) it. He eventually made them (C)(return) home safely, and every member of the team (D)(save).",
-"selfGrade": true,
-"answer": "was crossing / to leave / return / was saved",
-"solution": "진행 중이던 과거 동작에는 was crossing을 쓰고, 「order+목적어+to부정사」에 따라 to leave를 쓴다. 사역동사 make의 목적격 보어에는 동사원형 return이 오며, 대원들이 구조된 것이므로 수동태 was saved가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-ea06c7550b",
-"typeId": "eng-m2-b07-u3m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글에는 어법상 잘못된 부분이 세 군데 있다. 세 부분을 모두 고쳐 글 전체를 다시 쓰시오.\n\nAfter reaching Elephant Island, the men found that there were little food to eat. Shackleton had five of his man go with him to get help. After they got help, they went back, and everyone was saving.",
-"selfGrade": true,
-"answer": "After reaching Elephant Island, the men found that there was little food to eat. Shackleton had five of his men go with him to get help. After they got help, they went back, and everyone was saved.",
-"solution": "food는 셀 수 없는 명사이므로 there was를 쓰고, five of his 뒤에는 복수형 men이 와야 한다. everyone은 구조된 대상이므로 진행형 was saving이 아니라 수동태 was saved가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
-"custom": true
-},
-{
-"id": "fill-a4fa7d142b",
-"typeId": "eng-m2-b07-u3m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 우리말을 주어진 조건에 맞게 영작하시오.\n\n나는 대원들을 구명보트에 타게 했다. 그 섬에는 먹을 음식이 거의 없었다.\n\n조건: 첫 문장에는 have의 과거형을 사용할 것. 두 번째 문장에는 little과 eat을 사용할 것.",
-"selfGrade": true,
-"answer": "I had my men get on the lifeboats. There was little food to eat on the island.",
-"solution": "‘대원들을 타게 했다’는 「had+목적어+동사원형」으로 표현하므로 had my men get을 쓴다. food는 셀 수 없는 명사이므로 little과 단수 동사 was를 사용하고, ‘먹을’은 to eat으로 나타낸다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
-"custom": true
-},
-{
 "id": "fill-99ef7f38e6",
 "typeId": "eng-m2-b07-u3m2s0t0",
 "kind": "주관식",
@@ -1243,5 +1166,73 @@
 "(A) crossing — (B) standed",
 "(A) crossed — (B) stood"
 ]
+},
+{
+"id": "fill-8d3c4cf8b5",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A)~(C)에 들어갈 말이 바르게 연결된 것은?\n\nWhen the ship began to go down, Shackleton told his men, “(A) [Leave / To leave] the ship!” They later had (B) [make / to make] a camp on the ice. Shackleton’s new goal was (C) [bring / to bring] all his men home safely.",
+"answer": "②",
+"solution": "(A) 명령문은 동사원형으로 시작하므로 Leave가 알맞다. (B) had to는 '~해야 했다'라는 의미이며, 뒤에는 동사원형이 와야 하므로 to make가 알맞다. (C) 주어 Shackleton’s new goal의 구체적인 내용을 설명하는 주격 보어 자리이므로 명사적 용법의 to부정사 to bring이 알맞다. 따라서 정답은 ②이다. ⑤는 (B)에서 had 뒤에 to가 빠진 형태이며, 이 문맥의 had는 '~해야 했다'라는 의미이므로 had to make가 되어야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Leave ― make ― bring",
+"Leave ― to make ― to bring",
+"To leave ― to make ― bring",
+"To leave ― make ― to bring",
+"Leave ― make ― to bring"
+]
+},
+{
+"id": "fill-c1e216d547",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 ⓐ~ⓔ 중 어법상 옳은 문장의 개수는?\n\nⓐ Shackleton’s team was crossing the sea when the ship hit thick ice.\nⓑ The ship has sank beneath the water.\nⓒ Shackleton had his men get on the lifeboats.\nⓓ There was little food to eat on Elephant Island.\nⓔ After help arrived, every man was saving.",
+"answer": "③",
+"solution": "ⓐ 옳음. 과거의 특정 시점에 진행 중이던 동작은 과거진행형 was crossing으로 나타낼 수 있다. ⓑ 틀림. 현재완료는 「have/has+과거분사」이므로 sink의 과거형 sank가 아니라 과거분사 sunk를 써야 한다. 따라서 has sunk가 알맞다. ⓒ 옳음. 사역동사 have는 「have+목적어+동사원형」의 구조로 쓰이므로 had his men get이 올바르다. ⓓ 옳음. food는 셀 수 없는 명사이므로 little과 함께 쓸 수 있으며, to eat은 앞의 food를 수식하는 형용사적 용법의 to부정사이다. ⓔ 틀림. 모든 대원이 구조되었다는 의미이므로 수동태 was saved를 써야 한다. was saving은 능동형 과거진행형이며, 이 문장에서 save의 목적어도 제시되어 있지 않다. 따라서 옳은 문장은 ⓐ, ⓒ, ⓓ의 3개이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+]
+},
+{
+"id": "fill-3bd42881f9",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 (A)~(D)에 주어진 동사를 문맥과 어법에 맞게 바꾸어 쓰시오. 단, 필요한 경우 두 단어 이상으로 쓸 것.\n\nNear Antarctica, Shackleton’s team (A) (cross) the sea when their ship hit thick ice. After the ship was badly damaged, Shackleton ordered his men (B) (leave) it. He made them (C) (move) to a safer place on the ice. After a long and difficult journey, every member of the team (D) (save).\n\n(A) __________\n(B) __________\n(C) __________\n(D) __________",
+"answer": "(A) was crossing / (B) to leave / (C) move / (D) was saved",
+"solution": "(A) 배가 두꺼운 얼음에 부딪혔을 때 바다를 건너고 있던 중이었으므로 과거의 진행 중인 동작을 나타내는 과거진행형을 사용한다. 주어 Shackleton’s team은 단수 취급하므로 was crossing이 알맞다. (B) order는 「order+목적어+to부정사」의 구조로 '~에게 …하라고 명령하다'라는 의미를 나타내므로 to leave가 알맞다. (C) 사역동사 make는 「make+목적어+동사원형」의 구조를 취한다. 따라서 them 뒤에는 동사원형 move가 와야 한다. (D) 대원들은 스스로 구조한 것이 아니라 구조된 대상이므로 수동태 「be동사+과거분사」를 사용한다. 과거의 사건이며 주어 every member는 단수이므로 was saved가 알맞다. 따라서 정답은 (A) was crossing, (B) to leave, (C) move, (D) was saved이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-ea06c7550b",
+"typeId": "eng-m2-b07-u3m1s0t0",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글에서 어법상 틀린 부분을 세 군데 찾아 바르게 고쳐 쓰시오.\n\nAfter reaching Elephant Island, the men found that there were little food to eat. Shackleton had five of his man go with him to get help. After they got help, they went back, and everyone was saving.\n\n(1) __________ → __________\n(2) __________ → __________\n(3) __________ → __________",
+"answer": "(1) were → was / (2) man → men / (3) saving → saved",
+"solution": "(1) there were little food에서 food는 셀 수 없는 명사이므로 단수 동사 was를 사용해야 한다. 따라서 were를 was로 고친다. (2) five of his man에서 five는 복수의 사람을 나타내므로 단수 명사 man이 아니라 복수 명사 men을 써야 한다. 따라서 man을 men으로 고친다. 이때 had five of his men go는 사역동사 have의 과거형 had 뒤에 목적어와 동사원형이 이어진 올바른 구조이다. (3) everyone은 구조된 대상이므로 능동형 과거진행형 was saving이 아니라 수동태 was saved를 사용해야 한다. 따라서 saving을 saved로 고친다. 수정한 문장은 다음과 같다. After reaching Elephant Island, the men found that there was little food to eat. Shackleton had five of his men go with him to get help. After they got help, they went back, and everyone was saved.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-m2-b07-u3m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
 }
 ]
