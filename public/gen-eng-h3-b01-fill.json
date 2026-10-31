@@ -1,605 +1,23 @@
 [
 {
-"id": "fill-4377e6c3fe",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nScience is not an activity for professional researchers alone. Ordinary people can also (A)[contribute / object] to scientific progress. People who join research projects out of personal interest are called citizen scientists. Their curiosity can lead them to (B)[participate / hesitate] in scientific research, and their efforts can produce (C)[valuable / worthless] results.",
-"choices": [
-"contribute — participate — valuable",
-"object — participate — valuable",
-"contribute — hesitate — valuable",
-"object — hesitate — worthless",
-"contribute — participate — worthless"
-],
-"answer": "①",
-"solution": "일반인도 과학 발전에 기여하고 연구에 참여할 수 있다는 내용이므로 contribute와 participate가 알맞다. 이러한 노력의 긍정적인 결과를 나타내야 하므로 (C)에는 valuable이 들어간다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-6c0a3cae49",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nKevin Schawinski’s research involved putting galaxy images into groups based on their (A)[shape / price]. Although the images appeared similar, there were small differences between them. He therefore needed to examine the images (B)[individually / carelessly]. With so many images to examine, the task was (C)[time-consuming / instant].",
-"choices": [
-"price — individually — instant",
-"shape — carelessly — time-consuming",
-"price — carelessly — time-consuming",
-"shape — individually — time-consuming",
-"shape — individually — instant"
-],
-"answer": "④",
-"solution": "은하 이미지를 형태에 따라 분류하는 작업이므로 (A)는 shape이다. 미세한 차이를 확인하려면 이미지를 개별적으로 살펴야 하고 시간이 많이 걸리므로 individually와 time-consuming이 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-0bbf65a687",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe people who first discovered the phenomenon called STEVE were aurora chasers. Experts have (A)[recognized / denied] their contribution and agree that they deserve credit. Although several theories about STEVE exist, none has been firmly (B)[proven / forgotten]. Scientists and citizens continue to work (C)[together / separately] to understand it.",
-"choices": [
-"denied — proven — together",
-"recognized — proven — together",
-"recognized — forgotten — together",
-"denied — forgotten — separately",
-"recognized — proven — separately"
-],
-"answer": "②",
-"solution": "전문가들이 오로라 추적자들의 공로를 인정한다는 내용이므로 recognized가 적절하다. 이론들이 확실히 입증되지는 않았으며 과학자와 시민이 계속 협력하므로 proven과 together가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-697112c06d",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nGalaxy Zoo became widely known with the help of online media. Instead of (A)[restricting / expanding] public awareness of the project, this publicity drew increasing numbers of people to its website. Their participation made it possible to classify far more images than Schawinski could have managed (B)[alone / collectively]. The project thus demonstrated the (C)[limitations / potential] of public participation in scientific research.",
-"choices": [
-"expanding — alone — potential",
-"restricting — collectively — potential",
-"expanding — collectively — limitations",
-"restricting — alone — limitations",
-"restricting — alone — potential"
-],
-"answer": "⑤",
-"solution": "홍보로 더 많은 사람이 유입되었으므로 instead of 뒤에는 인지도 확대와 반대되는 restricting이 와야 한다. 참여자들의 공동 작업을 연구자 혼자 수행하는 경우와 비교하므로 alone이 적절하며, 이 사례가 보여 준 것은 시민 참여의 가능성이므로 potential이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-bf0cff48a7",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nIt is easy to picture science as a field (A)[accessible / exclusive] to trained professionals. The examples of citizen science, however, challenge that picture. A person’s lack of a science degree does not necessarily make that person (B)[capable / incapable] of helping research move forward. What matters is that ordinary people can use their interest in science to make a meaningful (C)[contribution / restriction].",
-"choices": [
-"accessible — incapable — contribution",
-"exclusive — capable — contribution",
-"exclusive — incapable — contribution",
-"accessible — capable — restriction",
-"exclusive — incapable — restriction"
-],
-"answer": "③",
-"solution": "시민 과학 사례가 반박하는 것은 과학이 전문가에게만 한정된다는 인식이므로 exclusive가 적절하다. does not necessarily와 연결하여 학위가 없다고 반드시 기여할 능력이 없는 것은 아니라는 뜻이 되어야 하므로 incapable이 들어가며, make a contribution은 ‘기여하다’라는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-35998d3962",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nZooniverse developed from Galaxy Zoo and offers projects across several scientific fields. Its range of subjects is therefore (A)[broad / narrow], extending beyond astronomy. The platform allows ordinary people to become (B)[participants / spectators] in research by contributing their efforts. Its growth supports the view that scientific work can benefit from greater public (C)[withdrawal / involvement].",
-"choices": [
-"broad — participants — involvement",
-"narrow — participants — involvement",
-"broad — spectators — involvement",
-"broad — participants — withdrawal",
-"narrow — spectators — withdrawal"
-],
-"answer": "①",
-"solution": "천문학 외의 여러 과학 분야도 다루므로 주제의 범위는 broad이다. 일반인이 직접 노력을 보태는 참여자가 된다는 뜻이므로 participants가 적절하고, 플랫폼의 성장은 대중의 참여를 뜻하는 involvement의 이점을 뒷받침한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-caea77a262",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nFor Schawinski, the difficulty was not that the galaxy images looked entirely unrelated. Rather, their apparent (A)[similarity / diversity] concealed slight differences in shape. A quick impression was therefore no substitute for (B)[superficial / individual] inspection. Although gathering many volunteers did not remove the need to examine the images, it made the enormous workload more (C)[manageable / demanding] than it would have been for one researcher working alone.",
-"choices": [
-"diversity — individual — manageable",
-"similarity — superficial — manageable",
-"diversity — superficial — demanding",
-"similarity — individual — manageable",
-"similarity — individual — demanding"
-],
-"answer": "④",
-"solution": "이미지들이 겉으로 비슷해 보여 미세한 형태 차이를 구별해야 했으므로 similarity와 individual이 적절하다. 자원봉사자의 참여가 이미지 확인 자체를 불필요하게 만든 것은 아니지만, 한 사람이 맡을 때보다 작업량을 감당하기 쉽게 했으므로 manageable이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-58d8790128",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nGiving the aurora chasers credit for discovering STEVE should not be confused with claiming that its mystery has been solved. Recognition of their contribution does not make the existing theories any less (A)[tentative / conclusive]. Nor does the continuing uncertainty make their discovery less (B)[significant / insignificant]. Had their observations been absent, the phenomenon might have escaped notice altogether. The fact that scientists still seek an explanation therefore calls for continued (C)[dismissal / collaboration] with citizens, whose role in the discovery experts have acknowledged.",
-"choices": [
-"conclusive — significant — collaboration",
-"tentative — significant — collaboration",
-"tentative — insignificant — collaboration",
-"conclusive — insignificant — dismissal",
-"tentative — significant — dismissal"
-],
-"answer": "②",
-"solution": "발견의 공로를 인정해도 기존 이론이 확정되는 것은 아니므로, 이론은 여전히 잠정적이라는 뜻의 tentative가 적절하다. 설명이 불확실하다고 발견의 중요성이 줄어드는 것은 아니라는 뜻이므로 significant가 들어간다. 시민들의 발견 기여를 바탕으로 협력을 지속해야 한다는 결론이므로 collaboration이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-05c52ed9ab",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe success of Galaxy Zoo gives little support to the assumption that progress in science must depend (A)[exclusively / partly] on professionals. This is not because classifying the images ceased to require careful attention, but because many citizens shared the task. Without their help, the time Schawinski would have needed to achieve comparable results would hardly have been (B)[negligible / considerable]. The case thus challenges any judgment that treats a lack of professional qualifications as sufficient reason to (C)[recognize / discount] a person’s possible contribution to science.",
-"choices": [
-"partly — negligible — discount",
-"exclusively — considerable — discount",
-"exclusively — negligible — recognize",
-"partly — considerable — recognize",
-"exclusively — negligible — discount"
-],
-"answer": "⑤",
-"solution": "시민들의 성과는 과학 발전이 오직 전문가에게만 의존해야 한다는 가정을 뒷받침하지 않으므로 exclusively가 적절하다. 시민의 도움이 없었다면 필요한 시간이 결코 적지 않았을 것이라는 뜻이므로 hardly와 연결되는 negligible이 알맞다. 마지막 문장은 전문 자격이 없다는 이유만으로 기여 가능성을 낮게 평가하는 판단을 반박하므로 discount가 들어간다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-d52140633b",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nScience (A)[belongs / is belonged] to ordinary people as well as professional researchers. People without science degrees can help by (B)[classifying / classify] images of galaxies. Their work can make valuable (C)[contribution / contributions] to scientific research.",
-"choices": [
-"belongs — classify — contributions",
-"is belonged — classifying — contributions",
-"belongs — classifying — contributions",
-"belongs — classifying — contribution",
-"is belonged — classify — contribution"
-],
-"answer": "③",
-"solution": "belong은 자동사이므로 수동태로 쓰지 않는다. 전치사 by 뒤에는 동명사 classifying이 와야 한다. 셀 수 있는 명사 contribution이 관사 없이 쓰였으므로 복수형 contributions가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-11d7407119",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nGalaxy Zoo used a tutorial (A)[that / what] introduced the project to new visitors. The instructions helped them (B)[understand / understanding] how to classify galaxies. After some practice, they were able (C)[identify / to identify] features in the images.",
-"choices": [
-"that — understanding — to identify",
-"what — understand — to identify",
-"that — understand — identify",
-"what — understanding — identify",
-"that — understand — to identify"
-],
-"answer": "⑤",
-"solution": "선행사 a tutorial을 수식하며 관계절의 주어 역할을 하는 that이 적절하다. help는 목적격 보어로 동사원형을 취할 수 있으므로 understand가 맞다. ‘~할 수 있다’는 be able to 구문이므로 to identify를 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-e15bf055f7",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nSchawinski found the task of sorting galaxy images (A)[dull / dully]. Each image had to be examined (B)[careful / carefully] because the galaxies differed slightly in shape. He needed help from people (C)[who / which] were willing to take part.",
-"choices": [
-"dull — carefully — who",
-"dully — carefully — who",
-"dull — careful — which",
-"dully — careful — who",
-"dull — carefully — which"
-],
-"answer": "①",
-"solution": "목적어 the task의 상태를 설명하는 목적격 보어에는 형용사 dull이 적절하다. examined를 수식하려면 부사 carefully가 필요하다. 선행사가 사람인 people이므로 주격 관계대명사는 who가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4cfd52be9a",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nWhen Schawinski discussed his difficulty with Lintott, Lintott recommended that he (A)[seek / sought] assistance online. They eventually created Galaxy Zoo, a project (B)[allowing / allowed] ordinary people to help classify galaxies. Its design remained (C)[simple / simply] so that visitors could begin participating easily.",
-"choices": [
-"sought — allowing — simple",
-"seek — allowed — simple",
-"seek — allowing — simply",
-"seek — allowing — simple",
-"sought — allowed — simply"
-],
-"answer": "④",
-"solution": "권고를 나타내는 recommended의 that절에서는 ‘should + 동사원형’의 should가 생략될 수 있으므로 seek가 적절하다. project가 사람들이 참여하도록 허용하는 능동 관계이므로 allowing을 쓴다. remained의 주격 보어에는 형용사 simple이 와야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-68eada1e43",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nThe volunteers (A)[involved / involving] in Galaxy Zoo did not need professional qualifications. They could choose scientific activities (B)[which / in which] they were interested and contribute by examining galaxy images. The project enabled people to spend their time observing galaxies and (C)[recording / to record] their features.",
-"choices": [
-"involving — in which — recording",
-"involved — in which — recording",
-"involved — which — recording",
-"involved — in which — to record",
-"involving — which — to record"
-],
-"answer": "②",
-"solution": "volunteers가 프로젝트에 관여된 관계이므로 과거분사 involved가 적절하다. be interested in의 전치사 in이 필요하므로 in which를 선택한다. spend time -ing 구문에서 observing과 병렬을 이루는 recording이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-326c4ac830",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nDuring the first year and a half of Galaxy Zoo, volunteers produced an enormous number of classifications. If it (A)[were not / had not been] for their assistance during that period, Schawinski could not have completed so much work. The project later developed into Zooniverse, one of the online (B)[platform / platforms] that offer ordinary people opportunities (C)[participating / to participate] in scientific research.",
-"choices": [
-"were not — platforms — to participate",
-"had not been — platform — to participate",
-"had not been — platforms — participating",
-"were not — platform — participating",
-"had not been — platforms — to participate"
-],
-"answer": "⑤",
-"solution": "과거의 도움을 받지 못했을 상황을 가정하므로 가정법 과거완료 had not been이 필요하다. ‘one of + 복수명사’ 구조이므로 platforms가 맞다. opportunities의 구체적인 내용을 설명하는 to부정사 to participate가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-de9fc58d00",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nVisitors to Galaxy Zoo were given instructions about the features (A)[what / that] they should look for in a galaxy image. The website made it possible for people with little training (B)[to classify / classifying] galaxies. Without the volunteers who joined the project, the same amount of work would (C)[take / have taken] Schawinski decades to finish on his own.",
-"choices": [
-"that — to classify — have taken",
-"what — to classify — have taken",
-"that — classifying — have taken",
-"that — to classify — take",
-"what — classifying — take"
-],
-"answer": "①",
-"solution": "선행사 the features가 있고 관계절에서 look for의 목적어가 빠져 있으므로 that이 적절하다. made it possible에서 it은 가목적어이고 to classify 이하가 진목적어이다. 실제로 참여했던 자원봉사자들이 없었을 과거 상황을 가정하므로 would have taken을 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-8b5fa464cc",
-"typeId": "eng-h3-b01-u1m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 틀린 것을 모두 찾아 바르게 고치시오. 각 표시 부분만 고치되, 글의 의미와 나머지 표현은 유지하시오. 답은 표시 순서대로 ‘기호 수정한 표현’의 형태로 쓰시오.\n\nFor citizen scientists ⓐinvolving in Galaxy Zoo, a science degree was not a requirement. When Schawinski needed help with galaxy classification, Lintott recommended that he ⓑsought assistance through the Internet. The website they created was kept ⓒsimply enough for new visitors to use. It offered an opportunity for people to contribute to a field ⓓin which they were interested. If the volunteers ⓔhad not participated during the project's first year and a half, Schawinski could not have classified so many images in that period. The contributions made by ordinary people ⓕdevoted their time to the project showed the value of citizen science.",
-"selfGrade": true,
-"answer": "ⓐ involved, ⓑ seek, ⓒ simple, ⓕ devoting",
-"solution": "ⓐ는 시민 과학자들이 프로젝트에 관여된 관계이므로 involved로 고치고, ⓑ는 권고를 나타내는 that절의 동사이므로 seek로 고친다. ⓒ는 수동태 was kept에서 주어의 상태를 설명하는 형용사 simple이 필요하다. ⓕ는 ordinary people을 뒤에서 수식하면서 시간을 바치는 능동 관계를 나타내야 하므로 devoting으로 고친다. ⓓ는 be interested in에 필요한 전치사를 포함한 관계사이고, ⓔ는 과거 사실에 반대되는 가정법 과거완료이므로 둘 다 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-1ab351da91",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nⓐ[Despite / Though] the shortage of money, Kendrick and Eldering remained determined to continue their work. They wanted to expand their research and ⓑ[test / testing] the vaccine with more children.",
-"choices": [
-"ⓐ Despite — ⓑ test",
-"ⓐ Though — ⓑ test",
-"ⓐ Despite — ⓑ testing",
-"ⓐ Though — ⓑ testing",
-"ⓐ Despite — ⓑ tested"
-],
-"answer": "①",
-"solution": "ⓐ 뒤에는 명사구 the shortage of money가 있으므로 전치사 Despite가 알맞다. ⓑ는 to에 이어지는 expand와 and로 병렬 연결되므로 동사원형 test가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-46054b8ae1",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nKendrick and Eldering needed to check the safety of their vaccine. They gave ⓐ[them / themselves] injections of it before conducting trials with children. They wanted to be certain ⓑ[that / what] the vaccine would not harm the children.",
-"choices": [
-"ⓐ them — ⓑ that",
-"ⓐ themselves — ⓑ what",
-"ⓐ them — ⓑ what",
-"ⓐ themselves — ⓑ that",
-"ⓐ themselves — ⓑ which"
-],
-"answer": "④",
-"solution": "ⓐ는 주어 They가 가리키는 두 연구자 자신을 뜻하므로 재귀대명사 themselves가 알맞다. ⓑ 뒤에는 완전한 절이 이어지므로 접속사 that을 써야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-5a4f3e3437",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nThe cough plates were placed in an incubator, ⓐ[that / which] allowed the bacteria to grow. Kendrick and Eldering analyzed the samples while working on a vaccine for children ⓑ[suffering / suffered] from whooping cough.",
-"choices": [
-"ⓐ that — ⓑ suffering",
-"ⓐ which — ⓑ suffering",
-"ⓐ which — ⓑ suffered",
-"ⓐ that — ⓑ suffered",
-"ⓐ what — ⓑ suffering"
-],
-"answer": "②",
-"solution": "ⓐ는 쉼표 뒤에서 앞 내용을 부연하는 계속적 용법의 관계대명사이므로 which가 알맞고 that은 쓸 수 없다. ⓑ는 children이 질병으로 고통받는다는 능동 관계를 나타내므로 현재분사 suffering이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-47fc7e72d4",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nAfter finishing their laboratory work, Kendrick and Eldering were about ⓐ[to leave / leaving] to visit sick children. They moved from one home to another, ⓑ[collecting / collected] bacterial samples. The children, despite the researchers' efforts to develop a vaccine, still ⓒ[struggling / struggled] to breathe.",
-"choices": [
-"ⓐ leaving — ⓑ collecting — ⓒ struggled",
-"ⓐ to leave — ⓑ collected — ⓒ struggled",
-"ⓐ to leave — ⓑ collecting — ⓒ struggling",
-"ⓐ leaving — ⓑ collected — ⓒ struggling",
-"ⓐ to leave — ⓑ collecting — ⓒ struggled"
-],
-"answer": "⑤",
-"solution": "‘막 ~하려고 하다’는 be about to do로 나타내므로 ⓐ는 to leave이다. ⓑ는 두 연구자가 직접 표본을 수집하는 동시 동작이므로 collecting이 알맞다. 마지막 문장은 주어 The children에 대응하는 서술동사가 필요하므로 ⓒ는 struggled이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-065dd7ebe0",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe samples that local medical workers supplied ⓐallowed the bacteria to be studied by Kendrick and Eldering. The researchers, who spent long nights examining those samples, ⓑproducing a possible vaccine. Before testing it on children, they needed to be certain ⓒthat it would cause no harmful side effects. As part of their efforts to check its safety, the two researchers injected ⓓthemselves with the vaccine. The children ⓔvaccinating during the first field test were part of the research. Although the results appeared promising, the researchers remained determined to expand the study and ⓕrunning further tests.",
-"choices": [
-"ⓐ, ⓒ, ⓔ",
-"ⓑ, ⓓ, ⓕ",
-"ⓑ, ⓔ, ⓕ",
-"ⓐ, ⓑ, ⓕ",
-"ⓒ, ⓓ, ⓔ"
-],
-"answer": "③",
-"solution": "ⓑ는 주어 The researchers의 서술동사 자리이므로 producing을 produced로 고쳐야 한다. ⓔ는 아이들이 접종을 받는 수동 관계이므로 vaccinated로 고쳐야 한다. ⓕ는 to에 이어지는 expand와 병렬을 이루므로 run으로 고쳐야 한다. ⓐ의 allow는 목적어 뒤에 수동형 to부정사도 취할 수 있으므로 allowed the bacteria to be studied는 올바르다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-5167013ae7",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nⓐThough the vaccine's apparent effectiveness, further evidence was needed. The researchers hoped to study larger groups of children, with many children still ⓑsuffering from whooping cough. The shortage of funds, which prevented the women from extending their research, ⓒleft them in a desperate situation. Eleanor Roosevelt, ⓓthat visited their laboratory, learned about their efforts. Her visit helped her understand how important their work was and ⓔto recognize the need to support it. With her assistance, the researchers secured the funding that allowed them ⓕconducting a large-scale trial.",
-"choices": [
-"ⓐ, ⓓ, ⓕ",
-"ⓐ, ⓒ, ⓔ",
-"ⓑ, ⓓ, ⓕ",
-"ⓐ, ⓓ, ⓔ, ⓕ",
-"ⓑ, ⓒ, ⓔ, ⓕ"
-],
-"answer": "①",
-"solution": "ⓐ 뒤에는 명사구가 있으므로 Though를 Despite로 고쳐야 하며, ⓓ는 계속적 용법의 관계대명사이므로 that을 who로 고쳐야 한다. ⓕ는 allow의 목적격 보어 자리이므로 to conduct로 고쳐야 한다. ⓑ는 with의 목적어인 many children과 능동 관계를 이루는 현재분사로 올바르며, ⓒ는 주어 The shortage of funds의 서술동사이다. help는 목적격 보어로 원형부정사와 to부정사를 모두 허용하므로 ⓔ의 to recognize도 앞의 understand와 병렬로 연결될 수 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-fd0dd8f112",
-"typeId": "eng-h3-b01-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nAt the homes they visited, Kendrick and Eldering saw children coughing and struggling ⓐto breathe. The suffering of the children, together with the stories their parents told, ⓑreminding the researchers of the need for a vaccine. After long nights of research, they produced a vaccine and carried out tests to make sure ⓒwhat it was safe. The two women even used the vaccine on ⓓthemselves before beginning trials with children. The results from the children who had been ⓔvaccinated encouraged further research. Yet, with the researchers ⓕfaced a serious shortage of funds, expanding the trials was difficult.",
-"choices": [
-"ⓐ, ⓒ, ⓕ",
-"ⓑ, ⓓ, ⓔ",
-"ⓐ, ⓑ, ⓔ",
-"ⓑ, ⓒ, ⓕ",
-"ⓒ, ⓓ, ⓕ"
-],
-"answer": "④",
-"solution": "ⓑ는 주어 The suffering of the children의 서술동사 자리이므로 reminded로 고쳐야 한다. ⓒ 뒤에는 완전한 절이 있으므로 what을 that으로 고쳐야 한다. ⓕ는 with 구문에서 the researchers가 자금 부족에 직면하는 능동 관계를 나타내므로 facing으로 고쳐야 하며, faced를 유지하려면 뒤에 with를 넣어야 한다. ⓐ의 struggle to do, ⓓ의 재귀대명사, ⓔ의 과거완료 수동태는 모두 어법상 올바르다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-a80fab6f24",
-"typeId": "eng-h3-b01-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 내용과 일치하는 것은?\n\nSchawinski found it difficult to examine the enormous number of galaxy images by himself. When he told Chris Lintott about this problem, Lintott advised him to invite Internet users to help. The two researchers then created Galaxy Zoo, where members of the public could classify galaxies.",
-"choices": [
-"Schawinski asked Lintott to classify all the images alone.",
-"Lintott suggested getting assistance from people online.",
-"Galaxy Zoo was designed only for professional astronomers.",
-"Internet users collected photographs of auroras for the project.",
-"Schawinski stopped studying galaxies after meeting Lintott."
-],
-"answer": "②",
-"solution": "Lintott은 혼자 수많은 은하 이미지를 살피기 어려워하는 Schawinski에게 인터넷 이용자들의 도움을 받으라고 제안했다. 따라서 글의 내용과 일치하는 것은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-585f4f4660",
-"typeId": "eng-h3-b01-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글을 읽고 Galaxy Zoo 참가자들이 한 일로 가장 알맞은 것은?\n\nVisitors to Galaxy Zoo first learned how to use the website through a short guide. They then observed individual galaxy images and selected descriptions that matched the galaxies’ visible features. With some practice, ordinary people could perform this task successfully.",
-"choices": [
-"They grouped galaxies according to their shapes.",
-"They wrote astronomy textbooks for researchers.",
-"They repaired equipment used to photograph space.",
-"They taught university students how to design websites.",
-"They developed scientific theories without viewing images."
-],
-"answer": "①",
-"solution": "참가자들은 은하 이미지를 관찰한 뒤 눈에 보이는 특징에 맞는 설명을 선택했다. 이는 은하를 모양에 따라 분류한 것이므로 정답은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-da0c2ab0d0",
-"typeId": "eng-h3-b01-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 내용과 일치하지 않는 것은?\n\nA group of aurora chasers repeatedly photographed a strange band of light called Steve. Because specialists had not seen such a phenomenon before, further investigation was needed. NASA supported a project in which citizens submitted photographs, and researchers continue to study the phenomenon with the public.",
-"choices": [
-"Aurora chasers took pictures of the unusual light phenomenon.",
-"Specialists considered the phenomenon worthy of further study.",
-"Members of the public supplied photographs for research.",
-"Scientists and citizens are still working together on the mystery.",
-"The aurora chasers immediately proved every theory about Steve."
-],
-"answer": "⑤",
-"solution": "Steve에 관해서는 여러 이론이 있지만 확실하게 증명된 것은 아니다. 따라서 오로라 관찰자들이 모든 이론을 즉시 입증했다는 ⑤는 글과 일치하지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-7b6a2aaa42",
-"typeId": "eng-h3-b01-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글을 통해 추론할 수 있는 것은?\n\nClassifying galaxy images one at a time was far too much work for a single researcher. Galaxy Zoo divided this large task among many volunteers. Its simple instructions and convenient website allowed newcomers to begin contributing after only a small amount of practice.",
-"choices": [
-"A scientific project can benefit by dividing a large task among many people.",
-"Volunteers can participate only after earning an astronomy degree.",
-"Galaxy images can be classified accurately without being observed.",
-"A complicated website is necessary to attract first-time participants.",
-"Citizen science is useful only when professional researchers are absent."
-],
-"answer": "①",
-"solution": "Galaxy Zoo는 한 사람이 감당하기 힘든 대규모 작업을 많은 자원봉사자에게 나누어 맡겼다. 이로부터 다수의 참여가 방대한 과학 과제를 해결하는 데 도움이 될 수 있음을 추론할 수 있으므로 정답은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-97f5d7c7a4",
-"typeId": "eng-h3-b01-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글에 이어질 내용으로 가장 알맞은 것은?\n\nSchawinski could examine only a small portion of the galaxy images despite working for days. Looking at the huge amount of unfinished work, he realized that completing it without assistance would be extremely difficult. Later, he described this frustrating situation to his colleague Chris Lintott.",
-"choices": [
-"a detailed explanation of how black holes produce light",
-"Lintott’s suggestion to seek help through the Internet",
-"a report proving that all galaxies have an identical shape",
-"Schawinski’s decision to replace the images with drawings",
-"Lintott’s refusal to discuss the classification problem"
-],
-"answer": "②",
-"solution": "교과서 내용에서 Lintott은 Schawinski의 어려움을 들은 뒤 인터넷을 통해 다른 사람들의 도움을 받자고 제안한다. 따라서 동료에게 문제를 털어놓았다는 내용 다음에는 ②가 자연스럽다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-e055da8036",
-"typeId": "eng-h3-b01-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nCitizen scientists are ordinary people who voluntarily take part in scientific research. Although they may lack formal scientific qualifications, their curiosity and willingness to participate can lead to meaningful contributions. The galaxy-classification project and the investigation of STEVE both show how citizens can work with experts to expand scientific knowledge.",
-"choices": [
-"Who are citizen scientists?",
-"What qualities can help a person become a citizen scientist?",
-"Can people without science degrees contribute to research?",
-"What do the two projects demonstrate about public participation?",
-"How much money did each citizen scientist receive?"
-],
-"answer": "⑤",
-"solution": "글에는 시민 과학자의 의미, 필요한 태도, 과학 학위가 없는 사람의 기여 가능성, 두 프로젝트의 의의가 제시되어 있다. 그러나 참가자들이 받은 금액에 관한 정보는 없으므로 ⑤에는 답할 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-082c041828",
-"typeId": "eng-h3-b01-u1m0s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nScience belongs to (A)________, and ordinary people can make valuable (B)________ to science.\n\n     (A)                  (B)",
-"choices": [
-"① everyone — contributions",
-"② everyone — experiments",
-"③ scientists — contributions",
-"④ scientists — discoveries",
-"⑤ researchers — experiments"
-],
-"answer": "①",
-"solution": "과학은 모든 사람의 것이며, 평범한 사람들도 과학에 가치 있는 기여를 할 수 있다는 내용이다. (A)에는 '모든 사람'을 뜻하는 everyone이 적절하다. (B)에는 make contributions to(~에 기여하다)라는 표현에 따라 contributions가 알맞다. 따라서 정답은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
-},
-{
 "id": "fill-7efc9ae26f",
 "typeId": "eng-h3-b01-u1m0s0t0",
 "kind": "객관식",
 "diff": 1,
 "body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nKevin Schawinski was an (A)________ researcher. He had to classify images of galaxies according to their (B)________.\n\n     (A)                  (B)",
+"answer": "④",
+"solution": "Kevin Schawinski는 은하를 연구하는 천문학 연구자였으므로 (A)에는 astronomy가 적절하다. 또한 그는 은하의 모양에 따라 이미지를 분류해야 했으므로 (B)에는 shape이 들어가야 한다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "① biology — shape",
 "② astronomy — color",
 "③ physics — size",
 "④ astronomy — shape",
 "⑤ biology — size"
-],
-"answer": "④",
-"solution": "Kevin Schawinski는 은하를 연구하는 천문학 연구자였으므로 (A)에는 astronomy가 적절하다. 또한 그는 은하의 모양에 따라 이미지를 분류해야 했으므로 (B)에는 shape이 들어가야 한다. 따라서 정답은 ④이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-1e8c5e7c90",
@@ -607,131 +25,678 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nOnline media helped (A)________ the word about Galaxy Zoo. As a result, more people began to (B)________ in the project.\n\n     (A)                  (B)",
+"answer": "②",
+"solution": "온라인 매체의 도움으로 Galaxy Zoo가 널리 알려지고 더 많은 사람이 프로젝트에 참여했다는 내용이다. (A)에는 '소식이나 정보를 퍼뜨리다'라는 의미의 spread가 적절하다. (B)에는 participate in(~에 참여하다)이라는 표현에 따라 participate가 알맞다. 따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "① stop — participate",
 "② spread — participate",
 "③ stop — classify",
 "④ spread — disappear",
 "⑤ reduce — disappear"
-],
-"answer": "②",
-"solution": "온라인 매체의 도움으로 Galaxy Zoo가 널리 알려지고 더 많은 사람이 프로젝트에 참여했다는 내용이다. (A)에는 '소식이나 정보를 퍼뜨리다'라는 의미의 spread가 적절하다. (B)에는 participate in(~에 참여하다)이라는 표현에 따라 participate가 알맞다. 따라서 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
-"custom": true
+]
 },
 {
-"id": "fill-e8ca727c91",
+"id": "fill-d52140633b",
 "typeId": "eng-h3-b01-u1m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKevin Schawinski was a young astronomy researcher (A)[studying / studied] black holes and the evolution of galaxies at the University of Oxford. His job there was dull and time-consuming. He had to classify around one million images of galaxies according to their shape. Since they all (B)[looked / looking] similar but were actually shaped slightly differently, the best way to do this was to sort them while looking at each one individually. It took Schawinski a whole week (C)[classify / to classify] just 50,000 galaxies.\n\n(A) - (B) - (C)",
-"choices": [
-"studying - looked - to classify",
-"studying - looking - classify",
-"studied - looked - classify",
-"studied - looking - to classify",
-"studying - looking - to classify"
-],
-"answer": "①",
-"solution": "(A) 앞의 명사 researcher가 black holes를 '연구하는' 것이므로 능동 의미의 현재분사 studying이 알맞다. (B) 접속사 Since가 이끄는 부사절에 동사가 필요하므로 과거시제 동사 looked가 알맞다. (C) 'It takes+사람+시간+to부정사(~하는 데 시간이 걸리다)' 구문이므로 to classify가 알맞다.",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nScience (A)[belongs / is belonged] to ordinary people as well as professional researchers. People without science degrees can help by (B)[classifying / classify] images of galaxies. Their work can make valuable (C)[contribution / contributions] to scientific research.",
+"answer": "③",
+"solution": "belong은 자동사이므로 수동태로 쓰지 않는다. 전치사 by 뒤에는 동명사 classifying이 와야 한다. 셀 수 있는 명사 contribution이 관사 없이 쓰였으므로 복수형 contributions가 적절하다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"belongs — classify — contributions",
+"is belonged — classifying — contributions",
+"belongs — classifying — contributions",
+"belongs — classifying — contribution",
+"is belonged — classify — contribution"
+]
 },
 {
-"id": "fill-d428f17122",
+"id": "fill-11d7407119",
 "typeId": "eng-h3-b01-u1m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe website was kept as simple as possible, with a very basic design and an easy-to-use interface. New visitors (A)[greeted / were greeted] with a brief tutorial that explained the project. Then they were shown an image of a galaxy and asked to click buttons (B)[who / that] described its features. After completion of the tutorial and a little bit of practice, the participants were able to classify galaxies (C)[effective / effectively].\n\n(A) - (B) - (C)",
-"choices": [
-"greeted - who - effective",
-"greeted - that - effectively",
-"were greeted - who - effectively",
-"were greeted - that - effective",
-"were greeted - that - effectively"
-],
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nGalaxy Zoo used a tutorial (A)[that / what] introduced the project to new visitors. The instructions helped them (B)[understand / understanding] how to classify galaxies. After some practice, they were able (C)[identify / to identify] features in the images.",
 "answer": "⑤",
-"solution": "(A) 새로운 방문자들이 튜토리얼로 '맞이된' 것이므로 수동태 were greeted가 알맞다. (B) 선행사 buttons는 사물이므로 주격 관계대명사 that이 알맞고, who는 사람 선행사에 쓴다. (C) 동사 classify를 꾸미는 자리이므로 부사 effectively가 알맞다.",
+"solution": "선행사 a tutorial을 수식하며 관계절의 주어 역할을 하는 that이 적절하다. help는 목적격 보어로 동사원형을 취할 수 있으므로 understand가 맞다. ‘~할 수 있다’는 be able to 구문이므로 to identify를 써야 한다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"that — understanding — to identify",
+"what — understand — to identify",
+"that — understand — identify",
+"what — understanding — identify",
+"that — understand — to identify"
+]
+},
+{
+"id": "fill-e15bf055f7",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nSchawinski found the task of sorting galaxy images (A)[dull / dully]. Each image had to be examined (B)[careful / carefully] because the galaxies differed slightly in shape. He needed help from people (C)[who / which] were willing to take part.",
+"answer": "①",
+"solution": "목적어 the task의 상태를 설명하는 목적격 보어에는 형용사 dull이 적절하다. examined를 수식하려면 부사 carefully가 필요하다. 선행사가 사람인 people이므로 주격 관계대명사는 who가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"dull — carefully — who",
+"dully — carefully — who",
+"dull — careful — which",
+"dully — careful — who",
+"dull — carefully — which"
+]
+},
+{
+"id": "fill-4cfd52be9a",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nWhen Schawinski discussed his difficulty with Lintott, Lintott recommended that he (A)[seek / sought] assistance online. They eventually created Galaxy Zoo, a project (B)[allowing / allowed] ordinary people to help classify galaxies. Its design remained (C)[simple / simply] so that visitors could begin participating easily.",
+"answer": "④",
+"solution": "권고를 나타내는 recommended의 that절에서는 ‘should + 동사원형’의 should가 생략될 수 있으므로 seek가 적절하다. project가 사람들이 참여하도록 허용하는 능동 관계이므로 allowing을 쓴다. remained의 주격 보어에는 형용사 simple이 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"sought — allowing — simple",
+"seek — allowed — simple",
+"seek — allowing — simply",
+"seek — allowing — simple",
+"sought — allowed — simply"
+]
+},
+{
+"id": "fill-68eada1e43",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nThe volunteers (A)[involved / involving] in Galaxy Zoo did not need professional qualifications. They could choose scientific activities (B)[which / in which] they were interested and contribute by examining galaxy images. The project enabled people to spend their time observing galaxies and (C)[recording / to record] their features.",
+"answer": "②",
+"solution": "volunteers가 프로젝트에 관여된 관계이므로 과거분사 involved가 적절하다. be interested in의 전치사 in이 필요하므로 in which를 선택한다. spend time -ing 구문에서 observing과 병렬을 이루는 recording이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"involving — in which — recording",
+"involved — in which — recording",
+"involved — which — recording",
+"involved — in which — to record",
+"involving — which — to record"
+]
+},
+{
+"id": "fill-326c4ac830",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nDuring the first year and a half of Galaxy Zoo, volunteers produced an enormous number of classifications. If it (A)[were not / had not been] for their assistance during that period, Schawinski could not have completed so much work. The project later developed into Zooniverse, one of the online (B)[platform / platforms] that offer ordinary people opportunities (C)[participating / to participate] in scientific research.",
+"answer": "⑤",
+"solution": "과거의 도움을 받지 못했을 상황을 가정하므로 가정법 과거완료 had not been이 필요하다. ‘one of + 복수명사’ 구조이므로 platforms가 맞다. opportunities의 구체적인 내용을 설명하는 to부정사 to participate가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"were not — platforms — to participate",
+"had not been — platform — to participate",
+"had not been — platforms — participating",
+"were not — platform — participating",
+"had not been — platforms — to participate"
+]
+},
+{
+"id": "fill-de9fc58d00",
+"typeId": "eng-h3-b01-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 어법상 가장 알맞게 연결된 것은?\n\nVisitors to Galaxy Zoo were given instructions about the features (A)[what / that] they should look for in a galaxy image. The website made it possible for people with little training (B)[to classify / classifying] galaxies. Without the volunteers who joined the project, the same amount of work would (C)[take / have taken] Schawinski decades to finish on his own.",
+"answer": "①",
+"solution": "선행사 the features가 있고 관계절에서 look for의 목적어가 빠져 있으므로 that이 적절하다. made it possible에서 it은 가목적어이고 to classify 이하가 진목적어이다. 실제로 참여했던 자원봉사자들이 없었을 과거 상황을 가정하므로 would have taken을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"that — to classify — have taken",
+"what — to classify — have taken",
+"that — classifying — have taken",
+"that — to classify — take",
+"what — classifying — take"
+]
 },
 {
 "id": "fill-3041657f9a",
 "typeId": "eng-h3-b01-u1m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nGalaxy Zoo has now grown into Zooniverse, which (A)[is / are] one of the most popular platforms on the Internet for ordinary people who want to participate in science projects. It is (B)[more / most] active than ever before, with about 2 million registered users worldwide. It now offers a wide range of projects in astronomy, biology, physics, and more. If you want to get (C)[involving / involved], you should definitely check it out!\n\n(A) - (B) - (C)",
-"choices": [
-"is - most - involving",
-"are - more - involved",
-"is - more - involved",
-"are - most - involving",
-"is - most - involved"
-],
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)의 괄호 안에서 어법상 알맞은 표현을 바르게 연결한 것은?\n\nGalaxy Zoo has now grown into Zooniverse, which (A)[is / are] one of the most popular platforms on the Internet for ordinary people who want to participate in science projects. It is (B)[more / most] active than ever before, with about 2 million registered users worldwide. It now offers a wide range of projects in astronomy, biology, physics, and more. If you want to get (C)[involving / involved], you should definitely check it out!\n\n      (A) - (B) - (C)",
 "answer": "③",
-"solution": "(A) 관계대명사 which의 선행사는 단수 명사 Zooniverse이므로 단수 동사 is가 알맞다. (B) 뒤에 than이 있으므로 비교급 more가 알맞다. (C) 'get involved(참여하다)'는 과거분사를 쓰는 표현이므로 involved가 알맞다.",
+"solution": "정답은 ③이다.\n\n(A) is: 관계대명사 which는 앞에 나온 단수 명사 Zooniverse를 선행사로 한다. 따라서 관계대명사절의 동사는 선행사의 수에 일치시켜 단수형 is를 써야 한다. 뒤에 나오는 one of the most popular platforms에서 platforms가 복수형이라고 하여 are를 선택해서는 안 된다.\n\n(B) more: 빈칸 뒤에 비교의 기준을 나타내는 than ever before가 있으므로 비교급 more가 알맞다. more active than ever before는 '그 어느 때보다 활발한'이라는 뜻이다. most는 최상급을 만드는 표현이므로 이 문맥에 적절하지 않다.\n\n(C) involved: get involved는 '참여하다, 관여하게 되다'라는 의미의 표현이다. 이때 involved는 과거분사 형태로, 참여한 상태를 나타낸다. involving은 현재분사이므로 get involving으로 쓸 수 없다.\n\n따라서 (A) is, (B) more, (C) involved를 연결한 ③이 정답이다.\n\n오답 분석:\n① (B)의 most를 more로 고쳐야 한다.\n② (A)의 are를 is로 고쳐야 한다.\n④ (C)의 involving을 involved로 고쳐야 한다.\n⑤ (A)의 are를 is로, (B)의 most를 more로, (C)의 involving을 involved로 고쳐야 한다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h3-b01-u1m1s0t0",
-"custom": true
+"custom": true,
+"rv": 1,
+"choices": [
+"is - most - involved",
+"are - more - involved",
+"is - more - involved",
+"is - more - involving",
+"are - most - involving"
+]
+},
+{
+"id": "fill-a80fab6f24",
+"typeId": "eng-h3-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하는 것은?\n\nSchawinski found it difficult to examine the enormous number of galaxy images by himself. When he told Chris Lintott about this problem, Lintott advised him to invite Internet users to help. The two researchers then created Galaxy Zoo, where members of the public could classify galaxies.",
+"answer": "②",
+"solution": "Lintott은 혼자 수많은 은하 이미지를 살피기 어려워하는 Schawinski에게 인터넷 이용자들의 도움을 받으라고 제안했다. 따라서 글의 내용과 일치하는 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Schawinski asked Lintott to classify all the images alone.",
+"Lintott suggested getting assistance from people online.",
+"Galaxy Zoo was designed only for professional astronomers.",
+"Internet users collected photographs of auroras for the project.",
+"Schawinski stopped studying galaxies after meeting Lintott."
+]
+},
+{
+"id": "fill-585f4f4660",
+"typeId": "eng-h3-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 Galaxy Zoo 참가자들이 한 일로 가장 알맞은 것은?\n\nVisitors to Galaxy Zoo first learned how to use the website through a short guide. They then observed individual galaxy images and selected descriptions that matched the galaxies’ visible features. With some practice, ordinary people could perform this task successfully.",
+"answer": "①",
+"solution": "참가자들은 은하 이미지를 관찰한 뒤 눈에 보이는 특징에 맞는 설명을 선택했다. 이는 은하를 모양에 따라 분류한 것이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"They grouped galaxies according to their shapes.",
+"They wrote astronomy textbooks for researchers.",
+"They repaired equipment used to photograph space.",
+"They taught university students how to design websites.",
+"They developed scientific theories without viewing images."
+]
+},
+{
+"id": "fill-da0c2ab0d0",
+"typeId": "eng-h3-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nA group of aurora chasers repeatedly photographed a strange band of light called Steve. Because specialists had not seen such a phenomenon before, further investigation was needed. NASA supported a project in which citizens submitted photographs, and researchers continue to study the phenomenon with the public.",
+"answer": "⑤",
+"solution": "Steve에 관해서는 여러 이론이 있지만 확실하게 증명된 것은 아니다. 따라서 오로라 관찰자들이 모든 이론을 즉시 입증했다는 ⑤는 글과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Aurora chasers took pictures of the unusual light phenomenon.",
+"Specialists considered the phenomenon worthy of further study.",
+"Members of the public supplied photographs for research.",
+"Scientists and citizens are still working together on the mystery.",
+"The aurora chasers immediately proved every theory about Steve."
+]
+},
+{
+"id": "fill-7b6a2aaa42",
+"typeId": "eng-h3-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 통해 추론할 수 있는 것은?\n\nClassifying galaxy images one at a time was far too much work for a single researcher. Galaxy Zoo divided this large task among many volunteers. Its simple instructions and convenient website allowed newcomers to begin contributing after only a small amount of practice.",
+"answer": "①",
+"solution": "Galaxy Zoo는 한 사람이 감당하기 힘든 대규모 작업을 많은 자원봉사자에게 나누어 맡겼다. 이로부터 다수의 참여가 방대한 과학 과제를 해결하는 데 도움이 될 수 있음을 추론할 수 있으므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"A scientific project can benefit by dividing a large task among many people.",
+"Volunteers can participate only after earning an astronomy degree.",
+"Galaxy images can be classified accurately without being observed.",
+"A complicated website is necessary to attract first-time participants.",
+"Citizen science is useful only when professional researchers are absent."
+]
+},
+{
+"id": "fill-97f5d7c7a4",
+"typeId": "eng-h3-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에 이어질 내용으로 가장 알맞은 것은?\n\nSchawinski could examine only a small portion of the galaxy images despite working for days. Looking at the huge amount of unfinished work, he realized that completing it without assistance would be extremely difficult. Later, he described this frustrating situation to his colleague Chris Lintott.",
+"answer": "②",
+"solution": "교과서 내용에서 Lintott은 Schawinski의 어려움을 들은 뒤 인터넷을 통해 다른 사람들의 도움을 받자고 제안한다. 따라서 동료에게 문제를 털어놓았다는 내용 다음에는 ②가 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"a detailed explanation of how black holes produce light",
+"Lintott’s suggestion to seek help through the Internet",
+"a report proving that all galaxies have an identical shape",
+"Schawinski’s decision to replace the images with drawings",
+"Lintott’s refusal to discuss the classification problem"
+]
+},
+{
+"id": "fill-e055da8036",
+"typeId": "eng-h3-b01-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 답할 수 없는 질문은?\n\nCitizen scientists are ordinary people who voluntarily take part in scientific research. Although they may lack formal scientific qualifications, their curiosity and willingness to participate can lead to meaningful contributions. The galaxy-classification project and the investigation of STEVE both show how citizens can work with experts to expand scientific knowledge.",
+"answer": "⑤",
+"solution": "글에는 시민 과학자의 의미, 필요한 태도, 과학 학위가 없는 사람의 기여 가능성, 두 프로젝트의 의의가 제시되어 있다. 그러나 참가자들이 받은 금액에 관한 정보는 없으므로 ⑤에는 답할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Who are citizen scientists?",
+"What qualities can help a person become a citizen scientist?",
+"Can people without science degrees contribute to research?",
+"What do the two projects demonstrate about public participation?",
+"How much money did each citizen scientist receive?"
+]
+},
+{
+"id": "fill-4377e6c3fe",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nScience is not an activity for professional researchers alone. Ordinary people can also (A)[contribute / object] to scientific progress. People who join research projects out of personal interest are called citizen scientists. Their curiosity can lead them to (B)[participate / hesitate] in scientific research, and their efforts can produce (C)[valuable / worthless] results.",
+"answer": "①",
+"solution": "일반인도 과학 발전에 기여하고 연구에 참여할 수 있다는 내용이므로 contribute와 participate가 알맞다. 이러한 노력의 긍정적인 결과를 나타내야 하므로 (C)에는 valuable이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"contribute — participate — valuable",
+"object — participate — valuable",
+"contribute — hesitate — valuable",
+"object — hesitate — worthless",
+"contribute — participate — worthless"
+]
+},
+{
+"id": "fill-6c0a3cae49",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nKevin Schawinski’s research involved putting galaxy images into groups based on their (A)[shape / price]. Although the images appeared similar, there were small differences between them. He therefore needed to examine the images (B)[individually / carelessly]. With so many images to examine, the task was (C)[time-consuming / instant].",
+"answer": "④",
+"solution": "은하 이미지를 형태에 따라 분류하는 작업이므로 (A)는 shape이다. 미세한 차이를 확인하려면 이미지를 개별적으로 살펴야 하고 시간이 많이 걸리므로 individually와 time-consuming이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"price — individually — instant",
+"shape — carelessly — time-consuming",
+"price — carelessly — time-consuming",
+"shape — individually — time-consuming",
+"shape — individually — instant"
+]
+},
+{
+"id": "fill-0bbf65a687",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nThe people who first discovered the phenomenon called STEVE were aurora chasers. Experts have (A)[recognized / denied] their contribution and agree that they deserve credit. Although several theories about STEVE exist, none has been firmly (B)[proven / forgotten]. Scientists and citizens continue to work (C)[together / separately] to understand it.",
+"answer": "②",
+"solution": "전문가들이 오로라 추적자들의 공로를 인정한다는 내용이므로 recognized가 적절하다. 이론들이 확실히 입증되지는 않았으며 과학자와 시민이 계속 협력하므로 proven과 together가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"denied — proven — together",
+"recognized — proven — together",
+"recognized — forgotten — together",
+"denied — forgotten — separately",
+"recognized — proven — separately"
+]
+},
+{
+"id": "fill-697112c06d",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nGalaxy Zoo became widely known with the help of online media. Instead of (A)[restricting / expanding] public awareness of the project, this publicity drew increasing numbers of people to its website. Their participation made it possible to classify far more images than Schawinski could have managed (B)[alone / collectively]. The project thus demonstrated the (C)[limitations / potential] of public participation in scientific research.",
+"answer": "⑤",
+"solution": "홍보로 더 많은 사람이 유입되었으므로 instead of 뒤에는 인지도 확대와 반대되는 restricting이 와야 한다. 참여자들의 공동 작업을 연구자 혼자 수행하는 경우와 비교하므로 alone이 적절하며, 이 사례가 보여 준 것은 시민 참여의 가능성이므로 potential이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"expanding — alone — potential",
+"restricting — collectively — potential",
+"expanding — collectively — limitations",
+"restricting — alone — limitations",
+"restricting — alone — potential"
+]
+},
+{
+"id": "fill-bf0cff48a7",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nIt is easy to picture science as a field (A)[accessible / exclusive] to trained professionals. The examples of citizen science, however, challenge that picture. A person’s lack of a science degree does not necessarily make that person (B)[capable / incapable] of helping research move forward. What matters is that ordinary people can use their interest in science to make a meaningful (C)[contribution / restriction].",
+"answer": "③",
+"solution": "시민 과학 사례가 반박하는 것은 과학이 전문가에게만 한정된다는 인식이므로 exclusive가 적절하다. does not necessarily와 연결하여 학위가 없다고 반드시 기여할 능력이 없는 것은 아니라는 뜻이 되어야 하므로 incapable이 들어가며, make a contribution은 ‘기여하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"accessible — incapable — contribution",
+"exclusive — capable — contribution",
+"exclusive — incapable — contribution",
+"accessible — capable — restriction",
+"exclusive — incapable — restriction"
+]
+},
+{
+"id": "fill-35998d3962",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nZooniverse developed from Galaxy Zoo and offers projects across several scientific fields. Its range of subjects is therefore (A)[broad / narrow], extending beyond astronomy. The platform allows ordinary people to become (B)[participants / spectators] in research by contributing their efforts. Its growth supports the view that scientific work can benefit from greater public (C)[withdrawal / involvement].",
+"answer": "①",
+"solution": "① Zooniverse는 천문학을 넘어 여러 과학 분야의 프로젝트를 제공하므로 주제의 범위가 넓다는 뜻의 broad가 적절하다.\n② 일반인이 연구에 자신의 노력을 보탠다는 내용이므로 단순한 관찰자가 아니라 참여자를 의미하는 participants가 적절하다.\n③ 플랫폼의 성장은 과학 연구가 대중의 적극적인 참여를 통해 이익을 얻을 수 있음을 보여 주므로 involvement가 적절하다.\n따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① broad — participants — involvement",
+"② narrow — participants — involvement",
+"③ broad — spectators — involvement",
+"④ broad — participants — withdrawal",
+"⑤ narrow — spectators — withdrawal"
+]
+},
+{
+"id": "fill-caea77a262",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nFor Schawinski, the difficulty was not that the galaxy images looked entirely unrelated. Rather, their apparent (A)[similarity / diversity] concealed slight differences in shape. A quick impression was therefore no substitute for (B)[superficial / individual] inspection. Although gathering many volunteers did not remove the need to examine the images, it made the enormous workload more (C)[manageable / demanding] than it would have been for one researcher working alone.",
+"answer": "④",
+"solution": "① 은하 이미지들은 전혀 다른 모습이 아니라 겉으로 비슷해 보였으므로 similarity가 적절하다. apparent similarity가 미세한 형태 차이를 감추었다는 의미다.\n② 겉모습만 빠르게 살펴보는 것으로는 충분하지 않았으므로 개별적인 검토를 의미하는 individual inspection이 적절하다. superficial은 피상적인이라는 뜻으로 문맥에 맞지 않는다.\n③ 다수의 자원봉사자가 참여해도 이미지 검토 자체는 필요했지만 연구자 혼자 수행할 때보다 방대한 작업량을 처리하기 쉬워졌으므로 manageable이 적절하다.\n따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① diversity — individual — manageable",
+"② similarity — superficial — manageable",
+"③ diversity — superficial — demanding",
+"④ similarity — individual — manageable",
+"⑤ similarity — individual — demanding"
+]
+},
+{
+"id": "fill-58d8790128",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A), (B), (C)에 들어갈 말로 가장 알맞게 연결된 것은?\n\nGiving the aurora chasers credit for discovering STEVE should not be confused with claiming that its mystery has been solved. Recognition of their contribution does not make the existing theories any less (A)[tentative / conclusive]. Nor does the continuing uncertainty make their discovery less (B)[significant / insignificant]. Had their observations been absent, the phenomenon might have escaped notice altogether. The fact that scientists still seek an explanation therefore calls for continued (C)[dismissal / collaboration] with citizens, whose role in the discovery experts have acknowledged.",
+"answer": "②",
+"solution": "① 오로라 추적자들의 발견 공로를 인정하는 것과 STEVE에 관한 이론이 확정되었다고 판단하는 것은 서로 다르다. does not make the existing theories any less tentative는 기존 이론들이 여전히 잠정적이라는 의미이므로 tentative가 적절하다.\n② Nor does the continuing uncertainty make their discovery less significant는 과학적 설명이 불확실하더라도 발견의 중요성이 줄어드는 것은 아니라는 뜻이다. 따라서 significant가 적절하다.\n③ 시민들의 관찰이 없었다면 현상이 발견되지 못했을 수도 있으며, 과학자들은 여전히 설명을 찾고 있다. 따라서 시민들과의 지속적인 협력을 의미하는 collaboration이 적절하다.\n정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① conclusive — significant — collaboration",
+"② tentative — significant — collaboration",
+"③ tentative — insignificant — collaboration",
+"④ conclusive — insignificant — dismissal",
+"⑤ tentative — significant — dismissal"
+]
+},
+{
+"id": "fill-082c041828",
+"typeId": "eng-h3-b01-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nScience belongs to (A)________, and ordinary people can make valuable (B)________ to science.",
+"answer": "①",
+"solution": "① 문장의 뒷부분에서는 평범한 사람들도 과학에 기여할 수 있다고 설명하므로, 과학이 모든 사람의 것이라는 의미가 되어야 한다. 따라서 (A)에는 everyone이 적절하다.\n② make contributions to는 ~에 기여하다라는 의미의 표현이다. valuable contributions to science는 과학에 대한 가치 있는 기여라는 뜻이므로 (B)에는 contributions가 적절하다.\n③ experiments와 discoveries는 각각 실험과 발견을 뜻하지만, 이 문장에서 강조하는 일반인의 과학적 기여를 나타내는 표현으로는 contributions가 가장 적절하다.\n따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① everyone — contributions",
+"② everyone — experiments",
+"③ scientists — contributions",
+"④ scientists — discoveries",
+"⑤ researchers — experiments"
+]
+},
+{
+"id": "fill-1ab351da91",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nⓐ[Despite / Though] the shortage of money, Kendrick and Eldering remained determined to continue their work. They wanted to expand their research and ⓑ[test / testing] the vaccine with more children.",
+"answer": "①",
+"solution": "ⓐ 뒤에는 명사구 the shortage of money가 있으므로 전치사 Despite가 알맞다. ⓑ는 to에 이어지는 expand와 and로 병렬 연결되므로 동사원형 test가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ Despite — ⓑ test",
+"ⓐ Though — ⓑ test",
+"ⓐ Despite — ⓑ testing",
+"ⓐ Though — ⓑ testing",
+"ⓐ Despite — ⓑ tested"
+]
+},
+{
+"id": "fill-46054b8ae1",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nKendrick and Eldering needed to check the safety of their vaccine. They gave ⓐ[them / themselves] injections of it before conducting trials with children. They wanted to be certain ⓑ[that / what] the vaccine would not harm the children.",
+"answer": "④",
+"solution": "ⓐ는 주어 They가 가리키는 두 연구자 자신을 뜻하므로 재귀대명사 themselves가 알맞다. ⓑ 뒤에는 완전한 절이 이어지므로 접속사 that을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ them — ⓑ that",
+"ⓐ themselves — ⓑ what",
+"ⓐ them — ⓑ what",
+"ⓐ themselves — ⓑ that",
+"ⓐ themselves — ⓑ which"
+]
+},
+{
+"id": "fill-5a4f3e3437",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nThe cough plates were placed in an incubator, ⓐ[that / which] allowed the bacteria to grow. Kendrick and Eldering analyzed the samples while working on a vaccine for children ⓑ[suffering / suffered] from whooping cough.",
+"answer": "②",
+"solution": "ⓐ는 쉼표 뒤에서 앞 내용을 부연하는 계속적 용법의 관계대명사이므로 which가 알맞고 that은 쓸 수 없다. ⓑ는 children이 질병으로 고통받는다는 능동 관계를 나타내므로 현재분사 suffering이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ that — ⓑ suffering",
+"ⓐ which — ⓑ suffering",
+"ⓐ which — ⓑ suffered",
+"ⓐ that — ⓑ suffered",
+"ⓐ what — ⓑ suffering"
+]
+},
+{
+"id": "fill-47fc7e72d4",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nAfter finishing their laboratory work, Kendrick and Eldering were about ⓐ[to leave / leaving] to visit sick children. They moved from one home to another, ⓑ[collecting / collected] bacterial samples. The children, despite the researchers' efforts to develop a vaccine, still ⓒ[struggling / struggled] to breathe.",
+"answer": "⑤",
+"solution": "‘막 ~하려고 하다’는 be about to do로 나타내므로 ⓐ는 to leave이다. ⓑ는 두 연구자가 직접 표본을 수집하는 동시 동작이므로 collecting이 알맞다. 마지막 문장은 주어 The children에 대응하는 서술동사가 필요하므로 ⓒ는 struggled이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ leaving — ⓑ collecting — ⓒ struggled",
+"ⓐ to leave — ⓑ collected — ⓒ struggled",
+"ⓐ to leave — ⓑ collecting — ⓒ struggling",
+"ⓐ leaving — ⓑ collected — ⓒ struggling",
+"ⓐ to leave — ⓑ collecting — ⓒ struggled"
+]
+},
+{
+"id": "fill-065dd7ebe0",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nThe samples that local medical workers supplied ⓐallowed the bacteria to be studied by Kendrick and Eldering. The researchers, who spent long nights examining those samples, ⓑproducing a possible vaccine. Before testing it on children, they needed to be certain ⓒthat it would cause no harmful side effects. As part of their efforts to check its safety, the two researchers injected ⓓthemselves with the vaccine. The children ⓔvaccinating during the first field test were part of the research. Although the results appeared promising, the researchers remained determined to expand the study and ⓕrunning further tests.",
+"answer": "③",
+"solution": "ⓑ는 주어 The researchers의 서술동사 자리이므로 producing을 produced로 고쳐야 한다. ⓔ는 아이들이 접종을 받는 수동 관계이므로 vaccinated로 고쳐야 한다. ⓕ는 to에 이어지는 expand와 병렬을 이루므로 run으로 고쳐야 한다. ⓐ의 allow는 목적어 뒤에 수동형 to부정사도 취할 수 있으므로 allowed the bacteria to be studied는 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓑ, ⓔ, ⓕ",
+"ⓐ, ⓑ, ⓕ",
+"ⓒ, ⓓ, ⓔ"
+]
+},
+{
+"id": "fill-5167013ae7",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nⓐThough the vaccine's apparent effectiveness, further evidence was needed. The researchers hoped to study larger groups of children, with many children still ⓑsuffering from whooping cough. The shortage of funds, which prevented the women from extending their research, ⓒleft them in a desperate situation. Eleanor Roosevelt, ⓓthat visited their laboratory, learned about their efforts. Her visit helped her understand how important their work was and ⓔto recognize the need to support it. With her assistance, the researchers secured the funding that allowed them ⓕconducting a large-scale trial.",
+"answer": "①",
+"solution": "ⓐ 뒤에는 명사구가 있으므로 Though를 Despite로 고쳐야 하며, ⓓ는 계속적 용법의 관계대명사이므로 that을 who로 고쳐야 한다. ⓕ는 allow의 목적격 보어 자리이므로 to conduct로 고쳐야 한다. ⓑ는 with의 목적어인 many children과 능동 관계를 이루는 현재분사로 올바르며, ⓒ는 주어 The shortage of funds의 서술동사이다. help는 목적격 보어로 원형부정사와 to부정사를 모두 허용하므로 ⓔ의 to recognize도 앞의 understand와 병렬로 연결될 수 있다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓔ",
+"ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓓ, ⓔ, ⓕ",
+"ⓑ, ⓒ, ⓔ, ⓕ"
+]
+},
+{
+"id": "fill-fd0dd8f112",
+"typeId": "eng-h3-b01-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 표시된 ⓐ~ⓕ 중 어법상 어색한 것을 모두 고른 것은?\n\nAt the homes they visited, Kendrick and Eldering saw children coughing and struggling ⓐto breathe. The suffering of the children, together with the stories their parents told, ⓑreminding the researchers of the need for a vaccine. After long nights of research, they produced a vaccine and carried out tests to make sure ⓒwhat it was safe. The two women even used the vaccine on ⓓthemselves before beginning trials with children. The results from the children who had been ⓔvaccinated encouraged further research. Yet, with the researchers ⓕfaced a serious shortage of funds, expanding the trials was difficult.",
+"answer": "④",
+"solution": "ⓑ는 주어 The suffering of the children의 서술동사 자리이므로 reminded로 고쳐야 한다. ⓒ 뒤에는 완전한 절이 있으므로 what을 that으로 고쳐야 한다. ⓕ는 with 구문에서 the researchers가 자금 부족에 직면하는 능동 관계를 나타내므로 facing으로 고쳐야 하며, faced를 유지하려면 뒤에 with를 넣어야 한다. ⓐ의 struggle to do, ⓓ의 재귀대명사, ⓔ의 과거완료 수동태는 모두 어법상 올바르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓒ, ⓕ",
+"ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓔ",
+"ⓑ, ⓒ, ⓕ",
+"ⓒ, ⓓ, ⓕ"
+]
 },
 {
 "id": "fill-8b60d11c70",
 "typeId": "eng-h3-b01-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nKendrick and Eldering worked hard to develop a vaccine. They even injected it into ⓐ[them / themselves] to make sure it was safe. ⓑ[Despite / Though] the serious lack of funds, they never gave up. With Eleanor Roosevelt's help, they were finally able ⓒ[securing / to secure] enough funding.",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nKendrick and Eldering worked hard to develop a vaccine. They even injected it into ⓐ[them / themselves] to make sure it was safe. ⓑ[Despite / Though] the serious lack of funds, they never gave up. With Eleanor Roosevelt's help, they were finally able ⓒ[securing / to secure] enough funding.",
+"answer": "②",
+"solution": "ⓐ 주어(They)와 목적어가 동일 대상이므로 재귀대명사 themselves. ⓑ 뒤에 명사구(the serious lack of funds)가 오므로 전치사 Despite(Though는 접속사로 「주어+동사」가 뒤따름). ⓒ be able to+동사원형이므로 to secure. 따라서 정답은 ②.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "ⓐ them  ⓑ Despite  ⓒ to secure",
 "ⓐ themselves  ⓑ Despite  ⓒ to secure",
 "ⓐ themselves  ⓑ Though  ⓒ to secure",
 "ⓐ them  ⓑ Though  ⓒ securing",
 "ⓐ themselves  ⓑ Despite  ⓒ securing"
-],
-"answer": "②",
-"solution": "ⓐ 주어(They)와 목적어가 같은 대상이므로 재귀대명사 themselves가 맞다. ⓑ 뒤에 명사구(the serious lack of funds)가 오므로 전치사 Despite를 써야 한다(Though는 접속사로 뒤에 「주어+동사」가 온다). ⓒ be able to+동사원형 형태이므로 to secure가 맞다. 따라서 정답은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-2e4d33ca18",
 "typeId": "eng-h3-b01-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe patients coughed onto a petri dish, ⓐ[which / what] was then put into an incubator. This allowed the bacteria ⓑ[grow / to grow] into colonies. The two women went from home to home ⓒ[collecting / collected] samples from the sick children.",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nThe patients coughed onto a petri dish, ⓐ[which / what] was then put into an incubator. This allowed the bacteria ⓑ[grow / to grow] into colonies. The two women went from home to home ⓒ[collecting / collected] samples from the sick children.",
+"answer": "③",
+"solution": "ⓐ 앞에 선행사 a petri dish가 있으므로 관계대명사 which(what은 선행사 포함). ⓑ allow+목적어+to부정사 구문이므로 to grow. ⓒ 주어 The two women가 직접 '수집하는' 능동 의미이므로 현재분사 collecting. 따라서 정답은 ③.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "ⓐ which  ⓑ grow  ⓒ collecting",
 "ⓐ what  ⓑ to grow  ⓒ collecting",
 "ⓐ which  ⓑ to grow  ⓒ collecting",
 "ⓐ which  ⓑ to grow  ⓒ collected",
 "ⓐ what  ⓑ grow  ⓒ collected"
-],
-"answer": "③",
-"solution": "ⓐ 앞에 선행사 a petri dish가 있으므로 관계대명사 which를 쓴다(what은 선행사를 포함). ⓑ allow+목적어+to부정사 구문이므로 to grow가 맞다. ⓒ 주어 The two women가 직접 '수집하는' 능동 의미이므로 현재분사 collecting이 알맞다. 따라서 정답은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-40a9475dbe",
 "typeId": "eng-h3-b01-u0m1s0t0",
 "kind": "객관식",
-"diff": 1,
-"body": "윗글의 괄호 ⓐ, ⓑ, ⓒ에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nFor Kendrick and Eldering, a different kind of work was about ⓐ[begin / to begin]. They had to be certain ⓑ[that / what] the vaccine would not have any negative side effects. In the group of 712 ⓒ[vaccinating / vaccinated] children, only four developed whooping cough.",
+"diff": 2,
+"body": "다음 글의 괄호 ⓐ, ⓑ, ⓒ에 들어갈 말로 가장 적절하게 짝지어진 것은?\n\nFor Kendrick and Eldering, a different kind of work was about ⓐ[begin / to begin]. They had to be certain ⓑ[that / what] the vaccine would not have any negative side effects. In the group of 712 ⓒ[vaccinating / vaccinated] children, only four developed whooping cough.",
+"answer": "④",
+"solution": "ⓐ be about to+동사원형(막 ~하려 하다)이므로 to begin. ⓑ 뒤에 완전한 절이 이어지고 '~라는 것을 확신하다'의 의미이므로 접속사 that(what은 불완전한 절). ⓒ children이 '예방접종을 받은' 대상이므로 수동의 과거분사 vaccinated. 따라서 정답은 ④.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "ⓐ begin  ⓑ that  ⓒ vaccinated",
 "ⓐ to begin  ⓑ what  ⓒ vaccinated",
 "ⓐ to begin  ⓑ that  ⓒ vaccinating",
 "ⓐ to begin  ⓑ that  ⓒ vaccinated",
 "ⓐ begin  ⓑ what  ⓒ vaccinating"
-],
-"answer": "④",
-"solution": "ⓐ be about to+동사원형(막 ~하려 하다) 구문이므로 to begin이 맞다. ⓑ 뒤에 완전한 절이 이어지고 '~라는 것을 확신하다'의 의미이므로 접속사 that을 쓴다(what은 불완전한 절). ⓒ children이 '예방접종을 받은' 대상이므로 수동의 의미인 과거분사 vaccinated가 알맞다. 따라서 정답은 ④이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b01-u0m1s0t0",
-"custom": true
+]
 }
 ]

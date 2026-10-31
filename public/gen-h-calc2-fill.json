@@ -12617,5 +12617,53 @@
 "twinGroup": "tw-20738",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-94bf32307a",
+"typeId": "20771",
+"kind": "주관식",
+"diff": 2,
+"body": "함수 $f(x)=(x-3)\\sqrt{x}$가 최솟값을 갖는 $x$의 값을 구하시오.",
+"selfGrade": true,
+"answer": "$1$",
+"solution": "정의역은 $x\\geq 0$이다. $x>0$에서 $f'(x)=\\sqrt{x}+\\dfrac{x-3}{2\\sqrt{x}}=\\dfrac{3(x-1)}{2\\sqrt{x}}$이다. 따라서 $0<x<1$에서 $f'(x)<0$이고, $x>1$에서 $f'(x)>0$이므로 각각 감소하고 증가한다. 또한 $f(0)=0$, $f(1)=-2$이므로 최솟값을 갖는 $x$의 값은 $1$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20771",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b6a6e08638",
+"typeId": "20771",
+"kind": "객관식",
+"diff": 1,
+"body": "함수 $y=x-4\\sqrt{x}$의 최솟값은?",
+"choices": [
+"$-8$",
+"$-4$",
+"$-3$",
+"$0$",
+"$4$"
+],
+"answer": "②",
+"solution": "정의역은 $x\\geq 0$이다. $x>0$에서 $y'=1-\\dfrac{2}{\\sqrt{x}}=\\dfrac{\\sqrt{x}-2}{\\sqrt{x}}$이다. 따라서 $0<x<4$에서 $y'<0$이고, $x>4$에서 $y'>0$이므로 각각 감소하고 증가한다. $x=0$에서의 함숫값은 $0$이고, $x=4$에서의 함숫값은 $4-4\\sqrt{4}=-4$이므로 최솟값은 $-4$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20771",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0aec2220e8",
+"typeId": "20771",
+"kind": "주관식",
+"diff": 2,
+"body": "함수 $f(x)=-x\\sqrt{x+6}$의 최댓값을 구하시오.",
+"selfGrade": true,
+"answer": "$4\\sqrt{2}$",
+"solution": "정의역은 $x\\geq -6$이다. $x>-6$에서 $f'(x)=-\\sqrt{x+6}-\\dfrac{x}{2\\sqrt{x+6}}=-\\dfrac{3(x+4)}{2\\sqrt{x+6}}$이다. 따라서 $-6<x<-4$에서 $f'(x)>0$이고, $x>-4$에서 $f'(x)<0$이므로 각각 증가하고 감소한다. $f(-6)=0$, $f(-4)=4\\sqrt{2}$이므로 최댓값은 $4\\sqrt{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-20771",
+"custom": true,
+"rv": 1
 }
 ]

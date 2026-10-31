@@ -1,436 +1,5 @@
 [
 {
-"id": "fill-b3dd0601c1",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nAt Phillip Island, visitors watched little blue penguins return from the sea. To protect the birds, visitors had to remain (A)[quiet / noisy] while watching them. Camera flashes were not allowed because they might (B)[scare / please] the penguins. The penguins came back to their burrows to feed their young and (C)[rest / hunt] after fishing at sea.",
-"choices": [
-"quiet — scare — rest",
-"noisy — scare — rest",
-"quiet — please — rest",
-"quiet — scare — hunt",
-"noisy — please — hunt"
-],
-"answer": "①",
-"solution": "펭귄을 보호하며 관찰하려면 조용히 있어야 하므로 (A)에는 quiet가 적절하다. 카메라 플래시는 펭귄을 놀라게 할 수 있으므로 (B)는 scare이며, 바다에서 먹이를 잡고 돌아온 펭귄은 새끼에게 먹이를 주고 쉬므로 (C)는 rest이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-aee0c40bea",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nUluru's appearance made a strong impression on the traveler. The rock looked (A)[enormous / tiny], and its red surface stood out against the blue sky. Although its original color was gray, oxidation of the iron in it made it (B)[red / green]. Watching its changing colors at sunset became a (C)[wonderful / terrible] experience that the traveler remembered with admiration.",
-"choices": [
-"tiny — red — wonderful",
-"enormous — green — wonderful",
-"enormous — red — terrible",
-"tiny — green — terrible",
-"enormous — red — wonderful"
-],
-"answer": "⑤",
-"solution": "울루루의 거대한 크기에 감탄하는 내용이므로 (A)는 enormous이다. 철 성분의 산화로 붉어졌으므로 (B)는 red이고, 감탄하며 기억하는 일몰 경험이므로 (C)는 wonderful이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-42f29c78cb",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe traveler went snorkeling near Lady Elliot Island to get a (A)[closer / more distant] view of the coral reef. The reef's many colors made it look (B)[beautiful / unattractive]. Later, the traveler heard that coral bleaching was damaging parts of the Great Barrier Reef and hoped those areas would (C)[recover / worsen].",
-"choices": [
-"closer — unattractive — recover",
-"more distant — beautiful — recover",
-"closer — beautiful — recover",
-"closer — beautiful — worsen",
-"more distant — unattractive — worsen"
-],
-"answer": "③",
-"solution": "산호초를 더 가까이 보기 위해 스노클링을 했으므로 (A)는 closer이다. 다채로운 색채를 긍정적으로 묘사하므로 (B)는 beautiful이며, 백화 현상으로 손상된 지역에 바라는 것은 회복이므로 (C)는 recover이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-2ec9558650",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe penguin jumpers displayed at the visitor center were more than attractive objects. Following an oil spill, they served a (A)[practical / purely decorative] purpose. By covering the penguins' bodies, they helped (B)[prevent / encourage] the birds from swallowing oil on their feathers. Learning about this use of clothing showed the traveler how (C)[inventive / indifferent] people had been in their efforts to protect the birds.",
-"choices": [
-"practical — encourage — inventive",
-"practical — prevent — inventive",
-"purely decorative — prevent — inventive",
-"practical — prevent — indifferent",
-"purely decorative — encourage — indifferent"
-],
-"answer": "②",
-"solution": "점퍼는 기름을 삼키지 않도록 돕는 실제 기능이 있었으므로 (A)는 practical, (B)는 prevent이다. 옷을 활용해 펭귄을 보호한 방식은 창의적인 노력을 보여 주므로 (C)는 inventive가 적절하다. indifferent는 ‘무관심한’이라는 뜻으로 보호하려는 노력과 어울리지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-34c331a384",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nDuring the Kakadu tour, Victor helped the visitors understand Aboriginal rock art. The images (A)[portrayed / erased] stories through figures such as a spirit making lightning and a hunter with a spear. An X-ray-style fish drawing revealed its (B)[internal / external] parts rather than merely its outline. This allowed viewers to identify which parts were (C)[edible / poisonous]—that is, suitable for eating.",
-"choices": [
-"portrayed — external — edible",
-"erased — internal — edible",
-"portrayed — internal — poisonous",
-"portrayed — internal — edible",
-"erased — external — poisonous"
-],
-"answer": "④",
-"solution": "암벽화는 원주민의 이야기를 그림으로 나타내므로 (A)는 portrayed이다. 엑스레이 양식은 물고기의 내부를 드러내므로 (B)는 internal이며, suitable for eating이라는 설명에 해당하는 (C)는 edible이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-4da5bf5f44",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nSeeing many manta rays while snorkeling did not mean that their species was safe. Despite their (A)[abundance / scarcity] in the traveler's immediate view, they were endangered. Similarly, the colorful reef that impressed the traveler did not prove that the entire reef system was in good (B)[condition / danger]. The later news of bleaching elsewhere therefore gave the traveler reason for (C)[concern / relief], even after such a beautiful underwater experience.",
-"choices": [
-"abundance — condition — concern",
-"scarcity — condition — concern",
-"abundance — danger — concern",
-"abundance — condition — relief",
-"scarcity — danger — relief"
-],
-"answer": "①",
-"solution": "여행자가 눈앞에서 많은 만타가오리를 보았다는 국지적 상황을 나타내므로 (A)는 abundance이다. 일부 산호초가 아름답다는 사실만으로 전체 산호초의 상태가 좋다고 할 수는 없으므로 (B)는 condition이다. 다른 지역의 백화 현상은 안도보다 걱정을 불러일으키므로 (C)는 concern이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-06e0ab5a99",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nUluru's red appearance might lead a visitor to assume that red was its original color. The gray areas visible in some caves, however, (A)[challenge / support] that assumption. Its familiar redness resulted from iron reacting with oxygen, a process that occurred (B)[gradually / instantaneously] over time. The sunset presented a different kind of color change: the sequence of visible colors was (C)[dependent on / independent of] the sun's position and the strength of its light.",
-"choices": [
-"support — gradually — dependent on",
-"challenge — instantaneously — dependent on",
-"challenge — gradually — independent of",
-"support — instantaneously — independent of",
-"challenge — gradually — dependent on"
-],
-"answer": "⑤",
-"solution": "동굴에서 보이는 회색은 붉은색이 원래 색이었다는 추정에 의문을 제기하므로 (A)는 challenge이다. 산화가 시간에 걸쳐 일어났으므로 (B)는 gradually이다. 일몰 때 보이는 색의 변화는 태양의 위치와 빛의 세기에 따라 달라지므로 (C)는 dependent on이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-9a189affff",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nAt Phillip Island, two forms of penguin protection served different purposes. The viewing platforms and the ban on photography placed limits on visitors. These limits were intended to (A)[minimize / intensify] the disturbance associated with human observation. The jumpers used after the oil spill, by contrast, addressed a danger already present on the birds themselves. Their value lay less in their visual appeal than in their ability to (B)[inhibit / facilitate] the swallowing of oil. Thus, the attractive display at the visitor center should not lead viewers to (C)[overlook / overstate] the protective function that had made the jumpers useful.",
-"choices": [
-"minimize — facilitate — overlook",
-"intensify — inhibit — overlook",
-"minimize — inhibit — overlook",
-"minimize — inhibit — overstate",
-"intensify — facilitate — overstate"
-],
-"answer": "③",
-"solution": "관람 제한의 목적은 인간의 관찰로 생기는 방해를 최소화하는 것이므로 (A)는 minimize이다. less in A than in B는 A보다 B에 가치가 있다는 뜻이며, 점퍼의 핵심 기능은 기름을 삼키는 것을 억제하는 것이므로 (B)는 inhibit이다. 매력적인 전시 모습 때문에 실제 보호 기능을 간과해서는 안 된다는 결론이므로 (C)는 overlook이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-69d8d3829b",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe traveler's observations of Uluru and the Great Barrier Reef illustrate why appearance requires interpretation. Uluru's gray cave surfaces did not contradict the explanation of its red exterior; they were (A)[consistent / incompatible] with the account that the rock had originally been gray before oxidation gave it its familiar color. At the reef, however, the impressive colors seen near Lady Elliot Island were insufficient to (B)[warrant / undermine] the conclusion that the entire reef system was healthy. Reports of bleaching elsewhere did not erase the beauty of the local scene, but they did (C)[qualify / reinforce] any broader claim of good health based on that scene alone.",
-"choices": [
-"consistent — undermine — qualify",
-"consistent — warrant — qualify",
-"incompatible — warrant — qualify",
-"consistent — warrant — reinforce",
-"incompatible — undermine — reinforce"
-],
-"answer": "②",
-"solution": "회색 동굴 표면은 울루루가 원래 회색이었다는 설명과 일치하므로 (A)는 consistent이다. 일부 지역의 아름다운 색만으로 전체 산호초가 건강하다는 결론을 정당화하기에는 불충분하므로 (B)는 warrant이다. 다른 지역의 백화 현상은 그러한 일반화의 범위를 제한하므로 (C)는 qualify이며, 여기서는 ‘자격을 주다’가 아니라 ‘단서를 달거나 한정하다’라는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-cd9e723a86",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 중 어법상 옳은 문장은?",
-"choices": [
-"I watched the sea turtles swam near the coral reef.",
-"The beautiful coral reefs was visible under the water.",
-"Many manta rays were gliding elegantly through the water.",
-"It was the tropical fish what impressed me most.",
-"The water around the island looked beautifully."
-],
-"answer": "③",
-"solution": "③의 「were gliding」은 과거진행형으로 주어인 복수 명사와 알맞게 호응한다. ①은 「swim」 또는 「swimming」, ②는 「were」, ④는 「that」, ⑤는 형용사 「beautiful」로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-cd9e723a86",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 중 어법상 옳은 문장은?",
-"choices": [
-"One drawing what Victor introduced showed the inside of a fish.",
-"Kakadu has been home to Aboriginal people for over 40,000 years.",
-"Victor explained us that the drawings contained Aboriginal stories.",
-"The saltwater crocodiles in the region grows up to six meters long.",
-"Seeing the crocodiles at close range were an unforgettable experience."
-],
-"answer": "②",
-"solution": "②의 「has been」은 과거부터 현재까지 이어지는 상태를 나타내며 단수 주어 Kakadu와도 호응한다. ①은 「that」, ③은 「explained to us」, ④는 「grow」, ⑤는 「was」가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-f79f41f1d6",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nSeeing Uluru at sunset (A)[was / were] the highlight of the visit. Its colors (B)[changed / changing] from red to deep orange as the sun sank. I found it impossible (C)[describe / to describe] the beauty in words.",
-"choices": [
-"was ― changing ― describe",
-"were ― changed ― to describe",
-"was ― changed ― describe",
-"was ― changed ― to describe",
-"were ― changing ― to describe"
-],
-"answer": "④",
-"solution": "동명사구 「Seeing Uluru at sunset」은 단수로 취급하므로 (A)는 was이다. 문장의 서술어가 필요하므로 (B)는 changed이고, 「find it impossible to do」 구조에 따라 (C)는 to describe가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-6d8567e97c",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nAs the plane neared Lady Elliot Island, the Great Barrier Reef came into view, (A)[stretching / stretched] toward the horizon. In the water, several manta rays could be seen (B)[glided / gliding] gracefully. It was the colorful coral reef (C)[what / that] held my attention the longest.",
-"choices": [
-"stretched ― glided ― what",
-"stretching ― glided ― that",
-"stretched ― gliding ― that",
-"stretching ― gliding ― what",
-"stretching ― gliding ― that"
-],
-"answer": "⑤",
-"solution": "(A)는 능동적으로 뻗어 있는 산호초를 설명하므로 stretching이 알맞다. 지각동사의 수동태 뒤에서는 현재분사 gliding을 쓰며, 「It was ~ that ...」 강조 구문이므로 (C)는 that이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-f43e515a05",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 중 밑줄 친 부분이 어법상 옳지 않은 것은?",
-"choices": [
-"The sea appeared blue and green, depending on its depth and the coral formations below.",
-"Endless patches of white sand added to the breathtaking scenery.",
-"It was the coral reef that impressed the traveler most that day.",
-"Many parts of the Great Barrier Reef suffers from coral bleaching.",
-"The traveler hoped that the damaged reef would recover soon."
-],
-"answer": "④",
-"solution": "④의 주어는 복수 명사구 「Many parts of the Great Barrier Reef」이므로 동사도 복수형 suffer를 써야 한다. 나머지 문장에서는 분사구문, 수 일치, 강조 구문 및 목적절이 모두 적절하게 사용되었다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-b3046df0ad",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThere are several regions (A)[which / where] travelers can visit to see the Great Barrier Reef. Lady Elliot Island, (B)[which / where] beautiful coral reefs and manta rays can be observed, lies in its southern region. From the plane, the traveler saw the reef (C)[stretching / stretched] across the sea. He later learned about coral bleaching, (D)[what / which] turns affected parts of the reef white.",
-"choices": [
-"where ― which ― stretched ― what",
-"which ― where ― stretching ― which",
-"which ― which ― stretched ― which",
-"where ― where ― stretching ― what",
-"which ― where ― stretched ― what"
-],
-"answer": "②",
-"solution": "(A)는 visit의 목적어 역할을 하므로 관계대명사 which가 필요하고, (B)는 완전한 절이 이어지므로 관계부사 where가 알맞다. 「see＋목적어＋현재분사」에 따라 (C)는 stretching이며, 선행 내용인 coral bleaching을 부연하는 (D)는 which이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-19c9594167",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 중 어법상 옳지 않은 문장은?",
-"choices": [
-"Led by Victor, the visitors learned about Aboriginal culture in Kakadu.",
-"Victor introduced rock art sites depicting Aboriginal stories to the visitors.",
-"One of the drawings showed the insides of a fish in an X-ray style.",
-"Other drawings included a spirit creating lightning and a hunter holding a spear.",
-"While crossing the Yellow River, more than thirty crocodiles were spotted by the visitors."
-],
-"answer": "⑤",
-"solution": "⑤의 「While crossing the Yellow River」의 의미상 주체는 visitors이지만 주절의 주어는 crocodiles이므로 잘못된 분사구문이다. 「While the visitors were crossing the Yellow River」와 같이 고쳐야 의미상 주어가 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-1167dc0ffc",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장에서 밑줄 친 maintain과 의미가 가장 가까운 것은?\n\nIt is often difficult to maintain a good habit for a long time.",
-"choices": [
-"give up",
-"keep",
-"hide",
-"replace",
-"examine"
-],
-"answer": "②",
-"solution": "maintain은 어떤 상태나 행동을 계속 ‘유지하다’라는 뜻이다. 문맥상 좋은 습관을 오랫동안 지속한다는 의미이므로 keep이 가장 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-58de504864",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장에서 밑줄 친 vague의 의미로 가장 적절한 것은?\n\nA vague plan such as “I will exercise someday” does not provide a clear cue.",
-"choices": [
-"not clearly expressed",
-"easy to remember",
-"repeated regularly",
-"closely connected",
-"highly attractive"
-],
-"answer": "①",
-"solution": "vague는 내용이 분명하거나 구체적이지 않은 상태를 나타낸다. ‘언젠가 운동하겠다’는 계획은 정확한 시간과 장소가 없으므로 not clearly expressed가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-70010bcd15",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA new habit is more likely to last when it is in ________ with the identity you believe you have.",
-"choices": [
-"conflict",
-"harmony",
-"danger",
-"silence",
-"exchange"
-],
-"answer": "②",
-"solution": "본문에서는 새로운 습관과 자신의 정체성이 서로 조화를 이루어야 그 습관이 지속될 수 있다고 설명한다. 따라서 ‘조화’를 뜻하는 harmony가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-cea17077ef",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nTo make a habit automatic, first choose an obvious cue that can (A)[spark / prevent] the desired behavior. Then make the behavior attractive so that your motivation (B)[increases / disappears]. If the habit loop operates smoothly, the behavior can be performed with (C)[less / greater] effort.",
-"choices": [
-"spark ― increases ― less",
-"spark ― disappears ― greater",
-"prevent ― increases ― less",
-"prevent ― disappears ― less",
-"spark ― increases ― greater"
-],
-"answer": "①",
-"solution": "명확한 신호는 원하는 행동을 촉발하고, 매력적인 행동은 동기를 높인다. 또한 습관 고리가 원활하게 작동하면 더 적은 노력으로 행동할 수 있으므로 spark, increases, less가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-f5c417c9a4",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 중 밑줄 친 단어의 영영풀이가 문맥상 적절하지 않은 것은?\n\n① cue: something that causes a particular action to begin\n② craving: a powerful desire for something\n③ outcome: the final result of an action or process\n④ integrate: to keep two things completely apart\n⑤ fundamental: basic and more important than other things",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "integrate는 서로 다른 것을 결합하여 전체의 일부가 되게 한다는 뜻이다. ‘두 가지를 완전히 분리된 상태로 두다’라는 ④의 풀이는 separate에 가까우므로 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-3158449b4f",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 빈칸 (A)~(C)에 들어갈 어휘로 가장 적절한 것은?\n\nAn action plan should be specific rather than (A)________, because a clear time and location make the cue more obvious. Habit stacking then (B)________ a new behavior with a current habit. By repeatedly forming this connection, the new behavior can become firmly (C)________ in daily life.",
-"choices": [
-"vague ― pairs ― rooted",
-"attractive ― separates ― released",
-"vague ― prevents ― desired",
-"fundamental ― pairs ― avoided",
-"specific ― bundles ― increased"
-],
-"answer": "①",
-"solution": "구체적인 계획은 vague한 계획과 대조되며, 습관 쌓기는 기존 습관과 새로운 행동을 서로 pair한다. 이러한 연결을 반복하면 새로운 행동이 일상에 firmly rooted, 즉 확고히 자리 잡게 되므로 ①이 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
-"id": "fill-cc032c5219",
-"typeId": "eng-h3-b03-u0m0s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 각 영영풀이에 해당하는 본문의 어휘를 순서대로 쓰시오.\n\n(A) basic, essential, and more important than anything else\n(B) smoothly and continuously, without noticeable interruptions\n(C) the act of connecting an action one wants to do with a habit one needs to perform\n\n※ (C)는 두 단어로 쓸 것.",
-"selfGrade": true,
-"answer": "fundamental, seamlessly, temptation bundling",
-"solution": "(A)는 가장 기본적이고 본질적인 것을 뜻하므로 fundamental이다. (B)는 끊김 없이 자연스럽게 이루어지는 방식을 나타내므로 seamlessly이다. (C)는 원하는 행동과 필요한 습관을 연결하는 전략이므로 temptation bundling이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
-},
-{
 "id": "fill-6877a0354d",
 "typeId": "eng-h3-b03-u0m1s0t0",
 "kind": "객관식",
@@ -558,253 +127,6 @@
 "custom": true
 },
 {
-"id": "fill-60b860bc67",
-"typeId": "eng-h3-b03-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 내용과 일치하는 것은?\n\nOur first destination was Phillip Island, which is just a two-hour drive from Melbourne and is famous for its \"penguin parade.\" This unique parade features little blue penguins, measuring only 35 to 42 centimeters in height. When we arrived at the beach, we were guided to carefully designed viewing platforms. We were also prohibited from taking photos, as bright lights and sudden flashes could frighten the penguins. The penguin parade took place in the evening when the penguins returned from the ocean to the shore. The penguins leave their burrows early in the morning, spend the day fishing, and then come home to feed their young and rest.",
-"choices": [
-"Phillip Island is about a two-hour flight away from Melbourne.",
-"Little blue penguins are between 35 and 42 centimeters tall.",
-"Visitors were allowed to take photos of the penguins freely.",
-"The penguins came back to the shore early in the morning.",
-"The penguins spent the entire day resting in their burrows."
-],
-"answer": "②",
-"solution": "작은 푸른 펭귄은 키가 35~42cm라고 했으므로 ②가 일치한다. 필립섬은 멜버른에서 차로 두 시간 거리(①은 비행기), 밝은 빛이 펭귄을 놀라게 해 사진 촬영이 금지되었고(③), 펭귄은 저녁에 해변으로 돌아오며(④), 낮에는 물고기를 잡으며 보낸다(⑤)고 했으므로 나머지는 모두 틀리다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-3ce52817ea",
-"typeId": "eng-h3-b03-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nOur final destination was Uluru, the largest rock in the world. I had longed to see it in person ever since I came across a picture of it a few years ago. From a distance, it looked like a huge red dome, providing an amazing contrast against the clear blue sky. The next day, we walked around its 10-kilometer base. My uncle informed me that Uluru was naturally gray, but that its iron content had oxidized over time, giving it its iconic red color. The highlight of our visit was the sunset, when the colors transformed from red to deep orange and then to purple as the sun sank below the horizon.",
-"choices": [
-"Uluru is the largest rock in the world.",
-"From a distance, Uluru looked like a huge red dome against the blue sky.",
-"The writer and his group walked around Uluru's 10-kilometer base.",
-"Uluru was originally red but gradually turned gray as its iron oxidized.",
-"At sunset, Uluru's colors changed from red to orange and then to purple."
-],
-"answer": "④",
-"solution": "우루루는 원래 회색이었으나 철분이 산화되어 상징적인 붉은색을 띠게 되었다고 했다. ④는 색의 변화 방향을 뒤바꾼 것이므로 일치하지 않는다. 나머지 ①②③⑤는 모두 본문과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-d2b09fa0ec",
-"typeId": "eng-h3-b03-u1m3s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nOne of the sites I was most excited about was the Great Barrier Reef, the world's largest coral reef system. I chose to explore Lady Elliot Island in the southern region, which is known for its beautiful coral reefs and manta rays. As our plane approached land, I spotted the reef stretching as far as I could see. As I wanted to explore the coral reef more closely, I went snorkeling. The first sight that greeted me in the water was manta rays. Even though they are endangered, I witnessed many of them gliding through the water. My uncle later informed me that many parts of the reef, especially in the northern region, suffer from coral bleaching, which turns the reef white.",
-"choices": [
-"The Great Barrier Reef is the world's largest coral reef system.",
-"The writer explored Lady Elliot Island in the northern region of the reef.",
-"The writer went snorkeling to see the coral reef more closely.",
-"Although manta rays are endangered, the writer saw many of them.",
-"The northern region of the reef suffers from coral bleaching."
-],
-"answer": "②",
-"solution": "글쓴이는 '남쪽(southern) 지역'의 Lady Elliot Island를 택해 탐험했다. ②는 이를 '북쪽'으로 바꾸었으므로 일치하지 않는다. 특히 산호 백화 현상이 심한 곳이 북쪽 지역이라는 ⑤와 혼동하지 않도록 주의한다. 나머지는 모두 본문과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-c16dae0590",
-"typeId": "eng-h3-b03-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 바로 뒤에 이어질 내용으로 가장 알맞은 것은?\n\nThis past summer, I had the remarkable opportunity to spend a month in Australia. My uncle, a wildlife biologist conducting research on Australian animals, invited me to join him on an ecotour. Upon arriving in Melbourne, I was greeted by the chilly air, a sharp contrast to the humid heat I had left behind in Korea. My trip to Australia was filled with visits to remarkable places and encounters with incredible nature. I will share four of the most memorable destinations from my journey.",
-"choices": [
-"detailed accounts of the four most memorable places the writer visited in Australia",
-"the reasons why the writer's uncle became a wildlife biologist in Australia",
-"the long preparations the writer made before leaving Korea for Australia",
-"the difficulties the writer faced because of Australia's chilly weather",
-"advice on how to plan an affordable month-long ecotour in Australia"
-],
-"answer": "①",
-"solution": "마지막 문장에서 여정 중 '가장 기억에 남는 네 곳(four of the most memorable destinations)'을 나누겠다고 예고했다. 따라서 바로 뒤에는 그 네 장소에 관한 구체적인 이야기가 이어지는 것이 자연스럽다. ②③④⑤는 본문이 예고한 내용과 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-a042d531d2",
-"typeId": "eng-h3-b03-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 내용과 일치하지 않는 것은?\n\nKakadu National Park is the largest national park in northern Australia. The landscape resembled an ocean filled with green eucalyptus trees. Perhaps the only drawback was that, being in a remote region, we had no Wi-Fi connection. One of the highlights of our visit was our tour led by Victor, an Aboriginal guide. He explained that Kakadu has been home to Aboriginal people for over 40,000 years. He also introduced us to rock art sites depicting Aboriginal stories. One drawing was done in an X-ray style, illustrating the insides of a fish to show which parts were edible. Kakadu is also famous for its saltwater crocodiles, as there are around 10,000 living in the region. They are the largest of all crocodile species and grow up to six meters long.",
-"choices": [
-"Kakadu is the largest national park in northern Australia.",
-"Because of its remote location, the park had no Wi-Fi connection.",
-"Victor said Kakadu had been home to Aboriginal people for over 4,000 years.",
-"An X-ray-style drawing showed which parts of a fish were edible.",
-"Saltwater crocodiles are the largest of all crocodile species."
-],
-"answer": "③",
-"solution": "Victor는 카카두가 4만 년(over 40,000 years) 넘게 원주민의 터전이었다고 설명했다. ③은 이를 '4천 년(4,000 years)'으로 바꾼 숫자 함정이므로 일치하지 않는다. 나머지 ①②④⑤는 모두 본문과 일치한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-9b0b40b7ad",
-"typeId": "eng-h3-b03-u1m3s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "윗글의 내용으로 보아, Salar de Uyuni가 '세계에서 가장 큰 거울'이 되는 이유로 가장 알맞은 것은?\n\nLocated in South America, Salar de Uyuni is the largest salt flat in the world. One of the highlights is taking incredible photos on the mirror-like salt flat. In the wet season, the flat is covered with a thin layer of water, which makes it the world's largest mirror. Don't worry about capturing the perfect shot, as our guides are highly skilled photographers. You'll also explore other natural wonders including the Laguna Colorada, a red lake filled with flamingos. At the end of the day, you can relax in comfort at a hotel made entirely of salt.",
-"choices": [
-"Because a thin layer of water covers the flat during the wet season.",
-"Because the salt on the flat shines brightly under the strong sun.",
-"Because the skilled guides polish the surface of the salt flat.",
-"Because the red lake reflects the flamingos onto the flat.",
-"Because the hotel made of salt stands in the middle of the flat."
-],
-"answer": "①",
-"solution": "본문에서 우기(wet season)에 소금 평원이 얇은 물층으로 덮여 세계에서 가장 큰 거울이 된다고 했으므로 ①이 정답이다. 밝은 햇빛·가이드·붉은 호수·소금 호텔은 모두 거울이 되는 원인과는 관련이 없는 함정 선지다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
-"custom": true
-},
-{
-"id": "fill-40b71a8345",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWhen we arrived at the beach, we were guided to the viewing platforms so that we could watch the little blue penguins without _______ them.",
-"choices": [
-"disturbing",
-"protecting",
-"feeding",
-"greeting",
-"counting"
-],
-"answer": "①",
-"solution": "펭귄을 '방해하지' 않기 위해 전망대로 안내되었다는 흐름이므로 disturbing(방해하는)이 알맞다. protect(보호하다), feed(먹이를 주다), greet(인사하다), count(세다)는 '방해하지 않고 보려고 했다'는 문맥에 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-08de0b64fb",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nAlthough manta rays are _______, I was lucky enough to see many of them gliding gracefully through the water near Lady Elliot Island.",
-"choices": [
-"common",
-"endangered",
-"dangerous",
-"noisy",
-"harmless"
-],
-"answer": "②",
-"solution": "manta ray(쥐가오리)는 멸종 위기에 처한 동물로, '비록 멸종 위기에 처해 있지만' 운 좋게 많이 보았다는 대조의 흐름이 자연스럽다. 따라서 endangered(멸종 위기에 처한)가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-683ea72c6c",
-"typeId": "eng-h3-b03-u1m0s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nUluru was originally gray, but its iron content had _______ over time, giving it its iconic red color.",
-"choices": [
-"oxidized",
-"frozen",
-"disappeared",
-"melted",
-"cooled"
-],
-"answer": "①",
-"solution": "원래 회색이던 Uluru가 철 성분이 '산화되어' 상징적인 붉은색을 띠게 되었다는 내용이므로 oxidized(산화되었다)가 알맞다. 얼거나 사라지거나 녹거나 식었다는 선택지는 붉은색이 된 이유로 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-a1fed8bebc",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn Lady Elliot Island, I went snorkeling in the clear water. I witnessed many manta rays (A)[to glide / gliding] gracefully below me. The coral reef (B)[stretching / stretched] beneath the surface was full of color. It was the reef (C)[that / what] amazed me the most.\n\n(A) / (B) / (C)",
-"choices": [
-"to glide / stretching / that",
-"gliding / stretching / that",
-"gliding / stretched / what",
-"to glide / stretched / that",
-"gliding / stretching / what"
-],
-"answer": "②",
-"solution": "(A) 지각동사 witness는 목적어 뒤에 현재분사(-ing)나 원형부정사를 쓰므로 to glide가 아닌 gliding이 맞다. (B) reef가 '펼쳐져 있는' 능동·자동사 의미이므로 현재분사 stretching이 옳다. (C) 선행사 the reef를 받으며 뒤 문장의 주어 역할을 하는 관계대명사 that이 맞고, what은 선행사가 있으면 쓸 수 없다. 따라서 gliding/stretching/that인 ②가 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-118fa26205",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn Kakadu, our guide Victor showed us rock art (A)[that / what] depicted Aboriginal stories. One drawing showed a spirit (B)[created / creating] lightning. Being able to see the saltwater crocodiles right in front of me (C)[was / were] truly exciting.\n\n(A) / (B) / (C)",
-"choices": [
-"that / created / was",
-"what / creating / were",
-"that / creating / was",
-"what / created / was",
-"that / creating / were"
-],
-"answer": "③",
-"solution": "(A) 선행사 rock art가 있으므로 관계대명사 that이 맞고 what은 선행사를 취할 수 없다. (B) spirit이 번개를 '만들어 내는' 능동 관계이므로 현재분사 creating이 옳다. (C) 주어가 동명사구 Being able to see ...로 단수 취급하므로 was가 맞다. 가까운 복수명사 crocodiles에 수를 맞추지 않도록 주의한다. 따라서 ③이 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-cbfe001bbd",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nUluru is the largest rock in the world. The colors of the sunsets at Uluru (A)[change / changes] over time based on the sun's position. We walked around its base, (B)[where / which] we saw numerous caves. It was impossible (C)[to find / to be found] words to describe the beauty.\n\n(A) / (B) / (C)",
-"choices": [
-"change / where / to find",
-"changes / where / to find",
-"change / which / to be found",
-"change / where / to be found",
-"changes / which / to find"
-],
-"answer": "①",
-"solution": "(A) 주어의 핵심은 복수명사 The colors이므로 동사는 change가 맞다. (B) 뒤 문장이 완전하고 '그 밑동에서' 라는 장소 의미이므로 관계부사 where가 옳다. (C) '~할 말을 찾는 것이 불가능했다'라는 능동 의미이며 뒤에 목적어 words가 있으므로 to find가 맞다. 따라서 ①이 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
-"id": "fill-a7bd23a2e4",
-"typeId": "eng-h3-b03-u1m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "윗글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nWhile crossing the Yellow River in Kakadu, we spotted more than 30 saltwater crocodiles, which are the largest of all crocodile species. Being able to see them right in front of me (A)[was / were] an experience that I will never forget. The next day at Uluru, I couldn't believe (B)[that / what] I was seeing — could this gigantic rock really be a single piece? From a distance, it looked like a huge red dome, (C)[providing / provided] an amazing contrast against the clear blue sky.\n\n(A) / (B) / (C)",
-"choices": [
-"was / that / providing",
-"was / what / providing",
-"were / what / provided",
-"was / what / provided",
-"were / that / providing"
-],
-"answer": "②",
-"solution": "(A) 진짜 주어는 동명사구 Being able to see them이므로 단수 was가 맞으며, 바로 앞 them·crocodiles에 수를 맞추면 안 된다. (B) believe의 목적어 자리에 오면서 뒤 동사 seeing의 목적어가 빠진 불완전한 명사절을 이끄는 what이 맞고, that은 완전한 절을 이끌어 쓸 수 없다. (C) a red dome이 대비를 '제공하는' 능동 관계의 분사구문이므로 providing이 옳다. 따라서 was/what/providing인 ②가 정답이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
-"custom": true
-},
-{
 "id": "fill-920d8b011c",
 "typeId": "eng-h3-b03-u0m1s0t0",
 "kind": "객관식",
@@ -862,23 +184,384 @@
 "custom": true
 },
 {
+"id": "fill-08de0b64fb",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nAlthough manta rays are _______, I was lucky enough to see many of them gliding gracefully through the water near Lady Elliot Island.",
+"answer": "②",
+"solution": "manta ray(쥐가오리)는 멸종 위기에 처한 동물로, '비록 멸종 위기에 처해 있지만' 운 좋게 많이 보았다는 대조의 흐름이 자연스럽다. 따라서 endangered(멸종 위기에 처한)가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"common",
+"endangered",
+"dangerous",
+"noisy",
+"harmless"
+]
+},
+{
+"id": "fill-683ea72c6c",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nUluru was originally gray, but its iron content had _______ over time, giving it its iconic red color.",
+"answer": "①",
+"solution": "원래 회색이던 Uluru가 철 성분이 '산화되어' 상징적인 붉은색을 띠게 되었다는 내용이므로 oxidized(산화되었다)가 알맞다. 얼거나 사라지거나 녹거나 식었다는 선택지는 붉은색이 된 이유로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"oxidized",
+"frozen",
+"disappeared",
+"melted",
+"cooled"
+]
+},
+{
+"id": "fill-b3dd0601c1",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nAt Phillip Island, visitors watched little blue penguins return from the sea. To protect the birds, visitors had to remain (A)[quiet / noisy] while watching them. Camera flashes were not allowed because they might (B)[scare / please] the penguins. The penguins came back to their burrows to feed their young and (C)[rest / hunt] after fishing at sea.",
+"answer": "①",
+"solution": "펭귄을 보호하며 관찰하려면 조용히 있어야 하므로 (A)에는 quiet가 적절하다. 카메라 플래시는 펭귄을 놀라게 할 수 있으므로 (B)는 scare이며, 바다에서 먹이를 잡고 돌아온 펭귄은 새끼에게 먹이를 주고 쉬므로 (C)는 rest이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"quiet — scare — rest",
+"noisy — scare — rest",
+"quiet — please — rest",
+"quiet — scare — hunt",
+"noisy — please — hunt"
+]
+},
+{
+"id": "fill-aee0c40bea",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nUluru's appearance made a strong impression on the traveler. The rock looked (A)[enormous / tiny], and its red surface stood out against the blue sky. Although its original color was gray, oxidation of the iron in it made it (B)[red / green]. Watching its changing colors at sunset became a (C)[wonderful / terrible] experience that the traveler remembered with admiration.",
+"answer": "⑤",
+"solution": "울루루의 거대한 크기에 감탄하는 내용이므로 (A)는 enormous이다. 철 성분의 산화로 붉어졌으므로 (B)는 red이고, 감탄하며 기억하는 일몰 경험이므로 (C)는 wonderful이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"tiny — red — wonderful",
+"enormous — green — wonderful",
+"enormous — red — terrible",
+"tiny — green — terrible",
+"enormous — red — wonderful"
+]
+},
+{
+"id": "fill-42f29c78cb",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe traveler went snorkeling near Lady Elliot Island to get a (A)[closer / more distant] view of the coral reef. The reef's many colors made it look (B)[beautiful / unattractive]. Later, the traveler heard that coral bleaching was damaging parts of the Great Barrier Reef and hoped those areas would (C)[recover / worsen].",
+"answer": "③",
+"solution": "산호초를 더 가까이 보기 위해 스노클링을 했으므로 (A)는 closer이다. 다채로운 색채를 긍정적으로 묘사하므로 (B)는 beautiful이며, 백화 현상으로 손상된 지역에 바라는 것은 회복이므로 (C)는 recover이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"closer — unattractive — recover",
+"more distant — beautiful — recover",
+"closer — beautiful — recover",
+"closer — beautiful — worsen",
+"more distant — unattractive — worsen"
+]
+},
+{
+"id": "fill-2ec9558650",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "The penguin jumpers displayed at the visitor center were more than attractive objects. Following an oil spill, they served a (A)[practical / purely decorative] purpose. By covering the penguins' bodies, they (B)[reduced / increased] the chance that the birds would swallow oil from their feathers. Learning about this use of clothing showed the traveler how (C)[inventive / indifferent] people had been in their efforts to protect the birds.",
+"answer": "②",
+"solution": "점퍼는 기름 유출 뒤 실제 기능을 했으므로 (A)는 practical이다. 몸을 덮어 깃털의 기름을 삼킬 가능성을 '낮췄'으므로 (B)는 reduced이다. 옷을 활용해 새를 보호한 방식은 창의적 노력을 보여 주므로 (C)는 inventive이며, indifferent(무관심한)는 보호 노력과 맞지 않는다. 따라서 ②.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"practical — increased — inventive",
+"practical — reduced — inventive",
+"purely decorative — reduced — inventive",
+"practical — reduced — indifferent",
+"purely decorative — increased — indifferent"
+]
+},
+{
+"id": "fill-34c331a384",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nDuring the Kakadu tour, Victor helped the visitors understand Aboriginal rock art. The images (A)[portrayed / erased] stories through figures such as a spirit making lightning and a hunter with a spear. An X-ray-style fish drawing revealed its (B)[internal / external] parts rather than merely its outline. This allowed viewers to identify which parts were (C)[edible / poisonous]—that is, suitable for eating.",
+"answer": "④",
+"solution": "암벽화는 원주민의 이야기를 그림으로 나타내므로 (A)는 portrayed이다. 엑스레이 양식은 물고기의 내부를 드러내므로 (B)는 internal이며, suitable for eating이라는 설명에 해당하는 (C)는 edible이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"portrayed — external — edible",
+"erased — internal — edible",
+"portrayed — internal — poisonous",
+"portrayed — internal — edible",
+"erased — external — poisonous"
+]
+},
+{
+"id": "fill-4da5bf5f44",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "Seeing many manta rays while snorkeling did not mean that their species was safe. Despite their (A)[abundance / scarcity] in the traveler's immediate view, they were endangered. Similarly, the colorful reef that impressed the traveler did not prove that the entire reef system was (B)[healthy / endangered]. The later news of bleaching elsewhere therefore gave the traveler reason for (C)[concern / relief], even after such a beautiful underwater experience.",
+"answer": "①",
+"solution": "여행자가 눈앞에서 만타가오리를 많이 보았다는 국지적 상황이므로 (A)는 abundance이다. 일부 산호초가 아름답다는 사실만으로 전체 산호초가 건강하다고 증명할 수는 없으므로 (B)는 healthy이다. 다른 지역의 백화 현상 소식은 안도(relief)가 아니라 걱정(concern)을 불러오므로 (C)는 concern이다. 따라서 ①.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"abundance — healthy — concern",
+"scarcity — healthy — concern",
+"abundance — endangered — concern",
+"abundance — healthy — relief",
+"scarcity — endangered — relief"
+]
+},
+{
+"id": "fill-06e0ab5a99",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nUluru's red appearance might lead a visitor to assume that red was its original color. The gray areas visible in some caves, however, (A)[challenge / support] that assumption. Its familiar redness resulted from iron reacting with oxygen, a process that occurred (B)[gradually / instantaneously] over time. The sunset presented a different kind of color change: the sequence of visible colors was (C)[dependent on / independent of] the sun's position and the strength of its light.",
+"answer": "⑤",
+"solution": "동굴에서 보이는 회색은 붉은색이 원래 색이었다는 추정에 의문을 제기하므로 (A)는 challenge이다. 산화가 시간에 걸쳐 일어났으므로 (B)는 gradually이다. 일몰 때 보이는 색의 변화는 태양의 위치와 빛의 세기에 따라 달라지므로 (C)는 dependent on이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"support — gradually — dependent on",
+"challenge — instantaneously — dependent on",
+"challenge — gradually — independent of",
+"support — instantaneously — independent of",
+"challenge — gradually — dependent on"
+]
+},
+{
+"id": "fill-9a189affff",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nAt Phillip Island, two forms of penguin protection served different purposes. The viewing platforms and the ban on photography placed limits on visitors. These limits were intended to (A)[minimize / intensify] the disturbance associated with human observation. The jumpers used after the oil spill, by contrast, addressed a danger already present on the birds themselves. Their value lay less in their visual appeal than in their ability to (B)[inhibit / facilitate] the swallowing of oil. Thus, the attractive display at the visitor center should not lead viewers to (C)[overlook / overstate] the protective function that had made the jumpers useful.",
+"answer": "③",
+"solution": "관람 제한의 목적은 인간의 관찰로 생기는 방해를 최소화하는 것이므로 (A)는 minimize이다. less in A than in B는 A보다 B에 가치가 있다는 뜻이며, 점퍼의 핵심 기능은 기름을 삼키는 것을 억제하는 것이므로 (B)는 inhibit이다. 매력적인 전시 모습 때문에 실제 보호 기능을 간과해서는 안 된다는 결론이므로 (C)는 overlook이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"minimize — facilitate — overlook",
+"intensify — inhibit — overlook",
+"minimize — inhibit — overlook",
+"minimize — inhibit — overstate",
+"intensify — facilitate — overstate"
+]
+},
+{
+"id": "fill-69d8d3829b",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 (A), (B), (C)에 들어갈 말로 문맥상 가장 적절한 것끼리 연결된 것은?\n\nThe traveler's observations of Uluru and the Great Barrier Reef illustrate why appearance requires interpretation. Uluru's gray cave surfaces did not contradict the explanation of its red exterior; they were (A)[consistent / incompatible] with the account that the rock had originally been gray before oxidation gave it its familiar color. At the reef, however, the impressive colors seen near Lady Elliot Island were insufficient to (B)[warrant / undermine] the conclusion that the entire reef system was healthy. Reports of bleaching elsewhere did not erase the beauty of the local scene, but they did (C)[qualify / reinforce] any broader claim of good health based on that scene alone.",
+"answer": "②",
+"solution": "회색 동굴 표면은 울루루가 원래 회색이었다는 설명과 일치하므로 (A)는 consistent이다. 일부 지역의 아름다운 색만으로 전체 산호초가 건강하다는 결론을 정당화하기에는 불충분하므로 (B)는 warrant이다. 다른 지역의 백화 현상은 그러한 일반화의 범위를 제한하므로 (C)는 qualify이며, 여기서는 ‘자격을 주다’가 아니라 ‘단서를 달거나 한정하다’라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"consistent — undermine — qualify",
+"consistent — warrant — qualify",
+"incompatible — warrant — qualify",
+"consistent — warrant — reinforce",
+"incompatible — undermine — reinforce"
+]
+},
+{
+"id": "fill-40b71a8345",
+"typeId": "eng-h3-b03-u1m0s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWhen we arrived at the beach, we were guided to the viewing platforms so that we could watch the little blue penguins without _______ them.",
+"answer": "①",
+"solution": "펭귄을 '방해하지' 않기 위해 전망대로 안내되었다는 흐름이므로 disturbing(방해하는)이 알맞다. protect(보호하다), feed(먹이를 주다), greet(인사하다), count(세다)는 '방해하지 않고 보려고 했다'는 문맥에 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"disturbing",
+"protecting",
+"feeding",
+"greeting",
+"counting"
+]
+},
+{
+"id": "fill-1167dc0ffc",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 maintain과 의미가 가장 가까운 것은?\n\nIt is often difficult to maintain a good habit for a long time.",
+"answer": "②",
+"solution": "maintain은 어떤 상태나 행동을 계속 ‘유지하다’라는 뜻이다. 문맥상 좋은 습관을 오랫동안 지속한다는 의미이므로 keep이 가장 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"give up",
+"keep",
+"hide",
+"replace",
+"examine"
+]
+},
+{
+"id": "fill-58de504864",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 vague의 의미로 가장 적절한 것은?\n\nA vague plan such as “I will exercise someday” does not provide a clear cue.",
+"answer": "①",
+"solution": "vague는 내용이 분명하거나 구체적이지 않은 상태를 나타낸다. ‘언젠가 운동하겠다’는 계획은 정확한 시간과 장소가 없으므로 not clearly expressed가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"not clearly expressed",
+"easy to remember",
+"repeated regularly",
+"closely connected",
+"highly attractive"
+]
+},
+{
+"id": "fill-70010bcd15",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nA new habit is more likely to last when it is in ________ with the identity you believe you have.",
+"answer": "②",
+"solution": "본문에서는 새로운 습관과 자신의 정체성이 서로 조화를 이루어야 그 습관이 지속될 수 있다고 설명한다. 따라서 ‘조화’를 뜻하는 harmony가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"conflict",
+"harmony",
+"danger",
+"silence",
+"exchange"
+]
+},
+{
+"id": "fill-cea17077ef",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 문맥상 알맞은 말로 바르게 연결된 것은?\n\nTo make a habit automatic, first choose an obvious cue that can (A)[spark / prevent] the desired behavior. Then make the behavior attractive so that your motivation (B)[increases / disappears]. If the habit loop operates smoothly, the behavior can be performed with (C)[less / greater] effort.",
+"answer": "①",
+"solution": "명확한 신호는 원하는 행동을 촉발하고, 매력적인 행동은 동기를 높인다. 또한 습관 고리가 원활하게 작동하면 더 적은 노력으로 행동할 수 있으므로 spark, increases, less가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"spark ― increases ― less",
+"spark ― disappears ― greater",
+"prevent ― increases ― less",
+"prevent ― disappears ― less",
+"spark ― increases ― greater"
+]
+},
+{
+"id": "fill-f5c417c9a4",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 단어와 영영풀이가 바르게 짝지어지지 않은 것은?",
+"answer": "④",
+"solution": "integrate는 서로 다른 것을 결합하여 전체의 일부가 되게 한다는 뜻이다. '두 가지를 완전히 분리된 상태로 두다'는 ④의 풀이는 오히려 separate에 해당하므로 바르게 짝지어지지 않았다. 나머지 cue, craving, outcome, fundamental의 영영풀이는 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"cue: something that causes a particular action to begin",
+"craving: a powerful desire for something",
+"outcome: the final result of an action or process",
+"integrate: to keep two things completely apart",
+"fundamental: basic and more important than other things"
+]
+},
+{
+"id": "fill-3158449b4f",
+"typeId": "eng-h3-b03-u0m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A)~(C)에 들어갈 어휘로 가장 적절한 것은?\n\nAn action plan should be specific rather than (A)________, because a clear time and location make the cue more obvious. Habit stacking then (B)________ a new behavior with a current habit. By repeatedly forming this connection, the new behavior can become firmly (C)________ in daily life.",
+"answer": "①",
+"solution": "구체적인 계획은 vague한 계획과 대조되며, 습관 쌓기는 기존 습관과 새로운 행동을 서로 pair한다. 이러한 연결을 반복하면 새로운 행동이 일상에 firmly rooted, 즉 확고히 자리 잡게 되므로 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"vague ― pairs ― rooted",
+"attractive ― separates ― released",
+"vague ― prevents ― desired",
+"fundamental ― pairs ― avoided",
+"specific ― bundles ― increased"
+]
+},
+{
 "id": "fill-951243efcf",
 "typeId": "eng-h3-b03-u0m0s0t0",
 "kind": "객관식",
 "diff": 1,
 "body": "다음 문장의 밑줄 친 crucial과 의미가 가장 가까운 것은?\n\nThus, it is crucial to make your habits attractive and enjoyable.",
+"answer": "③",
+"solution": "crucial은 '매우 중요한, 결정적인'의 뜻이므로 '필수적인'을 의미하는 essential과 가장 가깝다. optional(선택적인), harmful(해로운), difficult(어려운), temporary(일시적인)은 모두 의미가 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "optional",
 "harmful",
 "essential",
 "difficult",
 "temporary"
-],
-"answer": "③",
-"solution": "crucial은 '매우 중요한, 결정적인'의 뜻이므로 '필수적인'을 의미하는 essential과 가장 가깝다. optional(선택적인), harmful(해로운), difficult(어려운), temporary(일시적인)은 모두 의미가 다르다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-920957d177",
@@ -886,18 +569,19 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 영영풀이가 설명하는 단어로 알맞은 것은?\n\na strong desire to do or have something",
+"answer": "②",
+"solution": "'무엇을 하거나 갖고 싶은 강한 욕구'를 뜻하는 단어는 craving(갈망)이다. reward(보상), cue(신호), response(반응), identity(정체성)는 모두 뜻이 다르다. 본문의 habit loop(cue-craving-response-reward)에서 craving에 해당한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "reward",
 "craving",
 "cue",
 "response",
 "identity"
-],
-"answer": "②",
-"solution": "'무엇을 하거나 갖고 싶은 강한 욕구'를 뜻하는 단어는 craving(갈망)이다. reward(보상), cue(신호), response(반응), identity(정체성)는 모두 뜻이 다르다. 본문의 habit loop(cue-craving-response-reward)에서 craving에 해당한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
+]
 },
 {
 "id": "fill-8289597627",
@@ -905,17 +589,338 @@
 "kind": "객관식",
 "diff": 1,
 "body": "다음 문장의 밑줄 친 seamlessly의 의미로 알맞은 것은?\n\nThis way, you can seamlessly do what you need to do along with what you want to do.",
+"answer": "④",
+"solution": "seamlessly는 seam(이음새)이 없다는 뜻에서 나와 '끊김 없이 매끄럽게'를 의미한다. 하고 싶은 일과 해야 할 일을 자연스럽게 연결해 수행한다는 문맥에 맞는다. 나머지 선지는 모두 부정적이거나 반대되는 의미다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
+"custom": true,
+"rv": 1,
 "choices": [
 "갑작스럽게",
 "마지못해",
 "드물게",
 "끊김 없이 매끄럽게",
 "억지로"
-],
-"answer": "④",
-"solution": "seamlessly는 seam(이음새)이 없다는 뜻에서 나와 '끊김 없이 매끄럽게'를 의미한다. 하고 싶은 일과 해야 할 일을 자연스럽게 연결해 수행한다는 문맥에 맞는다. 나머지 선지는 모두 부정적이거나 반대되는 의미다.",
+]
+},
+{
+"id": "fill-60b860bc67",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하는 것은?\n\nOur first destination was Phillip Island, which is just a two-hour drive from Melbourne and is famous for its \"penguin parade.\" This unique parade features little blue penguins, measuring only 35 to 42 centimeters in height. When we arrived at the beach, we were guided to carefully designed viewing platforms. We were also prohibited from taking photos, as bright lights and sudden flashes could frighten the penguins. The penguin parade took place in the evening when the penguins returned from the ocean to the shore. The penguins leave their burrows early in the morning, spend the day fishing, and then come home to feed their young and rest.",
+"answer": "②",
+"solution": "작은 푸른 펭귄은 키가 35~42cm라고 했으므로 ②가 일치한다. 필립섬은 멜버른에서 차로 두 시간 거리(①은 비행기), 밝은 빛이 펭귄을 놀라게 해 사진 촬영이 금지되었고(③), 펭귄은 저녁에 해변으로 돌아오며(④), 낮에는 물고기를 잡으며 보낸다(⑤)고 했으므로 나머지는 모두 틀리다.",
 "source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m0s0t0",
-"custom": true
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Phillip Island is about a two-hour flight away from Melbourne.",
+"Little blue penguins are between 35 and 42 centimeters tall.",
+"Visitors were allowed to take photos of the penguins freely.",
+"The penguins came back to the shore early in the morning.",
+"The penguins spent the entire day resting in their burrows."
+]
+},
+{
+"id": "fill-3ce52817ea",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOur final destination was Uluru, the largest rock in the world. I had longed to see it in person ever since I came across a picture of it a few years ago. From a distance, it looked like a huge red dome, providing an amazing contrast against the clear blue sky. The next day, we walked around its 10-kilometer base. My uncle informed me that Uluru was naturally gray, but that its iron content had oxidized over time, giving it its iconic red color. The highlight of our visit was the sunset, when the colors transformed from red to deep orange and then to purple as the sun sank below the horizon.",
+"answer": "④",
+"solution": "우루루는 원래 회색이었으나 철분이 산화되어 상징적인 붉은색을 띠게 되었다고 했다. ④는 색의 변화 방향을 뒤바꾼 것이므로 일치하지 않는다. 나머지 ①②③⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Uluru is the largest rock in the world.",
+"From a distance, Uluru looked like a huge red dome against the blue sky.",
+"The writer and his group walked around Uluru's 10-kilometer base.",
+"Uluru was originally red but gradually turned gray as its iron oxidized.",
+"At sunset, Uluru's colors changed from red to orange and then to purple."
+]
+},
+{
+"id": "fill-d2b09fa0ec",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nOne of the sites I was most excited about was the Great Barrier Reef, the world's largest coral reef system. I chose to explore Lady Elliot Island in the southern region, which is known for its beautiful coral reefs and manta rays. As our plane approached land, I spotted the reef stretching as far as I could see. As I wanted to explore the coral reef more closely, I went snorkeling. The first sight that greeted me in the water was manta rays. Even though they are endangered, I witnessed many of them gliding through the water. My uncle later informed me that many parts of the reef, especially in the northern region, suffer from coral bleaching, which turns the reef white.",
+"answer": "②",
+"solution": "글쓴이는 '남쪽(southern) 지역'의 Lady Elliot Island를 택해 탐험했다. ②는 이를 '북쪽'으로 바꾸었으므로 일치하지 않는다. 특히 산호 백화 현상이 심한 곳이 북쪽 지역이라는 ⑤와 혼동하지 않도록 주의한다. 나머지는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The Great Barrier Reef is the world's largest coral reef system.",
+"The writer explored Lady Elliot Island in the northern region of the reef.",
+"The writer went snorkeling to see the coral reef more closely.",
+"Although manta rays are endangered, the writer saw many of them.",
+"The northern region of the reef suffers from coral bleaching."
+]
+},
+{
+"id": "fill-c16dae0590",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 바로 뒤에 이어질 내용으로 가장 알맞은 것은?\n\nThis past summer, I had the remarkable opportunity to spend a month in Australia. My uncle, a wildlife biologist conducting research on Australian animals, invited me to join him on an ecotour. Upon arriving in Melbourne, I was greeted by the chilly air, a sharp contrast to the humid heat I had left behind in Korea. My trip to Australia was filled with visits to remarkable places and encounters with incredible nature. I will share four of the most memorable destinations from my journey.",
+"answer": "①",
+"solution": "마지막 문장에서 여정 중 '가장 기억에 남는 네 곳(four of the most memorable destinations)'을 나누겠다고 예고했다. 따라서 바로 뒤에는 그 네 장소에 관한 구체적인 이야기가 이어지는 것이 자연스럽다. ②③④⑤는 본문이 예고한 내용과 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"detailed accounts of the four most memorable places the writer visited in Australia",
+"the reasons why the writer's uncle became a wildlife biologist in Australia",
+"the long preparations the writer made before leaving Korea for Australia",
+"the difficulties the writer faced because of Australia's chilly weather",
+"advice on how to plan an affordable month-long ecotour in Australia"
+]
+},
+{
+"id": "fill-a042d531d2",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용과 일치하지 않는 것은?\n\nKakadu National Park is the largest national park in northern Australia. The landscape resembled an ocean filled with green eucalyptus trees. Perhaps the only drawback was that, being in a remote region, we had no Wi-Fi connection. One of the highlights of our visit was our tour led by Victor, an Aboriginal guide. He explained that Kakadu has been home to Aboriginal people for over 40,000 years. He also introduced us to rock art sites depicting Aboriginal stories. One drawing was done in an X-ray style, illustrating the insides of a fish to show which parts were edible. Kakadu is also famous for its saltwater crocodiles, as there are around 10,000 living in the region. They are the largest of all crocodile species and grow up to six meters long.",
+"answer": "③",
+"solution": "Victor는 카카두가 4만 년(over 40,000 years) 넘게 원주민의 터전이었다고 설명했다. ③은 이를 '4천 년(4,000 years)'으로 바꾼 숫자 함정이므로 일치하지 않는다. 나머지 ①②④⑤는 모두 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Kakadu is the largest national park in northern Australia.",
+"Because of its remote location, the park had no Wi-Fi connection.",
+"Victor said Kakadu had been home to Aboriginal people for over 4,000 years.",
+"An X-ray-style drawing showed which parts of a fish were edible.",
+"Saltwater crocodiles are the largest of all crocodile species."
+]
+},
+{
+"id": "fill-9b0b40b7ad",
+"typeId": "eng-h3-b03-u1m3s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "윗글의 내용으로 보아, Salar de Uyuni가 '세계에서 가장 큰 거울'이 되는 이유로 가장 알맞은 것은?\n\nLocated in South America, Salar de Uyuni is the largest salt flat in the world. One of the highlights is taking incredible photos on the mirror-like salt flat. In the wet season, the flat is covered with a thin layer of water, which makes it the world's largest mirror. Don't worry about capturing the perfect shot, as our guides are highly skilled photographers. You'll also explore other natural wonders including the Laguna Colorada, a red lake filled with flamingos. At the end of the day, you can relax in comfort at a hotel made entirely of salt.",
+"answer": "①",
+"solution": "본문에서 우기(wet season)에 소금 평원이 얇은 물층으로 덮여 세계에서 가장 큰 거울이 된다고 했으므로 ①이 정답이다. 밝은 햇빛·가이드·붉은 호수·소금 호텔은 모두 거울이 되는 원인과는 관련이 없는 함정 선지다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m3s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Because a thin layer of water covers the flat during the wet season.",
+"Because the salt on the flat shines brightly under the strong sun.",
+"Because the skilled guides polish the surface of the salt flat.",
+"Because the red lake reflects the flamingos onto the flat.",
+"Because the hotel made of salt stands in the middle of the flat."
+]
+},
+{
+"id": "fill-cd9e723a86",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"answer": "③",
+"solution": "③의 「were gliding」은 과거진행형으로 주어인 복수 명사와 알맞게 호응한다. ①은 「swim」 또는 「swimming」, ②는 「were」, ④는 「that」, ⑤는 형용사 「beautiful」로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"I watched the sea turtles swam near the coral reef.",
+"The beautiful coral reefs was visible under the water.",
+"Many manta rays were gliding elegantly through the water.",
+"It was the tropical fish what impressed me most.",
+"The water around the island looked beautifully."
+]
+},
+{
+"id": "fill-cd9e723a86",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 문장은?",
+"answer": "②",
+"solution": "②의 「has been」은 과거부터 현재까지 이어지는 상태를 나타내며 단수 주어 Kakadu와도 호응한다. ①은 「that」, ③은 「explained to us」, ④는 「grow」, ⑤는 「was」가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"One drawing what Victor introduced showed the inside of a fish.",
+"Kakadu has been home to Aboriginal people for over 40,000 years.",
+"Victor explained us that the drawings contained Aboriginal stories.",
+"The saltwater crocodiles in the region grows up to six meters long.",
+"Seeing the crocodiles at close range were an unforgettable experience."
+]
+},
+{
+"id": "fill-f79f41f1d6",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nSeeing Uluru at sunset (A)[was / were] the highlight of the visit. Its colors (B)[changed / changing] from red to deep orange as the sun sank. I found it impossible (C)[describe / to describe] the beauty in words.",
+"answer": "④",
+"solution": "동명사구 「Seeing Uluru at sunset」은 단수로 취급하므로 (A)는 was이다. 문장의 서술어가 필요하므로 (B)는 changed이고, 「find it impossible to do」 구조에 따라 (C)는 to describe가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"was ― changing ― describe",
+"were ― changed ― to describe",
+"was ― changed ― describe",
+"was ― changed ― to describe",
+"were ― changing ― to describe"
+]
+},
+{
+"id": "fill-6d8567e97c",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nAs the plane neared Lady Elliot Island, the Great Barrier Reef came into view, (A)[stretching / stretched] toward the horizon. In the water, several manta rays could be seen (B)[glided / gliding] gracefully. It was the colorful coral reef (C)[what / that] held my attention the longest.",
+"answer": "⑤",
+"solution": "(A)는 능동적으로 뻗어 있는 산호초를 설명하므로 stretching이 알맞다. 지각동사의 수동태 뒤에서는 현재분사 gliding을 쓰며, 「It was ~ that ...」 강조 구문이므로 (C)는 that이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"stretched ― glided ― what",
+"stretching ― glided ― that",
+"stretched ― gliding ― that",
+"stretching ― gliding ― what",
+"stretching ― gliding ― that"
+]
+},
+{
+"id": "fill-f43e515a05",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 문장은?",
+"answer": "④",
+"solution": "④의 주어는 복수 명사구 'Many parts of the Great Barrier Reef'이므로 동사도 복수형 suffer를 써야 한다. 바로 앞의 단수 명사 Reef에 끌려 suffers로 쓰지 않도록 주의한다. ① appear＋형용사와 depending on 분사구, ② 복수주어+과거동사, ③ It was ~ that 강조 구문, ⑤ hope that 목적절이 모두 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① The sea appeared blue and green, depending on its depth and the coral formations below.",
+"② Endless patches of white sand added to the breathtaking scenery.",
+"③ It was the coral reef that impressed the traveler most that day.",
+"④ Many parts of the Great Barrier Reef suffers from coral bleaching.",
+"⑤ The traveler hoped that the damaged reef would recover soon."
+]
+},
+{
+"id": "fill-b3046df0ad",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 괄호 (A)~(D)에서 어법상 알맞은 말을 바르게 연결한 것은?\n\nThere are several regions (A)[which / where] travelers can visit to see the Great Barrier Reef. Lady Elliot Island, (B)[which / where] beautiful coral reefs and manta rays can be observed, lies in its southern region. From the plane, the traveler saw the reef (C)[stretching / stretched] across the sea. He later learned about coral bleaching, (D)[what / which] turns affected parts of the reef white.",
+"answer": "②",
+"solution": "(A)는 visit의 목적어 역할을 하므로 관계대명사 which가 필요하고, (B)는 완전한 절이 이어지므로 관계부사 where가 알맞다. 「see＋목적어＋현재분사」에 따라 (C)는 stretching이며, 선행 내용인 coral bleaching을 부연하는 (D)는 which이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"where ― which ― stretched ― what",
+"which ― where ― stretching ― which",
+"which ― which ― stretched ― which",
+"where ― where ― stretching ― what",
+"which ― where ― stretched ― what"
+]
+},
+{
+"id": "fill-19c9594167",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳지 않은 문장은?",
+"answer": "⑤",
+"solution": "⑤의 「While crossing the Yellow River」의 의미상 주체는 visitors이지만 주절의 주어는 crocodiles이므로 잘못된 분사구문이다. 「While the visitors were crossing the Yellow River」와 같이 고쳐야 의미상 주어가 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Led by Victor, the visitors learned about Aboriginal culture in Kakadu.",
+"Victor introduced rock art sites depicting Aboriginal stories to the visitors.",
+"One of the drawings showed the insides of a fish in an X-ray style.",
+"Other drawings included a spirit creating lightning and a hunter holding a spear.",
+"While crossing the Yellow River, more than thirty crocodiles were spotted by the visitors."
+]
+},
+{
+"id": "fill-a1fed8bebc",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nOn Lady Elliot Island, I went snorkeling in the clear water. I witnessed many manta rays (A)[to glide / gliding] gracefully below me. The coral reef (B)[stretching / stretched] beneath the surface was full of color. It was the reef (C)[that / what] amazed me the most.\n\n(A) / (B) / (C)",
+"answer": "②",
+"solution": "(A) 지각동사 witness는 목적어 뒤에 현재분사(-ing)나 원형부정사를 쓰므로 gliding이 맞다. (B) reef가 '펼쳐져 있는' 능동 의미이므로 현재분사 stretching이 옳다. (C) 선행사 the reef를 받아 뒤 절의 주어 역할을 하는 관계대명사 that이 맞고, what은 선행사가 있으면 쓸 수 없다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① to glide / stretching / that",
+"② gliding / stretching / that",
+"③ gliding / stretched / what",
+"④ to glide / stretched / that",
+"⑤ gliding / stretching / what"
+]
+},
+{
+"id": "fill-118fa26205",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nIn Kakadu, our guide Victor showed us rock art (A)[that / what] depicted Aboriginal stories. One drawing showed a spirit (B)[created / creating] lightning. Being able to see the saltwater crocodiles right in front of me (C)[was / were] truly exciting.\n\n(A) / (B) / (C)",
+"answer": "③",
+"solution": "(A) 선행사 rock art가 있으므로 관계대명사 that이 맞고 what은 선행사를 취할 수 없다. (B) spirit이 번개를 '만들어 내는' 능동 관계이므로 현재분사 creating이 옳다. (C) 주어가 동명사구 Being able to see ...이므로 단수 취급하여 was가 맞다. 가까운 복수명사 crocodiles에 수를 맞추지 않도록 주의한다. 따라서 ③이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① that / created / was",
+"② what / creating / were",
+"③ that / creating / was",
+"④ what / created / was",
+"⑤ that / creating / were"
+]
+},
+{
+"id": "fill-cbfe001bbd",
+"typeId": "eng-h3-b03-u1m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nUluru is the largest rock in the world. The colors of the sunsets at Uluru (A)[change / changes] over time based on the sun's position. We walked around its base, (B)[where / which] we saw numerous caves. It was impossible (C)[to find / to be found] words to describe the beauty.\n\n(A) / (B) / (C)",
+"answer": "①",
+"solution": "(A) 주어의 핵심은 복수명사 The colors이므로 동사는 change가 맞다. (B) 뒤 문장이 완전하고 '그 밑동에서'라는 장소 의미이므로 관계부사 where가 옳다. (C) 뒤에 목적어 words가 있어 '말을 찾는 것'이라는 능동 의미이므로 to find가 맞다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u1m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① change / where / to find",
+"② changes / where / to find",
+"③ change / which / to be found",
+"④ change / where / to be found",
+"⑤ changes / which / to find"
+]
 }
 ]
