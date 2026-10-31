@@ -1,603 +1,5 @@
 [
 {
-"id": "fill-acd7bd23cd",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nOpen offices are designed to make communication easier. Without walls between desks, employees are expected to exchange ideas naturally throughout the day. __________, some workers respond to the lack of privacy by wearing headphones and avoiding conversation. Simply placing people in the same room, therefore, does not necessarily make them cooperate more.",
-"choices": [
-"For example",
-"Similarly",
-"However",
-"Therefore",
-"In addition"
-],
-"answer": "③",
-"solution": "빈칸 앞에서는 개방형 사무실이 의사소통을 촉진할 것이라는 기대를 설명한다. 뒤에서는 오히려 직원들이 대화를 피하기도 한다는 상반된 결과가 나오므로 역접의 연결어 However가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-58b8f17827",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nNavigation apps allow travelers to reach unfamiliar places with little effort. Yet users who merely obey every instruction may fail to notice street names or major buildings. __________, they arrive at the destination without developing a clear mental picture of the area. To improve their sense of direction, they should pay attention to the route instead of looking only at the screen.",
-"choices": [
-"As a result",
-"For instance",
-"In contrast",
-"Nevertheless",
-"Likewise"
-],
-"answer": "①",
-"solution": "주변의 거리와 건물을 살피지 않는 것이 원인이고, 지역에 대한 심적 지도를 형성하지 못하는 것이 그 결과이다. 따라서 결과를 나타내는 As a result가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-394a263705",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nResearchers must be cautious when explaining animal behavior. An action that appears to express a human-like emotion may have a simpler cause. (A) __________, a dog may lower its body not because it understands that it has done something morally wrong, but because it recognizes an angry voice. Such caution helps prevent researchers from reading their own expectations into what they observe. (B) __________, caution should not become an automatic refusal to consider the possibility of animal emotions. Scientists need to examine that possibility while continuing to demand reliable evidence.",
-"choices": [
-"For example …… Nevertheless",
-"In other words …… Therefore",
-"For example …… Similarly",
-"Consequently …… Nevertheless",
-"In contrast …… Moreover"
-],
-"answer": "①",
-"solution": "(A) 뒤의 개 행동은 앞의 일반적인 주장을 구체화하는 사례이므로 For example이 적절하다. (B) 뒤에서는 신중함이 지나쳐서도 안 된다는 반대 측면을 제시하므로 Nevertheless가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-d422e0b70c",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nPlanting a single high-yield crop variety can simplify farm work. All the plants mature at nearly the same time and can be handled in the same way. Uniformity in useful traits, however, usually means uniformity in weaknesses as well. (A) __________, if one plant is vulnerable to a particular disease, most of the field may be vulnerable to it too. A diverse field operates differently. Some varieties may be harmed, but others may possess traits that allow them to survive. (B) __________, diversity can prevent a single disease from destroying the entire harvest, even though it may make farming less convenient at first.",
-"choices": [
-"For instance …… Nevertheless",
-"In contrast …… Similarly",
-"As a result …… For example",
-"In other words …… Therefore",
-"Moreover …… By contrast"
-],
-"answer": "④",
-"solution": "(A) 뒤 문장은 유전적 약점까지 동일하다는 앞 내용을 구체적으로 다시 표현하므로 In other words가 적절하다. 여러 품종 중 일부가 살아남는 것은 전체 수확의 파괴를 막는 원인이 되므로 (B)에는 결과를 나타내는 Therefore가 들어가야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-f2ab1ad6b6",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nPeople sometimes pay for a long-term gym membership because they believe the expense will force them to exercise. (A) __________, the payment is made by the person they are today, while the effort must be supplied repeatedly by their future self. As daily demands accumulate, the memory of the payment may become less powerful than the attraction of resting at home. (B) __________, arranging to meet a friend at the gym can create a more immediate reason to show up: skipping the workout now means disappointing someone now. Effective plans often succeed by changing the situation surrounding a choice, not merely by increasing its financial cost.",
-"choices": [
-"Moreover …… In contrast",
-"However …… For example",
-"Therefore …… Likewise",
-"In other words …… Nevertheless",
-"However …… As a result"
-],
-"answer": "②",
-"solution": "(A)에서는 선결제가 운동을 강제할 것이라는 믿음과 실제 행동 사이의 한계를 제시하므로 However가 적절하다. (B) 뒤의 친구와 약속하는 방법은 더 즉각적인 동기를 만드는 구체적인 사례이므로 For example이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-2b4c326364",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nPunishing every workplace mistake may appear to strengthen responsibility. (A) __________, it can weaken the flow of information on which genuine safety depends. An employee who expects punishment has a reason to remain silent, so the organization loses the opportunity to discover a faulty procedure before it causes greater harm. A safer system therefore distinguishes carelessness from an honest error. (B) __________ treating the latter simply as an offense, the system encourages workers to report how it occurred. The report can then reveal problems in training, equipment, or routines that affect many other employees. (C) __________, reducing punishment in carefully defined cases may increase rather than decrease organizational responsibility.",
-"choices": [
-"Indeed …… In addition to …… Nevertheless",
-"However …… Instead of …… In this sense",
-"Therefore …… Apart from …… For example",
-"However …… Because of …… Consequently",
-"Likewise …… Instead of …… On the contrary"
-],
-"answer": "②",
-"solution": "(A)에는 처벌의 긍정적 외관과 정보 흐름을 약화시키는 실제 효과를 대조하는 However가 필요하다. (B)는 정직한 실수를 범죄처럼 처리하는 방식 대신 보고를 장려한다는 뜻이므로 Instead of가 적절하다. 마지막 문장은 앞의 논리를 요약하여 책임의 의미를 재해석하므로 In this sense가 가장 자연스럽다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-2353e60c96",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nNavigation technology can reduce the mental effort required to travel, but reduced effort is not identical to reduced ability. A person may use an app while still examining the route, identifying landmarks, and predicting the next turn. (A) __________, the important issue is not simply whether the technology is used, but how attention is distributed while it is being used. Step-by-step commands can discourage active observation when followed passively. (B) __________, the same commands can support learning when users compare them with what they see around them. (C) __________, abandoning navigation apps altogether is unnecessary; using them in a more attentive manner may preserve both convenience and spatial learning.",
-"choices": [
-"For example …… Similarly …… Nevertheless",
-"In other words …… By contrast …… Therefore",
-"Nevertheless …… In addition …… Otherwise",
-"As a result …… For instance …… Likewise",
-"In other words …… Consequently …… However"
-],
-"answer": "②",
-"solution": "(A)는 앞의 설명을 ‘사용 여부보다 사용 방식이 중요하다’는 핵심으로 바꾸어 말하므로 In other words가 적절하다. (B)에서는 수동적 사용의 부정적 효과와 능동적 사용의 학습 효과가 대조되므로 By contrast가 필요하다. 마지막은 이 대조에서 도출되는 결론이므로 Therefore가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-69d8079cdf",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 굵게 표시된 표현이 나타내는 의미로 가장 적절한 것을 고르시오.\n\nA student preparing for an important test may decide to sleep less and review more. At first, the plan seems successful: another chapter is finished, and another page of notes is read. The difficulty appears the following morning. The student has trouble following explanations and makes mistakes on questions that would normally be easy. Sleep also helps the brain organize what has been learned, so reducing it can weaken the value of the extra review. By repeatedly choosing another hour of study over needed rest, the student may be **adding pages to the notebook while taking strength from the reader**. A longer record of studying does not necessarily mean better preparation.",
-"choices": [
-"making written notes so that difficult material becomes easier to understand",
-"depending on a notebook instead of trying to remember information",
-"increasing the amount studied while weakening the ability to learn effectively",
-"saving difficult chapters for a time when concentration is stronger",
-"improving reading skills by spending more time reviewing notes"
-],
-"answer": "③",
-"solution": "학생은 수면을 줄여 학습 분량을 늘리지만, 그 결과 집중력과 학습 효과가 떨어진다. 따라서 해당 표현은 공부한 양을 늘리는 동시에 효과적으로 학습할 능력을 약화한다는 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-a4f800c688",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 2,
-"body": "글의 흐름을 고려할 때, 굵게 표시된 부분의 의미로 가장 알맞은 것을 고르시오.\n\nImagine a classroom in which students who work patiently receive little attention. Whenever someone interrupts, however, the teacher stops the lesson and speaks to that student at length. The teacher wants the interruptions to disappear. Yet students who strongly want to be noticed may learn a different lesson: interrupting is an effective way to get the teacher's attention. For them, even criticism can be a reward. The teacher's response may therefore **hang a prize on the behavior marked for removal**. To change this pattern, the teacher needs to notice cooperation as well, giving students a reason to seek attention through actions that help the class.",
-"choices": [
-"reward an unwanted action through the attention given to it",
-"make a classroom rule too difficult for students to understand",
-"remove a reward before students have a chance to earn it",
-"praise students for correcting their classmates' mistakes",
-"prevent students from recognizing which actions are unacceptable"
-],
-"answer": "①",
-"solution": "교사는 방해 행동을 없애려 하지만, 관심을 원하는 학생에게는 긴 꾸중도 보상이 될 수 있다. 따라서 없애려는 행동에 오히려 관심이라는 보상을 제공한다는 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-49177fb6d2",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 3,
-"body": "굵게 표시된 표현에 담긴 의미로 가장 적절한 것을 고르시오.\n\nSuppose a business finds that fewer customers are returning. Its managers respond by rewriting staff titles, choosing a new design for company documents, and creating additional meetings to discuss these changes. Every week produces a longer list of completed tasks. Meanwhile, the product still fails to meet the needs that brought customers to the business in the first place. The visible activity makes employees feel that recovery is underway, although the reason for the decline remains untouched. In effect, the managers are **polishing the sign while the reason to enter disappears**. Such work is attractive because its results are easy to display. Solving the central problem would require a more uncomfortable decision about what the business should actually offer.",
-"choices": [
-"improving customers' first impressions before introducing a better product",
-"reducing unnecessary work so that employees can focus on product development",
-"making useful internal changes whose benefits customers cannot yet recognize",
-"preparing the business to attract a different group of customers",
-"improving outward appearances while neglecting the cause of customer loss"
-],
-"answer": "⑤",
-"solution": "관리자들은 고객이 떠나는 원인인 제품의 문제를 해결하지 않고 눈에 잘 띄는 주변적 변화에 집중한다. 간판을 닦는다는 표현은 이러한 외형 개선을, 들어갈 이유가 사라진다는 표현은 핵심적인 고객 유인 요소가 약화되는 상황을 나타낸다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-f378a12680",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글에서 굵게 표시된 부분을 이해한 내용으로 가장 적절한 것을 고르시오.\n\nA school wants to know whether students understand what they read. Counting the minutes spent reading is straightforward; discovering whether students can explain an unfamiliar argument is more demanding. Suppose the school chooses reading time as its main measure of success. Students then learn that keeping a book open longer improves the recorded result, even when their understanding remains unchanged. The records may be perfectly accurate: every minute really was counted. The problem lies in what those minutes are asked to prove. The school has **allowed the ruler to choose the shape of the achievement**. A convenient indicator has begun to define the goal it was intended to help assess. Better measurement would require the school to return to its original question, even if answering it produced less tidy results.",
-"choices": [
-"rejected numerical evidence because understanding can only be assessed through personal opinion",
-"let an easily recorded indicator redefine success instead of checking the intended learning",
-"used an inaccurate record to hide a genuine improvement in students' reading ability",
-"adjusted its educational goal after discovering that students needed more reading practice",
-"made reading time a temporary goal while preparing a fuller assessment of understanding"
-],
-"answer": "②",
-"solution": "학교의 원래 목표는 독해 내용의 이해 여부를 파악하는 것이지만, 측정하기 쉬운 독서 시간이 성공의 기준으로 바뀌었다. 기록 자체의 정확성이 아니라, 지표가 본래 평가하려던 목표를 대신하게 된 것이 핵심이다. 따라서 편리한 지표가 성공의 의미를 재정의하도록 했다는 ②가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-d47c134fb8",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 4,
-"body": "굵게 표시된 표현의 함축적 의미로 가장 적절한 것을 고르시오.\n\nPeople usually recognize another culture's customs more readily than their own. An unfamiliar greeting seems to require an explanation, while the greeting learned in childhood seems simply natural. Yet the familiar practice also rests on expectations that could have been different. Encountering another way of life can reveal this, even when a person has no wish to adopt it. Someone may continue to prefer the customs of home but begin to understand them as learned arrangements rather than unavoidable features of human life. At that point, **home has acquired quotation marks**. What once appeared to be the only sensible way of doing things can now be described as the way people in a particular community have learned to act. The change concerns the person's awareness, not necessarily the person's behavior.",
-"choices": [
-"The person now regards familiar customs as less reasonable than foreign ones.",
-"The person has learned to reproduce local customs more faithfully after returning.",
-"The person's home community has changed its customs through contact with outsiders.",
-"Familiar practices have become recognizable as culturally learned rather than self-evident.",
-"Cultural differences have become less noticeable as the person accepts shared human values."
-],
-"answer": "④",
-"solution": "다른 문화를 접하면 자신의 관습도 유일하고 당연한 방식이 아니라 특정 공동체에서 학습한 방식임을 인식할 수 있다. ‘고향에 따옴표가 생겼다’는 표현은 익숙한 문화를 거리를 두고 바라볼 수 있게 되었다는 뜻이다. 자신의 관습을 버리거나 외국 문화를 더 높이 평가한다는 의미는 아니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-7244cb41d0",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 5,
-"body": "글 전체의 논지를 바탕으로 굵게 표시된 부분의 의미를 추론한 것으로 가장 적절한 것을 고르시오.\n\nSuppose a company asks its current customers whether a recent product change has made them more likely to remain customers. Most respondents answer yes, and managers present the result as evidence that the change has strengthened customer loyalty overall. The answers may be honest, and nearly everyone invited may have responded. Nevertheless, the invitation list was prepared after the change. Anyone who had already left because of it would no longer qualify to receive the survey. Their absence does not establish that they disliked the change; they might have left for unrelated reasons. It does, however, limit what the favorable answers can establish. The company is **asking the guests still at the table to account for the empty chairs**. Before treating approval among remaining customers as evidence of the change's overall success, managers must consider the customers whom the survey's design prevented them from hearing.",
-"choices": [
-"Using current customers' approval to identify the particular reasons former customers left",
-"Treating unrepresented departures as confirmed evidence that the product change failed",
-"Extending findings from retained customers to an overall judgment without accounting for those excluded",
-"Assuming that increasing participation among current customers would make their answers more honest",
-"Rejecting favorable responses merely because former customers might have given different answers"
-],
-"answer": "③",
-"solution": "설문은 변화 이후에도 남아 있는 고객만 포함하므로, 높은 응답률이나 응답의 진실성만으로 이탈 고객의 누락이 해결되지는 않는다. 빈 의자는 조사에서 제외된 고객을 뜻하며, 남은 고객의 호평만으로 변화의 전체적인 성과를 판단하는 데 한계가 있음을 나타낸다. 다만 이탈 자체가 변화에 대한 불만을 입증하는 것은 아니므로 ②는 부적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-dc3f04043f",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 굵게 표시된 표현이 함축하는 바로 가장 적절한 것을 고르시오.\n\nImagine a study that examines business owners who succeeded and discovers that many followed the same planning routine. A detailed description of that routine may be useful, but its frequency among successful owners does not by itself show that it distinguishes success from failure. Suppose unsuccessful owners used it just as often. In that case, the original finding would remain factually correct while losing much of its value as advice about how to succeed. Conversely, if the routine were rare among unsuccessful owners, the comparison would give the finding greater significance, though other explanations would still need consideration. By examining successful owners alone, researchers risk **mistaking a password heard inside the room for the key that opened the door**. What is observed among those who reached an outcome must be tested against relevant cases that did not reach it before its role in producing that outcome can be judged.",
-"choices": [
-"Inferring that a practice observed among successful cases helps explain success without checking comparable failures",
-"Concluding that a shared practice cannot contribute to success because unsuccessful cases may also display it",
-"Assuming that a practice used less often by unsuccessful owners must be the sole cause of success",
-"Treating a detailed description of successful owners' routines as less reliable than their own advice",
-"Requiring successful owners to explain why they adopted a routine before comparing their results"
-],
-"answer": "①",
-"solution": "성공한 사람들에게서 공통적으로 발견되는 습관이라도 실패한 사람들에게 똑같이 나타난다면 성공을 설명하는 근거로서의 가치가 약해진다. 방 안에서 들린 암호를 문을 연 열쇠로 착각한다는 것은 성공 사례의 특징을 비교 검토 없이 성공의 기여 요인으로 추론하는 오류를 뜻한다. 실패 사례와의 차이가 확인되어도 다른 설명을 검토해야 하므로, 그 습관을 유일한 원인으로 단정하는 ③도 적절하지 않다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-eff1657a94",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe team's __________ for the presentation took several days.",
-"choices": [
-"prepare",
-"preparation",
-"preparatory",
-"prepared",
-"prepares"
-],
-"answer": "②",
-"solution": "소유격 The team's 뒤에서 문장의 주어 역할을 하려면 명사가 필요하다. 따라서 ‘준비’라는 뜻의 명사 preparation이 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-112940eaed",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nTo avoid confusion, please explain the purpose of the project __________.",
-"choices": [
-"clarity",
-"clear",
-"clearness",
-"clearly",
-"clarify"
-],
-"answer": "④",
-"solution": "빈칸에는 동사 explain을 수식하여 ‘명확하게’라는 뜻을 나타내는 부사가 필요하다. clearly가 부사이며, clear는 형용사, clarify는 동사이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-7152159622",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 중 굵게 표시한 낱말의 형태가 어법상 옳은 것은?",
-"choices": [
-"The speaker answered every question **polite**.",
-"Their final **choose** was based on the results.",
-"The revised instructions were surprisingly **helpful**.",
-"The team hopes to **strength** its cooperation.",
-"We were **confidence** that the plan would work."
-],
-"answer": "③",
-"solution": "③은 be동사 뒤의 보어 자리에 형용사 helpful이 쓰였고, 부사 surprisingly가 이를 수식하므로 옳다. ①은 answered를 수식하는 politely, ②는 명사 choice, ④는 동사 strengthen이 필요하다. ⑤는 주어의 상태를 나타내는 형용사 confident로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-990405516e",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 글의 (A), (B), (C)에 들어갈 낱말을 바르게 짝지은 것은?\n\nWhen reviewing a plan to protect a forest, a clear (A)[distinction / distinct] should be made between immediate tasks and long-term goals. The reasons for each task must be explained (B)[scientific / scientifically], while the overall plan should remain (C)[flexible / flexibly].",
-"choices": [
-"distinction · scientific · flexible",
-"distinct · scientifically · flexible",
-"distinction · scientifically · flexibly",
-"distinct · scientific · flexibly",
-"distinction · scientifically · flexible"
-],
-"answer": "⑤",
-"solution": "(A)는 관사 a와 형용사 clear 뒤에서 주어의 중심이 되는 명사 distinction이 필요하다. (B)는 explained를 수식하므로 부사 scientifically가 알맞다. (C)는 ‘유연한 상태를 유지하다’라는 의미로 주어의 상태를 설명하므로 형용사 flexible이 필요하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-412a1e2df7",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 <보기>에서 굵게 표시한 낱말의 형태가 어법상 옳은 문장만을 고른 것은?\n\n<보기>\nㄱ. The team found the revised instructions **useful**.\nㄴ. The speaker explained the results with great **accurate**.\nㄷ. The purpose of the meeting was to **clarification** the team's goals.\nㄹ. The final report was **carefully** prepared.\nㅁ. The explanation sounded **reasonably** to everyone.",
-"choices": [
-"ㄱ, ㄹ",
-"ㄱ, ㅁ",
-"ㄴ, ㄷ",
-"ㄴ, ㄹ",
-"ㄷ, ㅁ"
-],
-"answer": "①",
-"solution": "ㄱ의 useful은 목적어 the revised instructions의 상태를 설명하는 목적격 보어이며, ㄹ의 carefully는 prepared를 수식하는 부사이므로 옳다. ㄴ은 전치사 with 뒤에서 형용사 great의 수식을 받는 명사 accuracy가 필요하다. ㄷ은 to부정사를 이루는 동사 clarify, ㅁ은 연결동사 sounded 뒤의 보어인 형용사 reasonable로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-e4d595c390",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 <보기>에서 굵게 표시한 낱말의 형태가 어법상 옳은 문장을 모두 고른 것은?\n\n<보기>\nㄱ. What made the explanation **persuasive** was its clear connection to the results.\nㄴ. The team was **unanimous** in its decision to revise the plan.\nㄷ. The speaker's **reluctant** to discuss the results confused the audience.\nㄹ. The instructions were written so **precise** that no further explanation was needed.\nㅁ. The purpose of the revision is to **simplify** the instructions without changing their meaning.\nㅂ. The report, although **careful** prepared, failed to explain the difference.",
-"choices": [
-"ㄱ, ㄴ, ㄹ",
-"ㄱ, ㄷ, ㅁ",
-"ㄴ, ㅁ, ㅂ",
-"ㄱ, ㄴ, ㅁ",
-"ㄴ, ㄷ, ㄹ, ㅂ"
-],
-"answer": "④",
-"solution": "ㄱ은 목적격 보어인 형용사 persuasive, ㄴ은 주격 보어인 형용사 unanimous, ㅁ은 to부정사를 이루는 동사 simplify가 적절하다. ㄷ은 소유격 뒤에서 주어의 중심이 되는 명사 reluctance가 필요하다. ㄹ은 written을 수식하는 precisely가 필요하며, so가 앞에 있다고 해서 형용사를 쓰는 것은 아니다. ㅂ은 although it was carefully prepared에서 주어와 be동사가 생략된 구조이므로 prepared를 수식하는 carefully가 필요하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-d961e6a7e5",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 (A)~(E)에 들어갈 말을 괄호 안 낱말의 파생어로 각각 쓰시오.\n\n조건: 각 빈칸에는 한 단어만 쓰고, 문맥과 어법에 모두 맞게 형태를 바꿀 것. 정답은 (A)~(E)의 순서대로 쓸 것.\n\nTo improve a presentation, a team needs more than detailed information. What makes an explanation (A)__________ (persuade) is a clear connection between its claims and the results. Any (B)__________ (ambiguous) in the wording should be removed so that the audience does not have to guess what the speaker means. The team should also (C)__________ (simple) complex instructions without changing their meaning. Even a (D)__________ (care) organized presentation may be difficult to follow if the speaker fails to make the importance of each point (E)__________ (evidence).",
-"selfGrade": true,
-"answer": "persuasive, ambiguity, simplify, carefully, evident",
-"solution": "(A)는 makes의 목적어 an explanation을 설명하는 형용사 persuasive이고, (B)는 주어 역할을 하는 명사 ambiguity이다. (C)는 조동사 should 뒤에 오는 동사원형 simplify이다. (D)는 과거분사 organized를 수식하므로 부사 carefully가 필요하다. (E)는 make의 목적어 the importance of each point의 상태를 설명하는 형용사 evident이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-f882c2aa41",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 글에서 해안 마을이 번식기에 건물의 불빛을 가리도록 하는 이유를 우리말로 쓰시오.\n\nYoung sea turtles usually move toward the bright sky above the sea after leaving their nests at night. Artificial lights from buildings near the beach, however, may appear brighter and cause them to crawl inland. Some coastal towns therefore ask nearby buildings to cover their lights during the nesting season.",
-"selfGrade": true,
-"answer": "건물의 인공 불빛에 이끌린 새끼 바다거북이 바다 대신 육지 쪽으로 가는 것을 막기 위해서이다.",
-"solution": "새끼 바다거북은 밝은 쪽을 바다 방향으로 인식해 이동한다. 해안 건물의 불빛은 새끼들을 육지 쪽으로 잘못 이끌 수 있으므로, 이를 막기 위해 불빛을 가리게 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-063dcd76c3",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 2,
-"body": "다음 글에서 충동구매를 줄이기 위해 사람들이 실천하는 방법을 우리말로 쓰시오.\n\nA shopper may feel a strong desire to order an attractive product immediately. Some people prevent such impulsive purchases by delaying payment for an item that is not essential. They use the waiting time to consider calmly whether the item is actually necessary and complete the purchase only if they still want it afterward.",
-"selfGrade": true,
-"answer": "꼭 필요하지 않은 물건은 바로 결제하지 않고 일정 시간 기다리면서 실제로 필요한지 생각한 뒤, 여전히 원할 때만 구매한다.",
-"solution": "글에서 사람들은 필수품이 아닌 물건의 결제를 미룬다. 기다리는 동안 필요성을 차분히 판단하고, 이후에도 사고 싶을 때에만 구매한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-b8eced6724",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 3,
-"body": "다음 글에서 좋은 질문이 탐구에 기여하는 방식 세 가지를 우리말로 쓰시오.\n\nDigital tools can supply factual answers with remarkable speed, but receiving an answer is not always the beginning of meaningful inquiry. A carefully chosen question focuses our attention on an important issue. It may also expose an assumption that we have accepted without examining it. In addition, it can lead us toward a subject that no one involved had previously considered.",
-"selfGrade": true,
-"answer": "중요한 문제에 주의를 집중하게 하고, 검토 없이 받아들인 숨은 가정을 드러내며, 이전에는 생각하지 못했던 새로운 탐구 영역으로 이끈다.",
-"solution": "좋은 질문의 기능은 세 문장에 각각 제시되어 있다. 핵심은 중요한 것에 대한 주의 집중, 숨은 가정의 발견, 새로운 탐구 영역의 개방이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-fd4ed67679",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 4,
-"body": "다음 글의 굵은 글씨 문장이 의미하는 바를 글의 내용을 바탕으로 우리말로 풀어 쓰시오.\n\nA student who begins practicing the guitar may improve rapidly at first. Months later, the same practice routine may produce almost no visible progress, leading the student to doubt her talent. Yet this period does not necessarily show that her ability has reached its limit. It may simply mean that she now needs harder tasks, more useful comments on her performance, or a different practice routine. **When progress becomes silent, it may be asking the learner to change the conversation.**",
-"selfGrade": true,
-"answer": "발전이 눈에 보이지 않는 정체기는 능력의 한계에 도달했다는 뜻이 아니라, 더 어려운 과제나 유용한 피드백, 새로운 연습 방식으로 학습 방법을 바꾸라는 신호일 수 있다는 뜻이다.",
-"solution": "‘progress becomes silent’는 향상이 보이지 않는 정체기를 뜻한다. ‘change the conversation’은 포기하라는 말이 아니라 기존 연습법을 새로운 도전·피드백·방식으로 바꾸라는 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-d14ed16b19",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 4,
-"body": "다음 글을 읽고, 도시의 나무를 단순한 장식물이 아니라 ‘도시를 위한 실용적 투자’라고 할 수 있는 이유를 환경적 측면과 심리적 측면으로 나누어 우리말로 쓰시오.\n\nThe value of urban trees is not limited to making a street look pleasant. Their shade and the moisture released from their leaves lower the temperature of nearby areas on hot days. Their roots and surrounding soil also hold rainwater, so less water flows rapidly into drains during storms. Moreover, people living around abundant trees often experience less stress than those surrounded mainly by concrete. Money spent planting and maintaining trees can therefore produce several long-term benefits for a city.",
-"selfGrade": true,
-"answer": "환경적으로는 그늘과 잎의 수분 증발로 주변 온도를 낮추고 뿌리와 흙이 빗물을 흡수하여 홍수 위험을 줄이며, 심리적으로는 주민들의 스트레스를 줄여 정신 건강에 도움을 주기 때문이다.",
-"solution": "환경적 이점에는 더위 완화와 빗물 흡수에 따른 홍수 위험 감소가 모두 포함된다. 심리적 이점은 나무가 많은 환경이 주민의 스트레스를 낮춘다는 것이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-62c7e74a1e",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글을 읽고, (1) 숙련된 독자가 지시를 따르려 해도 반응이 늦어지는 과정을 두 단계로 설명하고, (2) 이 사례가 반복 연습의 효과에 관해 보여 주는 바를 우리말로 쓰시오.\n\nA skilled reader is shown color words, but each word is printed in a different ink color. She is instructed to report only the ink color. Although she understands the instruction, the meaning of each word enters her mind without deliberate effort. The automatically processed meaning and the visible color demand different responses, so her brain must settle the conflict before she can answer. The task demonstrates a less obvious result of long practice: a well-practiced process may operate even when it is irrelevant to one's present goal.\n",
-"selfGrade": true,
-"answer": "(1) 반복된 읽기가 자동화되어 무시하려 해도 단어의 의미가 먼저 처리되고, 그 의미와 잉크 색이 서로 다른 반응을 요구하여 뇌가 충돌을 해결하는 데 시간이 걸린다. (2) 반복 연습은 기술을 빠르게 할 뿐 아니라, 현재 목표와 무관해도 의지로 쉽게 멈출 수 없을 만큼 자동적으로 작동하게 할 수 있다.",
-"solution": "반응 지연의 과정에는 읽기의 자동적 의미 처리와 의미·색 정보 사이의 충돌이 모두 포함되어야 한다. 이 사례는 연습된 기술이 단순히 빨라지는 데 그치지 않고, 필요하지 않은 상황에서도 저절로 실행될 수 있음을 보여 준다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-13d7f076dd",
-"typeId": "eng-h3-u2m0s3t1",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글을 읽고, (1) 필자가 학교 교육의 초점을 바꾸어야 한다고 보는 근거와 (2) 구체적으로 어떤 방향으로 바꾸어야 하는지를 각각 우리말로 쓰시오.\n\nStudents once gained an advantage by remembering a large number of correct answers. Now, however, search engines and artificial-intelligence tools can locate facts and generate accurate responses much faster than an individual usually can. The more difficult task is deciding what deserves investigation in the first place. Questions that identify important issues, uncover unnoticed assumptions, or begin new lines of inquiry cannot be replaced merely by possessing more stored answers. Education should respond to this change in the relative value of answers and questions.",
-"selfGrade": true,
-"answer": "(1) 검색 엔진과 AI가 사람이 암기한 지식에 의존해 답하는 것보다 사실과 정확한 답을 훨씬 빠르게 제공할 수 있는 반면, 탐구할 가치가 있는 질문을 정하는 일은 여전히 더 어렵기 때문이다. (2) 정답을 암기시키는 교육의 비중을 줄이고, 중요한 문제와 숨은 가정을 발견하며 새로운 탐구를 여는 사려 깊은 질문을 만들도록 가르쳐야 한다.",
-"solution": "근거는 디지털 도구로 인해 저장된 답을 많이 아는 능력의 상대적 가치가 낮아졌다는 데 있다. 따라서 교육은 답의 암기보다 탐구할 가치가 있는 질문을 선택하고 만들어 내는 능력에 더 큰 비중을 두어야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u2m0s3t1",
-"custom": true
-},
-{
-"id": "fill-d6341fb669",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nHouseplants are often praised for their ability to clean indoor air. Many people buy a few pots and place them around the house, confident that these plants will noticeably improve the air they breathe every day. __________, scientists point out that you would need an enormous number of plants to make any real difference to the air in an ordinary room. A couple of leafy pots simply cannot do much. This does not mean that houseplants are useless. They still make rooms feel calmer and more pleasant, and caring for them can be relaxing. The point is only that we should not expect them to work as powerful air cleaners.",
-"choices": [
-"However",
-"For example",
-"Therefore",
-"In addition",
-"Similarly"
-],
-"answer": "①",
-"solution": "빈칸 앞은 사람들이 화분 몇 개로 실내 공기가 눈에 띄게 좋아진다고 '믿는다'는 내용이고, 빈칸 뒤는 실제로는 엄청나게 많은 화분이 있어야 효과가 있다는 '반대' 사실이다. 따라서 앞뒤가 대조를 이루므로 역접의 연결어 However가 알맞다. 예시(For example)·결과(Therefore)·첨가(In addition)·유사(Similarly)는 대조 관계를 나타내지 못하므로 답이 아니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-bb18f7d761",
-"typeId": "eng-h3-u0m2s3t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWater is essential to every living thing on Earth. Without it, plants wither, animals grow weak, and even the tiny cells inside our bodies cannot carry out their work. __________, a human being can survive for several weeks without food, but only a few days without water. This is why people who travel through deserts worry far more about running out of water than about running out of food. Finding a clean source of water can mean the difference between life and death.",
-"choices": [
-"However",
-"In contrast",
-"For example",
-"Nevertheless",
-"Instead"
-],
-"answer": "③",
-"solution": "빈칸 앞에서 물이 모든 생명체에 필수적이라는 '일반적 진술'을 하고, 빈칸 뒤에서 '사람은 음식 없이 몇 주를 버티지만 물 없이는 며칠뿐'이라는 구체적 사례로 이를 뒷받침한다. 따라서 예시를 이끄는 For example이 알맞다. However·In contrast·Nevertheless·Instead는 모두 대조/역접이라 앞뒤의 뒷받침 관계와 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m2s3t0",
-"custom": true
-},
-{
-"id": "fill-c27d79d64a",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 중 형용사와 그 명사형이 바르게 짝지어지지 «않은» 것은?",
-"choices": [
-"able — ability",
-"happy — happiness",
-"honest — honesty",
-"brave — bravery",
-"kind — kindity"
-],
-"answer": "⑤",
-"solution": "형용사 kind의 명사형은 접미사 -ness를 붙인 kindness이고, kindity라는 단어는 없다. able은 ability(능력), happy는 y를 i로 바꾸고 -ness를 붙인 happiness, honest는 honesty, brave는 bravery로 모두 바르게 짝지어졌다. 따라서 정답은 ⑤이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-8502cf587a",
-"typeId": "eng-h3-u1m1s2t1",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 중 명사와 그 형용사형이 바르게 짝지어진 것은?",
-"choices": [
-"danger — dangerful",
-"fame — famy",
-"care — careful",
-"friend — friendous",
-"nature — naturous"
-],
-"answer": "③",
-"solution": "명사 care에 접미사 -ful을 붙인 careful(조심성 있는)이 바른 형용사형이다. 나머지는 형용사형이 틀렸다. danger는 dangerous, fame은 famous, friend는 friendly, nature는 natural이 맞다. 따라서 정답은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u1m1s2t1",
-"custom": true
-},
-{
-"id": "fill-216f9a14a5",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 1,
-"body": "굵은 글씨로 표시한 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?\n\nSome students believe that studying longer always leads to better results. They stay awake late at night and skip sleep to review more material. However, sleep helps the brain remember what has been learned. Without enough sleep, students may forget important information and find it difficult to concentrate during exams. Therefore, sacrificing sleep to study more can be like **taking one step forward and two steps back**. Students may gain extra study time but lose even more in learning efficiency. Getting enough rest is an important part of successful studying.",
-"choices": [
-"making a small improvement but suffering a greater loss",
-"learning difficult subjects by following simple steps",
-"improving exam scores through longer study hours",
-"taking regular breaks to recover physical strength",
-"reviewing previously learned material before moving ahead"
-],
-"answer": "①",
-"solution": "지문은 수면 시간을 줄여 공부 시간을 늘리더라도 기억력과 집중력이 떨어져 학습 효과가 오히려 감소할 수 있다고 설명한다. 'taking one step forward and two steps back'은 작은 이익을 얻으려다가 더 큰 손해를 보는 상황을 비유한다. 따라서 정답은 ①이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
-"id": "fill-0d4fbb7814",
-"typeId": "eng-h3-u0m3s1t1",
-"kind": "객관식",
-"diff": 1,
-"body": "굵은 글씨로 표시한 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?\n\nA company noticed that many customers were unhappy with its products. Instead of improving product quality, the managers decided to change the company's logo and website colors. They believed these changes would make the business look better. However, customers continued to complain because the products still had the same problems. The company was simply **putting a fresh coat of paint on a broken wall**. Changing how something looks cannot solve a serious problem underneath. To win back customers, the company needed to improve its products rather than focus on their appearance.",
-"choices": [
-"repairing old buildings to improve the workplace",
-"solving customer problems by lowering product prices",
-"making products more attractive through better packaging",
-"changing the appearance without fixing the real problem",
-"developing new products to replace unsuccessful ones"
-],
-"answer": "④",
-"solution": "지문에서 회사는 제품의 품질 문제를 해결하지 않고 로고와 웹사이트 색상만 변경한다. 'putting a fresh coat of paint on a broken wall'은 근본적인 문제를 해결하지 않은 채 겉모습만 바꾸는 행동을 비유한다. 따라서 정답은 ④이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-u0m3s1t1",
-"custom": true
-},
-{
 "id": "fill-52dfff65c9",
 "typeId": "eng-h3-u0m0s5t1",
 "kind": "객관식",
@@ -4597,6 +3999,506 @@
 "③ 도윤, 하람",
 "④ 민서, 도윤, 서진",
 "⑤ 도윤, 서진, 하람"
+]
+},
+{
+"id": "fill-eff1657a94",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nThe team's __________ for the presentation took several days.",
+"answer": "②",
+"solution": "소유격 The team's 뒤에서 문장의 주어 역할을 하려면 명사가 필요하다. 따라서 ‘준비’라는 뜻의 명사 preparation이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"prepare",
+"preparation",
+"preparatory",
+"prepared",
+"prepares"
+]
+},
+{
+"id": "fill-112940eaed",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nTo avoid confusion, please explain the purpose of the project __________.",
+"answer": "④",
+"solution": "빈칸에는 동사 explain을 수식하여 ‘명확하게’라는 뜻을 나타내는 부사가 필요하다. clearly가 부사이며, clear는 형용사, clarify는 동사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"clarity",
+"clear",
+"clearness",
+"clearly",
+"clarify"
+]
+},
+{
+"id": "fill-7152159622",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 굵게 표시한 낱말의 형태가 어법상 옳은 것은?",
+"answer": "③",
+"solution": "③은 be동사 뒤의 보어 자리에 형용사 helpful이 쓰였고, 부사 surprisingly가 이를 수식하므로 옳다. ①은 answered를 수식하는 politely, ②는 명사 choice, ④는 동사 strengthen이 필요하다. ⑤는 주어의 상태를 나타내는 형용사 confident로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"The speaker answered every question **polite**.",
+"Their final **choose** was based on the results.",
+"The revised instructions were surprisingly **helpful**.",
+"The team hopes to **strength** its cooperation.",
+"We were **confidence** that the plan would work."
+]
+},
+{
+"id": "fill-990405516e",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (A), (B), (C)에 들어갈 낱말을 바르게 짝지은 것은?\n\nWhen reviewing a plan to protect a forest, a clear (A)[distinction / distinct] should be made between immediate tasks and long-term goals. The reasons for each task must be explained (B)[scientific / scientifically], while the overall plan should remain (C)[flexible / flexibly].",
+"answer": "⑤",
+"solution": "(A)는 관사 a와 형용사 clear 뒤에서 주어의 중심이 되는 명사 distinction이 필요하다. (B)는 explained를 수식하므로 부사 scientifically가 알맞다. (C)는 ‘유연한 상태를 유지하다’라는 의미로 주어의 상태를 설명하므로 형용사 flexible이 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"distinction · scientific · flexible",
+"distinct · scientifically · flexible",
+"distinction · scientifically · flexibly",
+"distinct · scientific · flexibly",
+"distinction · scientifically · flexible"
+]
+},
+{
+"id": "fill-412a1e2df7",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 굵게 표시한 낱말의 형태가 어법상 옳은 문장만을 고른 것은?\n\n<보기>\nㄱ. The team found the revised instructions **useful**.\nㄴ. The speaker explained the results with great **accurate**.\nㄷ. The purpose of the meeting was to **clarification** the team's goals.\nㄹ. The final report was **carefully** prepared.\nㅁ. The explanation sounded **reasonably** to everyone.",
+"answer": "①",
+"solution": "ㄱ의 useful은 목적어 the revised instructions의 상태를 설명하는 목적격 보어이며, ㄹ의 carefully는 prepared를 수식하는 부사이므로 옳다. ㄴ은 전치사 with 뒤에서 형용사 great의 수식을 받는 명사 accuracy가 필요하다. ㄷ은 to부정사를 이루는 동사 clarify, ㅁ은 연결동사 sounded 뒤의 보어인 형용사 reasonable로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ, ㄹ",
+"ㄱ, ㅁ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㅁ"
+]
+},
+{
+"id": "fill-e4d595c390",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 굵게 표시한 낱말의 형태가 어법상 옳은 문장을 모두 고른 것은?\n\n<보기>\nㄱ. What made the explanation **persuasive** was its clear connection to the results.\nㄴ. The team was **unanimous** in its decision to revise the plan.\nㄷ. The speaker's **reluctant** to discuss the results confused the audience.\nㄹ. The instructions were written so **precise** that no further explanation was needed.\nㅁ. The purpose of the revision is to **simplify** the instructions without changing their meaning.\nㅂ. The report, although **careful** prepared, failed to explain the difference.",
+"answer": "④",
+"solution": "ㄱ은 목적격 보어인 형용사 persuasive, ㄴ은 주격 보어인 형용사 unanimous, ㅁ은 to부정사를 이루는 동사 simplify가 적절하다. ㄷ은 소유격 뒤에서 주어의 중심이 되는 명사 reluctance가 필요하다. ㄹ은 written을 수식하는 precisely가 필요하며, so가 앞에 있다고 해서 형용사를 쓰는 것은 아니다. ㅂ은 although it was carefully prepared에서 주어와 be동사가 생략된 구조이므로 prepared를 수식하는 carefully가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㅁ, ㅂ",
+"ㄱ, ㄴ, ㅁ",
+"ㄴ, ㄷ, ㄹ, ㅂ"
+]
+},
+{
+"id": "fill-c27d79d64a",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 형용사와 그 명사형이 바르게 짝지어지지 «않은» 것은?",
+"answer": "⑤",
+"solution": "형용사 kind의 명사형은 접미사 -ness를 붙인 kindness이고, kindity라는 단어는 없다. able은 ability(능력), happy는 y를 i로 바꾸고 -ness를 붙인 happiness, honest는 honesty, brave는 bravery로 모두 바르게 짝지어졌다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"able — ability",
+"happy — happiness",
+"honest — honesty",
+"brave — bravery",
+"kind — kindity"
+]
+},
+{
+"id": "fill-8502cf587a",
+"typeId": "eng-h3-u1m1s2t1",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 중 명사와 그 형용사형이 바르게 짝지어진 것은?",
+"answer": "③",
+"solution": "명사 care에 접미사 -ful을 붙인 careful(조심성 있는)이 바른 형용사형이다. 나머지는 형용사형이 틀렸다. danger는 dangerous, fame은 famous, friend는 friendly, nature는 natural이 맞다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u1m1s2t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"danger — dangerful",
+"fame — famy",
+"care — careful",
+"friend — friendous",
+"nature — naturous"
+]
+},
+{
+"id": "fill-acd7bd23cd",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nOpen offices are designed to make communication easier. Without walls between desks, employees are expected to exchange ideas naturally throughout the day. __________, some workers respond to the lack of privacy by wearing headphones and avoiding conversation. Simply placing people in the same room, therefore, does not necessarily make them cooperate more.",
+"answer": "③",
+"solution": "빈칸 앞에서는 개방형 사무실이 의사소통을 촉진할 것이라는 기대를 설명한다. 뒤에서는 오히려 직원들이 대화를 피하기도 한다는 상반된 결과가 나오므로 역접의 연결어 However가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"For example",
+"Similarly",
+"However",
+"Therefore",
+"In addition"
+]
+},
+{
+"id": "fill-58b8f17827",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nNavigation apps allow travelers to reach unfamiliar places with little effort. Yet users who merely obey every instruction may fail to notice street names or major buildings. __________, they arrive at the destination without developing a clear mental picture of the area. To improve their sense of direction, they should pay attention to the route instead of looking only at the screen.",
+"answer": "①",
+"solution": "주변의 거리와 건물을 살피지 않는 것이 원인이고, 지역에 대한 심적 지도를 형성하지 못하는 것이 그 결과이다. 따라서 결과를 나타내는 As a result가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"As a result",
+"For instance",
+"In contrast",
+"Nevertheless",
+"Likewise"
+]
+},
+{
+"id": "fill-394a263705",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nResearchers must be cautious when explaining animal behavior. An action that appears to express a human-like emotion may have a simpler cause. (A) __________, a dog may lower its body not because it understands that it has done something morally wrong, but because it recognizes an angry voice. Such caution helps prevent researchers from reading their own expectations into what they observe. (B) __________, caution should not become an automatic refusal to consider the possibility of animal emotions. Scientists need to examine that possibility while continuing to demand reliable evidence.",
+"answer": "①",
+"solution": "(A) 뒤의 개 행동은 앞의 일반적인 주장을 구체화하는 사례이므로 For example이 적절하다. (B) 뒤에서는 신중함이 지나쳐서도 안 된다는 반대 측면을 제시하므로 Nevertheless가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"For example …… Nevertheless",
+"In other words …… Therefore",
+"For example …… Similarly",
+"Consequently …… Nevertheless",
+"In contrast …… Moreover"
+]
+},
+{
+"id": "fill-f2ab1ad6b6",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?\n\nPeople sometimes pay for a long-term gym membership because they believe the expense will force them to exercise. (A) __________, the payment is made by the person they are today, while the effort must be supplied repeatedly by their future self. As daily demands accumulate, the memory of the payment may become less powerful than the attraction of resting at home. (B) __________, arranging to meet a friend at the gym can create a more immediate reason to show up: skipping the workout now means disappointing someone now. Effective plans often succeed by changing the situation surrounding a choice, not merely by increasing its financial cost.",
+"answer": "②",
+"solution": "(A)에서는 선결제가 운동을 강제할 것이라는 믿음과 실제 행동 사이의 한계를 제시하므로 However가 적절하다. (B) 뒤의 친구와 약속하는 방법은 더 즉각적인 동기를 만드는 구체적인 사례이므로 For example이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Moreover …… In contrast",
+"However …… For example",
+"Therefore …… Likewise",
+"In other words …… Nevertheless",
+"However …… As a result"
+]
+},
+{
+"id": "fill-2b4c326364",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nPunishing every workplace mistake may appear to strengthen responsibility. (A) __________, it can weaken the flow of information on which genuine safety depends. An employee who expects punishment has a reason to remain silent, so the organization loses the opportunity to discover a faulty procedure before it causes greater harm. A safer system therefore distinguishes carelessness from an honest error. (B) __________ treating the latter simply as an offense, the system encourages workers to report how it occurred. The report can then reveal problems in training, equipment, or routines that affect many other employees. (C) __________, reducing punishment in carefully defined cases may increase rather than decrease organizational responsibility.",
+"answer": "②",
+"solution": "(A)에는 처벌의 긍정적 외관과 정보 흐름을 약화시키는 실제 효과를 대조하는 However가 필요하다. (B)는 정직한 실수를 범죄처럼 처리하는 방식 대신 보고를 장려한다는 뜻이므로 Instead of가 적절하다. 마지막 문장은 앞의 논리를 요약하여 책임의 의미를 재해석하므로 In this sense가 가장 자연스럽다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"Indeed …… In addition to …… Nevertheless",
+"However …… Instead of …… In this sense",
+"Therefore …… Apart from …… For example",
+"However …… Because of …… Consequently",
+"Likewise …… Instead of …… On the contrary"
+]
+},
+{
+"id": "fill-2353e60c96",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nNavigation technology can reduce the mental effort required to travel, but reduced effort is not identical to reduced ability. A person may use an app while still examining the route, identifying landmarks, and predicting the next turn. (A) __________, the important issue is not simply whether the technology is used, but how attention is distributed while it is being used. Step-by-step commands can discourage active observation when followed passively. (B) __________, the same commands can support learning when users compare them with what they see around them. (C) __________, abandoning navigation apps altogether is unnecessary; using them in a more attentive manner may preserve both convenience and spatial learning.",
+"answer": "②",
+"solution": "(A)는 앞의 설명을 ‘사용 여부보다 사용 방식이 중요하다’는 핵심으로 바꾸어 말하므로 In other words가 적절하다. (B)에서는 수동적 사용의 부정적 효과와 능동적 사용의 학습 효과가 대조되므로 By contrast가 필요하다. 마지막은 이 대조에서 도출되는 결론이므로 Therefore가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"For example …… Similarly …… Nevertheless",
+"In other words …… By contrast …… Therefore",
+"Nevertheless …… In addition …… Otherwise",
+"As a result …… For instance …… Likewise",
+"In other words …… Consequently …… However"
+]
+},
+{
+"id": "fill-d6341fb669",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nHouseplants are often praised for their ability to clean indoor air. Many people buy a few pots and place them around the house, confident that these plants will noticeably improve the air they breathe every day. __________, scientists point out that you would need an enormous number of plants to make any real difference to the air in an ordinary room. A couple of leafy pots simply cannot do much. This does not mean that houseplants are useless. They still make rooms feel calmer and more pleasant, and caring for them can be relaxing. The point is only that we should not expect them to work as powerful air cleaners.",
+"answer": "①",
+"solution": "빈칸 앞은 사람들이 화분 몇 개로 실내 공기가 눈에 띄게 좋아진다고 '믿는다'는 내용이고, 빈칸 뒤는 실제로는 엄청나게 많은 화분이 있어야 효과가 있다는 '반대' 사실이다. 따라서 앞뒤가 대조를 이루므로 역접의 연결어 However가 알맞다. 예시(For example)·결과(Therefore)·첨가(In addition)·유사(Similarly)는 대조 관계를 나타내지 못하므로 답이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"However",
+"For example",
+"Therefore",
+"In addition",
+"Similarly"
+]
+},
+{
+"id": "fill-bb18f7d761",
+"typeId": "eng-h3-u0m2s3t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nWater is essential to every living thing on Earth. Without it, plants wither, animals grow weak, and even the tiny cells inside our bodies cannot carry out their work. __________, a human being can survive for several weeks without food, but only a few days without water. This is why people who travel through deserts worry far more about running out of water than about running out of food. Finding a clean source of water can mean the difference between life and death.",
+"answer": "③",
+"solution": "빈칸 앞에서 물이 모든 생명체에 필수적이라는 '일반적 진술'을 하고, 빈칸 뒤에서 '사람은 음식 없이 몇 주를 버티지만 물 없이는 며칠뿐'이라는 구체적 사례로 이를 뒷받침한다. 따라서 예시를 이끄는 For example이 알맞다. However·In contrast·Nevertheless·Instead는 모두 대조/역접이라 앞뒤의 뒷받침 관계와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m2s3t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"However",
+"In contrast",
+"For example",
+"Nevertheless",
+"Instead"
+]
+},
+{
+"id": "fill-69d8079cdf",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 굵게 표시된 표현이 나타내는 의미로 가장 적절한 것을 고르시오.\n\nA student preparing for an important test may decide to sleep less and review more. At first, the plan seems successful: another chapter is finished, and another page of notes is read. The difficulty appears the following morning. The student has trouble following explanations and makes mistakes on questions that would normally be easy. Sleep also helps the brain organize what has been learned, so reducing it can weaken the value of the extra review. By repeatedly choosing another hour of study over needed rest, the student may be **adding pages to the notebook while taking strength from the reader**. A longer record of studying does not necessarily mean better preparation.",
+"answer": "③",
+"solution": "학생은 수면을 줄여 학습 분량을 늘리지만, 그 결과 집중력과 학습 효과가 떨어진다. 따라서 해당 표현은 공부한 양을 늘리는 동시에 효과적으로 학습할 능력을 약화한다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"making written notes so that difficult material becomes easier to understand",
+"depending on a notebook instead of trying to remember information",
+"increasing the amount studied while weakening the ability to learn effectively",
+"saving difficult chapters for a time when concentration is stronger",
+"improving reading skills by spending more time reviewing notes"
+]
+},
+{
+"id": "fill-a4f800c688",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 2,
+"body": "글의 흐름을 고려할 때, 굵게 표시된 부분의 의미로 가장 알맞은 것을 고르시오.\n\nImagine a classroom in which students who work patiently receive little attention. Whenever someone interrupts, however, the teacher stops the lesson and speaks to that student at length. The teacher wants the interruptions to disappear. Yet students who strongly want to be noticed may learn a different lesson: interrupting is an effective way to get the teacher's attention. For them, even criticism can be a reward. The teacher's response may therefore **hang a prize on the behavior marked for removal**. To change this pattern, the teacher needs to notice cooperation as well, giving students a reason to seek attention through actions that help the class.",
+"answer": "①",
+"solution": "교사는 방해 행동을 없애려 하지만, 관심을 원하는 학생에게는 긴 꾸중도 보상이 될 수 있다. 따라서 없애려는 행동에 오히려 관심이라는 보상을 제공한다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"reward an unwanted action through the attention given to it",
+"make a classroom rule too difficult for students to understand",
+"remove a reward before students have a chance to earn it",
+"praise students for correcting their classmates' mistakes",
+"prevent students from recognizing which actions are unacceptable"
+]
+},
+{
+"id": "fill-49177fb6d2",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "굵게 표시된 표현에 담긴 의미로 가장 적절한 것을 고르시오.\n\nSuppose a business finds that fewer customers are returning. Its managers respond by rewriting staff titles, choosing a new design for company documents, and creating additional meetings to discuss these changes. Every week produces a longer list of completed tasks. Meanwhile, the product still fails to meet the needs that brought customers to the business in the first place. The visible activity makes employees feel that recovery is underway, although the reason for the decline remains untouched. In effect, the managers are **polishing the sign while the reason to enter disappears**. Such work is attractive because its results are easy to display. Solving the central problem would require a more uncomfortable decision about what the business should actually offer.",
+"answer": "⑤",
+"solution": "관리자들은 고객이 떠나는 원인인 제품의 문제를 해결하지 않고 눈에 잘 띄는 주변적 변화에 집중한다. 간판을 닦는다는 표현은 이러한 외형 개선을, 들어갈 이유가 사라진다는 표현은 핵심적인 고객 유인 요소가 약화되는 상황을 나타낸다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"improving customers' first impressions before introducing a better product",
+"reducing unnecessary work so that employees can focus on product development",
+"making useful internal changes whose benefits customers cannot yet recognize",
+"preparing the business to attract a different group of customers",
+"improving outward appearances while neglecting the cause of customer loss"
+]
+},
+{
+"id": "fill-f378a12680",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 굵게 표시된 부분을 이해한 내용으로 가장 적절한 것을 고르시오.\n\nA school wants to know whether students understand what they read. Counting the minutes spent reading is straightforward; discovering whether students can explain an unfamiliar argument is more demanding. Suppose the school chooses reading time as its main measure of success. Students then learn that keeping a book open longer improves the recorded result, even when their understanding remains unchanged. The records may be perfectly accurate: every minute really was counted. The problem lies in what those minutes are asked to prove. The school has **allowed the ruler to choose the shape of the achievement**. Better measurement would require the school to return to its original question, even if answering it produced less tidy results.",
+"answer": "②",
+"solution": "학교의 원래 목표는 학생들이 읽은 내용을 이해하는지 확인하는 것이다. 그런데 측정하기 쉬운 '독서 시간'을 성공의 주된 기준으로 삼자, 학생들은 이해와 상관없이 책을 오래 펴 두는 쪽으로 행동한다. 'ruler(자)'는 측정 도구, 즉 독서 시간이라는 지표를 뜻하고, 'the shape of the achievement'는 무엇을 성취로 볼 것인가를 뜻한다. 따라서 밑줄 친 부분은 측정 도구가 성취의 의미를 결정하게 내버려 두었다는 것, 곧 기록하기 쉬운 지표가 성공을 재정의하게 했다는 ②의 의미다. ①: 학교는 수치를 거부하지 않았고 오히려 수치에 의존했다. ③: 글에서 기록은 정확하다(perfectly accurate)고 했다. ④: 학교가 교육 목표를 의도적으로 바꾼 것이 아니라 지표가 목표를 대신하게 된 것이다. ⑤: 독서 시간을 일시적 목표로 삼았다거나 더 충실한 평가를 준비 중이라는 내용은 없다. 마지막 문장이 원래 질문(이해 여부)으로 돌아가야 한다고 말하는 것도 ②를 뒷받침한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"rejected numerical evidence because understanding can only be assessed through personal opinion",
+"let an easily recorded indicator redefine success instead of checking the intended learning",
+"used an inaccurate record to hide a genuine improvement in students' reading ability",
+"adjusted its educational goal after discovering that students needed more reading practice",
+"made reading time a temporary goal while preparing a fuller assessment of understanding"
+]
+},
+{
+"id": "fill-d47c134fb8",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 3,
+"body": "굵게 표시된 표현의 함축적 의미로 가장 적절한 것을 고르시오.\n\nPeople usually recognize another culture's customs more readily than their own. An unfamiliar greeting seems to require an explanation, while the greeting learned in childhood seems simply natural. Yet the familiar practice also rests on expectations that could have been different. Encountering another way of life can reveal this, even when a person has no wish to adopt it. Someone may continue to prefer the customs of home but begin to understand them as learned arrangements rather than unavoidable features of human life. At that point, **home has acquired quotation marks**. What once appeared to be the only sensible way of doing things can now be described as the way people in a particular community have learned to act. The change concerns the person's awareness, not necessarily the person's behavior.",
+"answer": "④",
+"solution": "다른 문화를 접하면 자신에게 익숙한 관습도 유일하고 당연한 방식이 아니라 특정 공동체가 학습한 방식임을 깨닫게 된다. 따옴표는 어떤 말을 그대로 받아들이지 않고 한 걸음 떨어져 '이른바 ~라고 하는 것'으로 바라보게 하는 장치다. 따라서 '고향에 따옴표가 붙었다'는 것은 익숙한 관습을 당연한 것이 아닌 학습된 문화로 인식하게 되었다는 ④의 의미다. ①: 외국 관습을 더 합리적으로 본다는 내용은 없다. ②: 고향의 관습을 계속 선호할 수 있다(continue to prefer)고 했으므로, 지킬 가치를 의심한다는 것은 지나친 해석이다. ③: 변화는 공동체가 아니라 개인의 인식에서 일어났다. ⑤: 따옴표가 뜻하는 것은 인식상의 거리이지 소속감 상실이 아니며, 마지막 문장도 변화가 인식에 관한 것이라고 밝힌다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"The person now regards familiar customs as less reasonable than foreign ones.",
+"The person has begun to doubt whether the customs of home are worth keeping.",
+"The person's home community has changed its customs through contact with outsiders.",
+"Familiar practices have become recognizable as culturally learned rather than self-evident.",
+"The person has come to feel like an outsider within the home community."
+]
+},
+{
+"id": "fill-7244cb41d0",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "글 전체의 논지를 바탕으로 굵게 표시된 부분의 의미를 추론한 것으로 가장 적절한 것을 고르시오.\n\nSuppose a company asks its current customers whether a recent product change has made them more likely to remain customers. Most respondents answer yes, and managers present the result as evidence that the change has strengthened customer loyalty overall. The answers may be honest, and nearly everyone invited may have responded. Nevertheless, the invitation list was prepared after the change. Anyone who had already left because of it would no longer qualify to receive the survey. Their absence does not establish that they disliked the change; they might have left for unrelated reasons. It does, however, limit what the favorable answers can establish. The company is **asking the guests still at the table to account for the empty chairs**. Before treating approval among remaining customers as evidence of the change's overall success, managers must consider the customers whom the survey's design prevented them from hearing.",
+"answer": "③",
+"solution": "설문은 변화 이후에도 남아 있는 고객만 포함하므로, 높은 응답률이나 응답의 진실성만으로 이탈 고객의 누락이 해결되지는 않는다. 빈 의자는 조사에서 제외된 고객을 뜻하며, 남은 고객의 호평만으로 변화의 전체적인 성과를 판단하는 데 한계가 있음을 나타낸다. 다만 이탈 자체가 변화에 대한 불만을 입증하는 것은 아니므로 ②는 부적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Using current customers' approval to identify the particular reasons former customers left",
+"Treating unrepresented departures as confirmed evidence that the product change failed",
+"Extending findings from retained customers to an overall judgment without accounting for those excluded",
+"Assuming that increasing participation among current customers would make their answers more honest",
+"Rejecting favorable responses merely because former customers might have given different answers"
+]
+},
+{
+"id": "fill-dc3f04043f",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 굵게 표시된 표현이 함축하는 바로 가장 적절한 것을 고르시오.\n\nImagine a study that examines business owners who succeeded and discovers that many followed the same planning routine. A detailed description of that routine may be useful, but its frequency among successful owners does not by itself show that it distinguishes success from failure. Suppose unsuccessful owners used it just as often. In that case, the original finding would remain factually correct while losing much of its value as advice about how to succeed. Conversely, if the routine were rare among unsuccessful owners, the comparison would give the finding greater significance, though other explanations would still need consideration. By examining successful owners alone, researchers risk **mistaking a password heard inside the room for the key that opened the door**. What is observed among those who reached an outcome must be tested against relevant cases that did not reach it before its role in producing that outcome can be judged.",
+"answer": "①",
+"solution": "'방 안에서 들린 암호'는 성공한 사람들(방 안에 들어온 사람들) 사이에서 관찰된 공통 특징이고, '문을 연 열쇠'는 실제로 성공을 가져온 요인이다. 성공한 경영자만 조사하면, 실패한 경영자에게도 똑같이 나타나는 습관일 수 있는데도 그것을 성공의 원인으로 착각할 위험이 있다. 따라서 밑줄 친 부분은 비교할 만한 실패 사례를 확인하지 않고, 성공 사례에서 관찰된 관행이 성공을 설명한다고 추론하는 오류(①)를 뜻한다. ②: 글은 그 관행의 '조언으로서의 가치'가 약해질 수 있다고 했을 뿐, 성공에 기여할 수 없다고 단정하지 않는다. ③: 실패 사례에서 드물게 나타나더라도 다른 설명을 검토해야 한다고 했으므로 '유일한 원인'은 지나치다. ④: 글은 연구 결과가 사실적으로 정확하다(factually correct)는 것을 전제로 하며, 문제 삼는 것은 보고의 정확성이 아니라 해석이다. ⑤: 연구자들의 문제는 비교를 '하지 않은' 것이지 비교를 서두른 것이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"Inferring that a practice observed among successful cases helps explain success without checking comparable failures",
+"Concluding that a shared practice cannot contribute to success because unsuccessful cases may also display it",
+"Assuming that a practice used less often by unsuccessful owners must be the sole cause of success",
+"Doubting whether successful owners accurately reported the planning routine they actually followed",
+"Comparing successful and unsuccessful owners before describing their shared routine in sufficient detail"
+]
+},
+{
+"id": "fill-216f9a14a5",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "굵은 글씨로 표시한 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?\n\nSome students believe that studying longer always leads to better results. They stay awake late at night and skip sleep to review more material. However, sleep helps the brain remember what has been learned. Without enough sleep, students may forget important information and find it difficult to concentrate during exams. Therefore, sacrificing sleep to study more can be like **taking one step forward and two steps back**. Students may gain extra study time but lose even more in learning efficiency. Getting enough rest is an important part of successful studying.",
+"answer": "①",
+"solution": "지문은 수면 시간을 줄여 공부 시간을 늘리더라도 기억력과 집중력이 떨어져 학습 효과가 오히려 감소할 수 있다고 설명한다. 'taking one step forward and two steps back'은 작은 이익을 얻으려다가 더 큰 손해를 보는 상황을 비유한다. 따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"making a small improvement but suffering a greater loss",
+"learning difficult subjects by following simple steps",
+"improving exam scores through longer study hours",
+"taking regular breaks to recover physical strength",
+"reviewing previously learned material before moving ahead"
+]
+},
+{
+"id": "fill-0d4fbb7814",
+"typeId": "eng-h3-u0m3s1t1",
+"kind": "객관식",
+"diff": 1,
+"body": "굵은 글씨로 표시한 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?\n\nA company noticed that many customers were unhappy with its products. Instead of improving product quality, the managers decided to change the company's logo and website colors. They believed these changes would make the business look better. However, customers continued to complain because the products still had the same problems. The company was simply **putting a fresh coat of paint on a broken wall**. Changing how something looks cannot solve a serious problem underneath. To win back customers, the company needed to improve its products rather than focusing on the company's image.",
+"answer": "④",
+"solution": "회사는 고객 불만의 원인인 제품 품질 문제를 해결하지 않고 로고와 웹사이트 색상만 바꾸었다. 그 결과 고객들은 계속 불만을 제기했다. 'putting a fresh coat of paint on a broken wall(부서진 벽에 새 페인트를 칠하다)'은 근본적인 문제를 그대로 둔 채 겉모습만 바꾸는 행동을 비유한다. 바로 뒤 문장(Changing how something looks cannot solve a serious problem underneath)도 이를 뒷받침한다. ①은 표현을 글자 그대로 해석한 것이고, ②⑤는 글에 없는 해결책이며, ③은 회사가 바꾼 것이 제품 포장이 아니라 로고와 웹사이트라는 점에서 맞지 않는다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-u0m3s1t1",
+"custom": true,
+"rv": 1,
+"choices": [
+"repairing old buildings to improve the workplace",
+"solving customer problems by lowering product prices",
+"making products more attractive through better packaging",
+"changing the appearance without fixing the real problem",
+"developing new products to replace unsuccessful ones"
 ]
 }
 ]

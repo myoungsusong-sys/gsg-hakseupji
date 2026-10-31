@@ -1,189 +1,5 @@
 [
 {
-"id": "fill-6877a0354d",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것은?\n\nAn obvious cue makes a habit easier (A)[starting / to start]. For example, workout equipment should be placed where it can be easily (B)[seen / seeing]. This arrangement helps you (C)[begin / beginning] the action with less effort.",
-"choices": [
-"starting - seeing - begin",
-"to start - seen - beginning",
-"starting - seen - to begin",
-"to start - seen - begin",
-"to start - seeing - to begin"
-],
-"answer": "④",
-"solution": "‘make＋목적어＋형용사’ 뒤의 진주어 역할에는 to부정사인 to start가 적절하다. equipment는 ‘보이는’ 대상이므로 수동형 seen을 쓰고, help＋목적어 뒤에는 동사원형 begin을 쓸 수 있다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-4fbec2232a",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 중 어법상 어색한 문장은?",
-"choices": [
-"A clear cue can remind you of the action you plan to take.",
-"Instead of making a vague plan, you should tell you exactly when to act.",
-"A current habit can be paired with a new behavior.",
-"The new action is more likely to be repeated when it requires little effort.",
-"Recording your progress gives you an immediate sense of satisfaction."
-],
-"answer": "②",
-"solution": "주어인 you가 자기 자신에게 말한다는 뜻이므로 목적어는 재귀대명사 yourself가 되어야 한다. 따라서 tell you를 tell yourself로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-30c531abca",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것은?\n\nA chemical substance (A)[called / calling] dopamine is released when you enjoy an activity. It can increase your motivation and make you (B)[want / wanting] to repeat the activity. Therefore, a habit needs to be (C)[attractive / attractively] if you want to continue it.",
-"choices": [
-"called - wanting - attractive",
-"called - want - attractive",
-"calling - want - attractively",
-"calling - wanting - attractive",
-"called - want - attractively"
-],
-"answer": "②",
-"solution": "substance는 dopamine이라고 ‘불리는’ 대상이므로 과거분사 called가 알맞다. 사역동사 make 뒤에는 동사원형 want가 오며, be동사 뒤에는 보어인 형용사 attractive가 필요하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-a136d7e576",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nTo build a habit, first choose a cue that ⓐreminds you of the action. The cue should be made as ⓑobviously as possible. Rather than making a vague promise, tell ⓒyou exactly when and where you will act. If a present routine is already tied to a particular time and place, ⓓpair it with a new behavior. The more often this connection is repeated, ⓔthe more firmly the new habit will become rooted in your life.",
-"choices": [
-"ⓐ, ⓑ",
-"ⓑ, ⓒ",
-"ⓒ, ⓓ",
-"ⓐ, ⓓ, ⓔ",
-"ⓑ, ⓓ, ⓔ"
-],
-"answer": "②",
-"solution": "‘make the cue＋목적격보어’의 수동형이므로 부사가 아니라 형용사 obvious가 필요하다. 또한 주어와 목적어가 같은 사람을 가리키므로 tell you는 tell yourself로 고쳐야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-cbd40f2059",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것은?\n\nIt is worth noting (A)[what / that] a lasting habit requires repeated action. Setting a specific time and location makes its cue (B)[obvious / obviously]. Once the response has begun, it becomes (C)[significant / significantly] easier to continue.",
-"choices": [
-"what - obvious - significant",
-"what - obviously - significantly",
-"that - obviously - significant",
-"that - obviously - significantly",
-"that - obvious - significantly"
-],
-"answer": "⑤",
-"solution": "noting 뒤에는 완전한 절이 이어지므로 접속사 that이 적절하다. makes의 목적격보어로 형용사 obvious가 필요하고, 비교급 형용사 easier를 수식하는 자리에는 부사 significantly가 와야 한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-5241bae047",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 (A)~(E) 중 어법상 어색한 표현을 알맞게 고치지 않은 것은?\n\n(A)What is rewarded tend to be repeated. Thus, a new habit should provide an immediate sense of accomplishment. When a behavior (B)feels rewardingly and satisfied, people are more likely to perform it again. A habit tracker is useful because it (C)lets you to record each completed action. You can write the action in a journal, (D)that provides a visible record of your progress and (E)helps you sticking to the new routine.",
-"choices": [
-"(A): → Whatever is rewarded tend to be repeated",
-"(B): → feels rewarding and satisfying",
-"(C): → lets you record each completed action",
-"(D): → which provides a visible record of your progress",
-"(E): → helps you stick to the new routine"
-],
-"answer": "①",
-"solution": "What is rewarded는 하나의 명사절로 단수 취급하므로 동사는 tends가 되어야 한다. Whatever로 바꾸더라도 tend를 그대로 두면 주어와 동사의 수가 일치하지 않으므로 ①은 올바른 수정이 아니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-987594a085",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글에는 어법상 잘못된 표현이 정확히 네 개 있다. 잘못된 표현을 모두 찾아 올바르게 고친 형태를 본문에 나온 순서대로 쓰시오. (답안은 쉼표로 구분할 것.)\n\nIt is worth remembering what lasting habits are not formed at once. To make a new action automatic, its cue should be made obviously, and the response should require as little effort as possible. Once you have started the response, it becomes much easier continuing it. Recording the completed action provides a sense of satisfaction which encourages you repeating it.",
-"selfGrade": true,
-"answer": "that, obvious, to continue, to repeat",
-"solution": "remembering 뒤에는 완전한 절이 이어지므로 what을 that으로 고치고, 목적격보어 자리의 obviously는 형용사 obvious로 고쳐야 한다. ‘더 쉽게 계속하다’는 it becomes easier to continue it으로 표현하며, encourage는 ‘encourage＋목적어＋to부정사’ 구조이므로 repeating을 to repeat로 고친다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-920d8b011c",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nWhen you enjoy ①doing something, a chemical substance ②calling dopamine is released in your brain, which ③increases your motivation and ④makes you eager ⑤to repeat the action.",
-"choices": [
-"① doing",
-"② calling",
-"③ increases",
-"④ makes",
-"⑤ to repeat"
-],
-"answer": "②",
-"solution": "dopamine은 '도파민이라고 불리는' 물질이라는 뜻이다. 앞의 명사 a chemical substance가 부르는 쪽이 아니라 불리는 쪽이므로 수동의 과거분사 called를 써야 한다. ①은 enjoy가 동명사를 목적어로 취하므로 맞다. ③과 ④는 계속적 용법의 which에 이어지는 동사로, 앞 절 전체를 받는 단수 취급이므로 맞다. ⑤는 형용사 eager 뒤에 오는 to부정사이므로 맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-aa2a127ecd",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nIf a habit is ①easier to do, it's more likely ②to be repeated. For example, if you aim to work out regularly, you could set up a dedicated workout area like a space in your living room. This will ensure ③what all your workout equipment is ④readily available while ⑤keeping distractions away.",
-"choices": [
-"① easier",
-"② to be repeated",
-"③ what",
-"④ readily",
-"⑤ keeping"
-],
-"answer": "③",
-"solution": "ensure 뒤의 절은 주어(all your workout equipment)와 보어(available)를 모두 갖춘 완전한 문장이다. 따라서 명사절을 이끄는 접속사 that을 써야 하고, what은 쓸 수 없다. ②는 'be likely to-v' 구문이며, 습관이 반복'되는' 것이므로 수동태가 맞다. ④는 형용사 available을 꾸미는 부사이고, ⑤는 접속사 while 뒤의 분사구문이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
-"id": "fill-a07b80ef5d",
-"typeId": "eng-h3-b03-u0m1s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nWhen ①creating a new habit, set a cue that ②sparks the habit and make the cue as ③obviously as possible. Instead of a vague intent like \"I will work out,\" be specific and tell ④yourself \"I will work out for an hour starting at 8 p.m. at home.\" Your current habit is already ⑤associated with a particular time and location.",
-"choices": [
-"① creating",
-"② sparks",
-"③ obviously",
-"④ yourself",
-"⑤ associated"
-],
-"answer": "③",
-"solution": "'make + 목적어 + 목적격보어' 구조에서 목적격보어 자리에는 형용사가 와야 한다. 따라서 as ~ as 사이의 obviously를 obvious로 고쳐야 한다. ①은 접속사 When 뒤의 분사구문이고, ②는 선행사 a cue가 단수이므로 sparks가 맞다. ④는 명령문에서 생략된 주어 you와 목적어가 같으므로 재귀대명사를 쓴다. ⑤는 'be associated with(~와 관련되다)'라는 수동태 표현이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
-"custom": true
-},
-{
 "id": "fill-08de0b64fb",
 "typeId": "eng-h3-b03-u1m0s0t0",
 "kind": "객관식",
@@ -921,6 +737,200 @@
 "③ change / which / to be found",
 "④ change / where / to be found",
 "⑤ changes / which / to find"
+]
+},
+{
+"id": "fill-6877a0354d",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것은?\n\nAn obvious cue makes a habit easier (A)[starting / to start]. For example, workout equipment should be placed where it can be easily (B)[seen / seeing]. This arrangement helps you (C)[begin / beginning] the action with less effort.",
+"answer": "④",
+"solution": "(A) 'make＋목적어＋형용사(makes a habit easier)' 구조에서 형용사 easier를 보충하는 자리이므로 'be easy to-v(~하기 쉽다)'의 to부정사 형태인 to start가 알맞다. (B) equipment는 '보이는' 대상이므로 수동의 과거분사 seen을 쓴다. (C) 'help＋목적어' 뒤에는 동사원형(또는 to부정사)이 오므로 begin을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"starting - seeing - begin",
+"to start - seen - beginning",
+"starting - seen - to begin",
+"to start - seen - begin",
+"to start - seeing - to begin"
+]
+},
+{
+"id": "fill-4fbec2232a",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 어색한 문장은?",
+"answer": "②",
+"solution": "주어인 you가 자기 자신에게 말한다는 뜻이므로 목적어는 재귀대명사 yourself가 되어야 한다. 따라서 tell you를 tell yourself로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"A clear cue can remind you of the action you plan to take.",
+"Instead of making a vague plan, you should tell you exactly when to act.",
+"A current habit can be paired with a new behavior.",
+"The new action is more likely to be repeated when it requires little effort.",
+"Recording your progress gives you an immediate sense of satisfaction."
+]
+},
+{
+"id": "fill-30c531abca",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것은?\n\nA chemical substance (A)[called / calling] dopamine is released when you enjoy an activity. It can increase your motivation and make you (B)[want / wanting] to repeat the activity. Therefore, a habit needs to be (C)[attractive / attractively] if you want to continue it.",
+"answer": "②",
+"solution": "substance는 dopamine이라고 ‘불리는’ 대상이므로 과거분사 called가 알맞다. 사역동사 make 뒤에는 동사원형 want가 오며, be동사 뒤에는 보어인 형용사 attractive가 필요하다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"called - wanting - attractive",
+"called - want - attractive",
+"calling - want - attractively",
+"calling - wanting - attractive",
+"called - want - attractively"
+]
+},
+{
+"id": "fill-a136d7e576",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 모두 골라 짝지은 것은?\n\nTo build a habit, first choose a cue that ⓐreminds you of the action. The cue should be made as ⓑobviously as possible. Rather than making a vague promise, tell ⓒyou exactly when and where you will act. If a present routine is already tied to a particular time and place, ⓓpair it with a new behavior. The more often this connection is repeated, ⓔthe more firmly the new habit will become rooted in your life.",
+"answer": "②",
+"solution": "‘make the cue＋목적격보어’의 수동형이므로 부사가 아니라 형용사 obvious가 필요하다. 또한 주어와 목적어가 같은 사람을 가리키므로 tell you는 tell yourself로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"ⓐ, ⓑ",
+"ⓑ, ⓒ",
+"ⓒ, ⓓ",
+"ⓐ, ⓓ, ⓔ",
+"ⓑ, ⓓ, ⓔ"
+]
+},
+{
+"id": "fill-cbd40f2059",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (A), (B), (C)에서 어법상 알맞은 표현으로 바르게 연결된 것은?\n\nIt is worth noting (A)[what / that] a lasting habit requires repeated action. Setting a specific time and location makes its cue (B)[obvious / obviously]. Once the response has begun, it becomes (C)[significant / significantly] easier to continue.",
+"answer": "⑤",
+"solution": "noting 뒤에는 완전한 절이 이어지므로 접속사 that이 적절하다. makes의 목적격보어로 형용사 obvious가 필요하고, 비교급 형용사 easier를 수식하는 자리에는 부사 significantly가 와야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"what - obvious - significant",
+"what - obviously - significantly",
+"that - obviously - significant",
+"that - obviously - significantly",
+"that - obvious - significantly"
+]
+},
+{
+"id": "fill-5241bae047",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 밑줄 친 (A)~(E) 중 어법상 어색한 표현을 알맞게 고치지 않은 것은?\n\n(A)What is rewarded tend to be repeated. Thus, a new habit should provide an immediate sense of accomplishment. When a behavior (B)feels rewardingly and satisfied, people are more likely to perform it again. A habit tracker is useful because it (C)lets you to record each completed action. You can write the action in a journal, (D)that provides a visible record of your progress and (E)helps you sticking to the new routine.",
+"answer": "①",
+"solution": "What is rewarded는 하나의 명사절로 단수 취급하므로 동사는 tends가 되어야 한다. Whatever로 바꾸더라도 tend를 그대로 두면 주어와 동사의 수가 일치하지 않으므로 ①은 올바른 수정이 아니다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A): → Whatever is rewarded tend to be repeated",
+"(B): → feels rewarding and satisfying",
+"(C): → lets you record each completed action",
+"(D): → which provides a visible record of your progress",
+"(E): → helps you stick to the new routine"
+]
+},
+{
+"id": "fill-987594a085",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글에는 어법상 잘못된 표현이 정확히 네 개 있다. 잘못된 표현을 모두 찾아 올바르게 고친 형태를 본문에 나온 순서대로 쓰시오. (답안은 쉼표로 구분할 것.)\n\nIt is worth remembering what lasting habits are not formed at once. To make a new action automatic, its cue should be made obviously, and the response should require as little effort as possible. Once you have started the response, it becomes much easier continuing it. Recording the completed action provides a sense of satisfaction which encourages you repeating it.",
+"answer": "that, obvious, to continue, to repeat",
+"solution": "remembering 뒤에는 완전한 절이 이어지므로 what을 that으로 고치고, 목적격보어 자리의 obviously는 형용사 obvious로 고쳐야 한다. ‘더 쉽게 계속하다’는 it becomes easier to continue it으로 표현하며, encourage는 ‘encourage＋목적어＋to부정사’ 구조이므로 repeating을 to repeat로 고친다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-920d8b011c",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nWhen you enjoy ①doing something, a chemical substance ②calling dopamine is released in your brain, which ③increases your motivation and ④makes you eager ⑤to repeat the action.",
+"answer": "②",
+"solution": "dopamine은 '도파민이라고 불리는' 물질이라는 뜻으로, 앞 명사 a chemical substance가 불리는 대상이므로 수동의 과거분사 called를 써야 한다. ①은 enjoy＋동명사, ③·④는 계속적 용법 which에 이어지는 단수 동사, ⑤는 형용사 eager 뒤의 to부정사로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① doing",
+"② calling",
+"③ increases",
+"④ makes",
+"⑤ to repeat"
+]
+},
+{
+"id": "fill-aa2a127ecd",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nIf a habit is ①easier to do, it's more likely ②to be repeated. For example, if you aim to work out regularly, you could set up a dedicated workout area like a space in your living room. This will ensure ③what all your workout equipment is ④readily available while ⑤keeping distractions away.",
+"answer": "③",
+"solution": "ensure 뒤의 절은 주어(all your workout equipment)와 보어(available)를 갖춘 완전한 문장이므로 명사절 접속사 that을 써야 하고 what은 쓸 수 없다. ②는 'be likely to-v'＋수동태, ④는 형용사 available을 꾸미는 부사, ⑤는 while 뒤의 분사구문으로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① easier",
+"② to be repeated",
+"③ what",
+"④ readily",
+"⑤ keeping"
+]
+},
+{
+"id": "fill-a07b80ef5d",
+"typeId": "eng-h3-b03-u0m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nWhen ①creating a new habit, set a cue that ②sparks the habit and make the cue as ③obviously as possible. Instead of a vague intent like \"I will work out,\" be specific and tell ④yourself \"I will work out for an hour starting at 8 p.m. at home.\" Your current habit is already ⑤associated with a particular time and location.",
+"answer": "③",
+"solution": "'make＋목적어＋목적격보어' 구조에서 보어 자리에는 형용사가 와야 하므로 as ~ as 사이의 obviously를 obvious로 고쳐야 한다. ①은 When 뒤의 분사구문, ②는 단수 선행사 a cue에 맞춘 sparks, ④는 명령문 주어 you와 같은 대상을 가리키는 재귀대명사, ⑤는 be associated with 수동태로 모두 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h3-b03-u0m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"① creating",
+"② sparks",
+"③ obviously",
+"④ yourself",
+"⑤ associated"
 ]
 }
 ]
