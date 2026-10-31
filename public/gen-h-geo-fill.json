@@ -10464,5 +10464,25 @@
 "twinGroup": "tw-9847",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-818e0d3954",
+"typeId": "19623",
+"kind": "객관식",
+"diff": 1,
+"body": "삼각형 $OAB$에서 변 $AB$의 중점을 $M$이라 하자. $\\overrightarrow{OA}=\\vec a$, $\\overrightarrow{OB}=\\vec b$일 때, $\\overrightarrow{OM}$을 $\\vec a$, $\\vec b$로 나타낸 것은?",
+"choices": [
+"$\\vec a+\\vec b$",
+"$\\frac12(\\vec a-\\vec b)$",
+"$\\frac12(\\vec a+\\vec b)$",
+"$\\vec a+\\frac12\\vec b$",
+"$\\frac12\\vec a+\\vec b$"
+],
+"answer": "③",
+"solution": "$M$이 변 $AB$의 중점이므로 $\\overrightarrow{AM}=\\frac12\\overrightarrow{AB}$이다. 이때 $\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}=\\vec b-\\vec a$이므로 $\\overrightarrow{OM}=\\overrightarrow{OA}+\\overrightarrow{AM}=\\vec a+\\frac12(\\vec b-\\vec a)=\\frac12\\vec a+\\frac12\\vec b=\\frac12(\\vec a+\\vec b)$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-19623",
+"custom": true,
+"rv": 1
 }
 ]

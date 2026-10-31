@@ -130,19 +130,6 @@
 "custom": true
 },
 {
-"id": "fill-cde6c45301",
-"typeId": "eng-m1-b03-u0m2s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 중 어법상 어색한 문장 두 개를 골라 기호를 쓰시오. 각 문장에서 잘못된 단어 하나만 고쳐 문장 전체를 다시 쓰되, 문장의 종류와 의미를 유지하시오.\n\n(A) My sister studies English, but my brothers study French.\n(B) Do your brother and sister have lunch at school and walk home together?\n(C) My father doesn't washes the dishes, but he cooks dinner.\n(D) Does your mother have a bike and ride it every day?\n(E) My brother goes to school early, but my sister don't go to school early.\n\n(1) __________: ________________________________________\n(2) __________: ________________________________________",
-"selfGrade": true,
-"answer": "(C): My father doesn't wash the dishes, but he cooks dinner. (E): My brother goes to school early, but my sister doesn't go to school early.",
-"solution": "(C)의 doesn't 뒤에는 동사원형이 와야 하므로 washes를 wash로 고친다. but 뒤의 he cooks dinner는 별도의 절이므로 cooks가 올바르다. (E)의 뒤 절은 주어가 my sister이므로 don't를 doesn't로 고친다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b03-u0m2s0t0",
-"custom": true
-},
-{
 "id": "fill-11725e90b1",
 "typeId": "eng-m1-b03-u2m2s0t0",
 "kind": "주관식",
@@ -2342,45 +2329,6 @@
 "solution": "'~을 잘하다'는 be good at ~ 으로 쓴다. 주어 He에 맞춰 be동사는 is가 되고, 'be good at + 명사' 순서로 배열하면 'He is good at soccer.'가 된다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-m1-b03-u1m0s0t0",
-"custom": true
-},
-{
-"id": "fill-b1536cb5f0",
-"typeId": "eng-m1-b03-u0m2s0t0",
-"kind": "주관식",
-"diff": 1,
-"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐서 문장 전체를 다시 쓰시오.\n\nMy brother watchs TV every evening.\n\n→ __________________________________________",
-"selfGrade": true,
-"answer": "My brother watches TV every evening.",
-"solution": "주어 My brother는 3인칭 단수이므로 일반동사 현재형에 -s나 -es를 붙여야 합니다. watch처럼 -ch로 끝나는 동사는 -es를 붙여 watches로 씁니다. 따라서 watchs를 watches로 고칩니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b03-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-d609d61e5f",
-"typeId": "eng-m1-b03-u0m2s0t0",
-"kind": "주관식",
-"diff": 1,
-"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐서 문장 전체를 다시 쓰시오.\n\nDo your sister like music?\n\n→ __________________________________________",
-"selfGrade": true,
-"answer": "Does your sister like music?",
-"solution": "일반동사 현재형 의문문은 「Do/Does + 주어 + 동사원형 ~?」의 형태로 씁니다. 주어 your sister가 3인칭 단수이므로 Do가 아니라 Does를 써야 합니다. 동사 like는 동사원형 그대로 둡니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b03-u0m2s0t0",
-"custom": true
-},
-{
-"id": "fill-d5e985b7fc",
-"typeId": "eng-m1-b03-u0m2s0t0",
-"kind": "주관식",
-"diff": 1,
-"body": "다음 문장에서 어법상 어색한 부분을 찾아 바르게 고쳐서 문장 전체를 다시 쓰시오.\n\nHe don't eat breakfast.\n\n→ __________________________________________",
-"selfGrade": true,
-"answer": "He doesn't eat breakfast.",
-"solution": "일반동사 현재형 부정문은 「주어 + don't/doesn't + 동사원형」의 형태로 씁니다. 주어 He가 3인칭 단수이므로 don't가 아니라 doesn't를 써야 합니다. 뒤의 eat은 동사원형이므로 그대로 둡니다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-m1-b03-u0m2s0t0",
 "custom": true
 },
 {
