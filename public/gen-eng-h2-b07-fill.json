@@ -1,164 +1,5 @@
 [
 {
-"id": "fill-56181b539a",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBaucis and Philemon had (A)[little / few] to offer the strangers because they were poor. They owned a goose and (B)[a few / a little] goats and pigs, but they were prompt (C)[to invite / inviting] the strangers into their cottage.",
-"choices": [
-"(A) little / (B) a few / (C) to invite",
-"(A) little / (B) a little / (C) inviting",
-"(A) few / (B) a few / (C) inviting",
-"(A) few / (B) a little / (C) to invite",
-"(A) little / (B) a few / (C) inviting"
-],
-"answer": "①",
-"solution": "‘제공할 것이 거의 없다’는 뜻에서 불가산적 표현인 little을 써야 한다. goats and pigs는 셀 수 있는 복수 명사이므로 a few가 알맞고, prompt는 to부정사를 목적격 보어로 취하므로 to invite가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-b36be625e3",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe strangers finally reached a cottage (A)[which / in which] Baucis and Philemon lived. Baucis rubbed the table with fresh mint and (B)[set / setting] water over the fire. Soon, vegetables (C)[baking / baked] over the fire were placed on the table.",
-"choices": [
-"(A) which / (B) set / (C) baking",
-"(A) in which / (B) setting / (C) baked",
-"(A) which / (B) setting / (C) baking",
-"(A) in which / (B) set / (C) baked",
-"(A) in which / (B) set / (C) baking"
-],
-"answer": "④",
-"solution": "live in a cottage의 관계이므로 전치사와 관계대명사를 결합한 in which가 필요하다. rubbed와 병렬을 이루는 과거형 set이 알맞으며, 채소는 구워지는 대상이므로 과거분사 baked가 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-c7e20af1f8",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHermes told the old couple that they could have (A)[whatever / however] reward they chose. The cottage, (B)[humble / humbly] though it was, had welcomed the gods. Neither the cottage nor its owners (C)[deserved / was deserving] such a great honor.",
-"choices": [
-"(A) however / (B) humble / (C) deserved",
-"(A) whatever / (B) humble / (C) deserved",
-"(A) whatever / (B) humbly / (C) deserved",
-"(A) however / (B) humbly / (C) was deserving",
-"(A) whatever / (B) humble / (C) was deserving"
-],
-"answer": "②",
-"solution": "reward를 수식하면서 ‘어떤 보상이든’이라는 뜻을 나타내는 whatever가 알맞다. 보어 자리에는 형용사 humble이 필요하고, neither A nor B의 동사는 가까운 복수 주어 owners에 맞추어 deserved를 쓴다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-6baf8f1d75",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 중 밑줄 친 부분이 어법상 알맞지 않은 것은?",
-"choices": [
-"The two strangers traveled through the district, asking for food and shelter.",
-"They came to a cottage in which an old couple lived.",
-"The guests made Baucis to stop chasing the goose.",
-"A large bowl was used to mix the wine with water.",
-"The vegetables baked over the fire were served to the guests."
-],
-"answer": "③",
-"solution": "사역동사 make는 목적격 보어로 동사원형을 취하므로 to stop이 아니라 stop을 써야 한다. 나머지는 분사구문, 전치사+관계대명사, 수동태, 과거분사의 쓰임이 모두 적절하다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-e97ae09232",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것의 개수는?\n\nBaucis, along with Philemon, ⓐwere willing to share everything she had. Never ⓑhad they turned a stranger away, and they expected ⓒwhatever reward was offered to them. Later, Philemon stood with his eyes ⓓbending toward the ground and made a modest request. In the end, their cottage ⓔwere made into a temple.",
-"choices": [
-"1개",
-"2개",
-"3개",
-"4개",
-"5개"
-],
-"answer": "③",
-"solution": "주어 Baucis가 단수이므로 ⓐ는 was, ‘눈이 아래로 향한’ 수동 관계이므로 ⓓ는 bent가 되어야 한다. 또한 단수 주어 their cottage에 맞추어 ⓔ는 was made가 알맞으므로 틀린 것은 세 개이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-7e3d1291ac",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 글의 밑줄 친 (A)~(E) 중 어법상 틀린 세 부분을 찾아, 바르게 고친 표현만 본문에 나온 순서대로 쓰시오.\n\n(A)Having refused shelter by the other villagers, the two strangers eventually reached a cottage (B)where Baucis and Philemon lived. The old couple welcomed them and served their best food. Not until Philemon found the wine bowl full again (C)he realized that the visitors must be gods. The strangers then identified (D)them as Zeus and Hermes and promised the couple (E)whatever reward they desired.",
-"selfGrade": true,
-"answer": "Having been refused, did he realize, themselves",
-"solution": "두 나그네는 다른 사람들에게 거절당했으므로 완료 수동 분사구문인 Having been refused가 필요하다. 부정 표현 Not until이 문두에 나오면 주절이 의문문 어순으로 도치되어 did he realize가 된다. 주어와 목적어가 같은 존재를 가리키므로 identified의 목적어는 재귀대명사 themselves가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-1c4ac5501c",
-"typeId": "eng-h2-b07-u4m1s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 두 문장이 같은 의미가 되도록 빈칸 (A)~(D)에 들어갈 말을 순서대로 쓰시오.\n\nAlthough the cottage was humble, the gods sat at meal there.\n→ Humble (A)________ it was, the gods sat at meal there.\n\nBecause the neighbors were amazed at the change, they often came to worship.\n→ (B)________ at the change, the neighbors often came to worship.\n\nThe old couple had never turned strangers away.\n→ Never (C)________ strangers away.\n\nThe gods sat at meal in this small cottage.\n→ It was in this small cottage (D)________.",
-"selfGrade": true,
-"answer": "as, Amazed, had they turned, that the gods sat at meal",
-"solution": "양보를 나타내는 ‘형용사+as+주어+동사’ 구조이므로 (A)는 as이다. 이웃들이 놀란 것이므로 수동 의미의 과거분사 Amazed를 쓰고, Never가 문두에 오면 had they turned로 도치한다. 마지막 문장은 장소를 강조하는 ‘It is/was ~ that ...’ 강조 구문이므로 that the gods sat at meal이 들어간다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
-"custom": true
-},
-{
-"id": "fill-8583f11f60",
-"typeId": "eng-h2-b07-u0m7s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nVolunteering even ____________ stress and anxiety, so it is good for your mind.",
-"choices": [
-"reduces",
-"increases",
-"creates",
-"ignores",
-"forgets"
-],
-"answer": "①",
-"solution": "본문에서 봉사활동이 스트레스와 불안을 '줄여 준다(reduces)'고 하였다. 뒤에 '마음에 좋다'는 내용이 이어지므로 긍정적 효과를 나타내는 reduces가 알맞다. increases(늘리다)나 creates(만들다)는 문맥상 반대 의미이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
-"custom": true
-},
-{
-"id": "fill-f25863746a",
-"typeId": "eng-h2-b07-u0m7s0t0",
-"kind": "객관식",
-"diff": 1,
-"body": "다음 영영 뜻풀이가 가리키는 단어로 가장 알맞은 것은?\n\nthe sad feeling you have when you are alone and have no friends with you",
-"choices": [
-"loneliness",
-"kindness",
-"freedom",
-"success",
-"health"
-],
-"answer": "①",
-"solution": "'혼자여서 슬픈 감정'을 뜻하는 단어는 loneliness(외로움)이다. 본문에서도 외로움으로 힘들어하는 노인들(senior citizens who struggle with loneliness)을 돕는 내용이 나온다. 나머지 선지는 뜻풀이와 맞지 않는다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
-"custom": true
-},
-{
 "id": "fill-077b6ec773",
 "typeId": "eng-h2-b07-u3m7s0t0",
 "kind": "객관식",
@@ -2663,5 +2504,173 @@
 "strengthening …… reducing",
 "maintaining …… shrinking"
 ]
+},
+{
+"id": "fill-8583f11f60",
+"typeId": "eng-h2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "빈칸에 들어갈 말로 가장 알맞은 것은?\n\nVolunteering even ____________ stress and anxiety, so it is good for your mind.",
+"answer": "①",
+"solution": "본문에서 봉사활동이 스트레스와 불안을 '줄여 준다(reduces)'고 하였다. 뒤에 '마음에 좋다'는 내용이 이어지므로 긍정적 효과를 나타내는 reduces가 알맞다. increases(늘리다)나 creates(만들다)는 문맥상 반대 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"reduces",
+"increases",
+"creates",
+"ignores",
+"forgets"
+]
+},
+{
+"id": "fill-f25863746a",
+"typeId": "eng-h2-b07-u0m7s0t0",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영영 뜻풀이가 가리키는 단어로 가장 알맞은 것은?\n\nthe sad feeling you have when you are alone and have no friends with you",
+"answer": "①",
+"solution": "'혼자여서 슬픈 감정'을 뜻하는 단어는 loneliness(외로움)이다. 본문에서도 외로움으로 힘들어하는 노인들(senior citizens who struggle with loneliness)을 돕는 내용이 나온다. 나머지 선지는 뜻풀이와 맞지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u0m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"loneliness",
+"kindness",
+"freedom",
+"success",
+"health"
+]
+},
+{
+"id": "fill-56181b539a",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nBaucis and Philemon had (A)[little / few] to offer the strangers because they were poor. They owned a goose and (B)[a few / a little] goats and pigs, but they were prompt (C)[to invite / inviting] the strangers into their cottage.",
+"answer": "①",
+"solution": "(A) '제공할 것이 거의 없다'는 뜻이다. 셀 수 있는 특정 대상을 가리키지 않으므로 대명사 little을 쓴다. few는 셀 수 있는 복수 명사를 대신할 때 쓴다.\n(B) goats and pigs는 셀 수 있는 복수 명사이므로 a few로 수식한다. a little은 셀 수 없는 명사와 함께 쓴다.\n(C) prompt는 형용사다. 'be prompt to do(~하는 데 신속하다)'처럼 to부정사를 취하므로 to invite가 알맞다. 'be prompt -ing'는 쓰지 않는다.\n따라서 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) little / (B) a few / (C) to invite",
+"(A) little / (B) a little / (C) inviting",
+"(A) few / (B) a few / (C) inviting",
+"(A) few / (B) a little / (C) to invite",
+"(A) little / (B) a few / (C) inviting"
+]
+},
+{
+"id": "fill-b36be625e3",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nThe strangers finally reached a cottage (A)[which / in which] Baucis and Philemon lived. Baucis rubbed the table with fresh mint and (B)[set / setting] water over the fire. Soon, vegetables (C)[baking / baked] by Baucis were placed on the table.",
+"answer": "④",
+"solution": "(A) live는 자동사이므로 'Baucis and Philemon lived in a cottage'에서 전치사 in이 필요하다. 관계대명사 which만 쓰면 lived 뒤 전치사가 빠진 구조가 되므로 'in which'(= where)를 쓴다.\n(B) and로 rubbed와 대등하게 연결되는 술어 동사 자리다. 과거형 set이 알맞다. setting은 술어 동사가 될 수 없다.\n(C) 채소는 Baucis에 의해 '구워진' 대상이고 행위자 by Baucis가 있으므로 과거분사 baked가 vegetables를 뒤에서 꾸민다.\n따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) which / (B) set / (C) baking",
+"(A) in which / (B) setting / (C) baked",
+"(A) which / (B) setting / (C) baking",
+"(A) in which / (B) set / (C) baked",
+"(A) in which / (B) set / (C) baking"
+]
+},
+{
+"id": "fill-c7e20af1f8",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 괄호 (A), (B), (C)에서 어법상 알맞은 말로 바르게 연결된 것은?\n\nHermes told the old couple that they could have (A)[whatever / however] reward they chose. The cottage, (B)[humble / humbly] though it was, had welcomed the gods. Neither the cottage nor its owners (C)[was / were] forgotten by the gods.",
+"answer": "②",
+"solution": "(A) 명사 reward를 수식하면서 '어떤 보상이든'이라는 뜻을 나타내는 복합관계형용사 whatever가 알맞다. however는 형용사·부사를 수식하므로 명사 앞에 올 수 없다.\n(B) 'humble though it was'는 'though it was humble'을 '형용사+though+주어+동사' 어순으로 도치한 양보 구문이다. be동사의 보어 자리이므로 형용사 humble을 쓴다.\n(C) 'neither A nor B'가 주어이면 동사는 B에 수를 맞춘다. B인 its owners가 복수이므로 were를 쓴다.\n따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"(A) however / (B) humble / (C) were",
+"(A) whatever / (B) humble / (C) were",
+"(A) whatever / (B) humbly / (C) were",
+"(A) however / (B) humbly / (C) was",
+"(A) whatever / (B) humble / (C) was"
+]
+},
+{
+"id": "fill-6baf8f1d75",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 알맞지 않은 문장은?",
+"answer": "③",
+"solution": "③ 사역동사 make는 목적격 보어로 동사원형을 취한다. 따라서 to stop이 아니라 stop을 써야 한다(The guests made Baucis stop chasing the goose.).\n① 주절 주어와 같은 주어의 동시 동작을 나타내는 분사구문 asking은 적절하다.\n② live in a cottage 관계이므로 '전치사+관계대명사' in which가 적절하다.\n④ 그릇이 '사용되는' 것이므로 수동태 was used가 맞다. to mix는 목적을 나타내는 to부정사다.\n⑤ 채소는 '구워진' 대상이므로 과거분사 baked가 명사를 뒤에서 꾸민다.\n따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"The two strangers traveled through the district, asking for food and shelter.",
+"They came to a cottage in which an old couple lived.",
+"The guests made Baucis to stop chasing the goose.",
+"A large bowl was used to mix the wine with water.",
+"The vegetables baked over the fire were served to the guests."
+]
+},
+{
+"id": "fill-e97ae09232",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것의 개수는?\n\nBaucis, along with her husband Philemon, ⓐwere always willing to share what little they had. Never ⓑhad they turned a stranger away, and they gladly served the guests ⓒwhatever food was in the house. Later, Philemon stood with his eyes ⓓbending toward the ground and made a modest request. In the end, their cottage ⓔwere turned into a temple.",
+"answer": "③",
+"solution": "ⓐ (×) 'A along with B'에서 동사는 A에 수를 맞춘다. 주어 Baucis가 단수이므로 was가 되어야 한다.\nⓑ (○) 부정어 Never가 문두에 오면 '조동사+주어' 어순으로 도치되므로 had they turned가 적절하다.\nⓒ (○) whatever food는 '어떤 음식이든'이라는 뜻의 복합관계형용사절을 이끌며, 그 절에서 주어 역할을 한다(whatever food was in the house).\nⓓ (×) 'with+목적어+분사'에서 눈은 '아래로 숙여진' 수동 관계이므로 과거분사 bent가 되어야 한다.\nⓔ (×) 주어 their cottage가 단수이므로 was turned가 되어야 한다.\n틀린 것은 ⓐ, ⓓ, ⓔ 세 개이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+]
+},
+{
+"id": "fill-7e3d1291ac",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 글의 밑줄 친 (A)~(E) 중 어법상 틀린 세 부분을 찾아, 바르게 고친 표현만 본문에 나온 순서대로 쓰시오.\n\n(A)Having refused shelter by the other villagers, the two strangers eventually reached a cottage (B)where Baucis and Philemon lived. The old couple welcomed them and served their best food. Not until Philemon found the wine bowl full again (C)he realized that the visitors must be gods. The strangers then identified (D)them as Zeus and Hermes and promised the couple (E)whatever reward they desired.",
+"answer": "Having been refused, did he realize, themselves",
+"solution": "(A) 두 나그네는 다른 마을 사람들에게 쉴 곳을 '거절당한' 쪽이다. 주절보다 앞선 일이므로 완료 수동 분사구문 Having been refused가 필요하다(Having been refused shelter로 써도 정답).\n(B) 장소 선행사 a cottage 뒤에서 완전한 절을 이끄는 관계부사 where는 적절하다.\n(C) 부정어구 'Not until ~'이 문두에 오면 주절이 '조동사+주어+동사원형'으로 도치된다. 따라서 did he realize가 되어야 한다.\n(D) identified의 주어 The strangers와 목적어가 같은 대상이므로 재귀대명사 themselves를 써야 한다.\n(E) reward를 수식하는 복합관계형용사 whatever는 적절하다.\n따라서 고친 표현은 순서대로 Having been refused, did he realize, themselves이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-1c4ac5501c",
+"typeId": "eng-h2-b07-u4m1s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 각 쌍의 두 문장이 같은 의미가 되도록 빈칸 (A)~(D)에 알맞은 말을 순서대로 쓰시오.\n\n<조건>\n• (A)에는 though를 제외한 한 단어를 쓸 것\n• (C)에서는 주어 the old couple을 그대로 쓸 것\n\nAlthough the cottage was humble, the gods sat at meal there.\n→ Humble (A)________ it was, the gods sat at meal there.\n\nBecause the neighbors were amazed at the change, they often came to worship.\n→ (B)________ at the change, the neighbors often came to worship.\n\nThe old couple had never turned strangers away.\n→ Never (C)________ strangers away.\n\nThe gods sat at meal in this small cottage.\n→ It was in this small cottage (D)________.",
+"answer": "(A) as (B) Amazed (C) had the old couple turned (D) that the gods sat at meal",
+"solution": "(A) 양보 부사절을 '형용사+as+주어+동사' 어순으로 바꾼 구문이므로 as를 쓴다. 조건에서 though는 제외했다.\n(B) 이유 부사절의 주어 the neighbors가 주절 주어와 같으므로 접속사와 주어를 생략하고 분사구문으로 바꾼다. 이웃들이 '놀란' 것이므로 being이 생략된 과거분사 Amazed로 시작한다.\n(C) 부정어 Never가 문두에 오면 '조동사+주어+과거분사' 어순으로 도치된다. 따라서 had the old couple turned가 된다.\n(D) 장소 부사구 in this small cottage를 강조하는 'It was ~ that ...' 강조 구문이므로 that the gods sat at meal이 들어간다. 강조 대상에 전치사 in이 포함되어 있으므로 where는 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h2-b07-u4m1s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
 }
 ]

@@ -1,189 +1,5 @@
 [
 {
-"id": "fill-633e2ea61f",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장에서 밑줄 친 말과 의미가 가장 가까운 것은?\n\nThe writer compared his life with life in the unforgiving sea.",
-"choices": [
-"peaceful",
-"harsh",
-"shallow",
-"familiar",
-"silent"
-],
-"answer": "②",
-"solution": "‘unforgiving’은 실수나 약점을 용납하지 않는다는 뜻으로, 바다의 가혹한 환경을 나타낸다. 따라서 ‘harsh’가 문맥상 가장 가깝다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-ca476b021e",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 문장에서 functional의 의미로 가장 알맞은 것은?\n\nThe octopus’s new arm gradually became functional.",
-"choices": [
-"able to work properly",
-"easy to recognize",
-"unlikely to grow",
-"different in color",
-"safe from danger"
-],
-"answer": "①",
-"solution": "‘functional’은 신체 기관이나 사물이 제 기능을 할 수 있는 상태를 뜻한다. 따라서 ‘able to work properly’가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-e01ade5e25",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 2,
-"body": "다음 상황에서 bittersweet가 나타내는 감정으로 가장 알맞은 것은?\n\nThe writer was glad that the octopus would have young, but he knew that her life would soon end.",
-"choices": [
-"분노와 두려움이 뒤섞인 감정",
-"기쁨만으로 가득한 감정",
-"슬픔만을 느끼는 상태",
-"기쁨과 슬픔이 함께하는 감정",
-"아무런 관심이 없는 상태"
-],
-"answer": "④",
-"solution": "새끼를 낳는다는 것은 기쁜 일이지만, 문어의 죽음이 다가온다는 점은 슬픈 일이다. ‘bittersweet’는 이처럼 기쁨과 슬픔이 공존하는 감정을 뜻한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-18821a0320",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 중 문어가 회복되는 과정을 가장 정확하게 나타낸 것은?",
-"choices": [
-"상처가 낫기 전에 새 팔을 잃고 활동을 멈추었다.",
-"상처가 아문 후 작은 팔이 다시 자라면서 활동성이 높아졌다.",
-"새 팔이 자란 뒤에도 상처는 계속 악화되었다.",
-"문어는 작가의 아들이 치료해 준 직후 사냥을 시작했다.",
-"문어는 새 팔이 자라자 곧바로 다른 문어와 함께 굴을 떠났다."
-],
-"answer": "②",
-"solution": "문어는 먼저 상처가 아문 뒤 작은 팔이 다시 자라기 시작했고, 점차 활발해졌다. 이러한 회복 순서를 정확히 제시한 것은 ②이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-be278aca28",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 문장의 의미로 가장 알맞은 것은?\n\nThe writer’s son became just as interested in the octopus as the writer was.",
-"choices": [
-"아들은 작가보다 문어에 훨씬 더 관심이 많아졌다.",
-"아들은 작가와 달리 문어에게 관심을 보이지 않았다.",
-"작가는 아들의 관심 때문에 문어 관찰을 그만두었다.",
-"아들은 작가만큼 문어에게 관심을 갖게 되었다.",
-"작가와 아들은 서로 다른 문어를 관찰했다."
-],
-"answer": "④",
-"solution": "‘just as A as B’는 ‘B만큼 똑같이 A한’이라는 동등 비교 표현이다. 따라서 아들이 작가만큼 문어에게 관심을 갖게 되었다는 뜻이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-3703f050af",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nAfter ________, the octopus stopped ________ and waited for her eggs ________.",
-"choices": [
-"mate — feed — hatching",
-"mating — feeding — to hatch",
-"mated — to feed — hatched",
-"mating — to feeding — hatch",
-"mate — feeding — to be hatching"
-],
-"answer": "②",
-"solution": "전치사 ‘after’ 뒤에는 동명사 ‘mating’이 올 수 있고, ‘stop’ 뒤에는 중단한 행동을 나타내는 동명사 ‘feeding’이 필요하다. 또한 알이 부화하는 것을 기다렸으므로 ‘wait for＋목적어＋to부정사’ 구조인 ‘her eggs to hatch’가 알맞다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-d92a004c3e",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 문장의 의미를 가장 정확하게 바꾸어 쓴 것은?\n\nAn octopus lives for roughly a year on average, and its life ends after reproduction.",
-"choices": [
-"문어는 번식하기 전에 평균 수명을 다한다.",
-"모든 문어는 태어난 지 정확히 1년째에 번식한다.",
-"문어는 평균적으로 약 1년을 살며 번식한 뒤 생을 마친다.",
-"문어의 알은 어미가 죽은 지 1년 뒤에 부화한다.",
-"문어는 수명이 끝난 뒤에야 번식을 시작한다."
-],
-"answer": "③",
-"solution": "문어의 평균 수명은 약 1년이며, 번식 이후 생이 끝난다는 내용이다. ‘roughly’와 ‘on average’의 의미까지 정확히 반영한 것은 ③이다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-1abb67e690",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 중 문어가 짝짓기 후 보인 행동과 그 이유를 가장 적절하게 연결한 것은?",
-"choices": [
-"굴을 떠나 계속 사냥했다 — 새끼에게 먹이를 마련하기 위해서였다.",
-"먹이를 먹지 않고 굴에 머물렀다 — 알이 부화할 때에 맞추어 생의 마지막 순간을 맞기 위해서였다.",
-"작가의 가족에게 다가갔다 — 새로운 보금자리를 찾기 위해서였다.",
-"새 팔을 다시 잘라 냈다 — 다른 문어를 보호하기 위해서였다.",
-"알을 굴 밖으로 옮겼다 — 자신의 수명을 연장하기 위해서였다."
-],
-"answer": "②",
-"solution": "짝짓기 후 문어는 굴에서 나오지 않았고 먹이를 먹거나 사냥하지 않았다. 이는 알의 부화 시점에 맞추어 자신의 마지막 순간을 맞으려는 행동이었다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-81fb15137e",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "다음 어휘 관계 중 문맥상 바꾸어 쓰기에 적절하지 않은 것은?",
-"choices": [
-"unforgiving → harsh",
-"valuable → important",
-"functional → usable",
-"approaching → drawing near",
-"bear young → avoid having offspring"
-],
-"answer": "⑤",
-"solution": "‘bear young’은 ‘새끼를 낳다’라는 뜻이다. ‘avoid having offspring’는 ‘새끼를 갖는 것을 피하다’라는 반대 의미이므로 바꾸어 쓸 수 없다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
-"id": "fill-c83e76d719",
-"typeId": "eng-h1-b07-u2m7s0t0",
-"kind": "주관식",
-"diff": 5,
-"body": "다음 두 문장의 의미가 같도록 빈칸에 알맞은 말을 쓰시오.\n\nThe octopus died only after her eggs hatched.\n→ Not until her eggs hatched ________ ________ ________.",
-"selfGrade": true,
-"answer": "did the octopus die",
-"solution": "부정의 의미를 지닌 ‘Not until’이 문장 앞에 오면 주절에는 주어와 조동사가 도치된다. 과거시제이므로 ‘did＋주어＋동사원형’의 어순을 사용한다.",
-"source": "유사 문항",
-"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
-"custom": true
-},
-{
 "id": "fill-1a8c6bfd31",
 "typeId": "eng-h1-b07-u3m4s0t0",
 "kind": "객관식",
@@ -4311,6 +4127,200 @@
 "solution": "① 본문의 두 번째 문장 'Dan found out that the National Park has a bike rental service and offers hand-crank bikes.'에서 필요한 정보를 찾는다.\n② 답안의 주어 it은 the National Park를 가리킨다.\n③ that절 안에서는 현재시제를 사용해야 하므로 have를 3인칭 단수 현재형 has로 쓴다.\n④ '자전거 대여 서비스'는 a bike rental service로 표현한다.\n⑤ 두 번째 동사 역시 주어 it과 수를 일치시켜 offers로 쓴다.\n⑥ '수동식 크랭크 자전거'를 뜻하는 hand-crank bikes에서 hand-crank는 하이픈으로 연결된 복합어이므로 한 단어로 취급한다.\n⑦ 따라서 빈칸에 has, bike, rental, service, offers, hand-crank를 차례대로 쓴다.",
 "source": "유사 문항",
 "twinGroup": "tw-eng-h1-b07-u3m6s0t0",
+"custom": true,
+"rv": 1,
+"selfGrade": true
+},
+{
+"id": "fill-633e2ea61f",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 밑줄 친 말과 의미가 가장 가까운 것은?\n\nThe writer compared his life with life in the unforgiving sea.",
+"answer": "②",
+"solution": "‘unforgiving’은 실수나 약점을 용납하지 않는다는 뜻으로, 바다의 가혹한 환경을 나타낸다. 따라서 ‘harsh’가 문맥상 가장 가깝다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"peaceful",
+"harsh",
+"shallow",
+"familiar",
+"silent"
+]
+},
+{
+"id": "fill-ca476b021e",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장에서 functional의 의미로 가장 알맞은 것은?\n\nThe octopus’s new arm gradually became functional.",
+"answer": "①",
+"solution": "‘functional’은 신체 기관이나 사물이 제 기능을 할 수 있는 상태를 뜻한다. 따라서 ‘able to work properly’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"able to work properly",
+"easy to recognize",
+"unlikely to grow",
+"different in color",
+"safe from danger"
+]
+},
+{
+"id": "fill-e01ade5e25",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 상황에서 bittersweet가 나타내는 감정으로 가장 알맞은 것은?\n\nThe writer was glad that the octopus would have young, but he knew that her life would soon end.",
+"answer": "④",
+"solution": "새끼를 낳는다는 것은 기쁜 일이지만, 문어의 죽음이 다가온다는 점은 슬픈 일이다. ‘bittersweet’는 이처럼 기쁨과 슬픔이 공존하는 감정을 뜻한다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"분노와 두려움이 뒤섞인 감정",
+"기쁨만으로 가득한 감정",
+"슬픔만을 느끼는 상태",
+"기쁨과 슬픔이 함께하는 감정",
+"아무런 관심이 없는 상태"
+]
+},
+{
+"id": "fill-18821a0320",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 문어가 회복되는 과정을 가장 정확하게 나타낸 것은?",
+"answer": "②",
+"solution": "문어는 먼저 상처가 아문 뒤 작은 팔이 다시 자라기 시작했고, 점차 활발해졌다. 이러한 회복 순서를 정확히 제시한 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"상처가 낫기 전에 새 팔을 잃고 활동을 멈추었다.",
+"상처가 아문 후 작은 팔이 다시 자라면서 활동성이 높아졌다.",
+"새 팔이 자란 뒤에도 상처는 계속 악화되었다.",
+"문어는 작가의 아들이 치료해 준 직후 사냥을 시작했다.",
+"문어는 새 팔이 자라자 곧바로 다른 문어와 함께 굴을 떠났다."
+]
+},
+{
+"id": "fill-be278aca28",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 의미로 가장 알맞은 것은?\n\nThe writer’s son became just as interested in the octopus as the writer was.",
+"answer": "④",
+"solution": "‘just as A as B’는 ‘B만큼 똑같이 A한’이라는 동등 비교 표현이다. 따라서 아들이 작가만큼 문어에게 관심을 갖게 되었다는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"아들은 작가보다 문어에 훨씬 더 관심이 많아졌다.",
+"아들은 작가와 달리 문어에게 관심을 보이지 않았다.",
+"작가는 아들의 관심 때문에 문어 관찰을 그만두었다.",
+"아들은 작가만큼 문어에게 관심을 갖게 되었다.",
+"작가와 아들은 서로 다른 문어를 관찰했다."
+]
+},
+{
+"id": "fill-3703f050af",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nAfter ________, the octopus stopped ________ and waited for her eggs ________.",
+"answer": "②",
+"solution": "전치사 ‘after’ 뒤에는 동명사 ‘mating’이 올 수 있고, ‘stop’ 뒤에는 중단한 행동을 나타내는 동명사 ‘feeding’이 필요하다. 또한 알이 부화하는 것을 기다렸으므로 ‘wait for＋목적어＋to부정사’ 구조인 ‘her eggs to hatch’가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"mate — feed — hatching",
+"mating — feeding — to hatch",
+"mated — to feed — hatched",
+"mating — to feeding — hatch",
+"mate — feeding — to be hatching"
+]
+},
+{
+"id": "fill-d92a004c3e",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장의 의미를 가장 정확하게 바꾸어 쓴 것은?\n\nAn octopus lives for roughly a year on average, and its life ends after reproduction.",
+"answer": "③",
+"solution": "문어의 평균 수명은 약 1년이며 번식 이후 생이 끝난다는 내용으로, 'roughly'와 'on average'의 의미까지 반영한 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"문어는 번식하기 전에 평균 수명을 다한다.",
+"모든 문어는 태어난 지 정확히 1년째에 번식한다.",
+"문어는 평균적으로 약 1년을 살며 번식한 뒤 생을 마친다.",
+"문어의 알은 어미가 죽은 지 1년 뒤에 부화한다.",
+"문어는 수명이 끝난 뒤에야 번식을 시작한다."
+]
+},
+{
+"id": "fill-1abb67e690",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 문어가 짝짓기 후 보인 행동과 그 이유를 가장 적절하게 연결한 것은?",
+"answer": "②",
+"solution": "짝짓기 후 문어는 굴에서 나오지 않았고 먹이를 먹거나 사냥하지 않았다. 이는 알의 부화 시점에 맞추어 자신의 마지막 순간을 맞으려는 행동이었다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"굴을 떠나 계속 사냥했다 — 새끼에게 먹이를 마련하기 위해서였다.",
+"먹이를 먹지 않고 굴에 머물렀다 — 알이 부화할 때에 맞추어 생의 마지막 순간을 맞기 위해서였다.",
+"작가의 가족에게 다가갔다 — 새로운 보금자리를 찾기 위해서였다.",
+"새 팔을 다시 잘라 냈다 — 다른 문어를 보호하기 위해서였다.",
+"알을 굴 밖으로 옮겼다 — 자신의 수명을 연장하기 위해서였다."
+]
+},
+{
+"id": "fill-81fb15137e",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 어휘 관계 중 문맥상 바꾸어 쓰기에 적절하지 않은 것은?",
+"answer": "⑤",
+"solution": "'bear young'은 '새끼를 낳다'라는 뜻이다. 'avoid having offspring'은 '새끼 갖는 것을 피하다'로 정반대 의미이므로 바꾸어 쓸 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
+"custom": true,
+"rv": 1,
+"choices": [
+"unforgiving → harsh",
+"valuable → important",
+"functional → usable",
+"approaching → drawing near",
+"bear young → avoid having offspring"
+]
+},
+{
+"id": "fill-c83e76d719",
+"typeId": "eng-h1-b07-u2m7s0t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 알맞은 말을 쓰시오.\n\nThe octopus died only after her eggs hatched.\n→ Not until her eggs hatched ________ ________ ________.",
+"answer": "did the octopus die",
+"solution": "부정의 의미를 지닌 'Not until'이 문두에 오면 주절은 주어·조동사가 도치된다. 과거시제이므로 'did＋주어＋동사원형'(did the octopus die) 어순을 쓴다.",
+"source": "유사 문항",
+"twinGroup": "tw-eng-h1-b07-u2m7s0t0",
 "custom": true,
 "rv": 1,
 "selfGrade": true
