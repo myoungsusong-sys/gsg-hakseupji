@@ -8344,5 +8344,101 @@
 "twinGroup": "tw-15276",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-c0de932d43",
+"typeId": "15311",
+"kind": "객관식",
+"diff": 1,
+"body": "두 유리수 $a$, $b$가 $a<0$, $b>0$을 만족할 때, 다음 중 양수인 것은?",
+"choices": [
+"$ab$",
+"$a-b$",
+"$-\\dfrac{a}{b}$",
+"$\\dfrac{b}{a}$",
+"$-b^2$"
+],
+"answer": "③",
+"solution": "$a$는 음수이고 $b$는 양수이므로 $ab$, $a-b$, $\\dfrac{b}{a}$는 모두 음수이다. 또한 $-b^2$는 음수이고, $\\dfrac{a}{b}$가 음수이므로 $-\\dfrac{a}{b}$는 양수이다. 따라서 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15311",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-aa0c34cc28",
+"typeId": "15311",
+"kind": "객관식",
+"diff": 1,
+"body": "유리수 $t$가 $t<0$일 때, 다음 중 음수인 것은?",
+"choices": [
+"$t^2$",
+"$-t$",
+"$-\\dfrac{1}{t}$",
+"$t^3$",
+"$(-t)^2$"
+],
+"answer": "④",
+"solution": "음수를 짝수 번 곱하면 양수이고, 홀수 번 곱하면 음수이다. 따라서 $t^2$과 $(-t)^2$은 양수이고 $t^3$은 음수이다. $-t$와 $-\\dfrac{1}{t}$도 양수이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15311",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-bf6d6c0b69",
+"typeId": "15311",
+"kind": "주관식",
+"diff": 1,
+"body": "두 유리수 $x$, $y$가 $x>0$, $y<0$을 만족할 때, 다음 중 음수인 것의 개수를 구하시오.\n\n$-x,\\quad y,\\quad \\dfrac{x}{y},\\quad -xy,\\quad -\\dfrac{y}{x}$",
+"selfGrade": true,
+"answer": "3",
+"solution": "$x>0$, $y<0$이므로 $-x$, $y$, $\\dfrac{x}{y}$는 음수이다. $xy$와 $\\dfrac{y}{x}$가 음수이므로 $-xy$와 $-\\dfrac{y}{x}$는 양수이다. 따라서 음수인 것은 모두 3개이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15311",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8c5d25b905",
+"typeId": "15311",
+"kind": "주관식",
+"diff": 3,
+"body": "세 유리수 $a$, $b$, $c$가 다음 조건을 모두 만족한다.\n\n$ab<0,\\quad bc>0,\\quad abc>0$\n\n다음 보기에서 항상 양수인 식의 기호를 모두 쓰시오.\n\nㄱ. $-a^2b$\nㄴ. $\\dfrac{a^3}{bc}$\nㄷ. $\\dfrac{b^3c^2}{a}$\nㄹ. $-\\dfrac{(ab)^2}{c}$\nㅁ. $\\dfrac{a-b}{b+c}$\nㅂ. $\\dfrac{b-c}{a-b}$",
+"selfGrade": true,
+"answer": "ㄱ, ㄴ, ㄹ",
+"solution": "$bc>0$이고 $abc>0$이므로 $a>0$이다. $ab<0$에서 $b<0$이고, $bc>0$에서 $c<0$이다.\nㄱ. $a^2>0$, $b<0$이므로 $-a^2b>0$이다.\nㄴ. $a^3>0$, $bc>0$이므로 $\\dfrac{a^3}{bc}>0$이다.\nㄷ. $b^3<0$, $c^2>0$, $a>0$이므로 $\\dfrac{b^3c^2}{a}<0$이다.\nㄹ. $(ab)^2>0$, $c<0$이므로 $-\\dfrac{(ab)^2}{c}>0$이다.\nㅁ. $a-b>0$, $b+c<0$이므로 $\\dfrac{a-b}{b+c}<0$이다.\nㅂ. $a=1$, $b=c=-1$이면 주어진 조건을 모두 만족하지만 $\\dfrac{b-c}{a-b}=0$이다. 따라서 항상 양수인 것은 아니다.\n그러므로 항상 양수인 식은 ㄱ, ㄴ, ㄹ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15311",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e22cd62bdc",
+"typeId": "15311",
+"kind": "주관식",
+"diff": 4,
+"body": "두 유리수 $a$, $b$가 $a<0$, $b>0$, $a+b\\ne0$을 만족한다. 다음 아홉 식 중 음수인 식의 개수로 가능한 값을 모두 구하시오.\n\n$a+b,\\quad -(a+b),\\quad a-b,\\quad b-a,\\quad ab,\\quad -a^2b,\\quad \\dfrac{a+b}{ab},\\quad -(a+b)^3,\\quad \\dfrac{(a+b)^2}{a-b}$",
+"selfGrade": true,
+"answer": "5, 7",
+"solution": "$a<0$, $b>0$이므로 $a-b<0$, $b-a>0$, $ab<0$이다. 또한 $a^2>0$이므로 $-a^2b<0$이다. $a+b\\ne0$이므로 $(a+b)^2>0$이고, 따라서 $\\dfrac{(a+b)^2}{a-b}<0$이다.\n즉, $a-b$, $ab$, $-a^2b$, $\\dfrac{(a+b)^2}{a-b}$의 네 식은 항상 음수이고, $b-a$는 항상 양수이다. $a+b$와 $-(a+b)$ 중에서는 정확히 하나가 음수이다.\n(1) $a+b>0$이면 $\\dfrac{a+b}{ab}<0$, $-(a+b)^3<0$이므로 음수인 식은 $4+1+2=7$개이다.\n(2) $a+b<0$이면 $\\dfrac{a+b}{ab}>0$, $-(a+b)^3>0$이므로 음수인 식은 $4+1=5$개이다.\n$(a,b)=(-1,2)$일 때 (1)이 성립하고, $(a,b)=(-2,1)$일 때 (2)가 성립한다. 따라서 가능한 값은 5, 7이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15311",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5c28a8a7b0",
+"typeId": "15311",
+"kind": "주관식",
+"diff": 3,
+"body": "0이 아닌 네 유리수 $a$, $b$, $c$, $d$가 다음 조건을 모두 만족한다.\n\n$\\dfrac{a}{b}<0,\\quad bc<0,\\quad cd>0$\n\n다음에서 항상 음수인 식에 붙은 번호를 모두 더한 값을 구하시오.\n\n① $-ab$\n② $ac$\n③ $\\dfrac{b}{d}$\n④ $-bc$\n⑤ $abc$\n⑥ $-(ad)^3$\n⑦ $\\dfrac{ab}{cd}$\n⑧ $a^3d$",
+"selfGrade": true,
+"answer": "16",
+"solution": "$\\dfrac{a}{b}<0$이므로 $a$와 $b$는 부호가 다르다. $bc<0$이므로 $b$와 $c$도 부호가 다르다. 따라서 $a$와 $c$는 부호가 같다. 또한 $cd>0$이므로 $d$도 $a$, $c$와 부호가 같다.\n① $ab<0$이므로 $-ab>0$이다.\n② $a$와 $c$는 부호가 같으므로 $ac>0$이다.\n③ $b$와 $d$는 부호가 다르므로 $\\dfrac{b}{d}<0$이다.\n④ $bc<0$이므로 $-bc>0$이다.\n⑤ $(a,b,c,d)=(1,-1,1,1)$이면 $abc<0$이고, $(-1,1,-1,-1)$이면 $abc>0$이다. 두 경우 모두 주어진 조건을 만족하므로 항상 음수인 것은 아니다.\n⑥ $ad>0$이므로 $-(ad)^3<0$이다.\n⑦ $ab<0$, $cd>0$이므로 $\\dfrac{ab}{cd}<0$이다.\n⑧ $a^3$과 $a$는 부호가 같고, $a$와 $d$도 부호가 같으므로 $a^3d>0$이다.\n따라서 항상 음수인 식은 ③, ⑥, ⑦이고, 구하는 값은 $3+6+7=16$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-15311",
+"custom": true,
+"rv": 1
 }
 ]

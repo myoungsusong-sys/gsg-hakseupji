@@ -9188,5 +9188,107 @@
 "twinGroup": "tw-15215",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-2e4a20c83f",
+"typeId": "15159",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 식의 $\\square$ 안에 넣을 수 있는 수를 고르세요.\n\n$31+\\square>35$",
+"choices": [
+"1",
+"2",
+"3",
+"4",
+"5"
+],
+"answer": "⑤",
+"solution": "$31+4=35$이므로 $\\square$ 안에는 $4$보다 큰 수가 들어가야 합니다. 보기에서 $4$보다 큰 수는 $5$뿐입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15159",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4dd9f6ffdf",
+"typeId": "15159",
+"kind": "객관식",
+"diff": 1,
+"body": "어떤 수를 넣어야 다음 식이 맞을까요?\n\n$21+\\square<24$",
+"choices": [
+"3",
+"4",
+"2",
+"5",
+"6"
+],
+"answer": "③",
+"solution": "$21+3=24$이므로 $\\square$ 안에는 $3$보다 작은 수가 들어가야 합니다. 보기에서 넣을 수 있는 수는 $2$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15159",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-428b867d7e",
+"typeId": "15159",
+"kind": "주관식",
+"diff": 1,
+"body": "$1$, $2$, $3$ 중에서 다음 식의 $\\square$ 안에 넣을 수 있는 수를 쓰세요.\n\n$60+\\square>62$",
+"selfGrade": true,
+"answer": "3",
+"solution": "$60+2=62$이므로 $\\square$ 안에는 $2$보다 큰 수가 들어가야 합니다. 주어진 수 중에서 $2$보다 큰 수는 $3$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15159",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e6f38b9b5d",
+"typeId": "15159",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 식의 $\\square$ 안에 넣을 수 있는 수 중 가장 큰 수를 고르세요.\n\n$26+\\square<34$",
+"choices": [
+"6",
+"7",
+"8",
+"9",
+"10"
+],
+"answer": "②",
+"solution": "$26+8=34$이므로 $\\square$ 안에는 $8$보다 작은 수가 들어가야 합니다. 따라서 넣을 수 있는 수 중 가장 큰 수는 $7$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15159",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-88ee1e2684",
+"typeId": "15159",
+"kind": "주관식",
+"diff": 2,
+"body": "$1$부터 $9$까지의 수 중에서 다음 식의 $\\square$ 안에 넣을 수 있는 수는 모두 몇 개인가요?\n\n$47+\\square>53$",
+"selfGrade": true,
+"answer": "3개",
+"solution": "$47+6=53$이므로 $\\square$ 안에는 $6$보다 큰 수가 들어가야 합니다. 넣을 수 있는 수는 $7$, $8$, $9$로 모두 $3$개입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15159",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-92d9890f45",
+"typeId": "15159",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 식이 맞도록 $\\square$ 안에 넣을 수 있는 수를 $1$부터 $9$까지의 수 중에서 모두 쓰세요.\n\n$32+\\square>18+19$",
+"selfGrade": true,
+"answer": "6, 7, 8, 9",
+"solution": "$18+19=37$이므로 $32+\\square>37$이어야 합니다. $32+5=37$이므로 $\\square$ 안에는 $5$보다 큰 수가 들어가야 합니다. 따라서 넣을 수 있는 수는 $6$, $7$, $8$, $9$입니다.",
+"source": "유사 문항",
+"twinGroup": "tw-15159",
+"custom": true,
+"rv": 1
 }
 ]

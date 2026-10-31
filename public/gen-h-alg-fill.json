@@ -7384,5 +7384,33 @@
 "twinGroup": "tw-18347",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-cc3baf0616",
+"typeId": "18165",
+"kind": "주관식",
+"diff": 4,
+"body": "$x>1$인 실수 $x$가 $x+x^{-1}=322$를 만족할 때, 다음 식의 값을 구하시오.\n\n$\\displaystyle \\frac{x^{\\frac56}-x^{-\\frac56}}{x^{\\frac16}-x^{-\\frac16}}$",
+"selfGrade": true,
+"answer": "$55$",
+"solution": "$t=x^{\\frac13}+x^{-\\frac13}$이라 놓으면 $t^3-3t=x+x^{-1}=322$이므로 $(t-7)(t^2+7t+46)=0$이다. $t>0$이므로 $t=7$이다. $u=x^{\\frac16}>1$이라 놓으면 주어진 식은 $u^4+u^2+1+u^{-2}+u^{-4}=(u^2+u^{-2})^2+(u^2+u^{-2})-1$이다. 따라서 구하는 값은 $7^2+7-1=55$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18165",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-fd2f411af9",
+"typeId": "18165",
+"kind": "주관식",
+"diff": 4,
+"body": "두 양수 $a$, $b$가 $a+b=95$, $ab=8$을 만족할 때, 다음 식의 값을 구하시오.\n\n$\\displaystyle \\frac{a^{\\frac76}+b^{\\frac76}}{a^{\\frac16}+b^{\\frac16}}$",
+"selfGrade": true,
+"answer": "$105-23\\sqrt{2}$",
+"solution": "$s=a^{\\frac13}+b^{\\frac13}$이라 놓으면 $a^{\\frac13}b^{\\frac13}=2$이므로 $s^3=95+6s$이다. 따라서 $(s-5)(s^2+5s+19)=0$이다. $s>0$이므로 $s^2+5s+19>0$에서 $s=5$이다.\n$u=a^{\\frac16}$, $v=b^{\\frac16}$이라 놓으면 $u^2+v^2=5$, $uv=\\sqrt{2}$이다. $u+v>0$이므로 곱셈 공식에 의하여\n$\\displaystyle \\frac{u^7+v^7}{u+v}=u^6-u^5v+u^4v^2-u^3v^3+u^2v^4-uv^5+v^6$이다.\n여기서 $A=u^2+v^2$, $p=uv$라 놓으면 $u^4+v^4=A^2-2p^2$, $u^6+v^6=A^3-3p^2A$이므로 위 식은\n$(u^6+v^6)-p(u^4+v^4)+p^2(u^2+v^2)-p^3=A^3-pA^2-2p^2A+p^3$이다.\n따라서 구하는 값은 $125-25\\sqrt{2}-20+2\\sqrt{2}=105-23\\sqrt{2}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18165",
+"custom": true,
+"rv": 1
 }
 ]
