@@ -3383,5 +3383,107 @@
 "twinGroup": "tw-18695",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-99f7e062bf",
+"typeId": "18824",
+"kind": "객관식",
+"diff": 2,
+"body": "볼록사각형 $ABCD$에서 삼각형 $ABC$와 삼각형 $ABD$의 무게중심을 각각 $G$, $H$라 하자. $CD=24\\text{ cm}$일 때, 선분 $GH$의 길이는?",
+"choices": [
+"$8\\text{ cm}$",
+"$12\\text{ cm}$",
+"$16\\text{ cm}$",
+"$24\\text{ cm}$",
+"$72\\text{ cm}$"
+],
+"answer": "①",
+"solution": "선분 $AB$의 중점을 $M$이라 하자. 무게중심의 성질에 의해 점 $G$, $H$는 각각 선분 $MC$, $MD$ 위에 있고, $MG:MC=MH:MD=1:3$이다. 또한 $\\angle GMH=\\angle CMD$이므로 삼각형 $MGH$와 삼각형 $MCD$는 닮음비가 $1:3$이다. 따라서 $GH=\\frac13CD=\\frac13\\times24=8\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18824",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a3f2c05388",
+"typeId": "18824",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$의 무게중심 $G$를 지나고 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $D$, $E$라 하자. $BC=30\\text{ cm}$일 때, 선분 $DE$의 길이는?",
+"choices": [
+"$10\\text{ cm}$",
+"$15\\text{ cm}$",
+"$20\\text{ cm}$",
+"$30\\text{ cm}$",
+"$45\\text{ cm}$"
+],
+"answer": "③",
+"solution": "변 $BC$의 중점을 $M$이라 하면 무게중심 $G$는 선분 $AM$ 위에 있고, $AG:AM=2:3$이다. $DE\\parallel BC$이므로 삼각형 $ADE$와 삼각형 $ABC$는 닮음이다. 이때 대응하는 두 선분 $AG$, $AM$의 길이의 비가 $2:3$이므로 닮음비도 $2:3$이다. 따라서 $DE=\\frac23BC=\\frac23\\times30=20\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18824",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-14c384fbba",
+"typeId": "18824",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 $ABC$의 변 $BC$ 위에 양 끝점과 다른 점 $D$를 잡는다. 삼각형 $ABD$와 삼각형 $ACD$의 무게중심을 각각 $P$, $Q$라 하자. $PQ=5\\text{ cm}$일 때, 변 $BC$의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$15\\text{ cm}$",
+"solution": "선분 $AD$의 중점을 $M$이라 하자. 무게중심의 성질에 의해 점 $P$, $Q$는 각각 선분 $MB$, $MC$ 위에 있고, $MP:MB=MQ:MC=1:3$이다. 또한 $\\angle PMQ=\\angle BMC$이므로 삼각형 $MPQ$와 삼각형 $MBC$는 닮음비가 $1:3$이다. 따라서 $PQ:BC=1:3$이므로 $BC=3PQ=3\\times5=15\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18824",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-684d812c1b",
+"typeId": "18824",
+"kind": "객관식",
+"diff": 2,
+"body": "삼각형 $ABC$의 변 $BC$ 위의 점 $D$에 대하여 $BD=7\\text{ cm}$, $DC=11\\text{ cm}$이다. 삼각형 $ABD$와 삼각형 $ACD$의 무게중심을 각각 $G$, $H$라 할 때, 선분 $GH$의 길이는?",
+"choices": [
+"$4\\text{ cm}$",
+"$6\\text{ cm}$",
+"$9\\text{ cm}$",
+"$12\\text{ cm}$",
+"$18\\text{ cm}$"
+],
+"answer": "②",
+"solution": "선분 $AD$의 중점을 $M$이라 하자. 무게중심의 성질에 의해 점 $G$, $H$는 각각 선분 $MB$, $MC$ 위에 있고, $MG:MB=MH:MC=1:3$이다. 또한 $\\angle GMH=\\angle BMC$이므로 삼각형 $MGH$와 삼각형 $MBC$는 닮음비가 $1:3$이다. 따라서 $GH=\\frac13BC$이다. $BC=BD+DC=7+11=18\\text{ cm}$이므로 $GH=\\frac13\\times18=6\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18824",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a1cce498a1",
+"typeId": "18824",
+"kind": "주관식",
+"diff": 3,
+"body": "볼록사각형 $ABCD$에서 삼각형 $ABC$, $BCD$, $CDA$, $DAB$의 무게중심을 각각 $G_1$, $G_2$, $G_3$, $G_4$라 하자. $AB=6\\text{ cm}$, $BC=9\\text{ cm}$, $CD=12\\text{ cm}$, $DA=15\\text{ cm}$일 때, 사각형 $G_1G_2G_3G_4$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$14\\text{ cm}$",
+"solution": "선분 $BC$의 중점을 $M$이라 하자. 무게중심의 성질에 의해 점 $G_1$, $G_2$는 각각 선분 $MA$, $MD$ 위에 있고, $MG_1:MA=MG_2:MD=1:3$이다. 또한 $\\angle G_1MG_2=\\angle AMD$이므로 삼각형 $MG_1G_2$와 삼각형 $MAD$는 닮음비가 $1:3$이다. 따라서 $G_1G_2=\\frac13AD$이다. 같은 방법으로 공통 변 $CD$, $DA$, $AB$의 중점을 각각 이용하면 $G_2G_3=\\frac13AB$, $G_3G_4=\\frac13BC$, $G_4G_1=\\frac13CD$이다. 따라서 구하는 둘레의 길이는 $\\frac13(AD+AB+BC+CD)=\\frac13(15+6+9+12)=14\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18824",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-497cfec3b0",
+"typeId": "18824",
+"kind": "주관식",
+"diff": 2,
+"body": "삼각형 $ABC$에서 $AB=10\\text{ cm}$, $AC=14\\text{ cm}$, $BC=18\\text{ cm}$이다. 무게중심 $G$를 지나고 변 $BC$에 평행한 직선이 변 $AB$, $AC$와 만나는 점을 각각 $D$, $E$라 할 때, 삼각형 $ADE$의 둘레의 길이를 구하시오.",
+"selfGrade": true,
+"answer": "$28\\text{ cm}$",
+"solution": "변 $BC$의 중점을 $M$이라 하면 무게중심의 성질에 의해 $AG:AM=2:3$이다. $DE\\parallel BC$이므로 삼각형 $ADE$와 삼각형 $ABC$의 닮음비는 $2:3$이고, 둘레의 길이의 비도 $2:3$이다. 따라서 삼각형 $ADE$의 둘레의 길이는 $\\frac23(10+14+18)=28\\text{ cm}$이다.",
+"source": "유사 문항",
+"twinGroup": "tw-18824",
+"custom": true,
+"rv": 1
 }
 ]
