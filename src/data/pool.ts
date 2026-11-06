@@ -25,6 +25,8 @@ export const POOL_COURSES = [
 //    완자 문항은 BASE_URL 상대경로라 이 목록과 무관하다 — 한 파일에 둘이 섞여 있어도 안전하다.
 export const SCI_POOL_COURSES: readonly string[] = [
   'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
+  // 2026-11-07: 사이언스플랫 22개정 고등 물리학·화학·생명과학 6,319문항 편입(완자 문항과 같은 파일, 유형은 우리 id 로 짝지음)
+  'h-phy', 'h-chem', 'h-bio',
 ]
 
 // 완자(이미지 기반) 문제 풀이 있는 과학 과정 — pool-<course>.json 형식이 다름(아래 WanjaRaw)
