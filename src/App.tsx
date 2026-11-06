@@ -50,6 +50,8 @@ import CsatLibrary from './pages/CsatLibrary'
 import GichulView from './pages/GichulView'
 import GichulTag from './pages/GichulTag'
 import ArithmeticGen from './pages/ArithmeticGen'
+import SchoolTest from './pages/SchoolTest'
+import EngPassage from './pages/EngPassage'
 import LecturePage from './pages/LecturePage'
 import LecNoteCheck from './pages/LecNoteCheck'
 import EssayPage from './pages/EssayPage'
@@ -160,14 +162,7 @@ function Gate() {
               <Route path="/prep/worksheet" element={<WorksheetPage />} />
               <Route path="/prep/worksheet-upload" element={<WorksheetUpload />} />
               <Route path="/prep/workbook" element={<Materials />} />
-              <Route path="/prep/school-test" element={
-                <Placeholder title="학교별 기출"
-                  original={[
-                    '필터: 학교급 / 학년·학기 / 지역·학교 / 연도 / 중간·기말',
-                    '시험지별: 직접 등록(기출 업로드) / 미리보기 / 추천 학습지',
-                  ]}
-                  plan="보유 학교 기출 PDF를 업로드→디지털 문제로 변환(Claude)해 쌓이면 검색·출제 활성화." />
-              } />
+              <Route path="/prep/school-test" element={<SchoolTest />} />
               <Route path="/prep/school-exam" element={<NaesinPrep />} />
               <Route path="/prep/mastery" element={<MasteryPage />} />
               <Route path="/prep/school-books" element={<SchoolBooks />} />
@@ -183,6 +178,7 @@ function Gate() {
               } />
               <Route path="/prep/arithmetic" element={<ArithmeticGen />} />
               <Route path="/prep/essay" element={<EssayPage />} />
+              <Route path="/prep/eng-passage" element={<EngPassage />} />
               <Route path="/prep/lecture" element={<LecturePage />} />
               <Route path="/prep/lecnote" element={<LecNoteCheck />} />
               <Route path="/prep/share" element={

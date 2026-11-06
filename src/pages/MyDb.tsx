@@ -41,8 +41,8 @@ function courseOf(typeId: string) {
   return null
 }
 
-export default function MyDb() {
-  const { customProblems, addProblem, removeProblem, saveWorksheet } = useStore()
+export default function MyDb({ initialSet }: { initialSet?: string } = {}) {
+  const { customProblems, addProblem, removeProblem, saveWorksheet, updateProblem } = useStore()
   const nav = useNavigate()
   const [subject] = useSubject()          // 전역 과목 (헤더 스위처)
   const brand = useBrand()                // 과목 반영 학원명(게시자)
@@ -54,8 +54,8 @@ export default function MyDb() {
   const [publisher, setPublisher] = useState('전체')            // 적용된 게시자 필터
   const [q, setQ] = useState('')                                // 자료명 검색
   const [refreshTick, setRefreshTick] = useState(0)             // ↻ 새로고침 (필터·선택 초기화)
-  const [selected, setSelected] = useState<string[]>([])       // 선택한 자료(source) 목록
-  const [expanded, setExpanded] = useState<string | null>(null) // 문제 미리보기 펼친 자료
+  const [selected, setSelected] = useState<string[]>(() => (initialSet ? [initialSet] : []))       // 선택한 자료(source) 목록
+  const [expanded, setExpanded] = useState<string | null>(initialSet ?? null) // 문제 미리보기 펼친 자료
   const [showAll, setShowAll] = useState(false)                 // 펼친 자료의 6번째 이후 문제
   const [menuFor, setMenuFor] = useState<string | null>(null)   // ⋮ 메뉴 열린 자료
   const [choosing, setChoosing] = useState(false)               // 업로드 방식 선택 모달
@@ -252,6 +252,7 @@ export default function MyDb() {
                   onShowAll={() => setShowAll(true)}
                   onMenu={() => setMenuFor(prev => prev === g.source ? null : g.source)}
                   onMake={() => { setMenuFor(null); makeWorksheet(g) }}
+                  onGroup={updateProblem}
                   onRemove={() => { setMenuFor(null); removeSet(g) }} />
               ))}
             </tbody>
@@ -379,7 +380,7 @@ function TypeView({ problems }: { problems: Problem[] }) {
 
 const PREVIEW_LIMIT = 5
 
-function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onCheck, onExpand, onShowAll, onMenu, onMake, onRemove }: {
+function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onCheck, onExpand, onShowAll, onMenu, onMake, onRemove, onGroup }: {
   g: DbSet
   grade: string
   publisher: string
@@ -393,8 +394,16 @@ function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onC
   onMenu: () => void
   onMake: () => void
   onRemove: () => void
+  onGroup: (id: string, patch: Partial<Problem>) => void
 }) {
   const preview = expanded ? (showAll ? g.problems : g.problems.slice(0, PREVIEW_LIMIT)) : []
+  // ✍️ 서술형 묶기 (2026-11-07) — 본문제 하나를 고르고 이어지는 하위문제를 눌러 붙이면 한 문제로 묶인다
+  const [묶는중, set묶는중] = useState<string | null>(null)   // 고른 본문제 id
+  const 하위번호 = (p: Problem) => {
+    if (!p.groupMain || p.groupMain === p.id) return ''
+    const subs = g.problems.filter(x => x.groupMain === p.groupMain && x.id !== p.groupMain)
+    return `(${subs.findIndex(x => x.id === p.id) + 1})`
+  }
   return (
     <>
       <tr className="cursor-pointer border-t border-line hover:bg-paper2/60" onClick={onExpand}>
@@ -428,13 +437,45 @@ function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onC
       {expanded && (
         <tr className="border-t border-line bg-paper2/40">
           <td colSpan={6} className="px-6 py-4">
+            <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
+              {묶는중 ? (
+                <>
+                  <span className="rounded bg-amber-soft px-2 py-1 font-bold text-amber">✍️ 이어지는 하위문제를 차례로 누르세요 — 누른 순서대로 (1)(2)(3)</span>
+                  <button onClick={() => set묶는중(null)} className="rounded-lg bg-pine px-3 py-1 font-bold text-paper">묶기 끝</button>
+                </>
+              ) : (
+                <span className="text-ink2">서술형 본문제와 (1)·(2)·(3) 하위문제가 따로 등록됐으면 본문제의 [✍️ 묶기] 를 누르세요.</span>
+              )}
+            </div>
             <div className="grid gap-3">
-              {preview.map((p, i) => (
-                <div key={p.id} className="rounded-xl border border-line bg-white p-4">
-                  <div className="mb-1.5 text-xs font-bold text-ink2">{i + 1}번</div>
+              {preview.map((p, i) => {
+                const 본 = p.groupMain === p.id
+                const 하위 = !!p.groupMain && !본
+                return (
+                <div key={p.id}
+                  onClick={() => {
+                    if (!묶는중 || p.id === 묶는중) return
+                    onGroup(p.id, { groupMain: p.groupMain === 묶는중 ? undefined : 묶는중 })   // 다시 누르면 풀린다
+                  }}
+                  className={`rounded-xl border bg-white p-4 ${하위 ? 'ml-8 border-amber/50' : 'border-line'} ${묶는중 && p.id !== 묶는중 ? 'cursor-pointer hover:border-pine' : ''} ${p.id === 묶는중 ? 'ring-2 ring-amber' : ''}`}>
+                  <div className="mb-1.5 flex items-center gap-2 text-xs font-bold text-ink2">
+                    <span>{i + 1}번 {하위 && <span className="text-amber">하위 {하위번호(p)}</span>}{본 && <span className="text-amber">· 서술형 본문제</span>}</span>
+                    <div className="grow" />
+                    {!하위 && !묶는중 && (
+                      <button onClick={e => { e.stopPropagation(); if (!본) onGroup(p.id, { groupMain: p.id }); set묶는중(p.id) }}
+                        className="rounded-lg border border-line px-2 py-0.5 font-semibold hover:border-pine hover:text-pine">✍️ 묶기</button>
+                    )}
+                    {본 && !묶는중 && (
+                      <button onClick={e => {
+                        e.stopPropagation()
+                        g.problems.filter(x => x.groupMain === p.id).forEach(x => onGroup(x.id, { groupMain: undefined }))
+                      }} className="rounded-lg border border-line px-2 py-0.5 font-semibold text-clay hover:border-clay">묶음 풀기</button>
+                    )}
+                  </div>
                   <ProblemContent p={p} imgClass="w-full max-w-md" />
                 </div>
-              ))}
+                )
+              })}
               {!showAll && g.problems.length > PREVIEW_LIMIT && (
                 <button onClick={onShowAll}
                   className="rounded-lg border border-line bg-white px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">

@@ -46,6 +46,7 @@ export interface Problem {
   book?: string          // 📗 이 문항이 매여 있는 교과서 (예: '동아(윤정미)'). 영어 내신 문항은
                          //    그 교과서 본문이 지문이라 학생 교과서와 맞아야 한다 (data/engBooks.ts)
   unit?: string          // 📗 교과서 과(단원) — 예 '6과'. 영어 exam4you 문항은 원본 PDF(교과서→과→예상문제)와 대조해 되살렸다(2026-09-29)
+  groupMain?: string    // ✍️ 서술형 묶음 — 본문제 id. 하위문제 (1)(2)(3) 가 이 값을 가진다 (2026-11-07). 본문제는 자기 id.
   set?: string          // 📘 지문 세트 id — 같은 제시문에 붙은 국어 문항 묶음 (예 'kor-m12-bis-pym-u0m1s0-p1')
   imageUrl?: string      // 이미지 기반 문제(기출 크롭). 있으면 body/choices 대신 이미지 렌더
   videoUrl?: string      // 문항별 풀이영상 (HLS m3u8)
@@ -404,6 +405,14 @@ export interface Assignment {
   reveal?: { answer?: boolean; solution?: boolean }
   // 시험으로 출제한 경우의 응시 규칙 (kind === '시험'). 학습지 단위로 같게 적용된다.
   exam?: ExamOptions
+  // ⏰ 예약 출제 (2026-11-07) — 이 시각(ISO)이 되기 전에는 학생 화면에 안 보인다. 없으면 즉시 출제.
+  //    30분 단위·최대 7일 뒤까지. 선생님 목록에는 «출제 예약됨» 으로 보인다.
+  scheduledAt?: string
+}
+
+/** 예약 출제가 아직 열리지 않았나 — 학생 화면에서 숨길지 판단 */
+export function isScheduledLater(a: { scheduledAt?: string }, now = Date.now()): boolean {
+  return !!a.scheduledAt && new Date(a.scheduledAt).getTime() > now
 }
 
 // 오늘의 학습 — 학생별 자동 출제 설정 (hj_settings 'dailyConfigs')
@@ -478,6 +487,7 @@ export interface AcademyProfile {
   teacherName?: string    // 선생님 이름 (학습지·반 담당 표시)
   phone?: string          // 연락처
   contactEmail?: string   // 대표 이메일
+  address?: string        // 교육기관 주소 — 학교별 기출을 우리 지역 학교부터 보이는 데 쓴다 (2026-11-07)
 }
 
 // 강의 진도표 — 학생×교재 1개. 수업일별로 진도(쪽 범위·단원)를 배분한 계획

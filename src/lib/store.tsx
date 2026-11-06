@@ -4,7 +4,7 @@ import type { ReactNode } from 'react'
 import type {
   AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet, SchoolExam,
 } from '../types'
-import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG } from '../types'
+import { DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DEFAULT_STUDENT_APP_CONFIG, isScheduledLater } from '../types'
 import { SEED_PROBLEMS } from '../data/problems'
 import type { MasteryState } from './mastery'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
@@ -101,6 +101,7 @@ interface Store extends Persisted {
   poolLoaded: Set<string>
   ensureCourse: (courseId: string) => void   // 매쓰플랫 문제 풀 과정별 지연 로드
   addProblem: (p: Problem) => void
+  updateProblem: (id: string, patch: Partial<Problem>) => void   // 나의 DB 문항 고치기(서술형 묶기 등)
   removeProblem: (id: string) => void
   saveWorksheet: (w: Worksheet) => void
   updateWorksheet: (id: string, patch: Partial<Worksheet>) => void
@@ -142,8 +143,8 @@ interface Store extends Persisted {
   addTeacher: (t: Omit<Teacher, 'id' | 'active'>) => string   // 강사 등록
   updateTeacher: (id: string, patch: Partial<Teacher>) => void
   removeTeacher: (id: string) => void
-  addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam']) => void
-  syncAssignments: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam']) => void
+  addAssignment: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam'], scheduledAt?: string) => void
+  syncAssignments: (worksheetId: string, studentIds: string[], kind?: Assignment['kind'], reveal?: Assignment['reveal'], exam?: Assignment['exam'], scheduledAt?: string) => void
   removeAssignment: (worksheetId: string, studentId: string, kind?: Assignment['kind']) => void
   setDailyConfig: (studentId: string, cfg: DailyConfig) => void
   // 기본과제 학생별 수학 과정 지정 — 학년표와 진도가 다른 학생용(빈 문자열이면 학년 규칙)
@@ -767,6 +768,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const store: Store = {
     ...state,
+    // ⏰ 예약 출제 — 학생 기기는 예약 시각 전 배정을 아예 못 본다(선생님 기기는 그대로 «출제 예약됨»).
+    assignments: 학생기기 ? state.assignments.filter(a => !isScheduledLater(a)) : state.assignments,
     synced,
     loadFail,
     students: scopedStudents,
@@ -780,6 +783,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     poolLoaded,
 
     addProblem: p => { set(s => ({ ...s, customProblems: [...s.customProblems, p] })); cloud.upsert(cloud.T.problems, p.id, p) },
+    updateProblem: (id, patch) => {
+      const cur = stateRef.current.customProblems.find(p => p.id === id); if (!cur) return
+      const next = { ...cur, ...patch }
+      set(s => ({ ...s, customProblems: s.customProblems.map(p => (p.id === id ? next : p)) })); cloud.upsert(cloud.T.problems, id, next)
+    },
     removeProblem: id => { set(s => ({ ...s, customProblems: s.customProblems.filter(p => p.id !== id) })); cloud.del(cloud.T.problems, id) },
 
     saveWorksheet: w => { set(s => ({ ...s, worksheets: [w, ...s.worksheets] })); cloud.upsert(cloud.T.worksheets, w.id, w) },
@@ -898,11 +906,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     //    자동 오답학습지가 학생 제출마다 학생 기기에서 배정을 만들어, 반 전체 제출이면
     //    여러 기기가 같은 순간에 쓴다. 통짜로 쓰면 한쪽 배정이 통째로 사라진다
     //    (2026-08-15 강리원 실사고). 명령(cmd)을 넘기면 서버 최신에 병합돼 저장된다.
-    addAssignment: (worksheetId, studentIds, kind = '수업', reveal, exam) => {
-      const now = new Date().toISOString()
+    addAssignment: (worksheetId, studentIds, kind = '수업', reveal, exam, scheduledAt) => {
+      const now = scheduledAt || new Date().toISOString()   // 예약이면 출제일 = 예약 시각
       const fresh: Assignment[] = studentIds
         .filter(sid => !stateRef.current.assignments.some(a => a.worksheetId === worksheetId && a.studentId === sid && a.kind === kind))
-        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal, exam }))
+        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal, exam, ...(scheduledAt ? { scheduledAt } : {}) }))
       if (fresh.length === 0) return
       set(s => ({ ...s, assignments: [...s.assignments, ...fresh] }))
       cloud.assignmentOps([{ type: 'add', items: fresh }])
@@ -910,17 +918,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     // 출제 다이얼로그 「선택 완료」 — 이 학습지를 받는 학생을 통째로 맞춘다.
     // 🔴 add/remove 를 연달아 부르면 안 된다. stateRef 는 렌더 뒤에야 갱신돼서
     //    두 번째 호출이 첫 번째의 결과를 지운다 (2026-08-07 실측). 한 번에 계산한다.
-    syncAssignments: (worksheetId, studentIds, kind = '수업', reveal, exam) => {
+    syncAssignments: (worksheetId, studentIds, kind = '수업', reveal, exam, scheduledAt) => {
       const keep = new Set(studentIds)
-      const now = new Date().toISOString()
+      const now = scheduledAt || new Date().toISOString()
       const kept = stateRef.current.assignments
         .filter(a => a.worksheetId !== worksheetId || keep.has(a.studentId))
-        .map(a => (a.worksheetId === worksheetId ? { ...a, reveal, exam } : a))   // 공개 설정·시험 규칙은 이 학습지 전체에 같게
+        .map(a => (a.worksheetId === worksheetId ? { ...a, reveal, exam, scheduledAt } : a))   // 공개 설정·시험 규칙·예약 시각은 이 학습지 전체에 같게
       const has = new Set(kept.filter(a => a.worksheetId === worksheetId && a.kind === kind).map(a => a.studentId))
       const fresh: Assignment[] = studentIds.filter(sid => !has.has(sid))
-        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal, exam }))
+        .map(sid => ({ id: uid('as'), worksheetId, studentId: sid, date: now, kind, reveal, exam, ...(scheduledAt ? { scheduledAt } : {}) }))
       set(s => ({ ...s, assignments: [...kept, ...fresh] }))
-      cloud.assignmentOps([{ type: 'sync', worksheetId, studentIds, kind, reveal, exam, items: fresh }])
+      cloud.assignmentOps([{ type: 'sync', worksheetId, studentIds, kind, reveal, exam, scheduledAt, items: fresh }])
     },
     removeAssignment: (worksheetId, studentId, kind) => {
       // kind 지정 시 그 종류만 제거 (숙제 취소가 수업 출제까지 지우던 버그 방지)

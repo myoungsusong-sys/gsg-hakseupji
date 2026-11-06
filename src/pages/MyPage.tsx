@@ -13,6 +13,7 @@ export default function MyPage() {
   const [phone, setPhone] = useState(academyProfile.phone ?? '')
   const [academyName, setAcademyName] = useState(academyProfile.academyName ?? '')
   const [contactEmail, setContactEmail] = useState(academyProfile.contactEmail ?? '')
+  const [address, setAddress] = useState(academyProfile.address ?? '')
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
   // 비밀번호 변경 (Supabase 모드 — 본인 세션 계정)
@@ -26,6 +27,7 @@ export default function MyPage() {
     || phone !== (academyProfile.phone ?? '')
     || academyName !== (academyProfile.academyName ?? '')
     || contactEmail !== (academyProfile.contactEmail ?? '')
+    || address !== (academyProfile.address ?? '')
 
   const save = () => {
     setAcademyProfile({
@@ -33,6 +35,7 @@ export default function MyPage() {
       phone: phone.trim() || undefined,
       academyName: academyName.trim() || undefined,
       contactEmail: contactEmail.trim() || undefined,
+      address: address.trim() || undefined,
     })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
   }
@@ -135,6 +138,12 @@ export default function MyPage() {
                 <input value={contactEmail} onChange={e => setContactEmail(e.target.value)}
                   placeholder="예시 : academy@math.com" className={INPUT} />
                 <p className="mt-1 text-xs text-ink2">학습지·보고서를 이메일로 보낼 때 사용할 주소입니다.</p>
+              </div>
+              <div>
+                <div className={label}>교육기관 주소</div>
+                <input value={address} onChange={e => setAddress(e.target.value)}
+                  placeholder="예시 : 충청남도 홍성군 홍북읍 …" className={INPUT} />
+                <p className="mt-1 text-xs text-ink2">학교별 기출에서 우리 지역 학교가 먼저 보이게 하는 데 씁니다.</p>
               </div>
               <div>
                 <div className={label}>로고</div>

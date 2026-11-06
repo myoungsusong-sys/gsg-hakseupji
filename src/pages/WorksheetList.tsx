@@ -525,6 +525,8 @@ export default function WorksheetList({ view }: { view: View }) {
                       .map(sid => students.find(s => s.id === sid)?.name)
                       .filter((n): n is string => !!n)
                     const sub = rangeSummary(w)
+                    // ⏰ 출제 예약됨 — 아직 열리지 않은 예약이 있으면 시각을 보인다
+                    const 예약된 = assignments.find(a => a.worksheetId === w.id && a.scheduledAt && new Date(a.scheduledAt).getTime() > Date.now())?.scheduledAt
                     return (
                       <tr key={w.id} className="border-b border-line last:border-b-0 hover:bg-paper2/40">
                         <td className="px-3 py-3 text-center">
@@ -575,6 +577,11 @@ export default function WorksheetList({ view }: { view: View }) {
                               className="rounded-lg border border-pine/40 px-2.5 py-1.5 text-xs font-semibold text-pine-dark hover:bg-pine-soft disabled:cursor-default disabled:border-transparent disabled:hover:bg-transparent">
                               {assignedNames.slice(0, 3).join(', ')}
                               {assignedNames.length > 3 && ` 외 ${assignedNames.length - 3}명`}
+                              {예약된 && (
+                                <span className="mt-1 block rounded bg-amber-soft px-1.5 py-0.5 text-[10px] font-bold text-amber">
+                                  ⏰ 출제 예약됨 · {new Date(예약된).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                                </span>
+                              )}
                             </button>
                           ) : view === 'active' ? (
                             <button onClick={() => setAssignTarget([w.id])}
@@ -724,12 +731,14 @@ export default function WorksheetList({ view }: { view: View }) {
             ? assignments.find(a => a.worksheetId === assignTarget[0])?.kind : undefined}
           initialExam={assignTarget.length === 1
             ? assignments.find(a => a.worksheetId === assignTarget[0])?.exam : undefined}
+          initialSchedule={assignTarget.length === 1
+            ? assignments.find(a => a.worksheetId === assignTarget[0])?.scheduledAt : undefined}
           onClose={() => setAssignTarget(null)}
-          onSubmit={(ids, kind, reveal, exam) => {
+          onSubmit={(ids, kind, reveal, exam, scheduledAt) => {
             // 단일 학습지 = 다이얼로그의 선택이 곧 대상 전체(⊖ 로 뺀 학생은 출제 취소)
             // 여러 개 일괄 출제 = 미리 담을 기준이 없으니 더하기만 한다
-            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind, reveal, exam)
-            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind, reveal, exam)
+            if (assignTarget.length === 1) syncAssignments(assignTarget[0], ids, kind, reveal, exam, scheduledAt)
+            else for (const wsId of assignTarget) addAssignment(wsId, ids, kind, reveal, exam, scheduledAt)
             setAssignTarget(null)
             setChecked(new Set())
           }}
@@ -847,7 +856,7 @@ function fromLocalInput(v: string): string | undefined {
   return isNaN(d.getTime()) ? undefined : d.toISOString()
 }
 
-export function AssignModal({ title, students, initial, initialReveal, initialKind, initialExam, klassOrder, onClose, onSubmit }: {
+export function AssignModal({ title, students, initial, initialReveal, initialKind, initialExam, initialSchedule, klassOrder, onClose, onSubmit }: {
   title: string
   students: Student[]
   klassOrder: string[]                    // 반 표시 순서 (관리 > 반 순서)
@@ -855,9 +864,32 @@ export function AssignModal({ title, students, initial, initialReveal, initialKi
   initialReveal?: Assignment['reveal']    // 이 학습지의 현재 공개 설정
   initialKind?: Assignment['kind']        // 이미 출제돼 있으면 그 종류로 열린다
   initialExam?: Assignment['exam']        // 시험으로 출제돼 있으면 그 규칙으로 열린다
+  initialSchedule?: string                 // 출제 예약돼 있으면 그 시각(ISO)
   onClose: () => void
-  onSubmit: (studentIds: string[], kind: Assignment['kind'], reveal: Assignment['reveal'], exam?: Assignment['exam']) => void
+  onSubmit: (studentIds: string[], kind: Assignment['kind'], reveal: Assignment['reveal'], exam?: Assignment['exam'], scheduledAt?: string) => void
 }) {
+  // ⏰ 예약 출제 (2026-11-07) — 30분 단위 · 지금부터 최대 7일 뒤까지
+  const 예약칸 = useMemo(() => {
+    const out: { iso: string; label: string }[] = []
+    const t = new Date(); t.setSeconds(0, 0); t.setMinutes(t.getMinutes() < 30 ? 30 : 60)
+    const end = Date.now() + 7 * 24 * 3600 * 1000
+    const 요일 = '일월화수목금토'
+    for (let x = t.getTime(); x <= end; x += 30 * 60 * 1000) {
+      const d = new Date(x)
+      out.push({ iso: d.toISOString(), label: `${d.getMonth() + 1}/${d.getDate()}(${요일[d.getDay()]}) ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}` })
+    }
+    return out
+  }, [])
+  const [예약, set예약] = useState(!!initialSchedule && new Date(initialSchedule).getTime() > Date.now())
+  const [예약날, set예약날] = useState(() => {
+    if (initialSchedule && new Date(initialSchedule).getTime() > Date.now()) {
+      const hit = 예약칸.find(c => c.iso === new Date(initialSchedule).toISOString())
+      if (hit) return hit.iso
+    }
+    // 기본: 내일 오후 3시 (없으면 첫 칸)
+    const d = new Date(); d.setDate(d.getDate() + 1); d.setHours(15, 0, 0, 0)
+    return 예약칸.find(c => c.iso === d.toISOString())?.iso ?? 예약칸[0]?.iso ?? ''
+  })
   const [kind, setKind] = useState<Assignment['kind']>(initialKind ?? '수업')
   // 학생에게 무엇을 내보낼지 — 끄면 그 학습지에서는 학생이 못 본다(문제만 내보내기)
   const [showAns, setShowAns] = useState(initialReveal?.answer !== false)
@@ -1073,6 +1105,25 @@ export function AssignModal({ title, students, initial, initialReveal, initialKi
           </span>
         </div>
 
+        {/* ⏰ 예약 출제 — 켜면 고른 시각에 학생 화면에 저절로 나타난다 */}
+        <div className="mt-3 flex flex-wrap items-center gap-3 rounded-xl border border-line px-3 py-2.5 text-sm">
+          <label className="flex cursor-pointer items-center gap-2 font-semibold">
+            <input type="checkbox" className="h-4 w-4 accent-pine" checked={예약} onChange={e => set예약(e.target.checked)} />
+            ⏰ 예약 출제
+          </label>
+          {예약 ? (
+            <>
+              <select value={예약날} onChange={e => set예약날(e.target.value)}
+                className="rounded-lg border border-line px-2 py-1 text-sm font-semibold">
+                {예약칸.map(c => <option key={c.iso} value={c.iso}>{c.label}</option>)}
+              </select>
+              <span className="text-[11px] text-ink2">이 시각에 학생 화면에 나타나요 · 30분 단위 · 최대 7일 뒤까지 · 다시 열어 바꾸거나 끄면 예약이 취소돼요</span>
+            </>
+          ) : (
+            <span className="text-[11px] text-ink2">끄면 지금 바로 출제됩니다. 주말·퇴근 뒤에 내보낼 학습지는 켜 두세요.</span>
+          )}
+        </div>
+
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <label className="flex cursor-pointer items-center gap-2 text-xs text-ink2">
             <input type="checkbox" className="h-4 w-4 accent-pine"
@@ -1085,9 +1136,10 @@ export function AssignModal({ title, students, initial, initialReveal, initialKi
           <div className="grow" />
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
           <button onClick={() => onSubmit([...sel], kind, { answer: showAns, solution: showSol },
-            isExam ? { minutes, once, openAt: fromLocalInput(openAt), closeAt: fromLocalInput(closeAt) } : undefined)}
+            isExam ? { minutes, once, openAt: fromLocalInput(openAt), closeAt: fromLocalInput(closeAt) } : undefined,
+            예약 && 예약날 ? 예약날 : undefined)}
             className={`rounded-lg px-5 py-2 text-sm font-bold text-paper ${isExam ? 'bg-clay' : 'bg-pine'}`}>
-            {isExam ? '시험 출제' : '선택 완료'} ({sel.size}명)
+            {예약 ? '출제 예약' : isExam ? '시험 출제' : '선택 완료'} ({sel.size}명)
           </button>
         </div>
       </div>
