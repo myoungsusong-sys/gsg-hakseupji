@@ -48,6 +48,7 @@ export default function MasteryPrint({ typeId, typeName, base, pool, onClose }: 
       <style>{`@media print {
         .no-print { display: none !important }
         .page-break { break-before: page }
+        .mp-item, .mp-item img { break-inside: avoid; page-break-inside: avoid }
         body { -webkit-print-color-adjust: exact; print-color-adjust: exact }
       }`}</style>
 
@@ -94,7 +95,7 @@ export default function MasteryPrint({ typeId, typeName, base, pool, onClose }: 
             {tag}. {name}
           </h2>
           {items.map((p, i) => (
-            <div key={p.id} className="mt-3 rounded-lg border border-line p-3">
+            <div key={p.id} className="mp-item mt-3 rounded-lg border border-line p-3">
               <div className="mb-1 flex items-center gap-2 text-xs text-ink2">
                 <b className="text-sm text-ink">{label(tag, i)}</b>
                 <span>{DIFF_LABEL[p.diff]}</span>

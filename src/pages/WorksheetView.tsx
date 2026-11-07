@@ -4,6 +4,7 @@ import { useStore } from '../lib/store'
 import { typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { CONCEPTS, type Concept } from '../data/concepts'
 import MathText, { isImageUrl } from '../components/MathText'
+import { bareChoices } from '../components/ProblemContent'
 import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
 import { isStaleChunkError } from '../lib/staleChunk'
@@ -273,6 +274,12 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         if (tries < 60) soon(() => measure(tries + 1))
         return
       }
+      // 🔴 2026-11-07 명수쌤 «학습지 문제가 잘려서 출제됨»: 본문 안 `[[그림:figs/…]]` 그림은
+      //    1단계(imgDims)에서 미리 받지 않아, 아직 안 내려온 상태(높이 0)로 재면 문항 높이가
+      //    그림만큼 작게 잡힌다 → 그 문항이 쪽 아래에 배정돼 그림이 잘린다.
+      //    측정 상자 안의 그림이 다 내려올 때까지(최대 8초) 기다렸다가 잰다.
+      const pending = [...el.querySelectorAll<HTMLImageElement>('img')].filter(im => !im.complete)
+      if (pending.length > 0 && tries < 160) { setTimeout(() => measure(tries + 1), 50); return }
       const hs: Record<string, number> = {}
       marks.forEach(m => { hs[m.dataset.mk!] = m.offsetHeight / PXMM })
       measuredRef.current = true
@@ -1001,7 +1008,7 @@ export function ProblemBlock({ p, prev, idx, caption, themeMain, onVideo, dims, 
         ? <img src={p.imageUrl} alt="" style={scaledImgStyle(dims, p.imageUrl, G.probImgW, wide ? WIDE_IMG_W : G.probImgW)} />
         : <>
             <div style={{ fontSize: '10.5pt', lineHeight: 1.7 }}><MathText text={zbBodyFor(p, prev)} /></div>
-            {p.choices && (
+            {p.choices && !bareChoices(p.choices) && (
               <div style={{ marginTop: '1.5mm', display: 'grid', gap: '0.5mm', fontSize: '10pt', lineHeight: 1.6 }}>
                 {p.choices.map((c, ci) => (
                   <span key={ci}>{'①②③④⑤'[ci]} <MathText text={c} /></span>

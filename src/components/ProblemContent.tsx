@@ -1,6 +1,13 @@
 import MathText from './MathText'
 import type { Problem } from '../types'
 
+/** 보기가 «①»~«⑤» 기호뿐인가 — 보기 내용이 본문 그림(`[[그림:…]]`) 안에 이미 들어 있는 문항(자료형·내신 기출).
+ *  이런 문항에 보기 줄을 또 찍으면 «① ①  ② ②…» 가 두 번 나오고 문항마다 한 줄씩 지면을 먹는다
+ *  (2026-11-07 학습지 출력 잘림 조사 때 발견). 고르는 화면(버튼)은 그대로 쓰고, 읽기·인쇄에서만 뺀다. */
+export function bareChoices(choices: string[] | undefined): boolean {
+  return !!choices && choices.length > 0 && choices.every(c => /^\s*[①②③④⑤⑥]?\s*$/.test(c))
+}
+
 // 문제 본문 렌더 — 이미지 기반(기출)이면 이미지, 아니면 텍스트+보기(KaTeX)
 export default function ProblemContent({ p, textClass, imgClass, hideChoices }: {
   p: Problem; textClass?: string; imgClass?: string
@@ -15,7 +22,7 @@ export default function ProblemContent({ p, textClass, imgClass, hideChoices }: 
   return (
     <>
       <MathText text={p.body} className={textClass ?? 'text-[15px] leading-relaxed'} />
-      {p.choices && !hideChoices && (
+      {p.choices && !hideChoices && !bareChoices(p.choices) && (
         <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm text-ink2">
           {p.choices.map((c, ci) => (
             <span key={ci}>{'①②③④⑤'[ci]} <MathText text={c} /></span>
