@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
@@ -281,7 +281,14 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       const pending = [...el.querySelectorAll<HTMLImageElement>('img')].filter(im => !im.complete)
       if (pending.length > 0 && tries < 160) { setTimeout(() => measure(tries + 1), 50); return }
       const hs: Record<string, number> = {}
-      marks.forEach(m => { hs[m.dataset.mk!] = m.offsetHeight / PXMM })
+      // 수식(KaTeX) 분수·첨자는 줄 상자 밖으로 조금 내려간다 — offsetHeight 만 쓰면 단 끝 분모가 1mm 잘렸다(11-07).
+      //    블록 안 수식·그림의 실제 아래 끝까지 넣어 잰다.
+      marks.forEach(m => {
+        const top = m.getBoundingClientRect().top
+        let h = m.offsetHeight
+        m.querySelectorAll<HTMLElement>('.katex, img').forEach(e => { h = Math.max(h, e.getBoundingClientRect().bottom - top) })
+        hs[m.dataset.mk!] = h / PXMM
+      })
       measuredRef.current = true
       setMeasured(hs)
     }
@@ -362,7 +369,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
 
     // 2부. 빠른정답 — 좌단 3열 표, 넘치면 우단으로 흐름
     const qaH = qaRows.map((_, r) => Math.max(measured[`q${r}`] ?? 0, G.qaRowH))
-    fillColumns(qaH, 0, 2, (p, c) => (p === 0 ? BODY1_H : BODYN_H) - (p === 0 && c === 0 ? G.qaLabelH : 0))
+    fillColumns(qaH, 0, 2, p => p === 0 ? BODY1_H - G.qaLabelH : BODYN_H)   // 첫 쪽은 오른쪽 단도 제목 높이만큼 내려 그린다
       .forEach((cols, pi) => defs.push({ part: 'q', first: pi === 0, kind: 'qa', left: cols[0], right: cols[1] }))
 
     // 3부. 해설지 — 2단(세로 구분선 없음), 블록 간 8.6mm
@@ -552,9 +559,9 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       <ProblemBlock p={items[i]} prev={items[i - 1]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
     </>
   )
-  const solveRowAt = (i: number, rowH: number) => (
+  const solveRowAt = (i: number, rowH: number, body?: ReactNode) => (
     <div key={items[i].id} style={{ display: 'flex', justifyContent: 'space-between', minHeight: `${rowH}mm`, marginBottom: `${S}mm` }}>
-      <div style={{ width: `${G.colW}mm`, flex: 'none' }}>{problemAt(i)}</div>
+      <div style={{ width: `${G.colW}mm`, flex: 'none' }}>{body ?? problemAt(i)}</div>
       {/* 풀이칸: 상단 0.5pt 검정 실선 + '풀이' 라벨 9pt #777, 내부 완전 공백 */}
       <div style={{ width: `${G.solW}mm`, flex: 'none' }}>
         <div style={{ borderTop: '0.5pt solid #000000' }} />
@@ -562,6 +569,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       </div>
     </div>
   )
+  const longAns = (a: string) => !isImageUrl(a) && a.length > 30
   const qaRowAt = (r: number, isLast: boolean) => (
     <div key={r} style={{
       display: 'grid', gridTemplateColumns: `repeat(3, ${G.qaColW}mm)`,
@@ -578,7 +586,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             {idx != null && (
               <>
                 <b style={{ fontSize: '10pt', color: theme.main, flex: 'none' }}>{String(idx + 1).padStart(2, '0')}</b>
-                <span style={{ fontSize: '10pt', minWidth: 0 }}>
+                {/* 긴 서술형 답(30자 넘음)은 작은 글씨로 — 10pt 그대로면 좁은 칸에 세로로 흘러 단을 넘친다(11-07) */}
+                <span style={{ fontSize: longAns(items[idx].answer) ? '7pt' : '10pt', lineHeight: longAns(items[idx].answer) ? 1.35 : undefined, minWidth: 0 }}>
                   <AnswerContent text={items[idx].answer} dims={dims} capMm={18} />
                 </span>
               </>
@@ -589,9 +598,9 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     </div>
   )
   // 빠른정답 표 세그먼트: 최상·최하 1pt #3f3f3f, 좌우 바깥 테두리 없음(개방형)
-  const qaSegment = (rows: number[]) => rows.length === 0 ? null : (
+  const qaSegment = (rows: number[], av: number) => rows.length === 0 ? null : (
     <div style={{ width: `${G.solW}mm`, borderTop: '1pt solid #3f3f3f', borderBottom: '1pt solid #3f3f3f' }}>
-      {rows.map((r, k) => qaRowAt(r, k === rows.length - 1))}
+      {rows.map((r, k) => <div key={r}>{fitBox(qaRowAt(r, k === rows.length - 1), `q${r}`, G.solW, av)}</div>)}
     </div>
   )
   const solutionAt = (i: number) => (
@@ -611,12 +620,31 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   )
   const headerN = <PageHeaderN title={ws.title} subtitle={subtitle} />
 
+  // 🔴 2026-11-07 «문제가 잘려서 출제됨» 전수조사: 한 문항이 단 높이(한 쪽)보다 긴 서술형·자료형이 있다
+  //    (예: 화학·지구과학 «t51» 문항 352mm > 쪽 265mm). 어디에 놓아도 잘리므로, 그런 블록만
+  //    잰 폭 그대로 그린 뒤 단 높이에 맞게 비율대로 줄인다(글자 배치는 잰 것과 같다).
+  const availOf = (pg: PageDef) => !pg.first ? BODYN_H
+    : BODY1_H - ('conceptsFirst' in pg && pg.conceptsFirst ? (measured?.['concepts'] ?? 0) + 5 : 0)
+  const fitBox = (node: ReactNode, key: string, wMm: number, availMm: number): ReactNode => {
+    const h = measured?.[key] ?? 0
+    if (!(h > availMm)) return node
+    const z = (availMm / h) * 0.99
+    return (
+      <div style={{ width: `${wMm * z}mm`, height: `${h * z}mm`, overflow: 'hidden' }}>
+        <div style={{ width: `${wMm}mm`, transform: `scale(${z})`, transformOrigin: '0 0' }}>{node}</div>
+      </div>
+    )
+  }
+
   const renderBody = (pg: PageDef) => {
     if (pg.kind === 'rows') return (
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
         <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
-          {pg.rows.map(i => solveRowAt(i, Math.max((measured?.[`p${i}`] ?? 0), G.minSolveH)))}
+          {pg.rows.map(i => {
+            const av = availOf(pg), h = measured?.[`p${i}`] ?? 0
+            return solveRowAt(i, Math.min(av, Math.max(h, G.minSolveH)), fitBox(problemAt(i), `p${i}`, G.colW, av))
+          })}
         </div>
       </div>
     )
@@ -624,6 +652,12 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       const isS = pg.kind === 'cols'
       const isSA = pg.kind === 'sacols'
       const gap = isS || isSA ? S : G.soGap
+      // 🔴 2026-11-07: 오른쪽 단이 «문제+정답»(sacols)인데도 해설 블록(solutionAt)을 그려,
+      //    잰 높이(a)와 그린 것이 달라 넘쳤다 → 두 단이 같은 블록을 그린다.
+      const av = availOf(pg)
+      const cell = (i: number) => isSA ? fitBox(probAnsAt(i), `a${i}`, G.colW, av)
+        : isS ? fitBox(problemAt(i), `p${i}`, G.colW, av)
+        : fitBox(solutionAt(i), `s${i}`, G.colW, av)
       return (
         <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
           {pg.kind === 'cols' && pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
@@ -631,10 +665,10 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             {/* 중앙 세로 구분선 1pt #e7e7e7 — 기본 2단(문제지)에만, 해설지엔 없음 */}
             {(isS || isSA) && <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: '#e7e7e7' }} />}
             <div style={{ position: 'absolute', left: 0, top: 0, width: `${G.colW}mm` }}>
-              {pg.cols[0].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{isSA ? probAnsAt(i) : isS ? problemAt(i) : solutionAt(i)}</div>)}
+              {pg.cols[0].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{cell(i)}</div>)}
             </div>
             <div style={{ position: 'absolute', right: 0, top: 0, width: `${G.colW}mm` }}>
-              {pg.cols[1].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{isS ? problemAt(i) : solutionAt(i)}</div>)}
+              {pg.cols[1].map(i => <div key={i} style={{ marginBottom: `${gap}mm` }}>{cell(i)}</div>)}
             </div>
           </div>
         </div>
@@ -645,15 +679,15 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
         <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
           {pg.bands.map((b, k) => 'wide' in b
-            ? <div key={k} style={{ marginBottom: `${S}mm` }}>{problemAt(b.wide, true)}</div>
+            ? <div key={k} style={{ marginBottom: `${S}mm` }}>{fitBox(problemAt(b.wide, true), `w${b.wide}`, CONTENT_W, availOf(pg))}</div>
             : (
               <div key={k} style={{ position: 'relative', height: `${b.h}mm`, marginBottom: `${S}mm` }}>
                 <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: '#e7e7e7' }} />
                 <div style={{ position: 'absolute', left: 0, top: 0, width: `${G.colW}mm` }}>
-                  {b.cols[0].map(i => <div key={i} style={{ marginBottom: `${S}mm` }}>{problemAt(i)}</div>)}
+                  {b.cols[0].map(i => <div key={i} style={{ marginBottom: `${S}mm` }}>{fitBox(problemAt(i), `p${i}`, G.colW, availOf(pg))}</div>)}
                 </div>
                 <div style={{ position: 'absolute', right: 0, top: 0, width: `${G.colW}mm` }}>
-                  {b.cols[1].map(i => <div key={i} style={{ marginBottom: `${S}mm` }}>{problemAt(i)}</div>)}
+                  {b.cols[1].map(i => <div key={i} style={{ marginBottom: `${S}mm` }}>{fitBox(problemAt(i), `p${i}`, G.colW, availOf(pg))}</div>)}
                 </div>
               </div>
             ))}
@@ -663,6 +697,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     if (pg.kind === 'split') {
       const two = opts.layout !== 'split2'
       const nrows = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 2 : 3
+      const slotH = availOf(pg) / nrows - 3      // 칸 아래 여백 2mm + 점선
       return (
         <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
           {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
@@ -673,7 +708,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             }}>
             {pg.slots.map(i => (
               <div key={i} style={{ overflow: 'hidden', borderBottom: '1px dotted #e3e8ef', paddingBottom: '2mm' }}>
-                {problemAt(i)}
+                {/* 4·6분할 칸은 단 폭(colW)과 같아 잰 높이를 그대로 쓴다 — 칸보다 긴 문항은 칸에 맞춰 줄인다 */}
+                {two ? fitBox(problemAt(i), `p${i}`, G.colW, slotH) : problemAt(i)}
               </div>
             ))}
           </div>
@@ -730,10 +766,10 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
               }}>빠른정답</div>
             </div>
           )}
-          {qaSegment(pg.left)}
+          {qaSegment(pg.left, pg.first ? BODY1_H - G.qaLabelH : BODYN_H)}
         </div>
         <div style={{ position: 'absolute', left: `${G.colW + G.colGap}mm`, top: pg.first ? `${G.qaLabelH}mm` : 0, width: `${G.solW}mm` }}>
-          {qaSegment(pg.right)}
+          {qaSegment(pg.right, pg.first ? BODY1_H - G.qaLabelH : BODYN_H)}
         </div>
       </div>
     )
@@ -820,34 +856,35 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         </div>
       )}
 
-      {/* 숨김 측정 컨테이너 — 정확한 단 폭에서 블록 높이 실측 */}
+      {/* 숨김 측정 컨테이너 — 정확한 단 폭에서 블록 높이 실측
+          flow-root: 블록 끝 그림의 아래 여백(my-2)이 상자 밖으로 새면 오답노트 행(flex)에서 2mm씩 넘쳤다(11-07) */}
       {imgDims && !measured && (
         <div ref={measRef} aria-hidden
           style={{ position: 'fixed', left: '-9999px', top: 0, visibility: 'hidden', pointerEvents: 'none' }}>
-          {conceptsEl && <div data-mk="concepts" style={{ width: `${CONTENT_W}mm` }}>{conceptsEl}</div>}
+          {conceptsEl && <div data-mk="concepts" style={{ display: 'flow-root', width: `${CONTENT_W}mm` }}>{conceptsEl}</div>}
           {items.map((_, i) => (
-            <div key={`p${i}`} data-mk={`p${i}`} style={{ width: `${G.colW}mm` }}>
+            <div key={`p${i}`} data-mk={`p${i}`} style={{ display: 'flow-root', width: `${G.colW}mm` }}>
               {problemAt(i)}
             </div>
           ))}
           {/* 넓은 교재 크롭 문항 — 전폭 띠로 실을 때의 높이 */}
           {items.map((p, i) => isWideCrop(dims, p.imageUrl) && (
-            <div key={`w${i}`} data-mk={`w${i}`} style={{ width: `${CONTENT_W}mm` }}>
+            <div key={`w${i}`} data-mk={`w${i}`} style={{ display: 'flow-root', width: `${CONTENT_W}mm` }}>
               {problemAt(i, true)}
             </div>
           ))}
           {items.map((_, i) => (
-            <div key={`a${i}`} data-mk={`a${i}`} style={{ width: `${G.colW}mm` }}>
+            <div key={`a${i}`} data-mk={`a${i}`} style={{ display: 'flow-root', width: `${G.colW}mm` }}>
               {probAnsAt(i)}
             </div>
           ))}
           {items.map((p, i) => (
-            <div key={`s${i}`} data-mk={`s${i}`} style={{ width: `${G.colW}mm` }}>
+            <div key={`s${i}`} data-mk={`s${i}`} style={{ display: 'flow-root', width: `${G.colW}mm` }}>
               <SolutionBlock p={p} idx={i} themeMain={theme.main} dims={dims} withBody={opts.solutionWithBody} />
             </div>
           ))}
           {qaRows.map((_, r) => (
-            <div key={`q${r}`} data-mk={`q${r}`} style={{ width: `${G.solW}mm` }}>{qaRowAt(r, false)}</div>
+            <div key={`q${r}`} data-mk={`q${r}`} style={{ display: 'flow-root', width: `${G.solW}mm` }}>{qaRowAt(r, false)}</div>
           ))}
         </div>
       )}
