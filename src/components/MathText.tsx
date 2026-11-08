@@ -34,6 +34,10 @@ function inlineToHtml(text: string): string {
           // 📒 족보닷컴 문항 그림(figs/zb/…)은 발문·보기·표가 통째로 든 그림 — 높이를 묶지 않고 폭만 440px 로
           path.startsWith('figs/zb/')
             ? `<img src="${import.meta.env.BASE_URL}${path}" alt="문항 그림" class="my-2 block max-w-full" style="width:440px" />`
+          // 📜 내신 기출(ns-…) 공통 지문을 원본에서 잘라 낸 조각(p<시트><번호>[_k].png, 2026-11-08) — 글로 뽑으면 숫자가
+          //    밀리고 표가 풀려서 그림으로 바꿨다. 지문은 길어 단·쪽을 넘어 조각이 여럿이다 → 높이를 묶지 않고 칸 폭에 맞춰 잇는다
+          : /^figs\/ns-[^/]+\/p\d{6}(?:_\d+)?\.png$/.test(path)
+            ? `<img src="${import.meta.env.BASE_URL}${path}" alt="지문" class="block max-w-full" style="width:100%;margin:0 0 2px" />`
             : `<img src="${import.meta.env.BASE_URL}${path}" alt="자료 그림" class="my-2 block max-w-full" style="max-height:340px" />`)
       .replace(/\n/g, '<br>')
   }).join('')
