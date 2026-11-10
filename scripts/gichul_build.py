@@ -93,6 +93,11 @@ def crop_problems(pdf, outdir, pid):
         pix = pg.get_pixmap(matrix=fitz.Matrix(CROP_ZOOM, CROP_ZOOM), clip=clip)
         im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
         a = np.asarray(im.convert('L')) < 200          # 글자 있는 칸
+        rows = np.where(a.any(1))[0]
+        if len(rows) > 1:                              # 긴 빈칸(200px+) 뒤 작은 조각(쪽 번호 상자 등 40줄 미만)은 떼어 냄 (imac 11/10)
+            gaps = np.where(np.diff(rows) > 200)[0]
+            if len(gaps) and len(rows) - gaps[-1] - 1 < 40:
+                a = a[:rows[gaps[-1]] + 1]
         rows, cols = np.where(a.any(1))[0], np.where(a.any(0))[0]
         if len(rows):                                  # 아래·오른쪽 빈 곳 잘라냄(여백 20px)
             im = im.crop((0, 0, min(im.width, cols[-1] + 20), min(im.height, rows[-1] + 20)))
@@ -111,6 +116,7 @@ for pid, p in sorted(papers.items()):
     try:
         if A.crops_only and pid in index:
             p['qPages'], p['sPages'] = index[pid]['qPages'], index[pid]['sPages']
+            p['solutionPdf'] = p['solutionPdf'] or index[pid].get('solutionPdf')   # 문제 PDF 만 받아 와도 해설 이름은 그대로
             old = {q['no']: q for q in json.load(open(os.path.join(od, 'probs.json')))} if os.path.exists(os.path.join(od, 'probs.json')) else {}
         else:
             old = {}
