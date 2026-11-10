@@ -12,13 +12,15 @@ export interface ExamPaper {
   solutionPdf: string | null
   qPages: number
   sPages: number
+  ext?: 'png' | 'jpg'   // 쪽 그림 확장자(없으면 png — 옛 로컬판)
 }
 
 // 회차 표시명: 수능/예비는 학년도(연도+1)로, 학평은 N월
 export function examTitle(p: ExamPaper): string {
   if (p.month === '수능') return `${Number(p.year) + 1}학년도 수능${p.subject ? ` · ${p.subject}` : ''}`
   if (p.month === '예비') return `${Number(p.year) + 1}학년도 예비시행${p.subject ? ` · ${p.subject}` : ''}`
-  return `${p.year}년 ${p.month}월 학평`
+  if (p.region === '평가원') return `${Number(p.year) + 1}학년도 ${p.month}월 모평${p.subject ? ` · ${p.subject}` : ''}`
+  return `${p.year}년 ${p.month}월 학평${p.subject ? ` · ${p.subject}` : ''}`
 }
 
 type SubTab = 'exam' | 'twin' | 'ebs' | 'police' | 'policeTwin' | 'kmm'
@@ -71,7 +73,7 @@ function ExamList() {
   const [papers, setPapers] = useState<ExamPaper[] | null>(null)
   const [grade, setGrade] = useState('전체')
   const [year, setYear] = useState('전체')
-  const [month, setMonth] = useState('전체')  // 전체/학평/수능
+  const [month, setMonth] = useState('전체')  // 전체/학평/모평/수능
   const [outMonth, setOutMonth] = useState('전체')  // 출제 월 (매쓰플랫 필터)
   const [subject, setSubject] = useState('전체')
   const [q, setQ] = useState('')
@@ -93,7 +95,8 @@ function ExamList() {
   const list = useMemo(() => (papers ?? []).filter(p =>
     (grade === '전체' || p.grade === grade) &&
     (year === '전체' || p.year === year) &&
-    (month === '전체' || (month === '수능' ? (p.month === '수능' || p.month === '예비') : p.month !== '수능' && p.month !== '예비')) &&
+    (month === '전체' || (month === '수능' ? (p.month === '수능' || p.month === '예비')
+      : p.month !== '수능' && p.month !== '예비' && (month === '모평') === (p.region === '평가원'))) &&
     (outMonth === '전체' || `${p.month}월` === outMonth) &&
     (subject === '전체' || p.subject === subject) &&
     (!q.trim() || examTitle(p).includes(q.trim()) || p.region.includes(q.trim()))),
@@ -112,13 +115,13 @@ function ExamList() {
   return (
     <div>
       <p className="mb-4 text-sm text-ink2">
-        <b className="text-ink">수능/모의고사란?</b> — 2006년부터 출제된 학력평가·수능 수학 기출 문제와 해설을 정리한 학습지입니다 (<b>{papers.length}회차</b>).
+        <b className="text-ink">수능/모의고사란?</b> — 학력평가·모의평가·수능 수학 기출 문제와 해설을 정리한 학습지입니다 (<b>{papers.length}회차</b>, {years[years.length - 1]}~{years[0]}년).
         원본 이미지 그대로 열람·인쇄하고, 문항을 태깅해 문제은행에 넣습니다. (EBSi · 출처 표기)
       </p>
 
       <div className="mb-5 flex flex-wrap items-center gap-2">
         <Seg label="학년" value={grade} setValue={setGrade} options={['전체', '고1', '고2', '고3']} />
-        <Seg label="구분" value={month} setValue={setMonth} options={['전체', '학평', '수능']} />
+        <Seg label="구분" value={month} setValue={setMonth} options={['전체', '학평', '모평', '수능']} />
         <Seg label="연도" value={year} setValue={setYear} options={['전체', ...years]} />
         {/* 출제 월 필터 (매쓰플랫 동일) */}
         <select value={outMonth} onChange={e => setOutMonth(e.target.value)}

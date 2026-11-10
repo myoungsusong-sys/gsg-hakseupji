@@ -48,7 +48,7 @@ export default function GichulTag() {
     const s = new Set<number>()
     for (const p of problems) {
       if (p.imageUrl && p.imageUrl.includes(`/${id}/`)) {
-        const m = p.imageUrl.match(/q(\d+)\.png/); if (m) s.add(Number(m[1]))
+        const m = p.imageUrl.match(/q(\d+)\.(?:png|jpg)/); if (m) s.add(Number(m[1]))
       }
     }
     return s

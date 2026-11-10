@@ -17,8 +17,8 @@ export default function GichulView() {
   const p = papers.find(x => x.id === id)
   if (!p) return <div className="text-ink2">회차를 찾을 수 없습니다.</div>
 
-  const qPages = Array.from({ length: p.qPages }, (_, i) => `/gichul/${p.id}/q${i + 1}.png`)
-  const sPages = Array.from({ length: p.sPages }, (_, i) => `/gichul/${p.id}/s${i + 1}.png`)
+  const qPages = Array.from({ length: p.qPages }, (_, i) => `/gichul/${p.id}/q${i + 1}.${p.ext ?? 'png'}`)
+  const sPages = Array.from({ length: p.sPages }, (_, i) => `/gichul/${p.id}/s${i + 1}.${p.ext ?? 'png'}`)
 
   return (
     <div>
