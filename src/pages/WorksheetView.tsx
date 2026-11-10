@@ -781,6 +781,34 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const visibleIdx = (pagesAll ?? []).map((pg, gi) => ({ pg, gi })).filter(({ pg }) => show[pg.part])
   const lastVisible = visibleIdx.length ? visibleIdx[visibleIdx.length - 1].gi : -1
   const ready = pagesAll != null
+  // 한글(HWPX) 내려받기 (2026-11-10) — 매쓰플랫 «한글 다운로드» 대응. 글 문항은 글로, 그림·수식은 문항 그림으로 (lib/worksheetHwpx.ts)
+  const [hwpx, setHwpx] = useState<string | null>(null)
+  async function downloadHwpx() {
+    if (!ws || hwpx) return
+    const withSolution = confirm('한글 파일에 «정답과 해설»도 넣을까요?\n(확인 = 넣기 · 취소 = 문제와 빠른 정답만)')
+    setHwpx('한글 파일 만드는 중…')
+    try {
+      const { worksheetHwpx } = await import('../lib/worksheetHwpx')
+      const bytes = await worksheetHwpx({
+        title: ws.title, meta: `${ws.tags?.[0] || ws.grade} · ${mainCount(items)}문제${ws.author ? ` · ${ws.author}` : ''}    이름 ____________`,
+        items, labels, bodyOf: (p, i) => zbBodyFor(p, items[i - 1]), withSolution,
+        // 화면에 조판된 문항 칸을 그대로 찍는다(수식·그림이 인쇄본과 같다). 못 찾으면 문항 그림 함수로.
+        shotOf: async p => {
+          const el = document.querySelector<HTMLElement>(`.mf-page [data-hwpx-pid="${CSS.escape(p.id)}"]`)
+          if (!el) return null
+          const { captureNode } = await import('../lib/domShot')
+          return (await captureNode(el, 2.5)).toDataURL('image/jpeg', 0.9).split(',')[1]
+        },
+        onProgress: (d, t) => setHwpx(`한글 파일 만드는 중… ${d}/${t}`),
+      })
+      const url = URL.createObjectURL(new Blob([bytes as BlobPart], { type: 'application/hwp+zip' }))
+      const a = document.createElement('a'); a.href = url; a.download = `${ws.title.replace(/[\\/:*?"<>|]/g, '_')}.hwpx`; a.click()
+      setTimeout(() => URL.revokeObjectURL(url), 10_000)
+    } catch (e) {
+      alert('한글 파일을 만들지 못했습니다.\n' + String(e).slice(0, 120))
+    }
+    setHwpx(null)
+  }
 
   return (
     <div>
@@ -815,6 +843,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🅾 OMR</button>
           <button onClick={() => printPart('문제+정답', '문제+정답')} disabled={!ready}
             className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">🧾 문제+정답</button>
+          <button onClick={downloadHwpx} disabled={!items.length || !!hwpx} title="한컴 한글에서 열어 고칠 수 있는 .hwpx 파일"
+            className="rounded-md px-3 py-1.5 text-sm font-semibold text-ink2 hover:bg-pine-soft hover:text-pine-dark disabled:opacity-40">{hwpx ?? '📘 한글'}</button>
         </div>
         <button onClick={printAll} disabled={!ready}
           className="rounded-lg bg-pine px-5 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark disabled:opacity-40">🖨 전체 인쇄</button>
@@ -1043,6 +1073,8 @@ export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo,
           )}
         </div>
       )}
+      {/* data-hwpx-pid — 한글(HWPX) 내려받기가 이 칸을 그대로 찍어 문항 그림으로 넣는다 */}
+      <div data-hwpx-pid={p.id}>
       {p.imageUrl
         ? <img src={p.imageUrl} alt="" style={scaledImgStyle(dims, p.imageUrl, G.probImgW, wide ? WIDE_IMG_W : G.probImgW)} />
         : <>
@@ -1056,6 +1088,7 @@ export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo,
             )}
             {/* 매쓰플랫 원본에는 주관식 아래 점선(답 쓰는 줄)이 없다 — 실측 2026-08-06 */}
           </>}
+      </div>
     </div>
   )
 }
