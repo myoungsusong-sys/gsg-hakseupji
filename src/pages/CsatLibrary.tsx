@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSubject } from '../lib/subject'
+import GichulTwin from './GichulTwin'
 
 export interface ExamPaper {
   id: string
@@ -52,9 +53,7 @@ export default function CsatLibrary() {
         ))}
       </div>
       {tab === 'exam' && <ExamList />}
-      {tab === 'twin' && <Pending title="모의고사 쌍둥이"
-        original="선택한 모의고사 문항의 숫자·상황을 바꾼 쌍둥이(변형) 문제 세트."
-        plan="기출은 원본 이미지라 숫자 변형이 안 됩니다. 유형별 자체 쌍둥이(AI 생성+검산)가 쌓이면, 기출 문항의 유형에 맞춰 우리 쌍둥이를 뽑아 제공합니다." />}
+      {tab === 'twin' && <GichulTwin />}
       {tab === 'ebs' && <Pending title="수능특강·수능완성"
         original="EBS 수능 연계교재(수능특강·수능완성)를 단원·문항 단위로 출제."
         plan="EBS 연계교재는 저작권 자료라 수록하지 않습니다. 보유 교재를 명수쌤이 정답표(문항→유형·정답)로 등록하면 '교재' 채점·드릴에 연동됩니다." />}

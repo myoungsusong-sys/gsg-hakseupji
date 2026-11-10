@@ -1,4 +1,5 @@
 # 기출 회차 빌드 (workerE 11/10) — EBSi 수학 PDF → public/gichul/<id>/q*.jpg·s*.jpg·probs/q<no>.jpg + probs.json + index.json
+# 과탐 옛 회차(workerD 11/10): <뿌리>/고3_N수 → «EBSi_기출/고3_N수/과학탐구» 를 가리키게 두고 --years 2006-2024 --light
 # 사용: python3 gichul_build.py <PDF 뿌리> <public/gichul> [--years 2006-2023] [--light] [--skip-existing]
 #   <PDF 뿌리>/<고1|고2|고3_N수>/<연도>/(_PDF/)?*.pdf — 드라이브 «EBSi_기출/<학년>/수학» 그대로
 #   index.json 은 합친다: 이번에 만든 회차만 바꾸고 나머지(다른 연도·과학)는 그대로 둔다
@@ -7,6 +8,8 @@ import argparse, json, os, re, unicodedata
 import fitz
 import numpy as np
 from PIL import Image
+import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from gichul_marks import find_marks, mark_rect
 
 ap = argparse.ArgumentParser()
 ap.add_argument('src'); ap.add_argument('out')
@@ -24,8 +27,8 @@ SUBJ = {'미적분': ('미적분', 'calc'), '확률과_통계': ('확률과통�
         '수리가형': ('수리 가형', 'sga'), '수리나형': ('수리 나형', 'sna'),
         '수학가형-이산수학': ('수리 가형 · 이산수학', 'sgadm'), '수학가형-확률과통계': ('수리 가형 · 확률과통계', 'sgast'),
         '수학가형': ('수학 가형', 'ga'), '수학나형': ('수학 나형', 'na'), '수학A': ('수학 A형', 'ma'), '수학B': ('수학 B형', 'mb'),
-        # 과학탐구 (workerE 11/10) — area='과학' 으로 표시해 헤더 과목이 과학일 때만 보인다
-        '물리학Ⅰ': ('물리학Ⅰ', 'phy1'), '화학Ⅰ': ('화학Ⅰ', 'chem1'), '생명과학Ⅰ': ('생명과학Ⅰ', 'bio1'), '지구과학Ⅰ': ('지구과학Ⅰ', 'earth1'), '통합과학': ('통합과학', 'int')}
+        # 과학탐구 (workerE 11/10) — 2019년 시행까지 파일 이름은 «물리Ⅰ», 과목 버튼은 «물리학Ⅰ» 하나로(workerD 11/10) — area='과학' 으로 표시해 헤더 과목이 과학일 때만 보인다
+        '물리학Ⅰ': ('물리학Ⅰ', 'phy1'), '물리Ⅰ': ('물리학Ⅰ', 'phy1'), '화학Ⅰ': ('화학Ⅰ', 'chem1'), '생명과학Ⅰ': ('생명과학Ⅰ', 'bio1'), '지구과학Ⅰ': ('지구과학Ⅰ', 'earth1'), '통합과학': ('통합과학', 'int')}
 SCI = {'phy1', 'chem1', 'bio1', 'earth1', 'int'}
 
 # 파일 이름이 해마다 조금씩 다르다: «2010_3월_학력평가(서울)» · «2014_고1_3월_학평_(서울)» · «2013_2013_고1_…» · «4.24_시행_수학»
@@ -46,6 +49,7 @@ for g in GR:
         for root, f in sorted(files):
             path, f = os.path.join(root, f), unicodedata.normalize('NFC', f)
             if '짝수형' in f: continue
+            if os.path.getsize(path) == 0: continue   # 드라이브 원본이 0바이트인 것(2007·2009 과탐 62개) — 없는 셈 친다
             m = pat_mock.match(f)
             if m:
                 year, month, region, subj, part = m.groups()
@@ -75,35 +79,15 @@ def render_pages(pdf, outdir, prefix):
         pg.get_pixmap(matrix=fitz.Matrix(z, z)).save(os.path.join(outdir, f'{prefix}{i + 1}.jpg'), jpg_quality=PAGE_Q)
     return len(d)
 
-num_re = re.compile(r'^(\d{1,2})\s*\.')
 def crop_problems(pdf, outdir, pid):
     d = fitz.open(pdf)
-    marks = []   # (page, col, y, no)
-    for pg in d:
-        W, H = pg.rect.width, pg.rect.height
-        for b in pg.get_text('blocks'):
-            m = num_re.match(b[4].strip())
-            if not m: continue
-            x0, y0 = b[0], b[1]
-            if y0 < H * 0.08 or y0 > H * 0.9: continue
-            col = 0 if x0 < W / 2 else 1
-            left = W * 0.1 if col == 0 else W * 0.515
-            if abs(x0 - left) > W * 0.03: continue
-            marks.append((pg.number, col, y0, int(m.group(1))))
-    # 번호는 차례로 커져야 한다 — 어긋난 것은 버림
-    marks.sort(key=lambda t: (t[0], t[1], t[2]))
-    seq, last = [], 0
-    for t in marks:
-        if t[3] == last + 1: seq.append(t); last = t[3]
+    seq, left = find_marks(d)
     if len(seq) < 10: return []
     os.makedirs(os.path.join(outdir, 'probs'), exist_ok=True)
     out = []
     for i, (pn, col, y, no) in enumerate(seq):
-        pg = d[pn]; W, H = pg.rect.width, pg.rect.height
-        x0, x1 = (W * 0.08, W * 0.493) if col == 0 else (W * 0.507, W * 0.92)
-        nxt = seq[i + 1] if i + 1 < len(seq) else None
-        y1 = nxt[2] - 8 if nxt and nxt[0] == pn and nxt[1] == col else H * 0.9
-        clip = fitz.Rect(x0, y - 8, x1, y1)
+        pg = d[pn]
+        clip = mark_rect(d, seq, left, i)
         pix = pg.get_pixmap(matrix=fitz.Matrix(CROP_ZOOM, CROP_ZOOM), clip=clip)
         im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
         a = np.asarray(im.convert('L')) < 200          # 글자 있는 칸

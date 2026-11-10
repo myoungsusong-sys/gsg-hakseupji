@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { curriculumFor, defaultCurriculumForGrade } from '../data/curriculum'
+import { curriculumFor, defaultCurriculumForGrade, typeName } from '../data/curriculum'
 import { useStore, uid } from '../lib/store'
 import type { Diff, Kind } from '../types'
 import { DIFF_LABEL, DIFFS } from '../types'
 import GradeSelect from '../components/GradeSelect'
 import { examTitle, type ExamPaper } from './CsatLibrary'
 
-interface Prob { no: number; img: string; page: number }
+// tags: scripts/gichul_autotag.py 가 붙인 유형 추천(글자 조각 유사도, AI·크레딧 0) — t 유형 id · c 과정 id · s 점수 (workerD 11/10)
+interface Prob { no: number; img: string; page: number; tags?: { t: string; c: string; s: number }[] }
 interface Row { typeId: string; kind: Kind; diff: Diff; answer: string }
 
 // 기출 문항 태깅: 자동 크롭 문항에 유형·정답을 달아 문제은행에 편입.
@@ -40,7 +41,8 @@ export default function GichulTag() {
   // probs·과정 바뀌면 행 초기화
   useEffect(() => {
     if (!probs) return
-    setRows(probs.map(pr => ({ typeId: firstType, kind: paper?.area === '과학' || pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다
+    // 유형은 자동 추천 첫 번째로 미리 채움(없으면 과정 첫 유형) — 선생님은 보고 고치기만
+    setRows(probs.map(pr => ({ typeId: pr.tags?.[0]?.t ?? firstType, kind: paper?.area === '과학' || pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [probs, gradeId])
 
@@ -81,6 +83,9 @@ export default function GichulTag() {
   }
 
   const pending = probs.filter(pr => !added.has(pr.no)).length
+  const tagged = probs.filter(pr => pr.tags?.length).length
+  // 2015 개정 과탐Ⅰ 은 2021학년도(2020년 시행)부터 — 그 앞 회차는 옛 교육과정이라 가장 가까운 유형으로만 붙는다
+  const oldSci = paper?.area === '과학' && Number(paper.year) < 2020
 
   return (
     <div>
@@ -101,6 +106,13 @@ export default function GichulTag() {
         </button>
       </div>
 
+      {(tagged > 0 || oldSci) && (
+        <div className="mb-3 rounded-xl border border-line bg-white/70 px-4 py-2 text-xs text-ink2">
+          {tagged > 0 && <>⭐ <b>{tagged}/{probs.length}문항</b>에 유형을 자동 추천해 미리 골라 두었습니다(문항 글자와 유형 이름 비교 — 틀릴 수 있으니 확인 후 편입). </>}
+          {oldSci && <>이 회차는 <b>2015 개정 이전 교육과정</b>(2020학년도 이전)이라 지금 트리에 없는 내용이 있을 수 있습니다.</>}
+        </div>
+      )}
+
       <div className="grid gap-3">
         {probs.map((pr, i) => {
           const done = added.has(pr.no)
@@ -119,6 +131,11 @@ export default function GichulTag() {
                   <div className="grid gap-2 text-sm">
                     <div className="flex items-center gap-1.5">
                       <select value={r.typeId} onChange={e => setRow(i, { typeId: e.target.value })} className="min-w-0 grow rounded-lg border border-line px-2 py-1.5">
+                        {pr.tags?.length ? (
+                          <optgroup label="⭐ 추천">
+                            {pr.tags.map(tg => <option key={'tag' + tg.t} value={tg.t}>⭐ {typeName(tg.t)}{tg.c !== gradeId ? ` · ${curriculumFor(tg.c).label}` : ''}</option>)}
+                          </optgroup>
+                        ) : null}
                         {cur.units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => (
                           <option key={t.id} value={t.id}>{u.name} › {t.name}</option>
                         )))))}
