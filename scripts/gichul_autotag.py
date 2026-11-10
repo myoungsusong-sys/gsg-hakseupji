@@ -15,7 +15,9 @@ ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('trees', nargs='?', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gichul_trees.json'))
 ap.add_argument('--years', default='')
 ap.add_argument('--area', default='')
+ap.add_argument('--ocr', default='')   # workerD 11/11: {회차id: {번호: 글자}} — 글꼴 글자표가 깨진 PDF(2014·2016 평가원 과탐 4회차)는 문항 그림 OCR 글자로(scripts/gichul_ocr.swift)
 A = ap.parse_args()
+OCR = json.load(open(A.ocr)) if A.ocr else {}
 Y0, Y1 = (map(int, A.years.split('-')) if A.years else (0, 9999))
 TREES = json.load(open(A.trees))
 PUB = os.path.dirname(os.path.abspath(A.out.rstrip('/')))   # public/
@@ -107,14 +109,21 @@ for p in index:
     pj = os.path.join(A.out, p['id'], 'probs.json')
     if not os.path.exists(pj): continue
     probs = json.load(open(pj))
-    if not probs or p['problemPdf'] not in pdfs: continue
-    d = fitz.open(pdfs[p['problemPdf']])
-    seq, left = find_marks(d)
-    rect = {no: (pn, i) for i, (pn, c, y, no) in enumerate(seq)}
+    if not probs: continue
+    ocr = OCR.get(p['id'])
+    if ocr is None:
+        if p['problemPdf'] not in pdfs: continue
+        d = fitz.open(pdfs[p['problemPdf']])
+        seq, left = find_marks(d)
+        rect = {no: (pn, i) for i, (pn, c, y, no) in enumerate(seq)}
     for pr in probs:
-        if pr['no'] not in rect: continue
-        pn, i = rect[pr['no']]
-        text = d[pn].get_text('text', clip=mark_rect(d, seq, left, i))
+        if ocr is not None:
+            text = ocr.get(str(pr['no']))
+            if not text: continue
+        else:
+            if pr['no'] not in rect: continue
+            pn, i = rect[pr['no']]
+            text = d[pn].get_text('text', clip=mark_rect(d, seq, left, i))
         pr.pop('tags', None); pr.pop('tw', None)   # 다시 돌릴 때 옛 추천을 지운다
         curs = candidates(p, pr['no'])
         tg = suggest(text, curs)
