@@ -8,6 +8,7 @@ import ProblemContent from '../components/ProblemContent'
 import FileUploader from '../components/FileUploader'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
 import type { Problem } from '../types'
+import { orderGroups } from '../lib/essayGroup'
 import { AddProblemModal, BulkAddModal } from './Bank'
 
 // 매쓰플랫 '나의 DB' — 업로드한 문제 자료(세트) 목록
@@ -144,7 +145,7 @@ export default function MyDb({ initialSet }: { initialSet?: string } = {}) {
       grade: c?.grade ?? '중1-1',
       tags: ['나의 DB'],
       theme: 'pine',
-      problemIds: g.problems.map(p => p.id),
+      problemIds: orderGroups(g.problems, g.problems).map(p => p.id),   // ✍️ 하위문제는 본문제 바로 뒤로
       conceptIds: [],
       options: DEFAULT_SHEET_OPTIONS,
       listIds: [],
@@ -440,8 +441,12 @@ function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onC
             <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
               {묶는중 ? (
                 <>
-                  <span className="rounded bg-amber-soft px-2 py-1 font-bold text-amber">✍️ 이어지는 하위문제를 차례로 누르세요 — 누른 순서대로 (1)(2)(3)</span>
-                  <button onClick={() => set묶는중(null)} className="rounded-lg bg-pine px-3 py-1 font-bold text-paper">묶기 끝</button>
+                  <span className="rounded bg-amber-soft px-2 py-1 font-bold text-amber">✍️ 이 본문제에 붙일 하위문제를 누르세요 — 나의 DB 문항 순서대로 (1)(2)(3) · 다시 누르면 빠져요</span>
+                  <button onClick={() => {
+                    // 하위문제를 하나도 안 붙였으면 본문제 표시도 지운다
+                    if (!g.problems.some(x => x.groupMain === 묶는중 && x.id !== 묶는중)) onGroup(묶는중, { groupMain: undefined })
+                    set묶는중(null)
+                  }} className="rounded-lg bg-pine px-3 py-1 font-bold text-paper">묶기 끝</button>
                 </>
               ) : (
                 <span className="text-ink2">서술형 본문제와 (1)·(2)·(3) 하위문제가 따로 등록됐으면 본문제의 [✍️ 묶기] 를 누르세요.</span>
@@ -455,6 +460,8 @@ function SetRow({ g, grade, publisher, checked, expanded, showAll, menuOpen, onC
                 <div key={p.id}
                   onClick={() => {
                     if (!묶는중 || p.id === 묶는중) return
+                    // 다른 묶음의 본문제는 하위문제로 넣지 않는다(묶음 안에 묶음이 생긴다)
+                    if (p.groupMain === p.id && g.problems.some(x => x.groupMain === p.id && x.id !== p.id)) { alert('이미 다른 묶음의 본문제입니다. 그 묶음을 먼저 풀어 주세요.'); return }
                     onGroup(p.id, { groupMain: p.groupMain === 묶는중 ? undefined : 묶는중 })   // 다시 누르면 풀린다
                   }}
                   className={`rounded-xl border bg-white p-4 ${하위 ? 'ml-8 border-amber/50' : 'border-line'} ${묶는중 && p.id !== 묶는중 ? 'cursor-pointer hover:border-pine' : ''} ${p.id === 묶는중 ? 'ring-2 ring-amber' : ''}`}>

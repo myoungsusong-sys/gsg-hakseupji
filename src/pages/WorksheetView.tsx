@@ -12,6 +12,7 @@ import { poolStagesFor } from '../lib/wsPools'
 import { zbCoursesOf } from '../data/curriculum-zb'
 import { zbBodyFor } from '../lib/zbPassage'
 import { probIndex } from '../lib/probIndex'
+import { mainCount, numberLabels, type NoLabel } from '../lib/essayGroup'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -192,6 +193,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     () => { const byId = probIndex(problems); return (ws?.problemIds ?? []).map(pid => byId.get(pid)).filter(p => p != null) },
     [ws, problems],
   )
+  // ✍️ 서술형 묶음 번호 — 본문제 N번, 하위문제 (1)(2) (lib/essayGroup.ts, 2026-11-10)
+  const labels = useMemo(() => numberLabels(items), [items])
   const theme = ws ? THEMES[ws.theme] : THEMES.pine
   const opts = ws?.options ?? DEFAULT_SHEET_OPTIONS
 
@@ -511,13 +514,13 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     if (opts.showNew && p.isNew) parts.push('신경향')
     // 연관 문항 정보: 같은 쌍둥이 그룹 문항 번호
     if (opts.showRelated && p.twinGroup) {
-      const rel = items.map((x, xi) => x.id !== p.id && x.twinGroup === p.twinGroup ? xi + 1 : 0).filter(Boolean)
+      const rel = items.map((x, xi) => x.id !== p.id && x.twinGroup === p.twinGroup ? labels[xi]?.short ?? String(xi + 1) : '').filter(Boolean)
       if (rel.length) parts.push(`연관 ${rel.join(',')}번`)
     }
     return parts.join(' · ')
   }
   const onVideo = (pp: Problem, ii: number) =>
-    setVideo({ src: pp.videoUrl!, subtitle: pp.subtitleUrl, title: `${ii + 1}번 풀이영상` })
+    setVideo({ src: pp.videoUrl!, subtitle: pp.subtitleUrl, title: `${labels[ii]?.short ?? ii + 1}번 풀이영상` })
 
   const conceptsEl = concepts.length > 0 ? (
     <div style={{ border: `0.5pt solid ${theme.main}`, borderRadius: '1.5mm', padding: '3.5mm' }}>
@@ -556,7 +559,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const problemAt = (i: number, wide = false) => (
     <>
       {conceptBefore.get(i) && conceptGroupEl(conceptBefore.get(i)!)}
-      <ProblemBlock p={items[i]} prev={items[i - 1]} idx={i} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
+      <ProblemBlock p={items[i]} prev={items[i - 1]} idx={i} label={labels[i]} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
     </>
   )
   const solveRowAt = (i: number, rowH: number, body?: ReactNode) => (
@@ -585,7 +588,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           }}>
             {idx != null && (
               <>
-                <b style={{ fontSize: '10pt', color: theme.main, flex: 'none' }}>{String(idx + 1).padStart(2, '0')}</b>
+                <b style={{ fontSize: '10pt', color: theme.main, flex: 'none' }}>{labels[idx] ? (labels[idx].sub ? labels[idx].short : labels[idx].big) : String(idx + 1).padStart(2, '0')}</b>
                 {/* 긴 서술형 답(30자 넘음)은 작은 글씨로 — 10pt 그대로면 좁은 칸에 세로로 흘러 단을 넘친다(11-07) */}
                 <span style={{ fontSize: longAns(items[idx].answer) ? '7pt' : '10pt', lineHeight: longAns(items[idx].answer) ? 1.35 : undefined, minWidth: 0 }}>
                   <AnswerContent text={items[idx].answer} dims={dims} capMm={18} />
@@ -604,7 +607,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     </div>
   )
   const solutionAt = (i: number) => (
-    <SolutionBlock p={items[i]} idx={i} themeMain={theme.main} dims={dims} withBody={opts.solutionWithBody} />
+    <SolutionBlock p={items[i]} idx={i} label={labels[i]} themeMain={theme.main} dims={dims} withBody={opts.solutionWithBody} />
   )
   // 「문제+정답」 한 장 — 문제 바로 아래에 정답을 붙인다(선생님 대조용·자습용)
   const probAnsAt = (i: number) => (
@@ -616,7 +619,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
 
   const header1 = (
     <PageHeader1 theme={theme.main} grade={ws.tags?.[0] || ws.grade} title={ws.title} subtitle={subtitle}
-      dateText={dateText} count={items.length} author={ws.author} studentName={studentName} />
+      dateText={dateText} count={mainCount(items)} author={ws.author} studentName={studentName} />
   )
   const headerN = <PageHeaderN title={ws.title} subtitle={subtitle} />
 
@@ -729,9 +732,9 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
               <div style={{
                 width: `${G.omrNoW}mm`, flex: 'none', borderRight: '0.5pt solid #cccccc',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '13pt', fontWeight: 800, color: theme.main,
+                fontSize: labels[i]?.sub ? '9pt' : '13pt', fontWeight: 800, color: theme.main,
               }}>
-                {i + 1}
+                {labels[i]?.short ?? i + 1}
               </div>
               <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5.5mm' }}>
                 {items[i].kind === '객관식' && [1, 2, 3, 4, 5].map(n => (
@@ -880,7 +883,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           ))}
           {items.map((p, i) => (
             <div key={`s${i}`} data-mk={`s${i}`} style={{ display: 'flow-root', width: `${G.colW}mm` }}>
-              <SolutionBlock p={p} idx={i} themeMain={theme.main} dims={dims} withBody={opts.solutionWithBody} />
+              <SolutionBlock p={p} idx={i} label={labels[i]} themeMain={theme.main} dims={dims} withBody={opts.solutionWithBody} />
             </div>
           ))}
           {qaRows.map((_, r) => (
@@ -1020,7 +1023,8 @@ function InlineAnswer({ p, themeMain, dims }: { p: Problem; themeMain: string; d
 
 /* ── 문항 블록 (§5-5): 번호 20pt bold 테마색 2자리 0패딩 + 본문 hanging indent 11.6mm,
       문제 이미지 폭 73.2mm(930px 원본 기준, 작으면 비례) ── */
-export function ProblemBlock({ p, prev, idx, caption, themeMain, onVideo, dims, wide }: {
+export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo, dims, wide }: {
+  label?: NoLabel         // ✍️ 서술형 묶음 번호 — 없으면 idx+1
   prev?: Problem          // 📒 바로 앞 문항 — 족보 문항이 같은 지문이면 지문을 다시 싣지 않는다(zbBodyFor)
   p: Problem; idx: number; caption: string; themeMain: string
   onVideo?: (p: Problem, idx: number) => void; dims?: Dims
@@ -1029,9 +1033,7 @@ export function ProblemBlock({ p, prev, idx, caption, themeMain, onVideo, dims, 
 }) {
   return (
     <div style={{ position: 'relative', paddingLeft: `${G.indent}mm` }}>
-      <span style={{ position: 'absolute', left: 0, top: 0, fontSize: '20pt', lineHeight: 1, fontWeight: 800, color: themeMain, letterSpacing: '-0.02em' }}>
-        {String(idx + 1).padStart(2, '0')}
-      </span>
+      <NoMark idx={idx} label={label} themeMain={themeMain} />
       {(caption || (onVideo && p.videoUrl)) && (
         <div style={{ fontSize: '7pt', lineHeight: 1.3, color: '#949494', marginBottom: '1mm' }}>
           {caption}
@@ -1060,14 +1062,12 @@ export function ProblemBlock({ p, prev, idx, caption, themeMain, onVideo, dims, 
 
 /* ── 해설 블록 (§7): 번호 20pt + '정답' 9pt #231916 + 답(자연 크기, items-start로 침범 방지)
       → 괘선 0.5pt #414141 → '해설' 9pt #777 → 본문(폭 64.4mm) ── */
-function SolutionBlock({ p, idx, themeMain, dims, withBody }: {
-  p: Problem; idx: number; themeMain: string; dims?: Dims; withBody?: boolean
+function SolutionBlock({ p, idx, label, themeMain, dims, withBody }: {
+  p: Problem; idx: number; label?: NoLabel; themeMain: string; dims?: Dims; withBody?: boolean
 }) {
   return (
     <div style={{ position: 'relative', paddingLeft: `${G.indent}mm` }}>
-      <span style={{ position: 'absolute', left: 0, top: 0, fontSize: '20pt', lineHeight: 1, fontWeight: 800, color: themeMain, letterSpacing: '-0.02em' }}>
-        {String(idx + 1).padStart(2, '0')}
-      </span>
+      <NoMark idx={idx} label={label} themeMain={themeMain} solution />
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2.6mm', minHeight: '7mm', paddingBottom: '1mm' }}>
         <span style={{ fontSize: '9pt', fontWeight: 800, color: '#231916', paddingTop: '1mm', flex: 'none' }}>정답</span>
         <div style={{ fontSize: '10pt', fontWeight: 700, minWidth: 0 }}>
@@ -1098,5 +1098,16 @@ function SolutionBlock({ p, idx, themeMain, dims, withBody }: {
             : <div style={{ fontSize: '9.5pt', lineHeight: 1.7 }}><MathText text={p.solution} /></div>}
       </div>
     </div>
+  )
+}
+
+/* ✍️ 문항 번호 — 보통·본문제는 20pt 두 자리, 하위문제는 13pt «(1)» (해설지는 «3(1)») */
+function NoMark({ idx, label, themeMain, solution }: { idx: number; label?: NoLabel; themeMain: string; solution?: boolean }) {
+  const sub = !!label?.sub
+  const text = !label ? String(idx + 1).padStart(2, '0') : sub && solution ? label.short : label.big
+  return (
+    <span style={{ position: 'absolute', left: 0, top: sub ? '0.6mm' : 0, fontSize: sub ? '13pt' : '20pt', lineHeight: 1, fontWeight: 800, color: themeMain, letterSpacing: '-0.02em' }}>
+      {text}
+    </span>
   )
 }

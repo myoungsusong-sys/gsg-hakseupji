@@ -1135,9 +1135,13 @@ export function AssignModal({ title, students, initial, initialReveal, initialKi
           )}
           <div className="grow" />
           <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm">취소</button>
-          <button onClick={() => onSubmit([...sel], kind, { answer: showAns, solution: showSol },
+          <button onClick={() => {
+            // 창을 오래 열어 둬 고른 예약 시각이 이미 지났으면 그대로 바로 출제되지 않게 묻는다
+            if (예약 && 예약날 && new Date(예약날).getTime() <= Date.now()) { alert('고른 예약 시각이 이미 지났습니다. 시각을 다시 골라 주세요.'); return }
+            onSubmit([...sel], kind, { answer: showAns, solution: showSol },
             isExam ? { minutes, once, openAt: fromLocalInput(openAt), closeAt: fromLocalInput(closeAt) } : undefined,
-            예약 && 예약날 ? 예약날 : undefined)}
+            예약 && 예약날 ? 예약날 : undefined)
+          }}
             className={`rounded-lg px-5 py-2 text-sm font-bold text-paper ${isExam ? 'bg-clay' : 'bg-pine'}`}>
             {예약 ? '출제 예약' : isExam ? '시험 출제' : '선택 완료'} ({sel.size}명)
           </button>

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { CURRICULA, curriculumFor, typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { conceptsForSubUnits } from '../data/concepts'
@@ -11,10 +11,11 @@ import { brandFor, myAuthorSet , DEFAULT_ACADEMY } from '../lib/brand'
 import MathText, { isImageUrl } from '../components/MathText'
 import ProblemContent from '../components/ProblemContent'
 import { ProblemBlock, SheetHeader } from './WorksheetView'
+import { numberLabels, orderGroups, withWholeGroups } from '../lib/essayGroup'
 import type { Diff, DiffMatrix, Kind, LayoutMode, Problem, SheetOptions, ThemeKey } from '../types'
 import {
   DEFAULT_DIFF_MATRIX, DEFAULT_SHEET_OPTIONS, DIFFS, DIFF_COLOR, DIFF_LABEL,
-  LAYOUT_LABEL, TAG_PRESETS, THEMES, spacingMmOf,
+  LAYOUT_LABEL, TAG_PRESETS, THEMES, spacingMmOf, isScheduledLater,
 } from '../types'
 
 type KindFilter = 'all' | Kind
@@ -100,7 +101,7 @@ function activeTemplateKey(o: SheetOptions): string | null {
 export default function MakeWizard() {
   const store = useStore()
   const {
-    problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments,
+    problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments, removeAssignment,
     customProblems, sheetTemplates, addSheetTemplate, removeSheetTemplate, academyProfile,
   } = store
   const academyName = academyProfile.academyName?.trim() || DEFAULT_ACADEMY
@@ -152,7 +153,13 @@ export default function MakeWizard() {
   }, [gSubject])
 
   // STEP 2
-  const [items, setItems] = useState<Problem[]>([])
+  const [items, setItemsRaw] = useState<Problem[]>([])
+  // ✍️ 서술형 묶음 — 묶음의 한 문항이 담기면 본문제·하위문제 전부를 본문제 뒤에 붙여 담는다 (2026-11-10)
+  const customRef = useRef<Problem[]>([])
+  const setItems = useCallback((v: Problem[] | ((prev: Problem[]) => Problem[])) =>
+    setItemsRaw(prev => withWholeGroups(typeof v === 'function' ? v(prev) : v, customRef.current)), [])
+  customRef.current = customProblems
+  const itemLabels = useMemo(() => numberLabels(items), [items])
   const [conceptIds, setConceptIds] = useState<Set<string>>(new Set())
   const [leftTab, setLeftTab] = useState<LeftTab>('summary')
   const [twinTarget, setTwinTarget] = useState<Problem | null>(null)
@@ -344,7 +351,13 @@ export default function MakeWizard() {
     })
   }
 
-  function removeItem(id: string) { setItems(prev => prev.filter(p => p.id !== id)) }
+  // 묶음의 한 문항을 빼면 묶음 전체가 빠진다 — 본문제 없이 하위문제만 남지 않게
+  function removeItem(id: string) {
+    setItemsRaw(prev => {
+      const g = prev.find(p => p.id === id)?.groupMain
+      return prev.filter(p => p.id !== id && !(g && p.groupMain === g))
+    })
+  }
   function moveItem(idx: number, dir: -1 | 1) {
     setSortMode('user')   // 수동 이동 → 사용자 정렬
     setItems(prev => {
@@ -355,7 +368,7 @@ export default function MakeWizard() {
     })
   }
   function swapItem(oldP: Problem, newP: Problem) {
-    setItems(prev => prev.map(p => p.id === oldP.id ? newP : p))
+    setItemsRaw(prev => orderGroups(prev.map(p => p.id === oldP.id ? newP : p)))   // 교체는 묶음을 다시 채우지 않는다
     setTwinTarget(null)
   }
   function addItem(p: Problem, afterId?: string) {
@@ -412,6 +425,15 @@ export default function MakeWizard() {
       options: opts,
     }
     if (editing) {
+      // ⏰ 예약 출제된 학습지를 고치면 예약이 취소된다 (매쓰플랫 10/7 공지와 같은 규칙, 2026-11-10)
+      //    학생이 예약 때 본 적 없는 «바뀐 학습지»를 받지 않게 — 선생님이 고친 뒤 다시 예약한다.
+      const 바뀜 = editing.problemIds.join('|') !== payload.problemIds.join('|')
+      const 예약들 = assignments.filter(a => a.worksheetId === editing.id && isScheduledLater(a))
+      if (바뀜 && 예약들.length) {
+        const at = new Date(예약들[0].scheduledAt!).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+        if (!confirm(`이 학습지는 ${at} 출제 예약(${예약들.length}명)이 걸려 있습니다.\n문제를 바꿔 저장하면 예약이 취소됩니다. 저장한 뒤 다시 예약해 주세요.\n\n저장할까요?`)) return
+        for (const a of 예약들) removeAssignment(a.worksheetId, a.studentId, a.kind)
+      }
       updateWorksheet(editing.id, payload)
       nav(`/worksheet/${editing.id}${suffix}`)
     } else {
@@ -511,6 +533,7 @@ export default function MakeWizard() {
     opts.layout === 'basic' ? (opts.wrongNoteArea ? 3 : 5)
     : opts.layout === 'split2' ? 2
     : opts.layout === 'split4' ? 4 : 6)
+  const previewLabels = itemLabels   // 미리보기는 items 앞부분이라 번호가 그대로 맞는다
 
   return (
     <div className="pb-24">
@@ -1456,7 +1479,7 @@ export default function MakeWizard() {
                       {previewItems.map((p, i) => (
                         <div key={p.id} className="grid grid-cols-[1fr_46%] gap-x-6"
                           style={{ marginBottom: `${previewSpacingMm}mm` }}>
-                          <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
+                          <ProblemBlock p={p} idx={i} label={previewLabels[i]} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
                           <div className="min-h-[40mm]">
                             <div className="border-t border-ink pt-1 text-[9pt] font-bold text-[#777777]">풀이</div>
                           </div>
@@ -1468,7 +1491,7 @@ export default function MakeWizard() {
                     <div className="sheet-cols mt-6">
                       {previewItems.map((p, i) => (
                         <div key={p.id} className="sheet-problem" style={{ marginBottom: `${previewSpacingMm}mm` }}>
-                          <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
+                          <ProblemBlock p={p} idx={i} label={previewLabels[i]} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
                         </div>
                       ))}
                     </div>
@@ -1481,7 +1504,7 @@ export default function MakeWizard() {
                       <div key={p.id}
                         className={`border-b border-dotted border-line pb-3 ${
                           opts.layout === 'split2' ? 'min-h-[120mm]' : opts.layout === 'split4' ? 'min-h-[105mm]' : 'min-h-[72mm]'}`}>
-                        <ProblemBlock p={p} idx={i} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
+                        <ProblemBlock p={p} idx={i} label={previewLabels[i]} caption={previewCaption(p)} themeMain={THEMES[theme].main} />
                       </div>
                     ))}
                   </div>

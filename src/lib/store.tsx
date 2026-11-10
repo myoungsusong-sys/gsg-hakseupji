@@ -766,6 +766,23 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const mergedWbItems = useMemo(() => mergeWbItems(state.wbItems, derivedWbItems), [state.wbItems, derivedWbItems])
 
+  // ⏰ 예약 출제 시각이 되면 다시 그린다 (2026-11-10) — 학생이 화면을 켜 둔 채면 예약 시각이 지나도
+  //    새로고침 전까지 안 나타났다(필터가 그릴 때의 시각만 봤다). 가장 가까운 예약 시각에 한 번 깨운다.
+  //    선생님 목록의 «출제 예약됨» 표시도 같은 때에 사라진다.
+  const [예약깨움, set예약깨움] = useState(0)
+  useEffect(() => {
+    const now = Date.now()
+    let next = Infinity
+    for (const a of state.assignments) {
+      if (!a.scheduledAt) continue
+      const t = new Date(a.scheduledAt).getTime()
+      if (t > now && t < next) next = t
+    }
+    if (!isFinite(next)) return
+    const h = setTimeout(() => set예약깨움(x => x + 1), Math.min(next - now + 1000, 2 ** 31 - 1))
+    return () => clearTimeout(h)
+  }, [state.assignments, 예약깨움])   // 깨운 뒤 그다음 예약을 다시 건다
+
   const store: Store = {
     ...state,
     // ⏰ 예약 출제 — 학생 기기는 예약 시각 전 배정을 아예 못 본다(선생님 기기는 그대로 «출제 예약됨»).

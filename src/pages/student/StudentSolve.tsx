@@ -29,6 +29,7 @@ import SolveFeedback from '../../components/student/SolveFeedback'
 import AskProblemButton from '../../components/student/AskProblemButton'
 import VideoModal from '../../components/VideoModal'
 import MathText from '../../components/MathText'
+import { numberLabels } from '../../lib/essayGroup'
 import { useStudentSelf } from './StudentShell'
 import { clearDraft, readDraft, writeDraft, readSolveIdx, writeSolveIdx, AnswerText, isImgAnswer , examOf, examGate, examLeftSec, examStartedAt, markExamStart, clearExamStart, fmtClock } from './common'
 import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
@@ -130,6 +131,9 @@ export default function StudentSolve() {
     const m = new Map(problems.map(p => [p.id, p]))
     return ws.problemIds.map(id => m.get(id)).filter((p): p is Problem => !!p)
   }, [problems, ws])
+  // ✍️ 서술형 묶음 번호 — 본문제 3번 · 하위문제 3(1)·3(2) (lib/essayGroup.ts)
+  const noOf = useMemo(() => numberLabels(list).map(l => l.short), [list])
+  const mainOf = (q: Problem) => (q.groupMain && q.groupMain !== q.id ? list.find(x => x.id === q.groupMain) : undefined)
 
   const [answers, setAnswers] = useState<Record<string, string>>(() => (wsId && readDraft(wsId)?.answers) || {})
   const [savedAt, setSavedAt] = useState<string | null>(() => (wsId && readDraft(wsId)?.at) || null)
@@ -533,7 +537,7 @@ export default function StudentSolve() {
     if (now - lastLive.current < 2000) return
     lastLive.current = now
     exportWork(q, strokes).then(img => {
-      if (img) pushLive({ studentId: me.id, name: me.name, label: `${ws!.title} · ${idx + 1}번`, img, at: Date.now() })
+      if (img) pushLive({ studentId: me.id, name: me.name, label: `${ws!.title} · ${noOf[idx] ?? idx + 1}번`, img, at: Date.now() })
     }).catch(() => { /* 스냅샷 실패는 무시(다음 스트로크에 재시도) */ })
   }
   // 잉크가 바뀔 때마다 세대·시각 갱신 (AI 코치의 '새 필기' 판정 근거)
@@ -663,7 +667,7 @@ export default function StudentSolve() {
             <div className="flex items-center gap-3">
               <button onClick={() => setIdx(i => Math.max(0, i - 1))} disabled={idx === 0}
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-lg text-ink2 hover:bg-paper2 disabled:opacity-30">←</button>
-              <b className="text-[15px]"><span className="text-pine-dark">{idx + 1}번 문제</span> <span className="font-semibold text-ink2">/ 총 {list.length} 문제</span></b>
+              <b className="text-[15px]"><span className="text-pine-dark">{noOf[idx] ?? idx + 1}번 문제</span> <span className="font-semibold text-ink2">/ 총 {list.length} 문제</span></b>
               <button onClick={() => setIdx(i => Math.min(list.length - 1, i + 1))} disabled={isLast}
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-lg text-ink2 hover:bg-paper2 disabled:opacity-30">→</button>
             </div>
@@ -703,7 +707,7 @@ export default function StudentSolve() {
                       i === idx ? 'border-pine ring-2 ring-pine/30' : 'border-line'} ${
                       a === DONT_KNOW ? 'bg-amber-soft text-amber'
                         : a ? 'bg-pine text-paper' : 'bg-white text-ink2 hover:bg-paper2'}`}>
-                    <span className="text-sm font-bold leading-5">{i + 1}</span>
+                    <span className="text-sm font-bold leading-5">{noOf[i] ?? i + 1}</span>
                     <span className="text-[9px] font-semibold tabular-nums opacity-80">{t ? fmtMS(t) : '—'}</span>
                   </button>
                 )
@@ -715,7 +719,7 @@ export default function StudentSolve() {
           <div className="rounded-2xl border border-line bg-white p-5">
             {/* 메타 + 필기 툴바 */}
             <div className="mb-3 flex flex-wrap items-center gap-2">
-              <b className="text-pine-dark">{idx + 1}번</b>
+              <b className="text-pine-dark">{noOf[idx] ?? idx + 1}번</b>
               <span className="text-xs text-ink2">{typeName(p.typeId)}</span>
               <span className="text-ink2/40">|</span>
               <span className="text-xs text-ink2">난이도 <b>{DIFF_LABEL[p.diff] ?? '중'}</b></span>
@@ -728,7 +732,7 @@ export default function StudentSolve() {
               )}
               {/* ❓ 사진 없이 이 문제 바로 질문 (2026-09-29) — 🔴 시험 중에는 숨긴다 */}
               {!exam && (
-                <AskProblemButton p={p} where="풀이 중" label={`${ws.title} · ${idx + 1}번`}
+                <AskProblemButton p={p} where="풀이 중" label={`${ws.title} · ${noOf[idx] ?? idx + 1}번`}
                   studentAnswer={cur === DONT_KNOW ? '모름' : cur && !selfMarkOf(cur) && !isImgAnswer(cur) ? cur : undefined} />
               )}
               <div className="grow" />
@@ -801,13 +805,20 @@ export default function StudentSolve() {
               size={PEN_SIZES[penSize]}
               handWrite={handWrite}
               onCommit={pushStroke}>
+              {/* ✍️ 하위문제면 본문제(제시문)를 위에 같이 보인다 — 학생이 앞 화면으로 돌아가지 않게 */}
+              {mainOf(p) && (
+                <div className="mb-3 rounded-xl border border-amber/40 bg-amber-soft/40 p-3 text-sm">
+                  <div className="mb-1 text-xs font-bold text-amber">{noOf[list.indexOf(mainOf(p)!)]}번 본문제</div>
+                  <ProblemContent p={mainOf(p)!} />
+                </div>
+              )}
               <ProblemContent p={p} />
             </InkCanvas>
 
             {/* ✏️ 풀이 쓰기 풀이창 (기본 펼침) — AI 피드백은 안에서 선택 */}
             {(cfg.solveFeedback ?? true) && (
               <div className="mt-4 border-t border-line/60 pt-3">
-                <SolveFeedback studentId={me.id} studentName={me.name} worksheetId={ws.id} label={`${ws.title} · ${idx + 1}번`} problem={p} />
+                <SolveFeedback studentId={me.id} studentName={me.name} worksheetId={ws.id} label={`${ws.title} · ${noOf[idx] ?? idx + 1}번`} problem={p} />
               </div>
             )}
 
@@ -828,7 +839,7 @@ export default function StudentSolve() {
                     </button>
                   )}
                   {cfg.showVideoBefore && p.videoUrl && (
-                    <button onClick={() => setVideo({ src: p.videoUrl!, subtitle: p.subtitleUrl, title: `${idx + 1}번 풀이영상` })}
+                    <button onClick={() => setVideo({ src: p.videoUrl!, subtitle: p.subtitleUrl, title: `${noOf[idx] ?? idx + 1}번 풀이영상` })}
                       className="rounded-lg border border-pine px-2.5 py-1 text-xs font-bold text-pine hover:bg-pine-soft">
                       ▶ 풀이영상
                     </button>
@@ -925,7 +936,7 @@ export default function StudentSolve() {
               <div className="grid gap-3">
                 {list.map((q, i) => (
                   <div key={q.id} className="flex flex-wrap items-center gap-3 rounded-xl border border-line/70 p-3">
-                    <b className="w-10 text-sm text-pine-dark">{i + 1}번</b>
+                    <b className="w-10 text-sm text-pine-dark">{noOf[i] ?? i + 1}번</b>
                     {!isMachineGradable(q) ? (
                       <WsSelfCheck key={q.id} p={q} value={answers[q.id] ?? ''} showAnswer={cfg.showAnswer !== false}
                         ai={aiMarks[q.id]} onGraded={m => setAiMarks(s => ({ ...s, [q.id]: m }))}
