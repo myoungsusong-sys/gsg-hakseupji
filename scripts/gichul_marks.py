@@ -9,12 +9,24 @@ def find_marks(d):
     cand = []   # (page, col, x, y, no)
     for pg in d:
         W, H = pg.rect.width, pg.rect.height
+        # 줄 단위로 본다(imac 11/10) — 평가원 과탐은 번호 «2.» 가 앞 문항 ①~⑤ 덩어리 끝줄에 붙어 나와 덩어리 단위로는 놓친다
+        #   덩어리 머리가 번호면 예전처럼 덩어리 위치, 아니면 덩어리 안 둘째 줄부터 번호 줄을 찾는다
         for b in pg.get_text('blocks'):
             m = num_re.match(b[4].strip())
             if not m: continue
             x0, y0 = b[0], b[1]
             if y0 < H * 0.08 or y0 > H * 0.9: continue
             cand.append((pg.number, 0 if x0 < W * 0.45 else 1, x0 / W, y0, int(m.group(1))))   # 과탐 오른쪽 단은 0.49 에서 시작
+        for b in pg.get_text('dict')['blocks']:
+            for ln in b.get('lines', [])[1:]:
+                t = ''.join(s['text'] for s in ln['spans']).strip()
+                m = num_re.match(t)
+                if not m: continue
+                sp = next(s for s in ln['spans'] if s['text'].strip())
+                x0, y0 = sp['bbox'][0], ln['bbox'][1]
+                if y0 < H * 0.08 or y0 > H * 0.9: continue
+                if any(c[0] == pg.number and c[4] == int(m.group(1)) and abs(c[3] - y0) < 20 for c in cand): continue
+                cand.append((pg.number, 0 if x0 < W * 0.45 else 1, x0 / W, y0, int(m.group(1))))
     # 단 왼쪽 끝은 판형마다 다르다(수학 약 0.10, 과탐 약 0.07·0.52) — 단마다 가장 흔한 x 를 기준으로
     left = {}
     for c in (0, 1):

@@ -16,6 +16,8 @@ ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--years', default='')
 ap.add_argument('--light', action='store_true')
 ap.add_argument('--skip-existing', action='store_true')
+ap.add_argument('--only', default='')                     # 회차 id 쉼표 목록만 (imac 11/10)
+ap.add_argument('--crops-only', action='store_true')      # 쪽 그림은 두고 문항 자르기만 다시 — 이미 붙은 tags·tw 는 번호로 이어 붙인다
 A = ap.parse_args()
 SRC, OUT = A.src, A.out
 Y0, Y1 = (map(int, A.years.split('-')) if A.years else (0, 9999))
@@ -104,11 +106,18 @@ built = 0
 for pid, p in sorted(papers.items()):
     if not p['problemPdf']: continue
     if A.skip_existing and pid in index and os.path.exists(os.path.join(OUT, pid, 'probs.json')): continue
+    if A.only and pid not in A.only.split(','): continue
     od = os.path.join(OUT, pid); os.makedirs(od, exist_ok=True)
     try:
-        p['qPages'] = render_pages(p['problemPdf'], od, 'q')
-        if p['solutionPdf']: p['sPages'] = render_pages(p['solutionPdf'], od, 's')
+        if A.crops_only and pid in index:
+            p['qPages'], p['sPages'] = index[pid]['qPages'], index[pid]['sPages']
+            old = {q['no']: q for q in json.load(open(os.path.join(od, 'probs.json')))} if os.path.exists(os.path.join(od, 'probs.json')) else {}
+        else:
+            old = {}
+            p['qPages'] = render_pages(p['problemPdf'], od, 'q')
+            if p['solutionPdf']: p['sPages'] = render_pages(p['solutionPdf'], od, 's')
         probs = crop_problems(p['problemPdf'], od, pid)
+        for q in probs: q.update({k: v for k, v in old.get(q['no'], {}).items() if k not in q})
     except Exception as e:                             # 깨진 PDF 한 개 때문에 전체가 멈추지 않게
         print('건너뜀', pid, e, flush=True); continue
     json.dump(probs, open(os.path.join(od, 'probs.json'), 'w'), ensure_ascii=False)
