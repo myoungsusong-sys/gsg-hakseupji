@@ -280,11 +280,12 @@ function Seg({ label, value, setValue, options }: {
   label: string; value: string; setValue: (v: string) => void; options: string[]
 }) {
   return (
-    <div className="flex items-center gap-1 rounded-full border border-line bg-white p-1">
-      <span className="px-2 text-xs font-bold text-ink2">{label}</span>
+    // 연도가 2006~ 로 늘어 버튼이 많으면 줄을 바꾼다(workerE 11/10)
+    <div className={`flex flex-wrap items-center gap-1 border border-line bg-white p-1 ${options.length > 10 ? 'rounded-2xl' : 'rounded-full'}`}>
+      <span className="whitespace-nowrap px-2 text-xs font-bold text-ink2">{label}</span>
       {options.map(o => (
         <button key={o} onClick={() => setValue(o)}
-          className={`rounded-full px-3 py-1 text-sm ${value === o ? 'bg-pine text-paper font-semibold' : 'text-ink2'}`}>{o}</button>
+          className={`whitespace-nowrap rounded-full px-3 py-1 text-sm ${value === o ? 'bg-pine text-paper font-semibold' : 'text-ink2'}`}>{o}</button>
       ))}
     </div>
   )
