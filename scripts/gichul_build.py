@@ -9,10 +9,13 @@ SRC, OUT = sys.argv[1], sys.argv[2]
 PAGE_W = 1100          # 쪽 그림 폭(px)
 CROP_ZOOM = 1.8        # 문항 자르기 배율
 GR = {'고1': 'g1', '고2': 'g2', '고3_N수': 'g3'}
-SUBJ = {'미적분': ('미적분', 'calc'), '확률과_통계': ('확률과통계', 'stat'), '기하': ('기하', 'geo'), '수학': (None, 'math')}
+SUBJ = {'미적분': ('미적분', 'calc'), '확률과_통계': ('확률과통계', 'stat'), '기하': ('기하', 'geo'), '수학': (None, 'math'),
+        # 과학탐구 (workerE 11/10) — area='과학' 으로 표시해 헤더 과목이 과학일 때만 보인다
+        '물리학Ⅰ': ('물리학Ⅰ', 'phy1'), '화학Ⅰ': ('화학Ⅰ', 'chem1'), '생명과학Ⅰ': ('생명과학Ⅰ', 'bio1'), '지구과학Ⅰ': ('지구과학Ⅰ', 'earth1'), '통합과학': ('통합과학', 'int')}
+SCI = {'phy1', 'chem1', 'bio1', 'earth1', 'int'}
 
 pat_mock = re.compile(r'^(\d{4})_고(\d)_(\d{1,2})월_(학평|모평)\((.+?)\)_(.+)_(문제|해설)\.pdf$')
-pat_csat = re.compile(r'^(\d{4})_(\d{4})학년도_대학수학능력시험_(.+)_홀수형_(문제|해설)\.pdf$')
+pat_csat = re.compile(r'^(\d{4})_(\d{4})학년도_대학수학능력시험_(.+?)(?:_홀수형)?_(문제|해설)\.pdf$')
 
 papers = {}
 for g in GR:
@@ -36,7 +39,8 @@ for g in GR:
             pid = f'{GR[g]}-{year}-{mtag}-{scode}'
             p = papers.setdefault(pid, {'id': pid, 'grade': '고3' if g == '고3_N수' else g, 'year': year, 'month': month,
                                         'region': region, **({'subject': sname} if sname else {}),
-                                        'problemPdf': '', 'solutionPdf': None, 'qPages': 0, 'sPages': 0, 'ext': 'jpg'})
+                                        'problemPdf': '', 'solutionPdf': None, 'qPages': 0, 'sPages': 0, 'ext': 'jpg',
+                                        **({'area': '과학'} if scode in SCI else {})})
             p['problemPdf' if part == '문제' else 'solutionPdf'] = path
 
 def render_pages(pdf, outdir, prefix):

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useSubject } from '../lib/subject'
 
 export interface ExamPaper {
   id: string
@@ -13,6 +14,7 @@ export interface ExamPaper {
   qPages: number
   sPages: number
   ext?: 'png' | 'jpg'   // 쪽 그림 확장자(없으면 png — 옛 로컬판)
+  area?: '과학'         // 과학탐구 회차 — 헤더 과목이 과학일 때만 보인다(없으면 수학)
 }
 
 // 회차 표시명: 수능/예비는 학년도(연도+1)로, 학평은 N월
@@ -79,10 +81,13 @@ function ExamList() {
   const [q, setQ] = useState('')
   const [asTable, setAsTable] = useState(false)   // 원본식 학습지 표 보기 ↔ 회차 카드
   const nav = useNavigate()
+  const [area] = useSubject()   // 헤더 과목 — 과학이면 과학탐구 회차, 그 밖엔 수학
 
   useEffect(() => {
-    fetch('/gichul/index.json').then(r => r.ok ? r.json() : []).then(setPapers).catch(() => setPapers([]))
-  }, [])
+    fetch('/gichul/index.json').then(r => r.ok ? r.json() : [])
+      .then((all: ExamPaper[]) => setPapers(all.filter(p => (p.area ?? '수학') === (area === '과학' ? '과학' : '수학'))))
+      .catch(() => setPapers([]))
+  }, [area])
 
   const years = useMemo(() => papers ? [...new Set(papers.map(p => p.year))].sort().reverse() : [], [papers])
   const subjects = useMemo(() => papers ? [...new Set(papers.map(p => p.subject).filter(Boolean))] as string[] : [], [papers])
@@ -115,7 +120,7 @@ function ExamList() {
   return (
     <div>
       <p className="mb-4 text-sm text-ink2">
-        <b className="text-ink">수능/모의고사란?</b> — 학력평가·모의평가·수능 수학 기출 문제와 해설을 정리한 학습지입니다 (<b>{papers.length}회차</b>, {years[years.length - 1]}~{years[0]}년).
+        <b className="text-ink">수능/모의고사란?</b> — 학력평가·모의평가·수능 {area === '과학' ? '과학탐구' : '수학'} 기출 문제와 해설을 정리한 학습지입니다 (<b>{papers.length}회차</b>, {years[years.length - 1]}~{years[0]}년).
         원본 이미지 그대로 열람·인쇄하고, 문항을 태깅해 문제은행에 넣습니다. (EBSi · 출처 표기)
       </p>
 
@@ -160,7 +165,7 @@ function ExamList() {
                 {p.month === '수능' && <span className="rounded bg-clay/15 px-2 py-0.5 text-xs font-bold text-clay">수능</span>}
                 <b className="text-base">{examTitle(p)}</b>
               </div>
-              <div className="text-sm text-ink2">{p.region} · 수학 · 문제 {p.qPages}p / 해설 {p.sPages}p</div>
+              <div className="text-sm text-ink2">{p.region} · {p.area ?? '수학'} · 문제 {p.qPages}p / 해설 {p.sPages}p</div>
               <div className="mt-4 flex gap-2">
                 <button onClick={() => nav(`/gichul/${p.id}`)}
                   className="rounded-lg border border-pine px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">열람·인쇄</button>

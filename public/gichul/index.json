@@ -1,5 +1,19 @@
 [
 {
+"id": "g3-2026-06-bio1",
+"grade": "고3",
+"year": "2026",
+"month": "6",
+"region": "평가원",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2026_고3_6월_모평(평가원)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_6월_모평(평가원)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 8,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2026-06-calc",
 "grade": "고3",
 "year": "2026",
@@ -11,6 +25,34 @@
 "qPages": 12,
 "sPages": 16,
 "ext": "jpg"
+},
+{
+"id": "g3-2026-06-chem1",
+"grade": "고3",
+"year": "2026",
+"month": "6",
+"region": "평가원",
+"subject": "화학Ⅰ",
+"problemPdf": "2026_고3_6월_모평(평가원)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_6월_모평(평가원)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 9,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2026-06-earth1",
+"grade": "고3",
+"year": "2026",
+"month": "6",
+"region": "평가원",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2026_고3_6월_모평(평가원)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_6월_모평(평가원)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 8,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2026-06-geo",
@@ -26,6 +68,20 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2026-06-phy1",
+"grade": "고3",
+"year": "2026",
+"month": "6",
+"region": "평가원",
+"subject": "물리학Ⅰ",
+"problemPdf": "2026_고3_6월_모평(평가원)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_6월_모평(평가원)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 9,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2026-06-stat",
 "grade": "고3",
 "year": "2026",
@@ -37,6 +93,20 @@
 "qPages": 12,
 "sPages": 14,
 "ext": "jpg"
+},
+{
+"id": "g3-2026-05-bio1",
+"grade": "고3",
+"year": "2026",
+"month": "5",
+"region": "경기",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2026_고3_5월_학평(경기)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_5월_학평(경기)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2026-05-calc",
@@ -52,6 +122,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2026-05-chem1",
+"grade": "고3",
+"year": "2026",
+"month": "5",
+"region": "경기",
+"subject": "화학Ⅰ",
+"problemPdf": "2026_고3_5월_학평(경기)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_5월_학평(경기)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2026-05-earth1",
+"grade": "고3",
+"year": "2026",
+"month": "5",
+"region": "경기",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2026_고3_5월_학평(경기)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_5월_학평(경기)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2026-05-geo",
 "grade": "고3",
 "year": "2026",
@@ -63,6 +161,20 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g3-2026-05-phy1",
+"grade": "고3",
+"year": "2026",
+"month": "5",
+"region": "경기",
+"subject": "물리학Ⅰ",
+"problemPdf": "2026_고3_5월_학평(경기)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_5월_학평(경기)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2026-05-stat",
@@ -78,6 +190,20 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2026-03-bio1",
+"grade": "고3",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2026_고3_3월_학평(서울)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_3월_학평(서울)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2026-03-calc",
 "grade": "고3",
 "year": "2026",
@@ -89,6 +215,34 @@
 "qPages": 12,
 "sPages": 6,
 "ext": "jpg"
+},
+{
+"id": "g3-2026-03-chem1",
+"grade": "고3",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"subject": "화학Ⅰ",
+"problemPdf": "2026_고3_3월_학평(서울)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_3월_학평(서울)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2026-03-earth1",
+"grade": "고3",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2026_고3_3월_학평(서울)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_3월_학평(서울)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2026-03-geo",
@@ -104,6 +258,20 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2026-03-phy1",
+"grade": "고3",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"subject": "물리학Ⅰ",
+"problemPdf": "2026_고3_3월_학평(서울)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2026_고3_3월_학평(서울)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2026-03-stat",
 "grade": "고3",
 "year": "2026",
@@ -115,6 +283,20 @@
 "qPages": 12,
 "sPages": 6,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-csat-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "수능",
+"region": "평가원",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_2026학년도_대학수학능력시험_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_2026학년도_대학수학능력시험_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 9,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-csat-calc",
@@ -130,6 +312,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-csat-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "수능",
+"region": "평가원",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_2026학년도_대학수학능력시험_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_2026학년도_대학수학능력시험_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 8,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-csat-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "수능",
+"region": "평가원",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_2026학년도_대학수학능력시험_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_2026학년도_대학수학능력시험_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 7,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-csat-geo",
 "grade": "고3",
 "year": "2025",
@@ -141,6 +351,20 @@
 "qPages": 12,
 "sPages": 18,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-csat-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "수능",
+"region": "평가원",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_2026학년도_대학수학능력시험_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_2026학년도_대학수학능력시험_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 9,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-csat-stat",
@@ -156,6 +380,20 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-10-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "10",
+"region": "서울",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_고3_10월_학평(서울)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_10월_학평(서울)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-10-calc",
 "grade": "고3",
 "year": "2025",
@@ -169,6 +407,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-10-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "10",
+"region": "서울",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_고3_10월_학평(서울)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_10월_학평(서울)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-10-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "10",
+"region": "서울",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_고3_10월_학평(서울)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_10월_학평(서울)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-10-geo",
 "grade": "고3",
 "year": "2025",
@@ -180,6 +446,20 @@
 "qPages": 12,
 "sPages": 6,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-10-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "10",
+"region": "서울",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_고3_10월_학평(서울)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_10월_학평(서울)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-10-stat",
@@ -207,6 +487,20 @@
 "ext": "jpg"
 },
 {
+"id": "g1-2025-10-int",
+"grade": "고1",
+"year": "2025",
+"month": "10",
+"region": "경기",
+"subject": "통합과학",
+"problemPdf": "2025_고1_10월_학평(경기)_통합과학_문제.pdf",
+"solutionPdf": "2025_고1_10월_학평(경기)_통합과학_해설.pdf",
+"qPages": 6,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g1-2025-10-math",
 "grade": "고1",
 "year": "2025",
@@ -217,6 +511,20 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-09-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "9",
+"region": "평가원",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_고3_9월_모평(평가원)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_9월_모평(평가원)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 11,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-09-calc",
@@ -232,6 +540,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-09-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "9",
+"region": "평가원",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_고3_9월_모평(평가원)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_9월_모평(평가원)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 8,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-09-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "9",
+"region": "평가원",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_고3_9월_모평(평가원)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_9월_모평(평가원)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 7,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-09-geo",
 "grade": "고3",
 "year": "2025",
@@ -243,6 +579,20 @@
 "qPages": 12,
 "sPages": 19,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-09-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "9",
+"region": "평가원",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_고3_9월_모평(평가원)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_9월_모평(평가원)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 10,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-09-stat",
@@ -270,6 +620,20 @@
 "ext": "jpg"
 },
 {
+"id": "g1-2025-09-int",
+"grade": "고1",
+"year": "2025",
+"month": "9",
+"region": "인천",
+"subject": "통합과학",
+"problemPdf": "2025_고1_9월_학평(인천)_통합과학_문제.pdf",
+"solutionPdf": "2025_고1_9월_학평(인천)_통합과학_해설.pdf",
+"qPages": 6,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g1-2025-09-math",
 "grade": "고1",
 "year": "2025",
@@ -280,6 +644,20 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-07-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "7",
+"region": "인천",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_고3_7월_학평(인천)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_7월_학평(인천)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-07-calc",
@@ -295,6 +673,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-07-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "7",
+"region": "인천",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_고3_7월_학평(인천)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_7월_학평(인천)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-07-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "7",
+"region": "인천",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_고3_7월_학평(인천)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_7월_학평(인천)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-07-geo",
 "grade": "고3",
 "year": "2025",
@@ -306,6 +712,20 @@
 "qPages": 12,
 "sPages": 6,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-07-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "7",
+"region": "인천",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_고3_7월_학평(인천)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_7월_학평(인천)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-07-stat",
@@ -321,6 +741,20 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-06-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "6",
+"region": "평가원",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_고3_6월_모평(평가원)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_6월_모평(평가원)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 10,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-06-calc",
 "grade": "고3",
 "year": "2025",
@@ -334,6 +768,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-06-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "6",
+"region": "평가원",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_고3_6월_모평(평가원)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_6월_모평(평가원)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 8,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-06-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "6",
+"region": "평가원",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_고3_6월_모평(평가원)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_6월_모평(평가원)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 7,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-06-geo",
 "grade": "고3",
 "year": "2025",
@@ -345,6 +807,20 @@
 "qPages": 12,
 "sPages": 29,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-06-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "6",
+"region": "평가원",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_고3_6월_모평(평가원)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_6월_모평(평가원)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 7,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-06-stat",
@@ -372,6 +848,20 @@
 "ext": "jpg"
 },
 {
+"id": "g1-2025-06-int",
+"grade": "고1",
+"year": "2025",
+"month": "6",
+"region": "부산",
+"subject": "통합과학",
+"problemPdf": "2025_고1_6월_학평(부산)_통합과학_문제.pdf",
+"solutionPdf": "2025_고1_6월_학평(부산)_통합과학_해설.pdf",
+"qPages": 6,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g1-2025-06-math",
 "grade": "고1",
 "year": "2025",
@@ -382,6 +872,20 @@
 "qPages": 12,
 "sPages": 3,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-05-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "5",
+"region": "경기",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_고3_5월_학평(경기)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_5월_학평(경기)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-05-calc",
@@ -397,6 +901,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-05-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "5",
+"region": "경기",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_고3_5월_학평(경기)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_5월_학평(경기)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-05-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "5",
+"region": "경기",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_고3_5월_학평(경기)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_5월_학평(경기)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-05-geo",
 "grade": "고3",
 "year": "2025",
@@ -408,6 +940,20 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-05-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "5",
+"region": "경기",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_고3_5월_학평(경기)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_5월_학평(경기)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-05-stat",
@@ -423,6 +969,20 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-03-bio1",
+"grade": "고3",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"subject": "생명과학Ⅰ",
+"problemPdf": "2025_고3_3월_학평(서울)_생명과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_3월_학평(서울)_생명과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-03-calc",
 "grade": "고3",
 "year": "2025",
@@ -436,6 +996,34 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-03-chem1",
+"grade": "고3",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"subject": "화학Ⅰ",
+"problemPdf": "2025_고3_3월_학평(서울)_화학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_3월_학평(서울)_화학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
+"id": "g3-2025-03-earth1",
+"grade": "고3",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"subject": "지구과학Ⅰ",
+"problemPdf": "2025_고3_3월_학평(서울)_지구과학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_3월_학평(서울)_지구과학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
+},
+{
 "id": "g3-2025-03-geo",
 "grade": "고3",
 "year": "2025",
@@ -447,6 +1035,20 @@
 "qPages": 12,
 "sPages": 6,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-03-phy1",
+"grade": "고3",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"subject": "물리학Ⅰ",
+"problemPdf": "2025_고3_3월_학평(서울)_물리학Ⅰ_문제.pdf",
+"solutionPdf": "2025_고3_3월_학평(서울)_물리학Ⅰ_해설.pdf",
+"qPages": 4,
+"sPages": 1,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g3-2025-03-stat",
@@ -472,6 +1074,20 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g1-2025-03-int",
+"grade": "고1",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"subject": "통합과학",
+"problemPdf": "2025_고1_3월_학평(서울)_통합과학_문제.pdf",
+"solutionPdf": "2025_고1_3월_학평(서울)_통합과학_해설.pdf",
+"qPages": 4,
+"sPages": 2,
+"ext": "jpg",
+"area": "과학"
 },
 {
 "id": "g1-2025-03-math",

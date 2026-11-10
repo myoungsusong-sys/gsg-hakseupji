@@ -24,7 +24,7 @@ export default function GichulView() {
     <div>
       <div className="no-print mb-6 flex flex-wrap items-center gap-3">
         <button onClick={() => nav('/prep/csat')} className="rounded-lg border border-line px-4 py-2 text-sm">← 기출 목록</button>
-        <div className="text-sm font-bold">{p.grade} · {examTitle(p)} (수학, {p.region})</div>
+        <div className="text-sm font-bold">{p.grade} · {examTitle(p)} ({p.area ?? '수학'}, {p.region})</div>
         {p.sPages > 0 && (
           <label className="flex items-center gap-2 text-sm">
             <input type="checkbox" checked={withSolution} onChange={e => setWithSolution(e.target.checked)} className="h-4 w-4 accent-pine" />

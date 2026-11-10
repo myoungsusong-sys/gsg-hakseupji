@@ -29,7 +29,8 @@ export default function GichulTag() {
       const p = all.find(x => x.id === id) ?? null
       setPaper(p)
       if (p) {
-        const bySubj: Record<string, string> = { 기하: 'h-geo', 확률과통계: 'h-stat', 미적분: 'h-calc2' }
+        // 과탐Ⅰ(2015 개정)은 같은 이름의 22개정 과정으로 잇는다 — 2015 과탐 트리가 아직 없다(workerE 11/10)
+        const bySubj: Record<string, string> = { 기하: 'h-geo', 확률과통계: 'h-stat', 미적분: 'h-calc2', 물리학Ⅰ: 'h-phy', 화학Ⅰ: 'h-chem', 생명과학Ⅰ: 'h-bio', 지구과학Ⅰ: 'h-earth', 통합과학: 'h-int1' }
         setGradeId((p.subject && bySubj[p.subject]) || defaultCurriculumForGrade(p.grade))
       }
     }).catch(() => {})
@@ -39,7 +40,7 @@ export default function GichulTag() {
   // probs·과정 바뀌면 행 초기화
   useEffect(() => {
     if (!probs) return
-    setRows(probs.map(pr => ({ typeId: firstType, kind: pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))
+    setRows(probs.map(pr => ({ typeId: firstType, kind: paper?.area === '과학' || pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [probs, gradeId])
 
