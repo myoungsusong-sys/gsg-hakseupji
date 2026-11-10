@@ -32,7 +32,7 @@ export default function GichulView() {
           </label>
         )}
         <div className="grow" />
-        <span className="text-xs text-ink2">EBSi 학력평가 기출 · 출처 표기 후 학습용 배포</span>
+        <span className="text-xs text-ink2">{p.kind ? `${p.region} 1차 시험 수학 · 출처 표기 후 학습용 배포` : 'EBSi 학력평가 기출 · 출처 표기 후 학습용 배포'}</span>
         <button onClick={() => window.print()} className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark">🖨 인쇄 / PDF 저장</button>
       </div>
 

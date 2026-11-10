@@ -28,7 +28,7 @@ export default function GichulTwin() {
 
   useEffect(() => {
     fetch('/gichul/index.json').then(r => r.json())
-      .then((all: ExamPaper[]) => setPapers(all.filter(p => (p.area ?? '수학') === gichulArea(area))))
+      .then((all: ExamPaper[]) => setPapers(all.filter(p => !p.kind && (p.area ?? '수학') === gichulArea(area))))
       .catch(() => setPapers([]))
   }, [area])
   const paper = papers?.find(p => p.id === pid) ?? null

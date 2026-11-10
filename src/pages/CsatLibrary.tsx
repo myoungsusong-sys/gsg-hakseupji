@@ -16,6 +16,7 @@ export interface ExamPaper {
   sPages: number
   ext?: 'png' | 'jpg'   // 쪽 그림 확장자(없으면 png — 옛 로컬판)
   area?: '과학' | '영어' // 과학탐구·영어 회차 — 헤더 과목이 그 과목일 때만 보인다(없으면 수학, 영어는 mbp 11/10)
+  kind?: 'police' | 'policeTwin'   // 경찰대·사관학교 기출·쌍둥이 — 수능·모의고사 목록엔 안 보이고 제 탭에만 (workerE 11/11)
 }
 
 // 회차 표시명: 수능/예비는 학년도(연도+1)로, 학평은 N월
@@ -23,6 +24,7 @@ export interface ExamPaper {
 export function gichulArea(s: string): '수학' | '과학' | '영어' { return s === '과학' || s === '영어' ? s : '수학' }
 
 export function examTitle(p: ExamPaper): string {
+  if (p.kind) return `${p.year}년 ${p.region}${p.subject ? ` · ${p.subject}` : ''}${p.kind === 'policeTwin' ? ' 쌍둥이' : ''}`
   if (p.month === '수능') return `${Number(p.year) + 1}학년도 수능${p.subject ? ` · ${p.subject}` : ''}`
   if (p.month === '예비') return `${Number(p.year) + 1}학년도 예비시행${p.subject ? ` · ${p.subject}` : ''}`
   if (p.region === '평가원') return `${Number(p.year) + 1}학년도 ${p.month}월 모평${p.subject ? ` · ${p.subject}` : ''}`
@@ -60,12 +62,8 @@ export default function CsatLibrary() {
       {tab === 'ebs' && <Pending title="수능특강·수능완성"
         original="EBS 수능 연계교재(수능특강·수능완성)를 단원·문항 단위로 출제."
         plan="EBS 연계교재는 저작권 자료라 수록하지 않습니다. 보유 교재를 명수쌤이 정답표(문항→유형·정답)로 등록하면 '교재' 채점·드릴에 연동됩니다." />}
-      {tab === 'police' && <Pending title="경찰대·사관학교"
-        original="경찰대학·사관학교 1차 시험 수학 기출을 회차별로 제공."
-        plan="경찰대·사관학교 기출 PDF를 확보하면 학평 기출과 같은 파이프라인(렌더→문항 크롭→태깅)으로 바로 탑재합니다. 현재 EBSi 다운로드분에는 없습니다." />}
-      {tab === 'policeTwin' && <Pending title="경찰대·사관학교 쌍둥이"
-        original="경찰대·사관학교 기출의 쌍둥이(변형) 문제."
-        plan="경찰대·사관학교 기출이 탑재되고 자체 쌍둥이 뱅크가 갖춰지면 유형 매칭으로 제공합니다." />}
+      {tab === 'police' && <PoliceList kind="police" />}
+      {tab === 'policeTwin' && <PoliceList kind="policeTwin" />}
       {tab === 'kmm' && <Pending title="KMM수학경시대회"
         original="KMM 수학경시대회 기출·모의 문항."
         plan="KMM 문항 데이터를 확보하면 회차/유형별로 탑재합니다. (별도 라이선스·데이터 필요)" />}
@@ -87,7 +85,7 @@ function ExamList() {
 
   useEffect(() => {
     fetch('/gichul/index.json').then(r => r.ok ? r.json() : [])
-      .then((all: ExamPaper[]) => setPapers(all.filter(p => (p.area ?? '수학') === gichulArea(area))))
+      .then((all: ExamPaper[]) => setPapers(all.filter(p => !p.kind && (p.area ?? '수학') === gichulArea(area))))
       .catch(() => setPapers([]))
   }, [area])
 
@@ -178,6 +176,66 @@ function ExamList() {
           ))}
         </div>
       )}
+    </div>
+  )
+}
+
+/* 경찰대·사관학교 기출·쌍둥이 — 드라이브 «명수쌤의 문제은행» PDF 를 scripts/police_build.py 로 쪽·문항 그림으로 (workerE 11/11)
+   쌍둥이는 같은 회차 같은 번호의 변형 문항(원본 PDF 그대로) */
+function PoliceList({ kind }: { kind: 'police' | 'policeTwin' }) {
+  const [papers, setPapers] = useState<ExamPaper[] | null>(null)
+  const [school, setSchool] = useState('전체')
+  const [year, setYear] = useState('전체')
+  const nav = useNavigate()
+
+  useEffect(() => {
+    fetch('/gichul/index.json').then(r => r.ok ? r.json() : [])
+      .then((all: ExamPaper[]) => setPapers(all.filter(p => p.kind === kind)))
+      .catch(() => setPapers([]))
+  }, [kind])
+
+  const years = useMemo(() => papers ? [...new Set(papers.map(p => p.year))].sort().reverse() : [], [papers])
+  const list = useMemo(() => (papers ?? [])
+    .filter(p => (school === '전체' || p.region === school) && (year === '전체' || p.year === year))
+    .sort((a, b) => b.year.localeCompare(a.year) || a.id.localeCompare(b.id)), [papers, school, year])
+
+  if (papers === null) return <div className="text-ink2">목록을 불러오는 중…</div>
+  if (papers.length === 0) return (
+    <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
+      이 배포판에는 경찰대·사관학교 회차가 들어 있지 않습니다.
+    </div>
+  )
+
+  return (
+    <div>
+      <p className="mb-4 text-sm text-ink2">
+        <b className="text-ink">{kind === 'police' ? '경찰대·사관학교 기출' : '경찰대·사관학교 쌍둥이'}</b> — 경찰대학 1차(25문항)·사관학교 1차 수학(미적분·확률과 통계, 30문항)
+        {kind === 'police' ? ' 기출 원본과 빠른정답·해설' : ' 기출과 같은 번호의 변형 문제와 빠른정답·해설'}입니다 (<b>{papers.length}회차</b>, {years[years.length - 1]}~{years[0]}년).
+        열람·인쇄하고, 문항을 태깅해 문제은행에 넣습니다{kind === 'police' ? ' (유형 ⭐ 추천 붙음)' : ''}.
+      </p>
+      <div className="mb-5 flex flex-wrap items-center gap-2">
+        <Seg label="학교" value={school} setValue={setSchool} options={['전체', '경찰대학', '사관학교']} />
+        <Seg label="연도" value={year} setValue={setYear} options={['전체', ...years]} />
+        <span className="self-center text-sm text-ink2">{list.length}회차</span>
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {list.map(p => (
+          <div key={p.id} className="rounded-2xl border border-line bg-white p-5">
+            <div className="mb-1 flex items-center gap-2">
+              <span className="rounded bg-paper2 px-2 py-0.5 text-xs font-bold text-ink2">{p.grade}</span>
+              {kind === 'policeTwin' && <span className="rounded bg-amber/15 px-2 py-0.5 text-xs font-bold text-amber">쌍둥이</span>}
+              <b className="text-base">{examTitle(p)}</b>
+            </div>
+            <div className="text-sm text-ink2">{p.region} · 수학 · 문제 {p.qPages}p / 정답·해설 {p.sPages}p</div>
+            <div className="mt-4 flex gap-2">
+              <button onClick={() => nav(`/gichul/${p.id}`)}
+                className="rounded-lg border border-pine px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">열람·인쇄</button>
+              <button onClick={() => nav(`/gichul-tag/${p.id}`)}
+                className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink2 hover:border-amber hover:text-amber">문항 태깅</button>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

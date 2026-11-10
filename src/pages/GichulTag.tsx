@@ -43,7 +43,7 @@ export default function GichulTag() {
   useEffect(() => {
     if (!probs) return
     // 유형은 자동 추천 첫 번째로 미리 채움(없으면 과정 첫 유형) — 선생님은 보고 고치기만
-    setRows(probs.map(pr => ({ typeId: pr.tags?.[0]?.t ?? firstType, kind: paper?.area === '과학' || paper?.area === '영어' || pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다
+    setRows(probs.map(pr => ({ typeId: pr.tags?.[0]?.t ?? firstType, kind: paper?.area === '과학' || paper?.area === '영어' || pr.no <= (paper?.region === '경찰대학' ? 20 : 21) ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다 · 경찰대는 1~20 객관식(workerE 11/11)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [probs, gradeId])
 

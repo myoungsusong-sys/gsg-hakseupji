@@ -32,7 +32,8 @@ def candidates(p, no):
     """이 문항을 견줄 과정들 — 과목·학년·번호로 정한다."""
     s = p.get('subject') or ''
     if s in SCI_CUR: return [SCI_CUR[s]]
-    m = int(p['month']) if p['month'].isdigit() else 12
+    if p.get('region') == '경찰대학': return ['h-alg', 'h-calc1']   # 경찰대 2021~2025 = 수학Ⅰ·Ⅱ (OCR 글자에 확률·미적분 낱말 거의 0, workerE 11/11)
+    m =int(p['month']) if p['month'].isdigit() else 12
     if p['grade'] == '고1':   # 3월 = 중학 전 범위(중1~중3 트리, mbp 11/10) · 6·9월 = 공통수학1 · 10·11월 = 공통수학1·2
         return MID if m <= 3 else ['h-cm1'] if m <= 9 else ['h-cm1', 'h-cm2']
     if p['grade'] == '고2':   # 3월 = 고1 범위
