@@ -52,6 +52,7 @@ import GichulTag from './pages/GichulTag'
 import ArithmeticGen from './pages/ArithmeticGen'
 import SchoolTest from './pages/SchoolTest'
 import EngPassage from './pages/EngPassage'
+import EngReport from './pages/EngReport'
 import LecturePage from './pages/LecturePage'
 import LecNoteCheck from './pages/LecNoteCheck'
 import EssayPage from './pages/EssayPage'
@@ -179,6 +180,7 @@ function Gate() {
               <Route path="/prep/arithmetic" element={<ArithmeticGen />} />
               <Route path="/prep/essay" element={<EssayPage />} />
               <Route path="/prep/eng-passage" element={<EngPassage />} />
+              <Route path="/prep/eng-report" element={<EngReport />} />
               <Route path="/prep/lecture" element={<LecturePage />} />
               <Route path="/prep/lecnote" element={<LecNoteCheck />} />
               <Route path="/prep/share" element={
