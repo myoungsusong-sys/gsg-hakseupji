@@ -98,6 +98,18 @@ def find_groups(d):
             if m and '읽고' in t[:40]: gs.append((pg.number, 0 if b[0] < W * 0.45 else 1, b[1], int(m.group(1)), int(m.group(2))))
     return gs
 
+# 영어 묶음 발문 (workerD 11/11) — «[31～34] 다음 빈칸에…»·«[36～37] 주어진 글…»·«[38～39] 글의 흐름…»·«[16～17] 다음을 듣고» 처럼
+#   지문 없이 발문만 묶인 머리줄. 전엔 31 그림에 발문이 없고(번호·지문만) 앞 문항(30·35) 바닥에 이 머리줄이 붙어 나왔다
+#   → 머리줄 덩어리만 잘라 묶음 문항마다 맨 위에 붙이고, 앞 문항 그림은 머리줄 위에서 끊는다.
+def find_heads(d):
+    hs = []
+    for pg in d:
+        W = pg.rect.width
+        for b in pg.get_text('blocks'):
+            t = b[4].strip(); m = grp_re.match(t)
+            if m and '읽고' not in t[:40]: hs.append((pg.number, 0 if b[0] < W * 0.45 else 1, b[1], int(m.group(1)), int(m.group(2)), b[3]))
+    return hs
+
 def col_x(pg, left, col):
     W = pg.rect.width
     return (W * (left[0] - 0.02), W * min(0.493, left[1] - 0.012)) if col == 0 else (W * (left[1] - 0.008), W * (1.02 - left[0]))
@@ -123,6 +135,7 @@ def crop_problems(pdf, outdir, pid):
     seq, left = find_marks(d)
     if len(seq) < 10: return []
     groups = find_groups(d)
+    heads = find_heads(d)
     os.makedirs(os.path.join(outdir, 'probs'), exist_ok=True)
     out = []
     for i, (pn, col, y, no) in enumerate(seq):
@@ -130,10 +143,16 @@ def crop_problems(pdf, outdir, pid):
         clip = mark_rect(d, seq, left, i)
         for g in groups:                               # 단 끝 문항이 다음 묶음 머리·지문까지 먹지 않게
             if (g[0], g[1]) == (pn, col) and y < g[2] < clip.y1: clip.y1 = g[2] - 6
+        for h in heads:
+            if (h[0], h[1]) == (pn, col) and y < h[2] < clip.y1: clip.y1 = h[2] - 6
         clips = []
+        h = next((h for h in heads if h[3] <= no <= h[4]), None)
+        if h:
+            hx0, hx1 = col_x(d[h[0]], left, h[1])
+            clips.append((h[0], fitz.Rect(hx0, h[2] - 5, hx1, h[5] + 5)))
         g = next((g for g in groups if g[3] <= no <= g[4]), None)
         first = next((t for t in seq if g and t[3] == g[3]), None)
-        if g and first: clips = [c for c in passage_clips(d, left, g, first) if c[1].height > 10]
+        if g and first: clips += [c for c in passage_clips(d, left, g, first) if c[1].height > 10]
         parts = []
         for cpn, c in clips + [(pn, clip)]:
             pix = d[cpn].get_pixmap(matrix=fitz.Matrix(CROP_ZOOM, CROP_ZOOM), clip=c)
