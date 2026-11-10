@@ -23,6 +23,7 @@ PUB = os.path.dirname(os.path.abspath(A.out.rstrip('/')))   # public/
 SCI_CUR = {'물리학Ⅰ': 'h15-phy1', '화학Ⅰ': 'h15-chem1', '생명과학Ⅰ': 'h15-bio1', '지구과학Ⅰ': 'h15-earth1', '통합과학': 'h-int1'}
 # 쌍둥이용: 과탐Ⅰ 문항을 우리 문제은행이 있는 22개정 과학 트리에도 하나 붙인다(tw) — 2015 트리엔 문제은행 문항이 없다
 TWIN_CUR = {'h15-phy1': ['h-phy'], 'h15-chem1': ['h-chem', 'h-chemrxn'], 'h15-bio1': ['h-bio', 'h-biogen'], 'h15-earth1': ['h-earth', 'h-earthsys']}
+MID = ['m3-1', 'm3-2', 'm2-1', 'm2-2', 'm1-1', 'm1-2']   # 고1 3월 학평 = 중학 범위
 ELECT = {'미적분': 'h-calc2', '기하': 'h-geo', '확률과통계': 'h-stat'}
 
 def candidates(p, no):
@@ -30,8 +31,8 @@ def candidates(p, no):
     s = p.get('subject') or ''
     if s in SCI_CUR: return [SCI_CUR[s]]
     m = int(p['month']) if p['month'].isdigit() else 12
-    if p['grade'] == '고1':   # 3월 = 중학 범위(트리 없음) · 6·9월 = 공통수학1 · 10·11월 = 공통수학1·2
-        return [] if m <= 3 else ['h-cm1'] if m <= 9 else ['h-cm1', 'h-cm2']
+    if p['grade'] == '고1':   # 3월 = 중학 전 범위(중1~중3 트리, mbp 11/10) · 6·9월 = 공통수학1 · 10·11월 = 공통수학1·2
+        return MID if m <= 3 else ['h-cm1'] if m <= 9 else ['h-cm1', 'h-cm2']
     if p['grade'] == '고2':   # 3월 = 고1 범위
         return ['h-cm1', 'h-cm2'] if m <= 3 else ['h-alg', 'h-calc1', 'h-stat']
     if s in ELECT: return ['h-alg', 'h-calc1'] if no <= 22 else [ELECT[s]]   # 2022학년도~ 공통 1~22 · 선택 23~30
@@ -53,7 +54,7 @@ def toks(text):
 # ── 유형 문서 ──
 gen_body = defaultdict(list)
 for f in os.listdir(PUB):
-    if f.startswith('gen-h-') and f.endswith('.json'):
+    if (f.startswith('gen-h-') or re.match(r'gen-m\d', f)) and f.endswith('.json'):   # 중학 문항 본문도(고1 3월용)
         try: arr = json.load(open(os.path.join(PUB, f)))
         except Exception: continue
         if isinstance(arr, list):

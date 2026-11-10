@@ -10,7 +10,7 @@ for f in "$T"/*.ts; do sed -i.bak -E "s#from '(\./curriculum[^']*)'#from '\1.ts'
 cat > "$T"/dump.mjs <<'JS'
 import { CURRICULA } from './curriculum.ts'
 import fs from 'fs'
-const want = ['h-cm1','h-cm2','h-alg','h-calc1','h-stat','h-calc2','h-geo','h-int1','h-phy','h-chem','h-bio','h-earth','h-chemrxn','h-biogen','h-earthsys','h15-phy1','h15-chem1','h15-bio1','h15-earth1']
+const want = ['m1-1','m1-2','m2-1','m2-2','m3-1','m3-2','h-cm1','h-cm2','h-alg','h-calc1','h-stat','h-calc2','h-geo','h-int1','h-phy','h-chem','h-bio','h-earth','h-chemrxn','h-biogen','h-earthsys','h15-phy1','h15-chem1','h15-bio1','h15-earth1']
 const out = {}
 for (const c of CURRICULA) if (want.includes(c.id)) out[c.id] = { label: c.label, types: c.units.flatMap(u => u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => ({ id: t.id, name: t.name, sub: s.name, mid: m.name, unit: u.name }))))) }
 fs.writeFileSync(process.argv[2], JSON.stringify(out))
