@@ -5,7 +5,7 @@ import { useBrand } from '../lib/brand'
 import { useSubject } from '../lib/subject'
 import { courseIdOfType, courseTagOfType, curriculumFor, typeName } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS, type Problem } from '../types'
-import { examTitle, type ExamPaper } from './CsatLibrary'
+import { examTitle, gichulArea, type ExamPaper } from './CsatLibrary'
 
 // 모의고사 쌍둥이·유사 (workerD 11/10) — 기출은 원본 그림이라 숫자를 바꿀 수 없다.
 // 대신 문항마다 유형을 정하고(선생님이 «문항 태깅»에서 편입한 유형 → 없으면 자동 추천 유형),
@@ -28,7 +28,7 @@ export default function GichulTwin() {
 
   useEffect(() => {
     fetch('/gichul/index.json').then(r => r.json())
-      .then((all: ExamPaper[]) => setPapers(all.filter(p => (p.area ?? '수학') === (area === '과학' ? '과학' : '수학'))))
+      .then((all: ExamPaper[]) => setPapers(all.filter(p => (p.area ?? '수학') === gichulArea(area))))
       .catch(() => setPapers([]))
   }, [area])
   const paper = papers?.find(p => p.id === pid) ?? null

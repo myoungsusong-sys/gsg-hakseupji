@@ -30,8 +30,11 @@ SUBJ = {'미적분': ('미적분', 'calc'), '확률과_통계': ('확률과통�
         '수학가형-이산수학': ('수리 가형 · 이산수학', 'sgadm'), '수학가형-확률과통계': ('수리 가형 · 확률과통계', 'sgast'),
         '수학가형': ('수학 가형', 'ga'), '수학나형': ('수학 나형', 'na'), '수학A': ('수학 A형', 'ma'), '수학B': ('수학 B형', 'mb'),
         # 과학탐구 (workerE 11/10) — 2019년 시행까지 파일 이름은 «물리Ⅰ», 과목 버튼은 «물리학Ⅰ» 하나로(workerD 11/10) — area='과학' 으로 표시해 헤더 과목이 과학일 때만 보인다
-        '물리학Ⅰ': ('물리학Ⅰ', 'phy1'), '물리Ⅰ': ('물리학Ⅰ', 'phy1'), '화학Ⅰ': ('화학Ⅰ', 'chem1'), '생명과학Ⅰ': ('생명과학Ⅰ', 'bio1'), '지구과학Ⅰ': ('지구과학Ⅰ', 'earth1'), '통합과학': ('통합과학', 'int')}
+        '물리학Ⅰ': ('물리학Ⅰ', 'phy1'), '물리Ⅰ': ('물리학Ⅰ', 'phy1'), '화학Ⅰ': ('화학Ⅰ', 'chem1'), '생명과학Ⅰ': ('생명과학Ⅰ', 'bio1'), '지구과학Ⅰ': ('지구과학Ⅰ', 'earth1'), '통합과학': ('통합과학', 'int'),
+        # 영어 (mbp 11/10) — area='영어' : 헤더 과목이 영어일 때만 보인다. 과목 버튼은 없음(영어 하나)
+        '영어': (None, 'eng')}
 SCI = {'phy1', 'chem1', 'bio1', 'earth1', 'int'}
+AREA = {**{c: '과학' for c in SCI}, 'eng': '영어'}
 
 # 파일 이름이 해마다 조금씩 다르다: «2010_3월_학력평가(서울)» · «2014_고1_3월_학평_(서울)» · «2013_2013_고1_…» · «4.24_시행_수학»
 pat_mock = re.compile(r'^(\d{4})_(?:\d{4}_)?(?:고\d_)?(\d{1,2})월_(?:학평|모평|학력평가|모의평가)_?\((.+?)\)_(.+)_(문제|해설)\.pdf$')
@@ -50,6 +53,7 @@ for g in GR:
             files += [(root, f) for f in fs]
         for root, f in sorted(files):
             path, f = os.path.join(root, f), unicodedata.normalize('NFC', f)
+            f = re.sub(r' \(\d+\)\.pdf$', '.pdf', f)   # 드라이브가 붙인 «문제 (1).pdf» — 영어는 이것만 있는 회차도 있다 (mbp 11/10)
             if '짝수형' in f: continue
             if os.path.getsize(path) == 0: continue   # 드라이브 원본이 0바이트인 것(2007·2009 과탐 62개) — 없는 셈 친다
             m = pat_mock.match(f)
@@ -71,7 +75,7 @@ for g in GR:
             p = papers.setdefault(pid, {'id': pid, 'grade': '고3' if g == '고3_N수' else g, 'year': year, 'month': str(int(month)) if month.isdigit() else month,
                                         'region': region, **({'subject': sname} if sname else {}),
                                         'problemPdf': '', 'solutionPdf': None, 'qPages': 0, 'sPages': 0, 'ext': 'jpg',
-                                        **({'area': '과학'} if scode in SCI else {})})
+                                        **({'area': AREA[scode]} if scode in AREA else {})})
             p['problemPdf' if part == '문제' else 'solutionPdf'] = path
 
 def render_pages(pdf, outdir, prefix):
@@ -81,17 +85,63 @@ def render_pages(pdf, outdir, prefix):
         pg.get_pixmap(matrix=fitz.Matrix(z, z)).save(os.path.join(outdir, f'{prefix}{i + 1}.jpg'), jpg_quality=PAGE_Q)
     return len(d)
 
+# 영어 묶음 지문 (mbp 11/10) — «[41～42] 다음 글을 읽고, 물음에 답하시오.» 아래 지문을 41·42 문항 그림 위에 붙인다
+#   (안 붙이면 41 은 «윗글의 제목…» 선택지만 남는다). 지문은 머리부터 그 묶음 첫 문항 번호 위까지, 단을 넘기면 두 조각.
+grp_re = re.compile(r'^\[\s*(\d+)\s*[～~∼\-]\s*(\d+)\s*\]')
+
+def find_groups(d):
+    gs = []
+    for pg in d:
+        W, H = pg.rect.width, pg.rect.height
+        for b in pg.get_text('blocks'):
+            t = b[4].strip(); m = grp_re.match(t)
+            if m and '읽고' in t[:40]: gs.append((pg.number, 0 if b[0] < W * 0.45 else 1, b[1], int(m.group(1)), int(m.group(2))))
+    return gs
+
+def col_x(pg, left, col):
+    W = pg.rect.width
+    return (W * (left[0] - 0.02), W * min(0.493, left[1] - 0.012)) if col == 0 else (W * (left[1] - 0.008), W * (1.02 - left[0]))
+
+def passage_clips(d, left, g, first):
+    """묶음 머리 g 부터 첫 문항 표시 first(쪽, 단, y, 번호) 위까지의 [(쪽, Rect)]."""
+    pn, col, y, _, _ = g
+    fpn, fcol, fy, _ = first
+    H = d[pn].rect.height
+    if (pn, col) == (fpn, fcol): return [(pn, fitz.Rect(*col_x(d[pn], left, col)[:1], y - 6, col_x(d[pn], left, col)[1], fy - 8))]
+    x0, x1 = col_x(d[pn], left, col); fx0, fx1 = col_x(d[fpn], left, fcol)
+    # 단 바닥·꼭대기는 그 단 글자 덩어리로 — 쪽 번호 상자·머리줄(«8 홀수형»)은 빼고
+    bot = max([b[3] for b in d[pn].get_text('blocks') if b[1] >= y and b[0] >= x0 - 2 and b[2] <= x1 + 2 and b[3] < H * 0.9], default=H * 0.9)
+    top = min([b[1] for b in d[fpn].get_text('blocks') if H * 0.1 < b[1] < fy and b[0] >= fx0 - 2 and b[2] <= fx1 + 2], default=fy)
+    for r in (dr['rect'] for dr in d[pn].get_drawings()):            # 지문 상자 테두리(선)도
+        if r.y0 >= y and r.y1 < H * 0.9 and r.x0 >= x0 - 2 and r.x1 <= x1 + 2: bot = max(bot, r.y1)
+    for r in (dr['rect'] for dr in d[fpn].get_drawings()):
+        if H * 0.1 < r.y0 < fy and r.x0 >= fx0 - 2 and r.x1 <= fx1 + 2: top = min(top, r.y0)
+    return [(pn, fitz.Rect(x0, y - 6, x1, bot + 6)), (fpn, fitz.Rect(fx0, top - 6, fx1, fy - 8))]
+
 def crop_problems(pdf, outdir, pid):
     d = fitz.open(pdf)
     seq, left = find_marks(d)
     if len(seq) < 10: return []
+    groups = find_groups(d)
     os.makedirs(os.path.join(outdir, 'probs'), exist_ok=True)
     out = []
     for i, (pn, col, y, no) in enumerate(seq):
         pg = d[pn]
         clip = mark_rect(d, seq, left, i)
-        pix = pg.get_pixmap(matrix=fitz.Matrix(CROP_ZOOM, CROP_ZOOM), clip=clip)
-        im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+        for g in groups:                               # 단 끝 문항이 다음 묶음 머리·지문까지 먹지 않게
+            if (g[0], g[1]) == (pn, col) and y < g[2] < clip.y1: clip.y1 = g[2] - 6
+        clips = []
+        g = next((g for g in groups if g[3] <= no <= g[4]), None)
+        first = next((t for t in seq if g and t[3] == g[3]), None)
+        if g and first: clips = [c for c in passage_clips(d, left, g, first) if c[1].height > 10]
+        parts = []
+        for cpn, c in clips + [(pn, clip)]:
+            pix = d[cpn].get_pixmap(matrix=fitz.Matrix(CROP_ZOOM, CROP_ZOOM), clip=c)
+            parts.append(Image.frombytes('RGB', (pix.width, pix.height), pix.samples))
+        im = parts[0] if len(parts) == 1 else Image.new('RGB', (max(p.width for p in parts), sum(p.height for p in parts)), 'white')
+        if len(parts) > 1:
+            yy = 0
+            for p_ in parts: im.paste(p_, (0, yy)); yy += p_.height
         a = np.asarray(im.convert('L')) < 200          # 글자 있는 칸
         rows = np.where(a.any(1))[0]
         if len(rows) > 1:                              # 긴 빈칸(200px+) 뒤 작은 조각(쪽 번호 상자 등 40줄 미만)은 떼어 냄 (imac 11/10)

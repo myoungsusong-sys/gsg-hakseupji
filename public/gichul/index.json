@@ -95,6 +95,45 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2026-06-eng",
+"grade": "고3",
+"year": "2026",
+"month": "6",
+"region": "평가원",
+"problemPdf": "2026_고3_6월_모평(평가원)_영어_문제.pdf",
+"solutionPdf": "2026_고3_6월_모평(평가원)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 31,
+"ext": "jpg",
+"area": "영어"
+},
+{
+"id": "g2-2026-06-eng",
+"grade": "고2",
+"year": "2026",
+"month": "6",
+"region": "부산",
+"problemPdf": "2026_고2_6월_학평(부산)_영어_문제.pdf",
+"solutionPdf": "2026_고2_6월_학평(부산)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
+"id": "g1-2026-06-eng",
+"grade": "고1",
+"year": "2026",
+"month": "6",
+"region": "부산",
+"problemPdf": "2026_고1_6월_학평(부산)_영어_문제.pdf",
+"solutionPdf": "2026_고1_6월_학평(부산)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 4,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2026-05-bio1",
 "grade": "고3",
 "year": "2026",
@@ -188,6 +227,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g3-2026-05-eng",
+"grade": "고3",
+"year": "2026",
+"month": "5",
+"region": "경기",
+"problemPdf": "2026_고3_5월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2026_고3_5월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2026-03-bio1",
@@ -285,6 +337,45 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2026-03-eng",
+"grade": "고3",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"problemPdf": "2026_고3_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2026_고3_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 6,
+"ext": "jpg",
+"area": "영어"
+},
+{
+"id": "g2-2026-03-eng",
+"grade": "고2",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"problemPdf": "2026_고2_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2026_고2_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 7,
+"ext": "jpg",
+"area": "영어"
+},
+{
+"id": "g1-2026-03-eng",
+"grade": "고1",
+"year": "2026",
+"month": "3",
+"region": "서울",
+"problemPdf": "2026_고1_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2026_고1_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 7,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2025-csat-bio1",
 "grade": "고3",
 "year": "2025",
@@ -378,6 +469,19 @@
 "qPages": 12,
 "sPages": 16,
 "ext": "jpg"
+},
+{
+"id": "g3-2025-csat-eng",
+"grade": "고3",
+"year": "2025",
+"month": "수능",
+"region": "평가원",
+"problemPdf": "2025_2026학년도_대학수학능력시험_영어_홀수형_문제.pdf",
+"solutionPdf": "2025_2026학년도_대학수학능력시험_영어_홀수형_해설.pdf",
+"qPages": 8,
+"sPages": 30,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2025-10-bio1",
@@ -475,6 +579,19 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-10-eng",
+"grade": "고3",
+"year": "2025",
+"month": "10",
+"region": "서울",
+"problemPdf": "2025_고3_10월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2025_고3_10월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 4,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2025-10-math",
 "grade": "고2",
 "year": "2025",
@@ -485,6 +602,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g2-2025-10-eng",
+"grade": "고2",
+"year": "2025",
+"month": "10",
+"region": "경기",
+"problemPdf": "2025_고2_10월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2025_고2_10월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g1-2025-10-int",
@@ -511,6 +641,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g1-2025-10-eng",
+"grade": "고1",
+"year": "2025",
+"month": "10",
+"region": "경기",
+"problemPdf": "2025_고1_10월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2025_고1_10월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2025-09-bio1",
@@ -608,6 +751,19 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-09-eng",
+"grade": "고3",
+"year": "2025",
+"month": "9",
+"region": "평가원",
+"problemPdf": "2025_고3_9월_모평(평가원)_영어_문제.pdf",
+"solutionPdf": "2025_고3_9월_모평(평가원)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 30,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2025-09-math",
 "grade": "고2",
 "year": "2025",
@@ -618,6 +774,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g2-2025-09-eng",
+"grade": "고2",
+"year": "2025",
+"month": "9",
+"region": "인천",
+"problemPdf": "2025_고2_9월_학평(인천)_영어_문제.pdf",
+"solutionPdf": "2025_고2_9월_학평(인천)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g1-2025-09-int",
@@ -644,6 +813,19 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g1-2025-09-eng",
+"grade": "고1",
+"year": "2025",
+"month": "9",
+"region": "인천",
+"problemPdf": "2025_고1_9월_학평(인천)_영어_문제.pdf",
+"solutionPdf": "2025_고1_9월_학평(인천)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 4,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2025-07-bio1",
@@ -741,6 +923,19 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-07-eng",
+"grade": "고3",
+"year": "2025",
+"month": "7",
+"region": "인천",
+"problemPdf": "2025_고3_7월_학평(인천)_영어_문제.pdf",
+"solutionPdf": "2025_고3_7월_학평(인천)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2025-06-bio1",
 "grade": "고3",
 "year": "2025",
@@ -836,6 +1031,19 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-06-eng",
+"grade": "고3",
+"year": "2025",
+"month": "6",
+"region": "평가원",
+"problemPdf": "2025_고3_6월_모평(평가원)_영어_문제.pdf",
+"solutionPdf": "2025_고3_6월_모평(평가원)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 29,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2025-06-math",
 "grade": "고2",
 "year": "2025",
@@ -846,6 +1054,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g2-2025-06-eng",
+"grade": "고2",
+"year": "2025",
+"month": "6",
+"region": "부산",
+"problemPdf": "2025_고2_6월_학평(부산)_영어_문제.pdf",
+"solutionPdf": "2025_고2_6월_학평(부산)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g1-2025-06-int",
@@ -872,6 +1093,19 @@
 "qPages": 12,
 "sPages": 3,
 "ext": "jpg"
+},
+{
+"id": "g1-2025-06-eng",
+"grade": "고1",
+"year": "2025",
+"month": "6",
+"region": "부산",
+"problemPdf": "2025_고1_6월_학평(부산)_영어_문제.pdf",
+"solutionPdf": "2025_고1_6월_학평(부산)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2025-05-bio1",
@@ -969,6 +1203,19 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-05-eng",
+"grade": "고3",
+"year": "2025",
+"month": "5",
+"region": "경기",
+"problemPdf": "2025_고3_5월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2025_고3_5월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2025-03-bio1",
 "grade": "고3",
 "year": "2025",
@@ -1064,6 +1311,19 @@
 "ext": "jpg"
 },
 {
+"id": "g3-2025-03-eng",
+"grade": "고3",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"problemPdf": "2025_고3_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2025_고3_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 6,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2025-03-math",
 "grade": "고2",
 "year": "2025",
@@ -1074,6 +1334,19 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g2-2025-03-eng",
+"grade": "고2",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"problemPdf": "2025_고2_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2025_고2_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 7,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g1-2025-03-int",
@@ -1100,6 +1373,19 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g1-2025-03-eng",
+"grade": "고1",
+"year": "2025",
+"month": "3",
+"region": "서울",
+"problemPdf": "2025_고1_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2025_고1_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 6,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2024-csat-calc",
@@ -1197,6 +1483,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-csat-eng",
+"grade": "고3",
+"year": "2024",
+"month": "수능",
+"region": "평가원",
+"problemPdf": "2024_2025학년도_대학수학능력시험_영어_홀수형_문제.pdf",
+"solutionPdf": "2024_2025학년도_대학수학능력시험_영어_홀수형_해설.pdf",
+"qPages": 8,
+"sPages": 30,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2024-10-calc",
 "grade": "고3",
 "year": "2024",
@@ -1292,6 +1591,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-10-eng",
+"grade": "고3",
+"year": "2024",
+"month": "10",
+"region": "서울",
+"problemPdf": "2024_고3_10월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2024_고3_10월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2024-10-math",
 "grade": "고2",
 "year": "2024",
@@ -1304,6 +1616,19 @@
 "ext": "jpg"
 },
 {
+"id": "g2-2024-10-eng",
+"grade": "고2",
+"year": "2024",
+"month": "10",
+"region": "경기",
+"problemPdf": "2024_고2_10월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2024_고2_10월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g1-2024-10-math",
 "grade": "고1",
 "year": "2024",
@@ -1314,6 +1639,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g1-2024-10-eng",
+"grade": "고1",
+"year": "2024",
+"month": "10",
+"region": "경기",
+"problemPdf": "2024_고1_10월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2024_고1_10월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 4,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2024-09-calc",
@@ -1411,6 +1749,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-09-eng",
+"grade": "고3",
+"year": "2024",
+"month": "9",
+"region": "평가원",
+"problemPdf": "2024_고3_9월_모평(평가원)_영어_문제.pdf",
+"solutionPdf": "2024_고3_9월_모평(평가원)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 29,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2024-09-math",
 "grade": "고2",
 "year": "2024",
@@ -1423,6 +1774,19 @@
 "ext": "jpg"
 },
 {
+"id": "g2-2024-09-eng",
+"grade": "고2",
+"year": "2024",
+"month": "9",
+"region": "인천",
+"problemPdf": "2024_고2_9월_학평(인천)_영어_문제.pdf",
+"solutionPdf": "2024_고2_9월_학평(인천)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g1-2024-09-math",
 "grade": "고1",
 "year": "2024",
@@ -1433,6 +1797,19 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g1-2024-09-eng",
+"grade": "고1",
+"year": "2024",
+"month": "9",
+"region": "인천",
+"problemPdf": "2024_고1_9월_학평(인천)_영어_문제.pdf",
+"solutionPdf": "2024_고1_9월_학평(인천)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 4,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2024-07-calc",
@@ -1530,6 +1907,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-07-eng",
+"grade": "고3",
+"year": "2024",
+"month": "7",
+"region": "인천",
+"problemPdf": "2024_고3_7월_학평(인천)_영어_문제.pdf",
+"solutionPdf": "2024_고3_7월_학평(인천)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2024-06-calc",
 "grade": "고3",
 "year": "2024",
@@ -1625,6 +2015,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-06-eng",
+"grade": "고3",
+"year": "2024",
+"month": "6",
+"region": "평가원",
+"problemPdf": "2024_고3_6월_모평(평가원)_영어_문제.pdf",
+"solutionPdf": "2024_고3_6월_모평(평가원)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 29,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2024-06-math",
 "grade": "고2",
 "year": "2024",
@@ -1637,6 +2040,19 @@
 "ext": "jpg"
 },
 {
+"id": "g2-2024-06-eng",
+"grade": "고2",
+"year": "2024",
+"month": "6",
+"region": "부산",
+"problemPdf": "2024_고2_6월_학평(부산)_영어_문제.pdf",
+"solutionPdf": "2024_고2_6월_학평(부산)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g1-2024-06-math",
 "grade": "고1",
 "year": "2024",
@@ -1647,6 +2063,19 @@
 "qPages": 12,
 "sPages": 4,
 "ext": "jpg"
+},
+{
+"id": "g1-2024-06-eng",
+"grade": "고1",
+"year": "2024",
+"month": "6",
+"region": "부산",
+"problemPdf": "2024_고1_6월_학평(부산)_영어_문제.pdf",
+"solutionPdf": "2024_고1_6월_학평(부산)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2024-04-calc",
@@ -1744,6 +2173,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-04-eng",
+"grade": "고3",
+"year": "2024",
+"month": "4",
+"region": "경기",
+"problemPdf": "2024_고3_4월_학평(경기)_영어_문제.pdf",
+"solutionPdf": "2024_고3_4월_학평(경기)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 5,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g3-2024-03-calc",
 "grade": "고3",
 "year": "2024",
@@ -1839,6 +2281,19 @@
 "area": "과학"
 },
 {
+"id": "g3-2024-03-eng",
+"grade": "고3",
+"year": "2024",
+"month": "3",
+"region": "서울",
+"problemPdf": "2024_고3_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2024_고3_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 6,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g2-2024-03-math",
 "grade": "고2",
 "year": "2024",
@@ -1851,6 +2306,19 @@
 "ext": "jpg"
 },
 {
+"id": "g2-2024-03-eng",
+"grade": "고2",
+"year": "2024",
+"month": "3",
+"region": "서울",
+"problemPdf": "2024_고2_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2024_고2_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 6,
+"ext": "jpg",
+"area": "영어"
+},
+{
 "id": "g1-2024-03-math",
 "grade": "고1",
 "year": "2024",
@@ -1861,6 +2329,19 @@
 "qPages": 12,
 "sPages": 5,
 "ext": "jpg"
+},
+{
+"id": "g1-2024-03-eng",
+"grade": "고1",
+"year": "2024",
+"month": "3",
+"region": "서울",
+"problemPdf": "2024_고1_3월_학평(서울)_영어_문제.pdf",
+"solutionPdf": "2024_고1_3월_학평(서울)_영어_해설.pdf",
+"qPages": 8,
+"sPages": 7,
+"ext": "jpg",
+"area": "영어"
 },
 {
 "id": "g3-2023-csat-calc",

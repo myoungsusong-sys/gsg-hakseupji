@@ -32,7 +32,8 @@ export default function GichulTag() {
       if (p) {
         // 과탐Ⅰ 기출은 2015 개정 과탐Ⅰ 트리(h15-*)로 잇는다 — 수능특강과 같은 범위(workerE 11/10)
         const bySubj: Record<string, string> = { 기하: 'h-geo', 확률과통계: 'h-stat', 미적분: 'h-calc2', 물리학Ⅰ: 'h15-phy1', 화학Ⅰ: 'h15-chem1', 생명과학Ⅰ: 'h15-bio1', 지구과학Ⅰ: 'h15-earth1', 통합과학: 'h-int1' }
-        setGradeId((p.subject && bySubj[p.subject]) || defaultCurriculumForGrade(p.grade))
+        // 영어 기출은 고1·고2·고3 영어 유형 트리(eng-h*)로 — gen-eng-h* 문제은행과 같은 유형 (mbp 11/10)
+        setGradeId(p.area === '영어' ? `eng-h${p.grade.slice(-1)}` : (p.subject && bySubj[p.subject]) || defaultCurriculumForGrade(p.grade))
       }
     }).catch(() => {})
   }, [id])
@@ -42,7 +43,7 @@ export default function GichulTag() {
   useEffect(() => {
     if (!probs) return
     // 유형은 자동 추천 첫 번째로 미리 채움(없으면 과정 첫 유형) — 선생님은 보고 고치기만
-    setRows(probs.map(pr => ({ typeId: pr.tags?.[0]?.t ?? firstType, kind: paper?.area === '과학' || pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다
+    setRows(probs.map(pr => ({ typeId: pr.tags?.[0]?.t ?? firstType, kind: paper?.area === '과학' || paper?.area === '영어' || pr.no <= 21 ? '객관식' : '주관식', diff: 3, answer: '' })))   // 과탐은 전 문항 5지선다
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [probs, gradeId])
 
