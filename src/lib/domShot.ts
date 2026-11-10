@@ -40,6 +40,9 @@ export async function collectCss(withFonts = true): Promise<string> {
   return css
 }
 
+const CAPTURE_CSS = '\n*{scrollbar-width:none!important}*::-webkit-scrollbar{display:none!important}' +
+  '.katex,.katex-display{overflow:hidden!important}\n'
+
 /* 요소 하나를 고해상도 canvas로 캡처 */
 export async function captureNode(page: HTMLElement, ratio = 3, opts: { withFonts?: boolean; timeoutMs?: number } = {}): Promise<HTMLCanvasElement> {
   const W = page.offsetWidth, H = page.offsetHeight
@@ -58,7 +61,10 @@ export async function captureNode(page: HTMLElement, ratio = 3, opts: { withFont
     } catch { img.remove() }                                      // 실패 이미지는 제거(전체 오염 방지)
   }))
 
-  const css = await collectCss(opts.withFonts ?? true)
+  // 캡처 전용 CSS — 앱의 .katex{overflow:auto hidden} 이 foreignObject 안에서는 가로 스크롤 막대를 실제로 그린다
+  //    (√ 꼬리 SVG가 넓어 넘침 → 수식 밑 회색 둥근 막대, 화면엔 없음 · 헤드리스 크롬 실측 2026-11-10).
+  //    캡처에서는 스크롤 막대를 그리지 않고 넘친 부분만 자른다(화면과 같은 모습).
+  const css = await collectCss(opts.withFonts ?? true) + CAPTURE_CSS
   const xhtml = new XMLSerializer().serializeToString(clone)
   // ⚠️ SVG는 XML로 파싱된다 — Tailwind CSS에는 '>' '&' 같은 문자가 흔해서
   //    <style>을 그대로 넣으면 XML 파싱이 깨져 렌더가 실패한다(=페이지 렌더 실패).
