@@ -29,8 +29,8 @@ export default function GichulTag() {
       const p = all.find(x => x.id === id) ?? null
       setPaper(p)
       if (p) {
-        // 과탐Ⅰ(2015 개정)은 같은 이름의 22개정 과정으로 잇는다 — 2015 과탐 트리가 아직 없다(workerE 11/10)
-        const bySubj: Record<string, string> = { 기하: 'h-geo', 확률과통계: 'h-stat', 미적분: 'h-calc2', 물리학Ⅰ: 'h-phy', 화학Ⅰ: 'h-chem', 생명과학Ⅰ: 'h-bio', 지구과학Ⅰ: 'h-earth', 통합과학: 'h-int1' }
+        // 과탐Ⅰ 기출은 2015 개정 과탐Ⅰ 트리(h15-*)로 잇는다 — 수능특강과 같은 범위(workerE 11/10)
+        const bySubj: Record<string, string> = { 기하: 'h-geo', 확률과통계: 'h-stat', 미적분: 'h-calc2', 물리학Ⅰ: 'h15-phy1', 화학Ⅰ: 'h15-chem1', 생명과학Ⅰ: 'h15-bio1', 지구과학Ⅰ: 'h15-earth1', 통합과학: 'h-int1' }
         setGradeId((p.subject && bySubj[p.subject]) || defaultCurriculumForGrade(p.grade))
       }
     }).catch(() => {})

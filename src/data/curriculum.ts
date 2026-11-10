@@ -89,6 +89,7 @@ import { ENGBOOK_COURSES } from './curriculum-engbook'
 import { KORBOOK_COURSES } from './curriculum-korbook'
 import { ZB_COURSES } from './curriculum-zb'
 import { EXAM_COURSES } from './curriculum-exam'
+import { SCI15_PHY1, SCI15_CHEM1, SCI15_BIO1, SCI15_EARTH1 } from './curriculum-sci15'
 
 function build(id: string, grade: string, label: string, data: BigC[], subject?: '수학' | '과학' | '사회' | '역사' | '영어' | '국어'): Curriculum {
   return {
@@ -2839,6 +2840,11 @@ export const CURRICULA: Curriculum[] = [
   build("h-scihist", "고3", "과학의 역사와 문화 (22개정)", SCI_H_SCIHIST, '과학'),
   build("h-climate", "고3", "기후변화와 환경생태 (22개정)", SCI_H_CLIMATE, '과학'),
   build("h-convsci", "고3", "융합과학 탐구 (22개정)", SCI_H_CONVSCI, '과학'),
+  // 과탐Ⅰ (2015 개정) — 2027 수능·수능특강 범위. 기출 과탐 태깅이 여기에 붙는다(workerE 11/10, curriculum-sci15.ts)
+  build("h15-phy1", "고3", "물리학Ⅰ (2015개정·수능)", SCI15_PHY1, '과학'),
+  build("h15-chem1", "고3", "화학Ⅰ (2015개정·수능)", SCI15_CHEM1, '과학'),
+  build("h15-bio1", "고3", "생명과학Ⅰ (2015개정·수능)", SCI15_BIO1, '과학'),
+  build("h15-earth1", "고3", "지구과학Ⅰ (2015개정·수능)", SCI15_EARTH1, '과학'),
   // 통합사회1·2 (22개정) — 2028 수능 탐구 필수 과목. 트리는 curriculum-soc.ts (성취기준 뼈대). 2026-09-05
   build("h-soc1", "고1", "통합사회1 (22개정)", SOC1_SECTIONS, '사회'),
   build("h-soc2", "고1", "통합사회2 (22개정)", SOC2_SECTIONS, '사회'),
