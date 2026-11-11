@@ -4,7 +4,7 @@ import type { GradeResult, Problem } from '../../types'
 import { DIFF_LABEL } from '../../types'
 import { useStore } from '../../lib/store'
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
-import { zbCoursesOf } from '../../data/curriculum-zb'
+import { problemCoursesOf } from '../../data/problemCourses'
 import ProblemContent from '../../components/ProblemContent'
 import VideoModal from '../../components/VideoModal'
 import AskProblemButton from '../../components/student/AskProblemButton'
@@ -50,7 +50,7 @@ export default function StudentResult() {
   const g = ws ? latestGradingFor(gradings, me.id, ws.id) : undefined
 
   useEffect(() => {
-    if (ws) for (const c of [...coursesForWorksheet(ws.grade, ws.subject), ...zbCoursesOf(ws.problemIds)]) ensureCourse(c)
+    if (ws) for (const c of [...coursesForWorksheet(ws.grade, ws.subject), ...problemCoursesOf(ws.problemIds)]) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.grade, ws?.id])
 

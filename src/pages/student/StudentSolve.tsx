@@ -20,7 +20,7 @@ export interface AiMark {
   rubricAt?: string
 }
 import { coursesForWorksheet, typeName } from '../../data/curriculum'
-import { zbCoursesOf } from '../../data/curriculum-zb'
+import { problemCoursesOf } from '../../data/problemCourses'
 import AnswerInput, { autoCorrect, choiceAnswerCount, toggleChoice } from '../../components/student/AnswerInput'
 import { levelFromGrade } from '../../components/student/MathAnswerField'
 import ProblemContent from '../../components/ProblemContent'
@@ -103,7 +103,7 @@ export default function StudentSolve() {
   const submitRef = useRef<((auto?: boolean) => Promise<void>) | null>(null)
 
   useEffect(() => {
-    if (ws) for (const c of [...coursesForWorksheet(ws.grade, ws.subject), ...zbCoursesOf(ws.problemIds)]) ensureCourse(c)
+    if (ws) for (const c of [...coursesForWorksheet(ws.grade, ws.subject), ...problemCoursesOf(ws.problemIds)]) ensureCourse(c)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ws?.grade, ws?.id])
 

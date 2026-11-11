@@ -9,7 +9,7 @@ import VideoModal from '../components/VideoModal'
 import type { Problem } from '../types'
 import { isStaleChunkError } from '../lib/staleChunk'
 import { poolStagesFor } from '../lib/wsPools'
-import { zbCoursesOf } from '../data/curriculum-zb'
+import { problemCoursesOf } from '../data/problemCourses'
 import { zbBodyFor } from '../lib/zbPassage'
 import { probIndex } from '../lib/probIndex'
 import { mainCount, numberLabels, type NoLabel } from '../lib/essayGroup'
@@ -203,7 +203,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
      끝까지 못 찾은 문항은 빼고 조판한다 — 어떤 경우에도 멈춰 있지 않는다. */
   const stages = useMemo(() => {
     if (!ws) return []
-    const zb = zbCoursesOf(ws.problemIds)            // 📒 족보닷컴 학습지 — 문항 id 가 과정을 알려 준다
+    const zb = problemCoursesOf(ws.problemIds)            // 📒 족보닷컴 학습지 — 문항 id 가 과정을 알려 준다
     return zb.length ? [zb, ...poolStagesFor(ws.grade, ws.subject)] : poolStagesFor(ws.grade, ws.subject)
   }, [ws?.id, ws?.grade, ws?.subject])   // eslint-disable-line react-hooks/exhaustive-deps
   const missingIds = useMemo(() => {
