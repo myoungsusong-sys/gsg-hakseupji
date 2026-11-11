@@ -5,7 +5,8 @@ import { DIFF_LABEL } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
-import { typeName } from '../../data/curriculum'
+import { typeName, coursesForWorksheet } from '../../data/curriculum'
+import { problemCoursesOf } from '../../data/problemCourses'
 import MathText from '../MathText'
 import ProblemContent from '../ProblemContent'
 import VideoModal from '../VideoModal'
@@ -435,8 +436,13 @@ function SheetAnswer({ p }: { p: Problem }) {
 // 🔴 오늘 교실에서도 바로 열 수 있게 내보낸다 (명수쌤 2026-08-21: "선생님앱에 채점을 할 수 있게").
 //    수업 > 학습지 탭 안에만 있으면 선생님이 학생 → 학습지 → 채점 3단계를 거쳐야 한다.
 export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
-  const { problems, gradings, upsertGrading } = useStore()
+  const { problems, gradings, upsertGrading, ensureCourse, poolLoaded } = useStore()
   const brand = useBrand()
+  // 🔴 2026-11-11: 채점 화면이 자기 학습지의 과정 파일을 직접 부른다. 예전엔 앱이 미리 부른 것만 봐서
+  //    학생에게 아직 안 나간 내신 기출 학습지는 «0문제 · 문제은행에서 찾을 수 없습니다»로 떴다.
+  const wsCourses = useMemo(() => [...coursesForWorksheet(ws.grade, ws.subject ?? '수학'), ...problemCoursesOf(ws.problemIds)], [ws.grade, ws.subject, ws.problemIds])
+  useEffect(() => { wsCourses.forEach(c => ensureCourse(c)) }, [wsCourses])   // eslint-disable-line react-hooks/exhaustive-deps
+  const poolsPending = wsCourses.some(c => !poolLoaded.has(c))
   const list = useMemo(() => {
     const m = new Map(problems.map(p => [p.id, p]))
     return ws.problemIds.map(id => m.get(id)).filter((p): p is Problem => !!p)
@@ -699,7 +705,7 @@ export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: 
       {/* 채점판: 좌 정답 패널 + 우 ○/✕ 셀 (매쓰플랫 2열을 한 행에 통합 — 학생 1명) */}
       {list.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">
-          이 학습지의 문제를 문제은행에서 찾을 수 없습니다.
+          {poolsPending ? '문제를 불러오는 중…' : '이 학습지의 문제를 문제은행에서 찾을 수 없습니다.'}
         </div>
       ) : (
         <div className="overflow-hidden rounded-2xl border border-line bg-white">
