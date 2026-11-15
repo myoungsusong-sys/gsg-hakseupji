@@ -40,6 +40,52 @@ export interface Question {
   takenAt?: string             // 워커가 집은 시각
   seenAt?: string              // 👀 학생이 질문함에서 해설을 처음 본 시각(학생앱이 적는다)
   problem?: QnaProblem         // 📄 앱 문제에서 바로 물은 질문 — 문제 원문·정답을 같이 싣는다(사진 판독 없이 정확하게)
+  tutor?: QnaTutor             // 👩‍🏫 AI 해설로 안 끝나 튜터(사람)에게 넘긴 기록 — 가맹 튜터비 실측용(2026-11-15)
+}
+
+/** 👩‍🏫 튜터 연결 기록 — 프리미엄 파일럿에서 «튜터로 넘어간 질문 수»를 재서 건당 튜터비(가맹조건 v5: 1만 원)를 다시 정한다 */
+export interface QnaTutor {
+  at: string                   // 넘긴 시각
+  why?: string                 // 왜 넘겼나 — AI 오답 · 학생이 더 물음 · 서술/풀이 첨삭 · 기타
+}
+export const TUTOR_WHY = ['AI 오답', '학생이 더 물음', '풀이 첨삭', '기타'] as const
+export const TUTOR_FEE = 10_000           // 가맹조건 v5 건당 튜터비(원)
+export const HQ_SHARE_PER_STUDENT = 51_000 // 프리미엄 학생 1명당 본부 몫(원/월) — 이 안에서 튜터비를 낸다
+
+/** 튜터 연결 켜기/끄기 — 선생님 질문함에서 누른다(행 전체를 다시 쓰지 않고 최신 행을 읽어 tutor 칸만 바꾼다) */
+export async function setTutor(id: string, why: string | null): Promise<Question | null> {
+  if (!supabase) return null
+  const key = 접두 + id
+  const { data, error } = await supabase.from('hj_settings').select('data').eq('id', key).maybeSingle()
+  if (error) throw new Error(error.message.slice(0, 200))
+  const v = (data as any)?.data?.value as Question | undefined
+  if (!v) throw new Error('질문을 찾지 못했어요(지워졌을 수 있어요).')
+  const nv: Question = { ...v }
+  if (why) nv.tutor = { at: new Date().toISOString(), why }
+  else delete nv.tutor
+  const r = await supabase.from('hj_settings').update({ data: { __id: key, value: nv } }).eq('id', key)
+  if (r.error) throw new Error(r.error.message.slice(0, 200))
+  return nv
+}
+
+/** 튜터비 실측 — 최근 days 일 질문 중 튜터로 넘긴 비율, 학생 1명당 월 넘김 건수, 본부 몫 대비 튜터비 */
+export function tutorStats(list: Question[], days = 30) {
+  const from = Date.now() - days * 86400_000
+  const 기간 = list.filter(q => Date.parse(q.createdAt) >= from)
+  const 넘김 = 기간.filter(q => q.tutor)
+  const 학생 = new Set(기간.map(q => q.studentId)).size
+  const 월배수 = 30 / days
+  const 학생당월 = 학생 ? (넘김.length / 학생) * 월배수 : 0
+  const 학생당튜터비 = Math.round(학생당월 * TUTOR_FEE)
+  const 이유 = new Map<string, number>()
+  for (const q of 넘김) 이유.set(q.tutor!.why || '기타', (이유.get(q.tutor!.why || '기타') ?? 0) + 1)
+  return {
+    days, 질문: 기간.length, 넘김: 넘김.length, 학생,
+    비율: 기간.length ? 넘김.length / 기간.length : 0,
+    학생당월, 학생당튜터비, 본부몫: HQ_SHARE_PER_STUDENT,
+    흑자건수: Math.floor(HQ_SHARE_PER_STUDENT / TUTOR_FEE),   // 학생당 월 이 건수까지는 본부 몫 안
+    이유: [...이유.entries()].sort((a, b) => b[1] - a[1]),
+  }
 }
 
 /** 📄 문제 바로 질문(2026-09-29) — 학습지·채점 결과·승강제 화면의 문제를 사진 없이 보낸다.
