@@ -173,12 +173,27 @@ export default async function handler(req: any, res: any) {
   // 🔴 withStudent=false 면 학생 답·풀이 이미지를 **배열에 아예 넣지 않는다.**
   //    루브릭은 그 문항을 푸는 전원에게 적용되므로, 첫 학생 풀이가 기준을 물들이면
   //    그 오염이 영구히 캐시된다. "보지 마라"라고 지시하는 게 아니라 구조로 막는다.
+  // 🔴 2026-11-15 실측: 우리 사이트(gsg-hakseupji.vercel.app) 그림 주소를 Anthropic 이 robots.txt 때문에 못 가져가 400
+  //    («This URL is disallowed by the website's robots.txt file») → 채점 전체가 502. 서버가 먼저 받아 base64 로 넘긴다.
+  //    받기에 실패한 그림은 빼고(채점은 글만으로) 계속한다.
+  const imgCache = new Map<string, { media: string; data: string } | null>()
+  async function prefetch(u: unknown) {
+    if (!isHttp(u) || imgCache.has(u)) return
+    try {
+      const r = await fetch(u)
+      const ct = String(r.headers.get('content-type') ?? '').split(';')[0]
+      const buf = Buffer.from(await r.arrayBuffer())
+      imgCache.set(u, r.ok && OK_MEDIA.includes(ct) && buf.length < 4.5e6 ? { media: ct, data: buf.toString('base64') } : null)
+    } catch { imgCache.set(u, null) }
+  }
+  await Promise.all([problemImageUrl, answerImageUrl, solutionImageUrl].map(prefetch))
   function buildContent(withStudent: boolean): any[] {
     const content: any[] = []
-    const push = (label: string, url: string) => content.push(
-      { type: 'text', text: label },
-      { type: 'image', source: { type: 'url', url } },
-    )
+    const push = (label: string, url: string) => {
+      const im = imgCache.get(url)
+      if (!im) return
+      content.push({ type: 'text', text: label }, { type: 'image', source: { type: 'base64', media_type: im.media as any, data: im.data } })
+    }
     if (isHttp(problemImageUrl)) push(quiz ? '[원래 문제 이미지]' : '[문제 이미지]', problemImageUrl)
     if (problemText) content.push({ type: 'text', text: `[${quiz ? '원래 문제' : '문제'}]\n${String(problemText).slice(0, 2000)}` })
     if (answerText) content.push({ type: 'text', text: `[${quiz ? '원래 문제의 정답' : '정답'}]\n${String(answerText).slice(0, 300)}` })
