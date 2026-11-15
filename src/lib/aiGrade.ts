@@ -9,11 +9,23 @@ import { getRubric, putRubric } from './rubric'
 const isImgUrl = (a: string) => /^https?:\/\/\S+\.(png|jpe?g|gif|webp)/i.test(a) || /\.(png|jpe?g|gif|webp)$/i.test(a)
 
 export function isMachineGradable(p: Problem): boolean {
+  // 🔴 서술형(selfGrade)은 정답이 «글»로 들어 있어도 기계 대조를 하면 안 된다(2026-11-15).
+  //    예전엔 여기서 selfGrade 를 안 봐서 수업세트·시험대비 서술형이 «기계채점 가능»으로 잡혀
+  //    글로 답해도 AI 채점 길(WsSelfCheck)로 못 가고 ○/✕ 자기채점만 됐다.
+  if (p.selfGrade) return false
   const a = (p.answer ?? '').trim()
   if (!a || a === '.' || a === '-') return false      // 답 미수집(과학 등)·풀이참조
   if (isImgUrl(a)) return false                        // 이미지 정답(서술형)
   return normAnswer(a) !== ''
 }
+
+// 본문 속 그림 «[[그림:/figs/…png]]» — 글 문제(수업세트·시험대비)는 그림이 본문 안에 있어 imageUrl 이 비어 있다
+const FIG_RE = /\[\[그림:([^\]]+)\]\]/g
+function bodyFig(b?: string): string | undefined {
+  const m = (b ?? '').match(/\[\[그림:([^\]]+)\]\]/)
+  return m ? m[1].trim() : undefined
+}
+const stripFigs = (b: string) => b.replace(FIG_RE, '[그림]')
 
 // 상대 경로(/otu/… 등) → 절대 URL (서버리스가 Claude에 URL 이미지로 전달할 수 있게)
 function absUrl(u?: string): string | undefined {
@@ -40,11 +52,13 @@ export async function requestAiGrade(
   const body = {
     wantRubric: opt?.wantRubric || undefined,
     rubric: opt?.rubric,
-    problemImageUrl: absUrl(p.imageUrl),
-    problemText: !p.imageUrl && p.body ? p.body : undefined,
+    problemImageUrl: absUrl(p.imageUrl) ?? absUrl(bodyFig(p.body)),
+    problemText: !p.imageUrl && p.body ? stripFigs(p.body) : undefined,
     answerText: a && !isImgUrl(a) && a !== '.' && a !== '-' ? a : undefined,
     answerImageUrl: isImgUrl(a) ? absUrl(a) : undefined,
     solutionImageUrl: p.solution && isImgUrl(p.solution) ? absUrl(p.solution) : undefined,
+    // 글 해설 — 수업세트 서술형은 해설 끝에 «[채점 기준] … 20 % · 30 % · 50 %» 가 있다. 서버가 그대로 기준표로 옮긴다
+    solutionText: p.solution && !isImgUrl(p.solution) ? stripFigs(p.solution).slice(0, 2500) : undefined,
     studentAnswer: studentAnswer || undefined,
     workImageBase64: workImg,
     workMediaType: workImg ? 'image/jpeg' : undefined,

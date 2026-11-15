@@ -343,7 +343,11 @@ export interface GradeResult {
   criteria?: { text: string; weight: number; got: number }[]   // 채점 당시 기준 스냅샷
   rubricAt?: string      // 그때 쓴 루브릭 판본 (정본이 수정돼도 과거 점수는 안 변한다)
   feedback?: string      // 학생이 읽는 첨삭 글 (ai.reason 은 선생님용이라 학생에게 보이지 않는다)
-  feedbackBy?: 'ai' | 'teacher'
+  feedbackBy?: 'ai' | 'teacher' | 'claude'
+  // ── 클로드 2차 검수 (2026-11-15 명수쌤 «AI 채점 → 클로드가 한번 검수해서 반영») ──
+  // 워커 맥의 클로드가 15분마다 pending:'teacher' 를 검수한다. approve/fix 면 확정(pending 해제),
+  // teacher 면 pending 그대로 두고 note 만 남겨 선생님 승인 화면에 «클로드: 애매함» 으로 보인다.
+  claudeReview?: { at: string; action: 'approve' | 'fix' | 'teacher'; note: string; prevScore?: number }
 }
 
 // ── 서술형 배점 기준표(루브릭) ─────────────────────────

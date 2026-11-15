@@ -165,6 +165,11 @@ export default function AiApprovalPanel() {
                           ? <img src={r.workImg} alt="학생 풀이" className="max-h-56 w-auto max-w-full rounded-xl border border-line" />
                           : <div className="rounded-xl bg-paper2/60 px-3 py-2 text-xs text-ink2">풀이 이미지 없음 — 제출한 답: <b>{r.studentAnswer || '—'}</b></div>}
                         {r.ai?.reason && <p className="mt-2 text-xs leading-relaxed text-ink2">{r.ai.reason}</p>}
+                        {r.claudeReview && (
+                          <p className="mt-1 rounded bg-amber-soft px-2 py-1 text-xs leading-relaxed text-amber">
+                            클로드 검수: {r.claudeReview.note || '선생님 확인이 필요해요'}
+                          </p>
+                        )}
 
                         {/* ✍️ 부분점수 — 점수가 있는 문항에만. 옛 기록은 이 줄이 안 나온다 */}
                         {r.maxScore != null && (() => {

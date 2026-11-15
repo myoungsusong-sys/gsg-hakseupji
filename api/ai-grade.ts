@@ -3,6 +3,7 @@
 // 선생님 승인 큐에 올릴 verdict(정오)·근거·신뢰도를 반환한다. 학생에게 직접 노출되지 않는다.
 // 정답 근거 우선순위: ①answer 텍스트 ②answerImageUrl/solutionImageUrl(서술형·과학) ③없으면 AI가 직접 풀어 판정(신뢰도 하향).
 import Anthropic from '@anthropic-ai/sdk'
+import { createClient } from '@supabase/supabase-js'
 
 const SYSTEM = `너는 한국 수학·과학 학원의 1차 채점관이다. 학생의 답(또는 풀이 이미지)을 문제·정답과 대조해 정오를 판정한다.
 판정 결과는 선생님이 승인/수정하므로, 확신이 없으면 솔직하게 낮은 신뢰도로 보고하라.
@@ -72,6 +73,13 @@ const SYSTEM_RUBRIC = `너는 한국 중·고등 수학·과학 학원의 **채�
 - 해설에는 중간 계산값이 여럿 있다. 문제가 묻는 것을 다시 읽고 그 값을 고른다.
 - 답이 여럿이면 원문 그대로 쉼표로 잇는다(예: "1, -1").
 
+[선생님 채점 기준이 해설에 있을 때 — 가장 먼저 본다]
+[해설·채점 기준] 글에 «[채점 기준]» 이 있으면 **새로 만들지 말고 그 요소를 그대로 옮긴다.**
+- 요소 하나 = 기준 하나. 문구는 40자 안으로 줄이되 뜻을 바꾸지 마라. «~도 인정» 같은 단서는 문구에 남긴다.
+- 이때는 maxScore 를 10 으로 두고, weight = 비율(%) ÷ 10 (반올림). 합이 10이 되게 가장 큰 기준에서 맞춘다.
+- 마지막 기준이 «최종 답» 이 아니어도 된다(선생님 기준 순서를 그대로 지킨다).
+- source 는 "answerText", confidence 는 "high".
+
 [모르겠으면 만들지 마라]
 이미지가 흐리거나, 최종 답을 확정할 수 없거나, 배점 단위를 나눌 근거가 없으면
 **criteria 를 빈 배열 []** 로 두고 answer 도 빈 문자열로 둔다.
@@ -139,6 +147,8 @@ const isHttp = (u: unknown): u is string => typeof u === 'string' && /^https?:\/
 
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'POST only' }); return }
+  // 🔴 클로드 2차 검수(봇)는 Anthropic 키가 없어도 돈다 — 먼저 가른다
+  if (String(req.headers?.['x-review-key'] ?? '')) { await reviewHandler(req, res); return }
   const key = process.env.ANTHROPIC_API_KEY
   if (!key) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
 
@@ -146,6 +156,7 @@ export default async function handler(req: any, res: any) {
     mode,                                   // 'quiz' 면 확인용 객관식 만들기, 없으면 채점
     problemText, problemImageUrl,          // 문제 (텍스트 또는 이미지 URL — 과학은 이미지)
     answerText, answerImageUrl, solutionImageUrl,   // 정답 근거 (있는 것만)
+    solutionText,                           // 글 해설(수업세트 서술형은 끝에 [채점 기준] 이 있다 — 2026-11-15)
     studentAnswer,                          // 학생이 고른/쓴 답 (①~⑤·단답)
     workImageBase64, workMediaType,         // 학생 풀이 이미지 (선택)
     wantRubric,                             // true면 루브릭이 없을 때 만들어서 응답에 함께 돌려준다
@@ -174,6 +185,7 @@ export default async function handler(req: any, res: any) {
     if (isHttp(answerImageUrl)) push('[정답 이미지]', answerImageUrl)
     // quiz 모드에도 해설을 준다 — 정답 텍스트가 없는 서술형은 여기서 최종 답을 읽어야 한다
     if (isHttp(solutionImageUrl)) push(quiz ? '[해설 이미지 — 여기서 최종 답을 읽어라]' : '[해설 이미지 — 정답 판정 기준]', solutionImageUrl)
+    if (solutionText) content.push({ type: 'text', text: `[해설·채점 기준]\n${String(solutionText).slice(0, 2500)}` })
     if (withStudent && studentAnswer) content.push({ type: 'text', text: quiz
       ? `[학생이 틀리게 쓴 답 — 오답 보기 만들 때 참고]\n${String(studentAnswer).slice(0, 300)}`
       : `[학생이 제출한 답]\n${String(studentAnswer).slice(0, 300)}` })
@@ -324,5 +336,79 @@ export default async function handler(req: any, res: any) {
       return
     }
     res.status(502).json({ error: msg.slice(0, 200) })
+  }
+}
+
+
+// ── 클로드 2차 검수 (2026-11-15 명수쌤 «AI 채점 → 클로드가 한번 검수해서 반영») ──────────
+// 워커 맥의 검수 봇(구독 계정 클로드)이 15분마다 부른다. 🔴 새 api 파일을 만들지 않는다(함수 개수 한도 — 위 quiz 주석).
+//  · 헤더 x-review-key = env AI_REVIEW_KEY (24자 이상). 다르면 401.
+//  · mode 'review-list'  → 최근 14일 학습지 채점 중 pending:'teacher' 이고 아직 claudeReview 가 없는 문항 (풀이 이미지는 빼고 있다는 표시만)
+//  · mode 'review-apply' → {gId, rIdx, action:'approve'|'fix'|'teacher', score?, feedback?, note}
+//      approve = AI 점수 그대로 확정 · fix = 점수·첨삭을 고쳐 확정 · teacher = 확정하지 않고 선생님 승인 화면에 남김
+//    확정은 선생님 승인(AiApprovalPanel.decide)과 같은 규칙: pending·unknown 해제, approvedAt, correct = 만점일 때만
+async function reviewHandler(req: any, res: any) {
+  const want = String(process.env.AI_REVIEW_KEY ?? '')
+  const got = String(req.headers?.['x-review-key'] ?? '')
+  if (want.length < 24 || got !== want) { res.status(401).json({ error: 'review key' }); return }
+  const sk = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!sk) { res.status(503).json({ error: 'SUPABASE_SERVICE_ROLE_KEY 없음' }); return }
+  const sb = createClient(process.env.SUPABASE_URL || 'https://rttqkpquyzfrdxqhgqvi.supabase.co', sk, { auth: { persistSession: false } })
+  const body = await readBody(req)
+  try {
+    if (body.mode === 'review-list') {
+      const since = new Date(Date.now() - 14 * 86400e3).toISOString()
+      const out: any[] = []
+      for (let from = 0; from < 5000; from += 200) {
+        const { data, error } = await sb.from('hj_gradings').select('id, data').gte('updated_at', since).range(from, from + 199)
+        if (error) { res.status(502).json({ error: error.message }); return }
+        for (const row of data ?? []) {
+          const g: any = row.data
+          if (!g || g.source !== '학습지' || !Array.isArray(g.results)) continue
+          g.results.forEach((r: any, i: number) => {
+            if (r?.pending !== 'teacher' || r.claudeReview) return
+            out.push({
+              gId: row.id, rIdx: i, studentId: g.studentId, worksheetId: g.worksheetId, date: g.date,
+              itemId: r.itemId, typeId: r.typeId, studentAnswer: r.studentAnswer ?? '', hasWork: !!r.workImg,
+              ai: r.ai ?? null, score: r.score ?? null, maxScore: r.maxScore ?? null, criteria: r.criteria ?? null, feedback: r.feedback ?? '',
+            })
+          })
+        }
+        if (!data || data.length < 200) break
+      }
+      res.status(200).json({ items: out.slice(0, 60), total: out.length }); return
+    }
+    if (body.mode === 'review-apply') {
+      const { gId, rIdx, action } = body
+      if (!['approve', 'fix', 'teacher'].includes(action)) { res.status(400).json({ error: 'action' }); return }
+      const { data: row, error } = await sb.from('hj_gradings').select('id, data').eq('id', String(gId)).maybeSingle()
+      if (error || !row) { res.status(404).json({ error: 'grading 없음' }); return }
+      const g: any = row.data
+      const r: any = g?.results?.[Number(rIdx)]
+      if (!r || r.pending !== 'teacher') { res.status(409).json({ error: '이미 확정됨' }); return }
+      const at = new Date().toISOString()
+      const note = String(body.note ?? '').slice(0, 400)
+      const next: any = { ...r, claudeReview: { at, action, note, ...(r.score != null ? { prevScore: r.score } : {}) } }
+      if (action !== 'teacher') {
+        if (action === 'fix') {
+          if (r.maxScore != null && body.score != null) next.score = Math.max(0, Math.min(r.maxScore, Math.round(Number(body.score))))
+          if (body.feedback) { next.feedback = String(body.feedback).slice(0, 1200); next.feedbackBy = 'claude' }
+          if (Array.isArray(body.got) && Array.isArray(r.criteria) && body.got.length === r.criteria.length)
+            next.criteria = r.criteria.map((c: any, k: number) => ({ ...c, got: Math.max(0, Math.min(c.weight, Math.round(Number(body.got[k]) || 0))) }))
+        }
+        const full = next.maxScore != null ? next.score === next.maxScore
+          : action === 'fix' && typeof body.correct === 'boolean' ? body.correct : r.ai?.verdict === true
+        next.correct = !!full
+        next.unknown = undefined; next.pending = undefined; next.approvedAt = at
+        delete next.unknown; delete next.pending
+      }
+      const results = g.results.map((x: any, k: number) => k === Number(rIdx) ? next : x)
+      const { error: uerr } = await sb.from('hj_gradings').upsert({ id: row.id, data: { ...g, results }, updated_at: at })
+      if (uerr) { res.status(502).json({ error: uerr.message }); return }
+      res.status(200).json({ ok: true, correct: next.correct, score: next.score ?? null }); return
+    }
+    res.status(400).json({ error: 'mode' })
+  } catch (e: any) {
+    res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
   }
 }
