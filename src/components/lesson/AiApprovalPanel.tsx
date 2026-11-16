@@ -96,9 +96,9 @@ export default function AiApprovalPanel() {
 
   return (
     <>
-      {/* 플로팅 뱃지 (우하단) */}
+      {/* 플로팅 뱃지 (우하단) — 인쇄에선 숨긴다(고정 위치라 모든 장에 찍힌다) */}
       <button onClick={() => setOpen(true)}
-        className="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-violet-600 px-4 py-2.5 text-sm font-bold text-white shadow-lg hover:brightness-110">
+        className="no-print fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-violet-600 px-4 py-2.5 text-sm font-bold text-white shadow-lg hover:brightness-110">
         🤖 AI 채점 승인 <span className="rounded-full bg-white/25 px-2">{rows.length}</span>
       </button>
 

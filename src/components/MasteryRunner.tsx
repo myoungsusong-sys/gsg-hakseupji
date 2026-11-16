@@ -36,7 +36,7 @@ import {
  */
 
 export default function MasteryRunner({
-  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel, course,
+  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel, course, onPrint,
 }: {
   typeId: string
   typeName: string
@@ -52,6 +52,8 @@ export default function MasteryRunner({
   skipLabel?: string
   /** 어느 과정인가 — 답 입력 키패드를 초등/중등/고등에 맞춘다 */
   course?: string
+  /** 🖨 이 유형을 문제지로 출력 — 풀다가 바로 종이판으로 (2026-11-16 명수쌤 «문제지로 출력도 할수있게») */
+  onPrint?: () => void
 }) {
   // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
   const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 0))
@@ -202,7 +204,7 @@ export default function MasteryRunner({
   // ── 마스터 / 선생님 호출 ──────────────────────────────────────────────
   if (state.mastered) {
     return (
-      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
         <div className="py-10 text-center">
           <div className="text-4xl">🎉</div>
           <p className="mt-3 text-lg font-black text-pine-dark">이 유형을 마스터했습니다</p>
@@ -214,7 +216,7 @@ export default function MasteryRunner({
   }
   if (state.needsTeacher) {
     return (
-      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
         <div className="py-8 text-center">
           <div className="text-3xl">🙋</div>
           <p className="mt-3 text-base font-black text-amber">선생님을 불러 주세요</p>
@@ -236,7 +238,7 @@ export default function MasteryRunner({
   //    개념 빈칸(0층)보다는 «앞»이다. 상한에 닿았는데 새 유형의 개념만 계속 넘기게 두면 끊은 뜻이 없다.
   if (capped && judged === null && !revealed) {
     return (
-      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
         <div className="py-8 text-center">
           <div className="text-3xl">🌙</div>
           <p className="mt-3 text-base font-black text-pine-dark">오늘 몫을 다 풀었어요</p>
@@ -268,14 +270,14 @@ export default function MasteryRunner({
   // ── 0층: 개념 빈칸 ────────────────────────────────────────────────────
   if (state.floor === 0 && lecture === undefined) {
     return (
-      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
         <div className="py-10 text-center text-sm text-ink2">개념 강의를 불러오는 중…</div>
       </Frame>
     )
   }
   if (state.floor === 0 && lecture && lecStage === 'lec') {
     return (
-      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
         {msg && <Banner event={event} msg={msg} />}
         <TypeLecture lecture={lecture} watched={!!state.lecDone}
           onWatched={() => setState((s) => (s.lecDone ? s : { ...s, lecDone: true }))}
@@ -286,7 +288,7 @@ export default function MasteryRunner({
   if (state.floor === 0) {
     const b: ConceptBlank | undefined = blanks[blankIdx]
     return (
-      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
         {msg && <Banner event={event} msg={msg} />}
         {!b ? (
           <div className="py-8 text-center text-sm text-ink2">
@@ -343,7 +345,7 @@ export default function MasteryRunner({
 
   // ── 1~4층: 문제 풀이 ──────────────────────────────────────────────────
   return (
-    <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose}>
+    <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
       {msg && <Banner event={event} msg={msg} />}
       {!current ? (
         <div className="py-10 text-center text-sm text-ink2">
@@ -582,10 +584,10 @@ export default function MasteryRunner({
 
 // ── 껍데기 ────────────────────────────────────────────────────────────────
 
-function Frame({ typeName, state, top, sets, onClose, children }: {
+function Frame({ typeName, state, top, sets, onClose, onPrint, children }: {
   typeName: string; state: MasteryState; top: Floor
   sets?: TodaySet                      // 🪜 오늘 몫 — 몇 세트째 · 오늘 몇/몇 문제
-  onClose?: () => void; children: React.ReactNode
+  onClose?: () => void; onPrint?: () => void; children: React.ReactNode
 }) {
   const pct = progressPercent(state, top)
   const steps = Array.from({ length: top + 1 }, (_, i) => i as Floor)
@@ -605,9 +607,15 @@ function Frame({ typeName, state, top, sets, onClose, children }: {
             </p>
           )}
         </div>
+        {onPrint && (
+          <button type="button" onClick={onPrint} title="이 유형 문항을 종이 문제지로 인쇄"
+            className="ml-auto shrink-0 rounded-lg border border-line px-2.5 py-1 text-xs font-bold text-ink2 hover:bg-paper2">
+            🖨 문제지 출력
+          </button>
+        )}
         {onClose && (
           <button type="button" onClick={onClose}
-            className="ml-auto rounded-lg px-2 py-1 text-ink2 hover:bg-paper2">✕</button>
+            className={`${onPrint ? '' : 'ml-auto '}rounded-lg px-2 py-1 text-ink2 hover:bg-paper2`}>✕</button>
         )}
       </div>
 

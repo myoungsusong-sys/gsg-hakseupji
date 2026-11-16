@@ -124,6 +124,8 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const [typeId, setTypeId] = useState<string | null>(paramType ?? stuck?.typeId ?? null)
   useEffect(() => { if (stickyKey) writeSticky(stickyKey, { course, typeId }) }, [stickyKey, course, typeId])
   const [mode, setMode] = useState<'풀기' | '인쇄'>('풀기')
+  // 종이판 두 가지 — 목록의 «종이로» 체크는 예전처럼 승강제 종이판, 풀기 화면 🖨 단추는 문제지(그 유형 전 문항)
+  const [printKind, setPrintKind] = useState<'문제지' | '승강제'>('승강제')
 
   useEffect(() => { ensureCourse(course) }, [course])   // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -361,13 +363,14 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
 
   if (typeId && base && row) {
     if (mode === '인쇄') {
-      return <MasteryPrint typeId={typeId} typeName={row.name} base={base} pool={pool}
+      return <MasteryPrint typeId={typeId} typeName={row.name} base={base} pool={pool} initialKind={printKind}
         onClose={() => setMode('풀기')} />
     }
     return (
       <MasteryRunner
         key={typeId}
         typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId} course={course}
+        onPrint={() => { setPrintKind('문제지'); setMode('인쇄') }}
         initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 0)}
         onChange={(st: MasteryState) => {
           const logs = Array.isArray(st.log) ? st.log : []
@@ -612,7 +615,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
           className="min-w-[10rem] flex-1 rounded-lg border border-line px-3 py-2 text-sm" />
         <label className="flex items-center gap-1.5 text-sm text-ink2">
           <input type="checkbox" checked={mode === '인쇄'}
-            onChange={(e) => setMode(e.target.checked ? '인쇄' : '풀기')} />
+            onChange={(e) => { setPrintKind('승강제'); setMode(e.target.checked ? '인쇄' : '풀기') }} />
           종이로 (인쇄용)
         </label>
       </div>
