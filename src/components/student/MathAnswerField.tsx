@@ -166,7 +166,7 @@ export default function MathAnswerField({
             ))}
           </div>
           <p className="mt-1.5 text-[10px] leading-relaxed text-ink2/70">
-            키패드를 안 써도 돼요 — <b>루트2</b>=√2, <b>파이</b>=π, <b>cm2</b>=㎠, <b>&lt;=</b>=≤ 처럼 쳐도 정답으로 인정돼요.
+            키패드를 안 써도 돼요 — <b>루트2</b>=√2, <b>파이</b>=π, <b>cm2</b>=㎠, <b>&lt;=</b>=≤, <b>60도</b>=60°, <b>각abc</b>=∠ABC 처럼 쳐도 정답으로 인정돼요.
           </p>
         </div>
       )}
