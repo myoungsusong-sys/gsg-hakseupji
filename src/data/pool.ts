@@ -17,14 +17,14 @@ export const POOL_COURSES = [
   'h-hs1', 'h-hs2', 'h-s1', 'h-s2', 'h-calc15',
   // 사이언스플랫 과학 — 매쓰플랫형 Raw 문제은행(정답 포함, 자동채점). 이미지 CDN만 다름(SCI_POOL_COURSES)
   // 2026-08-15: 사이언스플랫 전 과정(중1-1~중3-2 · 통합과학1·2 = 개념 441개) 수확으로 8과정 모두 채움
-  'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
+  'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3-1', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
 ] as const
 
 // 사이언스플랫 문제은행을 쓰는 과학 과정 — 이미지 CDN이 scienceflat-contents.scienceflat.com (매쓰플랫과 다름)
 // 🔴 여기 빠지면 그 과정의 Raw 문항은 매쓰플랫 CDN 을 보게 돼 **이미지가 전부 깨진다.**
 //    완자 문항은 BASE_URL 상대경로라 이 목록과 무관하다 — 한 파일에 둘이 섞여 있어도 안전하다.
 export const SCI_POOL_COURSES: readonly string[] = [
-  'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
+  'm-sci1-1', 'm-sci1-2', 'm-sci2-1', 'm-sci2-2', 'm-sci3-1', 'm-sci3', 'm-sci3-2', 'h-int1', 'h-int2',
   // 2026-11-07: 사이언스플랫 22개정 고등 물리학·화학·생명과학 6,319문항 편입(완자 문항과 같은 파일, 유형은 우리 id 로 짝지음)
   'h-phy', 'h-chem', 'h-bio',
 ]
