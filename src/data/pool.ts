@@ -68,7 +68,8 @@ function toWanjaProblem(id: string, r: WanjaRaw): Problem {
   return {
     id, typeId: tid, kind: isC && !blank && essay !== 1 ? '객관식' : '주관식',
     diff: (diff >= 1 && diff <= 5 ? diff : 3) as Problem['diff'],
-    body: '', answer: blank ? '' : ans, source: '완자',
+    // 11/20: sci/ 는 사이언스플랫 그림을 앱에 실은 것(중3-1 22개정 — 공개 그림 서버가 403) — 출처를 완자로 적지 않는다
+    body: '', answer: blank ? '' : ans, source: img.startsWith('sci/') ? '기본 제공' : '완자',
     imageUrl: `${import.meta.env.BASE_URL}${img}`,
     solution,
     ...(blank || essay === 1 ? { selfGrade: true } : {}),
