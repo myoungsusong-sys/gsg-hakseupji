@@ -2,6 +2,17 @@ import type { Diff, DiffMatrix, Kind, Problem } from '../types'
 import { DIFFS } from '../types'
 import { autoPickable } from './pickable'
 
+// 같은 유형·같은 난이도 후보는 무작위로 섞어 고른다(피셔-예이츠).
+// 🔴 2026-11-20: 파일 순서대로 앞에서부터 고르면 문제은행 끝에 새로 더한 문항(매쓰플랫 11/18 수집분 등)이
+//    자동 출제에 거의 안 나왔다 — 초3-1 «시간의 뺄셈» 100문항을 만들면 새 문항 146개 중 0개.
+function shuffleInPlace<T>(a: T[]): T[] {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 // 매쓰플랫 방식: 선택 난이도 → 비율 매트릭스로 난이도별 목표 문항 수 산출 후,
 // 난이도 구간마다 유형(교육과정 순) 라운드로빈으로 선발. 부족분은 인접 난이도에서 보충.
 export function pickProblems(
@@ -40,6 +51,7 @@ export function pickProblems(
     for (const p of filtered) {
       if (p.diff === d && !used.has(p.id)) byType.get(p.typeId)?.push(p)
     }
+    for (const list of byType.values()) shuffleInPlace(list)
     let got = 0, round = 0
     while (got < need) {
       let any = false
