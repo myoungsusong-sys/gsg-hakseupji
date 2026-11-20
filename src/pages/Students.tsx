@@ -2130,6 +2130,7 @@ function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
   const [subjects, setSubjects] = useState<Set<string>>(new Set(teacher?.subjects ?? []))
   const [classes, setClasses] = useState<Set<string>>(new Set(teacher?.classes ?? []))
   const [memo, setMemo] = useState(teacher?.memo ?? '')
+  const [scope, setScope] = useState<'admin' | 'all' | 'mine'>(teacher?.scope ?? 'all')
   const [loginEmail, setLoginEmail] = useState(teacher?.loginEmail ?? '')
   const toggle = (set: React.Dispatch<React.SetStateAction<Set<string>>>, v: string) =>
     set(prev => { const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n })
@@ -2146,6 +2147,15 @@ function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
                 className={`rounded-full px-3 py-1.5 text-sm font-bold ${subjects.has(s) ? 'bg-pine text-paper' : 'border border-line text-ink2'}`}>{s}</button>
             ))}
           </div>
+        </Field>
+        <Field label="권한">
+          <div className="flex flex-wrap gap-1.5" data-scope>
+            {([['admin', '관리자'], ['all', '전체 학생'], ['mine', '담당 학생만']] as const).map(([k, t]) => (
+              <button key={k} onClick={() => setScope(k)}
+                className={`rounded-full px-3 py-1.5 text-sm font-bold ${scope === k ? 'bg-pine text-paper' : 'border border-line text-ink2'}`}>{t}</button>
+            ))}
+          </div>
+          <span className="mt-1 block text-xs text-ink2">«담당 학생만»이면 이 선생님이 로그인했을 때 수업 화면에 담당 반 학생만 보입니다.</span>
         </Field>
         <Field label="담당 반">
           {klassOptions.length === 0
@@ -2172,7 +2182,7 @@ function TeacherEditor({ teacher, klassOptions, onSave, onClose }: {
       </div>
       <div className="mt-5 flex justify-end gap-2">
         <button onClick={onClose} className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:bg-paper2">취소</button>
-        <button onClick={() => { if (!name.trim()) { alert('이름을 입력하세요.'); return } onSave({ name: name.trim(), phone: phone.trim() || undefined, subjects: [...subjects], classes: [...classes], memo: memo.trim() || undefined, loginEmail: loginEmail.trim().toLowerCase() || undefined, loginId: teacher?.loginId, accountCreated: teacher?.accountCreated }) }}
+        <button onClick={() => { if (!name.trim()) { alert('이름을 입력하세요.'); return } onSave({ name: name.trim(), phone: phone.trim() || undefined, subjects: [...subjects], classes: [...classes], scope, memo: memo.trim() || undefined, loginEmail: loginEmail.trim().toLowerCase() || undefined, loginId: teacher?.loginId, accountCreated: teacher?.accountCreated }) }}
           className="rounded-lg bg-pine px-5 py-2 text-sm font-bold text-paper">저장</button>
       </div>
     </Modal>

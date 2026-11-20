@@ -1,4 +1,5 @@
 import { Fragment, useMemo, useState } from 'react'
+import { homeworkCheckKey } from '../../lib/lectureLog'
 import { useStore } from '../../lib/store'
 import { isVocaGrading, vocaRangeLabel } from '../../lib/voca'
 import { dateKey, todayKey } from '../../lib/dates'
@@ -36,7 +37,7 @@ const mmdd = (d: string) => d.slice(5).replace('-', '.')
 
 // 매쓰플랫 수업>학습내역 동일 구조: 날짜 내비 + 진도 카드 + 학습 목록 + 출제 내역 + 숙제 패널 + 난이도 통계
 export default function HistoryPanel({ student }: { student: Student }) {
-  const { gradings, assignments, worksheets, workbooks, wbItems, problems, removeAssignment } = useStore()
+  const { gradings, assignments, worksheets, workbooks, wbItems, problems, removeAssignment, lectureLog, setLectureLog } = useStore()
   const [date, setDate] = useState(todayKey())
   const [rangeTo, setRangeTo] = useState<string | null>(null)   // 기간 조회 모드: date ~ rangeTo
   const [calOpen, setCalOpen] = useState(false)                 // 커스텀 달력 피커
@@ -298,7 +299,14 @@ export default function HistoryPanel({ student }: { student: Student }) {
                     <span className={`rounded px-2 py-0.5 text-xs font-bold ${a.kind === '숙제' ? BADGE_STYLE['숙제'] : 'bg-pine-soft text-pine-dark'}`}>{a.kind}</span>
                     <span className="font-semibold">{ws?.title ?? '삭제된 학습지'}</span>
                     <span className={`text-xs font-bold ${graded ? 'text-pine' : 'text-ink2'}`}>{graded ? '✓ 채점 완료' : '미채점'}</span>
+                    {lectureLog[homeworkCheckKey(a.id)] && <span className="rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark" data-hw-checked>확인함</span>}
                     <div className="grow" />
+                    {a.kind === '숙제' && (
+                      <button data-hw-check onClick={() => setLectureLog({ [homeworkCheckKey(a.id)]: lectureLog[homeworkCheckKey(a.id)] ? null : new Date().toISOString() })}
+                        className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold hover:bg-paper2">
+                        {lectureLog[homeworkCheckKey(a.id)] ? '확인 취소' : '확인하기'}
+                      </button>
+                    )}
                     {a.kind === '숙제' && (
                       <button onClick={() => cancelHomework(a.worksheetId)}
                         className="rounded-lg border border-line px-2.5 py-1 text-xs font-semibold text-clay hover:bg-red-50">

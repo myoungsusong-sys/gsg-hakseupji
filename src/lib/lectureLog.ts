@@ -25,3 +25,6 @@ export function watchOf(log: Record<string, string>, sid: string, course: string
   const [st, at] = v.split('|')
   return { state: st === 'done' ? '학습완료' : '학습중', at }
 }
+
+// 숙제 «확인» 표시 — 선생님이 손으로 찍는 완료. `h|<출제 id>` → ISO 시각 (같은 설정 칸을 함께 쓴다)
+export const homeworkCheckKey = (assignmentId: string) => `h|${assignmentId}`

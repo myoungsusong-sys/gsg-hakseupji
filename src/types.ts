@@ -208,6 +208,7 @@ export interface Teacher {
   phone?: string
   subjects?: string[]        // 담당 과목
   classes?: string[]         // 담당 반 이름
+  scope?: 'admin' | 'all' | 'mine'   // 권한 — 관리자 / 전체 학생 / 담당 학생만(수업 화면에 담당 반 학생만 보인다). 없으면 전체 학생
   loginId?: string           // 강사 계정 아이디 (t-<loginId>@teacher.gsg.app 규약)
   // 🔴 강사가 **본인 이메일로 직접 가입**한 경우의 로그인 이메일 (2026-08-21).
   //    관리자 API 가 막혀 아이디 발급이 안 될 때 강사가 스스로 가입하는 길을 텄는데,

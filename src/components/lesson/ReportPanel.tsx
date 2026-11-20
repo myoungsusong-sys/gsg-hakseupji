@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import PeriodReport from './PeriodReport'
 import { toBlob } from 'html-to-image'
 import type { Attitude, DailyNote, Grading, SavedReport, Student } from '../../types'
 import { ATTITUDE_TAGS } from '../../types'
@@ -12,7 +13,7 @@ import { typeName, typeUnitName, subjectOfType } from '../../data/curriculum'
 
 // ── 수업 > 보고서: 일일 보고지 + 월간 보고서 (즉석 실시간 생성 + 저장 목록 레이어) ──────────
 
-type Mode = 'daily' | 'monthly'
+type Mode = 'daily' | 'monthly' | 'period'
 
 const KIND_LABEL = { daily: '일일 보고지', monthly: '월간 보고서', analysis: '유형분석 보고서' } as const
 
@@ -46,7 +47,7 @@ export default function ReportPanel({ student }: { student: Student }) {
     <div>
       <div className="no-print mb-5 flex flex-wrap items-center gap-3">
         <div className="flex w-fit rounded-xl border border-line bg-white p-1 text-sm font-bold">
-          {([['daily', '일일 보고지'], ['monthly', '월간 보고서']] as [Mode, string][]).map(([m, label]) => (
+          {([['daily', '일일 보고지'], ['monthly', '월간 보고서'], ['period', '학습 보고서(기간)']] as [Mode, string][]).map(([m, label]) => (
             <button key={m} onClick={() => setMode(m)}
               className={`rounded-lg px-4 py-1.5 ${mode === m ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>
               {label}
@@ -110,7 +111,7 @@ export default function ReportPanel({ student }: { student: Student }) {
       )}
 
       {/* key에 과목 포함 — 과목을 바꾸면 편집 중이던 코멘트가 남지 않도록 새로 마운트한다 */}
-      {mode === 'daily'
+      {mode === 'period' ? <PeriodReport key={student.id} student={student} /> : mode === 'daily'
         ? <DailyReport key={`${student.id}-${subject}-${load?.n ?? 0}`} student={student} subject={subject}
             initialDate={load?.mode === 'daily' ? load.period : undefined} />
         : <MonthlyReport key={`${student.id}-${subject}-${load?.n ?? 0}`} student={student} subject={subject}

@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import { useAuth } from '../lib/auth'
+import { teacherByEmail } from '../lib/role'
 import { useSubject } from '../lib/subject'
 import type { Student } from '../types'
 import GradePanel from '../components/lesson/GradePanel'
@@ -51,8 +53,12 @@ function gradeSortKey(g: string): number {
 const ALL_GROUP = '__all__'
 
 export default function Lesson() {
-  const { students, synced } = useStore()
-  const active = students.filter(s => s.active)
+  const { students, synced, teachers } = useStore()
+  // 권한 «담당 학생만» — 로그인한 선생님의 담당 반 학생만 보인다(관리자·전체 학생·원장 계정은 모두 보임)
+  const { email } = useAuth()
+  const meT = teacherByEmail(teachers, email)
+  const mine = meT?.scope === 'mine' ? new Set(meT.classes ?? []) : null
+  const active = students.filter(s => s.active && (!mine || (!!s.klass && mine.has(s.klass))))
   const [studentId, setStudentId] = useState<string | null>(active[0]?.id ?? null)
   // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
   const [groupName, setGroupName] = useState<string | null>(null)
