@@ -473,6 +473,7 @@ export interface StudentAppConfig {
   // 🪜 승강제 하루 문제 수 — 과목 공통(2026-10-06 명수쌤). 비면 lib/masterySet.ts 의 20.
   //    이 수에 닿으면 그날 승강제는 멈추고, 다음에 와서 그 자리에서 이어 푼다(= 한 세트).
   masteryDailyCap?: number
+  lectureOpen?: boolean          // 학생앱 강의 전체공개 — 켜면 학생이 자기 학년 강의를 골라 본다(끄면 선생님이 낸 강의만)
   lab?: LabConfig                // 실험실 설정
 }
 
@@ -494,7 +495,18 @@ export interface AcademyProfile {
   contactEmail?: string   // 대표 이메일
   logo?: string           // 학원 로고 그림(dataURL, 가로 600px 이하로 줄여 저장) — 학습지 머리말 오른쪽 위에 찍힌다
   logoOff?: boolean       // 로고 사용 안 함(그림을 지우지 않고 끄기만)
+  notices?: ParentNotice[] // 학부모앱 공지 — 관리 > 추가 관리에서 쓴다. 학부모 홈에 최신순으로 보인다
   address?: string        // 교육기관 주소 — 학교별 기출을 우리 지역 학교부터 보이는 데 쓴다 (2026-11-07)
+}
+
+// 학부모앱 공지 한 건
+export interface ParentNotice {
+  id: string
+  kind: '공지' | '안내' | '행사'
+  title: string
+  body: string
+  date: string       // ISO (쓴 날)
+  hidden?: boolean   // 노출 끔
 }
 
 // 강의 진도표 — 학생×교재 1개. 수업일별로 진도(쪽 범위·단원)를 배분한 계획

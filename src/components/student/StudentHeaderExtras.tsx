@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { Student } from '../../types'
 import { useStore } from '../../lib/store'
+import DotCalendar from '../DotCalendar'
+import { getNotifyPrefs, notifyOn, setNotifyPref } from '../../lib/studentPrefs'
 import { SUPABASE_ON, supabase } from '../../lib/supabase'
 import { PREVIEW_LOCK_TITLE } from '../../pages/student/common'
 
@@ -40,7 +42,7 @@ export default function StudentHeaderExtras({ me, preview = false, onLogout }: {
   }, [assignments, worksheets, gradings, workbooks, me.id])
 
   const hasNew = useMemo(() => {
-    if (notifs.length === 0) return false
+    if (notifs.length === 0 || !notifyOn('bell')) return false
     const seen = localStorage.getItem(seenKey(me.id)) ?? ''
     return notifs[0].date > seen
   }, [notifs, me.id])
@@ -180,6 +182,17 @@ function MyPageModal({ me, preview, onLogout, onClose }: {
   const [pw1, setPw1] = useState('')
   const [pw2, setPw2] = useState('')
   const [busy, setBusy] = useState(false)
+  // 출석 현황(등원·하원 기록) · 알림 설정
+  const { dailyNotes } = useStore()
+  const attend = useMemo(() => {
+    const m = new Map<string, { checkIn?: string; checkOut?: string }>()
+    for (const n of dailyNotes) if (n.studentId === me.id && (n.checkIn || n.checkOut)) m.set(n.date, { checkIn: n.checkIn, checkOut: n.checkOut })
+    return m
+  }, [dailyNotes, me.id])
+  const attendDays = useMemo(() => new Set(attend.keys()), [attend])
+  const monthCount = useMemo(() => { const ym = new Date().toISOString().slice(0, 7); return [...attendDays].filter(d => d.startsWith(ym)).length }, [attendDays])
+  const [day, setDay] = useState<string | null>(null)
+  const [prefs, setPrefs] = useState(getNotifyPrefs)
 
   async function changePw() {
     if (preview || !supabase) return
@@ -202,6 +215,41 @@ function MyPageModal({ me, preview, onLogout, onClose }: {
           <div className="flex gap-3"><dt className="w-16 text-ink2">아이디</dt><dd className="font-semibold">{me.loginId ?? me.attendNo ?? '—'}</dd></div>
           <div className="flex gap-3"><dt className="w-16 text-ink2">출석 번호</dt><dd className="font-semibold">{me.attendNo ?? '—'}</dd></div>
         </dl>
+
+        {/* 출석 현황 — 등원·하원 기록이 있는 날에 점. 날짜를 누르면 시각 */}
+        <div className="mt-4 border-t border-line pt-4">
+          <div className="mb-2 flex items-baseline gap-2">
+            <b className="text-sm">출석 현황</b>
+            <span className="text-xs text-ink2">이번 달 {monthCount}일 출석</span>
+          </div>
+          <div className="flex flex-wrap items-start gap-4">
+            <DotCalendar dots={attendDays} selected={day} onDay={setDay} />
+            <div className="min-w-32 text-sm">
+              {day ? (
+                attend.get(day)
+                  ? <><div className="font-bold">{day.slice(5).replace('-', '월 ')}일</div>
+                      <div className="mt-1 text-ink2">등원 <b className="text-ink">{attend.get(day)!.checkIn ?? '—'}</b></div>
+                      <div className="text-ink2">하원 <b className="text-ink">{attend.get(day)!.checkOut ?? '—'}</b></div></>
+                  : <span className="text-ink2">이 날은 출석 기록이 없어요.</span>
+              ) : <span className="text-xs text-ink2">초록 점이 있는 날을 누르면 등원·하원 시각이 보여요.</span>}
+            </div>
+          </div>
+        </div>
+
+        {/* 알림 설정 — 이 기기에만 적용 */}
+        <div className="mt-4 border-t border-line pt-4">
+          <b className="text-sm">알림 설정</b>
+          <div className="mt-2 grid gap-2 text-sm">
+            {([['bell', '새 숙제·채점 완료 알림(🔔 빨간 점)'], ['sound', '해설 도착 소리·진동'], ['system', '화면 밖 알림']] as const).map(([k, label]) => (
+              <label key={k} className="flex cursor-pointer items-center justify-between gap-3">
+                <span>{label}</span>
+                <input type="checkbox" className="h-4 w-4 accent-pine" data-notify={k} checked={prefs[k]}
+                  onChange={e => { setNotifyPref(k, e.target.checked); setPrefs(getNotifyPrefs()) }} />
+              </label>
+            ))}
+          </div>
+          <p className="mt-1.5 text-xs text-ink2">지금 쓰는 기기에만 적용돼요.</p>
+        </div>
 
         {!pwMode ? (
           <div className="mt-4 flex gap-2">

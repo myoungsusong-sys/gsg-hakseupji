@@ -7,6 +7,7 @@ import { clearParentSession, fetchChildRemote, getParentSession, matchChildLocal
 import { isNowBlock, planForBlock, SUBJECT_CLS, todayDayLabel } from '../../lib/timetable'
 import { todayKey } from '../../lib/dates'
 import { BrandLogo } from '../../components/BrandMark'
+import { typeName } from '../../data/curriculum'
 
 function scoreOfDate(bundle: ChildBundle, key: string) {
   let solved = 0, correct = 0, unknown = 0, pending = 0
@@ -61,7 +62,8 @@ export default function ParentHome() {
       try {
         const b = SUPABASE_ON
           ? await fetchChildRemote(sess.name, sess.phone)
-          : matchChildLocal(store.students, store.dailyNotes, store.gradings, store.academyProfile.academyName ?? '', sess.name, sess.phone, store.ttChecks, store.lecturePlans, store.pointEntries)
+          : matchChildLocal(store.students, store.dailyNotes, store.gradings, store.academyProfile.academyName ?? '', sess.name, sess.phone, store.ttChecks, store.lecturePlans, store.pointEntries,
+              { assignments: store.assignments, worksheets: store.worksheets, savedReports: store.savedReports, notices: store.academyProfile.notices })
         if (!b) throw new Error('자녀 정보를 찾을 수 없습니다. 다시 로그인해 주세요.')
         if (alive) { setBundle(b); setLoading(false) }
       } catch (e: any) {
@@ -180,6 +182,8 @@ export default function ParentHome() {
               </div>
             </div>
 
+            <MoreCards bundle={bundle} />
+
             {/* 이번 주 푼 문제 + 최근 4주 (주별 문제 수 막대 · 정답률) */}
             {(() => {
               const wk = weeklyStats(bundle)
@@ -244,6 +248,143 @@ export default function ParentHome() {
         <p className="mt-6 text-center text-xs text-ink2">문의는 학원으로 연락 주세요. · Summit On 학부모앱</p>
       </main>
     </div>
+  )
+}
+
+// 학원 공지 · 숙제 목록 · 보고서 · 유형별 성취도 · 서술형 결과 (2026-11-20)
+function MoreCards({ bundle }: { bundle: ChildBundle }) {
+  const [openNotice, setOpenNotice] = useState<string | null>(null)
+  const notices = (bundle.notices ?? []).slice().sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5)
+  const homework = bundle.homework ?? []
+  const reports = (bundle.reports ?? []).slice().sort((a, b) => b.createdAt.localeCompare(a.createdAt)).slice(0, 8)
+  // 숙제 채점 상태 — 그 학습지의 최신 채점
+  const stateOf = (wsId: string, count: number) => {
+    let latest: ChildBundle['gradings'][number] | undefined
+    for (const g of bundle.gradings) if (g.worksheetId === wsId && (!latest || g.date > latest.date)) latest = g
+    if (!latest || latest.results.length === 0) return { label: '아직 안 함', cls: 'bg-paper2 text-ink2' }
+    const ok = latest.results.filter(r => r.correct).length
+    if (latest.results.length < count) return { label: `푸는 중 ${latest.results.length}/${count}`, cls: 'bg-amber-soft text-amber' }
+    return { label: `${Math.round(ok / latest.results.length * 100)}점`, cls: 'bg-pine-soft text-pine-dark' }
+  }
+  // 유형별 성취도 — 채점 기록의 유형별 정답률(3문제 이상 푼 유형만). 약한 순 5개 · 잘하는 순 5개
+  const types = useMemo(() => {
+    const m = new Map<string, [number, number]>()
+    for (const g of bundle.gradings) for (const r of g.results) {
+      if (!r.typeId || r.pending) continue
+      const v = m.get(r.typeId) ?? [0, 0]; v[1]++; if (r.correct) v[0]++; m.set(r.typeId, v)
+    }
+    const rows = [...m].filter(([, v]) => v[1] >= 3).map(([id, v]) => ({ id, name: typeName(id), n: v[1], rate: Math.round(v[0] / v[1] * 100) }))
+      .filter(x => x.name && x.name !== x.id)
+    return { weak: rows.slice().sort((a, b) => a.rate - b.rate || b.n - a.n).slice(0, 5), strong: rows.slice().sort((a, b) => b.rate - a.rate || b.n - a.n).slice(0, 5), total: rows.length }
+  }, [bundle.gradings])
+  // 서술형 결과 — 점수가 매겨지고 확정된 문항(최근 6개)
+  const essays = useMemo(() => {
+    const out: { date: string; score: number; max: number; feedback?: string; type: string }[] = []
+    for (const g of bundle.gradings) for (const r of g.results) {
+      if (r.score == null || r.maxScore == null || r.pending) continue
+      out.push({ date: g.date, score: r.score, max: r.maxScore, feedback: r.feedback, type: r.typeId ? typeName(r.typeId) : '' })
+    }
+    return out.sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6)
+  }, [bundle.gradings])
+  const card = 'mt-5 rounded-2xl border border-line bg-white p-5'
+  const md = (iso: string) => { const d = new Date(iso); return `${d.getMonth() + 1}/${d.getDate()}` }
+
+  return (
+    <>
+      {notices.length > 0 && (
+        <div className={card} data-card="notices">
+          <div className="mb-2 text-sm font-bold">📢 학원 공지</div>
+          <ul className="divide-y divide-line/60">
+            {notices.map(n => (
+              <li key={n.id} className="py-2">
+                <button onClick={() => setOpenNotice(openNotice === n.id ? null : n.id)} className="flex w-full items-center gap-2 text-left text-sm">
+                  <span className="shrink-0 rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark">{n.kind}</span>
+                  <span className="min-w-0 grow truncate font-semibold">{n.title}</span>
+                  <span className="shrink-0 text-xs text-ink2">{md(n.date)}</span>
+                </button>
+                {openNotice === n.id && <p className="mt-2 whitespace-pre-wrap rounded-lg bg-paper2 px-3 py-2 text-sm text-ink">{n.body}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div className={card} data-card="homework">
+        <div className="mb-2 flex items-baseline gap-2">
+          <span className="text-sm font-bold">📝 숙제·학습지</span><span className="text-xs text-ink2">최근 두 달</span>
+        </div>
+        {homework.length === 0 ? <p className="py-2 text-sm text-ink2">최근에 받은 숙제·학습지가 없습니다.</p> : (
+          <ul className="divide-y divide-line/60">
+            {homework.slice(0, 10).map(h => {
+              const s = stateOf(h.worksheetId, h.count)
+              return (
+                <li key={h.id} className="flex items-center gap-2 py-2 text-sm">
+                  <span className="w-10 shrink-0 text-xs text-ink2">{md(h.date)}</span>
+                  <span className={`shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold ${h.kind === '숙제' ? 'bg-amber-soft text-amber' : 'bg-paper2 text-ink2'}`}>{h.kind}</span>
+                  <span className="min-w-0 grow truncate">{h.title} <span className="text-xs text-ink2">{h.count}문제</span></span>
+                  <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-bold ${s.cls}`}>{s.label}</span>
+                </li>
+              )
+            })}
+          </ul>
+        )}
+      </div>
+
+      {reports.length > 0 && (
+        <div className={card} data-card="reports">
+          <div className="mb-2 text-sm font-bold">📑 보고서</div>
+          <ul className="divide-y divide-line/60">
+            {reports.map(r => (
+              <li key={r.id} className="flex items-center gap-2 py-2 text-sm">
+                <span className="shrink-0 rounded bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">{r.kind === 'daily' ? '일일' : r.kind === 'monthly' ? '월간' : '유형분석'}</span>
+                <span className="min-w-0 grow truncate font-semibold">{r.name}</span>
+                <span className="shrink-0 text-xs text-ink2">{r.period}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-xs text-ink2">일일 보고는 위 날짜를 눌러 내용을 볼 수 있어요. 월간·유형분석 보고서 원본은 선생님께 요청해 주세요.</p>
+        </div>
+      )}
+
+      {types.total > 0 && (
+        <div className={card} data-card="types">
+          <div className="mb-2 flex items-baseline gap-2"><span className="text-sm font-bold">🎯 유형별 성취도</span><span className="text-xs text-ink2">3문제 이상 푼 유형 {types.total}개</span></div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {([['더 연습할 유형', types.weak, 'bg-clay'], ['잘하는 유형', types.strong, 'bg-pine']] as const).map(([title, list, bar]) => (
+              <div key={title}>
+                <div className="mb-1.5 text-xs font-bold text-ink2">{title}</div>
+                <ul className="grid gap-1.5">
+                  {list.map(t => (
+                    <li key={t.id} className="text-xs">
+                      <div className="flex items-baseline gap-2"><span className="min-w-0 grow truncate">{t.name}</span><b className="tabular-nums">{t.rate}%</b><span className="text-ink2">{t.n}문제</span></div>
+                      <div className="mt-0.5 h-1.5 overflow-hidden rounded-full bg-paper2"><div className={`h-full rounded-full ${bar}`} style={{ width: `${t.rate}%` }} /></div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {essays.length > 0 && (
+        <div className={card} data-card="essays">
+          <div className="mb-2 text-sm font-bold">✍️ 서술형 결과</div>
+          <ul className="divide-y divide-line/60">
+            {essays.map((e, i) => (
+              <li key={i} className="py-2 text-sm">
+                <div className="flex items-baseline gap-2">
+                  <span className="w-10 shrink-0 text-xs text-ink2">{md(e.date)}</span>
+                  <span className="min-w-0 grow truncate">{e.type || '서술형 문항'}</span>
+                  <b className="tabular-nums text-pine-dark">{e.score} / {e.max}점</b>
+                </div>
+                {e.feedback && <p className="mt-1 whitespace-pre-wrap rounded-lg bg-paper2 px-3 py-2 text-xs text-ink">{e.feedback}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
   )
 }
 

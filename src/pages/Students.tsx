@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useStore } from '../lib/store'
+import { useStore, uid } from '../lib/store'
 import { ENG_BOOK_OPTIONS } from '../data/engBooks'
 import { KOR_BOOK_OPTIONS } from '../data/korBooks'
 import type { Grading, GradeResult, Student, StudentAppConfig, Teacher } from '../types'
@@ -2868,8 +2868,56 @@ const EXTRA_CARDS: ExtraCard[] = [
   { title: '실험실', kind: 'lab' },
 ]
 
+// 학부모앱 공지 — 종류·제목·내용을 적어 올리면 학부모 홈 맨 위에 최신순으로 보인다(노출 끄기·지우기)
+function ParentNoticeBox() {
+  const { academyProfile, setAcademyProfile } = useStore()
+  const list = academyProfile.notices ?? []
+  const [kind, setKind] = useState<'공지' | '안내' | '행사'>('공지')
+  const [title, setTitle] = useState('')
+  const [body, setBody] = useState('')
+  const save = (next: typeof list) => setAcademyProfile({ ...academyProfile, notices: next })
+  function add() {
+    if (!title.trim()) return
+    save([{ id: uid('pn'), kind, title: title.trim(), body: body.trim(), date: new Date().toISOString() }, ...list])
+    setTitle(''); setBody('')
+  }
+  return (
+    <div className="mb-4 rounded-2xl border border-line bg-white p-5" data-box="parent-notice">
+      <h3 className="mb-1 font-black">학부모앱 공지</h3>
+      <p className="mb-3 text-sm text-ink2">여기에 올린 공지는 학부모앱 첫 화면에 보입니다. 문자·알림톡 발송은 학원관리앱에서 합니다.</p>
+      <div className="grid gap-2 sm:grid-cols-[7rem_1fr]">
+        <select value={kind} onChange={e => setKind(e.target.value as typeof kind)} className="rounded-lg border border-line px-2 py-2 text-sm">
+          <option>공지</option><option>안내</option><option>행사</option>
+        </select>
+        <input value={title} onChange={e => setTitle(e.target.value)} placeholder="제목" className="rounded-lg border border-line px-3 py-2 text-sm" />
+      </div>
+      <textarea value={body} onChange={e => setBody(e.target.value)} rows={3} placeholder="내용" className="mt-2 w-full rounded-lg border border-line px-3 py-2 text-sm" />
+      <div className="mt-2 flex justify-end">
+        <button onClick={add} disabled={!title.trim()} className="rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper disabled:opacity-40">공지 올리기</button>
+      </div>
+      {list.length > 0 && (
+        <ul className="mt-3 divide-y divide-line/60 border-t border-line">
+          {list.map(n => (
+            <li key={n.id} className="flex items-center gap-2 py-2 text-sm">
+              <span className="shrink-0 rounded bg-pine-soft px-1.5 py-0.5 text-[11px] font-bold text-pine-dark">{n.kind}</span>
+              <span className={`min-w-0 grow truncate ${n.hidden ? 'text-ink2 line-through' : 'font-semibold'}`}>{n.title}</span>
+              <span className="shrink-0 text-xs text-ink2">{n.date.slice(0, 10)}</span>
+              <label className="flex shrink-0 cursor-pointer items-center gap-1 text-xs">
+                <input type="checkbox" className="h-4 w-4 accent-pine" checked={!n.hidden} onChange={e => save(list.map(x => x.id === n.id ? { ...x, hidden: !e.target.checked } : x))} /> 노출
+              </label>
+              <button onClick={() => { if (confirm('이 공지를 지울까요? 되돌릴 수 없습니다.')) save(list.filter(x => x.id !== n.id)) }} className="shrink-0 text-xs text-ink2 underline hover:text-clay">지우기</button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}
+
 function ExtraTab({ onGoLab }: { onGoLab: () => void }) {
   return (
+    <>
+    <ParentNoticeBox />
     <div className="grid gap-4 sm:grid-cols-3">
       {EXTRA_CARDS.map(c => (
         <div key={c.title} className="rounded-2xl border border-line bg-white p-5">
@@ -2886,7 +2934,7 @@ function ExtraTab({ onGoLab }: { onGoLab: () => void }) {
             <>
               <p className="mb-3 rounded-lg bg-paper2 px-3 py-2 text-sm text-ink2">
                 {c.kind === 'sparta-parents'
-                  ? '학부모앱 미보유 — 학부모 공지·소통은 학원관리앱(대치스파르타)에서 담당합니다.'
+                  ? '학부모앱 공지는 위 칸에서 올립니다. 문자·알림톡 같은 발송은 학원관리앱(대치스파르타)에서 담당합니다.'
                   : '학원관리앱(대치스파르타)에서 담당합니다.'}
               </p>
               <a href="https://daechisparta.vercel.app" target="_blank" rel="noreferrer"
@@ -2896,6 +2944,7 @@ function ExtraTab({ onGoLab }: { onGoLab: () => void }) {
         </div>
       ))}
     </div>
+    </>
   )
 }
 

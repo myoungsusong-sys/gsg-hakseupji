@@ -47,6 +47,7 @@ export interface CloudData {
   solveFeedbacks: SolveFeedback[]              // 학생 풀이 AI 피드백 (settings 'solveFeedbacks')
   teachers: Teacher[]                         // 강사 (settings 'teachers')
   branches: Branch[]                           // 지점 (settings 'branches') — 당진·내포 등
+  lectureLog: Record<string, string>           // 강의 출제·시청 기록 (settings 'lectureLog', 키=`a|학생|과정|강의id` 출제 · `w|학생|과정|강의id` 시청)
   ttChecks: Record<string, true>               // 시간표 블록 완료 체크 (settings 'ttChecks', 키=`학생|날짜|블록idx`)
   reviewChecks: Record<string, true>           // 🏫 학교 복습 체크 (settings 'reviewChecks', 키=`학생|날짜|과목|solve|wrong`)
   routineChecks: Record<string, true>          // ✅ 선생님 하루 루틴 체크 (settings 'routineChecks', 키=`강사키|날짜|항목id`)
@@ -135,7 +136,7 @@ const SETTING_DEFAULT: Partial<Record<keyof CloudData, unknown>> = {
   favorites: [], diffMatrix: null, assignments: [], dailyConfigs: {}, dailyBooks: {}, counsels: [],
   studentAppConfig: null, klassOrder: [], academyProfile: null, savedReports: [], myBooks: [], uploads: [],
   sheetTemplates: [], lecturePlans: [], solveFeedbacks: [], bugReports: [], teachers: [], branches: [],
-  ttChecks: {}, reviewChecks: {}, routineChecks: {}, schoolExams: [], masteries: {}, schoolBooks: {},
+  lectureLog: {}, ttChecks: {}, reviewChecks: {}, routineChecks: {}, schoolExams: [], masteries: {}, schoolBooks: {},
   pointEntries: [], pointSettlements: [],
 }
 
@@ -240,6 +241,7 @@ export async function loadAll(opts?: { gradingsOf?: string | null }): Promise<(C
     bugReports: (settingsMap.get('bugReports') as BugReport[]) ?? [],
     teachers: (settingsMap.get('teachers') as Teacher[]) ?? [],
     branches: (settingsMap.get('branches') as Branch[]) ?? [],
+    lectureLog: (settingsMap.get('lectureLog') as Record<string, string>) ?? {},
     ttChecks: (settingsMap.get('ttChecks') as Record<string, true>) ?? {},
     reviewChecks: (settingsMap.get('reviewChecks') as Record<string, true>) ?? {},
     routineChecks: (settingsMap.get('routineChecks') as Record<string, true>) ?? {},
@@ -336,6 +338,7 @@ export const cloud = {
       local.bugReports.length ? this.setSetting('bugReports', local.bugReports) : Promise.resolve(),
       local.teachers.length ? this.setSetting('teachers', local.teachers) : Promise.resolve(),
       local.branches.length ? this.setSetting('branches', local.branches) : Promise.resolve(),
+      Object.keys(local.lectureLog ?? {}).length ? this.setSetting('lectureLog', local.lectureLog) : Promise.resolve(),
       Object.keys(local.ttChecks ?? {}).length ? this.setSetting('ttChecks', local.ttChecks) : Promise.resolve(),
       Object.keys(local.reviewChecks ?? {}).length ? this.setSetting('reviewChecks', local.reviewChecks) : Promise.resolve(),
       Object.keys(local.routineChecks ?? {}).length ? this.setSetting('routineChecks', local.routineChecks) : Promise.resolve(),

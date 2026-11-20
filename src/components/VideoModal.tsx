@@ -2,12 +2,13 @@ import { useEffect, useRef } from 'react'
 import Hls from 'hls.js'
 
 // 문항별 풀이영상 재생 모달 — HLS(m3u8). Safari는 네이티브, 그 외는 hls.js
-export default function VideoModal({ src, subtitle, title, onClose, badge = '풀이영상' }: {
+export default function VideoModal({ src, subtitle, title, onClose, badge = '풀이영상', onEnded }: {
   src: string
   subtitle?: string
   title: string
   onClose: () => void
   badge?: string
+  onEnded?: () => void   // 끝까지 봤을 때(강의 시청 완료 기록용)
 }) {
   const ref = useRef<HTMLVideoElement>(null)
 
@@ -35,7 +36,7 @@ export default function VideoModal({ src, subtitle, title, onClose, badge = '풀
           <div className="grow" />
           <button onClick={onClose} className="rounded-lg px-2 py-1 text-ink2 hover:bg-paper2">✕</button>
         </div>
-        <video ref={ref} controls autoPlay playsInline crossOrigin="anonymous"
+        <video ref={ref} controls autoPlay playsInline crossOrigin="anonymous" onEnded={onEnded}
           className="aspect-video w-full rounded-lg bg-black">
           {subtitle && <track kind="subtitles" srcLang="ko" label="자막" src={subtitle} default />}
         </video>
