@@ -121,6 +121,12 @@ body {
     break-after: auto;
     page-break-after: auto;
   }
+  /* 브라우저 인쇄 길(lib/sheetPdf.ts printNative) — 쪽 범위 밖은 숨기고, 보이는 마지막 쪽 뒤에는 빈 쪽을 만들지 않는다 · 흑백 */
+  .mf-page[data-print-skip] { display: none !important; }
+  .mf-page[data-print-last] { break-after: auto !important; page-break-after: auto !important; }
+  body.print-bw .mf-page { filter: grayscale(1); }
+  /* 쪽이 떠 있는 겹창(보고서 등)이 화면 높이에 잘리지 않게 */
+  .mf-page { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* MakeWizard STEP3 축소 미리보기 등에서 사용 (WorksheetView 실지면은 JS 페이지네이션으로 대체) */

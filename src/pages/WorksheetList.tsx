@@ -670,11 +670,13 @@ export default function WorksheetList({ view }: { view: View }) {
         const targets = single ? [single] : list.filter(w => checked.has(w.id))
         const target = targets[0]
         if (!target) return null
-        const names = [...(assignedByWs.get(target.id) ?? [])]
-          .map(sid => students.find(s => s.id === sid)?.name)
-          .filter((n): n is string => !!n)
+        const who = [...(assignedByWs.get(target.id) ?? [])]
+          .map(sid => students.find(s => s.id === sid))
+          .filter((x): x is Student => !!x)
+          .map(x => ({ id: x.id, name: x.name }))
+        const names = who.map(x => x.name)
         return (
-          <WorksheetOutputDialog mode={outDialog} ws={target} extraWs={targets.slice(1)} studentNames={names}
+          <WorksheetOutputDialog mode={outDialog} ws={target} extraWs={targets.slice(1)} studentNames={names} studentList={who}
             onClose={() => { setOutDialog(null); setOutSingleId(null) }} />
         )
       })()}

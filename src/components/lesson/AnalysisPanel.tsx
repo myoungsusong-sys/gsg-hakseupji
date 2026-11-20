@@ -74,6 +74,9 @@ export default function AnalysisPanel({ student }: { student: Student }) {
   const { ensureCourse } = useStore()
   useEffect(() => { ensureCourse(courseId) }, [courseId, ensureCourse])
   const [recOnly, setRecOnly] = useState(false)
+  // 성취도 등급별 걸러 보기(범례를 누른다) · 연산만 보기(«연산» 꼬리표 학습지의 채점만으로 다시 계산)
+  const [gradeOnly, setGradeOnly] = useState<Set<string>>(new Set())
+  const [arithOnly, setArithOnly] = useState(false)
   const [showAll, setShowAll] = useState(false)
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [detailId, setDetailId] = useState<string | null>(null)
@@ -109,8 +112,12 @@ export default function AnalysisPanel({ student }: { student: Student }) {
     if (g.studentId !== student.id) return false
     if (asOf && dateKey(g.date) > asOf.to) return false
     if (bookFilter.size > 0 && !(g.workbookId && bookFilter.has(g.workbookId))) return false
+    if (arithOnly) {
+      const w = g.worksheetId ? worksheets.find(x => x.id === g.worksheetId) : undefined
+      if (!w || !w.tags.some(t => t.includes('연산'))) return false
+    }
     return true
-  }), [gradings, student.id, asOf, bookFilter])
+  }), [gradings, student.id, asOf, bookFilter, arithOnly, worksheets])
 
   const stats = useMemo(() => wrongByType(student.id, myGradings, wbItems), [student.id, myGradings, wbItems])
   const statMap = useMemo(() => new Map(stats.map(s => [s.typeId, s])), [stats])
@@ -160,12 +167,13 @@ export default function AnalysisPanel({ student }: { student: Student }) {
       for (const m of u.mids) {
         const all = m.subs.flatMap(s => s.types)
         if (!showAll && !all.some(t => statMap.has(t.id))) continue
-        const rows = recOnly ? all.filter(t => recSet.has(t.id)) : all
+        const rows = (recOnly ? all.filter(t => recSet.has(t.id)) : all)
+          .filter(t => gradeOnly.size === 0 || gradeOnly.has(achievementOf(statMap.get(t.id)).key))
         if (rows.length === 0) continue
         out.push({ key: m.id, title: `${u.name} | ${m.name}`, rows })
       }
     return out
-  }, [course, statMap, recOnly, showAll, recSet])
+  }, [course, statMap, recOnly, showAll, recSet, gradeOnly])
 
   // 범례별 유형 개수 — 7컬러 (추천 유형만 보기 시 추천 유형 기준으로 재계산, 매쓰플랫 동일)
   const legendCounts = useMemo(() => {
@@ -321,6 +329,9 @@ export default function AnalysisPanel({ student }: { student: Student }) {
           )}
         </div>
 
+        <label className="flex cursor-pointer items-center gap-1.5" title="«연산» 꼬리표가 붙은 학습지의 채점만으로 성취도를 다시 계산합니다">
+          <input type="checkbox" className="h-4 w-4 accent-pine" checked={arithOnly} onChange={e => setArithOnly(e.target.checked)} /> 연산만 보기
+        </label>
         <button onClick={() => setRecOnly(v => !v)} className="flex cursor-pointer items-center gap-1.5">
           <span className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${recOnly ? 'bg-pine' : 'bg-stone-300'}`}>
             <span className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${recOnly ? 'translate-x-4' : ''}`} />
@@ -407,10 +418,12 @@ export default function AnalysisPanel({ student }: { student: Student }) {
           성취도 컬러 <span className="no-print rounded-full border border-line px-1">ⓘ</span>
         </button>
         {ACHIEVEMENT_GRADES.map(g => (
-          <span key={g.key} className="flex items-center gap-1">
+          <button key={g.key} data-grade-chip={g.key} title="누르면 이 등급의 유형만 봅니다(다시 누르면 풀림)"
+            onClick={() => setGradeOnly(p => { const n = new Set(p); if (n.has(g.key)) n.delete(g.key); else n.add(g.key); return n })}
+            className={`flex items-center gap-1 rounded-full px-1.5 py-0.5 ${gradeOnly.has(g.key) ? 'bg-ink text-paper' : 'hover:bg-paper2'}`}>
             <span className={`inline-block h-3 w-3 rounded ${g.dot}`} />
             {g.name} <b>{legendCounts.get(g.key) ?? 0}</b>
-          </span>
+          </button>
         ))}
         <span className="mx-1 hidden h-3 w-px bg-line sm:inline-block" />
         <span className="flex items-center gap-1"><span className="inline-block h-3 w-3 rounded-sm bg-pine" /> 정답</span>

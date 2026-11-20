@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
+import GroupGrade from './GroupGrade'
 import { Link } from 'react-router-dom'
 import { isVocaGrading, vocaRangeLabel } from '../../lib/voca'
 import { fetchLive, pushNote, type LiveSolve } from '../../lib/live'
@@ -19,13 +20,14 @@ import { ConfigModal } from './TodayPanel'
 // 탭: 학습내역(진도/숙제/학습통계/강의) · 오늘의 학습(전체학생) · 유형분석 · 학습지(목록/현황보드) · 보고서(저장 목록)
 // 실시간 모니터링([모니터링] 컬럼)은 별도 인프라 과제로 보류.
 
-type Tab = 'history' | 'today' | 'live' | 'analysis' | 'worksheet' | 'solvefb' | 'report'
+type Tab = 'history' | 'today' | 'live' | 'analysis' | 'worksheet' | 'material' | 'solvefb' | 'report'
 const TABS: { key: Tab; label: string }[] = [
   { key: 'history', label: '학습내역' },
   { key: 'today', label: '오늘의 학습' },
   { key: 'live', label: '실시간 풀이' },
   { key: 'analysis', label: '유형분석' },
   { key: 'worksheet', label: '학습지' },
+  { key: 'material', label: '교재' },
   { key: 'solvefb', label: '풀이피드백' },
   { key: 'report', label: '보고서' },
 ]
@@ -79,6 +81,7 @@ export default function GroupPanel({ label, students }: { label: string; student
       {tab === 'live' && <GroupLiveMonitor students={students} />}
       {tab === 'analysis' && <GroupAnalysis students={students} />}
       {tab === 'worksheet' && <GroupWorksheets label={label} students={students} />}
+      {tab === 'material' && <GroupMaterialBoard label={label} students={students} />}
       {tab === 'solvefb' && <GroupSolveFeedback students={students} />}
       {tab === 'report' && <GroupReports students={students} />}
     </div>
@@ -485,12 +488,92 @@ function GroupAnalysis({ students }: { students: Student[] }) {
   )
 }
 
+/* ═══════════ 교재 현황 보드 — 교재 이름별로 쪽 × 학생 점수 칩 + Excel (2026-11-20) ═══════════
+   학생마다 배정된 교재는 따로 등록돼 있어(같은 책이라도 교재 id 가 다르다) 이름으로 묶는다. */
+function GroupMaterialBoard({ label, students }: { label: string; students: Student[] }) {
+  const { gradings, workbooks } = useStore()
+  const boards = useMemo(() => {
+    const ids = new Set(students.map(s => s.id))
+    const wbName = new Map(workbooks.map(w => [w.id, w.name]))
+    // 교재 이름 → 쪽 → 학생 → [맞은 수, 채점 수] (같은 쪽을 다시 채점했으면 최신 것)
+    const by = new Map<string, Map<number, Map<string, { ok: number; n: number; date: string }>>>()
+    for (const g of gradings) {
+      if (!ids.has(g.studentId) || (g.source ?? '교재') !== '교재' || !g.workbookId || g.results.length === 0) continue
+      const name = wbName.get(g.workbookId) ?? g.title
+      if (!name) continue
+      const from = g.pageFrom ?? 0, to = g.pageTo ?? from
+      const pages = by.get(name) ?? new Map(); by.set(name, pages)
+      // 여러 쪽을 한 번에 채점한 기록은 시작 쪽 줄에 «from~to» 로 모은다
+      const row = pages.get(from) ?? new Map(); pages.set(from, row)
+      const cur = row.get(g.studentId)
+      if (!cur || g.date > cur.date) row.set(g.studentId, { ok: g.results.filter(r => r.correct).length, n: g.results.length, date: g.date, ...(to !== from ? { to } : {}) } as never)
+    }
+    return [...by].map(([name, pages]) => ({ name, rows: [...pages].sort((a, b) => a[0] - b[0]) }))
+  }, [gradings, workbooks, students])
+
+  function exportCsv() {
+    const rows: (string | number)[][] = [['교재', '쪽', ...students.map(s => s.name)]]
+    for (const b of boards) for (const [page, row] of b.rows) {
+      rows.push([b.name, page, ...students.map(s => { const c = row.get(s.id); return c ? Math.round(c.ok / c.n * 100) : '' })])
+    }
+    downloadCsv(`교재현황보드_${label}.csv`, rows)
+  }
+
+  if (boards.length === 0) {
+    return <div className="rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center text-sm text-ink2">{label} 학생들의 교재 채점 기록이 아직 없습니다.</div>
+  }
+  return (
+    <div data-material-board>
+      <div className="mb-3 flex flex-wrap items-center gap-3 text-xs text-ink2">
+        <span className="flex items-center gap-2">교재 현황 보드 — 정답률 컬러:
+          {RATE_LEGEND.map(([t, cls]) => <span key={t} className="flex items-center gap-1"><span className={`inline-block h-3 w-3 rounded ${cls}`} />{t}</span>)}
+        </span>
+        <div className="grow" />
+        <button onClick={exportCsv} className="rounded-lg border border-pine px-3 py-1.5 text-xs font-bold text-pine hover:bg-pine-soft">Excel 다운로드</button>
+      </div>
+      <div className="grid gap-4">
+        {boards.map(b => (
+          <div key={b.name} className="overflow-x-auto rounded-2xl border border-line bg-white">
+            <div className="border-b border-line bg-paper2/60 px-4 py-2 text-sm font-bold">{b.name} <span className="font-normal text-ink2">· 채점한 쪽 {b.rows.length}개</span></div>
+            <table className="w-full text-sm">
+              <thead><tr className="border-b border-line text-xs text-ink2">
+                <th className="px-4 py-2 text-left">쪽</th>
+                {students.map(s => <th key={s.id} className="px-2 py-2 text-center">{s.name}</th>)}
+              </tr></thead>
+              <tbody>
+                {b.rows.map(([page, row]) => (
+                  <tr key={page} className="border-b border-line/50 last:border-0">
+                    <td className="whitespace-nowrap px-4 py-1.5 font-semibold tabular-nums">{page}쪽</td>
+                    {students.map(s => {
+                      const c = row.get(s.id)
+                      const score = c ? Math.round(c.ok / c.n * 100) : null
+                      return (
+                        <td key={s.id} className="px-1 py-1 text-center">
+                          <span data-chip className={`inline-block min-w-14 rounded-lg border px-2 py-0.5 text-xs font-bold ${rateColor(score)}`} title={c ? `${c.n}문제 중 ${c.ok}문제 맞음` : '채점 전'}>
+                            {score !== null ? `${score}점` : '·'}
+                          </span>
+                        </td>
+                      )
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 /* ═══════════ 학습지 (목록 / 현황보드 + Excel) ═══════════ */
 
 function GroupWorksheets({ label, students }: { label: string; students: Student[] }) {
   const { assignments, worksheets, gradings } = useStore()
   const [view, setView] = useState<'list' | 'board'>('list')
   const [excludeDrill, setExcludeDrill] = useState(false)
+  // 그룹 채점 — 학습지 한 장을 받은 학생들의 채점 칸을 나란히 연다
+  const [gradeWsId, setGradeWsId] = useState<string | null>(null)
 
   const ids = useMemo(() => new Set(students.map(s => s.id)), [students])
   const DRILL_TAGS = ['오답', '오답학습', '심화학습', '복습', '취약유형', '기간별 오답', '학습지 오답', '교재 오답', '단원별 취약']
@@ -536,6 +619,11 @@ function GroupWorksheets({ label, students }: { label: string; students: Student
         }),
       ]),
     ])
+  }
+
+  const gradeRow = gradeWsId ? rows.find(r => r.ws.id === gradeWsId) : null
+  if (gradeRow) {
+    return <GroupGrade ws={gradeRow.ws} students={students.filter(s => gradeRow.studentIds.has(s.id))} onClose={() => setGradeWsId(null)} />
   }
 
   return (
@@ -605,9 +693,10 @@ function GroupWorksheets({ label, students }: { label: string; students: Student
                     </td>
                     <td className="whitespace-nowrap py-2.5 text-xs text-ink2">{r.studentIds.size}명</td>
                     <td className="whitespace-nowrap py-2.5 pr-3">
-                      {avg !== null
-                        ? <span className="text-xs">채점 {done.length}/{r.studentIds.size}명 · 평균 <b className="text-pine-dark">{avg}점</b></span>
-                        : <span className="text-xs text-ink2">채점 전</span>}
+                      <button onClick={() => setGradeWsId(r.ws.id)} title="학생들의 채점 칸을 나란히 놓고 채점합니다"
+                        className={`rounded-lg px-2.5 py-1 text-xs font-bold ${avg !== null ? 'border border-line text-ink hover:bg-paper2' : 'bg-pine text-paper'}`}>
+                        {avg !== null ? <>이어 채점 · {done.length}/{r.studentIds.size}명 · 평균 <b className="text-pine-dark">{avg}점</b></> : '채점'}
+                      </button>
                     </td>
                   </tr>
                 )

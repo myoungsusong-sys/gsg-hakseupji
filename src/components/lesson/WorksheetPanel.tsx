@@ -12,6 +12,8 @@ import ProblemContent from '../ProblemContent'
 import VideoModal from '../VideoModal'
 import WorksheetOutputDialog from '../WorksheetOutputDialog'
 import DrillModal, { type DrillWrong } from './DrillModal'
+import OneClickReport from './OneClickReport'
+import { problemReportKey } from '../../lib/lectureLog'
 import PeriodWrongModal from './PeriodWrongModal'
 
 const CIRCLED = ['①', '②', '③', '④', '⑤']
@@ -26,7 +28,11 @@ const TAG_OPTIONS = [
 ]
 
 // 수업 > 학습지 탭 (매쓰플랫 동일) — 이 학생에게 출제한 학습지 목록·자동채점·오답 재출제
-export default function WorksheetPanel({ student }: { student: Student }) {
+export default function WorksheetPanel({ student, openGradeId, onGradeOpened }: {
+  student: Student
+  openGradeId?: string | null      // QR 채점 진입 — 이 학습지의 채점 화면을 바로 연다
+  onGradeOpened?: () => void
+}) {
   const { worksheets, assignments, gradings, problems, addAssignment, removeAssignment, duplicateWorksheet, masteries } = useStore()
   const nav = useNavigate()
 
@@ -35,6 +41,12 @@ export default function WorksheetPanel({ student }: { student: Student }) {
   const [sort, setSort] = useState<'assigned' | 'graded'>('assigned')
   const [menuFor, setMenuFor] = useState<string | null>(null)
   const [gradeWs, setGradeWs] = useState<Worksheet | null>(null)
+  useEffect(() => {
+    if (!openGradeId) return
+    const w = worksheets.find(x => x.id === openGradeId)
+    if (w) { setGradeWs(w); onGradeOpened?.() }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [openGradeId, worksheets])
   const [drill, setDrill] = useState<{ title: string; wrongs: DrillWrong[] } | null>(null)
   const [periodOpen, setPeriodOpen] = useState(false)
   // 행 체크 선택(학습지 id) → 하단 고정 다크 액션바 (매쓰플랫 동일)
@@ -362,7 +374,7 @@ export default function WorksheetPanel({ student }: { student: Student }) {
       {outDialog && (() => {
         const target = worksheets.find(w => w.id === [...checked][0])
         return target ? (
-          <WorksheetOutputDialog mode={outDialog} ws={target} studentNames={[student.name]}
+          <WorksheetOutputDialog mode={outDialog} ws={target} studentNames={[student.name]} studentList={[{ id: student.id, name: student.name }]}
             onClose={() => setOutDialog(null)} />
         ) : null
       })()}
@@ -436,7 +448,7 @@ function SheetAnswer({ p }: { p: Problem }) {
 // 🔴 오늘 교실에서도 바로 열 수 있게 내보낸다 (명수쌤 2026-08-21: "선생님앱에 채점을 할 수 있게").
 //    수업 > 학습지 탭 안에만 있으면 선생님이 학생 → 학습지 → 채점 3단계를 거쳐야 한다.
 export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
-  const { problems, gradings, upsertGrading, ensureCourse, poolLoaded } = useStore()
+  const { problems, gradings, upsertGrading, ensureCourse, poolLoaded, setLectureLog } = useStore()
   const brand = useBrand()
   // 🔴 2026-11-11: 채점 화면이 자기 학습지의 과정 파일을 직접 부른다. 예전엔 앱이 미리 부른 것만 봐서
   //    학생에게 아직 안 나간 내신 기출 학습지는 «0문제 · 문제은행에서 찾을 수 없습니다»로 떴다.
@@ -628,7 +640,9 @@ export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: 
   }, [list, marks])
   const score = live.marked > 0 ? Math.round(live.correct / live.marked * 100) : null
 
-  // [원클릭 보고서] — 이 학습지 채점 결과를 단톡방용 텍스트로 즉시 복사
+  // [원클릭 보고서] A4 한 장(난이도별·단원별 정답률, 평균·등수) — 저장된 채점 기록으로 만든다
+  const [reportOpen, setReportOpen] = useState(false)
+  // [결과 글 복사] — 이 학습지 채점 결과를 단톡방용 텍스트로 즉시 복사
   async function oneClickReport() {
     const lines = [
       `[${brand}] ${student.name} 학습 결과`,
@@ -647,12 +661,16 @@ export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: 
 
   // [🔔 문제 오류 신고] — 문항 정보를 담은 메일 작성 (오류 신고 채널)
   function reportProblem(no: number, p: Problem) {
-    const body = `학습지: ${ws.title}%0A문항: ${no}번 (id ${p.id})%0A유형: ${typeName(p.typeId)}%0A오류 내용: `
-    location.href = `mailto:songmyoungsu79@gmail.com?subject=${encodeURIComponent(`[문제 오류 신고] ${ws.title} ${no}번`)}&body=${body}`
+    const reason = prompt(`${ws.title} ${no}번 「${typeName(p.typeId)}」 문제 오류 신고\n오류 내용을 적어주세요 (오탈자·정답 오류·그림 문제 등)`)
+    if (!reason?.trim()) return
+    // 관리 > 추가 관리의 «문제 오류 신고»에 모인다
+    setLectureLog({ [problemReportKey(p.id)]: `${ws.title} ${no}번 — ${reason.trim()}` })
+    alert('오류 신고가 접수되었습니다. 관리 > 추가 관리에서 모아 볼 수 있어요.')
   }
 
   return (
     <div>
+      {reportOpen && <OneClickReport student={student} ws={ws} list={list} onClose={() => setReportOpen(false)} />}
       {/* 헤더: ← 학습지명 + 열람 시각 + [원클릭 보고서] (매쓰플랫 group-scoring 헤더) */}
       <div className="mb-3 flex flex-wrap items-center gap-3">
         <button onClick={onBack} className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:bg-paper2">← 목록</button>
@@ -663,7 +681,11 @@ export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: 
           </div>
         </div>
         <div className="grow" />
-        <button onClick={oneClickReport}
+        <button onClick={oneClickReport} title="채점 결과를 단톡방에 붙일 글로 복사합니다"
+          className="rounded-lg border border-line px-3 py-2 text-xs font-bold text-ink2 hover:bg-paper2">
+          결과 글 복사
+        </button>
+        <button onClick={() => setReportOpen(true)} title="난이도별·단원별 정답률과 평균·등수를 A4 한 장 보고서로 만듭니다"
           className="rounded-lg border border-amber px-3 py-2 text-xs font-bold text-amber hover:bg-amber-soft">
           원클릭 보고서
         </button>

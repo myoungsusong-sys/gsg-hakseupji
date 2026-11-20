@@ -151,6 +151,23 @@ export default function GradePanel({ student }: { student: Student }) {
   // 선택 교재를 학생별로 기억 (다른 학생 갔다 와도 마지막 교재 유지)
   useEffect(() => { lvSetWb(student.id, wbId) }, [wbId, student.id])
   const wb = myBooks.find(w => w.id === wbId) ?? null
+  // 교재 n회독 — 회차(1부터). 채점 기록에 적힌 회차와, 방금 시작해 아직 채점이 없는 회차(이 기기에 기억)를 합쳐 본다
+  const roundKey = `gsg-wb-round|${student.id}|${wbId ?? ''}`
+  const gradedRounds = useMemo(() => {
+    const set = new Set<number>()
+    for (const g of gradings) if (g.studentId === student.id && g.workbookId === wbId && g.results.length > 0) set.add(g.round ?? 1)
+    return set
+  }, [gradings, student.id, wbId])
+  const [started, setStarted] = useState(1)
+  const [roundSel, setRoundSel] = useState<number | null>(null)
+  useEffect(() => {
+    let n = 1
+    try { n = Number(localStorage.getItem(roundKey) ?? '1') || 1 } catch { /* 무시 */ }
+    setStarted(n); setRoundSel(null)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [roundKey])
+  const maxRound = Math.max(1, started, ...gradedRounds)
+  const round = Math.min(roundSel ?? maxRound, maxRound)
 
   const items = useMemo(
     () => wbItems.filter(i => i.workbookId === wbId).sort((a, b) => a.page - b.page || a.no - b.no),
@@ -198,7 +215,7 @@ export default function GradePanel({ student }: { student: Student }) {
       else {
         const graded = new Set<string>()
         for (const g of gradingsRef.current) {
-          if (g.studentId !== student.id || g.workbookId !== wbId) continue
+          if (g.studentId !== student.id || g.workbookId !== wbId || (g.round ?? 1) !== round) continue   // 지금 회차 기준
           for (const r of g.results) if (r.itemId) graded.add(r.itemId)
         }
         const doneOf = new Map<number, number>()
@@ -244,11 +261,11 @@ export default function GradePanel({ student }: { student: Student }) {
   const rangeWrong = useMemo(() => {
     if (!wb) return { ids: [] as string[], rows: [] }
     const ids = gradings
-      .filter(g => g.studentId === student.id && g.workbookId === wb.id &&
+      .filter(g => g.studentId === student.id && g.workbookId === wb.id && (g.round ?? 1) === round &&
         (g.pageFrom ?? -1) <= to && from <= (g.pageTo ?? g.pageFrom ?? -1))
       .map(g => g.id)
     return { ids, rows: ids.length ? wrongTypesOf({ studentId: student.id, gradings, wbItems, problems, masteries, gradingIds: ids, pageRange: [from, to] }) : [] }
-  }, [gradings, wbItems, problems, masteries, student.id, wb, from, to])
+  }, [gradings, wbItems, problems, masteries, student.id, wb, from, to, round])
 
   // ── 실시간 자동 저장 (매쓰플랫 방식) ────────────────────────
   // 문항 클릭마다 디바운스 저장. 같은 날·같은 범위 채점은 한 기록에 덮어쓰기(upsert).
@@ -288,7 +305,7 @@ export default function GradePanel({ student }: { student: Student }) {
       })
     const today = todayKey()
     const exist = gradingsRef.current.find(g =>
-      g.studentId === student.id && g.workbookId === wb.id &&
+      g.studentId === student.id && g.workbookId === wb.id && (g.round ?? 1) === round &&
       g.pageFrom === from && g.pageTo === to && dateKey(g.date) === today)
     // 아무것도 마킹돼 있지 않고 기존 기록도 없으면 빈 기록을 만들지 않는다
     if (results.length === 0 && !exist && !gidRef.current) return
@@ -297,6 +314,7 @@ export default function GradePanel({ student }: { student: Student }) {
     pendingRef.current = {
       id, studentId: student.id, source: '교재', workbookId: wb.id,
       date: new Date().toISOString(), pageFrom: from, pageTo: to, results,
+      ...(round > 1 ? { round } : {}),
     }
     setSaveState('saving')
     if (timerRef.current) clearTimeout(timerRef.current)
@@ -312,10 +330,10 @@ export default function GradePanel({ student }: { student: Student }) {
     flushRef.current()
     gidRef.current = null
     const relevant = gradingsRef.current
-      .filter(g => g.studentId === student.id && g.workbookId === wbId)
+      .filter(g => g.studentId === student.id && g.workbookId === wbId && (g.round ?? 1) === round)
       .slice()
       .sort((a, b) => a.date.localeCompare(b.date))
-    if (pend && pend.workbookId === wbId) relevant.push(pend)   // 방금 마킹분을 최신으로 취급
+    if (pend && pend.workbookId === wbId && (pend.round ?? 1) === round) relevant.push(pend)   // 방금 마킹분을 최신으로 취급
     const seeded: Record<string, Mark> = {}
     for (const g of relevant) {
       for (const r of g.results) {
@@ -327,7 +345,7 @@ export default function GradePanel({ student }: { student: Student }) {
     setMarks(seeded)
     bulkRef.current = new Set()   // 교재·범위·학생이 바뀌면 '전체 정답' 표시는 무효(옛 표시가 남으면 첫 클릭이 엉뚱하게 ✕로 감)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [wbId, from, to, student.id])
+  }, [wbId, from, to, student.id, round])
 
   // 탭 이동·언마운트 시 대기분 저장
   useEffect(() => () => flushRef.current(), [])
@@ -528,8 +546,18 @@ export default function GradePanel({ student }: { student: Student }) {
   // ⋮ 메뉴 > 재출제 — 채점 초기화 없이 첫 페이지부터 다시 진행
   function reissue() {
     setMenu(false)
-    if (!confirm('이 교재를 재출제(채점 초기화 없이 다시 진행)하시겠습니까?')) return
+    const next = maxRound + 1
+    if (!confirm(`이 교재의 ${next}회차를 시작할까요?\n${maxRound}회차까지의 채점 기록은 그대로 남고, 회차 단추로 오가며 볼 수 있습니다.`)) return
+    setStarted(next); setRoundSel(next)
+    try { localStorage.setItem(roundKey, String(next)) } catch { /* 저장 못 해도 이 화면에서는 이어진다 */ }
     if (pages.length) { setFrom(pages[0][0]); setTo(pages[0][0]) }
+  }
+  // 맨 끝 회차에 채점이 하나도 없으면 그 회차만 취소할 수 있다
+  function cancelRound() {
+    if (started <= 1 || gradedRounds.has(started)) return
+    const back = started - 1
+    setStarted(back); setRoundSel(back)
+    try { if (back > 1) localStorage.setItem(roundKey, String(back)); else localStorage.removeItem(roundKey) } catch { /* 무시 */ }
   }
 
   // 이 학생에게 이미 배정된 교재의 matchKey (중복 등록 방지)
@@ -578,11 +606,22 @@ export default function GradePanel({ student }: { student: Student }) {
             <>
               <div className="fixed inset-0 z-10" onClick={() => setMenu(false)} />
               <div className="absolute left-0 top-full z-20 mt-1 w-36 rounded-lg border border-line bg-white py-1 shadow-lg">
-                <button onClick={reissue} className="w-full px-3 py-2 text-left text-sm hover:bg-paper2">재출제</button>
+                <button onClick={reissue} className="w-full px-3 py-2 text-left text-sm hover:bg-paper2">재출제 ({maxRound + 1}회차 시작)</button>
+                {started > 1 && !gradedRounds.has(started) && (
+                  <button onClick={() => { setMenu(false); cancelRound() }} className="w-full px-3 py-2 text-left text-sm hover:bg-paper2">{started}회차 취소</button>
+                )}
               </div>
             </>
           )}
         </div>
+        {maxRound > 1 && (
+          <div className="flex rounded-xl border border-line bg-white p-1 text-xs font-bold" data-rounds>
+            {Array.from({ length: maxRound }, (_, i) => i + 1).map(n => (
+              <button key={n} onClick={() => setRoundSel(n)}
+                className={`rounded-lg px-3 py-1.5 ${round === n ? 'bg-pine text-paper' : 'text-ink2 hover:text-ink'}`}>{n}회차</button>
+            ))}
+          </div>
+        )}
         <label className="flex items-center gap-1">쪽
           <input type="number" value={from} onChange={e => setFrom(Number(e.target.value) || 1)}
             className="w-16 rounded border border-line px-2 py-1.5" />

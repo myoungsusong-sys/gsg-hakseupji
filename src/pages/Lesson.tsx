@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { useStore } from '../lib/store'
+import { useAuth } from '../lib/auth'
+import { teacherByEmail } from '../lib/role'
 import { useSubject } from '../lib/subject'
 import type { Student } from '../types'
 import GradePanel from '../components/lesson/GradePanel'
@@ -50,12 +53,28 @@ function gradeSortKey(g: string): number {
 const ALL_GROUP = '__all__'
 
 export default function Lesson() {
-  const { students, synced } = useStore()
-  const active = students.filter(s => s.active)
+  const { students, synced, teachers } = useStore()
+  // 권한 «담당 학생만» — 로그인한 선생님의 담당 반 학생만 보인다(관리자·전체 학생·원장 계정은 모두 보임)
+  const { email } = useAuth()
+  const meT = teacherByEmail(teachers, email)
+  const mine = meT?.scope === 'mine' ? new Set(meT.classes ?? []) : null
+  const active = students.filter(s => s.active && (!mine || (!!s.klass && mine.has(s.klass))))
   const [studentId, setStudentId] = useState<string | null>(active[0]?.id ?? null)
   // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
   const [groupName, setGroupName] = useState<string | null>(null)
   const [tab, setTab] = useState<Tab>('history')
+  // QR 채점 진입(#/lesson?student=<id>&grade=<학습지 id>) — 그 학생의 학습지 탭을 열고 채점 화면을 바로 띄운다
+  const [qs, setQs] = useSearchParams()
+  const [openGradeId, setOpenGradeId] = useState<string | null>(null)
+  useEffect(() => {
+    const sid = qs.get('student'), gid = qs.get('grade')
+    if (!sid && !gid) return
+    if (sid && !students.some(s => s.id === sid)) { if (synced) setQs({}, { replace: true }); return }
+    if (sid) { setStudentId(sid); setGroupName(null) }
+    if (gid) { setTab('worksheet'); setOpenGradeId(gid) }
+    setQs({}, { replace: true })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [qs, students, synced])
   // 🔴 과목 카테고리 — 「영어」를 고르면 영어단어 하나만, 그 밖에는 영어단어를 뺀 나머지.
   //    (명수쌤 2026-08-26: "영어 카테고리를 따로 만들고 영단어를 그 안에")
   const [subject] = useSubject()
@@ -247,7 +266,7 @@ export default function Lesson() {
             {tab === 'history' && <HistoryPanel key={student.id} student={student} />}
             {tab === 'today' && <TodayPanel key={student.id} student={student} />}
             {tab === 'analysis' && <AnalysisPanel key={student.id} student={student} />}
-            {tab === 'worksheet' && <WorksheetPanel key={student.id} student={student} />}
+            {tab === 'worksheet' && <WorksheetPanel key={student.id} student={student} openGradeId={openGradeId} onGradeOpened={() => setOpenGradeId(null)} />}
             {tab === 'material' && <GradePanel key={student.id} student={student} />}
             {tab === 'voca' && <VocaPanel key={student.id} student={student} />}
             {tab === 'school' && <SchoolReviewPanel key={student.id} student={student} />}

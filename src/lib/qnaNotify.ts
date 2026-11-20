@@ -1,3 +1,4 @@
+import { notifyOn } from './studentPrefs'
 // ── 📬 질문함 해설 도착 알림 (2026-09-28) ─────────────────────────────────────
 //
 // 🔴 명수쌤 2026-09-28: "학생 질문 도착 알림을 넣어서 바로 확인할 수 있게 해줘"
@@ -109,11 +110,14 @@ function 제목깜빡(n: number) {
 
 /** 방금 해설이 도착했다(앱이 열려 있는 동안 상태가 완료로 바뀜) */
 export async function announceArrival(n: number, 요약: string): Promise<void> {
-  ding()
-  try { navigator.vibrate?.([180, 80, 180]) } catch { /* 무시 */ }
+  // 학생이 마이페이지에서 끈 알림은 울리지 않는다(lib/studentPrefs.ts)
+  if (notifyOn('sound')) {
+    ding()
+    try { navigator.vibrate?.([180, 80, 180]) } catch { /* 무시 */ }
+  }
   제목깜빡(n)
   // 탭이 뒤에 있으면 시스템 알림도 — 푸시가 이미 떴을 수 있어 같은 tag 로 덮는다
-  if (typeof document !== 'undefined' && document.visibilityState !== 'visible' && pushSupported()
+  if (notifyOn('system') && typeof document !== 'undefined' && document.visibilityState !== 'visible' && pushSupported()
       && Notification.permission === 'granted') {
     try {
       const reg = await navigator.serviceWorker.getRegistration(SW)

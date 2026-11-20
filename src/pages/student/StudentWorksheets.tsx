@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import DotCalendar from '../../components/DotCalendar'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../../lib/store'
 import { dateKey } from '../../lib/dates'
@@ -30,6 +31,15 @@ export default function StudentWorksheets() {
   // 기간 필터 — 기본 최근 1개월 (매쓰플랫 동일)
   const [from, setFrom] = useState(() => dateKey(new Date(Date.now() - 30 * 864e5)))
   const [to, setTo] = useState(() => dateKey(new Date()))
+
+  // 달력의 초록 점 — 학습지를 받은 날과 채점 기록이 있는 날
+  const [calOpen, setCalOpen] = useState(false)
+  const recordDays = useMemo(() => {
+    const s = new Set<string>()
+    for (const r of myWorksheetRows(assignments, worksheets, me.id)) s.add(dateKey(r.date))
+    for (const g of gradings) if (g.studentId === me.id) s.add(dateKey(g.date))
+    return s
+  }, [assignments, worksheets, gradings, me.id])
 
   const rows = useMemo(() => {
     return myWorksheetRows(assignments, worksheets, me.id)
@@ -69,13 +79,22 @@ export default function StudentWorksheets() {
 
       {/* 기간 필터 + 숙제만 보기 */}
       <div className="mb-3 flex flex-wrap items-center gap-3 text-sm">
-        <div className="flex items-center gap-1.5 rounded-lg border border-line bg-white px-2.5 py-1.5">
-          <span>📅</span>
+        <div className="relative flex items-center gap-1.5 rounded-lg border border-line bg-white px-2.5 py-1.5">
+          <button type="button" onClick={() => setCalOpen(v => !v)} title="달력에서 기간 고르기 — 초록 점은 기록이 있는 날" aria-label="달력 열기">📅</button>
           <input type="date" value={from} onChange={e => setFrom(e.target.value)}
             className="bg-transparent text-sm font-semibold" />
           <span className="text-ink2">~</span>
           <input type="date" value={to} onChange={e => setTo(e.target.value)}
             className="bg-transparent text-sm font-semibold" />
+          {calOpen && (
+            <>
+              <div className="fixed inset-0 z-10" onClick={() => setCalOpen(false)} />
+              <div className="absolute left-0 top-full z-20 mt-2 rounded-2xl border border-line bg-white p-4 shadow-xl">
+                <DotCalendar dots={recordDays} from={from} to={to} initial={to}
+                  onPick={(a, b) => { setFrom(a); setTo(b); if (a !== b) setCalOpen(false) }} />
+              </div>
+            </>
+          )}
         </div>
         <label className="flex items-center gap-2 font-semibold">
           <input type="checkbox" checked={homeworkOnly} onChange={e => setHomeworkOnly(e.target.checked)}

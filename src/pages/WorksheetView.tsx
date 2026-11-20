@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { qrMatrix, qrPath } from '../lib/qr'
 import { useStore } from '../lib/store'
 import { typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { CONCEPTS, type Concept } from '../data/concepts'
@@ -12,7 +13,7 @@ import { poolStagesFor } from '../lib/wsPools'
 import { problemCoursesOf } from '../data/problemCourses'
 import { zbBodyFor } from '../lib/zbPassage'
 import { probIndex } from '../lib/probIndex'
-import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
+import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf, splitSpec } from '../types'
 
 /* ═══════════════════════════════════════════════════════════════════
    매쓰플랫 원본 PDF 실측 지오메트리 (오답루프실사_매쓰플랫_2026-07-08.md §5~7)
@@ -96,8 +97,15 @@ type PageDef =
 
 /* 인쇄 작업 단위 — 렌더할 부(문제지 s / 빠른정답 q / 정답해설 so / OMR o)와 파일명 라벨
    act: 'download'=PDF 파일 저장 / 'print'=PDF를 만들어 바로 인쇄창 (둘 다 진짜 PDF — 매쓰플랫 방식) */
-type PrintJob = { label: string; s: boolean; q: boolean; so: boolean; o: boolean; sa: boolean; act?: 'download' | 'print' }
-const PART_FLAG: Record<string, keyof Omit<PrintJob, 'label'>> = {
+// 빠른정답에서 «긴 답» — 그림이 아니고 30자를 넘는 글 답(서술형). 칸을 합쳐 한 줄을 쓴다
+const longAns = (a: string) => !isImageUrl(a) && a.length > 30
+type Who = { id?: string; name: string }
+type PrintJob = {
+  label: string; s: boolean; q: boolean; so: boolean; o: boolean; sa: boolean; act?: 'download' | 'print'
+  who?: Who          // 이 벌에 찍을 학생(이름·학생별 QR) — 여러 학생 몫을 이어 뽑을 때
+  hold?: boolean     // 참이면 쪽 그림만 모아 두고 다음 벌로 — 마지막 벌에서 한 파일로 낸다
+}
+const PART_FLAG: Record<string, 's' | 'q' | 'so' | 'o' | 'sa'> = {
   '문제지': 's', '빠른정답': 'q', '정답해설': 'so', 'OMR': 'o', '문제+정답': 'sa',
 }
 const jobOf = (label: string, sel: string[]): PrintJob => ({
@@ -178,14 +186,20 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const { id } = useParams()
   const nav = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
-  const { worksheets, problems, ensureCourse, poolLoaded } = useStore()
+  const { worksheets, problems, ensureCourse, poolLoaded, academyProfile } = useStore()
   // 인쇄 작업(job): 지정 부분만 렌더 → 매쓰플랫처럼 문제지/빠른정답/정답해설/OMR 따로 PDF 저장.
   const [job, setJob] = useState<PrintJob | null>(null)
   // 개별 PDF(each) 모드: 남은 부들의 순차 인쇄 큐 — 이전 print() 리턴 후 다음 실행
   const jobQueueRef = useRef<PrintJob[]>([])
   const [video, setVideo] = useState<{ src: string; subtitle?: string; title: string } | null>(null)
   // 다이얼로그에서 넘어온 학생 이름 표시 옵션 (?name=)
-  const studentName = searchParams.get('name')
+  const nameParam = searchParams.get('name')
+  // 여러 학생 몫 이어 뽑기에서 모아 둔 쪽 그림(학생 한 명 = 한 묶음)과 출력 옵션(쪽 범위·역순·흑백·매수)
+  const accRef = useRef<string[][]>([])
+  const outOptsRef = useRef<{ pages?: string; reverse?: boolean; bw?: boolean; copies?: number }>({})
+  // 지금 벌에 찍을 학생 — 작업(job)이 정해 주면 그것, 아니면 주소의 ?name=(&sid=)
+  const who: Who | null = job?.who ?? (nameParam ? { name: nameParam, id: searchParams.get('sid') ?? undefined } : null)
+  const studentName = who?.name ?? null
 
   const ws = worksheets.find(w => w.id === id)
   const items = useMemo(
@@ -328,8 +342,19 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   }, [conceptPlacement, items, ws?.conceptIds])
 
   const qaRows = useMemo(() => {
+    // 한 줄에 최대 3문항. 긴 답(서술형 등)은 칸을 합쳐 혼자 한 줄을 차지한다 — 좁은 칸에서 세로로 흘러내리지 않게
     const rows: number[][] = []
-    for (let i = 0; i < items.length; i += 3) rows.push([i, i + 1, i + 2].filter(k => k < items.length))
+    let cur: number[] = []
+    items.forEach((p, i) => {
+      if (longAns(p.answer)) {
+        if (cur.length) { rows.push(cur); cur = [] }
+        rows.push([i])
+      } else {
+        cur.push(i)
+        if (cur.length === 3) { rows.push(cur); cur = [] }
+      }
+    })
+    if (cur.length) rows.push(cur)
     return rows
   }, [items])
 
@@ -359,7 +384,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'cols', cols: [cols[0], cols[1]], conceptsFirst: pi === 0 && frontConcepts }))
       }
     } else {
-      const per = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 4 : 6
+      const per = splitSpec(opts.layout).per
       for (let i = 0; i < items.length; i += per) {
         const slots: number[] = []
         for (let k = i; k < Math.min(i + per, items.length); k++) slots.push(k)
@@ -405,6 +430,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   // download=파일 저장 / print=PDF를 숨김 iframe에 띄워 바로 인쇄창.
   // window.print()+CSS 방식은 브라우저 인쇄 설정(여백·배율·용지)에 따라 조판이 깨져서 폐지했다 (2026-08-01).
   const [making, setMaking] = useState(false)   // "PDF 만드는 중…" 오버레이
+  const [prog, setProg] = useState('')          // 몇 쪽째 뜨는 중인지
+  const nativeRef = useRef(false)               // 이번 출력은 브라우저 인쇄 길로 가는 중(한 번 넘어가면 남은 벌도 같은 길)
   useEffect(() => {
     if (!job || !ws) return
     let alive = true
@@ -429,19 +456,45 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           throw e
         })
         if (!mod) return
-        const { buildSheetPdf, savePdf, printPdf } = mod
-        const doc = await buildSheetPdf()
-        const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
-        if (job.act === 'print') printPdf(doc, filename)
-        else savePdf(doc, filename)
+        const { capturePages, pdfFromShots, savePdf, printPdf, printNative, rasterSupported } = mod
+        // 🔴 2026-11-20 «출력이 잘 안 된다» — 화면을 그림으로 떠서 PDF 를 만드는 길은 사파리·아이패드·아이폰에서 막혀 있고,
+        //    그림 하나를 못 받으면 문항이 빠진 채 나갔다. 이제 ① 이 브라우저가 할 수 있는지 먼저 재고
+        //    ② 뜨다가 실패하면(그림 못 받음·시간 초과·메모리) ③ 브라우저 인쇄 길로 저절로 넘어간다.
+        let native = nativeRef.current || !(await rasterSupported())
+        if (!native) {
+          try {
+            accRef.current.push(await capturePages((d, t) => setProg(`${Math.min(d + 1, t)}/${t}쪽`)))
+            if (!job.hold) {
+              const groups = accRef.current
+              accRef.current = []
+              const doc = await pdfFromShots(groups, outOptsRef.current)
+              const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
+              if (job.act === 'print') printPdf(doc, filename)
+              else savePdf(doc, filename)
+            }
+          } catch (e) {
+            if (isStaleChunkError(e)) throw e
+            console.warn('PDF 뜨기 실패 — 브라우저 인쇄로 넘어감', String(e).slice(0, 160))
+            native = true
+          }
+        }
+        if (native) {
+          // 여러 학생 몫을 잇던 중이었으면 앞에서 모은 그림은 버리고, 남은 벌은 한 벌씩 인쇄 창으로 보낸다
+          nativeRef.current = true
+          accRef.current = []
+          setMaking(false)
+          await printNative(outOptsRef.current, job.act !== 'print')
+        }
       } catch (e) {
-        alert('PDF 생성에 실패했습니다. 잠시 후 다시 시도해주세요.\n' + String(e).slice(0, 120))
+        accRef.current = []; jobQueueRef.current = []; nativeRef.current = false
+        alert('출력을 만들지 못했습니다. 화면을 새로고침한 뒤 다시 해 주세요.\n' + String(e).slice(0, 120))
       }
       if (!alive) return
-      setMaking(false)
+      setMaking(false); setProg('')
       const next = jobQueueRef.current.shift()
       if (next) { setJob(next); return }
       setJob(null)
+      nativeRef.current = false
       // 자동 실행(다이얼로그 경유)이었다면 쿼리 제거 → 이후엔 일반 미리보기 화면
       if (new URLSearchParams(window.location.hash.split('?')[1] ?? '').has('out')) {
         setSearchParams({}, { replace: true })
@@ -462,13 +515,30 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     const sel = out.split(',').filter(p => p in PART_FLAG)
     if (sel.length === 0) { setSearchParams({}, { replace: true }); return }
     const act = searchParams.get('act') === 'print' ? 'print' as const : 'download' as const
-    if (searchParams.get('mode') === 'each' && sel.length > 1) {
-      const jobs = sel.map(p => ({ ...jobOf(p, [p]), act }))
-      jobQueueRef.current = jobs.slice(1)
-      setJob(jobs[0])
-    } else {
-      setJob({ ...jobOf(sel.length === 4 ? '전체' : sel.join('_'), sel), act })
+    // 출력 옵션(쪽 범위·역순·흑백·매수)
+    const copies = Number(searchParams.get('copies') ?? '1')
+    outOptsRef.current = {
+      pages: searchParams.get('pages') ?? undefined,
+      reverse: searchParams.get('rev') === '1',
+      bw: searchParams.get('bw') === '1',
+      copies: Number.isFinite(copies) ? copies : 1,
     }
+    accRef.current = []
+    // 여러 학생 몫(?who=<학생 id>~<이름> 여러 개) — 학생마다 한 벌씩 조판해 한 파일로 잇는다
+    const whos: (Who | undefined)[] = searchParams.getAll('who').map(v => {
+      const i = v.indexOf('~')
+      return i < 0 ? { name: v } : { id: v.slice(0, i) || undefined, name: v.slice(i + 1) }
+    }).filter(w => w.name)
+    if (whos.length === 0) whos.push(undefined)
+    const groups: [string, string[]][] = searchParams.get('mode') === 'each' && sel.length > 1
+      ? sel.map(p => [p, [p]])
+      : [[sel.length === 4 ? '전체' : sel.join('_'), sel]]
+    const jobs: PrintJob[] = []
+    for (const [label, parts] of groups) {
+      whos.forEach((w, i) => jobs.push({ ...jobOf(label, parts), act, who: w, hold: i < whos.length - 1 }))
+    }
+    jobQueueRef.current = jobs.slice(1)
+    setJob(jobs[0])
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready0, searchParams])
 
@@ -569,8 +639,19 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       </div>
     </div>
   )
-  const longAns = (a: string) => !isImageUrl(a) && a.length > 30
-  const qaRowAt = (r: number, isLast: boolean) => (
+  const qaRowAt = (r: number, isLast: boolean) => qaRows[r].length === 1 && longAns(items[qaRows[r][0]].answer) ? (
+    // 칸 합친 줄 — 긴 답 하나가 표 너비 전체를 쓴다
+    <div key={r} style={{
+      minHeight: `${G.qaRowH}mm`, display: 'flex', alignItems: 'center', gap: '1.6mm',
+      paddingLeft: '2mm', paddingRight: '1mm', paddingTop: '0.8mm', paddingBottom: '0.8mm',
+      borderBottom: isLast ? 'none' : '0.25pt solid #bfbfbf',
+    }}>
+      <b style={{ fontSize: '10pt', color: theme.main, flex: 'none' }}>{String(qaRows[r][0] + 1).padStart(2, '0')}</b>
+      <span style={{ fontSize: '9pt', lineHeight: 1.4, minWidth: 0 }}>
+        <AnswerContent text={items[qaRows[r][0]].answer} dims={dims} capMm={60} />
+      </span>
+    </div>
+  ) : (
     <div key={r} style={{
       display: 'grid', gridTemplateColumns: `repeat(3, ${G.qaColW}mm)`,
       borderBottom: isLast ? 'none' : '0.25pt solid #bfbfbf',
@@ -616,7 +697,9 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
 
   const header1 = (
     <PageHeader1 theme={theme.main} grade={ws.tags?.[0] || ws.grade} title={ws.title} subtitle={subtitle}
-      dateText={dateText} count={items.length} author={ws.author} studentName={studentName} />
+      dateText={dateText} count={items.length} author={ws.author} studentName={studentName}
+      qrText={opts.showQr === false ? null : qrLinkOf(ws.id, who?.id)}
+      logo={academyProfile.logoOff ? null : academyProfile.logo ?? null} />
   )
   const headerN = <PageHeaderN title={ws.title} subtitle={subtitle} />
 
@@ -695,13 +778,13 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       </div>
     )
     if (pg.kind === 'split') {
-      const two = opts.layout !== 'split2'
-      const nrows = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 2 : 3
+      const { two, rows: nrows, scale } = splitSpec(opts.layout)
+      const dense = nrows >= 3 && two            // 6분할부터는 글씨를 조금 줄인다
       const slotH = availOf(pg) / nrows - 3      // 칸 아래 여백 2mm + 점선
       return (
         <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
           {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
-          <div className={opts.layout === 'split6' ? 'text-[92%]' : ''}
+          <div className={dense ? 'text-[92%]' : ''}
             style={{
               flex: 1, minHeight: 0, display: 'grid', columnGap: `${G.colGap}mm`,
               gridTemplateColumns: two ? '1fr 1fr' : '1fr', gridTemplateRows: `repeat(${nrows}, 1fr)`, gridAutoFlow: 'column',
@@ -709,7 +792,11 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             {pg.slots.map(i => (
               <div key={i} style={{ overflow: 'hidden', borderBottom: '1px dotted #e3e8ef', paddingBottom: '2mm' }}>
                 {/* 4·6분할 칸은 단 폭(colW)과 같아 잰 높이를 그대로 쓴다 — 칸보다 긴 문항은 칸에 맞춰 줄인다 */}
-                {two ? fitBox(problemAt(i), `p${i}`, G.colW, slotH) : problemAt(i)}
+                {two ? fitBox(problemAt(i), `p${i}`, G.colW, slotH)
+                  : scale !== 1
+                    // 초등 확대 — 문항을 단 폭으로 그린 뒤 통째로 키운다(글씨·그림이 같이 커진다)
+                    ? <div style={{ width: `${CONTENT_W / scale}mm`, transform: `scale(${scale})`, transformOrigin: 'top left' }}>{problemAt(i)}</div>
+                    : problemAt(i)}
               </div>
             ))}
           </div>
@@ -829,7 +916,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         <div className="no-print fixed inset-0 z-50 flex items-center justify-center bg-ink/40">
           <div className="flex items-center gap-3 rounded-2xl bg-white px-8 py-6 text-sm font-bold shadow-xl">
             <span className="inline-block h-5 w-5 animate-spin rounded-full border-2 border-line border-t-pine" />
-            PDF 만드는 중… ({job?.label})
+            PDF 만드는 중… ({job?.label}{job?.who ? ` · ${job.who.name}` : ''}{prog ? ` · ${prog}` : ''})
           </div>
         </div>
       )}
@@ -890,6 +977,35 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       )}
 
       {/* ══ A4 실물 페이지 (문제지 → 빠른정답 → 해설지, 페이지 번호 부 전체 연속) ══ */}
+      {/* 표지 쪽(옵션) — 문제지를 뽑을 때 맨 앞에 한 장. 쪽 번호는 매기지 않는다 */}
+      {ready && opts.cover && show.s && (
+        <div className="mf-page" data-cover>
+          <div style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '92mm', background: theme.main }} />
+          <div style={{ position: 'absolute', left: 0, top: '92mm', width: '100%', height: '3mm', background: theme.soft }} />
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', top: '30mm', color: '#ffffff' }}>
+            <div style={{ fontSize: '13pt', fontWeight: 700, opacity: 0.9 }}>{ws.tags?.[0] || ws.grade}{ws.tags?.[0] ? ` · ${ws.grade}` : ''}</div>
+            <div className="line-clamp-3" style={{ marginTop: '5mm', fontSize: '30pt', fontWeight: 800, lineHeight: 1.25, letterSpacing: '-0.01em' }}>{ws.title}</div>
+          </div>
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', top: '112mm', color: '#1c1b18' }}>
+            {subtitle && <div style={{ fontSize: '14pt', color: '#5c5c5c', lineHeight: 1.5 }}>{subtitle}</div>}
+            <div style={{ marginTop: '10mm', display: 'grid', gridTemplateColumns: '24mm 1fr', rowGap: '5mm', fontSize: '12pt' }}>
+              <span style={{ color: '#8a8a84' }}>문항 수</span><b>{items.length}문제</b>
+              <span style={{ color: '#8a8a84' }}>날짜</span><b>{dateText ?? new Date(ws.createdAt).toLocaleDateString('ko-KR')}</b>
+              <span style={{ color: '#8a8a84' }}>출제</span><b>{ws.author}</b>
+            </div>
+          </div>
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', bottom: '52mm', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '10mm', fontSize: '12pt' }}>
+            <div style={{ borderBottom: '1pt solid #1c1b18', paddingBottom: '3mm' }}><span style={{ color: '#8a8a84', marginRight: '4mm' }}>이름</span><b>{studentName ?? ''}</b></div>
+            <div style={{ borderBottom: '1pt solid #1c1b18', paddingBottom: '3mm' }}><span style={{ color: '#8a8a84' }}>점수</span></div>
+          </div>
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', bottom: '22mm', display: 'flex', justifyContent: 'center' }}>
+            {academyProfile.logo && !academyProfile.logoOff
+              ? <img src={academyProfile.logo} alt="" style={{ maxWidth: '70mm', maxHeight: '15mm', objectFit: 'contain' }} />
+              : <div style={{ fontSize: '14pt', fontWeight: 800, color: '#333333' }}>{academyProfile.academyName ?? ws.author}</div>}
+          </div>
+        </div>
+      )}
+
       {ready && pagesAll!.map((pg, gi) => show[pg.part] && (
         <div key={gi} className={`mf-page ${gi === lastVisible ? 'mf-last' : ''}`}>
           {pg.first ? header1 : headerN}
@@ -915,15 +1031,20 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
 
 /* ── 1p 헤더 (매쓰플랫 §5-2): 앞머리(태그 또는 학년)+제목 16pt 인라인 / 부제 13pt / 메타 11pt+이름 / 우상단 학원명
    실측(2026-08-06 원본 PDF): 앞머리는 **태그**("학습지 오답"), 메타줄은 `26문제 | 출제자  이름 ___`(날짜 없음) ── */
-function PageHeader1({ theme, grade, title, subtitle, dateText, count, author, studentName }: {
+function PageHeader1({ theme, grade, title, subtitle, dateText, count, author, studentName, qrText, logo }: {
   theme: string; grade: string; title: string; subtitle: string
   dateText: string | null; count: number; author: string; studentName?: string | null
+  qrText?: string | null; logo?: string | null
 }) {
   return (
     <>
       <div style={{ position: 'absolute', left: `${G.mx}mm`, right: `${G.mx}mm`, top: 0, height: '60mm', overflow: 'hidden' }}>
-        {/* 우상단 학원명 (로고 자리) */}
-        <div style={{ position: 'absolute', right: 0, top: '13mm', fontSize: '11pt', fontWeight: 800, color: '#333333' }}>{author}</div>
+        {/* 우상단 — 학원 로고 그림(46.6×8.8mm 안에 맞춤), 없으면 학원명 글자 */}
+        {logo
+          ? <img src={logo} alt="" style={{ position: 'absolute', right: 0, top: '13mm', maxWidth: '46.6mm', maxHeight: '10mm', objectFit: 'contain' }} />
+          : <div style={{ position: 'absolute', right: 0, top: '13mm', fontSize: '11pt', fontWeight: 800, color: '#333333' }}>{author}</div>}
+        {/* QR(14.8mm) + 안내 말풍선 — 찍으면 학생은 답 입력, 선생님은 채점 화면 */}
+        {qrText && <HeaderQr text={qrText} theme={theme} />}
         <h1 className="line-clamp-2" style={{
           position: 'absolute', left: 0, right: '50mm', top: '11.6mm',
           fontSize: '16pt', fontWeight: 800, lineHeight: '22.4pt', color: '#000000', letterSpacing: '-0.01em',
@@ -946,6 +1067,38 @@ function PageHeader1({ theme, grade, title, subtitle, dateText, count, author, s
       <div style={{ position: 'absolute', left: 0, right: 0, top: '60mm', borderTop: '1pt solid #f4f4f4' }} />
     </>
   )
+}
+
+/* 머리말 QR — 오른쪽 끝 14.8mm 정사각 + 왼쪽 말풍선(25.4×12.7mm, 꼬리는 오른쪽) */
+function HeaderQr({ text, theme }: { text: string; theme: string }) {
+  const m = qrMatrix(text)
+  if (!m) return null
+  const { d, n } = qrPath(m, 1)
+  return (
+    <>
+      <div style={{
+        position: 'absolute', right: '18.6mm', top: '39.6mm', width: '25.4mm', height: '12.6mm', borderRadius: '2mm',
+        background: `${theme}1f`, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+        fontSize: '7pt', lineHeight: 1.35, fontWeight: 600, color: '#333333',
+      }}>
+        QR을 찍으면<br />답을 바로 입력해요
+        <span style={{
+          position: 'absolute', right: '-1.6mm', top: '4.7mm', width: 0, height: 0,
+          borderTop: '1.6mm solid transparent', borderBottom: '1.6mm solid transparent', borderLeft: `1.8mm solid ${theme}1f`,
+        }} />
+      </div>
+      <svg viewBox={`0 0 ${n} ${n}`} shapeRendering="crispEdges"
+        style={{ position: 'absolute', right: 0, top: '38.5mm', width: '14.8mm', height: '14.8mm', background: '#ffffff' }}>
+        <path d={d} fill="#000000" />
+      </svg>
+    </>
+  )
+}
+
+/** QR 에 담는 주소 — 이 앱의 #/qr/<학습지 id>[?s=<학생 id>] */
+export function qrLinkOf(wsId: string, studentId?: string | null): string {
+  const base = typeof window === 'undefined' ? '' : `${window.location.origin}${window.location.pathname}`
+  return `${base}#/qr/${wsId}${studentId ? `?s=${encodeURIComponent(studentId)}` : ''}`
 }
 
 /* ── 연속 페이지 축약 헤더 (§5-3): 구분선 y=17.6mm, 좌 학습지명 11pt, 우 부제 10pt #5c5c5c ── */

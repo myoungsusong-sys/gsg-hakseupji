@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SubTabs from '../components/SubTabs'
-import Placeholder from '../components/Placeholder'
+import AutoTest from '../components/prep/AutoTest'
 import { useStore, uid } from '../lib/store'
 import { useBrand } from '../lib/brand'
 import { DEFAULT_SHEET_OPTIONS } from '../types'
@@ -30,9 +30,10 @@ export default function TestPrep() {
     <div>
       <SubTabs tabs={TABS} value={tab} onChange={setTab} />
       {tab === 'entrance' ? <EntranceDiagnosis /> : (
-        <Placeholder title={label}
-          original={[DESC[tab], '학년 필터(초1~고1) + 문제수·난이도 표기 세트 목록']}
-          plan="지금은 학습지 만들기에서 태그(주간/단원/총괄 TEST)로 직접 생성 가능." />
+        <>
+          <p className="mb-3 text-sm text-ink2">{label} — {DESC[tab]}</p>
+          <AutoTest key={tab} kind={tab as 'weekly' | 'unit' | 'total'} />
+        </>
       )}
     </div>
   )

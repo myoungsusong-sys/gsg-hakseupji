@@ -52,6 +52,7 @@ interface Persisted {
   bugReports: BugReport[]
   teachers: Teacher[]
   branches: Branch[]
+  lectureLog: Record<string, string>   // 강의 출제(a|…)·시청(w|…) 기록
   ttChecks: Record<string, true>
   reviewChecks: Record<string, true>
   /** ✅ 선생님 하루 루틴 체크 — 키 `강사키|날짜|항목id`, 호출 기록 `강사키|날짜|call|학생id` (lib/routine.ts) */
@@ -83,6 +84,7 @@ const EMPTY: Persisted = {
   bugReports: [],
   teachers: [],
   branches: [],
+  lectureLog: {},
   ttChecks: {},
   reviewChecks: {},
   routineChecks: {},
@@ -152,6 +154,8 @@ interface Store extends Persisted {
   // 🗓 주간 상담 — 한 학생 한 주에 한 장(같은 id면 덮어쓴다)
   saveCounsel: (c: Counsel) => void
   // 시간표 블록 완료 체크 (학생앱) — 연결된 교재가 있으면 그날 진도표 세션 done도 같이 갱신
+  /** 강의 출제·시청 기록 한 칸 쓰기(값이 null 이면 지움). 키 꼴은 lib/lectureLog.ts */
+  setLectureLog: (entries: Record<string, string | null>) => void
   toggleTTCheck: (studentId: string, date: string, blockIdx: number, workbookId?: string) => void
   // 🏫 학교 복습 체크 (문제풀이·오답작성) — 키는 lib/schoolReview.ts reviewKey()
   toggleReviewCheck: (key: string) => void
@@ -253,6 +257,7 @@ function fromCloud(r: CloudData & { __failed?: LoadFail }, prev?: Persisted): Pe
     bugReports: keep('bugReports', r.bugReports ?? [], f.settings),
     teachers: keep('teachers', r.teachers ?? [], f.settings),
     branches: keep('branches', r.branches ?? [], f.settings),
+    lectureLog: keep('lectureLog', r.lectureLog ?? {}, f.settings),
     ttChecks: keep('ttChecks', r.ttChecks ?? {}, f.settings),
     reviewChecks: keep('reviewChecks', r.reviewChecks ?? {}, f.settings),
     routineChecks: keep('routineChecks', r.routineChecks ?? {}, f.settings),
@@ -344,7 +349,7 @@ function toCloud(s: Persisted): CloudData {
     myBooks: s.myBooks, uploads: s.uploads, sheetTemplates: s.sheetTemplates,
     lecturePlans: s.lecturePlans, solveFeedbacks: s.solveFeedbacks, teachers: s.teachers, branches: s.branches,
     bugReports: s.bugReports,
-    ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, routineChecks: s.routineChecks, schoolExams: s.schoolExams, masteries: s.masteries, schoolBooks: s.schoolBooks,
+    lectureLog: s.lectureLog, ttChecks: s.ttChecks, reviewChecks: s.reviewChecks, routineChecks: s.routineChecks, schoolExams: s.schoolExams, masteries: s.masteries, schoolBooks: s.schoolBooks,
     pointEntries: s.pointEntries, pointSettlements: s.pointSettlements,
   }
 }
@@ -662,7 +667,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     // 학생 기기: 반 전체가 같이 쓰는 큰 설정 행(승강제 진행·체크표·피드백 등)은 1분에 한 번만 다시 받는다.
     // 학생 본인 칸은 이 기기가 쓴 것이라 이미 최신이고, 남의 칸은 학생 화면에 안 쓰인다.
     // (승강제를 반 전체가 풀면 한 문제마다 이 행이 바뀌어, 그때마다 전 기기가 큰 행을 다시 받게 된다)
-    const SLOW_FOR_STUDENT = new Set(['masteries', 'ttChecks', 'reviewChecks', 'routineChecks', 'solveFeedbacks',
+    const SLOW_FOR_STUDENT = new Set(['masteries', 'lectureLog', 'ttChecks', 'reviewChecks', 'routineChecks', 'solveFeedbacks',
       'bugReports', 'pointEntries', 'pointSettlements', 'counsels', 'savedReports', 'uploads'])
     const SLOW_MS = 60_000
     const slow = new Set<string>()
@@ -971,6 +976,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const on = !next[key]
       if (on) next[key] = true; else delete next[key]
       set(s => ({ ...s, reviewChecks: next })); cloud.mergeSettingKeys('reviewChecks', on ? { [key]: true } : {}, on ? [] : [key])
+    },
+    setLectureLog: entries => {
+      const next = { ...stateRef.current.lectureLog }
+      const add: Record<string, string> = {}, del: string[] = []
+      for (const [k, v] of Object.entries(entries)) {
+        if (v == null) { delete next[k]; del.push(k) } else { next[k] = v; add[k] = v }
+      }
+      set(s => ({ ...s, lectureLog: next })); cloud.mergeSettingKeys('lectureLog', add, del)
     },
     toggleTTCheck: (studentId, date, blockIdx, workbookId) => {
       const key = `${studentId}|${date}|${blockIdx}`

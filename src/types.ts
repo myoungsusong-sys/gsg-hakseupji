@@ -54,10 +54,20 @@ export interface Problem {
   custom?: boolean
 }
 
-export type LayoutMode = 'basic' | 'split2' | 'split4' | 'split6'
+export type LayoutMode = 'basic' | 'split2' | 'split4' | 'split6' | 'split8' | 'split10' | 'split12' | 'split14' | 'split16' | 'big'
 
 export const LAYOUT_LABEL: Record<LayoutMode, string> = {
   basic: '기본', split2: '2분할', split4: '4분할', split6: '6분할',
+  split8: '8분할', split10: '10분할', split12: '12분할', split14: '14분할', split16: '16분할',
+  big: '초등 확대',
+}
+
+/** 분할 조판의 칸 짜임 — per: 한 쪽 문항 수 · rows: 줄 수 · two: 2단 여부 · scale: 문항 확대 배율(초등 확대) */
+export function splitSpec(layout: LayoutMode): { per: number; rows: number; two: boolean; scale: number } {
+  if (layout === 'split2') return { per: 2, rows: 2, two: false, scale: 1 }
+  if (layout === 'big') return { per: 3, rows: 3, two: false, scale: 1.45 }   // 한 단에 세 문제, 글씨 1.45배
+  const n = Number(layout.replace('split', '')) || 4
+  return { per: n, rows: n / 2, two: true, scale: 1 }
 }
 
 // 문항 간 세로 간격(mm) — spacing 1~5 → 인덱스 spacing-1.
@@ -81,6 +91,8 @@ export interface SheetOptions {
   autoGrade?: boolean                // 자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)
   showRelated?: boolean              // 연관 문항 정보 (같은 쌍둥이 그룹 문항 번호 캡션)
   conceptPlacement?: 'front' | 'unit'  // 개념 정리 배치: 맨 앞(기본) / 각 단원 앞
+  cover?: boolean                    // 표지 쪽 — 문제지 맨 앞에 표지 한 장(학원 로고·제목·범위·이름 칸)
+  showQr?: boolean                   // 머리말 QR(찍으면 답 입력·채점 화면) — 없으면 켬
 }
 
 export const DEFAULT_SHEET_OPTIONS: SheetOptions = {
@@ -196,6 +208,7 @@ export interface Teacher {
   phone?: string
   subjects?: string[]        // 담당 과목
   classes?: string[]         // 담당 반 이름
+  scope?: 'admin' | 'all' | 'mine'   // 권한 — 관리자 / 전체 학생 / 담당 학생만(수업 화면에 담당 반 학생만 보인다). 없으면 전체 학생
   loginId?: string           // 강사 계정 아이디 (t-<loginId>@teacher.gsg.app 규약)
   // 🔴 강사가 **본인 이메일로 직접 가입**한 경우의 로그인 이메일 (2026-08-21).
   //    관리자 API 가 막혀 아이디 발급이 안 될 때 강사가 스스로 가입하는 길을 텄는데,
@@ -377,6 +390,7 @@ export interface Grading {
   date: string
   pageFrom?: number
   pageTo?: number
+  round?: number        // 교재 n회독 — 2회차부터 적는다(없으면 1회차)
   results: GradeResult[]
   // ── 외부 이관 이력(매쓰플랫 등) — 원본 학습지/문제를 참조하지 않는 '표시 전용' 기록.
   //    재풀이·재채점은 불가하고, 학습내역·오늘의학습·보고서 집계에만 반영된다.
@@ -472,6 +486,7 @@ export interface StudentAppConfig {
   // 🪜 승강제 하루 문제 수 — 과목 공통(2026-10-06 명수쌤). 비면 lib/masterySet.ts 의 20.
   //    이 수에 닿으면 그날 승강제는 멈추고, 다음에 와서 그 자리에서 이어 푼다(= 한 세트).
   masteryDailyCap?: number
+  lectureOpen?: boolean          // 학생앱 강의 전체공개 — 켜면 학생이 자기 학년 강의를 골라 본다(끄면 선생님이 낸 강의만)
   lab?: LabConfig                // 실험실 설정
 }
 
@@ -491,7 +506,20 @@ export interface AcademyProfile {
   teacherName?: string    // 선생님 이름 (학습지·반 담당 표시)
   phone?: string          // 연락처
   contactEmail?: string   // 대표 이메일
+  logo?: string           // 학원 로고 그림(dataURL, 가로 600px 이하로 줄여 저장) — 학습지 머리말 오른쪽 위에 찍힌다
+  logoOff?: boolean       // 로고 사용 안 함(그림을 지우지 않고 끄기만)
+  notices?: ParentNotice[] // 학부모앱 공지 — 관리 > 추가 관리에서 쓴다. 학부모 홈에 최신순으로 보인다
   address?: string        // 교육기관 주소 — 학교별 기출을 우리 지역 학교부터 보이는 데 쓴다 (2026-11-07)
+}
+
+// 학부모앱 공지 한 건
+export interface ParentNotice {
+  id: string
+  kind: '공지' | '안내' | '행사'
+  title: string
+  body: string
+  date: string       // ISO (쓴 날)
+  hidden?: boolean   // 노출 끔
 }
 
 // 강의 진도표 — 학생×교재 1개. 수업일별로 진도(쪽 범위·단원)를 배분한 계획

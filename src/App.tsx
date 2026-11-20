@@ -41,6 +41,7 @@ import StudentMastery from './pages/student/StudentMastery'
 import StudentUnit from './pages/student/StudentUnit'
 import TestPrep from './pages/TestPrep'
 import Lesson from './pages/Lesson'
+import QrEntry from './pages/QrEntry'
 import TodayRoom from './pages/TodayRoom'
 import Routine from './pages/Routine'
 import DailySet from './pages/DailySet'
@@ -130,6 +131,8 @@ function Gate() {
 
           {/* ── 학생앱 (#/student/*) — 선생님 메뉴 없는 학생 전용 셸 ── */}
           <Route path="/student-login" element={<StudentLocalLogin />} />
+          {/* 종이 학습지 QR — 학생은 답 입력, 선생님은 채점 화면으로 갈라 보낸다 */}
+          <Route path="/qr/:wsId" element={<QrEntry />} />
           <Route path="/student" element={<StudentShell />}>
             <Route index element={<StudentHome />} />
             <Route path="worksheets" element={<StudentWorksheets />} />

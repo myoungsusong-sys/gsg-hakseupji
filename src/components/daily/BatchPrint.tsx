@@ -187,9 +187,8 @@ export default function BatchPrint({
         throw e
       })
       if (!mod) { setBusy(''); return }
-      const doc = await mod.buildSheetPdf()
       const name = `기본과제_${today.getMonth() + 1}월${today.getDate()}일_${pages.length}쪽`
-      if (act === 'print') mod.printPdf(doc, name); else mod.savePdf(doc, name)
+      await mod.outputPages(act, name)   // PDF 로 뜨기가 안 되는 브라우저·실패 때는 브라우저 인쇄로 저절로 넘어간다
       setDone(true)
     } catch (e) {
       alert('PDF 생성에 실패했습니다.\n' + String(e).slice(0, 140))

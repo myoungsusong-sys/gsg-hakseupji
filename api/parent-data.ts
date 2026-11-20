@@ -64,6 +64,21 @@ export default async function handler(req: any, res: any) {
     for (const k of Object.keys(allChecks)) if (k.startsWith(`${me.id}|`)) myChecks[k] = true
     const allPlans = settings.find((s: any) => s?.__id === 'lecturePlans')?.value ?? []
     const allPts = settings.find((s: any) => s?.__id === 'pointEntries')?.value ?? []
+    // 숙제 목록(최근 60일 · 예약 전·비공개·지운 학습지 제외) · 저장 보고서 · 학원 공지 — 자녀 것만
+    const allAs = settings.find((s: any) => s?.__id === 'assignments')?.value ?? []
+    const allRep = settings.find((s: any) => s?.__id === 'savedReports')?.value ?? []
+    const myAs = (Array.isArray(allAs) ? allAs : []).filter((a: any) => a?.studentId === me.id)
+    const now = Date.now(), cut = new Date(now - 60 * 864e5).toISOString()
+    let homework: any[] = []
+    if (myAs.length) {
+      const ws = new Map((await allData(sb, 'hj_worksheets')).filter(Boolean).map((w: any) => [w.id, w]))
+      homework = myAs
+        .filter((a: any) => a.date >= cut && !(a.scheduledAt && new Date(a.scheduledAt).getTime() > now))
+        .map((a: any) => ({ a, w: ws.get(a.worksheetId) as any }))
+        .filter((x: any) => x.w && !x.w.deletedAt && !x.w.studentHidden)
+        .map((x: any) => ({ id: x.a.id, worksheetId: x.w.id, title: x.w.title, kind: x.a.kind, date: x.a.date, count: (x.w.problemIds ?? []).length }))
+        .sort((x: any, y: any) => String(y.date).localeCompare(String(x.date)))
+    }
 
     res.status(200).json({
       student: {
@@ -76,6 +91,9 @@ export default async function handler(req: any, res: any) {
       ttChecks: myChecks,
       lecturePlans: (Array.isArray(allPlans) ? allPlans : []).filter((p: any) => p?.studentId === me.id),
       pointEntries: (Array.isArray(allPts) ? allPts : []).filter((e: any) => e?.studentId === me.id),
+      homework,
+      reports: (Array.isArray(allRep) ? allRep : []).filter((r: any) => r?.studentId === me.id),
+      notices: (Array.isArray(profile?.notices) ? profile.notices : []).filter((x: any) => !x?.hidden),
     })
   } catch (e: any) {
     res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
