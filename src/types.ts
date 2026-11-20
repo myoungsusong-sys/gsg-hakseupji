@@ -389,6 +389,7 @@ export interface Grading {
   date: string
   pageFrom?: number
   pageTo?: number
+  round?: number        // 교재 n회독 — 2회차부터 적는다(없으면 1회차)
   results: GradeResult[]
   // ── 외부 이관 이력(매쓰플랫 등) — 원본 학습지/문제를 참조하지 않는 '표시 전용' 기록.
   //    재풀이·재채점은 불가하고, 학습내역·오늘의학습·보고서 집계에만 반영된다.
