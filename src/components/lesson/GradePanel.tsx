@@ -182,13 +182,30 @@ export default function GradePanel({ student }: { student: Student }) {
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'retry'>('idle')
   const [savedAt, setSavedAt] = useState('')
 
-  // 교재 전환·매칭 문항 로드 시: 마지막으로 보던 쪽 범위를 복원(없거나 무효면 교재 전체)
+  // 교재 전환·매칭 문항 로드 시: 마지막으로 보던 쪽 범위를 복원. 없거나 무효면 **한 쪽**만 연다.
+  // 🔴 2026-11-20 명수쌤 «답안이 페이지별로 나오지 않고 한꺼번에 다 나옵니다»:
+  //    예전에는 기억해 둔 범위가 없으면 «첫 쪽 ~ 끝 쪽»(책 전체)을 열었고, 그 범위를 그대로 기억해서
+  //    다음에도 1,600문항이 한꺼번에 떴다. 이제 ① 아직 채점이 안 끝난 첫 쪽(다 끝났으면 첫 쪽) 한 쪽만 열고
+  //    ② 기억해 둔 범위가 «책 전체»이면(옛 기본값이 남은 것) 고른 것으로 치지 않는다.
+  //    여러 쪽을 한 번에 보려면 위의 쪽 칸에 범위를 직접 적으면 된다(그 범위는 기억된다).
   useEffect(() => {
     if (pages.length) {
+      const first = pages[0][0], last = pages[pages.length - 1][0]
       const saved = wbId ? lvGet(student.id).pages?.[wbId] : undefined
-      const ok = saved && pages.some(([p]) => p === saved[0]) && pages.some(([p]) => p === saved[1]) && saved[0] <= saved[1]
-      if (ok) { setFrom(saved![0]); setTo(saved![1]) }
-      else { setFrom(pages[0][0]); setTo(pages[pages.length - 1][0]) }
+      const valid = saved && pages.some(([p]) => p === saved[0]) && pages.some(([p]) => p === saved[1]) && saved[0] <= saved[1]
+      const whole = valid && pages.length > 1 && saved![0] === first && saved![1] === last
+      if (valid && !whole) { setFrom(saved![0]); setTo(saved![1]) }
+      else {
+        const graded = new Set<string>()
+        for (const g of gradingsRef.current) {
+          if (g.studentId !== student.id || g.workbookId !== wbId) continue
+          for (const r of g.results) if (r.itemId) graded.add(r.itemId)
+        }
+        const doneOf = new Map<number, number>()
+        for (const i of items) if (graded.has(i.id)) doneOf.set(i.page, (doneOf.get(i.page) ?? 0) + 1)
+        const open = pages.find(([p, n]) => (doneOf.get(p) ?? 0) < n)?.[0] ?? first
+        setFrom(open); setTo(open)
+      }
     }
     setSelecting(false); setSelected(new Set()); setPageChecked(new Set())
     // eslint-disable-next-line react-hooks/exhaustive-deps
