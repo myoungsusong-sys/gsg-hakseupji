@@ -1326,7 +1326,7 @@ export default function MakeWizard() {
 
             <div className="grid gap-1.5 text-sm font-bold">
               분할 선택
-              <div className="flex gap-2 font-normal">
+              <div className="flex flex-wrap gap-2 font-normal">
                 {(Object.keys(LAYOUT_LABEL) as LayoutMode[]).map(l => (
                   <button key={l} onClick={() => setOpts(o => ({ ...o, layout: l }))}
                     className={`rounded-lg border px-4 py-2 text-sm ${opts.layout === l ? 'border-pine bg-pine-soft font-semibold text-pine-dark' : 'border-line text-ink2'}`}>
@@ -1334,7 +1334,7 @@ export default function MakeWizard() {
                   </button>
                 ))}
               </div>
-              <span className="text-xs font-normal text-ink2">기본=2단 흘림 배치 · 2/4/6분할=문제마다 고정 칸(풀이 공간 확보)</span>
+              <span className="text-xs font-normal text-ink2">기본=2단 흘림 배치 · 2~16분할=문제마다 고정 칸(8분할부터는 연산처럼 짧은 문제용) · 초등 확대=한 쪽 세 문제, 큰 글씨</span>
             </div>
 
             <label className="grid gap-1.5 text-sm font-bold">
@@ -1404,6 +1404,11 @@ export default function MakeWizard() {
                   <input type="checkbox" checked={opts.showQr ?? true}
                     onChange={e => setOpts(o => ({ ...o, showQr: e.target.checked }))} className="h-4 w-4 accent-pine" />
                   QR 표시 <span className="text-xs text-ink2">ⓘ</span>
+                </label>
+                <label className="flex items-center gap-2" title="문제지 맨 앞에 표지 한 장을 넣습니다(학원 로고·제목·범위·이름 칸). 표지 색은 위에서 고른 색을 따릅니다">
+                  <input type="checkbox" checked={opts.cover ?? false}
+                    onChange={e => setOpts(o => ({ ...o, cover: e.target.checked }))} className="h-4 w-4 accent-pine" />
+                  표지 쪽 넣기 <span className="text-xs text-ink2">ⓘ</span>
                 </label>
                 <label className="flex items-center gap-2">
                   <input type="checkbox" checked={opts.wrongNoteArea}

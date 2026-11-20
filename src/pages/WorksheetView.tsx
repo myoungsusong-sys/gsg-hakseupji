@@ -13,7 +13,7 @@ import { poolStagesFor } from '../lib/wsPools'
 import { problemCoursesOf } from '../data/problemCourses'
 import { zbBodyFor } from '../lib/zbPassage'
 import { probIndex } from '../lib/probIndex'
-import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf } from '../types'
+import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, THEMES, spacingMmOf, splitSpec } from '../types'
 
 /* ═══════════════════════════════════════════════════════════════════
    매쓰플랫 원본 PDF 실측 지오메트리 (오답루프실사_매쓰플랫_2026-07-08.md §5~7)
@@ -384,7 +384,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'cols', cols: [cols[0], cols[1]], conceptsFirst: pi === 0 && frontConcepts }))
       }
     } else {
-      const per = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 4 : 6
+      const per = splitSpec(opts.layout).per
       for (let i = 0; i < items.length; i += per) {
         const slots: number[] = []
         for (let k = i; k < Math.min(i + per, items.length); k++) slots.push(k)
@@ -756,13 +756,13 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       </div>
     )
     if (pg.kind === 'split') {
-      const two = opts.layout !== 'split2'
-      const nrows = opts.layout === 'split2' ? 2 : opts.layout === 'split4' ? 2 : 3
+      const { two, rows: nrows, scale } = splitSpec(opts.layout)
+      const dense = nrows >= 3 && two            // 6분할부터는 글씨를 조금 줄인다
       const slotH = availOf(pg) / nrows - 3      // 칸 아래 여백 2mm + 점선
       return (
         <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
           {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
-          <div className={opts.layout === 'split6' ? 'text-[92%]' : ''}
+          <div className={dense ? 'text-[92%]' : ''}
             style={{
               flex: 1, minHeight: 0, display: 'grid', columnGap: `${G.colGap}mm`,
               gridTemplateColumns: two ? '1fr 1fr' : '1fr', gridTemplateRows: `repeat(${nrows}, 1fr)`, gridAutoFlow: 'column',
@@ -770,7 +770,11 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             {pg.slots.map(i => (
               <div key={i} style={{ overflow: 'hidden', borderBottom: '1px dotted #e3e8ef', paddingBottom: '2mm' }}>
                 {/* 4·6분할 칸은 단 폭(colW)과 같아 잰 높이를 그대로 쓴다 — 칸보다 긴 문항은 칸에 맞춰 줄인다 */}
-                {two ? fitBox(problemAt(i), `p${i}`, G.colW, slotH) : problemAt(i)}
+                {two ? fitBox(problemAt(i), `p${i}`, G.colW, slotH)
+                  : scale !== 1
+                    // 초등 확대 — 문항을 단 폭으로 그린 뒤 통째로 키운다(글씨·그림이 같이 커진다)
+                    ? <div style={{ width: `${CONTENT_W / scale}mm`, transform: `scale(${scale})`, transformOrigin: 'top left' }}>{problemAt(i)}</div>
+                    : problemAt(i)}
               </div>
             ))}
           </div>
@@ -951,6 +955,35 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       )}
 
       {/* ══ A4 실물 페이지 (문제지 → 빠른정답 → 해설지, 페이지 번호 부 전체 연속) ══ */}
+      {/* 표지 쪽(옵션) — 문제지를 뽑을 때 맨 앞에 한 장. 쪽 번호는 매기지 않는다 */}
+      {ready && opts.cover && show.s && (
+        <div className="mf-page" data-cover>
+          <div style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '92mm', background: theme.main }} />
+          <div style={{ position: 'absolute', left: 0, top: '92mm', width: '100%', height: '3mm', background: theme.soft }} />
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', top: '30mm', color: '#ffffff' }}>
+            <div style={{ fontSize: '13pt', fontWeight: 700, opacity: 0.9 }}>{ws.tags?.[0] || ws.grade}{ws.tags?.[0] ? ` · ${ws.grade}` : ''}</div>
+            <div className="line-clamp-3" style={{ marginTop: '5mm', fontSize: '30pt', fontWeight: 800, lineHeight: 1.25, letterSpacing: '-0.01em' }}>{ws.title}</div>
+          </div>
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', top: '112mm', color: '#1c1b18' }}>
+            {subtitle && <div style={{ fontSize: '14pt', color: '#5c5c5c', lineHeight: 1.5 }}>{subtitle}</div>}
+            <div style={{ marginTop: '10mm', display: 'grid', gridTemplateColumns: '24mm 1fr', rowGap: '5mm', fontSize: '12pt' }}>
+              <span style={{ color: '#8a8a84' }}>문항 수</span><b>{items.length}문제</b>
+              <span style={{ color: '#8a8a84' }}>날짜</span><b>{dateText ?? new Date(ws.createdAt).toLocaleDateString('ko-KR')}</b>
+              <span style={{ color: '#8a8a84' }}>출제</span><b>{ws.author}</b>
+            </div>
+          </div>
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', bottom: '52mm', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '10mm', fontSize: '12pt' }}>
+            <div style={{ borderBottom: '1pt solid #1c1b18', paddingBottom: '3mm' }}><span style={{ color: '#8a8a84', marginRight: '4mm' }}>이름</span><b>{studentName ?? ''}</b></div>
+            <div style={{ borderBottom: '1pt solid #1c1b18', paddingBottom: '3mm' }}><span style={{ color: '#8a8a84' }}>점수</span></div>
+          </div>
+          <div style={{ position: 'absolute', left: '22mm', right: '22mm', bottom: '22mm', display: 'flex', justifyContent: 'center' }}>
+            {academyProfile.logo && !academyProfile.logoOff
+              ? <img src={academyProfile.logo} alt="" style={{ maxWidth: '70mm', maxHeight: '15mm', objectFit: 'contain' }} />
+              : <div style={{ fontSize: '14pt', fontWeight: 800, color: '#333333' }}>{academyProfile.academyName ?? ws.author}</div>}
+          </div>
+        </div>
+      )}
+
       {ready && pagesAll!.map((pg, gi) => show[pg.part] && (
         <div key={gi} className={`mf-page ${gi === lastVisible ? 'mf-last' : ''}`}>
           {pg.first ? header1 : headerN}

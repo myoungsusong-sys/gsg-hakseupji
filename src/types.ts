@@ -54,10 +54,20 @@ export interface Problem {
   custom?: boolean
 }
 
-export type LayoutMode = 'basic' | 'split2' | 'split4' | 'split6'
+export type LayoutMode = 'basic' | 'split2' | 'split4' | 'split6' | 'split8' | 'split10' | 'split12' | 'split14' | 'split16' | 'big'
 
 export const LAYOUT_LABEL: Record<LayoutMode, string> = {
   basic: '기본', split2: '2분할', split4: '4분할', split6: '6분할',
+  split8: '8분할', split10: '10분할', split12: '12분할', split14: '14분할', split16: '16분할',
+  big: '초등 확대',
+}
+
+/** 분할 조판의 칸 짜임 — per: 한 쪽 문항 수 · rows: 줄 수 · two: 2단 여부 · scale: 문항 확대 배율(초등 확대) */
+export function splitSpec(layout: LayoutMode): { per: number; rows: number; two: boolean; scale: number } {
+  if (layout === 'split2') return { per: 2, rows: 2, two: false, scale: 1 }
+  if (layout === 'big') return { per: 3, rows: 3, two: false, scale: 1.45 }   // 한 단에 세 문제, 글씨 1.45배
+  const n = Number(layout.replace('split', '')) || 4
+  return { per: n, rows: n / 2, two: true, scale: 1 }
 }
 
 // 문항 간 세로 간격(mm) — spacing 1~5 → 인덱스 spacing-1.
@@ -81,6 +91,7 @@ export interface SheetOptions {
   autoGrade?: boolean                // 자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)
   showRelated?: boolean              // 연관 문항 정보 (같은 쌍둥이 그룹 문항 번호 캡션)
   conceptPlacement?: 'front' | 'unit'  // 개념 정리 배치: 맨 앞(기본) / 각 단원 앞
+  cover?: boolean                    // 표지 쪽 — 문제지 맨 앞에 표지 한 장(학원 로고·제목·범위·이름 칸)
   showQr?: boolean                   // 머리말 QR(찍으면 답 입력·채점 화면) — 없으면 켬
 }
 
