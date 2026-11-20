@@ -430,6 +430,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   // download=파일 저장 / print=PDF를 숨김 iframe에 띄워 바로 인쇄창.
   // window.print()+CSS 방식은 브라우저 인쇄 설정(여백·배율·용지)에 따라 조판이 깨져서 폐지했다 (2026-08-01).
   const [making, setMaking] = useState(false)   // "PDF 만드는 중…" 오버레이
+  const [prog, setProg] = useState('')          // 몇 쪽째 뜨는 중인지
+  const nativeRef = useRef(false)               // 이번 출력은 브라우저 인쇄 길로 가는 중(한 번 넘어가면 남은 벌도 같은 길)
   useEffect(() => {
     if (!job || !ws) return
     let alive = true
@@ -454,25 +456,45 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
           throw e
         })
         if (!mod) return
-        const { capturePages, pdfFromShots, savePdf, printPdf } = mod
-        accRef.current.push(await capturePages())
-        if (!job.hold) {
-          const groups = accRef.current
+        const { capturePages, pdfFromShots, savePdf, printPdf, printNative, rasterSupported } = mod
+        // 🔴 2026-11-20 «출력이 잘 안 된다» — 화면을 그림으로 떠서 PDF 를 만드는 길은 사파리·아이패드·아이폰에서 막혀 있고,
+        //    그림 하나를 못 받으면 문항이 빠진 채 나갔다. 이제 ① 이 브라우저가 할 수 있는지 먼저 재고
+        //    ② 뜨다가 실패하면(그림 못 받음·시간 초과·메모리) ③ 브라우저 인쇄 길로 저절로 넘어간다.
+        let native = nativeRef.current || !(await rasterSupported())
+        if (!native) {
+          try {
+            accRef.current.push(await capturePages((d, t) => setProg(`${Math.min(d + 1, t)}/${t}쪽`)))
+            if (!job.hold) {
+              const groups = accRef.current
+              accRef.current = []
+              const doc = await pdfFromShots(groups, outOptsRef.current)
+              const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
+              if (job.act === 'print') printPdf(doc, filename)
+              else savePdf(doc, filename)
+            }
+          } catch (e) {
+            if (isStaleChunkError(e)) throw e
+            console.warn('PDF 뜨기 실패 — 브라우저 인쇄로 넘어감', String(e).slice(0, 160))
+            native = true
+          }
+        }
+        if (native) {
+          // 여러 학생 몫을 잇던 중이었으면 앞에서 모은 그림은 버리고, 남은 벌은 한 벌씩 인쇄 창으로 보낸다
+          nativeRef.current = true
           accRef.current = []
-          const doc = await pdfFromShots(groups, outOptsRef.current)
-          const filename = `${ws.title}_${job.label}`.replace(/\s+/g, '_')
-          if (job.act === 'print') printPdf(doc, filename)
-          else savePdf(doc, filename)
+          setMaking(false)
+          await printNative(outOptsRef.current, job.act !== 'print')
         }
       } catch (e) {
-        accRef.current = []; jobQueueRef.current = []
-        alert('PDF 생성에 실패했습니다. 잠시 후 다시 시도해주세요.\n' + String(e).slice(0, 120))
+        accRef.current = []; jobQueueRef.current = []; nativeRef.current = false
+        alert('출력을 만들지 못했습니다. 화면을 새로고침한 뒤 다시 해 주세요.\n' + String(e).slice(0, 120))
       }
       if (!alive) return
-      setMaking(false)
+      setMaking(false); setProg('')
       const next = jobQueueRef.current.shift()
       if (next) { setJob(next); return }
       setJob(null)
+      nativeRef.current = false
       // 자동 실행(다이얼로그 경유)이었다면 쿼리 제거 → 이후엔 일반 미리보기 화면
       if (new URLSearchParams(window.location.hash.split('?')[1] ?? '').has('out')) {
         setSearchParams({}, { replace: true })
@@ -894,7 +916,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         <div className="no-print fixed inset-0 z-50 flex items-center justify-center bg-ink/40">
           <div className="flex items-center gap-3 rounded-2xl bg-white px-8 py-6 text-sm font-bold shadow-xl">
             <span className="inline-block h-5 w-5 animate-spin rounded-full border-2 border-line border-t-pine" />
-            PDF 만드는 중… ({job?.label})
+            PDF 만드는 중… ({job?.label}{job?.who ? ` · ${job.who.name}` : ''}{prog ? ` · ${prog}` : ''})
           </div>
         </div>
       )}

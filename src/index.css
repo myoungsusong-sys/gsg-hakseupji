@@ -46,9 +46,12 @@
 
 /* 정리노트 인쇄 — .note-print 안만 A4로 깔끔하게 */
 .note-printonly { display: none; }          /* 화면에선 숨김 (인쇄용 빈칸 밑줄 등) */
+/* 🔴 2026-11-20: 예전엔 `body * { visibility: hidden }` 를 **모든 화면**에 걸었다. 그래서 .note-print 가 없는 화면
+   (일일 보고지·월간 보고서·유형분석·사용법·기출·영어 시험지·학습지)을 브라우저 인쇄로 뽑으면 빈 종이만 나왔다(실측 글자 0자).
+   → 화면에 .note-print 가 **있을 때만** 나머지를 숨긴다. */
 @media print {
-  body * { visibility: hidden; }
-  .note-print, .note-print * { visibility: visible; }
+  body:has(.note-print) * { visibility: hidden; }
+  body:has(.note-print) .note-print, body:has(.note-print) .note-print * { visibility: visible; }
   .note-print { position: absolute; inset: 0; margin: 0; box-shadow: none; max-width: 100%; }
   .note-noprint { display: none !important; }
   .note-printonly { display: inline-block !important; }   /* 인쇄 땐 빈칸을 밑줄로 */
@@ -118,6 +121,12 @@ body {
     break-after: auto;
     page-break-after: auto;
   }
+  /* 브라우저 인쇄 길(lib/sheetPdf.ts printNative) — 쪽 범위 밖은 숨기고, 보이는 마지막 쪽 뒤에는 빈 쪽을 만들지 않는다 · 흑백 */
+  .mf-page[data-print-skip] { display: none !important; }
+  .mf-page[data-print-last] { break-after: auto !important; page-break-after: auto !important; }
+  body.print-bw .mf-page { filter: grayscale(1); }
+  /* 쪽이 떠 있는 겹창(보고서 등)이 화면 높이에 잘리지 않게 */
+  .mf-page { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* MakeWizard STEP3 축소 미리보기 등에서 사용 (WorksheetView 실지면은 JS 페이지네이션으로 대체) */

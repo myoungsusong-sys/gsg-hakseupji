@@ -94,9 +94,7 @@ export default function OneClickReport({ student, ws, list, onClose }: {
     setBusy(true)
     try {
       const mod = await import('../../lib/sheetPdf')
-      const doc = await mod.buildSheetPdf()
-      const name = `${student.name}_${ws.title}_보고서`.replace(/\s+/g, '_')
-      if (act === 'print') mod.printPdf(doc, name); else mod.savePdf(doc, name)
+      await mod.outputPages(act, `${student.name}_${ws.title}_보고서`.replace(/\s+/g, '_'))
     } catch (e) {
       alert(isStaleChunkError(e)
         ? '새 버전이 배포되어 화면이 오래됐어요. 새로고침한 뒤 다시 눌러 주세요.'

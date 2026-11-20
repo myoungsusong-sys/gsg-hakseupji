@@ -8,13 +8,15 @@
 // 원리: 페이지 클론(+화면전용 요소 제거) → <img>·@font-face를 dataURL로 인라인 →
 //       문서 CSS와 함께 foreignObject SVG로 직렬화 → Image로 로드 → canvas에 3배 렌더.
 import { jsPDF } from 'jspdf'
-import { captureNode } from './domShot'
+import { captureNode, rasterSupported } from './domShot'
+export { rasterSupported }
 
 const A4 = { w: 210, h: 297 }   // mm
 const RATIO = 3                 // 300dpi급 (페이지 794px × 3 ≈ 2382px)
 
 // 캡처 본체는 domShot.ts 로 옮겼다(문제 바로 질문도 같이 쓴다) — 동작은 그대로(3배 렌더).
-const capturePage = (page: HTMLElement) => captureNode(page, RATIO)
+// 쪽이 아주 많으면(40쪽↑) 배율을 낮춘다 — 낮은 사양 PC·태블릿에서 메모리가 터져 탭이 죽지 않게(2.2배 ≈ 210dpi)
+const ratioFor = (pages: number) => (pages > 40 ? 2.2 : RATIO)
 
 /** 출력 옵션 — 인쇄·내려받기 창에서 고른 것 (2026-11-20)
  *  pages: «1,3,5-7» 꼴 쪽 범위(비면 전체) · reverse: 역순 · bw: 흑백 · copies: 매수(한 벌씩 이어 붙임) */
@@ -39,17 +41,72 @@ export function parsePageRange(text: string | undefined, total: number): number[
 }
 
 /* 지금 화면의 .mf-page 들을 순서대로 캡처해 쪽 그림(JPEG dataURL) 목록으로 돌려준다 */
-export async function capturePages(): Promise<string[]> {
+export async function capturePages(onProgress?: (done: number, total: number) => void): Promise<string[]> {
   const pages = [...document.querySelectorAll<HTMLElement>('.mf-page')]
   if (pages.length === 0) throw new Error('조판된 페이지가 없습니다')
   try { await document.fonts.ready } catch { /* 미지원 브라우저 — 그대로 진행 */ }
+  const ratio = ratioFor(pages.length)
   const shots: string[] = []
-  for (const page of pages) {
-    const canvas = await capturePage(page)
+  for (let i = 0; i < pages.length; i++) {
+    onProgress?.(i, pages.length)
+    const canvas = await captureNode(pages[i], ratio, { strictImages: true })
     // JPEG 0.92 — 문항이 원래 래스터 이미지라 화질 손실 체감 없이 용량을 크게 줄인다
     shots.push(canvas.toDataURL('image/jpeg', 0.92))
+    canvas.width = canvas.height = 0                              // 큰 캔버스를 바로 놓아준다
+    await new Promise(r => setTimeout(r, 0))                      // 화면이 굳지 않게 한 박자 쉰다
   }
+  onProgress?.(pages.length, pages.length)
   return shots
+}
+
+/* ── 브라우저 인쇄 길 — «화면을 그림으로 뜨기»가 안 되는 브라우저(사파리·아이패드·아이폰)나 뜨다가 실패했을 때 ──
+   지금 화면에 조판된 .mf-page 를 그대로 브라우저 인쇄 창으로 보낸다(글자는 글자 그대로라 또렷하고, 그림도 브라우저가 직접 받는다).
+   파일로 받으려면 인쇄 창에서 «PDF로 저장»을 고른다 — 안내 상자를 함께 띄운다.
+   쪽 범위·흑백은 여기서도 적용된다. 매수·역순은 인쇄 창에서 고른다. */
+export async function printNative(opts: SheetOutOpts = {}, wantFile = false): Promise<void> {
+  const pages = [...document.querySelectorAll<HTMLElement>('.mf-page')]
+  if (pages.length === 0) throw new Error('조판된 페이지가 없습니다')
+  const keep = new Set(parsePageRange(opts.pages, pages.length))
+  pages.forEach((pg, i) => { if (keep.has(i)) pg.removeAttribute('data-print-skip'); else pg.setAttribute('data-print-skip', '') })
+  const shown = pages.filter((_, i) => keep.has(i))
+  pages.forEach(pg => pg.removeAttribute('data-print-last'))
+  shown[shown.length - 1]?.setAttribute('data-print-last', '')
+  document.body.classList.toggle('print-bw', !!opts.bw)
+  // 그림이 다 뜬 뒤에 인쇄 창을 연다(안 뜬 그림은 빈칸으로 찍힌다) — 길어도 8초
+  const imgs = shown.flatMap(pg => [...pg.querySelectorAll('img')]).filter(im => !im.complete)
+  await Promise.race([
+    Promise.all(imgs.map(im => new Promise<void>(r => { im.addEventListener('load', () => r(), { once: true }); im.addEventListener('error', () => r(), { once: true }) }))),
+    new Promise(r => setTimeout(r, 8000)),
+  ])
+  showNativeHelp(wantFile)
+  const cleanup = () => {
+    pages.forEach(pg => { pg.removeAttribute('data-print-skip'); pg.removeAttribute('data-print-last') })
+    document.body.classList.remove('print-bw')
+  }
+  await new Promise<void>(res => {
+    let done = false
+    const fin = () => { if (done) return; done = true; window.removeEventListener('afterprint', fin); cleanup(); res() }
+    window.addEventListener('afterprint', fin)
+    try { window.print() } catch { fin(); return }
+    setTimeout(fin, 180_000)                                      // afterprint 를 안 쏘는 브라우저 대비
+  })
+}
+
+function showNativeHelp(wantFile: boolean): void {
+  document.getElementById('print-help')?.remove()
+  const box = document.createElement('div')
+  box.id = 'print-help'
+  box.className = 'no-print'
+  box.style.cssText = 'position:fixed;right:16px;bottom:16px;z-index:9999;max-width:330px;padding:12px 14px;border-radius:14px;'
+    + 'background:#fff;border:1px solid #d9d4c7;box-shadow:0 8px 24px rgba(0,0,0,.15);font:13px/1.55 system-ui,sans-serif;color:#1c1b18'
+  box.innerHTML = `<div style="font-weight:800;margin-bottom:6px">${wantFile ? '📄 PDF 파일로 받으려면' : '🖨 인쇄 창이 열립니다'}</div>`
+    + `<div style="color:#6b675d">${wantFile
+      ? '인쇄 창에서 <b>대상(프린터)을 «PDF로 저장»</b>으로 고른 뒤 저장을 누르세요. 아이패드·아이폰은 미리보기를 두 손가락으로 벌린 뒤 공유 → «파일에 저장»입니다.'
+      : '용지는 A4, 여백은 «없음», 배율은 100%로 두면 화면 그대로 찍힙니다.'}</div>`
+    + '<div style="margin-top:8px;text-align:right"><button style="padding:5px 10px;border-radius:8px;border:1px solid #d9d4c7;background:#fff;color:#6b675d;cursor:pointer">닫기</button></div>'
+  box.querySelector('button')!.addEventListener('click', () => box.remove())
+  document.body.appendChild(box)
+  setTimeout(() => box.remove(), 40_000)
 }
 
 /* 쪽 그림 하나를 흑백으로 */
@@ -102,6 +159,20 @@ export async function pdfFromShots(groups: string[][], opts: SheetOutOpts = {}):
 /* 현재 문서의 .mf-page 들을 순서대로 캡처해 하나의 PDF로 만든다 */
 export async function buildSheetPdf(opts: SheetOutOpts = {}): Promise<jsPDF> {
   return pdfFromShots([await capturePages()], opts)
+}
+
+/** 지금 화면의 쪽들을 내보낸다(보고서·일괄 출력용) — PDF 로 떠서 저장·인쇄하고, 이 브라우저에서 안 되거나 뜨다 실패하면
+ *  브라우저 인쇄 길로 저절로 넘어간다. 돌려주는 값: 어느 길로 나갔는지 */
+export async function outputPages(act: 'download' | 'print', filename: string, opts: SheetOutOpts = {}): Promise<'pdf' | 'native'> {
+  if (await rasterSupported()) {
+    try {
+      const doc = await buildSheetPdf(opts)
+      if (act === 'print') printPdf(doc, filename); else savePdf(doc, filename)
+      return 'pdf'
+    } catch (e) { console.warn('PDF 뜨기 실패 — 브라우저 인쇄로 넘어감', String(e).slice(0, 160)) }
+  }
+  await printNative(opts, act === 'download')
+  return 'native'
 }
 const PAGE_SHOTS = new WeakMap<jsPDF, string[]>()
 

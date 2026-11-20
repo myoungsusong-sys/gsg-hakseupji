@@ -102,9 +102,7 @@ export default function PeriodReport({ student }: { student: Student }) {
     setBusy(true)
     try {
       const mod = await import('../../lib/sheetPdf')
-      const doc = await mod.buildSheetPdf()
-      const name = `${student.name}_${label}_학습보고서`.replace(/\s+/g, '_')
-      if (act === 'print') mod.printPdf(doc, name); else mod.savePdf(doc, name)
+      await mod.outputPages(act, `${student.name}_${label}_학습보고서`.replace(/\s+/g, '_'))
     } catch (e) { alert('PDF 를 만들지 못했어요. 잠시 뒤 다시 해 주세요.\n' + String(e).slice(0, 120)) }
     setBusy(false)
   }
