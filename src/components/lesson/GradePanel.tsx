@@ -215,7 +215,7 @@ export default function GradePanel({ student }: { student: Student }) {
       else {
         const graded = new Set<string>()
         for (const g of gradingsRef.current) {
-          if (g.studentId !== student.id || g.workbookId !== wbId) continue
+          if (g.studentId !== student.id || g.workbookId !== wbId || (g.round ?? 1) !== round) continue   // 지금 회차 기준
           for (const r of g.results) if (r.itemId) graded.add(r.itemId)
         }
         const doneOf = new Map<number, number>()
