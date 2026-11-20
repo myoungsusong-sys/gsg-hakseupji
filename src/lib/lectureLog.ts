@@ -28,3 +28,12 @@ export function watchOf(log: Record<string, string>, sid: string, course: string
 
 // 숙제 «확인» 표시 — 선생님이 손으로 찍는 완료. `h|<출제 id>` → ISO 시각 (같은 설정 칸을 함께 쓴다)
 export const homeworkCheckKey = (assignmentId: string) => `h|${assignmentId}`
+
+// 문제 오류 신고 — `p|<문항 id>|<ISO 시각>` → 신고 글
+export const problemReportKey = (problemId: string) => `p|${problemId}|${new Date().toISOString()}`
+export function problemReportsOf(log: Record<string, string>): { key: string; problemId: string; at: string; reason: string }[] {
+  return Object.entries(log).filter(([k]) => k.startsWith('p|')).map(([k, reason]) => {
+    const [, problemId, at] = k.split('|')
+    return { key: k, problemId, at, reason }
+  }).sort((a, b) => b.at.localeCompare(a.at))
+}

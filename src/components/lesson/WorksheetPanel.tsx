@@ -13,6 +13,7 @@ import VideoModal from '../VideoModal'
 import WorksheetOutputDialog from '../WorksheetOutputDialog'
 import DrillModal, { type DrillWrong } from './DrillModal'
 import OneClickReport from './OneClickReport'
+import { problemReportKey } from '../../lib/lectureLog'
 import PeriodWrongModal from './PeriodWrongModal'
 
 const CIRCLED = ['①', '②', '③', '④', '⑤']
@@ -447,7 +448,7 @@ function SheetAnswer({ p }: { p: Problem }) {
 // 🔴 오늘 교실에서도 바로 열 수 있게 내보낸다 (명수쌤 2026-08-21: "선생님앱에 채점을 할 수 있게").
 //    수업 > 학습지 탭 안에만 있으면 선생님이 학생 → 학습지 → 채점 3단계를 거쳐야 한다.
 export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: Worksheet; onBack: () => void }) {
-  const { problems, gradings, upsertGrading, ensureCourse, poolLoaded } = useStore()
+  const { problems, gradings, upsertGrading, ensureCourse, poolLoaded, setLectureLog } = useStore()
   const brand = useBrand()
   // 🔴 2026-11-11: 채점 화면이 자기 학습지의 과정 파일을 직접 부른다. 예전엔 앱이 미리 부른 것만 봐서
   //    학생에게 아직 안 나간 내신 기출 학습지는 «0문제 · 문제은행에서 찾을 수 없습니다»로 떴다.
@@ -660,8 +661,11 @@ export function WorksheetGrade({ student, ws, onBack }: { student: Student; ws: 
 
   // [🔔 문제 오류 신고] — 문항 정보를 담은 메일 작성 (오류 신고 채널)
   function reportProblem(no: number, p: Problem) {
-    const body = `학습지: ${ws.title}%0A문항: ${no}번 (id ${p.id})%0A유형: ${typeName(p.typeId)}%0A오류 내용: `
-    location.href = `mailto:songmyoungsu79@gmail.com?subject=${encodeURIComponent(`[문제 오류 신고] ${ws.title} ${no}번`)}&body=${body}`
+    const reason = prompt(`${ws.title} ${no}번 「${typeName(p.typeId)}」 문제 오류 신고\n오류 내용을 적어주세요 (오탈자·정답 오류·그림 문제 등)`)
+    if (!reason?.trim()) return
+    // 관리 > 추가 관리의 «문제 오류 신고»에 모인다
+    setLectureLog({ [problemReportKey(p.id)]: `${ws.title} ${no}번 — ${reason.trim()}` })
+    alert('오류 신고가 접수되었습니다. 관리 > 추가 관리에서 모아 볼 수 있어요.')
   }
 
   return (

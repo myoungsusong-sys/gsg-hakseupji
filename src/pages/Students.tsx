@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { problemReportsOf } from '../lib/lectureLog'
 import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
@@ -2924,10 +2925,34 @@ function ParentNoticeBox() {
   )
 }
 
+// 문제 오류 신고 모음 — 학습지 만들기에서 들어온 신고를 한데 보고, 처리한 것은 지운다
+function ProblemReportBox() {
+  const { lectureLog, setLectureLog } = useStore()
+  const list = problemReportsOf(lectureLog)
+  return (
+    <div className="mb-4 rounded-2xl border border-line bg-white p-5" data-box="problem-reports">
+      <h3 className="mb-1 font-black">문제 오류 신고 <span className="text-sm font-bold text-pine">{list.length}건</span></h3>
+      {list.length === 0 ? <p className="text-sm text-ink2">들어온 신고가 없습니다.</p> : (
+        <ul className="divide-y divide-line/60">
+          {list.slice(0, 50).map(r => (
+            <li key={r.key} className="flex items-center gap-2 py-2 text-sm">
+              <span className="shrink-0 text-xs text-ink2">{r.at.slice(0, 10)}</span>
+              <span className="shrink-0 rounded bg-paper2 px-1.5 py-0.5 text-[11px] font-bold text-ink2">{r.problemId}</span>
+              <span className="min-w-0 grow truncate">{r.reason}</span>
+              <button onClick={() => setLectureLog({ [r.key]: null })} className="shrink-0 text-xs text-ink2 underline hover:text-clay">처리함</button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}
+
 function ExtraTab({ onGoLab }: { onGoLab: () => void }) {
   return (
     <>
     <ParentNoticeBox />
+    <ProblemReportBox />
     <div className="grid gap-4 sm:grid-cols-3">
       {EXTRA_CARDS.map(c => (
         <div key={c.title} className="rounded-2xl border border-line bg-white p-5">

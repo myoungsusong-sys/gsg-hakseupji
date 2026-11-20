@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { problemReportKey } from '../lib/lectureLog'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { CURRICULA, curriculumFor, typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { conceptsForSubUnits } from '../data/concepts'
@@ -21,7 +22,7 @@ type KindFilter = 'all' | Kind
 type LeftTab = 'summary' | 'add' | 'twin' | 'mine' | 'concept'
 type SortMode = 'curriculum' | 'diffAsc' | 'diffDesc' | 'objFirst' | 'shuffle' | 'probOrder' | 'user'
 type ViewMode = 'problem' | 'answer' | 'full'   // 보기: 문제만 / 문제+정답 / 문제+해설+정답
-type SrcTab = 'chapter' | 'workbook' | 'csat' | 'signature' | 'school' | 'upload'
+type SrcTab = 'chapter' | 'workbook' | 'csat' | 'signature' | 'school' | 'upload' | 'arith'
 type MockFilter = 'include' | 'exclude' | 'only'
 
 // 헤더 STEP 대제목 (매쓰플랫 동일)
@@ -71,13 +72,14 @@ function semesterChipLabel(grade: string, label: string): string {
 // 매쓰플랫 추가 태그 4종 (기존 22종 뒤)
 const EXTRA_TAGS = ['기타자료 유사', '그룹취약유형', '교재 오답', '모의고사쌍둥이']
 
-const SRC_TABS: { key: SrcTab; label: string; note?: string }[] = [
+const SRC_TABS: { key: SrcTab; label: string; note?: string; to?: string }[] = [
   { key: 'chapter', label: '단원·유형별' },
-  { key: 'workbook', label: '시중교재', note: '교재 페이지→유형 매핑 데이터 구축 후 활성화' },
-  { key: 'csat', label: '수능/모의고사', note: 'EBSi·평가원 기출 변환 등록 후 활성화 (학년·연도·월 선택 → 회차 문항 선택 구조)' },
-  { key: 'signature', label: '시그니처 교재', note: '자체 교재 등록 후 활성화' },
-  { key: 'school', label: '학교별 기출', note: '학교 기출 DB 구축 후 활성화 (학교급·지역·학교·중간기말 필터 구조)' },
-  { key: 'upload', label: '기출 업로드', note: 'PDF/이미지 업로드 → Claude가 문제·정답·해설 추출·유형 매칭(디지털 문제 변환) — 2차 개발' },
+  { key: 'workbook', label: '시중교재', note: '교재를 고르고 쪽·문제를 짚어 쌍둥이·유사 문제로 학습지를 만듭니다.', to: '/prep/workbook' },
+  { key: 'csat', label: '수능/모의고사', note: '학년·연도·월로 회차를 골라 그 회차 학습지를 열거나 출제합니다.', to: '/prep/csat' },
+  { key: 'signature', label: '시그니처 교재', note: '우리 학원 교재(내 교재)에서 학습지를 엽니다.', to: '/prep/workbook' },
+  { key: 'school', label: '학교별 기출', note: '올려 둔 학교 시험지를 학교별로 보고, 문항을 짚어 학습지로 만듭니다.', to: '/prep/school-test' },
+  { key: 'upload', label: '기출 업로드', note: '가진 시험지·프린트를 올려 나의 DB 에 넣습니다.', to: '/prep/worksheet-upload' },
+  { key: 'arith', label: '연산', note: '사칙·분수·소수·일차방정식 연산 학습지를 바로 만듭니다(8~16분할 지원).', to: '/prep/arithmetic' },
 ]
 
 const COUNT_PRESETS = [25, 50, 75, 100]
@@ -99,6 +101,7 @@ function activeTemplateKey(o: SheetOptions): string | null {
 
 export default function MakeWizard() {
   const store = useStore()
+  const { setLectureLog } = store
   const {
     problems, saveWorksheet, updateWorksheet, worksheets, favorites, toggleFavorite, diffMatrix, setDiffMatrix, assignments,
     customProblems, sheetTemplates, addSheetTemplate, removeSheetTemplate, academyProfile,
@@ -477,12 +480,8 @@ export default function MakeWizard() {
   function reportProblem(p: Problem) {
     const reason = prompt(`「${typeName(p.typeId)}」 문제 오류 신고\n오류 내용을 적어주세요 (오탈자·정답 오류·그림 문제 등)`)
     if (!reason?.trim()) return
-    try {
-      const key = 'problem-reports'
-      const arr = JSON.parse(localStorage.getItem(key) ?? '[]') as unknown[]
-      arr.push({ problemId: p.id, reason: reason.trim(), at: new Date().toISOString() })
-      localStorage.setItem(key, JSON.stringify(arr))
-    } catch { /* 무시 */ }
+    // 신고는 설정 칸(lectureLog 의 `p|<문항 id>|<시각>`)에 모은다 — 어느 기기에서 신고해도 관리 > 추가 관리에서 한데 보인다
+    setLectureLog({ [problemReportKey(p.id)]: reason.trim() })
     alert('오류 신고가 접수되었습니다. 확인 후 문제은행에 반영합니다.')
   }
 
@@ -566,9 +565,14 @@ export default function MakeWizard() {
         <div className="rounded-2xl border border-line bg-white p-10">
           <div className="mb-2 flex items-center gap-3">
             <h2 className="text-lg font-black">{SRC_TABS.find(t => t.key === srcTab)?.label}</h2>
-            <span className="rounded-full bg-paper2 px-3 py-1 text-xs font-bold text-ink2">구조 확보 · 콘텐츠 대기</span>
           </div>
           <p className="text-sm text-ink2">{SRC_TABS.find(t => t.key === srcTab)?.note}</p>
+          {SRC_TABS.find(t => t.key === srcTab)?.to && (
+            <button data-src-go onClick={() => nav(SRC_TABS.find(t => t.key === srcTab)!.to!)}
+              className="mr-2 mt-6 rounded-lg bg-pine px-4 py-2 text-sm font-bold text-paper hover:brightness-105">
+              {SRC_TABS.find(t => t.key === srcTab)?.label}에서 만들기 →
+            </button>
+          )}
           <button onClick={() => setSrcTab('chapter')}
             className="mt-6 rounded-lg border border-pine px-4 py-2 text-sm font-semibold text-pine hover:bg-pine-soft">
             ← 단원·유형별로 만들기
