@@ -31,6 +31,7 @@ export default function MyPage() {
 
   const save = () => {
     setAcademyProfile({
+      ...academyProfile,          // 로고 그림처럼 이 화면의 글 칸이 아닌 값은 그대로 둔다
       teacherName: teacherName.trim() || undefined,
       phone: phone.trim() || undefined,
       academyName: academyName.trim() || undefined,
@@ -38,6 +39,29 @@ export default function MyPage() {
       address: address.trim() || undefined,
     })
     setSavedAt(new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }))
+  }
+
+  // 학원 로고 — 그림을 가로 600px 이하로 줄여 dataURL 로 저장한다(학습지 머리말 오른쪽 위에 찍힌다)
+  const [logoMsg, setLogoMsg] = useState<string | null>(null)
+  const pickLogo = (file: File | undefined) => {
+    setLogoMsg(null)
+    if (!file) return
+    if (!/^image\/(png|jpeg|webp|svg\+xml)$/.test(file.type)) { setLogoMsg('PNG·JPG·WEBP·SVG 그림만 올릴 수 있어요.'); return }
+    const url = URL.createObjectURL(file)
+    const img = new Image()
+    img.onload = () => {
+      const scale = Math.min(1, 600 / img.naturalWidth, 240 / img.naturalHeight)
+      const w = Math.max(1, Math.round(img.naturalWidth * scale)), h = Math.max(1, Math.round(img.naturalHeight * scale))
+      const c = document.createElement('canvas'); c.width = w; c.height = h
+      const g = c.getContext('2d')
+      if (!g) { setLogoMsg('그림을 읽지 못했어요.'); return }
+      g.drawImage(img, 0, 0, w, h)
+      URL.revokeObjectURL(url)
+      setAcademyProfile({ ...academyProfile, logo: c.toDataURL('image/png'), logoOff: false })
+      setLogoMsg('로고를 저장했어요. 다음에 뽑는 학습지부터 찍힙니다.')
+    }
+    img.onerror = () => { URL.revokeObjectURL(url); setLogoMsg('그림을 읽지 못했어요. 다른 파일로 해 보세요.') }
+    img.src = url
   }
 
   const changePw = async () => {
@@ -132,6 +156,33 @@ export default function MyPage() {
                 <input value={academyName} onChange={e => setAcademyName(e.target.value)}
                   placeholder="대치스파르타 프리미엄" className={INPUT} />
                 <p className="mt-1 text-xs text-ink2">헤더의 계정 버튼과 학생 안내에 보여지는 교육기관 이름입니다.</p>
+              </div>
+              <div>
+                <div className={label}>학원 로고</div>
+                <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex h-14 w-44 items-center justify-center rounded-lg border border-dashed border-line bg-paper2/50">
+                    {academyProfile.logo
+                      ? <img src={academyProfile.logo} alt="학원 로고" className={`max-h-12 max-w-40 object-contain ${academyProfile.logoOff ? 'opacity-30' : ''}`} />
+                      : <span className="text-xs text-ink2">로고 없음</span>}
+                  </div>
+                  <label className="cursor-pointer rounded-lg border border-line px-3 py-2 text-sm font-bold text-ink2 hover:border-pine hover:text-pine">
+                    그림 올리기
+                    <input type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" className="hidden"
+                      onChange={e => { pickLogo(e.target.files?.[0]); e.target.value = '' }} />
+                  </label>
+                  {academyProfile.logo && (
+                    <>
+                      <label className="flex cursor-pointer items-center gap-1.5 text-sm">
+                        <input type="checkbox" className="h-4 w-4 accent-pine" checked={!!academyProfile.logoOff}
+                          onChange={e => setAcademyProfile({ ...academyProfile, logoOff: e.target.checked })} />
+                        로고 사용 안 함
+                      </label>
+                      <button onClick={() => { setAcademyProfile({ ...academyProfile, logo: undefined, logoOff: undefined }); setLogoMsg('로고를 지웠어요.') }}
+                        className="text-sm text-ink2 underline hover:text-clay">지우기</button>
+                    </>
+                  )}
+                </div>
+                <p className="mt-1 text-xs text-ink2">{logoMsg ?? '학습지 첫 쪽 머리말 오른쪽 위에 찍힙니다. 가로로 긴 그림이 잘 맞아요. 없으면 학원 이름 글자가 찍힙니다.'}</p>
               </div>
               <div>
                 <div className={label}>대표 이메일</div>

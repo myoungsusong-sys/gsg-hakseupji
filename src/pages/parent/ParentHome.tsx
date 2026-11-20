@@ -22,6 +22,29 @@ function scoreOfDate(bundle: ChildBundle, key: string) {
   return { solved, correct, unknown, pending, score: solved ? Math.round(correct / solved * 100) : null }
 }
 
+// 주(월요일 시작) 단위 집계 — 이번 주부터 거꾸로 n주. 승인 대기(pending) 문항은 세지 않는다.
+function weeklyStats(bundle: ChildBundle, weeks = 4) {
+  const now = new Date()
+  const mon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7))
+  const out: { label: string; from: Date; solved: number; correct: number; rate: number | null }[] = []
+  for (let w = weeks - 1; w >= 0; w--) {
+    const from = new Date(mon.getFullYear(), mon.getMonth(), mon.getDate() - 7 * w)
+    const to = new Date(from.getFullYear(), from.getMonth(), from.getDate() + 7)
+    let solved = 0, correct = 0
+    for (const g of bundle.gradings) {
+      const t = new Date(g.date).getTime()
+      if (!(t >= from.getTime() && t < to.getTime())) continue
+      for (const r of g.results) { if (r.pending) continue; solved++; if (r.correct) correct++ }
+    }
+    const end = new Date(to.getFullYear(), to.getMonth(), to.getDate() - 1)
+    out.push({
+      label: w === 0 ? '이번 주' : `${from.getMonth() + 1}/${from.getDate()}~${end.getMonth() + 1}/${end.getDate()}`,
+      from, solved, correct, rate: solved ? Math.round(correct / solved * 100) : null,
+    })
+  }
+  return out
+}
+
 export default function ParentHome() {
   const nav = useNavigate()
   const store = useStore()
@@ -156,6 +179,46 @@ export default function ParentHome() {
                 )}
               </div>
             </div>
+
+            {/* 이번 주 푼 문제 + 최근 4주 (주별 문제 수 막대 · 정답률) */}
+            {(() => {
+              const wk = weeklyStats(bundle)
+              const cur = wk[wk.length - 1]
+              const max = Math.max(1, ...wk.map(w => w.solved))
+              return (
+                <div className="mt-5 rounded-2xl border border-line bg-white p-5">
+                  <div className="flex flex-wrap items-end gap-x-6 gap-y-2">
+                    <div>
+                      <div className="text-sm font-bold">이번 주 푼 문제</div>
+                      <div className="mt-1 text-2xl font-black text-pine-dark tabular-nums">{cur.solved}<span className="ml-1 text-sm font-bold text-ink2">문제</span></div>
+                    </div>
+                    <div>
+                      <div className="text-xs text-ink2">정답률</div>
+                      <div className="mt-1 text-2xl font-black tabular-nums">{cur.rate != null ? `${cur.rate}%` : '—'}</div>
+                    </div>
+                    <p className="grow text-right text-xs text-ink2">채점될 때마다 바뀌고, 월요일에 새로 셉니다.</p>
+                  </div>
+                  <div className="mt-4 text-xs font-bold text-ink2">최근 4주</div>
+                  <div className="mt-2 grid grid-cols-4 items-end gap-3" style={{ height: '7.5rem' }}>
+                    {wk.map((w, i) => (
+                      <div key={i} className="flex h-full flex-col items-center justify-end gap-1">
+                        <span className="text-xs font-bold tabular-nums">{w.solved > 0 ? `${w.solved}문제` : '—'}</span>
+                        <div className={`w-full max-w-16 rounded-t-lg ${i === wk.length - 1 ? 'bg-pine' : 'bg-pine-soft'}`}
+                          style={{ height: `${Math.max(w.solved > 0 ? 6 : 2, Math.round(w.solved / max * 100) * 0.62)}%` }} />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-1.5 grid grid-cols-4 gap-3 text-center text-[11px] text-ink2">
+                    {wk.map((w, i) => (
+                      <div key={i}>
+                        <div className="font-bold text-ink">{w.rate != null ? `정답률 ${w.rate}%` : '기록 없음'}</div>
+                        <div>{w.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
+            })()}
 
             {/* 최근 학습 추이 (정답률) */}
             <div className="mt-5 rounded-2xl border border-line bg-white p-5">

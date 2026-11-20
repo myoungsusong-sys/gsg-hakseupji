@@ -1400,6 +1400,11 @@ export default function MakeWizard() {
                     onChange={e => setOpts(o => ({ ...o, showRelated: e.target.checked }))} className="h-4 w-4 accent-pine" />
                   연관 문항 정보 <span className="text-xs text-ink2">ⓘ</span>
                 </label>
+                <label className="flex items-center gap-2" title="첫 쪽 머리말에 QR 을 찍습니다. 학생이 찍으면 답 입력 화면, 선생님이 찍으면 채점 화면이 열립니다">
+                  <input type="checkbox" checked={opts.showQr ?? true}
+                    onChange={e => setOpts(o => ({ ...o, showQr: e.target.checked }))} className="h-4 w-4 accent-pine" />
+                  QR 표시 <span className="text-xs text-ink2">ⓘ</span>
+                </label>
                 <label className="flex items-center gap-2">
                   <input type="checkbox" checked={opts.wrongNoteArea}
                     onChange={e => setOpts(o => ({ ...o, wrongNoteArea: e.target.checked }))} className="h-4 w-4 accent-pine" />

@@ -16,23 +16,92 @@ const RATIO = 3                 // 300dpi급 (페이지 794px × 3 ≈ 2382px)
 // 캡처 본체는 domShot.ts 로 옮겼다(문제 바로 질문도 같이 쓴다) — 동작은 그대로(3배 렌더).
 const capturePage = (page: HTMLElement) => captureNode(page, RATIO)
 
-/* 현재 문서의 .mf-page 들을 순서대로 캡처해 하나의 PDF로 만든다 */
-export async function buildSheetPdf(): Promise<jsPDF> {
+/** 출력 옵션 — 인쇄·내려받기 창에서 고른 것 (2026-11-20)
+ *  pages: «1,3,5-7» 꼴 쪽 범위(비면 전체) · reverse: 역순 · bw: 흑백 · copies: 매수(한 벌씩 이어 붙임) */
+export interface SheetOutOpts { pages?: string; reverse?: boolean; bw?: boolean; copies?: number }
+
+/** «1,3,5-7» → 0부터 세는 쪽 번호 목록(순서 유지·중복 제거). 잘못 적었거나 비면 전체 */
+export function parsePageRange(text: string | undefined, total: number): number[] {
+  const all = Array.from({ length: total }, (_, i) => i)
+  if (!text || !text.trim()) return all
+  const out: number[] = []
+  const seen = new Set<number>()
+  for (const part of text.split(',')) {
+    const m = part.trim().match(/^(\d+)(?:\s*[-~]\s*(\d+))?$/)
+    if (!m) continue
+    const from = Number(m[1]), to = m[2] ? Number(m[2]) : from
+    const lo = Math.min(from, to), hi = Math.max(from, to)
+    for (let n = lo; n <= hi; n++) {
+      if (n >= 1 && n <= total && !seen.has(n - 1)) { seen.add(n - 1); out.push(n - 1) }
+    }
+  }
+  return out.length ? out : all
+}
+
+/* 지금 화면의 .mf-page 들을 순서대로 캡처해 쪽 그림(JPEG dataURL) 목록으로 돌려준다 */
+export async function capturePages(): Promise<string[]> {
   const pages = [...document.querySelectorAll<HTMLElement>('.mf-page')]
   if (pages.length === 0) throw new Error('조판된 페이지가 없습니다')
   try { await document.fonts.ready } catch { /* 미지원 브라우저 — 그대로 진행 */ }
-  const doc = new jsPDF({ unit: 'mm', format: 'a4', compress: true })
   const shots: string[] = []
-  for (let i = 0; i < pages.length; i++) {
-    const canvas = await capturePage(pages[i])
+  for (const page of pages) {
+    const canvas = await capturePage(page)
     // JPEG 0.92 — 문항이 원래 래스터 이미지라 화질 손실 체감 없이 용량을 크게 줄인다
-    const img = canvas.toDataURL('image/jpeg', 0.92)
-    shots.push(img)
+    shots.push(canvas.toDataURL('image/jpeg', 0.92))
+  }
+  return shots
+}
+
+/* 쪽 그림 하나를 흑백으로 */
+function toGray(src: string): Promise<string> {
+  return new Promise(resolve => {
+    const img = new Image()
+    img.onload = () => {
+      const c = document.createElement('canvas'); c.width = img.naturalWidth; c.height = img.naturalHeight
+      const g = c.getContext('2d')
+      if (!g) { resolve(src); return }
+      g.filter = 'grayscale(1)'
+      g.drawImage(img, 0, 0)
+      // filter 를 모르는 브라우저(옛 사파리) — 픽셀을 직접 회색으로
+      if (g.filter !== 'grayscale(1)') {
+        const d = g.getImageData(0, 0, c.width, c.height)
+        for (let i = 0; i < d.data.length; i += 4) {
+          const y = Math.round(d.data[i] * 0.299 + d.data[i + 1] * 0.587 + d.data[i + 2] * 0.114)
+          d.data[i] = d.data[i + 1] = d.data[i + 2] = y
+        }
+        g.putImageData(d, 0, 0)
+      }
+      resolve(c.toDataURL('image/jpeg', 0.92))
+    }
+    img.onerror = () => resolve(src)
+    img.src = src
+  })
+}
+
+/* 쪽 그림 묶음들(학생 한 명 몫 = 한 묶음) → PDF. 쪽 범위·역순은 묶음마다, 매수는 전체를 되풀이 */
+export async function pdfFromShots(groups: string[][], opts: SheetOutOpts = {}): Promise<jsPDF> {
+  let shots: string[] = []
+  for (const g of groups) {
+    let sel = parsePageRange(opts.pages, g.length).map(i => g[i])
+    if (opts.reverse) sel = sel.slice().reverse()
+    shots.push(...sel)
+  }
+  if (shots.length === 0) throw new Error('조판된 페이지가 없습니다')
+  if (opts.bw) shots = await Promise.all(shots.map(toGray))
+  const copies = Math.min(30, Math.max(1, Math.floor(opts.copies ?? 1)))
+  if (copies > 1) { const one = shots; shots = []; for (let c = 0; c < copies; c++) shots.push(...one) }
+  const doc = new jsPDF({ unit: 'mm', format: 'a4', compress: true })
+  shots.forEach((img, i) => {
     if (i > 0) doc.addPage()
     doc.addImage(img, 'JPEG', 0, 0, A4.w, A4.h, undefined, 'FAST')
-  }
+  })
   PAGE_SHOTS.set(doc, shots)       // 인쇄(printPdf)는 PDF 대신 이 페이지 그림을 쓴다
   return doc
+}
+
+/* 현재 문서의 .mf-page 들을 순서대로 캡처해 하나의 PDF로 만든다 */
+export async function buildSheetPdf(opts: SheetOutOpts = {}): Promise<jsPDF> {
+  return pdfFromShots([await capturePages()], opts)
 }
 const PAGE_SHOTS = new WeakMap<jsPDF, string[]>()
 

@@ -81,6 +81,7 @@ export interface SheetOptions {
   autoGrade?: boolean                // 자동채점 학습지 (수업>학습지 탭에서 답 입력 채점)
   showRelated?: boolean              // 연관 문항 정보 (같은 쌍둥이 그룹 문항 번호 캡션)
   conceptPlacement?: 'front' | 'unit'  // 개념 정리 배치: 맨 앞(기본) / 각 단원 앞
+  showQr?: boolean                   // 머리말 QR(찍으면 답 입력·채점 화면) — 없으면 켬
 }
 
 export const DEFAULT_SHEET_OPTIONS: SheetOptions = {
@@ -491,6 +492,8 @@ export interface AcademyProfile {
   teacherName?: string    // 선생님 이름 (학습지·반 담당 표시)
   phone?: string          // 연락처
   contactEmail?: string   // 대표 이메일
+  logo?: string           // 학원 로고 그림(dataURL, 가로 600px 이하로 줄여 저장) — 학습지 머리말 오른쪽 위에 찍힌다
+  logoOff?: boolean       // 로고 사용 안 함(그림을 지우지 않고 끄기만)
   address?: string        // 교육기관 주소 — 학교별 기출을 우리 지역 학교부터 보이는 데 쓴다 (2026-11-07)
 }
 
