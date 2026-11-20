@@ -23,6 +23,7 @@ const WAYS = [
   ['same', '틀린 문제 그대로'],
   ['twin', '틀린 문제의 쌍둥이・유사문제'],
   ['both', '틀린 문제 그대로+쌍둥이・유사문제'],
+  ['type', '틀린 유형마다 새 문제 n개'],
 ] as const
 type Way = typeof WAYS[number][0]
 
@@ -30,6 +31,7 @@ type Way = typeof WAYS[number][0]
 export default function PeriodWrongModal({ student, onClose }: { student: Student; onClose: () => void }) {
   const { gradings, wbItems, worksheets, problems, assignments, saveWorksheet, addAssignment, ensureCourse } = useStore()
   const brand = useBrand()
+  const [perType, setPerType] = useState(3)   // «틀린 유형마다 새 문제 n개»의 n
   const nav = useNavigate()
   const [tab, setTab] = useState<Tab>('weak')
   const [from, setFrom] = useState(() => {
@@ -168,7 +170,7 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
     return selTypes.size > 0 ? out.filter(w => selTypes.has(w.typeId)) : out
   }, [yearGradings, wsMap, problemMap, itemMap, selTypes])
 
-  // 출제 방식 3종 → 문제 id (최대 150)
+  // 출제 방식 4종 → 문제 id (최대 150)
   function pickByWay(wrongs: DrillWrong[], way: Way, cap: number): string[] {
     const originals: string[] = []
     for (const w of wrongs) {
@@ -176,6 +178,19 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
     }
     let ids: string[] = []
     if (way === 'same') ids = originals
+    else if (way === 'type') {
+      // 틀린 유형마다 새 문제 n개 — 틀린 문제는 빼고, 틀린 난이도에 가까운 것부터
+      const seen = new Set<string>(originals)
+      const byType = new Map<string, number[]>()
+      for (const w of wrongs) { const a = byType.get(w.typeId) ?? []; a.push(w.diff ?? 3); byType.set(w.typeId, a) }
+      for (const [typeId, diffs] of byType) {
+        const target = diffs.reduce((a, b) => a + b, 0) / diffs.length
+        const cands = problems.filter(p => p.typeId === typeId && !seen.has(p.id) && !p.noAnswer)
+          .sort((a, b) => Math.abs(a.diff - target) - Math.abs(b.diff - target))
+          .slice(0, perType)
+        for (const c of cands) { seen.add(c.id); ids.push(c.id) }
+      }
+    }
     else {
       const excludeIds = new Set<string>(way === 'both' ? originals : [])
       const picked = pickDrillProblems(wrongs, problems, { twinPer: 1, similarPer: 1, diffShift: 0, typeCap: 3, excludeIds }).map(p => p.id)
@@ -183,7 +198,7 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
     }
     return ids.slice(0, Math.min(150, Math.max(1, cap)))
   }
-  const probSheetIds = useMemo(() => pickByWay(yearWrongs, probWay, probCap), [yearWrongs, probWay, probCap])   // eslint-disable-line react-hooks/exhaustive-deps
+  const probSheetIds = useMemo(() => pickByWay(yearWrongs, probWay, probCap), [yearWrongs, probWay, probCap, perType])   // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── 탭2: 기간 내 오답 집계 — 소스별(시그니처/시중/내 교재/내 학습지) ──
   const { srcCounts, periodWrongs } = useMemo(() => {
@@ -220,7 +235,7 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
   const [periodWay, setPeriodWay] = useState<Way>('twin')
   const [periodCap, setPeriodCap] = useState(50)
   const [periodAuto, setPeriodAuto] = useState(true)
-  const periodIds = useMemo(() => pickByWay(periodWrongs, periodWay, periodCap), [periodWrongs, periodWay, periodCap])   // eslint-disable-line react-hooks/exhaustive-deps
+  const periodIds = useMemo(() => pickByWay(periodWrongs, periodWay, periodCap), [periodWrongs, periodWay, periodCap, perType])   // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── 탭3: 채점된 학습지 목록 (학습지별 최신 채점의 오답, 원문제 id 포함) ──
   const gradedSheets = useMemo(() => {
@@ -455,6 +470,13 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
                               <input type="radio" name="pw-probway" checked={probWay === v} onChange={() => setProbWay(v)} /> {label}
                             </label>
                           ))}
+                {probWay === 'type' && (
+                  <span className="ml-6 flex items-center gap-2 text-sm">
+                    유형당 <input type="number" min={1} max={10} value={perType} data-per-type
+                      onChange={e => setPerType(Math.min(10, Math.max(1, Number(e.target.value) || 1)))}
+                      className="w-16 rounded-lg border border-line px-2 py-1" /> 문제
+                  </span>
+                )}
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="font-semibold">문제 수</span>
@@ -514,6 +536,13 @@ export default function PeriodWrongModal({ student, onClose }: { student: Studen
                     <input type="radio" name="pw-periodway" checked={periodWay === v} onChange={() => setPeriodWay(v)} /> {label}
                   </label>
                 ))}
+                {periodWay === 'type' && (
+                  <span className="ml-6 flex items-center gap-2 text-sm">
+                    유형당 <input type="number" min={1} max={10} value={perType} data-per-type
+                      onChange={e => setPerType(Math.min(10, Math.max(1, Number(e.target.value) || 1)))}
+                      className="w-16 rounded-lg border border-line px-2 py-1" /> 문제
+                  </span>
+                )}
               </div>
               <div className="mb-4 flex flex-wrap items-center gap-4">
                 <span className="flex items-center gap-2">

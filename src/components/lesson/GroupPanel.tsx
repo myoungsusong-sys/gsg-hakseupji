@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
+import GroupGrade from './GroupGrade'
 import { Link } from 'react-router-dom'
 import { isVocaGrading, vocaRangeLabel } from '../../lib/voca'
 import { fetchLive, pushNote, type LiveSolve } from '../../lib/live'
@@ -491,6 +492,8 @@ function GroupWorksheets({ label, students }: { label: string; students: Student
   const { assignments, worksheets, gradings } = useStore()
   const [view, setView] = useState<'list' | 'board'>('list')
   const [excludeDrill, setExcludeDrill] = useState(false)
+  // 그룹 채점 — 학습지 한 장을 받은 학생들의 채점 칸을 나란히 연다
+  const [gradeWsId, setGradeWsId] = useState<string | null>(null)
 
   const ids = useMemo(() => new Set(students.map(s => s.id)), [students])
   const DRILL_TAGS = ['오답', '오답학습', '심화학습', '복습', '취약유형', '기간별 오답', '학습지 오답', '교재 오답', '단원별 취약']
@@ -536,6 +539,11 @@ function GroupWorksheets({ label, students }: { label: string; students: Student
         }),
       ]),
     ])
+  }
+
+  const gradeRow = gradeWsId ? rows.find(r => r.ws.id === gradeWsId) : null
+  if (gradeRow) {
+    return <GroupGrade ws={gradeRow.ws} students={students.filter(s => gradeRow.studentIds.has(s.id))} onClose={() => setGradeWsId(null)} />
   }
 
   return (
@@ -605,9 +613,10 @@ function GroupWorksheets({ label, students }: { label: string; students: Student
                     </td>
                     <td className="whitespace-nowrap py-2.5 text-xs text-ink2">{r.studentIds.size}명</td>
                     <td className="whitespace-nowrap py-2.5 pr-3">
-                      {avg !== null
-                        ? <span className="text-xs">채점 {done.length}/{r.studentIds.size}명 · 평균 <b className="text-pine-dark">{avg}점</b></span>
-                        : <span className="text-xs text-ink2">채점 전</span>}
+                      <button onClick={() => setGradeWsId(r.ws.id)} title="학생들의 채점 칸을 나란히 놓고 채점합니다"
+                        className={`rounded-lg px-2.5 py-1 text-xs font-bold ${avg !== null ? 'border border-line text-ink hover:bg-paper2' : 'bg-pine text-paper'}`}>
+                        {avg !== null ? <>이어 채점 · {done.length}/{r.studentIds.size}명 · 평균 <b className="text-pine-dark">{avg}점</b></> : '채점'}
+                      </button>
                     </td>
                   </tr>
                 )
