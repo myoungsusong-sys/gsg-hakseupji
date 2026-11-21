@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
 import { CURRICULA } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS, type Problem } from '../types'
+import { authHeaders } from '../lib/supabase'
 
 // ── 영어 지문 하나로 «변형 문제 · 단어장 · 문장 드릴» (2026-11-07) ──────────────
 // 교과서·모의고사·EBS·외부 지문 어느 것이든 붙여 넣으면 AI 가 만든다(api/eng-passage).
@@ -52,7 +53,7 @@ export default function EngPassage() {
     try {
       const mode = tab === '변형 문제' ? 'exercise' : tab === '단어장' ? 'words' : 'drill'
       const r = await fetch('/api/eng-passage', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        method: 'POST', headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
         body: JSON.stringify({ mode, passage, types: [...types], perType, level, wordCount }),
       })
       // 11/21: 서버가 JSON 이 아닌 답(로컬 개발 화면·시간 초과 등)을 주면 «Unexpected end of JSON input» 대신 알아듣는 말로

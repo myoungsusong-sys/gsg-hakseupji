@@ -53,8 +53,29 @@ function firstJson(text: string): any {
   return JSON.parse(text.slice(s, e + 1))
 }
 
+// 🔒 2026-11-21 명수쌤 «붙여»: 로그인한 사람(선생님·학생 누구든)만 AI 를 부른다.
+//    주소만 아는 남이 AI 사용료를 쓰지 못하게. 화면은 src/lib/supabase.ts authHeaders() 로 표를 붙여 보낸다.
+async function signedIn(req: any): Promise<string | null> {
+  const auth = String(req.headers?.authorization ?? '')
+  const token = auth.startsWith('Bearer ') ? auth.slice(7) : ''
+  if (!token) return '로그인 후 이용해 주세요.'
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!key) return '설정이 덜 되어 있습니다(SUPABASE_SERVICE_ROLE_KEY).'
+  try {
+    const { createClient: mk } = await import('@supabase/supabase-js')
+    const admin = mk(process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || 'https://rttqkpquyzfrdxqhgqvi.supabase.co',
+      key, { auth: { persistSession: false } })
+    const { data, error } = await admin.auth.getUser(token)
+    if (error || !data?.user) return '로그인이 만료되었습니다. 다시 로그인해 주세요.'
+    return null
+  } catch (e: any) {
+    return '로그인 확인에 실패했습니다: ' + String(e?.message ?? e).slice(0, 120)
+  }
+}
+
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'POST only' }); return }
+  { const why = await signedIn(req); if (why) { res.status(401).json({ error: why }); return } }
   const key = process.env.ANTHROPIC_API_KEY
   if (!key) { res.status(503).json({ error: 'AI가 아직 설정되지 않았습니다(ANTHROPIC_API_KEY).' }); return }
   const { mode, passage, types, perType, level, wordCount } = await readBody(req)

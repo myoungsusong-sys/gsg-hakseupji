@@ -4,6 +4,7 @@
 //       → 그 값을 입력칸에 채운다 → 학생이 눈으로 확인·수정 → 기존 [채점하기]로 채점.
 // AI는 읽기만 하고 채점은 기존 엔진(mathEqual)이 그대로 한다 — 채점 로직이 안 바뀌므로
 // 전수 감사 기준선도 그대로다. 오독은 칸에 그대로 보이니 학생이 고칠 수 있다.
+import { authHeaders } from './supabase'
 
 export type ScanKind = '객관식' | 'OX' | '주관식'
 export type ScanItem = { no: string; kind: ScanKind; parts?: number }
@@ -44,7 +45,7 @@ export async function scanAnswersFromPhoto(args: {
 }): Promise<ScanResult[]> {
   const res = await fetch('/api/scan-answers', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
     body: JSON.stringify({
       imageBase64: args.dataUrl,
       mediaType: args.mediaType,

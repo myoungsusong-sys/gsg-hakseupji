@@ -1,6 +1,7 @@
 import type { GradeResult, Problem, Rubric } from '../types'
 import { normAnswer } from './answers'
 import { getRubric, putRubric } from './rubric'
+import { authHeaders } from './supabase'
 
 // ── AI 1차 채점 클라이언트 — 자동채점 불가 문항 판별 + /api/ai-grade 호출 ──
 // 자동채점 가능 = 정답이 "기계 대조 가능한 텍스트"인 문항 (객관식·단답).
@@ -64,7 +65,7 @@ export async function requestAiGrade(
     workMediaType: workImg ? 'image/jpeg' : undefined,
   }
   const r = await fetch('/api/ai-grade', {
-    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body),
+    method: 'POST', headers: { 'Content-Type': 'application/json', ...(await authHeaders()) }, body: JSON.stringify(body),
   })
   if (!r.ok) throw new Error(`ai-grade ${r.status}`)
   const j = await r.json()
@@ -115,7 +116,7 @@ export async function requestAiQuiz(p: Problem, studentAnswer: string): Promise<
   // 🔴 /api/ai-quiz 로 따로 두면 Vercel 함수가 12개 한도를 넘어 배포가 통째로 막힌다
   //    (2026-08-07 실측) — ai-grade 에 mode:'quiz' 로 합쳐 부른다
   const r = await fetch('/api/ai-grade', {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    method: 'POST', headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
     body: JSON.stringify({
       mode: 'quiz',
       problemImageUrl: absUrl(p.imageUrl),

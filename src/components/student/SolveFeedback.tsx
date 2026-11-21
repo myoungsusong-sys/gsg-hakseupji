@@ -2,6 +2,7 @@ import { useMemo, useRef, useState } from 'react'
 import { useStore } from '../../lib/store'
 import { pushLive } from '../../lib/live'
 import type { Problem } from '../../types'
+import { authHeaders } from '../../lib/supabase'
 
 // 학생앱: 문항별 "✏️ 풀이 쓰기" 풀이창 (기본 펼침 — 사진 업로드 + 직접 필기 둘 다)
 // 원하면 AI 피드백도 받을 수 있다: 정답을 알려주지 않고 풀이 과정을 채점/힌트 (/api/solve-feedback, Claude 비전).
@@ -112,7 +113,7 @@ export default function SolveFeedback({ studentId, studentName, worksheetId, lab
     setErr(''); setBusy(true)
     try {
       const r = await fetch('/api/solve-feedback', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        method: 'POST', headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
         body: JSON.stringify({
           imageBase64: image.dataUrl, mediaType: image.mediaType,
           // Problem에는 q/question이 아니라 body가 있다 (이미지 문항은 body가 빈 문자열 — 이미지로만 판단)

@@ -32,3 +32,11 @@ export async function signUpAccountClient(email: string, password: string): Prom
 
 /** 이전 이름 — 호출부 호환용. 새 코드는 signUpAccountClient 를 쓴다. */
 export const signUpStudentClient = signUpAccountClient
+
+/** AI 서버(지문 변형·AI 채점·풀이 피드백·답안 스캔)에 붙여 보낼 로그인 표. 로컬 모드면 빈 칸. */
+export async function authHeaders(): Promise<Record<string, string>> {
+  if (!supabase) return {}
+  const { data } = await supabase.auth.getSession()
+  const t = data.session?.access_token
+  return t ? { Authorization: `Bearer ${t}` } : {}
+}

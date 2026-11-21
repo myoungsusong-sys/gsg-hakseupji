@@ -35,6 +35,7 @@ import { clearDraft, readDraft, writeDraft, readSolveIdx, writeSolveIdx, AnswerT
 import { fetchNote, clearNote, pushLive, type TeacherNote } from '../../lib/live'
 import { pushReplay, type ReplaySession } from '../../lib/replay'
 import { noteSheet } from '../../lib/progFeed'
+import { authHeaders } from '../../lib/supabase'
 
 // ── 학습지 풀기 — 매쓰플랫 학생앱 풀이 화면 구조 ──────────────────
 // · 1문제씩 페이징: [←] N번 문제 / 총 M 문제 [→] + 문제 풀이 현황 토글(번호 칩 점프)
@@ -297,7 +298,7 @@ export default function StudentSolve() {
         const img = await exportWork(q, strokes)
         if (img) {
           const r = await fetch('/api/solve-feedback', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            method: 'POST', headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
             body: JSON.stringify({
               imageBase64: img, mediaType: 'image/jpeg',
               problemText: q.body?.trim()
