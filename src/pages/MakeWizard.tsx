@@ -61,12 +61,14 @@ const SCHOOL_LEVELS: { label: string; prefix: string }[] = [
 ]
 // 과목 토글 — 목록은 lib/subject.ts SUBJECTS 단일 소스 (확장 시 거기에만 추가)
 // 학기 칩 라벨: 초중 「1 - 1(22개정)」 · 고 「공통수학1(22개정)」 · 중등과학 「과학 1(22개정)」
-function semesterChipLabel(grade: string, label: string): string {
+// 🔴 11/21: 영어 교과서 과정(학년 «중1»)이 «과학 1(22개정)» 으로 보이던 것 — 과목을 받아 과학일 때만 과학 칩으로
+function semesterChipLabel(grade: string, label: string, subject?: string): string {
+  if (subject === '영어' || subject === '국어') return label.replace(/ (영어|국어) · /, ' · ').replace(/ 교과서$/, '')
   const m = grade.match(/^[초중](\d)-(\d)$/)
   if (m) return `${m[1]} - ${m[2]}(${label.match(/\((\d+개정)\)/)?.[1] ?? '22개정'})`
   const sci = grade.match(/^중(\d)$/)                       // 중등 과학 과정 (grade '중1'~'중3')
   const rev = label.match(/\((\d+개정)\)/)?.[1] ?? '22개정'
-  if (sci) return `과학 ${sci[1]}(${rev})`
+  if (sci && (subject ?? '과학') === '과학') return `과학 ${sci[1]}(${rev})`
   return label.replace(/ \((\d+개정)\)/, '($1)')
 }
 
@@ -661,7 +663,7 @@ export default function MakeWizard() {
                     className={`shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm transition ${
                       c.id === gradeId ? 'border-pine bg-pine-soft font-bold text-pine-dark' : 'border-line text-ink2 hover:text-ink'
                     }`}>
-                    {semesterChipLabel(c.grade, c.label)}
+                    {semesterChipLabel(c.grade, c.label, c.subject)}
                   </button>
                 ))}
               </div>
@@ -677,7 +679,7 @@ export default function MakeWizard() {
                 <div className="flex items-center gap-2 px-3 py-2">
                   <TriCheck state={checkStateOf(typeOrder, selected)}
                     onChange={on => toggleMany(typeOrder, on)} />
-                  <span className="truncate text-sm font-black">{semesterChipLabel(cur.grade, cur.label)}</span>
+                  <span className="truncate text-sm font-black">{semesterChipLabel(cur.grade, cur.label, cur.subject)}</span>
                 </div>
                 {cur.units.map(u => {
                   const unitTypeIds = u.mids.flatMap(m => m.subs.flatMap(s => s.types.map(t => t.id)))

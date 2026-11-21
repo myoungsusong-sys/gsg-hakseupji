@@ -55,8 +55,9 @@ export default function EngPassage() {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ mode, passage, types: [...types], perType, level, wordCount }),
       })
-      const j = await r.json()
-      if (!r.ok) throw new Error(j.error || '실패')
+      // 11/21: 서버가 JSON 이 아닌 답(로컬 개발 화면·시간 초과 등)을 주면 «Unexpected end of JSON input» 대신 알아듣는 말로
+      const j = await r.json().catch(() => ({ error: r.ok ? 'AI 응답을 읽지 못했어요. 잠시 뒤 다시 눌러 주세요.' : `AI 서버에 닿지 못했어요(${r.status}). 잠시 뒤 다시 눌러 주세요.` }))
+      if (!r.ok || j.error) throw new Error(j.error || '실패')
       if (mode === 'exercise') setProbs(j.problems ?? [])
       else if (mode === 'words') { setWords(j.words ?? []); setSheet('단어장') }
       else { setSents(j.sentences ?? []); setSheet('해석 쓰기') }
