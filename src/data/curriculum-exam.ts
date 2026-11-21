@@ -28812,5 +28812,207 @@ export const EXAM_COURSES: ExamCourse[] = [
     ]
    ]
   ]
+ },
+ {
+  "id": "ef-eng-m1-b09-sp",
+  "grade": "중1-2",
+  "subject": "영어",
+  "label": "영어플랫 · 중1 영어 천재(소영순) 보충 Special Lesson",
+  "tree": [
+   [
+    "Special Lesson",
+    [
+     [
+      "어휘",
+      [
+       [
+        "Special Lesson",
+        [
+         "어휘"
+        ]
+       ]
+      ]
+     ],
+     [
+      "어법",
+      [
+       [
+        "Special Lesson",
+        [
+         "어법 판단"
+        ]
+       ]
+      ]
+     ],
+     [
+      "어법",
+      [
+       [
+        "Special Lesson",
+        [
+         "어법 서술형"
+        ]
+       ]
+      ]
+     ],
+     [
+      "독해",
+      [
+       [
+        "Special Lesson",
+        [
+         "대의 파악(주제·제목·요지·요약)"
+        ]
+       ]
+      ]
+     ],
+     [
+      "독해",
+      [
+       [
+        "Special Lesson",
+        [
+         "세부 내용(일치·추론·질문)"
+        ]
+       ]
+      ]
+     ],
+     [
+      "독해",
+      [
+       [
+        "Special Lesson",
+        [
+         "빈칸·흐름(빈칸·순서·지칭)"
+        ]
+       ]
+      ]
+     ],
+     [
+      "서술형",
+      [
+       [
+        "Special Lesson",
+        [
+         "영작·배열·본문 서술형"
+        ]
+       ]
+      ]
+     ],
+     [
+      "단어·문장",
+      [
+       [
+        "Special Lesson",
+        [
+         "단어·문장"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "id": "ef-eng-h1-b10-sp",
+  "grade": "고1",
+  "subject": "영어",
+  "label": "영어플랫 · 고1 영어 천재(조수경) 보충 Special Lesson",
+  "tree": [
+   [
+    "Special Lesson",
+    [
+     [
+      "어휘",
+      [
+       [
+        "Special Lesson",
+        [
+         "어휘"
+        ]
+       ]
+      ]
+     ],
+     [
+      "어법",
+      [
+       [
+        "Special Lesson",
+        [
+         "어법 판단"
+        ]
+       ]
+      ]
+     ],
+     [
+      "어법",
+      [
+       [
+        "Special Lesson",
+        [
+         "어법 서술형"
+        ]
+       ]
+      ]
+     ],
+     [
+      "독해",
+      [
+       [
+        "Special Lesson",
+        [
+         "대의 파악(주제·제목·요지·요약)"
+        ]
+       ]
+      ]
+     ],
+     [
+      "독해",
+      [
+       [
+        "Special Lesson",
+        [
+         "세부 내용(일치·추론·질문)"
+        ]
+       ]
+      ]
+     ],
+     [
+      "독해",
+      [
+       [
+        "Special Lesson",
+        [
+         "빈칸·흐름(빈칸·순서·지칭)"
+        ]
+       ]
+      ]
+     ],
+     [
+      "서술형",
+      [
+       [
+        "Special Lesson",
+        [
+         "영작·배열·본문 서술형"
+        ]
+       ]
+      ]
+     ],
+     [
+      "단어·문장",
+      [
+       [
+        "Special Lesson",
+        [
+         "단어·문장"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
  }
 ]
