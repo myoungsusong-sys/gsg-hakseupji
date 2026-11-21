@@ -44,6 +44,9 @@ export default function PrepLayout() {
               <NavLink to="/prep/eng-passage" className={item}>
                 영어 지문 변형 <span className="ml-1 rounded bg-clay px-1 text-[10px] font-bold text-white">N</span>
               </NavLink>
+              <NavLink to="/prep/eng-report" className={item}>
+                영어 문법 리포트 <span className="ml-1 rounded bg-clay px-1 text-[10px] font-bold text-white">N</span>
+              </NavLink>
               <NavLink to="/prep/lecture" className={item}>강의</NavLink>
               <NavLink to="/prep/lecnote" className={item}>인강노트 확인</NavLink>
             </>

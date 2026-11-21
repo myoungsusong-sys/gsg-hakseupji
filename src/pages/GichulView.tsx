@@ -17,14 +17,14 @@ export default function GichulView() {
   const p = papers.find(x => x.id === id)
   if (!p) return <div className="text-ink2">회차를 찾을 수 없습니다.</div>
 
-  const qPages = Array.from({ length: p.qPages }, (_, i) => `/gichul/${p.id}/q${i + 1}.png`)
-  const sPages = Array.from({ length: p.sPages }, (_, i) => `/gichul/${p.id}/s${i + 1}.png`)
+  const qPages = Array.from({ length: p.qPages }, (_, i) => `/gichul/${p.id}/q${i + 1}.${p.ext ?? 'png'}`)
+  const sPages = Array.from({ length: p.sPages }, (_, i) => `/gichul/${p.id}/s${i + 1}.${p.ext ?? 'png'}`)
 
   return (
     <div>
       <div className="no-print mb-6 flex flex-wrap items-center gap-3">
         <button onClick={() => nav('/prep/csat')} className="rounded-lg border border-line px-4 py-2 text-sm">← 기출 목록</button>
-        <div className="text-sm font-bold">{p.grade} · {examTitle(p)} (수학, {p.region})</div>
+        <div className="text-sm font-bold">{p.grade} · {examTitle(p)} ({p.area ?? '수학'}, {p.region})</div>
         {p.sPages > 0 && (
           <label className="flex items-center gap-2 text-sm">
             <input type="checkbox" checked={withSolution} onChange={e => setWithSolution(e.target.checked)} className="h-4 w-4 accent-pine" />
@@ -32,7 +32,7 @@ export default function GichulView() {
           </label>
         )}
         <div className="grow" />
-        <span className="text-xs text-ink2">EBSi 학력평가 기출 · 출처 표기 후 학습용 배포</span>
+        <span className="text-xs text-ink2">{p.kind ? `${p.region} 1차 시험 수학 · 출처 표기 후 학습용 배포` : 'EBSi 학력평가 기출 · 출처 표기 후 학습용 배포'}</span>
         <button onClick={() => window.print()} className="rounded-lg bg-pine px-6 py-2.5 text-sm font-bold text-paper hover:bg-pine-dark">🖨 인쇄 / PDF 저장</button>
       </div>
 
