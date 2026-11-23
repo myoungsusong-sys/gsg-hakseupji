@@ -15,17 +15,9 @@ import DrillModal, { type DrillWrong } from './DrillModal'
 import OneClickReport from './OneClickReport'
 import { problemReportKey } from '../../lib/lectureLog'
 import PeriodWrongModal from './PeriodWrongModal'
+import { hasTag, tagCounts } from '../../lib/tagFilter'
 
 const CIRCLED = ['①', '②', '③', '④', '⑤']
-
-// 태그 필터 고정 목록 (매쓰플랫 동일 27종 — 존재 태그가 아니라 이 고정 세트)
-const TAG_OPTIONS = [
-  '태그 전체', '기본', '연습문제', '숙제', '복습', '연산',
-  '입학TEST', '일일TEST', '주간TEST', '단원TEST', '총괄TEST', '내신대비', '서술형',
-  '모의고사', '모의고사 쌍둥이', '수능대비', '원본', '기출 유사', '기타자료 유사',
-  '유형별 학습', '유형별 오답', '취약유형', '그룹취약유형', '단원별 취약',
-  '기간별 오답', '학습지 오답', '교재 오답', '기타',
-]
 
 // 수업 > 학습지 탭 (매쓰플랫 동일) — 이 학생에게 출제한 학습지 목록·자동채점·오답 재출제
 export default function WorksheetPanel({ student, openGradeId, onGradeOpened }: {
@@ -97,9 +89,11 @@ export default function WorksheetPanel({ student, openGradeId, onGradeOpened }: 
     return m
   }, [gradings, student.id])
 
+  const tagOpts = useMemo(() => tagCounts(rows.map(r => r.ws)), [rows])
+
   const shown = useMemo(() => {
     let list = rows
-    if (tag !== '태그 전체') list = list.filter(r => r.ws.tags.includes(tag))
+    if (tag !== '태그 전체') list = list.filter(r => hasTag(r.ws.tags, tag))
     const needle = q.trim().toLowerCase()
     if (needle) list = list.filter(r => r.ws.title.toLowerCase().includes(needle))
     return [...list].sort((x, y) => {
@@ -201,7 +195,8 @@ export default function WorksheetPanel({ student, openGradeId, onGradeOpened }: 
       <div className="mb-3 flex flex-wrap items-center gap-3 text-sm">
         <select value={tag} onChange={e => setTag(e.target.value)}
           className="rounded-lg border border-line px-3 py-2 font-semibold">
-          {TAG_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
+          <option value="태그 전체">태그 전체 ({rows.length})</option>
+          {tagOpts.map(o => <option key={o.tag} value={o.tag}>{o.tag} ({o.count})</option>)}
         </select>
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="학습지명 검색"
           className="w-48 rounded-lg border border-line px-3 py-2" />

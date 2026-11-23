@@ -9,7 +9,8 @@ import MathText from '../components/MathText'
 import WorksheetOutputDialog from '../components/WorksheetOutputDialog'
 import ExamReport from '../components/ExamReport'
 import type { Assignment, Student, Worksheet } from '../types'
-import { DIFF_COLOR, DIFF_LABEL, TAG_FILTER_OPTIONS } from '../types'
+import { DIFF_COLOR, DIFF_LABEL } from '../types'
+import { hasTag, tagCounts } from '../lib/tagFilter'
 
 export type View = 'active' | 'favorites' | 'trash'
 
@@ -86,12 +87,8 @@ export default function WorksheetList({ view }: { view: View }) {
     setOutDialog(mode)
   }
 
-  // 태그 필터: 매쓰플랫과 동일하게 프리셋 27종 상시 노출 + 프리셋 외 사용 중 태그 추가
-  const tagOptions = useMemo(() => {
-    const extra = new Set<string>()
-    worksheets.forEach(w => w.tags.forEach(t => { if (!TAG_FILTER_OPTIONS.includes(t)) extra.add(t) }))
-    return [...TAG_FILTER_OPTIONS, ...extra]
-  }, [worksheets])
+  // 태그 필터: 실제 학습지가 가진 태그(같은 뜻은 묶음)만 개수와 함께 보인다
+  const tagOptions = useMemo(() => tagCounts(worksheets.filter(w => (view === 'trash') === !!w.deletedAt)), [worksheets, view])
 
   // 학습지 과목: 저장값 우선, 없으면(레거시) 문항 유형으로 유도, 그래도 없으면 수학
   const probType = useMemo(() => new Map(problems.map(p => [p.id, p.typeId])), [problems])
@@ -109,7 +106,7 @@ export default function WorksheetList({ view }: { view: View }) {
     let base = worksheets.filter(w => (view === 'trash') === !!w.deletedAt)
     base = base.filter(w => wsSubject(w) === subject)
     if (gradeFilter !== 'all') base = base.filter(w => gradeGroup(w.grade) === gradeFilter)
-    if (tagFilter !== 'all') base = base.filter(w => w.tags.includes(tagFilter))
+    if (tagFilter !== 'all') base = base.filter(w => hasTag(w.tags, tagFilter))
     if (listFilter !== 'all') base = base.filter(w => w.listIds.includes(listFilter))
     if (dateFrom) base = base.filter(w => w.createdAt.slice(0, 10) >= dateFrom)
     if (dateTo) base = base.filter(w => w.createdAt.slice(0, 10) <= dateTo)
@@ -277,7 +274,7 @@ export default function WorksheetList({ view }: { view: View }) {
           <select value={tagFilter} onChange={e => setTagFilter(e.target.value)}
             className="rounded-full border border-line bg-white px-3 py-2 text-sm">
             <option value="all">태그 전체</option>
-            {tagOptions.map(t => <option key={t} value={t}>{t}</option>)}
+            {tagOptions.map(o => <option key={o.tag} value={o.tag}>{o.tag} ({o.count})</option>)}
           </select>
           <div className="relative">
             <button onClick={e => { e.stopPropagation(); setFilterOpen(v => !v) }}
