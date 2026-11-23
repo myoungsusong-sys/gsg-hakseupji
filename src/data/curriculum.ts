@@ -2996,6 +2996,12 @@ export function typeName(typeId: string): string {
   return typeEntry(typeId)?.t.name ?? typeId
 }
 
+/** «(11문항)» 꼬리표 — 족보닷컴 유형 이름에 붙은 «그 유형 전체 문항 수». 학습지 제목·부제에서는 뺀다
+ *  (2026-11-23 윤자혜 «문제수가 맞지않음»: 챌린지는 한 밴드 3문제인데 제목은 11문항이라 어긋나 보였다) */
+export function stripCountTag(s: string): string {
+  return s.replace(/\s*\(\d+문항\)\s*/g, ' ').replace(/\s+/g, ' ').trim()
+}
+
 // 유형이 속한 과정 id (예: 'm2-1'·'h-soc2') — 트리에 없으면 빈 글
 export function courseIdOfType(typeId: string): string {
   return typeEntry(typeId)?.c.id ?? ''

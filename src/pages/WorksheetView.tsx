@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNod
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { qrMatrix, qrPath } from '../lib/qr'
 import { useStore } from '../lib/store'
-import { typeName, typeSubUnitId, typeUnitName } from '../data/curriculum'
+import { typeName, stripCountTag, typeSubUnitId, typeUnitName } from '../data/curriculum'
 import { CONCEPTS, type Concept } from '../data/concepts'
 import MathText, { isImageUrl } from '../components/MathText'
 import { bareChoices } from '../components/ProblemContent'
@@ -63,6 +63,16 @@ const LOCAL_CROP = /\/(wanja|otu)\//
 const basePxOf = (url: string) => (LOCAL_CROP.test(url) ? 468 : 930)
 const isWideCrop = (dims: Dims | undefined, url: string | undefined) =>
   !!url && LOCAL_CROP.test(url) && (dims?.get(url)?.w ?? 0) > 700
+// 🔴 2026-11-23 윤자혜 «국어지문이 글씨크기가 너무 작음»(해냄 1-2-1 27번) · «01번 오른쪽 그림이 가늘게 붙음»(챌린지 복합양식 02번):
+//    긴 공통 지문·그림 11장짜리 글 문항은 한 단(84.8mm)보다 훨씬 길어 «단 높이에 맞춰 통째로 줄이기(fitBox)»가
+//    글씨를 절반 이하로 줄였다. → 단 높이를 넘는 글 문항은 지면 전폭 띠로 싣고 본문을 2단으로 흘려 줄이기를 없앤다(글씨·그림이 그대로).
+const textWeight = (p: Problem, prev?: Problem) =>
+  p.imageUrl ? 0 : zbBodyFor(p, prev).replace(/\[\[그림:[^\]]+\]\]/g, '').length + 450 * ((p.body.match(/\[\[그림:/g) ?? []).length)
+const isWideTextCand = (p: Problem, prev?: Problem) => textWeight(p, prev) > 800
+// 전폭 띠 글 문항의 단 수 — 2단으로도 쪽 높이를 넘으면 3단(글씨는 그대로, 폭만 좁힘)
+const wideColsOf = (m: Record<string, number>, i: number): 2 | 3 =>
+  (m[`w${i}`] ?? 0) > BODYN_H * 0.97 && m[`x${i}`] != null && m[`x${i}`] < m[`w${i}`] * 0.9 ? 3 : 2
+const wideHOf = (m: Record<string, number>, i: number) => m[wideColsOf(m, i) === 3 ? `x${i}` : `w${i}`] ?? 0
 const WIDE_IMG_W = CONTENT_W - G.indent            // 170.2 — 전폭 띠 문항의 그림 최대 폭
 
 // 문제·해설 이미지의 실물 스케일: baseW mm ↔ 원본 한 단 폭(매쓰플랫 930px · 교재 크롭 468px), 작은 이미지는 비례 축소
@@ -378,9 +388,10 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         .forEach((cols, pi) => defs.push({ part: 's', first: pi === 0, kind: 'rows', rows: cols[0], conceptsFirst: pi === 0 && frontConcepts }))
     } else if (opts.layout === 'basic') {
       const hs = items.map((_, i) => measured[`p${i}`] ?? 0)
-      const wide = items.map((_, i) => measured[`w${i}`] != null)
+      // 넓은 교재 크롭은 항상 전폭, 긴 글 문항은 한 단에 넣으면 단 높이를 넘을 때만 전폭(2단 흘림)
+      const wide = items.map((p, i) => measured[`w${i}`] != null && (!!p.imageUrl || hs[i] > BODYN_H * 0.97))
       if (wide.some(Boolean)) {
-        layoutBands(hs, wide, items.map((_, i) => measured[`w${i}`] ?? 0), S, p => p === 0 ? avail1 : BODYN_H)
+        layoutBands(hs, wide, items.map((_, i) => wideHOf(measured, i)), S, p => p === 0 ? avail1 : BODYN_H)
           .forEach((bands, pi) => defs.push({ part: 's', first: pi === 0, kind: 'bands', bands, conceptsFirst: pi === 0 && frontConcepts }))
       } else {
         fillColumns(hs, S, 2, p => p === 0 ? avail1 : BODYN_H)
@@ -578,7 +589,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   // 부가정보(난이도·정답률·신경향·연관)는 옵션을 켰을 때만 파이프 뒤에 ' · '로 잇는다.
   const caption = (p: Problem) => {
     const parts: string[] = []
-    if (opts.showTypeName) parts.push(`| ${typeName(p.typeId)} |`)
+    if (opts.showTypeName) parts.push(`| ${stripCountTag(typeName(p.typeId))} |`)
     if (opts.showDiff) parts.push(DIFF_LABEL[p.diff])
     if (opts.showCorrectRate && p.correctRate != null) parts.push(`정답률 ${p.correctRate}%`)
     if (opts.showNew && p.isNew) parts.push('신경향')
@@ -626,10 +637,10 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       ))}
     </div>
   )
-  const problemAt = (i: number, wide = false) => (
+  const problemAt = (i: number, wide = false, cols = 2) => (
     <>
       {conceptBefore.get(i) && conceptGroupEl(conceptBefore.get(i)!)}
-      <ProblemBlock p={items[i]} prev={items[i - 1]} idx={i} label={labels[i]} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} />
+      <ProblemBlock p={items[i]} prev={items[i - 1]} idx={i} label={labels[i]} caption={caption(items[i])} themeMain={theme.main} dims={dims} onVideo={onVideo} wide={wide} cols={cols} />
     </>
   )
   const solveRowAt = (i: number, rowH: number, body?: ReactNode) => (
@@ -765,7 +776,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
         {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
         <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
           {pg.bands.map((b, k) => 'wide' in b
-            ? <div key={k} style={{ marginBottom: `${S}mm` }}>{fitBox(problemAt(b.wide, true), `w${b.wide}`, CONTENT_W, availOf(pg))}</div>
+            ? <div key={k} style={{ marginBottom: `${S}mm` }}>{(() => { const c = measured ? wideColsOf(measured, b.wide) : 2; return fitBox(problemAt(b.wide, true, c), c === 3 ? `x${b.wide}` : `w${b.wide}`, CONTENT_W, availOf(pg)) })()}</div>
             : (
               <div key={k} style={{ position: 'relative', height: `${b.h}mm`, marginBottom: `${S}mm` }}>
                 <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: '#e7e7e7' }} />
@@ -988,9 +999,14 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
             </div>
           ))}
           {/* 넓은 교재 크롭 문항 — 전폭 띠로 실을 때의 높이 */}
-          {items.map((p, i) => isWideCrop(dims, p.imageUrl) && (
+          {items.map((p, i) => (isWideCrop(dims, p.imageUrl) || isWideTextCand(p, items[i - 1])) && (
             <div key={`w${i}`} data-mk={`w${i}`} style={{ display: 'flow-root', width: `${CONTENT_W}mm` }}>
               {problemAt(i, true)}
+            </div>
+          ))}
+          {items.map((p, i) => !p.imageUrl && isWideTextCand(p, items[i - 1]) && (
+            <div key={`x${i}`} data-mk={`x${i}`} style={{ display: 'flow-root', width: `${CONTENT_W}mm` }}>
+              {problemAt(i, true, 3)}
             </div>
           ))}
           {items.map((_, i) => (
@@ -1206,13 +1222,14 @@ function InlineAnswer({ p, themeMain, dims }: { p: Problem; themeMain: string; d
 
 /* ── 문항 블록 (§5-5): 번호 20pt bold 테마색 2자리 0패딩 + 본문 hanging indent 11.6mm,
       문제 이미지 폭 73.2mm(930px 원본 기준, 작으면 비례) ── */
-export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo, dims, wide }: {
+export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo, dims, wide, cols = 2 }: {
   label?: NoLabel         // ✍️ 서술형 묶음 번호 — 없으면 idx+1
   prev?: Problem          // 📒 바로 앞 문항 — 족보 문항이 같은 지문이면 지문을 다시 싣지 않는다(zbBodyFor)
   p: Problem; idx: number; caption: string; themeMain: string
   onVideo?: (p: Problem, idx: number) => void; dims?: Dims
   /** 전폭 띠(넓은 교재 크롭) — 그림을 한 단 폭에 가두지 않는다 */
   wide?: boolean
+  cols?: number   // 전폭 글 문항의 단 수(2·3)
 }) {
   return (
     <div style={{ position: 'relative', paddingLeft: `${G.indent}mm` }}>
@@ -1231,6 +1248,8 @@ export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo,
       {p.imageUrl
         ? <img src={p.imageUrl} alt="" style={scaledImgStyle(dims, p.imageUrl, G.probImgW, wide ? WIDE_IMG_W : G.probImgW)} />
         : <>
+            {/* wide(전폭 띠) 글 문항은 본문을 2단으로 흘린다 — 한 단 폭(글씨 크기)을 그대로 두고 높이를 절반으로 */}
+            <div className={wide ? 'zb-wide' : undefined} style={wide ? { columnCount: cols, columnGap: `${G.colGap}mm`, columnFill: 'balance' } : undefined}>
             <div style={{ fontSize: '10.5pt', lineHeight: 1.7 }}><MathText text={zbBodyFor(p, prev)} /></div>
             {p.choices && !bareChoices(p.choices) && (
               <div style={{ marginTop: '1.5mm', display: 'grid', gap: '0.5mm', fontSize: '10pt', lineHeight: 1.6 }}>
@@ -1239,6 +1258,7 @@ export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo,
                 ))}
               </div>
             )}
+            </div>
             {/* 매쓰플랫 원본에는 주관식 아래 점선(답 쓰는 줄)이 없다 — 실측 2026-08-06 */}
           </>}
       </div>

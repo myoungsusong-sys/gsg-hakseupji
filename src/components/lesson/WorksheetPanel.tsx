@@ -5,7 +5,7 @@ import { DIFF_LABEL } from '../../types'
 import { useStore, uid } from '../../lib/store'
 import { useBrand } from '../../lib/brand'
 import { dateKey, todayKey } from '../../lib/dates'
-import { typeName, coursesForWorksheet } from '../../data/curriculum'
+import { typeName, stripCountTag, coursesForWorksheet } from '../../data/curriculum'
 import { problemCoursesOf } from '../../data/problemCourses'
 import MathText from '../MathText'
 import ProblemContent from '../ProblemContent'
@@ -123,8 +123,8 @@ export default function WorksheetPanel({ student, openGradeId, onGradeOpened }: 
     let best: Diff = list[0].diff
     let bestN = 0
     for (const [d, n] of count) if (n > bestN) { best = d; bestN = n }
-    const first = typeName(list[0].typeId)
-    const last = typeName(list[list.length - 1].typeId)
+    const first = stripCountTag(typeName(list[0].typeId))
+    const last = stripCountTag(typeName(list[list.length - 1].typeId))
     const range = first === last ? first : `${first} ~ ${last}`
     return `${ws.problemIds.length}문제 | ${DIFF_LABEL[best]} | ${range}`
   }

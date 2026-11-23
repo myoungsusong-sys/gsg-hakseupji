@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import type { Problem } from '../../types'
 import { DEFAULT_SHEET_OPTIONS } from '../../types'
 import { useStore, uid } from '../../lib/store'
-import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, typeSubUnitId, type Curriculum } from '../../data/curriculum'
+import { CURRICULA, curriculumFor, defaultCurriculumForGrade, typeName, stripCountTag, typeSubUnitId, type Curriculum } from '../../data/curriculum'
 import { SUBJECTS, type Subject } from '../../lib/subject'
 import { isSchoolCourse } from '../../data/schoolPub'
 import { POOL_COURSES, GEN_ONLY_COURSES } from '../../data/pool'
@@ -219,7 +219,7 @@ export default function StudentChallenge() {
     const id = uid('ws')
     saveWorksheet({
       id,
-      title: `[챌린지] ${typeName(typeId)} · ${band}`,
+      title: `[챌린지] ${stripCountTag(typeName(typeId))} · ${band}`,
       author: me.name,
       grade: cur.grade,
       tags: ['챌린지'],

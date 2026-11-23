@@ -222,3 +222,7 @@ html[data-theme="ollio"] [class*="text-purple-"], html[data-theme="ollio"] [clas
 html[data-theme="ollio"] [class*="border-blue-"], html[data-theme="ollio"] [class*="border-indigo-"], html[data-theme="ollio"] [class*="border-violet-"],
 html[data-theme="ollio"] [class*="border-purple-"], html[data-theme="ollio"] [class*="border-sky-"], html[data-theme="ollio"] [class*="border-cyan-"] { border-color: var(--color-pine-border); }
 html[data-theme="ollio"] [class*="ring-blue-"], html[data-theme="ollio"] [class*="ring-indigo-"], html[data-theme="ollio"] [class*="ring-sky-"] { --tw-ring-color: var(--color-pine); }
+
+/* 2026-11-23 윤자혜 — 전폭 띠로 실린 긴 글 문항(2단 흘림): 그림 한 장이 단 높이를 다 차지하지 않게 높이를 묶는다
+   (해냄 챌린지 «복합양식 자료 읽기» 02번의 치약 광고 그림 하나가 241mm 라 문항 전체가 반 이하로 줄던 것) */
+.zb-wide img { max-height: 62mm; width: auto !important; max-width: 100%; object-fit: contain; }

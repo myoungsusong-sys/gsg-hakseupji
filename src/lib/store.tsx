@@ -9,7 +9,7 @@ import { SEED_PROBLEMS } from '../data/problems'
 import type { MasteryState } from './mastery'
 import { loadWbMatch, deriveWBItems, courseOfGrade, type MatchData } from '../data/wbMatch'
 import { loadPool } from '../data/pool'
-import { coursesForWorksheet, defaultCurriculumForGrade } from '../data/curriculum'
+import { coursesForWorksheet, defaultCurriculumForGrade, stripCountTag } from '../data/curriculum'
 import { problemCoursesOf } from '../data/problemCourses'
 import { useAuthEmail } from './auth'
 import { isStudentEmail, matchStudentByEmail } from './role'
@@ -203,7 +203,8 @@ function poolCourseOfWb(c?: string): string | undefined {
 }
 
 function normWorksheet(w: Worksheet): Worksheet {
-  return { ...w, options: { ...DEFAULT_SHEET_OPTIONS, ...w.options }, listIds: w.listIds ?? [], conceptIds: w.conceptIds ?? [] }
+  const title = /^\[챌린지\]/.test(w.title ?? '') ? stripCountTag(w.title) : w.title   // 옛 챌린지 제목의 «(11문항)» 꼬리표 제거
+  return { ...w, title, options: { ...DEFAULT_SHEET_OPTIONS, ...w.options }, listIds: w.listIds ?? [], conceptIds: w.conceptIds ?? [] }
 }
 
 function load(): Persisted {
