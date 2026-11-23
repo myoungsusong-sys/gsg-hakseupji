@@ -1,3 +1,4 @@
+import { reportGradings } from '../../lib/reportFeed'
 import { useEffect, useMemo, useState } from 'react'
 import type { Grading, Student } from '../../types'
 import { DIFF_LABEL, type Diff } from '../../types'
@@ -20,7 +21,9 @@ const pct = (a: number, b: number) => (b > 0 ? Math.round(a / b * 100) : null)
 const autoKey = (sid: string) => `r|${sid}`
 
 export default function PeriodReport({ student }: { student: Student }) {
-  const { gradings, students, worksheets, workbooks, problems, wbItems, academyProfile, savedReports, addSavedReport, lectureLog, setLectureLog } = useStore()
+  const { gradings: rawGradings, students, worksheets, workbooks, problems, wbItems, academyProfile, savedReports, addSavedReport, lectureLog, setLectureLog, masteries } = useStore()
+  // 2026-11-23: 승강제 기록까지 모든 채점 기록을 합친다 (lib/reportFeed.ts)
+  const gradings = useMemo(() => reportGradings(rawGradings, masteries), [rawGradings, masteries])
   const now = new Date()
   const [mode, setMode] = useState<'month' | 'range'>('month')
   const [month, setMonth] = useState(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`)

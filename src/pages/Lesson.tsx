@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useUrlParams } from '../lib/urlState'
 import { useStore } from '../lib/store'
 import { useAuth } from '../lib/auth'
 import { teacherByEmail } from '../lib/role'
@@ -59,20 +59,28 @@ export default function Lesson() {
   const meT = teacherByEmail(teachers, email)
   const mine = meT?.scope === 'mine' ? new Set(meT.classes ?? []) : null
   const active = students.filter(s => s.active && (!mine || (!!s.klass && mine.has(s.klass))))
-  const [studentId, setStudentId] = useState<string | null>(active[0]?.id ?? null)
-  // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
-  const [groupName, setGroupName] = useState<string | null>(null)
-  const [tab, setTab] = useState<Tab>('history')
+  // 🔙 2026-11-23 윤자혜 «전단계로 돌아가려고 하면 항상 위 화면으로» — 학생·그룹·탭·묶음을 주소(#/lesson?s=…&t=…)에 남겨
+  //    브라우저 뒤로 가기가 직전에 보던 학생·탭으로 돌아오게 한다. (예전엔 useState 라 다른 화면에 갔다 오면 첫 학생·첫 탭으로 초기화)
+  const { qs, patch } = useUrlParams()
+  const groupName = qs.get('g')                                   // 학년/반 그룹 선택 — [전체] 클릭 시 학생 대신 그룹 단위 화면 (매쓰플랫 /lesson/*/grade/<학년>)
+  const studentId = qs.get('s') ?? (groupName ? null : active[0]?.id ?? null)
+  const tabQ = qs.get('t') as Tab | null
+  const tab: Tab = tabQ && TABS.some(t => t.key === tabQ) ? tabQ : 'history'
+  const groupBy: '학년' | '반' = qs.get('by') === '반' ? '반' : '학년'
+  const engView: 'voca' | 'test' = qs.get('ev') === 'test' ? 'test' : 'voca'
+  const setStudentId = (id: string) => patch({ s: id, g: null })
+  const setGroupName = (n: string | null) => patch({ g: n })
+  const setTab = (t: Tab, replace = false) => patch({ t: t === 'history' ? null : t }, replace)
+  const setGroupBy = (g: '학년' | '반') => patch({ by: g === '학년' ? null : g, g: null })
+  const setEngView = (v: 'voca' | 'test') => patch({ ev: v === 'voca' ? null : v })
   // QR 채점 진입(#/lesson?student=<id>&grade=<학습지 id>) — 그 학생의 학습지 탭을 열고 채점 화면을 바로 띄운다
-  const [qs, setQs] = useSearchParams()
   const [openGradeId, setOpenGradeId] = useState<string | null>(null)
   useEffect(() => {
     const sid = qs.get('student'), gid = qs.get('grade')
     if (!sid && !gid) return
-    if (sid && !students.some(s => s.id === sid)) { if (synced) setQs({}, { replace: true }); return }
-    if (sid) { setStudentId(sid); setGroupName(null) }
-    if (gid) { setTab('worksheet'); setOpenGradeId(gid) }
-    setQs({}, { replace: true })
+    if (sid && !students.some(s => s.id === sid)) { if (synced) patch({ student: null, grade: null }, true); return }
+    patch({ student: null, grade: null, ...(sid ? { s: sid, g: null } : {}), ...(gid ? { t: 'worksheet' } : {}) }, true)
+    if (gid) setOpenGradeId(gid)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [qs, students, synced])
   // 🔴 과목 카테고리 — 「영어」를 고르면 영어단어 하나만, 그 밖에는 영어단어를 뺀 나머지.
@@ -83,20 +91,13 @@ export default function Lesson() {
     [subject])
   // 과목을 바꾸면 지금 탭이 목록에 없을 수 있다 — 첫 탭으로 돌린다(빈 화면 방지)
   useEffect(() => {
-    if (!tabs.some(t => t.key === tab)) setTab(tabs[0].key)
+    if (!tabs.some(t => t.key === tab)) setTab(tabs[0].key, true)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tabs, tab])
-  const [groupBy, setGroupBy] = useState<'학년' | '반'>('학년')
-  // 📗 과목 영어의 반 화면 — 영단어 현황 | 수업 연계 테스트
-  const [engView, setEngView] = useState<'voca' | 'test'>('voca')
   const [q, setQ] = useState('')
   const [closed, setClosed] = useState<Set<string>>(new Set())
 
-  // 첫 렌더에는 클라우드 동기화 전이라 active가 비어 있다. 그래서 studentId 초기값이 null로 굳어,
-  // 학생이 다 들어온 뒤에도 아무도 선택되지 않은 채 채점판이 비어 보였다(2026-07-26 명수쌤 제보).
-  // 학생 명부가 들어오면 첫 학생을 잡아 준다. 이미 고른 학생·그룹은 건드리지 않는다.
-  useEffect(() => {
-    if (studentId === null && !groupName && active.length > 0) setStudentId(active[0].id)
-  }, [active, studentId, groupName])
+  // (학생 기본값 — 명부가 늦게 들어와도 위 studentId 가 그때그때 첫 학생을 가리킨다. 2026-07-26 «아무도 선택 안 됨» 제보 대응을 주소 방식으로 옮김)
 
   const student = groupName ? null : active.find(s => s.id === studentId) ?? null
   const groupLabel = groupName === ALL_GROUP ? '전체 학생' : groupName
@@ -176,7 +177,7 @@ export default function Lesson() {
           )}
           <div className="flex rounded-lg bg-paper2 p-0.5 text-xs font-bold">
             {(['학년', '반'] as const).map(g => (
-              <button key={g} onClick={() => { setGroupBy(g); setGroupName(null) }}
+              <button key={g} onClick={() => setGroupBy(g)}
                 className={`grow rounded-md px-2 py-1.5 transition ${groupBy === g ? 'bg-white text-pine shadow-sm' : 'text-ink2 hover:text-ink'}`}>{g}</button>
             ))}
           </div>
@@ -214,7 +215,7 @@ export default function Lesson() {
                 {open && (
                   <div className="ml-3 border-l border-line/70 pl-1.5">
                     {list.map(s => (
-                      <button key={s.id} onClick={() => { setStudentId(s.id); setGroupName(null) }}
+                      <button key={s.id} onClick={() => setStudentId(s.id)}
                         className={`block w-full rounded-lg px-3 py-1.5 text-left text-sm transition ${studentId === s.id && !groupName
                           ? 'bg-pine-soft font-bold text-pine-dark'
                           : 'text-ink hover:bg-paper2'}`}>
@@ -245,7 +246,7 @@ export default function Lesson() {
                   </div>
                   {engView === 'voca'
                     ? <VocaClassPanel key={`${groupBy}-${groupName}`} label={groupLabel ?? ''} students={groupStudents}
-                        onOpen={id => { setStudentId(id); setGroupName(null); setTab('voca') }} />
+                        onOpen={id => patch({ s: id, g: null, t: 'voca' })} />
                     : <EngLessonTest key={`${groupBy}-${groupName}`} label={groupLabel ?? ''} students={groupStudents} />}
                 </>
               )

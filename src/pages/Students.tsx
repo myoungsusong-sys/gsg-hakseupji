@@ -1,3 +1,4 @@
+import { useUrlTab } from '../lib/urlState'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { problemReportsOf } from '../lib/lectureLog'
 import type { ReactNode } from 'react'
@@ -57,7 +58,7 @@ function genAttendNo(used: Set<string>): string {
 }
 
 export default function Students() {
-  const [tab, setTab] = useState<Tab>('학생 관리')
+  const [tab, setTab] = useUrlTab<Tab>('tab', '학생 관리')
 
   return (
     <div>

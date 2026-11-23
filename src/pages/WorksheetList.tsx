@@ -15,7 +15,7 @@ import { hasTag, tagCounts } from '../lib/tagFilter'
 export type View = 'active' | 'favorites' | 'trash'
 
 type GradeGroup = '초' | '중' | '고'
-type SortMode = 'created' | 'name'
+type SortMode = 'created' | 'name' | 'grade'
 
 // 매쓰플랫 「학습지 유형」 필터 칩 — tags·title 키워드 매칭
 const WS_TYPE_CHIPS = ['단원유형별', '시중교재', '수능모의고사', '학교별 기출', '병합 학습지'] as const
@@ -31,6 +31,13 @@ const WS_TYPE_KEYWORDS: Record<string, string[]> = {
 function gradeGroup(grade: string): GradeGroup {
   const c = grade.charAt(0)
   return c === '초' ? '초' : c === '중' ? '중' : '고'
+}
+
+// 학년 정렬키 — 초1→고3, 고등 과목명(공통수학1 등)은 학년 뒤. 2026-11-23 윤자혜 «학교별 기출 학년별 정리»
+function wsGradeRank(grade: string): number {
+  const m = grade.match(/^(초|중|고)(\d)(?:-(\d))?/)
+  if (!m) return 900
+  return (m[1] === '초' ? 0 : m[1] === '중' ? 100 : 200) + Number(m[2]) * 10 + Number(m[3] ?? 0)
 }
 
 // 표 학년 칸: '중1-1' → '중1', 고등 과목명('공통수학1' 등)은 그대로
@@ -60,6 +67,7 @@ export default function WorksheetList({ view }: { view: View }) {
   const [q, setQ] = useState('')
   const [tagFilter, setTagFilter] = useState<string>('all')
   const [gradeFilter, setGradeFilter] = useState<'all' | GradeGroup>('all')
+  const [detailGrade, setDetailGrade] = useState<string>('all')   // 세부 학년(중1·중2·중3·고1 …)
   const [sortMode, setSortMode] = useState<SortMode>('created')
   const [listFilter, setListFilter] = useState<string>('all')
   const [filterOpen, setFilterOpen] = useState(false)
@@ -106,6 +114,7 @@ export default function WorksheetList({ view }: { view: View }) {
     let base = worksheets.filter(w => (view === 'trash') === !!w.deletedAt)
     base = base.filter(w => wsSubject(w) === subject)
     if (gradeFilter !== 'all') base = base.filter(w => gradeGroup(w.grade) === gradeFilter)
+    if (detailGrade !== 'all') base = base.filter(w => gradeLabel(w.grade) === detailGrade)
     if (tagFilter !== 'all') base = base.filter(w => hasTag(w.tags, tagFilter))
     if (listFilter !== 'all') base = base.filter(w => w.listIds.includes(listFilter))
     if (dateFrom) base = base.filter(w => w.createdAt.slice(0, 10) >= dateFrom)
@@ -125,10 +134,24 @@ export default function WorksheetList({ view }: { view: View }) {
     }
     return [...base].sort((a, b) => sortMode === 'name'
       ? a.title.localeCompare(b.title, 'ko')
-      : b.createdAt.localeCompare(a.createdAt))
-  }, [worksheets, view, q, gradeFilter, sortMode, tagFilter, listFilter, dateFrom, dateTo, excludeReview, mineOnly, wsTypes, subject, wsSubject, mineSet])
+      : sortMode === 'grade'
+        ? wsGradeRank(a.grade) - wsGradeRank(b.grade) || a.title.localeCompare(b.title, 'ko')
+        : b.createdAt.localeCompare(a.createdAt))
+  }, [worksheets, view, q, gradeFilter, detailGrade, sortMode, tagFilter, listFilter, dateFrom, dateTo, excludeReview, mineOnly, wsTypes, subject, wsSubject, mineSet])
 
   // 학습지별 출제된 학생 (수업·숙제 무관, 학생 중복 제거)
+  // 세부 학년 칩 — 지금 목록(초·중·고 거름 뒤)에 실제로 있는 학년만
+  const detailGrades = useMemo(() => {
+    const set = new Set<string>()
+    for (const w of worksheets) {
+      if ((view === 'trash') !== !!w.deletedAt || wsSubject(w) !== subject) continue
+      if (gradeFilter !== 'all' && gradeGroup(w.grade) !== gradeFilter) continue
+      set.add(gradeLabel(w.grade))
+    }
+    return [...set].sort((a, b) => wsGradeRank(a) - wsGradeRank(b))
+  }, [worksheets, view, subject, gradeFilter, wsSubject])
+  useEffect(() => { if (detailGrade !== 'all' && !detailGrades.includes(detailGrade)) setDetailGrade('all') }, [detailGrades, detailGrade])
+
   const assignedByWs = useMemo(() => {
     const m = new Map<string, Set<string>>()
     for (const a of assignments) {
@@ -265,12 +288,22 @@ export default function WorksheetList({ view }: { view: View }) {
         <div className="mb-6 flex flex-wrap items-center gap-3">
           <div className="flex gap-1 rounded-full border border-line bg-white p-1">
             {(['all', '초', '중', '고'] as const).map(g => (
-              <button key={g} onClick={() => setGradeFilter(g)}
+              <button key={g} onClick={() => { setGradeFilter(g); setDetailGrade('all') }}
                 className={`rounded-full px-3 py-1 text-sm ${gradeFilter === g ? 'bg-pine font-semibold text-paper' : 'text-ink2 hover:text-ink'}`}>
                 {g === 'all' ? '전체' : g}
               </button>
             ))}
           </div>
+          {detailGrades.length > 1 && (
+            <div className="flex flex-wrap gap-1 rounded-full border border-line bg-white p-1">
+              {['all', ...detailGrades].map(g => (
+                <button key={g} onClick={() => setDetailGrade(g)}
+                  className={`rounded-full px-2.5 py-1 text-sm ${detailGrade === g ? 'bg-pine font-semibold text-paper' : 'text-ink2 hover:text-ink'}`}>
+                  {g === 'all' ? '학년 전체' : g}
+                </button>
+              ))}
+            </div>
+          )}
           <select value={tagFilter} onChange={e => setTagFilter(e.target.value)}
             className="rounded-full border border-line bg-white px-3 py-2 text-sm">
             <option value="all">태그 전체</option>
@@ -803,7 +836,7 @@ export default function WorksheetList({ view }: { view: View }) {
 function SortToggle({ value, onChange }: { value: SortMode; onChange: (v: SortMode) => void }) {
   return (
     <div className="flex gap-1 rounded-full border border-line bg-white p-1 text-xs">
-      {([['created', '생성순'], ['name', '이름순']] as const).map(([k, label]) => (
+      {([['created', '생성순'], ['name', '이름순'], ['grade', '학년순']] as const).map(([k, label]) => (
         <button key={k} onClick={() => onChange(k)}
           className={`rounded-full px-2.5 py-0.5 ${value === k ? 'bg-paper2 font-semibold text-ink' : 'text-ink2 hover:text-ink'}`}>
           {label}

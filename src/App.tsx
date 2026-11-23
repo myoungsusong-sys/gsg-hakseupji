@@ -24,6 +24,7 @@ import Questions from './pages/Questions'
 import Layout from './components/Layout'
 import Help from './pages/Help'
 import SaveGuard from './components/SaveGuard'
+import ScrollMemory from './components/ScrollMemory'
 import PrepLayout from './components/PrepLayout'
 import Placeholder from './components/Placeholder'
 import WorksheetPage from './pages/WorksheetPage'
@@ -125,6 +126,7 @@ function Gate() {
     <StoreProvider>
       <HashRouter>
         <MgmtEntry />
+        <ScrollMemory />
         <Routes>
           {/* ── 학부모앱 (#/parent) — 로컬 모드/선생님 미리보기용. 프로덕션 미인증 진입은 ParentOnlyApp ── */}
           <Route path="/parent-login" element={<ParentLogin />} />

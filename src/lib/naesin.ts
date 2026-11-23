@@ -40,6 +40,7 @@ export interface NaesinSet {
   diffLabel: string           // 탭3 「난이도」 — 중 / 중 / 중상 (원본과 같음)
   typeIds: string[]
   count: number               // 원본과 같이 25
+  subject?: string            // 수학 외 과목(과학·사회·역사·영어·국어) 세트에만 — 출제할 때 학습지 과목으로 쓴다
 }
 
 // ── 원본 필터 문구 그대로 ────────────────────────────────────────────────────
@@ -123,16 +124,61 @@ const COUNT = 25
 function typesOfMid(m: MidUnit): string[] { return m.subs.flatMap((s) => s.types.map((t) => t.id)) }
 function typesOfUnit(u: BigUnit): string[] { return u.mids.flatMap(typesOfMid) }
 
+
+// ── 수학 외 과목(과학·사회·역사·영어·국어) — 2026-11-23 윤자혜 선생님 «내신대비 교과서에 수학만 있음» ─────────
+//  우리 풀(교과서별 영어·국어 과정 · 내신 기출 ns-* · 과학·사회·역사 과정)을 같은 표 형식으로 보여 준다.
+//  시험대비(exam*)·수업세트(set*)·영어플랫(ef-*) 과정은 «시험대비·수업세트» 탭 몫이라 여기서 뺀다.
+const isOther = (cur: Curriculum) => !!cur.subject && cur.subject !== '수학'
+/** 과정 라벨 끝 괄호 → 출판사. «(천재·노미숙)» → 천재(노미숙) · «(2022개정·올쏘)» → 올쏘 · 없으면 «공통» */
+export function coursePublisher(cur: Curriculum): string {
+  if (cur.book) return cur.book
+  const m = cur.label.match(/\(([^()]*)\)\s*$/)
+  const inner = m?.[1] ?? ''
+  const parts = inner.split('·').map((x) => x.trim()).filter(Boolean)
+  const nonRev = parts.filter((x) => !/개정|수능|출판사 공통|^\d{4}/.test(x))
+  if (nonRev.length >= 2) return `${nonRev[0]}(${nonRev[1]})`
+  if (nonRev.length === 1) return nonRev[0]
+  return OUR_PUBLISHER
+}
+/** 제목 꼬리표 — 수학은 학기 표기 그대로, 다른 과목은 «중1-2 국어» · «고2 물리학» 처럼 과정 이름을 붙인다 */
+function setTag(cur: Curriculum): string {
+  if (!isOther(cur)) return semesterTag(cur)
+  let name = cur.label.replace(/^(내신 기출|시험대비|영어플랫)\s*·\s*/, '')
+  if (cur.book) name = (name.split('·').pop() ?? '').split(cur.book).join('')
+  name = name.replace(/\s*\([^()]*\)/g, '').replace(/^(중학교|초등학교|고등학교)\s*\d학년\s*(\d학기)?\s*/, '').replace(/^올쏘\s*중학\s*/, '').replace(/^(중|고)\d\s*/, '').replace(/교과서\s*$/, '').trim()
+  return `${cur.grade} ${name || cur.subject}`.trim()
+}
+function revisionText(cur: Curriculum): string {
+  if (!isOther(cur)) return `(${revisionOf(cur.label)})`
+  const m = cur.label.match(/(\d{4}|\d{2})\s*개정/)
+  return m ? `(${m[1].slice(-2)}개정)` : ''
+}
+/** 이 과목에서 «교과서 단원» 표에 올릴 과정들 — 영어·국어는 교과서(출판사)가 붙은 과정만 */
+export function otherSubjectCourses(subject: string): Curriculum[] {
+  return CURRICULA.filter((c) => c.subject === subject && !/^(exam|set|ef-)/.test(c.id) && (!(subject === '영어' || subject === '국어') || coursePublisher(c) !== OUR_PUBLISHER))
+}
+const GRADES = ['초1', '초2', '초3', '초4', '초5', '초6', '중1', '중2', '중3', '고1', '고2', '고3']
+/** 학년 칩 — 이 과목에 과정이 있는 학년만 («전체» 포함) */
+export function otherSubjectFilters(subject: string): { label: string; courses: string[] }[] {
+  const by = new Map<string, string[]>()
+  for (const c of otherSubjectCourses(subject)) { const g = gradeOnly(c.grade); by.set(g, [...(by.get(g) ?? []), c.id]) }
+  const rest = [...by.keys()].filter((g) => !GRADES.includes(g))
+  return [{ label: '전체', courses: [] }, ...[...GRADES, ...rest].filter((g) => by.has(g)).map((g) => ({ label: g, courses: by.get(g)! }))]
+}
+
 /** 탭2 「내신 대비 교과서」 — 대단원 × 1·2·3번. 제목 `[중1-1] 수와 연산-공통1` */
 export function textbookSets(cur: Curriculum): NaesinSet[] {
+  const other = isOther(cur)
+  const pub = other ? coursePublisher(cur) : OUR_PUBLISHER
   return cur.units.flatMap((u, ui) =>
     LEVELS.map((level) => ({
       key: `${cur.id}|${u.id}|*|${level}`,
-      courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
+      courseId: cur.id, grade: gradeOnly(cur.grade), revision: revisionText(cur), semester: cur.grade,
       unitName: u.name, level,
-      title: `내신대비 | [${semesterTag(cur)}] ${u.name}-${OUR_PUBLISHER}${LEVEL_NO[level]}`,
-      subtitle: `(단원 정리 - ${OUR_PUBLISHER}) ${zero2(ui + 1)} ${u.name} ${level === '고난도' ? '단원 매듭짓기' : '생각 다지기'}`,
-      publisher: OUR_PUBLISHER,
+      title: `내신대비 | [${setTag(cur)}] ${u.name}-${pub}${LEVEL_NO[level]}`,
+      subtitle: `(${other ? '교과서' : '단원 정리'} - ${pub}) ${zero2(ui + 1)} ${u.name} ${level === '고난도' ? '단원 매듭짓기' : '생각 다지기'}`,
+      publisher: pub,
+      ...(other ? { subject: cur.subject } : {}),
       diffLabel: LEVEL_DIFF[level],
       typeIds: typesOfUnit(u),
       count: COUNT,
@@ -150,11 +196,12 @@ export function recommendSets(cur: Curriculum): NaesinSet[] {
       LEVELS.forEach((level) => {
         out.push({
           key: `${cur.id}|${u.id}|${m.id}|${level}`,
-          courseId: cur.id, grade: gradeOnly(cur.grade), revision: `(${revisionOf(cur.label)})`, semester: cur.grade,
+          courseId: cur.id, grade: gradeOnly(cur.grade), revision: revisionText(cur), semester: cur.grade,
           unitName: u.name, midName: m.name, level,
-          title: `내신대비 | [${semesterTag(cur)}] ${zero2(n)} ${m.name}${LEVEL_NO[level]}`,
+          title: `내신대비 | [${setTag(cur)}] ${zero2(n)} ${m.name}${LEVEL_NO[level]}`,
           subtitle: m.name,
-          publisher: OUR_PUBLISHER,
+          publisher: isOther(cur) ? coursePublisher(cur) : OUR_PUBLISHER,
+          ...(isOther(cur) ? { subject: cur.subject } : {}),
           diffLabel: LEVEL_DIFF[level],
           typeIds: typesOfMid(m),
           count: COUNT,

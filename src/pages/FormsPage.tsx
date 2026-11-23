@@ -1,3 +1,4 @@
+import { useUrlTab } from '../lib/urlState'
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../lib/store'
@@ -21,7 +22,7 @@ const TABS = [
 ]
 
 export default function FormsPage() {
-  const [tab, setTab] = useState('intake')
+  const [tab, setTab] = useUrlTab<string>('tab', 'intake')
   return (
     <div>
       <div className="note-noprint"><SubTabs tabs={TABS} value={tab} onChange={setTab} /></div>

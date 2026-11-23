@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useUrlTab } from '../lib/urlState'
 import { useSearchParams } from 'react-router-dom'
 import WorksheetList from './WorksheetList'
 import MyDb from './MyDb'
@@ -8,8 +8,9 @@ type Tab = 'mine' | 'db' | 'favorites' | 'trash'
 // 매쓰플랫 학습지 화면과 동일한 4탭 골격
 export default function WorksheetPage() {
   // ?tab=db&set=<자료> — 학교별 기출 등에서 나의 DB 의 자료 하나를 바로 연다 (2026-11-07)
+  // 🔙 2026-11-23 탭을 주소(?tab=)에 남겨 뒤로 가기가 직전 탭으로 돌아오게 한다
   const [sp] = useSearchParams()
-  const [tab, setTab] = useState<Tab>(() => (['mine', 'db', 'favorites', 'trash'].includes(sp.get('tab') ?? '') ? sp.get('tab') as Tab : 'mine'))
+  const [tab, setTab] = useUrlTab<Tab>('tab', 'mine', ['mine', 'db', 'favorites', 'trash'])
   return (
     <div>
       <div className="mb-6 flex gap-8 border-b border-line px-1">

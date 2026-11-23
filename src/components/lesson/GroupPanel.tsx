@@ -1,3 +1,4 @@
+import { useUrlTab } from '../../lib/urlState'
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import GroupGrade from './GroupGrade'
 import { Link } from 'react-router-dom'
@@ -64,7 +65,7 @@ function scoreOf(g: Grading | undefined): number | null {
 }
 
 export default function GroupPanel({ label, students }: { label: string; students: Student[] }) {
-  const [tab, setTab] = useState<Tab>('history')
+  const [tab, setTab] = useUrlTab<Tab>('gt', 'history')
   return (
     <div>
       <div className="no-print mb-5 flex flex-wrap items-center gap-x-5 gap-y-1 border-b border-line px-1">

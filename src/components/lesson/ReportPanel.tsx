@@ -1,3 +1,4 @@
+import { reportGradings, confirmedOnly, pendingCount } from '../../lib/reportFeed'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import PeriodReport from './PeriodReport'
 import { toBlob } from 'html-to-image'
@@ -331,14 +332,19 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
 
   const itemMap = useMemo(() => new Map(wbItems.map(i => [i.id, i])), [wbItems])
   // ★ 현재 과목 것만 집계 — 안 거르면 같은 날 푼 다른 과목(수학) 교재·유형·단원이 과학 보고서에 섞여 나온다
-  const myGradings = useMemo(
-    () => gradings.filter(g => g.studentId === student.id && subjectOfGrading(g, wbById, wsById, itemMap) === subject),
-    [gradings, student.id, subject, wbById, wsById, itemMap],
+  // 2026-11-23: 채점 기록 + 승강제 기록을 합치고, AI 채점 승인 대기 문항은 점수에서 빼서 «승인 대기»로 따로 센다
+  const feed = useMemo(() => reportGradings(gradings, masteries, student.id), [gradings, masteries, student.id])
+  const mineSubj = useMemo(
+    () => feed.filter(g => g.studentId === student.id && subjectOfGrading(g, wbById, wsById, itemMap) === subject),
+    [feed, student.id, subject, wbById, wsById, itemMap],
   )
+  const myGradings = useMemo(() => confirmedOnly(mineSubj), [mineSubj])
   const dayGradings = useMemo(
     () => myGradings.filter(g => dateKey(g.date) === date),
     [myGradings, date],
   )
+  // 오늘 승인 대기 문항(이 과목) — 선생님이 승인하면 위 점수에 들어온다
+  const pendingToday = useMemo(() => pendingCount(mineSubj.filter(g => dateKey(g.date) === date)), [mineSubj, date])
 
   // 교재/학습지 분리 집계 — 같은 교재·학습지의 여러 채점(낱장)은 한 줄로 묶어 쪽 범위·점수 합산
   const bookRows = useMemo(() => {
@@ -360,7 +366,7 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
   const sheetRows = useMemo(() => {
     const m = new Map<string, { name: string; total: number; correct: number; unknown: number }>()
     for (const g of dayGradings.filter(g => !isBook(g))) {
-      const name = worksheets.find(w => w.id === g.worksheetId)?.title ?? '학습지'
+      const name = worksheets.find(w => w.id === g.worksheetId)?.title ?? g.title ?? '학습지'
       const e = m.get(name) ?? { name, total: 0, correct: 0, unknown: 0 }
       e.total += g.results.length
       e.correct += g.results.filter(r => r.correct).length
@@ -376,15 +382,15 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
   // 🔴 과목 필터를 특히 조심 — myGradings 는 **현재 과목만** 본다. 수학 화면에서 과학만 푼 날은
   //    "기록 없음"으로 보이지만 실제로는 다른 과목에 있다. 그 경우를 구분해 알려준다.
   const otherSubjectToday = useMemo(
-    () => gradings.filter(g => g.studentId === student.id && dateKey(g.date) === date
+    () => feed.filter(g => g.studentId === student.id && dateKey(g.date) === date
       && subjectOfGrading(g, wbById, wsById, itemMap) !== subject)
       .reduce((a, g) => a + g.results.length, 0),
-    [gradings, student.id, date, subject, wbById, wsById, itemMap],
+    [feed, student.id, date, subject, wbById, wsById, itemMap],
   )
   const lastGradedDate = useMemo(() => {
-    const ds = gradings.filter(g => g.studentId === student.id).map(g => dateKey(g.date)).sort()
+    const ds = feed.filter(g => g.studentId === student.id).map(g => dateKey(g.date)).sort()
     return ds.length ? ds[ds.length - 1] : null
-  }, [gradings, student.id])
+  }, [feed, student.id])
 
   const totalSolved = dayGradings.reduce((a, g) => a + g.results.length, 0)
   const totalCorrect = dayGradings.reduce((a, g) => a + g.results.filter(r => r.correct).length, 0)
@@ -794,13 +800,14 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
           {/* 🔎 채점 기록이 없으면 AI 는 쓸 내용이 없다 — 버튼을 누르기 전에 이유를 먼저 알려준다.
               (예전에는 AI 가 정직하게 "기록이 없어 전할 이야기가 없다"고만 써서, 선생님은
                고장인지 데이터가 없는 건지 알 수 없었다 — 2026-08-13 이현서 학생 문의) */}
-          {totalSolved === 0 && (
+          {totalSolved === 0 && ladders.length === 0 && (
             <div className="rounded-lg border border-amber/50 bg-amber/10 px-3 py-2 text-xs font-normal leading-relaxed text-ink">
               {otherSubjectToday > 0 ? (
                 <>⚠️ 오늘 <b>{subject}</b> 채점 기록이 없습니다 — 다만 <b>다른 과목에 {otherSubjectToday}문항</b>이 있어요.
                   위 <b>과목 탭</b>을 바꿔서 확인해보세요. AI 작성은 지금 고른 과목 기록만 씁니다.</>
               ) : (
                 <>⚠️ 오늘 이 학생의 채점 기록이 <b>0건</b>이라 AI가 쓸 내용이 없습니다.
+                  {pendingToday > 0 && <> (AI 채점 <b>승인 대기 {pendingToday}문항</b>이 있어요 — 오른쪽 아래 [AI 채점 승인]에서 확정하면 보고서에 들어옵니다.)</>}
                   {lastGradedDate && lastGradedDate !== date && <> 마지막 채점일은 <b>{lastGradedDate}</b>예요.</>}
                   {' '}채점을 먼저 하신 뒤 다시 눌러주세요.
                   <span className="mt-1 block text-ink2">
@@ -882,7 +889,7 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
           <div ref={cardRef}>
             <ReportCard student={student} brand={brand} subject={subject} dateKr={dateKr} bookRows={bookRows} sheetRows={sheetRows}
               totalSolved={totalSolved} totalCorrect={totalCorrect} totalUnknown={totalUnknown} overall={overall}
-              weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes} ladders={ladders}
+              weekAvg={weekAvg} weekDelta={weekDelta} streak={streak} wrongTypes={wrongTypes} ladders={ladders} pendingToday={pendingToday}
               covered={coveredUnits.units} hasDrill={drills.length > 0} comment={effComment} nextPlan={effNextPlan}
               nextSession={nextSession} checkIn={effCheckIn} checkOut={effCheckOut}
               todayPlanText={todayPlanText} nextPlanText={nextPlanText} />
@@ -995,7 +1002,9 @@ const MONTH_TOGGLES = [
 type MonthToggle = typeof MONTH_TOGGLES[number]['key']
 
 function MonthlyReport({ student, subject, initialMonth }: { student: Student; subject: Subject; initialMonth?: string }) {
-  const { gradings, workbooks, worksheets, wbItems, addSavedReport, academyProfile } = useStore()
+  const { gradings: rawGradings, workbooks, worksheets, wbItems, addSavedReport, academyProfile, masteries } = useStore()
+  // 2026-11-23: 승강제 기록을 합치고 AI 채점 승인 대기 문항은 점수에서 뺀다 (lib/reportFeed.ts)
+  const gradings = useMemo(() => confirmedOnly(reportGradings(rawGradings, masteries, student.id)), [rawGradings, masteries, student.id])
   const brand = brandFor(academyProfile.academyName?.trim() || DEFAULT_ACADEMY, subject)
   const [month, setMonth] = useState(initialMonth ?? monthKey(new Date()))
   const [opinion, setOpinion] = useState('')
@@ -1023,7 +1032,7 @@ function MonthlyReport({ student, subject, initialMonth }: { student: Student; s
   const bookAggs = useMemo(() => aggByName(monthGradings.filter(isBook),
     g => workbooks.find(w => w.id === g.workbookId)?.name ?? '교재'), [monthGradings, workbooks])
   const sheetAggs = useMemo(() => aggByName(monthGradings.filter(g => !isBook(g)),
-    g => worksheets.find(w => w.id === g.worksheetId)?.title ?? '학습지'), [monthGradings, worksheets])
+    g => worksheets.find(w => w.id === g.worksheetId)?.title ?? g.title ?? '학습지'), [monthGradings, worksheets])
 
   // 주차별 학습량 (1~7일=1주차 … 29일~=5주차)
   const weekly = useMemo(() => {
@@ -1276,7 +1285,7 @@ const C = { blue: '#2b7de9', blueDark: '#1b5fc2', blueSoft: '#eef5fe', ink: '#1f
   line: '#e5e7eb', amberSoft: '#fff7e6', amber: '#b45309', red: '#dc2626', redSoft: '#fdecec', green: '#15803d' }
 
 function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
-  weekAvg, weekDelta, streak, wrongTypes, ladders, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut,
+  weekAvg, weekDelta, streak, wrongTypes, ladders, pendingToday, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut,
   todayPlanText, nextPlanText }: {
   student: Student; brand: string; subject: Subject; dateKr: string
   bookRows: { name: string; range: string; total: number; correct: number; unknown: number; score: number }[]
@@ -1285,6 +1294,7 @@ function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, tota
   weekAvg: number | null; weekDelta: number | null; streak: number
   wrongTypes: { name: string; n: number }[]; covered: { name: string; n: number }[]
   ladders: { name: string; from: number; to: number; solved: number; correct: number; mastered: boolean; stuck: boolean }[]
+  pendingToday: number
   hasDrill: boolean; comment: string; nextPlan: string
   nextSession: { key: string; label: string; isMakeup: boolean } | null; checkIn: string; checkOut: string
   todayPlanText: string; nextPlanText: string
@@ -1329,7 +1339,9 @@ function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, tota
           </div>
         )}
         {totalSolved === 0 ? (
-          <div style={{ ...boxStyle, background: C.blueSoft, textAlign: 'center', color: C.ink2 }}>오늘 채점 기록이 없습니다.</div>
+          <div style={{ ...boxStyle, background: C.blueSoft, textAlign: 'center', color: C.ink2 }}>
+            {ladders.length > 0 ? '오늘은 교재·학습지 채점 없이 승강제로 학습했습니다.' : pendingToday > 0 ? `오늘 AI 채점 승인 대기 ${pendingToday}문항 — 선생님 확인 후 반영됩니다.` : '오늘 채점 기록이 없습니다.'}
+          </div>
         ) : (
           <>
             {/* 스탯 타일 */}
@@ -1393,6 +1405,11 @@ function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, tota
           </>
         )}
 
+        {totalSolved > 0 && pendingToday > 0 && (
+          <div style={{ ...boxStyle, background: C.amberSoft, marginTop: 12, color: C.amber, fontSize: 12 }}>
+            ⏳ AI 채점 승인 대기 {pendingToday}문항은 선생님 확인 후 점수에 반영됩니다.
+          </div>
+        )}
         {/* 🪜 오늘 승강제 — 그날 푼 유형의 단계 변화 (2026-10-06 명수쌤 지시) */}
         {ladders.length > 0 && (
           <div style={{ marginTop: 12 }}>

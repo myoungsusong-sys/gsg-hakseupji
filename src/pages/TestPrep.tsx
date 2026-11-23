@@ -1,3 +1,4 @@
+import { useUrlTab } from '../lib/urlState'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SubTabs from '../components/SubTabs'
@@ -24,7 +25,7 @@ const DESC: Record<string, string> = {
 }
 
 export default function TestPrep() {
-  const [tab, setTab] = useState('entrance')
+  const [tab, setTab] = useUrlTab<string>('tab', 'entrance')
   const label = TABS.find(t => t.key === tab)!.label
   return (
     <div>

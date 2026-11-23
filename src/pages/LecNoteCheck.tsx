@@ -10,6 +10,7 @@
  * 만드는 것은 전부 기존 그릇(hj_problems · hj_worksheets · assignments)이라 오늘 교실·관리앱 채점판에 그대로 뜬다.
  * 순수 로직은 lib/lecnote.ts — 노드에서 검증한다.
  */
+import { useUrlTab } from '../lib/urlState'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
@@ -31,7 +32,7 @@ const NOTE_SAMPLE = [
 
 export default function LecNoteCheck() {
   const { students, worksheets, assignments, addProblem, saveWorksheet, addAssignment } = useStore()
-  const [tab, setTab] = useState<Tab>('blank')
+  const [tab, setTab] = useUrlTab<Tab>('tab', 'blank')
 
   // ── 공통: 학생 · 과정 · 유형 · 강좌 ─────────────────────────────────────
   const active = useMemo(() => {

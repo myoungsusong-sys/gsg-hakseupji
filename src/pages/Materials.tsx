@@ -1,3 +1,4 @@
+import { useUrlTab } from '../lib/urlState'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SubTabs from '../components/SubTabs'
@@ -21,7 +22,7 @@ const TABS = [
 ]
 
 export default function Materials() {
-  const [tab, setTab] = useState('answerkey')
+  const [tab, setTab] = useUrlTab<string>('tab', 'answerkey')
   return (
     <div>
       <SubTabs tabs={TABS} value={tab} onChange={setTab} />

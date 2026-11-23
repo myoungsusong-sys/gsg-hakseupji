@@ -1,3 +1,4 @@
+import { useUrlTab } from '../lib/urlState'
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore, uid } from '../lib/store'
@@ -33,7 +34,7 @@ export default function EngPassage() {
   const { addProblem, saveWorksheet } = useStore()
   const nav = useNavigate()
   const engCourses = useMemo(() => CURRICULA.filter(c => c.subject === '영어'), [])
-  const [tab, setTab] = useState<Tab>('변형 문제')
+  const [tab, setTab] = useUrlTab<Tab>('tab', '변형 문제')
   const [title, setTitle] = useState('')
   const [passage, setPassage] = useState('')
   const [level, setLevel] = useState('고1')

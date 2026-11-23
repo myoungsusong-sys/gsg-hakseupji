@@ -1,3 +1,4 @@
+import { useUrlTab } from '../lib/urlState'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSubject } from '../lib/subject'
@@ -44,7 +45,7 @@ const SUB_TABS: { key: SubTab; label: string }[] = [
 
 // 수능·모의고사 — 매쓰플랫과 동일한 6개 하위 탭. 첫 탭(기출)만 실데이터, 나머지는 구조·계획.
 export default function CsatLibrary() {
-  const [tab, setTab] = useState<SubTab>('exam')
+  const [tab, setTab] = useUrlTab<SubTab>('tab', 'exam')
   return (
     <div>
       <div className="mb-5 flex flex-wrap gap-x-6 gap-y-1 border-b border-line px-1">

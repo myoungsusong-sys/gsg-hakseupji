@@ -1,16 +1,19 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useUrlTab, useUrlParams } from '../lib/urlState'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import ExamSchedulePanel from '../components/prep/ExamSchedulePanel'
 import ExamSetPanel from '../components/prep/ExamSetPanel'
 import { Link, useNavigate } from 'react-router-dom'
 import SubTabs from '../components/SubTabs'
 import { useStore, uid } from '../lib/store'
 import { useBrand } from '../lib/brand'
+import { useSubject, type Subject } from '../lib/subject'
+import { curriculumFor } from '../data/curriculum'
 import { DEFAULT_SHEET_OPTIONS, DIFF_LABEL, type Problem } from '../types'
 import ProblemContent from '../components/ProblemContent'
 import { AssignModal } from './WorksheetList'
 import {
   TEXTBOOK_GRADE_FILTERS, RECOMMEND_GRADE_FILTERS, PUBLISHERS,
-  naesinCurricula, textbookSets, recommendSets, publisherSets, publishersFor, pickNaesinChain, naesinCount, indexPool, filterUsable,
+  naesinCurricula, coursePublisher, otherSubjectFilters, otherSubjectCourses, textbookSets, recommendSets, publisherSets, publishersFor, pickNaesinChain, naesinCount, indexPool, filterUsable,
   type NaesinSet,
 } from '../lib/naesin'
 
@@ -31,7 +34,7 @@ const TABS = [
 ]
 
 export default function NaesinPrep() {
-  const [tab, setTab] = useState('hall')
+  const [tab, setTab] = useUrlTab<string>('tab', 'hall')
   return (
     <div>
       {/* 📅 학생이 넣은 시험 일정 — D-day 순, 대비 학습지 유무 (2026-09-17) */}
@@ -105,26 +108,41 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
   const brand = useBrand()
   const nav = useNavigate()
 
-  const FILTERS = mode === 'textbook' ? TEXTBOOK_GRADE_FILTERS : RECOMMEND_GRADE_FILTERS
-  const [gradeIdx, setGradeIdx] = useState(0)
-  const [publisher, setPublisher] = useState<string>('전체')
+  // 2026-11-23 윤자혜 «내신대비 교과서에 수학만 있음» — 위 과목 단추가 수학 외이면 그 과목의 교과서(출판사)별 단원 학습지를 보여 준다
+  const [subject] = useSubject()
+  const other = subject !== '수학'
+  const FILTERS = useMemo(() => other ? otherSubjectFilters(subject) : mode === 'textbook' ? TEXTBOOK_GRADE_FILTERS : RECOMMEND_GRADE_FILTERS, [other, subject, mode])
+  // 🔙 학년·출판사 칩도 주소에 남긴다 — 미리보기·수정(✎)에 갔다가 뒤로 오면 보던 칩 그대로 (2026-11-23)
+  const [giRaw, setGiRaw] = useUrlTab<string>(mode === 'textbook' ? 'gi' : 'rgi', '0')
+  const gradeIdx = Math.max(0, Math.min(FILTERS.length - 1, Number(giRaw) || 0))
+  const setGradeIdx = (i: number) => setGiRaw(String(i))
+  const [publisher, setPublisher] = useUrlTab<string>('pub', '전체')
+  const { patch: urlPatch } = useUrlParams()
+  const subjectSeen = useRef(subject)
+  useEffect(() => { if (subjectSeen.current !== subject) { subjectSeen.current = subject; urlPatch({ gi: null, rgi: null, pub: null }, true) } }, [subject])
   const [q, setQ] = useState('')
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [assignSet, setAssignSet] = useState<NaesinSet | null>(null)
   const [assignMany, setAssignMany] = useState<NaesinSet[] | null>(null)   // 선택한 세트 일괄 출제
   const [previewSet, setPreviewSet] = useState<NaesinSet | null>(null)    // 저장 없이 보기
 
-  const filter = FILTERS[gradeIdx]
+  const filter = FILTERS[gradeIdx] ?? FILTERS[0]
   // 🔴 「전체」 칩일 때만 전 과정. 예전엔 `courses.length ? … : 전부` 라서, 아직 못 만드는 칩
   //    (중1·중2·확통·기하 = courses 가 빈 배열)을 눌러도 14과정 세트가 통째로 떴다(2026-09-04 리뷰).
   const courseIds = filter.label === '전체' ? FILTERS.flatMap((f) => f.courses) : filter.courses
-  const curricula = useMemo(() => naesinCurricula(courseIds), [courseIds.join(',')])
+  const curricula = useMemo(
+    () => other ? (courseIds.length ? courseIds.map(curriculumFor) : otherSubjectCourses(subject)).filter((c) => c.subject === subject) : naesinCurricula(courseIds),
+    [courseIds.join(','), other, subject])
+  // 출판사 칩 — 수학은 원본 10개 고정, 다른 과목은 이 학년 과정에 실제로 있는 출판사만
+  const PUBS = useMemo<string[]>(() => other ? ['전체', ...[...new Set(curricula.map((c) => coursePublisher(c)))].sort((a, b) => a.localeCompare(b, 'ko'))] : [...PUBLISHERS], [other, curricula])
+  useEffect(() => { if (!PUBS.includes(publisher)) setPublisher('전체', true) }, [PUBS, publisher])
 
   useEffect(() => { setChecked(new Set()) }, [gradeIdx, publisher, q, mode])
 
   const allSets = useMemo(() => {
     let all: NaesinSet[]
     if (mode === 'recommend') all = curricula.flatMap(recommendSets)
+    else if (other) all = curricula.filter((c) => publisher === '전체' || coursePublisher(c) === publisher).flatMap(textbookSets)
     else if (publisher === '전체') {
       // 원본의 「전체」= 모든 출판사 행. 목차가 있는 출판사는 그 행으로, 목차가 없는 과정은 「공통」 세트로
       all = curricula.flatMap((c) => {
@@ -133,7 +151,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
       })
     } else all = curricula.flatMap((c) => publisherSets(c, publisher))      // 목차가 없으면 빈 표 → "준비 중"
     return all
-  }, [curricula, mode, publisher])
+  }, [curricula, mode, publisher, other])
   // 표에 보여줄 것만 검색어로 거른다. **뽑기에는 allSets 를 쓴다** —
   // 검색으로 형제(1·2·3번)가 목록에서 사라지면 체인 제외가 조용히 풀려, 같은 세트인데
   // 검색 유무에 따라 다른 문항이 굳는다(2026-09-04 리뷰).
@@ -167,7 +185,7 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
     if (picked.length === 0) { alert('이 범위의 문제가 문제은행에 아직 없습니다.'); return null }
     const id = uid('ws')
     saveWorksheet({
-      id, title: set.title, author: brand, grade: set.semester, subject: '수학',
+      id, title: set.title, author: brand, grade: set.semester, subject: (set.subject ?? '수학') as Subject,
       tags: ['내신대비', set.level], theme: 'amber',
       problemIds: picked.map((p) => p.id), conceptIds: [],
       options: { ...DEFAULT_SHEET_OPTIONS, showTypeName: true, autoGrade: true },
@@ -203,14 +221,14 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
       <div className="mb-2 flex flex-wrap gap-1.5">
         {FILTERS.map((f, i) => (
           <button key={f.label} type="button" onClick={() => setGradeIdx(i)}
-            className={pill(i === gradeIdx, !filterUsable(f))}>{f.label}</button>
+            className={pill(i === gradeIdx, !other && !filterUsable(f))}>{f.label}</button>
         ))}
       </div>
       {/* 출판사 필터 — 탭2에만. 원본 10개 그대로 */}
       {mode === 'textbook' && (
         <div className="mb-3 flex flex-wrap gap-1.5">
-          {PUBLISHERS.map((p) => (
-            <button key={p} type="button" onClick={() => setPublisher(p)} className={pill(p === publisher, p !== '전체')}>{p}</button>
+          {PUBS.map((p) => (
+            <button key={p} type="button" onClick={() => setPublisher(p)} className={pill(p === publisher, !other && p !== '전체')}>{p}</button>
           ))}
           {loading && <span className="ml-2 self-center text-xs text-ink2">문제 풀 불러오는 중…</span>}
         </div>
@@ -253,9 +271,11 @@ function SetTable({ mode }: { mode: 'textbook' | 'recommend' }) {
           <tbody>
             {sets.length === 0 && (
               <tr><td colSpan={cols} className="px-3 py-10 text-center text-sm text-ink2">
-                {mode === 'textbook' && publisher !== '전체'
+                {other && sets.length === 0 && !loading && allSets.length === 0
+                  ? `「${subject}」 ${filter.label === '전체' ? '' : filter.label + ' '}교과서 단원 학습지는 준비 중입니다.`
+                  : mode === 'textbook' && publisher !== '전체' && !other
                   ? `「${publisher}」 교과서 문항은 준비 중입니다. 「전체」에서 단원별 세트를 쓰세요.`
-                  : !filterUsable(filter)
+                  : !other && !filterUsable(filter)
                     ? `「${filter.label}」 과정은 준비 중입니다.`
                     : '해당하는 학습지가 없습니다.'}
               </td></tr>
