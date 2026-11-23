@@ -6,7 +6,7 @@ import { DEFAULT_SHEET_OPTIONS, type Student } from '../../types'
 import { AssignModal } from '../../pages/WorksheetList'
 import { EXAM_COURSES } from '../../data/curriculum-exam'
 import {
-  courseById, draftComment, kindOfCourse, loadExamSheetRows, parentReportText, studentCourseResults, worksheetFromRow,
+  courseById, draftComment, groupedCourses, kindOfCourse, loadExamSheetRows, parentReportText, studentCourseResults, worksheetFromRow,
   type CourseResult, type ExamKind, type ExamSheetRow,
 } from '../../lib/examSets'
 
@@ -31,8 +31,8 @@ export default function ExamSetPanel() {
   useEffect(() => { loadExamSheetRows().then(setRows).catch(e => setErr(String(e?.message ?? e))) }, [])
   const [kind, setKind] = useState<ExamKind>('시험대비')
   // 수업세트는 과목·번호순(set2-<과목>-<번호>) · 시험대비는 등록 순서 그대로
-  const courses = EXAM_COURSES.filter(c => kindOfCourse(c.id) === kind).sort((a, b) => (kind === '수업세트' ? a.id.localeCompare(b.id) : 0))
-  const [cid, setCid] = useState(courses[0]?.id ?? '')
+  const groups = useMemo(() => groupedCourses(kind), [kind])
+  const [cid, setCid] = useState(groups[0]?.courses[0]?.id ?? '')
   const course = courseById(cid)
   const live = useMemo(() => new Map(worksheets.filter(w => !w.deletedAt).map(w => [w.id, w])), [worksheets])
   const courseRows = (rows ?? []).filter(r => r.course === cid)
@@ -69,13 +69,17 @@ export default function ExamSetPanel() {
     <div className="grid gap-4">
       <div className="flex flex-wrap items-center gap-2">
         {KINDS.map(k => (
-          <button key={k} onClick={() => { setKind(k); setCid(EXAM_COURSES.filter(c => kindOfCourse(c.id) === k).map(c => c.id).sort((x, y) => (k === '수업세트' ? x.localeCompare(y) : 0))[0] ?? '') }}
+          <button key={k} onClick={() => { setKind(k); setCid(groupedCourses(k)[0]?.courses[0]?.id ?? '') }}
             className={`rounded-full px-4 py-1.5 text-sm font-bold ${kind === k ? 'bg-pine text-paper' : 'border border-line bg-white text-ink2'}`}>
             {k} {EXAM_COURSES.filter(c => kindOfCourse(c.id) === k).length}
           </button>
         ))}
         <select value={cid} onChange={e => setCid(e.target.value)} className="min-w-0 flex-1 rounded-lg border border-line bg-white px-3 py-1.5 text-sm font-semibold">
-          {courses.map(c => <option key={c.id} value={c.id}>{c.label} · {c.grade}</option>)}
+          {groups.map(g => (
+            <optgroup key={g.label} label={`${g.label} (${g.courses.length})`}>
+              {g.courses.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
+            </optgroup>
+          ))}
         </select>
       </div>
 

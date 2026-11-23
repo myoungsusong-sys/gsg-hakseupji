@@ -13,7 +13,7 @@ const ADDR_CACHE = 'hj_school_addr_v1'
 interface SchoolGroup {
   school: string
   level: '초' | '중' | '고' | '?'
-  sets: { source: string; problems: Problem[]; year?: string; term?: string }[]
+  sets: { source: string; problems: Problem[]; year?: string; term?: string; grade: string }[]
 }
 
 function isExamSource(src: string) {
@@ -30,6 +30,16 @@ function schoolOf(src: string): string | null {
   else if (/고$/.test(n)) n = n.replace(/고$/, '고등학교')
   return n
 }
+/** 시험지 이름에서 학년 찾기 — «중2»·«고1»·«2학년»·«중등 3학년» (2026-11-23 윤자혜 «학교별 기출 학년별 정리») */
+function gradeOf(src: string, level: SchoolGroup['level']): string {
+  const a = src.match(/(초|중|고)\s?등?\s?([1-6])(?![0-9학])/) ?? src.match(/(초|중|고)\s?등?\s?([1-6])\s*학년/)
+  if (a) return a[1] + a[2]
+  const b = src.match(/(?<![0-9])([1-6])\s*학년/)
+  if (b && level !== '?') return level + b[1]
+  return '학년 미분류'
+}
+const GRADE_ORDER = ['초1', '초2', '초3', '초4', '초5', '초6', '중1', '중2', '중3', '고1', '고2', '고3', '학년 미분류']
+const gradeRank = (g: string) => { const i = GRADE_ORDER.indexOf(g); return i < 0 ? 99 : i }
 function levelOf(n: string): SchoolGroup['level'] {
   return /초등학교$/.test(n) ? '초' : /중학교$/.test(n) ? '중' : /고등학교$/.test(n) ? '고' : '?'
 }
@@ -49,6 +59,7 @@ export default function SchoolTest() {
   const { customProblems, academyProfile } = useStore()
   const nav = useNavigate()
   const [lv, setLv] = useState<'전체' | '초' | '중' | '고'>('전체')
+  const [gr, setGr] = useState<string>('전체')
   const [q, setQ] = useState('')
   const [addr, setAddr] = useState<Record<string, string>>(loadCache)
 
@@ -63,7 +74,7 @@ export default function SchoolTest() {
     for (const [source, problems] of bySrc) {
       const school = schoolOf(source) ?? '학교 미지정'
       const g = bySchool.get(school) ?? { school, level: levelOf(school), sets: [] }
-      g.sets.push({ source, problems, year: source.match(/20\d\d/)?.[0], term: source.match(/[12]\s*학기|중간|기말/g)?.join(' ') })
+      g.sets.push({ source, problems, grade: gradeOf(source, g.level), year: source.match(/20\d\d/)?.[0], term: source.match(/[12]\s*학기|중간|기말/g)?.join(' ') })
       bySchool.set(school, g)
     }
     return [...bySchool.values()]
@@ -104,8 +115,9 @@ export default function SchoolTest() {
     if (a && a === 내[0]) return 1                        // 같은 시·도
     return 2
   }
+  const gradesPresent = useMemo(() => [...new Set(groups.flatMap(g => g.sets.map(s => s.grade)))].sort((a, b) => gradeRank(a) - gradeRank(b)), [groups])
   const shown = groups
-    .filter(g => (lv === '전체' || g.level === lv) && (!q.trim() || g.school.includes(q.trim()) || g.sets.some(s => s.source.includes(q.trim()))))
+    .filter(g => (gr === '전체' || g.sets.some(s => s.grade === gr)) && (lv === '전체' || g.level === lv) && (!q.trim() || g.school.includes(q.trim()) || g.sets.some(s => s.source.includes(q.trim()))))
     .sort((a, b) => rank(a.school) - rank(b.school) || a.school.localeCompare(b.school, 'ko'))
 
   return (
@@ -124,6 +136,10 @@ export default function SchoolTest() {
             {k === '전체' ? '전체' : k + '등'}
           </button>
         ))}
+        <select value={gr} onChange={e => setGr(e.target.value)} className="rounded-lg border border-line bg-white px-3 py-1.5 text-sm font-semibold">
+          <option value="전체">학년 전체</option>
+          {gradesPresent.map(g => <option key={g} value={g}>{g}</option>)}
+        </select>
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="학교명·시험지명"
           className="w-44 rounded-lg border border-line px-3 py-1.5 text-sm outline-none focus:border-pine" />
       </div>
@@ -150,12 +166,19 @@ export default function SchoolTest() {
                   <div className="grow" />
                   <span className="text-xs text-ink2">시험지 {g.sets.length}개 · {g.sets.reduce((n, s) => n + s.problems.length, 0)}문항</span>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {g.sets.sort((a, b) => (b.year ?? '').localeCompare(a.year ?? '') || a.source.localeCompare(b.source, 'ko')).map(s => (
-                    <button key={s.source} onClick={() => nav(`/prep/worksheet?tab=db&set=${encodeURIComponent(s.source)}`)}
-                      className="rounded-lg border border-line px-3 py-1.5 text-left text-sm hover:border-pine hover:bg-pine-soft/40">
-                      {s.source} <span className="text-xs text-ink2">· {s.problems.length}문항</span>
-                    </button>
+                <div className="grid gap-2">
+                  {[...new Set(g.sets.map(s => s.grade))].filter(x => gr === '전체' || x === gr).sort((a, b) => gradeRank(a) - gradeRank(b)).map(grade => (
+                    <div key={grade} className="flex flex-wrap items-start gap-2">
+                      <span className="mt-1 w-20 shrink-0 text-xs font-black text-amber">{grade}</span>
+                      <div className="flex min-w-0 flex-1 flex-wrap gap-2">
+                        {g.sets.filter(s => s.grade === grade).sort((a, b) => (b.year ?? '').localeCompare(a.year ?? '') || a.source.localeCompare(b.source, 'ko')).map(s => (
+                          <button key={s.source} onClick={() => nav(`/prep/worksheet?tab=db&set=${encodeURIComponent(s.source)}`)}
+                            className="rounded-lg border border-line px-3 py-1.5 text-left text-sm hover:border-pine hover:bg-pine-soft/40">
+                            {s.source} <span className="text-xs text-ink2">· {s.problems.length}문항</span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </section>

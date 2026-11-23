@@ -14,6 +14,26 @@ export type ExamKind = '시험대비' | '수업세트'
 export const kindOfCourse = (id: string): ExamKind => (id.startsWith('set') ? '수업세트' : '시험대비')
 export const courseById = (id: string): ExamCourse | undefined => EXAM_COURSES.find(c => c.id === id)
 
+// 2026-11-23 윤자혜 선생님 «시험대비세트 학년별 과목별 목차 정리» — 과정 목록을 학년 → 과목 순으로 묶는다.
+const GRADE_ORDER = ['중1-1', '중1-2', '중2-1', '중2-2', '중3-1', '중3-2', '고1', '고2', '고3']
+const SUBJECT_ORDER = ['수학', '과학', '영어', '국어', '사회', '역사']
+const rankOf = (arr: string[], v: string) => { const i = arr.indexOf(v); return i < 0 ? arr.length : i }
+/** 종류별 과정을 [학년 · 과목] 묶음으로 (학년 → 과목 → 원래 순서·수업세트는 id 순) */
+export function groupedCourses(kind: ExamKind): { label: string; courses: ExamCourse[] }[] {
+  const list = EXAM_COURSES.filter(c => kindOfCourse(c.id) === kind)
+  const sorted = list.map((c, i) => ({ c, i })).sort((a, b) =>
+    rankOf(GRADE_ORDER, a.c.grade) - rankOf(GRADE_ORDER, b.c.grade) ||
+    rankOf(SUBJECT_ORDER, a.c.subject) - rankOf(SUBJECT_ORDER, b.c.subject) ||
+    (kind === '수업세트' ? a.c.id.localeCompare(b.c.id) : a.i - b.i)).map(x => x.c)
+  const out: { label: string; courses: ExamCourse[] }[] = []
+  for (const c of sorted) {
+    const label = `${c.grade} · ${c.subject}`
+    const g = out[out.length - 1]
+    if (g && g.label === label) g.courses.push(c); else out.push({ label, courses: [c] })
+  }
+  return out
+}
+
 /** 학습지 id → 과정 id (ws-exam-m22-03 → exam-m22). 우리가 만든 학습지가 아니면 null */
 export function courseOfWorksheet(wsId: string): string | null {
   const m = /^ws-(.+)-\d{2}$/.exec(wsId)
