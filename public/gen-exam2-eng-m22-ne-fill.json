@@ -628,5 +628,453 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-99b96b8bf7",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe app lets people ______ bikes easily.",
+"choices": [
+"borrow",
+"borrows",
+"borrowed",
+"borrowing",
+"to borrow"
+],
+"answer": "①",
+"solution": "사역동사 let은 목적격 보어로 동사원형을 취한다. 따라서 lets people 뒤에는 borrow가 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d82d59e40e",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 condition의 문맥상 의미로 가장 알맞은 것은?\n\nThe used backpack is still in good condition.",
+"choices": [
+"가격",
+"상태",
+"크기",
+"종류",
+"색깔"
+],
+"answer": "②",
+"solution": "condition은 '상태'라는 뜻이며, in good condition은 '좋은 상태로'라는 의미이다. 중고 가방이 여전히 양호한 상태라는 문맥이므로 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e642fd1d72",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI look forward to ______ my new backpack.",
+"choices": [
+"use",
+"used",
+"using",
+"uses",
+"to use"
+],
+"answer": "③",
+"solution": "look forward to는 '~하기를 기대하다'라는 뜻이다. 이 표현에서 to는 to부정사의 일부가 아니라 전치사이다. 따라서 뒤에 동명사 using을 써야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d1775b8eaf",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nPeople can share their things ______ others.",
+"choices": [
+"at",
+"from",
+"into",
+"with",
+"of"
+],
+"answer": "④",
+"solution": "share A with B는 'A를 B와 공유하다'라는 뜻이다. 따라서 빈칸에는 전치사 with가 들어가야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c5237f69b7",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 관계대명사로 가장 알맞은 것은?\n\nPeople ______ use the app can borrow bikes.",
+"choices": [
+"whom",
+"whose",
+"what",
+"which",
+"who"
+],
+"answer": "⑤",
+"solution": "선행사 People은 사람을 나타내며 관계절에는 동사 use의 주어가 빠져 있다. 따라서 사람을 선행사로 하는 주격 관계대명사 who가 알맞다. whom은 목적격, whose는 소유격이며, what은 선행사를 포함하고, which는 주로 사물이나 동물을 선행사로 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1e650df1e6",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nShe got a used bag without ______ any money.",
+"choices": [
+"spending",
+"spend",
+"spends",
+"spent",
+"to spend"
+],
+"answer": "①",
+"solution": "without은 '~하지 않고'라는 뜻의 전치사이다. 전치사 뒤에는 동명사가 와야 하므로 spending이 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3dacb3313a",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 중 어법상 옳은 것은?",
+"choices": [
+"My friend made me to check the lock.",
+"The app let me choose a bike.",
+"The app allowed me choose a bike.",
+"My teacher had me to read the instructions.",
+"My brother made me carried the backpack."
+],
+"answer": "②",
+"solution": "사역동사 let, make, have는 목적어가 직접 행동하는 기본 능동 사역 구문에서 목적격 보어로 동사원형을 취한다. allow는 목적격 보어로 to부정사를 취한다. ① to check를 check로, ③ choose를 to choose로, ④ to read를 read로, ⑤ carried를 carry로 고쳐야 한다. 따라서 ②만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6aeae126d5",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nThe used bag is not as heavy as my old bag.\n= The used bag is ______ my old bag.",
+"choices": [
+"heavier than",
+"as heavy as",
+"lighter than",
+"less light than",
+"not as light as"
+],
+"answer": "③",
+"solution": "not as heavy as는 '~만큼 무겁지 않다'라는 뜻이다. 따라서 중고 가방이 기존 가방보다 가볍다는 의미이므로 lighter than이 알맞다. ①, ④, ⑤는 반대의 의미이고, ②는 두 가방의 무게가 같다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7422243f79",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 give away의 문맥상 의미로 가장 알맞은 것은?\n\nSome people give away things they no longer use.",
+"choices": [
+"값을 받고 팔다",
+"잠시 빌려주다",
+"다시 돌려주다",
+"거저 나누어 주다",
+"서로 맞바꾸다"
+],
+"answer": "④",
+"solution": "give away는 물건을 대가 없이 다른 사람에게 주는 것을 의미한다. 따라서 더 이상 사용하지 않는 물건을 거저 나누어 준다는 의미인 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a0e2ad492b",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n\n______ a bike through the app is easy.",
+"choices": [
+"Borrow",
+"Borrows",
+"Borrowed",
+"To borrow for",
+"Borrowing"
+],
+"answer": "⑤",
+"solution": "빈칸부터 through the app까지가 문장의 주어이다. 동명사 Borrowing은 목적어 a bike를 취하며 동명사구 전체가 단수 주어로 쓰인다. 따라서 Borrowing이 알맞다. To borrow 자체도 주어가 될 수 있지만 ④의 To borrow for는 목적어 a bike를 직접 취할 수 없는 형태이므로 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d0ad6aecbb",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 bike station의 문맥상 의미로 가장 알맞은 것은?\n\nAfter riding the bike, I returned it to a bike station.",
+"choices": [
+"자전거 대여소",
+"자전거 수리점",
+"자전거 판매점",
+"자전거 경주장",
+"자전거 전시장"
+],
+"answer": "①",
+"solution": "returned it은 자전거를 반납했다는 뜻이다. 따라서 bike station은 공유 자전거를 빌리거나 반납하는 장소인 자전거 대여소를 의미한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4ebaba5932",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 문장의 Before와 문법적 쓰임이 같은 것은?\n\nBefore I used the bike, I checked its condition.",
+"choices": [
+"I returned the bike before dinner.",
+"Before she left home, she checked the app.",
+"I have seen this backpack before.",
+"Check the lock before riding the bike.",
+"The bike station is just before the bridge."
+],
+"answer": "②",
+"solution": "제시문의 Before는 주어 I와 동사 used를 갖춘 절을 이끄는 접속사이다. ②의 Before 역시 she left home이라는 절을 이끄는 접속사이다. ①, ④, ⑤에서는 전치사로, ③에서는 부사로 쓰였다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8122a8cf1c",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장만을 있는 대로 고른 것은?\n\nㄱ. The app lets people share used items.\nㄴ. The experience made me to think about sharing.\nㄷ. She had her friend check the bike.\nㄹ. The app allowed him borrow a bike.",
+"choices": [
+"ㄱ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ",
+"ㄱ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "③",
+"solution": "let과 have는 해당 사역 구문에서 목적격 보어로 동사원형을 취하므로 ㄱ과 ㄷ이 옳다. ㄴ의 to think는 think로, ㄹ의 borrow는 to borrow로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7baf7173d1",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 사용된 어휘의 문맥상 의미를 바르게 설명한 것만을 있는 대로 고른 것은?\n\nI found a post about a used backpack. The owner wanted to give it away. It was in excellent condition, and I did not spend any money on it.\n\nㄱ. post: 인터넷에 올린 게시글\nㄴ. give away: 대가 없이 나누어 주다\nㄷ. condition: 거래를 위해 제시한 조건\nㄹ. spend: 돈을 쓰다",
+"choices": [
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄹ"
+],
+"answer": "⑤",
+"solution": "post는 인터넷 게시글, give away는 대가 없이 나누어 주다, spend는 돈을 쓰다라는 뜻이다. condition은 '조건'이라는 뜻으로도 쓰이지만, in excellent condition에서는 물건의 상태를 의미한다. 따라서 ㄱ, ㄴ, ㄹ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-bbf89ea8db",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 의미가 같도록 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nI got the backpack without paying for it.\n= I got the backpack ______.",
+"choices": [
+"for free",
+"for sale",
+"in return",
+"at a discount",
+"in advance"
+],
+"answer": "①",
+"solution": "without paying for it은 '그것의 값을 지불하지 않고'라는 뜻이다. for free는 '무료로'라는 뜻이므로 두 문장의 의미가 같다. for sale은 판매용으로, in return은 보답으로, at a discount는 할인된 가격으로, in advance는 미리라는 뜻이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ff60bb0451",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 문장에 관한 문법적 설명으로 옳은 것만을 모두 고른 것은?\n\nAnyone who has the app can choose a bike that is in good condition.\n\nㄱ. who의 선행사는 Anyone이다.\nㄴ. who는 관계절 안에서 목적어 역할을 한다.\nㄷ. that의 선행사는 a bike이다.\nㄹ. that은 관계절 안에서 목적어 역할을 한다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "②",
+"solution": "who의 선행사는 Anyone이고 that의 선행사는 a bike이다. 두 관계대명사는 모두 각각의 관계절에서 주어 역할을 하므로 ㄱ과 ㄷ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-53a7f1384b",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 우리말과 뜻이 같도록 주어진 단어를 모두 한 번씩 사용하여 빈칸을 완성하시오. 필요한 경우 단어의 형태를 바꾸되, 새로운 단어를 추가하지 마시오.\n\n나는 그 가방을 학교에서 사용하기를 기대했다.\n\nI ______.\n\n(look, forward, to, use, the, backpack, at, school)\n\n※ 빈칸에는 8단어를 쓰시오.",
+"selfGrade": true,
+"answer": "looked forward to using the backpack at school",
+"solution": "① 과거의 일을 나타내므로 look을 looked로 바꾼다. ② '~하기를 기대하다'는 look forward to로 표현한다. ③ to는 전치사이므로 use를 동명사 using으로 바꾼다. ④ using의 목적어로 the backpack을 쓰고 장소를 나타내는 at school을 뒤에 배치한다. 따라서 looked forward to using the backpack at school이 정답이다. 채점 기준(4점): looked forward to 2점, using 1점, 나머지 어구의 정확한 배열 1점.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5e6dcb1df9",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 어법상 옳은 문장의 개수는?\n\nㄱ. The app allows people to borrow bikes.\nㄴ. My friend let me to use the backpack.\nㄷ. Checking the lock before riding is important.\nㄹ. The QR code makes the lock opens.\nㅁ. I look forward to sharing my things with others.\nㅂ. She had her friend return the bike.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "ㄱ: allow는 목적격 보어로 to부정사를 취하므로 옳다. ㄴ: let의 목적격 보어는 동사원형이므로 to use를 use로 고쳐야 한다. ㄷ: 동명사구 Checking the lock before riding이 단수 주어로 쓰였으므로 옳다. ㄹ: make의 목적격 보어는 동사원형이므로 opens를 open으로 고쳐야 한다. ㅁ: look forward to의 to는 전치사이므로 sharing이 옳다. ㅂ: have의 능동 사역 구문에서 목적격 보어로 동사원형 return이 쓰였으므로 옳다. 따라서 ㄱ, ㄷ, ㅁ, ㅂ의 총 4개가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d2b9635376",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 (a), (b)를 각각 주어진 문장과 의미가 같으면서 어법상 옳게 바꾸어 쓴 것만을 있는 대로 고른 것은?\n\n(a) My old backpack is bigger than the used one.\n(b) I got the used backpack without paying for it.\n\nㄱ. (a) → The used backpack is not as big as my old one.\nㄴ. (a) → My old backpack is less small than the used one.\nㄷ. (b) → I got the used backpack without spending any money on it.\nㄹ. (b) → I got the used backpack without having to paying for it.\nㅁ. (a) → The used backpack is no smaller than my old one.",
+"choices": [
+"ㄱ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ, ㅁ"
+],
+"answer": "④",
+"solution": "ㄱ: not as big as는 '~만큼 크지 않은'이라는 의미이므로 원문의 비교 관계를 유지한다. ㄴ: less small than은 '~보다 덜 작은', 즉 '~보다 큰'이라는 뜻이므로 원문과 의미가 같다. ㄷ: without spending any money on it은 그것에 돈을 전혀 쓰지 않았다는 의미이므로 원문과 의미가 같다. ㄹ: have to 뒤에는 동사원형이 와야 하므로 paying이 아니라 pay를 써야 한다. ㅁ: no smaller than은 '~보다 작지 않은'이라는 뜻이므로 중고 가방이 기존 가방보다 작다는 원문의 의미와 다르다. 따라서 ㄱ, ㄴ, ㄷ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c2c51e6f4f",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에 관한 문법적 설명으로 옳은 것만을 있는 대로 고른 것은?\n\nThe app lets users choose a bike that suits their needs. Before they ride it, they check its condition. Scanning the QR code makes the lock release the bike. Returning the bike is also easy.\n\nㄱ. choose는 lets의 목적격 보어이다.\nㄴ. that은 관계절에서 목적어 역할을 한다.\nㄷ. Before는 시간의 부사절을 이끄는 접속사이다.\nㄹ. Scanning the QR code는 해당 문장의 주어이다.\nㅁ. Returning the bike는 복수 주어로 취급되었다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ, ㅁ",
+"ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+],
+"answer": "⑤",
+"solution": "ㄱ: let＋목적어＋동사원형의 구조이므로 choose는 목적격 보어이다. ㄴ: that은 선행사 a bike를 수식하는 관계절에서 동사 suits의 주어 역할을 한다. ㄷ: Before는 they ride it이라는 시간의 부사절을 이끈다. ㄹ: Scanning the QR code는 동명사구로 문장의 주어이다. ㅁ: Returning the bike는 동명사구로 단수 취급되므로 is가 쓰였다. 따라서 ㄱ, ㄷ, ㄹ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-77050374d9",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 문법 및 어휘에 관한 설명으로 옳은 것만을 있는 대로 고른 것은?\n\nAnyone who uses the app can borrow a bike. The app allows users to select a bike easily. Scanning the QR code makes the lock release the bike. People can also get used items without spending money if others give them away.\n\nㄱ. who uses the app에서 who만 생략하면 어법상 틀린 문장이 된다.\nㄴ. allows를 lets로 바꾸더라도 to select의 형태는 그대로 유지해야 한다.\nㄷ. release는 목적어 the lock의 동작을 나타내는 목적격 보어이다.\nㄹ. without spending money의 spending과 used items의 used는 모두 명사를 직접 수식한다.\nㅁ. give them away의 them을 the items로 바꾸면 give away the items로도 쓸 수 있다.\nㅂ. used items에서 used는 이전에 사용된 물건이라는 의미를 나타낸다.",
+"choices": [
+"ㄱ, ㄷ, ㅁ, ㅂ",
+"ㄱ, ㄴ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ, ㅂ",
+"ㄱ, ㄹ, ㅁ, ㅂ",
+"ㄱ, ㄷ, ㄹ, ㅁ, ㅂ"
+],
+"answer": "①",
+"solution": "ㄱ: who는 주격 관계대명사이므로 who만 생략할 수 없다. ㄴ: allow는 목적격 보어로 to부정사를 취하지만 let은 동사원형을 취하므로 lets users select로 바꾸어야 한다. ㄷ: release는 사역동사 makes의 목적격 보어이며 목적어 the lock이 수행하는 동작을 나타낸다. ㄹ: spending은 전치사 without의 목적어 역할을 하는 동명사이고, used는 items를 수식한다. ㅁ: give away의 목적어가 명사이면 give the items away와 give away the items가 모두 가능하지만, 대명사이면 give them away로 써야 한다. ㅂ: used items는 이전에 사용된 중고 물품을 뜻한다. 따라서 ㄱ, ㄷ, ㅁ, ㅂ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4facc317b5",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 문장을 원래 문장과 의미가 같으면서 어법상 옳게 바꾸어 쓴 것만을 있는 대로 고른 것은?\n\nㄱ. I got a backpack for free.\n→ I got a backpack without spending any money.\n\nㄴ. My brother let me use his bike.\n→ My brother allowed me to use his bike.\n\nㄷ. My old bag was larger than the used bag.\n→ My old bag was not as small as the used bag.\n\nㄹ. I looked forward to using the backpack.\n→ I was looking forward to use the backpack.\n\nㅁ. The owner gave the used bag away.\n→ The owner gave away it.\n\nㅂ. I checked the bike before I rode it.\n→ I checked the bike before riding it.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄴ, ㄷ, ㅂ",
+"ㄴ, ㄷ, ㄹ, ㅂ",
+"ㄱ, ㄷ, ㅁ, ㅂ",
+"ㄱ, ㄴ, ㄹ, ㅁ, ㅂ"
+],
+"answer": "②",
+"solution": "ㄱ: for free와 without spending any money는 모두 돈을 지불하지 않았다는 의미이다. ㄴ: 허락의 의미로 쓰인 let＋목적어＋동사원형은 allow＋목적어＋to부정사로 바꿀 수 있다. ㄷ: not as small as는 '~만큼 작지 않다', 즉 '~보다 크다'라는 의미이므로 원문과 비교 관계가 같다. ㄹ: look forward to의 to는 전치사이므로 use를 using으로 고쳐야 한다. ㅁ: give away의 목적어가 대명사이면 반드시 give와 away 사이에 놓아야 하므로 give it away가 옳다. ㅂ: 시간의 부사절과 주절의 주어가 같으므로 before I rode it을 before riding it으로 바꿀 수 있다. 따라서 ㄱ, ㄴ, ㄷ, ㅂ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0b614ddcc5",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말을 읽고 물음에 답하시오.\n\n그 앱은 중고 물건이 필요한 사람들이 돈을 전혀 쓰지 않고 필요한 물건을 얻을 수 있게 해 준다.\n\n(1) 다음 조건을 모두 충족하는 영어 문장을 쓰시오.\n\n<조건>\n• let을 사용한 5형식 문장으로 쓸 것.\n• '중고 물건이 필요한 사람들'은 주격 관계대명사 who를 사용하여 표현할 것.\n• '필요한 물건'은 목적격 관계대명사 that을 사용하여 표현할 것.\n• '돈을 전혀 쓰지 않고'는 without과 spend를 사용하여 표현할 것.\n• 아래 단어를 각각 제시된 횟수만큼 모두 사용할 것.\n• 필요한 경우 단어의 형태를 바꿀 수 있으나 새로운 단어를 추가하지 말 것.\n• 전체 문장을 17단어로 완성할 것.\n\n(app, any, things×2, who, spend, people, used, without, the, need×2, let, money, they, that, get)\n\n(2) (1)에서 사용한 두 관계대명사 중 하나만 생략하여 문장을 바르게 고쳐 쓰고, 해당 관계대명사를 생략할 수 있는 이유와 다른 관계대명사를 생략할 수 없는 이유를 우리말로 각각 설명하시오.",
+"selfGrade": true,
+"answer": "(1) The app lets people who need used things get things that they need without spending any money.\n(2) The app lets people who need used things get things they need without spending any money. that은 관계절에서 동사 need의 목적어 역할을 하는 목적격 관계대명사이므로 생략할 수 있다. who는 관계절에서 동사 need의 주어 역할을 하는 주격 관계대명사이므로 단독으로 생략할 수 없다.",
+"solution": "① 주어 The app은 3인칭 단수이므로 let을 lets로 바꾼다. ② lets의 목적어는 people who need used things이다. 선행사 people은 복수이고 who는 관계절의 주어이므로 need를 사용한다. ③ 사역동사 let의 목적격 보어로 동사원형 get을 사용한다. ④ get의 목적어인 things를 목적격 관계대명사절 that they need로 수식한다. ⑤ 전치사 without 뒤에는 동명사를 써야 하므로 spend를 spending으로 바꾼다. any money를 목적어로 연결한다. ⑥ who는 관계절의 주어이므로 단독으로 생략할 수 없지만 that은 관계절의 목적어이므로 생략할 수 있다. 채점 기준(10점): (1) The app lets와 목적격 보어 get의 정확한 사용 2점, 주격 관계대명사절 2점, 목적격 관계대명사절 2점, without spending any money 1점. (2) that을 생략한 정확한 문장 1점, 목적격 관계대명사의 생략 근거 1점, 주격 관계대명사의 생략 불가 근거 1점. 제시된 단어와 모든 조건을 충족하는 문법적으로 정확한 다른 어순도 인정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
 }
 ]
