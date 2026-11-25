@@ -7232,5 +7232,293 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-1e8486d382",
+"typeId": "exam2-eng-m22-ne-u2m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 우리말과 영어 문장의 의미가 일치하고 어법상으로도 옳은 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. 그 앱은 사람들이 더 이상 필요로 하지 않는 물건을 무료로 나누어 줄 수 있게 해 준다.\n→ The app allows people to give away things they no longer need.\nㄴ. 나는 돈을 전혀 쓰지 않고 그 자전거를 이용하기를 기대한다.\n→ I look forward to using the bike without spending any money.\nㄷ. QR 코드를 스캔하는 것은 잠금장치가 열리게 한다.\n→ Scanning the QR code allows the lock to remain closed.\nㄹ. 내가 메시지를 보낸 사람은 그 배낭을 무료로 나누어 주었다.\n→ The person I sent a message to gave away the backpack.\nㅁ. 나는 버스를 타는 대신 자전거를 빌렸다.\n→ I borrowed a bike without taking a bus instead.\nㅂ. 그 앱은 내가 필요한 물건을 쉽게 찾을 수 있게 해 준다.\n→ The app lets me find things I need easily.\nㅅ. 나는 상태가 좋은 배낭을 게시한 사람에게 연락했다.\n→ I contacted the person who the backpack in good condition.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄹ, ㅂ",
+"ㄱ, ㄹ, ㅁ, ㅅ",
+"ㄴ, ㄷ, ㅂ, ㅅ",
+"ㄴ, ㄹ, ㅁ, ㅂ"
+],
+"answer": "②",
+"solution": "ㄱ: allow+목적어+to부정사 구조가 옳고, things 뒤의 목적격 관계대명사가 생략되었다. ㄴ: look forward to와 without의 뒤에 동명사를 사용하여 어법과 의미가 모두 옳다. ㄷ: 어법상 옳지만 remain closed는 잠긴 상태로 있다는 뜻이므로 우리말과 일치하지 않는다. ㄹ: the person 뒤에 목적격 관계대명사가 생략되었으며 의미도 일치한다. ㅁ: without taking a bus instead는 자전거 대신 버스를 타지 않았다는 구조로, 우리말의 대체 관계를 정확하게 표현하려면 instead of taking a bus를 사용해야 한다. ㅂ: let+목적어+동사원형 구조가 옳으며 things 뒤의 목적격 관계대명사도 생략할 수 있다. ㅅ: 관계대명사 who 뒤에 관계절의 동사 posted가 필요하다. 따라서 ㄱ, ㄴ, ㄹ, ㅂ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-803f20d20a",
+"typeId": "exam2-eng-m22-ne-u2m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글에서 ⓐ~ⓗ로 표시된 대괄호 안의 표현에 관한 설명으로 옳은 것의 개수는?\n\nⓐ[Sharing things with others] is a good way to protect the environment. I used an app ⓑ[to borrow] a bike instead of ⓒ[taking] a bus. Scanning the QR code made the bike’s lock ⓓ[open]. Later, I found a backpack ⓔ[that looked almost new]. The person ⓕ[I contacted] was ⓖ[giving away] the backpack, so I could get it without ⓗ[spending] any money.\n\n<보기>\nㄱ. ⓐ를 To share things with others로 바꾸어도 문장의 주어 역할을 한다.\nㄴ. ⓑ의 목적을 더욱 명확하게 나타내기 위해 in order to borrow로 바꾸는 것은 어법상 가능하다.\nㄷ. ⓒ와 ⓗ는 모두 전치사의 목적어이며, 각각 to take와 to spend로 바꾸어도 어법상 옳다.\nㄹ. ⓓ를 to open으로 바꾸고 made를 allowed로 바꾸면 어법상 옳지만, 원래의 사역 의미는 허용의 의미로 달라진다.\nㅁ. ⓔ의 that과 ⓕ에서 생략된 관계대명사는 모두 목적격 관계대명사이므로 생략할 수 있다.\nㅂ. ⓖ와 ⓗ는 형태가 유사하지만 ⓖ는 진행형을 구성하고 ⓗ는 전치사의 목적어 역할을 한다.\nㅅ. without ⓗ를 and I did not spend로 바꾸면 문장 전체의 어법과 핵심 의미가 유지된다.\nㅏ. ⓕ에서 생략된 관계대명사를 복원할 때 who, whom, that을 사용할 수 있다.",
+"choices": [
+"3개",
+"4개",
+"5개",
+"6개",
+"7개"
+],
+"answer": "④",
+"solution": "ㄱ: 동명사구와 to부정사구는 모두 문장의 주어가 될 수 있으므로 옳다. ㄴ: in order to는 목적을 명확하게 나타내므로 옳다. ㄷ: instead of와 without은 전치사이므로 뒤에 to부정사를 직접 사용할 수 없다. ㄹ: make는 목적격 보어로 동사원형을, allow는 to부정사를 취한다. 두 동사의 의미 차이에 관한 설명도 옳다. ㅁ: ⓔ의 that은 주격 관계대명사이므로 생략할 수 없고, ⓕ에서는 목적격 관계대명사가 생략되었다. ㅂ: ⓖ는 현재분사이고 ⓗ는 동명사이므로 옳다. ㅅ: I could get it and I did not spend any money는 어법상 옳으며 돈을 쓰지 않고 배낭을 얻었다는 핵심 의미가 유지된다. ㅏ: 사람을 선행사로 하는 목적격 관계대명사로 who, whom, that을 모두 사용할 수 있다. 따라서 ㄱ, ㄴ, ㄹ, ㅂ, ㅅ, ㅏ의 6개가 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3300c0a8f7",
+"typeId": "exam2-eng-m22-ne-u2m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 우리말을 영어로 옮긴 문장 중 수정해야 할 부분의 개수가 가장 많은 것은?\n\n※ 대괄호로 표시된 부분만 판단한다.\n※ 어법상 오류가 있거나 우리말의 의미와 일치하지 않는 부분은 각각 수정 대상으로 판단한다.\n※ 하나의 대괄호 안에 오류가 여러 개 있더라도 한 개로 센다.",
+"choices": [
+"나는 돈을 전혀 쓰지 않고 상태가 좋은 자전거를 빌리기를 기대한다.\n→ I [look forward to] [borrow] a bike [in poor condition] without [spending] any money.",
+"그 앱은 사람들이 더 이상 필요로 하지 않는 물건을 무료로 나누어 주게 해 준다.\n→ The app [allows] people [give away] things [that] they [still need].",
+"나는 배낭을 게시한 사람에게 연락한 후 버스를 타는 대신 자전거를 빌렸다.\n→ After [contacting] the person [which posted] the backpack, I [borrowed] a bike instead of [to take] a bus.",
+"QR 코드를 스캔하는 것은 잠금장치가 열리게 하며, 그 앱은 내가 돈을 전혀 쓰지 않고 자전거를 빌릴 수 있게 해 준다.\n→ Scanning the QR code makes the lock [to open], and the app [prevents] me from using my own bike but lets me [to borrow] a bike without [spend] any money.",
+"나는 배낭을 무료로 나누어 준 사람에게 메시지를 보냈고 그 배낭을 사용하기를 기대했다.\n→ I [sent] a message to the person [who gave away] the backpack and [looked forward to] [use] it."
+],
+"answer": "④",
+"solution": "① borrow를 borrowing으로, in poor condition을 in good condition으로 수정해야 하므로 2개이다. ② give away를 to give away로, still need를 no longer need로 수정해야 하므로 2개이다. ③ which posted를 who posted 또는 that posted로, to take를 taking으로 수정해야 하므로 2개이다. ④ to open을 open으로, prevents가 포함된 불필요한 내용을 제거하도록 문장을 수정하고, to borrow를 borrow로, spend를 spending으로 고쳐야 하므로 4개이다. ⑤ use를 using으로 수정해야 하므로 1개이다. 따라서 수정 대상이 가장 많은 것은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-90e46d7114",
+"typeId": "exam2-eng-m22-ne-u2m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 (A)를 (B)로 바꾸었을 때, (B)가 어법상 옳고 (A)의 의미를 유지하는 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. (A) I borrowed a bike without paying any money.\n    (B) I borrowed a bike instead of paying any money.\nㄴ. (A) The app allowed me to contact the person who posted the backpack.\n    (B) The app let me contact the person who posted the backpack.\nㄷ. (A) Scanning the QR code made the lock open.\n    (B) Scanning the QR code allowed the lock to open.\nㄹ. (A) I was excited about using the backpack that I got for free in the future.\n    (B) I looked forward to using the backpack I got for free.\nㅁ. (A) I contacted the person who gave away the backpack.\n    (B) I contacted the person gave away the backpack.\nㅂ. (A) I gave away things that I no longer needed without asking for money.\n    (B) I gave away things I no longer needed without asking for money.\nㅅ. (A) I took a bus instead of borrowing a bike.\n    (B) Instead of taking a bus, I borrowed a bike.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄹ, ㅂ",
+"ㄴ, ㄷ, ㅅ",
+"ㄷ, ㅁ, ㅂ",
+"ㄴ, ㄹ, ㅂ"
+],
+"answer": "⑤",
+"solution": "ㄱ: without은 돈을 지불하지 않은 상태를 나타내지만 instead of는 대체 관계를 나타내므로 의미가 동일하지 않다. ㄴ: allow+목적어+to부정사와 let+목적어+동사원형은 해당 문맥에서 같은 허용의 의미를 나타낸다. ㄷ: 두 문장 모두 어법상 옳지만 make는 동작을 일으키는 사역의 의미이고 allow는 동작을 가능하게 하거나 허용하는 의미이므로 엄밀하게 동일하지 않다. ㄹ: be excited about과 look forward to는 해당 문맥에서 미래의 일에 대한 기대를 나타내며, 목적격 관계대명사 that도 생략할 수 있다. ㅁ: 주격 관계대명사 who는 생략할 수 없다. ㅂ: 목적격 관계대명사 that은 생략할 수 있으며 나머지 의미도 유지된다. ㅅ: 버스를 탄 것과 자전거를 빌린 것이 서로 뒤바뀌었다. 따라서 ㄴ, ㄹ, ㅂ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9f6eaa11f1",
+"typeId": "exam2-eng-m22-ne-u2m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 빈칸 (A)~(J)에 괄호 안의 동사를 알맞은 형태로 바꾸어 넣을 때, 완성된 표현의 문법적 기능을 분류한 것으로 옳은 것은?\n\n<보기>\n• The app allows people (A) ______ secondhand items. (trade)\n• I look forward to (B) ______ the backpack. (use)\n• Scanning the QR code makes the bike’s lock (C) ______. (open)\n• I went to the park in order (D) ______ the bike. (ride)\n• I got the backpack without (E) ______ any money. (spend)\n• The app lets people (F) ______ things with others. (share)\n• (G) ______ things with others is good for the environment. (Share)\n• I decided (H) ______ away the backpack. (give)\n• The person was (I) ______ away the backpack when I contacted her. (give)\n• Instead of (J) ______ a new backpack, I used a secondhand one. (buy)\n\n<분류 기준>\n㉠ 전치사의 목적어인 동명사\n㉡ 목적격 보어인 동사원형\n㉢ 목적격 보어인 to부정사\n㉣ 목적을 나타내는 부사적 용법의 to부정사\n㉤ 위 네 가지에 해당하지 않는 표현",
+"choices": [
+"㉠ B, E, J / ㉡ C, F / ㉢ A / ㉣ D / ㉤ G, H, I",
+"㉠ B, E, J / ㉡ C, F / ㉢ A, H / ㉣ D / ㉤ G, I",
+"㉠ B, E, G, J / ㉡ C, F / ㉢ A / ㉣ D / ㉤ H, I",
+"㉠ B, E / ㉡ C, F / ㉢ A / ㉣ D, H / ㉤ G, I, J",
+"㉠ B, E, I, J / ㉡ C, F / ㉢ A / ㉣ D / ㉤ G, H"
+],
+"answer": "①",
+"solution": "(A)는 to trade로 allow의 목적격 보어이다. (B)는 using, (E)는 spending, (J)는 buying으로 각각 전치사 to, without, of의 목적어이다. (C)는 open, (F)는 share로 각각 사역동사 make와 let의 목적격 보어인 동사원형이다. (D)는 to ride로 in order to 구문에서 목적을 나타낸다. (G)는 Sharing으로 문장의 주어인 동명사이다. (H)는 to give로 decided의 목적어인 명사적 용법의 to부정사이다. (I)는 giving으로 진행형을 구성하는 현재분사이다. 따라서 ㉠은 B, E, J, ㉡은 C, F, ㉢은 A, ㉣은 D, ㉤은 G, H, I이므로 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5f7855279d",
+"typeId": "exam2-eng-m22-ne-u2m0s0t2",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 우리말과 뜻이 같도록 빈칸 (A)~(D)에 들어갈 표현을 <조건>에 맞게 각각 영어로 쓰시오.\n\n• 그 앱은 사람들이 더 이상 필요로 하지 않는 물건을 무료로 나누어 줄 수 있게 해 준다.\n→ The app (A) ____________________.\n\n• QR 코드를 스캔하는 것은 자전거의 잠금장치가 열리게 한다.\n→ Scanning the QR code (B) ____________________.\n\n• 나는 배낭을 게시한 사람에게 메시지를 보낸 후, 버스를 타는 대신 자전거를 빌렸다.\n→ After (C) ____________________, I borrowed a bike instead of taking a bus.\n\n• 나는 돈을 전혀 쓰지 않고 내가 무료로 얻은 그 배낭을 사용하기를 기대한다.\n→ I (D) ____________________.\n\n<조건>\n1. (A)는 allow, people, give away, things, no longer, need를 모두 사용하여 10단어로 쓸 것. 목적격 관계대명사는 생략할 것.\n2. (B)는 make, the bike’s lock, open을 모두 사용하여 5단어로 쓸 것.\n3. (C)는 send, a message, the person, post, the backpack을 모두 사용하여 10단어로 쓸 것. 사람을 선행사로 하는 주격 관계대명사 who를 사용할 것.\n4. (D)는 look forward to, use, the backpack, get, for free, without, spend, any money를 모두 사용하여 14단어로 쓸 것. 목적격 관계대명사는 생략할 것.\n5. 필요한 경우 주어진 동사의 형태를 바꾸고 필요한 기능어와 대명사를 추가할 것. 제시된 표현 이외의 내용어는 추가하지 말 것.\n6. 소유격 bike’s는 한 단어로 계산하며, 각 빈칸에 들어갈 표현만 쓸 것.",
+"selfGrade": true,
+"answer": "(A) allows people to give away things they no longer need\n(B) makes the bike’s lock open\n(C) sending a message to the person who posted the backpack\n(D) look forward to using the backpack I got for free without spending any money",
+"solution": "(A) allow는 목적격 보어로 to부정사를 취하고 주어 The app은 3인칭 단수이므로 allows를 사용한다. things를 수식하는 관계절에서 목적격 관계대명사는 생략한다. allows(1) people(2) to(3) give(4) away(5) things(6) they(7) no(8) longer(9) need(10). (B) 사역동사 make는 목적격 보어로 동사원형을 취한다. 동명사구 주어는 단수 취급하므로 makes를 사용한다. makes(1) the(2) bike’s(3) lock(4) open(5). (C) 전치사 After 뒤에는 동명사를 사용한다. 선행사 the person을 수식하는 주격 관계대명사 who는 생략할 수 없다. sending(1) a(2) message(3) to(4) the(5) person(6) who(7) posted(8) the(9) backpack(10). (D) look forward to와 without 뒤에는 동명사를 사용한다. the backpack을 수식하는 관계절의 목적격 관계대명사는 생략한다. look(1) forward(2) to(3) using(4) the(5) backpack(6) I(7) got(8) for(9) free(10) without(11) spending(12) any(13) money(14). 채점 기준: 각 빈칸 3점씩 총 12점. 각 빈칸의 핵심 문법 구조 1점, 어휘 및 의미의 정확성 1점, 어순과 제시 조건 충족 1점으로 채점한다. 의미와 문법 및 모든 조건을 충족하는 동등한 답안은 인정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a65a37ce27",
+"typeId": "exam2-eng-m22-ne-u2m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것은?\n\nI recently got a backpack without paying for it. What surprised me most was not simply that it was free, but that the experience changed the way I thought about sharing. Here is how it happened.\n\n(A) The second check was about the backpack itself. It was smaller than my old one, but its condition was excellent. I was also pleased with its color.\n\n(B) This arrangement, however, left me with another decision to make: how to get to Central Park. I decided against taking a bus and chose to use a shared bike instead.\n\n(C) Unlike the first check, which was necessary for a safe ride, the second helped me decide how useful the item would be to me. Receiving such an item for free made me think about sharing my own belongings.\n\n(D) It all began when I found a post on a secondhand-item app. The owner of a backpack was giving it away. We agreed to meet at Central Park the following day.\n\n(E) Before riding it, I scanned its QR code to unlock it and checked whether it was in good condition. Once I was sure that it was, I rode to the park, returned the bike, and met the owner.\n\n<보기>\n글의 배열을 판단할 때에는 사건의 선후 관계뿐 아니라 지시 표현의 대상, 반복되는 표현의 의미 및 도입부에서 제시한 핵심 내용과 결말의 관계도 고려한다.",
+"choices": [
+"(D)－(B)－(A)－(E)－(C)",
+"(D)－(E)－(B)－(A)－(C)",
+"(D)－(B)－(E)－(A)－(C)",
+"(B)－(D)－(E)－(C)－(A)",
+"(D)－(B)－(E)－(C)－(A)"
+],
+"answer": "③",
+"solution": "첫째, 주어진 글의 Here is how it happened.는 경험이 시작된 과정을 예고하므로 게시물을 발견하고 만남을 약속한 (D)가 이어져야 한다. 둘째, (B)의 This arrangement는 (D)에서 주인과 정한 만남을 가리킨다. 셋째, (E)의 Before riding it에서 it은 (B)의 a shared bike를 가리키며, 이 부분에서 자전거 상태에 대한 첫 번째 점검이 이루어진다. 넷째, (A)의 The second check는 앞서 자전거를 점검한 사실을 전제로 하며, 점검 대상이 백팩으로 바뀐다. 다섯째, (C)는 두 점검의 목적을 비교한 후 공유에 대한 생각의 변화를 설명한다. 이는 도입부에서 예고한 핵심 내용과 연결된다. 따라서 (D)－(B)－(E)－(A)－(C)가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e9b54553c6",
+"typeId": "exam2-eng-m22-ne-u2m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글과 <자료>를 읽고, 각 질문을 <조건>에 따라 분류한 결과로 옳은 것은?\n\nOn Monday, Jimin found a post about a backpack that someone was giving away for free. Jimin contacted the owner, and they agreed to meet at Central Park at three the following afternoon. On the meeting day, Jimin borrowed a shared bike rather than take a bus. Scanning the QR code opened the bike's lock. Since shared bikes were sometimes in poor condition, Jimin examined the bike before riding it. Finding no problems, Jimin rode to the park and returned the bike at a station there. After that, Jimin received the backpack. It was not as big as the old one, but it was in excellent condition. This experience encouraged Jimin to consider sharing personal belongings with others.\n\n<자료>\nQ1. On which day of the week did Jimin receive the backpack?\nQ2. How much did Jimin save on transportation by choosing a shared bike?\nQ3. Why did Jimin ride the bike without examining it?\nQ4. What action caused the bike's lock to open?\nQ5. At what exact time did Jimin arrive at Central Park?\nQ6. Why did Jimin examine the bike before riding it?\nQ7. How much did Jimin pay for the backpack?\nQ8. Why was the new backpack larger than Jimin's old one?\nQ9. Which personal belonging did Jimin actually give away after the experience?\n\n<조건>\n• A: 글에 제시된 사실이나 그 사실로부터 확정할 수 있는 정보로 답할 수 있는 질문\n• B: 질문의 전제가 글과 모순되지는 않지만, 글의 정보만으로 답을 확정할 수 없는 질문\n• C: 질문에 포함된 전제 자체가 글에 제시된 사실과 명백히 모순되는 질문\n• 질문의 전제가 글에 제시된 사실과 모순되면 C로 분류하고, 나머지는 답을 확정할 수 있는지에 따라 A 또는 B로 분류한다.",
+"choices": [
+"A: Q1, Q4, Q5, Q6 / B: Q2, Q7, Q9 / C: Q3, Q8",
+"A: Q1, Q4, Q6, Q7 / B: Q2, Q5, Q8 / C: Q3, Q9",
+"A: Q1, Q4, Q6, Q7 / B: Q2, Q3, Q5 / C: Q8, Q9",
+"A: Q1, Q4, Q6, Q7 / B: Q2, Q5, Q9 / C: Q3, Q8",
+"A: Q4, Q5, Q6, Q7 / B: Q1, Q2, Q9 / C: Q3, Q8"
+],
+"answer": "④",
+"solution": "Q1은 월요일의 다음 날인 화요일에 백팩을 받았으므로 A이다. Q2는 두 교통수단의 이용 요금이 제시되지 않았으므로 B이다. Q3은 자전거를 점검하지 않았다는 전제를 포함하지만 실제로는 점검한 후 이용했으므로 C이다. Q4는 QR 코드를 스캔한 행동이 잠금장치를 열었으므로 A이다. Q5는 약속 시각이 오후 3시라는 사실만 제시되었을 뿐 실제 도착 시각은 알 수 없으므로 B이다. Q6은 공유 자전거의 상태가 좋지 않은 경우가 있기 때문이므로 A이다. Q7은 백팩을 무료로 나누어 준다는 내용에 따라 지불한 금액이 없다고 답할 수 있으므로 A이다. Q8은 받은 백팩이 기존 것보다 크다는 전제를 포함하지만 실제로는 더 작으므로 C이다. Q9는 지민이가 자신의 물건을 공유하는 것을 고려했다는 사실만 제시되어 실제로 무엇을 나누어 주었는지는 알 수 없으므로 B이다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-43c56a7ef5",
+"typeId": "exam2-eng-m22-ne-u2m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "글의 흐름을 고려할 때, 주어진 두 문장 (X)와 (Y)가 들어가기에 가장 알맞은 곳을 바르게 짝지은 것은?\n\n<주어진 문장>\n(X) The second of these steps, however, only makes it possible for you to use the bike; it does not tell you whether you should ride it.\n\n(Y) I later found myself making a similar judgment about something that I was going to keep rather than borrow.\n\nI had arranged to meet someone who was giving away a backpack. The following day, I chose to use my city's bike-sharing system to get to the meeting place. (A) Borrowing a bike through the system involves choosing a bike and then scanning its QR code to unlock it. (B) That is why I also examined the bike before setting off. I wanted to make sure that it was in good enough condition for a safe ride. (C) After finding no problems, I rode to Central Park and returned the bike at a station there. (D) When the owner handed me the backpack, I looked at its condition before deciding how useful it would be to me. Although it was smaller than my old one, I was satisfied with it. (E) These two experiences showed me that sharing and reusing things can be practical ways to meet our needs.\n\n<조건>\n• 두 문장은 서로 다른 위치에 삽입한다.\n• 두 문장을 모두 삽입한 글은 지시 표현의 의미와 시간적·논리적 흐름이 자연스러워야 한다.",
+"choices": [
+"(X)－(A), (Y)－(C)",
+"(X)－(A), (Y)－(D)",
+"(X)－(B), (Y)－(C)",
+"(X)－(B), (Y)－(D)",
+"(X)－(C), (Y)－(E)"
+],
+"answer": "④",
+"solution": "(X)의 The second of these steps는 자전거를 선택하는 단계와 QR 코드를 스캔하는 단계 중 두 번째 단계를 가리킨다. 따라서 두 단계가 모두 제시된 뒤에 나와야 한다. 또한 자전거의 잠금장치를 여는 것만으로 안전한 이용이 보장되지 않는다는 (X)의 내용은 바로 뒤의 That is why I also examined the bike.에 대한 이유가 된다. 따라서 (X)는 (B)에 들어가야 한다. (Y)의 a similar judgment는 앞에서 자전거가 이용하기에 적절한 상태인지 판단한 행동을 가리킨다. something that I was going to keep rather than borrow는 빌렸다가 반납하는 자전거와 달리 받아서 소유할 백팩을 의미한다. (Y)는 자전거 이용 경험에서 백팩을 받는 경험으로 전환하는 문장이므로 자전거를 반납한 뒤이자 백팩을 받은 사실이 나오기 전인 (D)에 들어가는 것이 가장 적절하다. 마지막 문장의 These two experiences도 앞에서 전개된 두 경험을 종합한다. 따라서 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-39e4744425",
+"typeId": "exam2-eng-m22-ne-u2m0s1t2",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 글을 읽고, <조건>에 맞게 요약문의 빈칸 (A)~(L)를 완성하시오.\n\nSharing things helps people save money and resources, and it can benefit the environment. Jimin experienced the sharing economy in two different ways. First, Jimin used an app through which people could buy, sell, or give away secondhand items. Jimin found a person who was giving away a backpack and arranged to meet that person the following day. Instead of taking a bus to the meeting place, Jimin borrowed a shared bike. Scanning the QR code unlocked the bike, but Jimin still needed to check its condition because shared bikes were sometimes in poor condition. After making sure that the bike was safe to ride, Jimin rode to the park and returned it before receiving the backpack. The backpack was smaller than Jimin's old one, but its condition was excellent. Receiving a useful item for free encouraged Jimin to consider sharing personal belongings with others.\n\n<요약문>\nTo meet someone who was giving away a backpack, Jimin borrowed a shared bike rather than (A) a bus. Although scanning its QR code made the lock (B), Jimin checked the bike's condition to make sure that it was (C) to ride. Jimin did not receive the backpack (D) after returning the bike. The backpack was not as (E) as the old one. (F) its smaller size, however, Jimin was satisfied with its condition. Jimin received it (G) (H) any money. The experience led Jimin to (I) (J) personal belongings with (K), rather than simply (L) useful things from other people.\n\n<주어진 단어>\nbig / consider / despite / open / other / receive / safe / share / spend / take / until / without\n\n<조건>\n• 주어진 단어 12개를 각각 한 번씩 사용한다.\n• 각 빈칸에는 영어 한 단어만 쓴다.\n• 필요한 경우 주어진 단어의 형태를 문맥과 어법에 맞게 바꾼다.\n• 단어의 품사를 바꾸는 파생어는 사용하지 않는다.\n• 본문의 사건 순서, 크기 비교, 양보 관계 및 경험에 따른 태도 변화가 유지되도록 한다.\n• (L)은 지민이가 이미 경험한 행동을 나타내며, (J)는 그 경험을 통해 앞으로 고려하게 된 행동을 나타낸다.\n• 문장 첫머리에 해당하는 단어는 첫 글자를 대문자로 쓴다.\n• 답안은 (A)부터 (L)까지 순서대로 쓰고 각 단어를 쉼표로 구분한다.",
+"selfGrade": true,
+"answer": "take, open, safe, until, big, Despite, without, spending, consider, sharing, others, receiving",
+"solution": "먼저 본문의 교통수단 선택과 사건 순서를 파악한다. 지민이는 버스를 타는 대신 공유 자전거를 이용했다. 요약문의 borrowed a shared bike rather than 뒤에는 버스를 타는 행동을 나타내는 동사원형 take가 적절하므로 (A)는 take이다. QR 코드를 스캔한 결과 잠금장치가 열렸으므로 사역동사 made의 목적격보어인 (B)는 동사원형 open이다. 자전거 점검의 목적은 안전하게 탈 수 있는 상태인지 확인하는 것이므로 (C)는 safe이다. 지민이는 자전거를 반납한 후 백팩을 받았다. 따라서 not ... until 구문을 사용하면 자전거를 반납할 때까지 백팩을 받지 않았다는 의미가 되므로 (D)는 until이다. 다음으로 백팩의 크기와 상태 사이의 관계를 파악한다. smaller than은 not as big as로 바꿔 나타낼 수 있으므로 (E)는 big이다. 크기가 더 작았음에도 상태에 만족했다는 양보 관계를 나타내고 뒤에 명사구 its smaller size가 이어지므로 (F)는 전치사 Despite이다. 무료로 받았다는 내용은 without spending any money로 표현할 수 있다. without은 전치사이므로 (G)는 without, (H)는 동명사 spending이다. 마지막으로 경험에 따른 태도 변화를 파악한다. lead＋목적어＋to부정사 구문에 따라 (I)는 동사원형 consider이며, consider는 동명사를 목적어로 취하므로 (J)는 sharing이다. 다른 사람들을 나타내는 복수 대명사가 필요하므로 (K)는 others이다. (L)은 다른 사람에게서 물건을 받았던 행동을 나타내고, 앞의 sharing과 병렬 관계를 이루어야 하므로 receiving이다. 모든 단어가 한 번씩 사용되었으며 요약문의 내용과 어법도 본문과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-42b2fd7daf",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <보기>의 학생들이 AI 사용 시 지켜야 할 사항을 실천한 정도를 <평가 기준>에 따라 판단한 것으로 옳은 것만을 <판단>에서 있는 대로 고른 것은?\n\nANNIE: AI may sometimes give you incorrect information. Therefore, you need to check its information carefully. Checking accuracy, however, is not enough. You should understand the information before expressing it in your own words. Also, you should avoid sharing your personal information with AI.\n\n<보기>\n• 민준: AI가 제공한 정보의 정확성을 확인하고 내용을 이해했지만, 문장을 그대로 옮겨 적었다. 개인 정보는 입력하지 않았다.\n• 서연: AI의 설명을 이해하고 자신의 말로 표현했지만, 정보의 정확성을 확인하지 않았다. 개인 정보는 입력하지 않았다.\n• 지호: AI가 제공한 정보의 정확성을 확인하고 내용을 이해한 후 자신의 말로 표현했지만, AI에 자신의 집 주소를 입력했다.\n• 유나: AI가 제공한 정보의 정확성을 확인하지 않았으며, 내용을 이해하지 못한 채 일부 단어만 바꾸어 적었다. 개인 정보는 입력하지 않았다.\n\n<평가 기준>\n㉠ Accuracy: 정보의 정확성을 확인함. (3점)\n㉡ Originality: 내용을 이해하고 자신의 말로 표현함. (2점)\n㉢ Privacy: 개인 정보를 입력하지 않음. (3점)\n• 각 기준을 충족하면 해당 점수를 모두 부여하고, 충족하지 못하면 0점을 부여한다.\n• 충족하지 못한 기준 하나를 완전히 충족하도록 행동을 수정하는 것을 1회의 수정으로 계산한다.\n• 수정 대상이 아닌 다른 기준의 충족 여부는 변하지 않는다.\n\n<판단>\nㄱ. 수정 전 평가에서 민준의 점수는 가장 높으며, 지호와 서연의 점수는 서로 같다.\nㄴ. 네 학생이 모두 만점을 받기 위해 필요한 최소 수정 횟수의 합은 5회이다.\nㄷ. 각 학생이 한 가지 기준만 추가로 충족하도록 수정할 경우, 유나를 제외한 모든 학생이 만점을 받을 수 있다.\nㄹ. ㉠과 ㉢의 배점을 그대로 유지하면서 ㉡의 배점만 4점으로 변경하면, 민준과 지호의 점수 순위가 역전된다.\nㅁ. 유나가 ㉠만 추가로 충족하면 수정 전 민준과 점수가 같아지지만, 두 학생이 충족한 기준의 종류는 서로 다르다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄷ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄴ, ㄹ, ㅁ"
+],
+"answer": "①",
+"solution": "본문에서는 정보의 정확성 확인, 내용의 이해와 자기 말로의 표현, 개인 정보 보호를 모두 요구한다. 민준은 ㉠과 ㉢을 충족하여 6점, 서연은 ㉡과 ㉢을 충족하여 5점, 지호는 ㉠과 ㉡을 충족하여 5점, 유나는 ㉢만 충족하여 3점이다. 따라서 ㄱ은 옳다. 만점을 받기 위한 최소 수정 횟수는 민준 1회, 서연 1회, 지호 1회, 유나 2회이므로 합계는 5회이다. 따라서 ㄴ과 ㄷ은 옳다. ㉡의 배점을 4점으로 변경하면 민준은 6점, 지호는 7점이 되어 두 학생의 점수 순위가 역전되므로 ㄹ도 옳다. 유나가 ㉠을 추가로 충족하면 민준과 마찬가지로 ㉠과 ㉢을 충족하므로 점수뿐 아니라 충족한 기준의 종류도 같다. 따라서 ㅁ은 틀리다. 정답은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ed89497b3a",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 표시된 부분의 문맥적 의미와 글의 내용에 관한 설명으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\nANNIE: AI can answer questions ㉠that you have. Imagine ㉡that you want to teach your dog how to sit and stay. Your dog learns from information and experiences, and AI learns ㉢in a similar way.\nUser: It is difficult to understand AI without an example.\nANNIE: Think about video recommendations. AI studies ㉣which videos you have already watched before deciding what to recommend. However, the videos AI recommends may not always match your interests. ㉤This does not mean that AI cannot learn. It means that learning from information does not guarantee a correct decision every time.\n\n<보기>\nㄱ. ㉠은 사용자가 가지고 있는 질문을 나타내며, ㉡은 AI의 학습 방식을 설명하기 위해 가정한 상황을 이끈다.\nㄴ. ㉢은 AI와 반려견이 학습 과정에서 활용하는 정보의 종류와 구체적인 학습 방식까지 모두 동일하다는 의미이다.\nㄷ. ㉣은 AI가 새로운 동영상을 추천하기 전에 분석하는 정보를 나타내며, 앞으로 추천할 동영상 자체를 나타내지는 않는다.\nㄹ. ㉤의 This는 AI가 추천한 동영상이 사용자의 관심사와 항상 일치하지는 않는다는 앞 문장의 내용을 가리킨다.\nㅁ. 마지막 두 문장은 동영상 추천이 부정확할 가능성을 인정하면서도, 그러한 가능성과 AI의 학습 능력은 양립할 수 있음을 설명한다.\nㅂ. User의 발언 이후 제시된 동영상 추천 사례는 AI가 반려견과 달리 이전에 얻은 정보를 활용하지 않고 판단한다는 점을 보여 준다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㅁ, ㅂ",
+"ㄴ, ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄹ, ㅁ, ㅂ"
+],
+"answer": "②",
+"solution": "ㄱ: ㉠은 questions를 수식하여 사용자가 가진 질문을 나타내고, ㉡은 Imagine의 목적어절을 이끌어 반려견을 가르치는 가상의 상황을 제시하므로 옳다. ㄴ: in a similar way는 정보와 경험을 통해 학습한다는 공통점을 나타낼 뿐, 정보의 종류나 세부적인 학습 방식까지 동일하다는 의미는 아니므로 틀리다. ㄷ: which videos you have already watched는 사용자가 이미 시청한 동영상에 관한 정보이며, AI가 추천하기 전에 분석하는 대상이므로 옳다. ㄹ: This는 추천 결과가 사용자의 관심사와 항상 일치하지는 않는다는 앞 문장의 내용을 가리키므로 옳다. ㅁ: 마지막 두 문장은 학습 능력이 존재하더라도 판단의 정확성이 언제나 보장되는 것은 아니라는 점을 설명하므로 옳다. ㅂ: 동영상 추천 사례에서 AI는 이전 시청 정보를 활용하므로 틀리다. 따라서 옳은 것은 ㄱ, ㄷ, ㄹ, ㅁ이며 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0b98f32c19",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A)~(F)에 들어갈 문장을 <보기>에서 골라 순서대로 배열하고, 글 전체에 대한 추론이 적절하게 연결된 것은?\n\nAI can learn from information and experiences. A pet dog's learning process can help us understand this idea. AI technology is used in our everyday lives, too.\n\nFirst, AI can recommend videos that you may enjoy. (A)______ (B)______ (C)______\n\nAnother example is the use of AI to unlock smartphones. (D)______ (E)______ (F)______\n\n<보기>\nㄱ. However, this improvement does not mean that the system will recognize you correctly every time.\nㄴ. It first examines information about what you have watched before.\nㄷ. As it learns more about your face, it may recognize you even when your appearance changes.\nㄹ. Based on this information, it predicts which new videos may interest you.\nㅁ. However, such a prediction may be incorrect because your interests can change.\nㅂ. In this case, the information it needs to learn from is about what your face looks like rather than what you have watched.\n\n<추론>\n㉠ 두 사례는 학습한 정보의 종류와 활용 목적이 서로 달라도 정보에 근거하여 판단한다는 공통점이 있음을 보여 주며, 학습이 판단의 완전한 정확성을 보장하지는 않음을 설명한다.\n㉡ 두 사례는 학습한 정보의 종류가 서로 다르므로 두 기능의 판단 방식에는 정보에 근거하여 판단한다는 공통점도 없음을 보여 준다.\n㉢ 두 사례에서 판단의 정확성이 완전히 보장되지 않는다는 점은 AI가 기존 정보를 활용하는 학습 능력을 갖추지 못했음을 의미한다.",
+"choices": [
+"(A) ㄴ－(B) ㄹ－(C) ㄱ－(D) ㅂ－(E) ㄷ－(F) ㅁ / ㉠",
+"(A) ㄴ－(B) ㅁ－(C) ㄹ－(D) ㅂ－(E) ㄷ－(F) ㄱ / ㉠",
+"(A) ㄴ－(B) ㄹ－(C) ㅁ－(D) ㅂ－(E) ㄷ－(F) ㄱ / ㉠",
+"(A) ㄴ－(B) ㄹ－(C) ㅁ－(D) ㅂ－(E) ㄷ－(F) ㄱ / ㉡",
+"(A) ㄴ－(B) ㄹ－(C) ㅁ－(D) ㅂ－(E) ㄷ－(F) ㄱ / ㉢"
+],
+"answer": "③",
+"solution": "동영상 추천 사례에서는 먼저 사용자의 이전 시청 정보를 분석한다는 ㄴ이 제시되어야 한다. ㄹ의 this information은 ㄴ의 이전 시청 정보를 가리키며, 그 정보를 바탕으로 새로운 동영상에 대한 사용자의 관심을 예측한다. 이어지는 ㅁ의 such a prediction은 ㄹ의 예측을 가리키며 그 한계를 설명한다. 따라서 (A)~(C)는 ㄴ－ㄹ－ㅁ이다. 얼굴 인식 사례에서는 ㅂ이 동영상 시청 정보와 얼굴 정보를 대조하면서 새로운 사례의 학습 대상을 제시한다. 이어서 ㄷ이 학습에 따른 얼굴 인식 능력의 향상을 설명하고, ㄱ의 this improvement가 ㄷ의 능력 향상을 가리키면서 인식의 한계를 제시한다. 따라서 (D)~(F)는 ㅂ－ㄷ－ㄱ이다. 두 사례의 정보 종류와 활용 목적은 서로 다르지만 학습한 정보를 판단에 활용한다는 공통점이 있으며, 판단의 정확성이 완전히 보장되지는 않는다. 따라서 ㉠은 적절하다. ㉡은 두 사례의 공통점을 부정하므로 틀리고, ㉢은 판단의 한계를 학습 능력의 부재로 잘못 해석하므로 틀리다. 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e17164dfbe",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <보기>의 판단 기준에 따라 학생들의 진술을 분류한 것으로 가장 적절한 것은?\n\nANNIE: AI stands for Artificial Intelligence. It is a kind of computer system. Like a dog that learns from information and experiences, AI can learn, too. For example, AI studies the videos you have watched and uses the information to recommend new ones. AI can also learn what your face looks like. Over time, it can get better at recognizing you, even if you change your hair or wear a mask. However, learning from information does not guarantee that every decision AI makes is correct. AI sometimes gives incorrect information. Therefore, you should check the accuracy of its information. Even if the information is correct, you should understand it and express it in your own words. You should also avoid sharing your personal information with AI.\n\n<보기>\n[판단 기준]\nP: 윗글의 내용과 일치하거나 윗글에서 논리적으로 추론할 수 있음.\nQ: 윗글의 내용과 명백히 모순됨.\nR: 윗글만으로는 사실 여부를 판단할 수 없음.\n\n[학생들의 진술]\nㄱ. AI의 동영상 추천 사례와 얼굴 인식 사례는 학습한 정보를 활용한다는 공통점이 있지만, 학습 대상과 활용 목적은 구별된다.\nㄴ. AI의 얼굴 인식 능력이 향상될 수 있다는 사실만으로 AI가 제공하는 다른 종류의 정보까지 항상 정확하다고 결론 내릴 수는 없다.\nㄷ. AI가 제공하는 정보의 정확성을 확인했다면, 그 내용을 이해하거나 자신의 말로 표현하지 않아도 본문에서 제시한 정보 활용에 관한 요구 사항을 모두 충족한 것이다.\nㄹ. AI가 개인 정보를 입력하지 않은 사용자에게 제공하는 정보는 개인 정보를 입력한 사용자에게 제공하는 정보보다 정확하다.\nㅁ. AI가 어떤 정보를 학습했다면, 그 정보에 근거하여 내린 판단은 한 번도 틀리지 않는다.\nㅂ. 얼굴 인식에 필요한 학습을 마친 AI는 동영상 추천에 필요한 학습을 마친 AI보다 판단의 정확성이 높다.\nㅅ. AI가 제공한 정보가 실제로 정확한 경우에도 그 사실만으로 개인 정보 보호에 관한 요구 사항까지 충족되었다고 판단할 수는 없다.",
+"choices": [
+"P: ㄱ, ㄴ, ㅅ / Q: ㄷ, ㄹ, ㅁ / R: ㅂ",
+"P: ㄱ, ㄴ / Q: ㄷ, ㅁ / R: ㄹ, ㅂ, ㅅ",
+"P: ㄱ, ㅅ / Q: ㄷ, ㅁ, ㅂ / R: ㄴ, ㄹ",
+"P: ㄱ, ㄴ, ㅅ / Q: ㄷ, ㅁ / R: ㄹ, ㅂ",
+"P: ㄴ, ㄹ, ㅅ / Q: ㄷ, ㅁ / R: ㄱ, ㅂ"
+],
+"answer": "④",
+"solution": "ㄱ: 두 사례는 각각 이전 시청 정보와 얼굴 정보를 학습하여 동영상 추천과 얼굴 인식에 활용하므로 P이다. ㄴ: 본문은 얼굴 인식 능력의 향상 가능성을 인정하면서도 AI의 모든 판단이 정확하지는 않다고 설명하므로 P이다. ㄷ: 정보가 정확하더라도 내용을 이해하고 자신의 말로 표현해야 한다고 명시하였으므로 Q이다. ㄹ: 개인 정보 입력 여부에 따른 정보의 정확성 차이는 본문에서 설명하지 않았다. 본문의 개인 정보 보호 권고만으로 정확성의 차이를 추론할 수도 없으므로 R이다. ㅁ: 학습이 모든 판단의 정확성을 보장하지는 않는다는 본문의 설명과 명백히 모순되므로 Q이다. ㅂ: 두 기능의 정확성을 비교할 수 있는 정보는 본문에 제시되지 않았으므로 R이다. ㅅ: 정보의 정확성과 개인 정보 보호는 서로 구별되는 요구 사항이므로, 정보가 정확하다는 사실만으로 개인 정보 보호 여부를 판단할 수 없다는 진술은 P이다. 따라서 P는 ㄱ, ㄴ, ㅅ, Q는 ㄷ, ㅁ, R은 ㄹ, ㅂ이며 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f04c4934f3",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <보기>의 조건을 모두 만족하도록 요약문의 빈칸 (A)~(D)를 완성한 것은?\n\nLike a dog that learns from information and experiences, AI can learn, too. In everyday life, AI technology can study the videos you have watched and decide what to recommend. It can also learn what your face looks like and become better at recognizing you over time. However, the ability to learn does not guarantee that all the information AI provides is correct. You need to check its accuracy. Even after making sure that the information is correct, you still need to understand it and express it in your own words. You should also avoid sharing your personal information with AI.\n\n<보기>\n[요약문]\nAI's ability to (A)______ makes it useful in different areas of everyday life. However, its learning ability (B)______. Therefore, responsible use of AI requires checking its information, (C)______, and protecting personal information, with the last requirement (D)______.\n\n[조건]\n• (A)는 반려견과 AI의 공통된 학습 원리를 나타낼 것.\n• (B)는 학습 능력과 정보의 정확성 사이의 관계를 나타낼 것.\n• (C)는 정보의 정확성을 확인한 이후에도 필요한 행동을 나타낼 것.\n• (D)는 개인 정보 보호와 정보의 정확성 확인 사이의 논리적 관계를 나타낼 것.\n• 모든 빈칸은 문법적으로 적절하고 윗글의 내용과 일치할 것.",
+"choices": [
+"(A) learn from information and experiences / (B) does not ensure accuracy in every case / (C) expressing accurate information in one's own words without necessarily understanding it / (D) applying regardless of the information's accuracy",
+"(A) learn from information and experiences / (B) ensures accuracy once enough information has been learned / (C) understanding accurate information and expressing it in one's own words / (D) applying regardless of the information's accuracy",
+"(A) make correct decisions before learning from experience / (B) does not ensure accuracy in every case / (C) understanding accurate information and expressing it in one's own words / (D) applying regardless of the information's accuracy",
+"(A) learn from information and experiences / (B) does not ensure accuracy in every case / (C) understanding accurate information and expressing it in one's own words / (D) applying only when the information is found to be incorrect",
+"(A) learn from information and experiences / (B) does not ensure accuracy in every case / (C) understanding accurate information and expressing it in one's own words / (D) applying regardless of the information's accuracy"
+],
+"answer": "⑤",
+"solution": "(A)는 반려견과 AI가 정보와 경험을 통해 학습한다는 공통점을 나타내므로 learn from information and experiences가 적절하다. ③의 표현은 경험을 통한 학습 이전에 정확한 판단을 내린다는 의미이므로 본문의 학습 원리를 나타내지 못한다. (B)는 AI의 학습 능력이 모든 경우의 정확성을 보장하지는 않는다는 의미의 does not ensure accuracy in every case가 적절하다. ②는 충분한 정보를 학습하면 정확성이 보장된다고 하므로 본문에 제시된 학습 능력의 한계를 왜곡한다. (C)는 정보가 정확하더라도 내용을 이해하고 자신의 말로 표현해야 한다는 의미의 understanding accurate information and expressing it in one's own words가 적절하다. ①은 내용의 이해가 반드시 필요하지는 않다고 하므로 틀리다. (D)는 개인 정보 보호가 정보의 정확성과 별개로 지켜야 할 요구 사항임을 나타내는 applying regardless of the information's accuracy가 적절하다. ④는 정보가 부정확한 경우에만 개인 정보를 보호해야 한다는 의미이므로 틀리다. 네 가지 조건을 모두 충족하는 것은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
 }
 ]
