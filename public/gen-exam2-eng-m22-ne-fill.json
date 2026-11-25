@@ -6184,5 +6184,179 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-ebf0e7e9c5",
+"typeId": "exam2-eng-m22-ne-u3m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 진술이 ANNIE의 설명과 일치하면 O, 일치하지 않으면 X를 쓰시오.\n\nAI가 사용자의 얼굴을 인식하는 것과 사용자가 시청한 영상을 바탕으로 다른 영상을 추천하는 것은 모두 AI의 학습 능력과 관련이 있다.",
+"selfGrade": true,
+"answer": "O",
+"solution": "AI는 사용자의 얼굴이 어떻게 생겼는지를 학습하여 얼굴을 인식한다. 또한 사용자가 시청한 영상에 관한 정보를 학습하여 다른 영상을 추천한다. 따라서 두 사례는 모두 AI의 학습 능력과 관련이 있으므로 주어진 진술은 본문의 내용과 일치한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2e127b1663",
+"typeId": "exam2-eng-m22-ne-u3m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 진술이 ANNIE의 설명과 일치하면 O, 일치하지 않으면 X로 판단할 때, (A)~(E)의 정오를 바르게 배열한 것은?\n\n(A) AI가 인간처럼 의사결정을 할 수 있다는 설명은 AI가 경험을 통해 배울 수 있다는 설명과 모순되지 않는다.\n(B) AI는 사용자가 시청한 영상을 학습한 결과를 다른 영상을 추천하는 데 활용할 수 있다.\n(C) AI가 사용자의 얼굴을 인식하는 것은 사용자의 얼굴이 어떻게 생겼는지 학습하는 과정과 무관하다.\n(D) AI가 제공한 정보의 정확성을 확인하는 것과 그 정보를 무비판적으로 옮겨 쓰지 않는 것은 모두 ANNIE의 조언에 부합한다.\n(E) AI와 반려견의 학습 사례가 비교된 것은 두 대상에게 동일한 보상 방식이 필요하다는 점을 강조하기 위해서이다.",
+"choices": [
+"O - X - X - O - O",
+"X - O - O - O - X",
+"O - O - X - O - X",
+"O - O - O - X - X",
+"X - O - X - X - O"
+],
+"answer": "③",
+"solution": "(A) AI는 경험을 통해 배울 수 있으며 인간처럼 의사결정을 할 수도 있으므로 두 설명은 서로 모순되지 않는다. (O)\n(B) AI는 사용자가 시청한 영상에 관한 정보를 학습하고 이를 영상 추천에 활용할 수 있다. (O)\n(C) AI는 사용자의 얼굴이 어떻게 생겼는지를 학습하여 얼굴을 인식하므로 얼굴 인식과 학습은 관련이 있다. (X)\n(D) ANNIE는 AI가 제공하는 정보의 정확성을 확인하고 그 정보를 무비판적으로 옮겨 쓰지 말라고 조언한다. 두 태도는 모두 본문의 조언에 부합한다. (O)\n(E) AI에게는 반려견과 달리 간식을 줄 필요가 없다고 설명하므로 동일한 보상 방식이 필요하다는 진술은 적절하지 않다. (X)\n따라서 올바른 배열은 O - O - X - O - X이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7e331fb88c",
+"typeId": "exam2-eng-m22-ne-u3m0s1t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음은 ANNIE의 설명에 대한 학생들의 이해이다. 본문의 내용과 일치하면 O, 일치하지 않으면 X로 판단할 때, X에 해당하는 것만을 있는 대로 고른 것은?\n\n(A) AI와 반려견의 학습을 비교한 설명으로부터 AI가 경험을 통해 배우기 위해 반드시 반려견과 같은 보상을 받아야 하는 것은 아님을 알 수 있다.\n(B) 얼굴 인식과 영상 추천의 사례는 AI가 학습을 통해 수행할 수 있는 일이 서로 다른 분야에 걸쳐 있음을 보여 준다.\n(C) AI가 인간처럼 의사결정을 할 수 있다는 설명은 AI의 의사결정에 활용되는 정보의 정확성을 사용자가 별도로 확인할 필요가 없음을 의미한다.\n(D) AI가 제공한 정보의 정확성을 확인하라는 조언은 해당 정보가 정확하다고 판단되면 그대로 옮겨 써도 된다는 것을 전제로 한다.\n(E) 얼굴 인식의 사례와 달리 영상 추천의 사례는 AI가 사용자의 경험에 관한 정보를 학습하지 않고도 적절한 결과를 제공할 수 있음을 보여 준다.",
+"choices": [
+"(A), (C), (D)",
+"(A), (D), (E)",
+"(B), (C), (E)",
+"(B), (D), (E)",
+"(C), (D), (E)"
+],
+"answer": "⑤",
+"solution": "(A) ANNIE는 AI도 경험을 통해 배울 수 있지만 반려견처럼 간식을 줄 필요는 없다고 설명한다. 따라서 본문의 내용과 일치한다. (O)\n(B) 얼굴 인식과 영상 추천은 AI의 학습 능력이 서로 다른 목적에 활용되는 사례이므로 본문의 내용과 일치한다. (O)\n(C) AI의 의사결정 능력이 AI가 활용하거나 제공하는 정보의 정확성을 보장하는 것은 아니다. ANNIE는 AI가 제공하는 정보의 정확성을 확인하라고 조언하므로 적절하지 않은 이해이다. (X)\n(D) 정보의 정확성을 확인하는 것과 정보를 무비판적으로 옮겨 쓰지 않는 것은 별개의 조언이다. 정보가 정확하더라도 이를 무비판적으로 옮겨 써도 된다는 의미는 아니므로 본문의 내용과 일치하지 않는다. (X)\n(E) 영상 추천 역시 사용자가 시청한 영상에 관한 정보의 학습과 관련이 있으므로 본문의 내용과 일치하지 않는다. (X)\n따라서 X에 해당하는 것은 (C), (D), (E)이므로 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-45e7eede9f",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 중 어법상 옳은 문장을 고르시오.",
+"choices": [
+"The app lets people who have an account to borrow bikes easily.",
+"I look forward to using the backpack which I received yesterday.",
+"Checking the bikes that are near the station are important.",
+"The QR code makes the lock to open without using a key.",
+"Anyone who wants to ride a bike can borrow one without to pay."
+],
+"answer": "②",
+"solution": "②의 look forward to에서 to는 전치사이므로 뒤에 동명사 using을 쓰는 것이 옳다. which는 사물인 the backpack을 선행사로 하는 목적격 관계대명사이므로 올바르게 쓰였다. ①은 사역동사 let의 목적격 보어로 동사원형을 써야 하므로 to borrow를 borrow로 고쳐야 한다. ③은 문장의 주어가 동명사구 Checking the bikes that are near the station이므로 주절의 동사 are를 is로 고쳐야 한다. 관계절 안의 are는 선행사 the bikes가 복수이므로 옳다. ④는 사역동사 make의 목적격 보어로 동사원형을 써야 하므로 to open을 open으로 고쳐야 한다. ⑤는 전치사 without 뒤에 동명사가 와야 하므로 to pay를 paying으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-16e5394393",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 (a)~(e)에 관한 설명으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\nPeople sometimes give away things (a) that they no longer need. I found a (b) post about a backpack. I could get it without (c) paying any money. The backpack was in good (d) condition, and getting it made me (e) want to share my own things with others.\n\n<보기>\nㄱ. (a)는 관계절에서 목적어 역할을 하며, which로 바꾸거나 생략할 수 있다.\nㄴ. (b)는 문맥상 인터넷에 올린 글을 의미하며, 명사로 쓰였다.\nㄷ. (c)는 Getting the backpack was easy.의 Getting과 문장 내 역할이 같다.\nㄹ. (d)는 문맥상 배낭을 얻기 위해 충족해야 하는 조건을 의미한다.\nㅁ. (e)는 made의 목적격 보어이며, 뒤의 to share는 want의 목적어 역할을 한다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ. 옳다. that은 사물인 things를 선행사로 하고 관계절에서 need의 목적어 역할을 하는 목적격 관계대명사이다. 따라서 which로 바꾸거나 생략할 수 있다.\nㄴ. 옳다. post는 문맥상 인터넷 게시글을 의미하며, 관사 a 뒤에서 명사로 쓰였다.\nㄷ. 옳지 않다. paying과 Getting은 모두 동명사이지만 문장 내 역할이 다르다. paying은 전치사 without의 목적어 역할을 하고, Getting the backpack은 문장 전체의 주어 역할을 하는 동명사구이다.\nㄹ. 옳지 않다. condition은 여러 의미를 지니지만, in good condition에서는 물건의 상태를 의미한다. 따라서 배낭의 상태가 좋았다는 뜻이다.\nㅁ. 옳다. made me want는 「make+목적어+동사원형」의 구조이다. want는 목적격 보어이며, to share my own things with others는 want의 목적어 역할을 하는 to부정사구이다.\n따라서 옳은 설명은 ㄱ, ㄴ, ㅁ이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8444d53941",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 바꿔 쓴 문장이 원래 문장과 의미가 같고 어법상으로도 옳은 것의 개수를 고르시오.\n\n<보기>\nㄱ. My old backpack was bigger than the backpack I got.\n→ The backpack I got was not as big as my old one.\n\nㄴ. The app lets people borrow bikes easily.\n→ The app allows people borrowing bikes easily.\n\nㄷ. I checked the bike carefully before riding it to the park.\n→ Before I rode the bike to the park, I checked it carefully.\n\nㄹ. I got a backpack without spending any money.\n→ I got a backpack without having to spend much money.\n\nㅁ. The experience caused me to think about sharing my things with others.\n→ The experience made me think about sharing my things with others.\n\nㅂ. I was looking forward to using the backpack for school.\n→ I was used to using the backpack for school.",
+"choices": [
+"1개",
+"2개",
+"3개",
+"4개",
+"5개"
+],
+"answer": "③",
+"solution": "ㄱ. 두 조건을 모두 충족한다. 「A is bigger than B」는 「B is not as big as A」로 바꿔 쓸 수 있다. 원래 문장과 바꿔 쓴 문장 모두 기존 배낭이 새로 얻은 배낭보다 크다는 의미이다.\nㄴ. 어법상 옳지 않다. let은 목적격 보어로 동사원형을 취하지만, allow는 목적격 보어로 to부정사를 취한다. 따라서 borrowing을 to borrow로 고쳐야 한다.\nㄷ. 두 조건을 모두 충족한다. before riding it to the park에서 riding의 의미상 주어는 주절의 주어 I이다. 이를 before I rode the bike to the park라는 부사절로 바꾸어도 행동의 주체와 시간적 선후 관계가 유지된다.\nㄹ. 어법상 옳지만 의미가 같지 않다. without spending any money는 돈을 전혀 쓰지 않았다는 의미인 반면, without having to spend much money는 많은 돈을 쓸 필요가 없었다는 의미이므로 적은 돈을 썼을 가능성을 배제하지 않는다.\nㅁ. 두 조건을 모두 충족한다. cause는 목적격 보어로 to부정사를 취하고, 사역동사 make는 목적격 보어로 동사원형을 취한다. 두 문장 모두 그 경험으로 인해 자신의 물건을 다른 사람들과 나누는 것에 대해 생각하게 되었다는 의미이다.\nㅂ. 어법상 옳지만 의미가 같지 않다. look forward to -ing는 '~하기를 기대하다'라는 의미이고, be used to -ing는 '~하는 데 익숙하다'라는 의미이다. 두 표현 모두 to가 전치사이므로 뒤에 동명사가 오지만 의미는 서로 다르다.\n따라서 두 조건을 모두 충족하는 것은 ㄱ, ㄷ, ㅁ으로 총 3개이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2ff61f013c",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글을 읽고 물음에 답하시오.\n\nBefore heading for the park, Jimin checked the bike. Everything looked fine. Upon arriving at the park, Jimin returned the bike to a station there. Jimin thought using the bike was easy and felt happy about helping the environment.\n\n윗글의 내용과 일치하는 것은?",
+"choices": [
+"지민이는 공원에 도착한 뒤 자전거를 점검했다.",
+"지민이는 공원에 있는 대여소에서 자전거를 빌렸다.",
+"지민이는 자전거의 상태에 문제가 있다고 생각했다.",
+"지민이는 공원으로 향하기 전에 자전거를 점검했다.",
+"지민이는 자전거 이용에 어려움을 느꼈다."
+],
+"answer": "④",
+"solution": "첫 번째 문장의 Before heading for the park, Jimin checked the bike.에서 지민이가 공원으로 향하기 전에 자전거를 점검했음을 알 수 있으므로 ④가 정답이다. ① 자전거를 점검한 시점은 공원에 도착하기 전이다. ② 공원에 있는 대여소에서는 자전거를 반납했다. ③ Everything looked fine.에서 자전거의 상태가 양호했음을 알 수 있다. ⑤ 지민이는 자전거를 이용하는 것이 쉽다고 생각했다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-74c03f7e17",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 물음에 답하시오.\n\nThrough an app, people can give away things they no longer need. Jimin found a post about a backpack that someone was giving away. The backpack looked as good as a new one. Although the backpack Jimin received was smaller than the old one, it was in great condition. Jimin liked its color and was looking forward to using it for school. Getting the backpack without paying for it made Jimin think about sharing personal belongings with others, too.\n\n윗글에서 확인할 수 있는 사실과 추론할 수 있는 내용을 바르게 판단한 것만을 <보기>에서 있는 대로 고른 것은?\n\n<보기>\nㄱ. The comparison with a new backpack describes its appearance rather than establishing whether it had been used before.\nㄴ. Jimin's satisfaction with the backpack suggests that its smaller size was the main reason for preferring it to the old one.\nㄷ. The difference in size and Jimin's positive response can be understood together without assuming that the received backpack was better in every respect.\nㄹ. Jimin's interest in sharing belongings can be understood as a reason for seeking the backpack through the app in the first place.\nㅁ. Receiving something for free led Jimin to consider sharing belongings, although the passage does not establish whether this thought resulted in action.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ. 옳다. looked as good as a new one은 백팩의 외관이 새것만큼 좋아 보였다는 의미이지, 이전 사용 여부를 확정하는 표현은 아니다.\nㄴ. 틀리다. 지민이는 백팩의 상태와 색깔을 긍정적으로 평가했지만, 작은 크기가 선호의 주된 이유였는지 또는 새로 받은 백팩을 기존 백팩보다 더 선호했는지는 알 수 없다.\nㄷ. 옳다. Although가 이끄는 양보절은 크기가 더 작았다는 사실과 백팩의 상태가 좋았다는 사실을 함께 제시한다. 지민이의 긍정적인 반응을 근거로 모든 측면에서 기존 백팩보다 우수하다고 판단할 필요는 없다.\nㄹ. 틀리다. 마지막 문장에서 무료로 백팩을 받은 경험이 자신의 물건을 다른 사람과 나누는 것에 관해 생각하게 했다고 설명한다. 따라서 공유에 대한 관심을 백팩을 구하게 된 최초의 동기로 해석하는 것은 근거가 부족하며, 본문에 제시된 인과 관계의 방향도 바꾸는 것이다.\nㅁ. 옳다. made Jimin think about sharing은 무료 나눔을 받은 경험이 공유에 관한 생각으로 이어졌음을 나타낸다. 그러나 실제로 자신의 물건을 나누었는지는 제시되지 않았다.\n따라서 옳은 판단은 ㄱ, ㄷ, ㅁ이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4917c08549",
+"typeId": "exam2-eng-m22-ne-u3m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 물음에 답하시오.\n\nAI can suggest videos based on the ones you have already watched. It can also learn what your face looks like and improve its ability to recognize you over time. However, you should remember that AI does not always give correct information. Checking the information is necessary. Even when it is correct, you should understand it before expressing it in your own words. Also, you should avoid sharing your personal information with AI. Following these rules can help you use AI safely and wisely.\n\n윗글의 내용으로 미루어 알 수 있는 것만을 〈보기〉에서 있는 대로 고른 것은?\n\n〈보기〉\nㄱ. Two people using the same AI may receive different video suggestions because of their different viewing histories.\nㄴ. AI's ability to learn from past experiences makes it reasonable to trust information on topics a user often asks about without checking it.\nㄷ. A student who checks and rewrites information from AI may still fail to follow the rules if the student cannot explain what it means.\nㄹ. A user can decide whether to share personal information based on how accurate AI's answers have been in the past.\nㅁ. The usefulness of AI does not remove the user's responsibility to judge and understand the information it provides.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ. 적절하다. AI는 사용자가 이전에 시청한 영상을 바탕으로 새로운 영상을 추천하므로, 서로 다른 시청 기록을 가진 두 사용자가 같은 AI를 이용하더라도 서로 다른 영상을 추천받을 수 있다.\nㄴ. 적절하지 않다. AI가 과거의 정보를 바탕으로 학습할 수 있다는 사실이 답변의 정확성을 보장하지는 않는다. 자주 질문하는 주제라도 AI가 제공한 정보의 정확성을 확인해야 한다.\nㄷ. 적절하다. 본문은 정보의 정확성을 확인하는 것뿐만 아니라 그 내용을 이해한 뒤 자기 말로 표현해야 한다고 설명한다. 따라서 정보를 확인하고 다시 표현했더라도 그 의미를 이해하지 못했다면 본문의 지침을 모두 따른 것으로 보기 어렵다.\nㄹ. 적절하지 않다. 개인정보를 AI와 공유하지 않도록 주의하라는 지침은 답변의 정확성과 별개이다. 과거 답변이 정확했다는 사실은 개인정보 공유를 정당화하는 근거가 될 수 없다.\nㅁ. 적절하다. 본문은 AI의 유용한 기능을 소개하면서도 사용자가 정보의 정확성을 직접 확인하고 그 내용을 이해해야 한다고 강조한다. 따라서 AI가 유용하더라도 정보를 판단하고 이해해야 하는 사용자의 책임은 여전히 남는다.\n그러므로 적절한 것은 ㄱ, ㄷ, ㅁ이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
+"custom": true,
+"rv": 1
 }
 ]
