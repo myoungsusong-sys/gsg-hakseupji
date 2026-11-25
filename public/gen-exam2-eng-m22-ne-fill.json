@@ -7084,5 +7084,153 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t0",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-f1ee49eb52",
+"typeId": "exam2-eng-m22-ne-u3m0s1t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음은 Lesson 8의 본문을 읽고 학생이 정리한 내용이다. 본문의 내용과 일치하면 O, 일치하지 않으면 X를 쓰시오. 전체 진술 중 일부라도 본문의 내용과 일치하지 않으면 X로 판단한다.\n\nAccording to ANNIE, AI can learn from experience and make decisions like humans. Recognizing faces and recommending videos are examples of AI using what it has learned. However, recognizing a familiar face with a mask on requires a completely different learning process from recognizing the same face without a mask.",
+"selfGrade": true,
+"answer": "X",
+"solution": "ANNIE는 AI가 경험을 통해 학습하고 인간처럼 의사 결정을 할 수 있다고 설명한다. 얼굴 인식과 영상 추천은 AI가 학습한 정보를 활용하는 사례이다. 그러나 마스크를 착용한 얼굴을 인식하는 데 마스크를 착용하지 않은 얼굴을 인식할 때와 완전히 다른 학습 과정이 필요하다는 설명은 본문에서 뒷받침되지 않는다. 따라서 전체 진술은 X이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c65e1db87f",
+"typeId": "exam2-eng-m22-ne-u3m0s1t0",
+"kind": "주관식",
+"diff": 4,
+"body": "다음은 Lesson 8의 본문에 나타난 AI의 학습 방식과 올바른 활용 태도를 종합하여 정리한 내용이다. 본문의 내용과 일치하면 O, 일치하지 않으면 X를 쓰시오. 전체 진술 중 일부라도 본문의 내용과 일치하지 않으면 X로 판단한다.\n\nAlthough ANNIE uses the example of teaching a pet dog to explain how AI learns, not every part of teaching a dog applies to AI. Similarly, even when AI successfully provides correct information, users still need to understand it and explain it in their own words.",
+"selfGrade": true,
+"answer": "O",
+"solution": "ANNIE는 AI의 학습 과정을 반려견을 가르치는 과정에 비유하지만, AI에게 간식을 줄 필요는 없다고 설명한다. 따라서 반려견을 가르치는 과정의 모든 요소가 AI의 학습에 그대로 적용되는 것은 아니다. 또한 AI가 정확한 정보를 제공하더라도 사용자는 그 정보를 이해하고 자신의 말로 설명할 수 있어야 한다. 두 진술 모두 본문에서 설명한 AI의 학습 방식과 올바른 활용 태도에 부합하므로 정답은 O이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c245948fcd",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 우리말과 영어 문장이 의미상 일치하고 어법상으로도 옳은 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. 우리가 인공지능이 제공한 모든 정보를 믿는 것이 항상 현명한 것은 아니다.\n→ It is not always wise of us to believe all the information AI provides.\nㄴ. 그녀가 어떤 정보를 공개하지 말아야 할지 결정하는 것은 어려웠다.\n→ It was difficult for her to decide what information not to share.\nㄷ. 그가 인공지능의 답변을 확인하지 않은 것은 부주의한 행동이었다.\n→ It was not careless of him to check AI's answers.\nㄹ. 비록 인공지능이 정확한 정보를 제공하더라도 우리는 그 정보의 출처를 명심해야 한다.\n→ Even if AI provides accurate information, we should keep its source in mind.\nㅁ. 그들이 인공지능이 어떻게 정보를 처리하는지 이해하는 것은 중요하다.\n→ It is important for them to understand how does AI process information.\nㅂ. 내가 어떤 정보도 공유하지 않기로 결정하는 것은 쉽지 않았다.\n→ It was easy for me to decide not to share any information.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㅂ",
+"ㄷ, ㅁ, ㅂ"
+],
+"answer": "②",
+"solution": "ㄱ은 not always가 부분 부정을 나타내고, 사람의 행동을 평가하는 wise와 의미상 주어 of us가 적절하게 사용되었다. ㄴ은 행동의 난이도를 나타내는 difficult와 for her를 바르게 사용하였으며, what information not to share는 '어떤 정보를 공개하지 말아야 할지'라는 의미이다. ㄷ은 '그가 인공지능의 답변을 확인한 것이 부주의한 행동은 아니었다.'라는 뜻으로 원래 우리말과 다르다. It was careless of him not to check AI's answers.로 고쳐야 한다. ㄹ은 even if의 양보 관계와 keep ~ in mind의 의미가 모두 적절하다. ㅁ은 간접의문문의 어순이 잘못되었다. how AI processes information으로 고쳐야 한다. ㅂ은 쉽지 않았다는 의미를 나타내기 위해 It was not easy로 써야 한다. 따라서 ㄱ, ㄴ, ㄹ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8d3f4febf1",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 기호 ⓐ~ⓕ 바로 뒤에 표시된 It 또는 it에 관한 설명으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\nⓐIt is useful for us to know how AI processes information. When AI receives a question, ⓑit uses the information available to produce an answer. However, ⓒit is not always easy for users to decide whether the answer is correct. Before sharing the answer, users should check ⓓit carefully. ⓔIt is wise of them not to share unverified information. Even if an answer looks reliable, ⓕit may contain incorrect information.\n\n<보기>\nㄱ. ⓐ와 ⓒ는 모두 가주어이며, 각 문장의 진주어에는 간접의문절이 포함되어 있다.\nㄴ. ⓑ와 ⓕ는 모두 인칭대명사이며, 두 대명사는 같은 대상을 가리킨다.\nㄷ. ⓒ의 not은 진주어인 to부정사구를 직접 부정하므로 not to decide로 위치를 바꾸어도 문장의 의미가 유지된다.\nㄹ. ⓓ와 ⓕ는 각각 앞에서 언급된 답변을 가리키며, ⓓ는 목적어, ⓕ는 주어 역할을 한다.\nㅁ. ⓔ의 of them은 to부정사의 의미상 주어를 나타내며, them은 users를 가리킨다.\nㅂ. ⓐ와 ⓔ는 모두 가주어 구문이므로 for us와 of them에서 사용된 전치사를 서로 바꾸어도 각 문장의 어법과 의미가 유지된다.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄹ, ㅂ",
+"ㄱ, ㄹ, ㅁ",
+"ㄷ, ㅁ, ㅂ"
+],
+"answer": "④",
+"solution": "ㄱ: ⓐ의 진주어는 to know how AI processes information이고, ⓒ의 진주어는 to decide whether the answer is correct이다. 두 진주어에는 각각 how와 whether가 이끄는 간접의문절이 포함되어 있으므로 옳다. ㄴ: ⓑ는 AI를, ⓕ는 an answer를 가리키므로 틀리다. ㄷ: not always easy는 '항상 쉬운 것은 아니다'라는 뜻이다. not to decide는 결정하는 행위 자체를 부정하므로 부정의 범위가 달라진다. ㄹ: ⓓ는 check의 목적어로서 the answer를 가리키고, ⓕ는 주어로서 an answer를 가리키므로 옳다. ㅁ: wise는 사람의 행동을 평가하는 형용사이므로 of them이 적절하며, them은 users를 가리킨다. ㅂ: useful과 wise는 의미상 주어를 나타내는 전치사의 사용 방식이 다르므로 전치사를 서로 바꿀 수 없다. 따라서 ㄱ, ㄹ, ㅁ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-881bc74694",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <자료>의 우리말과 <조건>에 맞게 영어 문장을 완성할 때, 빈칸 (A)~(F)에 들어갈 표현이 가장 적절하게 짝지어진 것은?\n\n<자료>\n인공지능은 우리의 일상생활에 유용하다. 그러나 우리는 인공지능을 매일 사용하더라도 안전 수칙을 명심해야 한다. 확인되지 않은 정보를 공유하지 않는 것은 우리의 현명한 행동이다. 우리가 어떤 정보를 공유하지 말아야 할지 판단하는 것이 항상 쉬운 것은 아니다.\n\n<조건>\n• (A)와 (B)는 day가 포함된 표현을 사용할 것.\n• (C)에는 두 내용 사이의 양보 관계를 나타내는 접속사를 사용할 것.\n• (D)에는 사람의 행동에 대한 평가를 나타내는 형용사와 어울리는 전치사를 사용할 것.\n• (E)에는 문장 전체의 의미를 고려하여 for 또는 of를 사용할 것.\n• (F)에는 의문사구와 to부정사의 부정형을 사용할 것.\n\nAI is useful in our (A)_____ lives. However, (C)_____ we use AI (B)_____, we should keep safety rules in mind. It is wise (D)_____ us not to share unverified information. It is not always easy (E)_____ us to decide (F)_____.\n\n※ 선지는 (A), (B), (C), (D), (E), (F)의 순서로 제시하였다.",
+"choices": [
+"everyday — every day — even if — of — for — what information not to share",
+"everyday — every day — even if — for — of — what information not to share",
+"every day — everyday — even if — of — for — what information to share",
+"everyday — every day — because — of — for — what information not to share",
+"everyday — every day — even if — of — for — what information to share"
+],
+"answer": "①",
+"solution": "(A)는 명사 lives를 수식하므로 형용사 everyday가 적절하다. (B)는 use AI를 수식하며 '매일'이라는 빈도를 나타내므로 every day가 적절하다. (C)는 인공지능을 매일 사용한다는 조건에도 불구하고 안전 수칙을 명심해야 한다는 양보 관계이므로 even if가 적절하다. (D)는 사람의 행동을 평가하는 wise와 함께 사용되므로 of가 적절하다. 반면 (E)는 판단하는 행위의 난이도를 나타내는 easy와 함께 사용되므로 for가 적절하다. (F)는 '어떤 정보를 공유하지 말아야 할지'라는 의미이므로 what information not to share가 되어야 한다. 마지막 문장의 not always는 판단하는 것이 항상 쉬운 것은 아니라는 부분 부정을, not to share는 공유 행위의 부정을 나타낸다. 따라서 모든 어휘·문법 조건과 우리말의 의미를 충족하는 것은 ①이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-984d459269",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 (가)를 (나)로 바꾸어 쓸 때, (나)가 어법상 옳고 (가)의 의미도 유지하는 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. (가) It is important for users not to share their passwords.\n    (나) For users not to share their passwords is important.\nㄴ. (가) He was careless not to check the source of the information.\n    (나) It was not careless of him to check the source of the information.\nㄷ. (가) She could not decide which information she should share.\n    (나) She could not decide which information to share.\nㄹ. (가) I don't know what information he should share.\n    (나) I don't know what information to share.\nㅁ. (가) It was wise of her not to trust every answer AI gave her.\n    (나) She was wise not to trust every answer AI gave her.\nㅂ. (가) Even if AI provides accurate information, we should check its source.\n    (나) We should check the source of AI-generated information only if it is accurate.\nㅅ. (가) It was difficult for him to decide whether the information was correct.\n    (나) It is difficult for him to decide whether the information is correct.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄹ, ㅁ",
+"ㄷ, ㅁ, ㅅ",
+"ㄴ, ㄹ, ㅂ",
+"ㄱ, ㄷ, ㅁ"
+],
+"answer": "⑤",
+"solution": "ㄱ은 가주어 It을 없애고 의미상 주어와 부정형이 포함된 to부정사구를 문장의 주어 자리에 놓은 것으로, 어법과 의미가 유지된다. ㄴ의 (가)는 출처를 확인하지 않은 행동이 부주의했다는 의미이고, (나)는 출처를 확인한 행동이 부주의하지 않았다는 의미이므로 부정의 범위가 달라진다. ㄷ은 간접의문절의 주어 she가 주절의 주어와 같고, should share가 공유할 정보에 관한 선택의 의미를 나타내므로 which information to share로 바꾸어 쓸 수 있다. ㄹ의 (가)에서 정보를 공유할 주체는 he이지만, (나)에서는 문맥상 I가 공유할 주체로 해석되므로 의미가 달라진다. ㅁ은 사람의 행동을 평가하는 가주어 구문을 사람을 주어로 하는 문장으로 전환한 것으로 부정의 범위도 유지된다. ㅂ은 even if의 양보 관계를 only if의 필요조건 관계로 바꾸어 의미가 달라졌다. ㅅ은 과거의 상황을 현재의 상황으로 바꾸었으므로 원래의 시간적 의미가 유지되지 않는다. 따라서 ㄱ, ㄷ, ㅁ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a922b3c98c",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <자료>는 학생이 Lesson 8의 어휘와 문법을 복습하며 작성한 문장이다. <채점 기준>에 따라 학생이 받을 총점은?\n\n<자료>\n(A) It is important for us to decide what information not to share.\n(B) It was careless of him to reveal his password.\n(C) It is difficult of beginners to understand how AI works.\n(D) We should learn how to use AI safely in our everyday lives.\n(E) It is wise of us to keep safety rules on mind.\n(F) AI can recognize your face to unlock your smartphone.\n(G) It is not always easy for users to decide whether the information is correct.\n(H) Even if we use AI everyday, we should check its answers.\n(I) It was foolish of her to ask AI how to share her password with strangers.\n(J) It is necessary for students to know how does AI process information.\n\n<채점 기준>\n• 어휘 및 문법에 오류가 없는 문장: 각각 기본 2점\n• 어휘 또는 문법에 오류가 있는 문장: 0점이며 가산점도 부여하지 않음.\n• 가산점 ㉠: 가주어와 진주어를 사용하고 의미상 주어가 명시된 문장에 각각 1점 추가\n• 가산점 ㉡: '의문사(구)+to부정사'가 명사구로 사용된 문장에 각각 2점 추가\n• 가산점 ㉢: 가산점 ㉠과 ㉡을 모두 충족하는 문장에 각각 1점 추가\n• 모든 점수는 누적하여 합산하며, 문장 내용에 나타난 행동의 바람직함은 채점 대상에서 제외한다.",
+"choices": [
+"21점",
+"23점",
+"25점",
+"27점",
+"29점"
+],
+"answer": "②",
+"solution": "(A)는 가주어 구문과 의미상 주어 for us, 의문사구 what information not to share를 모두 바르게 사용하였다. 기본 2점과 ㉠ 1점, ㉡ 2점, ㉢ 1점을 합하여 6점이다. (B)는 careless와 of him이 적절한 가주어 구문이므로 3점이다. (C)는 difficult of beginners를 difficult for beginners로 고쳐야 하므로 0점이다. (D)는 how to use AI safely가 learn의 목적어로 사용되었으므로 4점이다. (E)는 on mind를 in mind로 고쳐야 하므로 0점이다. (F)는 문법적으로 옳지만 to unlock은 목적을 나타내는 부사적 용법이므로 기본 2점만 받는다. (G)는 가주어 구문과 의미상 주어가 사용되었으나 whether the information is correct는 간접의문절이지 '의문사(구)+to부정사'가 아니므로 3점이다. (H)는 '매일'이라는 의미의 부사구 every day를 써야 하므로 0점이다. (I)는 가주어 구문과 의미상 주어 of her, 의문사구 how to share her password with strangers를 모두 바르게 사용하였으므로 6점이다. (J)는 간접의문문의 어순이 잘못되었으므로 0점이다. 따라서 총점은 6+3+0+4+0+2+3+0+6+0=24점이다. 기존 선지에 24점이 없으므로 정답이 성립하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c14336a40f",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 문법 및 어휘에 관한 학생의 설명 자체가 옳고, 제시한 예문도 어법상 옳으며 그 설명에 부합하는 학생만을 있는 대로 고른 것은?\n\n<보기>\n지우: 사람의 행동을 평가하는 형용사를 사용한 가주어 구문에서 to부정사가 부정형이면, 의미상 주어의 행동을 부정할 수 있어.\n→ It was wise of him not to reveal his password.\n\n민서: everyday와 every day는 의미와 문법적 기능이 다르지만, everyday가 명사를 수식할 때도 every day로 바꾸어 쓸 수 있어.\n→ AI technology is useful in our everyday lives.\n\n서준: '의문사(구)+to부정사'는 동사의 목적어 역할을 할 수 있고, to부정사의 행동을 부정하려면 not을 to 앞에 놓을 수 있어.\n→ We should decide what information not to share.\n\n하은: even if가 이끄는 절은 주절의 내용이 성립하기 위한 필수 조건을 나타내므로 only if와 바꾸어 쓸 수 있어.\n→ Even if AI gives us correct information, we should check its source.\n\n도윤: 가주어 구문에 사용된 not always는 형용사가 나타내는 판단이 모든 경우에 성립하는 것은 아니라는 뜻이야. 이때 진주어의 행동 자체를 부정하는 것은 아니야.\n→ It is not always easy for us to decide which information to use.\n\n수빈: for와 of를 사용하여 to부정사의 의미상 주어를 나타낼 때, 두 전치사의 선택은 의미상 주어가 사람이냐 사물이냐에 의해서만 결정돼.\n→ It is necessary for students to check AI-generated information.",
+"choices": [
+"지우, 민서, 서준",
+"지우, 서준, 도윤",
+"민서, 하은, 수빈",
+"서준, 하은, 도윤",
+"지우, 도윤, 수빈"
+],
+"answer": "②",
+"solution": "지우의 예문에서 wise는 사람의 행동을 평가하므로 of him이 적절하고, not to reveal은 비밀번호를 공개하는 행위 자체를 부정한다. 설명과 예문이 모두 옳다. 민서의 예문은 어법상 옳지만, 형용사 everyday를 명사 앞에서 부사구 every day로 바꾸어 쓸 수 있다는 설명은 틀리다. 서준의 예문에서 what information not to share는 decide의 목적어 역할을 하며, not은 to share가 나타내는 행위를 부정한다. 하은의 예문은 어법상 옳지만, even if는 양보 관계를, only if는 필요조건 관계를 나타내므로 설명이 틀리다. 도윤의 예문에서 not always easy는 판단하는 것이 항상 쉬운 것은 아니라는 뜻이며, decide의 행위 자체를 부정하지 않는다. 따라서 설명과 예문이 모두 옳다. 수빈의 예문은 어법상 옳지만, for와 of의 선택은 의미상 주어가 사람인지 사물인지에 의해서만 결정되지 않는다. necessary, difficult 등은 일반적으로 for를 사용하고, wise, careless 등 사람의 행동을 평가하는 형용사는 of를 사용한다. 따라서 지우, 서준, 도윤만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
 }
 ]
