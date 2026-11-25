@@ -1,0 +1,176 @@
+[
+{
+"id": "fill-5ec4c12240",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 내용과 일치하지 않는 것은?\n\nI found a post about a backpack that someone wanted to give away. I contacted the person and received the backpack for free. Although it was smaller than my old one, it was in excellent condition. I especially liked its color and looked forward to using it for school.",
+"choices": [
+"백팩을 받기 전에 게시물을 발견했다.",
+"게시물을 올린 사람에게 연락했다.",
+"백팩을 받는 데 돈을 지불하지 않았다.",
+"받은 백팩은 기존 백팩보다 상태가 좋지 않았다.",
+"받은 백팩을 학교에서 사용하기를 기대했다."
+],
+"answer": "④",
+"solution": "①은 첫 번째 문장, ②와 ③은 두 번째 문장, ⑤는 마지막 문장의 내용과 일치한다. 세 번째 문장에 따르면 받은 백팩은 기존 백팩보다 크기가 작았지만 상태는 매우 좋았다. 기존 백팩과 받은 백팩의 상태를 비교한 내용은 제시되지 않았으므로 ④는 글의 내용과 일치하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1044f3da18",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글에 나타난 사건을 시간 순서대로 바르게 배열한 것은?\n\nBefore leaving for the park, I made sure that the shared bike was in good condition. I returned the bike at a station as soon as I arrived at the park. The person who had posted about the backpack met me there after I returned the bike. With the backpack in my hands, I headed home.\n\n〈보기〉\n(A) 백팩을 가지고 집으로 향함\n(B) 게시물을 올린 사람을 만남\n(C) 자전거의 상태를 확인함\n(D) 공원에 있는 대여소에 자전거를 반납함",
+"choices": [
+"(B) - (C) - (D) - (A)",
+"(C) - (B) - (D) - (A)",
+"(C) - (D) - (B) - (A)",
+"(D) - (C) - (B) - (A)",
+"(D) - (B) - (A) - (C)"
+],
+"answer": "③",
+"solution": "before leaving for the park에 따르면 공원으로 출발하기 전에 자전거의 상태를 확인했다(C). 공원에 도착하자마자 자전거를 반납했으며(D), after I returned the bike에 따르면 반납한 후 게시물을 올린 사람을 만났다(B). 마지막으로 백팩을 가지고 집으로 향했다(A). 따라서 사건의 순서는 (C)-(D)-(B)-(A)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9e7e716ef8",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 글의 내용으로부터 추론할 수 있는 것으로 가장 적절한 것은?\n\nI found a post about a backpack that someone wanted to give away. It looked almost new in the picture, so I contacted the person who posted about it. When I received the backpack, I noticed that it was smaller than my old one. However, I liked its color and was happy with its condition. I was excited about using it for school.",
+"choices": [
+"백팩의 실제 크기가 지민이가 예상한 크기와 같았다.",
+"지민이는 기존 백팩의 상태가 좋지 않아 새 백팩을 구하려 했다.",
+"지민이는 받은 백팩의 크기가 더 작았음에도 그 백팩에 만족했다.",
+"게시물에 올라온 사진을 보고 백팩이 사용된 적이 없음을 확인했다.",
+"지민이는 받은 백팩을 기존 백팩보다 오랫동안 사용했다."
+],
+"answer": "③",
+"solution": "받은 백팩은 기존 백팩보다 작았지만 지민이는 색깔과 상태에 만족했으며 학교에서 사용하기를 기대했다. 따라서 크기가 더 작았다는 점이 백팩에 대한 만족을 가로막지 않았음을 알 수 있다. ①은 예상했던 크기가 제시되지 않았고, ②는 기존 백팩의 상태와 백팩을 구하려는 이유가 제시되지 않았다. ④는 새것처럼 보였다는 사실을 실제 미사용 사실로 확대 해석한 것이다. ⑤는 실제 사용 기간이 제시되지 않아 판단할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9b61df7bda",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 〈보기〉에서 글의 내용과 일치하는 진술만을 고른 것은?\n\nSome shared bikes may be in poor condition. Luckily, the bike I checked looked fine. I rode it to the park and left it at a bike station there.\n\n〈보기〉\nㄱ. 모든 공유 자전거의 상태가 항상 좋은 것은 아니다.\nㄴ. 지민이가 확인한 자전거는 상태가 나빴다.\nㄷ. 지민이는 공원에 있는 대여소에 자전거를 반납했다.\nㄹ. 지민이는 자전거를 반납한 뒤 공원으로 이동했다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ",
+"ㄱ, ㄷ"
+],
+"answer": "⑤",
+"solution": "공유 자전거 중에는 상태가 좋지 않은 것도 있지만 지민이가 점검한 자전거는 상태가 괜찮았다. 또한 공원에 도착한 뒤 그곳의 대여소에 자전거를 반납했으므로 ㄱ과 ㄷ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-3906883efe",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 내용을 한 문장으로 요약할 때 빈칸 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nI got a backpack without paying for it. It was smaller than my old one, but I was pleased with its condition and color. This experience encouraged me to give away things that I no longer needed.\n\nAlthough the backpack was (A) than the old one, Jimin was (B) with it and became more willing to (C) unused belongings with others.",
+"choices": [
+"smaller — satisfied — share",
+"smaller — disappointed — share",
+"larger — satisfied — share",
+"smaller — satisfied — exchange",
+"larger — disappointed — exchange"
+],
+"answer": "①",
+"solution": "받은 백팩은 기존 백팩보다 작으므로 (A)에는 smaller가 알맞다. 상태와 색깔에 만족했으므로 (B)에는 satisfied가 알맞다. 마지막 문장은 더 이상 필요하지 않은 물건을 다른 사람에게 나누어 주려는 마음이 생겼음을 나타내므로 (C)에는 share가 알맞다. exchange는 물건을 서로 교환한다는 의미로, 대가 없이 나누어 주는 원문의 의미와 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b1df3efa66",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 글의 내용을 요약한 문장의 빈칸 (A), (B)에 들어갈 알맞은 단어를 쓰시오.\n\nJimin got a backpack without paying any money. It was not as large as Jimin's old backpack, but it was in excellent condition. Jimin was happy with the backpack and hoped to use it for school.\n\nDespite its smaller size, the backpack made Jimin happy because its (A) was excellent. Jimin also hoped to use it for (B).\n\n〈조건〉\n• 본문에 나온 단어를 사용할 것.\n• 각 빈칸에 한 단어씩 쓸 것.",
+"selfGrade": true,
+"answer": "(A) condition / (B) school",
+"solution": "본문에서 받은 백팩은 기존 백팩보다 작았지만 상태가 매우 좋았으며 지민이는 백팩에 만족했다. 따라서 백팩의 상태를 나타내는 condition이 (A)에 들어간다. 마지막 문장에서 학교에서 백팩을 사용하기를 희망했다고 했으므로 (B)에는 school이 들어간다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-24eed148b4",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고 사건의 시간 관계와 인과 관계에 대한 설명으로 옳은 것만을 〈보기〉에서 고른 것은?\n\nSince shared bikes are not always in good condition, I checked the bike before riding it. Finding nothing wrong with it, I rode to the park. I returned the bike at a station there before meeting the person who had posted about the backpack. After receiving the backpack, I went home.\n\n〈보기〉\nㄱ. 공유 자전거의 상태가 좋지 않을 가능성이 자전거를 점검한 이유였다.\nㄴ. 자전거에 문제가 없다는 사실을 확인한 것은 공원에 도착한 이후였다.\nㄷ. 백팩을 올린 사람을 만나기 전에 자전거 반납을 마쳤다.\nㄹ. 백팩을 받은 것이 자전거를 반납하게 된 직접적인 원인이었다.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ"
+],
+"answer": "②",
+"solution": "ㄱ. Since절은 공유 자전거의 상태가 항상 좋은 것은 아니라는 점을 점검의 이유로 제시하므로 옳다. ㄴ. 자전거에 문제가 없음을 확인한 뒤 공원으로 이동했으므로 틀리다. ㄷ. before meeting the person에 따르면 게시물을 올린 사람을 만나기 전에 자전거를 반납했으므로 옳다. ㄹ. 자전거 반납은 백팩을 받기 전에 이루어졌으며 백팩 수령이 자전거 반납의 직접적인 원인이라는 설명은 없으므로 틀리다. 따라서 ㄱ과 ㄷ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ca0c6eddd3",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약할 때 빈칸 (A)~(C)에 들어갈 말로 가장 알맞은 것은?\n\nThe backpack in the post looked almost new. When I received it, I found that it was smaller than my old one. Still, I was pleased with its condition and color. I had paid nothing for something that I could use at school. This made me think that things I no longer needed might also be useful to someone else.\n\nJimin's satisfaction with the backpack was not reduced by its (A), and the experience led Jimin to recognize the (B) of unused belongings and consider (C).",
+"choices": [
+"smaller size — value to others — sharing personal items",
+"smaller size — value to others — buying more used items",
+"physical condition — value to others — sharing personal items",
+"smaller size — limited usefulness — sharing personal items",
+"physical condition — limited usefulness — buying more used items"
+],
+"answer": "①",
+"solution": "받은 백팩은 기존 백팩보다 작았지만 지민이는 상태와 색깔에 만족했으므로 (A)에는 smaller size가 알맞다. 자신에게 필요하지 않은 물건도 다른 사람에게는 유용할 수 있다고 생각했으므로 (B)에는 value to others가 알맞다. 이러한 깨달음은 자신의 물건도 다른 사람에게 나누어 주는 것을 고려하게 된 계기이므로 (C)에는 sharing personal items가 알맞다. 중고 물건을 추가로 구매하려 했거나 필요 없는 물건의 유용성이 제한적이라고 판단했다는 내용은 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-78c414e4d2",
+"typeId": "exam2-eng-m22-ne-u2m0s1t3",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글을 읽고 글의 내용으로부터 판단할 수 있는 것만을 〈보기〉에서 고른 것은?\n\nThe backpack looked as good as a new one in the post. When I received it, I noticed that it was smaller than my old one, although its condition was excellent. I liked its color and looked forward to using it for school. Until then, I had never thought seriously about giving away my own belongings. Getting something useful for free made me realize that things I no longer needed could be valuable to someone else.\n\n〈보기〉\nㄱ. 게시물에 나타난 백팩의 외관만으로는 실제 사용 여부를 확정할 수 없다.\nㄴ. 지민이는 받은 백팩의 크기를 기존 백팩과 비교했지만 두 백팩의 구체적인 크기는 알 수 없다.\nㄷ. 지민이가 학교에서 백팩을 사용할 생각이었다는 사실로부터 기존 백팩을 더 이상 사용하지 않기로 했음을 알 수 있다.\nㄹ. 지민이는 자신에게 필요하지 않은 물건도 다른 사람에게 가치가 있을 수 있다는 사실을 깨달았다.\nㅁ. 지민이가 이전에는 자신의 물건을 나누어 주는 일을 진지하게 생각하지 않았다는 사실로부터 이전에 물건을 나누어 준 경험이 전혀 없었음을 알 수 있다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㅁ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ. looked as good as a new one은 외관이 새것처럼 보였다는 뜻이므로 실제 사용 여부는 확인할 수 없다. ㄴ. smaller than을 통해 상대적인 크기 관계는 알 수 있지만 구체적인 크기나 수치는 제시되지 않았다. ㄷ. 받은 백팩의 사용을 기대했다는 것이 기존 백팩의 사용 중단을 의미하지는 않는다. ㄹ. 마지막 문장에서 자신에게 필요 없는 물건도 다른 사람에게 가치가 있을 수 있음을 깨달았다고 했으므로 옳다. ㅁ. 이전에 공유를 진지하게 생각하지 않았다는 사실과 이전에 공유한 경험이 전혀 없다는 사실은 서로 다르다. 따라서 ㄱ, ㄴ, ㄹ만 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t3",
+"custom": true,
+"rv": 1
+}
+]
