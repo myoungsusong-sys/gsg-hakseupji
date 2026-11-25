@@ -8106,5 +8106,319 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t3",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-132f37168a",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>의 괄호 안에 주어진 동사를 어법에 맞는 형태로 써넣을 때, 그 형태가 나머지 넷과 다른 것은?\n\n<보기>\n(A) The app allows people to (share) their things.\n(B) The app makes it easy to (buy) secondhand items.\n(C) Let me (explain) how the sharing economy works.\n(D) I looked forward to (ride) the shared bike.\n(E) This makes the lock (open).",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "(A)와 (B)의 to는 to부정사를 만드는 요소이므로 각각 share와 buy를 쓴다. (C)와 (E)는 사역동사 let과 make의 목적격보어 자리이므로 각각 동사원형 explain과 open을 쓴다. 반면 (D)의 look forward to에서 to는 전치사이므로 뒤에 동명사 riding을 써야 한다. 따라서 괄호 안에 들어갈 동사의 형태가 나머지 넷과 다른 것은 (D)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-e170df93a7",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 우리말과 영어 문장의 의미가 일치하고 어법상으로도 옳은 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. 그 앱은 사람들이 중고 물품을 팔 수 있게 해 준다.\n→ The app allows people to sell secondhand items.\nㄴ. 나는 돈을 쓰지 않고 백팩을 얻었다.\n→ I got a backpack without spending money.\nㄷ. 그 백팩은 새것만큼 좋아 보였다.\n→ The backpack looked as well as a new one.\nㄹ. 나는 버스를 타는 대신 자전거를 빌리기로 했다.\n→ I decided to borrow a bike instead of taking a bus.\nㅁ. 이것은 자전거의 잠금장치가 열리게 한다.\n→ This makes the bike’s lock to open.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄴ, ㄹ, ㅁ",
+"ㄱ, ㄴ, ㄷ, ㄹ"
+],
+"answer": "①",
+"solution": "allow의 목적격보어에는 to부정사를 쓰고, 전치사 without과 instead of 뒤에는 동명사를 쓰므로 ㄱ, ㄴ, ㄹ은 옳다. ㄷ은 상태를 나타내는 감각동사 look의 보어이므로 well을 good으로 고쳐야 한다. ㅁ은 사역동사 make의 목적격보어이므로 to open을 open으로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b9c950bb44",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>에서 번호가 붙은 표현을 <수정 조건>에 따라 검토한 후, 수정이 필요한 표현만을 <분류 기준>에 따라 분류한 결과로 옳은 것은?\n\n<보기>\nㄱ. The app allows users ㉠ sell secondhand items without ㉡ spending much money.\nㄴ. Let me ㉢ to explain how the sharing economy works.\nㄷ. The backpack looked as ㉣ well as a new one.\nㄹ. I looked forward to ㉤ use the backpack for school instead of ㉥ buying a new one.\nㅁ. The app makes it easy ㉦ find useful items.\nㅂ. ㉧ Share things with others is a good way to save money.\nㅅ. This makes the bike's lock ㉨ open.\nㅇ. My brother enjoys ㉩ to use shared bikes.\nㅈ. The new backpack is not as ㉪ heavy as my old one.\n\n<수정 조건>\n• 문장의 핵심 의미를 유지한다.\n• 번호가 붙은 표현만 수정한다.\n• 이미 어법상 옳은 표현은 수정하지 않는다.\n• ㉧은 동명사로 수정한다.\n• 수정할 때 주어진 동사와 형용사의 기본 의미를 유지한다.\n\n<분류 기준>\n(A) 목적격보어인 to부정사\n(B) 가목적어 it에 대응하는 진목적어인 to부정사\n(C) 사역동사의 목적격보어인 동사원형\n(D) 전치사의 목적어인 동명사\n(E) 문장의 주어인 동명사\n(F) 동사의 목적어인 동명사\n(G) 원급 비교에 쓰인 형용사",
+"choices": [
+"(A) ㉠ / (B) ㉦ / (C) ㉢ / (D) ㉤ / (E) ㉧ / (F) ㉩ / (G) ㉣, ㉪",
+"(A) ㉦ / (B) ㉠ / (C) ㉢ / (D) ㉤ / (E) ㉧ / (F) ㉩ / (G) ㉣",
+"(A) ㉠ / (B) ㉦ / (C) ㉢ / (D) ㉤, ㉩ / (E) ㉧ / (F) 없음 / (G) ㉣",
+"(A) ㉠ / (B) ㉦ / (C) ㉢, ㉨ / (D) ㉤ / (E) ㉩ / (F) ㉧ / (G) ㉣",
+"(A) ㉠ / (B) ㉦ / (C) ㉢ / (D) ㉤ / (E) ㉧ / (F) ㉩ / (G) ㉣"
+],
+"answer": "⑤",
+"solution": "먼저 수정이 필요한 표현을 찾으면 ㉠, ㉢, ㉣, ㉤, ㉦, ㉧, ㉩이다. ㉠은 to sell로 수정하며 allow의 목적격보어이므로 (A)에 해당한다. ㉦은 to find로 수정하며 가목적어 it에 대응하는 진목적어이므로 (B)에 해당한다. ㉢은 explain으로 수정하며 사역동사 let의 목적격보어이므로 (C)에 해당한다. ㉤은 using으로 수정하며 전치사 to의 목적어이므로 (D)에 해당한다. ㉧은 Sharing으로 수정하며 문장의 주어이므로 (E)에 해당한다. ㉩은 using으로 수정하며 enjoy의 목적어이므로 (F)에 해당한다. ㉣은 good으로 수정하며 원급 비교에 쓰인 형용사이므로 (G)에 해당한다. ㉡, ㉥, ㉨, ㉪은 이미 어법상 옳으므로 분류 대상에서 제외한다. 따라서 정답은 ⑤이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9738825ac3",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 학생이 우리말을 영어로 옮긴 결과이다. 번호가 붙은 표현을 <수정 조건>에 따라 수정한 후, <채점 기준>을 적용하여 얻은 전체 수정 점수로 옳은 것은?\n\n<보기>\nㄱ. 그 앱은 사람들이 중고 물품을 사고팔 수 있게 해 준다.\n→ The app allows people ㉠ buy and sell secondhand items.\nㄴ. 나는 돈을 전혀 쓰지 않고 백팩을 얻었다.\n→ I got a backpack ㉡ with spending any money.\nㄷ. 그 백팩은 내 예전 것만큼 크지 않았다.\n→ The backpack was ㉢ as bigger as my old one.\nㄹ. 내 경험에 관해 이야기해 줄게.\n→ Let me ㉣ to tell you about my experience.\nㅁ. 나는 그 백팩을 학교에서 사용하기를 기대했다.\n→ I looked forward to ㉤ using the backpack for school.\nㅂ. 나는 버스를 타는 대신 자전거를 빌리기로 했다.\n→ I decided to borrow a bike instead of ㉥ take a bus.\nㅅ. 이것은 자전거의 잠금장치가 열리게 한다.\n→ This makes the bike's lock ㉦ to open.\nㅇ. 그 앱은 유용한 물건을 찾는 것을 쉽게 해 준다.\n→ The app makes it ㉧ easily find useful items.\nㅈ. 나는 그 중고 백팩이 새것만큼 좋아 보인다고 생각했다.\n→ I thought the secondhand backpack looked as ㉨ good as a new one.\n\n<수정 조건>\n• 우리말의 의미와 일치하고 어법상 옳도록 수정한다.\n• 번호가 붙은 부분만 수정한다.\n• 수정 횟수를 최소화한다.\n• 원급 비교 구문과 제시된 주요 동사는 유지한다.\n• 가목적어 it이 사용된 문장에서는 to부정사를 진목적어로 사용한다.\n• 이미 의미와 어법이 모두 옳은 표현은 수정하지 않는다.\n\n<채점 기준>\n(A) to를 추가하면 3점\n(B) to를 삭제하면 2점\n(C) 동사원형을 동명사로 바꾸면 2점\n(D) 비교급을 형용사의 원급으로 바꾸면 1점\n(E) 전치사를 다른 전치사로 바꾸면 2점\n(F) not을 추가하면 2점\n(G) 부사를 형용사로 바꾸면 1점\n※ 하나의 번호에 서로 다른 수정 항목이 적용되면 해당 점수를 모두 합산한다.\n※ 수정하지 않은 표현은 0점으로 처리한다.",
+"choices": [
+"15점",
+"16점",
+"17점",
+"18점",
+"19점"
+],
+"answer": "④",
+"solution": "㉠은 buy and sell을 to buy and sell로 수정하므로 (A) 3점이다. ㉡은 with를 without으로 수정하므로 (E) 2점이다. ㉢은 as bigger를 not as big으로 수정한다. not 추가로 (F) 2점, 비교급 bigger를 원급 big으로 수정하여 (D) 1점을 얻으므로 총 3점이다. ㉣은 to tell을 tell로 수정하므로 (B) 2점이다. ㉤은 이미 옳으므로 0점이다. ㉥은 take를 taking으로 수정하므로 (C) 2점이다. ㉦은 to open을 open으로 수정하므로 (B) 2점이다. ㉧은 easily find를 easy to find로 수정한다. 부사를 형용사로 수정하여 (G) 1점, to를 추가하여 (A) 3점을 얻으므로 총 4점이다. ㉨은 이미 옳으므로 0점이다. 따라서 전체 수정 점수는 3+2+3+2+0+2+2+4+0=18점이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-db4d144f32",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <문장 변환 과제>를 수행한 학생들의 답안 중 <공통 조건>과 각 과제의 <개별 조건>을 모두 충족한 답안만을 있는 대로 고른 것은?\n\n<문장 변환 과제>\n(A) The app lets people sell secondhand items without spending money on advertising.\n(B) I decided to borrow a bike rather than take a bus, and I was excited about the idea of riding it to school.\n(C) My old backpack was bigger than the secondhand backpack, but the secondhand backpack looked as good as a new one.\n(D) The app makes it possible for users to find useful items easily.\n\n<공통 조건>\n• 원래 문장의 핵심 의미와 시제를 유지할 것.\n• 지정된 표현을 모두 사용할 것.\n• 원래 문장에 포함된 정보나 의미 관계를 빠뜨리지 않을 것.\n• 모든 부분이 어법상 옳을 것.\n\n<개별 조건>\n(A) let을 allow로 바꾸고, without을 유지할 것.\n(B) instead of와 look forward to를 모두 사용할 것.\n(C) 첫 번째 절을 the secondhand backpack을 주어로 하는 not as ~ as 구문으로 바꾸고, 두 번째 절의 원급 비교를 유지할 것.\n(D) 가목적어 it을 사용하지 않고 allow와 to부정사를 사용할 것.\n\n<학생들의 답안>\nㄱ. (A) The app allows people to sell secondhand items without spending money on advertising.\nㄴ. (B) I decided to borrow a bike instead of taking a bus, and I looked forward to ride it to school.\nㄷ. (C) The secondhand backpack was not as big as my old one, but it looked as good as a new one.\nㄹ. (D) The app allows users to find useful items easily.\nㅁ. (B) I decided to take a bus instead of borrowing a bike, and I looked forward to riding the bike to school.\nㅂ. (C) The secondhand backpack was not as big as my old one, but it looked as well as a new one.\nㅅ. (A) The app allows people to sell secondhand items without spending money.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㄹ, ㅅ",
+"ㄱ, ㄹ, ㅂ, ㅅ"
+],
+"answer": "②",
+"solution": "ㄱ은 allow의 목적격보어로 to sell을 사용하고 without 뒤에 동명사 spending을 사용하였다. 광고에 돈을 쓰지 않는다는 정보도 유지하므로 옳다. ㄴ은 instead of taking은 옳지만 look forward to의 to가 전치사이므로 ride를 riding으로 수정해야 한다. ㄷ은 예전 백팩이 더 크다는 원문의 비교 관계를 중고 백팩이 예전 백팩만큼 크지 않다는 부정 원급 비교로 정확하게 전환하였다. 또한 look의 보어로 형용사 good을 사용하고 두 번째 절의 의미도 유지하였다. ㄹ은 가목적어 it을 사용한 문장을 allow+목적어+to부정사 구문으로 정확하게 바꾸었으며 easily를 유지하여 의미도 보존하였다. ㅁ은 문법적으로 옳지만 버스 대신 자전거를 빌리기로 했다는 원문의 선택 관계를 반대로 바꾸었다. ㅂ은 감각동사 look의 보어 자리에 부사 well을 사용하였으므로 틀리다. ㅅ은 광고에 돈을 쓰지 않는다는 한정된 의미를 돈을 전혀 쓰지 않는다는 의미로 바꾸었으므로 틀리다. 따라서 ㄱ, ㄷ, ㄹ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-03304a2a34",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 빈칸 (A)~(J)에 주어진 단어를 우리말의 의미와 일치하도록 어법에 맞는 형태로 써넣은 후, <판정 기준>에 따라 기호를 부여하고 <배열 조건>에 따라 나열한 것으로 옳은 것은?\n\n<보기>\n(A) 그 앱은 내가 중고 물품을 살 수 있게 해 준다.\nThe app allows me ______ secondhand items. (buy)\n(B) 그 백팩은 새것만큼 좋아 보였다.\nThe backpack looked as ______ as a new one. (good)\n(C) 공유 경제에 관해 이야기해 줄게.\nLet me ______ you about the sharing economy. (tell)\n(D) 나는 돈을 쓰지 않고 그 백팩을 얻었다.\nI got the backpack without ______ money. (spend)\n(E) 이것은 자전거의 잠금장치가 열리게 한다.\nThis makes the bike's lock ______. (open)\n(F) 나는 그 백팩을 학교에서 사용하기를 기대했다.\nI looked forward to ______ the backpack for school. (use)\n(G) 그 앱은 유용한 물건을 찾는 것을 쉽게 해 준다.\nThe app makes it easy ______ useful items. (find)\n(H) 나는 중고 물품을 찾는 것을 즐긴다.\nI enjoy ______ for secondhand items. (look)\n(I) 물건을 공유하는 것은 돈을 절약하는 좋은 방법이다.\n______ things is a good way to save money. (share)\n(J) 나는 중고 자전거를 사기 위해 그 가게에 갔다.\nI went to the store ______ a secondhand bike. (buy)\n\n<판정 기준>\nT: to부정사\nR: 사역동사의 목적격보어인 동사원형\nG: 동명사\nA: 원급 비교에 쓰인 형용사\n\n<배열 조건>\n• 먼저 문장의 주성분이나 목적격보어가 되는 표현의 기호를 빈칸의 알파벳순으로 나열한다. 단, 가목적어에 대응하는 진목적어도 목적어로 분류한다.\n• 다음으로 전치사의 목적어가 되는 표현의 기호를 알파벳순으로 나열한다.\n• 마지막으로 목적을 나타내는 부사적 용법의 to부정사에 해당하는 표현의 기호를 나열한다.\n• (I)에는 반드시 동명사를 쓴다.",
+"choices": [
+"T-A-R-R-T-G-G-G-G-T",
+"T-A-R-R-G-T-G-G-G-T",
+"T-A-R-G-R-T-G-G-G-T",
+"T-A-R-R-T-G-G-T-G-G",
+"T-A-R-R-T-G-T-G-G-G"
+],
+"answer": "①",
+"solution": "각 빈칸에 들어갈 표현은 (A) to buy, (B) good, (C) tell, (D) spending, (E) open, (F) using, (G) to find, (H) looking, (I) Sharing, (J) to buy이다. 형태에 따른 기호는 각각 T, A, R, G, R, G, T, G, G, T이다. 첫 번째 배열 집단에는 목적격보어인 (A), (C), (E), 주격보어인 (B), 진목적어인 (G), 동사의 목적어인 (H), 주어인 (I)가 포함된다. 이들을 알파벳순으로 나열하면 (A)-(B)-(C)-(E)-(G)-(H)-(I)이므로 T-A-R-R-T-G-G이다. 두 번째 집단은 전치사 without과 to의 목적어인 (D), (F)이므로 G-G이다. 마지막 집단은 가게에 간 목적을 나타내는 부사적 용법의 to부정사 (J)이므로 T이다. 따라서 전체 배열은 T-A-R-R-T-G-G-G-G-T이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-9eb691658b",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <원문>을 <변환 지시>에 따라 바꾼 학생의 답안을 평가한 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<원문>\n(A) The app allows users to buy and sell secondhand items.\n(B) This makes the bike's lock open.\n(C) The backpack was not as big as my old one, but it looked as good as a new one.\n(D) I got a backpack and did not spend any money on it.\n(E) I was excited about the idea of using the backpack for school and sharing it with my brother.\n(F) The app allows users to find useful items easily.\n\n<변환 지시>\n(A) allow 대신 let을 사용하고 두 가지 행동을 모두 나타낼 것.\n(B) make 대신 allow를 사용하여 잠금장치가 열릴 수 있게 한다는 의미로 바꿀 것.\n(C) 첫 번째 절만 비교급과 than을 사용하여 바꾸고, 두 절의 주어와 시제를 유지할 것.\n(D) without을 사용하여 한 문장으로 나타내고, 돈을 쓰지 않은 대상을 명시할 것.\n(E) look forward to를 사용하고, 과거 시제와 두 가지 행동을 모두 유지할 것.\n(F) 가목적어 it과 진목적어인 to부정사를 포함하는 make 구문으로 바꿀 것.\n\n<학생의 답안>\n(A) The app lets users to buy and sell secondhand items.\n(B) This allows the bike's lock to open.\n(C) The backpack was smaller than my old one, but it looked as well as a new one.\n(D) I got a backpack without spending any money.\n(E) I looked forward to using the backpack for school and share it with my brother.\n(F) The app makes it easy for users to find useful items.\n\n<보기>\nㄱ. (A)는 to만 삭제하면 원문의 의미와 변환 지시를 모두 충족한다.\nㄴ. (B)의 to open은 목적격보어인 to부정사이며, 수정할 필요가 없다.\nㄷ. (C)는 smaller를 big으로 바꾸고 well을 good으로 바꾸어야 변환 지시를 충족한다.\nㄹ. (D)는 어법상 옳지만 변환 지시를 모두 충족하려면 money 뒤에 on it을 추가해야 한다.\nㅁ. (E)는 look forward to의 전치사 to에 연결되는 두 동작의 병렬 구조를 고려하여 share를 sharing으로 바꾸어야 한다.\nㅂ. (F)의 it은 앞에서 언급한 앱을 가리키는 대명사이며, to find 이하가 부사적 용법의 to부정사이므로 수정할 필요가 없다.\nㅅ. 학생의 답안 중 어법상 옳고 변환 지시도 모두 충족하는 문장은 정확히 두 개이다.",
+"choices": [
+"ㄱ, ㄴ, ㄹ, ㅁ, ㅅ",
+"ㄱ, ㄴ, ㄷ, ㄹ, ㅅ",
+"ㄱ, ㄹ, ㅁ, ㅂ, ㅅ",
+"ㄴ, ㄷ, ㄹ, ㅁ, ㅂ",
+"ㄱ, ㄴ, ㄷ, ㅁ, ㅅ"
+],
+"answer": "①",
+"solution": "ㄱ은 옳다. 사역동사 let은 목적격보어로 동사원형을 취하므로 to buy and sell에서 to만 삭제하면 buy와 sell의 병렬 구조 및 원문의 의미가 모두 유지된다. ㄴ은 옳다. allow는 목적격보어로 to부정사를 취하므로 to open이 적절하다. ㄷ은 틀리다. 원문의 not as big as는 smaller than으로 바꿀 수 있으므로 smaller는 수정할 필요가 없다. 두 번째 절의 well만 감각동사 look의 보어에 적합한 형용사 good으로 수정해야 한다. ㄹ은 옳다. without spending any money 자체는 어법상 옳지만 원문에서 돈을 쓰지 않은 대상이 백팩임을 명시하였으므로 변환 지시에 따라 on it을 추가해야 한다. ㅁ은 옳다. 전치사 to에 연결되는 using과 sharing이 동명사 형태로 병렬을 이루어야 한다. ㅂ은 틀리다. it은 특정 대상을 가리키는 대명사가 아니라 가목적어이고, to find useful items는 진목적어에 해당한다. 문장 자체는 수정할 필요가 없지만 문법적 기능에 대한 설명이 틀렸다. ㅅ은 옳다. 수정 없이 어법과 변환 지시를 모두 충족하는 문장은 (B)와 (F) 두 개이다. 따라서 ㄱ, ㄴ, ㄹ, ㅁ, ㅅ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2571ddaab9",
+"typeId": "exam2-eng-m22-ne-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 우리말과 영어 문장이 의미상 일치하고 어법상으로도 옳은 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. 네가 출처가 확인되지 않은 정보를 공유하지 않은 것은 현명했다.\n→ It was wise of you not to share information whose source had not been checked.\nㄴ. 우리가 인공지능이 제공한 모든 답변을 믿어야 하는 것은 아니다.\n→ It is necessary for us not to believe any of the answers AI provides.\nㄷ. 학생들이 어떤 정보를 공개할지 스스로 결정하는 것은 중요하다.\n→ It is important for students to decide for themselves what to make public.\nㄹ. 다른 사람의 개인 정보를 허락 없이 입력한 것은 그가 부주의했음을 보여 주는 행동이었다.\n→ It was careless of him to enter other people's personal information without permission.\nㅁ. 인공지능이 얼굴을 인식하는 능력이 향상되는 것과 관련하여, 인공지능은 얼굴을 인식하는 데 점점 더 능숙해지고 있다.\n→ AI is getting better at being recognized by faces.\nㅂ. 우리가 언제 인공지능의 도움을 요청해야 할지 판단하는 것은 쉽지 않다.\n→ It is not easy for us to decide when to ask AI for help.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ, ㅂ",
+"ㄱ, ㄷ, ㅁ, ㅂ",
+"ㄴ, ㄷ, ㄹ, ㅂ",
+"ㄷ, ㄹ, ㅁ, ㅂ"
+],
+"answer": "②",
+"solution": "ㄱ은 사람의 행동을 평가하는 wise와 의미상의 주어 of you, to부정사의 부정형 not to share를 바르게 사용하였다. ㄴ의 영어 문장은 인공지능이 제공하는 답변을 하나도 믿지 않는 것이 필요하다는 뜻이다. 모든 답변을 믿어야 하는 것은 아니라는 우리말과 일치하려면 It is not necessary for us to believe all the answers AI provides. 등으로 표현해야 한다. ㄷ은 행위의 중요성을 나타내는 important 뒤에 for students를 사용하였고, what to make public은 무엇을 공개할지라는 뜻이다. ㄹ은 사람의 행동을 평가하는 careless 뒤에 of him을 바르게 사용하였다. ㅁ의 being recognized는 수동의 의미이므로 AI가 얼굴을 인식한다는 원래 의미와 다르다. recognizing faces로 고쳐야 한다. ㅂ은 not easy, for us, when to ask를 모두 바르게 사용하였다. 따라서 ㄱ, ㄷ, ㄹ, ㅂ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8b0b79b72c",
+"typeId": "exam2-eng-m22-ne-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글의 빈칸 (A)~(H)에 들어갈 말로 가장 적절한 것은?\n\nAI can help us find useful information, but it sometimes makes mistakes. It is important (A) students to check the information before using it. Yesterday, Mina found an incorrect answer provided by AI. It was wise (B) her not to accept it (C). She also checked (D) to leave out of her report to protect her (E). AI is getting better (F) recognizing faces, but that does not mean it is always (G) to give AI pictures of ourselves. We should decide carefully (H) to use such technology and when to avoid it.",
+"choices": [
+"(A) of / (B) for / (C) blindly / (D) what / (E) privacy / (F) at / (G) safe / (H) when",
+"(A) for / (B) of / (C) blindly / (D) how / (E) privacy / (F) at / (G) safe / (H) when",
+"(A) for / (B) of / (C) blindly / (D) what / (E) privacy / (F) in / (G) safely / (H) when",
+"(A) for / (B) of / (C) blindly / (D) what / (E) privacy / (F) at / (G) safe / (H) when",
+"(A) for / (B) of / (C) blindly / (D) what / (E) privacy / (F) at / (G) safe / (H) what"
+],
+"answer": "④",
+"solution": "(A)의 important는 행위의 중요성을 나타내므로 for students가 적절하다. (B)의 wise는 사람의 행동을 평가하므로 of her가 적절하다. (C)는 accept를 수식하는 부사 blindly가 들어간다. (D)는 보고서에서 무엇을 제외할지를 나타내며 leave out의 목적어 역할을 하는 what이 필요하다. how를 넣으면 제외할 대상이 명시되지 않는다. (E)는 protect의 목적어인 명사 privacy가 적절하다. (F)는 get better at+-ing 구문이므로 at이 들어간다. (G)는 be동사의 보어이므로 형용사 safe가 적절하다. (H)는 뒤의 when to avoid it과 대조되는 내용으로, 그러한 기술을 언제 사용할지를 나타내는 when이 적절하다. what을 넣으면 이미 목적어 such technology가 있는 use와 결합할 수 없다. 따라서 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-0e6db23c98",
+"typeId": "exam2-eng-m22-ne-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>는 학생이 우리말을 영어로 옮겨 쓴 것이다. <수정 조건>에 따라 영어 문장을 수정할 때, 수정해야 하는 문장의 개수와 수정한 내용이 모두 옳은 것은?\n\n<보기>\n(A) 우리가 인공지능의 답변을 확인하는 것은 필요하다.\n→ It is necessary of us to check AI's answers.\n(B) 그가 다른 사람의 개인 정보를 공유하지 않은 것은 신중한 행동이었다.\n→ It was wise for him not to share other people's personal information.\n(C) 인공지능의 답변을 그대로 베끼지 않는 것이 중요하다.\n→ It is not important to copy AI's answers without changing them.\n(D) 인공지능은 사용자에게 무엇을 추천할지 결정한다.\n→ AI decides what to recommend it to users.\n(E) 인공지능은 얼굴을 인식하는 데 점점 더 능숙해지고 있다.\n→ AI is getting better at recognizing faces.\n(F) 우리가 모든 답변을 이해해야 하는 것은 아니다.\n→ It is not necessary for us to understand every answer.\n(G) 나는 인공지능에 언제 도움을 요청할지 모르겠다.\n→ I don't know when should I ask AI for help.\n\n<수정 조건>\n• 우리말과 영어 문장의 의미가 일치해야 한다.\n• 어법상 오류가 있는 부분과 의미가 달라지는 부분만 수정한다.\n• 이미 옳은 문장은 수정하지 않는다.\n• (G)는 의문사+to부정사 구문을 사용한다.",
+"choices": [
+"4개 — (B) It was wise of him not to share other people's personal information.",
+"5개 — (C) It is important not to copy AI's answers without changing them.",
+"5개 — (D) AI decides how to recommend it to users.",
+"6개 — (A) It is necessary for us to check AI's answers.",
+"5개 — (G) I don't know when asking AI for help."
+],
+"answer": "②",
+"solution": "(A)는 necessary가 행위의 필요성을 나타내므로 of us를 for us로 고쳐야 한다. (B)는 wise가 사람의 행동을 평가하므로 for him을 of him으로 고쳐야 한다. (C)는 중요하지 않다는 뜻이 아니라 베끼지 않는 것이 중요하다는 뜻이어야 하므로 not을 to copy 앞으로 옮겨야 한다. (D)는 what이 recommend의 목적어 역할을 하므로 it을 삭제해야 한다. (E)와 (F)는 의미와 어법이 모두 옳다. (G)는 조건에 따라 when should I ask를 when to ask로 고쳐야 한다. 따라서 수정 대상은 (A), (B), (C), (D), (G)로 총 5개이다. ①과 ④는 개수가 틀리고, ③은 무엇을 추천할지라는 의미를 유지하지 못하며, ⑤는 의문사+to부정사 조건을 충족하지 못한다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a616bc8b2a",
+"typeId": "exam2-eng-m22-ne-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 문장을 <변환 조건>에 따라 바꾸었을 때, 원래 문장의 의미를 유지하면서 어법상 옳게 바꾼 것만을 있는 대로 고른 것은?\n\n<변환 조건>\n• 가주어 it과 진주어인 to부정사를 사용할 때 의미상의 주어를 적절하게 나타낸다.\n• 부정어가 수식하는 범위를 원래 문장과 동일하게 유지한다.\n• 의문사절은 행위의 주체와 의미가 유지되는 경우에만 의문사+to부정사로 바꾼다.\n\n<보기>\nㄱ. You were thoughtful not to include her personal information in the report.\n→ It was thoughtful of you not to include her personal information in the report.\nㄴ. Not accepting every answer AI provides is important for us.\n→ It is important for us not to accept every answer AI provides.\nㄷ. Mina doesn't know what AI should recommend to her.\n→ Mina doesn't know what to recommend to AI.\nㄹ. Deciding which information to share is difficult for him.\n→ It is difficult of him to decide which information to share.\nㅁ. Jisu cannot decide which website she should visit first.\n→ Jisu cannot decide which website to visit first.\nㅂ. It is not necessary for students to use AI for every task.\n→ It is necessary for students not to use AI for any task.\nㅅ. He doesn't know what he should check before sharing a picture.\n→ He doesn't know what to check it before sharing a picture.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㅁ, ㅂ",
+"ㄴ, ㅁ, ㅅ"
+],
+"answer": "②",
+"solution": "ㄱ은 사람의 행동을 평가하는 thoughtful 뒤에 of you를 사용하였으며, not to include의 부정 의미도 유지하였다. ㄴ은 모든 답변을 받아들이지는 않는 것이 중요하다는 원래 의미를 유지하며 for us와 not to accept를 바르게 사용하였다. ㄷ은 원래 문장에서 추천하는 주체가 AI이지만 변환한 문장에서는 Mina가 추천하는 주체가 되어 의미가 달라진다. ㄹ은 difficult가 행위의 난이도를 나타내므로 of him이 아니라 for him을 써야 한다. ㅁ은 방문하는 주체가 모두 Jisu이므로 which website to visit으로 바르게 전환하였다. ㅂ은 모든 과제에 AI를 사용할 필요가 없다는 의미를 어떠한 과제에도 AI를 사용하지 않아야 한다는 의미로 바꾸었으므로 적절하지 않다. ㅅ은 what이 check의 목적어 역할을 하므로 it을 중복하여 사용하면 안 된다. 따라서 ㄱ, ㄴ, ㅁ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5b2ee5d731",
+"typeId": "exam2-eng-m22-ne-u3m0s0t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <보기>의 단어를 활용하여 (A)~(G)의 빈칸을 채우려고 한다. <조건>을 모두 충족하는 것으로 가장 적절한 것은?\n\n<보기>\nblind / safe / privacy / accuracy / what / at / of / for\n\n(A) We should not accept AI's answers (     ), even when they sound reasonable.\n(B) We cannot assume that our personal information will always be (     ) when we use AI.\n(C) It is important to protect our (     ) as well as check the accuracy of information.\n(D) AI is getting better (     ) recognizing faces.\n(E) Students should carefully decide (     ) to include in their reports.\n(F) It was thoughtful (     ) him not to upload his friend's picture without permission.\n(G) It is necessary (     ) users to check whether AI's answers are accurate.\n\n<조건>\n• <보기>의 단어 중 서로 다른 일곱 개를 선택하여 사용한다.\n• 문장의 의미와 어법에 맞게 필요한 경우 단어의 형태를 바꾼다.\n• (A)는 답변을 무비판적으로 받아들인다는 뜻을 나타내야 한다.\n• (B)는 개인 정보가 안전한 상태에 있다는 뜻을 나타내야 한다.",
+"choices": [
+"(A) blindly / (B) safely / (C) privacy / (D) at / (E) what / (F) of / (G) for",
+"(A) blind / (B) safe / (C) privacy / (D) at / (E) what / (F) of / (G) for",
+"(A) blindly / (B) safe / (C) accuracy / (D) at / (E) what / (F) of / (G) for",
+"(A) blindly / (B) safe / (C) privacy / (D) at / (E) what / (F) for / (G) of",
+"(A) blindly / (B) safe / (C) privacy / (D) at / (E) what / (F) of / (G) for"
+],
+"answer": "⑤",
+"solution": "(A)는 동사 accept를 수식하며 맹목적으로라는 의미를 나타내야 하므로 blind를 부사 blindly로 바꾼다. (B)는 be동사의 보어이며 개인 정보의 상태를 설명하므로 형용사 safe가 적절하다. safely는 부사이므로 이 자리에 적절하지 않다. (C)는 개인 정보와 관련된 문맥에서 사생활을 보호한다는 의미의 protect our privacy가 적절하다. accuracy는 정확성이라는 뜻으로 문맥에 맞지 않는다. (D)는 get better at+-ing 구문이므로 at이 들어간다. (E)는 보고서에 무엇을 포함할지를 나타내며 what이 include의 목적어 역할을 한다. (F)는 사람의 행동을 평가하는 thoughtful 뒤의 의미상의 주어이므로 of가 적절하다. (G)는 행위의 필요성을 나타내는 necessary 뒤의 의미상의 주어이므로 for가 적절하다. 따라서 ⑤가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-96fcc8f6b5",
+"typeId": "exam2-eng-m22-ne-u3m0s0t1",
+"kind": "주관식",
+"diff": 5,
+"body": "다음 <보기>는 인공지능의 올바른 사용에 관한 우리말을 학생이 영어로 옮긴 것이다. 우리말과 의미가 일치하고 어법상 옳도록 <조건>에 따라 (A)~(F)의 영어 문장을 각각 완성하시오.\n\n<보기>\n(A) 다른 사람의 개인 정보를 공유하지 않은 것은 네가 사려 깊게 행동한 것이다.\n→ It was considerate for you to not share other people's personal information.\n\n(B) 학생들이 인공지능의 답변을 맹목적으로 베끼지 않는 것은 중요하다.\n→ It is not important of students to copy AI's answers blind.\n\n(C) 인공지능은 얼굴을 인식하는 데 점점 더 능숙해지고 있다.\n→ AI is getting better at recognize faces.\n\n(D) 인공지능은 사용자에게 무엇을 추천할지 결정한다.\n→ AI decides what it should recommend to users.\n\n(E) 우리 자신의 개인 정보를 보호하는 것은 중요하다.\n→ It is important of us to protect our own private.\n\n(F) 우리가 모든 답변을 이해해야 하는 것은 아니다.\n→ It is necessary for us not to understand every answer.\n\n<조건>\n• (A), (B), (E), (F)는 가주어 it과 진주어인 to부정사 구문을 유지할 것.\n• (A)와 (B)에서는 to부정사를 부정할 때 not을 to 바로 앞에 놓을 것.\n• (C)는 get better at 구문을 유지할 것.\n• (D)는 의문사+to부정사 구문으로 바꿀 것.\n• (E)는 private를 적절한 명사형으로 바꿀 것.\n• 의미와 어법에 맞는 부분은 그대로 유지할 것.\n• 각 문장을 완전한 영어 문장으로 쓸 것.",
+"selfGrade": true,
+"answer": "(A) It was considerate of you not to share other people's personal information.\n(B) It is important for students not to copy AI's answers blindly.\n(C) AI is getting better at recognizing faces.\n(D) AI decides what to recommend to users.\n(E) It is important for us to protect our own privacy.\n(F) It is not necessary for us to understand every answer.",
+"solution": "(A)의 considerate는 사람의 행동을 평가하므로 for you를 of you로 고치고, 조건에 따라 to not share를 not to share로 바꾼다. (B)의 important는 행위의 중요성을 나타내므로 of students를 for students로 고친다. 베끼지 않는 것이 중요하다는 의미를 나타내기 위해 not을 important 앞에서 to copy 앞으로 옮긴다. 동사 copy를 수식하도록 blind를 blindly로 바꾼다. (C)에서 at은 전치사이므로 뒤에 동명사 recognizing을 사용한다. (D)는 의문사절의 주어 it이 주절의 주어 AI와 같은 대상을 가리키므로 what it should recommend를 what to recommend로 전환할 수 있다. (E)는 important 뒤에 for us를 사용하고, protect의 목적어로 명사 privacy를 사용한다. (F)는 모든 답변을 이해하지 않는 것이 필요하다는 의미가 아니라 모든 답변을 이해할 필요는 없다는 의미이므로 not을 necessary 앞으로 옮긴다.\n\n[채점 기준: 총 12점]\n(A) 2점: of you 사용 1점, not to share 사용 1점.\n(B) 3점: for students 사용 1점, not의 위치 수정 1점, blindly 사용 1점.\n(C) 1점: recognizing 사용 1점.\n(D) 2점: what to recommend 사용 1점, to users 및 원래 의미 유지 1점.\n(E) 2점: for us 사용 1점, privacy 사용 1점.\n(F) 2점: not necessary 사용 1점, 나머지 구문과 원래 의미 유지 1점.\n각 채점 요소는 독립적으로 부분 점수를 부여한다. 수정하지 않아도 되는 부분을 변경하여 의미나 어법상의 오류가 발생한 경우 해당 문항 배점 범위에서 1점을 감점한다. 단순한 대소문자 및 문장부호 오류는 감점하지 않는다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-5935f11a5b",
+"typeId": "exam2-eng-m22-ne-u2m0s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고, <보기>에서 글의 내용과 일치하면서 어법상 옳은 문장만을 있는 대로 고른 것은?\n\nThe writer decided to borrow a bike instead of taking a bus. Using a bike-sharing service makes the bike's lock open. The writer also used an app that allows people to buy and sell used things. Through the app, the writer got a secondhand backpack without spending any money. It was smaller than the writer's old backpack, but it looked as good as a new one.\n\n<보기>\nⓐ Rather than taking a bus, the writer chose to borrow a bike.\nⓑ The bike-sharing service allows the bike's lock open.\nⓒ The app the writer used enables people to buy and sell secondhand things.\nⓓ The writer did not have to spend any money getting the backpack.\nⓔ The writer's old backpack was not as large as the secondhand one.\nⓕ Although the secondhand backpack was smaller than the old one, it appeared to be in as good condition as a new one.\nⓖ The backpack looked as good as a new one, which means that it had never been used before.",
+"choices": [
+"ⓐ, ⓑ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓓ, ⓕ",
+"ⓐ, ⓒ, ⓔ, ⓖ",
+"ⓑ, ⓒ, ⓓ, ⓕ",
+"ⓒ, ⓓ, ⓕ, ⓖ"
+],
+"answer": "②",
+"solution": "ⓐ는 rather than taking을 사용하여 버스를 타는 대신 자전거를 빌렸다는 의미를 올바르게 나타낸다. ⓑ는 allow가 목적격 보어로 to부정사를 취하므로 open을 to open으로 고쳐야 한다. ⓒ의 enable＋목적어＋to부정사는 allow＋목적어＋to부정사와 문맥상 같은 의미를 나타낸다. ⓓ의 did not have to spend any money는 돈을 쓰지 않고 가방을 얻었다는 내용과 일치하며, spend＋시간 또는 돈＋동명사 구조도 적절하다. ⓔ는 기존 가방이 중고 가방보다 작았다는 의미이므로 본문과 반대이다. ⓕ는 양보절과 원급 비교를 사용하여 가방의 크기와 상태에 관한 정보를 정확히 전달한다. ⓖ는 새것처럼 보였다는 사실을 사용된 적이 없다는 의미로 잘못 해석하였다. 따라서 옳은 문장은 ⓐ, ⓒ, ⓓ, ⓕ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-fe6496e1da",
+"typeId": "exam2-eng-m22-ne-u2m0s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <본문 정리>와 <학생들의 문장>을 읽고, 본문의 내용과 일치하면서 어법상 옳은 문장만을 있는 대로 고른 것은?\n\n<본문 정리>\n• 글쓴이는 버스를 타는 대신 자전거를 빌리기로 했다.\n• 자전거 공유 서비스를 이용하면 자전거의 잠금장치가 열린다.\n• 글쓴이가 이용한 앱은 사람들이 중고 물건을 사고팔 수 있게 해 준다.\n• 글쓴이는 돈을 전혀 쓰지 않고 중고 가방을 얻었다.\n• 중고 가방은 기존 가방보다 작았지만 새 가방만큼 상태가 좋아 보였다.\n\n<학생들의 문장>\nⓐ The writer decided to borrow a bike rather than take a bus.\nⓑ Using the bike-sharing service causes the bike's lock to open.\nⓒ The app makes it possible for people buy and sell used things.\nⓓ No money was spent by the writer to get the secondhand backpack.\nⓔ The writer's old backpack was larger than the secondhand one, which looked as good as a new one.\nⓕ The secondhand backpack was smaller than the old one, so it could not look as good as a new one.\nⓖ The app allows used things to be bought and sold, which means that every user can get things for free.\nⓗ Despite the secondhand backpack was smaller than the old one, it looked as good as a new one.",
+"choices": [
+"ⓐ, ⓑ, ⓓ, ⓔ",
+"ⓐ, ⓒ, ⓓ, ⓔ",
+"ⓐ, ⓑ, ⓔ, ⓗ",
+"ⓑ, ⓓ, ⓔ, ⓖ",
+"ⓑ, ⓒ, ⓓ, ⓕ"
+],
+"answer": "①",
+"solution": "ⓐ의 rather than take는 버스를 타는 대신 자전거를 빌렸다는 의미를 정확히 전달한다. ⓑ의 cause는 목적격 보어로 to부정사를 취하므로 causes the bike's lock to open은 어법상 옳으며 본문 내용과도 일치한다. ⓒ는 가목적어 it과 진목적어 to부정사를 사용하는 구조이므로 for people buy를 for people to buy로 고쳐야 한다. ⓓ는 글쓴이가 가방을 얻는 데 돈을 쓰지 않았다는 내용을 수동태로 올바르게 표현하였다. ⓔ는 기존 가방이 중고 가방보다 크다는 사실과 중고 가방이 새것만큼 좋아 보였다는 사실을 비교급과 관계대명사를 사용하여 정확하게 나타낸다. ⓕ는 가방이 작다는 사실을 상태가 좋지 않다는 결과와 연결하였으므로 본문과 일치하지 않는다. ⓖ의 수동형 to부정사 to be bought and sold는 문법적으로 옳지만, 모든 이용자가 물건을 무료로 얻을 수 있다는 결론은 본문의 정보만으로 도출할 수 없다. ⓗ의 despite는 전치사이므로 뒤에 주어와 동사를 갖춘 절을 직접 사용할 수 없다. Despite를 Although로 고쳐야 한다. 따라서 옳은 문장은 ⓐ, ⓑ, ⓓ, ⓔ이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2f2c0daa9e",
+"typeId": "exam2-eng-m22-ne-u2m0s1t1",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글과 <요약문>을 읽고, 글의 내용과 일치하지 않거나 어법상 잘못된 부분을 모두 찾아 바르게 고친 것은?\n\nThe writer chose to borrow a bike instead of taking a bus. The bike-sharing service makes the bike's lock open. The writer also used an app that allows people to buy and sell used things. Without spending any money, the writer got a secondhand backpack. It was not as big as the writer's old backpack, but it looked as good as a new one. The writer looked forward to using it for school.\n\n<요약문>\nRather than ⓐ[taking] a bus, the writer decided to borrow a bike. The bike-sharing service causes the bike's lock ⓑ[open]. The writer used an app that enables people ⓒ[to buy and sell] secondhand things. The writer's old backpack was ⓓ[smaller than] the secondhand one. However, the secondhand backpack appeared to be in ⓔ[as good condition as] a new one. The writer managed ⓕ[getting] the backpack without spending any money and looked forward to ⓖ[using] it for school. These experiences show that people can meet some of their needs without always ⓗ[buying] new things.\n\n<조건>\n• 대괄호로 표시된 ⓐ~ⓗ 중 수정이 필요한 부분을 빠짐없이 고를 것.\n• 어법상 옳고 글의 내용과 일치하는 부분은 수정하지 않을 것.\n• 수정한 내용을 요약문에 그대로 넣었을 때 문장이 완전해야 할 것.",
+"choices": [
+"ⓐ take, ⓑ to open, ⓓ larger than",
+"ⓑ to open, ⓓ larger than, ⓕ to get",
+"ⓑ to open, ⓒ buy and sell, ⓕ to get",
+"ⓓ larger than, ⓔ as well condition as, ⓕ to get",
+"ⓓ larger than, ⓕ to get, ⓖ use"
+],
+"answer": "②",
+"solution": "ⓐ의 Rather than taking a bus는 버스를 타는 대신이라는 의미로 적절하며 어법상 옳다. ⓑ는 cause＋목적어＋to부정사 구조가 되어야 하므로 open을 to open으로 수정해야 한다. 본문의 make는 동사원형을 목적격 보어로 취하지만 요약문의 cause는 to부정사를 취한다는 차이에 유의한다. ⓒ는 enable＋목적어＋to부정사 구조로 올바르며 본문의 allow와 문맥상 같은 의미를 나타낸다. ⓓ는 두 가방의 비교 대상을 바꾸는 과정에서 크기 관계가 반대로 표현되었다. 중고 가방이 기존 가방보다 작으므로 기존 가방은 중고 가방보다 크다. 따라서 smaller than을 larger than으로 수정해야 한다. ⓔ의 as good condition as는 상태가 새 가방만큼 좋았다는 의미의 올바른 원급 비교 표현이다. ⓕ의 manage는 목적어로 to부정사를 취하므로 getting을 to get으로 수정해야 한다. ⓖ의 look forward to에서 to는 전치사이므로 동명사 using이 올바르다. ⓗ 역시 전치사 without 뒤에 동명사 buying이 사용되었으며, 새 물건을 항상 구매하지 않고도 필요한 것을 얻을 수 있다는 글의 내용과 일치한다. 따라서 수정이 필요한 부분은 ⓑ, ⓓ, ⓕ이며 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t1",
+"custom": true,
+"rv": 1
 }
 ]
