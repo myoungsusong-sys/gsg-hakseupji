@@ -3320,5 +3320,287 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-e155a2327a",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장에서 stand for의 의미로 가장 알맞은 것은?\n\nWhat does AI stand for?",
+"choices": [
+"～을 기억하다",
+"～을 추천하다",
+"～을 뜻하다",
+"～을 비교하다",
+"～을 확인하다"
+],
+"answer": "③",
+"solution": "stand for는 약자나 기호 등이 무엇을 뜻하는지 나타낼 때 사용한다. 이 문장은 AI가 무엇을 뜻하는지 묻는 표현이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d67a88307a",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 문장의 빈칸에 들어갈 말로 가장 알맞은 것은?\n\nIt is useful _____ how AI learns.",
+"choices": [
+"to understand",
+"understands",
+"understood",
+"understand",
+"to understanding"
+],
+"answer": "①",
+"solution": "「It is＋형용사＋to부정사」에서 It은 가주어이고 to부정사구는 진주어이다. 따라서 to understand가 알맞다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-91a0e08e06",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 영어 문장에서 make decisions의 우리말 뜻으로 가장 알맞은 것은?\n\nAI uses information to make decisions.",
+"choices": [
+"경험을 쌓다",
+"정보를 수집하다",
+"문제를 설명하다",
+"결정을 내리다",
+"결과를 비교하다"
+],
+"answer": "④",
+"solution": "make decisions는 '결정을 내리다'라는 뜻이다. 문장 전체는 AI가 결정을 내리기 위해 정보를 이용한다는 의미이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-303bafc830",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 두 문장의 빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것은?\n\n• AI technology is changing our (A)_____ activities.\n• Many people use smartphones (B)_____.",
+"choices": [
+"every day ― everyday",
+"everyday ― every day",
+"everyday ― everyday",
+"every day ― every day",
+"day by day ― daily"
+],
+"answer": "②",
+"solution": "everyday는 '일상적인'이라는 뜻의 형용사이므로 명사 activities를 수식할 수 있다. every day는 '매일'이라는 뜻의 부사구이므로 스마트폰을 사용하는 빈도를 나타낼 수 있다. day by day는 '날마다, 나날이'라는 뜻의 부사구로 activities를 직접 수식할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-98be70c783",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 두 문장의 의미가 서로 같지 않은 것은?",
+"choices": [
+"Keep the rule in mind. = Remember the rule.",
+"AI stands for artificial intelligence. = AI means artificial intelligence.",
+"You should decide what to check. = You should decide what you should check.",
+"It is necessary to protect your privacy. = To protect your privacy is necessary.",
+"AI may recognize your face even if you wear a mask. = AI may recognize your face only if you wear a mask."
+],
+"answer": "⑤",
+"solution": "even if는 '~하더라도'라는 양보의 의미를 나타낸다. 반면 only if는 '오직 ~하는 경우에만'이라는 조건의 의미를 나타내므로 두 문장의 의미가 서로 다르다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ec7cabc8b0",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>에서 어법상 옳은 문장만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. It is important for us to check the source.\nㄴ. It was careless of he to reveal his password.\nㄷ. It is not easy to understand every explanation.\nㄹ. It was wisely of her to protect her personal information.\nㅁ. It is helpful for beginners to learn how to use AI.",
+"choices": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄱ, ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "③",
+"solution": "ㄱ, ㄷ, ㅁ은 가주어와 진주어를 올바르게 사용한 문장이다. ㄴ은 전치사 of 뒤에 목적격 대명사가 와야 하므로 he를 him으로 고쳐야 한다. ㄹ은 be동사 뒤에서 보어 역할을 하는 형용사가 필요하므로 wisely를 wise로 고쳐야 한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-38a4b5b811",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 대화의 ⓐ~ⓔ 중 쓰임이 나머지 넷과 다른 것은?\n\nA: ⓐIt is useful to learn about AI.\nB: Right. ⓑIt is interesting to study how AI recommends videos.\nA: I often use my smartphone. ⓒIt can recognize my face.\nB: But ⓓit is necessary to protect your privacy.\nA: I agree. ⓔIt is wise to check information carefully.",
+"choices": [
+"ⓐ",
+"ⓑ",
+"ⓒ",
+"ⓓ",
+"ⓔ"
+],
+"answer": "③",
+"solution": "ⓐ, ⓑ, ⓓ, ⓔ는 뒤에 나오는 to부정사구를 대신하여 주어 자리에 사용된 가주어이다. 각각의 진주어는 to learn, to study, to protect, to check로 시작하는 to부정사구이다. 반면 ⓒ는 앞에 나온 my smartphone을 가리키는 인칭대명사이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d012fee76b",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말을 영어로 옮긴 것 중 의미가 일치하고 어법상 옳은 것은?\n\n우리가 어떤 정보를 확인해야 할지 아는 것은 중요하다.",
+"choices": [
+"It is important of us to know what information to check.",
+"It is importantly for us to know what information to check.",
+"It is important for us knowing what information to check.",
+"It is important for us to know what information checking.",
+"It is important for us to know what information to check."
+],
+"answer": "⑤",
+"solution": "가주어 It과 진주어 to know 이하의 구조를 사용한다. important는 사람의 성품을 평가하는 형용사가 아니므로 의미상 주어는 for us로 나타낸다. '어떤 정보를 확인해야 할지'는 what information to check로 표현한다. ①은 of, ②는 importantly, ③은 knowing, ④는 checking의 쓰임이 적절하지 않다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-bd31b408aa",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>에서 화살표 앞뒤의 표현이 문맥상 같은 의미를 나타내는 것만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. keep this fact in mind → remember this fact\nㄴ. even if you wear a mask → because you wear a mask\nㄷ. everyday activities → daily activities\nㄹ. decide what to recommend → decide what it should recommend\nㅁ. make decisions → change decisions\n\n단, ㄹ에서 decide와 recommend의 동작 주체는 모두 AI이다.",
+"choices": [
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+],
+"answer": "①",
+"solution": "ㄱ의 keep in mind와 remember는 모두 '기억하다'라는 뜻이다. ㄷ의 everyday와 daily는 문맥상 '일상적인'이라는 뜻으로 쓰였다. ㄹ은 decide와 recommend의 동작 주체가 같으므로 what to recommend를 what it should recommend로 바꾸어 쓸 수 있다. ㄴ의 even if는 양보, because는 이유를 나타낸다. ㅁ의 make decisions는 '결정을 내리다', change decisions는 '결정을 바꾸다'라는 뜻이다. 따라서 ㄱ, ㄷ, ㄹ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-a50cae8e1a",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 <보기>에서 어법상 옳은 문장만을 있는 대로 고른 것은?\n\n<보기>\nㄱ. It is difficult for some users to decide what to believe.\nㄴ. It was foolish of him to reveal his password.\nㄷ. It is necessary of AI users to check the source.\nㄹ. It is useful to learn how to protect personal information.\nㅁ. It was kind of she to explain how AI works.\nㅂ. It is important for us to know what should we check.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄹ, ㅂ",
+"ㄴ, ㄷ, ㅁ",
+"ㄷ, ㅁ, ㅂ"
+],
+"answer": "②",
+"solution": "ㄱ은 가주어, 의미상 주어, 의문사와 to부정사의 쓰임이 모두 올바르다. ㄴ은 사람의 행동을 평가하는 foolish가 사용되었으므로 of him이 적절하다. ㄷ은 necessary가 사용되었으므로 of AI users를 for AI users로 고쳐야 한다. ㄹ은 가주어와 진주어 및 how to protect의 쓰임이 올바르다. ㅁ은 전치사 of 뒤에 목적격 her가 와야 한다. ㅂ은 간접의문문의 어순에 따라 what we should check로 고쳐야 한다. 따라서 ㄱ, ㄴ, ㄹ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4187604a9e",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 ⓐ~ⓔ에 대한 설명 중 옳은 것만을 있는 대로 고른 것은?\n\nAI can recommend videos by learning from your viewing history. ⓐIt studies your previous choices and decides ⓑwhat to recommend. However, ⓒit is important for users to check AI-generated information. ⓓEven if the information looks correct, users should check its source. ⓔIt was careless of a user to share personal information without checking the source.\n\n<보기>\nㄱ. ⓐ는 앞 문장의 AI를 가리킨다.\nㄴ. ⓑ는 what it should recommend로 바꾸어 쓸 수 있다.\nㄷ. ⓒ의 진주어는 for users이다.\nㄹ. ⓓ는 정보가 정확해 보이더라도 확인이 필요하다는 양보의 의미를 나타낸다.\nㅁ. ⓔ의 of a user는 어법상 잘못되었으므로 for a user로 고쳐야 한다.",
+"choices": [
+"ㄱ, ㄷ",
+"ㄴ, ㅁ",
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "④",
+"solution": "ㄱ: ⓐ는 앞 문장의 AI를 가리키는 인칭대명사이므로 옳다. ㄴ: recommend의 의미상 주어는 AI이므로 what it should recommend로 바꾸어 쓸 수 있다. ㄷ: 진주어는 to check AI-generated information이고 for users는 의미상 주어이므로 틀리다. ㄹ: Even if는 '~하더라도'라는 양보의 의미를 나타내므로 옳다. ㅁ: careless는 사람의 행동을 평가하는 형용사이므로 of a user는 올바른 표현이다. 따라서 ㄱ, ㄴ, ㄹ이 옳다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-7750481750",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 우리말과 의미가 같도록 주어진 조건에 맞게 영어 문장을 완성하시오.\n\n우리가 어떤 정보를 믿어야 할지 결정하는 것은 어렵다.\n\n<조건>\n• 가주어 It으로 시작할 것.\n• difficult, decide, what, information, believe를 모두 사용할 것.\n• 의미상 주어를 나타낼 것.\n• '어떤 정보를 믿어야 할지'를 「의문사＋명사＋to부정사」로 표현할 것.\n• 총 11단어로 쓸 것.",
+"selfGrade": true,
+"answer": "It is difficult for us to decide what information to believe.",
+"solution": "가주어 It 뒤에 is difficult를 쓰고, 의미상 주어 '우리가'를 for us로 나타낸다. 진주어는 to decide로 시작한다. decide의 목적어인 '어떤 정보를 믿어야 할지'는 what information to believe로 표현한다. 완성된 문장은 It(1) is(2) difficult(3) for(4) us(5) to(6) decide(7) what(8) information(9) to(10) believe(11)로 총 11단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-68cb1c4587",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "주관식",
+"diff": 4,
+"body": "다음 영어 문장이 주어진 우리말과 의미가 같고 어법상 옳도록 잘못된 세 부분을 고쳐 문장 전체를 다시 쓰시오.\n\n그가 자신의 사생활을 보호하는 방법을 기억한 것은 현명했다.\n\nIt was wisely for him to remember how protecting his privacy.\n\n<조건>\n• wisely, for, protecting만 각각 고칠 것.\n• wisely는 같은 어근의 형용사로 고칠 것.\n• 사람의 행동을 평가하는 형용사에 알맞은 의미상 주어를 사용할 것.\n• protecting은 to부정사 형태로 고칠 것.\n• 수정 대상 이외의 단어와 어순은 바꾸지 말 것.",
+"selfGrade": true,
+"answer": "It was wise of him to remember how to protect his privacy.",
+"solution": "첫째, be동사 was 뒤에 보어 역할을 하는 형용사가 필요하므로 wisely를 wise로 고친다. 둘째, wise는 사람의 행동을 평가하는 형용사이므로 해당 평가의 대상은 of him으로 표현한다. 셋째, '보호하는 방법'은 「의문사 how＋to부정사」로 나타내므로 protecting을 to protect로 고친다. 나머지 단어와 어순을 유지하면 It was wise of him to remember how to protect his privacy.가 된다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6f152e906f",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 우리말과 의미가 일치하도록 빈칸 (A)~(E)에 들어갈 말을 바르게 짝지은 것은?\n\n정보가 정확해 보이더라도 어떤 정보를 공유해야 할지 신중하게 결정하는 것이 중요하다는 사실을 기억하라.\n\nKeep (A)_____ mind that (E)_____ the information looks correct, (B)_____ is important to decide carefully (C)_____ information (D)_____ share.",
+"choices": [
+"in ― it ― what ― to ― even if",
+"in ― it ― how ― to ― because",
+"in ― it ― what ― to ― only if",
+"in ― it ― what ― to ― so that",
+"on ― it ― what ― to ― even if"
+],
+"answer": "①",
+"solution": "(A)는 '기억하다'라는 뜻의 keep in mind에 따라 in이 적절하다. (B)는 진주어 to decide 이하를 대신하는 가주어 it이다. (C), (D)는 '어떤 정보를 공유해야 할지'라는 의미의 what information to share를 구성하므로 각각 what과 to이다. (E)는 정보가 정확해 보이는 경우에도 신중한 결정이 필요하다는 양보의 의미를 나타내므로 even if가 적절하다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-c42eae62e2",
+"typeId": "exam2-eng-m22-ne-u3m0s0t2",
+"kind": "주관식",
+"diff": 3,
+"body": "다음 두 문장의 의미를 모두 포함하는 영어 문장 하나를 <조건>에 맞게 완성하시오.\n\n• She checked the source of the information.\n• Her action was wise.\n\n<조건>\n• 가주어 It으로 시작할 것.\n• wise와 check를 반드시 사용할 것.\n• 의미상 주어를 포함할 것.\n• the source of the information을 그대로 사용할 것.\n• 원래 문장의 시제를 유지할 것.\n• 총 12단어로 쓸 것.",
+"selfGrade": true,
+"answer": "It was wise of her to check the source of the information.",
+"solution": "두 문장은 그녀가 정보의 출처를 확인한 행동이 현명했다는 의미이다. 원문의 과거시제를 유지하여 It was wise로 시작한다. wise는 사람의 행동을 평가하는 형용사이므로 의미상 주어는 of her로 나타낸다. 진주어는 to check the source of the information이다. 완성된 문장은 It(1) was(2) wise(3) of(4) her(5) to(6) check(7) the(8) source(9) of(10) the(11) information(12)로 총 12단어이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t2",
+"custom": true,
+"rv": 1
 }
 ]
