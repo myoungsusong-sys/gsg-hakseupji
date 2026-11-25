@@ -4028,5 +4028,19 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t1",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-d94ffc83ab",
+"typeId": "exam2-eng-m22-ne-u2m0s1t0",
+"kind": "주관식",
+"diff": 2,
+"body": "지민이는 공원에 도착하고 나서야 빌린 자전거의 상태를 처음으로 확인했다.\n\n본문의 내용과 일치하면 O, 일치하지 않으면 X를 쓰시오.",
+"selfGrade": true,
+"answer": "X",
+"solution": "지민이는 공원으로 출발하기 전에 자전거의 상태를 확인했다. 따라서 공원에 도착한 뒤 처음으로 확인했다는 설명은 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t0",
+"custom": true,
+"rv": 1
 }
 ]
