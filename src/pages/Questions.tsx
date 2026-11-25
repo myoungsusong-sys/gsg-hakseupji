@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { allQuestions, isTestQuestion, stuckMinutes, workerBeats, type Question, type QnaStatus, type WorkerBeat } from '../lib/qna'
+import { allQuestions, isTestQuestion, setTutor, stuckMinutes, tutorStats, TUTOR_FEE, TUTOR_WHY, workerBeats, type Question, type QnaStatus, type WorkerBeat } from '../lib/qna'
 import { SUPABASE_ON } from '../lib/supabase'
 
 // ── 선생님 질문함 — 학생이 올린 질문과 자동 생성된 해설 노트 ─────────
@@ -56,6 +56,15 @@ export default function Questions() {
     only === '전체' ? true : only === '실패' ? (q.status === '실패' || q.status === '보류' || stuckMinutes(q) > 0) : q.status !== '완료'))
   const 실패수 = list.filter(q => q.status === '실패' || q.status === '보류').length
   const 진행수 = list.filter(q => q.status === '대기' || q.status === '만드는중').length
+  const 튜터 = useMemo(() => tutorStats(list, 30), [list])
+  const [튜터고름, set튜터고름] = useState('')   // 이유 고르는 중인 질문 id
+  const 튜터바꾸기 = async (id: string, why: string | null) => {
+    try {
+      const nv = await setTutor(id, why)
+      if (nv) setList(l => l.map(x => (x.id === id ? nv : x)))
+      set튜터고름('')
+    } catch (e) { setErr(e instanceof Error ? e.message : String(e)) }
+  }
 
   if (!SUPABASE_ON) return <div className="p-6 text-sm text-ink2">클라우드 모드에서만 볼 수 있어요.</div>
 
@@ -99,6 +108,18 @@ export default function Questions() {
         <div className="mb-4 rounded-2xl border border-line bg-white px-4 py-3 text-sm">
           <b>{고른.name}</b> 학생 — 질문 {고른.전체}건 · 해설 보냄 {고른.보냄}건
           {고른.못보냄 > 0 && <span className="ml-1 font-bold text-rose-700">· 아직 못 보냄 {고른.못보냄}건</span>}
+        </div>
+      )}
+
+      {/* 👩‍🏫 튜터비 실측(2026-11-15) — 가맹조건 v5 건당 1만 원을 파일럿 실측으로 다시 정한다 */}
+      {튜터.질문 > 0 && (
+        <div className="mb-4 rounded-2xl border border-line bg-white px-4 py-3 text-sm">
+          <b>👩‍🏫 튜터 연결 (최근 {튜터.days}일)</b> — 질문 {튜터.질문}건 중 <b>{튜터.넘김}건</b>({Math.round(튜터.비율 * 100)}%) ·
+          질문한 학생 {튜터.학생}명 · 학생당 월 <b>{튜터.학생당월.toFixed(1)}건</b> × {TUTOR_FEE / 10_000}만 원 =
+          <b> {Math.round(튜터.학생당튜터비 / 1000) / 10}만 원</b>
+          <span className={튜터.학생당튜터비 > 튜터.본부몫 ? 'ml-1 font-bold text-rose-700' : 'ml-1 text-ink2'}>
+            (본부 몫 학생당 {튜터.본부몫 / 10_000}만 원 · 월 {튜터.흑자건수}건까지 흑자)</span>
+          {튜터.이유.length > 0 && <span className="ml-1 text-xs text-ink2">· {튜터.이유.map(([k, n]) => `${k} ${n}`).join(' · ')}</span>}
         </div>
       )}
 
@@ -157,6 +178,26 @@ export default function Questions() {
                       </p>
                     )}
                     {q.status !== '완료' && q.error && <p className="mt-1 break-words text-xs text-rose-600">{q.error}</p>}
+                    <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs">
+                      {q.tutor ? (
+                        <>
+                          <span className="rounded-full bg-pine-soft px-2.5 py-1 font-bold text-pine-dark">👩‍🏫 튜터 연결 {fmt(q.tutor.at)}{q.tutor.why ? ` · ${q.tutor.why}` : ''}</span>
+                          <button onClick={() => void 튜터바꾸기(q.id, null)} className="text-ink2 underline hover:text-ink">취소</button>
+                        </>
+                      ) : 튜터고름 === q.id ? (
+                        <>
+                          <span className="text-ink2">왜 넘기나요?</span>
+                          {TUTOR_WHY.map(w => (
+                            <button key={w} onClick={() => void 튜터바꾸기(q.id, w)}
+                              className="rounded-full border border-line bg-white px-2.5 py-1 font-semibold text-ink2 hover:text-ink">{w}</button>
+                          ))}
+                          <button onClick={() => set튜터고름('')} className="text-ink2 underline">닫기</button>
+                        </>
+                      ) : (
+                        <button onClick={() => set튜터고름(q.id)}
+                          className="rounded-full border border-line bg-white px-2.5 py-1 font-semibold text-ink2 hover:text-ink">👩‍🏫 튜터 연결</button>
+                      )}
+                    </div>
                   </div>
                   {q.answerUrl && (
                     <button onClick={() => setZoom(q.answerUrl!)} className="shrink-0">
