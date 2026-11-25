@@ -8826,5 +8826,53 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t0",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-a24aab089f",
+"typeId": "exam2-eng-m22-ne-u2m0s0t1",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글의 괄호 (A)~(C)에 들어갈 말로 가장 적절한 것은?\n\nThe sharing economy has changed the way people use things. Some apps allow users (A) secondhand items easily. These apps make it (B) for people to share things instead of buying new ones. I decided to borrow a bicycle instead of (C) a bus when I needed to go somewhere nearby.",
+"choices": [
+"(A) buy  (B) easier  (C) take",
+"(A) to buy  (B) easier  (C) taking",
+"(A) buying  (B) more easy  (C) taking",
+"(A) to buy  (B) easiest  (C) take",
+"(A) buy  (B) more easier  (C) taking"
+],
+"answer": "②",
+"solution": "세 괄호에 들어갈 표현의 문법적 조건을 각각 확인해야 한다.\n\n(A) allow는 「allow + 목적어 + to부정사」의 형태로 쓰이므로 allow users to buy가 적절하다. 따라서 to buy를 선택한다.\n\n(B) make it + 형용사 + for + 목적어 + to부정사 구조에서 뒤의 내용과 비교하여 공유하는 것이 새 물건을 사는 것보다 더 쉽다는 의미를 나타내야 한다. 따라서 비교급 easier가 적절하다. more easier는 비교급을 중복하여 사용한 잘못된 표현이다.\n\n(C) instead of는 전치사이므로 뒤에는 명사 또는 동명사가 와야 한다. 따라서 take가 아니라 taking이 적절하다.\n\n세 조건을 모두 만족하는 것은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t1",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-2d863e299c",
+"typeId": "exam2-eng-m22-ne-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 문법 설명이 모두 옳으면 O, 하나라도 틀리면 X를 입력하세요.\n\n① allow는 「allow + 목적어 + to부정사」의 형태로 쓰지만, let은 「let + 목적어 + 동사원형」의 형태로 쓴다.\n② help는 「help + 목적어 + 동사원형」의 형태로만 쓰이며, 목적격보어로 to부정사를 사용할 수 없다.",
+"selfGrade": true,
+"answer": "X",
+"solution": "① 옳다. allow는 목적어가 어떤 행동을 하도록 허락한다는 의미로 「allow + 목적어 + to부정사」의 형태를 사용한다. let은 「let + 목적어 + 동사원형」의 형태를 사용한다.\n② 틀리다. help는 「help + 목적어 + 동사원형」뿐 아니라 「help + 목적어 + to부정사」의 형태로도 쓸 수 있다. 따라서 ②가 틀렸으므로 정답은 X이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-48a13d48ef",
+"typeId": "exam2-eng-m22-ne-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 어휘의 의미와 쓰임에 관한 설명이 모두 옳으면 O, 하나라도 틀리면 X를 입력하세요.\n\ngive away는 물건을 무료로 주거나 나누어 준다는 의미로 사용할 수 있고, for sale은 판매할 목적으로 내놓은 상태를 나타낸다. 또한 post는 명사로 게시글을, 동사로 게시하다를 의미할 수 있다.",
+"selfGrade": true,
+"answer": "O",
+"solution": "세 가지 설명은 모두 옳다.\n① give away는 물건을 무료로 주거나 나누어 준다는 의미로 사용된다.\n② for sale은 판매할 목적으로 내놓은 상태를 의미하며, 반드시 할인 판매를 뜻하지는 않는다.\n③ post는 명사로 게시글이나 게시물을, 동사로 게시하다 또는 올리다를 의미할 수 있다.\n따라서 모든 설명이 옳으므로 정답은 O이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t0",
+"custom": true,
+"rv": 1
 }
 ]
