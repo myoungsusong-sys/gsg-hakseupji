@@ -2,6 +2,7 @@ import type { Assignment, Problem, SchoolExam, Student, Worksheet } from '../typ
 import { CURRICULA, curriculumFor, type Curriculum } from '../data/curriculum'
 import { gradeKey } from './grade'
 import { groupOf } from './schoolReview'
+import { isSchoolCourse, schoolKey } from '../data/schoolPub'
 
 // ── 📝 시험 범위 → 출제 (학생 시험 일정 표의 [이 범위로 출제]) — 2026-09-17 명수쌤 "이 범위로 출제 버튼 만들어줘" ──
 //
@@ -90,6 +91,23 @@ export function coursesForExamSubject(subject: string, grade: string, sem: 1 | 2
   }
   return out
 }
+/**
+ * 🏫 이 학생 학교·학기에 맞춘 시험대비 과정 — 2026-11-25 윤자혜 선생님 «시험범위를 올리면 그에 맞는 문제지 출제» (내포중 2학년)
+ *   ① 이름에 학교가 들어간 시험대비 과정(예: «시험대비 · 중2 영어 NE능률(김기택) (2026 2학기 기말 · 내포중)»)
+ *   ② 학교 교과서 표(schoolBooksSeed)와 출판사가 맞는 족보·내신 기출 과정(국어·영어)
+ *   교과서 본 과정에 시험 단원이 없을 때(능률 중2 본 과정은 1~4과뿐, 시험은 7·8과) 이 과정이 있어야 범위대로 나간다.
+ */
+export function schoolExamCourses(subject: string, st: Pick<Student, 'school' | 'grade'>, sem: 1 | 2): string[] {
+  const group = groupOf(subject)
+  const g = gradeKey(st.grade)
+  const key = schoolKey(st.school)
+  if (!group || !g || !key) return []
+  const same = (c: Curriculum) => (c.grade === `${g}-${sem}` || c.grade === g) && groupOf(c.subject ?? '') === group
+  const bySchool = CURRICULA.filter(c => /^(exam2?|set2?)-/.test(c.id) && same(c) && c.label.includes(key))
+  const byBook = CURRICULA.filter(c => /^(zb|ns)-/.test(c.id) && same(c) && isSchoolCourse(c, st.school, st.grade))
+  return [...bySchool, ...byBook].map(c => c.id)
+}
+
 export function subjectGroupOfCourse(courseId: string): ExamSubjectGroup {
   return (curriculumFor(courseId).subject ?? '수학') as ExamSubjectGroup
 }
@@ -105,14 +123,31 @@ export function parseRange(range: string | undefined, cur: Curriculum): RangePic
   if (!text || cur.units.length <= 1) return { midIds: all, how: 'all' }
   const flat = text.replace(/\s+/g, '')
 
+  // ⓪ 중단원 이름이 «1-2. …» 꼴이면 글자의 «1-(2)»·«1-2» 번호로 맞춘다 — 국어 교과서 과정(11/25 내포중 국어: «읽기»·«자료» 낱말로 4-1·3-2 까지 끌려옴)
+  const pairOf = (name: string) => /^\s*(\d+)\s*-\s*(\d+)\s*[.)]/.exec(name)
+  if (cur.units.some(u => u.mids.some(m => pairOf(m.name)))) {
+    const pairs = new Set([...text.matchAll(/(\d+)\s*-\s*\(?\s*(\d+)\s*\)?/g)].map(m => `${Number(m[1])}-${Number(m[2])}`))
+    const byPair = all.filter(id => { const m = cur.units.flatMap(u => u.mids).find(x => x.id === id); const p = m && pairOf(m.name); return !!p && pairs.has(`${Number(p[1])}-${Number(p[2])}`) })
+    if (byPair.length) return { midIds: byPair, how: 'name' }
+  }
+
   // ① 이름 — 중단원·대단원 이름이 글자에 있거나, 글자의 낱말이 이름 안에 있으면
   type Hit = { pos: number; mids: string[] }
   const hits: Hit[] = []
+  // 글자에 이름이 통째로 든 단원·중단원 — 그 이름의 낱말(«에너지»·«성질»·«호흡»)로 다른 단원을 또 끌어오지 않는다(11/25)
+  const exactNames = cur.units.flatMap(u => [u.name, ...u.mids.map(m => m.name)]).map(n => n.replace(/\s+/g, '')).filter(n => n.length >= 2 && flat.includes(n))
   const words = [...new Set(text.split(/[\s,·/~\-–()[\]]+/).map(w => w.replace(/(단원|까지|부터|에서)$/, '')).filter(w => /[가-힣]{2,}/.test(w) && !STOP.has(w)))]
+    .filter(w => !exactNames.some(n => n.includes(w)))
   for (const u of cur.units) {
     const un = u.name.replace(/\s+/g, '')
     const uPos = flat.indexOf(un)
-    if (un.length >= 2 && uPos >= 0) { hits.push({ pos: uPos, mids: u.mids.map(m => m.id) }); continue }
+    if (un.length >= 2 && uPos >= 0) {
+      // 대단원 이름 뒤에 그 안의 중단원을 골라 적었으면(«동물과 에너지 — 소화, 순환, 호흡») 그 중단원만
+      const named = u.mids.map(m => ({ m, pos: flat.indexOf(m.name.replace(/\s+/g, '')) })).filter(x => x.m.name.replace(/\s+/g, '').length >= 2 && x.pos >= 0)
+      if (named.length) named.forEach(x => hits.push({ pos: x.pos, mids: [x.m.id] }))
+      else hits.push({ pos: uPos, mids: u.mids.map(m => m.id) })
+      continue
+    }
     for (const m of u.mids) {
       const mn = m.name.replace(/\s+/g, '')
       let pos = mn.length >= 2 ? flat.indexOf(mn) : -1
@@ -130,7 +165,7 @@ export function parseRange(range: string | undefined, cur: Curriculum): RangePic
     // 'A~B' — 사이의 중단원도 넣는다
     for (let i = 0; i + 1 < hits.length; i++) {
       const between = flat.slice(hits[i].pos, hits[i + 1].pos)
-      if (/[~∼\-–]|부터/.test(between)) {
+      if (/[~∼–]|부터/.test(between)) {   // 11/25 «-» 는 뺌 — «1-(2)»·«2-3» 같은 번호 속 붙임표가 사이 단원을 다 끌어왔다
         const a = Math.min(...hits[i].mids.map(id => all.indexOf(id)))
         const b = Math.max(...hits[i + 1].mids.map(id => all.indexOf(id)))
         for (let k = a; k <= b; k++) pick.add(all[k])
@@ -146,6 +181,8 @@ export function parseRange(range: string | undefined, cur: Curriculum): RangePic
     for (let k = Number(m[1]); k <= Number(m[2]); k++) units.add(k)
   }
   for (const m of text.matchAll(/(\d+)\s*단원/g)) toks.push({ pos: m.index!, end: m.index! + m[0].length, n: Number(m[1]) })
+  // «7, 8단원» — 쉼표로 늘어놓은 번호도 (11/25 내포중 영어 범위)
+  for (const m of text.matchAll(/(\d+(?:\s*[,，·]\s*\d+)+)\s*(?:단원|과)/g)) for (const d of m[1].split(/[,，·]/)) units.add(Number(d.trim()))
   for (const m of text.matchAll(new RegExp(`[${ROMAN}]`, 'g'))) toks.push({ pos: m.index!, end: m.index! + 1, n: ROMAN.indexOf(m[0]) + 1 })
   toks.sort((a, b) => a.pos - b.pos)
   toks.forEach((t, i) => {
@@ -153,7 +190,9 @@ export function parseRange(range: string | undefined, cur: Curriculum): RangePic
     const prev = toks[i - 1]
     if (prev && /[~∼\-–]|부터/.test(text.slice(prev.end, t.pos))) for (let k = prev.n; k <= t.n; k++) units.add(k)
   })
-  const midIds = cur.units.filter((_, i) => units.has(i + 1)).flatMap(u => u.mids.map(m => m.id))
+  // 단원 이름에 번호가 있으면(«Lesson 7»·«7과»·«3단원») 그 번호로 맞춘다 — 기말 대비 과정은 5과부터 시작해 순서 번호와 다르다(11/25)
+  const noOf = (name: string, i: number) => { const m = /^\s*(?:Lesson\s*(\d+)|(\d+)\s*(?:과|단원))/i.exec(name); return m ? Number(m[1] ?? m[2]) : i + 1 }
+  const midIds = cur.units.filter((u, i) => units.has(noOf(u.name, i))).flatMap(u => u.mids.map(m => m.id))
   if (midIds.length) return { midIds, how: 'number' }
   return { midIds: all, how: 'all' }
 }

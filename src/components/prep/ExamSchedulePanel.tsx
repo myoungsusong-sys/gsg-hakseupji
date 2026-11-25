@@ -5,6 +5,8 @@ import { todayKey } from '../../lib/dates'
 import { dDayLabel, dayLabel, examPhase, examRows } from '../../lib/exam'
 import ExamForm from '../ExamForm'
 import ExamRangeAssign from './ExamRangeAssign'
+import { gradeKey } from '../../lib/grade'
+import { schoolKey } from '../../data/schoolPub'
 import type { SchoolExam, Student } from '../../types'
 
 // ── 📅 학생 시험 일정 (수업 준비 › 내신 대비 맨 위) ──────────────────────────────
@@ -17,6 +19,20 @@ export default function ExamSchedulePanel() {
   const [editing, setEditing] = useState<{ st: Student; exam?: SchoolExam } | null>(null)
   const [showAll, setShowAll] = useState(false)
   const [assign, setAssign] = useState<{ st: Student; exam: SchoolExam } | null>(null)
+  // 🏫 같은 학교·학년 학생 모두에게 한 번에 — 11/25 윤자혜 선생님 «시험범위를 올리면 …» (학교 시험 범위는 학생마다 같다)
+  const [toPeers, setToPeers] = useState(true)
+  const peersOf = (st: Student) => {
+    const k = schoolKey(st.school), g = gradeKey(st.grade)
+    return k && g ? students.filter(s => s.active && s.id !== st.id && schoolKey(s.school) === k && gradeKey(s.grade) === g) : []
+  }
+  const saveWithPeers = (st: Student, e: SchoolExam) => {
+    saveSchoolExam(e)
+    if (!toPeers) return
+    peersOf(st).forEach((p, i) => {
+      const had = schoolExams.find(x => x.studentId === p.id && x.name === e.name)
+      saveSchoolExam({ ...e, id: had?.id ?? `ex-${p.id}-${(Date.now() + i).toString(36)}`, studentId: p.id })
+    })
+  }
   const rows = useMemo(() => examRows(students.filter(s => s.active), schoolExams, worksheets, assignments, today),
     [students, schoolExams, worksheets, assignments, today])
   const withExam = rows.filter(r => r.exam)
@@ -41,8 +57,15 @@ export default function ExamSchedulePanel() {
       {editing && (
         <div className="mb-4 rounded-xl border border-pine/40 bg-pine-soft/20 p-4">
           <div className="mb-2 text-sm font-black text-pine-dark">{editing.st.name} — {editing.exam ? `${editing.exam.name} 고치기` : '시험 일정 넣기'}</div>
+          {peersOf(editing.st).length > 0 && (
+            <label className="mb-2 flex items-center gap-2 text-xs font-bold text-ink2">
+              <input type="checkbox" checked={toPeers} onChange={e => setToPeers(e.target.checked)} />
+              같은 학교·학년 학생 {peersOf(editing.st).length}명({peersOf(editing.st).map(s => s.name).join(', ')})에게도 같은 일정·범위로 넣기
+              <span className="font-normal">(이미 같은 이름의 시험이 있으면 새 범위로 바뀝니다)</span>
+            </label>
+          )}
           <ExamForm key={editing.exam?.id ?? `new-${editing.st.id}`} studentId={editing.st.id} by="teacher" initial={editing.exam}
-            onSave={e => { saveSchoolExam(e); setEditing(null) }} onCancel={() => setEditing(null)}
+            onSave={e => { saveWithPeers(editing.st, e); setEditing(null) }} onCancel={() => setEditing(null)}
             onDelete={editing.exam ? () => { removeSchoolExam(editing.exam!.id); setEditing(null) } : undefined} />
         </div>
       )}

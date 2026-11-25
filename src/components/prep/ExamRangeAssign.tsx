@@ -10,7 +10,7 @@ import { brandFor, DEFAULT_ACADEMY } from '../../lib/brand'
 import { dayLabel, examSubjects } from '../../lib/exam'
 import {
   assignedProblemIds, coursesForExamSubject, examSheetTitle, parseRange, pickCandidates, semesterOf,
-  subjectGroupOfCourse, typeIdsOfMids, type RangePick,
+  schoolExamCourses, subjectGroupOfCourse, typeIdsOfMids, type RangePick,
 } from '../../lib/examRange'
 import { indexPool, LEVELS, pickNaesinProblems, type NaesinLevel, type NaesinSet } from '../../lib/naesin'
 import { DEFAULT_SHEET_OPTIONS, type SchoolExam, type Student, type ThemeKey } from '../../types'
@@ -35,6 +35,9 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
     // 📘 국어: 학생 교과서가 있으면 그 교과서 과정(대단원 → 소단원·작품 → 유형)을 맨 앞에 — 학기·과목 이름으로 고른다
     const kb = st.korBook && courses[0]?.startsWith('kor-') ? korCourseFor(courses[0], st.korBook, sem, subject) : undefined
     if (kb) courses.unshift(kb)
+    // 🏫 학교 맞춤 시험대비 과정(이름에 학교가 든 과정·학교 교과서 족보)을 맨 앞에 — 11/25 윤자혜 «내포중»
+    const sc = schoolExamCourses(subject, st, sem).filter(id => !courses.includes(id))
+    if (sc.length) courses.unshift(...sc)
     const course = courses[0] ?? ''
     const pr = course ? parseRange(exam.ranges?.[subject], curriculumFor(course)) : { midIds: [], how: 'all' as const }
     return { subject, courses, course, on: courses.length > 0, mids: pr.midIds, how: pr.how }
