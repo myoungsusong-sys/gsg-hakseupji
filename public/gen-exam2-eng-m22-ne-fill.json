@@ -3052,5 +3052,273 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t2",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-fc39d60440",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 내용과 일치하는 것은?\n\nArtificial intelligence is a type of computer system. Like a dog learning new things, AI learns from information and experiences.",
+"choices": [
+"AI는 새로운 정보를 스스로 만들어 내며 학습한다.",
+"AI는 정보와 경험을 통해 학습한다.",
+"AI는 동물의 행동을 관찰해야 학습할 수 있다.",
+"AI는 경험보다 컴퓨터의 종류에 따라 학습한다.",
+"AI는 이미 학습한 정보만 활용할 수 있다."
+],
+"answer": "②",
+"solution": "마지막 문장에서 AI learns from information and experiences라고 하였으므로 AI는 정보와 경험을 통해 학습한다. 반려견은 AI의 학습 방식을 설명하기 위한 비교 대상이다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-41cf28f6b8",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글의 빈칸 (A)에 들어갈 말로 가장 적절한 것은?\n\nAI can learn what your face looks like. It can (A)________ your face to unlock your smartphone.",
+"choices": [
+"describe",
+"record",
+"display",
+"recognize",
+"remember"
+],
+"answer": "④",
+"solution": "AI는 사용자의 얼굴 생김새를 학습하고, 이를 바탕으로 사용자의 얼굴을 인식하여 스마트폰의 잠금을 해제한다. describe는 '묘사하다', record는 '기록하다', display는 '보여 주다', recognize는 '인식하다', remember는 '기억하다'라는 뜻이다. 얼굴 인식을 통한 잠금 해제라는 문맥에 가장 적절한 것은 recognize이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-38457b6a3a",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 1,
+"body": "다음 글을 읽고, AI를 사용할 때 주의해야 할 사항으로 언급되지 않은 것을 고르시오.\n\nCheck the information from AI carefully. Understand the information and express it in your own words. Also, do not give AI your personal information.",
+"choices": [
+"AI가 제공한 정보를 확인하기",
+"정보의 내용을 이해하기",
+"AI의 사용 시간을 제한하기",
+"자신의 말로 내용을 표현하기",
+"개인 정보를 제공하지 않기"
+],
+"answer": "③",
+"solution": "글에서는 정보의 정확성 확인, 내용의 이해와 자기 말로 표현하기, 개인 정보 보호를 강조한다. AI의 사용 시간을 제한해야 한다는 내용은 언급되지 않았다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6fa306a4fa",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 2,
+"body": "다음 글에서 [A]로 표시한 부분에 대한 설명으로 가장 적절한 것은?\n\nAI sometimes gives incorrect information. It is important [A: to check the information carefully].",
+"choices": [
+"문장에서 실제로 중요하다고 판단하는 대상인 진주어이다.",
+"AI를 사용하는 목적을 나타내는 부사적 용법이다.",
+"중요하다고 판단한 이유를 나타내는 부사적 용법이다.",
+"앞 문장의 information을 수식하는 형용사적 용법이다.",
+"앞 문장에서 AI가 수행하는 동작을 설명하는 보어이다."
+],
+"answer": "①",
+"solution": "It is important to check the information carefully.에서 It은 가주어이고 to check the information carefully는 진주어이다. 문장이 의미상 중요하다고 판단하는 대상은 정보를 주의 깊게 확인하는 행위이다. 따라서 ①이 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f26e1a923e",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글에서 [A]~[E]로 표시한 부분에 대한 설명으로 적절하지 않은 것은?\n\nAI learns from information and experiences. It can study the videos [A: that] you have watched. It uses this information [B: to recommend new videos]. AI can also learn [C: what] your face looks like. Over time, it becomes better at [D: recognizing your face], [E: even if] you wear a mask.",
+"choices": [
+"[A]는 the videos를 선행사로 하는 목적격 관계대명사이다.",
+"[B]는 AI가 해당 정보를 사용하는 목적을 나타낸다.",
+"[C]는 동사 learn의 목적어 역할을 하는 간접의문문을 이끈다.",
+"[D]는 전치사 at의 목적어 역할을 하는 동명사구이다.",
+"[E]는 마스크 착용이 얼굴 인식에 필요한 조건임을 나타낸다."
+],
+"answer": "⑤",
+"solution": "① that은 관계대명사절에서 have watched의 목적어 역할을 한다. ② to recommend new videos는 정보를 활용하는 목적을 나타낸다. ③ what your face looks like는 learn의 목적어인 간접의문문이다. ④ recognizing your face는 전치사 at의 목적어인 동명사구이다. ⑤ even if는 '~하더라도'라는 양보의 의미를 나타내므로 마스크 착용이 얼굴 인식의 필수 조건이라는 설명은 틀리다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-d5c1036f18",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고, <보기>에서 글의 내용과 일치하는 것만을 있는 대로 고른 것은?\n\nAI learns in a way similar to a pet dog. It learns from information and experiences, but it does not need snacks. In everyday life, AI uses information about the videos you have watched to recommend other videos. It also learns what your face looks like and gradually gets better at recognizing you.\n\n<보기>\nㄱ. AI와 반려견의 학습 방식에는 공통점이 있다.\nㄴ. AI는 사용자의 이전 동영상 시청 정보를 추천에 활용한다.\nㄷ. AI는 동영상을 추천하기 위해 사용자의 얼굴을 학습한다.\nㄹ. AI와 반려견에게 필요한 학습 요소가 모두 동일한 것은 아니다.\nㅁ. AI의 얼굴 인식 능력은 처음 학습한 수준으로 유지된다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "④",
+"solution": "ㄱ. AI는 반려견과 유사한 방식으로 학습하므로 옳다. ㄴ. 이전 동영상 시청 정보를 새로운 동영상 추천에 활용하므로 옳다. ㄷ. 얼굴 학습은 얼굴 인식과 관련되므로 틀리다. ㄹ. AI는 반려견과 달리 간식이 필요하지 않으므로 옳다. ㅁ. 얼굴 인식 능력은 점차 향상되므로 틀리다. 따라서 ㄱ, ㄴ, ㄹ을 고른 ④가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1bb8a224d4",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?\n\nWhen using AI, you should be careful about accuracy and originality.\n\n(A) However, finding that the information is correct is not enough. You should also understand the information instead of simply copying it.\n\n(B) After understanding it, express the information in your own words. In this way, you can use information from AI wisely.\n\n(C) First, remember that AI sometimes makes mistakes. Therefore, you need to check whether the information from AI is correct.",
+"choices": [
+"(A)－(C)－(B)",
+"(C)－(A)－(B)",
+"(B)－(A)－(C)",
+"(B)－(C)－(A)",
+"(C)－(B)－(A)"
+],
+"answer": "②",
+"solution": "주어진 글은 AI를 사용할 때 정확성과 독창성을 고려해야 한다고 말한다. (C)는 First로 시작하며 정보의 정확성을 확인하도록 권한다. (A)의 finding that the information is correct는 (C)의 정확성 확인을 이어받으며, 추가로 정보의 이해가 필요하다고 설명한다. (B)의 After understanding it은 (A)의 이해 과정을 이어받아 자신의 말로 표현하도록 권한다. 따라서 (C)－(A)－(B)의 순서가 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-1ece3664a5",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?\n\n<주어진 문장>\nThese changes do not necessarily prevent AI from recognizing you.\n\nAI is useful in everyday life. (A) One example is using AI to unlock a smartphone. (B) AI learns the appearance of your face to recognize you. (C) As time passes, you may have a different hairstyle or wear a mask. (D) This is because AI gradually becomes better at recognizing your face through learning. (E)",
+"choices": [
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+"answer": "④",
+"solution": "주어진 문장은 '이러한 변화가 반드시 AI의 얼굴 인식을 방해하는 것은 아니다.'라는 뜻이다. These changes는 앞에 제시된 머리 모양의 변화와 마스크 착용을 가리킨다. 따라서 두 변화가 언급된 문장 뒤에 들어가야 한다. 또한 뒤 문장의 This is because는 그러한 변화에도 얼굴 인식이 가능할 수 있는 이유를 설명한다. 두 연결 관계를 모두 충족하는 위치는 (D)이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-b1ff8534e9",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고, <보기>의 학생들에 대한 판단으로 적절한 것만을 있는 대로 고른 것은?\n\nThere are three important things to remember when using AI. First, check the information because it may be incorrect. Second, understand the information and use your own words instead of copying it. Finally, protect your personal information by not sharing it with AI.\n\n<보기>\n학생 A: AI가 제공한 내용을 이해하고 내 말로 바꾸었지만, 정보가 사실인지는 확인하지 않았어.\n학생 B: 정보가 사실임을 확인했지만, 내용을 이해하지 못한 채 그대로 옮겨 적었어.\n학생 C: 정보를 확인하고 이해한 내용을 내 말로 표현했지만, AI에 개인 정보를 제공했어.\n\nㄱ. 학생 A는 정보의 정확성을 확인하는 과정이 필요하다.\nㄴ. 학생 B는 정보를 이해하고 자신의 말로 표현해야 한다.\nㄷ. 학생 C는 개인 정보 보호에 관한 조언을 지키지 않았다.\nㄹ. 학생 A는 자신의 말로 표현했으므로 정보의 정확성도 확보하였다.\nㅁ. 학생 B는 정보의 정확성을 확인했으므로 독창성에 관한 조언도 지켰다.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄴ, ㄹ, ㅁ",
+"ㄱ, ㄴ, ㄷ"
+],
+"answer": "⑤",
+"solution": "ㄱ. 학생 A는 내용의 정확성을 확인하지 않았으므로 옳다. ㄴ. 학생 B는 내용을 이해하지 못하고 복사했으므로 옳다. ㄷ. 학생 C는 개인 정보를 제공했으므로 옳다. ㄹ. 자신의 말로 표현하는 것만으로 정보의 정확성이 확보되지는 않으므로 틀리다. ㅁ. 정확성 확인과 독창적 표현은 서로 다른 주의 사항이므로 틀리다. 따라서 ㄱ, ㄴ, ㄷ만 적절하다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-f186e847c3",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용과 문장 구조를 함께 고려할 때, <보기>의 설명 중 옳은 것만을 있는 대로 고른 것은?\n\nAI can recommend videos [A: that] you may enjoy. To do this, it studies [B: which videos you have watched]. AI also learns [C: what your face looks like]. Over time, it gets better at recognizing your face, [D: even if] you change your hairstyle.\n\n<보기>\nㄱ. [A]는 목적격 관계대명사로 생략할 수 있다.\nㄴ. [B]와 [C]는 각각 studies와 learns의 목적어 역할을 한다.\nㄷ. [C]를 what does your face look like로 바꾸어도 문장의 어법은 올바르다.\nㄹ. [D]는 머리 모양의 변화가 얼굴 인식 능력 향상의 필수 조건임을 나타낸다.\nㅁ. 동영상 추천과 얼굴 인식은 모두 AI가 학습한 정보를 활용하는 사례이다.",
+"choices": [
+"ㄱ, ㄴ, ㅁ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㅁ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㄹ"
+],
+"answer": "①",
+"solution": "ㄱ. that은 enjoy의 목적어인 관계대명사이므로 생략할 수 있다. ㄴ. which videos you have watched와 what your face looks like는 각각 studies와 learns의 목적어인 간접의문문이므로 옳다. ㄷ. 간접의문문에서는 의문사 뒤에 평서문의 어순을 사용하므로 직접의문문의 어순으로 바꿀 수 없다. ㄹ. even if는 양보의 의미이므로 머리 모양의 변화가 필수 조건이라는 설명은 틀리다. ㅁ. 두 기능 모두 AI가 정보를 학습하여 활용하는 사례이므로 옳다. 따라서 ①이 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-6f9ab5a7ce",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 읽고, 글의 내용으로부터 추론할 수 있는 것으로 가장 적절한 것은?\n\nAI learns from information and experiences, just as a pet dog learns new things. This ability allows AI to recommend videos and recognize faces. However, AI does not always provide correct information. Even when its information is correct, users should understand it and express it in their own words. They should also avoid sharing personal information with AI.",
+"choices": [
+"AI의 학습 능력이 향상되면 정보 검토의 필요성은 사라진다.",
+"AI의 활용도를 높이려면 개인 정보 제공을 우선적으로 고려해야 한다.",
+"AI의 유용성을 인정하더라도 정보 활용에 관한 사용자의 판단은 필요하다.",
+"AI가 제공한 정보의 정확성을 확인하면 원문을 그대로 활용해도 된다.",
+"AI의 학습 능력을 평가할 때는 제공하는 정보의 양을 우선해야 한다."
+],
+"answer": "③",
+"solution": "글의 앞부분에서는 AI의 학습 능력과 일상생활에서의 유용성을 설명하고, 뒷부분에서는 정보의 정확성 확인, 내용의 이해와 자기 말로 표현하기, 개인 정보 보호를 강조한다. 따라서 AI의 유용성과 별개로 사용자의 비판적 판단이 필요하다는 ③이 적절하다. ①은 정보 확인의 필요성, ②는 개인 정보 보호, ④는 독창적 표현에 관한 내용과 어긋난다. ⑤의 정보량을 우선적인 평가 기준으로 삼아야 한다는 내용은 글에서 추론할 수 없다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-760523aef1",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것은?\n\nAI is able to learn from information and experiences. It can make useful recommendations and improve its ability to recognize faces. However, being useful does not mean that AI is always correct. Users need to check its information, express what they understand in their own words, and protect their personal information.\n\n<요약문>\nAlthough AI's ability to (A)________ makes it useful, users should not take the (B)________ of its information for granted and should respect both originality and (C)________.",
+"choices": [
+"learn ― originality ― privacy",
+"learn ― accuracy ― privacy",
+"recommend ― accuracy ― convenience",
+"communicate ― reliability ― creativity",
+"recognize ― usefulness ― originality"
+],
+"answer": "②",
+"solution": "글의 앞부분은 정보와 경험을 통해 학습하는 능력이 AI의 유용성을 뒷받침한다고 설명하므로 (A)는 learn이 적절하다. 뒤에서는 AI가 항상 정확하지 않으므로 제공된 정보의 정확성을 당연하게 여겨서는 안 된다고 설명한다. 따라서 (B)는 accuracy이다. 마지막으로 자신의 말로 표현하기와 개인 정보 보호를 강조하므로 (C)는 privacy가 적절하다. take ~ for granted는 '~을 당연하게 여기다'라는 뜻이다. 따라서 ②가 정답이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-38565222d6",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, 질문에 대한 영어 답변을 <조건>에 맞게 완성하시오.\n\nAI learns from information and experiences. For example, it can learn the appearance of your face. As it learns, it becomes better at recognizing you, even when your hairstyle changes or you wear a mask.\n\nQ: What does AI learn about your face?\nA: It learns ____________________.\n\n<조건>\n• what, your, face, looks, like를 각각 한 번씩 모두 사용할 것.\n• 주어진 단어 이외의 단어를 추가하지 말 것.\n• 간접의문문의 어순에 맞게 배열할 것.",
+"selfGrade": true,
+"answer": "what your face looks like",
+"solution": "본문의 the appearance of your face는 '사용자의 얼굴 생김새'라는 뜻이다. 이를 간접의문문으로 표현하면 what your face looks like가 된다. 직접의문문 What does your face look like?와 달리 간접의문문에서는 '의문사＋주어＋동사'의 어순을 사용한다. 따라서 정답은 what your face looks like이다. 채점 기준: 주어진 다섯 단어를 각각 한 번씩 사용하고 정확한 간접의문문 어순으로 배열한 경우에만 정답으로 인정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-72fe2c851f",
+"typeId": "exam2-eng-m22-ne-u3m0s1t2",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 글을 읽고, AI를 사용할 때 마지막 문장에서 강조하는 주의 사항을 나타내도록 빈칸에 들어갈 영어 문장을 <조건>에 맞게 쓰시오.\n\nInformation from AI may be incorrect. Therefore, users need to check it carefully. Also, they should not give AI their personal information.\n\n→ ____________________.\n\n<조건>\n• '자신의 개인 정보를 AI와 공유하는 것은 안전하지 않다.'라는 의미가 되도록 쓸 것.\n• 가주어와 진주어를 이용할 것.\n• it, is, not, safe, to, share, your, personal, information, with, AI를 각각 한 번씩 모두 사용할 것.\n• 주어진 단어 이외의 단어를 추가하지 말 것.\n• 문장 첫 글자는 대문자로 쓰고 마침표를 붙일 것.",
+"selfGrade": true,
+"answer": "It is not safe to share your personal information with AI.",
+"solution": "본문의 마지막 문장은 AI에 개인 정보를 제공하지 않아야 한다는 내용이다. 이를 주어진 조건에 맞게 표현하려면 가주어 It을 문장 앞에 두고 is not safe를 이어 쓴다. 실제 주어에 해당하는 to share your personal information with AI는 문장 뒤에 배치한다. 따라서 It is not safe to share your personal information with AI.가 정답이다. 채점 기준: 가주어 It과 진주어인 to부정사구를 정확하게 사용하고, 제시된 단어를 각각 한 번씩 사용하며, 대문자와 마침표 조건까지 충족한 경우에만 정답으로 인정한다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t2",
+"custom": true,
+"rv": 1
 }
 ]
