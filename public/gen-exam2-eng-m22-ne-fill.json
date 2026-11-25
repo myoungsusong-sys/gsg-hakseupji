@@ -8698,5 +8698,133 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-feb4d8c05b",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <자료>와 <문장 전환 조건>을 바탕으로 학생들이 작성한 문장을 평가한 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<자료>\n(A) AI does not always provide correct information.\n(B) You should not blindly copy the information that AI provides.\n(C) Sharing your personal information with AI is not safe.\n(D) You should carefully check the information before using it.\n\n<문장 전환 조건>\n• (A)는 정보의 정확성을 나타내는 형용사와 부분 부정의 의미를 유지할 것.\n• (B)는 가주어 It과 형용사 careless를 사용하여 충고를 가정된 행동에 대한 평가로 바꿀 것.\n• (C)는 가주어 It을 사용하고, you를 to부정사의 의미상 주어로 나타낼 것.\n• (D)는 가주어 It과 형용사 important를 사용하되, 행동의 순서와 부사의 수식 대상을 유지할 것.\n\n<학생들이 작성한 문장>\n㉠ AI always provides information that is not correct.\n㉡ It would be careless of you to blindly copy the information AI provides.\n㉢ It is not safe of you to share your personal information with AI.\n㉣ It is important for you to check the information before using it carefully.\n\n<보기>\nㄱ. ㉠을 AI provides information that is not always correct.로 수정하면 정보의 정확성을 나타내는 형용사와 부분 부정의 의미를 모두 유지할 수 있다.\nㄴ. ㉡에서 information 뒤에 목적격 관계대명사 that을 넣고 blindly를 copy 바로 앞으로 유지하면 문장 전환 조건을 충족한다.\nㄷ. ㉢에서 of를 for로 바꾸는 대신 safe를 careless로 바꾸고 not을 삭제해도 (C)의 의미와 문장 전환 조건을 모두 충족한다.\nㄹ. ㉣에서 carefully를 check 바로 앞으로 옮기면 정보를 확인하는 행동과 사용하는 행동의 순서를 유지하면서 부사의 수식 대상도 바로잡을 수 있다.\nㅁ. ㉣에서 carefully의 위치를 그대로 두고 before using it을 before you use it으로 바꾸기만 하면 (D)의 문장 전환 조건을 모두 충족한다.",
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "②",
+"solution": "ㄱ. (O) 원문의 not always는 항상 그런 것은 아니라는 부분 부정을 나타낸다. ㉠의 always와 not correct의 결합은 AI가 제공하는 정보가 언제나 부정확하다는 의미이다. information that is not always correct로 수정하면 부분 부정의 의미를 유지하며, correct는 정보의 정확성을 나타내는 형용사로 쓰인다.\nㄴ. (O) the information AI provides에서 생략된 관계대명사는 provides의 목적어 역할을 하는 that이다. 이를 복원할 수 있으며, blindly는 copy를 수식한다. careless는 사람의 행동에 나타난 태도를 평가하는 형용사이므로 of you도 적절하다.\nㄷ. (X) It is careless of you to share your personal information with AI.는 어법상 옳지만 개인정보를 공유하는 행동이 부주의하다는 평가이다. 원문은 개인정보 공유의 안전성에 관한 판단이므로 의미가 달라진다. It is not safe for you to share your personal information with AI.로 수정해야 한다.\nㄹ. (O) ㉣의 carefully는 using을 수식한다. 이를 check 바로 앞으로 옮기면 확인하는 행동을 수식하게 되며, before using it에 의해 확인 후 사용이라는 순서도 유지된다.\nㅁ. (X) before you use it carefully로 수정하면 carefully는 여전히 use를 수식한다. 따라서 정보를 주의 깊게 확인해야 한다는 원문의 의미를 유지하지 못한다.\n따라서 옳은 것은 ㄱ, ㄴ, ㄹ이므로 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-4798a77738",
+"typeId": "exam2-eng-m22-ne-u3m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <편집 기준>에 따라 작성한 수정 문장과 추가 수정 방안을 검토한 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<자료>\nAI can provide useful information, but the information is not always correct. You should carefully check the information before using it. Even if the information is correct, you should not blindly copy it. Also, sharing your personal information with AI is not safe. By following these rules, you can use AI wisely and safely.\n\n<편집 기준>\n• 문장이 어법상 옳아야 한다.\n• 부분 부정, 양보, 행동의 순서 등 원문의 핵심 의미를 유지해야 한다.\n• 대명사의 지칭 대상과 형용사 및 부사의 수식 관계를 유지해야 한다.\n• 가주어 It을 사용하는 경우 형용사의 성격에 맞는 의미상 주어를 사용해야 한다.\n\n<수정 문장>\n(A) AI can provide useful information that is always incorrect.\n(B) It is important of you to carefully check the information AI provides before using it.\n(C) Only if the information is correct should you avoid blindly copying it.\n(D) It is not safe for you to share your personal information with AI.\n(E) If you follow these rules, you can use AI in a wise and safe way.\n\n<보기>\nㄱ. (A)의 always incorrect를 not always correct로 바꾸면 어법상 오류 없이 원문의 부분 부정 의미를 회복할 수 있다.\nㄴ. (B)의 of you를 for you로 바꾸고 information 뒤에 목적격 관계대명사 that을 넣으면 편집 기준을 충족하며, using it의 it은 the information을 가리킨다.\nㄷ. (C)를 Even if the information is correct, you should avoid blindly copying it.으로 바꾸면 원문의 양보 의미와 충고의 내용을 유지할 수 있다.\nㄹ. (D)에서 for you를 of you로 바꾸고 safe를 wise로 바꾸면 어법상 옳으면서 개인정보 공유의 안전성에 관한 원문의 판단도 그대로 유지된다.\nㅁ. (E)에서 in a wise and safe way를 wisely and safely로 바꿀 수 있지만, wisely and safe로 바꾸어도 두 단어가 동등하게 use를 수식하므로 편집 기준을 충족한다.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄹ, ㅁ"
+],
+"answer": "④",
+"solution": "ㄱ. (O) always incorrect는 언제나 부정확하다는 뜻이지만 not always correct는 언제나 정확한 것은 아니라는 뜻이다. 따라서 not always correct로 수정해야 원문의 부분 부정 의미를 유지할 수 있다. 관계대명사 that은 information을 선행사로 하는 주격 관계대명사로 적절하게 사용되었다.\nㄴ. (O) important는 해당 행동의 중요성을 평가하는 형용사이므로 to부정사의 의미상 주어는 for you로 나타낸다. the information과 AI provides 사이에는 provides의 목적어 역할을 하는 관계대명사 that이 생략되어 있으므로 이를 복원할 수 있다. carefully는 check를 수식하며, using it의 it은 the information을 가리킨다. 따라서 수정하면 모든 편집 기준을 충족한다.\nㄷ. (O) Only if는 해당 조건이 충족되는 경우에만이라는 제한적 조건을 나타내지만, Even if는 해당 조건이 충족되더라도라는 양보를 나타낸다. avoid는 동명사를 목적어로 취하므로 avoid blindly copying it은 어법상 옳으며, should avoid blindly copying it은 원문의 충고를 유지한다.\nㄹ. (X) It is not wise of you to share your personal information with AI.는 어법상 옳다. 그러나 행동이 현명하지 않다는 판단과 행동이 안전하지 않다는 판단은 동일하지 않으므로 원문의 의미를 그대로 유지하지 못한다.\nㅁ. (X) in a wise and safe way에서 wise와 safe는 명사 way를 수식하는 형용사이다. 이 전체 표현을 동사 use를 수식하는 부사 표현으로 바꾸려면 wisely and safely를 사용해야 한다. wisely and safe는 부사와 형용사를 연결한 것으로, 두 단어가 모두 use를 수식해야 한다는 편집 기준을 충족하지 못한다.\n따라서 옳은 것은 ㄱ, ㄴ, ㄷ이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-880dd708c2",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 중 [ ] 안의 표현이 모두 어법상 옳은 것은?",
+"choices": [
+"The app allows people [borrow] bikes without [buying] them.",
+"I look forward to [using] the backpack that my friend [give] me yesterday.",
+"Scanning the QR code makes the lock [open], allowing people [to use] the bike.",
+"Anyone who [has] the app can enjoy [to ride] a shared bike.",
+"My friend let me [to take] a backpack without [paying] for it."
+],
+"answer": "③",
+"solution": "③ 사역동사 make는 목적어 뒤에 목적격 보어로 동사원형을 취하므로 open이 옳다. 또한 allow는 목적어 뒤에 목적격 보어로 to부정사를 취하므로 to use도 옳다. ① allow의 목적격 보어이므로 borrow를 to borrow로 고쳐야 한다. ② yesterday가 과거의 시점을 나타내므로 give를 gave로 고쳐야 한다. ④ enjoy는 동명사를 목적어로 취하므로 to ride를 riding으로 고쳐야 한다. ⑤ 사역동사 let의 목적격 보어는 동사원형이므로 to take를 take로 고쳐야 한다. 따라서 두 표현이 모두 옳은 것은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-95a846c74f",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고, <보기>에서 글의 내용과 일치하면서 어법상 옳은 문장만을 모두 고른 것은?\n\nLast Saturday, I decided to use a shared bike. The first bike I chose had a problem with its front wheel, so I chose another one. After scanning the second bike's QR code, I checked its condition before riding it to the park. I returned it to a station near the park entrance before meeting Mina.\n\nMina had brought two backpacks to a sharing event. The blue one was smaller than the green one, but both were bigger than my old backpack. Although I liked the green one better, I chose the blue one because it was lighter. Mina let me take it for free. On my way home, I wondered which of my things other people might need. The experience made me decide to bring something to the next sharing event.\n\n<보기>\nㄱ. The writer checked what condition the second bike was in before scanning its QR code.\nㄴ. The writer returned the bike to a station without having met Mina yet.\nㄷ. The backpack the writer chose was not as big as the green one, but it was bigger than the writer's old one.\nㄹ. The writer chose the lighter backpack, although it was not the one that the writer liked better.\nㅁ. Mina allowed the writer take the blue backpack without paying for it.\nㅂ. On the way home, the writer wondered which of the writer's things might other people need.\nㅅ. Getting the backpack for free was part of the experience that made the writer decide to take part in the next sharing event.",
+"choices": [
+"ㄱ, ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㅁ, ㅅ",
+"ㄴ, ㄷ, ㄹ, ㅅ",
+"ㄴ, ㄹ, ㅁ, ㅂ",
+"ㄷ, ㄹ, ㅂ, ㅅ"
+],
+"answer": "③",
+"solution": "각 진술에 대하여 내용 일치 여부와 어법의 정확성을 모두 판단해야 한다.\nㄱ. (×) what condition the second bike was in은 간접의문문의 어순에 맞는다. 그러나 글에서는 두 번째 자전거의 QR 코드를 스캔한 후 자전거의 상태를 확인했다고 하였다. 따라서 before scanning은 글의 내용과 일치하지 않는다.\nㄴ. (○) 글에서 필자는 Mina를 만나기 전에 자전거를 반납하였다. without 뒤에 완료동명사 having met이 사용되어 반납 시점까지 Mina를 만나지 않았음을 나타내므로 내용과 어법이 모두 옳다.\nㄷ. (○) 가방의 크기는 초록색 가방, 파란색 가방, 필자의 기존 가방 순으로 크다. 필자는 파란색 가방을 선택했으므로 초록색 가방만큼 크지는 않지만 기존 가방보다는 크다는 진술이 옳다. not as big as와 bigger than의 형태도 모두 정확하다.\nㄹ. (○) 필자는 초록색 가방을 더 좋아했지만 더 가벼운 파란색 가방을 선택하였다. 양보의 접속사 although와 목적격 관계대명사 that도 올바르게 사용되었다.\nㅁ. (×) Mina가 필자에게 파란색 가방을 무료로 가져가도록 했다는 내용은 옳다. 그러나 allow는 목적어 뒤에 목적격 보어로 to부정사를 취하므로 take를 to take로 고쳐야 한다.\nㅂ. (×) 필자가 다른 사람들이 자신의 물건 중 무엇을 필요로 할지 궁금해했다는 내용은 옳다. 그러나 간접의문문은 의문사구 뒤에 주어와 동사가 이어져야 하므로 which of the writer's things other people might need로 고쳐야 한다.\nㅅ. (○) 가방을 무료로 받은 것은 필자가 다음 나눔 행사에 참여하기로 결심한 경험의 일부이다. 동명사구 Getting the backpack for free가 문장의 주어이고, that은 주격 관계대명사이며, made the writer decide는 사역동사 make의 올바른 형태이다.\n따라서 내용과 어법이 모두 옳은 진술은 ㄴ, ㄷ, ㄹ, ㅅ이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-8dac7cb890",
+"typeId": "exam2-eng-m22-ne-u2m0s0t3",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 <조건>에 따라 <보기>의 영어 문장을 고치려고 한다. 모든 조건을 만족하도록 고칠 수 있는 문장의 개수를 고르시오.\n\n<조건>\n• 각 소괄호 안에 주어진 단어의 형태만 바꿀 수 있다.\n• 동사의 형태를 바꿀 때 동사원형, 현재형, 과거형, 동명사, to부정사를 사용할 수 있다. 이때 to의 추가는 허용한다.\n• 형용사와 부사는 문맥에 맞게 원급 또는 비교급으로 바꿀 수 있다.\n• 형태가 이미 올바른 경우에는 그대로 둘 수 있다.\n• 소괄호 밖의 단어는 추가, 삭제, 교체하거나 어순을 바꿀 수 없다.\n• 수정한 문장은 주어진 우리말의 의미와 일치하고 어법상 옳아야 한다.\n\n<보기>\nㄱ. 그 앱은 계정이 있는 사람이라면 누구나 자전거를 사지 않고도 빌릴 수 있게 해 준다.\nThe app allows anyone who (have) an account (borrow) a bike without (buy) one.\n\nㄴ. 나는 내가 받은 가방이 예전 가방보다 더 가벼웠기 때문에 그것을 학교에서 사용하기를 고대했다.\nI looked forward to (use) the backpack I (receive) at school because it was as (light) as my old one.\n\nㄷ. 내가 어제 만난 소녀는 내가 무엇을 필요로 하는지 물었고, 내가 가방 하나를 무료로 가져가게 해 주었다.\nThe girl I (meet) yesterday asked what I (need) and let me (take) a backpack for free.\n\nㄹ. 그 경험은 내가 더 이상 필요로 하지 않는 물건을 나누는 것에 대해 생각하게 했다.\nThe experience made me (think) about (share) the things that I no longer need them.\n\nㅁ. Mina는 자신이 받은 가방이 예전 가방보다 얼마나 더 가벼운지 알고 싶어 했다.\nMina wanted to know how much (light) the backpack she (receive) was than her old one.\n\nㅂ. 나는 자전거의 상태를 확인하기 전에 자물쇠를 열기 위해 QR 코드를 스캔했다.\nI scanned the QR code (open) the lock after (check) the condition of the bike.\n\nㅅ. 더 이상 그 가방이 필요하지 않았던 누군가가 다른 사람이 그것을 무료로 가져가도록 허락했다.\nSomeone who no longer (need) the backpack allowed another person (take) it without (pay) for it.\n\nㅇ. 나는 내가 어떤 물건을 다른 사람들과 공유할 수 있을지 궁금했고, 다음 나눔 행사에 참여하기로 결정했다.\nI wondered which of my things (can) I share with others and decided (join) the next sharing event.",
+"choices": [
+"2개",
+"3개",
+"4개",
+"5개",
+"6개"
+],
+"answer": "③",
+"solution": "괄호 안의 형태를 올바르게 바꿀 수 있는지뿐만 아니라 괄호 밖의 어법과 우리말에 대한 의미 일치 여부도 함께 확인해야 한다.\nㄱ. (○) The app allows anyone who has an account to borrow a bike without buying one. 관계대명사 who의 선행사 anyone은 단수이므로 has를 사용한다. allow의 목적격 보어로 to borrow를, 전치사 without의 목적어로 buying을 사용하면 모든 조건을 만족한다.\nㄴ. (×) look forward to 뒤에는 using이 와야 하며 receive는 received로 바꿀 수 있다. 그러나 as light as는 두 가방의 무게가 같다는 의미이다. 우리말의 '더 가벼웠기 때문에'를 나타내려면 lighter than으로 비교 구문을 바꾸어야 한다. 괄호 밖의 as를 수정해야 하므로 조건을 만족할 수 없다.\nㄷ. (○) The girl I met yesterday asked what I needed and let me take a backpack for free. yesterday에 맞추어 meet를 met으로, 과거의 질문 내용을 나타내도록 need를 needed로 바꾼다. 간접의문문 what I needed는 의문사+주어+동사의 어순을 따르고, 사역동사 let의 목적격 보어 take는 동사원형 그대로 둔다. 모든 조건을 만족한다.\nㄹ. (×) make의 목적격 보어인 think는 그대로 두고, 전치사 about 뒤의 share를 sharing으로 바꿀 수 있다. 그러나 the things that I no longer need them에서 목적격 관계대명사 that과 목적어 them이 중복된다. 괄호 밖의 them을 삭제해야 하므로 조건을 만족할 수 없다.\nㅁ. (○) Mina wanted to know how much lighter the backpack she received was than her old one. 비교급을 강조하는 how much 뒤에는 lighter가 와야 하며 receive는 received로 바꾼다. 간접의문문의 주어는 the backpack she received이고 동사는 was이다. she received는 목적격 관계대명사가 생략된 관계절로 backpack을 수식한다. 따라서 간접의문문의 어순과 비교 구문이 모두 올바르고 우리말의 의미에도 일치한다.\nㅂ. (×) 목적을 나타내는 to부정사 to open과 전치사 뒤의 동명사 checking을 사용할 수 있다. 그러나 after checking은 자전거의 상태를 확인한 후라는 의미로 우리말의 '확인하기 전에'와 반대이다. 괄호 밖의 after를 before로 바꾸어야 하므로 조건을 만족할 수 없다.\nㅅ. (○) Someone who no longer needed the backpack allowed another person to take it without paying for it. 과거에 가방이 필요하지 않았으므로 needed를 사용한다. allow의 목적격 보어로 to take를, 전치사 without의 목적어로 paying을 사용하면 내용과 어법이 모두 옳다.\nㅇ. (×) can을 could로, join을 to join으로 바꾸더라도 which of my things could I share with others는 직접의문문의 어순이다. 간접의문문에서는 which of my things I could share with others로 써야 한다. 괄호 밖의 I의 위치를 바꾸어야 하므로 조건을 만족할 수 없다.\n따라서 모든 조건을 만족하도록 고칠 수 있는 문장은 ㄱ, ㄷ, ㅁ, ㅅ으로 총 4개이므로 정답은 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t3",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-aa02ae0dc8",
+"typeId": "exam2-eng-m22-ne-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장은 모두 어법상 옳으며, (A)의 share 앞에는 to를 넣을 수 있지만 (B)의 share 앞에는 to를 넣을 수 없다.\n\n(A) The app helps people share their things.\n(B) The app lets people share their things.\n\n옳으면 O, 틀리면 X를 입력하세요.",
+"selfGrade": true,
+"answer": "O",
+"solution": "help는 목적격보어로 동사원형 또는 to부정사를 취할 수 있으므로 (A)의 share는 to share로 바꿀 수 있다. 반면 let은 사역동사로, 능동태에서 목적격보어로 동사원형을 취하므로 (B)의 share를 to share로 바꿀 수 없다. 따라서 제시된 설명은 옳으며 정답은 O이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ec69e33240",
+"typeId": "exam2-eng-m22-ne-u2m0s0t0",
+"kind": "주관식",
+"diff": 2,
+"body": "다음 두 문장에서 who는 모두 주격 관계대명사이므로 생략할 수 없으며, (A)의 for sale을 (B)의 give away와 같은 의미가 되도록 해석할 수 있다.\n\n(A) Anyone who has things for sale can use the app.\n(B) Anyone who wants to give away things can use the app.\n\n옳으면 O, 틀리면 X를 입력하세요.",
+"selfGrade": true,
+"answer": "X",
+"solution": "두 문장에서 who는 선행사 Anyone을 수식하는 관계대명사절의 주어이므로 생략할 수 없다. 따라서 관계대명사에 관한 설명은 옳다. 그러나 for sale은 '판매 중인'이라는 뜻이고, give away는 '무료로 주다'라는 뜻이므로 두 표현의 의미는 서로 다르다. 따라서 어휘에 관한 설명은 틀렸으며 정답은 X이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s0t0",
+"custom": true,
+"rv": 1
 }
 ]
