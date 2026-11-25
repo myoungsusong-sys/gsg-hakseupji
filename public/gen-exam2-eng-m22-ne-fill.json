@@ -8638,5 +8638,65 @@
 "twinGroup": "tw-exam2-eng-m22-ne-u3m0s0t0",
 "custom": true,
 "rv": 1
+},
+{
+"id": "fill-95091970a7",
+"typeId": "exam2-eng-m22-ne-u3m0s1t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 Lesson 8의 본문에서 설명한 AI의 학습 원리와 활용 방법을 바탕으로 구성한 사례이다. 본문의 내용과 <자료>를 종합하여 판단한 <보기>의 각 진술이 옳으면 O, 옳지 않으면 X라고 할 때, 그 배열로 가장 적절한 것은?\n\n<자료>\n(A) Jina changed her hairstyle and wore glasses. Her AI system still recognized her face.\n(B) Minho usually watched sports videos. After he began watching cooking videos, his AI system started recommending more cooking videos.\n(C) Sora received two answers to the same question from AI. The answers were different. She checked both answers with reliable sources, found one to be correct, and explained the information in her own words.\n(D) Junho checked an AI-generated answer and found no factual errors. However, he copied the entire answer without thinking about whether it was suitable for his assignment.\n\n<보기>\n㉠ Both (A) and (B) are consistent with the idea that AI learns from experience, but only (B) explicitly shows a change in AI's output following a change in the user's behavior.\n㉡ Although (A) shows successful face recognition after a change in appearance, it does not establish that AI can recognize the person correctly under every possible change in appearance.\n㉢ The fact that AI provided different answers in (C) contradicts ANNIE's explanation that AI can make decisions like humans, since such an ability requires AI to produce the same answer every time.\n㉣ Both Sora and Junho checked the accuracy of AI-generated information, but only Sora is shown using the information without blindly copying it.\n㉤ If Junho's answer contains no factual errors, his use of AI is as consistent with ANNIE's advice as Sora's, regardless of how he uses the information.",
+"choices": [
+"O－X－O－X－O",
+"X－O－X－O－O",
+"O－O－X－O－X",
+"O－X－X－O－O",
+"X－O－O－X－X"
+],
+"answer": "③",
+"solution": "㉠ O: (A)는 학습한 얼굴 정보를 바탕으로 외모가 달라진 사람을 인식하는 사례이고, (B)는 사용자의 시청 행동에 따라 추천 결과가 달라지는 사례이다. 두 사례 모두 AI의 학습 원리에 부합하지만, 사용자의 행동 변화에 따른 출력 결과의 변화가 명시된 것은 (B)뿐이다. (A)에서는 외모가 달라졌음에도 인식 결과가 유지되었다.\n㉡ O: (A)는 특정한 외모 변화에도 얼굴 인식에 성공한 사례이다. 이러한 개별 사례만으로 가능한 모든 외모 변화에 대해 얼굴 인식에 성공한다고 일반화할 수는 없다.\n㉢ X: AI가 인간처럼 결정을 내릴 수 있다는 설명에는 동일한 질문에 반드시 동일한 답변을 제공해야 한다는 조건이 포함되어 있지 않다. 따라서 (C)의 사례는 ANNIE의 설명과 모순되지 않는다.\n㉣ O: Sora와 Junho는 모두 정보의 정확성을 확인하였다. 그러나 Sora는 확인한 정보를 자신의 말로 설명한 반면, Junho는 과제에 적절한 정보인지 판단하지 않고 그대로 옮겨 썼다. 따라서 두 사람 중 무비판적인 복사를 피한 사람은 Sora뿐이다.\n㉤ X: ANNIE의 조언은 정보의 정확성을 확인하는 것뿐만 아니라 정보를 무비판적으로 옮겨 쓰지 않는 것도 요구한다. 따라서 사실 오류가 없다는 조건만으로 Junho의 활용 방식이 Sora의 활용 방식과 동일하게 적절하다고 판단할 수 없다.\n따라서 옳은 배열은 O－O－X－O－X인 ③이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u3m0s1t0",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-ff937a9fb9",
+"typeId": "exam2-eng-m22-ne-u2m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <정리 기준>에 따라 작성한 복습 노트를 검토한 내용으로 옳은 것만을 <보기>에서 있는 대로 고른 것은?\n\n<자료>\nJimin found a post about a backpack on an app. The app allows people to buy and sell secondhand items, and some users give away things they no longer need. Jimin arranged to meet the person at Central Park at 3:00 p.m. the following day.\nTo get to the park, Jimin borrowed a bike instead of taking a bus. Jimin scanned the QR code to unlock the bike and checked its condition before riding it. After arriving at the park, Jimin returned the bike to a station there and received the backpack.\nThe backpack was smaller than Jimin’s old one, but it was in great condition. Jimin liked its color and looked forward to using it for school. Getting the backpack without paying any money made Jimin think about sharing personal belongings with others, too. However, Jimin had not yet decided what to share.\n\n<정리 기준>\n(A) 공유 경제 서비스를 이용하면서 실제로 수행한 행동과 그 순서\n(B) 공유 경제를 통해 얻은 물건의 특징과 본문에서 확인할 수 있는 경제적 혜택\n(C) 자신의 물건을 다른 사람과 공유하는 것에 관한 생각이나 태도의 변화\n※ 본문에서 확인하거나 타당하게 추론할 수 있는 내용만 기록한다. 서비스의 일반적인 특징과 지민이의 실제 경험을 구별한다.\n\n<복습 노트>\n㉠ (A): 앱에서 게시물 확인 → 만남 약속 → 자전거 잠금 해제 → 자전거 상태 확인 → 자전거 반납 → 백팩 수령\n㉡ (B): 기존 백팩보다 작은 크기, 양호한 상태, 백팩 구입 비용과 이동 비용의 절약\n㉢ (C): 자신의 물건도 다른 사람과 공유하려는 생각이 생겼으나 공유할 물건은 아직 결정하지 않음.\n\n<보기>\nㄱ. ㉠은 백팩 수령을 위한 약속과 자전거 이용 과정에서 실제로 수행한 행동을 시간 순서에 맞게 정리하였으므로 수정할 필요가 없다.\nㄴ. 앱에서 중고 물건을 사고팔 수 있다는 설명은 지민이가 백팩을 구매했다는 근거가 될 수 없으므로, ㉠에 백팩 구매 대금 지불을 추가해서는 안 된다.\nㄷ. ㉡에서 백팩 구입 비용의 절약은 확인할 수 있지만, 버스 대신 자전거를 이용했다는 사실만으로 이동 비용까지 절약했다고 판단할 수는 없다.\nㄹ. 공유할 물건이 아직 결정되지 않았다는 사실은 공유에 대한 태도가 변하지 않았음을 의미하므로, ㉢에서 공유하려는 생각이 생겼다는 내용을 삭제해야 한다.\nㅁ. 백팩을 학교에서 사용하기를 기대했다는 내용은 공유 경제 경험 이후의 긍정적인 반응이므로, ㉢에 추가하면 (C)의 정리 기준을 충족한다.",
+"choices": [
+"ㄱ, ㄴ, ㄹ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㅁ"
+],
+"answer": "④",
+"solution": "ㄱ. 옳다. 첫째 문단에서 게시물 확인과 만남 약속이 이루어졌으며, 둘째 문단에서 자전거 잠금 해제, 상태 확인, 이동, 반납, 백팩 수령이 차례로 이루어졌다. ㉠은 실제 행동의 순서를 바르게 정리하였다.\nㄴ. 옳다. 앱에서 중고 물건을 사고팔 수 있다는 것은 서비스의 일반적인 특징이다. 지민이는 백팩을 무료로 받았으므로 실제 구매 대금을 지불했다고 볼 수 없다.\nㄷ. 옳다. 백팩을 무료로 받았으므로 백팩 구입 비용의 절약은 확인할 수 있다. 그러나 자전거 대여료와 버스 요금이 제시되지 않았으므로 이동 비용의 절약 여부는 판단할 수 없다.\nㄹ. 틀리다. 자신의 물건을 공유하려는 생각이 생겼다는 사실과 구체적인 공유 물건을 결정하지 않았다는 사실은 양립할 수 있다. 공유에 대한 태도의 변화가 실제 행동이나 구체적인 결정으로 반드시 이어지는 것은 아니다.\nㅁ. 틀리다. 학교에서 백팩을 사용하기를 기대했다는 내용은 받은 물건에 대한 긍정적인 반응이지만, 자신의 물건을 다른 사람과 공유하는 것에 관한 태도의 변화는 아니므로 (C)에 해당하지 않는다.\n따라서 옳은 진술은 ㄱ, ㄴ, ㄷ이므로 정답은 ④이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
+"custom": true,
+"rv": 1
+},
+{
+"id": "fill-924401c5dd",
+"typeId": "exam2-eng-m22-ne-u2m0s1t2",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 글을 읽고 <판정 기준>에 따라 <학생들의 진술>을 분류할 때, 각 유형에 해당하는 진술의 개수와 전체 점수를 바르게 짝지은 것은?\n\n<자료>\n(A) In Jimin’s city, people can use a bike-sharing service with an app. After choosing a bike, users scan its QR code to unlock it. However, unlocking a bike does not mean that it is safe to ride. Users should check its condition before riding it.\n(B) Jimin decided to use a shared bike instead of taking a bus to Central Park. After unlocking the bike, Jimin checked its condition. It looked fine, so Jimin rode it to the park and returned it to a station there before meeting the person who had offered a backpack through another app.\n(C) The app allows people to buy and sell secondhand items as well as give them away. Jimin received the backpack without paying any money. Although it was smaller than Jimin’s old backpack, it was in great condition. Jimin liked its color and looked forward to using it for school.\n(D) The experience made Jimin think about giving away personal belongings that were no longer needed. Jimin made a list of three things to share but had not posted anything on the app by the end of that day.\n\n<판정 기준>\n• 유형 I: 진술의 모든 내용이 글과 일치하거나 글을 통해 타당하게 추론할 수 있는 경우 (+2점)\n• 유형 II: 진술의 내용 중 하나라도 글에 제시된 내용과 명백히 모순되는 경우 (-1점)\n• 유형 III: 명백히 모순되는 내용은 없으나, 진술의 내용 중 하나라도 글만으로는 사실 여부를 판단할 수 없는 경우 (0점)\n※ 하나의 진술에 여러 내용이 포함된 경우 각 내용을 모두 검토한다. 확인할 수 없는 내용과 명백히 모순되는 내용이 함께 있으면 유형 II로 분류한다.\n\n<학생들의 진술>\nㄱ. Jimin followed the advice in (A) by checking the bike after unlocking it and before riding it.\nㄴ. Although the secondhand app allows users to sell things, Jimin’s experience shows that users can also get things without buying them.\nㄷ. Jimin returned the bike after receiving the backpack, and the bike ride cost less than the bus ride would have.\nㄹ. The backpack Jimin received was smaller than the old one, but its size did not prevent Jimin from looking forward to using it for school.\nㅁ. Jimin liked the backpack’s color, and it was the same color as the old backpack.\nㅂ. By the end of that day, Jimin had already posted all three things on the app, although no one had received them yet.\nㅅ. Jimin’s experience led to a plan to share personal belongings, but making a list did not mean that Jimin had already offered those things through the app.\nㅇ. Jimin received the backpack for free and therefore spent no money on either of the two sharing services that day.\nㅈ. Jimin checked the condition of the bike only after arriving at the park, and the backpack was in better condition than the old one.\nㅊ. The person who offered the backpack had used the secondhand app to give away other things before meeting Jimin.",
+"choices": [
+"유형 I: 4개 / 유형 II: 2개 / 유형 III: 4개 / 전체 점수: 6점",
+"유형 I: 4개 / 유형 II: 3개 / 유형 III: 3개 / 전체 점수: 5점",
+"유형 I: 5개 / 유형 II: 3개 / 유형 III: 2개 / 전체 점수: 7점",
+"유형 I: 3개 / 유형 II: 3개 / 유형 III: 4개 / 전체 점수: 3점",
+"유형 I: 4개 / 유형 II: 4개 / 유형 III: 2개 / 전체 점수: 4점"
+],
+"answer": "②",
+"solution": "각 진술에 포함된 세부 내용의 사실 여부를 확인한 후 판정 기준에 따라 분류한다.\n\nㄱ. 유형 I. (A)에서는 자전거를 타기 전에 상태를 확인해야 한다고 설명한다. (B)에서 지민이는 잠금을 해제한 뒤 자전거의 상태를 확인하고 탔으므로 해당 조언을 따랐다.\nㄴ. 유형 I. (C)에서 앱은 중고 물건의 매매뿐만 아니라 무료 나눔도 지원하며, 지민이는 실제로 백팩을 무료로 받았다.\nㄷ. 유형 II. (B)에 따르면 지민이는 백팩을 제공한 사람을 만나기 전에 자전거를 반납하였다. 자전거와 버스의 이용 비용은 비교할 수 없지만, 반납 시점이 본문과 명백히 모순되므로 유형 II이다.\nㄹ. 유형 I. (C)에서 받은 백팩은 기존 백팩보다 작았지만 지민이는 그것을 학교에서 사용하기를 기대하였다. 따라서 크기가 작다는 사실이 사용에 대한 기대를 막지는 않았다고 추론할 수 있다.\nㅁ. 유형 III. 지민이가 백팩의 색상을 마음에 들어 했다는 사실은 확인할 수 있으나, 기존 백팩과 색상이 같은지는 알 수 없다.\nㅂ. 유형 II. (D)에 따르면 지민이는 공유할 물건 세 가지의 목록을 작성했지만 그날이 끝날 때까지 앱에 아무것도 게시하지 않았다. 따라서 세 가지를 모두 게시했다는 내용은 명백히 틀리다.\nㅅ. 유형 I. (D)에서 지민이는 자신의 물건을 공유하려는 생각을 하고 목록을 작성했지만 실제 게시까지 하지는 않았다. 공유 계획과 앱을 통한 실제 나눔 제안을 정확히 구별하였다.\nㅇ. 유형 III. 백팩을 무료로 받은 사실은 확인되지만 자전거 대여료는 제시되지 않았다. 따라서 두 서비스 모두에 비용을 지불하지 않았는지는 판단할 수 없다.\nㅈ. 유형 II. (B)에서 지민이는 공원에 도착하기 전에 자전거 상태를 확인하였다. 두 백팩의 상태를 비교할 수는 없으나 자전거 상태 확인 시점이 명백히 틀렸으므로 유형 II이다.\nㅊ. 유형 III. 백팩을 제공한 사람이 이전에도 앱을 통해 다른 물건을 무료로 나누어 주었는지는 본문에 제시되지 않았다.\n\n유형 I: ㄱ, ㄴ, ㄹ, ㅅ으로 4개\n유형 II: ㄷ, ㅂ, ㅈ으로 3개\n유형 III: ㅁ, ㅇ, ㅊ으로 3개\n전체 점수: 4×2+3×(-1)+3×0=5점\n따라서 정답은 ②이다.",
+"source": "유사 문항",
+"twinGroup": "tw-exam2-eng-m22-ne-u2m0s1t2",
+"custom": true,
+"rv": 1
 }
 ]
