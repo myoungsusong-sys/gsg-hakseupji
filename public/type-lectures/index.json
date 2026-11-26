@@ -1665,5 +1665,205 @@
   "title": "민주주의와 여성 참정권 확대",
   "video": "type-lectures/m-his1-2-u1m0s2t1.mp4",
   "sec": 493
+ },
+ "16524": {
+  "title": "명제가 참이 되도록 하는 미지수 구하기",
+  "video": "type-lectures/16524.mp4",
+  "sec": 639
+ },
+ "16570": {
+  "title": "f(ax+b) 꼴로 나타낸 함수",
+  "video": "type-lectures/16570.mp4",
+  "sec": 481
+ },
+ "178": {
+  "title": "별의 등급과 거리 관계",
+  "video": "type-lectures/178.mp4",
+  "sec": 737
+ },
+ "18749": {
+  "title": "닮은 도형에서 서로 대응하는 것",
+  "video": "type-lectures/18749.mp4",
+  "sec": 390
+ },
+ "18756": {
+  "title": "회전체에서 닮음비의 응용",
+  "video": "type-lectures/18756.mp4",
+  "sec": 350
+ },
+ "18780": {
+  "title": "삼각형의 변의 길이 구하기(1)",
+  "video": "type-lectures/18780.mp4",
+  "sec": 494
+ },
+ "18783": {
+  "title": "직각삼각형의 닮음과 피타고라스 정리",
+  "video": "type-lectures/18783.mp4",
+  "sec": 781
+ },
+ "18789": {
+  "title": "피타고라스 정리의 설명(2) 피타고라스의 방법",
+  "video": "type-lectures/18789.mp4",
+  "sec": 433
+ },
+ "18795": {
+  "title": "삼각형에서 평행선 사이의 선분의 길이의 비(1) 한 각이 공통각인 두 삼각형",
+  "video": "type-lectures/18795.mp4",
+  "sec": 559
+ },
+ "18802": {
+  "title": "삼각형의 외각의 이등분선과 변의 길이",
+  "video": "type-lectures/18802.mp4",
+  "sec": 488
+ },
+ "18822": {
+  "title": "삼각형의 무게중심의 응용(1)",
+  "video": "type-lectures/18822.mp4",
+  "sec": 576
+ },
+ "18825": {
+  "title": "삼각형의 무게중심과 넓이의 관계(1) △ABC의 무게중심",
+  "video": "type-lectures/18825.mp4",
+  "sec": 548
+ },
+ "18828": {
+  "title": "평행사변형에서 삼각형의 무게중심의 응용(2) 넓이",
+  "video": "type-lectures/18828.mp4",
+  "sec": 491
+ },
+ "18867": {
+  "title": "경우의 수의 합(2) 두 지점을 이동하는 교통수단이나 길을 선택하는 경우",
+  "video": "type-lectures/18867.mp4",
+  "sec": 474
+ },
+ "18869": {
+  "title": "경우의 수의 곱(1) 서로 다른 사건이 동시에 일어나는 경우의 수",
+  "video": "type-lectures/18869.mp4",
+  "sec": 600
+ },
+ "18871": {
+  "title": "경우의 수의 곱(3) 물건을 선택하는 경우",
+  "video": "type-lectures/18871.mp4",
+  "sec": 474
+ },
+ "18873": {
+  "title": "색칠하는 경우의 수",
+  "video": "type-lectures/18873.mp4",
+  "sec": 452
+ },
+ "18875": {
+  "title": "일렬로 세우는 경우의 수(2) 특정한 사람의 자리를 고정하는 경우",
+  "video": "type-lectures/18875.mp4",
+  "sec": 453
+ },
+ "18876": {
+  "title": "일렬로 세우는 경우의 수(3) 이웃하는 경우",
+  "video": "type-lectures/18876.mp4",
+  "sec": 554
+ },
+ "18878": {
+  "title": "자연수의 개수(1) 0을 포함하지 않는 경우",
+  "video": "type-lectures/18878.mp4",
+  "sec": 425
+ },
+ "18880": {
+  "title": "사전식으로 나열하는 경우",
+  "video": "type-lectures/18880.mp4",
+  "sec": 353
+ },
+ "18881": {
+  "title": "대표를 뽑는 경우의 수(1) 자격이 다른 경우",
+  "video": "type-lectures/18881.mp4",
+  "sec": 433
+ },
+ "18882": {
+  "title": "대표를 뽑는 경우의 수(2) 자격이 같은 경우",
+  "video": "type-lectures/18882.mp4",
+  "sec": 582
+ },
+ "18883": {
+  "title": "만들 수 있는 선분의 개수",
+  "video": "type-lectures/18883.mp4",
+  "sec": 515
+ },
+ "18885": {
+  "title": "만들 수 있는 삼각형의 개수",
+  "video": "type-lectures/18885.mp4",
+  "sec": 650
+ },
+ "18887": {
+  "title": "만들 수 있는 사각형의 개수",
+  "video": "type-lectures/18887.mp4",
+  "sec": 551
+ },
+ "18889": {
+  "title": "방정식 또는 부등식에서의 경우의 수",
+  "video": "type-lectures/18889.mp4",
+  "sec": 393
+ },
+ "18892": {
+  "title": "대진표를 정하는 경우의 수",
+  "video": "type-lectures/18892.mp4",
+  "sec": 442
+ },
+ "409": {
+  "title": "중화반응의 이용",
+  "video": "type-lectures/409.mp4",
+  "sec": 517
+ },
+ "416": {
+  "title": "생태계평형",
+  "video": "type-lectures/416.mp4",
+  "sec": 675
+ },
+ "431": {
+  "title": "에너지 전환",
+  "video": "type-lectures/431.mp4",
+  "sec": 760
+ },
+ "h-khis2-u0m2s2t0": {
+  "title": "민족 운동의 분화와 자치론",
+  "video": "type-lectures/h-khis2-u0m2s2t0.mp4",
+  "sec": 607
+ },
+ "h-khis2-u0m2s3t0": {
+  "title": "6·10 만세 운동의 배경과 영향",
+  "video": "type-lectures/h-khis2-u0m2s3t0.mp4",
+  "sec": 536
+ },
+ "h-khis2-u0m4s3t0": {
+  "title": "충칭 임시 정부와 한국광복군",
+  "video": "type-lectures/h-khis2-u0m4s3t0.mp4",
+  "sec": 549
+ },
+ "h-khis2-u2m0s0t0": {
+  "title": "제9차 개헌과 여소야대·3당 합당",
+  "video": "type-lectures/h-khis2-u2m0s0t0.mp4",
+  "sec": 628
+ },
+ "h-khis2-u2m2s1t2": {
+  "title": "남북 정상 회담과 선언 구분",
+  "video": "type-lectures/h-khis2-u2m2s1t2.mp4",
+  "sec": 697
+ },
+ "h-khis2-u2m2s2t1": {
+  "title": "일본·중국의 역사 왜곡과 대응",
+  "video": "type-lectures/h-khis2-u2m2s2t1.mp4",
+  "sec": 522
+ },
+ "h-soc2-u2m2s0t2": {
+  "title": "생애 주기와 금융 설계",
+  "video": "type-lectures/h-soc2-u2m2s0t2.mp4",
+  "sec": 739
+ },
+ "h-soc2-u3m2s0t0": {
+  "title": "남북 분단의 배경과 통일의 필요성",
+  "video": "type-lectures/h-soc2-u3m2s0t0.mp4",
+  "sec": 735
+ },
+ "m-his1-2-u1m0s2t0": {
+  "title": "파리 강화 회의와 베르사유 조약",
+  "video": "type-lectures/m-his1-2-u1m0s2t0.mp4",
+  "sec": 625
  }
 }
