@@ -224,7 +224,8 @@ export const isImgAnswer = (a: string) => /^https?:\/\/\S+\.(png|jpe?g|gif|webp)
 export function AnswerText({ p }: { p: Problem }) {
   const a = p.answer?.trim() ?? ''
   if (!a || ['.', '-'].includes(a)) return <span className="text-ink2/70">풀이참조</span>
-  if (isImgAnswer(a)) return <img src={a} alt="정답" className="max-h-14 w-auto" />
+  // 11/26 족보 서술형 모범답안은 글 여러 줄짜리 해설 그림이라 높이 56px 로 묶으면 못 읽는다 → 폭 맞춤
+  if (isImgAnswer(a)) return <img src={a} alt="정답" className={a.includes('/figs/zbfill/') ? 'w-full max-w-[465px]' : 'max-h-14 w-auto'} />
   if (p.kind === '객관식') {
     const t = a.split(',').map(s => {
       const raw = s.trim()
