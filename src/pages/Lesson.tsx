@@ -87,7 +87,7 @@ export default function Lesson() {
   //    (명수쌤 2026-08-26: "영어 카테고리를 따로 만들고 영단어를 그 안에")
   const [subject] = useSubject()
   const tabs = useMemo(
-    () => subject === '영어' ? TABS.filter(t => t.key === 'voca') : TABS.filter(t => t.key !== 'voca'),
+    () => subject === '영어' ? TABS.filter(t => t.key === 'voca' || t.key === 'worksheet' || t.key === 'report') : TABS.filter(t => t.key !== 'voca'),
     [subject])
   // 과목을 바꾸면 지금 탭이 목록에 없을 수 있다 — 첫 탭으로 돌린다(빈 화면 방지)
   useEffect(() => {
