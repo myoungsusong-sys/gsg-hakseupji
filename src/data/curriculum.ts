@@ -3066,6 +3066,11 @@ export function coursesForWorksheet(grade: string, subject?: '수학' | '과학'
   }
   // 학기 없이 '중2'·'초5' 로만 적힌 수학 학습지(기본과제 등)는 2학기 문제일 수도 있다 → 두 학기를 다 붙인다
   const m = grade.match(/^(초|중)(\d)$/)
+  // 🔴 11/26 과학·역사·국어·영어도 학기 과정(중2-2 m-sci2-2·exam2-kor-m22-hae 등)에 족보·보충 문항(zbf-·fill-)이 있다 —
+  //    '중2' 학습지(이 범위로 출제·채점)가 그 과정 파일을 안 불러 «문제은행에서 찾을 수 없습니다»가 됐다 → 같은 과목의 두 학기 과정을 붙인다
+  if (m && subject && subject !== '수학') {
+    for (const c of CURRICULA) if ((c.grade === `${m[1]}${m[2]}-1` || c.grade === `${m[1]}${m[2]}-2`) && !c.book && /^(m-|exam2-)/.test(c.id) && (c.subject ?? '수학') === subject) out.add(c.id)
+  }
   if (m && (!subject || subject === '수학')) {
     for (const sem of ['1', '2']) {
       const c = CURRICULA.find(c => c.grade === `${m[1]}${m[2]}-${sem}` && (c.subject ?? '수학') === '수학')

@@ -80,6 +80,8 @@ export default function WorksheetList({ view }: { view: View }) {
   const [cardSort, setCardSort] = useState<SortMode>('created')
   const [listModal, setListModal] = useState<Worksheet | null>(null)
   const [menuFor, setMenuFor] = useState<{ id: string; x: number; y: number } | null>(null)
+  // ✏️ 선생님 채점 — 11/26 윤자혜 «선생님 채점하고 보고서에 반영할수있게»: 출제한 학생을 골라 수업 › 학습지 채점 화면을 바로 연다
+  const [gradeFor, setGradeFor] = useState<Worksheet | null>(null)
   const [listMenu, setListMenu] = useState<{ id: string; x: number; y: number } | null>(null)
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [assignTarget, setAssignTarget] = useState<string[] | null>(null)
@@ -648,6 +650,7 @@ export default function WorksheetList({ view }: { view: View }) {
                 {assignments.some(a => a.worksheetId === w.id && a.kind === '시험') && (
                   <MenuItem label="🏁 시험 성적표" onClick={() => { setExamReport(w.id); setMenuFor(null) }} />
                 )}
+                <MenuItem label="✏️ 채점하기(보고서 반영)" onClick={() => { setGradeFor(w); setMenuFor(null) }} />
                 <MenuItem label="리스트에 담기" onClick={() => { setListModal(w); setMenuFor(null) }} />
                 <MenuItem label="수정" onClick={() => nav(`/make?edit=${w.id}`)} />
                 <MenuItem label="복제 후 수정" onClick={() => {
@@ -708,6 +711,40 @@ export default function WorksheetList({ view }: { view: View }) {
         return (
           <WorksheetOutputDialog mode={outDialog} ws={target} extraWs={targets.slice(1)} studentNames={names} studentList={who}
             onClose={() => { setOutDialog(null); setOutSingleId(null) }} />
+        )
+      })()}
+
+      {gradeFor && (() => {
+        const sids = [...new Set(assignments.filter(a => a.worksheetId === gradeFor.id).map(a => a.studentId))]
+        const list = sids.map(id => students.find(s => s.id === id)).filter((s): s is NonNullable<typeof s> => !!s)
+        const graded = (sid: string) => gradings.filter(g => g.worksheetId === gradeFor.id && g.studentId === sid)
+        return (
+          <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/40 p-4" onClick={() => setGradeFor(null)}>
+            <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-xl" onClick={e => e.stopPropagation()}>
+              <h3 className="mb-1 font-bold">✏️ 채점하기 — {gradeFor.title}</h3>
+              <p className="mb-3 text-xs text-ink2">학생을 누르면 채점 화면이 열립니다. 문항마다 맞음·틀림을 누르고 저장하면 학습 기록·보고서에 바로 들어갑니다.</p>
+              {list.length === 0 ? (
+                <p className="rounded-lg bg-paper2 p-3 text-sm text-clay">아직 이 학습지를 출제한 학생이 없습니다. 먼저 [출제]로 학생에게 내 주세요.</p>
+              ) : (
+                <div className="grid max-h-[50vh] gap-1.5 overflow-y-auto">
+                  {list.map(st => {
+                    const g = graded(st.id), last = g[g.length - 1]
+                    const ok = last ? last.results.filter(r => r.correct).length : 0
+                    return (
+                      <button key={st.id} type="button" onClick={() => { setGradeFor(null); nav(`/lesson?student=${st.id}&grade=${gradeFor.id}`) }}
+                        className="flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-left text-sm hover:border-pine hover:bg-pine-soft/30">
+                        <b>{st.name}</b><span className="text-xs text-ink2">{st.grade}{st.school ? ` · ${st.school}` : ''}</span>
+                        <span className={`ml-auto text-xs font-bold ${last ? 'text-pine' : 'text-clay'}`}>
+                          {last ? `${last.by === 'student' ? '학생 제출' : '채점함'} ${ok}/${last.results.length}` : '아직 채점 안 함'}
+                        </span>
+                      </button>
+                    )
+                  })}
+                </div>
+              )}
+              <button type="button" onClick={() => setGradeFor(null)} className="mt-3 rounded-lg border border-line px-3 py-1.5 text-sm">닫기</button>
+            </div>
+          </div>
         )
       })()}
 
