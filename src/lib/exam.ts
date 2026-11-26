@@ -15,11 +15,15 @@ import { groupOf } from './schoolReview'
 export const EXAM_NAMES = ['1학기 중간고사', '1학기 기말고사', '2학기 중간고사', '2학기 기말고사', '모의고사', '수행평가'] as const
 
 /** "국어, 수학 · 영어/과학" → ['국어','수학','영어','과학'] */
+const SUBJECT_WORDS = ['국어', '영어', '수학', '과학', '사회', '역사', '도덕', '한문', '기술가정', '기가', '정보', '음악', '미술', '체육', '한국사', '통합과학', '통합사회', '지리', '일본어', '중국어', '보건', '진로', '수학1', '수학2', '물리', '화학', '생명', '지구과학', '문학', '독서', '화법과작문', '언어와매체', '공통국어', '공통영어', '공통수학']
 export function parseSubjects(text: string): string[] {
   const out: string[] = []
   for (const raw of text.split(/[,，·、/;\n]+/)) {
     const s = raw.replace(/\s+/g, ' ').trim()
-    if (s && !out.includes(s)) out.push(s)
+    // «국어 도덕 한문»처럼 띄어 쓴 과목도 과목마다 범위 칸이 따로 나오게 나눈다 — 11/26 윤자혜 선생님
+    const parts = s.split(' ')
+    const each = parts.length > 1 && parts.every(p => SUBJECT_WORDS.includes(p)) ? parts : [s]
+    for (const p of each) if (p && !out.includes(p)) out.push(p)
   }
   return out
 }

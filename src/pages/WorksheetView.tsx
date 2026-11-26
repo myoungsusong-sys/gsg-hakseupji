@@ -149,8 +149,8 @@ function fillColumns(heights: number[], gap: number, ncols: number, availFor: (p
 
 // 전폭 띠가 섞인 문제지 — 두 단 띠와 전폭 띠(넓은 교재 크롭 문항)를 위에서부터 쌓는다.
 // 두 단 띠는 남은 문항이 그 쪽에 다 들어가면 두 단 높이를 고르게, 아니면 남은 높이까지 채운다.
-type Band = { cols: [number[], number[]]; h: number } | { wide: number; h: number }
-export function layoutBands(hs: number[], wide: boolean[], wideH: number[], gap: number, availFor: (page: number) => number): Band[][] {
+type Band = { cols: [number[], number[]]; h: number } | { wide: number; h: number; piece?: number; pieceH?: number }
+export function layoutBands(hs: number[], wide: boolean[], wideH: number[], gap: number, availFor: (page: number) => number, colH: number[] = []): Band[][] {
   const pages: Band[][] = []
   let page: Band[] = [], used = 0
   const newPage = () => { pages.push(page); page = []; used = 0 }
@@ -158,6 +158,17 @@ export function layoutBands(hs: number[], wide: boolean[], wideH: number[], gap:
   let i = 0
   while (i < hs.length) {
     if (wide[i]) {
+      // 🔴 11/26 윤자혜 «지문이 세로아래로 나와있고 글자 크기가 작음»(챌린지 수난이대 심화): 3단으로도 한 쪽을 넘는 아주 긴 지문은
+      //    통째로 줄이지 않고 여러 쪽에 나눠 싣는다 — 쪽마다 두 단씩, 글씨 크기 그대로(long piece).
+      const fresh = availFor(page.length ? pages.length + 1 : pages.length)
+      if (wideH[i] > fresh * 0.97 && (colH[i] ?? 0) > 0) {
+        if (page.length) newPage()
+        const H = availFor(pages.length)
+        const pieces = Math.max(1, Math.ceil(Math.ceil((colH[i] * 1.06) / H) / 2))
+        for (let k = 0; k < pieces; k++) { page.push({ wide: i, h: H, piece: k, pieceH: H }); newPage() }
+        i++
+        continue
+      }
       if (page.length && wideH[i] > room()) newPage()
       used += (page.length ? gap : 0) + wideH[i]
       page.push({ wide: i, h: wideH[i] }); i++
@@ -391,7 +402,7 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       // 넓은 교재 크롭은 항상 전폭, 긴 글 문항은 한 단에 넣으면 단 높이를 넘을 때만 전폭(2단 흘림)
       const wide = items.map((p, i) => measured[`w${i}`] != null && (!!p.imageUrl || hs[i] > BODYN_H * 0.97))
       if (wide.some(Boolean)) {
-        layoutBands(hs, wide, items.map((_, i) => wideHOf(measured, i)), S, p => p === 0 ? avail1 : BODYN_H)
+        layoutBands(hs, wide, items.map((_, i) => wideHOf(measured, i)), S, p => p === 0 ? avail1 : BODYN_H, items.map((p, i) => p.imageUrl ? 0 : hs[i]))
           .forEach((bands, pi) => defs.push({ part: 's', first: pi === 0, kind: 'bands', bands, conceptsFirst: pi === 0 && frontConcepts }))
       } else {
         fillColumns(hs, S, 2, p => p === 0 ? avail1 : BODYN_H)
@@ -775,7 +786,15 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         {pg.conceptsFirst && <div style={{ marginBottom: '5mm' }}>{conceptsEl}</div>}
         <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
-          {pg.bands.map((b, k) => 'wide' in b
+          {pg.bands.map((b, k) => 'wide' in b && b.piece != null
+            ? (
+              <div key={k} style={{ width: `${CONTENT_W}mm`, height: `${b.pieceH}mm`, overflow: 'hidden' }}>
+                <div style={{ width: `${CONTENT_W}mm`, height: `${b.pieceH}mm`, columnCount: 2, columnGap: `${G.colGap}mm`, columnFill: 'auto', transform: `translateX(-${b.piece * (CONTENT_W + G.colGap)}mm)` }}>
+                  {problemAt(b.wide)}
+                </div>
+              </div>
+            )
+            : 'wide' in b
             ? <div key={k} style={{ marginBottom: `${S}mm` }}>{(() => { const c = measured ? wideColsOf(measured, b.wide) : 2; return fitBox(problemAt(b.wide, true, c), c === 3 ? `x${b.wide}` : `w${b.wide}`, CONTENT_W, availOf(pg)) })()}</div>
             : (
               <div key={k} style={{ position: 'relative', height: `${b.h}mm`, marginBottom: `${S}mm` }}>
@@ -1252,7 +1271,7 @@ export function ProblemBlock({ p, prev, idx, label, caption, themeMain, onVideo,
             <div className={wide ? 'zb-wide' : undefined} style={wide ? { columnCount: cols, columnGap: `${G.colGap}mm`, columnFill: 'balance' } : undefined}>
             <div style={{ fontSize: '10.5pt', lineHeight: 1.7 }}><MathText text={zbBodyFor(p, prev)} /></div>
             {p.choices && !bareChoices(p.choices) && (
-              <div style={{ marginTop: '1.5mm', display: 'grid', gap: '0.5mm', fontSize: '10pt', lineHeight: 1.6 }}>
+              <div style={{ marginTop: '1.5mm', display: 'grid', gap: '0.5mm', fontSize: '10pt', lineHeight: 1.6, breakInside: 'avoid' }}>
                 {p.choices.map((c, ci) => (
                   <span key={ci}>{'①②③④⑤'[ci]} <MathText text={c} /></span>
                 ))}
