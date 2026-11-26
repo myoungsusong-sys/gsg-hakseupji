@@ -2999,5 +2999,235 @@
   "title": "국제 분업과 비교 우위",
   "video": "type-lectures/h-soc2-u2m3s0t0.mp4",
   "sec": 776
+ },
+ "16518": {
+  "title": "명제와 조건의 부정",
+  "video": "type-lectures/16518.mp4",
+  "sec": 681
+ },
+ "16530": {
+  "title": "충분조건, 필요조건, 필요충분조건",
+  "video": "type-lectures/16530.mp4",
+  "sec": 732
+ },
+ "16533": {
+  "title": "충분조건, 필요조건, 필요충분조건을 만족하는 미지수 구하기",
+  "video": "type-lectures/16533.mp4",
+  "sec": 487
+ },
+ "16535": {
+  "title": "충분조건, 필요조건, 필요충분조건과 삼단논법",
+  "video": "type-lectures/16535.mp4",
+  "sec": 586
+ },
+ "16542": {
+  "title": "절댓값 기호를 포함한 절대부등식",
+  "video": "type-lectures/16542.mp4",
+  "sec": 505
+ },
+ "16560": {
+  "title": "서로 같은 함수",
+  "video": "type-lectures/16560.mp4",
+  "sec": 687
+ },
+ "16565": {
+  "title": "여러 가지 함수의 개수",
+  "video": "type-lectures/16565.mp4",
+  "sec": 891
+ },
+ "16574": {
+  "title": "그래프가 주어질 때 합성함수의 함숫값 구하기",
+  "video": "type-lectures/16574.mp4",
+  "sec": 631
+ },
+ "16576": {
+  "title": "역함수와 함숫값",
+  "video": "type-lectures/16576.mp4",
+  "sec": 685
+ },
+ "16621": {
+  "title": "유리함수의 그래프의 점근선",
+  "video": "type-lectures/16621.mp4",
+  "sec": 601
+ },
+ "16627": {
+  "title": "유리함수의 합성",
+  "video": "type-lectures/16627.mp4",
+  "sec": 428
+ },
+ "16628": {
+  "title": "유리함수의 역함수",
+  "video": "type-lectures/16628.mp4",
+  "sec": 682
+ },
+ "16631": {
+  "title": "무리식의 값이 실수가 되기 위한 조건",
+  "video": "type-lectures/16631.mp4",
+  "sec": 418
+ },
+ "394": {
+  "title": "변이와 자연선택",
+  "video": "type-lectures/394.mp4",
+  "sec": 677
+ },
+ "397": {
+  "title": "생물다양성",
+  "video": "type-lectures/397.mp4",
+  "sec": 792
+ },
+ "405": {
+  "title": "산과 염기 비교",
+  "video": "type-lectures/405.mp4",
+  "sec": 472
+ },
+ "417": {
+  "title": "생태계평형을 깨뜨리는 환경변화",
+  "video": "type-lectures/417.mp4",
+  "sec": 712
+ },
+ "422": {
+  "title": "사막화",
+  "video": "type-lectures/422.mp4",
+  "sec": 555
+ },
+ "425": {
+  "title": "태양에너지의 흐름",
+  "video": "type-lectures/425.mp4",
+  "sec": 800
+ },
+ "426": {
+  "title": "전자기 유도와 유도 전류",
+  "video": "type-lectures/426.mp4",
+  "sec": 696
+ },
+ "428": {
+  "title": "발전기의 원리",
+  "video": "type-lectures/428.mp4",
+  "sec": 633
+ },
+ "432": {
+  "title": "에너지 효율",
+  "video": "type-lectures/432.mp4",
+  "sec": 577
+ },
+ "435": {
+  "title": "감염병 진단",
+  "video": "type-lectures/435.mp4",
+  "sec": 813
+ },
+ "436": {
+  "title": "미래 사회 문제 해결에서 과학의 필요성",
+  "video": "type-lectures/436.mp4",
+  "sec": 507
+ },
+ "441": {
+  "title": "과학 관련 사회적 쟁점과 과학 윤리",
+  "video": "type-lectures/441.mp4",
+  "sec": 832
+ },
+ "h-khis2-u0m0s2t0": {
+  "title": "‘문화 정치’의 명분과 실상 비교",
+  "video": "type-lectures/h-khis2-u0m0s2t0.mp4",
+  "sec": 792
+ },
+ "h-khis2-u0m1s2t3": {
+  "title": "국민 대표 회의와 임시 정부 개편",
+  "video": "type-lectures/h-khis2-u0m1s2t3.mp4",
+  "sec": 559
+ },
+ "h-khis2-u0m2s1t0": {
+  "title": "물산 장려 운동의 목적과 비판",
+  "video": "type-lectures/h-khis2-u0m2s1t0.mp4",
+  "sec": 659
+ },
+ "h-khis2-u0m3s0t2": {
+  "title": "일제 강점기 생활·대중문화 변화",
+  "video": "type-lectures/h-khis2-u0m3s0t2.mp4",
+  "sec": 464
+ },
+ "h-khis2-u0m3s2t1": {
+  "title": "형평 운동의 배경과 목표",
+  "video": "type-lectures/h-khis2-u0m3s2t1.mp4",
+  "sec": 449
+ },
+ "h-khis2-u0m4s0t1": {
+  "title": "일제 침략 전쟁 순서 배열",
+  "video": "type-lectures/h-khis2-u0m4s0t1.mp4",
+  "sec": 662
+ },
+ "h-khis2-u0m4s0t2": {
+  "title": "‘이 전쟁’ 시기의 국내외 사실",
+  "video": "type-lectures/h-khis2-u0m4s0t2.mp4",
+  "sec": 583
+ },
+ "h-khis2-u0m4s1t1": {
+  "title": "국가 총동원법과 인적·물적 수탈",
+  "video": "type-lectures/h-khis2-u0m4s1t1.mp4",
+  "sec": 650
+ },
+ "h-khis2-u1m0s1t1": {
+  "title": "미·소 공동 위원회의 쟁점",
+  "video": "type-lectures/h-khis2-u1m0s1t1.mp4",
+  "sec": 499
+ },
+ "h-khis2-u1m0s2t1": {
+  "title": "북한 정권 수립 과정",
+  "video": "type-lectures/h-khis2-u1m0s2t1.mp4",
+  "sec": 422
+ },
+ "h-khis2-u1m1s1t3": {
+  "title": "전후 북한의 독재와 천리마 운동",
+  "video": "type-lectures/h-khis2-u1m1s1t3.mp4",
+  "sec": 494
+ },
+ "h-khis2-u1m2s1t1": {
+  "title": "한·일 협정과 6·3 시위",
+  "video": "type-lectures/h-khis2-u1m2s1t1.mp4",
+  "sec": 598
+ },
+ "h-khis2-u1m2s1t3": {
+  "title": "3선 개헌과 반공 체제 강화",
+  "video": "type-lectures/h-khis2-u1m2s1t3.mp4",
+  "sec": 634
+ },
+ "h-khis2-u1m2s2t0": {
+  "title": "10월 유신의 배경과 과정",
+  "video": "type-lectures/h-khis2-u1m2s2t0.mp4",
+  "sec": 507
+ },
+ "h-khis2-u1m2s3t2": {
+  "title": "전두환 정부의 강압·유화 정책",
+  "video": "type-lectures/h-khis2-u1m2s3t2.mp4",
+  "sec": 604
+ },
+ "h-khis2-u2m1s0t1": {
+  "title": "외환 위기의 원인과 발생 시기",
+  "video": "type-lectures/h-khis2-u2m1s0t1.mp4",
+  "sec": 657
+ },
+ "h-soc2-u0m1s0t2": {
+  "title": "헌법의 인권 보장 장치",
+  "video": "type-lectures/h-soc2-u0m1s0t2.mp4",
+  "sec": 875
+ },
+ "h-soc2-u0m1s1t1": {
+  "title": "준법과 시민 불복종",
+  "video": "type-lectures/h-soc2-u0m1s1t1.mp4",
+  "sec": 733
+ },
+ "h-soc2-u1m1s0t2": {
+  "title": "정의관 사례 적용",
+  "video": "type-lectures/h-soc2-u1m1s0t2.mp4",
+  "sec": 561
+ },
+ "h-soc2-u1m2s0t1": {
+  "title": "공간 불평등",
+  "video": "type-lectures/h-soc2-u1m2s0t1.mp4",
+  "sec": 750
+ },
+ "h-soc2-u4m1s0t1": {
+  "title": "신·재생 에너지",
+  "video": "type-lectures/h-soc2-u4m1s0t1.mp4",
+  "sec": 674
  }
 }
