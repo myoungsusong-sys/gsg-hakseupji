@@ -24,7 +24,10 @@ type Row = { subject: string; courses: string[]; course: string; on: boolean; mi
 const HOW: Record<RangePick['how'], string> = { name: '범위 글자에서 단원 이름을 읽었어요', number: '범위의 단원 번호로 골랐어요 — 학교 교과서 번호와 다를 수 있어요', all: '범위를 못 읽어 전체로 잡았어요' }
 const THEME: Record<string, ThemeKey> = { 수학: 'amber', 과학: 'pine', 사회: 'navy', 역사: 'navy', 영어: 'blue', 국어: 'coral' }
 
-export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; exam: SchoolExam; onClose: () => void }) {
+export default function ExamRangeAssign({ st, exam, onClose, peers = [] }: { st: Student; exam: SchoolExam; onClose: () => void; peers?: Student[] }) {
+  // 🏫 같은 학교·학년 학생에게도 같은 학습지 — 11/26 윤자혜 «선생님앱에서도 선생님이 출제»
+  const [withPeers, setWithPeers] = useState(true)
+  const targets = withPeers ? [st, ...peers] : [st]
   const { problems, poolLoaded, ensureCourse, worksheets, assignments, saveWorksheet, addAssignment, academyProfile } = useStore()
   const sem = semesterOf(exam)
   const [rows, setRows] = useState<Row[]>(() => examSubjects(exam).map(subject => {
@@ -106,7 +109,7 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
         options: { ...DEFAULT_SHEET_OPTIONS, showTypeName: true, autoGrade: true },
         listIds: [], createdAt: new Date().toISOString(), deletedAt: null,
       })
-      addAssignment(id, [st.id], kind)
+      addAssignment(id, targets.map(t => t.id), kind)
       out.push({ subject: r.subject, wsId: id, n: picked.length })
     })
     setDone(out)
@@ -127,7 +130,7 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
           <div className="grid gap-3 p-5">
             {done.length ? (
               <>
-                <p className="text-sm font-black text-pine-dark">✓ {st.name} 학생에게 {done.length}장 출제했습니다 ({kind})</p>
+                <p className="text-sm font-black text-pine-dark">✓ {targets.map(t => t.name).join(', ')} 학생에게 {done.length}장 출제했습니다 ({kind})</p>
                 <div className="flex flex-wrap gap-1.5">
                   {done.map(d => (
                     <Link key={d.wsId} to={`/worksheet/${d.wsId}`} className="rounded-full border border-pine bg-white px-3 py-1 text-xs font-bold text-pine hover:bg-pine-soft">
@@ -159,6 +162,12 @@ export default function ExamRangeAssign({ st, exam, onClose }: { st: Student; ex
                     <option>숙제</option><option>수업</option>
                   </select>
                 </label>
+                {peers.length > 0 && (
+                  <label className="flex items-center gap-1.5 text-xs font-bold">
+                    <input type="checkbox" checked={withPeers} onChange={e => setWithPeers(e.target.checked)} className="accent-pine" />
+                    같은 학교·학년 {peers.length}명({peers.map(p => p.name).join(', ')})에게도 출제
+                  </label>
+                )}
                 {loading && <span className="text-xs text-ink2">문제은행 불러오는 중…</span>}
               </div>
 
