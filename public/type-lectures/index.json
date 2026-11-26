@@ -1,14 +1,8 @@
 {
  "400": {
-  "title": "산소의 이동과 산화·환원 반응",
+  "title": "산소의 이동과 산화, 환원반응",
   "video": "type-lectures/400.mp4",
-  "sec": 311,
-  "notes": [
-   "type-lectures/400-1.jpg",
-   "type-lectures/400-2.jpg",
-   "type-lectures/400-3.jpg",
-   "type-lectures/400-4.jpg"
-  ]
+  "sec": 877
  },
  "kor-m1-u2m1s1t1": {
   "title": "합성어·파생어 (단어의 뼈대와 살)",
@@ -2600,5 +2594,270 @@
   "title": "세계시민의 자세",
   "video": "type-lectures/h-soc2-u4m2s0t1.mp4",
   "sec": 624
+ },
+ "16526": {
+  "title": "명제의 역과 대우의 참, 거짓",
+  "video": "type-lectures/16526.mp4",
+  "sec": 695
+ },
+ "16534": {
+  "title": "충분조건, 필요조건, 필요충분조건과 진리집합",
+  "video": "type-lectures/16534.mp4",
+  "sec": 782
+ },
+ "16537": {
+  "title": "귀류법",
+  "video": "type-lectures/16537.mp4",
+  "sec": 661
+ },
+ "16541": {
+  "title": "실수의 성질을 이용한 절대부등식의 증명",
+  "video": "type-lectures/16541.mp4",
+  "sec": 605
+ },
+ "16544": {
+  "title": "산술평균과 기하평균의 관계(1) 곱이 일정한 경우",
+  "video": "type-lectures/16544.mp4",
+  "sec": 582
+ },
+ "16561": {
+  "title": "함수의 그래프",
+  "video": "type-lectures/16561.mp4",
+  "sec": 457
+ },
+ "16562": {
+  "title": "일대일함수와 일대일대응",
+  "video": "type-lectures/16562.mp4",
+  "sec": 604
+ },
+ "16580": {
+  "title": "합성함수와 역함수",
+  "video": "type-lectures/16580.mp4",
+  "sec": 663
+ },
+ "16582": {
+  "title": "역함수의 성질",
+  "video": "type-lectures/16582.mp4",
+  "sec": 520
+ },
+ "16584": {
+  "title": "구간에 따라 다르게 정의된 함수의 역함수 값 구하기",
+  "video": "type-lectures/16584.mp4",
+  "sec": 599
+ },
+ "16589": {
+  "title": "그래프가 주어질 때 역함수의 함숫값 구하기",
+  "video": "type-lectures/16589.mp4",
+  "sec": 636
+ },
+ "16590": {
+  "title": "우함수와 기함수",
+  "video": "type-lectures/16590.mp4",
+  "sec": 829
+ },
+ "16601": {
+  "title": "(분자의 차수)≥(분모의 차수)인 유리식의 변형",
+  "video": "type-lectures/16601.mp4",
+  "sec": 476
+ },
+ "16602": {
+  "title": "부분분수로의 변형",
+  "video": "type-lectures/16602.mp4",
+  "sec": 551
+ },
+ "16604": {
+  "title": "분모 또는 분자가 분수식인 유리식",
+  "video": "type-lectures/16604.mp4",
+  "sec": 503
+ },
+ "16619": {
+  "title": "유리함수의 그래프의 평행이동",
+  "video": "type-lectures/16619.mp4",
+  "sec": 611
+ },
+ "16634": {
+  "title": "무리식의 계산",
+  "video": "type-lectures/16634.mp4",
+  "sec": 660
+ },
+ "16648": {
+  "title": "그래프를 이용하여 무리함수의 식 구하기",
+  "video": "type-lectures/16648.mp4",
+  "sec": 390
+ },
+ "411": {
+  "title": "물질 변화에서 에너지의 출입 이용",
+  "video": "type-lectures/411.mp4",
+  "sec": 708
+ },
+ "412": {
+  "title": "생태계",
+  "video": "type-lectures/412.mp4",
+  "sec": 475
+ },
+ "418": {
+  "title": "지구열수지",
+  "video": "type-lectures/418.mp4",
+  "sec": 547
+ },
+ "419": {
+  "title": "지구온난화",
+  "video": "type-lectures/419.mp4",
+  "sec": 861
+ },
+ "420": {
+  "title": "대기 대순환과 해수의 표층순환",
+  "video": "type-lectures/420.mp4",
+  "sec": 535
+ },
+ "423": {
+  "title": "미래의 지구 환경 변화와 대처 방안",
+  "video": "type-lectures/423.mp4",
+  "sec": 578
+ },
+ "h-khis2-u0m0s0t0": {
+  "title": "제1차 세계 대전과 파리 강화 회의",
+  "video": "type-lectures/h-khis2-u0m0s0t0.mp4",
+  "sec": 439
+ },
+ "h-khis2-u0m0s2t3": {
+  "title": "1910·1920년대 통치 정책 구분",
+  "video": "type-lectures/h-khis2-u0m0s2t3.mp4",
+  "sec": 552
+ },
+ "h-khis2-u0m1s1t0": {
+  "title": "3·1 운동의 국내외 배경",
+  "video": "type-lectures/h-khis2-u0m1s1t0.mp4",
+  "sec": 734
+ },
+ "h-khis2-u0m3s1t1": {
+  "title": "원산 총파업과 1920년대 노동 운동",
+  "video": "type-lectures/h-khis2-u0m3s1t1.mp4",
+  "sec": 475
+ },
+ "h-khis2-u0m3s1t2": {
+  "title": "1930년대 혁명적 조합 운동",
+  "video": "type-lectures/h-khis2-u0m3s1t2.mp4",
+  "sec": 470
+ },
+ "h-khis2-u0m4s1t0": {
+  "title": "병참 기지화 정책과 공업 격차",
+  "video": "type-lectures/h-khis2-u0m4s1t0.mp4",
+  "sec": 420
+ },
+ "h-khis2-u1m0s0t0": {
+  "title": "냉전 체제와 동아시아 열전",
+  "video": "type-lectures/h-khis2-u1m0s0t0.mp4",
+  "sec": 716
+ },
+ "h-khis2-u1m0s0t1": {
+  "title": "조선 건국 준비 위원회와 여운형",
+  "video": "type-lectures/h-khis2-u1m0s0t1.mp4",
+  "sec": 656
+ },
+ "h-khis2-u1m0s1t3": {
+  "title": "단독 선거 결정과 남북 협상 순서",
+  "video": "type-lectures/h-khis2-u1m0s1t3.mp4",
+  "sec": 743
+ },
+ "h-khis2-u1m0s2t0": {
+  "title": "5·10 총선거와 제헌 헌법",
+  "video": "type-lectures/h-khis2-u1m0s2t0.mp4",
+  "sec": 685
+ },
+ "h-khis2-u1m1s1t0": {
+  "title": "발췌 개헌과 사사오입 개헌 비교",
+  "video": "type-lectures/h-khis2-u1m1s1t0.mp4",
+  "sec": 654
+ },
+ "h-khis2-u1m2s0t0": {
+  "title": "3·15 부정 선거와 4·19 전개 순서",
+  "video": "type-lectures/h-khis2-u1m2s0t0.mp4",
+  "sec": 592
+ },
+ "h-khis2-u1m2s1t0": {
+  "title": "혁명 공약과 군정 실시",
+  "video": "type-lectures/h-khis2-u1m2s1t0.mp4",
+  "sec": 500
+ },
+ "h-khis2-u1m3s1t0": {
+  "title": "시대별 대중문화의 변화",
+  "video": "type-lectures/h-khis2-u1m3s1t0.mp4",
+  "sec": 465
+ },
+ "h-khis2-u1m3s1t1": {
+  "title": "독재 정권의 대중문화 통제",
+  "video": "type-lectures/h-khis2-u1m3s1t1.mp4",
+  "sec": 504
+ },
+ "h-khis2-u1m3s1t2": {
+  "title": "의식주와 교육 제도의 변화",
+  "video": "type-lectures/h-khis2-u1m3s1t2.mp4",
+  "sec": 622
+ },
+ "h-khis2-u2m0s1t1": {
+  "title": "노무현~문재인 정부 정책 구분",
+  "video": "type-lectures/h-khis2-u2m0s1t1.mp4",
+  "sec": 488
+ },
+ "h-khis2-u2m0s2t0": {
+  "title": "지방 자치제의 변천 순서",
+  "video": "type-lectures/h-khis2-u2m0s2t0.mp4",
+  "sec": 411
+ },
+ "h-khis2-u2m1s0t0": {
+  "title": "세계화 정책과 OECD 가입",
+  "video": "type-lectures/h-khis2-u2m1s0t0.mp4",
+  "sec": 511
+ },
+ "h-khis2-u2m1s2t1": {
+  "title": "다문화 사회와 북한 이탈 주민",
+  "video": "type-lectures/h-khis2-u2m1s2t1.mp4",
+  "sec": 455
+ },
+ "h-khis2-u2m2s0t0": {
+  "title": "김일성·김정일·김정은 체제 구분",
+  "video": "type-lectures/h-khis2-u2m2s0t0.mp4",
+  "sec": 541
+ },
+ "h-khis2-u2m2s2t0": {
+  "title": "독도가 우리 땅인 역사적 근거",
+  "video": "type-lectures/h-khis2-u2m2s2t0.mp4",
+  "sec": 473
+ },
+ "h-soc2-u0m0s0t0": {
+  "title": "인권의 특징",
+  "video": "type-lectures/h-soc2-u0m0s0t0.mp4",
+  "sec": 680
+ },
+ "h-soc2-u0m0s0t2": {
+  "title": "인권의 확장",
+  "video": "type-lectures/h-soc2-u0m0s0t2.mp4",
+  "sec": 942
+ },
+ "h-soc2-u0m2s0t1": {
+  "title": "청소년의 노동권",
+  "video": "type-lectures/h-soc2-u0m2s0t1.mp4",
+  "sec": 629
+ },
+ "h-soc2-u1m1s0t0": {
+  "title": "자유주의적 정의관",
+  "video": "type-lectures/h-soc2-u1m1s0t0.mp4",
+  "sec": 870
+ },
+ "h-soc2-u2m2s0t0": {
+  "title": "금융 자산의 종류와 특징",
+  "video": "type-lectures/h-soc2-u2m2s0t0.mp4",
+  "sec": 745
+ },
+ "h-soc2-u3m2s0t2": {
+  "title": "세계 평화에 기여하는 방안",
+  "video": "type-lectures/h-soc2-u3m2s0t2.mp4",
+  "sec": 657
+ },
+ "h-soc2-u4m1s0t2": {
+  "title": "기후변화 대응",
+  "video": "type-lectures/h-soc2-u4m1s0t2.mp4",
+  "sec": 566
  }
 }
