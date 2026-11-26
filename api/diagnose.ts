@@ -222,14 +222,25 @@ async function handleQna(p: any, res: any) {
       const url = await qnaUpload(`${id}/${kind}.jpg`, p.b64, 'image/jpeg')
       res.status(200).json({ ok: true, url }); return
     }
-    // ② 워커 — 대기 1건 집어 잠그기 (20분 넘게 만드는중이면 죽은 것으로 보고 다시 집는다)
+    // ② 워커 — 대기 1건 집어 잠그기 (30분 넘게 만드는중이면 죽은 것으로 보고 다시 집는다)
+    //    🔴 2026-11-10: 20분이었는데 v23 오타 검수(다시 그리기 2번)로 한 건이 30~47분 걸려, 살아 있는 작업을 다른 칸이 빼앗아
+    //       겹쳐 풀었다(10/30 유지후 — 세 번 처리·나중 판이 answer.jpg 를 덮어씀). 워커는 이제 4분마다 qna-touch 로 잠금을 늘린다.
+    if (act === 'qna-touch') {
+      if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
+      const id = `qna_${String(p.id || '')}`
+      const who = String(p.worker || '').slice(0, 60)
+      const cur = await qnaRow(id)
+      const mine = !!cur && cur.status === '만드는중' && (!cur.worker || !who || cur.worker === who)
+      if (mine) await qnaWrite(id, { ...cur, touchedAt: new Date().toISOString() })     // updated_at 이 새로 찍힌다
+      res.status(200).json({ ok: true, mine, status: cur?.status ?? null, worker: cur?.worker ?? null }); return
+    }
     if (act === 'qna-take') {
       if (!qnaKeyOk(p.workerKey)) { res.status(401).json({ error: '키가 맞지 않습니다.' }); return }
       // 🔴 2026-09-29: 완료된 줄까지 200개를 통째로 받던 것을 «대기·만드는중» 만 받게 — 워커 칸마다 몇 초에 한 번 부른다(egress).
       //    (앱 문제 질문은 문제 원문을 줄에 싣는다 → 끝난 줄을 계속 받으면 그만큼 샌다)
       const r = await sbRest(`/rest/v1/hj_settings?id=like.qna_*&data->value->>status=in.(${encodeURIComponent('대기')},${encodeURIComponent('만드는중')})&select=id,data,updated_at&order=updated_at.asc&limit=200`)
       const rows = await r.json().catch(() => [])
-      const stale = Date.now() - 20 * 60_000
+      const stale = Date.now() - 30 * 60_000
       const 후보 = (Array.isArray(rows) ? rows : []).filter((x: any) => {
         const q = x?.data?.value
         if (!q) return false
@@ -374,6 +385,12 @@ async function handleQna(p: any, res: any) {
       const id = `qna_${String(p.id || '')}`
       const cur = await qnaRow(id)
       if (!cur) { res.status(404).json({ error: '그런 질문이 없습니다.' }); return }
+      // 🔴 2026-11-10: 다른 칸이 이미 가져간 질문이면 이 칸의 완료·실패는 받지 않는다(빼앗긴 칸이 «대기» 로 되돌려 또 집던 사고).
+      //    worker 를 안 보내는 호출(선생님·수동 «qna-fail final:false» 다시 돌리기)은 예전처럼 받는다.
+      const who = String(p.worker || '').slice(0, 60)
+      if (who && cur.worker && cur.worker !== who) {
+        res.status(409).json({ error: `다른 칸이 이 질문을 가져갔습니다(${String(cur.worker).slice(0, 60)})`, taken: true }); return
+      }
       const q = act === 'qna-done'
         ? { ...cur, status: '완료', answerUrl: String(p.url || ''), answerText: String(p.title || ''),
             card: p.card && typeof p.card === 'object' ? p.card : undefined,
