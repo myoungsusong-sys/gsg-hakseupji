@@ -1370,5 +1370,300 @@
   "title": "주장·이유·근거",
   "video": "type-lectures/kor-h12-bis-pym-u4m2s0t0.mp4",
   "sec": 792
+ },
+ "18752": {
+  "title": "평면도형에서 닮음비의 응용",
+  "video": "type-lectures/18752.mp4",
+  "sec": 572
+ },
+ "18759": {
+  "title": "삼각형의 닮음 조건의 응용(1) SAS 닮음",
+  "video": "type-lectures/18759.mp4",
+  "sec": 458
+ },
+ "18786": {
+  "title": "직사각형의 대각선의 길이",
+  "video": "type-lectures/18786.mp4",
+  "sec": 423
+ },
+ "18792": {
+  "title": "직각삼각형이 되기 위한 조건",
+  "video": "type-lectures/18792.mp4",
+  "sec": 432
+ },
+ "18806": {
+  "title": "사다리꼴에서 평행선 사이의 선분의 길이의 비",
+  "video": "type-lectures/18806.mp4",
+  "sec": 709
+ },
+ "18812": {
+  "title": "삼각형의 두 변의 중점을 연결한 선분의 성질(2)",
+  "video": "type-lectures/18812.mp4",
+  "sec": 319
+ },
+ "18819": {
+  "title": "사다리꼴의 두 변의 중점을 연결한 선분의 성질",
+  "video": "type-lectures/18819.mp4",
+  "sec": 568
+ },
+ "18832": {
+  "title": "닮은 두 입체도형의 겉넓이의 비",
+  "video": "type-lectures/18832.mp4",
+  "sec": 341
+ },
+ "eng-h1-b04-u4m0s0t0": {
+  "title": "어휘",
+  "video": "type-lectures/eng-h1-b04-u4m0s0t0.mp4",
+  "sec": 691
+ },
+ "eng-h1-b04-u4m1s0t0": {
+  "title": "어법 판단",
+  "video": "type-lectures/eng-h1-b04-u4m1s0t0.mp4",
+  "sec": 592
+ },
+ "eng-h1-b04-u4m2s0t0": {
+  "title": "어법 서술형",
+  "video": "type-lectures/eng-h1-b04-u4m2s0t0.mp4",
+  "sec": 410
+ },
+ "eng-h1-b04-u4m3s0t0": {
+  "title": "대의 파악(주제·제목·요지·요약)",
+  "video": "type-lectures/eng-h1-b04-u4m3s0t0.mp4",
+  "sec": 720
+ },
+ "eng-h1-b04-u4m4s0t0": {
+  "title": "세부 내용(일치·추론·질문)",
+  "video": "type-lectures/eng-h1-b04-u4m4s0t0.mp4",
+  "sec": 789
+ },
+ "eng-h1-b04-u4m5s0t0": {
+  "title": "빈칸·흐름(빈칸·순서·지칭)",
+  "video": "type-lectures/eng-h1-b04-u4m5s0t0.mp4",
+  "sec": 541
+ },
+ "eng-h1-b04-u4m6s0t0": {
+  "title": "영작·배열·본문 서술형",
+  "video": "type-lectures/eng-h1-b04-u4m6s0t0.mp4",
+  "sec": 676
+ },
+ "eng-h1-b04-u5m0s0t0": {
+  "title": "어휘",
+  "video": "type-lectures/eng-h1-b04-u5m0s0t0.mp4",
+  "sec": 627
+ },
+ "eng-h1-b04-u5m1s0t0": {
+  "title": "어법 판단",
+  "video": "type-lectures/eng-h1-b04-u5m1s0t0.mp4",
+  "sec": 727
+ },
+ "eng-h1-b04-u5m2s0t0": {
+  "title": "어법 서술형",
+  "video": "type-lectures/eng-h1-b04-u5m2s0t0.mp4",
+  "sec": 571
+ },
+ "eng-h1-b04-u5m3s0t0": {
+  "title": "대의 파악(주제·제목·요지·요약)",
+  "video": "type-lectures/eng-h1-b04-u5m3s0t0.mp4",
+  "sec": 589
+ },
+ "eng-h1-b04-u5m4s0t0": {
+  "title": "세부 내용(일치·추론·질문)",
+  "video": "type-lectures/eng-h1-b04-u5m4s0t0.mp4",
+  "sec": 667
+ },
+ "eng-h1-b04-u5m6s0t0": {
+  "title": "영작·배열·본문 서술형",
+  "video": "type-lectures/eng-h1-b04-u5m6s0t0.mp4",
+  "sec": 545
+ },
+ "eng-h1-b04-u5m7s0t0": {
+  "title": "단어·문장",
+  "video": "type-lectures/eng-h1-b04-u5m7s0t0.mp4",
+  "sec": 464
+ },
+ "eng-h1-b04-u6m0s0t0": {
+  "title": "어휘",
+  "video": "type-lectures/eng-h1-b04-u6m0s0t0.mp4",
+  "sec": 776
+ },
+ "eng-h1-b04-u6m1s0t0": {
+  "title": "어법 판단",
+  "video": "type-lectures/eng-h1-b04-u6m1s0t0.mp4",
+  "sec": 530
+ },
+ "eng-h1-b04-u6m2s0t0": {
+  "title": "어법 서술형",
+  "video": "type-lectures/eng-h1-b04-u6m2s0t0.mp4",
+  "sec": 583
+ },
+ "eng-h1-b04-u6m4s0t0": {
+  "title": "세부 내용(일치·추론·질문)",
+  "video": "type-lectures/eng-h1-b04-u6m4s0t0.mp4",
+  "sec": 554
+ },
+ "eng-h1-b04-u6m5s0t0": {
+  "title": "빈칸·흐름(빈칸·순서·지칭)",
+  "video": "type-lectures/eng-h1-b04-u6m5s0t0.mp4",
+  "sec": 609
+ },
+ "eng-h1-b04-u6m6s0t0": {
+  "title": "영작·배열·본문 서술형",
+  "video": "type-lectures/eng-h1-b04-u6m6s0t0.mp4",
+  "sec": 619
+ },
+ "eng-h1-b04-u6m7s0t0": {
+  "title": "단어·문장",
+  "video": "type-lectures/eng-h1-b04-u6m7s0t0.mp4",
+  "sec": 619
+ },
+ "eng-h1-b04-u7m0s0t0": {
+  "title": "어휘",
+  "video": "type-lectures/eng-h1-b04-u7m0s0t0.mp4",
+  "sec": 723
+ },
+ "eng-h1-b04-u7m1s0t0": {
+  "title": "어법 판단",
+  "video": "type-lectures/eng-h1-b04-u7m1s0t0.mp4",
+  "sec": 772
+ },
+ "eng-h1-b04-u7m2s0t0": {
+  "title": "어법 서술형",
+  "video": "type-lectures/eng-h1-b04-u7m2s0t0.mp4",
+  "sec": 545
+ },
+ "eng-h1-b04-u7m3s0t0": {
+  "title": "대의 파악(주제·제목·요지·요약)",
+  "video": "type-lectures/eng-h1-b04-u7m3s0t0.mp4",
+  "sec": 694
+ },
+ "eng-h1-b04-u7m4s0t0": {
+  "title": "세부 내용(일치·추론·질문)",
+  "video": "type-lectures/eng-h1-b04-u7m4s0t0.mp4",
+  "sec": 669
+ },
+ "eng-h1-b04-u7m5s0t0": {
+  "title": "빈칸·흐름(빈칸·순서·지칭)",
+  "video": "type-lectures/eng-h1-b04-u7m5s0t0.mp4",
+  "sec": 605
+ },
+ "eng-h1-b04-u7m6s0t0": {
+  "title": "영작·배열·본문 서술형",
+  "video": "type-lectures/eng-h1-b04-u7m6s0t0.mp4",
+  "sec": 523
+ },
+ "kor-h12-bis-pym-u3m0s1t0": {
+  "title": "비유적 시어와 배경 설화",
+  "video": "type-lectures/kor-h12-bis-pym-u3m0s1t0.mp4",
+  "sec": 598
+ },
+ "kor-h12-bis-pym-u3m0s1t1": {
+  "title": "화자의 태도와 〈서경별곡〉과의 비교",
+  "video": "type-lectures/kor-h12-bis-pym-u3m0s1t1.mp4",
+  "sec": 729
+ },
+ "kor-h12-bis-pym-u3m0s2t1": {
+  "title": "형식적·내용적 전통의 계승",
+  "video": "type-lectures/kor-h12-bis-pym-u3m0s2t1.mp4",
+  "sec": 659
+ },
+ "kor-h12-bis-pym-u3m1s0t0": {
+  "title": "계절에 따른 시상 전개와 구조",
+  "video": "type-lectures/kor-h12-bis-pym-u3m1s0t0.mp4",
+  "sec": 422
+ },
+ "kor-h12-bis-pym-u3m1s0t1": {
+  "title": "‘강호’의 의미와 사대부의 자연관",
+  "video": "type-lectures/kor-h12-bis-pym-u3m1s0t1.mp4",
+  "sec": 491
+ },
+ "kor-h12-bis-pym-u3m1s1t0": {
+  "title": "〈상춘곡〉의 표현과 태도",
+  "video": "type-lectures/kor-h12-bis-pym-u3m1s1t0.mp4",
+  "sec": 715
+ },
+ "kor-h12-bis-pym-u3m1s1t1": {
+  "title": "향유 계층에 따른 자연의 의미",
+  "video": "type-lectures/kor-h12-bis-pym-u3m1s1t1.mp4",
+  "sec": 558
+ },
+ "kor-h12-bis-pym-u3m2s0t0": {
+  "title": "역순행적 구성",
+  "video": "type-lectures/kor-h12-bis-pym-u3m2s0t0.mp4",
+  "sec": 503
+ },
+ "kor-h12-bis-pym-u3m2s1t0": {
+  "title": "1930년대 농촌 현실의 반영",
+  "video": "type-lectures/kor-h12-bis-pym-u3m2s1t0.mp4",
+  "sec": 564
+ },
+ "kor-h12-bis-pym-u3m2s1t1": {
+  "title": "해학과 풍자, 서술 방식",
+  "video": "type-lectures/kor-h12-bis-pym-u3m2s1t1.mp4",
+  "sec": 729
+ },
+ "kor-h12-bis-pym-u3m2s2t0": {
+  "title": "인물의 처지와 웃음 유발 방식",
+  "video": "type-lectures/kor-h12-bis-pym-u3m2s2t0.mp4",
+  "sec": 540
+ },
+ "kor-h12-bis-pym-u4m0s0t0": {
+  "title": "주제 통합적 읽기의 개념과 방법",
+  "video": "type-lectures/kor-h12-bis-pym-u4m0s0t0.mp4",
+  "sec": 414
+ },
+ "kor-h12-bis-pym-u4m0s1t0": {
+  "title": "윤리적 소비의 등장 배경과 실천 방법",
+  "video": "type-lectures/kor-h12-bis-pym-u4m0s1t0.mp4",
+  "sec": 586
+ },
+ "kor-h12-bis-pym-u4m0s3t0": {
+  "title": "글쓴이의 경험과 깨달음",
+  "video": "type-lectures/kor-h12-bis-pym-u4m0s3t0.mp4",
+  "sec": 583
+ },
+ "kor-h12-bis-pym-u4m0s4t0": {
+  "title": "관점·형식의 비교와 모순되는 정보",
+  "video": "type-lectures/kor-h12-bis-pym-u4m0s4t0.mp4",
+  "sec": 658
+ },
+ "kor-h12-bis-pym-u4m0s4t1": {
+  "title": "읽기 목적에 따른 관점 설정",
+  "video": "type-lectures/kor-h12-bis-pym-u4m0s4t1.mp4",
+  "sec": 476
+ },
+ "kor-h12-bis-pym-u4m1s1t0": {
+  "title": "양측의 입장과 대안",
+  "video": "type-lectures/kor-h12-bis-pym-u4m1s1t0.mp4",
+  "sec": 637
+ },
+ "kor-h12-bis-pym-u4m1s1t1": {
+  "title": "협상의 효과와 근원적 동기",
+  "video": "type-lectures/kor-h12-bis-pym-u4m1s1t1.mp4",
+  "sec": 517
+ },
+ "kor-h12-bis-pym-u4m1s2t0": {
+  "title": "책임감 있는 듣기·말하기와 협상 태도",
+  "video": "type-lectures/kor-h12-bis-pym-u4m1s2t0.mp4",
+  "sec": 536
+ },
+ "kor-h12-bis-pym-u4m2s0t1": {
+  "title": "예상 반론과 반박",
+  "video": "type-lectures/kor-h12-bis-pym-u4m2s0t1.mp4",
+  "sec": 542
+ },
+ "kor-h12-bis-pym-u4m2s1t0": {
+  "title": "연역과 귀납",
+  "video": "type-lectures/kor-h12-bis-pym-u4m2s1t0.mp4",
+  "sec": 660
+ },
+ "kor-h12-bis-pym-u4m2s1t1": {
+  "title": "논증하는 글의 작성과 점검",
+  "video": "type-lectures/kor-h12-bis-pym-u4m2s1t1.mp4",
+  "sec": 566
+ },
+ "m-his1-2-u1m0s2t1": {
+  "title": "민주주의와 여성 참정권 확대",
+  "video": "type-lectures/m-his1-2-u1m0s2t1.mp4",
+  "sec": 493
  }
 }
