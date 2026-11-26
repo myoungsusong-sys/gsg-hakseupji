@@ -7,6 +7,7 @@ import * as pencil from '../lib/pencilSound'
 import AskProblemButton from './student/AskProblemButton'
 import { ConceptVideoButton, useConceptVideo } from './student/ConceptVideo'
 import TypeLecture, { useTypeLecture } from './student/TypeLecture'
+import Celebrate from './student/Celebrate'
 import { autoCorrect, choiceAnswerCount, isImgAnswer, isSelfGraded, toggleChoice } from './student/AnswerInput'
 import { answerParts, joinAnswerParts, joinPlainParts, plainAnswerParts } from '../lib/answers'
 import MathText from './MathText'
@@ -57,6 +58,15 @@ export default function MasteryRunner({
 }) {
   // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
   const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 0))
+  // 🚪 시작 방식 고르기 (2026-11-26 명수쌤 «두가지 다 만들어줘 따로 개념부터 필요한 학생은 개념부터가게»)
+  //    · 개념부터   — 0층(개념 강의·이론노트 → 빈칸)부터 차근차근 (종전 방식)
+  //    · 대표문제부터 — 이 유형의 기준(표준) 문제부터. 틀리면 개념으로 내려가고, 맞히면 위로 (step 규칙 그대로)
+  //    처음 들어온 유형(저장된 기록이 없을 때)만 묻는다. 고르기 전에는 기록을 저장하지 않는다.
+  //    («기록 없음»으로 판단하면 안 된다 — 위 화면이 처음 들어온 유형에도 빈 기록을 만들어 넘겨 준다. 아직 한 문제도 안 푼 기록이면 묻는다)
+  const [needChoice, setNeedChoice] = useState(() => {
+    const s = normalizeMastery(initial, studentId, typeId)
+    return !s || (s.log.length === 0 && s.servedIds.length === 0 && !s.mastered && !s.lecDone)
+  })
   const [current, setCurrent] = useState<Problem | null>(null)
   const [picked, setPicked] = useState<number | null>(null)   // 객관식 선택
   const [input, setInput] = useState('')                      // 주관식 학생 답
@@ -133,7 +143,7 @@ export default function MasteryRunner({
     if (curKey && next) writeSticky(curKey, { floor: state.floor, n: state.servedIds.length, pid: next.id })
   }, [state.floor, state.servedIds.length, base, pool])   // eslint-disable-line react-hooks/exhaustive-deps
 
-  useEffect(() => { onChange?.(state) }, [state])          // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (!needChoice) onChange?.(state) }, [state, needChoice])          // eslint-disable-line react-hooks/exhaustive-deps
 
   function apply(r: ReturnType<typeof step>) {
     setState(r.next); setMsg(r.message); setEvent(r.event)
@@ -201,14 +211,43 @@ export default function MasteryRunner({
     if (ok) mark(true)
   }
 
-  // ── 마스터 / 선생님 호출 ──────────────────────────────────────────────
-  if (state.mastered) {
+  // ── 시작 방식 고르기 ──────────────────────────────────────────────────
+  if (needChoice) {
+    const repFloor = Math.min(2, top) as MasteryState['floor']
     return (
       <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
+        <div className="py-6 text-center">
+          <p className="text-base font-black text-pine-dark">어떻게 시작할까요?</p>
+          <div className="mx-auto mt-4 flex max-w-sm flex-col gap-3">
+            <button type="button"
+              onClick={() => { setState(newMastery(studentId, typeId, 0)); setNeedChoice(false) }}
+              className="rounded-xl border-2 border-pine bg-white px-4 py-3 text-left hover:bg-pine-soft/40">
+              <div className="text-sm font-black text-pine-dark">📘 개념부터</div>
+              <div className="mt-0.5 text-xs text-ink2">개념 강의와 빈칸 확인부터 차근차근 올라갑니다.</div>
+            </button>
+            <button type="button"
+              onClick={() => { setState(newMastery(studentId, typeId, repFloor)); setNeedChoice(false) }}
+              className="rounded-xl border-2 border-line bg-white px-4 py-3 text-left hover:bg-paper2">
+              <div className="text-sm font-black text-ink">🎯 대표문제부터</div>
+              <div className="mt-0.5 text-xs text-ink2">대표 문제부터 풉니다. 틀리면 개념으로 내려가고, 맞히면 위로 올라갑니다.</div>
+            </button>
+          </div>
+        </div>
+      </Frame>
+    )
+  }
+
+  // ── 마스터 / 선생님 호출 ──────────────────────────────────────────────
+  if (state.mastered) {
+    // 🎉 막 마스터한 순간(event '마스터')에만 색종이·축하음 — 다시 들어올 때는 조용히(2026-11-26 명수쌤 «성취감을 느낄수있게»)
+    const fresh = event === '마스터'
+    return (
+      <Frame typeName={typeName} state={state} top={top} sets={sets} onClose={onClose} onPrint={onPrint}>
+        {fresh && <Celebrate />}
         <div className="py-10 text-center">
-          <div className="text-4xl">🎉</div>
-          <p className="mt-3 text-lg font-black text-pine-dark">이 유형을 마스터했습니다</p>
-          <p className="mt-1 text-sm text-ink2">최상 단계까지 연속으로 맞혔습니다.</p>
+          <div className={`text-5xl ${fresh ? 'animate-bounce' : ''}`}>🏆</div>
+          <p className="mt-3 text-xl font-black text-pine-dark">이 유형을 마스터했습니다!</p>
+          <p className="mt-1 text-sm text-ink2">최상 단계까지 연속으로 맞혔습니다. 정말 잘했어요.</p>
           <Trail state={state} />
         </div>
       </Frame>
@@ -572,7 +611,7 @@ export default function MasteryRunner({
               )}
               <button type="button" onClick={() => mark(false)}
                 className="mt-3 w-full rounded-lg bg-clay py-2.5 text-sm font-bold text-white">
-                해설을 봤습니다 — 한 단계 내려가기
+                해설을 봤습니다 — 개념으로 내려가기
               </button>
             </div>
           )}
