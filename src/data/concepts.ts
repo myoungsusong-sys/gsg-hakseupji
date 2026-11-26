@@ -2738,9 +2738,13 @@ const CORE: Concept[] = [
 // 선택 범위(소단원 id들)에 해당하는 개념들
 // 손으로 검수한 정본(CORE, 중·고 수학) + 자동 생성분(초등·과학·사회역사).
 // 같은 소단원이 양쪽에 있으면 **정본이 이긴다**.
+// 🔴 2026-11-27 명수쌤 «ox나 빈칸은 우리 강의 녹음본을 기반으로한 개념강의내용에 맞게» —
+//    중2-2 수학(m2-2)·공통수학2(h-cm2)는 강의 녹음(전사·증류) 기반 카드가 _concepts 에 있으면 그 소단원은 강의 카드가 이긴다.
+const 강의우선 = new Set(CONCEPTS_GEN.filter(c => /^(m2-2|h-cm2)-/.test(c.subId)).map(c => c.subId))
 export const CONCEPTS: Concept[] = (() => {
-  const have = new Set(CORE.map(c => c.subId))
-  return [...CORE, ...CONCEPTS_GEN.filter(c => !have.has(c.subId))]
+  const core = CORE.filter(c => !강의우선.has(c.subId))
+  const have = new Set(core.map(c => c.subId))
+  return [...core, ...CONCEPTS_GEN.filter(c => !have.has(c.subId))]
 })()
 
 export function conceptsForSubUnits(subIds: Set<string>): Concept[] {
