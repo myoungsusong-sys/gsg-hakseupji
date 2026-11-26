@@ -2115,5 +2115,490 @@
   "title": "세계화에 따른 변화",
   "video": "type-lectures/m-his1-2-u2m2s0t1.mp4",
   "sec": 401
+ },
+ "16516": {
+  "title": "명제",
+  "video": "type-lectures/16516.mp4",
+  "sec": 487
+ },
+ "16519": {
+  "title": "조건의 진리집합",
+  "video": "type-lectures/16519.mp4",
+  "sec": 526
+ },
+ "16520": {
+  "title": "명제 p→q의 참, 거짓",
+  "video": "type-lectures/16520.mp4",
+  "sec": 836
+ },
+ "16521": {
+  "title": "명제의 참, 거짓과 진리집합",
+  "video": "type-lectures/16521.mp4",
+  "sec": 507
+ },
+ "16522": {
+  "title": "´모든´이나 ´어떤´을 포함한 명제의 참, 거짓",
+  "video": "type-lectures/16522.mp4",
+  "sec": 580
+ },
+ "16528": {
+  "title": "삼단논법",
+  "video": "type-lectures/16528.mp4",
+  "sec": 603
+ },
+ "16529": {
+  "title": "삼단논법과 명제의 추론",
+  "video": "type-lectures/16529.mp4",
+  "sec": 733
+ },
+ "16536": {
+  "title": "대우를 이용한 명제의 증명",
+  "video": "type-lectures/16536.mp4",
+  "sec": 742
+ },
+ "16538": {
+  "title": "부등식의 증명(1) 두 식의 차를 이용한 대소 비교",
+  "video": "type-lectures/16538.mp4",
+  "sec": 477
+ },
+ "16539": {
+  "title": "부등식의 증명(2) 두 식의 제곱의 차를 이용한 대소 비교",
+  "video": "type-lectures/16539.mp4",
+  "sec": 564
+ },
+ "16545": {
+  "title": "산술평균과 기하평균의 관계(2) 합이 일정한 경우",
+  "video": "type-lectures/16545.mp4",
+  "sec": 686
+ },
+ "16548": {
+  "title": "산술평균과 기하평균의 관계(4) 복잡한 식의 최대·최소",
+  "video": "type-lectures/16548.mp4",
+  "sec": 603
+ },
+ "16549": {
+  "title": "산술평균과 기하평균의 관계(5) 도형에서의 활용",
+  "video": "type-lectures/16549.mp4",
+  "sec": 535
+ },
+ "16551": {
+  "title": "코시-슈바르츠의 부등식(1)",
+  "video": "type-lectures/16551.mp4",
+  "sec": 367
+ },
+ "16557": {
+  "title": "함숫값",
+  "video": "type-lectures/16557.mp4",
+  "sec": 581
+ },
+ "16558": {
+  "title": "함수의 정의역, 공역, 치역",
+  "video": "type-lectures/16558.mp4",
+  "sec": 785
+ },
+ "16563": {
+  "title": "일대일대응이 되기 위한 조건",
+  "video": "type-lectures/16563.mp4",
+  "sec": 653
+ },
+ "16566": {
+  "title": "조건을 만족시키는 함수의 개수",
+  "video": "type-lectures/16566.mp4",
+  "sec": 722
+ },
+ "16571": {
+  "title": "fｏg=h를 만족시키는 함수 f 또는 g 구하기",
+  "video": "type-lectures/16571.mp4",
+  "sec": 559
+ },
+ "16577": {
+  "title": "역함수가 존재하기 위한 조건",
+  "video": "type-lectures/16577.mp4",
+  "sec": 719
+ },
+ "16581": {
+  "title": "함수와 그 역함수가 서로 같은 경우",
+  "video": "type-lectures/16581.mp4",
+  "sec": 696
+ },
+ "16585": {
+  "title": "역함수와 합성함수의 성질",
+  "video": "type-lectures/16585.mp4",
+  "sec": 599
+ },
+ "16588": {
+  "title": "역함수의 그래프의 성질",
+  "video": "type-lectures/16588.mp4",
+  "sec": 639
+ },
+ "16591": {
+  "title": "주기함수와 대칭함수",
+  "video": "type-lectures/16591.mp4",
+  "sec": 633
+ },
+ "16597": {
+  "title": "유리식의 뜻과 성질",
+  "video": "type-lectures/16597.mp4",
+  "sec": 615
+ },
+ "16600": {
+  "title": "유리식과 항등식",
+  "video": "type-lectures/16600.mp4",
+  "sec": 333
+ },
+ "16608": {
+  "title": "유리식의 값(2) 비례식이 주어질 때",
+  "video": "type-lectures/16608.mp4",
+  "sec": 535
+ },
+ "16615": {
+  "title": "유리함수의 뜻",
+  "video": "type-lectures/16615.mp4",
+  "sec": 484
+ },
+ "16620": {
+  "title": "유리함수의 최대·최소",
+  "video": "type-lectures/16620.mp4",
+  "sec": 380
+ },
+ "16629": {
+  "title": "유리함수의 합성함수와 역함수",
+  "video": "type-lectures/16629.mp4",
+  "sec": 570
+ },
+ "16632": {
+  "title": "제곱근의 성질",
+  "video": "type-lectures/16632.mp4",
+  "sec": 372
+ },
+ "16641": {
+  "title": "무리함수의 뜻",
+  "video": "type-lectures/16641.mp4",
+  "sec": 634
+ },
+ "16649": {
+  "title": "무리함수의 최대·최소",
+  "video": "type-lectures/16649.mp4",
+  "sec": 503
+ },
+ "16654": {
+  "title": "무리함수와 그 역함수의 교점 구하기",
+  "video": "type-lectures/16654.mp4",
+  "sec": 656
+ },
+ "176": {
+  "title": "별의 밝기와 등급",
+  "video": "type-lectures/176.mp4",
+  "sec": 753
+ },
+ "390": {
+  "title": "지질시대의 환경 변화",
+  "video": "type-lectures/390.mp4",
+  "sec": 690
+ },
+ "392": {
+  "title": "대멸종과 생물다양성",
+  "video": "type-lectures/392.mp4",
+  "sec": 679
+ },
+ "395": {
+  "title": "진화",
+  "video": "type-lectures/395.mp4",
+  "sec": 608
+ },
+ "398": {
+  "title": "생물다양성 보전의 필요성",
+  "video": "type-lectures/398.mp4",
+  "sec": 662
+ },
+ "399": {
+  "title": "생물다양성 보전을 위한 노력",
+  "video": "type-lectures/399.mp4",
+  "sec": 465
+ },
+ "408": {
+  "title": "중화 반응이 일어날때의 변화",
+  "video": "type-lectures/408.mp4",
+  "sec": 986
+ },
+ "415": {
+  "title": "먹이관계와 에너지 흐름",
+  "video": "type-lectures/415.mp4",
+  "sec": 399
+ },
+ "424": {
+  "title": "태양에너지의 생성",
+  "video": "type-lectures/424.mp4",
+  "sec": 611
+ },
+ "427": {
+  "title": "자석과 원형 도선에서의 유도전류",
+  "video": "type-lectures/427.mp4",
+  "sec": 664
+ },
+ "433": {
+  "title": "신재생에너지",
+  "video": "type-lectures/433.mp4",
+  "sec": 568
+ },
+ "434": {
+  "title": "친환경 에너지 도시",
+  "video": "type-lectures/434.mp4",
+  "sec": 752
+ },
+ "437": {
+  "title": "데이터 특정",
+  "video": "type-lectures/437.mp4",
+  "sec": 389
+ },
+ "439": {
+  "title": "지능정보화 시대",
+  "video": "type-lectures/439.mp4",
+  "sec": 678
+ },
+ "h-khis2-u0m0s0t2": {
+  "title": "러시아 혁명과 전후 동아시아 변화",
+  "video": "type-lectures/h-khis2-u0m0s0t2.mp4",
+  "sec": 482
+ },
+ "h-khis2-u0m0s1t1": {
+  "title": "조선 태형령 사료로 시기 판단",
+  "video": "type-lectures/h-khis2-u0m0s1t1.mp4",
+  "sec": 506
+ },
+ "h-khis2-u0m0s1t2": {
+  "title": "토지 조사 사업의 목적과 결과",
+  "video": "type-lectures/h-khis2-u0m0s1t2.mp4",
+  "sec": 580
+ },
+ "h-khis2-u0m0s1t3": {
+  "title": "회사령과 자원 수탈 정책",
+  "video": "type-lectures/h-khis2-u0m0s1t3.mp4",
+  "sec": 454
+ },
+ "h-khis2-u0m1s0t0": {
+  "title": "독립 의군부와 대한 광복회 비교",
+  "video": "type-lectures/h-khis2-u0m1s0t0.mp4",
+  "sec": 541
+ },
+ "h-khis2-u0m1s2t0": {
+  "title": "여러 임시 정부의 통합 과정",
+  "video": "type-lectures/h-khis2-u0m1s2t0.mp4",
+  "sec": 506
+ },
+ "h-khis2-u0m1s2t2": {
+  "title": "연통제·교통국 등 초기 활동",
+  "video": "type-lectures/h-khis2-u0m1s2t2.mp4",
+  "sec": 587
+ },
+ "h-khis2-u0m2s0t1": {
+  "title": "3부 성립과 미쓰야 협정의 영향",
+  "video": "type-lectures/h-khis2-u0m2s0t1.mp4",
+  "sec": 673
+ },
+ "h-khis2-u0m2s1t1": {
+  "title": "민립 대학 설립 운동의 전개",
+  "video": "type-lectures/h-khis2-u0m2s1t1.mp4",
+  "sec": 535
+ },
+ "h-khis2-u0m2s1t2": {
+  "title": "문자 보급·브나로드 운동 구분",
+  "video": "type-lectures/h-khis2-u0m2s1t2.mp4",
+  "sec": 424
+ },
+ "h-khis2-u0m2s2t2": {
+  "title": "신간회의 활동과 해소 배경",
+  "video": "type-lectures/h-khis2-u0m2s2t2.mp4",
+  "sec": 487
+ },
+ "h-khis2-u0m2s3t2": {
+  "title": "두 학생 운동 사료 구분",
+  "video": "type-lectures/h-khis2-u0m2s3t2.mp4",
+  "sec": 635
+ },
+ "h-khis2-u0m4s0t0": {
+  "title": "대공황과 전체주의의 확산",
+  "video": "type-lectures/h-khis2-u0m4s0t0.mp4",
+  "sec": 418
+ },
+ "h-khis2-u0m4s2t0": {
+  "title": "한국 독립군과 조선 혁명군 구분",
+  "video": "type-lectures/h-khis2-u0m4s2t0.mp4",
+  "sec": 719
+ },
+ "h-khis2-u0m4s2t2": {
+  "title": "조선 의용대의 창설과 분화",
+  "video": "type-lectures/h-khis2-u0m4s2t2.mp4",
+  "sec": 495
+ },
+ "h-khis2-u0m4s3t2": {
+  "title": "카이로·얄타·포츠담 회담 구분",
+  "video": "type-lectures/h-khis2-u0m4s3t2.mp4",
+  "sec": 555
+ },
+ "h-khis2-u1m0s0t2": {
+  "title": "38도선 분할과 미·소 군정 비교",
+  "video": "type-lectures/h-khis2-u1m0s0t2.mp4",
+  "sec": 453
+ },
+ "h-khis2-u1m0s1t2": {
+  "title": "좌우 합작 운동과 7원칙",
+  "video": "type-lectures/h-khis2-u1m0s1t2.mp4",
+  "sec": 558
+ },
+ "h-khis2-u1m0s2t3": {
+  "title": "농지 개혁의 방식과 한계",
+  "video": "type-lectures/h-khis2-u1m0s2t3.mp4",
+  "sec": 659
+ },
+ "h-khis2-u1m1s0t2": {
+  "title": "정전 협정과 전쟁의 영향",
+  "video": "type-lectures/h-khis2-u1m1s0t2.mp4",
+  "sec": 795
+ },
+ "h-khis2-u1m1s1t2": {
+  "title": "원조 경제와 삼백 산업",
+  "video": "type-lectures/h-khis2-u1m1s1t2.mp4",
+  "sec": 626
+ },
+ "h-khis2-u1m2s0t2": {
+  "title": "장면 내각의 정책과 한계",
+  "video": "type-lectures/h-khis2-u1m2s0t2.mp4",
+  "sec": 625
+ },
+ "h-khis2-u1m2s3t1": {
+  "title": "5·18 민주화 운동 사료 판단",
+  "video": "type-lectures/h-khis2-u1m2s3t1.mp4",
+  "sec": 560
+ },
+ "h-khis2-u1m3s0t0": {
+  "title": "시기별 경제 개발 계획 구분",
+  "video": "type-lectures/h-khis2-u1m3s0t0.mp4",
+  "sec": 566
+ },
+ "h-khis2-u1m3s0t1": {
+  "title": "석유 파동과 3저 호황",
+  "video": "type-lectures/h-khis2-u1m3s0t1.mp4",
+  "sec": 729
+ },
+ "h-khis2-u1m3s0t3": {
+  "title": "새마을 운동과 도시화·환경 문제",
+  "video": "type-lectures/h-khis2-u1m3s0t3.mp4",
+  "sec": 549
+ },
+ "h-khis2-u2m0s0t1": {
+  "title": "노태우 정부의 북방 외교와 청문회",
+  "video": "type-lectures/h-khis2-u2m0s0t1.mp4",
+  "sec": 640
+ },
+ "h-khis2-u2m0s1t2": {
+  "title": "민주화 이후 정부 순서 배열",
+  "video": "type-lectures/h-khis2-u2m0s1t2.mp4",
+  "sec": 707
+ },
+ "h-khis2-u2m0s2t1": {
+  "title": "시민운동과 촛불 집회",
+  "video": "type-lectures/h-khis2-u2m0s2t1.mp4",
+  "sec": 564
+ },
+ "h-khis2-u2m1s1t0": {
+  "title": "노동자 대투쟁과 양대 노총 체제",
+  "video": "type-lectures/h-khis2-u2m1s1t0.mp4",
+  "sec": 446
+ },
+ "h-khis2-u2m1s1t1": {
+  "title": "비정규직 확대와 사회 양극화",
+  "video": "type-lectures/h-khis2-u2m1s1t1.mp4",
+  "sec": 548
+ },
+ "h-khis2-u2m1s2t0": {
+  "title": "저출산·고령화의 영향과 대책",
+  "video": "type-lectures/h-khis2-u2m1s2t0.mp4",
+  "sec": 386
+ },
+ "h-khis2-u2m1s2t2": {
+  "title": "한류와 한국의 위상",
+  "video": "type-lectures/h-khis2-u2m1s2t2.mp4",
+  "sec": 351
+ },
+ "h-khis2-u2m2s0t1": {
+  "title": "북한 경제 변화와 개방 시도",
+  "video": "type-lectures/h-khis2-u2m2s0t1.mp4",
+  "sec": 526
+ },
+ "h-khis2-u2m2s1t1": {
+  "title": "남북 기본 합의서와 비핵화 선언",
+  "video": "type-lectures/h-khis2-u2m2s1t1.mp4",
+  "sec": 595
+ },
+ "h-soc2-u0m1s0t0": {
+  "title": "기본권의 종류",
+  "video": "type-lectures/h-soc2-u0m1s0t0.mp4",
+  "sec": 667
+ },
+ "h-soc2-u1m0s0t0": {
+  "title": "정의의 의미와 필요성",
+  "video": "type-lectures/h-soc2-u1m0s0t0.mp4",
+  "sec": 533
+ },
+ "h-soc2-u1m1s0t1": {
+  "title": "공동체주의적 정의관",
+  "video": "type-lectures/h-soc2-u1m1s0t1.mp4",
+  "sec": 906
+ },
+ "h-soc2-u1m2s0t0": {
+  "title": "사회 불평등의 양상",
+  "video": "type-lectures/h-soc2-u1m2s0t0.mp4",
+  "sec": 691
+ },
+ "h-soc2-u2m1s0t2": {
+  "title": "경제 주체의 역할과 책임",
+  "video": "type-lectures/h-soc2-u2m1s0t2.mp4",
+  "sec": 778
+ },
+ "h-soc2-u2m3s0t1": {
+  "title": "무역의 영향과 지속가능한 무역",
+  "video": "type-lectures/h-soc2-u2m3s0t1.mp4",
+  "sec": 623
+ },
+ "h-soc2-u3m1s0t0": {
+  "title": "소극적 평화와 적극적 평화",
+  "video": "type-lectures/h-soc2-u3m1s0t0.mp4",
+  "sec": 723
+ },
+ "h-soc2-u3m1s0t1": {
+  "title": "국제 갈등의 원인과 사례",
+  "video": "type-lectures/h-soc2-u3m1s0t1.mp4",
+  "sec": 637
+ },
+ "h-soc2-u3m1s0t2": {
+  "title": "국제기구와 비정부 기구의 역할",
+  "video": "type-lectures/h-soc2-u3m1s0t2.mp4",
+  "sec": 805
+ },
+ "h-soc2-u3m2s0t1": {
+  "title": "동아시아의 역사 갈등",
+  "video": "type-lectures/h-soc2-u3m2s0t1.mp4",
+  "sec": 661
+ },
+ "h-soc2-u4m0s0t1": {
+  "title": "인구 지표의 계산",
+  "video": "type-lectures/h-soc2-u4m0s0t1.mp4",
+  "sec": 674
+ },
+ "h-soc2-u4m1s0t0": {
+  "title": "에너지 자원의 분포와 소비",
+  "video": "type-lectures/h-soc2-u4m1s0t0.mp4",
+  "sec": 819
+ },
+ "h-soc2-u4m2s0t0": {
+  "title": "미래 사회의 예측",
+  "video": "type-lectures/h-soc2-u4m2s0t0.mp4",
+  "sec": 482
+ },
+ "h-soc2-u4m2s0t1": {
+  "title": "세계시민의 자세",
+  "video": "type-lectures/h-soc2-u4m2s0t1.mp4",
+  "sec": 624
  }
 }
