@@ -9,6 +9,7 @@ import GradePanel from '../components/lesson/GradePanel'
 import LecturePlanPanel from '../components/lesson/LecturePlanPanel'
 import SolveFeedbackPanel from '../components/lesson/SolveFeedbackPanel'
 import WorksheetPanel from '../components/lesson/WorksheetPanel'
+import WrongReviewPanel from '../components/lesson/WrongReviewPanel'
 import HistoryPanel from '../components/lesson/HistoryPanel'
 import TodayPanel from '../components/lesson/TodayPanel'
 import AnalysisPanel from '../components/lesson/AnalysisPanel'
@@ -21,12 +22,13 @@ import SchoolReviewPanel from '../components/lesson/SchoolReviewPanel'
 import GroupPanel from '../components/lesson/GroupPanel'
 
 // 매쓰플랫과 동일한 6탭. 각 탭 구현은 components/lesson/* 모듈 (리마운트로 state 유실 방지)
-type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'material' | 'voca' | 'school' | 'counsel' | 'plan' | 'solvefb' | 'report'
+type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'wrong' | 'material' | 'voca' | 'school' | 'counsel' | 'plan' | 'solvefb' | 'report'
 const TABS: { key: Tab; label: string }[] = [
   { key: 'history', label: '학습내역' },
   { key: 'today', label: '오늘의 학습' },
   { key: 'analysis', label: '유형분석' },
   { key: 'worksheet', label: '학습지' },
+  { key: 'wrong', label: '❌ 틀린 문제' },
   { key: 'material', label: '교재' },
   { key: 'voca', label: '영어단어' },
   { key: 'school', label: '학교복습' },
@@ -87,7 +89,7 @@ export default function Lesson() {
   //    (명수쌤 2026-08-26: "영어 카테고리를 따로 만들고 영단어를 그 안에")
   const [subject] = useSubject()
   const tabs = useMemo(
-    () => subject === '영어' ? TABS.filter(t => t.key === 'voca' || t.key === 'worksheet' || t.key === 'report') : TABS.filter(t => t.key !== 'voca'),
+    () => subject === '영어' ? TABS.filter(t => t.key === 'voca' || t.key === 'worksheet' || t.key === 'wrong' || t.key === 'report') : TABS.filter(t => t.key !== 'voca'),
     [subject])
   // 과목을 바꾸면 지금 탭이 목록에 없을 수 있다 — 첫 탭으로 돌린다(빈 화면 방지)
   useEffect(() => {
@@ -267,6 +269,7 @@ export default function Lesson() {
             {tab === 'history' && <HistoryPanel key={student.id} student={student} />}
             {tab === 'today' && <TodayPanel key={student.id} student={student} />}
             {tab === 'analysis' && <AnalysisPanel key={student.id} student={student} />}
+            {tab === 'wrong' && <WrongReviewPanel key={student.id} student={student} />}
             {tab === 'worksheet' && <WorksheetPanel key={student.id} student={student} openGradeId={openGradeId} onGradeOpened={() => setOpenGradeId(null)} />}
             {tab === 'material' && <GradePanel key={student.id} student={student} />}
             {tab === 'voca' && <VocaPanel key={student.id} student={student} />}
