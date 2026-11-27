@@ -71,7 +71,9 @@ export function RecentWrongShortcut({ studentId, onGo, disabled = false, disable
   )
 }
 
-export default function MasteryQueue({ studentId, onPick, limit = 12, compact = false, gradingIds, rows: given, disabled = false, disabledTitle }: {
+export default function MasteryQueue({ studentId, onPick, onRestart, limit = 12, compact = false, gradingIds, rows: given, disabled = false, disabledTitle }: {
+  /** 🔁 처음부터 다시 — 진행 중인 유형을 개념(0층)부터 새로 (2026-11-27 윤자혜 선생님 «이어서와 처음부터 다시») */
+  onRestart?: (row: WrongTypeRow) => void
   studentId: string
   onPick: (row: WrongTypeRow) => void
   limit?: number
@@ -128,6 +130,12 @@ export default function MasteryQueue({ studentId, onPick, limit = 12, compact = 
               >
                 {r.status === '진행중' ? '이어서' : r.status === '재정복' ? '다시 정복' : '정복 시작'} →
               </button>
+              {onRestart && r.state && r.state.log.length > 0 && (
+                <button type="button" onClick={() => onRestart(r)} disabled={disabled}
+                  className="rounded-xl border border-pine bg-white px-3 py-1.5 text-xs font-black text-pine-dark hover:bg-pine-soft disabled:cursor-not-allowed disabled:opacity-50">
+                  🔁 처음부터
+                </button>
+              )}
             </li>
           )
         })}

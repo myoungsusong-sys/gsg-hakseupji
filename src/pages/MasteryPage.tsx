@@ -286,6 +286,27 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     setTypeId(r.typeId)
   }
 
+  // 🔁 «이어서» / «처음부터 다시» (2026-11-27 윤자혜 선생님) — 처음부터는 개념(0층)·연속 정답 0 으로 새로 시작.
+  //    지난 풀이 기록(log)은 보고서에 남기고, 이미 낸 문항 목록만 비워 같은 문제도 다시 나오게 한다.
+  const restartType = (id: string) => {
+    const prev = masteries[`${studentId}|${id}`]
+    const fresh = { ...newMastery(studentId, id, 0), log: Array.isArray(prev?.log) ? prev!.log : [] }
+    setStartOverride((m) => ({ ...m, [id]: fresh }))
+    setTypeId(id)
+  }
+  const continueType = (id: string) => {
+    setStartOverride((m) => { if (!m[id]) return m; const n = { ...m }; delete n[id]; return n })
+    setTypeId(id)
+  }
+  const pickBtns = (id: string, st: MasteryState | undefined, disabled = false) => (st && Array.isArray(st.log) && st.log.length > 0) ? (
+    <span className="flex shrink-0 items-center gap-1.5">
+      <button type="button" disabled={disabled} onClick={() => continueType(id)}
+        className="rounded-lg bg-pine px-2.5 py-1 text-xs font-black text-paper hover:opacity-90 disabled:opacity-40">▶ 이어서</button>
+      <button type="button" disabled={disabled} onClick={() => restartType(id)}
+        className="rounded-lg border border-pine bg-white px-2.5 py-1 text-xs font-black text-pine-dark hover:bg-pine-soft disabled:opacity-40">🔁 처음부터</button>
+    </span>
+  ) : null
+
   // 📕 범위 모드 — 범위가 아닐 때는 계산하지 않는다(아래 전체 큐가 따로 계산한다, 리뷰 F6)
   const scopedRows = useWrongTypes(studentId, 30, scoped ? scopeIds : undefined, { pageRange, skip: !scoped })
   const scopeLoadedNow = scoped && scopeLoaded(scopeIds, gradings.filter((g) => g.studentId === studentId), wbItems)
@@ -541,15 +562,18 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
               {unitTypes.map((id) => {
                 const st = masteries[`${studentId}|${id}`]
                 return (
-                  <button key={id} type="button" onClick={() => setTypeId(id)}
-                    className="flex w-full items-center justify-between px-4 py-2.5 text-left text-sm hover:bg-pine-soft">
-                    <span className="text-ink">{nameOf(id)}</span>
-                    <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
-                      {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
-                      {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
-                      {counts.get(id) ?? 0}문항
-                    </span>
-                  </button>
+                  <div key={id} className="flex w-full items-center gap-2 px-4 py-2 text-sm hover:bg-pine-soft">
+                    <button type="button" onClick={() => continueType(id)}
+                      className="flex min-w-0 flex-1 items-center justify-between gap-2 py-0.5 text-left">
+                      <span className="text-ink">{nameOf(id)}</span>
+                      <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
+                        {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
+                        {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
+                        {counts.get(id) ?? 0}문항
+                      </span>
+                    </button>
+                    {pickBtns(id, st)}
+                  </div>
                 )
               })}
             </div>
@@ -591,7 +615,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
           {!scopeReady ? (
             <div className="rounded-2xl border border-line bg-white p-6 text-center text-sm text-ink2">채점한 문제의 유형을 찾는 중…</div>
           ) : liveRows.length ? (
-            <MasteryQueue studentId={studentId} gradingIds={scopeIds} rows={liveRows} onPick={pickFromQueue} />
+            <MasteryQueue studentId={studentId} gradingIds={scopeIds} rows={liveRows} onPick={pickFromQueue} onRestart={(r) => restartType(r.typeId)} />
           ) : !scopeLoadedNow && !scopedRows.length ? (
             <div className="rounded-2xl border border-line bg-white p-6 text-center">
               <div className="text-3xl">🔎</div>
@@ -619,7 +643,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       ) : (
       <>
       {/* 🪜 교재·학습지 오답이 만든 줄 — 여기서 누르면 바로 사다리 (2026-09-08 명수쌤: 문제집 오답도 승강제 유형정복에) */}
-      <div className="mt-4"><MasteryQueue studentId={studentId} onPick={pickFromQueue} /></div>
+      <div className="mt-4"><MasteryQueue studentId={studentId} onPick={pickFromQueue} onRestart={(r) => restartType(r.typeId)} /></div>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {/* 📚 과목 단추 — 드롭다운 대신 한 번에 누르게(2026-10-28 명수쌤 «과목별 선택 단추를 만들어서 좀 편리하게»). 숫자 = 그 과목 과정 수 */}
@@ -679,18 +703,21 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
           const n = countByType(problems).get(r.id) ?? 0
           const st = masteries[`${studentId}|${r.id}`]
           return (
-            <button key={r.id} type="button" disabled={n === 0} onClick={() => setTypeId(r.id)}
-              className="flex w-full items-center justify-between px-4 py-2.5 text-left text-sm hover:bg-pine-soft disabled:opacity-40">
-              <span>
-                <span className="text-ink">{r.name}</span>
-                <span className="ml-2 text-xs text-ink2">{r.sub}</span>
-              </span>
-              <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
-                {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
-                {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
-                {n}문항
-              </span>
-            </button>
+            <div key={r.id} className={`flex w-full items-center gap-2 px-4 py-2 text-sm hover:bg-pine-soft ${n === 0 ? 'opacity-40' : ''}`}>
+              <button type="button" disabled={n === 0} onClick={() => continueType(r.id)}
+                className="flex min-w-0 flex-1 items-center justify-between gap-2 py-0.5 text-left">
+                <span>
+                  <span className="text-ink">{r.name}</span>
+                  <span className="ml-2 text-xs text-ink2">{r.sub}</span>
+                </span>
+                <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
+                  {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
+                  {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
+                  {n}문항
+                </span>
+              </button>
+              {pickBtns(r.id, st, n === 0)}
+            </div>
           )
         })}
         {!shown.length && !!courses.length &&
