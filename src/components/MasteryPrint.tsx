@@ -196,6 +196,11 @@ export default function MasteryPrint({ typeId, typeName, base, pool, onClose, in
         </>
       )}
 
+      {!current && onPaperApply && paperItems.length > 0 && (
+        <p className="no-print mt-8 rounded-2xl border-2 border-dashed border-pine p-4 text-sm font-bold text-pine-dark">
+          ✏️ 종이로 푼 답의 ○/✗ 채점 칸은 위쪽 «학생» 칸에서 학생을 고르면 여기에 나타납니다.
+        </p>
+      )}
       {current && onPaperApply && paperItems.length > 0 && (
         <MasteryPaperGrade key={kind} items={paperItems} top={top} current={current} onApply={onPaperApply} />
       )}
