@@ -116,6 +116,12 @@ export default function MasteryPrint({ typeId, typeName, base, pool, onClose, in
                 <div className="mb-1 flex items-center gap-2 text-xs text-ink2">
                   <b className="text-sm text-ink">{i + 1}</b>
                   <span>{DIFF_LABEL[p.diff]}</span>
+                  <span className="grow" />
+                  {/* ✅ 선생님 채점 칸(2026-11-27 윤자혜 선생님) — 종이에 ○/✗ 를 치고 화면의 체크란에 옮긴다 */}
+                  <span className="flex items-center gap-1 text-[11px]">채점
+                    <span className="inline-flex h-5 w-5 items-center justify-center rounded border border-ink2/60">○</span>
+                    <span className="inline-flex h-5 w-5 items-center justify-center rounded border border-ink2/60">✗</span>
+                  </span>
                 </div>
                 <ProblemContent p={p} />
                 <div className="mt-3 h-16 rounded border border-dashed border-line" />

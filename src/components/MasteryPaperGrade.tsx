@@ -57,6 +57,9 @@ export default function MasteryPaperGrade({ items, top, current, onApply }: {
   current: MasteryState
   onApply: (st: MasteryState, wrong: PaperItem[]) => void
 }) {
+  // ✅ 2026-11-27 윤자혜 선생님 «선생님이 채점할 수 있게 답안 체크란» — 정답을 보면서 문항마다 ○/✗ 만 누르는 방식(기본)
+  const [how, setHow] = useState<'체크' | '답'>('체크')
+  const [chk, setChk] = useState<Record<string, '○' | '✗'>>({})
   const [ans, setAns] = useState<Record<string, string>>({})
   const [marks, setMarks] = useState<Record<string, boolean> | null>(null)
   const [result, setResult] = useState<MasteryState | null>(null)
@@ -64,11 +67,13 @@ export default function MasteryPaperGrade({ items, top, current, onApply }: {
   const [start] = useState(current)
 
   const set = (id: string, v: string) => { setAns((a) => ({ ...a, [id]: v })); setMarks(null); setResult(null) }
-  const filled = items.filter((it) => (ans[it.p.id] ?? '').trim() !== '')
+  const setC = (id: string, v: '○' | '✗') => { setChk((a) => { const n = { ...a }; if (n[id] === v) delete n[id]; else n[id] = v; return n }); setMarks(null); setResult(null) }
+  const filled = how === '체크' ? items.filter((it) => chk[it.p.id]) : items.filter((it) => (ans[it.p.id] ?? '').trim() !== '')
+  const allO = () => { setChk(Object.fromEntries(items.map((it) => [it.p.id, '○' as const]))); setMarks(null); setResult(null) }
 
   const grade = () => {
     const m: Record<string, boolean> = {}
-    for (const it of filled) m[it.p.id] = autoCorrect(it.p, ans[it.p.id].trim())
+    for (const it of filled) m[it.p.id] = how === '체크' ? chk[it.p.id] === '○' : autoCorrect(it.p, ans[it.p.id].trim())
     setMarks(m)
     const st = applyPaper(start, items, m, top, new Date().toISOString())
     setResult(st)
@@ -78,9 +83,20 @@ export default function MasteryPaperGrade({ items, top, current, onApply }: {
   return (
     <section className="no-print mt-8 rounded-2xl border-2 border-pine bg-pine-soft/30 p-4">
       <h2 className="text-base font-black text-pine-dark">✏️ 종이에 쓴 답 입력 → 채점 · 승강제 반영</h2>
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        <div className="flex overflow-hidden rounded-lg border border-line text-sm" role="group" aria-label="채점 방식">
+          {([['체크', '✅ 선생님 ○/✗ 체크'], ['답', '⌨️ 학생 답 입력(자동 채점)']] as const).map(([k, t], i) => (
+            <button key={k} type="button" onClick={() => { setHow(k); setMarks(null); setResult(null) }} aria-pressed={how === k}
+              className={`${i ? 'border-l border-line ' : ''}px-3 py-1.5 font-bold ${how === k ? 'bg-pine text-paper' : 'bg-white text-ink2 hover:bg-paper2'}`}>{t}</button>
+          ))}
+        </div>
+        {how === '체크' && <button type="button" onClick={allO} className="rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-bold text-ink2 hover:bg-paper2">모두 ○ 로 채우기</button>}
+      </div>
       <p className="mt-1 text-[13px] text-ink2">
-        학생이 종이에 쓴 답을 번호대로 넣고 <b>채점</b>을 누르세요. 안 푼 문제는 비워 두면 됩니다.
-        채점 결과는 이 학생의 승강제 기록과 보고서에 들어갑니다.
+        {how === '체크'
+          ? <>문항마다 <b>정답</b>을 보고 학생 답이 맞으면 <b>○</b>, 틀리면 <b>✗</b>를 누르세요. 안 푼 문제는 비워 두면 됩니다.</>
+          : <>학생이 종이에 쓴 답을 번호대로 넣으면 자동으로 채점합니다. 안 푼 문제는 비워 두면 됩니다.</>}
+        {' '}채점 결과는 이 학생의 승강제 기록과 보고서에 들어갑니다.
       </p>
       <div className="mt-3 grid gap-2">
         {items.map((it) => {
@@ -94,7 +110,17 @@ export default function MasteryPaperGrade({ items, top, current, onApply }: {
             <div key={it.p.id} className="flex flex-wrap items-center gap-2 rounded-lg border border-line bg-white px-3 py-2">
               <b className="w-10 shrink-0 text-sm text-ink">{it.label}</b>
               <span className="w-12 shrink-0 text-[11px] text-ink2">{FLOOR_NAME[it.floor]}</span>
-              {self ? (
+              {how === '체크' ? (
+                <>
+                  {(['○', '✗'] as const).map((c) => (
+                    <button key={c} type="button" onClick={() => setC(it.p.id, c)} aria-pressed={chk[it.p.id] === c}
+                      className={`h-9 w-11 rounded-md border text-base font-black ${chk[it.p.id] === c ? (c === '○' ? 'border-pine bg-pine text-paper' : 'border-red-600 bg-red-600 text-paper') : 'border-line hover:bg-paper2'}`}>{c}</button>
+                  ))}
+                  <span className="ml-1 flex min-w-0 items-center gap-1 text-xs text-ink2">정답
+                    {isImgAnswer(it.p.answer) ? <img src={it.p.answer} alt="정답" className="max-h-8 max-w-[260px]" /> : <b className="text-ink"><MathText text={it.p.answer} /></b>}
+                  </span>
+                </>
+              ) : self ? (
                 <>
                   {['○', '✗'].map((c) => (
                     <button key={c} type="button" onClick={() => set(it.p.id, v === c ? '' : c)}
@@ -118,7 +144,7 @@ export default function MasteryPaperGrade({ items, top, current, onApply }: {
               {mk !== undefined && (
                 <span className={`flex items-center gap-1 text-sm font-black ${mk ? 'text-pine-dark' : 'text-red-600'}`}>
                   {mk ? '⭕ 정답' : '❌ 오답'}
-                  {!mk && !self && (
+                  {!mk && !self && how === '답' && (
                     <span className="ml-1 flex items-center gap-1 text-xs font-semibold text-ink2">정답
                       {isImgAnswer(it.p.answer) ? <img src={it.p.answer} alt="정답" className="max-h-6" /> : <MathText text={it.p.answer} />}
                     </span>
