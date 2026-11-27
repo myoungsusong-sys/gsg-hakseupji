@@ -80,40 +80,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518332.png]]"
 },
 {
-"id": "zbf-2026082700013025466",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025466.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025466",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025466.png]]"
-},
-{
-"id": "zbf-2026072000012750031",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026072000012750031.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026072000012750031",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026072000012750031.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012750031.png]]"
-},
-{
 "id": "zbf-2026070900012713976",
 "typeId": "m-his1-2-u1m0s2t1",
 "kind": "객관식",
@@ -174,26 +140,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038125.png]]"
 },
 {
-"id": "zbf-2026060500012476661",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476661.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476661",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476661.png]]"
-},
-{
 "id": "zbf-2026082700013025624",
 "typeId": "m-his1-2-u2m1s2t1",
 "kind": "객관식",
@@ -212,46 +158,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025624.png]]"
-},
-{
-"id": "zbf-2026061200012517985",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517985.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517985",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517985.png]]"
-},
-{
-"id": "zbf-2026060500012476665",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476665.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476665",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476665.png]]"
 },
 {
 "id": "zbf-2026070900012709652",
@@ -306,26 +212,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012714015.png]]"
-},
-{
-"id": "zbf-2026082700013025747",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025747.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025747",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025747.png]]"
 },
 {
 "id": "zbf-2026082700013025401",
@@ -470,26 +356,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025516.png]]"
 },
 {
-"id": "zbf-2026082700013025014",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025014.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025014",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025014.png]]"
-},
-{
 "id": "zbf-2026082700013024944",
 "typeId": "m-his1-2-u2m0s0t1",
 "kind": "객관식",
@@ -588,20 +454,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038174.png]]"
-},
-{
-"id": "zbf-2026061200012517948",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "주관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517948.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 인도 국민 회의와 반영 운동",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517948",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026061200012517948.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517948.png]]"
 },
 {
 "id": "zbf-2026060500012476830",
@@ -1044,26 +896,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038220.png]]"
 },
 {
-"id": "zbf-2026060500012476676",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476676.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476676",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476676.png]]"
-},
-{
 "id": "zbf-2026061200012519401",
 "typeId": "m-his1-2-u0m1s3t0",
 "kind": "객관식",
@@ -1264,20 +1096,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025418.png]]"
 },
 {
-"id": "zbf-2026072000012750024",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026072000012750024.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026072000012750024",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026072000012750024.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012750024.png]]"
-},
-{
 "id": "zbf-2026061200012518135",
 "typeId": "m-his1-2-u0m3s0t0",
 "kind": "객관식",
@@ -1376,26 +1194,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517172.png]]"
-},
-{
-"id": "zbf-2026060500012476637",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476637.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476637",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476637.png]]"
 },
 {
 "id": "zbf-2026070900012712901",
@@ -2026,26 +1824,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517510.png]]"
 },
 {
-"id": "zbf-2026082700013025749",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025749.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025749",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025749.png]]"
-},
-{
 "id": "zbf-2026070900012712514",
 "typeId": "m-his1-2-u1m2s2t1",
 "kind": "객관식",
@@ -2364,46 +2142,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709577.png]]"
-},
-{
-"id": "zbf-2026060500012476641",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476641.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476641",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476641.png]]"
-},
-{
-"id": "zbf-2026061200012517952",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517952.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517952",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517952.png]]"
 },
 {
 "id": "zbf-2026071400012736580",
@@ -3536,26 +3274,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712978.png]]"
 },
 {
-"id": "zbf-2026061200012517964",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517964.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517964",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517964.png]]"
-},
-{
 "id": "zbf-2026060500012477921",
 "typeId": "m-his1-2-u0m1s1t2",
 "kind": "객관식",
@@ -3714,26 +3432,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477079.png]]"
-},
-{
-"id": "zbf-2026082700013025491",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025491.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025491",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025491.png]]"
 },
 {
 "id": "zbf-2026070900012712197",
@@ -4444,26 +4142,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012714097.png]]"
 },
 {
-"id": "zbf-2026060500012476666",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476666.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476666",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476666.png]]"
-},
-{
 "id": "zbf-2026070900012713072",
 "typeId": "m-his1-2-u1m2s1t1",
 "kind": "객관식",
@@ -4602,20 +4280,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712441.png]]"
-},
-{
-"id": "zbf-2026090800013070986",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070986.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070986",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090800013070986.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070986.png]]"
 },
 {
 "id": "zbf-2026060500012477072",
@@ -5026,26 +4690,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025687.png]]"
 },
 {
-"id": "zbf-2026082700013025781",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025781.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025781",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025781.png]]"
-},
-{
 "id": "zbf-2026061200012517088",
 "typeId": "m-his1-2-u0m0s1t1",
 "kind": "객관식",
@@ -5138,26 +4782,6 @@
 ],
 "answer": "③",
 "solution": ""
-},
-{
-"id": "zbf-2026082700013025443",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025443.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025443",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025443.png]]"
 },
 {
 "id": "zbf-2026070900012709753",
@@ -6552,26 +6176,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517280.png]]"
 },
 {
-"id": "zbf-2026060500012476757",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476757.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 영국의 자유주의 운동",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476757",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476757.png]]"
-},
-{
 "id": "zbf-2026082700013024946",
 "typeId": "m-his1-2-u2m0s0t1",
 "kind": "객관식",
@@ -6966,26 +6570,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517018.png]]"
 },
 {
-"id": "zbf-2026060500012477972",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477972.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012477972",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477972.png]]"
-},
-{
 "id": "zbf-2026070900012713009",
 "typeId": "m-his1-2-u1m0s2t1",
 "kind": "객관식",
@@ -7098,26 +6682,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519456.png]]"
-},
-{
-"id": "zbf-2026060500012476664",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476664.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476664",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476664.png]]"
 },
 {
 "id": "zbf-2026070900012712430",
@@ -7514,26 +7078,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519318.png]]"
 },
 {
-"id": "zbf-2026060500012476653",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476653.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476653",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476653.png]]"
-},
-{
 "id": "zbf-2026070900012714002",
 "typeId": "m-his1-2-u1m0s2t1",
 "kind": "객관식",
@@ -7874,20 +7418,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024958.png]]"
 },
 {
-"id": "zbf-2026090700013068440",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068440.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068440",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068440.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068440.png]]"
-},
-{
 "id": "zbf-2026061200012519494",
 "typeId": "m-his1-2-u0m4s2t1",
 "kind": "객관식",
@@ -8100,26 +7630,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025396.png]]"
-},
-{
-"id": "zbf-2026070900012712323",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012712323.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026070900012712323",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712323.png]]"
 },
 {
 "id": "zbf-2026070900012714101",
@@ -10826,26 +10336,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713021.png]]"
 },
 {
-"id": "zbf-2026061200012517980",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517980.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 인도 국민 회의와 반영 운동",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517980",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517980.png]]"
-},
-{
 "id": "zbf-2026070900012713632",
 "typeId": "m-his1-2-u1m0s0t2",
 "kind": "객관식",
@@ -12544,26 +12034,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519451.png]]"
 },
 {
-"id": "zbf-2026061200012519498",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519498.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519498",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519498.png]]"
-},
-{
 "id": "zbf-2026061200012518091",
 "typeId": "m-his1-2-u0m3s0t0",
 "kind": "객관식",
@@ -12762,26 +12232,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518003.png]]"
-},
-{
-"id": "zbf-2026082700013025429",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025429.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025429",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025429.png]]"
 },
 {
 "id": "zbf-2026061200012517479",
@@ -13078,26 +12528,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517165.png]]"
 },
 {
-"id": "zbf-2026082700013025485",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025485.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025485",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025485.png]]"
-},
-{
 "id": "zbf-2026061200012517531",
 "typeId": "m-his1-2-u0m1s4t0",
 "kind": "객관식",
@@ -13304,26 +12734,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713835.png]]"
-},
-{
-"id": "zbf-2026082700013025777",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025777.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025777",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025777.png]]"
 },
 {
 "id": "zbf-2026070900012714088",
@@ -14012,26 +13422,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476647.png]]"
-},
-{
-"id": "zbf-2026082700013025734",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025734.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025734",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025734.png]]"
 },
 {
 "id": "zbf-2026070900012712390",
@@ -15366,26 +14756,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713638.png]]"
 },
 {
-"id": "zbf-2026090800013070879",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070879.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070879",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070879.png]]"
-},
-{
 "id": "zbf-2026070900012713658",
 "typeId": "m-his1-2-u1m0s0t2",
 "kind": "객관식",
@@ -15714,26 +15084,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713037.png]]"
 },
 {
-"id": "zbf-2026082700013025468",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025468.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025468",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025468.png]]"
-},
-{
 "id": "zbf-2026070900012709668",
 "typeId": "m-his1-2-u1m1s1t1",
 "kind": "객관식",
@@ -15772,26 +15122,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477098.png]]"
-},
-{
-"id": "zbf-2026083100013038132",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038132.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026083100013038132",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038132.png]]"
 },
 {
 "id": "zbf-2026061200012518244",
@@ -16162,26 +15492,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012714077.png]]"
 },
 {
-"id": "zbf-2026090800013070971",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070971.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070971",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070971.png]]"
-},
-{
 "id": "zbf-2026070900012712509",
 "typeId": "m-his1-2-u1m2s2t1",
 "kind": "객관식",
@@ -16496,26 +15806,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519487.png]]"
 },
 {
-"id": "zbf-2026090800013071038",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013071038.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026090800013071038",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013071038.png]]"
-},
-{
 "id": "zbf-2026061200012518100",
 "typeId": "m-his1-2-u0m3s0t0",
 "kind": "객관식",
@@ -16694,26 +15984,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476796.png]]"
-},
-{
-"id": "zbf-2026061200012517983",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517983.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517983",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517983.png]]"
 },
 {
 "id": "zbf-2026070900012712247",
@@ -17360,26 +16630,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025793.png]]"
 },
 {
-"id": "zbf-2026070900012712310",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012712310.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026070900012712310",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712310.png]]"
-},
-{
 "id": "zbf-2026061200012517135",
 "typeId": "m-his1-2-u0m1s0t1",
 "kind": "객관식",
@@ -17922,26 +17172,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477877.png]]"
 },
 {
-"id": "zbf-2026090800013070886",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070886.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070886",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070886.png]]"
-},
-{
 "id": "zbf-2026061200012519360",
 "typeId": "m-his1-2-u0m1s0t1",
 "kind": "객관식",
@@ -18142,26 +17372,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476605.png]]"
 },
 {
-"id": "zbf-2026082700013025032",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025032.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025032",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025032.png]]"
-},
-{
 "id": "zbf-2026061200012517238",
 "typeId": "m-his1-2-u0m0s3t0",
 "kind": "객관식",
@@ -18260,46 +17470,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517963.png]]"
-},
-{
-"id": "zbf-2026082700013025048",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025048.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025048",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025048.png]]"
-},
-{
-"id": "zbf-2026061200012517423",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517423.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 프랑스의 자유주의 운동",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026061200012517423",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517423.png]]"
 },
 {
 "id": "zbf-2026061200012517311",
@@ -19116,26 +18286,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709620.png]]"
-},
-{
-"id": "zbf-2026061200012519519",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519519.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519519",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519519.png]]"
 },
 {
 "id": "zbf-2026070900012709763",
@@ -20088,26 +19238,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024975.png]]"
 },
 {
-"id": "zbf-2026082700013025037",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025037.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025037",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025037.png]]"
-},
-{
 "id": "zbf-2026082700013025779",
 "typeId": "m-his1-2-u2m2s1t1",
 "kind": "객관식",
@@ -20266,26 +19396,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518160.png]]"
-},
-{
-"id": "zbf-2026061200012519513",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519513.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519513",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519513.png]]"
 },
 {
 "id": "zbf-2026061200012517609",
@@ -21112,26 +20222,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518243.png]]"
 },
 {
-"id": "zbf-2026061200012519504",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519504.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519504",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519504.png]]"
-},
-{
 "id": "zbf-2026070900012709731",
 "typeId": "m-his1-2-u1m2s1t0",
 "kind": "객관식",
@@ -21332,26 +20422,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012714094.png]]"
 },
 {
-"id": "zbf-2026060500012477123",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477123.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 이집트의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026060500012477123",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477123.png]]"
-},
-{
 "id": "zbf-2026070900012712302",
 "typeId": "m-his1-2-u1m3s0t0",
 "kind": "객관식",
@@ -21410,26 +20480,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518179.png]]"
-},
-{
-"id": "zbf-2026061200012519492",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519492.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012519492",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519492.png]]"
 },
 {
 "id": "zbf-2026070900012712255",
@@ -21646,26 +20696,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518048.png]]"
 },
 {
-"id": "zbf-2026060500012476649",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476649.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476649",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476649.png]]"
-},
-{
 "id": "zbf-2026061200012517870",
 "typeId": "m-his1-2-u0m2s2t0",
 "kind": "객관식",
@@ -21686,26 +20716,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517870.png]]"
 },
 {
-"id": "zbf-2026082700013025549",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025549.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026082700013025549",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025549.png]]"
-},
-{
 "id": "zbf-2026090800013071003",
 "typeId": "m-his1-2-u2m0s3t0",
 "kind": "객관식",
@@ -21724,26 +20734,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013071003.png]]"
-},
-{
-"id": "zbf-2026090800013070982",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070982.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070982",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070982.png]]"
 },
 {
 "id": "zbf-2026061200012518025",
@@ -22416,26 +21406,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517653.png]]"
 },
 {
-"id": "zbf-2026082700013025585",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025585.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026082700013025585",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025585.png]]"
-},
-{
 "id": "zbf-2026070900012709576",
 "typeId": "m-his1-2-u1m1s0t1",
 "kind": "객관식",
@@ -22554,26 +21524,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709725.png]]"
-},
-{
-"id": "zbf-2026082700013025552",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025552.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026082700013025552",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025552.png]]"
 },
 {
 "id": "zbf-2026082700013025447",
@@ -22788,20 +21738,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024995.png]]"
-},
-{
-"id": "zbf-2026072000012750021",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "주관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026072000012750021.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026072000012750021",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026072000012750021.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012750021.png]]"
 },
 {
 "id": "zbf-2026061200012517115",
@@ -23272,26 +22208,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709736.png]]"
 },
 {
-"id": "zbf-2026082700013025551",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025551.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026082700013025551",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025551.png]]"
-},
-{
 "id": "zbf-2026070900012713732",
 "typeId": "m-his1-2-u1m0s0t1",
 "kind": "객관식",
@@ -23564,26 +22480,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713042.png]]"
-},
-{
-"id": "zbf-2026082700013025584",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025584.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026082700013025584",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025584.png]]"
 },
 {
 "id": "zbf-2026082700013025571",
@@ -24194,26 +23090,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709679.png]]"
 },
 {
-"id": "zbf-2026083100013038164",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038164.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026083100013038164",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038164.png]]"
-},
-{
 "id": "zbf-2026070900012712935",
 "typeId": "m-his1-2-u1m1s1t1",
 "kind": "객관식",
@@ -24422,26 +23298,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709635.png]]"
 },
 {
-"id": "zbf-2026060500012476632",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476632.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476632",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476632.png]]"
-},
-{
 "id": "zbf-2026082700013025399",
 "typeId": "m-his1-2-u2m0s1t0",
 "kind": "객관식",
@@ -24622,40 +23478,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026070900012712435.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712435.png]]"
-},
-{
-"id": "zbf-2026072000012750003",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "주관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026072000012750003.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026072000012750003",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026072000012750003.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012750003.png]]"
-},
-{
-"id": "zbf-2026083100013038173",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038173.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026083100013038173",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038173.png]]"
 },
 {
 "id": "zbf-2026082700013025681",
@@ -24932,26 +23754,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476846.png]]"
 },
 {
-"id": "zbf-2026090800013070981",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070981.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070981",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070981.png]]"
-},
-{
 "id": "zbf-2026061200012517841",
 "typeId": "m-his1-2-u0m2s2t1",
 "kind": "객관식",
@@ -25024,26 +23826,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518098.png]]"
-},
-{
-"id": "zbf-2026060500012477115",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477115.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 이집트의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026060500012477115",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477115.png]]"
 },
 {
 "id": "zbf-2026061200012519951",
@@ -25634,26 +24416,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517146.png]]"
 },
 {
-"id": "zbf-2026060500012477969",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477969.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012477969",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477969.png]]"
-},
-{
 "id": "zbf-2026070900012712419",
 "typeId": "m-his1-2-u1m0s2t1",
 "kind": "객관식",
@@ -26028,26 +24790,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709637.png]]"
 },
 {
-"id": "zbf-2026082700013025054",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025054.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 사회주의 진영의 붕괴",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026082700013025054",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025054.png]]"
-},
-{
 "id": "zbf-2026070900012713714",
 "typeId": "m-his1-2-u1m0s0t2",
 "kind": "객관식",
@@ -26242,20 +24984,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519367.png]]"
 },
 {
-"id": "zbf-2026072000012750006",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "주관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026072000012750006.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026072000012750006",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026072000012750006.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012750006.png]]"
-},
-{
 "id": "zbf-2026061200012517113",
 "typeId": "m-his1-2-u0m0s3t2",
 "kind": "객관식",
@@ -26368,26 +25096,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026092100013202215.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026092100013202215.png]]"
-},
-{
-"id": "zbf-2026082700013025553",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025553.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026082700013025553",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025553.png]]"
 },
 {
 "id": "zbf-2026061200012519550",
@@ -26722,26 +25430,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025575.png]]"
-},
-{
-"id": "zbf-2026060500012477971",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477971.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012477971",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477971.png]]"
 },
 {
 "id": "zbf-2026022600010960683",
@@ -27618,20 +26306,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476922.png]]"
 },
 {
-"id": "zbf-2026090800013071069",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "주관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013071069.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026090800013071069",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090800013071069.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013071069.png]]"
-},
-{
 "id": "zbf-2026060500012476809",
 "typeId": "m-his1-2-u0m1s2t0",
 "kind": "객관식",
@@ -27872,26 +26546,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713053.png]]"
 },
 {
-"id": "zbf-2026090800013070902",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070902.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026090800013070902",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070902.png]]"
-},
-{
 "id": "zbf-2026061200012517322",
 "typeId": "m-his1-2-u0m0s3t0",
 "kind": "객관식",
@@ -28018,26 +26672,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517095.png]]"
-},
-{
-"id": "zbf-2026060500012476640",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476640.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476640",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476640.png]]"
 },
 {
 "id": "zbf-2026061200012518188",
@@ -28392,26 +27026,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712174.png]]"
-},
-{
-"id": "zbf-2026082700013025453",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025453.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025453",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025453.png]]"
 },
 {
 "id": "zbf-2026082700013024966",
@@ -29244,26 +27858,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712460.png]]"
 },
 {
-"id": "zbf-2026083100013038107",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038107.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038107",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038107.png]]"
-},
-{
 "id": "zbf-2026060500012477936",
 "typeId": "m-his1-2-u0m1s2t1",
 "kind": "객관식",
@@ -29438,26 +28032,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517911.png]]"
 },
 {
-"id": "zbf-2026082700013025439",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025439.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025439",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025439.png]]"
-},
-{
 "id": "zbf-2026070900012709546",
 "typeId": "m-his1-2-u1m0s1t0",
 "kind": "객관식",
@@ -29556,26 +28130,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518348.png]]"
-},
-{
-"id": "zbf-2026070900012713890",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012713890.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026070900012713890",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713890.png]]"
 },
 {
 "id": "zbf-2026070900012713046",
@@ -30342,20 +28896,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517290.png]]"
 },
 {
-"id": "zbf-2026072000012750032",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "주관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026072000012750032.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026072000012750032",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026072000012750032.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012750032.png]]"
-},
-{
 "id": "zbf-2026061200012519515",
 "typeId": "m-his1-2-u0m4s0t1",
 "kind": "객관식",
@@ -30434,26 +28974,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517579.png]]"
-},
-{
-"id": "zbf-2026082700013025750",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025750.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025750",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025750.png]]"
 },
 {
 "id": "zbf-2026070900012714047",
@@ -31104,26 +29624,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713842.png]]"
 },
 {
-"id": "zbf-2026082700013025774",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025774.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025774",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025774.png]]"
-},
-{
 "id": "zbf-2026071400012736576",
 "typeId": "m-his1-2-u1m3s0t0",
 "kind": "객관식",
@@ -31182,46 +29682,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476903.png]]"
-},
-{
-"id": "zbf-2026060500012477974",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477974.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012477974",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477974.png]]"
-},
-{
-"id": "zbf-2026090800013071032",
-"typeId": "m-his1-2-u2m1s0t1",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013071032.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s0t1",
-"custom": true,
-"zb": "2026090800013071032",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013071032.png]]"
 },
 {
 "id": "zbf-2026061200012517105",
@@ -31888,26 +30348,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713045.png]]"
 },
 {
-"id": "zbf-2026083100013038225",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038225.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038225",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038225.png]]"
-},
-{
 "id": "zbf-2026070900012713988",
 "typeId": "m-his1-2-u1m0s2t1",
 "kind": "객관식",
@@ -32140,26 +30580,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712317.png]]"
-},
-{
-"id": "zbf-2026083100013038099",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038099.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038099",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038099.png]]"
 },
 {
 "id": "zbf-2026082700013025338",
@@ -32396,26 +30816,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025660.png]]"
 },
 {
-"id": "zbf-2026082700013025780",
-"typeId": "m-his1-2-u2m2s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025780.png]]",
-"source": "족보 기출 · 세계화와 지역 세계의 변화 › 신자유주의와 현대 세계 › 현대 세계의 문제와 해결",
-"twinGroup": "tw-m-his1-2-u2m2s1t0",
-"custom": true,
-"zb": "2026082700013025780",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025780.png]]"
-},
-{
 "id": "zbf-2026061200012519354",
 "typeId": "m-his1-2-u0m0s3t0",
 "kind": "객관식",
@@ -32454,26 +30854,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518020.png]]"
-},
-{
-"id": "zbf-2026082700013025442",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025442.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025442",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025442.png]]"
 },
 {
 "id": "zbf-2026061200012518039",
@@ -32594,20 +30974,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025745.png]]"
-},
-{
-"id": "zbf-2026090700013068441",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068441.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068441",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068441.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068441.png]]"
 },
 {
 "id": "zbf-2026060500012476852",
@@ -33310,26 +31676,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477935.png]]"
 },
 {
-"id": "zbf-2026060500012476682",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476682.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476682",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476682.png]]"
-},
-{
 "id": "zbf-2026060500012476865",
 "typeId": "m-his1-2-u0m1s2t2",
 "kind": "객관식",
@@ -33578,26 +31924,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712294.png]]"
 },
 {
-"id": "zbf-2026082700013025420",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025420.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025420",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025420.png]]"
-},
-{
 "id": "zbf-2026082700013024922",
 "typeId": "m-his1-2-u2m0s0t2",
 "kind": "객관식",
@@ -33616,46 +31942,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024922.png]]"
-},
-{
-"id": "zbf-2026061200012519490",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519490.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012519490",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519490.png]]"
-},
-{
-"id": "zbf-2026083100013038072",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038072.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026083100013038072",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038072.png]]"
 },
 {
 "id": "zbf-2026082700013024976",
@@ -33718,26 +32004,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476576.png]]"
 },
 {
-"id": "zbf-2026061200012518306",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518306.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518306",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518306.png]]"
-},
-{
 "id": "zbf-2026082700013025454",
 "typeId": "m-his1-2-u2m0s1t1",
 "kind": "객관식",
@@ -33776,26 +32042,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518238.png]]"
-},
-{
-"id": "zbf-2026083100013038104",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038104.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038104",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038104.png]]"
 },
 {
 "id": "zbf-2026061200012517117",
@@ -34580,26 +32826,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026071400012736591.png]]"
 },
 {
-"id": "zbf-2026082700013025064",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025064.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 사회주의 진영의 붕괴",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026082700013025064",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025064.png]]"
-},
-{
 "id": "zbf-2026082700013025696",
 "typeId": "m-his1-2-u2m2s0t0",
 "kind": "객관식",
@@ -34902,26 +33128,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025609.png]]"
 },
 {
-"id": "zbf-2026070900012713848",
-"typeId": "m-his1-2-u1m3s1t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012713848.png]]",
-"source": "족보 기출 · 아시아와 아프리카의 민족 운동 › 아시아와 아프리카의 민족 운동 › 인도의 민족 운동",
-"twinGroup": "tw-m-his1-2-u1m3s1t0",
-"custom": true,
-"zb": "2026070900012713848",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713848.png]]"
-},
-{
 "id": "zbf-2026082700013025610",
 "typeId": "m-his1-2-u2m1s2t1",
 "kind": "객관식",
@@ -34960,26 +33166,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024989.png]]"
-},
-{
-"id": "zbf-2026083100013038119",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038119.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 사회주의 진영의 붕괴",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038119",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038119.png]]"
 },
 {
 "id": "zbf-2026070900012709671",
@@ -35034,26 +33220,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477980.png]]"
-},
-{
-"id": "zbf-2026061200012519491",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519491.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012519491",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519491.png]]"
 },
 {
 "id": "zbf-2026070900012709633",
@@ -35896,26 +34062,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025617.png]]"
 },
 {
-"id": "zbf-2026061200012517930",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517930.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012517930",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517930.png]]"
-},
-{
 "id": "zbf-2026070900012714100",
 "typeId": "m-his1-2-u1m2s1t0",
 "kind": "객관식",
@@ -36014,66 +34160,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026071400012736589.png]]"
-},
-{
-"id": "zbf-2026083100013038224",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038224.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038224",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038224.png]]"
-},
-{
-"id": "zbf-2026082700013025354",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025354.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 형성 › 냉전 체제의 전개",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025354",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025354.png]]"
-},
-{
-"id": "zbf-2026083100013038185",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038185.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026083100013038185",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038185.png]]"
 },
 {
 "id": "zbf-2026060500012476777",
@@ -36276,26 +34362,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012520860.png]]"
 },
 {
-"id": "zbf-2026060500012476680",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476680.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476680",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476680.png]]"
-},
-{
 "id": "zbf-2026061200012517092",
 "typeId": "m-his1-2-u0m0s0t2",
 "kind": "객관식",
@@ -36474,26 +34540,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517168.png]]"
-},
-{
-"id": "zbf-2026083100013038242",
-"typeId": "m-his1-2-u2m0s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038242.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 소련의 해체",
-"twinGroup": "tw-m-his1-2-u2m0s2t1",
-"custom": true,
-"zb": "2026083100013038242",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038242.png]]"
 },
 {
 "id": "zbf-2026061200012517101",
@@ -37086,26 +35132,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709681.png]]"
 },
 {
-"id": "zbf-2026082700013025011",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025011.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025011",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025011.png]]"
-},
-{
 "id": "zbf-2026070900012709551",
 "typeId": "m-his1-2-u1m0s1t0",
 "kind": "객관식",
@@ -37124,46 +35150,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709551.png]]"
-},
-{
-"id": "zbf-2026060500012477120",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477120.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 이집트의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026060500012477120",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477120.png]]"
-},
-{
-"id": "zbf-2026060500012476673",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476673.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476673",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476673.png]]"
 },
 {
 "id": "zbf-2026070900012712284",
@@ -37384,26 +35370,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713077.png]]"
-},
-{
-"id": "zbf-2026061200012518253",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518253.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518253",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518253.png]]"
 },
 {
 "id": "zbf-2026061200012517035",
@@ -37700,26 +35666,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026072000012749987.png]]"
 },
 {
-"id": "zbf-2026090800013070983",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070983.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070983",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070983.png]]"
-},
-{
 "id": "zbf-2026061200012517599",
 "typeId": "m-his1-2-u0m1s3t0",
 "kind": "객관식",
@@ -37858,26 +35804,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712925.png]]"
-},
-{
-"id": "zbf-2026061200012519955",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519955.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012519955",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519955.png]]"
 },
 {
 "id": "zbf-2026061200012517776",
@@ -38138,26 +36064,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712210.png]]"
-},
-{
-"id": "zbf-2026082700013025477",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025477.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 붕괴 › 사회주의 진영의 붕괴",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025477",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025477.png]]"
 },
 {
 "id": "zbf-2026082700013025440",
@@ -39054,26 +36960,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517184.png]]"
 },
 {
-"id": "zbf-2026061200012517932",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517932.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012517932",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517932.png]]"
-},
-{
 "id": "zbf-2026061200012517179",
 "typeId": "m-his1-2-u0m0s3t0",
 "kind": "객관식",
@@ -39092,26 +36978,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517179.png]]"
-},
-{
-"id": "zbf-2026082700013025487",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 1,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025487.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025487",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025487.png]]"
 },
 {
 "id": "zbf-2026070900012709727",
@@ -40104,26 +37970,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476795.png]]"
 },
 {
-"id": "zbf-2026061200012518350",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518350.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518350",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518350.png]]"
-},
-{
 "id": "zbf-2026090800013071047",
 "typeId": "m-his1-2-u2m1s1t1",
 "kind": "객관식",
@@ -40142,26 +37988,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013071047.png]]"
-},
-{
-"id": "zbf-2026082700013025445",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025445.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025445",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025445.png]]"
 },
 {
 "id": "zbf-2026070900012709723",
@@ -40510,46 +38336,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518241.png]]"
-},
-{
-"id": "zbf-2026082700013024957",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013024957.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 아시아와 아프리카의 독립",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013024957",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024957.png]]"
-},
-{
-"id": "zbf-2026090800013070972",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070972.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070972",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070972.png]]"
 },
 {
 "id": "zbf-2026061200012517830",
@@ -41200,26 +38986,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712275.png]]"
 },
 {
-"id": "zbf-2026082700013024999",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013024999.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013024999",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013024999.png]]"
-},
-{
 "id": "zbf-2026060500012477107",
 "typeId": "m-his1-2-u0m4s2t2",
 "kind": "객관식",
@@ -41672,26 +39438,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712835.png]]"
-},
-{
-"id": "zbf-2026070900012712244",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012712244.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012712244",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712244.png]]"
 },
 {
 "id": "zbf-2026061200012518125",
@@ -42356,26 +40102,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519553.png]]"
 },
 {
-"id": "zbf-2026061200012518282",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518282.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518282",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518282.png]]"
-},
-{
 "id": "zbf-2026061200012519503",
 "typeId": "m-his1-2-u0m4s0t2",
 "kind": "객관식",
@@ -42662,26 +40388,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518108.png]]"
-},
-{
-"id": "zbf-2026070900012712236",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012712236.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012712236",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712236.png]]"
 },
 {
 "id": "zbf-2026070900012712983",
@@ -43540,26 +41246,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517212.png]]"
 },
 {
-"id": "zbf-2026061200012517936",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517936.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012517936",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517936.png]]"
-},
-{
 "id": "zbf-2026071400012736613",
 "typeId": "m-his1-2-u1m3s1t1",
 "kind": "객관식",
@@ -43760,26 +41446,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712393.png]]"
 },
 {
-"id": "zbf-2026070900012712135",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012712135.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012712135",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012712135.png]]"
-},
-{
 "id": "zbf-2026061200012519561",
 "typeId": "m-his1-2-u0m3s2t0",
 "kind": "객관식",
@@ -43860,26 +41526,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477045.png]]"
 },
 {
-"id": "zbf-2026090800013070977",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070977.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070977",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070977.png]]"
-},
-{
 "id": "zbf-2026060500012476860",
 "typeId": "m-his1-2-u0m1s2t1",
 "kind": "객관식",
@@ -43898,26 +41544,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476860.png]]"
-},
-{
-"id": "zbf-2026082700013025507",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 2,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025507.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025507",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025507.png]]"
 },
 {
 "id": "zbf-2026070900012713869",
@@ -43958,26 +41584,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038145.png]]"
-},
-{
-"id": "zbf-2026090800013070984",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 5,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070984.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070984",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070984.png]]"
 },
 {
 "id": "zbf-2026090800013071077",
@@ -44134,26 +41740,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709701.png]]"
 },
 {
-"id": "zbf-2026061200012518284",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518284.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518284",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518284.png]]"
-},
-{
 "id": "zbf-2026061200012517889",
 "typeId": "m-his1-2-u0m2s2t1",
 "kind": "객관식",
@@ -44172,26 +41758,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517889.png]]"
-},
-{
-"id": "zbf-2026061200012517946",
-"typeId": "m-his1-2-u0m4s2t1",
-"kind": "객관식",
-"diff": 4,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517946.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 서아시아의 국민 국가 건설 운동 › 아라비아 반도의 국민 국가 건설 운동",
-"twinGroup": "tw-m-his1-2-u0m4s2t1",
-"custom": true,
-"zb": "2026061200012517946",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517946.png]]"
 },
 {
 "id": "zbf-2026060500012477068",
@@ -45282,166 +42848,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476646.png]]"
 },
 {
-"id": "zbf-2026060500012476648",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476648.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476648",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476648.png]]"
-},
-{
-"id": "zbf-2026060500012476650",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476650.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476650",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476650.png]]"
-},
-{
-"id": "zbf-2026060500012476651",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476651.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476651",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476651.png]]"
-},
-{
-"id": "zbf-2026060500012476654",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476654.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476654",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476654.png]]"
-},
-{
-"id": "zbf-2026060500012476655",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476655.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476655",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476655.png]]"
-},
-{
-"id": "zbf-2026060500012476657",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476657.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476657",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476657.png]]"
-},
-{
-"id": "zbf-2026060500012476659",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476659.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476659",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476659.png]]"
-},
-{
-"id": "zbf-2026060500012476663",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476663.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476663",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476663.png]]"
-},
-{
 "id": "zbf-2026060500012476756",
 "typeId": "m-his1-2-u0m0s3t1",
 "kind": "객관식",
@@ -46436,26 +43842,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476911.png]]"
 },
 {
-"id": "zbf-2026060500012476912",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012476912.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 러시아의 근대화",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012476912",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012476912.png]]"
-},
-{
 "id": "zbf-2026060500012476913",
 "typeId": "m-his1-2-u0m1s1t2",
 "kind": "객관식",
@@ -46768,40 +44154,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026060500012477949.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477949.png]]"
-},
-{
-"id": "zbf-2026060500012477975",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477975.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012477975",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477975.png]]"
-},
-{
-"id": "zbf-2026060500012477977",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026060500012477977.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026060500012477977",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026060500012477977.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477977.png]]"
 },
 {
 "id": "zbf-2026060500012477982",
@@ -47838,26 +45190,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517202.png]]"
-},
-{
-"id": "zbf-2026061200012517206",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517206.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026061200012517206",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517206.png]]"
 },
 {
 "id": "zbf-2026061200012517208",
@@ -48906,26 +46238,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517354.png]]"
-},
-{
-"id": "zbf-2026061200012517355",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517355.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026061200012517355",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517355.png]]"
 },
 {
 "id": "zbf-2026061200012517357",
@@ -51936,26 +49248,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709610.png]]"
-},
-{
-"id": "zbf-2026070900012709754",
-"typeId": "m-his1-2-u0m1s0t2",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012709754.png]]",
-"source": "족보 기출 · 유럽과 아메리카의 국민 국가 체제 › 국민 국가의 형성 › 빈 체제",
-"twinGroup": "tw-m-his1-2-u0m1s0t2",
-"custom": true,
-"zb": "2026070900012709754",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709754.png]]"
 },
 {
 "id": "zbf-2026060500012476966",
@@ -57500,26 +54792,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518217.png]]"
 },
 {
-"id": "zbf-2026061200012518247",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음 표는 중국의 근대화 과정이다. 물음에 답하시오.\n(가)\n중국 최초 외국과 불평등 조약 체결\n\n⇓\n\n(나)\n청 왕조 타도와 한족 국가 수립을 주장\n\n⇓\n\n(다)\n‘중체서용’을 바탕으로 서양의 기술과 무기 도입 주장\n\n⇓\n\n(라)\n일본의 메이지 유신을 모방한 개혁 추진\n\n⇓\n\n(마)\n삼민주의를 혁명 이념으로 삼고 무장 봉기\n\n[[그림:/figs/zbfill/m-his1-2/q2026061200012518247.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518247",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518247.png]]"
-},
-{
 "id": "zbf-2026060500012477108",
 "typeId": "m-his1-2-u0m4s2t2",
 "kind": "객관식",
@@ -57620,26 +54892,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026060500012477130.png]]"
 },
 {
-"id": "zbf-2026061200012518249",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 그림을 보고 물음에 답하시오.\n\n[[그림:/figs/zbfill/m-his1-2/q2026061200012518249.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518249",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518249.png]]"
-},
-{
 "id": "zbf-2026061200012518257",
 "typeId": "m-his1-2-u0m3s2t2",
 "kind": "객관식",
@@ -57660,26 +54912,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518257.png]]"
 },
 {
-"id": "zbf-2026061200012518260",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 자료를 읽고 물음에 답하시오.\n“아편 전쟁과 태평천국 운동 진압을 통해 서양 무기의 위력을 실감하였습니다. 톈진에 수사학당(해군 사관 학교)을 세우고 군수 공장인 금릉 기기국을 만들어 서양의 기술을 익히려고 하였습니다. 또 여러 산업 분야에서 서양의 과학 기술을 받아들인다면 국력을 증대할 수 있습니다.”\n\n[[그림:/figs/zbfill/m-his1-2/q2026061200012518260.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518260",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518260.png]]"
-},
-{
 "id": "zbf-2026061200012518262",
 "typeId": "m-his1-2-u0m3s1t1",
 "kind": "객관식",
@@ -57698,46 +54930,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518262.png]]"
-},
-{
-"id": "zbf-2026061200012518264",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ <보기>는 중국 근대 시기 주요 사건들이다. 물음에 답하시오.\n<보기>\nㄱ. 양무운동ㄴ. 신해혁명\nㄷ. 의화단 운동ㄹ. 변법자강 운동\nㅁ. 태평천국 운동\n\n[[그림:/figs/zbfill/m-his1-2/q2026061200012518264.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518264",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518264.png]]"
-},
-{
-"id": "zbf-2026061200012518266",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음 글을 읽고 물음에 답하시오.\n세계사 필기 노트\n중국의 근대화 과정2\n1) 양무운동\n- 중국의 전통질서를 지키면서 서양의 기술만을 받아들임.\n2) 변법자강 운동\n- __________(가)__________\n\n[[그림:/figs/zbfill/m-his1-2/q2026061200012518266.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518266",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518266.png]]"
 },
 {
 "id": "zbf-2026060500012477869",
@@ -58006,46 +55198,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517979.png]]"
-},
-{
-"id": "zbf-2026061200012517981",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517981.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517981",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517981.png]]"
-},
-{
-"id": "zbf-2026061200012517986",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012517986.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012517986",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012517986.png]]"
 },
 {
 "id": "zbf-2026061200012517988",
@@ -58694,26 +55846,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518092.png]]"
-},
-{
-"id": "zbf-2026061200012518097",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518097.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518097",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518097.png]]"
 },
 {
 "id": "zbf-2026061200012518099",
@@ -59450,46 +56582,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518272.png]]"
 },
 {
-"id": "zbf-2026061200012518275",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518275.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518275",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518275.png]]"
-},
-{
-"id": "zbf-2026061200012518278",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518278.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518278",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518278.png]]"
-},
-{
 "id": "zbf-2026061200012518280",
 "typeId": "m-his1-2-u0m3s1t1",
 "kind": "객관식",
@@ -59508,26 +56600,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518280.png]]"
-},
-{
-"id": "zbf-2026061200012518297",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518297.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518297",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518297.png]]"
 },
 {
 "id": "zbf-2026061200012518304",
@@ -59550,60 +56622,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518304.png]]"
 },
 {
-"id": "zbf-2026061200012518312",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518312.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518312",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518312.png]]"
-},
-{
-"id": "zbf-2026061200012518318",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518318.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518318",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518318.png]]"
-},
-{
-"id": "zbf-2026061200012518329",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518329.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518329",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026061200012518329.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518329.png]]"
-},
-{
 "id": "zbf-2026061200012518330",
 "typeId": "m-his1-2-u0m3s1t1",
 "kind": "객관식",
@@ -59624,80 +56642,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518330.png]]"
 },
 {
-"id": "zbf-2026061200012518331",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518331.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518331",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518331.png]]"
-},
-{
-"id": "zbf-2026061200012518336",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518336.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518336",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026061200012518336.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518336.png]]"
-},
-{
-"id": "zbf-2026061200012518342",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518342.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518342",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①,⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518342.png]]"
-},
-{
-"id": "zbf-2026061200012518343",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518343.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518343",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518343.png]]"
-},
-{
 "id": "zbf-2026061200012518346",
 "typeId": "m-his1-2-u0m3s1t3",
 "kind": "객관식",
@@ -59716,160 +56660,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518346.png]]"
-},
-{
-"id": "zbf-2026061200012518351",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518351.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518351",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518351.png]]"
-},
-{
-"id": "zbf-2026061200012518352",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518352.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518352",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518352.png]]"
-},
-{
-"id": "zbf-2026061200012518354",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518354.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518354",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518354.png]]"
-},
-{
-"id": "zbf-2026061200012518359",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518359.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518359",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518359.png]]"
-},
-{
-"id": "zbf-2026061200012518360",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518360.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518360",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518360.png]]"
-},
-{
-"id": "zbf-2026061200012518361",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518361.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518361",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026061200012518361.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518361.png]]"
-},
-{
-"id": "zbf-2026061200012518368",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518368.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518368",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518368.png]]"
-},
-{
-"id": "zbf-2026061200012518369",
-"typeId": "m-his1-2-u0m3s1t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012518369.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
-"twinGroup": "tw-m-his1-2-u0m3s1t0",
-"custom": true,
-"zb": "2026061200012518369",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012518369.png]]"
 },
 {
 "id": "zbf-2026061200012519481",
@@ -59952,26 +56742,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519499.png]]"
 },
 {
-"id": "zbf-2026061200012519501",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519501.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519501",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519501.png]]"
-},
-{
 "id": "zbf-2026061200012519506",
 "typeId": "m-his1-2-u0m4s0t2",
 "kind": "객관식",
@@ -60012,26 +56782,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519507.png]]"
 },
 {
-"id": "zbf-2026061200012519512",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519512.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519512",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519512.png]]"
-},
-{
 "id": "zbf-2026061200012519514",
 "typeId": "m-his1-2-u0m4s0t2",
 "kind": "객관식",
@@ -60050,26 +56800,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519514.png]]"
-},
-{
-"id": "zbf-2026061200012519517",
-"typeId": "m-his1-2-u0m4s0t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026061200012519517.png]]",
-"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
-"twinGroup": "tw-m-his1-2-u0m4s0t1",
-"custom": true,
-"zb": "2026061200012519517",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026061200012519517.png]]"
 },
 {
 "id": "zbf-2026061200012519522",
@@ -60846,46 +57576,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713621.png]]"
 },
 {
-"id": "zbf-2026070900012713622",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 지도를 보고 물음에 답하시오.\n\n[[그림:/figs/zbfill/m-his1-2/q2026070900012713622.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012713622",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713622.png]]"
-},
-{
-"id": "zbf-2026070900012713631",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 19세기 후반~20세기 초 세계정세를 표현한 자료를 보고, 물음에 답하시오.\n\n[[그림:/figs/zbfill/m-his1-2/q2026070900012713631.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012713631",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②,③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713631.png]]"
-},
-{
 "id": "zbf-2026070900012713633",
 "typeId": "m-his1-2-u1m0s0t1",
 "kind": "객관식",
@@ -60904,46 +57594,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713633.png]]"
-},
-{
-"id": "zbf-2026070900012713635",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음 글을 읽고 물음에 답하시오.\n발칸반도는 오랫동안 (가)오스만 제국의 지배를 받았으며, 민족과 종교가 다양해져 분쟁이 계속되었다. 오스만 제국이 쇠퇴해진 19세기에 이르러서는 곳곳에서 민족운동이 일어나고 있었다. 이런 가운데 오스트리아·헝가리 제국이 보스니아 헤르체고비나를 합병하자 세르비아가 불만을 가졌다. 이는 사라예보 사건이 일어나는 계기가 되었고 (나)이/가 같은 슬라브족인 세르비아를 지지하였고, 게르만족인 (다)이/가 오스트리아·헝가리 제국 편에 서면서 제1차 세계 대전이 일어났다.\n\n[[그림:/figs/zbfill/m-his1-2/q2026070900012713635.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012713635",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713635.png]]"
-},
-{
-"id": "zbf-2026070900012713636",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음 글을 읽고 물음에 답하시오.\n발칸반도는 오랫동안 (가)오스만 제국의 지배를 받았으며, 민족과 종교가 다양해져 분쟁이 계속되었다. 오스만 제국이 쇠퇴해진 19세기에 이르러서는 곳곳에서 민족운동이 일어나고 있었다. 이런 가운데 오스트리아·헝가리 제국이 보스니아 헤르체고비나를 합병하자 세르비아가 불만을 가졌다. 이는 사라예보 사건이 일어나는 계기가 되었고 (나)이/가 같은 슬라브족인 세르비아를 지지하였고, 게르만족인 (다)이/가 오스트리아·헝가리 제국 편에 서면서 제1차 세계 대전이 일어났다.\n\n[[그림:/figs/zbfill/m-his1-2/q2026070900012713636.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012713636",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713636.png]]"
 },
 {
 "id": "zbf-2026070900012713779",
@@ -61066,26 +57716,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709519.png]]"
 },
 {
-"id": "zbf-2026070900012709520",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012709520.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 전개",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012709520",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709520.png]]"
-},
-{
 "id": "zbf-2026070900012709521",
 "typeId": "m-his1-2-u1m0s0t2",
 "kind": "객관식",
@@ -61166,26 +57796,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012713958.png]]"
 },
 {
-"id": "zbf-2026070900012709526",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012709526.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 전개",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012709526",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709526.png]]"
-},
-{
 "id": "zbf-2026070900012709529",
 "typeId": "m-his1-2-u1m0s0t1",
 "kind": "객관식",
@@ -61224,26 +57834,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709531.png]]"
-},
-{
-"id": "zbf-2026070900012709532",
-"typeId": "m-his1-2-u1m0s0t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026070900012709532.png]]",
-"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 전개",
-"twinGroup": "tw-m-his1-2-u1m0s0t0",
-"custom": true,
-"zb": "2026070900012709532",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026070900012709532.png]]"
 },
 {
 "id": "zbf-2026070900012709535",
@@ -69686,46 +66276,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025000.png]]"
 },
 {
-"id": "zbf-2026082700013025001",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음 내용을 읽고 물음에 답하시오.\n제목 : (가)\n\n㉠ 제3 세계가 등장하였다.\n㉡ 프랑스가 군사 동맹을 탈퇴하였다.\n㉢ 프라하에서 자유화 운동이 일어났다.\n㉣ 중국과 소련이 이념 문제로 대립하였다.\n㉤ 미국이 아시아의 군사적 분쟁에 개입하지 않겠다고 선언하였다.\n\n[[그림:/figs/zbfill/m-his1-2/q2026082700013025001.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025001",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025001.png]]"
-},
-{
-"id": "zbf-2026082700013025005",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음은 미국의 외교 정책에 대한 선언을 나타낸 연표이다. 물음에 답하시오.\n\n[[그림:/figs/zbfill/m-his1-2/q2026082700013025005.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025005",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025005.png]]"
-},
-{
 "id": "zbf-2026082700013025039",
 "typeId": "m-his1-2-u2m0s0t1",
 "kind": "객관식",
@@ -69764,26 +66314,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025414.png]]"
-},
-{
-"id": "zbf-2026082700013025415",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "※ 다음 글을 읽고 물음에 답하시오.\n제2차 세계 대전 이후 독립을 이룬 ㉠아시아와 아프리카의 신생국들은 비동맹주의를 내세웠다. 이들은 1961년부터 정기적으로 회의를 열어 개발도상국의 이익과 권리를 지키기 위해 노력하였다. 뿐만 아니라 이들의 국제적 영향력이 강화되면서 ㉡새로운 변화가 나타나기 시작하였다.\n\n[[그림:/figs/zbfill/m-his1-2/q2026082700013025415.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025415",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025415.png]]"
 },
 {
 "id": "zbf-2026082700013024947",
@@ -70206,26 +66736,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025007.png]]"
 },
 {
-"id": "zbf-2026082700013025010",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025010.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025010",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025010.png]]"
-},
-{
 "id": "zbf-2026082700013025012",
 "typeId": "m-his1-2-u2m0s1t1",
 "kind": "객관식",
@@ -70244,26 +66754,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025012.png]]"
-},
-{
-"id": "zbf-2026082700013025013",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025013.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025013",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025013.png]]"
 },
 {
 "id": "zbf-2026082700013025015",
@@ -70286,26 +66776,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025015.png]]"
 },
 {
-"id": "zbf-2026082700013025017",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025017.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025017",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025017.png]]"
-},
-{
 "id": "zbf-2026082700013025019",
 "typeId": "m-his1-2-u2m0s1t1",
 "kind": "객관식",
@@ -70324,66 +66794,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025019.png]]"
-},
-{
-"id": "zbf-2026082700013025021",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025021.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025021",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025021.png]]"
-},
-{
-"id": "zbf-2026082700013025023",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025023.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025023",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025023.png]]"
-},
-{
-"id": "zbf-2026082700013025024",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025024.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025024",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025024.png]]"
 },
 {
 "id": "zbf-2026082700013025025",
@@ -70406,26 +66816,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025025.png]]"
 },
 {
-"id": "zbf-2026082700013025027",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025027.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025027",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025027.png]]"
-},
-{
 "id": "zbf-2026082700013025033",
 "typeId": "m-his1-2-u2m0s1t1",
 "kind": "객관식",
@@ -70446,26 +66836,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025033.png]]"
 },
 {
-"id": "zbf-2026082700013025034",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025034.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025034",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025034.png]]"
-},
-{
 "id": "zbf-2026082700013025052",
 "typeId": "m-his1-2-u2m0s2t1",
 "kind": "객관식",
@@ -70484,46 +66854,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025052.png]]"
-},
-{
-"id": "zbf-2026082700013025055",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025055.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025055",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025055.png]]"
-},
-{
-"id": "zbf-2026082700013025061",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025061.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025061",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025061.png]]"
 },
 {
 "id": "zbf-2026082700013025329",
@@ -70718,26 +67048,6 @@
 ],
 "answer": "⑤",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025371.png]]"
-},
-{
-"id": "zbf-2026082700013025375",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025375.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 냉전 체제의 형성 › 냉전 체제의 형성",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025375",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025375.png]]"
 },
 {
 "id": "zbf-2026082700013025376",
@@ -70962,26 +67272,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025419.png]]"
 },
 {
-"id": "zbf-2026082700013025421",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025421.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025421",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025421.png]]"
-},
-{
 "id": "zbf-2026082700013025423",
 "typeId": "m-his1-2-u2m0s1t1",
 "kind": "객관식",
@@ -71000,26 +67290,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025423.png]]"
-},
-{
-"id": "zbf-2026082700013025424",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025424.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025424",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025424.png]]"
 },
 {
 "id": "zbf-2026082700013025425",
@@ -71060,46 +67330,6 @@
 ],
 "answer": "③",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025426.png]]"
-},
-{
-"id": "zbf-2026082700013025431",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025431.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025431",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025431.png]]"
-},
-{
-"id": "zbf-2026082700013025434",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025434.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025434",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025434.png]]"
 },
 {
 "id": "zbf-2026082700013025438",
@@ -71162,26 +67392,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025446.png]]"
 },
 {
-"id": "zbf-2026082700013025448",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025448.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025448",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025448.png]]"
-},
-{
 "id": "zbf-2026082700013025450",
 "typeId": "m-his1-2-u2m0s1t1",
 "kind": "객관식",
@@ -71222,26 +67432,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025451.png]]"
 },
 {
-"id": "zbf-2026082700013025455",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025455.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025455",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025455.png]]"
-},
-{
 "id": "zbf-2026082700013025456",
 "typeId": "m-his1-2-u2m0s0t2",
 "kind": "주관식",
@@ -71254,26 +67444,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026082700013025456.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025456.png]]"
-},
-{
-"id": "zbf-2026082700013025457",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025457.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025457",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025457.png]]"
 },
 {
 "id": "zbf-2026082700013025459",
@@ -71356,66 +67526,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025464.png]]"
 },
 {
-"id": "zbf-2026082700013025465",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025465.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025465",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025465.png]]"
-},
-{
-"id": "zbf-2026082700013025467",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025467.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025467",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025467.png]]"
-},
-{
-"id": "zbf-2026082700013025469",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025469.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025469",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025469.png]]"
-},
-{
 "id": "zbf-2026082700013025482",
 "typeId": "m-his1-2-u2m0s2t1",
 "kind": "객관식",
@@ -71454,80 +67564,6 @@
 ],
 "answer": "④",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025483.png]]"
-},
-{
-"id": "zbf-2026082700013025486",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025486.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025486",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025486.png]]"
-},
-{
-"id": "zbf-2026082700013025488",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025488.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025488",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025488.png]]"
-},
-{
-"id": "zbf-2026082700013025490",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025490.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025490",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025490.png]]"
-},
-{
-"id": "zbf-2026082700013025493",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025493.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026082700013025493",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026082700013025493.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025493.png]]"
 },
 {
 "id": "zbf-2026082700013025494",
@@ -71822,26 +67858,6 @@
 ],
 "answer": "②",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038105.png]]"
-},
-{
-"id": "zbf-2026083100013038106",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026083100013038106.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026083100013038106",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026083100013038106.png]]"
 },
 {
 "id": "zbf-2026083100013038108",
@@ -72428,20 +68444,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068230.png]]"
 },
 {
-"id": "zbf-2026090700013068233",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068233.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068233",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068233.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068233.png]]"
-},
-{
 "id": "zbf-2026090700013068235",
 "typeId": "m-his1-2-u2m0s0t0",
 "kind": "주관식",
@@ -72568,62 +68570,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068431.png]]"
 },
 {
-"id": "zbf-2026090700013068434",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068434.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068434",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068434.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068434.png]]"
-},
-{
-"id": "zbf-2026090700013068435",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068435.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068435",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068435.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068435.png]]"
-},
-{
-"id": "zbf-2026090700013068436",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068436.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068436",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068436.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068436.png]]"
-},
-{
-"id": "zbf-2026090700013068437",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068437.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068437",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068437.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068437.png]]"
-},
-{
 "id": "zbf-2026090700013068438",
 "typeId": "m-his1-2-u2m0s2t1",
 "kind": "주관식",
@@ -72636,20 +68582,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068438.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068438.png]]"
-},
-{
-"id": "zbf-2026090700013068442",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090700013068442.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090700013068442",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090700013068442.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090700013068442.png]]"
 },
 {
 "id": "zbf-2026090800013070873",
@@ -72744,20 +68676,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090800013070887.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070887.png]]"
-},
-{
-"id": "zbf-2026090800013070888",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "주관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070888.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070888",
-"selfGrade": true,
-"answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090800013070888.png",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070888.png]]"
 },
 {
 "id": "zbf-2026090800013070889",
@@ -72914,146 +68832,6 @@
 "selfGrade": true,
 "answer": "https://gsg-hakseupji.vercel.app/figs/zbfill/m-his1-2/s2026090800013070905.png",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070905.png]]"
-},
-{
-"id": "zbf-2026090800013070973",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070973.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070973",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070973.png]]"
-},
-{
-"id": "zbf-2026090800013070974",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070974.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070974",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070974.png]]"
-},
-{
-"id": "zbf-2026090800013070975",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070975.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070975",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070975.png]]"
-},
-{
-"id": "zbf-2026090800013070976",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070976.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070976",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070976.png]]"
-},
-{
-"id": "zbf-2026090800013070978",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070978.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070978",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070978.png]]"
-},
-{
-"id": "zbf-2026090800013070979",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070979.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070979",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070979.png]]"
-},
-{
-"id": "zbf-2026090800013070980",
-"typeId": "m-his1-2-u2m0s2t0",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026090800013070980.png]]",
-"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
-"twinGroup": "tw-m-his1-2-u2m0s2t0",
-"custom": true,
-"zb": "2026090800013070980",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026090800013070980.png]]"
 },
 {
 "id": "zbf-2026090800013070985",
@@ -73732,46 +69510,6 @@
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025600.png]]"
 },
 {
-"id": "zbf-2026082700013025606",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025606.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025606",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025606.png]]"
-},
-{
-"id": "zbf-2026082700013025607",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025607.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025607",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025607.png]]"
-},
-{
 "id": "zbf-2026082700013025612",
 "typeId": "m-his1-2-u2m1s2t0",
 "kind": "객관식",
@@ -73810,166 +69548,6 @@
 ],
 "answer": "①",
 "solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025629.png]]"
-},
-{
-"id": "zbf-2026082700013025632",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025632.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025632",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "①",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025632.png]]"
-},
-{
-"id": "zbf-2026082700013025638",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025638.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025638",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025638.png]]"
-},
-{
-"id": "zbf-2026082700013025639",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025639.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025639",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "④",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025639.png]]"
-},
-{
-"id": "zbf-2026082700013025641",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025641.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025641",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025641.png]]"
-},
-{
-"id": "zbf-2026082700013025642",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025642.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025642",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025642.png]]"
-},
-{
-"id": "zbf-2026082700013025647",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025647.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025647",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "⑤",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025647.png]]"
-},
-{
-"id": "zbf-2026082700013025652",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025652.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025652",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "②",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025652.png]]"
-},
-{
-"id": "zbf-2026082700013025654",
-"typeId": "m-his1-2-u2m1s2t1",
-"kind": "객관식",
-"diff": 3,
-"body": "[[그림:/figs/zbfill/m-his1-2/q2026082700013025654.png]]",
-"source": "족보 기출 · 민주주의와 인권의 확산 › 탈권위주의 운동과 사회 운동 › 사회 운동",
-"twinGroup": "tw-m-his1-2-u2m1s2t1",
-"custom": true,
-"zb": "2026082700013025654",
-"choices": [
-"①",
-"②",
-"③",
-"④",
-"⑤"
-],
-"answer": "③",
-"solution": "[[그림:/figs/zbfill/m-his1-2/s2026082700013025654.png]]"
 },
 {
 "id": "zbf-2026082700013025786",
@@ -76684,5 +72262,425 @@
 "solution": "제1차 세계 대전 이후 파리 강화 회의에서 이루어진 전후 처리와 베르사유 조약을 중심으로 전승국 주도의 새로운 국제 질서가 형성되었다. 이를 베르사유 체제라고 한다.",
 "rv": 1,
 "selfGrade": true
+},
+{
+"id": "zbf-2026061200012518247",
+"typeId": "m-his1-2-u0m3s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 중국의 근대화 과정에서 나타난 주요 사건과 운동을 순서대로 정리한 것이다. (다)와 (라)에 대한 설명으로 옳은 것은?\n\n(가) 청이 영국과 최초의 불평등 조약을 체결함.\n↓\n(나) 청 왕조 타도와 한족 중심의 국가 수립을 주장함.\n↓\n(다) 중체서용을 바탕으로 서양의 과학 기술을 도입함.\n↓\n(라) 일본의 메이지 유신을 본보기로 정치 제도의 개혁을 추진함.\n↓\n(마) 삼민주의를 이념으로 한 혁명 세력이 청 왕조를 무너뜨림.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
+"twinGroup": "tw-m-his1-2-u0m3s1t0",
+"custom": true,
+"zb": "2026061200012518247",
+"answer": "④",
+"solution": "(가)는 난징 조약 체결, (나)는 태평천국 운동, (다)는 양무운동, (라)는 변법자강 운동, (마)는 신해혁명이다. 양무운동은 중국의 전통적인 정치·사회 질서를 유지하면서 서양의 과학 기술을 받아들이려 하였다. 변법자강 운동은 서양의 기술뿐 아니라 정치 제도까지 개혁하여 입헌 군주제를 수립하고자 하였다. 따라서 ④가 옳다. ① 청일 전쟁의 패배는 변법자강 운동이 추진되는 계기가 되었다. ② 양무운동에 해당한다. ③ 캉유웨이와 량치차오는 변법자강 운동을 주도하였다. ⑤ 두 운동 모두 청 왕조의 존속을 전제로 개혁을 추진하였다.",
+"rv": 1,
+"choices": [
+"(다)는 청일 전쟁에서 패배한 것을 계기로 시작되었다.",
+"(라)는 서양의 기술만 받아들이고 기존 정치 제도를 유지하려 하였다.",
+"(다)는 캉유웨이와 량치차오가 중심이 되어 추진하였다.",
+"(라)는 (다)와 달리 입헌 군주제 수립을 지향하였다.",
+"(다)와 (라)는 모두 청 왕조를 타도하고 공화국을 수립하려 하였다."
+]
+},
+{
+"id": "zbf-2026061200012518260",
+"typeId": "m-his1-2-u0m3s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 자료에 나타난 근대화 운동에 대한 설명으로 옳은 것은?\n\n청의 일부 관료들은 아편 전쟁과 태평천국 운동의 진압 과정에서 서양 무기의 위력을 실감하였다. 이들은 톈진에 해군 사관 학교를 세우고 금릉 기기국과 같은 군수 공장을 설립하였다. 또한 여러 산업 분야에서 서양의 과학 기술을 받아들여 국력을 강화하고자 하였다.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
+"twinGroup": "tw-m-his1-2-u0m3s1t0",
+"custom": true,
+"zb": "2026061200012518260",
+"answer": "①",
+"solution": "자료는 양무운동에 관한 것이다. 양무운동은 이홍장, 증국번 등의 관료들이 주도한 근대화 운동으로, 중체서용을 바탕으로 기존의 정치 질서를 유지하면서 서양의 과학 기술을 도입하여 국력을 강화하고자 하였다. 따라서 ①이 옳다. ②와 ③은 변법자강 운동, ④는 신해혁명, ⑤는 의화단 운동에 해당한다. 양무운동은 청일 전쟁에서 청이 패배하면서 그 한계가 드러났으며, 이후 정치 제도의 개혁까지 추구하는 변법자강 운동이 추진되었다.",
+"rv": 1,
+"choices": [
+"중국의 전통적인 정치 질서를 유지하면서 서양의 과학 기술을 도입하려 하였다.",
+"일본의 메이지 유신을 본보기로 입헌 군주제를 수립하려 하였다.",
+"청일 전쟁의 패배를 계기로 정치 제도의 전면적인 개혁을 추진하였다.",
+"삼민주의를 바탕으로 청 왕조를 타도하고 공화국을 수립하려 하였다.",
+"외세를 몰아내기 위해 철도와 교회 등 서양의 시설을 공격하였다."
+]
+},
+{
+"id": "zbf-2026061200012518264",
+"typeId": "m-his1-2-u0m3s1t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 <보기>의 사건과 운동을 일어난 순서대로 바르게 나열하고, ㄱ과 ㄹ의 차이를 옳게 설명한 것은?\n\n<보기>\nㄱ. 양무운동\nㄴ. 신해혁명\nㄷ. 의화단 운동\nㄹ. 변법자강 운동\nㅁ. 태평천국 운동",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 중국의 국민 국가 건설 운동 › 중국의 근대화 운동",
+"twinGroup": "tw-m-his1-2-u0m3s1t0",
+"custom": true,
+"zb": "2026061200012518264",
+"answer": "①",
+"solution": "태평천국 운동은 1851년에 시작되었고, 양무운동은 1860년대부터 추진되었다. 청일 전쟁의 패배 이후 1898년에 변법자강 운동이 추진되었으며, 1899년 무렵부터 의화단 운동이 본격화되었다. 이후 1911년에 신해혁명이 일어났다. 따라서 시작 시기를 기준으로 한 순서는 ㅁ → ㄱ → ㄹ → ㄷ → ㄴ이다. 양무운동은 중체서용을 바탕으로 서양의 과학 기술을 도입하려 하였지만, 변법자강 운동은 정치 제도의 개혁을 통해 입헌 군주제를 수립하고자 하였다. 사건의 순서와 두 운동의 차이를 모두 옳게 설명한 선지는 ①이다.",
+"rv": 1,
+"choices": [
+"ㅁ → ㄱ → ㄹ → ㄷ → ㄴ / ㄹ은 ㄱ과 달리 정치 제도의 개혁까지 추구하였다.",
+"ㅁ → ㄱ → ㄹ → ㄷ → ㄴ / ㄱ은 ㄹ과 달리 입헌 군주제 수립을 추구하였다.",
+"ㅁ → ㄹ → ㄱ → ㄷ → ㄴ / ㄱ은 ㄹ과 달리 서양의 과학 기술을 도입하려 하였다.",
+"ㅁ → ㄱ → ㄷ → ㄹ → ㄴ / ㄹ은 ㄱ과 달리 청 왕조의 타도를 추구하였다.",
+"ㅁ → ㄱ → ㄹ → ㄴ → ㄷ / ㄱ과 ㄹ은 모두 공화국 수립을 추구하였다."
+]
+},
+{
+"id": "zbf-2026070900012712244",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음 자료를 종합하여 제1차 세계 대전이 일어나기 전 유럽의 국제 정세를 분석한 내용으로 옳은 것만을 <보기>에서 고른 것은?\n\n(가) 독일은 오스트리아·헝가리 제국, 이탈리아와 동맹을 맺어 유럽에서 세력을 확대하고자 하였다.\n(나) 영국은 프랑스 및 러시아와 협력 관계를 형성하였다.\n(다) 오스트리아·헝가리 제국이 보스니아 헤르체고비나를 합병하자 세르비아가 강하게 반발하였다.\n(라) 사라예보 사건 이후 오스트리아·헝가리 제국이 세르비아에 선전 포고하자 러시아가 세르비아를 지원하고 독일이 오스트리아·헝가리 제국을 지원하였다.\n\n<보기>\nㄱ. (가)와 (나)는 열강의 대립이 두 세력권의 형성으로 이어졌음을 보여 준다.\nㄴ. (다)의 갈등은 (가)의 동맹국들이 범슬라브주의를 공동으로 추진하면서 발생하였다.\nㄷ. (다)에서 나타난 지역적 갈등은 (라)의 과정에서 기존 열강의 대립과 결합하였다.\nㄹ. (라)에서 독일과 러시아의 대립은 (가)와 (나)의 세력 구도와 무관하게 새롭게 형성되었다.\nㅁ. (가)에 참여한 모든 국가가 전쟁에서도 처음부터 동일한 진영에 참전하였다고 볼 수는 없다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012712244",
+"answer": "③",
+"solution": "(가)는 삼국 동맹, (나)는 삼국 협상을 나타낸다. ㄱ. 두 세력의 형성은 유럽 열강의 대립을 보여 준다. ㄴ. 범슬라브주의는 러시아가 중심이 되어 추진하였으므로 옳지 않다. ㄷ. 발칸반도의 지역적 갈등은 기존 열강의 대립과 결합하여 세계 대전으로 확대되었다. ㄹ. 독일과 러시아의 대립은 전쟁 이전에 형성된 세력 구도와 관련되어 있으므로 옳지 않다. ㅁ. 이탈리아는 삼국 동맹에 속하였으나 전쟁 초기에는 중립을 유지하다가 이후 협상국 측으로 참전하였다. 따라서 ㄱ, ㄷ, ㅁ이 옳다.",
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㅁ",
+"ㄱ, ㄷ, ㅁ",
+"ㄴ, ㄷ, ㄹ",
+"ㄷ, ㄹ, ㅁ"
+]
+},
+{
+"id": "zbf-2026070900012712236",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 4,
+"body": "다음 자료에 나타난 두 세력의 대립에 대한 설명으로 옳은 것은?\n\n(가) 게르만 민족의 단결을 강조하며 독일과 오스트리아·헝가리 제국의 세력 확대를 추구하였다.\n(나) 슬라브 민족의 단결을 강조하며 발칸반도에서 슬라브계 민족을 지원하였다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012712236",
+"answer": "⑤",
+"solution": "(가)는 범게르만주의, (나)는 범슬라브주의이다. 독일과 오스트리아·헝가리 제국은 범게르만주의를 내세웠고, 러시아는 범슬라브주의를 내세워 세르비아 등을 지원하였다. 이러한 대립은 발칸반도의 민족 갈등과 유럽 열강의 세력 경쟁을 결합하는 요인이 되었다. ①과 ③은 두 민족주의의 주도 세력을 뒤바꾸었다. ②는 러시아와 세르비아의 입장에 어긋난다. ④는 두 세력의 대립 관계를 협력 관계로 잘못 설명하였다.",
+"rv": 1,
+"choices": [
+"(가)는 러시아의 발칸반도 진출을 뒷받침하였다.",
+"(나)는 오스트리아·헝가리 제국의 보스니아 헤르체고비나 합병을 지지하였다.",
+"독일은 (나)를 내세워 세르비아의 민족 운동을 지원하였다.",
+"두 세력은 오스만 제국의 지배를 유지하기 위해 협력하였다.",
+"두 세력의 대립은 발칸반도의 민족 갈등을 열강의 세력 경쟁과 연결하였다."
+]
+},
+{
+"id": "zbf-2026070900012712135",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 5,
+"body": "다음은 제1차 세계 대전의 발생 배경을 조사한 학생이 정리한 자료이다. 이를 바탕으로 전쟁의 발생 과정을 설명한 내용으로 옳은 것만을 <보기>에서 고른 것은?\n\n(가) 유럽 열강은 식민지와 해외 시장 확보를 둘러싸고 경쟁하였으며, 서로 대립하는 동맹 관계를 형성하였다.\n(나) 오스만 제국의 세력이 약화되면서 발칸반도에서는 여러 민족의 독립 운동과 열강의 진출 경쟁이 전개되었다.\n(다) 오스트리아·헝가리 제국의 보스니아 헤르체고비나 합병으로 세르비아와의 갈등이 심화되었다.\n(라) 사라예보 사건을 계기로 오스트리아·헝가리 제국과 세르비아의 갈등이 전쟁으로 이어졌으며, 다른 열강들도 전쟁에 참여하였다.\n\n<보기>\nㄱ. (가)는 전쟁이 일어나기 이전부터 존재한 국제적 대립 구조에 해당한다.\nㄴ. (나)에서 나타난 민족 운동은 열강의 이해관계와 무관하였으므로 (가)와 연결하여 설명할 수 없다.\nㄷ. (다)는 (나)의 상황에서 민족주의와 열강의 영토 확대 정책이 충돌한 사례이다.\nㄹ. (라)의 사건은 전쟁의 직접적인 계기이지만, 그 사건만으로 전쟁이 여러 국가로 확대된 배경까지 충분히 설명하기는 어렵다.\nㅁ. (라)에서 열강이 전쟁에 참여하였기 때문에 비로소 (가)의 동맹 관계가 형성되었다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012712135",
+"answer": "②",
+"solution": "ㄱ. 제국주의 경쟁과 삼국 동맹·삼국 협상의 대립은 제1차 세계 대전의 장기적 배경이다. ㄴ. 발칸반도의 민족 운동은 러시아와 오스트리아·헝가리 제국 등의 이해관계와 밀접하게 관련되었으므로 옳지 않다. ㄷ. 보스니아 헤르체고비나 합병은 오스트리아·헝가리 제국의 영토 확대 정책과 세르비아의 민족주의가 충돌한 사례이다. ㄹ. 사라예보 사건은 직접적인 계기이며, 전쟁의 확대를 설명하려면 기존의 동맹 관계와 열강의 대립을 함께 고려해야 한다. ㅁ. 두 세력의 동맹 관계는 제1차 세계 대전 이전에 형성되었으므로 옳지 않다. 따라서 ㄱ, ㄷ, ㄹ이 옳다.",
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ",
+"ㄱ, ㄹ, ㅁ",
+"ㄴ, ㄷ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+]
+},
+{
+"id": "zbf-2026070900012713622",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 자료에서 설명하는 지역의 당시 상황으로 옳은 것은?\n\n이 지역은 유럽 남동부에 위치하며, 오랫동안 오스만 제국의 지배를 받았다. 19세기 이후 오스만 제국이 쇠퇴하자 여러 민족의 독립 운동이 활발해졌으며, 주변 열강의 이해관계가 충돌하였다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012713622",
+"answer": "③",
+"solution": "자료에서 설명하는 지역은 발칸반도이다. 오스만 제국이 쇠퇴하면서 발칸반도에서는 민족 운동이 활발해졌고, 러시아와 오스트리아·헝가리 제국의 세력 확대 경쟁이 심화되었다. 이러한 상황 때문에 발칸반도는 유럽의 화약고라고 불렸다. 나머지 선지는 발칸반도의 당시 정세를 설명한 것이 아니다.",
+"rv": 1,
+"choices": [
+"독일과 프랑스가 알자스·로렌의 영유권을 두고 대립하였다.",
+"영국과 러시아가 아프리카 식민지 획득을 두고 대립하였다.",
+"러시아와 오스트리아·헝가리 제국의 세력 확대 경쟁이 심화되었다.",
+"이탈리아와 독일의 국민 국가 통일 운동이 시작되었다.",
+"프랑스와 영국이 수에즈 운하의 지배권을 두고 전쟁을 벌였다."
+]
+},
+{
+"id": "zbf-2026070900012713631",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 자료에 나타난 19세기 후반~20세기 초 유럽의 국제 정세에 대한 설명으로 옳은 것만을 <보기>에서 고른 것은?\n\n독일은 오스트리아·헝가리 제국 등과 동맹을 맺었고, 이에 맞서 영국, 프랑스, 러시아도 협력 관계를 형성하였다. 한편 발칸반도에서는 민족 문제를 둘러싸고 열강의 대립이 심화되었다.\n\n<보기>\nㄱ. 유럽 열강은 서로 대립하는 두 세력을 형성하였다.\nㄴ. 러시아는 범게르만주의를 내세워 발칸반도에 진출하였다.\nㄷ. 발칸반도의 갈등은 제1차 세계 대전의 배경이 되었다.\nㄹ. 오스트리아·헝가리 제국은 삼국 협상에 참여하였다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012713631",
+"answer": "②",
+"solution": "ㄱ. 유럽 열강은 삼국 동맹과 삼국 협상을 중심으로 대립하였다. ㄴ. 러시아는 범슬라브주의를 내세웠으므로 옳지 않다. ㄷ. 발칸반도의 민족 갈등과 열강의 대립은 제1차 세계 대전의 주요 배경이었다. ㄹ. 오스트리아·헝가리 제국은 삼국 동맹에 참여하였으므로 옳지 않다. 따라서 ㄱ, ㄷ이 옳다.",
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄷ, ㄹ"
+]
+},
+{
+"id": "zbf-2026070900012713635",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 (나), (다)에 해당하는 국가와 이들이 내세운 민족주의를 옳게 연결한 것은?\n\n발칸반도는 오랫동안 오스만 제국의 지배를 받았으며, 다양한 민족과 종교가 공존하였다. 19세기에 오스만 제국이 쇠퇴하면서 여러 민족의 독립 운동이 활발해졌다. 오스트리아·헝가리 제국이 보스니아 헤르체고비나를 합병하자 세르비아가 반발하였다. 이후 사라예보 사건을 계기로 두 국가 사이에 전쟁이 일어났으며, (나)는 세르비아를 지원하고 (다)는 오스트리아·헝가리 제국을 지원하였다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012713635",
+"answer": "②",
+"solution": "러시아는 범슬라브주의를 내세워 발칸반도의 슬라브계 민족을 지원하였으며, 세르비아의 편에 섰다. 독일은 범게르만주의를 내세우고 동맹국인 오스트리아·헝가리 제국을 지원하였다. 따라서 (나)는 러시아와 범슬라브주의, (다)는 독일과 범게르만주의로 연결해야 한다.",
+"rv": 1,
+"choices": [
+"(나) 러시아－범게르만주의 / (다) 독일－범슬라브주의",
+"(나) 러시아－범슬라브주의 / (다) 독일－범게르만주의",
+"(나) 독일－범게르만주의 / (다) 러시아－범슬라브주의",
+"(나) 프랑스－범슬라브주의 / (다) 독일－범게르만주의",
+"(나) 러시아－범슬라브주의 / (다) 영국－범게르만주의"
+]
+},
+{
+"id": "zbf-2026070900012713636",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글을 바탕으로 제1차 세계 대전의 발생 과정을 설명한 내용으로 가장 적절한 것은?\n\n발칸반도에서 오스만 제국의 세력이 약해지자 여러 민족의 독립 운동이 활발해졌다. 오스트리아·헝가리 제국이 보스니아 헤르체고비나를 합병하자 세르비아가 반발하였다. 이후 사라예보 사건이 발생하였으며, 오스트리아·헝가리 제국과 세르비아 사이에 전쟁이 일어났다. 러시아는 세르비아를 지원하였고 독일은 오스트리아·헝가리 제국을 지원하였다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 배경",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012713636",
+"answer": "②",
+"solution": "발칸반도에서는 오스만 제국의 쇠퇴를 배경으로 민족 운동과 열강의 세력 경쟁이 심화되었다. 보스니아 헤르체고비나 합병을 둘러싼 갈등과 사라예보 사건을 계기로 오스트리아·헝가리 제국과 세르비아 사이에 전쟁이 일어났다. 여기에 기존 동맹 관계로 연결된 열강들이 개입하면서 전쟁이 확대되었다. 따라서 지역적 갈등과 열강의 대립이 결합하였다는 설명이 가장 적절하다.",
+"rv": 1,
+"choices": [
+"오스만 제국의 팽창이 열강의 군사 동맹 해체로 이어졌다.",
+"발칸반도의 지역적 갈등이 열강의 대립과 결합하여 확대되었다.",
+"슬라브 민족의 단결 운동이 독일과 러시아의 협력을 이끌어 냈다.",
+"보스니아 헤르체고비나의 합병이 발칸반도의 민족 갈등을 완화하였다.",
+"사라예보 사건 이후 열강은 발칸반도에 대한 개입을 중단하였다."
+]
+},
+{
+"id": "zbf-2026070900012709520",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 자료의 (가), (나)에 대한 설명으로 옳은 것은?\n\n(가): 독일, 오스트리아·헝가리 제국, 이탈리아\n(나): 영국, 프랑스, 러시아",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 전개",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012709520",
+"answer": "②",
+"solution": "(가)는 삼국 동맹, (나)는 삼국 협상이다. 독일을 중심으로 삼국 동맹이 형성되자 영국, 프랑스, 러시아는 서로 협력 관계를 맺어 이에 대응하였다. ① 삼국 동맹은 독일을 중심으로 형성되었다. ③ 러시아는 삼국 협상에 속하였으며 오스트리아·헝가리 제국과 발칸반도에서 대립하였다. ④ 범게르만주의는 독일과 오스트리아·헝가리 제국의 세력 확대와 관련된다. ⑤ 두 세력은 제1차 세계 대전 이전에 형성되었다.",
+"rv": 1,
+"choices": [
+"(가)는 독일의 세력 확대를 견제하기 위해 형성되었다.",
+"(나)는 (가)와 대립하는 협력 관계를 형성하였다.",
+"(가)는 발칸반도에서 러시아의 세력 확대를 지원하였다.",
+"(나)는 범게르만주의를 중심으로 결성되었다.",
+"(가)와 (나)는 제1차 세계 대전이 끝난 뒤 형성되었다."
+]
+},
+{
+"id": "zbf-2026070900012709526",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 대화의 (가)에 들어갈 내용으로 가장 적절한 것은?\n\n학생: 제1차 세계 대전이 일어나기 전 발칸반도를 왜 '유럽의 화약고'라고 불렀나요?\n교사: (가)",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 전개",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012709526",
+"answer": "②",
+"solution": "오스만 제국이 쇠퇴하자 발칸반도에서는 여러 민족의 독립 운동이 활발해졌다. 또한 러시아와 오스트리아·헝가리 제국 등의 세력 확대 경쟁도 심화되었다. 민족 갈등과 열강의 대립이 중첩되어 전쟁이 일어날 위험이 높았기 때문에 발칸반도를 유럽의 화약고라고 불렀다. ①과 ③은 다른 지역에서 발생한 열강의 대립을 설명하며, ④와 ⑤는 당시 발칸반도의 역사적 상황에 부합하지 않는다.",
+"rv": 1,
+"choices": [
+"프랑스와 독일이 알자스·로렌 지역을 둘러싸고 대립하였기 때문이야.",
+"민족 독립 운동이 전개되는 가운데 열강의 세력 확대 경쟁까지 심화되었기 때문이야.",
+"영국과 프랑스가 아프리카에서 식민지 획득 경쟁을 벌였기 때문이야.",
+"독일과 이탈리아가 통일 과정에서 서로의 영토를 차지하려 하였기 때문이야.",
+"오스만 제국이 유럽 진출을 확대하여 러시아의 영토를 차지하려 하였기 때문이야."
+]
+},
+{
+"id": "zbf-2026070900012709532",
+"typeId": "m-his1-2-u1m0s0t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 사건을 일어난 순서대로 옳게 나열한 것은?\n\n(가) 사라예보 사건이 발생하였다.\n(나) 오스트리아·헝가리 제국이 보스니아 헤르체고비나를 합병하였다.\n(다) 오스트리아·헝가리 제국이 세르비아에 선전 포고하였다.\n(라) 독일, 오스트리아·헝가리 제국, 이탈리아가 삼국 동맹을 결성하였다.",
+"source": "족보 기출 · 세계 대전과 국제 질서의 변화 › 제1차 세계 대전 › 제1차 세계 대전의 전개",
+"twinGroup": "tw-m-his1-2-u1m0s0t0",
+"custom": true,
+"zb": "2026070900012709532",
+"answer": "①",
+"solution": "(라) 삼국 동맹 결성은 1882년, (나) 보스니아 헤르체고비나 합병은 1908년, (가) 사라예보 사건은 1914년, (다) 오스트리아·헝가리 제국의 세르비아 선전 포고 역시 1914년에 일어났다. 사라예보 사건은 오스트리아·헝가리 제국이 세르비아에 선전 포고하는 직접적인 계기가 되었다. 따라서 사건의 순서는 (라)－(나)－(가)－(다)이다.",
+"rv": 1,
+"choices": [
+"(라)－(나)－(가)－(다)",
+"(라)－(가)－(나)－(다)",
+"(나)－(라)－(가)－(다)",
+"(나)－(가)－(다)－(라)",
+"(가)－(나)－(라)－(다)"
+]
+},
+{
+"id": "zbf-2026082700013025001",
+"typeId": "m-his1-2-u2m0s2t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 냉전 시기에 나타난 주요 국제 정세의 변화이다. 이 중 미국과 소련을 중심으로 한 양극 체제를 약화하거나 냉전 완화를 촉진한 사례로 적절한 것만을 <보기>에서 고른 것은?\n\n<보기>\nㄱ. 아시아·아프리카 신생 독립국들이 비동맹 세력을 형성하였다.\nㄴ. 프랑스가 북대서양 조약 기구의 통합 군사 지휘 체제에서 탈퇴하였다.\nㄷ. 소련을 중심으로 한 바르샤바 조약 기구 회원국의 군대가 체코슬로바키아의 자유화 운동을 진압하였다.\nㄹ. 중국과 소련이 이념 및 외교 정책을 둘러싸고 대립하였다.\nㅁ. 미국이 아시아 동맹국의 자주적 방위 책임을 강조하는 닉슨 독트린을 발표하였다.",
+"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
+"twinGroup": "tw-m-his1-2-u2m0s2t0",
+"custom": true,
+"zb": "2026082700013025001",
+"answer": "②",
+"solution": "ㄱ. 제3 세계의 비동맹 운동은 미국과 소련 중심의 양극 체제를 약화하였다. ㄴ. 프랑스는 1966년 북대서양 조약 기구의 통합 군사 지휘 체제에서 탈퇴하여 독자적인 외교·군사 노선을 강화하였다. ㄷ. 1968년 체코슬로바키아의 자유화 운동에 대한 군사적 진압은 소련이 동유럽에 대한 영향력을 유지하려 한 사례이다. ㄹ. 중국과 소련의 대립은 사회주의 진영의 결속을 약화하였다. ㅁ. 1969년 발표된 닉슨 독트린은 아시아 동맹국의 방위 책임을 강조하고 미국의 직접적인 군사 개입을 줄이려는 정책이었다. 따라서 옳은 것은 ㄱ, ㄴ, ㄹ, ㅁ이다.",
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ, ㅁ",
+"ㄱ, ㄷ, ㄹ",
+"ㄴ, ㄷ, ㄹ, ㅁ",
+"ㄷ, ㄹ, ㅁ"
+]
+},
+{
+"id": "zbf-2026082700013025415",
+"typeId": "m-his1-2-u2m0s2t0",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 글의 ㉠과 ㉡에 대한 설명을 바르게 연결한 것은?\n\n제2차 세계 대전 이후 독립을 이룬 아시아와 아프리카의 여러 신생국은 미국과 소련 어느 진영에도 종속되지 않으려는 ㉠비동맹 운동을 전개하였다. 이들은 1961년 제1차 비동맹 회의를 개최한 이후 국제 사회에서 개발도상국의 이익과 권리를 지키기 위해 노력하였다. 이러한 국가들의 국제적 영향력이 커지면서 ㉡국제 질서에도 새로운 변화가 나타났다.",
+"source": "족보 기출 · 냉전 체제와 제3 세계의 형성 › 제3 세계와 냉전 체제의 완화 › 냉전 체제의 완화",
+"twinGroup": "tw-m-his1-2-u2m0s2t0",
+"custom": true,
+"zb": "2026082700013025415",
+"answer": "④",
+"solution": "㉠은 제3 세계 국가들이 전개한 비동맹 운동이다. 이들은 미국 중심의 자본주의 진영과 소련 중심의 사회주의 진영 어느 쪽에도 종속되지 않고 독자적인 외교 노선을 추구하였다. 1961년 유고슬라비아의 베오그라드에서 제1차 비동맹 회의가 개최되었다. ㉡은 제3 세계의 국제적 영향력이 확대되면서 미국과 소련 중심의 양극 체제가 약화하고 국제 질서가 다극화하는 현상을 의미한다. 이러한 변화는 냉전 완화의 배경 중 하나가 되었다. 따라서 ④가 옳다.",
+"rv": 1,
+"choices": [
+"㉠ 사회주의 진영의 결속 강화 추구 / ㉡ 소련의 동유럽 지배 강화",
+"㉠ 서방 진영과의 군사 협력 추구 / ㉡ 미국 중심의 국제 질서 확립",
+"㉠ 신생 독립국의 경제적 자립 추구 / ㉡ 자본주의 진영과 사회주의 진영의 대립 심화",
+"㉠ 두 진영으로부터의 정치적 자주성 추구 / ㉡ 미국과 소련 중심의 양극 체제 약화",
+"㉠ 기존 국제 군사 동맹의 확대 추구 / ㉡ 제국주의 열강의 식민지 지배 강화"
+]
+},
+{
+"id": "zbf-2026061200012517981",
+"typeId": "m-his1-2-u0m4s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 자료에 나타난 사건에 대한 설명으로 옳은 것은?\n\n영국 동인도 회사에 고용된 인도인 용병들은 소와 돼지의 기름이 사용되었다고 알려진 탄약통의 사용을 거부하였다. 이를 계기로 일어난 항쟁은 인도 각지로 확산되었다.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
+"twinGroup": "tw-m-his1-2-u0m4s0t1",
+"custom": true,
+"zb": "2026061200012517981",
+"answer": "④",
+"solution": "자료는 1857년에 일어난 세포이의 항쟁에 관한 것이다. 항쟁은 영국에 의해 진압되었으나, 이를 계기로 영국은 동인도 회사의 인도 통치를 끝내고 인도를 직접 지배하였다. ①과 ③은 벵골 분할령에 반대하는 민족 운동과 관련된다. ② 인도 국민 회의는 1885년에 결성되었다. ⑤ 항쟁 이후 영국의 식민 지배는 오히려 강화되었다.",
+"rv": 1,
+"choices": [
+"영국의 벵골 분할령에 반발하여 일어났다.",
+"인도 국민 회의의 주도로 전개되었다.",
+"영국 상품의 불매 운동을 중심으로 전개되었다.",
+"영국 동인도 회사의 인도 통치가 종식되는 계기가 되었다.",
+"영국이 인도의 자치권을 인정하는 결과를 가져왔다."
+]
+},
+{
+"id": "zbf-2026061200012517986",
+"typeId": "m-his1-2-u0m4s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "세포이의 항쟁이 일어나게 된 배경으로 옳은 것만을 <보기>에서 고른 것은?\n\n<보기>\nㄱ. 영국의 경제적 수탈에 대한 인도인의 불만이 커졌다.\nㄴ. 영국이 인도인의 종교적 관습을 무시하였다.\nㄷ. 영국 동인도 회사가 인도에 대한 지배 영역을 확대하였다.\nㄹ. 영국이 인도인의 민족 운동을 약화하기 위해 벵골 분할령을 발표하였다.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
+"twinGroup": "tw-m-his1-2-u0m4s0t1",
+"custom": true,
+"zb": "2026061200012517986",
+"answer": "⑤",
+"solution": "세포이의 항쟁은 영국의 경제적 수탈과 동인도 회사의 지배 확대에 대한 불만이 누적된 상황에서 인도인의 종교적 관습을 무시한 탄약통 문제가 직접적인 계기가 되어 일어났다. 따라서 ㄱ, ㄴ, ㄷ이 옳다. ㄹ의 벵골 분할령은 세포이의 항쟁 이후인 1905년에 발표되었다.",
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄹ",
+"ㄴ, ㄷ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ"
+]
+},
+{
+"id": "zbf-2026061200012519501",
+"typeId": "m-his1-2-u0m4s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음은 인도에 대한 영국의 지배 방식을 정리한 것이다. (가)에서 (나)로 변화하는 계기가 된 사건에 대한 설명으로 옳은 것은?\n\n(가) 영국 동인도 회사가 인도를 지배하였다.\n(나) 영국 정부가 인도를 직접 지배하였다.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
+"twinGroup": "tw-m-his1-2-u0m4s0t1",
+"custom": true,
+"zb": "2026061200012519501",
+"answer": "②",
+"solution": "영국 동인도 회사 중심의 통치에서 영국 정부의 직접 통치로 변화하는 계기가 된 사건은 세포이의 항쟁이다. 1857년 인도인 용병인 세포이의 반란이 인도 각지의 항쟁으로 확대되었다. ①과 ③은 이후의 인도 민족 운동과 관련되며, ④와 ⑤는 간디가 주도한 민족 운동과 관련된다.",
+"rv": 1,
+"choices": [
+"벵골 분할령에 대한 반발로 일어났다.",
+"인도인 용병의 반란이 각지의 항쟁으로 확대되었다.",
+"인도 국민 회의가 운동을 주도하였다.",
+"비폭력·불복종 운동을 중심으로 전개되었다.",
+"영국의 소금 전매 제도에 반대하여 일어났다."
+]
+},
+{
+"id": "zbf-2026061200012519512",
+"typeId": "m-his1-2-u0m4s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 사건을 일어난 순서대로 바르게 나열한 것은?\n\n(가) 영국이 벵골 분할령을 발표하였다.\n(나) 인도인 용병을 중심으로 세포이의 항쟁이 일어났다.\n(다) 인도 국민 회의가 결성되었다.\n(라) 영국 정부가 인도를 직접 통치하기 시작하였다.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
+"twinGroup": "tw-m-his1-2-u0m4s0t1",
+"custom": true,
+"zb": "2026061200012519512",
+"answer": "①",
+"solution": "1857년 세포이의 항쟁이 일어났다. 영국은 항쟁을 진압한 후 1858년 동인도 회사의 통치권을 없애고 인도를 직접 통치하였다. 이후 1885년 인도 국민 회의가 결성되었으며, 1905년 영국이 벵골 분할령을 발표하였다. 따라서 (나) → (라) → (다) → (가)가 옳다.",
+"rv": 1,
+"choices": [
+"(나) → (라) → (다) → (가)",
+"(나) → (다) → (라) → (가)",
+"(다) → (나) → (라) → (가)",
+"(다) → (가) → (나) → (라)",
+"(라) → (나) → (가) → (다)"
+]
+},
+{
+"id": "zbf-2026061200012519517",
+"typeId": "m-his1-2-u0m4s0t1",
+"kind": "객관식",
+"diff": 3,
+"body": "다음 역사적 사건에 대한 탐구 내용으로 옳은 것만을 <보기>에서 고른 것은?\n\n1857년 인도인 용병들이 영국 동인도 회사에 맞서 항쟁을 일으켰다. 항쟁에는 인도의 농민과 일부 제후 등도 참여하였다.\n\n<보기>\nㄱ. 종교적 관습을 무시한 탄약통 문제가 직접적인 계기가 되었다.\nㄴ. 영국의 진압으로 항쟁은 실패하였다.\nㄷ. 항쟁 이후 영국 동인도 회사의 인도 통치권이 강화되었다.\nㄹ. 영국의 식민 지배에 저항한 인도 민족 운동의 성격을 지녔다.",
+"source": "족보 기출 · 아시아의 국민 국가 건설 운동 › 인도의 국민 국가 건설 운동 › 영국의 인도 침략과 세포이의 항쟁",
+"twinGroup": "tw-m-his1-2-u0m4s0t1",
+"custom": true,
+"zb": "2026061200012519517",
+"answer": "④",
+"solution": "세포이의 항쟁은 인도인의 종교적 관습을 무시한 탄약통 문제를 계기로 발생하였다(ㄱ). 인도 각지로 확대되었으나 영국에 의해 진압되었다(ㄴ). 인도인 용병뿐 아니라 농민과 일부 제후 등이 참여하였다는 점에서 영국의 식민 지배에 저항하는 민족 운동의 성격을 지녔다(ㄹ). 항쟁 이후 동인도 회사의 통치권은 폐지되고 영국 정부의 직접 통치가 시작되었으므로 ㄷ은 옳지 않다.",
+"rv": 1,
+"choices": [
+"ㄱ, ㄴ",
+"ㄱ, ㄷ",
+"ㄴ, ㄷ",
+"ㄱ, ㄴ, ㄹ",
+"ㄴ, ㄷ, ㄹ"
+]
 }
 ]
