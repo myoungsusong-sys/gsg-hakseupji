@@ -117,8 +117,21 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const stickyKey = studentIdProp !== 'me' && !scoped && !params.get('student') ? `${studentIdProp}:mastery` : null
   const [stuck] = useState(() =>
     stickyKey && !paramType && !params.get('course') && !unitParam ? readSticky<{ course: string; typeId: string | null }>(stickyKey) : undefined)
+  // 🪜 학생 메뉴 «승강제»로 바로 들어오면(2026-11-27 윤자혜 선생님) 학생 학년·이번 학기 과정부터 연다 — 예전엔 늘 중1-1
+  //    과목 단추를 눌러도 그 과목의 학생 학년 과정으로 옮긴다
+  const gradeCourseFor = (sub: Subject) => {
+    const st = allStudents.find((x) => x.id === studentId)
+    const g = /^(초|중|고)(\d)/.exec(st?.grade ?? '')
+    if (!g) return undefined
+    const want = `${g[1]}${g[2]}-${currentSem()}`
+    // 그 학교 시험대비 과정이 있으면 그것부터(내포중 2회고사 등)
+    return (st?.school ? CURRICULA.find((c) => (c.subject ?? '수학') === sub && c.grade === want && c.label.includes(st.school!)) : undefined)
+      ?? CURRICULA.find((c) => (c.subject ?? '수학') === sub && c.grade === want && !c.book)
+      ?? CURRICULA.find((c) => (c.subject ?? '수학') === sub && c.grade === want)
+  }
+  const gradeCourse = gradeCourseFor(subject)?.id
   const [course, setCourse] = useState(
-    () => params.get('course') ?? unit?.course.id ?? (paramType && courseOfType(paramType)) ?? stuck?.course ?? 'm1-1',
+    () => params.get('course') ?? unit?.course.id ?? (paramType && courseOfType(paramType)) ?? stuck?.course ?? gradeCourse ?? 'm1-1',
   )
   const [q, setQ] = useState('')
   const [typeId, setTypeId] = useState<string | null>(paramType ?? stuck?.typeId ?? null)
@@ -167,7 +180,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   //    그래서 그 과목의 «지금 학교급» 첫 과정으로 함께 옮긴다(그 학교급에 없으면 그 과목 첫 과정).
   const pickSubject = (sub: Subject) => {
     const list = CURRICULA.filter((c) => (c.subject ?? '수학') === sub)
-    const first = list.find((c) => levelOf(c.grade) === level) ?? list[0]
+    const first = gradeCourseFor(sub) ?? list.find((c) => levelOf(c.grade) === level) ?? list[0]
     setSubject(sub)
     if (first && first.id !== course) { setCourse(first.id); setTypeId(null) }
   }
