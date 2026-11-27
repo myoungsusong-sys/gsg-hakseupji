@@ -3569,5 +3569,85 @@
   "title": "무리식의 값 구하기",
   "video": "type-lectures/16636.mp4",
   "sec": 429
+ },
+ "18719": {
+  "title": "이등변삼각형의 성질(1) 두 밑각의 크기는 같다",
+  "video": "type-lectures/18719.mp4",
+  "sec": 342
+ },
+ "18729": {
+  "title": "직각삼각형의 합동 조건에 대한 이해",
+  "video": "type-lectures/18729.mp4",
+  "sec": 600
+ },
+ "18730": {
+  "title": "직각삼각형의 합동 조건의 응용(1) RHA 합동",
+  "video": "type-lectures/18730.mp4",
+  "sec": 531
+ },
+ "18740": {
+  "title": "삼각형의 내심",
+  "video": "type-lectures/18740.mp4",
+  "sec": 459
+ },
+ "18814": {
+  "title": "삼각형의 중점을 연결한 선분 응용(2) 삼등분선",
+  "video": "type-lectures/18814.mp4",
+  "sec": 561
+ },
+ "18838": {
+  "title": "간단한 확률 구하기",
+  "video": "type-lectures/18838.mp4",
+  "sec": 582
+ },
+ "18839": {
+  "title": "확률 구하기(1) 일렬로 세울 때 확률 구하기",
+  "video": "type-lectures/18839.mp4",
+  "sec": 572
+ },
+ "18851": {
+  "title": "연속하여 꺼내는 경우의 확률(2) 꺼낸 것을 다시 넣지 않는 경우",
+  "video": "type-lectures/18851.mp4",
+  "sec": 460
+ },
+ "18852": {
+  "title": "연속하여 꺼내는 경우의 확률",
+  "video": "type-lectures/18852.mp4",
+  "sec": 349
+ },
+ "9822": {
+  "title": "이등변삼각형의 성질 알기",
+  "video": "type-lectures/9822.mp4",
+  "sec": 346
+ },
+ "exam2-eng-m22-ne-u2m0s1t0": {
+  "title": "Lesson 7 본문 독해 · O·X 확인",
+  "video": "type-lectures/exam2-eng-m22-ne-u2m0s1t0.mp4",
+  "sec": 745
+ },
+ "exam2-eng-m22-ne-u2m0s1t1": {
+  "title": "Lesson 7 본문 독해 · 기본개념 확인",
+  "video": "type-lectures/exam2-eng-m22-ne-u2m0s1t1.mp4",
+  "sec": 601
+ },
+ "exam2-eng-m22-ne-u2m0s1t2": {
+  "title": "Lesson 7 본문 독해 · 개념 문제",
+  "video": "type-lectures/exam2-eng-m22-ne-u2m0s1t2.mp4",
+  "sec": 619
+ },
+ "exam2-eng-m22-ne-u3m0s0t0": {
+  "title": "Lesson 8 어휘·문법 · O·X 확인",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s0t0.mp4",
+  "sec": 581
+ },
+ "exam2-eng-m22-ne-u3m0s0t1": {
+  "title": "Lesson 8 어휘·문법 · 기본개념 확인",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s0t1.mp4",
+  "sec": 720
+ },
+ "exam2-eng-m22-ne-u3m0s1t0": {
+  "title": "Lesson 8 본문 독해 · O·X 확인",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s1t0.mp4",
+  "sec": 801
  }
 }
