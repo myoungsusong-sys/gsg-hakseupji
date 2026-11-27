@@ -3649,5 +3649,135 @@
   "title": "Lesson 8 본문 독해 · O·X 확인",
   "video": "type-lectures/exam2-eng-m22-ne-u3m0s1t0.mp4",
   "sec": 801
+ },
+ "18720": {
+  "title": "이등변삼각형의 성질(2) 꼭지각의 이등분선은 밑변을 수직이등분한다",
+  "video": "type-lectures/18720.mp4",
+  "sec": 446
+ },
+ "18722": {
+  "title": "이등변삼각형의 성질의 활용(2) 이웃한 이등변삼각형",
+  "video": "type-lectures/18722.mp4",
+  "sec": 431
+ },
+ "18724": {
+  "title": "이등변삼각형의 성질의 활용(3) 각의 이등분선",
+  "video": "type-lectures/18724.mp4",
+  "sec": 368
+ },
+ "18726": {
+  "title": "이등변삼각형이 되는 조건",
+  "video": "type-lectures/18726.mp4",
+  "sec": 456
+ },
+ "18734": {
+  "title": "삼각형의 외심",
+  "video": "type-lectures/18734.mp4",
+  "sec": 472
+ },
+ "18735": {
+  "title": "둔각삼각형의 외심",
+  "video": "type-lectures/18735.mp4",
+  "sec": 286
+ },
+ "18736": {
+  "title": "직각삼각형의 외심(1) 변의 길이",
+  "video": "type-lectures/18736.mp4",
+  "sec": 379
+ },
+ "18741": {
+  "title": "삼각형의 내심의 성질 응용(1) ∠x+∠y+∠z=90°",
+  "video": "type-lectures/18741.mp4",
+  "sec": 455
+ },
+ "18742": {
+  "title": "삼각형의 내심의 성질 응용(2) ∠BIC=90°+1/2∠A",
+  "video": "type-lectures/18742.mp4",
+  "sec": 515
+ },
+ "18743": {
+  "title": "삼각형의 내접원의 반지름",
+  "video": "type-lectures/18743.mp4",
+  "sec": 485
+ },
+ "18744": {
+  "title": "삼각형의 내접원과 선분의 길이의 관계",
+  "video": "type-lectures/18744.mp4",
+  "sec": 581
+ },
+ "18770": {
+  "title": "피타고라스 정리의 활용(3) 직사각형 내부의 점",
+  "video": "type-lectures/18770.mp4",
+  "sec": 501
+ },
+ "18773": {
+  "title": "피타고라스 정리의 활용(5) 히포크라테스의 원의 넓이",
+  "video": "type-lectures/18773.mp4",
+  "sec": 474
+ },
+ "18774": {
+  "title": "피타고라스 나무 문제",
+  "video": "type-lectures/18774.mp4",
+  "sec": 775
+ },
+ "18788": {
+  "title": "피타고라스 정리의 설명(1) 유클리드의 방법",
+  "video": "type-lectures/18788.mp4",
+  "sec": 580
+ },
+ "18791": {
+  "title": "피타고라스 정리의 설명(4) 바스카라의 방법",
+  "video": "type-lectures/18791.mp4",
+  "sec": 580
+ },
+ "18837": {
+  "title": "닮음의 활용(2) 축도와 축척",
+  "video": "type-lectures/18837.mp4",
+  "sec": 416
+ },
+ "18842": {
+  "title": "확률 구하기(4) 부등식을 만족할 확률",
+  "video": "type-lectures/18842.mp4",
+  "sec": 443
+ },
+ "18844": {
+  "title": "어떤 사건이 일어나지 않을 확률",
+  "video": "type-lectures/18844.mp4",
+  "sec": 487
+ },
+ "18845": {
+  "title": "적어도의 조건을 포함하는 확률",
+  "video": "type-lectures/18845.mp4",
+  "sec": 461
+ },
+ "exam2-eng-m22-ne-u2m0s1t3": {
+  "title": "Lesson 7 본문 독해 · 심화 문제",
+  "video": "type-lectures/exam2-eng-m22-ne-u2m0s1t3.mp4",
+  "sec": 576
+ },
+ "exam2-eng-m22-ne-u3m0s0t2": {
+  "title": "Lesson 8 어휘·문법 · 개념 문제",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s0t2.mp4",
+  "sec": 641
+ },
+ "exam2-eng-m22-ne-u3m0s0t3": {
+  "title": "Lesson 8 어휘·문법 · 심화 문제",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s0t3.mp4",
+  "sec": 687
+ },
+ "exam2-eng-m22-ne-u3m0s1t1": {
+  "title": "Lesson 8 본문 독해 · 기본개념 확인",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s1t1.mp4",
+  "sec": 944
+ },
+ "exam2-eng-m22-ne-u3m0s1t2": {
+  "title": "Lesson 8 본문 독해 · 개념 문제",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s1t2.mp4",
+  "sec": 825
+ },
+ "exam2-eng-m22-ne-u3m0s1t3": {
+  "title": "Lesson 8 본문 독해 · 심화 문제",
+  "video": "type-lectures/exam2-eng-m22-ne-u3m0s1t3.mp4",
+  "sec": 636
  }
 }
