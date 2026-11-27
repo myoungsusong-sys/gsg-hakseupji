@@ -3839,5 +3839,60 @@
   "title": "확률의 덧셈과 곱셈",
   "video": "type-lectures/18849.mp4",
   "sec": 611
+ },
+ "18721": {
+  "title": "이등변삼각형의 성질의 활용(1) 각의 크기",
+  "video": "type-lectures/18721.mp4",
+  "sec": 445
+ },
+ "18725": {
+  "title": "이등변삼각형의 성질의 활용(4) 다각형에 있는 이등변삼각형",
+  "video": "type-lectures/18725.mp4",
+  "sec": 539
+ },
+ "18728": {
+  "title": "폭이 일정한 종이를 접었을 때",
+  "video": "type-lectures/18728.mp4",
+  "sec": 284
+ },
+ "18732": {
+  "title": "각의 이등분선의 성질",
+  "video": "type-lectures/18732.mp4",
+  "sec": 402
+ },
+ "18737": {
+  "title": "직각삼각형의 외심(2) 각의 크기",
+  "video": "type-lectures/18737.mp4",
+  "sec": 256
+ },
+ "18745": {
+  "title": "삼각형의 내심과 평행선",
+  "video": "type-lectures/18745.mp4",
+  "sec": 398
+ },
+ "18747": {
+  "title": "삼각형의 외심과 내심이 모두 주어질 때",
+  "video": "type-lectures/18747.mp4",
+  "sec": 368
+ },
+ "18840": {
+  "title": "확률 구하기(2) 주어진 확률을 만족하는 미정계수 구하기",
+  "video": "type-lectures/18840.mp4",
+  "sec": 425
+ },
+ "18841": {
+  "title": "확률 구하기(3) 방정식을 만족할 확률",
+  "video": "type-lectures/18841.mp4",
+  "sec": 369
+ },
+ "18843": {
+  "title": "확률의 기본 성질",
+  "video": "type-lectures/18843.mp4",
+  "sec": 369
+ },
+ "18848": {
+  "title": "두 사건 A, B 중 적어도 하나가 일어날 확률",
+  "video": "type-lectures/18848.mp4",
+  "sec": 375
  }
 }
