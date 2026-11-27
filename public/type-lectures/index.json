@@ -3894,5 +3894,30 @@
   "title": "두 사건 A, B 중 적어도 하나가 일어날 확률",
   "video": "type-lectures/18848.mp4",
   "sec": 375
+ },
+ "18850": {
+  "title": "연속하여 꺼내는 경우의 확률(1) 꺼낸 것을 다시 넣는 경우",
+  "video": "type-lectures/18850.mp4",
+  "sec": 258
+ },
+ "18853": {
+  "title": "게임에서 이길 확률",
+  "video": "type-lectures/18853.mp4",
+  "sec": 393
+ },
+ "18854": {
+  "title": "문제를 맞힐 확률",
+  "video": "type-lectures/18854.mp4",
+  "sec": 322
+ },
+ "18855": {
+  "title": "명중률",
+  "video": "type-lectures/18855.mp4",
+  "sec": 413
+ },
+ "18856": {
+  "title": "가위바위보에서의 확률",
+  "video": "type-lectures/18856.mp4",
+  "sec": 457
  }
 }
