@@ -531,7 +531,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
 
   return (
     <div className="mx-auto max-w-3xl">
-      <h1 className="text-lg font-bold text-ink">🪜 유형 마스터{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
+      <h1 className="text-lg font-bold text-ink">🪜 승강제 <span className="text-sm font-semibold text-ink2">(유형 마스터)</span>{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
       <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
       {/* 📗 걸러지고 있다는 걸 알려 준다 — 안 그러면 "왜 문제가 몇 개 없지?" 가 된다 */}
       {engBook && engCourse && (
