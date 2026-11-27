@@ -8,6 +8,7 @@ import StudentWorkbooks from './StudentWorkbooks'
 import StudentChallenge from './StudentChallenge'
 import StudentLectures from './StudentLectures'
 import { BrandLogo } from '../../components/BrandMark'
+import MasteryPage from '../MasteryPage'
 
 // ── 선생님용 학생앱 미리보기 오버레이 (관리 > 학생 관리 > [학생앱으로 이동]) ──
 // 매쓰플랫 동일 동선 — 단, 우리는 **보기 전용**: 제출·생성 버튼은 PreviewCtx로 비활성,
@@ -19,6 +20,7 @@ const MENUS: { key: StudentMenu; label: string }[] = [
   { key: 'challenge', label: '챌린지' },
   { key: 'workbooks', label: '교재' },
   { key: 'worksheets', label: '학습지' },
+  { key: 'mastery', label: '승강제' },
   { key: 'lectures', label: '강의' },
 ]
 
@@ -68,6 +70,8 @@ export default function StudentAppPreview({ s, onClose }: { s: Student; onClose:
               {menu === 'challenge' && <StudentChallenge />}
               {menu === 'workbooks' && <StudentWorkbooks />}
               {menu === 'worksheets' && <StudentWorksheets />}
+              {/* 🪜 승강제(2026-11-27 윤자혜 선생님) — 그 학생의 사다리를 그대로 연다(선생님이 풀면 학생 기록에 남는다) */}
+              {menu === 'mastery' && <MasteryPage studentId={s.id} />}
               {menu === 'lectures' && <StudentLectures />}
             </PreviewCtx.Provider>
           </StudentSelfCtx.Provider>

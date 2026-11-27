@@ -14,7 +14,7 @@ export function useStudentSelf(): Student {
 }
 
 // 선생님 미리보기 컨텍스트 — on=true면 보기 전용(제출·생성 버튼 비활성), go()로 미리보기 탭 전환
-export type StudentMenu = 'home' | 'challenge' | 'workbooks' | 'worksheets' | 'lectures'
+export type StudentMenu = 'home' | 'challenge' | 'workbooks' | 'worksheets' | 'mastery' | 'lectures'
 export interface PreviewNav { on: boolean; go: (menu: StudentMenu) => void }
 export const PreviewCtx = createContext<PreviewNav>({ on: false, go: () => {} })
 export function usePreview(): PreviewNav { return useContext(PreviewCtx) }
