@@ -3,7 +3,8 @@ import type { Problem } from '../types'
 import { DIFF_LABEL } from '../types'
 import ProblemContent from './ProblemContent'
 import MathText from './MathText'
-import { newMastery, pickForFloor, conceptBlanks, type ConceptBlank, type Floor, type MasteryState } from '../lib/mastery'
+import { newMastery, pickForFloor, conceptBlanks, topFloorOf, type ConceptBlank, type Floor, type MasteryState } from '../lib/mastery'
+import MasteryPaperGrade, { type PaperItem } from './MasteryPaperGrade'
 
 /**
  * 🖨 유형 마스터 — **종이판** (2026-09-05 명수쌤 질문: "이 시스템을 출력물로 만들기는 어렵지?")
@@ -25,9 +26,12 @@ const FLOORS: { f: Floor; tag: string; name: string }[] = [
   { f: 4, tag: 'E', name: '최상' },
 ]
 
-export default function MasteryPrint({ typeId, typeName, base, pool, onClose, initialKind = '승강제' }: {
+export default function MasteryPrint({ typeId, typeName, base, pool, onClose, initialKind = '승강제', current, onPaperApply }: {
   typeId: string; typeName: string; base: Problem; pool: Problem[]; onClose?: () => void
   initialKind?: PrintKind
+  /** ✏️ 종이 답 입력·채점(2026-11-27) — 지금 이 학생의 승강제 상태와, 채점 결과를 저장하는 곳 */
+  current?: MasteryState
+  onPaperApply?: (st: MasteryState, wrong: PaperItem[]) => void
 }) {
   const [kind, setKind] = useState<PrintKind>(initialKind)
   const blanks = useMemo(() => conceptBlanks(typeId), [typeId])
@@ -50,6 +54,13 @@ export default function MasteryPrint({ typeId, typeName, base, pool, onClose, in
   const all = useMemo(() => [...pool].filter((p) => p.typeId === typeId).sort((a, b) => a.diff - b.diff), [pool, typeId])
 
   const label = (tag: string, i: number) => `${tag}${i + 1}`
+  // ✏️ 종이 답 입력용 번호표 — 승강제 종이판은 B1·B2…(층 그대로), 문제지는 1·2…(난이도를 층에 맞춤)
+  const top = useMemo(() => topFloorOf(typeId, pool), [typeId, pool])
+  const paperItems = useMemo<PaperItem[]>(() => {
+    if (kind === '승강제') return sheet.flatMap(({ f, tag, items }) => items.map((p, i) => ({ label: label(tag, i), p, floor: f })))
+    const diffs = [...new Set(all.map((p) => p.diff))].sort((a, b) => a - b)
+    return all.map((p, i) => ({ label: String(i + 1), p, floor: Math.min(top, Math.max(1, diffs.indexOf(p.diff) + 1)) as Floor }))
+  }, [kind, sheet, all, top])   // eslint-disable-line react-hooks/exhaustive-deps
   const prevTag = (f: Floor) => (f === 1 ? 'A' : `${FLOORS[f - 2].tag}1`)
   const nextTag = (f: Floor) => (f === 4 ? '끝' : `${FLOORS[f].tag}1`)
   const nItems = sheet.reduce((n, s) => n + s.items.length, 0)
@@ -177,6 +188,10 @@ export default function MasteryPrint({ typeId, typeName, base, pool, onClose, in
             )))}
           </section>
         </>
+      )}
+
+      {current && onPaperApply && paperItems.length > 0 && (
+        <MasteryPaperGrade key={kind} items={paperItems} top={top} current={current} onApply={onPaperApply} />
       )}
     </div>
   )

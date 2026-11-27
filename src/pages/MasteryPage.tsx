@@ -89,7 +89,7 @@ function courseOfType(typeId: string): string | null {
 
 export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
   const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems, studentAppConfig } = useStore()
-  const [params] = useSearchParams()
+  const [params, setParams] = useSearchParams()
   const nav = useNavigate()
   // 📕 채점 단위 정복 (`?grading=<채점id>[,<채점id>]`) — 그 채점의 **오답 유형만** 줄 세워 바로 사다리로.
   //    들어오면 첫 유형이 자동으로 열리고, 하나를 정복하면 다음 유형으로 넘어간다 (2026-09-19 명수쌤 지시).
@@ -374,10 +374,44 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const localSt = localRaw && Array.isArray(localRaw.servedIds) && Array.isArray(localRaw.log) ? localRaw : undefined
   const resumeSt = localSt && (!saved || lastAt(localSt) >= lastAt(saved)) ? localSt : saved
 
+  // 👩‍🏫 선생님 화면 — 어느 학생 기록으로 볼지·종이 답을 넣을지 고른다(2026-11-27 윤자혜 선생님 «종이 답 입력·채점»)
+  const teacherPick = studentIdProp === 'me' ? (
+    <label className="no-print mt-2 flex flex-wrap items-center gap-2 text-sm">
+      <span className="font-bold text-ink">학생</span>
+      <select value={params.get('student') ?? ''} className="rounded-lg border border-line px-2 py-1.5"
+        onChange={(e) => { const n = new URLSearchParams(params); if (e.target.value) n.set('student', e.target.value); else n.delete('student'); setParams(n, { replace: true }) }}>
+        <option value="">— 학생 고르기 —</option>
+        {allStudents.filter((x) => x.active).sort((a, b) => (a.school ?? '').localeCompare(b.school ?? '', 'ko') || (a.grade ?? '').localeCompare(b.grade ?? '', 'ko') || a.name.localeCompare(b.name, 'ko'))
+          .map((x) => <option key={x.id} value={x.id}>{x.name}{x.grade ? ` · ${x.grade}` : ''}{x.school ? ` · ${x.school}` : ''}</option>)}
+      </select>
+      {!params.get('student') && <span className="text-xs text-ink2">학생을 고르면 그 학생 승강제 기록이 열리고, 종이로 푼 답도 그 학생 이름으로 채점됩니다.</span>}
+    </label>
+  ) : null
+
   if (typeId && base && row) {
     if (mode === '인쇄') {
-      return <MasteryPrint typeId={typeId} typeName={row.name} base={base} pool={pool} initialKind={printKind}
-        onClose={() => setMode('풀기')} />
+      const paperOn = studentId !== 'me'
+      return <div className="mx-auto max-w-[820px]">{teacherPick && <div className="px-6 pt-4">{teacherPick}</div>}<MasteryPrint typeId={typeId} typeName={row.name} base={base} pool={pool} initialKind={printKind}
+        onClose={() => setMode('풀기')}
+        current={paperOn ? (startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 0)) : undefined}
+        onPaperApply={(st, wrong) => {
+          // ✏️ 종이 답 채점 결과 — 화면 풀이와 똑같이 저장·오답 알림·실시간 현황에 남긴다(2026-11-27 윤자혜 선생님)
+          const me = allStudents.find((x) => x.id === studentId)
+          for (const it of wrong) {
+            const p = it.p
+            void pushWrong({ id: studentId, name: me?.name, mgmtId: me?.mgmtId }, {
+              at: new Date().toISOString(), course, typeId, typeName: row.name, floor: it.floor, problemId: p.id,
+              imageUrl: p.imageUrl, body: p.body ? String(p.body).slice(0, 800) : undefined,
+              choices: Array.isArray(p.choices) ? (p.choices as unknown[]).map(String).slice(0, 5) : undefined,
+              answer: p.answer ? String(p.answer).slice(0, 200) : undefined, needsTeacher: !!st.needsTeacher,
+            })
+          }
+          if (isSelf) void noteMastery(progStu, progNow(st, row.name))
+          lastState.current = st; saveMastery(studentId, typeId, st)
+          if (localKey) writeSticky(localKey, st)
+          seenLog.current.set(typeId, st.log.length)
+          if (startOverride[typeId]) setStartOverride((m) => { const n = { ...m }; delete n[typeId]; return n })
+        }} /></div>
     }
     return (
       <MasteryRunner
@@ -532,6 +566,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   return (
     <div className="mx-auto max-w-3xl">
       <h1 className="text-lg font-bold text-ink">🪜 승강제 <span className="text-sm font-semibold text-ink2">(유형 마스터)</span>{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
+      {teacherPick}
       <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
       {/* 📗 걸러지고 있다는 걸 알려 준다 — 안 그러면 "왜 문제가 몇 개 없지?" 가 된다 */}
       {engBook && engCourse && (
