@@ -693,7 +693,7 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
       wrongTypes.length ? '' : null,
       wrongTypes.length ? '🔁 오늘 약했던 유형' : null,
       wrongTypes.length ? `· ${wrongTypes.map(t => t.name).join(', ')}` : null,
-      wrongTypes.length ? (drills.length ? '→ 오답 드릴 학습지로 복습 예정' : '→ 다음 시간 복습 예정') : null,
+      wrongTypes.length ? '→ 오답 유형 문제를 새로 만들어 다시 풀게 할 예정' : null,
       effComment ? '' : null,
       effComment ? '📝 선생님 한마디' : null,
       effComment || null,
@@ -1029,7 +1029,7 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
           )}
           {drills.length > 0 && (
             <div className="mt-2 text-sm text-ink2">
-              → 오답 드릴 학습지 <b>{drills.length}건</b>으로 복습 예정
+              → 오답 유형 문제를 새로 만들어 다시 풀게 할 예정 (오답 학습지 <b>{drills.length}건</b>)
               <ul className="mt-1 list-inside list-disc text-xs">
                 {drills.map(d => <li key={d.id}>{d.title}</li>)}
               </ul>
@@ -1342,7 +1342,7 @@ const C = { blue: '#2b7de9', blueDark: '#1b5fc2', blueSoft: '#eef5fe', ink: '#1f
   line: '#e5e7eb', amberSoft: '#fff7e6', amber: '#b45309', red: '#dc2626', redSoft: '#fdecec', green: '#15803d' }
 
 function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, totalSolved, totalCorrect, totalUnknown, overall,
-  weekAvg, weekDelta, streak, wrongTypes, ladders, pendingToday, covered, hasDrill, comment, nextPlan, nextSession, checkIn, checkOut,
+  weekAvg, weekDelta, streak, wrongTypes, ladders, pendingToday, covered, comment, nextPlan, nextSession, checkIn, checkOut,
   todayPlanText, nextPlanText }: {
   student: Student; brand: string; subject: Subject; dateKr: string
   bookRows: { name: string; range: string; total: number; correct: number; unknown: number; score: number }[]
@@ -1507,7 +1507,7 @@ function ReportCard({ student, brand, subject, dateKr, bookRows, sheetRows, tota
               {wrongTypes.length > 4 && <span style={{ fontSize: 11.5, color: C.ink2, alignSelf: 'center' }}>외 {wrongTypes.length - 4}개</span>}
             </div>
             <div style={{ fontSize: 11.5, color: C.ink2, marginTop: 5 }}>
-              {hasDrill ? '→ 오답 드릴 학습지로 복습 예정입니다.' : '→ 다음 시간에 복습할 예정입니다.'}
+              → 오답 유형 문제를 새로 만들어 다시 풀게 할 예정입니다.
             </div>
           </div>
         )}
