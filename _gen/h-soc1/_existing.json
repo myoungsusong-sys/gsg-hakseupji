@@ -20,7 +20,7 @@
  },
  {
   "id": "seed-SOC-VIEW-23a2b3",
-  "typeId": "h-soc1-u0m0s0t2",
+  "typeId": "h-soc1-u0m0s0t4",
   "twinGroup": "tw-SOC-VIEW",
   "kind": "객관식",
   "diff": 1,
@@ -172,7 +172,7 @@
  },
  {
   "id": "seed-SOC-VIEW-7d3eaa",
-  "typeId": "h-soc1-u0m0s0t1",
+  "typeId": "h-soc1-u0m0s0t4",
   "twinGroup": "tw-SOC-VIEW",
   "kind": "객관식",
   "diff": 1,
@@ -229,7 +229,7 @@
  },
  {
   "id": "seed-SOC-VIEW-2ed690",
-  "typeId": "h-soc1-u0m0s0t1",
+  "typeId": "h-soc1-u0m0s0t4",
   "twinGroup": "tw-SOC-VIEW",
   "kind": "객관식",
   "diff": 1,
@@ -419,7 +419,7 @@
  },
  {
   "id": "seed-SOC-VIEW-5f9e89",
-  "typeId": "h-soc1-u0m0s0t0",
+  "typeId": "h-soc1-u0m0s0t4",
   "twinGroup": "tw-SOC-VIEW",
   "kind": "객관식",
   "diff": 1,
@@ -514,7 +514,7 @@
  },
  {
   "id": "seed-SOC-VIEW-71a5eb",
-  "typeId": "h-soc1-u0m0s0t1",
+  "typeId": "h-soc1-u0m0s0t4",
   "twinGroup": "tw-SOC-VIEW",
   "kind": "객관식",
   "diff": 1,
@@ -704,7 +704,7 @@
  },
  {
   "id": "seed-SOC-VIEW-08b557",
-  "typeId": "h-soc1-u0m0s0t3",
+  "typeId": "h-soc1-u0m0s0t4",
   "twinGroup": "tw-SOC-VIEW",
   "kind": "객관식",
   "diff": 1,
@@ -761,7 +761,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-a0b526",
-  "typeId": "h-soc1-u1m1s0t0",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -818,7 +818,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-78460d",
-  "typeId": "h-soc1-u1m1s0t1",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -989,7 +989,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-dea83a",
-  "typeId": "h-soc1-u1m1s0t0",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1046,7 +1046,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-ec89ef",
-  "typeId": "h-soc1-u1m1s0t1",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1122,7 +1122,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-d3969a",
-  "typeId": "h-soc1-u1m1s0t3",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1160,7 +1160,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-3a6cd4",
-  "typeId": "h-soc1-u1m1s0t3",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1236,7 +1236,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-be514d",
-  "typeId": "h-soc1-u1m1s0t0",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1274,7 +1274,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-e3c8ad",
-  "typeId": "h-soc1-u1m1s0t2",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1331,7 +1331,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-eba2e1",
-  "typeId": "h-soc1-u1m1s0t3",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1388,7 +1388,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-af06cc",
-  "typeId": "h-soc1-u1m1s0t1",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1445,7 +1445,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-40e6bd",
-  "typeId": "h-soc1-u1m1s0t0",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -1464,7 +1464,7 @@
  },
  {
   "id": "seed-SOC-HAPPY-be7143",
-  "typeId": "h-soc1-u1m1s0t3",
+  "typeId": "h-soc1-u1m1s0t4",
   "twinGroup": "tw-SOC-HAPPY",
   "kind": "객관식",
   "diff": 1,
@@ -2281,7 +2281,7 @@
  },
  {
   "id": "seed-SOC-NATURE-2bc479",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2300,7 +2300,7 @@
  },
  {
   "id": "seed-SOC-NATURE-914cce",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2319,7 +2319,7 @@
  },
  {
   "id": "seed-SOC-NATURE-9d3474",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2357,7 +2357,7 @@
  },
  {
   "id": "seed-SOC-NATURE-12c819",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2395,7 +2395,7 @@
  },
  {
   "id": "seed-SOC-NATURE-7192c9",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2414,7 +2414,7 @@
  },
  {
   "id": "seed-SOC-NATURE-3d01e0",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2471,7 +2471,7 @@
  },
  {
   "id": "seed-SOC-NATURE-dc87f3",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2490,7 +2490,7 @@
  },
  {
   "id": "seed-SOC-NATURE-17b25c",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2509,7 +2509,7 @@
  },
  {
   "id": "seed-SOC-NATURE-5dffe7",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2528,7 +2528,7 @@
  },
  {
   "id": "seed-SOC-NATURE-24b15f",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2566,7 +2566,7 @@
  },
  {
   "id": "seed-SOC-NATURE-70acb5",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2585,7 +2585,7 @@
  },
  {
   "id": "seed-SOC-NATURE-12f429",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2604,7 +2604,7 @@
  },
  {
   "id": "seed-SOC-NATURE-44f039",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2642,7 +2642,7 @@
  },
  {
   "id": "seed-SOC-NATURE-1fc669",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2680,7 +2680,7 @@
  },
  {
   "id": "seed-SOC-NATURE-4bce08",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2699,7 +2699,7 @@
  },
  {
   "id": "seed-SOC-NATURE-a42e59",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2756,7 +2756,7 @@
  },
  {
   "id": "seed-SOC-NATURE-2bde67",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2775,7 +2775,7 @@
  },
  {
   "id": "seed-SOC-NATURE-598a80",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2794,7 +2794,7 @@
  },
  {
   "id": "seed-SOC-NATURE-bd6a71",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2832,7 +2832,7 @@
  },
  {
   "id": "seed-SOC-NATURE-848648",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2870,7 +2870,7 @@
  },
  {
   "id": "seed-SOC-NATURE-40d1b8",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -2889,7 +2889,7 @@
  },
  {
   "id": "seed-SOC-NATURE-717da0",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -2908,7 +2908,7 @@
  },
  {
   "id": "seed-SOC-NATURE-bf1a3e",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2946,7 +2946,7 @@
  },
  {
   "id": "seed-SOC-NATURE-409f7e",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2965,7 +2965,7 @@
  },
  {
   "id": "seed-SOC-NATURE-77f861",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -2984,7 +2984,7 @@
  },
  {
   "id": "seed-SOC-NATURE-f07944",
-  "typeId": "h-soc1-u2m1s0t0",
+  "typeId": "h-soc1-u2m1s0t1",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 4,
@@ -3003,7 +3003,7 @@
  },
  {
   "id": "seed-SOC-NATURE-271afa",
-  "typeId": "h-soc1-u2m1s0t1",
+  "typeId": "h-soc1-u2m1s0t2",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 1,
@@ -3022,7 +3022,7 @@
  },
  {
   "id": "seed-SOC-NATURE-7bf4ff",
-  "typeId": "h-soc1-u2m1s0t2",
+  "typeId": "h-soc1-u2m1s0t0",
   "twinGroup": "tw-SOC-NATURE",
   "kind": "객관식",
   "diff": 2,
@@ -3953,7 +3953,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-aefda2",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4124,7 +4124,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-edf6c6",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4162,7 +4162,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-82516e",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4181,7 +4181,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-475bdb",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 2,
@@ -4200,7 +4200,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-bec582",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4276,7 +4276,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-51ee5f",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4314,7 +4314,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-4e81dc",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4371,7 +4371,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-12df24",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4390,7 +4390,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-20e1cd",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4523,7 +4523,7 @@
  },
  {
   "id": "seed-SOC-CULTCHG-fbebfd",
-  "typeId": "h-soc1-u3m1s0t1",
+  "typeId": "h-soc1-u3m1s0t0",
   "twinGroup": "tw-SOC-CULTCHG",
   "kind": "객관식",
   "diff": 4,
@@ -4675,7 +4675,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-c3f496",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -4751,7 +4751,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-1517a7",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t0",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -4808,7 +4808,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-b128a0",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -4884,7 +4884,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-bb929e",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -4998,7 +4998,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-02616c",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t0",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5036,7 +5036,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-54b8bd",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5055,7 +5055,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-01b4f8",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5131,7 +5131,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-095af0",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5150,7 +5150,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-1e4cb0",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t0",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5169,7 +5169,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-882be0",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5188,7 +5188,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-0296d3",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t2",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5245,7 +5245,7 @@
  },
  {
   "id": "seed-SOC-CULTATT-1ad713",
-  "typeId": "h-soc1-u3m2s0t1",
+  "typeId": "h-soc1-u3m2s0t0",
   "twinGroup": "tw-SOC-CULTATT",
   "kind": "객관식",
   "diff": 4,
@@ -5359,7 +5359,7 @@
  },
  {
   "id": "seed-SOC-MULTI-515be0",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -5378,7 +5378,7 @@
  },
  {
   "id": "seed-SOC-MULTI-88de8a",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5416,7 +5416,7 @@
  },
  {
   "id": "seed-SOC-MULTI-534bad",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5435,7 +5435,7 @@
  },
  {
   "id": "seed-SOC-MULTI-54947b",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5473,7 +5473,7 @@
  },
  {
   "id": "seed-SOC-MULTI-60887b",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5530,7 +5530,7 @@
  },
  {
   "id": "seed-SOC-MULTI-3200ee",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -5549,7 +5549,7 @@
  },
  {
   "id": "seed-SOC-MULTI-134967",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5587,7 +5587,7 @@
  },
  {
   "id": "seed-SOC-MULTI-54cf07",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -5606,7 +5606,7 @@
  },
  {
   "id": "seed-SOC-MULTI-85a0a9",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 1,
@@ -5644,7 +5644,7 @@
  },
  {
   "id": "seed-SOC-MULTI-0a729a",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 1,
@@ -5663,7 +5663,7 @@
  },
  {
   "id": "seed-SOC-MULTI-fedeb6",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 1,
@@ -5682,7 +5682,7 @@
  },
  {
   "id": "seed-SOC-MULTI-2857d4",
-  "typeId": "h-soc1-u3m3s0t0",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5701,7 +5701,7 @@
  },
  {
   "id": "seed-SOC-MULTI-a0df6c",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 1,
@@ -5720,7 +5720,7 @@
  },
  {
   "id": "seed-SOC-MULTI-fd3943",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -5758,7 +5758,7 @@
  },
  {
   "id": "seed-SOC-MULTI-143111",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5777,7 +5777,7 @@
  },
  {
   "id": "seed-SOC-MULTI-b54f20",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 1,
@@ -5796,7 +5796,7 @@
  },
  {
   "id": "seed-SOC-MULTI-574350",
-  "typeId": "h-soc1-u3m3s0t0",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -5815,7 +5815,7 @@
  },
  {
   "id": "seed-SOC-MULTI-d4d7b9",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5834,7 +5834,7 @@
  },
  {
   "id": "seed-SOC-MULTI-fff2c2",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5872,7 +5872,7 @@
  },
  {
   "id": "seed-SOC-MULTI-16f953",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -5891,7 +5891,7 @@
  },
  {
   "id": "seed-SOC-MULTI-a7599e",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5910,7 +5910,7 @@
  },
  {
   "id": "seed-SOC-MULTI-5fc134",
-  "typeId": "h-soc1-u3m3s0t0",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5929,7 +5929,7 @@
  },
  {
   "id": "seed-SOC-MULTI-97dbb3",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -5986,7 +5986,7 @@
  },
  {
   "id": "seed-SOC-MULTI-1e04fe",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -6005,7 +6005,7 @@
  },
  {
   "id": "seed-SOC-MULTI-9bb4a0",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 2,
@@ -6024,7 +6024,7 @@
  },
  {
   "id": "seed-SOC-MULTI-e29c72",
-  "typeId": "h-soc1-u3m3s0t0",
+  "typeId": "h-soc1-u3m3s0t1",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -6043,7 +6043,7 @@
  },
  {
   "id": "seed-SOC-MULTI-ecae10",
-  "typeId": "h-soc1-u3m3s0t2",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 4,
@@ -6062,7 +6062,7 @@
  },
  {
   "id": "seed-SOC-MULTI-362928",
-  "typeId": "h-soc1-u3m3s0t1",
+  "typeId": "h-soc1-u3m3s0t0",
   "twinGroup": "tw-SOC-MULTI",
   "kind": "객관식",
   "diff": 1,
@@ -6100,7 +6100,7 @@
  },
  {
   "id": "seed-SOC-URBAN-499839",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6119,7 +6119,7 @@
  },
  {
   "id": "seed-SOC-URBAN-433290",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6138,7 +6138,7 @@
  },
  {
   "id": "seed-SOC-URBAN-56742e",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6176,7 +6176,7 @@
  },
  {
   "id": "seed-SOC-URBAN-c60dfd",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6195,7 +6195,7 @@
  },
  {
   "id": "seed-SOC-URBAN-4b135f",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6214,7 +6214,7 @@
  },
  {
   "id": "seed-SOC-URBAN-f77144",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6252,7 +6252,7 @@
  },
  {
   "id": "seed-SOC-URBAN-ec192b",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6271,7 +6271,7 @@
  },
  {
   "id": "seed-SOC-URBAN-78bf10",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6290,7 +6290,7 @@
  },
  {
   "id": "seed-SOC-URBAN-514981",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6328,7 +6328,7 @@
  },
  {
   "id": "seed-SOC-URBAN-5bde55",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6347,7 +6347,7 @@
  },
  {
   "id": "seed-SOC-URBAN-1d602a",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6366,7 +6366,7 @@
  },
  {
   "id": "seed-SOC-URBAN-00e9a5",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6404,7 +6404,7 @@
  },
  {
   "id": "seed-SOC-URBAN-17059d",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6423,7 +6423,7 @@
  },
  {
   "id": "seed-SOC-URBAN-f3747a",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6442,7 +6442,7 @@
  },
  {
   "id": "seed-SOC-URBAN-de46c0",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6480,7 +6480,7 @@
  },
  {
   "id": "seed-SOC-URBAN-4a0d41",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6499,7 +6499,7 @@
  },
  {
   "id": "seed-SOC-URBAN-aa9eb4",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6518,7 +6518,7 @@
  },
  {
   "id": "seed-SOC-URBAN-15e5d8",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6556,7 +6556,7 @@
  },
  {
   "id": "seed-SOC-URBAN-771a5f",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6575,7 +6575,7 @@
  },
  {
   "id": "seed-SOC-URBAN-04e04a",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6594,7 +6594,7 @@
  },
  {
   "id": "seed-SOC-URBAN-90ebdc",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6632,7 +6632,7 @@
  },
  {
   "id": "seed-SOC-URBAN-c3480d",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6651,7 +6651,7 @@
  },
  {
   "id": "seed-SOC-URBAN-250e5a",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6670,7 +6670,7 @@
  },
  {
   "id": "seed-SOC-URBAN-2e6a78",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 4,
@@ -6708,7 +6708,7 @@
  },
  {
   "id": "seed-SOC-URBAN-1d8d3c",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6727,7 +6727,7 @@
  },
  {
   "id": "seed-SOC-URBAN-1f09fb",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6746,7 +6746,7 @@
  },
  {
   "id": "seed-SOC-URBAN-222c2d",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6784,7 +6784,7 @@
  },
  {
   "id": "seed-SOC-URBAN-32dae7",
-  "typeId": "h-soc1-u4m0s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 1,
@@ -6803,7 +6803,7 @@
  },
  {
   "id": "seed-SOC-URBAN-667bdc",
-  "typeId": "h-soc1-u4m1s0t0",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,
@@ -6822,7 +6822,7 @@
  },
  {
   "id": "seed-SOC-URBAN-759c86",
-  "typeId": "h-soc1-u4m1s0t1",
+  "typeId": "h-soc1-u4m0s0t0",
   "twinGroup": "tw-SOC-URBAN",
   "kind": "객관식",
   "diff": 2,

@@ -1,7 +1,7 @@
 [
  {
   "id": "seed-MJ-EXT-d96bc2",
-  "typeId": "20758",
+  "typeId": "20761",
   "twinGroup": "tw-MJ-EXT",
   "kind": "주관식",
   "diff": 3,
@@ -153,7 +153,7 @@
  },
  {
   "id": "seed-MJ-EXT-6a751b",
-  "typeId": "20761",
+  "typeId": "20758",
   "twinGroup": "tw-MJ-EXT",
   "kind": "객관식",
   "diff": 3,
@@ -186,7 +186,7 @@
  },
  {
   "id": "seed-MJ-INF-cdd343",
-  "typeId": "20765",
+  "typeId": "20766",
   "twinGroup": "tw-MJ-INF",
   "kind": "객관식",
   "diff": 3,
@@ -219,7 +219,7 @@
  },
  {
   "id": "seed-MJ-INF-9308f5",
-  "typeId": "20765",
+  "typeId": "20766",
   "twinGroup": "tw-MJ-INF",
   "kind": "객관식",
   "diff": 3,
@@ -259,7 +259,7 @@
  },
  {
   "id": "seed-MJ-INF-3875a2",
-  "typeId": "20765",
+  "typeId": "20766",
   "twinGroup": "tw-MJ-INF",
   "kind": "객관식",
   "diff": 3,
@@ -298,7 +298,7 @@
  },
  {
   "id": "seed-MJ-GEO-54705d",
-  "typeId": "20665",
+  "typeId": "20664",
   "twinGroup": "tw-MJ-GEO",
   "kind": "객관식",
   "diff": 3,
@@ -336,7 +336,7 @@
  },
  {
   "id": "seed-MJ-GEO-4f12d3",
-  "typeId": "20665",
+  "typeId": "20664",
   "twinGroup": "tw-MJ-GEO",
   "kind": "객관식",
   "diff": 3,
@@ -374,7 +374,7 @@
  },
  {
   "id": "seed-MJ-GEO-d3320e",
-  "typeId": "20665",
+  "typeId": "20664",
   "twinGroup": "tw-MJ-GEO",
   "kind": "객관식",
   "diff": 3,
@@ -412,7 +412,7 @@
  },
  {
   "id": "seed-MJ-GEO-866eee",
-  "typeId": "20665",
+  "typeId": "20664",
   "twinGroup": "tw-MJ-GEO",
   "kind": "객관식",
   "diff": 3,
@@ -450,7 +450,7 @@
  },
  {
   "id": "seed-MJ-GEO-74269f",
-  "typeId": "20665",
+  "typeId": "20664",
   "twinGroup": "tw-MJ-GEO",
   "kind": "객관식",
   "diff": 3,
@@ -507,7 +507,7 @@
  },
  {
   "id": "seed-HC2-SEQL-ff036c",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -526,7 +526,7 @@
  },
  {
   "id": "seed-HC2-SEQL-62e80a",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "주관식",
   "diff": 1,
@@ -550,7 +550,7 @@
  },
  {
   "id": "seed-HC2-SEQL-1701a0",
-  "typeId": "20652",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -600,7 +600,7 @@
  },
  {
   "id": "seed-HC2-SEQL-d16629",
-  "typeId": "20652",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -650,7 +650,7 @@
  },
  {
   "id": "seed-HC2-SEQL-58254f",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 3,
@@ -669,7 +669,7 @@
  },
  {
   "id": "seed-HC2-SEQL-75903f",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 3,
@@ -707,7 +707,7 @@
  },
  {
   "id": "seed-HC2-SEQL-ba1f9a",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -726,7 +726,7 @@
  },
  {
   "id": "seed-HC2-SEQL-6d45c2",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "주관식",
   "diff": 1,
@@ -750,7 +750,7 @@
  },
  {
   "id": "seed-HC2-SEQL-dfed3b",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 3,
@@ -769,7 +769,7 @@
  },
  {
   "id": "seed-HC2-SEQL-b92b9b",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "주관식",
   "diff": 3,
@@ -781,7 +781,7 @@
  },
  {
   "id": "seed-HC2-SEQL-f75cf2",
-  "typeId": "20628",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -800,7 +800,7 @@
  },
  {
   "id": "seed-HC2-SEQL-349afd",
-  "typeId": "20652",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -819,7 +819,7 @@
  },
  {
   "id": "seed-HC2-SEQL-a8b9ee",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "주관식",
   "diff": 1,
@@ -850,7 +850,7 @@
  },
  {
   "id": "seed-HC2-SEQL-e23cc5",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -888,7 +888,7 @@
  },
  {
   "id": "seed-HC2-SEQL-4463db",
-  "typeId": "20628",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -907,7 +907,7 @@
  },
  {
   "id": "seed-HC2-SEQL-ad7b5a",
-  "typeId": "20652",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 2,
@@ -926,7 +926,7 @@
  },
  {
   "id": "seed-HC2-SEQL-f7c574",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "주관식",
   "diff": 3,
@@ -950,7 +950,7 @@
  },
  {
   "id": "seed-HC2-SEQL-f6a84a",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -969,7 +969,7 @@
  },
  {
   "id": "seed-HC2-SEQL-1347a0",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -1007,7 +1007,7 @@
  },
  {
   "id": "seed-HC2-SEQL-84798a",
-  "typeId": "20652",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -1064,7 +1064,7 @@
  },
  {
   "id": "seed-HC2-SEQL-7781aa",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -1083,7 +1083,7 @@
  },
  {
   "id": "seed-HC2-SEQL-3a32c5",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 3,
@@ -1121,7 +1121,7 @@
  },
  {
   "id": "seed-HC2-SEQL-0ef8b4",
-  "typeId": "20652",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 1,
@@ -1140,7 +1140,7 @@
  },
  {
   "id": "seed-HC2-SEQL-8042b5",
-  "typeId": "20658",
+  "typeId": "20628",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "주관식",
   "diff": 3,
@@ -1152,7 +1152,7 @@
  },
  {
   "id": "seed-HC2-SEQL-5bdfdd",
-  "typeId": "20628",
+  "typeId": "20658",
   "twinGroup": "tw-HC2-SEQL",
   "kind": "객관식",
   "diff": 4,
@@ -1190,7 +1190,7 @@
  },
  {
   "id": "seed-HC2-TLIM-79d063",
-  "typeId": "20711",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 5,
@@ -1228,7 +1228,7 @@
  },
  {
   "id": "seed-HC2-TLIM-28da9a",
-  "typeId": "20709",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 2,
@@ -1259,7 +1259,7 @@
  },
  {
   "id": "seed-HC2-TLIM-2f79c0",
-  "typeId": "20712",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1316,7 +1316,7 @@
  },
  {
   "id": "seed-HC2-TLIM-3dc2c5",
-  "typeId": "20712",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 3,
@@ -1335,7 +1335,7 @@
  },
  {
   "id": "seed-HC2-TLIM-58fefc",
-  "typeId": "20709",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 3,
@@ -1354,7 +1354,7 @@
  },
  {
   "id": "seed-HC2-TLIM-5ab011",
-  "typeId": "20711",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 4,
@@ -1366,7 +1366,7 @@
  },
  {
   "id": "seed-HC2-TLIM-78aeaf",
-  "typeId": "20712",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 3,
@@ -1378,7 +1378,7 @@
  },
  {
   "id": "seed-HC2-TLIM-dd0a0f",
-  "typeId": "20709",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 4,
@@ -1390,7 +1390,7 @@
  },
  {
   "id": "seed-HC2-TLIM-f59ff7",
-  "typeId": "20711",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 4,
@@ -1409,7 +1409,7 @@
  },
  {
   "id": "seed-HC2-TLIM-937c90",
-  "typeId": "20712",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 3,
@@ -1428,7 +1428,7 @@
  },
  {
   "id": "seed-HC2-TLIM-0b4d99",
-  "typeId": "20709",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 3,
@@ -1447,7 +1447,7 @@
  },
  {
   "id": "seed-HC2-TLIM-c5958b",
-  "typeId": "20711",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1497,7 +1497,7 @@
  },
  {
   "id": "seed-HC2-TLIM-cc7f5c",
-  "typeId": "20711",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1554,7 +1554,7 @@
  },
  {
   "id": "seed-HC2-TLIM-92eb49",
-  "typeId": "20711",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 5,
@@ -1573,7 +1573,7 @@
  },
  {
   "id": "seed-HC2-TLIM-20dc89",
-  "typeId": "20712",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1592,7 +1592,7 @@
  },
  {
   "id": "seed-HC2-TLIM-a5eb2d",
-  "typeId": "20709",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 5,
@@ -1611,7 +1611,7 @@
  },
  {
   "id": "seed-HC2-TLIM-b35fa5",
-  "typeId": "20711",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1642,7 +1642,7 @@
  },
  {
   "id": "seed-HC2-TLIM-adddbe",
-  "typeId": "20709",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 5,
@@ -1699,7 +1699,7 @@
  },
  {
   "id": "seed-HC2-TLIM-4b6986",
-  "typeId": "20709",
+  "typeId": "20712",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 4,
@@ -1711,7 +1711,7 @@
  },
  {
   "id": "seed-HC2-TLIM-c4947f",
-  "typeId": "20711",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1730,7 +1730,7 @@
  },
  {
   "id": "seed-HC2-TLIM-c8fe63",
-  "typeId": "20712",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 3,
@@ -1761,7 +1761,7 @@
  },
  {
   "id": "seed-HC2-TLIM-b210f5",
-  "typeId": "20711",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1799,7 +1799,7 @@
  },
  {
   "id": "seed-HC2-TLIM-1b4e1f",
-  "typeId": "20709",
+  "typeId": "20711",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "주관식",
   "diff": 3,
@@ -1811,7 +1811,7 @@
  },
  {
   "id": "seed-HC2-TLIM-765000",
-  "typeId": "20711",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1830,7 +1830,7 @@
  },
  {
   "id": "seed-HC2-TLIM-5ae339",
-  "typeId": "20712",
+  "typeId": "20709",
   "twinGroup": "tw-HC2-TLIM",
   "kind": "객관식",
   "diff": 1,
@@ -1887,7 +1887,7 @@
  },
  {
   "id": "seed-HC2-DIFF-c959e0",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -1925,7 +1925,7 @@
  },
  {
   "id": "seed-HC2-DIFF-c20986",
-  "typeId": "20721",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -1963,7 +1963,7 @@
  },
  {
   "id": "seed-HC2-DIFF-2b5ce7",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -1982,7 +1982,7 @@
  },
  {
   "id": "seed-HC2-DIFF-04afb8",
-  "typeId": "20721",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2001,7 +2001,7 @@
  },
  {
   "id": "seed-HC2-DIFF-bef29a",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2020,7 +2020,7 @@
  },
  {
   "id": "seed-HC2-DIFF-1b26ea",
-  "typeId": "20741",
+  "typeId": "20721",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 1,
@@ -2039,7 +2039,7 @@
  },
  {
   "id": "seed-HC2-DIFF-6c51b2",
-  "typeId": "20721",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2058,7 +2058,7 @@
  },
  {
   "id": "seed-HC2-DIFF-8a9959",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2077,7 +2077,7 @@
  },
  {
   "id": "seed-HC2-DIFF-df7798",
-  "typeId": "20741",
+  "typeId": "20721",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 1,
@@ -2134,7 +2134,7 @@
  },
  {
   "id": "seed-HC2-DIFF-a64c59",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -2172,7 +2172,7 @@
  },
  {
   "id": "seed-HC2-DIFF-d65ce7",
-  "typeId": "20726",
+  "typeId": "20721",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 1,
@@ -2191,7 +2191,7 @@
  },
  {
   "id": "seed-HC2-DIFF-ac8685",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2229,7 +2229,7 @@
  },
  {
   "id": "seed-HC2-DIFF-72b1f9",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "주관식",
   "diff": 5,
@@ -2241,7 +2241,7 @@
  },
  {
   "id": "seed-HC2-DIFF-3ba221",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -2260,7 +2260,7 @@
  },
  {
   "id": "seed-HC2-DIFF-96774e",
-  "typeId": "20721",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -2279,7 +2279,7 @@
  },
  {
   "id": "seed-HC2-DIFF-8e3941",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2298,7 +2298,7 @@
  },
  {
   "id": "seed-HC2-DIFF-07f871",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2317,7 +2317,7 @@
  },
  {
   "id": "seed-HC2-DIFF-5312c5",
-  "typeId": "20721",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2336,7 +2336,7 @@
  },
  {
   "id": "seed-HC2-DIFF-efb80a",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2355,7 +2355,7 @@
  },
  {
   "id": "seed-HC2-DIFF-f85805",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -2374,7 +2374,7 @@
  },
  {
   "id": "seed-HC2-DIFF-684974",
-  "typeId": "20721",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -2393,7 +2393,7 @@
  },
  {
   "id": "seed-HC2-DIFF-a87507",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 3,
@@ -2431,7 +2431,7 @@
  },
  {
   "id": "seed-HC2-DIFF-0a3220",
-  "typeId": "20721",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2450,7 +2450,7 @@
  },
  {
   "id": "seed-HC2-DIFF-1adc2e",
-  "typeId": "20726",
+  "typeId": "20721",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "주관식",
   "diff": 1,
@@ -2462,7 +2462,7 @@
  },
  {
   "id": "seed-HC2-DIFF-254e87",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2481,7 +2481,7 @@
  },
  {
   "id": "seed-HC2-DIFF-8e2ef0",
-  "typeId": "20721",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2500,7 +2500,7 @@
  },
  {
   "id": "seed-HC2-DIFF-960dcc",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2519,7 +2519,7 @@
  },
  {
   "id": "seed-HC2-DIFF-440e25",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2557,7 +2557,7 @@
  },
  {
   "id": "seed-HC2-DIFF-420b30",
-  "typeId": "20726",
+  "typeId": "20741",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 5,
@@ -2576,7 +2576,7 @@
  },
  {
   "id": "seed-HC2-DIFF-260033",
-  "typeId": "20741",
+  "typeId": "20726",
   "twinGroup": "tw-HC2-DIFF",
   "kind": "객관식",
   "diff": 2,
@@ -2614,7 +2614,7 @@
  },
  {
   "id": "seed-HC2-SUBI-bd307a",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -2633,7 +2633,7 @@
  },
  {
   "id": "seed-HC2-SUBI-f7d0b7",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 1,
@@ -2671,7 +2671,7 @@
  },
  {
   "id": "seed-HC2-SUBI-058b68",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -2690,7 +2690,7 @@
  },
  {
   "id": "seed-HC2-SUBI-e9f3d3",
-  "typeId": "20819",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 3,
@@ -2709,7 +2709,7 @@
  },
  {
   "id": "seed-HC2-SUBI-77154a",
-  "typeId": "20824",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 1,
@@ -2747,7 +2747,7 @@
  },
  {
   "id": "seed-HC2-SUBI-cfb366",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "주관식",
   "diff": 1,
@@ -2759,7 +2759,7 @@
  },
  {
   "id": "seed-HC2-SUBI-31a4cd",
-  "typeId": "20824",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 1,
@@ -2797,7 +2797,7 @@
  },
  {
   "id": "seed-HC2-SUBI-7a9877",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "주관식",
   "diff": 1,
@@ -2809,7 +2809,7 @@
  },
  {
   "id": "seed-HC2-SUBI-b98840",
-  "typeId": "20824",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 1,
@@ -2828,7 +2828,7 @@
  },
  {
   "id": "seed-HC2-SUBI-b5a807",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -2847,7 +2847,7 @@
  },
  {
   "id": "seed-HC2-SUBI-e567d1",
-  "typeId": "20819",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -2866,7 +2866,7 @@
  },
  {
   "id": "seed-HC2-SUBI-e702c2",
-  "typeId": "20824",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 3,
@@ -2885,7 +2885,7 @@
  },
  {
   "id": "seed-HC2-SUBI-ffe112",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -2904,7 +2904,7 @@
  },
  {
   "id": "seed-HC2-SUBI-61e11d",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 1,
@@ -2942,7 +2942,7 @@
  },
  {
   "id": "seed-HC2-SUBI-204665",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -2961,7 +2961,7 @@
  },
  {
   "id": "seed-HC2-SUBI-982f12",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 1,
@@ -2980,7 +2980,7 @@
  },
  {
   "id": "seed-HC2-SUBI-2bedcb",
-  "typeId": "20824",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 3,
@@ -3018,7 +3018,7 @@
  },
  {
   "id": "seed-HC2-SUBI-11dc42",
-  "typeId": "20819",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3037,7 +3037,7 @@
  },
  {
   "id": "seed-HC2-SUBI-45659a",
-  "typeId": "20824",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 3,
@@ -3075,7 +3075,7 @@
  },
  {
   "id": "seed-HC2-SUBI-7b0a4f",
-  "typeId": "20819",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3113,7 +3113,7 @@
  },
  {
   "id": "seed-HC2-SUBI-519303",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3132,7 +3132,7 @@
  },
  {
   "id": "seed-HC2-SUBI-28753a",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "주관식",
   "diff": 3,
@@ -3182,7 +3182,7 @@
  },
  {
   "id": "seed-HC2-SUBI-1d869a",
-  "typeId": "20819",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3239,7 +3239,7 @@
  },
  {
   "id": "seed-HC2-SUBI-539bf7",
-  "typeId": "20819",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3277,7 +3277,7 @@
  },
  {
   "id": "seed-HC2-SUBI-a83125",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3296,7 +3296,7 @@
  },
  {
   "id": "seed-HC2-SUBI-1e01ba",
-  "typeId": "20819",
+  "typeId": "20817",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 3,
@@ -3334,7 +3334,7 @@
  },
  {
   "id": "seed-HC2-SUBI-fd563d",
-  "typeId": "20817",
+  "typeId": "20824",
   "twinGroup": "tw-HC2-SUBI",
   "kind": "객관식",
   "diff": 5,
@@ -3372,7 +3372,7 @@
  },
  {
   "id": "seed-HC2-VOL-8597ee",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -3410,7 +3410,7 @@
  },
  {
   "id": "seed-HC2-VOL-23c54d",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -3441,7 +3441,7 @@
  },
  {
   "id": "seed-HC2-VOL-a720bc",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -3624,7 +3624,7 @@
  },
  {
   "id": "seed-HC2-VOL-edd8e2",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -3700,7 +3700,7 @@
  },
  {
   "id": "seed-HC2-VOL-27bf2a",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -3719,7 +3719,7 @@
  },
  {
   "id": "seed-HC2-VOL-fc0aa7",
-  "typeId": "20849",
+  "typeId": "20847",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 5,
@@ -3738,7 +3738,7 @@
  },
  {
   "id": "seed-HC2-VOL-523624",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 3,
@@ -3776,7 +3776,7 @@
  },
  {
   "id": "seed-HC2-VOL-34b7f2",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 3,
@@ -3795,7 +3795,7 @@
  },
  {
   "id": "seed-HC2-VOL-bc5efb",
-  "typeId": "20849",
+  "typeId": "20847",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 5,
@@ -3833,7 +3833,7 @@
  },
  {
   "id": "seed-HC2-VOL-2cad62",
-  "typeId": "20849",
+  "typeId": "20847",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 5,
@@ -3909,7 +3909,7 @@
  },
  {
   "id": "seed-HC2-VOL-fe9dd3",
-  "typeId": "20849",
+  "typeId": "20847",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 5,
@@ -3928,7 +3928,7 @@
  },
  {
   "id": "seed-HC2-VOL-2bacde",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 3,
@@ -3966,7 +3966,7 @@
  },
  {
   "id": "seed-HC2-VOL-a67fa4",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -4004,7 +4004,7 @@
  },
  {
   "id": "seed-HC2-VOL-32b604",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 3,
@@ -4061,7 +4061,7 @@
  },
  {
   "id": "seed-HC2-VOL-72e9b6",
-  "typeId": "20849",
+  "typeId": "20847",
   "twinGroup": "tw-HC2-VOL",
   "kind": "주관식",
   "diff": 5,
@@ -4073,7 +4073,7 @@
  },
  {
   "id": "seed-HC2-VOL-c003c2",
-  "typeId": "20847",
+  "typeId": "20849",
   "twinGroup": "tw-HC2-VOL",
   "kind": "객관식",
   "diff": 1,
@@ -4149,7 +4149,7 @@
  },
  {
   "id": "seed-HC2-ARC-17197c",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 3,
@@ -4225,7 +4225,7 @@
  },
  {
   "id": "seed-HC2-ARC-055319",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4244,7 +4244,7 @@
  },
  {
   "id": "seed-HC2-ARC-03250e",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4301,7 +4301,7 @@
  },
  {
   "id": "seed-HC2-ARC-28cc1f",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4320,7 +4320,7 @@
  },
  {
   "id": "seed-HC2-ARC-6bbaec",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4358,7 +4358,7 @@
  },
  {
   "id": "seed-HC2-ARC-fc40cd",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4377,7 +4377,7 @@
  },
  {
   "id": "seed-HC2-ARC-e435a8",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4396,7 +4396,7 @@
  },
  {
   "id": "seed-HC2-ARC-fce5c9",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4415,7 +4415,7 @@
  },
  {
   "id": "seed-HC2-ARC-ba765f",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4434,7 +4434,7 @@
  },
  {
   "id": "seed-HC2-ARC-69119b",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4453,7 +4453,7 @@
  },
  {
   "id": "seed-HC2-ARC-0b6eae",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 3,
@@ -4529,7 +4529,7 @@
  },
  {
   "id": "seed-HC2-ARC-119231",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4567,7 +4567,7 @@
  },
  {
   "id": "seed-HC2-ARC-de8035",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 3,
@@ -4605,7 +4605,7 @@
  },
  {
   "id": "seed-HC2-ARC-259d1f",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4662,7 +4662,7 @@
  },
  {
   "id": "seed-HC2-ARC-582652",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4681,7 +4681,7 @@
  },
  {
   "id": "seed-HC2-ARC-25c851",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 3,
@@ -4738,7 +4738,7 @@
  },
  {
   "id": "seed-HC2-ARC-dd8bcd",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4776,7 +4776,7 @@
  },
  {
   "id": "seed-HC2-ARC-336678",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4795,7 +4795,7 @@
  },
  {
   "id": "seed-HC2-ARC-bb27e4",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,
@@ -4814,7 +4814,7 @@
  },
  {
   "id": "seed-HC2-ARC-2be314",
-  "typeId": "20854",
+  "typeId": "20853",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 4,
@@ -4833,7 +4833,7 @@
  },
  {
   "id": "seed-HC2-ARC-1d691c",
-  "typeId": "20853",
+  "typeId": "20854",
   "twinGroup": "tw-HC2-ARC",
   "kind": "객관식",
   "diff": 1,

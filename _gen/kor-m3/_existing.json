@@ -760,27 +760,8 @@
   "custom": true
  },
  {
-  "id": "seed-KOR-PHONKIND-b20a95",
-  "typeId": "kor-m3-u2m0s1t0",
-  "twinGroup": "tw-KOR-PHONKIND",
-  "kind": "객관식",
-  "diff": 1,
-  "body": "‘바람’의 표준 발음은 [바람]이다. ‘바람’을 표준 발음으로 읽을 때 일어나는 음운 변동의 종류로 알맞은 것은?",
-  "choices": [
-   "탈락",
-   "첨가",
-   "축약",
-   "음운 변동이 일어나지 않음",
-   "교체"
-  ],
-  "answer": "④",
-  "solution": "1. ‘바람’은 [바람]으로 소리 난다(변동 없음).\n2. 표기를 자모로 나누면 음운이 5개, 발음을 자모로 나누면 5개이다.\n3. 개수도 소리도 그대로이므로 음운 변동이 일어나지 않는다.\n4. 따라서 답은 4번 ‘음운 변동이 일어나지 않음’이다.",
-  "source": "씨앗제조기",
-  "custom": true
- },
- {
   "id": "seed-KOR-PHONKIND-eb7f33",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -799,7 +780,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-6f7018",
-  "typeId": "kor-m3-u2m0s1t0",
+  "typeId": "kor-m3-u2m0s1t1",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 1,
@@ -818,7 +799,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-c19315",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -837,7 +818,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-d69e66",
-  "typeId": "kor-m3-u2m0s1t0",
+  "typeId": "kor-m3-u2m0s1t1",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -851,25 +832,6 @@
   ],
   "answer": "⑤",
   "solution": "1. ‘좁히다’는 [조피다]로 소리 난다. 표기의 음운은 7개, 발음의 음운은 6개이므로 **축약**이 일어난다(거센소리되기).\n2. 보기의 낱말을 같은 방법으로 견주면 ‘백화점’만 축약이 일어난다([배콰점], 거센소리되기).\n3. 따라서 답은 5번이다.",
-  "source": "씨앗제조기",
-  "custom": true
- },
- {
-  "id": "seed-KOR-PHONKIND-2022b6",
-  "typeId": "kor-m3-u2m0s1t1",
-  "twinGroup": "tw-KOR-PHONKIND",
-  "kind": "객관식",
-  "diff": 1,
-  "body": "‘어머니’의 표준 발음은 [어머니]이다. ‘어머니’를 표준 발음으로 읽을 때 일어나는 음운 변동의 종류로 알맞은 것은?",
-  "choices": [
-   "음운 변동이 일어나지 않음",
-   "교체",
-   "축약",
-   "탈락",
-   "첨가"
-  ],
-  "answer": "①",
-  "solution": "1. ‘어머니’는 [어머니]로 소리 난다(변동 없음).\n2. 표기를 자모로 나누면 음운이 5개, 발음을 자모로 나누면 5개이다.\n3. 개수도 소리도 그대로이므로 음운 변동이 일어나지 않는다.\n4. 따라서 답은 1번 ‘음운 변동이 일어나지 않음’이다.",
   "source": "씨앗제조기",
   "custom": true
  },
@@ -889,25 +851,6 @@
   ],
   "answer": "⑤",
   "solution": "1. ‘흙’은 [흑]으로 소리 난다(자음군 단순화).\n2. 표기를 자모로 나누면 음운이 4개, 발음을 자모로 나누면 3개이다.\n3. 개수가 하나 줄었고 거센소리는 생기지 않았으므로 **탈락**이다.\n4. 따라서 답은 5번 ‘탈락’이다.",
-  "source": "씨앗제조기",
-  "custom": true
- },
- {
-  "id": "seed-KOR-PHONKIND-818302",
-  "typeId": "kor-m3-u2m0s1t1",
-  "twinGroup": "tw-KOR-PHONKIND",
-  "kind": "객관식",
-  "diff": 3,
-  "body": "‘우산’을 표준 발음으로 읽을 때 일어나는 음운 변동의 종류로 알맞은 것은?",
-  "choices": [
-   "축약",
-   "교체",
-   "음운 변동이 일어나지 않음",
-   "탈락",
-   "첨가"
-  ],
-  "answer": "③",
-  "solution": "1. ‘우산’은 [우산]으로 소리 난다(변동 없음).\n2. 표기를 자모로 나누면 음운이 4개, 발음을 자모로 나누면 4개이다.\n3. 개수도 소리도 그대로이므로 음운 변동이 일어나지 않는다.\n4. 따라서 답은 3번 ‘음운 변동이 일어나지 않음’이다.",
   "source": "씨앗제조기",
   "custom": true
  },
@@ -932,7 +875,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-e2cf96",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 3,
@@ -970,7 +913,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-321976",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -1008,7 +951,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-b82349",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 5,
@@ -1122,7 +1065,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-b9bc26",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 3,
@@ -1160,7 +1103,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-561937",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 5,
@@ -1198,7 +1141,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-6c7bdf",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -1217,7 +1160,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-07c52d",
-  "typeId": "kor-m3-u2m0s1t0",
+  "typeId": "kor-m3-u2m0s1t1",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -1236,7 +1179,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-970844",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 5,
@@ -1274,7 +1217,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-21deed",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 3,
@@ -1312,7 +1255,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-75afe5",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -1350,7 +1293,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-036174",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 5,
@@ -1388,7 +1331,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-f33fa6",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -1426,7 +1369,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-4eb6da",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 5,
@@ -1445,7 +1388,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-926b6c",
-  "typeId": "kor-m3-u2m0s1t0",
+  "typeId": "kor-m3-u2m0s1t1",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 4,
@@ -1464,7 +1407,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-2da209",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 3,
@@ -1483,7 +1426,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-1f48b2",
-  "typeId": "kor-m3-u2m0s1t0",
+  "typeId": "kor-m3-u2m0s1t1",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 1,
@@ -1502,7 +1445,7 @@
  },
  {
   "id": "seed-KOR-PHONKIND-4e4018",
-  "typeId": "kor-m3-u2m0s1t1",
+  "typeId": "kor-m3-u2m0s1t0",
   "twinGroup": "tw-KOR-PHONKIND",
   "kind": "객관식",
   "diff": 5,
@@ -2281,7 +2224,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-e191a1",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 5,
@@ -2319,7 +2262,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-cb8538",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 4,
@@ -2357,7 +2300,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-4d029f",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 2,
@@ -2395,7 +2338,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-99f69b",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
@@ -2433,7 +2376,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-0b7d95",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 5,
@@ -2471,7 +2414,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-29f2c1",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 5,
@@ -2509,7 +2452,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-c0edb6",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 5,
@@ -2547,7 +2490,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-a6eb28",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 4,
@@ -2585,7 +2528,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-46e659",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
@@ -2623,7 +2566,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-36e0e1",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
@@ -2661,7 +2604,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-0539d1",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 5,
@@ -2699,7 +2642,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-d64963",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 2,
@@ -2737,7 +2680,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-56d4c0",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
@@ -2775,7 +2718,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-9e4223",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 4,
@@ -2813,7 +2756,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-d12d00",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
@@ -2851,7 +2794,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-46583b",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 2,
@@ -2889,7 +2832,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-428436",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
@@ -2927,7 +2870,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-beb4a9",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 2,
@@ -2965,7 +2908,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-d13dba",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 5,
@@ -3003,7 +2946,7 @@
  },
  {
   "id": "seed-KOR-WORDFORM-f15003",
-  "typeId": "kor-m3-u2m1s1t0",
+  "typeId": "kor-m3-u2m1s1t1",
   "twinGroup": "tw-KOR-WORDFORM",
   "kind": "객관식",
   "diff": 1,
