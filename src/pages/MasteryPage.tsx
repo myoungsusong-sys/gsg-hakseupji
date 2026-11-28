@@ -136,6 +136,20 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
   const [q, setQ] = useState('')
   const [typeId, setTypeId] = useState<string | null>(paramType ?? stuck?.typeId ?? null)
   useEffect(() => { if (stickyKey) writeSticky(stickyKey, { course, typeId }) }, [stickyKey, course, typeId])
+  // 🔙 2026-11-28 윤자혜 선생님 «되돌아가기를 누르면 전 화면이 아닌 처음 화면으로 돌아가 항목을 다시 찾아야» —
+  //    유형을 열어도 브라우저 기록이 안 쌓여 «뒤로»가 앱 첫 화면으로 나갔다. 유형을 열 때 기록을 한 칸 쌓아
+  //    «뒤로»가 고른 과정·탭 그대로인 유형 목록(또는 바로 전 유형)으로 오게 한다. 주소는 바꾸지 않는다.
+  useEffect(() => {
+    const onPop = (e: PopStateEvent) => setTypeId(((e.state as { mtype?: string | null } | null)?.mtype) ?? null)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+  useEffect(() => {
+    const st = (window.history.state ?? {}) as { mtype?: string | null }
+    const cur = st.mtype ?? null
+    if (typeId && cur !== typeId) window.history.pushState({ ...st, mtype: typeId }, '')
+    else if (!typeId && cur) window.history.replaceState({ ...st, mtype: null }, '')
+  }, [typeId])
   const [mode, setMode] = useState<'풀기' | '인쇄'>('풀기')
   // 종이판 두 가지 — 목록의 «종이로» 체크는 예전처럼 승강제 종이판, 풀기 화면 🖨 단추는 문제지(그 유형 전 문항)
   const [printKind, setPrintKind] = useState<'문제지' | '승강제'>('승강제')

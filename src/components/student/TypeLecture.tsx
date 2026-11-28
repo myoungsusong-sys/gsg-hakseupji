@@ -53,15 +53,12 @@ export default function TypeLecture({ lecture, watched, onWatched, onNext }: {
       {lecture.video && (
         <video ref={vid} src={url(lecture.video)} controls playsInline preload="metadata"
           className="mt-3 aspect-video w-full rounded-xl bg-black object-contain"
+          // 🔴 2026-11-28 윤자혜 선생님 «강의도 아는 부분은 빨리감기나 되돌리기를 마우스로 되게» —
+          //    예전엔 처음 볼 때 안 본 곳으로 앞질러 가지 못하게 막았다. 이제 재생 막대로 앞뒤 어디든 옮길 수 있다.
           onTimeUpdate={(e) => {
             const v = e.currentTarget
-            if (v.currentTime > maxT.current && v.currentTime - maxT.current < 2) maxT.current = v.currentTime
-            if (v.duration) setLeft(Math.max(0, Math.ceil(v.duration - maxT.current)))
-          }}
-          onSeeking={(e) => {
-            // 처음 볼 때는 안 본 곳으로 앞질러 갈 수 없다(되감기는 된다)
-            const v = e.currentTarget
-            if (!watched && !ended && v.currentTime > maxT.current + 1) v.currentTime = maxT.current
+            if (v.currentTime > maxT.current) maxT.current = v.currentTime
+            if (v.duration) setLeft(Math.max(0, Math.ceil(v.duration - v.currentTime)))
           }}
           onEnded={() => { setEnded(true); onWatched() }} />
       )}
