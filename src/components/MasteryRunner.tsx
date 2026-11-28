@@ -37,7 +37,7 @@ import {
  */
 
 export default function MasteryRunner({
-  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel, course, onPrint,
+  typeId, typeName, base, pool, studentId, initial, onChange, onClose, onSkip, skipLabel, course, onPrint, startFloor,
 }: {
   typeId: string
   typeName: string
@@ -55,18 +55,21 @@ export default function MasteryRunner({
   course?: string
   /** 🖨 이 유형을 문제지로 출력 — 풀다가 바로 종이판으로 (2026-11-16 명수쌤 «문제지로 출력도 할수있게») */
   onPrint?: () => void
+  /** 🪜 선생님이 정한 시작 단계(학생 정보 masteryStart) — 처음 여는 유형이면 고르기 화면 없이 이 단계부터 */
+  startFloor?: number
 }) {
   // 🔴 저장된 상태는 빈 칸을 채워서 쓴다(normalizeMastery) — 덜 찬 상태로 화면이 죽던 것(2026-10-02 최다혜)
-  const [state, setState] = useState<MasteryState>(() => normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 0))
+  // 처음 여는 유형인가(아직 한 문제도 안 푼 기록) — 아래 «시작 방식 고르기»와 같은 판정
+  const fresh0 = (() => { const s0 = normalizeMastery(initial, studentId, typeId); return !s0 || (s0.log.length === 0 && s0.servedIds.length === 0 && !s0.mastered && !s0.lecDone) })()
+  const preset = fresh0 && typeof startFloor === 'number' ? Math.max(0, Math.min(startFloor, topFloorOf(typeId, pool))) as MasteryState['floor'] : null
+  const [state, setState] = useState<MasteryState>(() => preset !== null ? newMastery(studentId, typeId, preset)
+    : normalizeMastery(initial, studentId, typeId) ?? newMastery(studentId, typeId, 0))
   // 🚪 시작 방식 고르기 (2026-11-26 명수쌤 «두가지 다 만들어줘 따로 개념부터 필요한 학생은 개념부터가게»)
   //    · 개념부터   — 0층(개념 강의·이론노트 → 빈칸)부터 차근차근 (종전 방식)
   //    · 대표문제부터 — 이 유형의 기준(표준) 문제부터. 틀리면 개념으로 내려가고, 맞히면 위로 (step 규칙 그대로)
   //    처음 들어온 유형(저장된 기록이 없을 때)만 묻는다. 고르기 전에는 기록을 저장하지 않는다.
   //    («기록 없음»으로 판단하면 안 된다 — 위 화면이 처음 들어온 유형에도 빈 기록을 만들어 넘겨 준다. 아직 한 문제도 안 푼 기록이면 묻는다)
-  const [needChoice, setNeedChoice] = useState(() => {
-    const s = normalizeMastery(initial, studentId, typeId)
-    return !s || (s.log.length === 0 && s.servedIds.length === 0 && !s.mastered && !s.lecDone)
-  })
+  const [needChoice, setNeedChoice] = useState(() => fresh0 && preset === null)
   const [current, setCurrent] = useState<Problem | null>(null)
   const [picked, setPicked] = useState<number | null>(null)   // 객관식 선택
   const [input, setInput] = useState('')                      // 주관식 학생 답

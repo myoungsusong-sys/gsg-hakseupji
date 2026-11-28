@@ -243,6 +243,8 @@ export interface Student {
   leaveTime?: string     // 기본 하원 시간 HH:MM
   loginId?: string       // 학생앱 로그인 아이디 (없으면 attendNo 사용)
   authEmail?: string     // 학생앱 Supabase 계정 이메일 (계정 생성 스크립트가 기록)
+  /** 🪜 승강제 시작 단계 기본값(0 개념 · 1 기본 · 2 표준 · 3 심화 · 4 최상) — 선생님이 정한다. 없으면 학생이 «개념부터/대표문제부터»를 고른다 (2026-11-28 명수쌤 «상위권 학생들을 위해 선생님이 셋팅») */
+  masteryStart?: number
   siblingIds?: string[]  // 형제 연결 — 학부모 연락처를 공유하는 형제 학생 id (상호 기록)
   mgmtId?: string        // 학원관리앱(전과목) 학생 id — 명부 공유로 연결됨. 있으면 관리앱에서 가져온 학생
   // 학습 배경 — 입학 상담·진단 리포트가 인용한다

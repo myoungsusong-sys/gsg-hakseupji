@@ -98,7 +98,7 @@ function 풀양(st: MasteryState | undefined): string {
 }
 
 export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
-  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems, studentAppConfig } = useStore()
+  const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems, studentAppConfig, updateStudent } = useStore()
   const [params, setParams] = useSearchParams()
   const nav = useNavigate()
   // 📕 채점 단위 정복 (`?grading=<채점id>[,<채점id>]`) — 그 채점의 **오답 유형만** 줄 세워 바로 사다리로.
@@ -432,6 +432,21 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       {!params.get('student') && <span className="text-xs text-ink2">학생을 고르면 그 학생 승강제 기록이 열리고, 종이로 푼 답도 그 학생 이름으로 채점됩니다.</span>}
     </label>
   ) : null
+  // 🪜 시작 단계 기본값 — 상위권 학생은 개념 강의 없이 표준·심화부터(2026-11-28 명수쌤 «상위권 학생들을 위해 선생님이 셋팅»).
+  //    처음 여는 유형에만 쓴다. 이미 풀던 유형은 그 자리에서 이어서 한다.
+  const pickedStu = params.get('student') ? allStudents.find((x) => x.id === params.get('student')) : undefined
+  const startPick = studentIdProp === 'me' && pickedStu ? (
+    <div className="no-print mt-2 flex flex-wrap items-center gap-1.5 text-sm">
+      <span className="font-bold text-ink">시작 단계</span>
+      {([[undefined, '학생이 고름'], [0, '개념'], [1, '기본'], [2, '표준'], [3, '심화'], [4, '최상']] as [number | undefined, string][]).map(([v, label]) => (
+        <button key={label} type="button" onClick={() => updateStudent(pickedStu.id, { masteryStart: v })}
+          className={`rounded-lg border px-2.5 py-1 text-xs font-bold ${pickedStu.masteryStart === v ? 'border-pine bg-pine text-paper' : 'border-line bg-white text-ink2 hover:bg-paper2'}`}>
+          {label}
+        </button>
+      ))}
+      <span className="text-[11px] text-ink2">처음 여는 유형은 이 단계부터 바로 시작합니다(그 유형에 그 단계가 없으면 가장 높은 단계부터).</span>
+    </div>
+  ) : null
 
   if (typeId && base && row) {
     if (mode === '인쇄') {
@@ -462,6 +477,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
       <MasteryRunner
         key={typeId}
         typeId={typeId} typeName={row.name} base={base} pool={pool} studentId={studentId} course={course}
+        startFloor={allStudents.find((x) => x.id === studentId)?.masteryStart}
         onPrint={() => { setPrintKind('문제지'); setMode('인쇄') }}
         initial={startOverride[typeId] ?? resumeSt ?? newMastery(studentId, typeId, 0)}
         onChange={(st: MasteryState) => {
@@ -615,6 +631,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
     <div className="mx-auto max-w-3xl">
       <h1 className="text-lg font-bold text-ink">🪜 승강제 <span className="text-sm font-semibold text-ink2">(유형 마스터)</span>{viewingName ? <span className="ml-2 rounded-full bg-pine-soft px-2.5 py-0.5 text-sm font-black text-pine-dark">{viewingName} 학생 보기</span> : null}</h1>
       {teacherPick}
+      {startPick}
       <TodayQuota masteries={masteries} studentId={studentId} cap={studentAppConfig.masteryDailyCap} />
       {/* 📗 걸러지고 있다는 걸 알려 준다 — 안 그러면 "왜 문제가 몇 개 없지?" 가 된다 */}
       {engBook && engCourse && (
