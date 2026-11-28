@@ -1,0 +1,128 @@
+[
+ {
+  "id": "fill3-fabf18985e",
+  "typeId": "20711",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "$\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos x}{x}$ 의 값을 구하시오.",
+  "choices": [
+   "$-1$",
+   "$1$",
+   "$\\dfrac{1}{2}$",
+   "$0$",
+   "$2$"
+  ],
+  "answer": "④",
+  "solution": "1. $\\dfrac{1-\\cos x}{x}=\\dfrac{1-\\cos x}{x^2}\\cdot x$ 로 나눕니다.\n2. $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=\\dfrac{1}{2}$ 이고 $x\\to0$ 입니다.\n3. 따라서 극한값은 $\\dfrac{1}{2}\\cdot0=0$ 이고, 정답은 ④입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ },
+ {
+  "id": "fill3-b1b60a4843",
+  "typeId": "20711",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "$\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos x}{x\\sin x}$ 의 값을 구하시오.",
+  "choices": [
+   "$0$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{1}{4}$",
+   "$1$",
+   "$2$"
+  ],
+  "answer": "②",
+  "solution": "1. 분모와 분자에 $1+\\cos x$를 곱하면 $\\dfrac{1-\\cos x}{x\\sin x}=\\dfrac{\\sin^2 x}{x\\sin x\\,(1+\\cos x)}=\\dfrac{\\sin x}{x}\\cdot\\dfrac{1}{1+\\cos x}$ 입니다.\n2. $x\\to0$일 때 $\\dfrac{\\sin x}{x}\\to1$, $\\dfrac{1}{1+\\cos x}\\to\\dfrac{1}{2}$ 입니다.\n3. 따라서 극한값은 $\\dfrac{1}{2}$ 이고, 정답은 ②입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ },
+ {
+  "id": "fill3-4b15e94012",
+  "typeId": "20711",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "$\\displaystyle\\lim_{x\\to 0}\\dfrac{x\\sin x}{1-\\cos x}$ 의 값을 구하시오.",
+  "choices": [
+   "$2$",
+   "$1$",
+   "$\\dfrac{1}{2}$",
+   "$4$",
+   "$8$"
+  ],
+  "answer": "①",
+  "solution": "1. 분모와 분자에 $1+\\cos x$를 곱하면 $\\dfrac{x\\sin x}{1-\\cos x}=\\dfrac{x\\sin x\\,(1+\\cos x)}{\\sin^2 x}=\\dfrac{x}{\\sin x}\\cdot(1+\\cos x)$ 입니다.\n2. $x\\to0$일 때 $\\dfrac{x}{\\sin x}\\to1$, $1+\\cos x\\to2$ 입니다.\n3. 따라서 극한값은 $2$이고, 정답은 ①입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ },
+ {
+  "id": "fill3-abe9d3b538",
+  "typeId": "20711",
+  "kind": "객관식",
+  "diff": 5,
+  "body": "두 상수 $a,\\ b$에 대하여 $\\displaystyle\\lim_{x\\to 0}\\dfrac{a+b\\cos x+\\cos 3x}{x^3\\sin x}$ 의 값이 존재한다. 이 극한값을 구하시오.",
+  "choices": [
+   "$1$",
+   "$\\dfrac{3}{2}$",
+   "$3$",
+   "$2$",
+   "$6$"
+  ],
+  "answer": "③",
+  "solution": "1. 분자를 $N(x)$라 하겠습니다. $x\\to0$일 때 분모가 $0$으로 가므로 분자도 $0$으로 가야 합니다. 따라서 $a+b+1=0$, 곧 $a=-b-1$ 입니다.\n2. 이를 넣으면 $N(x)=-b(1-\\cos x)-(1-\\cos 3x)$ 입니다.\n3. 극한값을 $L$이라 하면 $\\dfrac{N(x)}{x\\sin x}=\\dfrac{N(x)}{x^3\\sin x}\\cdot x^2\\to L\\cdot0=0$ 이어야 합니다.\n4. 그런데 $\\dfrac{1-\\cos kx}{x\\sin x}=\\dfrac{\\sin^2 kx}{x\\sin x\\,(1+\\cos kx)}=\\left(\\dfrac{\\sin kx}{kx}\\right)^2\\cdot k^2\\cdot\\dfrac{x}{\\sin x}\\cdot\\dfrac{1}{1+\\cos kx}\\to\\dfrac{k^2}{2}$ 이므로 $\\dfrac{N(x)}{x\\sin x}\\to-\\dfrac{b}{2}-\\dfrac{9}{2}$ 입니다. 이 값이 $0$이므로 $b=-9$, $a=8$ 입니다.\n5. $\\cos 3x=4\\cos^3x-3\\cos x$ 이므로 $N(x)=4\\cos^3x-12\\cos x+8=4(\\cos x-1)^2(\\cos x+2)$ 입니다.\n6. 따라서 $\\dfrac{N(x)}{x^3\\sin x}=4\\left(\\dfrac{1-\\cos x}{x\\sin x}\\right)^2\\cdot\\dfrac{\\sin x}{x}\\cdot(\\cos x+2)\\to4\\cdot\\dfrac{1}{4}\\cdot1\\cdot3=3$ 입니다.\n7. 정답은 ③입니다. (인수 $\\cos x+2\\to3$을 빠뜨리면 $1$, 계수 $4$를 빠뜨리면 $\\dfrac{3}{4}$이 나옵니다.)",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ },
+ {
+  "id": "fill3-a6a620a56d",
+  "typeId": "20711",
+  "kind": "객관식",
+  "diff": 5,
+  "body": "좌표평면에서 원점 $\\mathrm{O}$를 중심으로 하고 반지름의 길이가 $1$인 원 위에 점 $\\mathrm{A}(1,\\,0)$과 제1사분면 위의 점 $\\mathrm{P}$가 있다. $\\angle\\mathrm{AOP}=\\theta\\ \\left(0<\\theta<\\dfrac{\\pi}{2}\\right)$라 하자. 점 $\\mathrm{P}$에서 $x$축에 내린 수선의 발을 $\\mathrm{H}$, 점 $\\mathrm{P}$에서 이 원에 그은 접선이 $x$축과 만나는 점을 $\\mathrm{Q}$라 하자. 삼각형 $\\mathrm{PHA}$의 넓이를 $S_1(\\theta)$, 삼각형 $\\mathrm{PAQ}$의 넓이를 $S_2(\\theta)$라 할 때, $\\displaystyle\\lim_{\\theta\\to 0+}\\dfrac{S_2(\\theta)-S_1(\\theta)}{\\theta^5}$ 의 값을 구하시오.",
+  "choices": [
+   "$\\dfrac{1}{32}$",
+   "$\\dfrac{1}{16}$",
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "answer": "④",
+  "solution": "1. $\\mathrm{P}(\\cos\\theta,\\,\\sin\\theta)$, $\\mathrm{H}(\\cos\\theta,\\,0)$ 입니다. 점 $\\mathrm{P}$에서의 접선은 $x\\cos\\theta+y\\sin\\theta=1$ 이므로 $\\mathrm{Q}\\left(\\dfrac{1}{\\cos\\theta},\\,0\\right)$ 입니다.\n2. 두 삼각형의 높이는 모두 $\\sin\\theta$ 이고 밑변은 $\\overline{\\mathrm{HA}}=1-\\cos\\theta$, $\\overline{\\mathrm{AQ}}=\\dfrac{1}{\\cos\\theta}-1=\\dfrac{1-\\cos\\theta}{\\cos\\theta}$ 입니다.\n3. $S_2(\\theta)-S_1(\\theta)=\\dfrac{1}{2}\\sin\\theta\\,(1-\\cos\\theta)\\left(\\dfrac{1}{\\cos\\theta}-1\\right)=\\dfrac{\\sin\\theta\\,(1-\\cos\\theta)^2}{2\\cos\\theta}$ 입니다.\n4. $\\dfrac{1-\\cos\\theta}{\\theta^2}=\\left(\\dfrac{\\sin\\theta}{\\theta}\\right)^2\\cdot\\dfrac{1}{1+\\cos\\theta}\\to\\dfrac{1}{2}$ 이므로 $\\dfrac{S_2-S_1}{\\theta^5}=\\dfrac{1}{2\\cos\\theta}\\cdot\\dfrac{\\sin\\theta}{\\theta}\\cdot\\left(\\dfrac{1-\\cos\\theta}{\\theta^2}\\right)^2\\to\\dfrac{1}{2}\\cdot1\\cdot\\dfrac{1}{4}=\\dfrac{1}{8}$ 입니다.\n5. 정답은 ④입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ },
+ {
+  "id": "fill3-1efcdbdb2c",
+  "typeId": "20711",
+  "kind": "객관식",
+  "diff": 5,
+  "body": "$\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos x\\cdot\\sqrt{\\cos 2x}\\cdot\\sqrt[3]{\\cos 3x}}{x\\sin x}$ 의 값을 구하시오.",
+  "choices": [
+   "$\\dfrac{3}{2}$",
+   "$2$",
+   "$\\dfrac{5}{2}$",
+   "$7$",
+   "$3$"
+  ],
+  "answer": "⑤",
+  "solution": "1. $a=\\cos x,\\ b=\\sqrt{\\cos 2x},\\ c=\\sqrt[3]{\\cos 3x}$ 라 하면 $1-abc=(1-a)+a(1-b)+ab(1-c)$ 입니다. ($0$ 근처에서 $\\cos 2x>0,\\ \\cos 3x>0$)\n2. $\\dfrac{1-\\cos kx}{x\\sin x}=\\left(\\dfrac{\\sin kx}{kx}\\right)^2\\cdot k^2\\cdot\\dfrac{x}{\\sin x}\\cdot\\dfrac{1}{1+\\cos kx}\\to\\dfrac{k^2}{2}$ 입니다.\n3. 첫째 항: $\\dfrac{1-\\cos x}{x\\sin x}\\to\\dfrac{1}{2}$ 입니다.\n4. 둘째 항: $\\dfrac{1-\\sqrt{\\cos 2x}}{x\\sin x}=\\dfrac{1-\\cos 2x}{x\\sin x}\\cdot\\dfrac{1}{1+\\sqrt{\\cos 2x}}\\to2\\cdot\\dfrac{1}{2}=1$ 이고 $a\\to1$ 입니다.\n5. 셋째 항: $1-c^3=(1-c)(1+c+c^2)$ 이므로 $\\dfrac{1-\\sqrt[3]{\\cos 3x}}{x\\sin x}=\\dfrac{1-\\cos 3x}{x\\sin x}\\cdot\\dfrac{1}{1+c+c^2}\\to\\dfrac{9}{2}\\cdot\\dfrac{1}{3}=\\dfrac{3}{2}$ 이고 $ab\\to1$ 입니다.\n6. 따라서 극한값은 $\\dfrac{1}{2}+1+\\dfrac{3}{2}=3$ 이고, 정답은 ⑤입니다. (근호를 모두 무시하면 $\\dfrac{1}{2}+2+\\dfrac{9}{2}=7$이 나옵니다.)",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ },
+ {
+  "id": "fill3-5d0134b00f",
+  "typeId": "20711",
+  "kind": "주관식",
+  "diff": 5,
+  "body": "자연수 $n$에 대하여 $g_n(x)=1-\\cos x\\cos 2x\\cos 3x\\cdots\\cos nx$ 라 하자. $\\displaystyle\\lim_{x\\to 0}\\dfrac{g_n(x)}{x\\sin x}>100$ 을 만족시키는 자연수 $n$의 최솟값을 구하시오.",
+  "answer": "8",
+  "solution": "1. $P_0(x)=1$, $P_k(x)=\\cos x\\cos 2x\\cdots\\cos kx$ 라 하면 $P_{k-1}-P_k=P_{k-1}(1-\\cos kx)$ 이므로, $k=1$부터 $n$까지 더하면 $g_n(x)=1-P_n(x)=\\displaystyle\\sum_{k=1}^{n}P_{k-1}(x)\\,(1-\\cos kx)$ 입니다.\n2. 각 $k$에 대하여 $\\dfrac{1-\\cos kx}{x\\sin x}=\\left(\\dfrac{\\sin kx}{kx}\\right)^2\\cdot k^2\\cdot\\dfrac{x}{\\sin x}\\cdot\\dfrac{1}{1+\\cos kx}\\to\\dfrac{k^2}{2}$ 이고 $P_{k-1}(x)\\to1$ 입니다.\n3. 따라서 $\\displaystyle\\lim_{x\\to0}\\dfrac{g_n(x)}{x\\sin x}=\\dfrac{1}{2}\\sum_{k=1}^{n}k^2=\\dfrac{n(n+1)(2n+1)}{12}$ 입니다.\n4. 이 값이 $100$보다 크려면 $\\displaystyle\\sum_{k=1}^{n}k^2>200$ 이어야 합니다.\n5. $n=7$일 때 $\\dfrac{7\\cdot8\\cdot15}{6}=140$, $n=8$일 때 $\\dfrac{8\\cdot9\\cdot17}{6}=204$ 입니다.\n6. 따라서 $n$의 최솟값은 $8$입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-20711",
+  "custom": true
+ }
+]

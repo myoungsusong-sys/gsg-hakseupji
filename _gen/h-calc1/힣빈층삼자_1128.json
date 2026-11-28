@@ -1,0 +1,292 @@
+[
+ {
+  "id": "fill3-3c78180062",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)$에 대하여 $f'(3)=5$일 때, $\\displaystyle\\lim_{x\\to3}\\frac{f(x)-f(3)}{x-3}$의 값은?",
+  "choices": [
+   "$3$",
+   "$5$",
+   "$8$",
+   "$10$",
+   "$15$"
+  ],
+  "answer": "②",
+  "solution": "1. 미분계수의 정의에 따라 $\\displaystyle\\lim_{x\\to3}\\frac{f(x)-f(3)}{x-3}=f'(3)$입니다.\n2. $f'(3)=5$이므로 극한값은 $5$이고, 정답은 ②입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-3bc0ca8eb7",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)$에 대하여 $f'(2)=6$일 때, $\\displaystyle\\lim_{h\\to0}\\frac{f(2-h)-f(2)}{h}$의 값은?",
+  "choices": [
+   "$-12$",
+   "$-6$",
+   "$-3$",
+   "$3$",
+   "$6$"
+  ],
+  "answer": "②",
+  "solution": "1. $\\dfrac{f(2-h)-f(2)}{h}=\\dfrac{f(2+(-h))-f(2)}{-h}\\times(-1)$로 바꿉니다.\n2. $h\\to0$일 때 $\\dfrac{f(2+(-h))-f(2)}{-h}\\to f'(2)=6$입니다.\n3. 따라서 극한값은 $6\\times(-1)=-6$이고, 정답은 ②입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-aa775b98f3",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)=x^2+3x$에 대하여 $\\displaystyle\\lim_{h\\to0}\\frac{f(1+h)-f(1)}{h}$의 값은?",
+  "choices": [
+   "$2$",
+   "$3$",
+   "$4$",
+   "$5$",
+   "$6$"
+  ],
+  "answer": "④",
+  "solution": "1. 주어진 극한은 $f'(1)$과 같습니다.\n2. $f'(x)=2x+3$이므로 $f'(1)=2+3=5$입니다.\n3. 따라서 정답은 ④입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-481a3e1d71",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)$에 대하여 $f'(a)=2$일 때, $\\displaystyle\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{3h}$의 값은?",
+  "choices": [
+   "$\\frac{2}{3}$",
+   "$\\frac{3}{2}$",
+   "$2$",
+   "$5$",
+   "$6$"
+  ],
+  "answer": "①",
+  "solution": "1. $\\dfrac{f(a+h)-f(a)}{3h}=\\dfrac{1}{3}\\times\\dfrac{f(a+h)-f(a)}{h}$입니다.\n2. $h\\to0$일 때 $\\dfrac{f(a+h)-f(a)}{h}\\to f'(a)=2$입니다.\n3. 따라서 극한값은 $\\dfrac{1}{3}\\times2=\\dfrac{2}{3}$이고, 정답은 ①입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-17704efd9d",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 5,
+  "body": "미분가능한 함수 $f(x)$가 모든 실수 $x$, $y$에 대하여\n$f(x+y)=f(x)+f(y)+xy-2$\n를 만족시키고 $f'(0)=3$일 때, $\\displaystyle\\lim_{h\\to0}\\frac{f(2+h)-f(2-3h)}{h}$의 값은?",
+  "choices": [
+   "$12$",
+   "$15$",
+   "$18$",
+   "$20$",
+   "$24$"
+  ],
+  "answer": "④",
+  "solution": "1. 주어진 식에 $x=0$, $y=0$을 넣으면 $f(0)=2f(0)-2$이므로 $f(0)=2$입니다.\n2. 따라서 $f'(0)=\\displaystyle\\lim_{h\\to0}\\frac{f(h)-2}{h}=3$입니다.\n3. 주어진 식에 $y=h$를 넣으면 $f(x+h)-f(x)=f(h)-2+xh$이므로\n$f'(x)=\\displaystyle\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}=\\lim_{h\\to0}\\left\\{\\frac{f(h)-2}{h}+x\\right\\}=3+x$입니다.\n4. 따라서 $f'(2)=5$입니다.\n5. $\\dfrac{f(2+h)-f(2-3h)}{h}=\\dfrac{f(2+h)-f(2)}{h}+3\\cdot\\dfrac{f(2-3h)-f(2)}{-3h}\\to f'(2)+3f'(2)=4f'(2)$입니다.\n6. 따라서 극한값은 $4\\times5=20$이고, 정답은 ④입니다. ($f'(x)$를 상수 $3$으로 착각하면 $12$가 나옵니다.)",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-4e80d682fd",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 5,
+  "body": "다항함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) $\\displaystyle\\lim_{x\\to1}\\frac{f(x)-2}{x-1}$의 값이 존재한다.\n(나) $\\displaystyle\\lim_{h\\to0}\\frac{f(1+h)-f(1-h)}{h}=6$\n<보기>에서 옳은 것만을 있는 대로 고른 것은?\n<보기>\nㄱ. $\\displaystyle\\lim_{x\\to1}\\frac{xf(1)-f(x)}{x-1}=-1$\nㄴ. $\\displaystyle\\lim_{h\\to0}\\frac{f(1+h)-f(1)}{|h|}$의 값이 존재한다.\nㄷ. $\\displaystyle\\lim_{x\\to1}\\frac{\\{f(x)\\}^2-4}{\\sqrt{x}-1}=24$",
+  "choices": [
+   "ㄱ",
+   "ㄴ",
+   "ㄱ, ㄴ",
+   "ㄱ, ㄴ, ㄷ",
+   "ㄱ, ㄷ"
+  ],
+  "answer": "⑤",
+  "solution": "1. (가)에서 분모가 $0$으로 가고 극한값이 있으므로 분자도 $0$으로 갑니다. $f(x)$는 연속이므로 $f(1)=2$입니다.\n2. (나)에서 $\\dfrac{f(1+h)-f(1)}{h}+\\dfrac{f(1-h)-f(1)}{-h}\\to2f'(1)=6$이므로 $f'(1)=3$입니다.\n3. ㄱ: $xf(1)-f(x)=f(1)(x-1)-\\{f(x)-f(1)\\}$이므로 극한값은 $f(1)-f'(1)=2-3=-1$입니다. 참입니다.\n4. ㄴ: $h\\to0+$이면 $\\dfrac{f(1+h)-f(1)}{h}\\to3$이고, $h\\to0-$이면 $|h|=-h$이므로 $-\\dfrac{f(1+h)-f(1)}{h}\\to-3$입니다. 좌극한과 우극한이 다르므로 극한값이 존재하지 않습니다. 거짓입니다.\n5. ㄷ: $\\dfrac{\\{f(x)\\}^2-4}{\\sqrt{x}-1}=\\dfrac{f(x)-2}{x-1}\\cdot\\{f(x)+2\\}\\cdot(\\sqrt{x}+1)\\to3\\cdot4\\cdot2=24$입니다. 참입니다.\n6. 따라서 옳은 것은 ㄱ, ㄷ이고 정답은 ⑤입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-c0d9aaba8d",
+  "typeId": "18546",
+  "kind": "주관식",
+  "diff": 5,
+  "body": "다항함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) $\\displaystyle\\lim_{x\\to1}\\frac{f(x)-2}{x-1}$의 값이 존재한다.\n(나) $\\displaystyle\\lim_{h\\to0}\\frac{f(1+h)-f(1-2h)}{h}=9$\n$\\displaystyle\\lim_{x\\to1}\\frac{x^2f(x^3)-f(1)}{x-1}$의 값을 구하시오.",
+  "answer": "$13$",
+  "solution": "1. (가)에서 분모가 $0$으로 가고 극한값이 있으므로 분자도 $0$으로 갑니다. $f(x)$는 연속이므로 $f(1)=2$입니다.\n2. (나)에서 $\\dfrac{f(1+h)-f(1)}{h}+2\\cdot\\dfrac{f(1-2h)-f(1)}{-2h}\\to f'(1)+2f'(1)=3f'(1)=9$이므로 $f'(1)=3$입니다.\n3. 분자를 $x^2f(x^3)-f(1)=x^2\\{f(x^3)-f(1)\\}+f(1)(x^2-1)$로 바꿉니다.\n4. 이를 $x-1$로 나누면 $x^2\\cdot\\dfrac{f(x^3)-f(1)}{x^3-1}\\cdot(x^2+x+1)+f(1)(x+1)$입니다.\n5. $x\\to1$일 때 $x^3\\to1$이므로 이 식은 $1\\cdot3\\cdot3+2\\cdot2=9+4=13$으로 갑니다.\n6. 따라서 구하는 값은 $13$입니다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-44c1c5852e",
+  "typeId": "18546",
+  "kind": "객관식",
+  "diff": 5,
+  "body": "다항함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) $\\displaystyle\\lim_{x\\to\\infty}\\frac{f(x)}{x^3}=2$\n(나) $\\displaystyle\\lim_{x\\to1}\\frac{f(x)}{x-1}=4$\n(다) $\\displaystyle\\lim_{x\\to2}\\frac{f(x)}{x-2}$의 값이 존재한다.\n$\\displaystyle\\lim_{h\\to0}\\frac{f(1+2h)\\,f(3-h)}{h\\,f(2+h)}$의 값은?",
+  "choices": [
+   "$-16$",
+   "$-8$",
+   "$8$",
+   "$16$",
+   "$32$"
+  ],
+  "answer": "④",
+  "solution": "1. (가)에서 $f(x)$는 최고차항의 계수가 $2$인 삼차함수입니다.\n2. (나), (다)에서 $x\\to1$, $x\\to2$일 때 분모가 $0$으로 가고 극한값이 있으므로 분자도 $0$으로 갑니다. $f(x)$는 연속이므로 $f(1)=0$, $f(2)=0$입니다.\n3. 따라서 $f(x)=2(x-1)(x-2)(x-a)$로 놓을 수 있습니다. (나)의 극한은 $\\displaystyle\\lim_{x\\to1}\\frac{f(x)-f(1)}{x-1}=f'(1)$이고, $f'(1)=2(1-2)(1-a)=2(a-1)=4$이므로 $a=3$입니다.\n4. $f(x)=2(x-1)(x-2)(x-3)$이므로 $f(3)=0$이고,\n$f'(x)=2\\{(x-2)(x-3)+(x-1)(x-3)+(x-1)(x-2)\\}$에서 $f'(1)=4$, $f'(2)=2\\cdot(1)(-1)=-2$, $f'(3)=2\\cdot(2)(1)=4$입니다.\n5. 분자와 분모를 각각 $h^2$으로 나누면\n$\\dfrac{f(1+2h)f(3-h)}{h\\,f(2+h)}=\\dfrac{2\\cdot\\dfrac{f(1+2h)-f(1)}{2h}\\cdot(-1)\\cdot\\dfrac{f(3-h)-f(3)}{-h}}{\\dfrac{f(2+h)-f(2)}{h}}$입니다.\n6. $h\\to0$이면 이 식은 $\\dfrac{2f'(1)\\cdot\\{-f'(3)\\}}{f'(2)}=\\dfrac{8\\cdot(-4)}{-2}=16$으로 갑니다.\n7. 따라서 정답은 ④입니다. (계수 $2$를 빠뜨리면 $8$이 나오고, $-h$의 부호를 놓치면 $-16$이 나옵니다. $f(3)=0$임을 알아차려야 $f(3-h)$를 미분계수로 바꿀 수 있습니다.)",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18546",
+  "custom": true
+ },
+ {
+  "id": "fill3-66e66316a4",
+  "typeId": "18618",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "수직선 위를 움직이는 점 $\\mathrm{P}$ 의 시각 $t\\ (t\\ge 0)$ 에서의 위치가 $x=t^{2}-4t$ 이다. 점 $\\mathrm{P}$ 가 운동 방향을 바꾸는 시각을 구하시오.",
+  "choices": [
+   "$1$",
+   "$2$",
+   "$3$",
+   "$4$",
+   "$5$"
+  ],
+  "answer": "②",
+  "solution": "1. 속도는 $v=\\dfrac{dx}{dt}=2t-4$ 이다.\n2. 운동 방향을 바꾸는 순간에는 속도가 $0$ 이므로 $2t-4=0$ 에서 $t=2$ 이다.\n3. $t=2$ 의 앞뒤에서 $v$ 의 부호가 음에서 양으로 바뀌므로 이 시각에 운동 방향을 바꾼다. (위치가 $0$ 이 되는 $t=4$ 와 헷갈리지 않도록 한다.) 정답 ②",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18618",
+  "custom": true
+ },
+ {
+  "id": "fill3-8450766de9",
+  "typeId": "18618",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "수직선 위를 움직이는 점 $\\mathrm{P}$ 가 운동 방향을 바꾸는 순간에 반드시 성립하는 것은?",
+  "choices": [
+   "점 $\\mathrm{P}$ 의 위치가 $0$ 이다.",
+   "점 $\\mathrm{P}$ 의 속도가 $0$ 이다.",
+   "점 $\\mathrm{P}$ 의 가속도가 $0$ 이다.",
+   "점 $\\mathrm{P}$ 의 속력이 가장 크다.",
+   "점 $\\mathrm{P}$ 의 가속도가 양수이다."
+  ],
+  "answer": "②",
+  "solution": "1. 운동 방향은 속도의 부호로 정해진다. 양수이면 양의 방향, 음수이면 음의 방향으로 움직인다.\n2. 운동 방향이 바뀌려면 속도의 부호가 바뀌어야 하므로, 그 순간의 속도는 $0$ 이다.\n3. 위치나 가속도가 $0$ 일 필요는 없고, 속력은 그 순간에 $0$ 이므로 가장 작다. 정답 ②",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18618",
+  "custom": true
+ },
+ {
+  "id": "fill3-48d889b655",
+  "typeId": "18618",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "수직선 위를 움직이는 점 $\\mathrm{P}$ 의 시각 $t\\ (t\\ge 0)$ 에서의 속도가 $v=6-2t$ 이다. 점 $\\mathrm{P}$ 가 운동 방향을 바꾸는 시각을 구하시오.",
+  "choices": [
+   "$1$",
+   "$2$",
+   "$3$",
+   "$4$",
+   "$6$"
+  ],
+  "answer": "③",
+  "solution": "1. 운동 방향을 바꾸는 순간에는 속도가 $0$ 이므로 $6-2t=0$ 이다.\n2. 따라서 $t=3$ 이다.\n3. $t<3$ 이면 $v>0$, $t>3$ 이면 $v<0$ 이므로 $t=3$ 에서 운동 방향을 바꾼다. 정답 ③",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18618",
+  "custom": true
+ },
+ {
+  "id": "fill3-5854640f14",
+  "typeId": "18618",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "수직선 위를 움직이는 점 $\\mathrm{P}$ 의 시각 $t\\ (t\\ge 0)$ 에서의 위치가 $x=t^{2}-6t$ 이다. 시각 $t=1$ 에서 점 $\\mathrm{P}$ 의 운동 방향과 속력으로 옳은 것은?",
+  "choices": [
+   "음의 방향, 속력 $4$",
+   "양의 방향, 속력 $4$",
+   "음의 방향, 속력 $5$",
+   "양의 방향, 속력 $5$",
+   "정지해 있다"
+  ],
+  "answer": "①",
+  "solution": "1. 속도는 $v=\\dfrac{dx}{dt}=2t-6$ 이다.\n2. $t=1$ 일 때 $v=2-6=-4$ 이다.\n3. 속도가 음수이므로 음의 방향으로 움직이고, 속력은 $|-4|=4$ 이다. (위치 $x=1-6=-5$ 를 속력으로 착각하지 않도록 한다.) 정답 ①",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18618",
+  "custom": true
+ },
+ {
+  "id": "fill3-a5c6f98eb4",
+  "typeId": "18663",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)$ 가 모든 실수 $x$ 에 대하여 $f(x)=x+\\displaystyle\\int_{0}^{2}f(t)\\,dt$ 를 만족시킬 때, $\\displaystyle\\int_{0}^{2}f(t)\\,dt$ 의 값은?",
+  "choices": [
+   "$-4$",
+   "$-2$",
+   "$-1$",
+   "$1$",
+   "$2$"
+  ],
+  "answer": "②",
+  "solution": "1. $\\displaystyle\\int_{0}^{2}f(t)\\,dt=k$ ($k$는 상수)로 놓으면 $f(x)=x+k$ 이다.\n2. $k=\\displaystyle\\int_{0}^{2}(t+k)\\,dt=\\left[\\frac{1}{2}t^{2}+kt\\right]_{0}^{2}=2+2k$ 이다.\n3. $k=2+2k$ 에서 $k=-2$ 이다. 따라서 정답은 ② $-2$ 이다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18663",
+  "custom": true
+ },
+ {
+  "id": "fill3-e42299cf62",
+  "typeId": "18663",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)$ 가 모든 실수 $x$ 에 대하여 $f(x)=3x^{2}+2\\displaystyle\\int_{0}^{1}f(t)\\,dt$ 를 만족시킬 때, $f(1)$ 의 값은?",
+  "choices": [
+   "$-2$",
+   "$-1$",
+   "$0$",
+   "$1$",
+   "$2$"
+  ],
+  "answer": "④",
+  "solution": "1. $\\displaystyle\\int_{0}^{1}f(t)\\,dt=k$ 로 놓으면 $f(x)=3x^{2}+2k$ 이다.\n2. $k=\\displaystyle\\int_{0}^{1}(3t^{2}+2k)\\,dt=\\left[t^{3}+2kt\\right]_{0}^{1}=1+2k$ 이므로 $k=-1$ 이다.\n3. $f(x)=3x^{2}-2$ 이므로 $f(1)=3-2=1$ 이다. 따라서 정답은 ④ $1$ 이다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18663",
+  "custom": true
+ },
+ {
+  "id": "fill3-3513e8b354",
+  "typeId": "18663",
+  "kind": "객관식",
+  "diff": 1,
+  "body": "함수 $f(x)$ 가 모든 실수 $x$ 에 대하여 $f(x)=6x-\\displaystyle\\int_{0}^{1}f(t)\\,dt$ 를 만족시킬 때, $f(0)$ 의 값은?",
+  "choices": [
+   "$-3$",
+   "$3$",
+   "$0$",
+   "$\\dfrac{3}{2}$",
+   "$-\\dfrac{3}{2}$"
+  ],
+  "answer": "⑤",
+  "solution": "1. $\\displaystyle\\int_{0}^{1}f(t)\\,dt=k$ 로 놓으면 $f(x)=6x-k$ 이다.\n2. $k=\\displaystyle\\int_{0}^{1}(6t-k)\\,dt=\\left[3t^{2}-kt\\right]_{0}^{1}=3-k$ 이므로 $2k=3$, $k=\\dfrac{3}{2}$ 이다.\n3. $f(x)=6x-\\dfrac{3}{2}$ 이므로 $f(0)=-\\dfrac{3}{2}$ 이다. 따라서 정답은 ⑤ 이다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18663",
+  "custom": true
+ },
+ {
+  "id": "fill3-3566794137",
+  "typeId": "18663",
+  "kind": "주관식",
+  "diff": 1,
+  "body": "함수 $f(x)$ 가 모든 실수 $x$ 에 대하여 $f(x)=4x^{3}-3\\displaystyle\\int_{0}^{1}f(t)\\,dt$ 를 만족시킬 때, $\\displaystyle\\int_{0}^{1}f(t)\\,dt$ 의 값을 구하시오.",
+  "answer": "$\\dfrac{1}{4}$",
+  "solution": "1. $\\displaystyle\\int_{0}^{1}f(t)\\,dt=k$ 로 놓으면 $f(x)=4x^{3}-3k$ 이다.\n2. $k=\\displaystyle\\int_{0}^{1}(4t^{3}-3k)\\,dt=\\left[t^{4}-3kt\\right]_{0}^{1}=1-3k$ 이다.\n3. $4k=1$ 이므로 $k=\\dfrac{1}{4}$ 이다. 따라서 정답은 $\\dfrac{1}{4}$ 이다.",
+  "source": "유사 문항(삼자 검수)",
+  "twinGroup": "tw-18663",
+  "custom": true
+ }
+]
