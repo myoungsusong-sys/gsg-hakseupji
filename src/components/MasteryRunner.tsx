@@ -130,9 +130,21 @@ export default function MasteryRunner({
   // 층이 바뀌면 그 층의 문제를 새로 뽑는다
   // 🔴 2026-10-01: 새로고침·앱 재시작 뒤에도 **풀던 그 문제**로 돌아온다(같은 층·같은 진행 수일 때만).
   const curKey = studentId && studentId !== 'me' ? `${studentId}:ladder-cur:${typeId}` : null
+  // 🔴 2026-11-28 윤자혜 선생님 «강의 다 봤는데도 넘어가지 않아요» — 이 효과는 문항 목록(pool·base)이 다시 그려질 때도
+  //    돈다. 그때마다 0층을 «강의»로 되돌려서, 저장·동기화로 화면이 다시 그려지면 [개념 빈칸으로]를 눌러도 강의로
+  //    튕겨 돌아갔다. 0층 화면(강의·빈칸 차례)은 «층이 실제로 바뀔 때»만 처음으로 돌린다.
+  const lastFloor = useRef<number | null>(null)
   useEffect(() => {
+    const floorChanged = lastFloor.current !== state.floor
+    lastFloor.current = state.floor
+    if (state.floor === 0) {
+      if (floorChanged) {
+        setPicked(null); setRevealed(false); setInput(''); setSel(''); setPartVals([]); setJudged(null)
+        setCurrent(null); setBlankIdx(0); setBlankShown(false); setLecStage('lec')
+      }
+      return
+    }
     setPicked(null); setRevealed(false); setInput(''); setSel(''); setPartVals([]); setJudged(null)
-    if (state.floor === 0) { setCurrent(null); setBlankIdx(0); setBlankShown(false); setLecStage('lec'); return }
     // 오늘 몫을 다 썼으면 다음 문제를 뽑지 않는다 — 뽑아 두면 servedIds 에 들어가 내일 그 문제를 잃는다
     if (cappedRef.current) { setCurrent(null); return }
     const kept = curKey ? readSticky<{ floor: number; n: number; pid: string }>(curKey) : undefined

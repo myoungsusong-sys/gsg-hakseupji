@@ -59,8 +59,15 @@ export default function TypeLecture({ lecture, watched, onWatched, onNext }: {
             const v = e.currentTarget
             if (v.currentTime > maxT.current) maxT.current = v.currentTime
             if (v.duration) setLeft(Math.max(0, Math.ceil(v.duration - v.currentTime)))
+            // 🔴 2026-11-28 윤자혜 선생님 «다 봤는데도 넘어가지 않아요» — 태블릿은 영상이 끝 1~2초 앞에서 멈추면
+            //    ended 신호가 안 와 단추가 영영 안 열렸다. 끝 3초 안에 닿으면 다 본 것으로 친다.
+            if (!ended && v.duration && v.currentTime >= v.duration - 3) { setEnded(true); onWatched() }
           }}
-          onEnded={() => { setEnded(true); onWatched() }} />
+          onPause={(e) => {
+            const v = e.currentTarget
+            if (!ended && v.duration && v.currentTime >= v.duration - 3) { setEnded(true); onWatched() }
+          }}
+          onEnded={() => { if (!ended) { setEnded(true); onWatched() } }} />
       )}
       {!!lecture.notes?.length && (
         <div className="mt-3">
