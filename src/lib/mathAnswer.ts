@@ -243,8 +243,47 @@ const POSITIONAL = /\(\)/
  * 자리 표시형 답에서는 괄호를 남긴다.
  */
 export function looseMath(s: string): string {
-  const n = normMath(s).replace(/\^/g, '').replace(/[°·・]/g, '')
-  return POSITIONAL.test(n) ? n : n.replace(/[()]/g, '')
+  const n = normMath(s).replace(/[°·・]/g, '')
+  if (POSITIONAL.test(n)) return n.replace(/\^/g, '')
+  // 🔴 2026-11-28 점검: 괄호를 **모두** 지우면 2(x+3) 과 2x+3 이 같아져 오답이 정답이 됐다.
+  //    곱셈을 뜻하는 괄호(숫자·문자·닫는 괄호 바로 뒤에 오는 괄호: 2(x+3)·x(x+1)·(a)(b))는 남기고,
+  //    분수·거듭제곱 표기에서 생긴 괄호((x+1)/2 · x^(2) · √(2))만 지운다. ^ 는 괄호를 다 정리한 뒤에 지운다.
+  return stripGroupingParens(n).replace(/\^/g, '')
+}
+
+/** 곱셈이 아닌 괄호만 안쪽부터 벗긴다 — 여는 괄호 바로 앞이 숫자·문자·π·닫는 괄호면 곱셈 괄호로 보고 남긴다. */
+function stripGroupingParens(n: string): string {
+  let prev: string
+  do {
+    prev = n
+    n = n.replace(/(^|[^0-9a-zA-Zπ)])\(([^()]*)\)/g, '$1$2')
+    // 답 전체를 감싼 바깥 괄호 한 겹((5xy(2x+3)))도 벗긴다 — 안에 곱셈 괄호가 있어 위 정규식이 못 잡는다
+    if (n.startsWith('(') && n.endsWith(')') && closingOf(n, 0) === n.length - 1) n = n.slice(1, -1)
+  } while (n !== prev)
+  return n
+}
+
+/** n[i] 의 '(' 와 짝인 ')' 위치 (없으면 -1) */
+function closingOf(n: string, i: number): number {
+  let d = 0
+  for (let k = i; k < n.length; k++) {
+    if (n[k] === '(') d++
+    else if (n[k] === ')' && --d === 0) return k
+  }
+  return -1
+}
+
+/** 맨 바깥 쉼표에서만 자른다 — 괄호 안 쉼표(좌표 (2, 3)·구간 [1, 5))는 한 덩어리로 둔다. */
+function splitTopComma(s: string): string[] {
+  const out: string[] = []
+  let depth = 0, cur = ''
+  for (const ch of s) {
+    if (ch === '(' || ch === '[' || ch === '{') depth++
+    else if ((ch === ')' || ch === ']' || ch === '}') && depth > 0) depth--
+    if (ch === ',' && depth === 0) { out.push(cur); cur = '' } else cur += ch
+  }
+  out.push(cur)
+  return out.map(x => x.trim()).filter(Boolean)
 }
 
 // ── 값 계산 ────────────────────────────────────────────────────────────────
@@ -367,6 +406,9 @@ function tokenEq(correct: string, student: string): boolean {
   if (ce === se) return true
   const cv = mathValue(ce), sv = mathValue(se)
   if (cv !== null && sv !== null && near(cv, sv)) return true
+  // 🔴 2026-11-28 점검: 둘 다 값이 나오는데 다르고, 그 차이가 ^·숫자 뒤 괄호(곱셈) 때문이면 오답이다.
+  //    아래 느슨한 비교는 ^ 를 지우므로 2^5(=32) 와 25, 10^3 과 103 을 같게 봤다.
+  if (cv !== null && sv !== null && (/\^/.test(ce + se) || /[0-9)]\(/.test(ce + se))) return false
   // 값이 다르거나 값으로 못 읽는 식(변수 포함) — 표기 차이만 무시하고 비교.
   // ("5/6 / 1/6"처럼 /가 나눗셈이 아니라 답 구분자로 쓰인 데이터가 있어 값 비교만으론 부족)
   const cl = looseMath(ce), sl = looseMath(se)
@@ -428,7 +470,7 @@ export function mathEqual(correct: string, student: string): boolean {
   // (조각 수가 다르면 그대로 오답. "15.4 kg, 1.1 kg"를 띄어 쓰면 4조각이라 매칭 안 됨)
   // ⚠️ 천단위 쉼표("1,200")는 답이 두 개가 아니라 한 수이므로 제외한다.
   if (!sRaw.includes(',') && /\s/.test(sRaw) && !/\d\s*,\s*\d{3}(?!\d)/.test(correct ?? '')) {
-    const cn = (correct ?? '').split(',').length
+    const cn = splitTopComma(correct ?? '').length
     const toks = sRaw.split(/\s+/).filter(Boolean)
     if (cn > 1 && toks.length === cn) {
       for (const a of alternatives(toks.join(','))) {
@@ -438,15 +480,20 @@ export function mathEqual(correct: string, student: string): boolean {
     }
   }
 
+  // 학생이 답 전체를 괄호 한 겹으로 감싼 경우(「(백, 십, 일)」) — 정답이 괄호로 시작하지 않을 때만 벗겨서도 비교한다.
+  //   (괄호 안 쉼표를 한 덩어리로 보게 바꾼 뒤(2026-11-28) 이런 답이 다중답 비교에서 빠지지 않게)
+  const unwrapped = sAlts.flatMap(s => (s.startsWith('(') && closingOf(s, 0) === s.length - 1 ? [s.slice(1, -1).trim()] : []))
   for (const cAlt of alternatives(correct)) {
     const c = normMath(cAlt)
     if (!c) continue
-    for (const s of sAlts) {
+    for (const s of c.startsWith('(') ? sAlts : [...sAlts, ...unwrapped]) {
       if (c === s) return true
       if (tokenEq(c, s)) return true
-      // 다중 답 — 쉼표로 나눠 순서 무관 비교 (개수는 같아야 함)
-      const ct = c.split(',').map(x => x.trim()).filter(Boolean)
-      const st = s.split(',').map(x => x.trim()).filter(Boolean)
+      // 다중 답 — 맨 바깥 쉼표로 나눠 순서 무관 비교 (개수는 같아야 함)
+      // 🔴 2026-11-28 점검: 예전엔 괄호 안 쉼표까지 잘라 좌표 (2, 3) 에 (3, 2) 를 써도 정답이었다.
+      //    이제 (2, 3) 은 한 덩어리 — 그 안은 순서대로 비교된다. 덩어리끼리(점 여러 개)는 여전히 순서 무관.
+      const ct = splitTopComma(c)
+      const st = splitTopComma(s)
       if (ct.length > 1 && ct.length === st.length) {
         const pool = [...st]
         const ok = ct.every(x => {
