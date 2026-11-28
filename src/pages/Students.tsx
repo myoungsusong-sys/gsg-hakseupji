@@ -857,7 +857,7 @@ function DetailModal({ s, onClose }: { s: Student; onClose: () => void }) {
       const token = sess.session?.access_token
       const r = await fetch('/api/create-student-account', {
         method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token ?? ''}` },
-        body: JSON.stringify({ action, loginId: acctId, password: `gsg${acctId}`, name: live.name }),
+        body: JSON.stringify({ action, loginId: acctId, password: `gsg${acctId}`, name: live.name, authEmail: live.authEmail ?? '' }),
       })
       const j = await r.json().catch(() => ({}))
       if (!r.ok) {

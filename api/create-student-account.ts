@@ -26,7 +26,8 @@ export default async function handler(req: any, res: any) {
   const token = auth.startsWith('Bearer ') ? auth.slice(7) : ''
   if (!token) { res.status(401).json({ error: '로그인 후 이용해 주세요.' }); return }
 
-  const { action, loginId, password, name } = await readBody(req)
+  const body = await readBody(req)
+  const { action, loginId, password, name } = body
   const act = action === 'reset' ? 'reset' : 'create'
   const id = String(loginId ?? '').trim().toLowerCase()
   const pw = String(password ?? '')
@@ -57,17 +58,31 @@ export default async function handler(req: any, res: any) {
     }
 
     // reset — 이메일로 사용자 검색(소규모 학원 규모라 페이지 스캔으로 충분) → 비밀번호 변경
+    // 🔴 11/28 윤자혜 선생님 «초기화를 눌러도 예전번호 그대로» — 예전엔 10쪽(2,000명)까지만 뒤져 그 뒤 계정은
+    //    «계정 없음»으로 끝났다. 끝까지 뒤지고, 앱에 저장된 로그인 메일(authEmail)도 함께 찾는다.
+    const alt = String(body?.authEmail ?? '').trim().toLowerCase()
+    const want = new Set([email, ...(alt.endsWith(`@${STUDENT_DOMAIN}`) ? [alt] : [])])
     let uid: string | null = null
-    for (let page = 1; page <= 10 && !uid; page++) {
-      const { data, error } = await admin.auth.admin.listUsers({ page, perPage: 200 })
+    let foundEmail = email
+    for (let page = 1; page <= 200 && !uid; page++) {
+      const { data, error } = await admin.auth.admin.listUsers({ page, perPage: 1000 })
       if (error) { res.status(502).json({ error: String(error.message).slice(0, 200) }); return }
-      uid = data.users.find(u => (u.email ?? '').toLowerCase() === email)?.id ?? null
-      if (data.users.length < 200) break
+      const u = data.users.find(x => want.has((x.email ?? '').toLowerCase()))
+      if (u) { uid = u.id; foundEmail = (u.email ?? email).toLowerCase() }
+      if (data.users.length < 1000) break
     }
-    if (!uid) { res.status(404).json({ error: '이 아이디의 계정이 아직 없습니다. 먼저 계정을 만들어 주세요.' }); return }
-    const { error: perr } = await admin.auth.admin.updateUserById(uid, { password: pw })
+    if (!uid) {
+      // 계정이 정말 없으면 이 비밀번호로 새로 만든다 — 초기화를 눌렀는데 아무 일도 안 일어나는 일이 없게
+      const { error } = await admin.auth.admin.createUser({
+        email, password: pw, email_confirm: true,
+        user_metadata: { role: 'student', name: String(name ?? '').slice(0, 40) },
+      })
+      if (error) { res.status(502).json({ error: String(error.message).slice(0, 200) }); return }
+      res.status(200).json({ ok: true, email, created: true }); return
+    }
+    const { error: perr } = await admin.auth.admin.updateUserById(uid, { password: pw, email_confirm: true })
     if (perr) { res.status(502).json({ error: String(perr.message).slice(0, 200) }); return }
-    res.status(200).json({ ok: true, email })
+    res.status(200).json({ ok: true, email: foundEmail })
   } catch (e: any) {
     res.status(502).json({ error: String(e?.message ?? e).slice(0, 200) })
   }
