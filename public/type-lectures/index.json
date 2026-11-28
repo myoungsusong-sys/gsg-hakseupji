@@ -18,12 +18,12 @@
  "131": {
   "title": "영양소",
   "video": "type-lectures/131.mp4",
-  "sec": 557
+  "sec": 692
  },
  "141": {
   "title": "호흡계",
   "video": "type-lectures/141.mp4",
-  "sec": 575
+  "sec": 691
  },
  "exam2-kor-m22-hae-u0m0s0t0": {
   "title": "1-1. 세상을 그려 낸 문학 – 수난이대 · O·X 확인",
@@ -33,27 +33,27 @@
  "132": {
   "title": "영양소 검출",
   "video": "type-lectures/132.mp4",
-  "sec": 725
+  "sec": 885
  },
  "133": {
   "title": "소화",
   "video": "type-lectures/133.mp4",
-  "sec": 540
+  "sec": 673
  },
  "135": {
   "title": "침의 소화 작용 실험",
   "video": "type-lectures/135.mp4",
-  "sec": 760
+  "sec": 914
  },
  "142": {
   "title": "호흡운동",
   "video": "type-lectures/142.mp4",
-  "sec": 690
+  "sec": 835
  },
  "143": {
   "title": "기체교환",
   "video": "type-lectures/143.mp4",
-  "sec": 592
+  "sec": 737
  },
  "173": {
   "title": "시차와 연주시차",
@@ -143,22 +143,22 @@
  "134": {
   "title": "소화계와 소화 과정",
   "video": "type-lectures/134.mp4",
-  "sec": 978
+  "sec": 1194
  },
  "136": {
   "title": "영양소의흡수",
   "video": "type-lectures/136.mp4",
-  "sec": 473
+  "sec": 586
  },
  "138": {
   "title": "혈관",
   "video": "type-lectures/138.mp4",
-  "sec": 582
+  "sec": 717
  },
  "139": {
   "title": "혈액의 구성",
   "video": "type-lectures/139.mp4",
-  "sec": 610
+  "sec": 729
  },
  "175": {
   "title": "별의 밝기와 거리",
@@ -1663,12 +1663,12 @@
  "16524": {
   "title": "명제가 참이 되도록 하는 미지수 구하기",
   "video": "type-lectures/16524.mp4",
-  "sec": 639
+  "sec": 797
  },
  "16570": {
   "title": "f(ax+b) 꼴로 나타낸 함수",
   "video": "type-lectures/16570.mp4",
-  "sec": 481
+  "sec": 586
  },
  "178": {
   "title": "별의 등급과 거리 관계",
@@ -1863,22 +1863,22 @@
  "16523": {
   "title": "거짓인 명제의 반례",
   "video": "type-lectures/16523.mp4",
-  "sec": 784
+  "sec": 961
  },
  "16555": {
   "title": "함수의 뜻",
   "video": "type-lectures/16555.mp4",
-  "sec": 757
+  "sec": 924
  },
  "16595": {
   "title": "절댓값 기호를 포함한 함수",
   "video": "type-lectures/16595.mp4",
-  "sec": 425
+  "sec": 513
  },
  "16598": {
   "title": "유리식의 사칙연산",
   "video": "type-lectures/16598.mp4",
-  "sec": 565
+  "sec": 677
  },
  "16609": {
   "title": "유리식의 값(3) {x/a}={y/b}={z/c}의 꼴이 주어질 때",
@@ -2113,132 +2113,132 @@
  "16516": {
   "title": "명제",
   "video": "type-lectures/16516.mp4",
-  "sec": 487
+  "sec": 582
  },
  "16519": {
   "title": "조건의 진리집합",
   "video": "type-lectures/16519.mp4",
-  "sec": 526
+  "sec": 665
  },
  "16520": {
   "title": "명제 p→q의 참, 거짓",
   "video": "type-lectures/16520.mp4",
-  "sec": 836
+  "sec": 1009
  },
  "16521": {
   "title": "명제의 참, 거짓과 진리집합",
   "video": "type-lectures/16521.mp4",
-  "sec": 507
+  "sec": 626
  },
  "16522": {
   "title": "´모든´이나 ´어떤´을 포함한 명제의 참, 거짓",
   "video": "type-lectures/16522.mp4",
-  "sec": 580
+  "sec": 704
  },
  "16528": {
   "title": "삼단논법",
   "video": "type-lectures/16528.mp4",
-  "sec": 603
+  "sec": 745
  },
  "16529": {
   "title": "삼단논법과 명제의 추론",
   "video": "type-lectures/16529.mp4",
-  "sec": 733
+  "sec": 910
  },
  "16536": {
   "title": "대우를 이용한 명제의 증명",
   "video": "type-lectures/16536.mp4",
-  "sec": 742
+  "sec": 896
  },
  "16538": {
   "title": "부등식의 증명(1) 두 식의 차를 이용한 대소 비교",
   "video": "type-lectures/16538.mp4",
-  "sec": 477
+  "sec": 579
  },
  "16539": {
   "title": "부등식의 증명(2) 두 식의 제곱의 차를 이용한 대소 비교",
   "video": "type-lectures/16539.mp4",
-  "sec": 564
+  "sec": 697
  },
  "16545": {
   "title": "산술평균과 기하평균의 관계(2) 합이 일정한 경우",
   "video": "type-lectures/16545.mp4",
-  "sec": 686
+  "sec": 838
  },
  "16548": {
   "title": "산술평균과 기하평균의 관계(4) 복잡한 식의 최대·최소",
   "video": "type-lectures/16548.mp4",
-  "sec": 603
+  "sec": 751
  },
  "16549": {
   "title": "산술평균과 기하평균의 관계(5) 도형에서의 활용",
   "video": "type-lectures/16549.mp4",
-  "sec": 535
+  "sec": 650
  },
  "16551": {
   "title": "코시-슈바르츠의 부등식(1)",
   "video": "type-lectures/16551.mp4",
-  "sec": 367
+  "sec": 451
  },
  "16557": {
   "title": "함숫값",
   "video": "type-lectures/16557.mp4",
-  "sec": 581
+  "sec": 710
  },
  "16558": {
   "title": "함수의 정의역, 공역, 치역",
   "video": "type-lectures/16558.mp4",
-  "sec": 785
+  "sec": 958
  },
  "16563": {
   "title": "일대일대응이 되기 위한 조건",
   "video": "type-lectures/16563.mp4",
-  "sec": 653
+  "sec": 811
  },
  "16566": {
   "title": "조건을 만족시키는 함수의 개수",
   "video": "type-lectures/16566.mp4",
-  "sec": 722
+  "sec": 885
  },
  "16571": {
   "title": "fｏg=h를 만족시키는 함수 f 또는 g 구하기",
   "video": "type-lectures/16571.mp4",
-  "sec": 559
+  "sec": 694
  },
  "16577": {
   "title": "역함수가 존재하기 위한 조건",
   "video": "type-lectures/16577.mp4",
-  "sec": 719
+  "sec": 869
  },
  "16581": {
   "title": "함수와 그 역함수가 서로 같은 경우",
   "video": "type-lectures/16581.mp4",
-  "sec": 696
+  "sec": 861
  },
  "16585": {
   "title": "역함수와 합성함수의 성질",
   "video": "type-lectures/16585.mp4",
-  "sec": 599
+  "sec": 726
  },
  "16588": {
   "title": "역함수의 그래프의 성질",
   "video": "type-lectures/16588.mp4",
-  "sec": 639
+  "sec": 780
  },
  "16591": {
   "title": "주기함수와 대칭함수",
   "video": "type-lectures/16591.mp4",
-  "sec": 633
+  "sec": 778
  },
  "16597": {
   "title": "유리식의 뜻과 성질",
   "video": "type-lectures/16597.mp4",
-  "sec": 615
+  "sec": 772
  },
  "16600": {
   "title": "유리식과 항등식",
   "video": "type-lectures/16600.mp4",
-  "sec": 333
+  "sec": 397
  },
  "16608": {
   "title": "유리식의 값(2) 비례식이 주어질 때",
@@ -2598,77 +2598,77 @@
  "16526": {
   "title": "명제의 역과 대우의 참, 거짓",
   "video": "type-lectures/16526.mp4",
-  "sec": 695
+  "sec": 849
  },
  "16534": {
   "title": "충분조건, 필요조건, 필요충분조건과 진리집합",
   "video": "type-lectures/16534.mp4",
-  "sec": 782
+  "sec": 977
  },
  "16537": {
   "title": "귀류법",
   "video": "type-lectures/16537.mp4",
-  "sec": 661
+  "sec": 802
  },
  "16541": {
   "title": "실수의 성질을 이용한 절대부등식의 증명",
   "video": "type-lectures/16541.mp4",
-  "sec": 605
+  "sec": 736
  },
  "16544": {
   "title": "산술평균과 기하평균의 관계(1) 곱이 일정한 경우",
   "video": "type-lectures/16544.mp4",
-  "sec": 582
+  "sec": 715
  },
  "16561": {
   "title": "함수의 그래프",
   "video": "type-lectures/16561.mp4",
-  "sec": 457
+  "sec": 558
  },
  "16562": {
   "title": "일대일함수와 일대일대응",
   "video": "type-lectures/16562.mp4",
-  "sec": 604
+  "sec": 732
  },
  "16580": {
   "title": "합성함수와 역함수",
   "video": "type-lectures/16580.mp4",
-  "sec": 663
+  "sec": 794
  },
  "16582": {
   "title": "역함수의 성질",
   "video": "type-lectures/16582.mp4",
-  "sec": 520
+  "sec": 641
  },
  "16584": {
   "title": "구간에 따라 다르게 정의된 함수의 역함수 값 구하기",
   "video": "type-lectures/16584.mp4",
-  "sec": 599
+  "sec": 730
  },
  "16589": {
   "title": "그래프가 주어질 때 역함수의 함숫값 구하기",
   "video": "type-lectures/16589.mp4",
-  "sec": 636
+  "sec": 763
  },
  "16590": {
   "title": "우함수와 기함수",
   "video": "type-lectures/16590.mp4",
-  "sec": 829
+  "sec": 1008
  },
  "16601": {
   "title": "(분자의 차수)≥(분모의 차수)인 유리식의 변형",
   "video": "type-lectures/16601.mp4",
-  "sec": 476
+  "sec": 591
  },
  "16602": {
   "title": "부분분수로의 변형",
   "video": "type-lectures/16602.mp4",
-  "sec": 551
+  "sec": 680
  },
  "16604": {
   "title": "분모 또는 분자가 분수식인 유리식",
   "video": "type-lectures/16604.mp4",
-  "sec": 503
+  "sec": 628
  },
  "16619": {
   "title": "유리함수의 그래프의 평행이동",
@@ -2863,12 +2863,12 @@
  "16553": {
   "title": "코시-슈바르츠의 부등식(2)",
   "video": "type-lectures/16553.mp4",
-  "sec": 299
+  "sec": 372
  },
  "16573": {
   "title": "합성함수의 그래프",
   "video": "type-lectures/16573.mp4",
-  "sec": 673
+  "sec": 837
  },
  "16610": {
   "title": "유리식의 값(4) 관계식이 주어질 때",
@@ -3003,47 +3003,47 @@
  "16518": {
   "title": "명제와 조건의 부정",
   "video": "type-lectures/16518.mp4",
-  "sec": 681
+  "sec": 843
  },
  "16530": {
   "title": "충분조건, 필요조건, 필요충분조건",
   "video": "type-lectures/16530.mp4",
-  "sec": 732
+  "sec": 885
  },
  "16533": {
   "title": "충분조건, 필요조건, 필요충분조건을 만족하는 미지수 구하기",
   "video": "type-lectures/16533.mp4",
-  "sec": 487
+  "sec": 584
  },
  "16535": {
   "title": "충분조건, 필요조건, 필요충분조건과 삼단논법",
   "video": "type-lectures/16535.mp4",
-  "sec": 586
+  "sec": 715
  },
  "16542": {
   "title": "절댓값 기호를 포함한 절대부등식",
   "video": "type-lectures/16542.mp4",
-  "sec": 505
+  "sec": 631
  },
  "16560": {
   "title": "서로 같은 함수",
   "video": "type-lectures/16560.mp4",
-  "sec": 687
+  "sec": 827
  },
  "16565": {
   "title": "여러 가지 함수의 개수",
   "video": "type-lectures/16565.mp4",
-  "sec": 891
+  "sec": 1072
  },
  "16574": {
   "title": "그래프가 주어질 때 합성함수의 함숫값 구하기",
   "video": "type-lectures/16574.mp4",
-  "sec": 631
+  "sec": 770
  },
  "16576": {
   "title": "역함수와 함숫값",
   "video": "type-lectures/16576.mp4",
-  "sec": 685
+  "sec": 856
  },
  "16621": {
   "title": "유리함수의 그래프의 점근선",
@@ -3233,42 +3233,42 @@
  "16527": {
   "title": "명제의 대우를 이용하여 미지수 구하기",
   "video": "type-lectures/16527.mp4",
-  "sec": 623
+  "sec": 776
  },
  "16540": {
   "title": "절대부등식",
   "video": "type-lectures/16540.mp4",
-  "sec": 554
+  "sec": 674
  },
  "16546": {
   "title": "산술평균과 기하평균의 관계(3) 식의 변형을 이용하는 경우",
   "video": "type-lectures/16546.mp4",
-  "sec": 456
+  "sec": 563
  },
  "16564": {
   "title": "항등함수와 상수함수",
   "video": "type-lectures/16564.mp4",
-  "sec": 664
+  "sec": 821
  },
  "16568": {
   "title": "합성함수의 함숫값",
   "video": "type-lectures/16568.mp4",
-  "sec": 571
+  "sec": 693
  },
  "16569": {
   "title": "fｏg=gｏf인 경우",
   "video": "type-lectures/16569.mp4",
-  "sec": 581
+  "sec": 726
  },
  "16572": {
   "title": "fⁿ 꼴의 합성함수",
   "video": "type-lectures/16572.mp4",
-  "sec": 609
+  "sec": 731
  },
  "16579": {
   "title": "역함수 구하기",
   "video": "type-lectures/16579.mp4",
-  "sec": 832
+  "sec": 1011
  },
  "16622": {
   "title": "유리함수의 그래프의 대칭성",
@@ -3413,7 +3413,7 @@
  "16559": {
   "title": "조건을 이용하여 함숫값 구하기",
   "video": "type-lectures/16559.mp4",
-  "sec": 407
+  "sec": 489
  },
  "18695": {
   "title": "등변사다리꼴의 성질의 활용(1) 평행사변형과 이등변삼각형으로 나눌 때",
@@ -3503,12 +3503,12 @@
  "16554": {
   "title": "코시-슈바르츠의 부등식(3) 도형에서의 활용",
   "video": "type-lectures/16554.mp4",
-  "sec": 322
+  "sec": 401
  },
  "16593": {
   "title": "절댓값 기호가 있는 일차식의 그래프",
   "video": "type-lectures/16593.mp4",
-  "sec": 760
+  "sec": 917
  },
  "16614": {
   "title": "비례식의 활용",
