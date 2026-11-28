@@ -87,6 +87,16 @@ function courseOfType(typeId: string): string | null {
   return typeCourse?.[typeId] ?? null
 }
 
+// 🔢 2026-11-28 윤자혜 선생님 «다면체의 면의 개수 127문항 — 같은 유형이 너무 많아 시간이 오래 걸린다는데» —
+//    학생은 목록의 «127문항»을 다 풀어야 하는 줄 알았다(실제로는 14문제로 마스터). 문제은행 수 대신
+//    «얼마나 풀게 되는지»를 보인다. 문제은행 수는 마우스를 올리면 보인다.
+function 풀양(st: MasteryState | undefined): string {
+  const done = Array.isArray(st?.log) ? st!.log.length : 0
+  if (st?.mastered) return `${done}문제로 마스터`
+  if (done > 0) return `${done}문제 풀었어요`
+  return '보통 10문제 안팎'
+}
+
 export default function MasteryPage({ studentId: studentIdProp = 'me' }: { studentId?: string }) {
   const { problems, ensureCourse, poolLoaded, masteries, saveMastery, allStudents, gradings, wbItems, studentAppConfig } = useStore()
   const [params, setParams] = useSearchParams()
@@ -583,7 +593,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
                       <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
                         {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
                         {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
-                        {counts.get(id) ?? 0}문항
+                        <span title={`문제은행 ${counts.get(id) ?? 0}문항`}>{풀양(st)}</span>
                       </span>
                     </button>
                     {pickBtns(id, st)}
@@ -727,7 +737,7 @@ export default function MasteryPage({ studentId: studentIdProp = 'me' }: { stude
                 <span className="flex shrink-0 items-center gap-2 text-xs text-ink2">
                   {st?.mastered && <span className="rounded bg-pine-soft px-1.5 py-0.5 font-bold text-pine-dark">마스터</span>}
                   {st && !st.mastered && <span className="rounded bg-sky-100 px-1.5 py-0.5 font-bold text-sky-800">진행 중</span>}
-                  {n}문항
+                  <span title={`문제은행 ${n}문항`}>{n === 0 ? '문제 없음' : 풀양(st)}</span>
                 </span>
               </button>
               {pickBtns(r.id, st, n === 0)}
