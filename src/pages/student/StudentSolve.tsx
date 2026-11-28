@@ -355,6 +355,10 @@ export default function StudentSolve() {
     void noteSheet({ id: me.id, name: me.name, mgmtId: me.mgmtId }, { kind: '학습지', title: ws.title, subject: ws.subject ?? '수학', answered: answeredN, total: list.length })
   }, [ws?.id, answeredN, list.length])   // eslint-disable-line react-hooks/exhaustive-deps
 
+  // 필기 실시간 올리기 스로틀(아래 pushLiveInk). 🔴 2026-11-28 점검: 이 훅이 아래 조건부 return 뒤에 있어서
+  //    새로고침 직후·1회 시험 제출 직후·마감 순간 훅 개수가 바뀌어 화면이 깨지고 필기가 날아갔다 → return 위로 올림.
+  const lastLive = useRef(0)
+
   // 🔴 2026-09-29 「챌린지 자꾸 튕겨내고 뒤로 돌아가」 — 새로고침 직후 클라우드 자료가 오기 전에는 학습지가 아직 없다.
   //    그때 바로 목록으로 돌려보내면 풀던 학생이 튕겨 나간다 → 자료를 다 받을 때까지 기다린 뒤에 판단한다.
   if ((!ws || !mine) && !synced) {
@@ -445,7 +449,8 @@ export default function StudentSolve() {
   // auto=true — ⏱ 시험 시간이 다 됐을 때. 확인창 없이 그때까지 쓴 답으로 그대로 낸다.
   async function submit(auto = false) {
     if (answered.length === 0) {
-      if (auto) { alert('시험 시간이 끝났어요. 입력한 답이 없어 제출하지 않았습니다.'); nav('/student/worksheets', { replace: true }); return }
+      // 🔴 2026-11-28: 시작 시각을 지우지 않고 나가면 이 기기에서 그 시험을 다시 못 열었다 → 지우고 나간다
+      if (auto) { clearExamStart(ws!.id); alert('시험 시간이 끝났어요. 입력한 답이 없어 제출하지 않았습니다.'); nav('/student/worksheets', { replace: true }); return }
       alert('답을 한 문제 이상 입력해주세요.'); return
     }
     const blank = list.length - answered.length
@@ -531,8 +536,7 @@ export default function StudentSolve() {
   const myRedo = redos[pid] ?? []
   // 문제 위 메인 필기도 실시간 모니터링에 올린다 (명수쌤 지시 2026-08-01).
   // 기존엔 '✏️ 풀이 쓰기' 캔버스만 올라가서, 문제 위에만 필기하는 학생은 선생님 화면에 안 보였다.
-  // 스트로크가 끝날 때마다 스로틀(2초)로 exportWork(문제이미지+잉크 합성)를 올린다.
-  const lastLive = useRef(0)
+  // 스트로크가 끝날 때마다 스로틀(2초)로 exportWork(문제이미지+잉크 합성)를 올린다. (lastLive 는 위 조건부 return 앞에 있다)
   function pushLiveInk(q: Problem, strokes: Stroke[]) {
     const now = Date.now()
     if (now - lastLive.current < 2000) return
@@ -896,7 +900,9 @@ export default function StudentSolve() {
               </div>
             ) : (
               <div className="min-w-0 max-w-md grow">
-                <AnswerInput p={p} value={cur === DONT_KNOW ? '' : cur} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(p.id, v)} />
+                {/* 🔴 2026-11-28: 칸에는 잘라내지 않은 값을 넣는다 — trim 한 값을 넣으면 치는 순간 끝 공백이 사라져
+                    대분수 «2 4/7»이 «24/7»로 들어갔다(채점·표시는 trim 한 cur 를 그대로 쓴다) */}
+                <AnswerInput p={p} value={cur === DONT_KNOW ? '' : (answers[pid] ?? '')} level={levelFromGrade(ws?.grade)} onChange={v => setAnswer(p.id, v)} />
               </div>
             )}
             {isMachineGradable(p) && (

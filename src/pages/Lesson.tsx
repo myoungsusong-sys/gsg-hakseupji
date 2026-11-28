@@ -20,6 +20,7 @@ import EngLessonTest from '../components/lesson/EngLessonTest'
 import CounselPanel from '../components/lesson/CounselPanel'
 import SchoolReviewPanel from '../components/lesson/SchoolReviewPanel'
 import GroupPanel from '../components/lesson/GroupPanel'
+import StudentAppPreview from './student/StudentAppPreview'
 
 // 매쓰플랫과 동일한 6탭. 각 탭 구현은 components/lesson/* 모듈 (리마운트로 state 유실 방지)
 type Tab = 'history' | 'today' | 'analysis' | 'worksheet' | 'wrong' | 'material' | 'voca' | 'school' | 'counsel' | 'plan' | 'solvefb' | 'report'
@@ -102,6 +103,7 @@ export default function Lesson() {
   // (학생 기본값 — 명부가 늦게 들어와도 위 studentId 가 그때그때 첫 학생을 가리킨다. 2026-07-26 «아무도 선택 안 됨» 제보 대응을 주소 방식으로 옮김)
 
   const student = groupName ? null : active.find(s => s.id === studentId) ?? null
+  const [appPreview, setAppPreview] = useState<Student | null>(null)
   const groupLabel = groupName === ALL_GROUP ? '전체 학생' : groupName
 
   // 좌측 학생 패널: 학년/반 그룹 아코디언 + 이름 검색 (매쓰플랫 동일)
@@ -158,6 +160,7 @@ export default function Lesson() {
   // 좌측 학생 목록 폭 — 매쓰플랫 실측 180px (2026-08-15). 우리는 230px 이었다.
   return (
     <div className="grid gap-6 lg:grid-cols-[180px_1fr]">
+      {appPreview && <StudentAppPreview key={appPreview.id} s={appPreview} onClose={() => setAppPreview(null)} />}
       <aside className="no-print h-fit overflow-hidden rounded-2xl border border-line bg-white">
         <div className="border-b border-line px-4 py-3">
           <div className="mb-2 flex items-center gap-2 text-sm font-black text-ink">
@@ -165,8 +168,11 @@ export default function Lesson() {
             {groupName ? `${groupLabel} 수업` : student ? `${student.name} 학생 수업` : '수업'}
           </div>
           {/* [학생앱으로 이동하기] (매쓰플랫 패널 헤더 버튼 — 새 탭으로 학생앱 열기) */}
-          <button onClick={() => window.open(`${location.origin}/#/student`, '_blank')}
-            className="mb-2.5 w-full rounded-lg border border-line py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-pine-dark">
+          {/* 🔴 2026-11-28 점검: 예전엔 새 탭으로 #/student 를 열었는데, 선생님 계정이라 학생앱이 곧바로 선생님 첫 화면으로
+              돌려보냈다(아무 학생도 안 보임). → 학생 관리의 [학생앱으로 이동]과 같은 «이 학생 시점 미리보기(보기 전용)»를 연다 */}
+          <button onClick={() => { if (student) setAppPreview(student) }} disabled={!student}
+            title={student ? `${student.name} 학생 시점의 학생앱을 미리보기로 열어요 (보기 전용)` : '왼쪽에서 학생을 먼저 고르세요'}
+            className="mb-2.5 w-full rounded-lg border border-line py-1.5 text-xs font-bold text-ink2 hover:border-pine hover:text-pine-dark disabled:cursor-not-allowed disabled:opacity-40">
             학생앱으로 이동하기 ↗
           </button>
           {/* 📊 과목 영어 — 반마다 [전체]를 누르면 그 반 영단어 현황, 이 버튼은 재원생 전체 */}

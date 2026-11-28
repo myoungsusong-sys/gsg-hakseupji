@@ -593,9 +593,17 @@ export default function MasteryRunner({
             ) : (
               <div className="mt-3 rounded-xl border border-line bg-paper2/40 p-3">
                 <p className="text-xs text-ink2">이 문항은 자동 채점이 안 됩니다. 정답과 대조해 직접 표시해 주세요.</p>
-                {isImgAnswer(String(current.answer ?? ''))
+                {/* 🔴 2026-11-28 점검: 매쓰플랫 정답이 «해설 참조»인 문항은 정답 칸에 «해설 참조»라고 찍힌 그림(answer.png)만 떠서
+                    학생이 대조할 정답 없이 맞았어요/틀렸어요를 골랐다(해설은 «틀렸어요» 뒤에만 보였다).
+                    → 정답이 그림이거나 비어 있으면(«.»·«해설 참조» 포함) 해설 그림을 바로 함께 보여 준다 */}
+                {!noAnswerText(current.answer) && (isImgAnswer(String(current.answer ?? ''))
                   ? <img src={String(current.answer)} alt="정답" className="mt-2 max-h-16" />
-                  : <div className="mt-2 whitespace-pre-wrap rounded-lg bg-white p-2 text-sm font-bold">{String(current.answer)}</div>}
+                  : <div className="mt-2 whitespace-pre-wrap rounded-lg bg-white p-2 text-sm font-bold">{String(current.answer)}</div>)}
+                {(noAnswerText(current.answer) || isImgAnswer(String(current.answer ?? ''))) && (current.solution
+                  ? (current.solution.startsWith('http')
+                      ? <img src={current.solution} alt="해설" className="mt-2 w-full max-w-[430px] rounded-lg bg-white" />
+                      : <div className="mt-2 whitespace-pre-wrap rounded-lg bg-white p-2 text-sm leading-relaxed"><MathText text={current.solution} /></div>)
+                  : noAnswerText(current.answer) && <div className="mt-2 rounded-lg bg-white p-2 text-sm text-ink2">이 문항은 정답이 등록되어 있지 않아요. 선생님께 확인받아 표시해 주세요.</div>)}
                 <div className="mt-3 flex gap-2">
                   <button type="button" onClick={() => { setJudged(true); mark(true) }}
                     className="flex-1 rounded-lg bg-pine py-2.5 text-sm font-bold text-paper">맞았어요</button>
@@ -634,6 +642,12 @@ export default function MasteryRunner({
       )}
     </Frame>
   )
+}
+
+/** 정답 칸에 실제 정답이 없는가 — 빈칸·«.»·«해설 참조»·«풀이 참조» (매쓰플랫 서술형 등) */
+function noAnswerText(answer: unknown): boolean {
+  const a = String(answer ?? '').trim()
+  return a === '' || a === '.' || /^(해설|풀이)\s*참조\.?$/.test(a)
 }
 
 // ── 껍데기 ────────────────────────────────────────────────────────────────

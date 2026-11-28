@@ -49,13 +49,36 @@ export function useStickyState<T>(key: string | null, initial: T | (() => T)): [
   return [v, setV]
 }
 
+// 🔴 2026-11-28 점검: 임시저장·시험 시작 시각 키에 학생 id 가 없어서, 같은 학습지를 여러 학생에게 낸 좌석 태블릿에서
+//    앞 학생이 풀던 답(과 시험 시계)이 다음 학생에게 그대로 넘어갔다. → 키에 «지금 이 기기의 학생» id 를 넣는다.
+//    StudentShell 이 본인을 찾은 뒤 setDraftOwner 로 알려 준다(자식 화면보다 먼저 그려지므로 첫 읽기 전에 정해진다).
+//    옛 키(학생 id 없음)는 배포 순간 풀던 답을 잃지 않도록 처음 읽는 학생에게 한 번 옮기고 지운다.
+let draftOwner = ''
+export function setDraftOwner(studentId: string): void { draftOwner = studentId }
+function ownedKey(base: string, wsId: string): string {
+  return draftOwner ? `${base}-${draftOwner}-${wsId}` : `${base}-${wsId}`
+}
+/** 새 키에 없고 옛 키에만 있으면 새 키로 옮긴다(한 번만) */
+function adoptLegacy(base: string, wsId: string): void {
+  if (!draftOwner) return
+  try {
+    const key = ownedKey(base, wsId), legacy = `${base}-${wsId}`
+    if (localStorage.getItem(key) != null) return
+    const v = localStorage.getItem(legacy)
+    if (v == null) return
+    localStorage.setItem(key, v)
+    localStorage.removeItem(legacy)
+  } catch { /* 저장 공간 문제면 옮기지 않는다 */ }
+}
+
 // 임시저장 (localStorage) — 문항 답이 바뀔 때마다 저장, 제출 시 삭제
 export function draftKey(wsId: string): string {
-  return `stu-draft-${wsId}`
+  return ownedKey('stu-draft', wsId)
 }
 export interface Draft { answers: Record<string, string>; at: string }
 export function readDraft(wsId: string): Draft | null {
   try {
+    adoptLegacy('stu-draft', wsId)
     const raw = localStorage.getItem(draftKey(wsId))
     if (!raw) return null
     const d = JSON.parse(raw) as Draft
@@ -152,8 +175,9 @@ export function examGate(exam: ExamOptions, graded: boolean, now = Date.now()): 
 }
 
 // 시험 시작 시각 — 기기에 남겨 새로고침해도 남은 시간이 이어진다(문항 임시저장과 같은 규약)
-export const examStartKey = (wsId: string) => `stu-exam-start-${wsId}`
+export const examStartKey = (wsId: string) => ownedKey('stu-exam-start', wsId)
 export function examStartedAt(wsId: string): number | null {
+  adoptLegacy('stu-exam-start', wsId)
   const v = Number(localStorage.getItem(examStartKey(wsId)))
   return Number.isFinite(v) && v > 0 ? v : null
 }

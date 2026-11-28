@@ -537,7 +537,8 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
     const out = searchParams.get('out')
     if (!out) return
     autoRan.current = true
-    const sel = out.split(',').filter(p => p in PART_FLAG)
+    // 학생 화면은 주소(?out=정답해설)로 바꿔 넣어도 문제지만 (2026-11-28 점검)
+    const sel = out.split(',').filter(p => p in PART_FLAG && (!studentMode || p === '문제지'))
     if (sel.length === 0) { setSearchParams({}, { replace: true }); return }
     const act = searchParams.get('act') === 'print' ? 'print' as const : 'download' as const
     // 출력 옵션(쪽 범위·역순·흑백·매수)
@@ -577,10 +578,14 @@ export default function WorksheetView({ studentMode = false }: { studentMode?: b
   const previewSel = preview ? preview.split(',').filter(p => p in PART_FLAG) : null
   const previewJob = previewSel && previewSel.length > 0 ? jobOf('미리보기', previewSel) : null
   const eff = job ?? previewJob
-  const show: Record<'s' | 'q' | 'so' | 'o' | 'sa', boolean> = {
-    s: eff ? eff.s : true, q: eff ? eff.q : true, so: eff ? eff.so : true, o: eff ? eff.o : true,
-    sa: eff ? eff.sa : false,
-  }
+  // 🔴 2026-11-28 점검: 학생 «📄 PDF» 화면(studentMode)도 아래 A4 미리보기에 빠른정답·정답해설·OMR 을 다 그렸다
+  //    (시험 중·정답 비공개 학습지 포함). 학생 화면은 문제지만 그린다 — 주소 ?preview= 로도 바꿀 수 없다.
+  const show: Record<'s' | 'q' | 'so' | 'o' | 'sa', boolean> = studentMode
+    ? { s: true, q: false, so: false, o: false, sa: false }
+    : {
+      s: eff ? eff.s : true, q: eff ? eff.q : true, so: eff ? eff.so : true, o: eff ? eff.o : true,
+      sa: eff ? eff.sa : false,
+    }
 
   const fmtDate = (d: Date) =>
     `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`

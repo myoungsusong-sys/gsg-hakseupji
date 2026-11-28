@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { carryResultAt } from './wrongTypes'
-import type { ReactNode } from 'react'
+import type { ReactNode, SetStateAction } from 'react'
 import type {
   AcademyProfile, Assignment, Branch, BugReport, Counsel, DailyConfig, DailyNote, DiffMatrix, Grading, LecturePlan, MyBook, MyList, PointEntry, PointSettlement, Problem, SavedReport, SheetTemplate, SolveFeedback, Student, Teacher, StudentAppConfig, UploadRec, Workbook, WBItem, Worksheet, SchoolExam,
 } from '../types'
@@ -753,7 +753,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const set = setState
+  // 🔴 2026-11-28 점검: 저장 함수들은 stateRef.current(화면이 다시 그려질 때만 갱신)에서 새 목록을 만들어 통째로 쓴다.
+  //    한 번 누를 때 같은 표를 여러 번 저장하면(시험 일정 «같은 학교 학생에게 함께 넣기», 오늘의 학습 «N명에게 적용»,
+  //    학생 정보+재원/퇴원, 반 담당 강사 바꾸기) 각 호출이 같은 옛 목록에서 출발해 **마지막 호출만 남았다**(로컬·클라우드 둘 다).
+  //    → 갱신 함수를 stateRef 에도 바로 적용해 다음 호출이 방금 바꾼 값 위에서 시작하게 한다.
+  //    React 쪽은 그대로 함수형 setState 라 그 사이 들어온 클라우드 갱신(직접 setState)을 덮지 않는다.
+  //    (이 파일의 set(s => …) 갱신 함수는 전부 부수효과 없는 순수 함수 — 두 번 불려도 같다)
+  const set = (u: SetStateAction<Persisted>) => {
+    if (typeof u === 'function') stateRef.current = u(stateRef.current)
+    else stateRef.current = u
+    setState(u)
+  }
 
   // ── 지점 스코프 필터 ────────────────────────────────────────────────
   // 🔴 store.students 를 **여기서 통째로 덮는다**. 화면 20여 곳을 각각 고치는 대신

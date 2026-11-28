@@ -9,7 +9,7 @@ import StudentHeaderExtras from '../../components/student/StudentHeaderExtras'
 import FixItButton from '../../components/FixItButton'
 import CrashGuard from '../../components/CrashGuard'
 import { useChangelog, UpdateBanner } from '../../components/UpdateLog'
-import { StudentSelfCtx, tickStudySecond } from './common'
+import { StudentSelfCtx, setDraftOwner, tickStudySecond } from './common'
 import { todayKey } from '../../lib/dates'
 import TeacherCallOverlay from '../../components/student/TeacherCallOverlay'
 import { BrandLogo } from '../../components/BrandMark'
@@ -104,6 +104,7 @@ export default function StudentShell() {
     else nav('/student-login', { replace: true })
   }
 
+  setDraftOwner(me.id)   // 🔴 임시저장·시험 시계 키를 이 학생 것으로(좌석 태블릿 — common.tsx)
   return (
     <StudentSelfCtx.Provider value={me}>
       <div className="min-h-screen">
