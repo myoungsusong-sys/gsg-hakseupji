@@ -156,8 +156,6 @@ function hash(s: string): number {
   for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) }
   return h >>> 0
 }
-/** 후보 문장 중 하나를 (씨앗+자리)로 고른다 — 매번 토씨까지 같은 글이 나가지 않게 */
-const vary = (seed: string, slot: string, cands: string[]): string => cands[hash(seed + slot) % cands.length]
 
 // 오늘 수업 태도 — 버튼 라벨 (저장값은 영문 키, 화면·AI 자료엔 이 말로 나간다)
 const FOCUS_LABEL = { good: '좋았음', ok: '보통', low: '흐트러짐' } as const
@@ -507,66 +505,6 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
     return k
   }, [coveredUnits, weekAvg, weekDelta, wrongTypes, solveMinutes, totalSolved, nextPlan, attitudeText])
 
-  // 선생님이 한마디를 비워 두면 이 문구가 그대로 학부모에게 나간다. 문장이 고정이면
-  // 매주 토씨까지 같은 글이 가서 가장 먼저 '기계가 쓴 티'가 나므로, 학생·날짜로 표현을
-  // 돌린다. 같은 날 다시 열어도 같은 문장, 날이 바뀌면 달라진다. (2026-07-28 명수쌤 지시)
-  const templateComment = useMemo(() => {
-    const seed = `${student.id}|${date}|${subject}`
-    const parts: string[] = []
-    const unitNames = coveredUnits.units.slice(0, 2).map(u => u.name.split(' · ').pop()).filter(Boolean)
-    if (unitNames.length) {
-      const u = unitNames.join(', ')
-      parts.push(vary(seed, 'unit', [
-        `오늘은 ${u} 단원을 봤습니다.`,
-        `${u} 단원 진도를 나갔어요.`,
-        `오늘 수업은 ${u} 단원이었습니다.`,
-      ]))
-    }
-    if (totalSolved) {
-      // 🔴 100점에 "거의 다 맞혔습니다"는 틀린 말이다(2026-08-26 박성우 선생님 보고).
-      //    만점은 만점이라고 써야 학부모가 읽을 때 어색하지 않다.
-      if (overall === 100) parts.push(vary(seed, 'perfect', [
-        `${totalSolved}문항 전부 맞혀 100점입니다.`,
-        `100점 — 하나도 틀리지 않았습니다.`,
-        `오늘은 만점입니다. 끝까지 집중했어요.`,
-      ]))
-      else if (overall >= 90) parts.push(vary(seed, 'hi', [
-        `${overall}점으로 거의 다 맞혔습니다.`,
-        `${totalCorrect}문항을 맞혀 ${overall}점, 아주 잘했어요.`,
-        `${overall}점. 오늘은 흔들리는 데가 없었습니다.`,
-      ]))
-      else if (overall >= 70) parts.push(vary(seed, 'mid', [
-        `${overall}점으로 안정적이었습니다.`,
-        `${overall}점, 큰 무리 없이 풀어냈어요.`,
-        `${overall}점입니다. 아는 문제는 확실히 잡고 갑니다.`,
-      ]))
-      else parts.push(vary(seed, 'lo', [
-        `${overall}점으로 오늘은 조금 아쉬웠습니다.`,
-        `${overall}점. 어려워했지만 끝까지 붙잡고 풀었어요.`,
-        `오늘은 ${overall}점으로 고전했습니다.`,
-      ]))
-    }
-    if (weekDelta != null && weekDelta >= 5) parts.push(vary(seed, 'up', [
-      `지난주보다 ${weekDelta}점 올랐습니다.`,
-      `지난주 대비 ${weekDelta}점 상승했어요.`,
-    ]))
-    else if (weekDelta != null && weekDelta <= -5) parts.push(vary(seed, 'dn', [
-      `지난주보다 ${Math.abs(weekDelta)}점 내려가 다음 시간에 보완하겠습니다.`,
-      `지난주보다 ${Math.abs(weekDelta)}점 떨어졌습니다. 다음 시간에 짚고 가겠습니다.`,
-    ]))
-    if (wrongTypes.length) parts.push(vary(seed, 'wrong', [
-      `「${wrongTypes[0].name}」 쪽이 약해 ${drills.length ? '오답 학습지로 한 번 더 다지겠습니다.' : '다음 시간에 다시 보겠습니다.'}`,
-      `「${wrongTypes[0].name}」에서 자주 걸렸습니다. ${drills.length ? '오답 학습지를 따로 냈습니다.' : '다음 시간에 복습하겠습니다.'}`,
-    ]))
-    // 연속 학습은 매번 붙으면 상투적이라 3회에 1번만
-    if (streak >= 3 && hash(seed + 'streak') % 3 === 0) parts.push(`${streak}일째 빠지지 않고 나오고 있습니다.`)
-    return parts.join(' ')
-  }, [student.id, date, subject, coveredUnits, totalSolved, totalCorrect, overall, weekDelta, wrongTypes, drills.length, streak])
-
-  // 보고서 출력용 값 — '없음'이면 빈값(섹션 생략), 선생님 한마디는 비었을 때만 기본문구 사용
-  const effComment = isNone(comment) ? '' : (comment.trim() || templateComment)
-  const effNextPlan = isNone(nextPlan) ? '' : nextPlan.trim()
-
   // 이 학생에게 최근에 보낸 한마디 (오늘 것 제외, 최신 4개) — AI가 같은 말·같은 틀을 반복하지 않게
   // 하는 가장 강한 장치다. 매 수업 나가는 글이라 표현이 겹치면 바로 '기계가 쓴 티'가 난다.
   const recentComments = useMemo(() => {
@@ -577,6 +515,130 @@ function DailyReport({ student, subject, initialDate }: { student: Student; subj
       .filter(c => c && !isNone(c))
       .slice(0, 4)
   }, [dailyNotes, student.id, date, subject])
+
+  // 선생님이 한마디를 비워 두면 이 문구가 그대로 학부모에게 나간다. 문장이 고정이면
+  // 매주 토씨까지 같은 글이 가서 가장 먼저 '기계가 쓴 티'가 나므로, 학생·날짜로 표현을
+  // 돌린다. 같은 날 다시 열어도 같은 문장, 날이 바뀌면 달라진다. (2026-07-28 명수쌤 지시)
+  // 🔴 2026-11-28 윤자혜 선생님 「~쪽이 약해 다음 시간에 다시 보겠습니다 — 획일적인 내용으로 같은 피드백 하지 마」
+  //    ① 후보를 «날짜 순번»으로 돌린다(해시는 이틀 연속 같은 문장이 나올 수 있다) → 수업마다 다른 문장
+  //    ② 최근 보낸 한마디에 이미 쓴 끝맺음은 건너뛴다
+  //    ③ 약한 유형 문장은 «몇 문제를 틀렸나»까지 실제 숫자로, 유형 이름의 «(30문항)» 꼬리는 뗀다
+  //    ④ 약한 유형이 오늘 단원과 이름이 같으면 이름을 되풀이하지 않는다
+  const templateComment = useMemo(() => {
+    const seed = `${student.id}|${date}|${subject}`
+    const dayNo = Math.floor(new Date(date + 'T00:00:00').getTime() / 86400000) || 0
+    // 최근 한마디와 겹치는 문장인지 — 고유명(「」)·숫자를 뺀 뒤 앞 8자·끝 10자가 이미 나갔으면 겹친 것
+    const norm = (t: string) => t.replace(/「[^」]*」/g, '').replace(/\d+/g, '').replace(/\s+/g, ' ').trim()
+    const recentNorm = recentComments.map(norm)
+    // 몇 번째 최근 한마디에 이미 나갔나(0 = 바로 전 수업). 안 나갔으면 무한대
+    const lastUsed = (c: string) => {
+      const n = norm(c); if (n.length < 8) return Infinity
+      const head = n.slice(0, 8), tail = n.slice(-10)
+      const i = recentNorm.findIndex(r => r.includes(head) || r.includes(tail))
+      return i < 0 ? Infinity : i
+    }
+    // 안 쓴 문장 먼저, 다 썼으면 가장 오래전에 쓴 문장 — 바로 전 수업과 같은 문장은 나가지 않는다
+    const pick = (slot: string, cands: string[]): string => {
+      const off = hash(seed.split('|')[0] + slot) % cands.length
+      const order = cands.map((_, i) => cands[(dayNo + off + i) % cands.length])
+      let best = order[0], bestAge = -1
+      for (const c of order) { const a = lastUsed(c); if (a > bestAge) { best = c; bestAge = a } }
+      return best
+    }
+    const parts: string[] = []
+    const unitNames = coveredUnits.units.slice(0, 2).map(u => u.name.split(' · ').pop()).filter(Boolean) as string[]
+    if (unitNames.length) {
+      const u = unitNames.join(', ')
+      parts.push(pick('unit', [
+        `오늘은 ${u} 단원을 봤습니다.`,
+        `${u} 단원 진도를 나갔어요.`,
+        `오늘 수업은 ${u} 단원이었습니다.`,
+        `${u} 단원을 공부했습니다.`,
+        `오늘 다룬 단원은 ${u}입니다.`,
+      ]))
+    }
+    if (totalSolved) {
+      // 🔴 100점에 "거의 다 맞혔습니다"는 틀린 말이다(2026-08-26 박성우 선생님 보고).
+      //    만점은 만점이라고 써야 학부모가 읽을 때 어색하지 않다.
+      if (overall === 100) parts.push(pick('perfect', [
+        `${totalSolved}문항 전부 맞혀 100점입니다.`,
+        `100점 — 하나도 틀리지 않았습니다.`,
+        `오늘은 만점입니다. 끝까지 집중했어요.`,
+        `${totalSolved}문항을 실수 없이 다 맞혔습니다.`,
+      ]))
+      else if (overall >= 90) parts.push(pick('hi', [
+        `${overall}점으로 거의 다 맞혔습니다.`,
+        `${totalCorrect}문항을 맞혀 ${overall}점, 아주 잘했어요.`,
+        `${overall}점. 오늘은 흔들리는 데가 없었습니다.`,
+        `${totalSolved}문항 중 ${totalCorrect}문항을 맞혀 ${overall}점입니다.`,
+      ]))
+      else if (overall >= 70) parts.push(pick('mid', [
+        `${overall}점으로 안정적이었습니다.`,
+        `${overall}점, 큰 무리 없이 풀어냈어요.`,
+        `${overall}점입니다. 아는 문제는 확실히 잡고 갑니다.`,
+        `${totalSolved}문항 중 ${totalCorrect}문항을 맞혀 ${overall}점이 나왔습니다.`,
+      ]))
+      else parts.push(pick('lo', [
+        `${overall}점으로 오늘은 조금 아쉬웠습니다.`,
+        `${overall}점. 어려워했지만 끝까지 붙잡고 풀었어요.`,
+        `오늘은 ${overall}점으로 고전했습니다.`,
+        `${totalSolved}문항 중 ${totalCorrect}문항을 맞혀 ${overall}점입니다.`,
+      ]))
+    }
+    if (weekDelta != null && weekDelta >= 5) parts.push(pick('up', [
+      `지난주보다 ${weekDelta}점 올랐습니다.`,
+      `지난주 대비 ${weekDelta}점 상승했어요.`,
+      `최근 일주일 평균보다 ${weekDelta}점 높습니다.`,
+    ]))
+    else if (weekDelta != null && weekDelta <= -5) parts.push(pick('dn', [
+      `지난주보다 ${Math.abs(weekDelta)}점 내려갔습니다.`,
+      `최근 일주일 평균보다 ${Math.abs(weekDelta)}점 낮게 나왔습니다.`,
+      `지난주 대비 ${Math.abs(weekDelta)}점 떨어졌어요.`,
+    ]))
+    if (wrongTypes.length) {
+      const clean = (t: string) => t.replace(/\s*\(\d+\s*문항\)\s*$/, '').trim()
+      const w1 = { name: clean(wrongTypes[0].name), n: wrongTypes[0].n }
+      const w2 = wrongTypes[1] ? { name: clean(wrongTypes[1].name), n: wrongTypes[1].n } : null
+      const sameAsUnit = unitNames.some(u => clean(u) === w1.name || clean(u).includes(w1.name) || w1.name.includes(clean(u)))
+      const what = w2
+        ? pick('wrong2', [
+            `「${w1.name}」에서 ${w1.n}문제, 「${w2.name}」에서 ${w2.n}문제를 틀렸습니다.`,
+            `틀린 문제는 「${w1.name}」(${w1.n}문제)과 「${w2.name}」(${w2.n}문제)에 몰려 있었어요.`,
+            `「${w1.name}」·「${w2.name}」 유형에서 실수가 나왔습니다.`,
+          ])
+        : sameAsUnit
+          ? pick('wrongU', [
+              `틀린 ${w1.n}문제를 보면 아직 헷갈리는 부분이 남아 있습니다.`,
+              `이 단원에서 ${w1.n}문제를 놓쳤습니다.`,
+              `${w1.n}문제는 아직 정확히 잡지 못했어요.`,
+            ])
+          : pick('wrong1', [
+              `「${w1.name}」에서 ${w1.n}문제를 틀렸습니다.`,
+              `「${w1.name}」 유형에서 ${w1.n}문제를 놓쳤어요.`,
+              `틀린 문제는 주로 「${w1.name}」 유형이었습니다.`,
+            ])
+      const act = drills.length
+        ? pick('actD', [
+            `틀린 문제만 모아 오답 학습지로 냈습니다.`,
+            `오답 학습지를 따로 만들어 다시 풀게 했어요.`,
+            `틀린 문제는 오답 학습지로 한 번 더 풉니다.`,
+          ])
+        : pick('act', [
+            `틀린 이유를 함께 짚어 주었습니다.`,
+            `비슷한 문제로 한 번 더 확인하겠습니다.`,
+            `풀이 과정을 다시 확인하며 바로잡겠습니다.`,
+            `헷갈린 개념부터 다시 정리하겠습니다.`,
+          ])
+      parts.push(`${what} ${act}`)
+    }
+    // 연속 학습은 매번 붙으면 상투적이라 3회에 1번만
+    if (streak >= 3 && hash(seed + 'streak') % 3 === 0) parts.push(`${streak}일째 빠지지 않고 나오고 있습니다.`)
+    return parts.join(' ')
+  }, [student.id, date, subject, coveredUnits, totalSolved, totalCorrect, overall, weekDelta, wrongTypes, drills.length, streak, recentComments])
+
+  // 보고서 출력용 값 — '없음'이면 빈값(섹션 생략), 선생님 한마디는 비었을 때만 기본문구 사용
+  const effComment = isNone(comment) ? '' : (comment.trim() || templateComment)
+  const effNextPlan = isNone(nextPlan) ? '' : nextPlan.trim()
 
   // 선생님 한마디 AI — 작성(generate)/다듬기(polish). 서버리스(/api/comment) 호출, 실패 시 템플릿 폴백.
   const [aiBusy, setAiBusy] = useState<'' | 'generate' | 'polish'>('')
